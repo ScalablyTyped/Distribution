@@ -1,5 +1,6 @@
 package typings.fridaGum.global
 
+import typings.fridaGum.RegsAccessed
 import typings.fridaGum.X86Operand
 import typings.fridaGum.X86Register
 import org.scalablytyped.runtime.StObject
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("X86Instruction")
 @js.native
-class X86Instruction ()
+open class X86Instruction ()
   extends StObject
      with typings.fridaGum.X86Instruction {
   
@@ -47,6 +48,12 @@ class X86Instruction ()
     */
   /* CompleteClass */
   var operands: js.Array[X86Operand] = js.native
+  
+  /**
+    * Registers accessed by this instruction, either implicitly or explicitly.
+    */
+  /* CompleteClass */
+  var regsAccessed: RegsAccessed[X86Register] = js.native
   
   /**
     * Registers implicitly read by this instruction.

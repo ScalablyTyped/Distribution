@@ -102,8 +102,6 @@ trait CartesianAxisProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.undefined
@@ -192,7 +190,7 @@ trait CartesianAxisProps extends StObject {
   
   var textRendering: js.UndefOr[auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit] = js.undefined
   
-  var tick: js.UndefOr[Boolean | ContentRenderer[js.Any] | js.Object | ReactElement] = js.undefined
+  var tick: js.UndefOr[Boolean | ContentRenderer[Any] | js.Object | ReactElement] = js.undefined
   
   var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
   
@@ -200,7 +198,7 @@ trait CartesianAxisProps extends StObject {
   
   var tickSize: js.UndefOr[Double] = js.undefined
   
-  var ticks: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var ticks: js.UndefOr[js.Array[Any]] = js.undefined
   
   var ticksGenerator: js.UndefOr[TickGeneratorFunction] = js.undefined
   
@@ -364,10 +362,6 @@ object CartesianAxisProps {
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
-    
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -545,13 +539,13 @@ object CartesianAxisProps {
     
     inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
     
-    inline def setTick(value: Boolean | ContentRenderer[js.Any] | js.Object | ReactElement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: Boolean | ContentRenderer[Any] | js.Object | ReactElement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    inline def setTickFormatter(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "tickFormatter", js.Any.fromFunction1(value))
+    inline def setTickFormatter(value: /* value */ Any => Any): Self = StObject.set(x, "tickFormatter", js.Any.fromFunction1(value))
     
     inline def setTickFormatterUndefined: Self = StObject.set(x, "tickFormatter", js.undefined)
     
-    inline def setTickFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
+    inline def setTickFunction1(value: Any => ReactNode): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
     
     inline def setTickLine(value: Boolean | js.Object): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
     
@@ -563,15 +557,15 @@ object CartesianAxisProps {
     
     inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
-    inline def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: js.Array[Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    inline def setTicksGenerator(value: /* noTicksProps */ js.Object => js.Array[js.Any]): Self = StObject.set(x, "ticksGenerator", js.Any.fromFunction1(value))
+    inline def setTicksGenerator(value: /* noTicksProps */ js.Object => js.Array[Any]): Self = StObject.set(x, "ticksGenerator", js.Any.fromFunction1(value))
     
     inline def setTicksGeneratorUndefined: Self = StObject.set(x, "ticksGenerator", js.undefined)
     
     inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    inline def setTicksVarargs(value: js.Any*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: Any*): Self = StObject.set(x, "ticks", js.Array(value*))
     
     inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     

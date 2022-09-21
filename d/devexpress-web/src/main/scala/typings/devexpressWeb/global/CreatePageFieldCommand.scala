@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CreatePageFieldCommand")
 @js.native
-class CreatePageFieldCommand ()
+open class CreatePageFieldCommand ()
   extends StObject
      with typings.devexpressWeb.CreatePageFieldCommand {
   

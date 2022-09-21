@@ -21,7 +21,7 @@ object Overrides {
     
     inline def setOverrides(value: js.Array[Minutes]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    inline def setOverridesVarargs(value: Minutes*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: Minutes*): Self = StObject.set(x, "overrides", js.Array(value*))
     
     inline def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
   }

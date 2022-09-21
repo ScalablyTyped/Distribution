@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("simple-lru", JSImport.Namespace)
   @js.native
-  class ^[K, V] protected ()
+  open class ^[K, V] protected ()
     extends StObject
        with SimpleLRU[K, V] {
     def this(max: Double) = this()

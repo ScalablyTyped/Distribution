@@ -31,7 +31,7 @@ object ISourcesFilterConfig {
     
     inline def setNameRegularExpressionsUndefined: Self = StObject.set(x, "nameRegularExpressions", js.undefined)
     
-    inline def setNameRegularExpressionsVarargs(value: String*): Self = StObject.set(x, "nameRegularExpressions", js.Array(value :_*))
+    inline def setNameRegularExpressionsVarargs(value: String*): Self = StObject.set(x, "nameRegularExpressions", js.Array(value*))
     
     inline def setTagExpression(value: String): Self = StObject.set(x, "tagExpression", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object ISourcesFilterConfig {
     
     inline def setUriToLinesMappingUndefined: Self = StObject.set(x, "uriToLinesMapping", js.undefined)
     
-    inline def setUriToLinesMappingVarargs(value: IUriToLinesMapping*): Self = StObject.set(x, "uriToLinesMapping", js.Array(value :_*))
+    inline def setUriToLinesMappingVarargs(value: IUriToLinesMapping*): Self = StObject.set(x, "uriToLinesMapping", js.Array(value*))
   }
 }

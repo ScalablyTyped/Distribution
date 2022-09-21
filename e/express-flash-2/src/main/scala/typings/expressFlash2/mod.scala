@@ -2,8 +2,7 @@ package typings.expressFlash2
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,19 @@ object mod {
   /**
     * Expose `flash()` function on responses.
     */
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("express-flash-2", JSImport.Namespace)
   @js.native
@@ -23,7 +34,7 @@ object mod {
     
     object Express {
       
-      type Flash = StringDictionary[js.Array[js.Any]]
+      type Flash = StringDictionary[js.Array[Any]]
       
       trait Request extends StObject {
         
@@ -68,7 +79,7 @@ object mod {
           * Formatting uses `util.format()`, which is available on Node 0.6+.
           */
         def flash(`type`: String, msg: String): Unit = js.native
-        def flash(`type`: String, msg: js.Array[js.Any]): Unit = js.native
+        def flash(`type`: String, msg: js.Array[Any]): Unit = js.native
         
         var locals: typings.expressFlash2.anon.Flash = js.native
       }

@@ -4,20 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Basic algorithm for autoscaling.
-  */
 trait SchemaBasicAutoscalingAlgorithm extends StObject {
   
   /**
-    * Optional. Duration between scaling events. A scaling period starts after
-    * the update operation from the previous event has completed.Bounds: 2m,
-    * 1d. Default: 2m.
+    * Optional. Duration between scaling events. A scaling period starts after the update operation from the previous event has completed.Bounds: 2m, 1d. Default: 2m.
     */
-  var cooldownPeriod: js.UndefOr[String] = js.undefined
+  var cooldownPeriod: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required. YARN autoscaling configuration.
+    * Optional. YARN autoscaling configuration.
     */
   var yarnConfig: js.UndefOr[SchemaBasicYarnAutoscalingConfig] = js.undefined
 }
@@ -31,6 +26,8 @@ object SchemaBasicAutoscalingAlgorithm {
   extension [Self <: SchemaBasicAutoscalingAlgorithm](x: Self) {
     
     inline def setCooldownPeriod(value: String): Self = StObject.set(x, "cooldownPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setCooldownPeriodNull: Self = StObject.set(x, "cooldownPeriod", null)
     
     inline def setCooldownPeriodUndefined: Self = StObject.set(x, "cooldownPeriod", js.undefined)
     

@@ -42,7 +42,7 @@ trait AvailabilityZone extends StObject {
   var RegionName: js.UndefOr[String] = js.undefined
   
   /**
-    * The state of the Availability Zone, Local Zone, or Wavelength Zone.
+    * The state of the Availability Zone, Local Zone, or Wavelength Zone. This value is always available.
     */
   var State: js.UndefOr[AvailabilityZoneState] = js.undefined
   
@@ -78,7 +78,7 @@ object AvailabilityZone {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
-    inline def setMessagesVarargs(value: AvailabilityZoneMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: AvailabilityZoneMessage*): Self = StObject.set(x, "Messages", js.Array(value*))
     
     inline def setNetworkBorderGroup(value: String): Self = StObject.set(x, "NetworkBorderGroup", value.asInstanceOf[js.Any])
     

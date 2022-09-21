@@ -27,7 +27,7 @@ object ListFindingsResponse {
     
     inline def setFindings(value: FindingsList): Self = StObject.set(x, "findings", value.asInstanceOf[js.Any])
     
-    inline def setFindingsVarargs(value: FindingSummary*): Self = StObject.set(x, "findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: FindingSummary*): Self = StObject.set(x, "findings", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

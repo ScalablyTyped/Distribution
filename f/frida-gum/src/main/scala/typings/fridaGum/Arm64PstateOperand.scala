@@ -16,8 +16,8 @@ trait Arm64PstateOperand
 }
 object Arm64PstateOperand {
   
-  inline def apply(value: Double): Arm64PstateOperand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, value: Double): Arm64PstateOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pstate")
     __obj.asInstanceOf[Arm64PstateOperand]
   }

@@ -82,12 +82,12 @@ object Httpi {
   object HttpiResource {
     
     inline def apply(
-      delete: HttpiPayload => IHttpPromise[js.Any],
-      get: HttpiPayload => IHttpPromise[js.Any],
-      head: HttpiPayload => IHttpPromise[js.Any],
-      jsonp: HttpiPayload => IHttpPromise[js.Any],
-      post: HttpiPayload => IHttpPromise[js.Any],
-      put: HttpiPayload => IHttpPromise[js.Any],
+      delete: HttpiPayload => IHttpPromise[Any],
+      get: HttpiPayload => IHttpPromise[Any],
+      head: HttpiPayload => IHttpPromise[Any],
+      jsonp: HttpiPayload => IHttpPromise[Any],
+      post: HttpiPayload => IHttpPromise[Any],
+      put: HttpiPayload => IHttpPromise[Any],
       setKeepTrailingSlash: Boolean => HttpiResource
     ): HttpiResource = {
       val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), head = js.Any.fromFunction1(head), jsonp = js.Any.fromFunction1(jsonp), post = js.Any.fromFunction1(post), put = js.Any.fromFunction1(put), setKeepTrailingSlash = js.Any.fromFunction1(setKeepTrailingSlash))
@@ -96,17 +96,17 @@ object Httpi {
     
     extension [Self <: HttpiResource](x: Self) {
       
-      inline def setDelete(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: HttpiPayload => IHttpPromise[Any]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      inline def setGet(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: HttpiPayload => IHttpPromise[Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setHead(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "head", js.Any.fromFunction1(value))
+      inline def setHead(value: HttpiPayload => IHttpPromise[Any]): Self = StObject.set(x, "head", js.Any.fromFunction1(value))
       
-      inline def setJsonp(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "jsonp", js.Any.fromFunction1(value))
+      inline def setJsonp(value: HttpiPayload => IHttpPromise[Any]): Self = StObject.set(x, "jsonp", js.Any.fromFunction1(value))
       
-      inline def setPost(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
+      inline def setPost(value: HttpiPayload => IHttpPromise[Any]): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
       
-      inline def setPut(value: HttpiPayload => IHttpPromise[js.Any]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: HttpiPayload => IHttpPromise[Any]): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
       
       inline def setSetKeepTrailingSlash(value: Boolean => HttpiResource): Self = StObject.set(x, "setKeepTrailingSlash", js.Any.fromFunction1(value))
     }

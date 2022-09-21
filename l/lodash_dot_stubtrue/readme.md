@@ -10,10 +10,10 @@ The lodash method `_.stubTrue` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.stubtrue |
 | Keywords           | lodash-modularized, stubtrue |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 110236 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8808.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

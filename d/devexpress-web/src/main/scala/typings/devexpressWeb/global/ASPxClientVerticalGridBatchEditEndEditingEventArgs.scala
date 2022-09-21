@@ -9,27 +9,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridBatchEditEndEditingEventArgs")
 @js.native
-class ASPxClientVerticalGridBatchEditEndEditingEventArgs protected ()
+open class ASPxClientVerticalGridBatchEditEndEditingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridBatchEditEndEditingEventArgs {
   /**
-    * Initializes a new instance of the ASPxClientVerticalGridBatchEditEndEditingEventArgs class with the specified settings.
-    * @param visibleIndex An integer value that specifies the visible index of the record. This value is assigned to the ASPxClientVerticalGridBatchEditEndEditingEventArgs.visibleIndex property.
-    * @param recordValues A hashtable that stores information about editable cells. This value is assigned to the ASPxClientVerticalGridBatchEditEndEditingEventArgs.recordValues property.
+    * Initializes a new instance of the ASPxClientVerticalGridBatchEditEndEditingEventArgs class with specified settings.
     */
-  def this(visibleIndex: Double, recordValues: js.Any) = this()
+  def this(
+    visibleIndex: Double,
+    recordValues: Any,
+    focusedRow: typings.devexpressWeb.ASPxClientVerticalGridRow
+  ) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
   
   /**
+    * Gets the row to which the edited cell belongs.
+    */
+  /* CompleteClass */
+  var focusedRow: typings.devexpressWeb.ASPxClientVerticalGridRow = js.native
+  
+  /**
     * Gets a hashtable that maintains information about editable cells.
     */
   /* CompleteClass */
-  var recordValues: js.Any = js.native
+  var recordValues: Any = js.native
   
   /**
     * Gets the visible index of the record whose cells have been edited.

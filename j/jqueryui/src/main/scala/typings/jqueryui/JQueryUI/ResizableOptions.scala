@@ -9,24 +9,24 @@ trait ResizableOptions
   extends StObject
      with ResizableEvents {
   
-  var alsoResize: js.UndefOr[js.Any] = js.undefined
+  var alsoResize: js.UndefOr[Any] = js.undefined
   
   // Selector, JQuery or Element
   var animate: js.UndefOr[Boolean] = js.undefined
   
-  var animateDuration: js.UndefOr[js.Any] = js.undefined
+  var animateDuration: js.UndefOr[Any] = js.undefined
   
   // number or string
   var animateEasing: js.UndefOr[String] = js.undefined
   
-  var aspectRatio: js.UndefOr[js.Any] = js.undefined
+  var aspectRatio: js.UndefOr[Any] = js.undefined
   
   // boolean or number
   var autoHide: js.UndefOr[Boolean] = js.undefined
   
   var cancel: js.UndefOr[String] = js.undefined
   
-  var containment: js.UndefOr[js.Any] = js.undefined
+  var containment: js.UndefOr[Any] = js.undefined
   
   // Selector, Element or string
   var delay: js.UndefOr[Double] = js.undefined
@@ -37,9 +37,9 @@ trait ResizableOptions
   
   var ghost: js.UndefOr[Boolean] = js.undefined
   
-  var grid: js.UndefOr[js.Any] = js.undefined
+  var grid: js.UndefOr[Any] = js.undefined
   
-  var handles: js.UndefOr[js.Any] = js.undefined
+  var handles: js.UndefOr[Any] = js.undefined
   
   // string or object
   var helper: js.UndefOr[String] = js.undefined
@@ -61,13 +61,13 @@ object ResizableOptions {
   
   extension [Self <: ResizableOptions](x: Self) {
     
-    inline def setAlsoResize(value: js.Any): Self = StObject.set(x, "alsoResize", value.asInstanceOf[js.Any])
+    inline def setAlsoResize(value: Any): Self = StObject.set(x, "alsoResize", value.asInstanceOf[js.Any])
     
     inline def setAlsoResizeUndefined: Self = StObject.set(x, "alsoResize", js.undefined)
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    inline def setAnimateDuration(value: js.Any): Self = StObject.set(x, "animateDuration", value.asInstanceOf[js.Any])
+    inline def setAnimateDuration(value: Any): Self = StObject.set(x, "animateDuration", value.asInstanceOf[js.Any])
     
     inline def setAnimateDurationUndefined: Self = StObject.set(x, "animateDuration", js.undefined)
     
@@ -77,7 +77,7 @@ object ResizableOptions {
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setAspectRatio(value: js.Any): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: Any): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
@@ -89,7 +89,7 @@ object ResizableOptions {
     
     inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    inline def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
@@ -109,11 +109,11 @@ object ResizableOptions {
     
     inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
     
-    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    inline def setHandles(value: js.Any): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+    inline def setHandles(value: Any): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
     
     inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
     

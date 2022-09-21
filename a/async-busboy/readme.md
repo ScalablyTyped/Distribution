@@ -1,7 +1,7 @@
 
 # Scala.js typings for async-busboy
 
-Typings are for version 0.7
+Typings are for version 1.1
 
 ## Library description:
 Promise based multipart form parser
@@ -10,10 +10,10 @@ Promise based multipart form parser
 | ------------------ | :-------------: |
 | Full name          | async-busboy |
 | Keywords           | koa, multipart, form, file-upload |
-| # releases         | 3 |
-| # dependents       | 32 |
-| # downloads        | 303208 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 59172.0 |
+| # stars            | 168.0 |
 
 ## Links
 - [Homepage](https://github.com/m4nuC/async-busboy#readme)

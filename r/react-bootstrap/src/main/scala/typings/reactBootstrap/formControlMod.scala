@@ -2,8 +2,8 @@ package typings.reactBootstrap
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.Component
+import typings.react.mod.ElementType
 import typings.react.mod.HTMLProps
-import typings.react.mod.ReactType
 import typings.reactBootstrap.mod.Sizes
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -14,8 +14,8 @@ object formControlMod {
   
   @JSImport("react-bootstrap/lib/FormControl", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[FormControlProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[FormControlProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/FormControl", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -23,7 +23,7 @@ object formControlMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/FormControl", "Feedback")
   @js.native
-  class Feedback ()
+  open class Feedback ()
     extends typings.reactBootstrap.formControlFeedbackMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/FormControl", "Feedback")
@@ -34,7 +34,7 @@ object formControlMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/FormControl", "Static")
   @js.native
-  class Static ()
+  open class Static ()
     extends typings.reactBootstrap.formControlStaticMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/FormControl", "Static")
@@ -42,9 +42,7 @@ object formControlMod {
   def Static: Instantiable0[typings.reactBootstrap.formControlStaticMod.^] = js.native
   inline def Static_=(x: Instantiable0[typings.reactBootstrap.formControlStaticMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Static")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait FormControl
-    extends Component[FormControlProps, js.Object, js.Any]
+  type FormControl = Component[FormControlProps, js.Object, Any]
   
   trait FormControlProps
     extends StObject
@@ -54,7 +52,7 @@ object formControlMod {
     
     var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var componentClass: js.UndefOr[ElementType[Any]] = js.undefined
     
     var inputRef: js.UndefOr[js.Function1[/* instance */ HTMLInputElement, Unit]] = js.undefined
   }
@@ -75,7 +73,7 @@ object formControlMod {
       
       inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
       
-      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
       

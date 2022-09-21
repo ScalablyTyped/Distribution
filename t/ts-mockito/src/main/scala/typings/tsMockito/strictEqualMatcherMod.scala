@@ -9,9 +9,9 @@ object strictEqualMatcherMod {
   
   @JSImport("ts-mockito/lib/matcher/type/StrictEqualMatcher", "StrictEqualMatcher")
   @js.native
-  class StrictEqualMatcher protected () extends Matcher {
-    def this(expectedValue: js.Any) = this()
+  open class StrictEqualMatcher protected () extends Matcher {
+    def this(expectedValue: Any) = this()
     
-    /* private */ var expectedValue: js.Any = js.native
+    /* private */ var expectedValue: Any = js.native
   }
 }

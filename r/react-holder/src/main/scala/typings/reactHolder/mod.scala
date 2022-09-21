@@ -10,12 +10,10 @@ object mod {
   
   @JSImport("react-holder", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactHolderProp, js.Object, js.Any]
+  open class default ()
+    extends Component[ReactHolderProp, js.Object, Any]
   
-  @js.native
-  trait ReactHolder
-    extends Component[ReactHolderProp, js.Object, js.Any]
+  type ReactHolder = Component[ReactHolderProp, js.Object, Any]
   
   trait ReactHolderProp
     extends StObject

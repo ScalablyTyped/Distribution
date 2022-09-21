@@ -16,7 +16,7 @@ object Contacts {
   /**
     * Constructor
     **/
-  class b2Contact ()
+  open class b2Contact ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Contacts.b2Contact {
     
@@ -107,7 +107,7 @@ object Contacts {
   
   @JSGlobal("Box2D.Dynamics.Contacts.b2ContactEdge")
   @js.native
-  class b2ContactEdge ()
+  open class b2ContactEdge ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Contacts.b2ContactEdge {
     
@@ -138,7 +138,7 @@ object Contacts {
   
   @JSGlobal("Box2D.Dynamics.Contacts.b2ContactResult")
   @js.native
-  class b2ContactResult ()
+  open class b2ContactResult ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Contacts.b2ContactResult {
     

@@ -14,17 +14,17 @@ trait ASPxClientGridViewRowFocusingEventArgs
   /**
     * Provides access to the parameters associated with the ASPxClientGridView.RowFocusing event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
 }
 object ASPxClientGridViewRowFocusingEventArgs {
   
-  inline def apply(cancel: Boolean, htmlEvent: js.Any, visibleIndex: Double): ASPxClientGridViewRowFocusingEventArgs = {
+  inline def apply(cancel: Boolean, htmlEvent: Any, visibleIndex: Double): ASPxClientGridViewRowFocusingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGridViewRowFocusingEventArgs]
   }
   
   extension [Self <: ASPxClientGridViewRowFocusingEventArgs](x: Self) {
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

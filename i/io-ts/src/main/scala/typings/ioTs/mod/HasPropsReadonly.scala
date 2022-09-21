@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait HasPropsReadonly
-  extends ReadonlyType[HasProps, js.Any, js.Any, js.Any]
+  extends ReadonlyType[HasProps, Any, Any, Any]
      with _HasProps

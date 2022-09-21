@@ -1,6 +1,5 @@
 package typings.weixinApp.wx
 
-import typings.std.ArrayBuffer
 import typings.weixinApp.weixinAppStrings.CONNECT
 import typings.weixinApp.weixinAppStrings.DELETE
 import typings.weixinApp.weixinAppStrings.GET
@@ -15,10 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestOptions
   extends StObject
-     with BaseOptions[DataResponse, js.Any] {
+     with BaseOptions[DataResponse, Any] {
   
   /** 请求的参数 */
-  var data: js.UndefOr[String | js.Object | ArrayBuffer] = js.undefined
+  var data: js.UndefOr[String | js.Object | js.typedarray.ArrayBuffer] = js.undefined
   
   /** 如果设为json，会尝试对返回的数据做一次 JSON.parse */
   var dataType: js.UndefOr[String] = js.undefined
@@ -47,7 +46,7 @@ object RequestOptions {
   
   extension [Self <: RequestOptions](x: Self) {
     
-    inline def setData(value: String | js.Object | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Object | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

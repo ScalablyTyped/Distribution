@@ -29,7 +29,7 @@ object DescribeEnvironmentMembershipsResult {
     
     inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
-    inline def setMembershipsVarargs(value: EnvironmentMember*): Self = StObject.set(x, "memberships", js.Array(value :_*))
+    inline def setMembershipsVarargs(value: EnvironmentMember*): Self = StObject.set(x, "memberships", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@blueprintjs/core", "Popover")
 @js.native
-class Popover protected ()
+open class Popover protected ()
   extends typings.blueprintjsCore.componentsMod.Popover {
   def this(props: IPopoverProps) = this()
-  def this(props: IPopoverProps, context: js.Any) = this()
+  def this(props: IPopoverProps, context: Any) = this()
 }
 /* static members */
 object Popover {

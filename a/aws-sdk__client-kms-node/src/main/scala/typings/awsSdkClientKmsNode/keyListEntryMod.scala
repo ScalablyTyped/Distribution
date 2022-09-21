@@ -8,5 +8,5 @@ object keyListEntryMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/_KeyListEntry", "_KeyListEntry")
   @js.native
-  val KeyListEntry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val KeyListEntry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

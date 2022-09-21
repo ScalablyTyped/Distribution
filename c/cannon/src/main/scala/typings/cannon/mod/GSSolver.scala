@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "GSSolver")
 @js.native
-class GSSolver ()
+open class GSSolver ()
   extends StObject
      with typings.cannon.CANNON.GSSolver {
   

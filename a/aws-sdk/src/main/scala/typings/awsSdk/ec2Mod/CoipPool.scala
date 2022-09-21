@@ -24,7 +24,7 @@ trait CoipPool extends StObject {
   /**
     * The ID of the address pool.
     */
-  var PoolId: js.UndefOr[CoipPoolId] = js.undefined
+  var PoolId: js.UndefOr[Ipv4PoolCoipId] = js.undefined
   
   /**
     * The tags.
@@ -52,9 +52,9 @@ object CoipPool {
     
     inline def setPoolCidrsUndefined: Self = StObject.set(x, "PoolCidrs", js.undefined)
     
-    inline def setPoolCidrsVarargs(value: String*): Self = StObject.set(x, "PoolCidrs", js.Array(value :_*))
+    inline def setPoolCidrsVarargs(value: String*): Self = StObject.set(x, "PoolCidrs", js.Array(value*))
     
-    inline def setPoolId(value: CoipPoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: Ipv4PoolCoipId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
     inline def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
     
@@ -62,6 +62,6 @@ object CoipPool {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.mathjs.mod
 
-import typings.mathjs.anon.PartialMathJsStatic
+import typings.std.Extract
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -209,7 +210,8 @@ trait FactoryDependencies extends StObject {
   
   var coulombDependencies: FactoryFunctionMap = js.native
   
-  def create(factories: FactoryFunctionMap, config: ConfigOptions): PartialMathJsStatic = js.native
+  def create(factories: FactoryFunctionMap): MathJsStatic = js.native
+  def create(factories: FactoryFunctionMap, config: ConfigOptions): MathJsStatic = js.native
   
   var createUnitDependencies: FactoryFunctionMap = js.native
   
@@ -279,16 +281,35 @@ trait FactoryDependencies extends StObject {
   
   var factorialDependencies: FactoryFunctionMap = js.native
   
-  def factory[T](
+  def factory[T, TDeps /* <: js.Array[MathJsFunctionName] */](
     name: String,
-    dependencies: js.Array[MathJsFunctionName],
-    create: js.Function1[/* injected */ PartialMathJsStatic, T]
+    dependencies: TDeps,
+    create: js.Function1[
+      /* injected */ Pick[
+        MathJsStatic, 
+        Extract[
+          MathJsFunctionName, 
+          /* import warning: importer.ImportType#apply Failed type conversion: TDeps[number] */ js.Any
+        ]
+      ], 
+      T
+    ]
   ): FactoryFunction[T] = js.native
-  def factory[T](
+  def factory[T, TDeps /* <: js.Array[MathJsFunctionName] */](
     name: String,
-    dependencies: js.Array[MathJsFunctionName],
-    create: js.Function1[/* injected */ PartialMathJsStatic, T],
-    meta: js.Any
+    dependencies: TDeps,
+    create: js.Function1[
+      /* injected */ Pick[
+        MathJsStatic, 
+        Extract[
+          MathJsFunctionName, 
+          /* import warning: importer.ImportType#apply Failed type conversion: TDeps[number] */ js.Any
+        ]
+      ], 
+      T
+    ],
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  meta: Any
   ): FactoryFunction[T] = js.native
   
   var falseDependencies: FactoryFunctionMap = js.native

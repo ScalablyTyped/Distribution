@@ -13,6 +13,8 @@ trait PathSymbol3DLayerMaterial
   /**
     * The color of the path.
     *
+    * @default white
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#material)
     */
   var color: js.UndefOr[Color_] = js.undefined
@@ -24,8 +26,8 @@ object PathSymbol3DLayerMaterial {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, PathSymbol3DLayerMaterial]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], PathSymbol3DLayerMaterial]])
+      js.Function2[/* propertyName */ String, /* value */ Any, PathSymbol3DLayerMaterial]
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], PathSymbol3DLayerMaterial]])
   ): PathSymbol3DLayerMaterial = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathSymbol3DLayerMaterial]

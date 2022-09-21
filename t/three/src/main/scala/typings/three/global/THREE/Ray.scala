@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.Ray")
 @js.native
-class Ray ()
+open class Ray ()
   extends typings.three.mod.Ray {
   def this(origin: typings.three.vector3Mod.Vector3) = this()
   def this(origin: Unit, direction: typings.three.vector3Mod.Vector3) = this()

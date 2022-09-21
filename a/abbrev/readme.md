@@ -11,9 +11,9 @@ Like ruby's abbrev module, but in js
 | Full name          | abbrev |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 229 |
-| # downloads        | 534545460 |
-| # stars            | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 6.5530882666666664E7 |
+| # stars            | 149.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/abbrev-js#readme)

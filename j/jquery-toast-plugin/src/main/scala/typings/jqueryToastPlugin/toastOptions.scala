@@ -24,15 +24,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait toastOptions extends StObject {
   
-  var afterHidden: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var afterHidden: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var afterShown: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var afterShown: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var allowToastClose: js.UndefOr[Boolean] = js.undefined
   
-  var beforeHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var beforeHide: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var beforeShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var beforeShow: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var bgColor: js.UndefOr[String] = js.undefined
   
@@ -69,11 +69,11 @@ object toastOptions {
   
   extension [Self <: toastOptions](x: Self) {
     
-    inline def setAfterHidden(value: () => js.Any): Self = StObject.set(x, "afterHidden", js.Any.fromFunction0(value))
+    inline def setAfterHidden(value: () => Any): Self = StObject.set(x, "afterHidden", js.Any.fromFunction0(value))
     
     inline def setAfterHiddenUndefined: Self = StObject.set(x, "afterHidden", js.undefined)
     
-    inline def setAfterShown(value: () => js.Any): Self = StObject.set(x, "afterShown", js.Any.fromFunction0(value))
+    inline def setAfterShown(value: () => Any): Self = StObject.set(x, "afterShown", js.Any.fromFunction0(value))
     
     inline def setAfterShownUndefined: Self = StObject.set(x, "afterShown", js.undefined)
     
@@ -81,11 +81,11 @@ object toastOptions {
     
     inline def setAllowToastCloseUndefined: Self = StObject.set(x, "allowToastClose", js.undefined)
     
-    inline def setBeforeHide(value: () => js.Any): Self = StObject.set(x, "beforeHide", js.Any.fromFunction0(value))
+    inline def setBeforeHide(value: () => Any): Self = StObject.set(x, "beforeHide", js.Any.fromFunction0(value))
     
     inline def setBeforeHideUndefined: Self = StObject.set(x, "beforeHide", js.undefined)
     
-    inline def setBeforeShow(value: () => js.Any): Self = StObject.set(x, "beforeShow", js.Any.fromFunction0(value))
+    inline def setBeforeShow(value: () => Any): Self = StObject.set(x, "beforeShow", js.Any.fromFunction0(value))
     
     inline def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     

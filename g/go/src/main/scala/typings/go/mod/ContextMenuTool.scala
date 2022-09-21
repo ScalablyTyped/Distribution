@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.contextMenuTool, which you can modify.
   */
-class ContextMenuTool () extends Tool {
+open class ContextMenuTool () extends Tool {
   
   /**Gets or sets the currently showing context menu, or null if there is none.*/
   var currentContextMenu: Adornment = js.native

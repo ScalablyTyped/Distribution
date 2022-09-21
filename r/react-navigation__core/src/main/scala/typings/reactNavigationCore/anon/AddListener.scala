@@ -1,36 +1,20 @@
 package typings.reactNavigationCore.anon
 
+import typings.reactNavigationCore.navigationBuilderContextMod.ChildActionListener
+import typings.reactNavigationCore.navigationBuilderContextMod.FocusedNavigationListener
 import typings.reactNavigationCore.reactNavigationCoreStrings.action
 import typings.reactNavigationCore.reactNavigationCoreStrings.focus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait AddListener extends StObject {
   
-  def addListener[T /* <: focus | action */](
-    `type`: T,
-    listener: /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.ListenerMap[T] */ js.Any
-  ): js.Function0[Unit]
+  @JSName("addListener")
+  def addListener_action(`type`: action, listener: ChildActionListener): js.Function0[Unit] = js.native
+  @JSName("addListener")
+  def addListener_focus(`type`: focus, listener: FocusedNavigationListener): js.Function0[Unit] = js.native
   
-  var listeners: Focus
-}
-object AddListener {
-  
-  inline def apply(
-    addListener: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.ListenerMap[T] */ js.Any) => js.Function0[Unit],
-    listeners: Focus
-  ): AddListener = {
-    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), listeners = listeners.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AddListener]
-  }
-  
-  extension [Self <: AddListener](x: Self) {
-    
-    inline def setAddListener(
-      value: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.ListenerMap[T] */ js.Any) => js.Function0[Unit]
-    ): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
-    
-    inline def setListeners(value: Focus): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
-  }
+  var listeners: Focus = js.native
 }

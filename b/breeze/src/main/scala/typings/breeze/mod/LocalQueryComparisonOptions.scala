@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("breeze", "LocalQueryComparisonOptions")
 @js.native
-class LocalQueryComparisonOptions protected ()
+open class LocalQueryComparisonOptions protected ()
   extends StObject
      with typings.breeze.breeze.LocalQueryComparisonOptions {
   def this(config: IsCaseSensitive) = this()

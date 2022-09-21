@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ValueRange")
 @js.native
-/* private */ class ValueRange () extends StObject {
+/* private */ open class ValueRange () extends StObject {
   
   def checkValidIntValue(value: Double, field: TemporalField): Double = js.native
   
-  def checkValidValue(value: Double, field: TemporalField): js.Any = js.native
-  
-  def equals(other: js.Any): Boolean = js.native
+  def checkValidValue(value: Double, field: TemporalField): Any = js.native
   
   def isFixed(): Boolean = js.native
   
@@ -20,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def isValidIntValue(value: Double): Boolean = js.native
   
-  def isValidValue(value: js.Any): Boolean = js.native
+  def isValidValue(value: Any): Boolean = js.native
   
   def largestMinimum(): Double = js.native
   

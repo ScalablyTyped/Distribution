@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.ObjectCollisionMatrix")
 @js.native
-class ObjectCollisionMatrix ()
+open class ObjectCollisionMatrix ()
   extends StObject
      with typings.cannon.CANNON.ObjectCollisionMatrix {
   

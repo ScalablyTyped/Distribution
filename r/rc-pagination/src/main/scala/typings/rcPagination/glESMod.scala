@@ -51,6 +51,13 @@ object glESMod {
     @JSImport("rc-pagination/lib/locale/gl_ES", "default.page")
     @js.native
     def page: String = js.native
+    
+    @JSImport("rc-pagination/lib/locale/gl_ES", "default.page_size")
+    @js.native
+    def pageSize: String = js.native
+    
+    inline def pageSize_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("page_size")(x.asInstanceOf[js.Any])
+    
     inline def page_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("page")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-pagination/lib/locale/gl_ES", "default.prev_3")

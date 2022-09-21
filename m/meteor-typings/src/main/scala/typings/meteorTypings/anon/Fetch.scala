@@ -19,7 +19,7 @@ trait Fetch[T] extends StObject {
       /* userId */ String, 
       /* doc */ T, 
       /* fieldNames */ js.Array[String], 
-      /* modifier */ js.Any, 
+      /* modifier */ Any, 
       Boolean
     ]
   ] = js.undefined
@@ -37,7 +37,7 @@ object Fetch {
     
     inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
     
-    inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
+    inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value*))
     
     inline def setInsert(value: (/* userId */ String, /* doc */ T) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
@@ -52,7 +52,7 @@ object Fetch {
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     inline def setUpdate(
-      value: (/* userId */ String, /* doc */ T, /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
+      value: (/* userId */ String, /* doc */ T, /* fieldNames */ js.Array[String], /* modifier */ Any) => Boolean
     ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)

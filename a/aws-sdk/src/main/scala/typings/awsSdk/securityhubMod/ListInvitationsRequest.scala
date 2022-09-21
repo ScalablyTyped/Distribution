@@ -9,7 +9,7 @@ trait ListInvitationsRequest extends StObject {
   /**
     * The maximum number of items to return in the response. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.securityhubMod.MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[CrossAccountMaxResults] = js.undefined
   
   /**
     * The token that is required for pagination. On your first call to the ListInvitations operation, set the value of this parameter to NULL. For subsequent calls to the operation, to continue listing data, set the value of this parameter to the value returned from the previous response.
@@ -25,7 +25,7 @@ object ListInvitationsRequest {
   
   extension [Self <: ListInvitationsRequest](x: Self) {
     
-    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: CrossAccountMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     

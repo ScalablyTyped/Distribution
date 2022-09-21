@@ -1,6 +1,6 @@
 package typings.i2cBus
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ object mod {
   inline def openSync(busNumber: Double): I2CBus = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(busNumber.asInstanceOf[js.Any]).asInstanceOf[I2CBus]
   inline def openSync(busNumber: Double, options: OpenOptions): I2CBus = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(busNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[I2CBus]
   
-  type BufferCallback = js.Function3[/* error */ js.Any, /* bytesReadOrWritten */ Double, /* buffer */ Buffer, js.Any]
+  type BufferCallback = js.Function3[/* error */ Any, /* bytesReadOrWritten */ Double, /* buffer */ Buffer, Any]
   
   trait BytesRead extends StObject {
     
@@ -64,7 +64,7 @@ object mod {
     }
   }
   
-  type CompletionCallback = js.Function1[/* error */ js.Any, js.Any]
+  type CompletionCallback = js.Function1[/* error */ Any, Any]
   
   @js.native
   trait I2CBus extends StObject {
@@ -823,5 +823,5 @@ object mod {
     def writeWord(address: Double, command: Double, word: Double): js.Promise[Unit] = js.native
   }
   
-  type ResultCallback[T] = js.Function2[/* error */ js.Any, /* result */ T, js.Any]
+  type ResultCallback[T] = js.Function2[/* error */ Any, /* result */ T, Any]
 }

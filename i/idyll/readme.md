@@ -10,10 +10,10 @@ Command line interface for idyll lang
 | ------------------ | :-------------: |
 | Full name          | idyll |
 | Keywords           | idyll |
-| # releases         | 64 |
-| # dependents       | 0 |
-| # downloads        | 12850 |
-| # stars            | 0 |
+| # releases         | 66 |
+| # dependents       | 0.0 |
+| # downloads        | 1467.0 |
+| # stars            | 1894.0 |
 
 ## Links
 - [Homepage](https://github.com/idyll-lang/idyll#readme)

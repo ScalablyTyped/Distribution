@@ -11,5 +11,5 @@ object isSubsetOfMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(subset: Type[js.Any], superset: Type[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(subset.asInstanceOf[js.Any], superset.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(subset: Type[Any], superset: Type[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(subset.asInstanceOf[js.Any], superset.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

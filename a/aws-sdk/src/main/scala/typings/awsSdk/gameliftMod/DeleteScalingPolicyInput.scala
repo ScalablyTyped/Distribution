@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteScalingPolicyInput extends StObject {
   
   /**
-    * A unique identifier for a fleet to be deleted. You can use either the fleet ID or ARN value.
+    * A unique identifier for the fleet to be deleted. You can use either the fleet ID or ARN value.
     */
   var FleetId: FleetIdOrArn
   
   /**
-    * A descriptive label that is associated with a scaling policy. Policy names do not need to be unique.
+    * A descriptive label that is associated with a fleet's scaling policy. Policy names do not need to be unique.
     */
   var Name: NonZeroAndMaxString
 }

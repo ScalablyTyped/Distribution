@@ -10,10 +10,10 @@ Check if a file path is a compressed file
 | ------------------ | :-------------: |
 | Full name          | is-compressed |
 | Keywords           | extensions, extension, file, path, check, detect, is, compressed, compress, archive, zip, tar, rar, 7z |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 1568 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 28.666666666666668 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-compressed#readme)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for dotenv-flow
 
-Typings are for version 3.1
+Typings are for version 3.2
 
 ## Library description:
 Loads environment variables from `.env.[development|test|production][.local]` files
@@ -10,10 +10,10 @@ Loads environment variables from `.env.[development|test|production][.local]` fi
 | ------------------ | :-------------: |
 | Full name          | dotenv-flow |
 | Keywords           | dotenv, node_env, development, test, production, local |
-| # releases         | 12 |
-| # dependents       | 55 |
-| # downloads        | 2378913 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 630019.6666666666 |
+| # stars            | 695.0 |
 
 ## Links
 - [Homepage](https://github.com/kerimdzhanov/dotenv-flow#readme)

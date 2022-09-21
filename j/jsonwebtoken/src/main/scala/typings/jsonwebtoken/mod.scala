@@ -1,12 +1,24 @@
 package typings.jsonwebtoken
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jsonwebtoken.anon.DecodeOptionscompletetrue
 import typings.jsonwebtoken.anon.DecodeOptionsjsontrue
 import typings.jsonwebtoken.anon.Key
-import typings.node.Buffer
-import typings.std.Date
+import typings.jsonwebtoken.anon.VerifyOptionscompletefals
+import typings.jsonwebtoken.anon.VerifyOptionscompletetrue
+import typings.jsonwebtoken.jsonwebtokenStrings.alg
+import typings.jsonwebtoken.jsonwebtokenStrings.crit
+import typings.jsonwebtoken.jsonwebtokenStrings.cty
+import typings.jsonwebtoken.jsonwebtokenStrings.jku
+import typings.jsonwebtoken.jsonwebtokenStrings.kid
+import typings.jsonwebtoken.jsonwebtokenStrings.typ
+import typings.jsonwebtoken.jsonwebtokenStrings.x5c
+import typings.jsonwebtoken.jsonwebtokenStrings.x5t
+import typings.jsonwebtoken.jsonwebtokenStrings.x5tNumbersignS256
+import typings.jsonwebtoken.jsonwebtokenStrings.x5u
+import typings.node.bufferMod.global.Buffer
 import typings.std.Error
-import typings.std.RegExp
+import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,18 +31,20 @@ object mod {
   
   @JSImport("jsonwebtoken", "JsonWebTokenError")
   @js.native
-  class JsonWebTokenError protected ()
+  open class JsonWebTokenError protected ()
     extends StObject
        with Error
        with VerifyErrors {
     def this(message: String) = this()
-    def this(message: String, error: Error) = this()
+    def this(message: String, error: js.Error) = this()
     
-    var inner: Error = js.native
+    var inner: js.Error = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -38,24 +52,25 @@ object mod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.jsonwebtoken.mod.VerifyErrors because Already inherited */ @JSImport("jsonwebtoken", "NotBeforeError")
   @js.native
-  class NotBeforeError protected () extends JsonWebTokenError {
-    def this(message: String, date: Date) = this()
+  open class NotBeforeError protected () extends JsonWebTokenError {
+    def this(message: String, date: js.Date) = this()
     
-    var date: Date = js.native
+    var date: js.Date = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.jsonwebtoken.mod.VerifyErrors because Already inherited */ @JSImport("jsonwebtoken", "TokenExpiredError")
   @js.native
-  class TokenExpiredError protected () extends JsonWebTokenError {
-    def this(message: String, expiredAt: Date) = this()
+  open class TokenExpiredError protected () extends JsonWebTokenError {
+    def this(message: String, expiredAt: js.Date) = this()
     
-    var expiredAt: Date = js.native
+    var expiredAt: js.Date = js.native
   }
   
-  inline def decode(token: String): Null | StringDictionary[js.Any] | String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any]).asInstanceOf[Null | StringDictionary[js.Any] | String]
-  inline def decode(token: String, options: DecodeOptionsjsontrue): Null | StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | StringDictionary[js.Any]]
-  inline def decode(token: String, options: DecodeOptions): Null | StringDictionary[js.Any] | String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | StringDictionary[js.Any] | String]
+  inline def decode(token: String): Null | JwtPayload | String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any]).asInstanceOf[Null | JwtPayload | String]
+  inline def decode(token: String, options: DecodeOptionscompletetrue): Null | Jwt = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | Jwt]
+  inline def decode(token: String, options: DecodeOptionsjsontrue): Null | JwtPayload = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | JwtPayload]
+  inline def decode(token: String, options: DecodeOptions): Null | JwtPayload | String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | JwtPayload | String]
   
   inline def sign(payload: String, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def sign(payload: String, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -71,22 +86,72 @@ object mod {
   inline def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: Unit, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(
+    token: String,
+    secretOrPublicKey: GetPublicKeyOrSecret,
+    callback: VerifyCallback[JwtPayload | String]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(
+    token: String,
+    secretOrPublicKey: GetPublicKeyOrSecret,
+    options: Unit,
+    callback: VerifyCallback[Jwt | JwtPayload | String]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: VerifyOptionscompletefals): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(
+    token: String,
+    secretOrPublicKey: GetPublicKeyOrSecret,
+    options: VerifyOptionscompletefals,
+    callback: VerifyCallback[JwtPayload | String]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: VerifyOptionscompletetrue): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(
+    token: String,
+    secretOrPublicKey: GetPublicKeyOrSecret,
+    options: VerifyOptionscompletetrue,
+    callback: VerifyCallback[Jwt]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: VerifyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def verify(
     token: String,
     secretOrPublicKey: GetPublicKeyOrSecret,
     options: VerifyOptions,
-    callback: VerifyCallback
+    callback: VerifyCallback[Jwt | JwtPayload | String]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def verify(token: String, secretOrPublicKey: Secret): js.Object | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[js.Object | String]
-  inline def verify(token: String, secretOrPublicKey: Secret, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def verify(token: String, secretOrPublicKey: Secret, options: Unit, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions): js.Object | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object | String]
-  inline def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: Secret): JwtPayload | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[JwtPayload | String]
+  inline def verify(token: String, secretOrPublicKey: Secret, callback: VerifyCallback[JwtPayload | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(
+    token: String,
+    secretOrPublicKey: Secret,
+    options: Unit,
+    callback: VerifyCallback[Jwt | JwtPayload | String]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptionscompletefals): JwtPayload | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JwtPayload | String]
+  inline def verify(
+    token: String,
+    secretOrPublicKey: Secret,
+    options: VerifyOptionscompletefals,
+    callback: VerifyCallback[JwtPayload | String]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptionscompletetrue): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(
+    token: String,
+    secretOrPublicKey: Secret,
+    options: VerifyOptionscompletetrue,
+    callback: VerifyCallback[Jwt]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions): Jwt | JwtPayload | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Jwt | JwtPayload | String]
+  inline def verify(
+    token: String,
+    secretOrPublicKey: Secret,
+    options: VerifyOptions,
+    callback: VerifyCallback[Jwt | JwtPayload | String]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def verify_Jwt(token: String, secretOrPublicKey: Secret, options: VerifyOptionscompletetrue): Jwt = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Jwt]
   
   inline def verify_Unit(token: String, secretOrPublicKey: Secret): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify_Unit(token: String, secretOrPublicKey: Secret, options: VerifyOptionscompletefals): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def verify_Unit(token: String, secretOrPublicKey: Secret, options: VerifyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
@@ -161,9 +226,45 @@ object mod {
   
   type GetPublicKeyOrSecret = js.Function2[/* header */ JwtHeader, /* callback */ SigningKeyCallback, Unit]
   
+  trait Jwt extends StObject {
+    
+    var header: JwtHeader
+    
+    var payload: JwtPayload | String
+    
+    var signature: String
+  }
+  object Jwt {
+    
+    inline def apply(header: JwtHeader, payload: JwtPayload | String, signature: String): Jwt = {
+      val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Jwt]
+    }
+    
+    extension [Self <: Jwt](x: Self) {
+      
+      inline def setHeader(value: JwtHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setPayload(value: JwtPayload | String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      
+      inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait JwtHeader extends StObject {
     
-    var alg: String
+    var alg: String | Algorithm
+    
+    var crit: js.UndefOr[
+        js.Array[
+          String | (Exclude[
+            alg | typ | cty | typings.jsonwebtoken.jsonwebtokenStrings.crit | kid | jku | x5u | x5tNumbersignS256 | x5t | x5c, 
+            typings.jsonwebtoken.jsonwebtokenStrings.crit
+          ])
+        ]
+      ] = js.undefined
+    
+    var cty: js.UndefOr[String] = js.undefined
     
     var jku: js.UndefOr[String] = js.undefined
     
@@ -171,20 +272,41 @@ object mod {
     
     var typ: js.UndefOr[String] = js.undefined
     
+    var x5c: js.UndefOr[String | js.Array[String]] = js.undefined
+    
     var x5t: js.UndefOr[String] = js.undefined
     
-    var x5u: js.UndefOr[String] = js.undefined
+    @JSName("x5t#S256")
+    var x5tNumbersignS256: js.UndefOr[String] = js.undefined
+    
+    var x5u: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object JwtHeader {
     
-    inline def apply(alg: String): JwtHeader = {
+    inline def apply(alg: String | Algorithm): JwtHeader = {
       val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any])
       __obj.asInstanceOf[JwtHeader]
     }
     
     extension [Self <: JwtHeader](x: Self) {
       
-      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String | Algorithm): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      
+      inline def setCrit(
+        value: js.Array[
+              String | (Exclude[alg | typ | cty | crit | kid | jku | x5u | x5tNumbersignS256 | x5t | x5c, crit])
+            ]
+      ): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+      
+      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
+      
+      inline def setCritVarargs(
+        value: (String | (Exclude[alg | typ | cty | crit | kid | jku | x5u | x5tNumbersignS256 | x5t | x5c, crit]))*
+      ): Self = StObject.set(x, "crit", js.Array(value*))
+      
+      inline def setCty(value: String): Self = StObject.set(x, "cty", value.asInstanceOf[js.Any])
+      
+      inline def setCtyUndefined: Self = StObject.set(x, "cty", js.undefined)
       
       inline def setJku(value: String): Self = StObject.set(x, "jku", value.asInstanceOf[js.Any])
       
@@ -198,19 +320,90 @@ object mod {
       
       inline def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
       
+      inline def setX5c(value: String | js.Array[String]): Self = StObject.set(x, "x5c", value.asInstanceOf[js.Any])
+      
+      inline def setX5cUndefined: Self = StObject.set(x, "x5c", js.undefined)
+      
+      inline def setX5cVarargs(value: String*): Self = StObject.set(x, "x5c", js.Array(value*))
+      
       inline def setX5t(value: String): Self = StObject.set(x, "x5t", value.asInstanceOf[js.Any])
+      
+      inline def setX5tNumbersignS256(value: String): Self = StObject.set(x, "x5t#S256", value.asInstanceOf[js.Any])
+      
+      inline def setX5tNumbersignS256Undefined: Self = StObject.set(x, "x5t#S256", js.undefined)
       
       inline def setX5tUndefined: Self = StObject.set(x, "x5t", js.undefined)
       
-      inline def setX5u(value: String): Self = StObject.set(x, "x5u", value.asInstanceOf[js.Any])
+      inline def setX5u(value: String | js.Array[String]): Self = StObject.set(x, "x5u", value.asInstanceOf[js.Any])
       
       inline def setX5uUndefined: Self = StObject.set(x, "x5u", js.undefined)
+      
+      inline def setX5uVarargs(value: String*): Self = StObject.set(x, "x5u", js.Array(value*))
+    }
+  }
+  
+  trait JwtPayload
+    extends StObject
+       with /* key */ StringDictionary[Any] {
+    
+    var aud: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var exp: js.UndefOr[Double] = js.undefined
+    
+    var iat: js.UndefOr[Double] = js.undefined
+    
+    var iss: js.UndefOr[String] = js.undefined
+    
+    var jti: js.UndefOr[String] = js.undefined
+    
+    var nbf: js.UndefOr[Double] = js.undefined
+    
+    var sub: js.UndefOr[String] = js.undefined
+  }
+  object JwtPayload {
+    
+    inline def apply(): JwtPayload = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[JwtPayload]
+    }
+    
+    extension [Self <: JwtPayload](x: Self) {
+      
+      inline def setAud(value: String | js.Array[String]): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
+      
+      inline def setAudUndefined: Self = StObject.set(x, "aud", js.undefined)
+      
+      inline def setAudVarargs(value: String*): Self = StObject.set(x, "aud", js.Array(value*))
+      
+      inline def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+      
+      inline def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
+      
+      inline def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
+      
+      inline def setIatUndefined: Self = StObject.set(x, "iat", js.undefined)
+      
+      inline def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
+      
+      inline def setIssUndefined: Self = StObject.set(x, "iss", js.undefined)
+      
+      inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
+      
+      inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
+      
+      inline def setNbf(value: Double): Self = StObject.set(x, "nbf", value.asInstanceOf[js.Any])
+      
+      inline def setNbfUndefined: Self = StObject.set(x, "nbf", js.undefined)
+      
+      inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     }
   }
   
   type Secret = String | Buffer | Key
   
-  type SignCallback = js.Function2[/* err */ Error | Null, /* encoded */ js.UndefOr[String], Unit]
+  type SignCallback = js.Function2[/* error */ js.Error | Null, /* encoded */ js.UndefOr[String], Unit]
   
   trait SignOptions extends StObject {
     
@@ -236,7 +429,7 @@ object mod {
     /** expressed in seconds or a string describing a time span [zeit/ms](https://github.com/zeit/ms.js).  Eg: 60, "2 days", "10h", "7d" */
     var expiresIn: js.UndefOr[String | Double] = js.undefined
     
-    var header: js.UndefOr[js.Object] = js.undefined
+    var header: js.UndefOr[JwtHeader] = js.undefined
     
     var issuer: js.UndefOr[String] = js.undefined
     
@@ -270,7 +463,7 @@ object mod {
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value*))
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -280,7 +473,7 @@ object mod {
       
       inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
       
-      inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: JwtHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
@@ -314,9 +507,9 @@ object mod {
     }
   }
   
-  type SigningKeyCallback = js.Function2[/* err */ js.Any, /* signingKey */ js.UndefOr[Secret], Unit]
+  type SigningKeyCallback = js.Function2[/* error */ js.Error | Null, /* signingKey */ js.UndefOr[Secret], Unit]
   
-  type VerifyCallback = js.Function2[/* err */ VerifyErrors | Null, /* decoded */ js.UndefOr[js.Object], Unit]
+  type VerifyCallback[T] = js.Function2[/* error */ VerifyErrors | Null, /* decoded */ js.UndefOr[T], Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.jsonwebtoken.mod.JsonWebTokenError
@@ -329,7 +522,7 @@ object mod {
     
     var algorithms: js.UndefOr[js.Array[Algorithm]] = js.undefined
     
-    var audience: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var audience: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     var clockTimestamp: js.UndefOr[Double] = js.undefined
     
@@ -346,11 +539,7 @@ object mod {
     
     var jwtid: js.UndefOr[String] = js.undefined
     
-    /**
-      * @deprecated
-      * Max age of token
-      */
-    var maxAge: js.UndefOr[String] = js.undefined
+    var maxAge: js.UndefOr[String | Double] = js.undefined
     
     /**
       * If you want to check `nonce` claim, provide a string value here.
@@ -373,13 +562,13 @@ object mod {
       
       inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      inline def setAlgorithmsVarargs(value: Algorithm*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: Algorithm*): Self = StObject.set(x, "algorithms", js.Array(value*))
       
-      inline def setAudience(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      inline def setAudienceVarargs(value: (String | RegExp)*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "audience", js.Array(value*))
       
       inline def setClockTimestamp(value: Double): Self = StObject.set(x, "clockTimestamp", value.asInstanceOf[js.Any])
       
@@ -405,13 +594,13 @@ object mod {
       
       inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
+      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value*))
       
       inline def setJwtid(value: String): Self = StObject.set(x, "jwtid", value.asInstanceOf[js.Any])
       
       inline def setJwtidUndefined: Self = StObject.set(x, "jwtid", js.undefined)
       
-      inline def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: String | Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
       inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       

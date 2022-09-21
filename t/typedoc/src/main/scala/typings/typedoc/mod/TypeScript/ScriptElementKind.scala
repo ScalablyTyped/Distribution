@@ -45,6 +45,12 @@ object ScriptElementKind extends StObject {
   
   /* "let" */ val letElement: typings.typescript.mod.ScriptElementKind.letElement & String = js.native
   
+  /* "link" */ val link: typings.typescript.mod.ScriptElementKind.link & String = js.native
+  
+  /* "link name" */ val linkName: typings.typescript.mod.ScriptElementKind.linkName & String = js.native
+  
+  /* "link text" */ val linkText: typings.typescript.mod.ScriptElementKind.linkText & String = js.native
+  
   /* "local class" */ val localClassElement: typings.typescript.mod.ScriptElementKind.localClassElement & String = js.native
   
   /* "local function" */ val localFunctionElement: typings.typescript.mod.ScriptElementKind.localFunctionElement & String = js.native

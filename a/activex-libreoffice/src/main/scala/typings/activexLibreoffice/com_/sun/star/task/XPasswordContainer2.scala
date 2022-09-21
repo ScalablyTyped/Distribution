@@ -34,7 +34,7 @@ object XPasswordContainer2 {
     hasMasterPassword: () => Boolean,
     isDefaultMasterPasswordUsed: () => Boolean,
     isPersistentStoringAllowed: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     remove: (String, String) => Unit,
     removeAllPersistent: () => Unit,

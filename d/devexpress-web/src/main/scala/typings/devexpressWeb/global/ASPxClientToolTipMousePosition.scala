@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientToolTipMousePosition")
 @js.native
-class ASPxClientToolTipMousePosition ()
+open class ASPxClientToolTipMousePosition ()
   extends StObject
      with typings.devexpressWeb.ASPxClientToolTipPosition

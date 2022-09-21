@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofDialog extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: Dialog
 }
 object TypeofDialog {
   
-  inline def apply(Locale: js.Any, fn: Dialog): TypeofDialog = {
+  inline def apply(Locale: Any, fn: Dialog): TypeofDialog = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDialog]
   }
@@ -24,6 +24,6 @@ object TypeofDialog {
     
     inline def setFn(value: Dialog): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

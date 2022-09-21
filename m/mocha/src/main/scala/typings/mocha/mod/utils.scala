@@ -1,6 +1,5 @@
 package typings.mocha.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object utils {
     *
     * @see https://mochajs.org/api/module-utils.html#.canonicalize
     */
-  inline def canonicalize(value: js.Any, stack: js.Array[js.Any], typeHint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("canonicalize")(value.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def canonicalize(value: Any, stack: js.Array[Any], typeHint: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("canonicalize")(value.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Strip the function definition from `str`, and re-indent for pre whitespace.
@@ -39,23 +38,13 @@ object utils {
     *
     * @see https://mochajs.org/api/module-utils.html#.getError
     */
-  inline def getError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")().asInstanceOf[Error]
-  inline def getError(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def getError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")().asInstanceOf[js.Error]
+  inline def getError(err: js.Error): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(err.asInstanceOf[js.Any]).asInstanceOf[js.Error]
   
   /**
     * Highlight the given string of `js`.
     */
   inline def highlight(js_ : String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(js_.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  /**
-    * Lookup file names at the given `path`.
-    *
-    * @see https://mochajs.org/api/Mocha.utils.html#.exports.lookupFiles
-    */
-  inline def lookupFiles(filepath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def lookupFiles(filepath: String, extensions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def lookupFiles(filepath: String, extensions: js.Array[String], recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def lookupFiles(filepath: String, extensions: Unit, recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   /**
     * Compute a slug from the given `str`.
@@ -83,17 +72,17 @@ object utils {
     *
     * @see https://mochajs.org/api/module-utils.html#.stringify
     */
-  inline def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Takes some variable and asks `Object.prototype.toString()` what it thinks it is.
     */
-  inline def `type`(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def `type`(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Generate an undefined error with a message warning the user.
     *
     * @see https://mochajs.org/api/module-utils.html#.undefinedError
     */
-  inline def undefinedError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("undefinedError")().asInstanceOf[Error]
+  inline def undefinedError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("undefinedError")().asInstanceOf[js.Error]
 }

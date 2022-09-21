@@ -9,7 +9,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("PNotify")
   @js.native
-  class PNotify ()
+  open class PNotify ()
     extends StObject
        with typings.jqueryPnotify.PNotify {
     def this(options: PNotifyOptions) = this()

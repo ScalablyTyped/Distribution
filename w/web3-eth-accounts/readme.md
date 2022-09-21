@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-eth-accounts
 
-Typings are for version 1.3.0
+Typings are for version 1.8.0
 
 ## Library description:
 Web3 module to generate Ethereum accounts and sign data and transactions.
@@ -10,12 +10,15 @@ Web3 module to generate Ethereum accounts and sign data and transactions.
 | ------------------ | :-------------: |
 | Full name          | web3-eth-accounts |
 | Keywords           | - |
-| # releases         | 43 |
-| # dependents       | 32 |
-| # downloads        | 7029643 |
-| # stars            | 0 |
+| # releases         | 55 |
+| # dependents       | 0.0 |
+| # downloads        | 2318499.6666666665 |
+| # stars            | 16013.0 |
 
 ## Links
+- [Homepage](https://github.com/ethereum/web3.js/tree/1.x#readme)
+- [Bugs](https://github.com/ethereum/web3.js/issues)
+- [Repository](https://github.com/ethereum/web3.js/tree/1.x)
 - [Npm](https://www.npmjs.com/package/web3-eth-accounts)
     
 

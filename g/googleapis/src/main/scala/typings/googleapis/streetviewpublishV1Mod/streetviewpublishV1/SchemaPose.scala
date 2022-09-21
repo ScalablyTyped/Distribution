@@ -4,41 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Raw pose measurement for an entity.
-  */
 trait SchemaPose extends StObject {
   
   /**
-    * The estimated horizontal accuracy of this pose in meters with 68%
-    * confidence (one standard deviation). For example, on Android, this value
-    * is available from this method:
-    * https://developer.android.com/reference/android/location/Location#getAccuracy().
-    * Other platforms have different methods of obtaining similar accuracy
-    * estimations.
+    * The estimated horizontal accuracy of this pose in meters with 68% confidence (one standard deviation). For example, on Android, this value is available from this method: https://developer.android.com/reference/android/location/Location#getAccuracy(). Other platforms have different methods of obtaining similar accuracy estimations.
     */
-  var accuracyMeters: js.UndefOr[Double] = js.undefined
+  var accuracyMeters: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Altitude of the pose in meters above WGS84 ellipsoid. NaN indicates an
-    * unmeasured quantity.
+    * Altitude of the pose in meters above WGS84 ellipsoid. NaN indicates an unmeasured quantity.
     */
-  var altitude: js.UndefOr[Double] = js.undefined
+  var altitude: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Compass heading, measured at the center of the photo in degrees clockwise
-    * from North. Value must be &gt;=0 and &lt;360. NaN indicates an unmeasured
-    * quantity.
+    * Time of the GPS record since UTC epoch.
     */
-  var heading: js.UndefOr[Double] = js.undefined
+  var gpsRecordTimestampUnixEpoch: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Latitude and longitude pair of the pose, as explained here:
-    * https://cloud.google.com/datastore/docs/reference/rest/Shared.Types/LatLng
-    * When creating a Photo, if the latitude and longitude pair are not
-    * provided, the geolocation from the exif header is used. A latitude and
-    * longitude pair not provided in the photo or exif header causes the photo
-    * process to fail.
+    * The following pose parameters pertain to the center of the photo. They match https://developers.google.com/streetview/spherical-metadata. Compass heading, measured at the center of the photo in degrees clockwise from North. Value must be \>=0 and <360. NaN indicates an unmeasured quantity.
+    */
+  var heading: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * Latitude and longitude pair of the pose, as explained here: https://cloud.google.com/datastore/docs/reference/rest/Shared.Types/LatLng When creating a Photo, if the latitude and longitude pair are not provided, the geolocation from the exif header is used. A latitude and longitude pair not provided in the photo or exif header causes the photo process to fail.
     */
   var latLngPair: js.UndefOr[SchemaLatLng] = js.undefined
   
@@ -48,18 +37,14 @@ trait SchemaPose extends StObject {
   var level: js.UndefOr[SchemaLevel] = js.undefined
   
   /**
-    * Pitch, measured at the center of the photo in degrees. Value must be
-    * &gt;=-90 and &lt;= 90. A value of -90 means looking directly down, and a
-    * value of 90 means looking directly up. NaN indicates an unmeasured
-    * quantity.
+    * Pitch, measured at the center of the photo in degrees. Value must be \>=-90 and <= 90. A value of -90 means looking directly down, and a value of 90 means looking directly up. NaN indicates an unmeasured quantity.
     */
-  var pitch: js.UndefOr[Double] = js.undefined
+  var pitch: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Roll, measured in degrees. Value must be &gt;= 0 and &lt;360. A value of
-    * 0 means level with the horizon. NaN indicates an unmeasured quantity.
+    * Roll, measured in degrees. Value must be \>= 0 and <360. A value of 0 means level with the horizon. NaN indicates an unmeasured quantity.
     */
-  var roll: js.UndefOr[Double] = js.undefined
+  var roll: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaPose {
   
@@ -72,13 +57,25 @@ object SchemaPose {
     
     inline def setAccuracyMeters(value: Double): Self = StObject.set(x, "accuracyMeters", value.asInstanceOf[js.Any])
     
+    inline def setAccuracyMetersNull: Self = StObject.set(x, "accuracyMeters", null)
+    
     inline def setAccuracyMetersUndefined: Self = StObject.set(x, "accuracyMeters", js.undefined)
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
+    inline def setAltitudeNull: Self = StObject.set(x, "altitude", null)
+    
     inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
+    inline def setGpsRecordTimestampUnixEpoch(value: String): Self = StObject.set(x, "gpsRecordTimestampUnixEpoch", value.asInstanceOf[js.Any])
+    
+    inline def setGpsRecordTimestampUnixEpochNull: Self = StObject.set(x, "gpsRecordTimestampUnixEpoch", null)
+    
+    inline def setGpsRecordTimestampUnixEpochUndefined: Self = StObject.set(x, "gpsRecordTimestampUnixEpoch", js.undefined)
+    
     inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingNull: Self = StObject.set(x, "heading", null)
     
     inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
@@ -92,9 +89,13 @@ object SchemaPose {
     
     inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
+    inline def setPitchNull: Self = StObject.set(x, "pitch", null)
+    
     inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
     inline def setRoll(value: Double): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
+    
+    inline def setRollNull: Self = StObject.set(x, "roll", null)
     
     inline def setRollUndefined: Self = StObject.set(x, "roll", js.undefined)
   }

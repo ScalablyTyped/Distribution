@@ -10,15 +10,13 @@ Deploy AWS Lambda functions from command line using a json or yaml config file.
 | ------------------ | :-------------: |
 | Full name          | aws-lambda |
 | Keywords           | lambda, aws lambda, deploy, deploy lambda |
-| # releases         | 8 |
-| # dependents       | 120 |
-| # downloads        | 3759299 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1471194.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://awspilot.dev)
-- [Bugs](https://github.com/awspilot/cli-lambda-deploy/issues)
-- [Repository](https://github.com/awspilot/cli-lambda-deploy)
 - [Npm](https://www.npmjs.com/package/aws-lambda)
     
 

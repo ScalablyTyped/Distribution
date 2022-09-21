@@ -10,15 +10,12 @@ A module for creating Web apps with ChocolateChip-UI
 | ------------------ | :-------------: |
 | Full name          | chui |
 | Keywords           | JavaScript, ChocolateChip-UI, Hybrid App, Mobile, Web App, iOS, Android |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2427 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 362.3333333333333 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/chocolatechip-ui/chui#readme)
-- [Bugs](https://github.com/chocolatechip-ui/chui/issues)
-- [Repository](https://github.com/chocolatechip-ui/chui)
 - [Npm](https://www.npmjs.com/package/chui)
     
 

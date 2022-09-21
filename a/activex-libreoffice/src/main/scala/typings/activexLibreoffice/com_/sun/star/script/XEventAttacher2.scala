@@ -24,10 +24,10 @@ object XEventAttacher2 {
   
   inline def apply(
     acquire: () => Unit,
-    attachListener: (XInterface, XAllListener, js.Any, String, String) => XEventListener,
+    attachListener: (XInterface, XAllListener, Any, String, String) => XEventListener,
     attachMultipleEventListeners: (XInterface, SeqEquiv[EventListener]) => SafeArray[XEventListener],
-    attachSingleEventListener: (XInterface, XAllListener, js.Any, String, String, String) => XEventListener,
-    queryInterface: `type` => js.Any,
+    attachSingleEventListener: (XInterface, XAllListener, Any, String, String, String) => XEventListener,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeListener: (XInterface, String, String, XEventListener) => Unit
   ): XEventAttacher2 = {

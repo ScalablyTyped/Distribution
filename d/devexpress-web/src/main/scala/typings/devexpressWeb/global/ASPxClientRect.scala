@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRect")
 @js.native
-class ASPxClientRect protected ()
+open class ASPxClientRect protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRect {
   /**

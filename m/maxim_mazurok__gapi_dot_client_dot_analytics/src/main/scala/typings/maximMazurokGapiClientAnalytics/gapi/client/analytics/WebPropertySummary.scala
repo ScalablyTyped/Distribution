@@ -63,7 +63,7 @@ object WebPropertySummary {
     
     inline def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
     
-    inline def setProfilesVarargs(value: ProfileSummary*): Self = StObject.set(x, "profiles", js.Array(value :_*))
+    inline def setProfilesVarargs(value: ProfileSummary*): Self = StObject.set(x, "profiles", js.Array(value*))
     
     inline def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Is this value a JS regex? Works cross-realm/iframe, and despite ES6 @@toStringTa
 | ------------------ | :-------------: |
 | Full name          | is-regex |
 | Keywords           | regex, regexp, is, regular expression, regular, expression |
-| # releases         | 3 |
-| # dependents       | 131 |
-| # downloads        | 872005608 |
-| # stars            | 2 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.25946432E8 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/inspect-js/is-regex)

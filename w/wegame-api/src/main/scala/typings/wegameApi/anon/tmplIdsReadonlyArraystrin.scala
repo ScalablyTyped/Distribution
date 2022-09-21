@@ -42,6 +42,6 @@ object tmplIdsReadonlyArraystrin {
     
     inline def setTmplIds(value: js.Array[String]): Self = StObject.set(x, "tmplIds", value.asInstanceOf[js.Any])
     
-    inline def setTmplIdsVarargs(value: String*): Self = StObject.set(x, "tmplIds", js.Array(value :_*))
+    inline def setTmplIdsVarargs(value: String*): Self = StObject.set(x, "tmplIds", js.Array(value*))
   }
 }

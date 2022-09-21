@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.datavisualization.RangeNavigator")
 @js.native
-class RangeNavigator protected ()
+open class RangeNavigator protected ()
   extends StObject
      with typings.ejWebAll.ej.datavisualization.RangeNavigator {
   def this(element: JQuery) = this()
@@ -116,8 +116,8 @@ object RangeNavigator {
   /* static member */
   @JSGlobal("ej.datavisualization.RangeNavigator.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.RangeNavigator.Position")
   @js.native

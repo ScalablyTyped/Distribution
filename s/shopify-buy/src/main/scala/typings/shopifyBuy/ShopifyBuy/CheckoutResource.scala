@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CheckoutResource extends StObject {
   
+  /**
+    * Add discount to cart
+    */
+  def addDiscount(checkoutId: String, discountCode: String): js.Promise[Cart] = js.native
+  def addDiscount(checkoutId: Double, discountCode: String): js.Promise[Cart] = js.native
+  
   def addLineItems(checkoutId: String, lineItems: js.Array[LineItemToAdd]): js.Promise[Cart] = js.native
   def addLineItems(checkoutId: Double, lineItems: js.Array[LineItemToAdd]): js.Promise[Cart] = js.native
   
@@ -166,8 +172,8 @@ trait CheckoutResource extends StObject {
   def removeLineItems(checkoutId: Double, lineItemIds: js.Array[String]): js.Promise[Cart] = js.native
   
   /**
-    * Update a line item quantity based on line item id
+    * Update line item quantities based on an array of line item ids
     */
-  def updateLineItem(checkoutId: String, lineItems: js.Array[AttributeInput]): js.Promise[Cart] = js.native
-  def updateLineItem(checkoutId: Double, lineItems: js.Array[AttributeInput]): js.Promise[Cart] = js.native
+  def updateLineItems(checkoutId: String, lineItems: js.Array[AttributeInput]): js.Promise[Cart] = js.native
+  def updateLineItems(checkoutId: Double, lineItems: js.Array[AttributeInput]): js.Promise[Cart] = js.native
 }

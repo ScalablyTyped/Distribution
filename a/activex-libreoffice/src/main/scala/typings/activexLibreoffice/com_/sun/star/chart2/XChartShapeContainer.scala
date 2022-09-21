@@ -28,7 +28,7 @@ object XChartShapeContainer {
     acquire: () => Unit,
     addShape: XShape => Unit,
     getShape: () => XShape,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeShape: XShape => Unit
   ): XChartShapeContainer = {

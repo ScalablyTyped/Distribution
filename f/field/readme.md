@@ -10,10 +10,10 @@ Easily set, get, stub values of a field in a JavaScript object.
 | ------------------ | :-------------: |
 | Full name          | field |
 | Keywords           | stub, field, fields, set, get, object, property, properties, accessor, accessors, configuration, config |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 26750 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 187.66666666666666 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/jprichardson/field#readme)

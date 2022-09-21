@@ -37,7 +37,7 @@ trait MongoDbSettings extends StObject {
   var ExtractDocId: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * The KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then DMS uses your default encryption key. KMS creates the default encryption key for your Amazon Web Services account. Your Amazon Web Services account has a different default encryption key for each Amazon Web Services Region.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -55,6 +55,16 @@ trait MongoDbSettings extends StObject {
     *  The port value for the MongoDB source endpoint. 
     */
   var Port: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * The full Amazon Resource Name (ARN) of the IAM role that specifies DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret. The role must allow the iam:PassRole action. SecretsManagerSecret has the value of the Amazon Web Services Secrets Manager secret that allows access to the MongoDB endpoint.  You can specify one of two sets of values for these permissions. You can specify the values for this setting and SecretsManagerSecretId. Or you can specify clear-text values for UserName, Password, ServerName, and Port. You can't specify both. For more information on creating this SecretsManagerSecret and the SecretsManagerAccessRoleArn and SecretsManagerSecretId required to access it, see Using secrets to access Database Migration Service resources in the Database Migration Service User Guide. 
+    */
+  var SecretsManagerAccessRoleArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The full ARN, partial ARN, or friendly name of the SecretsManagerSecret that contains the MongoDB endpoint connection details.
+    */
+  var SecretsManagerSecretId: js.UndefOr[String] = js.undefined
   
   /**
     *  The name of the server on the MongoDB source endpoint. 
@@ -114,6 +124,14 @@ object MongoDbSettings {
     inline def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    
+    inline def setSecretsManagerAccessRoleArn(value: String): Self = StObject.set(x, "SecretsManagerAccessRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setSecretsManagerAccessRoleArnUndefined: Self = StObject.set(x, "SecretsManagerAccessRoleArn", js.undefined)
+    
+    inline def setSecretsManagerSecretId(value: String): Self = StObject.set(x, "SecretsManagerSecretId", value.asInstanceOf[js.Any])
+    
+    inline def setSecretsManagerSecretIdUndefined: Self = StObject.set(x, "SecretsManagerSecretId", js.undefined)
     
     inline def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     

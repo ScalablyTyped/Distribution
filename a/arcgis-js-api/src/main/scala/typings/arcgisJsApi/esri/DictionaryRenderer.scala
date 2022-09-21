@@ -10,14 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DictionaryRenderer
   extends StObject
      with Renderer
-     with VisualVariablesMixin {
+     with VisualVariablesMixin
+     with RendererWithVisualVariables
+     with typings.arcgisJsApi.esri.renderers.RendererWithVisualVariables {
   
   /**
     * This property allows you to set display options that can be configured on the dictionary symbol style.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#config)
     */
-  var config: js.Any = js.native
+  var config: Any = js.native
   
   /**
     * Defines a field mapping that maps input fields from the feature to the dictionary symbol style's expected fields for symbols and text.
@@ -41,7 +43,7 @@ trait DictionaryRenderer
   var scaleExpression: String = js.native
   
   /**
-    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression as defined in the [scaleExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression) property.
+    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [scaleExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpressionTitle)
     */
@@ -56,7 +58,7 @@ trait DictionaryRenderer
   var type_DictionaryRenderer: dictionary = js.native
   
   /**
-    * The URL to the dictionary style, e.g.
+    * The URL to the dictionary style.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#url)
     */

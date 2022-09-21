@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_firebaserules
 
-Typings are for version 1.0.20201020
+Typings are for version 1.0.20220712
 
 ## Library description:
 TypeScript typings for Firebase Rules API v1
@@ -10,10 +10,10 @@ TypeScript typings for Firebase Rules API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.firebaserules |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 527 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 640.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

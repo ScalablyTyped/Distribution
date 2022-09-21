@@ -9,7 +9,7 @@ trait SchemaLiasettingsCustomBatchResponseEntry extends StObject {
   /**
     * The ID of the request entry to which this entry responds.
     */
-  var batchId: js.UndefOr[Double] = js.undefined
+  var batchId: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * A list of errors defined if, and only if, the request failed.
@@ -17,15 +17,14 @@ trait SchemaLiasettingsCustomBatchResponseEntry extends StObject {
   var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
-    * The the list of accessible GMB accounts.
+    * The list of accessible GMB accounts.
     */
   var gmbAccounts: js.UndefOr[SchemaGmbAccounts] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#liasettingsCustomBatchResponseEntry&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#liasettingsCustomBatchResponseEntry`"
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The retrieved or updated Lia settings.
@@ -48,6 +47,8 @@ object SchemaLiasettingsCustomBatchResponseEntry {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
+    inline def setBatchIdNull: Self = StObject.set(x, "batchId", null)
+    
     inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     inline def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
@@ -60,6 +61,8 @@ object SchemaLiasettingsCustomBatchResponseEntry {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLiaSettings(value: SchemaLiaSettings): Self = StObject.set(x, "liaSettings", value.asInstanceOf[js.Any])
@@ -70,6 +73,6 @@ object SchemaLiasettingsCustomBatchResponseEntry {
     
     inline def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
     
-    inline def setPosDataProvidersVarargs(value: SchemaPosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
+    inline def setPosDataProvidersVarargs(value: SchemaPosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value*))
   }
 }

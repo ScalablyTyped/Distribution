@@ -83,7 +83,7 @@ object TemplateSharedItem {
     
     inline def setSharedGroupsUndefined: Self = StObject.set(x, "sharedGroups", js.undefined)
     
-    inline def setSharedGroupsVarargs(value: (/* Information about items shared among groups. */ MemberGroupSharedItem)*): Self = StObject.set(x, "sharedGroups", js.Array(value :_*))
+    inline def setSharedGroupsVarargs(value: (/* Information about items shared among groups. */ MemberGroupSharedItem)*): Self = StObject.set(x, "sharedGroups", js.Array(value*))
     
     inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
@@ -91,7 +91,7 @@ object TemplateSharedItem {
     
     inline def setSharedUsersUndefined: Self = StObject.set(x, "sharedUsers", js.undefined)
     
-    inline def setSharedUsersVarargs(value: (/* Information about a shared item. */ UserSharedItem)*): Self = StObject.set(x, "sharedUsers", js.Array(value :_*))
+    inline def setSharedUsersVarargs(value: (/* Information about a shared item. */ UserSharedItem)*): Self = StObject.set(x, "sharedUsers", js.Array(value*))
     
     inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     

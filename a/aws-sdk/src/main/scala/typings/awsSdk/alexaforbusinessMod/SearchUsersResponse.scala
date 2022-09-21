@@ -42,6 +42,6 @@ object SearchUsersResponse {
     
     inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    inline def setUsersVarargs(value: UserData*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserData*): Self = StObject.set(x, "Users", js.Array(value*))
   }
 }

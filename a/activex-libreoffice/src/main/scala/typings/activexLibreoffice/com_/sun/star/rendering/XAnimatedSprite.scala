@@ -94,7 +94,7 @@ object XAnimatedSprite {
     clip: XPolyPolygon2D => Unit,
     hide: () => Unit,
     move: (RealPoint2D, ViewState, RenderState) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     resetAnimation: () => Unit,
     setAll: (RealPoint2D, ViewState, RenderState, Double, Boolean) => Unit,

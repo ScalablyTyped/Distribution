@@ -12,7 +12,7 @@ trait CapacityReservationGroup extends StObject {
   var GroupArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the resource group.
+    * The ID of the Amazon Web Services account that owns the resource group.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
 }

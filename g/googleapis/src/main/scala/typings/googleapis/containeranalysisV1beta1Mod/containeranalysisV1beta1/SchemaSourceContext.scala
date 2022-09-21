@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A SourceContext is a reference to a tree of files. A SourceContext together
-  * with a path point to a unique revision of a single file or directory.
-  */
 trait SchemaSourceContext extends StObject {
   
   /**
@@ -29,7 +25,7 @@ trait SchemaSourceContext extends StObject {
   /**
     * Labels with user defined metadata.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
 }
 object SchemaSourceContext {
   
@@ -53,6 +49,8 @@ object SchemaSourceContext {
     inline def setGitUndefined: Self = StObject.set(x, "git", js.undefined)
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }

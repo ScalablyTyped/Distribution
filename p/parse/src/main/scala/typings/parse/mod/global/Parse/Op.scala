@@ -21,18 +21,18 @@ object Op {
     extends StObject
        with BaseOperation {
     
-    def toJSON(): js.Any
+    def toJSON(): Any
   }
   object Add {
     
-    inline def apply(objects: () => js.Array[js.Any], toJSON: () => js.Any): Add = {
+    inline def apply(objects: () => js.Array[Any], toJSON: () => Any): Add = {
       val __obj = js.Dynamic.literal(objects = js.Any.fromFunction0(objects), toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[Add]
     }
     
     extension [Self <: Add](x: Self) {
       
-      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
   
@@ -40,35 +40,35 @@ object Op {
     extends StObject
        with BaseOperation {
     
-    def toJSON(): js.Any
+    def toJSON(): Any
   }
   object AddUnique {
     
-    inline def apply(objects: () => js.Array[js.Any], toJSON: () => js.Any): AddUnique = {
+    inline def apply(objects: () => js.Array[Any], toJSON: () => Any): AddUnique = {
       val __obj = js.Dynamic.literal(objects = js.Any.fromFunction0(objects), toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[AddUnique]
     }
     
     extension [Self <: AddUnique](x: Self) {
       
-      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
   
   trait BaseOperation extends StObject {
     
-    def objects(): js.Array[js.Any]
+    def objects(): js.Array[Any]
   }
   object BaseOperation {
     
-    inline def apply(objects: () => js.Array[js.Any]): BaseOperation = {
+    inline def apply(objects: () => js.Array[Any]): BaseOperation = {
       val __obj = js.Dynamic.literal(objects = js.Any.fromFunction0(objects))
       __obj.asInstanceOf[BaseOperation]
     }
     
     extension [Self <: BaseOperation](x: Self) {
       
-      inline def setObjects(value: () => js.Array[js.Any]): Self = StObject.set(x, "objects", js.Any.fromFunction0(value))
+      inline def setObjects(value: () => js.Array[Any]): Self = StObject.set(x, "objects", js.Any.fromFunction0(value))
     }
   }
   
@@ -76,11 +76,11 @@ object Op {
     
     var amount: Double
     
-    def toJSON(): js.Any
+    def toJSON(): Any
   }
   object Increment {
     
-    inline def apply(amount: Double, toJSON: () => js.Any): Increment = {
+    inline def apply(amount: Double, toJSON: () => Any): Increment = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[Increment]
     }
@@ -89,7 +89,7 @@ object Op {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
   
@@ -99,14 +99,14 @@ object Op {
     
     var removed: js.Array[Object[Attributes]]
     
-    def toJSON(): js.Any
+    def toJSON(): Any
   }
   object Relation {
     
     inline def apply(
       added: () => js.Array[Object[Attributes]],
       removed: js.Array[Object[Attributes]],
-      toJSON: () => js.Any
+      toJSON: () => Any
     ): typings.parse.mod.global.Parse.Op.Relation = {
       val __obj = js.Dynamic.literal(added = js.Any.fromFunction0(added), removed = removed.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[typings.parse.mod.global.Parse.Op.Relation]
@@ -118,47 +118,47 @@ object Op {
       
       inline def setRemoved(value: js.Array[Object[Attributes]]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      inline def setRemovedVarargs(value: Object[Attributes]*): Self = StObject.set(x, "removed", js.Array(value :_*))
+      inline def setRemovedVarargs(value: Object[Attributes]*): Self = StObject.set(x, "removed", js.Array(value*))
       
-      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
   
   trait Set extends StObject {
     
-    def toJSON(): js.Any
+    def toJSON(): Any
     
-    def value(): js.Any
+    def value(): Any
   }
   object Set {
     
-    inline def apply(toJSON: () => js.Any, value: () => js.Any): Set = {
+    inline def apply(toJSON: () => Any, value: () => Any): Set = {
       val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON), value = js.Any.fromFunction0(value))
       __obj.asInstanceOf[Set]
     }
     
     extension [Self <: Set](x: Self) {
       
-      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      inline def setValue(value: () => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+      inline def setValue(value: () => Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     }
   }
   
   trait Unset extends StObject {
     
-    def toJSON(): js.Any
+    def toJSON(): Any
   }
   object Unset {
     
-    inline def apply(toJSON: () => js.Any): Unset = {
+    inline def apply(toJSON: () => Any): Unset = {
       val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[Unset]
     }
     
     extension [Self <: Unset](x: Self) {
       
-      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
 }

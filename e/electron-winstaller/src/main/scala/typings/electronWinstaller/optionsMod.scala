@@ -6,7 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object optionsMod {
   
+  trait AdditionalFile extends StObject {
+    
+    var src: String
+    
+    var target: String
+  }
+  object AdditionalFile {
+    
+    inline def apply(src: String, target: String): AdditionalFile = {
+      val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AdditionalFile]
+    }
+    
+    extension [Self <: AdditionalFile](x: Self) {
+      
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Metadata extends StObject {
+    
+    var additionalFiles: js.UndefOr[js.Array[AdditionalFile]] = js.undefined
     
     var author: js.UndefOr[String | PersonMetadata] = js.undefined
     
@@ -35,6 +58,12 @@ object optionsMod {
     
     extension [Self <: Metadata](x: Self) {
       
+      inline def setAdditionalFiles(value: js.Array[AdditionalFile]): Self = StObject.set(x, "additionalFiles", value.asInstanceOf[js.Any])
+      
+      inline def setAdditionalFilesUndefined: Self = StObject.set(x, "additionalFiles", js.undefined)
+      
+      inline def setAdditionalFilesVarargs(value: AdditionalFile*): Self = StObject.set(x, "additionalFiles", js.Array(value*))
+      
       inline def setAuthor(value: String | PersonMetadata): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
       inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
@@ -43,7 +72,7 @@ object optionsMod {
       
       inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
       
-      inline def setAuthorsVarargs(value: PersonMetadata*): Self = StObject.set(x, "authors", js.Array(value :_*))
+      inline def setAuthorsVarargs(value: PersonMetadata*): Self = StObject.set(x, "authors", js.Array(value*))
       
       inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
@@ -65,7 +94,7 @@ object optionsMod {
       
       inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
       
-      inline def setOwnersVarargs(value: PersonMetadata*): Self = StObject.set(x, "owners", js.Array(value :_*))
+      inline def setOwnersVarargs(value: PersonMetadata*): Self = StObject.set(x, "owners", js.Array(value*))
       
       inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
       

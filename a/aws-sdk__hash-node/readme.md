@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__hash-node
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/hash-node/latest.svg)](https://www.npmjs.com/package/@aws-sdk/hash-node) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/hash-node.svg)](https://www.npmjs.com/package/@aws-sdk/hash-node)
@@ -10,10 +10,10 @@ Typings are for version 1.0.0-rc.7
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/hash-node |
 | Keywords           | - |
-| # releases         | 39 |
-| # dependents       | 250 |
-| # downloads        | 7001779 |
-| # stars            | 0 |
+| # releases         | 53 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4985265E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/hash-node)

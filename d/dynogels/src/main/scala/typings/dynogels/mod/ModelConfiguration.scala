@@ -11,7 +11,7 @@ trait ModelConfiguration extends StObject {
   
   var hashKey: String
   
-  var indexes: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var indexes: js.UndefOr[js.Array[Any]] = js.undefined
   
   var log: js.UndefOr[Log_] = js.undefined
   
@@ -42,11 +42,11 @@ object ModelConfiguration {
     
     inline def setHashKey(value: String): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
     
-    inline def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: js.Array[Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
     inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    inline def setIndexesVarargs(value: js.Any*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: Any*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setLog(value: Log_): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     

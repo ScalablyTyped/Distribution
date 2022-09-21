@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-codecommit-node", "MergePullRequestByFastForwardCommand")
 @js.native
-class MergePullRequestByFastForwardCommand protected ()
+open class MergePullRequestByFastForwardCommand protected ()
   extends typings.awsSdkClientCodecommitNode.mergePullRequestByFastForwardCommandMod.MergePullRequestByFastForwardCommand {
   def this(input: MergePullRequestByFastForwardInput) = this()
 }

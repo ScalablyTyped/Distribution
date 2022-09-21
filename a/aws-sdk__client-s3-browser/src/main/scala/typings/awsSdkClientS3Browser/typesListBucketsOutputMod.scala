@@ -39,7 +39,7 @@ object typesListBucketsOutputMod {
       
       inline def setBucketsUndefined: Self = StObject.set(x, "Buckets", js.undefined)
       
-      inline def setBucketsVarargs(value: UnmarshalledBucket*): Self = StObject.set(x, "Buckets", js.Array(value :_*))
+      inline def setBucketsVarargs(value: UnmarshalledBucket*): Self = StObject.set(x, "Buckets", js.Array(value*))
       
       inline def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       

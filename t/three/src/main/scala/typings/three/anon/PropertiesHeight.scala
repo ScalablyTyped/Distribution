@@ -8,11 +8,11 @@ trait PropertiesHeight extends StObject {
   
   var properties: Height
   
-  var value: js.Array[js.Any]
+  var value: js.Array[Any]
 }
 object PropertiesHeight {
   
-  inline def apply(properties: Height, value: js.Array[js.Any]): PropertiesHeight = {
+  inline def apply(properties: Height, value: js.Array[Any]): PropertiesHeight = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesHeight]
   }
@@ -21,8 +21,8 @@ object PropertiesHeight {
     
     inline def setProperties(value: Height): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

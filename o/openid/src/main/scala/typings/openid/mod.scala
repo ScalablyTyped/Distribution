@@ -9,15 +9,9 @@ object mod {
   
   @JSImport("openid", "RelyingParty")
   @js.native
-  class RelyingParty protected () extends StObject {
-    def this(
-      returnUrl: String,
-      realm: String,
-      stateless: Boolean,
-      strict: Boolean,
-      extensions: js.Array[js.Any]
-    ) = this()
-    def this(returnUrl: String, realm: Null, stateless: Boolean, strict: Boolean, extensions: js.Array[js.Any]) = this()
+  open class RelyingParty protected () extends StObject {
+    def this(returnUrl: String, realm: String, stateless: Boolean, strict: Boolean, extensions: js.Array[Any]) = this()
+    def this(returnUrl: String, realm: Null, stateless: Boolean, strict: Boolean, extensions: js.Array[Any]) = this()
     
     def authenticate(
       identifier: String,

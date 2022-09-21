@@ -18,11 +18,11 @@ trait VertexAddEventInfoVertices
   var componentIndex: Double
   
   /**
-    * The [graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) with [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries representing the vertices that were added.
+    * An array of x,y coordinates representing the vertices added.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
     */
-  var coordinates: js.Array[Graphic]
+  var coordinates: js.Array[Double]
   
   /**
     * The index of the vertex position.
@@ -36,7 +36,7 @@ object VertexAddEventInfoVertices {
   inline def apply(
     componentIndex: Double,
     constructor: js.Function,
-    coordinates: js.Array[Graphic],
+    coordinates: js.Array[Double],
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     vertexIndex: Double
@@ -49,9 +49,9 @@ object VertexAddEventInfoVertices {
     
     inline def setComponentIndex(value: Double): Self = StObject.set(x, "componentIndex", value.asInstanceOf[js.Any])
     
-    inline def setCoordinates(value: js.Array[Graphic]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    inline def setCoordinatesVarargs(value: Graphic*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value*))
     
     inline def setVertexIndex(value: Double): Self = StObject.set(x, "vertexIndex", value.asInstanceOf[js.Any])
   }

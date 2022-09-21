@@ -32,6 +32,11 @@ trait DistributionConfigurationSummary extends StObject {
   var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
+    * A list of Regions where the container image is distributed to.
+    */
+  var regions: js.UndefOr[RegionList] = js.undefined
+  
+  /**
     * The tags associated with the distribution configuration.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
@@ -64,6 +69,12 @@ object DistributionConfigurationSummary {
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRegions(value: RegionList): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    
+    inline def setRegionsVarargs(value: NonEmptyString*): Self = StObject.set(x, "regions", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

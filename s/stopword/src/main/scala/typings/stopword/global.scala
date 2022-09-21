@@ -6,237 +6,337 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
+  /* Inlined {[ Language in stopword.stopword.LanguageCode ]: std.Array<string>} & stopword.stopword.Stopword */
   object sw {
     
     @JSGlobal("sw")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("sw.af")
+    @JSGlobal("sw.afr")
     @js.native
-    val af: js.Array[String] = js.native
+    def afr: js.Array[String] = js.native
+    inline def afr_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afr")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.ar")
+    @JSGlobal("sw.ara")
     @js.native
-    val ar: js.Array[String] = js.native
+    def ara: js.Array[String] = js.native
+    inline def ara_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ara")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.bg")
+    @JSGlobal("sw.ben")
     @js.native
-    val bg: js.Array[String] = js.native
+    def ben: js.Array[String] = js.native
+    inline def ben_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ben")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.bn")
+    @JSGlobal("sw.bre")
     @js.native
-    val bn: js.Array[String] = js.native
+    def bre: js.Array[String] = js.native
+    inline def bre_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bre")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.br")
+    @JSGlobal("sw.bul")
     @js.native
-    val br: js.Array[String] = js.native
+    def bul: js.Array[String] = js.native
+    inline def bul_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bul")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.ca")
+    @JSGlobal("sw.cat")
     @js.native
-    val ca: js.Array[String] = js.native
+    def cat: js.Array[String] = js.native
+    inline def cat_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cat")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.cs")
+    @JSGlobal("sw.ces")
     @js.native
-    val cs: js.Array[String] = js.native
+    def ces: js.Array[String] = js.native
+    inline def ces_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ces")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.da")
+    @JSGlobal("sw.dan")
     @js.native
-    val da: js.Array[String] = js.native
+    def dan: js.Array[String] = js.native
+    inline def dan_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dan")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.de")
+    @JSGlobal("sw.deu")
     @js.native
-    val de: js.Array[String] = js.native
+    def deu: js.Array[String] = js.native
+    inline def deu_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deu")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.el")
+    @JSGlobal("sw.ell")
     @js.native
-    val el: js.Array[String] = js.native
+    def ell: js.Array[String] = js.native
+    inline def ell_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ell")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.en")
+    @JSGlobal("sw.eng")
     @js.native
-    val en: js.Array[String] = js.native
+    def eng: js.Array[String] = js.native
+    inline def eng_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eng")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.eo")
+    @JSGlobal("sw.epo")
     @js.native
-    val eo: js.Array[String] = js.native
+    def epo: js.Array[String] = js.native
+    inline def epo_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("epo")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.es")
+    @JSGlobal("sw.est")
     @js.native
-    val es: js.Array[String] = js.native
+    def est: js.Array[String] = js.native
+    inline def est_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("est")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.et")
+    @JSGlobal("sw.eus")
     @js.native
-    val et: js.Array[String] = js.native
+    def eus: js.Array[String] = js.native
+    inline def eus_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eus")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.eu")
+    @JSGlobal("sw.fas")
     @js.native
-    val eu: js.Array[String] = js.native
+    def fas: js.Array[String] = js.native
+    inline def fas_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fas")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.fa")
+    @JSGlobal("sw.fin")
     @js.native
-    val fa: js.Array[String] = js.native
+    def fin: js.Array[String] = js.native
+    inline def fin_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fin")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.fi")
+    @JSGlobal("sw.fra")
     @js.native
-    val fi: js.Array[String] = js.native
+    def fra: js.Array[String] = js.native
+    inline def fra_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fra")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.fr")
+    @JSGlobal("sw.gle")
     @js.native
-    val fr: js.Array[String] = js.native
+    def gle: js.Array[String] = js.native
+    inline def gle_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gle")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.ga")
+    @JSGlobal("sw.glg")
     @js.native
-    val ga: js.Array[String] = js.native
+    def glg: js.Array[String] = js.native
+    inline def glg_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("glg")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.gl")
+    @JSGlobal("sw.guj")
     @js.native
-    val gl: js.Array[String] = js.native
+    def guj: js.Array[String] = js.native
+    inline def guj_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("guj")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.ha")
+    @JSGlobal("sw.hau")
     @js.native
-    val ha: js.Array[String] = js.native
+    def hau: js.Array[String] = js.native
+    inline def hau_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hau")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.he")
+    @JSGlobal("sw.heb")
     @js.native
-    val he: js.Array[String] = js.native
+    def heb: js.Array[String] = js.native
+    inline def heb_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heb")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.hi")
+    @JSGlobal("sw.hin")
     @js.native
-    val hi: js.Array[String] = js.native
+    def hin: js.Array[String] = js.native
+    inline def hin_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hin")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.hr")
+    @JSGlobal("sw.hrv")
     @js.native
-    val hr: js.Array[String] = js.native
+    def hrv: js.Array[String] = js.native
+    inline def hrv_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hrv")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.hu")
+    @JSGlobal("sw.hun")
     @js.native
-    val hu: js.Array[String] = js.native
+    def hun: js.Array[String] = js.native
+    inline def hun_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hun")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.hy")
+    @JSGlobal("sw.hye")
     @js.native
-    val hy: js.Array[String] = js.native
+    def hye: js.Array[String] = js.native
+    inline def hye_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hye")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.id")
+    @JSGlobal("sw.ind")
     @js.native
-    val id: js.Array[String] = js.native
+    def ind: js.Array[String] = js.native
+    inline def ind_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ind")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.it")
+    @JSGlobal("sw.ita")
     @js.native
-    val it: js.Array[String] = js.native
+    def ita: js.Array[String] = js.native
+    inline def ita_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ita")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.ja")
+    @JSGlobal("sw.jpn")
     @js.native
-    val ja: js.Array[String] = js.native
+    def jpn: js.Array[String] = js.native
+    inline def jpn_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jpn")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.ko")
+    @JSGlobal("sw.kor")
     @js.native
-    val ko: js.Array[String] = js.native
+    def kor: js.Array[String] = js.native
+    inline def kor_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kor")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.la")
+    @JSGlobal("sw.kur")
     @js.native
-    val la: String = js.native
+    def kur: js.Array[String] = js.native
+    inline def kur_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kur")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("sw.lat")
+    @js.native
+    def lat: js.Array[String] = js.native
+    inline def lat_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lat")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("sw.lav")
+    @js.native
+    def lav: js.Array[String] = js.native
+    inline def lav_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lav")(x.asInstanceOf[js.Any])
     
     @JSGlobal("sw.lgg")
     @js.native
-    val lgg: js.Array[String] = js.native
+    def lgg: js.Array[String] = js.native
     
-    @JSGlobal("sw.lggo")
+    @JSGlobal("sw.lggNd")
     @js.native
-    val lggo: js.Array[String] = js.native
+    def lggNd: js.Array[String] = js.native
+    inline def lggNd_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lggNd")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.lv")
+    inline def lgg_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lgg")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("sw.lit")
     @js.native
-    val lv: js.Array[String] = js.native
+    def lit: js.Array[String] = js.native
+    inline def lit_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lit")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.mr")
+    @JSGlobal("sw.mar")
     @js.native
-    val mr: js.Array[String] = js.native
+    def mar: js.Array[String] = js.native
+    inline def mar_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mar")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.my")
+    @JSGlobal("sw.msa")
     @js.native
-    val my: js.Array[String] = js.native
+    def msa: js.Array[String] = js.native
+    inline def msa_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("msa")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.nl")
+    @JSGlobal("sw.mya")
     @js.native
-    val nl: js.Array[String] = js.native
+    def mya: js.Array[String] = js.native
+    inline def mya_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mya")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.no")
+    @JSGlobal("sw.nld")
     @js.native
-    val no: js.Array[String] = js.native
+    def nld: js.Array[String] = js.native
+    inline def nld_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nld")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.pa")
+    @JSGlobal("sw.nob")
     @js.native
-    val pa: js.Array[String] = js.native
+    def nob: js.Array[String] = js.native
+    inline def nob_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nob")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.pl")
+    @JSGlobal("sw.panGu")
     @js.native
-    val pl: js.Array[String] = js.native
+    def panGu: js.Array[String] = js.native
+    inline def panGu_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("panGu")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.pt")
+    @JSGlobal("sw.pol")
     @js.native
-    val pt: js.Array[String] = js.native
+    def pol: js.Array[String] = js.native
+    inline def pol_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pol")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.ptbr")
+    @JSGlobal("sw.por")
     @js.native
-    val ptbr: js.Array[String] = js.native
+    def por: js.Array[String] = js.native
     
+    @JSGlobal("sw.porBr")
+    @js.native
+    def porBr: js.Array[String] = js.native
+    inline def porBr_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("porBr")(x.asInstanceOf[js.Any])
+    
+    inline def por_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("por")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Stopword removal
+      *
+      * @param text Array string of words
+      * @param stopwords Array string of your custom stopwords (default: English stopwords | .en)
+      */
     inline def removeStopwords(text: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStopwords")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     inline def removeStopwords(text: js.Array[String], stopwords: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeStopwords")(text.asInstanceOf[js.Any], stopwords.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
-    @JSGlobal("sw.ro")
+    @JSGlobal("sw.ron")
     @js.native
-    val ro: js.Array[String] = js.native
+    def ron: js.Array[String] = js.native
+    inline def ron_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ron")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.ru")
+    @JSGlobal("sw.rus")
     @js.native
-    val ru: js.Array[String] = js.native
+    def rus: js.Array[String] = js.native
+    inline def rus_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rus")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.sk")
+    @JSGlobal("sw.slk")
     @js.native
-    val sk: js.Array[String] = js.native
+    def slk: js.Array[String] = js.native
+    inline def slk_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slk")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.sl")
+    @JSGlobal("sw.slv")
     @js.native
-    val sl: js.Array[String] = js.native
+    def slv: js.Array[String] = js.native
+    inline def slv_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slv")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.so")
+    @JSGlobal("sw.som")
     @js.native
-    val so: js.Array[String] = js.native
+    def som: js.Array[String] = js.native
+    inline def som_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("som")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.st")
+    @JSGlobal("sw.sot")
     @js.native
-    val st: js.Array[String] = js.native
+    def sot: js.Array[String] = js.native
+    inline def sot_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sot")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.sv")
+    @JSGlobal("sw.spa")
     @js.native
-    val sv: js.Array[String] = js.native
+    def spa: js.Array[String] = js.native
+    inline def spa_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spa")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.sw")
+    @JSGlobal("sw.swa")
     @js.native
-    val sw: js.Array[String] = js.native
+    def swa: js.Array[String] = js.native
+    inline def swa_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("swa")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.th")
+    @JSGlobal("sw.swe")
     @js.native
-    val th: js.Array[String] = js.native
+    def swe: js.Array[String] = js.native
+    inline def swe_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("swe")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.tr")
+    @JSGlobal("sw.tgl")
     @js.native
-    val tr: js.Array[String] = js.native
+    def tgl: js.Array[String] = js.native
+    inline def tgl_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tgl")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.vi")
+    @JSGlobal("sw.tha")
     @js.native
-    val vi: js.Array[String] = js.native
+    def tha: js.Array[String] = js.native
+    inline def tha_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tha")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.yo")
+    @JSGlobal("sw.tur")
     @js.native
-    val yo: js.Array[String] = js.native
+    def tur: js.Array[String] = js.native
+    inline def tur_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tur")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.zh")
+    @JSGlobal("sw.ukr")
     @js.native
-    val zh: js.Array[String] = js.native
+    def ukr: js.Array[String] = js.native
+    inline def ukr_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ukr")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("sw.zu")
+    @JSGlobal("sw.urd")
     @js.native
-    val zu: js.Array[String] = js.native
+    def urd: js.Array[String] = js.native
+    inline def urd_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urd")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("sw.vie")
+    @js.native
+    def vie: js.Array[String] = js.native
+    inline def vie_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vie")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("sw.yor")
+    @js.native
+    def yor: js.Array[String] = js.native
+    inline def yor_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yor")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("sw.zho")
+    @js.native
+    def zho: js.Array[String] = js.native
+    inline def zho_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zho")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("sw.zul")
+    @js.native
+    def zul: js.Array[String] = js.native
+    inline def zul_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zul")(x.asInstanceOf[js.Any])
   }
 }

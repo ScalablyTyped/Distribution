@@ -11,13 +11,13 @@ object luminoPollingStrings {
   @js.native
   sealed trait constructed
     extends StObject
-       with _Phase[js.Any]
+       with _Phase[Any]
   inline def constructed: constructed = "constructed".asInstanceOf[constructed]
   
   @js.native
   sealed trait disposed
     extends StObject
-       with _Phase[js.Any]
+       with _Phase[Any]
   inline def disposed: disposed = "disposed".asInstanceOf[disposed]
   
   @js.native
@@ -37,43 +37,43 @@ object luminoPollingStrings {
   @js.native
   sealed trait reconnected
     extends StObject
-       with _Phase[js.Any]
+       with _Phase[Any]
   inline def reconnected: reconnected = "reconnected".asInstanceOf[reconnected]
   
   @js.native
   sealed trait refreshed
     extends StObject
-       with _Phase[js.Any]
+       with _Phase[Any]
   inline def refreshed: refreshed = "refreshed".asInstanceOf[refreshed]
   
   @js.native
   sealed trait rejected
     extends StObject
-       with _Phase[js.Any]
+       with _Phase[Any]
   inline def rejected: rejected = "rejected".asInstanceOf[rejected]
   
   @js.native
   sealed trait resolved
     extends StObject
-       with _Phase[js.Any]
+       with _Phase[Any]
   inline def resolved: resolved = "resolved".asInstanceOf[resolved]
   
   @js.native
   sealed trait standby
     extends StObject
-       with _Phase[js.Any]
+       with _Phase[Any]
   inline def standby: standby = "standby".asInstanceOf[standby]
   
   @js.native
   sealed trait started
     extends StObject
-       with _Phase[js.Any]
+       with _Phase[Any]
   inline def started: started = "started".asInstanceOf[started]
   
   @js.native
   sealed trait stopped
     extends StObject
-       with _Phase[js.Any]
+       with _Phase[Any]
   inline def stopped: stopped = "stopped".asInstanceOf[stopped]
   
   @js.native

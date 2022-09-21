@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Security
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Deferral
@@ -236,8 +235,8 @@ object EnterpriseData {
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.FileProtectionManager.isContainerAsync")
     @js.native
-    def isContainerAsync: js.Any = js.native
-    inline def isContainerAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isContainerAsync")(x.asInstanceOf[js.Any])
+    def isContainerAsync: Any = js.native
+    inline def isContainerAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isContainerAsync")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /**
@@ -389,7 +388,7 @@ object EnterpriseData {
     
     /** DateTime at which content protection will be suspended. The app can subtract DateTime.Now from this value to determine how much time there is to perform any processing before the suspension occurs. */
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /**
       * Gets the Deferral object that manages the protection suspension. The app must call Deferral.Complete before it returns from the event handler.
@@ -529,19 +528,19 @@ object EnterpriseData {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_policychanged(`type`: policychanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_policychanged(`type`: policychanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_protectedaccessresumed(`type`: protectedaccessresumed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_protectedaccessresumed(`type`: protectedaccessresumed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_protectedaccesssuspending(`type`: protectedaccesssuspending, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_protectedaccesssuspending(`type`: protectedaccesssuspending, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_protectedcontentrevoked(`type`: protectedcontentrevoked, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_protectedcontentrevoked(`type`: protectedcontentrevoked, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Request if access to enterprise-protected content is available to an identity.
@@ -603,7 +602,7 @@ object EnterpriseData {
       * @return true if access has been revoked since the specified date and time, otherwise false.
       */
     /* static member */
-    inline def hasContentBeenRevokedSince(identity: String, since: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasContentBeenRevokedSince")(identity.asInstanceOf[js.Any], since.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasContentBeenRevokedSince(identity: String, since: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasContentBeenRevokedSince")(identity.asInstanceOf[js.Any], since.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Determines if an enterprise entity is managed by an enterprise policy.
@@ -640,44 +639,44 @@ object EnterpriseData {
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager.onpolicychanged")
     @js.native
-    def onpolicychanged: EventHandler[js.Any] = js.native
-    inline def onpolicychanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpolicychanged")(x.asInstanceOf[js.Any])
+    def onpolicychanged: EventHandler[Any] = js.native
+    inline def onpolicychanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpolicychanged")(x.asInstanceOf[js.Any])
     
     /** Event with which the app registers to receive notification that protection has been resumed. */
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager.onprotectedaccessresumed")
     @js.native
-    def onprotectedaccessresumed: EventHandler[js.Any] = js.native
-    inline def onprotectedaccessresumed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedaccessresumed")(x.asInstanceOf[js.Any])
+    def onprotectedaccessresumed: EventHandler[Any] = js.native
+    inline def onprotectedaccessresumed_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedaccessresumed")(x.asInstanceOf[js.Any])
     
     /** Event with which the app registers to receive notification that protection is to be suspended. */
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager.onprotectedaccesssuspending")
     @js.native
-    def onprotectedaccesssuspending: EventHandler[js.Any] = js.native
-    inline def onprotectedaccesssuspending_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedaccesssuspending")(x.asInstanceOf[js.Any])
+    def onprotectedaccesssuspending: EventHandler[Any] = js.native
+    inline def onprotectedaccesssuspending_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedaccesssuspending")(x.asInstanceOf[js.Any])
     
     /** Event with which the app registers to receive notification that protection is to be revoked. When the app receives this event, it should determine from ProtectedContentRevokedEventArgs.Identities which enterprise entities have had protection revoked, and call RevokeContent as well as delete any metadata associated with the identity. */
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager.onprotectedcontentrevoked")
     @js.native
-    def onprotectedcontentrevoked: EventHandler[js.Any] = js.native
-    inline def onprotectedcontentrevoked_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedcontentrevoked")(x.asInstanceOf[js.Any])
+    def onprotectedcontentrevoked: EventHandler[Any] = js.native
+    inline def onprotectedcontentrevoked_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedcontentrevoked")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_policychanged(`type`: policychanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_policychanged(`type`: policychanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_protectedaccessresumed(`type`: protectedaccessresumed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_protectedaccessresumed(`type`: protectedaccessresumed, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_protectedaccesssuspending(`type`: protectedaccesssuspending, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_protectedaccesssuspending(`type`: protectedaccesssuspending, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_protectedcontentrevoked(`type`: protectedcontentrevoked, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_protectedcontentrevoked(`type`: protectedcontentrevoked, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Request access to enterprise protected content for an identity.

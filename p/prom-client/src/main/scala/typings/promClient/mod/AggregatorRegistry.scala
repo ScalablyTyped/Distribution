@@ -1,23 +1,19 @@
 package typings.promClient.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prom-client", "AggregatorRegistry")
 @js.native
-class AggregatorRegistry () extends Registry {
+open class AggregatorRegistry () extends Registry {
   
   /**
-  	 * Gets aggregated metrics for all workers. The optional callback and
-  	 * returned Promise resolve with the same value; either may be used.
-  	 * @param {Function?} cb (err, metrics) => any
+  	 * Gets aggregated metrics for all workers.
   	 * @return {Promise<string>} Promise that resolves with the aggregated
-  	 *   metrics.
+  	 * metrics.
   	 */
   def clusterMetrics(): js.Promise[String] = js.native
-  def clusterMetrics(cb: js.Function2[/* err */ Error | Null, /* metrics */ js.UndefOr[String], js.Any]): js.Promise[String] = js.native
 }
 /* static members */
 object AggregatorRegistry {
@@ -37,6 +33,7 @@ object AggregatorRegistry {
   	 */
   inline def aggregate(metricsArr: js.Array[js.Object]): Registry = ^.asInstanceOf[js.Dynamic].applyDynamic("aggregate")(metricsArr.asInstanceOf[js.Any]).asInstanceOf[Registry]
   
+  // TODO Promise?
   /**
   	 * Sets the registry or registries to be aggregated. Call from workers to
   	 * use a registry/registries other than the default global registry.

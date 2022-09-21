@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.ApplicationModel.PackageId")
 @js.native
-class PackageId ()
+open class PackageId ()
   extends StObject
      with typings.winrt.Windows.ApplicationModel.PackageId {
   

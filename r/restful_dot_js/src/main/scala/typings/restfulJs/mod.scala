@@ -29,7 +29,7 @@ object mod {
     def customUrl(): String = js.native
     def customUrl(url: String): Api = js.native
     
-    def one(name: String, id: js.Any): MemberEndpoint = js.native
+    def one(name: String, id: Any): MemberEndpoint = js.native
     
     def oneUrl(name: String, url: String): MemberEndpoint = js.native
     
@@ -54,26 +54,26 @@ object mod {
       * @param data
       * @param headers
       */
-    def delete[T](id: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def delete[T](id: js.Any, data: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def delete[T](id: js.Any, data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
-    def delete[T](id: js.Any, data: Unit, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def delete[T](id: Any): js.Promise[MemberResponse[T]] = js.native
+    def delete[T](id: Any, data: Any): js.Promise[MemberResponse[T]] = js.native
+    def delete[T](id: Any, data: Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def delete[T](id: Any, data: Unit, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Get a member in a collection. Returns a promise with an entity.
       * @param id
       */
-    def get[T](id: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def get[T](id: js.Any, params: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def get[T](id: js.Any, params: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
-    def get[T](id: js.Any, params: Unit, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def get[T](id: Any): js.Promise[MemberResponse[T]] = js.native
+    def get[T](id: Any, params: Any): js.Promise[MemberResponse[T]] = js.native
+    def get[T](id: Any, params: Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def get[T](id: Any, params: Unit, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Get a full collection. Returns a promise with an array of entities.
       */
     def getAll[T](): js.Promise[CollectionResponse[T]] = js.native
-    def getAll[T](params: js.Any): js.Promise[CollectionResponse[T]] = js.native
-    def getAll[T](params: js.Any, headers: Headers): js.Promise[CollectionResponse[T]] = js.native
+    def getAll[T](params: Any): js.Promise[CollectionResponse[T]] = js.native
+    def getAll[T](params: Any, headers: Headers): js.Promise[CollectionResponse[T]] = js.native
     def getAll[T](params: Unit, headers: Headers): js.Promise[CollectionResponse[T]] = js.native
     
     /**
@@ -81,8 +81,8 @@ object mod {
       * @param id
       * @param headers
       */
-    def head[T](id: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def head[T](id: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def head[T](id: Any): js.Promise[MemberResponse[T]] = js.native
+    def head[T](id: Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Patch a member in a collection. Returns a promise with the response.
@@ -90,14 +90,14 @@ object mod {
       * @param data
       * @param headers
       */
-    def patch[T](id: js.Any, data: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def patch[T](id: js.Any, data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def patch[T](id: Any, data: Any): js.Promise[MemberResponse[T]] = js.native
+    def patch[T](id: Any, data: Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Create a member in a collection. Returns a promise with the response.
       */
-    def post[T](data: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def post[T](data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def post[T](data: Any): js.Promise[MemberResponse[T]] = js.native
+    def post[T](data: Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Update a member in a collection. Returns a promise with the response.
@@ -105,8 +105,8 @@ object mod {
       * @param data
       * @param headers
       */
-    def put[T](id: js.Any, data: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def put[T](id: js.Any, data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def put[T](id: Any, data: Any): js.Promise[MemberResponse[T]] = js.native
+    def put[T](id: Any, data: Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
   }
   
   @js.native
@@ -150,7 +150,7 @@ object mod {
       * @param name
       * @param value
       */
-    def header(name: String, value: js.Any): Self
+    def header(name: String, value: Any): Self
     
     def headers(): Headers
     
@@ -172,7 +172,7 @@ object mod {
       addResponseInterceptor: ResponseInterceptor => Self,
       fullRequestInterceptors: () => js.Array[FullRequestInterceptor],
       fullResponseInterceptors: () => js.Array[ResponseInterceptor],
-      header: (String, js.Any) => Self,
+      header: (String, Any) => Self,
       headers: () => Headers,
       requestInterceptors: () => js.Array[RequestInterceptor],
       responseInterceptors: () => js.Array[ResponseInterceptor],
@@ -196,7 +196,7 @@ object mod {
       
       inline def setFullResponseInterceptors(value: () => js.Array[ResponseInterceptor]): Self_ = StObject.set(x, "fullResponseInterceptors", js.Any.fromFunction0(value))
       
-      inline def setHeader(value: (String, js.Any) => Self): Self_ = StObject.set(x, "header", js.Any.fromFunction2(value))
+      inline def setHeader(value: (String, Any) => Self): Self_ = StObject.set(x, "header", js.Any.fromFunction2(value))
       
       inline def setHeaders(value: () => Headers): Self_ = StObject.set(x, "headers", js.Any.fromFunction0(value))
       
@@ -209,9 +209,9 @@ object mod {
   }
   
   type FullRequestInterceptor = js.Function5[
-    /* params */ js.Any, 
+    /* params */ Any, 
     /* headers */ Headers, 
-    /* data */ js.Any, 
+    /* data */ Any, 
     /* method */ String, 
     /* url */ String, 
     FullRequestInterceptorReturnValue
@@ -219,13 +219,13 @@ object mod {
   
   trait FullRequestInterceptorReturnValue extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var headers: js.UndefOr[Headers] = js.undefined
     
     var method: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     var url: js.UndefOr[String] = js.undefined
   }
@@ -238,7 +238,7 @@ object mod {
     
     extension [Self <: FullRequestInterceptorReturnValue](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -250,7 +250,7 @@ object mod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -260,7 +260,7 @@ object mod {
     }
   }
   
-  type Headers = StringDictionary[js.Any]
+  type Headers = StringDictionary[Any]
   
   @js.native
   trait MemberEndpoint
@@ -284,8 +284,8 @@ object mod {
       * @param headers
       */
     def delete[T](): js.Promise[MemberResponse[T]] = js.native
-    def delete[T](data: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def delete[T](data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def delete[T](data: Any): js.Promise[MemberResponse[T]] = js.native
+    def delete[T](data: Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     def delete[T](data: Unit, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
@@ -294,8 +294,8 @@ object mod {
       * @param headers
       */
     def get[T](): js.Promise[MemberResponse[T]] = js.native
-    def get[T](params: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def get[T](params: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def get[T](params: Any): js.Promise[MemberResponse[T]] = js.native
+    def get[T](params: Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     def get[T](params: Unit, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
@@ -303,14 +303,14 @@ object mod {
       * @param headers
       */
     def head[T](): js.Promise[MemberResponse[T]] = js.native
-    def head[T](headers: js.Any): js.Promise[MemberResponse[T]] = js.native
+    def head[T](headers: Any): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Target a child member in a collection name.
       * @param name
       * @param id
       */
-    def one(name: String, id: js.Any): MemberEndpoint = js.native
+    def one(name: String, id: Any): MemberEndpoint = js.native
     
     def oneUrl(name: String, url: String): MemberEndpoint = js.native
     
@@ -319,16 +319,16 @@ object mod {
       * @param data
       * @param headers
       */
-    def patch[T](data: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def patch[T](data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def patch[T](data: Any): js.Promise[MemberResponse[T]] = js.native
+    def patch[T](data: Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
     
     /**
       * Update a member. Returns a promise with the response.
       * @param data
       * @param headers
       */
-    def put[T](data: js.Any): js.Promise[MemberResponse[T]] = js.native
-    def put[T](data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
+    def put[T](data: Any): js.Promise[MemberResponse[T]] = js.native
+    def put[T](data: Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
   }
   
   @js.native
@@ -341,11 +341,11 @@ object mod {
     def body(): ResponseBody[T] = js.native
   }
   
-  type RequestInterceptor = js.Function4[/* data */ js.Any, /* headers */ Headers, /* method */ String, /* url */ String, js.Any]
+  type RequestInterceptor = js.Function4[/* data */ Any, /* headers */ Headers, /* method */ String, /* url */ String, Any]
   
   trait ResponseBase extends StObject {
     
-    def config(): js.Any
+    def config(): Any
     
     def headers(): Headers
     
@@ -353,14 +353,14 @@ object mod {
   }
   object ResponseBase {
     
-    inline def apply(config: () => js.Any, headers: () => Headers, status: () => Double): ResponseBase = {
+    inline def apply(config: () => Any, headers: () => Headers, status: () => Double): ResponseBase = {
       val __obj = js.Dynamic.literal(config = js.Any.fromFunction0(config), headers = js.Any.fromFunction0(headers), status = js.Any.fromFunction0(status))
       __obj.asInstanceOf[ResponseBase]
     }
     
     extension [Self <: ResponseBase](x: Self) {
       
-      inline def setConfig(value: () => js.Any): Self = StObject.set(x, "config", js.Any.fromFunction0(value))
+      inline def setConfig(value: () => Any): Self = StObject.set(x, "config", js.Any.fromFunction0(value))
       
       inline def setHeaders(value: () => Headers): Self = StObject.set(x, "headers", js.Any.fromFunction0(value))
       
@@ -387,14 +387,14 @@ object mod {
     /**
       * Get the id of the entity.
       */
-    def id(): js.Any = js.native
+    def id(): Any = js.native
     
     /**
       * Query a member child of the entity.
       * @param entity
       * @param id
       */
-    def one(entity: String, id: js.Any): MemberEndpoint = js.native
+    def one(entity: String, id: Any): MemberEndpoint = js.native
     
     /**
       * Delete the member link to the entity. Returns a promise with the response.
@@ -416,7 +416,7 @@ object mod {
   }
   
   type ResponseInterceptor = js.Function4[
-    /* data */ js.Any, 
+    /* data */ Any, 
     /* headers */ Headers, 
     /* method */ String, 
     /* url */ String, 
@@ -425,7 +425,7 @@ object mod {
   
   trait ResponseInterceptorReturnValue extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var headers: js.UndefOr[Headers] = js.undefined
     
@@ -442,7 +442,7 @@ object mod {
     
     extension [Self <: ResponseInterceptorReturnValue](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

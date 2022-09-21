@@ -9,20 +9,20 @@ object providersMod {
   
   @JSImport("@nodelib/fs.walk/out/providers", "AsyncProvider")
   @js.native
-  class AsyncProvider protected () extends default {
+  open class AsyncProvider protected () extends default {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
   }
   
   @JSImport("@nodelib/fs.walk/out/providers", "StreamProvider")
   @js.native
-  class StreamProvider protected ()
+  open class StreamProvider protected ()
     extends typings.nodelibFsWalk.streamMod.default {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
   }
   
   @JSImport("@nodelib/fs.walk/out/providers", "SyncProvider")
   @js.native
-  class SyncProvider protected ()
+  open class SyncProvider protected ()
     extends typings.nodelibFsWalk.syncMod.default {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
   }

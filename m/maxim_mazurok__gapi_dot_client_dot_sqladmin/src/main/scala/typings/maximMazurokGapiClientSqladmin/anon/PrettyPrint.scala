@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSqladmin.anon
 
-import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.InstancesDemoteMasterRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,10 +19,13 @@ trait PrettyPrint extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** Name of the database to be updated in the instance. */
+  var database: String
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Cloud SQL instance name. */
+  /** Database instance ID. This does not include the project ID. */
   var instance: String
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -35,14 +37,14 @@ trait PrettyPrint extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** ID of the project that contains the instance. */
+  /** Project ID of the project that contains the instance. */
   var project: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: InstancesDemoteMasterRequest
+  var resource: typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.Database
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +54,13 @@ trait PrettyPrint extends StObject {
 }
 object PrettyPrint {
   
-  inline def apply(instance: String, project: String, resource: InstancesDemoteMasterRequest): PrettyPrint = {
-    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(
+    database: String,
+    instance: String,
+    project: String,
+    resource: typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.Database
+  ): PrettyPrint = {
+    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrint]
   }
   
@@ -74,6 +81,8 @@ object PrettyPrint {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -99,7 +108,7 @@ object PrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: InstancesDemoteMasterRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.Database): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

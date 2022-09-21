@@ -25,7 +25,7 @@ trait SavedQueryId extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The matter ID of the parent matter for which the saved query is to be retrieved. */
+  /** The ID of the matter to get the saved query from. */
   var matterId: String
   
   /** OAuth 2.0 token for the current user. */
@@ -37,7 +37,7 @@ trait SavedQueryId extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** ID of the saved query to be retrieved. */
+  /** ID of the saved query to retrieve. */
   var savedQueryId: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

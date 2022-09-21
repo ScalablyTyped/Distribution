@@ -28,7 +28,7 @@ object Collections {
   
   @JSImport("typescript-services", "Collections.HashTable")
   @js.native
-  class HashTable[TKey, TValue] protected ()
+  open class HashTable[TKey, TValue] protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] {
     def this(capacity: Double, hash: js.Function1[/* k */ TKey, Double]) = this()
@@ -37,34 +37,34 @@ object Collections {
     override def add(key: TKey, value: TValue): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def addEntry(key: js.Any, value: js.Any, hashCode: js.Any): js.Any = js.native
+    override def addEntry(key: Any, value: Any, hashCode: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def addOrSet(key: js.Any, value: js.Any, throwOnExistingEntry: js.Any): js.Any = js.native
+    override def addOrSet(key: Any, value: Any, throwOnExistingEntry: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def computeHashCode(key: js.Any): js.Any = js.native
+    override def computeHashCode(key: Any): Any = js.native
     
     /* CompleteClass */
     override def containsKey(key: TKey): Boolean = js.native
     
     /* private */ /* CompleteClass */
-    var count: js.Any = js.native
+    var count: Any = js.native
     
     /* private */ /* CompleteClass */
-    var entries: js.Any = js.native
+    var entries: Any = js.native
     
     /* private */ /* CompleteClass */
-    override def findEntry(key: js.Any, hashCode: js.Any): js.Any = js.native
+    override def findEntry(key: Any, hashCode: Any): Any = js.native
     
     /* CompleteClass */
     override def get(key: TKey): TValue = js.native
     
     /* private */ /* CompleteClass */
-    override def grow(): js.Any = js.native
+    override def grow(): Any = js.native
     
     /* private */ /* CompleteClass */
-    var hash: js.Any = js.native
+    var hash: Any = js.native
     
     /* CompleteClass */
     override def set(key: TKey, value: TValue): Unit = js.native
@@ -72,7 +72,7 @@ object Collections {
   
   @JSImport("typescript-services", "Collections.StringTable")
   @js.native
-  class StringTable protected ()
+  open class StringTable protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Collections.StringTable {
     def this(capacity: Double) = this()
@@ -81,19 +81,19 @@ object Collections {
     override def addCharArray(key: js.Array[Double], start: Double, len: Double): String = js.native
     
     /* private */ /* CompleteClass */
-    override def addEntry(text: js.Any, hashCode: js.Any): js.Any = js.native
+    override def addEntry(text: Any, hashCode: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    var count: js.Any = js.native
+    var count: Any = js.native
     
     /* private */ /* CompleteClass */
-    var entries: js.Any = js.native
+    var entries: Any = js.native
     
     /* private */ /* CompleteClass */
-    override def findCharArrayEntry(key: js.Any, start: js.Any, len: js.Any, hashCode: js.Any): js.Any = js.native
+    override def findCharArrayEntry(key: Any, start: Any, len: Any, hashCode: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def grow(): js.Any = js.native
+    override def grow(): Any = js.native
   }
   object StringTable {
     
@@ -102,7 +102,7 @@ object Collections {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def textCharArrayEquals(text: js.Any, array: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("textCharArrayEquals")(text.asInstanceOf[js.Any], array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def textCharArrayEquals(text: Any, array: Any, start: Any, length: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("textCharArrayEquals")(text.asInstanceOf[js.Any], array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   inline def createHashTable[TKey, TValue](): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashTable")().asInstanceOf[typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue]]
@@ -110,5 +110,5 @@ object Collections {
   inline def createHashTable[TKey, TValue](capacity: Double, hash: js.Function1[/* k */ TKey, Double]): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("createHashTable")(capacity.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue]]
   inline def createHashTable[TKey, TValue](capacity: Unit, hash: js.Function1[/* k */ TKey, Double]): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("createHashTable")(capacity.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue]]
   
-  inline def identityHashCode(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("identityHashCode")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def identityHashCode(value: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("identityHashCode")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

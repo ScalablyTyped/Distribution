@@ -46,13 +46,13 @@ object UrlDefinition {
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setHostVarargs(value: String*): Self = StObject.set(x, "host", js.Array(value :_*))
+    inline def setHostVarargs(value: String*): Self = StObject.set(x, "host", js.Array(value*))
     
     inline def setPath(value: js.Array[String] | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
@@ -66,12 +66,12 @@ object UrlDefinition {
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    inline def setQueryVarargs(value: QueryParamDefinition*): Self = StObject.set(x, "query", js.Array(value :_*))
+    inline def setQueryVarargs(value: QueryParamDefinition*): Self = StObject.set(x, "query", js.Array(value*))
     
     inline def setVariable(value: js.Array[VariableDefinition]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
-    inline def setVariableVarargs(value: VariableDefinition*): Self = StObject.set(x, "variable", js.Array(value :_*))
+    inline def setVariableVarargs(value: VariableDefinition*): Self = StObject.set(x, "variable", js.Array(value*))
   }
 }

@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Column headers.
-  */
 trait SchemaColumnHeader extends StObject {
   
   /**
     * The dimension names in the response.
     */
-  var dimensions: js.UndefOr[js.Array[String]] = js.undefined
+  var dimensions: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Metric headers for the metrics in the response.
@@ -30,9 +27,11 @@ object SchemaColumnHeader {
     
     inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
+    inline def setDimensionsNull: Self = StObject.set(x, "dimensions", null)
+    
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setMetricHeader(value: SchemaMetricHeader): Self = StObject.set(x, "metricHeader", value.asInstanceOf[js.Any])
     

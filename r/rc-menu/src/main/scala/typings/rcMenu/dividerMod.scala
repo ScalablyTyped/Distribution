@@ -1,25 +1,23 @@
 package typings.rcMenu
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
-import typings.react.mod.FC
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object dividerMod extends Shortcut {
+object dividerMod {
   
-  @JSImport("rc-menu/es/Divider", JSImport.Default)
+  @JSImport("rc-menu/es/Divider", JSImport.Namespace)
   @js.native
-  val default: FC[DividerProps] = js.native
+  val ^ : js.Any = js.native
   
+  inline def default(hasClassNameStyle: DividerProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  /* Inlined std.Omit<rc-menu.rc-menu/es/interface.MenuDividerType, 'type'> */
   trait DividerProps extends StObject {
     
     var className: js.UndefOr[String] = js.undefined
-    
-    var disabled: js.UndefOr[Boolean] = js.undefined
-    
-    var rootPrefixCls: js.UndefOr[String] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -36,22 +34,9 @@ object dividerMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      inline def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setRootPrefixClsUndefined: Self = StObject.set(x, "rootPrefixCls", js.undefined)
-      
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
-  
-  type _To = FC[DividerProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `dividerMod.foo` */
-  override def _to: FC[DividerProps] = default
 }

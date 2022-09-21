@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grpc", "ServerDuplexStream")
 @js.native
-/* private */ class ServerDuplexStream[RequestType, ResponseType] () extends Duplex {
+/* private */ open class ServerDuplexStream[RequestType, ResponseType] () extends Duplex {
   
   /**
     * Indicates if the call has been cancelled

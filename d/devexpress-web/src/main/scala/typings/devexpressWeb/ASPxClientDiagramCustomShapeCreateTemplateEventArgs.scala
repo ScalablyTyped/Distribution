@@ -12,9 +12,9 @@ trait ASPxClientDiagramCustomShapeCreateTemplateEventArgs
      with ASPxClientEventArgs {
   
   /**
-    * Returns a container for an instance of the template.
+    * Returns the template's container.
     */
-  var container: js.Any
+  var container: Any
   
   /**
     * Gets the currently processed diagram item.
@@ -23,14 +23,14 @@ trait ASPxClientDiagramCustomShapeCreateTemplateEventArgs
 }
 object ASPxClientDiagramCustomShapeCreateTemplateEventArgs {
   
-  inline def apply(container: js.Any, item: DiagramShape): ASPxClientDiagramCustomShapeCreateTemplateEventArgs = {
+  inline def apply(container: Any, item: DiagramShape): ASPxClientDiagramCustomShapeCreateTemplateEventArgs = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDiagramCustomShapeCreateTemplateEventArgs]
   }
   
   extension [Self <: ASPxClientDiagramCustomShapeCreateTemplateEventArgs](x: Self) {
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setItem(value: DiagramShape): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

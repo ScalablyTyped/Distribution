@@ -25,7 +25,7 @@ object LogsOptions {
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    inline def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value :_*))
+    inline def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value*))
     
     inline def setFromBlock(value: BlockNumber): Self = StObject.set(x, "fromBlock", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object LogsOptions {
     
     inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
     
-    inline def setTopicsVarargs(value: (String | js.Array[String] | Null)*): Self = StObject.set(x, "topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: (String | js.Array[String] | Null)*): Self = StObject.set(x, "topics", js.Array(value*))
   }
 }

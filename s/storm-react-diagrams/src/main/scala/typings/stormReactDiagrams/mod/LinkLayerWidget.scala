@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "LinkLayerWidget")
 @js.native
-class LinkLayerWidget protected ()
+open class LinkLayerWidget protected ()
   extends typings.stormReactDiagrams.linkLayerWidgetMod.LinkLayerWidget {
   def this(props: LinkLayerProps) = this()
 }

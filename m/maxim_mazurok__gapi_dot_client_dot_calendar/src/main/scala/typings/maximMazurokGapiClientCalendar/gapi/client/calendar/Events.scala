@@ -69,7 +69,7 @@ object Events {
     
     inline def setDefaultRemindersUndefined: Self = StObject.set(x, "defaultReminders", js.undefined)
     
-    inline def setDefaultRemindersVarargs(value: EventReminder*): Self = StObject.set(x, "defaultReminders", js.Array(value :_*))
+    inline def setDefaultRemindersVarargs(value: EventReminder*): Self = StObject.set(x, "defaultReminders", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -83,7 +83,7 @@ object Events {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Event*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Event*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

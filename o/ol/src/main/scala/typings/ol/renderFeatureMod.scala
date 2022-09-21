@@ -13,27 +13,27 @@ object renderFeatureMod {
   
   @JSImport("ol/render/Feature", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with RenderFeature {
     def this(
       `type`: GeometryType,
       flatCoordinates: js.Array[Double],
       ends: js.Array[js.Array[Double] | Double],
-      properties: StringDictionary[js.Any]
+      properties: StringDictionary[Any]
     ) = this()
     def this(
       `type`: GeometryType,
       flatCoordinates: js.Array[Double],
       ends: js.Array[js.Array[Double] | Double],
-      properties: StringDictionary[js.Any],
+      properties: StringDictionary[Any],
       id: String
     ) = this()
     def this(
       `type`: GeometryType,
       flatCoordinates: js.Array[Double],
       ends: js.Array[js.Array[Double] | Double],
-      properties: StringDictionary[js.Any],
+      properties: StringDictionary[Any],
       id: Double
     ) = this()
   }
@@ -44,7 +44,7 @@ object renderFeatureMod {
     /**
       * Get a feature property by its key.
       */
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     def getEnds(): js.Array[js.Array[Double] | Double] = js.native
     
@@ -78,7 +78,7 @@ object renderFeatureMod {
     /**
       * Get the feature properties.
       */
-    def getProperties(): StringDictionary[js.Any] = js.native
+    def getProperties(): StringDictionary[Any] = js.native
     
     def getSimplifiedGeometry(squaredTolerance: Double): RenderFeature = js.native
     
@@ -99,8 +99,7 @@ object renderFeatureMod {
     
     /**
       * Transform geometry coordinates from tile pixel space to projected.
-      * The SRS of the source and destination are expected to be the same.
       */
-    def transform(source: ProjectionLike, destination: ProjectionLike): Unit = js.native
+    def transform(projection: ProjectionLike): Unit = js.native
   }
 }

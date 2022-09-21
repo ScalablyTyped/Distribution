@@ -4,24 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An AuthenticationToken is used by the EMM&#39;s device policy client on a
-  * device to provision the given EMM-managed user on that device.
-  */
 trait SchemaAuthenticationToken extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#authenticationToken&quot;.
+    * The authentication token to be passed to the device policy client on the device where it can be used to provision the account for which this token was generated.
     */
-  var kind: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The authentication token to be passed to the device policy client on the
-    * device where it can be used to provision the account for which this token
-    * was generated.
-    */
-  var token: js.UndefOr[String] = js.undefined
+  var token: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAuthenticationToken {
   
@@ -32,11 +20,9 @@ object SchemaAuthenticationToken {
   
   extension [Self <: SchemaAuthenticationToken](x: Self) {
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenNull: Self = StObject.set(x, "token", null)
     
     inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreatePlatformApplicationInput extends StObject {
   
   /**
-    * For a list of attributes, see SetPlatformApplicationAttributes 
+    * For a list of attributes, see SetPlatformApplicationAttributes.
     */
   var Attributes: MapStringToString
   

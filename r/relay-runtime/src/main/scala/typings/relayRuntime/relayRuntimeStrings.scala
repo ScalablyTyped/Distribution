@@ -1,8 +1,10 @@
 package typings.relayRuntime
 
+import typings.relayRuntime.getPaginationVariablesMod.Direction
+import typings.relayRuntime.readerNodeMod.RequiredFieldAction
 import typings.relayRuntime.relayDeclarativeMutationConfigMod.MutationTypes
 import typings.relayRuntime.relayDeclarativeMutationConfigMod.RangeOperations
-import typings.relayRuntime.relayRecordStateMod.RecordState
+import typings.relayRuntime.relayModernQueryExecutorMod.ActiveState
 import typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy
 import typings.relayRuntime.relayRuntimeTypesMod.FetchQueryFetchPolicy
 import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
@@ -13,8 +15,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object relayRuntimeStrings {
   
   @js.native
+  sealed trait ActorChange extends StObject
+  inline def ActorChange: ActorChange = "ActorChange".asInstanceOf[ActorChange]
+  
+  @js.native
+  sealed trait AliasedFragmentSpread extends StObject
+  inline def AliasedFragmentSpread: AliasedFragmentSpread = "AliasedFragmentSpread".asInstanceOf[AliasedFragmentSpread]
+  
+  @js.native
+  sealed trait AliasedInlineFragmentSpread extends StObject
+  inline def AliasedInlineFragmentSpread: AliasedInlineFragmentSpread = "AliasedInlineFragmentSpread".asInstanceOf[AliasedInlineFragmentSpread]
+  
+  @js.native
   sealed trait CRITICAL extends StObject
   inline def CRITICAL: CRITICAL = "CRITICAL".asInstanceOf[CRITICAL]
+  
+  @js.native
+  sealed trait ClientComponent extends StObject
+  inline def ClientComponent: ClientComponent = "ClientComponent".asInstanceOf[ClientComponent]
+  
+  @js.native
+  sealed trait ClientEdgeToClientObject extends StObject
+  inline def ClientEdgeToClientObject: ClientEdgeToClientObject = "ClientEdgeToClientObject".asInstanceOf[ClientEdgeToClientObject]
+  
+  @js.native
+  sealed trait ClientEdgeToServerObject extends StObject
+  inline def ClientEdgeToServerObject: ClientEdgeToServerObject = "ClientEdgeToServerObject".asInstanceOf[ClientEdgeToServerObject]
   
   @js.native
   sealed trait ClientExtension extends StObject
@@ -37,10 +63,8 @@ object relayRuntimeStrings {
   inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait EXISTENT
-    extends StObject
-       with RecordState
-  inline def EXISTENT: EXISTENT = "EXISTENT".asInstanceOf[EXISTENT]
+  sealed trait FlightField extends StObject
+  inline def FlightField: FlightField = "FlightField".asInstanceOf[FlightField]
   
   @js.native
   sealed trait Fragment extends StObject
@@ -65,6 +89,12 @@ object relayRuntimeStrings {
   @js.native
   sealed trait InlineFragment extends StObject
   inline def InlineFragment: InlineFragment = "InlineFragment".asInstanceOf[InlineFragment]
+  
+  @js.native
+  sealed trait LOG
+    extends StObject
+       with RequiredFieldAction
+  inline def LOG: LOG = "LOG".asInstanceOf[LOG]
   
   @js.native
   sealed trait LinkedField extends StObject
@@ -97,10 +127,10 @@ object relayRuntimeStrings {
   inline def NODE_DELETE: NODE_DELETE = "NODE_DELETE".asInstanceOf[NODE_DELETE]
   
   @js.native
-  sealed trait NONEXISTENT
+  sealed trait NONE
     extends StObject
-       with RecordState
-  inline def NONEXISTENT: NONEXISTENT = "NONEXISTENT".asInstanceOf[NONEXISTENT]
+       with RequiredFieldAction
+  inline def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
   sealed trait ObjectValue extends StObject
@@ -127,8 +157,20 @@ object relayRuntimeStrings {
   inline def RANGE_DELETE: RANGE_DELETE = "RANGE_DELETE".asInstanceOf[RANGE_DELETE]
   
   @js.native
+  sealed trait RelayLiveResolver extends StObject
+  inline def RelayLiveResolver: RelayLiveResolver = "RelayLiveResolver".asInstanceOf[RelayLiveResolver]
+  
+  @js.native
+  sealed trait RelayResolver extends StObject
+  inline def RelayResolver: RelayResolver = "RelayResolver".asInstanceOf[RelayResolver]
+  
+  @js.native
   sealed trait Request extends StObject
   inline def Request: Request = "Request".asInstanceOf[Request]
+  
+  @js.native
+  sealed trait RequiredField extends StObject
+  inline def RequiredField: RequiredField = "RequiredField".asInstanceOf[RequiredField]
   
   @js.native
   sealed trait RootArgument extends StObject
@@ -151,14 +193,18 @@ object relayRuntimeStrings {
   inline def Stream: Stream = "Stream".asInstanceOf[Stream]
   
   @js.native
+  sealed trait THROW
+    extends StObject
+       with RequiredFieldAction
+  inline def THROW: THROW = "THROW".asInstanceOf[THROW]
+  
+  @js.native
   sealed trait TypeDiscriminator extends StObject
   inline def TypeDiscriminator: TypeDiscriminator = "TypeDiscriminator".asInstanceOf[TypeDiscriminator]
   
   @js.native
-  sealed trait UNKNOWN
-    extends StObject
-       with RecordState
-  inline def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
+  sealed trait UpdatableQuery extends StObject
+  inline def UpdatableQuery: UpdatableQuery = "UpdatableQuery".asInstanceOf[UpdatableQuery]
   
   @js.native
   sealed trait Variable extends StObject
@@ -173,6 +219,12 @@ object relayRuntimeStrings {
   inline def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
+  sealed trait active
+    extends StObject
+       with ActiveState
+  inline def active: active = "active".asInstanceOf[active]
+  
+  @js.native
   sealed trait append
     extends StObject
        with RangeOperations
@@ -181,6 +233,12 @@ object relayRuntimeStrings {
   @js.native
   sealed trait available extends StObject
   inline def available: available = "available".asInstanceOf[available]
+  
+  @js.native
+  sealed trait backward
+    extends StObject
+       with Direction
+  inline def backward: backward = "backward".asInstanceOf[backward]
   
   @js.native
   sealed trait clientMutationId extends StObject
@@ -215,6 +273,10 @@ object relayRuntimeStrings {
   inline def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
+  sealed trait executeDotasyncDotmodule extends StObject
+  inline def executeDotasyncDotmodule: executeDotasyncDotmodule = "execute.async.module".asInstanceOf[executeDotasyncDotmodule]
+  
+  @js.native
   sealed trait executeDotcomplete extends StObject
   inline def executeDotcomplete: executeDotcomplete = "execute.complete".asInstanceOf[executeDotcomplete]
   
@@ -223,8 +285,8 @@ object relayRuntimeStrings {
   inline def executeDoterror: executeDoterror = "execute.error".asInstanceOf[executeDoterror]
   
   @js.native
-  sealed trait executeDotinfo extends StObject
-  inline def executeDotinfo: executeDotinfo = "execute.info".asInstanceOf[executeDotinfo]
+  sealed trait executeDotflightDotpayload_deserialize extends StObject
+  inline def executeDotflightDotpayload_deserialize: executeDotflightDotpayload_deserialize = "execute.flight.payload_deserialize".asInstanceOf[executeDotflightDotpayload_deserialize]
   
   @js.native
   sealed trait executeDotnext extends StObject
@@ -235,8 +297,10 @@ object relayRuntimeStrings {
   inline def executeDotstart: executeDotstart = "execute.start".asInstanceOf[executeDotstart]
   
   @js.native
-  sealed trait executeDotunsubscribe extends StObject
-  inline def executeDotunsubscribe: executeDotunsubscribe = "execute.unsubscribe".asInstanceOf[executeDotunsubscribe]
+  sealed trait forward
+    extends StObject
+       with Direction
+  inline def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
   sealed trait full
@@ -251,6 +315,12 @@ object relayRuntimeStrings {
   @js.native
   sealed trait hasPreviousPage extends StObject
   inline def hasPreviousPage: hasPreviousPage = "hasPreviousPage".asInstanceOf[hasPreviousPage]
+  
+  @js.native
+  sealed trait inactive
+    extends StObject
+       with ActiveState
+  inline def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
   sealed trait linked extends StObject
@@ -274,6 +344,34 @@ object relayRuntimeStrings {
        with FetchPolicy
        with FetchQueryFetchPolicy
   inline def `network-only`: `network-only` = "network-only".asInstanceOf[`network-only`]
+  
+  @js.native
+  sealed trait networkDotcomplete extends StObject
+  inline def networkDotcomplete: networkDotcomplete = "network.complete".asInstanceOf[networkDotcomplete]
+  
+  @js.native
+  sealed trait networkDoterror extends StObject
+  inline def networkDoterror: networkDoterror = "network.error".asInstanceOf[networkDoterror]
+  
+  @js.native
+  sealed trait networkDotinfo extends StObject
+  inline def networkDotinfo: networkDotinfo = "network.info".asInstanceOf[networkDotinfo]
+  
+  @js.native
+  sealed trait networkDotnext extends StObject
+  inline def networkDotnext: networkDotnext = "network.next".asInstanceOf[networkDotnext]
+  
+  @js.native
+  sealed trait networkDotstart extends StObject
+  inline def networkDotstart: networkDotstart = "network.start".asInstanceOf[networkDotstart]
+  
+  @js.native
+  sealed trait networkDotunsubscribe extends StObject
+  inline def networkDotunsubscribe: networkDotunsubscribe = "network.unsubscribe".asInstanceOf[networkDotunsubscribe]
+  
+  @js.native
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
   sealed trait node extends StObject
@@ -306,6 +404,10 @@ object relayRuntimeStrings {
   @js.native
   sealed trait queryresourceDotretain extends StObject
   inline def queryresourceDotretain: queryresourceDotretain = "queryresource.retain".asInstanceOf[queryresourceDotretain]
+  
+  @js.native
+  sealed trait relay_resolverDoterror extends StObject
+  inline def relay_resolverDoterror: relay_resolverDoterror = "relay_resolver.error".asInstanceOf[relay_resolverDoterror]
   
   @js.native
   sealed trait scalar extends StObject
@@ -351,6 +453,10 @@ object relayRuntimeStrings {
   inline def storeDotnotifyDotstart: storeDotnotifyDotstart = "store.notify.start".asInstanceOf[storeDotnotifyDotstart]
   
   @js.native
+  sealed trait storeDotnotifyDotsubscription extends StObject
+  inline def storeDotnotifyDotsubscription: storeDotnotifyDotsubscription = "store.notify.subscription".asInstanceOf[storeDotnotifyDotsubscription]
+  
+  @js.native
   sealed trait storeDotpublish extends StObject
   inline def storeDotpublish: storeDotpublish = "store.publish".asInstanceOf[storeDotpublish]
   
@@ -365,4 +471,12 @@ object relayRuntimeStrings {
   @js.native
   sealed trait stream_ extends StObject
   inline def stream_ : stream_ = "stream".asInstanceOf[stream_]
+  
+  @js.native
+  sealed trait suspenseDotfragment extends StObject
+  inline def suspenseDotfragment: suspenseDotfragment = "suspense.fragment".asInstanceOf[suspenseDotfragment]
+  
+  @js.native
+  sealed trait suspenseDotquery extends StObject
+  inline def suspenseDotquery: suspenseDotquery = "suspense.query".asInstanceOf[suspenseDotquery]
 }

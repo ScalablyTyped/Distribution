@@ -32,13 +32,13 @@ object CIMColorSubstitution {
     
     inline def setNewColorUndefined: Self = StObject.set(x, "newColor", js.undefined)
     
-    inline def setNewColorVarargs(value: Double*): Self = StObject.set(x, "newColor", js.Array(value :_*))
+    inline def setNewColorVarargs(value: Double*): Self = StObject.set(x, "newColor", js.Array(value*))
     
     inline def setOldColor(value: js.Array[Double]): Self = StObject.set(x, "oldColor", value.asInstanceOf[js.Any])
     
     inline def setOldColorUndefined: Self = StObject.set(x, "oldColor", js.undefined)
     
-    inline def setOldColorVarargs(value: Double*): Self = StObject.set(x, "oldColor", js.Array(value :_*))
+    inline def setOldColorVarargs(value: Double*): Self = StObject.set(x, "oldColor", js.Array(value*))
     
     inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMColorSubstitution): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

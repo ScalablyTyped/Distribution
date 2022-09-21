@@ -10,15 +10,12 @@ close react component on press escape
 | ------------------ | :-------------: |
 | Full name          | react-close-on-escape |
 | Keywords           | react, escape, close, higher-order-component, hoc |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 73646 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8936.666666666666 |
+| # stars            | 14.0 |
 
 ## Links
-- [Homepage](https://github.com/conorhastings/react-close-on-escape#readme)
-- [Bugs](https://github.com/conorhastings/react-close-on-escape/issues)
-- [Repository](https://github.com/conorhastings/react-close-on-escape)
 - [Npm](https://www.npmjs.com/package/react-close-on-escape)
     
 

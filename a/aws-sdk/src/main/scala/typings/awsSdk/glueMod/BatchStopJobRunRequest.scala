@@ -29,6 +29,6 @@ object BatchStopJobRunRequest {
     
     inline def setJobRunIds(value: BatchStopJobRunJobRunIdList): Self = StObject.set(x, "JobRunIds", value.asInstanceOf[js.Any])
     
-    inline def setJobRunIdsVarargs(value: IdString*): Self = StObject.set(x, "JobRunIds", js.Array(value :_*))
+    inline def setJobRunIdsVarargs(value: IdString*): Self = StObject.set(x, "JobRunIds", js.Array(value*))
   }
 }

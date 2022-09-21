@@ -1,5 +1,6 @@
 package typings.phin
 
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.IncomingMessage
 import typings.phin.anon.Data
@@ -7,13 +8,15 @@ import typings.phin.anon.Form
 import typings.phin.anon.IWithDataIJSONResponseOpt
 import typings.phin.anon.IWithDataIOptions
 import typings.phin.anon.IWithDataIStreamResponseO
+import typings.phin.anon.IWithDataIStringResponseO
 import typings.phin.anon.IWithFormIJSONResponseOpt
 import typings.phin.anon.IWithFormIOptions
 import typings.phin.anon.IWithFormIStreamResponseO
+import typings.phin.anon.IWithFormIStringResponseO
 import typings.phin.phinBooleans.`true`
 import typings.phin.phinStrings.json
 import typings.phin.phinStrings.none
-import typings.std.Error
+import typings.phin.phinStrings.string
 import typings.std.NonNullable
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
@@ -25,10 +28,13 @@ object mod {
   inline def apply(options: String): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
   inline def apply(options: IWithDataIOptions): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
   inline def apply(options: IWithDataIStreamResponseO): js.Promise[IStreamResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStreamResponse]]
+  inline def apply(options: IWithDataIStringResponseO): js.Promise[IStringResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStringResponse]]
   inline def apply(options: IWithFormIOptions): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
   inline def apply(options: IWithFormIStreamResponseO): js.Promise[IStreamResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStreamResponse]]
+  inline def apply(options: IWithFormIStringResponseO): js.Promise[IStringResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStringResponse]]
   inline def apply(options: IOptions): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
   inline def apply(options: IStreamResponseOptions): js.Promise[IStreamResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStreamResponse]]
+  inline def apply(options: IStringResponseOptions): js.Promise[IStringResponse] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStringResponse]]
   inline def apply[T](options: IWithDataIJSONResponseOpt): js.Promise[IJSONResponse[T]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IJSONResponse[T]]]
   inline def apply[T](options: IWithFormIJSONResponseOpt): js.Promise[IJSONResponse[T]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IJSONResponse[T]]]
   inline def apply[T](options: IJSONResponseOptions): js.Promise[IJSONResponse[T]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IJSONResponse[T]]]
@@ -39,16 +45,19 @@ object mod {
   
   @JSImport("phin", "promisified")
   @js.native
-  def promisified: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof phin */ js.Any = js.native
-  inline def promisified_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof phin */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promisified")(x.asInstanceOf[js.Any])
+  def promisified: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof phin */ Any = js.native
+  inline def promisified_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof phin */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promisified")(x.asInstanceOf[js.Any])
   
   inline def unpromisified(options: String, callback: ICallback[IResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def unpromisified(options: IWithDataIOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def unpromisified(options: IWithDataIStreamResponseO, callback: ICallback[IStreamResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unpromisified(options: IWithDataIStringResponseO, callback: ICallback[IStringResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def unpromisified(options: IWithFormIOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def unpromisified(options: IWithFormIStreamResponseO, callback: ICallback[IStreamResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unpromisified(options: IWithFormIStringResponseO, callback: ICallback[IStringResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def unpromisified(options: IOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def unpromisified(options: IStreamResponseOptions, callback: ICallback[IStreamResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unpromisified(options: IStringResponseOptions, callback: ICallback[IStringResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def unpromisified[T](options: IWithDataIJSONResponseOpt, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def unpromisified[T](options: IWithFormIJSONResponseOpt, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def unpromisified[T](options: IJSONResponseOptions, callback: ICallback[IJSONResponse[T]] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -57,7 +66,7 @@ object mod {
   
   // NOTE: Typescript cannot infer type of union callback on the consumer side
   // https://github.com/Microsoft/TypeScript/pull/17819#issuecomment-363636904
-  type IErrorCallback = js.Function2[/* error */ Error | String, /* response */ Null, Unit]
+  type IErrorCallback = js.Function2[/* error */ js.Error | String, /* response */ Null, Unit]
   
   @js.native
   trait IJSONResponse[T] extends IncomingMessage {
@@ -185,7 +194,7 @@ object mod {
   @js.native
   trait IResponse extends IncomingMessage {
     
-    var body: String = js.native
+    var body: Buffer = js.native
   }
   
   @js.native
@@ -214,8 +223,32 @@ object mod {
     }
   }
   
-  // Form and data property has been written this way so they're mutually exclusive.
-  type IWithData[T /* <: js.Object */] = T & Data
+  @js.native
+  trait IStringResponse extends IncomingMessage {
+    
+    var body: String = js.native
+  }
   
-  type IWithForm[T /* <: js.Object */] = T & Form
+  trait IStringResponseOptions
+    extends StObject
+       with IOptionsBase {
+    
+    var parse: string
+  }
+  object IStringResponseOptions {
+    
+    inline def apply(url: String | URL): IStringResponseOptions = {
+      val __obj = js.Dynamic.literal(parse = "string", url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IStringResponseOptions]
+    }
+    
+    extension [Self <: IStringResponseOptions](x: Self) {
+      
+      inline def setParse(value: string): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type IWithData[T /* <: IOptionsBase */] = T & Data
+  
+  type IWithForm[T /* <: IOptionsBase */] = T & Form
 }

@@ -9,7 +9,7 @@ trait DescribeDatasetImportJobResponse extends StObject {
   /**
     * When the dataset import job was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The size of the dataset in gigabytes (GB) after the import job has finished.
@@ -37,14 +37,29 @@ trait DescribeDatasetImportJobResponse extends StObject {
   var DatasetImportJobName: js.UndefOr[Name] = js.undefined
   
   /**
+    * The estimated time remaining in minutes for the dataset import job to complete.
+    */
+  var EstimatedTimeRemainingInMinutes: js.UndefOr[Long] = js.undefined
+  
+  /**
     * Statistical information about each field in the input data.
     */
   var FieldStatistics: js.UndefOr[typings.awsSdk.forecastserviceMod.FieldStatistics] = js.undefined
   
   /**
-    * The last time that the dataset was modified. The time depends on the status of the job, as follows:    CREATE_PENDING - The same time as CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
+    * The format of the imported data, CSV or PARQUET.
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
+  var Format: js.UndefOr[typings.awsSdk.forecastserviceMod.Format] = js.undefined
+  
+  /**
+    * The format of the geolocation attribute. Valid Values:"LAT_LONG" and "CC_POSTALCODE".
+    */
+  var GeolocationFormat: js.UndefOr[typings.awsSdk.forecastserviceMod.GeolocationFormat] = js.undefined
+  
+  /**
+    * The last time the resource was modified. The timestamp depends on the status of the job:    CREATE_PENDING - The CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    CREATE_STOPPING - The current timestamp.    CREATE_STOPPED - When the job stopped.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
+    */
+  var LastModificationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
@@ -52,14 +67,24 @@ trait DescribeDatasetImportJobResponse extends StObject {
   var Message: js.UndefOr[typings.awsSdk.forecastserviceMod.Message] = js.undefined
   
   /**
-    * The status of the dataset import job. The status is reflected in the status of the dataset. For example, when the import job status is CREATE_IN_PROGRESS, the status of the dataset is UPDATE_IN_PROGRESS. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED   
+    * The status of the dataset import job. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     CREATE_STOPPING, CREATE_STOPPED   
     */
   var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
+  
+  /**
+    * The single time zone applied to every item in the dataset
+    */
+  var TimeZone: js.UndefOr[typings.awsSdk.forecastserviceMod.TimeZone] = js.undefined
   
   /**
     * The format of timestamps in the dataset. The format that you specify depends on the DataFrequency specified when the dataset was created. The following formats are supported   "yyyy-MM-dd" For the following data frequencies: Y, M, W, and D   "yyyy-MM-dd HH:mm:ss" For the following data frequencies: H, 30min, 15min, and 1min; and optionally, for: Y, M, W, and D  
     */
   var TimestampFormat: js.UndefOr[typings.awsSdk.forecastserviceMod.TimestampFormat] = js.undefined
+  
+  /**
+    * Whether TimeZone is automatically derived from the geolocation attribute.
+    */
+  var UseGeolocationForTimeZone: js.UndefOr[typings.awsSdk.forecastserviceMod.UseGeolocationForTimeZone] = js.undefined
 }
 object DescribeDatasetImportJobResponse {
   
@@ -70,7 +95,7 @@ object DescribeDatasetImportJobResponse {
   
   extension [Self <: DescribeDatasetImportJobResponse](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -94,11 +119,23 @@ object DescribeDatasetImportJobResponse {
     
     inline def setDatasetImportJobNameUndefined: Self = StObject.set(x, "DatasetImportJobName", js.undefined)
     
+    inline def setEstimatedTimeRemainingInMinutes(value: Long): Self = StObject.set(x, "EstimatedTimeRemainingInMinutes", value.asInstanceOf[js.Any])
+    
+    inline def setEstimatedTimeRemainingInMinutesUndefined: Self = StObject.set(x, "EstimatedTimeRemainingInMinutes", js.undefined)
+    
     inline def setFieldStatistics(value: FieldStatistics): Self = StObject.set(x, "FieldStatistics", value.asInstanceOf[js.Any])
     
     inline def setFieldStatisticsUndefined: Self = StObject.set(x, "FieldStatistics", js.undefined)
     
-    inline def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    
+    inline def setGeolocationFormat(value: GeolocationFormat): Self = StObject.set(x, "GeolocationFormat", value.asInstanceOf[js.Any])
+    
+    inline def setGeolocationFormatUndefined: Self = StObject.set(x, "GeolocationFormat", js.undefined)
+    
+    inline def setLastModificationTime(value: js.Date): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     inline def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
     
@@ -110,8 +147,16 @@ object DescribeDatasetImportJobResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
+    inline def setTimeZone(value: TimeZone): Self = StObject.set(x, "TimeZone", value.asInstanceOf[js.Any])
+    
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "TimeZone", js.undefined)
+    
     inline def setTimestampFormat(value: TimestampFormat): Self = StObject.set(x, "TimestampFormat", value.asInstanceOf[js.Any])
     
     inline def setTimestampFormatUndefined: Self = StObject.set(x, "TimestampFormat", js.undefined)
+    
+    inline def setUseGeolocationForTimeZone(value: UseGeolocationForTimeZone): Self = StObject.set(x, "UseGeolocationForTimeZone", value.asInstanceOf[js.Any])
+    
+    inline def setUseGeolocationForTimeZoneUndefined: Self = StObject.set(x, "UseGeolocationForTimeZone", js.undefined)
   }
 }

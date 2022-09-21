@@ -1,12 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.Alt
-import typings.maximMazurokGapiClientCompute.anon.FieldsKey
-import typings.maximMazurokGapiClientCompute.anon.FieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdResource
+import typings.maximMazurokGapiClientCompute.anon.Accesstoken
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
+import typings.maximMazurokGapiClientCompute.anon.PrettyPrintProjectQuotaUserRequestIdResourceUploadType
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserSslCertificate
 import typings.maximMazurokGapiClientCompute.anon.RequestIdSslCertificate
+import typings.maximMazurokGapiClientCompute.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait SslCertificatesResource extends StObject {
   
   /** Retrieves the list of all SslCertificate resources, regional and global, available to the specified project. */
   def aggregatedList(): Request[SslCertificateAggregatedList] = js.native
-  def aggregatedList(request: Alt): Request[SslCertificateAggregatedList] = js.native
+  def aggregatedList(request: Accesstoken): Request[SslCertificateAggregatedList] = js.native
   
   /** Deletes the specified SslCertificate resource. */
   def delete(): Request[Operation] = js.native
@@ -27,8 +27,8 @@ trait SslCertificatesResource extends StObject {
   def get(request: QuotaUserSslCertificate): Request[SslCertificate] = js.native
   
   /** Creates a SslCertificate resource in the specified project using the data included in the request. */
-  def insert(request: FieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdResource): Request[Operation] = js.native
-  def insert(request: FieldsKey, body: SslCertificate): Request[Operation] = js.native
+  def insert(request: PrettyPrintProjectQuotaUserRequestIdResourceUploadType): Request[Operation] = js.native
+  def insert(request: Xgafv, body: SslCertificate): Request[Operation] = js.native
   
   /** Retrieves the list of SslCertificate resources available to the specified project. */
   def list(): Request[SslCertificateList] = js.native

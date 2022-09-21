@@ -54,6 +54,6 @@ object CreateDevicePoolRequest {
     
     inline def setRules(value: Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

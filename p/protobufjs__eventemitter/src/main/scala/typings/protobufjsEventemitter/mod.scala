@@ -20,7 +20,7 @@ object mod {
     * @memberof util
     * @constructor
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with EventEmitter
   
@@ -39,7 +39,7 @@ object mod {
       * @param {...*} args Arguments
       * @returns {util.EventEmitter} `this`
       */
-    def emit(evt: String, args: js.Any*): EventEmitter = js.native
+    def emit(evt: String, args: Any*): EventEmitter = js.native
     
     /**
       * Removes an event listener or any matching listeners if arguments are omitted.
@@ -49,8 +49,8 @@ object mod {
       */
     def off(): EventEmitter = js.native
     def off(evt: String): EventEmitter = js.native
-    def off(evt: String, fn: js.Function0[js.Any]): EventEmitter = js.native
-    def off(evt: Unit, fn: js.Function0[js.Any]): EventEmitter = js.native
+    def off(evt: String, fn: js.Function0[Any]): EventEmitter = js.native
+    def off(evt: Unit, fn: js.Function0[Any]): EventEmitter = js.native
     
     /**
       * Registers an event listener.
@@ -59,7 +59,7 @@ object mod {
       * @param {*} [ctx] Listener context
       * @returns {util.EventEmitter} `this`
       */
-    def on(evt: String, fn: js.Function0[js.Any]): EventEmitter = js.native
-    def on(evt: String, fn: js.Function0[js.Any], ctx: js.Any): EventEmitter = js.native
+    def on(evt: String, fn: js.Function0[Any]): EventEmitter = js.native
+    def on(evt: String, fn: js.Function0[Any], ctx: Any): EventEmitter = js.native
   }
 }

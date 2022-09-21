@@ -17,6 +17,11 @@ trait Activity extends StObject {
   var ConditionalSplit: js.UndefOr[ConditionalSplitActivity] = js.undefined
   
   /**
+    * The settings for a connect activity. This type of activity initiates a contact center call to participants.
+    */
+  var ContactCenter: js.UndefOr[ContactCenterActivity] = js.undefined
+  
+  /**
     * The custom description of the activity.
     */
   var Description: js.UndefOr[string] = js.undefined
@@ -72,6 +77,10 @@ object Activity {
     inline def setConditionalSplit(value: ConditionalSplitActivity): Self = StObject.set(x, "ConditionalSplit", value.asInstanceOf[js.Any])
     
     inline def setConditionalSplitUndefined: Self = StObject.set(x, "ConditionalSplit", js.undefined)
+    
+    inline def setContactCenter(value: ContactCenterActivity): Self = StObject.set(x, "ContactCenter", value.asInstanceOf[js.Any])
+    
+    inline def setContactCenterUndefined: Self = StObject.set(x, "ContactCenter", js.undefined)
     
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

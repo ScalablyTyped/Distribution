@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutConfigurationSetSendingOptionsRequest extends StObject {
   
   /**
-    * The name of the configuration set that you want to enable or disable email sending for.
+    * The name of the configuration set to enable or disable email sending for.
     */
   var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   

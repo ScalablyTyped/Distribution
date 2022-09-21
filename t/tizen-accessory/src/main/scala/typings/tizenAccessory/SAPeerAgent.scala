@@ -38,7 +38,7 @@ object SAPeerAgent {
     
     inline def setFeature(value: js.Array[String]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    inline def setFeatureVarargs(value: String*): Self = StObject.set(x, "feature", js.Array(value :_*))
+    inline def setFeatureVarargs(value: String*): Self = StObject.set(x, "feature", js.Array(value*))
     
     inline def setMaxAllowedDataSize(value: Double): Self = StObject.set(x, "maxAllowedDataSize", value.asInstanceOf[js.Any])
     

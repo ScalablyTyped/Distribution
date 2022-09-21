@@ -67,7 +67,7 @@ object anon {
       
       inline def setValues(value: js.Array[Name]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Name*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Name*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   

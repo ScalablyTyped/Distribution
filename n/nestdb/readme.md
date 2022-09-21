@@ -10,10 +10,10 @@ The JavaScript Database for Node.js, nwjs, Electron, and the browser
 | ------------------ | :-------------: |
 | Full name          | nestdb |
 | Keywords           | database, datastore, embedded, nested, nestdb, nedb, nedb2, nedb3, nedb-core, newdb, mongo-lite, mongodb-lite |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 3660 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 110.0 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://www.npmjs.com/package/nestdb)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteVpcLinkRequest extends StObject {
   
   /**
-    * [Required] The identifier of the VpcLink. It is used in an Integration to reference this VpcLink.
+    * The identifier of the VpcLink. It is used in an Integration to reference this VpcLink.
     */
   var vpcLinkId: String
 }

@@ -19,7 +19,7 @@ trait IconSet extends StObject {
   
   def Item(Index: Double): Icon = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): Icon = js.native
+  def _Default(Index: Any): Icon = js.native
 }

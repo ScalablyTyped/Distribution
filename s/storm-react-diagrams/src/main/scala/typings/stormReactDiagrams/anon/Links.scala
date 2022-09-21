@@ -42,7 +42,7 @@ object Links {
     
     inline def setLinks(value: js.Array[String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    inline def setLinksVarargs(value: String*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: String*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setMaximumLinks(value: Double): Self = StObject.set(x, "maximumLinks", value.asInstanceOf[js.Any])
     

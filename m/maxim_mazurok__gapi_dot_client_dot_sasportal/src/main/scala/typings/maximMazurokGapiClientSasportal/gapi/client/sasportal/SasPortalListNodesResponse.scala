@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SasPortalListNodesResponse extends StObject {
   
-  /**
-    * A pagination token returned from a previous call to ListNodes method that indicates from where listing should continue. If the field is missing or empty, it means there is no more
-    * nodes.
-    */
+  /** A pagination token returned from a previous call to ListNodes that indicates from where listing should continue. If the field is missing or empty, it means there is no more nodes. */
   var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The nodes that match the request. */
@@ -32,6 +29,6 @@ object SasPortalListNodesResponse {
     
     inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    inline def setNodesVarargs(value: SasPortalNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: SasPortalNode*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

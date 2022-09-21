@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.InverseGamma")
 @js.native
-class InverseGamma ()
+open class InverseGamma ()
   extends typings.ranjs.mod.dist.InverseGamma {
   def this(alpha: Double) = this()
   def this(alpha: Double, beta: Double) = this()

@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLocationObjectStorageResponse extends StObject {
   
   /**
-    * Optional. The access key is used if credentials are required to access the self-managed object storage server. If your object storage requires a user name and password to authenticate, use AccessKey and SecretKey to provide the user name and password, respectively.
+    * The access key (for example, a user name) required to authenticate with the object storage server.
     */
   var AccessKey: js.UndefOr[ObjectStorageAccessKey] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the agents associated with the self-managed object storage server location.
+    * The ARNs of the DataSync agents that can securely connect with your location.
     */
   var AgentArns: js.UndefOr[AgentArnList] = js.undefined
   
   /**
-    * The time that the self-managed object storage server agent was created.
+    * The time that the location was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the self-managed object storage server location to describe.
+    * The ARN of the object storage system location.
     */
   var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
   
   /**
-    * The URL of the source self-managed object storage server location that was described.
+    * The URL of the object storage system location.
     */
   var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.undefined
   
   /**
-    * The port that your self-managed object storage server accepts inbound network traffic on. The server port is set by default to TCP 80 (HTTP) or TCP 443 (HTTPS).
+    * The port that your object storage server accepts inbound network traffic on (for example, port 443).
     */
   var ServerPort: js.UndefOr[ObjectStorageServerPort] = js.undefined
   
   /**
-    * The protocol that the object storage server uses to communicate. Valid values are HTTP or HTTPS.
+    * The protocol that your object storage server uses to communicate.
     */
   var ServerProtocol: js.UndefOr[ObjectStorageServerProtocol] = js.undefined
 }
@@ -58,9 +58,9 @@ object DescribeLocationObjectStorageResponse {
     
     inline def setAgentArnsUndefined: Self = StObject.set(x, "AgentArns", js.undefined)
     
-    inline def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
+    inline def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value*))
     
-    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

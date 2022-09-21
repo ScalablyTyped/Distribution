@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMouseDevice extends StObject {
   
-  var onmousemoved: js.Any
+  var onmousemoved: Any
 }
 object IMouseDevice {
   
-  inline def apply(onmousemoved: js.Any): IMouseDevice = {
+  inline def apply(onmousemoved: Any): IMouseDevice = {
     val __obj = js.Dynamic.literal(onmousemoved = onmousemoved.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMouseDevice]
   }
   
   extension [Self <: IMouseDevice](x: Self) {
     
-    inline def setOnmousemoved(value: js.Any): Self = StObject.set(x, "onmousemoved", value.asInstanceOf[js.Any])
+    inline def setOnmousemoved(value: Any): Self = StObject.set(x, "onmousemoved", value.asInstanceOf[js.Any])
   }
 }

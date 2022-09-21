@@ -3,6 +3,7 @@ package typings.arangodb
 import typings.arangodb.ArangoDB.HashAlgorithm
 import typings.arangodb.ArangoDB.JwtAlgorithm
 import typings.arangodb.arangodbStrings.none
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +21,8 @@ object arangodbCryptoMod {
   inline def createNonce(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createNonce")().asInstanceOf[String]
   
   inline def genRandomAlphaNumbers(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("genRandomAlphaNumbers")(length.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def genRandomBytes(length: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("genRandomBytes")(length.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   inline def genRandomNumbers(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("genRandomNumbers")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -51,4 +54,6 @@ object arangodbCryptoMod {
   inline def sha384(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(message.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def sha512(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def uuidv4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuidv4")().asInstanceOf[String]
 }

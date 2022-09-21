@@ -25,7 +25,7 @@ object Hash {
     
     inline def setPairs(value: js.Array[HashPair]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     
-    inline def setPairsVarargs(value: HashPair*): Self = StObject.set(x, "pairs", js.Array(value :_*))
+    inline def setPairsVarargs(value: HashPair*): Self = StObject.set(x, "pairs", js.Array(value*))
     
     inline def setType(value: typings.handlebars.handlebarsStrings.Hash): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

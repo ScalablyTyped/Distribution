@@ -21,11 +21,11 @@ trait SlicerPivotTables extends StObject {
   def Item(Index: String): PivotTable = js.native
   def Item(Index: Double): PivotTable = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def RemovePivotTable(PivotTable: String): Unit = js.native
   def RemovePivotTable(PivotTable: Double): Unit = js.native
   def RemovePivotTable(PivotTable: PivotTable): Unit = js.native
   
-  def _Default(Index: js.Any): PivotTable = js.native
+  def _Default(Index: Any): PivotTable = js.native
 }

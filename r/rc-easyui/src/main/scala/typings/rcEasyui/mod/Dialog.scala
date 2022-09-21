@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("rc-easyui", "Dialog")
 @js.native
-class Dialog protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(e: js.Any) = this()
+open class Dialog protected ()
+  extends Component[Any, js.Object, Any] {
+  def this(e: Any) = this()
   
-  def bodyClasses(): js.Any = js.native
+  def bodyClasses(): Any = js.native
   
   def center(): Unit = js.native
   
-  def clickCloseTool(e: js.Any): Unit = js.native
+  def clickCloseTool(e: Any): Unit = js.native
   
   def close(): Unit = js.native
   
@@ -25,22 +25,22 @@ class Dialog protected ()
   def componentDidMount_MDialog(): Unit = js.native
   
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MDialog(e: js.Any): Unit = js.native
+  def componentDidUpdate_MDialog(e: Any): Unit = js.native
   
   @JSName("componentWillUnmount")
   def componentWillUnmount_MDialog(): Unit = js.native
   
   def displaying(): Unit = js.native
   
-  def footerClasses(): js.Any = js.native
+  def footerClasses(): Any = js.native
   
-  def handleDragEnd(e: js.Any): Unit = js.native
+  def handleDragEnd(e: Any): Unit = js.native
   
-  def handleResizeStop(e: js.Any): Unit = js.native
+  def handleResizeStop(e: Any): Unit = js.native
   
   def hcenter(): Unit = js.native
   
-  def headerClasses(): js.Any = js.native
+  def headerClasses(): Any = js.native
   
   def initDialog(): Unit = js.native
   
@@ -50,9 +50,9 @@ class Dialog protected ()
   
   def openMask(): Unit = js.native
   
-  def panelClasses(): js.Any = js.native
+  def panelClasses(): Any = js.native
   
-  def panelStyles(): js.Any = js.native
+  def panelStyles(): Any = js.native
   
   def vcenter(): Unit = js.native
 }
@@ -67,7 +67,7 @@ object Dialog {
     
     object locale {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.contextTypes.locale")
       @js.native
@@ -76,12 +76,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.contextTypes.locale
       @JSImport("rc-easyui", "Dialog.contextTypes.locale.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object t {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.contextTypes.t")
       @js.native
@@ -90,7 +90,7 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.contextTypes.t
       @JSImport("rc-easyui", "Dialog.contextTypes.t.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
   }
   
@@ -158,11 +158,11 @@ object Dialog {
     
     inline def onExpand(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onExpand")().asInstanceOf[Unit]
     
-    inline def onMove(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMove")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onMove(e: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMove")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def onOpen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onOpen")().asInstanceOf[Unit]
     
-    inline def onResize(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onResize")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onResize(e: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onResize")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("rc-easyui", "Dialog.defaultProps.resizable")
     @js.native
@@ -181,7 +181,7 @@ object Dialog {
     
     object animate {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.animate")
       @js.native
@@ -190,12 +190,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.animate
       @JSImport("rc-easyui", "Dialog.propTypes.animate.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object autoCenter {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.autoCenter")
       @js.native
@@ -204,12 +204,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.autoCenter
       @JSImport("rc-easyui", "Dialog.propTypes.autoCenter.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object bodyCls {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.bodyCls")
       @js.native
@@ -218,12 +218,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.bodyCls
       @JSImport("rc-easyui", "Dialog.propTypes.bodyCls.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object bodyStyle {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.bodyStyle")
       @js.native
@@ -232,12 +232,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.bodyStyle
       @JSImport("rc-easyui", "Dialog.propTypes.bodyStyle.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object border {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.border")
       @js.native
@@ -246,12 +246,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.border
       @JSImport("rc-easyui", "Dialog.propTypes.border.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object borderType {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.borderType")
       @js.native
@@ -260,12 +260,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.borderType
       @JSImport("rc-easyui", "Dialog.propTypes.borderType.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object closable {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.closable")
       @js.native
@@ -274,12 +274,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.closable
       @JSImport("rc-easyui", "Dialog.propTypes.closable.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object closeIconCls {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.closeIconCls")
       @js.native
@@ -288,12 +288,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.closeIconCls
       @JSImport("rc-easyui", "Dialog.propTypes.closeIconCls.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object closed {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.closed")
       @js.native
@@ -302,12 +302,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.closed
       @JSImport("rc-easyui", "Dialog.propTypes.closed.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object collapseIconCls {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.collapseIconCls")
       @js.native
@@ -316,12 +316,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.collapseIconCls
       @JSImport("rc-easyui", "Dialog.propTypes.collapseIconCls.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object collapsed {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.collapsed")
       @js.native
@@ -330,12 +330,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.collapsed
       @JSImport("rc-easyui", "Dialog.propTypes.collapsed.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object collapsible {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.collapsible")
       @js.native
@@ -344,12 +344,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.collapsible
       @JSImport("rc-easyui", "Dialog.propTypes.collapsible.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object draggable {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.draggable")
       @js.native
@@ -358,12 +358,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.draggable
       @JSImport("rc-easyui", "Dialog.propTypes.draggable.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object expandIconCls {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.expandIconCls")
       @js.native
@@ -372,12 +372,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.expandIconCls
       @JSImport("rc-easyui", "Dialog.propTypes.expandIconCls.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object footer {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.footer")
       @js.native
@@ -386,12 +386,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.footer
       @JSImport("rc-easyui", "Dialog.propTypes.footer.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object footerCls {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.footerCls")
       @js.native
@@ -400,12 +400,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.footerCls
       @JSImport("rc-easyui", "Dialog.propTypes.footerCls.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object footerStyle {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.footerStyle")
       @js.native
@@ -414,12 +414,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.footerStyle
       @JSImport("rc-easyui", "Dialog.propTypes.footerStyle.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object header {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.header")
       @js.native
@@ -428,12 +428,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.header
       @JSImport("rc-easyui", "Dialog.propTypes.header.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object headerCls {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.headerCls")
       @js.native
@@ -442,12 +442,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.headerCls
       @JSImport("rc-easyui", "Dialog.propTypes.headerCls.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object headerStyle {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.headerStyle")
       @js.native
@@ -456,12 +456,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.headerStyle
       @JSImport("rc-easyui", "Dialog.propTypes.headerStyle.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object iconCls {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.iconCls")
       @js.native
@@ -470,12 +470,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.iconCls
       @JSImport("rc-easyui", "Dialog.propTypes.iconCls.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object modal {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.modal")
       @js.native
@@ -484,12 +484,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.modal
       @JSImport("rc-easyui", "Dialog.propTypes.modal.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object onCollapse {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.onCollapse")
       @js.native
@@ -498,12 +498,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.onCollapse
       @JSImport("rc-easyui", "Dialog.propTypes.onCollapse.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object onExpand {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.onExpand")
       @js.native
@@ -512,12 +512,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.onExpand
       @JSImport("rc-easyui", "Dialog.propTypes.onExpand.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object resizable {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.resizable")
       @js.native
@@ -526,12 +526,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.resizable
       @JSImport("rc-easyui", "Dialog.propTypes.resizable.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object showFooter {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.showFooter")
       @js.native
@@ -540,12 +540,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.showFooter
       @JSImport("rc-easyui", "Dialog.propTypes.showFooter.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object showHeader {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.showHeader")
       @js.native
@@ -554,12 +554,12 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.showHeader
       @JSImport("rc-easyui", "Dialog.propTypes.showHeader.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object title {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Dialog.propTypes.title")
       @js.native
@@ -568,7 +568,7 @@ object Dialog {
       // Circular reference from rc_easyui.Dialog.propTypes.title
       @JSImport("rc-easyui", "Dialog.propTypes.title.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
   }
   

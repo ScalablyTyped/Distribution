@@ -10,15 +10,12 @@ A loader-agnostic CSS Modules implementation, based on PostCSS
 | ------------------ | :-------------: |
 | Full name          | css-modules-loader-core |
 | Keywords           | css-modules, postcss, loader |
-| # releases         | 0 |
-| # dependents       | 75 |
-| # downloads        | 25494103 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1872982.6666666667 |
+| # stars            | 91.0 |
 
 ## Links
-- [Homepage](https://github.com/css-modules/css-modules-loader-core)
-- [Bugs](https://github.com/css-modules/css-modules-loader-core/issues)
-- [Repository](https://github.com/css-modules/css-modules-loader-core)
 - [Npm](https://www.npmjs.com/package/css-modules-loader-core)
     
 

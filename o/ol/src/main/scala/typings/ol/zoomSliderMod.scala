@@ -8,7 +8,7 @@ object zoomSliderMod {
   
   @JSImport("ol/control/ZoomSlider", JSImport.Default)
   @js.native
-  class default () extends ZoomSlider {
+  open class default () extends ZoomSlider {
     def this(opt_options: Options) = this()
   }
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceNetworkInterfaceSpecification extends StObject {
   
   /**
-    * Indicates whether to assign a carrier IP address to the network interface. You can only assign a carrier IP address to a network interface that is in a subnet in a Wavelength Zone. For more information about carrier IP addresses, see Carrier IP addresses in the AWS Wavelength Developer Guide.
+    * Indicates whether to assign a carrier IP address to the network interface. You can only assign a carrier IP address to a network interface that is in a subnet in a Wavelength Zone. For more information about carrier IP addresses, see Carrier IP address in the Amazon Web Services Wavelength Developer Guide.
     */
   var AssociateCarrierIpAddress: js.UndefOr[Boolean] = js.undefined
   
@@ -37,9 +37,19 @@ trait InstanceNetworkInterfaceSpecification extends StObject {
   var Groups: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   
   /**
-    * The type of network interface. To create an Elastic Fabric Adapter (EFA), specify efa. For more information, see Elastic Fabric Adapter in the Amazon Elastic Compute Cloud User Guide. If you are not creating an EFA, specify interface or omit this parameter. Valid values: interface | efa 
+    * The type of network interface. Valid values: interface | efa 
     */
   var InterfaceType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The number of IPv4 delegated prefixes to be automatically assigned to the network interface. You cannot use this option if you use the Ipv4Prefix option.
+    */
+  var Ipv4PrefixCount: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * One or more IPv4 delegated prefixes to be assigned to the network interface. You cannot use this option if you use the Ipv4PrefixCount option.
+    */
+  var Ipv4Prefixes: js.UndefOr[Ipv4PrefixList] = js.undefined
   
   /**
     * A number of IPv6 addresses to assign to the network interface. Amazon EC2 chooses the IPv6 addresses from the range of the subnet. You cannot specify this option and the option to assign specific IPv6 addresses in the same request. You can specify this option if you've specified a minimum number of instances to launch.
@@ -52,14 +62,24 @@ trait InstanceNetworkInterfaceSpecification extends StObject {
   var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.undefined
   
   /**
-    * The index of the network card. Some instance types support multiple network cards. The primary network interface must be assigned to network card index 0. The default is network card index 0.
+    * The number of IPv6 delegated prefixes to be automatically assigned to the network interface. You cannot use this option if you use the Ipv6Prefix option.
+    */
+  var Ipv6PrefixCount: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * One or more IPv6 delegated prefixes to be assigned to the network interface. You cannot use this option if you use the Ipv6PrefixCount option.
+    */
+  var Ipv6Prefixes: js.UndefOr[Ipv6PrefixList] = js.undefined
+  
+  /**
+    * The index of the network card. Some instance types support multiple network cards. The primary network interface must be assigned to network card index 0. The default is network card index 0. If you are using RequestSpotInstances to create Spot Instances, omit this parameter because you can’t specify the network card index when using this API. To specify the network card index, use RunInstances.
     */
   var NetworkCardIndex: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the network interface. If you are creating a Spot Fleet, omit this parameter because you can’t specify a network interface ID in a launch specification.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
+  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.NetworkInterfaceId] = js.undefined
   
   /**
     * The private IPv4 address of the network interface. Applies only if creating a network interface when launching an instance. You cannot specify this option if you're launching more than one instance in a RunInstances request.
@@ -114,11 +134,21 @@ object InstanceNetworkInterfaceSpecification {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setInterfaceType(value: String): Self = StObject.set(x, "InterfaceType", value.asInstanceOf[js.Any])
     
     inline def setInterfaceTypeUndefined: Self = StObject.set(x, "InterfaceType", js.undefined)
+    
+    inline def setIpv4PrefixCount(value: Integer): Self = StObject.set(x, "Ipv4PrefixCount", value.asInstanceOf[js.Any])
+    
+    inline def setIpv4PrefixCountUndefined: Self = StObject.set(x, "Ipv4PrefixCount", js.undefined)
+    
+    inline def setIpv4Prefixes(value: Ipv4PrefixList): Self = StObject.set(x, "Ipv4Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setIpv4PrefixesUndefined: Self = StObject.set(x, "Ipv4Prefixes", js.undefined)
+    
+    inline def setIpv4PrefixesVarargs(value: Ipv4PrefixSpecificationRequest*): Self = StObject.set(x, "Ipv4Prefixes", js.Array(value*))
     
     inline def setIpv6AddressCount(value: Integer): Self = StObject.set(x, "Ipv6AddressCount", value.asInstanceOf[js.Any])
     
@@ -128,13 +158,23 @@ object InstanceNetworkInterfaceSpecification {
     
     inline def setIpv6AddressesUndefined: Self = StObject.set(x, "Ipv6Addresses", js.undefined)
     
-    inline def setIpv6AddressesVarargs(value: InstanceIpv6Address*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value :_*))
+    inline def setIpv6AddressesVarargs(value: InstanceIpv6Address*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value*))
+    
+    inline def setIpv6PrefixCount(value: Integer): Self = StObject.set(x, "Ipv6PrefixCount", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6PrefixCountUndefined: Self = StObject.set(x, "Ipv6PrefixCount", js.undefined)
+    
+    inline def setIpv6Prefixes(value: Ipv6PrefixList): Self = StObject.set(x, "Ipv6Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6PrefixesUndefined: Self = StObject.set(x, "Ipv6Prefixes", js.undefined)
+    
+    inline def setIpv6PrefixesVarargs(value: Ipv6PrefixSpecificationRequest*): Self = StObject.set(x, "Ipv6Prefixes", js.Array(value*))
     
     inline def setNetworkCardIndex(value: Integer): Self = StObject.set(x, "NetworkCardIndex", value.asInstanceOf[js.Any])
     
     inline def setNetworkCardIndexUndefined: Self = StObject.set(x, "NetworkCardIndex", js.undefined)
     
-    inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
     
@@ -146,7 +186,7 @@ object InstanceNetworkInterfaceSpecification {
     
     inline def setPrivateIpAddressesUndefined: Self = StObject.set(x, "PrivateIpAddresses", js.undefined)
     
-    inline def setPrivateIpAddressesVarargs(value: PrivateIpAddressSpecification*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value :_*))
+    inline def setPrivateIpAddressesVarargs(value: PrivateIpAddressSpecification*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value*))
     
     inline def setSecondaryPrivateIpAddressCount(value: Integer): Self = StObject.set(x, "SecondaryPrivateIpAddressCount", value.asInstanceOf[js.Any])
     

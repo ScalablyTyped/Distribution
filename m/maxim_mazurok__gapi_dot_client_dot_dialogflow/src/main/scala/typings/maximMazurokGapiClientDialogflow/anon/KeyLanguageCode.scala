@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDialogflow.anon
 
+import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,28 +23,23 @@ trait KeyLanguageCode extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Optional. The resource view to apply to the returned intent. */
-  var intentView: js.UndefOr[String] = js.undefined
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity
-    * data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
+    * The language of the following fields in `page`: * `Page.entry_fulfillment.messages` * `Page.entry_fulfillment.conditional_cases` *
+    * `Page.event_handlers.trigger_fulfillment.messages` * `Page.event_handlers.trigger_fulfillment.conditional_cases` *
+    * `Page.form.parameters.fill_behavior.initial_prompt_fulfillment.messages` * `Page.form.parameters.fill_behavior.initial_prompt_fulfillment.conditional_cases` *
+    * `Page.form.parameters.fill_behavior.reprompt_event_handlers.messages` * `Page.form.parameters.fill_behavior.reprompt_event_handlers.conditional_cases` *
+    * `Page.transition_routes.trigger_fulfillment.messages` * `Page.transition_routes.trigger_fulfillment.conditional_cases` If not specified, the agent's default language is used.
+    * [Many languages](https://cloud.google.com/dialogflow/cx/docs/reference/language) are supported. Note: languages must be enabled in the agent before they can be used.
     */
   var languageCode: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Optional. The maximum number of items to return in a single page. By default 100 and at most 1000. */
-  var pageSize: js.UndefOr[Double] = js.undefined
-  
-  /** Optional. The next_page_token value returned from a previous list request. */
-  var pageToken: js.UndefOr[String] = js.undefined
-  
-  /** Required. The agent to list all intents from. Format: `projects//agent`. */
+  /** Required. The flow to create a page for. Format: `projects//locations//agents//flows/`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -51,6 +47,9 @@ trait KeyLanguageCode extends StObject {
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: GoogleCloudDialogflowCxV3Page
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -60,8 +59,8 @@ trait KeyLanguageCode extends StObject {
 }
 object KeyLanguageCode {
   
-  inline def apply(parent: String): KeyLanguageCode = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(parent: String, resource: GoogleCloudDialogflowCxV3Page): KeyLanguageCode = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyLanguageCode]
   }
   
@@ -87,10 +86,6 @@ object KeyLanguageCode {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setIntentView(value: String): Self = StObject.set(x, "intentView", value.asInstanceOf[js.Any])
-    
-    inline def setIntentViewUndefined: Self = StObject.set(x, "intentView", js.undefined)
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -103,14 +98,6 @@ object KeyLanguageCode {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
-    
-    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
-    
-    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
-    
-    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
-    
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
@@ -120,6 +107,8 @@ object KeyLanguageCode {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: GoogleCloudDialogflowCxV3Page): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

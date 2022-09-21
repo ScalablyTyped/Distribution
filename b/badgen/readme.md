@@ -1,7 +1,7 @@
 
 # Scala.js typings for badgen
 
-Typings are for version 2.6
+Typings are for version 3.2.2
 
 ## Library description:
 Fast svg badge generator.
@@ -10,10 +10,10 @@ Fast svg badge generator.
 | ------------------ | :-------------: |
 | Full name          | badgen |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 2 |
-| # downloads        | 15681 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 44664.666666666664 |
+| # stars            | 490.0 |
 
 ## Links
 - [Homepage](https://github.com/amio/badgen#readme)
@@ -24,7 +24,7 @@ Fast svg badge generator.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

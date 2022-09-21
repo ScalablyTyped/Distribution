@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "leap-year" : "3.0.0"
+      "leap-year" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "leap-year" : "3.0.0"
+      "leap-year" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

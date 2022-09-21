@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@achingbrain/nat-port-mapper" : "1.0.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@achingbrain/nat-port-mapper" : "1.0.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

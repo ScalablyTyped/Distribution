@@ -25,10 +25,10 @@ object Bridge {
     
     inline def setLights(value: js.Array[String]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     
-    inline def setLightsVarargs(value: String*): Self = StObject.set(x, "lights", js.Array(value :_*))
+    inline def setLightsVarargs(value: String*): Self = StObject.set(x, "lights", js.Array(value*))
     
     inline def setSensors(value: js.Array[String]): Self = StObject.set(x, "sensors", value.asInstanceOf[js.Any])
     
-    inline def setSensorsVarargs(value: String*): Self = StObject.set(x, "sensors", js.Array(value :_*))
+    inline def setSensorsVarargs(value: String*): Self = StObject.set(x, "sensors", js.Array(value*))
   }
 }

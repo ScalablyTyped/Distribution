@@ -21,19 +21,19 @@ object global {
     
     @JSGlobal("morris.DonutChart")
     @js.native
-    class DonutChart ()
+    open class DonutChart ()
       extends StObject
          with typings.morrisJs.morris.DonutChart
     
     @JSGlobal("morris.GridChart")
     @js.native
-    class GridChart ()
+    open class GridChart ()
       extends StObject
          with typings.morrisJs.morris.GridChart
     
     @JSGlobal("morris.MorrisStatic")
     @js.native
-    class MorrisStatic ()
+    open class MorrisStatic ()
       extends StObject
          with typings.morrisJs.morris.MorrisStatic {
       

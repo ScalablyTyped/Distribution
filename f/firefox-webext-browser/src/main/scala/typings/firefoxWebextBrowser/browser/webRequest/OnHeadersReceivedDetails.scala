@@ -112,7 +112,7 @@ object OnHeadersReceivedDetails {
     
     inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    inline def setResponseHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
     
     inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

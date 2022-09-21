@@ -1,6 +1,5 @@
 package typings.swaggerHapi
 
-import typings.std.Error
 import typings.swaggerNodeRunner.mod.Config
 import typings.swaggerNodeRunner.mod.HapiMiddleware
 import org.scalablytyped.runtime.StObject
@@ -15,6 +14,6 @@ object mod {
   
   inline def create(
     config: Config,
-    cb: js.Function2[/* err */ js.UndefOr[Error], /* middleware */ HapiMiddleware, Unit]
+    cb: js.Function2[/* err */ js.UndefOr[js.Error], /* middleware */ HapiMiddleware, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

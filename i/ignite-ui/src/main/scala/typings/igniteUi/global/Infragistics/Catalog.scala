@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.Catalog")
 @js.native
-class Catalog ()
+open class Catalog ()
   extends StObject
      with typings.igniteUi.Infragistics.Catalog {
   

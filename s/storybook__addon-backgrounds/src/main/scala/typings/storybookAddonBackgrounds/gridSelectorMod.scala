@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object gridSelectorMod {
   
-  @JSImport("@storybook/addon-backgrounds/dist/containers/GridSelector", "GridSelector")
+  @JSImport("@storybook/addon-backgrounds/dist/ts3.9/containers/GridSelector", "GridSelector")
   @js.native
   val GridSelector: FunctionComponent[js.Object] = js.native
 }

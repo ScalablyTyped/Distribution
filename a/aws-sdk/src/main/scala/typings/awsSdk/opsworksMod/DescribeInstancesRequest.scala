@@ -34,7 +34,7 @@ object DescribeInstancesRequest {
     
     inline def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
-    inline def setInstanceIdsVarargs(value: String*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: String*): Self = StObject.set(x, "InstanceIds", js.Array(value*))
     
     inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
     

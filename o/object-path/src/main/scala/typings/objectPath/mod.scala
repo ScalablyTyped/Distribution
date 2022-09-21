@@ -34,13 +34,13 @@ object mod {
   /**
     * Deletes a member from object or array
     */
-  inline def del(`object`: js.Object, path: Path): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def del(`object`: js.Object, path: Path): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Empty a path. Arrays are set to length 0, objects have all elements deleted, strings
     * are set to empty, numbers to 0, everything else is set to null
     */
-  inline def empty(`object`: js.Object, path: Path): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("empty")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def empty(`object`: js.Object, path: Path): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("empty")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def ensureExists[TResult](`object`: js.Object, path: Path): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExists")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
   inline def ensureExists[TResult](`object`: js.Object, path: Path, defaultValue: TResult): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExists")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
@@ -53,7 +53,7 @@ object mod {
   /**
     * Get a path from an object
     */
-  inline def get(`object`: js.Object, path: Path): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(`object`: js.Object, path: Path): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def get[TResult](`object`: js.Object, path: Path, defaultValue: TResult): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TResult]
   
   /**
@@ -64,13 +64,13 @@ object mod {
   /**
     * Insert an item in an array path
     */
-  inline def insert(`object`: js.Object, path: Path, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def insert(`object`: js.Object, path: Path, value: js.Any, at: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], at.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insert(`object`: js.Object, path: Path, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insert(`object`: js.Object, path: Path, value: Any, at: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], at.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create (if path isn't an array) and push the value to it. Can push unlimited number of values
     */
-  inline def push(`object`: js.Object, path: Path, items: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def push(`object`: js.Object, path: Path, items: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("push")((List(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   /**
     * Set a path to a value
@@ -106,12 +106,12 @@ object mod {
     /**
       * @see objectPath.del
       */
-    def del(path: Path): StringDictionary[js.Any] = js.native
+    def del(path: Path): StringDictionary[Any] = js.native
     
     /**
       * @see objectPath.empty
       */
-    def empty(path: Path): js.Any = js.native
+    def empty(path: Path): Any = js.native
     
     def ensureExists[TResult](path: Path): js.UndefOr[TResult] = js.native
     def ensureExists[TResult](path: Path, defaultValue: TResult): js.UndefOr[TResult] = js.native
@@ -124,7 +124,7 @@ object mod {
     /**
       * @see objectPath.get
       */
-    def get(path: Path): js.Any = js.native
+    def get(path: Path): Any = js.native
     def get[TResult](path: Path, defaultValue: TResult): TResult = js.native
     
     /**
@@ -135,13 +135,13 @@ object mod {
     /**
       * @see objectPath.insert
       */
-    def insert(path: Path, value: js.Any): Unit = js.native
-    def insert(path: Path, value: js.Any, at: Double): Unit = js.native
+    def insert(path: Path, value: Any): Unit = js.native
+    def insert(path: Path, value: Any, at: Double): Unit = js.native
     
     /**
       * @see objectPath.push
       */
-    def push(path: Path, items: js.Any*): Unit = js.native
+    def push(path: Path, items: Any*): Unit = js.native
     
     /**
       * @see objectPath.set
@@ -173,13 +173,13 @@ object mod {
     /**
       * Deletes a member from object or array
       */
-    def del(`object`: js.Object, path: Path): StringDictionary[js.Any] = js.native
+    def del(`object`: js.Object, path: Path): StringDictionary[Any] = js.native
     
     /**
       * Empty a path. Arrays are set to length 0, objects have all elements deleted, strings
       * are set to empty, numbers to 0, everything else is set to null
       */
-    def empty(`object`: js.Object, path: Path): js.Any = js.native
+    def empty(`object`: js.Object, path: Path): Any = js.native
     
     def ensureExists[TResult](`object`: js.Object, path: Path): js.UndefOr[TResult] = js.native
     def ensureExists[TResult](`object`: js.Object, path: Path, defaultValue: TResult): js.UndefOr[TResult] = js.native
@@ -192,7 +192,7 @@ object mod {
     /**
       * Get a path from an object
       */
-    def get(`object`: js.Object, path: Path): js.Any = js.native
+    def get(`object`: js.Object, path: Path): Any = js.native
     def get[TResult](`object`: js.Object, path: Path, defaultValue: TResult): TResult = js.native
     
     /**
@@ -203,13 +203,13 @@ object mod {
     /**
       * Insert an item in an array path
       */
-    def insert(`object`: js.Object, path: Path, value: js.Any): Unit = js.native
-    def insert(`object`: js.Object, path: Path, value: js.Any, at: Double): Unit = js.native
+    def insert(`object`: js.Object, path: Path, value: Any): Unit = js.native
+    def insert(`object`: js.Object, path: Path, value: Any, at: Double): Unit = js.native
     
     /**
       * Create (if path isn't an array) and push the value to it. Can push unlimited number of values
       */
-    def push(`object`: js.Object, path: Path, items: js.Any*): Unit = js.native
+    def push(`object`: js.Object, path: Path, items: Any*): Unit = js.native
     
     /**
       * Set a path to a value

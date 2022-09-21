@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-progress
 
-Typings are for version 0.4.2
+Typings are for version 0.6.0
 
 ## Library description:
 Create a promise that reports progress
@@ -10,10 +10,10 @@ Create a promise that reports progress
 | ------------------ | :-------------: |
 | Full name          | p-progress |
 | Keywords           | promise, progress, events, event, async, function, await, promises, bluebird |
-| # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 7497 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 870.3333333333334 |
+| # stars            | 747.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-progress#readme)

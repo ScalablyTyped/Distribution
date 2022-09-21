@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Cherrypick")
 @js.native
-class Cherrypick ()
+open class Cherrypick ()
   extends typings.nodegit.cherryPickMod.Cherrypick
 /* static members */
 object Cherrypick {

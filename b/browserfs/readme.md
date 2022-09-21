@@ -10,10 +10,10 @@ A filesystem in your browser!
 | ------------------ | :-------------: |
 | Full name          | browserfs |
 | Keywords           | filesystem, node, storage |
-| # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 242245 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 23070.333333333332 |
+| # stars            | 2705.0 |
 
 ## Links
 - [Homepage](https://github.com/jvilk/BrowserFS)

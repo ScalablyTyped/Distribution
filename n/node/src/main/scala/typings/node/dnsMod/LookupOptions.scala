@@ -12,6 +12,9 @@ trait LookupOptions extends StObject {
   
   var hints: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @default true
+    */
   var verbatim: js.UndefOr[Boolean] = js.undefined
 }
 object LookupOptions {

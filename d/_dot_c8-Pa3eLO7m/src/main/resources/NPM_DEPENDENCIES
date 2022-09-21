@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".c8-Pa3eLO7m" : "7.11.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".c8-Pa3eLO7m" : "7.11.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

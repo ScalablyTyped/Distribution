@@ -1,7 +1,7 @@
 
 # Scala.js typings for algoliasearch
 
-Typings are for version 4.8.0
+Typings are for version 4.14.2
 
 ## Library description:
 A fully-featured and blazing-fast JavaScript API client to interact with Algolia API.
@@ -10,10 +10,10 @@ A fully-featured and blazing-fast JavaScript API client to interact with Algolia
 | ------------------ | :-------------: |
 | Full name          | algoliasearch |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 262 |
-| # downloads        | 24007445 |
-| # stars            | 9 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 3987384.6666666665 |
+| # stars            | 1145.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-javascript#readme)

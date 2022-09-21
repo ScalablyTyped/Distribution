@@ -8,5 +8,5 @@ object getPolicyOutputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/GetPolicyOutput", "GetPolicyOutput")
   @js.native
-  val GetPolicyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetPolicyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

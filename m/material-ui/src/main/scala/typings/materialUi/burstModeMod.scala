@@ -10,10 +10,10 @@ object burstModeMod {
   
   @JSImport("material-ui/svg-icons/image/burst-mode", JSImport.Default)
   @js.native
-  class default () extends ImageBurstMode
+  open class default () extends ImageBurstMode
   
   @JSImport("material-ui/svg-icons/image/burst-mode", "ImageBurstMode")
   @js.native
-  class ImageBurstMode ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageBurstMode ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

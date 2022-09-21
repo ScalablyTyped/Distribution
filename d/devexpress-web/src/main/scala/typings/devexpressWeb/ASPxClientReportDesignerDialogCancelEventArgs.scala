@@ -18,7 +18,7 @@ trait ASPxClientReportDesignerDialogCancelEventArgs
 }
 object ASPxClientReportDesignerDialogCancelEventArgs {
   
-  inline def apply(Cancel: Boolean, Report: js.Any, Url: String): ASPxClientReportDesignerDialogCancelEventArgs = {
+  inline def apply(Cancel: Boolean, Report: Any, Url: String): ASPxClientReportDesignerDialogCancelEventArgs = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Report = Report.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerDialogCancelEventArgs]
   }

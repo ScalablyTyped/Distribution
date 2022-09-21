@@ -17,7 +17,7 @@ trait OAuth2Configuration extends StObject {
   /**
     * Fake Access Token Response. Should contain the patient property to set the patient context.
     */
-  var fake_token_response: js.UndefOr[js.Any] = js.undefined
+  var fake_token_response: js.UndefOr[Any] = js.undefined
   
   /**
     * OAuth2 Provider information. If provided during the Authorize call, the library skips the conformance statement introspection
@@ -47,7 +47,7 @@ object OAuth2Configuration {
     
     inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    inline def setFake_token_response(value: js.Any): Self = StObject.set(x, "fake_token_response", value.asInstanceOf[js.Any])
+    inline def setFake_token_response(value: Any): Self = StObject.set(x, "fake_token_response", value.asInstanceOf[js.Any])
     
     inline def setFake_token_responseUndefined: Self = StObject.set(x, "fake_token_response", js.undefined)
     

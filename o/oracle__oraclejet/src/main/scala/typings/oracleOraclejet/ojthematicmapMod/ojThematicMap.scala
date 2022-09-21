@@ -100,74 +100,74 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
   
   def addEventListener(
     `type`: animationOnDisplayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: animationOnDisplayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: highlightMatchChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: highlightMatchChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: hoverBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: hoverBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: initialZoomingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: initialZoomingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: labelDisplayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | auto], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | auto], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: labelDisplayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | auto], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | auto], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: labelTypeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[long | short], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[long | short], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: labelTypeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[long | short], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[long | short], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: markerZoomBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[zoom | fixed], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[zoom | fixed], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: markerZoomBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[zoom | fixed], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[zoom | fixed], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: panningChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: panningChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
@@ -175,7 +175,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[single | multiple | none], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -183,7 +183,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[single | multiple | none], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -192,7 +192,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -200,37 +200,37 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: touchResponseChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: touchResponseChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: zoomingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: zoomingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_animationDurationChanged(
     `type`: animationDurationChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_animationDurationChanged(
     `type`: animationDurationChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -239,7 +239,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -248,19 +248,19 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_asChanged(
     `type`: asChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_asChanged(
     `type`: asChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -271,7 +271,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -282,30 +282,30 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hiddenCategoriesChanged(
     `type`: hiddenCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hiddenCategoriesChanged(
     `type`: hiddenCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_highlightedCategoriesChanged(
     `type`: highlightedCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_highlightedCategoriesChanged(
     `type`: highlightedCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -316,7 +316,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -327,19 +327,19 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_isolatedItemChanged(
     `type`: isolatedItemChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K1], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K1], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_isolatedItemChanged(
     `type`: isolatedItemChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K1], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[K1], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -348,7 +348,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -357,19 +357,19 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mapProviderChanged(
     `type`: mapProviderChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Geo], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Geo], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mapProviderChanged(
     `type`: mapProviderChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Geo], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Geo], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -378,7 +378,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K3, D3]) | Null], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -387,19 +387,19 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K3, D3]) | Null], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxZoomChanged(
     `type`: maxZoomChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxZoomChanged(
     `type`: maxZoomChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -410,7 +410,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -421,27 +421,19 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionChanged(
     `type`: selectionChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.Array[K1 | K2 | K3]], 
-      js.Any
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K1 | K2 | K3]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionChanged(
     `type`: selectionChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[js.Array[K1 | K2 | K3]], 
-      js.Any
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K1 | K2 | K3]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -452,7 +444,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -463,19 +455,19 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AreaSvgStyle], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AreaSvgStyle], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AreaSvgStyle], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AreaSvgStyle], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -484,7 +476,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[`27`[K1, K2, K3, D1, D2, D3]], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -493,7 +485,7 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[`27`[K1, K2, K3, D1, D2, D3]], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -603,86 +595,86 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
   
   var maxZoom: Double = js.native
   
-  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
+  var onAnimationDurationChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], Any]) | Null = js.native
   
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], Any]) | Null = js.native
   
-  var onAreaDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], js.Any]) | Null = js.native
+  var onAreaDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], Any]) | Null = js.native
   
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], Any]) | Null = js.native
   
   var onFocusRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], js.Any]) | Null = js.native
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], Any]) | Null = js.native
   
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], js.Any]) | Null = js.native
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], Any]) | Null = js.native
   
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], js.Any]) | Null = js.native
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], Any]) | Null = js.native
   
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], js.Any]) | Null = js.native
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], Any]) | Null = js.native
   
   var onHoverRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onInitialZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
+  var onInitialZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], Any]) | Null = js.native
   
-  var onIsolatedItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K1], js.Any]) | Null = js.native
+  var onIsolatedItemChanged: (js.Function1[/* event */ JetElementCustomEvent[K1], Any]) | Null = js.native
   
-  var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | auto], js.Any]) | Null = js.native
+  var onLabelDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | auto], Any]) | Null = js.native
   
-  var onLabelTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[long | short], js.Any]) | Null = js.native
+  var onLabelTypeChanged: (js.Function1[/* event */ JetElementCustomEvent[long | short], Any]) | Null = js.native
   
-  var onLinkDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], js.Any]) | Null = js.native
+  var onLinkDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], Any]) | Null = js.native
   
-  var onMapProviderChanged: (js.Function1[/* event */ JetElementCustomEvent[Geo], js.Any]) | Null = js.native
+  var onMapProviderChanged: (js.Function1[/* event */ JetElementCustomEvent[Geo], Any]) | Null = js.native
   
-  var onMarkerDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K3, D3]) | Null], js.Any]) | Null = js.native
+  var onMarkerDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K3, D3]) | Null], Any]) | Null = js.native
   
-  var onMarkerZoomBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[zoom | fixed], js.Any]) | Null = js.native
+  var onMarkerZoomBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[zoom | fixed], Any]) | Null = js.native
   
-  var onMaxZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
+  var onMaxZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], Any]) | Null = js.native
   
-  var onPanningChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
+  var onPanningChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], Any]) | Null = js.native
   
   var onRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K1 | K2 | K3]], js.Any]) | Null = js.native
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K1 | K2 | K3]], Any]) | Null = js.native
   
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], js.Any]) | Null = js.native
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], Any]) | Null = js.native
   
   var onSelectionRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AreaSvgStyle], js.Any]) | Null = js.native
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AreaSvgStyle], Any]) | Null = js.native
   
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`27`[K1, K2, K3, D1, D2, D3]], js.Any]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`27`[K1, K2, K3, D1, D2, D3]], Any]) | Null = js.native
   
   var onTooltipDisplayChanged: (js.Function1[
     /* event */ JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], js.Any]) | Null = js.native
+  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], Any]) | Null = js.native
   
-  var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
+  var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], Any]) | Null = js.native
   
   var panning: auto | none = js.native
   
@@ -696,34 +688,18 @@ trait ojThematicMap[K1, K2, K3, D1, D2, D3]
   
   def setProperties(properties: ojThematicMapSettablePropertiesLenient[K1, K2, K3, D1, D2, D3]): Unit = js.native
   
-  def setProperty(property: animationOnDisplay, value: auto): Unit = js.native
-  def setProperty(property: animationOnDisplay, value: none): Unit = js.native
-  def setProperty(property: highlightMatch, value: all): Unit = js.native
-  def setProperty(property: highlightMatch, value: any): Unit = js.native
-  def setProperty(property: hoverBehavior, value: dim): Unit = js.native
-  def setProperty(property: hoverBehavior, value: none): Unit = js.native
-  def setProperty(property: initialZooming, value: auto): Unit = js.native
-  def setProperty(property: initialZooming, value: none): Unit = js.native
-  def setProperty(property: labelDisplay, value: auto): Unit = js.native
-  def setProperty(property: labelDisplay, value: off): Unit = js.native
-  def setProperty(property: labelDisplay, value: on): Unit = js.native
-  def setProperty(property: labelType, value: long): Unit = js.native
-  def setProperty(property: labelType, value: short): Unit = js.native
-  def setProperty(property: markerZoomBehavior, value: fixed): Unit = js.native
-  def setProperty(property: markerZoomBehavior, value: zoom): Unit = js.native
-  def setProperty(property: panning, value: auto): Unit = js.native
-  def setProperty(property: panning, value: none): Unit = js.native
-  def setProperty(property: selectionMode, value: multiple): Unit = js.native
-  def setProperty(property: selectionMode, value: none): Unit = js.native
-  def setProperty(property: selectionMode, value: single): Unit = js.native
-  def setProperty(property: tooltipDisplay, value: auto): Unit = js.native
-  def setProperty(property: tooltipDisplay, value: labelAndShortDesc): Unit = js.native
-  def setProperty(property: tooltipDisplay, value: none): Unit = js.native
-  def setProperty(property: tooltipDisplay, value: shortDesc): Unit = js.native
-  def setProperty(property: touchResponse, value: auto): Unit = js.native
-  def setProperty(property: touchResponse, value: touchStart): Unit = js.native
-  def setProperty(property: zooming, value: auto): Unit = js.native
-  def setProperty(property: zooming, value: none): Unit = js.native
+  def setProperty(property: animationOnDisplay, value: auto | none): Unit = js.native
+  def setProperty(property: highlightMatch, value: any | all): Unit = js.native
+  def setProperty(property: hoverBehavior, value: dim | none): Unit = js.native
+  def setProperty(property: initialZooming, value: auto | none): Unit = js.native
+  def setProperty(property: labelDisplay, value: on | off | auto): Unit = js.native
+  def setProperty(property: labelType, value: long | short): Unit = js.native
+  def setProperty(property: markerZoomBehavior, value: zoom | fixed): Unit = js.native
+  def setProperty(property: panning, value: auto | none): Unit = js.native
+  def setProperty(property: selectionMode, value: single | multiple | none): Unit = js.native
+  def setProperty(property: tooltipDisplay, value: auto | labelAndShortDesc | none | shortDesc): Unit = js.native
+  def setProperty(property: touchResponse, value: touchStart | auto): Unit = js.native
+  def setProperty(property: zooming, value: auto | none): Unit = js.native
   @JSName("setProperty")
   def setProperty_animationDuration(property: animationDuration, value: Double): Unit = js.native
   @JSName("setProperty")

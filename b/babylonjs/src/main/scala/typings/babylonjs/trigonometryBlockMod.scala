@@ -10,7 +10,7 @@ object trigonometryBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/trigonometryBlock", "TrigonometryBlock")
   @js.native
-  class TrigonometryBlock protected () extends NodeMaterialBlock {
+  open class TrigonometryBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new TrigonometryBlock
       * @param name defines the block name

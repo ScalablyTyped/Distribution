@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "Polygon")
 @js.native
-class Polygon () extends Geometry {
+open class Polygon () extends Geometry {
   
   def getArea(): Double = js.native
   

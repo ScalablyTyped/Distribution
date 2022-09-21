@@ -8,18 +8,18 @@ object Workflow {
   
   @JSGlobal("SP.Workflow.WorkflowAssociation")
   @js.native
-  class WorkflowAssociation ()
+  open class WorkflowAssociation ()
     extends StObject
        with typings.sharepoint.SP.Workflow.WorkflowAssociation
   
   @JSGlobal("SP.Workflow.WorkflowAssociationCreationInformation")
   @js.native
-  class WorkflowAssociationCreationInformation ()
+  open class WorkflowAssociationCreationInformation ()
     extends StObject
        with typings.sharepoint.SP.Workflow.WorkflowAssociationCreationInformation {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -28,7 +28,7 @@ object Workflow {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_contentTypeAssociationHistoryListName(): String = js.native
@@ -37,13 +37,13 @@ object Workflow {
     override def get_contentTypeAssociationTaskListName(): String = js.native
     
     /* CompleteClass */
-    override def get_historyList(): typings.sharepoint.SP.List[js.Any] = js.native
+    override def get_historyList(): typings.sharepoint.SP.List[Any] = js.native
     
     /* CompleteClass */
     override def get_name(): String = js.native
     
     /* CompleteClass */
-    override def get_taskList(): typings.sharepoint.SP.List[js.Any] = js.native
+    override def get_taskList(): typings.sharepoint.SP.List[Any] = js.native
     
     /* CompleteClass */
     override def get_template(): typings.sharepoint.SP.Workflow.WorkflowTemplate = js.native
@@ -58,13 +58,13 @@ object Workflow {
     override def set_contentTypeAssociationTaskListName(value: String): Unit = js.native
     
     /* CompleteClass */
-    override def set_historyList(value: typings.sharepoint.SP.List[js.Any]): Unit = js.native
+    override def set_historyList(value: typings.sharepoint.SP.List[Any]): Unit = js.native
     
     /* CompleteClass */
     override def set_name(value: String): Unit = js.native
     
     /* CompleteClass */
-    override def set_taskList(value: typings.sharepoint.SP.List[js.Any]): Unit = js.native
+    override def set_taskList(value: typings.sharepoint.SP.List[Any]): Unit = js.native
     
     /* CompleteClass */
     override def set_template(value: typings.sharepoint.SP.Workflow.WorkflowTemplate): Unit = js.native
@@ -78,7 +78,7 @@ object Workflow {
   
   @JSGlobal("SP.Workflow.WorkflowTemplate")
   @js.native
-  class WorkflowTemplate ()
+  open class WorkflowTemplate ()
     extends StObject
        with typings.sharepoint.SP.Workflow.WorkflowTemplate
 }

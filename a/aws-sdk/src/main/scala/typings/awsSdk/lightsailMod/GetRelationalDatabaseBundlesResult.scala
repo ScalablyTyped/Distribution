@@ -29,7 +29,7 @@ object GetRelationalDatabaseBundlesResult {
     
     inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    inline def setBundlesVarargs(value: RelationalDatabaseBundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: RelationalDatabaseBundle*): Self = StObject.set(x, "bundles", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

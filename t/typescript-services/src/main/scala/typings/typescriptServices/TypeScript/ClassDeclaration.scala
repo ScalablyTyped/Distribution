@@ -25,10 +25,10 @@ trait ClassDeclaration
 object ClassDeclaration {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
     _trailingTriviaWidth: Double,
     classElements: ISyntaxList2,
@@ -68,7 +68,7 @@ object ClassDeclaration {
     
     inline def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    inline def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setStructuralEquals(value: (ClassDeclaration, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     

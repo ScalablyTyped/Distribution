@@ -32,14 +32,14 @@ object NxPivotPage {
     
     inline def setQData(value: js.Array[NxPivotValuePoint]): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    inline def setQDataVarargs(value: NxPivotValuePoint*): Self = StObject.set(x, "qData", js.Array(value :_*))
+    inline def setQDataVarargs(value: NxPivotValuePoint*): Self = StObject.set(x, "qData", js.Array(value*))
     
     inline def setQLeft(value: js.Array[NxPivotDimensioncell]): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
     
-    inline def setQLeftVarargs(value: NxPivotDimensioncell*): Self = StObject.set(x, "qLeft", js.Array(value :_*))
+    inline def setQLeftVarargs(value: NxPivotDimensioncell*): Self = StObject.set(x, "qLeft", js.Array(value*))
     
     inline def setQTop(value: js.Array[NxPivotDimensioncell]): Self = StObject.set(x, "qTop", value.asInstanceOf[js.Any])
     
-    inline def setQTopVarargs(value: NxPivotDimensioncell*): Self = StObject.set(x, "qTop", js.Array(value :_*))
+    inline def setQTopVarargs(value: NxPivotDimensioncell*): Self = StObject.set(x, "qTop", js.Array(value*))
   }
 }

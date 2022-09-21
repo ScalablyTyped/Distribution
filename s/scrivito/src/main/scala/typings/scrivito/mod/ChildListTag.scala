@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "ChildListTag")
 @js.native
-class ChildListTag protected ()
-  extends Component[ChildListTag, js.Any, js.Any] {
-  def this(props: ChildListTag) = this()
+open class ChildListTag protected () extends Component[ChildListTagProps, Any, Any] {
+  def this(props: ChildListTagProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ChildListTag, context: js.Any) = this()
+  def this(props: ChildListTagProps, context: Any) = this()
 }

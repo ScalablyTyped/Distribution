@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PlayerFramework.TextTrackMode")
 @js.native
-class TextTrackMode ()
+open class TextTrackMode ()
   extends StObject
      with typings.playerframework.PlayerFramework.TextTrackMode
 object TextTrackMode {

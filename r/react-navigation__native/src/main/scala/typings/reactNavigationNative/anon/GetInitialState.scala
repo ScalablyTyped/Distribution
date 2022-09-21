@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetInitialState extends StObject {
   
-  def getInitialState(): js.Thenable[js.UndefOr[PartialPickReadonlykeystrHistory]]
+  def getInitialState(): js.Thenable[js.UndefOr[PartialOmitReadonlykeystrHistory]]
 }
 object GetInitialState {
   
-  inline def apply(getInitialState: () => js.Thenable[js.UndefOr[PartialPickReadonlykeystrHistory]]): GetInitialState = {
+  inline def apply(getInitialState: () => js.Thenable[js.UndefOr[PartialOmitReadonlykeystrHistory]]): GetInitialState = {
     val __obj = js.Dynamic.literal(getInitialState = js.Any.fromFunction0(getInitialState))
     __obj.asInstanceOf[GetInitialState]
   }
   
   extension [Self <: GetInitialState](x: Self) {
     
-    inline def setGetInitialState(value: () => js.Thenable[js.UndefOr[PartialPickReadonlykeystrHistory]]): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
+    inline def setGetInitialState(value: () => js.Thenable[js.UndefOr[PartialOmitReadonlykeystrHistory]]): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
   }
 }

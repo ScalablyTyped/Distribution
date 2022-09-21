@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "ParseOptions")
 @js.native
-class ParseOptions protected ()
+open class ParseOptions protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ParseOptions {
   def this(
@@ -16,10 +16,10 @@ class ParseOptions protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _allowAutomaticSemicolonInsertion: js.Any = js.native
+  var _allowAutomaticSemicolonInsertion: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _languageVersion: js.Any = js.native
+  var _languageVersion: Any = js.native
   
   /* CompleteClass */
   override def allowAutomaticSemicolonInsertion(): Boolean = js.native
@@ -28,5 +28,5 @@ class ParseOptions protected ()
   override def languageVersion(): typings.typescriptServices.TypeScript.LanguageVersion = js.native
   
   /* CompleteClass */
-  override def toJSON(key: js.Any): AllowAutomaticSemicolonInsertion = js.native
+  override def toJSON(key: Any): AllowAutomaticSemicolonInsertion = js.native
 }

@@ -11,7 +11,7 @@ trait ErrorListProps extends StObject {
   
   var errors: js.Array[AjvError]
   
-  var formContext: js.Any
+  var formContext: Any
   
   var schema: JSONSchema6
   
@@ -22,7 +22,7 @@ object ErrorListProps {
   inline def apply(
     errorSchema: FormValidation,
     errors: js.Array[AjvError],
-    formContext: js.Any,
+    formContext: Any,
     schema: JSONSchema6,
     uiSchema: UiSchema
   ): ErrorListProps = {
@@ -36,9 +36,9 @@ object ErrorListProps {
     
     inline def setErrors(value: js.Array[AjvError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value*))
     
-    inline def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+    inline def setFormContext(value: Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
     inline def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

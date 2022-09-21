@@ -9,7 +9,6 @@ import typings.formik.typesMod.FormikValues
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
-import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object withFormikMod {
   
   type ComponentDecorator[TOwnProps, TMergedProps] = js.Function1[/* component */ CompositeComponent[TMergedProps], ComponentType[TOwnProps]]
   
-  type CompositeComponent[P] = (ComponentClass[P, ComponentState]) | StatelessComponent[P]
+  type CompositeComponent[P] = (ComponentClass[P, ComponentState]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.StatelessComponent<P> */ Any)
   
   @js.native
   trait FormikBag[P, V]
@@ -60,7 +59,7 @@ object withFormikMod {
     /**
       * Map props to the form status
       */
-    var mapPropsToStatus: js.UndefOr[js.Function1[/* props */ Props, js.Any]] = js.undefined
+    var mapPropsToStatus: js.UndefOr[js.Function1[/* props */ Props, Any]] = js.undefined
     
     /**
       * Map props to the form touched state
@@ -82,13 +81,13 @@ object withFormikMod {
       * throws an error object where that object keys map to corresponding value.
       */
     var validate: js.UndefOr[
-        js.Function2[/* values */ Values, /* props */ Props, Unit | js.Object | js.Promise[js.Any]]
+        js.Function2[/* values */ Values, /* props */ Props, Unit | js.Object | js.Promise[Any]]
       ] = js.undefined
     
     /**
       * A Yup Schema or a function that returns a Yup schema
       */
-    var validationSchema: js.UndefOr[js.Any | (js.Function1[/* props */ Props, js.Any])] = js.undefined
+    var validationSchema: js.UndefOr[Any | (js.Function1[/* props */ Props, Any])] = js.undefined
   }
   object WithFormikConfig {
     
@@ -109,7 +108,7 @@ object withFormikMod {
       
       inline def setMapPropsToErrorsUndefined: Self = StObject.set(x, "mapPropsToErrors", js.undefined)
       
-      inline def setMapPropsToStatus(value: /* props */ Props => js.Any): Self = StObject.set(x, "mapPropsToStatus", js.Any.fromFunction1(value))
+      inline def setMapPropsToStatus(value: /* props */ Props => Any): Self = StObject.set(x, "mapPropsToStatus", js.Any.fromFunction1(value))
       
       inline def setMapPropsToStatusUndefined: Self = StObject.set(x, "mapPropsToStatus", js.undefined)
       
@@ -125,13 +124,13 @@ object withFormikMod {
       
       inline def setMapValuesToPayloadUndefined: Self = StObject.set(x, "mapValuesToPayload", js.undefined)
       
-      inline def setValidate(value: (/* values */ Values, /* props */ Props) => Unit | js.Object | js.Promise[js.Any]): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+      inline def setValidate(value: (/* values */ Values, /* props */ Props) => Unit | js.Object | js.Promise[Any]): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      inline def setValidationSchema(value: js.Any | (js.Function1[/* props */ Props, js.Any])): Self = StObject.set(x, "validationSchema", value.asInstanceOf[js.Any])
+      inline def setValidationSchema(value: Any | (js.Function1[/* props */ Props, Any])): Self = StObject.set(x, "validationSchema", value.asInstanceOf[js.Any])
       
-      inline def setValidationSchemaFunction1(value: /* props */ Props => js.Any): Self = StObject.set(x, "validationSchema", js.Any.fromFunction1(value))
+      inline def setValidationSchemaFunction1(value: /* props */ Props => Any): Self = StObject.set(x, "validationSchema", js.Any.fromFunction1(value))
       
       inline def setValidationSchemaUndefined: Self = StObject.set(x, "validationSchema", js.undefined)
     }

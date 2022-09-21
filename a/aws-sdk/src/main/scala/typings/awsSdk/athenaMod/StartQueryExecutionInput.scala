@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartQueryExecutionInput extends StObject {
   
   /**
-    * A unique case-sensitive string used to ensure the request to create the query is idempotent (executes only once). If another StartQueryExecution request is received, the same response is returned and another query is not created. If a parameter has changed, for example, the QueryString, an error is returned.  This token is listed as not required because AWS SDKs (for example the AWS SDK for Java) auto-generate the token for users. If you are not using the AWS SDK or the AWS CLI, you must provide this token or the action will fail. 
+    * A unique case-sensitive string used to ensure the request to create the query is idempotent (executes only once). If another StartQueryExecution request is received, the same response is returned and another query is not created. If a parameter has changed, for example, the QueryString, an error is returned.  This token is listed as not required because Amazon Web Services SDKs (for example the Amazon Web Services SDK for Java) auto-generate the token for users. If you are not using the Amazon Web Services SDK or the Amazon Web Services CLI, you must provide this token or the action will fail. 
     */
   var ClientRequestToken: js.UndefOr[IdempotencyToken] = js.undefined
+  
+  /**
+    * A list of values for the parameters in a query. The values are applied sequentially to the parameters in the query in the order in which the parameters occur.
+    */
+  var ExecutionParameters: js.UndefOr[typings.awsSdk.athenaMod.ExecutionParameters] = js.undefined
   
   /**
     * The database within which the query executes.
@@ -43,6 +48,12 @@ object StartQueryExecutionInput {
     inline def setClientRequestToken(value: IdempotencyToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    
+    inline def setExecutionParameters(value: ExecutionParameters): Self = StObject.set(x, "ExecutionParameters", value.asInstanceOf[js.Any])
+    
+    inline def setExecutionParametersUndefined: Self = StObject.set(x, "ExecutionParameters", js.undefined)
+    
+    inline def setExecutionParametersVarargs(value: ExecutionParameter*): Self = StObject.set(x, "ExecutionParameters", js.Array(value*))
     
     inline def setQueryExecutionContext(value: QueryExecutionContext): Self = StObject.set(x, "QueryExecutionContext", value.asInstanceOf[js.Any])
     

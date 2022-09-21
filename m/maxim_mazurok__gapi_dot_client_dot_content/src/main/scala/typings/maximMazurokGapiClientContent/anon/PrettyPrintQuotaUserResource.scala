@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersSetLineItemMetadataRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.CaptureOrderRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,13 +26,13 @@ trait PrettyPrintQuotaUserResource extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account that manages the order. This cannot be a multi-client account. */
+  /** Required. The ID of the account that manages the order. This cannot be a multi-client account. */
   var merchantId: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the order. */
+  /** Required. The ID of the Order. */
   var orderId: String
   
   /** Returns response with indentations and line breaks. */
@@ -42,7 +42,7 @@ trait PrettyPrintQuotaUserResource extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrdersSetLineItemMetadataRequest
+  var resource: CaptureOrderRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait PrettyPrintQuotaUserResource extends StObject {
 }
 object PrettyPrintQuotaUserResource {
   
-  inline def apply(merchantId: String, orderId: String, resource: OrdersSetLineItemMetadataRequest): PrettyPrintQuotaUserResource = {
+  inline def apply(merchantId: String, orderId: String, resource: CaptureOrderRequest): PrettyPrintQuotaUserResource = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], orderId = orderId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintQuotaUserResource]
   }
@@ -99,7 +99,7 @@ object PrettyPrintQuotaUserResource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrdersSetLineItemMetadataRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CaptureOrderRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

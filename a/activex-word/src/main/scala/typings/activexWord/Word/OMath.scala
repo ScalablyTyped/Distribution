@@ -34,7 +34,7 @@ trait OMath extends StObject {
   
   val NestingLevel: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val ParentArg: OMath
   
@@ -72,7 +72,7 @@ object OMath {
     Justification: WdOMathJc,
     Linearize: () => Unit,
     NestingLevel: Double,
-    Parent: js.Any,
+    Parent: Any,
     ParentArg: OMath,
     ParentCol: OMathMatCol,
     ParentFunction: OMathFunction,
@@ -118,7 +118,7 @@ object OMath {
     
     inline def setNestingLevel(value: Double): Self = StObject.set(x, "NestingLevel", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setParentArg(value: OMath): Self = StObject.set(x, "ParentArg", value.asInstanceOf[js.Any])
     

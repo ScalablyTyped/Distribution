@@ -18,6 +18,8 @@ trait LayerSearchSourceProperties
   /**
     * Indicates to only return results that match the search value exactly.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html#exactMatch)
     */
   var exactMatch: js.UndefOr[Boolean] = js.undefined
@@ -93,13 +95,13 @@ object LayerSearchSourceProperties {
     
     inline def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
     
-    inline def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
+    inline def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value*))
     
     inline def setSearchFields(value: js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
     
     inline def setSearchFieldsUndefined: Self = StObject.set(x, "searchFields", js.undefined)
     
-    inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
+    inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value*))
     
     inline def setSearchTemplate(value: String): Self = StObject.set(x, "searchTemplate", value.asInstanceOf[js.Any])
     

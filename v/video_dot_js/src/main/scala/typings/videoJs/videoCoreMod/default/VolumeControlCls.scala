@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("video.js/dist/alt/video.core", "default.VolumeControl")
 @js.native
-class VolumeControlCls protected ()
+open class VolumeControlCls protected ()
   extends StObject
      with VolumeControl {
   /**

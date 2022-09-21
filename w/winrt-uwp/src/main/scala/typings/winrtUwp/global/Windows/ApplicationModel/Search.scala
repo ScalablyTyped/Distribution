@@ -76,7 +76,7 @@ object Search {
     @JSGlobal("Windows.ApplicationModel.Search.Core.SearchSuggestionManager")
     @js.native
     /** Initializes a new instance of the SearchSuggestionManager class. */
-    class SearchSuggestionManager ()
+    open class SearchSuggestionManager ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Search.Core.SearchSuggestionManager
     
@@ -109,7 +109,7 @@ object Search {
   @JSGlobal("Windows.ApplicationModel.Search.LocalContentSuggestionSettings")
   @js.native
   /** Creates a new instance of the localContentSuggestionSettings class. */
-  class LocalContentSuggestionSettings ()
+  open class LocalContentSuggestionSettings ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.LocalContentSuggestionSettings {
     
@@ -300,7 +300,7 @@ object Search {
   /** Provides information about query text that the user enters through an Input Method Editor (IME). */
   @JSGlobal("Windows.ApplicationModel.Search.SearchQueryLinguisticDetails")
   @js.native
-  class SearchQueryLinguisticDetails protected ()
+  open class SearchQueryLinguisticDetails protected ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Search.SearchQueryLinguisticDetails {
     /**

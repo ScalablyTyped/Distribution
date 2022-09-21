@@ -10,10 +10,10 @@ object wrapTextMod {
   
   @JSImport("material-ui/svg-icons/editor/wrap-text", JSImport.Default)
   @js.native
-  class default () extends EditorWrapText
+  open class default () extends EditorWrapText
   
   @JSImport("material-ui/svg-icons/editor/wrap-text", "EditorWrapText")
   @js.native
-  class EditorWrapText ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorWrapText ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

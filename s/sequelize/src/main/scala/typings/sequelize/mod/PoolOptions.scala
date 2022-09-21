@@ -40,7 +40,7 @@ trait PoolOptions extends StObject {
     * A function that validates a connection. Called with client. The default function checks that client is an
     * object, and that its state is not disconnected.
     */
-  var validate: js.UndefOr[js.Function1[/* client */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var validate: js.UndefOr[js.Function1[/* client */ js.UndefOr[Any], Boolean]] = js.undefined
 }
 object PoolOptions {
   
@@ -71,7 +71,7 @@ object PoolOptions {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setValidate(value: /* client */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: /* client */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }

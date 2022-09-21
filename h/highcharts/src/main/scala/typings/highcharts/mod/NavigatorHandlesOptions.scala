@@ -31,7 +31,7 @@ trait NavigatorHandlesOptions extends StObject {
     * (Highstock, Gantt) The width for the handle border and the stripes
     * inside.
     */
-  var lineWidth: js.UndefOr[js.Object] = js.undefined
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) Array to define shapes of handles. 0-index for left,
@@ -77,7 +77,7 @@ object NavigatorHandlesOptions {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setLineWidth(value: js.Object): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
@@ -85,7 +85,7 @@ object NavigatorHandlesOptions {
     
     inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
     
-    inline def setSymbolsVarargs(value: String*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+    inline def setSymbolsVarargs(value: String*): Self = StObject.set(x, "symbols", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

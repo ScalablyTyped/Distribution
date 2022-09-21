@@ -37,7 +37,7 @@ object anon {
   @js.native
   trait Fn3 extends StObject {
     
-    def apply[A](xs: js.Any, f: js.Function2[/* key */ String, /* x */ A, js.Any]): Unit = js.native
+    def apply[A](xs: Any, f: js.Function2[/* key */ String, /* x */ A, Any]): Unit = js.native
   }
   
   @js.native
@@ -98,7 +98,7 @@ object anon {
   @js.native
   trait FnCallFnMe extends StObject {
     
-    def apply[F /* <: js.Function */](fn: F, me: js.Any): F = js.native
+    def apply[F /* <: js.Function */](fn: F, me: Any): F = js.native
   }
   
   @js.native

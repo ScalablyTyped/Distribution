@@ -9,7 +9,7 @@ object chainedTunnelMod {
   
   @JSImport("guacamole-client/lib/ChainedTunnel", "ChainedTunnel")
   @js.native
-  class ChainedTunnel protected () extends Tunnel {
+  open class ChainedTunnel protected () extends Tunnel {
     /**
       * @param tunnelChain The tunnels to use, in order of priority.
       */

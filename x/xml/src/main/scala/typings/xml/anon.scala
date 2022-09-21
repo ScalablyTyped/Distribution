@@ -95,26 +95,42 @@ object anon {
     }
   }
   
-  trait Indent extends StObject {
+  /* Inlined {  stream :true} & xml.xml.Option */
+  trait streamtrueOption extends StObject {
     
+    /**
+      * Add default xml declaration (default false)
+      */
+    var declaration: js.UndefOr[Boolean | Encoding] = js.undefined
+    
+    /**
+      * String used for tab, defaults to no tabs (compressed)
+      */
     var indent: js.UndefOr[String] = js.undefined
     
-    var stream: `true`
+    /**
+      * Return the result as a `stream` (default false)
+      */
+    var stream: `true` & js.UndefOr[Boolean]
   }
-  object Indent {
+  object streamtrueOption {
     
-    inline def apply(): Indent = {
-      val __obj = js.Dynamic.literal(stream = true)
-      __obj.asInstanceOf[Indent]
+    inline def apply(stream: `true` & js.UndefOr[Boolean]): streamtrueOption = {
+      val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[streamtrueOption]
     }
     
-    extension [Self <: Indent](x: Self) {
+    extension [Self <: streamtrueOption](x: Self) {
+      
+      inline def setDeclaration(value: Boolean | Encoding): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+      
+      inline def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
       
       inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
       inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      inline def setStream(value: `true`): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

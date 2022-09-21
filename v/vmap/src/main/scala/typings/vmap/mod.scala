@@ -19,7 +19,7 @@ object mod {
     */
   @JSImport("vmap", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with VMAP {
     def this(xml: Document) = this()
@@ -74,11 +74,11 @@ object mod {
       
       inline def setAdBreaks(value: js.Array[VMAPAdBreak]): Self = StObject.set(x, "adBreaks", value.asInstanceOf[js.Any])
       
-      inline def setAdBreaksVarargs(value: VMAPAdBreak*): Self = StObject.set(x, "adBreaks", js.Array(value :_*))
+      inline def setAdBreaksVarargs(value: VMAPAdBreak*): Self = StObject.set(x, "adBreaks", js.Array(value*))
       
       inline def setExtensions(value: js.Array[VMAPExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      inline def setExtensionsVarargs(value: VMAPExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: VMAPExtension*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -150,7 +150,7 @@ object mod {
     /**
       * Contains custom ad data
       */
-    var customData: js.Any
+    var customData: Any
     
     /**
       * Indicates whether the video player should honor the redirects within an ad response
@@ -172,7 +172,7 @@ object mod {
     inline def apply(
       adTagURI: String,
       allowMultipleAds: Boolean,
-      customData: js.Any,
+      customData: Any,
       followRedirects: Boolean,
       id: String,
       vastAdData: Element
@@ -187,7 +187,7 @@ object mod {
       
       inline def setAllowMultipleAds(value: Boolean): Self = StObject.set(x, "allowMultipleAds", value.asInstanceOf[js.Any])
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
       
@@ -205,32 +205,32 @@ object mod {
     /**
       * Object containing all this extension attributes and their name as the key
       */
-    var attribute: js.Any
+    var attribute: Any
     
     /**
       * Object containing all this extension children and their name as the key
       */
-    var children: js.Any
+    var children: Any
     
     /**
       * Object parsed from CDATA or as a fallback all of the text nodes of this extension concatenated
       */
-    var value: js.Any
+    var value: Any
   }
   object VMAPExtension {
     
-    inline def apply(attribute: js.Any, children: js.Any, value: js.Any): VMAPExtension = {
+    inline def apply(attribute: Any, children: Any, value: Any): VMAPExtension = {
       val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[VMAPExtension]
     }
     
     extension [Self <: VMAPExtension](x: Self) {
       
-      inline def setAttribute(value: js.Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

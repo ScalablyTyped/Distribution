@@ -14,7 +14,7 @@ object notifications extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-firebase", "notifications.Notification")
   @js.native
-  class Notification ()
+  open class Notification ()
     extends typings.reactNativeFirebase.mod.RNFirebase.notifications.Notification
   
   type _To = NotificationsModule

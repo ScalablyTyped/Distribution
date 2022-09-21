@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * This object represents the font attributes (font name, font size, color, etc.) for an object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.RangeFont")
 @js.native
-class RangeFont ()
+open class RangeFont ()
   extends StObject
      with typings.officeJsPreview.Excel.RangeFont {
   

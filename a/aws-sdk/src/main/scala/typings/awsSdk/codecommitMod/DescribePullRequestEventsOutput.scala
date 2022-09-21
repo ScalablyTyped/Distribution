@@ -31,6 +31,6 @@ object DescribePullRequestEventsOutput {
     
     inline def setPullRequestEvents(value: PullRequestEventList): Self = StObject.set(x, "pullRequestEvents", value.asInstanceOf[js.Any])
     
-    inline def setPullRequestEventsVarargs(value: PullRequestEvent*): Self = StObject.set(x, "pullRequestEvents", js.Array(value :_*))
+    inline def setPullRequestEventsVarargs(value: PullRequestEvent*): Self = StObject.set(x, "pullRequestEvents", js.Array(value*))
   }
 }

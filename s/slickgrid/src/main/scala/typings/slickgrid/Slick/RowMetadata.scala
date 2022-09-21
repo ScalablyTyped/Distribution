@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RowMetadata[T] extends StObject {
+trait RowMetadata[T /* <: SlickData */] extends StObject {
   
   /**
     * Metadata related to individual columns
@@ -38,12 +38,12 @@ trait RowMetadata[T] extends StObject {
 }
 object RowMetadata {
   
-  inline def apply[T](): RowMetadata[T] = {
+  inline def apply[T /* <: SlickData */](): RowMetadata[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowMetadata[T]]
   }
   
-  extension [Self <: RowMetadata[?], T](x: Self & RowMetadata[T]) {
+  extension [Self <: RowMetadata[?], T /* <: SlickData */](x: Self & RowMetadata[T]) {
     
     inline def setColumns(
       value: (/**

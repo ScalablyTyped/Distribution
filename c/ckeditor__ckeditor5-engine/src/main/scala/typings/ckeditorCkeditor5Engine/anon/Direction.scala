@@ -1,10 +1,7 @@
 package typings.ckeditorCkeditor5Engine.anon
 
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.backward
-import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.character
-import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.codePoint
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.forward
-import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +10,11 @@ trait Direction extends StObject {
   
   var direction: js.UndefOr[forward | backward] = js.undefined
   
-  var unit: js.UndefOr[character | codePoint | word] = js.undefined
+  var doNotAutoparagraph: js.UndefOr[Boolean] = js.undefined
+  
+  var doNotResetEntireContent: js.UndefOr[Boolean] = js.undefined
+  
+  var leaveUnmerged: js.UndefOr[Boolean] = js.undefined
 }
 object Direction {
   
@@ -28,8 +29,16 @@ object Direction {
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setUnit(value: character | codePoint | word): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setDoNotAutoparagraph(value: Boolean): Self = StObject.set(x, "doNotAutoparagraph", value.asInstanceOf[js.Any])
     
-    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setDoNotAutoparagraphUndefined: Self = StObject.set(x, "doNotAutoparagraph", js.undefined)
+    
+    inline def setDoNotResetEntireContent(value: Boolean): Self = StObject.set(x, "doNotResetEntireContent", value.asInstanceOf[js.Any])
+    
+    inline def setDoNotResetEntireContentUndefined: Self = StObject.set(x, "doNotResetEntireContent", js.undefined)
+    
+    inline def setLeaveUnmerged(value: Boolean): Self = StObject.set(x, "leaveUnmerged", value.asInstanceOf[js.Any])
+    
+    inline def setLeaveUnmergedUndefined: Self = StObject.set(x, "leaveUnmerged", js.undefined)
   }
 }

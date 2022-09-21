@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "TYFlatList")
 @js.native
-class TYFlatList[ItemT /* <: TYFlatListData */] protected ()
-  extends Component[TYFlatListProps[ItemT], js.Object, js.Any] {
+open class TYFlatList[ItemT /* <: TYFlatListData */] protected ()
+  extends Component[TYFlatListProps[ItemT], js.Object, Any] {
   def this(props: TYFlatListProps[ItemT]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TYFlatListProps[ItemT], context: js.Any) = this()
+  def this(props: TYFlatListProps[ItemT], context: Any) = this()
 }
 /* static members */
 object TYFlatList {

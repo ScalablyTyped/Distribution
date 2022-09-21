@@ -24,11 +24,11 @@ trait RenewalSummary extends StObject {
   /**
     * The time at which the renewal summary was last updated.
     */
-  var UpdatedAt: TStamp
+  var UpdatedAt: js.Date
 }
 object RenewalSummary {
   
-  inline def apply(DomainValidationOptions: DomainValidationList, RenewalStatus: RenewalStatus, UpdatedAt: TStamp): RenewalSummary = {
+  inline def apply(DomainValidationOptions: DomainValidationList, RenewalStatus: RenewalStatus, UpdatedAt: js.Date): RenewalSummary = {
     val __obj = js.Dynamic.literal(DomainValidationOptions = DomainValidationOptions.asInstanceOf[js.Any], RenewalStatus = RenewalStatus.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewalSummary]
   }
@@ -37,7 +37,7 @@ object RenewalSummary {
     
     inline def setDomainValidationOptions(value: DomainValidationList): Self = StObject.set(x, "DomainValidationOptions", value.asInstanceOf[js.Any])
     
-    inline def setDomainValidationOptionsVarargs(value: DomainValidation*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value :_*))
+    inline def setDomainValidationOptionsVarargs(value: DomainValidation*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value*))
     
     inline def setRenewalStatus(value: RenewalStatus): Self = StObject.set(x, "RenewalStatus", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object RenewalSummary {
     
     inline def setRenewalStatusReasonUndefined: Self = StObject.set(x, "RenewalStatusReason", js.undefined)
     
-    inline def setUpdatedAt(value: TStamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

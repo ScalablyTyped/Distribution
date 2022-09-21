@@ -13,7 +13,7 @@ trait StackCardInterpolationProps extends StObject {
   /**
     * Animated node representing whether the card is closing (1 - closing, 0 - not closing).
     */
-  var closing: AnimatedInterpolation
+  var closing: AnimatedInterpolation[Double | String]
   
   /**
     * Values for the current screen.
@@ -33,7 +33,7 @@ trait StackCardInterpolationProps extends StObject {
   /**
     * Animated node representing multiplier when direction is inverted (-1 - inverted, 1 - normal).
     */
-  var inverted: AnimatedInterpolation
+  var inverted: AnimatedInterpolation[Double | String]
   
   /**
     * Layout measurements for various items we use for animation.
@@ -49,18 +49,18 @@ trait StackCardInterpolationProps extends StObject {
   /**
     * Animated node representing whether the card is being swiped (1 - swiping, 0 - not swiping).
     */
-  var swiping: AnimatedInterpolation
+  var swiping: AnimatedInterpolation[Double | String]
 }
 object StackCardInterpolationProps {
   
   inline def apply(
-    closing: AnimatedInterpolation,
+    closing: AnimatedInterpolation[Double | String],
     current: Progress,
     index: Double,
     insets: Left,
-    inverted: AnimatedInterpolation,
+    inverted: AnimatedInterpolation[Double | String],
     layouts: Screen,
-    swiping: AnimatedInterpolation
+    swiping: AnimatedInterpolation[Double | String]
   ): StackCardInterpolationProps = {
     val __obj = js.Dynamic.literal(closing = closing.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], insets = insets.asInstanceOf[js.Any], inverted = inverted.asInstanceOf[js.Any], layouts = layouts.asInstanceOf[js.Any], swiping = swiping.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackCardInterpolationProps]
@@ -68,7 +68,7 @@ object StackCardInterpolationProps {
   
   extension [Self <: StackCardInterpolationProps](x: Self) {
     
-    inline def setClosing(value: AnimatedInterpolation): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
+    inline def setClosing(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
     
     inline def setCurrent(value: Progress): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object StackCardInterpolationProps {
     
     inline def setInsets(value: Left): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
     
-    inline def setInverted(value: AnimatedInterpolation): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+    inline def setInverted(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
     inline def setLayouts(value: Screen): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
     
@@ -84,6 +84,6 @@ object StackCardInterpolationProps {
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    inline def setSwiping(value: AnimatedInterpolation): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
+    inline def setSwiping(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
   }
 }

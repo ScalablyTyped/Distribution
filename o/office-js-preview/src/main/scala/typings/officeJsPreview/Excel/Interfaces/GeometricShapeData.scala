@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeometricShapeData extends StObject {
   
   /**
-    *
     * Returns the shape identifier.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[String] = js.undefined

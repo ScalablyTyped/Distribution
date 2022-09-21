@@ -2,7 +2,6 @@ package typings.fecha
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.fecha.anon.PartialI18nSettings
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,10 +23,10 @@ object mod {
     def defaultI18n: I18nSettings = js.native
     inline def defaultI18n_=(x: I18nSettings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultI18n")(x.asInstanceOf[js.Any])
     
-    inline def format(dateObj: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def format(dateObj: Date, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def format(dateObj: Date, mask: String, i18n: PartialI18nSettings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def format(dateObj: Date, mask: Unit, i18n: PartialI18nSettings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(dateObj: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format(dateObj: js.Date, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(dateObj: js.Date, mask: String, i18n: PartialI18nSettings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(dateObj: js.Date, mask: Unit, i18n: PartialI18nSettings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("fecha", "default.parse")
     @js.native
@@ -35,16 +34,16 @@ object mod {
         /* dateStr */ String, 
         /* format */ String, 
         /* i18n */ js.UndefOr[I18nSettingsOptional], 
-        Date | Null
+        js.Date | Null
       ] = js.native
-    inline def parse(dateStr: String, format: String): Date | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateStr.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Date | Null]
-    inline def parse(dateStr: String, format: String, i18n: I18nSettingsOptional): Date | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateStr.asInstanceOf[js.Any], format.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[Date | Null]
+    inline def parse(dateStr: String, format: String): js.Date | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateStr.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Date | Null]
+    inline def parse(dateStr: String, format: String, i18n: I18nSettingsOptional): js.Date | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateStr.asInstanceOf[js.Any], format.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[js.Date | Null]
     inline def parse_=(
       x: js.Function3[
           /* dateStr */ String, 
           /* format */ String, 
           /* i18n */ js.UndefOr[I18nSettingsOptional], 
-          Date | Null
+          js.Date | Null
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
     
@@ -69,10 +68,10 @@ object mod {
     * @param {string} mask Format of the date, i.e. 'mm-dd-yy' or 'shortDate'
     * @returns {string} Formatted date string
     */
-  inline def format(dateObj: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def format(dateObj: Date, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def format(dateObj: Date, mask: String, i18n: PartialI18nSettings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def format(dateObj: Date, mask: Unit, i18n: PartialI18nSettings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(dateObj: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(dateObj: js.Date, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(dateObj: js.Date, mask: String, i18n: I18nSettingsOptional): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(dateObj: js.Date, mask: Unit, i18n: I18nSettingsOptional): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Parse a date string into a Javascript Date object /
@@ -82,10 +81,10 @@ object mod {
     * @param {i18n} I18nSettingsOptional Full or subset of I18N settings
     * @returns {Date|null} Returns Date object. Returns null what date string is invalid or doesn't match format
     */
-  inline def parse(dateStr: String, format: String): Date | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateStr.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Date | Null]
-  inline def parse(dateStr: String, format: String, i18n: I18nSettingsOptional): Date | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateStr.asInstanceOf[js.Any], format.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[Date | Null]
+  inline def parse(dateStr: String, format: String): js.Date | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateStr.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Date | Null]
+  inline def parse(dateStr: String, format: String, i18n: I18nSettingsOptional): js.Date | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateStr.asInstanceOf[js.Any], format.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[js.Date | Null]
   
-  inline def setGlobalDateI18n(i18n: PartialI18nSettings): I18nSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalDateI18n")(i18n.asInstanceOf[js.Any]).asInstanceOf[I18nSettings]
+  inline def setGlobalDateI18n(i18n: I18nSettingsOptional): I18nSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalDateI18n")(i18n.asInstanceOf[js.Any]).asInstanceOf[I18nSettings]
   
   inline def setGlobalDateMasks(masks: StringDictionary[String]): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalDateMasks")(masks.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   

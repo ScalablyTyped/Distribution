@@ -10,10 +10,10 @@ Environment agnostic nextTick polyfill
 | ------------------ | :-------------: |
 | Full name          | next-tick |
 | Keywords           | nexttick, setImmediate, setTimeout, async |
-| # releases         | 2 |
-| # dependents       | 119 |
-| # downloads        | 432415872 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.9482204E7 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/medikoo/next-tick#readme)

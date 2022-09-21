@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RetrieveInventoryChangesRequest")
 @js.native
-class RetrieveInventoryChangesRequest () extends StObject {
+open class RetrieveInventoryChangesRequest () extends StObject {
   
   /**
     * A pagination cursor returned by a previous call to this endpoint.

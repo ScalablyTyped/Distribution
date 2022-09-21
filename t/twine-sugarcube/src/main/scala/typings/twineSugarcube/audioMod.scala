@@ -346,27 +346,27 @@ object audioMod {
       */
     def on(events: String): this.type = js.native
     def on(events: String, selector: String): this.type = js.native
-    def on(events: String, selector: String, data: js.Any): this.type = js.native
-    def on(events: String, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: String, selector: String, data: Any): this.type = js.native
+    def on(events: String, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(events: String, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
-    def on(events: String, selector: Unit, data: js.Any): this.type = js.native
-    def on(events: String, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: String, selector: Unit, data: Any): this.type = js.native
+    def on(events: String, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(events: String, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(events: js.Object): this.type = js.native
     def on(events: js.Object, selector: String): this.type = js.native
-    def on(events: js.Object, selector: String, data: js.Any): this.type = js.native
-    def on(events: js.Object, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: js.Object, selector: String, data: Any): this.type = js.native
+    def on(events: js.Object, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(events: js.Object, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
-    def on(events: js.Object, selector: Unit, data: js.Any): this.type = js.native
-    def on(events: js.Object, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: js.Object, selector: Unit, data: Any): this.type = js.native
+    def on(events: js.Object, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(events: js.Object, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(events: Event): this.type = js.native
     def on(events: Event, selector: String): this.type = js.native
-    def on(events: Event, selector: String, data: js.Any): this.type = js.native
-    def on(events: Event, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: Event, selector: String, data: Any): this.type = js.native
+    def on(events: Event, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(events: Event, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
-    def on(events: Event, selector: Unit, data: js.Any): this.type = js.native
-    def on(events: Event, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def on(events: Event, selector: Unit, data: Any): this.type = js.native
+    def on(events: Event, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def on(events: Event, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     
     /**
@@ -380,27 +380,27 @@ object audioMod {
       */
     def one(events: String): this.type = js.native
     def one(events: String, selector: String): this.type = js.native
-    def one(events: String, selector: String, data: js.Any): this.type = js.native
-    def one(events: String, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: String, selector: String, data: Any): this.type = js.native
+    def one(events: String, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def one(events: String, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
-    def one(events: String, selector: Unit, data: js.Any): this.type = js.native
-    def one(events: String, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: String, selector: Unit, data: Any): this.type = js.native
+    def one(events: String, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def one(events: String, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def one(events: js.Object): this.type = js.native
     def one(events: js.Object, selector: String): this.type = js.native
-    def one(events: js.Object, selector: String, data: js.Any): this.type = js.native
-    def one(events: js.Object, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: js.Object, selector: String, data: Any): this.type = js.native
+    def one(events: js.Object, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def one(events: js.Object, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
-    def one(events: js.Object, selector: Unit, data: js.Any): this.type = js.native
-    def one(events: js.Object, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: js.Object, selector: Unit, data: Any): this.type = js.native
+    def one(events: js.Object, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def one(events: js.Object, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def one(events: Event): this.type = js.native
     def one(events: Event, selector: String): this.type = js.native
-    def one(events: Event, selector: String, data: js.Any): this.type = js.native
-    def one(events: Event, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: Event, selector: String, data: Any): this.type = js.native
+    def one(events: Event, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def one(events: Event, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
-    def one(events: Event, selector: Unit, data: js.Any): this.type = js.native
-    def one(events: Event, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
+    def one(events: Event, selector: Unit, data: Any): this.type = js.native
+    def one(events: Event, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     def one(events: Event, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): this.type = js.native
     
     /**
@@ -683,27 +683,27 @@ object audioMod {
       */
     def on(events: String): AudioTrack = js.native
     def on(events: String, selector: String): AudioTrack = js.native
-    def on(events: String, selector: String, data: js.Any): AudioTrack = js.native
-    def on(events: String, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: String, selector: String, data: Any): AudioTrack = js.native
+    def on(events: String, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def on(events: String, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
-    def on(events: String, selector: Unit, data: js.Any): AudioTrack = js.native
-    def on(events: String, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: String, selector: Unit, data: Any): AudioTrack = js.native
+    def on(events: String, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def on(events: String, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def on(events: js.Object): AudioTrack = js.native
     def on(events: js.Object, selector: String): AudioTrack = js.native
-    def on(events: js.Object, selector: String, data: js.Any): AudioTrack = js.native
-    def on(events: js.Object, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: js.Object, selector: String, data: Any): AudioTrack = js.native
+    def on(events: js.Object, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def on(events: js.Object, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
-    def on(events: js.Object, selector: Unit, data: js.Any): AudioTrack = js.native
-    def on(events: js.Object, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: js.Object, selector: Unit, data: Any): AudioTrack = js.native
+    def on(events: js.Object, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def on(events: js.Object, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def on(events: Event): AudioTrack = js.native
     def on(events: Event, selector: String): AudioTrack = js.native
-    def on(events: Event, selector: String, data: js.Any): AudioTrack = js.native
-    def on(events: Event, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: Event, selector: String, data: Any): AudioTrack = js.native
+    def on(events: Event, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def on(events: Event, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
-    def on(events: Event, selector: Unit, data: js.Any): AudioTrack = js.native
-    def on(events: Event, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def on(events: Event, selector: Unit, data: Any): AudioTrack = js.native
+    def on(events: Event, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def on(events: Event, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     
     /**
@@ -717,27 +717,27 @@ object audioMod {
       */
     def one(events: String): AudioTrack = js.native
     def one(events: String, selector: String): AudioTrack = js.native
-    def one(events: String, selector: String, data: js.Any): AudioTrack = js.native
-    def one(events: String, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: String, selector: String, data: Any): AudioTrack = js.native
+    def one(events: String, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def one(events: String, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
-    def one(events: String, selector: Unit, data: js.Any): AudioTrack = js.native
-    def one(events: String, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: String, selector: Unit, data: Any): AudioTrack = js.native
+    def one(events: String, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def one(events: String, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def one(events: js.Object): AudioTrack = js.native
     def one(events: js.Object, selector: String): AudioTrack = js.native
-    def one(events: js.Object, selector: String, data: js.Any): AudioTrack = js.native
-    def one(events: js.Object, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: js.Object, selector: String, data: Any): AudioTrack = js.native
+    def one(events: js.Object, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def one(events: js.Object, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
-    def one(events: js.Object, selector: Unit, data: js.Any): AudioTrack = js.native
-    def one(events: js.Object, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: js.Object, selector: Unit, data: Any): AudioTrack = js.native
+    def one(events: js.Object, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def one(events: js.Object, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def one(events: Event): AudioTrack = js.native
     def one(events: Event, selector: String): AudioTrack = js.native
-    def one(events: Event, selector: String, data: js.Any): AudioTrack = js.native
-    def one(events: Event, selector: String, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: Event, selector: String, data: Any): AudioTrack = js.native
+    def one(events: Event, selector: String, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def one(events: Event, selector: String, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
-    def one(events: Event, selector: Unit, data: js.Any): AudioTrack = js.native
-    def one(events: Event, selector: Unit, data: js.Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
+    def one(events: Event, selector: Unit, data: Any): AudioTrack = js.native
+    def one(events: Event, selector: Unit, data: Any, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     def one(events: Event, selector: Unit, data: Unit, handler: js.Function1[/* event */ Event, Unit]): AudioTrack = js.native
     
     /**

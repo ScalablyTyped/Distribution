@@ -12,12 +12,12 @@ trait StartMatchBackfillInput extends StObject {
   var ConfigurationName: MatchmakingConfigurationName
   
   /**
-    * Amazon Resource Name (ARN) that is assigned to a game session and uniquely identifies it. This is the same as the game session ID.
+    * A unique identifier for the game session. Use the game session ID. When using FlexMatch as a standalone matchmaking solution, this parameter is not needed. 
     */
-  var GameSessionArn: ArnStringModel
+  var GameSessionArn: js.UndefOr[ArnStringModel] = js.undefined
   
   /**
-    * Match information on all players that are currently assigned to the game session. This information is used by the matchmaker to find new players and add them to the existing game.   PlayerID, PlayerAttributes, Team -\\- This information is maintained in the GameSession object, MatchmakerData property, for all players who are currently assigned to the game session. The matchmaker data is in JSON syntax, formatted as a string. For more details, see  Match Data.    LatencyInMs -\\- If the matchmaker uses player latency, include a latency value, in milliseconds, for the Region that the game session is currently in. Do not include latency values for any other Region.  
+    * Match information on all players that are currently assigned to the game session. This information is used by the matchmaker to find new players and add them to the existing game.   PlayerID, PlayerAttributes, Team -- This information is maintained in the GameSession object, MatchmakerData property, for all players who are currently assigned to the game session. The matchmaker data is in JSON syntax, formatted as a string. For more details, see  Match Data.  The backfill request must specify the team membership for every player. Do not specify team if you are not using backfill.   LatencyInMs -- If the matchmaker uses player latency, include a latency value, in milliseconds, for the Region that the game session is currently in. Do not include latency values for any other Region.  
     */
   var Players: PlayerList
   
@@ -28,12 +28,8 @@ trait StartMatchBackfillInput extends StObject {
 }
 object StartMatchBackfillInput {
   
-  inline def apply(
-    ConfigurationName: MatchmakingConfigurationName,
-    GameSessionArn: ArnStringModel,
-    Players: PlayerList
-  ): StartMatchBackfillInput = {
-    val __obj = js.Dynamic.literal(ConfigurationName = ConfigurationName.asInstanceOf[js.Any], GameSessionArn = GameSessionArn.asInstanceOf[js.Any], Players = Players.asInstanceOf[js.Any])
+  inline def apply(ConfigurationName: MatchmakingConfigurationName, Players: PlayerList): StartMatchBackfillInput = {
+    val __obj = js.Dynamic.literal(ConfigurationName = ConfigurationName.asInstanceOf[js.Any], Players = Players.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartMatchBackfillInput]
   }
   
@@ -43,9 +39,11 @@ object StartMatchBackfillInput {
     
     inline def setGameSessionArn(value: ArnStringModel): Self = StObject.set(x, "GameSessionArn", value.asInstanceOf[js.Any])
     
+    inline def setGameSessionArnUndefined: Self = StObject.set(x, "GameSessionArn", js.undefined)
+    
     inline def setPlayers(value: PlayerList): Self = StObject.set(x, "Players", value.asInstanceOf[js.Any])
     
-    inline def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value :_*))
+    inline def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value*))
     
     inline def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
     

@@ -47,13 +47,13 @@ object mod {
   
   inline def destroy(base: Transporter): js.Function0[ReadonlyPromisevoid] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadonlyPromisevoid]]
   
-  inline def encode(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def shuffle[TData](array: js.Array[TData]): js.Array[TData] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[TData]]
   
   @JSImport("@algolia/client-common", "version")
   @js.native
-  val version: /* "4.8.0" */ String = js.native
+  val version: /* "4.14.2" */ String = js.native
   
   type AddedMethods[TBase, TMethods /* <: Methods[TBase] */] = TBase & typings.algoliaClientCommon.algoliaClientCommonStrings.AddedMethods & TopLevel[TMethods]
   
@@ -114,13 +114,13 @@ object mod {
   
   type CreateClient[TClient, TOptions] = js.Function1[
     /* options */ TOptions & (typings.algoliaClientCommon.anon.Methods[
-      StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ js.Any, js.Any]]], 
+      StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ Any, Any]]], 
       TClient
     ]), 
-    TClient & typings.algoliaClientCommon.algoliaClientCommonStrings.CreateClient & TopLevel[js.Any]
+    TClient & typings.algoliaClientCommon.algoliaClientCommonStrings.CreateClient & TopLevel[Any]
   ]
   
-  type Methods[TBase] = StringDictionary[js.Function1[/* base */ TBase, js.Function1[/* repeated */ js.Any, js.Any]]]
+  type Methods[TBase] = StringDictionary[js.Function1[/* base */ TBase, js.Function1[/* repeated */ Any, Any]]]
   
   type Wait[TResponse] = js.Function2[
     /* response */ TResponse, 

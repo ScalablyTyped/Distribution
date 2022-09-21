@@ -10,10 +10,10 @@ Utility functions for gulp plugins
 | ------------------ | :-------------: |
 | Full name          | gulp-util |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 6137 |
-| # downloads        | 65384539 |
-| # stars            | 221 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4526290.333333333 |
+| # stars            | 837.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/gulp-util#readme)

@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("aurelia-logging", "Logger")
   @js.native
-  class Logger protected () extends StObject {
+  open class Logger protected () extends StObject {
     /**
       * You cannot instantiate the logger directly - you must use the getLogger method instead.
       */
@@ -25,7 +25,7 @@ object mod {
       * @param message The message to log.
       * @param rest The data to log.
       */
-    def debug(message: String, rest: js.Any*): Unit = js.native
+    def debug(message: String, rest: Any*): Unit = js.native
     
     /**
       * Logs an error.
@@ -33,7 +33,7 @@ object mod {
       * @param message The message to log.
       * @param rest The data to log.
       */
-    def error(message: String, rest: js.Any*): Unit = js.native
+    def error(message: String, rest: Any*): Unit = js.native
     
     /**
       * The id that the logger was created with.
@@ -46,7 +46,7 @@ object mod {
       * @param message The message to log.
       * @param rest The data to log.
       */
-    def info(message: String, rest: js.Any*): Unit = js.native
+    def info(message: String, rest: Any*): Unit = js.native
     
     /**
       * Returns if the logger is in debug mode or not.
@@ -71,7 +71,7 @@ object mod {
       * @param message The message to log.
       * @param rest The data to log.
       */
-    def warn(message: String, rest: js.Any*): Unit = js.native
+    def warn(message: String, rest: Any*): Unit = js.native
   }
   
   inline def addAppender(appender: Appender): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAppender")(appender.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -80,7 +80,7 @@ object mod {
   
   inline def clearAppenders(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAppenders")().asInstanceOf[Unit]
   
-  inline def getAppenders(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppenders")().asInstanceOf[js.Any]
+  inline def getAppenders(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppenders")().asInstanceOf[Any]
   
   inline def getLevel(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")().asInstanceOf[Double]
   
@@ -104,7 +104,7 @@ object mod {
       * @param logger The source logger.
       * @param rest The data to log.
       */
-    def debug(logger: Logger, rest: js.Any*): Unit
+    def debug(logger: Logger, rest: Any*): Unit
     
     /**
       * Appends an error log.
@@ -112,7 +112,7 @@ object mod {
       * @param logger The source logger.
       * @param rest The data to log.
       */
-    def error(logger: Logger, rest: js.Any*): Unit
+    def error(logger: Logger, rest: Any*): Unit
     
     /**
       * Appends an info log.
@@ -120,7 +120,7 @@ object mod {
       * @param logger The source logger.
       * @param rest The data to log.
       */
-    def info(logger: Logger, rest: js.Any*): Unit
+    def info(logger: Logger, rest: Any*): Unit
     
     /**
       * Appends a warning log.
@@ -128,15 +128,15 @@ object mod {
       * @param logger The source logger.
       * @param rest The data to log.
       */
-    def warn(logger: Logger, rest: js.Any*): Unit
+    def warn(logger: Logger, rest: Any*): Unit
   }
   object Appender {
     
     inline def apply(
-      debug: (Logger, /* repeated */ js.Any) => Unit,
-      error: (Logger, /* repeated */ js.Any) => Unit,
-      info: (Logger, /* repeated */ js.Any) => Unit,
-      warn: (Logger, /* repeated */ js.Any) => Unit
+      debug: (Logger, /* repeated */ Any) => Unit,
+      error: (Logger, /* repeated */ Any) => Unit,
+      info: (Logger, /* repeated */ Any) => Unit,
+      warn: (Logger, /* repeated */ Any) => Unit
     ): Appender = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction2(debug), error = js.Any.fromFunction2(error), info = js.Any.fromFunction2(info), warn = js.Any.fromFunction2(warn))
       __obj.asInstanceOf[Appender]
@@ -144,13 +144,13 @@ object mod {
     
     extension [Self <: Appender](x: Self) {
       
-      inline def setDebug(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
+      inline def setDebug(value: (Logger, /* repeated */ Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       
-      inline def setError(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (Logger, /* repeated */ Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      inline def setInfo(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+      inline def setInfo(value: (Logger, /* repeated */ Any) => Unit): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
       
-      inline def setWarn(value: (Logger, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
+      inline def setWarn(value: (Logger, /* repeated */ Any) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
     }
   }
   

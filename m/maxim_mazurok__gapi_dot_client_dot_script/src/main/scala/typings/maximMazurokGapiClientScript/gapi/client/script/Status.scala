@@ -15,7 +15,7 @@ trait Status extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Status & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Status & TopLevel[Any]
     ]
   ] = js.undefined
   
@@ -39,7 +39,7 @@ object Status {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Status & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Status & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
@@ -48,8 +48,8 @@ object Status {
     inline def setDetailsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Status & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "details", js.Array(value :_*))
+      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Status & TopLevel[Any])*
+    ): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

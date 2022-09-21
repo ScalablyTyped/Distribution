@@ -9,12 +9,12 @@ trait SortingEventUIParam extends StObject {
   /**
     * Gets a reference to the pivot grid.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets an array of the tuple indices and sort directions that will be used.
     */
-  var sortDirections: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var sortDirections: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object SortingEventUIParam {
   
@@ -25,14 +25,14 @@ object SortingEventUIParam {
   
   extension [Self <: SortingEventUIParam](x: Self) {
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setSortDirections(value: js.Array[js.Any]): Self = StObject.set(x, "sortDirections", value.asInstanceOf[js.Any])
+    inline def setSortDirections(value: js.Array[Any]): Self = StObject.set(x, "sortDirections", value.asInstanceOf[js.Any])
     
     inline def setSortDirectionsUndefined: Self = StObject.set(x, "sortDirections", js.undefined)
     
-    inline def setSortDirectionsVarargs(value: js.Any*): Self = StObject.set(x, "sortDirections", js.Array(value :_*))
+    inline def setSortDirectionsVarargs(value: Any*): Self = StObject.set(x, "sortDirections", js.Array(value*))
   }
 }

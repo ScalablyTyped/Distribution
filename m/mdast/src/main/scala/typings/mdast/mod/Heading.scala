@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Heading
   extends StObject
-     with Parent
-     with BlockContent {
+     with Parent {
   
   @JSName("children")
   var children_Heading: js.Array[PhrasingContent]
@@ -36,7 +35,7 @@ object Heading {
     
     inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setDepth(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

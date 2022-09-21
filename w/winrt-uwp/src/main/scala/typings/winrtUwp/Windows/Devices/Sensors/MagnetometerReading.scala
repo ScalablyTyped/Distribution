@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait MagnetometerReading extends StObject {
   var magneticFieldZ: Double
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object MagnetometerReading {
   
@@ -30,7 +29,7 @@ object MagnetometerReading {
     magneticFieldX: Double,
     magneticFieldY: Double,
     magneticFieldZ: Double,
-    timestamp: Date
+    timestamp: js.Date
   ): MagnetometerReading = {
     val __obj = js.Dynamic.literal(directionalAccuracy = directionalAccuracy.asInstanceOf[js.Any], magneticFieldX = magneticFieldX.asInstanceOf[js.Any], magneticFieldY = magneticFieldY.asInstanceOf[js.Any], magneticFieldZ = magneticFieldZ.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[MagnetometerReading]
@@ -46,6 +45,6 @@ object MagnetometerReading {
     
     inline def setMagneticFieldZ(value: Double): Self = StObject.set(x, "magneticFieldZ", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

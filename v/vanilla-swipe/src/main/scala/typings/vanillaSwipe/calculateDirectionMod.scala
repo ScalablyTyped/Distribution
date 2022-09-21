@@ -1,7 +1,6 @@
 package typings.vanillaSwipe
 
-import typings.vanillaSwipe.vanillaSwipeStrings.x
-import typings.vanillaSwipe.vanillaSwipeStrings.y
+import typings.vanillaSwipe.typesMod.TraceDirectionKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,5 @@ object calculateDirectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def calculateDirection_x(trace: js.Array[Double], axis: x): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateDirection")(trace.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def calculateDirection_y(trace: js.Array[Double], axis: y): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateDirection")(trace.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def calculateDirection(trace: js.Array[Double]): TraceDirectionKey = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateDirection")(trace.asInstanceOf[js.Any]).asInstanceOf[TraceDirectionKey]
 }

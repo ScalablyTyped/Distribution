@@ -6,9 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "LiteralType")
 @js.native
-class LiteralType[V /* <: LiteralValue */] protected ()
-  extends Type_[V, V, js.Any] {
-  def this(name: String, is: Is[V], validate: Validate[js.Any, V], encode: Encode[V, V], value: V) = this()
+open class LiteralType[V /* <: LiteralValue */] protected () extends Type_[V, V, Any] {
+  def this(name: String, is: Is[V], validate: Validate[Any, V], encode: Encode[V, V], value: V) = this()
   
   /**
     * @since 1.0.0

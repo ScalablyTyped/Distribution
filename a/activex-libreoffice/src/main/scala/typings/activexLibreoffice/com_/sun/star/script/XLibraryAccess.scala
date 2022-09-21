@@ -68,7 +68,7 @@ object XLibraryAccess {
     getModuleSource: String => String,
     isFunction: String => Boolean,
     isValidPath: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XLibraryAccess = {
     val __obj = js.Dynamic.literal(ModuleNames = ModuleNames.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getFunctionCode = js.Any.fromFunction1(getFunctionCode), getFunctionSource = js.Any.fromFunction1(getFunctionSource), getModuleCode = js.Any.fromFunction1(getModuleCode), getModuleNames = js.Any.fromFunction0(getModuleNames), getModuleSource = js.Any.fromFunction1(getModuleSource), isFunction = js.Any.fromFunction1(isFunction), isValidPath = js.Any.fromFunction1(isValidPath), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -17,6 +17,11 @@ trait TransferInputDeviceRequest extends StObject {
   var TargetCustomerId: js.UndefOr[string] = js.undefined
   
   /**
+    * The target AWS region to transfer the device.
+    */
+  var TargetRegion: js.UndefOr[string] = js.undefined
+  
+  /**
     * An optional message for the recipient. Maximum 280 characters.
     */
   var TransferMessage: js.UndefOr[string] = js.undefined
@@ -35,6 +40,10 @@ object TransferInputDeviceRequest {
     inline def setTargetCustomerId(value: string): Self = StObject.set(x, "TargetCustomerId", value.asInstanceOf[js.Any])
     
     inline def setTargetCustomerIdUndefined: Self = StObject.set(x, "TargetCustomerId", js.undefined)
+    
+    inline def setTargetRegion(value: string): Self = StObject.set(x, "TargetRegion", value.asInstanceOf[js.Any])
+    
+    inline def setTargetRegionUndefined: Self = StObject.set(x, "TargetRegion", js.undefined)
     
     inline def setTransferMessage(value: string): Self = StObject.set(x, "TransferMessage", value.asInstanceOf[js.Any])
     

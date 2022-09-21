@@ -24,6 +24,6 @@ object Content {
     
     inline def setExistence(value: js.Array[String]): Self = StObject.set(x, "existence", value.asInstanceOf[js.Any])
     
-    inline def setExistenceVarargs(value: String*): Self = StObject.set(x, "existence", js.Array(value :_*))
+    inline def setExistenceVarargs(value: String*): Self = StObject.set(x, "existence", js.Array(value*))
   }
 }

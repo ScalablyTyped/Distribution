@@ -1,6 +1,5 @@
 package typings.bootstrapTimepicker
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait TimepickerOptions extends StObject {
   
   var appendWidgetTo: js.UndefOr[String] = js.undefined
   
-  var defaultTime: js.UndefOr[String | Boolean | Date] = js.undefined
+  var defaultTime: js.UndefOr[String | Boolean | js.Date] = js.undefined
   
   var disableFocus: js.UndefOr[Boolean] = js.undefined
   
@@ -52,7 +51,7 @@ object TimepickerOptions {
     
     inline def setAppendWidgetToUndefined: Self = StObject.set(x, "appendWidgetTo", js.undefined)
     
-    inline def setDefaultTime(value: String | Boolean | Date): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
+    inline def setDefaultTime(value: String | Boolean | js.Date): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
     
     inline def setDefaultTimeUndefined: Self = StObject.set(x, "defaultTime", js.undefined)
     

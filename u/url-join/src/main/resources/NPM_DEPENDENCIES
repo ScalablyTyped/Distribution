@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "url-join" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "url-join" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

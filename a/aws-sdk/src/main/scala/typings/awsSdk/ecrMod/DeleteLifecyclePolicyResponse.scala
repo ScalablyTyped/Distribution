@@ -9,7 +9,7 @@ trait DeleteLifecyclePolicyResponse extends StObject {
   /**
     * The time stamp of the last time that the lifecycle policy was run.
     */
-  var lastEvaluatedAt: js.UndefOr[EvaluationTimestamp] = js.undefined
+  var lastEvaluatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The JSON lifecycle policy text.
@@ -35,7 +35,7 @@ object DeleteLifecyclePolicyResponse {
   
   extension [Self <: DeleteLifecyclePolicyResponse](x: Self) {
     
-    inline def setLastEvaluatedAt(value: EvaluationTimestamp): Self = StObject.set(x, "lastEvaluatedAt", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedAt(value: js.Date): Self = StObject.set(x, "lastEvaluatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastEvaluatedAtUndefined: Self = StObject.set(x, "lastEvaluatedAt", js.undefined)
     

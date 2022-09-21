@@ -12,7 +12,8 @@ trait Graphics
      with p5 {
   
   /**
-    *   Removes the element and deregisters all listeners.
+    *   Removes the element, stops all media streams, and
+    *   deregisters all listeners.
     */
   /* InferMemberOverrides */
   override def remove(): Unit = js.native

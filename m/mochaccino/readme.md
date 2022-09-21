@@ -10,15 +10,12 @@ United js test tools
 | ------------------ | :-------------: |
 | Full name          | mochaccino |
 | Keywords           | mocha, test, bdd, tdd |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 90049 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2983.3333333333335 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/pawelgalazka/mochaccino#readme)
-- [Bugs](https://github.com/pawelgalazka/mochaccino/issues)
-- [Repository](https://github.com/pawelgalazka/mochaccino)
 - [Npm](https://www.npmjs.com/package/mochaccino)
     
 

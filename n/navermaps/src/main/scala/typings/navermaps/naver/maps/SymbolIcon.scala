@@ -47,7 +47,7 @@ object SymbolIcon {
     
     inline def setPath(value: SymbolPath | (js.Array[Point | PointLiteral])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: (Point | PointLiteral)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (Point | PointLiteral)*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

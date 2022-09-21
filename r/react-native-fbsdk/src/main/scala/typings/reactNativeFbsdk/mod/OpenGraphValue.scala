@@ -8,11 +8,11 @@ trait OpenGraphValue extends StObject {
   
   var `type`: OpenGraphValueType
   
-  var value: js.Any
+  var value: Any
 }
 object OpenGraphValue {
   
-  inline def apply(`type`: OpenGraphValueType, value: js.Any): OpenGraphValue = {
+  inline def apply(`type`: OpenGraphValueType, value: Any): OpenGraphValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenGraphValue]
@@ -22,6 +22,6 @@ object OpenGraphValue {
     
     inline def setType(value: OpenGraphValueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

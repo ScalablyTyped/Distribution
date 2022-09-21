@@ -11,5 +11,5 @@ object boxMod {
   
   @JSImport("rbx/elements/box", "Box")
   @js.native
-  val Box: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Box: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
 }

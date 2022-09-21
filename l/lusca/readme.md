@@ -1,7 +1,7 @@
 
 # Scala.js typings for lusca
 
-Typings are for version 1.6
+Typings are for version 1.7
 
 ## Library description:
 Application security for express.
@@ -10,10 +10,10 @@ Application security for express.
 | ------------------ | :-------------: |
 | Full name          | lusca |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 95 |
-| # downloads        | 1595412 |
-| # stars            | 21 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 160039.66666666666 |
+| # stars            | 1776.0 |
 
 ## Links
 - [Homepage](https://github.com/krakenjs/lusca#readme)

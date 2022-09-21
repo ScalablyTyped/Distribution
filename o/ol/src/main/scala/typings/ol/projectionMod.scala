@@ -11,7 +11,7 @@ object projectionMod {
   
   @JSImport("ol/proj/Projection", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Projection {
     def this(options: Options) = this()

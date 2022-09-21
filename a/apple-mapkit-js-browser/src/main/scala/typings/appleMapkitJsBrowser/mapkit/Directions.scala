@@ -1,6 +1,5 @@
 package typings.appleMapkitJsBrowser.mapkit
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait Directions extends StObject {
     */
   def eta(
     request: EtaRequestOptions,
-    callback: js.Function2[/* error */ Error | Null, /* data */ EtaResponse, Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* data */ EtaResponse, Unit]
   ): Double
   
   /**
@@ -41,15 +40,15 @@ trait Directions extends StObject {
     */
   def route(
     request: DirectionsRequest,
-    callback: js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* data */ DirectionsResponse, Unit]
   ): Double
 }
 object Directions {
   
   inline def apply(
     cancel: Double => Boolean,
-    eta: (EtaRequestOptions, js.Function2[/* error */ Error | Null, /* data */ EtaResponse, Unit]) => Double,
-    route: (DirectionsRequest, js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]) => Double
+    eta: (EtaRequestOptions, js.Function2[/* error */ js.Error | Null, /* data */ EtaResponse, Unit]) => Double,
+    route: (DirectionsRequest, js.Function2[/* error */ js.Error | Null, /* data */ DirectionsResponse, Unit]) => Double
   ): Directions = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), eta = js.Any.fromFunction2(eta), route = js.Any.fromFunction2(route))
     __obj.asInstanceOf[Directions]
@@ -86,11 +85,11 @@ object Directions {
     inline def setCancel(value: Double => Boolean): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     inline def setEta(
-      value: (EtaRequestOptions, js.Function2[/* error */ Error | Null, /* data */ EtaResponse, Unit]) => Double
+      value: (EtaRequestOptions, js.Function2[/* error */ js.Error | Null, /* data */ EtaResponse, Unit]) => Double
     ): Self = StObject.set(x, "eta", js.Any.fromFunction2(value))
     
     inline def setRoute(
-      value: (DirectionsRequest, js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]) => Double
+      value: (DirectionsRequest, js.Function2[/* error */ js.Error | Null, /* data */ DirectionsResponse, Unit]) => Double
     ): Self = StObject.set(x, "route", js.Any.fromFunction2(value))
   }
 }

@@ -1,14 +1,14 @@
 package typings.stylableNode
 
+import typings.std.Partial
 import typings.stylableNode.anon.PartialOptions
-import typings.stylableNode.anon.PartialStylableConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requireHookMod {
   
-  @JSImport("@stylable/node/cjs/require-hook", JSImport.Namespace)
+  @JSImport("@stylable/node/dist/require-hook", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -25,11 +25,18 @@ object requireHookMod {
     
     var runtimePath: js.UndefOr[String] = js.undefined
     
-    var stylableConfig: PartialStylableConfig
+    var stylableConfig: Partial[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StylableConfig */ Any
+      ]
   }
   object Options {
     
-    inline def apply(matcher: String => Boolean, stylableConfig: PartialStylableConfig): Options = {
+    inline def apply(
+      matcher: String => Boolean,
+      stylableConfig: Partial[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StylableConfig */ Any
+        ]
+    ): Options = {
       val __obj = js.Dynamic.literal(matcher = js.Any.fromFunction1(matcher), stylableConfig = stylableConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -50,7 +57,11 @@ object requireHookMod {
       
       inline def setRuntimePathUndefined: Self = StObject.set(x, "runtimePath", js.undefined)
       
-      inline def setStylableConfig(value: PartialStylableConfig): Self = StObject.set(x, "stylableConfig", value.asInstanceOf[js.Any])
+      inline def setStylableConfig(
+        value: Partial[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StylableConfig */ Any
+            ]
+      ): Self = StObject.set(x, "stylableConfig", value.asInstanceOf[js.Any])
     }
   }
 }

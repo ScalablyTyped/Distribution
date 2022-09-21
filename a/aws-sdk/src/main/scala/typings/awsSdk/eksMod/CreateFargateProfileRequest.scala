@@ -37,7 +37,7 @@ trait CreateFargateProfileRequest extends StObject {
   var subnets: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The metadata to apply to the Fargate profile to assist with categorization and organization. Each tag consists of a key and an optional value, both of which you define. Fargate profile tags do not propagate to any other resources associated with the Fargate profile, such as the pods that are scheduled with it.
+    * The metadata to apply to the Fargate profile to assist with categorization and organization. Each tag consists of a key and an optional value. You define both. Fargate profile tags do not propagate to any other resources associated with the Fargate profile, such as the pods that are scheduled with it.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
 }
@@ -64,13 +64,13 @@ object CreateFargateProfileRequest {
     
     inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    inline def setSelectorsVarargs(value: FargateProfileSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: FargateProfileSelector*): Self = StObject.set(x, "selectors", js.Array(value*))
     
     inline def setSubnets(value: StringList): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
     
     inline def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
     
-    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

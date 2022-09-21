@@ -1,6 +1,5 @@
 package typings.jsxPdf
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.jsxPdf.jsxPdfStrings.Asterisk
 import typings.jsxPdf.jsxPdfStrings.H
 import typings.jsxPdf.jsxPdfStrings.L
@@ -15,13 +14,14 @@ import typings.jsxPdf.mod.global.JSX.DynamicChild
 import typings.jsxPdf.mod.global.JSX.Element
 import typings.pdfkit.PDFKit.DocumentPermissions
 import typings.pdfkit.PDFKit.Mixins.OpenTypeFeatures
-import typings.pdfmake.anon.X
 import typings.pdfmake.interfacesMod.Alignment
 import typings.pdfmake.interfacesMod.ContextPageSize
 import typings.pdfmake.interfacesMod.Decoration
 import typings.pdfmake.interfacesMod.DecorationStyle
 import typings.pdfmake.interfacesMod.DynamicBackground
 import typings.pdfmake.interfacesMod.DynamicRowSize
+import typings.pdfmake.interfacesMod.ImageCover
+import typings.pdfmake.interfacesMod.ImageDefinition
 import typings.pdfmake.interfacesMod.Margins
 import typings.pdfmake.interfacesMod.Node
 import typings.pdfmake.interfacesMod.OrderedListType
@@ -29,13 +29,18 @@ import typings.pdfmake.interfacesMod.PDFVersion
 import typings.pdfmake.interfacesMod.PageBreak
 import typings.pdfmake.interfacesMod.PageOrientation
 import typings.pdfmake.interfacesMod.PageSize
+import typings.pdfmake.interfacesMod.Pattern
+import typings.pdfmake.interfacesMod.PatternFill
+import typings.pdfmake.interfacesMod.Position
 import typings.pdfmake.interfacesMod.Size
 import typings.pdfmake.interfacesMod.Style
 import typings.pdfmake.interfacesMod.StyleDictionary
+import typings.pdfmake.interfacesMod.StyleReference
 import typings.pdfmake.interfacesMod.TDocumentInformation
 import typings.pdfmake.interfacesMod.TableLayout
 import typings.pdfmake.interfacesMod.UnorderedListType
 import typings.pdfmake.interfacesMod.Watermark
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,26 +100,32 @@ object anon {
       
       inline def setChildrenFunction3(value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => Child): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.EleNoChidlren<std.Omit<pdfmake.pdfmake/interfaces.ContentImage, 'image'> & {  src :string}> */
   trait EleNoChidlrenOmitContentI extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.undefined
+    var absolutePosition: js.UndefOr[Position] = js.undefined
     
     var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.undefined
+    var background: js.UndefOr[String | PatternFill] = js.undefined
     
     var bold: js.UndefOr[Boolean] = js.undefined
+    
+    var canvas: js.UndefOr[scala.Nothing] = js.undefined
     
     var characterSpacing: js.UndefOr[Double] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.undefined
+    var columnGap: js.UndefOr[Double] = js.undefined
+    
+    var columns: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var cover: js.UndefOr[ImageCover] = js.undefined
     
     var decoration: js.UndefOr[Decoration] = js.undefined
     
@@ -122,7 +133,7 @@ object anon {
     
     var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.undefined
+    var fillColor: js.UndefOr[String | PatternFill] = js.undefined
     
     var fillOpacity: js.UndefOr[Double] = js.undefined
     
@@ -156,19 +167,47 @@ object anon {
     
     var noWrap: js.UndefOr[Boolean] = js.undefined
     
+    var ol: js.UndefOr[scala.Nothing] = js.undefined
+    
     var opacity: js.UndefOr[Double] = js.undefined
     
     var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
     var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
+    var pageReference: js.UndefOr[scala.Nothing] = js.undefined
+    
     var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.undefined
+    var preserveTrailingSpaces: js.UndefOr[Boolean] = js.undefined
+    
+    var qr: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var relativePosition: js.UndefOr[Position] = js.undefined
     
     var src: String
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
+    var stack: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var style: js.UndefOr[StyleReference] = js.undefined
+    
+    var sub: js.UndefOr[Boolean] = js.undefined
+    
+    var sup: js.UndefOr[Boolean] = js.undefined
+    
+    var svg: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var table: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var text: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var textReference: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var toc: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var ul: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var unbreakable: js.UndefOr[Boolean] = js.undefined
     
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -181,7 +220,7 @@ object anon {
     
     extension [Self <: EleNoChidlrenOmitContentI](x: Self) {
       
-      inline def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
+      inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
       inline def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
       
@@ -189,7 +228,7 @@ object anon {
       
       inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String | PatternFill): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -205,9 +244,13 @@ object anon {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColumnGap(value: Size): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
+      
+      inline def setCover(value: ImageCover): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
+      
+      inline def setCoverUndefined: Self = StObject.set(x, "cover", js.undefined)
       
       inline def setDecoration(value: Decoration): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
       
@@ -221,7 +264,7 @@ object anon {
       
       inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
       
-      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String | PatternFill): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
       inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
@@ -239,7 +282,7 @@ object anon {
       
       inline def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
       
-      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
+      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value*))
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
@@ -307,17 +350,33 @@ object anon {
       
       inline def setPreserveLeadingSpacesUndefined: Self = StObject.set(x, "preserveLeadingSpaces", js.undefined)
       
-      inline def setRelativePosition(value: X): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+      inline def setPreserveTrailingSpaces(value: Boolean): Self = StObject.set(x, "preserveTrailingSpaces", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveTrailingSpacesUndefined: Self = StObject.set(x, "preserveTrailingSpaces", js.undefined)
+      
+      inline def setRelativePosition(value: Position): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
       
       inline def setRelativePositionUndefined: Self = StObject.set(x, "relativePosition", js.undefined)
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      inline def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: (String | Style)*): Self = StObject.set(x, "style", js.Array(value*))
+      
+      inline def setSub(value: Boolean): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      
+      inline def setSup(value: Boolean): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      
+      inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
+      
+      inline def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
+      
+      inline def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -328,7 +387,7 @@ object anon {
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.EleNoChidlren<std.Omit<pdfmake.pdfmake/interfaces.ContentQr, 'qr'> & {  content :string}> */
   trait EleNoChidlrenOmitContentQ extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.undefined
+    var absolutePosition: js.UndefOr[Position] = js.undefined
     
     var alignment: js.UndefOr[Alignment] = js.undefined
     
@@ -336,11 +395,15 @@ object anon {
     
     var bold: js.UndefOr[Boolean] = js.undefined
     
+    var canvas: js.UndefOr[scala.Nothing] = js.undefined
+    
     var characterSpacing: js.UndefOr[Double] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.undefined
+    var columnGap: js.UndefOr[Double] = js.undefined
+    
+    var columns: js.UndefOr[scala.Nothing] = js.undefined
     
     var content: String
     
@@ -352,7 +415,7 @@ object anon {
     
     var eccLevel: js.UndefOr[L | M | Q | H] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.undefined
+    var fillColor: js.UndefOr[String | PatternFill] = js.undefined
     
     var fillOpacity: js.UndefOr[Double] = js.undefined
     
@@ -367,6 +430,8 @@ object anon {
     var foreground: js.UndefOr[String] = js.undefined
     
     var headlineLevel: js.UndefOr[Double] = js.undefined
+    
+    var image: js.UndefOr[scala.Nothing] = js.undefined
     
     var italics: js.UndefOr[Boolean] = js.undefined
     
@@ -384,17 +449,43 @@ object anon {
     
     var noWrap: js.UndefOr[Boolean] = js.undefined
     
+    var ol: js.UndefOr[scala.Nothing] = js.undefined
+    
     var opacity: js.UndefOr[Double] = js.undefined
     
     var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
     var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
+    var pageReference: js.UndefOr[scala.Nothing] = js.undefined
+    
     var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.undefined
+    var preserveTrailingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
+    var relativePosition: js.UndefOr[Position] = js.undefined
+    
+    var stack: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var style: js.UndefOr[StyleReference] = js.undefined
+    
+    var sub: js.UndefOr[Boolean] = js.undefined
+    
+    var sup: js.UndefOr[Boolean] = js.undefined
+    
+    var svg: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var table: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var text: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var textReference: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var toc: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var ul: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var unbreakable: js.UndefOr[Boolean] = js.undefined
     
     var version: js.UndefOr[Double] = js.undefined
   }
@@ -407,7 +498,7 @@ object anon {
     
     extension [Self <: EleNoChidlrenOmitContentQ](x: Self) {
       
-      inline def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
+      inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
       inline def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
       
@@ -431,7 +522,7 @@ object anon {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColumnGap(value: Size): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
       
@@ -453,7 +544,7 @@ object anon {
       
       inline def setEccLevelUndefined: Self = StObject.set(x, "eccLevel", js.undefined)
       
-      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String | PatternFill): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
       inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
@@ -471,7 +562,7 @@ object anon {
       
       inline def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
       
-      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
+      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value*))
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
@@ -535,15 +626,31 @@ object anon {
       
       inline def setPreserveLeadingSpacesUndefined: Self = StObject.set(x, "preserveLeadingSpaces", js.undefined)
       
-      inline def setRelativePosition(value: X): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+      inline def setPreserveTrailingSpaces(value: Boolean): Self = StObject.set(x, "preserveTrailingSpaces", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveTrailingSpacesUndefined: Self = StObject.set(x, "preserveTrailingSpaces", js.undefined)
+      
+      inline def setRelativePosition(value: Position): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
       
       inline def setRelativePositionUndefined: Self = StObject.set(x, "relativePosition", js.undefined)
       
-      inline def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: (String | Style)*): Self = StObject.set(x, "style", js.Array(value*))
+      
+      inline def setSub(value: Boolean): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      
+      inline def setSup(value: Boolean): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      
+      inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
+      
+      inline def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
+      
+      inline def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -554,13 +661,15 @@ object anon {
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentColumns, 'columns'>> */
   trait EleOmitContentColumnscolu extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.undefined
+    var absolutePosition: js.UndefOr[Position] = js.undefined
     
     var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.undefined
+    var background: js.UndefOr[String | PatternFill] = js.undefined
     
     var bold: js.UndefOr[Boolean] = js.undefined
+    
+    var canvas: js.UndefOr[scala.Nothing] = js.undefined
     
     var characterSpacing: js.UndefOr[Double] = js.undefined
     
@@ -568,7 +677,7 @@ object anon {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.undefined
+    var columnGap: js.UndefOr[Double] = js.undefined
     
     var decoration: js.UndefOr[Decoration] = js.undefined
     
@@ -576,7 +685,7 @@ object anon {
     
     var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.undefined
+    var fillColor: js.UndefOr[String | PatternFill] = js.undefined
     
     var fillOpacity: js.UndefOr[Double] = js.undefined
     
@@ -587,6 +696,8 @@ object anon {
     var fontSize: js.UndefOr[Double] = js.undefined
     
     var headlineLevel: js.UndefOr[Double] = js.undefined
+    
+    var image: js.UndefOr[scala.Nothing] = js.undefined
     
     var italics: js.UndefOr[Boolean] = js.undefined
     
@@ -600,17 +711,45 @@ object anon {
     
     var noWrap: js.UndefOr[Boolean] = js.undefined
     
+    var ol: js.UndefOr[scala.Nothing] = js.undefined
+    
     var opacity: js.UndefOr[Double] = js.undefined
     
     var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
     var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
+    var pageReference: js.UndefOr[scala.Nothing] = js.undefined
+    
     var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.undefined
+    var preserveTrailingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
+    var qr: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var relativePosition: js.UndefOr[Position] = js.undefined
+    
+    var stack: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var style: js.UndefOr[StyleReference] = js.undefined
+    
+    var sub: js.UndefOr[Boolean] = js.undefined
+    
+    var sup: js.UndefOr[Boolean] = js.undefined
+    
+    var svg: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var table: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var text: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var textReference: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var toc: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var ul: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var unbreakable: js.UndefOr[Boolean] = js.undefined
   }
   object EleOmitContentColumnscolu {
     
@@ -621,7 +760,7 @@ object anon {
     
     extension [Self <: EleOmitContentColumnscolu](x: Self) {
       
-      inline def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
+      inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
       inline def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
       
@@ -629,7 +768,7 @@ object anon {
       
       inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String | PatternFill): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -645,13 +784,13 @@ object anon {
       
       inline def setChildrenFunction3(value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => Child): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColumnGap(value: Size): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
       
@@ -667,7 +806,7 @@ object anon {
       
       inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
       
-      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String | PatternFill): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
       inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
@@ -681,7 +820,7 @@ object anon {
       
       inline def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
       
-      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
+      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value*))
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
@@ -733,28 +872,46 @@ object anon {
       
       inline def setPreserveLeadingSpacesUndefined: Self = StObject.set(x, "preserveLeadingSpaces", js.undefined)
       
-      inline def setRelativePosition(value: X): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+      inline def setPreserveTrailingSpaces(value: Boolean): Self = StObject.set(x, "preserveTrailingSpaces", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveTrailingSpacesUndefined: Self = StObject.set(x, "preserveTrailingSpaces", js.undefined)
+      
+      inline def setRelativePosition(value: Position): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
       
       inline def setRelativePositionUndefined: Self = StObject.set(x, "relativePosition", js.undefined)
       
-      inline def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: (String | Style)*): Self = StObject.set(x, "style", js.Array(value*))
+      
+      inline def setSub(value: Boolean): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      
+      inline def setSup(value: Boolean): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      
+      inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
+      
+      inline def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
+      
+      inline def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
     }
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentOrderedList, 'ol'>> */
   trait EleOmitContentOrderedList extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.undefined
+    var absolutePosition: js.UndefOr[Position] = js.undefined
     
     var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.undefined
+    var background: js.UndefOr[String | PatternFill] = js.undefined
     
     var bold: js.UndefOr[Boolean] = js.undefined
+    
+    var canvas: js.UndefOr[scala.Nothing] = js.undefined
     
     var characterSpacing: js.UndefOr[Double] = js.undefined
     
@@ -762,7 +919,9 @@ object anon {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.undefined
+    var columnGap: js.UndefOr[Double] = js.undefined
+    
+    var columns: js.UndefOr[scala.Nothing] = js.undefined
     
     var decoration: js.UndefOr[Decoration] = js.undefined
     
@@ -770,7 +929,7 @@ object anon {
     
     var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.undefined
+    var fillColor: js.UndefOr[String | PatternFill] = js.undefined
     
     var fillOpacity: js.UndefOr[Double] = js.undefined
     
@@ -781,6 +940,8 @@ object anon {
     var fontSize: js.UndefOr[Double] = js.undefined
     
     var headlineLevel: js.UndefOr[Double] = js.undefined
+    
+    var image: js.UndefOr[scala.Nothing] = js.undefined
     
     var italics: js.UndefOr[Boolean] = js.undefined
     
@@ -800,19 +961,45 @@ object anon {
     
     var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
+    var pageReference: js.UndefOr[scala.Nothing] = js.undefined
+    
     var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.undefined
+    var preserveTrailingSpaces: js.UndefOr[Boolean] = js.undefined
+    
+    var qr: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var relativePosition: js.UndefOr[Position] = js.undefined
     
     var reversed: js.UndefOr[Boolean] = js.undefined
     
     var separator: js.UndefOr[String | (js.Tuple2[String, String])] = js.undefined
     
+    var stack: js.UndefOr[scala.Nothing] = js.undefined
+    
     var start: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
+    var style: js.UndefOr[StyleReference] = js.undefined
+    
+    var sub: js.UndefOr[Boolean] = js.undefined
+    
+    var sup: js.UndefOr[Boolean] = js.undefined
+    
+    var svg: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var table: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var text: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var textReference: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var toc: js.UndefOr[scala.Nothing] = js.undefined
     
     var `type`: js.UndefOr[OrderedListType] = js.undefined
+    
+    var ul: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var unbreakable: js.UndefOr[Boolean] = js.undefined
   }
   object EleOmitContentOrderedList {
     
@@ -823,7 +1010,7 @@ object anon {
     
     extension [Self <: EleOmitContentOrderedList](x: Self) {
       
-      inline def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
+      inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
       inline def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
       
@@ -831,7 +1018,7 @@ object anon {
       
       inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String | PatternFill): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -847,13 +1034,13 @@ object anon {
       
       inline def setChildrenFunction3(value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => Child): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColumnGap(value: Size): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
       
@@ -869,7 +1056,7 @@ object anon {
       
       inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
       
-      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String | PatternFill): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
       inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
@@ -883,7 +1070,7 @@ object anon {
       
       inline def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
       
-      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
+      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value*))
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
@@ -935,7 +1122,11 @@ object anon {
       
       inline def setPreserveLeadingSpacesUndefined: Self = StObject.set(x, "preserveLeadingSpaces", js.undefined)
       
-      inline def setRelativePosition(value: X): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+      inline def setPreserveTrailingSpaces(value: Boolean): Self = StObject.set(x, "preserveTrailingSpaces", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveTrailingSpacesUndefined: Self = StObject.set(x, "preserveTrailingSpaces", js.undefined)
+      
+      inline def setRelativePosition(value: Position): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
       
       inline def setRelativePositionUndefined: Self = StObject.set(x, "relativePosition", js.undefined)
       
@@ -951,28 +1142,42 @@ object anon {
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      inline def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: (String | Style)*): Self = StObject.set(x, "style", js.Array(value*))
+      
+      inline def setSub(value: Boolean): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      
+      inline def setSup(value: Boolean): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      
+      inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
       
       inline def setType(value: OrderedListType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
+      
+      inline def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
     }
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentStack, 'stack'>> */
   trait EleOmitContentStackstack extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.undefined
+    var absolutePosition: js.UndefOr[Position] = js.undefined
     
     var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.undefined
+    var background: js.UndefOr[String | PatternFill] = js.undefined
     
     var bold: js.UndefOr[Boolean] = js.undefined
+    
+    var canvas: js.UndefOr[scala.Nothing] = js.undefined
     
     var characterSpacing: js.UndefOr[Double] = js.undefined
     
@@ -980,7 +1185,9 @@ object anon {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.undefined
+    var columnGap: js.UndefOr[Double] = js.undefined
+    
+    var columns: js.UndefOr[scala.Nothing] = js.undefined
     
     var decoration: js.UndefOr[Decoration] = js.undefined
     
@@ -988,7 +1195,7 @@ object anon {
     
     var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.undefined
+    var fillColor: js.UndefOr[String | PatternFill] = js.undefined
     
     var fillOpacity: js.UndefOr[Double] = js.undefined
     
@@ -999,6 +1206,8 @@ object anon {
     var fontSize: js.UndefOr[Double] = js.undefined
     
     var headlineLevel: js.UndefOr[Double] = js.undefined
+    
+    var image: js.UndefOr[scala.Nothing] = js.undefined
     
     var italics: js.UndefOr[Boolean] = js.undefined
     
@@ -1012,17 +1221,41 @@ object anon {
     
     var noWrap: js.UndefOr[Boolean] = js.undefined
     
+    var ol: js.UndefOr[scala.Nothing] = js.undefined
+    
     var opacity: js.UndefOr[Double] = js.undefined
     
     var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
     var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
+    var pageReference: js.UndefOr[scala.Nothing] = js.undefined
+    
     var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.undefined
+    var preserveTrailingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
+    var qr: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var relativePosition: js.UndefOr[Position] = js.undefined
+    
+    var style: js.UndefOr[StyleReference] = js.undefined
+    
+    var sub: js.UndefOr[Boolean] = js.undefined
+    
+    var sup: js.UndefOr[Boolean] = js.undefined
+    
+    var svg: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var table: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var text: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var textReference: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var toc: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var ul: js.UndefOr[scala.Nothing] = js.undefined
     
     var unbreakable: js.UndefOr[Boolean] = js.undefined
   }
@@ -1035,7 +1268,7 @@ object anon {
     
     extension [Self <: EleOmitContentStackstack](x: Self) {
       
-      inline def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
+      inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
       inline def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
       
@@ -1043,7 +1276,7 @@ object anon {
       
       inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String | PatternFill): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -1059,13 +1292,13 @@ object anon {
       
       inline def setChildrenFunction3(value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => Child): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColumnGap(value: Size): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
       
@@ -1081,7 +1314,7 @@ object anon {
       
       inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
       
-      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String | PatternFill): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
       inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
@@ -1095,7 +1328,7 @@ object anon {
       
       inline def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
       
-      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
+      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value*))
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
@@ -1147,15 +1380,27 @@ object anon {
       
       inline def setPreserveLeadingSpacesUndefined: Self = StObject.set(x, "preserveLeadingSpaces", js.undefined)
       
-      inline def setRelativePosition(value: X): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+      inline def setPreserveTrailingSpaces(value: Boolean): Self = StObject.set(x, "preserveTrailingSpaces", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveTrailingSpacesUndefined: Self = StObject.set(x, "preserveTrailingSpaces", js.undefined)
+      
+      inline def setRelativePosition(value: Position): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
       
       inline def setRelativePositionUndefined: Self = StObject.set(x, "relativePosition", js.undefined)
       
-      inline def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: (String | Style)*): Self = StObject.set(x, "style", js.Array(value*))
+      
+      inline def setSub(value: Boolean): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      
+      inline def setSup(value: Boolean): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      
+      inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
       
       inline def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
       
@@ -1166,13 +1411,15 @@ object anon {
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentTable, 'table'> & std.Omit<pdfmake.pdfmake/interfaces.Table, 'body'>> */
   trait EleOmitContentTabletableO extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.undefined
+    var absolutePosition: js.UndefOr[Position] = js.undefined
     
     var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.undefined
+    var background: js.UndefOr[String | PatternFill] = js.undefined
     
     var bold: js.UndefOr[Boolean] = js.undefined
+    
+    var canvas: js.UndefOr[scala.Nothing] = js.undefined
     
     var characterSpacing: js.UndefOr[Double] = js.undefined
     
@@ -1180,7 +1427,9 @@ object anon {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.undefined
+    var columnGap: js.UndefOr[Double] = js.undefined
+    
+    var columns: js.UndefOr[scala.Nothing] = js.undefined
     
     var decoration: js.UndefOr[Decoration] = js.undefined
     
@@ -1190,7 +1439,7 @@ object anon {
     
     var dontBreakRows: js.UndefOr[Boolean] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.undefined
+    var fillColor: js.UndefOr[String | PatternFill] = js.undefined
     
     var fillOpacity: js.UndefOr[Double] = js.undefined
     
@@ -1204,7 +1453,9 @@ object anon {
     
     var headlineLevel: js.UndefOr[Double] = js.undefined
     
-    var heights: js.UndefOr[Double | js.Array[Double] | DynamicRowSize] = js.undefined
+    var heights: js.UndefOr[Double | auto | (js.Array[Double | auto]) | DynamicRowSize] = js.undefined
+    
+    var image: js.UndefOr[scala.Nothing] = js.undefined
     
     var italics: js.UndefOr[Boolean] = js.undefined
     
@@ -1222,17 +1473,43 @@ object anon {
     
     var noWrap: js.UndefOr[Boolean] = js.undefined
     
+    var ol: js.UndefOr[scala.Nothing] = js.undefined
+    
     var opacity: js.UndefOr[Double] = js.undefined
     
     var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
     var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
+    var pageReference: js.UndefOr[scala.Nothing] = js.undefined
+    
     var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.undefined
+    var preserveTrailingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
+    var qr: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var relativePosition: js.UndefOr[Position] = js.undefined
+    
+    var stack: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var style: js.UndefOr[StyleReference] = js.undefined
+    
+    var sub: js.UndefOr[Boolean] = js.undefined
+    
+    var sup: js.UndefOr[Boolean] = js.undefined
+    
+    var svg: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var text: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var textReference: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var toc: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var ul: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var unbreakable: js.UndefOr[Boolean] = js.undefined
     
     var widths: js.UndefOr[Asterisk | auto | js.Array[Size]] = js.undefined
   }
@@ -1245,7 +1522,7 @@ object anon {
     
     extension [Self <: EleOmitContentTabletableO](x: Self) {
       
-      inline def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
+      inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
       inline def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
       
@@ -1253,7 +1530,7 @@ object anon {
       
       inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String | PatternFill): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -1269,13 +1546,13 @@ object anon {
       
       inline def setChildrenFunction3(value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => Child): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColumnGap(value: Size): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
       
@@ -1295,7 +1572,7 @@ object anon {
       
       inline def setDontBreakRowsUndefined: Self = StObject.set(x, "dontBreakRows", js.undefined)
       
-      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String | PatternFill): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
       inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
@@ -1309,7 +1586,7 @@ object anon {
       
       inline def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
       
-      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
+      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value*))
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
@@ -1325,13 +1602,13 @@ object anon {
       
       inline def setHeadlineLevelUndefined: Self = StObject.set(x, "headlineLevel", js.undefined)
       
-      inline def setHeights(value: Double | js.Array[Double] | DynamicRowSize): Self = StObject.set(x, "heights", value.asInstanceOf[js.Any])
+      inline def setHeights(value: Double | auto | (js.Array[Double | auto]) | DynamicRowSize): Self = StObject.set(x, "heights", value.asInstanceOf[js.Any])
       
-      inline def setHeightsFunction1(value: /* row */ Double => Double | typings.pdfmake.pdfmakeStrings.auto): Self = StObject.set(x, "heights", js.Any.fromFunction1(value))
+      inline def setHeightsFunction1(value: /* rowIndex */ Double => Double | typings.pdfmake.pdfmakeStrings.auto): Self = StObject.set(x, "heights", js.Any.fromFunction1(value))
       
       inline def setHeightsUndefined: Self = StObject.set(x, "heights", js.undefined)
       
-      inline def setHeightsVarargs(value: Double*): Self = StObject.set(x, "heights", js.Array(value :_*))
+      inline def setHeightsVarargs(value: (Double | auto)*): Self = StObject.set(x, "heights", js.Array(value*))
       
       inline def setItalics(value: Boolean): Self = StObject.set(x, "italics", value.asInstanceOf[js.Any])
       
@@ -1381,34 +1658,52 @@ object anon {
       
       inline def setPreserveLeadingSpacesUndefined: Self = StObject.set(x, "preserveLeadingSpaces", js.undefined)
       
-      inline def setRelativePosition(value: X): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+      inline def setPreserveTrailingSpaces(value: Boolean): Self = StObject.set(x, "preserveTrailingSpaces", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveTrailingSpacesUndefined: Self = StObject.set(x, "preserveTrailingSpaces", js.undefined)
+      
+      inline def setRelativePosition(value: Position): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
       
       inline def setRelativePositionUndefined: Self = StObject.set(x, "relativePosition", js.undefined)
       
-      inline def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: (String | Style)*): Self = StObject.set(x, "style", js.Array(value*))
+      
+      inline def setSub(value: Boolean): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      
+      inline def setSup(value: Boolean): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      
+      inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
+      
+      inline def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
+      
+      inline def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
       
       inline def setWidths(value: Asterisk | auto | js.Array[Size]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
       
       inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
       
-      inline def setWidthsVarargs(value: Size*): Self = StObject.set(x, "widths", js.Array(value :_*))
+      inline def setWidthsVarargs(value: Size*): Self = StObject.set(x, "widths", js.Array(value*))
     }
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentText, 'text'>> */
   trait EleOmitContentTexttext extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.undefined
+    var absolutePosition: js.UndefOr[Position] = js.undefined
     
     var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.undefined
+    var background: js.UndefOr[String | PatternFill] = js.undefined
     
     var bold: js.UndefOr[Boolean] = js.undefined
+    
+    var canvas: js.UndefOr[scala.Nothing] = js.undefined
     
     var characterSpacing: js.UndefOr[Double] = js.undefined
     
@@ -1416,7 +1711,9 @@ object anon {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.undefined
+    var columnGap: js.UndefOr[Double] = js.undefined
+    
+    var columns: js.UndefOr[scala.Nothing] = js.undefined
     
     var decoration: js.UndefOr[Decoration] = js.undefined
     
@@ -1424,7 +1721,7 @@ object anon {
     
     var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.undefined
+    var fillColor: js.UndefOr[String | PatternFill] = js.undefined
     
     var fillOpacity: js.UndefOr[Double] = js.undefined
     
@@ -1435,6 +1732,8 @@ object anon {
     var fontSize: js.UndefOr[Double] = js.undefined
     
     var headlineLevel: js.UndefOr[Double] = js.undefined
+    
+    var image: js.UndefOr[scala.Nothing] = js.undefined
     
     var italics: js.UndefOr[Boolean] = js.undefined
     
@@ -1454,17 +1753,43 @@ object anon {
     
     var noWrap: js.UndefOr[Boolean] = js.undefined
     
+    var ol: js.UndefOr[scala.Nothing] = js.undefined
+    
     var opacity: js.UndefOr[Double] = js.undefined
     
     var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
     var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
+    var pageReference: js.UndefOr[scala.Nothing] = js.undefined
+    
     var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.undefined
+    var preserveTrailingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
+    var qr: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var relativePosition: js.UndefOr[Position] = js.undefined
+    
+    var stack: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var style: js.UndefOr[StyleReference] = js.undefined
+    
+    var sub: js.UndefOr[Boolean] = js.undefined
+    
+    var sup: js.UndefOr[Boolean] = js.undefined
+    
+    var svg: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var table: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var textReference: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var toc: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var ul: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var unbreakable: js.UndefOr[Boolean] = js.undefined
   }
   object EleOmitContentTexttext {
     
@@ -1475,7 +1800,7 @@ object anon {
     
     extension [Self <: EleOmitContentTexttext](x: Self) {
       
-      inline def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
+      inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
       inline def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
       
@@ -1483,7 +1808,7 @@ object anon {
       
       inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String | PatternFill): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -1499,13 +1824,13 @@ object anon {
       
       inline def setChildrenFunction3(value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => Child): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColumnGap(value: Size): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
       
@@ -1521,7 +1846,7 @@ object anon {
       
       inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
       
-      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String | PatternFill): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
       inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
@@ -1535,7 +1860,7 @@ object anon {
       
       inline def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
       
-      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
+      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value*))
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
@@ -1599,28 +1924,46 @@ object anon {
       
       inline def setPreserveLeadingSpacesUndefined: Self = StObject.set(x, "preserveLeadingSpaces", js.undefined)
       
-      inline def setRelativePosition(value: X): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+      inline def setPreserveTrailingSpaces(value: Boolean): Self = StObject.set(x, "preserveTrailingSpaces", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveTrailingSpacesUndefined: Self = StObject.set(x, "preserveTrailingSpaces", js.undefined)
+      
+      inline def setRelativePosition(value: Position): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
       
       inline def setRelativePositionUndefined: Self = StObject.set(x, "relativePosition", js.undefined)
       
-      inline def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: (String | Style)*): Self = StObject.set(x, "style", js.Array(value*))
+      
+      inline def setSub(value: Boolean): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      
+      inline def setSup(value: Boolean): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      
+      inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
+      
+      inline def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
+      
+      inline def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
     }
   }
   
   /* Inlined jsx-pdf.jsx-pdf.<global>.JSX.Ele<std.Omit<pdfmake.pdfmake/interfaces.ContentUnorderedList, 'ul'>> */
   trait EleOmitContentUnorderedLi extends StObject {
     
-    var absolutePosition: js.UndefOr[X] = js.undefined
+    var absolutePosition: js.UndefOr[Position] = js.undefined
     
     var alignment: js.UndefOr[Alignment] = js.undefined
     
-    var background: js.UndefOr[String] = js.undefined
+    var background: js.UndefOr[String | PatternFill] = js.undefined
     
     var bold: js.UndefOr[Boolean] = js.undefined
+    
+    var canvas: js.UndefOr[scala.Nothing] = js.undefined
     
     var characterSpacing: js.UndefOr[Double] = js.undefined
     
@@ -1628,7 +1971,9 @@ object anon {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var columnGap: js.UndefOr[Size] = js.undefined
+    var columnGap: js.UndefOr[Double] = js.undefined
+    
+    var columns: js.UndefOr[scala.Nothing] = js.undefined
     
     var decoration: js.UndefOr[Decoration] = js.undefined
     
@@ -1636,7 +1981,7 @@ object anon {
     
     var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.undefined
+    var fillColor: js.UndefOr[String | PatternFill] = js.undefined
     
     var fillOpacity: js.UndefOr[Double] = js.undefined
     
@@ -1647,6 +1992,8 @@ object anon {
     var fontSize: js.UndefOr[Double] = js.undefined
     
     var headlineLevel: js.UndefOr[Double] = js.undefined
+    
+    var image: js.UndefOr[scala.Nothing] = js.undefined
     
     var italics: js.UndefOr[Boolean] = js.undefined
     
@@ -1660,19 +2007,45 @@ object anon {
     
     var noWrap: js.UndefOr[Boolean] = js.undefined
     
+    var ol: js.UndefOr[scala.Nothing] = js.undefined
+    
     var opacity: js.UndefOr[Double] = js.undefined
     
     var pageBreak: js.UndefOr[PageBreak] = js.undefined
     
     var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
+    var pageReference: js.UndefOr[scala.Nothing] = js.undefined
+    
     var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var relativePosition: js.UndefOr[X] = js.undefined
+    var preserveTrailingSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
+    var qr: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var relativePosition: js.UndefOr[Position] = js.undefined
+    
+    var stack: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var style: js.UndefOr[StyleReference] = js.undefined
+    
+    var sub: js.UndefOr[Boolean] = js.undefined
+    
+    var sup: js.UndefOr[Boolean] = js.undefined
+    
+    var svg: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var table: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var text: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var textReference: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var toc: js.UndefOr[scala.Nothing] = js.undefined
     
     var `type`: js.UndefOr[UnorderedListType] = js.undefined
+    
+    var unbreakable: js.UndefOr[Boolean] = js.undefined
   }
   object EleOmitContentUnorderedLi {
     
@@ -1683,7 +2056,7 @@ object anon {
     
     extension [Self <: EleOmitContentUnorderedLi](x: Self) {
       
-      inline def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
+      inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
       
       inline def setAbsolutePositionUndefined: Self = StObject.set(x, "absolutePosition", js.undefined)
       
@@ -1691,7 +2064,7 @@ object anon {
       
       inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String | PatternFill): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -1707,13 +2080,13 @@ object anon {
       
       inline def setChildrenFunction3(value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => Child): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColumnGap(value: Size): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
       inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
       
@@ -1729,7 +2102,7 @@ object anon {
       
       inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
       
-      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String | PatternFill): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
       inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
       
@@ -1743,7 +2116,7 @@ object anon {
       
       inline def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
       
-      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
+      inline def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value*))
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
@@ -1795,19 +2168,35 @@ object anon {
       
       inline def setPreserveLeadingSpacesUndefined: Self = StObject.set(x, "preserveLeadingSpaces", js.undefined)
       
-      inline def setRelativePosition(value: X): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+      inline def setPreserveTrailingSpaces(value: Boolean): Self = StObject.set(x, "preserveTrailingSpaces", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveTrailingSpacesUndefined: Self = StObject.set(x, "preserveTrailingSpaces", js.undefined)
+      
+      inline def setRelativePosition(value: Position): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
       
       inline def setRelativePositionUndefined: Self = StObject.set(x, "relativePosition", js.undefined)
       
-      inline def setStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: (String | Style)*): Self = StObject.set(x, "style", js.Array(value*))
+      
+      inline def setSub(value: Boolean): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      
+      inline def setSup(value: Boolean): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+      
+      inline def setSupUndefined: Self = StObject.set(x, "sup", js.undefined)
       
       inline def setType(value: UnorderedListType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setUnbreakable(value: Boolean): Self = StObject.set(x, "unbreakable", value.asInstanceOf[js.Any])
+      
+      inline def setUnbreakableUndefined: Self = StObject.set(x, "unbreakable", js.undefined)
     }
   }
   
@@ -1822,7 +2211,7 @@ object anon {
     
     var defaultStyle: js.UndefOr[Style] = js.undefined
     
-    var images: js.UndefOr[StringDictionary[String]] = js.undefined
+    var images: js.UndefOr[Record[String, String | ImageDefinition]] = js.undefined
     
     var info: js.UndefOr[TDocumentInformation] = js.undefined
     
@@ -1843,6 +2232,8 @@ object anon {
     var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
     
     var pageSize: js.UndefOr[PageSize] = js.undefined
+    
+    var patterns: js.UndefOr[Record[String, Pattern]] = js.undefined
     
     var permissions: js.UndefOr[DocumentPermissions] = js.undefined
     
@@ -1865,17 +2256,15 @@ object anon {
       
       inline def setBackground(value: DynamicBackground | typings.pdfmake.interfacesMod.Content): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      inline def setBackgroundFunction2(
-        value: (/* currentPage */ Double, /* pageSize */ ContextPageSize) => js.UndefOr[typings.pdfmake.interfacesMod.Content | Null]
-      ): Self = StObject.set(x, "background", js.Any.fromFunction2(value))
-      
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      
+      inline def setBackgroundVarargs(value: Any*): Self = StObject.set(x, "background", js.Array(value*))
       
       inline def setChildren(value: DynamicChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenFunction3(value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => Child): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -1885,7 +2274,7 @@ object anon {
       
       inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
       
-      inline def setImages(value: StringDictionary[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: Record[String, String | ImageDefinition]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
       inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
@@ -1914,6 +2303,10 @@ object anon {
       inline def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
       inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      
+      inline def setPatterns(value: Record[String, Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      
+      inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
       
       inline def setPermissions(value: DocumentPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
@@ -1957,7 +2350,7 @@ object anon {
       
       inline def setChildrenFunction3(value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => Child): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }

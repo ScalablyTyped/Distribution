@@ -26,6 +26,6 @@ object GoogleCloudVideointelligenceV1SpeechContext {
     
     inline def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
     
-    inline def setPhrasesVarargs(value: String*): Self = StObject.set(x, "phrases", js.Array(value :_*))
+    inline def setPhrasesVarargs(value: String*): Self = StObject.set(x, "phrases", js.Array(value*))
   }
 }

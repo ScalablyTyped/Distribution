@@ -14,14 +14,14 @@ trait SmartMappingSliderViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html#getUnzoomedMax)
     */
-  def getUnzoomedMax(): Unit = js.native
+  def getUnzoomedMax(): scala.Unit = js.native
   
   /**
     * Gets the [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html#min) value of the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html#getUnzoomedMin)
     */
-  def getUnzoomedMin(): Unit = js.native
+  def getUnzoomedMin(): scala.Unit = js.native
   
   /**
     * Zooms the slider track to the bounds provided in this property.

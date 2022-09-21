@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[F /* <: AnyFunction */](loadable: Loadable[F]*): js.Array[F] = ^.asInstanceOf[js.Dynamic].apply(loadable.asInstanceOf[js.Any]).asInstanceOf[js.Array[F]]
+  inline def apply[F /* <: AnyFunction */](loadable: Loadable[F]*): js.Array[F] = ^.asInstanceOf[js.Dynamic].apply(loadable.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[F]]
   
   @JSImport("loadware", JSImport.Namespace)
   @js.native

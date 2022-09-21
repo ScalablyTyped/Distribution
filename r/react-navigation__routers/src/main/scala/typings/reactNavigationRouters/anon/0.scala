@@ -1,24 +1,25 @@
 package typings.reactNavigationRouters.anon
 
-import typings.reactNavigationRouters.reactNavigationRoutersStrings.drawer
+import typings.reactNavigationRouters.typesMod.InitialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `0` extends StObject {
   
-  var `type`: drawer
+  var state: js.UndefOr[InitialState] = js.undefined
 }
 object `0` {
   
   inline def apply(): `0` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("drawer")
     __obj.asInstanceOf[`0`]
   }
   
   extension [Self <: `0`](x: Self) {
     
-    inline def setType(value: drawer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setState(value: InitialState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -43,7 +43,7 @@ object FileListResource {
     
     inline def setItems(value: js.Array[FileResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: FileResource*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: FileResource*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: driveNumbersignfileList): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

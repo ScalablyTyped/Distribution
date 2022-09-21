@@ -9,7 +9,7 @@ object metricsMod {
   
   @JSImport("@devexpress/utils/lib/geometry/metrics", "Metrics")
   @js.native
-  class Metrics () extends StObject
+  open class Metrics () extends StObject
   /* static members */
   object Metrics {
     

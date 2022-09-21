@@ -1,51 +1,53 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.mapboxGl.anon.FailIfMajorPerformanceCaveat
+import typings.mapboxGl.mod.^
+import typings.std.HTMLImageElement
+import typings.std.ImageBitmap
+import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def accessToken: java.lang.String = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("accessToken").asInstanceOf[java.lang.String]
-inline def accessToken_=(x: java.lang.String): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("accessToken")(x.asInstanceOf[js.Any])
+inline def accessToken: String = ^.asInstanceOf[js.Dynamic].selectDynamic("accessToken").asInstanceOf[String]
+inline def accessToken_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accessToken")(x.asInstanceOf[js.Any])
 
-inline def baseApiUrl: java.lang.String = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("baseApiUrl").asInstanceOf[java.lang.String]
-inline def baseApiUrl_=(x: java.lang.String): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("baseApiUrl")(x.asInstanceOf[js.Any])
+inline def baseApiUrl: String = ^.asInstanceOf[js.Dynamic].selectDynamic("baseApiUrl").asInstanceOf[String]
+inline def baseApiUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseApiUrl")(x.asInstanceOf[js.Any])
 
-inline def clearPrewarmedResources(): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearPrewarmedResources")().asInstanceOf[scala.Unit]
+inline def clearPrewarmedResources(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPrewarmedResources")().asInstanceOf[Unit]
 
-inline def clearStorage(): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearStorage")().asInstanceOf[scala.Unit]
-inline def clearStorage(callback: js.Function1[/* err */ js.UndefOr[typings.std.Error], scala.Unit]): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearStorage")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def clearStorage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStorage")().asInstanceOf[Unit]
+inline def clearStorage(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStorage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def getRTLTextPluginStatus(): typings.mapboxGl.mod.PluginStatus = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRTLTextPluginStatus")().asInstanceOf[typings.mapboxGl.mod.PluginStatus]
+inline def getRTLTextPluginStatus(): PluginStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getRTLTextPluginStatus")().asInstanceOf[PluginStatus]
 
 /**
   * Maximum number of images (raster tiles, sprites, icons) to load in parallel, which affects performance in raster-heavy maps.
   * 16 by default.
   */
-inline def maxParallelImageRequests: scala.Double = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("maxParallelImageRequests").asInstanceOf[scala.Double]
-inline def maxParallelImageRequests_=(x: scala.Double): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("maxParallelImageRequests")(x.asInstanceOf[js.Any])
+inline def maxParallelImageRequests: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("maxParallelImageRequests").asInstanceOf[Double]
+inline def maxParallelImageRequests_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxParallelImageRequests")(x.asInstanceOf[js.Any])
 
-inline def prewarm(): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("prewarm")().asInstanceOf[scala.Unit]
+inline def prewarm(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prewarm")().asInstanceOf[Unit]
 
-inline def setRTLTextPlugin(pluginURL: java.lang.String, callback: js.Function1[/* error */ typings.std.Error, scala.Unit]): scala.Unit = (typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setRTLTextPlugin")(pluginURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def setRTLTextPlugin(
-  pluginURL: java.lang.String,
-  callback: js.Function1[/* error */ typings.std.Error, scala.Unit],
-  deferred: scala.Boolean
-): scala.Unit = (typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setRTLTextPlugin")(pluginURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], deferred.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setRTLTextPlugin(pluginURL: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRTLTextPlugin")(pluginURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def setRTLTextPlugin(pluginURL: String, callback: js.Function1[/* error */ js.Error, Unit], deferred: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRTLTextPlugin")(pluginURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], deferred.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def supported(): scala.Boolean = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("supported")().asInstanceOf[scala.Boolean]
-inline def supported(options: typings.mapboxGl.anon.FailIfMajorPerformanceCaveat): scala.Boolean = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].applyDynamic("supported")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def supported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supported")().asInstanceOf[Boolean]
+inline def supported(options: FailIfMajorPerformanceCaveat): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supported")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def version: java.lang.String = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
-inline def version_=(x: java.lang.String): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
+inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 
 /**
   * Number of web workers instantiated on a page with GL JS maps.
   * By default, it is set to half the number of CPU cores (capped at 6).
   */
-inline def workerCount: scala.Double = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("workerCount").asInstanceOf[scala.Double]
-inline def workerCount_=(x: scala.Double): scala.Unit = typings.mapboxGl.mod.^.asInstanceOf[js.Dynamic].updateDynamic("workerCount")(x.asInstanceOf[js.Any])
+inline def workerCount: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("workerCount").asInstanceOf[Double]
+inline def workerCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("workerCount")(x.asInstanceOf[js.Any])
 
 /* Rewritten from type alias, can be one of: 
   - typings.mapboxGl.mod.BackgroundLayout
@@ -57,20 +59,49 @@ inline def workerCount_=(x: scala.Double): scala.Unit = typings.mapboxGl.mod.^.a
   - typings.mapboxGl.mod.CircleLayout
   - typings.mapboxGl.mod.HeatmapLayout
   - typings.mapboxGl.mod.HillshadeLayout
+  - typings.mapboxGl.mod.SkyLayout
 */
-type AnyLayout = typings.mapboxGl.mod._AnyLayout | typings.mapboxGl.mod.BackgroundLayout | typings.mapboxGl.mod.FillExtrusionLayout | typings.mapboxGl.mod.RasterLayout | typings.mapboxGl.mod.HeatmapLayout | typings.mapboxGl.mod.HillshadeLayout
+type AnyLayout = _AnyLayout | BackgroundLayout | FillExtrusionLayout | RasterLayout | HeatmapLayout | HillshadeLayout | SkyLayout
 
-type BackgroundLayout = typings.mapboxGl.mod.Layout
+/* Rewritten from type alias, can be one of: 
+  - typings.mapboxGl.mod.GeoJSONSourceRaw
+  - typings.mapboxGl.mod.VideoSourceRaw
+  - typings.mapboxGl.mod.ImageSourceRaw
+  - typings.mapboxGl.mod.CanvasSourceRaw
+  - typings.mapboxGl.mod.VectorSource
+  - typings.mapboxGl.mod.RasterSource
+  - typings.mapboxGl.mod.RasterDemSource
+  - typings.mapboxGl.mod.CustomSourceInterface[typings.std.HTMLImageElement | typings.std.ImageData | typings.std.ImageBitmap]
+*/
+type AnySourceData = _AnySourceData | (CustomSourceInterface[HTMLImageElement | ImageData | ImageBitmap])
 
-type EventData = org.scalablytyped.runtime.StringDictionary[js.Any]
+/* Rewritten from type alias, can be one of: 
+  - typings.mapboxGl.mod.GeoJSONSource
+  - typings.mapboxGl.mod.VideoSource
+  - typings.mapboxGl.mod.ImageSource
+  - typings.mapboxGl.mod.CanvasSource
+  - typings.mapboxGl.mod.VectorSourceImpl
+  - typings.mapboxGl.mod.RasterSource
+  - typings.mapboxGl.mod.RasterDemSource
+  - typings.mapboxGl.mod.CustomSource[typings.std.HTMLImageElement | typings.std.ImageData | typings.std.ImageBitmap]
+*/
+type AnySourceImpl = _AnySourceImpl | (CustomSource[HTMLImageElement | ImageData | ImageBitmap])
 
-type Expression = Array[typings.mapboxGl.mod.ExpressionName | js.Any]
+type BackgroundLayout = Layout
 
-type FillExtrusionLayout = typings.mapboxGl.mod.Layout
+type EventData = StringDictionary[Any]
 
-type HeatmapLayout = typings.mapboxGl.mod.Layout
+type EventedListener = js.Function1[/* object */ js.UndefOr[js.Object], Any]
 
-type HillshadeLayout = typings.mapboxGl.mod.Layout
+type Expression = Array[ExpressionName | Any]
+
+type ExpressionSpecification = js.Array[Any]
+
+type FillExtrusionLayout = Layout
+
+type HeatmapLayout = Layout
+
+type HillshadeLayout = Layout
 
 /* Rewritten from type alias, can be one of: 
   - typings.mapboxGl.mod.LngLatBounds
@@ -78,9 +109,7 @@ type HillshadeLayout = typings.mapboxGl.mod.Layout
   - js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
   - typings.mapboxGl.mod.LngLatLike
 */
-type LngLatBoundsLike = typings.mapboxGl.mod._LngLatBoundsLike | (js.Tuple2[
-scala.Double | typings.mapboxGl.mod.LngLatLike, 
-scala.Double | typings.mapboxGl.mod.LngLatLike]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
+type LngLatBoundsLike = _LngLatBoundsLike | (js.Tuple2[Double | LngLatLike, Double | LngLatLike]) | (js.Tuple4[Double, Double, Double, Double])
 
 /* Rewritten from type alias, can be one of: 
   - js.Tuple2[scala.Double, scala.Double]
@@ -88,17 +117,24 @@ scala.Double | typings.mapboxGl.mod.LngLatLike]) | (js.Tuple4[scala.Double, scal
   - typings.mapboxGl.anon.Lat
   - typings.mapboxGl.anon.Lon
 */
-type LngLatLike = typings.mapboxGl.mod._LngLatLike | (js.Tuple2[scala.Double, scala.Double])
+type LngLatLike = _LngLatLike | (js.Tuple2[Double, Double])
 
-type PointLike = typings.mapboxGl.mod.Point | (js.Tuple2[scala.Double, scala.Double])
+type Offset = Double | PointLike | StringDictionary[PointLike]
 
-type PromoteIdSpecification = org.scalablytyped.runtime.StringDictionary[java.lang.String] | java.lang.String
+type PointLike = Point | (js.Tuple2[Double, Double])
 
-type RasterLayout = typings.mapboxGl.mod.Layout
+type PromoteIdSpecification = StringDictionary[String] | String
 
-type Sources = org.scalablytyped.runtime.StringDictionary[typings.mapboxGl.mod.AnySourceData]
+type PropertyValueSpecification[T] = T | CameraFunctionSpecification[T] | ExpressionSpecification
 
-type TransformRequestFunction = js.Function2[
-/* url */ java.lang.String, 
-/* resourceType */ typings.mapboxGl.mod.ResourceType, 
-typings.mapboxGl.mod.RequestParameters]
+type RasterLayout = Layout
+
+type SkyLayout = Layout
+
+type Sources = StringDictionary[AnySourceData]
+
+type TransformRequestFunction = js.Function2[/* url */ String, /* resourceType */ ResourceType, RequestParameters]
+
+type quat = js.Array[Double]
+
+type vec3 = js.Array[Double]

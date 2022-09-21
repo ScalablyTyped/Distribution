@@ -1,7 +1,6 @@
 package typings.sawtoothSdk.mod
 
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,42 +15,42 @@ object exceptions {
     * @param [message] - an optional message, defaults to the empty
     * string
     */
-  class AuthorizationException ()
+  open class AuthorizationException ()
     extends typings.sawtoothSdk.exceptionsMod.AuthorizationException {
     def this(message: String) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions.InternalError")
   @js.native
-  /* protected */ class InternalError ()
+  /* protected */ open class InternalError ()
     extends typings.sawtoothSdk.exceptionsMod.InternalError {
     /* protected */ def this(message: String) = this()
+    /* protected */ def this(message: String, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: String, extendedData: Buffer) = this()
-    /* protected */ def this(message: String, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: Unit, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: Unit, extendedData: Buffer) = this()
-    /* protected */ def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions.InvalidTransaction")
   @js.native
-  /* protected */ class InvalidTransaction ()
+  /* protected */ open class InvalidTransaction ()
     extends typings.sawtoothSdk.exceptionsMod.InvalidTransaction {
     /* protected */ def this(message: String) = this()
+    /* protected */ def this(message: String, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: String, extendedData: Buffer) = this()
-    /* protected */ def this(message: String, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: Unit, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: Unit, extendedData: Buffer) = this()
-    /* protected */ def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions._TransactionProcessorError")
   @js.native
-  /* protected */ class TransactionProcessorError ()
+  /* protected */ open class TransactionProcessorError ()
     extends typings.sawtoothSdk.exceptionsMod.TransactionProcessorError {
     /* protected */ def this(message: String) = this()
+    /* protected */ def this(message: String, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: String, extendedData: Buffer) = this()
-    /* protected */ def this(message: String, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: Unit, extendedData: js.typedarray.Uint8Array) = this()
     /* protected */ def this(message: Unit, extendedData: Buffer) = this()
-    /* protected */ def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions.ValidatorConnectionError")
@@ -62,7 +61,7 @@ object exceptions {
     * @param [message] - an optional message, defaults to the empty
     * string
     */
-  class ValidatorConnectionError ()
+  open class ValidatorConnectionError ()
     extends typings.sawtoothSdk.exceptionsMod.ValidatorConnectionError {
     def this(message: String) = this()
   }

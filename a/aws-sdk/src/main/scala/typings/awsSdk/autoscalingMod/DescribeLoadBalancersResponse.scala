@@ -29,7 +29,7 @@ object DescribeLoadBalancersResponse {
     
     inline def setLoadBalancersUndefined: Self = StObject.set(x, "LoadBalancers", js.undefined)
     
-    inline def setLoadBalancersVarargs(value: LoadBalancerState*): Self = StObject.set(x, "LoadBalancers", js.Array(value :_*))
+    inline def setLoadBalancersVarargs(value: LoadBalancerState*): Self = StObject.set(x, "LoadBalancers", js.Array(value*))
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

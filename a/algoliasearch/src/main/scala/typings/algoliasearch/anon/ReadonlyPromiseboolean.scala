@@ -16,9 +16,9 @@ trait ReadonlyPromiseboolean extends StObject {
 object ReadonlyPromiseboolean {
   
   inline def apply(
-    `catch`: () => js.Promise[Boolean | js.Any],
+    `catch`: () => js.Promise[Boolean | Any],
     `finally`: () => js.Promise[Boolean],
-    `then`: () => js.Promise[js.Any | js.Any]
+    `then`: () => js.Promise[Any | Any]
   ): ReadonlyPromiseboolean = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -29,10 +29,10 @@ object ReadonlyPromiseboolean {
   
   extension [Self <: ReadonlyPromiseboolean](x: Self) {
     
-    inline def setCatch(value: () => js.Promise[Boolean | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[Boolean | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
     inline def setFinally(value: () => js.Promise[Boolean]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

@@ -10,10 +10,10 @@ object formatPaintMod {
   
   @JSImport("material-ui/svg-icons/editor/format-paint", JSImport.Default)
   @js.native
-  class default () extends EditorFormatPaint
+  open class default () extends EditorFormatPaint
   
   @JSImport("material-ui/svg-icons/editor/format-paint", "EditorFormatPaint")
   @js.native
-  class EditorFormatPaint ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatPaint ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

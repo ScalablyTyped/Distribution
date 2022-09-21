@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SpatialReferenceConstructor
   extends StObject
-     with Instantiable0[SpatialReference]
+     with /**
+  * Defines the spatial reference of a view, layer, or method parameters.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html)
+  */
+Instantiable0[SpatialReference]
      with Instantiable1[/* properties */ SpatialReferenceProperties, SpatialReference] {
   
   /**
@@ -26,5 +31,5 @@ trait SpatialReferenceConstructor
     */
   var WebMercator: SpatialReference = js.native
   
-  def fromJSON(json: js.Any): SpatialReference = js.native
+  def fromJSON(json: Any): SpatialReference = js.native
 }

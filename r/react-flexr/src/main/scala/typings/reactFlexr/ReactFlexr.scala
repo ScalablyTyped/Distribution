@@ -1,7 +1,8 @@
 package typings.reactFlexr
 
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import typings.reactFlexr.reactFlexrStrings.bottom
 import typings.reactFlexr.reactFlexrStrings.center
 import typings.reactFlexr.reactFlexrStrings.left
@@ -13,18 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ReactFlexr {
   
-  @js.native
-  trait Cell
-    extends Component[CellProps, js.Object, js.Any]
+  type Cell = Component[CellProps, js.Object, Any]
   
-  trait CellProps
-    extends StObject
-       with Props[Cell] {
+  trait CellProps extends StObject {
     
     /**
       * Vertical Align This Cell: top, center, bottom
       */
     var align: js.UndefOr[top | center | bottom] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Like size, but only for desk devices.
@@ -60,6 +59,8 @@ object ReactFlexr {
       */
     var portable: js.UndefOr[String | Double] = js.undefined
     
+    var ref: js.UndefOr[LegacyRef[Cell]] = js.undefined
+    
     /**
       * Takes a fraction. e.g. 1/6
       */
@@ -77,6 +78,10 @@ object ReactFlexr {
       inline def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDesk(value: String | Double): Self = StObject.set(x, "desk", value.asInstanceOf[js.Any])
       
@@ -102,6 +107,14 @@ object ReactFlexr {
       
       inline def setPortableUndefined: Self = StObject.set(x, "portable", js.undefined)
       
+      inline def setRef(value: LegacyRef[Cell]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Cell | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
@@ -126,18 +139,16 @@ object ReactFlexr {
     inline def portable: typings.reactFlexr.reactFlexrStrings.portable = "portable".asInstanceOf[typings.reactFlexr.reactFlexrStrings.portable]
   }
   
-  @js.native
-  trait Grid
-    extends Component[GridProps, js.Object, js.Any]
+  type Grid = Component[GridProps, js.Object, Any]
   
-  trait GridProps
-    extends StObject
-       with Props[Grid] {
+  trait GridProps extends StObject {
     
     /**
       * Vertical Align Sub Cells: top, center, bottom
       */
     var align: js.UndefOr[top | center | bottom] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * All sub cells will be full height.
@@ -155,6 +166,8 @@ object ReactFlexr {
       * Horizontal Align Sub Cells: left, center, right
       */
     var hAlign: js.UndefOr[left | center | right] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[Grid]] = js.undefined
   }
   object GridProps {
     
@@ -169,6 +182,10 @@ object ReactFlexr {
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setFlexCells(value: Boolean): Self = StObject.set(x, "flexCells", value.asInstanceOf[js.Any])
       
       inline def setFlexCellsUndefined: Self = StObject.set(x, "flexCells", js.undefined)
@@ -180,6 +197,14 @@ object ReactFlexr {
       inline def setHAlign(value: left | center | right): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
       inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
+      
+      inline def setRef(value: LegacyRef[Grid]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Grid | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   

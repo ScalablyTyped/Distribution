@@ -43,7 +43,7 @@ trait XMLNode extends StObject {
   
   val OwnerDocument: Document = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentNode: XMLNode = js.native
   
@@ -74,8 +74,8 @@ trait XMLNode extends StObject {
   def SelectSingleNode(XPath: String, PrefixMapping: Unit, FastSearchSkippingTextNodes: Boolean): XMLNode = js.native
   
   /** @param boolean [ClearedAutomatically=true] */
-  def SetValidationError(Status: WdXMLValidationStatus, ErrorText: js.Any): Unit = js.native
-  def SetValidationError(Status: WdXMLValidationStatus, ErrorText: js.Any, ClearedAutomatically: Boolean): Unit = js.native
+  def SetValidationError(Status: WdXMLValidationStatus, ErrorText: Any): Unit = js.native
+  def SetValidationError(Status: WdXMLValidationStatus, ErrorText: Any, ClearedAutomatically: Boolean): Unit = js.native
   
   val SmartTag: typings.activexWord.Word.SmartTag = js.native
   

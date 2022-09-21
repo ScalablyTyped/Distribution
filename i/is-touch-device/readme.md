@@ -11,14 +11,11 @@ Is the current JS environment a touch device?
 | Full name          | is-touch-device |
 | Keywords           | touch, is, documenttouch, maxtouchpoints, msmaxtouchpoints, touchpoints, ontouchstart |
 | # releases         | 1 |
-| # dependents       | 65 |
-| # downloads        | 19688852 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2310123.6666666665 |
+| # stars            | 86.0 |
 
 ## Links
-- [Homepage](https://github.com/airbnb/is-touch-device#readme)
-- [Bugs](https://github.com/airbnb/is-touch-device/issues)
-- [Repository](https://github.com/airbnb/is-touch-device)
 - [Npm](https://www.npmjs.com/package/is-touch-device)
     
 

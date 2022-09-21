@@ -19,12 +19,12 @@ trait JobSummary extends StObject {
   /**
     *  The commit date and time for the job. 
     */
-  var commitTime: CommitTime
+  var commitTime: js.Date
   
   /**
     *  The end date and time for the job. 
     */
-  var endTime: js.UndefOr[EndTime] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) for the job. 
@@ -44,7 +44,7 @@ trait JobSummary extends StObject {
   /**
     *  The start date and time for the job. 
     */
-  var startTime: StartTime
+  var startTime: js.Date
   
   /**
     *  The current status for the job. 
@@ -56,11 +56,11 @@ object JobSummary {
   inline def apply(
     commitId: CommitId,
     commitMessage: CommitMessage,
-    commitTime: CommitTime,
+    commitTime: js.Date,
     jobArn: JobArn,
     jobId: JobId,
     jobType: JobType,
-    startTime: StartTime,
+    startTime: js.Date,
     status: JobStatus
   ): JobSummary = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], commitMessage = commitMessage.asInstanceOf[js.Any], commitTime = commitTime.asInstanceOf[js.Any], jobArn = jobArn.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], jobType = jobType.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
@@ -73,9 +73,9 @@ object JobSummary {
     
     inline def setCommitMessage(value: CommitMessage): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
     
-    inline def setCommitTime(value: CommitTime): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
+    inline def setCommitTime(value: js.Date): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -85,7 +85,7 @@ object JobSummary {
     
     inline def setJobType(value: JobType): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

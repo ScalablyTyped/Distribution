@@ -1,19 +1,18 @@
 
 # Scala.js typings for node-red__runtime
 
-Typings are for version 1.1
+Typings are for version 1.2
 
-## Library description:
-@node-red/runtime ====================
+
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @node-red/runtime |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 8 |
-| # downloads        | 932731 |
-| # stars            | 0 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 85007.0 |
+| # stars            | 15051.0 |
 
 ## Links
 - [Homepage](https://github.com/node-red/node-red#readme)

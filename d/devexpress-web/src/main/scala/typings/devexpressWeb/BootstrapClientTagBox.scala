@@ -44,7 +44,7 @@ trait BootstrapClientTagBox
     * Returns an HTML span element that corresponds to the specified tag. An object that is the HTML span element that corresponds to the specified tag.
     * @param index An integer value that is the tag index.
     */
-  def GetTagHtmlElement(index: Double): js.Any = js.native
+  def GetTagHtmlElement(index: Double): Any = js.native
   
   /**
     * Returns the index of a tag specified by its text. An integer value that is the tag index
@@ -56,13 +56,13 @@ trait BootstrapClientTagBox
     * Returns an HTML span element that corresponds to the specified tag's remove button. An object that is the HTML span element that corresponds to the specified tag's remove button.
     * @param index An integer value that is the tag index.
     */
-  def GetTagRemoveButtonHtmlElement(index: Double): js.Any = js.native
+  def GetTagRemoveButtonHtmlElement(index: Double): Any = js.native
   
   /**
     * Returns an HTML span element that corresponds to the specified tag's text. An object that is the HTML span element that corresponds to the specified tag's text.
     * @param index An integer value that is the tag index.
     */
-  def GetTagTextHtmlElement(index: Double): js.Any = js.native
+  def GetTagTextHtmlElement(index: Double): Any = js.native
   
   /**
     * Returns a value that indicates if the specified tag (string) is a custom tag. true, if the tag is not contained in the predefined BootstrapTagBox.Items collection; otherwise, false.
@@ -98,7 +98,8 @@ trait BootstrapClientTagBox
   def SetItemBadgeText(index: Double, text: String): Unit = js.native
   
   /**
-    * This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.
+    * Sets the list editor's selected item.
+    * @param item A BootstrapClientListBoxItem object that specifies the item to select.
     */
   def SetSelectedItem(item: BootstrapClientListBoxItem): Unit = js.native
   

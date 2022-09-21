@@ -12,10 +12,42 @@ trait LinearGradientProps
   extends StObject
      with LinearGradientBackground {
   
+  /**
+    * @language zh-CN
+    * @description 该子节点会被添加渐变效果，一般为 Rect
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The child node is added with a gradient effect, usually rect
+    * @defaultValue null
+    */
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 渐变 id
+    * @defaultValue "linear-gradient"
+    */
+  /**
+    * @language en-US
+    * @description Gradient ID
+    * @defaultValue "linear-gradient"
+    */
   var gradientId: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 容器样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Container style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object LinearGradientProps {

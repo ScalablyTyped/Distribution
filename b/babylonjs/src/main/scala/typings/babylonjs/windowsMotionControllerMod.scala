@@ -15,12 +15,21 @@ object windowsMotionControllerMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController")
   @js.native
-  class WindowsMotionController protected () extends WebVRController {
+  open class WindowsMotionController protected () extends WebVRController {
     /**
       * Creates a new WindowsMotionController from a gamepad
       * @param vrGamepad the gamepad that the controller should be created from
       */
-    def this(vrGamepad: js.Any) = this()
+    def this(vrGamepad: Any) = this()
+    
+    /* private */ var _createMeshInfo: Any = js.native
+    
+    /**
+      * Called once for each button that changed state since the last frame
+      * @param buttonIdx Which button index changed
+      * @param state New state of the button
+      */
+    /* protected */ def _handleButtonChange(buttonIdx: Double, state: ExtendedGamepadButton): Unit = js.native
     
     /**
       * Moves the axis on the controller mesh based on its current state
@@ -37,13 +46,21 @@ object windowsMotionControllerMod {
       */
     /* protected */ def _lerpButtonTransform(buttonName: String, buttonValue: Double): Unit = js.native
     
-    /* private */ var _loadedMeshInfo: js.Any = js.native
+    /* private */ var _loadedMeshInfo: Any = js.native
     
     /* protected */ val _mapping: AxisMeshNames = js.native
     
-    /* protected */ def _updateTrackpad(): Unit = js.native
+    /**
+      * Takes a list of meshes (as loaded from the glTF file) and finds the root node, as well as nodes that
+      * can be transformed by button presses and axes values, based on this._mapping.
+      *
+      * @param scene scene in which the meshes exist
+      * @param meshes list of meshes that make up the controller model to process
+      * @returns structured view of the given meshes, with mapping of buttons and axes to meshes that can be transformed.
+      */
+    /* private */ var _processModel: Any = js.native
     
-    /* private */ var createMeshInfo: js.Any = js.native
+    /* protected */ def _updateTrackpad(): Unit = js.native
     
     def initControllerMesh(scene: Scene, meshLoaded: js.Function1[/* mesh */ AbstractMesh, Unit], forceDefault: Boolean): Unit = js.native
     def initControllerMesh(scene: Scene, meshLoaded: Unit, forceDefault: Boolean): Unit = js.native
@@ -89,16 +106,6 @@ object windowsMotionControllerMod {
     def onTriggerButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
     
     /**
-      * Takes a list of meshes (as loaded from the glTF file) and finds the root node, as well as nodes that
-      * can be transformed by button presses and axes values, based on this._mapping.
-      *
-      * @param scene scene in which the meshes exist
-      * @param meshes list of meshes that make up the controller model to process
-      * @return structured view of the given meshes, with mapping of buttons and axes to meshes that can be transformed.
-      */
-    /* private */ var processModel: js.Any = js.native
-    
-    /**
       * The current x and y values of this controller's trackpad
       */
     var trackpad: StickValues = js.native
@@ -115,7 +122,7 @@ object windowsMotionControllerMod {
       */
     @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "WindowsMotionController.GAMEPAD_ID_PATTERN")
     @js.native
-    val GAMEPAD_ID_PATTERN: js.Any = js.native
+    val GAMEPAD_ID_PATTERN: Any = js.native
     
     /**
       * The controller name prefix for this controller type
@@ -151,13 +158,13 @@ object windowsMotionControllerMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/windowsMotionController", "XRWindowsMotionController")
   @js.native
-  class XRWindowsMotionController protected () extends WindowsMotionController {
+  open class XRWindowsMotionController protected () extends WindowsMotionController {
     /**
       * Construct a new XR-Based windows motion controller
       *
       * @param gamepadInfo the gamepad object from the browser
       */
-    def this(gamepadInfo: js.Any) = this()
+    def this(gamepadInfo: Any) = this()
     
     /**
       * Fired when the thumbstick on this controller is clicked

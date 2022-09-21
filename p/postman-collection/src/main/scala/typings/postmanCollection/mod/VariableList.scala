@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postman-collection", "VariableList")
 @js.native
-class VariableList protected () extends PropertyList[Variable] {
+open class VariableList protected () extends PropertyList[Variable] {
   def this(parent: Property[PropertyDefinition], populate: js.Array[Variable]) = this()
   
   def replace(str: String): String = js.native
@@ -34,5 +34,5 @@ object VariableList {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isVariableList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariableList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isVariableList(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariableList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

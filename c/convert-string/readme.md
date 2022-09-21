@@ -10,10 +10,10 @@ Convert to/from strings and array of bytes
 | ------------------ | :-------------: |
 | Full name          | convert-string |
 | Keywords           | string, strings, convert, hex, bytes |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 1327272 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 249589.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/convert-string)

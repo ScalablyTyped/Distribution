@@ -10,12 +10,10 @@ object badgeMod {
   
   @JSImport("react-bootstrap/lib/Badge", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[BadgeProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[BadgeProps, js.Object, Any]
   
-  @js.native
-  trait Badge
-    extends Component[BadgeProps, js.Object, js.Any]
+  type Badge = Component[BadgeProps, js.Object, Any]
   
   trait BadgeProps
     extends StObject

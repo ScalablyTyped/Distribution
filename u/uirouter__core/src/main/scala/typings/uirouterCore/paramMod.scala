@@ -42,7 +42,7 @@ object paramMod {
   
   @JSImport("@uirouter/core/lib/params/param", "Param")
   @js.native
-  class Param protected () extends StObject {
+  open class Param protected () extends StObject {
     def this(id: String, `type`: ParamType, location: DefType, urlConfig: UrlConfig, state: StateDeclaration) = this()
     
     /** Cache the default value if it is a static value */
@@ -50,7 +50,7 @@ object paramMod {
     
     var array: Boolean = js.native
     
-    var config: js.Any = js.native
+    var config: Any = js.native
     
     var dynamic: Boolean = js.native
     
@@ -58,7 +58,7 @@ object paramMod {
     
     var inherit: Boolean = js.native
     
-    def isDefaultValue(value: js.Any): Boolean = js.native
+    def isDefaultValue(value: Any): Boolean = js.native
     
     var isOptional: Boolean = js.native
     
@@ -74,14 +74,14 @@ object paramMod {
     
     var `type`: ParamType = js.native
     
-    def validates(value: js.Any): Boolean = js.native
+    def validates(value: Any): Boolean = js.native
     
     /**
       * [Internal] Gets the decoded representation of a value if the value is defined, otherwise, returns the
       * default value, which may be the result of an injectable function.
       */
-    def value(): js.Any = js.native
-    def value(value: js.Any): js.Any = js.native
+    def value(): Any = js.native
+    def value(value: Any): Any = js.native
   }
   /* static members */
   object Param {

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.Event")
 @js.native
-class Event protected ()
+open class Event protected ()
   extends StObject
      with typings.phaser.spine.Event {
   def this(time: Double, data: typings.phaser.spine.EventData) = this()

@@ -17,10 +17,10 @@ object builderMod {
   /**
     * Create a new setting manager.
     */
-  class BuildManager () extends StObject {
+  open class BuildManager () extends StObject {
     def this(options: IOptions) = this()
     
-    /* private */ var _url: js.Any = js.native
+    /* private */ var _url: Any = js.native
     
     /**
       * Build the application.

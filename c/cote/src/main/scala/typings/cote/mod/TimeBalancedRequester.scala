@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cote", "TimeBalancedRequester")
 @js.native
-class TimeBalancedRequester protected () extends Requester {
+open class TimeBalancedRequester protected () extends Requester {
   def this(/**
     * Configuration which controls the data being advertised for auto-discovery.
     */

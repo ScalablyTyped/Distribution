@@ -17,17 +17,17 @@ trait DatabaseDeleteEvent
   extends StObject
      with EventObject {
   
-  var Bookmarks: SafeArray[js.Any]
+  var Bookmarks: SafeArray[Any]
 }
 object DatabaseDeleteEvent {
   
-  inline def apply(Bookmarks: SafeArray[js.Any], Source: XInterface): DatabaseDeleteEvent = {
+  inline def apply(Bookmarks: SafeArray[Any], Source: XInterface): DatabaseDeleteEvent = {
     val __obj = js.Dynamic.literal(Bookmarks = Bookmarks.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseDeleteEvent]
   }
   
   extension [Self <: DatabaseDeleteEvent](x: Self) {
     
-    inline def setBookmarks(value: SafeArray[js.Any]): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
+    inline def setBookmarks(value: SafeArray[Any]): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
   }
 }

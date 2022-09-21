@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents product information used by the HttpProductHeaderValue and HttpProductInfoHeaderValueCollection classes in the User-Agent HTTP header. */
 @JSGlobal("Windows.Web.Http.Headers.HttpProductHeaderValue")
 @js.native
-class HttpProductHeaderValue protected ()
+open class HttpProductHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpProductHeaderValue {
   /**

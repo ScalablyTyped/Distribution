@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the color scale criteria for conditional formatting.
   *
-  * Represents ColorScale criteria for conditional formatting.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -26,9 +26,9 @@ trait ColorScaleConditionalFormat
   var context_ColorScaleConditionalFormat: RequestContext = js.native
   
   /**
-    *
     * The criteria of the color scale. Midpoint is optional when using a two point color scale.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var criteria: ConditionalColorScaleCriteria = js.native
@@ -46,14 +46,8 @@ trait ColorScaleConditionalFormat
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ColorScaleConditionalFormat): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ColorScaleConditionalFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -61,9 +55,9 @@ trait ColorScaleConditionalFormat
   def set(properties: ColorScaleConditionalFormatUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
+    * If `true`, the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).
     *
-    * If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val threeColorScale: Boolean = js.native

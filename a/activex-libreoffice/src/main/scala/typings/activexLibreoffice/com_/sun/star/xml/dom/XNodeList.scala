@@ -26,7 +26,7 @@ object XNodeList {
     acquire: () => Unit,
     getLength: () => Double,
     item: Double => XNode,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XNodeList = {
     val __obj = js.Dynamic.literal(Length = Length.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getLength = js.Any.fromFunction0(getLength), item = js.Any.fromFunction1(item), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

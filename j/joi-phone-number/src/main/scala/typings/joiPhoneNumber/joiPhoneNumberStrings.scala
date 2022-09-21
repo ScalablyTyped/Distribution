@@ -21,4 +21,8 @@ object joiPhoneNumberStrings {
   @js.native
   sealed trait rfc3966 extends StObject
   inline def rfc3966: rfc3966 = "rfc3966".asInstanceOf[rfc3966]
+  
+  @js.native
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type ARN = java.lang.String
 
-type AbortableOperationInProgress = scala.Boolean
+type AbortableOperationInProgress = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Completed_
@@ -15,7 +15,7 @@ type AbortableOperationInProgress = scala.Boolean
   - typings.awsSdk.awsSdkStrings.Unknown_
   - java.lang.String
 */
-type ActionHistoryStatus = typings.awsSdk.elasticbeanstalkMod._ActionHistoryStatus | java.lang.String
+type ActionHistoryStatus = _ActionHistoryStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Scheduled_
@@ -24,7 +24,7 @@ type ActionHistoryStatus = typings.awsSdk.elasticbeanstalkMod._ActionHistoryStat
   - typings.awsSdk.awsSdkStrings.Unknown_
   - java.lang.String
 */
-type ActionStatus = typings.awsSdk.elasticbeanstalkMod._ActionStatus | java.lang.String
+type ActionStatus = _ActionStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InstanceRefresh
@@ -32,21 +32,21 @@ type ActionStatus = typings.awsSdk.elasticbeanstalkMod._ActionStatus | java.lang
   - typings.awsSdk.awsSdkStrings.Unknown_
   - java.lang.String
 */
-type ActionType = typings.awsSdk.elasticbeanstalkMod._ActionType | java.lang.String
+type ActionType = _ActionType | java.lang.String
 
 type ApplicationArn = java.lang.String
 
-type ApplicationDescriptionList = js.Array[typings.awsSdk.elasticbeanstalkMod.ApplicationDescription]
+type ApplicationDescriptionList = js.Array[ApplicationDescription]
 
 type ApplicationName = java.lang.String
 
-type ApplicationNamesList = js.Array[typings.awsSdk.elasticbeanstalkMod.ApplicationName]
+type ApplicationNamesList = js.Array[ApplicationName]
 
 type ApplicationVersionArn = java.lang.String
 
-type ApplicationVersionDescriptionList = js.Array[typings.awsSdk.elasticbeanstalkMod.ApplicationVersionDescription]
+type ApplicationVersionDescriptionList = js.Array[ApplicationVersionDescription]
 
-type ApplicationVersionProccess = scala.Boolean
+type ApplicationVersionProccess = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Processed
@@ -56,29 +56,29 @@ type ApplicationVersionProccess = scala.Boolean
   - typings.awsSdk.awsSdkStrings.Building_
   - java.lang.String
 */
-type ApplicationVersionStatus = typings.awsSdk.elasticbeanstalkMod._ApplicationVersionStatus | java.lang.String
+type ApplicationVersionStatus = _ApplicationVersionStatus | java.lang.String
 
-type AutoCreateApplication = scala.Boolean
+type AutoCreateApplication = Boolean
 
-type AutoScalingGroupList = js.Array[typings.awsSdk.elasticbeanstalkMod.AutoScalingGroup]
+type AutoScalingGroupList = js.Array[AutoScalingGroup]
 
-type AvailableSolutionStackDetailsList = js.Array[typings.awsSdk.elasticbeanstalkMod.SolutionStackDescription]
+type AvailableSolutionStackDetailsList = js.Array[SolutionStackDescription]
 
-type AvailableSolutionStackNamesList = js.Array[typings.awsSdk.elasticbeanstalkMod.SolutionStackName]
+type AvailableSolutionStackNamesList = js.Array[SolutionStackName]
 
-type BoxedBoolean = scala.Boolean
+type BoxedBoolean = Boolean
 
-type BoxedInt = scala.Double
+type BoxedInt = Double
 
 type BranchName = java.lang.String
 
-type BranchOrder = scala.Double
+type BranchOrder = Double
 
 type Cause = java.lang.String
 
-type Causes = js.Array[typings.awsSdk.elasticbeanstalkMod.Cause]
+type Causes = js.Array[Cause]
 
-type CnameAvailability = scala.Boolean
+type CnameAvailability = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BUILD_GENERAL1_SMALL
@@ -86,27 +86,27 @@ type CnameAvailability = scala.Boolean
   - typings.awsSdk.awsSdkStrings.BUILD_GENERAL1_LARGE
   - java.lang.String
 */
-type ComputeType = typings.awsSdk.elasticbeanstalkMod._ComputeType | java.lang.String
+type ComputeType = _ComputeType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.deployed_
+  - typings.awsSdk.awsSdkStrings.deployed__
   - typings.awsSdk.awsSdkStrings.pending__
   - typings.awsSdk.awsSdkStrings.failed__
   - java.lang.String
 */
-type ConfigurationDeploymentStatus = typings.awsSdk.elasticbeanstalkMod._ConfigurationDeploymentStatus | java.lang.String
+type ConfigurationDeploymentStatus = _ConfigurationDeploymentStatus | java.lang.String
 
 type ConfigurationOptionDefaultValue = java.lang.String
 
-type ConfigurationOptionDescriptionsList = js.Array[typings.awsSdk.elasticbeanstalkMod.ConfigurationOptionDescription]
+type ConfigurationOptionDescriptionsList = js.Array[ConfigurationOptionDescription]
 
 type ConfigurationOptionName = java.lang.String
 
 type ConfigurationOptionPossibleValue = java.lang.String
 
-type ConfigurationOptionPossibleValues = js.Array[typings.awsSdk.elasticbeanstalkMod.ConfigurationOptionPossibleValue]
+type ConfigurationOptionPossibleValues = js.Array[ConfigurationOptionPossibleValue]
 
-type ConfigurationOptionSettingsList = js.Array[typings.awsSdk.elasticbeanstalkMod.ConfigurationOptionSetting]
+type ConfigurationOptionSettingsList = js.Array[ConfigurationOptionSetting]
 
 type ConfigurationOptionSeverity = java.lang.String
 
@@ -114,28 +114,28 @@ type ConfigurationOptionValue = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Scalar
-  - typings.awsSdk.awsSdkStrings.List
+  - typings.awsSdk.awsSdkStrings.List_
   - java.lang.String
 */
-type ConfigurationOptionValueType = typings.awsSdk.elasticbeanstalkMod._ConfigurationOptionValueType | java.lang.String
+type ConfigurationOptionValueType = _ConfigurationOptionValueType | java.lang.String
 
-type ConfigurationSettingsDescriptionList = js.Array[typings.awsSdk.elasticbeanstalkMod.ConfigurationSettingsDescription]
+type ConfigurationSettingsDescriptionList = js.Array[ConfigurationSettingsDescription]
 
 type ConfigurationTemplateName = java.lang.String
 
-type ConfigurationTemplateNamesList = js.Array[typings.awsSdk.elasticbeanstalkMod.ConfigurationTemplateName]
+type ConfigurationTemplateNamesList = js.Array[ConfigurationTemplateName]
 
-type CreationDate = typings.std.Date
+type CreationDate = js.Date
 
-type CustomAmiList = js.Array[typings.awsSdk.elasticbeanstalkMod.CustomAmi]
+type CustomAmiList = js.Array[CustomAmi]
 
 type DNSCname = java.lang.String
 
 type DNSCnamePrefix = java.lang.String
 
-type DeleteSourceBundle = scala.Boolean
+type DeleteSourceBundle = Boolean
 
-type DeploymentTimestamp = typings.std.Date
+type DeploymentTimestamp = js.Date
 
 type Description = java.lang.String
 
@@ -145,7 +145,7 @@ type EndpointURL = java.lang.String
 
 type EnvironmentArn = java.lang.String
 
-type EnvironmentDescriptionsList = js.Array[typings.awsSdk.elasticbeanstalkMod.EnvironmentDescription]
+type EnvironmentDescriptionsList = js.Array[EnvironmentDescription]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Green_
@@ -154,7 +154,7 @@ type EnvironmentDescriptionsList = js.Array[typings.awsSdk.elasticbeanstalkMod.E
   - typings.awsSdk.awsSdkStrings.Grey
   - java.lang.String
 */
-type EnvironmentHealth = typings.awsSdk.elasticbeanstalkMod._EnvironmentHealth | java.lang.String
+type EnvironmentHealth = _EnvironmentHealth | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Status_
@@ -167,12 +167,12 @@ type EnvironmentHealth = typings.awsSdk.elasticbeanstalkMod._EnvironmentHealth |
   - typings.awsSdk.awsSdkStrings.RefreshedAt
   - java.lang.String
 */
-type EnvironmentHealthAttribute = typings.awsSdk.elasticbeanstalkMod._EnvironmentHealthAttribute | java.lang.String
+type EnvironmentHealthAttribute = _EnvironmentHealthAttribute | java.lang.String
 
-type EnvironmentHealthAttributes = js.Array[typings.awsSdk.elasticbeanstalkMod.EnvironmentHealthAttribute]
+type EnvironmentHealthAttributes = js.Array[EnvironmentHealthAttribute]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.NoData
+  - typings.awsSdk.awsSdkStrings.NoData_
   - typings.awsSdk.awsSdkStrings.Unknown_
   - typings.awsSdk.awsSdkStrings.Pending_
   - typings.awsSdk.awsSdkStrings.Ok_
@@ -183,26 +183,26 @@ type EnvironmentHealthAttributes = js.Array[typings.awsSdk.elasticbeanstalkMod.E
   - typings.awsSdk.awsSdkStrings.Suspended_
   - java.lang.String
 */
-type EnvironmentHealthStatus = typings.awsSdk.elasticbeanstalkMod._EnvironmentHealthStatus | java.lang.String
+type EnvironmentHealthStatus = _EnvironmentHealthStatus | java.lang.String
 
 type EnvironmentId = java.lang.String
 
-type EnvironmentIdList = js.Array[typings.awsSdk.elasticbeanstalkMod.EnvironmentId]
+type EnvironmentIdList = js.Array[EnvironmentId]
 
-type EnvironmentInfoDescriptionList = js.Array[typings.awsSdk.elasticbeanstalkMod.EnvironmentInfoDescription]
+type EnvironmentInfoDescriptionList = js.Array[EnvironmentInfoDescription]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.tail_
   - typings.awsSdk.awsSdkStrings.bundle
   - java.lang.String
 */
-type EnvironmentInfoType = typings.awsSdk.elasticbeanstalkMod._EnvironmentInfoType | java.lang.String
+type EnvironmentInfoType = _EnvironmentInfoType | java.lang.String
 
-type EnvironmentLinks = js.Array[typings.awsSdk.elasticbeanstalkMod.EnvironmentLink]
+type EnvironmentLinks = js.Array[EnvironmentLink]
 
 type EnvironmentName = java.lang.String
 
-type EnvironmentNamesList = js.Array[typings.awsSdk.elasticbeanstalkMod.EnvironmentName]
+type EnvironmentNamesList = js.Array[EnvironmentName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Aborting_
@@ -215,11 +215,11 @@ type EnvironmentNamesList = js.Array[typings.awsSdk.elasticbeanstalkMod.Environm
   - typings.awsSdk.awsSdkStrings.Terminated_
   - java.lang.String
 */
-type EnvironmentStatus = typings.awsSdk.elasticbeanstalkMod._EnvironmentStatus | java.lang.String
+type EnvironmentStatus = _EnvironmentStatus | java.lang.String
 
-type EventDate = typings.std.Date
+type EventDate = js.Date
 
-type EventDescriptionList = js.Array[typings.awsSdk.elasticbeanstalkMod.EventDescription]
+type EventDescriptionList = js.Array[EventDescription]
 
 type EventMessage = java.lang.String
 
@@ -232,7 +232,7 @@ type EventMessage = java.lang.String
   - typings.awsSdk.awsSdkStrings.FATAL
   - java.lang.String
 */
-type EventSeverity = typings.awsSdk.elasticbeanstalkMod._EventSeverity | java.lang.String
+type EventSeverity = _EventSeverity | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UpdateCancelled
@@ -244,25 +244,25 @@ type EventSeverity = typings.awsSdk.elasticbeanstalkMod._EventSeverity | java.la
   - typings.awsSdk.awsSdkStrings.PermissionsError
   - java.lang.String
 */
-type FailureType = typings.awsSdk.elasticbeanstalkMod._FailureType | java.lang.String
+type FailureType = _FailureType | java.lang.String
 
 type FileTypeExtension = java.lang.String
 
-type ForceTerminate = scala.Boolean
+type ForceTerminate = Boolean
 
 type GroupName = java.lang.String
 
 type ImageId = java.lang.String
 
-type IncludeDeleted = scala.Boolean
+type IncludeDeleted = Boolean
 
-type IncludeDeletedBackTo = typings.std.Date
+type IncludeDeletedBackTo = js.Date
 
-type InstanceHealthList = js.Array[typings.awsSdk.elasticbeanstalkMod.SingleInstanceHealth]
+type InstanceHealthList = js.Array[SingleInstanceHealth]
 
 type InstanceId = java.lang.String
 
-type InstanceList = js.Array[typings.awsSdk.elasticbeanstalkMod.Instance]
+type InstanceList = js.Array[Instance]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HealthStatus
@@ -272,39 +272,41 @@ type InstanceList = js.Array[typings.awsSdk.elasticbeanstalkMod.Instance]
   - typings.awsSdk.awsSdkStrings.RefreshedAt
   - typings.awsSdk.awsSdkStrings.LaunchedAt
   - typings.awsSdk.awsSdkStrings.System_
-  - typings.awsSdk.awsSdkStrings.Deployment
+  - typings.awsSdk.awsSdkStrings.Deployment_
   - typings.awsSdk.awsSdkStrings.AvailabilityZone
   - typings.awsSdk.awsSdkStrings.InstanceType
   - typings.awsSdk.awsSdkStrings.All_
   - java.lang.String
 */
-type InstancesHealthAttribute = typings.awsSdk.elasticbeanstalkMod._InstancesHealthAttribute | java.lang.String
+type InstancesHealthAttribute = _InstancesHealthAttribute | java.lang.String
 
-type InstancesHealthAttributes = js.Array[typings.awsSdk.elasticbeanstalkMod.InstancesHealthAttribute]
+type InstancesHealthAttributes = js.Array[InstancesHealthAttribute]
 
-type Integer = scala.Double
+type Integer = Double
 
-type LaunchConfigurationList = js.Array[typings.awsSdk.elasticbeanstalkMod.LaunchConfiguration]
+type LaunchConfigurationList = js.Array[LaunchConfiguration]
 
-type LaunchTemplateList = js.Array[typings.awsSdk.elasticbeanstalkMod.LaunchTemplate]
+type LaunchTemplateList = js.Array[LaunchTemplate]
 
-type LaunchedAt = typings.std.Date
+type LaunchedAt = js.Date
 
-type LoadAverage = js.Array[typings.awsSdk.elasticbeanstalkMod.LoadAverageValue]
+type LoadAverage = js.Array[LoadAverageValue]
 
-type LoadAverageValue = scala.Double
+type LoadAverageValue = Double
 
-type LoadBalancerList = js.Array[typings.awsSdk.elasticbeanstalkMod.LoadBalancer]
+type LoadBalancerList = js.Array[LoadBalancer]
 
-type LoadBalancerListenersDescription = js.Array[typings.awsSdk.elasticbeanstalkMod.Listener]
+type LoadBalancerListenersDescription = js.Array[Listener]
 
 type Maintainer = java.lang.String
 
-type ManagedActionHistoryItems = js.Array[typings.awsSdk.elasticbeanstalkMod.ManagedActionHistoryItem]
+type ManagedActionHistoryItems = js.Array[ManagedActionHistoryItem]
 
-type ManagedActions = js.Array[typings.awsSdk.elasticbeanstalkMod.ManagedAction]
+type ManagedActionHistoryMaxItems = Double
 
-type MaxRecords = scala.Double
+type ManagedActions = js.Array[ManagedAction]
+
+type MaxRecords = Double
 
 type Message = java.lang.String
 
@@ -312,11 +314,11 @@ type NextToken = java.lang.String
 
 type NonEmptyString = java.lang.String
 
-type NullableDouble = scala.Double
+type NullableDouble = Double
 
-type NullableInteger = scala.Double
+type NullableInteger = Double
 
-type NullableLong = scala.Double
+type NullableLong = Double
 
 type OperatingSystemName = java.lang.String
 
@@ -326,21 +328,21 @@ type OperationsRole = java.lang.String
 
 type OptionNamespace = java.lang.String
 
-type OptionRestrictionMaxLength = scala.Double
+type OptionRestrictionMaxLength = Double
 
-type OptionRestrictionMaxValue = scala.Double
+type OptionRestrictionMaxValue = Double
 
-type OptionRestrictionMinValue = scala.Double
+type OptionRestrictionMinValue = Double
 
-type OptionsSpecifierList = js.Array[typings.awsSdk.elasticbeanstalkMod.OptionSpecification]
+type OptionsSpecifierList = js.Array[OptionSpecification]
 
 type PlatformArn = java.lang.String
 
 type PlatformBranchLifecycleState = java.lang.String
 
-type PlatformBranchMaxRecords = scala.Double
+type PlatformBranchMaxRecords = Double
 
-type PlatformBranchSummaryList = js.Array[typings.awsSdk.elasticbeanstalkMod.PlatformBranchSummary]
+type PlatformBranchSummaryList = js.Array[PlatformBranchSummary]
 
 type PlatformCategory = java.lang.String
 
@@ -350,21 +352,21 @@ type PlatformFilterType = java.lang.String
 
 type PlatformFilterValue = java.lang.String
 
-type PlatformFilterValueList = js.Array[typings.awsSdk.elasticbeanstalkMod.PlatformFilterValue]
+type PlatformFilterValueList = js.Array[PlatformFilterValue]
 
-type PlatformFilters = js.Array[typings.awsSdk.elasticbeanstalkMod.PlatformFilter]
+type PlatformFilters = js.Array[PlatformFilter]
 
-type PlatformFrameworks = js.Array[typings.awsSdk.elasticbeanstalkMod.PlatformFramework]
+type PlatformFrameworks = js.Array[PlatformFramework]
 
 type PlatformLifecycleState = java.lang.String
 
-type PlatformMaxRecords = scala.Double
+type PlatformMaxRecords = Double
 
 type PlatformName = java.lang.String
 
 type PlatformOwner = java.lang.String
 
-type PlatformProgrammingLanguages = js.Array[typings.awsSdk.elasticbeanstalkMod.PlatformProgrammingLanguage]
+type PlatformProgrammingLanguages = js.Array[PlatformProgrammingLanguage]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Creating_
@@ -374,21 +376,21 @@ type PlatformProgrammingLanguages = js.Array[typings.awsSdk.elasticbeanstalkMod.
   - typings.awsSdk.awsSdkStrings.Deleted_
   - java.lang.String
 */
-type PlatformStatus = typings.awsSdk.elasticbeanstalkMod._PlatformStatus | java.lang.String
+type PlatformStatus = _PlatformStatus | java.lang.String
 
-type PlatformSummaryList = js.Array[typings.awsSdk.elasticbeanstalkMod.PlatformSummary]
+type PlatformSummaryList = js.Array[PlatformSummary]
 
 type PlatformVersion = java.lang.String
 
-type QueueList = js.Array[typings.awsSdk.elasticbeanstalkMod.Queue]
+type QueueList = js.Array[Queue]
 
-type RefreshedAt = typings.std.Date
+type RefreshedAt = js.Date
 
 type RegexLabel = java.lang.String
 
 type RegexPattern = java.lang.String
 
-type RequestCount = scala.Double
+type RequestCount = Double
 
 type RequestId = java.lang.String
 
@@ -402,7 +404,7 @@ type S3Bucket = java.lang.String
 
 type S3Key = java.lang.String
 
-type SampleTimestamp = typings.std.Date
+type SampleTimestamp = js.Date
 
 type SearchFilterAttribute = java.lang.String
 
@@ -410,11 +412,11 @@ type SearchFilterOperator = java.lang.String
 
 type SearchFilterValue = java.lang.String
 
-type SearchFilterValues = js.Array[typings.awsSdk.elasticbeanstalkMod.SearchFilterValue]
+type SearchFilterValues = js.Array[SearchFilterValue]
 
-type SearchFilters = js.Array[typings.awsSdk.elasticbeanstalkMod.SearchFilter]
+type SearchFilters = js.Array[SearchFilter]
 
-type SolutionStackFileTypeList = js.Array[typings.awsSdk.elasticbeanstalkMod.FileTypeExtension]
+type SolutionStackFileTypeList = js.Array[FileTypeExtension]
 
 type SolutionStackName = java.lang.String
 
@@ -425,69 +427,69 @@ type SourceLocation = java.lang.String
   - typings.awsSdk.awsSdkStrings.S3
   - java.lang.String
 */
-type SourceRepository = typings.awsSdk.elasticbeanstalkMod._SourceRepository | java.lang.String
+type SourceRepository = _SourceRepository | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Git
   - typings.awsSdk.awsSdkStrings.Zip_
   - java.lang.String
 */
-type SourceType = typings.awsSdk.elasticbeanstalkMod._SourceType | java.lang.String
+type SourceType = _SourceType | java.lang.String
 
 type String = java.lang.String
 
 type SupportedAddon = java.lang.String
 
-type SupportedAddonList = js.Array[typings.awsSdk.elasticbeanstalkMod.SupportedAddon]
+type SupportedAddonList = js.Array[SupportedAddon]
 
 type SupportedTier = java.lang.String
 
-type SupportedTierList = js.Array[typings.awsSdk.elasticbeanstalkMod.SupportedTier]
+type SupportedTierList = js.Array[SupportedTier]
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.elasticbeanstalkMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.elasticbeanstalkMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type Tags = js.Array[typings.awsSdk.elasticbeanstalkMod.Tag]
+type Tags = js.Array[Tag]
 
-type TerminateEnvForce = scala.Boolean
+type TerminateEnvForce = Boolean
 
-type TerminateEnvironmentResources = scala.Boolean
+type TerminateEnvironmentResources = Boolean
 
-type TimeFilterEnd = typings.std.Date
+type TimeFilterEnd = js.Date
 
-type TimeFilterStart = typings.std.Date
+type TimeFilterStart = js.Date
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 type Token = java.lang.String
 
-type TriggerList = js.Array[typings.awsSdk.elasticbeanstalkMod.Trigger]
+type TriggerList = js.Array[Trigger]
 
-type UpdateDate = typings.std.Date
+type UpdateDate = js.Date
 
-type UserDefinedOption = scala.Boolean
+type UserDefinedOption = Boolean
 
 type ValidationMessageString = java.lang.String
 
-type ValidationMessagesList = js.Array[typings.awsSdk.elasticbeanstalkMod.ValidationMessage]
+type ValidationMessagesList = js.Array[ValidationMessage]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.error__
   - typings.awsSdk.awsSdkStrings.warning__
   - java.lang.String
 */
-type ValidationSeverity = typings.awsSdk.elasticbeanstalkMod._ValidationSeverity | java.lang.String
+type ValidationSeverity = _ValidationSeverity | java.lang.String
 
 type VersionLabel = java.lang.String
 
-type VersionLabels = js.Array[typings.awsSdk.elasticbeanstalkMod.VersionLabel]
+type VersionLabels = js.Array[VersionLabel]
 
-type VersionLabelsList = js.Array[typings.awsSdk.elasticbeanstalkMod.VersionLabel]
+type VersionLabelsList = js.Array[VersionLabel]
 
 type VirtualizationType = java.lang.String
 
@@ -496,4 +498,4 @@ type VirtualizationType = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.elasticbeanstalkMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

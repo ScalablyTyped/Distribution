@@ -4,7 +4,6 @@ import typings.antd.antdStrings.horizontal
 import typings.antd.antdStrings.marginLeft
 import typings.antd.antdStrings.marginRight
 import typings.antd.antdStrings.vertical
-import typings.antd.configProviderSizeContextMod.SizeType
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -17,7 +16,7 @@ object spaceItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasClassNameDirectionIndexSizeMarginDirectionChildrenSplit: ItemProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameDirectionIndexSizeMarginDirectionChildrenSplit.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(hasClassNameDirectionIndexMarginDirectionChildrenSplitWrap: ItemProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameDirectionIndexMarginDirectionChildrenSplitWrap.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait ItemProps extends StObject {
     
@@ -31,9 +30,9 @@ object spaceItemMod {
     
     var marginDirection: marginLeft | marginRight
     
-    var size: js.UndefOr[SizeType | Double] = js.undefined
-    
     var split: js.UndefOr[String | ReactNode] = js.undefined
+    
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object ItemProps {
     
@@ -58,13 +57,13 @@ object spaceItemMod {
       
       inline def setMarginDirection(value: marginLeft | marginRight): Self = StObject.set(x, "marginDirection", value.asInstanceOf[js.Any])
       
-      inline def setSize(value: SizeType | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
       inline def setSplit(value: String | ReactNode): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
       inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+      
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
 }

@@ -14,6 +14,6 @@ object withContainsFocusMod {
   val ^ : js.Any = js.native
   
   inline def withContainsFocus[TProps /* <: `0` */, S](
-    ComposedComponent: Instantiable2[/* props */ TProps, /* args (repeated) */ js.Any, Component[TProps, S, js.Any]]
-  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withContainsFocus")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    ComposedComponent: Instantiable2[/* props */ TProps, /* args (repeated) */ Any, Component[TProps, S, Any]]
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withContainsFocus")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

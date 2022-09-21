@@ -10,10 +10,10 @@ a customizable value inspector
 | ------------------ | :-------------: |
 | Full name          | eyes |
 | Keywords           | inspector, debug, inspect, print |
-| # releases         | 0 |
-| # dependents       | 169 |
-| # downloads        | 86969674 |
-| # stars            | 22 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8023955.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/eyes)

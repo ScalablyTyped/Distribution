@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object helpersMod {
   
-  @JSImport("rrule/dist/esm/src/helpers", JSImport.Namespace)
+  @JSImport("rrule/dist/esm/helpers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -15,25 +15,19 @@ object helpersMod {
   
   inline def divmod(a: Double, b: Double): Div = (^.asInstanceOf[js.Dynamic].applyDynamic("divmod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Div]
   
-  inline def empty[T](): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Boolean]
   inline def empty[T](obj: js.Array[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def includes[T](arr: js.Array[T], `val`: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(arr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def includes[T](arr: Null, `val`: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(arr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def includes[T](arr: Unit, `val`: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(arr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isArray(arg: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
+  inline def isArray(arg: Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
   
-  inline def isNumber(): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")().asInstanceOf[/* is number */ Boolean]
-  inline def isNumber(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+  inline def isNumber(value: Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
   
   inline def isPresent[T](): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPresent")().asInstanceOf[/* is T */ Boolean]
   inline def isPresent[T](value: T): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPresent")(value.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
   
-  inline def isWeekdayStr(): /* is rrule.rrule/dist/esm/src/weekday.WeekdayStr */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekdayStr")().asInstanceOf[/* is rrule.rrule/dist/esm/src/weekday.WeekdayStr */ Boolean]
-  inline def isWeekdayStr(value: js.Any): /* is rrule.rrule/dist/esm/src/weekday.WeekdayStr */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekdayStr")(value.asInstanceOf[js.Any]).asInstanceOf[/* is rrule.rrule/dist/esm/src/weekday.WeekdayStr */ Boolean]
+  inline def isWeekdayStr(value: Any): /* is rrule.rrule/dist/esm/weekday.WeekdayStr */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeekdayStr")(value.asInstanceOf[js.Any]).asInstanceOf[/* is rrule.rrule/dist/esm/weekday.WeekdayStr */ Boolean]
   
-  inline def notEmpty[T](): /* is std.Array<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("notEmpty")().asInstanceOf[/* is std.Array<T> */ Boolean]
   inline def notEmpty[T](obj: js.Array[T]): /* is std.Array<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("notEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<T> */ Boolean]
   
   inline def padStart(item: String, targetLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padStart")(item.asInstanceOf[js.Any], targetLength.asInstanceOf[js.Any])).asInstanceOf[String]

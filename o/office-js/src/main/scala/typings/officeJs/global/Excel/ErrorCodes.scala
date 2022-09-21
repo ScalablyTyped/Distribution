@@ -17,7 +17,11 @@ object ErrorCodes extends StObject {
   
   /* "Conflict" */ val conflict: typings.officeJs.Excel.ErrorCodes.conflict & String = js.native
   
+  /* "EmptyChartSeries" */ val emptyChartSeries: typings.officeJs.Excel.ErrorCodes.emptyChartSeries & String = js.native
+  
   /* "FilteredRangeConflict" */ val filteredRangeConflict: typings.officeJs.Excel.ErrorCodes.filteredRangeConflict & String = js.native
+  
+  /* "FormulaLengthExceedsLimit" */ val formulaLengthExceedsLimit: typings.officeJs.Excel.ErrorCodes.formulaLengthExceedsLimit & String = js.native
   
   /* "GeneralException" */ val generalException: typings.officeJs.Excel.ErrorCodes.generalException & String = js.native
   
@@ -41,15 +45,29 @@ object ErrorCodes extends StObject {
   
   /* "ItemNotFound" */ val itemNotFound: typings.officeJs.Excel.ErrorCodes.itemNotFound & String = js.native
   
+  /* "MergedRangeConflict" */ val mergedRangeConflict: typings.officeJs.Excel.ErrorCodes.mergedRangeConflict & String = js.native
+  
   /* "NonBlankCellOffSheet" */ val nonBlankCellOffSheet: typings.officeJs.Excel.ErrorCodes.nonBlankCellOffSheet & String = js.native
   
   /* "NotImplemented" */ val notImplemented: typings.officeJs.Excel.ErrorCodes.notImplemented & String = js.native
+  
+  /* "OpenWorkbookLinksBlocked" */ val openWorkbookLinksBlocked: typings.officeJs.Excel.ErrorCodes.openWorkbookLinksBlocked & String = js.native
+  
+  /* "OperationCellsExceedLimit" */ val operationCellsExceedLimit: typings.officeJs.Excel.ErrorCodes.operationCellsExceedLimit & String = js.native
   
   /* "PivotTableRangeConflict" */ val pivotTableRangeConflict: typings.officeJs.Excel.ErrorCodes.pivotTableRangeConflict & String = js.native
   
   /* "RangeExceedsLimit" */ val rangeExceedsLimit: typings.officeJs.Excel.ErrorCodes.rangeExceedsLimit & String = js.native
   
+  /* "RefreshWorkbookLinksBlocked" */ val refreshWorkbookLinksBlocked: typings.officeJs.Excel.ErrorCodes.refreshWorkbookLinksBlocked & String = js.native
+  
   /* "RequestAborted" */ val requestAborted: typings.officeJs.Excel.ErrorCodes.requestAborted & String = js.native
+  
+  /* "ResponsePayloadSizeLimitExceeded" */ val responsePayloadSizeLimitExceeded: typings.officeJs.Excel.ErrorCodes.responsePayloadSizeLimitExceeded & String = js.native
+  
+  /* "UnsupportedFeature" */ val unsupportedFeature: typings.officeJs.Excel.ErrorCodes.unsupportedFeature & String = js.native
+  
+  /* "UnsupportedFillType" */ val unsupportedFillType: typings.officeJs.Excel.ErrorCodes.unsupportedFillType & String = js.native
   
   /* "UnsupportedOperation" */ val unsupportedOperation: typings.officeJs.Excel.ErrorCodes.unsupportedOperation & String = js.native
   

@@ -5,14 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new AudioListenerComponentSystem.
-  * @param app - The application managing this system.
-  * @param manager - A sound manager instance.
+  * Component System for adding and removing {@link AudioComponent} objects to Entities.
+  *
+  * @augments ComponentSystem
+  * @ignore
   */
 @JSGlobal("pc.AudioListenerComponentSystem")
 @js.native
-class AudioListenerComponentSystem protected ()
-  extends StObject
-     with typings.playcanvas.pc.EventHandler {
-  def this(app: typings.playcanvas.pc.Application, manager: typings.playcanvas.pc.SoundManager) = this()
+open class AudioListenerComponentSystem protected ()
+  extends typings.playcanvas.mod.AudioListenerComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

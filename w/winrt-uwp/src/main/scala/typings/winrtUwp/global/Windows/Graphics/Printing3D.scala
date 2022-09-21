@@ -179,7 +179,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3D3MFPackage")
   @js.native
   /** Creates a Printing3D3MFPackage object. */
-  class Printing3D3MFPackage ()
+  open class Printing3D3MFPackage ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3D3MFPackage {
     
@@ -241,7 +241,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DBaseMaterial")
   @js.native
   /** Creates an instance of the Printing3DBaseMaterial class. */
-  class Printing3DBaseMaterial ()
+  open class Printing3DBaseMaterial ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DBaseMaterial {
     
@@ -277,7 +277,7 @@ object Printing3D {
   /** Represents a group of base materials used in the 3D model. */
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DBaseMaterialGroup")
   @js.native
-  class Printing3DBaseMaterialGroup protected ()
+  open class Printing3DBaseMaterialGroup protected ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DBaseMaterialGroup {
     /**
@@ -322,7 +322,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DColorMaterial")
   @js.native
   /** Creates an instance of the Printing3DColorMaterial class. */
-  class Printing3DColorMaterial ()
+  open class Printing3DColorMaterial ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DColorMaterial {
     
@@ -338,7 +338,7 @@ object Printing3D {
   /** Represents a group of color materials used in the 3D model. */
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DColorMaterialGroup")
   @js.native
-  class Printing3DColorMaterialGroup protected ()
+  open class Printing3DColorMaterialGroup protected ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DColorMaterialGroup {
     /**
@@ -360,7 +360,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DComponent")
   @js.native
   /** Creates an instance of the Printing3DComponent class. */
-  class Printing3DComponent ()
+  open class Printing3DComponent ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DComponent {
     
@@ -393,7 +393,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DComponentWithMatrix")
   @js.native
   /** Creates an instance of the Printing3DComponentWithMatrix class. */
-  class Printing3DComponentWithMatrix ()
+  open class Printing3DComponentWithMatrix ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DComponentWithMatrix {
     
@@ -410,7 +410,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DCompositeMaterial")
   @js.native
   /** Creates an instance of the Printing3DCompositeMaterial class. */
-  class Printing3DCompositeMaterial ()
+  open class Printing3DCompositeMaterial ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DCompositeMaterial {
     
@@ -422,7 +422,7 @@ object Printing3D {
   /** Represents a group of composite materials. */
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DCompositeMaterialGroup")
   @js.native
-  class Printing3DCompositeMaterialGroup protected ()
+  open class Printing3DCompositeMaterialGroup protected ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DCompositeMaterialGroup {
     /**
@@ -448,7 +448,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DMaterial")
   @js.native
   /** Creates an instance of the Printing3DMaterial class. */
-  class Printing3DMaterial ()
+  open class Printing3DMaterial ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DMaterial {
     
@@ -481,7 +481,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DMesh")
   @js.native
   /** Creates an instance of the Printing3DMesh class. */
-  class Printing3DMesh ()
+  open class Printing3DMesh ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DMesh {
     
@@ -621,7 +621,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DModel")
   @js.native
   /** Creates an instance of the Printing3DModel class. */
-  class Printing3DModel ()
+  open class Printing3DModel ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DModel {
     
@@ -673,7 +673,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DModelTexture")
   @js.native
   /** Creates an instance of the Printing3DModelTexture class. */
-  class Printing3DModelTexture ()
+  open class Printing3DModelTexture ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DModelTexture {
     
@@ -715,7 +715,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DMultiplePropertyMaterial")
   @js.native
   /** Creates an instance of the Printing3DMultiplePropertyMaterial class. */
-  class Printing3DMultiplePropertyMaterial ()
+  open class Printing3DMultiplePropertyMaterial ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DMultiplePropertyMaterial {
     
@@ -727,7 +727,7 @@ object Printing3D {
   /** Represents a multi-property material group. */
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DMultiplePropertyMaterialGroup")
   @js.native
-  class Printing3DMultiplePropertyMaterialGroup protected ()
+  open class Printing3DMultiplePropertyMaterialGroup protected ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DMultiplePropertyMaterialGroup {
     /**
@@ -768,7 +768,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DTexture2CoordMaterial")
   @js.native
   /** Creates an instance of the Printing3DTexture2CoordMaterial class. */
-  class Printing3DTexture2CoordMaterial ()
+  open class Printing3DTexture2CoordMaterial ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DTexture2CoordMaterial {
     
@@ -788,7 +788,7 @@ object Printing3D {
   /** Represents a group of 2D texture materials used in the 3D model. */
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DTexture2CoordMaterialGroup")
   @js.native
-  class Printing3DTexture2CoordMaterialGroup protected ()
+  open class Printing3DTexture2CoordMaterialGroup protected ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DTexture2CoordMaterialGroup {
     /**
@@ -833,7 +833,7 @@ object Printing3D {
   @JSGlobal("Windows.Graphics.Printing3D.Printing3DTextureResource")
   @js.native
   /** Creates an instance of the Printing3DTextureResource class. */
-  class Printing3DTextureResource ()
+  open class Printing3DTextureResource ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing3D.Printing3DTextureResource {
     

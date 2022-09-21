@@ -12,7 +12,7 @@ trait EventSubscription extends StObject {
   var CustSubscriptionId: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS customer account associated with the Amazon Redshift event notification subscription.
+    * The Amazon Web Services account associated with the Amazon Redshift event notification subscription.
     */
   var CustomerAwsId: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait EventSubscription extends StObject {
   var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The list of Amazon Redshift event categories specified in the event notification subscription. Values: Configuration, Management, Monitoring, Security
+    * The list of Amazon Redshift event categories specified in the event notification subscription. Values: Configuration, Management, Monitoring, Security, Pending
     */
   var EventCategoriesList: js.UndefOr[typings.awsSdk.redshiftMod.EventCategoriesList] = js.undefined
   
@@ -54,7 +54,7 @@ trait EventSubscription extends StObject {
   /**
     * The date and time the Amazon Redshift event notification subscription was created.
     */
-  var SubscriptionCreationTime: js.UndefOr[TStamp] = js.undefined
+  var SubscriptionCreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The list of tags for the event subscription.
@@ -86,7 +86,7 @@ object EventSubscription {
     
     inline def setEventCategoriesListUndefined: Self = StObject.set(x, "EventCategoriesList", js.undefined)
     
-    inline def setEventCategoriesListVarargs(value: String*): Self = StObject.set(x, "EventCategoriesList", js.Array(value :_*))
+    inline def setEventCategoriesListVarargs(value: String*): Self = StObject.set(x, "EventCategoriesList", js.Array(value*))
     
     inline def setSeverity(value: String): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
@@ -100,7 +100,7 @@ object EventSubscription {
     
     inline def setSourceIdsListUndefined: Self = StObject.set(x, "SourceIdsList", js.undefined)
     
-    inline def setSourceIdsListVarargs(value: String*): Self = StObject.set(x, "SourceIdsList", js.Array(value :_*))
+    inline def setSourceIdsListVarargs(value: String*): Self = StObject.set(x, "SourceIdsList", js.Array(value*))
     
     inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
@@ -110,7 +110,7 @@ object EventSubscription {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setSubscriptionCreationTime(value: TStamp): Self = StObject.set(x, "SubscriptionCreationTime", value.asInstanceOf[js.Any])
+    inline def setSubscriptionCreationTime(value: js.Date): Self = StObject.set(x, "SubscriptionCreationTime", value.asInstanceOf[js.Any])
     
     inline def setSubscriptionCreationTimeUndefined: Self = StObject.set(x, "SubscriptionCreationTime", js.undefined)
     
@@ -118,6 +118,6 @@ object EventSubscription {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

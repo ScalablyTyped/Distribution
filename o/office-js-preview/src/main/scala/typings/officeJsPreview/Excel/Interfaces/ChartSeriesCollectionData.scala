@@ -22,6 +22,6 @@ object ChartSeriesCollectionData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ChartSeriesData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ChartSeriesData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

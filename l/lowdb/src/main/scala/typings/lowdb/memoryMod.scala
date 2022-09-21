@@ -1,29 +1,24 @@
 package typings.lowdb
 
-import org.scalablytyped.runtime.Shortcut
-import typings.lowdb.mod.AdapterOptions
-import typings.lowdb.mod.AdapterSync
+import typings.lowdb.lowMod.Adapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object memoryMod extends Shortcut {
+object memoryMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("lowdb/adapters/Memory", JSImport.Namespace)
+  @JSImport("lowdb/lib/adapters/Memory", "Memory")
   @js.native
-  class ^[SchemaT] protected ()
+  open class Memory[T] ()
     extends StObject
-       with AdapterSync[SchemaT] {
-    def this(source: String) = this()
-    def this(source: String, options: AdapterOptions[SchemaT]) = this()
+       with Adapter[T] {
+    
+    /* private */ var `private`: Any = js.native
+    
+    /* CompleteClass */
+    override def read(): js.Promise[T | Null] = js.native
+    
+    /* CompleteClass */
+    override def write(data: T): js.Promise[Unit] = js.native
   }
-  @JSImport("lowdb/adapters/Memory", JSImport.Namespace)
-  @js.native
-  val ^ : AdapterSync[js.Any] = js.native
-  
-  type _To = AdapterSync[js.Any]
-  
-  /* This means you don't have to write `^`, but can instead just say `memoryMod.foo` */
-  override def _to: AdapterSync[js.Any] = ^
 }

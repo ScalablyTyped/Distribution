@@ -12,14 +12,14 @@ object tabPaneMod {
   
   @JSImport("rmc-tabs/lib/TabPane", "TabPane")
   @js.native
-  class TabPane protected ()
-    extends PureComponent[PropsType, js.Object, js.Any] {
+  open class TabPane protected ()
+    extends PureComponent[PropsType, js.Object, Any] {
     def this(props: PropsType) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PropsType, context: js.Any) = this()
+    def this(props: PropsType, context: Any) = this()
     
     @JSName("componentWillReceiveProps")
     def componentWillReceiveProps_MTabPane(nextProps: PropsTypechildrenReactNod): Unit = js.native

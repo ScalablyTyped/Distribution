@@ -10,10 +10,10 @@ Use the parts of normalize.css or sanitize.css you need from your browserslist
 | ------------------ | :-------------: |
 | Full name          | postcss-normalize |
 | Keywords           | postcss, css, postcss-plugin, normalizes, browsers, fixes |
-| # releases         | 4 |
-| # dependents       | 1156 |
-| # downloads        | 62807366 |
-| # stars            | 4 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3223932E7 |
+| # stars            | 764.0 |
 
 ## Links
 - [Homepage](https://github.com/csstools/postcss-normalize#readme)

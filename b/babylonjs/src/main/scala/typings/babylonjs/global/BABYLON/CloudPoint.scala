@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.CloudPoint")
 @js.native
-class CloudPoint protected ()
+open class CloudPoint protected ()
   extends StObject
      with typings.babylonjs.BABYLON.CloudPoint {
   /**

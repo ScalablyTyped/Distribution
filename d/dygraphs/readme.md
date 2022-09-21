@@ -1,7 +1,7 @@
 
 # Scala.js typings for dygraphs
 
-Typings are for version 1.1.3
+Typings are for version 2.1
 
 ## Library description:
 dygraphs is a fast, flexible open source JavaScript charting library.
@@ -10,10 +10,10 @@ dygraphs is a fast, flexible open source JavaScript charting library.
 | ------------------ | :-------------: |
 | Full name          | dygraphs |
 | Keywords           | dygraphs, javascript, visualization, canvas, chart, timeseries |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 372977 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40535.333333333336 |
+| # stars            | 2984.0 |
 
 ## Links
 - [Homepage](https://github.com/danvk/dygraphs)

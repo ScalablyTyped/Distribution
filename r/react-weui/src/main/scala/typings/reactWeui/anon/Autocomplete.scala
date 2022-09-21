@@ -10,13 +10,13 @@ trait Autocomplete extends StObject {
   
   var lang: Cancel
   
-  var onCancel: js.Any
+  var onCancel: Any
   
-  var onChange: js.Any
+  var onChange: Any
   
-  var onClear: js.Any
+  var onClear: Any
   
-  var onSubmit: js.Any
+  var onSubmit: Any
   
   var placeholder: String
   
@@ -27,10 +27,10 @@ object Autocomplete {
   inline def apply(
     autocomplete: String,
     lang: Cancel,
-    onCancel: js.Any,
-    onChange: js.Any,
-    onClear: js.Any,
-    onSubmit: js.Any,
+    onCancel: Any,
+    onChange: Any,
+    onClear: Any,
+    onSubmit: Any,
     placeholder: String,
     searchName: String
   ): Autocomplete = {
@@ -44,13 +44,13 @@ object Autocomplete {
     
     inline def setLang(value: Cancel): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    inline def setOnCancel(value: js.Any): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
+    inline def setOnCancel(value: Any): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
     
-    inline def setOnChange(value: js.Any): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: Any): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    inline def setOnClear(value: js.Any): Self = StObject.set(x, "onClear", value.asInstanceOf[js.Any])
+    inline def setOnClear(value: Any): Self = StObject.set(x, "onClear", value.asInstanceOf[js.Any])
     
-    inline def setOnSubmit(value: js.Any): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
+    inline def setOnSubmit(value: Any): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

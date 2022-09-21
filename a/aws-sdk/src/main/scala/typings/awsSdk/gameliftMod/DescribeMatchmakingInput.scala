@@ -22,6 +22,6 @@ object DescribeMatchmakingInput {
     
     inline def setTicketIds(value: MatchmakingIdList): Self = StObject.set(x, "TicketIds", value.asInstanceOf[js.Any])
     
-    inline def setTicketIdsVarargs(value: MatchmakingIdStringModel*): Self = StObject.set(x, "TicketIds", js.Array(value :_*))
+    inline def setTicketIdsVarargs(value: MatchmakingIdStringModel*): Self = StObject.set(x, "TicketIds", js.Array(value*))
   }
 }

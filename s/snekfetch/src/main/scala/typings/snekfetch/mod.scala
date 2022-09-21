@@ -1,11 +1,10 @@
 package typings.snekfetch
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
 import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod {
   
   @JSImport("snekfetch", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Snekfetch {
+  open class ^ protected () extends Snekfetch {
     def this(method: methods, url: String) = this()
     def this(method: methods, url: String, opts: SnekfetchOptions) = this()
   }
@@ -177,17 +176,17 @@ object mod {
     def attach(name: String, data: Buffer): Snekfetch = js.native
     def attach(name: String, data: Buffer, filename: String): Snekfetch = js.native
     
-    def `catch`(rejector: js.Function1[/* err */ Error, js.Any]): js.Promise[SnekfetchResponse] = js.native
+    def `catch`(rejector: js.Function1[/* err */ js.Error, Any]): js.Promise[SnekfetchResponse] = js.native
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     def end(): js.Promise[SnekfetchResponse] = js.native
-    def end[T](cb: js.Function2[/* err */ Error | Null, /* res */ SnekfetchResponse | Error | Null, T]): js.Promise[T] = js.native
+    def end[T](cb: js.Function2[/* err */ js.Error | Null, /* res */ SnekfetchResponse | js.Error | Null, T]): js.Promise[T] = js.native
     
     def query(name: String): Snekfetch = js.native
     def query(name: String, value: String): Snekfetch = js.native
-    def query(name: StringDictionary[js.Any]): Snekfetch = js.native
-    def query(name: StringDictionary[js.Any], value: String): Snekfetch = js.native
+    def query(name: StringDictionary[Any]): Snekfetch = js.native
+    def query(name: StringDictionary[Any], value: String): Snekfetch = js.native
     
     var request: ClientRequest = js.native
     
@@ -200,14 +199,14 @@ object mod {
     
     def set(name: String): Snekfetch = js.native
     def set(name: String, value: String): Snekfetch = js.native
-    def set(name: StringDictionary[js.Any]): Snekfetch = js.native
-    def set(name: StringDictionary[js.Any], value: String): Snekfetch = js.native
+    def set(name: StringDictionary[Any]): Snekfetch = js.native
+    def set(name: StringDictionary[Any], value: String): Snekfetch = js.native
     
     def `then`(): js.Promise[SnekfetchResponse] = js.native
     def `then`[T](resolver: js.Function1[/* res */ SnekfetchResponse, T]): js.Promise[T] = js.native
     def `then`[T](
       resolver: js.Function1[/* res */ SnekfetchResponse, T],
-      rejector: js.Function1[/* err */ Error, js.Any]
+      rejector: js.Function1[/* err */ js.Error, Any]
     ): js.Promise[T] = js.native
   }
   
@@ -217,7 +216,7 @@ object mod {
     
     var data: js.UndefOr[js.Object | String | Buffer] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var qs: js.UndefOr[js.Object] = js.undefined
     
@@ -242,7 +241,7 @@ object mod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -264,7 +263,7 @@ object mod {
     
     var body: String | js.Object | Buffer
     
-    var headers: StringDictionary[js.Any]
+    var headers: StringDictionary[Any]
     
     var ok: Boolean
     
@@ -280,7 +279,7 @@ object mod {
     
     inline def apply(
       body: String | js.Object | Buffer,
-      headers: StringDictionary[js.Any],
+      headers: StringDictionary[Any],
       ok: Boolean,
       raw: Buffer,
       request: ClientRequest,
@@ -295,7 +294,7 @@ object mod {
       
       inline def setBody(value: String | js.Object | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       

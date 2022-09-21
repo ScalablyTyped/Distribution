@@ -4,19 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A workspace entity that may represent a tag, trigger, variable, or folder
-  * in addition to its status in the workspace.
-  */
 trait SchemaEntity extends StObject {
   
   /**
     * Represents how the entity has been changed in the workspace.
     */
-  var changeStatus: js.UndefOr[String] = js.undefined
+  var changeStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The Folder being represented by the entity.
+    * The client being represented by the entity.
+    */
+  var client: js.UndefOr[SchemaClient] = js.undefined
+  
+  /**
+    * The folder being represented by the entity.
     */
   var folder: js.UndefOr[SchemaFolder] = js.undefined
   
@@ -46,7 +47,13 @@ object SchemaEntity {
     
     inline def setChangeStatus(value: String): Self = StObject.set(x, "changeStatus", value.asInstanceOf[js.Any])
     
+    inline def setChangeStatusNull: Self = StObject.set(x, "changeStatus", null)
+    
     inline def setChangeStatusUndefined: Self = StObject.set(x, "changeStatus", js.undefined)
+    
+    inline def setClient(value: SchemaClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     inline def setFolder(value: SchemaFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     

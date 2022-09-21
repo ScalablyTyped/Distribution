@@ -22,7 +22,7 @@ object PrismToken {
     
     inline def setContent(value: (js.Array[PrismToken | String]) | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentVarargs(value: (PrismToken | String)*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: (PrismToken | String)*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

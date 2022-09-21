@@ -6,12 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColInfo extends StObject {
   
+  /** DBF Field Header */
+  var DBF: js.UndefOr[DBFField] = js.undefined
+  
   /** Excel's "Max Digit Width" unit, always integral */
   var MDW: js.UndefOr[Double] = js.undefined
   
   /* --- visibility --- */
   /** if true, the column is hidden */
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
+  /** outline / group level */
+  var level: js.UndefOr[Double] = js.undefined
   
   /** width in "characters" */
   var wch: js.UndefOr[Double] = js.undefined
@@ -32,9 +38,17 @@ object ColInfo {
   
   extension [Self <: ColInfo](x: Self) {
     
+    inline def setDBF(value: DBFField): Self = StObject.set(x, "DBF", value.asInstanceOf[js.Any])
+    
+    inline def setDBFUndefined: Self = StObject.set(x, "DBF", js.undefined)
+    
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     inline def setMDW(value: Double): Self = StObject.set(x, "MDW", value.asInstanceOf[js.Any])
     

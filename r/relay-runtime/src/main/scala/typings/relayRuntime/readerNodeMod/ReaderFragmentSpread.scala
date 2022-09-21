@@ -30,7 +30,7 @@ object ReaderFragmentSpread {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: ReaderArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: ReaderArgument*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

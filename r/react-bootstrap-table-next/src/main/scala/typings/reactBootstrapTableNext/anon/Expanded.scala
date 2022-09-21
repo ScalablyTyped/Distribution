@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Expanded extends StObject {
   
-  var expanded: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var expanded: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object Expanded {
   
@@ -17,10 +17,10 @@ object Expanded {
   
   extension [Self <: Expanded](x: Self) {
     
-    inline def setExpanded(value: js.Array[js.Any]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: js.Array[Any]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    inline def setExpandedVarargs(value: js.Any*): Self = StObject.set(x, "expanded", js.Array(value :_*))
+    inline def setExpandedVarargs(value: Any*): Self = StObject.set(x, "expanded", js.Array(value*))
   }
 }

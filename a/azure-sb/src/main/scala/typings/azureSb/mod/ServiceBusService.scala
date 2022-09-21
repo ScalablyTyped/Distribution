@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("azure-sb", "ServiceBusService")
 @js.native
-class ServiceBusService protected ()
+open class ServiceBusService protected ()
   extends typings.azureSb.servicebusserviceMod.^ {
   def this(
     configOrNamespaceOrConnectionString: js.UndefOr[String],

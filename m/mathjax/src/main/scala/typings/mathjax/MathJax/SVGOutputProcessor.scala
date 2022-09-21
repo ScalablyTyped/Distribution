@@ -74,7 +74,7 @@ trait SVGOutputProcessor extends StObject {
     * for some examples of what are defined by default. See CSS Style Objects for details on how to specify CSS
     * style in a JavaScript object.
     */
-  var styles: js.UndefOr[js.Any] = js.undefined
+  var styles: js.UndefOr[Any] = js.undefined
   
   /*This sets the configuration options for <maction> elements with actiontype="tooltip". (See also the
     * #MathJax_Tooltip style setting in jax/output/SVG/config.js, which can be overridden using the styles option
@@ -154,7 +154,7 @@ object SVGOutputProcessor {
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     

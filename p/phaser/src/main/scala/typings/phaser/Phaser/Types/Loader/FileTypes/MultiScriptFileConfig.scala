@@ -46,7 +46,7 @@ object MultiScriptFileConfig {
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
     
     inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     

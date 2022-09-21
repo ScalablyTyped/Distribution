@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.COMAddIn")
 @js.native
-/* private */ class COMAddIn ()
+/* private */ open class COMAddIn ()
   extends StObject
      with typings.activexOffice.Office.COMAddIn {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var Connect: Boolean = js.native
@@ -26,14 +26,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Guid: String = js.native
   
   /* CompleteClass */
-  var Object: js.Any = js.native
+  var Object: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Office.COMAddIn_typekey")
   var OfficeDotCOMAddIn_typekey: typings.activexOffice.Office.COMAddIn = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val ProgId: String = js.native

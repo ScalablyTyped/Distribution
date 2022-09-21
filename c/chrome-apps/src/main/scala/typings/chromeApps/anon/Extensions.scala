@@ -25,12 +25,12 @@ object Extensions {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: (Asterisk | String | Includedirectories)*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: (Asterisk | String | Includedirectories)*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setTypes(value: js.Array[Asterisk | String | Includedirectories]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: (Asterisk | String | Includedirectories)*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: (Asterisk | String | Includedirectories)*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

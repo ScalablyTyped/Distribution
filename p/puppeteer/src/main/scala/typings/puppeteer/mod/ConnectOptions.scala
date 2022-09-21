@@ -6,20 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConnectOptions
   extends StObject
-     with BrowserOptions {
+     with BrowserConnectOptions {
   
-  /**
-    * A browser url to connect to, in format `http://${host}:${port}`.
-    * Use interchangeably with browserWSEndpoint to let Puppeteer fetch it from metadata endpoint.
-    */
   var browserURL: js.UndefOr[String] = js.undefined
   
-  /** A browser websocket endpoint to connect to. */
   var browserWSEndpoint: js.UndefOr[String] = js.undefined
   
-  /**
-    * **Experimental** Specify a custom transport object for Puppeteer to use.
-    */
   var transport: js.UndefOr[ConnectionTransport] = js.undefined
 }
 object ConnectOptions {

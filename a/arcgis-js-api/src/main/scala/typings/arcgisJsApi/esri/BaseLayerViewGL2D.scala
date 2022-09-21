@@ -15,28 +15,28 @@ trait BaseLayerViewGL2D
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#attach)
     */
-  def attach(): Unit = js.native
+  def attach(): scala.Unit = js.native
   
   /**
     * Bind the designated rendering output surface and restore the correct viewport.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#bindRenderTarget)
     */
-  def bindRenderTarget(): Unit = js.native
+  def bindRenderTarget(): scala.Unit = js.native
   
   /**
     * The WebGL rendering context associated to this layer view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#context)
     */
-  var context: WebGLRenderingContext | js.Any = js.native
+  var context: WebGLRenderingContext | Any = js.native
   
   /**
     * Method called after the layer is removed and the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) is about to be removed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#detach)
     */
-  def detach(): Unit = js.native
+  def detach(): scala.Unit = js.native
   
   /**
     * Get the designated rendering output surface and corresponding viewport configuration.
@@ -50,21 +50,21 @@ trait BaseLayerViewGL2D
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#hitTest)
     */
-  def hitTest(x: Double, y: Double): js.Promise[Graphic] = js.native
+  def hitTest(mapPoint: Point, screenPoint: BaseLayerViewGL2DScreenPoint): js.Promise[js.Array[Graphic]] = js.native
   
   /**
     * The method to implement that is responsible of drawing the content of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
     */
-  def render(renderParameters: BaseLayerViewGL2DRenderRenderParameters): Unit = js.native
+  def render(renderParameters: BaseLayerViewGL2DRenderRenderParameters): scala.Unit = js.native
   
   /**
     * The [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) can call this method to ask the MapView to schedule a new rendering frame.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#requestRender)
     */
-  def requestRender(): Unit = js.native
+  def requestRender(): scala.Unit = js.native
   
   /**
     * Tessellate an [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) into a rectangle.
@@ -113,7 +113,7 @@ trait BaseLayerViewGL2D
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#tilesChanged)
     */
-  def tilesChanged(added: js.Array[BaseLayerViewGL2DTile], removed: js.Array[BaseLayerViewGL2DTile]): Unit = js.native
+  def tilesChanged(added: js.Array[BaseLayerViewGL2DTile], removed: js.Array[BaseLayerViewGL2DTile]): scala.Unit = js.native
   
   /**
     * References the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) this [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) belongs to.

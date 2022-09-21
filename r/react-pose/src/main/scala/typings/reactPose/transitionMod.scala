@@ -12,7 +12,7 @@ object transitionMod {
   
   @JSImport("react-pose/lib/components/Transition", JSImport.Default)
   @js.native
-  class default () extends Transition
+  open class default () extends Transition
   object default {
     
     @JSImport("react-pose/lib/components/Transition", JSImport.Default)
@@ -60,8 +60,7 @@ object transitionMod {
   }
   
   @js.native
-  trait Transition
-    extends Component[Props, State, js.Any] {
+  trait Transition extends Component[Props, State, Any] {
     
     def removeChild(key: String): Unit = js.native
     

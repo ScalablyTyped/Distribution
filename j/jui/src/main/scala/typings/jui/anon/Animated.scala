@@ -13,7 +13,7 @@ trait Animated extends StObject {
   // or true
   var animated: js.UndefOr[Boolean] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.undefined
+  var event: js.UndefOr[Any] = js.undefined
   
   var max: js.UndefOr[Double] = js.undefined
   
@@ -25,7 +25,7 @@ trait Animated extends StObject {
   
   var striped: js.UndefOr[Boolean] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var tpl: js.UndefOr[Any] = js.undefined
   
   var `type`: js.UndefOr[simple | flat] = js.undefined
   
@@ -44,7 +44,7 @@ object Animated {
     
     inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
@@ -64,7 +64,7 @@ object Animated {
     
     inline def setStripedUndefined: Self = StObject.set(x, "striped", js.undefined)
     
-    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     

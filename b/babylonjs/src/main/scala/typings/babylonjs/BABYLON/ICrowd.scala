@@ -91,6 +91,13 @@ trait ICrowd extends StObject {
   def getAgents(): js.Array[Double]
   
   /**
+    * Get the next corner points composing the path (max 4 points)
+    * @param index agent index returned by addAgent
+    * @returns array containing world position composing the path
+    */
+  def getCorners(index: Double): js.Array[Vector3]
+  
+  /**
     * Get the Bounding box extent specified by setDefaultQueryExtent
     * @returns the box extent values
     */
@@ -151,6 +158,7 @@ object ICrowd {
     getAgentVelocity: Double => Vector3,
     getAgentVelocityToRef: (Double, Vector3) => Unit,
     getAgents: () => js.Array[Double],
+    getCorners: Double => js.Array[Vector3],
     getDefaultQueryExtent: () => Vector3,
     getDefaultQueryExtentToRef: Vector3 => Unit,
     overOffmeshConnection: Double => Boolean,
@@ -159,7 +167,7 @@ object ICrowd {
     update: Double => Unit,
     updateAgentParameters: (Double, IAgentParameters) => Unit
   ): ICrowd = {
-    val __obj = js.Dynamic.literal(addAgent = js.Any.fromFunction3(addAgent), agentGoto = js.Any.fromFunction2(agentGoto), agentTeleport = js.Any.fromFunction2(agentTeleport), dispose = js.Any.fromFunction0(dispose), getAgentNextTargetPath = js.Any.fromFunction1(getAgentNextTargetPath), getAgentNextTargetPathToRef = js.Any.fromFunction2(getAgentNextTargetPathToRef), getAgentPosition = js.Any.fromFunction1(getAgentPosition), getAgentPositionToRef = js.Any.fromFunction2(getAgentPositionToRef), getAgentState = js.Any.fromFunction1(getAgentState), getAgentVelocity = js.Any.fromFunction1(getAgentVelocity), getAgentVelocityToRef = js.Any.fromFunction2(getAgentVelocityToRef), getAgents = js.Any.fromFunction0(getAgents), getDefaultQueryExtent = js.Any.fromFunction0(getDefaultQueryExtent), getDefaultQueryExtentToRef = js.Any.fromFunction1(getDefaultQueryExtentToRef), overOffmeshConnection = js.Any.fromFunction1(overOffmeshConnection), removeAgent = js.Any.fromFunction1(removeAgent), setDefaultQueryExtent = js.Any.fromFunction1(setDefaultQueryExtent), update = js.Any.fromFunction1(update), updateAgentParameters = js.Any.fromFunction2(updateAgentParameters))
+    val __obj = js.Dynamic.literal(addAgent = js.Any.fromFunction3(addAgent), agentGoto = js.Any.fromFunction2(agentGoto), agentTeleport = js.Any.fromFunction2(agentTeleport), dispose = js.Any.fromFunction0(dispose), getAgentNextTargetPath = js.Any.fromFunction1(getAgentNextTargetPath), getAgentNextTargetPathToRef = js.Any.fromFunction2(getAgentNextTargetPathToRef), getAgentPosition = js.Any.fromFunction1(getAgentPosition), getAgentPositionToRef = js.Any.fromFunction2(getAgentPositionToRef), getAgentState = js.Any.fromFunction1(getAgentState), getAgentVelocity = js.Any.fromFunction1(getAgentVelocity), getAgentVelocityToRef = js.Any.fromFunction2(getAgentVelocityToRef), getAgents = js.Any.fromFunction0(getAgents), getCorners = js.Any.fromFunction1(getCorners), getDefaultQueryExtent = js.Any.fromFunction0(getDefaultQueryExtent), getDefaultQueryExtentToRef = js.Any.fromFunction1(getDefaultQueryExtentToRef), overOffmeshConnection = js.Any.fromFunction1(overOffmeshConnection), removeAgent = js.Any.fromFunction1(removeAgent), setDefaultQueryExtent = js.Any.fromFunction1(setDefaultQueryExtent), update = js.Any.fromFunction1(update), updateAgentParameters = js.Any.fromFunction2(updateAgentParameters))
     __obj.asInstanceOf[ICrowd]
   }
   
@@ -188,6 +196,8 @@ object ICrowd {
     inline def setGetAgentVelocityToRef(value: (Double, Vector3) => Unit): Self = StObject.set(x, "getAgentVelocityToRef", js.Any.fromFunction2(value))
     
     inline def setGetAgents(value: () => js.Array[Double]): Self = StObject.set(x, "getAgents", js.Any.fromFunction0(value))
+    
+    inline def setGetCorners(value: Double => js.Array[Vector3]): Self = StObject.set(x, "getCorners", js.Any.fromFunction1(value))
     
     inline def setGetDefaultQueryExtent(value: () => Vector3): Self = StObject.set(x, "getDefaultQueryExtent", js.Any.fromFunction0(value))
     

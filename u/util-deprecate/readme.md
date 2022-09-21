@@ -11,14 +11,11 @@ The Node.js `util.deprecate()` function with browser support
 | Full name          | util-deprecate |
 | Keywords           | util, deprecate, browserify, browser, node |
 | # releases         | 0 |
-| # dependents       | 276 |
-| # downloads        | 886323925 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2561607766666667E8 |
+| # stars            | 37.0 |
 
 ## Links
-- [Homepage](https://github.com/TooTallNate/util-deprecate)
-- [Bugs](https://github.com/TooTallNate/util-deprecate/issues)
-- [Repository](https://github.com/TooTallNate/util-deprecate)
 - [Npm](https://www.npmjs.com/package/util-deprecate)
     
 

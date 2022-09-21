@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.FormRegionStartup")
 @js.native
-/* private */ class FormRegionStartup ()
+/* private */ open class FormRegionStartup ()
   extends StObject
      with typings.activexOutlook.Outlook.FormRegionStartup {
   
@@ -17,19 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def BeforeFormRegionShow(FormRegion: typings.activexOutlook.Outlook.FormRegion): Unit = js.native
   
   /* CompleteClass */
-  override def GetFormRegionIcon(FormRegionName: String, LCID: Double, Icon: OlFormRegionIcon): js.Any = js.native
+  override def GetFormRegionIcon(FormRegionName: String, LCID: Double, Icon: OlFormRegionIcon): Any = js.native
   
   /* CompleteClass */
-  override def GetFormRegionManifest(FormRegionName: String, LCID: Double): js.Any = js.native
+  override def GetFormRegionManifest(FormRegionName: String, LCID: Double): Any = js.native
   
   /* CompleteClass */
   override def GetFormRegionStorage(
     FormRegionName: String,
-    Item: js.Any,
+    Item: Any,
     LCID: Double,
     FormRegionMode: OlFormRegionMode,
     FormRegionSize: OlFormRegionSize
-  ): js.Any = js.native
+  ): Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.FormRegionStartup_typekey")

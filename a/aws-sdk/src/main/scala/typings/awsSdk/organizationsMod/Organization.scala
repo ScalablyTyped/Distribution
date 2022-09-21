@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Organization extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of an organization. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the AWS Organizations User Guide.
+    * The Amazon Resource Name (ARN) of an organization. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the Amazon Web Services Service Authorization Reference.
     */
   var Arn: js.UndefOr[OrganizationArn] = js.undefined
   
@@ -17,7 +17,7 @@ trait Organization extends StObject {
   var AvailablePolicyTypes: js.UndefOr[PolicyTypes] = js.undefined
   
   /**
-    * Specifies the functionality that currently is available to the organization. If set to "ALL", then all features are enabled and policies can be applied to accounts in the organization. If set to "CONSOLIDATED_BILLING", then only consolidated billing functionality is available. For more information, see Enabling All Features in Your Organization in the AWS Organizations User Guide.
+    * Specifies the functionality that currently is available to the organization. If set to "ALL", then all features are enabled and policies can be applied to accounts in the organization. If set to "CONSOLIDATED_BILLING", then only consolidated billing functionality is available. For more information, see Enabling All Features in Your Organization in the Organizations User Guide.
     */
   var FeatureSet: js.UndefOr[OrganizationFeatureSet] = js.undefined
   
@@ -27,12 +27,12 @@ trait Organization extends StObject {
   var Id: js.UndefOr[OrganizationId] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the account that is designated as the management account for the organization. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the AWS Organizations User Guide.
+    * The Amazon Resource Name (ARN) of the account that is designated as the management account for the organization. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the Amazon Web Services Service Authorization Reference.
     */
   var MasterAccountArn: js.UndefOr[AccountArn] = js.undefined
   
   /**
-    * The email address that is associated with the AWS account that is designated as the management account for the organization.
+    * The email address that is associated with the Amazon Web Services account that is designated as the management account for the organization.
     */
   var MasterAccountEmail: js.UndefOr[Email] = js.undefined
   
@@ -58,7 +58,7 @@ object Organization {
     
     inline def setAvailablePolicyTypesUndefined: Self = StObject.set(x, "AvailablePolicyTypes", js.undefined)
     
-    inline def setAvailablePolicyTypesVarargs(value: PolicyTypeSummary*): Self = StObject.set(x, "AvailablePolicyTypes", js.Array(value :_*))
+    inline def setAvailablePolicyTypesVarargs(value: PolicyTypeSummary*): Self = StObject.set(x, "AvailablePolicyTypes", js.Array(value*))
     
     inline def setFeatureSet(value: OrganizationFeatureSet): Self = StObject.set(x, "FeatureSet", value.asInstanceOf[js.Any])
     

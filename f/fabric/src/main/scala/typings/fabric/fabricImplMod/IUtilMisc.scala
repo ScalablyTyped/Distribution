@@ -2,6 +2,7 @@ package typings.fabric.fabricImplMod
 
 import typings.fabric.anon.Angle
 import typings.fabric.anon.FlipX
+import typings.fabric.anon.FlipY
 import typings.fabric.anon.X
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
@@ -35,10 +36,30 @@ trait IUtilMisc extends StObject {
   def clipContext(receiver: Object, ctx: CanvasRenderingContext2D): Unit = js.native
   
   /**
+    * Returns a transform matrix starting from an object of the same kind of
+    * the one returned from qrDecompose, useful also if you want to calculate some
+    * transformations from an object that is not enlived yet
+    * @static
+    * @memberOf fabric.util
+    * @param  {Object} options
+    * @param  {Number} [options.angle]
+    * @param  {Number} [options.scaleX]
+    * @param  {Number} [options.scaleY]
+    * @param  {Boolean} [options.flipX]
+    * @param  {Boolean} [options.flipY]
+    * @param  {Number} [options.skewX]
+    * @param  {Number} [options.skewX]
+    * @param  {Number} [options.translateX]
+    * @param  {Number} [options.translateY]
+    * @return {Number[]} transform matrix
+    */
+  def composeMatrix(options: FlipY): js.Array[Double] = js.native
+  
+  /**
     * Creates accessors (getXXX, setXXX) for a "class", based on "stateProperties" array
     * @param klass "Class" to create accessors for
     */
-  def createAccessors(klass: js.Any): js.Any = js.native
+  def createAccessors(klass: Any): Any = js.native
   
   /**
     * Creates canvas element and initializes it via excanvas if necessary
@@ -52,11 +73,6 @@ trait IUtilMisc extends StObject {
     * Creates image element (works on client and node)
     */
   def createImage(): HTMLImageElement = js.native
-  
-  /**
-    * Creates a transform matrix with the specified scale and skew
-    */
-  def customTransformMatrix(scaleX: Double, scaleY: Double, skewX: Double): js.Array[Double] = js.native
   
   /**
     * Transforms degrees to radians.
@@ -74,7 +90,7 @@ trait IUtilMisc extends StObject {
     * @param y2 end y coordinate
     * @param da dash array pattern
     */
-  def drawDashedLine(ctx: CanvasRenderingContext2D, x: Double, y: Double, x2: Double, y2: Double, da: js.Array[js.Any]): Unit = js.native
+  def drawDashedLine(ctx: CanvasRenderingContext2D, x: Double, y: Double, x2: Double, y2: Double, da: js.Array[Any]): Unit = js.native
   
   /**
     * Creates corresponding fabric instances from their object representations
@@ -83,8 +99,8 @@ trait IUtilMisc extends StObject {
     * @param namespace Namespace to get klass "Class" object from
     * @param reviver Method for further parsing of object elements, called after each fabric object created.
     */
-  def enlivenObjects(objects: js.Array[js.Any], callback: js.Function, namespace: String): Unit = js.native
-  def enlivenObjects(objects: js.Array[js.Any], callback: js.Function, namespace: String, reviver: js.Function): Unit = js.native
+  def enlivenObjects(objects: js.Array[Any], callback: js.Function, namespace: String): Unit = js.native
+  def enlivenObjects(objects: js.Array[Any], callback: js.Function, namespace: String, reviver: js.Function): Unit = js.native
   
   /**
     * Function which always returns `false`.
@@ -102,7 +118,7 @@ trait IUtilMisc extends StObject {
     * @param type Type of object (eg. 'circle')
     * @param namespace Namespace to get klass "Class" object from
     */
-  def getKlass(`type`: String, namespace: String): js.Any = js.native
+  def getKlass(`type`: String, namespace: String): Any = js.native
   
   /**
     * Returns random number between 2 specified ones.
@@ -116,16 +132,16 @@ trait IUtilMisc extends StObject {
     * @param elements SVG elements to group
     * @param [options] Options object
     */
-  def groupSVGElements(elements: js.Array[js.Any]): Object | Group = js.native
-  def groupSVGElements(elements: js.Array[js.Any], options: js.Any): Object | Group = js.native
-  def groupSVGElements(elements: js.Array[js.Any], options: js.Any, path: String): Object | Group = js.native
-  def groupSVGElements(elements: js.Array[js.Any], options: Unit, path: String): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[Any]): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[Any], options: Any): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[Any], options: Any, path: String): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[Any], options: Unit, path: String): Object | Group = js.native
   
   /**
     * Invert transformation t
     * @param t The transform
     */
-  def invertTransform(t: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def invertTransform(t: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     * Returns true if context has transparent pixel
@@ -145,11 +161,11 @@ trait IUtilMisc extends StObject {
     * @param [crossOrigin] crossOrigin value to set image element to
     */
   def loadImage(url: String, callback: js.Function1[/* image */ HTMLImageElement, Unit]): Unit = js.native
-  def loadImage(url: String, callback: js.Function1[/* image */ HTMLImageElement, Unit], context: js.Any): Unit = js.native
+  def loadImage(url: String, callback: js.Function1[/* image */ HTMLImageElement, Unit], context: Any): Unit = js.native
   def loadImage(
     url: String,
     callback: js.Function1[/* image */ HTMLImageElement, Unit],
-    context: js.Any,
+    context: Any,
     crossOrigin: String
   ): Unit = js.native
   def loadImage(
@@ -182,7 +198,7 @@ trait IUtilMisc extends StObject {
     * @param destination Destination object
     * @param properties Propertie names to include
     */
-  def populateWithProperties(source: js.Any, destination: js.Any, properties: js.Any): Unit = js.native
+  def populateWithProperties(source: Any, destination: Any, properties: Any): Unit = js.native
   
   /**
     * Decomposes standard 2x2 matrix into transform componentes
@@ -200,7 +216,7 @@ trait IUtilMisc extends StObject {
     * Removes value from an array.
     * Presence of value (and its position in an array) is determined via `Array.prototype.indexOf`
     */
-  def removeFromArray(array: js.Array[js.Any], value: js.Any): js.Array[js.Any] = js.native
+  def removeFromArray(array: js.Array[Any], value: Any): js.Array[Any] = js.native
   
   /**
     * reset an object transform state to neutral. Top and left are not accounted for
@@ -214,7 +230,7 @@ trait IUtilMisc extends StObject {
     * Returns object of given namespace
     * @param namespace Namespace string e.g. 'fabric.Image.filter' or 'fabric'
     */
-  def resolveNamespace(namespace: String): js.Any = js.native
+  def resolveNamespace(namespace: String): Any = js.native
   
   /**
     * Rotates `point` around `origin` with `radians`
@@ -251,6 +267,6 @@ trait IUtilMisc extends StObject {
     * @param  t The transform
     * @param  [ignoreOffset] Indicates that the offset should not be applied
     */
-  def transformPoint(p: Point, t: js.Array[js.Any]): Point = js.native
-  def transformPoint(p: Point, t: js.Array[js.Any], ignoreOffset: Boolean): Point = js.native
+  def transformPoint(p: Point, t: js.Array[Any]): Point = js.native
+  def transformPoint(p: Point, t: js.Array[Any], ignoreOffset: Boolean): Point = js.native
 }

@@ -10,10 +10,10 @@ A react-native component for EventSource: Server-Sent Events for iOS
 | ------------------ | :-------------: |
 | Full name          | react-native-event-source |
 | Keywords           | react-native, react-component, event-source, sse |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 26385 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 13041.0 |
+| # stars            | 131.0 |
 
 ## Links
 - [Homepage](https://github.com/jordanbyron/react-native-event-source#readme)

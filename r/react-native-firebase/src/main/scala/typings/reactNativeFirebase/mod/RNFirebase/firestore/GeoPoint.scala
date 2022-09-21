@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.firestore.GeoPoint")
 @js.native
-class GeoPoint protected () extends StObject {
+open class GeoPoint protected () extends StObject {
   def this(latitude: Double, longitude: Double) = this()
   
   val latitude: Double = js.native

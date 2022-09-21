@@ -28,7 +28,7 @@ object commentMod extends Shortcut {
     /** Nested comments should be provided as children of the Comment */
     var children: js.UndefOr[ReactNode] = js.undefined
     
-    /** className of comment */
+    /** ClassName of comment */
     var className: js.UndefOr[String] = js.undefined
     
     /** The main content of the comment */
@@ -56,7 +56,7 @@ object commentMod extends Shortcut {
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setActionsVarargs(value: ReactNode*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: ReactNode*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setAuthor(value: ReactNode): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

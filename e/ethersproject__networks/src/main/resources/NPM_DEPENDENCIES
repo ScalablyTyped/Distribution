@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/networks" : "5.0.5"
+      "@ethersproject/networks" : "5.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/networks" : "5.0.5"
+      "@ethersproject/networks" : "5.7.1"
     }
   ],
   "compile-devDependencies" : [

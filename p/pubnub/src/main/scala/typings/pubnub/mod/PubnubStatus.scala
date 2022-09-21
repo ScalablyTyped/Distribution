@@ -1,6 +1,5 @@
 package typings.pubnub.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait PubnubStatus extends StObject {
   
   var error: Boolean
   
-  var errorData: js.UndefOr[Error] = js.undefined
+  var errorData: js.UndefOr[js.Error] = js.undefined
   
   // see Pubnub.Categories
   var operation: String
@@ -34,7 +33,7 @@ object PubnubStatus {
     
     inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    inline def setErrorData(value: Error): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
+    inline def setErrorData(value: js.Error): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
     
     inline def setErrorDataUndefined: Self = StObject.set(x, "errorData", js.undefined)
     

@@ -53,7 +53,7 @@ object PathConstraintData {
     
     inline def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
-    inline def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value :_*))
+    inline def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value*))
     
     inline def setOffsetRotation(value: Double): Self = StObject.set(x, "offsetRotation", value.asInstanceOf[js.Any])
     

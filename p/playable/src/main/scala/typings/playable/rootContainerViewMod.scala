@@ -11,7 +11,7 @@ object rootContainerViewMod {
   
   @JSImport("playable/dist/src/modules/root-container/root-container.view", JSImport.Default)
   @js.native
-  class default protected () extends RootContainerView {
+  open class default protected () extends RootContainerView {
     def this(config: IRootContainerViewConfig) = this()
   }
   
@@ -20,13 +20,13 @@ object rootContainerViewMod {
     extends typings.playable.viewMod.default[IRootContainerViewStyles] {
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def appendComponentElement(element: HTMLElement): Unit = js.native
     

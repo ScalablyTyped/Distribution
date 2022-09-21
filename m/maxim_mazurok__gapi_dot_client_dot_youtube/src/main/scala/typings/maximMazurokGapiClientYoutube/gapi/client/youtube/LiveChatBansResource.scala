@@ -2,7 +2,7 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientYoutube.anon.Alt
-import typings.maximMazurokGapiClientYoutube.anon.KeyOauthtoken
+import typings.maximMazurokGapiClientYoutube.anon.OauthtokenPart
 import typings.maximMazurokGapiClientYoutube.anon.Uploadprotocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,5 +17,5 @@ trait LiveChatBansResource extends StObject {
   
   def insert(request: Alt, body: LiveChatBan): Request[LiveChatBan] = js.native
   /** Inserts a new resource into this collection. */
-  def insert(request: KeyOauthtoken): Request[LiveChatBan] = js.native
+  def insert(request: OauthtokenPart): Request[LiveChatBan] = js.native
 }

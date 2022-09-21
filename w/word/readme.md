@@ -10,10 +10,10 @@ Word Processing Document library
 | ------------------ | :-------------: |
 | Full name          | word |
 | Keywords           | word |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 6429313 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4162703.6666666665 |
+| # stars            | 1266.0 |
 
 ## Links
 - [Homepage](https://wordjs.com/)

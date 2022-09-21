@@ -9,7 +9,7 @@ trait JobListDescriptor extends StObject {
   /**
     * A timestamp indicating when the specified job was created.
     */
-  var CreationTime: js.UndefOr[JobCreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The user-specified description that was included in the specified job's Create Job request.
@@ -22,7 +22,7 @@ trait JobListDescriptor extends StObject {
   var JobId: js.UndefOr[typings.awsSdk.s3controlMod.JobId] = js.undefined
   
   /**
-    * The operation that the specified job is configured to run on each object listed in the manifest.
+    * The operation that the specified job is configured to run on every object listed in the manifest.
     */
   var Operation: js.UndefOr[OperationName] = js.undefined
   
@@ -44,7 +44,7 @@ trait JobListDescriptor extends StObject {
   /**
     * A timestamp indicating when the specified job terminated. A job's termination date is the date and time when it succeeded, failed, or was canceled.
     */
-  var TerminationDate: js.UndefOr[JobTerminationDate] = js.undefined
+  var TerminationDate: js.UndefOr[js.Date] = js.undefined
 }
 object JobListDescriptor {
   
@@ -55,7 +55,7 @@ object JobListDescriptor {
   
   extension [Self <: JobListDescriptor](x: Self) {
     
-    inline def setCreationTime(value: JobCreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -83,7 +83,7 @@ object JobListDescriptor {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setTerminationDate(value: JobTerminationDate): Self = StObject.set(x, "TerminationDate", value.asInstanceOf[js.Any])
+    inline def setTerminationDate(value: js.Date): Self = StObject.set(x, "TerminationDate", value.asInstanceOf[js.Any])
     
     inline def setTerminationDateUndefined: Self = StObject.set(x, "TerminationDate", js.undefined)
   }

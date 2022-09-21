@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NoneTAsComponentextendsElBody extends StObject {
   
-  def apply[TAsComponent /* <: ElementType[js.Any] */](
+  def apply[TAsComponent /* <: ElementType[Any] */](
     props: `6`[TAsComponent] & HelpersPropsOverrides & PickBadgeHelpersPropsFloaBackgroundColor & (Pick[
       ComponentProps[TAsComponent], 
       Exclude[
@@ -62,19 +62,19 @@ trait NoneTAsComponentextendsElBody extends StObject {
     ]) & (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
   ): Element | Null = js.native
   
-  var Body: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBadge, ElementType[js.Any]] = js.native
+  var Body: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBadge, ElementType[Any]] = js.native
   
   @JSName("$$typeof")
   var DollarDollartypeof: js.Symbol = js.native
   
-  var Foot: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBadge, ElementType[js.Any]] = js.native
+  var Foot: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBadge, ElementType[Any]] = js.native
   
-  var Head: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBadge, ElementType[js.Any]] = js.native
+  var Head: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBadge, ElementType[Any]] = js.native
   
-  var Title: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBadge, ElementType[js.Any]] = js.native
+  var Title: ForwardRefAsExoticComponent[PreferHelpersPropsOverridBadge, ElementType[Any]] = js.native
   
   var defaultProps: AsElementType & (Partial[
-    HelpersPropsOverrides & PickBadgeHelpersPropsFloaBackgroundColor & (Pick[js.Any, String | Double | js.Symbol])
+    HelpersPropsOverrides & PickBadgeHelpersPropsFloaBackgroundColor & (Pick[Any, String | Double | js.Symbol])
   ]) = js.native
   
   var displayName: String & js.UndefOr[String] = js.native

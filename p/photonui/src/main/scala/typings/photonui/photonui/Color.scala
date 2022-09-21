@@ -54,7 +54,7 @@ object Color {
     hexString: String,
     hue: Double,
     red: Double,
-    registerCallback: (String, String, js.Function, js.Any) => Unit,
+    registerCallback: (String, String, js.Function, Any) => Unit,
     removeCallback: String => Unit,
     rgbString: String,
     rgbaString: String,

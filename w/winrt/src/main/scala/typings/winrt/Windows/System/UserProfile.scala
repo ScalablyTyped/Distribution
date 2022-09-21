@@ -172,7 +172,7 @@ object UserProfile {
     
     var nameAccessAllowed: Boolean
     
-    var onaccountpicturechanged: js.Any
+    var onaccountpicturechanged: Any
     
     def setAccountPictureAsync(image: IStorageFile): IAsyncOperation[SetAccountPictureResult]
     
@@ -194,7 +194,7 @@ object UserProfile {
       getPrincipalNameAsync: () => IAsyncOperation[String],
       getSessionInitiationProtocolUriAsync: () => IAsyncOperation[Uri],
       nameAccessAllowed: Boolean,
-      onaccountpicturechanged: js.Any,
+      onaccountpicturechanged: Any,
       setAccountPictureAsync: IStorageFile => IAsyncOperation[SetAccountPictureResult],
       setAccountPictureFromStreamAsync: IRandomAccessStream => IAsyncOperation[SetAccountPictureResult],
       setAccountPicturesAsync: (IStorageFile, IStorageFile, IStorageFile) => IAsyncOperation[SetAccountPictureResult],
@@ -224,7 +224,7 @@ object UserProfile {
       
       inline def setNameAccessAllowed(value: Boolean): Self = StObject.set(x, "nameAccessAllowed", value.asInstanceOf[js.Any])
       
-      inline def setOnaccountpicturechanged(value: js.Any): Self = StObject.set(x, "onaccountpicturechanged", value.asInstanceOf[js.Any])
+      inline def setOnaccountpicturechanged(value: Any): Self = StObject.set(x, "onaccountpicturechanged", value.asInstanceOf[js.Any])
       
       inline def setSetAccountPictureAsync(value: IStorageFile => IAsyncOperation[SetAccountPictureResult]): Self = StObject.set(x, "setAccountPictureAsync", js.Any.fromFunction1(value))
       

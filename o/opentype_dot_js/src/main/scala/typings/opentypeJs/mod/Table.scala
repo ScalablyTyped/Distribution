@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Table
   extends StObject
-     with /* propName */ StringDictionary[js.Any] {
+     with /* propName */ StringDictionary[Any] {
   
   def encode(): js.Array[Double]
   
@@ -38,7 +38,7 @@ object Table {
     
     inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setSizeOf(value: () => Double): Self = StObject.set(x, "sizeOf", js.Any.fromFunction0(value))
     
@@ -46,6 +46,6 @@ object Table {
     
     inline def setTables(value: js.Array[Table]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    inline def setTablesVarargs(value: Table*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: Table*): Self = StObject.set(x, "tables", js.Array(value*))
   }
 }

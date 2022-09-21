@@ -10,10 +10,10 @@ object hdrOnMod {
   
   @JSImport("material-ui/svg-icons/image/hdr-on", JSImport.Default)
   @js.native
-  class default () extends ImageHdrOn
+  open class default () extends ImageHdrOn
   
   @JSImport("material-ui/svg-icons/image/hdr-on", "ImageHdrOn")
   @js.native
-  class ImageHdrOn ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageHdrOn ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

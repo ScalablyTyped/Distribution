@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You probably don't want to call this constructor, because this class does not support links (relationships between nodes) or groups (nodes and links and subgraphs as nodes): instead, create instances of a subclass such as GraphLinksModel or TreeModel.
   * @param {Array<Object>=} nodedataarray an optional Array containing JavaScript objects to be represented by Parts.
   */
-class Model ()
+open class Model ()
   extends typings.go.mod.Model {
   def this(nodedataarray: js.Array[js.Object]) = this()
 }

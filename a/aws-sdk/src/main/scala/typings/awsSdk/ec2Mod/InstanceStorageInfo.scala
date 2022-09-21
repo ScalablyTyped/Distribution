@@ -12,7 +12,12 @@ trait InstanceStorageInfo extends StObject {
   var Disks: js.UndefOr[DiskInfoList] = js.undefined
   
   /**
-    * Indicates whether non-volatile memory express (NVMe) is supported for instance store.
+    * Indicates whether data is encrypted at rest.
+    */
+  var EncryptionSupport: js.UndefOr[InstanceStorageEncryptionSupport] = js.undefined
+  
+  /**
+    * Indicates whether non-volatile memory express (NVMe) is supported.
     */
   var NvmeSupport: js.UndefOr[EphemeralNvmeSupport] = js.undefined
   
@@ -34,7 +39,11 @@ object InstanceStorageInfo {
     
     inline def setDisksUndefined: Self = StObject.set(x, "Disks", js.undefined)
     
-    inline def setDisksVarargs(value: DiskInfo*): Self = StObject.set(x, "Disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: DiskInfo*): Self = StObject.set(x, "Disks", js.Array(value*))
+    
+    inline def setEncryptionSupport(value: InstanceStorageEncryptionSupport): Self = StObject.set(x, "EncryptionSupport", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionSupportUndefined: Self = StObject.set(x, "EncryptionSupport", js.undefined)
     
     inline def setNvmeSupport(value: EphemeralNvmeSupport): Self = StObject.set(x, "NvmeSupport", value.asInstanceOf[js.Any])
     

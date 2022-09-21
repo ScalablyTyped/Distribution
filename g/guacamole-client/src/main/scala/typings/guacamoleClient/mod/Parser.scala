@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "Parser")
 @js.native
-class Parser ()
+open class Parser ()
   extends typings.guacamoleClient.parserMod.Parser

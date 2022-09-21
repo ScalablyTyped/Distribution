@@ -1,9 +1,5 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,14 +14,7 @@ trait ParamsResourceAchievementsIncrement
   var achievementId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * A randomly generated numeric ID for each request specified by the caller.
-    * This number is used at the server to ensure that the request is handled
-    * correctly across retries.
+    * A randomly generated numeric ID for each request specified by the caller. This number is used at the server to ensure that the request is handled correctly across retries.
     */
   var requestId: js.UndefOr[String] = js.undefined
   
@@ -46,10 +35,6 @@ object ParamsResourceAchievementsIncrement {
     inline def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
     
     inline def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

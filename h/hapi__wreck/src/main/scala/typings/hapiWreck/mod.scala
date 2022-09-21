@@ -17,7 +17,7 @@ import typings.hapiWreck.mod.Client.Options
 import typings.hapiWreck.mod.Client.parseCacheControl.Parameters
 import typings.hapiWreck.mod.Client.request.Response
 import typings.hapiWreck.mod.Client.toReadableStream.Payload
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
@@ -244,7 +244,7 @@ object mod extends Shortcut {
       
       type request = js.Function1[/* req */ ClientRequest, Unit]
       
-      type response = js.Function2[/* err */ js.UndefOr[Boom[js.Any]], /* details */ Req, Unit]
+      type response = js.Function2[/* err */ js.UndefOr[Boom[Any]], /* details */ Req, Unit]
     }
     
     trait Options

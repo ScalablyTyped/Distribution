@@ -44,7 +44,7 @@ object XFilter {
     acquire: () => Unit,
     cancel: () => Unit,
     filter: SeqEquiv[PropertyValue] => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFilter = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), filter = js.Any.fromFunction1(filter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

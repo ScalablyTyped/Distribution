@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/line" : "0.62.0"
+      "@nivo/line" : "0.80.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/line" : "0.62.0"
+      "@nivo/line" : "0.80.0"
     }
   ],
   "compile-devDependencies" : [

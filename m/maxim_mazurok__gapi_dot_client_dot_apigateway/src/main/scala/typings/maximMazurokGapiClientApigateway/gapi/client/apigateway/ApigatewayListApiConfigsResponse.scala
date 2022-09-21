@@ -28,7 +28,7 @@ object ApigatewayListApiConfigsResponse {
     
     inline def setApiConfigsUndefined: Self = StObject.set(x, "apiConfigs", js.undefined)
     
-    inline def setApiConfigsVarargs(value: ApigatewayApiConfig*): Self = StObject.set(x, "apiConfigs", js.Array(value :_*))
+    inline def setApiConfigsVarargs(value: ApigatewayApiConfig*): Self = StObject.set(x, "apiConfigs", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object ApigatewayListApiConfigsResponse {
     
     inline def setUnreachableLocationsUndefined: Self = StObject.set(x, "unreachableLocations", js.undefined)
     
-    inline def setUnreachableLocationsVarargs(value: String*): Self = StObject.set(x, "unreachableLocations", js.Array(value :_*))
+    inline def setUnreachableLocationsVarargs(value: String*): Self = StObject.set(x, "unreachableLocations", js.Array(value*))
   }
 }

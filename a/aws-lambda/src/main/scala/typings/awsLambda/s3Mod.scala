@@ -28,7 +28,7 @@ object s3Mod {
       
       inline def setRecords(value: js.Array[S3EventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: S3EventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: S3EventRecord*): Self = StObject.set(x, "Records", js.Array(value*))
     }
   }
   

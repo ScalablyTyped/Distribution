@@ -5,23 +5,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A [`header`](/docs/hosting/full-config#headers) defines custom headers to
-  * add to a response should the request URL path match the pattern.
-  */
 trait SchemaHeader extends StObject {
   
   /**
-    * Required. The user-supplied [glob
-    * pattern](/docs/hosting/full-config#glob_pattern_matching) to match
-    * against the request URL path.
+    * The user-supplied [glob](https://firebase.google.com/docs/hosting/full-config#glob_pattern_matching) to match against the request URL path.
     */
-  var glob: js.UndefOr[String] = js.undefined
+  var glob: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Required. The additional headers to add to the response.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
+  var headers: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+  
+  /**
+    * The user-supplied RE2 regular expression to match against the request URL path.
+    */
+  var regex: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaHeader {
   
@@ -34,10 +33,20 @@ object SchemaHeader {
     
     inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
     
+    inline def setGlobNull: Self = StObject.set(x, "glob", null)
+    
     inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
     
     inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
+    inline def setHeadersNull: Self = StObject.set(x, "headers", null)
+    
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    
+    inline def setRegexNull: Self = StObject.set(x, "regex", null)
+    
+    inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
   }
 }

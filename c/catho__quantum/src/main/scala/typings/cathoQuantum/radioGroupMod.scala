@@ -1,7 +1,7 @@
 package typings.cathoQuantum
 
-import typings.cathoQuantum.anon.ColorsComponents
 import typings.cathoQuantum.anon.ColorsSpacing
+import typings.cathoQuantum.anon.ComponentsSpacing
 import typings.cathoQuantum.anon.Disabled
 import typings.cathoQuantum.cathoQuantumStrings.button
 import typings.cathoQuantum.cathoQuantumStrings.error
@@ -15,6 +15,7 @@ import typings.cathoQuantum.cathoQuantumStrings.success
 import typings.cathoQuantum.cathoQuantumStrings.warning
 import typings.cathoQuantum.cathoQuantumStrings.xlarge
 import typings.cathoQuantum.cathoQuantumStrings.xsmall
+import typings.cathoQuantum.iconMod.IconNames
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.Component
@@ -29,8 +30,8 @@ object radioGroupMod {
   
   @JSImport("@catho/quantum/RadioGroup", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[RadioGroupProps, js.Object, js.Any]
+  open class default ()
+    extends Component[RadioGroupProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -63,7 +64,7 @@ object radioGroupMod {
     
     var error: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.undefined
+    var icon: js.UndefOr[IconNames | String] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -71,13 +72,13 @@ object radioGroupMod {
     
     var label: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
+    var onChange: js.UndefOr[js.Function0[Unit | ChangeEventHandler[HTMLInputElement]]] = js.undefined
     
     var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
     
     var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
     
-    var theme: js.UndefOr[ColorsComponents] = js.undefined
+    var theme: js.UndefOr[ComponentsSpacing] = js.undefined
     
     var value: String
   }
@@ -106,7 +107,7 @@ object radioGroupMod {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconNames | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -122,7 +123,7 @@ object radioGroupMod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: () => Unit | ChangeEventHandler[HTMLInputElement]): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -134,7 +135,7 @@ object radioGroupMod {
       
       inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      inline def setTheme(value: ColorsComponents): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ComponentsSpacing): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
@@ -142,11 +143,13 @@ object radioGroupMod {
     }
   }
   
-  type RadioGroup = Component[RadioGroupProps, js.Object, js.Any]
+  type RadioGroup = Component[RadioGroupProps, js.Object, Any]
   
   trait RadioGroupProps extends StObject {
     
     var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
+    
+    var defaultValue: js.UndefOr[String] = js.undefined
     
     var error: js.UndefOr[String] = js.undefined
     
@@ -154,17 +157,17 @@ object radioGroupMod {
     
     var name: String
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
+    var onChange: js.UndefOr[js.Function0[js.Object | ChangeEventHandler[HTMLInputElement]]] = js.undefined
     
     var options: js.UndefOr[js.Array[Disabled]] = js.undefined
+    
+    var required: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
     
     var theme: js.UndefOr[ColorsSpacing] = js.undefined
     
     var `type`: js.UndefOr[radio | button] = js.undefined
-    
-    var value: js.UndefOr[String] = js.undefined
   }
   object RadioGroupProps {
     
@@ -179,7 +182,11 @@ object radioGroupMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -191,7 +198,7 @@ object radioGroupMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: () => js.Object | ChangeEventHandler[HTMLInputElement]): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -199,7 +206,11 @@ object radioGroupMod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: Disabled*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Disabled*): Self = StObject.set(x, "options", js.Array(value*))
+      
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
       inline def setSize(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -212,10 +223,6 @@ object radioGroupMod {
       inline def setType(value: radio | button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-      
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -248,7 +255,7 @@ object radioGroupMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

@@ -42,11 +42,11 @@ object Channel {
     
     inline def setPlayUrls(value: js.Array[String]): Self = StObject.set(x, "PlayUrls", value.asInstanceOf[js.Any])
     
-    inline def setPlayUrlsVarargs(value: String*): Self = StObject.set(x, "PlayUrls", js.Array(value :_*))
+    inline def setPlayUrlsVarargs(value: String*): Self = StObject.set(x, "PlayUrls", js.Array(value*))
     
     inline def setPublishUrls(value: js.Array[String]): Self = StObject.set(x, "PublishUrls", value.asInstanceOf[js.Any])
     
-    inline def setPublishUrlsVarargs(value: String*): Self = StObject.set(x, "PublishUrls", js.Array(value :_*))
+    inline def setPublishUrlsVarargs(value: String*): Self = StObject.set(x, "PublishUrls", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

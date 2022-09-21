@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Workspace extends StObject {
   
+  /** Time when the workspace was created. */
+  var createTime: js.UndefOr[String] = js.undefined
+  
   /** The human readable title of the workspace. */
   var displayName: js.UndefOr[String] = js.undefined
   
@@ -14,6 +17,9 @@ trait Workspace extends StObject {
   
   /** The list of tables in the workspace. */
   var tables: js.UndefOr[js.Array[Table]] = js.undefined
+  
+  /** Time when the workspace was last updated. */
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Workspace {
   
@@ -23,6 +29,10 @@ object Workspace {
   }
   
   extension [Self <: Workspace](x: Self) {
+    
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -36,6 +46,10 @@ object Workspace {
     
     inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    inline def setTablesVarargs(value: Table*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: Table*): Self = StObject.set(x, "tables", js.Array(value*))
+    
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

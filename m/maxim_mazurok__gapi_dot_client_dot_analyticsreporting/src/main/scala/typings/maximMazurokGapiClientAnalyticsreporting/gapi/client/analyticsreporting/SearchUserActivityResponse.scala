@@ -42,7 +42,7 @@ object SearchUserActivityResponse {
     
     inline def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
     
-    inline def setSessionsVarargs(value: UserActivitySession*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+    inline def setSessionsVarargs(value: UserActivitySession*): Self = StObject.set(x, "sessions", js.Array(value*))
     
     inline def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
     

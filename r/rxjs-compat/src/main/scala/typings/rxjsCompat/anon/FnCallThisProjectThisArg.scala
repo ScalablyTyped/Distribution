@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisProjectThisArg extends StObject {
   
-  def apply[T, R](project: js.Function2[/* value */ T, /* index */ Double, R]): js.Any = js.native
-  def apply[T, R](project: js.Function2[/* value */ T, /* index */ Double, R], thisArg: js.Any): js.Any = js.native
+  def apply[T, R](project: js.Function2[/* value */ T, /* index */ Double, R]): Any = js.native
+  def apply[T, R](project: js.Function2[/* value */ T, /* index */ Double, R], thisArg: Any): Any = js.native
 }

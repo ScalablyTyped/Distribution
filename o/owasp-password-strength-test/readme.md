@@ -10,10 +10,10 @@ A password-strength tester based upon the OWASP guidelines for enforcing strong 
 | ------------------ | :-------------: |
 | Full name          | owasp-password-strength-test |
 | Keywords           | security, password, owasp |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 739585 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 130118.0 |
+| # stars            | 195.0 |
 
 ## Links
 - [Homepage](https://github.com/nowsecure/owasp-password-strength-test)

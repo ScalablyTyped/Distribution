@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("graphql", "GraphQLSchema")
 @js.native
-class GraphQLSchema protected () extends StObject {
+open class GraphQLSchema protected () extends StObject {
   def this(config: GraphQLSchemaConfig) = this()
   
   def getDirective(name: String): GraphQLDirective = js.native

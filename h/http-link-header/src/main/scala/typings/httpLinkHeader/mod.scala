@@ -1,7 +1,7 @@
 package typings.httpLinkHeader
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object mod {
     * Link
     * @param value Link header to parse
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Link {
     def this(value: String) = this()

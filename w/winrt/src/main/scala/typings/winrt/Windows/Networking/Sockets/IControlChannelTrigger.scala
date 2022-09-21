@@ -24,9 +24,9 @@ trait IControlChannelTrigger
   
   var serverKeepAliveIntervalInMinutes: Double
   
-  var transportObject: js.Any
+  var transportObject: Any
   
-  def usingTransport(transport: js.Any): Unit
+  def usingTransport(transport: Any): Unit
   
   def waitForPushEnabled(): ControlChannelTriggerStatus
 }
@@ -41,8 +41,8 @@ object IControlChannelTrigger {
     keepAliveTrigger: IBackgroundTrigger,
     pushNotificationTrigger: IBackgroundTrigger,
     serverKeepAliveIntervalInMinutes: Double,
-    transportObject: js.Any,
-    usingTransport: js.Any => Unit,
+    transportObject: Any,
+    usingTransport: Any => Unit,
     waitForPushEnabled: () => ControlChannelTriggerStatus
   ): IControlChannelTrigger = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), controlChannelTriggerId = controlChannelTriggerId.asInstanceOf[js.Any], currentKeepAliveIntervalInMinutes = currentKeepAliveIntervalInMinutes.asInstanceOf[js.Any], decreaseNetworkKeepAliveInterval = js.Any.fromFunction0(decreaseNetworkKeepAliveInterval), flushTransport = js.Any.fromFunction0(flushTransport), keepAliveTrigger = keepAliveTrigger.asInstanceOf[js.Any], pushNotificationTrigger = pushNotificationTrigger.asInstanceOf[js.Any], serverKeepAliveIntervalInMinutes = serverKeepAliveIntervalInMinutes.asInstanceOf[js.Any], transportObject = transportObject.asInstanceOf[js.Any], usingTransport = js.Any.fromFunction1(usingTransport), waitForPushEnabled = js.Any.fromFunction0(waitForPushEnabled))
@@ -65,9 +65,9 @@ object IControlChannelTrigger {
     
     inline def setServerKeepAliveIntervalInMinutes(value: Double): Self = StObject.set(x, "serverKeepAliveIntervalInMinutes", value.asInstanceOf[js.Any])
     
-    inline def setTransportObject(value: js.Any): Self = StObject.set(x, "transportObject", value.asInstanceOf[js.Any])
+    inline def setTransportObject(value: Any): Self = StObject.set(x, "transportObject", value.asInstanceOf[js.Any])
     
-    inline def setUsingTransport(value: js.Any => Unit): Self = StObject.set(x, "usingTransport", js.Any.fromFunction1(value))
+    inline def setUsingTransport(value: Any => Unit): Self = StObject.set(x, "usingTransport", js.Any.fromFunction1(value))
     
     inline def setWaitForPushEnabled(value: () => ControlChannelTriggerStatus): Self = StObject.set(x, "waitForPushEnabled", js.Any.fromFunction0(value))
   }

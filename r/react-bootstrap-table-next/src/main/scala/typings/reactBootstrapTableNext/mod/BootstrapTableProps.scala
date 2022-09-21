@@ -24,18 +24,18 @@ trait BootstrapTableProps[T /* <: js.Object */, K] extends StObject {
     */
   var caption: js.UndefOr[Element | String] = js.undefined
   
-  var cellEdit: js.UndefOr[js.Any] = js.undefined
+  var cellEdit: js.UndefOr[Any] = js.undefined
   
   var classes: js.UndefOr[String] = js.undefined
   
-  var columns: js.Array[ColumnDescription[js.Any, js.Any]]
+  var columns: js.Array[ColumnDescription[Any, Any]]
   
   var condensed: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Provides data for your table. It accepts a single Array object.
     */
-  var data: js.Array[js.Any]
+  var data: js.Array[Any]
   
   var defaultSortDirection: js.UndefOr[SortOrder] = js.undefined
   
@@ -43,7 +43,7 @@ trait BootstrapTableProps[T /* <: js.Object */, K] extends StObject {
   
   var expandRow: js.UndefOr[ExpandRowProps[T, K]] = js.undefined
   
-  var filter: js.UndefOr[js.Any] = js.undefined
+  var filter: js.UndefOr[Any] = js.undefined
   
   var filterPosition: js.UndefOr[FilterPosition] = js.undefined
   
@@ -71,15 +71,15 @@ trait BootstrapTableProps[T /* <: js.Object */, K] extends StObject {
     */
   var onDataSizeChange: js.UndefOr[js.Function1[/* props */ DataSize, Unit]] = js.undefined
   
-  var onExternalFilter: js.UndefOr[js.Any] = js.undefined
+  var onExternalFilter: js.UndefOr[Any] = js.undefined
   
-  var onFilter: js.UndefOr[js.Any] = js.undefined
+  var onFilter: js.UndefOr[Any] = js.undefined
   
-  var onSort: js.UndefOr[js.Any] = js.undefined
+  var onSort: js.UndefOr[Any] = js.undefined
   
   var onTableChange: js.UndefOr[TableChangeHandler[T]] = js.undefined
   
-  var overlay: js.UndefOr[js.Any] = js.undefined
+  var overlay: js.UndefOr[Any] = js.undefined
   
   var pagination: js.UndefOr[`0`] = js.undefined
   
@@ -91,7 +91,7 @@ trait BootstrapTableProps[T /* <: js.Object */, K] extends StObject {
   
   var rowClasses: js.UndefOr[(js.Function2[/* row */ T, /* rowIndex */ Double, String]) | String] = js.undefined
   
-  var rowEvents: js.UndefOr[RowEventHandlerProps[js.Any]] = js.undefined
+  var rowEvents: js.UndefOr[RowEventHandlerProps[Any]] = js.undefined
   
   var rowStyle: js.UndefOr[
     (js.Function2[/* row */ T, /* rowIndex */ Double, CSSProperties]) | CSSProperties
@@ -111,7 +111,7 @@ trait BootstrapTableProps[T /* <: js.Object */, K] extends StObject {
 }
 object BootstrapTableProps {
   
-  inline def apply[T /* <: js.Object */, K](columns: js.Array[ColumnDescription[js.Any, js.Any]], data: js.Array[js.Any], keyField: String): BootstrapTableProps[T, K] = {
+  inline def apply[T /* <: js.Object */, K](columns: js.Array[ColumnDescription[Any, Any]], data: js.Array[Any], keyField: String): BootstrapTableProps[T, K] = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], keyField = keyField.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapTableProps[T, K]]
   }
@@ -134,7 +134,7 @@ object BootstrapTableProps {
     
     inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    inline def setCellEdit(value: js.Any): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
+    inline def setCellEdit(value: Any): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
     
     inline def setCellEditUndefined: Self = StObject.set(x, "cellEdit", js.undefined)
     
@@ -142,17 +142,17 @@ object BootstrapTableProps {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[ColumnDescription[Any, Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: (ColumnDescription[Any, Any])*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCondensed(value: Boolean): Self = StObject.set(x, "condensed", value.asInstanceOf[js.Any])
     
     inline def setCondensedUndefined: Self = StObject.set(x, "condensed", js.undefined)
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDefaultSortDirection(value: SortOrder): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
     
@@ -162,13 +162,13 @@ object BootstrapTableProps {
     
     inline def setDefaultSortedUndefined: Self = StObject.set(x, "defaultSorted", js.undefined)
     
-    inline def setDefaultSortedVarargs(value: Order*): Self = StObject.set(x, "defaultSorted", js.Array(value :_*))
+    inline def setDefaultSortedVarargs(value: Order*): Self = StObject.set(x, "defaultSorted", js.Array(value*))
     
     inline def setExpandRow(value: ExpandRowProps[T, K]): Self = StObject.set(x, "expandRow", value.asInstanceOf[js.Any])
     
     inline def setExpandRowUndefined: Self = StObject.set(x, "expandRow", js.undefined)
     
-    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterPosition(value: FilterPosition): Self = StObject.set(x, "filterPosition", value.asInstanceOf[js.Any])
     
@@ -212,15 +212,15 @@ object BootstrapTableProps {
     
     inline def setOnDataSizeChangeUndefined: Self = StObject.set(x, "onDataSizeChange", js.undefined)
     
-    inline def setOnExternalFilter(value: js.Any): Self = StObject.set(x, "onExternalFilter", value.asInstanceOf[js.Any])
+    inline def setOnExternalFilter(value: Any): Self = StObject.set(x, "onExternalFilter", value.asInstanceOf[js.Any])
     
     inline def setOnExternalFilterUndefined: Self = StObject.set(x, "onExternalFilter", js.undefined)
     
-    inline def setOnFilter(value: js.Any): Self = StObject.set(x, "onFilter", value.asInstanceOf[js.Any])
+    inline def setOnFilter(value: Any): Self = StObject.set(x, "onFilter", value.asInstanceOf[js.Any])
     
     inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
     
-    inline def setOnSort(value: js.Any): Self = StObject.set(x, "onSort", value.asInstanceOf[js.Any])
+    inline def setOnSort(value: Any): Self = StObject.set(x, "onSort", value.asInstanceOf[js.Any])
     
     inline def setOnSortUndefined: Self = StObject.set(x, "onSort", js.undefined)
     
@@ -228,7 +228,7 @@ object BootstrapTableProps {
     
     inline def setOnTableChangeUndefined: Self = StObject.set(x, "onTableChange", js.undefined)
     
-    inline def setOverlay(value: js.Any): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: Any): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
@@ -252,7 +252,7 @@ object BootstrapTableProps {
     
     inline def setRowClassesUndefined: Self = StObject.set(x, "rowClasses", js.undefined)
     
-    inline def setRowEvents(value: RowEventHandlerProps[js.Any]): Self = StObject.set(x, "rowEvents", value.asInstanceOf[js.Any])
+    inline def setRowEvents(value: RowEventHandlerProps[Any]): Self = StObject.set(x, "rowEvents", value.asInstanceOf[js.Any])
     
     inline def setRowEventsUndefined: Self = StObject.set(x, "rowEvents", js.undefined)
     

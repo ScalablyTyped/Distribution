@@ -12,7 +12,7 @@ object cancelUserAgentClientMod {
   
   @JSImport("sip.js/lib/core/user-agents/cancel-user-agent-client", "CancelUserAgentClient")
   @js.native
-  class CancelUserAgentClient protected () extends UserAgentClient {
+  open class CancelUserAgentClient protected () extends UserAgentClient {
     def this(core: UserAgentCore, message: OutgoingRequestMessage) = this()
     def this(core: UserAgentCore, message: OutgoingRequestMessage, delegate: OutgoingRequestDelegate) = this()
   }

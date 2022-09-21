@@ -19,6 +19,6 @@ object QLineage {
     
     inline def setQLineage(value: js.Array[QDiscriminator]): Self = StObject.set(x, "qLineage", value.asInstanceOf[js.Any])
     
-    inline def setQLineageVarargs(value: QDiscriminator*): Self = StObject.set(x, "qLineage", js.Array(value :_*))
+    inline def setQLineageVarargs(value: QDiscriminator*): Self = StObject.set(x, "qLineage", js.Array(value*))
   }
 }

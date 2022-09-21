@@ -22,7 +22,7 @@ object sliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Slider {
     def this(properties: SliderProperties) = this()

@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.RequestAuthDefinition because var conflicts: description, disabled, id, name. Inlined `type`, oauth2, hawk, basic, oauth1, apikey, digest, bearer, awsv4, edgegrid, ntlm */ @JSImport("postman-collection", "RequestAuth")
 @js.native
-class RequestAuth protected () extends Property[RequestAuthDefinition] {
+open class RequestAuth protected () extends Property[RequestAuthDefinition] {
   def this(options: RequestAuthDefinition) = this()
   def this(options: RequestAuthDefinition, parent: Property[PropertyDefinition]) = this()
   def this(options: RequestAuthDefinition, parent: PropertyList[RequestAuth]) = this()
@@ -37,7 +37,7 @@ class RequestAuth protected () extends Property[RequestAuthDefinition] {
   
   def clear(`type`: String): Unit = js.native
   
-  def current(): js.Any = js.native
+  def current(): Any = js.native
   
   var digest: js.UndefOr[js.Array[VariableDefinition]] = js.native
   
@@ -79,5 +79,5 @@ object RequestAuth {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isValidType(`type`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidType(`type`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -38,7 +38,7 @@ object mod {
        with typings.node.eventsMod.global.NodeJS.EventEmitter {
     
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
@@ -48,6 +48,8 @@ object mod {
   trait Options extends StObject {
     
     var basepath: String
+    
+    var source: js.UndefOr[String] = js.undefined
     
     var specification: Specification
     
@@ -63,6 +65,10 @@ object mod {
     extension [Self <: Options](x: Self) {
       
       inline def setBasepath(value: String): Self = StObject.set(x, "basepath", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
       inline def setSpecification(value: Specification): Self = StObject.set(x, "specification", value.asInstanceOf[js.Any])
       
@@ -157,7 +163,7 @@ object mod {
       
       inline def setContents(value: js.Array[SpecificationContents]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      inline def setContentsVarargs(value: SpecificationContents*): Self = StObject.set(x, "contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: SpecificationContents*): Self = StObject.set(x, "contents", js.Array(value*))
       
       inline def setFormat(value: UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

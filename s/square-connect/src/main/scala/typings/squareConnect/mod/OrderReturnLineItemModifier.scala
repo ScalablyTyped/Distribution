@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderReturnLineItemModifier")
 @js.native
-class OrderReturnLineItemModifier () extends StObject {
+open class OrderReturnLineItemModifier () extends StObject {
   
   /**
     * The base price for the modifier. `base_price_money` is required for ad hoc modifiers.

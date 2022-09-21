@@ -45,7 +45,7 @@ object Waypoint {
     
     inline def setLocation(value: Coordinate): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

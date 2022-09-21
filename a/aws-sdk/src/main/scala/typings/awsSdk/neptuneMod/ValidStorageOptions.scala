@@ -39,19 +39,19 @@ object ValidStorageOptions {
     
     inline def setIopsToStorageRatioUndefined: Self = StObject.set(x, "IopsToStorageRatio", js.undefined)
     
-    inline def setIopsToStorageRatioVarargs(value: DoubleRange*): Self = StObject.set(x, "IopsToStorageRatio", js.Array(value :_*))
+    inline def setIopsToStorageRatioVarargs(value: DoubleRange*): Self = StObject.set(x, "IopsToStorageRatio", js.Array(value*))
     
     inline def setProvisionedIops(value: RangeList): Self = StObject.set(x, "ProvisionedIops", value.asInstanceOf[js.Any])
     
     inline def setProvisionedIopsUndefined: Self = StObject.set(x, "ProvisionedIops", js.undefined)
     
-    inline def setProvisionedIopsVarargs(value: Range*): Self = StObject.set(x, "ProvisionedIops", js.Array(value :_*))
+    inline def setProvisionedIopsVarargs(value: Range*): Self = StObject.set(x, "ProvisionedIops", js.Array(value*))
     
     inline def setStorageSize(value: RangeList): Self = StObject.set(x, "StorageSize", value.asInstanceOf[js.Any])
     
     inline def setStorageSizeUndefined: Self = StObject.set(x, "StorageSize", js.undefined)
     
-    inline def setStorageSizeVarargs(value: Range*): Self = StObject.set(x, "StorageSize", js.Array(value :_*))
+    inline def setStorageSizeVarargs(value: Range*): Self = StObject.set(x, "StorageSize", js.Array(value*))
     
     inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     

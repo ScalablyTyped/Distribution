@@ -4,7 +4,6 @@ import typings.ftp.mod.Options
 import typings.getUri.mod.GetUriOptions
 import typings.node.streamMod.Readable
 import typings.node.urlMod.UrlWithStringQuery
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,6 +42,6 @@ object ftpMod {
   @js.native
   trait FTPReadable extends Readable {
     
-    var lastModified: js.UndefOr[Date] = js.native
+    var lastModified: js.UndefOr[js.Date] = js.native
   }
 }

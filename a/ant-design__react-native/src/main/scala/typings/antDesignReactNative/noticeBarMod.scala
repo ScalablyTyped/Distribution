@@ -16,7 +16,7 @@ object noticeBarMod {
   
   @JSImport("@ant-design/react-native/lib/notice-bar", JSImport.Default)
   @js.native
-  class default protected () extends NoticeBar {
+  open class default protected () extends NoticeBar {
     def this(props: NoticeNativeProps) = this()
   }
   /* static members */
@@ -33,8 +33,7 @@ object noticeBarMod {
   }
   
   @js.native
-  trait NoticeBar
-    extends Component[NoticeNativeProps, js.Any, js.Any] {
+  trait NoticeBar extends Component[NoticeNativeProps, Any, Any] {
     
     def onPress(): Unit = js.native
   }

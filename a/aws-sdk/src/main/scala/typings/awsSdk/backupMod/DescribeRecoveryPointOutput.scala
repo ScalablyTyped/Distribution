@@ -29,7 +29,7 @@ trait DescribeRecoveryPointOutput extends StObject {
   /**
     * The date and time that a job to create a recovery point is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CompletionDate: js.UndefOr[timestamp] = js.undefined
+  var CompletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Contains identifying information about the creation of a recovery point, including the BackupPlanArn, BackupPlanId, BackupPlanVersion, and BackupRuleId of the backup plan used to create it.
@@ -39,7 +39,7 @@ trait DescribeRecoveryPointOutput extends StObject {
   /**
     * The date and time that a recovery point is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The server-side encryption key used to protect your backups; for example, arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab.
@@ -59,10 +59,10 @@ trait DescribeRecoveryPointOutput extends StObject {
   /**
     * The date and time that a recovery point was last restored, in Unix format and Coordinated Universal Time (UTC). The value of LastRestoreTime is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var LastRestoreTime: js.UndefOr[timestamp] = js.undefined
+  var LastRestoreTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup transitions and expires backups automatically according to the lifecycle that you define.  Backups that are transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “expire after days” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. 
+    * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. Backup transitions and expires backups automatically according to the lifecycle that you define. Backups that are transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “retention” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold.  Resource types that are able to be transitioned to cold storage are listed in the "Lifecycle to cold storage" section of the  Feature availability by resource table. Backup ignores this expression for other resource types.
     */
   var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.undefined
   
@@ -77,19 +77,24 @@ trait DescribeRecoveryPointOutput extends StObject {
   var ResourceArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The type of AWS resource to save as a recovery point; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database.
+    * The type of Amazon Web Services resource to save as a recovery point; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.undefined
   
   /**
-    * An Amazon Resource Name (ARN) that uniquely identifies the source vault where the resource was originally backed up in; for example, arn:aws:backup:us-east-1:123456789012:vault:BackupVault. If the recovery is restored to the same AWS account or Region, this value will be null.
+    * An Amazon Resource Name (ARN) that uniquely identifies the source vault where the resource was originally backed up in; for example, arn:aws:backup:us-east-1:123456789012:vault:BackupVault. If the recovery is restored to the same Amazon Web Services account or Region, this value will be null.
     */
   var SourceBackupVaultArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * A status code specifying the state of the recovery point.  A partial status indicates that the recovery point was not successfully re-created and must be retried. 
+    * A status code specifying the state of the recovery point.  PARTIAL status indicates Backup could not create the recovery point before the backup window closed. To increase your backup plan window using the API, see UpdateBackupPlan. You can also increase your backup plan window using the Console by choosing and editing your backup plan.  EXPIRED status indicates that the recovery point has exceeded its retention period, but Backup lacks permission or is otherwise unable to delete it. To manually delete these recovery points, see  Step 3: Delete the recovery points in the Clean up resources section of Getting started.
     */
   var Status: js.UndefOr[RecoveryPointStatus] = js.undefined
+  
+  /**
+    * A status message explaining the reason for the recovery point deletion failure.
+    */
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the storage class of the recovery point. Valid values are WARM or COLD.
@@ -121,7 +126,7 @@ object DescribeRecoveryPointOutput {
     
     inline def setCalculatedLifecycleUndefined: Self = StObject.set(x, "CalculatedLifecycle", js.undefined)
     
-    inline def setCompletionDate(value: timestamp): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: js.Date): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
     inline def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
     
@@ -129,7 +134,7 @@ object DescribeRecoveryPointOutput {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -145,7 +150,7 @@ object DescribeRecoveryPointOutput {
     
     inline def setIsEncryptedUndefined: Self = StObject.set(x, "IsEncrypted", js.undefined)
     
-    inline def setLastRestoreTime(value: timestamp): Self = StObject.set(x, "LastRestoreTime", value.asInstanceOf[js.Any])
+    inline def setLastRestoreTime(value: js.Date): Self = StObject.set(x, "LastRestoreTime", value.asInstanceOf[js.Any])
     
     inline def setLastRestoreTimeUndefined: Self = StObject.set(x, "LastRestoreTime", js.undefined)
     
@@ -170,6 +175,10 @@ object DescribeRecoveryPointOutput {
     inline def setSourceBackupVaultArnUndefined: Self = StObject.set(x, "SourceBackupVaultArn", js.undefined)
     
     inline def setStatus(value: RecoveryPointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     

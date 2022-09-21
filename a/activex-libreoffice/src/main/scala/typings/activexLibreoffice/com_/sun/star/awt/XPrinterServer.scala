@@ -40,7 +40,7 @@ object XPrinterServer {
     createInfoPrinter: String => XInfoPrinter,
     createPrinter: String => XPrinter,
     getPrinterNames: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPrinterServer = {
     val __obj = js.Dynamic.literal(PrinterNames = PrinterNames.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createInfoPrinter = js.Any.fromFunction1(createInfoPrinter), createPrinter = js.Any.fromFunction1(createPrinter), getPrinterNames = js.Any.fromFunction0(getPrinterNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

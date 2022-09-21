@@ -10,7 +10,7 @@ object Taxonomy {
   
   @JSGlobal("SP.Taxonomy.ChangeInformation")
   @js.native
-  class ChangeInformation protected ()
+  open class ChangeInformation protected ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.ChangeInformation {
     def this(context: typings.sharepoint.SP.ClientContext) = this()
@@ -66,43 +66,43 @@ object Taxonomy {
   
   @JSGlobal("SP.Taxonomy.ChangedGroup")
   @js.native
-  class ChangedGroup ()
+  open class ChangedGroup ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.ChangedItem
   
   @JSGlobal("SP.Taxonomy.ChangedItem")
   @js.native
-  class ChangedItem ()
+  open class ChangedItem ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.ChangedItem
   
   @JSGlobal("SP.Taxonomy.ChangedSite")
   @js.native
-  class ChangedSite ()
+  open class ChangedSite ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.ChangedSite
   
   @JSGlobal("SP.Taxonomy.ChangedTerm")
   @js.native
-  class ChangedTerm ()
+  open class ChangedTerm ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.ChangedTerm
   
   @JSGlobal("SP.Taxonomy.ChangedTermSet")
   @js.native
-  class ChangedTermSet ()
+  open class ChangedTermSet ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.ChangedTermSet
   
   @JSGlobal("SP.Taxonomy.ChangedTermStore")
   @js.native
-  class ChangedTermStore ()
+  open class ChangedTermStore ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.ChangedTermStore
   
   @JSGlobal("SP.Taxonomy.CustomPropertyMatchInformation")
   @js.native
-  class CustomPropertyMatchInformation protected ()
+  open class CustomPropertyMatchInformation protected ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.CustomPropertyMatchInformation {
     def this(context: typings.sharepoint.SP.ClientContext) = this()
@@ -110,13 +110,13 @@ object Taxonomy {
   
   @JSGlobal("SP.Taxonomy.Label")
   @js.native
-  class Label ()
+  open class Label ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.Label
   
   @JSGlobal("SP.Taxonomy.LabelMatchInformation")
   @js.native
-  class LabelMatchInformation protected ()
+  open class LabelMatchInformation protected ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.LabelMatchInformation {
     def this(context: typings.sharepoint.SP.ClientContext) = this()
@@ -124,7 +124,7 @@ object Taxonomy {
   
   @JSGlobal("SP.Taxonomy.MobileTaxonomyField")
   @js.native
-  class MobileTaxonomyField ()
+  open class MobileTaxonomyField ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.MobileTaxonomyField
   
@@ -142,7 +142,7 @@ object Taxonomy {
   
   @JSGlobal("SP.Taxonomy.TaxonomyField")
   @js.native
-  class TaxonomyField protected ()
+  open class TaxonomyField protected ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.TaxonomyField {
     def this(context: typings.sharepoint.SP.ClientContext, fields: FieldCollection, filedName: String) = this()
@@ -150,12 +150,12 @@ object Taxonomy {
   
   @JSGlobal("SP.Taxonomy.TaxonomyFieldValue")
   @js.native
-  class TaxonomyFieldValue ()
+  open class TaxonomyFieldValue ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.TaxonomyFieldValue {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -164,7 +164,7 @@ object Taxonomy {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_label(): String = js.native
@@ -196,7 +196,7 @@ object Taxonomy {
   
   @JSGlobal("SP.Taxonomy.TaxonomyFieldValueCollection")
   @js.native
-  class TaxonomyFieldValueCollection protected ()
+  open class TaxonomyFieldValueCollection protected ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.TaxonomyFieldValueCollection {
     def this(
@@ -211,7 +211,7 @@ object Taxonomy {
   
   @JSGlobal("SP.Taxonomy.TaxonomyItem")
   @js.native
-  class TaxonomyItem ()
+  open class TaxonomyItem ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.TaxonomyItem
   object TaxonomyItem {
@@ -226,7 +226,7 @@ object Taxonomy {
   
   @JSGlobal("SP.Taxonomy.TaxonomySession")
   @js.native
-  class TaxonomySession ()
+  open class TaxonomySession ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.TaxonomySession
   object TaxonomySession {
@@ -241,31 +241,31 @@ object Taxonomy {
   
   @JSGlobal("SP.Taxonomy.Term")
   @js.native
-  class Term ()
+  open class Term ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.Term
   
   @JSGlobal("SP.Taxonomy.TermGroup")
   @js.native
-  class TermGroup ()
+  open class TermGroup ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.TermGroup
   
   @JSGlobal("SP.Taxonomy.TermSet")
   @js.native
-  class TermSet ()
+  open class TermSet ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.TermSet
   
   @JSGlobal("SP.Taxonomy.TermSetItem")
   @js.native
-  class TermSetItem ()
+  open class TermSetItem ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.TermSetItem
   
   @JSGlobal("SP.Taxonomy.TermStore")
   @js.native
-  class TermStore ()
+  open class TermStore ()
     extends StObject
        with typings.sharepoint.SP.Taxonomy.TermStore
 }

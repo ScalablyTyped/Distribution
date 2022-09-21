@@ -10,7 +10,7 @@ trait IgPivotViewPivotGridOptionsLevelSortDirection
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the unique name of the level, which will be sorted.
@@ -21,7 +21,7 @@ trait IgPivotViewPivotGridOptionsLevelSortDirection
     * optional="true" Specifies the sort direction. If no direction is specified,the level is going to be sorted in the direction specified by the firstLevelSortDirection option.
     *
     */
-  var sortDirection: js.UndefOr[js.Any] = js.undefined
+  var sortDirection: js.UndefOr[Any] = js.undefined
 }
 object IgPivotViewPivotGridOptionsLevelSortDirection {
   
@@ -36,7 +36,7 @@ object IgPivotViewPivotGridOptionsLevelSortDirection {
     
     inline def setLevelUniqueNameUndefined: Self = StObject.set(x, "levelUniqueName", js.undefined)
     
-    inline def setSortDirection(value: js.Any): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: Any): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
     inline def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
   }

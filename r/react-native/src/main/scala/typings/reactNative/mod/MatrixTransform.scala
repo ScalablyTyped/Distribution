@@ -19,6 +19,6 @@ object MatrixTransform {
     
     inline def setMatrix(value: js.Array[Double]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value :_*))
+    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value*))
   }
 }

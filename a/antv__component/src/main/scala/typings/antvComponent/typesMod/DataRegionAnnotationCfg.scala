@@ -1,6 +1,6 @@
 package typings.antvComponent.typesMod
 
-import typings.antvComponent.anon.`1`
+import typings.antvComponent.anon.`4`
 import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
@@ -17,7 +17,7 @@ trait DataRegionAnnotationCfg
     */
   var points: js.Array[Point]
   
-  var region: js.UndefOr[`1`] = js.undefined
+  var region: js.UndefOr[`4`] = js.undefined
   
   var text: EnhancedTextCfg
 }
@@ -32,9 +32,9 @@ object DataRegionAnnotationCfg {
     
     inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value*))
     
-    inline def setRegion(value: `1`): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: `4`): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     

@@ -3,7 +3,6 @@ package typings.phaser.global.Phaser
 import typings.phaser.Phaser.Geom.Point
 import typings.phaser.Phaser.Types.Math.SinCosTable
 import typings.phaser.Phaser.Types.Math.Vector2Like
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,8 +116,6 @@ object Math {
       * The angle returned will be in the same range. If the returned angle is
       * greater than 0 then it's a counter-clockwise rotation, if < 0 then it's
       * a clockwise rotation.
-      * 
-      * TODO: Wrap the angles in this function?
       * @param angle1 The first angle in the range -180 to 180.
       * @param angle2 The second angle in the range -180 to 180.
       */
@@ -159,7 +156,7 @@ object Math {
     * @param min The minimum value.
     * @param max The maximum value.
     */
-  inline def Between(min: integer, max: integer): integer = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[integer]
+  inline def Between(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Between")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Calculates a Catmull-Rom value from the given points, based on an alpha of 0.5.
@@ -181,8 +178,8 @@ object Math {
     */
   inline def CeilTo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("CeilTo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def CeilTo(value: Double, place: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CeilTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def CeilTo(value: Double, place: Double, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CeilTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def CeilTo(value: Double, place: Unit, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CeilTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def CeilTo(value: Double, place: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CeilTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def CeilTo(value: Double, place: Unit, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CeilTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Force a value within the boundaries by clamping it to the range `min`, `max`.
@@ -204,7 +201,7 @@ object Math {
     * Convert the given angle from degrees, to the equivalent angle in radians.
     * @param degrees The angle (in degrees) to convert to radians.
     */
-  inline def DegToRad(degrees: integer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DegToRad")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def DegToRad(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DegToRad")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the positive difference of two given numbers.
@@ -586,6 +583,26 @@ object Math {
     inline def Stepped(v: Double, steps: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Stepped")(v.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
+  @JSGlobal("Phaser.Math.Euler")
+  @js.native
+  /**
+    * 
+    * @param x The x component.
+    * @param y The y component.
+    * @param z The z component.
+    */
+  open class Euler ()
+    extends StObject
+       with typings.phaser.Phaser.Math.Euler {
+    def this(x: Double) = this()
+    def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
+    def this(x: Double, y: Double, z: Double) = this()
+    def this(x: Double, y: Unit, z: Double) = this()
+    def this(x: Unit, y: Double, z: Double) = this()
+    def this(x: Unit, y: Unit, z: Double) = this()
+  }
+  
   /**
     * Calculates the factorial of a given number for integer values greater than 0.
     * @param value A positive integer to calculate the factorial of.
@@ -608,9 +625,9 @@ object Math {
     * @param base The base to round in. Default is 10 for decimal. Default 10.
     */
   inline def FloorTo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def FloorTo(value: Double, place: Unit, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def FloorTo(value: Double, place: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def FloorTo(value: Double, place: integer, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def FloorTo(value: Double, place: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def FloorTo(value: Double, place: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def FloorTo(value: Double, place: Unit, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FloorTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Return a value based on the range between `min` and `max` and the percentage given.
@@ -682,7 +699,7 @@ object Math {
     * @param distance The distance.
     * @param time The time, in seconds.
     */
-  inline def GetSpeed(distance: Double, time: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetSpeed")(distance.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def GetSpeed(distance: Double, time: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetSpeed")(distance.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   object Interpolation {
     
@@ -798,7 +815,7 @@ object Math {
     * 
     * @param m Optional Matrix3 to copy values from.
     */
-  class Matrix3 ()
+  open class Matrix3 ()
     extends StObject
        with typings.phaser.Phaser.Math.Matrix3 {
     def this(m: typings.phaser.Phaser.Math.Matrix3) = this()
@@ -806,6 +823,9 @@ object Math {
   
   /**
     * A four-dimensional matrix.
+    * 
+    * Adapted from [gl-matrix](https://github.com/toji/gl-matrix) by toji
+    * and [vecmath](https://github.com/mattdesl/vecmath) by mattdesl
     */
   @JSGlobal("Phaser.Math.Matrix4")
   @js.native
@@ -813,7 +833,7 @@ object Math {
     * 
     * @param m Optional Matrix4 to copy values from.
     */
-  class Matrix4 ()
+  open class Matrix4 ()
     extends StObject
        with typings.phaser.Phaser.Math.Matrix4 {
     def this(m: typings.phaser.Phaser.Math.Matrix4) = this()
@@ -826,6 +846,13 @@ object Math {
     * @param max The maximum value to return.
     */
   inline def MaxAdd(value: Double, amount: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("MaxAdd")(value.asInstanceOf[js.Any], amount.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /**
+    * Calculate the median of the given values. The values are sorted and the middle value is returned.
+    * In case of an even number of values, the average of the two middle values is returned.
+    * @param values The values to average.
+    */
+  inline def Median(values: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Median")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Subtract an `amount` from `value`, limiting the minimum result to `min`.
@@ -868,7 +895,7 @@ object Math {
       * Returns the nearest power of 2 to the given `value`.
       * @param value The value.
       */
-    inline def GetNext(value: Double): integer = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNext")(value.asInstanceOf[js.Any]).asInstanceOf[integer]
+    inline def GetNext(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNext")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Checks if the given `width` and `height` are a power of two.
@@ -892,12 +919,12 @@ object Math {
   @js.native
   /**
     * 
-    * @param x The x component.
-    * @param y The y component.
-    * @param z The z component.
-    * @param w The w component.
+    * @param x The x component. Default 0.
+    * @param y The y component. Default 0.
+    * @param z The z component. Default 0.
+    * @param w The w component. Default 1.
     */
-  class Quaternion ()
+  open class Quaternion ()
     extends StObject
        with typings.phaser.Phaser.Math.Quaternion {
     def this(x: Double) = this()
@@ -938,7 +965,7 @@ object Math {
     * Convert the given angle in radians, to the equivalent angle in degrees.
     * @param radians The angle in radians to convert ot degrees.
     */
-  inline def RadToDeg(radians: Double): integer = ^.asInstanceOf[js.Dynamic].applyDynamic("RadToDeg")(radians.asInstanceOf[js.Any]).asInstanceOf[integer]
+  inline def RadToDeg(radians: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("RadToDeg")(radians.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * A seeded Random Data Generator.
@@ -958,7 +985,7 @@ object Math {
     * 
     * @param seeds The seeds to use for the random number generator.
     */
-  class RandomDataGenerator ()
+  open class RandomDataGenerator ()
     extends StObject
        with typings.phaser.Phaser.Math.RandomDataGenerator {
     def this(seeds: String) = this()
@@ -1075,9 +1102,9 @@ object Math {
     * @param base The base to round in. Default is 10 for decimal. Default 10.
     */
   inline def RoundTo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def RoundTo(value: Double, place: Unit, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def RoundTo(value: Double, place: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def RoundTo(value: Double, place: integer, base: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def RoundTo(value: Double, place: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def RoundTo(value: Double, place: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def RoundTo(value: Double, place: Unit, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RoundTo")(value.asInstanceOf[js.Any], place.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Generate a series of sine and cosine values.
@@ -1191,8 +1218,8 @@ object Math {
     * @param height The height of the grid.
     * @param out An optional Vector2 to store the result in. If not given, a new Vector2 instance will be created.
     */
-  inline def ToXY(index: integer, width: integer, height: integer): typings.phaser.Phaser.Math.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("ToXY")(index.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2]
-  inline def ToXY(index: integer, width: integer, height: integer, out: typings.phaser.Phaser.Math.Vector2): typings.phaser.Phaser.Math.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("ToXY")(index.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2]
+  inline def ToXY(index: Double, width: Double, height: Double): typings.phaser.Phaser.Math.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("ToXY")(index.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2]
+  inline def ToXY(index: Double, width: Double, height: Double, out: typings.phaser.Phaser.Math.Vector2): typings.phaser.Phaser.Math.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("ToXY")(index.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Math.Vector2]
   
   /**
     * Takes the `x` and `y` coordinates and transforms them into the same space as
@@ -1258,7 +1285,7 @@ object Math {
     * @param x The x component, or an object with `x` and `y` properties.
     * @param y The y component.
     */
-  class Vector2 ()
+  open class Vector2 ()
     extends StObject
        with typings.phaser.Phaser.Math.Vector2 {
     def this(x: Double) = this()
@@ -1343,7 +1370,7 @@ object Math {
     * @param y The y component.
     * @param z The z component.
     */
-  class Vector3 ()
+  open class Vector3 ()
     extends StObject
        with typings.phaser.Phaser.Math.Vector3 {
     def this(x: Double) = this()
@@ -1451,7 +1478,7 @@ object Math {
     * @param z The z component.
     * @param w The w component.
     */
-  class Vector4 ()
+  open class Vector4 ()
     extends StObject
        with typings.phaser.Phaser.Math.Vector4 {
     def this(x: Double) = this()

@@ -54,7 +54,7 @@ object XCmisDocument {
     checkOut: () => Unit,
     getAllVersions: () => SafeArray[CmisVersion],
     isVersionable: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     updateCmisProperties: SeqEquiv[CmisProperty] => Unit
   ): XCmisDocument = {

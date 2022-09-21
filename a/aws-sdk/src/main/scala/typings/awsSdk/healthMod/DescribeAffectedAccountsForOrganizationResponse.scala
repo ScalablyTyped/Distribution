@@ -12,7 +12,7 @@ trait DescribeAffectedAccountsForOrganizationResponse extends StObject {
   var affectedAccounts: js.UndefOr[affectedAccountsList] = js.undefined
   
   /**
-    * This parameter specifies if the AWS Health event is a public AWS service event or an account-specific event.   If the eventScopeCode value is PUBLIC, then the affectedAccounts value is always empty.   If the eventScopeCode value is ACCOUNT_SPECIFIC, then the affectedAccounts value lists the affected AWS accounts in your organization. For example, if an event affects a service such as Amazon Elastic Compute Cloud and you have AWS accounts that use that service, those account IDs appear in the response.   If the eventScopeCode value is NONE, then the eventArn that you specified in the request is invalid or doesn't exist.  
+    * This parameter specifies if the Health event is a public Amazon Web Services service event or an account-specific event.   If the eventScopeCode value is PUBLIC, then the affectedAccounts value is always empty.   If the eventScopeCode value is ACCOUNT_SPECIFIC, then the affectedAccounts value lists the affected Amazon Web Services accounts in your organization. For example, if an event affects a service such as Amazon Elastic Compute Cloud and you have Amazon Web Services accounts that use that service, those account IDs appear in the response.   If the eventScopeCode value is NONE, then the eventArn that you specified in the request is invalid or doesn't exist.  
     */
   var eventScopeCode: js.UndefOr[typings.awsSdk.healthMod.eventScopeCode] = js.undefined
   
@@ -34,7 +34,7 @@ object DescribeAffectedAccountsForOrganizationResponse {
     
     inline def setAffectedAccountsUndefined: Self = StObject.set(x, "affectedAccounts", js.undefined)
     
-    inline def setAffectedAccountsVarargs(value: accountId*): Self = StObject.set(x, "affectedAccounts", js.Array(value :_*))
+    inline def setAffectedAccountsVarargs(value: accountId*): Self = StObject.set(x, "affectedAccounts", js.Array(value*))
     
     inline def setEventScopeCode(value: eventScopeCode): Self = StObject.set(x, "eventScopeCode", value.asInstanceOf[js.Any])
     

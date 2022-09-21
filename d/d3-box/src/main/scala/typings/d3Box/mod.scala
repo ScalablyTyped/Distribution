@@ -20,10 +20,10 @@ object mod {
     
     def apply(
       sel: Selection_[
-          js.Any, 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+          Any, 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
           BaseType, 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
         ]
     ): Unit = js.native
     
@@ -36,18 +36,18 @@ object mod {
     def height(): Double = js.native
     def height(x: Double): Box_ = js.native
     
-    def quantiles(x: js.Function1[/* d */ js.Array[js.Any], js.Array[Double]]): Box_ = js.native
+    def quantiles(x: js.Function1[/* d */ js.Array[Any], js.Array[Double]]): Box_ = js.native
     
-    def quartiles(): js.Function1[/* d */ js.Array[js.Any], js.Array[Double]] = js.native
+    def quartiles(): js.Function1[/* d */ js.Array[Any], js.Array[Double]] = js.native
     
     def tickFormat(): js.Function1[/* n */ Double, String] = js.native
     def tickFormat(fun: js.Function1[/* n */ Double, String]): Box_ = js.native
     
-    def value(): js.Function1[/* d */ js.Any, Double] = js.native
-    def value(x: js.Function1[/* d */ js.Any, Double]): Box_ = js.native
+    def value(): js.Function1[/* d */ Any, Double] = js.native
+    def value(x: js.Function1[/* d */ Any, Double]): Box_ = js.native
     
-    def whiskers(): js.Function2[/* d */ js.Array[js.Any], /* i */ js.UndefOr[Double], js.Array[Double]] = js.native
-    def whiskers(x: js.Function2[/* d */ js.Array[js.Any], /* i */ js.UndefOr[Double], js.Array[Double]]): Box_ = js.native
+    def whiskers(): js.Function2[/* d */ js.Array[Any], /* i */ js.UndefOr[Double], js.Array[Double]] = js.native
+    def whiskers(x: js.Function2[/* d */ js.Array[Any], /* i */ js.UndefOr[Double], js.Array[Double]]): Box_ = js.native
     
     def width(): Double = js.native
     def width(x: Double): Box_ = js.native

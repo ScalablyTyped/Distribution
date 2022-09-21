@@ -14,8 +14,8 @@ object mod {
   
   @JSImport("react-scrollable-anchor", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ScrollableAnchorProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ScrollableAnchorProps, js.Object, Any]
   
   inline def configureAnchors(options: ConfigureAnchorsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureAnchors")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -57,7 +57,7 @@ object mod {
     }
   }
   
-  type ScrollableAnchor = Component[ScrollableAnchorProps, js.Object, js.Any]
+  type ScrollableAnchor = Component[ScrollableAnchorProps, js.Object, Any]
   
   trait ScrollableAnchorProps extends StObject {
     

@@ -24,6 +24,6 @@ object RandomSplitActivity {
     
     inline def setBranchesUndefined: Self = StObject.set(x, "Branches", js.undefined)
     
-    inline def setBranchesVarargs(value: RandomSplitEntry*): Self = StObject.set(x, "Branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: RandomSplitEntry*): Self = StObject.set(x, "Branches", js.Array(value*))
   }
 }

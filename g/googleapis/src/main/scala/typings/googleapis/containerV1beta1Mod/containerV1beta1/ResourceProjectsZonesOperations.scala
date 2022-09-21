@@ -4,30 +4,17 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1beta1", "container_v1beta1.Resource$Projects$Zones$Operations")
 @js.native
-class ResourceProjectsZonesOperations protected () extends StObject {
+open class ResourceProjectsZonesOperations protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  /**
-    * container.projects.zones.operations.cancel
-    * @desc Cancels the specified operation.
-    * @alias container.projects.zones.operations.cancel
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.operationId Deprecated. The server-assigned `name` of the operation. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the operation resides. This field has been deprecated and replaced by the name field.
-    * @param {().CancelOperationRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def cancel(): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def cancel(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -35,8 +22,8 @@ class ResourceProjectsZonesOperations protected () extends StObject {
   def cancel(params: ParamsResourceProjectsZonesOperationsCancel, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def cancel(
     params: ParamsResourceProjectsZonesOperationsCancel,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def cancel(params: ParamsResourceProjectsZonesOperationsCancel, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(
@@ -44,24 +31,78 @@ class ResourceProjectsZonesOperations protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
+  /**
+    * Cancels the specified operation.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.operations.cancel({
+    *     // Required. Deprecated. The server-assigned `name` of the operation. This field has been deprecated and replaced by the name field.
+    *     operationId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the operation resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "name": "my_name",
+    *       //   "operationId": "my_operationId",
+    *       //   "projectId": "my_projectId",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def cancel(params: ParamsResourceProjectsZonesOperationsCancel, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def cancel(
+    params: ParamsResourceProjectsZonesOperationsCancel,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * container.projects.zones.operations.get
-    * @desc Gets the specified operation.
-    * @alias container.projects.zones.operations.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.name The name (project, location, operation id) of the operation to get. Specified in the format 'projects/x/locations/x/operations/x'.
-    * @param {string} params.operationId Deprecated. The server-assigned `name` of the operation. This field has been deprecated and replaced by the name field.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -69,8 +110,8 @@ class ResourceProjectsZonesOperations protected () extends StObject {
   def get(params: ParamsResourceProjectsZonesOperationsGet, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def get(
     params: ParamsResourceProjectsZonesOperationsGet,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsZonesOperationsGet, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def get(
@@ -78,21 +119,83 @@ class ResourceProjectsZonesOperations protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * container.projects.zones.operations.list
-    * @desc Lists all operations in a project in a specific zone or all zones.
-    * @alias container.projects.zones.operations.list
-    * @memberOf! ()
+    * Gets the specified operation.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.parent The parent (project and location) where the operations will be listed. Specified in the format 'projects/x/locations/x'. Location "-" matches all zones and all regions.
-    * @param {string} params.projectId Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the parent field.
-    * @param {string} params.zone Deprecated. The name of the Google Compute Engine [zone](/compute/docs/zones#available) to return operations for, or `-` for all zones. This field has been deprecated and replaced by the parent field.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.operations.get({
+    *     // The name (project, location, operation id) of the operation to get. Specified in the format `projects/x/locations/x/operations/x`.
+    *     name: 'placeholder-value',
+    *     // Required. Deprecated. The server-assigned `name` of the operation. This field has been deprecated and replaced by the name field.
+    *     operationId: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
+    *     zone: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clusterConditions": [],
+    *   //   "detail": "my_detail",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "location": "my_location",
+    *   //   "name": "my_name",
+    *   //   "nodepoolConditions": [],
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceProjectsZonesOperationsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsZonesOperationsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListOperationsResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListOperationsResponse] = js.native
@@ -103,13 +206,74 @@ class ResourceProjectsZonesOperations protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsZonesOperationsList,
-    options: BodyResponseCallback[SchemaListOperationsResponse],
-    callback: BodyResponseCallback[SchemaListOperationsResponse]
+    options: BodyResponseCallback[Readable | SchemaListOperationsResponse],
+    callback: BodyResponseCallback[Readable | SchemaListOperationsResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsZonesOperationsList, options: MethodOptions): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(
     params: ParamsResourceProjectsZonesOperationsList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListOperationsResponse]
+  ): Unit = js.native
+  /**
+    * Lists all operations in a project in the specified zone or all zones.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/container.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const container = google.container('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await container.projects.zones.operations.list({
+    *     // The parent (project and location) where the operations will be listed. Specified in the format `projects/x/locations/x`. Location "-" matches all zones and all regions.
+    *     parent: 'placeholder-value',
+    *     // Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the parent field.
+    *     projectId: 'placeholder-value',
+    *     // Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) to return operations for, or `-` for all zones. This field has been deprecated and replaced by the parent field.
+    *     zone: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "missingZones": [],
+    *   //   "operations": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceProjectsZonesOperationsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsZonesOperationsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

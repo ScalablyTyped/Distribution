@@ -9,7 +9,7 @@ trait PipelineSummary extends StObject {
   /**
     * The date and time the pipeline was created, in timestamp format.
     */
-  var created: js.UndefOr[Timestamp] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the pipeline.
@@ -19,7 +19,7 @@ trait PipelineSummary extends StObject {
   /**
     * The date and time of the last update to the pipeline, in timestamp format.
     */
-  var updated: js.UndefOr[Timestamp] = js.undefined
+  var updated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The version number of the pipeline.
@@ -35,7 +35,7 @@ object PipelineSummary {
   
   extension [Self <: PipelineSummary](x: Self) {
     
-    inline def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
@@ -43,7 +43,7 @@ object PipelineSummary {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: js.Date): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     

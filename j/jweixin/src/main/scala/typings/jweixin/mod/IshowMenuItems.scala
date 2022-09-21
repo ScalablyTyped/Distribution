@@ -21,6 +21,6 @@ object IshowMenuItems {
     
     inline def setMenuList(value: menuList): Self = StObject.set(x, "menuList", value.asInstanceOf[js.Any])
     
-    inline def setMenuListVarargs(value: (menuBase | menuProtected | menuShare)*): Self = StObject.set(x, "menuList", js.Array(value :_*))
+    inline def setMenuListVarargs(value: (menuBase | menuProtected | menuShare)*): Self = StObject.set(x, "menuList", js.Array(value*))
   }
 }

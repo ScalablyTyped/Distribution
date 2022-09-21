@@ -10,10 +10,10 @@ Vision, and Face Intelligence with Project Oxford
 | ------------------ | :-------------: |
 | Full name          | project-oxford |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 18757 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 170.0 |
+| # stars            | 179.0 |
 
 ## Links
 - [Homepage](https://github.com/felixrieseberg/project-oxford#readme)

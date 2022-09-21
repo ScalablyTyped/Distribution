@@ -29,6 +29,6 @@ object SpreadsheetTheme {
     
     inline def setThemeColorsUndefined: Self = StObject.set(x, "themeColors", js.undefined)
     
-    inline def setThemeColorsVarargs(value: ThemeColorPair*): Self = StObject.set(x, "themeColors", js.Array(value :_*))
+    inline def setThemeColorsVarargs(value: ThemeColorPair*): Self = StObject.set(x, "themeColors", js.Array(value*))
   }
 }

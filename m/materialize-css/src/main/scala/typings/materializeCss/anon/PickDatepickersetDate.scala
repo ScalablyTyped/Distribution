@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Datepicker, 'setDate'> */
 trait PickDatepickersetDate extends StObject {
   
-  var setDate: js.UndefOr[js.Any] = js.undefined
+  var setDate: js.UndefOr[Any] = js.undefined
 }
 object PickDatepickersetDate {
   
@@ -18,7 +18,7 @@ object PickDatepickersetDate {
   
   extension [Self <: PickDatepickersetDate](x: Self) {
     
-    inline def setSetDate(value: js.Any): Self = StObject.set(x, "setDate", value.asInstanceOf[js.Any])
+    inline def setSetDate(value: Any): Self = StObject.set(x, "setDate", value.asInstanceOf[js.Any])
     
     inline def setSetDateUndefined: Self = StObject.set(x, "setDate", js.undefined)
   }

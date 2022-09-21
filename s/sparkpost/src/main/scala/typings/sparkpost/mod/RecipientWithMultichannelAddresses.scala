@@ -35,6 +35,6 @@ object RecipientWithMultichannelAddresses {
     
     inline def setMultichannel_addresses(value: js.Array[MultichannelAddress]): Self = StObject.set(x, "multichannel_addresses", value.asInstanceOf[js.Any])
     
-    inline def setMultichannel_addressesVarargs(value: MultichannelAddress*): Self = StObject.set(x, "multichannel_addresses", js.Array(value :_*))
+    inline def setMultichannel_addressesVarargs(value: MultichannelAddress*): Self = StObject.set(x, "multichannel_addresses", js.Array(value*))
   }
 }

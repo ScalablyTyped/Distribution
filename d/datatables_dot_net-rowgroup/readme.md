@@ -1,7 +1,7 @@
 
 # Scala.js typings for datatables_dot_net-rowgroup
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 RowGroup for DataTables
@@ -9,15 +9,16 @@ RowGroup for DataTables
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | datatables.net-rowgroup |
-| Keywords           | row grouping, DataTables, jQuery, table, DataTables |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 1451086 |
-| # stars            | 0 |
+| Keywords           | RowGroup, Row Grouping, Datatables, jQuery, table, filter, sort |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 192468.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://datatables.net)
 - [Bugs](https://datatables.net/forums)
+- [Repository](https://github.com/DataTables/Dist-DataTables-RowGroup)
 - [Npm](https://www.npmjs.com/package/datatables.net-rowgroup)
     
 

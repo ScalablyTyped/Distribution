@@ -71,11 +71,11 @@ object mod {
       
       inline def setAuthors(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       
-      inline def setAuthorsVarargs(value: Maybe[Name]*): Self = StObject.set(x, "authors", js.Array(value :_*))
+      inline def setAuthorsVarargs(value: Maybe[Name]*): Self = StObject.set(x, "authors", js.Array(value*))
       
       inline def setCategories(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: Maybe[Name]*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: Maybe[Name]*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setCopyright(value: Maybe[String]): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
@@ -87,7 +87,7 @@ object mod {
       
       inline def setItems(value: js.Array[FeedItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: FeedItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: FeedItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setItunes(value: Block): Self = StObject.set(x, "itunes", value.asInstanceOf[js.Any])
       
@@ -99,7 +99,7 @@ object mod {
       
       inline def setLinks(value: js.Array[Rel]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      inline def setLinksVarargs(value: Rel*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Rel*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -151,11 +151,11 @@ object mod {
       
       inline def setAuthors(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       
-      inline def setAuthorsVarargs(value: Maybe[Name]*): Self = StObject.set(x, "authors", js.Array(value :_*))
+      inline def setAuthorsVarargs(value: Maybe[Name]*): Self = StObject.set(x, "authors", js.Array(value*))
       
       inline def setCategories(value: js.Array[Maybe[Name]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: Maybe[Name]*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: Maybe[Name]*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -163,7 +163,7 @@ object mod {
       
       inline def setEnclosures(value: js.Array[Length]): Self = StObject.set(x, "enclosures", value.asInstanceOf[js.Any])
       
-      inline def setEnclosuresVarargs(value: Length*): Self = StObject.set(x, "enclosures", js.Array(value :_*))
+      inline def setEnclosuresVarargs(value: Length*): Self = StObject.set(x, "enclosures", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -171,7 +171,7 @@ object mod {
       
       inline def setLinks(value: js.Array[Rel]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      inline def setLinksVarargs(value: Rel*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Rel*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setPublished(value: String): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
       

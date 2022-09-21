@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "IndexedShape")
 @js.native
-class IndexedShape protected ()
+open class IndexedShape protected ()
   extends StObject
      with Geo {
   /*
@@ -40,7 +40,7 @@ class IndexedShape protected ()
     Retrieves the internal script object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets the type which the shape is indexed under.

@@ -56,6 +56,6 @@ object INewContact {
     
     inline def setWorkUndefined: Self = StObject.set(x, "work", js.undefined)
     
-    inline def setWorkVarargs(value: Employer*): Self = StObject.set(x, "work", js.Array(value :_*))
+    inline def setWorkVarargs(value: Employer*): Self = StObject.set(x, "work", js.Array(value*))
   }
 }

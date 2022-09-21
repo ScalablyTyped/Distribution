@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DownloadDefaultKeyPairResult extends StObject {
   
   /**
+    * The timestamp when the default key pair was created.
+    */
+  var createdAt: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * A base64-encoded RSA private key.
     */
   var privateKeyBase64: js.UndefOr[Base64] = js.undefined
@@ -24,6 +29,10 @@ object DownloadDefaultKeyPairResult {
   }
   
   extension [Self <: DownloadDefaultKeyPairResult](x: Self) {
+    
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     inline def setPrivateKeyBase64(value: Base64): Self = StObject.set(x, "privateKeyBase64", value.asInstanceOf[js.Any])
     

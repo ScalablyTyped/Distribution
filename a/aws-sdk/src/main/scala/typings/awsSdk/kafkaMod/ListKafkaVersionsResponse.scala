@@ -23,7 +23,7 @@ object ListKafkaVersionsResponse {
     
     inline def setKafkaVersionsUndefined: Self = StObject.set(x, "KafkaVersions", js.undefined)
     
-    inline def setKafkaVersionsVarargs(value: KafkaVersion*): Self = StObject.set(x, "KafkaVersions", js.Array(value :_*))
+    inline def setKafkaVersionsVarargs(value: KafkaVersion*): Self = StObject.set(x, "KafkaVersions", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

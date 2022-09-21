@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SubscriptionPhase")
 @js.native
-class SubscriptionPhase () extends StObject {
+open class SubscriptionPhase () extends StObject {
   
   /**
     * The billing cadence of the phase. For example, weekly or monthly.

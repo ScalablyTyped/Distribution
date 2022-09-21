@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.UserPermissionObject")
 @js.native
-/* private */ class UserPermissionObject ()
+/* private */ open class UserPermissionObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.UserPermissionObject {
   
   /* CompleteClass */
-  var ExpirationDate: js.Any = js.native
+  var ExpirationDate: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("InfoPath.UserPermissionObject_typekey")
   var InfoPathDotUserPermissionObject_typekey: typings.activexInfopath.InfoPath.UserPermissionObject = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Permission: Double = js.native

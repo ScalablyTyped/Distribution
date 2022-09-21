@@ -17,7 +17,7 @@ trait ListCommandsRequest extends StObject {
   var Filters: js.UndefOr[CommandFilterList] = js.undefined
   
   /**
-    * (Optional) Lists commands issued against this instance ID.  You can't specify an instance ID in the same command that you specify Status = Pending. This is because the command has not reached the instance yet. 
+    * (Optional) Lists commands issued against this managed node ID.  You can't specify a managed node ID in the same command that you specify Status = Pending. This is because the command hasn't reached the managed node yet. 
     */
   var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
@@ -48,7 +48,7 @@ object ListCommandsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: CommandFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: CommandFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

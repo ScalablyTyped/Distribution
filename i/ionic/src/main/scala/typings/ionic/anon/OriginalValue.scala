@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OriginalValue extends StObject {
   
-  var originalValue: js.Any
+  var originalValue: Any
   
   var property: String
 }
 object OriginalValue {
   
-  inline def apply(originalValue: js.Any, property: String): OriginalValue = {
+  inline def apply(originalValue: Any, property: String): OriginalValue = {
     val __obj = js.Dynamic.literal(originalValue = originalValue.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginalValue]
   }
   
   extension [Self <: OriginalValue](x: Self) {
     
-    inline def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+    inline def setOriginalValue(value: Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
     
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }

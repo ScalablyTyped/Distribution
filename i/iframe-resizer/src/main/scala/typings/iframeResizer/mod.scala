@@ -66,11 +66,11 @@ object mod {
        with HTMLIFrameElement {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var iFrameResizer: IFrameObject = js.native
     
@@ -87,11 +87,11 @@ object mod {
     
     var iframe: IFrameComponent
     
-    var message: js.Any
+    var message: Any
   }
   object IFrameMessageData {
     
-    inline def apply(iframe: IFrameComponent, message: js.Any): IFrameMessageData = {
+    inline def apply(iframe: IFrameComponent, message: Any): IFrameMessageData = {
       val __obj = js.Dynamic.literal(iframe = iframe.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFrameMessageData]
     }
@@ -100,7 +100,7 @@ object mod {
       
       inline def setIframe(value: IFrameComponent): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
       
-      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,8 +114,8 @@ object mod {
     
     def resize(): Unit = js.native
     
-    def sendMessage(message: js.Any): Unit = js.native
-    def sendMessage(message: js.Any, targetOrigin: String): Unit = js.native
+    def sendMessage(message: Any): Unit = js.native
+    def sendMessage(message: Any, targetOrigin: String): Unit = js.native
   }
   
   // tslint:disable-next-line:interface-name
@@ -288,7 +288,7 @@ object mod {
       
       inline def setCheckOriginUndefined: Self = StObject.set(x, "checkOrigin", js.undefined)
       
-      inline def setCheckOriginVarargs(value: String*): Self = StObject.set(x, "checkOrigin", js.Array(value :_*))
+      inline def setCheckOriginVarargs(value: String*): Self = StObject.set(x, "checkOrigin", js.Array(value*))
       
       inline def setClosedCallback(value: /* iframeId */ String => Unit): Self = StObject.set(x, "closedCallback", js.Any.fromFunction1(value))
       
@@ -418,8 +418,8 @@ object mod {
       * option is used to restrict where the message is sent to; to stop an attacker mimicking your parent page.
       * See the MDN documentation on postMessage for more details.
       */
-    def sendMessage(message: js.Any): Unit = js.native
-    def sendMessage(message: js.Any, targetOrigin: String): Unit = js.native
+    def sendMessage(message: Any): Unit = js.native
+    def sendMessage(message: Any, targetOrigin: String): Unit = js.native
     
     /**
       * Change the method use to workout the height of the iFrame.
@@ -457,7 +457,7 @@ object mod {
     /**
       * Receive message posted from the parent page with the iframe.iFrameResizer.sendMessage() method.
       */
-    var messageCallback: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.undefined
+    var messageCallback: js.UndefOr[js.Function1[/* message */ Any, Unit]] = js.undefined
     
     /**
       * This function is called once iFrame-Resizer has been initialized after receiving a call from the parent page.
@@ -490,7 +490,7 @@ object mod {
       
       inline def setHeightCalculationMethodUndefined: Self = StObject.set(x, "heightCalculationMethod", js.undefined)
       
-      inline def setMessageCallback(value: /* message */ js.Any => Unit): Self = StObject.set(x, "messageCallback", js.Any.fromFunction1(value))
+      inline def setMessageCallback(value: /* message */ Any => Unit): Self = StObject.set(x, "messageCallback", js.Any.fromFunction1(value))
       
       inline def setMessageCallbackUndefined: Self = StObject.set(x, "messageCallback", js.undefined)
       

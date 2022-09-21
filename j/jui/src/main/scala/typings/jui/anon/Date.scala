@@ -14,9 +14,9 @@ trait Date extends StObject {
     * @cfg {Date} [date="now"]
     * Selects a specific date as a basic
     */
-  var date: js.UndefOr[now | typings.std.Date] = js.undefined
+  var date: js.UndefOr[now | js.Date] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.undefined
+  var event: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {String} [format="yyyy-MM-dd"]
@@ -28,13 +28,13 @@ trait Date extends StObject {
     * @cfg {Date} [maxDate="null"]
     * Selects a specific maximum date
     */
-  var maxDate: js.UndefOr[typings.std.Date] = js.undefined
+  var maxDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * @cfg {Date} [minDate="null"]
     * Selects a specific minimum date
     */
-  var minDate: js.UndefOr[typings.std.Date] = js.undefined
+  var minDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * @cfg {String} [titleFormat="yyyy.MM"]
@@ -42,7 +42,7 @@ trait Date extends StObject {
     */
   var titleFormat: js.UndefOr[String] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var tpl: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {"daily"/"monthly"/"yearly"} [type="daily"]
@@ -59,11 +59,11 @@ object Date {
   
   extension [Self <: Date](x: Self) {
     
-    inline def setDate(value: now | typings.std.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: now | js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
@@ -71,11 +71,11 @@ object Date {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setMaxDate(value: typings.std.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
-    inline def setMinDate(value: typings.std.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
@@ -83,7 +83,7 @@ object Date {
     
     inline def setTitleFormatUndefined: Self = StObject.set(x, "titleFormat", js.undefined)
     
-    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     

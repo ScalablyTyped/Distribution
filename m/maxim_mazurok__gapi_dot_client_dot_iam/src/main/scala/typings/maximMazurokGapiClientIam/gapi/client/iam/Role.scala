@@ -55,7 +55,7 @@ object Role {
     
     inline def setIncludedPermissionsUndefined: Self = StObject.set(x, "includedPermissions", js.undefined)
     
-    inline def setIncludedPermissionsVarargs(value: String*): Self = StObject.set(x, "includedPermissions", js.Array(value :_*))
+    inline def setIncludedPermissionsVarargs(value: String*): Self = StObject.set(x, "includedPermissions", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

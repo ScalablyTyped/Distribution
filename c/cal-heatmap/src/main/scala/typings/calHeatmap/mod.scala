@@ -3,7 +3,6 @@ package typings.calHeatmap
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.std.Element
 import typings.std.EventTarget
 import typings.std.HTMLElement
@@ -20,7 +19,7 @@ object mod {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("CalHeatMap")
       @js.native
-      class ^ ()
+      open class ^ ()
         extends StObject
            with typings.calHeatmap.mod.global.CalHeatMap.CalHeatMap
       
@@ -68,8 +67,8 @@ object mod {
           * @param {string|Date|Date[]} dates The date or dates to highlight.
           */
         def highlight(dates: String): Unit = js.native
-        def highlight(dates: js.Array[Date]): Unit = js.native
-        def highlight(dates: Date): Unit = js.native
+        def highlight(dates: js.Array[js.Date]): Unit = js.native
+        def highlight(dates: js.Date): Unit = js.native
         
         /**
           * Initialise the CalHeatMap with the specified options
@@ -84,8 +83,8 @@ object mod {
           * @param {Date} date The date to jump to.
           * @param {boolean} reset Whether to set the domain with the specified as the calendar's first domain.
           */
-        def jumpTo(date: Date): Unit = js.native
-        def jumpTo(date: Date, reset: Boolean): Unit = js.native
+        def jumpTo(date: js.Date): Unit = js.native
+        def jumpTo(date: js.Date, reset: Boolean): Unit = js.native
         
         /**
           * Shift the calendar n domains forward
@@ -176,19 +175,19 @@ object mod {
           * This callback must return a json object formatted in the expected data format.
           * afterLoadData() is used to do some works on the data, especially when the data source is not returning data in the expected format.
           */
-        var afterLoadData: js.UndefOr[js.Function1[/* data */ js.Any, DataFormat]] = js.undefined
+        var afterLoadData: js.UndefOr[js.Function1[/* data */ Any, DataFormat]] = js.undefined
         
         /**
           * Called after shifting the calendar one domain forward.
           * The date argument is the start date of the domain that was added.
           */
-        var afterLoadNextDomain: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
+        var afterLoadNextDomain: js.UndefOr[js.Function1[/* date */ js.Date, Unit]] = js.undefined
         
         /**
           * Called after shifting the calendar one domain back.
           * The date argument is the start date of the domain that was added.
           */
-        var afterLoadPreviousDomain: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
+        var afterLoadPreviousDomain: js.UndefOr[js.Function1[/* date */ js.Date, Unit]] = js.undefined
         
         // ================================================
         // Other
@@ -277,7 +276,7 @@ object mod {
           * Highlight selected subDomain cells. Default: false
           * Takes an array of Date object. Can also accepts the now string, equivalent to Date.now().
           */
-        var highlight: js.UndefOr[String | (js.Array[js.Any | Date | String])] = js.undefined
+        var highlight: js.UndefOr[String | (js.Array[Any | js.Date | String])] = js.undefined
         
         // ================================================
         // i18n
@@ -368,7 +367,7 @@ object mod {
         var legendVerticalPosition: js.UndefOr[String] = js.undefined
         
         /** Upper limit of the domain navigation, preventing navigating beyond a certain date. Default: null */
-        var maxDate: js.UndefOr[Date] = js.undefined
+        var maxDate: js.UndefOr[js.Date] = js.undefined
         
         /**
           * Lower limit of the domain navigation, preventing navigating beyond a certain date. Default: null
@@ -376,7 +375,7 @@ object mod {
           * Like with start, minDate does not have to be precise, and just have to be a date inside the domain.
           * previous() will always return true, unless the domain containing minDate is reached, in which case, it'll return false.
           */
-        var minDate: js.UndefOr[Date] = js.undefined
+        var minDate: js.UndefOr[js.Date] = js.undefined
         
         /**
           * Will attach the next() event to the specified element, on a mouse click, shifting the calendar one domain forward. Default value: false
@@ -388,7 +387,7 @@ object mod {
         // Events
         // ================================================
         /** Called after a mouse click event on a subDomain cell. */
-        var onClick: js.UndefOr[js.Function2[/* date */ Date, /* value */ Double, Unit]] = js.undefined
+        var onClick: js.UndefOr[js.Function2[/* date */ js.Date, /* value */ Double, Unit]] = js.undefined
         
         /**
           * Called after drawing and filling the calendar.
@@ -434,7 +433,7 @@ object mod {
           * Starting date of the calendar. Default: new Date()
           * It doesn't have to be precise, the calendar will not start at that date, but at the first domain containing that date.
           */
-        var start: js.UndefOr[Date] = js.undefined
+        var start: js.UndefOr[js.Date] = js.undefined
         
         /**
           * Type of subDomain. Default: "min"
@@ -490,15 +489,15 @@ object mod {
           
           inline def setAfterLoad(value: () => Unit): Self = StObject.set(x, "afterLoad", js.Any.fromFunction0(value))
           
-          inline def setAfterLoadData(value: /* data */ js.Any => DataFormat): Self = StObject.set(x, "afterLoadData", js.Any.fromFunction1(value))
+          inline def setAfterLoadData(value: /* data */ Any => DataFormat): Self = StObject.set(x, "afterLoadData", js.Any.fromFunction1(value))
           
           inline def setAfterLoadDataUndefined: Self = StObject.set(x, "afterLoadData", js.undefined)
           
-          inline def setAfterLoadNextDomain(value: /* date */ Date => Unit): Self = StObject.set(x, "afterLoadNextDomain", js.Any.fromFunction1(value))
+          inline def setAfterLoadNextDomain(value: /* date */ js.Date => Unit): Self = StObject.set(x, "afterLoadNextDomain", js.Any.fromFunction1(value))
           
           inline def setAfterLoadNextDomainUndefined: Self = StObject.set(x, "afterLoadNextDomain", js.undefined)
           
-          inline def setAfterLoadPreviousDomain(value: /* date */ Date => Unit): Self = StObject.set(x, "afterLoadPreviousDomain", js.Any.fromFunction1(value))
+          inline def setAfterLoadPreviousDomain(value: /* date */ js.Date => Unit): Self = StObject.set(x, "afterLoadPreviousDomain", js.Any.fromFunction1(value))
           
           inline def setAfterLoadPreviousDomainUndefined: Self = StObject.set(x, "afterLoadPreviousDomain", js.undefined)
           
@@ -558,21 +557,21 @@ object mod {
           
           inline def setDomainMarginUndefined: Self = StObject.set(x, "domainMargin", js.undefined)
           
-          inline def setDomainMarginVarargs(value: Double*): Self = StObject.set(x, "domainMargin", js.Array(value :_*))
+          inline def setDomainMarginVarargs(value: Double*): Self = StObject.set(x, "domainMargin", js.Array(value*))
           
           inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
           
-          inline def setHighlight(value: String | (js.Array[js.Any | Date | String])): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+          inline def setHighlight(value: String | (js.Array[Any | js.Date | String])): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
           
           inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
           
-          inline def setHighlightVarargs(value: (js.Any | Date | String)*): Self = StObject.set(x, "highlight", js.Array(value :_*))
+          inline def setHighlightVarargs(value: (Any | js.Date | String)*): Self = StObject.set(x, "highlight", js.Array(value*))
           
           inline def setItemName(value: String | js.Array[String]): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
           
           inline def setItemNameUndefined: Self = StObject.set(x, "itemName", js.undefined)
           
-          inline def setItemNameVarargs(value: String*): Self = StObject.set(x, "itemName", js.Array(value :_*))
+          inline def setItemNameVarargs(value: String*): Self = StObject.set(x, "itemName", js.Array(value*))
           
           inline def setItemNamespace(value: String): Self = StObject.set(x, "itemNamespace", value.asInstanceOf[js.Any])
           
@@ -600,7 +599,7 @@ object mod {
           
           inline def setLegendColorsUndefined: Self = StObject.set(x, "legendColors", js.undefined)
           
-          inline def setLegendColorsVarargs(value: String*): Self = StObject.set(x, "legendColors", js.Array(value :_*))
+          inline def setLegendColorsVarargs(value: String*): Self = StObject.set(x, "legendColors", js.Array(value*))
           
           inline def setLegendHorizontalPosition(value: String): Self = StObject.set(x, "legendHorizontalPosition", value.asInstanceOf[js.Any])
           
@@ -610,7 +609,7 @@ object mod {
           
           inline def setLegendMarginUndefined: Self = StObject.set(x, "legendMargin", js.undefined)
           
-          inline def setLegendMarginVarargs(value: Double*): Self = StObject.set(x, "legendMargin", js.Array(value :_*))
+          inline def setLegendMarginVarargs(value: Double*): Self = StObject.set(x, "legendMargin", js.Array(value*))
           
           inline def setLegendOrientation(value: String): Self = StObject.set(x, "legendOrientation", value.asInstanceOf[js.Any])
           
@@ -622,17 +621,17 @@ object mod {
           
           inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
           
-          inline def setLegendVarargs(value: Double*): Self = StObject.set(x, "legend", js.Array(value :_*))
+          inline def setLegendVarargs(value: Double*): Self = StObject.set(x, "legend", js.Array(value*))
           
           inline def setLegendVerticalPosition(value: String): Self = StObject.set(x, "legendVerticalPosition", value.asInstanceOf[js.Any])
           
           inline def setLegendVerticalPositionUndefined: Self = StObject.set(x, "legendVerticalPosition", js.undefined)
           
-          inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+          inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
           
           inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
           
-          inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+          inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
           
           inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
           
@@ -640,7 +639,7 @@ object mod {
           
           inline def setNextSelectorUndefined: Self = StObject.set(x, "nextSelector", js.undefined)
           
-          inline def setOnClick(value: (/* date */ Date, /* value */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+          inline def setOnClick(value: (/* date */ js.Date, /* value */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
           
           inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
           
@@ -668,7 +667,7 @@ object mod {
           
           inline def setRowLimitUndefined: Self = StObject.set(x, "rowLimit", js.undefined)
           
-          inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+          inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
           
           inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
           
@@ -888,7 +887,7 @@ object mod {
         
         /** List of dates to highlight */
         @JSName("highlight")
-        var highlight_RuntimeOptions: js.Array[Date]
+        var highlight_RuntimeOptions: js.Array[js.Date]
         
         /**
           * Name of the items to represent in the calendar.
@@ -905,7 +904,7 @@ object mod {
         
         inline def apply(
           domainMargin: js.Array[Double],
-          highlight: js.Array[Date],
+          highlight: js.Array[js.Date],
           itemName: js.Array[String],
           legendMargin: js.Array[Double]
         ): RuntimeOptions = {
@@ -917,19 +916,19 @@ object mod {
           
           inline def setDomainMargin(value: js.Array[Double]): Self = StObject.set(x, "domainMargin", value.asInstanceOf[js.Any])
           
-          inline def setDomainMarginVarargs(value: Double*): Self = StObject.set(x, "domainMargin", js.Array(value :_*))
+          inline def setDomainMarginVarargs(value: Double*): Self = StObject.set(x, "domainMargin", js.Array(value*))
           
-          inline def setHighlight(value: js.Array[Date]): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+          inline def setHighlight(value: js.Array[js.Date]): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
           
-          inline def setHighlightVarargs(value: Date*): Self = StObject.set(x, "highlight", js.Array(value :_*))
+          inline def setHighlightVarargs(value: js.Date*): Self = StObject.set(x, "highlight", js.Array(value*))
           
           inline def setItemName(value: js.Array[String]): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
           
-          inline def setItemNameVarargs(value: String*): Self = StObject.set(x, "itemName", js.Array(value :_*))
+          inline def setItemNameVarargs(value: String*): Self = StObject.set(x, "itemName", js.Array(value*))
           
           inline def setLegendMargin(value: js.Array[Double]): Self = StObject.set(x, "legendMargin", value.asInstanceOf[js.Any])
           
-          inline def setLegendMarginVarargs(value: Double*): Self = StObject.set(x, "legendMargin", js.Array(value :_*))
+          inline def setLegendMarginVarargs(value: Double*): Self = StObject.set(x, "legendMargin", js.Array(value*))
         }
       }
       

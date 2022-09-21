@@ -29,7 +29,7 @@ object ListAuditFindingsResponse {
     
     inline def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
     
-    inline def setFindingsVarargs(value: AuditFinding*): Self = StObject.set(x, "findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: AuditFinding*): Self = StObject.set(x, "findings", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

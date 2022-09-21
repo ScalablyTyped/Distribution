@@ -1,7 +1,6 @@
 package typings.d
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.PropertyDescriptor
 import typings.std.PropertyDescriptorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object lazyMod {
   
-  inline def apply(obj: StringDictionary[PropertyDescriptor]): PropertyDescriptorMap = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[PropertyDescriptorMap]
+  inline def apply(obj: StringDictionary[js.PropertyDescriptor]): PropertyDescriptorMap = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[PropertyDescriptorMap]
   
   @JSImport("d/lazy", JSImport.Namespace)
   @js.native

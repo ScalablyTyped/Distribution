@@ -55,7 +55,7 @@ trait LabelProps extends StObject {
   
   var colorRendering: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[ReactElement | ContentRenderer[js.Any]] = js.undefined
+  var content: js.UndefOr[ReactElement | ContentRenderer[Any]] = js.undefined
   
   var cursor: js.UndefOr[String] = js.undefined
   
@@ -100,8 +100,6 @@ trait LabelProps extends StObject {
   ] = js.undefined
   
   var formatter: js.UndefOr[LabelFormatter] = js.undefined
-  
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -208,7 +206,7 @@ object LabelProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -246,9 +244,9 @@ object LabelProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setContent(value: ReactElement | ContentRenderer[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ReactElement | ContentRenderer[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+    inline def setContentFunction1(value: Any => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
@@ -337,10 +335,6 @@ object LabelProps {
     inline def setFormatter(value: /* label */ String | Double => ReactNode): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
-    
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

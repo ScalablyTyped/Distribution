@@ -6,43 +6,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ImmutableCompilationSettings extends StObject {
   
-  /* private */ var _allowAutomaticSemicolonInsertion: js.Any
+  /* private */ var _allowAutomaticSemicolonInsertion: Any
   
-  /* private */ var _codeGenTarget: js.Any
+  /* private */ var _codeGenTarget: Any
   
-  /* private */ var _codepage: js.Any
+  /* private */ var _codepage: Any
   
-  /* private */ var _createFileLog: js.Any
+  /* private */ var _createFileLog: Any
   
-  /* private */ var _gatherDiagnostics: js.Any
+  /* private */ var _gatherDiagnostics: Any
   
-  /* private */ var _generateDeclarationFiles: js.Any
+  /* private */ var _generateDeclarationFiles: Any
   
-  /* private */ var _mapRoot: js.Any
+  /* private */ var _mapRoot: Any
   
-  /* private */ var _mapSourceFiles: js.Any
+  /* private */ var _mapSourceFiles: Any
   
-  /* private */ var _moduleGenTarget: js.Any
+  /* private */ var _moduleGenTarget: Any
   
-  /* private */ var _noImplicitAny: js.Any
+  /* private */ var _noImplicitAny: Any
   
-  /* private */ var _noLib: js.Any
+  /* private */ var _noLib: Any
   
-  /* private */ var _noResolve: js.Any
+  /* private */ var _noResolve: Any
   
-  /* private */ var _outDirOption: js.Any
+  /* private */ var _outDirOption: Any
   
-  /* private */ var _outFileOption: js.Any
+  /* private */ var _outFileOption: Any
   
-  /* private */ var _propagateEnumConstants: js.Any
+  /* private */ var _propagateEnumConstants: Any
   
-  /* private */ var _removeComments: js.Any
+  /* private */ var _removeComments: Any
   
-  /* private */ var _sourceRoot: js.Any
+  /* private */ var _sourceRoot: Any
   
-  /* private */ var _useCaseSensitiveFileResolution: js.Any
+  /* private */ var _useCaseSensitiveFileResolution: Any
   
-  /* private */ var _watch: js.Any
+  /* private */ var _watch: Any
   
   def allowAutomaticSemicolonInsertion(): Boolean
   
@@ -78,7 +78,7 @@ trait ImmutableCompilationSettings extends StObject {
   
   def sourceRoot(): String
   
-  def toCompilationSettings(): js.Any
+  def toCompilationSettings(): Any
   
   def useCaseSensitiveFileResolution(): Boolean
   
@@ -87,25 +87,25 @@ trait ImmutableCompilationSettings extends StObject {
 object ImmutableCompilationSettings {
   
   inline def apply(
-    _allowAutomaticSemicolonInsertion: js.Any,
-    _codeGenTarget: js.Any,
-    _codepage: js.Any,
-    _createFileLog: js.Any,
-    _gatherDiagnostics: js.Any,
-    _generateDeclarationFiles: js.Any,
-    _mapRoot: js.Any,
-    _mapSourceFiles: js.Any,
-    _moduleGenTarget: js.Any,
-    _noImplicitAny: js.Any,
-    _noLib: js.Any,
-    _noResolve: js.Any,
-    _outDirOption: js.Any,
-    _outFileOption: js.Any,
-    _propagateEnumConstants: js.Any,
-    _removeComments: js.Any,
-    _sourceRoot: js.Any,
-    _useCaseSensitiveFileResolution: js.Any,
-    _watch: js.Any,
+    _allowAutomaticSemicolonInsertion: Any,
+    _codeGenTarget: Any,
+    _codepage: Any,
+    _createFileLog: Any,
+    _gatherDiagnostics: Any,
+    _generateDeclarationFiles: Any,
+    _mapRoot: Any,
+    _mapSourceFiles: Any,
+    _moduleGenTarget: Any,
+    _noImplicitAny: Any,
+    _noLib: Any,
+    _noResolve: Any,
+    _outDirOption: Any,
+    _outFileOption: Any,
+    _propagateEnumConstants: Any,
+    _removeComments: Any,
+    _sourceRoot: Any,
+    _useCaseSensitiveFileResolution: Any,
+    _watch: Any,
     allowAutomaticSemicolonInsertion: () => Boolean,
     codeGenTarget: () => LanguageVersion,
     codepage: () => Double,
@@ -123,7 +123,7 @@ object ImmutableCompilationSettings {
     propagateEnumConstants: () => Boolean,
     removeComments: () => Boolean,
     sourceRoot: () => String,
-    toCompilationSettings: () => js.Any,
+    toCompilationSettings: () => Any,
     useCaseSensitiveFileResolution: () => Boolean,
     watch: () => Boolean
   ): ImmutableCompilationSettings = {
@@ -167,48 +167,48 @@ object ImmutableCompilationSettings {
     
     inline def setSourceRoot(value: () => String): Self = StObject.set(x, "sourceRoot", js.Any.fromFunction0(value))
     
-    inline def setToCompilationSettings(value: () => js.Any): Self = StObject.set(x, "toCompilationSettings", js.Any.fromFunction0(value))
+    inline def setToCompilationSettings(value: () => Any): Self = StObject.set(x, "toCompilationSettings", js.Any.fromFunction0(value))
     
     inline def setUseCaseSensitiveFileResolution(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileResolution", js.Any.fromFunction0(value))
     
     inline def setWatch(value: () => Boolean): Self = StObject.set(x, "watch", js.Any.fromFunction0(value))
     
-    inline def set_allowAutomaticSemicolonInsertion(value: js.Any): Self = StObject.set(x, "_allowAutomaticSemicolonInsertion", value.asInstanceOf[js.Any])
+    inline def set_allowAutomaticSemicolonInsertion(value: Any): Self = StObject.set(x, "_allowAutomaticSemicolonInsertion", value.asInstanceOf[js.Any])
     
-    inline def set_codeGenTarget(value: js.Any): Self = StObject.set(x, "_codeGenTarget", value.asInstanceOf[js.Any])
+    inline def set_codeGenTarget(value: Any): Self = StObject.set(x, "_codeGenTarget", value.asInstanceOf[js.Any])
     
-    inline def set_codepage(value: js.Any): Self = StObject.set(x, "_codepage", value.asInstanceOf[js.Any])
+    inline def set_codepage(value: Any): Self = StObject.set(x, "_codepage", value.asInstanceOf[js.Any])
     
-    inline def set_createFileLog(value: js.Any): Self = StObject.set(x, "_createFileLog", value.asInstanceOf[js.Any])
+    inline def set_createFileLog(value: Any): Self = StObject.set(x, "_createFileLog", value.asInstanceOf[js.Any])
     
-    inline def set_gatherDiagnostics(value: js.Any): Self = StObject.set(x, "_gatherDiagnostics", value.asInstanceOf[js.Any])
+    inline def set_gatherDiagnostics(value: Any): Self = StObject.set(x, "_gatherDiagnostics", value.asInstanceOf[js.Any])
     
-    inline def set_generateDeclarationFiles(value: js.Any): Self = StObject.set(x, "_generateDeclarationFiles", value.asInstanceOf[js.Any])
+    inline def set_generateDeclarationFiles(value: Any): Self = StObject.set(x, "_generateDeclarationFiles", value.asInstanceOf[js.Any])
     
-    inline def set_mapRoot(value: js.Any): Self = StObject.set(x, "_mapRoot", value.asInstanceOf[js.Any])
+    inline def set_mapRoot(value: Any): Self = StObject.set(x, "_mapRoot", value.asInstanceOf[js.Any])
     
-    inline def set_mapSourceFiles(value: js.Any): Self = StObject.set(x, "_mapSourceFiles", value.asInstanceOf[js.Any])
+    inline def set_mapSourceFiles(value: Any): Self = StObject.set(x, "_mapSourceFiles", value.asInstanceOf[js.Any])
     
-    inline def set_moduleGenTarget(value: js.Any): Self = StObject.set(x, "_moduleGenTarget", value.asInstanceOf[js.Any])
+    inline def set_moduleGenTarget(value: Any): Self = StObject.set(x, "_moduleGenTarget", value.asInstanceOf[js.Any])
     
-    inline def set_noImplicitAny(value: js.Any): Self = StObject.set(x, "_noImplicitAny", value.asInstanceOf[js.Any])
+    inline def set_noImplicitAny(value: Any): Self = StObject.set(x, "_noImplicitAny", value.asInstanceOf[js.Any])
     
-    inline def set_noLib(value: js.Any): Self = StObject.set(x, "_noLib", value.asInstanceOf[js.Any])
+    inline def set_noLib(value: Any): Self = StObject.set(x, "_noLib", value.asInstanceOf[js.Any])
     
-    inline def set_noResolve(value: js.Any): Self = StObject.set(x, "_noResolve", value.asInstanceOf[js.Any])
+    inline def set_noResolve(value: Any): Self = StObject.set(x, "_noResolve", value.asInstanceOf[js.Any])
     
-    inline def set_outDirOption(value: js.Any): Self = StObject.set(x, "_outDirOption", value.asInstanceOf[js.Any])
+    inline def set_outDirOption(value: Any): Self = StObject.set(x, "_outDirOption", value.asInstanceOf[js.Any])
     
-    inline def set_outFileOption(value: js.Any): Self = StObject.set(x, "_outFileOption", value.asInstanceOf[js.Any])
+    inline def set_outFileOption(value: Any): Self = StObject.set(x, "_outFileOption", value.asInstanceOf[js.Any])
     
-    inline def set_propagateEnumConstants(value: js.Any): Self = StObject.set(x, "_propagateEnumConstants", value.asInstanceOf[js.Any])
+    inline def set_propagateEnumConstants(value: Any): Self = StObject.set(x, "_propagateEnumConstants", value.asInstanceOf[js.Any])
     
-    inline def set_removeComments(value: js.Any): Self = StObject.set(x, "_removeComments", value.asInstanceOf[js.Any])
+    inline def set_removeComments(value: Any): Self = StObject.set(x, "_removeComments", value.asInstanceOf[js.Any])
     
-    inline def set_sourceRoot(value: js.Any): Self = StObject.set(x, "_sourceRoot", value.asInstanceOf[js.Any])
+    inline def set_sourceRoot(value: Any): Self = StObject.set(x, "_sourceRoot", value.asInstanceOf[js.Any])
     
-    inline def set_useCaseSensitiveFileResolution(value: js.Any): Self = StObject.set(x, "_useCaseSensitiveFileResolution", value.asInstanceOf[js.Any])
+    inline def set_useCaseSensitiveFileResolution(value: Any): Self = StObject.set(x, "_useCaseSensitiveFileResolution", value.asInstanceOf[js.Any])
     
-    inline def set_watch(value: js.Any): Self = StObject.set(x, "_watch", value.asInstanceOf[js.Any])
+    inline def set_watch(value: Any): Self = StObject.set(x, "_watch", value.asInstanceOf[js.Any])
   }
 }

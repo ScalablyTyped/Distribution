@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.tagMod.ITagProps
+import typings.blueprintjsCore.tagMod.TagProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Tag")
 @js.native
-class Tag protected ()
+open class Tag protected ()
   extends typings.blueprintjsCore.componentsMod.Tag {
-  def this(props: ITagProps) = this()
-  def this(props: ITagProps, context: js.Any) = this()
+  def this(props: TagProps) = this()
+  def this(props: TagProps, context: Any) = this()
 }
 /* static members */
 object Tag {

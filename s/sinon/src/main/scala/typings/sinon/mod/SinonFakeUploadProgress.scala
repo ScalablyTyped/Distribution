@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SinonFakeUploadProgress extends StObject {
   
-  def addEventListener(event: String, listener: js.Function1[/* e */ Event, js.Any]): Unit
+  def addEventListener(event: String, listener: js.Function1[/* e */ Event, Any]): Unit
   
   def dispatchEvent(event: Event): Unit
   
   var eventListeners: Abort
   
-  def removeEventListener(event: String, listener: js.Function1[/* e */ Event, js.Any]): Unit
+  def removeEventListener(event: String, listener: js.Function1[/* e */ Event, Any]): Unit
 }
 object SinonFakeUploadProgress {
   
   inline def apply(
-    addEventListener: (String, js.Function1[/* e */ Event, js.Any]) => Unit,
+    addEventListener: (String, js.Function1[/* e */ Event, Any]) => Unit,
     dispatchEvent: Event => Unit,
     eventListeners: Abort,
-    removeEventListener: (String, js.Function1[/* e */ Event, js.Any]) => Unit
+    removeEventListener: (String, js.Function1[/* e */ Event, Any]) => Unit
   ): SinonFakeUploadProgress = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), dispatchEvent = js.Any.fromFunction1(dispatchEvent), eventListeners = eventListeners.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener))
     __obj.asInstanceOf[SinonFakeUploadProgress]
@@ -29,12 +29,12 @@ object SinonFakeUploadProgress {
   
   extension [Self <: SinonFakeUploadProgress](x: Self) {
     
-    inline def setAddEventListener(value: (String, js.Function1[/* e */ Event, js.Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+    inline def setAddEventListener(value: (String, js.Function1[/* e */ Event, Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     inline def setDispatchEvent(value: Event => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
     
     inline def setEventListeners(value: Abort): Self = StObject.set(x, "eventListeners", value.asInstanceOf[js.Any])
     
-    inline def setRemoveEventListener(value: (String, js.Function1[/* e */ Event, js.Any]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+    inline def setRemoveEventListener(value: (String, js.Function1[/* e */ Event, Any]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
   }
 }

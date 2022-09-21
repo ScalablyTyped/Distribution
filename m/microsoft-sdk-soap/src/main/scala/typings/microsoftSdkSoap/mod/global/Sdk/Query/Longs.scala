@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.Query.Longs")
 @js.native
-class Longs protected () extends ValueBase {
+open class Longs protected () extends ValueBase {
   def this(args: js.Array[Double]) = this()
   
   /**

@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OLogger extends StObject {
   
-  def debug(args: js.Any*): Unit
+  def debug(args: Any*): Unit
   
-  def error(args: js.Any*): Unit
+  def error(args: Any*): Unit
   
-  def log(args: js.Any*): Unit
+  def log(args: Any*): Unit
 }
 object OLogger {
   
   inline def apply(
-    debug: /* repeated */ js.Any => Unit,
-    error: /* repeated */ js.Any => Unit,
-    log: /* repeated */ js.Any => Unit
+    debug: /* repeated */ Any => Unit,
+    error: /* repeated */ Any => Unit,
+    log: /* repeated */ Any => Unit
   ): OLogger = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), log = js.Any.fromFunction1(log))
     __obj.asInstanceOf[OLogger]
@@ -25,10 +25,10 @@ object OLogger {
   
   extension [Self <: OLogger](x: Self) {
     
-    inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
   }
 }

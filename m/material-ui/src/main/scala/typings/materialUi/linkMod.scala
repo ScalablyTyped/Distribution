@@ -10,10 +10,10 @@ object linkMod {
   
   @JSImport("material-ui/svg-icons/content/link", JSImport.Default)
   @js.native
-  class default () extends ContentLink
+  open class default () extends ContentLink
   
   @JSImport("material-ui/svg-icons/content/link", "ContentLink")
   @js.native
-  class ContentLink ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentLink ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -29,7 +29,7 @@ object ListAuditMitigationActionsExecutionsResponse {
     
     inline def setActionsExecutionsUndefined: Self = StObject.set(x, "actionsExecutions", js.undefined)
     
-    inline def setActionsExecutionsVarargs(value: AuditMitigationActionExecutionMetadata*): Self = StObject.set(x, "actionsExecutions", js.Array(value :_*))
+    inline def setActionsExecutionsVarargs(value: AuditMitigationActionExecutionMetadata*): Self = StObject.set(x, "actionsExecutions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -8,5 +8,5 @@ object autoScalingSettingsUpdateMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_AutoScalingSettingsUpdate", "_AutoScalingSettingsUpdate")
   @js.native
-  val AutoScalingSettingsUpdate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AutoScalingSettingsUpdate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

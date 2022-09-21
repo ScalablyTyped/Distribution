@@ -127,47 +127,53 @@ object Document {
     
     /* 1 */ val COMMENT_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.COMMENT_SECTION & Double = js.native
     
-    /* 2 */ val DOCUMENT: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.DOCUMENT & Double = js.native
+    /* 2 */ val DATE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.DATE & Double = js.native
     
-    /* 3 */ val EQUATION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION & Double = js.native
+    /* 3 */ val DOCUMENT: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.DOCUMENT & Double = js.native
     
-    /* 4 */ val EQUATION_FUNCTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION & Double = js.native
+    /* 4 */ val EQUATION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION & Double = js.native
     
-    /* 5 */ val EQUATION_FUNCTION_ARGUMENT_SEPARATOR: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION_ARGUMENT_SEPARATOR & Double = js.native
+    /* 5 */ val EQUATION_FUNCTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION & Double = js.native
     
-    /* 6 */ val EQUATION_SYMBOL: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_SYMBOL & Double = js.native
+    /* 6 */ val EQUATION_FUNCTION_ARGUMENT_SEPARATOR: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION_ARGUMENT_SEPARATOR & Double = js.native
     
-    /* 7 */ val FOOTER_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTER_SECTION & Double = js.native
+    /* 7 */ val EQUATION_SYMBOL: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.EQUATION_SYMBOL & Double = js.native
     
-    /* 8 */ val FOOTNOTE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTNOTE & Double = js.native
+    /* 8 */ val FOOTER_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTER_SECTION & Double = js.native
     
-    /* 9 */ val FOOTNOTE_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTNOTE_SECTION & Double = js.native
+    /* 9 */ val FOOTNOTE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTNOTE & Double = js.native
     
-    /* 10 */ val HEADER_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.HEADER_SECTION & Double = js.native
+    /* 10 */ val FOOTNOTE_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.FOOTNOTE_SECTION & Double = js.native
     
-    /* 11 */ val HORIZONTAL_RULE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.HORIZONTAL_RULE & Double = js.native
+    /* 11 */ val HEADER_SECTION: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.HEADER_SECTION & Double = js.native
     
-    /* 12 */ val INLINE_DRAWING: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.INLINE_DRAWING & Double = js.native
+    /* 12 */ val HORIZONTAL_RULE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.HORIZONTAL_RULE & Double = js.native
     
-    /* 13 */ val INLINE_IMAGE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.INLINE_IMAGE & Double = js.native
+    /* 13 */ val INLINE_DRAWING: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.INLINE_DRAWING & Double = js.native
     
-    /* 14 */ val LIST_ITEM: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.LIST_ITEM & Double = js.native
+    /* 14 */ val INLINE_IMAGE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.INLINE_IMAGE & Double = js.native
     
-    /* 15 */ val PAGE_BREAK: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.PAGE_BREAK & Double = js.native
+    /* 15 */ val LIST_ITEM: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.LIST_ITEM & Double = js.native
     
-    /* 16 */ val PARAGRAPH: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.PARAGRAPH & Double = js.native
+    /* 16 */ val PAGE_BREAK: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.PAGE_BREAK & Double = js.native
     
-    /* 17 */ val TABLE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE & Double = js.native
+    /* 17 */ val PARAGRAPH: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.PARAGRAPH & Double = js.native
     
-    /* 18 */ val TABLE_CELL: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_CELL & Double = js.native
+    /* 18 */ val PERSON: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.PERSON & Double = js.native
     
-    /* 19 */ val TABLE_OF_CONTENTS: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_OF_CONTENTS & Double = js.native
+    /* 19 */ val RICH_LINK: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.RICH_LINK & Double = js.native
     
-    /* 20 */ val TABLE_ROW: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_ROW & Double = js.native
+    /* 20 */ val TABLE: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE & Double = js.native
     
-    /* 21 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TEXT & Double = js.native
+    /* 21 */ val TABLE_CELL: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_CELL & Double = js.native
     
-    /* 22 */ val UNSUPPORTED: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.UNSUPPORTED & Double = js.native
+    /* 22 */ val TABLE_OF_CONTENTS: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_OF_CONTENTS & Double = js.native
+    
+    /* 23 */ val TABLE_ROW: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TABLE_ROW & Double = js.native
+    
+    /* 24 */ val TEXT: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.TEXT & Double = js.native
+    
+    /* 25 */ val UNSUPPORTED: typings.googleAppsScript.GoogleAppsScript.Document.ElementType.UNSUPPORTED & Double = js.native
   }
   
   /**

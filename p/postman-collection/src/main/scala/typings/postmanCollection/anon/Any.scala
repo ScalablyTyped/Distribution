@@ -11,6 +11,7 @@ trait Any extends StObject {
   
   var any: Out
   
+  /* standard es5 */
   def boolean[T](): Boolean
   def boolean[T](value: T): Boolean
   @JSName("boolean")
@@ -18,13 +19,15 @@ trait Any extends StObject {
   
   var json: In
   
+  /* standard es5 */
   def number(): Double
-  def number(value: js.Any): Double
+  def number(value: scala.Any): Double
   @JSName("number")
   var number_Original: NumberConstructor
   
+  /* standard es5 */
   def string(): String
-  def string(value: js.Any): String
+  def string(value: scala.Any): String
   @JSName("string")
   var string_Original: StringConstructor
 }

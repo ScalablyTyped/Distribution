@@ -21,7 +21,7 @@ trait MifareUltralight extends StObject {
     *
     * 最低基础库： `2.11.2` */
   def connect(): Unit = js.native
-  def connect(option: ConnectOption): Unit = js.native
+  def connect(option: NdefConnectOption): Unit = js.native
   
   /** [MifareUltralight.getMaxTransceiveLength(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/MifareUltralight.getMaxTransceiveLength.html)
     *
@@ -30,6 +30,14 @@ trait MifareUltralight extends StObject {
     * 最低基础库： `2.11.2` */
   def getMaxTransceiveLength(): Unit = js.native
   def getMaxTransceiveLength(option: GetMaxTransceiveLengthOption): Unit = js.native
+  
+  /** [MifareUltralight.isConnected(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/MifareUltralight.isConnected.html)
+    *
+    * 检查是否已连接
+    *
+    * 最低基础库： `2.11.2` */
+  def isConnected(): Unit = js.native
+  def isConnected(option: IsConnectedOption): Unit = js.native
   
   /** [MifareUltralight.setTimeout(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/MifareUltralight.setTimeout.html)
     *

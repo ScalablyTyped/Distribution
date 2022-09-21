@@ -12,6 +12,11 @@ trait SendChannelMessageRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
+  
+  /**
     * The Idempotency token for each client request.
     */
   var ClientRequestToken: typings.awsSdk.chimeMod.ClientRequestToken
@@ -22,7 +27,7 @@ trait SendChannelMessageRequest extends StObject {
   var Content: NonEmptyContent
   
   /**
-    * The optional metadata for each message. 
+    * The optional metadata for each message.
     */
   var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
@@ -52,6 +57,10 @@ object SendChannelMessageRequest {
   extension [Self <: SendChannelMessageRequest](x: Self) {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

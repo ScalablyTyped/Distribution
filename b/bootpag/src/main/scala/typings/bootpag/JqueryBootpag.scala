@@ -183,5 +183,5 @@ object JqueryBootpag {
     * @param event : JQueryEventObject
     * @param pageNumber : number of the clicked page
     */
-  type PageEventHandler = js.Function2[/* event */ JQueryEventObject, /* pageNumber */ Double, js.Any]
+  type PageEventHandler = js.Function2[/* event */ JQueryEventObject, /* pageNumber */ Double, Any]
 }

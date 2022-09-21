@@ -9,6 +9,12 @@ trait TooltipCfg
      with HtmlComponentCfg {
   
   /**
+    * DOM 节点的 id
+    * @type {string}
+    */
+  var containerId: js.UndefOr[String] = js.undefined
+  
+  /**
     * 容器的模板
     * @type {string}
     */
@@ -108,6 +114,10 @@ object TooltipCfg {
   
   extension [Self <: TooltipCfg](x: Self) {
     
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    
     inline def setContainerTpl(value: String): Self = StObject.set(x, "containerTpl", value.asInstanceOf[js.Any])
     
     inline def setContainerTplUndefined: Self = StObject.set(x, "containerTpl", js.undefined)
@@ -138,7 +148,7 @@ object TooltipCfg {
     
     inline def setItems(value: js.Array[ListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

@@ -70,8 +70,8 @@ trait CoreMethods
     *
     * @returns Resulting internationalised string.
     */
-  def i18n(token: String, `def`: js.Any): String = js.native
-  def i18n(token: String, `def`: js.Any, numeric: Double): String = js.native
+  def i18n(token: String, `def`: Any): String = js.native
+  def i18n(token: String, `def`: Any, numeric: Double): String = js.native
   
   /*
     * Get the initialisation options used for the table. Since: DataTables 1.10.6
@@ -85,7 +85,7 @@ trait CoreMethods
     * @param callback Specific callback function to remove if you want to unbind a single event listener.
     */
   def off(event: String): Api = js.native
-  def off(event: String, callback: js.Function2[/* e */ Event, /* repeated */ js.Any, Unit]): Api = js.native
+  def off(event: String, callback: js.Function2[/* e */ Event, /* repeated */ Any, Unit]): Api = js.native
   
   /**
     * Table events listener.
@@ -93,7 +93,7 @@ trait CoreMethods
     * @param event Event to listen for.
     * @param callback Specific callback function to remove if you want to unbind a single event listener.
     */
-  def on(event: String, callback: js.Function2[/* e */ Event, /* repeated */ js.Any, Unit]): Api = js.native
+  def on(event: String, callback: js.Function2[/* e */ Event, /* repeated */ Any, Unit]): Api = js.native
   
   /**
     * Listen for a table event once and then remove the listener.
@@ -101,7 +101,7 @@ trait CoreMethods
     * @param event Event to listen for.
     * @param callback Specific callback function to remove if you want to unbind a single event listener.
     */
-  def one(event: String, callback: js.Function2[/* e */ Event, /* repeated */ js.Any, Unit]): Api = js.native
+  def one(event: String, callback: js.Function2[/* e */ Event, /* repeated */ Any, Unit]): Api = js.native
   
   /**
     * Get the current page of the table.

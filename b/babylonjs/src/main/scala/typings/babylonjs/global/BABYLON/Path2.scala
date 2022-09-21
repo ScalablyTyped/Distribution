@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Path2")
 @js.native
-class Path2 protected ()
+open class Path2 protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Path2 {
   /**

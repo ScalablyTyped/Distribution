@@ -1,7 +1,6 @@
 package typings.babylonjs
 
 import typings.std.DOMPointReadOnly
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait XRRigidTransform extends StObject {
   
   var inverse: XRRigidTransform
   
-  var matrix: Float32Array
+  var matrix: js.typedarray.Float32Array
   
   var orientation: DOMPointReadOnly
   
@@ -20,7 +19,7 @@ object XRRigidTransform {
   
   inline def apply(
     inverse: XRRigidTransform,
-    matrix: Float32Array,
+    matrix: js.typedarray.Float32Array,
     orientation: DOMPointReadOnly,
     position: DOMPointReadOnly
   ): XRRigidTransform = {
@@ -32,7 +31,7 @@ object XRRigidTransform {
     
     inline def setInverse(value: XRRigidTransform): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
-    inline def setMatrix(value: Float32Array): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: js.typedarray.Float32Array): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     inline def setOrientation(value: DOMPointReadOnly): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

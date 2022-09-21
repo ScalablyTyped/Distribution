@@ -36,7 +36,7 @@ object mod {
   
   trait CustomElementsPolyfill extends StObject {
     
-    var flags: js.Any
+    var flags: Any
     
     var hasNative: Boolean
     
@@ -46,14 +46,14 @@ object mod {
   }
   object CustomElementsPolyfill {
     
-    inline def apply(flags: js.Any, hasNative: Boolean, ready: Boolean, useNative: Boolean): CustomElementsPolyfill = {
+    inline def apply(flags: Any, hasNative: Boolean, ready: Boolean, useNative: Boolean): CustomElementsPolyfill = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], hasNative = hasNative.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], useNative = useNative.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomElementsPolyfill]
     }
     
     extension [Self <: CustomElementsPolyfill](x: Self) {
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
       inline def setHasNative(value: Boolean): Self = StObject.set(x, "hasNative", value.asInstanceOf[js.Any])
       
@@ -67,7 +67,7 @@ object mod {
     
     var IMPORT_LINK_TYPE: String
     
-    var flags: js.Any
+    var flags: Any
     
     var isIE: Boolean
     
@@ -83,7 +83,7 @@ object mod {
     
     inline def apply(
       IMPORT_LINK_TYPE: String,
-      flags: js.Any,
+      flags: Any,
       isIE: Boolean,
       ready: Boolean,
       rootDocument: Document,
@@ -96,7 +96,7 @@ object mod {
     
     extension [Self <: HTMLImportsPolyfill](x: Self) {
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
       inline def setIMPORT_LINK_TYPE(value: String): Self = StObject.set(x, "IMPORT_LINK_TYPE", value.asInstanceOf[js.Any])
       
@@ -114,18 +114,18 @@ object mod {
   
   trait Polyfill extends StObject {
     
-    var flags: js.Any
+    var flags: Any
   }
   object Polyfill {
     
-    inline def apply(flags: js.Any): Polyfill = {
+    inline def apply(flags: Any): Polyfill = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
       __obj.asInstanceOf[Polyfill]
     }
     
     extension [Self <: Polyfill](x: Self) {
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,7 +137,7 @@ object mod {
       def define(name: String, constructor: js.Function): Unit = js.native
       def define(name: String, constructor: js.Function, options: ElementDefinitionOptions): Unit = js.native
       
-      def get(name: String): js.Any = js.native
+      def get(name: String): Any = js.native
       
       def whenDefined(name: String): js.Thenable[Unit] = js.native
     }
@@ -220,7 +220,7 @@ object mod {
       
       var WebComponents: Polyfill
       
-      var customElements: CustomElementRegistry
+      val customElements: CustomElementRegistry
     }
     object Window {
       

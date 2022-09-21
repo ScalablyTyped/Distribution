@@ -21,10 +21,10 @@ object SliceAttrs {
     
     inline def setBegin(value: Double | js.Array[Double]): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
-    inline def setBeginVarargs(value: Double*): Self = StObject.set(x, "begin", js.Array(value :_*))
+    inline def setBeginVarargs(value: Double*): Self = StObject.set(x, "begin", js.Array(value*))
     
     inline def setSize(value: Double | js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
   }
 }

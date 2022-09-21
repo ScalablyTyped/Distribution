@@ -2,6 +2,7 @@ package typings.lodash.fpMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.lodash.anon.LodashAnyHack
+import typings.lodash.anon.TrapAny
 import typings.lodash.anon.Typeoflodash
 import typings.lodash.lodashBooleans.`false`
 import typings.lodash.lodashBooleans.`true`
@@ -15,7 +16,8 @@ import typings.lodash.mod.CloneWithCustomizer
 import typings.lodash.mod.Collection
 import typings.lodash.mod.Comparator
 import typings.lodash.mod.Comparator2
-import typings.lodash.mod.CondPair
+import typings.lodash.mod.CondPairNullary
+import typings.lodash.mod.CondPairUnary
 import typings.lodash.mod.ConformsPredicateObject
 import typings.lodash.mod.CurriedFunction1
 import typings.lodash.mod.CurriedFunction2
@@ -66,10 +68,10 @@ import typings.lodash.mod.ValueKeyIteratee
 import typings.lodash.mod.ValueKeyIterateeTypeGuard
 import typings.lodash.mod.__
 import typings.lodash.mod.isMatchWithCustomizer
-import typings.std.Error
 import typings.std.Exclude
+import typings.std.Map
 import typings.std.Pick
-import typings.std.RegExp
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,16 +88,16 @@ trait LoDashFp extends StObject {
   
   def __(): String
   def __(value: java.lang.String): String
-  def __[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T]
+  def __[T /* <: js.Object */](value: T): Object[T]
   def __[T](value: List[T]): Collection[T]
   @JSName("__")
   var ___Original: __
   @JSName("__")
   def ___T_Collection[T](): Collection[T]
   @JSName("__")
-  def ___T_Object_Object[T /* <: js.Object */](): Object[T]
+  def ___T_Function1AnyAny_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T]
   @JSName("__")
-  def ___T_Object_Object[T /* <: js.Object */](value: T): Object[T]
+  def ___T_Object_Object[T /* <: js.Object */](): Object[T]
   @JSName("__")
   def ___T_Primitive[T](value: T): Primitive[T]
   @JSName("__")
@@ -169,7 +171,7 @@ trait LoDashFp extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("__")
-  def ___TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & String
+  def ___TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String
   
   def add(augend: Double): LodashAdd1x1
   def add(augend: Double, addend: Double): Double
@@ -178,8 +180,8 @@ trait LoDashFp extends StObject {
   var add_Original: LodashAdd
   
   def after(func: __, n: Double): LodashAfter1x2
-  def after[TFunc /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunc): LodashAfter1x1[TFunc]
-  def after[TFunc /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunc, n: Double): TFunc
+  def after[TFunc /* <: js.Function1[/* repeated */ Any, Any] */](func: TFunc): LodashAfter1x1[TFunc]
+  def after[TFunc /* <: js.Function1[/* repeated */ Any, Any] */](func: TFunc, n: Double): TFunc
   @JSName("after")
   var after_Original: LodashAfter
   
@@ -250,13 +252,13 @@ trait LoDashFp extends StObject {
   ): Boolean
   
   @JSName("apply")
-  def apply[TResult](func: js.Function1[/* repeated */ js.Any, TResult]): js.Function1[/* repeated */ js.Any, TResult]
+  def apply[TResult](func: js.Function1[/* repeated */ Any, TResult]): js.Function1[/* repeated */ Any, TResult]
   @JSName("apply")
   var apply_Original: LodashApply
   
   def ary(n: Double): LodashAry1x1
-  def ary(n: Double, func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
-  def ary(n: __, func: js.Function1[/* repeated */ js.Any, js.Any]): LodashAry1x2
+  def ary(n: Double, func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any]
+  def ary(n: __, func: js.Function1[/* repeated */ Any, Any]): LodashAry1x2
   @JSName("ary")
   var ary_Original: LodashAry
   
@@ -264,15 +266,15 @@ trait LoDashFp extends StObject {
   def assign[TSource](`object`: __, source: TSource): LodashAssign1x2[TSource]
   def assign[TObject, TSource](`object`: TObject, source: TSource): TObject & TSource
   
-  def assignAll(`object`: js.Array[js.Any]): js.Any
+  def assignAll(`object`: js.Array[Any]): Any
   def assignAll[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): TObject & TSource
   def assignAll[TObject, TSource1, TSource2](`object`: js.Tuple3[TObject, TSource1, TSource2]): TObject & TSource1 & TSource2
   def assignAll[TObject, TSource1, TSource2, TSource3](`object`: js.Tuple4[TObject, TSource1, TSource2, TSource3]): TObject & TSource1 & TSource2 & TSource3
   def assignAll[TObject, TSource1, TSource2, TSource3, TSource4](`object`: js.Tuple5[TObject, TSource1, TSource2, TSource3, TSource4]): TObject & TSource1 & TSource2 & TSource3 & TSource4
   
   def assignAllWith(customizer: AssignCustomizer): LodashAssignAllWith1x1
-  def assignAllWith(customizer: AssignCustomizer, args: js.Array[js.Any]): js.Any
-  def assignAllWith(customizer: __, args: js.Array[js.Any]): LodashAssignAllWith1x2
+  def assignAllWith(customizer: AssignCustomizer, args: js.Array[Any]): Any
+  def assignAllWith(customizer: __, args: js.Array[Any]): LodashAssignAllWith1x2
   @JSName("assignAllWith")
   var assignAllWith_Original: LodashAssignAllWith
   
@@ -285,15 +287,15 @@ trait LoDashFp extends StObject {
   def assignIn[TSource](`object`: __, source: TSource): LodashAssignIn1x2[TSource]
   def assignIn[TObject, TSource](`object`: TObject, source: TSource): TObject & TSource
   
-  def assignInAll[TResult](`object`: js.Array[js.Any]): TResult
+  def assignInAll[TResult](`object`: js.Array[Any]): TResult
   def assignInAll[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): TObject & TSource
   def assignInAll[TObject, TSource1, TSource2](`object`: js.Tuple3[TObject, TSource1, TSource2]): TObject & TSource1 & TSource2
   def assignInAll[TObject, TSource1, TSource2, TSource3](`object`: js.Tuple4[TObject, TSource1, TSource2, TSource3]): TObject & TSource1 & TSource2 & TSource3
   def assignInAll[TObject, TSource1, TSource2, TSource3, TSource4](`object`: js.Tuple5[TObject, TSource1, TSource2, TSource3, TSource4]): TObject & TSource1 & TSource2 & TSource3 & TSource4
   
   def assignInAllWith(customizer: AssignCustomizer): LodashAssignInAllWith1x1
-  def assignInAllWith(customizer: AssignCustomizer, args: js.Array[js.Any]): js.Any
-  def assignInAllWith(customizer: __, args: js.Array[js.Any]): LodashAssignInAllWith1x2
+  def assignInAllWith(customizer: AssignCustomizer, args: js.Array[Any]): Any
+  def assignInAllWith(customizer: __, args: js.Array[Any]): LodashAssignInAllWith1x2
   @JSName("assignInAllWith")
   var assignInAllWith_Original: LodashAssignInAllWith
   
@@ -329,27 +331,27 @@ trait LoDashFp extends StObject {
   var assign_Original: LodashAssign
   
   def assoc(path: PropertyPath): LodashSet1x1
-  def assoc(path: PropertyPath, value: js.Any): LodashSet1x3
+  def assoc(path: PropertyPath, value: Any): LodashSet1x3
   def assoc(path: PropertyPath, value: __, `object`: js.Object): LodashSet2x5
-  def assoc(path: __, value: js.Any): LodashSet1x2
-  def assoc(path: __, value: js.Any, `object`: js.Object): LodashSet2x6
+  def assoc(path: __, value: Any): LodashSet1x2
+  def assoc(path: __, value: Any, `object`: js.Object): LodashSet2x6
   def assoc(path: __, value: __, `object`: js.Object): LodashSet2x4
-  def assoc[T /* <: js.Object */](path: PropertyPath, value: js.Any, `object`: T): T
-  def assoc[TResult](path: PropertyPath, value: js.Any, `object`: js.Object): TResult
+  def assoc[T /* <: js.Object */](path: PropertyPath, value: Any, `object`: T): T
+  def assoc[TResult](path: PropertyPath, value: Any, `object`: js.Object): TResult
   def assoc[T /* <: js.Object */](path: PropertyPath, value: __, `object`: T): LodashSet1x5[T]
-  def assoc[T /* <: js.Object */](path: __, value: js.Any, `object`: T): LodashSet1x6[T]
+  def assoc[T /* <: js.Object */](path: __, value: Any, `object`: T): LodashSet1x6[T]
   def assoc[T /* <: js.Object */](path: __, value: __, `object`: T): LodashSet1x4[T]
   
   def assocPath(path: PropertyPath): LodashSet1x1
-  def assocPath(path: PropertyPath, value: js.Any): LodashSet1x3
+  def assocPath(path: PropertyPath, value: Any): LodashSet1x3
   def assocPath(path: PropertyPath, value: __, `object`: js.Object): LodashSet2x5
-  def assocPath(path: __, value: js.Any): LodashSet1x2
-  def assocPath(path: __, value: js.Any, `object`: js.Object): LodashSet2x6
+  def assocPath(path: __, value: Any): LodashSet1x2
+  def assocPath(path: __, value: Any, `object`: js.Object): LodashSet2x6
   def assocPath(path: __, value: __, `object`: js.Object): LodashSet2x4
-  def assocPath[T /* <: js.Object */](path: PropertyPath, value: js.Any, `object`: T): T
-  def assocPath[TResult](path: PropertyPath, value: js.Any, `object`: js.Object): TResult
+  def assocPath[T /* <: js.Object */](path: PropertyPath, value: Any, `object`: T): T
+  def assocPath[TResult](path: PropertyPath, value: Any, `object`: js.Object): TResult
   def assocPath[T /* <: js.Object */](path: PropertyPath, value: __, `object`: T): LodashSet1x5[T]
-  def assocPath[T /* <: js.Object */](path: __, value: js.Any, `object`: T): LodashSet1x6[T]
+  def assocPath[T /* <: js.Object */](path: __, value: Any, `object`: T): LodashSet1x6[T]
   def assocPath[T /* <: js.Object */](path: __, value: __, `object`: T): LodashSet1x4[T]
   @JSName("assocPath")
   var assocPath_Original: LodashSet
@@ -380,19 +382,19 @@ trait LoDashFp extends StObject {
   @JSName("at")
   def at_T_Object_LodashAt2x1[T /* <: js.Object */](props: Many[/* keyof T */ java.lang.String]): LodashAt2x1[T]
   
-  def attempt[TResult](func: js.Function1[/* repeated */ js.Any, TResult]): TResult | Error
+  def attempt[TResult](func: js.Function1[/* repeated */ Any, TResult]): TResult | js.Error
   @JSName("attempt")
   var attempt_Original: LodashAttempt
   
   def before(func: __, n: Double): LodashBefore1x2
-  def before[TFunc /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunc): LodashBefore1x1[TFunc]
-  def before[TFunc /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunc, n: Double): TFunc
+  def before[TFunc /* <: js.Function1[/* repeated */ Any, Any] */](func: TFunc): LodashBefore1x1[TFunc]
+  def before[TFunc /* <: js.Function1[/* repeated */ Any, Any] */](func: TFunc, n: Double): TFunc
   @JSName("before")
   var before_Original: LodashBefore
   
-  def bind(func: js.Function1[/* repeated */ js.Any, js.Any]): LodashBind1x1
-  def bind(func: js.Function1[/* repeated */ js.Any, js.Any], thisArg: js.Any): js.Function1[/* repeated */ js.Any, js.Any]
-  def bind(func: __, thisArg: js.Any): LodashBind1x2
+  def bind(func: js.Function1[/* repeated */ Any, Any]): LodashBind1x1
+  def bind(func: js.Function1[/* repeated */ Any, Any], thisArg: Any): js.Function1[/* repeated */ Any, Any]
+  def bind(func: __, thisArg: Any): LodashBind1x2
   
   def bindAll(methodNames: Many[java.lang.String]): LodashBindAll1x1
   def bindAll[T](methodNames: Many[java.lang.String], `object`: T): T
@@ -401,7 +403,7 @@ trait LoDashFp extends StObject {
   var bindAll_Original: LodashBindAll
   
   def bindKey(`object`: js.Object): LodashBindKey1x1
-  def bindKey(`object`: js.Object, key: java.lang.String): js.Function1[/* repeated */ js.Any, js.Any]
+  def bindKey(`object`: js.Object, key: java.lang.String): js.Function1[/* repeated */ Any, Any]
   def bindKey(`object`: __, key: java.lang.String): LodashBindKey1x2
   @JSName("bindKey")
   var bindKey_Original: LodashBindKey
@@ -449,7 +451,7 @@ trait LoDashFp extends StObject {
   def cloneDeep[T](value: T): T
   
   def cloneDeepWith[T](customizer: CloneDeepWithCustomizer[T]): LodashCloneDeepWith1x1[T]
-  def cloneDeepWith[T](customizer: CloneDeepWithCustomizer[T], value: T): js.Any
+  def cloneDeepWith[T](customizer: CloneDeepWithCustomizer[T], value: T): Any
   def cloneDeepWith[T](customizer: __, value: T): LodashCloneDeepWith1x2[T]
   @JSName("cloneDeepWith")
   var cloneDeepWith_Original: LodashCloneDeepWith
@@ -470,36 +472,36 @@ trait LoDashFp extends StObject {
   @JSName("clone")
   var clone_Original: LodashClone
   
-  def compact[T](): js.Array[T]
-  def compact[T](array: List[js.UndefOr[T | Null | `false` | _empty | `0`]]): js.Array[T]
+  def compact[T](): js.Array[Exclude[T, js.UndefOr[Null | `false` | _empty | `0`]]]
+  def compact[T](array: List[T]): js.Array[Exclude[T, js.UndefOr[Null | `false` | _empty | `0`]]]
   @JSName("compact")
   var compact_Original: LodashCompact
   
-  def complement[T /* <: js.Array[js.Any] */](predicate: js.Function1[/* args */ T, js.Any]): js.Function1[/* args */ T, Boolean]
+  def complement[T /* <: js.Array[Any] */](predicate: js.Function1[/* args */ T, Any]): js.Function1[/* args */ T, Boolean]
   @JSName("complement")
   var complement_Original: LodashNegate
   
-  def compose(func: (Many[js.Function1[/* repeated */ js.Any, js.Any]])*): js.Function1[/* repeated */ js.Any, js.Any]
-  def compose[A /* <: js.Array[js.Any] */, R1, R2](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* args */ A, R1]): js.Function1[/* args */ A, R2]
-  def compose[A /* <: js.Array[js.Any] */, R1, R2, R3](
+  def compose(func: (Many[js.Function1[/* repeated */ Any, Any]])*): js.Function1[/* repeated */ Any, Any]
+  def compose[A /* <: js.Array[Any] */, R1, R2](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* args */ A, R1]): js.Function1[/* args */ A, R2]
+  def compose[A /* <: js.Array[Any] */, R1, R2, R3](
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R3]
-  def compose[A /* <: js.Array[js.Any] */, R1, R2, R3, R4](
+  def compose[A /* <: js.Array[Any] */, R1, R2, R3, R4](
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R4]
-  def compose[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5](
+  def compose[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5](
     f5: js.Function1[/* a */ R4, R5],
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R5]
-  def compose[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6](
+  def compose[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6](
     f6: js.Function1[/* a */ R5, R6],
     f5: js.Function1[/* a */ R4, R5],
     f4: js.Function1[/* a */ R3, R4],
@@ -507,7 +509,7 @@ trait LoDashFp extends StObject {
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R6]
-  def compose[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6, R7](
+  def compose[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6, R7](
     f7: js.Function1[/* a */ R6, R7],
     f6: js.Function1[/* a */ R5, R6],
     f5: js.Function1[/* a */ R4, R5],
@@ -525,9 +527,11 @@ trait LoDashFp extends StObject {
   @JSName("concat")
   var concat_Original: LodashConcat
   
-  def cond[T, R](pairs: js.Array[CondPair[T, R]]): js.Function1[/* Target */ T, R]
+  def cond[R](pairs: js.Array[CondPairNullary[R]]): js.Function0[R]
   @JSName("cond")
   var cond_Original: LodashCond
+  @JSName("cond")
+  def cond_TR_Function1[T, R](pairs: js.Array[CondPairUnary[T, R]]): js.Function1[/* Target */ T, R]
   
   def conforms[T](source: ConformsPredicateObject[T]): LodashConformsTo1x1[T]
   def conforms[T](source: ConformsPredicateObject[T], `object`: T): Boolean
@@ -585,15 +589,15 @@ trait LoDashFp extends StObject {
   @JSName("create")
   var create_Original: LodashCreate
   
-  def curry(func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
+  def curry(func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any]
   def curry[T1, T2, R](func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): CurriedFunction2[T1, T2, R]
   def curry[T1, T2, T3, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): CurriedFunction3[T1, T2, T3, R]
   def curry[T1, T2, T3, T4, R](func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]): CurriedFunction4[T1, T2, T3, T4, R]
   def curry[T1, T2, T3, T4, T5, R](func: js.Function5[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, /* t5 */ T5, R]): CurriedFunction5[T1, T2, T3, T4, T5, R]
   
   def curryN(arity: Double): LodashCurryN1x1
-  def curryN(arity: Double, func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
-  def curryN(arity: __, func: js.Function1[/* repeated */ js.Any, js.Any]): LodashCurryN6x2
+  def curryN(arity: Double, func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any]
+  def curryN(arity: __, func: js.Function1[/* repeated */ Any, Any]): LodashCurryN6x2
   def curryN[T1, T2, R](arity: Double, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): CurriedFunction2[T1, T2, R]
   def curryN[T1, T2, R](arity: __, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): LodashCurryN2x2[T1, T2, R]
   def curryN[T1, T2, T3, R](arity: Double, func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): CurriedFunction3[T1, T2, T3, R]
@@ -612,15 +616,15 @@ trait LoDashFp extends StObject {
   @JSName("curryN")
   def curryN_T1R_LodashCurryN1x2[T1, R](arity: __, func: js.Function1[/* t1 */ T1, R]): LodashCurryN1x2[T1, R]
   
-  def curryRight(func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
+  def curryRight(func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any]
   def curryRight[T1, T2, R](func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): RightCurriedFunction2[T1, T2, R]
   def curryRight[T1, T2, T3, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): RightCurriedFunction3[T1, T2, T3, R]
   def curryRight[T1, T2, T3, T4, R](func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]): RightCurriedFunction4[T1, T2, T3, T4, R]
   def curryRight[T1, T2, T3, T4, T5, R](func: js.Function5[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, /* t5 */ T5, R]): RightCurriedFunction5[T1, T2, T3, T4, T5, R]
   
   def curryRightN(arity: Double): LodashCurryRightN1x1
-  def curryRightN(arity: Double, func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
-  def curryRightN(arity: __, func: js.Function1[/* repeated */ js.Any, js.Any]): LodashCurryRightN6x2
+  def curryRightN(arity: Double, func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any]
+  def curryRightN(arity: __, func: js.Function1[/* repeated */ Any, Any]): LodashCurryRightN6x2
   def curryRightN[T1, T2, R](arity: Double, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): RightCurriedFunction2[T1, T2, R]
   def curryRightN[T1, T2, R](arity: __, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): LodashCurryRightN2x2[T1, T2, R]
   def curryRightN[T1, T2, T3, R](arity: Double, func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): RightCurriedFunction3[T1, T2, T3, R]
@@ -650,8 +654,8 @@ trait LoDashFp extends StObject {
   def curry_T1R_CurriedFunction1[T1, R](func: js.Function1[/* t1 */ T1, R]): CurriedFunction1[T1, R]
   
   def debounce(wait: Double): LodashDebounce1x1
-  def debounce[T /* <: js.Function1[/* args */ js.Any, js.Any] */](wait: Double, func: T): DebouncedFunc[T]
-  def debounce[T /* <: js.Function1[/* args */ js.Any, js.Any] */](wait: __, func: T): LodashDebounce1x2[T]
+  def debounce[T /* <: js.Function1[/* args */ Any, Any] */](wait: Double, func: T): DebouncedFunc[T]
+  def debounce[T /* <: js.Function1[/* args */ Any, Any] */](wait: __, func: T): LodashDebounce1x2[T]
   @JSName("debounce")
   var debounce_Original: LodashDebounce
   
@@ -678,7 +682,7 @@ trait LoDashFp extends StObject {
   def defaults[TObject](source: __, `object`: TObject): LodashDefaults1x2[TObject]
   def defaults[TObject, TSource](source: TSource, `object`: TObject): TSource & TObject
   
-  def defaultsAll(`object`: js.Array[js.Any]): js.Any
+  def defaultsAll(`object`: js.Array[Any]): Any
   def defaultsAll[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): TSource & TObject
   def defaultsAll[TObject, TSource1, TSource2](`object`: js.Tuple3[TObject, TSource1, TSource2]): TSource2 & TSource1 & TObject
   def defaultsAll[TObject, TSource1, TSource2, TSource3](`object`: js.Tuple4[TObject, TSource1, TSource2, TSource3]): TSource3 & TSource2 & TSource1 & TObject
@@ -688,11 +692,11 @@ trait LoDashFp extends StObject {
   @JSName("defaultsAll")
   def defaultsAll_TObject_TObject[TObject](`object`: js.Array[TObject]): TObject
   
-  def defaultsDeep(sources: js.Any): LodashDefaultsDeep1x1
-  def defaultsDeep(sources: js.Any, `object`: js.Any): js.Any
-  def defaultsDeep(sources: __, `object`: js.Any): LodashDefaultsDeep1x2
+  def defaultsDeep(sources: Any): LodashDefaultsDeep1x1
+  def defaultsDeep(sources: Any, `object`: Any): Any
+  def defaultsDeep(sources: __, `object`: Any): LodashDefaultsDeep1x2
   
-  def defaultsDeepAll(`object`: js.Array[js.Any]): js.Any
+  def defaultsDeepAll(`object`: js.Array[Any]): Any
   @JSName("defaultsDeepAll")
   var defaultsDeepAll_Original: LodashDefaultsDeepAll
   
@@ -702,13 +706,13 @@ trait LoDashFp extends StObject {
   @JSName("defaults")
   var defaults_Original: LodashDefaults
   
-  def defer(func: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): Double
+  def defer(func: js.Function1[/* repeated */ Any, Any], args: Any*): Double
   @JSName("defer")
   var defer_Original: LodashDefer
   
   def delay(wait: Double): LodashDelay1x1
-  def delay(wait: Double, func: js.Function1[/* repeated */ js.Any, js.Any]): Double
-  def delay(wait: __, func: js.Function1[/* repeated */ js.Any, js.Any]): LodashDelay1x2
+  def delay(wait: Double, func: js.Function1[/* repeated */ Any, Any]): Double
+  def delay(wait: __, func: js.Function1[/* repeated */ Any, Any]): LodashDelay1x2
   @JSName("delay")
   var delay_Original: LodashDelay
   
@@ -832,62 +836,75 @@ trait LoDashFp extends StObject {
   @JSName("drop")
   def drop_T_Array[T](n: Double): js.Array[T]
   
-  def each[T](iteratee: js.Function1[/* value */ T, js.Any]): LodashForEach1x1[T]
+  def each[T](iteratee: js.Function1[/* value */ T, Any]): LodashForEach1x1[T]
   def each[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     collection: T
   ): T
-  def each[T](iteratee: js.Function1[/* value */ T, js.Any], collection: js.Array[T]): js.Array[T]
-  def each[T](iteratee: js.Function1[/* value */ T, js.Any], collection: List[T]): List[T]
+  def each[T](iteratee: js.Function1[/* value */ T, Any], collection: js.Array[T]): js.Array[T]
+  def each[T](iteratee: js.Function1[/* value */ T, Any], collection: List[T]): List[T]
   def each[T /* <: js.Object */](iteratee: __): LodashForEach6x2[T]
   def each[T /* <: js.Object */](iteratee: __, collection: T): LodashForEach3x2[T]
   def each[T](iteratee: __, collection: js.Array[T]): LodashForEach1x2[T]
   def each[T](iteratee: __, collection: List[T]): LodashForEach2x2[T]
+  def each[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Null & TList): TList
+  def each[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Unit & TList): TList
+  def each[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: Null & TList): LodashForEach5x2[T, TList]
+  def each[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: Unit & TList): LodashForEach5x2[T, TList]
   
-  def eachRight[T](iteratee: js.Function1[/* value */ T, js.Any]): LodashForEachRight1x1[T]
+  def eachRight[T](iteratee: js.Function1[/* value */ T, Any]): LodashForEachRight1x1[T]
   def eachRight[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     collection: T
   ): T
-  def eachRight[T](iteratee: js.Function1[/* value */ T, js.Any], collection: js.Array[T]): js.Array[T]
-  def eachRight[T](iteratee: js.Function1[/* value */ T, js.Any], collection: List[T]): List[T]
+  def eachRight[T](iteratee: js.Function1[/* value */ T, Any], collection: js.Array[T]): js.Array[T]
+  def eachRight[T](iteratee: js.Function1[/* value */ T, Any], collection: List[T]): List[T]
   def eachRight[T /* <: js.Object */](iteratee: __): LodashForEachRight6x2[T]
   def eachRight[T /* <: js.Object */](iteratee: __, collection: T): LodashForEachRight6x2[T]
   def eachRight[T](iteratee: __, collection: js.Array[T]): LodashForEachRight1x2[T]
   def eachRight[T](iteratee: __, collection: List[T]): LodashForEachRight2x2[T]
+  def eachRight[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Null & TList): TList
+  def eachRight[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Unit & TList): TList
+  def eachRight[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: Unit & TArray): LodashForEachRight4x2[T, TArray]
+  def eachRight[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: Null & TArray): LodashForEachRight4x2[T, TArray]
   @JSName("eachRight")
   var eachRight_Original: LodashForEachRight
   @JSName("eachRight")
-  def `eachRight_TTArray_UnionArrayTNull<undefined>_LodashForEachRight4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: TArray & (js.UndefOr[js.Array[T] | Null])): LodashForEachRight4x2[T, TArray]
+  def `eachRight_TTArray_UnionArrayTNull<undefined>_LodashForEachRight4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: js.Array[T] & TArray): LodashForEachRight4x2[T, TArray]
   @JSName("eachRight")
-  def `eachRight_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](
-    iteratee: js.Function1[/* value */ T, js.Any],
-    collection: TArray & (js.UndefOr[js.Array[T] | Null])
-  ): TArray
+  def `eachRight_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Null & TArray): TArray
   @JSName("eachRight")
-  def `eachRight_TTList_UnionListTNull<undefined>_LodashForEachRight5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: TList & (js.UndefOr[List[T] | Null])): LodashForEachRight5x2[T, TList]
+  def `eachRight_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: js.Array[T] & TArray): TArray
   @JSName("eachRight")
-  def `eachRight_TTList_UnionListTNull<undefined>_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, js.Any], collection: TList & (js.UndefOr[List[T] | Null])): TList
+  def `eachRight_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Unit & TArray): TArray
+  @JSName("eachRight")
+  def `eachRight_TTList_UnionListTNull<undefined>_LodashForEachRight5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: List[T] & TList): LodashForEachRight5x2[T, TList]
+  @JSName("eachRight")
+  def `eachRight_TTList_UnionListTNull<undefined>_LodashForEachRight5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: Unit & TList): LodashForEachRight5x2[T, TList]
+  @JSName("eachRight")
+  def `eachRight_TTList_UnionListTNull<undefined>_LodashForEachRight5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: Null & TList): LodashForEachRight5x2[T, TList]
+  @JSName("eachRight")
+  def `eachRight_TTList_UnionListTNull<undefined>_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: List[T] & TList): TList
   @JSName("eachRight")
   def eachRight_T_Object_LodashForEachRight3x2[T /* <: js.Object */](iteratee: __, collection: T): LodashForEachRight3x2[T]
   @JSName("eachRight")
   def eachRight_T_Object_Union[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ]
   ): js.UndefOr[T | Null]
   @JSName("eachRight")
   def eachRight_T_Object_Union[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     collection: T
   ): js.UndefOr[T | Null]
@@ -895,30 +912,35 @@ trait LoDashFp extends StObject {
   @JSName("each")
   var each_Original: LodashForEach
   @JSName("each")
-  def `each_TTArray_UnionArrayTNull<undefined>_LodashForEach4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: TArray & (js.UndefOr[js.Array[T] | Null])): LodashForEach4x2[T, TArray]
+  def `each_TTArray_UnionArrayTNull<undefined>_LodashForEach4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: Null & TArray): LodashForEach4x2[T, TArray]
   @JSName("each")
-  def `each_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](
-    iteratee: js.Function1[/* value */ T, js.Any],
-    collection: TArray & (js.UndefOr[js.Array[T] | Null])
-  ): TArray
+  def `each_TTArray_UnionArrayTNull<undefined>_LodashForEach4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: js.Array[T] & TArray): LodashForEach4x2[T, TArray]
   @JSName("each")
-  def `each_TTList_UnionListTNull<undefined>_LodashForEach5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: TList & (js.UndefOr[List[T] | Null])): LodashForEach5x2[T, TList]
+  def `each_TTArray_UnionArrayTNull<undefined>_LodashForEach4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: Unit & TArray): LodashForEach4x2[T, TArray]
   @JSName("each")
-  def `each_TTList_UnionListTNull<undefined>_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, js.Any], collection: TList & (js.UndefOr[List[T] | Null])): TList
+  def `each_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Unit & TArray): TArray
+  @JSName("each")
+  def `each_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Null & TArray): TArray
+  @JSName("each")
+  def `each_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: js.Array[T] & TArray): TArray
+  @JSName("each")
+  def `each_TTList_UnionListTNull<undefined>_LodashForEach5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: List[T] & TList): LodashForEach5x2[T, TList]
+  @JSName("each")
+  def `each_TTList_UnionListTNull<undefined>_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: List[T] & TList): TList
   @JSName("each")
   def each_T_Object_LodashForEach6x2[T /* <: js.Object */](iteratee: __, collection: T): LodashForEach6x2[T]
   @JSName("each")
   def each_T_Object_Union[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ]
   ): js.UndefOr[T | Null]
   @JSName("each")
   def each_T_Object_Union[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     collection: T
   ): js.UndefOr[T | Null]
@@ -929,11 +951,11 @@ trait LoDashFp extends StObject {
   @JSName("endsWith")
   var endsWith_Original: LodashEndsWith
   
-  def entries(`object`: js.Object): js.Array[js.Tuple2[java.lang.String, js.Any]]
+  def entries(`object`: js.Object): js.Array[js.Tuple2[java.lang.String, Any]]
   def entries[T](`object`: Dictionary[T]): js.Array[js.Tuple2[java.lang.String, T]]
   def entries[T](`object`: NumericDictionary[T]): js.Array[js.Tuple2[java.lang.String, T]]
   
-  def entriesIn(`object`: js.Object): js.Array[js.Tuple2[java.lang.String, js.Any]]
+  def entriesIn(`object`: js.Object): js.Array[js.Tuple2[java.lang.String, Any]]
   def entriesIn[T](`object`: Dictionary[T]): js.Array[js.Tuple2[java.lang.String, T]]
   def entriesIn[T](`object`: NumericDictionary[T]): js.Array[js.Tuple2[java.lang.String, T]]
   @JSName("entriesIn")
@@ -942,15 +964,13 @@ trait LoDashFp extends StObject {
   @JSName("entries")
   var entries_Original: LodashToPairs
   
-  def eq(value: js.Any): LodashEq1x1
-  def eq(value: js.Any, other: js.Any): Boolean
-  def eq(value: __, other: js.Any): LodashEq1x2
+  def eq(value: Any, other: Any): Boolean
+  def eq(value: __, other: Any): LodashEq1x2
   @JSName("eq")
   var eq_Original: LodashEq
   
-  def equals(value: js.Any): LodashIsEqual1x1
-  def equals(value: js.Any, other: js.Any): Boolean
-  def equals(value: __, other: js.Any): LodashIsEqual1x2
+  def equals(value: Any, other: Any): Boolean
+  def equals(value: __, other: Any): LodashIsEqual1x2
   @JSName("equals")
   var equals_Original: LodashIsEqual
   
@@ -993,15 +1013,15 @@ trait LoDashFp extends StObject {
   def extend[TSource](`object`: __, source: TSource): LodashExtend1x2[TSource]
   def extend[TObject, TSource](`object`: TObject, source: TSource): TObject & TSource
   
-  def extendAll[TResult](`object`: js.Array[js.Any]): TResult
+  def extendAll[TResult](`object`: js.Array[Any]): TResult
   def extendAll[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): TObject & TSource
   def extendAll[TObject, TSource1, TSource2](`object`: js.Tuple3[TObject, TSource1, TSource2]): TObject & TSource1 & TSource2
   def extendAll[TObject, TSource1, TSource2, TSource3](`object`: js.Tuple4[TObject, TSource1, TSource2, TSource3]): TObject & TSource1 & TSource2 & TSource3
   def extendAll[TObject, TSource1, TSource2, TSource3, TSource4](`object`: js.Tuple5[TObject, TSource1, TSource2, TSource3, TSource4]): TObject & TSource1 & TSource2 & TSource3 & TSource4
   
   def extendAllWith(customizer: AssignCustomizer): LodashExtendAllWith1x1
-  def extendAllWith(customizer: AssignCustomizer, args: js.Array[js.Any]): js.Any
-  def extendAllWith(customizer: __, args: js.Array[js.Any]): LodashExtendAllWith1x2
+  def extendAllWith(customizer: AssignCustomizer, args: js.Array[Any]): Any
+  def extendAllWith(customizer: __, args: js.Array[Any]): LodashExtendAllWith1x2
   @JSName("extendAllWith")
   var extendAllWith_Original: LodashExtendAllWith
   
@@ -1561,8 +1581,8 @@ trait LoDashFp extends StObject {
   @JSName("first")
   var first_Original: LodashHead
   
-  def flatMap(iteratee: java.lang.String): js.Array[js.Any]
-  def flatMap(iteratee: java.lang.String, collection: js.Object): js.Array[js.Any]
+  def flatMap(iteratee: java.lang.String): js.Array[Any]
+  def flatMap(iteratee: java.lang.String, collection: js.Object): js.Array[Any]
   def flatMap(iteratee: js.Object): js.Array[Boolean]
   def flatMap(iteratee: js.Object, collection: js.Object): js.Array[Boolean]
   def flatMap(iteratee: __): LodashFlatMap3x2
@@ -1584,8 +1604,8 @@ trait LoDashFp extends StObject {
   ): js.Array[TResult]
   def flatMap[T, TResult](iteratee: js.Function1[/* value */ T, Many[TResult]], collection: List[T]): js.Array[TResult]
   
-  def flatMapDeep(iteratee: java.lang.String): js.Array[js.Any]
-  def flatMapDeep(iteratee: java.lang.String, collection: js.Object): js.Array[js.Any]
+  def flatMapDeep(iteratee: java.lang.String): js.Array[Any]
+  def flatMapDeep(iteratee: java.lang.String, collection: js.Object): js.Array[Any]
   def flatMapDeep(iteratee: js.Object): LodashFlatMapDeep4x1
   def flatMapDeep(iteratee: js.Object, collection: js.Object): js.Array[Boolean]
   def flatMapDeep(iteratee: __): LodashFlatMapDeep3x2
@@ -1633,7 +1653,7 @@ trait LoDashFp extends StObject {
   
   def flatMapDepth(iteratee: java.lang.String): LodashFlatMapDepth3x1
   def flatMapDepth(iteratee: java.lang.String, depth: Double): LodashFlatMapDepth3x3
-  def flatMapDepth(iteratee: java.lang.String, depth: Double, collection: js.Object): js.Array[js.Any]
+  def flatMapDepth(iteratee: java.lang.String, depth: Double, collection: js.Object): js.Array[Any]
   def flatMapDepth(iteratee: java.lang.String, depth: __): LodashFlatMapDepth3x5
   def flatMapDepth(iteratee: java.lang.String, depth: __, collection: js.Object): LodashFlatMapDepth3x5
   def flatMapDepth(iteratee: js.Object): LodashFlatMapDepth4x1
@@ -1688,7 +1708,7 @@ trait LoDashFp extends StObject {
     collection: List[T]
   ): LodashFlatMapDepth1x5[TResult]
   @JSName("flatMapDepth")
-  def flatMapDepth_Array(iteratee: java.lang.String, depth: Double): js.Array[js.Any]
+  def flatMapDepth_Array(iteratee: java.lang.String, depth: Double): js.Array[Any]
   @JSName("flatMapDepth")
   def flatMapDepth_Array(iteratee: js.Object, depth: Double): js.Array[Boolean]
   @JSName("flatMapDepth")
@@ -1776,7 +1796,7 @@ trait LoDashFp extends StObject {
   @JSName("flatten")
   var flatten_Original: LodashFlatten
   
-  def flip[T /* <: js.Function1[/* args */ js.Any, js.Any] */](func: T): T
+  def flip[T /* <: js.Function1[/* args */ Any, Any] */](func: T): T
   @JSName("flip")
   var flip_Original: LodashFlip
   
@@ -1784,27 +1804,27 @@ trait LoDashFp extends StObject {
   @JSName("floor")
   var floor_Original: LodashFloor
   
-  def flow(func: (Many[js.Function1[/* repeated */ js.Any, js.Any]])*): js.Function1[/* repeated */ js.Any, js.Any]
-  def flow[A /* <: js.Array[js.Any] */, R1, R2](f1: js.Function1[/* args */ A, R1], f2: js.Function1[/* a */ R1, R2]): js.Function1[/* args */ A, R2]
-  def flow[A /* <: js.Array[js.Any] */, R1, R2, R3](
+  def flow(func: (Many[js.Function1[/* repeated */ Any, Any]])*): js.Function1[/* repeated */ Any, Any]
+  def flow[A /* <: js.Array[Any] */, R1, R2](f1: js.Function1[/* args */ A, R1], f2: js.Function1[/* a */ R1, R2]): js.Function1[/* args */ A, R2]
+  def flow[A /* <: js.Array[Any] */, R1, R2, R3](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3]
   ): js.Function1[/* args */ A, R3]
-  def flow[A /* <: js.Array[js.Any] */, R1, R2, R3, R4](
+  def flow[A /* <: js.Array[Any] */, R1, R2, R3, R4](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4]
   ): js.Function1[/* args */ A, R4]
-  def flow[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5](
+  def flow[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4],
     f5: js.Function1[/* a */ R4, R5]
   ): js.Function1[/* args */ A, R5]
-  def flow[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6](
+  def flow[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -1812,7 +1832,7 @@ trait LoDashFp extends StObject {
     f5: js.Function1[/* a */ R4, R5],
     f6: js.Function1[/* a */ R5, R6]
   ): js.Function1[/* args */ A, R6]
-  def flow[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6, R7](
+  def flow[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -1821,7 +1841,7 @@ trait LoDashFp extends StObject {
     f6: js.Function1[/* a */ R5, R6],
     f7: js.Function1[/* a */ R6, R7]
   ): js.Function1[/* args */ A, R7]
-  def flow[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6, R7](
+  def flow[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -1829,30 +1849,30 @@ trait LoDashFp extends StObject {
     f5: js.Function1[/* a */ R4, R5],
     f6: js.Function1[/* a */ R5, R6],
     f7: js.Function1[/* a */ R6, R7],
-    func: (Many[js.Function1[/* a */ js.Any, js.Any]])*
-  ): js.Function1[/* args */ A, js.Any]
+    func: (Many[js.Function1[/* a */ Any, Any]])*
+  ): js.Function1[/* args */ A, Any]
   
-  def flowRight(func: (Many[js.Function1[/* repeated */ js.Any, js.Any]])*): js.Function1[/* repeated */ js.Any, js.Any]
-  def flowRight[A /* <: js.Array[js.Any] */, R1, R2](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* args */ A, R1]): js.Function1[/* args */ A, R2]
-  def flowRight[A /* <: js.Array[js.Any] */, R1, R2, R3](
+  def flowRight(func: (Many[js.Function1[/* repeated */ Any, Any]])*): js.Function1[/* repeated */ Any, Any]
+  def flowRight[A /* <: js.Array[Any] */, R1, R2](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* args */ A, R1]): js.Function1[/* args */ A, R2]
+  def flowRight[A /* <: js.Array[Any] */, R1, R2, R3](
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R3]
-  def flowRight[A /* <: js.Array[js.Any] */, R1, R2, R3, R4](
+  def flowRight[A /* <: js.Array[Any] */, R1, R2, R3, R4](
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R4]
-  def flowRight[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5](
+  def flowRight[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5](
     f5: js.Function1[/* a */ R4, R5],
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R5]
-  def flowRight[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6](
+  def flowRight[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6](
     f6: js.Function1[/* a */ R5, R6],
     f5: js.Function1[/* a */ R4, R5],
     f4: js.Function1[/* a */ R3, R4],
@@ -1860,7 +1880,7 @@ trait LoDashFp extends StObject {
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* args */ A, R1]
   ): js.Function1[/* args */ A, R6]
-  def flowRight[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6, R7](
+  def flowRight[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6, R7](
     f7: js.Function1[/* a */ R6, R7],
     f6: js.Function1[/* a */ R5, R6],
     f5: js.Function1[/* a */ R4, R5],
@@ -1875,62 +1895,75 @@ trait LoDashFp extends StObject {
   @JSName("flow")
   var flow_Original: LodashFlow
   
-  def forEach[T](iteratee: js.Function1[/* value */ T, js.Any]): LodashForEach1x1[T]
+  def forEach[T](iteratee: js.Function1[/* value */ T, Any]): LodashForEach1x1[T]
   def forEach[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     collection: T
   ): T
-  def forEach[T](iteratee: js.Function1[/* value */ T, js.Any], collection: js.Array[T]): js.Array[T]
-  def forEach[T](iteratee: js.Function1[/* value */ T, js.Any], collection: List[T]): List[T]
+  def forEach[T](iteratee: js.Function1[/* value */ T, Any], collection: js.Array[T]): js.Array[T]
+  def forEach[T](iteratee: js.Function1[/* value */ T, Any], collection: List[T]): List[T]
   def forEach[T /* <: js.Object */](iteratee: __): LodashForEach6x2[T]
   def forEach[T /* <: js.Object */](iteratee: __, collection: T): LodashForEach3x2[T]
   def forEach[T](iteratee: __, collection: js.Array[T]): LodashForEach1x2[T]
   def forEach[T](iteratee: __, collection: List[T]): LodashForEach2x2[T]
+  def forEach[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Null & TList): TList
+  def forEach[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Unit & TList): TList
+  def forEach[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: Unit & TList): LodashForEach5x2[T, TList]
+  def forEach[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: Null & TList): LodashForEach5x2[T, TList]
   
-  def forEachRight[T](iteratee: js.Function1[/* value */ T, js.Any]): LodashForEachRight1x1[T]
+  def forEachRight[T](iteratee: js.Function1[/* value */ T, Any]): LodashForEachRight1x1[T]
   def forEachRight[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     collection: T
   ): T
-  def forEachRight[T](iteratee: js.Function1[/* value */ T, js.Any], collection: js.Array[T]): js.Array[T]
-  def forEachRight[T](iteratee: js.Function1[/* value */ T, js.Any], collection: List[T]): List[T]
+  def forEachRight[T](iteratee: js.Function1[/* value */ T, Any], collection: js.Array[T]): js.Array[T]
+  def forEachRight[T](iteratee: js.Function1[/* value */ T, Any], collection: List[T]): List[T]
   def forEachRight[T /* <: js.Object */](iteratee: __): LodashForEachRight6x2[T]
   def forEachRight[T /* <: js.Object */](iteratee: __, collection: T): LodashForEachRight6x2[T]
   def forEachRight[T](iteratee: __, collection: js.Array[T]): LodashForEachRight1x2[T]
   def forEachRight[T](iteratee: __, collection: List[T]): LodashForEachRight2x2[T]
+  def forEachRight[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Unit & TList): TList
+  def forEachRight[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Null & TList): TList
+  def forEachRight[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: Null & TArray): LodashForEachRight4x2[T, TArray]
+  def forEachRight[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: Unit & TArray): LodashForEachRight4x2[T, TArray]
   @JSName("forEachRight")
   var forEachRight_Original: LodashForEachRight
   @JSName("forEachRight")
-  def `forEachRight_TTArray_UnionArrayTNull<undefined>_LodashForEachRight4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: TArray & (js.UndefOr[js.Array[T] | Null])): LodashForEachRight4x2[T, TArray]
+  def `forEachRight_TTArray_UnionArrayTNull<undefined>_LodashForEachRight4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: js.Array[T] & TArray): LodashForEachRight4x2[T, TArray]
   @JSName("forEachRight")
-  def `forEachRight_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](
-    iteratee: js.Function1[/* value */ T, js.Any],
-    collection: TArray & (js.UndefOr[js.Array[T] | Null])
-  ): TArray
+  def `forEachRight_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Null & TArray): TArray
   @JSName("forEachRight")
-  def `forEachRight_TTList_UnionListTNull<undefined>_LodashForEachRight5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: TList & (js.UndefOr[List[T] | Null])): LodashForEachRight5x2[T, TList]
+  def `forEachRight_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Unit & TArray): TArray
   @JSName("forEachRight")
-  def `forEachRight_TTList_UnionListTNull<undefined>_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, js.Any], collection: TList & (js.UndefOr[List[T] | Null])): TList
+  def `forEachRight_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: js.Array[T] & TArray): TArray
+  @JSName("forEachRight")
+  def `forEachRight_TTList_UnionListTNull<undefined>_LodashForEachRight5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: Null & TList): LodashForEachRight5x2[T, TList]
+  @JSName("forEachRight")
+  def `forEachRight_TTList_UnionListTNull<undefined>_LodashForEachRight5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: List[T] & TList): LodashForEachRight5x2[T, TList]
+  @JSName("forEachRight")
+  def `forEachRight_TTList_UnionListTNull<undefined>_LodashForEachRight5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: Unit & TList): LodashForEachRight5x2[T, TList]
+  @JSName("forEachRight")
+  def `forEachRight_TTList_UnionListTNull<undefined>_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: List[T] & TList): TList
   @JSName("forEachRight")
   def forEachRight_T_Object_LodashForEachRight3x2[T /* <: js.Object */](iteratee: __, collection: T): LodashForEachRight3x2[T]
   @JSName("forEachRight")
   def forEachRight_T_Object_Union[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ]
   ): js.UndefOr[T | Null]
   @JSName("forEachRight")
   def forEachRight_T_Object_Union[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     collection: T
   ): js.UndefOr[T | Null]
@@ -1938,30 +1971,35 @@ trait LoDashFp extends StObject {
   @JSName("forEach")
   var forEach_Original: LodashForEach
   @JSName("forEach")
-  def `forEach_TTArray_UnionArrayTNull<undefined>_LodashForEach4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: TArray & (js.UndefOr[js.Array[T] | Null])): LodashForEach4x2[T, TArray]
+  def `forEach_TTArray_UnionArrayTNull<undefined>_LodashForEach4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: Unit & TArray): LodashForEach4x2[T, TArray]
   @JSName("forEach")
-  def `forEach_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](
-    iteratee: js.Function1[/* value */ T, js.Any],
-    collection: TArray & (js.UndefOr[js.Array[T] | Null])
-  ): TArray
+  def `forEach_TTArray_UnionArrayTNull<undefined>_LodashForEach4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: js.Array[T] & TArray): LodashForEach4x2[T, TArray]
   @JSName("forEach")
-  def `forEach_TTList_UnionListTNull<undefined>_LodashForEach5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: TList & (js.UndefOr[List[T] | Null])): LodashForEach5x2[T, TList]
+  def `forEach_TTArray_UnionArrayTNull<undefined>_LodashForEach4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: __, collection: Null & TArray): LodashForEach4x2[T, TArray]
   @JSName("forEach")
-  def `forEach_TTList_UnionListTNull<undefined>_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, js.Any], collection: TList & (js.UndefOr[List[T] | Null])): TList
+  def `forEach_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Null & TArray): TArray
+  @JSName("forEach")
+  def `forEach_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: js.Array[T] & TArray): TArray
+  @JSName("forEach")
+  def `forEach_TTArray_UnionArrayTNull<undefined>_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: Unit & TArray): TArray
+  @JSName("forEach")
+  def `forEach_TTList_UnionListTNull<undefined>_LodashForEach5x2`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: __, collection: List[T] & TList): LodashForEach5x2[T, TList]
+  @JSName("forEach")
+  def `forEach_TTList_UnionListTNull<undefined>_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](iteratee: js.Function1[/* value */ T, Any], collection: List[T] & TList): TList
   @JSName("forEach")
   def forEach_T_Object_LodashForEach6x2[T /* <: js.Object */](iteratee: __, collection: T): LodashForEach6x2[T]
   @JSName("forEach")
   def forEach_T_Object_Union[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ]
   ): js.UndefOr[T | Null]
   @JSName("forEach")
   def forEach_T_Object_Union[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     collection: T
   ): js.UndefOr[T | Null]
@@ -1969,13 +2007,13 @@ trait LoDashFp extends StObject {
   def forIn[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ]
   ): js.UndefOr[T | Null]
   def forIn[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     `object`: T
   ): js.UndefOr[T | Null]
@@ -1985,13 +2023,13 @@ trait LoDashFp extends StObject {
   def forInRight[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ]
   ): js.UndefOr[T | Null]
   def forInRight[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     `object`: T
   ): js.UndefOr[T | Null]
@@ -2000,14 +2038,14 @@ trait LoDashFp extends StObject {
   @JSName("forInRight")
   var forInRight_Original: LodashForInRight
   @JSName("forInRight")
-  def forInRight_T_LodashForInRight1x1[T](iteratee: js.Function1[/* value */ T, js.Any]): LodashForInRight1x1[T]
+  def forInRight_T_LodashForInRight1x1[T](iteratee: js.Function1[/* value */ T, Any]): LodashForInRight1x1[T]
   @JSName("forInRight")
   def forInRight_T_LodashForInRight1x2[T](iteratee: __, `object`: T): LodashForInRight1x2[T]
   @JSName("forInRight")
   def forInRight_T_T[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     `object`: T
   ): T
@@ -2015,14 +2053,14 @@ trait LoDashFp extends StObject {
   @JSName("forIn")
   var forIn_Original: LodashForIn
   @JSName("forIn")
-  def forIn_T_LodashForIn1x1[T](iteratee: js.Function1[/* value */ T, js.Any]): LodashForIn1x1[T]
+  def forIn_T_LodashForIn1x1[T](iteratee: js.Function1[/* value */ T, Any]): LodashForIn1x1[T]
   @JSName("forIn")
   def forIn_T_LodashForIn2x2[T](iteratee: __, `object`: T): LodashForIn2x2[T]
   @JSName("forIn")
   def forIn_T_T[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     `object`: T
   ): T
@@ -2030,13 +2068,13 @@ trait LoDashFp extends StObject {
   def forOwn[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ]
   ): js.UndefOr[T | Null]
   def forOwn[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     `object`: T
   ): js.UndefOr[T | Null]
@@ -2046,13 +2084,13 @@ trait LoDashFp extends StObject {
   def forOwnRight[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ]
   ): js.UndefOr[T | Null]
   def forOwnRight[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     `object`: T
   ): js.UndefOr[T | Null]
@@ -2061,14 +2099,14 @@ trait LoDashFp extends StObject {
   @JSName("forOwnRight")
   var forOwnRight_Original: LodashForOwnRight
   @JSName("forOwnRight")
-  def forOwnRight_T_LodashForOwnRight1x1[T](iteratee: js.Function1[/* value */ T, js.Any]): LodashForOwnRight1x1[T]
+  def forOwnRight_T_LodashForOwnRight1x1[T](iteratee: js.Function1[/* value */ T, Any]): LodashForOwnRight1x1[T]
   @JSName("forOwnRight")
   def forOwnRight_T_LodashForOwnRight1x2[T](iteratee: __, `object`: T): LodashForOwnRight1x2[T]
   @JSName("forOwnRight")
   def forOwnRight_T_T[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     `object`: T
   ): T
@@ -2076,20 +2114,20 @@ trait LoDashFp extends StObject {
   @JSName("forOwn")
   var forOwn_Original: LodashForOwn
   @JSName("forOwn")
-  def forOwn_T_LodashForOwn1x1[T](iteratee: js.Function1[/* value */ T, js.Any]): LodashForOwn1x1[T]
+  def forOwn_T_LodashForOwn1x1[T](iteratee: js.Function1[/* value */ T, Any]): LodashForOwn1x1[T]
   @JSName("forOwn")
   def forOwn_T_LodashForOwn1x2[T](iteratee: __, `object`: T): LodashForOwn1x2[T]
   @JSName("forOwn")
   def forOwn_T_T[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     `object`: T
   ): T
   
-  def fromPairs(): Dictionary[js.Any]
-  def fromPairs(pairs: List[js.Array[js.Any]]): Dictionary[js.Any]
+  def fromPairs(): Dictionary[Any]
+  def fromPairs(pairs: List[js.Array[Any]]): Dictionary[Any]
   @JSName("fromPairs")
   var fromPairs_Original: LodashFromPairs
   @JSName("fromPairs")
@@ -2097,9 +2135,9 @@ trait LoDashFp extends StObject {
   @JSName("fromPairs")
   def fromPairs_T[T](pairs: List[js.Tuple2[PropertyName, T]]): Dictionary[T]
   
-  def functions(`object`: js.Any): js.Array[java.lang.String]
+  def functions(`object`: Any): js.Array[java.lang.String]
   
-  def functionsIn(`object`: js.Any): js.Array[java.lang.String]
+  def functionsIn(`object`: Any): js.Array[java.lang.String]
   @JSName("functionsIn")
   var functionsIn_Original: LodashFunctionsIn
   
@@ -2108,13 +2146,11 @@ trait LoDashFp extends StObject {
   
   def get(path: Double): LodashGet9x1
   def get(path: PropertyPath): LodashGet11x1
-  def get(path: PropertyPath, `object`: js.Any): js.Any
+  def get(path: PropertyPath, `object`: Any): Any
   def get(path: __): LodashGet11x2
-  def get(path: __, `object`: js.Any): LodashGet12x2
+  def get(path: __, `object`: Any): LodashGet12x2
   def get[T](path: Double, `object`: NumericDictionary[T]): js.UndefOr[T]
-  def get[TObject /* <: js.Object */](path: __, `object`: TObject): LodashGet1x2[TObject]
   def get[T](path: __, `object`: NumericDictionary[T]): LodashGet10x2[T]
-  def get[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   def get[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey]): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ]
@@ -2130,32 +2166,23 @@ trait LoDashFp extends StObject {
   ]
   def get[TObject /* <: js.Object */, TKey1 /* <: /* keyof TObject */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
   
-  def getOr(defaultValue: js.Any): LodashGetOr7x1
-  def getOr(defaultValue: js.Any, path: PropertyPath): LodashGetOr7x3
-  def getOr(defaultValue: js.Any, path: PropertyPath, `object`: js.Any): js.Any
-  def getOr(defaultValue: js.Any, path: __, `object`: js.Any): LodashGetOr7x5
+  def getOr(defaultValue: Any): LodashGetOr7x1
+  def getOr(defaultValue: Any, path: PropertyPath): LodashGetOr7x3
+  def getOr(defaultValue: Any, path: PropertyPath, `object`: Any): Any
+  def getOr(defaultValue: Any, path: __, `object`: Any): LodashGetOr7x5
   def getOr(defaultValue: __, path: Double): LodashGetOr5x2
   def getOr(defaultValue: __, path: PropertyPath): LodashGetOr6x6
-  def getOr(defaultValue: __, path: PropertyPath, `object`: js.Any): LodashGetOr7x6
+  def getOr(defaultValue: __, path: PropertyPath, `object`: Any): LodashGetOr7x6
   def getOr(defaultValue: __, path: __): LodashGetOr6x4
-  def getOr(defaultValue: __, path: __, `object`: js.Any): LodashGetOr7x4
-  def getOr[TDefault](defaultValue: TDefault): LodashGetOr1x1[TDefault]
+  def getOr(defaultValue: __, path: __, `object`: Any): LodashGetOr7x4
   def getOr[TDefault](defaultValue: TDefault, path: Double): LodashGetOr5x3[TDefault]
-  def getOr[TDefault](defaultValue: TDefault, path: PropertyPath): LodashGetOr6x3[TDefault]
   def getOr[TDefault](defaultValue: TDefault, path: __): LodashGetOr6x5[TDefault]
   def getOr[T](defaultValue: __, path: Double, `object`: NumericDictionary[T]): LodashGetOr5x6[T]
-  def getOr[TObject /* <: js.Object */](defaultValue: __, path: __, `object`: TObject): LodashGetOr1x4[TObject]
   def getOr[T](defaultValue: __, path: __, `object`: NumericDictionary[T]): LodashGetOr5x4[T]
   def getOr[T, TDefault](defaultValue: TDefault, path: Double, `object`: NumericDictionary[T]): T | TDefault
-  def getOr[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: __, `object`: TObject): LodashGetOr1x5[TObject, TDefault]
   def getOr[T, TDefault](defaultValue: TDefault, path: __, `object`: NumericDictionary[T]): LodashGetOr5x5[T, TDefault]
-  def getOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey, `object`: TObject): LodashGetOr1x6[TObject, TKey]
   def getOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: js.Array[TKey]): LodashGetOr1x6[TObject, TKey]
   def getOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: js.Array[TKey], `object`: TObject): LodashGetOr1x6[TObject, TKey]
-  def getOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (Exclude[
-    /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
-    Unit
-  ]) | TDefault
   def getOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
     Unit
@@ -2193,9 +2220,15 @@ trait LoDashFp extends StObject {
   @JSName("getOr")
   var getOr_Original: LodashGetOr
   @JSName("getOr")
+  def getOr_TDefault_LodashGetOr1x1[TDefault](defaultValue: TDefault): LodashGetOr1x1[TDefault]
+  @JSName("getOr")
+  def getOr_TDefault_LodashGetOr6x3[TDefault](defaultValue: TDefault, path: PropertyPath): LodashGetOr6x3[TDefault]
+  @JSName("getOr")
   def getOr_TDefault_TDefault[TDefault](defaultValue: TDefault, path: PropertyPath): TDefault
   @JSName("getOr")
   def getOr_TObject_ObjectTDefault_LodashGetOr1x5[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: __): LodashGetOr1x5[TObject, TDefault]
+  @JSName("getOr")
+  def getOr_TObject_ObjectTDefault_LodashGetOr1x5[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: __, `object`: TObject): LodashGetOr1x5[TObject, TDefault]
   @JSName("getOr")
   def getOr_TObject_ObjectTKey1_StringTKey2_AnyTDefault_Union[TObject /* <: js.Object */, TKey1 /* <: /* keyof TObject */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2]): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
@@ -2224,13 +2257,22 @@ trait LoDashFp extends StObject {
     Unit
   ]) | TDefault
   @JSName("getOr")
+  def getOr_TObject_ObjectTKey_StringTDefault_Union[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
+    Unit
+  ]) | TDefault
+  @JSName("getOr")
   def getOr_TObject_ObjectTKey_String_LodashGetOr1x2[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey): LodashGetOr1x2[TObject, TKey]
   @JSName("getOr")
   def getOr_TObject_ObjectTKey_String_LodashGetOr1x2[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: js.Array[TKey]): LodashGetOr1x2[TObject, TKey]
   @JSName("getOr")
   def getOr_TObject_ObjectTKey_String_LodashGetOr1x6[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey): LodashGetOr1x6[TObject, TKey]
   @JSName("getOr")
+  def getOr_TObject_ObjectTKey_String_LodashGetOr1x6[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey, `object`: TObject): LodashGetOr1x6[TObject, TKey]
+  @JSName("getOr")
   def getOr_TObject_Object_LodashGetOr1x4[TObject /* <: js.Object */](defaultValue: __, path: __): LodashGetOr1x4[TObject]
+  @JSName("getOr")
+  def getOr_TObject_Object_LodashGetOr1x4[TObject /* <: js.Object */](defaultValue: __, path: __, `object`: TObject): LodashGetOr1x4[TObject]
   @JSName("getOr")
   def getOr_TTDefault_LodashGetOr5x5[T, TDefault](defaultValue: TDefault, path: __): LodashGetOr5x5[T, TDefault]
   @JSName("getOr")
@@ -2263,6 +2305,8 @@ trait LoDashFp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
   ]
   @JSName("get")
+  def get_TObject_ObjectTKey_String_Any[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
+  @JSName("get")
   def get_TObject_ObjectTKey_String_LodashGet1x1[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey): LodashGet1x1[TObject, TKey]
   @JSName("get")
   def get_TObject_ObjectTKey_String_LodashGet1x1[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey]): LodashGet1x1[TObject, TKey]
@@ -2278,6 +2322,8 @@ trait LoDashFp extends StObject {
   def get_TObject_ObjectTKey_String_Union[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ]
+  @JSName("get")
+  def get_TObject_Object_LodashGet1x2[TObject /* <: js.Object */](path: __, `object`: TObject): LodashGet1x2[TObject]
   @JSName("get")
   def get_TObject_Object_LodashGet2x2[TObject /* <: js.Object */](path: __): LodashGet2x2[TObject]
   @JSName("get")
@@ -2325,15 +2371,15 @@ trait LoDashFp extends StObject {
     ]
   ]
   
-  def gt(value: js.Any): LodashGt1x1
-  def gt(value: js.Any, other: js.Any): Boolean
-  def gt(value: __, other: js.Any): LodashGt1x2
+  def gt(value: Any): LodashGt1x1
+  def gt(value: Any, other: Any): Boolean
+  def gt(value: __, other: Any): LodashGt1x2
   @JSName("gt")
   var gt_Original: LodashGt
   
-  def gte(value: js.Any): LodashGte1x1
-  def gte(value: js.Any, other: js.Any): Boolean
-  def gte(value: __, other: js.Any): LodashGte1x2
+  def gte(value: Any): LodashGte1x1
+  def gte(value: Any, other: Any): Boolean
+  def gte(value: __, other: Any): LodashGte1x2
   @JSName("gte")
   var gte_Original: LodashGte
   
@@ -2355,9 +2401,9 @@ trait LoDashFp extends StObject {
   @JSName("head")
   var head_Original: LodashHead
   
-  def identical(value: js.Any): LodashEq1x1
-  def identical(value: js.Any, other: js.Any): Boolean
-  def identical(value: __, other: js.Any): LodashEq1x2
+  def identical(value: Any): LodashEq1x1
+  def identical(value: Any, other: Any): Boolean
+  def identical(value: __, other: Any): LodashEq1x2
   @JSName("identical")
   var identical_Original: LodashEq
   
@@ -2557,153 +2603,163 @@ trait LoDashFp extends StObject {
   var invert_Original: LodashInvert
   
   def invoke(path: PropertyPath): LodashInvoke1x1
-  def invoke(path: PropertyPath, `object`: js.Any): js.Any
-  def invoke(path: __, `object`: js.Any): LodashInvoke1x2
+  def invoke(path: PropertyPath, `object`: Any): Any
+  def invoke(path: __, `object`: Any): LodashInvoke1x2
   
   def invokeArgs(path: PropertyPath): LodashInvokeArgs1x1
-  def invokeArgs(path: PropertyPath, args: js.Array[js.Any]): LodashInvokeArgs1x3
-  def invokeArgs(path: PropertyPath, args: js.Array[js.Any], `object`: js.Any): js.Any
-  def invokeArgs(path: PropertyPath, args: __, `object`: js.Any): LodashInvokeArgs1x5
-  def invokeArgs(path: __, args: js.Array[js.Any]): LodashInvokeArgs1x2
-  def invokeArgs(path: __, args: js.Array[js.Any], `object`: js.Any): LodashInvokeArgs1x6
-  def invokeArgs(path: __, args: __, `object`: js.Any): LodashInvokeArgs1x4
+  def invokeArgs(path: PropertyPath, args: js.Array[Any]): LodashInvokeArgs1x3
+  def invokeArgs(path: PropertyPath, args: js.Array[Any], `object`: Any): Any
+  def invokeArgs(path: PropertyPath, args: __, `object`: Any): LodashInvokeArgs1x5
+  def invokeArgs(path: __, args: js.Array[Any]): LodashInvokeArgs1x2
+  def invokeArgs(path: __, args: js.Array[Any], `object`: Any): LodashInvokeArgs1x6
+  def invokeArgs(path: __, args: __, `object`: Any): LodashInvokeArgs1x4
   
-  def invokeArgsMap(methodNameOrMethod: __, args: js.Array[js.Any]): LodashInvokeArgsMap1x6
-  def invokeArgsMap(methodNameOrMethod: __, args: js.Array[js.Any], collection: js.Object): LodashInvokeArgsMap1x6
+  def invokeArgsMap(methodNameOrMethod: __, args: js.Array[Any]): LodashInvokeArgsMap1x6
+  def invokeArgsMap(methodNameOrMethod: __, args: js.Array[Any], collection: js.Object): LodashInvokeArgsMap1x6
   def invokeArgsMap(methodNameOrMethod: __, args: __): LodashInvokeArgsMap1x4
   def invokeArgsMap(methodNameOrMethod: __, args: __, collection: js.Object): LodashInvokeArgsMap1x4
   def invokeArgsMap(methodName: java.lang.String): LodashInvokeArgsMap1x1
-  def invokeArgsMap(methodName: java.lang.String, args: js.Array[js.Any]): LodashInvokeArgsMap1x3
-  def invokeArgsMap(methodName: java.lang.String, args: js.Array[js.Any], collection: js.Object): js.Array[js.Any]
+  def invokeArgsMap(methodName: java.lang.String, args: js.Array[Any]): LodashInvokeArgsMap1x3
+  def invokeArgsMap(methodName: java.lang.String, args: js.Array[Any], collection: js.Object): js.Array[Any]
   def invokeArgsMap(methodName: java.lang.String, args: __): LodashInvokeArgsMap1x5
   def invokeArgsMap(methodName: java.lang.String, args: __, collection: js.Object): LodashInvokeArgsMap1x5
-  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult]): LodashInvokeArgsMap2x1[TResult]
-  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: js.Array[js.Any]): js.Array[TResult]
-  def invokeArgsMap[TResult](
-    method: js.Function1[/* repeated */ js.Any, TResult],
-    args: js.Array[js.Any],
-    collection: js.Object
-  ): js.Array[TResult]
-  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: __): LodashInvokeArgsMap2x5[TResult]
-  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: __, collection: js.Object): LodashInvokeArgsMap2x5[TResult]
+  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ Any, TResult]): LodashInvokeArgsMap2x1[TResult]
+  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ Any, TResult], args: js.Array[Any]): js.Array[TResult]
+  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ Any, TResult], args: js.Array[Any], collection: js.Object): js.Array[TResult]
+  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ Any, TResult], args: __): LodashInvokeArgsMap2x5[TResult]
+  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ Any, TResult], args: __, collection: js.Object): LodashInvokeArgsMap2x5[TResult]
   @JSName("invokeArgsMap")
-  def invokeArgsMap_Array(methodName: java.lang.String, args: js.Array[js.Any]): js.Array[js.Any]
+  def invokeArgsMap_Array(methodName: java.lang.String, args: js.Array[Any]): js.Array[Any]
   @JSName("invokeArgsMap")
-  def invokeArgsMap_LodashInvokeArgsMap1x2(methodNameOrMethod: __, args: js.Array[js.Any]): LodashInvokeArgsMap1x2
+  def invokeArgsMap_LodashInvokeArgsMap1x2(methodNameOrMethod: __, args: js.Array[Any]): LodashInvokeArgsMap1x2
   @JSName("invokeArgsMap")
   var invokeArgsMap_Original: LodashInvokeArgsMap
   @JSName("invokeArgsMap")
-  def invokeArgsMap_TResult_LodashInvokeArgsMap2x3[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: js.Array[js.Any]): LodashInvokeArgsMap2x3[TResult]
+  def invokeArgsMap_TResult_LodashInvokeArgsMap2x3[TResult](method: js.Function1[/* repeated */ Any, TResult], args: js.Array[Any]): LodashInvokeArgsMap2x3[TResult]
   
   @JSName("invokeArgs")
   var invokeArgs_Original: LodashInvokeArgs
   
   def invokeMap(methodNameOrMethod: __): LodashInvokeMap1x2
   def invokeMap(methodNameOrMethod: __, collection: js.Object): LodashInvokeMap1x2
-  def invokeMap(methodName: java.lang.String): js.Array[js.Any]
-  def invokeMap(methodName: java.lang.String, collection: js.Object): js.Array[js.Any]
-  def invokeMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult]): js.Array[TResult]
-  def invokeMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], collection: js.Object): js.Array[TResult]
+  def invokeMap(methodName: java.lang.String): js.Array[Any]
+  def invokeMap(methodName: java.lang.String, collection: js.Object): js.Array[Any]
+  def invokeMap[TResult](method: js.Function1[/* repeated */ Any, TResult]): js.Array[TResult]
+  def invokeMap[TResult](method: js.Function1[/* repeated */ Any, TResult], collection: js.Object): js.Array[TResult]
   @JSName("invokeMap")
   def invokeMap_LodashInvokeMap1x1(methodName: java.lang.String): LodashInvokeMap1x1
   @JSName("invokeMap")
   var invokeMap_Original: LodashInvokeMap
   @JSName("invokeMap")
-  def invokeMap_TResult_LodashInvokeMap2x1[TResult](method: js.Function1[/* repeated */ js.Any, TResult]): LodashInvokeMap2x1[TResult]
+  def invokeMap_TResult_LodashInvokeMap2x1[TResult](method: js.Function1[/* repeated */ Any, TResult]): LodashInvokeMap2x1[TResult]
   
   @JSName("invoke")
   var invoke_Original: LodashInvoke
   
-  def isArguments(value: js.Any): /* is std.IArguments */ Boolean
+  def isArguments(value: Any): /* is std.IArguments */ Boolean
   @JSName("isArguments")
   var isArguments_Original: LodashIsArguments
   
-  def isArray(value: js.Any): /* is std.Array<any> */ Boolean
+  def isArray(value: Any): /* is std.Array<any> */ Boolean
   
-  def isArrayBuffer(value: js.Any): /* is std.ArrayBuffer */ Boolean
+  def isArrayBuffer(value: Any): /* is std.ArrayBuffer */ Boolean
   @JSName("isArrayBuffer")
   var isArrayBuffer_Original: LodashIsArrayBuffer
   
   def isArrayLike(): /* is never */ Boolean
-  def isArrayLike(value: js.Any): /* is lodash.anon.Length */ Boolean
-  def isArrayLike(value: js.Function1[/* repeated */ js.Any, js.Any]): /* is never */ Boolean
-  def isArrayLike[T /* <: LodashAnyHack */](t: T): Boolean
+  def isArrayLike(value: js.Function1[/* repeated */ Any, Any]): /* is never */ Boolean
+  def isArrayLike(value: Any): /* is lodash.anon.Length */ Boolean
   
   def isArrayLikeObject(): /* is never */ Boolean
   def isArrayLikeObject(value: java.lang.String): /* is never */ Boolean
-  def isArrayLikeObject(value: js.Any): Boolean
-  def isArrayLikeObject(value: js.Function1[/* repeated */ js.Any, js.Any]): /* is never */ Boolean
+  def isArrayLikeObject(value: js.Function1[/* repeated */ Any, Any]): /* is never */ Boolean
+  def isArrayLikeObject(value: Any): Boolean
   def isArrayLikeObject(value: Boolean): /* is never */ Boolean
   def isArrayLikeObject(value: Double): /* is never */ Boolean
   def isArrayLikeObject(value: FunctionBase): /* is never */ Boolean
-  def isArrayLikeObject[T /* <: LodashAnyHack */](value: T): Boolean
   @JSName("isArrayLikeObject")
   var isArrayLikeObject_Original: LodashIsArrayLikeObject
+  @JSName("isArrayLikeObject")
+  def isArrayLikeObject_T_LodashAnyHack[T /* <: LodashAnyHack */](value: T): Boolean
   
   @JSName("isArrayLike")
   var isArrayLike_Original: LodashIsArrayLike
+  @JSName("isArrayLike")
+  def isArrayLike_T_LodashAnyHack[T /* <: LodashAnyHack */](t: T): Boolean
   
   @JSName("isArray")
   var isArray_Original: LodashIsArray
   
-  def isBoolean(value: js.Any): /* is boolean */ Boolean
+  def isBoolean(value: Any): /* is boolean */ Boolean
   @JSName("isBoolean")
   var isBoolean_Original: LodashIsBoolean
   
-  def isBuffer(value: js.Any): Boolean
+  def isBuffer(value: Any): Boolean
   @JSName("isBuffer")
   var isBuffer_Original: LodashIsBuffer
   
-  def isDate(value: js.Any): /* is std.Date */ Boolean
+  def isDate(value: Any): /* is std.Date */ Boolean
   @JSName("isDate")
   var isDate_Original: LodashIsDate
   
-  def isElement(value: js.Any): Boolean
+  def isElement(value: Any): Boolean
   @JSName("isElement")
   var isElement_Original: LodashIsElement
   
-  def isEmpty(value: js.Any): Boolean
+  def isEmpty(): Boolean
+  def isEmpty(value: java.lang.String): Boolean
+  def isEmpty(value: js.Array[Any]): Boolean
+  def isEmpty(value: Any): Boolean
+  def isEmpty(value: List[Any]): Boolean
+  def isEmpty(value: Map[Any, Any]): Boolean
+  def isEmpty(value: Set[Any]): Boolean
   @JSName("isEmpty")
   var isEmpty_Original: LodashIsEmpty
+  @JSName("isEmpty")
+  def isEmpty_T_Object[T /* <: js.Object */](): Boolean
+  @JSName("isEmpty")
+  def isEmpty_T_Object[T /* <: js.Object */](value: T): Boolean
+  @JSName("isEmpty")
+  def isEmpty_T_TrapAny[T /* <: TrapAny */](value: T): Boolean
   
-  def isEqual(value: js.Any): LodashIsEqual1x1
-  def isEqual(value: js.Any, other: js.Any): Boolean
-  def isEqual(value: __, other: js.Any): LodashIsEqual1x2
+  def isEqual(value: Any): LodashIsEqual1x1
+  def isEqual(value: Any, other: Any): Boolean
+  def isEqual(value: __, other: Any): LodashIsEqual1x2
   
   def isEqualWith(customizer: IsEqualCustomizer): LodashIsEqualWith1x1
-  def isEqualWith(customizer: IsEqualCustomizer, value: js.Any): LodashIsEqualWith1x3
-  def isEqualWith(customizer: IsEqualCustomizer, value: js.Any, other: js.Any): Boolean
-  def isEqualWith(customizer: IsEqualCustomizer, value: __, other: js.Any): LodashIsEqualWith1x5
-  def isEqualWith(customizer: __, value: js.Any): LodashIsEqualWith1x2
-  def isEqualWith(customizer: __, value: js.Any, other: js.Any): LodashIsEqualWith1x6
-  def isEqualWith(customizer: __, value: __, other: js.Any): LodashIsEqualWith1x4
+  def isEqualWith(customizer: IsEqualCustomizer, value: Any): LodashIsEqualWith1x3
+  def isEqualWith(customizer: IsEqualCustomizer, value: Any, other: Any): Boolean
+  def isEqualWith(customizer: IsEqualCustomizer, value: __, other: Any): LodashIsEqualWith1x5
+  def isEqualWith(customizer: __, value: Any): LodashIsEqualWith1x2
+  def isEqualWith(customizer: __, value: Any, other: Any): LodashIsEqualWith1x6
+  def isEqualWith(customizer: __, value: __, other: Any): LodashIsEqualWith1x4
   @JSName("isEqualWith")
   var isEqualWith_Original: LodashIsEqualWith
   
   @JSName("isEqual")
   var isEqual_Original: LodashIsEqual
   
-  def isError(value: js.Any): /* is std.Error */ Boolean
+  def isError(value: Any): /* is std.Error */ Boolean
   @JSName("isError")
   var isError_Original: LodashIsError
   
-  def isFinite(value: js.Any): Boolean
+  def isFinite(value: Any): Boolean
   @JSName("isFinite")
   var isFinite_Original: LodashIsFinite
   
-  def isFunction(value: js.Any): Boolean
+  def isFunction(value: Any): Boolean
   @JSName("isFunction")
   var isFunction_Original: LodashIsFunction
   
-  def isInteger(value: js.Any): Boolean
+  def isInteger(value: Any): Boolean
   @JSName("isInteger")
   var isInteger_Original: LodashIsInteger
   
-  def isLength(value: js.Any): Boolean
+  def isLength(value: Any): Boolean
   @JSName("isLength")
   var isLength_Original: LodashIsLength
   
-  def isMap(value: js.Any): /* is std.Map<any, any> */ Boolean
+  def isMap(value: Any): /* is std.Map<any, any> */ Boolean
   @JSName("isMap")
   var isMap_Original: LodashIsMap
   
@@ -2724,91 +2780,91 @@ trait LoDashFp extends StObject {
   @JSName("isMatch")
   var isMatch_Original: LodashIsMatch
   
-  def isNaN(value: js.Any): Boolean
+  def isNaN(value: Any): Boolean
   @JSName("isNaN")
   var isNaN_Original: LodashIsNaN
   
-  def isNative(value: js.Any): Boolean
+  def isNative(value: Any): Boolean
   @JSName("isNative")
   var isNative_Original: LodashIsNative
   
-  def isNil(value: js.Any): Boolean
+  def isNil(value: Any): Boolean
   @JSName("isNil")
   var isNil_Original: LodashIsNil
   
-  def isNull(value: js.Any): /* is null */ Boolean
+  def isNull(value: Any): /* is null */ Boolean
   @JSName("isNull")
   var isNull_Original: LodashIsNull
   
-  def isNumber(value: js.Any): /* is number */ Boolean
+  def isNumber(value: Any): /* is number */ Boolean
   @JSName("isNumber")
   var isNumber_Original: LodashIsNumber
   
-  def isObject(value: js.Any): /* is object */ Boolean
+  def isObject(value: Any): /* is object */ Boolean
   
-  def isObjectLike(value: js.Any): Boolean
+  def isObjectLike(value: Any): Boolean
   @JSName("isObjectLike")
   var isObjectLike_Original: LodashIsObjectLike
   
   @JSName("isObject")
   var isObject_Original: LodashIsObject
   
-  def isPlainObject(value: js.Any): Boolean
+  def isPlainObject(value: Any): Boolean
   @JSName("isPlainObject")
   var isPlainObject_Original: LodashIsPlainObject
   
-  def isRegExp(value: js.Any): /* is std.RegExp */ Boolean
+  def isRegExp(value: Any): /* is std.RegExp */ Boolean
   @JSName("isRegExp")
   var isRegExp_Original: LodashIsRegExp
   
-  def isSafeInteger(value: js.Any): Boolean
+  def isSafeInteger(value: Any): Boolean
   @JSName("isSafeInteger")
   var isSafeInteger_Original: LodashIsSafeInteger
   
-  def isSet(value: js.Any): /* is std.Set<any> */ Boolean
+  def isSet(value: Any): /* is std.Set<any> */ Boolean
   @JSName("isSet")
   var isSet_Original: LodashIsSet
   
-  def isString(value: js.Any): /* is string */ Boolean
+  def isString(value: Any): /* is string */ Boolean
   @JSName("isString")
   var isString_Original: LodashIsString
   
-  def isSymbol(value: js.Any): /* is symbol */ Boolean
+  def isSymbol(value: Any): /* is symbol */ Boolean
   @JSName("isSymbol")
   var isSymbol_Original: LodashIsSymbol
   
-  def isTypedArray(value: js.Any): Boolean
+  def isTypedArray(value: Any): Boolean
   @JSName("isTypedArray")
   var isTypedArray_Original: LodashIsTypedArray
   
-  def isUndefined(value: js.Any): /* is undefined */ Boolean
+  def isUndefined(value: Any): /* is undefined */ Boolean
   @JSName("isUndefined")
   var isUndefined_Original: LodashIsUndefined
   
-  def isWeakMap(value: js.Any): /* is std.WeakMap<object, any> */ Boolean
+  def isWeakMap(value: Any): /* is std.WeakMap<object, any> */ Boolean
   @JSName("isWeakMap")
   var isWeakMap_Original: LodashIsWeakMap
   
-  def isWeakSet(value: js.Any): /* is std.WeakSet<object> */ Boolean
+  def isWeakSet(value: Any): /* is std.WeakSet<object> */ Boolean
   @JSName("isWeakSet")
   var isWeakSet_Original: LodashIsWeakSet
   
-  def iteratee(func: java.lang.String): js.Function1[/* repeated */ js.Any, js.Any]
-  def iteratee(func: js.Object): js.Function1[/* repeated */ js.Any, js.Any]
-  def iteratee[TFunction /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunction): TFunction
+  def iteratee(func: java.lang.String): js.Function1[/* repeated */ Any, Any]
+  def iteratee(func: js.Object): js.Function1[/* repeated */ Any, Any]
+  def iteratee[TFunction /* <: js.Function1[/* repeated */ Any, Any] */](func: TFunction): TFunction
   @JSName("iteratee")
   var iteratee_Original: LodashIteratee
   
   def join(separator: java.lang.String): LodashJoin1x1
-  def join(separator: java.lang.String, array: List[js.Any]): java.lang.String
+  def join(separator: java.lang.String, array: List[Any]): java.lang.String
   def join(separator: __): LodashJoin1x2
-  def join(separator: __, array: List[js.Any]): LodashJoin1x2
+  def join(separator: __, array: List[Any]): LodashJoin1x2
   @JSName("join")
   var join_Original: LodashJoin
   @JSName("join")
   def join_String(separator: java.lang.String): java.lang.String
   
-  def juxt[TResult](iteratees: Many[js.Function1[/* repeated */ js.Any, TResult]]): js.Function1[/* repeated */ js.Any, js.Array[TResult]]
+  def juxt[TResult](iteratees: Many[js.Function1[/* repeated */ Any, TResult]]): js.Function1[/* repeated */ Any, js.Array[TResult]]
   @JSName("juxt")
   var juxt_Original: LodashOver
   
@@ -2846,9 +2902,9 @@ trait LoDashFp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ]
   
-  def keys(`object`: js.Any): js.Array[java.lang.String]
+  def keys(`object`: Any): js.Array[java.lang.String]
   
-  def keysIn(`object`: js.Any): js.Array[java.lang.String]
+  def keysIn(`object`: Any): js.Array[java.lang.String]
   @JSName("keysIn")
   var keysIn_Original: LodashKeysIn
   
@@ -2907,22 +2963,22 @@ trait LoDashFp extends StObject {
   @JSName("lowerFirst")
   var lowerFirst_Original: LodashLowerFirst
   
-  def lt(value: js.Any): LodashLt1x1
-  def lt(value: js.Any, other: js.Any): Boolean
-  def lt(value: __, other: js.Any): LodashLt1x2
+  def lt(value: Any): LodashLt1x1
+  def lt(value: Any, other: Any): Boolean
+  def lt(value: __, other: Any): LodashLt1x2
   @JSName("lt")
   var lt_Original: LodashLt
   
-  def lte(value: js.Any): LodashLte1x1
-  def lte(value: js.Any, other: js.Any): Boolean
-  def lte(value: __, other: js.Any): LodashLte1x2
+  def lte(value: Any): LodashLte1x1
+  def lte(value: Any, other: Any): Boolean
+  def lte(value: __, other: Any): LodashLte1x2
   @JSName("lte")
   var lte_Original: LodashLte
   
   def map(iteratee: java.lang.String): LodashMap5x1
   def map(iteratee: js.Object): LodashMap6x1
-  def map[T](iteratee: java.lang.String, collection: Dictionary[T]): js.Array[js.Any]
-  def map[T](iteratee: java.lang.String, collection: NumericDictionary[T]): js.Array[js.Any]
+  def map[T](iteratee: java.lang.String, collection: Dictionary[T]): js.Array[Any]
+  def map[T](iteratee: java.lang.String, collection: NumericDictionary[T]): js.Array[Any]
   def map[T](iteratee: js.Object, collection: Dictionary[T]): js.Array[Boolean]
   def map[T](iteratee: js.Object, collection: NumericDictionary[T]): js.Array[Boolean]
   def map[T /* <: js.Object */](iteratee: __): LodashMap3x2[T]
@@ -2985,12 +3041,12 @@ trait LoDashFp extends StObject {
   def mapValues[T /* <: js.Object */](callbackOrIterateeOrIteratee: __, obj: T): LodashMapValues2x2[T]
   def mapValues[T /* <: js.Object */](iteratee: java.lang.String, obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[js.Any]
-  def mapValues[T](iteratee: java.lang.String, obj: Dictionary[T]): Dictionary[js.Any]
-  def mapValues[T](iteratee: java.lang.String, obj: NumericDictionary[T]): Dictionary[js.Any]
+    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
+  def mapValues[T](iteratee: java.lang.String, obj: Dictionary[T]): Dictionary[Any]
+  def mapValues[T](iteratee: java.lang.String, obj: NumericDictionary[T]): Dictionary[Any]
   def mapValues[T /* <: js.Object */](iteratee: js.Object, obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
   def mapValues[T](iteratee: js.Object, obj: Dictionary[T]): Dictionary[Boolean]
   def mapValues[T](iteratee: js.Object, obj: NumericDictionary[T]): Dictionary[Boolean]
   def mapValues[T /* <: js.Object */, TResult](
@@ -3000,7 +3056,7 @@ trait LoDashFp extends StObject {
     ]
   ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: TResult}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
   def mapValues[T /* <: js.Object */, TResult](
     callback: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
@@ -3009,7 +3065,7 @@ trait LoDashFp extends StObject {
     obj: T
   ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: TResult}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
   def mapValues[T, TResult](callback: js.Function1[/* value */ T, TResult], obj: Dictionary[T]): Dictionary[TResult]
   def mapValues[T, TResult](callback: js.Function1[/* value */ T, TResult], obj: NumericDictionary[T]): Dictionary[TResult]
   def mapValues[T, TKey /* <: /* keyof T */ java.lang.String */](iteratee: TKey): Dictionary[
@@ -3030,7 +3086,7 @@ trait LoDashFp extends StObject {
   @JSName("mapValues")
   def mapValues_TTResult_LodashMapValues1x1[T, TResult](callback: js.Function1[/* value */ T, TResult]): LodashMapValues1x1[T, TResult]
   @JSName("mapValues")
-  def mapValues_T_Dictionary[T](iteratee: java.lang.String): Dictionary[js.Any]
+  def mapValues_T_Dictionary[T](iteratee: java.lang.String): Dictionary[Any]
   @JSName("mapValues")
   def mapValues_T_Dictionary[T](iteratee: js.Object): Dictionary[Boolean]
   @JSName("mapValues")
@@ -3045,11 +3101,11 @@ trait LoDashFp extends StObject {
   @JSName("mapValues")
   def mapValues_T_Object_Intersection[T /* <: js.Object */](iteratee: java.lang.String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
   @JSName("mapValues")
   def mapValues_T_Object_Intersection[T /* <: js.Object */](iteratee: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.LoDashFp & TopLevel[Any]
   
   @JSName("map")
   var map_Original: LodashMap
@@ -3060,7 +3116,7 @@ trait LoDashFp extends StObject {
   @JSName("map")
   def map_TTResult_LodashMap1x1[T, TResult](iteratee: js.Function1[/* value */ T, TResult]): LodashMap1x1[T, TResult]
   @JSName("map")
-  def map_T_Array[T](iteratee: java.lang.String): js.Array[js.Any]
+  def map_T_Array[T](iteratee: java.lang.String): js.Array[Any]
   @JSName("map")
   def map_T_Array[T](iteratee: js.Object): js.Array[Boolean]
   @JSName("map")
@@ -3082,7 +3138,7 @@ trait LoDashFp extends StObject {
   def matches(source: __, `object`: js.Object): LodashIsMatch1x2
   
   def matchesProperty(path: PropertyPath): LodashMatchesProperty1x1
-  def matchesProperty[T](path: PropertyPath, srcValue: T): js.Function1[/* value */ js.Any, Boolean]
+  def matchesProperty[T](path: PropertyPath, srcValue: T): js.Function1[/* value */ Any, Boolean]
   def matchesProperty[T](path: __, srcValue: T): LodashMatchesProperty1x2
   @JSName("matchesProperty")
   var matchesProperty_Original: LodashMatchesProperty
@@ -3106,7 +3162,7 @@ trait LoDashFp extends StObject {
   var max_Original: LodashMax
   
   def mean(): Double
-  def mean(collection: List[js.Any]): Double
+  def mean(collection: List[Any]): Double
   
   def meanBy[T](iteratee: ValueIteratee[T]): Double
   def meanBy[T](iteratee: ValueIteratee[T], collection: List[T]): Double
@@ -3120,7 +3176,7 @@ trait LoDashFp extends StObject {
   @JSName("mean")
   var mean_Original: LodashMean
   
-  def memoize[T /* <: js.Function1[/* args */ js.Any, js.Any] */](func: T): T & MemoizedFunction
+  def memoize[T /* <: js.Function1[/* args */ Any, Any] */](func: T): T & MemoizedFunction
   @JSName("memoize")
   var memoize_Original: LodashMemoize
   
@@ -3128,15 +3184,15 @@ trait LoDashFp extends StObject {
   def merge[TSource](`object`: __, source: TSource): LodashMerge1x2[TSource]
   def merge[TObject, TSource](`object`: TObject, source: TSource): TObject & TSource
   
-  def mergeAll(`object`: js.Array[js.Any]): js.Any
+  def mergeAll(`object`: js.Array[Any]): Any
   def mergeAll[TObject, TSource](`object`: js.Tuple2[TObject, TSource]): TObject & TSource
   def mergeAll[TObject, TSource1, TSource2](`object`: js.Tuple3[TObject, TSource1, TSource2]): TObject & TSource1 & TSource2
   def mergeAll[TObject, TSource1, TSource2, TSource3](`object`: js.Tuple4[TObject, TSource1, TSource2, TSource3]): TObject & TSource1 & TSource2 & TSource3
   def mergeAll[TObject, TSource1, TSource2, TSource3, TSource4](`object`: js.Tuple5[TObject, TSource1, TSource2, TSource3, TSource4]): TObject & TSource1 & TSource2 & TSource3 & TSource4
   
   def mergeAllWith(customizer: MergeWithCustomizer): LodashMergeAllWith1x1
-  def mergeAllWith(customizer: MergeWithCustomizer, args: js.Array[js.Any]): js.Any
-  def mergeAllWith(customizer: __, args: js.Array[js.Any]): LodashMergeAllWith1x2
+  def mergeAllWith(customizer: MergeWithCustomizer, args: js.Array[Any]): Any
+  def mergeAllWith(customizer: __, args: js.Array[Any]): LodashMergeAllWith1x2
   @JSName("mergeAllWith")
   var mergeAllWith_Original: LodashMergeAllWith
   
@@ -3156,9 +3212,9 @@ trait LoDashFp extends StObject {
   @JSName("merge")
   var merge_Original: LodashMerge
   
-  def method(path: PropertyPath): js.Function1[/* object */ js.Any, js.Any]
+  def method(path: PropertyPath): js.Function1[/* object */ Any, Any]
   
-  def methodOf(`object`: js.Object): js.Function1[/* path */ PropertyPath, js.Any]
+  def methodOf(`object`: js.Object): js.Function1[/* path */ PropertyPath, Any]
   @JSName("methodOf")
   var methodOf_Original: LodashMethodOf
   
@@ -3187,12 +3243,12 @@ trait LoDashFp extends StObject {
   var multiply_Original: LodashMultiply
   
   def nAry(n: Double): LodashAry1x1
-  def nAry(n: Double, func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
-  def nAry(n: __, func: js.Function1[/* repeated */ js.Any, js.Any]): LodashAry1x2
+  def nAry(n: Double, func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any]
+  def nAry(n: __, func: js.Function1[/* repeated */ Any, Any]): LodashAry1x2
   @JSName("nAry")
   var nAry_Original: LodashAry
   
-  def negate[T /* <: js.Array[js.Any] */](predicate: js.Function1[/* args */ T, js.Any]): js.Function1[/* args */ T, Boolean]
+  def negate[T /* <: js.Array[Any] */](predicate: js.Function1[/* args */ T, Any]): js.Function1[/* args */ T, Boolean]
   @JSName("negate")
   var negate_Original: LodashNegate
   
@@ -3200,7 +3256,7 @@ trait LoDashFp extends StObject {
   @JSName("noConflict")
   var noConflict_Original: LodashNoConflict
   
-  def noop(args: js.Any*): Unit
+  def noop(args: Any*): Unit
   @JSName("noop")
   var noop_Original: LodashNoop
   
@@ -3213,7 +3269,7 @@ trait LoDashFp extends StObject {
   def nth[T](n: __): LodashNth1x2[T]
   def nth[T](n: __, array: List[T]): LodashNth1x2[T]
   
-  def nthArg(n: Double): js.Function1[/* repeated */ js.Any, js.Any]
+  def nthArg(n: Double): js.Function1[/* repeated */ Any, Any]
   @JSName("nthArg")
   var nthArg_Original: LodashNthArg
   
@@ -3283,7 +3339,7 @@ trait LoDashFp extends StObject {
   @JSName("omit")
   def omit_T_Object_PartialObject[T /* <: js.Object */](paths: Many[PropertyName]): PartialObject[T]
   
-  def once[T /* <: js.Function1[/* args */ js.Any, js.Any] */](func: T): T
+  def once[T /* <: js.Function1[/* args */ Any, Any] */](func: T): T
   @JSName("once")
   var once_Original: LodashOnce
   
@@ -3404,14 +3460,14 @@ trait LoDashFp extends StObject {
     orders: __
   ): LodashOrderBy4x5[T]
   
-  def over[TResult](iteratees: Many[js.Function1[/* repeated */ js.Any, TResult]]): js.Function1[/* repeated */ js.Any, js.Array[TResult]]
+  def over[TResult](iteratees: Many[js.Function1[/* repeated */ Any, TResult]]): js.Function1[/* repeated */ Any, js.Array[TResult]]
   
-  def overArgs(func: js.Function1[/* repeated */ js.Any, js.Any]): LodashOverArgs1x1
+  def overArgs(func: js.Function1[/* repeated */ Any, Any]): LodashOverArgs1x1
   def overArgs(
-    func: js.Function1[/* repeated */ js.Any, js.Any],
-    transforms: Many[js.Function1[/* repeated */ js.Any, js.Any]]
-  ): js.Function1[/* repeated */ js.Any, js.Any]
-  def overArgs(func: __, transforms: Many[js.Function1[/* repeated */ js.Any, js.Any]]): LodashOverArgs1x2
+    func: js.Function1[/* repeated */ Any, Any],
+    transforms: Many[js.Function1[/* repeated */ Any, Any]]
+  ): js.Function1[/* repeated */ Any, Any]
+  def overArgs(func: __, transforms: Many[js.Function1[/* repeated */ Any, Any]]): LodashOverArgs1x2
   @JSName("overArgs")
   var overArgs_Original: LodashOverArgs
   
@@ -3486,25 +3542,28 @@ trait LoDashFp extends StObject {
   def partial[T2](func: __, plc1: js.Tuple2[__, T2]): LodashPartial1x2[T2]
   def partial[T3](func: __, plc1: js.Tuple3[__, __, T3]): LodashPartial3x2[T3]
   def partial[T4](func: __, plc1: js.Tuple4[__, __, __, T4]): LodashPartial11x2[T4]
-  def partial[TS /* <: js.Array[js.Any] */, T1, R](func: js.Function2[/* t1 */ T1, /* ts */ TS, R], arg1: js.Array[T1]): js.Function1[/* ts */ TS, R]
+  def partial[TS /* <: js.Array[Any] */, T1, R](func: js.Function2[/* t1 */ T1, /* ts */ TS, R], arg1: js.Array[T1]): js.Function1[/* ts */ TS, R]
   def partial[T1, T2, R](func: Function2[T1, T2, R]): LodashPartial1x1[T1, T2, R]
   def partial[T1, T2, R](func: Function2[T1, T2, R], plc1: js.Tuple2[__, T2]): Function1[T1, R]
-  def partial[TS /* <: js.Array[js.Any] */, T1, T2, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* ts */ TS, R]): LodashPartial19x1[TS, T1, T2, R]
+  def partial[TS /* <: js.Array[Any] */, T1, T2, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* ts */ TS, R]): LodashPartial19x1[TS, T1, T2, R]
+  def partial[TS /* <: js.Array[Any] */, T1, T2, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* ts */ TS, R], t1: js.Tuple2[T1, T2]): js.Function1[/* ts */ TS, R]
   def partial[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: js.Tuple3[T1 | __, T2 | __, T3]): Function1[T2, R]
-  def partial[T1, T2, T3, R](func: Function3[T1, T2, T3, R], plc1: js.Tuple2[__, T2]): Function2[T1, T3, R]
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R]): LodashPartial6x1[T1, T2, T3, T4, R]
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: js.Tuple3[T1 | __, T2 | __, T3]): Function2[T2, T4, R]
+  def partial[TS /* <: js.Array[Any] */, T1, T2, T3, R](func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* ts */ TS, R]): LodashPartial20x1[TS, T1, T2, T3, R]
+  def partial[TS /* <: js.Array[Any] */, T1, T2, T3, R](
+    func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* ts */ TS, R],
+    t1: js.Tuple3[T1, T2, T3]
+  ): js.Function1[/* ts */ TS, R]
   def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: js.Tuple4[T1 | __, T2 | __, T3 | __, T4]): Function2[T2, T3, R]
   def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: js.Tuple2[__, T2]): Function3[T1, T3, T4, R]
-  def partial[TS /* <: js.Array[js.Any] */, T1, T2, T3, T4, R](func: js.Function5[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, /* ts */ TS, R]): LodashPartial21x1[TS, T1, T2, T3, T4, R]
-  def partial[TS /* <: js.Array[js.Any] */, T1, T2, T3, T4, R](
+  def partial[TS /* <: js.Array[Any] */, T1, T2, T3, T4, R](func: js.Function5[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, /* ts */ TS, R]): LodashPartial21x1[TS, T1, T2, T3, T4, R]
+  def partial[TS /* <: js.Array[Any] */, T1, T2, T3, T4, R](
     func: js.Function5[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, /* ts */ TS, R],
     t1: js.Tuple4[T1, T2, T3, T4]
   ): js.Function1[/* ts */ TS, R]
   
-  def partialRight(func: js.Function1[/* repeated */ js.Any, js.Any]): LodashPartialRight27x1
-  def partialRight(func: js.Function1[/* repeated */ js.Any, js.Any], args: js.Array[js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
-  def partialRight(func: __, args: js.Array[js.Any]): LodashPartialRight27x2
+  def partialRight(func: js.Function1[/* repeated */ Any, Any]): LodashPartialRight27x1
+  def partialRight(func: js.Function1[/* repeated */ Any, Any], args: js.Array[Any]): js.Function1[/* repeated */ Any, Any]
+  def partialRight(func: __, args: js.Array[Any]): LodashPartialRight27x2
   def partialRight[T1](func: __, arg1: js.Tuple2[T1, __]): LodashPartialRight2x2[T1]
   def partialRight[T1](func: __, arg1: js.Tuple4[T1, __, __, __]): LodashPartialRight12x2[T1]
   def partialRight[T2](func: __, arg2: js.Tuple3[T2, __, __]): LodashPartialRight13x2[T2]
@@ -3596,6 +3655,8 @@ trait LoDashFp extends StObject {
   @JSName("partial")
   var partial_Original: LodashPartial
   @JSName("partial")
+  def partial_T1T2T3R_Function2[T1, T2, T3, R](func: Function3[T1, T2, T3, R], plc1: js.Tuple2[__, T2]): Function2[T1, T3, R]
+  @JSName("partial")
   def partial_T1T2T3R_Function2[T1, T2, T3, R](func: Function3[T1, T2, T3, R], plc1: js.Tuple3[__, __, T3]): Function2[T1, T2, R]
   @JSName("partial")
   def partial_T1T2T3R_LodashPartial2x1[T1, T2, T3, R](func: Function3[T1, T2, T3, R]): LodashPartial2x1[T1, T2, T3, R]
@@ -3604,9 +3665,13 @@ trait LoDashFp extends StObject {
   @JSName("partial")
   def partial_T1T2T3T4R_Function1[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: js.Tuple4[T1 | __, T2 | __, T3 | __, T4]): Function1[T3, R]
   @JSName("partial")
+  def partial_T1T2T3T4R_Function2[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: js.Tuple3[T1 | __, T2 | __, T3]): Function2[T2, T4, R]
+  @JSName("partial")
   def partial_T1T2T3T4R_Function3[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: js.Tuple3[__, __, T3]): Function3[T1, T2, T4, R]
   @JSName("partial")
   def partial_T1T2T3T4R_Function3[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: js.Tuple4[__, __, __, T4]): Function3[T1, T2, T3, R]
+  @JSName("partial")
+  def partial_T1T2T3T4R_LodashPartial6x1[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R]): LodashPartial6x1[T1, T2, T3, T4, R]
   @JSName("partial")
   def partial_T1T2T3T4_LodashPartial21x2[T1, T2, T3, T4](func: __, t1: js.Tuple4[T1, T2, T3, T4]): LodashPartial21x2[T1, T2, T3, T4]
   @JSName("partial")
@@ -3630,16 +3695,7 @@ trait LoDashFp extends StObject {
   @JSName("partial")
   def partial_T3T4_LodashPartial15x2[T3, T4](func: __, plc1: js.Tuple4[__, __, T3, T4]): LodashPartial15x2[T3, T4]
   @JSName("partial")
-  def partial_TS_ArrayAnyT1R_LodashPartial18x1[TS /* <: js.Array[js.Any] */, T1, R](func: js.Function2[/* t1 */ T1, /* ts */ TS, R]): LodashPartial18x1[TS, T1, R]
-  @JSName("partial")
-  def partial_TS_ArrayAnyT1T2R_Function1[TS /* <: js.Array[js.Any] */, T1, T2, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* ts */ TS, R], t1: js.Tuple2[T1, T2]): js.Function1[/* ts */ TS, R]
-  @JSName("partial")
-  def partial_TS_ArrayAnyT1T2T3R_Function1[TS /* <: js.Array[js.Any] */, T1, T2, T3, R](
-    func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* ts */ TS, R],
-    t1: js.Tuple3[T1, T2, T3]
-  ): js.Function1[/* ts */ TS, R]
-  @JSName("partial")
-  def partial_TS_ArrayAnyT1T2T3R_LodashPartial20x1[TS /* <: js.Array[js.Any] */, T1, T2, T3, R](func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* ts */ TS, R]): LodashPartial20x1[TS, T1, T2, T3, R]
+  def partial_TS_ArrayAnyT1R_LodashPartial18x1[TS /* <: js.Array[Any] */, T1, R](func: js.Function2[/* t1 */ T1, /* ts */ TS, R]): LodashPartial18x1[TS, T1, R]
   
   def partition[T](callback: ValueIteratee[T]): LodashPartition2x1[T]
   def partition[T /* <: js.Object */](
@@ -3685,13 +3741,11 @@ trait LoDashFp extends StObject {
   
   def path(path: Double): LodashPath9x1
   def path(path: PropertyPath): Unit
-  def path(path: PropertyPath, `object`: js.Any): js.Any
+  def path(path: PropertyPath, `object`: Any): Any
   def path(path: __): LodashPath11x2
-  def path(path: __, `object`: js.Any): LodashPath12x2
+  def path(path: __, `object`: Any): LodashPath12x2
   def path[T](path: Double, `object`: NumericDictionary[T]): js.UndefOr[T]
-  def path[TObject /* <: js.Object */](path: __, `object`: TObject): LodashPath1x2[TObject]
   def path[T](path: __, `object`: NumericDictionary[T]): LodashPath10x2[T]
-  def path[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   def path[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey]): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ]
@@ -3708,37 +3762,28 @@ trait LoDashFp extends StObject {
   def path[TObject /* <: js.Object */, TKey1 /* <: /* keyof TObject */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
   
   def pathEq(path: PropertyPath): LodashMatchesProperty1x1
-  def pathEq[T](path: PropertyPath, srcValue: T): js.Function1[/* value */ js.Any, Boolean]
+  def pathEq[T](path: PropertyPath, srcValue: T): js.Function1[/* value */ Any, Boolean]
   def pathEq[T](path: __, srcValue: T): LodashMatchesProperty1x2
   @JSName("pathEq")
   var pathEq_Original: LodashMatchesProperty
   
-  def pathOr(defaultValue: js.Any): LodashPathOr7x1
-  def pathOr(defaultValue: js.Any, path: PropertyPath): LodashPathOr7x3
-  def pathOr(defaultValue: js.Any, path: PropertyPath, `object`: js.Any): js.Any
-  def pathOr(defaultValue: js.Any, path: __, `object`: js.Any): LodashPathOr7x5
+  def pathOr(defaultValue: Any): LodashPathOr7x1
+  def pathOr(defaultValue: Any, path: PropertyPath): LodashPathOr7x3
+  def pathOr(defaultValue: Any, path: PropertyPath, `object`: Any): Any
+  def pathOr(defaultValue: Any, path: __, `object`: Any): LodashPathOr7x5
   def pathOr(defaultValue: __, path: Double): LodashPathOr5x2
   def pathOr(defaultValue: __, path: PropertyPath): LodashPathOr6x6
-  def pathOr(defaultValue: __, path: PropertyPath, `object`: js.Any): LodashPathOr7x6
+  def pathOr(defaultValue: __, path: PropertyPath, `object`: Any): LodashPathOr7x6
   def pathOr(defaultValue: __, path: __): LodashPathOr6x4
-  def pathOr(defaultValue: __, path: __, `object`: js.Any): LodashPathOr7x4
-  def pathOr[TDefault](defaultValue: TDefault): LodashPathOr1x1[TDefault]
+  def pathOr(defaultValue: __, path: __, `object`: Any): LodashPathOr7x4
   def pathOr[TDefault](defaultValue: TDefault, path: Double): LodashPathOr5x3[TDefault]
-  def pathOr[TDefault](defaultValue: TDefault, path: PropertyPath): TDefault
   def pathOr[TDefault](defaultValue: TDefault, path: __): LodashPathOr6x5[TDefault]
   def pathOr[T](defaultValue: __, path: Double, `object`: NumericDictionary[T]): LodashPathOr5x6[T]
-  def pathOr[TObject /* <: js.Object */](defaultValue: __, path: __, `object`: TObject): LodashPathOr1x4[TObject]
   def pathOr[T](defaultValue: __, path: __, `object`: NumericDictionary[T]): LodashPathOr5x4[T]
   def pathOr[T, TDefault](defaultValue: TDefault, path: Double, `object`: NumericDictionary[T]): T | TDefault
-  def pathOr[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: __, `object`: TObject): LodashPathOr1x5[TObject, TDefault]
   def pathOr[T, TDefault](defaultValue: TDefault, path: __, `object`: NumericDictionary[T]): LodashPathOr5x5[T, TDefault]
-  def pathOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey, `object`: TObject): LodashPathOr1x6[TObject, TKey]
   def pathOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: js.Array[TKey]): LodashPathOr1x2[TObject, TKey]
   def pathOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: js.Array[TKey], `object`: TObject): LodashPathOr1x6[TObject, TKey]
-  def pathOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (Exclude[
-    /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
-    Unit
-  ]) | TDefault
   def pathOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): LodashPathOr1x3[TObject, TKey, TDefault]
   def pathOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey], `object`: TObject): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
@@ -3773,9 +3818,15 @@ trait LoDashFp extends StObject {
   @JSName("pathOr")
   var pathOr_Original: LodashPathOr
   @JSName("pathOr")
+  def pathOr_TDefault_LodashPathOr1x1[TDefault](defaultValue: TDefault): LodashPathOr1x1[TDefault]
+  @JSName("pathOr")
   def pathOr_TDefault_LodashPathOr6x3[TDefault](defaultValue: TDefault, path: PropertyPath): LodashPathOr6x3[TDefault]
   @JSName("pathOr")
+  def pathOr_TDefault_TDefault[TDefault](defaultValue: TDefault, path: PropertyPath): TDefault
+  @JSName("pathOr")
   def pathOr_TObject_ObjectTDefault_LodashPathOr1x5[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: __): LodashPathOr1x5[TObject, TDefault]
+  @JSName("pathOr")
+  def pathOr_TObject_ObjectTDefault_LodashPathOr1x5[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: __, `object`: TObject): LodashPathOr1x5[TObject, TDefault]
   @JSName("pathOr")
   def pathOr_TObject_ObjectTKey1_StringTKey2_AnyTDefault_Union[TObject /* <: js.Object */, TKey1 /* <: /* keyof TObject */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2]): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
@@ -3802,6 +3853,11 @@ trait LoDashFp extends StObject {
     Unit
   ]) | TDefault
   @JSName("pathOr")
+  def pathOr_TObject_ObjectTKey_StringTDefault_Union[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
+    Unit
+  ]) | TDefault
+  @JSName("pathOr")
   def pathOr_TObject_ObjectTKey_StringTDefault_Union[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
     Unit
@@ -3811,9 +3867,13 @@ trait LoDashFp extends StObject {
   @JSName("pathOr")
   def pathOr_TObject_ObjectTKey_String_LodashPathOr1x6[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey): LodashPathOr1x6[TObject, TKey]
   @JSName("pathOr")
+  def pathOr_TObject_ObjectTKey_String_LodashPathOr1x6[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey, `object`: TObject): LodashPathOr1x6[TObject, TKey]
+  @JSName("pathOr")
   def pathOr_TObject_ObjectTKey_String_LodashPathOr1x6[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: js.Array[TKey]): LodashPathOr1x6[TObject, TKey]
   @JSName("pathOr")
   def pathOr_TObject_Object_LodashPathOr1x4[TObject /* <: js.Object */](defaultValue: __, path: __): LodashPathOr1x4[TObject]
+  @JSName("pathOr")
+  def pathOr_TObject_Object_LodashPathOr1x4[TObject /* <: js.Object */](defaultValue: __, path: __, `object`: TObject): LodashPathOr1x4[TObject]
   @JSName("pathOr")
   def pathOr_TTDefault_LodashPathOr5x5[T, TDefault](defaultValue: TDefault, path: __): LodashPathOr5x5[T, TDefault]
   @JSName("pathOr")
@@ -3848,6 +3908,8 @@ trait LoDashFp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
   ]
   @JSName("path")
+  def path_TObject_ObjectTKey_String_Any[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
+  @JSName("path")
   def path_TObject_ObjectTKey_String_LodashPath1x1[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey): LodashPath1x1[TObject, TKey]
   @JSName("path")
   def path_TObject_ObjectTKey_String_LodashPath1x1[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey]): LodashPath1x1[TObject, TKey]
@@ -3863,6 +3925,8 @@ trait LoDashFp extends StObject {
   def path_TObject_ObjectTKey_String_Union[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ]
+  @JSName("path")
+  def path_TObject_Object_LodashPath1x2[TObject /* <: js.Object */](path: __, `object`: TObject): LodashPath1x2[TObject]
   @JSName("path")
   def path_TObject_Object_LodashPath2x2[TObject /* <: js.Object */](path: __): LodashPath2x2[TObject]
   @JSName("path")
@@ -3967,27 +4031,27 @@ trait LoDashFp extends StObject {
   @JSName("pick")
   def pick_T_PartialObject[T](props: PropertyPath): PartialObject[T]
   
-  def pipe(func: (Many[js.Function1[/* repeated */ js.Any, js.Any]])*): js.Function1[/* repeated */ js.Any, js.Any]
-  def pipe[A /* <: js.Array[js.Any] */, R1, R2](f1: js.Function1[/* args */ A, R1], f2: js.Function1[/* a */ R1, R2]): js.Function1[/* args */ A, R2]
-  def pipe[A /* <: js.Array[js.Any] */, R1, R2, R3](
+  def pipe(func: (Many[js.Function1[/* repeated */ Any, Any]])*): js.Function1[/* repeated */ Any, Any]
+  def pipe[A /* <: js.Array[Any] */, R1, R2](f1: js.Function1[/* args */ A, R1], f2: js.Function1[/* a */ R1, R2]): js.Function1[/* args */ A, R2]
+  def pipe[A /* <: js.Array[Any] */, R1, R2, R3](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3]
   ): js.Function1[/* args */ A, R3]
-  def pipe[A /* <: js.Array[js.Any] */, R1, R2, R3, R4](
+  def pipe[A /* <: js.Array[Any] */, R1, R2, R3, R4](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4]
   ): js.Function1[/* args */ A, R4]
-  def pipe[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5](
+  def pipe[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4],
     f5: js.Function1[/* a */ R4, R5]
   ): js.Function1[/* args */ A, R5]
-  def pipe[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6](
+  def pipe[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -3995,7 +4059,7 @@ trait LoDashFp extends StObject {
     f5: js.Function1[/* a */ R4, R5],
     f6: js.Function1[/* a */ R5, R6]
   ): js.Function1[/* args */ A, R6]
-  def pipe[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6, R7](
+  def pipe[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -4004,7 +4068,7 @@ trait LoDashFp extends StObject {
     f6: js.Function1[/* a */ R5, R6],
     f7: js.Function1[/* a */ R6, R7]
   ): js.Function1[/* args */ A, R7]
-  def pipe[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5, R6, R7](
+  def pipe[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function1[/* args */ A, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
@@ -4012,23 +4076,23 @@ trait LoDashFp extends StObject {
     f5: js.Function1[/* a */ R4, R5],
     f6: js.Function1[/* a */ R5, R6],
     f7: js.Function1[/* a */ R6, R7],
-    func: (Many[js.Function1[/* a */ js.Any, js.Any]])*
-  ): js.Function1[/* args */ A, js.Any]
+    func: (Many[js.Function1[/* a */ Any, Any]])*
+  ): js.Function1[/* args */ A, Any]
   @JSName("pipe")
   var pipe_Original: LodashFlow
   
   def placeholder(): String
   def placeholder(value: java.lang.String): String
-  def placeholder[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T]
+  def placeholder[T /* <: js.Object */](value: T): Object[T]
   def placeholder[T](value: List[T]): Collection[T]
   @JSName("placeholder")
   var placeholder_Original: __
   @JSName("placeholder")
   def placeholder_T_Collection[T](): Collection[T]
   @JSName("placeholder")
-  def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T]
+  def placeholder_T_Function1AnyAny_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T]
   @JSName("placeholder")
-  def placeholder_T_Object_Object[T /* <: js.Object */](value: T): Object[T]
+  def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T]
   @JSName("placeholder")
   def placeholder_T_Primitive[T](value: T): Primitive[T]
   @JSName("placeholder")
@@ -4102,12 +4166,12 @@ trait LoDashFp extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("placeholder")
-  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & String
+  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String
   
   def pluck(iteratee: java.lang.String): LodashMap5x1
   def pluck(iteratee: js.Object): LodashMap6x1
-  def pluck[T](iteratee: java.lang.String, collection: Dictionary[T]): js.Array[js.Any]
-  def pluck[T](iteratee: java.lang.String, collection: NumericDictionary[T]): js.Array[js.Any]
+  def pluck[T](iteratee: java.lang.String, collection: Dictionary[T]): js.Array[Any]
+  def pluck[T](iteratee: java.lang.String, collection: NumericDictionary[T]): js.Array[Any]
   def pluck[T](iteratee: js.Object, collection: Dictionary[T]): js.Array[Boolean]
   def pluck[T](iteratee: js.Object, collection: NumericDictionary[T]): js.Array[Boolean]
   def pluck[T /* <: js.Object */](iteratee: __): LodashMap3x2[T]
@@ -4149,7 +4213,7 @@ trait LoDashFp extends StObject {
   @JSName("pluck")
   def pluck_TTResult_LodashMap1x1[T, TResult](iteratee: js.Function1[/* value */ T, TResult]): LodashMap1x1[T, TResult]
   @JSName("pluck")
-  def pluck_T_Array[T](iteratee: java.lang.String): js.Array[js.Any]
+  def pluck_T_Array[T](iteratee: java.lang.String): js.Array[Any]
   @JSName("pluck")
   def pluck_T_Array[T](iteratee: js.Object): js.Array[Boolean]
   @JSName("pluck")
@@ -4168,13 +4232,11 @@ trait LoDashFp extends StObject {
   
   def prop(path: Double): LodashProp9x1
   def prop(path: PropertyPath): Unit
-  def prop(path: PropertyPath, `object`: js.Any): js.Any
+  def prop(path: PropertyPath, `object`: Any): Any
   def prop(path: __): LodashProp11x2
-  def prop(path: __, `object`: js.Any): LodashProp12x2
+  def prop(path: __, `object`: Any): LodashProp12x2
   def prop[T](path: Double, `object`: NumericDictionary[T]): js.UndefOr[T]
-  def prop[TObject /* <: js.Object */](path: __, `object`: TObject): LodashProp2x2[TObject]
   def prop[T](path: __, `object`: NumericDictionary[T]): LodashProp10x2[T]
-  def prop[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   def prop[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey]): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ]
@@ -4191,37 +4253,28 @@ trait LoDashFp extends StObject {
   def prop[TObject /* <: js.Object */, TKey1 /* <: /* keyof TObject */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
   
   def propEq(path: PropertyPath): LodashMatchesProperty1x1
-  def propEq[T](path: PropertyPath, srcValue: T): js.Function1[/* value */ js.Any, Boolean]
+  def propEq[T](path: PropertyPath, srcValue: T): js.Function1[/* value */ Any, Boolean]
   def propEq[T](path: __, srcValue: T): LodashMatchesProperty1x2
   @JSName("propEq")
   var propEq_Original: LodashMatchesProperty
   
-  def propOr(defaultValue: js.Any): LodashPropOr7x1
-  def propOr(defaultValue: js.Any, path: PropertyPath): LodashPropOr7x3
-  def propOr(defaultValue: js.Any, path: PropertyPath, `object`: js.Any): js.Any
-  def propOr(defaultValue: js.Any, path: __, `object`: js.Any): LodashPropOr7x5
+  def propOr(defaultValue: Any): LodashPropOr7x1
+  def propOr(defaultValue: Any, path: PropertyPath): LodashPropOr7x3
+  def propOr(defaultValue: Any, path: PropertyPath, `object`: Any): Any
+  def propOr(defaultValue: Any, path: __, `object`: Any): LodashPropOr7x5
   def propOr(defaultValue: __, path: Double): LodashPropOr5x2
   def propOr(defaultValue: __, path: PropertyPath): LodashPropOr6x2
-  def propOr(defaultValue: __, path: PropertyPath, `object`: js.Any): LodashPropOr7x6
+  def propOr(defaultValue: __, path: PropertyPath, `object`: Any): LodashPropOr7x6
   def propOr(defaultValue: __, path: __): LodashPropOr6x4
-  def propOr(defaultValue: __, path: __, `object`: js.Any): LodashPropOr7x4
-  def propOr[TDefault](defaultValue: TDefault): LodashPropOr1x1[TDefault]
+  def propOr(defaultValue: __, path: __, `object`: Any): LodashPropOr7x4
   def propOr[TDefault](defaultValue: TDefault, path: Double): LodashPropOr5x3[TDefault]
-  def propOr[TDefault](defaultValue: TDefault, path: PropertyPath): TDefault
   def propOr[TDefault](defaultValue: TDefault, path: __): LodashPropOr6x5[TDefault]
   def propOr[T](defaultValue: __, path: Double, `object`: NumericDictionary[T]): LodashPropOr5x6[T]
-  def propOr[TObject /* <: js.Object */](defaultValue: __, path: __, `object`: TObject): LodashPropOr1x4[TObject]
   def propOr[T](defaultValue: __, path: __, `object`: NumericDictionary[T]): LodashPropOr5x4[T]
   def propOr[T, TDefault](defaultValue: TDefault, path: Double, `object`: NumericDictionary[T]): T | TDefault
-  def propOr[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: __, `object`: TObject): LodashPropOr1x5[TObject, TDefault]
   def propOr[T, TDefault](defaultValue: TDefault, path: __, `object`: NumericDictionary[T]): LodashPropOr5x5[T, TDefault]
-  def propOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey, `object`: TObject): LodashPropOr1x6[TObject, TKey]
   def propOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: js.Array[TKey]): LodashPropOr1x2[TObject, TKey]
   def propOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: js.Array[TKey], `object`: TObject): LodashPropOr1x6[TObject, TKey]
-  def propOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (Exclude[
-    /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
-    Unit
-  ]) | TDefault
   def propOr[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
     Unit
@@ -4259,9 +4312,15 @@ trait LoDashFp extends StObject {
   @JSName("propOr")
   var propOr_Original: LodashPropOr
   @JSName("propOr")
+  def propOr_TDefault_LodashPropOr1x1[TDefault](defaultValue: TDefault): LodashPropOr1x1[TDefault]
+  @JSName("propOr")
   def propOr_TDefault_LodashPropOr6x3[TDefault](defaultValue: TDefault, path: PropertyPath): LodashPropOr6x3[TDefault]
   @JSName("propOr")
+  def propOr_TDefault_TDefault[TDefault](defaultValue: TDefault, path: PropertyPath): TDefault
+  @JSName("propOr")
   def propOr_TObject_ObjectTDefault_LodashPropOr1x5[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: __): LodashPropOr1x5[TObject, TDefault]
+  @JSName("propOr")
+  def propOr_TObject_ObjectTDefault_LodashPropOr1x5[TObject /* <: js.Object */, TDefault](defaultValue: TDefault, path: __, `object`: TObject): LodashPropOr1x5[TObject, TDefault]
   @JSName("propOr")
   def propOr_TObject_ObjectTKey1_StringTKey2_AnyTDefault_Union[TObject /* <: js.Object */, TKey1 /* <: /* keyof TObject */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](defaultValue: TDefault, path: js.Tuple2[TKey1, TKey2]): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
@@ -4290,13 +4349,22 @@ trait LoDashFp extends StObject {
     Unit
   ]) | TDefault
   @JSName("propOr")
+  def propOr_TObject_ObjectTKey_StringTDefault_Union[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (Exclude[
+    /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
+    Unit
+  ]) | TDefault
+  @JSName("propOr")
   def propOr_TObject_ObjectTKey_String_LodashPropOr1x2[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey): LodashPropOr1x2[TObject, TKey]
   @JSName("propOr")
   def propOr_TObject_ObjectTKey_String_LodashPropOr1x6[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey): LodashPropOr1x6[TObject, TKey]
   @JSName("propOr")
+  def propOr_TObject_ObjectTKey_String_LodashPropOr1x6[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: TKey, `object`: TObject): LodashPropOr1x6[TObject, TKey]
+  @JSName("propOr")
   def propOr_TObject_ObjectTKey_String_LodashPropOr1x6[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](defaultValue: __, path: js.Array[TKey]): LodashPropOr1x6[TObject, TKey]
   @JSName("propOr")
   def propOr_TObject_Object_LodashPropOr1x4[TObject /* <: js.Object */](defaultValue: __, path: __): LodashPropOr1x4[TObject]
+  @JSName("propOr")
+  def propOr_TObject_Object_LodashPropOr1x4[TObject /* <: js.Object */](defaultValue: __, path: __, `object`: TObject): LodashPropOr1x4[TObject]
   @JSName("propOr")
   def propOr_TTDefault_LodashPropOr5x5[T, TDefault](defaultValue: TDefault, path: __): LodashPropOr5x5[T, TDefault]
   @JSName("propOr")
@@ -4331,6 +4399,8 @@ trait LoDashFp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
   ]
   @JSName("prop")
+  def prop_TObject_ObjectTKey_String_Any[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
+  @JSName("prop")
   def prop_TObject_ObjectTKey_String_LodashProp1x1[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey): LodashProp1x1[TObject, TKey]
   @JSName("prop")
   def prop_TObject_ObjectTKey_String_LodashProp1x1[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey]): LodashProp1x1[TObject, TKey]
@@ -4351,6 +4421,8 @@ trait LoDashFp extends StObject {
   @JSName("prop")
   def prop_TObject_Object_LodashProp2x2[TObject /* <: js.Object */](path: __): LodashProp2x2[TObject]
   @JSName("prop")
+  def prop_TObject_Object_LodashProp2x2[TObject /* <: js.Object */](path: __, `object`: TObject): LodashProp2x2[TObject]
+  @JSName("prop")
   def prop_T_LodashProp10x2[T](path: __): LodashProp10x2[T]
   @JSName("prop")
   def prop_T_LodashProp9x2[T](path: __, `object`: NumericDictionary[T]): LodashProp9x2[T]
@@ -4361,13 +4433,11 @@ trait LoDashFp extends StObject {
   
   def property(path: Double): LodashProperty9x1
   def property(path: PropertyPath): Unit
-  def property(path: PropertyPath, `object`: js.Any): js.Any
+  def property(path: PropertyPath, `object`: Any): Any
   def property(path: __): LodashProperty11x2
-  def property(path: __, `object`: js.Any): LodashProperty12x2
+  def property(path: __, `object`: Any): LodashProperty12x2
   def property[T](path: Double, `object`: NumericDictionary[T]): js.UndefOr[T]
-  def property[TObject /* <: js.Object */](path: __, `object`: TObject): LodashProperty1x2[TObject]
   def property[T](path: __, `object`: NumericDictionary[T]): LodashProperty10x2[T]
-  def property[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   def property[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey]): LodashProperty1x1[TObject, TKey]
   def property[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   def property[TObject /* <: js.Object */, TKey1 /* <: /* keyof TObject */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): LodashProperty3x1[TObject, TKey1, TKey2]
@@ -4381,13 +4451,11 @@ trait LoDashFp extends StObject {
   
   def propertyOf(path: Double): LodashPropertyOf9x1
   def propertyOf(path: PropertyPath): LodashPropertyOf11x1
-  def propertyOf(path: PropertyPath, `object`: js.Any): js.Any
+  def propertyOf(path: PropertyPath, `object`: Any): Any
   def propertyOf(path: __): LodashPropertyOf11x2
-  def propertyOf(path: __, `object`: js.Any): LodashPropertyOf12x2
+  def propertyOf(path: __, `object`: Any): LodashPropertyOf12x2
   def propertyOf[T](path: Double, `object`: NumericDictionary[T]): js.UndefOr[T]
-  def propertyOf[TObject /* <: js.Object */](path: __, `object`: TObject): LodashPropertyOf1x2[TObject]
   def propertyOf[T](path: __, `object`: NumericDictionary[T]): LodashPropertyOf9x2[T]
-  def propertyOf[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   def propertyOf[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey]): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ]
@@ -4425,6 +4493,8 @@ trait LoDashFp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
   ]
   @JSName("propertyOf")
+  def propertyOf_TObject_ObjectTKey_String_Any[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
+  @JSName("propertyOf")
   def propertyOf_TObject_ObjectTKey_String_LodashPropertyOf1x1[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey): LodashPropertyOf1x1[TObject, TKey]
   @JSName("propertyOf")
   def propertyOf_TObject_ObjectTKey_String_LodashPropertyOf1x1[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey]): LodashPropertyOf1x1[TObject, TKey]
@@ -4440,6 +4510,8 @@ trait LoDashFp extends StObject {
   def propertyOf_TObject_ObjectTKey_String_Union[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ]
+  @JSName("propertyOf")
+  def propertyOf_TObject_Object_LodashPropertyOf1x2[TObject /* <: js.Object */](path: __, `object`: TObject): LodashPropertyOf1x2[TObject]
   @JSName("propertyOf")
   def propertyOf_TObject_Object_LodashPropertyOf2x2[TObject /* <: js.Object */](path: __): LodashPropertyOf2x2[TObject]
   @JSName("propertyOf")
@@ -4482,6 +4554,8 @@ trait LoDashFp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
   ]
   @JSName("property")
+  def property_TObject_ObjectTKey_String_Any[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
+  @JSName("property")
   def property_TObject_ObjectTKey_String_LodashProperty1x1[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey): LodashProperty1x1[TObject, TKey]
   @JSName("property")
   def property_TObject_ObjectTKey_String_Union[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: TKey): js.UndefOr[
@@ -4499,6 +4573,8 @@ trait LoDashFp extends StObject {
   def property_TObject_ObjectTKey_String_Union[TObject /* <: js.Object */, TKey /* <: /* keyof TObject */ java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
   ]
+  @JSName("property")
+  def property_TObject_Object_LodashProperty1x2[TObject /* <: js.Object */](path: __, `object`: TObject): LodashProperty1x2[TObject]
   @JSName("property")
   def property_TObject_Object_LodashProperty2x2[TObject /* <: js.Object */](path: __): LodashProperty2x2[TObject]
   @JSName("property")
@@ -4676,8 +4752,8 @@ trait LoDashFp extends StObject {
   var range_Original: LodashRange
   
   def rearg(indexes: Many[Double]): LodashRearg1x1
-  def rearg(indexes: Many[Double], func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
-  def rearg(indexes: __, func: js.Function1[/* repeated */ js.Any, js.Any]): LodashRearg1x2
+  def rearg(indexes: Many[Double], func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any]
+  def rearg(indexes: __, func: js.Function1[/* repeated */ Any, Any]): LodashRearg1x2
   @JSName("rearg")
   var rearg_Original: LodashRearg
   
@@ -4888,25 +4964,25 @@ trait LoDashFp extends StObject {
   def replace(pattern: java.lang.String, replacement: ReplaceFunction): LodashReplace1x3
   def replace(pattern: java.lang.String, replacement: ReplaceFunction, string: java.lang.String): java.lang.String
   def replace(pattern: java.lang.String, replacement: __, string: java.lang.String): LodashReplace1x5
+  def replace(pattern: js.RegExp): LodashReplace1x1
+  def replace(pattern: js.RegExp, replacement: java.lang.String): LodashReplace1x3
+  def replace(pattern: js.RegExp, replacement: java.lang.String, string: java.lang.String): java.lang.String
+  def replace(pattern: js.RegExp, replacement: ReplaceFunction): LodashReplace1x3
+  def replace(pattern: js.RegExp, replacement: ReplaceFunction, string: java.lang.String): java.lang.String
+  def replace(pattern: js.RegExp, replacement: __, string: java.lang.String): LodashReplace1x5
   def replace(pattern: __, replacement: java.lang.String): LodashReplace1x2
   def replace(pattern: __, replacement: java.lang.String, string: java.lang.String): LodashReplace1x6
   def replace(pattern: __, replacement: ReplaceFunction): LodashReplace1x2
   def replace(pattern: __, replacement: ReplaceFunction, string: java.lang.String): LodashReplace1x6
   def replace(pattern: __, replacement: __, string: java.lang.String): LodashReplace1x4
-  def replace(pattern: RegExp): LodashReplace1x1
-  def replace(pattern: RegExp, replacement: java.lang.String): LodashReplace1x3
-  def replace(pattern: RegExp, replacement: java.lang.String, string: java.lang.String): java.lang.String
-  def replace(pattern: RegExp, replacement: ReplaceFunction): LodashReplace1x3
-  def replace(pattern: RegExp, replacement: ReplaceFunction, string: java.lang.String): java.lang.String
-  def replace(pattern: RegExp, replacement: __, string: java.lang.String): LodashReplace1x5
   @JSName("replace")
   var replace_Original: LodashReplace
   
-  def rest(func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
+  def rest(func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any]
   
   def restFrom(start: Double): LodashRestFrom1x1
-  def restFrom(start: Double, func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
-  def restFrom(start: __, func: js.Function1[/* repeated */ js.Any, js.Any]): LodashRestFrom1x2
+  def restFrom(start: Double, func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any]
+  def restFrom(start: __, func: js.Function1[/* repeated */ Any, Any]): LodashRestFrom1x2
   @JSName("restFrom")
   var restFrom_Original: LodashRestFrom
   
@@ -4914,12 +4990,12 @@ trait LoDashFp extends StObject {
   var rest_Original: LodashRest
   
   def result(path: PropertyPath): LodashResult1x1
-  def result(path: __, `object`: js.Any): LodashResult1x2
-  def result[TResult](path: PropertyPath, `object`: js.Any): TResult
+  def result(path: __, `object`: Any): LodashResult1x2
+  def result[TResult](path: PropertyPath, `object`: Any): TResult
   @JSName("result")
   var result_Original: LodashResult
   
-  def reverse[TList /* <: List[js.Any] */](array: TList): TList
+  def reverse[TList /* <: List[Any] */](array: TList): TList
   @JSName("reverse")
   var reverse_Original: LodashReverse
   
@@ -4967,31 +5043,31 @@ trait LoDashFp extends StObject {
   ]
   
   def set(path: PropertyPath): LodashSet1x1
-  def set(path: PropertyPath, value: js.Any): LodashSet1x3
+  def set(path: PropertyPath, value: Any): LodashSet1x3
   def set(path: PropertyPath, value: __, `object`: js.Object): LodashSet2x5
-  def set(path: __, value: js.Any): LodashSet1x2
-  def set(path: __, value: js.Any, `object`: js.Object): LodashSet2x6
+  def set(path: __, value: Any): LodashSet1x2
+  def set(path: __, value: Any, `object`: js.Object): LodashSet2x6
   def set(path: __, value: __, `object`: js.Object): LodashSet2x4
-  def set[T /* <: js.Object */](path: PropertyPath, value: js.Any, `object`: T): T
-  def set[TResult](path: PropertyPath, value: js.Any, `object`: js.Object): TResult
+  def set[T /* <: js.Object */](path: PropertyPath, value: Any, `object`: T): T
+  def set[TResult](path: PropertyPath, value: Any, `object`: js.Object): TResult
   def set[T /* <: js.Object */](path: PropertyPath, value: __, `object`: T): LodashSet1x5[T]
-  def set[T /* <: js.Object */](path: __, value: js.Any, `object`: T): LodashSet1x6[T]
+  def set[T /* <: js.Object */](path: __, value: Any, `object`: T): LodashSet1x6[T]
   def set[T /* <: js.Object */](path: __, value: __, `object`: T): LodashSet1x4[T]
   
   def setWith(customizer: __, path: PropertyPath): LodashSetWith1x2
-  def setWith(customizer: __, path: PropertyPath, value: js.Any): LodashSetWith1x6
-  def setWith(customizer: __, path: __, value: js.Any): LodashSetWith1x4
+  def setWith(customizer: __, path: PropertyPath, value: Any): LodashSetWith1x6
+  def setWith(customizer: __, path: __, value: Any): LodashSetWith1x4
   def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T]): LodashSetWith1x1[T]
   def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: PropertyPath): LodashSetWith1x3[T]
-  def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: PropertyPath, value: js.Any): LodashSetWith1x7[T]
-  def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: PropertyPath, value: js.Any, `object`: T): T
+  def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: PropertyPath, value: Any): LodashSetWith1x7[T]
+  def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: PropertyPath, value: Any, `object`: T): T
   def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: PropertyPath, value: __, `object`: T): LodashSetWith1x11[T]
-  def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: __, value: js.Any): LodashSetWith1x5[T]
-  def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: __, value: js.Any, `object`: T): LodashSetWith1x13[T]
+  def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: __, value: Any): LodashSetWith1x5[T]
+  def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: __, value: Any, `object`: T): LodashSetWith1x13[T]
   def setWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: __, value: __, `object`: T): LodashSetWith1x9[T]
-  def setWith[T /* <: js.Object */](customizer: __, path: PropertyPath, value: js.Any, `object`: T): LodashSetWith1x14[T]
+  def setWith[T /* <: js.Object */](customizer: __, path: PropertyPath, value: Any, `object`: T): LodashSetWith1x14[T]
   def setWith[T /* <: js.Object */](customizer: __, path: PropertyPath, value: __, `object`: T): LodashSetWith1x10[T]
-  def setWith[T /* <: js.Object */](customizer: __, path: __, value: js.Any, `object`: T): LodashSetWith1x12[T]
+  def setWith[T /* <: js.Object */](customizer: __, path: __, value: Any, `object`: T): LodashSetWith1x12[T]
   def setWith[T /* <: js.Object */](customizer: __, path: __, value: __, `object`: T): LodashSetWith1x8[T]
   @JSName("setWith")
   var setWith_Original: LodashSetWith
@@ -5182,22 +5258,22 @@ trait LoDashFp extends StObject {
   
   def split(separator: java.lang.String): LodashSplit1x1
   def split(separator: java.lang.String, string: java.lang.String): js.Array[java.lang.String]
+  def split(separator: js.RegExp): LodashSplit1x1
+  def split(separator: js.RegExp, string: java.lang.String): js.Array[java.lang.String]
   def split(separator: __): LodashSplit1x2
   def split(separator: __, string: java.lang.String): LodashSplit1x2
-  def split(separator: RegExp): LodashSplit1x1
-  def split(separator: RegExp, string: java.lang.String): js.Array[java.lang.String]
   @JSName("split")
   def split_Array(separator: java.lang.String): js.Array[java.lang.String]
   @JSName("split")
-  def split_Array(separator: RegExp): js.Array[java.lang.String]
+  def split_Array(separator: js.RegExp): js.Array[java.lang.String]
   @JSName("split")
   var split_Original: LodashSplit
   
-  def spread[TResult](func: js.Function1[/* repeated */ js.Any, TResult]): js.Function1[/* repeated */ js.Any, TResult]
+  def spread[TResult](func: js.Function1[/* repeated */ Any, TResult]): js.Function1[/* repeated */ Any, TResult]
   
   def spreadFrom(start: Double): LodashSpreadFrom1x1
-  def spreadFrom[TResult](start: Double, func: js.Function1[/* repeated */ js.Any, TResult]): js.Function1[/* repeated */ js.Any, TResult]
-  def spreadFrom[TResult](start: __, func: js.Function1[/* repeated */ js.Any, TResult]): LodashSpreadFrom1x2[TResult]
+  def spreadFrom[TResult](start: Double, func: js.Function1[/* repeated */ Any, TResult]): js.Function1[/* repeated */ Any, TResult]
+  def spreadFrom[TResult](start: __, func: js.Function1[/* repeated */ Any, TResult]): LodashSpreadFrom1x2[TResult]
   @JSName("spreadFrom")
   var spreadFrom_Original: LodashSpreadFrom
   
@@ -5214,7 +5290,7 @@ trait LoDashFp extends StObject {
   @JSName("startsWith")
   var startsWith_Original: LodashStartsWith
   
-  def stubArray(): js.Array[js.Any]
+  def stubArray(): js.Array[Any]
   @JSName("stubArray")
   var stubArray_Original: LodashStubArray
   
@@ -5222,7 +5298,7 @@ trait LoDashFp extends StObject {
   @JSName("stubFalse")
   var stubFalse_Original: LodashStubFalse
   
-  def stubObject(): js.Any
+  def stubObject(): Any
   @JSName("stubObject")
   var stubObject_Original: LodashStubObject
   
@@ -5241,7 +5317,7 @@ trait LoDashFp extends StObject {
   var subtract_Original: LodashSubtract
   
   def sum(): Double
-  def sum(collection: List[js.Any]): Double
+  def sum(collection: List[Any]): Double
   
   def sumBy[T](iteratee: java.lang.String): Double
   def sumBy[T](iteratee: java.lang.String, collection: List[T]): Double
@@ -5401,8 +5477,8 @@ trait LoDashFp extends StObject {
   var template_Original: LodashTemplate
   
   def throttle(wait: Double): LodashThrottle1x1
-  def throttle[T /* <: js.Function1[/* args */ js.Any, js.Any] */](wait: Double, func: T): DebouncedFunc[T]
-  def throttle[T /* <: js.Function1[/* args */ js.Any, js.Any] */](wait: __, func: T): LodashThrottle1x2[T]
+  def throttle[T /* <: js.Function1[/* args */ Any, Any] */](wait: Double, func: T): DebouncedFunc[T]
+  def throttle[T /* <: js.Function1[/* args */ Any, Any] */](wait: __, func: T): LodashThrottle1x2[T]
   @JSName("throttle")
   var throttle_Original: LodashThrottle
   
@@ -5418,7 +5494,7 @@ trait LoDashFp extends StObject {
   @JSName("times")
   var times_Original: LodashTimes
   
-  def toArray(): js.Array[js.Any]
+  def toArray(): js.Array[Any]
   def toArray[T](value: T): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ]
@@ -5429,15 +5505,15 @@ trait LoDashFp extends StObject {
   @JSName("toArray")
   def toArray_T[T](): js.Array[T]
   
-  def toFinite(value: js.Any): Double
+  def toFinite(value: Any): Double
   @JSName("toFinite")
   var toFinite_Original: LodashToFinite
   
-  def toInteger(value: js.Any): Double
+  def toInteger(value: Any): Double
   @JSName("toInteger")
   var toInteger_Original: LodashToInteger
   
-  def toLength(value: js.Any): Double
+  def toLength(value: Any): Double
   @JSName("toLength")
   var toLength_Original: LodashToLength
   
@@ -5445,15 +5521,15 @@ trait LoDashFp extends StObject {
   @JSName("toLower")
   var toLower_Original: LodashToLower
   
-  def toNumber(value: js.Any): Double
+  def toNumber(value: Any): Double
   @JSName("toNumber")
   var toNumber_Original: LodashToNumber
   
-  def toPairs(`object`: js.Object): js.Array[js.Tuple2[java.lang.String, js.Any]]
+  def toPairs(`object`: js.Object): js.Array[js.Tuple2[java.lang.String, Any]]
   def toPairs[T](`object`: Dictionary[T]): js.Array[js.Tuple2[java.lang.String, T]]
   def toPairs[T](`object`: NumericDictionary[T]): js.Array[js.Tuple2[java.lang.String, T]]
   
-  def toPairsIn(`object`: js.Object): js.Array[js.Tuple2[java.lang.String, js.Any]]
+  def toPairsIn(`object`: js.Object): js.Array[js.Tuple2[java.lang.String, Any]]
   def toPairsIn[T](`object`: Dictionary[T]): js.Array[js.Tuple2[java.lang.String, T]]
   def toPairsIn[T](`object`: NumericDictionary[T]): js.Array[js.Tuple2[java.lang.String, T]]
   @JSName("toPairsIn")
@@ -5462,19 +5538,19 @@ trait LoDashFp extends StObject {
   @JSName("toPairs")
   var toPairs_Original: LodashToPairs
   
-  def toPath(value: js.Any): js.Array[java.lang.String]
+  def toPath(value: Any): js.Array[java.lang.String]
   @JSName("toPath")
   var toPath_Original: LodashToPath
   
-  def toPlainObject(value: js.Any): js.Any
+  def toPlainObject(value: Any): Any
   @JSName("toPlainObject")
   var toPlainObject_Original: LodashToPlainObject
   
-  def toSafeInteger(value: js.Any): Double
+  def toSafeInteger(value: Any): Double
   @JSName("toSafeInteger")
   var toSafeInteger_Original: LodashToSafeInteger
   
-  def toString(value: js.Any): java.lang.String
+  def toString(value: Any): java.lang.String
   @JSName("toString")
   var toString_Original: LodashToString
   
@@ -5534,11 +5610,11 @@ trait LoDashFp extends StObject {
   @JSName("truncate")
   var truncate_Original: LodashTruncate
   
-  def unapply(func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any]
+  def unapply(func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any]
   @JSName("unapply")
   var unapply_Original: LodashUnapply
   
-  def unary[T, TResult](func: js.Function2[/* arg1 */ T, /* repeated */ js.Any, TResult]): js.Function1[/* arg1 */ T, TResult]
+  def unary[T, TResult](func: js.Function2[/* arg1 */ T, /* repeated */ Any, TResult]): js.Function1[/* arg1 */ T, TResult]
   @JSName("unary")
   var unary_Original: LodashUnary
   
@@ -5671,46 +5747,41 @@ trait LoDashFp extends StObject {
   var unzip_Original: LodashUnzip
   
   def update(path: PropertyPath): LodashUpdate1x1
-  def update(path: PropertyPath, updater: js.Function1[/* value */ js.Any, js.Any]): LodashUpdate1x3
-  def update(path: PropertyPath, updater: js.Function1[/* value */ js.Any, js.Any], `object`: js.Object): js.Any
+  def update(path: PropertyPath, updater: js.Function1[/* value */ Any, Any]): LodashUpdate1x3
+  def update(path: PropertyPath, updater: js.Function1[/* value */ Any, Any], `object`: js.Object): Any
   def update(path: PropertyPath, updater: __, `object`: js.Object): LodashUpdate1x5
-  def update(path: __, updater: js.Function1[/* value */ js.Any, js.Any]): LodashUpdate1x2
-  def update(path: __, updater: js.Function1[/* value */ js.Any, js.Any], `object`: js.Object): LodashUpdate1x6
+  def update(path: __, updater: js.Function1[/* value */ Any, Any]): LodashUpdate1x2
+  def update(path: __, updater: js.Function1[/* value */ Any, Any], `object`: js.Object): LodashUpdate1x6
   def update(path: __, updater: __, `object`: js.Object): LodashUpdate1x4
   
   def updateWith(customizer: __, path: PropertyPath): LodashUpdateWith1x2
-  def updateWith(customizer: __, path: PropertyPath, updater: js.Function1[/* oldValue */ js.Any, js.Any]): LodashUpdateWith1x6
-  def updateWith(customizer: __, path: __, updater: js.Function1[/* oldValue */ js.Any, js.Any]): LodashUpdateWith1x4
+  def updateWith(customizer: __, path: PropertyPath, updater: js.Function1[/* oldValue */ Any, Any]): LodashUpdateWith1x6
+  def updateWith(customizer: __, path: __, updater: js.Function1[/* oldValue */ Any, Any]): LodashUpdateWith1x4
   def updateWith[T /* <: js.Object */](customizer: SetWithCustomizer[T]): LodashUpdateWith1x1[T]
   def updateWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: PropertyPath): LodashUpdateWith1x3[T]
   def updateWith[T /* <: js.Object */](
     customizer: SetWithCustomizer[T],
     path: PropertyPath,
-    updater: js.Function1[/* oldValue */ js.Any, js.Any]
+    updater: js.Function1[/* oldValue */ Any, Any]
   ): LodashUpdateWith1x7[T]
   def updateWith[T /* <: js.Object */](
     customizer: SetWithCustomizer[T],
     path: PropertyPath,
-    updater: js.Function1[/* oldValue */ js.Any, js.Any],
+    updater: js.Function1[/* oldValue */ Any, Any],
     `object`: T
   ): T
   def updateWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: PropertyPath, updater: __, `object`: T): LodashUpdateWith1x11[T]
-  def updateWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: __, updater: js.Function1[/* oldValue */ js.Any, js.Any]): LodashUpdateWith1x5[T]
+  def updateWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: __, updater: js.Function1[/* oldValue */ Any, Any]): LodashUpdateWith1x5[T]
   def updateWith[T /* <: js.Object */](
     customizer: SetWithCustomizer[T],
     path: __,
-    updater: js.Function1[/* oldValue */ js.Any, js.Any],
+    updater: js.Function1[/* oldValue */ Any, Any],
     `object`: T
   ): LodashUpdateWith1x13[T]
   def updateWith[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: __, updater: __, `object`: T): LodashUpdateWith1x9[T]
-  def updateWith[T /* <: js.Object */](
-    customizer: __,
-    path: PropertyPath,
-    updater: js.Function1[/* oldValue */ js.Any, js.Any],
-    `object`: T
-  ): LodashUpdateWith1x14[T]
+  def updateWith[T /* <: js.Object */](customizer: __, path: PropertyPath, updater: js.Function1[/* oldValue */ Any, Any], `object`: T): LodashUpdateWith1x14[T]
   def updateWith[T /* <: js.Object */](customizer: __, path: PropertyPath, updater: __, `object`: T): LodashUpdateWith1x10[T]
-  def updateWith[T /* <: js.Object */](customizer: __, path: __, updater: js.Function1[/* oldValue */ js.Any, js.Any], `object`: T): LodashUpdateWith1x12[T]
+  def updateWith[T /* <: js.Object */](customizer: __, path: __, updater: js.Function1[/* oldValue */ Any, Any], `object`: T): LodashUpdateWith1x12[T]
   def updateWith[T /* <: js.Object */](customizer: __, path: __, updater: __, `object`: T): LodashUpdateWith1x8[T]
   @JSName("updateWith")
   var updateWith_Original: LodashUpdateWith
@@ -5726,20 +5797,17 @@ trait LoDashFp extends StObject {
   @JSName("upperFirst")
   var upperFirst_Original: LodashUpperFirst
   
-  def useWith(func: js.Function1[/* repeated */ js.Any, js.Any]): LodashOverArgs1x1
+  def useWith(func: js.Function1[/* repeated */ Any, Any]): LodashOverArgs1x1
   def useWith(
-    func: js.Function1[/* repeated */ js.Any, js.Any],
-    transforms: Many[js.Function1[/* repeated */ js.Any, js.Any]]
-  ): js.Function1[/* repeated */ js.Any, js.Any]
-  def useWith(func: __, transforms: Many[js.Function1[/* repeated */ js.Any, js.Any]]): LodashOverArgs1x2
+    func: js.Function1[/* repeated */ Any, Any],
+    transforms: Many[js.Function1[/* repeated */ Any, Any]]
+  ): js.Function1[/* repeated */ Any, Any]
+  def useWith(func: __, transforms: Many[js.Function1[/* repeated */ Any, Any]]): LodashOverArgs1x2
   @JSName("useWith")
   var useWith_Original: LodashOverArgs
   
-  def values(`object`: js.Any): js.Array[js.Any]
+  def values(`object`: Any): js.Array[Any]
   def values[T /* <: js.Object */](): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ]
-  def values[T /* <: js.Object */](`object`: T): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ]
   def values[T](`object`: Dictionary[T]): js.Array[T]
@@ -5764,6 +5832,10 @@ trait LoDashFp extends StObject {
   var values_Original: LodashValues
   @JSName("values")
   def values_T[T](): js.Array[T]
+  @JSName("values")
+  def values_T_Object[T /* <: js.Object */](`object`: T): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ]
   
   def where[T](source: ConformsPredicateObject[T]): LodashConformsTo1x1[T]
   def where[T](source: ConformsPredicateObject[T], `object`: T): Boolean
@@ -5891,8 +5963,8 @@ trait LoDashFp extends StObject {
   def zipObject[T](props: __, values: List[T]): LodashZipObject1x2[T]
   
   def zipObjectDeep(paths: List[PropertyPath]): LodashZipObjectDeep1x1
-  def zipObjectDeep(paths: List[PropertyPath], values: List[js.Any]): js.Object
-  def zipObjectDeep(paths: __, values: List[js.Any]): LodashZipObjectDeep1x2
+  def zipObjectDeep(paths: List[PropertyPath], values: List[Any]): js.Object
+  def zipObjectDeep(paths: __, values: List[Any]): LodashZipObjectDeep1x2
   @JSName("zipObjectDeep")
   var zipObjectDeep_Original: LodashZipObjectDeep
   
@@ -5925,11 +5997,11 @@ object LoDashFp {
     add: LodashAdd,
     after: LodashAfter,
     all: LodashEvery,
-    allPass: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean],
-    always: /* value */ js.Any => js.Function0[js.Any],
+    allPass: /* predicates */ Many[js.Function1[/* repeated */ Any, Boolean]] => js.Function1[/* repeated */ Any, Boolean],
+    always: /* value */ Any => js.Function0[Any],
     any: LodashSome,
-    anyPass: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean],
-    apply: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Function1[/* repeated */ js.Any, js.Any],
+    anyPass: /* predicates */ Many[js.Function1[/* repeated */ Any, Boolean]] => js.Function1[/* repeated */ Any, Boolean],
+    apply: /* func */ js.Function1[/* repeated */ Any, Any] => js.Function1[/* repeated */ Any, Any],
     ary: LodashAry,
     assign: LodashAssign,
     assignAll: LodashAssignAll,
@@ -5942,29 +6014,29 @@ object LoDashFp {
     assoc: LodashSet,
     assocPath: LodashSet,
     at: LodashAt,
-    attempt: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Any | Error,
+    attempt: /* func */ js.Function1[/* repeated */ Any, Any] => Any | js.Error,
     before: LodashBefore,
     bind: LodashBind,
     bindAll: LodashBindAll,
     bindKey: LodashBindKey,
     camelCase: /* string */ java.lang.String => java.lang.String,
     capitalize: /* string */ java.lang.String => java.lang.String,
-    castArray: /* value */ Many[js.Any] => js.Array[js.Any],
+    castArray: /* value */ Many[Any] => js.Array[Any],
     ceil: /* n */ Double => Double,
     chunk: LodashChunk,
     clamp: LodashClamp,
-    cloneDeep: /* value */ js.Any => js.Any,
+    cloneDeep: /* value */ Any => Any,
     cloneDeepWith: LodashCloneDeepWith,
     cloneWith: LodashCloneWith,
-    clone_ : /* value */ js.Any => js.Any,
-    compact: /* array */ js.UndefOr[(List[js.UndefOr[js.Any | Null | `false` | _empty | `0`]]) | Null] => js.Array[js.Any],
-    complement: /* predicate */ js.Function1[/* args */ js.Array[js.Any], js.Any] => js.Function1[/* args */ js.Array[js.Any], Boolean],
+    clone_ : /* value */ Any => Any,
+    compact: /* array */ js.UndefOr[List[Any] | Null] => js.Array[Exclude[Any, js.UndefOr[Null | `false` | _empty | `0`]]],
+    complement: /* predicate */ js.Function1[/* args */ js.Array[Any], Any] => js.Function1[/* args */ js.Array[Any], Boolean],
     compose: LodashFlowRight,
     concat: LodashConcat,
-    cond: /* pairs */ js.Array[CondPair[js.Any, js.Any]] => js.Function1[/* Target */ js.Any, js.Any],
+    cond: LodashCond,
     conforms: LodashConformsTo,
     conformsTo: LodashConformsTo,
-    constant: /* value */ js.Any => js.Function0[js.Any],
+    constant: /* value */ Any => js.Function0[Any],
     contains: LodashContains,
     countBy: LodashCountBy,
     create: /* prototype */ js.Object => js.Object,
@@ -5978,7 +6050,7 @@ object LoDashFp {
     defaults: LodashDefaults,
     defaultsAll: LodashDefaultsAll,
     defaultsDeep: LodashDefaultsDeep,
-    defaultsDeepAll: /* object */ js.Array[js.Any] => js.Any,
+    defaultsDeepAll: /* object */ js.Array[Any] => Any,
     defer: LodashDefer,
     delay: LodashDelay,
     difference: LodashDifference,
@@ -6019,14 +6091,14 @@ object LoDashFp {
     findLastIndex: LodashFindLastIndex,
     findLastIndexFrom: LodashFindLastIndexFrom,
     findLastKey: LodashFindLastKey,
-    first: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any],
+    first: /* array */ js.UndefOr[List[Any] | Null] => js.UndefOr[Any],
     flatMap: LodashFlatMap,
     flatMapDeep: LodashFlatMapDeep,
     flatMapDepth: LodashFlatMapDepth,
-    flatten: /* array */ js.UndefOr[List[Many[js.Any]] | Null] => js.Array[js.Any],
-    flattenDeep: /* array */ js.UndefOr[ListOfRecursiveArraysOrValues[js.Any] | Null] => js.Array[js.Any],
+    flatten: /* array */ js.UndefOr[List[Many[Any]] | Null] => js.Array[Any],
+    flattenDeep: LodashFlattenDeep,
     flattenDepth: LodashFlattenDepth,
-    flip: /* func */ js.Function1[/* args */ js.Any, js.Any] => js.Function1[/* args */ js.Any, js.Any],
+    flip: /* func */ js.Function1[/* args */ Any, Any] => js.Function1[/* args */ Any, Any],
     floor: /* n */ Double => Double,
     flow: LodashFlow,
     flowRight: LodashFlowRight,
@@ -6037,8 +6109,8 @@ object LoDashFp {
     forOwn: LodashForOwn,
     forOwnRight: LodashForOwnRight,
     fromPairs: LodashFromPairs,
-    functions: /* object */ js.Any => js.Array[java.lang.String],
-    functionsIn: /* object */ js.Any => js.Array[java.lang.String],
+    functions: /* object */ Any => js.Array[java.lang.String],
+    functionsIn: /* object */ Any => js.Array[java.lang.String],
     get: LodashGet,
     getOr: LodashGetOr,
     groupBy: LodashGroupBy,
@@ -6046,7 +6118,7 @@ object LoDashFp {
     gte: LodashGte,
     has: LodashHas,
     hasIn: LodashHasIn,
-    head: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any],
+    head: /* array */ js.UndefOr[List[Any] | Null] => js.UndefOr[Any],
     identical: LodashEq,
     identity: LodashIdentity,
     inRange: LodashInRange,
@@ -6055,8 +6127,8 @@ object LoDashFp {
     indexBy: LodashKeyBy,
     indexOf: LodashIndexOf,
     indexOfFrom: LodashIndexOfFrom,
-    init: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any],
-    initial: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any],
+    init: /* array */ js.UndefOr[List[Any] | Null] => js.Array[Any],
+    initial: /* array */ js.UndefOr[List[Any] | Null] => js.Array[Any],
     intersection: LodashIntersection,
     intersectionBy: LodashIntersectionBy,
     intersectionWith: LodashIntersectionWith,
@@ -6067,51 +6139,51 @@ object LoDashFp {
     invokeArgs: LodashInvokeArgs,
     invokeArgsMap: LodashInvokeArgsMap,
     invokeMap: LodashInvokeMap,
-    isArguments: /* value */ js.Any => /* is std.IArguments */ Boolean,
-    isArray: /* value */ js.Any => /* is std.Array<any> */ Boolean,
-    isArrayBuffer: /* value */ js.Any => /* is std.ArrayBuffer */ Boolean,
+    isArguments: /* value */ Any => /* is std.IArguments */ Boolean,
+    isArray: /* value */ Any => /* is std.Array<any> */ Boolean,
+    isArrayBuffer: /* value */ Any => /* is std.ArrayBuffer */ Boolean,
     isArrayLike: LodashIsArrayLike,
     isArrayLikeObject: LodashIsArrayLikeObject,
-    isBoolean: /* value */ js.Any => /* is boolean */ Boolean,
-    isBuffer: /* value */ js.Any => Boolean,
-    isDate: /* value */ js.Any => /* is std.Date */ Boolean,
-    isElement: /* value */ js.Any => Boolean,
-    isEmpty: /* value */ js.Any => Boolean,
+    isBoolean: /* value */ Any => /* is boolean */ Boolean,
+    isBuffer: /* value */ Any => Boolean,
+    isDate: /* value */ Any => /* is std.Date */ Boolean,
+    isElement: /* value */ Any => Boolean,
+    isEmpty: LodashIsEmpty,
     isEqual: LodashIsEqual,
     isEqualWith: LodashIsEqualWith,
-    isError: /* value */ js.Any => /* is std.Error */ Boolean,
-    isFinite: /* value */ js.Any => Boolean,
-    isFunction: /* value */ js.Any => Boolean,
-    isInteger: /* value */ js.Any => Boolean,
-    isLength: /* value */ js.Any => Boolean,
-    isMap: /* value */ js.Any => /* is std.Map<any, any> */ Boolean,
+    isError: /* value */ Any => /* is std.Error */ Boolean,
+    isFinite: /* value */ Any => Boolean,
+    isFunction: /* value */ Any => Boolean,
+    isInteger: /* value */ Any => Boolean,
+    isLength: /* value */ Any => Boolean,
+    isMap: /* value */ Any => /* is std.Map<any, any> */ Boolean,
     isMatch: LodashIsMatch,
     isMatchWith: LodashIsMatchWith,
-    isNaN: /* value */ js.Any => Boolean,
-    isNative: /* value */ js.Any => Boolean,
-    isNil: /* value */ js.Any => Boolean,
-    isNull: /* value */ js.Any => /* is null */ Boolean,
-    isNumber: /* value */ js.Any => /* is number */ Boolean,
-    isObject: /* value */ js.Any => /* is object */ Boolean,
-    isObjectLike: /* value */ js.Any => Boolean,
-    isPlainObject: /* value */ js.Any => Boolean,
-    isRegExp: /* value */ js.Any => /* is std.RegExp */ Boolean,
-    isSafeInteger: /* value */ js.Any => Boolean,
-    isSet: /* value */ js.Any => /* is std.Set<any> */ Boolean,
-    isString: /* value */ js.Any => /* is string */ Boolean,
-    isSymbol: /* value */ js.Any => /* is symbol */ Boolean,
-    isTypedArray: /* value */ js.Any => Boolean,
-    isUndefined: /* value */ js.Any => /* is undefined */ Boolean,
-    isWeakMap: /* value */ js.Any => /* is std.WeakMap<object, any> */ Boolean,
-    isWeakSet: /* value */ js.Any => /* is std.WeakSet<object> */ Boolean,
+    isNaN: /* value */ Any => Boolean,
+    isNative: /* value */ Any => Boolean,
+    isNil: /* value */ Any => Boolean,
+    isNull: /* value */ Any => /* is null */ Boolean,
+    isNumber: /* value */ Any => /* is number */ Boolean,
+    isObject: /* value */ Any => /* is object */ Boolean,
+    isObjectLike: /* value */ Any => Boolean,
+    isPlainObject: /* value */ Any => Boolean,
+    isRegExp: /* value */ Any => /* is std.RegExp */ Boolean,
+    isSafeInteger: /* value */ Any => Boolean,
+    isSet: /* value */ Any => /* is std.Set<any> */ Boolean,
+    isString: /* value */ Any => /* is string */ Boolean,
+    isSymbol: /* value */ Any => /* is symbol */ Boolean,
+    isTypedArray: /* value */ Any => Boolean,
+    isUndefined: /* value */ Any => /* is undefined */ Boolean,
+    isWeakMap: /* value */ Any => /* is std.WeakMap<object, any> */ Boolean,
+    isWeakSet: /* value */ Any => /* is std.WeakSet<object> */ Boolean,
     iteratee: LodashIteratee,
     join: LodashJoin,
-    juxt: /* iteratees */ Many[js.Function1[/* repeated */ js.Any, js.Any]] => js.Function1[/* repeated */ js.Any, js.Array[js.Any]],
+    juxt: /* iteratees */ Many[js.Function1[/* repeated */ Any, Any]] => js.Function1[/* repeated */ Any, js.Array[Any]],
     kebabCase: /* string */ java.lang.String => java.lang.String,
     keyBy: LodashKeyBy,
-    keys: /* object */ js.Any => js.Array[java.lang.String],
-    keysIn: /* object */ js.Any => js.Array[java.lang.String],
-    last: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any],
+    keys: /* object */ Any => js.Array[java.lang.String],
+    keysIn: /* object */ Any => js.Array[java.lang.String],
+    last: /* array */ js.UndefOr[List[Any] | Null] => js.UndefOr[Any],
     lastIndexOf: LodashLastIndexOf,
     lastIndexOfFrom: LodashLastIndexOfFrom,
     lowerCase: /* string */ java.lang.String => java.lang.String,
@@ -6123,36 +6195,36 @@ object LoDashFp {
     mapValues: LodashMapValues,
     matches: LodashIsMatch,
     matchesProperty: LodashMatchesProperty,
-    max: /* collection */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any],
+    max: /* collection */ js.UndefOr[List[Any] | Null] => js.UndefOr[Any],
     maxBy: LodashMaxBy,
-    mean: /* collection */ js.UndefOr[List[js.Any] | Null] => Double,
+    mean: /* collection */ js.UndefOr[List[Any] | Null] => Double,
     meanBy: LodashMeanBy,
-    memoize: /* func */ js.Function1[/* args */ js.Any, js.Any] => (js.Function1[/* args */ js.Any, js.Any]) & MemoizedFunction,
+    memoize: /* func */ js.Function1[/* args */ Any, Any] => (js.Function1[/* args */ Any, Any]) & MemoizedFunction,
     merge: LodashMerge,
     mergeAll: LodashMergeAll,
     mergeAllWith: LodashMergeAllWith,
     mergeWith: LodashMergeWith,
-    method: /* path */ PropertyPath => js.Function1[/* object */ js.Any, js.Any],
-    methodOf: /* object */ js.Object => js.Function1[/* path */ PropertyPath, js.Any],
-    min: /* collection */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any],
+    method: /* path */ PropertyPath => js.Function1[/* object */ Any, Any],
+    methodOf: /* object */ js.Object => js.Function1[/* path */ PropertyPath, Any],
+    min: /* collection */ js.UndefOr[List[Any] | Null] => js.UndefOr[Any],
     minBy: LodashMinBy,
     multiply: LodashMultiply,
     nAry: LodashAry,
-    negate: /* predicate */ js.Function1[/* args */ js.Array[js.Any], js.Any] => js.Function1[/* args */ js.Array[js.Any], Boolean],
+    negate: /* predicate */ js.Function1[/* args */ js.Array[Any], Any] => js.Function1[/* args */ js.Array[Any], Boolean],
     noConflict: () => Typeoflodash,
     noop: LodashNoop,
     now: () => Double,
     nth: LodashNth,
-    nthArg: /* n */ Double => js.Function1[/* repeated */ js.Any, js.Any],
+    nthArg: /* n */ Double => js.Function1[/* repeated */ Any, Any],
     omit: LodashOmit,
     omitAll: LodashOmit,
     omitBy: LodashOmitBy,
-    once: /* func */ js.Function1[/* args */ js.Any, js.Any] => js.Function1[/* args */ js.Any, js.Any],
+    once: /* func */ js.Function1[/* args */ Any, Any] => js.Function1[/* args */ Any, Any],
     orderBy: LodashOrderBy,
-    over: /* iteratees */ Many[js.Function1[/* repeated */ js.Any, js.Any]] => js.Function1[/* repeated */ js.Any, js.Array[js.Any]],
+    over: /* iteratees */ Many[js.Function1[/* repeated */ Any, Any]] => js.Function1[/* repeated */ Any, js.Array[Any]],
     overArgs: LodashOverArgs,
-    overEvery: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean],
-    overSome: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean],
+    overEvery: /* predicates */ Many[js.Function1[/* repeated */ Any, Boolean]] => js.Function1[/* repeated */ Any, Boolean],
+    overSome: /* predicates */ Many[js.Function1[/* repeated */ Any, Boolean]] => js.Function1[/* repeated */ Any, Boolean],
     pad: LodashPad,
     padChars: LodashPadChars,
     padCharsEnd: LodashPadCharsEnd,
@@ -6174,7 +6246,7 @@ object LoDashFp {
     placeholder: __,
     pluck: LodashMap
   ): LoDashFp = {
-    val __obj = js.Dynamic.literal(F = js.Any.fromFunction0(F), T = js.Any.fromFunction0(T), __ = __.asInstanceOf[js.Any], add = add.asInstanceOf[js.Any], after = after.asInstanceOf[js.Any], all = all.asInstanceOf[js.Any], allPass = js.Any.fromFunction1(allPass), always = js.Any.fromFunction1(always), any = any.asInstanceOf[js.Any], anyPass = js.Any.fromFunction1(anyPass), apply = js.Any.fromFunction1(apply), ary = ary.asInstanceOf[js.Any], assign = assign.asInstanceOf[js.Any], assignAll = assignAll.asInstanceOf[js.Any], assignAllWith = assignAllWith.asInstanceOf[js.Any], assignIn = assignIn.asInstanceOf[js.Any], assignInAll = assignInAll.asInstanceOf[js.Any], assignInAllWith = assignInAllWith.asInstanceOf[js.Any], assignInWith = assignInWith.asInstanceOf[js.Any], assignWith = assignWith.asInstanceOf[js.Any], assoc = assoc.asInstanceOf[js.Any], assocPath = assocPath.asInstanceOf[js.Any], at = at.asInstanceOf[js.Any], attempt = js.Any.fromFunction1(attempt), before = before.asInstanceOf[js.Any], bind = bind.asInstanceOf[js.Any], bindAll = bindAll.asInstanceOf[js.Any], bindKey = bindKey.asInstanceOf[js.Any], camelCase = js.Any.fromFunction1(camelCase), capitalize = js.Any.fromFunction1(capitalize), castArray = js.Any.fromFunction1(castArray), ceil = js.Any.fromFunction1(ceil), chunk = chunk.asInstanceOf[js.Any], clamp = clamp.asInstanceOf[js.Any], cloneDeep = js.Any.fromFunction1(cloneDeep), cloneDeepWith = cloneDeepWith.asInstanceOf[js.Any], cloneWith = cloneWith.asInstanceOf[js.Any], compact = js.Any.fromFunction1(compact), complement = js.Any.fromFunction1(complement), compose = compose.asInstanceOf[js.Any], concat = concat.asInstanceOf[js.Any], cond = js.Any.fromFunction1(cond), conforms = conforms.asInstanceOf[js.Any], conformsTo = conformsTo.asInstanceOf[js.Any], constant = js.Any.fromFunction1(constant), contains = contains.asInstanceOf[js.Any], countBy = countBy.asInstanceOf[js.Any], create = js.Any.fromFunction1(create), curry = curry.asInstanceOf[js.Any], curryN = curryN.asInstanceOf[js.Any], curryRight = curryRight.asInstanceOf[js.Any], curryRightN = curryRightN.asInstanceOf[js.Any], debounce = debounce.asInstanceOf[js.Any], deburr = js.Any.fromFunction1(deburr), defaultTo = defaultTo.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], defaultsAll = defaultsAll.asInstanceOf[js.Any], defaultsDeep = defaultsDeep.asInstanceOf[js.Any], defaultsDeepAll = js.Any.fromFunction1(defaultsDeepAll), defer = defer.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], difference = difference.asInstanceOf[js.Any], differenceBy = differenceBy.asInstanceOf[js.Any], differenceWith = differenceWith.asInstanceOf[js.Any], dissoc = dissoc.asInstanceOf[js.Any], dissocPath = dissocPath.asInstanceOf[js.Any], divide = divide.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], dropLast = dropLast.asInstanceOf[js.Any], dropLastWhile = dropLastWhile.asInstanceOf[js.Any], dropRight = dropRight.asInstanceOf[js.Any], dropRightWhile = dropRightWhile.asInstanceOf[js.Any], dropWhile = dropWhile.asInstanceOf[js.Any], each = each.asInstanceOf[js.Any], eachRight = eachRight.asInstanceOf[js.Any], endsWith = endsWith.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], entriesIn = entriesIn.asInstanceOf[js.Any], escape = js.Any.fromFunction1(escape), escapeRegExp = js.Any.fromFunction1(escapeRegExp), every = every.asInstanceOf[js.Any], extend = extend.asInstanceOf[js.Any], extendAll = extendAll.asInstanceOf[js.Any], extendAllWith = extendAllWith.asInstanceOf[js.Any], extendWith = extendWith.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], findFrom = findFrom.asInstanceOf[js.Any], findIndex = findIndex.asInstanceOf[js.Any], findIndexFrom = findIndexFrom.asInstanceOf[js.Any], findKey = findKey.asInstanceOf[js.Any], findLast = findLast.asInstanceOf[js.Any], findLastFrom = findLastFrom.asInstanceOf[js.Any], findLastIndex = findLastIndex.asInstanceOf[js.Any], findLastIndexFrom = findLastIndexFrom.asInstanceOf[js.Any], findLastKey = findLastKey.asInstanceOf[js.Any], first = js.Any.fromFunction1(first), flatMap = flatMap.asInstanceOf[js.Any], flatMapDeep = flatMapDeep.asInstanceOf[js.Any], flatMapDepth = flatMapDepth.asInstanceOf[js.Any], flatten = js.Any.fromFunction1(flatten), flattenDeep = js.Any.fromFunction1(flattenDeep), flattenDepth = flattenDepth.asInstanceOf[js.Any], flip = js.Any.fromFunction1(flip), floor = js.Any.fromFunction1(floor), flow = flow.asInstanceOf[js.Any], flowRight = flowRight.asInstanceOf[js.Any], forEach = forEach.asInstanceOf[js.Any], forEachRight = forEachRight.asInstanceOf[js.Any], forIn = forIn.asInstanceOf[js.Any], forInRight = forInRight.asInstanceOf[js.Any], forOwn = forOwn.asInstanceOf[js.Any], forOwnRight = forOwnRight.asInstanceOf[js.Any], fromPairs = fromPairs.asInstanceOf[js.Any], functions = js.Any.fromFunction1(functions), functionsIn = js.Any.fromFunction1(functionsIn), get = get.asInstanceOf[js.Any], getOr = getOr.asInstanceOf[js.Any], groupBy = groupBy.asInstanceOf[js.Any], gt = gt.asInstanceOf[js.Any], gte = gte.asInstanceOf[js.Any], has = has.asInstanceOf[js.Any], hasIn = hasIn.asInstanceOf[js.Any], head = js.Any.fromFunction1(head), identical = identical.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], inRange = inRange.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], includesFrom = includesFrom.asInstanceOf[js.Any], indexBy = indexBy.asInstanceOf[js.Any], indexOf = indexOf.asInstanceOf[js.Any], indexOfFrom = indexOfFrom.asInstanceOf[js.Any], init = js.Any.fromFunction1(init), initial = js.Any.fromFunction1(initial), intersection = intersection.asInstanceOf[js.Any], intersectionBy = intersectionBy.asInstanceOf[js.Any], intersectionWith = intersectionWith.asInstanceOf[js.Any], invert = js.Any.fromFunction1(invert), invertBy = invertBy.asInstanceOf[js.Any], invertObj = js.Any.fromFunction1(invertObj), invoke = invoke.asInstanceOf[js.Any], invokeArgs = invokeArgs.asInstanceOf[js.Any], invokeArgsMap = invokeArgsMap.asInstanceOf[js.Any], invokeMap = invokeMap.asInstanceOf[js.Any], isArguments = js.Any.fromFunction1(isArguments), isArray = js.Any.fromFunction1(isArray), isArrayBuffer = js.Any.fromFunction1(isArrayBuffer), isArrayLike = isArrayLike.asInstanceOf[js.Any], isArrayLikeObject = isArrayLikeObject.asInstanceOf[js.Any], isBoolean = js.Any.fromFunction1(isBoolean), isBuffer = js.Any.fromFunction1(isBuffer), isDate = js.Any.fromFunction1(isDate), isElement = js.Any.fromFunction1(isElement), isEmpty = js.Any.fromFunction1(isEmpty), isEqual = isEqual.asInstanceOf[js.Any], isEqualWith = isEqualWith.asInstanceOf[js.Any], isError = js.Any.fromFunction1(isError), isFinite = js.Any.fromFunction1(isFinite), isFunction = js.Any.fromFunction1(isFunction), isInteger = js.Any.fromFunction1(isInteger), isLength = js.Any.fromFunction1(isLength), isMap = js.Any.fromFunction1(isMap), isMatch = isMatch.asInstanceOf[js.Any], isMatchWith = isMatchWith.asInstanceOf[js.Any], isNaN = js.Any.fromFunction1(isNaN), isNative = js.Any.fromFunction1(isNative), isNil = js.Any.fromFunction1(isNil), isNull = js.Any.fromFunction1(isNull), isNumber = js.Any.fromFunction1(isNumber), isObject = js.Any.fromFunction1(isObject), isObjectLike = js.Any.fromFunction1(isObjectLike), isPlainObject = js.Any.fromFunction1(isPlainObject), isRegExp = js.Any.fromFunction1(isRegExp), isSafeInteger = js.Any.fromFunction1(isSafeInteger), isSet = js.Any.fromFunction1(isSet), isString = js.Any.fromFunction1(isString), isSymbol = js.Any.fromFunction1(isSymbol), isTypedArray = js.Any.fromFunction1(isTypedArray), isUndefined = js.Any.fromFunction1(isUndefined), isWeakMap = js.Any.fromFunction1(isWeakMap), isWeakSet = js.Any.fromFunction1(isWeakSet), iteratee = iteratee.asInstanceOf[js.Any], join = join.asInstanceOf[js.Any], juxt = js.Any.fromFunction1(juxt), kebabCase = js.Any.fromFunction1(kebabCase), keyBy = keyBy.asInstanceOf[js.Any], keys = js.Any.fromFunction1(keys), keysIn = js.Any.fromFunction1(keysIn), last = js.Any.fromFunction1(last), lastIndexOf = lastIndexOf.asInstanceOf[js.Any], lastIndexOfFrom = lastIndexOfFrom.asInstanceOf[js.Any], lowerCase = js.Any.fromFunction1(lowerCase), lowerFirst = js.Any.fromFunction1(lowerFirst), lt = lt.asInstanceOf[js.Any], lte = lte.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mapKeys = mapKeys.asInstanceOf[js.Any], mapValues = mapValues.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], matchesProperty = matchesProperty.asInstanceOf[js.Any], max = js.Any.fromFunction1(max), maxBy = maxBy.asInstanceOf[js.Any], mean = js.Any.fromFunction1(mean), meanBy = meanBy.asInstanceOf[js.Any], memoize = js.Any.fromFunction1(memoize), merge = merge.asInstanceOf[js.Any], mergeAll = mergeAll.asInstanceOf[js.Any], mergeAllWith = mergeAllWith.asInstanceOf[js.Any], mergeWith = mergeWith.asInstanceOf[js.Any], method = js.Any.fromFunction1(method), methodOf = js.Any.fromFunction1(methodOf), min = js.Any.fromFunction1(min), minBy = minBy.asInstanceOf[js.Any], multiply = multiply.asInstanceOf[js.Any], nAry = nAry.asInstanceOf[js.Any], negate = js.Any.fromFunction1(negate), noConflict = js.Any.fromFunction0(noConflict), noop = noop.asInstanceOf[js.Any], now = js.Any.fromFunction0(now), nth = nth.asInstanceOf[js.Any], nthArg = js.Any.fromFunction1(nthArg), omit = omit.asInstanceOf[js.Any], omitAll = omitAll.asInstanceOf[js.Any], omitBy = omitBy.asInstanceOf[js.Any], once = js.Any.fromFunction1(once), orderBy = orderBy.asInstanceOf[js.Any], over = js.Any.fromFunction1(over), overArgs = overArgs.asInstanceOf[js.Any], overEvery = js.Any.fromFunction1(overEvery), overSome = js.Any.fromFunction1(overSome), pad = pad.asInstanceOf[js.Any], padChars = padChars.asInstanceOf[js.Any], padCharsEnd = padCharsEnd.asInstanceOf[js.Any], padCharsStart = padCharsStart.asInstanceOf[js.Any], padEnd = padEnd.asInstanceOf[js.Any], padStart = padStart.asInstanceOf[js.Any], parseInt = parseInt.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any], partialRight = partialRight.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathEq = pathEq.asInstanceOf[js.Any], pathOr = pathOr.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], pick = pick.asInstanceOf[js.Any], pickAll = pickAll.asInstanceOf[js.Any], pickBy = pickBy.asInstanceOf[js.Any], pipe = pipe.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], pluck = pluck.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(F = js.Any.fromFunction0(F), T = js.Any.fromFunction0(T), __ = __.asInstanceOf[js.Any], add = add.asInstanceOf[js.Any], after = after.asInstanceOf[js.Any], all = all.asInstanceOf[js.Any], allPass = js.Any.fromFunction1(allPass), always = js.Any.fromFunction1(always), any = any.asInstanceOf[js.Any], anyPass = js.Any.fromFunction1(anyPass), apply = js.Any.fromFunction1(apply), ary = ary.asInstanceOf[js.Any], assign = assign.asInstanceOf[js.Any], assignAll = assignAll.asInstanceOf[js.Any], assignAllWith = assignAllWith.asInstanceOf[js.Any], assignIn = assignIn.asInstanceOf[js.Any], assignInAll = assignInAll.asInstanceOf[js.Any], assignInAllWith = assignInAllWith.asInstanceOf[js.Any], assignInWith = assignInWith.asInstanceOf[js.Any], assignWith = assignWith.asInstanceOf[js.Any], assoc = assoc.asInstanceOf[js.Any], assocPath = assocPath.asInstanceOf[js.Any], at = at.asInstanceOf[js.Any], attempt = js.Any.fromFunction1(attempt), before = before.asInstanceOf[js.Any], bind = bind.asInstanceOf[js.Any], bindAll = bindAll.asInstanceOf[js.Any], bindKey = bindKey.asInstanceOf[js.Any], camelCase = js.Any.fromFunction1(camelCase), capitalize = js.Any.fromFunction1(capitalize), castArray = js.Any.fromFunction1(castArray), ceil = js.Any.fromFunction1(ceil), chunk = chunk.asInstanceOf[js.Any], clamp = clamp.asInstanceOf[js.Any], cloneDeep = js.Any.fromFunction1(cloneDeep), cloneDeepWith = cloneDeepWith.asInstanceOf[js.Any], cloneWith = cloneWith.asInstanceOf[js.Any], compact = js.Any.fromFunction1(compact), complement = js.Any.fromFunction1(complement), compose = compose.asInstanceOf[js.Any], concat = concat.asInstanceOf[js.Any], cond = cond.asInstanceOf[js.Any], conforms = conforms.asInstanceOf[js.Any], conformsTo = conformsTo.asInstanceOf[js.Any], constant = js.Any.fromFunction1(constant), contains = contains.asInstanceOf[js.Any], countBy = countBy.asInstanceOf[js.Any], create = js.Any.fromFunction1(create), curry = curry.asInstanceOf[js.Any], curryN = curryN.asInstanceOf[js.Any], curryRight = curryRight.asInstanceOf[js.Any], curryRightN = curryRightN.asInstanceOf[js.Any], debounce = debounce.asInstanceOf[js.Any], deburr = js.Any.fromFunction1(deburr), defaultTo = defaultTo.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any], defaultsAll = defaultsAll.asInstanceOf[js.Any], defaultsDeep = defaultsDeep.asInstanceOf[js.Any], defaultsDeepAll = js.Any.fromFunction1(defaultsDeepAll), defer = defer.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], difference = difference.asInstanceOf[js.Any], differenceBy = differenceBy.asInstanceOf[js.Any], differenceWith = differenceWith.asInstanceOf[js.Any], dissoc = dissoc.asInstanceOf[js.Any], dissocPath = dissocPath.asInstanceOf[js.Any], divide = divide.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], dropLast = dropLast.asInstanceOf[js.Any], dropLastWhile = dropLastWhile.asInstanceOf[js.Any], dropRight = dropRight.asInstanceOf[js.Any], dropRightWhile = dropRightWhile.asInstanceOf[js.Any], dropWhile = dropWhile.asInstanceOf[js.Any], each = each.asInstanceOf[js.Any], eachRight = eachRight.asInstanceOf[js.Any], endsWith = endsWith.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], entriesIn = entriesIn.asInstanceOf[js.Any], escape = js.Any.fromFunction1(escape), escapeRegExp = js.Any.fromFunction1(escapeRegExp), every = every.asInstanceOf[js.Any], extend = extend.asInstanceOf[js.Any], extendAll = extendAll.asInstanceOf[js.Any], extendAllWith = extendAllWith.asInstanceOf[js.Any], extendWith = extendWith.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], findFrom = findFrom.asInstanceOf[js.Any], findIndex = findIndex.asInstanceOf[js.Any], findIndexFrom = findIndexFrom.asInstanceOf[js.Any], findKey = findKey.asInstanceOf[js.Any], findLast = findLast.asInstanceOf[js.Any], findLastFrom = findLastFrom.asInstanceOf[js.Any], findLastIndex = findLastIndex.asInstanceOf[js.Any], findLastIndexFrom = findLastIndexFrom.asInstanceOf[js.Any], findLastKey = findLastKey.asInstanceOf[js.Any], first = js.Any.fromFunction1(first), flatMap = flatMap.asInstanceOf[js.Any], flatMapDeep = flatMapDeep.asInstanceOf[js.Any], flatMapDepth = flatMapDepth.asInstanceOf[js.Any], flatten = js.Any.fromFunction1(flatten), flattenDeep = flattenDeep.asInstanceOf[js.Any], flattenDepth = flattenDepth.asInstanceOf[js.Any], flip = js.Any.fromFunction1(flip), floor = js.Any.fromFunction1(floor), flow = flow.asInstanceOf[js.Any], flowRight = flowRight.asInstanceOf[js.Any], forEach = forEach.asInstanceOf[js.Any], forEachRight = forEachRight.asInstanceOf[js.Any], forIn = forIn.asInstanceOf[js.Any], forInRight = forInRight.asInstanceOf[js.Any], forOwn = forOwn.asInstanceOf[js.Any], forOwnRight = forOwnRight.asInstanceOf[js.Any], fromPairs = fromPairs.asInstanceOf[js.Any], functions = js.Any.fromFunction1(functions), functionsIn = js.Any.fromFunction1(functionsIn), get = get.asInstanceOf[js.Any], getOr = getOr.asInstanceOf[js.Any], groupBy = groupBy.asInstanceOf[js.Any], gt = gt.asInstanceOf[js.Any], gte = gte.asInstanceOf[js.Any], has = has.asInstanceOf[js.Any], hasIn = hasIn.asInstanceOf[js.Any], head = js.Any.fromFunction1(head), identical = identical.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], inRange = inRange.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], includesFrom = includesFrom.asInstanceOf[js.Any], indexBy = indexBy.asInstanceOf[js.Any], indexOf = indexOf.asInstanceOf[js.Any], indexOfFrom = indexOfFrom.asInstanceOf[js.Any], init = js.Any.fromFunction1(init), initial = js.Any.fromFunction1(initial), intersection = intersection.asInstanceOf[js.Any], intersectionBy = intersectionBy.asInstanceOf[js.Any], intersectionWith = intersectionWith.asInstanceOf[js.Any], invert = js.Any.fromFunction1(invert), invertBy = invertBy.asInstanceOf[js.Any], invertObj = js.Any.fromFunction1(invertObj), invoke = invoke.asInstanceOf[js.Any], invokeArgs = invokeArgs.asInstanceOf[js.Any], invokeArgsMap = invokeArgsMap.asInstanceOf[js.Any], invokeMap = invokeMap.asInstanceOf[js.Any], isArguments = js.Any.fromFunction1(isArguments), isArray = js.Any.fromFunction1(isArray), isArrayBuffer = js.Any.fromFunction1(isArrayBuffer), isArrayLike = isArrayLike.asInstanceOf[js.Any], isArrayLikeObject = isArrayLikeObject.asInstanceOf[js.Any], isBoolean = js.Any.fromFunction1(isBoolean), isBuffer = js.Any.fromFunction1(isBuffer), isDate = js.Any.fromFunction1(isDate), isElement = js.Any.fromFunction1(isElement), isEmpty = isEmpty.asInstanceOf[js.Any], isEqual = isEqual.asInstanceOf[js.Any], isEqualWith = isEqualWith.asInstanceOf[js.Any], isError = js.Any.fromFunction1(isError), isFinite = js.Any.fromFunction1(isFinite), isFunction = js.Any.fromFunction1(isFunction), isInteger = js.Any.fromFunction1(isInteger), isLength = js.Any.fromFunction1(isLength), isMap = js.Any.fromFunction1(isMap), isMatch = isMatch.asInstanceOf[js.Any], isMatchWith = isMatchWith.asInstanceOf[js.Any], isNaN = js.Any.fromFunction1(isNaN), isNative = js.Any.fromFunction1(isNative), isNil = js.Any.fromFunction1(isNil), isNull = js.Any.fromFunction1(isNull), isNumber = js.Any.fromFunction1(isNumber), isObject = js.Any.fromFunction1(isObject), isObjectLike = js.Any.fromFunction1(isObjectLike), isPlainObject = js.Any.fromFunction1(isPlainObject), isRegExp = js.Any.fromFunction1(isRegExp), isSafeInteger = js.Any.fromFunction1(isSafeInteger), isSet = js.Any.fromFunction1(isSet), isString = js.Any.fromFunction1(isString), isSymbol = js.Any.fromFunction1(isSymbol), isTypedArray = js.Any.fromFunction1(isTypedArray), isUndefined = js.Any.fromFunction1(isUndefined), isWeakMap = js.Any.fromFunction1(isWeakMap), isWeakSet = js.Any.fromFunction1(isWeakSet), iteratee = iteratee.asInstanceOf[js.Any], join = join.asInstanceOf[js.Any], juxt = js.Any.fromFunction1(juxt), kebabCase = js.Any.fromFunction1(kebabCase), keyBy = keyBy.asInstanceOf[js.Any], keys = js.Any.fromFunction1(keys), keysIn = js.Any.fromFunction1(keysIn), last = js.Any.fromFunction1(last), lastIndexOf = lastIndexOf.asInstanceOf[js.Any], lastIndexOfFrom = lastIndexOfFrom.asInstanceOf[js.Any], lowerCase = js.Any.fromFunction1(lowerCase), lowerFirst = js.Any.fromFunction1(lowerFirst), lt = lt.asInstanceOf[js.Any], lte = lte.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mapKeys = mapKeys.asInstanceOf[js.Any], mapValues = mapValues.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], matchesProperty = matchesProperty.asInstanceOf[js.Any], max = js.Any.fromFunction1(max), maxBy = maxBy.asInstanceOf[js.Any], mean = js.Any.fromFunction1(mean), meanBy = meanBy.asInstanceOf[js.Any], memoize = js.Any.fromFunction1(memoize), merge = merge.asInstanceOf[js.Any], mergeAll = mergeAll.asInstanceOf[js.Any], mergeAllWith = mergeAllWith.asInstanceOf[js.Any], mergeWith = mergeWith.asInstanceOf[js.Any], method = js.Any.fromFunction1(method), methodOf = js.Any.fromFunction1(methodOf), min = js.Any.fromFunction1(min), minBy = minBy.asInstanceOf[js.Any], multiply = multiply.asInstanceOf[js.Any], nAry = nAry.asInstanceOf[js.Any], negate = js.Any.fromFunction1(negate), noConflict = js.Any.fromFunction0(noConflict), noop = noop.asInstanceOf[js.Any], now = js.Any.fromFunction0(now), nth = nth.asInstanceOf[js.Any], nthArg = js.Any.fromFunction1(nthArg), omit = omit.asInstanceOf[js.Any], omitAll = omitAll.asInstanceOf[js.Any], omitBy = omitBy.asInstanceOf[js.Any], once = js.Any.fromFunction1(once), orderBy = orderBy.asInstanceOf[js.Any], over = js.Any.fromFunction1(over), overArgs = overArgs.asInstanceOf[js.Any], overEvery = js.Any.fromFunction1(overEvery), overSome = js.Any.fromFunction1(overSome), pad = pad.asInstanceOf[js.Any], padChars = padChars.asInstanceOf[js.Any], padCharsEnd = padCharsEnd.asInstanceOf[js.Any], padCharsStart = padCharsStart.asInstanceOf[js.Any], padEnd = padEnd.asInstanceOf[js.Any], padStart = padStart.asInstanceOf[js.Any], parseInt = parseInt.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any], partialRight = partialRight.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathEq = pathEq.asInstanceOf[js.Any], pathOr = pathOr.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], pick = pick.asInstanceOf[js.Any], pickAll = pickAll.asInstanceOf[js.Any], pickBy = pickBy.asInstanceOf[js.Any], pipe = pipe.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], pluck = pluck.asInstanceOf[js.Any])
     __obj.updateDynamic("clone")(js.Any.fromFunction1(clone_))
     __obj.updateDynamic("eq")(eq_.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(equals_.asInstanceOf[js.Any])
@@ -6190,20 +6262,18 @@ object LoDashFp {
     inline def setAll(value: LodashEvery): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     inline def setAllPass(
-      value: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean]
+      value: /* predicates */ Many[js.Function1[/* repeated */ Any, Boolean]] => js.Function1[/* repeated */ Any, Boolean]
     ): Self = StObject.set(x, "allPass", js.Any.fromFunction1(value))
     
-    inline def setAlways(value: /* value */ js.Any => js.Function0[js.Any]): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
+    inline def setAlways(value: /* value */ Any => js.Function0[Any]): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
     
     inline def setAny(value: LodashSome): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
     inline def setAnyPass(
-      value: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean]
+      value: /* predicates */ Many[js.Function1[/* repeated */ Any, Boolean]] => js.Function1[/* repeated */ Any, Boolean]
     ): Self = StObject.set(x, "anyPass", js.Any.fromFunction1(value))
     
-    inline def setApply(
-      value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Function1[/* repeated */ js.Any, js.Any]
-    ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+    inline def setApply(value: /* func */ js.Function1[/* repeated */ Any, Any] => js.Function1[/* repeated */ Any, Any]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     
     inline def setAry(value: LodashAry): Self = StObject.set(x, "ary", value.asInstanceOf[js.Any])
     
@@ -6229,7 +6299,7 @@ object LoDashFp {
     
     inline def setAt(value: LodashAt): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
-    inline def setAttempt(value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Any | Error): Self = StObject.set(x, "attempt", js.Any.fromFunction1(value))
+    inline def setAttempt(value: /* func */ js.Function1[/* repeated */ Any, Any] => Any | js.Error): Self = StObject.set(x, "attempt", js.Any.fromFunction1(value))
     
     inline def setBefore(value: LodashBefore): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
@@ -6243,7 +6313,7 @@ object LoDashFp {
     
     inline def setCapitalize(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "capitalize", js.Any.fromFunction1(value))
     
-    inline def setCastArray(value: /* value */ Many[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "castArray", js.Any.fromFunction1(value))
+    inline def setCastArray(value: /* value */ Many[Any] => js.Array[Any]): Self = StObject.set(x, "castArray", js.Any.fromFunction1(value))
     
     inline def setCeil(value: /* n */ Double => Double): Self = StObject.set(x, "ceil", js.Any.fromFunction1(value))
     
@@ -6251,33 +6321,33 @@ object LoDashFp {
     
     inline def setClamp(value: LodashClamp): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     
-    inline def setCloneDeep(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "cloneDeep", js.Any.fromFunction1(value))
+    inline def setCloneDeep(value: /* value */ Any => Any): Self = StObject.set(x, "cloneDeep", js.Any.fromFunction1(value))
     
     inline def setCloneDeepWith(value: LodashCloneDeepWith): Self = StObject.set(x, "cloneDeepWith", value.asInstanceOf[js.Any])
     
     inline def setCloneWith(value: LodashCloneWith): Self = StObject.set(x, "cloneWith", value.asInstanceOf[js.Any])
     
-    inline def setClone_(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+    inline def setClone_(value: /* value */ Any => Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
     
     inline def setCompact(
-      value: /* array */ js.UndefOr[(List[js.UndefOr[js.Any | Null | `false` | _empty | `0`]]) | Null] => js.Array[js.Any]
+      value: /* array */ js.UndefOr[List[Any] | Null] => js.Array[Exclude[Any, js.UndefOr[Null | `false` | _empty | `0`]]]
     ): Self = StObject.set(x, "compact", js.Any.fromFunction1(value))
     
     inline def setComplement(
-      value: /* predicate */ js.Function1[/* args */ js.Array[js.Any], js.Any] => js.Function1[/* args */ js.Array[js.Any], Boolean]
+      value: /* predicate */ js.Function1[/* args */ js.Array[Any], Any] => js.Function1[/* args */ js.Array[Any], Boolean]
     ): Self = StObject.set(x, "complement", js.Any.fromFunction1(value))
     
     inline def setCompose(value: LodashFlowRight): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
     
     inline def setConcat(value: LodashConcat): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
     
-    inline def setCond(value: /* pairs */ js.Array[CondPair[js.Any, js.Any]] => js.Function1[/* Target */ js.Any, js.Any]): Self = StObject.set(x, "cond", js.Any.fromFunction1(value))
+    inline def setCond(value: LodashCond): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
     inline def setConforms(value: LodashConformsTo): Self = StObject.set(x, "conforms", value.asInstanceOf[js.Any])
     
     inline def setConformsTo(value: LodashConformsTo): Self = StObject.set(x, "conformsTo", value.asInstanceOf[js.Any])
     
-    inline def setConstant(value: /* value */ js.Any => js.Function0[js.Any]): Self = StObject.set(x, "constant", js.Any.fromFunction1(value))
+    inline def setConstant(value: /* value */ Any => js.Function0[Any]): Self = StObject.set(x, "constant", js.Any.fromFunction1(value))
     
     inline def setContains(value: LodashContains): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
@@ -6305,7 +6375,7 @@ object LoDashFp {
     
     inline def setDefaultsDeep(value: LodashDefaultsDeep): Self = StObject.set(x, "defaultsDeep", value.asInstanceOf[js.Any])
     
-    inline def setDefaultsDeepAll(value: /* object */ js.Array[js.Any] => js.Any): Self = StObject.set(x, "defaultsDeepAll", js.Any.fromFunction1(value))
+    inline def setDefaultsDeepAll(value: /* object */ js.Array[Any] => Any): Self = StObject.set(x, "defaultsDeepAll", js.Any.fromFunction1(value))
     
     inline def setDefer(value: LodashDefer): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
@@ -6389,7 +6459,7 @@ object LoDashFp {
     
     inline def setFindLastKey(value: LodashFindLastKey): Self = StObject.set(x, "findLastKey", value.asInstanceOf[js.Any])
     
-    inline def setFirst(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
+    inline def setFirst(value: /* array */ js.UndefOr[List[Any] | Null] => js.UndefOr[Any]): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
     
     inline def setFlatMap(value: LodashFlatMap): Self = StObject.set(x, "flatMap", value.asInstanceOf[js.Any])
     
@@ -6397,15 +6467,13 @@ object LoDashFp {
     
     inline def setFlatMapDepth(value: LodashFlatMapDepth): Self = StObject.set(x, "flatMapDepth", value.asInstanceOf[js.Any])
     
-    inline def setFlatten(value: /* array */ js.UndefOr[List[Many[js.Any]] | Null] => js.Array[js.Any]): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
+    inline def setFlatten(value: /* array */ js.UndefOr[List[Many[Any]] | Null] => js.Array[Any]): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
     
-    inline def setFlattenDeep(value: /* array */ js.UndefOr[ListOfRecursiveArraysOrValues[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "flattenDeep", js.Any.fromFunction1(value))
+    inline def setFlattenDeep(value: LodashFlattenDeep): Self = StObject.set(x, "flattenDeep", value.asInstanceOf[js.Any])
     
     inline def setFlattenDepth(value: LodashFlattenDepth): Self = StObject.set(x, "flattenDepth", value.asInstanceOf[js.Any])
     
-    inline def setFlip(
-      value: /* func */ js.Function1[/* args */ js.Any, js.Any] => js.Function1[/* args */ js.Any, js.Any]
-    ): Self = StObject.set(x, "flip", js.Any.fromFunction1(value))
+    inline def setFlip(value: /* func */ js.Function1[/* args */ Any, Any] => js.Function1[/* args */ Any, Any]): Self = StObject.set(x, "flip", js.Any.fromFunction1(value))
     
     inline def setFloor(value: /* n */ Double => Double): Self = StObject.set(x, "floor", js.Any.fromFunction1(value))
     
@@ -6427,9 +6495,9 @@ object LoDashFp {
     
     inline def setFromPairs(value: LodashFromPairs): Self = StObject.set(x, "fromPairs", value.asInstanceOf[js.Any])
     
-    inline def setFunctions(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
+    inline def setFunctions(value: /* object */ Any => js.Array[java.lang.String]): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
     
-    inline def setFunctionsIn(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "functionsIn", js.Any.fromFunction1(value))
+    inline def setFunctionsIn(value: /* object */ Any => js.Array[java.lang.String]): Self = StObject.set(x, "functionsIn", js.Any.fromFunction1(value))
     
     inline def setGet(value: LodashGet): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
@@ -6445,7 +6513,7 @@ object LoDashFp {
     
     inline def setHasIn(value: LodashHasIn): Self = StObject.set(x, "hasIn", value.asInstanceOf[js.Any])
     
-    inline def setHead(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "head", js.Any.fromFunction1(value))
+    inline def setHead(value: /* array */ js.UndefOr[List[Any] | Null] => js.UndefOr[Any]): Self = StObject.set(x, "head", js.Any.fromFunction1(value))
     
     inline def setIdentical(value: LodashEq): Self = StObject.set(x, "identical", value.asInstanceOf[js.Any])
     
@@ -6463,9 +6531,9 @@ object LoDashFp {
     
     inline def setIndexOfFrom(value: LodashIndexOfFrom): Self = StObject.set(x, "indexOfFrom", value.asInstanceOf[js.Any])
     
-    inline def setInit(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* array */ js.UndefOr[List[Any] | Null] => js.Array[Any]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    inline def setInitial(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "initial", js.Any.fromFunction1(value))
+    inline def setInitial(value: /* array */ js.UndefOr[List[Any] | Null] => js.Array[Any]): Self = StObject.set(x, "initial", js.Any.fromFunction1(value))
     
     inline def setIntersection(value: LodashIntersection): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
     
@@ -6487,97 +6555,97 @@ object LoDashFp {
     
     inline def setInvokeMap(value: LodashInvokeMap): Self = StObject.set(x, "invokeMap", value.asInstanceOf[js.Any])
     
-    inline def setIsArguments(value: /* value */ js.Any => /* is std.IArguments */ Boolean): Self = StObject.set(x, "isArguments", js.Any.fromFunction1(value))
+    inline def setIsArguments(value: /* value */ Any => /* is std.IArguments */ Boolean): Self = StObject.set(x, "isArguments", js.Any.fromFunction1(value))
     
-    inline def setIsArray(value: /* value */ js.Any => /* is std.Array<any> */ Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
+    inline def setIsArray(value: /* value */ Any => /* is std.Array<any> */ Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
     
-    inline def setIsArrayBuffer(value: /* value */ js.Any => /* is std.ArrayBuffer */ Boolean): Self = StObject.set(x, "isArrayBuffer", js.Any.fromFunction1(value))
+    inline def setIsArrayBuffer(value: /* value */ Any => /* is std.ArrayBuffer */ Boolean): Self = StObject.set(x, "isArrayBuffer", js.Any.fromFunction1(value))
     
     inline def setIsArrayLike(value: LodashIsArrayLike): Self = StObject.set(x, "isArrayLike", value.asInstanceOf[js.Any])
     
     inline def setIsArrayLikeObject(value: LodashIsArrayLikeObject): Self = StObject.set(x, "isArrayLikeObject", value.asInstanceOf[js.Any])
     
-    inline def setIsBoolean(value: /* value */ js.Any => /* is boolean */ Boolean): Self = StObject.set(x, "isBoolean", js.Any.fromFunction1(value))
+    inline def setIsBoolean(value: /* value */ Any => /* is boolean */ Boolean): Self = StObject.set(x, "isBoolean", js.Any.fromFunction1(value))
     
-    inline def setIsBuffer(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isBuffer", js.Any.fromFunction1(value))
+    inline def setIsBuffer(value: /* value */ Any => Boolean): Self = StObject.set(x, "isBuffer", js.Any.fromFunction1(value))
     
-    inline def setIsDate(value: /* value */ js.Any => /* is std.Date */ Boolean): Self = StObject.set(x, "isDate", js.Any.fromFunction1(value))
+    inline def setIsDate(value: /* value */ Any => /* is std.Date */ Boolean): Self = StObject.set(x, "isDate", js.Any.fromFunction1(value))
     
-    inline def setIsElement(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isElement", js.Any.fromFunction1(value))
+    inline def setIsElement(value: /* value */ Any => Boolean): Self = StObject.set(x, "isElement", js.Any.fromFunction1(value))
     
-    inline def setIsEmpty(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
+    inline def setIsEmpty(value: LodashIsEmpty): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
     
     inline def setIsEqual(value: LodashIsEqual): Self = StObject.set(x, "isEqual", value.asInstanceOf[js.Any])
     
     inline def setIsEqualWith(value: LodashIsEqualWith): Self = StObject.set(x, "isEqualWith", value.asInstanceOf[js.Any])
     
-    inline def setIsError(value: /* value */ js.Any => /* is std.Error */ Boolean): Self = StObject.set(x, "isError", js.Any.fromFunction1(value))
+    inline def setIsError(value: /* value */ Any => /* is std.Error */ Boolean): Self = StObject.set(x, "isError", js.Any.fromFunction1(value))
     
-    inline def setIsFinite(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isFinite", js.Any.fromFunction1(value))
+    inline def setIsFinite(value: /* value */ Any => Boolean): Self = StObject.set(x, "isFinite", js.Any.fromFunction1(value))
     
-    inline def setIsFunction(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
+    inline def setIsFunction(value: /* value */ Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
     
-    inline def setIsInteger(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isInteger", js.Any.fromFunction1(value))
+    inline def setIsInteger(value: /* value */ Any => Boolean): Self = StObject.set(x, "isInteger", js.Any.fromFunction1(value))
     
-    inline def setIsLength(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isLength", js.Any.fromFunction1(value))
+    inline def setIsLength(value: /* value */ Any => Boolean): Self = StObject.set(x, "isLength", js.Any.fromFunction1(value))
     
-    inline def setIsMap(value: /* value */ js.Any => /* is std.Map<any, any> */ Boolean): Self = StObject.set(x, "isMap", js.Any.fromFunction1(value))
+    inline def setIsMap(value: /* value */ Any => /* is std.Map<any, any> */ Boolean): Self = StObject.set(x, "isMap", js.Any.fromFunction1(value))
     
     inline def setIsMatch(value: LodashIsMatch): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
     
     inline def setIsMatchWith(value: LodashIsMatchWith): Self = StObject.set(x, "isMatchWith", value.asInstanceOf[js.Any])
     
-    inline def setIsNaN(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isNaN", js.Any.fromFunction1(value))
+    inline def setIsNaN(value: /* value */ Any => Boolean): Self = StObject.set(x, "isNaN", js.Any.fromFunction1(value))
     
-    inline def setIsNative(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isNative", js.Any.fromFunction1(value))
+    inline def setIsNative(value: /* value */ Any => Boolean): Self = StObject.set(x, "isNative", js.Any.fromFunction1(value))
     
-    inline def setIsNil(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isNil", js.Any.fromFunction1(value))
+    inline def setIsNil(value: /* value */ Any => Boolean): Self = StObject.set(x, "isNil", js.Any.fromFunction1(value))
     
-    inline def setIsNull(value: /* value */ js.Any => /* is null */ Boolean): Self = StObject.set(x, "isNull", js.Any.fromFunction1(value))
+    inline def setIsNull(value: /* value */ Any => /* is null */ Boolean): Self = StObject.set(x, "isNull", js.Any.fromFunction1(value))
     
-    inline def setIsNumber(value: /* value */ js.Any => /* is number */ Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
+    inline def setIsNumber(value: /* value */ Any => /* is number */ Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
     
-    inline def setIsObject(value: /* value */ js.Any => /* is object */ Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
+    inline def setIsObject(value: /* value */ Any => /* is object */ Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
     
-    inline def setIsObjectLike(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isObjectLike", js.Any.fromFunction1(value))
+    inline def setIsObjectLike(value: /* value */ Any => Boolean): Self = StObject.set(x, "isObjectLike", js.Any.fromFunction1(value))
     
-    inline def setIsPlainObject(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isPlainObject", js.Any.fromFunction1(value))
+    inline def setIsPlainObject(value: /* value */ Any => Boolean): Self = StObject.set(x, "isPlainObject", js.Any.fromFunction1(value))
     
-    inline def setIsRegExp(value: /* value */ js.Any => /* is std.RegExp */ Boolean): Self = StObject.set(x, "isRegExp", js.Any.fromFunction1(value))
+    inline def setIsRegExp(value: /* value */ Any => /* is std.RegExp */ Boolean): Self = StObject.set(x, "isRegExp", js.Any.fromFunction1(value))
     
-    inline def setIsSafeInteger(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isSafeInteger", js.Any.fromFunction1(value))
+    inline def setIsSafeInteger(value: /* value */ Any => Boolean): Self = StObject.set(x, "isSafeInteger", js.Any.fromFunction1(value))
     
-    inline def setIsSet(value: /* value */ js.Any => /* is std.Set<any> */ Boolean): Self = StObject.set(x, "isSet", js.Any.fromFunction1(value))
+    inline def setIsSet(value: /* value */ Any => /* is std.Set<any> */ Boolean): Self = StObject.set(x, "isSet", js.Any.fromFunction1(value))
     
-    inline def setIsString(value: /* value */ js.Any => /* is string */ Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
+    inline def setIsString(value: /* value */ Any => /* is string */ Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
     
-    inline def setIsSymbol(value: /* value */ js.Any => /* is symbol */ Boolean): Self = StObject.set(x, "isSymbol", js.Any.fromFunction1(value))
+    inline def setIsSymbol(value: /* value */ Any => /* is symbol */ Boolean): Self = StObject.set(x, "isSymbol", js.Any.fromFunction1(value))
     
-    inline def setIsTypedArray(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isTypedArray", js.Any.fromFunction1(value))
+    inline def setIsTypedArray(value: /* value */ Any => Boolean): Self = StObject.set(x, "isTypedArray", js.Any.fromFunction1(value))
     
-    inline def setIsUndefined(value: /* value */ js.Any => /* is undefined */ Boolean): Self = StObject.set(x, "isUndefined", js.Any.fromFunction1(value))
+    inline def setIsUndefined(value: /* value */ Any => /* is undefined */ Boolean): Self = StObject.set(x, "isUndefined", js.Any.fromFunction1(value))
     
-    inline def setIsWeakMap(value: /* value */ js.Any => /* is std.WeakMap<object, any> */ Boolean): Self = StObject.set(x, "isWeakMap", js.Any.fromFunction1(value))
+    inline def setIsWeakMap(value: /* value */ Any => /* is std.WeakMap<object, any> */ Boolean): Self = StObject.set(x, "isWeakMap", js.Any.fromFunction1(value))
     
-    inline def setIsWeakSet(value: /* value */ js.Any => /* is std.WeakSet<object> */ Boolean): Self = StObject.set(x, "isWeakSet", js.Any.fromFunction1(value))
+    inline def setIsWeakSet(value: /* value */ Any => /* is std.WeakSet<object> */ Boolean): Self = StObject.set(x, "isWeakSet", js.Any.fromFunction1(value))
     
     inline def setIteratee(value: LodashIteratee): Self = StObject.set(x, "iteratee", value.asInstanceOf[js.Any])
     
     inline def setJoin(value: LodashJoin): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
     inline def setJuxt(
-      value: /* iteratees */ Many[js.Function1[/* repeated */ js.Any, js.Any]] => js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
+      value: /* iteratees */ Many[js.Function1[/* repeated */ Any, Any]] => js.Function1[/* repeated */ Any, js.Array[Any]]
     ): Self = StObject.set(x, "juxt", js.Any.fromFunction1(value))
     
     inline def setKebabCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "kebabCase", js.Any.fromFunction1(value))
     
     inline def setKeyBy(value: LodashKeyBy): Self = StObject.set(x, "keyBy", value.asInstanceOf[js.Any])
     
-    inline def setKeys(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
+    inline def setKeys(value: /* object */ Any => js.Array[java.lang.String]): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
     
-    inline def setKeysIn(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "keysIn", js.Any.fromFunction1(value))
+    inline def setKeysIn(value: /* object */ Any => js.Array[java.lang.String]): Self = StObject.set(x, "keysIn", js.Any.fromFunction1(value))
     
-    inline def setLast(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
+    inline def setLast(value: /* array */ js.UndefOr[List[Any] | Null] => js.UndefOr[Any]): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
     
     inline def setLastIndexOf(value: LodashLastIndexOf): Self = StObject.set(x, "lastIndexOf", value.asInstanceOf[js.Any])
     
@@ -6601,16 +6669,16 @@ object LoDashFp {
     
     inline def setMatchesProperty(value: LodashMatchesProperty): Self = StObject.set(x, "matchesProperty", value.asInstanceOf[js.Any])
     
-    inline def setMax(value: /* collection */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+    inline def setMax(value: /* collection */ js.UndefOr[List[Any] | Null] => js.UndefOr[Any]): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
     inline def setMaxBy(value: LodashMaxBy): Self = StObject.set(x, "maxBy", value.asInstanceOf[js.Any])
     
-    inline def setMean(value: /* collection */ js.UndefOr[List[js.Any] | Null] => Double): Self = StObject.set(x, "mean", js.Any.fromFunction1(value))
+    inline def setMean(value: /* collection */ js.UndefOr[List[Any] | Null] => Double): Self = StObject.set(x, "mean", js.Any.fromFunction1(value))
     
     inline def setMeanBy(value: LodashMeanBy): Self = StObject.set(x, "meanBy", value.asInstanceOf[js.Any])
     
     inline def setMemoize(
-      value: /* func */ js.Function1[/* args */ js.Any, js.Any] => (js.Function1[/* args */ js.Any, js.Any]) & MemoizedFunction
+      value: /* func */ js.Function1[/* args */ Any, Any] => (js.Function1[/* args */ Any, Any]) & MemoizedFunction
     ): Self = StObject.set(x, "memoize", js.Any.fromFunction1(value))
     
     inline def setMerge(value: LodashMerge): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
@@ -6621,11 +6689,11 @@ object LoDashFp {
     
     inline def setMergeWith(value: LodashMergeWith): Self = StObject.set(x, "mergeWith", value.asInstanceOf[js.Any])
     
-    inline def setMethod(value: /* path */ PropertyPath => js.Function1[/* object */ js.Any, js.Any]): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
+    inline def setMethod(value: /* path */ PropertyPath => js.Function1[/* object */ Any, Any]): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
     
-    inline def setMethodOf(value: /* object */ js.Object => js.Function1[/* path */ PropertyPath, js.Any]): Self = StObject.set(x, "methodOf", js.Any.fromFunction1(value))
+    inline def setMethodOf(value: /* object */ js.Object => js.Function1[/* path */ PropertyPath, Any]): Self = StObject.set(x, "methodOf", js.Any.fromFunction1(value))
     
-    inline def setMin(value: /* collection */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+    inline def setMin(value: /* collection */ js.UndefOr[List[Any] | Null] => js.UndefOr[Any]): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
     inline def setMinBy(value: LodashMinBy): Self = StObject.set(x, "minBy", value.asInstanceOf[js.Any])
     
@@ -6634,7 +6702,7 @@ object LoDashFp {
     inline def setNAry(value: LodashAry): Self = StObject.set(x, "nAry", value.asInstanceOf[js.Any])
     
     inline def setNegate(
-      value: /* predicate */ js.Function1[/* args */ js.Array[js.Any], js.Any] => js.Function1[/* args */ js.Array[js.Any], Boolean]
+      value: /* predicate */ js.Function1[/* args */ js.Array[Any], Any] => js.Function1[/* args */ js.Array[Any], Boolean]
     ): Self = StObject.set(x, "negate", js.Any.fromFunction1(value))
     
     inline def setNoConflict(value: () => Typeoflodash): Self = StObject.set(x, "noConflict", js.Any.fromFunction0(value))
@@ -6645,7 +6713,7 @@ object LoDashFp {
     
     inline def setNth(value: LodashNth): Self = StObject.set(x, "nth", value.asInstanceOf[js.Any])
     
-    inline def setNthArg(value: /* n */ Double => js.Function1[/* repeated */ js.Any, js.Any]): Self = StObject.set(x, "nthArg", js.Any.fromFunction1(value))
+    inline def setNthArg(value: /* n */ Double => js.Function1[/* repeated */ Any, Any]): Self = StObject.set(x, "nthArg", js.Any.fromFunction1(value))
     
     inline def setOmit(value: LodashOmit): Self = StObject.set(x, "omit", value.asInstanceOf[js.Any])
     
@@ -6653,24 +6721,22 @@ object LoDashFp {
     
     inline def setOmitBy(value: LodashOmitBy): Self = StObject.set(x, "omitBy", value.asInstanceOf[js.Any])
     
-    inline def setOnce(
-      value: /* func */ js.Function1[/* args */ js.Any, js.Any] => js.Function1[/* args */ js.Any, js.Any]
-    ): Self = StObject.set(x, "once", js.Any.fromFunction1(value))
+    inline def setOnce(value: /* func */ js.Function1[/* args */ Any, Any] => js.Function1[/* args */ Any, Any]): Self = StObject.set(x, "once", js.Any.fromFunction1(value))
     
     inline def setOrderBy(value: LodashOrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     inline def setOver(
-      value: /* iteratees */ Many[js.Function1[/* repeated */ js.Any, js.Any]] => js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
+      value: /* iteratees */ Many[js.Function1[/* repeated */ Any, Any]] => js.Function1[/* repeated */ Any, js.Array[Any]]
     ): Self = StObject.set(x, "over", js.Any.fromFunction1(value))
     
     inline def setOverArgs(value: LodashOverArgs): Self = StObject.set(x, "overArgs", value.asInstanceOf[js.Any])
     
     inline def setOverEvery(
-      value: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean]
+      value: /* predicates */ Many[js.Function1[/* repeated */ Any, Boolean]] => js.Function1[/* repeated */ Any, Boolean]
     ): Self = StObject.set(x, "overEvery", js.Any.fromFunction1(value))
     
     inline def setOverSome(
-      value: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean]
+      value: /* predicates */ Many[js.Function1[/* repeated */ Any, Boolean]] => js.Function1[/* repeated */ Any, Boolean]
     ): Self = StObject.set(x, "overSome", js.Any.fromFunction1(value))
     
     inline def setPad(value: LodashPad): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
@@ -6759,15 +6825,13 @@ object LoDashFp {
     
     inline def setReplace(value: LodashReplace): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    inline def setRest(
-      value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Function1[/* repeated */ js.Any, js.Any]
-    ): Self = StObject.set(x, "rest", js.Any.fromFunction1(value))
+    inline def setRest(value: /* func */ js.Function1[/* repeated */ Any, Any] => js.Function1[/* repeated */ Any, Any]): Self = StObject.set(x, "rest", js.Any.fromFunction1(value))
     
     inline def setRestFrom(value: LodashRestFrom): Self = StObject.set(x, "restFrom", value.asInstanceOf[js.Any])
     
     inline def setResult(value: LodashResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setReverse(value: /* array */ List[js.Any] => List[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))
+    inline def setReverse(value: /* array */ List[Any] => List[Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))
     
     inline def setRound(value: /* n */ Double => Double): Self = StObject.set(x, "round", js.Any.fromFunction1(value))
     
@@ -6805,15 +6869,13 @@ object LoDashFp {
     
     inline def setSortedLastIndexOf(value: LodashSortedLastIndexOf): Self = StObject.set(x, "sortedLastIndexOf", value.asInstanceOf[js.Any])
     
-    inline def setSortedUniq(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "sortedUniq", js.Any.fromFunction1(value))
+    inline def setSortedUniq(value: /* array */ js.UndefOr[List[Any] | Null] => js.Array[Any]): Self = StObject.set(x, "sortedUniq", js.Any.fromFunction1(value))
     
     inline def setSortedUniqBy(value: LodashSortedUniqBy): Self = StObject.set(x, "sortedUniqBy", value.asInstanceOf[js.Any])
     
     inline def setSplit(value: LodashSplit): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
-    inline def setSpread(
-      value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Function1[/* repeated */ js.Any, js.Any]
-    ): Self = StObject.set(x, "spread", js.Any.fromFunction1(value))
+    inline def setSpread(value: /* func */ js.Function1[/* repeated */ Any, Any] => js.Function1[/* repeated */ Any, Any]): Self = StObject.set(x, "spread", js.Any.fromFunction1(value))
     
     inline def setSpreadFrom(value: LodashSpreadFrom): Self = StObject.set(x, "spreadFrom", value.asInstanceOf[js.Any])
     
@@ -6821,11 +6883,11 @@ object LoDashFp {
     
     inline def setStartsWith(value: LodashStartsWith): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
     
-    inline def setStubArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "stubArray", js.Any.fromFunction0(value))
+    inline def setStubArray(value: () => js.Array[Any]): Self = StObject.set(x, "stubArray", js.Any.fromFunction0(value))
     
     inline def setStubFalse(value: () => `false`): Self = StObject.set(x, "stubFalse", js.Any.fromFunction0(value))
     
-    inline def setStubObject(value: () => js.Any): Self = StObject.set(x, "stubObject", js.Any.fromFunction0(value))
+    inline def setStubObject(value: () => Any): Self = StObject.set(x, "stubObject", js.Any.fromFunction0(value))
     
     inline def setStubString(value: () => java.lang.String): Self = StObject.set(x, "stubString", js.Any.fromFunction0(value))
     
@@ -6833,7 +6895,7 @@ object LoDashFp {
     
     inline def setSubtract(value: LodashSubtract): Self = StObject.set(x, "subtract", value.asInstanceOf[js.Any])
     
-    inline def setSum(value: /* collection */ js.UndefOr[List[js.Any] | Null] => Double): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
+    inline def setSum(value: /* collection */ js.UndefOr[List[Any] | Null] => Double): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
     
     inline def setSumBy(value: LodashSumBy): Self = StObject.set(x, "sumBy", value.asInstanceOf[js.Any])
     
@@ -6845,7 +6907,7 @@ object LoDashFp {
     
     inline def setT(value: () => `true`): Self = StObject.set(x, "T", js.Any.fromFunction0(value))
     
-    inline def setTail(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "tail", js.Any.fromFunction1(value))
+    inline def setTail(value: /* array */ js.UndefOr[List[Any] | Null] => js.Array[Any]): Self = StObject.set(x, "tail", js.Any.fromFunction1(value))
     
     inline def setTake(value: LodashTake): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     
@@ -6871,27 +6933,27 @@ object LoDashFp {
     
     inline def setToArray(value: LodashToArray): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
     
-    inline def setToFinite(value: /* value */ js.Any => Double): Self = StObject.set(x, "toFinite", js.Any.fromFunction1(value))
+    inline def setToFinite(value: /* value */ Any => Double): Self = StObject.set(x, "toFinite", js.Any.fromFunction1(value))
     
-    inline def setToInteger(value: /* value */ js.Any => Double): Self = StObject.set(x, "toInteger", js.Any.fromFunction1(value))
+    inline def setToInteger(value: /* value */ Any => Double): Self = StObject.set(x, "toInteger", js.Any.fromFunction1(value))
     
-    inline def setToLength(value: /* value */ js.Any => Double): Self = StObject.set(x, "toLength", js.Any.fromFunction1(value))
+    inline def setToLength(value: /* value */ Any => Double): Self = StObject.set(x, "toLength", js.Any.fromFunction1(value))
     
     inline def setToLower(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "toLower", js.Any.fromFunction1(value))
     
-    inline def setToNumber(value: /* value */ js.Any => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction1(value))
+    inline def setToNumber(value: /* value */ Any => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction1(value))
     
     inline def setToPairs(value: LodashToPairs): Self = StObject.set(x, "toPairs", value.asInstanceOf[js.Any])
     
     inline def setToPairsIn(value: LodashToPairsIn): Self = StObject.set(x, "toPairsIn", value.asInstanceOf[js.Any])
     
-    inline def setToPath(value: /* value */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "toPath", js.Any.fromFunction1(value))
+    inline def setToPath(value: /* value */ Any => js.Array[java.lang.String]): Self = StObject.set(x, "toPath", js.Any.fromFunction1(value))
     
-    inline def setToPlainObject(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "toPlainObject", js.Any.fromFunction1(value))
+    inline def setToPlainObject(value: /* value */ Any => Any): Self = StObject.set(x, "toPlainObject", js.Any.fromFunction1(value))
     
-    inline def setToSafeInteger(value: /* value */ js.Any => Double): Self = StObject.set(x, "toSafeInteger", js.Any.fromFunction1(value))
+    inline def setToSafeInteger(value: /* value */ Any => Double): Self = StObject.set(x, "toSafeInteger", js.Any.fromFunction1(value))
     
-    inline def setToString_(value: /* value */ js.Any => java.lang.String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+    inline def setToString_(value: /* value */ Any => java.lang.String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     
     inline def setToUpper(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "toUpper", js.Any.fromFunction1(value))
     
@@ -6911,12 +6973,10 @@ object LoDashFp {
     
     inline def setTruncate(value: LodashTruncate): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
     
-    inline def setUnapply(
-      value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Function1[/* repeated */ js.Any, js.Any]
-    ): Self = StObject.set(x, "unapply", js.Any.fromFunction1(value))
+    inline def setUnapply(value: /* func */ js.Function1[/* repeated */ Any, Any] => js.Function1[/* repeated */ Any, Any]): Self = StObject.set(x, "unapply", js.Any.fromFunction1(value))
     
     inline def setUnary(
-      value: /* func */ js.Function2[/* arg1 */ js.Any, /* repeated */ js.Any, js.Any] => js.Function1[/* arg1 */ js.Any, js.Any]
+      value: /* func */ js.Function2[/* arg1 */ Any, /* repeated */ Any, Any] => js.Function1[/* arg1 */ Any, Any]
     ): Self = StObject.set(x, "unary", js.Any.fromFunction1(value))
     
     inline def setUnescape(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "unescape", js.Any.fromFunction1(value))
@@ -6927,7 +6987,7 @@ object LoDashFp {
     
     inline def setUnionWith(value: LodashUnionWith): Self = StObject.set(x, "unionWith", value.asInstanceOf[js.Any])
     
-    inline def setUniq(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "uniq", js.Any.fromFunction1(value))
+    inline def setUniq(value: /* array */ js.UndefOr[List[Any] | Null] => js.Array[Any]): Self = StObject.set(x, "uniq", js.Any.fromFunction1(value))
     
     inline def setUniqBy(value: LodashUniqBy): Self = StObject.set(x, "uniqBy", value.asInstanceOf[js.Any])
     
@@ -6935,12 +6995,12 @@ object LoDashFp {
     
     inline def setUniqueId(value: /* prefix */ java.lang.String => java.lang.String): Self = StObject.set(x, "uniqueId", js.Any.fromFunction1(value))
     
-    inline def setUnnest(value: /* array */ js.UndefOr[List[Many[js.Any]] | Null] => js.Array[js.Any]): Self = StObject.set(x, "unnest", js.Any.fromFunction1(value))
+    inline def setUnnest(value: /* array */ js.UndefOr[List[Many[Any]] | Null] => js.Array[Any]): Self = StObject.set(x, "unnest", js.Any.fromFunction1(value))
     
     inline def setUnset(value: LodashUnset): Self = StObject.set(x, "unset", value.asInstanceOf[js.Any])
     
     inline def setUnzip(
-      value: /* array */ js.UndefOr[js.Array[js.Array[js.Any]] | List[List[js.Any]] | Null] => js.Array[js.Array[js.Any]]
+      value: /* array */ js.UndefOr[js.Array[js.Array[Any]] | List[List[Any]] | Null] => js.Array[js.Array[Any]]
     ): Self = StObject.set(x, "unzip", js.Any.fromFunction1(value))
     
     inline def setUnzipWith(value: LodashUnzipWith): Self = StObject.set(x, "unzipWith", value.asInstanceOf[js.Any])

@@ -1,10 +1,10 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.pc.ElementInput
-import typings.playcanvas.pc.GamePads
-import typings.playcanvas.pc.Keyboard
-import typings.playcanvas.pc.Mouse
-import typings.playcanvas.pc.TouchDevice
+import typings.playcanvas.mod.ElementInput
+import typings.playcanvas.mod.GamePads
+import typings.playcanvas.mod.Keyboard
+import typings.playcanvas.mod.Mouse
+import typings.playcanvas.mod.TouchDevice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait AssetPrefix extends StObject {
   
   var gamepads: js.UndefOr[GamePads] = js.undefined
   
-  var graphicsDeviceOptions: js.UndefOr[js.Any] = js.undefined
+  var graphicsDeviceOptions: js.UndefOr[js.Object] = js.undefined
   
   var keyboard: js.UndefOr[Keyboard] = js.undefined
   
@@ -50,7 +50,7 @@ object AssetPrefix {
     
     inline def setGamepadsUndefined: Self = StObject.set(x, "gamepads", js.undefined)
     
-    inline def setGraphicsDeviceOptions(value: js.Any): Self = StObject.set(x, "graphicsDeviceOptions", value.asInstanceOf[js.Any])
+    inline def setGraphicsDeviceOptions(value: js.Object): Self = StObject.set(x, "graphicsDeviceOptions", value.asInstanceOf[js.Any])
     
     inline def setGraphicsDeviceOptionsUndefined: Self = StObject.set(x, "graphicsDeviceOptions", js.undefined)
     
@@ -70,7 +70,7 @@ object AssetPrefix {
     
     inline def setScriptsOrderUndefined: Self = StObject.set(x, "scriptsOrder", js.undefined)
     
-    inline def setScriptsOrderVarargs(value: String*): Self = StObject.set(x, "scriptsOrder", js.Array(value :_*))
+    inline def setScriptsOrderVarargs(value: String*): Self = StObject.set(x, "scriptsOrder", js.Array(value*))
     
     inline def setTouch(value: TouchDevice): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     

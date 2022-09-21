@@ -28,7 +28,7 @@ trait JQuery extends StObject {
   def handleServerEvents(): Unit = js.native
   def handleServerEvents(opt: HandleServerEventsOptions): Unit = js.native
   
-  def serializeMap(): StringDictionary[js.Any] = js.native
+  def serializeMap(): StringDictionary[Any] = js.native
   
   def setActiveLinks(): JQuery = js.native
   

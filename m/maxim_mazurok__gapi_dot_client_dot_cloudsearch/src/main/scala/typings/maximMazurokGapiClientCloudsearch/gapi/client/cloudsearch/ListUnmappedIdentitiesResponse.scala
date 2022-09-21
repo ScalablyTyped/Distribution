@@ -28,6 +28,6 @@ object ListUnmappedIdentitiesResponse {
     
     inline def setUnmappedIdentitiesUndefined: Self = StObject.set(x, "unmappedIdentities", js.undefined)
     
-    inline def setUnmappedIdentitiesVarargs(value: UnmappedIdentity*): Self = StObject.set(x, "unmappedIdentities", js.Array(value :_*))
+    inline def setUnmappedIdentitiesVarargs(value: UnmappedIdentity*): Self = StObject.set(x, "unmappedIdentities", js.Array(value*))
   }
 }

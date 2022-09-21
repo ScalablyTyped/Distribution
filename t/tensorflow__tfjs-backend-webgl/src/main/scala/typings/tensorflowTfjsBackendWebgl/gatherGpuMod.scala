@@ -9,10 +9,10 @@ object gatherGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/gather_gpu", "GatherProgram")
   @js.native
-  class GatherProgram protected ()
+  open class GatherProgram protected ()
     extends StObject
        with GPGPUProgram {
-    def this(aShape: js.Array[Double], indicesLength: Double, axis: Double) = this()
+    def this(aShape: GatherShape, outputShape: GatherShape) = this()
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native
@@ -25,4 +25,6 @@ object gatherGpuMod {
     /* CompleteClass */
     var variableNames: js.Array[String] = js.native
   }
+  
+  type GatherShape = js.Tuple4[Double, Double, Double, Double]
 }

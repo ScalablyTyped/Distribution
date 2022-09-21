@@ -9,5 +9,5 @@ trait PlaySoundAction
   extends StObject
      with Action {
   
-  /* private */ var _sound: js.Any = js.native
+  /* private */ var _sound: Any = js.native
 }

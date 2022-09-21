@@ -24,6 +24,6 @@ object UpdateResult {
     
     inline def setGeneratedFieldsUndefined: Self = StObject.set(x, "generatedFields", js.undefined)
     
-    inline def setGeneratedFieldsVarargs(value: Field*): Self = StObject.set(x, "generatedFields", js.Array(value :_*))
+    inline def setGeneratedFieldsVarargs(value: Field*): Self = StObject.set(x, "generatedFields", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.anon
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait Partialcreatedvoidattache extends StObject {
   
   var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
   
   var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -41,7 +40,7 @@ object Partialcreatedvoidattache {
     
     inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
-    inline def setError(value: /* err */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

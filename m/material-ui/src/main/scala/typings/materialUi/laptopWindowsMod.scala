@@ -10,10 +10,10 @@ object laptopWindowsMod {
   
   @JSImport("material-ui/svg-icons/hardware/laptop-windows", JSImport.Default)
   @js.native
-  class default () extends HardwareLaptopWindows
+  open class default () extends HardwareLaptopWindows
   
   @JSImport("material-ui/svg-icons/hardware/laptop-windows", "HardwareLaptopWindows")
   @js.native
-  class HardwareLaptopWindows ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareLaptopWindows ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

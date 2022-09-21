@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGEllipseElement")
 @js.native
-/* private */ class SVGEllipseElement ()
+/* private */ open class SVGEllipseElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGEllipseElement {
   

@@ -12,14 +12,14 @@ object mathPathMod {
   
   @JSImport("babylonjs/Maths/math.path", "Angle")
   @js.native
-  class Angle protected () extends StObject {
+  open class Angle protected () extends StObject {
     /**
       * Creates an Angle object of "radians" radians (float).
       * @param radians the angle in radians
       */
     def this(radians: Double) = this()
     
-    /* private */ var _radians: js.Any = js.native
+    /* private */ var _radians: Any = js.native
     
     /**
       * Get value in degrees
@@ -65,11 +65,11 @@ object mathPathMod {
   
   @JSImport("babylonjs/Maths/math.path", "Arc2")
   @js.native
-  class Arc2 protected () extends StObject {
+  open class Arc2 protected () extends StObject {
     /**
       * Creates an Arc object from the three given points : start, middle and end.
       * @param startPoint Defines the start point of the arc
-      * @param midPoint Defines the midlle point of the arc
+      * @param midPoint Defines the middle point of the arc
       * @param endPoint Defines the end point of the arc
       */
     def this(
@@ -118,7 +118,7 @@ object mathPathMod {
   
   @JSImport("babylonjs/Maths/math.path", "BezierCurve")
   @js.native
-  class BezierCurve () extends StObject
+  open class BezierCurve () extends StObject
   /* static members */
   object BezierCurve {
     
@@ -140,7 +140,7 @@ object mathPathMod {
   
   @JSImport("babylonjs/Maths/math.path", "Curve3")
   @js.native
-  class Curve3 protected () extends StObject {
+  open class Curve3 protected () extends StObject {
     /**
       * A Curve3 object is a logical object, so not a mesh, to handle curves in the 3D geometric space.
       * A Curve3 is designed from a series of successive Vector3.
@@ -149,11 +149,11 @@ object mathPathMod {
       */
     def this(points: js.Array[Vector3]) = this()
     
-    /* private */ var _computeLength: js.Any = js.native
+    /* private */ var _computeLength: Any = js.native
     
-    /* private */ var _length: js.Any = js.native
+    /* private */ var _length: Any = js.native
     
-    /* private */ var _points: js.Any = js.native
+    /* private */ var _points: Any = js.native
     
     /**
       * Returns a new instance of Curve3 object : var curve = curveA.continue(curveB);
@@ -180,6 +180,33 @@ object mathPathMod {
     @JSImport("babylonjs/Maths/math.path", "Curve3")
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Returns a Curve3 object along an arc through three vector3 points:
+      * The three points should not be colinear. When they are the Curve3 is empty.
+      * @param first (Vector3) the first point the arc must pass through.
+      * @param second (Vector3) the second point the arc must pass through.
+      * @param third (Vector3) the third point the arc must pass through.
+      * @param steps (number) the larger the number of steps the more detailed the arc.
+      * @param closed (boolean) optional with default false, when true forms the chord from the first and third point
+      * @param fullCircle Circle (boolean) optional with default false, when true forms the complete circle through the three points
+      * @returns the created Curve3
+      */
+    inline def ArcThru3Points(first: Vector3, second: Vector3, third: Vector3): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any])).asInstanceOf[Curve3]
+    inline def ArcThru3Points(first: Vector3, second: Vector3, third: Vector3, steps: Double): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[Curve3]
+    inline def ArcThru3Points(first: Vector3, second: Vector3, third: Vector3, steps: Double, closed: Boolean): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any])).asInstanceOf[Curve3]
+    inline def ArcThru3Points(
+      first: Vector3,
+      second: Vector3,
+      third: Vector3,
+      steps: Double,
+      closed: Boolean,
+      fullCircle: Boolean
+    ): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any], fullCircle.asInstanceOf[js.Any])).asInstanceOf[Curve3]
+    inline def ArcThru3Points(first: Vector3, second: Vector3, third: Vector3, steps: Double, closed: Unit, fullCircle: Boolean): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any], fullCircle.asInstanceOf[js.Any])).asInstanceOf[Curve3]
+    inline def ArcThru3Points(first: Vector3, second: Vector3, third: Vector3, steps: Unit, closed: Boolean): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any])).asInstanceOf[Curve3]
+    inline def ArcThru3Points(first: Vector3, second: Vector3, third: Vector3, steps: Unit, closed: Boolean, fullCircle: Boolean): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any], fullCircle.asInstanceOf[js.Any])).asInstanceOf[Curve3]
+    inline def ArcThru3Points(first: Vector3, second: Vector3, third: Vector3, steps: Unit, closed: Unit, fullCircle: Boolean): Curve3 = (^.asInstanceOf[js.Dynamic].applyDynamic("ArcThru3Points")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], closed.asInstanceOf[js.Any], fullCircle.asInstanceOf[js.Any])).asInstanceOf[Curve3]
     
     /**
       * Returns a Curve3 object along a CatmullRom Spline curve :
@@ -269,7 +296,7 @@ object mathPathMod {
   
   @JSImport("babylonjs/Maths/math.path", "Path2")
   @js.native
-  class Path2 protected () extends StObject {
+  open class Path2 protected () extends StObject {
     /**
       * Creates a Path2 object from the starting 2D coordinates x and y.
       * @param x the starting points x value
@@ -277,9 +304,9 @@ object mathPathMod {
       */
     def this(x: Double, y: Double) = this()
     
-    /* private */ var _length: js.Any = js.native
+    /* private */ var _length: Any = js.native
     
-    /* private */ var _points: js.Any = js.native
+    /* private */ var _points: Any = js.native
     
     /**
       * Adds _numberOfSegments_ segments according to the arc definition (middle point coordinates, end point coordinates, the arc start point being the current Path2 last point) to the current Path2.
@@ -314,7 +341,7 @@ object mathPathMod {
     
     /**
       * Retreives the point at the distance aways from the starting point
-      * @param normalizedLengthPosition the length along the path to retreive the point from
+      * @param normalizedLengthPosition the length along the path to retrieve the point from
       * @returns a new Vector2 located at a percentage of the Path2 total length on this path.
       */
     def getPointAtLengthPosition(normalizedLengthPosition: Double): Vector2 = js.native
@@ -349,7 +376,7 @@ object mathPathMod {
   
   @JSImport("babylonjs/Maths/math.path", "Path3D")
   @js.native
-  class Path3D protected () extends StObject {
+  open class Path3D protected () extends StObject {
     /**
       * new Path3D(path, normal, raw)
       * Creates a Path3D. A Path3D is a logical math object, so not a mesh.
@@ -423,50 +450,53 @@ object mathPathMod {
       alignTangentsWithPath: Boolean
     ) = this()
     
-    /* private */ var _alignTangentsWithPath: js.Any = js.native
+    /* private */ var _alignTangentsWithPath: Any = js.native
     
-    /* private */ var _binormals: js.Any = js.native
+    /* private */ var _binormals: Any = js.native
     
-    /* private */ var _compute: js.Any = js.native
+    /* private */ var _compute: Any = js.native
     
-    /* private */ var _curve: js.Any = js.native
+    /* private */ var _curve: Any = js.native
     
-    /* private */ var _distances: js.Any = js.native
+    /* private */ var _distances: Any = js.native
     
-    /* private */ var _getFirstNonNullVector: js.Any = js.native
+    /* private */ var _getFirstNonNullVector: Any = js.native
     
-    /* private */ var _getLastNonNullVector: js.Any = js.native
+    /* private */ var _getLastNonNullVector: Any = js.native
     
-    /* private */ var _normalVector: js.Any = js.native
+    /* private */ var _normalVector: Any = js.native
     
-    /* private */ var _normals: js.Any = js.native
+    /* private */ var _normals: Any = js.native
     
-    /* private */ val _pointAtData: js.Any = js.native
+    /* private */ val _pointAtData: Any = js.native
     
-    /* private */ var _raw: js.Any = js.native
+    /* private */ var _raw: Any = js.native
     
     /**
       * Updates the point at data from the specified parameters
       * @param position where along the path the interpolated point is, from 0.0 to 1.0
+      * @param subPosition
       * @param point the interpolated point
       * @param parentIndex the index of an existing curve point that is on, or else positionally the first behind, the interpolated point
+      * @param interpolateTNB
       */
-    /* private */ var _setPointAtData: js.Any = js.native
+    /* private */ var _setPointAtData: Any = js.native
     
-    /* private */ var _tangents: js.Any = js.native
+    /* private */ var _tangents: Any = js.native
     
     /**
       * Updates the point at interpolation matrix for the tangents, normals and binormals
       */
-    /* private */ var _updateInterpolationMatrix: js.Any = js.native
+    /* private */ var _updateInterpolationMatrix: Any = js.native
     
     /**
       * Updates the point at data for an interpolated point along this curve
       * @param position the position of the point along this curve, from 0.0 to 1.0
-      * @interpolateTNB wether to compute the interpolated tangent, normal and binormal
+      * @param interpolateTNB
+      * @interpolateTNB whether to compute the interpolated tangent, normal and binormal
       * @returns the (updated) point at data
       */
-    /* private */ var _updatePointAtData: js.Any = js.native
+    /* private */ var _updatePointAtData: Any = js.native
     
     /**
       * Returns the binormal vector of an interpolated Path3D curve point at the specified position along this path.

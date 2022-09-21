@@ -17,7 +17,7 @@ object XTarget {
   inline def apply(
     acquire: () => Unit,
     addDrawElement: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTarget = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addDrawElement = js.Any.fromFunction0(addDrawElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

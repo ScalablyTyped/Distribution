@@ -1,10 +1,11 @@
 package typings.dvtngJss
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Properties = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Properties = StringDictionary[String]
 
-type Selectors = org.scalablytyped.runtime.StringDictionary[typings.dvtngJss.Properties]
+type Selectors = StringDictionary[Properties]

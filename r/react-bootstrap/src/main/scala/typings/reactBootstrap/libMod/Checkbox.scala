@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "Checkbox")
 @js.native
-class Checkbox () extends ^
+open class Checkbox () extends ^

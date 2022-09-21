@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Observer")
 @js.native
-class Observer[T] protected ()
+open class Observer[T] protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Observer[T] {
   /**
@@ -37,7 +37,7 @@ class Observer[T] protected ()
     /**
     * Defines the current scope used to restore the JS context
     */
-  scope: js.Any
+  scope: Any
   ) = this()
   
   /** @hidden */
@@ -60,7 +60,7 @@ class Observer[T] protected ()
     * Defines the current scope used to restore the JS context
     */
   /* CompleteClass */
-  var scope: js.Any = js.native
+  var scope: Any = js.native
   
   /**
     * Gets or sets a property defining that the observer as to be unregistered after the next notification

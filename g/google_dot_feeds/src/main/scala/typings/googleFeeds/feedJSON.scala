@@ -31,7 +31,7 @@ object feedJSON {
     
     inline def setEntries(value: js.Array[feedEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: feedEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: feedEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setFeedURL(value: String): Self = StObject.set(x, "feedURL", value.asInstanceOf[js.Any])
     

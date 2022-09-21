@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.PageStateActionButton")
 @js.native
-class PageStateActionButton ()
+open class PageStateActionButton ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.PageStateActionButton

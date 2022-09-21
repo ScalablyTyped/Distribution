@@ -10,6 +10,6 @@ object eventDispatcherMod {
   @js.native
   abstract class EventDispatcher () extends StObject {
     
-    def trigger(args: js.Any*): js.Any = js.native
+    def trigger(args: Any*): Any = js.native
   }
 }

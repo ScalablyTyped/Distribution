@@ -6,10 +6,9 @@ import typings.konva.konvaStrings.bottom
 import typings.konva.konvaStrings.left
 import typings.konva.konvaStrings.right
 import typings.konva.konvaStrings.top
-import typings.konva.nodeMod.Node
-import typings.konva.nodeMod.NodeConfig
 import typings.konva.shapeMod.Shape
 import typings.konva.shapeMod.ShapeConfig
+import typings.konva.textMod.Text
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object labelMod {
   
-  @JSImport("konva/types/shapes/Label", "Label")
+  @JSImport("konva/lib/shapes/Label", "Label")
   @js.native
-  class Label protected () extends Group {
-    def this(config: js.Any) = this()
+  open class Label () extends Group {
+    def this(config: Any) = this()
     
-    def _addListeners(text: js.Any): Unit = js.native
+    def _addListeners(text: Any): Unit = js.native
     
     def _sync(): Unit = js.native
     
@@ -30,17 +29,17 @@ object labelMod {
     
     def getTag(): Tag = js.native
     
-    def getText(): Node[NodeConfig] = js.native
+    def getText(): Text = js.native
     
     def getWidth(): Double = js.native
   }
   
-  @JSImport("konva/types/shapes/Label", "Tag")
+  @JSImport("konva/lib/shapes/Label", "Tag")
   @js.native
-  class Tag () extends Shape[TagConfig] {
+  open class Tag () extends Shape[TagConfig] {
     def this(config: TagConfig) = this()
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def cornerRadius(): Double = js.native
     def cornerRadius(v: Double): this.type = js.native
@@ -48,16 +47,9 @@ object labelMod {
     var cornerRadius_Original: GetSet[Double, this.type] = js.native
     
     def pointerDirection(): left | top | right | bottom = js.native
+    def pointerDirection(v: left | top | right | bottom): this.type = js.native
     @JSName("pointerDirection")
     var pointerDirection_Original: GetSet[left | top | right | bottom, this.type] = js.native
-    @JSName("pointerDirection")
-    def pointerDirection_bottom(v: bottom): this.type = js.native
-    @JSName("pointerDirection")
-    def pointerDirection_left(v: left): this.type = js.native
-    @JSName("pointerDirection")
-    def pointerDirection_right(v: right): this.type = js.native
-    @JSName("pointerDirection")
-    def pointerDirection_top(v: top): this.type = js.native
     
     def pointerHeight(): Double = js.native
     def pointerHeight(v: Double): this.type = js.native
@@ -76,7 +68,7 @@ object labelMod {
     extends StObject
        with ShapeConfig {
     
-    var cornerRadius: js.UndefOr[Double] = js.undefined
+    var cornerRadius: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     var pointerDirection: js.UndefOr[String] = js.undefined
     
@@ -93,9 +85,11 @@ object labelMod {
     
     extension [Self <: TagConfig](x: Self) {
       
-      inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+      inline def setCornerRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       
       inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+      
+      inline def setCornerRadiusVarargs(value: Double*): Self = StObject.set(x, "cornerRadius", js.Array(value*))
       
       inline def setPointerDirection(value: String): Self = StObject.set(x, "pointerDirection", value.asInstanceOf[js.Any])
       

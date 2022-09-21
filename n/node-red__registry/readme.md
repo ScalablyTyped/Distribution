@@ -1,19 +1,18 @@
 
 # Scala.js typings for node-red__registry
 
-Typings are for version 1.1
+Typings are for version 1.2
 
-## Library description:
-@node-red/registry ====================
+
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @node-red/registry |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 1 |
-| # downloads        | 925494 |
-| # stars            | 0 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 84701.33333333333 |
+| # stars            | 15051.0 |
 
 ## Links
 - [Homepage](https://github.com/node-red/node-red#readme)

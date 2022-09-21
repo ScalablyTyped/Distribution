@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SystemMediaTransportControls extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_autorepeatmodechangerequested(
     `type`: autorepeatmodechangerequested,
@@ -36,7 +36,7 @@ trait SystemMediaTransportControls extends StObject {
   @JSName("addEventListener")
   def addEventListener_playbackratechangerequested(
     `type`: playbackratechangerequested,
-    listener: TypedEventHandler[SystemMediaTransportControls, js.Any]
+    listener: TypedEventHandler[SystemMediaTransportControls, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_propertychanged(
@@ -107,10 +107,10 @@ trait SystemMediaTransportControls extends StObject {
   var onplaybackpositionchangerequested_Original: TypedEventHandler[SystemMediaTransportControls, PlaybackPositionChangeRequestedEventArgs] = js.native
   
   /** Occurs when the user modifies the SystemMediaTransportControls playback rate. */
-  def onplaybackratechangerequested(ev: js.Any & WinRTEvent[SystemMediaTransportControls]): Unit = js.native
+  def onplaybackratechangerequested(ev: Any & WinRTEvent[SystemMediaTransportControls]): Unit = js.native
   /** Occurs when the user modifies the SystemMediaTransportControls playback rate. */
   @JSName("onplaybackratechangerequested")
-  var onplaybackratechangerequested_Original: TypedEventHandler[SystemMediaTransportControls, js.Any] = js.native
+  var onplaybackratechangerequested_Original: TypedEventHandler[SystemMediaTransportControls, Any] = js.native
   
   /** Occurs when a property on the SystemMediaTransportControls has changed. */
   def onpropertychanged(
@@ -132,7 +132,7 @@ trait SystemMediaTransportControls extends StObject {
   /** Gets the playback status of the media. */
   var playbackStatus: MediaPlaybackStatus = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_autorepeatmodechangerequested(
     `type`: autorepeatmodechangerequested,
@@ -151,7 +151,7 @@ trait SystemMediaTransportControls extends StObject {
   @JSName("removeEventListener")
   def removeEventListener_playbackratechangerequested(
     `type`: playbackratechangerequested,
-    listener: TypedEventHandler[SystemMediaTransportControls, js.Any]
+    listener: TypedEventHandler[SystemMediaTransportControls, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_propertychanged(

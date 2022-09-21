@@ -18,7 +18,7 @@ trait FilePickerFileTypesOrderedMap extends StObject {
     * Retrieves an iterator that iterates through the display names and associated file types in the collection.
     * @return The iterator.
     */
-  def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
+  def first(): IIterator[IKeyValuePair[Any, Any]]
   
   /**
     * Returns an immutable view of the collection of display names and associated file types.
@@ -61,7 +61,7 @@ object FilePickerFileTypesOrderedMap {
   
   inline def apply(
     clear: () => Unit,
-    first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+    first: () => IIterator[IKeyValuePair[Any, Any]],
     getView: () => IMapView[String, IVector[String]],
     hasKey: String => Boolean,
     insert: (String, IVector[String]) => Boolean,
@@ -77,7 +77,7 @@ object FilePickerFileTypesOrderedMap {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     inline def setGetView(value: () => IMapView[String, IVector[String]]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     

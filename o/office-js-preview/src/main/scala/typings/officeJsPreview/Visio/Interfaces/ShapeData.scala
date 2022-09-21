@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "shape.toJSON()". */
+/** An interface describing the data returned by calling `shape.toJSON()`. */
 trait ShapeData extends StObject {
   
   /**
@@ -92,13 +92,13 @@ object ShapeData {
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    inline def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setHyperlinks(value: js.Array[HyperlinkData]): Self = StObject.set(x, "hyperlinks", value.asInstanceOf[js.Any])
     
     inline def setHyperlinksUndefined: Self = StObject.set(x, "hyperlinks", js.undefined)
     
-    inline def setHyperlinksVarargs(value: HyperlinkData*): Self = StObject.set(x, "hyperlinks", js.Array(value :_*))
+    inline def setHyperlinksVarargs(value: HyperlinkData*): Self = StObject.set(x, "hyperlinks", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -116,13 +116,13 @@ object ShapeData {
     
     inline def setShapeDataItemsUndefined: Self = StObject.set(x, "shapeDataItems", js.undefined)
     
-    inline def setShapeDataItemsVarargs(value: ShapeDataItemData*): Self = StObject.set(x, "shapeDataItems", js.Array(value :_*))
+    inline def setShapeDataItemsVarargs(value: ShapeDataItemData*): Self = StObject.set(x, "shapeDataItems", js.Array(value*))
     
     inline def setSubShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "subShapes", value.asInstanceOf[js.Any])
     
     inline def setSubShapesUndefined: Self = StObject.set(x, "subShapes", js.undefined)
     
-    inline def setSubShapesVarargs(value: ShapeData*): Self = StObject.set(x, "subShapes", js.Array(value :_*))
+    inline def setSubShapesVarargs(value: ShapeData*): Self = StObject.set(x, "subShapes", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

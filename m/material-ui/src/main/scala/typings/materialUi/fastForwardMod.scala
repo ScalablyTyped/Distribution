@@ -10,10 +10,10 @@ object fastForwardMod {
   
   @JSImport("material-ui/svg-icons/av/fast-forward", JSImport.Default)
   @js.native
-  class default () extends AvFastForward
+  open class default () extends AvFastForward
   
   @JSImport("material-ui/svg-icons/av/fast-forward", "AvFastForward")
   @js.native
-  class AvFastForward ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvFastForward ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

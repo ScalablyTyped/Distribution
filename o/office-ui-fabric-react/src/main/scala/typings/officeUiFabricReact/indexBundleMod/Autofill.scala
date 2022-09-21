@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "Autofill")
 @js.native
-class Autofill protected ()
+open class Autofill protected ()
   extends typings.officeUiFabricReact.mod.Autofill {
   def this(props: IAutofillProps) = this()
 }

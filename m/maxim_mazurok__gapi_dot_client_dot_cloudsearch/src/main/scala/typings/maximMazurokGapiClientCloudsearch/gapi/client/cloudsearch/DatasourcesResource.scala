@@ -3,6 +3,7 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCloudsearch.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientCloudsearch.anon.AltCallback
+import typings.maximMazurokGapiClientCloudsearch.anon.CallbackDebugOptionsenableDebugging
 import typings.maximMazurokGapiClientCloudsearch.anon.CallbackFields
 import typings.maximMazurokGapiClientCloudsearch.anon.DebugOptionsenableDebugging
 import typings.maximMazurokGapiClientCloudsearch.anon.FromDateday
@@ -43,6 +44,10 @@ trait DatasourcesResource extends StObject {
   /** Lists datasources. **Note:** This API requires an admin account to execute. */
   def list(): Request[ListDataSourceResponse] = js.native
   def list(request: PageSize): Request[ListDataSourceResponse] = js.native
+  
+  /** Updates a datasource. **Note:** This API requires an admin account to execute. */
+  def patch(request: CallbackDebugOptionsenableDebugging): Request[Operation] = js.native
+  def patch(request: DebugOptionsenableDebugging, body: DataSource): Request[Operation] = js.native
   
   /** Updates a datasource. **Note:** This API requires an admin account to execute. */
   def update(request: CallbackFields): Request[Operation] = js.native

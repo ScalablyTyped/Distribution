@@ -9,10 +9,10 @@ A memcached store for express-brute
 | ------------------ | :-------------: |
 | Full name          | express-brute-memcached |
 | Keywords           | express, brute, memcached, store |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 40288 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1060.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/AdamPflug/express-brute-memcached)

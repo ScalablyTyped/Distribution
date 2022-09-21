@@ -15,6 +15,11 @@ trait MxfSettings extends StObject {
     * Specify the MXF profile, also called shim, for this output. When you choose Auto, MediaConvert chooses a profile based on the video codec and resolution. For a list of codecs supported with each MXF profile, see https://docs.aws.amazon.com/mediaconvert/latest/ug/codecs-supported-with-each-mxf-profile.html. For more information about the automatic selection behavior, see https://docs.aws.amazon.com/mediaconvert/latest/ug/default-automatic-selection-of-mxf-profiles.html.
     */
   var Profile: js.UndefOr[MxfProfile] = js.undefined
+  
+  /**
+    * Specify the XAVC profile settings for MXF outputs when you set your MXF profile to XAVC.
+    */
+  var XavcProfileSettings: js.UndefOr[MxfXavcProfileSettings] = js.undefined
 }
 object MxfSettings {
   
@@ -32,5 +37,9 @@ object MxfSettings {
     inline def setProfile(value: MxfProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
     inline def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
+    
+    inline def setXavcProfileSettings(value: MxfXavcProfileSettings): Self = StObject.set(x, "XavcProfileSettings", value.asInstanceOf[js.Any])
+    
+    inline def setXavcProfileSettingsUndefined: Self = StObject.set(x, "XavcProfileSettings", js.undefined)
   }
 }

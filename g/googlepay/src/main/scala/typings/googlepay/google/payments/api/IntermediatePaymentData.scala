@@ -14,7 +14,12 @@ trait IntermediatePaymentData extends StObject {
   /**
     * Indicate the changing field that triggers the callback.
     */
-  var callbackTrigger: js.Array[CallbackTrigger]
+  var callbackTrigger: CallbackTrigger
+  
+  /**
+    * Contains the data for offers applied by the user.
+    */
+  var offerData: js.UndefOr[OfferData] = js.undefined
   
   /**
     * Contains limited data for user selected card information.
@@ -33,16 +38,18 @@ trait IntermediatePaymentData extends StObject {
 }
 object IntermediatePaymentData {
   
-  inline def apply(callbackTrigger: js.Array[CallbackTrigger], paymentMethodData: IntermediatePaymentMethodData): IntermediatePaymentData = {
+  inline def apply(callbackTrigger: CallbackTrigger, paymentMethodData: IntermediatePaymentMethodData): IntermediatePaymentData = {
     val __obj = js.Dynamic.literal(callbackTrigger = callbackTrigger.asInstanceOf[js.Any], paymentMethodData = paymentMethodData.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntermediatePaymentData]
   }
   
   extension [Self <: IntermediatePaymentData](x: Self) {
     
-    inline def setCallbackTrigger(value: js.Array[CallbackTrigger]): Self = StObject.set(x, "callbackTrigger", value.asInstanceOf[js.Any])
+    inline def setCallbackTrigger(value: CallbackTrigger): Self = StObject.set(x, "callbackTrigger", value.asInstanceOf[js.Any])
     
-    inline def setCallbackTriggerVarargs(value: CallbackTrigger*): Self = StObject.set(x, "callbackTrigger", js.Array(value :_*))
+    inline def setOfferData(value: OfferData): Self = StObject.set(x, "offerData", value.asInstanceOf[js.Any])
+    
+    inline def setOfferDataUndefined: Self = StObject.set(x, "offerData", js.undefined)
     
     inline def setPaymentMethodData(value: IntermediatePaymentMethodData): Self = StObject.set(x, "paymentMethodData", value.asInstanceOf[js.Any])
     

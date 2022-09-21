@@ -19,14 +19,13 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rc-motion", "CSSMotionList")
   @js.native
-  class CSSMotionList protected ()
-    extends Component[CSSMotionListProps, js.Any, js.Any] {
+  open class CSSMotionList protected () extends Component[CSSMotionListProps, Any, Any] {
     def this(props: CSSMotionListProps) = this()
-    def this(props: CSSMotionListProps, context: js.Any) = this()
+    def this(props: CSSMotionListProps, context: Any) = this()
   }
   @JSImport("rc-motion", "CSSMotionList")
   @js.native
-  val CSSMotionList: ComponentClass[CSSMotionListProps, js.Any] = js.native
+  val CSSMotionList: ComponentClass[CSSMotionListProps, Any] = js.native
   
   type _To = ForwardRefExoticComponent[CSSMotionPropsrefRefanyun]
   

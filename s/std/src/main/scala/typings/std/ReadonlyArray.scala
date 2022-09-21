@@ -11,17 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ReadonlyArray[T]
   extends StObject
-     with /* n */ NumberDictionary[T] {
+     with /* standard es5 */
+/* n */ NumberDictionary[T] {
+  
+  /**
+    * Returns the item located at the specified index.
+    * @param index The zero-based index of the desired code unit. A negative index will count back from the last item.
+    */
+  /* standard es2022.array */
+  def at(index: Double): js.UndefOr[T] = js.native
   
   /**
     * Combines two or more arrays.
     * @param items Additional items to add to the end of array1.
     */
+  /* standard es5 */
   def concat(items: (js.Array[T] | T)*): js.Array[T] = js.native
   
   /**
     * Returns an iterable of key, value pairs for every entry in the array
     */
+  /* standard es2015.iterable */
   def entries(): IterableIterator[js.Tuple2[Double, T]] = js.native
   
   /**
@@ -32,10 +42,11 @@ trait ReadonlyArray[T]
     * @param thisArg An object to which the this keyword can refer in the predicate function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def every(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): scala.Boolean = js.native
+  /* standard es5 */
+  def every(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any]): scala.Boolean = js.native
   def every(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
-    thisArg: js.Any
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any],
+    thisArg: Any
   ): scala.Boolean = js.native
   /**
     * Determines whether all the members of an array satisfy the specified test.
@@ -45,6 +56,7 @@ trait ReadonlyArray[T]
     * @param thisArg An object to which the this keyword can refer in the predicate function.
     * If thisArg is omitted, undefined is used as the this value.
     */
+  /* standard es5 */
   @JSName("every")
   def every_S_T[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean]
@@ -52,7 +64,7 @@ trait ReadonlyArray[T]
   @JSName("every")
   def every_S_T[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): /* is std.Array<S> */ scala.Boolean = js.native
   
   /**
@@ -60,16 +72,18 @@ trait ReadonlyArray[T]
     * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): js.Array[T] = js.native
+  /* standard es5 */
+  def filter(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any]): js.Array[T] = js.native
   def filter(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
-    thisArg: js.Any
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any],
+    thisArg: Any
   ): js.Array[T] = js.native
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
     * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
     */
+  /* standard es5 */
   @JSName("filter")
   def filter_S_T[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean]
@@ -77,13 +91,14 @@ trait ReadonlyArray[T]
   @JSName("filter")
   def filter_S_T[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): js.Array[S] = js.native
   
-  def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], js.Any]): js.UndefOr[T] = js.native
+  /* standard es2015.core */
+  def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], Any]): js.UndefOr[T] = js.native
   def find(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], js.Any],
-    thisArg: js.Any
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], Any],
+    thisArg: Any
   ): js.UndefOr[T] = js.native
   /**
     * Returns the value of the first element in the array where predicate is true, and undefined
@@ -94,6 +109,7 @@ trait ReadonlyArray[T]
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
+  /* standard es2015.core */
   def find[S /* <: T */](
     predicate: js.ThisFunction3[
       /* this */ Unit, 
@@ -111,7 +127,7 @@ trait ReadonlyArray[T]
       /* obj */ js.Array[T], 
       /* is S */ scala.Boolean
     ],
-    thisArg: js.Any
+    thisArg: Any
   ): js.UndefOr[S] = js.native
   
   /**
@@ -123,10 +139,11 @@ trait ReadonlyArray[T]
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
-  def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], js.Any]): Double = js.native
+  /* standard es2015.core */
+  def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], Any]): Double = js.native
   def findIndex(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], js.Any],
-    thisArg: js.Any
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], Any],
+    thisArg: Any
   ): Double = js.native
   
   /**
@@ -135,6 +152,7 @@ trait ReadonlyArray[T]
     *
     * @param depth The maximum recursion depth
     */
+  /* standard es2019.array */
   def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = js.native
   def flat[A, D /* <: Double */](depth: D): js.Array[FlatArray[A, D]] = js.native
   
@@ -148,6 +166,7 @@ trait ReadonlyArray[T]
     * @param thisArg An object to which the this keyword can refer in the callback function. If
     * thisArg is omitted, undefined is used as the this value.
     */
+  /* standard es2019.array */
   def flatMap[U, This](
     callback: js.ThisFunction3[
       /* this */ This, 
@@ -173,10 +192,11 @@ trait ReadonlyArray[T]
     * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
     * @param thisArg  An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
+  /* standard es5 */
   def forEach(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit]): Unit = js.native
   def forEach(
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
   
   /**
@@ -184,6 +204,7 @@ trait ReadonlyArray[T]
     * @param searchElement The element to search for.
     * @param fromIndex The position in this array at which to begin searching for searchElement.
     */
+  /* standard es2016.array.include */
   def includes(searchElement: T): scala.Boolean = js.native
   def includes(searchElement: T, fromIndex: Double): scala.Boolean = js.native
   
@@ -192,10 +213,12 @@ trait ReadonlyArray[T]
     * @param searchElement The value to locate in the array.
     * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
     */
+  /* standard es5 */
   def indexOf(searchElement: T): Double = js.native
   def indexOf(searchElement: T, fromIndex: Double): Double = js.native
   
   /** Iterator of values in the array. */
+  /* standard es2015.iterable */
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[T]] = js.native
   
@@ -203,12 +226,14 @@ trait ReadonlyArray[T]
     * Adds all the elements of an array separated by the specified separator string.
     * @param separator A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.
     */
+  /* standard es5 */
   def join(): java.lang.String = js.native
   def join(separator: java.lang.String): java.lang.String = js.native
   
   /**
     * Returns an iterable of keys in the array
     */
+  /* standard es2015.iterable */
   def keys(): IterableIterator[Double] = js.native
   
   /**
@@ -216,12 +241,14 @@ trait ReadonlyArray[T]
     * @param searchElement The value to locate in the array.
     * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at the last index in the array.
     */
+  /* standard es5 */
   def lastIndexOf(searchElement: T): Double = js.native
   def lastIndexOf(searchElement: T, fromIndex: Double): Double = js.native
   
   /**
     * Gets the length of the array. This is a number one higher than the highest element defined in an array.
     */
+  /* standard es5 */
   val length: Double = js.native
   
   /**
@@ -229,10 +256,11 @@ trait ReadonlyArray[T]
     * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
+  /* standard es5 */
   def map[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Array[U] = js.native
   def map[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-    thisArg: js.Any
+    thisArg: Any
   ): js.Array[U] = js.native
   
   /**
@@ -240,6 +268,7 @@ trait ReadonlyArray[T]
     * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
     * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
     */
+  /* standard es5 */
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ T, 
@@ -249,6 +278,7 @@ trait ReadonlyArray[T]
       T
     ]
   ): T = js.native
+  /* standard es5 */
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ T, 
@@ -265,6 +295,7 @@ trait ReadonlyArray[T]
     * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
     * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
     */
+  /* standard es5 */
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ T, 
@@ -274,6 +305,7 @@ trait ReadonlyArray[T]
       T
     ]
   ): T = js.native
+  /* standard es5 */
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ T, 
@@ -289,6 +321,7 @@ trait ReadonlyArray[T]
     * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
     * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
     */
+  /* standard es5 */
   @JSName("reduceRight")
   def reduceRight_U_U[U](
     callbackfn: js.Function4[
@@ -306,6 +339,7 @@ trait ReadonlyArray[T]
     * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
     * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
     */
+  /* standard es5 */
   @JSName("reduce")
   def reduce_U_U[U](
     callbackfn: js.Function4[
@@ -323,6 +357,7 @@ trait ReadonlyArray[T]
     * @param start The beginning of the specified portion of the array.
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
+  /* standard es5 */
   def slice(): js.Array[T] = js.native
   def slice(start: Double): js.Array[T] = js.native
   def slice(start: Double, end: Double): js.Array[T] = js.native
@@ -336,14 +371,16 @@ trait ReadonlyArray[T]
     * @param thisArg An object to which the this keyword can refer in the predicate function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def some(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): scala.Boolean = js.native
+  /* standard es5 */
+  def some(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any]): scala.Boolean = js.native
   def some(
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
-    thisArg: js.Any
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any],
+    thisArg: Any
   ): scala.Boolean = js.native
   
   /**
     * Returns an iterable of values in the array
     */
+  /* standard es2015.iterable */
   def values(): IterableIterator[T] = js.native
 }

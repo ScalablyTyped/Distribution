@@ -25,26 +25,26 @@ object anon {
   
   trait Left extends StObject {
     
-    var left: js.Array[js.Any]
+    var left: js.Array[Any]
     
-    var right: js.Array[js.Any]
+    var right: js.Array[Any]
   }
   object Left {
     
-    inline def apply(left: js.Array[js.Any], right: js.Array[js.Any]): Left = {
+    inline def apply(left: js.Array[Any], right: js.Array[Any]): Left = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
       __obj.asInstanceOf[Left]
     }
     
     extension [Self <: Left](x: Self) {
       
-      inline def setLeft(value: js.Array[js.Any]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: js.Array[Any]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      inline def setLeftVarargs(value: js.Any*): Self = StObject.set(x, "left", js.Array(value :_*))
+      inline def setLeftVarargs(value: Any*): Self = StObject.set(x, "left", js.Array(value*))
       
-      inline def setRight(value: js.Array[js.Any]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: js.Array[Any]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      inline def setRightVarargs(value: js.Any*): Self = StObject.set(x, "right", js.Array(value :_*))
+      inline def setRightVarargs(value: Any*): Self = StObject.set(x, "right", js.Array(value*))
     }
   }
   
@@ -95,17 +95,17 @@ object anon {
     
     var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ TypeofAceBuilds, Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
+    var onBlur: js.UndefOr[js.Function2[/* event */ Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onCursorChange: js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
+    var onFocus: js.UndefOr[js.Function2[/* event */ Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
     
-    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onLoad: js.UndefOr[js.Function1[/* editor */ Editor, Unit]] = js.undefined
     
@@ -113,9 +113,9 @@ object anon {
     
     var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onSelectionChange: js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onValidate: js.UndefOr[js.Function1[/* annotations */ js.Array[Annotation], Unit]] = js.undefined
     
@@ -156,7 +156,7 @@ object anon {
       
       inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
       
-      inline def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+      inline def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -166,7 +166,7 @@ object anon {
       
       inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      inline def setCommandsVarargs(value: ICommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: ICommand*): Self = StObject.set(x, "commands", js.Array(value*))
       
       inline def setCursorStart(value: Double): Self = StObject.set(x, "cursorStart", value.asInstanceOf[js.Any])
       
@@ -188,13 +188,13 @@ object anon {
       
       inline def setEnableBasicAutocompletionUndefined: Self = StObject.set(x, "enableBasicAutocompletion", js.undefined)
       
-      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value :_*))
+      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value*))
       
       inline def setEnableLiveAutocompletion(value: Boolean | js.Array[String]): Self = StObject.set(x, "enableLiveAutocompletion", value.asInstanceOf[js.Any])
       
       inline def setEnableLiveAutocompletionUndefined: Self = StObject.set(x, "enableLiveAutocompletion", js.undefined)
       
-      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value :_*))
+      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value*))
       
       inline def setEnableSnippets(value: Boolean): Self = StObject.set(x, "enableSnippets", value.asInstanceOf[js.Any])
       
@@ -224,7 +224,7 @@ object anon {
       
       inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
       
-      inline def setMarkersVarargs(value: IMarker*): Self = StObject.set(x, "markers", js.Array(value :_*))
+      inline def setMarkersVarargs(value: IMarker*): Self = StObject.set(x, "markers", js.Array(value*))
       
       inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
       
@@ -250,11 +250,11 @@ object anon {
       
       inline def setOnBeforeLoadUndefined: Self = StObject.set(x, "onBeforeLoad", js.undefined)
       
-      inline def setOnBlur(value: (/* event */ js.Any, /* editor */ js.UndefOr[Editor]) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
+      inline def setOnBlur(value: (/* event */ Any, /* editor */ js.UndefOr[Editor]) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: (/* value */ String, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ String, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -262,15 +262,15 @@ object anon {
       
       inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      inline def setOnCursorChange(value: (/* value */ js.Any, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction2(value))
+      inline def setOnCursorChange(value: (/* value */ Any, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction2(value))
       
       inline def setOnCursorChangeUndefined: Self = StObject.set(x, "onCursorChange", js.undefined)
       
-      inline def setOnFocus(value: (/* event */ js.Any, /* editor */ js.UndefOr[Editor]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      inline def setOnFocus(value: (/* event */ Any, /* editor */ js.UndefOr[Editor]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: /* event */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: /* event */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
@@ -286,9 +286,9 @@ object anon {
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOnSelection(value: (/* selectedText */ String, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
+      inline def setOnSelection(value: (/* selectedText */ String, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
       
-      inline def setOnSelectionChange(value: (/* value */ js.Any, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
+      inline def setOnSelectionChange(value: (/* value */ Any, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
       
       inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
@@ -310,7 +310,7 @@ object anon {
       
       inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
       
-      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value :_*))
+      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value*))
       
       inline def setSetOptions(value: IAceOptions): Self = StObject.set(x, "setOptions", value.asInstanceOf[js.Any])
       
@@ -379,7 +379,7 @@ object anon {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
@@ -438,13 +438,13 @@ object anon {
       
       inline def setEnableBasicAutocompletionUndefined: Self = StObject.set(x, "enableBasicAutocompletion", js.undefined)
       
-      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value :_*))
+      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value*))
       
       inline def setEnableLiveAutocompletion(value: Boolean | js.Array[String]): Self = StObject.set(x, "enableLiveAutocompletion", value.asInstanceOf[js.Any])
       
       inline def setEnableLiveAutocompletionUndefined: Self = StObject.set(x, "enableLiveAutocompletion", js.undefined)
       
-      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value :_*))
+      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value*))
       
       inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
@@ -478,7 +478,7 @@ object anon {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnChange(value: (/* value */ js.Array[String], /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ js.Array[String], /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -506,7 +506,7 @@ object anon {
       
       inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
       
-      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value :_*))
+      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value*))
       
       inline def setSetOptions(value: js.Object): Self = StObject.set(x, "setOptions", value.asInstanceOf[js.Any])
       
@@ -540,7 +540,7 @@ object anon {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -593,19 +593,19 @@ object anon {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ js.Any, Unit]] = js.undefined
+    var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ Any, Unit]] = js.undefined
     
     var onBlur: js.UndefOr[js.Function1[/* value */ Event, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onCursorChange: js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onFocus: js.UndefOr[js.Function1[/* value */ Event, Unit]] = js.undefined
     
-    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
@@ -613,9 +613,9 @@ object anon {
     
     var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onSelectionChange: js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var orientation: js.UndefOr[String] = js.undefined
     
@@ -656,7 +656,7 @@ object anon {
       
       inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
       
-      inline def setAnnotationsVarargs(value: js.Array[IAnnotation]*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+      inline def setAnnotationsVarargs(value: js.Array[IAnnotation]*): Self = StObject.set(x, "annotations", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -666,7 +666,7 @@ object anon {
       
       inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      inline def setCommandsVarargs(value: ICommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: ICommand*): Self = StObject.set(x, "commands", js.Array(value*))
       
       inline def setCursorStart(value: Double): Self = StObject.set(x, "cursorStart", value.asInstanceOf[js.Any])
       
@@ -680,7 +680,7 @@ object anon {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setEditorProps(value: IEditorProps): Self = StObject.set(x, "editorProps", value.asInstanceOf[js.Any])
       
@@ -690,13 +690,13 @@ object anon {
       
       inline def setEnableBasicAutocompletionUndefined: Self = StObject.set(x, "enableBasicAutocompletion", js.undefined)
       
-      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value :_*))
+      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value*))
       
       inline def setEnableLiveAutocompletion(value: Boolean | js.Array[String]): Self = StObject.set(x, "enableLiveAutocompletion", value.asInstanceOf[js.Any])
       
       inline def setEnableLiveAutocompletionUndefined: Self = StObject.set(x, "enableLiveAutocompletion", js.undefined)
       
-      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value :_*))
+      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value*))
       
       inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
@@ -722,7 +722,7 @@ object anon {
       
       inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
       
-      inline def setMarkersVarargs(value: js.Array[IMarker]*): Self = StObject.set(x, "markers", js.Array(value :_*))
+      inline def setMarkersVarargs(value: js.Array[IMarker]*): Self = StObject.set(x, "markers", js.Array(value*))
       
       inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
       
@@ -740,7 +740,7 @@ object anon {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnBeforeLoad(value: /* ace */ js.Any => Unit): Self = StObject.set(x, "onBeforeLoad", js.Any.fromFunction1(value))
+      inline def setOnBeforeLoad(value: /* ace */ Any => Unit): Self = StObject.set(x, "onBeforeLoad", js.Any.fromFunction1(value))
       
       inline def setOnBeforeLoadUndefined: Self = StObject.set(x, "onBeforeLoad", js.undefined)
       
@@ -748,7 +748,7 @@ object anon {
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: (/* value */ js.Array[String], /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ js.Array[String], /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -756,7 +756,7 @@ object anon {
       
       inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      inline def setOnCursorChange(value: (/* value */ js.Any, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction2(value))
+      inline def setOnCursorChange(value: (/* value */ Any, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction2(value))
       
       inline def setOnCursorChangeUndefined: Self = StObject.set(x, "onCursorChange", js.undefined)
       
@@ -764,7 +764,7 @@ object anon {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: /* event */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: /* event */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
@@ -780,9 +780,9 @@ object anon {
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOnSelection(value: (/* selectedText */ String, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
+      inline def setOnSelection(value: (/* selectedText */ String, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
       
-      inline def setOnSelectionChange(value: (/* value */ js.Any, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
+      inline def setOnSelectionChange(value: (/* value */ Any, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
       
       inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
@@ -800,7 +800,7 @@ object anon {
       
       inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
       
-      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value :_*))
+      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value*))
       
       inline def setSetOptions(value: IAceOptions): Self = StObject.set(x, "setOptions", value.asInstanceOf[js.Any])
       
@@ -834,7 +834,7 @@ object anon {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -865,18 +865,18 @@ object anon {
   
   trait TypeofAce extends StObject {
     
-    val Selection: js.Any
+    val Selection: Any
   }
   object TypeofAce {
     
-    inline def apply(Selection: js.Any): TypeofAce = {
+    inline def apply(Selection: Any): TypeofAce = {
       val __obj = js.Dynamic.literal(Selection = Selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofAce]
     }
     
     extension [Self <: TypeofAce](x: Self) {
       
-      inline def setSelection(value: js.Any): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: Any): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -885,13 +885,13 @@ object anon {
     
     val Ace: TypeofAce = js.native
     
-    val EditSession: js.Any = js.native
+    val EditSession: Any = js.native
     
     val Range: TypeofRange = js.native
     
-    val UndoManager: js.Any = js.native
+    val UndoManager: Any = js.native
     
-    val VirtualRenderer: js.Any = js.native
+    val VirtualRenderer: Any = js.native
     
     val config: Config = js.native
     
@@ -903,7 +903,7 @@ object anon {
     def edit(el: Element): Editor = js.native
     def edit(el: Element, options: PartialEditorOptions): Editor = js.native
     
-    def require(name: String): js.Any = js.native
+    def require(name: String): Any = js.native
     
     val version: String = js.native
   }
@@ -977,32 +977,24 @@ object anon {
     var onBeforeLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* ace */ TypeofAceBuilds, Unit]]]] = js.undefined
     
     var onBlur: js.UndefOr[
-        Validator[
-          js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]]
-        ]
+        Validator[js.UndefOr[js.Function2[/* event */ Any, /* editor */ js.UndefOr[Editor], Unit]]]
       ] = js.undefined
     
     var onChange: js.UndefOr[
-        Validator[
-          js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[js.Any], Unit]]
-        ]
+        Validator[js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[Any], Unit]]]
       ] = js.undefined
     
     var onCopy: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.undefined
     
     var onCursorChange: js.UndefOr[
-        Validator[
-          js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
-        ]
+        Validator[js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]]]
       ] = js.undefined
     
     var onFocus: js.UndefOr[
-        Validator[
-          js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]]
-        ]
+        Validator[js.UndefOr[js.Function2[/* event */ Any, /* editor */ js.UndefOr[Editor], Unit]]]
       ] = js.undefined
     
-    var onInput: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]]]] = js.undefined
+    var onInput: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[Any], Unit]]]] = js.undefined
     
     var onLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ Editor, Unit]]]] = js.undefined
     
@@ -1012,14 +1004,12 @@ object anon {
     
     var onSelection: js.UndefOr[
         Validator[
-          js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]]
+          js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[Any], Unit]]
         ]
       ] = js.undefined
     
     var onSelectionChange: js.UndefOr[
-        Validator[
-          js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
-        ]
+        Validator[js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]]]
       ] = js.undefined
     
     var onValidate: js.UndefOr[
@@ -1147,19 +1137,11 @@ object anon {
       
       inline def setOnBeforeLoadUndefined: Self = StObject.set(x, "onBeforeLoad", js.undefined)
       
-      inline def setOnBlur(
-        value: Validator[
-              js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]]
-            ]
-      ): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+      inline def setOnBlur(value: Validator[js.UndefOr[js.Function2[/* event */ Any, /* editor */ js.UndefOr[Editor], Unit]]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(
-        value: Validator[
-              js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[js.Any], Unit]]
-            ]
-      ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      inline def setOnChange(value: Validator[js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[Any], Unit]]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1167,23 +1149,15 @@ object anon {
       
       inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      inline def setOnCursorChange(
-        value: Validator[
-              js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
-            ]
-      ): Self = StObject.set(x, "onCursorChange", value.asInstanceOf[js.Any])
+      inline def setOnCursorChange(value: Validator[js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]]]): Self = StObject.set(x, "onCursorChange", value.asInstanceOf[js.Any])
       
       inline def setOnCursorChangeUndefined: Self = StObject.set(x, "onCursorChange", js.undefined)
       
-      inline def setOnFocus(
-        value: Validator[
-              js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]]
-            ]
-      ): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
+      inline def setOnFocus(value: Validator[js.UndefOr[js.Function2[/* event */ Any, /* editor */ js.UndefOr[Editor], Unit]]]): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]]]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
+      inline def setOnInput(value: Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[Any], Unit]]]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
@@ -1201,15 +1175,11 @@ object anon {
       
       inline def setOnSelection(
         value: Validator[
-              js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]]
+              js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[Any], Unit]]
             ]
       ): Self = StObject.set(x, "onSelection", value.asInstanceOf[js.Any])
       
-      inline def setOnSelectionChange(
-        value: Validator[
-              js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
-            ]
-      ): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
+      inline def setOnSelectionChange(value: Validator[js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]]]): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
       
       inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
@@ -1300,7 +1270,7 @@ object anon {
     
     var onChange: js.UndefOr[
         Validator[
-          js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]]
+          js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[Any], Unit]]
         ]
       ] = js.undefined
     
@@ -1399,7 +1369,7 @@ object anon {
       
       inline def setOnChange(
         value: Validator[
-              js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]]
+              js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[Any], Unit]]
             ]
       ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
@@ -1512,27 +1482,25 @@ object anon {
     
     var name: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var onBeforeLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* ace */ js.Any, Unit]]]] = js.undefined
+    var onBeforeLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* ace */ Any, Unit]]]] = js.undefined
     
     var onBlur: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]] = js.undefined
     
     var onChange: js.UndefOr[
         Validator[
-          js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]]
+          js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[Any], Unit]]
         ]
       ] = js.undefined
     
     var onCopy: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.undefined
     
     var onCursorChange: js.UndefOr[
-        Validator[
-          js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
-        ]
+        Validator[js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]]]
       ] = js.undefined
     
     var onFocus: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]] = js.undefined
     
-    var onInput: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]]]] = js.undefined
+    var onInput: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[Any], Unit]]]] = js.undefined
     
     var onLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.undefined
     
@@ -1542,14 +1510,12 @@ object anon {
     
     var onSelection: js.UndefOr[
         Validator[
-          js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]]
+          js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[Any], Unit]]
         ]
       ] = js.undefined
     
     var onSelectionChange: js.UndefOr[
-        Validator[
-          js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
-        ]
+        Validator[js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]]]
       ] = js.undefined
     
     var orientation: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
@@ -1663,7 +1629,7 @@ object anon {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnBeforeLoad(value: Validator[js.UndefOr[js.Function1[/* ace */ js.Any, Unit]]]): Self = StObject.set(x, "onBeforeLoad", value.asInstanceOf[js.Any])
+      inline def setOnBeforeLoad(value: Validator[js.UndefOr[js.Function1[/* ace */ Any, Unit]]]): Self = StObject.set(x, "onBeforeLoad", value.asInstanceOf[js.Any])
       
       inline def setOnBeforeLoadUndefined: Self = StObject.set(x, "onBeforeLoad", js.undefined)
       
@@ -1673,7 +1639,7 @@ object anon {
       
       inline def setOnChange(
         value: Validator[
-              js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]]
+              js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[Any], Unit]]
             ]
       ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
@@ -1683,11 +1649,7 @@ object anon {
       
       inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      inline def setOnCursorChange(
-        value: Validator[
-              js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
-            ]
-      ): Self = StObject.set(x, "onCursorChange", value.asInstanceOf[js.Any])
+      inline def setOnCursorChange(value: Validator[js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]]]): Self = StObject.set(x, "onCursorChange", value.asInstanceOf[js.Any])
       
       inline def setOnCursorChangeUndefined: Self = StObject.set(x, "onCursorChange", js.undefined)
       
@@ -1695,7 +1657,7 @@ object anon {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]]]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
+      inline def setOnInput(value: Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[Any], Unit]]]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
@@ -1713,15 +1675,11 @@ object anon {
       
       inline def setOnSelection(
         value: Validator[
-              js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]]
+              js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[Any], Unit]]
             ]
       ): Self = StObject.set(x, "onSelection", value.asInstanceOf[js.Any])
       
-      inline def setOnSelectionChange(
-        value: Validator[
-              js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
-            ]
-      ): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
+      inline def setOnSelectionChange(value: Validator[js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]]]): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
       
       inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       

@@ -20,7 +20,7 @@ trait DataValidation extends StObject {
   
   var errorTitle: js.UndefOr[String] = js.undefined
   
-  var formulae: js.Array[js.Any]
+  var formulae: js.Array[Any]
   
   var operator: js.UndefOr[DataValidationOperator] = js.undefined
   
@@ -36,7 +36,7 @@ trait DataValidation extends StObject {
 }
 object DataValidation {
   
-  inline def apply(formulae: js.Array[js.Any], `type`: list | whole | decimal | date | textLength | custom): DataValidation = {
+  inline def apply(formulae: js.Array[Any], `type`: list | whole | decimal | date | textLength | custom): DataValidation = {
     val __obj = js.Dynamic.literal(formulae = formulae.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidation]
@@ -60,9 +60,9 @@ object DataValidation {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setFormulae(value: js.Array[js.Any]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
+    inline def setFormulae(value: js.Array[Any]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
     
-    inline def setFormulaeVarargs(value: js.Any*): Self = StObject.set(x, "formulae", js.Array(value :_*))
+    inline def setFormulaeVarargs(value: Any*): Self = StObject.set(x, "formulae", js.Array(value*))
     
     inline def setOperator(value: DataValidationOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

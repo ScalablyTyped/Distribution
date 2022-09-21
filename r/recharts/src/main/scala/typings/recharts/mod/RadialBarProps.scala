@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent recharts.recharts.Animatable */
 trait RadialBarProps extends StObject {
   
-  var activeShape: js.UndefOr[js.Object | ContentRenderer[js.Any] | ReactElement] = js.undefined
+  var activeShape: js.UndefOr[js.Object | ContentRenderer[Any] | ReactElement] = js.undefined
   
   var alignmentBaseline: js.UndefOr[String] = js.undefined
   
@@ -48,7 +48,7 @@ trait RadialBarProps extends StObject {
   
   var animationId: js.UndefOr[Double] = js.undefined
   
-  var background: js.UndefOr[Boolean | ReactElement | ContentRenderer[js.Any] | js.Object] = js.undefined
+  var background: js.UndefOr[Boolean | ReactElement | ContentRenderer[Any] | js.Object] = js.undefined
   
   var baselineShift: js.UndefOr[String] = js.undefined
   
@@ -118,8 +118,6 @@ trait RadialBarProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var hide: js.UndefOr[Boolean] = js.undefined
@@ -132,7 +130,7 @@ trait RadialBarProps extends StObject {
   
   var kerning: js.UndefOr[Double | String] = js.undefined
   
-  var label: js.UndefOr[Boolean | ReactElement | ContentRenderer[js.Any] | js.Object] = js.undefined
+  var label: js.UndefOr[Boolean | ReactElement | ContentRenderer[Any] | js.Object] = js.undefined
   
   var legendType: js.UndefOr[LegendType] = js.undefined
   
@@ -190,7 +188,7 @@ trait RadialBarProps extends StObject {
   
   var radiusAxisId: js.UndefOr[String | Double] = js.undefined
   
-  var shape: js.UndefOr[ContentRenderer[js.Any] | ReactElement] = js.undefined
+  var shape: js.UndefOr[ContentRenderer[Any] | ReactElement] = js.undefined
   
   var shapeRendering: js.UndefOr[auto | optimizeSpeed | crispEdges | geometricPrecision | inherit] = js.undefined
   
@@ -247,9 +245,9 @@ object RadialBarProps {
   
   extension [Self <: RadialBarProps](x: Self) {
     
-    inline def setActiveShape(value: js.Object | ContentRenderer[js.Any] | ReactElement): Self = StObject.set(x, "activeShape", value.asInstanceOf[js.Any])
+    inline def setActiveShape(value: js.Object | ContentRenderer[Any] | ReactElement): Self = StObject.set(x, "activeShape", value.asInstanceOf[js.Any])
     
-    inline def setActiveShapeFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "activeShape", js.Any.fromFunction1(value))
+    inline def setActiveShapeFunction1(value: Any => ReactNode): Self = StObject.set(x, "activeShape", js.Any.fromFunction1(value))
     
     inline def setActiveShapeUndefined: Self = StObject.set(x, "activeShape", js.undefined)
     
@@ -281,9 +279,9 @@ object RadialBarProps {
     
     inline def setAnimationIdUndefined: Self = StObject.set(x, "animationId", js.undefined)
     
-    inline def setBackground(value: Boolean | ReactElement | ContentRenderer[js.Any] | js.Object): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Boolean | ReactElement | ContentRenderer[Any] | js.Object): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "background", js.Any.fromFunction1(value))
+    inline def setBackgroundFunction1(value: Any => ReactNode): Self = StObject.set(x, "background", js.Any.fromFunction1(value))
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
@@ -339,11 +337,11 @@ object RadialBarProps {
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: RadialBarData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: RadialBarData*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
@@ -423,10 +421,6 @@ object RadialBarProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -451,9 +445,9 @@ object RadialBarProps {
     
     inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
     
-    inline def setLabel(value: Boolean | ReactElement | ContentRenderer[js.Any] | js.Object): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Boolean | ReactElement | ContentRenderer[Any] | js.Object): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setLabelFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+    inline def setLabelFunction1(value: Any => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
@@ -569,9 +563,9 @@ object RadialBarProps {
     
     inline def setRadiusAxisIdUndefined: Self = StObject.set(x, "radiusAxisId", js.undefined)
     
-    inline def setShape(value: ContentRenderer[js.Any] | ReactElement): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: ContentRenderer[Any] | ReactElement): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setShapeFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "shape", js.Any.fromFunction1(value))
+    inline def setShapeFunction1(value: Any => ReactNode): Self = StObject.set(x, "shape", js.Any.fromFunction1(value))
     
     inline def setShapeRendering(value: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
     

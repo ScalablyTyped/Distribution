@@ -1,8 +1,8 @@
 package typings.roadsServer
 
-import typings.node.httpsMod.ServerOptions
 import typings.roads.mod.Road
 import typings.roadsServer.http2ServerMod.default
+import typings.roadsServer.httpServerMod.RoadsServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("roads-server", "Http2Server")
   @js.native
-  class Http2Server protected () extends default {
+  open class Http2Server protected () extends default {
     /**
       * Constructs a new Server object that helps create Roads servers.
       *
@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("roads-server", "Server")
   @js.native
-  class Server protected ()
+  open class Server protected ()
     extends typings.roadsServer.httpServerMod.default {
     /**
       * Constructs a new Server object that helps create Roads servers.
@@ -34,7 +34,7 @@ object mod {
       */
     def this(road: Road) = this()
     def this(road: Road, error_handler: js.Function) = this()
-    def this(road: Road, error_handler: js.Function, httpsOptions: ServerOptions) = this()
-    def this(road: Road, error_handler: Unit, httpsOptions: ServerOptions) = this()
+    def this(road: Road, error_handler: js.Function, options: RoadsServerOptions) = this()
+    def this(road: Road, error_handler: Unit, options: RoadsServerOptions) = this()
   }
 }

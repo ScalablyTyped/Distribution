@@ -28,14 +28,14 @@ trait XDrillDownDataSupplier
     * @see com.sun.star.sheet.DataPilotFieldFilter
     * @see com.sun.star.sheet.XDataPilotTable2
     */
-  def getDrillDownData(aFilters: SeqEquiv[DataPilotFieldFilter]): SafeArray[SafeArray[js.Any]]
+  def getDrillDownData(aFilters: SeqEquiv[DataPilotFieldFilter]): SafeArray[SafeArray[Any]]
 }
 object XDrillDownDataSupplier {
   
   inline def apply(
     acquire: () => Unit,
-    getDrillDownData: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[js.Any]],
-    queryInterface: `type` => js.Any,
+    getDrillDownData: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[Any]],
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDrillDownDataSupplier = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDrillDownData = js.Any.fromFunction1(getDrillDownData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -44,6 +44,6 @@ object XDrillDownDataSupplier {
   
   extension [Self <: XDrillDownDataSupplier](x: Self) {
     
-    inline def setGetDrillDownData(value: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
+    inline def setGetDrillDownData(value: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
   }
 }

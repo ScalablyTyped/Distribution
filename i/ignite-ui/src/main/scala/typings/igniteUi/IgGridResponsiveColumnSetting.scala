@@ -10,7 +10,7 @@ trait IgGridResponsiveColumnSetting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A list of predefined classes to decide element's visibility on.
@@ -34,7 +34,7 @@ trait IgGridResponsiveColumnSetting
     * A configuration object to use for the responsive functionality. Uses the keys defined in the widget's responsiveModes object. The classes property is not used if this one is set.
     *
     */
-  var configuration: js.UndefOr[js.Any] = js.undefined
+  var configuration: js.UndefOr[Any] = js.undefined
 }
 object IgGridResponsiveColumnSetting {
   
@@ -57,7 +57,7 @@ object IgGridResponsiveColumnSetting {
     
     inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    inline def setConfiguration(value: js.Any): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: Any): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
   }

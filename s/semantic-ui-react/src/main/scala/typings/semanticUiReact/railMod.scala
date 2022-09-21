@@ -1,7 +1,7 @@
 package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import typings.semanticUiReact.railRailMod.RailProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object railMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Rail", JSImport.Default)
   @js.native
-  val default: StatelessComponent[RailProps] = js.native
+  val default: FC[RailProps] = js.native
   
-  type _To = StatelessComponent[RailProps]
+  type _To = FC[RailProps]
   
   /* This means you don't have to write `default`, but can instead just say `railMod.foo` */
-  override def _to: StatelessComponent[RailProps] = default
+  override def _to: FC[RailProps] = default
 }

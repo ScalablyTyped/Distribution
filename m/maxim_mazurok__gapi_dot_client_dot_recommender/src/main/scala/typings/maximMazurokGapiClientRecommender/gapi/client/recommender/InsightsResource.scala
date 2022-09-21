@@ -15,7 +15,7 @@ trait InsightsResource extends StObject {
   def get(): Request[GoogleCloudRecommenderV1Insight] = js.native
   def get(request: Accesstoken): Request[GoogleCloudRecommenderV1Insight] = js.native
   
-  /** Lists insights for a Cloud project. Requires the recommender.*.list IAM permission for the specified insight type. */
+  /** Lists insights for the specified Cloud Resource. Requires the recommender.*.list IAM permission for the specified insight type. */
   def list(): Request[GoogleCloudRecommenderV1ListInsightsResponse] = js.native
   def list(request: Alt): Request[GoogleCloudRecommenderV1ListInsightsResponse] = js.native
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Message extends StObject {
   
-  var message: js.UndefOr[String] = js.undefined
+  val message: js.UndefOr[String] = js.undefined
 }
 object Message {
   

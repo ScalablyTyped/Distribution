@@ -36,7 +36,7 @@ object anon {
       * @see {@link Gpio.destroy}
       * @returns Promise
       */
-    def destroy(): js.Promise[js.Any] = js.native
+    def destroy(): js.Promise[Any] = js.native
     
     /**
       * @see {@link Gpio.read}
@@ -61,6 +61,6 @@ object anon {
       * @param value
       * @returns Promise
       */
-    def write(channel: Double, value: Boolean): js.Promise[js.Any] = js.native
+    def write(channel: Double, value: Boolean): js.Promise[Any] = js.native
   }
 }

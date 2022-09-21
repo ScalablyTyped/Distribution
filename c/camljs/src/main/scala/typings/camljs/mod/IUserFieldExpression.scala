@@ -27,9 +27,6 @@ trait IUserFieldExpression extends StObject {
   /** Checks whether the user specified by the value of the field has received the rights to the site directly (not through a group). */
   def IsInSPWebUsers(): IExpression
   
-  /** DEPRECATED. Please use IsIn* methods instead. This property will be removed in next release(!!) */
-  var Membership: IMembership
-  
   /** Specifies that lookup target field value will be used for further comparisons. */
   def ValueAsText(): ITextFieldExpression
 }
@@ -43,10 +40,9 @@ object IUserFieldExpression {
     IsInSPWebAllUsers: () => IExpression,
     IsInSPWebGroups: () => IExpression,
     IsInSPWebUsers: () => IExpression,
-    Membership: IMembership,
     ValueAsText: () => ITextFieldExpression
   ): IUserFieldExpression = {
-    val __obj = js.Dynamic.literal(EqualToCurrentUser = js.Any.fromFunction0(EqualToCurrentUser), Id = js.Any.fromFunction0(Id), IsInCurrentUserGroups = js.Any.fromFunction0(IsInCurrentUserGroups), IsInSPGroup = js.Any.fromFunction1(IsInSPGroup), IsInSPWebAllUsers = js.Any.fromFunction0(IsInSPWebAllUsers), IsInSPWebGroups = js.Any.fromFunction0(IsInSPWebGroups), IsInSPWebUsers = js.Any.fromFunction0(IsInSPWebUsers), Membership = Membership.asInstanceOf[js.Any], ValueAsText = js.Any.fromFunction0(ValueAsText))
+    val __obj = js.Dynamic.literal(EqualToCurrentUser = js.Any.fromFunction0(EqualToCurrentUser), Id = js.Any.fromFunction0(Id), IsInCurrentUserGroups = js.Any.fromFunction0(IsInCurrentUserGroups), IsInSPGroup = js.Any.fromFunction1(IsInSPGroup), IsInSPWebAllUsers = js.Any.fromFunction0(IsInSPWebAllUsers), IsInSPWebGroups = js.Any.fromFunction0(IsInSPWebGroups), IsInSPWebUsers = js.Any.fromFunction0(IsInSPWebUsers), ValueAsText = js.Any.fromFunction0(ValueAsText))
     __obj.asInstanceOf[IUserFieldExpression]
   }
   
@@ -65,8 +61,6 @@ object IUserFieldExpression {
     inline def setIsInSPWebGroups(value: () => IExpression): Self = StObject.set(x, "IsInSPWebGroups", js.Any.fromFunction0(value))
     
     inline def setIsInSPWebUsers(value: () => IExpression): Self = StObject.set(x, "IsInSPWebUsers", js.Any.fromFunction0(value))
-    
-    inline def setMembership(value: IMembership): Self = StObject.set(x, "Membership", value.asInstanceOf[js.Any])
     
     inline def setValueAsText(value: () => ITextFieldExpression): Self = StObject.set(x, "ValueAsText", js.Any.fromFunction0(value))
   }

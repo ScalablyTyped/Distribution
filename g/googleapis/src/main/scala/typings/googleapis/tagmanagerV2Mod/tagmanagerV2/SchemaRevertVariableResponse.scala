@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of reverting a variable in a workspace.
-  */
 trait SchemaRevertVariableResponse extends StObject {
   
   /**
-    * Variable as it appears in the latest container version since the last
-    * workspace synchronization operation. If no variable is present, that
-    * means the variable was deleted in the latest container version.
+    * Variable as it appears in the latest container version since the last workspace synchronization operation. If no variable is present, that means the variable was deleted in the latest container version.
     */
   var variable: js.UndefOr[SchemaVariable] = js.undefined
 }

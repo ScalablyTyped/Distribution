@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[T, R](xs: js.Array[T], fn: js.Function1[/* x */ T, R | js.Array[R]]): js.Array[R] = (^.asInstanceOf[js.Dynamic].apply(xs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[R]]
+  inline def apply[T, R](xs: js.Array[T], fn: js.Function2[/* x */ T, /* i */ Double, R | js.Array[R]]): js.Array[R] = (^.asInstanceOf[js.Dynamic].apply(xs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[R]]
   
   @JSImport("concat-map", JSImport.Namespace)
   @js.native

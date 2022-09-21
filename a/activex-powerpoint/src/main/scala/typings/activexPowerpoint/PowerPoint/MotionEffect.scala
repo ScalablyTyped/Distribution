@@ -16,7 +16,7 @@ trait MotionEffect extends StObject {
   
   var FromY: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Path: String
   
@@ -35,7 +35,7 @@ object MotionEffect {
     ByY: Double,
     FromX: Double,
     FromY: Double,
-    Parent: js.Any,
+    Parent: Any,
     Path: String,
     PowerPointDotMotionEffect_typekey: MotionEffect,
     ToX: Double,
@@ -58,7 +58,7 @@ object MotionEffect {
     
     inline def setFromY(value: Double): Self = StObject.set(x, "FromY", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

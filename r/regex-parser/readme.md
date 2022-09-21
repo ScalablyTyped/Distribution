@@ -10,15 +10,12 @@ A module that parses a string as regular expression and returns the parsed value
 | ------------------ | :-------------: |
 | Full name          | regex-parser |
 | Keywords           | regular, expressions, node, parser, string |
-| # releases         | 2 |
-| # dependents       | 41 |
-| # downloads        | 151686373 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3878865E7 |
+| # stars            | 24.0 |
 
 ## Links
-- [Homepage](https://github.com/IonicaBizau/regex-parser.js)
-- [Bugs](https://github.com/IonicaBizau/regex-parser.js/issues)
-- [Repository](https://github.com/IonicaBizau/regex-parser.js)
 - [Npm](https://www.npmjs.com/package/regex-parser)
     
 

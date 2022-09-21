@@ -8,5 +8,5 @@ object listRepositoriesOutputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/ListRepositoriesOutput", "ListRepositoriesOutput")
   @js.native
-  val ListRepositoriesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListRepositoriesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

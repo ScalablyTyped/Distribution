@@ -10,15 +10,13 @@ A minimal but effective logging mechanism with support for log levels and plugga
 | ------------------ | :-------------: |
 | Full name          | aurelia-logging |
 | Keywords           | aurelia, logging |
-| # releases         | 2 |
-| # dependents       | 66 |
-| # downloads        | 619920 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 57400.666666666664 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](http://aurelia.io)
-- [Bugs](https://github.com/aurelia/logging/issues)
-- [Repository](https://github.com/aurelia/logging)
 - [Npm](https://www.npmjs.com/package/aurelia-logging)
     
 

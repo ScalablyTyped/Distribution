@@ -24,6 +24,6 @@ object GetFindingsResponse {
     
     inline def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
     
-    inline def setFindingsVarargs(value: Finding*): Self = StObject.set(x, "findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: Finding*): Self = StObject.set(x, "findings", js.Array(value*))
   }
 }

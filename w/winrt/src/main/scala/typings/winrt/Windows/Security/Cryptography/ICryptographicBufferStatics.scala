@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Security.Cryptography
 
-import typings.std.Uint8Array
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,9 +13,9 @@ trait ICryptographicBufferStatics extends StObject {
   
   def convertStringToBinary(value: String, encoding: BinaryStringEncoding): IBuffer
   
-  def copyToByteArray(buffer: IBuffer): Uint8Array
+  def copyToByteArray(buffer: IBuffer): js.typedarray.Uint8Array
   
-  def createFromByteArray(value: Uint8Array): IBuffer
+  def createFromByteArray(value: js.typedarray.Uint8Array): IBuffer
   
   def decodeFromBase64String(value: String): IBuffer
   
@@ -36,8 +35,8 @@ object ICryptographicBufferStatics {
     compare: (IBuffer, IBuffer) => Boolean,
     convertBinaryToString: (BinaryStringEncoding, IBuffer) => String,
     convertStringToBinary: (String, BinaryStringEncoding) => IBuffer,
-    copyToByteArray: IBuffer => Uint8Array,
-    createFromByteArray: Uint8Array => IBuffer,
+    copyToByteArray: IBuffer => js.typedarray.Uint8Array,
+    createFromByteArray: js.typedarray.Uint8Array => IBuffer,
     decodeFromBase64String: String => IBuffer,
     decodeFromHexString: String => IBuffer,
     encodeToBase64String: IBuffer => String,
@@ -57,9 +56,9 @@ object ICryptographicBufferStatics {
     
     inline def setConvertStringToBinary(value: (String, BinaryStringEncoding) => IBuffer): Self = StObject.set(x, "convertStringToBinary", js.Any.fromFunction2(value))
     
-    inline def setCopyToByteArray(value: IBuffer => Uint8Array): Self = StObject.set(x, "copyToByteArray", js.Any.fromFunction1(value))
+    inline def setCopyToByteArray(value: IBuffer => js.typedarray.Uint8Array): Self = StObject.set(x, "copyToByteArray", js.Any.fromFunction1(value))
     
-    inline def setCreateFromByteArray(value: Uint8Array => IBuffer): Self = StObject.set(x, "createFromByteArray", js.Any.fromFunction1(value))
+    inline def setCreateFromByteArray(value: js.typedarray.Uint8Array => IBuffer): Self = StObject.set(x, "createFromByteArray", js.Any.fromFunction1(value))
     
     inline def setDecodeFromBase64String(value: String => IBuffer): Self = StObject.set(x, "decodeFromBase64String", js.Any.fromFunction1(value))
     

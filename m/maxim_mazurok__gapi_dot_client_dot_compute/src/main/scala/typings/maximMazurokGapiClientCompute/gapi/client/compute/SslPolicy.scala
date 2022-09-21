@@ -11,8 +11,8 @@ trait SslPolicy extends StObject {
   var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of features enabled when the selected profile is CUSTOM. The
-    * - method returns the set of features that can be specified in this list. This field must be empty if the profile is not CUSTOM.
+    * A list of features enabled when the selected profile is CUSTOM. The method returns the set of features that can be specified in this list. This field must be empty if the profile is
+    * not CUSTOM.
     */
   var customFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -24,9 +24,8 @@ trait SslPolicy extends StObject {
   
   /**
     * Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking. This field will be ignored when inserting a SslPolicy. An
-    * up-to-date fingerprint must be provided in order to update the SslPolicy, otherwise the request will fail with error 412 conditionNotMet.
-    *
-    * To see the latest fingerprint, make a get() request to retrieve an SslPolicy.
+    * up-to-date fingerprint must be provided in order to update the SslPolicy, otherwise the request will fail with error 412 conditionNotMet. To see the latest fingerprint, make a get()
+    * request to retrieve an SslPolicy.
     */
   var fingerprint: js.UndefOr[String] = js.undefined
   
@@ -75,7 +74,7 @@ object SslPolicy {
     
     inline def setCustomFeaturesUndefined: Self = StObject.set(x, "customFeatures", js.undefined)
     
-    inline def setCustomFeaturesVarargs(value: String*): Self = StObject.set(x, "customFeatures", js.Array(value :_*))
+    inline def setCustomFeaturesVarargs(value: String*): Self = StObject.set(x, "customFeatures", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -85,7 +84,7 @@ object SslPolicy {
     
     inline def setEnabledFeaturesUndefined: Self = StObject.set(x, "enabledFeatures", js.undefined)
     
-    inline def setEnabledFeaturesVarargs(value: String*): Self = StObject.set(x, "enabledFeatures", js.Array(value :_*))
+    inline def setEnabledFeaturesVarargs(value: String*): Self = StObject.set(x, "enabledFeatures", js.Array(value*))
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
@@ -119,6 +118,6 @@ object SslPolicy {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

@@ -16,16 +16,16 @@ object ecmarkdownStrings {
   inline def algorithm: algorithm = "algorithm".asInstanceOf[algorithm]
   
   @js.native
+  sealed trait attr extends StObject
+  inline def attr: attr = "attr".asInstanceOf[attr]
+  
+  @js.native
   sealed trait comment extends StObject
   inline def comment: comment = "comment".asInstanceOf[comment]
   
   @js.native
   sealed trait contents extends StObject
   inline def contents: contents = "contents".asInstanceOf[contents]
-  
-  @js.native
-  sealed trait id extends StObject
-  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait linebreak extends StObject

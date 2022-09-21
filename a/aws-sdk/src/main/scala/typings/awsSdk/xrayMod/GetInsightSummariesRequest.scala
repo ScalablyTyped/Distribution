@@ -9,7 +9,7 @@ trait GetInsightSummariesRequest extends StObject {
   /**
     * The end of the time frame in which the insights ended. The end time can't be more than 30 days old.
     */
-  var EndTime: Timestamp
+  var EndTime: js.Date
   
   /**
     * The Amazon Resource Name (ARN) of the group. Required if the GroupName isn't provided.
@@ -34,7 +34,7 @@ trait GetInsightSummariesRequest extends StObject {
   /**
     * The beginning of the time frame in which the insights started. The start time can't be more than 30 days old.
     */
-  var StartTime: Timestamp
+  var StartTime: js.Date
   
   /**
     * The list of insight states. 
@@ -43,14 +43,14 @@ trait GetInsightSummariesRequest extends StObject {
 }
 object GetInsightSummariesRequest {
   
-  inline def apply(EndTime: Timestamp, StartTime: Timestamp): GetInsightSummariesRequest = {
+  inline def apply(EndTime: js.Date, StartTime: js.Date): GetInsightSummariesRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightSummariesRequest]
   }
   
   extension [Self <: GetInsightSummariesRequest](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setGroupARN(value: GroupARN): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
     
@@ -68,12 +68,12 @@ object GetInsightSummariesRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStates(value: InsightStateList): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
     
-    inline def setStatesVarargs(value: InsightState*): Self = StObject.set(x, "States", js.Array(value :_*))
+    inline def setStatesVarargs(value: InsightState*): Self = StObject.set(x, "States", js.Array(value*))
   }
 }

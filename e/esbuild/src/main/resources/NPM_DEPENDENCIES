@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "esbuild" : "0.15.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "esbuild" : "0.15.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.AttributeBase")
 @js.native
-class AttributeBase () extends StObject {
+open class AttributeBase () extends StObject {
   
   /**
     * Gets whether the value of the attribute has changed.
@@ -27,7 +27,7 @@ class AttributeBase () extends StObject {
     * Gets the value of the attribute.
     * The type of value depends on the type of attribute.
     */
-  def getValue(): js.Any = js.native
+  def getValue(): Any = js.native
   
   /**
     * Whether the value of the attribute is set.
@@ -56,7 +56,7 @@ class AttributeBase () extends StObject {
     * Sets the general value of the attribute
     * @param name The value of the attribute.
     */
-  def setValue(value: js.Any): Unit = js.native
+  def setValue(value: Any): Unit = js.native
   
   /// prototype methods
   /**

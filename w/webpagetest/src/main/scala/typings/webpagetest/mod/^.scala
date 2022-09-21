@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param server The host of the WebPagetest server. Defaults to 'www.webpagetest.org'.
   * @param key The API Key used for the instance. Can be left empty for public API.
   */
-class ^ ()
+open class ^ ()
   extends StObject
      with WebPageTest {
   def this(server: String) = this()

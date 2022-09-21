@@ -17,7 +17,7 @@ object particleMod {
   
   @JSImport("babylonjs/Particles/particle", "Particle")
   @js.native
-  class Particle protected () extends StObject {
+  open class Particle protected () extends StObject {
     /**
       * Creates a new instance Particle
       * @param particleSystem the particle system the particle belongs to
@@ -84,7 +84,10 @@ object particleMod {
     /** @hidden */
     var _currentVelocityGradient: Nullable[FactorGradient] = js.native
     
-    /** @hidden */
+    /**
+      * @param subEmitter
+      * @hidden
+      */
     def _inheritParticleInfoToSubEmitter(subEmitter: SubEmitter): Unit = js.native
     
     /** @hidden */
@@ -95,6 +98,9 @@ object particleMod {
     
     /** @hidden */
     var _initialEndSpriteCellID: Double = js.native
+    
+    /** @hidden */
+    var _initialSpriteCellLoop: Boolean = js.native
     
     /** @hidden */
     var _initialStartSpriteCellID: Double = js.native
@@ -113,6 +119,8 @@ object particleMod {
     
     /** @hidden */
     def _reset(): Unit = js.native
+    
+    /* private */ var _updateCellInfoFromSystem: Any = js.native
     
     /**
       * The current age of the particle.
@@ -194,8 +202,6 @@ object particleMod {
       * Defines how the sprite cell index is updated for the particle
       */
     def updateCellIndex(): Unit = js.native
-    
-    /* private */ var updateCellInfoFromSystem: js.Any = js.native
   }
   /* static members */
   object Particle {
@@ -206,7 +212,7 @@ object particleMod {
     
     @JSImport("babylonjs/Particles/particle", "Particle._Count")
     @js.native
-    def _Count: js.Any = js.native
-    inline def _Count_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
+    def _Count: Any = js.native
+    inline def _Count_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
   }
 }

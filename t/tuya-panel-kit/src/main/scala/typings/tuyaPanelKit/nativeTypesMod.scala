@@ -19,7 +19,7 @@ object nativeTypesMod {
     
     var formatter: js.UndefOr[
         js.Function2[
-          /* options */ js.UndefOr[Record[String, js.Any]], 
+          /* options */ js.UndefOr[Record[String, Any]], 
           /* route */ js.UndefOr[Route[String, js.UndefOr[js.Object]]], 
           String
         ]
@@ -39,7 +39,7 @@ object nativeTypesMod {
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
       inline def setFormatter(
-        value: (/* options */ js.UndefOr[Record[String, js.Any]], /* route */ js.UndefOr[Route[String, js.UndefOr[js.Object]]]) => String
+        value: (/* options */ js.UndefOr[Record[String, Any]], /* route */ js.UndefOr[Route[String, js.UndefOr[js.Object]]]) => String
       ): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
@@ -176,7 +176,7 @@ object nativeTypesMod {
       
       inline def setPrefixes(value: js.Array[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
       
-      inline def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
+      inline def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value*))
       
       inline def setSubscribe(
         value: /* listener */ js.Function1[/* url */ String, Unit] => js.UndefOr[Unit | js.Function0[Unit]]
@@ -188,18 +188,18 @@ object nativeTypesMod {
   
   trait ServerContainerRef extends StObject {
     
-    def getCurrentOptions(): js.UndefOr[Record[String, js.Any]]
+    def getCurrentOptions(): js.UndefOr[Record[String, Any]]
   }
   object ServerContainerRef {
     
-    inline def apply(getCurrentOptions: () => js.UndefOr[Record[String, js.Any]]): ServerContainerRef = {
+    inline def apply(getCurrentOptions: () => js.UndefOr[Record[String, Any]]): ServerContainerRef = {
       val __obj = js.Dynamic.literal(getCurrentOptions = js.Any.fromFunction0(getCurrentOptions))
       __obj.asInstanceOf[ServerContainerRef]
     }
     
     extension [Self <: ServerContainerRef](x: Self) {
       
-      inline def setGetCurrentOptions(value: () => js.UndefOr[Record[String, js.Any]]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
+      inline def setGetCurrentOptions(value: () => js.UndefOr[Record[String, Any]]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
     }
   }
   

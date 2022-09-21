@@ -25,7 +25,7 @@ object FailingStreak {
     
     inline def setLog(value: js.Array[End]): Self = StObject.set(x, "Log", value.asInstanceOf[js.Any])
     
-    inline def setLogVarargs(value: End*): Self = StObject.set(x, "Log", js.Array(value :_*))
+    inline def setLogVarargs(value: End*): Self = StObject.set(x, "Log", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

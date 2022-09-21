@@ -54,7 +54,7 @@ object menuListItemMod {
   
   @JSImport("rbx/components/menu/menu-list-item", "MenuListItem")
   @js.native
-  val MenuListItem: ForwardRefAsExoticComponent[MenuListItemProps, ElementType[js.Any]] = js.native
+  val MenuListItem: ForwardRefAsExoticComponent[MenuListItemProps, ElementType[Any]] = js.native
   
   trait MenuListItemModifierProps extends StObject {
     

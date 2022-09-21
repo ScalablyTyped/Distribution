@@ -14,21 +14,21 @@ object schemaFieldMod {
   
   @JSImport("react-jsonschema-form/lib/components/fields/SchemaField", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SchemaFieldProps[js.Any], js.Object, js.Any]
+  open class default ()
+    extends Component[SchemaFieldProps[Any], js.Object, Any]
   
-  type SchemaField = Component[SchemaFieldProps[js.Any], js.Object, js.Any]
+  type SchemaField = Component[SchemaFieldProps[Any], js.Object, Any]
   
   /* Inlined std.Pick<react-jsonschema-form.react-jsonschema-form.FieldProps<T>, 'schema' | 'uiSchema' | 'idSchema' | 'formData' | 'errorSchema' | 'registry' | 'formContext'> */
   trait SchemaFieldProps[T] extends StObject {
     
     var errorSchema: ErrorSchema
     
-    var formContext: js.Any
+    var formContext: Any
     
     var formData: T
     
-    var idSchema: IdSchema[js.Any]
+    var idSchema: IdSchema[Any]
     
     var registry: Definitions
     
@@ -40,9 +40,9 @@ object schemaFieldMod {
     
     inline def apply[T](
       errorSchema: ErrorSchema,
-      formContext: js.Any,
+      formContext: Any,
       formData: T,
-      idSchema: IdSchema[js.Any],
+      idSchema: IdSchema[Any],
       registry: Definitions,
       schema: JSONSchema6,
       uiSchema: UiSchema
@@ -55,11 +55,11 @@ object schemaFieldMod {
       
       inline def setErrorSchema(value: ErrorSchema): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
       
-      inline def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+      inline def setFormContext(value: Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
       
       inline def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      inline def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
+      inline def setIdSchema(value: IdSchema[Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
       
       inline def setRegistry(value: Definitions): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       

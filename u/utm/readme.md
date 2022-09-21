@@ -11,14 +11,11 @@ Bidirectional UTM-WGS84 converter
 | Full name          | utm |
 | Keywords           | utm, latlon |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 229601 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 46002.333333333336 |
+| # stars            | 38.0 |
 
 ## Links
-- [Homepage](https://github.com/timothygu/utm#readme)
-- [Bugs](https://github.com/timothygu/utm/issues)
-- [Repository](https://github.com/timothygu/utm)
 - [Npm](https://www.npmjs.com/package/utm)
     
 

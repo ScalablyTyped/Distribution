@@ -145,6 +145,6 @@ object CreateOriginEndpointResponse {
     
     inline def setWhitelistUndefined: Self = StObject.set(x, "Whitelist", js.undefined)
     
-    inline def setWhitelistVarargs(value: string*): Self = StObject.set(x, "Whitelist", js.Array(value :_*))
+    inline def setWhitelistVarargs(value: string*): Self = StObject.set(x, "Whitelist", js.Array(value*))
   }
 }

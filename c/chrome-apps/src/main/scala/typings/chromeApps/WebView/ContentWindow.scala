@@ -23,17 +23,17 @@ trait ContentWindow extends StObject {
     * @param message Message object to send to the guest.
     * @param targetOrigin Specifies what the origin of the guest window must be for the event to be dispatched.
     */
-  def postMessage(message: js.Any, targetOrigin: String): Unit
+  def postMessage(message: Any, targetOrigin: String): Unit
 }
 object ContentWindow {
   
-  inline def apply(postMessage: (js.Any, String) => Unit): ContentWindow = {
+  inline def apply(postMessage: (Any, String) => Unit): ContentWindow = {
     val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction2(postMessage))
     __obj.asInstanceOf[ContentWindow]
   }
   
   extension [Self <: ContentWindow](x: Self) {
     
-    inline def setPostMessage(value: (js.Any, String) => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
+    inline def setPostMessage(value: (Any, String) => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
   }
 }

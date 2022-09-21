@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.UI.CommandBar")
 @js.native
-class CommandBar ()
+open class CommandBar ()
   extends StObject
      with typings.sharepoint.SP.UI.CommandBar {
   

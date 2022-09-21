@@ -6,8 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "TaskGroup")
 @js.native
-class TaskGroup protected () extends StObject {
+open class TaskGroup protected () extends StObject {
   /* private */ def this(id: String, label: String) = this()
+  
+  /**
+    * The ID of the task group. Is one of TaskGroup.Clean.id, TaskGroup.Build.id, TaskGroup.Rebuild.id, or TaskGroup.Test.id.
+    */
+  val id: String = js.native
+  
+  /**
+    * Whether the task that is part of this group is the default for the group.
+    * This property cannot be set through API, and is controlled by a user's task configurations.
+    */
+  val isDefault: js.UndefOr[Boolean] = js.native
 }
 /* static members */
 object TaskGroup {

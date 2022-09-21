@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_chromeuxreport
 
-Typings are for version 1.0.20201119
+Typings are for version 1.0.20220811
 
 ## Library description:
 TypeScript typings for Chrome UX Report API v1
@@ -10,10 +10,10 @@ TypeScript typings for Chrome UX Report API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.chromeuxreport |
 | Keywords           | - |
-| # releases         | 47 |
-| # dependents       | 1 |
-| # downloads        | 3020 |
-| # stars            | 0 |
+| # releases         | 308 |
+| # dependents       | 0.0 |
+| # downloads        | 2630.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

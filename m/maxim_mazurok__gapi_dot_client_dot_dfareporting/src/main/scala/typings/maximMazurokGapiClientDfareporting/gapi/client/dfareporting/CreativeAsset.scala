@@ -232,7 +232,7 @@ object CreativeAsset {
     
     inline def setAdditionalSizesUndefined: Self = StObject.set(x, "additionalSizes", js.undefined)
     
-    inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value :_*))
+    inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value*))
     
     inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
@@ -274,7 +274,7 @@ object CreativeAsset {
     
     inline def setCompanionCreativeIdsUndefined: Self = StObject.set(x, "companionCreativeIds", js.undefined)
     
-    inline def setCompanionCreativeIdsVarargs(value: String*): Self = StObject.set(x, "companionCreativeIds", js.Array(value :_*))
+    inline def setCompanionCreativeIdsVarargs(value: String*): Self = StObject.set(x, "companionCreativeIds", js.Array(value*))
     
     inline def setCustomStartTimeValue(value: Double): Self = StObject.set(x, "customStartTimeValue", value.asInstanceOf[js.Any])
     
@@ -284,7 +284,7 @@ object CreativeAsset {
     
     inline def setDetectedFeaturesUndefined: Self = StObject.set(x, "detectedFeatures", js.undefined)
     
-    inline def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value :_*))
+    inline def setDetectedFeaturesVarargs(value: String*): Self = StObject.set(x, "detectedFeatures", js.Array(value*))
     
     inline def setDisplayType(value: String): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
     

@@ -5,14 +5,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "UncontrolledTooltip")
+@JSImport("reactstrap", "UncontrolledTooltip")
 @js.native
-class UncontrolledTooltip protected ()
+open class UncontrolledTooltip protected ()
   extends typings.reactstrap.uncontrolledMod.UncontrolledTooltip {
   def this(props: UncontrolledTooltipProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: UncontrolledTooltipProps, context: js.Any) = this()
+  def this(props: UncontrolledTooltipProps, context: Any) = this()
 }

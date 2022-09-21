@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Create a minimal layout that only positions Nodes that do not have a location.
   */
-class Layout () extends StObject {
+open class Layout () extends StObject {
   
   /**Gets or sets the top-left point for where the graph should be positioned when laid out.*/
   var arrangementOrigin: Point = js.native

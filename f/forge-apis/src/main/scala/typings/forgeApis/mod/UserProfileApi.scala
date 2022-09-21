@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forge-apis", "UserProfileApi")
 @js.native
-class UserProfileApi () extends StObject {
+open class UserProfileApi () extends StObject {
+  def this(apiClient: Any) = this()
   
   /**
     * Returns the profile information of an authorizing end user.

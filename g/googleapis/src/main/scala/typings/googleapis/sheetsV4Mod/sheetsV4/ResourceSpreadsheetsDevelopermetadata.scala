@@ -4,83 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sheets/v4", "sheets_v4.Resource$Spreadsheets$Developermetadata")
 @js.native
-class ResourceSpreadsheetsDevelopermetadata protected () extends StObject {
+open class ResourceSpreadsheetsDevelopermetadata protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * sheets.spreadsheets.developerMetadata.get
-    * @desc Returns the developer metadata with the specified ID. The caller
-    * must specify the spreadsheet ID and the developer metadata's unique
-    * metadataId.
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Google Sheets API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/sheets
-    * // 2. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var sheets = google.sheets('v4');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // The ID of the spreadsheet to retrieve metadata from.
-    *     spreadsheetId: 'my-spreadsheet-id',  // TODO: Update placeholder
-    * value.
-    *
-    *     // The ID of the developer metadata to retrieve.
-    *     metadataId: 0,  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   sheets.spreadsheets.developerMetadata.get(request, function(err,
-    * response) { if (err) { console.error(err); return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
-    *   });
-    * });
-    *
-    * function authorize(callback) {
-    *   // TODO: Change placeholder below to generate authentication
-    * credentials. See
-    *   //
-    * https://developers.google.com/sheets/quickstart/nodejs#step_3_set_up_the_sample
-    *   //
-    *   // Authorize using one of the following scopes:
-    *   //   'https://www.googleapis.com/auth/drive'
-    *   //   'https://www.googleapis.com/auth/drive.file'
-    *   //   'https://www.googleapis.com/auth/spreadsheets'
-    *   var authClient = null;
-    *
-    *   if (authClient == null) {
-    *     console.log('authentication failed');
-    *     return;
-    *   }
-    *   callback(authClient);
-    * }
-    * @alias sheets.spreadsheets.developerMetadata.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {integer} params.metadataId The ID of the developer metadata to retrieve.
-    * @param {string} params.spreadsheetId The ID of the spreadsheet to retrieve metadata from.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaDeveloperMetadata] = js.native
   def get(callback: BodyResponseCallback[SchemaDeveloperMetadata]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDeveloperMetadata] = js.native
@@ -91,8 +27,8 @@ class ResourceSpreadsheetsDevelopermetadata protected () extends StObject {
   ): Unit = js.native
   def get(
     params: ParamsResourceSpreadsheetsDevelopermetadataGet,
-    options: BodyResponseCallback[SchemaDeveloperMetadata],
-    callback: BodyResponseCallback[SchemaDeveloperMetadata]
+    options: BodyResponseCallback[Readable | SchemaDeveloperMetadata],
+    callback: BodyResponseCallback[Readable | SchemaDeveloperMetadata]
   ): Unit = js.native
   def get(params: ParamsResourceSpreadsheetsDevelopermetadataGet, options: MethodOptions): GaxiosPromise[SchemaDeveloperMetadata] = js.native
   def get(
@@ -100,76 +36,73 @@ class ResourceSpreadsheetsDevelopermetadata protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaDeveloperMetadata]
   ): Unit = js.native
-  
   /**
-    * sheets.spreadsheets.developerMetadata.search
-    * @desc Returns all developer metadata matching the specified DataFilter.
-    * If the provided DataFilter represents a DeveloperMetadataLookup object,
-    * this will return all DeveloperMetadata entries selected by it. If the
-    * DataFilter represents a location in a spreadsheet, this will return all
-    * developer metadata associated with locations intersecting that region.
+    * Returns the developer metadata with the specified ID. The caller must specify the spreadsheet ID and the developer metadata's unique metadataId.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Google Sheets API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/sheets
-    * // 2. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/sheets.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var sheets = google.sheets('v4');
+    * const {google} = require('googleapis');
+    * const sheets = google.sheets('v4');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // The ID of the spreadsheet to retrieve metadata from.
-    *     spreadsheetId: 'my-spreadsheet-id',  // TODO: Update placeholder
-    * value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   sheets.spreadsheets.developerMetadata.search(request, function(err,
-    * response) { if (err) { console.error(err); return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *       'https://www.googleapis.com/auth/spreadsheets',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await sheets.spreadsheets.developerMetadata.get({
+    *     // The ID of the developer metadata to retrieve.
+    *     metadataId: 'placeholder-value',
+    *     // The ID of the spreadsheet to retrieve metadata from.
+    *     spreadsheetId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "location": {},
+    *   //   "metadataId": 0,
+    *   //   "metadataKey": "my_metadataKey",
+    *   //   "metadataValue": "my_metadataValue",
+    *   //   "visibility": "my_visibility"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   // TODO: Change placeholder below to generate authentication
-    * credentials. See
-    *   //
-    * https://developers.google.com/sheets/quickstart/nodejs#step_3_set_up_the_sample
-    *   //
-    *   // Authorize using one of the following scopes:
-    *   //   'https://www.googleapis.com/auth/drive'
-    *   //   'https://www.googleapis.com/auth/drive.file'
-    *   //   'https://www.googleapis.com/auth/spreadsheets'
-    *   var authClient = null;
+    * ```
     *
-    *   if (authClient == null) {
-    *     console.log('authentication failed');
-    *     return;
-    *   }
-    *   callback(authClient);
-    * }
-    * @alias sheets.spreadsheets.developerMetadata.search
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.spreadsheetId The ID of the spreadsheet to retrieve metadata from.
-    * @param {().SearchDeveloperMetadataRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceSpreadsheetsDevelopermetadataGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceSpreadsheetsDevelopermetadataGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def search(): GaxiosPromise[SchemaSearchDeveloperMetadataResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchDeveloperMetadataResponse]): Unit = js.native
   def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearchDeveloperMetadataResponse] = js.native
@@ -180,13 +113,81 @@ class ResourceSpreadsheetsDevelopermetadata protected () extends StObject {
   ): Unit = js.native
   def search(
     params: ParamsResourceSpreadsheetsDevelopermetadataSearch,
-    options: BodyResponseCallback[SchemaSearchDeveloperMetadataResponse],
-    callback: BodyResponseCallback[SchemaSearchDeveloperMetadataResponse]
+    options: BodyResponseCallback[Readable | SchemaSearchDeveloperMetadataResponse],
+    callback: BodyResponseCallback[Readable | SchemaSearchDeveloperMetadataResponse]
   ): Unit = js.native
   def search(params: ParamsResourceSpreadsheetsDevelopermetadataSearch, options: MethodOptions): GaxiosPromise[SchemaSearchDeveloperMetadataResponse] = js.native
   def search(
     params: ParamsResourceSpreadsheetsDevelopermetadataSearch,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaSearchDeveloperMetadataResponse]
+  ): Unit = js.native
+  /**
+    * Returns all developer metadata matching the specified DataFilter. If the provided DataFilter represents a DeveloperMetadataLookup object, this will return all DeveloperMetadata entries selected by it. If the DataFilter represents a location in a spreadsheet, this will return all developer metadata associated with locations intersecting that region.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/sheets.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const sheets = google.sheets('v4');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *       'https://www.googleapis.com/auth/spreadsheets',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await sheets.spreadsheets.developerMetadata.search({
+    *     // The ID of the spreadsheet to retrieve metadata from.
+    *     spreadsheetId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "dataFilters": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "matchedDeveloperMetadata": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def search(params: ParamsResourceSpreadsheetsDevelopermetadataSearch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def search(
+    params: ParamsResourceSpreadsheetsDevelopermetadataSearch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

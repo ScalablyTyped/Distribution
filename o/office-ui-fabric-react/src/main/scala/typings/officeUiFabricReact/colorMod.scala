@@ -9,7 +9,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.b
 import typings.officeUiFabricReact.officeUiFabricReactStrings.g
 import typings.officeUiFabricReact.officeUiFabricReactStrings.r
 import typings.officeUiFabricReact.shadesMod.Shade
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object colorMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/color", "HEX_REGEX")
   @js.native
-  val HEX_REGEX: RegExp = js.native
+  val HEX_REGEX: js.RegExp = js.native
   
   @JSImport("office-ui-fabric-react/lib/utilities/color", "MAX_COLOR_ALPHA")
   @js.native
@@ -66,7 +65,7 @@ object colorMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/color", "RGBA_REGEX")
   @js.native
-  val RGBA_REGEX: RegExp = js.native
+  val RGBA_REGEX: js.RegExp = js.native
   
   @JSImport("office-ui-fabric-react/lib/utilities/color", "Shade")
   @js.native
@@ -146,13 +145,7 @@ object colorMod {
   
   inline def updateH(color: IColor, h: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateH")(color.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[IColor]
   
-  inline def updateRGB_a(color: IColor, component: a, value: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IColor]
-  
-  inline def updateRGB_b(color: IColor, component: b, value: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IColor]
-  
-  inline def updateRGB_g(color: IColor, component: g, value: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IColor]
-  
-  inline def updateRGB_r(color: IColor, component: r, value: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IColor]
+  inline def updateRGB(color: IColor, component: r | g | b | a, value: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IColor]
   
   inline def updateSV(color: IColor, s: Double, v: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSV")(color.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[IColor]
   

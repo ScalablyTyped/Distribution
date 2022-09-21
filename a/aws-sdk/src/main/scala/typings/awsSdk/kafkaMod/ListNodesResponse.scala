@@ -38,6 +38,6 @@ object ListNodesResponse {
     
     inline def setNodeInfoListUndefined: Self = StObject.set(x, "NodeInfoList", js.undefined)
     
-    inline def setNodeInfoListVarargs(value: NodeInfo*): Self = StObject.set(x, "NodeInfoList", js.Array(value :_*))
+    inline def setNodeInfoListVarargs(value: NodeInfo*): Self = StObject.set(x, "NodeInfoList", js.Array(value*))
   }
 }

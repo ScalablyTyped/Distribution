@@ -150,21 +150,14 @@ trait String
     * is "NFC"
     */
   def normalize(): java.lang.String = js.native
-  def normalize(form: java.lang.String): java.lang.String = js.native
   /**
     * Returns the String value result of normalizing the string into the normalization form
     * named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
     * @param form Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default
     * is "NFC"
     */
-  @JSName("normalize")
-  def normalize_NFC(form: NFC): java.lang.String = js.native
-  @JSName("normalize")
-  def normalize_NFD(form: NFD): java.lang.String = js.native
-  @JSName("normalize")
-  def normalize_NFKC(form: NFKC): java.lang.String = js.native
-  @JSName("normalize")
-  def normalize_NFKD(form: NFKD): java.lang.String = js.native
+  def normalize(form: NFC | NFD | NFKC | NFKD): java.lang.String = js.native
+  def normalize(form: java.lang.String): java.lang.String = js.native
   
   /**
     * Returns a String value that is made from count copies appended together. If count is 0,
@@ -186,12 +179,12 @@ trait String
     */
   def replace(
     searchValue: java.lang.String,
-    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String]
   ): java.lang.String = js.native
   def replace(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
   def replace(
     searchValue: RegExp,
-    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String]
   ): java.lang.String = js.native
   /**
     * Replaces text in a string, using an object that supports replacement within a string.
@@ -206,7 +199,7 @@ trait String
     */
   def replace(
     searchValue: `0`,
-    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String]
   ): java.lang.String = js.native
   
   /**

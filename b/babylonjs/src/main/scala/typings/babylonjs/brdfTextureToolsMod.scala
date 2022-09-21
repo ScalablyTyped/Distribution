@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object brdfTextureToolsMod {
   
-  @JSImport("babylonjs/Misc/brdfTextureTools", "BRDFTextureTools")
+  @JSImport("babylonjs/Misc/brdfTextureTools", JSImport.Namespace)
   @js.native
-  class BRDFTextureTools () extends StObject
-  /* static members */
+  val ^ : js.Any = js.native
+  
   object BRDFTextureTools {
     
     @JSImport("babylonjs/Misc/brdfTextureTools", "BRDFTextureTools")
@@ -24,18 +24,7 @@ object brdfTextureToolsMod {
       * @returns the environment BRDF texture
       */
     inline def GetEnvironmentBRDFTexture(scene: Scene): BaseTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEnvironmentBRDFTexture")(scene.asInstanceOf[js.Any]).asInstanceOf[BaseTexture]
-    
-    @JSImport("babylonjs/Misc/brdfTextureTools", "BRDFTextureTools._environmentBRDFBase64Texture")
-    @js.native
-    def _environmentBRDFBase64Texture: js.Any = js.native
-    inline def _environmentBRDFBase64Texture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_environmentBRDFBase64Texture")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Prevents texture cache collision
-      */
-    @JSImport("babylonjs/Misc/brdfTextureTools", "BRDFTextureTools._instanceNumber")
-    @js.native
-    def _instanceNumber: js.Any = js.native
-    inline def _instanceNumber_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instanceNumber")(x.asInstanceOf[js.Any])
   }
+  
+  inline def GetEnvironmentBRDFTexture(scene: Scene): BaseTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEnvironmentBRDFTexture")(scene.asInstanceOf[js.Any]).asInstanceOf[BaseTexture]
 }

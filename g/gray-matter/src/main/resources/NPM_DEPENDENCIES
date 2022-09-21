@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gray-matter" : "2.1.1"
+      "gray-matter" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "gray-matter" : "2.1.1"
+      "gray-matter" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

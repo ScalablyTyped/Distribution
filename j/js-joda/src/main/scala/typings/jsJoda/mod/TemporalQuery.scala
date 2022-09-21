@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class TemporalQuery () extends StObject {
   
-  def queryFrom(temporal: TemporalAccessor): js.Any = js.native
+  def queryFrom(temporal: TemporalAccessor): Any = js.native
 }

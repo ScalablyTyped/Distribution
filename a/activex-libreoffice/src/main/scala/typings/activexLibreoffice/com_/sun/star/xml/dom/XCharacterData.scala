@@ -114,7 +114,7 @@ object XCharacterData {
     insertData: (Double, String) => Unit,
     isSupported: (String, String) => Boolean,
     normalize: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChild: XNode => XNode,
     replaceChild: (XNode, XNode) => XNode,

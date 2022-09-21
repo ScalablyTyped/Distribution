@@ -10,10 +10,10 @@ A bloom filter suitable for use in Bitcoin Connection Bloom Filtering as part of
 | ------------------ | :-------------: |
 | Full name          | bloom-filter |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 129 |
-| # downloads        | 62695 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9202.666666666666 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/bitpay/bloom-filter)

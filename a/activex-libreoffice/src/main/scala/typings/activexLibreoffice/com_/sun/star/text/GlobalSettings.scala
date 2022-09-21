@@ -21,7 +21,7 @@ object GlobalSettings {
     acquire: () => Unit,
     getPrintSettings: () => XPropertySet,
     getViewSettings: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): GlobalSettings = {
     val __obj = js.Dynamic.literal(PrintSettings = PrintSettings.asInstanceOf[js.Any], ViewSettings = ViewSettings.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getPrintSettings = js.Any.fromFunction0(getPrintSettings), getViewSettings = js.Any.fromFunction0(getViewSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

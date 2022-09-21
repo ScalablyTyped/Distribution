@@ -1,18 +1,36 @@
 package typings.maximMazurokGapiClientReseller.anon
 
-import typings.maximMazurokGapiClientReseller.gapi.client.reseller.RenewalSettings
+import typings.maximMazurokGapiClientReseller.gapi.client.reseller.Subscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Resource extends StObject {
   
-  /** Data format for the response. */
+  /** V1 error format. */
+  @JSName("$.xgafv")
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
+  
+  /** OAuth access token. */
+  var access_token: js.UndefOr[String] = js.undefined
+  
+  /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
+  /** JSONP */
+  var callback: js.UndefOr[String] = js.undefined
+  
   /**
-    * Either the customer's primary domain name or the customer's unique identifier. If using the domain name, we do not recommend using a customerId as a key for persistent data. If
-    * the domain name for a customerId is changed, the Google system automatically updates.
+    * The `customerAuthToken` query string is required when creating a resold account that transfers a direct customer's subscription or transfers another reseller customer's
+    * subscription to your reseller management. This is a hexadecimal authentication token needed to complete the subscription transfer. For more information, see the administrator
+    * help center.
+    */
+  var customerAuthToken: js.UndefOr[String] = js.undefined
+  
+  /**
+    * This can be either the customer's primary domain name or the customer's unique identifier. If the domain name for a customer changes, the old domain name cannot be used to
+    * access the customer, but the customer's unique identifier (as returned by the API) can always be used. We recommend storing the unique identifier in your systems where
+    * applicable.
     */
   var customerId: String
   
@@ -28,33 +46,46 @@ trait Resource extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
+  /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: RenewalSettings
+  var resource: Subscription
   
-  /**
-    * This is a required property. The subscriptionId is the subscription identifier and is unique for each customer. Since a subscriptionId changes when a subscription is updated, we
-    * recommend to not use this ID as a key for persistent data. And the subscriptionId can be found using the retrieve all reseller subscriptions method.
-    */
-  var subscriptionId: String
+  /** Legacy upload protocol for media (e.g. "media", "multipart"). */
+  var uploadType: js.UndefOr[String] = js.undefined
   
-  /** Deprecated. Please use quotaUser instead. */
-  var userIp: js.UndefOr[String] = js.undefined
+  /** Upload protocol for media (e.g. "raw", "multipart"). */
+  var upload_protocol: js.UndefOr[String] = js.undefined
 }
 object Resource {
   
-  inline def apply(customerId: String, resource: RenewalSettings, subscriptionId: String): Resource = {
-    val __obj = js.Dynamic.literal(customerId = customerId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], subscriptionId = subscriptionId.asInstanceOf[js.Any])
+  inline def apply(customerId: String, resource: Subscription): Resource = {
+    val __obj = js.Dynamic.literal(customerId = customerId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
   
   extension [Self <: Resource](x: Self) {
     
+    inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+    
+    inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+    
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    
+    inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setCustomerAuthToken(value: String): Self = StObject.set(x, "customerAuthToken", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerAuthTokenUndefined: Self = StObject.set(x, "customerAuthToken", js.undefined)
     
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
@@ -78,12 +109,14 @@ object Resource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: RenewalSettings): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Subscription): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    inline def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
+    inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
-    inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
+    inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
     
-    inline def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
+    inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+    
+    inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
   }
 }

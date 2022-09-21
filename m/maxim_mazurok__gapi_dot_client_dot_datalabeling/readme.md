@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_datalabeling
 
-Typings are for version 1.0.20201112
+Typings are for version 1.0.20220621
 
 ## Library description:
 TypeScript typings for Data Labeling API v1beta1
@@ -10,10 +10,10 @@ TypeScript typings for Data Labeling API v1beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.datalabeling |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 1119 |
-| # stars            | 0 |
+| # releases         | 54 |
+| # dependents       | 0.0 |
+| # downloads        | 709.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

@@ -12,6 +12,8 @@ trait Shape extends StObject {
   
   var collisionResponse: Boolean
   
+  var id: Double
+  
   var `type`: Double
   
   def updateBoundingSphereRadius(): Double
@@ -24,11 +26,12 @@ object Shape {
     boundingSphereRadius: Double,
     calculateLocalInertia: (Double, Vec3) => Vec3,
     collisionResponse: Boolean,
+    id: Double,
     `type`: Double,
     updateBoundingSphereRadius: () => Double,
     volume: () => Double
   ): Shape = {
-    val __obj = js.Dynamic.literal(boundingSphereRadius = boundingSphereRadius.asInstanceOf[js.Any], calculateLocalInertia = js.Any.fromFunction2(calculateLocalInertia), collisionResponse = collisionResponse.asInstanceOf[js.Any], updateBoundingSphereRadius = js.Any.fromFunction0(updateBoundingSphereRadius), volume = js.Any.fromFunction0(volume))
+    val __obj = js.Dynamic.literal(boundingSphereRadius = boundingSphereRadius.asInstanceOf[js.Any], calculateLocalInertia = js.Any.fromFunction2(calculateLocalInertia), collisionResponse = collisionResponse.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updateBoundingSphereRadius = js.Any.fromFunction0(updateBoundingSphereRadius), volume = js.Any.fromFunction0(volume))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shape]
   }
@@ -40,6 +43,8 @@ object Shape {
     inline def setCalculateLocalInertia(value: (Double, Vec3) => Vec3): Self = StObject.set(x, "calculateLocalInertia", js.Any.fromFunction2(value))
     
     inline def setCollisionResponse(value: Boolean): Self = StObject.set(x, "collisionResponse", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

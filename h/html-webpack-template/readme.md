@@ -10,10 +10,10 @@ A template with more features than the default html-webpack-plugin template
 | ------------------ | :-------------: |
 | Full name          | html-webpack-template |
 | Keywords           | webpack, template, html-webpack-plugin, index.html, index.ejs |
-| # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 870668 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 41778.333333333336 |
+| # stars            | 837.0 |
 
 ## Links
 - [Homepage](https://github.com/jaketrent/html-webpack-template)

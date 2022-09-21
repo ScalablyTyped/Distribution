@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ArmBaseOperand extends StObject {
   
+  var access: OperandAccess
+  
   var shift: js.UndefOr[Type] = js.undefined
   
   var subtracted: Boolean
@@ -15,12 +17,14 @@ trait ArmBaseOperand extends StObject {
 }
 object ArmBaseOperand {
   
-  inline def apply(subtracted: Boolean): ArmBaseOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, subtracted: Boolean): ArmBaseOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmBaseOperand]
   }
   
   extension [Self <: ArmBaseOperand](x: Self) {
+    
+    inline def setAccess(value: OperandAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     inline def setShift(value: Type): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     

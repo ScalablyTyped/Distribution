@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BindingTarget extends StObject {
   
-  var options: js.Any
+  var options: Any
   
-  var source: js.Any
+  var source: Any
   
-  var target: js.Any
+  var target: Any
 }
 object BindingTarget {
   
-  inline def apply(options: js.Any, source: js.Any, target: js.Any): BindingTarget = {
+  inline def apply(options: Any, source: Any, target: Any): BindingTarget = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingTarget]
   }
   
   extension [Self <: BindingTarget](x: Self) {
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

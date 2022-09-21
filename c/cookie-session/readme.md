@@ -10,12 +10,15 @@ cookie session middleware
 | ------------------ | :-------------: |
 | Full name          | cookie-session |
 | Keywords           | connect, express, middleware, session |
-| # releases         | 4 |
-| # dependents       | 1620 |
-| # downloads        | 5461281 |
-| # stars            | 66 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 765172.0 |
+| # stars            | 1020.0 |
 
 ## Links
+- [Homepage](https://github.com/expressjs/cookie-session#readme)
+- [Bugs](https://github.com/expressjs/cookie-session/issues)
+- [Repository](https://github.com/expressjs/cookie-session)
 - [Npm](https://www.npmjs.com/package/cookie-session)
     
 

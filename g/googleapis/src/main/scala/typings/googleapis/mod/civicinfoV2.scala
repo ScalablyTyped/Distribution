@@ -9,25 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object civicinfoV2 {
   
-  /**
-    * Google Civic Information API
-    *
-    * Provides polling places, early vote locations, contest data, election
-    * officials, and government representatives for U.S. residential addresses.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const civicinfo = google.civicinfo('v2');
-    *
-    * @namespace civicinfo
-    * @type {Function}
-    * @version v2
-    * @variation v2
-    * @param {object=} options Options for Civicinfo
-    */
   @JSImport("googleapis", "civicinfo_v2.Civicinfo")
   @js.native
-  class Civicinfo protected ()
+  open class Civicinfo protected ()
     extends typings.googleapis.civicinfoV2Mod.civicinfoV2.Civicinfo {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -35,21 +19,21 @@ object civicinfoV2 {
   
   @JSImport("googleapis", "civicinfo_v2.Resource$Divisions")
   @js.native
-  class ResourceDivisions protected ()
+  open class ResourceDivisions protected ()
     extends typings.googleapis.civicinfoV2Mod.civicinfoV2.ResourceDivisions {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "civicinfo_v2.Resource$Elections")
   @js.native
-  class ResourceElections protected ()
+  open class ResourceElections protected ()
     extends typings.googleapis.civicinfoV2Mod.civicinfoV2.ResourceElections {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "civicinfo_v2.Resource$Representatives")
   @js.native
-  class ResourceRepresentatives protected ()
+  open class ResourceRepresentatives protected ()
     extends typings.googleapis.civicinfoV2Mod.civicinfoV2.ResourceRepresentatives {
     def this(context: APIRequestContext) = this()
   }

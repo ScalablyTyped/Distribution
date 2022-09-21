@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLCurrentStyle")
 @js.native
-/* private */ class IHTMLCurrentStyle ()
+/* private */ open class IHTMLCurrentStyle ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLCurrentStyle

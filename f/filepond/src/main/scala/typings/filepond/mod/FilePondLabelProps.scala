@@ -77,7 +77,7 @@ trait FilePondLabelProps extends StObject {
     * Label used when file load failed.
     * @default 'Error during load'
     */
-  var labelFileLoadError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.undefined
+  var labelFileLoadError: js.UndefOr[(js.Function1[/* error */ Any, String]) | String] = js.undefined
   
   /**
     * Label used while loading a file.
@@ -107,19 +107,19 @@ trait FilePondLabelProps extends StObject {
     * Label used when something went wrong during file upload.
     * @default 'Error during upload'
     */
-  var labelFileProcessingError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.undefined
+  var labelFileProcessingError: js.UndefOr[(js.Function1[/* error */ Any, String]) | String] = js.undefined
   
   /**
     * Label used when something went wrong during reverting the file upload.
     * @default 'Error during revert'
     */
-  var labelFileProcessingRevertError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.undefined
+  var labelFileProcessingRevertError: js.UndefOr[(js.Function1[/* error */ Any, String]) | String] = js.undefined
   
   /**
     * Label used when something went during during removing the file upload.
     * @default 'Error during remove'
     */
-  var labelFileRemoveError: js.UndefOr[(js.Function1[/* error */ js.Any, String]) | String] = js.undefined
+  var labelFileRemoveError: js.UndefOr[(js.Function1[/* error */ Any, String]) | String] = js.undefined
   
   /**
     * Label used when file is removed (assistive only).
@@ -231,9 +231,9 @@ object FilePondLabelProps {
     
     inline def setLabelFileCountSingularUndefined: Self = StObject.set(x, "labelFileCountSingular", js.undefined)
     
-    inline def setLabelFileLoadError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = StObject.set(x, "labelFileLoadError", value.asInstanceOf[js.Any])
+    inline def setLabelFileLoadError(value: (js.Function1[/* error */ Any, String]) | String): Self = StObject.set(x, "labelFileLoadError", value.asInstanceOf[js.Any])
     
-    inline def setLabelFileLoadErrorFunction1(value: /* error */ js.Any => String): Self = StObject.set(x, "labelFileLoadError", js.Any.fromFunction1(value))
+    inline def setLabelFileLoadErrorFunction1(value: /* error */ Any => String): Self = StObject.set(x, "labelFileLoadError", js.Any.fromFunction1(value))
     
     inline def setLabelFileLoadErrorUndefined: Self = StObject.set(x, "labelFileLoadError", js.undefined)
     
@@ -251,23 +251,23 @@ object FilePondLabelProps {
     
     inline def setLabelFileProcessingCompleteUndefined: Self = StObject.set(x, "labelFileProcessingComplete", js.undefined)
     
-    inline def setLabelFileProcessingError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = StObject.set(x, "labelFileProcessingError", value.asInstanceOf[js.Any])
+    inline def setLabelFileProcessingError(value: (js.Function1[/* error */ Any, String]) | String): Self = StObject.set(x, "labelFileProcessingError", value.asInstanceOf[js.Any])
     
-    inline def setLabelFileProcessingErrorFunction1(value: /* error */ js.Any => String): Self = StObject.set(x, "labelFileProcessingError", js.Any.fromFunction1(value))
+    inline def setLabelFileProcessingErrorFunction1(value: /* error */ Any => String): Self = StObject.set(x, "labelFileProcessingError", js.Any.fromFunction1(value))
     
     inline def setLabelFileProcessingErrorUndefined: Self = StObject.set(x, "labelFileProcessingError", js.undefined)
     
-    inline def setLabelFileProcessingRevertError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = StObject.set(x, "labelFileProcessingRevertError", value.asInstanceOf[js.Any])
+    inline def setLabelFileProcessingRevertError(value: (js.Function1[/* error */ Any, String]) | String): Self = StObject.set(x, "labelFileProcessingRevertError", value.asInstanceOf[js.Any])
     
-    inline def setLabelFileProcessingRevertErrorFunction1(value: /* error */ js.Any => String): Self = StObject.set(x, "labelFileProcessingRevertError", js.Any.fromFunction1(value))
+    inline def setLabelFileProcessingRevertErrorFunction1(value: /* error */ Any => String): Self = StObject.set(x, "labelFileProcessingRevertError", js.Any.fromFunction1(value))
     
     inline def setLabelFileProcessingRevertErrorUndefined: Self = StObject.set(x, "labelFileProcessingRevertError", js.undefined)
     
     inline def setLabelFileProcessingUndefined: Self = StObject.set(x, "labelFileProcessing", js.undefined)
     
-    inline def setLabelFileRemoveError(value: (js.Function1[/* error */ js.Any, String]) | String): Self = StObject.set(x, "labelFileRemoveError", value.asInstanceOf[js.Any])
+    inline def setLabelFileRemoveError(value: (js.Function1[/* error */ Any, String]) | String): Self = StObject.set(x, "labelFileRemoveError", value.asInstanceOf[js.Any])
     
-    inline def setLabelFileRemoveErrorFunction1(value: /* error */ js.Any => String): Self = StObject.set(x, "labelFileRemoveError", js.Any.fromFunction1(value))
+    inline def setLabelFileRemoveErrorFunction1(value: /* error */ Any => String): Self = StObject.set(x, "labelFileRemoveError", js.Any.fromFunction1(value))
     
     inline def setLabelFileRemoveErrorUndefined: Self = StObject.set(x, "labelFileRemoveError", js.undefined)
     

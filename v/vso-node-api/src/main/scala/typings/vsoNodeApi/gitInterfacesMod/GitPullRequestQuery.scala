@@ -31,10 +31,10 @@ object GitPullRequestQuery {
     
     inline def setQueries(value: js.Array[GitPullRequestQueryInput]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    inline def setQueriesVarargs(value: GitPullRequestQueryInput*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: GitPullRequestQueryInput*): Self = StObject.set(x, "queries", js.Array(value*))
     
     inline def setResults(value: js.Array[StringDictionary[js.Array[GitPullRequest]]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: StringDictionary[js.Array[GitPullRequest]]*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: StringDictionary[js.Array[GitPullRequest]]*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

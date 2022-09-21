@@ -66,7 +66,7 @@ object HostCustomChannelId {
     
     inline def setHostCustomChannelIdUndefined: Self = StObject.set(x, "hostCustomChannelId", js.undefined)
     
-    inline def setHostCustomChannelIdVarargs(value: String*): Self = StObject.set(x, "hostCustomChannelId", js.Array(value :_*))
+    inline def setHostCustomChannelIdVarargs(value: String*): Self = StObject.set(x, "hostCustomChannelId", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

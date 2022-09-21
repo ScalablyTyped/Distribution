@@ -19,7 +19,7 @@ trait nlobjContext
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * return an array containing the names of all keys used to set session objects
@@ -42,7 +42,7 @@ Instantiable0[js.Any] {
     * @since 2010.1
     * @return
     */
-  def getColorPreferences(): js.Any = js.native
+  def getColorPreferences(): Any = js.native
   
   /**
     * return the account ID of the current user.
@@ -66,7 +66,7 @@ Instantiable0[js.Any] {
     * @since 2009.1
     * @return
     */
-  def getContact(): js.Any = js.native
+  def getContact(): Any = js.native
   
   /**
     * return the internalId of the current user's department.
@@ -78,7 +78,7 @@ Instantiable0[js.Any] {
     * @since 2007.0
     * @return
     */
-  def getDepartment(): js.Any = js.native
+  def getDepartment(): Any = js.native
   
   /**
     * return the deployment ID for the current script
@@ -146,7 +146,7 @@ Instantiable0[js.Any] {
     * @since 2007.0
     * @return
     */
-  def getLocation(): js.Any = js.native
+  def getLocation(): Any = js.native
   
   /**
     * return the logging level for the current script execution. Not supported in CLIENT scripts
@@ -176,7 +176,7 @@ Instantiable0[js.Any] {
     * @since 2009.2
     * @return
     */
-  def getPercentComplete(): js.Any = js.native
+  def getPercentComplete(): Any = js.native
   
   /**
     * return current user's permission level (0-4) for this permission
@@ -190,7 +190,7 @@ Instantiable0[js.Any] {
     * @param name
     * @return
     */
-  def getPermission(name: String): js.Any = js.native
+  def getPermission(name: String): Any = js.native
   
   /**
     * return system or script preference selection for current user
@@ -216,7 +216,7 @@ Instantiable0[js.Any] {
     * @since 2007.0
     * @return
     */
-  def getRemainingUsage(): js.Any = js.native
+  def getRemainingUsage(): Any = js.native
   
   /**
     * return the internalId of the current user's role.
@@ -264,7 +264,7 @@ Instantiable0[js.Any] {
     * @since 2014.1
     * @return
     */
-  def getRuntimeVersion(): js.Any = js.native
+  def getRuntimeVersion(): Any = js.native
   
   /**
     * return the script ID for the current script
@@ -314,7 +314,7 @@ Instantiable0[js.Any] {
     * @since 2007.0
     * @return
     */
-  def getSubsidiary(): js.Any = js.native
+  def getSubsidiary(): Any = js.native
   
   /**
     * return the internalId of the current user.
@@ -352,7 +352,7 @@ Instantiable0[js.Any] {
     * @param pct
     * @return
     */
-  def setPercentComplete(pct: js.Any): js.Any = js.native
+  def setPercentComplete(pct: Any): Any = js.native
   
   /**
     * set the value of a session object using a key.
@@ -368,7 +368,7 @@ Instantiable0[js.Any] {
     * @param value
     * @return
     */
-  def setSessionObject(name: String, value: String): js.Any = js.native
+  def setSessionObject(name: String, value: String): Any = js.native
   
   /**
     * set a system/script setting. Only supported type is SESSION

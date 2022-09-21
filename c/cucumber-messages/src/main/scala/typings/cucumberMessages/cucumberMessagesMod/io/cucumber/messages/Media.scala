@@ -5,7 +5,6 @@ import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Media.E
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Media.
   * @param [properties] Properties to set
   */
-class Media ()
+open class Media ()
   extends StObject
      with IMedia {
   def this(properties: IMedia) = this()
@@ -39,7 +38,7 @@ class Media ()
     * Converts this Media to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object Media {
   
@@ -79,6 +78,8 @@ object Media {
   inline def create(): Media = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Media]
   inline def create(properties: IMedia): Media = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Media]
   
+  inline def decode(reader: js.typedarray.Uint8Array): Media = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Media]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): Media = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Media]
   /**
     * Decodes a Media message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -90,9 +91,8 @@ object Media {
   /* static member */
   inline def decode(reader: Reader): Media = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Media]
   inline def decode(reader: Reader, length: Double): Media = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Media]
-  inline def decode(reader: Uint8Array): Media = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Media]
-  inline def decode(reader: Uint8Array, length: Double): Media = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Media]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): Media = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Media]
   /**
     * Decodes a Media message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -102,7 +102,6 @@ object Media {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): Media = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Media]
-  inline def decodeDelimited(reader: Uint8Array): Media = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Media]
   
   /**
     * Encodes the specified Media message. Does not implicitly {@link io.cucumber.messages.Media.verify|verify} messages.
@@ -130,7 +129,7 @@ object Media {
     * @returns Media
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): Media = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Media]
+  inline def fromObject(`object`: StringDictionary[Any]): Media = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Media]
   
   /**
     * Creates a plain object from a Media message. Also converts values to other types if specified.
@@ -139,8 +138,8 @@ object Media {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: Media): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: Media, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Media): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: Media, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a Media message.
@@ -148,5 +147,5 @@ object Media {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

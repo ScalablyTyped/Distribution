@@ -10,7 +10,7 @@ trait pointsOptions
   
   var radius: js.UndefOr[Double] = js.undefined
   
-  var symbol: js.UndefOr[js.Any] = js.undefined
+  var symbol: js.UndefOr[Any] = js.undefined
 }
 object pointsOptions {
   
@@ -25,7 +25,7 @@ object pointsOptions {
     
     inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    inline def setSymbol(value: js.Any): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Any): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }

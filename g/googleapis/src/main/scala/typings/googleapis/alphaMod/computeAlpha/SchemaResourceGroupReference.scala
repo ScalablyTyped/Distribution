@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaResourceGroupReference extends StObject {
   
   /**
-    * A URI referencing one of the instance groups or network endpoint groups
-    * listed in the backend service.
+    * A URI referencing one of the instance groups or network endpoint groups listed in the backend service.
     */
-  var group: js.UndefOr[String] = js.undefined
+  var group: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaResourceGroupReference {
   
@@ -22,6 +21,8 @@ object SchemaResourceGroupReference {
   extension [Self <: SchemaResourceGroupReference](x: Self) {
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupNull: Self = StObject.set(x, "group", null)
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
   }

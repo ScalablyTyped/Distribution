@@ -13,20 +13,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait X86Operand extends StObject
 object X86Operand {
   
-  inline def X86ImmOperand(size: Double, value: Double | Int64): typings.fridaGum.X86ImmOperand = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def X86ImmOperand(access: OperandAccess, size: Double, value: Double | Int64): typings.fridaGum.X86ImmOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("imm")
     __obj.asInstanceOf[typings.fridaGum.X86ImmOperand]
   }
   
-  inline def X86MemOperand(size: Double, value: Base): typings.fridaGum.X86MemOperand = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def X86MemOperand(access: OperandAccess, size: Double, value: Base): typings.fridaGum.X86MemOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("mem")
     __obj.asInstanceOf[typings.fridaGum.X86MemOperand]
   }
   
-  inline def X86RegOperand(size: Double, value: X86Register): typings.fridaGum.X86RegOperand = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def X86RegOperand(access: OperandAccess, size: Double, value: X86Register): typings.fridaGum.X86RegOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("reg")
     __obj.asInstanceOf[typings.fridaGum.X86RegOperand]
   }

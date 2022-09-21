@@ -63,7 +63,7 @@ object CellRadius {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value*))
     
     inline def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     
@@ -77,7 +77,7 @@ object CellRadius {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setThumbRadius(value: Double): Self = StObject.set(x, "thumbRadius", value.asInstanceOf[js.Any])
     

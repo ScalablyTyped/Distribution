@@ -8,8 +8,28 @@ trait MotionScalePullDownProps
   extends StObject
      with MotionProps {
   
+  /**
+    * @language zh-CN
+    * @description 初始缩放倍数
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Initial zoom factor
+    * @defaultValue 0
+    */
   var initScale: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否竖直居中
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Is it vertically centered
+    * @defaultValue true
+    */
   var isAlign: js.UndefOr[Boolean] = js.undefined
 }
 object MotionScalePullDownProps {

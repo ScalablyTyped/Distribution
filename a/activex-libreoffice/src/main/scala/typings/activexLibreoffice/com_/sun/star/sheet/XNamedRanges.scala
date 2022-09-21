@@ -60,13 +60,13 @@ object XNamedRanges {
     acquire: () => Unit,
     addNewByName: (String, String, CellAddress, Double) => Unit,
     addNewFromTitles: (CellRangeAddress, Border) => Unit,
-    getByName: String => js.Any,
+    getByName: String => Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
     outputList: CellAddress => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByName: String => Unit
   ): XNamedRanges = {

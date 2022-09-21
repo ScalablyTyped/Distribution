@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "html-void-elements" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "html-void-elements" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

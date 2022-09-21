@@ -1,5 +1,11 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.CloudyWeatherPropertiesty
+import typings.arcgisJsApi.anon.FoggyWeatherPropertiestyp
+import typings.arcgisJsApi.anon.RainyWeatherPropertiestyp
+import typings.arcgisJsApi.anon.SnowyWeatherPropertiestyp
+import typings.arcgisJsApi.anon.SunLightingPropertiestype
+import typings.arcgisJsApi.anon.SunnyWeatherPropertiestyp
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -20,6 +26,8 @@ trait SceneViewEnvironmentProperties
   /**
     * Indicates whether atmosphere visualization is enabled.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
   var atmosphereEnabled: js.UndefOr[Boolean] = js.undefined
@@ -32,18 +40,33 @@ trait SceneViewEnvironmentProperties
   var background: js.UndefOr[BackgroundProperties] = js.undefined
   
   /**
-    * Lighting conditions of the scene.
+    * Indicates the type of lighting in the scene.
+    *
+    * @default SunLighting
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var lighting: js.UndefOr[SceneViewEnvironmentLightingProperties] = js.undefined
+  var lighting: js.UndefOr[SunLightingPropertiestype | typings.arcgisJsApi.anon.VirtualLightingProperties] = js.undefined
   
   /**
     * Indicates whether stars visualization is enabled.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
   var starsEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates the type of weather visualization in the scene.
+    *
+    * @default SunnyWeather
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
+    */
+  var weather: js.UndefOr[
+    SunnyWeatherPropertiestyp | CloudyWeatherPropertiesty | RainyWeatherPropertiestyp | SnowyWeatherPropertiestyp | FoggyWeatherPropertiestyp
+  ] = js.undefined
 }
 object SceneViewEnvironmentProperties {
   
@@ -70,12 +93,18 @@ object SceneViewEnvironmentProperties {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setLighting(value: SceneViewEnvironmentLightingProperties): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
+    inline def setLighting(value: SunLightingPropertiestype | typings.arcgisJsApi.anon.VirtualLightingProperties): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
     
     inline def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
     
     inline def setStarsEnabled(value: Boolean): Self = StObject.set(x, "starsEnabled", value.asInstanceOf[js.Any])
     
     inline def setStarsEnabledUndefined: Self = StObject.set(x, "starsEnabled", js.undefined)
+    
+    inline def setWeather(
+      value: SunnyWeatherPropertiestyp | CloudyWeatherPropertiesty | RainyWeatherPropertiestyp | SnowyWeatherPropertiestyp | FoggyWeatherPropertiestyp
+    ): Self = StObject.set(x, "weather", value.asInstanceOf[js.Any])
+    
+    inline def setWeatherUndefined: Self = StObject.set(x, "weather", js.undefined)
   }
 }

@@ -28,7 +28,7 @@ object ListFirstAndThirdPartyAudiencesResponse {
     
     inline def setFirstAndThirdPartyAudiencesUndefined: Self = StObject.set(x, "firstAndThirdPartyAudiences", js.undefined)
     
-    inline def setFirstAndThirdPartyAudiencesVarargs(value: FirstAndThirdPartyAudience*): Self = StObject.set(x, "firstAndThirdPartyAudiences", js.Array(value :_*))
+    inline def setFirstAndThirdPartyAudiencesVarargs(value: FirstAndThirdPartyAudience*): Self = StObject.set(x, "firstAndThirdPartyAudiences", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

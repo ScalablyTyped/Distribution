@@ -27,6 +27,11 @@ trait TransitGatewayRoute extends StObject {
   var TransitGatewayAttachments: js.UndefOr[TransitGatewayRouteAttachmentList] = js.undefined
   
   /**
+    * The ID of the transit gateway route table announcement. 
+    */
+  var TransitGatewayRouteTableAnnouncementId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayRouteTableAnnouncementId] = js.undefined
+  
+  /**
     * The route type.
     */
   var Type: js.UndefOr[TransitGatewayRouteType] = js.undefined
@@ -56,7 +61,11 @@ object TransitGatewayRoute {
     
     inline def setTransitGatewayAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayAttachments", js.undefined)
     
-    inline def setTransitGatewayAttachmentsVarargs(value: TransitGatewayRouteAttachment*): Self = StObject.set(x, "TransitGatewayAttachments", js.Array(value :_*))
+    inline def setTransitGatewayAttachmentsVarargs(value: TransitGatewayRouteAttachment*): Self = StObject.set(x, "TransitGatewayAttachments", js.Array(value*))
+    
+    inline def setTransitGatewayRouteTableAnnouncementId(value: TransitGatewayRouteTableAnnouncementId): Self = StObject.set(x, "TransitGatewayRouteTableAnnouncementId", value.asInstanceOf[js.Any])
+    
+    inline def setTransitGatewayRouteTableAnnouncementIdUndefined: Self = StObject.set(x, "TransitGatewayRouteTableAnnouncementId", js.undefined)
     
     inline def setType(value: TransitGatewayRouteType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

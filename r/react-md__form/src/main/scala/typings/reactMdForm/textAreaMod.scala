@@ -6,6 +6,7 @@ import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.RefAttributes
 import typings.react.mod.TextareaHTMLAttributes
+import typings.reactMdForm.anon.OmitHTMLAttributesHTMLDiv
 import typings.reactMdForm.textFieldContainerMod.TextFieldContainerOptions
 import typings.std.HTMLDivElement
 import typings.std.HTMLTextAreaElement
@@ -41,6 +42,15 @@ object textAreaMod {
       * is applied to the surrounding `div` instead.
       */
     var areaStyle: js.UndefOr[CSSProperties] = js.undefined
+    
+    /**
+      * Any additional html attributes that should be applied to the main container
+      * div. This is probably only going to be used internally so that additional
+      * accessibility can be added to text fields for more complex widgets.
+      *
+      * @remarks \@since 2.5.2
+      */
+    var containerProps: js.UndefOr[OmitHTMLAttributesHTMLDiv] = js.undefined
     
     /**
       * An optional ref to apply to the text field's container div element. The
@@ -122,6 +132,10 @@ object textAreaMod {
       inline def setAreaStyle(value: CSSProperties): Self = StObject.set(x, "areaStyle", value.asInstanceOf[js.Any])
       
       inline def setAreaStyleUndefined: Self = StObject.set(x, "areaStyle", js.undefined)
+      
+      inline def setContainerProps(value: OmitHTMLAttributesHTMLDiv): Self = StObject.set(x, "containerProps", value.asInstanceOf[js.Any])
+      
+      inline def setContainerPropsUndefined: Self = StObject.set(x, "containerProps", js.undefined)
       
       inline def setContainerRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
       

@@ -22,6 +22,6 @@ object BatchPutAssetPropertyValueResponse {
     
     inline def setErrorEntries(value: BatchPutAssetPropertyErrorEntries): Self = StObject.set(x, "errorEntries", value.asInstanceOf[js.Any])
     
-    inline def setErrorEntriesVarargs(value: BatchPutAssetPropertyErrorEntry*): Self = StObject.set(x, "errorEntries", js.Array(value :_*))
+    inline def setErrorEntriesVarargs(value: BatchPutAssetPropertyErrorEntry*): Self = StObject.set(x, "errorEntries", js.Array(value*))
   }
 }

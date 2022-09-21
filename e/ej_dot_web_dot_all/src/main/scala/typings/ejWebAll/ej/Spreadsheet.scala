@@ -114,7 +114,7 @@ trait Spreadsheet
     */
   def clearAll(): Unit = js.native
   def clearAll(range: String): Unit = js.native
-  def clearAll(range: js.Array[js.Any]): Unit = js.native
+  def clearAll(range: js.Array[Any]): Unit = js.native
   
   /** This property is used to clear all the formats applied in the specified range in Spreadsheet.
     * @param {string|any[]} Optional. If range is specified, then it will clear all format in the specified range else it will use the current selected range.
@@ -122,7 +122,7 @@ trait Spreadsheet
     */
   def clearAllFormat(): Unit = js.native
   def clearAllFormat(range: String): Unit = js.native
-  def clearAllFormat(range: js.Array[js.Any]): Unit = js.native
+  def clearAllFormat(range: js.Array[Any]): Unit = js.native
   
   /** Used to clear the applied border in the specified range in Spreadsheet.
     * @param {string|any[]} Optional. If range is specified, then it will clear border in the specified range else it will use the current selected range.
@@ -130,7 +130,7 @@ trait Spreadsheet
     */
   def clearBorder(): Unit = js.native
   def clearBorder(range: String): Unit = js.native
-  def clearBorder(range: js.Array[js.Any]): Unit = js.native
+  def clearBorder(range: js.Array[Any]): Unit = js.native
   
   /** This property is used to clear the contents in the specified range in Spreadsheet.
     * @param {string|any[]} Optional. If the range is specified, then it will clear the content in the specified range else it will use the current selected range.
@@ -138,7 +138,7 @@ trait Spreadsheet
     */
   def clearContents(): Unit = js.native
   def clearContents(range: String): Unit = js.native
-  def clearContents(range: js.Array[js.Any]): Unit = js.native
+  def clearContents(range: js.Array[Any]): Unit = js.native
   
   /** This method is used to remove only the data in the range denoted by the specified range name.
     * @param {string} Pass the defined rangeSettings property name.
@@ -156,7 +156,7 @@ trait Spreadsheet
     * @returns {void}
     */
   def clearRangeData(
-    range: js.UndefOr[js.Array[js.Any] | String],
+    range: js.UndefOr[js.Array[Any] | String],
     property: js.UndefOr[String],
     cells: js.UndefOr[HTMLElement],
     skipHiddenRow: js.UndefOr[Boolean],
@@ -229,8 +229,8 @@ trait Spreadsheet
     * @param {number} Optional. If sheetIdx is specified, it will return the active cell object in specified sheet index else it will use the current sheet index
     * @returns {any}
     */
-  def getActiveCell(): js.Any = js.native
-  def getActiveCell(sheetIdx: Double): js.Any = js.native
+  def getActiveCell(): Any = js.native
+  def getActiveCell(sheetIdx: Double): Any = js.native
   
   /** This method is used to get the active cell element based on the given sheet index in the Spreadsheet.
     * @param {number} Optional. If sheetIndex is specified, it will return the active cell element in specified sheet index else it will use the current active sheet index.
@@ -289,13 +289,13 @@ trait Spreadsheet
     * @param {HTMLElement} Pass the DOM element to get hyperlink
     * @returns {any}
     */
-  def getHyperlink(cell: HTMLElement): js.Any = js.native
+  def getHyperlink(cell: HTMLElement): Any = js.native
   
   /** This method is used to get the keys from the given object in Spreadsheet.
     * @param {any} Pass the Object
     * @returns {any[]}
     */
-  def getObjectKeys(obj: js.Any): js.Array[js.Any] = js.native
+  def getObjectKeys(obj: Any): js.Array[Any] = js.native
   
   /** This method is used to get all cell elements in the specified range.
     * @param {string} Pass the range that you want to get the cells.
@@ -310,8 +310,8 @@ trait Spreadsheet
     * @param {any} Optional. Pass the range, property, sheetIdx, valueOnly in options
     * @returns {any[]}
     */
-  def getRangeData(): js.Array[js.Any] = js.native
-  def getRangeData(options: js.Any): js.Array[js.Any] = js.native
+  def getRangeData(): js.Array[Any] = js.native
+  def getRangeData(options: Any): js.Array[Any] = js.native
   
   /** This method is used to get the data as object in the specified range.
     * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
@@ -319,20 +319,20 @@ trait Spreadsheet
     * @param {boolean} Optional. Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows.
     * @returns {any}
     */
-  def getRangeDataAsObject(startcell: CellIndex, endcell: CellIndex): js.Any = js.native
-  def getRangeDataAsObject(startcell: CellIndex, endcell: CellIndex, skipHiddenRow: Boolean): js.Any = js.native
+  def getRangeDataAsObject(startcell: CellIndex, endcell: CellIndex): Any = js.native
+  def getRangeDataAsObject(startcell: CellIndex, endcell: CellIndex, skipHiddenRow: Boolean): Any = js.native
   
   /** This method is used to get the range indices array based on the specified alpha range in Spreadsheet.
     * @param {string} Pass the alpha range that you want to get range indices.
     * @returns {any[]}
     */
-  def getRangeIndices(range: String): js.Array[js.Any] = js.native
+  def getRangeIndices(range: String): js.Array[Any] = js.native
   
   /** This method is used to get the sheet details based on the given sheet index in Spreadsheet.
     * @param {number} Pass the sheet index to get the sheet object.
     * @returns {any}
     */
-  def getSheet(sheetIdx: Double): js.Any = js.native
+  def getSheet(sheetIdx: Double): Any = js.native
   
   /** This method is used to get the sheet content div element of Spreadsheet.
     * @param {number} Pass the sheet index to get the sheet content.
@@ -343,7 +343,7 @@ trait Spreadsheet
   /** This method is used to get all the sheets in workbook.
     * @returns {any[]}
     */
-  def getSheets(): js.Array[js.Any] = js.native
+  def getSheets(): js.Array[Any] = js.native
   
   /** This method is used to get the visible cell details in Spreadsheet.
     * @returns {void}
@@ -446,8 +446,8 @@ trait Spreadsheet
     */
   def lockCells(range: String): Unit = js.native
   def lockCells(range: String, isLocked: String): Unit = js.native
-  def lockCells(range: js.Array[js.Any]): Unit = js.native
-  def lockCells(range: js.Array[js.Any], isLocked: String): Unit = js.native
+  def lockCells(range: js.Array[Any]): Unit = js.native
+  def lockCells(range: js.Array[Any], isLocked: String): Unit = js.native
   
   /** This method is used to merge cells by across in the Spreadsheet.
     * @param {string} Optional. To pass the cell range or selected cells are process.
@@ -467,8 +467,8 @@ trait Spreadsheet
   def mergeCells(): Unit = js.native
   def mergeCells(range: String): Unit = js.native
   def mergeCells(range: String, alertStatus: Boolean): Unit = js.native
-  def mergeCells(range: js.Array[js.Any]): Unit = js.native
-  def mergeCells(range: js.Array[js.Any], alertStatus: Boolean): Unit = js.native
+  def mergeCells(range: js.Array[Any]): Unit = js.native
+  def mergeCells(range: js.Array[Any], alertStatus: Boolean): Unit = js.native
   def mergeCells(range: Unit, alertStatus: Boolean): Unit = js.native
   
   @JSName("model")
@@ -529,42 +529,30 @@ trait Spreadsheet
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: String): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: String, skipHiddenRow: Boolean): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: js.Array[js.Any]): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: js.Array[Any]): Unit = js.native
   def removeHyperlink(
     range: String,
     isClearHLink: Boolean,
     status: Boolean,
-    cells: js.Array[js.Any],
+    cells: js.Array[Any],
     skipHiddenRow: Boolean
   ): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Boolean, cells: Unit, skipHiddenRow: Boolean): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Unit, cells: String): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Unit, cells: String, skipHiddenRow: Boolean): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: Boolean, status: Unit, cells: js.Array[js.Any]): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: Boolean,
-    status: Unit,
-    cells: js.Array[js.Any],
-    skipHiddenRow: Boolean
-  ): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: Unit, cells: js.Array[Any]): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Boolean, status: Unit, cells: js.Array[Any], skipHiddenRow: Boolean): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Boolean, status: Unit, cells: Unit, skipHiddenRow: Boolean): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean, cells: String): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean, cells: String, skipHiddenRow: Boolean): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean, cells: js.Array[js.Any]): Unit = js.native
-  def removeHyperlink(
-    range: String,
-    isClearHLink: Unit,
-    status: Boolean,
-    cells: js.Array[js.Any],
-    skipHiddenRow: Boolean
-  ): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean, cells: js.Array[Any]): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean, cells: js.Array[Any], skipHiddenRow: Boolean): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Unit, status: Boolean, cells: Unit, skipHiddenRow: Boolean): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: String): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: String, skipHiddenRow: Boolean): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: js.Array[js.Any]): Unit = js.native
-  def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: js.Array[js.Any], skipHiddenRow: Boolean): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: js.Array[Any]): Unit = js.native
+  def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: js.Array[Any], skipHiddenRow: Boolean): Unit = js.native
   def removeHyperlink(range: String, isClearHLink: Unit, status: Unit, cells: Unit, skipHiddenRow: Boolean): Unit = js.native
   
   /** This method is used to remove the range data and its defined rangeSettings property based on the specified range name.
@@ -579,12 +567,12 @@ trait Spreadsheet
     */
   def removeReadOnly(): Unit = js.native
   def removeReadOnly(range: String): Unit = js.native
-  def removeReadOnly(range: js.Array[js.Any]): Unit = js.native
+  def removeReadOnly(range: js.Array[Any]): Unit = js.native
   
   /** This method is used to save JSON data in Spreadsheet.
     * @returns {any}
     */
-  def saveAsJSON(): js.Any = js.native
+  def saveAsJSON(): Any = js.native
   
   /** This method is used to save batch changes in Spreadsheet.
     * @param {number} Pass the sheet index for Spreadsheet.
@@ -614,12 +602,12 @@ trait Spreadsheet
   def setBorder(property: BorderOptions): Unit = js.native
   def setBorder(property: BorderOptions, range: String): Unit = js.native
   
-  def setHeightToRows(heightColl: js.Any): Unit = js.native
   /** This method is used to set the height for the rows in the Spreadsheet.
     * @param {any[]|any} Pass the row index and height of the rows.
     * @returns {void}
     */
-  def setHeightToRows(heightColl: js.Array[js.Any]): Unit = js.native
+  def setHeightToRows(heightColl: js.Array[Any]): Unit = js.native
+  def setHeightToRows(heightColl: Any): Unit = js.native
   
   /** This method is used to set the hyperlink in selected cells of the current sheet.
     * @param {string|any[]} If range is specified, it will set the hyperlink in range of the cells.
@@ -628,7 +616,7 @@ trait Spreadsheet
     * @returns {void}
     */
   def setHyperlink(range: String, link: LinkOptions, sheetIdx: Double): Unit = js.native
-  def setHyperlink(range: js.Array[js.Any], link: LinkOptions, sheetIdx: Double): Unit = js.native
+  def setHyperlink(range: js.Array[Any], link: LinkOptions, sheetIdx: Double): Unit = js.native
   
   /** This method is used to set the readonly option for the specified range.
     * @param {string|any[]} Pass the range.
@@ -636,22 +624,22 @@ trait Spreadsheet
     */
   def setReadOnly(): Unit = js.native
   def setReadOnly(range: String): Unit = js.native
-  def setReadOnly(range: js.Array[js.Any]): Unit = js.native
+  def setReadOnly(range: js.Array[Any]): Unit = js.native
   
   /** This method is used to set the focus to the Spreadsheet.
     * @returns {void}
     */
   def setSheetFocus(): Unit = js.native
   
-  def setWidthToColumns(widthColl: js.Any): Unit = js.native
-  def setWidthToColumns(widthColl: js.Any, sheetIndex: Double): Unit = js.native
   /** This method is used to set the width for the columns in the Spreadsheet.
     * @param {any[]|any} Pass the column index and width of the columns.
     * @param {number} Optional. If sheetIdx is specified, it will set the width for columns to the specified sheet else it will use active sheet.
     * @returns {void}
     */
-  def setWidthToColumns(widthColl: js.Array[js.Any]): Unit = js.native
-  def setWidthToColumns(widthColl: js.Array[js.Any], sheetIndex: Double): Unit = js.native
+  def setWidthToColumns(widthColl: js.Array[Any]): Unit = js.native
+  def setWidthToColumns(widthColl: js.Array[Any], sheetIndex: Double): Unit = js.native
+  def setWidthToColumns(widthColl: Any): Unit = js.native
+  def setWidthToColumns(widthColl: Any, sheetIndex: Double): Unit = js.native
   
   /** This method is used to rename the active sheet.
     * @param {string} Pass the sheet name that you want to change the current active sheet name.
@@ -713,7 +701,7 @@ trait Spreadsheet
     */
   def unWrapText(): Unit = js.native
   def unWrapText(range: String): Unit = js.native
-  def unWrapText(range: js.Array[js.Any]): Unit = js.native
+  def unWrapText(range: js.Array[Any]): Unit = js.native
   
   /** This method is used to perform the undo action in Spreadsheet.
     * @returns {void}
@@ -741,7 +729,7 @@ trait Spreadsheet
     */
   def updateData(data: DataOptions): Unit = js.native
   def updateData(data: DataOptions, range: String): Unit = js.native
-  def updateData(data: DataOptions, range: js.Array[js.Any]): Unit = js.native
+  def updateData(data: DataOptions, range: js.Array[Any]): Unit = js.native
   
   /** This method is used to update the formula bar in the Spreadsheet.
     * @returns {void}
@@ -770,8 +758,8 @@ trait Spreadsheet
   def updateUniqueData(data: DataOptions): Unit = js.native
   def updateUniqueData(data: DataOptions, range: String): Unit = js.native
   def updateUniqueData(data: DataOptions, range: String, skipCell: Boolean): Unit = js.native
-  def updateUniqueData(data: DataOptions, range: js.Array[js.Any]): Unit = js.native
-  def updateUniqueData(data: DataOptions, range: js.Array[js.Any], skipCell: Boolean): Unit = js.native
+  def updateUniqueData(data: DataOptions, range: js.Array[Any]): Unit = js.native
+  def updateUniqueData(data: DataOptions, range: js.Array[Any], skipCell: Boolean): Unit = js.native
   def updateUniqueData(data: DataOptions, range: Unit, skipCell: Boolean): Unit = js.native
   
   /** This method is used to wrap the selected range of cells in the Spreadsheet.
@@ -780,7 +768,7 @@ trait Spreadsheet
     */
   def wrapText(): Unit = js.native
   def wrapText(range: String): Unit = js.native
-  def wrapText(range: js.Array[js.Any]): Unit = js.native
+  def wrapText(range: js.Array[Any]): Unit = js.native
 }
 object Spreadsheet {
   
@@ -1267,11 +1255,11 @@ object Spreadsheet {
     
     /** Returns the applied style format object.
       */
-    var afterFormat: js.UndefOr[js.Any] = js.undefined
+    var afterFormat: js.UndefOr[Any] = js.undefined
     
     /** Returns the applied style format object.
       */
-    var beforeFormat: js.UndefOr[js.Any] = js.undefined
+    var beforeFormat: js.UndefOr[Any] = js.undefined
     
     /** Returns selected columns while sorting or filtering begins.
       */
@@ -1291,7 +1279,7 @@ object Spreadsheet {
     
     /** Returns the cell range.
       */
-    var range: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var range: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the action format.
       */
@@ -1314,11 +1302,11 @@ object Spreadsheet {
     
     extension [Self <: ActionBeginEventArgs](x: Self) {
       
-      inline def setAfterFormat(value: js.Any): Self = StObject.set(x, "afterFormat", value.asInstanceOf[js.Any])
+      inline def setAfterFormat(value: Any): Self = StObject.set(x, "afterFormat", value.asInstanceOf[js.Any])
       
       inline def setAfterFormatUndefined: Self = StObject.set(x, "afterFormat", js.undefined)
       
-      inline def setBeforeFormat(value: js.Any): Self = StObject.set(x, "beforeFormat", value.asInstanceOf[js.Any])
+      inline def setBeforeFormat(value: Any): Self = StObject.set(x, "beforeFormat", value.asInstanceOf[js.Any])
       
       inline def setBeforeFormatUndefined: Self = StObject.set(x, "beforeFormat", js.undefined)
       
@@ -1338,11 +1326,11 @@ object Spreadsheet {
       
       inline def setNewSheetUndefined: Self = StObject.set(x, "newSheet", js.undefined)
       
-      inline def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: js.Array[Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      inline def setRangeVarargs(value: js.Any*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: Any*): Self = StObject.set(x, "range", js.Array(value*))
       
       inline def setReqType(value: String): Self = StObject.set(x, "reqType", value.asInstanceOf[js.Any])
       
@@ -1374,7 +1362,7 @@ object Spreadsheet {
     
     /** Returns the applied cell format object.
       */
-    var selectedCell: js.UndefOr[js.Array[js.Any] | js.Any] = js.undefined
+    var selectedCell: js.UndefOr[js.Array[Any] | Any] = js.undefined
     
     /** Returns the sheet index.
       */
@@ -1405,11 +1393,11 @@ object Spreadsheet {
       
       inline def setReqTypeUndefined: Self = StObject.set(x, "reqType", js.undefined)
       
-      inline def setSelectedCell(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "selectedCell", value.asInstanceOf[js.Any])
+      inline def setSelectedCell(value: js.Array[Any] | Any): Self = StObject.set(x, "selectedCell", value.asInstanceOf[js.Any])
       
       inline def setSelectedCellUndefined: Self = StObject.set(x, "selectedCell", js.undefined)
       
-      inline def setSelectedCellVarargs(value: js.Any*): Self = StObject.set(x, "selectedCell", js.Array(value :_*))
+      inline def setSelectedCellVarargs(value: Any*): Self = StObject.set(x, "selectedCell", js.Array(value*))
       
       inline def setSheetIdx(value: Double): Self = StObject.set(x, "sheetIdx", value.asInstanceOf[js.Any])
       
@@ -1429,7 +1417,7 @@ object Spreadsheet {
     
     /** Returns auto fill begin cell range.
       */
-    var dataRange: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dataRange: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns which direction drag the auto fill.
       */
@@ -1437,7 +1425,7 @@ object Spreadsheet {
     
     /** Returns fill cells range.
       */
-    var fillRange: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var fillRange: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the auto fill type.
       */
@@ -1468,21 +1456,21 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDataRange(value: js.Array[js.Any]): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
+      inline def setDataRange(value: js.Array[Any]): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
       
       inline def setDataRangeUndefined: Self = StObject.set(x, "dataRange", js.undefined)
       
-      inline def setDataRangeVarargs(value: js.Any*): Self = StObject.set(x, "dataRange", js.Array(value :_*))
+      inline def setDataRangeVarargs(value: Any*): Self = StObject.set(x, "dataRange", js.Array(value*))
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      inline def setFillRange(value: js.Array[js.Any]): Self = StObject.set(x, "fillRange", value.asInstanceOf[js.Any])
+      inline def setFillRange(value: js.Array[Any]): Self = StObject.set(x, "fillRange", value.asInstanceOf[js.Any])
       
       inline def setFillRangeUndefined: Self = StObject.set(x, "fillRange", js.undefined)
       
-      inline def setFillRangeVarargs(value: js.Any*): Self = StObject.set(x, "fillRange", js.Array(value :_*))
+      inline def setFillRangeVarargs(value: Any*): Self = StObject.set(x, "fillRange", js.Array(value*))
       
       inline def setFillType(value: String): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
       
@@ -1510,7 +1498,7 @@ object Spreadsheet {
     
     /** Returns auto fill begin cell range.
       */
-    var dataRange: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dataRange: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns which direction to drag the auto fill.
       */
@@ -1518,7 +1506,7 @@ object Spreadsheet {
     
     /** Returns fill cells range.
       */
-    var fillRange: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var fillRange: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the auto fill type.
       */
@@ -1549,21 +1537,21 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDataRange(value: js.Array[js.Any]): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
+      inline def setDataRange(value: js.Array[Any]): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
       
       inline def setDataRangeUndefined: Self = StObject.set(x, "dataRange", js.undefined)
       
-      inline def setDataRangeVarargs(value: js.Any*): Self = StObject.set(x, "dataRange", js.Array(value :_*))
+      inline def setDataRangeVarargs(value: Any*): Self = StObject.set(x, "dataRange", js.Array(value*))
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      inline def setFillRange(value: js.Array[js.Any]): Self = StObject.set(x, "fillRange", value.asInstanceOf[js.Any])
+      inline def setFillRange(value: js.Array[Any]): Self = StObject.set(x, "fillRange", value.asInstanceOf[js.Any])
       
       inline def setFillRangeUndefined: Self = StObject.set(x, "fillRange", js.undefined)
       
-      inline def setFillRangeVarargs(value: js.Any*): Self = StObject.set(x, "fillRange", js.Array(value :_*))
+      inline def setFillRangeVarargs(value: Any*): Self = StObject.set(x, "fillRange", js.Array(value*))
       
       inline def setFillType(value: String): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
       
@@ -1700,11 +1688,11 @@ object Spreadsheet {
     
     /** Returns the changed record object.
       */
-    var batchChanges: js.UndefOr[js.Any] = js.undefined
+    var batchChanges: js.UndefOr[Any] = js.undefined
     
     /** Returns the query, primary key,batch changes for the data Source.
       */
-    var dataSetting: js.UndefOr[js.Any] = js.undefined
+    var dataSetting: js.UndefOr[Any] = js.undefined
     
     /** Returns the sheet index.
       */
@@ -1719,11 +1707,11 @@ object Spreadsheet {
     
     extension [Self <: BeforeBatchSaveEventArgs](x: Self) {
       
-      inline def setBatchChanges(value: js.Any): Self = StObject.set(x, "batchChanges", value.asInstanceOf[js.Any])
+      inline def setBatchChanges(value: Any): Self = StObject.set(x, "batchChanges", value.asInstanceOf[js.Any])
       
       inline def setBatchChangesUndefined: Self = StObject.set(x, "batchChanges", js.undefined)
       
-      inline def setDataSetting(value: js.Any): Self = StObject.set(x, "dataSetting", value.asInstanceOf[js.Any])
+      inline def setDataSetting(value: Any): Self = StObject.set(x, "dataSetting", value.asInstanceOf[js.Any])
       
       inline def setDataSettingUndefined: Self = StObject.set(x, "dataSetting", js.undefined)
       
@@ -1741,11 +1729,11 @@ object Spreadsheet {
     
     /** Returns the selected cells.
       */
-    var cells: js.UndefOr[js.Array[js.Any] | js.Any] = js.undefined
+    var cells: js.UndefOr[js.Array[Any] | Any] = js.undefined
     
     /** Returns the applied style format object.
       */
-    var format: js.UndefOr[js.Any] = js.undefined
+    var format: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -1772,13 +1760,13 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCells(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      inline def setCells(value: js.Array[Any] | Any): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
       inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
       
-      inline def setCellsVarargs(value: js.Any*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: Any*): Self = StObject.set(x, "cells", js.Array(value*))
       
-      inline def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -1804,7 +1792,7 @@ object Spreadsheet {
     
     /** Returns the current cell range.
       */
-    var currRange: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var currRange: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -1812,7 +1800,7 @@ object Spreadsheet {
     
     /** Returns the previous cell range.
       */
-    var prevRange: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var prevRange: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1831,21 +1819,21 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrRange(value: js.Array[js.Any]): Self = StObject.set(x, "currRange", value.asInstanceOf[js.Any])
+      inline def setCurrRange(value: js.Array[Any]): Self = StObject.set(x, "currRange", value.asInstanceOf[js.Any])
       
       inline def setCurrRangeUndefined: Self = StObject.set(x, "currRange", js.undefined)
       
-      inline def setCurrRangeVarargs(value: js.Any*): Self = StObject.set(x, "currRange", js.Array(value :_*))
+      inline def setCurrRangeVarargs(value: Any*): Self = StObject.set(x, "currRange", js.Array(value*))
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrevRange(value: js.Array[js.Any]): Self = StObject.set(x, "prevRange", value.asInstanceOf[js.Any])
+      inline def setPrevRange(value: js.Array[Any]): Self = StObject.set(x, "prevRange", value.asInstanceOf[js.Any])
       
       inline def setPrevRangeUndefined: Self = StObject.set(x, "prevRange", js.undefined)
       
-      inline def setPrevRangeVarargs(value: js.Any*): Self = StObject.set(x, "prevRange", js.Array(value :_*))
+      inline def setPrevRangeVarargs(value: Any*): Self = StObject.set(x, "prevRange", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -1861,11 +1849,11 @@ object Spreadsheet {
     
     /** Returns the current cell row and column index.
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the drag cells range object.
       */
-    var dragAndDropRange: js.UndefOr[js.Any] = js.undefined
+    var dragAndDropRange: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -1900,11 +1888,11 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setDragAndDropRange(value: js.Any): Self = StObject.set(x, "dragAndDropRange", value.asInstanceOf[js.Any])
+      inline def setDragAndDropRange(value: Any): Self = StObject.set(x, "dragAndDropRange", value.asInstanceOf[js.Any])
       
       inline def setDragAndDropRangeUndefined: Self = StObject.set(x, "dragAndDropRange", js.undefined)
       
@@ -1938,7 +1926,7 @@ object Spreadsheet {
     
     /** Returns the comment cell index.
       */
-    var cellIndex: js.UndefOr[js.Any] = js.undefined
+    var cellIndex: js.UndefOr[Any] = js.undefined
     
     /** Returns the disable option value.
       */
@@ -1946,7 +1934,7 @@ object Spreadsheet {
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the sheet index.
       */
@@ -1973,7 +1961,7 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCellIndex(value: js.Any): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
+      inline def setCellIndex(value: Any): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
@@ -1981,7 +1969,7 @@ object Spreadsheet {
       
       inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2048,7 +2036,7 @@ object Spreadsheet {
     
     /** Returns the activation panel element.
       */
-    var activationPanel: js.UndefOr[js.Any] = js.undefined
+    var activationPanel: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -2060,7 +2048,7 @@ object Spreadsheet {
     
     /** Returns the range option value.
       */
-    var range: js.UndefOr[js.Any] = js.undefined
+    var range: js.UndefOr[Any] = js.undefined
     
     /** Returns the sheet index.
       */
@@ -2079,7 +2067,7 @@ object Spreadsheet {
     
     extension [Self <: BeforePanelOpenEventArgs](x: Self) {
       
-      inline def setActivationPanel(value: js.Any): Self = StObject.set(x, "activationPanel", value.asInstanceOf[js.Any])
+      inline def setActivationPanel(value: Any): Self = StObject.set(x, "activationPanel", value.asInstanceOf[js.Any])
       
       inline def setActivationPanelUndefined: Self = StObject.set(x, "activationPanel", js.undefined)
       
@@ -2091,7 +2079,7 @@ object Spreadsheet {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRange(value: js.Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
@@ -2158,7 +2146,7 @@ object Spreadsheet {
     
     /** Pass the inputs to set the conditional formatting
       */
-    var inputs: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+    var inputs: js.UndefOr[js.Array[Any] | String] = js.undefined
     
     /** Pass the range to set the conditional formatting
       */
@@ -2185,11 +2173,11 @@ object Spreadsheet {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setInputs(value: js.Array[js.Any] | String): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: js.Array[Any] | String): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
       inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      inline def setInputsVarargs(value: js.Any*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: Any*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
@@ -2217,7 +2205,7 @@ object Spreadsheet {
     
     /** Returns the column information.
       */
-    var columnObject: js.UndefOr[js.Any] = js.undefined
+    var columnObject: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -2264,7 +2252,7 @@ object Spreadsheet {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setColumnObject(value: js.Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
+      inline def setColumnObject(value: Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
       
       inline def setColumnObjectUndefined: Self = StObject.set(x, "columnObject", js.undefined)
       
@@ -2306,7 +2294,7 @@ object Spreadsheet {
     
     /** Returns the column field information.
       */
-    var columnObject: js.UndefOr[js.Any] = js.undefined
+    var columnObject: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -2341,7 +2329,7 @@ object Spreadsheet {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setColumnObject(value: js.Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
+      inline def setColumnObject(value: Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
       
       inline def setColumnObjectUndefined: Self = StObject.set(x, "columnObject", js.undefined)
       
@@ -2367,7 +2355,7 @@ object Spreadsheet {
     
     /** Returns the applied style format object
       */
-    var Format: js.UndefOr[js.Any] = js.undefined
+    var Format: js.UndefOr[Any] = js.undefined
     
     /** Returns the sheet index
       */
@@ -2406,7 +2394,7 @@ object Spreadsheet {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setFormat(value: js.Any): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Any): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
       
@@ -2522,7 +2510,7 @@ object Spreadsheet {
     
     /** Returns the column field information.
       */
-    var columnObject: js.UndefOr[js.Any] = js.undefined
+    var columnObject: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -2573,7 +2561,7 @@ object Spreadsheet {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setColumnObject(value: js.Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
+      inline def setColumnObject(value: Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
       
       inline def setColumnObjectUndefined: Self = StObject.set(x, "columnObject", js.undefined)
       
@@ -2615,7 +2603,7 @@ object Spreadsheet {
     
     /** Returns the selected range.
       */
-    var selectedRange: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedRange: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the active sheet index.
       */
@@ -2646,11 +2634,11 @@ object Spreadsheet {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setSelectedRange(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRange", value.asInstanceOf[js.Any])
+      inline def setSelectedRange(value: js.Array[Any]): Self = StObject.set(x, "selectedRange", value.asInstanceOf[js.Any])
       
       inline def setSelectedRangeUndefined: Self = StObject.set(x, "selectedRange", js.undefined)
       
-      inline def setSelectedRangeVarargs(value: js.Any*): Self = StObject.set(x, "selectedRange", js.Array(value :_*))
+      inline def setSelectedRangeVarargs(value: Any*): Self = StObject.set(x, "selectedRange", js.Array(value*))
       
       inline def setSheetIdx(value: Double): Self = StObject.set(x, "sheetIdx", value.asInstanceOf[js.Any])
       
@@ -2682,7 +2670,7 @@ object Spreadsheet {
     
     /** Specifies the text and value of field in dropdown list.
       */
-    var field: js.UndefOr[js.Any] = js.undefined
+    var field: js.UndefOr[Any] = js.undefined
     
     /** Specifies the checkbox is set true or false of Custom Cell type.
       */
@@ -2721,7 +2709,7 @@ object Spreadsheet {
       
       inline def setDataSourceSheetIndexUndefined: Self = StObject.set(x, "dataSourceSheetIndex", js.undefined)
       
-      inline def setField(value: js.Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
       inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
@@ -2751,7 +2739,7 @@ object Spreadsheet {
     
     /** Pass the marker object to change type
       */
-    var marker: js.UndefOr[js.Any] = js.undefined
+    var marker: js.UndefOr[Any] = js.undefined
     
     /** Pass the chart type
       */
@@ -2770,7 +2758,7 @@ object Spreadsheet {
       
       inline def setEnable3DUndefined: Self = StObject.set(x, "enable3D", js.undefined)
       
-      inline def setMarker(value: js.Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
       inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
       
@@ -2856,11 +2844,11 @@ object Spreadsheet {
     
     /** Returns event information.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Returns target element and event information.
       */
-    var events: js.UndefOr[js.Any] = js.undefined
+    var events: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -2899,11 +2887,11 @@ object Spreadsheet {
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
@@ -2945,7 +2933,7 @@ object Spreadsheet {
     
     /** Pass the tabs object to add in ribbon
       */
-    var tabs: js.UndefOr[js.Any] = js.undefined
+    var tabs: js.UndefOr[Any] = js.undefined
   }
   object ContextualTabOptions {
     
@@ -2964,7 +2952,7 @@ object Spreadsheet {
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      inline def setTabs(value: js.Any): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: Any): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
     }
@@ -2974,11 +2962,11 @@ object Spreadsheet {
     
     /** Pass the number format object
       */
-    var NumFormat: js.UndefOr[js.Any] = js.undefined
+    var NumFormat: js.UndefOr[Any] = js.undefined
     
     /** Pass the style object
       */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object CustomStyleOptions {
     
@@ -2989,11 +2977,11 @@ object Spreadsheet {
     
     extension [Self <: CustomStyleOptions](x: Self) {
       
-      inline def setNumFormat(value: js.Any): Self = StObject.set(x, "NumFormat", value.asInstanceOf[js.Any])
+      inline def setNumFormat(value: Any): Self = StObject.set(x, "NumFormat", value.asInstanceOf[js.Any])
       
       inline def setNumFormatUndefined: Self = StObject.set(x, "NumFormat", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -3044,11 +3032,11 @@ object Spreadsheet {
     
     /** Returns the current cell row and column index.
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the drag cells range object.
       */
-    var dragAndDropRange: js.UndefOr[js.Any] = js.undefined
+    var dragAndDropRange: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -3079,11 +3067,11 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setDragAndDropRange(value: js.Any): Self = StObject.set(x, "dragAndDropRange", value.asInstanceOf[js.Any])
+      inline def setDragAndDropRange(value: Any): Self = StObject.set(x, "dragAndDropRange", value.asInstanceOf[js.Any])
       
       inline def setDragAndDropRangeUndefined: Self = StObject.set(x, "dragAndDropRange", js.undefined)
       
@@ -3113,7 +3101,7 @@ object Spreadsheet {
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the target element.
       */
@@ -3136,7 +3124,7 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3158,11 +3146,11 @@ object Spreadsheet {
     
     /** Returns the current cell row and column index.
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the drag cells range object.
       */
-    var dragAndDropRange: js.UndefOr[js.Any] = js.undefined
+    var dragAndDropRange: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -3193,11 +3181,11 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setDragAndDropRange(value: js.Any): Self = StObject.set(x, "dragAndDropRange", value.asInstanceOf[js.Any])
+      inline def setDragAndDropRange(value: Any): Self = StObject.set(x, "dragAndDropRange", value.asInstanceOf[js.Any])
       
       inline def setDragAndDropRangeUndefined: Self = StObject.set(x, "dragAndDropRange", js.undefined)
       
@@ -3227,11 +3215,11 @@ object Spreadsheet {
     
     /** Returns the current cell row and column index.
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the drag cells range object.
       */
-    var dragAndDropRange: js.UndefOr[js.Any] = js.undefined
+    var dragAndDropRange: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -3262,11 +3250,11 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setDragAndDropRange(value: js.Any): Self = StObject.set(x, "dragAndDropRange", value.asInstanceOf[js.Any])
+      inline def setDragAndDropRange(value: Any): Self = StObject.set(x, "dragAndDropRange", value.asInstanceOf[js.Any])
       
       inline def setDragAndDropRangeUndefined: Self = StObject.set(x, "dragAndDropRange", js.undefined)
       
@@ -3300,7 +3288,7 @@ object Spreadsheet {
     
     /** Returns the range option value.
       */
-    var range: js.UndefOr[js.Any] = js.undefined
+    var range: js.UndefOr[Any] = js.undefined
     
     /** Returns the sheet index.
       */
@@ -3327,7 +3315,7 @@ object Spreadsheet {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRange(value: js.Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
@@ -3353,7 +3341,7 @@ object Spreadsheet {
     
     /** Returns the range option value.
       */
-    var range: js.UndefOr[js.Any] = js.undefined
+    var range: js.UndefOr[Any] = js.undefined
     
     /** Returns the sheet index.
       */
@@ -3380,7 +3368,7 @@ object Spreadsheet {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRange(value: js.Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
@@ -3470,7 +3458,7 @@ object Spreadsheet {
     
     /** Pass the font family
       */
-    var fontFamily: js.UndefOr[js.Any] = js.undefined
+    var fontFamily: js.UndefOr[Any] = js.undefined
     
     /** Pass the font size
       */
@@ -3501,7 +3489,7 @@ object Spreadsheet {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setFontFamily(value: js.Any): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: Any): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
       inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
@@ -3535,7 +3523,7 @@ object Spreadsheet {
     
     /** Pass the style object in a cell
       */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     /** Pass the thousand separator in cell
       */
@@ -3562,7 +3550,7 @@ object Spreadsheet {
       
       inline def setFormatStrUndefined: Self = StObject.set(x, "formatStr", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -4045,7 +4033,7 @@ object Spreadsheet {
     
     /** Returns the event information.
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -4084,7 +4072,7 @@ object Spreadsheet {
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -4438,7 +4426,7 @@ object Spreadsheet {
     /** Gets or sets a value that indicates custom formulas in Spreadsheet.
       * @Default {[]}
       */
-    var customFormulas: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var customFormulas: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Triggered when the selected cells are being dragged.
       */
@@ -4867,11 +4855,11 @@ object Spreadsheet {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setCustomFormulas(value: js.Array[js.Any]): Self = StObject.set(x, "customFormulas", value.asInstanceOf[js.Any])
+      inline def setCustomFormulas(value: js.Array[Any]): Self = StObject.set(x, "customFormulas", value.asInstanceOf[js.Any])
       
       inline def setCustomFormulasUndefined: Self = StObject.set(x, "customFormulas", js.undefined)
       
-      inline def setCustomFormulasVarargs(value: js.Any*): Self = StObject.set(x, "customFormulas", js.Array(value :_*))
+      inline def setCustomFormulasVarargs(value: Any*): Self = StObject.set(x, "customFormulas", js.Array(value*))
       
       inline def setDrag(value: /* e */ DragEventArgs => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
       
@@ -4957,7 +4945,7 @@ object Spreadsheet {
       
       inline def setNameManagerUndefined: Self = StObject.set(x, "nameManager", js.undefined)
       
-      inline def setNameManagerVarargs(value: NameManager*): Self = StObject.set(x, "nameManager", js.Array(value :_*))
+      inline def setNameManagerVarargs(value: NameManager*): Self = StObject.set(x, "nameManager", js.Array(value*))
       
       inline def setOnImport(value: /* e */ OnImportEventArgs => Unit): Self = StObject.set(x, "onImport", js.Any.fromFunction1(value))
       
@@ -5023,7 +5011,7 @@ object Spreadsheet {
       
       inline def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
       
-      inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+      inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "sheets", js.Array(value*))
       
       inline def setShowPager(value: Boolean): Self = StObject.set(x, "showPager", value.asInstanceOf[js.Any])
       
@@ -5084,11 +5072,11 @@ object Spreadsheet {
     
     /** Pass the number format object
       */
-    var NumFormat: js.UndefOr[js.Any] = js.undefined
+    var NumFormat: js.UndefOr[Any] = js.undefined
     
     /** Pass the style object
       */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object NumberFormatOptions {
     
@@ -5099,11 +5087,11 @@ object Spreadsheet {
     
     extension [Self <: NumberFormatOptions](x: Self) {
       
-      inline def setNumFormat(value: js.Any): Self = StObject.set(x, "NumFormat", value.asInstanceOf[js.Any])
+      inline def setNumFormat(value: Any): Self = StObject.set(x, "NumFormat", value.asInstanceOf[js.Any])
       
       inline def setNumFormatUndefined: Self = StObject.set(x, "NumFormat", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -5117,7 +5105,7 @@ object Spreadsheet {
     
     /** Returns the imported data.
       */
-    var importData: js.UndefOr[js.Any] = js.undefined
+    var importData: js.UndefOr[Any] = js.undefined
     
     /** Returns the Spreadsheet model.
       */
@@ -5140,7 +5128,7 @@ object Spreadsheet {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setImportData(value: js.Any): Self = StObject.set(x, "importData", value.asInstanceOf[js.Any])
+      inline def setImportData(value: Any): Self = StObject.set(x, "importData", value.asInstanceOf[js.Any])
       
       inline def setImportDataUndefined: Self = StObject.set(x, "importData", js.undefined)
       
@@ -5328,19 +5316,19 @@ object Spreadsheet {
     
     /** Pass the column object to create pivot table
       */
-    var columns: js.UndefOr[js.Any] = js.undefined
+    var columns: js.UndefOr[Any] = js.undefined
     
     /** Pass the filter object to create pivot table
       */
-    var filter: js.UndefOr[js.Any] = js.undefined
+    var filter: js.UndefOr[Any] = js.undefined
     
     /** Pass the rows object to create pivot table
       */
-    var rows: js.UndefOr[js.Any] = js.undefined
+    var rows: js.UndefOr[Any] = js.undefined
     
     /** Pass the values to create pivot table
       */
-    var values: js.UndefOr[js.Any] = js.undefined
+    var values: js.UndefOr[Any] = js.undefined
   }
   object PivotOptions {
     
@@ -5351,19 +5339,19 @@ object Spreadsheet {
     
     extension [Self <: PivotOptions](x: Self) {
       
-      inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setRows(value: js.Any): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Any): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
@@ -5413,7 +5401,7 @@ object Spreadsheet {
     
     /** Pass the datasource object values as settings
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Pass the showheader condition as settings
       */
@@ -5432,7 +5420,7 @@ object Spreadsheet {
     
     extension [Self <: RangeOptions](x: Self) {
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -5458,7 +5446,7 @@ object Spreadsheet {
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns new height of the row or shape.
       */
@@ -5505,7 +5493,7 @@ object Spreadsheet {
       
       inline def setColIndexUndefined: Self = StObject.set(x, "colIndex", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -5551,7 +5539,7 @@ object Spreadsheet {
     
     /** Returns the Spreadsheet model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns type of the request.
       */
@@ -5582,7 +5570,7 @@ object Spreadsheet {
       
       inline def setColIndexUndefined: Self = StObject.set(x, "colIndex", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -5620,7 +5608,7 @@ object Spreadsheet {
     
     /** Returns target information.
       */
-    var prop: js.UndefOr[js.Any] = js.undefined
+    var prop: js.UndefOr[Any] = js.undefined
     
     /** Returns status.
       */
@@ -5659,7 +5647,7 @@ object Spreadsheet {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setProp(value: js.Any): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      inline def setProp(value: Any): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       
       inline def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
       
@@ -5733,7 +5721,7 @@ object Spreadsheet {
     /** Specifies the data source to append in application tab.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable isAppend property in ribbon settings.
       * @Default {false}
@@ -5749,11 +5737,11 @@ object Spreadsheet {
     
     extension [Self <: RibbonSettingsApplicationTabMenuSettings](x: Self) {
       
-      inline def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setIsAppend(value: Boolean): Self = StObject.set(x, "isAppend", value.asInstanceOf[js.Any])
       
@@ -5858,7 +5846,7 @@ object Spreadsheet {
     
     /** Returns the scrolling data
       */
-    var scrollData: js.UndefOr[js.Any] = js.undefined
+    var scrollData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -5889,7 +5877,7 @@ object Spreadsheet {
       
       inline def setReqTypeUndefined: Self = StObject.set(x, "reqType", js.undefined)
       
-      inline def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
+      inline def setScrollData(value: Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
       
       inline def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
       
@@ -5971,7 +5959,7 @@ object Spreadsheet {
     /** Specifies the cell types for a cell or range in Spreadsheet.
       * @Default {[]}
       */
-    var cellTypes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var cellTypes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates to define column count in the Spreadsheet.
       * @Default {21}
@@ -5986,7 +5974,7 @@ object Spreadsheet {
     /** Gets or sets the data to render the Spreadsheet.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable field as column header in the Spreadsheet.
       * @Default {false}
@@ -6006,22 +5994,22 @@ object Spreadsheet {
     /** Specifies the header styles for the headers in datasource range.
       * @Default {null}
       */
-    var headerStyles: js.UndefOr[js.Any] = js.undefined
+    var headerStyles: js.UndefOr[Any] = js.undefined
     
     /** To hide the specified columns in Spreadsheet.
       * @Default {[]}
       */
-    var hideColumns: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var hideColumns: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** To hide the specified rows in Spreadsheet.
       * @Default {[]}
       */
-    var hideRows: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var hideRows: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** To merge specified ranges in Spreadsheet.
       * @Default {[]}
       */
-    var mergeCells: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var mergeCells: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the primary key for the datasource in Spreadsheet.
       */
@@ -6030,7 +6018,7 @@ object Spreadsheet {
     /** Specifies the query for the dataSource in Spreadsheet.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Specifies single range or multiple range settings for a sheet in Spreadsheet.
       * @Default {[]}
@@ -6085,19 +6073,19 @@ object Spreadsheet {
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      inline def setBorderVarargs(value: SheetsBorder*): Self = StObject.set(x, "border", js.Array(value :_*))
+      inline def setBorderVarargs(value: SheetsBorder*): Self = StObject.set(x, "border", js.Array(value*))
       
       inline def setCFormatRule(value: js.Array[SheetsCFormatRule]): Self = StObject.set(x, "cFormatRule", value.asInstanceOf[js.Any])
       
       inline def setCFormatRuleUndefined: Self = StObject.set(x, "cFormatRule", js.undefined)
       
-      inline def setCFormatRuleVarargs(value: SheetsCFormatRule*): Self = StObject.set(x, "cFormatRule", js.Array(value :_*))
+      inline def setCFormatRuleVarargs(value: SheetsCFormatRule*): Self = StObject.set(x, "cFormatRule", js.Array(value*))
       
-      inline def setCellTypes(value: js.Array[js.Any]): Self = StObject.set(x, "cellTypes", value.asInstanceOf[js.Any])
+      inline def setCellTypes(value: js.Array[Any]): Self = StObject.set(x, "cellTypes", value.asInstanceOf[js.Any])
       
       inline def setCellTypesUndefined: Self = StObject.set(x, "cellTypes", js.undefined)
       
-      inline def setCellTypesVarargs(value: js.Any*): Self = StObject.set(x, "cellTypes", js.Array(value :_*))
+      inline def setCellTypesVarargs(value: Any*): Self = StObject.set(x, "cellTypes", js.Array(value*))
       
       inline def setColCount(value: Double): Self = StObject.set(x, "colCount", value.asInstanceOf[js.Any])
       
@@ -6107,7 +6095,7 @@ object Spreadsheet {
       
       inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -6123,33 +6111,33 @@ object Spreadsheet {
       
       inline def setFrozenRowsUndefined: Self = StObject.set(x, "frozenRows", js.undefined)
       
-      inline def setHeaderStyles(value: js.Any): Self = StObject.set(x, "headerStyles", value.asInstanceOf[js.Any])
+      inline def setHeaderStyles(value: Any): Self = StObject.set(x, "headerStyles", value.asInstanceOf[js.Any])
       
       inline def setHeaderStylesUndefined: Self = StObject.set(x, "headerStyles", js.undefined)
       
-      inline def setHideColumns(value: js.Array[js.Any]): Self = StObject.set(x, "hideColumns", value.asInstanceOf[js.Any])
+      inline def setHideColumns(value: js.Array[Any]): Self = StObject.set(x, "hideColumns", value.asInstanceOf[js.Any])
       
       inline def setHideColumnsUndefined: Self = StObject.set(x, "hideColumns", js.undefined)
       
-      inline def setHideColumnsVarargs(value: js.Any*): Self = StObject.set(x, "hideColumns", js.Array(value :_*))
+      inline def setHideColumnsVarargs(value: Any*): Self = StObject.set(x, "hideColumns", js.Array(value*))
       
-      inline def setHideRows(value: js.Array[js.Any]): Self = StObject.set(x, "hideRows", value.asInstanceOf[js.Any])
+      inline def setHideRows(value: js.Array[Any]): Self = StObject.set(x, "hideRows", value.asInstanceOf[js.Any])
       
       inline def setHideRowsUndefined: Self = StObject.set(x, "hideRows", js.undefined)
       
-      inline def setHideRowsVarargs(value: js.Any*): Self = StObject.set(x, "hideRows", js.Array(value :_*))
+      inline def setHideRowsVarargs(value: Any*): Self = StObject.set(x, "hideRows", js.Array(value*))
       
-      inline def setMergeCells(value: js.Array[js.Any]): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
+      inline def setMergeCells(value: js.Array[Any]): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
       
       inline def setMergeCellsUndefined: Self = StObject.set(x, "mergeCells", js.undefined)
       
-      inline def setMergeCellsVarargs(value: js.Any*): Self = StObject.set(x, "mergeCells", js.Array(value :_*))
+      inline def setMergeCellsVarargs(value: Any*): Self = StObject.set(x, "mergeCells", js.Array(value*))
       
       inline def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
       inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -6157,7 +6145,7 @@ object Spreadsheet {
       
       inline def setRangeSettingsUndefined: Self = StObject.set(x, "rangeSettings", js.undefined)
       
-      inline def setRangeSettingsVarargs(value: SheetsRangeSetting*): Self = StObject.set(x, "rangeSettings", js.Array(value :_*))
+      inline def setRangeSettingsVarargs(value: SheetsRangeSetting*): Self = StObject.set(x, "rangeSettings", js.Array(value*))
       
       inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
@@ -6167,7 +6155,7 @@ object Spreadsheet {
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setRowsVarargs(value: SheetsRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: SheetsRow*): Self = StObject.set(x, "rows", js.Array(value*))
       
       inline def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
       
@@ -6241,7 +6229,7 @@ object Spreadsheet {
     /** Specifies the inputs for conditional formatting in Spreadsheet.
       * @Default {[]}
       */
-    var inputs: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var inputs: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the range for conditional formatting in Spreadsheet.
       */
@@ -6264,11 +6252,11 @@ object Spreadsheet {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setInputs(value: js.Array[js.Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: js.Array[Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
       inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      inline def setInputsVarargs(value: js.Any*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: Any*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
@@ -6281,12 +6269,12 @@ object Spreadsheet {
     /** Gets or sets the data to render the Spreadsheet.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Specifies the header styles for the headers in datasource range.
       * @Default {null}
       */
-    var headerStyles: js.UndefOr[js.Any] = js.undefined
+    var headerStyles: js.UndefOr[Any] = js.undefined
     
     /** Specifies the primary key for the datasource in Spreadsheet.
       */
@@ -6295,7 +6283,7 @@ object Spreadsheet {
     /** Specifies the query for the datasource in Spreadsheet.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the datasource header in Spreadsheet.
       * @Default {true}
@@ -6316,11 +6304,11 @@ object Spreadsheet {
     
     extension [Self <: SheetsRangeSetting](x: Self) {
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setHeaderStyles(value: js.Any): Self = StObject.set(x, "headerStyles", value.asInstanceOf[js.Any])
+      inline def setHeaderStyles(value: Any): Self = StObject.set(x, "headerStyles", value.asInstanceOf[js.Any])
       
       inline def setHeaderStylesUndefined: Self = StObject.set(x, "headerStyles", js.undefined)
       
@@ -6328,7 +6316,7 @@ object Spreadsheet {
       
       inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -6372,7 +6360,7 @@ object Spreadsheet {
       
       inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
       
-      inline def setCellsVarargs(value: SheetsRowsCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: SheetsRowsCell*): Self = StObject.set(x, "cells", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -6619,7 +6607,7 @@ object Spreadsheet {
     
     /** Pass the marker settings object to create sparkline
       */
-    var markerSettings: js.UndefOr[js.Any] = js.undefined
+    var markerSettings: js.UndefOr[Any] = js.undefined
     
     /** Pass the negative point color to create sparkline
       */
@@ -6642,7 +6630,7 @@ object Spreadsheet {
       
       inline def setHighPointColorUndefined: Self = StObject.set(x, "highPointColor", js.undefined)
       
-      inline def setMarkerSettings(value: js.Any): Self = StObject.set(x, "markerSettings", value.asInstanceOf[js.Any])
+      inline def setMarkerSettings(value: Any): Self = StObject.set(x, "markerSettings", value.asInstanceOf[js.Any])
       
       inline def setMarkerSettingsUndefined: Self = StObject.set(x, "markerSettings", js.undefined)
       
@@ -6660,7 +6648,7 @@ object Spreadsheet {
     
     /** Returns active tab header element.
       */
-    var activeHeader: js.UndefOr[js.Any] = js.undefined
+    var activeHeader: js.UndefOr[Any] = js.undefined
     
     /** Returns the active tab index.
       */
@@ -6676,7 +6664,7 @@ object Spreadsheet {
     
     /** Returns previous active tab header element.
       */
-    var prevActiveHeader: js.UndefOr[js.Any] = js.undefined
+    var prevActiveHeader: js.UndefOr[Any] = js.undefined
     
     /** Returns previous active tab index.
       */
@@ -6699,7 +6687,7 @@ object Spreadsheet {
     
     extension [Self <: TabClickEventArgs](x: Self) {
       
-      inline def setActiveHeader(value: js.Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
+      inline def setActiveHeader(value: Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
       inline def setActiveHeaderUndefined: Self = StObject.set(x, "activeHeader", js.undefined)
       
@@ -6715,7 +6703,7 @@ object Spreadsheet {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrevActiveHeader(value: js.Any): Self = StObject.set(x, "prevActiveHeader", value.asInstanceOf[js.Any])
+      inline def setPrevActiveHeader(value: Any): Self = StObject.set(x, "prevActiveHeader", value.asInstanceOf[js.Any])
       
       inline def setPrevActiveHeaderUndefined: Self = StObject.set(x, "prevActiveHeader", js.undefined)
       
@@ -6741,11 +6729,11 @@ object Spreadsheet {
     
     /** Pass the content object to be displayed in ribbon tab
       */
-    var contents: js.UndefOr[js.Any] = js.undefined
+    var contents: js.UndefOr[Any] = js.undefined
     
     /** Pass the defaults object to be displayed in ribbon tab
       */
-    var defaults: js.UndefOr[js.Any] = js.undefined
+    var defaults: js.UndefOr[Any] = js.undefined
     
     /** Pass the text to displayed in ribbon tab
       */
@@ -6764,11 +6752,11 @@ object Spreadsheet {
       
       inline def setAlignTypeUndefined: Self = StObject.set(x, "alignType", js.undefined)
       
-      inline def setContents(value: js.Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       
-      inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
       inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
@@ -6782,7 +6770,7 @@ object Spreadsheet {
     
     /** Returns active tab header element.
       */
-    var activeHeader: js.UndefOr[js.Any] = js.undefined
+    var activeHeader: js.UndefOr[Any] = js.undefined
     
     /** Returns the active tab index.
       */
@@ -6798,7 +6786,7 @@ object Spreadsheet {
     
     /** Returns previous active tab header element.
       */
-    var prevActiveHeader: js.UndefOr[js.Any] = js.undefined
+    var prevActiveHeader: js.UndefOr[Any] = js.undefined
     
     /** Returns previous active tab index.
       */
@@ -6821,7 +6809,7 @@ object Spreadsheet {
     
     extension [Self <: TabSelectEventArgs](x: Self) {
       
-      inline def setActiveHeader(value: js.Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
+      inline def setActiveHeader(value: Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
       inline def setActiveHeaderUndefined: Self = StObject.set(x, "activeHeader", js.undefined)
       
@@ -6837,7 +6825,7 @@ object Spreadsheet {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrevActiveHeader(value: js.Any): Self = StObject.set(x, "prevActiveHeader", value.asInstanceOf[js.Any])
+      inline def setPrevActiveHeader(value: Any): Self = StObject.set(x, "prevActiveHeader", value.asInstanceOf[js.Any])
       
       inline def setPrevActiveHeaderUndefined: Self = StObject.set(x, "prevActiveHeader", js.undefined)
       
@@ -6966,14 +6954,14 @@ object Spreadsheet {
       * @param {any[]|string} Optional. If range is specified, it will clear rules for the specified range else it will use the current selected range.
       * @returns {void}
       */
-    def clearCF(range: js.Array[js.Any]): Unit = js.native
+    def clearCF(range: js.Array[Any]): Unit = js.native
     
     /** This method is used to get the applied conditional formatting rules as array of objects based on the specified row Index and column Index in the Spreadsheet.
       * @param {number} Pass the row index.
       * @param {number} Pass the column index.
       * @returns {any[]}
       */
-    def getCFRule(rowIdx: Double, colIdx: Double): js.Array[js.Any] = js.native
+    def getCFRule(rowIdx: Double, colIdx: Double): js.Array[Any] = js.native
     
     /** This method is used to set the conditional formatting rule in the Spreadsheet.
       * @param {Spreadsheet.CFormatOptions} Pass the Object "CFormatOptions"
@@ -6991,60 +6979,60 @@ object Spreadsheet {
       * @param {number} Specifies the item index
       * @returns {void}
       */
-    def addItem(target: ContextMenuType, itemColl: js.Array[js.Any], operation: String, itemIdx: Double): Unit
+    def addItem(target: ContextMenuType, itemColl: js.Array[Any], operation: String, itemIdx: Double): Unit
     
     /** This method is used to change data source in the context menu.
       * @param {string} Specifies the context menu type to bind the data source.
       * @param {any[]} Pass the data source to be binded
       * @returns {void}
       */
-    def changeDataSource(target: String, data: js.Array[js.Any]): Unit
+    def changeDataSource(target: String, data: js.Array[Any]): Unit
     
     /** This method is used to disable the items in the context menu.
       * @param {string} Specifies the context menu type in which the item to be disabled.
       * @param {any[]} Specifies the Menu Item id collection to be disabled
       * @returns {void}
       */
-    def disableItem(target: String, idxColl: js.Array[js.Any]): Unit
+    def disableItem(target: String, idxColl: js.Array[Any]): Unit
     
     /** This method is used to enable the items in the context menu.
       * @param {string} Specifies the context menu type in which the item to be enabled.
       * @param {any[]} Specifies the Menu Item id collection to be enabled
       * @returns {void}
       */
-    def enableItem(target: String, idxColl: js.Array[js.Any]): Unit
+    def enableItem(target: String, idxColl: js.Array[Any]): Unit
     
     /** This method is used to hide the items in the context menu.
       * @param {string} Specifies the context menu type in which the item to be hides.
       * @param {any[]} Specifies the Menu Item id collection to be hides
       * @returns {void}
       */
-    def hideItem(cMenuType: String, idxColl: js.Array[js.Any]): Unit
+    def hideItem(cMenuType: String, idxColl: js.Array[Any]): Unit
     
     /** This method is used to remove the items in the context menu.
       * @param {string} Specifies the context menu type in which the item to be removed.
       * @param {any[]} Specifies the Menu Item id collection to be removed
       * @returns {void}
       */
-    def removeItem(target: String, idxColl: js.Array[js.Any]): Unit
+    def removeItem(target: String, idxColl: js.Array[Any]): Unit
     
     /** This method is used to show the items in the context menu.
       * @param {string} Specifies the context menu type in which the item to be shown.
       * @param {any[]} Specifies the Menu Item id collection to be shown
       * @returns {void}
       */
-    def showItem(cMenuType: String, idxColl: js.Array[js.Any]): Unit
+    def showItem(cMenuType: String, idxColl: js.Array[Any]): Unit
   }
   object XLCMenu {
     
     inline def apply(
-      addItem: (ContextMenuType, js.Array[js.Any], String, Double) => Unit,
-      changeDataSource: (String, js.Array[js.Any]) => Unit,
-      disableItem: (String, js.Array[js.Any]) => Unit,
-      enableItem: (String, js.Array[js.Any]) => Unit,
-      hideItem: (String, js.Array[js.Any]) => Unit,
-      removeItem: (String, js.Array[js.Any]) => Unit,
-      showItem: (String, js.Array[js.Any]) => Unit
+      addItem: (ContextMenuType, js.Array[Any], String, Double) => Unit,
+      changeDataSource: (String, js.Array[Any]) => Unit,
+      disableItem: (String, js.Array[Any]) => Unit,
+      enableItem: (String, js.Array[Any]) => Unit,
+      hideItem: (String, js.Array[Any]) => Unit,
+      removeItem: (String, js.Array[Any]) => Unit,
+      showItem: (String, js.Array[Any]) => Unit
     ): XLCMenu = {
       val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction4(addItem), changeDataSource = js.Any.fromFunction2(changeDataSource), disableItem = js.Any.fromFunction2(disableItem), enableItem = js.Any.fromFunction2(enableItem), hideItem = js.Any.fromFunction2(hideItem), removeItem = js.Any.fromFunction2(removeItem), showItem = js.Any.fromFunction2(showItem))
       __obj.asInstanceOf[XLCMenu]
@@ -7052,19 +7040,19 @@ object Spreadsheet {
     
     extension [Self <: XLCMenu](x: Self) {
       
-      inline def setAddItem(value: (ContextMenuType, js.Array[js.Any], String, Double) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction4(value))
+      inline def setAddItem(value: (ContextMenuType, js.Array[Any], String, Double) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction4(value))
       
-      inline def setChangeDataSource(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "changeDataSource", js.Any.fromFunction2(value))
+      inline def setChangeDataSource(value: (String, js.Array[Any]) => Unit): Self = StObject.set(x, "changeDataSource", js.Any.fromFunction2(value))
       
-      inline def setDisableItem(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "disableItem", js.Any.fromFunction2(value))
+      inline def setDisableItem(value: (String, js.Array[Any]) => Unit): Self = StObject.set(x, "disableItem", js.Any.fromFunction2(value))
       
-      inline def setEnableItem(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "enableItem", js.Any.fromFunction2(value))
+      inline def setEnableItem(value: (String, js.Array[Any]) => Unit): Self = StObject.set(x, "enableItem", js.Any.fromFunction2(value))
       
-      inline def setHideItem(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "hideItem", js.Any.fromFunction2(value))
+      inline def setHideItem(value: (String, js.Array[Any]) => Unit): Self = StObject.set(x, "hideItem", js.Any.fromFunction2(value))
       
-      inline def setRemoveItem(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction2(value))
+      inline def setRemoveItem(value: (String, js.Array[Any]) => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction2(value))
       
-      inline def setShowItem(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "showItem", js.Any.fromFunction2(value))
+      inline def setShowItem(value: (String, js.Array[Any]) => Unit): Self = StObject.set(x, "showItem", js.Any.fromFunction2(value))
     }
   }
   
@@ -7085,7 +7073,7 @@ object Spreadsheet {
       * @returns {void}
       */
     def removeCellTypes(range: String, sheetIdx: Double): Unit = js.native
-    def removeCellTypes(range: js.Array[js.Any], sheetIdx: Double): Unit = js.native
+    def removeCellTypes(range: js.Array[Any], sheetIdx: Double): Unit = js.native
   }
   
   @js.native
@@ -7120,7 +7108,7 @@ object Spreadsheet {
       * @returns {void}
       */
     def createChart(range: String, options: ChartOptions): Unit = js.native
-    def createChart(range: js.Array[js.Any], options: ChartOptions): Unit = js.native
+    def createChart(range: js.Array[Any], options: ChartOptions): Unit = js.native
     
     /** This method is used to refresh the chart in the Spreadsheet.
       * @param {string} To pass the chart Id.
@@ -7195,7 +7183,7 @@ object Spreadsheet {
       * @param {boolean} Optional. Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows data.
       * @returns {void}
       */
-    def deleteComment(range: js.Array[js.Any], sheetIdx: Double, skipHiddenRow: Boolean): Unit = js.native
+    def deleteComment(range: js.Array[Any], sheetIdx: Double, skipHiddenRow: Boolean): Unit = js.native
     
     /** This method is used to edit the comment in the target Cell in Spreadsheet.
       * @param {Spreadsheet.CellIndex} Optional.
@@ -7217,7 +7205,7 @@ object Spreadsheet {
       * @param {HTMLElement} Pass the DOM element to get comment data as object.
       * @returns {any}
       */
-    def getComment(cell: HTMLElement): js.Any = js.native
+    def getComment(cell: HTMLElement): Any = js.native
     
     /** This method is used to set new comment in Spreadsheet.
       * @param {string|any[]} Optional. If we pass the range comment will set in the range otherwise it will set with selected cells.
@@ -7227,7 +7215,7 @@ object Spreadsheet {
       * @returns {void}
       */
     def setComment(range: String, data: String, showEditPanel: Boolean, showUserName: Boolean): Unit = js.native
-    def setComment(range: js.Array[js.Any], data: String, showEditPanel: Boolean, showUserName: Boolean): Unit = js.native
+    def setComment(range: js.Array[Any], data: String, showEditPanel: Boolean, showUserName: Boolean): Unit = js.native
     
     /** This method is used to show all the comments in the Spreadsheet.
       * @returns {void}
@@ -7244,15 +7232,15 @@ object Spreadsheet {
   @js.native
   trait XLDragDrop extends StObject {
     
+    def moveRangeTo(sourceRange: js.Array[Any], destinationRange: js.Array[Any]): Unit = js.native
+    def moveRangeTo(sourceRange: js.Array[Any], destinationRange: Any): Unit = js.native
+    def moveRangeTo(sourceRange: Any, destinationRange: js.Array[Any]): Unit = js.native
     /** This method is used to drag and drop the selected range of cells to destination range in the Spreadsheet.
       * @param {any|any[]} Pass the source range to perform drag and drop.
       * @param {any|any[]} Pass the destination range to drop the dragged cells.
       * @returns {void}
       */
-    def moveRangeTo(sourceRange: js.Any, destinationRange: js.Any): Unit = js.native
-    def moveRangeTo(sourceRange: js.Any, destinationRange: js.Array[js.Any]): Unit = js.native
-    def moveRangeTo(sourceRange: js.Array[js.Any], destinationRange: js.Any): Unit = js.native
-    def moveRangeTo(sourceRange: js.Array[js.Any], destinationRange: js.Array[js.Any]): Unit = js.native
+    def moveRangeTo(sourceRange: Any, destinationRange: Any): Unit = js.native
   }
   
   trait XLDragFill extends StObject {
@@ -7335,7 +7323,7 @@ object Spreadsheet {
       * @param {number} Optional. Pass the index of the sheet.
       * @returns {any|string|any[]}
       */
-    def getPropertyValue(rowIdx: Double, colIdx: Double, prop: String, sheetIdx: Double): js.Any | String | js.Array[js.Any] = js.native
+    def getPropertyValue(rowIdx: Double, colIdx: Double, prop: String, sheetIdx: Double): Any | String | js.Array[Any] = js.native
     
     /** This method is used to get the property value in specified cell in Spreadsheet.
       * @param {HTMLElement} Pass the cell element to get property value.
@@ -7345,7 +7333,7 @@ object Spreadsheet {
       * @param {number} Pass the index of sheet.
       * @returns {any|string|any[]}
       */
-    def getPropertyValueByElem(elem: HTMLElement, property: String, sheetIdx: Double): js.Any | String | js.Array[js.Any] = js.native
+    def getPropertyValueByElem(elem: HTMLElement, property: String, sheetIdx: Double): Any | String | js.Array[Any] = js.native
     
     /** This method is used to save the edited cell value in the Spreadsheet.
       * @returns {void}
@@ -7393,11 +7381,11 @@ object Spreadsheet {
     /** This method is used to get the export properties in the Spreadsheet.
       * @returns {any}
       */
-    def getExportProps(): js.Any
+    def getExportProps(): Any
   }
   object XLExport {
     
-    inline def apply(`export`: (String, ExportType) => Unit, getExportProps: () => js.Any): XLExport = {
+    inline def apply(`export`: (String, ExportType) => Unit, getExportProps: () => Any): XLExport = {
       val __obj = js.Dynamic.literal(getExportProps = js.Any.fromFunction0(getExportProps))
       __obj.updateDynamic("export")(js.Any.fromFunction2(`export`))
       __obj.asInstanceOf[XLExport]
@@ -7407,7 +7395,7 @@ object Spreadsheet {
       
       inline def setExport(value: (String, ExportType) => Unit): Self = StObject.set(x, "export", js.Any.fromFunction2(value))
       
-      inline def setGetExportProps(value: () => js.Any): Self = StObject.set(x, "getExportProps", js.Any.fromFunction0(value))
+      inline def setGetExportProps(value: () => Any): Self = StObject.set(x, "getExportProps", js.Any.fromFunction0(value))
     }
   }
   
@@ -7424,7 +7412,7 @@ object Spreadsheet {
       * @returns {void}
       */
     def filter(range: String): Unit = js.native
-    def filter(range: js.Array[js.Any]): Unit = js.native
+    def filter(range: js.Array[Any]): Unit = js.native
     
     /** This method is used to apply filter for the column by active cell's value in the Spreadsheet.
       * @returns {void}
@@ -7475,7 +7463,7 @@ object Spreadsheet {
       * @returns {string}
       */
     def createTable(tableObject: TableOptions, range: String): String = js.native
-    def createTable(tableObject: TableOptions, range: js.Array[js.Any]): String = js.native
+    def createTable(tableObject: TableOptions, range: js.Array[Any]): String = js.native
     
     /** This method is used to delete the added custom cell style in spreadsheet.
       * @param {string} Pass the cell style name
@@ -7495,7 +7483,7 @@ object Spreadsheet {
       * @param {boolean} Optional. pass `true` to get the complete border object
       * @returns {any}
       */
-    def getBorderFromHashCode(code: String, isComplete: Boolean): js.Any = js.native
+    def getBorderFromHashCode(code: String, isComplete: Boolean): Any = js.native
     
     /** This method is used to get the format class in spreadsheet.
       * @param {string} Pass the style name.
@@ -7542,7 +7530,7 @@ object Spreadsheet {
       * @param {Spreadsheet.FormatOptions} Optional.
       * @returns {void}
       */
-    def removeStyle(range: js.Array[js.Any], options: FormatOptions): Unit = js.native
+    def removeStyle(range: js.Array[Any], options: FormatOptions): Unit = js.native
     
     /** This method is used to remove table with specified tableId in the Spreadsheet.
       * @param {number} Pass the tableId that you want to remove.
@@ -7556,21 +7544,21 @@ object Spreadsheet {
       * @returns {void}
       */
     def updateDecimalPlaces(`type`: String, range: String): Unit = js.native
-    def updateDecimalPlaces(`type`: String, range: js.Array[js.Any]): Unit = js.native
+    def updateDecimalPlaces(`type`: String, range: js.Array[Any]): Unit = js.native
     
     /** This method is used to update the format for the selected range of cells in the Spreadsheet.
       * @param {Spreadsheet.BorderOptions} Pass Object BorderOptions.
       * @param {any[]} Optional. If the range is specified, then it will update format in the specified range else it will use the current selected range.
       * @returns {void}
       */
-    def updateFormat(formatObj: BorderOptions, range: js.Array[js.Any]): Unit = js.native
+    def updateFormat(formatObj: BorderOptions, range: js.Array[Any]): Unit = js.native
     
     /** This method is used to update the unique format for selected range of cells in the Spreadsheet.
       * @param {string} Pass the unique format class.
       * @param {any[]} Optional. If the range is specified, then it will update format in the specified range else it will use the current selected range.
       * @returns {void}
       */
-    def updateUniqueFormat(formatClass: String, range: js.Array[js.Any]): Unit = js.native
+    def updateUniqueFormat(formatClass: String, range: js.Array[Any]): Unit = js.native
   }
   
   trait XLFreeze extends StObject {
@@ -7655,7 +7643,7 @@ object Spreadsheet {
       * @param {any} Pass the pivot range, sheet index, address and data source .
       * @returns {string}
       */
-    def createPivotTable(range: String, location: String, name: String, settings: PivotOptions, pvt: js.Any): String
+    def createPivotTable(range: String, location: String, name: String, settings: PivotOptions, pvt: Any): String
     
     /** This method is used to delete the pivot table which is selected.
       * @param {string} Pass the name of the pivot table.
@@ -7674,7 +7662,7 @@ object Spreadsheet {
     
     inline def apply(
       clearPivotFieldList: String => Unit,
-      createPivotTable: (String, String, String, PivotOptions, js.Any) => String,
+      createPivotTable: (String, String, String, PivotOptions, Any) => String,
       deletePivotTable: String => Unit,
       refreshDataSource: (String, Double) => Unit
     ): XLPivot = {
@@ -7686,7 +7674,7 @@ object Spreadsheet {
       
       inline def setClearPivotFieldList(value: String => Unit): Self = StObject.set(x, "clearPivotFieldList", js.Any.fromFunction1(value))
       
-      inline def setCreatePivotTable(value: (String, String, String, PivotOptions, js.Any) => String): Self = StObject.set(x, "createPivotTable", js.Any.fromFunction5(value))
+      inline def setCreatePivotTable(value: (String, String, String, PivotOptions, Any) => String): Self = StObject.set(x, "createPivotTable", js.Any.fromFunction5(value))
       
       inline def setDeletePivotTable(value: String => Unit): Self = StObject.set(x, "deletePivotTable", js.Any.fromFunction1(value))
       
@@ -7727,13 +7715,13 @@ object Spreadsheet {
       * @param {any[]} Optional. Pass row index collection that you want to fit its height.
       * @returns {void}
       */
-    def fitHeight(rowIndexes: js.Array[js.Any]): Unit
+    def fitHeight(rowIndexes: js.Array[Any]): Unit
     
     /** This method is used to fit the width of columns in the Spreadsheet.
       * @param {any[]} Optional. Pass column index collection that you want to fit its width.
       * @returns {void}
       */
-    def fitWidth(colIndexes: js.Array[js.Any]): Unit
+    def fitWidth(colIndexes: js.Array[Any]): Unit
     
     /** This method is used to get the column width of the specified column index in the Spreadsheet.
       * @param {number} Pass the column index.
@@ -7764,8 +7752,8 @@ object Spreadsheet {
   object XLResize {
     
     inline def apply(
-      fitHeight: js.Array[js.Any] => Unit,
-      fitWidth: js.Array[js.Any] => Unit,
+      fitHeight: js.Array[Any] => Unit,
+      fitWidth: js.Array[Any] => Unit,
       getColWidth: Double => Double,
       getRowHeight: Double => Double,
       setColWidth: (Double, Double) => Unit,
@@ -7777,9 +7765,9 @@ object Spreadsheet {
     
     extension [Self <: XLResize](x: Self) {
       
-      inline def setFitHeight(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "fitHeight", js.Any.fromFunction1(value))
+      inline def setFitHeight(value: js.Array[Any] => Unit): Self = StObject.set(x, "fitHeight", js.Any.fromFunction1(value))
       
-      inline def setFitWidth(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "fitWidth", js.Any.fromFunction1(value))
+      inline def setFitWidth(value: js.Array[Any] => Unit): Self = StObject.set(x, "fitWidth", js.Any.fromFunction1(value))
       
       inline def setGetColWidth(value: Double => Double): Self = StObject.set(x, "getColWidth", js.Any.fromFunction1(value))
       
@@ -7813,7 +7801,7 @@ object Spreadsheet {
       * @param {number} pass the index of the menu item.
       * @returns {void}
       */
-    def addMenuItem(item: js.Array[js.Any], index: Double): Unit = js.native
+    def addMenuItem(item: js.Array[Any], index: Double): Unit = js.native
     
     /** This method is used to add a new name in the Spreadsheet name manager.
       * @param {string} Pass the name that you want to define in name manager.
@@ -7831,7 +7819,7 @@ object Spreadsheet {
       * @param {number} pass the index of the tab.
       * @returns {void}
       */
-    def addTab(tabText: String, ribbonGroups: js.Array[js.Any], index: Double): Unit = js.native
+    def addTab(tabText: String, ribbonGroups: js.Array[Any], index: Double): Unit = js.native
     
     /** This method is used to dynamically add the tab group in the ribbon.
       * @param {number} Specifies the ribbon tab index.
@@ -7847,7 +7835,7 @@ object Spreadsheet {
       * @returns {void}
       */
     def autoSum(`type`: String, range: String): Unit = js.native
-    def autoSum(`type`: String, range: js.Array[js.Any]): Unit = js.native
+    def autoSum(`type`: String, range: js.Array[Any]): Unit = js.native
     
     /** This method is used to hide the file menu in the ribbon tab.
       * @returns {void}
@@ -7983,7 +7971,7 @@ object Spreadsheet {
       * @param {any[]|string} Optional. Pass range to refresh selection.
       * @returns {void}
       */
-    def refreshSelection(range: js.Array[js.Any]): Unit = js.native
+    def refreshSelection(range: js.Array[Any]): Unit = js.native
     
     /** This method is used to select a single column in the Spreadsheet.
       * @param {number} Pass the column index value.
@@ -8067,7 +8055,7 @@ object Spreadsheet {
       * @param {string} Pass the direction to sort
       * @returns {boolean}
       */
-    def sortByRange(range: js.Array[js.Any], columnName: String, direction: String): Boolean = js.native
+    def sortByRange(range: js.Array[Any], columnName: String, direction: String): Boolean = js.native
   }
   
   trait XLSparkline extends StObject {
@@ -8078,7 +8066,7 @@ object Spreadsheet {
       * @param {number} Optional. Pass the sheet index
       * @returns {void}
       */
-    def changePointColor(sparklineId: String, option: js.Any, sheetIdx: Double): Unit
+    def changePointColor(sparklineId: String, option: Any, sheetIdx: Double): Unit
     
     /** This method used to change the sparkline type in the spreadsheet.
       * @param {string} Pass the sparkline ID
@@ -8107,7 +8095,7 @@ object Spreadsheet {
   object XLSparkline {
     
     inline def apply(
-      changePointColor: (String, js.Any, Double) => Unit,
+      changePointColor: (String, Any, Double) => Unit,
       changeType: (String, String, Double) => Unit,
       createSparkline: (String, String, String, SparklineOptions, Double) => Unit
     ): XLSparkline = {
@@ -8117,7 +8105,7 @@ object Spreadsheet {
     
     extension [Self <: XLSparkline](x: Self) {
       
-      inline def setChangePointColor(value: (String, js.Any, Double) => Unit): Self = StObject.set(x, "changePointColor", js.Any.fromFunction3(value))
+      inline def setChangePointColor(value: (String, Any, Double) => Unit): Self = StObject.set(x, "changePointColor", js.Any.fromFunction3(value))
       
       inline def setChangeType(value: (String, String, Double) => Unit): Self = StObject.set(x, "changeType", js.Any.fromFunction3(value))
       
@@ -8136,16 +8124,10 @@ object Spreadsheet {
       * @param {boolean} Pass {{'`true`' | markdownify}} if you want to show an error alert.
       * @returns {void}
       */
+    def applyDVRules(range: String, values: js.Array[Any], `type`: String, required: Boolean, showErrorAlert: Boolean): Unit = js.native
     def applyDVRules(
-      range: String,
-      values: js.Array[js.Any],
-      `type`: String,
-      required: Boolean,
-      showErrorAlert: Boolean
-    ): Unit = js.native
-    def applyDVRules(
-      range: js.Array[js.Any],
-      values: js.Array[js.Any],
+      range: js.Array[Any],
+      values: js.Array[Any],
       `type`: String,
       required: Boolean,
       showErrorAlert: Boolean
@@ -8156,13 +8138,13 @@ object Spreadsheet {
       * @returns {void}
       */
     def clearDV(range: String): Unit = js.native
-    def clearDV(range: js.Array[js.Any]): Unit = js.native
+    def clearDV(range: js.Array[Any]): Unit = js.native
     
     /** This method is used to highlight invalid data in a specified range of cells in the Spreadsheet.
       * @param {string|any[]} Optional. If range is specified, it will clear rules for the specified range else it will use the current selected range.
       * @returns {void}
       */
     def highlightInvalidData(range: String): Unit = js.native
-    def highlightInvalidData(range: js.Array[js.Any]): Unit = js.native
+    def highlightInvalidData(range: js.Array[Any]): Unit = js.native
   }
 }

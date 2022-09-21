@@ -923,7 +923,7 @@ object Checkbox {
     
     inline def setTabGroupLabelsUndefined: Self = StObject.set(x, "tabGroupLabels", js.undefined)
     
-    inline def setTabGroupLabelsVarargs(value: String*): Self = StObject.set(x, "tabGroupLabels", js.Array(value :_*))
+    inline def setTabGroupLabelsVarargs(value: String*): Self = StObject.set(x, "tabGroupLabels", js.Array(value*))
     
     inline def setTabId(value: String): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     

@@ -27,6 +27,6 @@ object IPOptions_ {
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value*))
   }
 }

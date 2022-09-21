@@ -331,7 +331,7 @@ object AccountInformation {
     
     inline def setRecipientDomainsUndefined: Self = StObject.set(x, "recipientDomains", js.undefined)
     
-    inline def setRecipientDomainsVarargs(value: RecipientDomain*): Self = StObject.set(x, "recipientDomains", js.Array(value :_*))
+    inline def setRecipientDomainsVarargs(value: RecipientDomain*): Self = StObject.set(x, "recipientDomains", js.Array(value*))
     
     inline def setSeatsAllowed(value: String): Self = StObject.set(x, "seatsAllowed", value.asInstanceOf[js.Any])
     

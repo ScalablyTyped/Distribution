@@ -1,113 +1,219 @@
 package typings.jsSha512
 
-import org.scalablytyped.runtime.Shortcut
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   @JSImport("js-sha512", JSImport.Namespace)
   @js.native
-  val ^ : JSSha512Static = js.native
+  val ^ : js.Any = js.native
   
+  @JSImport("js-sha512", "sha384")
+  @js.native
+  def sha384: Hash = js.native
+  inline def sha384_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha384")(x.asInstanceOf[js.Any])
+  
+  @JSImport("js-sha512", "sha512")
+  @js.native
+  def sha512: Hash = js.native
+  
+  @JSImport("js-sha512", "sha512_224")
+  @js.native
+  def sha512224: Hash = js.native
+  
+  inline def sha512224_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512_224")(x.asInstanceOf[js.Any])
+  
+  @JSImport("js-sha512", "sha512_256")
+  @js.native
+  def sha512256: Hash = js.native
+  
+  inline def sha512256_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512_256")(x.asInstanceOf[js.Any])
+  
+  inline def sha512_=(x: Hash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512")(x.asInstanceOf[js.Any])
+  
+  @js.native
   trait Hash extends StObject {
     
+    /**
+      * Hash and return hex string.
+      *
+      * @param message The message you want to hash.
+      */
+    def apply(message: Message): String = js.native
+    
+    /**
+      * Hash and return integer array.
+      *
+      * @param message The message you want to hash.
+      */
+    def array(message: Message): js.Array[Double] = js.native
+    
+    /**
+      * Hash and return ArrayBuffer.
+      *
+      * @param message The message you want to hash.
+      */
+    def arrayBuffer(message: Message): js.typedarray.ArrayBuffer = js.native
+    
+    /**
+      * Create a hash object.
+      */
+    def create(): Hasher = js.native
+    
+    /**
+      * Hash and return integer array.
+      *
+      * @param message The message you want to hash.
+      */
+    def digest(message: Message): js.Array[Double] = js.native
+    
+    /**
+      * Hash and return hex string.
+      *
+      * @param message The message you want to hash.
+      */
+    def hex(message: Message): String = js.native
+    
+    /**
+      * Computes a Hash-based message authentication code (HMAC) using a secret key
+      *
+      * @param secretKey The Secret Key
+      * @param message The message you want to hash.
+      */
+    /**
+      * HMAC interface
+      */
+    def hmac(secretKey: String, message: Message): String = js.native
+    /**
+      * HMAC interface
+      */
+    @JSName("hmac")
+    var hmac_Original: Hmac = js.native
+    
+    /**
+      * Create a hash object and hash message.
+      *
+      * @param message The message you want to hash.
+      */
+    def update(message: Message): Hasher = js.native
+  }
+  
+  trait Hasher extends StObject {
+    
+    /**
+      * Return hash in integer array.
+      */
     def array(): js.Array[Double]
     
-    def arrayBuffer(): ArrayBuffer
+    /**
+      * Return hash in ArrayBuffer.
+      */
+    def arrayBuffer(): js.typedarray.ArrayBuffer
     
+    /**
+      * Return hash in integer array.
+      */
     def digest(): js.Array[Double]
     
+    /**
+      * Return hash in hex string.
+      */
     def hex(): String
     
-    def update(messageToHash: String): Hash
+    /**
+      * Update hash
+      *
+      * @param message The message you want to hash.
+      */
+    def update(message: Message): Hasher
   }
-  object Hash {
+  object Hasher {
     
     inline def apply(
       array: () => js.Array[Double],
-      arrayBuffer: () => ArrayBuffer,
+      arrayBuffer: () => js.typedarray.ArrayBuffer,
       digest: () => js.Array[Double],
       hex: () => String,
-      update: String => Hash
-    ): Hash = {
+      update: Message => Hasher
+    ): Hasher = {
       val __obj = js.Dynamic.literal(array = js.Any.fromFunction0(array), arrayBuffer = js.Any.fromFunction0(arrayBuffer), digest = js.Any.fromFunction0(digest), hex = js.Any.fromFunction0(hex), update = js.Any.fromFunction1(update))
-      __obj.asInstanceOf[Hash]
+      __obj.asInstanceOf[Hasher]
     }
     
-    extension [Self <: Hash](x: Self) {
+    extension [Self <: Hasher](x: Self) {
       
       inline def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       
-      inline def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      inline def setArrayBuffer(value: () => js.typedarray.ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
       inline def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
       
       inline def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
       
-      inline def setUpdate(value: String => Hash): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Message => Hasher): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
-  trait HashStatic extends StObject {
+  trait Hmac extends StObject {
     
-    def apply(messageToHash: String): String = js.native
+    /**
+      * Computes a Hash-based message authentication code (HMAC) using a secret key
+      *
+      * @param secretKey The Secret Key
+      * @param message The message you want to hash.
+      */
+    def apply(secretKey: String, message: Message): String = js.native
     
-    def array(messageToHash: String): js.Array[Double] = js.native
+    /**
+      * Return hash in integer array.
+      *
+      * @param secretKey The Secret Key
+      * @param message The message you want to hash.
+      */
+    def array(secretKey: String, message: Message): js.Array[Double] = js.native
     
-    def arrayBuffer(messageToHash: String): ArrayBuffer = js.native
+    /**
+      * Return hash in ArrayBuffer.
+      *
+      * @param secretKey The Secret Key
+      * @param message The message you want to hash.
+      */
+    def arrayBuffer(secretKey: String, message: Message): js.typedarray.ArrayBuffer = js.native
     
-    def create(): Hash = js.native
+    /**
+      * Create a hash object using a secret key.
+      *
+      * @param secretKey The Secret Key
+      */
+    def create(secretKey: String): Hasher = js.native
     
-    def digest(messageToHash: String): js.Array[Double] = js.native
+    /**
+      * Return hash in integer array.
+      *
+      * @param secretKey The Secret Key
+      * @param message The message you want to hash.
+      */
+    def digest(secretKey: String, message: Message): js.Array[Double] = js.native
     
-    def hex(messageToHash: String): String = js.native
+    /**
+      * Return hash in hex string.
+      *
+      * @param secretKey The Secret Key
+      * @param message The message you want to hash.
+      */
+    def hex(secretKey: String, message: Message): String = js.native
     
-    def hmac(key: String, messageToHash: String): String = js.native
-    @JSName("hmac")
-    var hmac_Original: HmacStatic = js.native
-    
-    def update(messageToHash: String): Hash = js.native
+    /**
+      * Create a hash object and hash message using a secret key
+      *
+      * @param secretKey The Secret Key
+      * @param message The message you want to hash.
+      */
+    def update(secretKey: String, message: Message): Hasher = js.native
   }
   
-  @js.native
-  trait HmacStatic extends StObject {
-    
-    def apply(key: String, messageToHash: String): String = js.native
-    
-    def create(key: String): Hash = js.native
-    
-    def update(key: String, messageToHash: String): Hash = js.native
-  }
-  
-  @js.native
-  trait JSSha512Static
-    extends StObject
-       with HashStatic {
-    
-    def sha384(messageToHash: String): String = js.native
-    @JSName("sha384")
-    var sha384_Original: HashStatic = js.native
-    
-    def sha512(messageToHash: String): String = js.native
-    
-    def sha512_224(messageToHash: String): String = js.native
-    @JSName("sha512_224")
-    var sha512_224_Original: HashStatic = js.native
-    
-    def sha512_256(messageToHash: String): String = js.native
-    @JSName("sha512_256")
-    var sha512_256_Original: HashStatic = js.native
-    
-    @JSName("sha512")
-    var sha512_Original: HashStatic = js.native
-  }
-  
-  type _To = JSSha512Static
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: JSSha512Static = ^
+  type Message = String | js.Array[Double] | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array
 }

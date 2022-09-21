@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "GradientBlock")
 @js.native
-class GradientBlock protected ()
+open class GradientBlock protected ()
   extends typings.babylonjs.indexMod.GradientBlock {
   /**
     * Creates a new GradientBlock

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postgres-array" : "2.0.0"
+      "postgres-array" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "postgres-array" : "2.0.0"
+      "postgres-array" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

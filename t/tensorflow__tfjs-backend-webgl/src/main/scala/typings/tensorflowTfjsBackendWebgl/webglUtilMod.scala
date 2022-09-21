@@ -1,7 +1,5 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.std.Float32Array
-import typings.std.Uint16Array
 import typings.std.WebGLBuffer
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLProgram
@@ -58,9 +56,9 @@ object webglUtilMod {
   
   inline def createProgram(gl: WebGLRenderingContext): WebGLProgram = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(gl.asInstanceOf[js.Any]).asInstanceOf[WebGLProgram]
   
-  inline def createStaticIndexBuffer(gl: WebGLRenderingContext, data: Uint16Array): WebGLBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticIndexBuffer")(gl.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[WebGLBuffer]
+  inline def createStaticIndexBuffer(gl: WebGLRenderingContext, data: js.typedarray.Uint16Array): WebGLBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticIndexBuffer")(gl.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[WebGLBuffer]
   
-  inline def createStaticVertexBuffer(gl: WebGLRenderingContext, data: Float32Array): WebGLBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticVertexBuffer")(gl.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[WebGLBuffer]
+  inline def createStaticVertexBuffer(gl: WebGLRenderingContext, data: js.typedarray.Float32Array): WebGLBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticVertexBuffer")(gl.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[WebGLBuffer]
   
   inline def createTexture(gl: WebGLRenderingContext): WebGLTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("createTexture")(gl.asInstanceOf[js.Any]).asInstanceOf[WebGLTexture]
   
@@ -104,11 +102,11 @@ object webglUtilMod {
   
   inline def isWebGLFenceEnabled(webGLVersion: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLFenceEnabled")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isWebGLVersionEnabled_1(webGLVersion: `1`): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLVersionEnabled")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def isWebGLVersionEnabled_2(webGLVersion: `2`): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLVersionEnabled")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWebGLVersionEnabled(webGLVersion: `1` | `2`): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLVersionEnabled")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def linkProgram(gl: WebGLRenderingContext, program: WebGLProgram): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linkProgram")(gl.asInstanceOf[js.Any], program.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def logShaderSourceAndInfoLog(shaderSource: String, shaderInfoLog: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logShaderSourceAndInfoLog")(shaderSource.asInstanceOf[js.Any], shaderInfoLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resetMaxTextureSize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetMaxTextureSize")().asInstanceOf[Unit]
   

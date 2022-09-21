@@ -97,7 +97,7 @@ object Parent {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

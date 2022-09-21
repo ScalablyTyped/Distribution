@@ -13,7 +13,7 @@ trait DraggableOptions extends StObject {
   
   var container: js.UndefOr[JQuery] = js.undefined
   
-  var cursorOffset: js.UndefOr[js.Any] = js.undefined
+  var cursorOffset: js.UndefOr[Any] = js.undefined
   
   var distance: js.UndefOr[Double] = js.undefined
   
@@ -58,7 +58,7 @@ object DraggableOptions {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCursorOffset(value: js.Any): Self = StObject.set(x, "cursorOffset", value.asInstanceOf[js.Any])
+    inline def setCursorOffset(value: Any): Self = StObject.set(x, "cursorOffset", value.asInstanceOf[js.Any])
     
     inline def setCursorOffsetUndefined: Self = StObject.set(x, "cursorOffset", js.undefined)
     

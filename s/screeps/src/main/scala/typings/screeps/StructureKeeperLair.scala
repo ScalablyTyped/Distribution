@@ -12,7 +12,7 @@ trait StructureKeeperLair
   extends StObject
      with OwnedStructure[STRUCTURE_KEEPER_LAIR]
      with AnyOwnedStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * Time to spawning of the next Source Keeper.

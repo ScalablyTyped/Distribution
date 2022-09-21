@@ -10,7 +10,7 @@ object meanGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/mean_gpu", "MeanProgram")
   @js.native
-  class MeanProgram protected ()
+  open class MeanProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(reduceInfo: ReduceInfo) = this()

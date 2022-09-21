@@ -9,7 +9,7 @@ object basicMaterialMod {
   
   @JSImport("wonder.js/dist/es2015/material/BasicMaterial", "BasicMaterial")
   @js.native
-  class BasicMaterial () extends StandardBasicMaterial
+  open class BasicMaterial () extends StandardBasicMaterial
   /* static members */
   object BasicMaterial {
     

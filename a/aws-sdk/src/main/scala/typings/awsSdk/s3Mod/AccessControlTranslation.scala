@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessControlTranslation extends StObject {
   
   /**
-    * Specifies the replica ownership. For default and valid values, see PUT bucket replication in the Amazon Simple Storage Service API Reference.
+    * Specifies the replica ownership. For default and valid values, see PUT bucket replication in the Amazon S3 API Reference.
     */
   var Owner: OwnerOverride
 }

@@ -25,7 +25,7 @@ object anon {
   
   trait Style extends StObject {
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object Style {
     
@@ -36,7 +36,7 @@ object anon {
     
     extension [Self <: Style](x: Self) {
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

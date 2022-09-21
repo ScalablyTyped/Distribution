@@ -12,7 +12,7 @@ trait MarkerLike extends StObject {
   
   var inFront: Boolean
   
-  var range: Range
+  var range: js.UndefOr[Range] = js.undefined
   
   var renderer: js.UndefOr[MarkerRenderer] = js.undefined
   
@@ -21,17 +21,17 @@ trait MarkerLike extends StObject {
   var update: js.UndefOr[
     js.Function4[
       /* html */ js.Array[String], 
-      /* marker */ js.Any, 
+      /* marker */ Any, 
       /* session */ EditSession, 
-      /* config */ js.Any, 
+      /* config */ Any, 
       Unit
     ]
   ] = js.undefined
 }
 object MarkerLike {
   
-  inline def apply(clazz: String, id: Double, inFront: Boolean, range: Range, `type`: String): MarkerLike = {
-    val __obj = js.Dynamic.literal(clazz = clazz.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inFront = inFront.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+  inline def apply(clazz: String, id: Double, inFront: Boolean, `type`: String): MarkerLike = {
+    val __obj = js.Dynamic.literal(clazz = clazz.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inFront = inFront.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerLike]
   }
@@ -46,8 +46,10 @@ object MarkerLike {
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
     inline def setRenderer(
-      value: (/* html */ js.Array[String], /* range */ Range, /* left */ Double, /* top */ Double, /* config */ js.Any) => Unit
+      value: (/* html */ js.Array[String], /* range */ Range, /* left */ Double, /* top */ Double, /* config */ Any) => Unit
     ): Self = StObject.set(x, "renderer", js.Any.fromFunction5(value))
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
@@ -55,7 +57,7 @@ object MarkerLike {
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUpdate(
-      value: (/* html */ js.Array[String], /* marker */ js.Any, /* session */ EditSession, /* config */ js.Any) => Unit
+      value: (/* html */ js.Array[String], /* marker */ Any, /* session */ EditSession, /* config */ Any) => Unit
     ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)

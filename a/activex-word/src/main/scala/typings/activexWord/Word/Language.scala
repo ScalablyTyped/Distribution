@@ -26,14 +26,14 @@ trait Language extends StObject {
   
   val NameLocal: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var SpellingDictionaryType: WdDictionaryType
   
   /* private */ @JSName("Word.Language_typekey")
   var WordDotLanguage_typekey: Language
   
-  val WritingStyleList: js.Any
+  val WritingStyleList: Any
 }
 object Language {
   
@@ -48,10 +48,10 @@ object Language {
     ID: WdLanguageID,
     Name: String,
     NameLocal: String,
-    Parent: js.Any,
+    Parent: Any,
     SpellingDictionaryType: WdDictionaryType,
     WordDotLanguage_typekey: Language,
-    WritingStyleList: js.Any
+    WritingStyleList: Any
   ): Language = {
     val __obj = js.Dynamic.literal(ActiveGrammarDictionary = ActiveGrammarDictionary.asInstanceOf[js.Any], ActiveHyphenationDictionary = ActiveHyphenationDictionary.asInstanceOf[js.Any], ActiveSpellingDictionary = ActiveSpellingDictionary.asInstanceOf[js.Any], ActiveThesaurusDictionary = ActiveThesaurusDictionary.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DefaultWritingStyle = DefaultWritingStyle.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NameLocal = NameLocal.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], SpellingDictionaryType = SpellingDictionaryType.asInstanceOf[js.Any], WritingStyleList = WritingStyleList.asInstanceOf[js.Any])
     __obj.updateDynamic("Word.Language_typekey")(WordDotLanguage_typekey.asInstanceOf[js.Any])
@@ -80,12 +80,12 @@ object Language {
     
     inline def setNameLocal(value: String): Self = StObject.set(x, "NameLocal", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSpellingDictionaryType(value: WdDictionaryType): Self = StObject.set(x, "SpellingDictionaryType", value.asInstanceOf[js.Any])
     
     inline def setWordDotLanguage_typekey(value: Language): Self = StObject.set(x, "Word.Language_typekey", value.asInstanceOf[js.Any])
     
-    inline def setWritingStyleList(value: js.Any): Self = StObject.set(x, "WritingStyleList", value.asInstanceOf[js.Any])
+    inline def setWritingStyleList(value: Any): Self = StObject.set(x, "WritingStyleList", value.asInstanceOf[js.Any])
   }
 }

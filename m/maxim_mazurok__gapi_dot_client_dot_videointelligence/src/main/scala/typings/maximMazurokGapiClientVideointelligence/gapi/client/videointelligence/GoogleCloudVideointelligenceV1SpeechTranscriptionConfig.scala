@@ -66,7 +66,7 @@ object GoogleCloudVideointelligenceV1SpeechTranscriptionConfig {
     
     inline def setAudioTracksUndefined: Self = StObject.set(x, "audioTracks", js.undefined)
     
-    inline def setAudioTracksVarargs(value: Double*): Self = StObject.set(x, "audioTracks", js.Array(value :_*))
+    inline def setAudioTracksVarargs(value: Double*): Self = StObject.set(x, "audioTracks", js.Array(value*))
     
     inline def setDiarizationSpeakerCount(value: Double): Self = StObject.set(x, "diarizationSpeakerCount", value.asInstanceOf[js.Any])
     
@@ -100,6 +100,6 @@ object GoogleCloudVideointelligenceV1SpeechTranscriptionConfig {
     
     inline def setSpeechContextsUndefined: Self = StObject.set(x, "speechContexts", js.undefined)
     
-    inline def setSpeechContextsVarargs(value: GoogleCloudVideointelligenceV1SpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value :_*))
+    inline def setSpeechContextsVarargs(value: GoogleCloudVideointelligenceV1SpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value*))
   }
 }

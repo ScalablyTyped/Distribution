@@ -8,5 +8,5 @@ object binarySetAttributeValueMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_BinarySetAttributeValue", "_BinarySetAttributeValue")
   @js.native
-  val BinarySetAttributeValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val BinarySetAttributeValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

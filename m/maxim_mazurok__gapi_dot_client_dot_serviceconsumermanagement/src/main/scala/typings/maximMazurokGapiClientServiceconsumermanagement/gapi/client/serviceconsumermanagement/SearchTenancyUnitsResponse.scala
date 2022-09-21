@@ -29,6 +29,6 @@ object SearchTenancyUnitsResponse {
     
     inline def setTenancyUnitsUndefined: Self = StObject.set(x, "tenancyUnits", js.undefined)
     
-    inline def setTenancyUnitsVarargs(value: TenancyUnit*): Self = StObject.set(x, "tenancyUnits", js.Array(value :_*))
+    inline def setTenancyUnitsVarargs(value: TenancyUnit*): Self = StObject.set(x, "tenancyUnits", js.Array(value*))
   }
 }

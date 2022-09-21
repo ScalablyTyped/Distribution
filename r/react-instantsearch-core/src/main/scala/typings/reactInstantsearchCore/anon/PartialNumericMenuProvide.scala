@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<react-instantsearch-core.react-instantsearch-core.NumericMenuProvided> */
 trait PartialNumericMenuProvide extends StObject {
   
-  var createURL: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var createURL: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
   var currentRefinement: js.UndefOr[String] = js.undefined
   
   var items: js.UndefOr[js.Array[IsRefined]] = js.undefined
   
-  var refine: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var refine: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
 }
 object PartialNumericMenuProvide {
   
@@ -24,7 +24,7 @@ object PartialNumericMenuProvide {
   
   extension [Self <: PartialNumericMenuProvide](x: Self) {
     
-    inline def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    inline def setCreateURL(value: /* repeated */ Any => Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
     inline def setCreateURLUndefined: Self = StObject.set(x, "createURL", js.undefined)
     
@@ -36,9 +36,9 @@ object PartialNumericMenuProvide {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: IsRefined*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IsRefined*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    inline def setRefine(value: /* repeated */ Any => Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
     
     inline def setRefineUndefined: Self = StObject.set(x, "refine", js.undefined)
   }

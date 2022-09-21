@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "into-stream" : "6.0.0"
+      "into-stream" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "into-stream" : "6.0.0"
+      "into-stream" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

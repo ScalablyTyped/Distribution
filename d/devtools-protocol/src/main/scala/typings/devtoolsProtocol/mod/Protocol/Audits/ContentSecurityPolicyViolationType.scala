@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.kURLViolation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.kTrustedTypesSinkViolation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.kTrustedTypesPolicyViolation
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.kWasmEvalViolation
 */
 trait ContentSecurityPolicyViolationType extends StObject
 object ContentSecurityPolicyViolationType {
@@ -23,4 +24,6 @@ object ContentSecurityPolicyViolationType {
   inline def kTrustedTypesSinkViolation: typings.devtoolsProtocol.devtoolsProtocolStrings.kTrustedTypesSinkViolation = "kTrustedTypesSinkViolation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.kTrustedTypesSinkViolation]
   
   inline def kURLViolation: typings.devtoolsProtocol.devtoolsProtocolStrings.kURLViolation = "kURLViolation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.kURLViolation]
+  
+  inline def kWasmEvalViolation: typings.devtoolsProtocol.devtoolsProtocolStrings.kWasmEvalViolation = "kWasmEvalViolation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.kWasmEvalViolation]
 }

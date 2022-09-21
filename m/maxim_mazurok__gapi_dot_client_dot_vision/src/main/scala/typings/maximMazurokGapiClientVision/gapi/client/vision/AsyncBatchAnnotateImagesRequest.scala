@@ -39,6 +39,6 @@ object AsyncBatchAnnotateImagesRequest {
     
     inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    inline def setRequestsVarargs(value: AnnotateImageRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: AnnotateImageRequest*): Self = StObject.set(x, "requests", js.Array(value*))
   }
 }

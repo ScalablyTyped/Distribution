@@ -1,12 +1,14 @@
 package typings.nodegit
 
 import typings.nodegit.commitMod.Commit
+import typings.nodegit.diffMod.Diff.DELTA
 import typings.nodegit.nodegitNumbers.`0`
 import typings.nodegit.nodegitNumbers.`1`
 import typings.nodegit.nodegitNumbers.`2`
 import typings.nodegit.nodegitNumbers.`4`
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
+import typings.nodegit.revWalkMod.Revwalk.HistoryEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +17,13 @@ object revWalkMod {
   
   @JSImport("nodegit/rev-walk", "Revwalk")
   @js.native
-  class Revwalk () extends StObject {
+  open class Revwalk () extends StObject {
     
-    def fastWalk(maxCount: Double): js.Promise[js.Any] = js.native
+    def commitWalk(maxCount: Double): js.Promise[js.Array[Commit]] = js.native
     
-    def fileHistoryWalk(filePath: String, maxCount: Double): js.Promise[js.Array[js.Any]] = js.native
+    def fastWalk(maxCount: Double): js.Promise[js.Array[Oid]] = js.native
+    
+    def fileHistoryWalk(filePath: String, maxCount: Double): js.Promise[js.Array[HistoryEntry]] = js.native
     
     def getCommits(count: Double): js.Promise[js.Array[Commit]] = js.native
     
@@ -73,6 +77,35 @@ object revWalkMod {
     val ^ : js.Any = js.native
     
     inline def create(repo: Repository): Revwalk = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[Revwalk]
+    
+    trait HistoryEntry extends StObject {
+      
+      var commit: Commit
+      
+      var newName: String
+      
+      var oldName: String
+      
+      var status: DELTA
+    }
+    object HistoryEntry {
+      
+      inline def apply(commit: Commit, newName: String, oldName: String, status: DELTA): HistoryEntry = {
+        val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], newName = newName.asInstanceOf[js.Any], oldName = oldName.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+        __obj.asInstanceOf[HistoryEntry]
+      }
+      
+      extension [Self <: HistoryEntry](x: Self) {
+        
+        inline def setCommit(value: Commit): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+        
+        inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
+        
+        inline def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
+        
+        inline def setStatus(value: DELTA): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      }
+    }
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

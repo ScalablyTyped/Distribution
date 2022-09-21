@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateIAMPolicyAssignmentRequest extends StObject {
   
   /**
-    * The name of the assignment, also called a rule. This name must be unique within an AWS account.
+    * The name of the assignment, also called a rule. This name must be unique within an Amazon Web Services account.
     */
   var AssignmentName: IAMPolicyAssignmentName
   
@@ -17,12 +17,12 @@ trait UpdateIAMPolicyAssignmentRequest extends StObject {
   var AssignmentStatus: js.UndefOr[typings.awsSdk.quicksightMod.AssignmentStatus] = js.undefined
   
   /**
-    * The ID of the AWS account that contains the IAM policy assignment. 
+    * The ID of the Amazon Web Services account that contains the IAM policy assignment. 
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * The QuickSight users, groups, or both that you want to assign the policy to.
+    * The Amazon QuickSight users, groups, or both that you want to assign the policy to.
     */
   var Identities: js.UndefOr[IdentityMap] = js.undefined
   
@@ -32,7 +32,7 @@ trait UpdateIAMPolicyAssignmentRequest extends StObject {
   var Namespace: typings.awsSdk.quicksightMod.Namespace
   
   /**
-    * The ARN for the IAM policy to apply to the QuickSight users and groups specified in this assignment.
+    * The ARN for the IAM policy to apply to the Amazon QuickSight users and groups specified in this assignment.
     */
   var PolicyArn: js.UndefOr[Arn] = js.undefined
 }

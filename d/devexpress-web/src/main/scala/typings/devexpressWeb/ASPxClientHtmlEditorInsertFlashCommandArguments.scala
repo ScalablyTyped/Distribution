@@ -47,7 +47,7 @@ object ASPxClientHtmlEditorInsertFlashCommandArguments {
     id: String,
     loop: Boolean,
     quality: String,
-    selectedElement: js.Any,
+    selectedElement: Any,
     src: String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   ): ASPxClientHtmlEditorInsertFlashCommandArguments = {

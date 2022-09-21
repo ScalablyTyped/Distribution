@@ -14,7 +14,7 @@ trait SchemaListDomainsResponse extends StObject {
   /**
     * The pagination token, if more results exist.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListDomainsResponse {
   
@@ -29,9 +29,11 @@ object SchemaListDomainsResponse {
     
     inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    inline def setDomainsVarargs(value: SchemaDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: SchemaDomain*): Self = StObject.set(x, "domains", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

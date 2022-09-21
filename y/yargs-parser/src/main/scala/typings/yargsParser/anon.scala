@@ -50,11 +50,17 @@ object anon {
     
     var `flatten-duplicate-arrays`: js.UndefOr[scala.Boolean] = js.undefined
     
+    var `greedy-arrays`: js.UndefOr[scala.Boolean] = js.undefined
+    
     var `halt-at-non-option`: js.UndefOr[scala.Boolean] = js.undefined
+    
+    var `nargs-eats-options`: js.UndefOr[scala.Boolean] = js.undefined
     
     var `negation-prefix`: js.UndefOr[String] = js.undefined
     
     var `parse-numbers`: js.UndefOr[scala.Boolean] = js.undefined
+    
+    var `parse-positional-numbers`: js.UndefOr[scala.Boolean] = js.undefined
     
     var `populate--`: js.UndefOr[scala.Boolean] = js.undefined
     
@@ -101,9 +107,17 @@ object anon {
       
       inline def `setFlatten-duplicate-arraysUndefined`: Self = StObject.set(x, "flatten-duplicate-arrays", js.undefined)
       
+      inline def `setGreedy-arrays`(value: scala.Boolean): Self = StObject.set(x, "greedy-arrays", value.asInstanceOf[js.Any])
+      
+      inline def `setGreedy-arraysUndefined`: Self = StObject.set(x, "greedy-arrays", js.undefined)
+      
       inline def `setHalt-at-non-option`(value: scala.Boolean): Self = StObject.set(x, "halt-at-non-option", value.asInstanceOf[js.Any])
       
       inline def `setHalt-at-non-optionUndefined`: Self = StObject.set(x, "halt-at-non-option", js.undefined)
+      
+      inline def `setNargs-eats-options`(value: scala.Boolean): Self = StObject.set(x, "nargs-eats-options", value.asInstanceOf[js.Any])
+      
+      inline def `setNargs-eats-optionsUndefined`: Self = StObject.set(x, "nargs-eats-options", js.undefined)
       
       inline def `setNegation-prefix`(value: String): Self = StObject.set(x, "negation-prefix", value.asInstanceOf[js.Any])
       
@@ -112,6 +126,10 @@ object anon {
       inline def `setParse-numbers`(value: scala.Boolean): Self = StObject.set(x, "parse-numbers", value.asInstanceOf[js.Any])
       
       inline def `setParse-numbersUndefined`: Self = StObject.set(x, "parse-numbers", js.undefined)
+      
+      inline def `setParse-positional-numbers`(value: scala.Boolean): Self = StObject.set(x, "parse-positional-numbers", value.asInstanceOf[js.Any])
+      
+      inline def `setParse-positional-numbersUndefined`: Self = StObject.set(x, "parse-positional-numbers", js.undefined)
       
       inline def `setPopulate--`(value: scala.Boolean): Self = StObject.set(x, "populate--", value.asInstanceOf[js.Any])
       

@@ -14,11 +14,11 @@ trait OnsSplitterContentElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   /**
     * @description Show the page specified in pageUrl in the right section. Returns: Resolves to the new page element
@@ -26,15 +26,15 @@ trait OnsSplitterContentElement
     * @param {Object} [options]
     * @return {Promise}
     */
-  def load(page: js.Any): js.Promise[HTMLElement] = js.native
-  def load(page: js.Any, options: SplitterContentOptions): js.Promise[HTMLElement] = js.native
+  def load(page: Any): js.Promise[HTMLElement] = js.native
+  def load(page: Any, options: SplitterContentOptions): js.Promise[HTMLElement] = js.native
   
   /**
     * @description Page element loaded in the splitter content.
     */
   var page: String = js.native
   
-  var pageLoader: js.Any = js.native
+  var pageLoader: Any = js.native
   
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native

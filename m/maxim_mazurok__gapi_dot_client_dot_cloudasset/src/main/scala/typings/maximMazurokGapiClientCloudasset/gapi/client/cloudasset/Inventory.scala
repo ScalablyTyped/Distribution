@@ -14,11 +14,17 @@ trait Inventory extends StObject {
   var items: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Item}
-    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Inventory & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Inventory & TopLevel[Any]
   ] = js.undefined
+  
+  /** Output only. The `Inventory` API resource name. Format: `projects/{project_number}/locations/{location}/instances/{instance_id}/inventory` */
+  var name: js.UndefOr[String] = js.undefined
   
   /** Base level operating system information for the VM. */
   var osInfo: js.UndefOr[OsInfo] = js.undefined
+  
+  /** Output only. Timestamp of the last reported inventory for the VM. */
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Inventory {
   
@@ -32,13 +38,21 @@ object Inventory {
     inline def setItems(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudasset.gapi.client.cloudasset.Item}
-      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Inventory & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Inventory & TopLevel[Any]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
     inline def setOsInfo(value: OsInfo): Self = StObject.set(x, "osInfo", value.asInstanceOf[js.Any])
     
     inline def setOsInfoUndefined: Self = StObject.set(x, "osInfo", js.undefined)
+    
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

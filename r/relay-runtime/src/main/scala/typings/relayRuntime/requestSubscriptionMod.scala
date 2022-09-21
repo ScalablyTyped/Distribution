@@ -9,7 +9,6 @@ import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import typings.relayRuntime.relayStoreTypesMod.Environment
 import typings.relayRuntime.relayStoreTypesMod.RecordSourceSelectorProxy
 import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object requestSubscriptionMod {
     
     var onCompleted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     var onNext: js.UndefOr[
         js.Function1[
@@ -69,13 +68,13 @@ object requestSubscriptionMod {
       
       inline def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
       
-      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value :_*))
+      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value*))
       
       inline def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
       
       inline def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
       
-      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

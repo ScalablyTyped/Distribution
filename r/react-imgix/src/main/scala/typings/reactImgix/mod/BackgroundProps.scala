@@ -12,7 +12,7 @@ trait BackgroundProps extends StObject {
   
   var htmlAttributes: js.UndefOr[ImgixHTMLAttributes] = js.undefined
   
-  var imgixParams: js.UndefOr[ImigixParams] = js.undefined
+  var imgixParams: js.UndefOr[ImgixParams] = js.undefined
   
   var src: String
 }
@@ -37,7 +37,7 @@ object BackgroundProps {
     
     inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
     
-    inline def setImgixParams(value: ImigixParams): Self = StObject.set(x, "imgixParams", value.asInstanceOf[js.Any])
+    inline def setImgixParams(value: ImgixParams): Self = StObject.set(x, "imgixParams", value.asInstanceOf[js.Any])
     
     inline def setImgixParamsUndefined: Self = StObject.set(x, "imgixParams", js.undefined)
     

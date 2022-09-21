@@ -18,7 +18,7 @@ trait GoogleCloudDatalabelingV1beta1EvaluationJobConfig extends StObject {
   var bigqueryImportKeys: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -90,7 +90,7 @@ object GoogleCloudDatalabelingV1beta1EvaluationJobConfig {
     inline def setBigqueryImportKeys(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1EvaluationJobConfig & TopLevel[Any]
     ): Self = StObject.set(x, "bigqueryImportKeys", value.asInstanceOf[js.Any])
     
     inline def setBigqueryImportKeysUndefined: Self = StObject.set(x, "bigqueryImportKeys", js.undefined)

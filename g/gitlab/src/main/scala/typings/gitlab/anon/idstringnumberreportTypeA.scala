@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  id :string | number,   reportType :std.Array<string>,   scope :string,   severity :std.Array<string>,   confidence :std.Array<string>,   pipelineId :string | number} & gitlab.gitlab/dist/types/core/infrastructure.PaginatedRequestOptions */
 trait idstringnumberreportTypeA
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var confidence: js.Array[String]
   
@@ -50,7 +50,7 @@ object idstringnumberreportTypeA {
     
     inline def setConfidence(value: js.Array[String]): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    inline def setConfidenceVarargs(value: String*): Self = StObject.set(x, "confidence", js.Array(value :_*))
+    inline def setConfidenceVarargs(value: String*): Self = StObject.set(x, "confidence", js.Array(value*))
     
     inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -70,13 +70,13 @@ object idstringnumberreportTypeA {
     
     inline def setReportType(value: js.Array[String]): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
-    inline def setReportTypeVarargs(value: String*): Self = StObject.set(x, "reportType", js.Array(value :_*))
+    inline def setReportTypeVarargs(value: String*): Self = StObject.set(x, "reportType", js.Array(value*))
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setSeverity(value: js.Array[String]): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    inline def setSeverityVarargs(value: String*): Self = StObject.set(x, "severity", js.Array(value :_*))
+    inline def setSeverityVarargs(value: String*): Self = StObject.set(x, "severity", js.Array(value*))
     
     inline def setShowPagination(value: Boolean): Self = StObject.set(x, "showPagination", value.asInstanceOf[js.Any])
     

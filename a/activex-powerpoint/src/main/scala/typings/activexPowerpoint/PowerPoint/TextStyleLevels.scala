@@ -12,7 +12,7 @@ trait TextStyleLevels extends StObject {
   
   def Item(Level: Double): TextStyleLevel
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.TextStyleLevels_typekey")
   var PowerPointDotTextStyleLevels_typekey: TextStyleLevels
@@ -23,7 +23,7 @@ object TextStyleLevels {
     Application: Application,
     Count: Double,
     Item: Double => TextStyleLevel,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotTextStyleLevels_typekey: TextStyleLevels
   ): TextStyleLevels = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object TextStyleLevels {
     
     inline def setItem(value: Double => TextStyleLevel): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotTextStyleLevels_typekey(value: TextStyleLevels): Self = StObject.set(x, "PowerPoint.TextStyleLevels_typekey", value.asInstanceOf[js.Any])
   }

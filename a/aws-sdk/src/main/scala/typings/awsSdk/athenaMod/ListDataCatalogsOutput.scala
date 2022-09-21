@@ -29,7 +29,7 @@ object ListDataCatalogsOutput {
     
     inline def setDataCatalogsSummaryUndefined: Self = StObject.set(x, "DataCatalogsSummary", js.undefined)
     
-    inline def setDataCatalogsSummaryVarargs(value: DataCatalogSummary*): Self = StObject.set(x, "DataCatalogsSummary", js.Array(value :_*))
+    inline def setDataCatalogsSummaryVarargs(value: DataCatalogSummary*): Self = StObject.set(x, "DataCatalogsSummary", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

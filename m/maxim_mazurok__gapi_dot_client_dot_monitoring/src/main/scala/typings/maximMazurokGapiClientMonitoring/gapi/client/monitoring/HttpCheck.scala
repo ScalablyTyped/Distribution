@@ -7,13 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HttpCheck extends StObject {
   
+  /**
+    * If present, the check will only pass if the HTTP response status code is in this set of status codes. If empty, the HTTP status code will only pass if the HTTP status code is
+    * 200-299.
+    */
+  var acceptedResponseStatusCodes: js.UndefOr[js.Array[ResponseStatusCode]] = js.undefined
+  
   /** The authentication information. Optional when creating an HTTP check; defaults to empty. */
   var authInfo: js.UndefOr[BasicAuthentication] = js.undefined
   
   /**
     * The request body associated with the HTTP POST request. If content_type is URL_ENCODED, the body passed in must be URL-encoded. Users can provide a Content-Length header via the
-    * headers field or the API will do so. If the request_method is GET and body is not empty, the API will return an error. The maximum byte size is 1 megabyte. Note: As with all bytes
-    * fields, JSON representations are base64 encoded. e.g.: "foo=bar" in URL-encoded form is "foo%3Dbar" and in base64 encoding is "Zm9vJTI1M0RiYXI=".
+    * headers field or the API will do so. If the request_method is GET and body is not empty, the API will return an error. The maximum byte size is 1 megabyte.Note: If client libraries
+    * aren't used (which performs the conversion automatically) base64 encode your body data since the field is of bytes type.
     */
   var body: js.UndefOr[String] = js.undefined
   
@@ -32,7 +38,7 @@ trait HttpCheck extends StObject {
   var headers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.HttpCheck & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.HttpCheck & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -75,6 +81,12 @@ object HttpCheck {
   
   extension [Self <: HttpCheck](x: Self) {
     
+    inline def setAcceptedResponseStatusCodes(value: js.Array[ResponseStatusCode]): Self = StObject.set(x, "acceptedResponseStatusCodes", value.asInstanceOf[js.Any])
+    
+    inline def setAcceptedResponseStatusCodesUndefined: Self = StObject.set(x, "acceptedResponseStatusCodes", js.undefined)
+    
+    inline def setAcceptedResponseStatusCodesVarargs(value: ResponseStatusCode*): Self = StObject.set(x, "acceptedResponseStatusCodes", js.Array(value*))
+    
     inline def setAuthInfo(value: BasicAuthentication): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
     
     inline def setAuthInfoUndefined: Self = StObject.set(x, "authInfo", js.undefined)
@@ -90,7 +102,7 @@ object HttpCheck {
     inline def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.HttpCheck & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.HttpCheck & TopLevel[Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)

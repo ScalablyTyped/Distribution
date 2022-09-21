@@ -24,6 +24,6 @@ object ExecuteCommandOptions {
     
     inline def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    inline def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value*))
   }
 }

@@ -4,19 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The top-level message sent by the client for the `Recognize` method.
-  */
 trait SchemaRecognizeRequest extends StObject {
   
   /**
-    * *Required* The audio data to be recognized.
+    * Required. The audio data to be recognized.
     */
   var audio: js.UndefOr[SchemaRecognitionAudio] = js.undefined
   
   /**
-    * *Required* Provides information to the recognizer that specifies how to
-    * process the request.
+    * Required. Provides information to the recognizer that specifies how to process the request.
     */
   var config: js.UndefOr[SchemaRecognitionConfig] = js.undefined
 }

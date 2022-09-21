@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WEBGLDebugShaders extends StObject {
   
+  /* standard dom */
   def getTranslatedShaderSource(shader: WebGLShader): java.lang.String
 }
 object WEBGLDebugShaders {

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoMLContainerDefinition extends StObject {
   
   /**
-    * Environment variables to set in the container. Refer to ContainerDefinition for more details.
+    * The environment variables to set in the container. For more information, see .
     */
   var Environment: js.UndefOr[EnvironmentMap] = js.undefined
   
   /**
-    * The ECR path of the container. Refer to ContainerDefinition for more details.
+    * The Amazon Elastic Container Registry (Amazon ECR) path of the container. For more information, see .
     */
   var Image: ContainerImage
   
   /**
-    * The location of the model artifacts. Refer to ContainerDefinition for more details.
+    * The location of the model artifacts. For more information, see .
     */
   var ModelDataUrl: Url
 }

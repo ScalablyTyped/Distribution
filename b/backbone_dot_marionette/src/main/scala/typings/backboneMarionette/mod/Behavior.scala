@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("backbone.marionette", "Behavior")
 @js.native
-class Behavior () extends Object {
-  def this(options: js.Any) = this()
+open class Behavior () extends Object {
+  def this(options: Any) = this()
   
   /**
     * $ is a direct proxy of the views $ lookup method.
     */
   @JSName("$")
-  def $(selector: js.Any): JQuery[HTMLElement] = js.native
+  def $(selector: Any): JQuery[HTMLElement] = js.native
   
   /**
     * $el is a direct proxy of the view's el cached as a jQuery selector.
@@ -30,7 +30,7 @@ class Behavior () extends Object {
     * The behaviors key allows a behavior to group multiple behaviors
     * together.
     */
-  var behaviors: (js.Array[Behavior | Dictindex]) | (StringDictionary[Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]]) = js.native
+  var behaviors: (js.Array[Behavior | Dictindex]) | (StringDictionary[Instantiable1[/* options */ js.UndefOr[Any], Behavior]]) = js.native
   
   /**
     * collectionEvents will respond to the view's collection events.
@@ -43,12 +43,12 @@ class Behavior () extends Object {
     * what you set as the options per behavior (this works just like a
     * backbone.model).
     */
-  var defaults: js.Any = js.native
+  var defaults: Any = js.native
   
   /**
     * el is a direct proxy of the view's el
     */
-  var el: js.Any = js.native
+  var el: Any = js.native
   
   /**
     * Get handle on UI element defined in ui hash
@@ -60,7 +60,7 @@ class Behavior () extends Object {
     */
   var modelEvents: EventsHash = js.native
   
-  var options: js.Any = js.native
+  var options: Any = js.native
   
   /**
     * Any triggers you define on the Behavior will be triggered in response to the appropriate event on the view.
@@ -74,10 +74,10 @@ class Behavior () extends Object {
     * They also are attached directly to the Behavior and can be accessed within
     * Behavior methods as this.ui.
     */
-  var ui: js.Any = js.native
+  var ui: Any = js.native
   
   /**
     * The View that this behavior is attached to.
     */
-  var view: View[js.Any] = js.native
+  var view: View[Any] = js.native
 }

@@ -9,56 +9,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("TextDecoderStream")
 @js.native
-class TextDecoderStream ()
+/* standard dom */
+open class TextDecoderStream ()
   extends StObject
      with typings.std.TextDecoderStream {
   def this(label: java.lang.String) = this()
   def this(label: java.lang.String, options: TextDecoderOptions) = this()
   def this(label: Unit, options: TextDecoderOptions) = this()
   
-  /**
-    * Returns encoding's name, lowercased.
-    */
+  /** Returns encoding's name, lowercased. */
+  /* standard dom */
   /* CompleteClass */
   override val encoding: java.lang.String = js.native
   
-  /**
-    * Returns true if error mode is "fatal", and false otherwise.
-    */
+  /** Returns true if error mode is "fatal", otherwise false. */
+  /* standard dom */
   /* CompleteClass */
   override val fatal: scala.Boolean = js.native
   
-  /**
-    * Returns true if ignore BOM flag is set, and false otherwise.
-    */
+  /** Returns the value of ignore BOM. */
+  /* standard dom */
   /* CompleteClass */
   override val ignoreBOM: scala.Boolean = js.native
   
-  /**
-    * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
-    */
+  /* standard dom */
   /* CompleteClass */
-  override val readable: typings.std.ReadableStream[js.Any] = js.native
+  override val readable: typings.std.ReadableStream[Any] = js.native
+  /* standard dom */
   /* CompleteClass */
   @JSName("readable")
   override val readable_TextDecoderStream: typings.std.ReadableStream[java.lang.String] = js.native
   
-  /**
-    * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
-    * 
-    * Typically this will be used via the pipeThrough() method on a ReadableStream source.
-    * 
-    * ```
-    * var decoder = new TextDecoderStream(encoding);
-    * byteReadable
-    *   .pipeThrough(decoder)
-    *   .pipeTo(textWritable);
-    * ```
-    * 
-    * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
-    */
+  /* standard dom */
   /* CompleteClass */
-  override val writable: typings.std.WritableStream[js.Any] = js.native
+  override val writable: typings.std.WritableStream[Any] = js.native
+  /* standard dom */
   /* CompleteClass */
   @JSName("writable")
   override val writable_TextDecoderStream: typings.std.WritableStream[BufferSource] = js.native

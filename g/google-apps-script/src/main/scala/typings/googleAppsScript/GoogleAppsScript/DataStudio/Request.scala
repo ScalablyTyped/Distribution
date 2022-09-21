@@ -55,11 +55,11 @@ object Request {
     
     inline def setDimensionsFilters(value: js.Array[js.Array[DimensionsFilters]]): Self = StObject.set(x, "dimensionsFilters", value.asInstanceOf[js.Any])
     
-    inline def setDimensionsFiltersVarargs(value: js.Array[DimensionsFilters]*): Self = StObject.set(x, "dimensionsFilters", js.Array(value :_*))
+    inline def setDimensionsFiltersVarargs(value: js.Array[DimensionsFilters]*): Self = StObject.set(x, "dimensionsFilters", js.Array(value*))
     
     inline def setFields(value: js.Array[Name]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: Name*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Name*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setScriptParams(value: ScriptParams): Self = StObject.set(x, "scriptParams", value.asInstanceOf[js.Any])
   }

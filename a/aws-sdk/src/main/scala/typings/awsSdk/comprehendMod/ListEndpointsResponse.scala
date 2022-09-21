@@ -29,7 +29,7 @@ object ListEndpointsResponse {
     
     inline def setEndpointPropertiesListUndefined: Self = StObject.set(x, "EndpointPropertiesList", js.undefined)
     
-    inline def setEndpointPropertiesListVarargs(value: EndpointProperties*): Self = StObject.set(x, "EndpointPropertiesList", js.Array(value :_*))
+    inline def setEndpointPropertiesListVarargs(value: EndpointProperties*): Self = StObject.set(x, "EndpointPropertiesList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -9,10 +9,10 @@ trait CacheNode extends StObject {
   /**
     * The date and time when the cache node was created.
     */
-  var CacheNodeCreateTime: js.UndefOr[TStamp] = js.undefined
+  var CacheNodeCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The cache node identifier. A node ID is a numeric identifier (0001, 0002, etc.). The combination of cluster ID and node ID uniquely identifies every cache node used in a customer's AWS account.
+    * The cache node identifier. A node ID is a numeric identifier (0001, 0002, etc.). The combination of cluster ID and node ID uniquely identifies every cache node used in a customer's Amazon account.
     */
   var CacheNodeId: js.UndefOr[String] = js.undefined
   
@@ -55,7 +55,7 @@ object CacheNode {
   
   extension [Self <: CacheNode](x: Self) {
     
-    inline def setCacheNodeCreateTime(value: TStamp): Self = StObject.set(x, "CacheNodeCreateTime", value.asInstanceOf[js.Any])
+    inline def setCacheNodeCreateTime(value: js.Date): Self = StObject.set(x, "CacheNodeCreateTime", value.asInstanceOf[js.Any])
     
     inline def setCacheNodeCreateTimeUndefined: Self = StObject.set(x, "CacheNodeCreateTime", js.undefined)
     

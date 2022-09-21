@@ -10,11 +10,12 @@ object mod {
   
   @JSImport("marked-terminal", JSImport.Namespace)
   @js.native
-  class ^ () extends Renderer {
+  open class ^ ()
+    extends Renderer[scala.Nothing] {
     def this(options: TerminalRendererOptions) = this()
   }
   
-  type TerminalRenderer = Renderer
+  type TerminalRenderer = Renderer[scala.Nothing]
   
   trait TerminalRendererOptions extends StObject {
     
@@ -64,7 +65,7 @@ object mod {
     var table: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
     // Options passed to cli-table
-    var tableOptions: js.UndefOr[js.Any] = js.undefined
+    var tableOptions: js.UndefOr[Any] = js.undefined
     
     // Whether or not to undo marked escaping
     // of enitities (" -> &quot; etc)
@@ -190,7 +191,7 @@ object mod {
       
       inline def setTableFunction1(value: /* s */ String => String): Self = StObject.set(x, "table", js.Any.fromFunction1(value))
       
-      inline def setTableOptions(value: js.Any): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
+      inline def setTableOptions(value: Any): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
       
       inline def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
       

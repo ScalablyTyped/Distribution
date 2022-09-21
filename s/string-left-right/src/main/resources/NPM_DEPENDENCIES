@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "string-left-right" : "5.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "string-left-right" : "5.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

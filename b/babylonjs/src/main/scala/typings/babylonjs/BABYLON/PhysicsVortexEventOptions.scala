@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhysicsVortexEventOptions extends StObject {
   
   /**
-    * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when above the treshold.
+    * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when above the threshold.
     */
   var centrifugalForceMultiplier: Double
   
   /**
-    * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when below the treshold.
+    * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when below the threshold.
     */
   var centripetalForceMultiplier: Double
   
@@ -32,7 +32,7 @@ trait PhysicsVortexEventOptions extends StObject {
   var radius: Double
   
   /**
-    * The strenth of the vortex.
+    * The strength of the vortex.
     */
   var strength: Double
   

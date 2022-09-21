@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a SELECT query. */
 @JSImport("massive", "Select")
 @js.native
-class Select protected () extends StObject {
+open class Select protected () extends StObject {
   /** Represents an SELECT query. */
-  def this(source: Readable, criteria: AnyObject[js.Any]) = this()
+  def this(source: Readable, criteria: AnyObject[Any]) = this()
   def this(source: Readable, criteria: UUID) = this()
-  def this(source: Readable, criteria: AnyObject[js.Any], options: RetrievalOptions & ResultProcessingOptions) = this()
+  def this(source: Readable, criteria: AnyObject[Any], options: RetrievalOptions & ResultProcessingOptions) = this()
   def this(source: Readable, criteria: UUID, options: RetrievalOptions & ResultProcessingOptions) = this()
   
   /** Format this object into a SQL SELECT. */

@@ -24,7 +24,7 @@ trait AfterClose extends StObject {
   
   var small: Boolean
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
 }
 object AfterClose {
   
@@ -37,7 +37,7 @@ object AfterClose {
     onLongPress: () => Unit,
     selected: Boolean,
     small: Boolean,
-    styles: StringDictionary[RegisteredStyle[js.Any]]
+    styles: StringDictionary[RegisteredStyle[Any]]
   ): AfterClose = {
     val __obj = js.Dynamic.literal(afterClose = js.Any.fromFunction0(afterClose), closable = closable.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onClose = js.Any.fromFunction0(onClose), onLongPress = js.Any.fromFunction0(onLongPress), selected = selected.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[AfterClose]
@@ -61,6 +61,6 @@ object AfterClose {
     
     inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

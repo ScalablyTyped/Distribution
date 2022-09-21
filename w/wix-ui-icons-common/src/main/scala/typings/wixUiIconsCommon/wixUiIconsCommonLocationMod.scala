@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.locationMod.LocationProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonLocationMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/Location", JSImport.Default)
   @js.native
-  val default: SFC[LocationProps] = js.native
+  val default: FC[LocationProps] = js.native
   
-  type _To = SFC[LocationProps]
+  type _To = FC[LocationProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonLocationMod.foo` */
-  override def _to: SFC[LocationProps] = default
+  override def _to: FC[LocationProps] = default
 }

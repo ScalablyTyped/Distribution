@@ -7,15 +7,22 @@ import typings.grommet.grommetStrings.auto
 import typings.grommet.grommetStrings.hidden
 import typings.grommet.grommetStrings.scroll
 import typings.grommet.grommetStrings.visible
+import typings.grommet.utilsMod.A11yTitleType
+import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.ElevationType
 import typings.grommet.utilsMod.KeyboardType
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import typings.grommet.utilsMod.MarginType
+import typings.grommet.utilsMod.RoundType
+import typings.react.mod.ClassAttributes
 import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLDivElement
+import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,35 +30,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dropMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/Drop", "Drop")
   @js.native
-  class Drop protected ()
-    extends Component[
-          DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
-    def this(
-      props: DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
-      context: js.Any
-    ) = this()
+  val Drop: FC[DropExtendedProps] = js.native
+  
+  trait DropExtendedProps
+    extends StObject
+       with DropProps
+       with ClassAttributes[HTMLDivElement]
+       with HTMLAttributes[HTMLDivElement]
+  object DropExtendedProps {
+    
+    inline def apply(): DropExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DropExtendedProps]
+    }
   }
-  @JSImport("grommet/components/Drop", "Drop")
-  @js.native
-  val Drop: ComponentClass[
-    DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-    ComponentState
-  ] = js.native
   
   trait DropProps extends StObject {
     
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
+    
     var align: js.UndefOr[Bottom] = js.undefined
+    
+    var background: js.UndefOr[BackgroundType] = js.undefined
     
     var elevation: js.UndefOr[ElevationType] = js.undefined
     
-    var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var `inline`: js.UndefOr[Boolean] = js.undefined
+    
+    var margin: js.UndefOr[MarginType] = js.undefined
+    
+    var onClickOutside: js.UndefOr[MouseEventHandler[HTMLDocument]] = js.undefined
     
     var onEsc: js.UndefOr[KeyboardType] = js.undefined
     
@@ -62,6 +72,8 @@ object dropMod {
     var responsive: js.UndefOr[Boolean] = js.undefined
     
     var restrictFocus: js.UndefOr[Boolean] = js.undefined
+    
+    var round: js.UndefOr[RoundType] = js.undefined
     
     var stretch: js.UndefOr[Boolean | align] = js.undefined
     
@@ -78,15 +90,31 @@ object dropMod {
     
     extension [Self <: DropProps](x: Self) {
       
+      inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
+      
+      inline def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
+      
       inline def setAlign(value: Bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      
+      inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
       inline def setElevation(value: ElevationType): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
       
       inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
       
-      inline def setOnClickOutside(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      
+      inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      
+      inline def setOnClickOutside(value: MouseEvent[HTMLDocument, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
       
       inline def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
       
@@ -110,6 +138,10 @@ object dropMod {
       
       inline def setRestrictFocusUndefined: Self = StObject.set(x, "restrictFocus", js.undefined)
       
+      inline def setRound(value: RoundType): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      
       inline def setStretch(value: Boolean | align): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
       
       inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
@@ -125,4 +157,6 @@ object dropMod {
   }
   
   type DropType = DropProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
+  
+  type divProps = DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]
 }

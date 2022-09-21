@@ -42,6 +42,6 @@ object ServerGroup {
     
     inline def setServerListUndefined: Self = StObject.set(x, "serverList", js.undefined)
     
-    inline def setServerListVarargs(value: Server*): Self = StObject.set(x, "serverList", js.Array(value :_*))
+    inline def setServerListVarargs(value: Server*): Self = StObject.set(x, "serverList", js.Array(value*))
   }
 }

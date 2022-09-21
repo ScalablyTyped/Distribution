@@ -2,7 +2,7 @@ package typings.d3Sankey
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.d3Sankey.anon.SankeyLinkIndex
-import typings.d3Shape.mod.Link
+import typings.d3Shape.mod.Link_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +21,9 @@ object mod {
   
   inline def sankeyLeft(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLeft")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def sankeyLinkHorizontal(): Link[js.Any, SankeyLinkIndex, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link[js.Any, SankeyLinkIndex, js.Tuple2[Double, Double]]]
+  inline def sankeyLinkHorizontal(): Link_[Any, SankeyLinkIndex, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link_[Any, SankeyLinkIndex, js.Tuple2[Double, Double]]]
   
-  inline def sankeyLinkHorizontal_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): Link[js.Any, SankeyLink[N, L], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link[js.Any, SankeyLink[N, L], js.Tuple2[Double, Double]]]
+  inline def sankeyLinkHorizontal_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): Link_[Any, SankeyLink[N, L], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link_[Any, SankeyLink[N, L], js.Tuple2[Double, Double]]]
   
   inline def sankeyRight(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyRight")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -31,7 +31,7 @@ object mod {
   
   inline def sankey_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[SankeyGraph[N, L], N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[SankeyGraph[N, L], N, L]]
   
-  type SankeyExtraProperties = StringDictionary[js.Any]
+  type SankeyExtraProperties = StringDictionary[Any]
   
   trait SankeyGraph[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] extends StObject {
     
@@ -56,11 +56,11 @@ object mod {
       
       inline def setLinks(value: js.Array[SankeyLink[N, L]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      inline def setLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setNodes(value: js.Array[SankeyNode[N, L]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: (SankeyNode[N, L])*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: (SankeyNode[N, L])*): Self = StObject.set(x, "nodes", js.Array(value*))
     }
   }
   
@@ -73,7 +73,7 @@ object mod {
       * @param data Data object being passed as the first argument to the nodes and links accessor functions. Additional arguments will also be passed
       * to the accessor functions.
       */
-    def apply(data: Data, args: js.Any*): SankeyGraph[N, L] = js.native
+    def apply(data: Data, args: Any*): SankeyGraph[N, L] = js.native
     
     /**
       * Return the current extent which defaults to [[0, 0], [1, 1]].
@@ -102,7 +102,7 @@ object mod {
       * Return the current links accessor function, which defaults to a function returning the "links" property of the
       * first argument it is invoked with.
       */
-    def links(): js.Function2[/* data */ Data, /* repeated */ js.Any, js.Array[SankeyLink[N, L]]] = js.native
+    def links(): js.Function2[/* data */ Data, /* repeated */ Any, js.Array[SankeyLink[N, L]]] = js.native
     /**
       * Set the Sankey generator's links accessor to a function returning the specified array of objects and returns this Sankey layout generator.
       *
@@ -115,7 +115,7 @@ object mod {
       * @param links A links accessor function. The function is invoked when the Sankey layout is generated, being passed any arguments passed to the Sankey generator.
       * This function must return an array of links.
       */
-    def links(links: js.Function2[/* data */ Data, /* repeated */ js.Any, js.Array[SankeyLink[N, L]]]): this.type = js.native
+    def links(links: js.Function2[/* data */ Data, /* repeated */ Any, js.Array[SankeyLink[N, L]]]): this.type = js.native
     
     /**
       * Return the current node alignment method, which defaults to d3.sankeyJustify.
@@ -184,7 +184,7 @@ object mod {
       * Return the current nodes accessor function, which defaults to a function returning the "nodes" property of the
       * first argument it is invoked with.
       */
-    def nodes(): js.Function2[/* data */ Data, /* repeated */ js.Any, js.Array[SankeyNode[N, L]]] = js.native
+    def nodes(): js.Function2[/* data */ Data, /* repeated */ Any, js.Array[SankeyNode[N, L]]] = js.native
     /**
       * Set the Sankey generator's nodes accessor to a function returning the specified array of objects and returns this Sankey layout generator.
       *
@@ -197,7 +197,7 @@ object mod {
       * @param nodes A nodes accessor function. The function is invoked when the Sankey layout is generated, being passed any arguments passed to the Sankey generator.
       * This function must return an array of nodes.
       */
-    def nodes(nodes: js.Function2[/* data */ Data, /* repeated */ js.Any, js.Array[SankeyNode[N, L]]]): this.type = js.native
+    def nodes(nodes: js.Function2[/* data */ Data, /* repeated */ Any, js.Array[SankeyNode[N, L]]]): this.type = js.native
     
     /**
       * Return the current layout size in pixels. The size is a two element array of [width, height] which defaults to [1, 1].
@@ -394,13 +394,13 @@ object mod {
       
       inline def setSourceLinksUndefined: Self = StObject.set(x, "sourceLinks", js.undefined)
       
-      inline def setSourceLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "sourceLinks", js.Array(value :_*))
+      inline def setSourceLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "sourceLinks", js.Array(value*))
       
       inline def setTargetLinks(value: js.Array[SankeyLink[N, L]]): Self = StObject.set(x, "targetLinks", value.asInstanceOf[js.Any])
       
       inline def setTargetLinksUndefined: Self = StObject.set(x, "targetLinks", js.undefined)
       
-      inline def setTargetLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "targetLinks", js.Array(value :_*))
+      inline def setTargetLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "targetLinks", js.Array(value*))
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

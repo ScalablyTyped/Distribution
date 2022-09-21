@@ -11,7 +11,7 @@ object numericAxisMod {
   
   @JSImport("plottable/build/src/axes/numericAxis", "Numeric")
   @js.native
-  class Numeric protected () extends Axis[Double] {
+  open class Numeric protected () extends Axis[Double] {
     /**
       * Constructs a Numeric Axis.
       *
@@ -23,9 +23,9 @@ object numericAxisMod {
       */
     def this(scale: QuantitativeScale[Double], orientation: AxisOrientation) = this()
     
-    /* private */ def _computeApproximateTextWidth(): js.Any = js.native
+    /* private */ var _computeApproximateTextWidth: Any = js.native
     
-    /* private */ def _computeExactTextWidth(): js.Any = js.native
+    /* private */ var _computeExactTextWidth: Any = js.native
     
     /**
       * The method is responsible for evenly spacing the labels on the axis.
@@ -37,19 +37,19 @@ object numericAxisMod {
       * from the tick and 2 * `padding` distance (or more) from the next tick:
       * see https://github.com/palantir/plottable/pull/1812
       */
-    /* private */ def _hasOverlapWithInterval(interval: js.Any, rects: js.Any): js.Any = js.native
+    /* private */ var _hasOverlapWithInterval: Any = js.native
     
-    /* private */ def _hideEndTickLabels(): js.Any = js.native
+    /* private */ var _hideEndTickLabels: Any = js.native
     
-    /* private */ def _hideOverlappingTickLabels(): js.Any = js.native
+    /* private */ var _hideOverlappingTickLabels: Any = js.native
     
-    /* private */ var _measurer: js.Any = js.native
+    /* private */ var _measurer: Any = js.native
     
-    /* private */ var _tickLabelPositioning: js.Any = js.native
+    /* private */ var _tickLabelPositioning: Any = js.native
     
-    /* private */ var _usesTextWidthApproximation: js.Any = js.native
+    /* private */ var _usesTextWidthApproximation: Any = js.native
     
-    /* private */ var _wrapper: js.Any = js.native
+    /* private */ var _wrapper: Any = js.native
     
     /**
       * Gets the tick label position relative to the tick marks.

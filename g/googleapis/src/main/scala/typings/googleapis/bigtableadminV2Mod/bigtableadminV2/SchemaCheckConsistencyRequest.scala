@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for
-  * google.bigtable.admin.v2.BigtableTableAdmin.CheckConsistency
-  */
 trait SchemaCheckConsistencyRequest extends StObject {
   
   /**
-    * The token created using GenerateConsistencyToken for the Table.
+    * Required. The token created using GenerateConsistencyToken for the Table.
     */
-  var consistencyToken: js.UndefOr[String] = js.undefined
+  var consistencyToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCheckConsistencyRequest {
   
@@ -25,6 +21,8 @@ object SchemaCheckConsistencyRequest {
   extension [Self <: SchemaCheckConsistencyRequest](x: Self) {
     
     inline def setConsistencyToken(value: String): Self = StObject.set(x, "consistencyToken", value.asInstanceOf[js.Any])
+    
+    inline def setConsistencyTokenNull: Self = StObject.set(x, "consistencyToken", null)
     
     inline def setConsistencyTokenUndefined: Self = StObject.set(x, "consistencyToken", js.undefined)
   }

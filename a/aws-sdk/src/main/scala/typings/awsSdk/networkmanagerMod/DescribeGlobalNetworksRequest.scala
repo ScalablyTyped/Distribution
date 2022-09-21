@@ -9,7 +9,7 @@ trait DescribeGlobalNetworksRequest extends StObject {
   /**
     * The IDs of one or more global networks. The maximum is 10.
     */
-  var GlobalNetworkIds: js.UndefOr[StringList] = js.undefined
+  var GlobalNetworkIds: js.UndefOr[GlobalNetworkIdList] = js.undefined
   
   /**
     * The maximum number of results to return.
@@ -19,7 +19,7 @@ trait DescribeGlobalNetworksRequest extends StObject {
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[typings.awsSdk.networkmanagerMod.NextToken] = js.undefined
 }
 object DescribeGlobalNetworksRequest {
   
@@ -30,17 +30,17 @@ object DescribeGlobalNetworksRequest {
   
   extension [Self <: DescribeGlobalNetworksRequest](x: Self) {
     
-    inline def setGlobalNetworkIds(value: StringList): Self = StObject.set(x, "GlobalNetworkIds", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkIds(value: GlobalNetworkIdList): Self = StObject.set(x, "GlobalNetworkIds", value.asInstanceOf[js.Any])
     
     inline def setGlobalNetworkIdsUndefined: Self = StObject.set(x, "GlobalNetworkIds", js.undefined)
     
-    inline def setGlobalNetworkIdsVarargs(value: String*): Self = StObject.set(x, "GlobalNetworkIds", js.Array(value :_*))
+    inline def setGlobalNetworkIdsVarargs(value: GlobalNetworkId*): Self = StObject.set(x, "GlobalNetworkIds", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }

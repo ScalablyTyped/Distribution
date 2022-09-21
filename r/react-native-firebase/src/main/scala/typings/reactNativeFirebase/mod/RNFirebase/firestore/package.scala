@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AnyJs = js.UndefOr[scala.Null | scala.Boolean | scala.Double | java.lang.String | js.Object]
+type AnyJs = js.UndefOr[Null | Boolean | Double | String | js.Object]

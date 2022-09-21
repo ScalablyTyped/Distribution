@@ -1,0 +1,5320 @@
+package typings.carbonComponentsReact
+
+import org.scalablytyped.runtime.Shortcut
+import typings.carbonComponentsReact.accordionAccordionMod.AccordionProps
+import typings.carbonComponentsReact.accordionSkeletonMod.AccordionSkeletonProps
+import typings.carbonComponentsReact.anon.Name
+import typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioCustomComponentProps
+import typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioDefaultProps
+import typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps
+import typings.carbonComponentsReact.breadcrumbBreadcrumbMod.BreadcrumbProps
+import typings.carbonComponentsReact.breadcrumbItemMod.BreadcrumbItemProps
+import typings.carbonComponentsReact.breadcrumbSkeletonMod.BreadcrumbSkeletonProps
+import typings.carbonComponentsReact.buttonButtonMod.ButtonAnchorProps
+import typings.carbonComponentsReact.buttonButtonMod.ButtonCustomComponentProps
+import typings.carbonComponentsReact.buttonButtonMod.ButtonDefaultProps
+import typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps
+import typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
+import typings.carbonComponentsReact.buttonSetButtonSetMod.ButtonSetProps
+import typings.carbonComponentsReact.buttonSkeletonMod.ButtonSkeletonProps
+import typings.carbonComponentsReact.carbonComponentsReactBooleans.`false`
+import typings.carbonComponentsReact.carbonComponentsReactStrings.`object`
+import typings.carbonComponentsReact.carbonComponentsReactStrings.`var`
+import typings.carbonComponentsReact.carbonComponentsReactStrings.a
+import typings.carbonComponentsReact.carbonComponentsReactStrings.abbr
+import typings.carbonComponentsReact.carbonComponentsReactStrings.address
+import typings.carbonComponentsReact.carbonComponentsReactStrings.animate
+import typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion
+import typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform
+import typings.carbonComponentsReact.carbonComponentsReactStrings.area
+import typings.carbonComponentsReact.carbonComponentsReactStrings.article
+import typings.carbonComponentsReact.carbonComponentsReactStrings.aside
+import typings.carbonComponentsReact.carbonComponentsReactStrings.audio
+import typings.carbonComponentsReact.carbonComponentsReactStrings.b
+import typings.carbonComponentsReact.carbonComponentsReactStrings.base
+import typings.carbonComponentsReact.carbonComponentsReactStrings.bdi
+import typings.carbonComponentsReact.carbonComponentsReactStrings.bdo
+import typings.carbonComponentsReact.carbonComponentsReactStrings.big
+import typings.carbonComponentsReact.carbonComponentsReactStrings.blockquote
+import typings.carbonComponentsReact.carbonComponentsReactStrings.body
+import typings.carbonComponentsReact.carbonComponentsReactStrings.br
+import typings.carbonComponentsReact.carbonComponentsReactStrings.button
+import typings.carbonComponentsReact.carbonComponentsReactStrings.canvas
+import typings.carbonComponentsReact.carbonComponentsReactStrings.caption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.circle
+import typings.carbonComponentsReact.carbonComponentsReactStrings.cite
+import typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath
+import typings.carbonComponentsReact.carbonComponentsReactStrings.code
+import typings.carbonComponentsReact.carbonComponentsReactStrings.col
+import typings.carbonComponentsReact.carbonComponentsReactStrings.colgroup
+import typings.carbonComponentsReact.carbonComponentsReactStrings.data
+import typings.carbonComponentsReact.carbonComponentsReactStrings.datalist
+import typings.carbonComponentsReact.carbonComponentsReactStrings.dd
+import typings.carbonComponentsReact.carbonComponentsReactStrings.defs
+import typings.carbonComponentsReact.carbonComponentsReactStrings.del
+import typings.carbonComponentsReact.carbonComponentsReactStrings.desc_
+import typings.carbonComponentsReact.carbonComponentsReactStrings.details
+import typings.carbonComponentsReact.carbonComponentsReactStrings.dfn
+import typings.carbonComponentsReact.carbonComponentsReactStrings.dialog
+import typings.carbonComponentsReact.carbonComponentsReactStrings.div
+import typings.carbonComponentsReact.carbonComponentsReactStrings.dl
+import typings.carbonComponentsReact.carbonComponentsReactStrings.dt
+import typings.carbonComponentsReact.carbonComponentsReactStrings.element
+import typings.carbonComponentsReact.carbonComponentsReactStrings.ellipse
+import typings.carbonComponentsReact.carbonComponentsReactStrings.em
+import typings.carbonComponentsReact.carbonComponentsReactStrings.embed
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feBlend
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feColorMatrix
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feComponentTransfer
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feComposite
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feConvolveMatrix
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feDiffuseLighting
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feDisplacementMap
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feDistantLight
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feDropShadow
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feFlood
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncA
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncB
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncG
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncR
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feGaussianBlur
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feImage
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feMerge
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feMergeNode
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feMorphology
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feOffset
+import typings.carbonComponentsReact.carbonComponentsReactStrings.fePointLight
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feSpecularLighting
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feSpotLight
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feTile
+import typings.carbonComponentsReact.carbonComponentsReactStrings.feTurbulence
+import typings.carbonComponentsReact.carbonComponentsReactStrings.fieldset
+import typings.carbonComponentsReact.carbonComponentsReactStrings.figcaption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.figure
+import typings.carbonComponentsReact.carbonComponentsReactStrings.filter
+import typings.carbonComponentsReact.carbonComponentsReactStrings.footer
+import typings.carbonComponentsReact.carbonComponentsReactStrings.foreignObject
+import typings.carbonComponentsReact.carbonComponentsReactStrings.form
+import typings.carbonComponentsReact.carbonComponentsReactStrings.g
+import typings.carbonComponentsReact.carbonComponentsReactStrings.h1
+import typings.carbonComponentsReact.carbonComponentsReactStrings.h2
+import typings.carbonComponentsReact.carbonComponentsReactStrings.h3
+import typings.carbonComponentsReact.carbonComponentsReactStrings.h4
+import typings.carbonComponentsReact.carbonComponentsReactStrings.h5
+import typings.carbonComponentsReact.carbonComponentsReactStrings.h6
+import typings.carbonComponentsReact.carbonComponentsReactStrings.head
+import typings.carbonComponentsReact.carbonComponentsReactStrings.header
+import typings.carbonComponentsReact.carbonComponentsReactStrings.hgroup
+import typings.carbonComponentsReact.carbonComponentsReactStrings.hr
+import typings.carbonComponentsReact.carbonComponentsReactStrings.html
+import typings.carbonComponentsReact.carbonComponentsReactStrings.i
+import typings.carbonComponentsReact.carbonComponentsReactStrings.iframe
+import typings.carbonComponentsReact.carbonComponentsReactStrings.image
+import typings.carbonComponentsReact.carbonComponentsReactStrings.img
+import typings.carbonComponentsReact.carbonComponentsReactStrings.input
+import typings.carbonComponentsReact.carbonComponentsReactStrings.ins
+import typings.carbonComponentsReact.carbonComponentsReactStrings.kbd
+import typings.carbonComponentsReact.carbonComponentsReactStrings.keygen
+import typings.carbonComponentsReact.carbonComponentsReactStrings.label
+import typings.carbonComponentsReact.carbonComponentsReactStrings.legend
+import typings.carbonComponentsReact.carbonComponentsReactStrings.li
+import typings.carbonComponentsReact.carbonComponentsReactStrings.line
+import typings.carbonComponentsReact.carbonComponentsReactStrings.linearGradient
+import typings.carbonComponentsReact.carbonComponentsReactStrings.link
+import typings.carbonComponentsReact.carbonComponentsReactStrings.main
+import typings.carbonComponentsReact.carbonComponentsReactStrings.map
+import typings.carbonComponentsReact.carbonComponentsReactStrings.mark
+import typings.carbonComponentsReact.carbonComponentsReactStrings.marker
+import typings.carbonComponentsReact.carbonComponentsReactStrings.mask
+import typings.carbonComponentsReact.carbonComponentsReactStrings.menu
+import typings.carbonComponentsReact.carbonComponentsReactStrings.menuitem
+import typings.carbonComponentsReact.carbonComponentsReactStrings.meta
+import typings.carbonComponentsReact.carbonComponentsReactStrings.metadata
+import typings.carbonComponentsReact.carbonComponentsReactStrings.meter
+import typings.carbonComponentsReact.carbonComponentsReactStrings.mpath
+import typings.carbonComponentsReact.carbonComponentsReactStrings.nav
+import typings.carbonComponentsReact.carbonComponentsReactStrings.noindex
+import typings.carbonComponentsReact.carbonComponentsReactStrings.noscript
+import typings.carbonComponentsReact.carbonComponentsReactStrings.ol
+import typings.carbonComponentsReact.carbonComponentsReactStrings.optgroup
+import typings.carbonComponentsReact.carbonComponentsReactStrings.option
+import typings.carbonComponentsReact.carbonComponentsReactStrings.output
+import typings.carbonComponentsReact.carbonComponentsReactStrings.p
+import typings.carbonComponentsReact.carbonComponentsReactStrings.param
+import typings.carbonComponentsReact.carbonComponentsReactStrings.path
+import typings.carbonComponentsReact.carbonComponentsReactStrings.pattern
+import typings.carbonComponentsReact.carbonComponentsReactStrings.picture
+import typings.carbonComponentsReact.carbonComponentsReactStrings.polygon
+import typings.carbonComponentsReact.carbonComponentsReactStrings.polyline
+import typings.carbonComponentsReact.carbonComponentsReactStrings.pre
+import typings.carbonComponentsReact.carbonComponentsReactStrings.progress
+import typings.carbonComponentsReact.carbonComponentsReactStrings.q
+import typings.carbonComponentsReact.carbonComponentsReactStrings.radialGradient
+import typings.carbonComponentsReact.carbonComponentsReactStrings.rect
+import typings.carbonComponentsReact.carbonComponentsReactStrings.rp
+import typings.carbonComponentsReact.carbonComponentsReactStrings.rt
+import typings.carbonComponentsReact.carbonComponentsReactStrings.ruby
+import typings.carbonComponentsReact.carbonComponentsReactStrings.s
+import typings.carbonComponentsReact.carbonComponentsReactStrings.samp
+import typings.carbonComponentsReact.carbonComponentsReactStrings.script
+import typings.carbonComponentsReact.carbonComponentsReactStrings.section
+import typings.carbonComponentsReact.carbonComponentsReactStrings.select
+import typings.carbonComponentsReact.carbonComponentsReactStrings.slot
+import typings.carbonComponentsReact.carbonComponentsReactStrings.small
+import typings.carbonComponentsReact.carbonComponentsReactStrings.source
+import typings.carbonComponentsReact.carbonComponentsReactStrings.span
+import typings.carbonComponentsReact.carbonComponentsReactStrings.stop
+import typings.carbonComponentsReact.carbonComponentsReactStrings.strong
+import typings.carbonComponentsReact.carbonComponentsReactStrings.style
+import typings.carbonComponentsReact.carbonComponentsReactStrings.sub
+import typings.carbonComponentsReact.carbonComponentsReactStrings.summary
+import typings.carbonComponentsReact.carbonComponentsReactStrings.sup
+import typings.carbonComponentsReact.carbonComponentsReactStrings.svg
+import typings.carbonComponentsReact.carbonComponentsReactStrings.switch
+import typings.carbonComponentsReact.carbonComponentsReactStrings.symbol
+import typings.carbonComponentsReact.carbonComponentsReactStrings.table
+import typings.carbonComponentsReact.carbonComponentsReactStrings.tbody
+import typings.carbonComponentsReact.carbonComponentsReactStrings.td
+import typings.carbonComponentsReact.carbonComponentsReactStrings.template
+import typings.carbonComponentsReact.carbonComponentsReactStrings.text
+import typings.carbonComponentsReact.carbonComponentsReactStrings.textPath
+import typings.carbonComponentsReact.carbonComponentsReactStrings.textarea
+import typings.carbonComponentsReact.carbonComponentsReactStrings.tfoot
+import typings.carbonComponentsReact.carbonComponentsReactStrings.th
+import typings.carbonComponentsReact.carbonComponentsReactStrings.thead
+import typings.carbonComponentsReact.carbonComponentsReactStrings.time
+import typings.carbonComponentsReact.carbonComponentsReactStrings.title
+import typings.carbonComponentsReact.carbonComponentsReactStrings.tr
+import typings.carbonComponentsReact.carbonComponentsReactStrings.track
+import typings.carbonComponentsReact.carbonComponentsReactStrings.tspan
+import typings.carbonComponentsReact.carbonComponentsReactStrings.u
+import typings.carbonComponentsReact.carbonComponentsReactStrings.ul
+import typings.carbonComponentsReact.carbonComponentsReactStrings.use
+import typings.carbonComponentsReact.carbonComponentsReactStrings.video
+import typings.carbonComponentsReact.carbonComponentsReactStrings.view
+import typings.carbonComponentsReact.carbonComponentsReactStrings.wbr
+import typings.carbonComponentsReact.carbonComponentsReactStrings.webview
+import typings.carbonComponentsReact.checkboxCheckboxMod.CheckboxProps
+import typings.carbonComponentsReact.checkboxSkeletonMod.CheckboxSkeletonProps
+import typings.carbonComponentsReact.codeSnippetCodeSnippetMod.CodeSnippetDivProps
+import typings.carbonComponentsReact.codeSnippetCodeSnippetMod.CodeSnippetInlineProps
+import typings.carbonComponentsReact.codeSnippetCodeSnippetMod.CodeSnippetMultiProps
+import typings.carbonComponentsReact.codeSnippetSkeletonMod.CodeSnippetSkeletonProps
+import typings.carbonComponentsReact.columnMod.ColumnCustomComponentProps
+import typings.carbonComponentsReact.columnMod.ColumnDefaultProps
+import typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps
+import typings.carbonComponentsReact.comboBoxComboBoxMod.ComboBoxProps
+import typings.carbonComponentsReact.componentsAccordionItemMod.default
+import typings.carbonComponentsReact.composedModalComposedModalMod.ModalBodyProps
+import typings.carbonComponentsReact.composedModalComposedModalMod.ModalFooterProps
+import typings.carbonComponentsReact.composedModalComposedModalMod.ModalHeaderProps
+import typings.carbonComponentsReact.contentMod.ContentDefaultProps
+import typings.carbonComponentsReact.contentMod.ContentIntrinsicProps
+import typings.carbonComponentsReact.controlledPasswordInputMod.ControlledPasswordInputProps
+import typings.carbonComponentsReact.copyButtonCopyButtonMod.CopyButtonProps
+import typings.carbonComponentsReact.copyCopyMod.CopyProps
+import typings.carbonComponentsReact.dataTableDataTableMod.DataTableHeader
+import typings.carbonComponentsReact.dataTableDataTableMod.DataTableRow
+import typings.carbonComponentsReact.dataTableDataTableMod.DataTableTranslationKey
+import typings.carbonComponentsReact.dataTableSkeletonDataTableSkeletonMod.DataTableSkeletonProps
+import typings.carbonComponentsReact.datePickerSkeletonMod.DatePickerSkeletonProps
+import typings.carbonComponentsReact.dropdownDropdownMod.DropdownProps
+import typings.carbonComponentsReact.dropdownSkeletonMod.DropdownSkeletonProps
+import typings.carbonComponentsReact.errorBoundaryContextMod.ErrorBoundaryContextValue
+import typings.carbonComponentsReact.expandableSearchExpandableSearchMod.ExpandableSearchProps
+import typings.carbonComponentsReact.featureFlagsMod.FeatureFlagScope
+import typings.carbonComponentsReact.featureFlagsMod.FeatureFlagsProps
+import typings.carbonComponentsReact.fileUploaderButtonMod.FileUploaderButtonProps
+import typings.carbonComponentsReact.fileUploaderDropContainerMod.FileUploaderDropContainerProps
+import typings.carbonComponentsReact.fileUploaderFileUploaderMod.FileUploaderProps
+import typings.carbonComponentsReact.fileUploaderItemMod.FileUploaderItemProps
+import typings.carbonComponentsReact.fileUploaderSkeletonMod.FileUploaderSkeletonProps
+import typings.carbonComponentsReact.filenameMod.FilenameIconProps
+import typings.carbonComponentsReact.fluidFormFluidFormMod.FluidFormProps
+import typings.carbonComponentsReact.formFormMod.FormProps
+import typings.carbonComponentsReact.formGroupFormGroupMod.FormGroupProps
+import typings.carbonComponentsReact.formItemFormItemMod.FormItemProps
+import typings.carbonComponentsReact.formLabelFormLabelMod.FormLabelProps
+import typings.carbonComponentsReact.gridGridMod.GridCustomComponentProps
+import typings.carbonComponentsReact.gridGridMod.GridDefaultProps
+import typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps
+import typings.carbonComponentsReact.headerContainerMod.HeaderContainerProps
+import typings.carbonComponentsReact.headerGlobalActionMod.HeaderGlobalActionProps
+import typings.carbonComponentsReact.headerGlobalBarMod.HeaderGlobalBarProps
+import typings.carbonComponentsReact.headerMenuButtonMod.HeaderMenuButtonProps
+import typings.carbonComponentsReact.headerMenuItemMod.HeaderMenuItemProps
+import typings.carbonComponentsReact.headerMenuMod.HeaderMenuForwardRefProps
+import typings.carbonComponentsReact.headerMod.HeaderProps
+import typings.carbonComponentsReact.headerNameMod.HeaderNameProps
+import typings.carbonComponentsReact.headerPanelMod.HeaderPanelProps
+import typings.carbonComponentsReact.headerSideNavItemsMod.HeaderSideNavItemsProps
+import typings.carbonComponentsReact.headingMod.HeadingProps
+import typings.carbonComponentsReact.headingMod.SectionCustomComponentProps
+import typings.carbonComponentsReact.headingMod.SectionDefaultProps
+import typings.carbonComponentsReact.headingMod.SectionIntrinsicProps
+import typings.carbonComponentsReact.iconIconMod.IconProps
+import typings.carbonComponentsReact.iconSkeletonMod.IconSkeletonProps
+import typings.carbonComponentsReact.inlineLoadingInlineLoadingMod.InlineLoadingProps
+import typings.carbonComponentsReact.linkLinkMod.LinkProps
+import typings.carbonComponentsReact.listItemListItemMod.ListItemProps
+import typings.carbonComponentsReact.loadingLoadingMod.LoadingProps
+import typings.carbonComponentsReact.menuMenuMod.MenuComponent
+import typings.carbonComponentsReact.notificationNotificationMod.InlineNotificationProps
+import typings.carbonComponentsReact.notificationNotificationMod.NotificationActionButtonProps
+import typings.carbonComponentsReact.notificationNotificationMod.NotificationButtonProps
+import typings.carbonComponentsReact.notificationNotificationMod.NotificationTextDetailsProps
+import typings.carbonComponentsReact.notificationNotificationMod.ToastNotificationProps
+import typings.carbonComponentsReact.numberInputNumberInputMod.NumberInputProps
+import typings.carbonComponentsReact.numberInputSkeletonMod.NumberInputSkeletonProps
+import typings.carbonComponentsReact.orderedListOrderedListMod.OrderedListProps
+import typings.carbonComponentsReact.overflowMenuOverflowMenuMod.OverflowMenuProps
+import typings.carbonComponentsReact.paginationNavPaginationNavMod.PaginationNavProps
+import typings.carbonComponentsReact.paginationSkeletonMod.PaginationSkeletonProps
+import typings.carbonComponentsReact.progressBarProgressBarMod.ProgressBarProps
+import typings.carbonComponentsReact.progressIndicatorProgressIndicatorMod.ProgressIndicatorProps
+import typings.carbonComponentsReact.progressIndicatorProgressIndicatorMod.ProgressStepProps
+import typings.carbonComponentsReact.progressIndicatorSkeletonMod.ProgressIndicatorSkeletonProps
+import typings.carbonComponentsReact.radioButtonRadioButtonMod.RadioButtonProps
+import typings.carbonComponentsReact.radioButtonSkeletonMod.RadioButtonSkeletonProps
+import typings.carbonComponentsReact.radioTileRadioTileMod.RadioTileProps
+import typings.carbonComponentsReact.rowMod.RowCustomComponentProps
+import typings.carbonComponentsReact.rowMod.RowDefaultProps
+import typings.carbonComponentsReact.rowMod.RowIntrinsicProps
+import typings.carbonComponentsReact.searchFilterButtonSearchFilterButtonMod.SearchFilterButtonProps
+import typings.carbonComponentsReact.searchSkeletonMod.SearchSkeletonProps
+import typings.carbonComponentsReact.selectItemGroupSelectItemGroupMod.SelectItemGroupProps
+import typings.carbonComponentsReact.selectItemSelectItemMod.SelectItemProps
+import typings.carbonComponentsReact.selectSelectMod.SelectProps
+import typings.carbonComponentsReact.selectSkeletonMod.SelectSkeletonProps
+import typings.carbonComponentsReact.sideNavDetailsMod.SideNavDetailsProps
+import typings.carbonComponentsReact.sideNavDividerMod.SideNavDividerProps
+import typings.carbonComponentsReact.sideNavFooterMod.SideNavFooterProps
+import typings.carbonComponentsReact.sideNavHeaderMod.SideNavHeaderProps
+import typings.carbonComponentsReact.sideNavIconMod.SideNavIconProps
+import typings.carbonComponentsReact.sideNavItemMod.SideNavItemProps
+import typings.carbonComponentsReact.sideNavItemsMod.SideNavItemsProps
+import typings.carbonComponentsReact.sideNavLinkMod.SideNavLinkFC
+import typings.carbonComponentsReact.sideNavLinkMod.SideNavLinkProps
+import typings.carbonComponentsReact.sideNavLinkTextMod.SideNavLinkTextProps
+import typings.carbonComponentsReact.sideNavMenuItemMod.SideNavMenuItemProps
+import typings.carbonComponentsReact.sideNavMenuMod.SideNavMenuProps
+import typings.carbonComponentsReact.sideNavMod.SideNavProps
+import typings.carbonComponentsReact.sideNavSwitcherMod.SideNavSwitcherProps
+import typings.carbonComponentsReact.skeletonIconSkeletonIconMod.SkeletonIconProps
+import typings.carbonComponentsReact.skeletonPlaceholderSkeletonPlaceholderMod.SkeletonPlaceholderProps
+import typings.carbonComponentsReact.skeletonTextSkeletonTextMod.SkeletonTextProps
+import typings.carbonComponentsReact.skipToContentMod.SkipToContentProps
+import typings.carbonComponentsReact.sliderSkeletonMod.SliderSkeletonProps
+import typings.carbonComponentsReact.structuredListSkeletonMod.StructuredListSkeletonProps
+import typings.carbonComponentsReact.structuredListStructuredListMod.AllStructuredListRowProps
+import typings.carbonComponentsReact.structuredListStructuredListMod.StructuredListBodyProps
+import typings.carbonComponentsReact.structuredListStructuredListMod.StructuredListCellProps
+import typings.carbonComponentsReact.structuredListStructuredListMod.StructuredListHeadProps
+import typings.carbonComponentsReact.structuredListStructuredListMod.StructuredListInputProps
+import typings.carbonComponentsReact.structuredListStructuredListMod.StructuredListWrapperProps
+import typings.carbonComponentsReact.switchSwitchMod.SwitchProps
+import typings.carbonComponentsReact.switcherDividerMod.SwitcherDividerProps
+import typings.carbonComponentsReact.switcherItemMod.SwitcherItemProps
+import typings.carbonComponentsReact.switcherMod.SwitcherProps
+import typings.carbonComponentsReact.tabContentTabContentMod.TabContentProps
+import typings.carbonComponentsReact.tableActionListMod.TableActionListProps
+import typings.carbonComponentsReact.tableBatchActionsMod.TableBatchActionsFC
+import typings.carbonComponentsReact.tableBodyMod.TableBodyProps
+import typings.carbonComponentsReact.tableCellMod.TableCellProps
+import typings.carbonComponentsReact.tableContainerMod.TableContainerProps
+import typings.carbonComponentsReact.tableExpandHeaderMod.TableExpandHeaderProps
+import typings.carbonComponentsReact.tableExpandRowMod.TableExpandRowProps
+import typings.carbonComponentsReact.tableExpandedRowMod.TableExpandedRowProps
+import typings.carbonComponentsReact.tableHeadMod.TableHeadProps
+import typings.carbonComponentsReact.tableHeaderMod.TableHeaderFC
+import typings.carbonComponentsReact.tableMod.TableProps
+import typings.carbonComponentsReact.tableRowMod.TableRowProps
+import typings.carbonComponentsReact.tableSelectAllMod.TableSelectAllProps
+import typings.carbonComponentsReact.tableSelectRowMod.TableSelectRowProps
+import typings.carbonComponentsReact.tableToolbarActionMod.TableToolbarActionAnchorProps
+import typings.carbonComponentsReact.tableToolbarActionMod.TableToolbarActionButtonProps
+import typings.carbonComponentsReact.tableToolbarContentMod.TableToolbarContentProps
+import typings.carbonComponentsReact.tableToolbarMenuMod.TableToolbarMenuProps
+import typings.carbonComponentsReact.tableToolbarMod.TableToolbarProps
+import typings.carbonComponentsReact.tableToolbarSearchMod.TableToolbarSearchProps
+import typings.carbonComponentsReact.tabsSkeletonMod.TabsSkeletonProps
+import typings.carbonComponentsReact.tagSkeletonMod.TagSkeletonProps
+import typings.carbonComponentsReact.tagTagMod.ChipTagProps
+import typings.carbonComponentsReact.tagTagMod.FilterTagProps
+import typings.carbonComponentsReact.tagTagMod.TagTypeName
+import typings.carbonComponentsReact.textAreaSkeletonMod.TextAreaSkeletonProps
+import typings.carbonComponentsReact.textAreaTextAreaMod.TextAreaProps
+import typings.carbonComponentsReact.textInputPasswordInputMod.PasswordInputProps
+import typings.carbonComponentsReact.textInputSkeletonMod.TextInputSkeletonProps
+import typings.carbonComponentsReact.textInputTextInputMod.TextInputFC
+import typings.carbonComponentsReact.tileTileMod.ClickableTileProps
+import typings.carbonComponentsReact.tileTileMod.ExpandableTileProps
+import typings.carbonComponentsReact.tileTileMod.SelectableTileProps
+import typings.carbonComponentsReact.tileTileMod.TileAboveTheFoldContentProps
+import typings.carbonComponentsReact.tileTileMod.TileBelowTheFoldContentProps
+import typings.carbonComponentsReact.tileTileMod.TileProps
+import typings.carbonComponentsReact.toggleSmallToggleSmallMod.ToggleSmallProps
+import typings.carbonComponentsReact.toolbarToolbarMod.ToolbarItemProps
+import typings.carbonComponentsReact.toolbarToolbarMod.ToolbarOptionProps
+import typings.carbonComponentsReact.toolbarToolbarMod.ToolbarProps
+import typings.carbonComponentsReact.toolbarToolbarMod.ToolbarTitleProps
+import typings.carbonComponentsReact.tooltipDefinitionTooltipDefinitionMod.TooltipDefinitionProps
+import typings.carbonComponentsReact.tooltipIconTooltipIconMod.TooltipIconProps
+import typings.carbonComponentsReact.tooltipTooltipMod.TooltipProps
+import typings.carbonComponentsReact.treeViewTreeViewMod.TreeViewFC
+import typings.carbonComponentsReact.typingsSharedMod.FCProps
+import typings.carbonComponentsReact.typingsSharedMod.FCReturn
+import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
+import typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn
+import typings.carbonComponentsReact.typingsSharedMod.ListBoxBaseItemType
+import typings.carbonComponentsReact.typingsSharedMod.ReactComponentConstructor
+import typings.carbonComponentsReact.unorderedListUnorderedListMod.UnorderedListProps
+import typings.react.mod.Context
+import typings.react.mod.FC
+import typings.react.mod.ReactNode
+import typings.react.mod.ReactNodeArray
+import typings.std.Extract
+import typings.std.HTMLAnchorElement
+import typings.std.HTMLButtonElement
+import typings.std.HTMLDivElement
+import typings.std.HTMLElement
+import typings.std.HTMLHRElement
+import typings.std.HTMLInputElement
+import typings.std.HTMLLIElement
+import typings.std.HTMLSelectElement
+import typings.std.HTMLTextAreaElement
+import typings.std.HTMLUListElement
+import typings.std.Omit
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object mod {
+  
+  @JSImport("carbon-components-react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("carbon-components-react", "AccordingItem")
+  @js.native
+  open class AccordingItem ()
+    extends typings.carbonComponentsReact.accordionMod.AccordingItem
+  
+  @JSImport("carbon-components-react", "Accordion")
+  @js.native
+  val Accordion: FC[AccordionProps] = js.native
+  
+  @JSImport("carbon-components-react", "AccordionItem")
+  @js.native
+  open class AccordionItem () extends default
+  
+  @JSImport("carbon-components-react", "AccordionSkeleton")
+  @js.native
+  val AccordionSkeleton: FC[AccordionSkeletonProps] = js.native
+  
+  inline def AspectRatio(props: AspectRatioDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def AspectRatio[T /* <: ReactComponentConstructor[scala.Nothing] */](props: AspectRatioCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_a(props: AspectRatioIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_abbr(props: AspectRatioIntrinsicProps[abbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_address(props: AspectRatioIntrinsicProps[address]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_animate(props: AspectRatioIntrinsicProps[animate]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_animateMotion(props: AspectRatioIntrinsicProps[animateMotion]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_animateTransform(props: AspectRatioIntrinsicProps[animateTransform]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_area(props: AspectRatioIntrinsicProps[area]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_article(props: AspectRatioIntrinsicProps[article]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_aside(props: AspectRatioIntrinsicProps[aside]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_audio(props: AspectRatioIntrinsicProps[audio]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_b(props: AspectRatioIntrinsicProps[b]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_base(props: AspectRatioIntrinsicProps[base]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_bdi(props: AspectRatioIntrinsicProps[bdi]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_bdo(props: AspectRatioIntrinsicProps[bdo]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_big(props: AspectRatioIntrinsicProps[big]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_blockquote(props: AspectRatioIntrinsicProps[blockquote]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_body(props: AspectRatioIntrinsicProps[body]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_br(props: AspectRatioIntrinsicProps[br]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_button(props: AspectRatioIntrinsicProps[button]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_canvas(props: AspectRatioIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_caption(props: AspectRatioIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_circle(props: AspectRatioIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_cite(props: AspectRatioIntrinsicProps[cite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_clipPath(props: AspectRatioIntrinsicProps[clipPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_code(props: AspectRatioIntrinsicProps[code]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_col(props: AspectRatioIntrinsicProps[col]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_colgroup(props: AspectRatioIntrinsicProps[colgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_data(props: AspectRatioIntrinsicProps[data]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_datalist(props: AspectRatioIntrinsicProps[datalist]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_dd(props: AspectRatioIntrinsicProps[dd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_defs(props: AspectRatioIntrinsicProps[defs]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_del(props: AspectRatioIntrinsicProps[del]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_desc(props: AspectRatioIntrinsicProps[desc_]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_details(props: AspectRatioIntrinsicProps[details]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_dfn(props: AspectRatioIntrinsicProps[dfn]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_dialog(props: AspectRatioIntrinsicProps[dialog]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_div(props: AspectRatioIntrinsicProps[div]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_dl(props: AspectRatioIntrinsicProps[dl]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_dt(props: AspectRatioIntrinsicProps[dt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_ellipse(props: AspectRatioIntrinsicProps[ellipse]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_em(props: AspectRatioIntrinsicProps[em]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_embed(props: AspectRatioIntrinsicProps[embed]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feBlend(props: AspectRatioIntrinsicProps[feBlend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feColorMatrix(props: AspectRatioIntrinsicProps[feColorMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feComponentTransfer(props: AspectRatioIntrinsicProps[feComponentTransfer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feComposite(props: AspectRatioIntrinsicProps[feComposite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feConvolveMatrix(props: AspectRatioIntrinsicProps[feConvolveMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feDiffuseLighting(props: AspectRatioIntrinsicProps[feDiffuseLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feDisplacementMap(props: AspectRatioIntrinsicProps[feDisplacementMap]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feDistantLight(props: AspectRatioIntrinsicProps[feDistantLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feDropShadow(props: AspectRatioIntrinsicProps[feDropShadow]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feFlood(props: AspectRatioIntrinsicProps[feFlood]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feFuncA(props: AspectRatioIntrinsicProps[feFuncA]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feFuncB(props: AspectRatioIntrinsicProps[feFuncB]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feFuncG(props: AspectRatioIntrinsicProps[feFuncG]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feFuncR(props: AspectRatioIntrinsicProps[feFuncR]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feGaussianBlur(props: AspectRatioIntrinsicProps[feGaussianBlur]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feImage(props: AspectRatioIntrinsicProps[feImage]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feMerge(props: AspectRatioIntrinsicProps[feMerge]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feMergeNode(props: AspectRatioIntrinsicProps[feMergeNode]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feMorphology(props: AspectRatioIntrinsicProps[feMorphology]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feOffset(props: AspectRatioIntrinsicProps[feOffset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_fePointLight(props: AspectRatioIntrinsicProps[fePointLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feSpecularLighting(props: AspectRatioIntrinsicProps[feSpecularLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feSpotLight(props: AspectRatioIntrinsicProps[feSpotLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feTile(props: AspectRatioIntrinsicProps[feTile]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_feTurbulence(props: AspectRatioIntrinsicProps[feTurbulence]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_fieldset(props: AspectRatioIntrinsicProps[fieldset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_figcaption(props: AspectRatioIntrinsicProps[figcaption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_figure(props: AspectRatioIntrinsicProps[figure]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_filter(props: AspectRatioIntrinsicProps[filter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_footer(props: AspectRatioIntrinsicProps[footer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_foreignObject(props: AspectRatioIntrinsicProps[foreignObject]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_form(props: AspectRatioIntrinsicProps[form]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_g(props: AspectRatioIntrinsicProps[g]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_h1(props: AspectRatioIntrinsicProps[h1]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_h2(props: AspectRatioIntrinsicProps[h2]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_h3(props: AspectRatioIntrinsicProps[h3]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_h4(props: AspectRatioIntrinsicProps[h4]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_h5(props: AspectRatioIntrinsicProps[h5]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_h6(props: AspectRatioIntrinsicProps[h6]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_head(props: AspectRatioIntrinsicProps[head]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_header(props: AspectRatioIntrinsicProps[header]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_hgroup(props: AspectRatioIntrinsicProps[hgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_hr(props: AspectRatioIntrinsicProps[hr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_html(props: AspectRatioIntrinsicProps[html]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_i(props: AspectRatioIntrinsicProps[i]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_iframe(props: AspectRatioIntrinsicProps[iframe]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_image(props: AspectRatioIntrinsicProps[image]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_img(props: AspectRatioIntrinsicProps[img]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_input(props: AspectRatioIntrinsicProps[input]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_ins(props: AspectRatioIntrinsicProps[ins]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_kbd(props: AspectRatioIntrinsicProps[kbd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_keygen(props: AspectRatioIntrinsicProps[keygen]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_label(props: AspectRatioIntrinsicProps[label]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_legend(props: AspectRatioIntrinsicProps[legend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_li(props: AspectRatioIntrinsicProps[li]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_line(props: AspectRatioIntrinsicProps[line]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_linearGradient(props: AspectRatioIntrinsicProps[linearGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_link(props: AspectRatioIntrinsicProps[link]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_main(props: AspectRatioIntrinsicProps[main]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_map(props: AspectRatioIntrinsicProps[map]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_mark(props: AspectRatioIntrinsicProps[mark]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_marker(props: AspectRatioIntrinsicProps[marker]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_mask(props: AspectRatioIntrinsicProps[mask]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_menu(props: AspectRatioIntrinsicProps[menu]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_menuitem(props: AspectRatioIntrinsicProps[menuitem]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_meta(props: AspectRatioIntrinsicProps[meta]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_metadata(props: AspectRatioIntrinsicProps[metadata]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_meter(props: AspectRatioIntrinsicProps[meter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_mpath(props: AspectRatioIntrinsicProps[mpath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_nav(props: AspectRatioIntrinsicProps[nav]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_noindex(props: AspectRatioIntrinsicProps[noindex]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_noscript(props: AspectRatioIntrinsicProps[noscript]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_object(props: AspectRatioIntrinsicProps[`object`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_ol(props: AspectRatioIntrinsicProps[ol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_optgroup(props: AspectRatioIntrinsicProps[optgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_option(props: AspectRatioIntrinsicProps[option]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_output(props: AspectRatioIntrinsicProps[output]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_p(props: AspectRatioIntrinsicProps[p]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_param(props: AspectRatioIntrinsicProps[param]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_path(props: AspectRatioIntrinsicProps[path]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_pattern(props: AspectRatioIntrinsicProps[pattern]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_picture(props: AspectRatioIntrinsicProps[picture]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_polygon(props: AspectRatioIntrinsicProps[polygon]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_polyline(props: AspectRatioIntrinsicProps[polyline]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_pre(props: AspectRatioIntrinsicProps[pre]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_progress(props: AspectRatioIntrinsicProps[progress]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_q(props: AspectRatioIntrinsicProps[q]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_radialGradient(props: AspectRatioIntrinsicProps[radialGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_rect(props: AspectRatioIntrinsicProps[rect]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_rp(props: AspectRatioIntrinsicProps[rp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_rt(props: AspectRatioIntrinsicProps[rt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_ruby(props: AspectRatioIntrinsicProps[ruby]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_s(props: AspectRatioIntrinsicProps[s]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_samp(props: AspectRatioIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_script(props: AspectRatioIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_section(props: AspectRatioIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_select(props: AspectRatioIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_slot(props: AspectRatioIntrinsicProps[slot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_small(props: AspectRatioIntrinsicProps[small]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_source(props: AspectRatioIntrinsicProps[source]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_span(props: AspectRatioIntrinsicProps[span]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_stop(props: AspectRatioIntrinsicProps[stop]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_strong(props: AspectRatioIntrinsicProps[strong]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_style(props: AspectRatioIntrinsicProps[style]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_sub(props: AspectRatioIntrinsicProps[sub]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_summary(props: AspectRatioIntrinsicProps[summary]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_sup(props: AspectRatioIntrinsicProps[sup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_svg(props: AspectRatioIntrinsicProps[svg]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_switch(props: AspectRatioIntrinsicProps[switch]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_symbol(props: AspectRatioIntrinsicProps[symbol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_table(props: AspectRatioIntrinsicProps[table]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_tbody(props: AspectRatioIntrinsicProps[tbody]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_td(props: AspectRatioIntrinsicProps[td]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_template(props: AspectRatioIntrinsicProps[template]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_text(props: AspectRatioIntrinsicProps[text]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_textPath(props: AspectRatioIntrinsicProps[textPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_textarea(props: AspectRatioIntrinsicProps[textarea]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_tfoot(props: AspectRatioIntrinsicProps[tfoot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_th(props: AspectRatioIntrinsicProps[th]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_thead(props: AspectRatioIntrinsicProps[thead]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_time(props: AspectRatioIntrinsicProps[time]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_title(props: AspectRatioIntrinsicProps[title]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_tr(props: AspectRatioIntrinsicProps[tr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_track(props: AspectRatioIntrinsicProps[track]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_tspan(props: AspectRatioIntrinsicProps[tspan]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_u(props: AspectRatioIntrinsicProps[u]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_ul(props: AspectRatioIntrinsicProps[ul]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_use(props: AspectRatioIntrinsicProps[use]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_var(props: AspectRatioIntrinsicProps[`var`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_video(props: AspectRatioIntrinsicProps[video]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_view(props: AspectRatioIntrinsicProps[view]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_wbr(props: AspectRatioIntrinsicProps[wbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_webview(props: AspectRatioIntrinsicProps[webview]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "Breadcrumb")
+  @js.native
+  val Breadcrumb: ForwardRefReturn[HTMLElement, BreadcrumbProps] = js.native
+  
+  @JSImport("carbon-components-react", "BreadcrumbItem")
+  @js.native
+  val BreadcrumbItem: ForwardRefReturn[HTMLLIElement, BreadcrumbItemProps] = js.native
+  
+  @JSImport("carbon-components-react", "BreadcrumbSkeleton")
+  @js.native
+  val BreadcrumbSkeleton: FC[BreadcrumbSkeletonProps] = js.native
+  
+  // tslint:disable:unified-signatures breaks certain usages
+  //
+  // Note: TypeScript will try to select the best overload but this is not always easily predictable the more freedom the
+  // generic types have or the more they overlap. If you're having difficulty with these types you can try reexporting the
+  // component casted to your desired type.
+  // ex:
+  // import { Button } from "carbon-components-react"
+  // export const DefaultButton = Button as React.FC<ButtonDefaultProps>;
+  // export const AnchorButton = Button as React.FC<ButtonAnchorProps>;
+  // or just create a wrapper component.
+  inline def Button(
+    props: ForwardRefProps[
+      HTMLAnchorElement | HTMLButtonElement, 
+      ButtonAnchorProps & ButtonKindProps & ButtonDefaultProps
+    ]
+  ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "ButtonSet")
+  @js.native
+  val ButtonSet: ForwardRefReturn[HTMLDivElement, ButtonSetProps] = js.native
+  
+  @JSImport("carbon-components-react", "ButtonSkeleton")
+  @js.native
+  val ButtonSkeleton: FC[ButtonSkeletonProps] = js.native
+  
+  inline def Button_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_abbr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[abbr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_address[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[address] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_animate[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animate] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_animateMotion[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animateMotion] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_animateTransform[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animateTransform] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_area[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[area] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_article[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[article] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_aside[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[aside] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_audio[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[audio] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_b[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[b] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_base[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[base] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_bdi[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[bdi] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_bdo[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[bdo] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_big[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[big] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_blockquote[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[blockquote] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_body[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[body] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_br[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[br] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_button[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[button] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_canvas[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[canvas] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_caption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[caption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_circle[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[circle] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_cite[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[cite] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_clipPath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[clipPath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_code[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[code] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_col[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[col] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_colgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[colgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_data[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[data] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_datalist[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[datalist] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_dd[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dd] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_defs[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[defs] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_del[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[del] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_desc[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[desc_] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_details[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[details] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_dfn[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dfn] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_dialog[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dialog] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_div[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[div] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_dl[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dl] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_dt[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dt] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_ellipse[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ellipse] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_em[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[em] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_embed[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[embed] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feBlend[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feBlend] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feColorMatrix[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feColorMatrix] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feComponentTransfer[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feComponentTransfer] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feComposite[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feComposite] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feConvolveMatrix[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feConvolveMatrix] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feDiffuseLighting[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDiffuseLighting] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feDisplacementMap[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDisplacementMap] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feDistantLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDistantLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feDropShadow[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDropShadow] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feFlood[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFlood] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feFuncA[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncA] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feFuncB[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncB] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feFuncG[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncG] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feFuncR[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncR] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feGaussianBlur[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feGaussianBlur] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feImage[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feImage] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feMerge[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMerge] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feMergeNode[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMergeNode] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feMorphology[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMorphology] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feOffset[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feOffset] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_fePointLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[fePointLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feSpecularLighting[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feSpecularLighting] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feSpotLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feSpotLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feTile[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feTile] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_feTurbulence[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feTurbulence] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_fieldset[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[fieldset] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_figcaption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[figcaption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_figure[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[figure] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_filter[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[filter] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_footer[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[footer] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_foreignObject[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[foreignObject] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_form[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[form] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_g[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[g] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_h1[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h1] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_h2[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h2] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_h3[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h3] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_h4[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h4] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_h5[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h5] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_h6[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h6] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_head[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[head] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_header[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[header] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_hgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[hgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_hr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[hr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_html[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[html] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_i[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[i] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_iframe[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[iframe] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_image[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[image] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_img[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[img] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_input[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[input] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_ins[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ins] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_kbd[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[kbd] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_keygen[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[keygen] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_label[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[label] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_legend[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[legend] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_li[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[li] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_line[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[line] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_linearGradient[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[linearGradient] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_link[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[link] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_main[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[main] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_map[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[map] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_mark[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mark] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_marker[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[marker] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_mask[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mask] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_menu[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[menu] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_menuitem[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[menuitem] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_meta[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[meta] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_metadata[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[metadata] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_meter[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[meter] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_mpath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mpath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_nav[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[nav] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_noindex[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[noindex] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_noscript[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[noscript] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_object[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[`object`] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_ol[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ol] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_optgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[optgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_option[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[option] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_output[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[output] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_p[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[p] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_param[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[param] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_path[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[path] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_pattern[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[pattern] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_picture[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[picture] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_polygon[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[polygon] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_polyline[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[polyline] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_pre[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[pre] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_progress[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[progress] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_q[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[q] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_radialGradient[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[radialGradient] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_rect[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rect] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_rp[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rp] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_rt[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rt] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_ruby[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ruby] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_s[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[s] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_samp[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[samp] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_script[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[script] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_section[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[section] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_select[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[select] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_slot[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[slot] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_small[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[small] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_source[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[source] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_span[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[span] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_stop[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[stop] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_strong[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[strong] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_style[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[style] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_sub[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[sub] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_summary[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[summary] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_sup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[sup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_svg[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[svg] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_switch[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[switch] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_symbol[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[symbol] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_table[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[table] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_tbody[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tbody] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_td[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[td] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_template[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[template] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_text[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[text] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_textPath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[textPath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_textarea[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[textarea] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_tfoot[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tfoot] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_th[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[th] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_thead[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[thead] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_time[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[time] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_title[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[title] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_tr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_track[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[track] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_tspan[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tspan] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_u[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[u] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_ul[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ul] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_use[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[use] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_var[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[`var`] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_video[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[video] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_view[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[view] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_wbr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[wbr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Button_webview[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[webview] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "Checkbox")
+  @js.native
+  val Checkbox: ForwardRefReturn[HTMLInputElement, CheckboxProps] = js.native
+  
+  @JSImport("carbon-components-react", "CheckboxSkeleton")
+  @js.native
+  val CheckboxSkeleton: FC[CheckboxSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "ClickableTile")
+  @js.native
+  open class ClickableTile protected ()
+    extends typings.carbonComponentsReact.tileMod.ClickableTile {
+    def this(props: ClickableTileProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ClickableTileProps, context: Any) = this()
+  }
+  
+  // tslint:disable:unified-signatures
+  inline def CodeSnippet(props: FCProps[CodeSnippetDivProps | CodeSnippetInlineProps | CodeSnippetMultiProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("CodeSnippet")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "CodeSnippetSkeleton")
+  @js.native
+  val CodeSnippetSkeleton: FC[CodeSnippetSkeletonProps] = js.native
+  
+  inline def Column(props: ColumnDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Column[T /* <: ReactComponentConstructor[scala.Nothing] */](props: ColumnCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_a(props: ColumnIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_abbr(props: ColumnIntrinsicProps[abbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_address(props: ColumnIntrinsicProps[address]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_animate(props: ColumnIntrinsicProps[animate]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_animateMotion(props: ColumnIntrinsicProps[animateMotion]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_animateTransform(props: ColumnIntrinsicProps[animateTransform]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_area(props: ColumnIntrinsicProps[area]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_article(props: ColumnIntrinsicProps[article]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_aside(props: ColumnIntrinsicProps[aside]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_audio(props: ColumnIntrinsicProps[audio]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_b(props: ColumnIntrinsicProps[b]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_base(props: ColumnIntrinsicProps[base]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_bdi(props: ColumnIntrinsicProps[bdi]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_bdo(props: ColumnIntrinsicProps[bdo]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_big(props: ColumnIntrinsicProps[big]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_blockquote(props: ColumnIntrinsicProps[blockquote]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_body(props: ColumnIntrinsicProps[body]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_br(props: ColumnIntrinsicProps[br]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_button(props: ColumnIntrinsicProps[button]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_canvas(props: ColumnIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_caption(props: ColumnIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_circle(props: ColumnIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_cite(props: ColumnIntrinsicProps[cite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_clipPath(props: ColumnIntrinsicProps[clipPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_code(props: ColumnIntrinsicProps[code]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_col(props: ColumnIntrinsicProps[col]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_colgroup(props: ColumnIntrinsicProps[colgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_data(props: ColumnIntrinsicProps[data]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_datalist(props: ColumnIntrinsicProps[datalist]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_dd(props: ColumnIntrinsicProps[dd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_defs(props: ColumnIntrinsicProps[defs]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_del(props: ColumnIntrinsicProps[del]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_desc(props: ColumnIntrinsicProps[desc_]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_details(props: ColumnIntrinsicProps[details]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_dfn(props: ColumnIntrinsicProps[dfn]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_dialog(props: ColumnIntrinsicProps[dialog]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_div(props: ColumnIntrinsicProps[div]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_dl(props: ColumnIntrinsicProps[dl]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_dt(props: ColumnIntrinsicProps[dt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_ellipse(props: ColumnIntrinsicProps[ellipse]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_em(props: ColumnIntrinsicProps[em]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_embed(props: ColumnIntrinsicProps[embed]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feBlend(props: ColumnIntrinsicProps[feBlend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feColorMatrix(props: ColumnIntrinsicProps[feColorMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feComponentTransfer(props: ColumnIntrinsicProps[feComponentTransfer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feComposite(props: ColumnIntrinsicProps[feComposite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feConvolveMatrix(props: ColumnIntrinsicProps[feConvolveMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feDiffuseLighting(props: ColumnIntrinsicProps[feDiffuseLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feDisplacementMap(props: ColumnIntrinsicProps[feDisplacementMap]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feDistantLight(props: ColumnIntrinsicProps[feDistantLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feDropShadow(props: ColumnIntrinsicProps[feDropShadow]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feFlood(props: ColumnIntrinsicProps[feFlood]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feFuncA(props: ColumnIntrinsicProps[feFuncA]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feFuncB(props: ColumnIntrinsicProps[feFuncB]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feFuncG(props: ColumnIntrinsicProps[feFuncG]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feFuncR(props: ColumnIntrinsicProps[feFuncR]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feGaussianBlur(props: ColumnIntrinsicProps[feGaussianBlur]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feImage(props: ColumnIntrinsicProps[feImage]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feMerge(props: ColumnIntrinsicProps[feMerge]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feMergeNode(props: ColumnIntrinsicProps[feMergeNode]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feMorphology(props: ColumnIntrinsicProps[feMorphology]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feOffset(props: ColumnIntrinsicProps[feOffset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_fePointLight(props: ColumnIntrinsicProps[fePointLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feSpecularLighting(props: ColumnIntrinsicProps[feSpecularLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feSpotLight(props: ColumnIntrinsicProps[feSpotLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feTile(props: ColumnIntrinsicProps[feTile]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_feTurbulence(props: ColumnIntrinsicProps[feTurbulence]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_fieldset(props: ColumnIntrinsicProps[fieldset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_figcaption(props: ColumnIntrinsicProps[figcaption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_figure(props: ColumnIntrinsicProps[figure]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_filter(props: ColumnIntrinsicProps[filter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_footer(props: ColumnIntrinsicProps[footer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_foreignObject(props: ColumnIntrinsicProps[foreignObject]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_form(props: ColumnIntrinsicProps[form]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_g(props: ColumnIntrinsicProps[g]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_h1(props: ColumnIntrinsicProps[h1]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_h2(props: ColumnIntrinsicProps[h2]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_h3(props: ColumnIntrinsicProps[h3]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_h4(props: ColumnIntrinsicProps[h4]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_h5(props: ColumnIntrinsicProps[h5]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_h6(props: ColumnIntrinsicProps[h6]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_head(props: ColumnIntrinsicProps[head]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_header(props: ColumnIntrinsicProps[header]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_hgroup(props: ColumnIntrinsicProps[hgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_hr(props: ColumnIntrinsicProps[hr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_html(props: ColumnIntrinsicProps[html]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_i(props: ColumnIntrinsicProps[i]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_iframe(props: ColumnIntrinsicProps[iframe]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_image(props: ColumnIntrinsicProps[image]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_img(props: ColumnIntrinsicProps[img]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_input(props: ColumnIntrinsicProps[input]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_ins(props: ColumnIntrinsicProps[ins]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_kbd(props: ColumnIntrinsicProps[kbd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_keygen(props: ColumnIntrinsicProps[keygen]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_label(props: ColumnIntrinsicProps[label]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_legend(props: ColumnIntrinsicProps[legend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_li(props: ColumnIntrinsicProps[li]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_line(props: ColumnIntrinsicProps[line]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_linearGradient(props: ColumnIntrinsicProps[linearGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_link(props: ColumnIntrinsicProps[link]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_main(props: ColumnIntrinsicProps[main]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_map(props: ColumnIntrinsicProps[map]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_mark(props: ColumnIntrinsicProps[mark]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_marker(props: ColumnIntrinsicProps[marker]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_mask(props: ColumnIntrinsicProps[mask]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_menu(props: ColumnIntrinsicProps[menu]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_menuitem(props: ColumnIntrinsicProps[menuitem]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_meta(props: ColumnIntrinsicProps[meta]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_metadata(props: ColumnIntrinsicProps[metadata]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_meter(props: ColumnIntrinsicProps[meter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_mpath(props: ColumnIntrinsicProps[mpath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_nav(props: ColumnIntrinsicProps[nav]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_noindex(props: ColumnIntrinsicProps[noindex]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_noscript(props: ColumnIntrinsicProps[noscript]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_object(props: ColumnIntrinsicProps[`object`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_ol(props: ColumnIntrinsicProps[ol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_optgroup(props: ColumnIntrinsicProps[optgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_option(props: ColumnIntrinsicProps[option]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_output(props: ColumnIntrinsicProps[output]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_p(props: ColumnIntrinsicProps[p]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_param(props: ColumnIntrinsicProps[param]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_path(props: ColumnIntrinsicProps[path]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_pattern(props: ColumnIntrinsicProps[pattern]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_picture(props: ColumnIntrinsicProps[picture]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_polygon(props: ColumnIntrinsicProps[polygon]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_polyline(props: ColumnIntrinsicProps[polyline]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_pre(props: ColumnIntrinsicProps[pre]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_progress(props: ColumnIntrinsicProps[progress]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_q(props: ColumnIntrinsicProps[q]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_radialGradient(props: ColumnIntrinsicProps[radialGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_rect(props: ColumnIntrinsicProps[rect]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_rp(props: ColumnIntrinsicProps[rp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_rt(props: ColumnIntrinsicProps[rt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_ruby(props: ColumnIntrinsicProps[ruby]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_s(props: ColumnIntrinsicProps[s]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_samp(props: ColumnIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_script(props: ColumnIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_section(props: ColumnIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_select(props: ColumnIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_slot(props: ColumnIntrinsicProps[slot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_small(props: ColumnIntrinsicProps[small]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_source(props: ColumnIntrinsicProps[source]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_span(props: ColumnIntrinsicProps[span]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_stop(props: ColumnIntrinsicProps[stop]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_strong(props: ColumnIntrinsicProps[strong]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_style(props: ColumnIntrinsicProps[style]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_sub(props: ColumnIntrinsicProps[sub]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_summary(props: ColumnIntrinsicProps[summary]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_sup(props: ColumnIntrinsicProps[sup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_svg(props: ColumnIntrinsicProps[svg]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_switch(props: ColumnIntrinsicProps[switch]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_symbol(props: ColumnIntrinsicProps[symbol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_table(props: ColumnIntrinsicProps[table]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_tbody(props: ColumnIntrinsicProps[tbody]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_td(props: ColumnIntrinsicProps[td]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_template(props: ColumnIntrinsicProps[template]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_text(props: ColumnIntrinsicProps[text]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_textPath(props: ColumnIntrinsicProps[textPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_textarea(props: ColumnIntrinsicProps[textarea]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_tfoot(props: ColumnIntrinsicProps[tfoot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_th(props: ColumnIntrinsicProps[th]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_thead(props: ColumnIntrinsicProps[thead]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_time(props: ColumnIntrinsicProps[time]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_title(props: ColumnIntrinsicProps[title]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_tr(props: ColumnIntrinsicProps[tr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_track(props: ColumnIntrinsicProps[track]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_tspan(props: ColumnIntrinsicProps[tspan]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_u(props: ColumnIntrinsicProps[u]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_ul(props: ColumnIntrinsicProps[ul]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_use(props: ColumnIntrinsicProps[use]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_var(props: ColumnIntrinsicProps[`var`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_video(props: ColumnIntrinsicProps[video]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_view(props: ColumnIntrinsicProps[view]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_wbr(props: ColumnIntrinsicProps[wbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_webview(props: ColumnIntrinsicProps[webview]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def ComboBox[T](props: ForwardRefProps[HTMLInputElement, ComboBoxProps[T, Extract[T, js.Object]]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("ComboBox")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "ComposedModal")
+  @js.native
+  open class ComposedModal ()
+    extends typings.carbonComponentsReact.composedModalMod.default
+  
+  inline def Content(props: ContentDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "ContentSwitcher")
+  @js.native
+  open class ContentSwitcher ()
+    extends typings.carbonComponentsReact.contentSwitcherMod.default
+  
+  inline def Content_a(props: ContentIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_abbr(props: ContentIntrinsicProps[abbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_address(props: ContentIntrinsicProps[address]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_animate(props: ContentIntrinsicProps[animate]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_animateMotion(props: ContentIntrinsicProps[animateMotion]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_animateTransform(props: ContentIntrinsicProps[animateTransform]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_area(props: ContentIntrinsicProps[area]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_article(props: ContentIntrinsicProps[article]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_aside(props: ContentIntrinsicProps[aside]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_audio(props: ContentIntrinsicProps[audio]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_b(props: ContentIntrinsicProps[b]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_base(props: ContentIntrinsicProps[base]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_bdi(props: ContentIntrinsicProps[bdi]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_bdo(props: ContentIntrinsicProps[bdo]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_big(props: ContentIntrinsicProps[big]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_blockquote(props: ContentIntrinsicProps[blockquote]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_body(props: ContentIntrinsicProps[body]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_br(props: ContentIntrinsicProps[br]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_button(props: ContentIntrinsicProps[button]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_canvas(props: ContentIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_caption(props: ContentIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_circle(props: ContentIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_cite(props: ContentIntrinsicProps[cite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_clipPath(props: ContentIntrinsicProps[clipPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_code(props: ContentIntrinsicProps[code]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_col(props: ContentIntrinsicProps[col]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_colgroup(props: ContentIntrinsicProps[colgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_data(props: ContentIntrinsicProps[data]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_datalist(props: ContentIntrinsicProps[datalist]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_dd(props: ContentIntrinsicProps[dd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_defs(props: ContentIntrinsicProps[defs]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_del(props: ContentIntrinsicProps[del]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_desc(props: ContentIntrinsicProps[desc_]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_details(props: ContentIntrinsicProps[details]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_dfn(props: ContentIntrinsicProps[dfn]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_dialog(props: ContentIntrinsicProps[dialog]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_div(props: ContentIntrinsicProps[div]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_dl(props: ContentIntrinsicProps[dl]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_dt(props: ContentIntrinsicProps[dt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_ellipse(props: ContentIntrinsicProps[ellipse]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_em(props: ContentIntrinsicProps[em]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_embed(props: ContentIntrinsicProps[embed]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feBlend(props: ContentIntrinsicProps[feBlend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feColorMatrix(props: ContentIntrinsicProps[feColorMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feComponentTransfer(props: ContentIntrinsicProps[feComponentTransfer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feComposite(props: ContentIntrinsicProps[feComposite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feConvolveMatrix(props: ContentIntrinsicProps[feConvolveMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feDiffuseLighting(props: ContentIntrinsicProps[feDiffuseLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feDisplacementMap(props: ContentIntrinsicProps[feDisplacementMap]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feDistantLight(props: ContentIntrinsicProps[feDistantLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feDropShadow(props: ContentIntrinsicProps[feDropShadow]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feFlood(props: ContentIntrinsicProps[feFlood]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feFuncA(props: ContentIntrinsicProps[feFuncA]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feFuncB(props: ContentIntrinsicProps[feFuncB]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feFuncG(props: ContentIntrinsicProps[feFuncG]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feFuncR(props: ContentIntrinsicProps[feFuncR]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feGaussianBlur(props: ContentIntrinsicProps[feGaussianBlur]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feImage(props: ContentIntrinsicProps[feImage]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feMerge(props: ContentIntrinsicProps[feMerge]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feMergeNode(props: ContentIntrinsicProps[feMergeNode]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feMorphology(props: ContentIntrinsicProps[feMorphology]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feOffset(props: ContentIntrinsicProps[feOffset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_fePointLight(props: ContentIntrinsicProps[fePointLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feSpecularLighting(props: ContentIntrinsicProps[feSpecularLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feSpotLight(props: ContentIntrinsicProps[feSpotLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feTile(props: ContentIntrinsicProps[feTile]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_feTurbulence(props: ContentIntrinsicProps[feTurbulence]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_fieldset(props: ContentIntrinsicProps[fieldset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_figcaption(props: ContentIntrinsicProps[figcaption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_figure(props: ContentIntrinsicProps[figure]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_filter(props: ContentIntrinsicProps[filter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_footer(props: ContentIntrinsicProps[footer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_foreignObject(props: ContentIntrinsicProps[foreignObject]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_form(props: ContentIntrinsicProps[form]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_g(props: ContentIntrinsicProps[g]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_h1(props: ContentIntrinsicProps[h1]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_h2(props: ContentIntrinsicProps[h2]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_h3(props: ContentIntrinsicProps[h3]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_h4(props: ContentIntrinsicProps[h4]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_h5(props: ContentIntrinsicProps[h5]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_h6(props: ContentIntrinsicProps[h6]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_head(props: ContentIntrinsicProps[head]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_header(props: ContentIntrinsicProps[header]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_hgroup(props: ContentIntrinsicProps[hgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_hr(props: ContentIntrinsicProps[hr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_html(props: ContentIntrinsicProps[html]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_i(props: ContentIntrinsicProps[i]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_iframe(props: ContentIntrinsicProps[iframe]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_image(props: ContentIntrinsicProps[image]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_img(props: ContentIntrinsicProps[img]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_input(props: ContentIntrinsicProps[input]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_ins(props: ContentIntrinsicProps[ins]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_kbd(props: ContentIntrinsicProps[kbd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_keygen(props: ContentIntrinsicProps[keygen]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_label(props: ContentIntrinsicProps[label]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_legend(props: ContentIntrinsicProps[legend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_li(props: ContentIntrinsicProps[li]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_line(props: ContentIntrinsicProps[line]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_linearGradient(props: ContentIntrinsicProps[linearGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_link(props: ContentIntrinsicProps[link]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_main(props: ContentIntrinsicProps[main]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_map(props: ContentIntrinsicProps[map]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_mark(props: ContentIntrinsicProps[mark]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_marker(props: ContentIntrinsicProps[marker]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_mask(props: ContentIntrinsicProps[mask]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_menu(props: ContentIntrinsicProps[menu]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_menuitem(props: ContentIntrinsicProps[menuitem]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_meta(props: ContentIntrinsicProps[meta]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_metadata(props: ContentIntrinsicProps[metadata]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_meter(props: ContentIntrinsicProps[meter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_mpath(props: ContentIntrinsicProps[mpath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_nav(props: ContentIntrinsicProps[nav]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_noindex(props: ContentIntrinsicProps[noindex]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_noscript(props: ContentIntrinsicProps[noscript]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_object(props: ContentIntrinsicProps[`object`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_ol(props: ContentIntrinsicProps[ol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_optgroup(props: ContentIntrinsicProps[optgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_option(props: ContentIntrinsicProps[option]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_output(props: ContentIntrinsicProps[output]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_p(props: ContentIntrinsicProps[p]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_param(props: ContentIntrinsicProps[param]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_path(props: ContentIntrinsicProps[path]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_pattern(props: ContentIntrinsicProps[pattern]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_picture(props: ContentIntrinsicProps[picture]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_polygon(props: ContentIntrinsicProps[polygon]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_polyline(props: ContentIntrinsicProps[polyline]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_pre(props: ContentIntrinsicProps[pre]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_progress(props: ContentIntrinsicProps[progress]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_q(props: ContentIntrinsicProps[q]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_radialGradient(props: ContentIntrinsicProps[radialGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_rect(props: ContentIntrinsicProps[rect]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_rp(props: ContentIntrinsicProps[rp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_rt(props: ContentIntrinsicProps[rt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_ruby(props: ContentIntrinsicProps[ruby]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_s(props: ContentIntrinsicProps[s]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_samp(props: ContentIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_script(props: ContentIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_section(props: ContentIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_select(props: ContentIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_slot(props: ContentIntrinsicProps[slot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_small(props: ContentIntrinsicProps[small]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_source(props: ContentIntrinsicProps[source]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_span(props: ContentIntrinsicProps[span]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_stop(props: ContentIntrinsicProps[stop]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_strong(props: ContentIntrinsicProps[strong]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_style(props: ContentIntrinsicProps[style]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_sub(props: ContentIntrinsicProps[sub]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_summary(props: ContentIntrinsicProps[summary]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_sup(props: ContentIntrinsicProps[sup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_svg(props: ContentIntrinsicProps[svg]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_switch(props: ContentIntrinsicProps[switch]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_symbol(props: ContentIntrinsicProps[symbol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_table(props: ContentIntrinsicProps[table]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_tbody(props: ContentIntrinsicProps[tbody]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_td(props: ContentIntrinsicProps[td]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_template(props: ContentIntrinsicProps[template]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_text(props: ContentIntrinsicProps[text]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_textPath(props: ContentIntrinsicProps[textPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_textarea(props: ContentIntrinsicProps[textarea]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_tfoot(props: ContentIntrinsicProps[tfoot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_th(props: ContentIntrinsicProps[th]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_thead(props: ContentIntrinsicProps[thead]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_time(props: ContentIntrinsicProps[time]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_title(props: ContentIntrinsicProps[title]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_tr(props: ContentIntrinsicProps[tr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_track(props: ContentIntrinsicProps[track]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_tspan(props: ContentIntrinsicProps[tspan]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_u(props: ContentIntrinsicProps[u]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_ul(props: ContentIntrinsicProps[ul]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_use(props: ContentIntrinsicProps[use]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_var(props: ContentIntrinsicProps[`var`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_video(props: ContentIntrinsicProps[video]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_view(props: ContentIntrinsicProps[view]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_wbr(props: ContentIntrinsicProps[wbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_webview(props: ContentIntrinsicProps[webview]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  /**
+    * @deprecated
+    */
+  @JSImport("carbon-components-react", "ControlledPasswordInput")
+  @js.native
+  val ControlledPasswordInput: ForwardRefReturn[HTMLInputElement, ControlledPasswordInputProps] = js.native
+  
+  @JSImport("carbon-components-react", "Copy")
+  @js.native
+  val Copy: FC[CopyProps] = js.native
+  
+  @JSImport("carbon-components-react", "CopyButton")
+  @js.native
+  val CopyButton: FC[CopyButtonProps] = js.native
+  
+  // tslint:disable:unified-signatures breaks certain usages
+  inline def DangerButton(props: FCProps[ButtonAnchorProps | ButtonDefaultProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_T_ReactComponentConstructorNothing[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_a(props: FCProps[ButtonIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_abbr(props: FCProps[ButtonIntrinsicProps[abbr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_address(props: FCProps[ButtonIntrinsicProps[address]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_animate(props: FCProps[ButtonIntrinsicProps[animate]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_animateMotion(props: FCProps[ButtonIntrinsicProps[animateMotion]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_animateTransform(props: FCProps[ButtonIntrinsicProps[animateTransform]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_area(props: FCProps[ButtonIntrinsicProps[area]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_article(props: FCProps[ButtonIntrinsicProps[article]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_aside(props: FCProps[ButtonIntrinsicProps[aside]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_audio(props: FCProps[ButtonIntrinsicProps[audio]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_b(props: FCProps[ButtonIntrinsicProps[b]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_base(props: FCProps[ButtonIntrinsicProps[base]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_bdi(props: FCProps[ButtonIntrinsicProps[bdi]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_bdo(props: FCProps[ButtonIntrinsicProps[bdo]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_big(props: FCProps[ButtonIntrinsicProps[big]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_blockquote(props: FCProps[ButtonIntrinsicProps[blockquote]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_body(props: FCProps[ButtonIntrinsicProps[body]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_br(props: FCProps[ButtonIntrinsicProps[br]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_button(props: FCProps[ButtonIntrinsicProps[button]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_canvas(props: FCProps[ButtonIntrinsicProps[canvas]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_caption(props: FCProps[ButtonIntrinsicProps[caption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_circle(props: FCProps[ButtonIntrinsicProps[circle]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_cite(props: FCProps[ButtonIntrinsicProps[cite]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_clipPath(props: FCProps[ButtonIntrinsicProps[clipPath]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_code(props: FCProps[ButtonIntrinsicProps[code]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_col(props: FCProps[ButtonIntrinsicProps[col]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_colgroup(props: FCProps[ButtonIntrinsicProps[colgroup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_data(props: FCProps[ButtonIntrinsicProps[data]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_datalist(props: FCProps[ButtonIntrinsicProps[datalist]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_dd(props: FCProps[ButtonIntrinsicProps[dd]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_defs(props: FCProps[ButtonIntrinsicProps[defs]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_del(props: FCProps[ButtonIntrinsicProps[del]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_desc(props: FCProps[ButtonIntrinsicProps[desc_]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_details(props: FCProps[ButtonIntrinsicProps[details]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_dfn(props: FCProps[ButtonIntrinsicProps[dfn]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_dialog(props: FCProps[ButtonIntrinsicProps[dialog]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_div(props: FCProps[ButtonIntrinsicProps[div]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_dl(props: FCProps[ButtonIntrinsicProps[dl]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_dt(props: FCProps[ButtonIntrinsicProps[dt]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_ellipse(props: FCProps[ButtonIntrinsicProps[ellipse]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_em(props: FCProps[ButtonIntrinsicProps[em]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_embed(props: FCProps[ButtonIntrinsicProps[embed]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feBlend(props: FCProps[ButtonIntrinsicProps[feBlend]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feColorMatrix(props: FCProps[ButtonIntrinsicProps[feColorMatrix]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feComponentTransfer(props: FCProps[ButtonIntrinsicProps[feComponentTransfer]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feComposite(props: FCProps[ButtonIntrinsicProps[feComposite]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feConvolveMatrix(props: FCProps[ButtonIntrinsicProps[feConvolveMatrix]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feDiffuseLighting(props: FCProps[ButtonIntrinsicProps[feDiffuseLighting]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feDisplacementMap(props: FCProps[ButtonIntrinsicProps[feDisplacementMap]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feDistantLight(props: FCProps[ButtonIntrinsicProps[feDistantLight]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feDropShadow(props: FCProps[ButtonIntrinsicProps[feDropShadow]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feFlood(props: FCProps[ButtonIntrinsicProps[feFlood]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feFuncA(props: FCProps[ButtonIntrinsicProps[feFuncA]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feFuncB(props: FCProps[ButtonIntrinsicProps[feFuncB]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feFuncG(props: FCProps[ButtonIntrinsicProps[feFuncG]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feFuncR(props: FCProps[ButtonIntrinsicProps[feFuncR]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feGaussianBlur(props: FCProps[ButtonIntrinsicProps[feGaussianBlur]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feImage(props: FCProps[ButtonIntrinsicProps[feImage]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feMerge(props: FCProps[ButtonIntrinsicProps[feMerge]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feMergeNode(props: FCProps[ButtonIntrinsicProps[feMergeNode]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feMorphology(props: FCProps[ButtonIntrinsicProps[feMorphology]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feOffset(props: FCProps[ButtonIntrinsicProps[feOffset]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_fePointLight(props: FCProps[ButtonIntrinsicProps[fePointLight]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feSpecularLighting(props: FCProps[ButtonIntrinsicProps[feSpecularLighting]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feSpotLight(props: FCProps[ButtonIntrinsicProps[feSpotLight]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feTile(props: FCProps[ButtonIntrinsicProps[feTile]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_feTurbulence(props: FCProps[ButtonIntrinsicProps[feTurbulence]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_fieldset(props: FCProps[ButtonIntrinsicProps[fieldset]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_figcaption(props: FCProps[ButtonIntrinsicProps[figcaption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_figure(props: FCProps[ButtonIntrinsicProps[figure]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_filter(props: FCProps[ButtonIntrinsicProps[filter]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_footer(props: FCProps[ButtonIntrinsicProps[footer]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_foreignObject(props: FCProps[ButtonIntrinsicProps[foreignObject]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_form(props: FCProps[ButtonIntrinsicProps[form]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_g(props: FCProps[ButtonIntrinsicProps[g]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_h1(props: FCProps[ButtonIntrinsicProps[h1]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_h2(props: FCProps[ButtonIntrinsicProps[h2]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_h3(props: FCProps[ButtonIntrinsicProps[h3]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_h4(props: FCProps[ButtonIntrinsicProps[h4]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_h5(props: FCProps[ButtonIntrinsicProps[h5]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_h6(props: FCProps[ButtonIntrinsicProps[h6]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_head(props: FCProps[ButtonIntrinsicProps[head]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_header(props: FCProps[ButtonIntrinsicProps[header]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_hgroup(props: FCProps[ButtonIntrinsicProps[hgroup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_hr(props: FCProps[ButtonIntrinsicProps[hr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_html(props: FCProps[ButtonIntrinsicProps[html]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_i(props: FCProps[ButtonIntrinsicProps[i]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_iframe(props: FCProps[ButtonIntrinsicProps[iframe]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_image(props: FCProps[ButtonIntrinsicProps[image]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_img(props: FCProps[ButtonIntrinsicProps[img]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_input(props: FCProps[ButtonIntrinsicProps[input]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_ins(props: FCProps[ButtonIntrinsicProps[ins]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_kbd(props: FCProps[ButtonIntrinsicProps[kbd]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_keygen(props: FCProps[ButtonIntrinsicProps[keygen]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_label(props: FCProps[ButtonIntrinsicProps[label]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_legend(props: FCProps[ButtonIntrinsicProps[legend]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_li(props: FCProps[ButtonIntrinsicProps[li]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_line(props: FCProps[ButtonIntrinsicProps[line]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_linearGradient(props: FCProps[ButtonIntrinsicProps[linearGradient]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_link(props: FCProps[ButtonIntrinsicProps[link]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_main(props: FCProps[ButtonIntrinsicProps[main]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_map(props: FCProps[ButtonIntrinsicProps[map]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_mark(props: FCProps[ButtonIntrinsicProps[mark]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_marker(props: FCProps[ButtonIntrinsicProps[marker]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_mask(props: FCProps[ButtonIntrinsicProps[mask]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_menu(props: FCProps[ButtonIntrinsicProps[menu]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_menuitem(props: FCProps[ButtonIntrinsicProps[menuitem]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_meta(props: FCProps[ButtonIntrinsicProps[meta]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_metadata(props: FCProps[ButtonIntrinsicProps[metadata]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_meter(props: FCProps[ButtonIntrinsicProps[meter]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_mpath(props: FCProps[ButtonIntrinsicProps[mpath]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_nav(props: FCProps[ButtonIntrinsicProps[nav]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_noindex(props: FCProps[ButtonIntrinsicProps[noindex]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_noscript(props: FCProps[ButtonIntrinsicProps[noscript]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_object(props: FCProps[ButtonIntrinsicProps[`object`]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_ol(props: FCProps[ButtonIntrinsicProps[ol]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_optgroup(props: FCProps[ButtonIntrinsicProps[optgroup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_option(props: FCProps[ButtonIntrinsicProps[option]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_output(props: FCProps[ButtonIntrinsicProps[output]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_p(props: FCProps[ButtonIntrinsicProps[p]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_param(props: FCProps[ButtonIntrinsicProps[param]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_path(props: FCProps[ButtonIntrinsicProps[path]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_pattern(props: FCProps[ButtonIntrinsicProps[pattern]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_picture(props: FCProps[ButtonIntrinsicProps[picture]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_polygon(props: FCProps[ButtonIntrinsicProps[polygon]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_polyline(props: FCProps[ButtonIntrinsicProps[polyline]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_pre(props: FCProps[ButtonIntrinsicProps[pre]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_progress(props: FCProps[ButtonIntrinsicProps[progress]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_q(props: FCProps[ButtonIntrinsicProps[q]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_radialGradient(props: FCProps[ButtonIntrinsicProps[radialGradient]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_rect(props: FCProps[ButtonIntrinsicProps[rect]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_rp(props: FCProps[ButtonIntrinsicProps[rp]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_rt(props: FCProps[ButtonIntrinsicProps[rt]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_ruby(props: FCProps[ButtonIntrinsicProps[ruby]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_s(props: FCProps[ButtonIntrinsicProps[s]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_samp(props: FCProps[ButtonIntrinsicProps[samp]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_script(props: FCProps[ButtonIntrinsicProps[script]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_section(props: FCProps[ButtonIntrinsicProps[section]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_select(props: FCProps[ButtonIntrinsicProps[select]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_slot(props: FCProps[ButtonIntrinsicProps[slot]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_small(props: FCProps[ButtonIntrinsicProps[small]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_source(props: FCProps[ButtonIntrinsicProps[source]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_span(props: FCProps[ButtonIntrinsicProps[span]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_stop(props: FCProps[ButtonIntrinsicProps[stop]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_strong(props: FCProps[ButtonIntrinsicProps[strong]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_style(props: FCProps[ButtonIntrinsicProps[style]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_sub(props: FCProps[ButtonIntrinsicProps[sub]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_summary(props: FCProps[ButtonIntrinsicProps[summary]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_sup(props: FCProps[ButtonIntrinsicProps[sup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_svg(props: FCProps[ButtonIntrinsicProps[svg]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_switch(props: FCProps[ButtonIntrinsicProps[switch]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_symbol(props: FCProps[ButtonIntrinsicProps[symbol]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_table(props: FCProps[ButtonIntrinsicProps[table]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_tbody(props: FCProps[ButtonIntrinsicProps[tbody]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_td(props: FCProps[ButtonIntrinsicProps[td]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_template(props: FCProps[ButtonIntrinsicProps[template]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_text(props: FCProps[ButtonIntrinsicProps[text]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_textPath(props: FCProps[ButtonIntrinsicProps[textPath]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_textarea(props: FCProps[ButtonIntrinsicProps[textarea]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_tfoot(props: FCProps[ButtonIntrinsicProps[tfoot]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_th(props: FCProps[ButtonIntrinsicProps[th]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_thead(props: FCProps[ButtonIntrinsicProps[thead]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_time(props: FCProps[ButtonIntrinsicProps[time]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_title(props: FCProps[ButtonIntrinsicProps[title]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_tr(props: FCProps[ButtonIntrinsicProps[tr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_track(props: FCProps[ButtonIntrinsicProps[track]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_tspan(props: FCProps[ButtonIntrinsicProps[tspan]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_u(props: FCProps[ButtonIntrinsicProps[u]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_ul(props: FCProps[ButtonIntrinsicProps[ul]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_use(props: FCProps[ButtonIntrinsicProps[use]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_var(props: FCProps[ButtonIntrinsicProps[`var`]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_video(props: FCProps[ButtonIntrinsicProps[video]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_view(props: FCProps[ButtonIntrinsicProps[view]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_wbr(props: FCProps[ButtonIntrinsicProps[wbr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def DangerButton_webview(props: FCProps[ButtonIntrinsicProps[webview]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "DataTable")
+  @js.native
+  open class DataTable[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] ()
+    extends typings.carbonComponentsReact.dataTableMod.default[R, H]
+  object DataTable {
+    
+    @JSImport("carbon-components-react", "DataTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    /* was `typeof Table` */
+    @JSImport("carbon-components-react", "DataTable.Table")
+    @js.native
+    val Table: FC[TableProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableActionList` */
+    @JSImport("carbon-components-react", "DataTable.TableActionList")
+    @js.native
+    val TableActionList: FC[TableActionListProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableBatchAction` */
+    inline def TableBatchAction(
+      props: ForwardRefProps[
+          HTMLAnchorElement | HTMLButtonElement, 
+          ButtonAnchorProps & ButtonKindProps & ButtonDefaultProps
+        ]
+    ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    /* static member */
+    /* was `typeof TableBatchAction` */
+    inline def TableBatchAction_R_HTMLElement[R /* <: HTMLElement */](
+      props: ForwardRefProps[
+          R, 
+          ButtonIntrinsicProps[a] & ButtonKindProps & ButtonIntrinsicProps[abbr] & ButtonIntrinsicProps[address] & ButtonIntrinsicProps[area] & ButtonIntrinsicProps[article] & ButtonIntrinsicProps[aside] & ButtonIntrinsicProps[audio] & ButtonIntrinsicProps[b] & ButtonIntrinsicProps[base] & ButtonIntrinsicProps[bdi] & ButtonIntrinsicProps[bdo] & ButtonIntrinsicProps[big] & ButtonIntrinsicProps[blockquote] & ButtonIntrinsicProps[body] & ButtonIntrinsicProps[br] & ButtonIntrinsicProps[button] & ButtonIntrinsicProps[canvas] & ButtonIntrinsicProps[caption] & ButtonIntrinsicProps[cite] & ButtonIntrinsicProps[code] & ButtonIntrinsicProps[col] & ButtonIntrinsicProps[colgroup] & ButtonIntrinsicProps[data] & ButtonIntrinsicProps[datalist] & ButtonIntrinsicProps[dd] & ButtonIntrinsicProps[del] & ButtonIntrinsicProps[details] & ButtonIntrinsicProps[dfn] & ButtonIntrinsicProps[dialog] & ButtonIntrinsicProps[div] & ButtonIntrinsicProps[dl] & ButtonIntrinsicProps[dt] & ButtonIntrinsicProps[em] & ButtonIntrinsicProps[embed] & ButtonIntrinsicProps[fieldset] & ButtonIntrinsicProps[figcaption] & ButtonIntrinsicProps[figure] & ButtonIntrinsicProps[footer] & ButtonIntrinsicProps[form] & ButtonIntrinsicProps[h1] & ButtonIntrinsicProps[h2] & ButtonIntrinsicProps[h3] & ButtonIntrinsicProps[h4] & ButtonIntrinsicProps[h5] & ButtonIntrinsicProps[h6] & ButtonIntrinsicProps[head] & ButtonIntrinsicProps[header] & ButtonIntrinsicProps[hgroup] & ButtonIntrinsicProps[hr] & ButtonIntrinsicProps[html] & ButtonIntrinsicProps[i] & ButtonIntrinsicProps[iframe] & ButtonIntrinsicProps[img] & ButtonIntrinsicProps[input] & ButtonIntrinsicProps[ins] & ButtonIntrinsicProps[kbd] & ButtonIntrinsicProps[keygen] & ButtonIntrinsicProps[label] & ButtonIntrinsicProps[legend] & ButtonIntrinsicProps[li] & ButtonIntrinsicProps[link] & ButtonIntrinsicProps[main] & ButtonIntrinsicProps[map] & ButtonIntrinsicProps[mark] & ButtonIntrinsicProps[menu] & ButtonIntrinsicProps[menuitem] & ButtonIntrinsicProps[meta] & ButtonIntrinsicProps[meter] & ButtonIntrinsicProps[nav] & ButtonIntrinsicProps[noindex] & ButtonIntrinsicProps[noscript] & ButtonIntrinsicProps[`object`] & ButtonIntrinsicProps[ol] & ButtonIntrinsicProps[optgroup] & ButtonIntrinsicProps[option] & ButtonIntrinsicProps[output] & ButtonIntrinsicProps[p] & ButtonIntrinsicProps[param] & ButtonIntrinsicProps[picture] & ButtonIntrinsicProps[pre] & ButtonIntrinsicProps[progress] & ButtonIntrinsicProps[q] & ButtonIntrinsicProps[rp] & ButtonIntrinsicProps[rt] & ButtonIntrinsicProps[ruby] & ButtonIntrinsicProps[s] & ButtonIntrinsicProps[samp] & ButtonIntrinsicProps[slot] & ButtonIntrinsicProps[script] & ButtonIntrinsicProps[section] & ButtonIntrinsicProps[select] & ButtonIntrinsicProps[small] & ButtonIntrinsicProps[source] & ButtonIntrinsicProps[span] & ButtonIntrinsicProps[strong] & ButtonIntrinsicProps[style] & ButtonIntrinsicProps[sub] & ButtonIntrinsicProps[summary] & ButtonIntrinsicProps[sup] & ButtonIntrinsicProps[table] & ButtonIntrinsicProps[template] & ButtonIntrinsicProps[tbody] & ButtonIntrinsicProps[td] & ButtonIntrinsicProps[textarea] & ButtonIntrinsicProps[tfoot] & ButtonIntrinsicProps[th] & ButtonIntrinsicProps[thead] & ButtonIntrinsicProps[time] & ButtonIntrinsicProps[title] & ButtonIntrinsicProps[tr] & ButtonIntrinsicProps[track] & ButtonIntrinsicProps[u] & ButtonIntrinsicProps[ul] & ButtonIntrinsicProps[`var`] & ButtonIntrinsicProps[video] & ButtonIntrinsicProps[wbr] & ButtonIntrinsicProps[webview] & ButtonIntrinsicProps[svg] & ButtonIntrinsicProps[animate] & ButtonIntrinsicProps[animateMotion] & ButtonIntrinsicProps[animateTransform] & ButtonIntrinsicProps[circle] & ButtonIntrinsicProps[clipPath] & ButtonIntrinsicProps[defs] & ButtonIntrinsicProps[desc_] & ButtonIntrinsicProps[ellipse] & ButtonIntrinsicProps[feBlend] & ButtonIntrinsicProps[feColorMatrix] & ButtonIntrinsicProps[feComponentTransfer] & ButtonIntrinsicProps[feComposite] & ButtonIntrinsicProps[feConvolveMatrix] & ButtonIntrinsicProps[feDiffuseLighting] & ButtonIntrinsicProps[feDisplacementMap] & ButtonIntrinsicProps[feDistantLight] & ButtonIntrinsicProps[feDropShadow] & ButtonIntrinsicProps[feFlood] & ButtonIntrinsicProps[feFuncA] & ButtonIntrinsicProps[feFuncB] & ButtonIntrinsicProps[feFuncG] & ButtonIntrinsicProps[feFuncR] & ButtonIntrinsicProps[feGaussianBlur] & ButtonIntrinsicProps[feImage] & ButtonIntrinsicProps[feMerge] & ButtonIntrinsicProps[feMergeNode] & ButtonIntrinsicProps[feMorphology] & ButtonIntrinsicProps[feOffset] & ButtonIntrinsicProps[fePointLight] & ButtonIntrinsicProps[feSpecularLighting] & ButtonIntrinsicProps[feSpotLight] & ButtonIntrinsicProps[feTile] & ButtonIntrinsicProps[feTurbulence] & ButtonIntrinsicProps[filter] & ButtonIntrinsicProps[foreignObject] & ButtonIntrinsicProps[g] & ButtonIntrinsicProps[image] & ButtonIntrinsicProps[line] & ButtonIntrinsicProps[linearGradient] & ButtonIntrinsicProps[marker] & ButtonIntrinsicProps[mask] & ButtonIntrinsicProps[metadata] & ButtonIntrinsicProps[mpath] & ButtonIntrinsicProps[path] & ButtonIntrinsicProps[pattern] & ButtonIntrinsicProps[polygon] & ButtonIntrinsicProps[polyline] & ButtonIntrinsicProps[radialGradient] & ButtonIntrinsicProps[rect] & ButtonIntrinsicProps[stop] & ButtonIntrinsicProps[switch] & ButtonIntrinsicProps[symbol] & ButtonIntrinsicProps[text] & ButtonIntrinsicProps[textPath] & ButtonIntrinsicProps[tspan] & ButtonIntrinsicProps[use] & ButtonIntrinsicProps[view]
+        ]
+    ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    /* static member */
+    /* was `typeof TableBatchAction` */
+    inline def TableBatchAction_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    /* static member */
+    /* was `typeof TableBatchActions` */
+    @JSImport("carbon-components-react", "DataTable.TableBatchActions")
+    @js.native
+    val TableBatchActions: TableBatchActionsFC = js.native
+    
+    /* static member */
+    /* was `typeof TableBody` */
+    @JSImport("carbon-components-react", "DataTable.TableBody")
+    @js.native
+    val TableBody: FC[TableBodyProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableCell` */
+    @JSImport("carbon-components-react", "DataTable.TableCell")
+    @js.native
+    val TableCell: FC[TableCellProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableContainer` */
+    @JSImport("carbon-components-react", "DataTable.TableContainer")
+    @js.native
+    val TableContainer: FC[TableContainerProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableExpandHeader` */
+    @JSImport("carbon-components-react", "DataTable.TableExpandHeader")
+    @js.native
+    val TableExpandHeader: FC[TableExpandHeaderProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableExpandRow` */
+    @JSImport("carbon-components-react", "DataTable.TableExpandRow")
+    @js.native
+    val TableExpandRow: FC[TableExpandRowProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableExpandedRow` */
+    @JSImport("carbon-components-react", "DataTable.TableExpandedRow")
+    @js.native
+    val TableExpandedRow: FC[TableExpandedRowProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableHead` */
+    @JSImport("carbon-components-react", "DataTable.TableHead")
+    @js.native
+    val TableHead: FC[TableHeadProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableHeader` */
+    @JSImport("carbon-components-react", "DataTable.TableHeader")
+    @js.native
+    val TableHeader: TableHeaderFC = js.native
+    
+    /* static member */
+    /* was `typeof TableRow` */
+    @JSImport("carbon-components-react", "DataTable.TableRow")
+    @js.native
+    val TableRow: FC[TableRowProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableSelectAll` */
+    @JSImport("carbon-components-react", "DataTable.TableSelectAll")
+    @js.native
+    val TableSelectAll: FC[TableSelectAllProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableSelectRow` */
+    @JSImport("carbon-components-react", "DataTable.TableSelectRow")
+    @js.native
+    val TableSelectRow: FC[TableSelectRowProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableToolbar` */
+    @JSImport("carbon-components-react", "DataTable.TableToolbar")
+    @js.native
+    val TableToolbar: FC[TableToolbarProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableToolbarAction` */
+    inline def TableToolbarAction(
+      props: ForwardRefProps[
+          HTMLAnchorElement | HTMLButtonElement, 
+          TableToolbarActionAnchorProps | TableToolbarActionButtonProps
+        ]
+    ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableToolbarAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    
+    /* static member */
+    /* was `typeof TableToolbarContent` */
+    @JSImport("carbon-components-react", "DataTable.TableToolbarContent")
+    @js.native
+    val TableToolbarContent: FC[TableToolbarContentProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableToolbarMenu` */
+    @JSImport("carbon-components-react", "DataTable.TableToolbarMenu")
+    @js.native
+    val TableToolbarMenu: FC[TableToolbarMenuProps] = js.native
+    
+    /* static member */
+    /* was `typeof TableToolbarSearch` */
+    @JSImport("carbon-components-react", "DataTable.TableToolbarSearch")
+    @js.native
+    val TableToolbarSearch: FC[TableToolbarSearchProps] = js.native
+    
+    /* static member */
+    @JSImport("carbon-components-react", "DataTable.translationKeys")
+    @js.native
+    val translationKeys: js.Array[DataTableTranslationKey] = js.native
+  }
+  
+  @JSImport("carbon-components-react", "DataTableSkeleton")
+  @js.native
+  val DataTableSkeleton: FC[DataTableSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "DatePicker")
+  @js.native
+  open class DatePicker ()
+    extends typings.carbonComponentsReact.datePickerMod.default
+  
+  @JSImport("carbon-components-react", "DatePickerInput")
+  @js.native
+  open class DatePickerInput ()
+    extends typings.carbonComponentsReact.datePickerInputMod.default
+  
+  @JSImport("carbon-components-react", "DatePickerSkeleton")
+  @js.native
+  val DatePickerSkeleton: FC[DatePickerSkeletonProps] = js.native
+  
+  inline def Dropdown[ItemType](props: ForwardRefProps[HTMLButtonElement, DropdownProps[ItemType]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Dropdown")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "DropdownSkeleton")
+  @js.native
+  val DropdownSkeleton: FC[DropdownSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "ErrorBoundaryContext")
+  @js.native
+  val ErrorBoundaryContext: Context[ErrorBoundaryContextValue] = js.native
+  
+  @JSImport("carbon-components-react", "ExpandableSearch")
+  @js.native
+  val ExpandableSearch: FC[ExpandableSearchProps] = js.native
+  
+  @JSImport("carbon-components-react", "ExpandableTile")
+  @js.native
+  open class ExpandableTile protected ()
+    extends typings.carbonComponentsReact.tileMod.ExpandableTile {
+    def this(props: ExpandableTileProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ExpandableTileProps, context: Any) = this()
+  }
+  
+  @JSImport("carbon-components-react", "FileUploader")
+  @js.native
+  open class FileUploader protected ()
+    extends typings.carbonComponentsReact.fileUploaderMod.default {
+    def this(props: FileUploaderProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: FileUploaderProps, context: Any) = this()
+  }
+  
+  @JSImport("carbon-components-react", "FileUploaderButton")
+  @js.native
+  val FileUploaderButton: FC[FileUploaderButtonProps] = js.native
+  
+  @JSImport("carbon-components-react", "FileUploaderDropContainer")
+  @js.native
+  val FileUploaderDropContainer: FC[FileUploaderDropContainerProps] = js.native
+  
+  @JSImport("carbon-components-react", "FileUploaderItem")
+  @js.native
+  val FileUploaderItem: FC[FileUploaderItemProps] = js.native
+  
+  @JSImport("carbon-components-react", "FileUploaderSkeleton")
+  @js.native
+  val FileUploaderSkeleton: FC[FileUploaderSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "Filename")
+  @js.native
+  val Filename: FC[FilenameIconProps] = js.native
+  
+  @JSImport("carbon-components-react", "FilterableMultiSelect")
+  @js.native
+  open class FilterableMultiSelect[T /* <: ListBoxBaseItemType */] ()
+    extends typings.carbonComponentsReact.filterableMultiSelectMod.default[T]
+  
+  @JSImport("carbon-components-react", "FluidForm")
+  @js.native
+  val FluidForm: FC[FluidFormProps] = js.native
+  
+  @JSImport("carbon-components-react", "Form")
+  @js.native
+  val Form: FC[FormProps] = js.native
+  
+  @JSImport("carbon-components-react", "FormGroup")
+  @js.native
+  val FormGroup: FC[FormGroupProps] = js.native
+  
+  @JSImport("carbon-components-react", "FormItem")
+  @js.native
+  val FormItem: FC[FormItemProps] = js.native
+  
+  @JSImport("carbon-components-react", "FormLabel")
+  @js.native
+  val FormLabel: FC[FormLabelProps] = js.native
+  
+  inline def Grid(props: GridDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Grid[T /* <: ReactComponentConstructor[scala.Nothing] */](props: GridCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_a(props: GridIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_abbr(props: GridIntrinsicProps[abbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_address(props: GridIntrinsicProps[address]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_animate(props: GridIntrinsicProps[animate]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_animateMotion(props: GridIntrinsicProps[animateMotion]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_animateTransform(props: GridIntrinsicProps[animateTransform]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_area(props: GridIntrinsicProps[area]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_article(props: GridIntrinsicProps[article]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_aside(props: GridIntrinsicProps[aside]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_audio(props: GridIntrinsicProps[audio]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_b(props: GridIntrinsicProps[b]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_base(props: GridIntrinsicProps[base]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_bdi(props: GridIntrinsicProps[bdi]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_bdo(props: GridIntrinsicProps[bdo]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_big(props: GridIntrinsicProps[big]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_blockquote(props: GridIntrinsicProps[blockquote]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_body(props: GridIntrinsicProps[body]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_br(props: GridIntrinsicProps[br]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_button(props: GridIntrinsicProps[button]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_canvas(props: GridIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_caption(props: GridIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_circle(props: GridIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_cite(props: GridIntrinsicProps[cite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_clipPath(props: GridIntrinsicProps[clipPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_code(props: GridIntrinsicProps[code]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_col(props: GridIntrinsicProps[col]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_colgroup(props: GridIntrinsicProps[colgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_data(props: GridIntrinsicProps[data]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_datalist(props: GridIntrinsicProps[datalist]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_dd(props: GridIntrinsicProps[dd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_defs(props: GridIntrinsicProps[defs]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_del(props: GridIntrinsicProps[del]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_desc(props: GridIntrinsicProps[desc_]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_details(props: GridIntrinsicProps[details]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_dfn(props: GridIntrinsicProps[dfn]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_dialog(props: GridIntrinsicProps[dialog]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_div(props: GridIntrinsicProps[div]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_dl(props: GridIntrinsicProps[dl]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_dt(props: GridIntrinsicProps[dt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_ellipse(props: GridIntrinsicProps[ellipse]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_em(props: GridIntrinsicProps[em]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_embed(props: GridIntrinsicProps[embed]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feBlend(props: GridIntrinsicProps[feBlend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feColorMatrix(props: GridIntrinsicProps[feColorMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feComponentTransfer(props: GridIntrinsicProps[feComponentTransfer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feComposite(props: GridIntrinsicProps[feComposite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feConvolveMatrix(props: GridIntrinsicProps[feConvolveMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feDiffuseLighting(props: GridIntrinsicProps[feDiffuseLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feDisplacementMap(props: GridIntrinsicProps[feDisplacementMap]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feDistantLight(props: GridIntrinsicProps[feDistantLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feDropShadow(props: GridIntrinsicProps[feDropShadow]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feFlood(props: GridIntrinsicProps[feFlood]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feFuncA(props: GridIntrinsicProps[feFuncA]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feFuncB(props: GridIntrinsicProps[feFuncB]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feFuncG(props: GridIntrinsicProps[feFuncG]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feFuncR(props: GridIntrinsicProps[feFuncR]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feGaussianBlur(props: GridIntrinsicProps[feGaussianBlur]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feImage(props: GridIntrinsicProps[feImage]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feMerge(props: GridIntrinsicProps[feMerge]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feMergeNode(props: GridIntrinsicProps[feMergeNode]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feMorphology(props: GridIntrinsicProps[feMorphology]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feOffset(props: GridIntrinsicProps[feOffset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_fePointLight(props: GridIntrinsicProps[fePointLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feSpecularLighting(props: GridIntrinsicProps[feSpecularLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feSpotLight(props: GridIntrinsicProps[feSpotLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feTile(props: GridIntrinsicProps[feTile]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_feTurbulence(props: GridIntrinsicProps[feTurbulence]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_fieldset(props: GridIntrinsicProps[fieldset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_figcaption(props: GridIntrinsicProps[figcaption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_figure(props: GridIntrinsicProps[figure]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_filter(props: GridIntrinsicProps[filter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_footer(props: GridIntrinsicProps[footer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_foreignObject(props: GridIntrinsicProps[foreignObject]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_form(props: GridIntrinsicProps[form]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_g(props: GridIntrinsicProps[g]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_h1(props: GridIntrinsicProps[h1]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_h2(props: GridIntrinsicProps[h2]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_h3(props: GridIntrinsicProps[h3]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_h4(props: GridIntrinsicProps[h4]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_h5(props: GridIntrinsicProps[h5]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_h6(props: GridIntrinsicProps[h6]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_head(props: GridIntrinsicProps[head]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_header(props: GridIntrinsicProps[header]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_hgroup(props: GridIntrinsicProps[hgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_hr(props: GridIntrinsicProps[hr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_html(props: GridIntrinsicProps[html]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_i(props: GridIntrinsicProps[i]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_iframe(props: GridIntrinsicProps[iframe]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_image(props: GridIntrinsicProps[image]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_img(props: GridIntrinsicProps[img]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_input(props: GridIntrinsicProps[input]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_ins(props: GridIntrinsicProps[ins]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_kbd(props: GridIntrinsicProps[kbd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_keygen(props: GridIntrinsicProps[keygen]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_label(props: GridIntrinsicProps[label]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_legend(props: GridIntrinsicProps[legend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_li(props: GridIntrinsicProps[li]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_line(props: GridIntrinsicProps[line]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_linearGradient(props: GridIntrinsicProps[linearGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_link(props: GridIntrinsicProps[link]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_main(props: GridIntrinsicProps[main]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_map(props: GridIntrinsicProps[map]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_mark(props: GridIntrinsicProps[mark]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_marker(props: GridIntrinsicProps[marker]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_mask(props: GridIntrinsicProps[mask]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_menu(props: GridIntrinsicProps[menu]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_menuitem(props: GridIntrinsicProps[menuitem]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_meta(props: GridIntrinsicProps[meta]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_metadata(props: GridIntrinsicProps[metadata]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_meter(props: GridIntrinsicProps[meter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_mpath(props: GridIntrinsicProps[mpath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_nav(props: GridIntrinsicProps[nav]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_noindex(props: GridIntrinsicProps[noindex]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_noscript(props: GridIntrinsicProps[noscript]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_object(props: GridIntrinsicProps[`object`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_ol(props: GridIntrinsicProps[ol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_optgroup(props: GridIntrinsicProps[optgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_option(props: GridIntrinsicProps[option]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_output(props: GridIntrinsicProps[output]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_p(props: GridIntrinsicProps[p]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_param(props: GridIntrinsicProps[param]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_path(props: GridIntrinsicProps[path]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_pattern(props: GridIntrinsicProps[pattern]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_picture(props: GridIntrinsicProps[picture]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_polygon(props: GridIntrinsicProps[polygon]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_polyline(props: GridIntrinsicProps[polyline]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_pre(props: GridIntrinsicProps[pre]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_progress(props: GridIntrinsicProps[progress]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_q(props: GridIntrinsicProps[q]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_radialGradient(props: GridIntrinsicProps[radialGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_rect(props: GridIntrinsicProps[rect]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_rp(props: GridIntrinsicProps[rp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_rt(props: GridIntrinsicProps[rt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_ruby(props: GridIntrinsicProps[ruby]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_s(props: GridIntrinsicProps[s]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_samp(props: GridIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_script(props: GridIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_section(props: GridIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_select(props: GridIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_slot(props: GridIntrinsicProps[slot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_small(props: GridIntrinsicProps[small]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_source(props: GridIntrinsicProps[source]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_span(props: GridIntrinsicProps[span]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_stop(props: GridIntrinsicProps[stop]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_strong(props: GridIntrinsicProps[strong]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_style(props: GridIntrinsicProps[style]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_sub(props: GridIntrinsicProps[sub]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_summary(props: GridIntrinsicProps[summary]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_sup(props: GridIntrinsicProps[sup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_svg(props: GridIntrinsicProps[svg]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_switch(props: GridIntrinsicProps[switch]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_symbol(props: GridIntrinsicProps[symbol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_table(props: GridIntrinsicProps[table]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_tbody(props: GridIntrinsicProps[tbody]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_td(props: GridIntrinsicProps[td]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_template(props: GridIntrinsicProps[template]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_text(props: GridIntrinsicProps[text]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_textPath(props: GridIntrinsicProps[textPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_textarea(props: GridIntrinsicProps[textarea]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_tfoot(props: GridIntrinsicProps[tfoot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_th(props: GridIntrinsicProps[th]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_thead(props: GridIntrinsicProps[thead]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_time(props: GridIntrinsicProps[time]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_title(props: GridIntrinsicProps[title]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_tr(props: GridIntrinsicProps[tr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_track(props: GridIntrinsicProps[track]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_tspan(props: GridIntrinsicProps[tspan]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_u(props: GridIntrinsicProps[u]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_ul(props: GridIntrinsicProps[ul]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_use(props: GridIntrinsicProps[use]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_var(props: GridIntrinsicProps[`var`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_video(props: GridIntrinsicProps[video]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_view(props: GridIntrinsicProps[view]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_wbr(props: GridIntrinsicProps[wbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_webview(props: GridIntrinsicProps[webview]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "Header")
+  @js.native
+  val Header: FC[HeaderProps] = js.native
+  
+  inline def HeaderContainer[RP](props: FCProps[HeaderContainerProps[RP]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderContainer")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "HeaderGlobalAction")
+  @js.native
+  val HeaderGlobalAction: ForwardRefReturn[HTMLButtonElement, HeaderGlobalActionProps] = js.native
+  
+  @JSImport("carbon-components-react", "HeaderGlobalBar")
+  @js.native
+  val HeaderGlobalBar: FC[HeaderGlobalBarProps] = js.native
+  
+  inline def HeaderMenu[RP](props: HeaderMenuForwardRefProps[RP]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderMenu")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "HeaderMenuButton")
+  @js.native
+  val HeaderMenuButton: FC[HeaderMenuButtonProps] = js.native
+  
+  inline def HeaderMenuItem[E /* <: js.Object */, R](props: ForwardRefProps[R, HeaderMenuItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderMenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def HeaderName[E /* <: js.Object */](props: FCProps[HeaderNameProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderName")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "HeaderNavigation")
+  @js.native
+  open class HeaderNavigation ()
+    extends typings.carbonComponentsReact.uishellMod.HeaderNavigation
+  
+  @JSImport("carbon-components-react", "HeaderPanel")
+  @js.native
+  val HeaderPanel: ForwardRefReturn[HTMLDivElement, HeaderPanelProps] = js.native
+  
+  @JSImport("carbon-components-react", "HeaderSideNavItems")
+  @js.native
+  val HeaderSideNavItems: FC[HeaderSideNavItemsProps] = js.native
+  
+  @JSImport("carbon-components-react", "Icon")
+  @js.native
+  val Icon: FC[IconProps] = js.native
+  
+  @JSImport("carbon-components-react", "IconSkeleton")
+  @js.native
+  val IconSkeleton: FC[IconSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "InlineLoading")
+  @js.native
+  val InlineLoading: FC[InlineLoadingProps] = js.native
+  
+  @JSImport("carbon-components-react", "InlineNotification")
+  @js.native
+  val InlineNotification: FC[InlineNotificationProps] = js.native
+  
+  @JSImport("carbon-components-react", "Link")
+  @js.native
+  val Link: ForwardRefReturn[HTMLAnchorElement, LinkProps] = js.native
+  
+  @JSImport("carbon-components-react", "ListItem")
+  @js.native
+  val ListItem: FC[ListItemProps] = js.native
+  
+  @JSImport("carbon-components-react", "Loading")
+  @js.native
+  val Loading: FC[LoadingProps] = js.native
+  
+  @JSImport("carbon-components-react", "Modal")
+  @js.native
+  open class Modal ()
+    extends typings.carbonComponentsReact.modalMod.default
+  
+  @JSImport("carbon-components-react", "ModalBody")
+  @js.native
+  val ModalBody: FC[ModalBodyProps] = js.native
+  
+  @JSImport("carbon-components-react", "ModalFooter")
+  @js.native
+  open class ModalFooter protected ()
+    extends typings.carbonComponentsReact.composedModalMod.ModalFooter {
+    def this(props: ModalFooterProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ModalFooterProps, context: Any) = this()
+  }
+  
+  @JSImport("carbon-components-react", "ModalHeader")
+  @js.native
+  open class ModalHeader protected ()
+    extends typings.carbonComponentsReact.composedModalMod.ModalHeader {
+    def this(props: ModalHeaderProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ModalHeaderProps, context: Any) = this()
+  }
+  
+  @JSImport("carbon-components-react", "ModalWrapper")
+  @js.native
+  open class ModalWrapper ()
+    extends typings.carbonComponentsReact.modalWrapperMod.default
+  
+  object MultiSelect extends Shortcut {
+    
+    @JSImport("carbon-components-react", "MultiSelect")
+    @js.native
+    val ^ : typings.carbonComponentsReact.multiSelectMultiSelectMod.MultiSelect = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("carbon-components-react", "MultiSelect.Filterable")
+    @js.native
+    open class Filterable[T /* <: ListBoxBaseItemType */] ()
+      extends typings.carbonComponentsReact.multiSelectFilterableMultiSelectMod.default[T]
+    
+    type _To = typings.carbonComponentsReact.multiSelectMultiSelectMod.MultiSelect
+    
+    /* This means you don't have to write `^`, but can instead just say `MultiSelect.foo` */
+    override def _to: typings.carbonComponentsReact.multiSelectMultiSelectMod.MultiSelect = ^
+  }
+  
+  @JSImport("carbon-components-react", "NotificationActionButton")
+  @js.native
+  val NotificationActionButton: FC[NotificationActionButtonProps] = js.native
+  
+  @JSImport("carbon-components-react", "NotificationButton")
+  @js.native
+  val NotificationButton: FC[NotificationButtonProps] = js.native
+  
+  @JSImport("carbon-components-react", "NotificationTextDetails")
+  @js.native
+  val NotificationTextDetails: FC[NotificationTextDetailsProps] = js.native
+  
+  @JSImport("carbon-components-react", "NumberInput")
+  @js.native
+  val NumberInput: ForwardRefReturn[HTMLInputElement, NumberInputProps] = js.native
+  
+  @JSImport("carbon-components-react", "NumberInputSkeleton")
+  @js.native
+  val NumberInputSkeleton: FC[NumberInputSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "OrderedList")
+  @js.native
+  val OrderedList: FC[OrderedListProps] = js.native
+  
+  @JSImport("carbon-components-react", "OverflowMenu")
+  @js.native
+  val OverflowMenu: ForwardRefReturn[HTMLButtonElement, OverflowMenuProps] = js.native
+  
+  @JSImport("carbon-components-react", "OverflowMenuItem")
+  @js.native
+  open class OverflowMenuItem ()
+    extends typings.carbonComponentsReact.overflowMenuItemMod.default
+  
+  @JSImport("carbon-components-react", "Pagination")
+  @js.native
+  open class Pagination ()
+    extends typings.carbonComponentsReact.paginationMod.default
+  
+  @JSImport("carbon-components-react", "PaginationNav")
+  @js.native
+  val PaginationNav: ForwardRefReturn[HTMLElement, PaginationNavProps] = js.native
+  
+  @JSImport("carbon-components-react", "PaginationSkeleton")
+  @js.native
+  val PaginationSkeleton: FC[PaginationSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "PasswordInput")
+  @js.native
+  val PasswordInput: ForwardRefReturn[HTMLInputElement, PasswordInputProps] = js.native
+  
+  // tslint:disable:unified-signatures breaks certain usages
+  inline def PrimaryButton(props: FCProps[ButtonAnchorProps | ButtonDefaultProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_T_ReactComponentConstructorNothing[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_a(props: FCProps[ButtonIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_abbr(props: FCProps[ButtonIntrinsicProps[abbr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_address(props: FCProps[ButtonIntrinsicProps[address]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_animate(props: FCProps[ButtonIntrinsicProps[animate]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_animateMotion(props: FCProps[ButtonIntrinsicProps[animateMotion]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_animateTransform(props: FCProps[ButtonIntrinsicProps[animateTransform]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_area(props: FCProps[ButtonIntrinsicProps[area]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_article(props: FCProps[ButtonIntrinsicProps[article]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_aside(props: FCProps[ButtonIntrinsicProps[aside]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_audio(props: FCProps[ButtonIntrinsicProps[audio]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_b(props: FCProps[ButtonIntrinsicProps[b]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_base(props: FCProps[ButtonIntrinsicProps[base]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_bdi(props: FCProps[ButtonIntrinsicProps[bdi]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_bdo(props: FCProps[ButtonIntrinsicProps[bdo]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_big(props: FCProps[ButtonIntrinsicProps[big]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_blockquote(props: FCProps[ButtonIntrinsicProps[blockquote]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_body(props: FCProps[ButtonIntrinsicProps[body]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_br(props: FCProps[ButtonIntrinsicProps[br]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_button(props: FCProps[ButtonIntrinsicProps[button]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_canvas(props: FCProps[ButtonIntrinsicProps[canvas]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_caption(props: FCProps[ButtonIntrinsicProps[caption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_circle(props: FCProps[ButtonIntrinsicProps[circle]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_cite(props: FCProps[ButtonIntrinsicProps[cite]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_clipPath(props: FCProps[ButtonIntrinsicProps[clipPath]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_code(props: FCProps[ButtonIntrinsicProps[code]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_col(props: FCProps[ButtonIntrinsicProps[col]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_colgroup(props: FCProps[ButtonIntrinsicProps[colgroup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_data(props: FCProps[ButtonIntrinsicProps[data]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_datalist(props: FCProps[ButtonIntrinsicProps[datalist]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_dd(props: FCProps[ButtonIntrinsicProps[dd]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_defs(props: FCProps[ButtonIntrinsicProps[defs]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_del(props: FCProps[ButtonIntrinsicProps[del]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_desc(props: FCProps[ButtonIntrinsicProps[desc_]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_details(props: FCProps[ButtonIntrinsicProps[details]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_dfn(props: FCProps[ButtonIntrinsicProps[dfn]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_dialog(props: FCProps[ButtonIntrinsicProps[dialog]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_div(props: FCProps[ButtonIntrinsicProps[div]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_dl(props: FCProps[ButtonIntrinsicProps[dl]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_dt(props: FCProps[ButtonIntrinsicProps[dt]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_ellipse(props: FCProps[ButtonIntrinsicProps[ellipse]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_em(props: FCProps[ButtonIntrinsicProps[em]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_embed(props: FCProps[ButtonIntrinsicProps[embed]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feBlend(props: FCProps[ButtonIntrinsicProps[feBlend]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feColorMatrix(props: FCProps[ButtonIntrinsicProps[feColorMatrix]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feComponentTransfer(props: FCProps[ButtonIntrinsicProps[feComponentTransfer]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feComposite(props: FCProps[ButtonIntrinsicProps[feComposite]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feConvolveMatrix(props: FCProps[ButtonIntrinsicProps[feConvolveMatrix]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feDiffuseLighting(props: FCProps[ButtonIntrinsicProps[feDiffuseLighting]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feDisplacementMap(props: FCProps[ButtonIntrinsicProps[feDisplacementMap]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feDistantLight(props: FCProps[ButtonIntrinsicProps[feDistantLight]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feDropShadow(props: FCProps[ButtonIntrinsicProps[feDropShadow]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feFlood(props: FCProps[ButtonIntrinsicProps[feFlood]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feFuncA(props: FCProps[ButtonIntrinsicProps[feFuncA]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feFuncB(props: FCProps[ButtonIntrinsicProps[feFuncB]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feFuncG(props: FCProps[ButtonIntrinsicProps[feFuncG]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feFuncR(props: FCProps[ButtonIntrinsicProps[feFuncR]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feGaussianBlur(props: FCProps[ButtonIntrinsicProps[feGaussianBlur]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feImage(props: FCProps[ButtonIntrinsicProps[feImage]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feMerge(props: FCProps[ButtonIntrinsicProps[feMerge]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feMergeNode(props: FCProps[ButtonIntrinsicProps[feMergeNode]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feMorphology(props: FCProps[ButtonIntrinsicProps[feMorphology]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feOffset(props: FCProps[ButtonIntrinsicProps[feOffset]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_fePointLight(props: FCProps[ButtonIntrinsicProps[fePointLight]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feSpecularLighting(props: FCProps[ButtonIntrinsicProps[feSpecularLighting]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feSpotLight(props: FCProps[ButtonIntrinsicProps[feSpotLight]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feTile(props: FCProps[ButtonIntrinsicProps[feTile]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_feTurbulence(props: FCProps[ButtonIntrinsicProps[feTurbulence]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_fieldset(props: FCProps[ButtonIntrinsicProps[fieldset]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_figcaption(props: FCProps[ButtonIntrinsicProps[figcaption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_figure(props: FCProps[ButtonIntrinsicProps[figure]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_filter(props: FCProps[ButtonIntrinsicProps[filter]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_footer(props: FCProps[ButtonIntrinsicProps[footer]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_foreignObject(props: FCProps[ButtonIntrinsicProps[foreignObject]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_form(props: FCProps[ButtonIntrinsicProps[form]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_g(props: FCProps[ButtonIntrinsicProps[g]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_h1(props: FCProps[ButtonIntrinsicProps[h1]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_h2(props: FCProps[ButtonIntrinsicProps[h2]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_h3(props: FCProps[ButtonIntrinsicProps[h3]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_h4(props: FCProps[ButtonIntrinsicProps[h4]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_h5(props: FCProps[ButtonIntrinsicProps[h5]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_h6(props: FCProps[ButtonIntrinsicProps[h6]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_head(props: FCProps[ButtonIntrinsicProps[head]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_header(props: FCProps[ButtonIntrinsicProps[header]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_hgroup(props: FCProps[ButtonIntrinsicProps[hgroup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_hr(props: FCProps[ButtonIntrinsicProps[hr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_html(props: FCProps[ButtonIntrinsicProps[html]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_i(props: FCProps[ButtonIntrinsicProps[i]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_iframe(props: FCProps[ButtonIntrinsicProps[iframe]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_image(props: FCProps[ButtonIntrinsicProps[image]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_img(props: FCProps[ButtonIntrinsicProps[img]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_input(props: FCProps[ButtonIntrinsicProps[input]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_ins(props: FCProps[ButtonIntrinsicProps[ins]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_kbd(props: FCProps[ButtonIntrinsicProps[kbd]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_keygen(props: FCProps[ButtonIntrinsicProps[keygen]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_label(props: FCProps[ButtonIntrinsicProps[label]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_legend(props: FCProps[ButtonIntrinsicProps[legend]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_li(props: FCProps[ButtonIntrinsicProps[li]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_line(props: FCProps[ButtonIntrinsicProps[line]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_linearGradient(props: FCProps[ButtonIntrinsicProps[linearGradient]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_link(props: FCProps[ButtonIntrinsicProps[link]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_main(props: FCProps[ButtonIntrinsicProps[main]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_map(props: FCProps[ButtonIntrinsicProps[map]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_mark(props: FCProps[ButtonIntrinsicProps[mark]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_marker(props: FCProps[ButtonIntrinsicProps[marker]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_mask(props: FCProps[ButtonIntrinsicProps[mask]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_menu(props: FCProps[ButtonIntrinsicProps[menu]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_menuitem(props: FCProps[ButtonIntrinsicProps[menuitem]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_meta(props: FCProps[ButtonIntrinsicProps[meta]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_metadata(props: FCProps[ButtonIntrinsicProps[metadata]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_meter(props: FCProps[ButtonIntrinsicProps[meter]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_mpath(props: FCProps[ButtonIntrinsicProps[mpath]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_nav(props: FCProps[ButtonIntrinsicProps[nav]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_noindex(props: FCProps[ButtonIntrinsicProps[noindex]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_noscript(props: FCProps[ButtonIntrinsicProps[noscript]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_object(props: FCProps[ButtonIntrinsicProps[`object`]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_ol(props: FCProps[ButtonIntrinsicProps[ol]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_optgroup(props: FCProps[ButtonIntrinsicProps[optgroup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_option(props: FCProps[ButtonIntrinsicProps[option]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_output(props: FCProps[ButtonIntrinsicProps[output]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_p(props: FCProps[ButtonIntrinsicProps[p]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_param(props: FCProps[ButtonIntrinsicProps[param]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_path(props: FCProps[ButtonIntrinsicProps[path]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_pattern(props: FCProps[ButtonIntrinsicProps[pattern]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_picture(props: FCProps[ButtonIntrinsicProps[picture]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_polygon(props: FCProps[ButtonIntrinsicProps[polygon]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_polyline(props: FCProps[ButtonIntrinsicProps[polyline]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_pre(props: FCProps[ButtonIntrinsicProps[pre]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_progress(props: FCProps[ButtonIntrinsicProps[progress]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_q(props: FCProps[ButtonIntrinsicProps[q]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_radialGradient(props: FCProps[ButtonIntrinsicProps[radialGradient]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_rect(props: FCProps[ButtonIntrinsicProps[rect]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_rp(props: FCProps[ButtonIntrinsicProps[rp]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_rt(props: FCProps[ButtonIntrinsicProps[rt]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_ruby(props: FCProps[ButtonIntrinsicProps[ruby]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_s(props: FCProps[ButtonIntrinsicProps[s]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_samp(props: FCProps[ButtonIntrinsicProps[samp]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_script(props: FCProps[ButtonIntrinsicProps[script]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_section(props: FCProps[ButtonIntrinsicProps[section]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_select(props: FCProps[ButtonIntrinsicProps[select]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_slot(props: FCProps[ButtonIntrinsicProps[slot]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_small(props: FCProps[ButtonIntrinsicProps[small]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_source(props: FCProps[ButtonIntrinsicProps[source]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_span(props: FCProps[ButtonIntrinsicProps[span]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_stop(props: FCProps[ButtonIntrinsicProps[stop]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_strong(props: FCProps[ButtonIntrinsicProps[strong]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_style(props: FCProps[ButtonIntrinsicProps[style]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_sub(props: FCProps[ButtonIntrinsicProps[sub]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_summary(props: FCProps[ButtonIntrinsicProps[summary]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_sup(props: FCProps[ButtonIntrinsicProps[sup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_svg(props: FCProps[ButtonIntrinsicProps[svg]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_switch(props: FCProps[ButtonIntrinsicProps[switch]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_symbol(props: FCProps[ButtonIntrinsicProps[symbol]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_table(props: FCProps[ButtonIntrinsicProps[table]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_tbody(props: FCProps[ButtonIntrinsicProps[tbody]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_td(props: FCProps[ButtonIntrinsicProps[td]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_template(props: FCProps[ButtonIntrinsicProps[template]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_text(props: FCProps[ButtonIntrinsicProps[text]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_textPath(props: FCProps[ButtonIntrinsicProps[textPath]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_textarea(props: FCProps[ButtonIntrinsicProps[textarea]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_tfoot(props: FCProps[ButtonIntrinsicProps[tfoot]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_th(props: FCProps[ButtonIntrinsicProps[th]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_thead(props: FCProps[ButtonIntrinsicProps[thead]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_time(props: FCProps[ButtonIntrinsicProps[time]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_title(props: FCProps[ButtonIntrinsicProps[title]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_tr(props: FCProps[ButtonIntrinsicProps[tr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_track(props: FCProps[ButtonIntrinsicProps[track]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_tspan(props: FCProps[ButtonIntrinsicProps[tspan]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_u(props: FCProps[ButtonIntrinsicProps[u]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_ul(props: FCProps[ButtonIntrinsicProps[ul]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_use(props: FCProps[ButtonIntrinsicProps[use]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_var(props: FCProps[ButtonIntrinsicProps[`var`]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_video(props: FCProps[ButtonIntrinsicProps[video]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_view(props: FCProps[ButtonIntrinsicProps[view]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_wbr(props: FCProps[ButtonIntrinsicProps[wbr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def PrimaryButton_webview(props: FCProps[ButtonIntrinsicProps[webview]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "ProgressIndicator")
+  @js.native
+  open class ProgressIndicator protected ()
+    extends typings.carbonComponentsReact.progressIndicatorMod.ProgressIndicator {
+    def this(props: ProgressIndicatorProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ProgressIndicatorProps, context: Any) = this()
+  }
+  
+  @JSImport("carbon-components-react", "ProgressIndicatorSkeleton")
+  @js.native
+  val ProgressIndicatorSkeleton: FC[ProgressIndicatorSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "ProgressStep")
+  @js.native
+  val ProgressStep: FC[ProgressStepProps] = js.native
+  
+  @JSImport("carbon-components-react", "RadioButton")
+  @js.native
+  val RadioButton: ForwardRefReturn[HTMLInputElement, RadioButtonProps] = js.native
+  
+  @JSImport("carbon-components-react", "RadioButtonGroup")
+  @js.native
+  open class RadioButtonGroup ()
+    extends typings.carbonComponentsReact.radioButtonGroupMod.default
+  
+  @JSImport("carbon-components-react", "RadioButtonSkeleton")
+  @js.native
+  val RadioButtonSkeleton: FC[RadioButtonSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "RadioTile")
+  @js.native
+  val RadioTile: FC[RadioTileProps] = js.native
+  
+  inline def Row(props: RowDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Row[T /* <: ReactComponentConstructor[scala.Nothing] */](props: RowCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_a(props: RowIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_abbr(props: RowIntrinsicProps[abbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_address(props: RowIntrinsicProps[address]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_animate(props: RowIntrinsicProps[animate]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_animateMotion(props: RowIntrinsicProps[animateMotion]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_animateTransform(props: RowIntrinsicProps[animateTransform]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_area(props: RowIntrinsicProps[area]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_article(props: RowIntrinsicProps[article]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_aside(props: RowIntrinsicProps[aside]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_audio(props: RowIntrinsicProps[audio]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_b(props: RowIntrinsicProps[b]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_base(props: RowIntrinsicProps[base]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_bdi(props: RowIntrinsicProps[bdi]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_bdo(props: RowIntrinsicProps[bdo]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_big(props: RowIntrinsicProps[big]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_blockquote(props: RowIntrinsicProps[blockquote]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_body(props: RowIntrinsicProps[body]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_br(props: RowIntrinsicProps[br]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_button(props: RowIntrinsicProps[button]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_canvas(props: RowIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_caption(props: RowIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_circle(props: RowIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_cite(props: RowIntrinsicProps[cite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_clipPath(props: RowIntrinsicProps[clipPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_code(props: RowIntrinsicProps[code]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_col(props: RowIntrinsicProps[col]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_colgroup(props: RowIntrinsicProps[colgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_data(props: RowIntrinsicProps[data]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_datalist(props: RowIntrinsicProps[datalist]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_dd(props: RowIntrinsicProps[dd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_defs(props: RowIntrinsicProps[defs]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_del(props: RowIntrinsicProps[del]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_desc(props: RowIntrinsicProps[desc_]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_details(props: RowIntrinsicProps[details]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_dfn(props: RowIntrinsicProps[dfn]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_dialog(props: RowIntrinsicProps[dialog]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_div(props: RowIntrinsicProps[div]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_dl(props: RowIntrinsicProps[dl]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_dt(props: RowIntrinsicProps[dt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_ellipse(props: RowIntrinsicProps[ellipse]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_em(props: RowIntrinsicProps[em]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_embed(props: RowIntrinsicProps[embed]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feBlend(props: RowIntrinsicProps[feBlend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feColorMatrix(props: RowIntrinsicProps[feColorMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feComponentTransfer(props: RowIntrinsicProps[feComponentTransfer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feComposite(props: RowIntrinsicProps[feComposite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feConvolveMatrix(props: RowIntrinsicProps[feConvolveMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feDiffuseLighting(props: RowIntrinsicProps[feDiffuseLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feDisplacementMap(props: RowIntrinsicProps[feDisplacementMap]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feDistantLight(props: RowIntrinsicProps[feDistantLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feDropShadow(props: RowIntrinsicProps[feDropShadow]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feFlood(props: RowIntrinsicProps[feFlood]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feFuncA(props: RowIntrinsicProps[feFuncA]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feFuncB(props: RowIntrinsicProps[feFuncB]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feFuncG(props: RowIntrinsicProps[feFuncG]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feFuncR(props: RowIntrinsicProps[feFuncR]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feGaussianBlur(props: RowIntrinsicProps[feGaussianBlur]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feImage(props: RowIntrinsicProps[feImage]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feMerge(props: RowIntrinsicProps[feMerge]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feMergeNode(props: RowIntrinsicProps[feMergeNode]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feMorphology(props: RowIntrinsicProps[feMorphology]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feOffset(props: RowIntrinsicProps[feOffset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_fePointLight(props: RowIntrinsicProps[fePointLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feSpecularLighting(props: RowIntrinsicProps[feSpecularLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feSpotLight(props: RowIntrinsicProps[feSpotLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feTile(props: RowIntrinsicProps[feTile]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_feTurbulence(props: RowIntrinsicProps[feTurbulence]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_fieldset(props: RowIntrinsicProps[fieldset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_figcaption(props: RowIntrinsicProps[figcaption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_figure(props: RowIntrinsicProps[figure]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_filter(props: RowIntrinsicProps[filter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_footer(props: RowIntrinsicProps[footer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_foreignObject(props: RowIntrinsicProps[foreignObject]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_form(props: RowIntrinsicProps[form]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_g(props: RowIntrinsicProps[g]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_h1(props: RowIntrinsicProps[h1]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_h2(props: RowIntrinsicProps[h2]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_h3(props: RowIntrinsicProps[h3]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_h4(props: RowIntrinsicProps[h4]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_h5(props: RowIntrinsicProps[h5]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_h6(props: RowIntrinsicProps[h6]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_head(props: RowIntrinsicProps[head]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_header(props: RowIntrinsicProps[header]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_hgroup(props: RowIntrinsicProps[hgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_hr(props: RowIntrinsicProps[hr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_html(props: RowIntrinsicProps[html]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_i(props: RowIntrinsicProps[i]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_iframe(props: RowIntrinsicProps[iframe]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_image(props: RowIntrinsicProps[image]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_img(props: RowIntrinsicProps[img]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_input(props: RowIntrinsicProps[input]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_ins(props: RowIntrinsicProps[ins]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_kbd(props: RowIntrinsicProps[kbd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_keygen(props: RowIntrinsicProps[keygen]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_label(props: RowIntrinsicProps[label]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_legend(props: RowIntrinsicProps[legend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_li(props: RowIntrinsicProps[li]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_line(props: RowIntrinsicProps[line]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_linearGradient(props: RowIntrinsicProps[linearGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_link(props: RowIntrinsicProps[link]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_main(props: RowIntrinsicProps[main]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_map(props: RowIntrinsicProps[map]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_mark(props: RowIntrinsicProps[mark]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_marker(props: RowIntrinsicProps[marker]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_mask(props: RowIntrinsicProps[mask]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_menu(props: RowIntrinsicProps[menu]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_menuitem(props: RowIntrinsicProps[menuitem]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_meta(props: RowIntrinsicProps[meta]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_metadata(props: RowIntrinsicProps[metadata]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_meter(props: RowIntrinsicProps[meter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_mpath(props: RowIntrinsicProps[mpath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_nav(props: RowIntrinsicProps[nav]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_noindex(props: RowIntrinsicProps[noindex]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_noscript(props: RowIntrinsicProps[noscript]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_object(props: RowIntrinsicProps[`object`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_ol(props: RowIntrinsicProps[ol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_optgroup(props: RowIntrinsicProps[optgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_option(props: RowIntrinsicProps[option]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_output(props: RowIntrinsicProps[output]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_p(props: RowIntrinsicProps[p]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_param(props: RowIntrinsicProps[param]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_path(props: RowIntrinsicProps[path]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_pattern(props: RowIntrinsicProps[pattern]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_picture(props: RowIntrinsicProps[picture]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_polygon(props: RowIntrinsicProps[polygon]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_polyline(props: RowIntrinsicProps[polyline]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_pre(props: RowIntrinsicProps[pre]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_progress(props: RowIntrinsicProps[progress]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_q(props: RowIntrinsicProps[q]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_radialGradient(props: RowIntrinsicProps[radialGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_rect(props: RowIntrinsicProps[rect]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_rp(props: RowIntrinsicProps[rp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_rt(props: RowIntrinsicProps[rt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_ruby(props: RowIntrinsicProps[ruby]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_s(props: RowIntrinsicProps[s]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_samp(props: RowIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_script(props: RowIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_section(props: RowIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_select(props: RowIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_slot(props: RowIntrinsicProps[slot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_small(props: RowIntrinsicProps[small]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_source(props: RowIntrinsicProps[source]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_span(props: RowIntrinsicProps[span]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_stop(props: RowIntrinsicProps[stop]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_strong(props: RowIntrinsicProps[strong]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_style(props: RowIntrinsicProps[style]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_sub(props: RowIntrinsicProps[sub]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_summary(props: RowIntrinsicProps[summary]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_sup(props: RowIntrinsicProps[sup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_svg(props: RowIntrinsicProps[svg]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_switch(props: RowIntrinsicProps[switch]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_symbol(props: RowIntrinsicProps[symbol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_table(props: RowIntrinsicProps[table]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_tbody(props: RowIntrinsicProps[tbody]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_td(props: RowIntrinsicProps[td]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_template(props: RowIntrinsicProps[template]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_text(props: RowIntrinsicProps[text]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_textPath(props: RowIntrinsicProps[textPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_textarea(props: RowIntrinsicProps[textarea]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_tfoot(props: RowIntrinsicProps[tfoot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_th(props: RowIntrinsicProps[th]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_thead(props: RowIntrinsicProps[thead]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_time(props: RowIntrinsicProps[time]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_title(props: RowIntrinsicProps[title]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_tr(props: RowIntrinsicProps[tr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_track(props: RowIntrinsicProps[track]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_tspan(props: RowIntrinsicProps[tspan]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_u(props: RowIntrinsicProps[u]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_ul(props: RowIntrinsicProps[ul]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_use(props: RowIntrinsicProps[use]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_var(props: RowIntrinsicProps[`var`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_video(props: RowIntrinsicProps[video]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_view(props: RowIntrinsicProps[view]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_wbr(props: RowIntrinsicProps[wbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_webview(props: RowIntrinsicProps[webview]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "Search")
+  @js.native
+  open class Search ()
+    extends typings.carbonComponentsReact.searchMod.default
+  
+  /**
+    * @deprecated
+    */
+  @JSImport("carbon-components-react", "SearchFilterButton")
+  @js.native
+  val SearchFilterButton: FC[SearchFilterButtonProps] = js.native
+  
+  /**
+    * @deprecated
+    */
+  @JSImport("carbon-components-react", "SearchLayoutButton")
+  @js.native
+  open class SearchLayoutButton ()
+    extends typings.carbonComponentsReact.searchLayoutButtonMod.default
+  
+  @JSImport("carbon-components-react", "SearchSkeleton")
+  @js.native
+  val SearchSkeleton: FC[SearchSkeletonProps] = js.native
+  
+  // tslint:disable:unified-signatures breaks certain usages
+  inline def SecondaryButton(props: FCProps[ButtonAnchorProps | ButtonDefaultProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_T_ReactComponentConstructorNothing[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_a(props: FCProps[ButtonIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_abbr(props: FCProps[ButtonIntrinsicProps[abbr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_address(props: FCProps[ButtonIntrinsicProps[address]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_animate(props: FCProps[ButtonIntrinsicProps[animate]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_animateMotion(props: FCProps[ButtonIntrinsicProps[animateMotion]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_animateTransform(props: FCProps[ButtonIntrinsicProps[animateTransform]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_area(props: FCProps[ButtonIntrinsicProps[area]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_article(props: FCProps[ButtonIntrinsicProps[article]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_aside(props: FCProps[ButtonIntrinsicProps[aside]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_audio(props: FCProps[ButtonIntrinsicProps[audio]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_b(props: FCProps[ButtonIntrinsicProps[b]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_base(props: FCProps[ButtonIntrinsicProps[base]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_bdi(props: FCProps[ButtonIntrinsicProps[bdi]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_bdo(props: FCProps[ButtonIntrinsicProps[bdo]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_big(props: FCProps[ButtonIntrinsicProps[big]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_blockquote(props: FCProps[ButtonIntrinsicProps[blockquote]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_body(props: FCProps[ButtonIntrinsicProps[body]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_br(props: FCProps[ButtonIntrinsicProps[br]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_button(props: FCProps[ButtonIntrinsicProps[button]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_canvas(props: FCProps[ButtonIntrinsicProps[canvas]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_caption(props: FCProps[ButtonIntrinsicProps[caption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_circle(props: FCProps[ButtonIntrinsicProps[circle]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_cite(props: FCProps[ButtonIntrinsicProps[cite]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_clipPath(props: FCProps[ButtonIntrinsicProps[clipPath]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_code(props: FCProps[ButtonIntrinsicProps[code]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_col(props: FCProps[ButtonIntrinsicProps[col]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_colgroup(props: FCProps[ButtonIntrinsicProps[colgroup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_data(props: FCProps[ButtonIntrinsicProps[data]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_datalist(props: FCProps[ButtonIntrinsicProps[datalist]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_dd(props: FCProps[ButtonIntrinsicProps[dd]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_defs(props: FCProps[ButtonIntrinsicProps[defs]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_del(props: FCProps[ButtonIntrinsicProps[del]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_desc(props: FCProps[ButtonIntrinsicProps[desc_]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_details(props: FCProps[ButtonIntrinsicProps[details]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_dfn(props: FCProps[ButtonIntrinsicProps[dfn]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_dialog(props: FCProps[ButtonIntrinsicProps[dialog]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_div(props: FCProps[ButtonIntrinsicProps[div]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_dl(props: FCProps[ButtonIntrinsicProps[dl]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_dt(props: FCProps[ButtonIntrinsicProps[dt]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_ellipse(props: FCProps[ButtonIntrinsicProps[ellipse]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_em(props: FCProps[ButtonIntrinsicProps[em]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_embed(props: FCProps[ButtonIntrinsicProps[embed]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feBlend(props: FCProps[ButtonIntrinsicProps[feBlend]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feColorMatrix(props: FCProps[ButtonIntrinsicProps[feColorMatrix]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feComponentTransfer(props: FCProps[ButtonIntrinsicProps[feComponentTransfer]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feComposite(props: FCProps[ButtonIntrinsicProps[feComposite]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feConvolveMatrix(props: FCProps[ButtonIntrinsicProps[feConvolveMatrix]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feDiffuseLighting(props: FCProps[ButtonIntrinsicProps[feDiffuseLighting]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feDisplacementMap(props: FCProps[ButtonIntrinsicProps[feDisplacementMap]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feDistantLight(props: FCProps[ButtonIntrinsicProps[feDistantLight]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feDropShadow(props: FCProps[ButtonIntrinsicProps[feDropShadow]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feFlood(props: FCProps[ButtonIntrinsicProps[feFlood]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feFuncA(props: FCProps[ButtonIntrinsicProps[feFuncA]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feFuncB(props: FCProps[ButtonIntrinsicProps[feFuncB]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feFuncG(props: FCProps[ButtonIntrinsicProps[feFuncG]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feFuncR(props: FCProps[ButtonIntrinsicProps[feFuncR]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feGaussianBlur(props: FCProps[ButtonIntrinsicProps[feGaussianBlur]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feImage(props: FCProps[ButtonIntrinsicProps[feImage]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feMerge(props: FCProps[ButtonIntrinsicProps[feMerge]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feMergeNode(props: FCProps[ButtonIntrinsicProps[feMergeNode]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feMorphology(props: FCProps[ButtonIntrinsicProps[feMorphology]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feOffset(props: FCProps[ButtonIntrinsicProps[feOffset]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_fePointLight(props: FCProps[ButtonIntrinsicProps[fePointLight]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feSpecularLighting(props: FCProps[ButtonIntrinsicProps[feSpecularLighting]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feSpotLight(props: FCProps[ButtonIntrinsicProps[feSpotLight]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feTile(props: FCProps[ButtonIntrinsicProps[feTile]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_feTurbulence(props: FCProps[ButtonIntrinsicProps[feTurbulence]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_fieldset(props: FCProps[ButtonIntrinsicProps[fieldset]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_figcaption(props: FCProps[ButtonIntrinsicProps[figcaption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_figure(props: FCProps[ButtonIntrinsicProps[figure]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_filter(props: FCProps[ButtonIntrinsicProps[filter]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_footer(props: FCProps[ButtonIntrinsicProps[footer]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_foreignObject(props: FCProps[ButtonIntrinsicProps[foreignObject]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_form(props: FCProps[ButtonIntrinsicProps[form]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_g(props: FCProps[ButtonIntrinsicProps[g]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_h1(props: FCProps[ButtonIntrinsicProps[h1]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_h2(props: FCProps[ButtonIntrinsicProps[h2]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_h3(props: FCProps[ButtonIntrinsicProps[h3]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_h4(props: FCProps[ButtonIntrinsicProps[h4]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_h5(props: FCProps[ButtonIntrinsicProps[h5]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_h6(props: FCProps[ButtonIntrinsicProps[h6]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_head(props: FCProps[ButtonIntrinsicProps[head]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_header(props: FCProps[ButtonIntrinsicProps[header]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_hgroup(props: FCProps[ButtonIntrinsicProps[hgroup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_hr(props: FCProps[ButtonIntrinsicProps[hr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_html(props: FCProps[ButtonIntrinsicProps[html]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_i(props: FCProps[ButtonIntrinsicProps[i]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_iframe(props: FCProps[ButtonIntrinsicProps[iframe]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_image(props: FCProps[ButtonIntrinsicProps[image]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_img(props: FCProps[ButtonIntrinsicProps[img]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_input(props: FCProps[ButtonIntrinsicProps[input]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_ins(props: FCProps[ButtonIntrinsicProps[ins]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_kbd(props: FCProps[ButtonIntrinsicProps[kbd]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_keygen(props: FCProps[ButtonIntrinsicProps[keygen]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_label(props: FCProps[ButtonIntrinsicProps[label]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_legend(props: FCProps[ButtonIntrinsicProps[legend]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_li(props: FCProps[ButtonIntrinsicProps[li]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_line(props: FCProps[ButtonIntrinsicProps[line]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_linearGradient(props: FCProps[ButtonIntrinsicProps[linearGradient]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_link(props: FCProps[ButtonIntrinsicProps[link]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_main(props: FCProps[ButtonIntrinsicProps[main]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_map(props: FCProps[ButtonIntrinsicProps[map]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_mark(props: FCProps[ButtonIntrinsicProps[mark]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_marker(props: FCProps[ButtonIntrinsicProps[marker]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_mask(props: FCProps[ButtonIntrinsicProps[mask]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_menu(props: FCProps[ButtonIntrinsicProps[menu]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_menuitem(props: FCProps[ButtonIntrinsicProps[menuitem]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_meta(props: FCProps[ButtonIntrinsicProps[meta]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_metadata(props: FCProps[ButtonIntrinsicProps[metadata]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_meter(props: FCProps[ButtonIntrinsicProps[meter]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_mpath(props: FCProps[ButtonIntrinsicProps[mpath]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_nav(props: FCProps[ButtonIntrinsicProps[nav]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_noindex(props: FCProps[ButtonIntrinsicProps[noindex]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_noscript(props: FCProps[ButtonIntrinsicProps[noscript]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_object(props: FCProps[ButtonIntrinsicProps[`object`]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_ol(props: FCProps[ButtonIntrinsicProps[ol]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_optgroup(props: FCProps[ButtonIntrinsicProps[optgroup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_option(props: FCProps[ButtonIntrinsicProps[option]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_output(props: FCProps[ButtonIntrinsicProps[output]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_p(props: FCProps[ButtonIntrinsicProps[p]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_param(props: FCProps[ButtonIntrinsicProps[param]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_path(props: FCProps[ButtonIntrinsicProps[path]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_pattern(props: FCProps[ButtonIntrinsicProps[pattern]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_picture(props: FCProps[ButtonIntrinsicProps[picture]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_polygon(props: FCProps[ButtonIntrinsicProps[polygon]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_polyline(props: FCProps[ButtonIntrinsicProps[polyline]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_pre(props: FCProps[ButtonIntrinsicProps[pre]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_progress(props: FCProps[ButtonIntrinsicProps[progress]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_q(props: FCProps[ButtonIntrinsicProps[q]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_radialGradient(props: FCProps[ButtonIntrinsicProps[radialGradient]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_rect(props: FCProps[ButtonIntrinsicProps[rect]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_rp(props: FCProps[ButtonIntrinsicProps[rp]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_rt(props: FCProps[ButtonIntrinsicProps[rt]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_ruby(props: FCProps[ButtonIntrinsicProps[ruby]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_s(props: FCProps[ButtonIntrinsicProps[s]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_samp(props: FCProps[ButtonIntrinsicProps[samp]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_script(props: FCProps[ButtonIntrinsicProps[script]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_section(props: FCProps[ButtonIntrinsicProps[section]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_select(props: FCProps[ButtonIntrinsicProps[select]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_slot(props: FCProps[ButtonIntrinsicProps[slot]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_small(props: FCProps[ButtonIntrinsicProps[small]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_source(props: FCProps[ButtonIntrinsicProps[source]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_span(props: FCProps[ButtonIntrinsicProps[span]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_stop(props: FCProps[ButtonIntrinsicProps[stop]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_strong(props: FCProps[ButtonIntrinsicProps[strong]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_style(props: FCProps[ButtonIntrinsicProps[style]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_sub(props: FCProps[ButtonIntrinsicProps[sub]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_summary(props: FCProps[ButtonIntrinsicProps[summary]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_sup(props: FCProps[ButtonIntrinsicProps[sup]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_svg(props: FCProps[ButtonIntrinsicProps[svg]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_switch(props: FCProps[ButtonIntrinsicProps[switch]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_symbol(props: FCProps[ButtonIntrinsicProps[symbol]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_table(props: FCProps[ButtonIntrinsicProps[table]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_tbody(props: FCProps[ButtonIntrinsicProps[tbody]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_td(props: FCProps[ButtonIntrinsicProps[td]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_template(props: FCProps[ButtonIntrinsicProps[template]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_text(props: FCProps[ButtonIntrinsicProps[text]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_textPath(props: FCProps[ButtonIntrinsicProps[textPath]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_textarea(props: FCProps[ButtonIntrinsicProps[textarea]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_tfoot(props: FCProps[ButtonIntrinsicProps[tfoot]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_th(props: FCProps[ButtonIntrinsicProps[th]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_thead(props: FCProps[ButtonIntrinsicProps[thead]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_time(props: FCProps[ButtonIntrinsicProps[time]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_title(props: FCProps[ButtonIntrinsicProps[title]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_tr(props: FCProps[ButtonIntrinsicProps[tr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_track(props: FCProps[ButtonIntrinsicProps[track]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_tspan(props: FCProps[ButtonIntrinsicProps[tspan]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_u(props: FCProps[ButtonIntrinsicProps[u]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_ul(props: FCProps[ButtonIntrinsicProps[ul]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_use(props: FCProps[ButtonIntrinsicProps[use]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_var(props: FCProps[ButtonIntrinsicProps[`var`]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_video(props: FCProps[ButtonIntrinsicProps[video]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_view(props: FCProps[ButtonIntrinsicProps[view]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_wbr(props: FCProps[ButtonIntrinsicProps[wbr]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_webview(props: FCProps[ButtonIntrinsicProps[webview]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "Select")
+  @js.native
+  val Select: ForwardRefReturn[HTMLSelectElement, SelectProps] = js.native
+  
+  @JSImport("carbon-components-react", "SelectItem")
+  @js.native
+  val SelectItem: FC[SelectItemProps] = js.native
+  
+  @JSImport("carbon-components-react", "SelectItemGroup")
+  @js.native
+  val SelectItemGroup: FC[SelectItemGroupProps] = js.native
+  
+  @JSImport("carbon-components-react", "SelectSkeleton")
+  @js.native
+  val SelectSkeleton: FC[SelectSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "SelectableTile")
+  @js.native
+  val SelectableTile: FC[SelectableTileProps] = js.native
+  
+  @JSImport("carbon-components-react", "SideNav")
+  @js.native
+  val SideNav: ForwardRefReturn[HTMLElement, SideNavProps] = js.native
+  
+  @JSImport("carbon-components-react", "SideNavDetails")
+  @js.native
+  val SideNavDetails: FC[SideNavDetailsProps] = js.native
+  
+  @JSImport("carbon-components-react", "SideNavDivider")
+  @js.native
+  val SideNavDivider: FC[SideNavDividerProps] = js.native
+  
+  @JSImport("carbon-components-react", "SideNavFooter")
+  @js.native
+  val SideNavFooter: FC[SideNavFooterProps] = js.native
+  
+  @JSImport("carbon-components-react", "SideNavHeader")
+  @js.native
+  val SideNavHeader: FC[SideNavHeaderProps] = js.native
+  
+  @JSImport("carbon-components-react", "SideNavIcon")
+  @js.native
+  val SideNavIcon: FC[SideNavIconProps] = js.native
+  
+  @JSImport("carbon-components-react", "SideNavItem")
+  @js.native
+  val SideNavItem: FC[SideNavItemProps] = js.native
+  
+  @JSImport("carbon-components-react", "SideNavItems")
+  @js.native
+  val SideNavItems: FC[SideNavItemsProps] = js.native
+  
+  inline def SideNavLink[E /* <: js.Object */](props: ForwardRefProps[HTMLElement, SideNavLinkProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SideNavLink")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "SideNavLinkText")
+  @js.native
+  val SideNavLinkText: FC[SideNavLinkTextProps] = js.native
+  
+  @JSImport("carbon-components-react", "SideNavMenu")
+  @js.native
+  val SideNavMenu: ForwardRefReturn[HTMLButtonElement, SideNavMenuProps] = js.native
+  
+  inline def SideNavMenuItem[E /* <: js.Object */, R](props: ForwardRefProps[R, SideNavMenuItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SideNavMenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "SideNavSwitcher")
+  @js.native
+  val SideNavSwitcher: ForwardRefReturn[HTMLSelectElement, SideNavSwitcherProps] = js.native
+  
+  @JSImport("carbon-components-react", "SkeletonIcon")
+  @js.native
+  val SkeletonIcon: FC[SkeletonIconProps] = js.native
+  
+  @JSImport("carbon-components-react", "SkeletonPlaceholder")
+  @js.native
+  val SkeletonPlaceholder: FC[SkeletonPlaceholderProps] = js.native
+  
+  @JSImport("carbon-components-react", "SkeletonText")
+  @js.native
+  val SkeletonText: FC[SkeletonTextProps] = js.native
+  
+  @JSImport("carbon-components-react", "SkipToContent")
+  @js.native
+  val SkipToContent: FC[SkipToContentProps] = js.native
+  
+  @JSImport("carbon-components-react", "Slider")
+  @js.native
+  open class Slider ()
+    extends typings.carbonComponentsReact.sliderMod.default
+  
+  @JSImport("carbon-components-react", "SliderSkeleton")
+  @js.native
+  val SliderSkeleton: FC[SliderSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "StructuredListBody")
+  @js.native
+  val StructuredListBody: FC[StructuredListBodyProps] = js.native
+  
+  @JSImport("carbon-components-react", "StructuredListCell")
+  @js.native
+  val StructuredListCell: FC[StructuredListCellProps] = js.native
+  
+  @JSImport("carbon-components-react", "StructuredListHead")
+  @js.native
+  val StructuredListHead: FC[StructuredListHeadProps] = js.native
+  
+  @JSImport("carbon-components-react", "StructuredListInput")
+  @js.native
+  val StructuredListInput: FC[StructuredListInputProps] = js.native
+  
+  @JSImport("carbon-components-react", "StructuredListRow")
+  @js.native
+  val StructuredListRow: FC[AllStructuredListRowProps] = js.native
+  
+  @JSImport("carbon-components-react", "StructuredListSkeleton")
+  @js.native
+  val StructuredListSkeleton: FC[StructuredListSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "StructuredListWrapper")
+  @js.native
+  val StructuredListWrapper: FC[StructuredListWrapperProps] = js.native
+  
+  @JSImport("carbon-components-react", "Switch")
+  @js.native
+  val Switch: ForwardRefReturn[HTMLButtonElement, SwitchProps] = js.native
+  
+  @JSImport("carbon-components-react", "Switcher")
+  @js.native
+  val Switcher: ForwardRefReturn[HTMLUListElement, SwitcherProps] = js.native
+  
+  @JSImport("carbon-components-react", "SwitcherDivider")
+  @js.native
+  val SwitcherDivider: FC[SwitcherDividerProps] = js.native
+  
+  inline def SwitcherItem[E /* <: js.Object */, R](props: ForwardRefProps[R, SwitcherItemProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SwitcherItem")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "Tab")
+  @js.native
+  open class Tab ()
+    extends typings.carbonComponentsReact.tabMod.default
+  
+  @JSImport("carbon-components-react", "TabContent")
+  @js.native
+  val TabContent: FC[TabContentProps] = js.native
+  
+  @JSImport("carbon-components-react", "Table")
+  @js.native
+  val Table: FC[TableProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableActionList")
+  @js.native
+  val TableActionList: FC[TableActionListProps] = js.native
+  
+  // tslint:disable:unified-signatures breaks certain usages
+  //
+  // Note: TypeScript will try to select the best overload but this is not always easily predictable the more freedom the
+  // generic types have or the more they overlap. If you're having difficulty with these types you can try reexporting the
+  // component casted to your desired type.
+  // ex:
+  // import { Button } from "carbon-components-react"
+  // export const DefaultButton = Button as React.FC<ButtonDefaultProps>;
+  // export const AnchorButton = Button as React.FC<ButtonAnchorProps>;
+  // or just create a wrapper component.
+  inline def TableBatchAction(
+    props: ForwardRefProps[
+      HTMLAnchorElement | HTMLButtonElement, 
+      ButtonAnchorProps & ButtonKindProps & ButtonDefaultProps
+    ]
+  ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_abbr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[abbr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_address[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[address] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_animate[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animate] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_animateMotion[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animateMotion] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_animateTransform[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animateTransform] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_area[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[area] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_article[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[article] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_aside[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[aside] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_audio[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[audio] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_b[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[b] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_base[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[base] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_bdi[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[bdi] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_bdo[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[bdo] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_big[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[big] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_blockquote[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[blockquote] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_body[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[body] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_br[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[br] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_button[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[button] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_canvas[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[canvas] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_caption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[caption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_circle[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[circle] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_cite[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[cite] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_clipPath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[clipPath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_code[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[code] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_col[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[col] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_colgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[colgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_data[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[data] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_datalist[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[datalist] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_dd[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dd] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_defs[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[defs] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_del[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[del] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_desc[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[desc_] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_details[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[details] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_dfn[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dfn] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_dialog[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dialog] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_div[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[div] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_dl[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dl] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_dt[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dt] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_ellipse[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ellipse] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_em[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[em] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_embed[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[embed] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feBlend[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feBlend] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feColorMatrix[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feColorMatrix] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feComponentTransfer[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feComponentTransfer] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feComposite[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feComposite] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feConvolveMatrix[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feConvolveMatrix] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feDiffuseLighting[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDiffuseLighting] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feDisplacementMap[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDisplacementMap] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feDistantLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDistantLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feDropShadow[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDropShadow] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feFlood[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFlood] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feFuncA[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncA] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feFuncB[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncB] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feFuncG[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncG] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feFuncR[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncR] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feGaussianBlur[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feGaussianBlur] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feImage[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feImage] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feMerge[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMerge] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feMergeNode[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMergeNode] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feMorphology[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMorphology] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feOffset[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feOffset] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_fePointLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[fePointLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feSpecularLighting[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feSpecularLighting] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feSpotLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feSpotLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feTile[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feTile] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_feTurbulence[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feTurbulence] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_fieldset[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[fieldset] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_figcaption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[figcaption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_figure[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[figure] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_filter[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[filter] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_footer[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[footer] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_foreignObject[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[foreignObject] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_form[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[form] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_g[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[g] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_h1[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h1] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_h2[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h2] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_h3[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h3] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_h4[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h4] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_h5[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h5] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_h6[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h6] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_head[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[head] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_header[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[header] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_hgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[hgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_hr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[hr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_html[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[html] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_i[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[i] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_iframe[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[iframe] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_image[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[image] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_img[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[img] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_input[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[input] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_ins[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ins] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_kbd[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[kbd] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_keygen[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[keygen] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_label[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[label] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_legend[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[legend] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_li[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[li] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_line[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[line] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_linearGradient[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[linearGradient] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_link[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[link] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_main[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[main] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_map[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[map] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_mark[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mark] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_marker[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[marker] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_mask[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mask] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_menu[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[menu] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_menuitem[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[menuitem] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_meta[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[meta] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_metadata[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[metadata] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_meter[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[meter] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_mpath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mpath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_nav[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[nav] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_noindex[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[noindex] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_noscript[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[noscript] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_object[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[`object`] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_ol[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ol] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_optgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[optgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_option[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[option] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_output[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[output] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_p[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[p] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_param[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[param] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_path[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[path] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_pattern[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[pattern] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_picture[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[picture] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_polygon[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[polygon] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_polyline[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[polyline] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_pre[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[pre] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_progress[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[progress] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_q[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[q] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_radialGradient[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[radialGradient] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_rect[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rect] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_rp[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rp] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_rt[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rt] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_ruby[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ruby] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_s[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[s] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_samp[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[samp] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_script[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[script] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_section[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[section] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_select[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[select] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_slot[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[slot] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_small[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[small] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_source[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[source] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_span[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[span] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_stop[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[stop] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_strong[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[strong] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_style[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[style] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_sub[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[sub] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_summary[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[summary] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_sup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[sup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_svg[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[svg] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_switch[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[switch] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_symbol[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[symbol] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_table[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[table] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_tbody[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tbody] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_td[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[td] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_template[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[template] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_text[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[text] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_textPath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[textPath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_textarea[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[textarea] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_tfoot[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tfoot] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_th[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[th] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_thead[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[thead] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_time[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[time] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_title[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[title] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_tr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_track[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[track] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_tspan[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tspan] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_u[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[u] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_ul[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ul] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_use[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[use] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_var[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[`var`] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_video[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[video] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_view[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[view] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_wbr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[wbr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_webview[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[webview] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "TableBatchActions")
+  @js.native
+  val TableBatchActions: TableBatchActionsFC = js.native
+  
+  @JSImport("carbon-components-react", "TableBody")
+  @js.native
+  val TableBody: FC[TableBodyProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableCell")
+  @js.native
+  val TableCell: FC[TableCellProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableContainer")
+  @js.native
+  val TableContainer: FC[TableContainerProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableExpandHeader")
+  @js.native
+  val TableExpandHeader: FC[TableExpandHeaderProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableExpandRow")
+  @js.native
+  val TableExpandRow: FC[TableExpandRowProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableExpandedRow")
+  @js.native
+  val TableExpandedRow: FC[TableExpandedRowProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableHead")
+  @js.native
+  val TableHead: FC[TableHeadProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableHeader")
+  @js.native
+  val TableHeader: TableHeaderFC = js.native
+  
+  @JSImport("carbon-components-react", "TableRow")
+  @js.native
+  val TableRow: FC[TableRowProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableSelectAll")
+  @js.native
+  val TableSelectAll: FC[TableSelectAllProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableSelectRow")
+  @js.native
+  val TableSelectRow: FC[TableSelectRowProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableToolbar")
+  @js.native
+  val TableToolbar: FC[TableToolbarProps] = js.native
+  
+  // tslint:disable:unified-signatures
+  inline def TableToolbarAction(
+    props: ForwardRefProps[
+      HTMLAnchorElement | HTMLButtonElement, 
+      TableToolbarActionAnchorProps | TableToolbarActionButtonProps
+    ]
+  ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableToolbarAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "TableToolbarContent")
+  @js.native
+  val TableToolbarContent: FC[TableToolbarContentProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableToolbarMenu")
+  @js.native
+  val TableToolbarMenu: FC[TableToolbarMenuProps] = js.native
+  
+  @JSImport("carbon-components-react", "TableToolbarSearch")
+  @js.native
+  val TableToolbarSearch: FC[TableToolbarSearchProps] = js.native
+  
+  @JSImport("carbon-components-react", "Tabs")
+  @js.native
+  open class Tabs ()
+    extends typings.carbonComponentsReact.tabsMod.default
+  
+  @JSImport("carbon-components-react", "TabsSkeleton")
+  @js.native
+  val TabsSkeleton: FC[TabsSkeletonProps] = js.native
+  
+  // tslint:disable:unified-signatures
+  inline def Tag(props: FCProps[ChipTagProps | FilterTagProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Tag")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "TagSkeleton")
+  @js.native
+  val TagSkeleton: FC[TagSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "TextArea")
+  @js.native
+  val TextArea: ForwardRefReturn[HTMLTextAreaElement, TextAreaProps] = js.native
+  
+  @JSImport("carbon-components-react", "TextAreaSkeleton")
+  @js.native
+  val TextAreaSkeleton: FC[TextAreaSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "TextInput")
+  @js.native
+  val TextInput: TextInputFC = js.native
+  
+  @JSImport("carbon-components-react", "TextInputSkeleton")
+  @js.native
+  val TextInputSkeleton: FC[TextInputSkeletonProps] = js.native
+  
+  @JSImport("carbon-components-react", "Tile")
+  @js.native
+  open class Tile protected ()
+    extends typings.carbonComponentsReact.tileMod.Tile {
+    def this(props: TileProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TileProps, context: Any) = this()
+  }
+  
+  @JSImport("carbon-components-react", "TileAboveTheFoldContent")
+  @js.native
+  open class TileAboveTheFoldContent protected ()
+    extends typings.carbonComponentsReact.tileMod.TileAboveTheFoldContent {
+    def this(props: TileAboveTheFoldContentProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TileAboveTheFoldContentProps, context: Any) = this()
+  }
+  
+  @JSImport("carbon-components-react", "TileBelowTheFoldContent")
+  @js.native
+  open class TileBelowTheFoldContent protected ()
+    extends typings.carbonComponentsReact.tileMod.TileBelowTheFoldContent {
+    def this(props: TileBelowTheFoldContentProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TileBelowTheFoldContentProps, context: Any) = this()
+  }
+  
+  @JSImport("carbon-components-react", "TileGroup")
+  @js.native
+  open class TileGroup ()
+    extends typings.carbonComponentsReact.tileGroupMod.default
+  
+  @JSImport("carbon-components-react", "TimePicker")
+  @js.native
+  open class TimePicker ()
+    extends typings.carbonComponentsReact.timePickerMod.default
+  
+  @JSImport("carbon-components-react", "TimePickerSelect")
+  @js.native
+  open class TimePickerSelect ()
+    extends typings.carbonComponentsReact.timePickerSelectMod.default
+  
+  @JSImport("carbon-components-react", "ToastNotification")
+  @js.native
+  val ToastNotification: FC[ToastNotificationProps] = js.native
+  
+  @JSImport("carbon-components-react", "Toggle")
+  @js.native
+  open class Toggle ()
+    extends typings.carbonComponentsReact.toggleMod.default
+  
+  @JSImport("carbon-components-react", "ToggleSkeleton")
+  @js.native
+  open class ToggleSkeleton ()
+    extends typings.carbonComponentsReact.toggleSkeletonMod.default
+  
+  @JSImport("carbon-components-react", "ToggleSmall")
+  @js.native
+  val ToggleSmall: FC[ToggleSmallProps] = js.native
+  
+  @JSImport("carbon-components-react", "ToggleSmallSkeleton")
+  @js.native
+  open class ToggleSmallSkeleton ()
+    extends typings.carbonComponentsReact.toggleSmallSkeletonMod.default
+  
+  /**
+    * @deprecated
+    */
+  @JSImport("carbon-components-react", "Toolbar")
+  @js.native
+  val Toolbar: FC[ToolbarProps] = js.native
+  
+  @JSImport("carbon-components-react", "ToolbarDivider")
+  @js.native
+  val ToolbarDivider: ForwardRefReturn[HTMLHRElement, js.Object] = js.native
+  
+  @JSImport("carbon-components-react", "ToolbarItem")
+  @js.native
+  val ToolbarItem: FC[ToolbarItemProps] = js.native
+  
+  @JSImport("carbon-components-react", "ToolbarOption")
+  @js.native
+  val ToolbarOption: ForwardRefReturn[HTMLLIElement, ToolbarOptionProps] = js.native
+  
+  /**
+    * @deprecated
+    */
+  @JSImport("carbon-components-react", "ToolbarSearch")
+  @js.native
+  open class ToolbarSearch ()
+    extends typings.carbonComponentsReact.toolbarSearchMod.default
+  
+  @JSImport("carbon-components-react", "ToolbarTitle")
+  @js.native
+  val ToolbarTitle: ForwardRefReturn[HTMLLIElement, ToolbarTitleProps] = js.native
+  
+  @JSImport("carbon-components-react", "Tooltip")
+  @js.native
+  val Tooltip: ForwardRefReturn[Any, TooltipProps] = js.native
+  
+  @JSImport("carbon-components-react", "TooltipDefinition")
+  @js.native
+  val TooltipDefinition: FC[TooltipDefinitionProps] = js.native
+  
+  @JSImport("carbon-components-react", "TooltipIcon")
+  @js.native
+  val TooltipIcon: FC[TooltipIconProps] = js.native
+  
+  @JSImport("carbon-components-react", "UnorderedList")
+  @js.native
+  val UnorderedList: FC[UnorderedListProps] = js.native
+  
+  inline def createCustomSideNavLink_element[E /* <: js.Object */](
+    element: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/UIShell/SideNavLink.SideNavLinkProps<carbon-components-react.carbon-components-react/typings/shared.ReactAnchorAttr<std.HTMLAnchorElement>>['element'] */ js.Any
+  ): SideNavLinkFC[Omit[E, element]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomSideNavLink")(element.asInstanceOf[js.Any]).asInstanceOf[SideNavLinkFC[Omit[E, element]]]
+  
+  inline def findIcon[T /* <: Name */](name: String): `false` | T = ^.asInstanceOf[js.Dynamic].applyDynamic("findIcon")(name.asInstanceOf[js.Any]).asInstanceOf[`false` | T]
+  inline def findIcon[T /* <: Name */](name: String, iconsObj: js.Array[T]): `false` | T = (^.asInstanceOf[js.Dynamic].applyDynamic("findIcon")(name.asInstanceOf[js.Any], iconsObj.asInstanceOf[js.Any])).asInstanceOf[`false` | T]
+  
+  inline def getSvgData[R](iconName: String): R = ^.asInstanceOf[js.Dynamic].applyDynamic("getSvgData")(iconName.asInstanceOf[js.Any]).asInstanceOf[R]
+  
+  @JSImport("carbon-components-react", "icons")
+  @js.native
+  val icons: Any = js.native
+  
+  inline def isPrefixed(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrefixed")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def setIconsList[T /* <: Name */](list: js.Array[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIconsList")(list.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def svgShapes[D](svgData: D): js.Array[ReactNode | ReactNodeArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("svgShapes")(svgData.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactNode | ReactNodeArray]]
+  
+  @JSImport("carbon-components-react", "types")
+  @js.native
+  val types: js.Array[TagTypeName] = js.native
+  
+  @JSImport("carbon-components-react", "unstable_FeatureFlags")
+  @js.native
+  val unstableFeatureFlags: FC[FeatureFlagsProps] = js.native
+  
+  @JSImport("carbon-components-react", "unstable_Heading")
+  @js.native
+  val unstableHeading: FC[HeadingProps] = js.native
+  
+  @JSImport("carbon-components-react", "unstable_Menu")
+  @js.native
+  val unstableMenu: MenuComponent = js.native
+  
+  @JSImport("carbon-components-react", "unstable_ProgressBar")
+  @js.native
+  val unstableProgressBar: FC[ProgressBarProps] = js.native
+  
+  inline def unstableSection(props: SectionDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def unstableSection[T /* <: ReactComponentConstructor[scala.Nothing] */](props: SectionCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_a(props: SectionIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_abbr(props: SectionIntrinsicProps[abbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_address(props: SectionIntrinsicProps[address]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_animate(props: SectionIntrinsicProps[animate]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_animateMotion(props: SectionIntrinsicProps[animateMotion]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_animateTransform(props: SectionIntrinsicProps[animateTransform]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_area(props: SectionIntrinsicProps[area]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_article(props: SectionIntrinsicProps[article]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_aside(props: SectionIntrinsicProps[aside]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_audio(props: SectionIntrinsicProps[audio]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_b(props: SectionIntrinsicProps[b]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_base(props: SectionIntrinsicProps[base]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_bdi(props: SectionIntrinsicProps[bdi]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_bdo(props: SectionIntrinsicProps[bdo]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_big(props: SectionIntrinsicProps[big]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_blockquote(props: SectionIntrinsicProps[blockquote]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_body(props: SectionIntrinsicProps[body]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_br(props: SectionIntrinsicProps[br]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_button(props: SectionIntrinsicProps[button]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_canvas(props: SectionIntrinsicProps[canvas]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_caption(props: SectionIntrinsicProps[caption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_circle(props: SectionIntrinsicProps[circle]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_cite(props: SectionIntrinsicProps[cite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_clipPath(props: SectionIntrinsicProps[clipPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_code(props: SectionIntrinsicProps[code]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_col(props: SectionIntrinsicProps[col]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_colgroup(props: SectionIntrinsicProps[colgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_data(props: SectionIntrinsicProps[data]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_datalist(props: SectionIntrinsicProps[datalist]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_dd(props: SectionIntrinsicProps[dd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_defs(props: SectionIntrinsicProps[defs]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_del(props: SectionIntrinsicProps[del]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_desc(props: SectionIntrinsicProps[desc_]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_details(props: SectionIntrinsicProps[details]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_dfn(props: SectionIntrinsicProps[dfn]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_dialog(props: SectionIntrinsicProps[dialog]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_div(props: SectionIntrinsicProps[div]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_dl(props: SectionIntrinsicProps[dl]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_dt(props: SectionIntrinsicProps[dt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_ellipse(props: SectionIntrinsicProps[ellipse]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_em(props: SectionIntrinsicProps[em]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_embed(props: SectionIntrinsicProps[embed]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feBlend(props: SectionIntrinsicProps[feBlend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feColorMatrix(props: SectionIntrinsicProps[feColorMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feComponentTransfer(props: SectionIntrinsicProps[feComponentTransfer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feComposite(props: SectionIntrinsicProps[feComposite]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feConvolveMatrix(props: SectionIntrinsicProps[feConvolveMatrix]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feDiffuseLighting(props: SectionIntrinsicProps[feDiffuseLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feDisplacementMap(props: SectionIntrinsicProps[feDisplacementMap]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feDistantLight(props: SectionIntrinsicProps[feDistantLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feDropShadow(props: SectionIntrinsicProps[feDropShadow]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feFlood(props: SectionIntrinsicProps[feFlood]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feFuncA(props: SectionIntrinsicProps[feFuncA]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feFuncB(props: SectionIntrinsicProps[feFuncB]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feFuncG(props: SectionIntrinsicProps[feFuncG]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feFuncR(props: SectionIntrinsicProps[feFuncR]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feGaussianBlur(props: SectionIntrinsicProps[feGaussianBlur]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feImage(props: SectionIntrinsicProps[feImage]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feMerge(props: SectionIntrinsicProps[feMerge]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feMergeNode(props: SectionIntrinsicProps[feMergeNode]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feMorphology(props: SectionIntrinsicProps[feMorphology]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feOffset(props: SectionIntrinsicProps[feOffset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_fePointLight(props: SectionIntrinsicProps[fePointLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feSpecularLighting(props: SectionIntrinsicProps[feSpecularLighting]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feSpotLight(props: SectionIntrinsicProps[feSpotLight]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feTile(props: SectionIntrinsicProps[feTile]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_feTurbulence(props: SectionIntrinsicProps[feTurbulence]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_fieldset(props: SectionIntrinsicProps[fieldset]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_figcaption(props: SectionIntrinsicProps[figcaption]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_figure(props: SectionIntrinsicProps[figure]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_filter(props: SectionIntrinsicProps[filter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_footer(props: SectionIntrinsicProps[footer]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_foreignObject(props: SectionIntrinsicProps[foreignObject]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_form(props: SectionIntrinsicProps[form]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_g(props: SectionIntrinsicProps[g]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_h1(props: SectionIntrinsicProps[h1]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_h2(props: SectionIntrinsicProps[h2]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_h3(props: SectionIntrinsicProps[h3]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_h4(props: SectionIntrinsicProps[h4]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_h5(props: SectionIntrinsicProps[h5]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_h6(props: SectionIntrinsicProps[h6]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_head(props: SectionIntrinsicProps[head]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_header(props: SectionIntrinsicProps[header]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_hgroup(props: SectionIntrinsicProps[hgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_hr(props: SectionIntrinsicProps[hr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_html(props: SectionIntrinsicProps[html]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_i(props: SectionIntrinsicProps[i]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_iframe(props: SectionIntrinsicProps[iframe]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_image(props: SectionIntrinsicProps[image]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_img(props: SectionIntrinsicProps[img]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_input(props: SectionIntrinsicProps[input]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_ins(props: SectionIntrinsicProps[ins]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_kbd(props: SectionIntrinsicProps[kbd]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_keygen(props: SectionIntrinsicProps[keygen]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_label(props: SectionIntrinsicProps[label]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_legend(props: SectionIntrinsicProps[legend]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_li(props: SectionIntrinsicProps[li]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_line(props: SectionIntrinsicProps[line]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_linearGradient(props: SectionIntrinsicProps[linearGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_link(props: SectionIntrinsicProps[link]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_main(props: SectionIntrinsicProps[main]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_map(props: SectionIntrinsicProps[map]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_mark(props: SectionIntrinsicProps[mark]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_marker(props: SectionIntrinsicProps[marker]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_mask(props: SectionIntrinsicProps[mask]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_menu(props: SectionIntrinsicProps[menu]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_menuitem(props: SectionIntrinsicProps[menuitem]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_meta(props: SectionIntrinsicProps[meta]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_metadata(props: SectionIntrinsicProps[metadata]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_meter(props: SectionIntrinsicProps[meter]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_mpath(props: SectionIntrinsicProps[mpath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_nav(props: SectionIntrinsicProps[nav]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_noindex(props: SectionIntrinsicProps[noindex]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_noscript(props: SectionIntrinsicProps[noscript]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_object(props: SectionIntrinsicProps[`object`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_ol(props: SectionIntrinsicProps[ol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_optgroup(props: SectionIntrinsicProps[optgroup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_option(props: SectionIntrinsicProps[option]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_output(props: SectionIntrinsicProps[output]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_p(props: SectionIntrinsicProps[p]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_param(props: SectionIntrinsicProps[param]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_path(props: SectionIntrinsicProps[path]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_pattern(props: SectionIntrinsicProps[pattern]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_picture(props: SectionIntrinsicProps[picture]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_polygon(props: SectionIntrinsicProps[polygon]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_polyline(props: SectionIntrinsicProps[polyline]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_pre(props: SectionIntrinsicProps[pre]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_progress(props: SectionIntrinsicProps[progress]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_q(props: SectionIntrinsicProps[q]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_radialGradient(props: SectionIntrinsicProps[radialGradient]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_rect(props: SectionIntrinsicProps[rect]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_rp(props: SectionIntrinsicProps[rp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_rt(props: SectionIntrinsicProps[rt]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_ruby(props: SectionIntrinsicProps[ruby]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_s(props: SectionIntrinsicProps[s]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_samp(props: SectionIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_script(props: SectionIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_section(props: SectionIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_select(props: SectionIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_slot(props: SectionIntrinsicProps[slot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_small(props: SectionIntrinsicProps[small]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_source(props: SectionIntrinsicProps[source]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_span(props: SectionIntrinsicProps[span]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_stop(props: SectionIntrinsicProps[stop]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_strong(props: SectionIntrinsicProps[strong]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_style(props: SectionIntrinsicProps[style]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_sub(props: SectionIntrinsicProps[sub]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_summary(props: SectionIntrinsicProps[summary]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_sup(props: SectionIntrinsicProps[sup]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_svg(props: SectionIntrinsicProps[svg]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_switch(props: SectionIntrinsicProps[switch]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_symbol(props: SectionIntrinsicProps[symbol]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_table(props: SectionIntrinsicProps[table]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_tbody(props: SectionIntrinsicProps[tbody]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_td(props: SectionIntrinsicProps[td]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_template(props: SectionIntrinsicProps[template]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_text(props: SectionIntrinsicProps[text]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_textPath(props: SectionIntrinsicProps[textPath]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_textarea(props: SectionIntrinsicProps[textarea]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_tfoot(props: SectionIntrinsicProps[tfoot]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_th(props: SectionIntrinsicProps[th]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_thead(props: SectionIntrinsicProps[thead]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_time(props: SectionIntrinsicProps[time]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_title(props: SectionIntrinsicProps[title]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_tr(props: SectionIntrinsicProps[tr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_track(props: SectionIntrinsicProps[track]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_tspan(props: SectionIntrinsicProps[tspan]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_u(props: SectionIntrinsicProps[u]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_ul(props: SectionIntrinsicProps[ul]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_use(props: SectionIntrinsicProps[use]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_var(props: SectionIntrinsicProps[`var`]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_video(props: SectionIntrinsicProps[video]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_view(props: SectionIntrinsicProps[view]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_wbr(props: SectionIntrinsicProps[wbr]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_webview(props: SectionIntrinsicProps[webview]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  @JSImport("carbon-components-react", "unstable_TreeView")
+  @js.native
+  val unstableTreeView: TreeViewFC = js.native
+  
+  inline def unstableUseFeatureFlag(flag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useFeatureFlag")(flag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def unstableUseFeatureFlags(): FeatureFlagScope = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useFeatureFlags")().asInstanceOf[FeatureFlagScope]
+}

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SliceConstructor
   extends StObject
      with /**
-  * The slice widget is a 3D analysis tool that can be used to reveal occluded content in a {@link module:esri/views/SceneView}.
+  * The Slice widget is a 3D analysis tool that can be used to reveal occluded content in a {@link module:esri/views/SceneView}.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html)
   */

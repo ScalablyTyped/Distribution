@@ -38,7 +38,7 @@ trait FormField extends StObject {
   
   var OwnStatus: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Previous: FormField
   
@@ -76,7 +76,7 @@ object FormField {
     Next: FormField,
     OwnHelp: Boolean,
     OwnStatus: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Previous: FormField,
     Range: Range,
     Result: String,
@@ -125,7 +125,7 @@ object FormField {
     
     inline def setOwnStatus(value: Boolean): Self = StObject.set(x, "OwnStatus", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPrevious(value: FormField): Self = StObject.set(x, "Previous", value.asInstanceOf[js.Any])
     

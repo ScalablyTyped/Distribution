@@ -21,7 +21,7 @@ trait ITooltipProvider
 }
 object ITooltipProvider {
   
-  inline def apply($get: js.Any, options: ITooltipOptions => Unit, setTriggers: js.Object => Unit): ITooltipProvider = {
+  inline def apply($get: Any, options: ITooltipOptions => Unit, setTriggers: js.Object => Unit): ITooltipProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], options = js.Any.fromFunction1(options), setTriggers = js.Any.fromFunction1(setTriggers))
     __obj.asInstanceOf[ITooltipProvider]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "LocalDateTime")
 @js.native
-/* private */ class LocalDateTime () extends ChronoLocalDateTime {
+/* private */ open class LocalDateTime () extends ChronoLocalDateTime {
   
   def adjustInto(temporal: TemporalAdjuster): LocalDateTime = js.native
   
@@ -20,8 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def dayOfYear(): Double = js.native
   
-  def equals(other: js.Any): Boolean = js.native
-  
   def format(formatter: DateTimeFormatter): String = js.native
   
   def getLong(field: TemporalField): Double = js.native
@@ -32,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def isBefore(other: LocalDateTime): Boolean = js.native
   
-  def isEqual(other: js.Any): Boolean = js.native
+  def isEqual(other: Any): Boolean = js.native
   
   def isSupported(fieldOrUnit: TemporalField): Boolean = js.native
   def isSupported(fieldOrUnit: TemporalUnit): Boolean = js.native

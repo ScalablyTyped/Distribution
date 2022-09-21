@@ -21,7 +21,7 @@ object XPropertyChangeListener {
     acquire: () => Unit,
     disposing: EventObject => Unit,
     propertyChange: PropertyChangeEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPropertyChangeListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), propertyChange = js.Any.fromFunction1(propertyChange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

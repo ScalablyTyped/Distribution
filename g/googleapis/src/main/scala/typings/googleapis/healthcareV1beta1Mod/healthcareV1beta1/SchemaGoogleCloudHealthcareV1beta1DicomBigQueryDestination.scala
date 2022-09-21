@@ -4,24 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The BigQuery table where the output should be written.
-  */
 trait SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestination extends StObject {
   
   /**
-    * If the destination table already exists and this flag is `TRUE`, the
-    * table will be overwritten by the contents of the DICOM store. If the flag
-    * is not set and the destination table already exists, the export call
-    * returns an error.
+    * Use `write_disposition` instead. If `write_disposition` is specified, this parameter is ignored. force=false is equivalent to write_disposition=WRITE_EMPTY and force=true is equivalent to write_disposition=WRITE_TRUNCATE.
     */
-  var force: js.UndefOr[Boolean] = js.undefined
+  var force: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * BigQuery URI to a table, up to 2000 characters long, in the format
-    * `bq://projectId.bqDatasetId.tableId`
+    * BigQuery URI to a table, up to 2000 characters long, in the format `bq://projectId.bqDatasetId.tableId`
     */
-  var tableUri: js.UndefOr[String] = js.undefined
+  var tableUri: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Determines whether the existing table in the destination is to be overwritten or appended to. If a write_disposition is specified, the `force` parameter is ignored.
+    */
+  var writeDisposition: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestination {
   
@@ -34,10 +32,20 @@ object SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestination {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
+    inline def setForceNull: Self = StObject.set(x, "force", null)
+    
     inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     inline def setTableUri(value: String): Self = StObject.set(x, "tableUri", value.asInstanceOf[js.Any])
     
+    inline def setTableUriNull: Self = StObject.set(x, "tableUri", null)
+    
     inline def setTableUriUndefined: Self = StObject.set(x, "tableUri", js.undefined)
+    
+    inline def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
+    
+    inline def setWriteDispositionNull: Self = StObject.set(x, "writeDisposition", null)
+    
+    inline def setWriteDispositionUndefined: Self = StObject.set(x, "writeDisposition", js.undefined)
   }
 }

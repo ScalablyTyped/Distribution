@@ -14,10 +14,10 @@ trait DelegatedAdministrator extends StObject {
   /**
     * The date when the account was made a delegated administrator.
     */
-  var DelegationEnabledDate: js.UndefOr[Timestamp] = js.undefined
+  var DelegationEnabledDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The email address that is associated with the delegated administrator's AWS account.
+    * The email address that is associated with the delegated administrator's Amazon Web Services account.
     */
   var Email: js.UndefOr[typings.awsSdk.organizationsMod.Email] = js.undefined
   
@@ -34,7 +34,7 @@ trait DelegatedAdministrator extends StObject {
   /**
     * The date when the delegated administrator's account became a part of the organization.
     */
-  var JoinedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var JoinedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The friendly name of the delegated administrator's account.
@@ -59,7 +59,7 @@ object DelegatedAdministrator {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setDelegationEnabledDate(value: Timestamp): Self = StObject.set(x, "DelegationEnabledDate", value.asInstanceOf[js.Any])
+    inline def setDelegationEnabledDate(value: js.Date): Self = StObject.set(x, "DelegationEnabledDate", value.asInstanceOf[js.Any])
     
     inline def setDelegationEnabledDateUndefined: Self = StObject.set(x, "DelegationEnabledDate", js.undefined)
     
@@ -75,7 +75,7 @@ object DelegatedAdministrator {
     
     inline def setJoinedMethodUndefined: Self = StObject.set(x, "JoinedMethod", js.undefined)
     
-    inline def setJoinedTimestamp(value: Timestamp): Self = StObject.set(x, "JoinedTimestamp", value.asInstanceOf[js.Any])
+    inline def setJoinedTimestamp(value: js.Date): Self = StObject.set(x, "JoinedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setJoinedTimestampUndefined: Self = StObject.set(x, "JoinedTimestamp", js.undefined)
     

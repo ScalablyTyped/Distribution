@@ -15,7 +15,7 @@ import typings.mapboxMapboxSdk.anon.Description
 import typings.mapboxMapboxSdk.anon.FeatureId
 import typings.mapboxMapboxSdk.anon.Limit
 import typings.mapboxMapboxSdk.anon.Name
-import typings.mapboxMapboxSdk.anon.`0`
+import typings.mapboxMapboxSdk.anon.Sortby
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
@@ -34,7 +34,7 @@ object datasetsMod {
   /**
     * All GeoJSON types except for FeatureCollection.
     */
-  type DataSetsFeature = Point | MultiPoint | LineString | MultiLineString | Polygon | MultiPolygon | GeometryCollection | (Feature[Geometry, GeoJsonProperties])
+  type DataSetsFeature = Point | MultiPoint | LineString | MultiLineString | Polygon | MultiPolygon | GeometryCollection[Geometry] | (Feature[Geometry, GeoJsonProperties])
   
   trait Dataset extends StObject {
     
@@ -104,7 +104,7 @@ object datasetsMod {
       
       inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+      inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value*))
       
       inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
@@ -124,101 +124,62 @@ object datasetsMod {
     }
   }
   
+  @js.native
   trait DatasetsService extends StObject {
     
     /**
       *  Create a new, empty dataset.
       * @param config Object
       */
-    def createDataset(config: Description): MapiRequest
+    def createDataset(config: Description): MapiRequest[Any] = js.native
     
     /**
       * Delete a dataset, including all features it contains.
       * @param config
       */
-    def deleteDataset(config: `0`): MapiRequest
+    def deleteDataset(config: DatasetId): MapiRequest[Any] = js.native
     
     /**
       * Delete a feature in a dataset.
       * @param config
       */
-    // implicit any
-    def deleteFeature(config: FeatureId): js.Any
+    def deleteFeature(config: FeatureId): MapiRequest[Any] = js.native
     
     /**
       * Get a feature in a dataset.
       * @param config
       */
-    // implicit any
-    def getFeature(config: FeatureId): js.Any
+    def getFeature(config: FeatureId): MapiRequest[Any] = js.native
     
     /**
       * Get metadata about a dataset.
       * @param config
       */
-    def getMetadata(config: DatasetId): MapiRequest
+    def getMetadata(config: DatasetId): MapiRequest[Any] = js.native
     
     /**
       * List datasets in your account.
       */
-    def listDatasets(): MapiRequest
+    def listDatasets(): MapiRequest[Any] = js.native
+    def listDatasets(config: Sortby): MapiRequest[Any] = js.native
     
     /**
       * List features in a dataset.
       * This endpoint supports pagination. Use MapiRequest#eachPage or manually specify the limit and start options.
       * @param config
       */
-    // implicit any
-    def listFeatures(config: Limit): js.Any
+    def listFeatures(config: Limit): MapiRequest[Any] = js.native
     
     /**
       * Add a feature to a dataset or update an existing one.
       * @param config
       */
-    def putFeature(config: typings.mapboxMapboxSdk.anon.Feature): MapiRequest
+    def putFeature(config: typings.mapboxMapboxSdk.anon.Feature): MapiRequest[Any] = js.native
     
     /**
       * Update user-defined properties of a dataset's metadata.
       * @param config
       */
-    def updateMetadata(config: Name): MapiRequest
-  }
-  object DatasetsService {
-    
-    inline def apply(
-      createDataset: Description => MapiRequest,
-      deleteDataset: `0` => MapiRequest,
-      deleteFeature: FeatureId => js.Any,
-      getFeature: FeatureId => js.Any,
-      getMetadata: DatasetId => MapiRequest,
-      listDatasets: () => MapiRequest,
-      listFeatures: Limit => js.Any,
-      putFeature: typings.mapboxMapboxSdk.anon.Feature => MapiRequest,
-      updateMetadata: Name => MapiRequest
-    ): DatasetsService = {
-      val __obj = js.Dynamic.literal(createDataset = js.Any.fromFunction1(createDataset), deleteDataset = js.Any.fromFunction1(deleteDataset), deleteFeature = js.Any.fromFunction1(deleteFeature), getFeature = js.Any.fromFunction1(getFeature), getMetadata = js.Any.fromFunction1(getMetadata), listDatasets = js.Any.fromFunction0(listDatasets), listFeatures = js.Any.fromFunction1(listFeatures), putFeature = js.Any.fromFunction1(putFeature), updateMetadata = js.Any.fromFunction1(updateMetadata))
-      __obj.asInstanceOf[DatasetsService]
-    }
-    
-    extension [Self <: DatasetsService](x: Self) {
-      
-      inline def setCreateDataset(value: Description => MapiRequest): Self = StObject.set(x, "createDataset", js.Any.fromFunction1(value))
-      
-      inline def setDeleteDataset(value: `0` => MapiRequest): Self = StObject.set(x, "deleteDataset", js.Any.fromFunction1(value))
-      
-      inline def setDeleteFeature(value: FeatureId => js.Any): Self = StObject.set(x, "deleteFeature", js.Any.fromFunction1(value))
-      
-      inline def setGetFeature(value: FeatureId => js.Any): Self = StObject.set(x, "getFeature", js.Any.fromFunction1(value))
-      
-      inline def setGetMetadata(value: DatasetId => MapiRequest): Self = StObject.set(x, "getMetadata", js.Any.fromFunction1(value))
-      
-      inline def setListDatasets(value: () => MapiRequest): Self = StObject.set(x, "listDatasets", js.Any.fromFunction0(value))
-      
-      inline def setListFeatures(value: Limit => js.Any): Self = StObject.set(x, "listFeatures", js.Any.fromFunction1(value))
-      
-      inline def setPutFeature(value: typings.mapboxMapboxSdk.anon.Feature => MapiRequest): Self = StObject.set(x, "putFeature", js.Any.fromFunction1(value))
-      
-      inline def setUpdateMetadata(value: Name => MapiRequest): Self = StObject.set(x, "updateMetadata", js.Any.fromFunction1(value))
-    }
+    def updateMetadata(config: Name): MapiRequest[Any] = js.native
   }
 }

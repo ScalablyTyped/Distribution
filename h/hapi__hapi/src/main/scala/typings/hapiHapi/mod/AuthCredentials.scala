@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AuthCredentials
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   /**
     * If set, will only work with routes that set `access.entity` to `app`.
@@ -42,7 +42,7 @@ object AuthCredentials {
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     
     inline def setUser(value: UserCredentials): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     

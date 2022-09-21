@@ -1,6 +1,5 @@
 package typings.openfin
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object utilErrorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def errorToPOJO(error: Error): ErrorPlainObject = ^.asInstanceOf[js.Dynamic].applyDynamic("errorToPOJO")(error.asInstanceOf[js.Any]).asInstanceOf[ErrorPlainObject]
+  inline def errorToPOJO(error: js.Error): ErrorPlainObject = ^.asInstanceOf[js.Dynamic].applyDynamic("errorToPOJO")(error.asInstanceOf[js.Any]).asInstanceOf[ErrorPlainObject]
   
   trait ErrorPlainObject extends StObject {
     

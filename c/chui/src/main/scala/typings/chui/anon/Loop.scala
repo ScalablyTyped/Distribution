@@ -13,11 +13,11 @@ trait Loop extends StObject {
   
   var panels: ChocolateChipElementArray
   
-  var target: js.Any
+  var target: Any
 }
 object Loop {
   
-  inline def apply(panels: ChocolateChipElementArray, target: js.Any): Loop = {
+  inline def apply(panels: ChocolateChipElementArray, target: Any): Loop = {
     val __obj = js.Dynamic.literal(panels = panels.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Loop]
   }
@@ -34,6 +34,6 @@ object Loop {
     
     inline def setPanels(value: ChocolateChipElementArray): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

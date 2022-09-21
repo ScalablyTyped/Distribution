@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.ImageEvent")
 @js.native
-class ImageEvent protected () extends Event {
+open class ImageEvent protected () extends Event {
   /**
     * @classdesc
     * Events emitted by {@link ol.source.Image} instances are instances of this

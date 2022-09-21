@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The options for hangouts chat export.
-  */
 trait SchemaHangoutsChatExportOptions extends StObject {
   
   /**
-    * The export format for hangouts chat export.
+    * The file format for exported messages.
     */
-  var exportFormat: js.UndefOr[String] = js.undefined
+  var exportFormat: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaHangoutsChatExportOptions {
   
@@ -24,6 +21,8 @@ object SchemaHangoutsChatExportOptions {
   extension [Self <: SchemaHangoutsChatExportOptions](x: Self) {
     
     inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
+    
+    inline def setExportFormatNull: Self = StObject.set(x, "exportFormat", null)
     
     inline def setExportFormatUndefined: Self = StObject.set(x, "exportFormat", js.undefined)
   }

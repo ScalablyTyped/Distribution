@@ -1,19 +1,26 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.BLANK_POLICY
+import typings.awsSdk.awsSdkStrings.CANCEL
+import typings.awsSdk.awsSdkStrings.DEACTIVATE
+import typings.awsSdk.awsSdkStrings.SNS
+import typings.awsSdk.awsSdkStrings.TOPIC_FILTER
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AbortAction = typings.awsSdk.awsSdkStrings.CANCEL | java.lang.String
+type AbortAction = CANCEL | java.lang.String
 
-type AbortCriteriaList = js.Array[typings.awsSdk.iotMod.AbortCriteria]
+type AbortCriteriaList = js.Array[AbortCriteria]
 
-type AbortThresholdPercentage = scala.Double
+type AbortThresholdPercentage = Double
 
 type AcmCertificateArn = java.lang.String
 
-type ActionList = js.Array[typings.awsSdk.iotMod.Action]
+type ActionList = js.Array[Action]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUBLISH
@@ -22,31 +29,43 @@ type ActionList = js.Array[typings.awsSdk.iotMod.Action]
   - typings.awsSdk.awsSdkStrings.CONNECT
   - java.lang.String
 */
-type ActionType = typings.awsSdk.iotMod._ActionType | java.lang.String
+type ActionType = _ActionType | java.lang.String
 
-type ActiveViolations = js.Array[typings.awsSdk.iotMod.ActiveViolation]
+type ActiveViolations = js.Array[ActiveViolation]
 
-type AdditionalMetricsToRetainList = js.Array[typings.awsSdk.iotMod.BehaviorMetric]
+type AdditionalMetricsToRetainList = js.Array[BehaviorMetric]
 
-type AdditionalMetricsToRetainV2List = js.Array[typings.awsSdk.iotMod.MetricToRetain]
+type AdditionalMetricsToRetainV2List = js.Array[MetricToRetain]
 
-type AdditionalParameterMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.Value]
+type AdditionalParameterMap = StringDictionary[Value]
 
 type AggregationField = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Statistics_
+  - typings.awsSdk.awsSdkStrings.Percentiles
+  - typings.awsSdk.awsSdkStrings.Cardinality
+  - java.lang.String
+*/
+type AggregationTypeName = _AggregationTypeName | java.lang.String
+
+type AggregationTypeValue = java.lang.String
+
+type AggregationTypeValues = js.Array[AggregationTypeValue]
 
 type AlarmName = java.lang.String
 
 type AlertTargetArn = java.lang.String
 
-type AlertTargetType = typings.awsSdk.awsSdkStrings.SNS | java.lang.String
+type AlertTargetType = SNS | java.lang.String
 
-type AlertTargets = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.AlertTarget]
+type AlertTargets = StringDictionary[AlertTarget]
 
 type AllowAuthorizerOverride = scala.Boolean
 
 type AllowAutoRegistration = scala.Boolean
 
-type ApproximateSecondsBeforeTimedOut = scala.Double
+type ApproximateSecondsBeforeTimedOut = Double
 
 type AscendingOrder = scala.Boolean
 
@@ -72,7 +91,7 @@ type AssetPropertyStringValue = java.lang.String
 
 type AssetPropertyTimeInSeconds = java.lang.String
 
-type AssetPropertyValueList = js.Array[typings.awsSdk.iotMod.AssetPropertyValue]
+type AssetPropertyValueList = js.Array[AssetPropertyValue]
 
 type AttributeKey = java.lang.String
 
@@ -80,11 +99,11 @@ type AttributeName = java.lang.String
 
 type AttributeValue = java.lang.String
 
-type Attributes = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.AttributeValue]
+type Attributes = StringDictionary[AttributeValue]
 
-type AttributesMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.Value]
+type AttributesMap = StringDictionary[Value]
 
-type AuditCheckConfigurations = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.AuditCheckConfiguration]
+type AuditCheckConfigurations = StringDictionary[AuditCheckConfiguration]
 
 type AuditCheckName = java.lang.String
 
@@ -97,15 +116,15 @@ type AuditCheckName = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type AuditCheckRunStatus = typings.awsSdk.iotMod._AuditCheckRunStatus | java.lang.String
+type AuditCheckRunStatus = _AuditCheckRunStatus | java.lang.String
 
-type AuditCheckToActionsMapping = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.MitigationActionNameList]
+type AuditCheckToActionsMapping = StringDictionary[MitigationActionNameList]
 
-type AuditCheckToReasonCodeFilter = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.ReasonForNonComplianceCodes]
+type AuditCheckToReasonCodeFilter = StringDictionary[ReasonForNonComplianceCodes]
 
 type AuditDescription = java.lang.String
 
-type AuditDetails = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.AuditCheckDetails]
+type AuditDetails = StringDictionary[AuditCheckDetails]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CRITICAL
@@ -114,9 +133,9 @@ type AuditDetails = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.io
   - typings.awsSdk.awsSdkStrings.LOW
   - java.lang.String
 */
-type AuditFindingSeverity = typings.awsSdk.iotMod._AuditFindingSeverity | java.lang.String
+type AuditFindingSeverity = _AuditFindingSeverity | java.lang.String
 
-type AuditFindings = js.Array[typings.awsSdk.iotMod.AuditFinding]
+type AuditFindings = js.Array[AuditFinding]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DAILY
@@ -125,9 +144,9 @@ type AuditFindings = js.Array[typings.awsSdk.iotMod.AuditFinding]
   - typings.awsSdk.awsSdkStrings.MONTHLY
   - java.lang.String
 */
-type AuditFrequency = typings.awsSdk.iotMod._AuditFrequency | java.lang.String
+type AuditFrequency = _AuditFrequency | java.lang.String
 
-type AuditMitigationActionExecutionMetadataList = js.Array[typings.awsSdk.iotMod.AuditMitigationActionExecutionMetadata]
+type AuditMitigationActionExecutionMetadataList = js.Array[AuditMitigationActionExecutionMetadata]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -138,13 +157,11 @@ type AuditMitigationActionExecutionMetadataList = js.Array[typings.awsSdk.iotMod
   - typings.awsSdk.awsSdkStrings.PENDING
   - java.lang.String
 */
-type AuditMitigationActionsExecutionStatus = typings.awsSdk.iotMod._AuditMitigationActionsExecutionStatus | java.lang.String
+type AuditMitigationActionsExecutionStatus = _AuditMitigationActionsExecutionStatus | java.lang.String
 
-type AuditMitigationActionsTaskId = java.lang.String
+type AuditMitigationActionsTaskMetadataList = js.Array[AuditMitigationActionsTaskMetadata]
 
-type AuditMitigationActionsTaskMetadataList = js.Array[typings.awsSdk.iotMod.AuditMitigationActionsTaskMetadata]
-
-type AuditMitigationActionsTaskStatistics = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.TaskStatisticsForAuditCheck]
+type AuditMitigationActionsTaskStatistics = StringDictionary[TaskStatisticsForAuditCheck]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -153,17 +170,17 @@ type AuditMitigationActionsTaskStatistics = org.scalablytyped.runtime.StringDict
   - typings.awsSdk.awsSdkStrings.CANCELED
   - java.lang.String
 */
-type AuditMitigationActionsTaskStatus = typings.awsSdk.iotMod._AuditMitigationActionsTaskStatus | java.lang.String
+type AuditMitigationActionsTaskStatus = _AuditMitigationActionsTaskStatus | java.lang.String
 
-type AuditNotificationTargetConfigurations = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.AuditNotificationTarget]
+type AuditNotificationTargetConfigurations = StringDictionary[AuditNotificationTarget]
 
-type AuditNotificationType = typings.awsSdk.awsSdkStrings.SNS | java.lang.String
+type AuditNotificationType = SNS | java.lang.String
 
-type AuditSuppressionList = js.Array[typings.awsSdk.iotMod.AuditSuppression]
+type AuditSuppressionList = js.Array[AuditSuppression]
 
 type AuditTaskId = java.lang.String
 
-type AuditTaskMetadataList = js.Array[typings.awsSdk.iotMod.AuditTaskMetadata]
+type AuditTaskMetadataList = js.Array[AuditTaskMetadata]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -172,14 +189,14 @@ type AuditTaskMetadataList = js.Array[typings.awsSdk.iotMod.AuditTaskMetadata]
   - typings.awsSdk.awsSdkStrings.CANCELED
   - java.lang.String
 */
-type AuditTaskStatus = typings.awsSdk.iotMod._AuditTaskStatus | java.lang.String
+type AuditTaskStatus = _AuditTaskStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ON_DEMAND_AUDIT_TASK
   - typings.awsSdk.awsSdkStrings.SCHEDULED_AUDIT_TASK
   - java.lang.String
 */
-type AuditTaskType = typings.awsSdk.iotMod._AuditTaskType | java.lang.String
+type AuditTaskType = _AuditTaskType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALLOWED
@@ -187,11 +204,11 @@ type AuditTaskType = typings.awsSdk.iotMod._AuditTaskType | java.lang.String
   - typings.awsSdk.awsSdkStrings.IMPLICIT_DENY
   - java.lang.String
 */
-type AuthDecision = typings.awsSdk.iotMod._AuthDecision | java.lang.String
+type AuthDecision = _AuthDecision | java.lang.String
 
-type AuthInfos = js.Array[typings.awsSdk.iotMod.AuthInfo]
+type AuthInfos = js.Array[AuthInfo]
 
-type AuthResults = js.Array[typings.awsSdk.iotMod.AuthResult]
+type AuthResults = js.Array[AuthResult]
 
 type AuthorizerArn = java.lang.String
 
@@ -204,18 +221,18 @@ type AuthorizerName = java.lang.String
   - typings.awsSdk.awsSdkStrings.INACTIVE
   - java.lang.String
 */
-type AuthorizerStatus = typings.awsSdk.iotMod._AuthorizerStatus | java.lang.String
+type AuthorizerStatus = _AuthorizerStatus | java.lang.String
 
-type Authorizers = js.Array[typings.awsSdk.iotMod.AuthorizerSummary]
+type Authorizers = js.Array[AuthorizerSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLE
   - typings.awsSdk.awsSdkStrings.DISABLE
   - java.lang.String
 */
-type AutoRegistrationStatus = typings.awsSdk.iotMod._AutoRegistrationStatus | java.lang.String
+type AutoRegistrationStatus = _AutoRegistrationStatus | java.lang.String
 
-type Average = scala.Double
+type Average = Double
 
 type AwsAccountId = java.lang.String
 
@@ -227,9 +244,9 @@ type AwsIotJobId = java.lang.String
 
 type AwsIotSqlVersion = java.lang.String
 
-type AwsJobAbortCriteriaAbortAction = typings.awsSdk.awsSdkStrings.CANCEL | java.lang.String
+type AwsJobAbortCriteriaAbortAction = CANCEL | java.lang.String
 
-type AwsJobAbortCriteriaAbortThresholdPercentage = scala.Double
+type AwsJobAbortCriteriaAbortThresholdPercentage = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FAILED
@@ -238,27 +255,37 @@ type AwsJobAbortCriteriaAbortThresholdPercentage = scala.Double
   - typings.awsSdk.awsSdkStrings.ALL
   - java.lang.String
 */
-type AwsJobAbortCriteriaFailureType = typings.awsSdk.iotMod._AwsJobAbortCriteriaFailureType | java.lang.String
+type AwsJobAbortCriteriaFailureType = _AwsJobAbortCriteriaFailureType | java.lang.String
 
-type AwsJobAbortCriteriaList = js.Array[typings.awsSdk.iotMod.AwsJobAbortCriteria]
+type AwsJobAbortCriteriaList = js.Array[AwsJobAbortCriteria]
 
-type AwsJobAbortCriteriaMinimumNumberOfExecutedThings = scala.Double
+type AwsJobAbortCriteriaMinimumNumberOfExecutedThings = Double
 
-type AwsJobRateIncreaseCriteriaNumberOfThings = scala.Double
+type AwsJobRateIncreaseCriteriaNumberOfThings = Double
 
-type AwsJobRolloutIncrementFactor = scala.Double
+type AwsJobRolloutIncrementFactor = Double
 
-type AwsJobRolloutRatePerMinute = scala.Double
+type AwsJobRolloutRatePerMinute = Double
 
-type AwsJobTimeoutInProgressTimeoutInMinutes = scala.Double
+type AwsJobTimeoutInProgressTimeoutInMinutes = Double
 
 type BatchMode = scala.Boolean
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.STATIC
+  - typings.awsSdk.awsSdkStrings.STATISTICAL
+  - typings.awsSdk.awsSdkStrings.MACHINE_LEARNING
+  - java.lang.String
+*/
+type BehaviorCriteriaType = _BehaviorCriteriaType | java.lang.String
+
 type BehaviorMetric = java.lang.String
+
+type BehaviorModelTrainingSummaries = js.Array[BehaviorModelTrainingSummary]
 
 type BehaviorName = java.lang.String
 
-type Behaviors = js.Array[typings.awsSdk.iotMod.Behavior]
+type Behaviors = js.Array[Behavior]
 
 type BillingGroupArn = java.lang.String
 
@@ -268,30 +295,36 @@ type BillingGroupId = java.lang.String
 
 type BillingGroupName = java.lang.String
 
-type BillingGroupNameAndArnList = js.Array[typings.awsSdk.iotMod.GroupNameAndArn]
+type BillingGroupNameAndArnList = js.Array[GroupNameAndArn]
 
 type Boolean = scala.Boolean
 
 type BooleanKey = scala.Boolean
 
+type BooleanWrapperObject = scala.Boolean
+
+type BucketKeyValue = java.lang.String
+
 type BucketName = java.lang.String
+
+type Buckets = js.Array[Bucket]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.INACTIVE
   - java.lang.String
 */
-type CACertificateStatus = typings.awsSdk.iotMod._CACertificateStatus | java.lang.String
+type CACertificateStatus = _CACertificateStatus | java.lang.String
 
-type CACertificateUpdateAction = typings.awsSdk.awsSdkStrings.DEACTIVATE | java.lang.String
+type CACertificateUpdateAction = DEACTIVATE | java.lang.String
 
-type CACertificates = js.Array[typings.awsSdk.iotMod.CACertificate]
+type CACertificates = js.Array[CACertificate]
 
-type CanceledChecksCount = scala.Double
+type CanceledChecksCount = Double
 
-type CanceledFindingsCount = scala.Double
+type CanceledFindingsCount = Double
 
-type CanceledThings = scala.Double
+type CanceledThings = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.private__
@@ -304,7 +337,7 @@ type CanceledThings = scala.Double
   - typings.awsSdk.awsSdkStrings.`log-delivery-write`
   - java.lang.String
 */
-type CannedAccessControlList = typings.awsSdk.iotMod._CannedAccessControlList | java.lang.String
+type CannedAccessControlList = _CannedAccessControlList | java.lang.String
 
 type CertificateArn = java.lang.String
 
@@ -315,7 +348,7 @@ type CertificateId = java.lang.String
   - typings.awsSdk.awsSdkStrings.SNI_ONLY
   - java.lang.String
 */
-type CertificateMode = typings.awsSdk.iotMod._CertificateMode | java.lang.String
+type CertificateMode = _CertificateMode | java.lang.String
 
 type CertificateName = java.lang.String
 
@@ -334,9 +367,9 @@ type CertificateSigningRequest = java.lang.String
   - typings.awsSdk.awsSdkStrings.PENDING_ACTIVATION
   - java.lang.String
 */
-type CertificateStatus = typings.awsSdk.iotMod._CertificateStatus | java.lang.String
+type CertificateStatus = _CertificateStatus | java.lang.String
 
-type Certificates = js.Array[typings.awsSdk.iotMod.Certificate]
+type Certificates = js.Array[Certificate]
 
 type ChannelName = java.lang.String
 
@@ -344,9 +377,11 @@ type CheckCompliant = scala.Boolean
 
 type Cidr = java.lang.String
 
-type Cidrs = js.Array[typings.awsSdk.iotMod.Cidr]
+type Cidrs = js.Array[Cidr]
 
 type ClientId = java.lang.String
+
+type ClientProperties = StringDictionary[String]
 
 type ClientRequestToken = java.lang.String
 
@@ -365,31 +400,56 @@ type Comment = java.lang.String
   - typings.awsSdk.awsSdkStrings.`not-in-cidr-set`
   - typings.awsSdk.awsSdkStrings.`in-port-set`
   - typings.awsSdk.awsSdkStrings.`not-in-port-set`
+  - typings.awsSdk.awsSdkStrings.`in-set`
+  - typings.awsSdk.awsSdkStrings.`not-in-set`
   - java.lang.String
 */
-type ComparisonOperator = typings.awsSdk.iotMod._ComparisonOperator | java.lang.String
+type ComparisonOperator = _ComparisonOperator | java.lang.String
 
-type CompliantChecksCount = scala.Double
+type CompliantChecksCount = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LOW
+  - typings.awsSdk.awsSdkStrings.MEDIUM
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - java.lang.String
+*/
+type ConfidenceLevel = _ConfidenceLevel | java.lang.String
 
 type ConfirmationToken = java.lang.String
 
-type ConnectivityTimestamp = scala.Double
+type ConnectivityTimestamp = Double
 
-type ConsecutiveDatapointsToAlarm = scala.Double
+type ConsecutiveDatapointsToAlarm = Double
 
-type ConsecutiveDatapointsToClear = scala.Double
+type ConsecutiveDatapointsToClear = Double
 
-type Count = scala.Double
+type Count = Double
 
-type CreatedAtDate = typings.std.Date
+type CreatedAtDate = js.Date
 
-type CreationDate = typings.std.Date
+type CreationDate = js.Date
 
-type CredentialDurationSeconds = scala.Double
+type CredentialDurationSeconds = Double
 
-type CustomerVersion = scala.Double
+type CustomMetricArn = java.lang.String
 
-type DateType = typings.std.Date
+type CustomMetricDisplayName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`string-list`
+  - typings.awsSdk.awsSdkStrings.`ip-address-list`
+  - typings.awsSdk.awsSdkStrings.`number-list`
+  - typings.awsSdk.awsSdkStrings.number__
+  - java.lang.String
+*/
+type CustomMetricType = _CustomMetricType | java.lang.String
+
+type CustomerVersion = Double
+
+type DataCollectionPercentage = Double
+
+type DateType = js.Date
 
 type DayOfMonth = java.lang.String
 
@@ -403,7 +463,7 @@ type DayOfMonth = java.lang.String
   - typings.awsSdk.awsSdkStrings.SAT
   - java.lang.String
 */
-type DayOfWeek = typings.awsSdk.iotMod._DayOfWeek | java.lang.String
+type DayOfWeek = _DayOfWeek | java.lang.String
 
 type DeleteAdditionalMetricsToRetain = scala.Boolean
 
@@ -417,17 +477,50 @@ type DeleteStream = scala.Boolean
 
 type DeliveryStreamName = java.lang.String
 
-type DeprecationDate = typings.std.Date
+type DeprecationDate = js.Date
 
 type Description = java.lang.String
 
 type DetailsKey = java.lang.String
 
-type DetailsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.DetailsValue]
+type DetailsMap = StringDictionary[DetailsValue]
 
 type DetailsValue = java.lang.String
 
-type DeviceCertificateUpdateAction = typings.awsSdk.awsSdkStrings.DEACTIVATE | java.lang.String
+type DetectMitigationActionExecutionErrorCode = java.lang.String
+
+type DetectMitigationActionExecutionList = js.Array[DetectMitigationActionExecution]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.SUCCESSFUL
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.SKIPPED
+  - java.lang.String
+*/
+type DetectMitigationActionExecutionStatus = _DetectMitigationActionExecutionStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.SUCCESSFUL
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.CANCELED
+  - java.lang.String
+*/
+type DetectMitigationActionsTaskStatus = _DetectMitigationActionsTaskStatus | java.lang.String
+
+type DetectMitigationActionsTaskSummaryList = js.Array[DetectMitigationActionsTaskSummary]
+
+type DetectMitigationActionsToExecuteList = js.Array[MitigationActionName]
+
+type DeviceCertificateUpdateAction = DEACTIVATE | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OFF
+  - typings.awsSdk.awsSdkStrings.VIOLATIONS
+  - java.lang.String
+*/
+type DeviceDefenderIndexingMode = _DeviceDefenderIndexingMode | java.lang.String
 
 type DeviceDefenderThingName = java.lang.String
 
@@ -435,22 +528,26 @@ type DimensionArn = java.lang.String
 
 type DimensionName = java.lang.String
 
-type DimensionNames = js.Array[typings.awsSdk.iotMod.DimensionName]
+type DimensionNames = js.Array[DimensionName]
 
 type DimensionStringValue = java.lang.String
 
-type DimensionStringValues = js.Array[typings.awsSdk.iotMod.DimensionStringValue]
+type DimensionStringValues = js.Array[DimensionStringValue]
 
-type DimensionType = typings.awsSdk.awsSdkStrings.TOPIC_FILTER | java.lang.String
+type DimensionType = TOPIC_FILTER | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN
   - typings.awsSdk.awsSdkStrings.NOT_IN
   - java.lang.String
 */
-type DimensionValueOperator = typings.awsSdk.iotMod._DimensionValueOperator | java.lang.String
+type DimensionValueOperator = _DimensionValueOperator | java.lang.String
 
 type DisableAllLogs = scala.Boolean
+
+type DisconnectReason = java.lang.String
+
+type DocumentParameters = js.Array[DocumentParameter]
 
 type DomainConfigurationArn = java.lang.String
 
@@ -461,9 +558,9 @@ type DomainConfigurationName = java.lang.String
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type DomainConfigurationStatus = typings.awsSdk.iotMod._DomainConfigurationStatus | java.lang.String
+type DomainConfigurationStatus = _DomainConfigurationStatus | java.lang.String
 
-type DomainConfigurations = js.Array[typings.awsSdk.iotMod.DomainConfigurationSummary]
+type DomainConfigurations = js.Array[DomainConfigurationSummary]
 
 type DomainName = java.lang.String
 
@@ -473,9 +570,9 @@ type DomainName = java.lang.String
   - typings.awsSdk.awsSdkStrings.CUSTOMER_MANAGED
   - java.lang.String
 */
-type DomainType = typings.awsSdk.iotMod._DomainType | java.lang.String
+type DomainType = _DomainType | java.lang.String
 
-type DurationSeconds = scala.Double
+type DurationSeconds = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -483,18 +580,18 @@ type DurationSeconds = scala.Double
   - typings.awsSdk.awsSdkStrings.REBUILDING
   - java.lang.String
 */
-type DynamicGroupStatus = typings.awsSdk.iotMod._DynamicGroupStatus | java.lang.String
+type DynamicGroupStatus = _DynamicGroupStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STRING
   - typings.awsSdk.awsSdkStrings.NUMBER
   - java.lang.String
 */
-type DynamoKeyType = typings.awsSdk.iotMod._DynamoKeyType | java.lang.String
+type DynamoKeyType = _DynamoKeyType | java.lang.String
 
 type DynamoOperation = java.lang.String
 
-type EffectivePolicies = js.Array[typings.awsSdk.iotMod.EffectivePolicy]
+type EffectivePolicies = js.Array[EffectivePolicy]
 
 type ElasticsearchEndpoint = java.lang.String
 
@@ -504,11 +601,17 @@ type ElasticsearchIndex = java.lang.String
 
 type ElasticsearchType = java.lang.String
 
+type EnableCachingForHttp = scala.Boolean
+
 type Enabled = scala.Boolean
 
 type EndpointAddress = java.lang.String
 
 type EndpointType = java.lang.String
+
+type Environment = java.lang.String
+
+type Environments = js.Array[Environment]
 
 type ErrorCode = java.lang.String
 
@@ -516,7 +619,7 @@ type ErrorMessage = java.lang.String
 
 type EvaluationStatistic = java.lang.String
 
-type EventConfigurations = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.Configuration]
+type EventConfigurations = StringDictionary[Configuration]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.THING
@@ -532,23 +635,25 @@ type EventConfigurations = org.scalablytyped.runtime.StringDictionary[typings.aw
   - typings.awsSdk.awsSdkStrings.CA_CERTIFICATE
   - java.lang.String
 */
-type EventType = typings.awsSdk.iotMod._EventType | java.lang.String
+type EventType = _EventType | java.lang.String
+
+type Example = java.lang.String
 
 type ExecutionNamePrefix = java.lang.String
 
-type ExecutionNumber = scala.Double
+type ExecutionNumber = Double
 
-type ExpectedVersion = scala.Double
+type ExpectedVersion = Double
 
-type ExpiresInSec = scala.Double
+type ExpiresInSec = Double
 
-type ExpiresInSeconds = scala.Double
+type ExpiresInSeconds = Double
 
-type FailedChecksCount = scala.Double
+type FailedChecksCount = Double
 
-type FailedFindingsCount = scala.Double
+type FailedFindingsCount = Double
 
-type FailedThings = scala.Double
+type FailedThings = Double
 
 type FieldName = java.lang.String
 
@@ -558,21 +663,65 @@ type FieldName = java.lang.String
   - typings.awsSdk.awsSdkStrings.Boolean_
   - java.lang.String
 */
-type FieldType = typings.awsSdk.iotMod._FieldType | java.lang.String
+type FieldType = _FieldType | java.lang.String
 
-type Fields = js.Array[typings.awsSdk.iotMod.Field]
+type Fields = js.Array[Field]
 
-type FileId = scala.Double
+type FileId = Double
 
 type FileName = java.lang.String
 
+type FileType = Double
+
 type FindingId = java.lang.String
 
-type FindingIds = js.Array[typings.awsSdk.iotMod.FindingId]
+type FindingIds = js.Array[FindingId]
 
 type FirehoseSeparator = java.lang.String
 
 type Flag = scala.Boolean
+
+type FleetMetricArn = java.lang.String
+
+type FleetMetricDescription = java.lang.String
+
+type FleetMetricName = java.lang.String
+
+type FleetMetricNameAndArnList = js.Array[FleetMetricNameAndArn]
+
+type FleetMetricPeriod = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Seconds_
+  - typings.awsSdk.awsSdkStrings.Microseconds_
+  - typings.awsSdk.awsSdkStrings.Milliseconds_
+  - typings.awsSdk.awsSdkStrings.Bytes_
+  - typings.awsSdk.awsSdkStrings.Kilobytes
+  - typings.awsSdk.awsSdkStrings.Megabytes
+  - typings.awsSdk.awsSdkStrings.Gigabytes
+  - typings.awsSdk.awsSdkStrings.Terabytes_
+  - typings.awsSdk.awsSdkStrings.Bits_
+  - typings.awsSdk.awsSdkStrings.Kilobits
+  - typings.awsSdk.awsSdkStrings.Megabits
+  - typings.awsSdk.awsSdkStrings.Gigabits
+  - typings.awsSdk.awsSdkStrings.Terabits
+  - typings.awsSdk.awsSdkStrings.Percent_
+  - typings.awsSdk.awsSdkStrings.Count_
+  - typings.awsSdk.awsSdkStrings.BytesSlashSecond
+  - typings.awsSdk.awsSdkStrings.KilobytesSlashSecond
+  - typings.awsSdk.awsSdkStrings.MegabytesSlashSecond
+  - typings.awsSdk.awsSdkStrings.GigabytesSlashSecond
+  - typings.awsSdk.awsSdkStrings.TerabytesSlashSecond
+  - typings.awsSdk.awsSdkStrings.BitsSlashSecond
+  - typings.awsSdk.awsSdkStrings.KilobitsSlashSecond
+  - typings.awsSdk.awsSdkStrings.MegabitsSlashSecond
+  - typings.awsSdk.awsSdkStrings.GigabitsSlashSecond
+  - typings.awsSdk.awsSdkStrings.TerabitsSlashSecond
+  - typings.awsSdk.awsSdkStrings.CountSlashSecond
+  - typings.awsSdk.awsSdkStrings.None_
+  - java.lang.String
+*/
+type FleetMetricUnit = _FleetMetricUnit | java.lang.String
 
 type ForceDelete = scala.Boolean
 
@@ -586,6 +735,8 @@ type FunctionArn = java.lang.String
 
 type GenerationId = java.lang.String
 
+type GenericLongValue = Double
+
 type HashAlgorithm = java.lang.String
 
 type HashKeyField = java.lang.String
@@ -594,7 +745,7 @@ type HashKeyValue = java.lang.String
 
 type HeaderKey = java.lang.String
 
-type HeaderList = js.Array[typings.awsSdk.iotMod.HttpActionHeader]
+type HeaderList = js.Array[HttpActionHeader]
 
 type HeaderValue = java.lang.String
 
@@ -602,21 +753,21 @@ type HttpHeaderName = java.lang.String
 
 type HttpHeaderValue = java.lang.String
 
-type HttpHeaders = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.HttpHeaderValue]
+type HttpHeaders = StringDictionary[HttpHeaderValue]
 
 type HttpQueryString = java.lang.String
 
-type InProgressChecksCount = scala.Double
+type InProgressChecksCount = Double
 
-type InProgressThings = scala.Double
+type InProgressThings = Double
 
-type InProgressTimeoutInMinutes = scala.Double
+type InProgressTimeoutInMinutes = Double
 
-type IncrementFactor = scala.Double
+type IncrementFactor = Double
 
 type IndexName = java.lang.String
 
-type IndexNamesList = js.Array[typings.awsSdk.iotMod.IndexName]
+type IndexNamesList = js.Array[IndexName]
 
 type IndexSchema = java.lang.String
 
@@ -626,7 +777,7 @@ type IndexSchema = java.lang.String
   - typings.awsSdk.awsSdkStrings.REBUILDING
   - java.lang.String
 */
-type IndexStatus = typings.awsSdk.iotMod._IndexStatus | java.lang.String
+type IndexStatus = _IndexStatus | java.lang.String
 
 type InlineDocument = java.lang.String
 
@@ -655,7 +806,7 @@ type JobDocumentSource = java.lang.String
   - typings.awsSdk.awsSdkStrings.ALL
   - java.lang.String
 */
-type JobExecutionFailureType = typings.awsSdk.iotMod._JobExecutionFailureType | java.lang.String
+type JobExecutionFailureType = _JobExecutionFailureType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUEUED
@@ -668,11 +819,11 @@ type JobExecutionFailureType = typings.awsSdk.iotMod._JobExecutionFailureType | 
   - typings.awsSdk.awsSdkStrings.CANCELED
   - java.lang.String
 */
-type JobExecutionStatus = typings.awsSdk.iotMod._JobExecutionStatus | java.lang.String
+type JobExecutionStatus = _JobExecutionStatus | java.lang.String
 
-type JobExecutionSummaryForJobList = js.Array[typings.awsSdk.iotMod.JobExecutionSummaryForJob]
+type JobExecutionSummaryForJobList = js.Array[JobExecutionSummaryForJob]
 
-type JobExecutionSummaryForThingList = js.Array[typings.awsSdk.iotMod.JobExecutionSummaryForThing]
+type JobExecutionSummaryForThingList = js.Array[JobExecutionSummaryForThing]
 
 type JobId = java.lang.String
 
@@ -683,11 +834,17 @@ type JobId = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETION_IN_PROGRESS
   - java.lang.String
 */
-type JobStatus = typings.awsSdk.iotMod._JobStatus | java.lang.String
+type JobStatus = _JobStatus | java.lang.String
 
-type JobSummaryList = js.Array[typings.awsSdk.iotMod.JobSummary]
+type JobSummaryList = js.Array[JobSummary]
 
-type JobTargets = js.Array[typings.awsSdk.iotMod.TargetArn]
+type JobTargets = js.Array[TargetArn]
+
+type JobTemplateArn = java.lang.String
+
+type JobTemplateId = java.lang.String
+
+type JobTemplateSummaryList = js.Array[JobTemplateSummary]
 
 type JsonDocument = java.lang.String
 
@@ -697,9 +854,13 @@ type KeyName = java.lang.String
 
 type KeyValue = java.lang.String
 
-type LaserMaxResults = scala.Double
+type LaserMaxResults = Double
 
-type LastModifiedDate = typings.std.Date
+type LastModifiedDate = js.Date
+
+type LastUpdatedAtDate = js.Date
+
+type ListSuppressedAlerts = scala.Boolean
 
 type ListSuppressedFindings = scala.Boolean
 
@@ -713,28 +874,39 @@ type LogGroupName = java.lang.String
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type LogLevel = typings.awsSdk.iotMod._LogLevel | java.lang.String
+type LogLevel = _LogLevel | java.lang.String
 
-type LogTargetConfigurations = js.Array[typings.awsSdk.iotMod.LogTargetConfiguration]
+type LogTargetConfigurations = js.Array[LogTargetConfiguration]
 
 type LogTargetName = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.THING_GROUP
+  - typings.awsSdk.awsSdkStrings.CLIENT_ID
+  - typings.awsSdk.awsSdkStrings.SOURCE_IP
+  - typings.awsSdk.awsSdkStrings.PRINCIPAL_ID
   - java.lang.String
 */
-type LogTargetType = typings.awsSdk.iotMod._LogTargetType | java.lang.String
+type LogTargetType = _LogTargetType | java.lang.String
+
+type ManagedJobTemplateName = java.lang.String
+
+type ManagedJobTemplatesSummaryList = js.Array[ManagedJobTemplateSummary]
+
+type ManagedTemplateVersion = java.lang.String
 
 type Marker = java.lang.String
 
-type MaxJobExecutionsPerMin = scala.Double
+type MaxBuckets = Double
 
-type MaxResults = scala.Double
+type MaxJobExecutionsPerMin = Double
 
-type Maximum = scala.Double
+type MaxResults = Double
 
-type MaximumPerMinute = scala.Double
+type Maximum = Double
+
+type MaximumPerMinute = Double
 
 type Message = java.lang.String
 
@@ -743,29 +915,35 @@ type Message = java.lang.String
   - typings.awsSdk.awsSdkStrings.JSON
   - java.lang.String
 */
-type MessageFormat = typings.awsSdk.iotMod._MessageFormat | java.lang.String
+type MessageFormat = _MessageFormat | java.lang.String
 
 type MessageId = java.lang.String
 
-type Minimum = scala.Double
+type MetricDatumList = js.Array[MetricDatum]
 
-type MinimumNumberOfExecutedThings = scala.Double
+type MetricName = java.lang.String
+
+type MetricNames = js.Array[MetricName]
+
+type Minimum = Double
+
+type MinimumNumberOfExecutedThings = Double
 
 type MissingContextValue = java.lang.String
 
-type MissingContextValues = js.Array[typings.awsSdk.iotMod.MissingContextValue]
+type MissingContextValues = js.Array[MissingContextValue]
 
 type MitigationActionArn = java.lang.String
 
 type MitigationActionId = java.lang.String
 
-type MitigationActionIdentifierList = js.Array[typings.awsSdk.iotMod.MitigationActionIdentifier]
+type MitigationActionIdentifierList = js.Array[MitigationActionIdentifier]
 
-type MitigationActionList = js.Array[typings.awsSdk.iotMod.MitigationAction]
+type MitigationActionList = js.Array[MitigationAction]
 
 type MitigationActionName = java.lang.String
 
-type MitigationActionNameList = js.Array[typings.awsSdk.iotMod.MitigationActionName]
+type MitigationActionNameList = js.Array[MitigationActionName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UPDATE_DEVICE_CERTIFICATE
@@ -776,23 +954,50 @@ type MitigationActionNameList = js.Array[typings.awsSdk.iotMod.MitigationActionN
   - typings.awsSdk.awsSdkStrings.PUBLISH_FINDING_TO_SNS
   - java.lang.String
 */
-type MitigationActionType = typings.awsSdk.iotMod._MitigationActionType | java.lang.String
+type MitigationActionType = _MitigationActionType | java.lang.String
+
+type MitigationActionsTaskId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING_BUILD
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.EXPIRED
+  - java.lang.String
+*/
+type ModelStatus = _ModelStatus | java.lang.String
 
 type MqttClientId = java.lang.String
 
-type MqttPassword = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.iotMod.Blob | java.lang.String
+type MqttPassword = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
 type MqttUsername = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OFF
+  - typings.awsSdk.awsSdkStrings.ON
+  - java.lang.String
+*/
+type NamedShadowIndexingMode = _NamedShadowIndexingMode | java.lang.String
+
+type NamedShadowNamesFilter = js.Array[ShadowName]
 
 type NamespaceId = java.lang.String
 
 type NextToken = java.lang.String
 
-type NonCompliantChecksCount = scala.Double
+type NonCompliantChecksCount = Double
 
-type NonCompliantResourcesCount = scala.Double
+type NonCompliantResourcesCount = Double
 
-type NumberOfThings = scala.Double
+type NullableBoolean = scala.Boolean
+
+type Number = Double
+
+type NumberList = js.Array[Number]
+
+type NumberOfRetries = Double
+
+type NumberOfThings = Double
 
 type OTAUpdateArn = java.lang.String
 
@@ -802,7 +1007,7 @@ type OTAUpdateErrorMessage = java.lang.String
 
 type OTAUpdateFileVersion = java.lang.String
 
-type OTAUpdateFiles = js.Array[typings.awsSdk.iotMod.OTAUpdateFile]
+type OTAUpdateFiles = js.Array[OTAUpdateFile]
 
 type OTAUpdateId = java.lang.String
 
@@ -813,21 +1018,29 @@ type OTAUpdateId = java.lang.String
   - typings.awsSdk.awsSdkStrings.CREATE_FAILED
   - java.lang.String
 */
-type OTAUpdateStatus = typings.awsSdk.iotMod._OTAUpdateStatus | java.lang.String
+type OTAUpdateStatus = _OTAUpdateStatus | java.lang.String
 
-type OTAUpdatesSummary = js.Array[typings.awsSdk.iotMod.OTAUpdateSummary]
+type OTAUpdatesSummary = js.Array[OTAUpdateSummary]
 
-type OptionalVersion = scala.Double
+type Optional = scala.Boolean
 
-type OutgoingCertificates = js.Array[typings.awsSdk.iotMod.OutgoingCertificate]
+type OptionalVersion = Double
+
+type OutgoingCertificates = js.Array[OutgoingCertificate]
 
 type OverrideDynamicGroups = scala.Boolean
 
-type PageSize = scala.Double
+type PageSize = Double
 
 type Parameter = java.lang.String
 
-type Parameters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.Value]
+type ParameterKey = java.lang.String
+
+type ParameterMap = StringDictionary[ParameterValue]
+
+type ParameterValue = java.lang.String
+
+type Parameters = StringDictionary[Value]
 
 type PartitionKey = java.lang.String
 
@@ -835,45 +1048,47 @@ type PayloadField = java.lang.String
 
 type PayloadVersion = java.lang.String
 
-type Percent = scala.Double
+type Percent = Double
 
-type PercentList = js.Array[typings.awsSdk.iotMod.Percent]
+type PercentList = js.Array[Percent]
 
-type PercentValue = scala.Double
+type PercentValue = Double
 
-type Percentage = scala.Double
+type Percentage = Double
 
-type Percentiles = js.Array[typings.awsSdk.iotMod.PercentPair]
+type Percentiles = js.Array[PercentPair]
 
 type Platform = java.lang.String
 
-type Policies = js.Array[typings.awsSdk.iotMod.Policy]
+type Policies = js.Array[Policy]
 
 type PolicyArn = java.lang.String
 
 type PolicyDocument = java.lang.String
 
-type PolicyDocuments = js.Array[typings.awsSdk.iotMod.PolicyDocument]
+type PolicyDocuments = js.Array[PolicyDocument]
 
 type PolicyName = java.lang.String
 
-type PolicyNames = js.Array[typings.awsSdk.iotMod.PolicyName]
+type PolicyNames = js.Array[PolicyName]
 
 type PolicyTarget = java.lang.String
 
-type PolicyTargets = js.Array[typings.awsSdk.iotMod.PolicyTarget]
+type PolicyTargets = js.Array[PolicyTarget]
 
-type PolicyTemplateName = typings.awsSdk.awsSdkStrings.BLANK_POLICY | java.lang.String
+type PolicyTemplateName = BLANK_POLICY | java.lang.String
 
 type PolicyVersionId = java.lang.String
 
-type PolicyVersions = js.Array[typings.awsSdk.iotMod.PolicyVersion]
+type PolicyVersions = js.Array[PolicyVersion]
 
-type Port = scala.Double
+type Port = Double
 
-type Ports = js.Array[typings.awsSdk.iotMod.Port]
+type Ports = js.Array[Port]
 
 type Prefix = java.lang.String
+
+type PrimitiveBoolean = scala.Boolean
 
 type Principal = java.lang.String
 
@@ -881,36 +1096,36 @@ type PrincipalArn = java.lang.String
 
 type PrincipalId = java.lang.String
 
-type Principals = js.Array[typings.awsSdk.iotMod.PrincipalArn]
+type Principals = js.Array[PrincipalArn]
 
 type PrivateKey = java.lang.String
 
 type ProcessingTargetName = java.lang.String
 
-type ProcessingTargetNameList = js.Array[typings.awsSdk.iotMod.ProcessingTargetName]
+type ProcessingTargetNameList = js.Array[ProcessingTargetName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MQTT
   - typings.awsSdk.awsSdkStrings.HTTP
   - java.lang.String
 */
-type Protocol = typings.awsSdk.iotMod._Protocol | java.lang.String
+type Protocol = _Protocol | java.lang.String
 
-type Protocols = js.Array[typings.awsSdk.iotMod.Protocol]
+type Protocols = js.Array[Protocol]
 
-type ProvisioningTemplateListing = js.Array[typings.awsSdk.iotMod.ProvisioningTemplateSummary]
+type ProvisioningTemplateListing = js.Array[ProvisioningTemplateSummary]
 
-type ProvisioningTemplateVersionListing = js.Array[typings.awsSdk.iotMod.ProvisioningTemplateVersionSummary]
+type ProvisioningTemplateVersionListing = js.Array[ProvisioningTemplateVersionSummary]
 
 type PublicKey = java.lang.String
 
-type PublicKeyMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.KeyValue]
+type PublicKeyMap = StringDictionary[KeyValue]
 
-type PutAssetPropertyValueEntryList = js.Array[typings.awsSdk.iotMod.PutAssetPropertyValueEntry]
+type PutAssetPropertyValueEntryList = js.Array[PutAssetPropertyValueEntry]
 
-type Qos = scala.Double
+type Qos = Double
 
-type QueryMaxResults = scala.Double
+type QueryMaxResults = Double
 
 type QueryString = java.lang.String
 
@@ -918,7 +1133,7 @@ type QueryVersion = java.lang.String
 
 type QueueUrl = java.lang.String
 
-type QueuedThings = scala.Double
+type QueuedThings = Double
 
 type RangeKeyField = java.lang.String
 
@@ -930,23 +1145,25 @@ type ReasonForNonCompliance = java.lang.String
 
 type ReasonForNonComplianceCode = java.lang.String
 
-type ReasonForNonComplianceCodes = js.Array[typings.awsSdk.iotMod.ReasonForNonComplianceCode]
+type ReasonForNonComplianceCodes = js.Array[ReasonForNonComplianceCode]
 
 type Recursive = scala.Boolean
 
 type RecursiveWithoutDefault = scala.Boolean
 
+type Regex = java.lang.String
+
 type RegistrationCode = java.lang.String
 
-type RegistryMaxResults = scala.Double
+type RegistryMaxResults = Double
 
 type RegistryS3BucketName = java.lang.String
 
 type RegistryS3KeyName = java.lang.String
 
-type RejectedThings = scala.Double
+type RejectedThings = Double
 
-type RelatedResources = js.Array[typings.awsSdk.iotMod.RelatedResource]
+type RelatedResources = js.Array[RelatedResource]
 
 type RemoveAuthorizerConfig = scala.Boolean
 
@@ -956,14 +1173,14 @@ type RemoveHook = scala.Boolean
 
 type RemoveThingType = scala.Boolean
 
-type RemovedThings = scala.Double
+type RemovedThings = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ERRORS
   - typings.awsSdk.awsSdkStrings.RESULTS
   - java.lang.String
 */
-type ReportType = typings.awsSdk.iotMod._ReportType | java.lang.String
+type ReportType = _ReportType | java.lang.String
 
 type ReservedDomainConfigurationName = java.lang.String
 
@@ -971,7 +1188,7 @@ type Resource = java.lang.String
 
 type ResourceArn = java.lang.String
 
-type ResourceArns = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.ResourceArn]
+type ResourceArns = StringDictionary[ResourceArn]
 
 type ResourceLogicalId = java.lang.String
 
@@ -986,19 +1203,31 @@ type ResourceLogicalId = java.lang.String
   - typings.awsSdk.awsSdkStrings.IAM_ROLE
   - java.lang.String
 */
-type ResourceType = typings.awsSdk.iotMod._ResourceType | java.lang.String
+type ResourceType = _ResourceType | java.lang.String
 
-type Resources = js.Array[typings.awsSdk.iotMod.Resource]
+type Resources = js.Array[Resource]
+
+type RetryAttempt = Double
+
+type RetryCriteriaList = js.Array[RetryCriteria]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.TIMED_OUT
+  - typings.awsSdk.awsSdkStrings.ALL
+  - java.lang.String
+*/
+type RetryableFailureType = _RetryableFailureType | java.lang.String
 
 type RoleAlias = java.lang.String
 
 type RoleAliasArn = java.lang.String
 
-type RoleAliases = js.Array[typings.awsSdk.iotMod.RoleAlias]
+type RoleAliases = js.Array[RoleAlias]
 
 type RoleArn = java.lang.String
 
-type RolloutRatePerMinute = scala.Double
+type RolloutRatePerMinute = Double
 
 type RuleArn = java.lang.String
 
@@ -1008,7 +1237,7 @@ type S3Bucket = java.lang.String
 
 type S3FileUrl = java.lang.String
 
-type S3FileUrlList = js.Array[typings.awsSdk.iotMod.S3FileUrl]
+type S3FileUrlList = js.Array[S3FileUrl]
 
 type S3Key = java.lang.String
 
@@ -1022,40 +1251,44 @@ type SalesforceToken = java.lang.String
 
 type ScheduledAuditArn = java.lang.String
 
-type ScheduledAuditMetadataList = js.Array[typings.awsSdk.iotMod.ScheduledAuditMetadata]
+type ScheduledAuditMetadataList = js.Array[ScheduledAuditMetadata]
 
 type ScheduledAuditName = java.lang.String
 
-type SearchableAttributes = js.Array[typings.awsSdk.iotMod.AttributeName]
+type SearchableAttributes = js.Array[AttributeName]
 
-type Seconds = scala.Double
+type Seconds = Double
+
+type SecurityGroupId = java.lang.String
+
+type SecurityGroupList = js.Array[SecurityGroupId]
 
 type SecurityProfileArn = java.lang.String
 
 type SecurityProfileDescription = java.lang.String
 
-type SecurityProfileIdentifiers = js.Array[typings.awsSdk.iotMod.SecurityProfileIdentifier]
+type SecurityProfileIdentifiers = js.Array[SecurityProfileIdentifier]
 
 type SecurityProfileName = java.lang.String
 
 type SecurityProfileTargetArn = java.lang.String
 
-type SecurityProfileTargetMappings = js.Array[typings.awsSdk.iotMod.SecurityProfileTargetMapping]
+type SecurityProfileTargetMappings = js.Array[SecurityProfileTargetMapping]
 
-type SecurityProfileTargets = js.Array[typings.awsSdk.iotMod.SecurityProfileTarget]
+type SecurityProfileTargets = js.Array[SecurityProfileTarget]
 
-type ServerCertificateArns = js.Array[typings.awsSdk.iotMod.AcmCertificateArn]
+type ServerCertificateArns = js.Array[AcmCertificateArn]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INVALID
   - typings.awsSdk.awsSdkStrings.VALID
   - java.lang.String
 */
-type ServerCertificateStatus = typings.awsSdk.iotMod._ServerCertificateStatus | java.lang.String
+type ServerCertificateStatus = _ServerCertificateStatus | java.lang.String
 
 type ServerCertificateStatusDetail = java.lang.String
 
-type ServerCertificates = js.Array[typings.awsSdk.iotMod.ServerCertificateSummary]
+type ServerCertificates = js.Array[ServerCertificateSummary]
 
 type ServerName = java.lang.String
 
@@ -1067,7 +1300,7 @@ type ServiceName = java.lang.String
   - typings.awsSdk.awsSdkStrings.JOBS
   - java.lang.String
 */
-type ServiceType = typings.awsSdk.iotMod._ServiceType | java.lang.String
+type ServiceType = _ServiceType | java.lang.String
 
 type SetAsActive = scala.Boolean
 
@@ -1075,7 +1308,9 @@ type SetAsActiveFlag = scala.Boolean
 
 type SetAsDefault = scala.Boolean
 
-type Signature = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.iotMod.Blob | java.lang.String
+type ShadowName = java.lang.String
+
+type Signature = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
 type SignatureAlgorithm = java.lang.String
 
@@ -1085,9 +1320,9 @@ type SigningProfileName = java.lang.String
 
 type SigningRegion = java.lang.String
 
-type SkippedFindingsCount = scala.Double
+type SkippedFindingsCount = Double
 
-type SkyfallMaxResults = scala.Double
+type SkyfallMaxResults = Double
 
 type SnsTopicArn = java.lang.String
 
@@ -1105,47 +1340,55 @@ type StateValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.Cancelling_
   - java.lang.String
 */
-type Status = typings.awsSdk.iotMod._Status | java.lang.String
+type Status = _Status | java.lang.String
 
-type StdDeviation = scala.Double
+type StdDeviation = Double
 
 type StreamArn = java.lang.String
 
 type StreamDescription = java.lang.String
 
-type StreamFiles = js.Array[typings.awsSdk.iotMod.StreamFile]
+type StreamFiles = js.Array[StreamFile]
 
 type StreamId = java.lang.String
 
 type StreamName = java.lang.String
 
-type StreamVersion = scala.Double
+type StreamVersion = Double
 
-type StreamsSummary = js.Array[typings.awsSdk.iotMod.StreamSummary]
+type StreamsSummary = js.Array[StreamSummary]
 
 type String = java.lang.String
 
-type StringMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotMod.String]
+type StringList = js.Array[stringValue]
 
-type SucceededFindingsCount = scala.Double
+type StringMap = StringDictionary[String]
 
-type SucceededThings = scala.Double
+type SubnetId = java.lang.String
 
-type Sum = scala.Double
+type SubnetIdList = js.Array[SubnetId]
 
-type SumOfSquares = scala.Double
+type SucceededFindingsCount = Double
+
+type SucceededThings = Double
+
+type Sum = Double
+
+type SumOfSquares = Double
+
+type SuppressAlerts = scala.Boolean
 
 type SuppressIndefinitely = scala.Boolean
 
-type SuppressedNonCompliantResourcesCount = scala.Double
+type SuppressedNonCompliantResourcesCount = Double
 
 type TableName = java.lang.String
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.iotMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.iotMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
@@ -1153,20 +1396,22 @@ type Target = java.lang.String
 
 type TargetArn = java.lang.String
 
-type TargetAuditCheckNames = js.Array[typings.awsSdk.iotMod.AuditCheckName]
+type TargetAuditCheckNames = js.Array[AuditCheckName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONTINUOUS
   - typings.awsSdk.awsSdkStrings.SNAPSHOT
   - java.lang.String
 */
-type TargetSelection = typings.awsSdk.iotMod._TargetSelection | java.lang.String
+type TargetSelection = _TargetSelection | java.lang.String
 
-type Targets = js.Array[typings.awsSdk.iotMod.Target]
+type TargetViolationIdsForDetectMitigationActions = js.Array[ViolationId]
+
+type Targets = js.Array[Target]
 
 type TaskId = java.lang.String
 
-type TaskIdList = js.Array[typings.awsSdk.iotMod.TaskId]
+type TaskIdList = js.Array[TaskId]
 
 type TemplateArn = java.lang.String
 
@@ -1176,26 +1421,33 @@ type TemplateDescription = java.lang.String
 
 type TemplateName = java.lang.String
 
-type TemplateVersionId = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FLEET_PROVISIONING
+  - typings.awsSdk.awsSdkStrings.JITP
+  - java.lang.String
+*/
+type TemplateType = _TemplateType | java.lang.String
+
+type TemplateVersionId = Double
 
 type ThingArn = java.lang.String
 
-type ThingAttributeList = js.Array[typings.awsSdk.iotMod.ThingAttribute]
+type ThingAttributeList = js.Array[ThingAttribute]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
   - typings.awsSdk.awsSdkStrings.STATUS
   - java.lang.String
 */
-type ThingConnectivityIndexingMode = typings.awsSdk.iotMod._ThingConnectivityIndexingMode | java.lang.String
+type ThingConnectivityIndexingMode = _ThingConnectivityIndexingMode | java.lang.String
 
-type ThingDocumentList = js.Array[typings.awsSdk.iotMod.ThingDocument]
+type ThingDocumentList = js.Array[ThingDocument]
 
 type ThingGroupArn = java.lang.String
 
 type ThingGroupDescription = java.lang.String
 
-type ThingGroupDocumentList = js.Array[typings.awsSdk.iotMod.ThingGroupDocument]
+type ThingGroupDocumentList = js.Array[ThingGroupDocument]
 
 type ThingGroupId = java.lang.String
 
@@ -1204,17 +1456,17 @@ type ThingGroupId = java.lang.String
   - typings.awsSdk.awsSdkStrings.ON
   - java.lang.String
 */
-type ThingGroupIndexingMode = typings.awsSdk.iotMod._ThingGroupIndexingMode | java.lang.String
+type ThingGroupIndexingMode = _ThingGroupIndexingMode | java.lang.String
 
-type ThingGroupList = js.Array[typings.awsSdk.iotMod.ThingGroupName]
+type ThingGroupList = js.Array[ThingGroupName]
 
 type ThingGroupName = java.lang.String
 
-type ThingGroupNameAndArnList = js.Array[typings.awsSdk.iotMod.GroupNameAndArn]
+type ThingGroupNameAndArnList = js.Array[GroupNameAndArn]
 
-type ThingGroupNameList = js.Array[typings.awsSdk.iotMod.ThingGroupName]
+type ThingGroupNameList = js.Array[ThingGroupName]
 
-type ThingGroupNames = js.Array[typings.awsSdk.iotMod.ThingGroupName]
+type ThingGroupNames = js.Array[ThingGroupName]
 
 type ThingId = java.lang.String
 
@@ -1224,11 +1476,11 @@ type ThingId = java.lang.String
   - typings.awsSdk.awsSdkStrings.REGISTRY_AND_SHADOW
   - java.lang.String
 */
-type ThingIndexingMode = typings.awsSdk.iotMod._ThingIndexingMode | java.lang.String
+type ThingIndexingMode = _ThingIndexingMode | java.lang.String
 
 type ThingName = java.lang.String
 
-type ThingNameList = js.Array[typings.awsSdk.iotMod.ThingName]
+type ThingNameList = js.Array[ThingName]
 
 type ThingTypeArn = java.lang.String
 
@@ -1236,17 +1488,17 @@ type ThingTypeDescription = java.lang.String
 
 type ThingTypeId = java.lang.String
 
-type ThingTypeList = js.Array[typings.awsSdk.iotMod.ThingTypeDefinition]
+type ThingTypeList = js.Array[ThingTypeDefinition]
 
 type ThingTypeName = java.lang.String
 
-type TimedOutThings = scala.Double
+type TimedOutThings = Double
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 type TimestreamDatabaseName = java.lang.String
 
-type TimestreamDimensionList = js.Array[typings.awsSdk.iotMod.TimestreamDimension]
+type TimestreamDimensionList = js.Array[TimestreamDimension]
 
 type TimestreamDimensionName = java.lang.String
 
@@ -1258,6 +1510,8 @@ type TimestreamTimestampUnit = java.lang.String
 
 type TimestreamTimestampValue = java.lang.String
 
+type TinyMaxResults = Double
+
 type Token = java.lang.String
 
 type TokenKeyName = java.lang.String
@@ -1268,32 +1522,33 @@ type Topic = java.lang.String
 
 type TopicPattern = java.lang.String
 
-type TopicRuleDestinationMaxResults = scala.Double
+type TopicRuleDestinationMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ERROR
+  - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type TopicRuleDestinationStatus = typings.awsSdk.iotMod._TopicRuleDestinationStatus | java.lang.String
+type TopicRuleDestinationStatus = _TopicRuleDestinationStatus | java.lang.String
 
-type TopicRuleDestinationSummaries = js.Array[typings.awsSdk.iotMod.TopicRuleDestinationSummary]
+type TopicRuleDestinationSummaries = js.Array[TopicRuleDestinationSummary]
 
-type TopicRuleList = js.Array[typings.awsSdk.iotMod.TopicRuleListItem]
+type TopicRuleList = js.Array[TopicRuleListItem]
 
-type TopicRuleMaxResults = scala.Double
+type TopicRuleMaxResults = Double
 
-type TotalChecksCount = scala.Double
+type TotalChecksCount = Double
 
-type TotalFindingsCount = scala.Double
+type TotalFindingsCount = Double
 
-type TotalResourcesCount = scala.Double
+type TotalResourcesCount = Double
 
 type UndoDeprecate = scala.Boolean
 
-type UnsignedLong = scala.Double
+type UnsignedLong = Double
 
 type Url = java.lang.String
 
@@ -1301,15 +1556,26 @@ type UseBase64 = scala.Boolean
 
 type Valid = scala.Boolean
 
-type ValidationErrors = js.Array[typings.awsSdk.iotMod.ValidationError]
+type ValidationErrors = js.Array[ValidationError]
 
 type Value = java.lang.String
 
-type Variance = scala.Double
+type Variance = Double
 
-type Version = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FALSE_POSITIVE
+  - typings.awsSdk.awsSdkStrings.BENIGN_POSITIVE
+  - typings.awsSdk.awsSdkStrings.TRUE_POSITIVE
+  - typings.awsSdk.awsSdkStrings.UNKNOWN
+  - java.lang.String
+*/
+type VerificationState = _VerificationState | java.lang.String
 
-type VersionNumber = scala.Double
+type VerificationStateDescription = java.lang.String
+
+type Version = Double
+
+type VersionNumber = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`in-alarm`
@@ -1317,17 +1583,23 @@ type VersionNumber = scala.Double
   - typings.awsSdk.awsSdkStrings.`alarm-invalidated`
   - java.lang.String
 */
-type ViolationEventType = typings.awsSdk.iotMod._ViolationEventType | java.lang.String
+type ViolationEventType = _ViolationEventType | java.lang.String
 
-type ViolationEvents = js.Array[typings.awsSdk.iotMod.ViolationEvent]
+type ViolationEvents = js.Array[ViolationEvent]
 
 type ViolationId = java.lang.String
 
-type WaitingForDataCollectionChecksCount = scala.Double
+type VpcId = java.lang.String
+
+type WaitingForDataCollectionChecksCount = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-05-28`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.iotMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String
+
+type stringValue = java.lang.String
+
+type usePrefixAttributeValue = scala.Boolean

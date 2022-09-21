@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Call
   extends StObject
-     with Instantiable1[/* args (repeated) */ js.Any, js.Any] {
+     with Instantiable1[/* args (repeated) */ Any, Any] {
   
-  def apply(args: js.Any*): js.Any = js.native
+  def apply(args: Any*): js.Function1[/* cls */ Any, Any] = js.native
 }

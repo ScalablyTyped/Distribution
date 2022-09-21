@@ -1,8 +1,10 @@
 package typings.googleapis.anon
 
-import typings.googleapis.booksV1Mod.booksV1.Books
-import typings.googleapis.booksV1Mod.booksV1.Options
+import typings.googleapis.appengineV1Mod.appengineV1.Appengine
+import typings.googleapis.appengineV1Mod.appengineV1.Options
 import typings.googleapis.googleapisStrings.v1
+import typings.googleapis.googleapisStrings.v1alpha
+import typings.googleapis.googleapisStrings.v1beta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn22 extends StObject {
   
-  def apply(options: Options): Books = js.native
-  def apply(version: v1): Books = js.native
+  def apply(options: Options): Appengine = js.native
+  def apply(options: typings.googleapis.appengineV1alphaMod.appengineV1alpha.Options): typings.googleapis.appengineV1alphaMod.appengineV1alpha.Appengine = js.native
+  def apply(options: typings.googleapis.appengineV1betaMod.appengineV1beta.Options): typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine = js.native
+  def apply(version: v1): Appengine = js.native
+  def apply(version: v1alpha): typings.googleapis.appengineV1alphaMod.appengineV1alpha.Appengine = js.native
+  def apply(version: v1beta): typings.googleapis.appengineV1betaMod.appengineV1beta.Appengine = js.native
 }

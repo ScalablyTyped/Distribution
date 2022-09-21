@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SetBackgroundColorArgs
   extends StObject
-     with AsyncCallback[Unit] {
+     with AsyncVoidCallback {
   
   /**
     * Window background color.

@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("devextreme", "default.EndpointSelector")
 @js.native
-class EndpointSelector protected ()
+open class EndpointSelector protected ()
   extends StObject
      with typings.devextreme.mod.DevExpress.EndpointSelector {
-  def this(options: js.Any) = this()
+  def this(options: Any) = this()
   
   /**
-    * [descr:EndpointSelector.urlFor(key)]
+    * Gets an endpoint with a specific key.
     */
   /* CompleteClass */
   override def urlFor(key: String): String = js.native

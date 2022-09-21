@@ -1,11 +1,11 @@
 package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientTagmanager.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientTagmanager.anon.Alt
-import typings.maximMazurokGapiClientTagmanager.anon.AltCallback
 import typings.maximMazurokGapiClientTagmanager.anon.Callback
+import typings.maximMazurokGapiClientTagmanager.anon.CallbackFields
 import typings.maximMazurokGapiClientTagmanager.anon.Fields
+import typings.maximMazurokGapiClientTagmanager.anon.FieldsFingerprint
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TemplatesResource extends StObject {
   
-  /** Creates a GTM Custom Template. */
-  def create(request: AccesstokenAlt): Request[CustomTemplate] = js.native
   def create(request: Alt, body: CustomTemplate): Request[CustomTemplate] = js.native
+  /** Creates a GTM Custom Template. */
+  def create(request: CallbackFields): Request[CustomTemplate] = js.native
   
   /** Deletes a GTM Template. */
   def delete(): Request[Unit] = js.native
@@ -35,6 +35,6 @@ trait TemplatesResource extends StObject {
   def revert(request: Oauthtoken): Request[RevertTemplateResponse] = js.native
   
   /** Updates a GTM Template. */
-  def update(request: AltCallback): Request[CustomTemplate] = js.native
+  def update(request: FieldsFingerprint): Request[CustomTemplate] = js.native
   def update(request: Oauthtoken, body: CustomTemplate): Request[CustomTemplate] = js.native
 }

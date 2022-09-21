@@ -12,7 +12,7 @@ trait ListStreamsOutput extends StObject {
   var HasMoreStreams: BooleanObject
   
   /**
-    * The names of the streams that are associated with the AWS account making the ListStreams request.
+    * The names of the streams that are associated with the Amazon Web Services account making the ListStreams request.
     */
   var StreamNames: StreamNameList
 }
@@ -29,6 +29,6 @@ object ListStreamsOutput {
     
     inline def setStreamNames(value: StreamNameList): Self = StObject.set(x, "StreamNames", value.asInstanceOf[js.Any])
     
-    inline def setStreamNamesVarargs(value: StreamName*): Self = StObject.set(x, "StreamNames", js.Array(value :_*))
+    inline def setStreamNamesVarargs(value: StreamName*): Self = StObject.set(x, "StreamNames", js.Array(value*))
   }
 }

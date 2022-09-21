@@ -60,6 +60,6 @@ object AuthResult {
     
     inline def setMissingContextValuesUndefined: Self = StObject.set(x, "missingContextValues", js.undefined)
     
-    inline def setMissingContextValuesVarargs(value: MissingContextValue*): Self = StObject.set(x, "missingContextValues", js.Array(value :_*))
+    inline def setMissingContextValuesVarargs(value: MissingContextValue*): Self = StObject.set(x, "missingContextValues", js.Array(value*))
   }
 }

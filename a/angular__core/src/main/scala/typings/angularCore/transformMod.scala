@@ -1,32 +1,27 @@
 package typings.angularCore
 
 import typings.angularCore.updateRecorderMod.UpdateRecorder
-import typings.typescript.mod.PropertyAssignment
 import typings.typescript.mod.SourceFile
-import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformMod {
   
-  @JSImport("@angular/core/schematics/migrations/initial-navigation/transform", "InitialNavigationTransform")
+  @JSImport("@angular/core/schematics/migrations/path-match-type/transform", "PathMatchTypeTransform")
   @js.native
-  class InitialNavigationTransform protected () extends StObject {
-    def this(typeChecker: TypeChecker, getUpdateRecorder: js.Function1[/* sf */ SourceFile, UpdateRecorder]) = this()
+  open class PathMatchTypeTransform protected () extends StObject {
+    def this(getUpdateRecorder: js.Function1[/* sf */ SourceFile, UpdateRecorder]) = this()
     
-    /* private */ var _updateNode: js.Any = js.native
+    /* private */ var getUpdateRecorder: Any = js.native
     
-    /* private */ var getUpdateRecorder: js.Any = js.native
+    /* private */ var importManager: Any = js.native
     
-    /** Migrate an ExtraOptions#InitialNavigation expression to use the new options format. */
-    def migrateAssignment(assignment: PropertyAssignment): Unit = js.native
+    def migrate(sourceFiles: js.Array[SourceFile]): Unit = js.native
     
-    /** Migrate the ExtraOptions#InitialNavigation property assignments. */
-    def migrateInitialNavigationAssignments(literals: js.Array[PropertyAssignment]): Unit = js.native
+    /* private */ var printer: Any = js.native
     
-    /* private */ var printer: js.Any = js.native
-    
-    /* private */ var typeChecker: js.Any = js.native
+    /** Records all changes that were made in the import manager. */
+    def recordChanges(): Unit = js.native
   }
 }

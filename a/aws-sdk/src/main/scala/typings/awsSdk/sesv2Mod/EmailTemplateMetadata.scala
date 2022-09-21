@@ -9,7 +9,7 @@ trait EmailTemplateMetadata extends StObject {
   /**
     * The time and date the template was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the template.
@@ -25,7 +25,7 @@ object EmailTemplateMetadata {
   
   extension [Self <: EmailTemplateMetadata](x: Self) {
     
-    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     

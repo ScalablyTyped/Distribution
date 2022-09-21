@@ -28,18 +28,18 @@ object CertificateChains {
     
     inline def setCaviumCertsUndefined: Self = StObject.set(x, "caviumCerts", js.undefined)
     
-    inline def setCaviumCertsVarargs(value: String*): Self = StObject.set(x, "caviumCerts", js.Array(value :_*))
+    inline def setCaviumCertsVarargs(value: String*): Self = StObject.set(x, "caviumCerts", js.Array(value*))
     
     inline def setGoogleCardCerts(value: js.Array[String]): Self = StObject.set(x, "googleCardCerts", value.asInstanceOf[js.Any])
     
     inline def setGoogleCardCertsUndefined: Self = StObject.set(x, "googleCardCerts", js.undefined)
     
-    inline def setGoogleCardCertsVarargs(value: String*): Self = StObject.set(x, "googleCardCerts", js.Array(value :_*))
+    inline def setGoogleCardCertsVarargs(value: String*): Self = StObject.set(x, "googleCardCerts", js.Array(value*))
     
     inline def setGooglePartitionCerts(value: js.Array[String]): Self = StObject.set(x, "googlePartitionCerts", value.asInstanceOf[js.Any])
     
     inline def setGooglePartitionCertsUndefined: Self = StObject.set(x, "googlePartitionCerts", js.undefined)
     
-    inline def setGooglePartitionCertsVarargs(value: String*): Self = StObject.set(x, "googlePartitionCerts", js.Array(value :_*))
+    inline def setGooglePartitionCertsVarargs(value: String*): Self = StObject.set(x, "googlePartitionCerts", js.Array(value*))
   }
 }

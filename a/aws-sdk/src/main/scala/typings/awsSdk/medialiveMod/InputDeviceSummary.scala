@@ -60,6 +60,11 @@ trait InputDeviceSummary extends StObject {
     * The type of the input device.
     */
   var Type: js.UndefOr[InputDeviceType] = js.undefined
+  
+  /**
+    * Settings that describe an input device that is type UHD.
+    */
+  var UhdDeviceSettings: js.UndefOr[InputDeviceUhdSettings] = js.undefined
 }
 object InputDeviceSummary {
   
@@ -113,5 +118,9 @@ object InputDeviceSummary {
     inline def setType(value: InputDeviceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    
+    inline def setUhdDeviceSettings(value: InputDeviceUhdSettings): Self = StObject.set(x, "UhdDeviceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setUhdDeviceSettingsUndefined: Self = StObject.set(x, "UhdDeviceSettings", js.undefined)
   }
 }

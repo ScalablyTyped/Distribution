@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("business-rules-engine", "CompositeValidationResult")
 @js.native
-class CompositeValidationResult protected ()
+open class CompositeValidationResult protected ()
   extends StObject
      with IValidationResult {
   def this(Name: String) = this()
@@ -28,7 +28,7 @@ class CompositeValidationResult protected ()
   
   var Errors: StringDictionary[IValidationResult] = js.native
   
-  /* private */ var FlattenErros: js.Any = js.native
+  /* private */ var FlattenErros: Any = js.native
   
   /* CompleteClass */
   var HasErrors: Boolean = js.native
@@ -52,14 +52,14 @@ class CompositeValidationResult protected ()
   
   def SetDirty(): Unit = js.native
   
-  /* private */ def SetDirtyEx(node: js.Any, dirty: js.Any): js.Any = js.native
+  /* private */ def SetDirtyEx(node: Any, dirty: Any): Any = js.native
   
   def SetPristine(): Unit = js.native
   
   @JSName("TranslateArgs")
   var TranslateArgs_CompositeValidationResult: js.Array[IErrorTranslateArgs] = js.native
   
-  /* private */ def flattenErrors(node: js.Any, errorCollection: js.Any): js.Any = js.native
+  /* private */ def flattenErrors(node: Any, errorCollection: Any): Any = js.native
   
-  /* private */ def traverse(node: js.Any, indent: js.Any): js.Any = js.native
+  /* private */ def traverse(node: Any, indent: Any): Any = js.native
 }

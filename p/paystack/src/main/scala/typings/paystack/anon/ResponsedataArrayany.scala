@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined paystack.paystack.Response & {  data :std.Array<any>} */
 trait ResponsedataArrayany
   extends StObject
-     with /* others */ StringDictionary[js.Any] {
+     with /* others */ StringDictionary[Any] {
   
-  var data: js.UndefOr[js.Any] & js.Array[js.Any]
+  var data: js.UndefOr[Any] & js.Array[Any]
   
   var message: String
   
@@ -18,14 +18,14 @@ trait ResponsedataArrayany
 }
 object ResponsedataArrayany {
   
-  inline def apply(data: js.UndefOr[js.Any] & js.Array[js.Any], message: String, status: Boolean): ResponsedataArrayany = {
+  inline def apply(data: js.UndefOr[Any] & js.Array[Any], message: String, status: Boolean): ResponsedataArrayany = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsedataArrayany]
   }
   
   extension [Self <: ResponsedataArrayany](x: Self) {
     
-    inline def setData(value: js.UndefOr[js.Any] & js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.UndefOr[Any] & js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

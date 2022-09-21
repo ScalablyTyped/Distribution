@@ -10,10 +10,10 @@ object webMod {
   
   @JSImport("material-ui/svg-icons/av/web", JSImport.Default)
   @js.native
-  class default () extends AvWeb
+  open class default () extends AvWeb
   
   @JSImport("material-ui/svg-icons/av/web", "AvWeb")
   @js.native
-  class AvWeb ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvWeb ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

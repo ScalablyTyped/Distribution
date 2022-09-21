@@ -6,12 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-kit", "MKSwitch")
 @js.native
-class MKSwitch protected ()
-  extends MKComponent[MKSwitchProperties, js.Any] {
+open class MKSwitch protected () extends MKComponent[MKSwitchProperties, Any] {
   def this(props: MKSwitchProperties) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MKSwitchProperties, context: js.Any) = this()
+  def this(props: MKSwitchProperties, context: Any) = this()
 }

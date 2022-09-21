@@ -45,7 +45,7 @@ object XDataInterpreter {
     interpretDataSource: (XDataSource, SeqEquiv[PropertyValue], SeqEquiv[XDataSeries]) => InterpretedData,
     isDataCompatible: InterpretedData => Boolean,
     mergeInterpretedData: InterpretedData => XDataSource,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     reinterpretDataSeries: InterpretedData => InterpretedData,
     release: () => Unit
   ): XDataInterpreter = {

@@ -11,9 +11,9 @@ Generate a slug – transliteration with a lot of options
 | Full name          | speakingurl |
 | Keywords           | slug, slugify, speakingurl, transliteration, permalink, seo, url, nice url, static url, clean url, pretty url, nice looking url, user friendly url, seo friendly url |
 | # releases         | 0 |
-| # dependents       | 98 |
-| # downloads        | 3558259 |
-| # stars            | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 469447.3333333333 |
+| # stars            | 1089.0 |
 
 ## Links
 - [Homepage](https://github.com/pid/speakingurl#readme)

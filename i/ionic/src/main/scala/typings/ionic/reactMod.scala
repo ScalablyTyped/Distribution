@@ -12,7 +12,7 @@ object reactMod {
   
   @JSImport("ionic/lib/project/react", "ReactProject")
   @js.native
-  class ReactProject protected () extends Project {
+  open class ReactProject protected () extends Project {
     def this(details: ProjectDetailsResult, e: ProjectDeps) = this()
     
     @JSName("type")

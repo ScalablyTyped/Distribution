@@ -9,7 +9,7 @@ trait Weight extends StObject {
   /** Required. The weight unit. Acceptable values are: - "`kg`" - "`lb`" */
   var unit: js.UndefOr[String] = js.undefined
   
-  /** Required. The weight represented as a number. */
+  /** Required. The weight represented as a number. The weight can have a maximum precision of four decimal places. */
   var value: js.UndefOr[String] = js.undefined
 }
 object Weight {

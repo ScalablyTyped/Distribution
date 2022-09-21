@@ -1,7 +1,7 @@
 
 # Scala.js typings for gettext_dot_js
 
-Typings are for version 0.8
+Typings are for version 1.0
 
 ## Library description:
 gettext.js is a lightweight (3k minified!) yet complete and accurate GNU gettext port for node and the browser. Manage your i18n translations the right way in your javascript projects.
@@ -10,10 +10,10 @@ gettext.js is a lightweight (3k minified!) yet complete and accurate GNU gettext
 | ------------------ | :-------------: |
 | Full name          | gettext.js |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 77371 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 6130.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/gettext.js)

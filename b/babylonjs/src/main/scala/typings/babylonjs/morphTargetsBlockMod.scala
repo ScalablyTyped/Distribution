@@ -10,14 +10,14 @@ object morphTargetsBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Vertex/morphTargetsBlock", "MorphTargetsBlock")
   @js.native
-  class MorphTargetsBlock protected () extends NodeMaterialBlock {
+  open class MorphTargetsBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new MorphTargetsBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
     
-    /* private */ var _repeatableContentAnchor: js.Any = js.native
+    /* private */ var _repeatableContentAnchor: Any = js.native
     
     /**
       * Gets the normal input component

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SubEmitter")
 @js.native
-class SubEmitter protected ()
+open class SubEmitter protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SubEmitter {
   /**
@@ -17,42 +17,6 @@ class SubEmitter protected ()
     * the particle system to be used by the sub emitter
     */
   particleSystem: typings.babylonjs.BABYLON.ParticleSystem) = this()
-  
-  /** Release associated resources */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
-  
-  /**
-    * If the particle should inherit the direction from the particle it's attached to. (+Y will face the direction the particle is moving) (Default: false)
-    * Note: This only is supported when using an emitter of type Mesh
-    */
-  /* CompleteClass */
-  var inheritDirection: Boolean = js.native
-  
-  /**
-    * How much of the attached particles speed should be added to the sub emitted particle (default: 0)
-    */
-  /* CompleteClass */
-  var inheritedVelocityAmount: Double = js.native
-  
-  /**
-    * the particle system to be used by the sub emitter
-    */
-  /* CompleteClass */
-  var particleSystem: typings.babylonjs.BABYLON.ParticleSystem = js.native
-  
-  /**
-    * Serialize current object to a JSON object
-    * @returns the serialized object
-    */
-  /* CompleteClass */
-  override def serialize(): js.Any = js.native
-  
-  /**
-    * Type of the submitter (Default: END)
-    */
-  /* CompleteClass */
-  var `type`: typings.babylonjs.BABYLON.SubEmitterType = js.native
 }
 /* static members */
 object SubEmitter {
@@ -68,10 +32,23 @@ object SubEmitter {
     * @param rootUrl defines the rootUrl for data loading
     * @returns a new SubEmitter
     */
-  inline def Parse(serializationObject: js.Any, sceneOrEngine: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SubEmitter]
-  inline def Parse(serializationObject: js.Any, sceneOrEngine: typings.babylonjs.BABYLON.ThinEngine, rootUrl: String): typings.babylonjs.BABYLON.SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SubEmitter]
+  inline def Parse(serializationObject: Any, sceneOrEngine: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SubEmitter]
+  inline def Parse(serializationObject: Any, sceneOrEngine: typings.babylonjs.BABYLON.ThinEngine, rootUrl: String): typings.babylonjs.BABYLON.SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SubEmitter]
   
-  /** @hidden */
-  inline def _ParseParticleSystem(system: js.Any, sceneOrEngine: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ParticleSystem]
-  inline def _ParseParticleSystem(system: js.Any, sceneOrEngine: typings.babylonjs.BABYLON.ThinEngine, rootUrl: String): typings.babylonjs.BABYLON.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ParticleSystem]
+  /**
+    * @param system
+    * @param sceneOrEngine
+    * @param rootUrl
+    * @param doNotStart
+    * @hidden
+    */
+  inline def _ParseParticleSystem(system: Any, sceneOrEngine: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ParticleSystem]
+  inline def _ParseParticleSystem(system: Any, sceneOrEngine: typings.babylonjs.BABYLON.Scene, rootUrl: String, doNotStart: Boolean): typings.babylonjs.BABYLON.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ParticleSystem]
+  inline def _ParseParticleSystem(system: Any, sceneOrEngine: typings.babylonjs.BABYLON.ThinEngine, rootUrl: String): typings.babylonjs.BABYLON.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ParticleSystem]
+  inline def _ParseParticleSystem(
+    system: Any,
+    sceneOrEngine: typings.babylonjs.BABYLON.ThinEngine,
+    rootUrl: String,
+    doNotStart: Boolean
+  ): typings.babylonjs.BABYLON.ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.ParticleSystem]
 }

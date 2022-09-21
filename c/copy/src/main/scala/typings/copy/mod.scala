@@ -1,6 +1,5 @@
 package typings.copy
 
-import typings.std.Error
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -73,7 +72,7 @@ object mod {
   inline def one(pattern: File, dir: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("one")(pattern.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def one(pattern: File, dir: String, options: Options, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("one")(pattern.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type Callback = js.Function2[/* error */ Error | Null, /* files */ js.UndefOr[js.Array[File]], Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* files */ js.UndefOr[js.Array[File]], Unit]
   
   trait Options extends StObject {
     

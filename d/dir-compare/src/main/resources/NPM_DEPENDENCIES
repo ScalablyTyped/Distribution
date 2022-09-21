@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dir-compare" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dir-compare" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

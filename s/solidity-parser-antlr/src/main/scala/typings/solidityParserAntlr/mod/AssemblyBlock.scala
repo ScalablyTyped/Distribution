@@ -27,7 +27,7 @@ object AssemblyBlock {
     
     inline def setOperations(value: js.Array[AssemblyItem]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    inline def setOperationsVarargs(value: AssemblyItem*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: AssemblyItem*): Self = StObject.set(x, "operations", js.Array(value*))
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

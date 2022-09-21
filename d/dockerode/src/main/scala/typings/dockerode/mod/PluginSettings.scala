@@ -30,18 +30,18 @@ object PluginSettings {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value*))
     
     inline def setDevices(value: js.Array[PluginDevice]): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     
-    inline def setDevicesVarargs(value: PluginDevice*): Self = StObject.set(x, "Devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: PluginDevice*): Self = StObject.set(x, "Devices", js.Array(value*))
     
     inline def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
     
-    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value*))
     
     inline def setMounts(value: js.Array[PluginMount]): Self = StObject.set(x, "Mounts", value.asInstanceOf[js.Any])
     
-    inline def setMountsVarargs(value: PluginMount*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
+    inline def setMountsVarargs(value: PluginMount*): Self = StObject.set(x, "Mounts", js.Array(value*))
   }
 }

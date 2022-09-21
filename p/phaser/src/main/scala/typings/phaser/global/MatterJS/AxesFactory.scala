@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.AxesFactory")
 @js.native
-class AxesFactory ()
+open class AxesFactory ()
   extends StObject
      with typings.phaser.MatterJS.AxesFactory {
   

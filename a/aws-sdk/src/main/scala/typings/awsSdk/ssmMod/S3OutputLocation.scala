@@ -17,7 +17,7 @@ trait S3OutputLocation extends StObject {
   var OutputS3KeyPrefix: js.UndefOr[S3KeyPrefix] = js.undefined
   
   /**
-    * (Deprecated) You can no longer specify this parameter. The system ignores it. Instead, Systems Manager automatically determines the Region of the S3 bucket.
+    * The Amazon Web Services Region of the S3 bucket.
     */
   var OutputS3Region: js.UndefOr[S3Region] = js.undefined
 }

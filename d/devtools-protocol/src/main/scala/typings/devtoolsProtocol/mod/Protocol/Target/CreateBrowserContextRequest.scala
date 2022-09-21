@@ -12,6 +12,12 @@ trait CreateBrowserContextRequest extends StObject {
   var disposeOnDetach: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * An optional list of origins to grant unlimited cross-origin access to.
+    * Parts of the URL other than those constituting origin are ignored.
+    */
+  var originsWithUniversalNetworkAccess: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
     * Proxy bypass list, similar to the one passed to --proxy-bypass-list
     */
   var proxyBypassList: js.UndefOr[String] = js.undefined
@@ -33,6 +39,12 @@ object CreateBrowserContextRequest {
     inline def setDisposeOnDetach(value: Boolean): Self = StObject.set(x, "disposeOnDetach", value.asInstanceOf[js.Any])
     
     inline def setDisposeOnDetachUndefined: Self = StObject.set(x, "disposeOnDetach", js.undefined)
+    
+    inline def setOriginsWithUniversalNetworkAccess(value: js.Array[String]): Self = StObject.set(x, "originsWithUniversalNetworkAccess", value.asInstanceOf[js.Any])
+    
+    inline def setOriginsWithUniversalNetworkAccessUndefined: Self = StObject.set(x, "originsWithUniversalNetworkAccess", js.undefined)
+    
+    inline def setOriginsWithUniversalNetworkAccessVarargs(value: String*): Self = StObject.set(x, "originsWithUniversalNetworkAccess", js.Array(value*))
     
     inline def setProxyBypassList(value: String): Self = StObject.set(x, "proxyBypassList", value.asInstanceOf[js.Any])
     

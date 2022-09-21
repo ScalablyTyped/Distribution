@@ -20,7 +20,7 @@ trait OMaths extends StObject {
   
   def Linearize(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.OMaths_typekey")
   var WordDotOMaths_typekey: OMaths
@@ -35,7 +35,7 @@ object OMaths {
     Creator: Double,
     Item: Double => OMath,
     Linearize: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     WordDotOMaths_typekey: OMaths
   ): OMaths = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], BuildUp = js.Any.fromFunction0(BuildUp), Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Linearize = js.Any.fromFunction0(Linearize), Parent = Parent.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object OMaths {
     
     inline def setLinearize(value: () => Unit): Self = StObject.set(x, "Linearize", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotOMaths_typekey(value: OMaths): Self = StObject.set(x, "Word.OMaths_typekey", value.asInstanceOf[js.Any])
   }

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.AppLicense")
 @js.native
-class AppLicense ()
+open class AppLicense ()
   extends StObject
      with typings.sharepoint.SP.AppLicense {
   
   /* CompleteClass */
-  override def customFromJson(obj: js.Any): Boolean = js.native
+  override def customFromJson(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   override def customWriteToXml(
@@ -20,7 +20,7 @@ class AppLicense ()
   ): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(obj: js.Any): Unit = js.native
+  override def fromJson(obj: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_rawXMLLicenseToken(): String = js.native

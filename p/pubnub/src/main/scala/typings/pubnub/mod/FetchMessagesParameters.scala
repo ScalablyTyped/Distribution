@@ -15,7 +15,11 @@ trait FetchMessagesParameters extends StObject {
   
   var includeMessageActions: js.UndefOr[Boolean] = js.undefined
   
+  var includeMessageType: js.UndefOr[Boolean] = js.undefined
+  
   var includeMeta: js.UndefOr[Boolean] = js.undefined
+  
+  var includeUUID: js.UndefOr[Boolean] = js.undefined
   
   var start: js.UndefOr[String | Double] = js.undefined
   
@@ -35,7 +39,7 @@ object FetchMessagesParameters {
     
     inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
@@ -49,9 +53,17 @@ object FetchMessagesParameters {
     
     inline def setIncludeMessageActionsUndefined: Self = StObject.set(x, "includeMessageActions", js.undefined)
     
+    inline def setIncludeMessageType(value: Boolean): Self = StObject.set(x, "includeMessageType", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeMessageTypeUndefined: Self = StObject.set(x, "includeMessageType", js.undefined)
+    
     inline def setIncludeMeta(value: Boolean): Self = StObject.set(x, "includeMeta", value.asInstanceOf[js.Any])
     
     inline def setIncludeMetaUndefined: Self = StObject.set(x, "includeMeta", js.undefined)
+    
+    inline def setIncludeUUID(value: Boolean): Self = StObject.set(x, "includeUUID", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeUUIDUndefined: Self = StObject.set(x, "includeUUID", js.undefined)
     
     inline def setStart(value: String | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

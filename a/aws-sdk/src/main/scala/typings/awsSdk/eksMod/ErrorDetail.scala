@@ -42,6 +42,6 @@ object ErrorDetail {
     
     inline def setResourceIdsUndefined: Self = StObject.set(x, "resourceIds", js.undefined)
     
-    inline def setResourceIdsVarargs(value: String*): Self = StObject.set(x, "resourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: String*): Self = StObject.set(x, "resourceIds", js.Array(value*))
   }
 }

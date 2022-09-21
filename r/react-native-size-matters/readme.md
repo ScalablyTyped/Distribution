@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-size-matters
 
-Typings are for version 0.3.1
+Typings are for version 0.4.0
 
 ## Library description:
 A React-Native utility belt for scaling the size your apps UI across different sized devices
@@ -10,10 +10,10 @@ A React-Native utility belt for scaling the size your apps UI across different s
 | ------------------ | :-------------: |
 | Full name          | react-native-size-matters |
 | Keywords           | javascript, react-native, scaling |
-| # releases         | 16 |
-| # dependents       | 29 |
-| # downloads        | 493610 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 342899.3333333333 |
+| # stars            | 1841.0 |
 
 ## Links
 - [Homepage](https://github.com/nirsky/react-native-size-matters#readme)

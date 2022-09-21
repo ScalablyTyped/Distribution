@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("@aws-sdk/sha256-tree-hash", "TreeHash")
   @js.native
-  class TreeHash protected ()
+  open class TreeHash protected ()
     extends StObject
        with Hash {
     /**
@@ -20,19 +20,19 @@ object mod {
       */
     def this(Sha256: HashConstructor, fromUtf8: Decoder) = this()
     
-    /* private */ val Sha256: js.Any = js.native
+    /* private */ val Sha256: Any = js.native
     
-    /* private */ var buffer: js.Any = js.native
+    /* private */ var buffer: Any = js.native
     
-    /* private */ var collectedHashDigests: js.Any = js.native
+    /* private */ var collectedHashDigests: Any = js.native
     
     /**
       * Converts source data into a Uint8Array.
       * @param data Data to convert to a Uint8Array.
       */
-    /* private */ var convertToBuffer: js.Any = js.native
+    /* private */ var convertToBuffer: Any = js.native
     
-    /* private */ val fromUtf8: js.Any = js.native
+    /* private */ val fromUtf8: Any = js.native
     
     /**
       * Generates Sha256 hashes from 1 MiB chunks of the
@@ -40,6 +40,6 @@ object mod {
       * Will set the internal buffer to any bytes remaining
       * that is less than 1 MiB.
       */
-    /* private */ var hashBuffer: js.Any = js.native
+    /* private */ var hashBuffer: Any = js.native
   }
 }

@@ -1,5 +1,6 @@
 package typings.odata
 
+import typings.odata.odataQueryMod.OdataQuery
 import typings.odata.ohandlerMod.OHandler
 import typings.std.Headers
 import typings.std.RequestInit
@@ -73,7 +74,7 @@ object odataConfigMod {
     /**
       * Set to true to disable auto polyfilling
       */
-    var disablePolyfill: Boolean = js.native
+    var disablePolyfill: js.UndefOr[Boolean] = js.native
     
     /**
       * The fragment to parse data from
@@ -84,27 +85,27 @@ object odataConfigMod {
     /**
       * A function which is called when a request has a error
       */
-    def onError(oHandler: OHandler, res: Response): Unit = js.native
+    def onError(oHandler: OHandler, res: Response): Null = js.native
     
     /**
       * A function which is called when a request has finished
       */
-    def onFinish(oHandler: OHandler): Unit = js.native
-    def onFinish(oHandler: OHandler, res: Response): Unit = js.native
+    def onFinish(oHandler: OHandler): Null = js.native
+    def onFinish(oHandler: OHandler, res: Response): Null = js.native
     
     /**
       * A function which is called on each start of a request
       */
-    def onStart(oHandler: OHandler): Unit = js.native
+    def onStart(oHandler: OHandler): Null = js.native
     
     /**
       * An default query
       */
-    var query: js.UndefOr[URLSearchParams] = js.native
+    var query: js.UndefOr[URLSearchParams | OdataQuery] = js.native
     
     /**
       * The URL to request data from
       */
-    var rootUrl: URL = js.native
+    var rootUrl: js.UndefOr[URL | String] = js.native
   }
 }

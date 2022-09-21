@@ -7,17 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("BlobEvent")
   @js.native
-  class BlobEvent protected ()
+  open class BlobEvent protected ()
     extends StObject
        with typings.domMediacaptureRecord.BlobEvent {
     def this(`type`: String, eventInitDict: BlobEventInit) = this()
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("MediaRecorder")
   @js.native
-  class MediaRecorder protected ()
+  open class MediaRecorder protected ()
     extends StObject
        with typings.domMediacaptureRecord.MediaRecorder {
     def this(stream: MediaStream) = this()
@@ -29,13 +31,13 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    /* static member */
     inline def isTypeSupported(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupported")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("MediaRecorderErrorEvent")
   @js.native
-  class MediaRecorderErrorEvent protected ()
+  open class MediaRecorderErrorEvent protected ()
     extends StObject
        with typings.domMediacaptureRecord.MediaRecorderErrorEvent {
     def this(`type`: String, eventInitDict: MediaRecorderErrorEventInit) = this()

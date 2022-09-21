@@ -1,16 +1,16 @@
 package typings.antd.anon
 
-import typings.antd.treeSelectMod.RefTreeSelectProps
-import typings.react.mod.RefObject
+import typings.react.mod.ReactNode
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `1` extends StObject {
   
-  var ref: js.UndefOr[
-    (js.Function1[/* instance */ RefTreeSelectProps | Null, Unit]) | RefObject[RefTreeSelectProps] | Null
-  ] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
+  var ref: js.UndefOr[typings.react.mod.Ref[HTMLInputElement]] = js.undefined
 }
 object `1` {
   
@@ -21,11 +21,13 @@ object `1` {
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setRef(
-      value: (js.Function1[/* instance */ RefTreeSelectProps | Null, Unit]) | RefObject[RefTreeSelectProps]
-    ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setRefFunction1(value: /* instance */ RefTreeSelectProps | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setRef(value: typings.react.mod.Ref[HTMLInputElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setRefNull: Self = StObject.set(x, "ref", null)
     

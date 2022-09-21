@@ -49,31 +49,31 @@ object resizer {
       * @param target Ext.Component/Ext.Element The target
       * @returns Ext.Element A proxy element
       */
-    var createProxy: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], IElement]] = js.undefined
+    var createProxy: js.UndefOr[js.Function1[/* target */ js.UndefOr[Any], IElement]] = js.undefined
     
     /** [Method] Template method which should be overridden by each DragTracker instance
       * @param e Object
       */
     @JSName("onBeforeStart")
-    var onBeforeStart_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onBeforeStart_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Template method which should be overridden by each DragTracker instance
       * @param e Object
       */
     @JSName("onDrag")
-    var onDrag_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onDrag_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Template method which should be overridden by each DragTracker instance
       * @param e Object
       */
     @JSName("onEnd")
-    var onEnd_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onEnd_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Template method which should be overridden by each DragTracker instance
       * @param e Object
       */
     @JSName("onStart")
-    var onStart_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onStart_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IResizeTracker {
     
@@ -84,23 +84,23 @@ object resizer {
     
     extension [Self <: IResizeTracker](x: Self) {
       
-      inline def setCreateProxy(value: /* target */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "createProxy", js.Any.fromFunction1(value))
+      inline def setCreateProxy(value: /* target */ js.UndefOr[Any] => IElement): Self = StObject.set(x, "createProxy", js.Any.fromFunction1(value))
       
       inline def setCreateProxyUndefined: Self = StObject.set(x, "createProxy", js.undefined)
       
-      inline def setOnBeforeStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
+      inline def setOnBeforeStart(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
       
       inline def setOnBeforeStartUndefined: Self = StObject.set(x, "onBeforeStart", js.undefined)
       
-      inline def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+      inline def setOnDrag(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       
       inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      inline def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
       inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      inline def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
       inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     }
@@ -111,7 +111,7 @@ object resizer {
        with IObservable {
     
     /** [Config Option] (Ext.Element/Ext.util.Region) */
-    var constrainTo: js.UndefOr[js.Any] = js.undefined
+    var constrainTo: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var dynamic: js.UndefOr[Boolean] = js.undefined
@@ -127,7 +127,7 @@ object resizer {
     /** [Method] Returns the element or component that was configured with the target config property
       * @returns Ext.Element/Ext.Component
       */
-    var getTarget: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTarget: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (String) */
     var handles: js.UndefOr[java.lang.String] = js.undefined
@@ -151,7 +151,7 @@ object resizer {
     var minWidth: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Ext.Element/Ext.Component) */
-    var originalTarget: js.UndefOr[js.Any] = js.undefined
+    var originalTarget: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var pinned: js.UndefOr[Boolean] = js.undefined
@@ -171,7 +171,7 @@ object resizer {
     var resizeTracker: js.UndefOr[IResizeTracker] = js.undefined
     
     /** [Config Option] (Ext.Element/Ext.Component) */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var transparent: js.UndefOr[Boolean] = js.undefined
@@ -191,7 +191,7 @@ object resizer {
     
     extension [Self <: IResizer](x: Self) {
       
-      inline def setConstrainTo(value: js.Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
+      inline def setConstrainTo(value: Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
       
       inline def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
       
@@ -207,7 +207,7 @@ object resizer {
       
       inline def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
       
-      inline def setGetTarget(value: () => js.Any): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+      inline def setGetTarget(value: () => Any): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
       
       inline def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
       
@@ -239,7 +239,7 @@ object resizer {
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setOriginalTarget(value: js.Any): Self = StObject.set(x, "originalTarget", value.asInstanceOf[js.Any])
+      inline def setOriginalTarget(value: Any): Self = StObject.set(x, "originalTarget", value.asInstanceOf[js.Any])
       
       inline def setOriginalTargetUndefined: Self = StObject.set(x, "originalTarget", js.undefined)
       
@@ -259,7 +259,7 @@ object resizer {
       
       inline def setResizeTrackerUndefined: Self = StObject.set(x, "resizeTracker", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -285,7 +285,7 @@ object resizer {
     var collapseOnDblClick: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/Ext.panel.Panel) */
-    var collapseTarget: js.UndefOr[js.Any] = js.undefined
+    var collapseTarget: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var collapsedCls: js.UndefOr[java.lang.String] = js.undefined
@@ -334,7 +334,7 @@ object resizer {
       
       inline def setCollapseOnDblClickUndefined: Self = StObject.set(x, "collapseOnDblClick", js.undefined)
       
-      inline def setCollapseTarget(value: js.Any): Self = StObject.set(x, "collapseTarget", value.asInstanceOf[js.Any])
+      inline def setCollapseTarget(value: Any): Self = StObject.set(x, "collapseTarget", value.asInstanceOf[js.Any])
       
       inline def setCollapseTargetUndefined: Self = StObject.set(x, "collapseTarget", js.undefined)
       
@@ -388,25 +388,25 @@ object resizer {
       * @param e Object
       */
     @JSName("onBeforeStart")
-    var onBeforeStart_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onBeforeStart_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Track the proxy and set the proper XY coordinates while constraining the drag
       * @param e Object
       */
     @JSName("onDrag")
-    var onDrag_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onDrag_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] perform the resize and remove the proxy class from the splitter el
       * @param e Object
       */
     @JSName("onEnd")
-    var onEnd_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onEnd_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] We move the splitter el
       * @param e Object
       */
     @JSName("onStart")
-    var onStart_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onStart_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ISplitterTracker {
     
@@ -417,19 +417,19 @@ object resizer {
     
     extension [Self <: ISplitterTracker](x: Self) {
       
-      inline def setOnBeforeStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
+      inline def setOnBeforeStart(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
       
       inline def setOnBeforeStartUndefined: Self = StObject.set(x, "onBeforeStart", js.undefined)
       
-      inline def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+      inline def setOnDrag(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       
       inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      inline def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
       inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      inline def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
       inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     }

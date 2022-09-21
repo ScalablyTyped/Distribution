@@ -21,6 +21,11 @@ trait AxisBaseCfg
   var line: js.UndefOr[AxisLineCfg] = js.undefined
   
   /**
+    * 针对大数据量进行优化配置
+    */
+  var optimize: js.UndefOr[OptimizeCfg] = js.undefined
+  
+  /**
     * 处理遮挡时的顺序，默认 ['autoRotate', 'autoHide']
     */
   var overlapOrder: js.UndefOr[js.Array[String]] = js.undefined
@@ -77,11 +82,15 @@ object AxisBaseCfg {
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
+    inline def setOptimize(value: OptimizeCfg): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
+    
     inline def setOverlapOrder(value: js.Array[String]): Self = StObject.set(x, "overlapOrder", value.asInstanceOf[js.Any])
     
     inline def setOverlapOrderUndefined: Self = StObject.set(x, "overlapOrder", js.undefined)
     
-    inline def setOverlapOrderVarargs(value: String*): Self = StObject.set(x, "overlapOrder", js.Array(value :_*))
+    inline def setOverlapOrderVarargs(value: String*): Self = StObject.set(x, "overlapOrder", js.Array(value*))
     
     inline def setSubTickLine(value: AxisSubTickLineCfg): Self = StObject.set(x, "subTickLine", value.asInstanceOf[js.Any])
     
@@ -93,7 +102,7 @@ object AxisBaseCfg {
     
     inline def setTicks(value: js.Array[ListItem]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    inline def setTicksVarargs(value: ListItem*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: ListItem*): Self = StObject.set(x, "ticks", js.Array(value*))
     
     inline def setTitle(value: AxisTitleCfg): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

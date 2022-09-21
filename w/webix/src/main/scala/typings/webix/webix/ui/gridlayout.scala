@@ -10,15 +10,15 @@ trait gridlayout
   extends StObject
      with baseview {
   
-  def addView(view: js.Any): String | Double = js.native
-  def addView(view: js.Any, index: Double): String | Double = js.native
+  def addView(view: Any): String | Double = js.native
+  def addView(view: Any, index: Double): String | Double = js.native
   
   def attachEvent(`type`: gridlayoutEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: gridlayoutEventName, functor: WebixCallback, id: String): String | Double = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   def clearAll(): Unit = js.native
   
@@ -29,24 +29,24 @@ trait gridlayout
   
   def hasEvent(name: String): Boolean = js.native
   
-  def index(obj: js.Any): Double = js.native
+  def index(obj: Any): Double = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
-  def moveView(id: String, view: js.Any): Unit = js.native
-  def moveView(id: Double, view: js.Any): Unit = js.native
+  def moveView(id: String, view: Any): Unit = js.native
+  def moveView(id: Double, view: Any): Unit = js.native
   
   def reconstruct(): Unit = js.native
   
-  def removeView(id: js.Any): Unit = js.native
+  def removeView(id: Any): Unit = js.native
   
   def resizeChildren(): Unit = js.native
   
-  def restore(state: js.Any): Unit = js.native
-  def restore(state: js.Any, factory: WebixCallback): Unit = js.native
+  def restore(state: Any): Unit = js.native
+  def restore(state: Any, factory: WebixCallback): Unit = js.native
   
-  def serialize(): js.Array[js.Any] = js.native
-  def serialize(serializer: WebixCallback): js.Array[js.Any] = js.native
+  def serialize(): js.Array[Any] = js.native
+  def serialize(serializer: WebixCallback): js.Array[Any] = js.native
   
   def showBatch(name: String): Unit = js.native
   def showBatch(name: String, mode: Boolean): Unit = js.native

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("IDBRequest")
 @js.native
-class IDBRequest ()
+/* standard dom */
+open class IDBRequest ()
   extends StObject
-     with typings.std.IDBRequest[js.Any]
+     with typings.std.IDBRequest[Any]

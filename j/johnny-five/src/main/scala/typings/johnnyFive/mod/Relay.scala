@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Relay")
 @js.native
-class Relay protected () extends StObject {
+open class Relay protected () extends StObject {
   def this(option: Double) = this()
   def this(option: RelayOption) = this()
   

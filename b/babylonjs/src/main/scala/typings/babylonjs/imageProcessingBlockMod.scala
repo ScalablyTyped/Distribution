@@ -10,7 +10,7 @@ object imageProcessingBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/imageProcessingBlock", "ImageProcessingBlock")
   @js.native
-  class ImageProcessingBlock protected () extends NodeMaterialBlock {
+  open class ImageProcessingBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new ImageProcessingBlock
       * @param name defines the block name
@@ -21,6 +21,11 @@ object imageProcessingBlockMod {
       * Gets the color input component
       */
     def color: NodeMaterialConnectionPoint = js.native
+    
+    /**
+      * Defines if the input should be converted to linear space (default: true)
+      */
+    var convertInputToLinearSpace: Boolean = js.native
     
     /**
       * Gets the output component

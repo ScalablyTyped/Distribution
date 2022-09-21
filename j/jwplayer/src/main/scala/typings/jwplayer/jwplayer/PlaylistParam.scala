@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlaylistParam extends StObject {
   
-  var playlist: js.Array[js.Any]
+  var playlist: js.Array[Any]
 }
 object PlaylistParam {
   
-  inline def apply(playlist: js.Array[js.Any]): PlaylistParam = {
+  inline def apply(playlist: js.Array[Any]): PlaylistParam = {
     val __obj = js.Dynamic.literal(playlist = playlist.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistParam]
   }
   
   extension [Self <: PlaylistParam](x: Self) {
     
-    inline def setPlaylist(value: js.Array[js.Any]): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
+    inline def setPlaylist(value: js.Array[Any]): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
     
-    inline def setPlaylistVarargs(value: js.Any*): Self = StObject.set(x, "playlist", js.Array(value :_*))
+    inline def setPlaylistVarargs(value: Any*): Self = StObject.set(x, "playlist", js.Array(value*))
   }
 }

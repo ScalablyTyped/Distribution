@@ -28,7 +28,7 @@ object IPolicy {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: IEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: IEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

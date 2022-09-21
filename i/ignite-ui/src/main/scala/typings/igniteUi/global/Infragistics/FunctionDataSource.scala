@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.FunctionDataSource")
 @js.native
-class FunctionDataSource protected ()
+open class FunctionDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.FunctionDataSource {
   def this(settings: FunctionDataSourceSettings) = this()

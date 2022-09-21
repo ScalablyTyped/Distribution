@@ -29,7 +29,7 @@ trait BotAliasMetadata extends StObject {
   /**
     * The date that the bot alias was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the bot alias.
@@ -39,7 +39,7 @@ trait BotAliasMetadata extends StObject {
   /**
     * The date that the bot alias was updated. When you create a resource, the creation date and last updated date are the same.
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the bot alias.
@@ -71,7 +71,7 @@ object BotAliasMetadata {
     
     inline def setConversationLogsUndefined: Self = StObject.set(x, "conversationLogs", js.undefined)
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
@@ -79,7 +79,7 @@ object BotAliasMetadata {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     

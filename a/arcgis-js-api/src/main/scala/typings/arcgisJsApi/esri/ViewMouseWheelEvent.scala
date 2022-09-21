@@ -9,7 +9,7 @@ trait ViewMouseWheelEvent extends StObject {
   
   var deltaY: Double
   
-  var native: js.Any
+  var native: Any
   
   var stopPropagation: js.Function
   
@@ -23,14 +23,7 @@ trait ViewMouseWheelEvent extends StObject {
 }
 object ViewMouseWheelEvent {
   
-  inline def apply(
-    deltaY: Double,
-    native: js.Any,
-    stopPropagation: js.Function,
-    timestamp: Double,
-    x: Double,
-    y: Double
-  ): ViewMouseWheelEvent = {
+  inline def apply(deltaY: Double, native: Any, stopPropagation: js.Function, timestamp: Double, x: Double, y: Double): ViewMouseWheelEvent = {
     val __obj = js.Dynamic.literal(deltaY = deltaY.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("mouse-wheel")
     __obj.asInstanceOf[ViewMouseWheelEvent]
@@ -40,7 +33,7 @@ object ViewMouseWheelEvent {
     
     inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     
-    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     inline def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     

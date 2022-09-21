@@ -12,17 +12,17 @@ trait InstanceAssociation extends StObject {
   var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.undefined
   
   /**
-    * Version information for the association on the instance.
+    * Version information for the association on the managed node.
     */
   var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.undefined
   
   /**
-    * The content of the association document for the instance(s).
+    * The content of the association document for the managed node(s).
     */
   var Content: js.UndefOr[DocumentContent] = js.undefined
   
   /**
-    * The instance ID.
+    * The managed node ID.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
 }

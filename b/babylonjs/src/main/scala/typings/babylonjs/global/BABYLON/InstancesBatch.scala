@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON._InstancesBatch")
 @js.native
-class InstancesBatch ()
+open class InstancesBatch ()
   extends StObject
      with typings.babylonjs.BABYLON.InstancesBatch {
   

@@ -22,6 +22,6 @@ object ListPopulationClause {
     
     inline def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
     
-    inline def setTermsVarargs(value: ListPopulationTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
+    inline def setTermsVarargs(value: ListPopulationTerm*): Self = StObject.set(x, "terms", js.Array(value*))
   }
 }

@@ -27,7 +27,7 @@ object mod {
   
   @JSImport("@ethersproject/wallet", "Wallet")
   @js.native
-  class Wallet protected ()
+  open class Wallet protected ()
     extends Signer
        with ExternallyOwnedAccount
        with TypedDataSigner {
@@ -44,7 +44,7 @@ object mod {
     override def _signTypedData(
       domain: TypedDataDomain,
       types: Record[String, js.Array[TypedDataField]],
-      value: Record[String, js.Any]
+      value: Record[String, Any]
     ): js.Promise[String] = js.native
     
     def _signingKey(): SigningKey = js.native
@@ -53,12 +53,12 @@ object mod {
     override val address: String = js.native
     
     def encrypt(password: String): js.Promise[String] = js.native
-    def encrypt(password: String, options: js.Any): js.Promise[String] = js.native
-    def encrypt(password: String, options: js.Any, progressCallback: ProgressCallback): js.Promise[String] = js.native
+    def encrypt(password: String, options: Any): js.Promise[String] = js.native
+    def encrypt(password: String, options: Any, progressCallback: ProgressCallback): js.Promise[String] = js.native
     def encrypt(password: String, options: Unit, progressCallback: ProgressCallback): js.Promise[String] = js.native
     def encrypt(password: Bytes): js.Promise[String] = js.native
-    def encrypt(password: Bytes, options: js.Any): js.Promise[String] = js.native
-    def encrypt(password: Bytes, options: js.Any, progressCallback: ProgressCallback): js.Promise[String] = js.native
+    def encrypt(password: Bytes, options: Any): js.Promise[String] = js.native
+    def encrypt(password: Bytes, options: Any, progressCallback: ProgressCallback): js.Promise[String] = js.native
     def encrypt(password: Bytes, options: Unit, progressCallback: ProgressCallback): js.Promise[String] = js.native
     
     def mnemonic: Mnemonic = js.native
@@ -86,7 +86,7 @@ object mod {
       *  Static methods to create Wallet instances.
       */
     inline def createRandom(): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")().asInstanceOf[Wallet]
-    inline def createRandom(options: js.Any): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(options.asInstanceOf[js.Any]).asInstanceOf[Wallet]
+    inline def createRandom(options: Any): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(options.asInstanceOf[js.Any]).asInstanceOf[Wallet]
     
     inline def fromEncryptedJson(json: String, password: String): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
     inline def fromEncryptedJson(json: String, password: String, progressCallback: ProgressCallback): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
@@ -108,7 +108,7 @@ object mod {
   inline def verifyTypedData(
     domain: TypedDataDomain,
     types: Record[String, js.Array[TypedDataField]],
-    value: Record[String, js.Any],
+    value: Record[String, Any],
     signature: SignatureLike
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyTypedData")(domain.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
 }

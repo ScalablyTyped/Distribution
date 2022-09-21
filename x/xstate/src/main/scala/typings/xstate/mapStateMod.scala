@@ -11,5 +11,5 @@ object mapStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def mapState(stateMap: StringDictionary[js.Any], stateId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(stateMap.asInstanceOf[js.Any], stateId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mapState(stateMap: StringDictionary[Any], stateId: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(stateMap.asInstanceOf[js.Any], stateId.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

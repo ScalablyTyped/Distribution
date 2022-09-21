@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Artifacts created by the build pipeline.
-  */
 trait SchemaResults extends StObject {
   
   /**
-    * Path to the artifact manifest. Only populated when artifacts are
-    * uploaded.
+    * Path to the artifact manifest. Only populated when artifacts are uploaded.
     */
-  var artifactManifest: js.UndefOr[String] = js.undefined
+  var artifactManifest: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Time to push all non-container artifacts.
@@ -21,19 +17,14 @@ trait SchemaResults extends StObject {
   var artifactTiming: js.UndefOr[SchemaTimeSpan] = js.undefined
   
   /**
-    * List of build step digests, in the order corresponding to build step
-    * indices.
+    * List of build step digests, in the order corresponding to build step indices.
     */
-  var buildStepImages: js.UndefOr[js.Array[String]] = js.undefined
+  var buildStepImages: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * List of build step outputs, produced by builder images, in the order
-    * corresponding to build step indices.  [Cloud
-    * Builders](https://cloud.google.com/cloud-build/docs/cloud-builders) can
-    * produce this output by writing to `$BUILDER_OUTPUT/output`. Only the
-    * first 4KB of data is stored.
+    * List of build step outputs, produced by builder images, in the order corresponding to build step indices. [Cloud Builders](https://cloud.google.com/cloud-build/docs/cloud-builders) can produce this output by writing to `$BUILDER_OUTPUT/output`. Only the first 4KB of data is stored.
     */
-  var buildStepOutputs: js.UndefOr[js.Array[String]] = js.undefined
+  var buildStepOutputs: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Container images that were built as a part of the build.
@@ -43,7 +34,7 @@ trait SchemaResults extends StObject {
   /**
     * Number of artifacts uploaded. Only populated when artifacts are uploaded.
     */
-  var numArtifacts: js.UndefOr[String] = js.undefined
+  var numArtifacts: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaResults {
   
@@ -56,6 +47,8 @@ object SchemaResults {
     
     inline def setArtifactManifest(value: String): Self = StObject.set(x, "artifactManifest", value.asInstanceOf[js.Any])
     
+    inline def setArtifactManifestNull: Self = StObject.set(x, "artifactManifest", null)
+    
     inline def setArtifactManifestUndefined: Self = StObject.set(x, "artifactManifest", js.undefined)
     
     inline def setArtifactTiming(value: SchemaTimeSpan): Self = StObject.set(x, "artifactTiming", value.asInstanceOf[js.Any])
@@ -64,23 +57,29 @@ object SchemaResults {
     
     inline def setBuildStepImages(value: js.Array[String]): Self = StObject.set(x, "buildStepImages", value.asInstanceOf[js.Any])
     
+    inline def setBuildStepImagesNull: Self = StObject.set(x, "buildStepImages", null)
+    
     inline def setBuildStepImagesUndefined: Self = StObject.set(x, "buildStepImages", js.undefined)
     
-    inline def setBuildStepImagesVarargs(value: String*): Self = StObject.set(x, "buildStepImages", js.Array(value :_*))
+    inline def setBuildStepImagesVarargs(value: String*): Self = StObject.set(x, "buildStepImages", js.Array(value*))
     
     inline def setBuildStepOutputs(value: js.Array[String]): Self = StObject.set(x, "buildStepOutputs", value.asInstanceOf[js.Any])
     
+    inline def setBuildStepOutputsNull: Self = StObject.set(x, "buildStepOutputs", null)
+    
     inline def setBuildStepOutputsUndefined: Self = StObject.set(x, "buildStepOutputs", js.undefined)
     
-    inline def setBuildStepOutputsVarargs(value: String*): Self = StObject.set(x, "buildStepOutputs", js.Array(value :_*))
+    inline def setBuildStepOutputsVarargs(value: String*): Self = StObject.set(x, "buildStepOutputs", js.Array(value*))
     
     inline def setImages(value: js.Array[SchemaBuiltImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: SchemaBuiltImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: SchemaBuiltImage*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setNumArtifacts(value: String): Self = StObject.set(x, "numArtifacts", value.asInstanceOf[js.Any])
+    
+    inline def setNumArtifactsNull: Self = StObject.set(x, "numArtifacts", null)
     
     inline def setNumArtifactsUndefined: Self = StObject.set(x, "numArtifacts", js.undefined)
   }

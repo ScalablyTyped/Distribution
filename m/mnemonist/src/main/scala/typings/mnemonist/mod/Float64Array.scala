@@ -1,11 +1,10 @@
 package typings.mnemonist.mod
 
-import typings.mnemonist.vectorMod.TypedVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mnemonist", "Float64Array")
 @js.native
-class Float64Array () extends TypedVector
-
+open class Float64Array ()
+  extends typings.mnemonist.vectorMod.Float64Array

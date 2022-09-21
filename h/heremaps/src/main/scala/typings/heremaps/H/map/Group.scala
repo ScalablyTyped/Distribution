@@ -40,12 +40,12 @@ trait Group
   def forEach(
     callback: js.Function3[/* object */ Object, /* n */ Double, /* group */ this.type, Unit],
     opt_recursive: Boolean,
-    opt_context: js.Any
+    opt_context: Any
   ): Unit = js.native
   def forEach(
     callback: js.Function3[/* object */ Object, /* n */ Double, /* group */ this.type, Unit],
     opt_recursive: Unit,
-    opt_context: js.Any
+    opt_context: Any
   ): Unit = js.native
   
   /**
@@ -95,7 +95,7 @@ object Group {
     */
   trait Options extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var max: js.UndefOr[Double] = js.undefined
     
@@ -118,7 +118,7 @@ object Group {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -134,7 +134,7 @@ object Group {
       
       inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
       
-      inline def setObjectsVarargs(value: Object*): Self = StObject.set(x, "objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: Object*): Self = StObject.set(x, "objects", js.Array(value*))
       
       inline def setProvider(value: Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       

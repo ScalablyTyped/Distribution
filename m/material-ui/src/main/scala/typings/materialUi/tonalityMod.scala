@@ -10,10 +10,10 @@ object tonalityMod {
   
   @JSImport("material-ui/svg-icons/image/tonality", JSImport.Default)
   @js.native
-  class default () extends ImageTonality
+  open class default () extends ImageTonality
   
   @JSImport("material-ui/svg-icons/image/tonality", "ImageTonality")
   @js.native
-  class ImageTonality ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageTonality ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -31,7 +31,7 @@ object favicojs {
     
     var bgColor: js.UndefOr[String] = js.undefined
     
-    var dataUrl: js.UndefOr[js.Function1[/* url */ String, js.Any]] = js.undefined
+    var dataUrl: js.UndefOr[js.Function1[/* url */ String, Any]] = js.undefined
     
     var element: js.UndefOr[HTMLElement] = js.undefined
     
@@ -64,7 +64,7 @@ object favicojs {
       
       inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
       
-      inline def setDataUrl(value: /* url */ String => js.Any): Self = StObject.set(x, "dataUrl", js.Any.fromFunction1(value))
+      inline def setDataUrl(value: /* url */ String => Any): Self = StObject.set(x, "dataUrl", js.Any.fromFunction1(value))
       
       inline def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
       

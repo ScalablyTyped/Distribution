@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object noiseMod {
   
-  @JSImport("konva/types/filters/Noise", "Noise")
+  @JSImport("konva/lib/filters/Noise", "Noise")
   @js.native
   val Noise: Filter = js.native
 }

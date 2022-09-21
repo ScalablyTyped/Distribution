@@ -1,6 +1,5 @@
 package typings.devexpressWeb.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAppointment")
 @js.native
-class ASPxClientAppointment ()
+open class ASPxClientAppointment ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAppointment {
   
@@ -49,7 +48,7 @@ class ASPxClientAppointment ()
     * Gets the end date and time of the appointment.
     */
   /* CompleteClass */
-  override def GetEnd(): Date = js.native
+  override def GetEnd(): js.Date = js.native
   
   /**
     * Gets the ID of the client appointment.
@@ -92,7 +91,7 @@ class ASPxClientAppointment ()
     * Gets the start date and time of the appointment.
     */
   /* CompleteClass */
-  override def GetStart(): Date = js.native
+  override def GetStart(): js.Date = js.native
   
   /**
     * Gets or sets the integer identifier of the status object associated with the appointment.
@@ -132,14 +131,14 @@ class ASPxClientAppointment ()
     * @param duration A TimeSpan object representing the appointment duration.
     */
   /* CompleteClass */
-  override def SetDuration(duration: js.Any): Unit = js.native
+  override def SetDuration(duration: Any): Unit = js.native
   
   /**
     * Sets the property value of the client appointment, corresponding to the Appointment.End appointment property.
     * @param end A JavaScript Date object representing the end of the appointment.
     */
   /* CompleteClass */
-  override def SetEnd(end: Date): Unit = js.native
+  override def SetEnd(end: js.Date): Unit = js.native
   
   /**
     * Sets the ID of the client appointment.
@@ -174,7 +173,7 @@ class ASPxClientAppointment ()
     * @param start A JavaScript Date object representing the appointment start.
     */
   /* CompleteClass */
-  override def SetStart(start: Date): Unit = js.native
+  override def SetStart(start: js.Date): Unit = js.native
   
   /**
     * Sets the property value of the client appointment, corresponding to the Appointment.StatusId appointment property.

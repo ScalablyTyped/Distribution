@@ -11,7 +11,7 @@ object tooltipMod {
   
   @JSImport("react-popper-tooltip/dist/Tooltip", JSImport.Default)
   @js.native
-  class default () extends Tooltip
+  open class default () extends Tooltip
   object default {
     
     @JSImport("react-popper-tooltip/dist/Tooltip", JSImport.Default)
@@ -27,11 +27,11 @@ object tooltipMod {
   
   @js.native
   trait Tooltip
-    extends Component[TooltipProps, js.Object, js.Any] {
+    extends Component[TooltipProps, js.Object, Any] {
     
-    /* private */ var addOutsideClickHandler: js.Any = js.native
+    /* private */ var addOutsideClickHandler: Any = js.native
     
-    /* private */ var addOutsideRightClickHandler: js.Any = js.native
+    /* private */ var addOutsideRightClickHandler: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MTooltip(): Unit = js.native
@@ -42,26 +42,26 @@ object tooltipMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MTooltip(): Unit = js.native
     
-    /* private */ var contextValue: js.Any = js.native
+    /* private */ var contextValue: Any = js.native
     
-    /* private */ var getArrowProps: js.Any = js.native
+    /* private */ var getArrowProps: Any = js.native
     
-    /* private */ var getTooltipProps: js.Any = js.native
+    /* private */ var getTooltipProps: Any = js.native
     
-    /* private */ var getTooltipRef: js.Any = js.native
+    /* private */ var getTooltipRef: Any = js.native
     
-    /* private */ var handleOutsideClick: js.Any = js.native
+    /* private */ var handleOutsideClick: Any = js.native
     
-    /* private */ var handleOutsideRightClick: js.Any = js.native
+    /* private */ var handleOutsideRightClick: Any = js.native
     
-    /* private */ var isTriggeredBy: js.Any = js.native
+    /* private */ var isTriggeredBy: Any = js.native
     
-    /* private */ var observer: js.Any = js.native
+    /* private */ var observer: Any = js.native
     
-    /* private */ var removeOutsideClickHandler: js.Any = js.native
+    /* private */ var removeOutsideClickHandler: Any = js.native
     
-    /* private */ var removeOutsideRightClickHandler: js.Any = js.native
+    /* private */ var removeOutsideRightClickHandler: Any = js.native
     
-    /* private */ var tooltipRef: js.Any = js.native
+    /* private */ var tooltipRef: Any = js.native
   }
 }

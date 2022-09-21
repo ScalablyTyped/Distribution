@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response containing a partial list of deployments and a page token used
-  * to build the next request if the request has been truncated.
-  */
 trait SchemaDeploymentsListResponse extends StObject {
   
   /**
@@ -18,7 +14,7 @@ trait SchemaDeploymentsListResponse extends StObject {
   /**
     * Output only. A token used to continue a truncated list request.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDeploymentsListResponse {
   
@@ -33,9 +29,11 @@ object SchemaDeploymentsListResponse {
     
     inline def setDeploymentsUndefined: Self = StObject.set(x, "deployments", js.undefined)
     
-    inline def setDeploymentsVarargs(value: SchemaDeployment*): Self = StObject.set(x, "deployments", js.Array(value :_*))
+    inline def setDeploymentsVarargs(value: SchemaDeployment*): Self = StObject.set(x, "deployments", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

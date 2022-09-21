@@ -1,7 +1,6 @@
 package typings.chaiEnzyme
 
 import typings.chai.Chai.ChaiPlugin
-import typings.cheerio.cheerio.Cheerio
 import typings.enzyme.mod.ReactWrapper
 import typings.enzyme.mod.ShallowWrapper
 import typings.react.mod.Component
@@ -18,5 +17,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type DebugWrapper = (ShallowWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]]) | Cheerio | (ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]])
+  type DebugWrapper = (ShallowWrapper[Any, Any, Component[js.Object, js.Object, Any]]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify cheerio.Cheerio */ Any) | (ReactWrapper[Any, Any, Component[js.Object, js.Object, Any]])
 }

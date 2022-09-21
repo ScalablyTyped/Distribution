@@ -14,7 +14,7 @@ object mod {
   
   inline def appendElevation(locationIdWithoutElevation: String, elevation: Double, elevationType: ElevationType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendElevation")(locationIdWithoutElevation.asInstanceOf[js.Any], elevation.asInstanceOf[js.Any], elevationType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def bounds(locationId: String): BoundsWithElevation = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(locationId.asInstanceOf[js.Any]).asInstanceOf[BoundsWithElevation]
+  inline def bounds(locationId: String): Bounds_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(locationId.asInstanceOf[js.Any]).asInstanceOf[Bounds_]
   
   inline def compressPolyhash(polyhash: js.Array[Polyhash]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compressPolyhash")(polyhash.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -52,7 +52,7 @@ object mod {
   
   trait Address extends StObject {
     
-    var bounds: BoundsWithElevation
+    var bounds: Bounds_
     
     var coordinates: PointWithElevation
     
@@ -62,14 +62,14 @@ object mod {
   }
   object Address {
     
-    inline def apply(bounds: BoundsWithElevation, coordinates: PointWithElevation, geohash: String, words: String): Address = {
+    inline def apply(bounds: Bounds_, coordinates: PointWithElevation, geohash: String, words: String): Address = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any], geohash = geohash.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
       __obj.asInstanceOf[Address]
     }
     
     extension [Self <: Address](x: Self) {
       
-      inline def setBounds(value: BoundsWithElevation): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Bounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setCoordinates(value: PointWithElevation): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -79,50 +79,32 @@ object mod {
     }
   }
   
-  trait BoundsWithElevation
-    extends StObject
-       with Bounds_ {
-    
-    var elevation: Double
-    
-    var elevationType: ElevationType
-  }
-  object BoundsWithElevation {
-    
-    inline def apply(elevation: Double, elevationType: ElevationType, ne_ : Point, sw: Point): BoundsWithElevation = {
-      val __obj = js.Dynamic.literal(elevation = elevation.asInstanceOf[js.Any], elevationType = elevationType.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any])
-      __obj.updateDynamic("ne")(ne_.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BoundsWithElevation]
-    }
-    
-    extension [Self <: BoundsWithElevation](x: Self) {
-      
-      inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
-      
-      inline def setElevationType(value: ElevationType): Self = StObject.set(x, "elevationType", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Bounds_ extends StObject {
     
-    @JSName("ne")
-    var ne_FBounds_ : Point
+    var e: Double
     
-    var sw: Point
+    var n: Double
+    
+    var s: Double
+    
+    var w: Double
   }
   object Bounds_ {
     
-    inline def apply(ne_ : Point, sw: Point): Bounds_ = {
-      val __obj = js.Dynamic.literal(sw = sw.asInstanceOf[js.Any])
-      __obj.updateDynamic("ne")(ne_.asInstanceOf[js.Any])
+    inline def apply(e: Double, n: Double, s: Double, w: Double): Bounds_ = {
+      val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bounds_]
     }
     
     extension [Self <: Bounds_](x: Self) {
       
-      inline def setNe_(value: Point): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
+      inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      inline def setSw(value: Point): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
+      inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,7 +256,7 @@ object mod {
     extends StObject
        with Point {
     
-    var bounds: BoundsWithElevation
+    var bounds: Bounds_
     
     var elevation: Double
     
@@ -282,20 +264,14 @@ object mod {
   }
   object PointWithElevation {
     
-    inline def apply(
-      bounds: BoundsWithElevation,
-      elevation: Double,
-      elevationType: ElevationType,
-      lat: Double,
-      lon: Double
-    ): PointWithElevation = {
+    inline def apply(bounds: Bounds_, elevation: Double, elevationType: ElevationType, lat: Double, lon: Double): PointWithElevation = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], elevation = elevation.asInstanceOf[js.Any], elevationType = elevationType.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any])
       __obj.asInstanceOf[PointWithElevation]
     }
     
     extension [Self <: PointWithElevation](x: Self) {
       
-      inline def setBounds(value: BoundsWithElevation): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Bounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
       
@@ -320,7 +296,7 @@ object mod {
       
       inline def setData(value: js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     }

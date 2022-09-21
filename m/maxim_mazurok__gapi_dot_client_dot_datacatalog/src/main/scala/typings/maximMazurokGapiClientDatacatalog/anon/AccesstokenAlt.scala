@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatacatalog.anon
 
-import typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1TagTemplateField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,33 +19,32 @@ trait AccesstokenAlt extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /**
+    * Required. The ID of the entry group to create. The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and must start with a letter or underscore. The
+    * maximum size is 64 bytes when encoded in UTF-8.
+    */
+  var entryGroupId: js.UndefOr[String] = js.undefined
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the tag template field. Example: * projects/{project_id}/locations/{location}/tagTemplates/{tag_template_id}/fields/{tag_template_field_id} */
-  var name: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Required. The names of the project and location that the new entry group belongs to. Note: The entry group itself and its child resources might not be stored in the location
+    * specified in its name.
+    */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Request body */
-  var resource: GoogleCloudDatacatalogV1beta1TagTemplateField
-  
-  /**
-    * Optional. The field mask specifies the parts of the template to be updated. Allowed fields: * `display_name` * `type.enum_type` * `is_required` If `update_mask` is not set or
-    * empty, all of the allowed fields above will be updated. When updating an enum type, the provided values will be merged with the existing values. Therefore, enum values can only
-    * be added, existing enum values cannot be deleted nor renamed. Updating a template field from optional to required is NOT allowed.
-    */
-  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -56,8 +54,8 @@ trait AccesstokenAlt extends StObject {
 }
 object AccesstokenAlt {
   
-  inline def apply(name: String, resource: GoogleCloudDatacatalogV1beta1TagTemplateField): AccesstokenAlt = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(parent: String): AccesstokenAlt = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAlt]
   }
   
@@ -79,6 +77,10 @@ object AccesstokenAlt {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setEntryGroupId(value: String): Self = StObject.set(x, "entryGroupId", value.asInstanceOf[js.Any])
+    
+    inline def setEntryGroupIdUndefined: Self = StObject.set(x, "entryGroupId", js.undefined)
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -87,11 +89,11 @@ object AccesstokenAlt {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -100,12 +102,6 @@ object AccesstokenAlt {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: GoogleCloudDatacatalogV1beta1TagTemplateField): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

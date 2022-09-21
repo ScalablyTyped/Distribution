@@ -21,7 +21,7 @@ trait Contribution
   /**
     * Properties/attributes of this contribution
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * List of demanded claims in order for the user to see this contribution (like anonymous, public, member...).
@@ -45,7 +45,7 @@ object Contribution {
     description: String,
     id: String,
     includes: js.Array[String],
-    properties: js.Any,
+    properties: Any,
     restrictedTo: js.Array[String],
     targets: js.Array[String],
     `type`: String,
@@ -60,21 +60,21 @@ object Contribution {
     
     inline def setConstraints(value: js.Array[ContributionConstraint]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
-    inline def setConstraintsVarargs(value: ContributionConstraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: ContributionConstraint*): Self = StObject.set(x, "constraints", js.Array(value*))
     
     inline def setIncludes(value: js.Array[String]): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value :_*))
+    inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value*))
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setRestrictedTo(value: js.Array[String]): Self = StObject.set(x, "restrictedTo", value.asInstanceOf[js.Any])
     
-    inline def setRestrictedToVarargs(value: String*): Self = StObject.set(x, "restrictedTo", js.Array(value :_*))
+    inline def setRestrictedToVarargs(value: String*): Self = StObject.set(x, "restrictedTo", js.Array(value*))
     
     inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

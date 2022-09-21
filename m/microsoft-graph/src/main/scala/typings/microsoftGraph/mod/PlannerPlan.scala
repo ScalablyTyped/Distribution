@@ -11,23 +11,21 @@ trait PlannerPlan
   // Read-only. Nullable. Collection of buckets in the plan.
   var buckets: js.UndefOr[NullableOption[js.Array[PlannerBucket]]] = js.undefined
   
+  // Identifies the container of the plan. After it is set, this property can’t be updated. Required.
+  var container: js.UndefOr[NullableOption[PlannerPlanContainer]] = js.undefined
+  
   // Read-only. The user who created the plan.
   var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   /**
     * Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using
-    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'
+    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Nullable. Additional details about the plan.
   var details: js.UndefOr[NullableOption[PlannerPlanDetails]] = js.undefined
   
-  /**
-    * ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this
-    * property can’t be updated.
-    */
   var owner: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Nullable. Collection of tasks in the plan.
@@ -51,7 +49,13 @@ object PlannerPlan {
     
     inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    inline def setBucketsVarargs(value: PlannerBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: PlannerBucket*): Self = StObject.set(x, "buckets", js.Array(value*))
+    
+    inline def setContainer(value: NullableOption[PlannerPlanContainer]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
@@ -83,7 +87,7 @@ object PlannerPlan {
     
     inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    inline def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

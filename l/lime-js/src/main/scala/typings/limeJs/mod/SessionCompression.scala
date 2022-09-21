@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("lime-js", "SessionCompression")
 @js.native
-class SessionCompression () extends StObject
+open class SessionCompression () extends StObject
 object SessionCompression {
   
   @JSImport("lime-js", "SessionCompression")

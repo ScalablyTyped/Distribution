@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "algoliasearch-helper" : "3.3.2"
+      "algoliasearch-helper" : "3.11.1"
     }
   ],
   "test-dependencies" : [
     {
-      "algoliasearch-helper" : "3.3.2"
+      "algoliasearch-helper" : "3.11.1"
     }
   ],
   "compile-devDependencies" : [

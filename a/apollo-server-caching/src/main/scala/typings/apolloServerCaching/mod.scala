@@ -8,17 +8,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("apollo-server-caching", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("apollo-server-caching", "InMemoryLRUCache")
   @js.native
-  class InMemoryLRUCache[V] ()
+  open class InMemoryLRUCache[V] ()
     extends typings.apolloServerCaching.inMemoryLRUCacheMod.InMemoryLRUCache[V] {
     def this(hasMaxSizeSizeCalculatorOnDispose: MaxSize[V]) = this()
+  }
+  /* static members */
+  object InMemoryLRUCache {
+    
+    @JSImport("apollo-server-caching", "InMemoryLRUCache")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def jsonBytesSizeCalculator[T](obj: T): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBytesSizeCalculator")(obj.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @JSImport("apollo-server-caching", "PrefixingKeyValueCache")
   @js.native
-  class PrefixingKeyValueCache[V] protected ()
+  open class PrefixingKeyValueCache[V] protected ()
     extends typings.apolloServerCaching.prefixingKeyValueCacheMod.PrefixingKeyValueCache[V] {
     def this(wrapped: KeyValueCache[V], prefix: String) = this()
   }
+  
+  inline def runKeyValueCacheTests(keyValueCache: KeyValueCache[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("runKeyValueCacheTests")(keyValueCache.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def runKeyValueCacheTests(keyValueCache: KeyValueCache[String], tick: js.Function1[/* ms */ Double, Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runKeyValueCacheTests")(keyValueCache.asInstanceOf[js.Any], tick.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

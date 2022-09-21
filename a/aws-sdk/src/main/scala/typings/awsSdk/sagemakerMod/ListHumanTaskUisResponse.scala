@@ -27,7 +27,7 @@ object ListHumanTaskUisResponse {
     
     inline def setHumanTaskUiSummaries(value: HumanTaskUiSummaries): Self = StObject.set(x, "HumanTaskUiSummaries", value.asInstanceOf[js.Any])
     
-    inline def setHumanTaskUiSummariesVarargs(value: HumanTaskUiSummary*): Self = StObject.set(x, "HumanTaskUiSummaries", js.Array(value :_*))
+    inline def setHumanTaskUiSummariesVarargs(value: HumanTaskUiSummary*): Self = StObject.set(x, "HumanTaskUiSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

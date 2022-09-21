@@ -10,10 +10,10 @@ find all require() calls by walking the AST
 | ------------------ | :-------------: |
 | Full name          | detective |
 | Keywords           | analyze, ast, require, source |
-| # releases         | 1 |
-| # dependents       | 189 |
-| # downloads        | 80919425 |
-| # stars            | 18 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9825481333333332E7 |
+| # stars            | 404.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/detective#readme)

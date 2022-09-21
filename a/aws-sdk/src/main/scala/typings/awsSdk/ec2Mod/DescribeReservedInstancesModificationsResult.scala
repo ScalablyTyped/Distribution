@@ -33,6 +33,6 @@ object DescribeReservedInstancesModificationsResult {
     
     inline def setReservedInstancesModificationsUndefined: Self = StObject.set(x, "ReservedInstancesModifications", js.undefined)
     
-    inline def setReservedInstancesModificationsVarargs(value: ReservedInstancesModification*): Self = StObject.set(x, "ReservedInstancesModifications", js.Array(value :_*))
+    inline def setReservedInstancesModificationsVarargs(value: ReservedInstancesModification*): Self = StObject.set(x, "ReservedInstancesModifications", js.Array(value*))
   }
 }

@@ -4,7 +4,6 @@ import typings.chrome.chrome.platformKeys.ClientCertificateSelectDetails
 import typings.chrome.chrome.platformKeys.Match
 import typings.chrome.chrome.platformKeys.ServerCertificateVerificationDetails
 import typings.chrome.chrome.platformKeys.ServerCertificateVerificationResult
-import typings.std.ArrayBuffer
 import typings.std.CryptoKey
 import typings.std.SubtleCrypto
 import org.scalablytyped.runtime.StObject
@@ -27,13 +26,13 @@ object platformKeys {
   val ^ : js.Any = js.native
   
   inline def getKeyPair(
-    certificate: ArrayBuffer,
+    certificate: js.typedarray.ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getKeyPair")(certificate.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getKeyPairBySpki(
-    publicKeySpkiDer: ArrayBuffer,
+    publicKeySpkiDer: js.typedarray.ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getKeyPairBySpki")(publicKeySpkiDer.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

@@ -23,6 +23,8 @@ trait FusedConv2DAttrs extends StObject {
   
   var dimRoundingMode: floor | round | ceil
   
+  var leakyreluAlpha: js.UndefOr[Double] = js.undefined
+  
   var pad: valid_ | same_ | Double | ExplicitPadding
   
   var strides: (js.Tuple2[Double, Double]) | Double
@@ -50,6 +52,10 @@ object FusedConv2DAttrs {
     inline def setDilations(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
     
     inline def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
+    
+    inline def setLeakyreluAlpha(value: Double): Self = StObject.set(x, "leakyreluAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setLeakyreluAlphaUndefined: Self = StObject.set(x, "leakyreluAlpha", js.undefined)
     
     inline def setPad(value: valid_ | same_ | Double | ExplicitPadding): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     

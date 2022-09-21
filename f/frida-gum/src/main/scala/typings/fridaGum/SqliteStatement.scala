@@ -63,5 +63,5 @@ trait SqliteStatement extends StObject {
     * query, or `null` when the last result is reached. You should call
     * `reset()` at that point if you intend to use this object again.
     */
-  def step(): js.Array[js.Any] | Null = js.native
+  def step(): js.Array[Any] | Null = js.native
 }

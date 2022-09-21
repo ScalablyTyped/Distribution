@@ -42,6 +42,6 @@ object DescribeReplicationInstanceTaskLogsResponse {
     
     inline def setReplicationInstanceTaskLogsUndefined: Self = StObject.set(x, "ReplicationInstanceTaskLogs", js.undefined)
     
-    inline def setReplicationInstanceTaskLogsVarargs(value: ReplicationInstanceTaskLog*): Self = StObject.set(x, "ReplicationInstanceTaskLogs", js.Array(value :_*))
+    inline def setReplicationInstanceTaskLogsVarargs(value: ReplicationInstanceTaskLog*): Self = StObject.set(x, "ReplicationInstanceTaskLogs", js.Array(value*))
   }
 }

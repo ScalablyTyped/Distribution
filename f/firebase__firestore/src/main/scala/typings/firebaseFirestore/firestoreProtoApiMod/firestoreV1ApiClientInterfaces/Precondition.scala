@@ -1,22 +1,31 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
 import typings.firebaseFirestore.firestoreProtoApiMod.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Precondition extends js.Object {
+trait Precondition extends StObject {
+  
   var exists: js.UndefOr[Boolean] = js.undefined
+  
   var updateTime: js.UndefOr[Timestamp] = js.undefined
 }
-
 object Precondition {
-  @scala.inline
-  def apply(exists: js.UndefOr[Boolean] = js.undefined, updateTime: Timestamp = null): Precondition = {
+  
+  inline def apply(): Precondition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exists)) __obj.updateDynamic("exists")(exists.get.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Precondition]
   }
+  
+  extension [Self <: Precondition](x: Self) {
+    
+    inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+    
+    inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+    
+    inline def setUpdateTime(value: Timestamp): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+  }
 }
-

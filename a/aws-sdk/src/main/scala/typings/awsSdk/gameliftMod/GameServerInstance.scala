@@ -12,7 +12,7 @@ trait GameServerInstance extends StObject {
   var GameServerGroupArn: js.UndefOr[typings.awsSdk.gameliftMod.GameServerGroupArn] = js.undefined
   
   /**
-    * A developer-defined identifier for the game server group that includes the game server instance. The name is unique for each Region in each AWS account.
+    * A developer-defined identifier for the game server group that includes the game server instance. The name is unique for each Region in each Amazon Web Services account.
     */
   var GameServerGroupName: js.UndefOr[typings.awsSdk.gameliftMod.GameServerGroupName] = js.undefined
   

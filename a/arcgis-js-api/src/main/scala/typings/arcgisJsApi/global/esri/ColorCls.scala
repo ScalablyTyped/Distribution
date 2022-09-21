@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.Color")
 @js.native
-class ColorCls protected ()
+open class ColorCls protected ()
   extends StObject
      with typings.arcgisJsApi.esri.Color_ {
   def this(color: String) = this()
-  def this(color: js.Any) = this()
   def this(color: js.Array[Double]) = this()
+  def this(color: Any) = this()
 }

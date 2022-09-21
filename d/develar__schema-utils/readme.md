@@ -10,10 +10,10 @@ webpack Validation Utils
 | ------------------ | :-------------: |
 | Full name          | @develar/schema-utils |
 | Keywords           | webpack |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 4082964 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1251360.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/webpack/schema-utils)

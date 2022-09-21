@@ -18,20 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object lookupDeveloperIdentityCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/LookupDeveloperIdentityCommand", "LookupDeveloperIdentityCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/LookupDeveloperIdentityCommand", "LookupDeveloperIdentityCommand")
   @js.native
-  class LookupDeveloperIdentityCommand protected ()
-    extends Command[
+  open class LookupDeveloperIdentityCommand protected () extends Command[
           LookupDeveloperIdentityCommandInput, 
           LookupDeveloperIdentityCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: LookupDeveloperIdentityCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -42,7 +44,7 @@ object lookupDeveloperIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[LookupDeveloperIdentityCommandInput, LookupDeveloperIdentityCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type LookupDeveloperIdentityCommandInput = LookupDeveloperIdentityInput

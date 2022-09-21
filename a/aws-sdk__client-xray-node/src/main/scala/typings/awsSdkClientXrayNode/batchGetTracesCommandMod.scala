@@ -16,7 +16,7 @@ object batchGetTracesCommandMod {
   
   @JSImport("@aws-sdk/client-xray-node/commands/BatchGetTracesCommand", "BatchGetTracesCommand")
   @js.native
-  class BatchGetTracesCommand protected ()
+  open class BatchGetTracesCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object batchGetTracesCommandMod {
     override val middlewareStack: MiddlewareStack[BatchGetTracesInput, BatchGetTracesOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: XRayResolvedConfiguration
     ): Handler[BatchGetTracesInput, BatchGetTracesOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: XRayResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[BatchGetTracesInput, BatchGetTracesOutput] = js.native
   }
 }

@@ -37,7 +37,7 @@ object XDataDefinitionSupplier {
     acquire: () => Unit,
     getDataDefinitionByConnection: XConnection => XTablesSupplier,
     getDataDefinitionByURL: (String, SeqEquiv[PropertyValue]) => XTablesSupplier,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataDefinitionSupplier = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDataDefinitionByConnection = js.Any.fromFunction1(getDataDefinitionByConnection), getDataDefinitionByURL = js.Any.fromFunction2(getDataDefinitionByURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -9,7 +9,7 @@ object GmeCommon {
   
   @JSGlobal("GmeCommon.Pointer")
   @js.native
-  class Pointer ()
+  open class Pointer ()
     extends StObject
        with typings.webgme.GmeCommon.Pointer {
     

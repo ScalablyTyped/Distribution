@@ -11,9 +11,9 @@ Non-blocking stdout stream
 | Full name          | stdout-stream |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 64 |
-| # downloads        | 215509897 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3580843666666666E7 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/stdout-stream#readme)

@@ -1,9 +1,9 @@
 package typings.vinyl
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.Stats
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object anon {
   /* Inlined vinyl.vinyl.ConstructorOptions & {  contents :null} */
   trait ConstructorOptionscontent
     extends StObject
-       with /* customProperty */ StringDictionary[js.Any] {
+       with /* customProperty */ StringDictionary[Any] {
     
     /**
       * Used for relative pathing. Typically where a glob starts. Default: options.cwd
@@ -25,7 +25,7 @@ object anon {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Null
+    var contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Null
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -48,13 +48,13 @@ object anon {
     /**
       * The result of an fs.stat call. This is how you mark the file as a directory or
       * symbolic link. See `isDirectory()`, `isSymbolic()` and `fs.Stats` for more information.
-      * http://nodejs.org/api/fs.html#fs_class_fs_stats
+      * https://nodejs.org/api/fs.html#fs_class_fs_stats
       */
     var stat: js.UndefOr[Stats] = js.undefined
   }
   object ConstructorOptionscontent {
     
-    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): ConstructorOptionscontent = {
+    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Null): ConstructorOptionscontent = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontent]
     }
@@ -65,7 +65,7 @@ object anon {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -75,7 +75,7 @@ object anon {
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -87,10 +87,10 @@ object anon {
     }
   }
   
-  /* Inlined vinyl.vinyl.ConstructorOptions & {  contents :node.NodeJS.ReadableStream} */
+  /* Inlined vinyl.vinyl.ConstructorOptions & {  contents :std.ReadableStream<any>} */
   trait ConstructorOptionscontentBase
     extends StObject
-       with /* customProperty */ StringDictionary[js.Any] {
+       with /* customProperty */ StringDictionary[Any] {
     
     /**
       * Used for relative pathing. Typically where a glob starts. Default: options.cwd
@@ -102,7 +102,7 @@ object anon {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream
+    var contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & ReadableStream[Any]
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -125,13 +125,13 @@ object anon {
     /**
       * The result of an fs.stat call. This is how you mark the file as a directory or
       * symbolic link. See `isDirectory()`, `isSymbolic()` and `fs.Stats` for more information.
-      * http://nodejs.org/api/fs.html#fs_class_fs_stats
+      * https://nodejs.org/api/fs.html#fs_class_fs_stats
       */
     var stat: js.UndefOr[Stats] = js.undefined
   }
   object ConstructorOptionscontentBase {
     
-    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): ConstructorOptionscontentBase = {
+    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & ReadableStream[Any]): ConstructorOptionscontentBase = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontentBase]
     }
@@ -142,7 +142,7 @@ object anon {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & ReadableStream[Any]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -152,7 +152,7 @@ object anon {
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -164,10 +164,10 @@ object anon {
     }
   }
   
-  /* Inlined vinyl.vinyl.ConstructorOptions & {  contents :node.Buffer} */
+  /* Inlined vinyl.vinyl.ConstructorOptions & {  contents :node.buffer.<global>.Buffer} */
   trait ConstructorOptionscontentDictcustomOption
     extends StObject
-       with /* customProperty */ StringDictionary[js.Any] {
+       with /* customProperty */ StringDictionary[Any] {
     
     /**
       * Used for relative pathing. Typically where a glob starts. Default: options.cwd
@@ -179,7 +179,7 @@ object anon {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer
+    var contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Buffer
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -202,13 +202,13 @@ object anon {
     /**
       * The result of an fs.stat call. This is how you mark the file as a directory or
       * symbolic link. See `isDirectory()`, `isSymbolic()` and `fs.Stats` for more information.
-      * http://nodejs.org/api/fs.html#fs_class_fs_stats
+      * https://nodejs.org/api/fs.html#fs_class_fs_stats
       */
     var stat: js.UndefOr[Stats] = js.undefined
   }
   object ConstructorOptionscontentDictcustomOption {
     
-    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): ConstructorOptionscontentDictcustomOption = {
+    inline def apply(contents: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Buffer): ConstructorOptionscontentDictcustomOption = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptionscontentDictcustomOption]
     }
@@ -219,7 +219,7 @@ object anon {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream | Null]) & Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: (js.UndefOr[Buffer | ReadableStream[Any] | Null]) & Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -229,7 +229,7 @@ object anon {
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

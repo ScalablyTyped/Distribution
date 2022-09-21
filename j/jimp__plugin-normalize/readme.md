@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-normalize
 
-Typings are for version 0.16.1
+Typings are for version 0.16.2
 
 ## Library description:
 normalize an image.
@@ -10,10 +10,10 @@ normalize an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-normalize |
 | Keywords           | - |
-| # releases         | 102 |
-| # dependents       | 1 |
-| # downloads        | 42340513 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 5077611.333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40jimp%2Fplugin-normalize)

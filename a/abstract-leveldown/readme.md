@@ -1,7 +1,7 @@
 
 # Scala.js typings for abstract-leveldown
 
-Typings are for version 5.0
+Typings are for version 7.2
 
 ## Library description:
 An abstract prototype matching the LevelDOWN API
@@ -10,10 +10,10 @@ An abstract prototype matching the LevelDOWN API
 | ------------------ | :-------------: |
 | Full name          | abstract-leveldown |
 | Keywords           | level, leveldb, leveldown, levelup |
-| # releases         | 12 |
-| # dependents       | 147 |
-| # downloads        | 22687554 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7051343.666666667 |
+| # stars            | 136.0 |
 
 ## Links
 - [Homepage](https://github.com/Level/abstract-leveldown)

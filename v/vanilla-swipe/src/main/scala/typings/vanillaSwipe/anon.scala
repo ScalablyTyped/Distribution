@@ -31,6 +31,8 @@ object anon {
     
     var delta: Double
     
+    var directionDelta: Double
+    
     var element: Null
     
     var mouseTrackingEnabled: Boolean
@@ -41,26 +43,32 @@ object anon {
     
     var rotationAngle: Double
     
+    var target: Null
+    
     var touchTrackingEnabled: Boolean
   }
   object Delta {
     
     inline def apply(
       delta: Double,
+      directionDelta: Double,
       element: Null,
       mouseTrackingEnabled: Boolean,
       preventDefaultTouchmoveEvent: Boolean,
       preventTrackingOnMouseleave: Boolean,
       rotationAngle: Double,
+      target: Null,
       touchTrackingEnabled: Boolean
     ): Delta = {
-      val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], mouseTrackingEnabled = mouseTrackingEnabled.asInstanceOf[js.Any], preventDefaultTouchmoveEvent = preventDefaultTouchmoveEvent.asInstanceOf[js.Any], preventTrackingOnMouseleave = preventTrackingOnMouseleave.asInstanceOf[js.Any], rotationAngle = rotationAngle.asInstanceOf[js.Any], touchTrackingEnabled = touchTrackingEnabled.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], directionDelta = directionDelta.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], mouseTrackingEnabled = mouseTrackingEnabled.asInstanceOf[js.Any], preventDefaultTouchmoveEvent = preventDefaultTouchmoveEvent.asInstanceOf[js.Any], preventTrackingOnMouseleave = preventTrackingOnMouseleave.asInstanceOf[js.Any], rotationAngle = rotationAngle.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], touchTrackingEnabled = touchTrackingEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delta]
     }
     
     extension [Self <: Delta](x: Self) {
       
       inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionDelta(value: Double): Self = StObject.set(x, "directionDelta", value.asInstanceOf[js.Any])
       
       inline def setElement(value: Null): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -72,7 +80,26 @@ object anon {
       
       inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
       
+      inline def setTarget(value: Null): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
       inline def setTouchTrackingEnabled(value: Boolean): Self = StObject.set(x, "touchTrackingEnabled", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DirectionDelta extends StObject {
+    
+    var directionDelta: Double
+  }
+  object DirectionDelta {
+    
+    inline def apply(directionDelta: Double): DirectionDelta = {
+      val __obj = js.Dynamic.literal(directionDelta = directionDelta.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DirectionDelta]
+    }
+    
+    extension [Self <: DirectionDelta](x: Self) {
+      
+      inline def setDirectionDelta(value: Double): Self = StObject.set(x, "directionDelta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,11 +139,11 @@ object anon {
       
       inline def setTraceX(value: js.Array[scala.Nothing]): Self = StObject.set(x, "traceX", value.asInstanceOf[js.Any])
       
-      inline def setTraceXVarargs(value: scala.Nothing*): Self = StObject.set(x, "traceX", js.Array(value :_*))
+      inline def setTraceXVarargs(value: scala.Nothing*): Self = StObject.set(x, "traceX", js.Array(value*))
       
       inline def setTraceY(value: js.Array[scala.Nothing]): Self = StObject.set(x, "traceY", value.asInstanceOf[js.Any])
       
-      inline def setTraceYVarargs(value: scala.Nothing*): Self = StObject.set(x, "traceY", js.Array(value :_*))
+      inline def setTraceYVarargs(value: scala.Nothing*): Self = StObject.set(x, "traceY", js.Array(value*))
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -160,22 +187,22 @@ object anon {
   
   trait X extends StObject {
     
-    var x: js.Any
+    var x: Any
     
-    var y: js.Any
+    var y: Any
   }
   object X {
     
-    inline def apply(x: js.Any, y: js.Any): X = {
+    inline def apply(x: Any, y: Any): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
     extension [Self <: X](x: Self) {
       
-      inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

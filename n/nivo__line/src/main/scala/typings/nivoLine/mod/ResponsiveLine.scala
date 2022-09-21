@@ -1,12 +1,18 @@
 package typings.nivoLine.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@nivo/line", "ResponsiveLine")
 @js.native
-class ResponsiveLine ()
-  extends Component[LineSvgProps, js.Object, js.Any]
-
+open class ResponsiveLine protected ()
+  extends Component[LineSvgProps, js.Object, Any] {
+  def this(props: LineSvgProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: LineSvgProps, context: Any) = this()
+}

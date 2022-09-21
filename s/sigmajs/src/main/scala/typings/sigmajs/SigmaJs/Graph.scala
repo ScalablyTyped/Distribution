@@ -9,7 +9,7 @@ trait Graph extends StObject {
   
   def addEdge(edge: Edge): Graph = js.native
   
-  def addMethod(name: String, method: js.Function1[/* input */ js.Any, js.Any]): Unit = js.native
+  def addMethod(name: String, method: js.Function1[/* input */ Any, Any]): Unit = js.native
   
   def addNode(node: Node): Graph = js.native
   

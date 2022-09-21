@@ -10,9 +10,9 @@ Resize, rename, and upload images to AWS S3
 | Full name          | s3-uploader |
 | Keywords           | aws, s3, imagemagic, image, resize, rename, upload, versions |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 33970 |
-| # stars            | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 2151.0 |
+| # stars            | 240.0 |
 
 ## Links
 - [Homepage](https://github.com/Turistforeningen/node-s3-uploader#readme)

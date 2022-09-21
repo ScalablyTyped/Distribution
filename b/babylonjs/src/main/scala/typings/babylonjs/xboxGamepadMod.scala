@@ -127,7 +127,7 @@ object xboxGamepadMod {
   
   @JSImport("babylonjs/Gamepads/xboxGamepad", "Xbox360Pad")
   @js.native
-  class Xbox360Pad protected ()
+  open class Xbox360Pad protected ()
     extends typings.babylonjs.gamepadMod.Gamepad {
     /**
       * Creates a new XBox360 gamepad object
@@ -136,58 +136,58 @@ object xboxGamepadMod {
       * @param gamepad defines the internal HTML gamepad object
       * @param xboxOne defines if it is a XBox One gamepad
       */
-    def this(id: String, index: Double, gamepad: js.Any) = this()
-    def this(id: String, index: Double, gamepad: js.Any, xboxOne: Boolean) = this()
+    def this(id: String, index: Double, gamepad: Any) = this()
+    def this(id: String, index: Double, gamepad: Any, xboxOne: Boolean) = this()
     
-    /* private */ var _buttonA: js.Any = js.native
+    /* private */ var _buttonA: Any = js.native
     
-    /* private */ var _buttonB: js.Any = js.native
+    /* private */ var _buttonB: Any = js.native
     
-    /* private */ var _buttonBack: js.Any = js.native
+    /* private */ var _buttonBack: Any = js.native
     
-    /* private */ var _buttonLB: js.Any = js.native
+    /* private */ var _buttonLB: Any = js.native
     
-    /* private */ var _buttonLeftStick: js.Any = js.native
+    /* private */ var _buttonLeftStick: Any = js.native
     
-    /* private */ var _buttonRB: js.Any = js.native
+    /* private */ var _buttonRB: Any = js.native
     
-    /* private */ var _buttonRightStick: js.Any = js.native
+    /* private */ var _buttonRightStick: Any = js.native
     
-    /* private */ var _buttonStart: js.Any = js.native
+    /* private */ var _buttonStart: Any = js.native
     
-    /* private */ var _buttonX: js.Any = js.native
+    /* private */ var _buttonX: Any = js.native
     
-    /* private */ var _buttonY: js.Any = js.native
+    /* private */ var _buttonY: Any = js.native
     
-    /* private */ var _dPadDown: js.Any = js.native
+    /* private */ var _dPadDown: Any = js.native
     
-    /* private */ var _dPadLeft: js.Any = js.native
+    /* private */ var _dPadLeft: Any = js.native
     
-    /* private */ var _dPadRight: js.Any = js.native
+    /* private */ var _dPadRight: Any = js.native
     
-    /* private */ var _dPadUp: js.Any = js.native
+    /* private */ var _dPadUp: Any = js.native
     
-    /* private */ var _isXboxOnePad: js.Any = js.native
+    /* private */ var _isXboxOnePad: Any = js.native
     
-    /* private */ var _leftTrigger: js.Any = js.native
+    /* private */ var _leftTrigger: Any = js.native
     
-    /* private */ var _onbuttondown: js.Any = js.native
+    /* private */ var _onbuttondown: Any = js.native
     
-    /* private */ var _onbuttonup: js.Any = js.native
+    /* private */ var _onbuttonup: Any = js.native
     
-    /* private */ var _ondpaddown: js.Any = js.native
+    /* private */ var _ondpaddown: Any = js.native
     
-    /* private */ var _ondpadup: js.Any = js.native
+    /* private */ var _ondpadup: Any = js.native
     
-    /* private */ var _onlefttriggerchanged: js.Any = js.native
+    /* private */ var _onlefttriggerchanged: Any = js.native
     
-    /* private */ var _onrighttriggerchanged: js.Any = js.native
+    /* private */ var _onrighttriggerchanged: Any = js.native
     
-    /* private */ var _rightTrigger: js.Any = js.native
+    /* private */ var _rightTrigger: Any = js.native
     
-    /* private */ var _setButtonValue: js.Any = js.native
+    /* private */ var _setButtonValue: Any = js.native
     
-    /* private */ var _setDPadValue: js.Any = js.native
+    /* private */ var _setDPadValue: Any = js.native
     
     /**
       * Gets the value of the `A` button

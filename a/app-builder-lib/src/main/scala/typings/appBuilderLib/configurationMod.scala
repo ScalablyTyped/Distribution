@@ -3,9 +3,12 @@ package typings.appBuilderLib
 import typings.appBuilderLib.appXOptionsMod.AppXOptions
 import typings.appBuilderLib.coreMod.BeforeBuildContext
 import typings.appBuilderLib.coreMod.Target
+import typings.appBuilderLib.electronFrameworkMod.ElectronBrandingOptions
 import typings.appBuilderLib.electronFrameworkMod.ElectronDownloadOptions
+import typings.appBuilderLib.frameworkMod.PrepareApplicationStageDirectoryOptions
 import typings.appBuilderLib.linuxOptionsMod.AppImageOptions
 import typings.appBuilderLib.linuxOptionsMod.DebOptions
+import typings.appBuilderLib.linuxOptionsMod.FlatpakOptions
 import typings.appBuilderLib.linuxOptionsMod.LinuxConfiguration
 import typings.appBuilderLib.linuxOptionsMod.LinuxTargetSpecificOptions
 import typings.appBuilderLib.macOptionsMod.DmgOptions
@@ -31,51 +34,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object configurationMod {
   
-  trait AfterPackContext extends StObject {
-    
-    val appOutDir: String
-    
-    val arch: Arch
-    
-    val electronPlatformName: String
-    
-    val outDir: String
-    
-    val packager: PlatformPackager[js.Any]
-    
-    val targets: js.Array[Target]
-  }
-  object AfterPackContext {
-    
-    inline def apply(
-      appOutDir: String,
-      arch: Arch,
-      electronPlatformName: String,
-      outDir: String,
-      packager: PlatformPackager[js.Any],
-      targets: js.Array[Target]
-    ): AfterPackContext = {
-      val __obj = js.Dynamic.literal(appOutDir = appOutDir.asInstanceOf[js.Any], arch = arch.asInstanceOf[js.Any], electronPlatformName = electronPlatformName.asInstanceOf[js.Any], outDir = outDir.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AfterPackContext]
-    }
-    
-    extension [Self <: AfterPackContext](x: Self) {
-      
-      inline def setAppOutDir(value: String): Self = StObject.set(x, "appOutDir", value.asInstanceOf[js.Any])
-      
-      inline def setArch(value: Arch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
-      
-      inline def setElectronPlatformName(value: String): Self = StObject.set(x, "electronPlatformName", value.asInstanceOf[js.Any])
-      
-      inline def setOutDir(value: String): Self = StObject.set(x, "outDir", value.asInstanceOf[js.Any])
-      
-      inline def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
-      
-      inline def setTargets(value: js.Array[Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
-      
-      inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
-    }
-  }
+  type AfterPackContext = PackContext
+  
+  type BeforePackContext = PackContext
   
   trait Configuration
     extends StObject
@@ -92,14 +53,14 @@ object configurationMod {
       * The function (or path to file or module id) to be [run after pack](#afterpack) (but before pack into distributable format and sign).
       */
     val afterPack: js.UndefOr[
-        (js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | js.Any]) | String | Null
+        (js.Function1[/* context */ AfterPackContext, js.Promise[Any] | Any]) | String | Null
       ] = js.undefined
     
     /**
       * The function (or path to file or module id) to be [run after pack and sign](#aftersign) (but before pack into distributable format).
       */
     val afterSign: js.UndefOr[
-        (js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | js.Any]) | String | Null
+        (js.Function1[/* context */ AfterPackContext, js.Promise[Any] | Any]) | String | Null
       ] = js.undefined
     
     val apk: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.undefined
@@ -114,20 +75,20 @@ object configurationMod {
     /**
       * Appx manifest created on disk - not packed into .appx package yet.
       */
-    val appxManifestCreated: js.UndefOr[(js.Function1[/* path */ String, js.Promise[js.Any] | js.Any]) | String | Null] = js.undefined
+    val appxManifestCreated: js.UndefOr[(js.Function1[/* path */ String, js.Promise[Any] | Any]) | String | Null] = js.undefined
     
     /**
       * The function (or path to file or module id) to be run on artifact build completed.
       */
     val artifactBuildCompleted: js.UndefOr[
-        (js.Function1[/* context */ ArtifactCreated, js.Promise[js.Any] | js.Any]) | String | Null
+        (js.Function1[/* context */ ArtifactCreated, js.Promise[Any] | Any]) | String | Null
       ] = js.undefined
     
     /**
       * The function (or path to file or module id) to be run on artifact build start.
       */
     val artifactBuildStarted: js.UndefOr[
-        (js.Function1[/* context */ ArtifactBuildStarted, js.Promise[js.Any] | js.Any]) | String | Null
+        (js.Function1[/* context */ ArtifactBuildStarted, js.Promise[Any] | Any]) | String | Null
       ] = js.undefined
     
     /**
@@ -136,7 +97,14 @@ object configurationMod {
       * If provided and `node_modules` are missing, it will not invoke production dependencies check.
       */
     val beforeBuild: js.UndefOr[
-        (js.Function1[/* context */ BeforeBuildContext, js.Promise[js.Any]]) | String | Null
+        (js.Function1[/* context */ BeforeBuildContext, js.Promise[Any]]) | String | Null
+      ] = js.undefined
+    
+    /**
+      * The function (or path to file or module id) to be [run before pack](#beforepack)
+      */
+    val beforePack: js.UndefOr[
+        (js.Function1[/* context */ BeforePackContext, js.Promise[Any] | Any]) | String | Null
       ] = js.undefined
     
     /**
@@ -146,8 +114,14 @@ object configurationMod {
     var buildDependenciesFromSource: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * The build number. Maps to the `--iteration` flag for builds using FPM on Linux.
+      * If not defined, then it will fallback to `BUILD_NUMBER` or `TRAVIS_BUILD_NUMBER` or `APPVEYOR_BUILD_NUMBER` or `CIRCLE_BUILD_NUM` or `BUILD_BUILDNUMBER` or `CI_PIPELINE_IID` env.
+      */
+    val buildNumber: js.UndefOr[String | Null] = js.undefined
+    
+    /**
       * The build version. Maps to the `CFBundleVersion` on macOS, and `FileVersion` metadata property on Windows. Defaults to the `version`.
-      * If `TRAVIS_BUILD_NUMBER` or `APPVEYOR_BUILD_NUMBER` or `CIRCLE_BUILD_NUM` or `BUILD_NUMBER` or `bamboo.buildNumber` or `CI_PIPELINE_IID` env defined, it will be used as a build version (`version.build_number`).
+      * If `buildVersion` is not defined and `buildNumber` (or one of the `buildNumber` envs) is defined, it will be used as a build version (`version.buildNumber`).
       */
     val buildVersion: js.UndefOr[String | Null] = js.undefined
     
@@ -170,14 +144,21 @@ object configurationMod {
     val dmg: js.UndefOr[DmgOptions | Null] = js.undefined
     
     /**
+      * The branding used by Electron's distributables. This is needed if a fork has modified Electron's BRANDING.json file.
+      */
+    val electronBranding: js.UndefOr[ElectronBrandingOptions] = js.undefined
+    
+    /**
       * Whether to use [electron-compile](http://github.com/electron/electron-compile) to compile app. Defaults to `true` if `electron-compile` in the dependencies. And `false` if in the `devDependencies` or doesn't specified.
       */
     val electronCompile: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The path to custom Electron build (e.g. `~/electron/out/R`).
+      * Returns the path to custom Electron build (e.g. `~/electron/out/R`). Zip files must follow the pattern `electron-v${version}-${platformName}-${arch}.zip`, otherwise it will be assumed to be an unpacked Electron app directory
       */
-    val electronDist: js.UndefOr[String] = js.undefined
+    val electronDist: js.UndefOr[
+        String | (js.Function1[/* options */ PrepareApplicationStageDirectoryOptions, String])
+      ] = js.undefined
     
     /**
       * The [electron-download](https://github.com/electron-userland/electron-download#usage) options.
@@ -190,16 +171,23 @@ object configurationMod {
     var electronVersion: js.UndefOr[String | Null] = js.undefined
     
     /**
-      * The name of a built-in configuration preset or path to config file (relative to project dir). Currently, only `react-cra` is supported.
+      * The name of a built-in configuration preset (currently, only `react-cra` is supported) or any number of paths to config files (relative to project dir).
+      *
+      * The latter allows to mixin a config from multiple other configs, as if you `Object.assign` them, but properly combine `files` glob patterns.
       *
       * If `react-scripts` in the app dependencies, `react-cra` will be set automatically. Set to `null` to disable automatic detection.
       */
-    var `extends`: js.UndefOr[String | Null] = js.undefined
+    var `extends`: js.UndefOr[js.Array[String] | String | Null] = js.undefined
     
     /**
       * Inject properties to `package.json`.
       */
-    val extraMetadata: js.UndefOr[js.Any] = js.undefined
+    val extraMetadata: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * Flatpak options.
+      */
+    val flatpak: js.UndefOr[FlatpakOptions | Null] = js.undefined
     
     /**
       * The framework name. One of `electron`, `proton`, `libui`. Defaults to `electron`.
@@ -213,6 +201,12 @@ object configurationMod {
       * @default false
       */
     val includePdb: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether to include *all* of the submodules node_modules directories
+      * @default false
+      */
+    var includeSubNodeModules: js.UndefOr[Boolean] = js.undefined
     
     /**
       * *libui-based frameworks only* The version of LaunchUI you are packaging for. Applicable for Windows only. Defaults to version suitable for used framework version.
@@ -241,6 +235,11 @@ object configurationMod {
     
     /** @private */
     val msi: js.UndefOr[MsiOptions | Null] = js.undefined
+    
+    /**
+      * MSI project created on disk - not packed into .msi package yet.
+      */
+    val msiProjectCreated: js.UndefOr[(js.Function1[/* path */ String, js.Promise[Any] | Any]) | String | Null] = js.undefined
     
     /**
       * Whether to execute `node-gyp rebuild` before starting to package the app.
@@ -289,6 +288,7 @@ object configurationMod {
     
     /**
       * As [name](#Metadata-name), but allows you to specify a product name for your executable which contains spaces and other special characters not allowed in the [name property](https://docs.npmjs.com/files/package.json#name).
+      * If not specified inside of the `build` configuration, `productName` property defined at the top level of `package.json` is used. If not specified at the top level of `package.json`, [name property](https://docs.npmjs.com/files/package.json#name) is used.
       */
     val productName: js.UndefOr[String | Null] = js.undefined
     
@@ -297,6 +297,13 @@ object configurationMod {
       * @default true
       */
     val remoteBuild: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether to remove `keywords` field from `package.json` files.
+      *
+      * @default true
+      */
+    val removePackageKeywords: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to remove `scripts` field from `package.json` files.
@@ -338,17 +345,17 @@ object configurationMod {
       
       inline def setAfterAllArtifactBuildUndefined: Self = StObject.set(x, "afterAllArtifactBuild", js.undefined)
       
-      inline def setAfterPack(value: (js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | js.Any]) | String): Self = StObject.set(x, "afterPack", value.asInstanceOf[js.Any])
+      inline def setAfterPack(value: (js.Function1[/* context */ AfterPackContext, js.Promise[Any] | Any]) | String): Self = StObject.set(x, "afterPack", value.asInstanceOf[js.Any])
       
-      inline def setAfterPackFunction1(value: /* context */ AfterPackContext => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
+      inline def setAfterPackFunction1(value: /* context */ AfterPackContext => js.Promise[Any] | Any): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
       
       inline def setAfterPackNull: Self = StObject.set(x, "afterPack", null)
       
       inline def setAfterPackUndefined: Self = StObject.set(x, "afterPack", js.undefined)
       
-      inline def setAfterSign(value: (js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | js.Any]) | String): Self = StObject.set(x, "afterSign", value.asInstanceOf[js.Any])
+      inline def setAfterSign(value: (js.Function1[/* context */ AfterPackContext, js.Promise[Any] | Any]) | String): Self = StObject.set(x, "afterSign", value.asInstanceOf[js.Any])
       
-      inline def setAfterSignFunction1(value: /* context */ AfterPackContext => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "afterSign", js.Any.fromFunction1(value))
+      inline def setAfterSignFunction1(value: /* context */ AfterPackContext => js.Promise[Any] | Any): Self = StObject.set(x, "afterSign", js.Any.fromFunction1(value))
       
       inline def setAfterSignNull: Self = StObject.set(x, "afterSign", null)
       
@@ -368,9 +375,9 @@ object configurationMod {
       
       inline def setAppx(value: AppXOptions): Self = StObject.set(x, "appx", value.asInstanceOf[js.Any])
       
-      inline def setAppxManifestCreated(value: (js.Function1[/* path */ String, js.Promise[js.Any] | js.Any]) | String): Self = StObject.set(x, "appxManifestCreated", value.asInstanceOf[js.Any])
+      inline def setAppxManifestCreated(value: (js.Function1[/* path */ String, js.Promise[Any] | Any]) | String): Self = StObject.set(x, "appxManifestCreated", value.asInstanceOf[js.Any])
       
-      inline def setAppxManifestCreatedFunction1(value: /* path */ String => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "appxManifestCreated", js.Any.fromFunction1(value))
+      inline def setAppxManifestCreatedFunction1(value: /* path */ String => js.Promise[Any] | Any): Self = StObject.set(x, "appxManifestCreated", js.Any.fromFunction1(value))
       
       inline def setAppxManifestCreatedNull: Self = StObject.set(x, "appxManifestCreated", null)
       
@@ -380,33 +387,47 @@ object configurationMod {
       
       inline def setAppxUndefined: Self = StObject.set(x, "appx", js.undefined)
       
-      inline def setArtifactBuildCompleted(value: (js.Function1[/* context */ ArtifactCreated, js.Promise[js.Any] | js.Any]) | String): Self = StObject.set(x, "artifactBuildCompleted", value.asInstanceOf[js.Any])
+      inline def setArtifactBuildCompleted(value: (js.Function1[/* context */ ArtifactCreated, js.Promise[Any] | Any]) | String): Self = StObject.set(x, "artifactBuildCompleted", value.asInstanceOf[js.Any])
       
-      inline def setArtifactBuildCompletedFunction1(value: /* context */ ArtifactCreated => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "artifactBuildCompleted", js.Any.fromFunction1(value))
+      inline def setArtifactBuildCompletedFunction1(value: /* context */ ArtifactCreated => js.Promise[Any] | Any): Self = StObject.set(x, "artifactBuildCompleted", js.Any.fromFunction1(value))
       
       inline def setArtifactBuildCompletedNull: Self = StObject.set(x, "artifactBuildCompleted", null)
       
       inline def setArtifactBuildCompletedUndefined: Self = StObject.set(x, "artifactBuildCompleted", js.undefined)
       
-      inline def setArtifactBuildStarted(value: (js.Function1[/* context */ ArtifactBuildStarted, js.Promise[js.Any] | js.Any]) | String): Self = StObject.set(x, "artifactBuildStarted", value.asInstanceOf[js.Any])
+      inline def setArtifactBuildStarted(value: (js.Function1[/* context */ ArtifactBuildStarted, js.Promise[Any] | Any]) | String): Self = StObject.set(x, "artifactBuildStarted", value.asInstanceOf[js.Any])
       
-      inline def setArtifactBuildStartedFunction1(value: /* context */ ArtifactBuildStarted => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "artifactBuildStarted", js.Any.fromFunction1(value))
+      inline def setArtifactBuildStartedFunction1(value: /* context */ ArtifactBuildStarted => js.Promise[Any] | Any): Self = StObject.set(x, "artifactBuildStarted", js.Any.fromFunction1(value))
       
       inline def setArtifactBuildStartedNull: Self = StObject.set(x, "artifactBuildStarted", null)
       
       inline def setArtifactBuildStartedUndefined: Self = StObject.set(x, "artifactBuildStarted", js.undefined)
       
-      inline def setBeforeBuild(value: (js.Function1[/* context */ BeforeBuildContext, js.Promise[js.Any]]) | String): Self = StObject.set(x, "beforeBuild", value.asInstanceOf[js.Any])
+      inline def setBeforeBuild(value: (js.Function1[/* context */ BeforeBuildContext, js.Promise[Any]]) | String): Self = StObject.set(x, "beforeBuild", value.asInstanceOf[js.Any])
       
-      inline def setBeforeBuildFunction1(value: /* context */ BeforeBuildContext => js.Promise[js.Any]): Self = StObject.set(x, "beforeBuild", js.Any.fromFunction1(value))
+      inline def setBeforeBuildFunction1(value: /* context */ BeforeBuildContext => js.Promise[Any]): Self = StObject.set(x, "beforeBuild", js.Any.fromFunction1(value))
       
       inline def setBeforeBuildNull: Self = StObject.set(x, "beforeBuild", null)
       
       inline def setBeforeBuildUndefined: Self = StObject.set(x, "beforeBuild", js.undefined)
       
+      inline def setBeforePack(value: (js.Function1[/* context */ BeforePackContext, js.Promise[Any] | Any]) | String): Self = StObject.set(x, "beforePack", value.asInstanceOf[js.Any])
+      
+      inline def setBeforePackFunction1(value: /* context */ BeforePackContext => js.Promise[Any] | Any): Self = StObject.set(x, "beforePack", js.Any.fromFunction1(value))
+      
+      inline def setBeforePackNull: Self = StObject.set(x, "beforePack", null)
+      
+      inline def setBeforePackUndefined: Self = StObject.set(x, "beforePack", js.undefined)
+      
       inline def setBuildDependenciesFromSource(value: Boolean): Self = StObject.set(x, "buildDependenciesFromSource", value.asInstanceOf[js.Any])
       
       inline def setBuildDependenciesFromSourceUndefined: Self = StObject.set(x, "buildDependenciesFromSource", js.undefined)
+      
+      inline def setBuildNumber(value: String): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
+      
+      inline def setBuildNumberNull: Self = StObject.set(x, "buildNumber", null)
+      
+      inline def setBuildNumberUndefined: Self = StObject.set(x, "buildNumber", js.undefined)
       
       inline def setBuildVersion(value: String): Self = StObject.set(x, "buildVersion", value.asInstanceOf[js.Any])
       
@@ -438,11 +459,17 @@ object configurationMod {
       
       inline def setDmgUndefined: Self = StObject.set(x, "dmg", js.undefined)
       
+      inline def setElectronBranding(value: ElectronBrandingOptions): Self = StObject.set(x, "electronBranding", value.asInstanceOf[js.Any])
+      
+      inline def setElectronBrandingUndefined: Self = StObject.set(x, "electronBranding", js.undefined)
+      
       inline def setElectronCompile(value: Boolean): Self = StObject.set(x, "electronCompile", value.asInstanceOf[js.Any])
       
       inline def setElectronCompileUndefined: Self = StObject.set(x, "electronCompile", js.undefined)
       
-      inline def setElectronDist(value: String): Self = StObject.set(x, "electronDist", value.asInstanceOf[js.Any])
+      inline def setElectronDist(value: String | (js.Function1[/* options */ PrepareApplicationStageDirectoryOptions, String])): Self = StObject.set(x, "electronDist", value.asInstanceOf[js.Any])
+      
+      inline def setElectronDistFunction1(value: /* options */ PrepareApplicationStageDirectoryOptions => String): Self = StObject.set(x, "electronDist", js.Any.fromFunction1(value))
       
       inline def setElectronDistUndefined: Self = StObject.set(x, "electronDist", js.undefined)
       
@@ -456,15 +483,23 @@ object configurationMod {
       
       inline def setElectronVersionUndefined: Self = StObject.set(x, "electronVersion", js.undefined)
       
-      inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+      inline def setExtends(value: js.Array[String] | String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
       inline def setExtendsNull: Self = StObject.set(x, "extends", null)
       
       inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
       
-      inline def setExtraMetadata(value: js.Any): Self = StObject.set(x, "extraMetadata", value.asInstanceOf[js.Any])
+      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value*))
+      
+      inline def setExtraMetadata(value: Any): Self = StObject.set(x, "extraMetadata", value.asInstanceOf[js.Any])
       
       inline def setExtraMetadataUndefined: Self = StObject.set(x, "extraMetadata", js.undefined)
+      
+      inline def setFlatpak(value: FlatpakOptions): Self = StObject.set(x, "flatpak", value.asInstanceOf[js.Any])
+      
+      inline def setFlatpakNull: Self = StObject.set(x, "flatpak", null)
+      
+      inline def setFlatpakUndefined: Self = StObject.set(x, "flatpak", js.undefined)
       
       inline def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
       
@@ -481,6 +516,10 @@ object configurationMod {
       inline def setIncludePdb(value: Boolean): Self = StObject.set(x, "includePdb", value.asInstanceOf[js.Any])
       
       inline def setIncludePdbUndefined: Self = StObject.set(x, "includePdb", js.undefined)
+      
+      inline def setIncludeSubNodeModules(value: Boolean): Self = StObject.set(x, "includeSubNodeModules", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeSubNodeModulesUndefined: Self = StObject.set(x, "includeSubNodeModules", js.undefined)
       
       inline def setLaunchUiVersion(value: Boolean | String): Self = StObject.set(x, "launchUiVersion", value.asInstanceOf[js.Any])
       
@@ -516,6 +555,14 @@ object configurationMod {
       
       inline def setMsiNull: Self = StObject.set(x, "msi", null)
       
+      inline def setMsiProjectCreated(value: (js.Function1[/* path */ String, js.Promise[Any] | Any]) | String): Self = StObject.set(x, "msiProjectCreated", value.asInstanceOf[js.Any])
+      
+      inline def setMsiProjectCreatedFunction1(value: /* path */ String => js.Promise[Any] | Any): Self = StObject.set(x, "msiProjectCreated", js.Any.fromFunction1(value))
+      
+      inline def setMsiProjectCreatedNull: Self = StObject.set(x, "msiProjectCreated", null)
+      
+      inline def setMsiProjectCreatedUndefined: Self = StObject.set(x, "msiProjectCreated", js.undefined)
+      
       inline def setMsiUndefined: Self = StObject.set(x, "msi", js.undefined)
       
       inline def setNodeGypRebuild(value: Boolean): Self = StObject.set(x, "nodeGypRebuild", value.asInstanceOf[js.Any])
@@ -534,7 +581,7 @@ object configurationMod {
       
       inline def setNpmArgsUndefined: Self = StObject.set(x, "npmArgs", js.undefined)
       
-      inline def setNpmArgsVarargs(value: String*): Self = StObject.set(x, "npmArgs", js.Array(value :_*))
+      inline def setNpmArgsVarargs(value: String*): Self = StObject.set(x, "npmArgs", js.Array(value*))
       
       inline def setNpmRebuild(value: Boolean): Self = StObject.set(x, "npmRebuild", value.asInstanceOf[js.Any])
       
@@ -593,6 +640,10 @@ object configurationMod {
       inline def setRemoteBuild(value: Boolean): Self = StObject.set(x, "remoteBuild", value.asInstanceOf[js.Any])
       
       inline def setRemoteBuildUndefined: Self = StObject.set(x, "remoteBuild", js.undefined)
+      
+      inline def setRemovePackageKeywords(value: Boolean): Self = StObject.set(x, "removePackageKeywords", value.asInstanceOf[js.Any])
+      
+      inline def setRemovePackageKeywordsUndefined: Self = StObject.set(x, "removePackageKeywords", js.undefined)
       
       inline def setRemovePackageScripts(value: Boolean): Self = StObject.set(x, "removePackageScripts", value.asInstanceOf[js.Any])
       
@@ -671,6 +722,52 @@ object configurationMod {
       inline def setOutputNull: Self = StObject.set(x, "output", null)
       
       inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    }
+  }
+  
+  trait PackContext extends StObject {
+    
+    val appOutDir: String
+    
+    val arch: Arch
+    
+    val electronPlatformName: String
+    
+    val outDir: String
+    
+    val packager: PlatformPackager[Any]
+    
+    val targets: js.Array[Target]
+  }
+  object PackContext {
+    
+    inline def apply(
+      appOutDir: String,
+      arch: Arch,
+      electronPlatformName: String,
+      outDir: String,
+      packager: PlatformPackager[Any],
+      targets: js.Array[Target]
+    ): PackContext = {
+      val __obj = js.Dynamic.literal(appOutDir = appOutDir.asInstanceOf[js.Any], arch = arch.asInstanceOf[js.Any], electronPlatformName = electronPlatformName.asInstanceOf[js.Any], outDir = outDir.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PackContext]
+    }
+    
+    extension [Self <: PackContext](x: Self) {
+      
+      inline def setAppOutDir(value: String): Self = StObject.set(x, "appOutDir", value.asInstanceOf[js.Any])
+      
+      inline def setArch(value: Arch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      
+      inline def setElectronPlatformName(value: String): Self = StObject.set(x, "electronPlatformName", value.asInstanceOf[js.Any])
+      
+      inline def setOutDir(value: String): Self = StObject.set(x, "outDir", value.asInstanceOf[js.Any])
+      
+      inline def setPackager(value: PlatformPackager[Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      
+      inline def setTargets(value: js.Array[Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      
+      inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value*))
     }
   }
 }

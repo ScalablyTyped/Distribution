@@ -25,7 +25,7 @@ object DynamicTargetingKeysListResponse {
     
     inline def setDynamicTargetingKeysUndefined: Self = StObject.set(x, "dynamicTargetingKeys", js.undefined)
     
-    inline def setDynamicTargetingKeysVarargs(value: DynamicTargetingKey*): Self = StObject.set(x, "dynamicTargetingKeys", js.Array(value :_*))
+    inline def setDynamicTargetingKeysVarargs(value: DynamicTargetingKey*): Self = StObject.set(x, "dynamicTargetingKeys", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

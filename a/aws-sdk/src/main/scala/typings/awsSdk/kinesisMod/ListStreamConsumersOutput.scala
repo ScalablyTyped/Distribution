@@ -29,7 +29,7 @@ object ListStreamConsumersOutput {
     
     inline def setConsumersUndefined: Self = StObject.set(x, "Consumers", js.undefined)
     
-    inline def setConsumersVarargs(value: Consumer*): Self = StObject.set(x, "Consumers", js.Array(value :_*))
+    inline def setConsumersVarargs(value: Consumer*): Self = StObject.set(x, "Consumers", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.dateFns
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object esmEndOfTodayIndexMod {
   
   object default {
     
-    inline def apply(): Date = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Date]
+    inline def apply(): js.Date = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Date]
     
     @JSImport("date-fns/esm/endOfToday/index", JSImport.Default)
     @js.native

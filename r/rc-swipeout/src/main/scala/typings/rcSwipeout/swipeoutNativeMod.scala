@@ -15,8 +15,8 @@ object swipeoutNativeMod {
   
   @JSImport("rc-swipeout/lib/Swipeout.native", JSImport.Default)
   @js.native
-  class default protected () extends Swipeout {
-    def this(props: js.Any) = this()
+  open class default protected () extends Swipeout {
+    def this(props: Any) = this()
   }
   object default {
     
@@ -105,9 +105,8 @@ object swipeoutNativeMod {
   }
   
   @js.native
-  trait Swipeout
-    extends Component[IPropTypes, js.Any, js.Any] {
+  trait Swipeout extends Component[IPropTypes, Any, Any] {
     
-    def renderCustomButton(button: js.Any): BackgroundColor = js.native
+    def renderCustomButton(button: Any): BackgroundColor = js.native
   }
 }

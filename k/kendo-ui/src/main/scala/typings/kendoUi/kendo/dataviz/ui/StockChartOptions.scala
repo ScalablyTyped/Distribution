@@ -8,7 +8,7 @@ trait StockChartOptions extends StObject {
   
   var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var axisDefaults: js.UndefOr[js.Any] = js.undefined
+  var axisDefaults: js.UndefOr[Any] = js.undefined
   
   var axisLabelClick: js.UndefOr[js.Function1[/* e */ StockChartAxisLabelClickEvent, Unit]] = js.undefined
   
@@ -18,7 +18,7 @@ trait StockChartOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ StockChartEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   var dateField: js.UndefOr[String] = js.undefined
   
@@ -76,7 +76,7 @@ trait StockChartOptions extends StObject {
   
   var seriesClick: js.UndefOr[js.Function1[/* e */ StockChartSeriesClickEvent, Unit]] = js.undefined
   
-  var seriesColors: js.UndefOr[js.Any] = js.undefined
+  var seriesColors: js.UndefOr[Any] = js.undefined
   
   var seriesDefaults: js.UndefOr[StockChartSeriesDefaults] = js.undefined
   
@@ -115,7 +115,7 @@ object StockChartOptions {
     
     inline def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
-    inline def setAxisDefaults(value: js.Any): Self = StObject.set(x, "axisDefaults", value.asInstanceOf[js.Any])
+    inline def setAxisDefaults(value: Any): Self = StObject.set(x, "axisDefaults", value.asInstanceOf[js.Any])
     
     inline def setAxisDefaultsUndefined: Self = StObject.set(x, "axisDefaults", js.undefined)
     
@@ -127,7 +127,7 @@ object StockChartOptions {
     
     inline def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
     
-    inline def setCategoryAxisVarargs(value: StockChartCategoryAxisItem*): Self = StObject.set(x, "categoryAxis", js.Array(value :_*))
+    inline def setCategoryAxisVarargs(value: StockChartCategoryAxisItem*): Self = StObject.set(x, "categoryAxis", js.Array(value*))
     
     inline def setChartArea(value: StockChartChartArea): Self = StObject.set(x, "chartArea", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object StockChartOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -201,7 +201,7 @@ object StockChartOptions {
     
     inline def setPanesUndefined: Self = StObject.set(x, "panes", js.undefined)
     
-    inline def setPanesVarargs(value: StockChartPane*): Self = StObject.set(x, "panes", js.Array(value :_*))
+    inline def setPanesVarargs(value: StockChartPane*): Self = StObject.set(x, "panes", js.Array(value*))
     
     inline def setPdf(value: StockChartPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
@@ -253,7 +253,7 @@ object StockChartOptions {
     
     inline def setSeriesClickUndefined: Self = StObject.set(x, "seriesClick", js.undefined)
     
-    inline def setSeriesColors(value: js.Any): Self = StObject.set(x, "seriesColors", value.asInstanceOf[js.Any])
+    inline def setSeriesColors(value: Any): Self = StObject.set(x, "seriesColors", value.asInstanceOf[js.Any])
     
     inline def setSeriesColorsUndefined: Self = StObject.set(x, "seriesColors", js.undefined)
     
@@ -275,7 +275,7 @@ object StockChartOptions {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: StockChartSeriesItem*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: StockChartSeriesItem*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
@@ -297,7 +297,7 @@ object StockChartOptions {
     
     inline def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
     
-    inline def setValueAxisVarargs(value: StockChartValueAxisItem*): Self = StObject.set(x, "valueAxis", js.Array(value :_*))
+    inline def setValueAxisVarargs(value: StockChartValueAxisItem*): Self = StObject.set(x, "valueAxis", js.Array(value*))
     
     inline def setZoom(value: /* e */ StockChartZoomEvent => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
     

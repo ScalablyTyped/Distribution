@@ -23,6 +23,9 @@ trait ImageContext extends StObject {
   /** Parameters for product search. */
   var productSearchParams: js.UndefOr[ProductSearchParams] = js.undefined
   
+  /** Parameters for text detection and document text detection. */
+  var textDetectionParams: js.UndefOr[TextDetectionParams] = js.undefined
+  
   /** Parameters for web detection. */
   var webDetectionParams: js.UndefOr[WebDetectionParams] = js.undefined
 }
@@ -43,7 +46,7 @@ object ImageContext {
     
     inline def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
     
-    inline def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
+    inline def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value*))
     
     inline def setLatLongRect(value: LatLongRect): Self = StObject.set(x, "latLongRect", value.asInstanceOf[js.Any])
     
@@ -52,6 +55,10 @@ object ImageContext {
     inline def setProductSearchParams(value: ProductSearchParams): Self = StObject.set(x, "productSearchParams", value.asInstanceOf[js.Any])
     
     inline def setProductSearchParamsUndefined: Self = StObject.set(x, "productSearchParams", js.undefined)
+    
+    inline def setTextDetectionParams(value: TextDetectionParams): Self = StObject.set(x, "textDetectionParams", value.asInstanceOf[js.Any])
+    
+    inline def setTextDetectionParamsUndefined: Self = StObject.set(x, "textDetectionParams", js.undefined)
     
     inline def setWebDetectionParams(value: WebDetectionParams): Self = StObject.set(x, "webDetectionParams", value.asInstanceOf[js.Any])
     

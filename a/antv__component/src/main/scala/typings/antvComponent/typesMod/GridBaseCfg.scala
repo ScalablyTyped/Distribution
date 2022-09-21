@@ -46,7 +46,7 @@ object GridBaseCfg {
     
     inline def setAlternateColorUndefined: Self = StObject.set(x, "alternateColor", js.undefined)
     
-    inline def setAlternateColorVarargs(value: String*): Self = StObject.set(x, "alternateColor", js.Array(value :_*))
+    inline def setAlternateColorVarargs(value: String*): Self = StObject.set(x, "alternateColor", js.Array(value*))
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object GridBaseCfg {
     
     inline def setItems(value: js.Array[GridItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: GridItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GridItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLine(value: GridLineCfg): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Simple CORS middleware for Zeit's Micro
 | ------------------ | :-------------: |
 | Full name          | micro-cors |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 69 |
-| # downloads        | 483409 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 99856.66666666667 |
+| # stars            | 188.0 |
 
 ## Links
 - [Homepage](https://github.com/possibilities/micro-cors#readme)

@@ -10,10 +10,10 @@ parse a css color string (plus hsv and cmyk) into an object
 | ------------------ | :-------------: |
 | Full name          | parse-color |
 | Keywords           | rgb, rgba, hsl, hsla, hsv, hsva, cmyk, cmyka, color, css, alpha |
-| # releases         | 0 |
-| # dependents       | 101 |
-| # downloads        | 18056857 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1248316.6666666667 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/parse-color)

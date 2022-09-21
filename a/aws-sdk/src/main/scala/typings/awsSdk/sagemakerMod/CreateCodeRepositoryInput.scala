@@ -15,6 +15,11 @@ trait CreateCodeRepositoryInput extends StObject {
     * Specifies details about the repository, including the URL where the repository is located, the default branch, and credentials to use to access the repository.
     */
   var GitConfig: typings.awsSdk.sagemakerMod.GitConfig
+  
+  /**
+    * An array of key-value pairs. You can use tags to categorize your Amazon Web Services resources in different ways, for example, by purpose, owner, or environment. For more information, see Tagging Amazon Web Services Resources.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateCodeRepositoryInput {
   
@@ -28,5 +33,11 @@ object CreateCodeRepositoryInput {
     inline def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
     
     inline def setGitConfig(value: GitConfig): Self = StObject.set(x, "GitConfig", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

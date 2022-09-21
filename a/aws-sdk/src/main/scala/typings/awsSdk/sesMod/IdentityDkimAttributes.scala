@@ -36,7 +36,7 @@ object IdentityDkimAttributes {
     
     inline def setDkimTokensUndefined: Self = StObject.set(x, "DkimTokens", js.undefined)
     
-    inline def setDkimTokensVarargs(value: VerificationToken*): Self = StObject.set(x, "DkimTokens", js.Array(value :_*))
+    inline def setDkimTokensVarargs(value: VerificationToken*): Self = StObject.set(x, "DkimTokens", js.Array(value*))
     
     inline def setDkimVerificationStatus(value: VerificationStatus): Self = StObject.set(x, "DkimVerificationStatus", value.asInstanceOf[js.Any])
   }

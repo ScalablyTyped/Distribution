@@ -27,7 +27,7 @@ trait LocalGatewayVirtualInterface extends StObject {
   var LocalGatewayVirtualInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceId] = js.undefined
   
   /**
-    * The AWS account ID that owns the local gateway virtual interface.
+    * The ID of the Amazon Web Services account that owns the local gateway virtual interface.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -92,7 +92,7 @@ object LocalGatewayVirtualInterface {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVlan(value: Integer): Self = StObject.set(x, "Vlan", value.asInstanceOf[js.Any])
     

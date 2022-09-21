@@ -14,8 +14,8 @@ trait TextFileAssetTask
     */
   def onError(task: TextFileAssetTask): Unit = js.native
   def onError(task: TextFileAssetTask, message: String): Unit = js.native
-  def onError(task: TextFileAssetTask, message: String, exception: js.Any): Unit = js.native
-  def onError(task: TextFileAssetTask, message: Unit, exception: js.Any): Unit = js.native
+  def onError(task: TextFileAssetTask, message: String, exception: Any): Unit = js.native
+  def onError(task: TextFileAssetTask, message: Unit, exception: Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

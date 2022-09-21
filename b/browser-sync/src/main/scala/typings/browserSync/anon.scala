@@ -1,7 +1,6 @@
 package typings.browserSync
 
 import typings.browserSync.mod.BrowserSyncInstance
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +9,9 @@ object anon {
   
   trait Fn extends StObject {
     
-    var fn: js.UndefOr[js.Function2[/* snippet */ String, /* match */ String, js.Any]] = js.undefined
+    var fn: js.UndefOr[js.Function2[/* snippet */ String, /* match */ String, Any]] = js.undefined
     
-    var `match`: js.UndefOr[RegExp] = js.undefined
+    var `match`: js.UndefOr[js.RegExp] = js.undefined
   }
   object Fn {
     
@@ -23,11 +22,11 @@ object anon {
     
     extension [Self <: Fn](x: Self) {
       
-      inline def setFn(value: (/* snippet */ String, /* match */ String) => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (/* snippet */ String, /* match */ String) => Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
       inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: js.RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     }
@@ -54,21 +53,21 @@ object anon {
   
   trait Plugin extends StObject {
     
-    def plugin(opts: js.Object, bs: BrowserSyncInstance): js.Any
+    def plugin(opts: js.Object, bs: BrowserSyncInstance): Any
     
     @JSName("plugin:name")
     var pluginColonname: js.UndefOr[String] = js.undefined
   }
   object Plugin {
     
-    inline def apply(plugin: (js.Object, BrowserSyncInstance) => js.Any): Plugin = {
+    inline def apply(plugin: (js.Object, BrowserSyncInstance) => Any): Plugin = {
       val __obj = js.Dynamic.literal(plugin = js.Any.fromFunction2(plugin))
       __obj.asInstanceOf[Plugin]
     }
     
     extension [Self <: Plugin](x: Self) {
       
-      inline def setPlugin(value: (js.Object, BrowserSyncInstance) => js.Any): Self = StObject.set(x, "plugin", js.Any.fromFunction2(value))
+      inline def setPlugin(value: (js.Object, BrowserSyncInstance) => Any): Self = StObject.set(x, "plugin", js.Any.fromFunction2(value))
       
       inline def setPluginColonname(value: String): Self = StObject.set(x, "plugin:name", value.asInstanceOf[js.Any])
       

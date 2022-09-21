@@ -19,7 +19,7 @@ trait DescribeAlarmHistoryInput extends StObject {
   /**
     * The ending date to retrieve alarm history.
     */
-  var EndDate: js.UndefOr[Timestamp] = js.undefined
+  var EndDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of alarm histories to retrieve.
@@ -44,7 +44,7 @@ trait DescribeAlarmHistoryInput extends StObject {
   /**
     * The starting date to retrieve alarm history.
     */
-  var StartDate: js.UndefOr[Timestamp] = js.undefined
+  var StartDate: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeAlarmHistoryInput {
   
@@ -63,9 +63,9 @@ object DescribeAlarmHistoryInput {
     
     inline def setAlarmTypesUndefined: Self = StObject.set(x, "AlarmTypes", js.undefined)
     
-    inline def setAlarmTypesVarargs(value: AlarmType*): Self = StObject.set(x, "AlarmTypes", js.Array(value :_*))
+    inline def setAlarmTypesVarargs(value: AlarmType*): Self = StObject.set(x, "AlarmTypes", js.Array(value*))
     
-    inline def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     inline def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
@@ -85,7 +85,7 @@ object DescribeAlarmHistoryInput {
     
     inline def setScanByUndefined: Self = StObject.set(x, "ScanBy", js.undefined)
     
-    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
   }

@@ -3,10 +3,16 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`horizontal-reversed`
 import typings.arcgisJsApi.arcgisJsApiStrings.`max-change`
+import typings.arcgisJsApi.arcgisJsApiStrings.`max-click`
 import typings.arcgisJsApi.arcgisJsApiStrings.`min-change`
+import typings.arcgisJsApi.arcgisJsApiStrings.`min-click`
+import typings.arcgisJsApi.arcgisJsApiStrings.`segment-click`
 import typings.arcgisJsApi.arcgisJsApiStrings.`segment-drag`
 import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-change`
+import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-click`
 import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-drag`
+import typings.arcgisJsApi.arcgisJsApiStrings.`tick-click`
+import typings.arcgisJsApi.arcgisJsApiStrings.`track-click`
 import typings.arcgisJsApi.arcgisJsApiStrings.`vertical-reversed`
 import typings.arcgisJsApi.arcgisJsApiStrings.average
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
@@ -33,6 +39,8 @@ trait Slider
   /**
     * When `true`, sets the slider to a disabled state so the user cannot interact with it.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#disabled)
     */
   var disabled: Boolean = js.native
@@ -40,10 +48,40 @@ trait Slider
   /**
     * Indicates if the user can drag the segment between thumbs to update thumb positions.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#draggableSegmentsEnabled)
     */
   var draggableSegmentsEnabled: Boolean = js.native
   
+  /**
+    * When set, the user is restricted from moving slider thumbs to positions higher than this value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#effectiveMax)
+    */
+  var effectiveMax: Double = js.native
+  
+  /**
+    * When set, the user is restricted from moving slider thumbs to positions less than this value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#effectiveMin)
+    */
+  var effectiveMin: Double = js.native
+  
+  /**
+    * The HTML Element nodes representing the slider segment between the [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#min) and [effectiveMin](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#effectiveMin), and the segment between the [effectiveMax](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#effectiveMax) and [max](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#max).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#effectiveSegmentElements)
+    */
+  val effectiveSegmentElements: Collection[HTMLElement] = js.native
+  
+  /**
+    * A function that provides the developer with access to the input elements when [rangeLabelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelInputsEnabled) and/or [labelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelInputsEnabled) are set to `true`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputCreatedFunction)
+    */
+  def inputCreatedFunction(inputElement: Any, `type`: max | min | thumb): scala.Unit = js.native
+  def inputCreatedFunction(inputElement: Any, `type`: max | min | thumb, thumbIndex: Double): scala.Unit = js.native
   /**
     * A function that provides the developer with access to the input elements when [rangeLabelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelInputsEnabled) and/or [labelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelInputsEnabled) are set to `true`.
     *
@@ -51,23 +89,6 @@ trait Slider
     */
   @JSName("inputCreatedFunction")
   var inputCreatedFunction_Original: InputCreatedFunction = js.native
-  /**
-    * A function that provides the developer with access to the input elements when [rangeLabelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelInputsEnabled) and/or [labelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelInputsEnabled) are set to `true`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputCreatedFunction)
-    */
-  @JSName("inputCreatedFunction")
-  def inputCreatedFunction_max(inputElement: js.Any, `type`: max): Unit = js.native
-  @JSName("inputCreatedFunction")
-  def inputCreatedFunction_max(inputElement: js.Any, `type`: max, thumbIndex: Double): Unit = js.native
-  @JSName("inputCreatedFunction")
-  def inputCreatedFunction_min(inputElement: js.Any, `type`: min): Unit = js.native
-  @JSName("inputCreatedFunction")
-  def inputCreatedFunction_min(inputElement: js.Any, `type`: min, thumbIndex: Double): Unit = js.native
-  @JSName("inputCreatedFunction")
-  def inputCreatedFunction_thumb(inputElement: js.Any, `type`: thumb): Unit = js.native
-  @JSName("inputCreatedFunction")
-  def inputCreatedFunction_thumb(inputElement: js.Any, `type`: thumb, thumbIndex: Double): Unit = js.native
   
   /**
     * A function used to format user inputs.
@@ -75,7 +96,9 @@ trait Slider
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction)
     */
   def inputFormatFunction(value: Double): String = js.native
-  def inputFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: average | min | max | tick | value): String = js.native
+  def inputFormatFunction(value: Double, `type`: average | min | max | tick | value, index: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: scala.Unit, index: Double): String = js.native
   /**
     * A function used to format user inputs.
     *
@@ -83,26 +106,6 @@ trait Slider
     */
   @JSName("inputFormatFunction")
   var inputFormatFunction_Original: SliderLabelFormatter = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_average(value: Double, `type`: average): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_average(value: Double, `type`: average, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_max(value: Double, `type`: max): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_max(value: Double, `type`: max, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_min(value: Double, `type`: min): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_min(value: Double, `type`: min, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_tick(value: Double, `type`: tick): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_tick(value: Double, `type`: tick, index: Double): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_value(value: Double, `type`: value): String = js.native
-  @JSName("inputFormatFunction")
-  def inputFormatFunction_value(value: Double, `type`: value, index: Double): String = js.native
   
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction).
@@ -110,7 +113,9 @@ trait Slider
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction)
     */
   def inputParseFunction(value: String): Double = js.native
-  def inputParseFunction(value: String, `type`: Unit, index: Double): Double = js.native
+  def inputParseFunction(value: String, `type`: average | min | max | tick | value): Double = js.native
+  def inputParseFunction(value: String, `type`: average | min | max | tick | value, index: Double): Double = js.native
+  def inputParseFunction(value: String, `type`: scala.Unit, index: Double): Double = js.native
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction).
     *
@@ -118,26 +123,13 @@ trait Slider
     */
   @JSName("inputParseFunction")
   var inputParseFunction_Original: InputParser = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_average(value: String, `type`: average): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_average(value: String, `type`: average, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_max(value: String, `type`: max): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_max(value: String, `type`: max, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_min(value: String, `type`: min): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_min(value: String, `type`: min, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_tick(value: String, `type`: tick): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_tick(value: String, `type`: tick, index: Double): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_value(value: String, `type`: value): Double = js.native
-  @JSName("inputParseFunction")
-  def inputParseFunction_value(value: String, `type`: value, index: Double): Double = js.native
+  
+  /**
+    * The HTML Element nodes representing [labels](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labels) attached to slider thumbs.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelElements)
+    */
+  val labelElements: Collection[HTMLElement] = js.native
   
   /**
     * A function used to format labels.
@@ -145,7 +137,9 @@ trait Slider
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: average | min | max | tick | value): String = js.native
+  def labelFormatFunction(value: Double, `type`: average | min | max | tick | value, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: scala.Unit, index: Double): String = js.native
   /**
     * A function used to format labels.
     *
@@ -153,29 +147,11 @@ trait Slider
     */
   @JSName("labelFormatFunction")
   var labelFormatFunction_Original: SliderLabelFormatter = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_average(value: Double, `type`: average): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_average(value: Double, `type`: average, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_max(value: Double, `type`: max): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_max(value: Double, `type`: max, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_min(value: Double, `type`: min): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_min(value: Double, `type`: min, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_tick(value: Double, `type`: tick): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_tick(value: Double, `type`: tick, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_value(value: Double, `type`: value): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_value(value: Double, `type`: value, index: Double): String = js.native
   
   /**
     * Indicates whether to enable editing input values via keyboard input when the user clicks a label.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelInputsEnabled)
     */
@@ -189,14 +165,9 @@ trait Slider
   val labels: js.Array[String] = js.native
   
   /**
-    * Indicates whether to display labels alongside slider thumbs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelsVisible)
-    */
-  var labelsVisible: Boolean = js.native
-  
-  /**
     * Determines the layout/orientation of the Slider widget.
+    *
+    * @default horizontal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#layout)
     */
@@ -210,25 +181,53 @@ trait Slider
   var max: Double = js.native
   
   /**
+    * The HTML Element node representing the [max](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#max) value label.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#maxLabelElement)
+    */
+  val maxLabelElement: HTMLElement = js.native
+  
+  /**
     * The minimum possible data/thumb value of the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#min)
     */
   var min: Double = js.native
   
+  /**
+    * The HTML Element node representing the [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#min) value label.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#minLabelElement)
+    */
+  val minLabelElement: HTMLElement = js.native
+  
   @JSName("on")
   def on_maxchange(name: `max-change`, eventHandler: SliderMaxChangeEventHandler): IHandle = js.native
   @JSName("on")
+  def on_maxclick(name: `max-click`, eventHandler: SliderMaxClickEventHandler): IHandle = js.native
+  @JSName("on")
   def on_minchange(name: `min-change`, eventHandler: SliderMinChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_minclick(name: `min-click`, eventHandler: SliderMinClickEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_segmentclick(name: `segment-click`, eventHandler: SliderSegmentClickEventHandler): IHandle = js.native
   @JSName("on")
   def on_segmentdrag(name: `segment-drag`, eventHandler: SliderSegmentDragEventHandler): IHandle = js.native
   @JSName("on")
   def on_thumbchange(name: `thumb-change`, eventHandler: SliderThumbChangeEventHandler): IHandle = js.native
   @JSName("on")
+  def on_thumbclick(name: `thumb-click`, eventHandler: SliderThumbClickEventHandler): IHandle = js.native
+  @JSName("on")
   def on_thumbdrag(name: `thumb-drag`, eventHandler: SliderThumbDragEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_tickclick(name: `tick-click`, eventHandler: SliderTickClickEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_trackclick(name: `track-click`, eventHandler: SliderTrackClickEventHandler): IHandle = js.native
   
   /**
     * Defines how slider thumb values should be rounded.
+    *
+    * @default 4
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#precision)
     */
@@ -237,19 +236,23 @@ trait Slider
   /**
     * Indicates whether to enable editing range values via keyboard input when the user clicks a [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#min) or [max](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#max) label.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelInputsEnabled)
     */
   var rangeLabelInputsEnabled: Boolean = js.native
   
   /**
-    * Indicates whether to display [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#min) or [max](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#max) range values on the slider.
+    * The HTML Element nodes representing interactive slider segments.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelsVisible)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#segmentElements)
     */
-  var rangeLabelsVisible: Boolean = js.native
+  val segmentElements: Collection[HTMLElement] = js.native
   
   /**
     * Indicates if the closest thumb will snap to the clicked location on the track.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#snapOnClickEnabled)
     */
@@ -270,12 +273,21 @@ trait Slider
   var steps: Double | js.Array[Double] = js.native
   
   /**
+    * When `true`, all segments will sync together in updating thumb values when the user drags any segment.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#syncedSegmentsEnabled)
+    */
+  var syncedSegmentsEnabled: Boolean = js.native
+  
+  /**
     * Function that executes each time a thumb is created on the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#thumbCreatedFunction)
     */
-  def thumbCreatedFunction(index: Double, value: Double, thumbElement: HTMLElement): Unit = js.native
-  def thumbCreatedFunction(index: Double, value: Double, thumbElement: HTMLElement, labelElement: HTMLElement): Unit = js.native
+  def thumbCreatedFunction(index: Double, value: Double, thumbElement: HTMLElement): scala.Unit = js.native
+  def thumbCreatedFunction(index: Double, value: Double, thumbElement: HTMLElement, labelElement: HTMLElement): scala.Unit = js.native
   /**
     * Function that executes each time a thumb is created on the slider.
     *
@@ -285,7 +297,16 @@ trait Slider
   var thumbCreatedFunction_Original: ThumbCreatedFunction = js.native
   
   /**
+    * The HTML Element nodes representing slider thumbs.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#thumbElements)
+    */
+  val thumbElements: Collection[HTMLElement] = js.native
+  
+  /**
     * When `false`, the user can freely move any slider thumb to any position along the track.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#thumbsConstrained)
     */
@@ -297,6 +318,13 @@ trait Slider
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#tickConfigs)
     */
   var tickConfigs: js.Array[TickConfig] = js.native
+  
+  /**
+    * The HTML Element nodes representing slider ticks and their associated labels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#tickElements)
+    */
+  val tickElements: Collection[Collection[TickElementGroup]] = js.native
   
   /**
     * The HTML Element node representing the slider track.

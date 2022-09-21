@@ -10,10 +10,10 @@ Simple library for reading Adobe Glyph Bitmap Distribution font Data
 | ------------------ | :-------------: |
 | Full name          | bdfjs |
 | Keywords           | adobe, bdf, font, bitmap |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 727 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 63.333333333333336 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/zswang/bdfjs)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-root" : "2.1.0"
+      "is-root" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-root" : "2.1.0"
+      "is-root" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

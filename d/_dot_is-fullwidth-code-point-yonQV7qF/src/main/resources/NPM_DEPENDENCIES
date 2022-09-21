@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".is-fullwidth-code-point-yonQV7qF" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".is-fullwidth-code-point-yonQV7qF" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

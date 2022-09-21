@@ -1,5 +1,6 @@
 package typings.carbonComponentsReact.anon
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,14 @@ trait Label extends StObject {
   
   var id: String
   
-  var label: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/TreeView/TreeNode.TreeNodeStandaloneProps['label'] */ js.Any
+  var label: js.UndefOr[ReactNode] = js.undefined
   
-  var value: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/TreeView/TreeNode.TreeNodeStandaloneProps['value'] */ js.Any
+  var value: js.UndefOr[String] = js.undefined
 }
 object Label {
   
-  inline def apply(
-    id: String,
-    label: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/TreeView/TreeNode.TreeNodeStandaloneProps['label'] */ js.Any,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/TreeView/TreeNode.TreeNodeStandaloneProps['value'] */ js.Any
-  ): Label = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(id: String): Label = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Label]
   }
   
@@ -27,12 +24,12 @@ object Label {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabel(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/TreeView/TreeNode.TreeNodeStandaloneProps['label'] */ js.Any
-    ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setValue(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/TreeView/TreeNode.TreeNodeStandaloneProps['value'] */ js.Any
-    ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

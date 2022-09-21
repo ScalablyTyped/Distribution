@@ -21,6 +21,6 @@ object ASPxClientChartDesignerCustomizeMenuActionsEventArgs {
     
     inline def setActions(value: js.Array[ASPxClientChartDesignerMenuAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: ASPxClientChartDesignerMenuAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ASPxClientChartDesignerMenuAction*): Self = StObject.set(x, "actions", js.Array(value*))
   }
 }

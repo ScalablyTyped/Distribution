@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommonProps extends StObject {
+trait CommonProps[T] extends StObject {
   
   /**
     * Optional CSS class to attach to outermost <div> element.
@@ -21,7 +21,7 @@ trait CommonProps extends StObject {
   /**
     * Ref to attach to the inner container element. This is an advanced property.
     */
-  var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
+  var innerRef: js.UndefOr[Ref[Any]] = js.undefined
   
   /**
     * Tag name passed to document.createElement to create the inner container element. This is an advanced property; in most cases, the default ("div") should be used.
@@ -35,7 +35,7 @@ trait CommonProps extends StObject {
     *
     * Item data is useful for item renderers that are class components.
     */
-  var itemData: js.UndefOr[js.Any] = js.undefined
+  var itemData: js.UndefOr[T] = js.undefined
   
   /**
     * Tag name passed to document.createElement to create the outer container element. This is an advanced property; in most cases, the default ("div") should be used.
@@ -45,7 +45,7 @@ trait CommonProps extends StObject {
   /**
     * Ref to attach to the outer container element. This is an advanced property.
     */
-  var outerRef: js.UndefOr[Ref[js.Any]] = js.undefined
+  var outerRef: js.UndefOr[Ref[Any]] = js.undefined
   
   /**
     * Tag name passed to document.createElement to create the outer container element. This is an advanced property; in most cases, the default ("div") should be used.
@@ -68,12 +68,12 @@ trait CommonProps extends StObject {
 }
 object CommonProps {
   
-  inline def apply(): CommonProps = {
+  inline def apply[T](): CommonProps[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[CommonProps]
+    __obj.asInstanceOf[CommonProps[T]]
   }
   
-  extension [Self <: CommonProps](x: Self) {
+  extension [Self <: CommonProps[?], T](x: Self & CommonProps[T]) {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -83,9 +83,9 @@ object CommonProps {
     
     inline def setInnerElementTypeUndefined: Self = StObject.set(x, "innerElementType", js.undefined)
     
-    inline def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+    inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
     
-    inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+    inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
     
     inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
     
@@ -95,7 +95,7 @@ object CommonProps {
     
     inline def setInnerTagNameUndefined: Self = StObject.set(x, "innerTagName", js.undefined)
     
-    inline def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+    inline def setItemData(value: T): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     
     inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
     
@@ -103,9 +103,9 @@ object CommonProps {
     
     inline def setOuterElementTypeUndefined: Self = StObject.set(x, "outerElementType", js.undefined)
     
-    inline def setOuterRef(value: Ref[js.Any]): Self = StObject.set(x, "outerRef", value.asInstanceOf[js.Any])
+    inline def setOuterRef(value: Ref[Any]): Self = StObject.set(x, "outerRef", value.asInstanceOf[js.Any])
     
-    inline def setOuterRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "outerRef", js.Any.fromFunction1(value))
+    inline def setOuterRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "outerRef", js.Any.fromFunction1(value))
     
     inline def setOuterRefNull: Self = StObject.set(x, "outerRef", null)
     

@@ -1,6 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
+import typings.arcgisJsApi.arcgisJsApiStrings.above
 import typings.arcgisJsApi.arcgisJsApiStrings.all
+import typings.arcgisJsApi.arcgisJsApiStrings.below
 import typings.arcgisJsApi.arcgisJsApiStrings.height
 import typings.std.AbortSignal
 import typings.std.Object
@@ -16,16 +19,11 @@ trait sizeCreateVisualVariablesParams
   /**
     * When set to `all`, a single size variable that scales uniformly in all dimensions is generated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
-    */
-  var axis: js.UndefOr[all | height] = js.undefined
-  
-  /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
+    * @default all
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
+  var axis: js.UndefOr[all | height] = js.undefined
   
   /**
     * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization.
@@ -39,7 +37,7 @@ trait sizeCreateVisualVariablesParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * Provides options for setting a title to a field when an expression is provided instead of a field name.
@@ -112,7 +110,16 @@ trait sizeCreateVisualVariablesParams
   var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number.
+    * Sets the size stops based on meaningful data values.
+    *
+    * @default high-to-low
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
+    */
+  var theme: js.UndefOr[`high-to-low` | above | below] = js.undefined
+  
+  /**
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createVisualVariables)
     */
@@ -145,7 +152,7 @@ object sizeCreateVisualVariablesParams {
     constructor: js.Function,
     field: String,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean
   ): sizeCreateVisualVariablesParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
@@ -158,13 +165,9 @@ object sizeCreateVisualVariablesParams {
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
-    
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: sizeCreateVisualVariablesParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
@@ -205,6 +208,10 @@ object sizeCreateVisualVariablesParams {
     inline def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    
+    inline def setTheme(value: `high-to-low` | above | below): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     

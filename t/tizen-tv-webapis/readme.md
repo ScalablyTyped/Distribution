@@ -1,7 +1,7 @@
 
 # Scala.js typings for tizen-tv-webapis
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 This package is for supporting Samsung TV Product API as commonjs style
@@ -10,10 +10,10 @@ This package is for supporting Samsung TV Product API as commonjs style
 | ------------------ | :-------------: |
 | Full name          | tizen-tv-webapis |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 1106 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2462.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/tizen-tv-webapis)

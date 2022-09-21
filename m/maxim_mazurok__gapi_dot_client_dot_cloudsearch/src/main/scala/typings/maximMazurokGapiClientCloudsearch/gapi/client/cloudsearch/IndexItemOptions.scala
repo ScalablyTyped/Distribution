@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IndexItemOptions extends StObject {
   
-  /** Specifies if the index request should allow gsuite principals that do not exist or are deleted in the index request. */
+  /** Specifies if the index request should allow Google Workspace principals that do not exist or are deleted. */
   var allowUnknownGsuitePrincipals: js.UndefOr[Boolean] = js.undefined
 }
 object IndexItemOptions {

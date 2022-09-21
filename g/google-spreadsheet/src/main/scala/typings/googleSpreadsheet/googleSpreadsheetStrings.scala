@@ -86,13 +86,13 @@ object googleSpreadsheetStrings {
   sealed trait COLUMN
     extends StObject
        with DeveloperMetadataLocationType
-       with WorksheetDimension
   inline def COLUMN: COLUMN = "COLUMN".asInstanceOf[COLUMN]
   
   @js.native
   sealed trait COLUMNS
     extends StObject
        with Dimension
+       with WorksheetDimension
   inline def COLUMNS: COLUMNS = "COLUMNS".asInstanceOf[COLUMNS]
   
   @js.native
@@ -297,13 +297,13 @@ object googleSpreadsheetStrings {
   sealed trait ROW
     extends StObject
        with DeveloperMetadataLocationType
-       with WorksheetDimension
   inline def ROW: ROW = "ROW".asInstanceOf[ROW]
   
   @js.native
   sealed trait ROWS
     extends StObject
        with Dimension
+       with WorksheetDimension
   inline def ROWS: ROWS = "ROWS".asInstanceOf[ROWS]
   
   @js.native

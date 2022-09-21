@@ -2,7 +2,6 @@ package typings.javascriptStringify
 
 import typings.javascriptStringify.typesMod.Next
 import typings.std.PropertyKey
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object quoteMod {
   
   @JSImport("javascript-stringify/dist/quote", "IS_VALID_IDENTIFIER")
   @js.native
-  val IS_VALID_IDENTIFIER: RegExp = js.native
+  val IS_VALID_IDENTIFIER: js.RegExp = js.native
   
   inline def isValidVariableName(name: PropertyKey): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidVariableName")(name.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   

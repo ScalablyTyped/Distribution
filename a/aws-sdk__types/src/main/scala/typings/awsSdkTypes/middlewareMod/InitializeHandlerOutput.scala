@@ -13,7 +13,7 @@ trait InitializeHandlerOutput[Output /* <: js.Object */]
 }
 object InitializeHandlerOutput {
   
-  inline def apply[Output /* <: js.Object */](output: Output, response: js.Any): InitializeHandlerOutput[Output] = {
+  inline def apply[Output /* <: js.Object */](output: Output, response: Any): InitializeHandlerOutput[Output] = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializeHandlerOutput[Output]]
   }

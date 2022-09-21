@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(): Emitter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Emitter]
-  inline def apply(obj: js.Any): Emitter = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Emitter]
+  inline def apply(obj: Any): Emitter = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Emitter]
   
   @JSImport("event-emitter", JSImport.Namespace)
   @js.native
@@ -15,7 +15,7 @@ object mod {
   
   trait Emitter extends StObject {
     
-    def emit(`type`: String, args: js.Any*): Unit
+    def emit(`type`: String, args: Any*): Unit
     
     def off(`type`: String, listener: EventListener): Unit
     @JSName("off")
@@ -32,7 +32,7 @@ object mod {
   object Emitter {
     
     inline def apply(
-      emit: (String, /* repeated */ js.Any) => Unit,
+      emit: (String, /* repeated */ Any) => Unit,
       off: (/* type */ String, /* listener */ EventListener) => Unit,
       on: (/* type */ String, /* listener */ EventListener) => Unit,
       once: (/* type */ String, /* listener */ EventListener) => Unit
@@ -43,7 +43,7 @@ object mod {
     
     extension [Self <: Emitter](x: Self) {
       
-      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       inline def setOff(value: (/* type */ String, /* listener */ EventListener) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
@@ -58,6 +58,6 @@ object mod {
   @js.native
   trait EventListener extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
 }

@@ -1,7 +1,5 @@
 package typings.wonderJs
 
-import typings.std.Uint16Array
-import typings.std.Uint32Array
 import typings.wonderJs.commonBufferMod.CommonBuffer
 import typings.wonderJs.ebuffertypeMod.EBufferType
 import typings.wonderJs.ebufferusageMod.EBufferUsage
@@ -13,12 +11,12 @@ object elementBufferMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/buffer/ElementBuffer", "ElementBuffer")
   @js.native
-  class ElementBuffer () extends CommonBuffer {
+  open class ElementBuffer () extends CommonBuffer {
     
     @JSName("data")
-    var data_ElementBuffer: Uint16Array | Uint32Array = js.native
+    var data_ElementBuffer: js.typedarray.Uint16Array | js.typedarray.Uint32Array = js.native
     
-    def initWhenCreate(data: js.Array[Double], `type`: EBufferType, usage: EBufferUsage): js.Any = js.native
+    def initWhenCreate(data: js.Array[Double], `type`: EBufferType, usage: EBufferUsage): Any = js.native
     
     def resetData(data: js.Array[Double]): this.type = js.native
     def resetData(data: js.Array[Double], `type`: Unit, offset: Double): this.type = js.native

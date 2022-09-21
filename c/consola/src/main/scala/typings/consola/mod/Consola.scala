@@ -1,13 +1,13 @@
 package typings.consola.mod
 
-import typings.node.NodeJS.WritableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("consola", "Consola")
 @js.native
-class Consola protected () extends StObject {
+open class Consola protected () extends StObject {
   def this(options: ConsolaOptions) = this()
   
   // Reporter
@@ -19,36 +19,36 @@ class Consola protected () extends StObject {
   // Create
   def create(options: ConsolaOptions): Consola = js.native
   
-  def debug(message: js.Any, args: js.Any*): Unit = js.native
-  def debug(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def debug(message: Any, args: Any*): Unit = js.native
+  def debug(message: ConsolaLogObject, args: Any*): Unit = js.native
   
-  def error(message: js.Any, args: js.Any*): Unit = js.native
-  def error(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def error(message: Any, args: Any*): Unit = js.native
+  def error(message: ConsolaLogObject, args: Any*): Unit = js.native
   
-  def fatal(message: js.Any, args: js.Any*): Unit = js.native
+  def fatal(message: Any, args: Any*): Unit = js.native
   // Built-in log levels
-  def fatal(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def fatal(message: ConsolaLogObject, args: Any*): Unit = js.native
   
-  def info(message: js.Any, args: js.Any*): Unit = js.native
-  def info(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def info(message: Any, args: Any*): Unit = js.native
+  def info(message: ConsolaLogObject, args: Any*): Unit = js.native
   
   var level: LogLevel = js.native
   
-  def log(message: js.Any, args: js.Any*): Unit = js.native
-  def log(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def log(message: Any, args: Any*): Unit = js.native
+  def log(message: ConsolaLogObject, args: Any*): Unit = js.native
   
-  def mock(mockFn: ConsolaMockFn): js.Any = js.native
+  def mock(mockFn: ConsolaMockFn): Any = js.native
   
   // Mock
-  def mockTypes(mockFn: ConsolaMockFn): js.Any = js.native
+  def mockTypes(mockFn: ConsolaMockFn): Any = js.native
   
   def pause(): Unit = js.native
   
   // Pause/Resume
   def pauseLogs(): Unit = js.native
   
-  def ready(message: js.Any, args: js.Any*): Unit = js.native
-  def ready(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def ready(message: Any, args: Any*): Unit = js.native
+  def ready(message: ConsolaLogObject, args: Any*): Unit = js.native
   
   def remove(): Consola = js.native
   def remove(reporter: ConsolaReporter): Consola = js.native
@@ -68,21 +68,21 @@ class Consola protected () extends StObject {
   
   def setReporters(reporters: js.Array[ConsolaReporter]): Consola = js.native
   
-  def start(message: js.Any, args: js.Any*): Unit = js.native
-  def start(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def start(message: Any, args: Any*): Unit = js.native
+  def start(message: ConsolaLogObject, args: Any*): Unit = js.native
   
-  val stderr: WritableStream = js.native
+  val stderr: WritableStream[Any] = js.native
   
-  val stdout: WritableStream = js.native
+  val stdout: WritableStream[Any] = js.native
   
-  def success(message: js.Any, args: js.Any*): Unit = js.native
-  def success(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def success(message: Any, args: Any*): Unit = js.native
+  def success(message: ConsolaLogObject, args: Any*): Unit = js.native
   
-  def trace(message: js.Any, args: js.Any*): Unit = js.native
-  def trace(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def trace(message: Any, args: Any*): Unit = js.native
+  def trace(message: ConsolaLogObject, args: Any*): Unit = js.native
   
-  def warn(message: js.Any, args: js.Any*): Unit = js.native
-  def warn(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def warn(message: Any, args: Any*): Unit = js.native
+  def warn(message: ConsolaLogObject, args: Any*): Unit = js.native
   
   def withDefaults(defaults: ConsolaLogObject): Consola = js.native
   

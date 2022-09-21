@@ -1,6 +1,7 @@
 package typings.eggLogger
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.eggLogger.anon.CustomLogger
 import typings.eggLogger.anon.Excludes
 import typings.eggLogger.eggLoggerStrings.duplicate
 import typings.eggLogger.eggLoggerStrings.ignore
@@ -14,49 +15,49 @@ object mod {
   
   @JSImport("egg-logger", "ConsoleTransport")
   @js.native
-  class ConsoleTransport () extends Transport[ConsoleTransportOptions] {
+  open class ConsoleTransport () extends Transport[ConsoleTransportOptions] {
     def this(options: ConsoleTransportOptions) = this()
   }
   
   @JSImport("egg-logger", "EggConsoleLogger")
   @js.native
-  class EggConsoleLogger protected () extends Logger[LoggerOptions] {
+  open class EggConsoleLogger protected () extends Logger[LoggerOptions] {
     def this(options: LoggerOptions) = this()
   }
   
   @JSImport("egg-logger", "EggContextLogger")
   @js.native
-  class EggContextLogger protected () extends StObject {
-    def this(ctx: js.Any, logger: Logger[LoggerOptions]) = this()
+  open class EggContextLogger protected () extends StObject {
+    def this(ctx: Any, logger: Logger[LoggerOptions]) = this()
     
-    def debug(msg: js.Any, args: js.Any*): Unit = js.native
+    def debug(msg: Any, args: Any*): Unit = js.native
     
-    def error(msg: js.Any, args: js.Any*): Unit = js.native
+    def error(msg: Any, args: Any*): Unit = js.native
     
-    def info(msg: js.Any, args: js.Any*): Unit = js.native
+    def info(msg: Any, args: Any*): Unit = js.native
     
     val paddingMessage: String = js.native
     
-    def warn(msg: js.Any, args: js.Any*): Unit = js.native
+    def warn(msg: Any, args: Any*): Unit = js.native
     
     def write(msg: String): Unit = js.native
   }
   
   @JSImport("egg-logger", "EggCustomLogger")
   @js.native
-  class EggCustomLogger protected () extends Logger[LoggerOptions] {
+  open class EggCustomLogger protected () extends Logger[LoggerOptions] {
     def this(options: LoggerOptions) = this()
   }
   
   @JSImport("egg-logger", "EggErrorLogger")
   @js.native
-  class EggErrorLogger protected () extends Logger[LoggerOptions] {
+  open class EggErrorLogger protected () extends Logger[LoggerOptions] {
     def this(options: LoggerOptions) = this()
   }
   
   @JSImport("egg-logger", "EggLogger")
   @js.native
-  class EggLogger protected () extends Logger[EggLoggerOptions] {
+  open class EggLogger protected () extends Logger[EggLoggerOptions] {
     def this(options: EggLoggerOptions) = this()
     
     var consoleLevel: LoggerLevel = js.native
@@ -66,11 +67,11 @@ object mod {
   
   @JSImport("egg-logger", "EggLoggers")
   @js.native
-  class EggLoggers protected ()
+  open class EggLoggers protected ()
     extends StObject
        with Map[String, Logger[LoggerOptions]]
-       with /* key */ StringDictionary[js.Any] {
-    def this(options: EggLoggersOptions) = this()
+       with /* key */ StringDictionary[Any] {
+    def this(options: CustomLogger) = this()
     
     /**
       * Disable console logger
@@ -85,7 +86,7 @@ object mod {
   
   @JSImport("egg-logger", "FileBufferTransport")
   @js.native
-  class FileBufferTransport () extends Transport[FileBufferTransportOptions] {
+  open class FileBufferTransport () extends Transport[FileBufferTransportOptions] {
     def this(options: FileBufferTransportOptions) = this()
     
     def flush(): Unit = js.native
@@ -93,13 +94,13 @@ object mod {
   
   @JSImport("egg-logger", "FileTransport")
   @js.native
-  class FileTransport () extends Transport[FileTransportOptions] {
+  open class FileTransport () extends Transport[FileTransportOptions] {
     def this(options: FileTransportOptions) = this()
   }
   
   @JSImport("egg-logger", "Logger")
   @js.native
-  class Logger[T /* <: LoggerOptions */] protected ()
+  open class Logger[T /* <: LoggerOptions */] protected ()
     extends StObject
        with Map[String, Transport[TransportOptions]] {
     def this(options: T) = this()
@@ -109,7 +110,7 @@ object mod {
       */
     def close(): Unit = js.native
     
-    def debug(msg: js.Any, args: js.Any*): Unit = js.native
+    def debug(msg: Any, args: Any*): Unit = js.native
     
     /**
       * disable a transport
@@ -132,9 +133,9 @@ object mod {
       */
     def enable(name: String): Unit = js.native
     
-    def error(msg: js.Any, args: js.Any*): Unit = js.native
+    def error(msg: Any, args: Any*): Unit = js.native
     
-    def info(msg: js.Any, args: js.Any*): Unit = js.native
+    def info(msg: Any, args: Any*): Unit = js.native
     
     /**
       * Send log to all transports.
@@ -143,7 +144,7 @@ object mod {
       * @param {Array} args - log arguments
       * @param {Object} meta - log meta
       */
-    def log(level: LoggerLevel, args: js.Array[js.Any], meta: js.Object): Unit = js.native
+    def log(level: LoggerLevel, args: js.Array[Any], meta: js.Object): Unit = js.native
     
     /**
       * Redirect specify level log to the other logger
@@ -169,7 +170,7 @@ object mod {
       */
     def unredirect(level: LoggerLevel): Unit = js.native
     
-    def warn(msg: js.Any, args: js.Any*): Unit = js.native
+    def warn(msg: Any, args: Any*): Unit = js.native
     
     /**
       * write raw log to all transports
@@ -180,7 +181,7 @@ object mod {
   
   @JSImport("egg-logger", "Transport")
   @js.native
-  class Transport[T /* <: TransportOptions */] () extends StObject {
+  open class Transport[T /* <: TransportOptions */] () extends StObject {
     def this(options: T) = this()
     
     def close(): Unit = js.native
@@ -193,7 +194,7 @@ object mod {
     
     var level: LoggerLevel = js.native
     
-    def log(level: LoggerLevel, args: js.Array[js.Any], meta: js.Object): Unit = js.native
+    def log(level: LoggerLevel, args: js.Array[Any], meta: js.Object): Unit = js.native
     
     def reload(): Unit = js.native
     
@@ -224,6 +225,9 @@ object mod {
       inline def setStderrLevelUndefined: Self = StObject.set(x, "stderrLevel", js.undefined)
     }
   }
+  
+  type EggCustomLoggerOptions = // custom logger name
+  StringDictionary[EggLoggerOptions]
   
   trait EggLoggerOptions
     extends StObject

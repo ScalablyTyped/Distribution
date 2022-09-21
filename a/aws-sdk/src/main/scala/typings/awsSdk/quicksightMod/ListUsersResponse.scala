@@ -12,7 +12,7 @@ trait ListUsersResponse extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -51,6 +51,6 @@ object ListUsersResponse {
     
     inline def setUserListUndefined: Self = StObject.set(x, "UserList", js.undefined)
     
-    inline def setUserListVarargs(value: User*): Self = StObject.set(x, "UserList", js.Array(value :_*))
+    inline def setUserListVarargs(value: User*): Self = StObject.set(x, "UserList", js.Array(value*))
   }
 }

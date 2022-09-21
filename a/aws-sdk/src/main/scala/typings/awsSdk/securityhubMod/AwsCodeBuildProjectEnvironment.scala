@@ -12,9 +12,19 @@ trait AwsCodeBuildProjectEnvironment extends StObject {
   var Certificate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The type of credentials AWS CodeBuild uses to pull images in your build. Valid values:    CODEBUILD specifies that AWS CodeBuild uses its own credentials. This requires that you modify your ECR repository policy to trust the AWS CodeBuild service principal.    SERVICE_ROLE specifies that AWS CodeBuild uses your build project's service role.   When you use a cross-account or private registry image, you must use SERVICE_ROLE credentials. When you use an AWS CodeBuild curated image, you must use CODEBUILD credentials.
+    * A set of environment variables to make available to builds for the build project.
+    */
+  var EnvironmentVariables: js.UndefOr[AwsCodeBuildProjectEnvironmentEnvironmentVariablesList] = js.undefined
+  
+  /**
+    * The type of credentials CodeBuild uses to pull images in your build. Valid values:    CODEBUILD specifies that CodeBuild uses its own credentials. This requires that you modify your ECR repository policy to trust the CodeBuild service principal.    SERVICE_ROLE specifies that CodeBuild uses your build project's service role.   When you use a cross-account or private registry image, you must use SERVICE_ROLE credentials. When you use an CodeBuild curated image, you must use CODEBUILD credentials.
     */
   var ImagePullCredentialsType: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
+    * Whether to allow the Docker daemon to run inside a Docker container. Set to true if the build project is used to build Docker images.
+    */
+  var PrivilegedMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The credentials for access to a private registry.
@@ -39,9 +49,19 @@ object AwsCodeBuildProjectEnvironment {
     
     inline def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
+    inline def setEnvironmentVariables(value: AwsCodeBuildProjectEnvironmentEnvironmentVariablesList): Self = StObject.set(x, "EnvironmentVariables", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "EnvironmentVariables", js.undefined)
+    
+    inline def setEnvironmentVariablesVarargs(value: AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails*): Self = StObject.set(x, "EnvironmentVariables", js.Array(value*))
+    
     inline def setImagePullCredentialsType(value: NonEmptyString): Self = StObject.set(x, "ImagePullCredentialsType", value.asInstanceOf[js.Any])
     
     inline def setImagePullCredentialsTypeUndefined: Self = StObject.set(x, "ImagePullCredentialsType", js.undefined)
+    
+    inline def setPrivilegedMode(value: Boolean): Self = StObject.set(x, "PrivilegedMode", value.asInstanceOf[js.Any])
+    
+    inline def setPrivilegedModeUndefined: Self = StObject.set(x, "PrivilegedMode", js.undefined)
     
     inline def setRegistryCredential(value: AwsCodeBuildProjectEnvironmentRegistryCredential): Self = StObject.set(x, "RegistryCredential", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,7 @@ object commandlinkerMod {
   
   @JSImport("@jupyterlab/apputils/lib/commandlinker", "CommandLinker")
   @js.native
-  class CommandLinker protected ()
+  open class CommandLinker protected ()
     extends StObject
        with IDisposable {
     /**
@@ -23,15 +23,15 @@ object commandlinkerMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _commands: js.Any = js.native
+    /* private */ var _commands: Any = js.native
     
     /**
       * The global click handler that deploys commands/argument pairs that are
       * attached to the node being clicked.
       */
-    /* private */ var _evtClick: js.Any = js.native
+    /* private */ var _evtClick: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     /**
       * Connect a command/argument pair to a given node so that when it is clicked,

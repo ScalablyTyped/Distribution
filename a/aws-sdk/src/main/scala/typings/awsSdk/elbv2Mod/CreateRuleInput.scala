@@ -42,11 +42,11 @@ object CreateRuleInput {
     
     inline def setActions(value: Actions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setConditions(value: RuleConditionList): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     
-    inline def setConditionsVarargs(value: RuleCondition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: RuleCondition*): Self = StObject.set(x, "Conditions", js.Array(value*))
     
     inline def setListenerArn(value: ListenerArn): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
     
@@ -56,6 +56,6 @@ object CreateRuleInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -52,7 +52,7 @@ object anon {
        with Instantiable1[
           /* resolver */ js.Function2[
             /* resolvePromise */ js.Function1[/* value */ T, Unit], 
-            /* rejectPromise */ js.Function1[/* reason */ js.Any, Unit], 
+            /* rejectPromise */ js.Function1[/* reason */ Any, Unit], 
             Unit
           ], 
           TPromise
@@ -64,7 +64,7 @@ object anon {
        with Instantiable1[
           /* resolver */ js.Function2[
             /* resolvePromise */ js.Function1[/* value */ T, Unit], 
-            /* rejectPromise */ js.Function1[/* reason */ js.Any, Unit], 
+            /* rejectPromise */ js.Function1[/* reason */ Any, Unit], 
             Unit
           ], 
           IPromise[T]

@@ -10,41 +10,43 @@ object detailsColumnBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsColumn.base", "DetailsColumnBase")
   @js.native
-  class DetailsColumnBase protected ()
-    extends Component[IDetailsColumnProps, js.Object, js.Any] {
+  open class DetailsColumnBase protected ()
+    extends Component[IDetailsColumnProps, js.Object, Any] {
     def this(props: IDetailsColumnProps) = this()
     
-    /* private */ var _addDragDropHandling: js.Any = js.native
+    /* private */ var _addDragDropHandling: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _dragDropSubscription: js.Any = js.native
+    /* private */ var _dragDropSubscription: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _getColumnDragDropOptions: js.Any = js.native
+    /* private */ var _getColumnDragDropOptions: Any = js.native
     
-    /* private */ var _hasAccessibleLabel: js.Any = js.native
+    /* private */ var _hasAccessibleLabel: Any = js.native
     
-    /* private */ var _onColumnClick: js.Any = js.native
+    /* private */ var _onColumnClick: Any = js.native
     
-    /* private */ var _onColumnContextMenu: js.Any = js.native
+    /* private */ var _onColumnContextMenu: Any = js.native
     
-    /* private */ var _onDragEnd: js.Any = js.native
+    /* private */ var _onDragEnd: Any = js.native
     
-    /* private */ var _onDragStart: js.Any = js.native
+    /* private */ var _onDragStart: Any = js.native
     
-    /* private */ var _onRenderColumnHeaderTooltip: js.Any = js.native
+    /* private */ var _onRenderColumnHeaderTooltip: Any = js.native
     
-    /* private */ var _onRootMouseDown: js.Any = js.native
+    /* private */ var _onRenderFilterIcon: Any = js.native
     
-    /* private */ var _renderAccessibleLabel: js.Any = js.native
+    /* private */ var _onRootMouseDown: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _renderAccessibleLabel: Any = js.native
     
-    /* private */ var _updateHeaderDragInfo: js.Any = js.native
+    /* private */ var _root: Any = js.native
+    
+    /* private */ var _updateHeaderDragInfo: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDetailsColumnBase(): Unit = js.native

@@ -8,5 +8,5 @@ object sendMessagesMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/SendMessages", "SendMessages")
   @js.native
-  val SendMessages: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val SendMessages: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

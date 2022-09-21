@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AdminQuotaPolicy extends StObject {
   
-  /** The cloud resource container at which the quota policy is created. The format is {container_type}/{container_number} */
+  /** The cloud resource container at which the quota policy is created. The format is `{container_type}/{container_number}` */
   var container: js.UndefOr[String] = js.undefined
   
   /**
     * If this map is nonempty, then this policy applies only to specific values for dimensions defined in the limit unit. For example, an policy on a limit with the unit
-    * 1/{project}/{region} could contain an entry with the key "region" and the value "us-east-1"; the policy is only applied to quota consumed in that region. This map has the following
-    * restrictions: * If "region" appears as a key, its value must be a valid Cloud region. * If "zone" appears as a key, its value must be a valid Cloud zone. * Keys other than "region"
-    * or "zone" are not valid.
+    * `1/{project}/{region}` could contain an entry with the key `region` and the value `us-east-1`; the policy is only applied to quota consumed in that region. This map has the
+    * following restrictions: * If `region` appears as a key, its value must be a valid Cloud region. * If `zone` appears as a key, its value must be a valid Cloud zone. * Keys other than
+    * `region` or `zone` are not valid.
     */
   var dimensions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServiceusage.maximMazurokGapiClientServiceusageStrings.AdminQuotaPolicy & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServiceusage.maximMazurokGapiClientServiceusageStrings.AdminQuotaPolicy & TopLevel[Any]
   ] = js.undefined
   
   /** The name of the metric to which this policy applies. An example name would be: `compute.googleapis.com/cpus` */
@@ -56,7 +56,7 @@ object AdminQuotaPolicy {
     inline def setDimensions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServiceusage.maximMazurokGapiClientServiceusageStrings.AdminQuotaPolicy & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServiceusage.maximMazurokGapiClientServiceusageStrings.AdminQuotaPolicy & TopLevel[Any]
     ): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)

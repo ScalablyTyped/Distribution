@@ -13,7 +13,7 @@ trait ParsedTsconfig extends StObject {
   
   var options: js.UndefOr[CompilerOptions] = js.undefined
   
-  var raw: js.Any
+  var raw: Any
   
   var typeAcquisition: js.UndefOr[TypeAcquisition] = js.undefined
   
@@ -21,7 +21,7 @@ trait ParsedTsconfig extends StObject {
 }
 object ParsedTsconfig {
   
-  inline def apply(raw: js.Any): ParsedTsconfig = {
+  inline def apply(raw: Any): ParsedTsconfig = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedTsconfig]
   }
@@ -36,7 +36,7 @@ object ParsedTsconfig {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     inline def setTypeAcquisition(value: TypeAcquisition): Self = StObject.set(x, "typeAcquisition", value.asInstanceOf[js.Any])
     

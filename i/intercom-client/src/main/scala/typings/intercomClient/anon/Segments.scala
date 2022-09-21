@@ -24,7 +24,7 @@ object Segments {
     
     inline def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setType(value: segmentDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

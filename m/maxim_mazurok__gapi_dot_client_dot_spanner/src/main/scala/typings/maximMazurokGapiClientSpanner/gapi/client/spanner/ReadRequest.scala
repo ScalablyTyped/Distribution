@@ -32,6 +32,9 @@ trait ReadRequest extends StObject {
     */
   var partitionToken: js.UndefOr[String] = js.undefined
   
+  /** Common options for this request. */
+  var requestOptions: js.UndefOr[RequestOptions] = js.undefined
+  
   /**
     * If this request is resuming a previously interrupted read, `resume_token` should be copied from the last PartialResultSet yielded before the interruption. Doing this enables the new
     * read to resume where the last read left off. The rest of the request parameters must exactly match the request that yielded this token.
@@ -57,7 +60,7 @@ object ReadRequest {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -74,6 +77,10 @@ object ReadRequest {
     inline def setPartitionToken(value: String): Self = StObject.set(x, "partitionToken", value.asInstanceOf[js.Any])
     
     inline def setPartitionTokenUndefined: Self = StObject.set(x, "partitionToken", js.undefined)
+    
+    inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     
     inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     

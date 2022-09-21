@@ -40,19 +40,19 @@ object HardwareStatus {
     
     inline def setBatteryTemperaturesUndefined: Self = StObject.set(x, "batteryTemperatures", js.undefined)
     
-    inline def setBatteryTemperaturesVarargs(value: Double*): Self = StObject.set(x, "batteryTemperatures", js.Array(value :_*))
+    inline def setBatteryTemperaturesVarargs(value: Double*): Self = StObject.set(x, "batteryTemperatures", js.Array(value*))
     
     inline def setCpuTemperatures(value: js.Array[Double]): Self = StObject.set(x, "cpuTemperatures", value.asInstanceOf[js.Any])
     
     inline def setCpuTemperaturesUndefined: Self = StObject.set(x, "cpuTemperatures", js.undefined)
     
-    inline def setCpuTemperaturesVarargs(value: Double*): Self = StObject.set(x, "cpuTemperatures", js.Array(value :_*))
+    inline def setCpuTemperaturesVarargs(value: Double*): Self = StObject.set(x, "cpuTemperatures", js.Array(value*))
     
     inline def setCpuUsages(value: js.Array[Double]): Self = StObject.set(x, "cpuUsages", value.asInstanceOf[js.Any])
     
     inline def setCpuUsagesUndefined: Self = StObject.set(x, "cpuUsages", js.undefined)
     
-    inline def setCpuUsagesVarargs(value: Double*): Self = StObject.set(x, "cpuUsages", js.Array(value :_*))
+    inline def setCpuUsagesVarargs(value: Double*): Self = StObject.set(x, "cpuUsages", js.Array(value*))
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
@@ -62,18 +62,18 @@ object HardwareStatus {
     
     inline def setFanSpeedsUndefined: Self = StObject.set(x, "fanSpeeds", js.undefined)
     
-    inline def setFanSpeedsVarargs(value: Double*): Self = StObject.set(x, "fanSpeeds", js.Array(value :_*))
+    inline def setFanSpeedsVarargs(value: Double*): Self = StObject.set(x, "fanSpeeds", js.Array(value*))
     
     inline def setGpuTemperatures(value: js.Array[Double]): Self = StObject.set(x, "gpuTemperatures", value.asInstanceOf[js.Any])
     
     inline def setGpuTemperaturesUndefined: Self = StObject.set(x, "gpuTemperatures", js.undefined)
     
-    inline def setGpuTemperaturesVarargs(value: Double*): Self = StObject.set(x, "gpuTemperatures", js.Array(value :_*))
+    inline def setGpuTemperaturesVarargs(value: Double*): Self = StObject.set(x, "gpuTemperatures", js.Array(value*))
     
     inline def setSkinTemperatures(value: js.Array[Double]): Self = StObject.set(x, "skinTemperatures", value.asInstanceOf[js.Any])
     
     inline def setSkinTemperaturesUndefined: Self = StObject.set(x, "skinTemperatures", js.undefined)
     
-    inline def setSkinTemperaturesVarargs(value: Double*): Self = StObject.set(x, "skinTemperatures", js.Array(value :_*))
+    inline def setSkinTemperaturesVarargs(value: Double*): Self = StObject.set(x, "skinTemperatures", js.Array(value*))
   }
 }

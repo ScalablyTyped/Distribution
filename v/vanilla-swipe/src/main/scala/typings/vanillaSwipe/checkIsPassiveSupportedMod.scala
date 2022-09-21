@@ -10,8 +10,8 @@ object checkIsPassiveSupportedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkIsPassiveSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsPassiveSupported")().asInstanceOf[Boolean]
-  inline def checkIsPassiveSupported(isPassiveSupported: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsPassiveSupported")(isPassiveSupported.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def checkIsPassiveSupported(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsPassiveSupported")().asInstanceOf[js.UndefOr[Boolean]]
+  inline def checkIsPassiveSupported(isPassiveSupported: Boolean): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsPassiveSupported")(isPassiveSupported.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
   
   inline def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
 }

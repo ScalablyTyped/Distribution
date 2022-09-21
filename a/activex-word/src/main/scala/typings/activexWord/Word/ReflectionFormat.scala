@@ -15,7 +15,7 @@ trait ReflectionFormat extends StObject {
   
   var Offset: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Size: Double
   
@@ -33,7 +33,7 @@ object ReflectionFormat {
     Blur: Double,
     Creator: Double,
     Offset: Double,
-    Parent: js.Any,
+    Parent: Any,
     Size: Double,
     Transparency: Double,
     Type: MsoReflectionType,
@@ -54,7 +54,7 @@ object ReflectionFormat {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     

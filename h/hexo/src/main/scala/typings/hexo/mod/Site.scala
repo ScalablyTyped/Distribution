@@ -12,7 +12,7 @@ trait Site extends StObject {
   
   var categories: Model[Category]
   
-  var data: StringDictionary[js.Any]
+  var data: StringDictionary[Any]
   
   var pages: Model[Page]
   
@@ -24,7 +24,7 @@ object Site {
   
   inline def apply(
     categories: Model[Category],
-    data: StringDictionary[js.Any],
+    data: StringDictionary[Any],
     pages: Model[Page],
     posts: Model[typings.hexo.mod.Locals.Post],
     tags: Model[Tag]
@@ -37,7 +37,7 @@ object Site {
     
     inline def setCategories(value: Model[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setPages(value: Model[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     

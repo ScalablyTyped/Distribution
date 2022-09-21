@@ -10,7 +10,7 @@ object reciprocalBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/reciprocalBlock", "ReciprocalBlock")
   @js.native
-  class ReciprocalBlock protected () extends NodeMaterialBlock {
+  open class ReciprocalBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new ReciprocalBlock
       * @param name defines the block name

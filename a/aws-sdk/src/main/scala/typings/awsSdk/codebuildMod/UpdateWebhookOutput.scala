@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateWebhookOutput extends StObject {
   
   /**
-    *  Information about a repository's webhook that is associated with a project in AWS CodeBuild. 
+    *  Information about a repository's webhook that is associated with a project in CodeBuild. 
     */
   var webhook: js.UndefOr[Webhook] = js.undefined
 }

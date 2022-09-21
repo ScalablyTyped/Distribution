@@ -27,14 +27,14 @@ trait ContactAnnotationList extends StObject {
     * Asynchronously gets the list of ContactAnnotation objects.
     * @return The list of ContactAnnotation objects.
     */
-  def findAnnotationsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+  def findAnnotationsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
   
   /**
     * Gets the list of ContactAnnotation objects containing the specified remote ID property.
     * @param remoteId The remote ID used to find the ContactAnnotation objects.
     * @return The list of ContactAnnotation objects containing the specified remote ID property.
     */
-  def findAnnotationsByRemoteIdAsync(remoteId: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+  def findAnnotationsByRemoteIdAsync(remoteId: String): IPromiseWithIAsyncOperation[IVectorView[Any]]
   
   /**
     * Gets the ContactAnnotation with the specified Id .
@@ -64,8 +64,8 @@ object ContactAnnotationList {
   inline def apply(
     deleteAnnotationAsync: ContactAnnotation => IPromiseWithIAsyncAction,
     deleteAsync: () => IPromiseWithIAsyncAction,
-    findAnnotationsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
-    findAnnotationsByRemoteIdAsync: String => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
+    findAnnotationsAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]],
+    findAnnotationsByRemoteIdAsync: String => IPromiseWithIAsyncOperation[IVectorView[Any]],
     getAnnotationAsync: String => IPromiseWithIAsyncOperation[ContactAnnotation],
     id: String,
     providerPackageFamilyName: String,
@@ -82,9 +82,9 @@ object ContactAnnotationList {
     
     inline def setDeleteAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteAsync", js.Any.fromFunction0(value))
     
-    inline def setFindAnnotationsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAnnotationsAsync", js.Any.fromFunction0(value))
+    inline def setFindAnnotationsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "findAnnotationsAsync", js.Any.fromFunction0(value))
     
-    inline def setFindAnnotationsByRemoteIdAsync(value: String => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAnnotationsByRemoteIdAsync", js.Any.fromFunction1(value))
+    inline def setFindAnnotationsByRemoteIdAsync(value: String => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "findAnnotationsByRemoteIdAsync", js.Any.fromFunction1(value))
     
     inline def setGetAnnotationAsync(value: String => IPromiseWithIAsyncOperation[ContactAnnotation]): Self = StObject.set(x, "getAnnotationAsync", js.Any.fromFunction1(value))
     

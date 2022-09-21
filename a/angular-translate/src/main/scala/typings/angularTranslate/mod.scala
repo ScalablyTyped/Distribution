@@ -114,7 +114,10 @@ object mod extends Shortcut {
         extends StObject
            with IServiceProvider {
         
-        def addInterpolation(factory: js.Any): ITranslateProvider = js.native
+        def addInterpolation(factory: Any): ITranslateProvider = js.native
+        
+        def allowNamespaces(): Boolean = js.native
+        def allowNamespaces(namespacesEnabled: Boolean): ITranslateProvider = js.native
         
         def cloakClassName(): String = js.native
         def cloakClassName(name: String): ITranslateProvider = js.native
@@ -170,10 +173,10 @@ object mod extends Shortcut {
         def useInterpolation(factory: String): ITranslateProvider = js.native
         
         def useLoader(loaderFactory: String): ITranslateProvider = js.native
-        def useLoader(loaderFactory: String, options: js.Any): ITranslateProvider = js.native
+        def useLoader(loaderFactory: String, options: Any): ITranslateProvider = js.native
         
         def useLoaderCache(): ITranslateProvider = js.native
-        def useLoaderCache(cache: js.Any): ITranslateProvider = js.native
+        def useLoaderCache(cache: Any): ITranslateProvider = js.native
         
         def useLocalStorage(): ITranslateProvider = js.native
         
@@ -190,7 +193,7 @@ object mod extends Shortcut {
         def useStaticFilesLoader(options: Files): ITranslateProvider = js.native
         def useStaticFilesLoader(options: IStaticFilesLoaderOptions): ITranslateProvider = js.native
         
-        def useStorage(storageFactory: js.Any): ITranslateProvider = js.native
+        def useStorage(storageFactory: Any): ITranslateProvider = js.native
         
         def useUrlLoader(url: String): ITranslateProvider = js.native
       }
@@ -199,24 +202,24 @@ object mod extends Shortcut {
       trait ITranslateService extends StObject {
         
         def apply(translationId: String): IPromise[String] = js.native
-        def apply(translationId: String, interpolateParams: js.Any): IPromise[String] = js.native
-        def apply(translationId: String, interpolateParams: js.Any, interpolationId: String): IPromise[String] = js.native
+        def apply(translationId: String, interpolateParams: Any): IPromise[String] = js.native
+        def apply(translationId: String, interpolateParams: Any, interpolationId: String): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: String
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: String,
           forceLanguage: String
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: String,
           forceLanguage: String,
@@ -224,7 +227,7 @@ object mod extends Shortcut {
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: String,
           forceLanguage: Unit,
@@ -232,14 +235,14 @@ object mod extends Shortcut {
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: Unit,
           forceLanguage: String
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: Unit,
           forceLanguage: String,
@@ -247,7 +250,7 @@ object mod extends Shortcut {
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: Unit,
           forceLanguage: Unit,
@@ -255,20 +258,20 @@ object mod extends Shortcut {
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: String
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: String,
           forceLanguage: String
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: String,
           forceLanguage: String,
@@ -276,7 +279,7 @@ object mod extends Shortcut {
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: String,
           forceLanguage: Unit,
@@ -284,14 +287,14 @@ object mod extends Shortcut {
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: Unit,
           forceLanguage: String
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: Unit,
           forceLanguage: String,
@@ -299,7 +302,7 @@ object mod extends Shortcut {
         ): IPromise[String] = js.native
         def apply(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: Unit,
           forceLanguage: Unit,
@@ -411,24 +414,24 @@ object mod extends Shortcut {
           sanitizeStrategy: String
         ): IPromise[String] = js.native
         def apply(translationId: js.Array[String]): IPromise[StringDictionary[String]] = js.native
-        def apply(translationId: js.Array[String], interpolateParams: js.Any): IPromise[StringDictionary[String]] = js.native
-        def apply(translationId: js.Array[String], interpolateParams: js.Any, interpolationId: String): IPromise[StringDictionary[String]] = js.native
+        def apply(translationId: js.Array[String], interpolateParams: Any): IPromise[StringDictionary[String]] = js.native
+        def apply(translationId: js.Array[String], interpolateParams: Any, interpolationId: String): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: String
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: String,
           forceLanguage: String
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: String,
           forceLanguage: String,
@@ -436,7 +439,7 @@ object mod extends Shortcut {
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: String,
           forceLanguage: Unit,
@@ -444,14 +447,14 @@ object mod extends Shortcut {
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: Unit,
           forceLanguage: String
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: Unit,
           forceLanguage: String,
@@ -459,7 +462,7 @@ object mod extends Shortcut {
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           defaultTranslationText: Unit,
           forceLanguage: Unit,
@@ -467,20 +470,20 @@ object mod extends Shortcut {
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: String
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: String,
           forceLanguage: String
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: String,
           forceLanguage: String,
@@ -488,7 +491,7 @@ object mod extends Shortcut {
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: String,
           forceLanguage: Unit,
@@ -496,14 +499,14 @@ object mod extends Shortcut {
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: Unit,
           forceLanguage: String
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: Unit,
           forceLanguage: String,
@@ -511,7 +514,7 @@ object mod extends Shortcut {
         ): IPromise[StringDictionary[String]] = js.native
         def apply(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           defaultTranslationText: Unit,
           forceLanguage: Unit,
@@ -623,6 +626,8 @@ object mod extends Shortcut {
           sanitizeStrategy: String
         ): IPromise[StringDictionary[String]] = js.native
         
+        def allowNamespaces(): Boolean = js.native
+        
         def cloakClassName(): String = js.native
         def cloakClassName(name: String): ITranslateProvider = js.native
         
@@ -633,34 +638,34 @@ object mod extends Shortcut {
         def getAvailableLanguageKeys(): js.Array[String] = js.native
         
         def instant(translationId: String): String = js.native
-        def instant(translationId: String, interpolateParams: js.Any): String = js.native
-        def instant(translationId: String, interpolateParams: js.Any, interpolationId: String): String = js.native
-        def instant(translationId: String, interpolateParams: js.Any, interpolationId: String, forceLanguage: String): String = js.native
+        def instant(translationId: String, interpolateParams: Any): String = js.native
+        def instant(translationId: String, interpolateParams: Any, interpolationId: String): String = js.native
+        def instant(translationId: String, interpolateParams: Any, interpolationId: String, forceLanguage: String): String = js.native
         def instant(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           forceLanguage: String,
           sanitizeStrategy: String
         ): String = js.native
         def instant(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           forceLanguage: Unit,
           sanitizeStrategy: String
         ): String = js.native
-        def instant(translationId: String, interpolateParams: js.Any, interpolationId: Unit, forceLanguage: String): String = js.native
+        def instant(translationId: String, interpolateParams: Any, interpolationId: Unit, forceLanguage: String): String = js.native
         def instant(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           forceLanguage: String,
           sanitizeStrategy: String
         ): String = js.native
         def instant(
           translationId: String,
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           forceLanguage: Unit,
           sanitizeStrategy: String
@@ -697,44 +702,44 @@ object mod extends Shortcut {
           sanitizeStrategy: String
         ): String = js.native
         def instant(translationId: js.Array[String]): StringDictionary[String] = js.native
-        def instant(translationId: js.Array[String], interpolateParams: js.Any): StringDictionary[String] = js.native
-        def instant(translationId: js.Array[String], interpolateParams: js.Any, interpolationId: String): StringDictionary[String] = js.native
+        def instant(translationId: js.Array[String], interpolateParams: Any): StringDictionary[String] = js.native
+        def instant(translationId: js.Array[String], interpolateParams: Any, interpolationId: String): StringDictionary[String] = js.native
         def instant(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           forceLanguage: String
         ): StringDictionary[String] = js.native
         def instant(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           forceLanguage: String,
           sanitizeStrategy: String
         ): StringDictionary[String] = js.native
         def instant(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: String,
           forceLanguage: Unit,
           sanitizeStrategy: String
         ): StringDictionary[String] = js.native
         def instant(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           forceLanguage: String
         ): StringDictionary[String] = js.native
         def instant(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           forceLanguage: String,
           sanitizeStrategy: String
         ): StringDictionary[String] = js.native
         def instant(
           translationId: js.Array[String],
-          interpolateParams: js.Any,
+          interpolateParams: Any,
           interpolationId: Unit,
           forceLanguage: Unit,
           sanitizeStrategy: String
@@ -785,7 +790,7 @@ object mod extends Shortcut {
         
         def isReady(): Boolean = js.native
         
-        def loaderCache(): js.Any = js.native
+        def loaderCache(): Any = js.native
         
         /**
           * @ngdoc function

@@ -10,10 +10,10 @@ parse SPDX license expressions
 | ------------------ | :-------------: |
 | Full name          | spdx-expression-parse |
 | Keywords           | SPDX, law, legal, license, metadata, package, package.json, standards |
-| # releases         | 2 |
-| # dependents       | 160 |
-| # downloads        | 718462300 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8.7134231E7 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/jslicense/spdx-expression-parse.js#readme)

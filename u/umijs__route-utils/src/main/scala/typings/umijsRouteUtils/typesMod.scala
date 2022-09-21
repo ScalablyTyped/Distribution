@@ -10,7 +10,7 @@ object typesMod {
   
   trait MenuDataItem
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var children: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
     
@@ -18,7 +18,7 @@ object typesMod {
     
     var hideInMenu: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[js.Any] = js.undefined
+    var icon: js.UndefOr[Any] = js.undefined
     
     var key: js.UndefOr[String] = js.undefined
     
@@ -45,7 +45,7 @@ object typesMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: MenuDataItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: MenuDataItem*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setHideChildrenInMenu(value: Boolean): Self = StObject.set(x, "hideChildrenInMenu", value.asInstanceOf[js.Any])
       
@@ -55,7 +55,7 @@ object typesMod {
       
       inline def setHideInMenuUndefined: Self = StObject.set(x, "hideInMenu", js.undefined)
       
-      inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -75,7 +75,7 @@ object typesMod {
       
       inline def setParentKeysUndefined: Self = StObject.set(x, "parentKeys", js.undefined)
       
-      inline def setParentKeysVarargs(value: String*): Self = StObject.set(x, "parentKeys", js.Array(value :_*))
+      inline def setParentKeysVarargs(value: String*): Self = StObject.set(x, "parentKeys", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -85,7 +85,7 @@ object typesMod {
       
       inline def setPro_layout_parentKeysUndefined: Self = StObject.set(x, "pro_layout_parentKeys", js.undefined)
       
-      inline def setPro_layout_parentKeysVarargs(value: String*): Self = StObject.set(x, "pro_layout_parentKeys", js.Array(value :_*))
+      inline def setPro_layout_parentKeysVarargs(value: String*): Self = StObject.set(x, "pro_layout_parentKeys", js.Array(value*))
     }
   }
   
@@ -95,11 +95,11 @@ object typesMod {
     
     var description: js.UndefOr[String] = js.undefined
     
-    var id: js.Any
+    var id: Any
   }
   object MessageDescriptor {
     
-    inline def apply(id: js.Any): MessageDescriptor = {
+    inline def apply(id: Any): MessageDescriptor = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageDescriptor]
     }
@@ -114,7 +114,7 @@ object typesMod {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,7 +122,8 @@ object typesMod {
     extends StObject
        with MenuDataItem {
     
-    var routes: js.UndefOr[js.Array[Route]] = js.undefined
+    @JSName("children")
+    var children_Route: js.UndefOr[js.Array[Route]] = js.undefined
   }
   object Route {
     
@@ -133,11 +134,11 @@ object typesMod {
     
     extension [Self <: Route](x: Self) {
       
-      inline def setRoutes(value: js.Array[Route]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Route]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setRoutesVarargs(value: Route*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Route*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
 }

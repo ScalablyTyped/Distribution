@@ -9,7 +9,7 @@ object inputSinkMod {
   
   @JSImport("guacamole-client/lib/InputSink", "InputSink")
   @js.native
-  class InputSink () extends StObject {
+  open class InputSink () extends StObject {
     
     /**
       * Attempts to focus the underlying input field. The focus attempt occurs

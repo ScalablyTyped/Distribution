@@ -86,43 +86,43 @@ object configMod extends Shortcut {
       
       inline def setData(value: String | js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: String*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDebug(value: String | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
+      inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value*))
       
       inline def setError(value: String | js.Array[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value*))
       
       inline def setHelp(value: String | js.Array[String]): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      inline def setHelpVarargs(value: String*): Self = StObject.set(x, "help", js.Array(value :_*))
+      inline def setHelpVarargs(value: String*): Self = StObject.set(x, "help", js.Array(value*))
       
       inline def setInfo(value: String | js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
+      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value*))
       
       inline def setInput(value: String | js.Array[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+      inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value*))
       
       inline def setPrompt(value: String | js.Array[String]): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      inline def setPromptVarargs(value: String*): Self = StObject.set(x, "prompt", js.Array(value :_*))
+      inline def setPromptVarargs(value: String*): Self = StObject.set(x, "prompt", js.Array(value*))
       
       inline def setSilly(value: String | js.Array[String]): Self = StObject.set(x, "silly", value.asInstanceOf[js.Any])
       
-      inline def setSillyVarargs(value: String*): Self = StObject.set(x, "silly", js.Array(value :_*))
+      inline def setSillyVarargs(value: String*): Self = StObject.set(x, "silly", js.Array(value*))
       
       inline def setVerbose(value: String | js.Array[String]): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      inline def setVerboseVarargs(value: String*): Self = StObject.set(x, "verbose", js.Array(value :_*))
+      inline def setVerboseVarargs(value: String*): Self = StObject.set(x, "verbose", js.Array(value*))
       
       inline def setWarn(value: String | js.Array[String]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      inline def setWarnVarargs(value: String*): Self = StObject.set(x, "warn", js.Array(value :_*))
+      inline def setWarnVarargs(value: String*): Self = StObject.set(x, "warn", js.Array(value*))
     }
   }
   
@@ -239,6 +239,8 @@ object configMod extends Shortcut {
     
     var error: String | js.Array[String]
     
+    var http: String | js.Array[String]
+    
     var info: String | js.Array[String]
     
     var silly: String | js.Array[String]
@@ -252,12 +254,13 @@ object configMod extends Shortcut {
     inline def apply(
       debug: String | js.Array[String],
       error: String | js.Array[String],
+      http: String | js.Array[String],
       info: String | js.Array[String],
       silly: String | js.Array[String],
       verbose: String | js.Array[String],
       warn: String | js.Array[String]
     ): NpmConfigSetColors = {
-      val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], silly = silly.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], silly = silly.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
       __obj.asInstanceOf[NpmConfigSetColors]
     }
     
@@ -265,27 +268,31 @@ object configMod extends Shortcut {
       
       inline def setDebug(value: String | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
+      inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value*))
       
       inline def setError(value: String | js.Array[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value*))
+      
+      inline def setHttp(value: String | js.Array[String]): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      
+      inline def setHttpVarargs(value: String*): Self = StObject.set(x, "http", js.Array(value*))
       
       inline def setInfo(value: String | js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
+      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value*))
       
       inline def setSilly(value: String | js.Array[String]): Self = StObject.set(x, "silly", value.asInstanceOf[js.Any])
       
-      inline def setSillyVarargs(value: String*): Self = StObject.set(x, "silly", js.Array(value :_*))
+      inline def setSillyVarargs(value: String*): Self = StObject.set(x, "silly", js.Array(value*))
       
       inline def setVerbose(value: String | js.Array[String]): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      inline def setVerboseVarargs(value: String*): Self = StObject.set(x, "verbose", js.Array(value :_*))
+      inline def setVerboseVarargs(value: String*): Self = StObject.set(x, "verbose", js.Array(value*))
       
       inline def setWarn(value: String | js.Array[String]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      inline def setWarnVarargs(value: String*): Self = StObject.set(x, "warn", js.Array(value :_*))
+      inline def setWarnVarargs(value: String*): Self = StObject.set(x, "warn", js.Array(value*))
     }
   }
   
@@ -380,35 +387,35 @@ object configMod extends Shortcut {
       
       inline def setAlert(value: String | js.Array[String]): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
-      inline def setAlertVarargs(value: String*): Self = StObject.set(x, "alert", js.Array(value :_*))
+      inline def setAlertVarargs(value: String*): Self = StObject.set(x, "alert", js.Array(value*))
       
       inline def setCrit(value: String | js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
       
-      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value*))
       
       inline def setDebug(value: String | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
+      inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value*))
       
       inline def setEmerg(value: String | js.Array[String]): Self = StObject.set(x, "emerg", value.asInstanceOf[js.Any])
       
-      inline def setEmergVarargs(value: String*): Self = StObject.set(x, "emerg", js.Array(value :_*))
+      inline def setEmergVarargs(value: String*): Self = StObject.set(x, "emerg", js.Array(value*))
       
       inline def setError(value: String | js.Array[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: String*): Self = StObject.set(x, "error", js.Array(value*))
       
       inline def setInfo(value: String | js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
+      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value*))
       
       inline def setNotice(value: String | js.Array[String]): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
       
-      inline def setNoticeVarargs(value: String*): Self = StObject.set(x, "notice", js.Array(value :_*))
+      inline def setNoticeVarargs(value: String*): Self = StObject.set(x, "notice", js.Array(value*))
       
       inline def setWarning(value: String | js.Array[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      inline def setWarningVarargs(value: String*): Self = StObject.set(x, "warning", js.Array(value :_*))
+      inline def setWarningVarargs(value: String*): Self = StObject.set(x, "warning", js.Array(value*))
     }
   }
   

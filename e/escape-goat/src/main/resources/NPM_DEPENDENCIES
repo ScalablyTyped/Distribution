@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "escape-goat" : "3.0.0"
+      "escape-goat" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "escape-goat" : "3.0.0"
+      "escape-goat" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

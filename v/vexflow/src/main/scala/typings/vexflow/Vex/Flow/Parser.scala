@@ -9,30 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Parser extends StObject {
   
-  var errorPos: js.Any = js.native
+  var errorPos: Any = js.native
   
-  def expect(rules: js.Any): js.Any = js.native
+  def expect(rules: Any): Any = js.native
   
-  def expectOne(rule: js.Any): js.Any = js.native
-  def expectOne(rule: js.Any, maybe: Boolean): js.Any = js.native
+  def expectOne(rule: Any): Any = js.native
+  def expectOne(rule: Any, maybe: Boolean): Any = js.native
   
-  def expectOneOrMore(rule: js.Any): js.Any = js.native
-  def expectOneOrMore(rule: js.Any, maybe: Boolean): js.Any = js.native
+  def expectOneOrMore(rule: Any): Any = js.native
+  def expectOneOrMore(rule: Any, maybe: Boolean): Any = js.native
   
-  def expectZeroOrMore(rule: js.Any): js.Any = js.native
+  def expectZeroOrMore(rule: Any): Any = js.native
   
-  var grammar: js.Any = js.native
+  var grammar: Any = js.native
   
-  var line: js.Any = js.native
+  var line: Any = js.native
   
-  def matchFail(returnPos: js.Any): Unit = js.native
+  def matchFail(returnPos: Any): Unit = js.native
   
   def matchSuccess(): Unit = js.native
   
-  def matchToken(token: js.Any): IncrementPos | MatchedString = js.native
-  def matchToken(token: js.Any, noSpace: Boolean): IncrementPos | MatchedString = js.native
+  def matchToken(token: Any): IncrementPos | MatchedString = js.native
+  def matchToken(token: Any, noSpace: Boolean): IncrementPos | MatchedString = js.native
   
-  def parse(line: js.Any): js.Any = js.native
+  def parse(line: Any): Any = js.native
   
-  var pos: js.Any = js.native
+  var pos: Any = js.native
 }

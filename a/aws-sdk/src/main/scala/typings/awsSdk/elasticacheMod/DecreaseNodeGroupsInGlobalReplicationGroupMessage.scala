@@ -12,17 +12,17 @@ trait DecreaseNodeGroupsInGlobalReplicationGroupMessage extends StObject {
   var ApplyImmediately: Boolean
   
   /**
-    * If the value of NodeGroupCount is less than the current number of node groups (shards), then either NodeGroupsToRemove or NodeGroupsToRetain is required. NodeGroupsToRemove is a list of NodeGroupIds to remove from the cluster. ElastiCache for Redis will attempt to remove all node groups listed by NodeGroupsToRemove from the cluster. 
+    * If the value of NodeGroupCount is less than the current number of node groups (shards), then either NodeGroupsToRemove or NodeGroupsToRetain is required. GlobalNodeGroupsToRemove is a list of NodeGroupIds to remove from the cluster. ElastiCache for Redis will attempt to remove all node groups listed by GlobalNodeGroupsToRemove from the cluster. 
     */
   var GlobalNodeGroupsToRemove: js.UndefOr[GlobalNodeGroupIdList] = js.undefined
   
   /**
-    * If the value of NodeGroupCount is less than the current number of node groups (shards), then either NodeGroupsToRemove or NodeGroupsToRetain is required. NodeGroupsToRemove is a list of NodeGroupIds to remove from the cluster. ElastiCache for Redis will attempt to remove all node groups listed by NodeGroupsToRemove from the cluster. 
+    * If the value of NodeGroupCount is less than the current number of node groups (shards), then either NodeGroupsToRemove or NodeGroupsToRetain is required. GlobalNodeGroupsToRetain is a list of NodeGroupIds to retain from the cluster. ElastiCache for Redis will attempt to retain all node groups listed by GlobalNodeGroupsToRetain from the cluster. 
     */
   var GlobalNodeGroupsToRetain: js.UndefOr[GlobalNodeGroupIdList] = js.undefined
   
   /**
-    * The name of the Global Datastore
+    * The name of the Global datastore
     */
   var GlobalReplicationGroupId: String
   
@@ -46,13 +46,13 @@ object DecreaseNodeGroupsInGlobalReplicationGroupMessage {
     
     inline def setGlobalNodeGroupsToRemoveUndefined: Self = StObject.set(x, "GlobalNodeGroupsToRemove", js.undefined)
     
-    inline def setGlobalNodeGroupsToRemoveVarargs(value: String*): Self = StObject.set(x, "GlobalNodeGroupsToRemove", js.Array(value :_*))
+    inline def setGlobalNodeGroupsToRemoveVarargs(value: String*): Self = StObject.set(x, "GlobalNodeGroupsToRemove", js.Array(value*))
     
     inline def setGlobalNodeGroupsToRetain(value: GlobalNodeGroupIdList): Self = StObject.set(x, "GlobalNodeGroupsToRetain", value.asInstanceOf[js.Any])
     
     inline def setGlobalNodeGroupsToRetainUndefined: Self = StObject.set(x, "GlobalNodeGroupsToRetain", js.undefined)
     
-    inline def setGlobalNodeGroupsToRetainVarargs(value: String*): Self = StObject.set(x, "GlobalNodeGroupsToRetain", js.Array(value :_*))
+    inline def setGlobalNodeGroupsToRetainVarargs(value: String*): Self = StObject.set(x, "GlobalNodeGroupsToRetain", js.Array(value*))
     
     inline def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     

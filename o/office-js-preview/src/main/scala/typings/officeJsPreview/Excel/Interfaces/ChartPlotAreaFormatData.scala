@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartPlotAreaFormatData extends StObject {
   
   /**
+    * Specifies the border attributes of a chart plot area.
     *
-    * Specifies the border attributes of a chart plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var border: js.UndefOr[ChartBorderData] = js.undefined

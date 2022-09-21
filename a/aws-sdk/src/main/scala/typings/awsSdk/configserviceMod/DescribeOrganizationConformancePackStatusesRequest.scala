@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeOrganizationConformancePackStatusesRequest extends StObject {
   
   /**
-    * The maximum number of OrganizationConformancePackStatuses returned on each page. If you do no specify a number, AWS Config uses the default. The default is 100. 
+    * The maximum number of OrganizationConformancePackStatuses returned on each page. If you do no specify a number, Config uses the default. The default is 100. 
     */
   var Limit: js.UndefOr[CosmosPageLimit] = js.undefined
   
@@ -17,7 +17,7 @@ trait DescribeOrganizationConformancePackStatusesRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The names of organization conformance packs for which you want status details. If you do not specify any names, AWS Config returns details for all your organization conformance packs. 
+    * The names of organization conformance packs for which you want status details. If you do not specify any names, Config returns details for all your organization conformance packs. 
     */
   var OrganizationConformancePackNames: js.UndefOr[typings.awsSdk.configserviceMod.OrganizationConformancePackNames] = js.undefined
 }
@@ -42,6 +42,6 @@ object DescribeOrganizationConformancePackStatusesRequest {
     
     inline def setOrganizationConformancePackNamesUndefined: Self = StObject.set(x, "OrganizationConformancePackNames", js.undefined)
     
-    inline def setOrganizationConformancePackNamesVarargs(value: OrganizationConformancePackName*): Self = StObject.set(x, "OrganizationConformancePackNames", js.Array(value :_*))
+    inline def setOrganizationConformancePackNamesVarargs(value: OrganizationConformancePackName*): Self = StObject.set(x, "OrganizationConformancePackNames", js.Array(value*))
   }
 }

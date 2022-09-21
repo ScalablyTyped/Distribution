@@ -2,9 +2,6 @@ package typings.yadda
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
-import typings.std.Error
-import typings.std.RegExp
 import typings.yadda.contextMod.Properties
 import typings.yadda.featureParserMod.Options
 import typings.yadda.languageMod.Vocabulary
@@ -25,14 +22,14 @@ object libMod {
   
   @JSImport("yadda/lib", "Context")
   @js.native
-  class Context protected ()
+  open class Context protected ()
     extends typings.yadda.contextMod.^ {
     def this(properties: Properties) = this()
   }
   
   @JSImport("yadda/lib", "Dictionary")
   @js.native
-  class Dictionary ()
+  open class Dictionary ()
     extends typings.yadda.dictionaryMod.^ {
     def this(prefix: String) = this()
   }
@@ -44,7 +41,7 @@ object libMod {
     val ^ : js.Any = js.native
     @JSImport("yadda/lib", "EventBus.EventBus")
     @js.native
-    class EventBus ()
+    open class EventBus ()
       extends typings.yadda.eventBusMod.EventBus
     
     @JSImport("yadda/lib", "EventBus.ON_DEFINE")
@@ -68,22 +65,22 @@ object libMod {
   
   @JSImport("yadda/lib", "FeatureFileSearch")
   @js.native
-  class FeatureFileSearch protected ()
+  open class FeatureFileSearch protected ()
     extends typings.yadda.featureFileSearchMod.^ {
     def this(directories: String) = this()
   }
   
   @JSImport("yadda/lib", "FileSearch")
   @js.native
-  class FileSearch protected ()
+  open class FileSearch protected ()
     extends typings.yadda.fileSearchMod.^ {
     def this(directories: String) = this()
-    def this(directories: String, patterns: RegExp) = this()
+    def this(directories: String, patterns: js.RegExp) = this()
   }
   
   @JSImport("yadda/lib", "Interpreter")
   @js.native
-  class Interpreter protected ()
+  open class Interpreter protected ()
     extends typings.yadda.interpreterMod.^ {
     def this(libraries: js.Array[typings.yadda.libraryMod.^]) = this()
     def this(libraries: typings.yadda.libraryMod.^) = this()
@@ -91,19 +88,19 @@ object libMod {
   
   @JSImport("yadda/lib", "Library")
   @js.native
-  class Library ()
+  open class Library ()
     extends typings.yadda.libraryMod.^ {
     def this(dictionary: typings.yadda.dictionaryMod.^) = this()
   }
   
   @JSImport("yadda/lib", "Platform")
   @js.native
-  class Platform ()
+  open class Platform ()
     extends typings.yadda.platformMod.^
   
   @JSImport("yadda/lib", "Yadda")
   @js.native
-  class Yadda protected ()
+  open class Yadda protected ()
     extends typings.yadda.yaddaMod.^ {
     def this(libraries: js.Array[typings.yadda.libraryMod.^]) = this()
     def this(libraries: typings.yadda.libraryMod.^) = this()
@@ -119,17 +116,17 @@ object libMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def date(value: String, next: js.Function2[/* err */ Error | Null, /* value */ Date, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def date(value: String, next: js.Function2[/* err */ js.Error | Null, /* value */ js.Date, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def float(value: String, next: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("float")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def float(value: String, next: js.Function2[/* err */ js.Error | Null, /* value */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("float")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def integer(value: String, next: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("integer")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def integer(value: String, next: js.Function2[/* err */ js.Error | Null, /* value */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("integer")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def list(value: String, next: js.Function2[/* err */ Error | Null, /* value */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def list(value: String, next: js.Function2[/* err */ js.Error | Null, /* value */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def passThrough(value: String, next: js.Function2[/* err */ Error | Null, /* value */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pass_through")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def passThrough(value: String, next: js.Function2[/* err */ js.Error | Null, /* value */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pass_through")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def table(value: String, next: js.Function2[/* err */ Error | Null, /* value */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("table")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def table(value: String, next: js.Function2[/* err */ js.Error | Null, /* value */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("table")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   inline def createInstance(): typings.yadda.yaddaMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[typings.yadda.yaddaMod.^]
@@ -167,7 +164,7 @@ object libMod {
     
     @JSImport("yadda/lib", "localisation.Language")
     @js.native
-    class Language[TLibrary /* <: typings.yadda.languageMod.Library */] protected ()
+    open class Language[TLibrary /* <: typings.yadda.languageMod.Library */] protected ()
       extends typings.yadda.localisationMod.Language[TLibrary] {
       def this(name: String, vocabulary: Vocabulary) = this()
     }
@@ -210,7 +207,7 @@ object libMod {
     
     @JSImport("yadda/lib", "parsers.FeatureFileParser")
     @js.native
-    class FeatureFileParser ()
+    open class FeatureFileParser ()
       extends typings.yadda.parsersMod.FeatureFileParser {
       def this(language: typings.yadda.languageMod.^[typings.yadda.languageMod.Library]) = this()
       def this(options: Options) = this()
@@ -218,7 +215,7 @@ object libMod {
     
     @JSImport("yadda/lib", "parsers.FeatureParser")
     @js.native
-    class FeatureParser ()
+    open class FeatureParser ()
       extends typings.yadda.parsersMod.FeatureParser {
       def this(language: typings.yadda.languageMod.^[typings.yadda.languageMod.Library]) = this()
       def this(options: Options) = this()
@@ -226,7 +223,7 @@ object libMod {
     
     @JSImport("yadda/lib", "parsers.StepParser")
     @js.native
-    class StepParser ()
+    open class StepParser ()
       extends typings.yadda.parsersMod.StepParser
   }
   
@@ -236,7 +233,7 @@ object libMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def casper(yadda: typings.yadda.yaddaMod.^, casper: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("casper")(yadda.asInstanceOf[js.Any], casper.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def casper(yadda: typings.yadda.yaddaMod.^, casper: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("casper")(yadda.asInstanceOf[js.Any], casper.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("yadda/lib", "plugins.jasmine")
     @js.native
@@ -251,25 +248,25 @@ object libMod {
   
   type Converter = (js.Function2[
     /* arg1 */ String, 
-    /* next */ js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit], 
+    /* next */ js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit], 
     Unit
   ]) | (js.Function3[
     /* arg1 */ String, 
     /* arg2 */ String, 
-    /* next */ js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit], 
+    /* next */ js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit], 
     Unit
   ]) | (js.Function4[
     /* arg1 */ String, 
     /* arg2 */ String, 
     /* arg3 */ String, 
-    /* next */ js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit], 
+    /* next */ js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit], 
     Unit
   ]) | (js.Function5[
     /* arg1 */ String, 
     /* arg2 */ String, 
     /* arg3 */ String, 
     /* arg4 */ String, 
-    /* next */ js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit], 
+    /* next */ js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit], 
     Unit
   ]) | (js.Function6[
     /* arg1 */ String, 
@@ -277,7 +274,7 @@ object libMod {
     /* arg3 */ String, 
     /* arg4 */ String, 
     /* arg5 */ String, 
-    /* next */ js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit], 
+    /* next */ js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit], 
     Unit
   ]) | (js.Function7[
     /* arg1 */ String, 
@@ -286,7 +283,7 @@ object libMod {
     /* arg4 */ String, 
     /* arg5 */ String, 
     /* arg6 */ String, 
-    /* next */ js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit], 
+    /* next */ js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit], 
     Unit
   ])
   
@@ -318,11 +315,11 @@ object libMod {
       
       inline def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+      inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value*))
       
       inline def setScenarios(value: js.Array[Scenario]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
       
-      inline def setScenariosVarargs(value: Scenario*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+      inline def setScenariosVarargs(value: Scenario*): Self = StObject.set(x, "scenarios", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
@@ -351,11 +348,11 @@ object libMod {
       
       inline def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+      inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value*))
       
       inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

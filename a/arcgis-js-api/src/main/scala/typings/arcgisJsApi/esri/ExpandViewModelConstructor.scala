@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ExpandViewModelConstructor
   extends StObject
-     with Instantiable0[ExpandViewModel]
+     with /**
+  * Provides the logic for the [Expand](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand-ExpandViewModel.html)
+  */
+Instantiable0[ExpandViewModel]
      with Instantiable1[/* properties */ ExpandViewModelProperties, ExpandViewModel]

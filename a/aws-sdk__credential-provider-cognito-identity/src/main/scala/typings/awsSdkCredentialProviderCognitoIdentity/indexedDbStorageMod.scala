@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object indexedDbStorageMod {
   
-  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist/cjs/IndexedDbStorage", "IndexedDbStorage")
+  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist-types/IndexedDbStorage", "IndexedDbStorage")
   @js.native
-  class IndexedDbStorage ()
+  open class IndexedDbStorage ()
     extends StObject
        with Storage {
     def this(dbName: String) = this()
     
-    /* private */ val dbName: js.Any = js.native
+    /* private */ val dbName: Any = js.native
     
-    /* private */ var getDb: js.Any = js.native
+    /* private */ var getDb: Any = js.native
     
     /* CompleteClass */
     override def getItem(key: String): String | Null | (js.Promise[String | Null]) = js.native
@@ -27,6 +27,6 @@ object indexedDbStorageMod {
     /* CompleteClass */
     override def setItem(key: String, data: String): Unit | js.Promise[Unit] = js.native
     
-    /* private */ var withObjectStore: js.Any = js.native
+    /* private */ var withObjectStore: Any = js.native
   }
 }

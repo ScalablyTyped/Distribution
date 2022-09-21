@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChartExportOptions")
 @js.native
-class ChartExportOptions ()
+open class ChartExportOptions ()
   extends StObject
      with typings.devexpressWeb.ChartExportOptions {
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTCPropertyBehavior")
 @js.native
-/* private */ class HTCPropertyBehavior ()
+/* private */ open class HTCPropertyBehavior ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTCPropertyBehavior {
   
@@ -18,5 +18,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def fireChange(): Unit = js.native
   
   /* CompleteClass */
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

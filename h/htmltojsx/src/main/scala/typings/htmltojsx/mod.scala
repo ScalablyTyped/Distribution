@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("htmltojsx", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with HTMLtoJSX {
     def this(options: CreateClass) = this()

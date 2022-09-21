@@ -33,6 +33,8 @@ object mod {
     
     var dest: js.UndefOr[String] = js.undefined
     
+    var dryRun: js.UndefOr[Boolean] = js.undefined
+    
     var encoding: js.UndefOr[String] = js.undefined
     
     var excludeFilters: js.UndefOr[js.Array[String]] = js.undefined
@@ -49,13 +51,9 @@ object mod {
     
     var markdown: js.UndefOr[Boolean] = js.undefined
     
-    var parse: js.UndefOr[Boolean] = js.undefined
-    
     var parsers: js.UndefOr[(Record[String, String]) | GetGroup] = js.undefined
     
     var silent: js.UndefOr[Boolean] = js.undefined
-    
-    var simulate: js.UndefOr[Boolean] = js.undefined
     
     var single: js.UndefOr[Boolean] = js.undefined
     
@@ -67,7 +65,7 @@ object mod {
     
     var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var workers: js.UndefOr[(Record[String, String]) | StringDictionary[js.Any]] = js.undefined
+    var workers: js.UndefOr[(Record[String, String]) | StringDictionary[Any]] = js.undefined
   }
   object DocOptions {
     
@@ -102,6 +100,10 @@ object mod {
       
       inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
+      inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+      
+      inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+      
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
       inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
@@ -110,13 +112,13 @@ object mod {
       
       inline def setExcludeFiltersUndefined: Self = StObject.set(x, "excludeFilters", js.undefined)
       
-      inline def setExcludeFiltersVarargs(value: String*): Self = StObject.set(x, "excludeFilters", js.Array(value :_*))
+      inline def setExcludeFiltersVarargs(value: String*): Self = StObject.set(x, "excludeFilters", js.Array(value*))
       
       inline def setFilterBy(value: String | js.Array[String]): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
       
       inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
       
-      inline def setFilterByVarargs(value: String*): Self = StObject.set(x, "filterBy", js.Array(value :_*))
+      inline def setFilterByVarargs(value: String*): Self = StObject.set(x, "filterBy", js.Array(value*))
       
       inline def setFilters(value: (Record[String, String]) | StringDictionary[PostFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,7 @@ object mod {
       
       inline def setIncludeFiltersUndefined: Self = StObject.set(x, "includeFilters", js.undefined)
       
-      inline def setIncludeFiltersVarargs(value: String*): Self = StObject.set(x, "includeFilters", js.Array(value :_*))
+      inline def setIncludeFiltersVarargs(value: String*): Self = StObject.set(x, "includeFilters", js.Array(value*))
       
       inline def setLanguages(value: (Record[String, String]) | StringDictionary[DocBlocksRegExp]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
@@ -140,10 +142,6 @@ object mod {
       
       inline def setMarkdownUndefined: Self = StObject.set(x, "markdown", js.undefined)
       
-      inline def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
-      
-      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
-      
       inline def setParsers(value: (Record[String, String]) | GetGroup): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
       
       inline def setParsersUndefined: Self = StObject.set(x, "parsers", js.undefined)
@@ -151,10 +149,6 @@ object mod {
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
       inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
-      
-      inline def setSimulate(value: Boolean): Self = StObject.set(x, "simulate", value.asInstanceOf[js.Any])
-      
-      inline def setSimulateUndefined: Self = StObject.set(x, "simulate", js.undefined)
       
       inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
       
@@ -176,7 +170,7 @@ object mod {
       
       inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
       
-      inline def setWorkers(value: (Record[String, String]) | StringDictionary[js.Any]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      inline def setWorkers(value: (Record[String, String]) | StringDictionary[Any]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
       
       inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
     }
@@ -204,7 +198,7 @@ object mod {
       
       inline def setBlocks(value: js.Array[Global]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      inline def setBlocksVarargs(value: Global*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: Global*): Self = StObject.set(x, "blocks", js.Array(value*))
       
       inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       

@@ -115,7 +115,7 @@ object Deployment {
     
     inline def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
-    inline def setInstanceIdsVarargs(value: String*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: String*): Self = StObject.set(x, "InstanceIds", js.Array(value*))
     
     inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     

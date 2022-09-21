@@ -45,12 +45,12 @@ object ModifyDBClusterEndpointMessage {
     
     inline def setExcludedMembersUndefined: Self = StObject.set(x, "ExcludedMembers", js.undefined)
     
-    inline def setExcludedMembersVarargs(value: String*): Self = StObject.set(x, "ExcludedMembers", js.Array(value :_*))
+    inline def setExcludedMembersVarargs(value: String*): Self = StObject.set(x, "ExcludedMembers", js.Array(value*))
     
     inline def setStaticMembers(value: StringList): Self = StObject.set(x, "StaticMembers", value.asInstanceOf[js.Any])
     
     inline def setStaticMembersUndefined: Self = StObject.set(x, "StaticMembers", js.undefined)
     
-    inline def setStaticMembersVarargs(value: String*): Self = StObject.set(x, "StaticMembers", js.Array(value :_*))
+    inline def setStaticMembersVarargs(value: String*): Self = StObject.set(x, "StaticMembers", js.Array(value*))
   }
 }

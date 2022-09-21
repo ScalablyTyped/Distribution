@@ -72,7 +72,7 @@ object XAtomServer {
     getClass_ : Double => SafeArray[AtomDescription],
     getClasses: SeqEquiv[Double] => SafeArray[SafeArray[AtomDescription]],
     getRecentAtoms: (Double, Double) => SafeArray[AtomDescription],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAtomServer = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAtom = js.Any.fromFunction3(getAtom), getAtomDescriptions = js.Any.fromFunction1(getAtomDescriptions), getClasses = js.Any.fromFunction1(getClasses), getRecentAtoms = js.Any.fromFunction2(getRecentAtoms), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isArrayMod {
   
-  @JSImport("@antv/util/lib/is-array", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/is-array", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(value: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
+  inline def default(value: Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
 }

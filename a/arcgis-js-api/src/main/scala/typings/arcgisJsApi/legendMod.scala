@@ -18,11 +18,11 @@ object legendMod extends Shortcut {
   @JSImport("esri/widgets/Legend", JSImport.Namespace)
   @js.native
   /**
-    * The Legend widget displays labels and symbols for layers in a map.
+    * The Legend widget describes the symbols used to represent layers in a map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Legend {
     def this(properties: LegendProperties) = this()

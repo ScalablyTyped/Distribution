@@ -101,6 +101,6 @@ object AgentJobHistoryInfo {
     
     inline def setSteps(value: js.Array[AgentJobStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: AgentJobStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: AgentJobStep*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

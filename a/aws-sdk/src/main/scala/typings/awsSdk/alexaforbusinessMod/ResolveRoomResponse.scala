@@ -42,6 +42,6 @@ object ResolveRoomResponse {
     
     inline def setRoomSkillParametersUndefined: Self = StObject.set(x, "RoomSkillParameters", js.undefined)
     
-    inline def setRoomSkillParametersVarargs(value: RoomSkillParameter*): Self = StObject.set(x, "RoomSkillParameters", js.Array(value :_*))
+    inline def setRoomSkillParametersVarargs(value: RoomSkillParameter*): Self = StObject.set(x, "RoomSkillParameters", js.Array(value*))
   }
 }

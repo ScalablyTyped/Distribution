@@ -15,7 +15,7 @@ object messengerMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.wordpressCustomizeBrowser.eventsMod.Events because Inheritance from two classes. Inlined topics, trigger, bind, unbind */ @JSImport("@wordpress/customize-browser/Messenger", "Messenger")
   @js.native
-  class Messenger[T] protected () extends Class {
+  open class Messenger[T] protected () extends Class {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

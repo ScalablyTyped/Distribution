@@ -6,17 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arraysMod {
   
-  /**
-    * Returns true if the two arrays are shallow equal, or false otherwise.
-    *
-    * @param {any[]} a First array to compare.
-    * @param {any[]} b Second array to compare.
-    *
-    * @return {boolean} Whether the two arrays are shallow equal.
-    */
-  inline def apply(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
   @JSImport("@wordpress/is-shallow-equal/build-types/arrays", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(a: js.Array[Any], b: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

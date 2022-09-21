@@ -10,10 +10,10 @@ The lodash method `_.lastIndexOf` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.lastindexof |
 | Keywords           | lodash-modularized, lastindexof |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 69899 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3910.6666666666665 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

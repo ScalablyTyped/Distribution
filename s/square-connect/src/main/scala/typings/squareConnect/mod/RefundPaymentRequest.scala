@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RefundPaymentRequest")
 @js.native
-class RefundPaymentRequest () extends StObject {
+open class RefundPaymentRequest () extends StObject {
   
   /**
     * The amount of money to refund. Cannot be more than the `total_money` value of the payment minus the total amount

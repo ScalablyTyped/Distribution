@@ -10,15 +10,12 @@ Implementation of JSON Web Signatures
 | ------------------ | :-------------: |
 | Full name          | jws |
 | Keywords           | jws, json, web, signatures |
-| # releases         | 4 |
-| # dependents       | 198 |
-| # downloads        | 339489181 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.7478875666666664E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/brianloveswords/node-jws#readme)
-- [Bugs](https://github.com/brianloveswords/node-jws/issues)
-- [Repository](https://github.com/brianloveswords/node-jws)
 - [Npm](https://www.npmjs.com/package/jws)
     
 

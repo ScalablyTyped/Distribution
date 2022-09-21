@@ -1,6 +1,6 @@
 package typings.memorystream
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("memorystream", JSImport.Namespace)
   @js.native
-  class ^ () extends Duplex {
+  open class ^ () extends Duplex {
     def this(data: js.Array[DataType]) = this()
     def this(data: DataType) = this()
     def this(data: js.Array[DataType], options: Options) = this()

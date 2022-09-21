@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "Highlight")
 @js.native
-class Highlight protected () extends AbstractSeries[HighlightProps] {
+open class Highlight protected () extends AbstractSeries[HighlightProps] {
   def this(props: HighlightProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HighlightProps, context: js.Any) = this()
+  def this(props: HighlightProps, context: Any) = this()
 }

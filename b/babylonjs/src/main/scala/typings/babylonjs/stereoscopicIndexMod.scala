@@ -10,7 +10,7 @@ object stereoscopicIndexMod {
   
   @JSImport("babylonjs/Cameras/Stereoscopic/index", "AnaglyphArcRotateCamera")
   @js.native
-  class AnaglyphArcRotateCamera protected ()
+  open class AnaglyphArcRotateCamera protected ()
     extends typings.babylonjs.anaglyphArcRotateCameraMod.AnaglyphArcRotateCamera {
     /**
       * Creates a new AnaglyphArcRotateCamera
@@ -28,6 +28,14 @@ object stereoscopicIndexMod {
       beta: Double,
       radius: Double,
       target: Vector3,
+      interaxialDistance: Double
+    ) = this()
+    def this(
+      name: String,
+      alpha: Double,
+      beta: Double,
+      radius: Double,
+      target: Vector3,
       interaxialDistance: Double,
       scene: Scene
     ) = this()
@@ -35,7 +43,7 @@ object stereoscopicIndexMod {
   
   @JSImport("babylonjs/Cameras/Stereoscopic/index", "AnaglyphFreeCamera")
   @js.native
-  class AnaglyphFreeCamera protected ()
+  open class AnaglyphFreeCamera protected ()
     extends typings.babylonjs.anaglyphFreeCameraMod.AnaglyphFreeCamera {
     /**
       * Creates a new AnaglyphFreeCamera
@@ -44,12 +52,13 @@ object stereoscopicIndexMod {
       * @param interaxialDistance defines distance between each color axis
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double) = this()
     def this(name: String, position: Vector3, interaxialDistance: Double, scene: Scene) = this()
   }
   
   @JSImport("babylonjs/Cameras/Stereoscopic/index", "AnaglyphGamepadCamera")
   @js.native
-  class AnaglyphGamepadCamera protected ()
+  open class AnaglyphGamepadCamera protected ()
     extends typings.babylonjs.anaglyphGamepadCameraMod.AnaglyphGamepadCamera {
     /**
       * Creates a new AnaglyphGamepadCamera
@@ -58,12 +67,13 @@ object stereoscopicIndexMod {
       * @param interaxialDistance defines distance between each color axis
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double) = this()
     def this(name: String, position: Vector3, interaxialDistance: Double, scene: Scene) = this()
   }
   
   @JSImport("babylonjs/Cameras/Stereoscopic/index", "AnaglyphUniversalCamera")
   @js.native
-  class AnaglyphUniversalCamera protected ()
+  open class AnaglyphUniversalCamera protected ()
     extends typings.babylonjs.anaglyphUniversalCameraMod.AnaglyphUniversalCamera {
     /**
       * Creates a new AnaglyphUniversalCamera
@@ -72,12 +82,13 @@ object stereoscopicIndexMod {
       * @param interaxialDistance defines distance between each color axis
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double) = this()
     def this(name: String, position: Vector3, interaxialDistance: Double, scene: Scene) = this()
   }
   
   @JSImport("babylonjs/Cameras/Stereoscopic/index", "StereoscopicArcRotateCamera")
   @js.native
-  class StereoscopicArcRotateCamera protected ()
+  open class StereoscopicArcRotateCamera protected ()
     extends typings.babylonjs.stereoscopicArcRotateCameraMod.StereoscopicArcRotateCamera {
     /**
       * Creates a new StereoscopicArcRotateCamera
@@ -97,6 +108,15 @@ object stereoscopicIndexMod {
       radius: Double,
       target: Vector3,
       interaxialDistance: Double,
+      isStereoscopicSideBySide: Boolean
+    ) = this()
+    def this(
+      name: String,
+      alpha: Double,
+      beta: Double,
+      radius: Double,
+      target: Vector3,
+      interaxialDistance: Double,
       isStereoscopicSideBySide: Boolean,
       scene: Scene
     ) = this()
@@ -104,7 +124,7 @@ object stereoscopicIndexMod {
   
   @JSImport("babylonjs/Cameras/Stereoscopic/index", "StereoscopicFreeCamera")
   @js.native
-  class StereoscopicFreeCamera protected ()
+  open class StereoscopicFreeCamera protected ()
     extends typings.babylonjs.stereoscopicFreeCameraMod.StereoscopicFreeCamera {
     /**
       * Creates a new StereoscopicFreeCamera
@@ -114,6 +134,7 @@ object stereoscopicIndexMod {
       * @param isStereoscopicSideBySide defines is stereoscopic is done side by side or over under
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double, isStereoscopicSideBySide: Boolean) = this()
     def this(
       name: String,
       position: Vector3,
@@ -125,7 +146,7 @@ object stereoscopicIndexMod {
   
   @JSImport("babylonjs/Cameras/Stereoscopic/index", "StereoscopicGamepadCamera")
   @js.native
-  class StereoscopicGamepadCamera protected ()
+  open class StereoscopicGamepadCamera protected ()
     extends typings.babylonjs.stereoscopicGamepadCameraMod.StereoscopicGamepadCamera {
     /**
       * Creates a new StereoscopicGamepadCamera
@@ -135,6 +156,7 @@ object stereoscopicIndexMod {
       * @param isStereoscopicSideBySide defines is stereoscopic is done side by side or over under
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double, isStereoscopicSideBySide: Boolean) = this()
     def this(
       name: String,
       position: Vector3,
@@ -144,9 +166,55 @@ object stereoscopicIndexMod {
     ) = this()
   }
   
+  @JSImport("babylonjs/Cameras/Stereoscopic/index", "StereoscopicScreenUniversalCamera")
+  @js.native
+  open class StereoscopicScreenUniversalCamera protected ()
+    extends typings.babylonjs.stereoscopicScreenUniversalCameraMod.StereoscopicScreenUniversalCamera {
+    /**
+      * Creates a new StereoscopicScreenUniversalCamera
+      * @param name defines camera name
+      * @param position defines initial position
+      * @param scene defines the hosting scene
+      * @param distanceToProjectionPlane defines distance between each color axis. The rig cameras will receive this as their negative z position!
+      * @param distanceBetweenEyes defines is stereoscopic is done side by side or over under
+      */
+    def this(name: String, position: Vector3) = this()
+    def this(name: String, position: Vector3, scene: Scene) = this()
+    def this(name: String, position: Vector3, scene: Unit, distanceToProjectionPlane: Double) = this()
+    def this(name: String, position: Vector3, scene: Scene, distanceToProjectionPlane: Double) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Unit,
+      distanceToProjectionPlane: Double,
+      distanceBetweenEyes: Double
+    ) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Unit,
+      distanceToProjectionPlane: Unit,
+      distanceBetweenEyes: Double
+    ) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Scene,
+      distanceToProjectionPlane: Double,
+      distanceBetweenEyes: Double
+    ) = this()
+    def this(
+      name: String,
+      position: Vector3,
+      scene: Scene,
+      distanceToProjectionPlane: Unit,
+      distanceBetweenEyes: Double
+    ) = this()
+  }
+  
   @JSImport("babylonjs/Cameras/Stereoscopic/index", "StereoscopicUniversalCamera")
   @js.native
-  class StereoscopicUniversalCamera protected ()
+  open class StereoscopicUniversalCamera protected ()
     extends typings.babylonjs.stereoscopicUniversalCameraMod.StereoscopicUniversalCamera {
     /**
       * Creates a new StereoscopicUniversalCamera
@@ -156,6 +224,7 @@ object stereoscopicIndexMod {
       * @param isStereoscopicSideBySide defines is stereoscopic is done side by side or over under
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double, isStereoscopicSideBySide: Boolean) = this()
     def this(
       name: String,
       position: Vector3,

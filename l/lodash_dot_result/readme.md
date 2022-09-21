@@ -10,10 +10,10 @@ The lodash method `_.result` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.result |
 | Keywords           | lodash-modularized, result |
-| # releases         | 0 |
-| # dependents       | 50 |
-| # downloads        | 4470825 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 376852.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

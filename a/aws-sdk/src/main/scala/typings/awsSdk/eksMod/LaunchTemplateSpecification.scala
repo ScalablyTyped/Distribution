@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LaunchTemplateSpecification extends StObject {
   
   /**
-    * The ID of the launch template.
+    * The ID of the launch template. You must specify either the launch template ID or the launch template name in the request, but not both.
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the launch template.
+    * The name of the launch template. You must specify either the launch template name or the launch template ID in the request, but not both.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The version of the launch template to use. If no version is specified, then the template's default version is used.
+    * The launch template version number, $Latest, or $Default. If the value is $Latest, Amazon EKS uses the latest version of the launch template. If the value is $Default, Amazon EKS uses the default version of the launch template. Default: The default version of the launch template.
     */
   var version: js.UndefOr[String] = js.undefined
 }

@@ -13,7 +13,7 @@ object padMod {
   
   @JSImport("ansi-fragments/build/fragments/Pad", "Pad")
   @js.native
-  class Pad_ protected ()
+  open class Pad_ protected ()
     extends StObject
        with IFragment {
     def this(count: Double) = this()
@@ -22,9 +22,9 @@ object padMod {
     /* CompleteClass */
     override def build(): String = js.native
     
-    /* private */ val count: js.Any = js.native
+    /* private */ val count: Any = js.native
     
-    /* private */ val separator: js.Any = js.native
+    /* private */ val separator: Any = js.native
   }
   
   inline def pad(count: Double): Pad_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(count.asInstanceOf[js.Any]).asInstanceOf[Pad_]

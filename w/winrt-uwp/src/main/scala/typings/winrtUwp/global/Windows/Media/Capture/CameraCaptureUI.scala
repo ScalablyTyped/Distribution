@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Capture.CameraCaptureUI")
 @js.native
 /** Create a new CameraCaptureUI object. */
-class CameraCaptureUI ()
+open class CameraCaptureUI ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.CameraCaptureUI {
   

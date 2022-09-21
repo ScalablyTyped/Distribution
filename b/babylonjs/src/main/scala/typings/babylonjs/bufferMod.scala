@@ -2,6 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.dataBufferMod.DataBuffer
 import typings.babylonjs.typesMod.DataArray
+import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bufferMod {
   
-  @JSImport("babylonjs/Meshes/buffer", "Buffer")
+  @JSImport("babylonjs/Buffers/buffer", "Buffer")
   @js.native
-  class Buffer protected () extends StObject {
+  open class Buffer protected () extends StObject {
     /**
       * Constructor
       * @param engine the engine
@@ -23,307 +24,37 @@ object bufferMod {
       * @param useBytes set to true if the stride in in bytes (optional)
       * @param divisor sets an optional divisor for instances (1 by default)
       */
-    def this(engine: js.Any, data: DataArray, updatable: Boolean) = this()
-    def this(engine: js.Any, data: DataArray, updatable: Boolean, stride: Double) = this()
     def this(
-      engine: js.Any,
-      data: DataArray,
+      engine: Any,
+      data: DataArray | DataBuffer,
       updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Boolean,
-      instanced: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Unit,
-      instanced: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Boolean,
-      instanced: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Unit,
-      instanced: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Boolean,
-      instanced: Boolean,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Boolean,
-      instanced: Unit,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Unit,
-      instanced: Boolean,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Unit,
-      instanced: Unit,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Boolean,
-      instanced: Boolean,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Boolean,
-      instanced: Unit,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Unit,
-      instanced: Boolean,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Unit,
-      instanced: Unit,
-      useBytes: Boolean
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Boolean,
-      instanced: Boolean,
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Boolean,
-      instanced: Boolean,
-      useBytes: Unit,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Boolean,
-      instanced: Unit,
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Boolean,
-      instanced: Unit,
-      useBytes: Unit,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Unit,
-      instanced: Boolean,
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Unit,
-      instanced: Boolean,
-      useBytes: Unit,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Unit,
-      instanced: Unit,
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Double,
-      postponeInternalCreation: Unit,
-      instanced: Unit,
-      useBytes: Unit,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Boolean,
-      instanced: Boolean,
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Boolean,
-      instanced: Boolean,
-      useBytes: Unit,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Boolean,
-      instanced: Unit,
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Boolean,
-      instanced: Unit,
-      useBytes: Unit,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Unit,
-      instanced: Boolean,
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Unit,
-      instanced: Boolean,
-      useBytes: Unit,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Unit,
-      instanced: Unit,
-      useBytes: Boolean,
-      divisor: Double
-    ) = this()
-    def this(
-      engine: js.Any,
-      data: DataArray,
-      updatable: Boolean,
-      stride: Unit,
-      postponeInternalCreation: Unit,
-      instanced: Unit,
-      useBytes: Unit,
-      divisor: Double
+      stride: js.UndefOr[Double],
+      postponeInternalCreation: js.UndefOr[Boolean],
+      instanced: js.UndefOr[Boolean],
+      useBytes: js.UndefOr[Boolean],
+      divisor: js.UndefOr[Double]
     ) = this()
     
-    /* private */ var _buffer: js.Any = js.native
+    /* private */ var _buffer: Any = js.native
     
     /** @hidden */
     var _data: Nullable[DataArray] = js.native
     
-    /* private */ var _divisor: js.Any = js.native
+    /* private */ var _divisor: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
     /** @hidden */
     def _increaseReferences(): Unit = js.native
     
-    /* private */ var _instanced: js.Any = js.native
+    /* private */ var _instanced: Any = js.native
     
-    /* private */ var _isAlreadyOwned: js.Any = js.native
+    /* private */ var _isAlreadyOwned: Any = js.native
     
     /** @hidden */
     def _rebuild(): Unit = js.native
     
-    /* private */ var _updatable: js.Any = js.native
+    /* private */ var _updatable: Any = js.native
     
     /**
       * Gets the byte stride.
@@ -331,7 +62,8 @@ object bufferMod {
     val byteStride: Double = js.native
     
     /**
-      * Store data into the buffer. If the buffer was already used it will be either recreated or updated depending on isUpdatable property
+      * Store data into the buffer. Creates the buffer if not used already.
+      * If the buffer was already used, it will be updated only if it is updatable, otherwise it will do nothing.
       * @param data defines the data to store
       */
     def create(): Unit = js.native
@@ -479,9 +211,9 @@ object bufferMod {
     def updateDirectly(data: DataArray, offset: Double, vertexCount: Unit, useBytes: Boolean): Unit = js.native
   }
   
-  @JSImport("babylonjs/Meshes/buffer", "VertexBuffer")
+  @JSImport("babylonjs/Buffers/buffer", "VertexBuffer")
   @js.native
-  class VertexBuffer protected () extends StObject {
+  open class VertexBuffer protected () extends StObject {
     /**
       * Constructor
       * @param engine the engine
@@ -500,8 +232,8 @@ object bufferMod {
       * @param takeBufferOwnership defines if the buffer should be released when the vertex buffer is disposed
       */
     def this(
-      engine: js.Any,
-      data: DataArray | Buffer,
+      engine: Any,
+      data: DataArray | Buffer | DataBuffer,
       kind: String,
       updatable: Boolean,
       postponeInternalCreation: js.UndefOr[Boolean],
@@ -519,18 +251,23 @@ object bufferMod {
     /** @hidden */
     var _buffer: Buffer = js.native
     
-    /* private */ var _instanceDivisor: js.Any = js.native
+    /* private */ var _computeHashCode: Any = js.native
     
-    /* private */ var _instanced: js.Any = js.native
+    /* private */ var _instanceDivisor: Any = js.native
     
-    /* private */ var _kind: js.Any = js.native
+    /* private */ var _instanced: Any = js.native
     
-    /* private */ var _ownsBuffer: js.Any = js.native
+    /* private */ var _kind: Any = js.native
+    
+    /* private */ var _ownsBuffer: Any = js.native
     
     /** @hidden */
     def _rebuild(): Unit = js.native
     
-    /* private */ var _size: js.Any = js.native
+    /* private */ var _size: Any = js.native
+    
+    /** @hidden */
+    var _validOffsetRange: Boolean = js.native
     
     /**
       * Gets the byte offset.
@@ -574,6 +311,15 @@ object bufferMod {
     def getData(): Nullable[DataArray] = js.native
     
     /**
+      * Gets current buffer's data as a float array. Float data is constructed if the vertex buffer data cannot be returned directly.
+      * @param totalVertices number of vertices in the buffer to take into account
+      * @param forceCopy defines a boolean indicating that the returned array must be cloned upon returning it
+      * @returns a float array containing vertex data
+      */
+    def getFloatData(totalVertices: Double): Nullable[FloatArray] = js.native
+    def getFloatData(totalVertices: Double, forceCopy: Boolean): Nullable[FloatArray] = js.native
+    
+    /**
       * Returns the instancing divisor, zero for non-instanced (integer).
       * @returns a number
       */
@@ -599,10 +345,12 @@ object bufferMod {
     def getOffset(): Double = js.native
     
     /**
-      * Returns the number of components per vertex attribute (integer)
-      * @returns the size in float
+      * Returns the number of components or the byte size per vertex attribute
+      * @param sizeInBytes If true, returns the size in bytes or else the size in number of components of the vertex attribute (default: false)
+      * @returns the number of components
       */
     def getSize(): Double = js.native
+    def getSize(sizeInBytes: Boolean): Double = js.native
     
     /**
       * Gets the stride in float32 units (i.e. byte stride / 4).
@@ -611,6 +359,13 @@ object bufferMod {
       * @deprecated Please use byteStride instead.
       */
     def getStrideSize(): Double = js.native
+    
+    /**
+      * Gets a hash code representing the format (type, normalized, size, instanced, stride) of this buffer
+      * All buffers with the same format will have the same hash code
+      */
+    @JSName("hashCode")
+    val hashCode_FVertexBuffer: Double = js.native
     
     /**
       * Gets or sets the instance divisor when in instanced mode
@@ -635,6 +390,11 @@ object bufferMod {
     val `type`: Double = js.native
     
     /**
+      * Gets the unique id of this vertex buffer
+      */
+    val uniqueId: Double = js.native
+    
+    /**
       * Updates the underlying buffer according to the passed numeric array or Float32Array.
       * This function will create a new buffer if the current one is not updatable
       * @param data defines the data to store
@@ -654,21 +414,28 @@ object bufferMod {
   /* static members */
   object VertexBuffer {
     
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * The byte type.
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.BYTE")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.BYTE")
     @js.native
     val BYTE: Double = js.native
     
     /**
+      * Instance Colors
+      */
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.ColorInstanceKind")
+    @js.native
+    val ColorInstanceKind: String = js.native
+    
+    /**
       * Colors
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.ColorKind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.ColorKind")
     @js.native
     val ColorKind: String = js.native
     
@@ -682,7 +449,7 @@ object bufferMod {
     /**
       * The float type.
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.FLOAT")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.FLOAT")
     @js.native
     val FLOAT: Double = js.native
     
@@ -718,132 +485,137 @@ object bufferMod {
     /**
       * The integer type.
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.INT")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.INT")
     @js.native
     val INT: Double = js.native
     
     /**
       * Additional matrix indices (for bones)
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.MatricesIndicesExtraKind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.MatricesIndicesExtraKind")
     @js.native
     val MatricesIndicesExtraKind: String = js.native
     
     /**
       * Matrix indices (for bones)
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.MatricesIndicesKind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.MatricesIndicesKind")
     @js.native
     val MatricesIndicesKind: String = js.native
     
     /**
       * Additional matrix weights (for bones)
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.MatricesWeightsExtraKind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.MatricesWeightsExtraKind")
     @js.native
     val MatricesWeightsExtraKind: String = js.native
     
     /**
       * Matrix weights (for bones)
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.MatricesWeightsKind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.MatricesWeightsKind")
     @js.native
     val MatricesWeightsKind: String = js.native
     
     /**
       * Normals
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.NormalKind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.NormalKind")
     @js.native
     val NormalKind: String = js.native
     
     /**
       * Positions
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.PositionKind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.PositionKind")
     @js.native
     val PositionKind: String = js.native
     
     /**
       * The short type.
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.SHORT")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.SHORT")
     @js.native
     val SHORT: Double = js.native
     
     /**
       * Tangents
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.TangentKind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.TangentKind")
     @js.native
     val TangentKind: String = js.native
     
     /**
       * The unsigned byte type.
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UNSIGNED_BYTE")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.UNSIGNED_BYTE")
     @js.native
     val UNSIGNED_BYTE: Double = js.native
     
     /**
       * The unsigned integer type.
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UNSIGNED_INT")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.UNSIGNED_INT")
     @js.native
     val UNSIGNED_INT: Double = js.native
     
     /**
       * The unsigned short type.
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UNSIGNED_SHORT")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.UNSIGNED_SHORT")
     @js.native
     val UNSIGNED_SHORT: Double = js.native
     
     /**
       * Texture coordinates 2
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UV2Kind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.UV2Kind")
     @js.native
     val UV2Kind: String = js.native
     
     /**
       * Texture coordinates 3
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UV3Kind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.UV3Kind")
     @js.native
     val UV3Kind: String = js.native
     
     /**
       * Texture coordinates 4
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UV4Kind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.UV4Kind")
     @js.native
     val UV4Kind: String = js.native
     
     /**
       * Texture coordinates 5
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UV5Kind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.UV5Kind")
     @js.native
     val UV5Kind: String = js.native
     
     /**
       * Texture coordinates 6
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UV6Kind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.UV6Kind")
     @js.native
     val UV6Kind: String = js.native
     
     /**
       * Texture coordinates
       */
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer.UVKind")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer.UVKind")
     @js.native
     val UVKind: String = js.native
     
-    @JSImport("babylonjs/Meshes/buffer", "VertexBuffer._GetFloatValue")
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer._Counter")
     @js.native
-    def _GetFloatValue: js.Any = js.native
-    inline def _GetFloatValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
+    def _Counter: Any = js.native
+    inline def _Counter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Counter")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Buffers/buffer", "VertexBuffer._GetFloatValue")
+    @js.native
+    def _GetFloatValue: Any = js.native
+    inline def _GetFloatValue_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
   }
 }

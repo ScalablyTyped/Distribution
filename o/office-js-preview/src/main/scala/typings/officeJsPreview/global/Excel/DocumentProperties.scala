@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents workbook properties.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.DocumentProperties")
 @js.native
-class DocumentProperties ()
+open class DocumentProperties ()
   extends StObject
      with typings.officeJsPreview.Excel.DocumentProperties {
   

@@ -2,12 +2,10 @@ package typings.qunitDom
 
 import typings.std.Element
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
 import typings.std.HTMLBRElement
 import typings.std.HTMLBaseElement
-import typings.std.HTMLBaseFontElement
 import typings.std.HTMLBodyElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLCanvasElement
@@ -16,15 +14,11 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
-import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
-import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
-import typings.std.HTMLFrameElement
-import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -37,7 +31,6 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
-import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -48,7 +41,6 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
-import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -60,10 +52,9 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableColElement
-import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableElement
-import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
@@ -77,6 +68,9 @@ import typings.std.Node
 import typings.std.NodeList
 import typings.std.NodeListOf
 import typings.std.SVGAElement
+import typings.std.SVGAnimateElement
+import typings.std.SVGAnimateMotionElement
+import typings.std.SVGAnimateTransformElement
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -90,6 +84,7 @@ import typings.std.SVGFEConvolveMatrixElement
 import typings.std.SVGFEDiffuseLightingElement
 import typings.std.SVGFEDisplacementMapElement
 import typings.std.SVGFEDistantLightElement
+import typings.std.SVGFEDropShadowElement
 import typings.std.SVGFEFloodElement
 import typings.std.SVGFEFuncAElement
 import typings.std.SVGFEFuncBElement
@@ -112,6 +107,7 @@ import typings.std.SVGGElement
 import typings.std.SVGImageElement
 import typings.std.SVGLineElement
 import typings.std.SVGLinearGradientElement
+import typings.std.SVGMPathElement
 import typings.std.SVGMarkerElement
 import typings.std.SVGMaskElement
 import typings.std.SVGMetadataElement
@@ -123,6 +119,7 @@ import typings.std.SVGRadialGradientElement
 import typings.std.SVGRectElement
 import typings.std.SVGSVGElement
 import typings.std.SVGScriptElement
+import typings.std.SVGSetElement
 import typings.std.SVGStopElement
 import typings.std.SVGStyleElement
 import typings.std.SVGSwitchElement
@@ -146,7 +143,7 @@ object nodeListMod {
   inline def toArray(list: NodeList): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
   inline def toArray(
     selectors: NodeListOf[
-      HTMLAnchorElement | HTMLAppletElement | HTMLAreaElement | HTMLAudioElement | HTMLBRElement | HTMLBaseElement | HTMLBaseFontElement | HTMLBodyElement | HTMLButtonElement | HTMLCanvasElement | HTMLDListElement | HTMLDataElement | HTMLDataListElement | HTMLDetailsElement | HTMLDialogElement | HTMLDirectoryElement | HTMLDivElement | HTMLElement | HTMLEmbedElement | HTMLFieldSetElement | HTMLFontElement | HTMLFormElement | HTMLFrameElement | HTMLFrameSetElement | HTMLHRElement | HTMLHeadElement | HTMLHeadingElement | HTMLHtmlElement | HTMLIFrameElement | HTMLImageElement | HTMLInputElement | HTMLLIElement | HTMLLabelElement | HTMLLegendElement | HTMLLinkElement | HTMLMapElement | HTMLMarqueeElement | HTMLMenuElement | HTMLMetaElement | HTMLMeterElement | HTMLModElement | HTMLOListElement | HTMLObjectElement | HTMLOptGroupElement | HTMLOptionElement | HTMLOutputElement | HTMLParagraphElement | HTMLParamElement | HTMLPictureElement | HTMLPreElement | HTMLProgressElement | HTMLQuoteElement | HTMLScriptElement | HTMLSelectElement | HTMLSlotElement | HTMLSourceElement | HTMLSpanElement | HTMLStyleElement | HTMLTableCaptionElement | HTMLTableColElement | HTMLTableDataCellElement | HTMLTableElement | HTMLTableHeaderCellElement | HTMLTableRowElement | HTMLTableSectionElement | HTMLTemplateElement | HTMLTextAreaElement | HTMLTimeElement | HTMLTitleElement | HTMLTrackElement | HTMLUListElement | HTMLVideoElement | SVGAElement | SVGCircleElement | SVGClipPathElement | SVGDefsElement | SVGDescElement | SVGEllipseElement | SVGFEBlendElement | SVGFEColorMatrixElement | SVGFEComponentTransferElement | SVGFECompositeElement | SVGFEConvolveMatrixElement | SVGFEDiffuseLightingElement | SVGFEDisplacementMapElement | SVGFEDistantLightElement | SVGFEFloodElement | SVGFEFuncAElement | SVGFEFuncBElement | SVGFEFuncGElement | SVGFEFuncRElement | SVGFEGaussianBlurElement | SVGFEImageElement | SVGFEMergeElement | SVGFEMergeNodeElement | SVGFEMorphologyElement | SVGFEOffsetElement | SVGFEPointLightElement | SVGFESpecularLightingElement | SVGFESpotLightElement | SVGFETileElement | SVGFETurbulenceElement | SVGFilterElement | SVGForeignObjectElement | SVGGElement | SVGImageElement | SVGLineElement | SVGLinearGradientElement | SVGMarkerElement | SVGMaskElement | SVGMetadataElement | SVGPathElement | SVGPatternElement | SVGPolygonElement | SVGPolylineElement | SVGRadialGradientElement | SVGRectElement | SVGSVGElement | SVGScriptElement | SVGStopElement | SVGStyleElement | SVGSwitchElement | SVGSymbolElement | SVGTSpanElement | SVGTextElement | SVGTextPathElement | SVGTitleElement | SVGUseElement | SVGViewElement
+      HTMLAnchorElement | HTMLAreaElement | HTMLAudioElement | HTMLBRElement | HTMLBaseElement | HTMLBodyElement | HTMLButtonElement | HTMLCanvasElement | HTMLDListElement | HTMLDataElement | HTMLDataListElement | HTMLDetailsElement | HTMLDialogElement | HTMLDivElement | HTMLElement | HTMLEmbedElement | HTMLFieldSetElement | HTMLFormElement | HTMLHRElement | HTMLHeadElement | HTMLHeadingElement | HTMLHtmlElement | HTMLIFrameElement | HTMLImageElement | HTMLInputElement | HTMLLIElement | HTMLLabelElement | HTMLLegendElement | HTMLLinkElement | HTMLMapElement | HTMLMenuElement | HTMLMetaElement | HTMLMeterElement | HTMLModElement | HTMLOListElement | HTMLObjectElement | HTMLOptGroupElement | HTMLOptionElement | HTMLOutputElement | HTMLParagraphElement | HTMLPictureElement | HTMLPreElement | HTMLProgressElement | HTMLQuoteElement | HTMLScriptElement | HTMLSelectElement | HTMLSlotElement | HTMLSourceElement | HTMLSpanElement | HTMLStyleElement | HTMLTableCaptionElement | HTMLTableCellElement | HTMLTableColElement | HTMLTableElement | HTMLTableRowElement | HTMLTableSectionElement | HTMLTemplateElement | HTMLTextAreaElement | HTMLTimeElement | HTMLTitleElement | HTMLTrackElement | HTMLUListElement | HTMLVideoElement | SVGAElement | SVGAnimateElement | SVGAnimateMotionElement | SVGAnimateTransformElement | SVGCircleElement | SVGClipPathElement | SVGDefsElement | SVGDescElement | SVGEllipseElement | SVGFEBlendElement | SVGFEColorMatrixElement | SVGFEComponentTransferElement | SVGFECompositeElement | SVGFEConvolveMatrixElement | SVGFEDiffuseLightingElement | SVGFEDisplacementMapElement | SVGFEDistantLightElement | SVGFEDropShadowElement | SVGFEFloodElement | SVGFEFuncAElement | SVGFEFuncBElement | SVGFEFuncGElement | SVGFEFuncRElement | SVGFEGaussianBlurElement | SVGFEImageElement | SVGFEMergeElement | SVGFEMergeNodeElement | SVGFEMorphologyElement | SVGFEOffsetElement | SVGFEPointLightElement | SVGFESpecularLightingElement | SVGFESpotLightElement | SVGFETileElement | SVGFETurbulenceElement | SVGFilterElement | SVGForeignObjectElement | SVGGElement | SVGImageElement | SVGLineElement | SVGLinearGradientElement | SVGMPathElement | SVGMarkerElement | SVGMaskElement | SVGMetadataElement | SVGPathElement | SVGPatternElement | SVGPolygonElement | SVGPolylineElement | SVGRadialGradientElement | SVGRectElement | SVGSVGElement | SVGScriptElement | SVGSetElement | SVGStopElement | SVGStyleElement | SVGSwitchElement | SVGSymbolElement | SVGTSpanElement | SVGTextElement | SVGTextPathElement | SVGTitleElement | SVGUseElement | SVGViewElement
     ]
   ): js.Array[HTMLAnchorElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLAnchorElement]]
   

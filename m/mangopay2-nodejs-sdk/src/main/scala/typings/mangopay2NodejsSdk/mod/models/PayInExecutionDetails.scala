@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mangopay2-nodejs-sdk", "models.PayInExecutionDetails")
 @js.native
-class PayInExecutionDetails protected ()
-  extends EntityBase[js.Any] {
-  def this(data: js.Any) = this()
+open class PayInExecutionDetails protected () extends EntityBase[Any] {
+  def this(data: Any) = this()
 }

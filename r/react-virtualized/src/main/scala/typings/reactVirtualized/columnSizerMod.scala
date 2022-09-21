@@ -8,16 +8,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object columnSizerMod {
   
-  @JSImport("react-virtualized/dist/commonjs/ColumnSizer", "ColumnSizer")
+  @JSImport("react-virtualized/dist/commonjs/ColumnSizer", JSImport.Default)
   @js.native
-  class ColumnSizer protected ()
+  open class default protected ()
     extends typings.reactVirtualized.esColumnSizerMod.ColumnSizer {
     def this(props: ColumnSizerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ColumnSizerProps, context: js.Any) = this()
+    def this(props: ColumnSizerProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/commonjs/ColumnSizer", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/commonjs/ColumnSizer", "default.propTypes")
+    @js.native
+    def propTypes: Children = js.native
+    inline def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-virtualized/dist/commonjs/ColumnSizer", "ColumnSizer")
+  @js.native
+  open class ColumnSizer protected ()
+    extends typings.reactVirtualized.esColumnSizerMod.ColumnSizer {
+    def this(props: ColumnSizerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ColumnSizerProps, context: Any) = this()
   }
   /* static members */
   object ColumnSizer {

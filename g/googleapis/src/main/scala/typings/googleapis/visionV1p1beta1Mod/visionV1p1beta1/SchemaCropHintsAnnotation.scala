@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Set of crop hints that are used to generate new crops when serving images.
-  */
 trait SchemaCropHintsAnnotation extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaCropHintsAnnotation {
     
     inline def setCropHintsUndefined: Self = StObject.set(x, "cropHints", js.undefined)
     
-    inline def setCropHintsVarargs(value: SchemaCropHint*): Self = StObject.set(x, "cropHints", js.Array(value :_*))
+    inline def setCropHintsVarargs(value: SchemaCropHint*): Self = StObject.set(x, "cropHints", js.Array(value*))
   }
 }

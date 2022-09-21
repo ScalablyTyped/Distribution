@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListOpenIDConnectProvidersResponse extends StObject {
   
   /**
-    * The list of IAM OIDC provider resource objects defined in the AWS account.
+    * The list of IAM OIDC provider resource objects defined in the Amazon Web Services account.
     */
   var OpenIDConnectProviderList: js.UndefOr[OpenIDConnectProviderListType] = js.undefined
 }
@@ -24,6 +24,6 @@ object ListOpenIDConnectProvidersResponse {
     
     inline def setOpenIDConnectProviderListUndefined: Self = StObject.set(x, "OpenIDConnectProviderList", js.undefined)
     
-    inline def setOpenIDConnectProviderListVarargs(value: OpenIDConnectProviderListEntry*): Self = StObject.set(x, "OpenIDConnectProviderList", js.Array(value :_*))
+    inline def setOpenIDConnectProviderListVarargs(value: OpenIDConnectProviderListEntry*): Self = StObject.set(x, "OpenIDConnectProviderList", js.Array(value*))
   }
 }

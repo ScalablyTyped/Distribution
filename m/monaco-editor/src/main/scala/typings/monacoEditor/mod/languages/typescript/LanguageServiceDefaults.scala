@@ -43,17 +43,19 @@ trait LanguageServiceDefaults extends StObject {
     */
   def getExtraLibs(): IExtraLibs = js.native
   
+  val inlayHintsOptions: InlayHintsOptions = js.native
+  
   /**
     * Event fired when compiler options or diagnostics options are changed.
     */
-  def onDidChange(listener: js.Function1[/* e */ Unit, js.Any]): IDisposable = js.native
-  def onDidChange(listener: js.Function1[/* e */ Unit, js.Any], thisArg: js.Any): IDisposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * Event fired when extra libraries registered with the language service change.
     */
-  def onDidExtraLibsChange(listener: js.Function1[/* e */ Unit, js.Any]): IDisposable = js.native
-  def onDidExtraLibsChange(listener: js.Function1[/* e */ Unit, js.Any], thisArg: js.Any): IDisposable = js.native
+  def onDidExtraLibsChange(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidExtraLibsChange(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * Set TypeScript compiler options.
@@ -79,6 +81,11 @@ trait LanguageServiceDefaults extends StObject {
     * @param libs An array of entries to register.
     */
   def setExtraLibs(libs: js.Array[Content]): Unit = js.native
+  
+  /**
+    * Configure inlay hints options.
+    */
+  def setInlayHintsOptions(options: InlayHintsOptions): Unit = js.native
   
   /**
     * No-op.

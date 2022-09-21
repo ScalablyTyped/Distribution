@@ -4,30 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An auxiliary table contains statistical information on the relative
-  * frequency of different quasi-identifiers values. It has one or several
-  * quasi-identifiers columns, and one column that indicates the relative
-  * frequency of each quasi-identifier tuple. If a tuple is present in the data
-  * but not in the auxiliary table, the corresponding relative frequency is
-  * assumed to be zero (and thus, the tuple is highly reidentifiable).
-  */
 trait SchemaGooglePrivacyDlpV2AuxiliaryTable extends StObject {
   
   /**
-    * Quasi-identifier columns. [required]
+    * Required. Quasi-identifier columns.
     */
   var quasiIds: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2QuasiIdField]] = js.undefined
   
   /**
-    * The relative frequency column must contain a floating-point number
-    * between 0 and 1 (inclusive). Null values are assumed to be zero.
-    * [required]
+    * Required. The relative frequency column must contain a floating-point number between 0 and 1 (inclusive). Null values are assumed to be zero.
     */
   var relativeFrequency: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
   
   /**
-    * Auxiliary table location. [required]
+    * Required. Auxiliary table location.
     */
   var table: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryTable] = js.undefined
 }
@@ -44,7 +34,7 @@ object SchemaGooglePrivacyDlpV2AuxiliaryTable {
     
     inline def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
-    inline def setQuasiIdsVarargs(value: SchemaGooglePrivacyDlpV2QuasiIdField*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
+    inline def setQuasiIdsVarargs(value: SchemaGooglePrivacyDlpV2QuasiIdField*): Self = StObject.set(x, "quasiIds", js.Array(value*))
     
     inline def setRelativeFrequency(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "relativeFrequency", value.asInstanceOf[js.Any])
     

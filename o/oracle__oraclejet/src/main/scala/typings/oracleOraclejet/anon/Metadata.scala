@@ -13,8 +13,8 @@ trait Metadata extends StObject {
     value: String,
     name: String,
     meta: js.Object,
-    defaultParseFunction: js.Function1[/* value */ String, js.Any]
-  ): js.Any
+    defaultParseFunction: js.Function1[/* value */ String, Any]
+  ): Any
   
   var view: String
   
@@ -24,7 +24,7 @@ object Metadata {
   
   inline def apply(
     metadata: typings.oracleOraclejet.ojcompositeMod.Metadata,
-    parseFunction: (String, String, js.Object, js.Function1[/* value */ String, js.Any]) => js.Any,
+    parseFunction: (String, String, js.Object, js.Function1[/* value */ String, Any]) => Any,
     view: String,
     viewModel: ViewModelContext => Unit | js.Object
   ): Metadata = {
@@ -36,7 +36,7 @@ object Metadata {
     
     inline def setMetadata(value: typings.oracleOraclejet.ojcompositeMod.Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    inline def setParseFunction(value: (String, String, js.Object, js.Function1[/* value */ String, js.Any]) => js.Any): Self = StObject.set(x, "parseFunction", js.Any.fromFunction4(value))
+    inline def setParseFunction(value: (String, String, js.Object, js.Function1[/* value */ String, Any]) => Any): Self = StObject.set(x, "parseFunction", js.Any.fromFunction4(value))
     
     inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

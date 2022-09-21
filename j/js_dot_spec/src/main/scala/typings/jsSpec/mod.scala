@@ -11,15 +11,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def assert(spec: SpecInput, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(spec: SpecInput, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def conform(spec: SpecInput, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("conform")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def conform(spec: SpecInput, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("conform")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def explain(spec: SpecInput, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("explain")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def explain(spec: SpecInput, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("explain")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def explainData(spec: SpecInput, value: js.Any): js.Array[Problem] = (^.asInstanceOf[js.Dynamic].applyDynamic("explainData")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Problem]]
+  inline def explainData(spec: SpecInput, value: Any): js.Array[Problem] = (^.asInstanceOf[js.Dynamic].applyDynamic("explainData")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Problem]]
   
-  inline def explainStr(spec: SpecInput, value: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("explainStr")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def explainStr(spec: SpecInput, value: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("explainStr")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def problemStr(problem: Problem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("problemStr")(problem.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -35,7 +35,7 @@ object mod {
       * @param specs the array of specs that must all match
       * @returns the constructed Spec
       */
-    inline def and(name: String, specs: SpecInput*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(name.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def and(name: String, specs: SpecInput*): Spec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(List(name.asInstanceOf[js.Any]).`++`(specs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is an Array.
@@ -186,7 +186,7 @@ object mod {
       * @param values the emum of values
       * @returns the constructed spec
       */
-    inline def oneOf(name: String, values: js.Any*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(name.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def oneOf(name: String, values: Any*): Spec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(List(name.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Spec_]
     
     /**
       * Data must conform to at least one provided spec. The order in which they are validated is not defined.
@@ -253,7 +253,7 @@ object mod {
       * @param specs the specs to test the value array
       * @returns the constructed spec
       */
-    inline def tuple(name: String, specs: SpecInput*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(name.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def tuple(name: String, specs: SpecInput*): Spec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(List(name.asInstanceOf[js.Any]).`++`(specs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is the number zero.
@@ -302,9 +302,9 @@ object mod {
     val optional: js.Symbol = js.native
   }
   
-  inline def valid(spec: SpecInput, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def valid(spec: SpecInput, value: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  type PredFn = js.Function1[/* value */ js.Any, Boolean]
+  type PredFn = js.Function1[/* value */ Any, Boolean]
   
   trait Problem extends StObject {
     
@@ -316,12 +316,12 @@ object mod {
     /**
       * A predicate function to test new values for conformance.
       */
-    def predicate(value: js.Any): Boolean
+    def predicate(value: Any): Boolean
     
     /**
       * The value associated with the problem.
       */
-    val value: js.Any
+    val value: Any
     
     /**
       * Path to the Spec that applies.
@@ -330,7 +330,7 @@ object mod {
   }
   object Problem {
     
-    inline def apply(path: js.Array[String], predicate: js.Any => Boolean, value: js.Any, via: js.Array[String]): Problem = {
+    inline def apply(path: js.Array[String], predicate: Any => Boolean, value: Any, via: js.Array[String]): Problem = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate), value = value.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
       __obj.asInstanceOf[Problem]
     }
@@ -339,15 +339,15 @@ object mod {
       
       inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
       
-      inline def setPredicate(value: js.Any => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+      inline def setPredicate(value: Any => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setVia(value: js.Array[String]): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
       
-      inline def setViaVarargs(value: String*): Self = StObject.set(x, "via", js.Array(value :_*))
+      inline def setViaVarargs(value: String*): Self = StObject.set(x, "via", js.Array(value*))
     }
   }
   
@@ -360,7 +360,7 @@ object mod {
       * @param value the value to test for conformance
       * @returns if the value does not conform to the spec, or the value if it does.
       */
-    def conform(value: js.Any): js.Any
+    def conform(value: Any): Any
     
     /**
       * Explain why a value does not conform to this spec.
@@ -369,7 +369,7 @@ object mod {
       * @param value the value to examine
       * @returns list of problems or null if none
       */
-    def explain(path: js.Array[String], via: js.Array[String], value: js.Any): js.Array[Problem]
+    def explain(path: js.Array[String], via: js.Array[String], value: Any): js.Array[Problem]
     
     /**
       * The name of the spec, displayed in explain() results.
@@ -384,8 +384,8 @@ object mod {
   object Spec_ {
     
     inline def apply(
-      conform: js.Any => js.Any,
-      explain: (js.Array[String], js.Array[String], js.Any) => js.Array[Problem],
+      conform: Any => Any,
+      explain: (js.Array[String], js.Array[String], Any) => js.Array[Problem],
       name: String,
       options: js.Object
     ): Spec_ = {
@@ -395,9 +395,9 @@ object mod {
     
     extension [Self <: Spec_](x: Self) {
       
-      inline def setConform(value: js.Any => js.Any): Self = StObject.set(x, "conform", js.Any.fromFunction1(value))
+      inline def setConform(value: Any => Any): Self = StObject.set(x, "conform", js.Any.fromFunction1(value))
       
-      inline def setExplain(value: (js.Array[String], js.Array[String], js.Any) => js.Array[Problem]): Self = StObject.set(x, "explain", js.Any.fromFunction3(value))
+      inline def setExplain(value: (js.Array[String], js.Array[String], Any) => js.Array[Problem]): Self = StObject.set(x, "explain", js.Any.fromFunction3(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

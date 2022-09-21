@@ -9,7 +9,7 @@ trait DeployedImage extends StObject {
   /**
     * The date and time when the image path for the model resolved to the ResolvedImage 
     */
-  var ResolutionTime: js.UndefOr[Timestamp] = js.undefined
+  var ResolutionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The specific digest path of the image hosted in this ProductionVariant.
@@ -30,7 +30,7 @@ object DeployedImage {
   
   extension [Self <: DeployedImage](x: Self) {
     
-    inline def setResolutionTime(value: Timestamp): Self = StObject.set(x, "ResolutionTime", value.asInstanceOf[js.Any])
+    inline def setResolutionTime(value: js.Date): Self = StObject.set(x, "ResolutionTime", value.asInstanceOf[js.Any])
     
     inline def setResolutionTimeUndefined: Self = StObject.set(x, "ResolutionTime", js.undefined)
     

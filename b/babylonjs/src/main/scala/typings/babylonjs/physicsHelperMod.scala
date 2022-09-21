@@ -14,16 +14,16 @@ object physicsHelperMod {
   
   @JSImport("babylonjs/Physics/physicsHelper", "PhysicsHelper")
   @js.native
-  class PhysicsHelper protected () extends StObject {
+  open class PhysicsHelper protected () extends StObject {
     /**
       * Initializes the Physics helper
       * @param scene Babylon.js scene
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _physicsEngine: js.Any = js.native
+    /* private */ var _physicsEngine: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /**
       * Applies a radial explosion force
@@ -236,7 +236,7 @@ object physicsHelperMod {
   
   @JSImport("babylonjs/Physics/physicsHelper", "PhysicsRadialExplosionEventOptions")
   @js.native
-  class PhysicsRadialExplosionEventOptions () extends StObject {
+  open class PhysicsRadialExplosionEventOptions () extends StObject {
     
     /**
       * Sphere options for the radial explosion.
@@ -244,7 +244,7 @@ object physicsHelperMod {
     def affectedImpostorsCallback(affectedImpostorsWithData: js.Array[PhysicsAffectedImpostorWithData]): Unit = js.native
     
     /**
-      * The strenght of the force in correspondence to the distance of the affected object
+      * The strength of the force in correspondence to the distance of the affected object
       */
     var falloff: PhysicsRadialImpulseFalloff = js.native
     
@@ -259,7 +259,7 @@ object physicsHelperMod {
     var sphere: DiameterSegments = js.native
     
     /**
-      * The strenth of the explosion.
+      * The strength of the explosion.
       */
     var strength: Double = js.native
   }
@@ -290,7 +290,7 @@ object physicsHelperMod {
   
   @JSImport("babylonjs/Physics/physicsHelper", "PhysicsUpdraftEventOptions")
   @js.native
-  class PhysicsUpdraftEventOptions () extends StObject {
+  open class PhysicsUpdraftEventOptions () extends StObject {
     
     /**
       * The height of the cylinder for the updraft.
@@ -303,7 +303,7 @@ object physicsHelperMod {
     var radius: Double = js.native
     
     /**
-      * The strenth of the updraft.
+      * The strength of the updraft.
       */
     var strength: Double = js.native
     
@@ -339,15 +339,15 @@ object physicsHelperMod {
   
   @JSImport("babylonjs/Physics/physicsHelper", "PhysicsVortexEventOptions")
   @js.native
-  class PhysicsVortexEventOptions () extends StObject {
+  open class PhysicsVortexEventOptions () extends StObject {
     
     /**
-      * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when above the treshold.
+      * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when above the threshold.
       */
     var centrifugalForceMultiplier: Double = js.native
     
     /**
-      * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when below the treshold.
+      * This multiplier determines with how much force the objects will be pushed sideways/around the vortex, when below the threshold.
       */
     var centripetalForceMultiplier: Double = js.native
     
@@ -367,7 +367,7 @@ object physicsHelperMod {
     var radius: Double = js.native
     
     /**
-      * The strenth of the vortex.
+      * The strength of the vortex.
       */
     var strength: Double = js.native
     
@@ -380,7 +380,7 @@ object physicsHelperMod {
   trait PhysicsAffectedImpostorWithData extends StObject {
     
     /**
-      * The data about the hit/horce from the explosion
+      * The data about the hit/force from the explosion
       */
     var hitData: PhysicsHitData
     
@@ -410,21 +410,21 @@ object physicsHelperMod {
   @js.native
   trait PhysicsGravitationalFieldEvent extends StObject {
     
-    /* private */ var _dataFetched: js.Any = js.native
+    /* private */ var _dataFetched: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _origin: js.Any = js.native
+    /* private */ var _origin: Any = js.native
     
-    /* private */ var _physicsHelper: js.Any = js.native
+    /* private */ var _physicsHelper: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _sphere: js.Any = js.native
+    /* private */ var _sphere: Any = js.native
     
-    /* private */ var _tick: js.Any = js.native
+    /* private */ var _tick: Any = js.native
     
-    /* private */ var _tickCallback: js.Any = js.native
+    /* private */ var _tickCallback: Any = js.native
     
     /**
       * Disables the gravitational field.
@@ -510,18 +510,18 @@ object physicsHelperMod {
   @js.native
   trait PhysicsRadialExplosionEvent extends StObject {
     
-    /* private */ var _dataFetched: js.Any = js.native
+    /* private */ var _dataFetched: Any = js.native
     
-    /* private */ var _intersectsWithSphere: js.Any = js.native
+    /* private */ var _intersectsWithSphere: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
     /*** Helpers ***/
-    /* private */ var _prepareSphere: js.Any = js.native
+    /* private */ var _prepareSphere: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _sphere: js.Any = js.native
+    /* private */ var _sphere: Any = js.native
     
     /**
       * Disposes the sphere.
@@ -545,7 +545,7 @@ object physicsHelperMod {
     def getImpostorHitData(impostor: PhysicsImpostor, origin: Vector3): Nullable[PhysicsHitData] = js.native
     
     /**
-      * Triggers affecterd impostors callbacks
+      * Triggers affected impostors callbacks
       * @param affectedImpostorsWithData defines the list of affected impostors (including associated data)
       */
     def triggerAffectedImpostorsCallback(affectedImpostorsWithData: js.Array[PhysicsAffectedImpostorWithData]): Unit = js.native
@@ -577,32 +577,34 @@ object physicsHelperMod {
   @js.native
   trait PhysicsUpdraftEvent extends StObject {
     
-    /* private */ var _cylinder: js.Any = js.native
+    /* private */ var _cylinder: Any = js.native
     
-    /* private */ var _cylinderPosition: js.Any = js.native
+    /* private */ var _cylinderPosition: Any = js.native
     
-    /* private */ var _dataFetched: js.Any = js.native
+    /* private */ var _dataFetched: Any = js.native
     
-    /* private */ var _intersectsWithCylinder: js.Any = js.native
+    /* private */ var _getImpostorHitData: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _intersectsWithCylinder: Any = js.native
     
-    /* private */ var _origin: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _originDirection: js.Any = js.native
+    /* private */ var _origin: Any = js.native
     
-    /* private */ var _originTop: js.Any = js.native
+    /* private */ var _originDirection: Any = js.native
     
-    /* private */ var _physicsEngine: js.Any = js.native
+    /* private */ var _originTop: Any = js.native
+    
+    /* private */ var _physicsEngine: Any = js.native
     
     /*** Helpers ***/
-    /* private */ var _prepareCylinder: js.Any = js.native
+    /* private */ var _prepareCylinder: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _tick: js.Any = js.native
+    /* private */ var _tick: Any = js.native
     
-    /* private */ var _tickCallback: js.Any = js.native
+    /* private */ var _tickCallback: Any = js.native
     
     /**
       * Disables the updraft.
@@ -626,8 +628,6 @@ object physicsHelperMod {
       * @returns A physics updraft event
       */
     def getData(): PhysicsUpdraftEventData = js.native
-    
-    /* private */ var getImpostorHitData: js.Any = js.native
   }
   
   trait PhysicsUpdraftEventData extends StObject {
@@ -656,30 +656,32 @@ object physicsHelperMod {
   @js.native
   trait PhysicsVortexEvent extends StObject {
     
-    /* private */ var _cylinder: js.Any = js.native
+    /* private */ var _cylinder: Any = js.native
     
-    /* private */ var _cylinderPosition: js.Any = js.native
+    /* private */ var _cylinderPosition: Any = js.native
     
-    /* private */ var _dataFetched: js.Any = js.native
+    /* private */ var _dataFetched: Any = js.native
     
-    /* private */ var _intersectsWithCylinder: js.Any = js.native
+    /* private */ var _getImpostorHitData: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _intersectsWithCylinder: Any = js.native
     
-    /* private */ var _origin: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _originTop: js.Any = js.native
+    /* private */ var _origin: Any = js.native
     
-    /* private */ var _physicsEngine: js.Any = js.native
+    /* private */ var _originTop: Any = js.native
+    
+    /* private */ var _physicsEngine: Any = js.native
     
     /*** Helpers ***/
-    /* private */ var _prepareCylinder: js.Any = js.native
+    /* private */ var _prepareCylinder: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _tick: js.Any = js.native
+    /* private */ var _tick: Any = js.native
     
-    /* private */ var _tickCallback: js.Any = js.native
+    /* private */ var _tickCallback: Any = js.native
     
     /**
       * Disables the cortex.
@@ -703,8 +705,6 @@ object physicsHelperMod {
       * @returns The physics vortex event data
       */
     def getData(): PhysicsVortexEventData = js.native
-    
-    /* private */ var getImpostorHitData: js.Any = js.native
   }
   
   trait PhysicsVortexEventData extends StObject {

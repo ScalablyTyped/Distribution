@@ -22,6 +22,6 @@ object ExtensionQueryResult {
     
     inline def setResults(value: js.Array[ExtensionFilterResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: ExtensionFilterResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: ExtensionFilterResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

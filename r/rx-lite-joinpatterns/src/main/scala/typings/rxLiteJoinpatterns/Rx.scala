@@ -14,19 +14,16 @@ object Rx {
   }
   object Observable {
     
-    inline def apply[T](
-      and: Observable[js.Any] => Pattern2[T, js.Any],
-      thenDo: js.Function1[/* item1 */ T, js.Any] => Plan[js.Any]
-    ): Observable[T] = {
+    inline def apply[T](and: Observable[Any] => Pattern2[T, Any], thenDo: js.Function1[/* item1 */ T, Any] => Plan[Any]): Observable[T] = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
       __obj.asInstanceOf[Observable[T]]
     }
     
     extension [Self <: Observable[?], T](x: Self & Observable[T]) {
       
-      inline def setAnd(value: Observable[js.Any] => Pattern2[T, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Observable[Any] => Pattern2[T, Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
-      inline def setThenDo(value: js.Function1[/* item1 */ T, js.Any] => Plan[js.Any]): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
+      inline def setThenDo(value: js.Function1[/* item1 */ T, Any] => Plan[Any]): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
     }
   }
   
@@ -36,14 +33,14 @@ object Rx {
   }
   object ObservableStatic {
     
-    inline def apply(when: Plan[js.Any] => Observable[js.Any]): ObservableStatic = {
+    inline def apply(when: Plan[Any] => Observable[Any]): ObservableStatic = {
       val __obj = js.Dynamic.literal(when = js.Any.fromFunction1(when))
       __obj.asInstanceOf[ObservableStatic]
     }
     
     extension [Self <: ObservableStatic](x: Self) {
       
-      inline def setWhen(value: Plan[js.Any] => Observable[js.Any]): Self = StObject.set(x, "when", js.Any.fromFunction1(value))
+      inline def setWhen(value: Plan[Any] => Observable[Any]): Self = StObject.set(x, "when", js.Any.fromFunction1(value))
     }
   }
   
@@ -55,19 +52,16 @@ object Rx {
   }
   object Pattern1 {
     
-    inline def apply[T1](
-      and: Observable[js.Any] => Pattern2[T1, js.Any],
-      thenDo: js.Function1[/* item1 */ T1, js.Any] => Plan[js.Any]
-    ): Pattern1[T1] = {
+    inline def apply[T1](and: Observable[Any] => Pattern2[T1, Any], thenDo: js.Function1[/* item1 */ T1, Any] => Plan[Any]): Pattern1[T1] = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
       __obj.asInstanceOf[Pattern1[T1]]
     }
     
     extension [Self <: Pattern1[?], T1](x: Self & Pattern1[T1]) {
       
-      inline def setAnd(value: Observable[js.Any] => Pattern2[T1, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Observable[Any] => Pattern2[T1, Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
-      inline def setThenDo(value: js.Function1[/* item1 */ T1, js.Any] => Plan[js.Any]): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
+      inline def setThenDo(value: js.Function1[/* item1 */ T1, Any] => Plan[Any]): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
     }
   }
   
@@ -80,8 +74,8 @@ object Rx {
   object Pattern2 {
     
     inline def apply[T1, T2](
-      and: Observable[js.Any] => Pattern3[T1, T2, js.Any],
-      thenDo: js.Function2[/* item1 */ T1, /* item2 */ T2, js.Any] => Plan[js.Any]
+      and: Observable[Any] => Pattern3[T1, T2, Any],
+      thenDo: js.Function2[/* item1 */ T1, /* item2 */ T2, Any] => Plan[Any]
     ): Pattern2[T1, T2] = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
       __obj.asInstanceOf[Pattern2[T1, T2]]
@@ -89,9 +83,9 @@ object Rx {
     
     extension [Self <: Pattern2[?, ?], T1, T2](x: Self & (Pattern2[T1, T2])) {
       
-      inline def setAnd(value: Observable[js.Any] => Pattern3[T1, T2, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Observable[Any] => Pattern3[T1, T2, Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
-      inline def setThenDo(value: js.Function2[/* item1 */ T1, /* item2 */ T2, js.Any] => Plan[js.Any]): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
+      inline def setThenDo(value: js.Function2[/* item1 */ T1, /* item2 */ T2, Any] => Plan[Any]): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
     }
   }
   
@@ -104,8 +98,8 @@ object Rx {
   object Pattern3 {
     
     inline def apply[T1, T2, T3](
-      and: Observable[js.Any] => Pattern4[T1, T2, T3, js.Any],
-      thenDo: js.Function3[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, js.Any] => Plan[js.Any]
+      and: Observable[Any] => Pattern4[T1, T2, T3, Any],
+      thenDo: js.Function3[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, Any] => Plan[Any]
     ): Pattern3[T1, T2, T3] = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
       __obj.asInstanceOf[Pattern3[T1, T2, T3]]
@@ -113,9 +107,9 @@ object Rx {
     
     extension [Self <: Pattern3[?, ?, ?], T1, T2, T3](x: Self & (Pattern3[T1, T2, T3])) {
       
-      inline def setAnd(value: Observable[js.Any] => Pattern4[T1, T2, T3, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Observable[Any] => Pattern4[T1, T2, T3, Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
-      inline def setThenDo(value: js.Function3[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, js.Any] => Plan[js.Any]): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
+      inline def setThenDo(value: js.Function3[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, Any] => Plan[Any]): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
     }
   }
   
@@ -128,8 +122,8 @@ object Rx {
   object Pattern4 {
     
     inline def apply[T1, T2, T3, T4](
-      and: Observable[js.Any] => Pattern5[T1, T2, T3, T4, js.Any],
-      thenDo: js.Function4[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, js.Any] => Plan[js.Any]
+      and: Observable[Any] => Pattern5[T1, T2, T3, T4, Any],
+      thenDo: js.Function4[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, Any] => Plan[Any]
     ): Pattern4[T1, T2, T3, T4] = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
       __obj.asInstanceOf[Pattern4[T1, T2, T3, T4]]
@@ -137,10 +131,10 @@ object Rx {
     
     extension [Self <: Pattern4[?, ?, ?, ?], T1, T2, T3, T4](x: Self & (Pattern4[T1, T2, T3, T4])) {
       
-      inline def setAnd(value: Observable[js.Any] => Pattern5[T1, T2, T3, T4, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Observable[Any] => Pattern5[T1, T2, T3, T4, Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
       inline def setThenDo(
-        value: js.Function4[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, js.Any] => Plan[js.Any]
+        value: js.Function4[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, Any] => Plan[Any]
       ): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
     }
   }
@@ -156,8 +150,8 @@ object Rx {
   object Pattern5 {
     
     inline def apply[T1, T2, T3, T4, T5](
-      and: Observable[js.Any] => Pattern6[T1, T2, T3, T4, T5, js.Any],
-      thenDo: js.Function5[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, /* item5 */ T5, js.Any] => Plan[js.Any]
+      and: Observable[Any] => Pattern6[T1, T2, T3, T4, T5, Any],
+      thenDo: js.Function5[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, /* item5 */ T5, Any] => Plan[Any]
     ): Pattern5[T1, T2, T3, T4, T5] = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
       __obj.asInstanceOf[Pattern5[T1, T2, T3, T4, T5]]
@@ -165,10 +159,10 @@ object Rx {
     
     extension [Self <: Pattern5[?, ?, ?, ?, ?], T1, T2, T3, T4, T5](x: Self & (Pattern5[T1, T2, T3, T4, T5])) {
       
-      inline def setAnd(value: Observable[js.Any] => Pattern6[T1, T2, T3, T4, T5, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Observable[Any] => Pattern6[T1, T2, T3, T4, T5, Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
       inline def setThenDo(
-        value: js.Function5[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, /* item5 */ T5, js.Any] => Plan[js.Any]
+        value: js.Function5[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, /* item5 */ T5, Any] => Plan[Any]
       ): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
     }
   }
@@ -192,7 +186,7 @@ object Rx {
   object Pattern6 {
     
     inline def apply[T1, T2, T3, T4, T5, T6](
-      and: Observable[js.Any] => Pattern7[T1, T2, T3, T4, T5, T6, js.Any],
+      and: Observable[Any] => Pattern7[T1, T2, T3, T4, T5, T6, Any],
       thenDo: js.Function6[
           /* item1 */ T1, 
           /* item2 */ T2, 
@@ -200,8 +194,8 @@ object Rx {
           /* item4 */ T4, 
           /* item5 */ T5, 
           /* item6 */ T6, 
-          js.Any
-        ] => Plan[js.Any]
+          Any
+        ] => Plan[Any]
     ): Pattern6[T1, T2, T3, T4, T5, T6] = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
       __obj.asInstanceOf[Pattern6[T1, T2, T3, T4, T5, T6]]
@@ -209,7 +203,7 @@ object Rx {
     
     extension [Self <: Pattern6[?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6](x: Self & (Pattern6[T1, T2, T3, T4, T5, T6])) {
       
-      inline def setAnd(value: Observable[js.Any] => Pattern7[T1, T2, T3, T4, T5, T6, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Observable[Any] => Pattern7[T1, T2, T3, T4, T5, T6, Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
       inline def setThenDo(
         value: js.Function6[
@@ -219,8 +213,8 @@ object Rx {
               /* item4 */ T4, 
               /* item5 */ T5, 
               /* item6 */ T6, 
-              js.Any
-            ] => Plan[js.Any]
+              Any
+            ] => Plan[Any]
       ): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
     }
   }
@@ -245,7 +239,7 @@ object Rx {
   object Pattern7 {
     
     inline def apply[T1, T2, T3, T4, T5, T6, T7](
-      and: Observable[js.Any] => Pattern8[T1, T2, T3, T4, T5, T6, T7, js.Any],
+      and: Observable[Any] => Pattern8[T1, T2, T3, T4, T5, T6, T7, Any],
       thenDo: js.Function7[
           /* item1 */ T1, 
           /* item2 */ T2, 
@@ -254,8 +248,8 @@ object Rx {
           /* item5 */ T5, 
           /* item6 */ T6, 
           /* item7 */ T7, 
-          js.Any
-        ] => Plan[js.Any]
+          Any
+        ] => Plan[Any]
     ): Pattern7[T1, T2, T3, T4, T5, T6, T7] = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
       __obj.asInstanceOf[Pattern7[T1, T2, T3, T4, T5, T6, T7]]
@@ -263,7 +257,7 @@ object Rx {
     
     extension [Self <: Pattern7[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, T7](x: Self & (Pattern7[T1, T2, T3, T4, T5, T6, T7])) {
       
-      inline def setAnd(value: Observable[js.Any] => Pattern8[T1, T2, T3, T4, T5, T6, T7, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Observable[Any] => Pattern8[T1, T2, T3, T4, T5, T6, T7, Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
       inline def setThenDo(
         value: js.Function7[
@@ -274,8 +268,8 @@ object Rx {
               /* item5 */ T5, 
               /* item6 */ T6, 
               /* item7 */ T7, 
-              js.Any
-            ] => Plan[js.Any]
+              Any
+            ] => Plan[Any]
       ): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
     }
   }
@@ -301,7 +295,7 @@ object Rx {
   object Pattern8 {
     
     inline def apply[T1, T2, T3, T4, T5, T6, T7, T8](
-      and: Observable[js.Any] => Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, js.Any],
+      and: Observable[Any] => Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, Any],
       thenDo: js.Function8[
           /* item1 */ T1, 
           /* item2 */ T2, 
@@ -311,8 +305,8 @@ object Rx {
           /* item6 */ T6, 
           /* item7 */ T7, 
           /* item8 */ T8, 
-          js.Any
-        ] => Plan[js.Any]
+          Any
+        ] => Plan[Any]
     ): Pattern8[T1, T2, T3, T4, T5, T6, T7, T8] = {
       val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), thenDo = js.Any.fromFunction1(thenDo))
       __obj.asInstanceOf[Pattern8[T1, T2, T3, T4, T5, T6, T7, T8]]
@@ -320,7 +314,7 @@ object Rx {
     
     extension [Self <: Pattern8[?, ?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, T7, T8](x: Self & (Pattern8[T1, T2, T3, T4, T5, T6, T7, T8])) {
       
-      inline def setAnd(value: Observable[js.Any] => Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, js.Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+      inline def setAnd(value: Observable[Any] => Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, Any]): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
       inline def setThenDo(
         value: js.Function8[
@@ -332,8 +326,8 @@ object Rx {
               /* item6 */ T6, 
               /* item7 */ T7, 
               /* item8 */ T8, 
-              js.Any
-            ] => Plan[js.Any]
+              Any
+            ] => Plan[Any]
       ): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
     }
   }
@@ -368,8 +362,8 @@ object Rx {
           /* item7 */ T7, 
           /* item8 */ T8, 
           /* item9 */ T9, 
-          js.Any
-        ] => Plan[js.Any]
+          Any
+        ] => Plan[Any]
     ): Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, T9] = {
       val __obj = js.Dynamic.literal(thenDo = js.Any.fromFunction1(thenDo))
       __obj.asInstanceOf[Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, T9]]
@@ -388,8 +382,8 @@ object Rx {
               /* item7 */ T7, 
               /* item8 */ T8, 
               /* item9 */ T9, 
-              js.Any
-            ] => Plan[js.Any]
+              Any
+            ] => Plan[Any]
       ): Self = StObject.set(x, "thenDo", js.Any.fromFunction1(value))
     }
   }

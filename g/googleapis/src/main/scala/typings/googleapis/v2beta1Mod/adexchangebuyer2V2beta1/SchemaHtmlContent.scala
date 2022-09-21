@@ -4,25 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * HTML content for a creative.
-  */
 trait SchemaHtmlContent extends StObject {
   
   /**
     * The height of the HTML snippet in pixels.
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The HTML snippet that displays the ad when inserted in the web page.
     */
-  var snippet: js.UndefOr[String] = js.undefined
+  var snippet: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The width of the HTML snippet in pixels.
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaHtmlContent {
   
@@ -35,13 +32,19 @@ object SchemaHtmlContent {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
+    
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
+    inline def setSnippetNull: Self = StObject.set(x, "snippet", null)
+    
     inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

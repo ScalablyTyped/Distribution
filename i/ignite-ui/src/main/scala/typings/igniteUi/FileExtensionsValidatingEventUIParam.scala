@@ -19,7 +19,7 @@ trait FileExtensionsValidatingEventUIParam extends StObject {
   /**
     * Gets the the igUpload widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object FileExtensionsValidatingEventUIParam {
   
@@ -38,7 +38,7 @@ object FileExtensionsValidatingEventUIParam {
     
     inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

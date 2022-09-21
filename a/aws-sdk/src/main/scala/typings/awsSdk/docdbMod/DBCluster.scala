@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DBCluster extends StObject {
   
   /**
-    * Provides a list of the AWS Identity and Access Management (IAM) roles that are associated with the cluster. IAM roles that are associated with a cluster grant permission for the cluster to access other AWS services on your behalf.
+    * Provides a list of the Identity and Access Management (IAM) roles that are associated with the cluster. (IAM) roles that are associated with a cluster grant permission for the cluster to access other Amazon Web Services services on your behalf.
     */
   var AssociatedRoles: js.UndefOr[DBClusterRoles] = js.undefined
   
@@ -22,9 +22,14 @@ trait DBCluster extends StObject {
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
+    * Identifies the clone group to which the DB cluster is associated.
+    */
+  var CloneGroupId: js.UndefOr[String] = js.undefined
+  
+  /**
     * Specifies the time when the cluster was created, in Universal Coordinated Time (UTC).
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
+  var ClusterCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the cluster.
@@ -52,7 +57,7 @@ trait DBCluster extends StObject {
   var DBSubnetGroup: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS Region-unique, immutable identifier for the cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the cluster is accessed.
+    * The Amazon Web Services Region-unique, immutable identifier for the cluster. This identifier is found in CloudTrail log entries whenever the KMS key for the cluster is accessed.
     */
   var DbClusterResourceId: js.UndefOr[String] = js.undefined
   
@@ -64,7 +69,7 @@ trait DBCluster extends StObject {
   /**
     * The earliest time to which a database can be restored with point-in-time restore.
     */
-  var EarliestRestorableTime: js.UndefOr[TStamp] = js.undefined
+  var EarliestRestorableTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of log types that this cluster is configured to export to Amazon CloudWatch Logs.
@@ -92,14 +97,14 @@ trait DBCluster extends StObject {
   var HostedZoneId: js.UndefOr[String] = js.undefined
   
   /**
-    * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted cluster.
+    * If StorageEncrypted is true, the KMS key identifier for the encrypted cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the latest time to which a database can be restored with point-in-time restore.
     */
-  var LatestRestorableTime: js.UndefOr[TStamp] = js.undefined
+  var LatestRestorableTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Contains the master user name for the cluster.
@@ -132,9 +137,19 @@ trait DBCluster extends StObject {
   var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   
   /**
+    * Contains one or more identifiers of the secondary clusters that are associated with this cluster.
+    */
+  var ReadReplicaIdentifiers: js.UndefOr[ReadReplicaIdentifierList] = js.undefined
+  
+  /**
     * The reader endpoint for the cluster. The reader endpoint for a cluster load balances connections across the Amazon DocumentDB replicas that are available in a cluster. As clients request new connections to the reader endpoint, Amazon DocumentDB distributes the connection requests among the Amazon DocumentDB replicas in the cluster. This functionality can help balance your read workload across multiple Amazon DocumentDB replicas in your cluster.  If a failover occurs, and the Amazon DocumentDB replica that you are connected to is promoted to be the primary instance, your connection is dropped. To continue sending your read workload to other Amazon DocumentDB replicas in the cluster, you can then reconnect to the reader endpoint.
     */
   var ReaderEndpoint: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Contains the identifier of the source cluster if this cluster is a secondary cluster.
+    */
+  var ReplicationSourceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the current state of this cluster.
@@ -164,19 +179,23 @@ object DBCluster {
     
     inline def setAssociatedRolesUndefined: Self = StObject.set(x, "AssociatedRoles", js.undefined)
     
-    inline def setAssociatedRolesVarargs(value: DBClusterRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value :_*))
+    inline def setAssociatedRolesVarargs(value: DBClusterRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value*))
     
     inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setBackupRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "BackupRetentionPeriod", value.asInstanceOf[js.Any])
     
     inline def setBackupRetentionPeriodUndefined: Self = StObject.set(x, "BackupRetentionPeriod", js.undefined)
     
-    inline def setClusterCreateTime(value: TStamp): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
+    inline def setCloneGroupId(value: String): Self = StObject.set(x, "CloneGroupId", value.asInstanceOf[js.Any])
+    
+    inline def setCloneGroupIdUndefined: Self = StObject.set(x, "CloneGroupId", js.undefined)
+    
+    inline def setClusterCreateTime(value: js.Date): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
     
     inline def setClusterCreateTimeUndefined: Self = StObject.set(x, "ClusterCreateTime", js.undefined)
     
@@ -192,7 +211,7 @@ object DBCluster {
     
     inline def setDBClusterMembersUndefined: Self = StObject.set(x, "DBClusterMembers", js.undefined)
     
-    inline def setDBClusterMembersVarargs(value: DBClusterMember*): Self = StObject.set(x, "DBClusterMembers", js.Array(value :_*))
+    inline def setDBClusterMembersVarargs(value: DBClusterMember*): Self = StObject.set(x, "DBClusterMembers", js.Array(value*))
     
     inline def setDBClusterParameterGroup(value: String): Self = StObject.set(x, "DBClusterParameterGroup", value.asInstanceOf[js.Any])
     
@@ -210,7 +229,7 @@ object DBCluster {
     
     inline def setDeletionProtectionUndefined: Self = StObject.set(x, "DeletionProtection", js.undefined)
     
-    inline def setEarliestRestorableTime(value: TStamp): Self = StObject.set(x, "EarliestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setEarliestRestorableTime(value: js.Date): Self = StObject.set(x, "EarliestRestorableTime", value.asInstanceOf[js.Any])
     
     inline def setEarliestRestorableTimeUndefined: Self = StObject.set(x, "EarliestRestorableTime", js.undefined)
     
@@ -218,7 +237,7 @@ object DBCluster {
     
     inline def setEnabledCloudwatchLogsExportsUndefined: Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.undefined)
     
-    inline def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.Array(value :_*))
+    inline def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.Array(value*))
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
@@ -240,7 +259,7 @@ object DBCluster {
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    inline def setLatestRestorableTime(value: TStamp): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setLatestRestorableTime(value: js.Date): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
     
     inline def setLatestRestorableTimeUndefined: Self = StObject.set(x, "LatestRestorableTime", js.undefined)
     
@@ -268,9 +287,19 @@ object DBCluster {
     
     inline def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "PreferredMaintenanceWindow", js.undefined)
     
+    inline def setReadReplicaIdentifiers(value: ReadReplicaIdentifierList): Self = StObject.set(x, "ReadReplicaIdentifiers", value.asInstanceOf[js.Any])
+    
+    inline def setReadReplicaIdentifiersUndefined: Self = StObject.set(x, "ReadReplicaIdentifiers", js.undefined)
+    
+    inline def setReadReplicaIdentifiersVarargs(value: String*): Self = StObject.set(x, "ReadReplicaIdentifiers", js.Array(value*))
+    
     inline def setReaderEndpoint(value: String): Self = StObject.set(x, "ReaderEndpoint", value.asInstanceOf[js.Any])
     
     inline def setReaderEndpointUndefined: Self = StObject.set(x, "ReaderEndpoint", js.undefined)
+    
+    inline def setReplicationSourceIdentifier(value: String): Self = StObject.set(x, "ReplicationSourceIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setReplicationSourceIdentifierUndefined: Self = StObject.set(x, "ReplicationSourceIdentifier", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
@@ -284,6 +313,6 @@ object DBCluster {
     
     inline def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
-    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
+    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value*))
   }
 }

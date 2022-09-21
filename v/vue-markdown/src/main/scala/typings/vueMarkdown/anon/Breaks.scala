@@ -8,7 +8,7 @@ trait Breaks extends StObject {
   
   var breaks: Boolean
   
-  var highlight: js.Any
+  var highlight: scala.Any
   
   var html: Boolean
   
@@ -28,7 +28,7 @@ object Breaks {
   
   inline def apply(
     breaks: Boolean,
-    highlight: js.Any,
+    highlight: scala.Any,
     html: Boolean,
     langPrefix: String,
     linkify: Boolean,
@@ -45,7 +45,7 @@ object Breaks {
     
     inline def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
-    inline def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: scala.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

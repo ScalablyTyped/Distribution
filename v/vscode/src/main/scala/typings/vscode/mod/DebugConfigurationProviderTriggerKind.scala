@@ -23,7 +23,7 @@ object DebugConfigurationProviderTriggerKind extends StObject {
   /* 2 */ val Dynamic: typings.vscode.mod.DebugConfigurationProviderTriggerKind.Dynamic & Double = js.native
   
   /**
-    *    `DebugConfigurationProvider.provideDebugConfigurations` is called to provide the initial debug configurations for a newly created launch.json.
+    *	`DebugConfigurationProvider.provideDebugConfigurations` is called to provide the initial debug configurations for a newly created launch.json.
     */
   @js.native
   sealed trait Initial

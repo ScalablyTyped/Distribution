@@ -24,7 +24,7 @@ object JQueryDotDotDot {
       *                 length: number; // seems to be always 1
       *                 [index] // this contains the text: orgContent[0].data
       */
-    var callback: js.UndefOr[js.Function2[/* isTruncated */ Boolean, /* orgContent */ js.Any, Unit]] = js.undefined
+    var callback: js.UndefOr[js.Function2[/* isTruncated */ Boolean, /* orgContent */ Any, Unit]] = js.undefined
     
     /**    The text to add as ellipsis.
       * Default: '... '
@@ -71,7 +71,7 @@ object JQueryDotDotDot {
       
       inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      inline def setCallback(value: (/* isTruncated */ Boolean, /* orgContent */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* isTruncated */ Boolean, /* orgContent */ Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
@@ -131,13 +131,13 @@ object JQueryDotDotDot {
       
       inline def setNoEllipsisUndefined: Self = StObject.set(x, "noEllipsis", js.undefined)
       
-      inline def setNoEllipsisVarargs(value: String*): Self = StObject.set(x, "noEllipsis", js.Array(value :_*))
+      inline def setNoEllipsisVarargs(value: String*): Self = StObject.set(x, "noEllipsis", js.Array(value*))
       
       inline def setRemove(value: js.Array[String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
       inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      inline def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value :_*))
+      inline def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value*))
     }
   }
 }

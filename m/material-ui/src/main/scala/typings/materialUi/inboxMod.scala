@@ -10,10 +10,10 @@ object inboxMod {
   
   @JSImport("material-ui/svg-icons/content/inbox", JSImport.Default)
   @js.native
-  class default () extends ContentInbox
+  open class default () extends ContentInbox
   
   @JSImport("material-ui/svg-icons/content/inbox", "ContentInbox")
   @js.native
-  class ContentInbox ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentInbox ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

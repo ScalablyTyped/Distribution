@@ -8,5 +8,5 @@ object restoreTableToPointInTimeInputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/RestoreTableToPointInTimeInput", "RestoreTableToPointInTimeInput")
   @js.native
-  val RestoreTableToPointInTimeInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RestoreTableToPointInTimeInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

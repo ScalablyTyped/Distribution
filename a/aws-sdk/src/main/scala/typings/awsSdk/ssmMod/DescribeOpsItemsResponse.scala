@@ -33,6 +33,6 @@ object DescribeOpsItemsResponse {
     
     inline def setOpsItemSummariesUndefined: Self = StObject.set(x, "OpsItemSummaries", js.undefined)
     
-    inline def setOpsItemSummariesVarargs(value: OpsItemSummary*): Self = StObject.set(x, "OpsItemSummaries", js.Array(value :_*))
+    inline def setOpsItemSummariesVarargs(value: OpsItemSummary*): Self = StObject.set(x, "OpsItemSummaries", js.Array(value*))
   }
 }

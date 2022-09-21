@@ -95,4 +95,61 @@ object data {
       */
     type Event = typings.heremaps.H.util.Event
   }
+  
+  /**
+    * This namespace provides GeoJSON functionality.
+    */
+  object geojson {
+    
+    /**
+      * This class represents a GeoJSON reader responsible for fetching and interpreting GeoJSON data.
+      * It creates an instance of H.map.Object that can be displayed on the map (for more details see GeoJSON documentation {@link https://geojson.org}).
+      * Auxiliary data that accompanies geometries (the contents of the field properties) is bound to the map object and
+      * can be fetched with the method getData() on that object. See H.map.Object#getData.
+      * Note that you can load a GeoJSON file even from a different domain, if that domain supports Cross-Origin Resource Sharing.
+      */
+    @js.native
+    trait Reader
+      extends StObject
+         with AbstractReader {
+      
+      /**
+        * This method launches the parsing process on the provided data.
+        * @param data {*=} A string or object containing the data to parse
+        */
+      def parseData(data: Any): Unit = js.native
+    }
+    object Reader {
+      
+      /**
+        * This type encapsulates configuration (initialization) properties for a H.data.geojson.Reader.
+        * @property style {Function=} - The optional URL of the data file.
+        * @property disableLegacyMode {boolean=} - An object providing additional reader configuration parameters.
+        */
+      trait Options extends StObject {
+        
+        var disableLegacyMode: js.UndefOr[Boolean] = js.undefined
+        
+        var style: js.UndefOr[js.Function1[/* mapObject */ Object, Unit]] = js.undefined
+      }
+      object Options {
+        
+        inline def apply(): Options = {
+          val __obj = js.Dynamic.literal()
+          __obj.asInstanceOf[Options]
+        }
+        
+        extension [Self <: Options](x: Self) {
+          
+          inline def setDisableLegacyMode(value: Boolean): Self = StObject.set(x, "disableLegacyMode", value.asInstanceOf[js.Any])
+          
+          inline def setDisableLegacyModeUndefined: Self = StObject.set(x, "disableLegacyMode", js.undefined)
+          
+          inline def setStyle(value: /* mapObject */ Object => Unit): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
+          
+          inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        }
+      }
+    }
+  }
 }

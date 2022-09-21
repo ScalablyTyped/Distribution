@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-actuator
 
-Typings are for version 1.6
+Typings are for version 1.8
 
 ## Library description:
 Provides endpoints to help you monitor and manage your application when it's pushed to production.
@@ -10,10 +10,10 @@ Provides endpoints to help you monitor and manage your application when it's pus
 | ------------------ | :-------------: |
 | Full name          | express-actuator |
 | Keywords           | actuator, express, middleware, health-check, ping, metrics, kubernetes |
-| # releases         | 11 |
-| # dependents       | 3 |
-| # downloads        | 56371 |
-| # stars            | 2 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 37626.333333333336 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/rcruzper/express-actuator#readme)

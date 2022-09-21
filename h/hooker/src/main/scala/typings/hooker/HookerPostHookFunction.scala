@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HookerPostHookFunction extends StObject {
   
-  def apply(result: js.Any, args: js.Any*): IHookerPostHookResult | Unit = js.native
+  def apply(result: Any, args: Any*): IHookerPostHookResult | Unit = js.native
 }

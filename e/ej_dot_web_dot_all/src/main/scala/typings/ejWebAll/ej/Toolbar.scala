@@ -15,7 +15,7 @@ trait Toolbar
     * @param {any} The element need to be deselected
     * @returns {void}
     */
-  def deselectItem(element: js.Any): Unit = js.native
+  def deselectItem(element: Any): Unit = js.native
   
   /** Deselect the Toolbar item based on specified id.
     * @param {string} The ID of the element need to be deselected
@@ -32,7 +32,7 @@ trait Toolbar
     * @param {any} The element need to be disabled
     * @returns {void}
     */
-  def disableItem(element: js.Any): Unit = js.native
+  def disableItem(element: Any): Unit = js.native
   
   /** Disable the Toolbar item based on specified item id in the Toolbar.
     * @param {string} The ID of the element need to be disabled
@@ -49,7 +49,7 @@ trait Toolbar
     * @param {any} The element need to be enabled
     * @returns {void}
     */
-  def enableItem(element: js.Any): Unit = js.native
+  def enableItem(element: Any): Unit = js.native
   
   /** Enable the Toolbar item based on specified item id in the Toolbar.
     * @param {string} The ID of the element need to be enabled
@@ -69,7 +69,7 @@ trait Toolbar
     * @param {any} The element need to be removed
     * @returns {void}
     */
-  def removeItem(element: js.Any): Unit = js.native
+  def removeItem(element: Any): Unit = js.native
   
   /** Remove the item from toolbar, based on specified item id in the Toolbar.
     * @param {string} The ID of the element need to be removed
@@ -81,7 +81,7 @@ trait Toolbar
     * @param {any} The element need to be selected
     * @returns {void}
     */
-  def selectItem(element: js.Any): Unit = js.native
+  def selectItem(element: Any): Unit = js.native
   
   /** Selects the item from toolbar, based on specified item id in the Toolbar.
     * @param {string} The ID of the element need to be selected
@@ -123,7 +123,7 @@ object Toolbar {
     
     /** returns the target of the current object.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** returns the Toolbar model
       */
@@ -135,7 +135,7 @@ object Toolbar {
     
     /** returns the target of the current object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -154,7 +154,7 @@ object Toolbar {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
@@ -166,7 +166,7 @@ object Toolbar {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -258,7 +258,7 @@ object Toolbar {
     
     /** Defines the HTML attributes such as id, class, styles for the item to extend the capability.
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Defines id for the tag.
       */
@@ -301,7 +301,7 @@ object Toolbar {
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -380,7 +380,7 @@ object Toolbar {
     
     /** returns the target of the current object.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** returns the Toolbar model
       */
@@ -392,7 +392,7 @@ object Toolbar {
     
     /** returns the target of the current object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -411,7 +411,7 @@ object Toolbar {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
@@ -423,7 +423,7 @@ object Toolbar {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -441,7 +441,7 @@ object Toolbar {
     
     /** returns the target of the current object.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** returns the Toolbar model
       */
@@ -453,7 +453,7 @@ object Toolbar {
     
     /** returns the target of the current object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -472,7 +472,7 @@ object Toolbar {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
@@ -484,7 +484,7 @@ object Toolbar {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -502,7 +502,7 @@ object Toolbar {
     
     /** Defines the HTML attributes such as id, class, styles for the item .
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Defines id for the tag.
       */
@@ -545,7 +545,7 @@ object Toolbar {
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -601,7 +601,7 @@ object Toolbar {
     /** Specifies dataSource value for the Toolbar control during initialization.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Fires when the Toolbar is destroyed successfully.
       */
@@ -610,7 +610,7 @@ object Toolbar {
     /** Disables an Item or set of Items that are enabled in the Toolbar
       * @Default {[]}
       */
-    var disabledItemIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var disabledItemIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies enableRTL property to align the Toolbar control from right to left direction.
       * @Default {false}
@@ -630,7 +630,7 @@ object Toolbar {
     /** Enables an Item or set of Items that are disabled in the Toolbar
       * @Default {[]}
       */
-    var enabledItemIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var enabledItemIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the mapping fields for the data items of the Toolbar
       * @Default {null}
@@ -654,7 +654,7 @@ object Toolbar {
     /** Specifies the list of HTML attributes to be added to toolbar control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Enables/Disables the responsive support for Toolbar items during the window resizing time.
       * @Default {false}
@@ -685,7 +685,7 @@ object Toolbar {
     /** Specifies the query to retrieve the data from the online server. The query is used only when the online dataSource is used.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Specifies the Toolbar responsive type.
       * @Default {Popup}
@@ -722,7 +722,7 @@ object Toolbar {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -730,11 +730,11 @@ object Toolbar {
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setDisabledItemIndices(value: js.Array[js.Any]): Self = StObject.set(x, "disabledItemIndices", value.asInstanceOf[js.Any])
+      inline def setDisabledItemIndices(value: js.Array[Any]): Self = StObject.set(x, "disabledItemIndices", value.asInstanceOf[js.Any])
       
       inline def setDisabledItemIndicesUndefined: Self = StObject.set(x, "disabledItemIndices", js.undefined)
       
-      inline def setDisabledItemIndicesVarargs(value: js.Any*): Self = StObject.set(x, "disabledItemIndices", js.Array(value :_*))
+      inline def setDisabledItemIndicesVarargs(value: Any*): Self = StObject.set(x, "disabledItemIndices", js.Array(value*))
       
       inline def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
       
@@ -746,11 +746,11 @@ object Toolbar {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      inline def setEnabledItemIndices(value: js.Array[js.Any]): Self = StObject.set(x, "enabledItemIndices", value.asInstanceOf[js.Any])
+      inline def setEnabledItemIndices(value: js.Array[Any]): Self = StObject.set(x, "enabledItemIndices", value.asInstanceOf[js.Any])
       
       inline def setEnabledItemIndicesUndefined: Self = StObject.set(x, "enabledItemIndices", js.undefined)
       
-      inline def setEnabledItemIndicesVarargs(value: js.Any*): Self = StObject.set(x, "enabledItemIndices", js.Array(value :_*))
+      inline def setEnabledItemIndicesVarargs(value: Any*): Self = StObject.set(x, "enabledItemIndices", js.Array(value*))
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
@@ -770,7 +770,7 @@ object Toolbar {
       
       inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -802,7 +802,7 @@ object Toolbar {
       
       inline def setOverflowOpenUndefined: Self = StObject.set(x, "overflowOpen", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -836,7 +836,7 @@ object Toolbar {
     
     /** returns the target of the current object.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** returns the Toolbar model
       */
@@ -867,7 +867,7 @@ object Toolbar {
       
       inline def setClientYUndefined: Self = StObject.set(x, "clientY", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
@@ -897,7 +897,7 @@ object Toolbar {
     
     /** returns the target of the current object.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** returns the Toolbar model
       */
@@ -928,7 +928,7 @@ object Toolbar {
       
       inline def setClientYUndefined: Self = StObject.set(x, "clientY", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       

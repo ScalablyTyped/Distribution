@@ -2,7 +2,6 @@ package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.fundamentalReactStrings.ListDotSelection
 import typings.fundamentalReact.listMod.ListSelectionProps
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -13,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionComponentListSele extends StObject {
   
-  def apply(props: PropsWithChildren[ListSelectionProps]): ReactElement | Null = js.native
-  def apply(props: PropsWithChildren[ListSelectionProps], context: js.Any): ReactElement | Null = js.native
+  def apply(props: ListSelectionProps): ReactElement | Null = js.native
+  def apply(props: ListSelectionProps, context: Any): ReactElement | Null = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
   var defaultProps: js.UndefOr[PartialListSelectionProps] = js.native
   

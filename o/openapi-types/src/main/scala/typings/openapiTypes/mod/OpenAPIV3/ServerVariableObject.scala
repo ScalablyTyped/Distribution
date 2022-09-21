@@ -31,6 +31,6 @@ object ServerVariableObject {
     
     inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value*))
   }
 }

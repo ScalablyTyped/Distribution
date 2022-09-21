@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "ButtonToggle")
+@JSImport("reactstrap", "ButtonToggle")
 @js.native
-class ButtonToggle () extends default
+open class ButtonToggle () extends default

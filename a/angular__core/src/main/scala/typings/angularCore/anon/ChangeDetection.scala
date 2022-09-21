@@ -7,17 +7,15 @@ import typings.angularCore.mod.ComponentDefFeature
 import typings.angularCore.mod.ComponentTemplate
 import typings.angularCore.mod.ContentQueriesFunction
 import typings.angularCore.mod.CssSelector
-import typings.angularCore.mod.DirectiveTypeList
-import typings.angularCore.mod.DirectiveTypesOrFactory
+import typings.angularCore.mod.DependencyTypeList
 import typings.angularCore.mod.HostBindingsFunction
 import typings.angularCore.mod.PipeType
-import typings.angularCore.mod.PipeTypeList
-import typings.angularCore.mod.PipeTypesOrFactory
 import typings.angularCore.mod.SchemaMetadata
 import typings.angularCore.mod.TAttributes
 import typings.angularCore.mod.TConstants
 import typings.angularCore.mod.TConstantsOrFactory
 import typings.angularCore.mod.Type
+import typings.angularCore.mod.TypeOrFactory
 import typings.angularCore.mod.ViewEncapsulation
 import typings.angularCore.mod.ViewQueriesFunction
 import typings.angularCore.mod.ɵAttributeMarker
@@ -54,7 +52,7 @@ trait ChangeDetection[T] extends StObject {
     *
     * see: animation
     */
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * The number of nodes, local refs, and pipes in this component template.
@@ -65,12 +63,12 @@ trait ChangeDetection[T] extends StObject {
   var decls: Double
   
   /**
-    * Registry of directives and components that may be found in this component's view.
+    * Registry of directives, components, and pipes that may be found in this component's view.
     *
-    * The property is either an array of `DirectiveDef`s or a function which returns the array of
-    * `DirectiveDef`s. The function is necessary to be able to support forward declarations.
+    * This property is either an array of types or a function that returns the array of types. This
+    * function may be necessary to support forward declarations.
     */
-  var directives: js.UndefOr[DirectiveTypesOrFactory | Null] = js.undefined
+  var dependencies: js.UndefOr[TypeOrFactory[DependencyTypeList]] = js.undefined
   
   /**
     * Defines template and style encapsulation options available for Component's {@link Component}.
@@ -182,7 +180,7 @@ trait ChangeDetection[T] extends StObject {
   var inputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string]}
-    */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[js.Any]
+    */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -203,16 +201,8 @@ trait ChangeDetection[T] extends StObject {
   var outputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
-    */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[js.Any]
+    */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[Any]
   ] = js.undefined
-  
-  /**
-    * Registry of pipes that may be found in this component's view.
-    *
-    * The property is either an array of `PipeDefs`s or a function which returns the array of
-    * `PipeDefs`s. The function is necessary to be able to support forward declarations.
-    */
-  var pipes: js.UndefOr[PipeTypesOrFactory | Null] = js.undefined
   
   /**
     * The set of schemas that declare elements to be allowed in the component's template.
@@ -221,6 +211,11 @@ trait ChangeDetection[T] extends StObject {
   
   /** The selectors that will be used to match nodes to this component. */
   var selectors: js.UndefOr[ɵCssSelectorList] = js.undefined
+  
+  /**
+    * Whether this directive/component is standalone.
+    */
+  var standalone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A set of styles that the component needs to be present for component to render correctly.
@@ -332,27 +327,25 @@ object ChangeDetection {
     
     inline def setConstsUndefined: Self = StObject.set(x, "consts", js.undefined)
     
-    inline def setConstsVarargs(value: (TAttributes | String)*): Self = StObject.set(x, "consts", js.Array(value :_*))
+    inline def setConstsVarargs(value: (TAttributes | String)*): Self = StObject.set(x, "consts", js.Array(value*))
     
     inline def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = StObject.set(x, "contentQueries", js.Any.fromFunction3(value))
     
     inline def setContentQueriesUndefined: Self = StObject.set(x, "contentQueries", js.undefined)
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setDecls(value: Double): Self = StObject.set(x, "decls", value.asInstanceOf[js.Any])
     
-    inline def setDirectives(value: DirectiveTypesOrFactory): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: TypeOrFactory[DependencyTypeList]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
-    inline def setDirectivesFunction0(value: () => DirectiveTypeList): Self = StObject.set(x, "directives", js.Any.fromFunction0(value))
+    inline def setDependenciesFunction0(value: () => DependencyTypeList): Self = StObject.set(x, "dependencies", js.Any.fromFunction0(value))
     
-    inline def setDirectivesNull: Self = StObject.set(x, "directives", null)
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
-    
-    inline def setDirectivesVarargs(value: (ɵDirectiveType[js.Any] | ɵComponentType[js.Any] | Type[js.Any])*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: (ɵDirectiveType[Any] | ɵComponentType[Any] | PipeType[Any] | Type[Any])*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
     inline def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
     
@@ -362,19 +355,19 @@ object ChangeDetection {
     
     inline def setExportAsUndefined: Self = StObject.set(x, "exportAs", js.undefined)
     
-    inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
+    inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value*))
     
     inline def setFeatures(value: js.Array[ComponentDefFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: ComponentDefFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: ComponentDefFeature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setHostAttrs(value: TAttributes): Self = StObject.set(x, "hostAttrs", value.asInstanceOf[js.Any])
     
     inline def setHostAttrsUndefined: Self = StObject.set(x, "hostAttrs", js.undefined)
     
-    inline def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value :_*))
+    inline def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value*))
     
     inline def setHostBindings(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "hostBindings", js.Any.fromFunction2(value))
     
@@ -387,7 +380,7 @@ object ChangeDetection {
     inline def setInputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? string | [string, string]}
-      */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[Any]
     ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
@@ -396,25 +389,15 @@ object ChangeDetection {
     
     inline def setNgContentSelectorsUndefined: Self = StObject.set(x, "ngContentSelectors", js.undefined)
     
-    inline def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
+    inline def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value*))
     
     inline def setOutputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? string}
-      */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[Any]
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
-    
-    inline def setPipes(value: PipeTypesOrFactory): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
-    
-    inline def setPipesFunction0(value: () => PipeTypeList): Self = StObject.set(x, "pipes", js.Any.fromFunction0(value))
-    
-    inline def setPipesNull: Self = StObject.set(x, "pipes", null)
-    
-    inline def setPipesUndefined: Self = StObject.set(x, "pipes", js.undefined)
-    
-    inline def setPipesVarargs(value: (PipeType[js.Any] | Type[js.Any])*): Self = StObject.set(x, "pipes", js.Array(value :_*))
     
     inline def setSchemas(value: js.Array[SchemaMetadata]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
@@ -422,19 +405,23 @@ object ChangeDetection {
     
     inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
     
-    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value*))
     
     inline def setSelectors(value: ɵCssSelectorList): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
     inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    inline def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value*))
+    
+    inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+    
+    inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     
     inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setTemplate(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
     

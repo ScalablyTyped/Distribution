@@ -12,7 +12,7 @@ object indefiniteObservableMod {
   
   @JSImport("indefinite-observable/dist/IndefiniteObservable", JSImport.Default)
   @js.native
-  class default[T] protected () extends IndefiniteObservable[T] {
+  open class default[T] protected () extends IndefiniteObservable[T] {
     /**
       * The provided function should receive an observer and connect that
       * observer's `next` method to an event source (for instance,
@@ -26,7 +26,7 @@ object indefiniteObservableMod {
   
   @JSImport("indefinite-observable/dist/IndefiniteObservable", "IndefiniteObservable")
   @js.native
-  class IndefiniteObservable[T] protected ()
+  open class IndefiniteObservable[T] protected ()
     extends StObject
        with Observable[T] {
     /**
@@ -39,7 +39,7 @@ object indefiniteObservableMod {
       */
     def this(connect: Connect[T]) = this()
     
-    /* private */ var _connect: js.Any = js.native
+    /* private */ var _connect: Any = js.native
     
     /* CompleteClass */
     override def subscribe(observerOrNext: ObserverOrNext[T]): Subscription = js.native

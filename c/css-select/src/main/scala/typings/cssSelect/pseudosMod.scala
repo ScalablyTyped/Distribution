@@ -1,7 +1,7 @@
 package typings.cssSelect
 
 import typings.cssSelect.typesMod.InternalOptions
-import typings.cssWhat.parseMod.DataType
+import typings.cssWhat.typesMod.DataType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pseudosMod {
   
-  @JSImport("css-select/lib/pseudo-selectors/pseudos", JSImport.Namespace)
+  @JSImport("css-select/lib/esm/pseudo-selectors/pseudos", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("css-select/lib/pseudo-selectors/pseudos", "pseudos")
+  @JSImport("css-select/lib/esm/pseudo-selectors/pseudos", "pseudos")
   @js.native
   val pseudos: Record[String, Pseudo] = js.native
   
-  inline def verifyPseudoArgs(func: Pseudo, name: String, subselect: DataType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPseudoArgs")(func.asInstanceOf[js.Any], name.asInstanceOf[js.Any], subselect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verifyPseudoArgs[T /* <: js.Array[Any] */](func: js.Function1[/* args */ T, Boolean], name: String, subselect: DataType, argIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPseudoArgs")(func.asInstanceOf[js.Any], name.asInstanceOf[js.Any], subselect.asInstanceOf[js.Any], argIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Pseudo = js.Function3[
-    /* elem */ js.Any, 
-    /* options */ InternalOptions[js.Any, js.Any], 
-    /* subselect */ js.UndefOr[js.Any | String | Null], 
+    /* elem */ Any, 
+    /* options */ InternalOptions[Any, Any], 
+    /* subselect */ js.UndefOr[String | Null], 
     Boolean
   ]
 }

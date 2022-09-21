@@ -1,40 +1,41 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import typings.vsoNodeApi.vssinterfacesMod.ResourceRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AsyncRefOperationConflictNotification = typings.vsoNodeApi.gitInterfacesMod.AsyncRefOperationCommitLevelEventNotification
+type AsyncRefOperationConflictNotification = AsyncRefOperationCommitLevelEventNotification
 
-type AsyncRefOperationGeneralFailureNotification = typings.vsoNodeApi.gitInterfacesMod.AsyncGitOperationNotification
+type AsyncRefOperationGeneralFailureNotification = AsyncGitOperationNotification
 
-type AsyncRefOperationTimeoutNotification = typings.vsoNodeApi.gitInterfacesMod.AsyncGitOperationNotification
+type AsyncRefOperationTimeoutNotification = AsyncGitOperationNotification
 
-type AutoCompleteUpdatedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type AutoCompleteUpdatedEvent = RealTimePullRequestEvent
 
-type DiscussionsUpdatedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type DiscussionsUpdatedEvent = RealTimePullRequestEvent
 
-type GitWorkItemRef = typings.vsoNodeApi.vssinterfacesMod.ResourceRef
+type GitWorkItemRef = ResourceRef
 
-type LabelsUpdatedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type LabelsUpdatedEvent = RealTimePullRequestEvent
 
-type MergeCompletedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type MergeCompletedEvent = RealTimePullRequestEvent
 
-type PolicyEvaluationUpdatedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type PolicyEvaluationUpdatedEvent = RealTimePullRequestEvent
 
-type PullRequestCreatedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type PullRequestCreatedEvent = RealTimePullRequestEvent
 
-type ReviewerVoteUpdatedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type ReviewerVoteUpdatedEvent = RealTimePullRequestEvent
 
-type ReviewersUpdatedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type ReviewersUpdatedEvent = RealTimePullRequestEvent
 
-type ReviewersVotesResetEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type ReviewersVotesResetEvent = RealTimePullRequestEvent
 
-type StatusAddedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type StatusAddedEvent = RealTimePullRequestEvent
 
-type StatusUpdatedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type StatusUpdatedEvent = RealTimePullRequestEvent
 
-type StatusesDeletedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type StatusesDeletedEvent = RealTimePullRequestEvent
 
-type TitleDescriptionUpdatedEvent = typings.vsoNodeApi.gitInterfacesMod.RealTimePullRequestEvent
+type TitleDescriptionUpdatedEvent = RealTimePullRequestEvent

@@ -7,13 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait DelegatePermissions extends StObject
 /**
-  * This bit mask represents a delegate's permissions on a shared folder.
-  *
-  * [Api set: Mailbox 1.8]
+  * This bitmask represents a delegate's permissions on a shared folder.
   *
   * @remarks
+  * [Api set: Mailbox 1.8]
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.DelegatePermissions")
 @js.native

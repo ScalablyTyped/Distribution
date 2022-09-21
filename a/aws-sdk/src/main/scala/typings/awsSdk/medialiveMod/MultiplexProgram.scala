@@ -56,7 +56,7 @@ object MultiplexProgram {
     
     inline def setPipelineDetailsUndefined: Self = StObject.set(x, "PipelineDetails", js.undefined)
     
-    inline def setPipelineDetailsVarargs(value: MultiplexProgramPipelineDetail*): Self = StObject.set(x, "PipelineDetails", js.Array(value :_*))
+    inline def setPipelineDetailsVarargs(value: MultiplexProgramPipelineDetail*): Self = StObject.set(x, "PipelineDetails", js.Array(value*))
     
     inline def setProgramName(value: string): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
     

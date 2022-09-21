@@ -33,6 +33,6 @@ object ListWebsiteCertificateAuthoritiesResponse {
     
     inline def setWebsiteCertificateAuthoritiesUndefined: Self = StObject.set(x, "WebsiteCertificateAuthorities", js.undefined)
     
-    inline def setWebsiteCertificateAuthoritiesVarargs(value: WebsiteCaSummary*): Self = StObject.set(x, "WebsiteCertificateAuthorities", js.Array(value :_*))
+    inline def setWebsiteCertificateAuthoritiesVarargs(value: WebsiteCaSummary*): Self = StObject.set(x, "WebsiteCertificateAuthorities", js.Array(value*))
   }
 }

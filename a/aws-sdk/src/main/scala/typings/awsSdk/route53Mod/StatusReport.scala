@@ -9,7 +9,7 @@ trait StatusReport extends StObject {
   /**
     * The date and time that the health checker performed the health check in ISO 8601 format and Coordinated Universal Time (UTC). For example, the value 2017-03-27T17:48:16.751Z represents March 27, 2017 at 17:48:16.751 UTC.
     */
-  var CheckedTime: js.UndefOr[TimeStamp] = js.undefined
+  var CheckedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the status of the health check endpoint as reported by one of the Amazon Route 53 health checkers.
@@ -25,7 +25,7 @@ object StatusReport {
   
   extension [Self <: StatusReport](x: Self) {
     
-    inline def setCheckedTime(value: TimeStamp): Self = StObject.set(x, "CheckedTime", value.asInstanceOf[js.Any])
+    inline def setCheckedTime(value: js.Date): Self = StObject.set(x, "CheckedTime", value.asInstanceOf[js.Any])
     
     inline def setCheckedTimeUndefined: Self = StObject.set(x, "CheckedTime", js.undefined)
     

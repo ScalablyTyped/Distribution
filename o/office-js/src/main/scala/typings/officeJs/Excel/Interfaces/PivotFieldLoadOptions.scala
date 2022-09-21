@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel PivotField.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait PivotFieldLoadOptions extends StObject {
@@ -19,33 +19,33 @@ trait PivotFieldLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * ID of the PivotField.
     *
-    * Id of the PivotField.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Name of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Determines whether to show all items of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showAllItems: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Subtotals of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var subtotals: js.UndefOr[Boolean] = js.undefined

@@ -1,5 +1,7 @@
 package typings.npmPacklist
 
+import typings.npmPacklist.anon.Files
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +22,9 @@ object mod {
   
   trait Options extends StObject {
     
+    /** packageJsonCache */
+    var packageJsonCache: js.UndefOr[Map[String, String | Files]] = js.undefined
+    
     /** Directory to walk recusively. Defaults to `process.cwd()`. */
     var path: js.UndefOr[String] = js.undefined
   }
@@ -31,6 +36,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setPackageJsonCache(value: Map[String, String | Files]): Self = StObject.set(x, "packageJsonCache", value.asInstanceOf[js.Any])
+      
+      inline def setPackageJsonCacheUndefined: Self = StObject.set(x, "packageJsonCache", js.undefined)
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

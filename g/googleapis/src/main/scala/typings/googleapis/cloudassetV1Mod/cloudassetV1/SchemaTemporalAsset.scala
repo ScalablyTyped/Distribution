@@ -4,21 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Temporal asset. In addition to the asset, the temporal asset includes the
-  * status of the asset and valid from and to time of it.
-  */
 trait SchemaTemporalAsset extends StObject {
   
   /**
-    * Asset.
+    * An asset in Google Cloud.
     */
   var asset: js.UndefOr[SchemaAsset] = js.undefined
   
   /**
-    * If the asset is deleted or not.
+    * Whether the asset has been deleted or not.
     */
-  var deleted: js.UndefOr[Boolean] = js.undefined
+  var deleted: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * Prior copy of the asset. Populated if prior_asset_state is PRESENT. Currently this is only set for responses in Real-Time Feed.
+    */
+  var priorAsset: js.UndefOr[SchemaAsset] = js.undefined
+  
+  /**
+    * State of prior_asset.
+    */
+  var priorAssetState: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The time window when the asset data and state was observed.
@@ -40,7 +46,19 @@ object SchemaTemporalAsset {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
+    inline def setDeletedNull: Self = StObject.set(x, "deleted", null)
+    
     inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    
+    inline def setPriorAsset(value: SchemaAsset): Self = StObject.set(x, "priorAsset", value.asInstanceOf[js.Any])
+    
+    inline def setPriorAssetState(value: String): Self = StObject.set(x, "priorAssetState", value.asInstanceOf[js.Any])
+    
+    inline def setPriorAssetStateNull: Self = StObject.set(x, "priorAssetState", null)
+    
+    inline def setPriorAssetStateUndefined: Self = StObject.set(x, "priorAssetState", js.undefined)
+    
+    inline def setPriorAssetUndefined: Self = StObject.set(x, "priorAsset", js.undefined)
     
     inline def setWindow(value: SchemaTimeWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     

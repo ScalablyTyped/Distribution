@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DidChangeAccountsParams extends StObject {
   
-  // Updated accounts
+  /**
+    * Updated accounts
+    */
   var accounts: js.Array[Account]
 }
 object DidChangeAccountsParams {
@@ -20,6 +22,6 @@ object DidChangeAccountsParams {
     
     inline def setAccounts(value: js.Array[Account]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
-    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value*))
   }
 }

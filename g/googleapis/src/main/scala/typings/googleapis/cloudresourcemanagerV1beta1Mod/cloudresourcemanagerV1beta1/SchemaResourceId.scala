@@ -4,26 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A container to reference an id for any resource type. A `resource` in
-  * Google Cloud Platform is a generic term for something you (a developer) may
-  * want to interact with through one of our API&#39;s. Some examples are an
-  * App Engine app, a Compute Engine instance, a Cloud SQL database, and so on.
-  */
 trait SchemaResourceId extends StObject {
   
   /**
-    * Required field for the type-specific id. This should correspond to the id
-    * used in the type-specific API&#39;s.
+    * Required field for the type-specific id. This should correspond to the id used in the type-specific API's.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required field representing the resource type this id is for. At present,
-    * the valid types are &quot;project&quot;, &quot;folder&quot;, and
-    * &quot;organization&quot;.
+    * Required field representing the resource type this id is for. At present, the valid types are "project", "folder", and "organization".
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaResourceId {
   
@@ -36,9 +27,13 @@ object SchemaResourceId {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

@@ -25,13 +25,13 @@ object button {
     var arrowCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var baseParams: js.UndefOr[js.Any] = js.undefined
+    var baseParams: js.UndefOr[Any] = js.undefined
     
     /** [Method] Retrieves the first direct child of this container which matches the passed selector or component
       * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
       */
-    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+    var child: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
     
     /** [Config Option] (String) */
     var clickEvent: js.UndefOr[java.lang.String] = js.undefined
@@ -43,13 +43,13 @@ object button {
       * @param silent Object
       */
     @JSName("disable")
-    var disable_IButton: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var disable_IButton: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Retrieves the first descendant of this container which matches the passed selector
       * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
       */
-    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+    var down: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var enableToggle: js.UndefOr[Boolean] = js.undefined
@@ -58,7 +58,7 @@ object button {
       * @param silent Object
       */
     @JSName("enable")
-    var enable_IButton: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var enable_IButton: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
     var focusCls: js.UndefOr[java.lang.String] = js.undefined
@@ -66,7 +66,7 @@ object button {
     /** [Method] This method returns an object which provides substitution parameters for the XTemplate used to create this Button s D
       * @returns Object Substitution data for a Template. The default implementation which provides data for the default template returns an Object containing the following properties:
       */
-    var getTemplateArgs: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTemplateArgs: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Gets the text for this Button
       * @returns String The button text
@@ -74,13 +74,13 @@ object button {
     var getText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var glyph: js.UndefOr[js.Any] = js.undefined
+    var glyph: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var handleMouseEvents: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var handler: js.UndefOr[js.Any] = js.undefined
+    var handler: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns true if the button has a menu and it is visible
       * @returns Boolean
@@ -111,7 +111,7 @@ object button {
     var isAction: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.menu.Menu/String/Object) */
-    var menu: js.UndefOr[js.Any] = js.undefined
+    var menu: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var menuActiveCls: js.UndefOr[java.lang.String] = js.undefined
@@ -123,7 +123,7 @@ object button {
     var overflowText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var pressed: js.UndefOr[Boolean] = js.undefined
@@ -145,7 +145,7 @@ object button {
       * @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
       * @returns Ext.Component[] Components matched by the passed function
       */
-    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.undefined
+    var queryBy: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Any], Array]] = js.undefined
     
     /** [Method] Finds a component at any level under this container matching the id itemId
       * @param id String The id to find
@@ -154,19 +154,19 @@ object button {
     var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var repeat: js.UndefOr[js.Any] = js.undefined
+    var repeat: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] ("small"/"medium"/"large") */
-    var scale: js.UndefOr[js.Any] = js.undefined
+    var scale: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets this button s glyph
       * @param glyph Number/String the numeric charCode or string charCode/font-family. This parameter expects a format consistent with that of glyph
       * @returns Ext.button.Button this
       */
-    var setGlyph: js.UndefOr[js.Function1[/* glyph */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setGlyph: js.UndefOr[js.Function1[/* glyph */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Assigns this Button s click handler
       * @param handler Function The function to call when the button is clicked
@@ -174,7 +174,7 @@ object button {
       * @returns Ext.button.Button this
       */
     var setHandler: js.UndefOr[
-        js.Function2[/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], this.type]
+        js.Function2[/* handler */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], this.type]
       ] = js.undefined
     
     /** [Method] Sets the href of the embedded anchor element to the passed URL
@@ -197,7 +197,7 @@ object button {
     /** [Method] Sets the href of the link dynamically according to the params passed and any baseParams configured
       * @param params Object Parameters to use in the href URL.
       */
-    var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Method to change the scale of the button
       * @param scale String The scale to change to.
@@ -219,13 +219,13 @@ object button {
       * @param tooltip String/Object This may be:  String : A string to be used as innerHTML (html tags are accepted) to show in a tooltip Object : A configuration object for Ext.tip.QuickTipManager.register.
       * @returns Ext.button.Button this
       */
-    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] inherit docs
       * @param ui Object
       */
     @JSName("setUI")
-    var setUI_IButton: js.UndefOr[js.Function1[/* ui */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setUI_IButton: js.UndefOr[js.Function1[/* ui */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var showEmptyMenu: js.UndefOr[Boolean] = js.undefined
@@ -233,7 +233,7 @@ object button {
     /** [Method] Shows this button s menu if it has one
       * @param fromEvent Object
       */
-    var showMenu: js.UndefOr[js.Function1[/* fromEvent */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var showMenu: js.UndefOr[js.Function1[/* fromEvent */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
     var tabIndex: js.UndefOr[Double] = js.undefined
@@ -260,10 +260,10 @@ object button {
     var toggleGroup: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Function) */
-    var toggleHandler: js.UndefOr[js.Any] = js.undefined
+    var toggleHandler: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var tooltip: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var tooltipType: js.UndefOr[java.lang.String] = js.undefined
@@ -289,11 +289,11 @@ object button {
       
       inline def setArrowClsUndefined: Self = StObject.set(x, "arrowCls", js.undefined)
       
-      inline def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
+      inline def setBaseParams(value: Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
       
       inline def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
       
-      inline def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      inline def setChild(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
       inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
       
@@ -305,15 +305,15 @@ object button {
       
       inline def setDestroyMenuUndefined: Self = StObject.set(x, "destroyMenu", js.undefined)
       
-      inline def setDisable(value: /* silent */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
+      inline def setDisable(value: /* silent */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
       
       inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      inline def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
-      inline def setEnable(value: /* silent */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+      inline def setEnable(value: /* silent */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
       
       inline def setEnableToggle(value: Boolean): Self = StObject.set(x, "enableToggle", value.asInstanceOf[js.Any])
       
@@ -325,7 +325,7 @@ object button {
       
       inline def setFocusClsUndefined: Self = StObject.set(x, "focusCls", js.undefined)
       
-      inline def setGetTemplateArgs(value: () => js.Any): Self = StObject.set(x, "getTemplateArgs", js.Any.fromFunction0(value))
+      inline def setGetTemplateArgs(value: () => Any): Self = StObject.set(x, "getTemplateArgs", js.Any.fromFunction0(value))
       
       inline def setGetTemplateArgsUndefined: Self = StObject.set(x, "getTemplateArgs", js.undefined)
       
@@ -333,7 +333,7 @@ object button {
       
       inline def setGetTextUndefined: Self = StObject.set(x, "getText", js.undefined)
       
-      inline def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       
       inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
       
@@ -341,7 +341,7 @@ object button {
       
       inline def setHandleMouseEventsUndefined: Self = StObject.set(x, "handleMouseEvents", js.undefined)
       
-      inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
       inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
@@ -377,7 +377,7 @@ object button {
       
       inline def setIsActionUndefined: Self = StObject.set(x, "isAction", js.undefined)
       
-      inline def setMenu(value: js.Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
       inline def setMenuActiveCls(value: java.lang.String): Self = StObject.set(x, "menuActiveCls", value.asInstanceOf[js.Any])
       
@@ -393,7 +393,7 @@ object button {
       
       inline def setOverflowTextUndefined: Self = StObject.set(x, "overflowText", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -411,7 +411,7 @@ object button {
       
       inline def setQuery(value: js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
       
-      inline def setQueryBy(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
+      inline def setQueryBy(value: (js.UndefOr[Any], js.UndefOr[Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
       
       inline def setQueryById(value: js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
       
@@ -421,24 +421,24 @@ object button {
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setRepeat(value: js.Any): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Any): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
       inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      inline def setScale(value: js.Any): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Any): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setSetGlyph(value: /* glyph */ js.UndefOr[js.Any] => typings.extjs.Ext.button.IButton): Self = StObject.set(x, "setGlyph", js.Any.fromFunction1(value))
+      inline def setSetGlyph(value: /* glyph */ js.UndefOr[Any] => typings.extjs.Ext.button.IButton): Self = StObject.set(x, "setGlyph", js.Any.fromFunction1(value))
       
       inline def setSetGlyphUndefined: Self = StObject.set(x, "setGlyph", js.undefined)
       
       inline def setSetHandler(
-        value: (/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.button.IButton
+        value: (/* handler */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => typings.extjs.Ext.button.IButton
       ): Self = StObject.set(x, "setHandler", js.Any.fromFunction2(value))
       
       inline def setSetHandlerUndefined: Self = StObject.set(x, "setHandler", js.undefined)
@@ -455,7 +455,7 @@ object button {
       
       inline def setSetIconUndefined: Self = StObject.set(x, "setIcon", js.undefined)
       
-      inline def setSetParams(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParams", js.Any.fromFunction1(value))
+      inline def setSetParams(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setParams", js.Any.fromFunction1(value))
       
       inline def setSetParamsUndefined: Self = StObject.set(x, "setParams", js.undefined)
       
@@ -471,11 +471,11 @@ object button {
       
       inline def setSetTextUndefined: Self = StObject.set(x, "setText", js.undefined)
       
-      inline def setSetTooltip(value: /* tooltip */ js.UndefOr[js.Any] => typings.extjs.Ext.button.IButton): Self = StObject.set(x, "setTooltip", js.Any.fromFunction1(value))
+      inline def setSetTooltip(value: /* tooltip */ js.UndefOr[Any] => typings.extjs.Ext.button.IButton): Self = StObject.set(x, "setTooltip", js.Any.fromFunction1(value))
       
       inline def setSetTooltipUndefined: Self = StObject.set(x, "setTooltip", js.undefined)
       
-      inline def setSetUI(value: /* ui */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUI", js.Any.fromFunction1(value))
+      inline def setSetUI(value: /* ui */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setUI", js.Any.fromFunction1(value))
       
       inline def setSetUIUndefined: Self = StObject.set(x, "setUI", js.undefined)
       
@@ -483,7 +483,7 @@ object button {
       
       inline def setShowEmptyMenuUndefined: Self = StObject.set(x, "showEmptyMenu", js.undefined)
       
-      inline def setShowMenu(value: /* fromEvent */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "showMenu", js.Any.fromFunction1(value))
+      inline def setShowMenu(value: /* fromEvent */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "showMenu", js.Any.fromFunction1(value))
       
       inline def setShowMenuUndefined: Self = StObject.set(x, "showMenu", js.undefined)
       
@@ -511,13 +511,13 @@ object button {
       
       inline def setToggleGroupUndefined: Self = StObject.set(x, "toggleGroup", js.undefined)
       
-      inline def setToggleHandler(value: js.Any): Self = StObject.set(x, "toggleHandler", value.asInstanceOf[js.Any])
+      inline def setToggleHandler(value: Any): Self = StObject.set(x, "toggleHandler", value.asInstanceOf[js.Any])
       
       inline def setToggleHandlerUndefined: Self = StObject.set(x, "toggleHandler", js.undefined)
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
       
-      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipType(value: java.lang.String): Self = StObject.set(x, "tooltipType", value.asInstanceOf[js.Any])
       
@@ -532,10 +532,10 @@ object button {
        with ISplit {
     
     /** [Config Option] (Function) */
-    var changeHandler: js.UndefOr[js.Any] = js.undefined
+    var changeHandler: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var forceGlyph: js.UndefOr[js.Any] = js.undefined
+    var forceGlyph: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var forceIcon: js.UndefOr[java.lang.String] = js.undefined
@@ -578,11 +578,11 @@ object button {
     
     extension [Self <: ICycle](x: Self) {
       
-      inline def setChangeHandler(value: js.Any): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
+      inline def setChangeHandler(value: Any): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
       
       inline def setChangeHandlerUndefined: Self = StObject.set(x, "changeHandler", js.undefined)
       
-      inline def setForceGlyph(value: js.Any): Self = StObject.set(x, "forceGlyph", value.asInstanceOf[js.Any])
+      inline def setForceGlyph(value: Any): Self = StObject.set(x, "forceGlyph", value.asInstanceOf[js.Any])
       
       inline def setForceGlyphUndefined: Self = StObject.set(x, "forceGlyph", js.undefined)
       
@@ -627,7 +627,7 @@ object button {
        with typings.extjs.Ext.button.IButton {
     
     /** [Config Option] (Function) */
-    var arrowHandler: js.UndefOr[js.Any] = js.undefined
+    var arrowHandler: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var arrowTooltip: js.UndefOr[java.lang.String] = js.undefined
@@ -636,9 +636,7 @@ object button {
       * @param handler Function The function to call when the arrow is clicked.
       * @param scope Object Scope for the function passed above.
       */
-    var setArrowHandler: js.UndefOr[
-        js.Function2[/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-      ] = js.undefined
+    var setArrowHandler: js.UndefOr[js.Function2[/* handler */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ISplit {
     
@@ -649,7 +647,7 @@ object button {
     
     extension [Self <: ISplit](x: Self) {
       
-      inline def setArrowHandler(value: js.Any): Self = StObject.set(x, "arrowHandler", value.asInstanceOf[js.Any])
+      inline def setArrowHandler(value: Any): Self = StObject.set(x, "arrowHandler", value.asInstanceOf[js.Any])
       
       inline def setArrowHandlerUndefined: Self = StObject.set(x, "arrowHandler", js.undefined)
       
@@ -657,7 +655,7 @@ object button {
       
       inline def setArrowTooltipUndefined: Self = StObject.set(x, "arrowTooltip", js.undefined)
       
-      inline def setSetArrowHandler(value: (/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setArrowHandler", js.Any.fromFunction2(value))
+      inline def setSetArrowHandler(value: (/* handler */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setArrowHandler", js.Any.fromFunction2(value))
       
       inline def setSetArrowHandlerUndefined: Self = StObject.set(x, "setArrowHandler", js.undefined)
     }

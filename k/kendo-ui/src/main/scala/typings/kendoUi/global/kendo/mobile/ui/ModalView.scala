@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.mobile.ui.ModalView")
 @js.native
-class ModalView protected ()
+open class ModalView protected ()
   extends StObject
      with typings.kendoUi.kendo.mobile.ui.ModalView {
   def this(element: Element) = this()

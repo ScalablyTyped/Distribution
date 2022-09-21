@@ -134,11 +134,11 @@ object mod {
       
       inline def setEquation(value: js.Array[Double]): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
       
-      inline def setEquationVarargs(value: Double*): Self = StObject.set(x, "equation", js.Array(value :_*))
+      inline def setEquationVarargs(value: Double*): Self = StObject.set(x, "equation", js.Array(value*))
       
       inline def setPoints(value: js.Array[DataPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: DataPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: DataPoint*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setPredict(value: Double => DataPoint): Self = StObject.set(x, "predict", js.Any.fromFunction1(value))
       

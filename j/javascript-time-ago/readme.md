@@ -11,14 +11,14 @@ Localized relative date/time formatting
 | Full name          | javascript-time-ago |
 | Keywords           | time, ago, relative, format |
 | # releases         | 36 |
-| # dependents       | 45 |
-| # downloads        | 1161129 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 310952.3333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/catamphetamine/javascript-time-ago#readme)
-- [Bugs](https://github.com/catamphetamine/javascript-time-ago/issues)
-- [Repository](https://github.com/catamphetamine/javascript-time-ago)
+- [Homepage](https://gitlab.com/catamphetamine/javascript-time-ago#readme)
+- [Bugs](https://gitlab.com/catamphetamine/javascript-time-ago/issues)
+- [Repository](https://gitlab.com/catamphetamine/javascript-time-ago)
 - [Npm](https://www.npmjs.com/package/javascript-time-ago)
     
 

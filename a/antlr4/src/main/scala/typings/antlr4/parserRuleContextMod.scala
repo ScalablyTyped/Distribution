@@ -13,16 +13,16 @@ object parserRuleContextMod {
   
   @JSImport("antlr4/ParserRuleContext", "ParserRuleContext")
   @js.native
-  class ParserRuleContext protected () extends RuleContext {
-    def this(parent: js.Any, invokingState: Double) = this()
+  open class ParserRuleContext protected () extends RuleContext {
+    def this(parent: Any, invokingState: Double) = this()
     
-    def addChild(child: js.Any): js.Any = js.native
+    def addChild(child: Any): Any = js.native
     
     def addErrorNode(badToken: Token): ErrorNode = js.native
     
     def addTokenNode(token: Token): Token = js.native
     
-    def copyFrom(ctx: js.Any): Unit = js.native
+    def copyFrom(ctx: Any): Unit = js.native
     
     def enterRule(listener: ParseTreeListener): Unit = js.native
     
@@ -30,15 +30,15 @@ object parserRuleContextMod {
     
     def exitRule(listener: ParseTreeListener): Unit = js.native
     
-    def getChild(i: Double, `type`: js.Any): js.Any = js.native
+    def getChild(i: Double, `type`: Any): Any = js.native
     
     def getToken(ttype: Double, i: Double): Token = js.native
     
     def getTokens(ttype: Double): js.Array[Token] = js.native
     
-    def getTypedRuleContext(cxtType: js.Any, i: Double): js.Any = js.native
+    def getTypedRuleContext(cxtType: Any, i: Double): Any = js.native
     
-    def getTypedRuleContexts(cxtType: js.Any): js.Array[js.Any] = js.native
+    def getTypedRuleContexts(cxtType: Any): js.Array[Any] = js.native
     
     def removeLastChild(): Unit = js.native
     

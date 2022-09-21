@@ -1,0 +1,53 @@
+package typings.googleapis.transcoderV1beta1Mod.transcoderV1beta1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaManifest extends StObject {
+  
+  /**
+    * The name of the generated file. The default is `"manifest"` with the extension suffix corresponding to the `Manifest.type`.
+    */
+  var fileName: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. List of user given `MuxStream.key`s that should appear in this manifest. When `Manifest.type` is `HLS`, a media manifest with name `MuxStream.key` and `.m3u8` extension is generated for each element of the `Manifest.mux_streams`.
+    */
+  var muxStreams: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Required. Type of the manifest, can be "HLS" or "DASH".
+    */
+  var `type`: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaManifest {
+  
+  inline def apply(): SchemaManifest = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaManifest]
+  }
+  
+  extension [Self <: SchemaManifest](x: Self) {
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameNull: Self = StObject.set(x, "fileName", null)
+    
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    
+    inline def setMuxStreams(value: js.Array[String]): Self = StObject.set(x, "muxStreams", value.asInstanceOf[js.Any])
+    
+    inline def setMuxStreamsNull: Self = StObject.set(x, "muxStreams", null)
+    
+    inline def setMuxStreamsUndefined: Self = StObject.set(x, "muxStreams", js.undefined)
+    
+    inline def setMuxStreamsVarargs(value: String*): Self = StObject.set(x, "muxStreams", js.Array(value*))
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
+}

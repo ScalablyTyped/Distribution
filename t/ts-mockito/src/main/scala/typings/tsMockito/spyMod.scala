@@ -9,9 +9,9 @@ object spyMod {
   
   @JSImport("ts-mockito/lib/Spy", "Spy")
   @js.native
-  class Spy protected () extends Mocker {
-    def this(instance: js.Any) = this()
+  open class Spy protected () extends Mocker {
+    def this(instance: Any) = this()
     
-    /* private */ var realMethods: js.Any = js.native
+    /* private */ var realMethods: Any = js.native
   }
 }

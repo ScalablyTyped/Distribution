@@ -43,34 +43,34 @@ trait PlusZip extends StObject {
     src: String,
     zipfile: String,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def compress(src: String, zipfile: String, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def compress(src: String, zipfile: String, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def compress(src: String, zipfile: Unit, successCB: js.Function0[Unit]): Unit = js.native
   def compress(
     src: String,
     zipfile: Unit,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def compress(src: String, zipfile: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def compress(src: String, zipfile: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def compress(src: Unit, zipfile: String): Unit = js.native
   def compress(src: Unit, zipfile: String, successCB: js.Function0[Unit]): Unit = js.native
   def compress(
     src: Unit,
     zipfile: String,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def compress(src: Unit, zipfile: String, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def compress(src: Unit, zipfile: String, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def compress(src: Unit, zipfile: Unit, successCB: js.Function0[Unit]): Unit = js.native
   def compress(
     src: Unit,
     zipfile: Unit,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def compress(src: Unit, zipfile: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def compress(src: Unit, zipfile: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 图片压缩转换
@@ -79,24 +79,24 @@ trait PlusZip extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
   def compressImage(): Unit = js.native
-  def compressImage(options: Unit, successCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def compressImage(options: Unit, successCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def compressImage(
     options: Unit,
-    successCB: js.Function1[/* result */ js.Any, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    successCB: js.Function1[/* result */ Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def compressImage(options: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def compressImage(options: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def compressImage(options: PlusZipCompressImageOptions): Unit = js.native
-  def compressImage(options: PlusZipCompressImageOptions, successCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def compressImage(options: PlusZipCompressImageOptions, successCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def compressImage(
     options: PlusZipCompressImageOptions,
-    successCB: js.Function1[/* result */ js.Any, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    successCB: js.Function1[/* result */ Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def compressImage(
     options: PlusZipCompressImageOptions,
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -112,32 +112,32 @@ trait PlusZip extends StObject {
     zipfile: String,
     target: String,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def decompress(zipfile: String, target: String, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def decompress(zipfile: String, target: String, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def decompress(zipfile: String, target: Unit, successCB: js.Function0[Unit]): Unit = js.native
   def decompress(
     zipfile: String,
     target: Unit,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def decompress(zipfile: String, target: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def decompress(zipfile: String, target: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def decompress(zipfile: Unit, target: String): Unit = js.native
   def decompress(zipfile: Unit, target: String, successCB: js.Function0[Unit]): Unit = js.native
   def decompress(
     zipfile: Unit,
     target: String,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def decompress(zipfile: Unit, target: String, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def decompress(zipfile: Unit, target: String, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def decompress(zipfile: Unit, target: Unit, successCB: js.Function0[Unit]): Unit = js.native
   def decompress(
     zipfile: Unit,
     target: Unit,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def decompress(zipfile: Unit, target: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def decompress(zipfile: Unit, target: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
 }

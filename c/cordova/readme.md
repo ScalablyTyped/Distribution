@@ -9,10 +9,10 @@ Cordova command line interface tool
 | ------------------ | :-------------: |
 | Full name          | cordova |
 | Keywords           | cordova, client, cli |
-| # releases         | 661 |
-| # dependents       | 112 |
-| # downloads        | 6309528 |
-| # stars            | 358 |
+| # releases         | 601 |
+| # dependents       | 0.0 |
+| # downloads        | 219904.0 |
+| # stars            | 895.0 |
 
 ## Links
 - [Homepage](https://github.com/apache/cordova-cli#readme)

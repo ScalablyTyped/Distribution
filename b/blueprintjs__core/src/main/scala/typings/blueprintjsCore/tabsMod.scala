@@ -1,15 +1,16 @@
 package typings.blueprintjsCore
 
-import typings.blueprintjsCore.anon.PartialITabsProps
+import typings.blueprintjsCore.anon.PartialTabsProps
 import typings.blueprintjsCore.anon.SelectedTabId
 import typings.blueprintjsCore.anon.TypeofTab
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsCore.tabMod.TabId
 import typings.react.mod.CSSProperties
-import typings.react.mod.FunctionComponent
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,51 +20,51 @@ object tabsMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Expander")
   @js.native
-  val Expander: FunctionComponent[js.Object] = js.native
+  val Expander: FC[js.Object] = js.native
   
   @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs")
   @js.native
-  class Tabs protected ()
-    extends AbstractPureComponent2[ITabsProps, ITabsState, js.Object] {
-    def this(props: ITabsProps) = this()
+  open class Tabs protected ()
+    extends AbstractPureComponent2[TabsProps, ITabsState, js.Object] {
+    def this(props: TabsProps) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MTabs(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MTabs(prevProps: ITabsProps, prevState: ITabsState): Unit = js.native
+    def componentDidUpdate_MTabs(prevProps: TabsProps, prevState: ITabsState): Unit = js.native
     
-    /* private */ var getInitialSelectedTabId: js.Any = js.native
+    /* private */ var getInitialSelectedTabId: Any = js.native
     
-    /* private */ var getKeyCodeDirection: js.Any = js.native
+    /* private */ var getKeyCodeDirection: Any = js.native
     
     /** Filters children to only `<Tab>`s */
-    /* private */ var getTabChildren: js.Any = js.native
+    /* private */ var getTabChildren: Any = js.native
     
-    /* private */ var getTabChildrenProps: js.Any = js.native
+    /* private */ var getTabChildrenProps: Any = js.native
     
     /** Queries root HTML element for all tabs with optional filter selector */
-    /* private */ var getTabElements: js.Any = js.native
+    /* private */ var getTabElements: Any = js.native
     
-    /* private */ var handleKeyDown: js.Any = js.native
+    /* private */ var handleKeyDown: Any = js.native
     
-    /* private */ var handleKeyPress: js.Any = js.native
+    /* private */ var handleKeyPress: Any = js.native
     
-    /* private */ var handleTabClick: js.Any = js.native
+    /* private */ var handleTabClick: Any = js.native
     
     /**
       * Calculate the new height, width, and position of the tab indicator.
       * Store the CSS values so the transition animation can start.
       */
-    /* private */ var moveSelectionIndicator: js.Any = js.native
+    /* private */ var moveSelectionIndicator: Any = js.native
     
-    /* private */ var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: Any = js.native
     
-    /* private */ var renderTabPanel: js.Any = js.native
+    /* private */ var renderTabPanel: Any = js.native
     
-    /* private */ var renderTabTitle: js.Any = js.native
+    /* private */ var renderTabTitle: Any = js.native
     
-    /* private */ var tablistElement: js.Any = js.native
+    /* private */ var tablistElement: Any = js.native
   }
   /* static members */
   object Tabs {
@@ -75,8 +76,8 @@ object tabsMod {
     /** Insert a `Tabs.Expander` between any two children to right-align all subsequent children. */
     @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs.Expander")
     @js.native
-    def Expander: FunctionComponent[js.Object] = js.native
-    inline def Expander_=(x: FunctionComponent[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Expander")(x.asInstanceOf[js.Any])
+    def Expander: FC[js.Object] = js.native
+    inline def Expander_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Expander")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs.Tab")
     @js.native
@@ -85,15 +86,15 @@ object tabsMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs.defaultProps")
     @js.native
-    def defaultProps: PartialITabsProps = js.native
-    inline def defaultProps_=(x: PartialITabsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialTabsProps = js.native
+    inline def defaultProps_=(x: PartialTabsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(hasSelectedTabId: ITabsProps): SelectedTabId | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSelectedTabId.asInstanceOf[js.Any]).asInstanceOf[SelectedTabId | Null]
+    inline def getDerivedStateFromProps(hasSelectedTabId: TabsProps): SelectedTabId | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSelectedTabId.asInstanceOf[js.Any]).asInstanceOf[SelectedTabId | Null]
   }
   
   trait ITabsProps
@@ -102,13 +103,18 @@ object tabsMod {
     
     /**
       * Whether the selected tab indicator should animate its movement.
+      *
       * @default true
       */
     var animate: js.UndefOr[Boolean] = js.undefined
     
+    /** Tab elements. */
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Initial selected tab `id`, for uncontrolled usage.
       * Note that this prop refers only to `<Tab>` children; other types of elements are ignored.
+      *
       * @default first tab
       */
     var defaultSelectedTabId: js.UndefOr[TabId] = js.undefined
@@ -123,6 +129,7 @@ object tabsMod {
     /**
       * If set to `true`, the tab titles will display with larger styling.
       * This will apply large styles only to the tabs at this level, not to nested tabs.
+      *
       * @default false
       */
     var large: js.UndefOr[Boolean] = js.undefined
@@ -143,6 +150,7 @@ object tabsMod {
       * Whether inactive tab panels should be removed from the DOM and unmounted in React.
       * This can be a performance enhancement when rendering many complex panels, but requires
       * careful support for unmounting and remounting.
+      *
       * @default false
       */
     var renderActiveTabPanelOnly: js.UndefOr[Boolean] = js.undefined
@@ -156,6 +164,7 @@ object tabsMod {
     
     /**
       * Whether to show tabs stacked vertically on the left side.
+      *
       * @default false
       */
     var vertical: js.UndefOr[Boolean] = js.undefined
@@ -172,6 +181,10 @@ object tabsMod {
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
       inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDefaultSelectedTabId(value: TabId): Self = StObject.set(x, "defaultSelectedTabId", value.asInstanceOf[js.Any])
       
@@ -227,4 +240,6 @@ object tabsMod {
       inline def setSelectedTabIdUndefined: Self = StObject.set(x, "selectedTabId", js.undefined)
     }
   }
+  
+  type TabsProps = ITabsProps
 }

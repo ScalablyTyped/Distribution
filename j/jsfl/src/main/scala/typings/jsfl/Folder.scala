@@ -19,6 +19,6 @@ object Folder {
     
     inline def setContents(value: js.Array[File]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    inline def setContentsVarargs(value: File*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: File*): Self = StObject.set(x, "contents", js.Array(value*))
   }
 }

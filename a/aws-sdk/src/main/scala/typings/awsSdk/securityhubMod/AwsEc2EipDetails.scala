@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsEc2EipDetails extends StObject {
   
   /**
-    * The identifier that AWS assigns to represent the allocation of the Elastic IP address for use with Amazon VPC.
+    * The identifier that Amazon Web Services assigns to represent the allocation of the Elastic IP address for use with Amazon VPC.
     */
   var AllocationId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -37,7 +37,7 @@ trait AwsEc2EipDetails extends StObject {
   var NetworkInterfaceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The AWS account ID of the owner of the network interface.
+    * The Amazon Web Services account ID of the owner of the network interface.
     */
   var NetworkInterfaceOwnerId: js.UndefOr[NonEmptyString] = js.undefined
   

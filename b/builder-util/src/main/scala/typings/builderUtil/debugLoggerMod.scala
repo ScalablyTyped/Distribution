@@ -8,12 +8,12 @@ object debugLoggerMod {
   
   @JSImport("builder-util/out/DebugLogger", "DebugLogger")
   @js.native
-  class DebugLogger () extends StObject {
+  open class DebugLogger () extends StObject {
     def this(isEnabled: Boolean) = this()
     
-    def add(key: String, value: js.Any): Unit = js.native
+    def add(key: String, value: Any): Unit = js.native
     
-    val data: js.Any = js.native
+    val data: Any = js.native
     
     val isEnabled: Boolean = js.native
     

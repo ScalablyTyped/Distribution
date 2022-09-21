@@ -121,7 +121,7 @@ object system {
     inline def apply(
       acquire: () => Unit,
       createSimpleMailMessage: () => XSimpleMailMessage,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       sendSimpleMailMessage: (XSimpleMailMessage, Double) => Unit
     ): XSimpleMailClient = {
@@ -156,7 +156,7 @@ object system {
     
     inline def apply(
       acquire: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       querySimpleMailClient: () => XSimpleMailClient,
       release: () => Unit
     ): XSimpleMailClientSupplier = {
@@ -300,7 +300,7 @@ object system {
       getOriginator: () => String,
       getRecipient: () => String,
       getSubject: () => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setAttachement: SeqEquiv[String] => Unit,
       setBccRecipient: SeqEquiv[String] => Unit,
@@ -380,7 +380,7 @@ object system {
       getOriginator: () => String,
       getRecipient: () => String,
       getSubject: () => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setAttachement: SeqEquiv[String] => Unit,
       setBccRecipient: SeqEquiv[String] => Unit,
@@ -420,7 +420,7 @@ object system {
     inline def apply(
       acquire: () => Unit,
       execute: (String, String, Double) => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XSystemShellExecute = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction3(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

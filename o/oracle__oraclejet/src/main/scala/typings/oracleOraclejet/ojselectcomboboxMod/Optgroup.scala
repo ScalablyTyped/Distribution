@@ -23,7 +23,7 @@ object Optgroup {
     
     inline def setChildren(value: js.Array[Option | Optgroup]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: (Option | Optgroup)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (Option | Optgroup)*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

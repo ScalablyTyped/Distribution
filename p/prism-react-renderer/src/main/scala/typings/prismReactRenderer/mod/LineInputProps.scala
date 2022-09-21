@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LineInputProps
   extends StObject
-     with /* otherProps */ StringDictionary[js.Any] {
+     with /* otherProps */ StringDictionary[Any] {
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -37,7 +37,7 @@ object LineInputProps {
     
     inline def setLine(value: js.Array[Token]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    inline def setLineVarargs(value: Token*): Self = StObject.set(x, "line", js.Array(value :_*))
+    inline def setLineVarargs(value: Token*): Self = StObject.set(x, "line", js.Array(value*))
     
     inline def setStyle(value: StyleObj): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

@@ -10,15 +10,12 @@ Easy interface for Google's Cloud Messaging service (now Firebase Cloud Messagin
 | ------------------ | :-------------: |
 | Full name          | node-gcm |
 | Keywords           | google, cloud, push, notifications, android, c2dm, gcm, fcm, firebase, ios, apn, messaging |
-| # releases         | 1 |
-| # dependents       | 96 |
-| # downloads        | 2199892 |
-| # stars            | 49 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 264407.3333333333 |
+| # stars            | 1302.0 |
 
 ## Links
-- [Homepage](https://github.com/ToothlessGear/node-gcm)
-- [Bugs](https://github.com/ToothlessGear/node-gcm/issues)
-- [Repository](https://github.com/ToothlessGear/node-gcm)
 - [Npm](https://www.npmjs.com/package/node-gcm)
     
 

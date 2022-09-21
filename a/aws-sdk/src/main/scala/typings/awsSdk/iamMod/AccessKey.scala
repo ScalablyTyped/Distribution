@@ -14,7 +14,7 @@ trait AccessKey extends StObject {
   /**
     * The date when the access key was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The secret key used to sign requests.
@@ -47,7 +47,7 @@ object AccessKey {
     
     inline def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     

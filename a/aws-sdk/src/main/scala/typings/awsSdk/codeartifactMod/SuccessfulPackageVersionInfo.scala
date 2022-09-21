@@ -12,7 +12,7 @@ trait SuccessfulPackageVersionInfo extends StObject {
   var revision: js.UndefOr[String] = js.undefined
   
   /**
-    *  The status of a package version. Valid statuses are:     Published     Unfinished     Unlisted     Archived     Disposed   
+    *  The status of a package version. 
     */
   var status: js.UndefOr[PackageVersionStatus] = js.undefined
 }

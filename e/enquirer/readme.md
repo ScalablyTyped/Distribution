@@ -10,10 +10,10 @@ Stylish, intuitive and user-friendly prompt system. Fast and lightweight enough 
 | ------------------ | :-------------: |
 | Full name          | enquirer |
 | Keywords           | answer, answers, ask, base, cli, command, command-line, confirm, enquirer, generator, generate, hyper, input, inquire, inquirer, interface, iterm, javascript, node, nodejs, prompt, prompts, promptly, question, readline, scaffold, scaffolding, scaffolder, stdin, stdout, terminal, tty, ui, yeoman, yo, zsh |
-| # releases         | 13 |
-| # dependents       | 754 |
-| # downloads        | 93732775 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.8248390666666664E7 |
+| # stars            | 6627.0 |
 
 ## Links
 - [Homepage](https://github.com/enquirer/enquirer)

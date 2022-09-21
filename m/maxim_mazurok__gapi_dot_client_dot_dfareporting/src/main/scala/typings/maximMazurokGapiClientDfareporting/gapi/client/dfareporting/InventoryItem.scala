@@ -89,7 +89,7 @@ object InventoryItem {
     
     inline def setAdSlotsUndefined: Self = StObject.set(x, "adSlots", js.undefined)
     
-    inline def setAdSlotsVarargs(value: AdSlot*): Self = StObject.set(x, "adSlots", js.Array(value :_*))
+    inline def setAdSlotsVarargs(value: AdSlot*): Self = StObject.set(x, "adSlots", js.Array(value*))
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     

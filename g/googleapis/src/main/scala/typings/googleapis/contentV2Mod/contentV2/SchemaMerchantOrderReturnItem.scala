@@ -6,17 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaMerchantOrderReturnItem extends StObject {
   
+  /**
+    * The reason that the customer chooses to return an item.
+    */
   var customerReturnReason: js.UndefOr[SchemaCustomerReturnReason] = js.undefined
   
-  var itemId: js.UndefOr[String] = js.undefined
+  /**
+    * Product level item ID. If the returned items are of the same product, they will have the same ID.
+    */
+  var itemId: js.UndefOr[String | Null] = js.undefined
   
+  /**
+    * The reason that merchant chooses to accept a return item.
+    */
   var merchantReturnReason: js.UndefOr[SchemaRefundReason] = js.undefined
   
+  /**
+    * Product data from the time of the order placement.
+    */
   var product: js.UndefOr[SchemaOrderLineItemProduct] = js.undefined
   
-  var returnShipmentIds: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * IDs of the return shipments that this return item belongs to.
+    */
+  var returnShipmentIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
-  var state: js.UndefOr[String] = js.undefined
+  /**
+    * State of the item. Acceptable values are: - "`canceled`" - "`new`" - "`received`" - "`refunded`" - "`rejected`"
+    */
+  var state: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaMerchantOrderReturnItem {
   
@@ -33,6 +51,8 @@ object SchemaMerchantOrderReturnItem {
     
     inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
+    inline def setItemIdNull: Self = StObject.set(x, "itemId", null)
+    
     inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
     inline def setMerchantReturnReason(value: SchemaRefundReason): Self = StObject.set(x, "merchantReturnReason", value.asInstanceOf[js.Any])
@@ -45,11 +65,15 @@ object SchemaMerchantOrderReturnItem {
     
     inline def setReturnShipmentIds(value: js.Array[String]): Self = StObject.set(x, "returnShipmentIds", value.asInstanceOf[js.Any])
     
+    inline def setReturnShipmentIdsNull: Self = StObject.set(x, "returnShipmentIds", null)
+    
     inline def setReturnShipmentIdsUndefined: Self = StObject.set(x, "returnShipmentIds", js.undefined)
     
-    inline def setReturnShipmentIdsVarargs(value: String*): Self = StObject.set(x, "returnShipmentIds", js.Array(value :_*))
+    inline def setReturnShipmentIdsVarargs(value: String*): Self = StObject.set(x, "returnShipmentIds", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

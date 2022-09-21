@@ -13,13 +13,13 @@ trait IAbstractChart
      with IComponent {
   
   /** [Config Option] (Boolean/Object) */
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Ext.chart.axis.Axis/Array/Object) */
-  var axes: js.UndefOr[js.Any] = js.undefined
+  var axes: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var background: js.UndefOr[js.Any] = js.undefined
+  var background: js.UndefOr[Any] = js.undefined
   
   /** [Method] Changes the data store bound to this chart and refreshes it
     * @param store Ext.data.Store The store to bind to this chart.
@@ -30,7 +30,7 @@ trait IAbstractChart
   var cancelLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Array) */
-  var colors: js.UndefOr[js.Any] = js.undefined
+  var colors: js.UndefOr[Any] = js.undefined
   
   /** [Method] Flattens the given chart surfaces into a single image
     * @param surfaces Array A list of chart's surfaces to flatten.
@@ -38,33 +38,33 @@ trait IAbstractChart
     * @returns String|Image An Image DOM element containing the flattened image or its dataURL.
     */
   var flatten: js.UndefOr[
-    js.Function2[/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[String], js.Any]
+    js.Function2[/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[String], Any]
   ] = js.undefined
   
   /** [Method] Returns the value of axes
     * @returns Ext.chart.axis.Axis/Array/Object
     */
-  var getAxes: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getAxes: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of colors
     * @returns Boolean/Array
     */
-  var getColors: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getColors: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of highlightItem
     * @returns Object
     */
-  var getHighlightItem: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getHighlightItem: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of innerPadding
     * @returns Object
     */
-  var getInnerPadding: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getInnerPadding: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of insetPadding
     * @returns Object|Number
     */
-  var getInsetPadding: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getInsetPadding: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of interactions
     * @returns Array
@@ -76,7 +76,7 @@ trait IAbstractChart
     * @param y Number
     * @returns Object An object with series and item properties, or false if no item found.
     */
-  var getItemForPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], js.Any]] = js.undefined
+  var getItemForPoint: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Any]] = js.undefined
   
   /** [Method] Given an x y point relative to the chart find and return all series items that match that point
     * @param x Number
@@ -88,7 +88,7 @@ trait IAbstractChart
   /** [Method] Returns the value of legend
     * @returns Ext.chart.Legend/Object
     */
-  var getLegend: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getLegend: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Return the legend store that contains all the legend information
     * @returns Ext.data.Store
@@ -98,12 +98,12 @@ trait IAbstractChart
   /** [Method] Returns the value of series
     * @returns Ext.chart.series.Series/Array
     */
-  var getSeries: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSeries: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of shadow
     * @returns Boolean/Object
     */
-  var getShadow: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getShadow: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of store
     * @returns Ext.data.Store
@@ -116,24 +116,22 @@ trait IAbstractChart
     * @returns Ext.draw.Surface
     */
   @JSName("getSurface")
-  var getSurface_IAbstractChart: js.UndefOr[
-    js.Function2[/* name */ js.UndefOr[js.Any], /* type */ js.UndefOr[js.Any], ISurface]
-  ] = js.undefined
+  var getSurface_IAbstractChart: js.UndefOr[js.Function2[/* name */ js.UndefOr[Any], /* type */ js.UndefOr[Any], ISurface]] = js.undefined
   
   /** [Config Option] (Object) */
-  var highlightItem: js.UndefOr[js.Any] = js.undefined
+  var highlightItem: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var innerPadding: js.UndefOr[js.Any] = js.undefined
+  var innerPadding: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object|Number) */
-  var insetPadding: js.UndefOr[js.Any] = js.undefined
+  var insetPadding: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Array) */
   var interactions: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (Ext.chart.Legend/Object) */
-  var legend: js.UndefOr[js.Any] = js.undefined
+  var legend: js.UndefOr[Any] = js.undefined
   
   /** [Method] Redraw the chart  */
   var redraw: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -145,37 +143,37 @@ trait IAbstractChart
   var scheduleLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Ext.chart.series.Series/Array) */
-  var series: js.UndefOr[js.Any] = js.undefined
+  var series: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of animate
     * @param animate Boolean/Object The new value.
     */
-  var setAnimate: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setAnimate: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of axes
     * @param axes Ext.chart.axis.Axis/Array/Object The new value.
     */
-  var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setAxes: js.UndefOr[js.Function1[/* axes */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of colors
     * @param colors Boolean/Array The new value.
     */
-  var setColors: js.UndefOr[js.Function1[/* colors */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setColors: js.UndefOr[js.Function1[/* colors */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of highlightItem
     * @param highlightItem Object The new value.
     */
-  var setHighlightItem: js.UndefOr[js.Function1[/* highlightItem */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHighlightItem: js.UndefOr[js.Function1[/* highlightItem */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of innerPadding
     * @param innerPadding Object The new value.
     */
-  var setInnerPadding: js.UndefOr[js.Function1[/* innerPadding */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setInnerPadding: js.UndefOr[js.Function1[/* innerPadding */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of insetPadding
     * @param insetPadding Object|Number The new value.
     */
-  var setInsetPadding: js.UndefOr[js.Function1[/* insetPadding */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setInsetPadding: js.UndefOr[js.Function1[/* insetPadding */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of interactions
     * @param interactions Array The new value.
@@ -185,17 +183,17 @@ trait IAbstractChart
   /** [Method] Sets the value of legend
     * @param legend Ext.chart.Legend/Object The new value.
     */
-  var setLegend: js.UndefOr[js.Function1[/* legend */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setLegend: js.UndefOr[js.Function1[/* legend */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of series
     * @param series Ext.chart.series.Series/Array The new value.
     */
-  var setSeries: js.UndefOr[js.Function1[/* series */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setSeries: js.UndefOr[js.Function1[/* series */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of shadow
     * @param shadow Boolean/Object The new value.
     */
-  var setShadow: js.UndefOr[js.Function1[/* shadow */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setShadow: js.UndefOr[js.Function1[/* shadow */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of store
     * @param store Ext.data.Store The new value.
@@ -203,7 +201,7 @@ trait IAbstractChart
   var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[IStore], Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var shadow: js.UndefOr[js.Any] = js.undefined
+  var shadow: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Ext.data.Store) */
   var store: js.UndefOr[IStore] = js.undefined
@@ -223,15 +221,15 @@ object IAbstractChart {
   
   extension [Self <: IAbstractChart](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setAxes(value: js.Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    inline def setAxes(value: Any): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
     inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    inline def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
@@ -243,31 +241,31 @@ object IAbstractChart {
     
     inline def setCancelLayoutUndefined: Self = StObject.set(x, "cancelLayout", js.undefined)
     
-    inline def setColors(value: js.Any): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: Any): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setFlatten(value: (/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "flatten", js.Any.fromFunction2(value))
+    inline def setFlatten(value: (/* surfaces */ js.UndefOr[Array], /* format */ js.UndefOr[String]) => Any): Self = StObject.set(x, "flatten", js.Any.fromFunction2(value))
     
     inline def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
     
-    inline def setGetAxes(value: () => js.Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
+    inline def setGetAxes(value: () => Any): Self = StObject.set(x, "getAxes", js.Any.fromFunction0(value))
     
     inline def setGetAxesUndefined: Self = StObject.set(x, "getAxes", js.undefined)
     
-    inline def setGetColors(value: () => js.Any): Self = StObject.set(x, "getColors", js.Any.fromFunction0(value))
+    inline def setGetColors(value: () => Any): Self = StObject.set(x, "getColors", js.Any.fromFunction0(value))
     
     inline def setGetColorsUndefined: Self = StObject.set(x, "getColors", js.undefined)
     
-    inline def setGetHighlightItem(value: () => js.Any): Self = StObject.set(x, "getHighlightItem", js.Any.fromFunction0(value))
+    inline def setGetHighlightItem(value: () => Any): Self = StObject.set(x, "getHighlightItem", js.Any.fromFunction0(value))
     
     inline def setGetHighlightItemUndefined: Self = StObject.set(x, "getHighlightItem", js.undefined)
     
-    inline def setGetInnerPadding(value: () => js.Any): Self = StObject.set(x, "getInnerPadding", js.Any.fromFunction0(value))
+    inline def setGetInnerPadding(value: () => Any): Self = StObject.set(x, "getInnerPadding", js.Any.fromFunction0(value))
     
     inline def setGetInnerPaddingUndefined: Self = StObject.set(x, "getInnerPadding", js.undefined)
     
-    inline def setGetInsetPadding(value: () => js.Any): Self = StObject.set(x, "getInsetPadding", js.Any.fromFunction0(value))
+    inline def setGetInsetPadding(value: () => Any): Self = StObject.set(x, "getInsetPadding", js.Any.fromFunction0(value))
     
     inline def setGetInsetPaddingUndefined: Self = StObject.set(x, "getInsetPadding", js.undefined)
     
@@ -275,7 +273,7 @@ object IAbstractChart {
     
     inline def setGetInteractionsUndefined: Self = StObject.set(x, "getInteractions", js.undefined)
     
-    inline def setGetItemForPoint(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
+    inline def setGetItemForPoint(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
     
     inline def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)
     
@@ -283,7 +281,7 @@ object IAbstractChart {
     
     inline def setGetItemsForPointUndefined: Self = StObject.set(x, "getItemsForPoint", js.undefined)
     
-    inline def setGetLegend(value: () => js.Any): Self = StObject.set(x, "getLegend", js.Any.fromFunction0(value))
+    inline def setGetLegend(value: () => Any): Self = StObject.set(x, "getLegend", js.Any.fromFunction0(value))
     
     inline def setGetLegendStore(value: () => IStore): Self = StObject.set(x, "getLegendStore", js.Any.fromFunction0(value))
     
@@ -291,11 +289,11 @@ object IAbstractChart {
     
     inline def setGetLegendUndefined: Self = StObject.set(x, "getLegend", js.undefined)
     
-    inline def setGetSeries(value: () => js.Any): Self = StObject.set(x, "getSeries", js.Any.fromFunction0(value))
+    inline def setGetSeries(value: () => Any): Self = StObject.set(x, "getSeries", js.Any.fromFunction0(value))
     
     inline def setGetSeriesUndefined: Self = StObject.set(x, "getSeries", js.undefined)
     
-    inline def setGetShadow(value: () => js.Any): Self = StObject.set(x, "getShadow", js.Any.fromFunction0(value))
+    inline def setGetShadow(value: () => Any): Self = StObject.set(x, "getShadow", js.Any.fromFunction0(value))
     
     inline def setGetShadowUndefined: Self = StObject.set(x, "getShadow", js.undefined)
     
@@ -303,19 +301,19 @@ object IAbstractChart {
     
     inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
-    inline def setGetSurface(value: (/* name */ js.UndefOr[js.Any], /* type */ js.UndefOr[js.Any]) => ISurface): Self = StObject.set(x, "getSurface", js.Any.fromFunction2(value))
+    inline def setGetSurface(value: (/* name */ js.UndefOr[Any], /* type */ js.UndefOr[Any]) => ISurface): Self = StObject.set(x, "getSurface", js.Any.fromFunction2(value))
     
     inline def setGetSurfaceUndefined: Self = StObject.set(x, "getSurface", js.undefined)
     
-    inline def setHighlightItem(value: js.Any): Self = StObject.set(x, "highlightItem", value.asInstanceOf[js.Any])
+    inline def setHighlightItem(value: Any): Self = StObject.set(x, "highlightItem", value.asInstanceOf[js.Any])
     
     inline def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
     
-    inline def setInnerPadding(value: js.Any): Self = StObject.set(x, "innerPadding", value.asInstanceOf[js.Any])
+    inline def setInnerPadding(value: Any): Self = StObject.set(x, "innerPadding", value.asInstanceOf[js.Any])
     
     inline def setInnerPaddingUndefined: Self = StObject.set(x, "innerPadding", js.undefined)
     
-    inline def setInsetPadding(value: js.Any): Self = StObject.set(x, "insetPadding", value.asInstanceOf[js.Any])
+    inline def setInsetPadding(value: Any): Self = StObject.set(x, "insetPadding", value.asInstanceOf[js.Any])
     
     inline def setInsetPaddingUndefined: Self = StObject.set(x, "insetPadding", js.undefined)
     
@@ -323,7 +321,7 @@ object IAbstractChart {
     
     inline def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
     
-    inline def setLegend(value: js.Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
@@ -339,31 +337,31 @@ object IAbstractChart {
     
     inline def setScheduleLayoutUndefined: Self = StObject.set(x, "scheduleLayout", js.undefined)
     
-    inline def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSetAnimate(value: /* animate */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAnimate", js.Any.fromFunction1(value))
+    inline def setSetAnimate(value: /* animate */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAnimate", js.Any.fromFunction1(value))
     
     inline def setSetAnimateUndefined: Self = StObject.set(x, "setAnimate", js.undefined)
     
-    inline def setSetAxes(value: /* axes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
+    inline def setSetAxes(value: /* axes */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAxes", js.Any.fromFunction1(value))
     
     inline def setSetAxesUndefined: Self = StObject.set(x, "setAxes", js.undefined)
     
-    inline def setSetColors(value: /* colors */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setColors", js.Any.fromFunction1(value))
+    inline def setSetColors(value: /* colors */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setColors", js.Any.fromFunction1(value))
     
     inline def setSetColorsUndefined: Self = StObject.set(x, "setColors", js.undefined)
     
-    inline def setSetHighlightItem(value: /* highlightItem */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHighlightItem", js.Any.fromFunction1(value))
+    inline def setSetHighlightItem(value: /* highlightItem */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHighlightItem", js.Any.fromFunction1(value))
     
     inline def setSetHighlightItemUndefined: Self = StObject.set(x, "setHighlightItem", js.undefined)
     
-    inline def setSetInnerPadding(value: /* innerPadding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInnerPadding", js.Any.fromFunction1(value))
+    inline def setSetInnerPadding(value: /* innerPadding */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInnerPadding", js.Any.fromFunction1(value))
     
     inline def setSetInnerPaddingUndefined: Self = StObject.set(x, "setInnerPadding", js.undefined)
     
-    inline def setSetInsetPadding(value: /* insetPadding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInsetPadding", js.Any.fromFunction1(value))
+    inline def setSetInsetPadding(value: /* insetPadding */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInsetPadding", js.Any.fromFunction1(value))
     
     inline def setSetInsetPaddingUndefined: Self = StObject.set(x, "setInsetPadding", js.undefined)
     
@@ -371,15 +369,15 @@ object IAbstractChart {
     
     inline def setSetInteractionsUndefined: Self = StObject.set(x, "setInteractions", js.undefined)
     
-    inline def setSetLegend(value: /* legend */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLegend", js.Any.fromFunction1(value))
+    inline def setSetLegend(value: /* legend */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLegend", js.Any.fromFunction1(value))
     
     inline def setSetLegendUndefined: Self = StObject.set(x, "setLegend", js.undefined)
     
-    inline def setSetSeries(value: /* series */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSeries", js.Any.fromFunction1(value))
+    inline def setSetSeries(value: /* series */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSeries", js.Any.fromFunction1(value))
     
     inline def setSetSeriesUndefined: Self = StObject.set(x, "setSeries", js.undefined)
     
-    inline def setSetShadow(value: /* shadow */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setShadow", js.Any.fromFunction1(value))
+    inline def setSetShadow(value: /* shadow */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setShadow", js.Any.fromFunction1(value))
     
     inline def setSetShadowUndefined: Self = StObject.set(x, "setShadow", js.undefined)
     
@@ -387,7 +385,7 @@ object IAbstractChart {
     
     inline def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
     
-    inline def setShadow(value: js.Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     

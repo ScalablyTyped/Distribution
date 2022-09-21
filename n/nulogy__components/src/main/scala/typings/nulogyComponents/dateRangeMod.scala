@@ -8,5 +8,5 @@ object dateRangeMod {
   
   @JSImport("@nulogy/components/src/DateRange", "DateRange")
   @js.native
-  val DateRange: js.Any = js.native
+  val DateRange: Any = js.native
 }

@@ -11,7 +11,7 @@ object discoveryMod {
   
   @JSImport("googleapis-common/build/src/discovery", "Discovery")
   @js.native
-  class Discovery protected () extends StObject {
+  open class Discovery protected () extends StObject {
     /**
       * Discovery for discovering API endpoints
       *
@@ -37,7 +37,7 @@ object discoveryMod {
     /**
       * Log output of generator. Works just like console.log
       */
-    /* private */ var log: js.Any = js.native
+    /* private */ var log: Any = js.native
     
     /**
       * Generate and Endpoint from an endpoint schema object.
@@ -45,11 +45,11 @@ object discoveryMod {
       * @param schema The schema from which to generate the Endpoint.
       * @return A function that creates an endpoint.
       */
-    /* private */ var makeEndpoint: js.Any = js.native
+    /* private */ var makeEndpoint: Any = js.native
     
-    /* private */ var options: js.Any = js.native
+    /* private */ var options: Any = js.native
     
-    /* private */ var transporter: js.Any = js.native
+    /* private */ var transporter: Any = js.native
   }
   
   trait DiscoveryOptions extends StObject {

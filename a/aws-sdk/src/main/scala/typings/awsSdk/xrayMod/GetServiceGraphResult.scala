@@ -14,7 +14,7 @@ trait GetServiceGraphResult extends StObject {
   /**
     * The end of the time frame for which the graph was generated.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Pagination token.
@@ -29,7 +29,7 @@ trait GetServiceGraphResult extends StObject {
   /**
     * The start of the time frame for which the graph was generated.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object GetServiceGraphResult {
   
@@ -44,7 +44,7 @@ object GetServiceGraphResult {
     
     inline def setContainsOldGroupVersionsUndefined: Self = StObject.set(x, "ContainsOldGroupVersions", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -56,9 +56,9 @@ object GetServiceGraphResult {
     
     inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
-    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "Services", js.Array(value :_*))
+    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "Services", js.Array(value*))
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

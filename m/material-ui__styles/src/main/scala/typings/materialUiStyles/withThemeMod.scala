@@ -25,14 +25,12 @@ object withThemeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Theme](
-    component: ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
-  ): ComponentType[
+  inline def default[Theme](component: ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]): ComponentType[
     (Omit[
       LibraryManagedAttributes[
-        ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState], 
+        ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState], 
         ComponentProps[
-          ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
+          ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
@@ -40,27 +38,27 @@ object withThemeMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
       LibraryManagedAttributes[
-        ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState], 
+        ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState], 
         ComponentProps[
-          ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
+          ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ]]
-  inline def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]): ComponentType[
+  inline def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]): ComponentType[
     (Omit[
       LibraryManagedAttributes[
-        FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]], 
-        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]]
+        FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]], 
+        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]]
       ], 
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
       LibraryManagedAttributes[
-        FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]], 
-        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]]
+        FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]], 
+        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]]
       ], 
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
     ]) & Partial[WithTheme[Theme]] & ThemedComponentProps

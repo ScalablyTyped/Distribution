@@ -10,10 +10,10 @@ fibjs is a runtime for javascript applictions built on google v8 JS.
 | ------------------ | :-------------: |
 | Full name          | fibjs |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 633 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 82.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/fibjs)

@@ -10,8 +10,8 @@ object formMod {
   
   @JSImport("muicss/lib/react/form", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FormProps, js.Object, js.Any]
+  open class default ()
+    extends Component[FormProps, js.Object, Any]
   
-  type Form = Component[FormProps, js.Object, js.Any]
+  type Form = Component[FormProps, js.Object, Any]
 }

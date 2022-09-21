@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def shuffle[T](arr: js.Array[T], seed: js.Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(arr.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def shuffle[T](arr: js.Array[T], seed: Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(arr.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def unshuffle[T](arr: js.Array[T], seed: js.Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unshuffle")(arr.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def unshuffle[T](arr: js.Array[T], seed: Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unshuffle")(arr.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

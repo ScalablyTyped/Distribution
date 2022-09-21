@@ -34,7 +34,7 @@ object iaudioengineMod {
     
     /**
       * Connect the audio engine to an audio analyser allowing some amazing
-      * synchornization between the sounds/music and your visualization (VuMeter for instance).
+      * synchronization between the sounds/music and your visualization (VuMeter for instance).
       * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-the-analyser
       * @param analyser The analyser to connect to the engine
       */

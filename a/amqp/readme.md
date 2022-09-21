@@ -10,10 +10,10 @@ AMQP driver for node
 | ------------------ | :-------------: |
 | Full name          | amqp |
 | Keywords           | amqp |
-| # releases         | 0 |
-| # dependents       | 252 |
-| # downloads        | 1036122 |
-| # stars            | 44 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 105622.66666666667 |
+| # stars            | 1699.0 |
 
 ## Links
 - [Homepage](https://github.com/postwait/node-amqp#readme)

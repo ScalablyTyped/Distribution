@@ -19,18 +19,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HostComponent[P]
   extends StObject
-     with Instantiable1[/* props */ P, (Component[P, js.Object, js.Any]) & ReadonlyNativeMethods]
+     with Instantiable1[/* props */ P, (Component[P, js.Object, Any]) & ReadonlyNativeMethods]
      with Instantiable2[
       /* props */ P, 
-      /* context */ js.Any, 
-      (Component[P, js.Object, js.Any]) & ReadonlyNativeMethods
+      /* context */ Any, 
+      (Component[P, js.Object, Any]) & ReadonlyNativeMethods
     ] {
   
-  var childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+  var childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
-  var contextType: js.UndefOr[Context[js.Any]] = js.native
+  var contextType: js.UndefOr[Context[Any]] = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
   var defaultProps: js.UndefOr[Partial[typings.reactNative.reactNativeStrings.defaultProps]] = js.native
   

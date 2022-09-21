@@ -15,7 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def get(path: String, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def get(path: String, options: Options): Middleware[DefaultState, DefaultContext, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   object koaDocs {
     
@@ -42,7 +42,7 @@ object mod {
         
         inline def setGroups(value: js.Array[Description]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
         
-        inline def setGroupsVarargs(value: Description*): Self = StObject.set(x, "groups", js.Array(value :_*))
+        inline def setGroupsVarargs(value: Description*): Self = StObject.set(x, "groups", js.Array(value*))
         
         inline def setRouteHandlers(value: String): Self = StObject.set(x, "routeHandlers", value.asInstanceOf[js.Any])
         

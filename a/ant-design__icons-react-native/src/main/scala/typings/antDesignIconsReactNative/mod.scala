@@ -9,10 +9,10 @@ object mod {
   
   @JSImport("@ant-design/icons-react-native/lib", "IconFill")
   @js.native
-  class IconFill () extends default
+  open class IconFill () extends default
   
   @JSImport("@ant-design/icons-react-native/lib", "IconOutline")
   @js.native
-  class IconOutline ()
+  open class IconOutline ()
     extends typings.antDesignIconsReactNative.outlineMod.default
 }

@@ -10,10 +10,10 @@ The modern build of lodash’s `_.isUndefined` as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isundefined |
 | Keywords           | lodash, lodash-modularized, stdlib, util |
-| # releases         | 0 |
-| # dependents       | 217 |
-| # downloads        | 20126844 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4510525.333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

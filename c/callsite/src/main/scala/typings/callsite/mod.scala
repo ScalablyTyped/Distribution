@@ -28,7 +28,7 @@ object mod {
     
     def getMethodName(): String
     
-    def getThis(): js.Any
+    def getThis(): Any
     
     def getTypeName(): String
     
@@ -50,7 +50,7 @@ object mod {
       getFunctionName: () => String,
       getLineNumber: () => Double,
       getMethodName: () => String,
-      getThis: () => js.Any,
+      getThis: () => Any,
       getTypeName: () => String,
       isConstructor: () => Boolean,
       isEval: () => Boolean,
@@ -77,7 +77,7 @@ object mod {
       
       inline def setGetMethodName(value: () => String): Self = StObject.set(x, "getMethodName", js.Any.fromFunction0(value))
       
-      inline def setGetThis(value: () => js.Any): Self = StObject.set(x, "getThis", js.Any.fromFunction0(value))
+      inline def setGetThis(value: () => Any): Self = StObject.set(x, "getThis", js.Any.fromFunction0(value))
       
       inline def setGetTypeName(value: () => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction0(value))
       

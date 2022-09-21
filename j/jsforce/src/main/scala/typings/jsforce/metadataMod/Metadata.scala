@@ -2,7 +2,7 @@ package typings.jsforce.metadataMod
 
 import typings.jsforce.connectionMod.Callback
 import typings.jsforce.connectionMod.Connection
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsforce/api/metadata", "Metadata")
 @js.native
-class Metadata protected () extends StObject {
+open class Metadata protected () extends StObject {
   def this(conn: Connection) = this()
   
   def checkDeployStatus(id: String): js.Promise[DeployResult] = js.native

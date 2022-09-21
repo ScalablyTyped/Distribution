@@ -1,8 +1,6 @@
 package typings.swiz
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
-import typings.std.RegExp
 import typings.swiz.mod.struct.IField
 import typings.swiz.mod.struct.IObj
 import org.scalablytyped.runtime.StObject
@@ -19,11 +17,11 @@ object mod {
   
   @JSImport("swiz", "Cidr")
   @js.native
-  class Cidr protected () extends StObject {
+  open class Cidr protected () extends StObject {
     def this(x: String) = this()
     def this(x: String, y: String) = this()
     
-    def isInCIDR(x: js.Any): Boolean = js.native
+    def isInCIDR(x: Any): Boolean = js.native
   }
   
   @js.native
@@ -50,22 +48,22 @@ object mod {
   
   @JSImport("swiz", "Swiz")
   @js.native
-  class Swiz protected () extends StObject {
+  open class Swiz protected () extends StObject {
     def this(defs: js.Array[IObj]) = this()
     def this(defs: js.Array[IObj], options: ISwizOptions) = this()
     
-    def buildObject(obj: js.Any, callback: js.Function2[/* err */ js.Any, /* result */ js.Any, Unit]): Unit = js.native
+    def buildObject(obj: Any, callback: js.Function2[/* err */ Any, /* result */ Any, Unit]): Unit = js.native
     
-    def buildObjectSync(obj: js.Any): js.Any = js.native
+    def buildObjectSync(obj: Any): Any = js.native
     
     def deserialize(
       mode: SERIALIZATION,
       version: Double,
       raw: String,
-      callback: js.Function2[/* err */ js.Any, /* result */ js.Any, Unit]
+      callback: js.Function2[/* err */ Any, /* result */ Any, Unit]
     ): Unit = js.native
     
-    def deserializeXml(xml: String): js.Any = js.native
+    def deserializeXml(xml: String): Any = js.native
     
     def getFieldDefinition(stype: String, name: String): IField = js.native
     
@@ -73,59 +71,51 @@ object mod {
       mode: SERIALIZATION,
       version: Double,
       obj: ISerializable,
-      callback: js.Function2[/* err */ js.Any, /* result */ String, Unit]
+      callback: js.Function2[/* err */ Any, /* result */ String, Unit]
     ): Unit = js.native
     
     def serializeForPagination(
       mode: SERIALIZATION,
-      array: js.Array[js.Any],
-      metadata: js.Any,
-      callback: js.Function2[/* err */ js.Any, /* result */ String, Unit]
+      array: js.Array[Any],
+      metadata: Any,
+      callback: js.Function2[/* err */ Any, /* result */ String, Unit]
     ): Unit = js.native
     
-    def serializeJson(obj: js.Any): String = js.native
+    def serializeJson(obj: Any): String = js.native
     
-    def serializeXml(obj: js.Any): String = js.native
+    def serializeXml(obj: Any): String = js.native
   }
   
   @JSImport("swiz", "Valve")
   @js.native
-  class Valve protected () extends StObject {
+  open class Valve protected () extends StObject {
     def this(schema: IValveSchema) = this()
-    def this(schema: IValveSchema, baton: js.Any) = this()
+    def this(schema: IValveSchema, baton: Any) = this()
     
     def addChainValidator(
       name: String,
       description: String,
       func: js.Function2[
-          /* value */ js.Any, 
-          /* callback */ js.Function2[/* err */ Error, /* cleaned */ js.Any, Unit], 
+          /* value */ Any, 
+          /* callback */ js.Function2[/* err */ js.Error, /* cleaned */ Any, Unit], 
           Unit
         ]
     ): Unit = js.native
     
     def addFinalValidator(
       func: js.Function2[
-          /* obj */ js.Any, 
-          /* callback */ js.Function2[/* err */ Error, /* cleaned */ js.Any, Unit], 
+          /* obj */ Any, 
+          /* callback */ js.Function2[/* err */ js.Error, /* cleaned */ Any, Unit], 
           Unit
         ]
     ): Valve = js.native
     
-    def check(obj: js.Any, callback: js.Function2[/* err */ js.Any, /* cleaned */ js.Any, Unit]): Unit = js.native
-    def check(
-      obj: js.Any,
-      options: ICheckOptions,
-      callback: js.Function2[/* err */ js.Any, /* cleaned */ js.Any, Unit]
-    ): Unit = js.native
+    def check(obj: Any, callback: js.Function2[/* err */ Any, /* cleaned */ Any, Unit]): Unit = js.native
+    def check(obj: Any, options: ICheckOptions, callback: js.Function2[/* err */ Any, /* cleaned */ Any, Unit]): Unit = js.native
     
-    def checkUpdate(
-      existing: js.Any,
-      obj: js.Any,
-      callback: js.Function2[/* err */ js.Any, /* cleaned */ js.Any, Unit]
-    ): Unit = js.native
+    def checkUpdate(existing: Any, obj: Any, callback: js.Function2[/* err */ Any, /* cleaned */ Any, Unit]): Unit = js.native
     
-    def help(schema: IValveSchema): js.Any = js.native
+    def help(schema: IValveSchema): Any = js.native
     
     def setSchema(schema: IValveSchema): Valve = js.native
   }
@@ -134,7 +124,7 @@ object mod {
   
   inline def defToValve(`def`: js.Array[IObj]): js.Array[IValveSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("defToValve")(`def`.asInstanceOf[js.Any]).asInstanceOf[js.Array[IValveSchema]]
   
-  inline def stripSerializerTypes(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripSerializerTypes")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def stripSerializerTypes(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripSerializerTypes")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   object struct {
     
@@ -148,13 +138,13 @@ object mod {
     inline def Obj(name: String): IObj = ^.asInstanceOf[js.Dynamic].applyDynamic("Obj")(name.asInstanceOf[js.Any]).asInstanceOf[IObj]
     inline def Obj(name: String, options: IObjOptions): IObj = (^.asInstanceOf[js.Dynamic].applyDynamic("Obj")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObj]
     
-    inline def coerce(value: js.Any, coerceTo: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(value.asInstanceOf[js.Any], coerceTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def coerce(value: Any, coerceTo: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(value.asInstanceOf[js.Any], coerceTo.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     trait IField extends StObject {
       
       var attribute: Boolean
       
-      var coerceTo: js.Any
+      var coerceTo: Any
       
       var desc: js.UndefOr[String] = js.undefined
       
@@ -180,7 +170,7 @@ object mod {
       
       inline def apply(
         attribute: Boolean,
-        coerceTo: js.Any,
+        coerceTo: Any,
         enumerated: Boolean,
         filterFrom: js.Array[String],
         ignorePublic: Boolean,
@@ -198,7 +188,7 @@ object mod {
         
         inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
         
-        inline def setCoerceTo(value: js.Any): Self = StObject.set(x, "coerceTo", value.asInstanceOf[js.Any])
+        inline def setCoerceTo(value: Any): Self = StObject.set(x, "coerceTo", value.asInstanceOf[js.Any])
         
         inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
         
@@ -208,7 +198,7 @@ object mod {
         
         inline def setFilterFrom(value: js.Array[String]): Self = StObject.set(x, "filterFrom", value.asInstanceOf[js.Any])
         
-        inline def setFilterFromVarargs(value: String*): Self = StObject.set(x, "filterFrom", js.Array(value :_*))
+        inline def setFilterFromVarargs(value: String*): Self = StObject.set(x, "filterFrom", js.Array(value*))
         
         inline def setIgnorePublic(value: Boolean): Self = StObject.set(x, "ignorePublic", value.asInstanceOf[js.Any])
         
@@ -236,7 +226,7 @@ object mod {
       
       var desc: js.UndefOr[String] = js.undefined
       
-      var enumerated: js.UndefOr[js.Any] = js.undefined
+      var enumerated: js.UndefOr[Any] = js.undefined
       
       var filterFrom: js.UndefOr[js.Array[String]] = js.undefined
       
@@ -271,7 +261,7 @@ object mod {
         
         inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
         
-        inline def setEnumerated(value: js.Any): Self = StObject.set(x, "enumerated", value.asInstanceOf[js.Any])
+        inline def setEnumerated(value: Any): Self = StObject.set(x, "enumerated", value.asInstanceOf[js.Any])
         
         inline def setEnumeratedUndefined: Self = StObject.set(x, "enumerated", js.undefined)
         
@@ -279,7 +269,7 @@ object mod {
         
         inline def setFilterFromUndefined: Self = StObject.set(x, "filterFrom", js.undefined)
         
-        inline def setFilterFromVarargs(value: String*): Self = StObject.set(x, "filterFrom", js.Array(value :_*))
+        inline def setFilterFromVarargs(value: String*): Self = StObject.set(x, "filterFrom", js.Array(value*))
         
         inline def setIgnorePublic(value: Boolean): Self = StObject.set(x, "ignorePublic", value.asInstanceOf[js.Any])
         
@@ -326,7 +316,7 @@ object mod {
         
         inline def setFields(value: js.Array[IField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        inline def setFieldsVarargs(value: IField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: IField*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -359,7 +349,7 @@ object mod {
         
         inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        inline def setFieldsVarargs(value: IField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: IField*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
         
@@ -377,7 +367,7 @@ object mod {
     extends StObject
        with IValveSchemaMember {
     
-    def contains(arg: js.Any): IChain = js.native
+    def contains(arg: Any): IChain = js.native
     
     def custom(name: String): IChain = js.native
     
@@ -385,9 +375,7 @@ object mod {
     
     def entityEncode(): IChain = js.native
     
-    def enumerated(map: js.Any): IChain = js.native
-    
-    def equals(arg: js.Any): IChain = js.native
+    def enumerated(map: Any): IChain = js.native
     
     def getValidatorAtPos(pos: Double): IValidator = js.native
     
@@ -399,7 +387,7 @@ object mod {
     
     def immutable(): IChain = js.native
     
-    def inArray(array: js.Array[js.Any]): IChain = js.native
+    def inArray(array: js.Array[Any]): IChain = js.native
     
     def is(pattern: String): IChain = js.native
     def is(pattern: String, modifiers: String): IChain = js.native
@@ -465,30 +453,30 @@ object mod {
     
     def not(pattern: String, modifiers: String): IChain = js.native
     
-    def notContains(arg: js.Any): IChain = js.native
+    def notContains(arg: Any): IChain = js.native
     
     def notEmpty(): IChain = js.native
     
     def notIPBlacklisted(): IChain = js.native
     
-    def notIn(values: js.Array[js.Any]): IChain = js.native
-    def notIn(values: js.Array[js.Any], caseSensitive: Boolean): IChain = js.native
+    def notIn(values: js.Array[Any]): IChain = js.native
+    def notIn(values: js.Array[Any], caseSensitive: Boolean): IChain = js.native
     
     def notNull(): IChain = js.native
     
     def notRegex(pattern: String): IChain = js.native
     def notRegex(pattern: String, modifiers: String): IChain = js.native
-    def notRegex(pattern: RegExp): IChain = js.native
+    def notRegex(pattern: js.RegExp): IChain = js.native
     
     def numItems(min: Double, max: Double): IChain = js.native
     
     def optional(): IChain = js.native
     
-    def range(min: js.Any, max: js.Any): IChain = js.native
+    def range(min: Any, max: Any): IChain = js.native
     
     def regex(pattern: String): IChain = js.native
     def regex(pattern: String, modifiers: String): IChain = js.native
-    def regex(pattern: RegExp): IChain = js.native
+    def regex(pattern: js.RegExp): IChain = js.native
     
     def rename(target: String): IChain = js.native
     
@@ -582,7 +570,7 @@ object mod {
   
   trait IValidator extends StObject {
     
-    def func(value: js.Any, baton: js.Any, callback: js.Function): Unit
+    def func(value: Any, baton: Any, callback: js.Function): Unit
     
     var help: String
     
@@ -590,14 +578,14 @@ object mod {
   }
   object IValidator {
     
-    inline def apply(func: (js.Any, js.Any, js.Function) => Unit, help: String, name: String): IValidator = {
+    inline def apply(func: (Any, Any, js.Function) => Unit, help: String, name: String): IValidator = {
       val __obj = js.Dynamic.literal(func = js.Any.fromFunction3(func), help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IValidator]
     }
     
     extension [Self <: IValidator](x: Self) {
       
-      inline def setFunc(value: (js.Any, js.Any, js.Function) => Unit): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
+      inline def setFunc(value: (Any, Any, js.Function) => Unit): Self = StObject.set(x, "func", js.Any.fromFunction3(value))
       
       inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       

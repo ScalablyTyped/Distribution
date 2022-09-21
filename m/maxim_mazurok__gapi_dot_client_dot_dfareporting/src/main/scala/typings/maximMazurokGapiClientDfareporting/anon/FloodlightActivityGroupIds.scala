@@ -123,7 +123,7 @@ object FloodlightActivityGroupIds {
     
     inline def setFloodlightActivityGroupIdsUndefined: Self = StObject.set(x, "floodlightActivityGroupIds", js.undefined)
     
-    inline def setFloodlightActivityGroupIdsVarargs(value: String*): Self = StObject.set(x, "floodlightActivityGroupIds", js.Array(value :_*))
+    inline def setFloodlightActivityGroupIdsVarargs(value: String*): Self = StObject.set(x, "floodlightActivityGroupIds", js.Array(value*))
     
     inline def setFloodlightActivityGroupName(value: String): Self = StObject.set(x, "floodlightActivityGroupName", value.asInstanceOf[js.Any])
     
@@ -145,7 +145,7 @@ object FloodlightActivityGroupIds {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

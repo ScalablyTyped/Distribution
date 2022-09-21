@@ -12,7 +12,7 @@ trait DescribeFastSnapshotRestoresRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The filters. The possible values are:    availability-zone: The Availability Zone of the snapshot.    owner-id: The ID of the AWS account that enabled fast snapshot restore on the snapshot.    snapshot-id: The ID of the snapshot.    state: The state of fast snapshot restores for the snapshot (enabling | optimizing | enabled | disabling | disabled).  
+    * The filters. The possible values are:    availability-zone: The Availability Zone of the snapshot.    owner-id: The ID of the Amazon Web Services account that enabled fast snapshot restore on the snapshot.    snapshot-id: The ID of the snapshot.    state: The state of fast snapshot restores for the snapshot (enabling | optimizing | enabled | disabling | disabled).  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -43,7 +43,7 @@ object DescribeFastSnapshotRestoresRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: DescribeFastSnapshotRestoresMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

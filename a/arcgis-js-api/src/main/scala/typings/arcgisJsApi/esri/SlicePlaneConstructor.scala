@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlicePlaneConstructor
   extends StObject
      with /**
-  * Provides the shape definition of a slice plane for the [Slice](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html) widget.
+  * Provides the shape definition of a slice plane for a [Slice](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html) widget or [SliceAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html).
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SlicePlane.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html)
   */
 Instantiable0[SlicePlane]
      with Instantiable1[/* properties */ SlicePlaneProperties, SlicePlane] {
   
-  def fromJSON(json: js.Any): SlicePlane = js.native
+  def fromJSON(json: Any): SlicePlane = js.native
 }

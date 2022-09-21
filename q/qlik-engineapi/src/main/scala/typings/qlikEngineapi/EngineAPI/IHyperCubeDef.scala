@@ -187,23 +187,23 @@ object IHyperCubeDef {
     
     inline def setQDimensions(value: js.Array[INxDimension]): Self = StObject.set(x, "qDimensions", value.asInstanceOf[js.Any])
     
-    inline def setQDimensionsVarargs(value: INxDimension*): Self = StObject.set(x, "qDimensions", js.Array(value :_*))
+    inline def setQDimensionsVarargs(value: INxDimension*): Self = StObject.set(x, "qDimensions", js.Array(value*))
     
     inline def setQIndentMode(value: Boolean): Self = StObject.set(x, "qIndentMode", value.asInstanceOf[js.Any])
     
     inline def setQInitialDataFetch(value: js.Array[INxPage]): Self = StObject.set(x, "qInitialDataFetch", value.asInstanceOf[js.Any])
     
-    inline def setQInitialDataFetchVarargs(value: INxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value :_*))
+    inline def setQInitialDataFetchVarargs(value: INxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value*))
     
     inline def setQInterColumnSortOrder(value: js.Array[Double]): Self = StObject.set(x, "qInterColumnSortOrder", value.asInstanceOf[js.Any])
     
-    inline def setQInterColumnSortOrderVarargs(value: Double*): Self = StObject.set(x, "qInterColumnSortOrder", js.Array(value :_*))
+    inline def setQInterColumnSortOrderVarargs(value: Double*): Self = StObject.set(x, "qInterColumnSortOrder", js.Array(value*))
     
     inline def setQMaxStackedCells(value: Double): Self = StObject.set(x, "qMaxStackedCells", value.asInstanceOf[js.Any])
     
     inline def setQMeasures(value: js.Array[INxMeasure]): Self = StObject.set(x, "qMeasures", value.asInstanceOf[js.Any])
     
-    inline def setQMeasuresVarargs(value: INxMeasure*): Self = StObject.set(x, "qMeasures", js.Array(value :_*))
+    inline def setQMeasuresVarargs(value: INxMeasure*): Self = StObject.set(x, "qMeasures", js.Array(value*))
     
     inline def setQMode(value: NxHypercubeMode): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
     

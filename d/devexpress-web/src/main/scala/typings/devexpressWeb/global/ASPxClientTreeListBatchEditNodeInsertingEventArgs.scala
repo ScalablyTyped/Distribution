@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListBatchEditNodeInsertingEventArgs")
 @js.native
-class ASPxClientTreeListBatchEditNodeInsertingEventArgs protected ()
+open class ASPxClientTreeListBatchEditNodeInsertingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListBatchEditNodeInsertingEventArgs {
   /**
@@ -20,7 +20,7 @@ class ASPxClientTreeListBatchEditNodeInsertingEventArgs protected ()
   def this(nodeKey: String, parentNodeKey: String) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

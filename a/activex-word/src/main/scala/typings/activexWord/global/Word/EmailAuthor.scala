@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.EmailAuthor")
 @js.native
-/* private */ class EmailAuthor ()
+/* private */ open class EmailAuthor ()
   extends StObject
      with typings.activexWord.Word.EmailAuthor {
   
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Style: typings.activexWord.Word.Style = js.native

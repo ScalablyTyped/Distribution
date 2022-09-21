@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Cluster extends StObject {
   
+  /** Configuration for this cluster. */
+  var clusterConfig: js.UndefOr[ClusterConfig] = js.undefined
+  
   /** Immutable. The type of storage used by this cluster to serve its parent instance's tables, unless explicitly overridden. */
   var defaultStorageType: js.UndefOr[String] = js.undefined
+  
+  /** Immutable. The encryption configuration for CMEK-protected clusters. */
+  var encryptionConfig: js.UndefOr[EncryptionConfig] = js.undefined
   
   /**
     * Immutable. The location where this cluster's nodes and storage reside. For best performance, clients should be located as close as possible to this cluster. Currently only zones are
@@ -18,7 +24,7 @@ trait Cluster extends StObject {
   /** The unique name of the cluster. Values are of the form `projects/{project}/instances/{instance}/clusters/a-z*`. */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Required. The number of nodes allocated to this cluster. More nodes enable higher throughput and more consistent performance. */
+  /** The number of nodes allocated to this cluster. More nodes enable higher throughput and more consistent performance. */
   var serveNodes: js.UndefOr[Double] = js.undefined
   
   /** Output only. The current state of the cluster. */
@@ -33,9 +39,17 @@ object Cluster {
   
   extension [Self <: Cluster](x: Self) {
     
+    inline def setClusterConfig(value: ClusterConfig): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
+    
+    inline def setClusterConfigUndefined: Self = StObject.set(x, "clusterConfig", js.undefined)
+    
     inline def setDefaultStorageType(value: String): Self = StObject.set(x, "defaultStorageType", value.asInstanceOf[js.Any])
     
     inline def setDefaultStorageTypeUndefined: Self = StObject.set(x, "defaultStorageType", js.undefined)
+    
+    inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionConfigUndefined: Self = StObject.set(x, "encryptionConfig", js.undefined)
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

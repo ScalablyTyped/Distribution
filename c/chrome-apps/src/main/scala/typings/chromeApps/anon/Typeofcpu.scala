@@ -5,20 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Typeofcpu extends StObject {
   
-  /** Queries basic CPU information of the system. */
-  def getInfo(callback: js.Function1[/* info */ CpuInfo, Unit]): Unit
-}
-object Typeofcpu {
-  
-  inline def apply(getInfo: js.Function1[/* info */ CpuInfo, Unit] => Unit): Typeofcpu = {
-    val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo))
-    __obj.asInstanceOf[Typeofcpu]
-  }
-  
-  extension [Self <: Typeofcpu](x: Self) {
-    
-    inline def setGetInfo(value: js.Function1[/* info */ CpuInfo, Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
-  }
+  /**
+    * Queries basic CPU information of the system.
+    * @returns Promise<CpuInfo> only if callback is not specified
+    */
+  def getInfo(): js.Promise[CpuInfo] = js.native
+  /**
+    * Queries basic CPU information of the system.
+    * @param callback takes in an argument with CpuInfo
+    */
+  def getInfo(callback: js.Function1[/* info */ CpuInfo, Unit]): Unit = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for detect-indent
 
-Typings are for version 6.0.0
+Typings are for version 7.0.1
 
 ## Library description:
 Detect the indentation of code
@@ -10,10 +10,10 @@ Detect the indentation of code
 | ------------------ | :-------------: |
 | Full name          | detect-indent |
 | Keywords           | indent, indentation, detect, infer, identify, code, string, text, source, space, tab |
-| # releases         | 2 |
-| # dependents       | 358 |
-| # downloads        | 361841853 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 4.2253799666666664E7 |
+| # stars            | 173.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/detect-indent#readme)

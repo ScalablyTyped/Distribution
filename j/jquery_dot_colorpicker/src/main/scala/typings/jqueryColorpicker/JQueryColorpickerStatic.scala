@@ -13,11 +13,11 @@ trait JQueryColorpickerStatic extends StObject {
   
   var Color: Instantiable
   
-  var limits: StringDictionary[js.Function1[/* color */ js.Any, Unit]]
+  var limits: StringDictionary[js.Function1[/* color */ Any, Unit]]
   
-  var parsers: StringDictionary[js.Function1[/* color */ js.Any, js.Any]]
+  var parsers: StringDictionary[js.Function1[/* color */ Any, Any]]
   
-  var parts: StringDictionary[js.Function1[/* inst */ js.Any, js.Any]]
+  var parts: StringDictionary[js.Function1[/* inst */ Any, Any]]
   
   var partslists: StringDictionary[js.Array[String]]
   
@@ -25,19 +25,19 @@ trait JQueryColorpickerStatic extends StObject {
   
   var swatches: StringDictionary[StringDictionary[RGB]]
   
-  var writers: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, js.Any]]
+  var writers: StringDictionary[js.Function2[/* color */ Any, /* that */ Any, Any]]
 }
 object JQueryColorpickerStatic {
   
   inline def apply(
     Color: Instantiable,
-    limits: StringDictionary[js.Function1[/* color */ js.Any, Unit]],
-    parsers: StringDictionary[js.Function1[/* color */ js.Any, js.Any]],
-    parts: StringDictionary[js.Function1[/* inst */ js.Any, js.Any]],
+    limits: StringDictionary[js.Function1[/* color */ Any, Unit]],
+    parsers: StringDictionary[js.Function1[/* color */ Any, Any]],
+    parts: StringDictionary[js.Function1[/* inst */ Any, Any]],
     partslists: StringDictionary[js.Array[String]],
     regional: StringDictionary[String],
     swatches: StringDictionary[StringDictionary[RGB]],
-    writers: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, js.Any]]
+    writers: StringDictionary[js.Function2[/* color */ Any, /* that */ Any, Any]]
   ): JQueryColorpickerStatic = {
     val __obj = js.Dynamic.literal(Color = Color.asInstanceOf[js.Any], limits = limits.asInstanceOf[js.Any], parsers = parsers.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], partslists = partslists.asInstanceOf[js.Any], regional = regional.asInstanceOf[js.Any], swatches = swatches.asInstanceOf[js.Any], writers = writers.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryColorpickerStatic]
@@ -114,7 +114,7 @@ object JQueryColorpickerStatic {
     
     def setRGB(r: Double, g: Double, b: Double): Color
     
-    def setSpaces(new_spaces: js.Any): Color
+    def setSpaces(new_spaces: Any): Color
     
     def toCSS(): String
     
@@ -143,7 +143,7 @@ object JQueryColorpickerStatic {
       setHSV: (Double, Double, Double) => Color,
       setLAB: (Double, Double, Double) => Color,
       setRGB: (Double, Double, Double) => Color,
-      setSpaces: js.Any => Color,
+      setSpaces: Any => Color,
       toCSS: () => String,
       toHEX: () => String
     ): Color = {
@@ -194,7 +194,7 @@ object JQueryColorpickerStatic {
       
       inline def setSetRGB(value: (Double, Double, Double) => Color): Self = StObject.set(x, "setRGB", js.Any.fromFunction3(value))
       
-      inline def setSetSpaces(value: js.Any => Color): Self = StObject.set(x, "setSpaces", js.Any.fromFunction1(value))
+      inline def setSetSpaces(value: Any => Color): Self = StObject.set(x, "setSpaces", js.Any.fromFunction1(value))
       
       inline def setToCSS(value: () => String): Self = StObject.set(x, "toCSS", js.Any.fromFunction0(value))
       
@@ -256,11 +256,11 @@ object JQueryColorpickerStatic {
     
     inline def setColor(value: Instantiable): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    inline def setLimits(value: StringDictionary[js.Function1[/* color */ js.Any, Unit]]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: StringDictionary[js.Function1[/* color */ Any, Unit]]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    inline def setParsers(value: StringDictionary[js.Function1[/* color */ js.Any, js.Any]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
+    inline def setParsers(value: StringDictionary[js.Function1[/* color */ Any, Any]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
     
-    inline def setParts(value: StringDictionary[js.Function1[/* inst */ js.Any, js.Any]]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    inline def setParts(value: StringDictionary[js.Function1[/* inst */ Any, Any]]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
     inline def setPartslists(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "partslists", value.asInstanceOf[js.Any])
     
@@ -268,7 +268,7 @@ object JQueryColorpickerStatic {
     
     inline def setSwatches(value: StringDictionary[StringDictionary[RGB]]): Self = StObject.set(x, "swatches", value.asInstanceOf[js.Any])
     
-    inline def setWriters(value: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, js.Any]]): Self = StObject.set(x, "writers", value.asInstanceOf[js.Any])
+    inline def setWriters(value: StringDictionary[js.Function2[/* color */ Any, /* that */ Any, Any]]): Self = StObject.set(x, "writers", value.asInstanceOf[js.Any])
   }
   
   trait LAB extends StObject {

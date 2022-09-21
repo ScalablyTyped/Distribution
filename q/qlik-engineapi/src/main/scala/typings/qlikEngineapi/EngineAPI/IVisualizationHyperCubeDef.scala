@@ -16,7 +16,7 @@ trait IVisualizationHyperCubeDef
   @JSName("qDimensions")
   var qDimensions_IVisualizationHyperCubeDef: js.Array[IHyperCubeDimensionDef]
   
-  var qLayoutExclude: js.Any
+  var qLayoutExclude: Any
   
   @JSName("qMeasures")
   var qMeasures_IVisualizationHyperCubeDef: js.Array[IHyperCubeMeasureDef]
@@ -30,7 +30,7 @@ object IVisualizationHyperCubeDef {
     qIndentMode: Boolean,
     qInitialDataFetch: js.Array[INxPage],
     qInterColumnSortOrder: js.Array[Double],
-    qLayoutExclude: js.Any,
+    qLayoutExclude: Any,
     qMaxStackedCells: Double,
     qMeasures: js.Array[IHyperCubeMeasureDef],
     qMode: NxHypercubeMode,
@@ -54,12 +54,12 @@ object IVisualizationHyperCubeDef {
     
     inline def setQDimensions(value: js.Array[IHyperCubeDimensionDef]): Self = StObject.set(x, "qDimensions", value.asInstanceOf[js.Any])
     
-    inline def setQDimensionsVarargs(value: IHyperCubeDimensionDef*): Self = StObject.set(x, "qDimensions", js.Array(value :_*))
+    inline def setQDimensionsVarargs(value: IHyperCubeDimensionDef*): Self = StObject.set(x, "qDimensions", js.Array(value*))
     
-    inline def setQLayoutExclude(value: js.Any): Self = StObject.set(x, "qLayoutExclude", value.asInstanceOf[js.Any])
+    inline def setQLayoutExclude(value: Any): Self = StObject.set(x, "qLayoutExclude", value.asInstanceOf[js.Any])
     
     inline def setQMeasures(value: js.Array[IHyperCubeMeasureDef]): Self = StObject.set(x, "qMeasures", value.asInstanceOf[js.Any])
     
-    inline def setQMeasuresVarargs(value: IHyperCubeMeasureDef*): Self = StObject.set(x, "qMeasures", js.Array(value :_*))
+    inline def setQMeasuresVarargs(value: IHyperCubeMeasureDef*): Self = StObject.set(x, "qMeasures", js.Array(value*))
   }
 }

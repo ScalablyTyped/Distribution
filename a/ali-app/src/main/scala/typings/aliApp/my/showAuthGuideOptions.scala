@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region 权限引导 https://docs.alipay.com/mini/api/show-auth-guide
 trait showAuthGuideOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /**
     * 引导的权限标识，用于标识该权限类型(如 LBS)

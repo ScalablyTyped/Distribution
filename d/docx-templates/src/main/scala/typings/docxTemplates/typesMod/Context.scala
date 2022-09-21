@@ -46,7 +46,7 @@ trait Context extends StObject {
   
   var pendingLinkNode: js.UndefOr[NonTextNode] = js.undefined
   
-  var query: js.UndefOr[Query] = js.undefined
+  var query: js.UndefOr[String] = js.undefined
   
   var shorthands: StringDictionary[String]
   
@@ -113,7 +113,7 @@ object Context {
     
     inline def setLoops(value: js.Array[LoopStatus]): Self = StObject.set(x, "loops", value.asInstanceOf[js.Any])
     
-    inline def setLoopsVarargs(value: LoopStatus*): Self = StObject.set(x, "loops", js.Array(value :_*))
+    inline def setLoopsVarargs(value: LoopStatus*): Self = StObject.set(x, "loops", js.Array(value*))
     
     inline def setOptions(value: CreateReportOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
@@ -129,7 +129,7 @@ object Context {
     
     inline def setPendingLinkNodeUndefined: Self = StObject.set(x, "pendingLinkNode", js.undefined)
     
-    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     

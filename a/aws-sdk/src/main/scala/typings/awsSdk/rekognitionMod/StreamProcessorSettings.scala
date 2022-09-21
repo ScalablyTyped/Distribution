@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StreamProcessorSettings extends StObject {
   
+  var ConnectedHome: js.UndefOr[ConnectedHomeSettings] = js.undefined
+  
   /**
     * Face search settings to use on a streaming video. 
     */
@@ -19,6 +21,10 @@ object StreamProcessorSettings {
   }
   
   extension [Self <: StreamProcessorSettings](x: Self) {
+    
+    inline def setConnectedHome(value: ConnectedHomeSettings): Self = StObject.set(x, "ConnectedHome", value.asInstanceOf[js.Any])
+    
+    inline def setConnectedHomeUndefined: Self = StObject.set(x, "ConnectedHome", js.undefined)
     
     inline def setFaceSearch(value: FaceSearchSettings): Self = StObject.set(x, "FaceSearch", value.asInstanceOf[js.Any])
     

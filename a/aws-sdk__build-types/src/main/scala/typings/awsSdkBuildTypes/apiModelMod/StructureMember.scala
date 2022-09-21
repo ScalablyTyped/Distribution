@@ -13,7 +13,7 @@ trait StructureMember
   var streaming: js.UndefOr[scala.Boolean] = js.undefined
   
   var xmlNamespace: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ js.Any) | java.lang.String
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ Any) | java.lang.String
   ] = js.undefined
 }
 object StructureMember {
@@ -34,7 +34,7 @@ object StructureMember {
     inline def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
     
     inline def setXmlNamespace(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ js.Any) | java.lang.String
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ Any) | java.lang.String
     ): Self = StObject.set(x, "xmlNamespace", value.asInstanceOf[js.Any])
     
     inline def setXmlNamespaceUndefined: Self = StObject.set(x, "xmlNamespace", js.undefined)

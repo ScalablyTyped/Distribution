@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.MashupDataSource")
 @js.native
-class MashupDataSource protected ()
+open class MashupDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.MashupDataSource {
   def this(mashupSettings: MashupDataSourceMashupSettings) = this()

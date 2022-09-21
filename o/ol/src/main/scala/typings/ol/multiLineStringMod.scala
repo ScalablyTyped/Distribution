@@ -10,7 +10,7 @@ object multiLineStringMod {
   
   @JSImport("ol/geom/MultiLineString", JSImport.Default)
   @js.native
-  class default protected () extends MultiLineString {
+  open class default protected () extends MultiLineString {
     def this(coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default]) = this()
     def this(
       coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default],

@@ -8,5 +8,5 @@ object disableEnhancedMonitoringOutputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/DisableEnhancedMonitoringOutput", "DisableEnhancedMonitoringOutput")
   @js.native
-  val DisableEnhancedMonitoringOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DisableEnhancedMonitoringOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

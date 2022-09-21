@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "denque" : "1.4.1"
+      "denque" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "denque" : "1.4.1"
+      "denque" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

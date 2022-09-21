@@ -13,7 +13,7 @@ object resourceManagerMod {
   
   @JSImport("@tensorflow/tfjs-converter/dist/executor/resource_manager", "ResourceManager")
   @js.native
-  class ResourceManager () extends StObject {
+  open class ResourceManager () extends StObject {
     def this(hashTableNameToHandle: NamedTensorMap) = this()
     def this(hashTableNameToHandle: Unit, hashTableMap: HashTableMap) = this()
     def this(hashTableNameToHandle: NamedTensorMap, hashTableMap: HashTableMap) = this()

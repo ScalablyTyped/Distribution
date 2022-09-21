@@ -70,7 +70,7 @@ trait ClassName extends StObject {
   
   var rowCount: Validator[Double]
   
-  var rowGetter: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, js.Any]]
+  var rowGetter: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, Any]]
   
   var rowHeight: Validator[Double | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, Double])]
   
@@ -126,7 +126,7 @@ object ClassName {
     overscanRowCount: Validator[Double],
     rowClassName: Requireable[String | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, String])],
     rowCount: Validator[Double],
-    rowGetter: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, js.Any]],
+    rowGetter: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, Any]],
     rowHeight: Validator[Double | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, Double])],
     rowRenderer: Requireable[js.Function1[/* props */ TableRowProps, ReactNode]],
     rowStyle: Validator[
@@ -201,7 +201,7 @@ object ClassName {
     
     inline def setRowCount(value: Validator[Double]): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    inline def setRowGetter(value: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, js.Any]]): Self = StObject.set(x, "rowGetter", value.asInstanceOf[js.Any])
+    inline def setRowGetter(value: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, Any]]): Self = StObject.set(x, "rowGetter", value.asInstanceOf[js.Any])
     
     inline def setRowHeight(value: Validator[Double | (js.Function1[/* params */ typings.reactVirtualized.mod.Index, Double])]): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     

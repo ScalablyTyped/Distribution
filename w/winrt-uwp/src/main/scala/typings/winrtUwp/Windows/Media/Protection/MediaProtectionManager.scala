@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MediaProtectionManager extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_componentloadfailed(`type`: componentloadfailed, listener: ComponentLoadFailedEventHandler): Unit = js.native
   @JSName("addEventListener")
@@ -43,7 +43,7 @@ trait MediaProtectionManager extends StObject {
   /** Gets a PropertySet object containing any properties attached to the protection manager. */
   var properties: IPropertySet = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_componentloadfailed(`type`: componentloadfailed, listener: ComponentLoadFailedEventHandler): Unit = js.native
   @JSName("removeEventListener")

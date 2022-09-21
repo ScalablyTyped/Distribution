@@ -10,10 +10,10 @@ This [remark][remark] plugin parses custom Markdown syntax to produce (HTML) abb
 | ------------------ | :-------------: |
 | Full name          | remark-abbr |
 | Keywords           | remark |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 80364 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9244.333333333334 |
+| # stars            | 182.0 |
 
 ## Links
 - [Homepage](https://github.com/zestedesavoir/zmarkdown#readme)

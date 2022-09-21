@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides all valid choice-types for the `ListQuestion`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait ListChoiceMap[T /* <: Answers */]
   extends StObject
      with BaseChoiceMap[T] {
@@ -19,10 +13,10 @@ trait ListChoiceMap[T /* <: Answers */]
 object ListChoiceMap {
   
   inline def apply[T /* <: Answers */](
-    Choice: typings.inquirer.choiceMod.^[T],
-    ChoiceOptions: ChoiceOptions[T],
+    Choice: typings.inquirer.choiceMod.default[T],
+    ChoiceOptions: ChoiceOptions,
     ListChoiceOptions: ListChoiceOptions[T],
-    Separator: typings.inquirer.separatorMod.^,
+    Separator: typings.inquirer.separatorMod.default,
     SeparatorOptions: SeparatorOptions
   ): ListChoiceMap[T] = {
     val __obj = js.Dynamic.literal(Choice = Choice.asInstanceOf[js.Any], ChoiceOptions = ChoiceOptions.asInstanceOf[js.Any], ListChoiceOptions = ListChoiceOptions.asInstanceOf[js.Any], Separator = Separator.asInstanceOf[js.Any], SeparatorOptions = SeparatorOptions.asInstanceOf[js.Any])

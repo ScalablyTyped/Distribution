@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAppInstanceResponse extends StObject {
   
   /**
-    * The ARN, metadata, created and last-updated timestamps, and the name of the app instance. All timestamps use epoch milliseconds.
+    * The ARN, metadata, created and last-updated timestamps, and the name of the AppInstance. All timestamps use epoch milliseconds.
     */
   var AppInstance: js.UndefOr[typings.awsSdk.chimeMod.AppInstance] = js.undefined
 }

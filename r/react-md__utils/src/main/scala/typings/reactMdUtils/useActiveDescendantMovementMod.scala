@@ -59,7 +59,7 @@ object useActiveDescendantMovementMod {
       
       inline def setItemRefs(value: ItemRefList[IE]): Self = StObject.set(x, "itemRefs", value.asInstanceOf[js.Any])
       
-      inline def setItemRefsVarargs(value: ItemRef[IE]*): Self = StObject.set(x, "itemRefs", js.Array(value :_*))
+      inline def setItemRefsVarargs(value: ItemRef[IE]*): Self = StObject.set(x, "itemRefs", js.Array(value*))
       
       inline def setOnKeyDown(value: KeyboardEvent[CE] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       

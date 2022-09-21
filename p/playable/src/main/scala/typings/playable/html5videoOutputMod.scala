@@ -16,7 +16,7 @@ object html5videoOutputMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/native/html5video-output", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with NativeOutput {
     def this(hasEventEmitterConfigAvailablePlaybackAdapters: AvailablePlaybackAdapters) = this()
@@ -44,25 +44,25 @@ object html5videoOutputMod {
     extends StObject
        with IVideoOutput {
     
-    /* private */ var _adapterStrategy: js.Any = js.native
+    /* private */ var _adapterStrategy: Any = js.native
     
-    /* private */ var _availablePlaybackAdapters: js.Any = js.native
+    /* private */ var _availablePlaybackAdapters: Any = js.native
     
-    /* private */ var _createVideoTag: js.Any = js.native
+    /* private */ var _createVideoTag: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _getViewDimensions: js.Any = js.native
+    /* private */ var _getViewDimensions: Any = js.native
     
-    /* private */ var _nativeEventsBroadcaster: js.Any = js.native
+    /* private */ var _nativeEventsBroadcaster: Any = js.native
     
-    /* private */ var _pauseRequested: js.Any = js.native
+    /* private */ var _pauseRequested: Any = js.native
     
-    /* private */ var _playPromise: js.Any = js.native
+    /* private */ var _playPromise: Any = js.native
     
-    /* private */ var _stateEngine: js.Any = js.native
+    /* private */ var _stateEngine: Any = js.native
     
-    /* private */ var _video: js.Any = js.native
+    /* private */ var _video: Any = js.native
     
     def attachedAdapter: IPlaybackAdapter = js.native
     

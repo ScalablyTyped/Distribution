@@ -37,7 +37,7 @@ object AccountPermission {
     
     inline def setAccountProfilesUndefined: Self = StObject.set(x, "accountProfiles", js.undefined)
     
-    inline def setAccountProfilesVarargs(value: String*): Self = StObject.set(x, "accountProfiles", js.Array(value :_*))
+    inline def setAccountProfilesVarargs(value: String*): Self = StObject.set(x, "accountProfiles", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

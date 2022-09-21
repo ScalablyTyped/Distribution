@@ -1,7 +1,6 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait IConsensusSummarizeBlockResponse extends StObject {
   var status: js.UndefOr[Status | Null] = js.undefined
   
   /** ConsensusSummarizeBlockResponse summary */
-  var summary: js.UndefOr[Uint8Array | Null] = js.undefined
+  var summary: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
 }
 object IConsensusSummarizeBlockResponse {
   
@@ -29,7 +28,7 @@ object IConsensusSummarizeBlockResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setSummary(value: Uint8Array): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: js.typedarray.Uint8Array): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     inline def setSummaryNull: Self = StObject.set(x, "summary", null)
     

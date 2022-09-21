@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Models.CreateInboundRuleRequest")
 @js.native
-class CreateInboundRuleRequest protected ()
+open class CreateInboundRuleRequest protected ()
   extends typings.postmark.modelsMod.CreateInboundRuleRequest {
   def this(Rule: String) = this()
 }

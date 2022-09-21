@@ -10,9 +10,6 @@ trait Type
   extends StObject
      with Action {
   
-  /**
-    * List of previously visited route keys.
-    */
   var payload: Params
   
   var source: js.UndefOr[String] = js.undefined

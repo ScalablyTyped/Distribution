@@ -11,9 +11,9 @@ A light statistical package that operates on numeric Arrays.
 | Full name          | stats-lite |
 | Keywords           | stats, statistics, numbers, math, sum, mean, average, mode, median, percentile, variance, deviation |
 | # releases         | 0 |
-| # dependents       | 71 |
-| # downloads        | 2955308 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 347894.3333333333 |
+| # stars            | 72.0 |
 
 ## Links
 - [Homepage](https://github.com/brycebaril/node-stats-lite)

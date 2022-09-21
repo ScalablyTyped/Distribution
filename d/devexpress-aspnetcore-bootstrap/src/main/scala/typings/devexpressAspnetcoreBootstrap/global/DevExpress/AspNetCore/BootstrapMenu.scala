@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapMenu")
 @js.native
-class BootstrapMenu ()
+open class BootstrapMenu ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapMenu

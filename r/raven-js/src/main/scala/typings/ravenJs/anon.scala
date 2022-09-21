@@ -10,12 +10,18 @@ object anon {
   /* Inlined std.Error & {  request :std.XMLHttpRequest | undefined} */
   trait ErrorrequestXMLHttpReques extends StObject {
     
+    /* standard es2022.error */
+    var cause: js.UndefOr[Any] = js.undefined
+    
+    /* standard es5 */
     var message: String
     
+    /* standard es5 */
     var name: String
     
     var request: js.UndefOr[XMLHttpRequest] = js.undefined
     
+    /* standard es5 */
     var stack: js.UndefOr[String] = js.undefined
   }
   object ErrorrequestXMLHttpReques {
@@ -26,6 +32,10 @@ object anon {
     }
     
     extension [Self <: ErrorrequestXMLHttpReques](x: Self) {
+      
+      inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      
+      inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -24,6 +24,6 @@ object HiveJsonSerDe {
     
     inline def setTimestampFormatsUndefined: Self = StObject.set(x, "TimestampFormats", js.undefined)
     
-    inline def setTimestampFormatsVarargs(value: NonEmptyString*): Self = StObject.set(x, "TimestampFormats", js.Array(value :_*))
+    inline def setTimestampFormatsVarargs(value: NonEmptyString*): Self = StObject.set(x, "TimestampFormats", js.Array(value*))
   }
 }

@@ -22,7 +22,7 @@ trait DescribeStackResourceDriftsInput extends StObject {
   var StackName: StackNameOrId
   
   /**
-    * The resource drift status values to use as filters for the resource drift results returned.    DELETED: The resource differs from its expected template configuration in that the resource has been deleted.    MODIFIED: One or more resource properties differ from their expected template values.    IN_SYNC: The resources's actual configuration matches its expected template configuration.    NOT_CHECKED: AWS CloudFormation does not currently return this value.  
+    * The resource drift status values to use as filters for the resource drift results returned.    DELETED: The resource differs from its expected template configuration in that the resource has been deleted.    MODIFIED: One or more resource properties differ from their expected template values.    IN_SYNC: The resource's actual configuration matches its expected template configuration.    NOT_CHECKED: CloudFormation doesn't currently return this value.  
     */
   var StackResourceDriftStatusFilters: js.UndefOr[typings.awsSdk.cloudformationMod.StackResourceDriftStatusFilters] = js.undefined
 }
@@ -49,6 +49,6 @@ object DescribeStackResourceDriftsInput {
     
     inline def setStackResourceDriftStatusFiltersUndefined: Self = StObject.set(x, "StackResourceDriftStatusFilters", js.undefined)
     
-    inline def setStackResourceDriftStatusFiltersVarargs(value: StackResourceDriftStatus*): Self = StObject.set(x, "StackResourceDriftStatusFilters", js.Array(value :_*))
+    inline def setStackResourceDriftStatusFiltersVarargs(value: StackResourceDriftStatus*): Self = StObject.set(x, "StackResourceDriftStatusFilters", js.Array(value*))
   }
 }

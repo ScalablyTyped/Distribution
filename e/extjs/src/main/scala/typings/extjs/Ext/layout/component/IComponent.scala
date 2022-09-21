@@ -16,14 +16,14 @@ trait IComponent
     */
   @JSName("beginLayoutCycle")
   var beginLayoutCycle_IComponent: js.UndefOr[
-    js.Function2[/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* ownerContext */ js.UndefOr[Any], /* firstCycle */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] This method is called after all layouts are complete and their calculations flushed to the DOM
     * @param ownerContext Object
     */
   @JSName("finishedLayout")
-  var finishedLayout_IComponent: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var finishedLayout_IComponent: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Returns the element into which rendering must take place
     * @returns Ext.Element
@@ -39,7 +39,7 @@ trait IComponent
     * @param ownerContext Object
     */
   @JSName("notifyOwner")
-  var notifyOwner_IComponent: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var notifyOwner_IComponent: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IComponent {
   
@@ -50,11 +50,11 @@ object IComponent {
   
   extension [Self <: IComponent](x: Self) {
     
-    inline def setBeginLayoutCycle(value: (/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction2(value))
+    inline def setBeginLayoutCycle(value: (/* ownerContext */ js.UndefOr[Any], /* firstCycle */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction2(value))
     
     inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
-    inline def setFinishedLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction1(value))
+    inline def setFinishedLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction1(value))
     
     inline def setFinishedLayoutUndefined: Self = StObject.set(x, "finishedLayout", js.undefined)
     
@@ -66,7 +66,7 @@ object IComponent {
     
     inline def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
     
-    inline def setNotifyOwner(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "notifyOwner", js.Any.fromFunction1(value))
+    inline def setNotifyOwner(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "notifyOwner", js.Any.fromFunction1(value))
     
     inline def setNotifyOwnerUndefined: Self = StObject.set(x, "notifyOwner", js.undefined)
   }

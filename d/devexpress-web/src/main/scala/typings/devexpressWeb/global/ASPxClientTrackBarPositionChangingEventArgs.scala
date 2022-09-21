@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTrackBarPositionChangingEventArgs")
 @js.native
-class ASPxClientTrackBarPositionChangingEventArgs protected ()
+open class ASPxClientTrackBarPositionChangingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTrackBarPositionChangingEventArgs {
   /**

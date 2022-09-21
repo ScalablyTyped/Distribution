@@ -25,7 +25,7 @@ object Endpoint {
     
     inline def setPortsUndefined: Self = StObject.set(x, "Ports", js.undefined)
     
-    inline def setPortsVarargs(value: PortConfig*): Self = StObject.set(x, "Ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: PortConfig*): Self = StObject.set(x, "Ports", js.Array(value*))
     
     inline def setSpec(value: EndpointSpec): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object Endpoint {
     
     inline def setVirtualIPsUndefined: Self = StObject.set(x, "VirtualIPs", js.undefined)
     
-    inline def setVirtualIPsVarargs(value: EndpointVirtualIP*): Self = StObject.set(x, "VirtualIPs", js.Array(value :_*))
+    inline def setVirtualIPsVarargs(value: EndpointVirtualIP*): Self = StObject.set(x, "VirtualIPs", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ trait CurveTimeline
   extends StObject
      with Timeline {
   
-  /* private */ var curves: js.Any
+  /* private */ var curves: Any
   
   def getCurvePercent(frameIndex: Double, percent: Double): Double
   
@@ -26,7 +26,7 @@ object CurveTimeline {
   
   inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
-    curves: js.Any,
+    curves: Any,
     getCurvePercent: (Double, Double) => Double,
     getCurveType: Double => Double,
     getFrameCount: () => Double,
@@ -41,7 +41,7 @@ object CurveTimeline {
   
   extension [Self <: CurveTimeline](x: Self) {
     
-    inline def setCurves(value: js.Any): Self = StObject.set(x, "curves", value.asInstanceOf[js.Any])
+    inline def setCurves(value: Any): Self = StObject.set(x, "curves", value.asInstanceOf[js.Any])
     
     inline def setGetCurvePercent(value: (Double, Double) => Double): Self = StObject.set(x, "getCurvePercent", js.Any.fromFunction2(value))
     

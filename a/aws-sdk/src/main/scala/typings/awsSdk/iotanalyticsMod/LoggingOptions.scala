@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LoggingOptions extends StObject {
   
   /**
-    * If true, logging is enabled for AWS IoT Analytics.
+    * If true, logging is enabled for IoT Analytics.
     */
   var enabled: LoggingEnabled
   
@@ -17,7 +17,7 @@ trait LoggingOptions extends StObject {
   var level: LoggingLevel
   
   /**
-    * The ARN of the role that grants permission to AWS IoT Analytics to perform logging.
+    * The ARN of the role that grants permission to IoT Analytics to perform logging.
     */
   var roleArn: RoleArn
 }

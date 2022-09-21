@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-image
 
-Typings are for version 3.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Check if a file path is an image
@@ -10,10 +10,10 @@ Check if a file path is an image
 | ------------------ | :-------------: |
 | Full name          | is-image |
 | Keywords           | extension, extensions, file, path, check, detect, is, image, img, photo, picture, jpg, jpeg, png |
-| # releases         | 2 |
-| # dependents       | 72 |
-| # downloads        | 1307528 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 90626.33333333333 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-image#readme)

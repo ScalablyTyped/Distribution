@@ -7,24 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * YouTube Analytics API
-  *
-  * Retrieves your YouTube Analytics data.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const youtubeAnalytics = google.youtubeAnalytics('v2');
-  *
-  * @namespace youtubeAnalytics
-  * @type {Function}
-  * @version v2
-  * @variation v2
-  * @param {object=} options Options for Youtubeanalytics
-  */
 @JSImport("googleapis/build/src/apis/youtubeAnalytics/v2", "youtubeAnalytics_v2.Youtubeanalytics")
 @js.native
-class Youtubeanalytics protected () extends StObject {
+open class Youtubeanalytics protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   

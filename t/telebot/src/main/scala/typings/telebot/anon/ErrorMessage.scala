@@ -8,7 +8,7 @@ trait ErrorMessage extends StObject {
   
   var errorMessage: js.UndefOr[String] = js.undefined
   
-  var shippingOptions: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var shippingOptions: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object ErrorMessage {
   
@@ -23,10 +23,10 @@ object ErrorMessage {
     
     inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    inline def setShippingOptions(value: js.Array[js.Any]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
+    inline def setShippingOptions(value: js.Array[Any]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
     
     inline def setShippingOptionsUndefined: Self = StObject.set(x, "shippingOptions", js.undefined)
     
-    inline def setShippingOptionsVarargs(value: js.Any*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
+    inline def setShippingOptionsVarargs(value: Any*): Self = StObject.set(x, "shippingOptions", js.Array(value*))
   }
 }

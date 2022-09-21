@@ -8,7 +8,7 @@ object categoryAxesSettingsMod {
   
   @JSImport("amcharts/CategoryAxesSettings", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with CategoryAxesSettings {
     
@@ -70,7 +70,7 @@ object categoryAxesSettingsMod {
       * Check this page for date formatting strings.
       */
     /* CompleteClass */
-    var dateFormats: js.Array[js.Any] = js.native
+    var dateFormats: js.Array[Any] = js.native
     
     /**
       * If you want data points to be placed at equal intervals (omiting dates with no data),
@@ -130,7 +130,7 @@ object categoryAxesSettingsMod {
       * ["ss", "10ss", "30ss", "mm", "10mm", "30mm", "hh", "DD", "WW", "MM", "YYYY"]
       */
     /* CompleteClass */
-    var groupToPeriods: js.Array[js.Any] = js.native
+    var groupToPeriods: js.Array[Any] = js.native
     
     /**
       * Specifies whether values should be placed inside or outside of plot area.
@@ -241,7 +241,7 @@ object categoryAxesSettingsMod {
       * YYYY - years
       * Check this page for date formatting strings.
       */
-    var dateFormats: js.Array[js.Any]
+    var dateFormats: js.Array[Any]
     
     /**
       * If you want data points to be placed at equal intervals (omiting dates with no data),
@@ -292,7 +292,7 @@ object categoryAxesSettingsMod {
       * the selected period than specified in maxSeries property.
       * ["ss", "10ss", "30ss", "mm", "10mm", "30mm", "hh", "DD", "WW", "MM", "YYYY"]
       */
-    var groupToPeriods: js.Array[js.Any]
+    var groupToPeriods: js.Array[Any]
     
     /**
       * Specifies whether values should be placed inside or outside of plot area.
@@ -353,7 +353,7 @@ object categoryAxesSettingsMod {
       axisThickness: Double,
       color: String,
       dashLength: Double,
-      dateFormats: js.Array[js.Any],
+      dateFormats: js.Array[Any],
       equalSpacing: Boolean,
       fillAlpha: Double,
       fillColor: String,
@@ -362,7 +362,7 @@ object categoryAxesSettingsMod {
       gridColor: String,
       gridCount: Double,
       gridThickness: Double,
-      groupToPeriods: js.Array[js.Any],
+      groupToPeriods: js.Array[Any],
       inside: Boolean,
       labelRotation: Double,
       maxSeries: Double,
@@ -391,9 +391,9 @@ object categoryAxesSettingsMod {
       
       inline def setDashLength(value: Double): Self = StObject.set(x, "dashLength", value.asInstanceOf[js.Any])
       
-      inline def setDateFormats(value: js.Array[js.Any]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
+      inline def setDateFormats(value: js.Array[Any]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
       
-      inline def setDateFormatsVarargs(value: js.Any*): Self = StObject.set(x, "dateFormats", js.Array(value :_*))
+      inline def setDateFormatsVarargs(value: Any*): Self = StObject.set(x, "dateFormats", js.Array(value*))
       
       inline def setEqualSpacing(value: Boolean): Self = StObject.set(x, "equalSpacing", value.asInstanceOf[js.Any])
       
@@ -411,9 +411,9 @@ object categoryAxesSettingsMod {
       
       inline def setGridThickness(value: Double): Self = StObject.set(x, "gridThickness", value.asInstanceOf[js.Any])
       
-      inline def setGroupToPeriods(value: js.Array[js.Any]): Self = StObject.set(x, "groupToPeriods", value.asInstanceOf[js.Any])
+      inline def setGroupToPeriods(value: js.Array[Any]): Self = StObject.set(x, "groupToPeriods", value.asInstanceOf[js.Any])
       
-      inline def setGroupToPeriodsVarargs(value: js.Any*): Self = StObject.set(x, "groupToPeriods", js.Array(value :_*))
+      inline def setGroupToPeriodsVarargs(value: Any*): Self = StObject.set(x, "groupToPeriods", js.Array(value*))
       
       inline def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
       

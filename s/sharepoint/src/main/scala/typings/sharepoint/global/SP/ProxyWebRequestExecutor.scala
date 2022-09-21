@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ProxyWebRequestExecutor")
 @js.native
-class ProxyWebRequestExecutor protected ()
+open class ProxyWebRequestExecutor protected ()
   extends StObject
      with WebRequestExecutor {
   def this(url: String) = this()
-  def this(url: String, options: js.Any) = this()
+  def this(url: String, options: Any) = this()
   
   //#endregion
   //#region Methods
@@ -129,5 +129,5 @@ class ProxyWebRequestExecutor protected ()
     * @return The JSON-evaluated response object.
     */
   /* CompleteClass */
-  override def `object`(): js.Any = js.native
+  override def `object`(): Any = js.native
 }

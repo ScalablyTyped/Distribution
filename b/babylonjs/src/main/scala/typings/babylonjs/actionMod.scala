@@ -17,7 +17,7 @@ object actionMod {
   
   @JSImport("babylonjs/Actions/action", "Action")
   @js.native
-  class Action protected ()
+  open class Action protected ()
     extends StObject
        with IAction {
     /**
@@ -26,10 +26,10 @@ object actionMod {
       * @param condition an optional determinant of action
       */
     def this(/** the trigger, with or without parameters, for the action */
-    triggerOptions: js.Any) = this()
+    triggerOptions: Any) = this()
     def this(
       /** the trigger, with or without parameters, for the action */
-    triggerOptions: js.Any,
+    triggerOptions: Any,
       condition: Condition
     ) = this()
     
@@ -40,32 +40,43 @@ object actionMod {
     @JSName("_actionManager")
     var _actionManager_Action: ActionManager = js.native
     
-    /* private */ var _child: js.Any = js.native
+    /* private */ var _child: Any = js.native
     
-    /* private */ var _condition: js.Any = js.native
+    /* private */ var _condition: Any = js.native
     
     /**
-      * Internal only
+      * Internal only - Returns if the current condition allows to run the action
       * @hidden
       */
-    def _getEffectiveTarget(target: js.Any, propertyPath: String): js.Any = js.native
+    def _evaluateConditionForCurrentFrame(): Boolean = js.native
     
     /**
       * Internal only
+      * @param target
+      * @param propertyPath
+      * @hidden
+      */
+    def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
+    
+    /**
+      * Internal only
+      * @param propertyPath
       * @hidden
       */
     def _getProperty(propertyPath: String): String = js.native
     
-    /* private */ var _nextActiveAction: js.Any = js.native
+    /* private */ var _nextActiveAction: Any = js.native
     
     /**
       * Internal only called by serialize
+      * @param serializedAction
+      * @param parent
       * @hidden
       */
-    /* protected */ def _serialize(serializedAction: js.Any): js.Any = js.native
-    /* protected */ def _serialize(serializedAction: js.Any, parent: js.Any): js.Any = js.native
+    /* protected */ def _serialize(serializedAction: Any): Any = js.native
+    /* protected */ def _serialize(serializedAction: Any, parent: Any): Any = js.native
     
-    /* private */ var _triggerParameter: js.Any = js.native
+    /* private */ var _triggerParameter: Any = js.native
     
     /**
       * Execute placeholder for child classes
@@ -78,6 +89,12 @@ object actionMod {
       * An event triggered prior to action being executed.
       */
     var onBeforeExecuteObservable: Observable[Action] = js.native
+    
+    /**
+      * Sets the trigger parameter
+      * @param value defines the new trigger parameter
+      */
+    def setTriggerParameter(value: Any): Unit = js.native
     
     /**
       * Skips to next active action
@@ -102,15 +119,17 @@ object actionMod {
     inline def _GetTargetProperty(target: Node): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
     /**
       * Internal only
+      * @param target
       * @hidden
       */
     inline def _GetTargetProperty(target: Scene): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
     
     /**
       * Internal only
+      * @param value
       * @hidden
       */
-    inline def _SerializeValueAsString(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_SerializeValueAsString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def _SerializeValueAsString(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_SerializeValueAsString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native
@@ -139,14 +158,14 @@ object actionMod {
       * Gets the trigger parameters
       * @returns the trigger parameters
       */
-    def getTriggerParameter(): js.Any = js.native
+    def getTriggerParameter(): Any = js.native
     
     /**
       * Serialize placeholder for child classes
       * @param parent of child
       * @returns the serialized object
       */
-    def serialize(parent: js.Any): js.Any = js.native
+    def serialize(parent: Any): Any = js.native
     
     /**
       * Adds action to chain of actions, may be a DoNothingAction
@@ -162,6 +181,6 @@ object actionMod {
     var trigger: Double = js.native
     
     /** Options of the trigger */
-    var triggerOptions: js.Any = js.native
+    var triggerOptions: Any = js.native
   }
 }

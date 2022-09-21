@@ -1,9 +1,5 @@
 package typings.googleapis.v21Mod.contentV21
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,24 +9,17 @@ trait ParamsResourceOrderreportsListtransactions
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * The Google-provided ID of the disbursement (found in Wallet).
     */
   var disbursementId: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of disbursements to return in the response, used for
-    * paging.
+    * The maximum number of disbursements to return in the response, used for paging.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * The ID of the account that manages the order. This cannot be a
-    * multi-client account.
+    * The ID of the account that manages the order. This cannot be a multi-client account.
     */
   var merchantId: js.UndefOr[String] = js.undefined
   
@@ -40,8 +29,7 @@ trait ParamsResourceOrderreportsListtransactions
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The last date in which transaction occurred. In ISO 8601 format. Default:
-    * current date.
+    * The last date in which transaction occurred. In ISO 8601 format. Default: current date.
     */
   var transactionEndDate: js.UndefOr[String] = js.undefined
   
@@ -58,10 +46,6 @@ object ParamsResourceOrderreportsListtransactions {
   }
   
   extension [Self <: ParamsResourceOrderreportsListtransactions](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDisbursementId(value: String): Self = StObject.set(x, "disbursementId", value.asInstanceOf[js.Any])
     

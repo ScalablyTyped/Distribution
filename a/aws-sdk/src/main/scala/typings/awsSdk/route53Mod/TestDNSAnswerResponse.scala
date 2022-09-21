@@ -58,7 +58,7 @@ object TestDNSAnswerResponse {
     
     inline def setRecordData(value: RecordData): Self = StObject.set(x, "RecordData", value.asInstanceOf[js.Any])
     
-    inline def setRecordDataVarargs(value: RecordDataEntry*): Self = StObject.set(x, "RecordData", js.Array(value :_*))
+    inline def setRecordDataVarargs(value: RecordDataEntry*): Self = StObject.set(x, "RecordData", js.Array(value*))
     
     inline def setRecordName(value: DNSName): Self = StObject.set(x, "RecordName", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ object anon {
     
     var options: js.UndefOr[typings.gulpPostcss.mod.Options] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var plugins: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object Options {
     
@@ -25,11 +25,11 @@ object anon {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

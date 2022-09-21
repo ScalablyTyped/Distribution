@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the scroll bar.
   */
-class ScrollBar ()
+open class ScrollBar ()
   extends typings.luminoWidgets.scrollbarMod.ScrollBar {
   def this(options: IOptions) = this()
 }

@@ -4,9 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router", "ResolveEnd")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.angularRouter.mod.Event2 because Already inherited */ @JSImport("@angular/router", "ResolveEnd")
 @js.native
-class ResolveEnd protected () extends RouterEvent {
+open class ResolveEnd protected () extends RouterEvent {
   def this(
     /** @docsNotRequired */
   id: Double,
@@ -20,6 +21,8 @@ class ResolveEnd protected () extends RouterEvent {
   
   /** @docsNotRequired */
   var state: RouterStateSnapshot = js.native
+  
+  val `type`: String | Double = js.native
   
   /** @docsNotRequired */
   var urlAfterRedirects: String = js.native

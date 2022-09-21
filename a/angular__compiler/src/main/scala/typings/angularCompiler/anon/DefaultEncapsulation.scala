@@ -1,7 +1,7 @@
 package typings.angularCompiler.anon
 
-import typings.angularCompiler.coreMod.MissingTranslationStrategy
-import typings.angularCompiler.coreMod.ViewEncapsulation
+import typings.angularCompiler.mod.MissingTranslationStrategy
+import typings.angularCompiler.mod.ViewEncapsulation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

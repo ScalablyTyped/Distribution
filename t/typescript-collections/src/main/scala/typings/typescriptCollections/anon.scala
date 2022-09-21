@@ -26,7 +26,7 @@ object anon {
       
       inline def setRootIds(value: js.Array[String]): Self = StObject.set(x, "rootIds", value.asInstanceOf[js.Any])
       
-      inline def setRootIdsVarargs(value: String*): Self = StObject.set(x, "rootIds", js.Array(value :_*))
+      inline def setRootIdsVarargs(value: String*): Self = StObject.set(x, "rootIds", js.Array(value*))
     }
   }
 }

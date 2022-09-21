@@ -9,9 +9,9 @@ trait CertificateField
   extends StObject
      with CertificateFieldOptions {
   
-  var extensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var extensions: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var value: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+  var value: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   var valueConstructed: js.UndefOr[Boolean] = js.undefined
   
@@ -26,13 +26,13 @@ object CertificateField {
   
   extension [Self <: CertificateField](x: Self) {
     
-    inline def setExtensions(value: js.Array[js.Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Any*): Self = StObject.set(x, "extensions", js.Array(value*))
     
-    inline def setValue(value: js.Array[js.Any] | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Any] | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueConstructed(value: Boolean): Self = StObject.set(x, "valueConstructed", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object CertificateField {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

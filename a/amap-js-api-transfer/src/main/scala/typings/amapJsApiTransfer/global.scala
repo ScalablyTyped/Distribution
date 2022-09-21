@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("AMap.Transfer")
     @js.native
-    class Transfer protected ()
+    open class Transfer protected ()
       extends StObject
          with typings.amapJsApiTransfer.AMap.Transfer {
       /**

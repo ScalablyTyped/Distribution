@@ -12,12 +12,12 @@ trait ExportFilter extends StObject {
   var condition: Condition
   
   /**
-    * A single ExportFilter name. Supported filters: agentId.
+    * A single ExportFilter name. Supported filters: agentIds.
     */
   var name: FilterName
   
   /**
-    * A single agentId for a Discovery Agent. An agentId can be found using the DescribeAgents action. Typically an ADS agentId is in the form o-0123456789abcdef0.
+    * A single agent ID for a Discovery Agent. An agent ID can be found using the DescribeAgents action. Typically an ADS agent ID is in the form o-0123456789abcdef0.
     */
   var values: FilterValues
 }
@@ -36,6 +36,6 @@ object ExportFilter {
     
     inline def setValues(value: FilterValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

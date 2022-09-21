@@ -10,15 +10,12 @@ All the 138,398 cities of the world with a population of at least 1000 inhabitan
 | ------------------ | :-------------: |
 | Full name          | all-the-cities |
 | Keywords           | city, cities, geolocation, latitude, longitude, gis, world, geography, location, mongodb, geoSpatialSearch |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 111702 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 120056.66666666667 |
+| # stars            | 242.0 |
 
 ## Links
-- [Homepage](https://github.com/zeke/all-the-cities#readme)
-- [Bugs](https://github.com/zeke/all-the-cities/issues)
-- [Repository](https://github.com/zeke/all-the-cities)
 - [Npm](https://www.npmjs.com/package/all-the-cities)
     
 

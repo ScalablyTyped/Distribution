@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.ListGroup")
 @js.native
-class ListGroup ()
+open class ListGroup ()
   extends typings.reactBootstrap.mod.ListGroup

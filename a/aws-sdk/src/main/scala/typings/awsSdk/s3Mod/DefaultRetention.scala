@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DefaultRetention extends StObject {
   
   /**
-    * The number of days that you want to specify for the default retention period.
+    * The number of days that you want to specify for the default retention period. Must be used with Mode.
     */
   var Days: js.UndefOr[typings.awsSdk.s3Mod.Days] = js.undefined
   
   /**
-    * The default Object Lock retention mode you want to apply to new objects placed in the specified bucket.
+    * The default Object Lock retention mode you want to apply to new objects placed in the specified bucket. Must be used with either Days or Years.
     */
   var Mode: js.UndefOr[ObjectLockRetentionMode] = js.undefined
   
   /**
-    * The number of years that you want to specify for the default retention period.
+    * The number of years that you want to specify for the default retention period. Must be used with Mode.
     */
   var Years: js.UndefOr[typings.awsSdk.s3Mod.Years] = js.undefined
 }

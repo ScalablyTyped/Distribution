@@ -13,7 +13,7 @@ trait uploaderConfig extends StObject {
   
   var align: js.UndefOr[String] = js.undefined
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var apiOnly: js.UndefOr[Boolean] = js.undefined
   
@@ -27,7 +27,7 @@ trait uploaderConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var datatype: js.UndefOr[String] = js.undefined
   
@@ -35,7 +35,7 @@ trait uploaderConfig extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
   
   var gravity: js.UndefOr[Double] = js.undefined
   
@@ -75,13 +75,13 @@ trait uploaderConfig extends StObject {
   
   var popup: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[js.Any] = js.undefined
+  var tooltip: js.UndefOr[Any] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
   var upload: js.UndefOr[String] = js.undefined
   
-  var urlData: js.UndefOr[js.Any] = js.undefined
+  var urlData: js.UndefOr[Any] = js.undefined
   
   var value: js.UndefOr[String | Double] = js.undefined
   
@@ -106,7 +106,7 @@ object uploaderConfig {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -134,7 +134,7 @@ object uploaderConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -150,7 +150,7 @@ object uploaderConfig {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
@@ -230,7 +230,7 @@ object uploaderConfig {
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
-    inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
@@ -242,7 +242,7 @@ object uploaderConfig {
     
     inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     
-    inline def setUrlData(value: js.Any): Self = StObject.set(x, "urlData", value.asInstanceOf[js.Any])
+    inline def setUrlData(value: Any): Self = StObject.set(x, "urlData", value.asInstanceOf[js.Any])
     
     inline def setUrlDataUndefined: Self = StObject.set(x, "urlData", js.undefined)
     

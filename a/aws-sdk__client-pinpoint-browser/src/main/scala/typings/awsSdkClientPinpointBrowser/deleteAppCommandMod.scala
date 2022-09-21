@@ -16,7 +16,7 @@ object deleteAppCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteAppCommand", "DeleteAppCommand")
   @js.native
-  class DeleteAppCommand protected ()
+  open class DeleteAppCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteAppCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteAppInput, DeleteAppOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[DeleteAppInput, DeleteAppOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteAppInput, DeleteAppOutput] = js.native
   }
 }

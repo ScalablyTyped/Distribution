@@ -27,11 +27,11 @@ trait CellDragEvent extends StObject {
   /**
     * The value of the cell that was dragged.
     */
-  var value: js.Any
+  var value: Any
 }
 object CellDragEvent {
   
-  inline def apply(cellKey: String, fromRow: Double, toRow: Double, value: js.Any): CellDragEvent = {
+  inline def apply(cellKey: String, fromRow: Double, toRow: Double, value: Any): CellDragEvent = {
     val __obj = js.Dynamic.literal(cellKey = cellKey.asInstanceOf[js.Any], fromRow = fromRow.asInstanceOf[js.Any], toRow = toRow.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellDragEvent]
   }
@@ -44,6 +44,6 @@ object CellDragEvent {
     
     inline def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

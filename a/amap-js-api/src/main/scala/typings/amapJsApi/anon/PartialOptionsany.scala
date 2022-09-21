@@ -23,7 +23,7 @@ trait PartialOptionsany extends StObject {
   
   var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var extData: js.UndefOr[js.Any] = js.undefined
+  var extData: js.UndefOr[Any] = js.undefined
   
   var fillColor: js.UndefOr[String] = js.undefined
   
@@ -80,7 +80,7 @@ object PartialOptionsany {
     
     inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    inline def setExtData(value: js.Any): Self = StObject.set(x, "extData", value.asInstanceOf[js.Any])
+    inline def setExtData(value: Any): Self = StObject.set(x, "extData", value.asInstanceOf[js.Any])
     
     inline def setExtDataUndefined: Self = StObject.set(x, "extData", js.undefined)
     
@@ -108,7 +108,7 @@ object PartialOptionsany {
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setPathVarargs(value: (js.Array[LocationValue] | LocationValue)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (js.Array[LocationValue] | LocationValue)*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
@@ -118,7 +118,7 @@ object PartialOptionsany {
     
     inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
     
-    inline def setStrokeDasharrayVarargs(value: Double*): Self = StObject.set(x, "strokeDasharray", js.Array(value :_*))
+    inline def setStrokeDasharrayVarargs(value: Double*): Self = StObject.set(x, "strokeDasharray", js.Array(value*))
     
     inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     

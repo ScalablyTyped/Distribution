@@ -23,7 +23,7 @@ trait StreamingComputationConfig extends StObject {
   var transformUserNameToStateFamily: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig & TopLevel[Any]
   ] = js.undefined
 }
 object StreamingComputationConfig {
@@ -43,7 +43,7 @@ object StreamingComputationConfig {
     
     inline def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
     
-    inline def setInstructionsVarargs(value: ParallelInstruction*): Self = StObject.set(x, "instructions", js.Array(value :_*))
+    inline def setInstructionsVarargs(value: ParallelInstruction*): Self = StObject.set(x, "instructions", js.Array(value*))
     
     inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object StreamingComputationConfig {
     inline def setTransformUserNameToStateFamily(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.StreamingComputationConfig & TopLevel[Any]
     ): Self = StObject.set(x, "transformUserNameToStateFamily", value.asInstanceOf[js.Any])
     
     inline def setTransformUserNameToStateFamilyUndefined: Self = StObject.set(x, "transformUserNameToStateFamily", js.undefined)

@@ -10,10 +10,10 @@ Server-side TypeScript definitions for Minecraft Bedrock Edition's scripting eng
 | ------------------ | :-------------: |
 | Full name          | minecraft-scripting-types-server |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 872 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 69.0 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/minecraft-addon-tools/minecraft-scripting-types)

@@ -1,97 +1,117 @@
 package typings.hlsJs.mod
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * a LevelDetails object contains level details retrieved after level playlist parsing
-  */
-trait LevelDetails extends StObject {
+@JSImport("hls.js", "LevelDetails")
+@js.native
+open class LevelDetails protected () extends StObject {
+  def this(baseUrl: Any) = this()
   
-  /**
-    * average fragment duration
-    */
-  var averagetargetduration: Double
+  var PTSKnown: Boolean = js.native
   
-  /**
-    * end sequence number
-    */
-  var endSN: Double
+  var advanced: Boolean = js.native
   
-  /**
-    * array of fragments info
-    */
-  var fragments: js.Array[Fragment]
+  var advancedDateTime: js.UndefOr[Double] = js.native
   
-  /**
-    * is this level a live playlist or not?
-    */
-  var live: Boolean
+  def age: Double = js.native
   
-  /**
-    * start sequence number
-    */
-  var startSN: Double
+  var ageHeader: Double = js.native
   
-  /**
-    * level fragment target duration
-    */
-  var targetduration: Double
+  var alignedSliding: Boolean = js.native
   
-  /**
-    * level total duration
-    */
-  var totalduration: Double
+  var availabilityDelay: js.UndefOr[Double] = js.native
   
-  /**
-    * playlist type
-    */
-  var `type`: String
+  var averagetargetduration: js.UndefOr[Double] = js.native
   
-  /**
-    * protocol version
-    */
-  var version: Double
-}
-object LevelDetails {
+  var canBlockReload: Boolean = js.native
   
-  inline def apply(
-    averagetargetduration: Double,
-    endSN: Double,
-    fragments: js.Array[Fragment],
-    live: Boolean,
-    startSN: Double,
-    targetduration: Double,
-    totalduration: Double,
-    `type`: String,
-    version: Double
-  ): LevelDetails = {
-    val __obj = js.Dynamic.literal(averagetargetduration = averagetargetduration.asInstanceOf[js.Any], endSN = endSN.asInstanceOf[js.Any], fragments = fragments.asInstanceOf[js.Any], live = live.asInstanceOf[js.Any], startSN = startSN.asInstanceOf[js.Any], targetduration = targetduration.asInstanceOf[js.Any], totalduration = totalduration.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LevelDetails]
-  }
+  var canSkipDateRanges: Boolean = js.native
   
-  extension [Self <: LevelDetails](x: Self) {
-    
-    inline def setAveragetargetduration(value: Double): Self = StObject.set(x, "averagetargetduration", value.asInstanceOf[js.Any])
-    
-    inline def setEndSN(value: Double): Self = StObject.set(x, "endSN", value.asInstanceOf[js.Any])
-    
-    inline def setFragments(value: js.Array[Fragment]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
-    
-    inline def setFragmentsVarargs(value: Fragment*): Self = StObject.set(x, "fragments", js.Array(value :_*))
-    
-    inline def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
-    
-    inline def setStartSN(value: Double): Self = StObject.set(x, "startSN", value.asInstanceOf[js.Any])
-    
-    inline def setTargetduration(value: Double): Self = StObject.set(x, "targetduration", value.asInstanceOf[js.Any])
-    
-    inline def setTotalduration(value: Double): Self = StObject.set(x, "totalduration", value.asInstanceOf[js.Any])
-    
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-  }
+  var canSkipUntil: Double = js.native
+  
+  var dateRanges: Record[String, DateRange] = js.native
+  
+  var deltaUpdateFailed: js.UndefOr[Boolean] = js.native
+  
+  def drift: Double = js.native
+  
+  var driftEnd: Double = js.native
+  
+  var driftEndTime: Double = js.native
+  
+  var driftStart: Double = js.native
+  
+  var driftStartTime: Double = js.native
+  
+  def edge: Double = js.native
+  
+  var endCC: Double = js.native
+  
+  var endSN: Double = js.native
+  
+  def fragmentEnd: Double = js.native
+  
+  var fragmentHint: js.UndefOr[Fragment] = js.native
+  
+  var fragments: js.Array[Fragment] = js.native
+  
+  def hasProgramDateTime: Boolean = js.native
+  
+  var holdBack: Double = js.native
+  
+  def lastPartIndex: Double = js.native
+  
+  def lastPartSn: Double = js.native
+  
+  def levelTargetDuration: Double = js.native
+  
+  var live: Boolean = js.native
+  
+  var m3u8: String = js.native
+  
+  var misses: Double = js.native
+  
+  var needSidxRanges: Boolean = js.native
+  
+  def partEnd: Double = js.native
+  
+  var partHoldBack: Double = js.native
+  
+  var partList: js.Array[Part] | Null = js.native
+  
+  var partTarget: Double = js.native
+  
+  var preloadHint: js.UndefOr[AttrList] = js.native
+  
+  var recentlyRemovedDateranges: js.UndefOr[js.Array[String]] = js.native
+  
+  def reloaded(): Unit = js.native
+  def reloaded(previous: LevelDetails): Unit = js.native
+  
+  var renditionReports: js.UndefOr[js.Array[AttrList]] = js.native
+  
+  var skippedSegments: Double = js.native
+  
+  var startCC: Double = js.native
+  
+  var startSN: Double = js.native
+  
+  var startTimeOffset: Double | Null = js.native
+  
+  var targetduration: Double = js.native
+  
+  var totalduration: Double = js.native
+  
+  var tuneInGoal: Double = js.native
+  
+  var `type`: String | Null = js.native
+  
+  var updated: Boolean = js.native
+  
+  var url: String = js.native
+  
+  var version: Double | Null = js.native
 }

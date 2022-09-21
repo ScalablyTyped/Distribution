@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single data point from a collectd-based plugin.
-  */
 trait SchemaCollectdValue extends StObject {
   
   /**
-    * The data source for the collectd value. For example there are two data
-    * sources for network measurements: &quot;rx&quot; and &quot;tx&quot;.
+    * The data source for the collectd value. For example, there are two data sources for network measurements: "rx" and "tx".
     */
-  var dataSourceName: js.UndefOr[String] = js.undefined
+  var dataSourceName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The type of measurement.
     */
-  var dataSourceType: js.UndefOr[String] = js.undefined
+  var dataSourceType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The measurement value.
@@ -36,9 +32,13 @@ object SchemaCollectdValue {
     
     inline def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
+    inline def setDataSourceNameNull: Self = StObject.set(x, "dataSourceName", null)
+    
     inline def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceTypeNull: Self = StObject.set(x, "dataSourceType", null)
     
     inline def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
     

@@ -25,7 +25,7 @@ object CountriesListResponse {
     
     inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
-    inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

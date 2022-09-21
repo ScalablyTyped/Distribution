@@ -9,18 +9,18 @@ trait FnCallSubjectFactorySelector extends StObject {
   
   def apply[T](
     SubjectFactory: js.ThisFunction0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ Any
     ]
-  ): js.Any = js.native
+  ): Any = js.native
   def apply[T](
     SubjectFactory: js.ThisFunction0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ Any
     ],
-    selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any
-  ): js.Any = js.native
+    selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ Any
+  ): Any = js.native
   def apply[T](
-    subjectOrSubjectFactory: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FactoryOrValue<Subject<T>> */ js.Any
-  ): js.Any = js.native
+    subjectOrSubjectFactory: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FactoryOrValue<Subject<T>> */ Any
+  ): Any = js.native
 }

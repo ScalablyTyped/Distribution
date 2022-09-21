@@ -1,7 +1,6 @@
 package typings.awsSdkClientLambdaNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object typesAliasRoutingConfigurationMod {
     /**
       * <p>The name of the second alias, and the percentage of traffic that is routed to it.</p>
       */
-    var AdditionalVersionWeights: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.undefined
+    var AdditionalVersionWeights: js.UndefOr[StringDictionary[Double] | (js.Iterable[js.Tuple2[String, Double]])] = js.undefined
   }
   object AliasRoutingConfiguration {
     
@@ -24,7 +23,7 @@ object typesAliasRoutingConfigurationMod {
     
     extension [Self <: AliasRoutingConfiguration](x: Self) {
       
-      inline def setAdditionalVersionWeights(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "AdditionalVersionWeights", value.asInstanceOf[js.Any])
+      inline def setAdditionalVersionWeights(value: StringDictionary[Double] | (js.Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "AdditionalVersionWeights", value.asInstanceOf[js.Any])
       
       inline def setAdditionalVersionWeightsUndefined: Self = StObject.set(x, "AdditionalVersionWeights", js.undefined)
     }

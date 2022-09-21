@@ -12,6 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait ShapeLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
@@ -22,6 +25,14 @@ trait ShapeLoadOptions extends StObject {
     * [Api set:  1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    *
+    * Returns true if the shape is bound to data and is part of Data Visualizer diagram. Read-only.
+    *
+    * [Api set:  1.1]
+    */
+  var isBoundToData: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -71,6 +82,10 @@ object ShapeLoadOptions {
     inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIsBoundToData(value: Boolean): Self = StObject.set(x, "isBoundToData", value.asInstanceOf[js.Any])
+    
+    inline def setIsBoundToDataUndefined: Self = StObject.set(x, "isBoundToData", js.undefined)
     
     inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

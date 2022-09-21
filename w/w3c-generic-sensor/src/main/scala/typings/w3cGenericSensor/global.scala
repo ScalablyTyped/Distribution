@@ -8,78 +8,87 @@ object global {
   
   @JSGlobal("AbsoluteOrientationSensor")
   @js.native
-  class AbsoluteOrientationSensor ()
+  open class AbsoluteOrientationSensor ()
     extends StObject
        with typings.w3cGenericSensor.OrientationSensor {
-    def this(options: SensorOptions) = this()
+    def this(options: MotionSensorOptions) = this()
   }
   
   // Accelerometer: https://www.w3.org/TR/accelerometer/
   @JSGlobal("Accelerometer")
   @js.native
-  class Accelerometer ()
+  open class Accelerometer ()
     extends StObject
        with typings.w3cGenericSensor.Accelerometer {
+    def this(options: MotionSensorOptions) = this()
+  }
+  
+  // Ambient Light Sensor: https://www.w3.org/TR/ambient-light/
+  @JSGlobal("AmbientLightSensor")
+  @js.native
+  open class AmbientLightSensor ()
+    extends StObject
+       with typings.w3cGenericSensor.AmbientLightSensor {
     def this(options: SensorOptions) = this()
   }
   
   @JSGlobal("GravitySensor")
   @js.native
-  class GravitySensor ()
+  open class GravitySensor ()
     extends StObject
        with typings.w3cGenericSensor.Accelerometer {
-    def this(options: SensorOptions) = this()
+    def this(options: MotionSensorOptions) = this()
   }
   
   // Gyroscope: https://www.w3.org/TR/gyroscope/
   @JSGlobal("Gyroscope")
   @js.native
-  class Gyroscope ()
+  open class Gyroscope ()
     extends StObject
        with typings.w3cGenericSensor.Gyroscope {
-    def this(options: SensorOptions) = this()
+    def this(options: MotionSensorOptions) = this()
   }
   
   @JSGlobal("LinearAccelerationSensor")
   @js.native
-  class LinearAccelerationSensor ()
+  open class LinearAccelerationSensor ()
     extends StObject
        with typings.w3cGenericSensor.Accelerometer {
-    def this(options: SensorOptions) = this()
+    def this(options: MotionSensorOptions) = this()
   }
   
   // Magnetometer: https://www.w3.org/TR/magnetometer/
   @JSGlobal("Magnetometer")
   @js.native
-  class Magnetometer ()
+  open class Magnetometer ()
     extends StObject
        with typings.w3cGenericSensor.Magnetometer {
-    def this(options: SensorOptions) = this()
+    def this(options: MotionSensorOptions) = this()
   }
   
   @JSGlobal("OrientationSensor")
   @js.native
-  class OrientationSensor ()
+  open class OrientationSensor ()
     extends StObject
        with typings.w3cGenericSensor.OrientationSensor
   
   @JSGlobal("RelativeOrientationSensor")
   @js.native
-  class RelativeOrientationSensor ()
+  open class RelativeOrientationSensor ()
     extends StObject
        with typings.w3cGenericSensor.OrientationSensor {
-    def this(options: SensorOptions) = this()
+    def this(options: MotionSensorOptions) = this()
   }
   
   @JSGlobal("Sensor")
   @js.native
-  class Sensor ()
+  open class Sensor ()
     extends StObject
        with typings.w3cGenericSensor.Sensor
   
   @JSGlobal("SensorErrorEvent")
   @js.native
-  class SensorErrorEvent protected ()
+  open class SensorErrorEvent protected ()
     extends StObject
        with typings.w3cGenericSensor.SensorErrorEvent {
     def this(`type`: String, errorEventInitDict: SensorErrorEventInit) = this()
@@ -87,9 +96,9 @@ object global {
   
   @JSGlobal("UncalibratedMagnetometer")
   @js.native
-  class UncalibratedMagnetometer ()
+  open class UncalibratedMagnetometer ()
     extends StObject
        with typings.w3cGenericSensor.UncalibratedMagnetometer {
-    def this(options: SensorOptions) = this()
+    def this(options: MotionSensorOptions) = this()
   }
 }

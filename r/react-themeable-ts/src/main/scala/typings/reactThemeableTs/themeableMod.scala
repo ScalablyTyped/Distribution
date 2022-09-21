@@ -11,21 +11,21 @@ object themeableMod {
   @js.native
   val themeable: IStaticFn = js.native
   
-  type IClassNameDecoratorFn = js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
+  type IClassNameDecoratorFn = js.Function1[/* repeated */ Any, js.Array[Any]]
   
   @js.native
   trait IStaticFn extends StObject {
     
     def apply(): IStaticFnReturn = js.native
-    def apply(payload: js.Any): IStaticFnReturn = js.native
-    def apply(payload: js.Tuple2[js.Any, IClassNameDecoratorFn]): IStaticFnReturn = js.native
+    def apply(payload: js.Tuple2[Any, IClassNameDecoratorFn]): IStaticFnReturn = js.native
+    def apply(payload: Any): IStaticFnReturn = js.native
   }
   
   trait IStaticFnOptionalReturn extends StObject {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var style: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object IStaticFnOptionalReturn {
     
@@ -40,7 +40,7 @@ object themeableMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setStyle(value: StringDictionary[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StringDictionary[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -50,7 +50,7 @@ object themeableMod {
   trait IStaticFnReturn extends StObject {
     
     def apply(): js.Object = js.native
-    def apply(payload: js.Any*): IStaticFnOptionalReturn = js.native
-    def apply(payload: js.Any): js.Object = js.native
+    def apply(payload: Any*): IStaticFnOptionalReturn = js.native
+    def apply(payload: Any): js.Object = js.native
   }
 }

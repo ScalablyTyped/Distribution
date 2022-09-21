@@ -31,7 +31,7 @@ trait TeamSettingsIteration
 object TeamSettingsIteration {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     attributes: TeamIterationAttributes,
     id: String,
     name: String,

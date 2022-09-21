@@ -1,9 +1,10 @@
 package typings.reactstrap
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object progressMod {
   
-  @JSImport("reactstrap/lib/Progress", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Progress", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ProgressProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ProgressProps, js.Object, Any]
   
-  type Progress = Component[ProgressProps, js.Object, js.Any]
+  type Progress = Component[ProgressProps, js.Object, Any]
   
   trait ProgressProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var animated: js.UndefOr[Boolean] = js.undefined
     
@@ -32,6 +33,8 @@ object progressMod {
     var barAriaValueText: js.UndefOr[String] = js.undefined
     
     var barClassName: js.UndefOr[String] = js.undefined
+    
+    var barStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var cssModule: js.UndefOr[CSSModule] = js.undefined
     
@@ -73,6 +76,10 @@ object progressMod {
       inline def setBarClassName(value: String): Self = StObject.set(x, "barClassName", value.asInstanceOf[js.Any])
       
       inline def setBarClassNameUndefined: Self = StObject.set(x, "barClassName", js.undefined)
+      
+      inline def setBarStyle(value: CSSProperties): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+      
+      inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
       
       inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
       

@@ -132,7 +132,7 @@ object CertificateSecurityState {
     
     inline def setCertificateNetworkErrorUndefined: Self = StObject.set(x, "certificateNetworkError", js.undefined)
     
-    inline def setCertificateVarargs(value: String*): Self = StObject.set(x, "certificate", js.Array(value :_*))
+    inline def setCertificateVarargs(value: String*): Self = StObject.set(x, "certificate", js.Array(value*))
     
     inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     

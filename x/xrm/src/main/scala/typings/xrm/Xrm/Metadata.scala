@@ -62,7 +62,7 @@ object Metadata {
       
       inline def setOptionSet(value: js.Array[OptionMetadata]): Self = StObject.set(x, "OptionSet", value.asInstanceOf[js.Any])
       
-      inline def setOptionSetVarargs(value: OptionMetadata*): Self = StObject.set(x, "OptionSet", js.Array(value :_*))
+      inline def setOptionSetVarargs(value: OptionMetadata*): Self = StObject.set(x, "OptionSet", js.Array(value*))
     }
   }
   
@@ -384,7 +384,7 @@ object Metadata {
       
       inline def setLocalizedLabels(value: js.Array[LocalizedLabel]): Self = StObject.set(x, "LocalizedLabels", value.asInstanceOf[js.Any])
       
-      inline def setLocalizedLabelsVarargs(value: LocalizedLabel*): Self = StObject.set(x, "LocalizedLabels", js.Array(value :_*))
+      inline def setLocalizedLabelsVarargs(value: LocalizedLabel*): Self = StObject.set(x, "LocalizedLabels", js.Array(value*))
       
       inline def setUserLocalizedLabel(value: LocalizedLabel): Self = StObject.set(x, "UserLocalizedLabel", value.asInstanceOf[js.Any])
     }
@@ -423,7 +423,7 @@ object Metadata {
     
     var Description: Label
     
-    var ExternalValue: js.Any
+    var ExternalValue: Any
     
     var HasChanged: Boolean
     
@@ -435,7 +435,7 @@ object Metadata {
     
     var State: Double
     
-    var TransitionData: js.Any
+    var TransitionData: Any
     
     var Value: Double
   }
@@ -444,13 +444,13 @@ object Metadata {
     inline def apply(
       Color: String,
       Description: Label,
-      ExternalValue: js.Any,
+      ExternalValue: Any,
       HasChanged: Boolean,
       IsManaged: Boolean,
       Label: Label,
       MetadataId: String,
       State: Double,
-      TransitionData: js.Any,
+      TransitionData: Any,
       Value: Double
     ): OptionMetadata = {
       val __obj = js.Dynamic.literal(Color = Color.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], ExternalValue = ExternalValue.asInstanceOf[js.Any], HasChanged = HasChanged.asInstanceOf[js.Any], IsManaged = IsManaged.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], MetadataId = MetadataId.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], TransitionData = TransitionData.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
@@ -463,7 +463,7 @@ object Metadata {
       
       inline def setDescription(value: Label): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      inline def setExternalValue(value: js.Any): Self = StObject.set(x, "ExternalValue", value.asInstanceOf[js.Any])
+      inline def setExternalValue(value: Any): Self = StObject.set(x, "ExternalValue", value.asInstanceOf[js.Any])
       
       inline def setHasChanged(value: Boolean): Self = StObject.set(x, "HasChanged", value.asInstanceOf[js.Any])
       
@@ -475,7 +475,7 @@ object Metadata {
       
       inline def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      inline def setTransitionData(value: js.Any): Self = StObject.set(x, "TransitionData", value.asInstanceOf[js.Any])
+      inline def setTransitionData(value: Any): Self = StObject.set(x, "TransitionData", value.asInstanceOf[js.Any])
       
       inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }

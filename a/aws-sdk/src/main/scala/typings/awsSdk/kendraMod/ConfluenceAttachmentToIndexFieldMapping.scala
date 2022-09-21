@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfluenceAttachmentToIndexFieldMapping extends StObject {
   
   /**
-    * The name of the field in the data source.  You must first create the index field using the operation. 
+    * The name of the field in the data source.  You must first create the index field using the UpdateIndex API. 
     */
   var DataSourceFieldName: js.UndefOr[ConfluenceAttachmentFieldName] = js.undefined
   

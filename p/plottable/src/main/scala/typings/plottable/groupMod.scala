@@ -19,10 +19,10 @@ object groupMod {
     * @constructor
     * @param {Component[]} [components=[]] Components to be added to the Group.
     */
-  class Group () extends ComponentContainer {
+  open class Group () extends ComponentContainer {
     def this(components: js.Array[Component]) = this()
     
-    /* private */ var _components: js.Any = js.native
+    /* private */ var _components: Any = js.native
     
     /**
       * Adds a Component to this Group.

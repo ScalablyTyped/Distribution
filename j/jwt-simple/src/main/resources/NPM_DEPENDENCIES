@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jwt-simple" : "0.5.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jwt-simple" : "0.5.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

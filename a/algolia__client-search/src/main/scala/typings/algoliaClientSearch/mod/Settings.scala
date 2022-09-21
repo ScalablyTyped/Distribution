@@ -16,6 +16,7 @@ import typings.algoliaClientSearch.algoliaClientSearchStrings.prefixLast
 import typings.algoliaClientSearch.algoliaClientSearchStrings.prefixNone
 import typings.algoliaClientSearch.algoliaClientSearchStrings.singleWordSynonym
 import typings.algoliaClientSearch.algoliaClientSearchStrings.word
+import typings.algoliaClientSearch.anon.FacetOrdering
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -88,6 +89,12 @@ trait Settings extends StObject {
   val attributesToSnippet: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
+    * Specify on which attributes in your index Algolia should apply Japanese
+    * transliteration to make words indexed in Katakana or Kanji searchable in Hiragana.
+    */
+  val attributesToTransliterate: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
     * List of attributes on which to do a decomposition of camel case words.
     */
   val camelCaseAttributes: js.UndefOr[js.Array[String]] = js.undefined
@@ -101,6 +108,14 @@ trait Settings extends StObject {
     * Specifies the custom ranking criterion.
     */
   val customRanking: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Enable word segmentation (also called decompounding) at query time for
+    * compatible languages. For example, this turns the Dutch query
+    * "spaanplaatbehang" into "spaan plaat behang" to retrieve more relevant
+    * results.
+    */
+  val decompoundQuery: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify on which attributes in your index Algolia should apply word-splitting (“decompounding”)
@@ -136,6 +151,15 @@ trait Settings extends StObject {
     * Enable personalization for queries by default
     */
   val enablePersonalization: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether this index should use Dynamic Re-Ranking.
+    * @link https://www.algolia.com/doc/guides/algolia-ai/re-ranking/
+    *
+    * Note: You need to turn on Dynamic Re-Ranking on your index for it to have an effect on
+    * your search results. You can do this through the Re-Ranking page on the dashboard.
+    */
+  val enableReRanking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether rules should be globally enabled.
@@ -240,6 +264,18 @@ trait Settings extends StObject {
   val ranking: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
+    * When Dynamic Re-Ranking is enabled, only records that match these filters will be impacted by Dynamic Re-Ranking.
+    */
+  val reRankingApplyFilter: js.UndefOr[String | (js.Array[js.Array[String] | String]) | Null] = js.undefined
+  
+  /**
+    * The relevancy threshold to apply to search in a virtual index [0-100]. A Bigger
+    * value means fewer, but more relevant results, smaller value means more, but
+    * less relevant results.
+    */
+  val relevancyStrictness: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Removes stop (common) words from the query before executing it.
     */
   val removeStopWords: js.UndefOr[Boolean | js.Array[String]] = js.undefined
@@ -248,6 +284,12 @@ trait Settings extends StObject {
     * Selects a strategy to remove words from the query when it doesn’t match any hits.
     */
   val removeWordsIfNoResults: js.UndefOr[none | lastWords | firstWords | allOptional] = js.undefined
+  
+  /**
+    * Content defining how the search interface should be rendered.
+    * This is set via the settings for a default value and can be overridden via rules
+    */
+  val renderingContent: js.UndefOr[FacetOrdering] = js.undefined
   
   /**
     * Whether to highlight and snippet the original word that matches the synonym or the synonym itself.
@@ -307,7 +349,7 @@ trait Settings extends StObject {
   /**
     * Custom userData that could be added to the Settings.
     */
-  val userData: js.UndefOr[js.Any] = js.undefined
+  val userData: js.UndefOr[Any] = js.undefined
 }
 object Settings {
   
@@ -324,7 +366,7 @@ object Settings {
     
     inline def setAdvancedSyntaxFeaturesUndefined: Self = StObject.set(x, "advancedSyntaxFeatures", js.undefined)
     
-    inline def setAdvancedSyntaxFeaturesVarargs(value: (exactPhrase | excludeWords)*): Self = StObject.set(x, "advancedSyntaxFeatures", js.Array(value :_*))
+    inline def setAdvancedSyntaxFeaturesVarargs(value: (exactPhrase | excludeWords)*): Self = StObject.set(x, "advancedSyntaxFeatures", js.Array(value*))
     
     inline def setAdvancedSyntaxUndefined: Self = StObject.set(x, "advancedSyntax", js.undefined)
     
@@ -340,7 +382,7 @@ object Settings {
     
     inline def setAlternativesAsExactUndefined: Self = StObject.set(x, "alternativesAsExact", js.undefined)
     
-    inline def setAlternativesAsExactVarargs(value: (ignorePlurals | singleWordSynonym | multiWordsSynonym)*): Self = StObject.set(x, "alternativesAsExact", js.Array(value :_*))
+    inline def setAlternativesAsExactVarargs(value: (ignorePlurals | singleWordSynonym | multiWordsSynonym)*): Self = StObject.set(x, "alternativesAsExact", js.Array(value*))
     
     inline def setAttributeCriteriaComputedByMinProximity(value: Boolean): Self = StObject.set(x, "attributeCriteriaComputedByMinProximity", value.asInstanceOf[js.Any])
     
@@ -354,37 +396,43 @@ object Settings {
     
     inline def setAttributesForFacetingUndefined: Self = StObject.set(x, "attributesForFaceting", js.undefined)
     
-    inline def setAttributesForFacetingVarargs(value: String*): Self = StObject.set(x, "attributesForFaceting", js.Array(value :_*))
+    inline def setAttributesForFacetingVarargs(value: String*): Self = StObject.set(x, "attributesForFaceting", js.Array(value*))
     
     inline def setAttributesToHighlight(value: js.Array[String]): Self = StObject.set(x, "attributesToHighlight", value.asInstanceOf[js.Any])
     
     inline def setAttributesToHighlightUndefined: Self = StObject.set(x, "attributesToHighlight", js.undefined)
     
-    inline def setAttributesToHighlightVarargs(value: String*): Self = StObject.set(x, "attributesToHighlight", js.Array(value :_*))
+    inline def setAttributesToHighlightVarargs(value: String*): Self = StObject.set(x, "attributesToHighlight", js.Array(value*))
     
     inline def setAttributesToIndex(value: js.Array[String]): Self = StObject.set(x, "attributesToIndex", value.asInstanceOf[js.Any])
     
     inline def setAttributesToIndexUndefined: Self = StObject.set(x, "attributesToIndex", js.undefined)
     
-    inline def setAttributesToIndexVarargs(value: String*): Self = StObject.set(x, "attributesToIndex", js.Array(value :_*))
+    inline def setAttributesToIndexVarargs(value: String*): Self = StObject.set(x, "attributesToIndex", js.Array(value*))
     
     inline def setAttributesToRetrieve(value: js.Array[String]): Self = StObject.set(x, "attributesToRetrieve", value.asInstanceOf[js.Any])
     
     inline def setAttributesToRetrieveUndefined: Self = StObject.set(x, "attributesToRetrieve", js.undefined)
     
-    inline def setAttributesToRetrieveVarargs(value: String*): Self = StObject.set(x, "attributesToRetrieve", js.Array(value :_*))
+    inline def setAttributesToRetrieveVarargs(value: String*): Self = StObject.set(x, "attributesToRetrieve", js.Array(value*))
     
     inline def setAttributesToSnippet(value: js.Array[String]): Self = StObject.set(x, "attributesToSnippet", value.asInstanceOf[js.Any])
     
     inline def setAttributesToSnippetUndefined: Self = StObject.set(x, "attributesToSnippet", js.undefined)
     
-    inline def setAttributesToSnippetVarargs(value: String*): Self = StObject.set(x, "attributesToSnippet", js.Array(value :_*))
+    inline def setAttributesToSnippetVarargs(value: String*): Self = StObject.set(x, "attributesToSnippet", js.Array(value*))
+    
+    inline def setAttributesToTransliterate(value: js.Array[String]): Self = StObject.set(x, "attributesToTransliterate", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesToTransliterateUndefined: Self = StObject.set(x, "attributesToTransliterate", js.undefined)
+    
+    inline def setAttributesToTransliterateVarargs(value: String*): Self = StObject.set(x, "attributesToTransliterate", js.Array(value*))
     
     inline def setCamelCaseAttributes(value: js.Array[String]): Self = StObject.set(x, "camelCaseAttributes", value.asInstanceOf[js.Any])
     
     inline def setCamelCaseAttributesUndefined: Self = StObject.set(x, "camelCaseAttributes", js.undefined)
     
-    inline def setCamelCaseAttributesVarargs(value: String*): Self = StObject.set(x, "camelCaseAttributes", js.Array(value :_*))
+    inline def setCamelCaseAttributesVarargs(value: String*): Self = StObject.set(x, "camelCaseAttributes", js.Array(value*))
     
     inline def setCustomNormalization(value: Record[String, Record[String, String]]): Self = StObject.set(x, "customNormalization", value.asInstanceOf[js.Any])
     
@@ -394,7 +442,11 @@ object Settings {
     
     inline def setCustomRankingUndefined: Self = StObject.set(x, "customRanking", js.undefined)
     
-    inline def setCustomRankingVarargs(value: String*): Self = StObject.set(x, "customRanking", js.Array(value :_*))
+    inline def setCustomRankingVarargs(value: String*): Self = StObject.set(x, "customRanking", js.Array(value*))
+    
+    inline def setDecompoundQuery(value: Boolean): Self = StObject.set(x, "decompoundQuery", value.asInstanceOf[js.Any])
+    
+    inline def setDecompoundQueryUndefined: Self = StObject.set(x, "decompoundQuery", js.undefined)
     
     inline def setDecompoundedAttributes(value: Record[String, js.Array[String]]): Self = StObject.set(x, "decompoundedAttributes", value.asInstanceOf[js.Any])
     
@@ -404,25 +456,25 @@ object Settings {
     
     inline def setDisableExactOnAttributesUndefined: Self = StObject.set(x, "disableExactOnAttributes", js.undefined)
     
-    inline def setDisableExactOnAttributesVarargs(value: String*): Self = StObject.set(x, "disableExactOnAttributes", js.Array(value :_*))
+    inline def setDisableExactOnAttributesVarargs(value: String*): Self = StObject.set(x, "disableExactOnAttributes", js.Array(value*))
     
     inline def setDisablePrefixOnAttributes(value: js.Array[String]): Self = StObject.set(x, "disablePrefixOnAttributes", value.asInstanceOf[js.Any])
     
     inline def setDisablePrefixOnAttributesUndefined: Self = StObject.set(x, "disablePrefixOnAttributes", js.undefined)
     
-    inline def setDisablePrefixOnAttributesVarargs(value: String*): Self = StObject.set(x, "disablePrefixOnAttributes", js.Array(value :_*))
+    inline def setDisablePrefixOnAttributesVarargs(value: String*): Self = StObject.set(x, "disablePrefixOnAttributes", js.Array(value*))
     
     inline def setDisableTypoToleranceOnAttributes(value: js.Array[String]): Self = StObject.set(x, "disableTypoToleranceOnAttributes", value.asInstanceOf[js.Any])
     
     inline def setDisableTypoToleranceOnAttributesUndefined: Self = StObject.set(x, "disableTypoToleranceOnAttributes", js.undefined)
     
-    inline def setDisableTypoToleranceOnAttributesVarargs(value: String*): Self = StObject.set(x, "disableTypoToleranceOnAttributes", js.Array(value :_*))
+    inline def setDisableTypoToleranceOnAttributesVarargs(value: String*): Self = StObject.set(x, "disableTypoToleranceOnAttributes", js.Array(value*))
     
     inline def setDisableTypoToleranceOnWords(value: js.Array[String]): Self = StObject.set(x, "disableTypoToleranceOnWords", value.asInstanceOf[js.Any])
     
     inline def setDisableTypoToleranceOnWordsUndefined: Self = StObject.set(x, "disableTypoToleranceOnWords", js.undefined)
     
-    inline def setDisableTypoToleranceOnWordsVarargs(value: String*): Self = StObject.set(x, "disableTypoToleranceOnWords", js.Array(value :_*))
+    inline def setDisableTypoToleranceOnWordsVarargs(value: String*): Self = StObject.set(x, "disableTypoToleranceOnWords", js.Array(value*))
     
     inline def setDistinct(value: Boolean | Double): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
     
@@ -431,6 +483,10 @@ object Settings {
     inline def setEnablePersonalization(value: Boolean): Self = StObject.set(x, "enablePersonalization", value.asInstanceOf[js.Any])
     
     inline def setEnablePersonalizationUndefined: Self = StObject.set(x, "enablePersonalization", js.undefined)
+    
+    inline def setEnableReRanking(value: Boolean): Self = StObject.set(x, "enableReRanking", value.asInstanceOf[js.Any])
+    
+    inline def setEnableReRankingUndefined: Self = StObject.set(x, "enableReRanking", js.undefined)
     
     inline def setEnableRules(value: Boolean): Self = StObject.set(x, "enableRules", value.asInstanceOf[js.Any])
     
@@ -456,13 +512,13 @@ object Settings {
     
     inline def setIgnorePluralsUndefined: Self = StObject.set(x, "ignorePlurals", js.undefined)
     
-    inline def setIgnorePluralsVarargs(value: String*): Self = StObject.set(x, "ignorePlurals", js.Array(value :_*))
+    inline def setIgnorePluralsVarargs(value: String*): Self = StObject.set(x, "ignorePlurals", js.Array(value*))
     
     inline def setIndexLanguages(value: js.Array[String]): Self = StObject.set(x, "indexLanguages", value.asInstanceOf[js.Any])
     
     inline def setIndexLanguagesUndefined: Self = StObject.set(x, "indexLanguages", js.undefined)
     
-    inline def setIndexLanguagesVarargs(value: String*): Self = StObject.set(x, "indexLanguages", js.Array(value :_*))
+    inline def setIndexLanguagesVarargs(value: String*): Self = StObject.set(x, "indexLanguages", js.Array(value*))
     
     inline def setKeepDiacriticsOnCharacters(value: String): Self = StObject.set(x, "keepDiacriticsOnCharacters", value.asInstanceOf[js.Any])
     
@@ -492,13 +548,13 @@ object Settings {
     
     inline def setNumericAttributesForFilteringUndefined: Self = StObject.set(x, "numericAttributesForFiltering", js.undefined)
     
-    inline def setNumericAttributesForFilteringVarargs(value: String*): Self = StObject.set(x, "numericAttributesForFiltering", js.Array(value :_*))
+    inline def setNumericAttributesForFilteringVarargs(value: String*): Self = StObject.set(x, "numericAttributesForFiltering", js.Array(value*))
     
     inline def setOptionalWords(value: js.Array[String]): Self = StObject.set(x, "optionalWords", value.asInstanceOf[js.Any])
     
     inline def setOptionalWordsUndefined: Self = StObject.set(x, "optionalWords", js.undefined)
     
-    inline def setOptionalWordsVarargs(value: String*): Self = StObject.set(x, "optionalWords", js.Array(value :_*))
+    inline def setOptionalWordsVarargs(value: String*): Self = StObject.set(x, "optionalWords", js.Array(value*))
     
     inline def setPaginationLimitedTo(value: Double): Self = StObject.set(x, "paginationLimitedTo", value.asInstanceOf[js.Any])
     
@@ -512,7 +568,7 @@ object Settings {
     
     inline def setQueryLanguagesUndefined: Self = StObject.set(x, "queryLanguages", js.undefined)
     
-    inline def setQueryLanguagesVarargs(value: String*): Self = StObject.set(x, "queryLanguages", js.Array(value :_*))
+    inline def setQueryLanguagesVarargs(value: String*): Self = StObject.set(x, "queryLanguages", js.Array(value*))
     
     inline def setQueryType(value: prefixLast | prefixAll | prefixNone): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
@@ -522,17 +578,33 @@ object Settings {
     
     inline def setRankingUndefined: Self = StObject.set(x, "ranking", js.undefined)
     
-    inline def setRankingVarargs(value: String*): Self = StObject.set(x, "ranking", js.Array(value :_*))
+    inline def setRankingVarargs(value: String*): Self = StObject.set(x, "ranking", js.Array(value*))
+    
+    inline def setReRankingApplyFilter(value: String | (js.Array[js.Array[String] | String])): Self = StObject.set(x, "reRankingApplyFilter", value.asInstanceOf[js.Any])
+    
+    inline def setReRankingApplyFilterNull: Self = StObject.set(x, "reRankingApplyFilter", null)
+    
+    inline def setReRankingApplyFilterUndefined: Self = StObject.set(x, "reRankingApplyFilter", js.undefined)
+    
+    inline def setReRankingApplyFilterVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "reRankingApplyFilter", js.Array(value*))
+    
+    inline def setRelevancyStrictness(value: Double): Self = StObject.set(x, "relevancyStrictness", value.asInstanceOf[js.Any])
+    
+    inline def setRelevancyStrictnessUndefined: Self = StObject.set(x, "relevancyStrictness", js.undefined)
     
     inline def setRemoveStopWords(value: Boolean | js.Array[String]): Self = StObject.set(x, "removeStopWords", value.asInstanceOf[js.Any])
     
     inline def setRemoveStopWordsUndefined: Self = StObject.set(x, "removeStopWords", js.undefined)
     
-    inline def setRemoveStopWordsVarargs(value: String*): Self = StObject.set(x, "removeStopWords", js.Array(value :_*))
+    inline def setRemoveStopWordsVarargs(value: String*): Self = StObject.set(x, "removeStopWords", js.Array(value*))
     
     inline def setRemoveWordsIfNoResults(value: none | lastWords | firstWords | allOptional): Self = StObject.set(x, "removeWordsIfNoResults", value.asInstanceOf[js.Any])
     
     inline def setRemoveWordsIfNoResultsUndefined: Self = StObject.set(x, "removeWordsIfNoResults", js.undefined)
+    
+    inline def setRenderingContent(value: FacetOrdering): Self = StObject.set(x, "renderingContent", value.asInstanceOf[js.Any])
+    
+    inline def setRenderingContentUndefined: Self = StObject.set(x, "renderingContent", js.undefined)
     
     inline def setReplaceSynonymsInHighlight(value: Boolean): Self = StObject.set(x, "replaceSynonymsInHighlight", value.asInstanceOf[js.Any])
     
@@ -542,13 +614,13 @@ object Settings {
     
     inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
-    inline def setReplicasVarargs(value: String*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+    inline def setReplicasVarargs(value: String*): Self = StObject.set(x, "replicas", js.Array(value*))
     
     inline def setResponseFields(value: js.Array[String]): Self = StObject.set(x, "responseFields", value.asInstanceOf[js.Any])
     
     inline def setResponseFieldsUndefined: Self = StObject.set(x, "responseFields", js.undefined)
     
-    inline def setResponseFieldsVarargs(value: String*): Self = StObject.set(x, "responseFields", js.Array(value :_*))
+    inline def setResponseFieldsVarargs(value: String*): Self = StObject.set(x, "responseFields", js.Array(value*))
     
     inline def setRestrictHighlightAndSnippetArrays(value: Boolean): Self = StObject.set(x, "restrictHighlightAndSnippetArrays", value.asInstanceOf[js.Any])
     
@@ -558,7 +630,7 @@ object Settings {
     
     inline def setSearchableAttributesUndefined: Self = StObject.set(x, "searchableAttributes", js.undefined)
     
-    inline def setSearchableAttributesVarargs(value: String*): Self = StObject.set(x, "searchableAttributes", js.Array(value :_*))
+    inline def setSearchableAttributesVarargs(value: String*): Self = StObject.set(x, "searchableAttributes", js.Array(value*))
     
     inline def setSeparatorsToIndex(value: String): Self = StObject.set(x, "separatorsToIndex", value.asInstanceOf[js.Any])
     
@@ -568,7 +640,7 @@ object Settings {
     
     inline def setSlavesUndefined: Self = StObject.set(x, "slaves", js.undefined)
     
-    inline def setSlavesVarargs(value: String*): Self = StObject.set(x, "slaves", js.Array(value :_*))
+    inline def setSlavesVarargs(value: String*): Self = StObject.set(x, "slaves", js.Array(value*))
     
     inline def setSnippetEllipsisText(value: String): Self = StObject.set(x, "snippetEllipsisText", value.asInstanceOf[js.Any])
     
@@ -586,9 +658,9 @@ object Settings {
     
     inline def setUnretrievableAttributesUndefined: Self = StObject.set(x, "unretrievableAttributes", js.undefined)
     
-    inline def setUnretrievableAttributesVarargs(value: String*): Self = StObject.set(x, "unretrievableAttributes", js.Array(value :_*))
+    inline def setUnretrievableAttributesVarargs(value: String*): Self = StObject.set(x, "unretrievableAttributes", js.Array(value*))
     
-    inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }

@@ -10,10 +10,10 @@ elegant & feature rich browser / node HTTP with a fluent API
 | ------------------ | :-------------: |
 | Full name          | superagent |
 | Keywords           | agent, ajax, ajax, api, async, await, axios, cancel, client, frisbee, got, http, http, https, ky, promise, promise, promises, request, request, requests, response, rest, retry, super, superagent, timeout, transform, xhr, xmlhttprequest |
-| # releases         | 23 |
-| # dependents       | 5941 |
-| # downloads        | 190826796 |
-| # stars            | 308 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9740830666666668E7 |
+| # stars            | 16053.0 |
 
 ## Links
 - [Homepage](https://github.com/visionmedia/superagent)

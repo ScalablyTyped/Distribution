@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDocumentsResult extends StObject {
   
   /**
-    * The names of the Systems Manager documents.
+    * The names of the SSM documents.
     */
   var DocumentIdentifiers: js.UndefOr[DocumentIdentifierList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListDocumentsResult {
     
     inline def setDocumentIdentifiersUndefined: Self = StObject.set(x, "DocumentIdentifiers", js.undefined)
     
-    inline def setDocumentIdentifiersVarargs(value: DocumentIdentifier*): Self = StObject.set(x, "DocumentIdentifiers", js.Array(value :_*))
+    inline def setDocumentIdentifiersVarargs(value: DocumentIdentifier*): Self = StObject.set(x, "DocumentIdentifiers", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

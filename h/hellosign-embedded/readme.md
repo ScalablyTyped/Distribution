@@ -10,10 +10,10 @@ Embed HelloSign signature requests and templates from within your web applicatio
 | ------------------ | :-------------: |
 | Full name          | hellosign-embedded |
 | Keywords           | hellosign, embedded, esignature, esign, sign |
-| # releases         | 16 |
-| # dependents       | 1 |
-| # downloads        | 3463663 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 297509.3333333333 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/hellosign/hellosign-embedded)

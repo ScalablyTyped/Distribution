@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDockZoneCancelEventArgs")
 @js.native
-class ASPxClientDockZoneCancelEventArgs protected ()
+open class ASPxClientDockZoneCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDockZoneCancelEventArgs {
   /**

@@ -37,7 +37,7 @@ object mod {
   
   inline def useResponsiveWidth(w: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("useResponsiveWidth")(w.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  type EffectCallback = js.Function1[/* opts */ EffectParams, js.Function0[js.Any] | Unit]
+  type EffectCallback = js.Function1[/* opts */ EffectParams, js.Function0[Any] | Unit]
   
   trait EffectParams extends StObject {
     

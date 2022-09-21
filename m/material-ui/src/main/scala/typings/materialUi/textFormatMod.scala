@@ -10,10 +10,10 @@ object textFormatMod {
   
   @JSImport("material-ui/svg-icons/content/text-format", JSImport.Default)
   @js.native
-  class default () extends ContentTextFormat
+  open class default () extends ContentTextFormat
   
   @JSImport("material-ui/svg-icons/content/text-format", "ContentTextFormat")
   @js.native
-  class ContentTextFormat ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentTextFormat ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

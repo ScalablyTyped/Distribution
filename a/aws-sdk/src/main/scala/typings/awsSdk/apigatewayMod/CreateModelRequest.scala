@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateModelRequest extends StObject {
   
   /**
-    * [Required] The content-type for the model.
+    * The content-type for the model.
     */
   var contentType: String
   
@@ -17,12 +17,12 @@ trait CreateModelRequest extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The name of the model. Must be alphanumeric.
+    * The name of the model. Must be alphanumeric.
     */
   var name: String
   
   /**
-    * [Required] The RestApi identifier under which the Model will be created.
+    * The RestApi identifier under which the Model will be created.
     */
   var restApiId: String
   

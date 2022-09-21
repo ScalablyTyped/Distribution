@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.InstantiatedEntries")
 @js.native
-class InstantiatedEntries ()
+open class InstantiatedEntries ()
   extends StObject
      with typings.babylonjs.BABYLON.InstantiatedEntries {
   

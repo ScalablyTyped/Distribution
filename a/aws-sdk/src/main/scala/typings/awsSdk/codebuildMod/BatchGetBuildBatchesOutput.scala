@@ -31,10 +31,10 @@ object BatchGetBuildBatchesOutput {
     
     inline def setBuildBatchesNotFoundUndefined: Self = StObject.set(x, "buildBatchesNotFound", js.undefined)
     
-    inline def setBuildBatchesNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "buildBatchesNotFound", js.Array(value :_*))
+    inline def setBuildBatchesNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "buildBatchesNotFound", js.Array(value*))
     
     inline def setBuildBatchesUndefined: Self = StObject.set(x, "buildBatches", js.undefined)
     
-    inline def setBuildBatchesVarargs(value: BuildBatch*): Self = StObject.set(x, "buildBatches", js.Array(value :_*))
+    inline def setBuildBatchesVarargs(value: BuildBatch*): Self = StObject.set(x, "buildBatches", js.Array(value*))
   }
 }

@@ -14,6 +14,6 @@ trait KnockoutEs5 extends StObject {
   
   def notifyWhenPresentOrFutureArrayValuesMutate[T](
     ko: KnockoutStatic,
-    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> */ js.Any
+    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> */ Any
   ): Unit = js.native
 }

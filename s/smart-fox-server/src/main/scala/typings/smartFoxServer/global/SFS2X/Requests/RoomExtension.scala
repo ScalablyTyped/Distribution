@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SFS2X.Requests.RoomExtension")
 @js.native
-class RoomExtension protected ()
+open class RoomExtension protected ()
   extends StObject
      with typings.smartFoxServer.SFS2X.Requests.RoomExtension {
   /**

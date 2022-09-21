@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Geocoder")
 @js.native
-class Geocoder ()
+open class Geocoder ()
   extends StObject
      with typings.bmapgl.BMapGL.Geocoder

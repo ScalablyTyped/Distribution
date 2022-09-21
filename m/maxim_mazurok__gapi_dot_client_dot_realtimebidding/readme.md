@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_realtimebidding
 
-Typings are for version 1.0.20201119
+Typings are for version 1.0.20220811
 
 ## Library description:
 TypeScript typings for Real-time Bidding API v1
@@ -10,10 +10,10 @@ TypeScript typings for Real-time Bidding API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.realtimebidding |
 | Keywords           | - |
-| # releases         | 50 |
-| # dependents       | 1 |
-| # downloads        | 3555 |
-| # stars            | 0 |
+| # releases         | 312 |
+| # dependents       | 0.0 |
+| # downloads        | 2362.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

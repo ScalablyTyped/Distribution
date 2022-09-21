@@ -12,7 +12,7 @@ trait NamespaceInfoV2 extends StObject {
   var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
-    * The namespace AWS Region.
+    * The namespace Amazon Web Services Region.
     */
   var CapacityRegion: js.UndefOr[String] = js.undefined
   

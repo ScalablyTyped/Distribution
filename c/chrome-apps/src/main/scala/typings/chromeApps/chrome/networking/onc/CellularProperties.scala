@@ -105,7 +105,7 @@ object CellularProperties {
     
     inline def setFoundNetworksUndefined: Self = StObject.set(x, "FoundNetworks", js.undefined)
     
-    inline def setFoundNetworksVarargs(value: FoundNetworkProperties*): Self = StObject.set(x, "FoundNetworks", js.Array(value :_*))
+    inline def setFoundNetworksVarargs(value: FoundNetworkProperties*): Self = StObject.set(x, "FoundNetworks", js.Array(value*))
     
     inline def setHardwareRevision(value: String): Self = StObject.set(x, "HardwareRevision", value.asInstanceOf[js.Any])
     
@@ -151,6 +151,6 @@ object CellularProperties {
     
     inline def setSupportedCarriersUndefined: Self = StObject.set(x, "SupportedCarriers", js.undefined)
     
-    inline def setSupportedCarriersVarargs(value: String*): Self = StObject.set(x, "SupportedCarriers", js.Array(value :_*))
+    inline def setSupportedCarriersVarargs(value: String*): Self = StObject.set(x, "SupportedCarriers", js.Array(value*))
   }
 }

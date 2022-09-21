@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.Column")
 @js.native
-class ColumnCls ()
+open class ColumnCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Column {
   
@@ -30,6 +30,8 @@ class ColumnCls ()
   
   /**
     * Indicates whether the column is resizable.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#resizable)
     */

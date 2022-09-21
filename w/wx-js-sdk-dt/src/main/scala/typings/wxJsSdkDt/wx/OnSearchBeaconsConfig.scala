@@ -9,17 +9,17 @@ trait OnSearchBeaconsConfig
      with WxBaseRequestConfig {
   
   @JSName("complete")
-  def complete_MOnSearchBeaconsConfig(argv: js.Any): Unit
+  def complete_MOnSearchBeaconsConfig(argv: Any): Unit
 }
 object OnSearchBeaconsConfig {
   
-  inline def apply(complete: js.Any => Unit): OnSearchBeaconsConfig = {
+  inline def apply(complete: Any => Unit): OnSearchBeaconsConfig = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
     __obj.asInstanceOf[OnSearchBeaconsConfig]
   }
   
   extension [Self <: OnSearchBeaconsConfig](x: Self) {
     
-    inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }
 }

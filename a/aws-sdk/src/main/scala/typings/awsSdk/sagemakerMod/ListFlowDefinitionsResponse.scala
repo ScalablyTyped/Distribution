@@ -27,7 +27,7 @@ object ListFlowDefinitionsResponse {
     
     inline def setFlowDefinitionSummaries(value: FlowDefinitionSummaries): Self = StObject.set(x, "FlowDefinitionSummaries", value.asInstanceOf[js.Any])
     
-    inline def setFlowDefinitionSummariesVarargs(value: FlowDefinitionSummary*): Self = StObject.set(x, "FlowDefinitionSummaries", js.Array(value :_*))
+    inline def setFlowDefinitionSummariesVarargs(value: FlowDefinitionSummary*): Self = StObject.set(x, "FlowDefinitionSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

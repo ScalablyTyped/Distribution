@@ -2,10 +2,8 @@ package typings.bumblebeeHotword
 
 import typings.node.eventsMod.EventEmitter
 import typings.std.AnalyserNode
-import typings.std.Error
 import typings.std.GainNode
 import typings.std.HTMLCanvasElement
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +12,11 @@ object mod {
   
   @JSImport("bumblebee-hotword", JSImport.Namespace)
   @js.native
-  class ^ () extends Bumblebee
+  open class ^ () extends Bumblebee
   
   @JSImport("bumblebee-hotword", "SpectrumAnalyser")
   @js.native
-  class SpectrumAnalyser protected () extends StObject {
+  open class SpectrumAnalyser protected () extends StObject {
     def this(analyser: AnalyserNode, canvas: HTMLCanvasElement) = this()
     
     def draw(): Unit = js.native
@@ -40,17 +38,17 @@ object mod {
   trait Bumblebee extends EventEmitter {
     
     def addHotword(name: String): Unit = js.native
+    def addHotword(name: String, data: js.typedarray.Uint8Array): Unit = js.native
+    def addHotword(name: String, data: js.typedarray.Uint8Array, sensitivity: Double): Unit = js.native
     def addHotword(name: String, data: Unit, sensitivity: Double): Unit = js.native
-    def addHotword(name: String, data: Uint8Array): Unit = js.native
-    def addHotword(name: String, data: Uint8Array, sensitivity: Double): Unit = js.native
     
     def audioAnalyserCallback(audioAnalyser: AnalyserNode, gainNode: GainNode): Unit = js.native
     
-    def audioProcessCallback(data: js.Any, sampleRate: js.Any): Unit = js.native
+    def audioProcessCallback(data: Any, sampleRate: Any): Unit = js.native
     
     def detectionCallback(keyword: String): Unit = js.native
     
-    def errorCallback(e: Error): Unit = js.native
+    def errorCallback(e: js.Error): Unit = js.native
     
     def setHotword(w: String): Unit = js.native
     
@@ -71,18 +69,18 @@ object mod {
   
   trait VoiceEngine extends StObject {
     
-    def processFrame(data: js.Any): Unit
+    def processFrame(data: Any): Unit
   }
   object VoiceEngine {
     
-    inline def apply(processFrame: js.Any => Unit): VoiceEngine = {
+    inline def apply(processFrame: Any => Unit): VoiceEngine = {
       val __obj = js.Dynamic.literal(processFrame = js.Any.fromFunction1(processFrame))
       __obj.asInstanceOf[VoiceEngine]
     }
     
     extension [Self <: VoiceEngine](x: Self) {
       
-      inline def setProcessFrame(value: js.Any => Unit): Self = StObject.set(x, "processFrame", js.Any.fromFunction1(value))
+      inline def setProcessFrame(value: Any => Unit): Self = StObject.set(x, "processFrame", js.Any.fromFunction1(value))
     }
   }
   
@@ -92,8 +90,8 @@ object mod {
       engines: js.Array[VoiceEngine],
       volume: Double,
       downsamplerScript: String,
-      errorCallback: js.Function1[/* e */ Error, Unit],
-      audioProcessCallback: js.Function1[/* data */ js.Any, Unit],
+      errorCallback: js.Function1[/* e */ js.Error, Unit],
+      audioProcessCallback: js.Function1[/* data */ Any, Unit],
       audioContextCallback: js.Function2[/* analyzer */ AnalyserNode, /* gainNode */ GainNode, Unit]
     ): Unit
     
@@ -102,7 +100,7 @@ object mod {
   object VoiceProcessor {
     
     inline def apply(
-      start: (js.Array[VoiceEngine], Double, String, js.Function1[/* e */ Error, Unit], js.Function1[/* data */ js.Any, Unit], js.Function2[/* analyzer */ AnalyserNode, /* gainNode */ GainNode, Unit]) => Unit,
+      start: (js.Array[VoiceEngine], Double, String, js.Function1[/* e */ js.Error, Unit], js.Function1[/* data */ Any, Unit], js.Function2[/* analyzer */ AnalyserNode, /* gainNode */ GainNode, Unit]) => Unit,
       stop: () => Unit
     ): VoiceProcessor = {
       val __obj = js.Dynamic.literal(start = js.Any.fromFunction6(start), stop = js.Any.fromFunction0(stop))
@@ -112,7 +110,7 @@ object mod {
     extension [Self <: VoiceProcessor](x: Self) {
       
       inline def setStart(
-        value: (js.Array[VoiceEngine], Double, String, js.Function1[/* e */ Error, Unit], js.Function1[/* data */ js.Any, Unit], js.Function2[/* analyzer */ AnalyserNode, /* gainNode */ GainNode, Unit]) => Unit
+        value: (js.Array[VoiceEngine], Double, String, js.Function1[/* e */ js.Error, Unit], js.Function1[/* data */ Any, Unit], js.Function2[/* analyzer */ AnalyserNode, /* gainNode */ GainNode, Unit]) => Unit
       ): Self = StObject.set(x, "start", js.Any.fromFunction6(value))
       
       inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))

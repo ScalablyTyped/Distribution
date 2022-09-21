@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object basickeyhandlerMod {
   
-  @JSImport("@lumino/datagrid/lib/basickeyhandler", "BasicKeyHandler")
+  @JSImport("@lumino/datagrid/types/basickeyhandler", "BasicKeyHandler")
   @js.native
-  class BasicKeyHandler ()
+  open class BasicKeyHandler ()
     extends StObject
        with IKeyHandler {
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
     /**
       * Dispose of the resources held by the object.

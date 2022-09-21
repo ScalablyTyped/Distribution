@@ -2,6 +2,7 @@ package typings.algoliaClientSearch
 
 import typings.algoliaClientSearch.mod.ApiKeyACLType
 import typings.algoliaClientSearch.mod.BatchActionType
+import typings.algoliaClientSearch.mod.DictionaryName
 import typings.algoliaClientSearch.mod.ScopeType
 import typings.algoliaClientSearch.mod.StrategyType
 import typings.algoliaClientSearch.mod.SynonymType
@@ -10,6 +11,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object algoliaClientSearchStrings {
+  
+  @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait CreateIndex extends StObject
@@ -77,6 +82,12 @@ object algoliaClientSearchStrings {
   inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
+  sealed trait compounds
+    extends StObject
+       with DictionaryName
+  inline def compounds: compounds = "compounds".asInstanceOf[compounds]
+  
+  @js.native
   sealed trait contains extends StObject
   inline def contains: contains = "contains".asInstanceOf[contains]
   
@@ -104,10 +115,18 @@ object algoliaClientSearchStrings {
   inline def deleteObject: deleteObject = "deleteObject".asInstanceOf[deleteObject]
   
   @js.native
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @js.native
   sealed trait editSettings
     extends StObject
        with ApiKeyACLType
   inline def editSettings: editSettings = "editSettings".asInstanceOf[editSettings]
+  
+  @js.native
+  sealed trait enabled extends StObject
+  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
   sealed trait endsWith extends StObject
@@ -122,12 +141,20 @@ object algoliaClientSearchStrings {
   inline def excludeWords: excludeWords = "excludeWords".asInstanceOf[excludeWords]
   
   @js.native
+  sealed trait facet extends StObject
+  inline def facet: facet = "facet".asInstanceOf[facet]
+  
+  @js.native
   sealed trait firstWords extends StObject
   inline def firstWords: firstWords = "firstWords".asInstanceOf[firstWords]
   
   @js.native
   sealed trait full extends StObject
   inline def full: full = "full".asInstanceOf[full]
+  
+  @js.native
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
   sealed trait ignorePlurals extends StObject
@@ -190,10 +217,22 @@ object algoliaClientSearchStrings {
   inline def partialUpdateObjectNoCreate: partialUpdateObjectNoCreate = "partialUpdateObjectNoCreate".asInstanceOf[partialUpdateObjectNoCreate]
   
   @js.native
+  sealed trait personalization
+    extends StObject
+       with ApiKeyACLType
+  inline def personalization: personalization = "personalization".asInstanceOf[personalization]
+  
+  @js.native
   sealed trait placeholder
     extends StObject
        with SynonymType
   inline def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
+  
+  @js.native
+  sealed trait plurals
+    extends StObject
+       with DictionaryName
+  inline def plurals: plurals = "plurals".asInstanceOf[plurals]
   
   @js.native
   sealed trait prefixAll extends StObject
@@ -259,6 +298,12 @@ object algoliaClientSearchStrings {
     extends StObject
        with StrategyType
   inline def stopIfEnoughMatches: stopIfEnoughMatches = "stopIfEnoughMatches".asInstanceOf[stopIfEnoughMatches]
+  
+  @js.native
+  sealed trait stopwords
+    extends StObject
+       with DictionaryName
+  inline def stopwords: stopwords = "stopwords".asInstanceOf[stopwords]
   
   @js.native
   sealed trait strict extends StObject

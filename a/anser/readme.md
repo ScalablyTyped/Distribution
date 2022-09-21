@@ -1,7 +1,7 @@
 
 # Scala.js typings for anser
 
-Typings are for version 1.4.9
+Typings are for version 2.1.1
 
 ## Library description:
 A low level parser for ANSI sequences.
@@ -10,10 +10,10 @@ A low level parser for ANSI sequences.
 | ------------------ | :-------------: |
 | Full name          | anser |
 | Keywords           | ansi, html |
-| # releases         | 5 |
-| # dependents       | 79 |
-| # downloads        | 39404810 |
-| # stars            | 1 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 8117163.666666667 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/IonicaBizau/anser#readme)

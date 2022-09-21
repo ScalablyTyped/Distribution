@@ -10,20 +10,29 @@ trait MouseEvent
   extends StObject
      with UIEvent {
   
+  /* standard dom */
   val altKey: scala.Boolean = js.native
   
+  /* standard dom */
   val button: Double = js.native
   
+  /* standard dom */
   val buttons: Double = js.native
   
+  /* standard dom */
   val clientX: Double = js.native
   
+  /* standard dom */
   val clientY: Double = js.native
   
+  /* standard dom */
   val ctrlKey: scala.Boolean = js.native
   
+  /* standard dom */
   def getModifierState(keyArg: java.lang.String): scala.Boolean = js.native
   
+  /** @deprecated */
+  /* standard dom */
   def initMouseEvent(
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
@@ -58,29 +67,42 @@ trait MouseEvent
     relatedTargetArg: EventTarget
   ): Unit = js.native
   
+  /* standard dom */
   val metaKey: scala.Boolean = js.native
   
+  /* standard dom */
   val movementX: Double = js.native
   
+  /* standard dom */
   val movementY: Double = js.native
   
+  /* standard dom */
   val offsetX: Double = js.native
   
+  /* standard dom */
   val offsetY: Double = js.native
   
+  /* standard dom */
   val pageX: Double = js.native
   
+  /* standard dom */
   val pageY: Double = js.native
   
+  /* standard dom */
   val relatedTarget: EventTarget | Null = js.native
   
+  /* standard dom */
   val screenX: Double = js.native
   
+  /* standard dom */
   val screenY: Double = js.native
   
+  /* standard dom */
   val shiftKey: scala.Boolean = js.native
   
+  /* standard dom */
   val x: Double = js.native
   
+  /* standard dom */
   val y: Double = js.native
 }

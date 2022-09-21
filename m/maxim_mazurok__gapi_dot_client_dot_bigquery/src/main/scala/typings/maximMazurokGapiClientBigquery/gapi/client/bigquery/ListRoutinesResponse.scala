@@ -32,6 +32,6 @@ object ListRoutinesResponse {
     
     inline def setRoutinesUndefined: Self = StObject.set(x, "routines", js.undefined)
     
-    inline def setRoutinesVarargs(value: Routine*): Self = StObject.set(x, "routines", js.Array(value :_*))
+    inline def setRoutinesVarargs(value: Routine*): Self = StObject.set(x, "routines", js.Array(value*))
   }
 }

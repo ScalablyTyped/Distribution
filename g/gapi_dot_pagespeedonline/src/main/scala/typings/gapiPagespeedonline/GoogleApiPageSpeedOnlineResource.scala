@@ -79,7 +79,7 @@ object GoogleApiPageSpeedOnlineResource {
     
     inline def setInvalidRules(value: js.Array[String]): Self = StObject.set(x, "invalidRules", value.asInstanceOf[js.Any])
     
-    inline def setInvalidRulesVarargs(value: String*): Self = StObject.set(x, "invalidRules", js.Array(value :_*))
+    inline def setInvalidRulesVarargs(value: String*): Self = StObject.set(x, "invalidRules", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

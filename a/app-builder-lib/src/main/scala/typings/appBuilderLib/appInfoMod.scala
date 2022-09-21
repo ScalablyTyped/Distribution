@@ -14,7 +14,7 @@ object appInfoMod {
   
   @JSImport("app-builder-lib/out/appInfo", "AppInfo")
   @js.native
-  class AppInfo protected () extends StObject {
+  open class AppInfo protected () extends StObject {
     def this(info: Packager) = this()
     def this(info: Packager, buildVersion: String) = this()
     def this(info: Packager, buildVersion: String, platformSpecificOptions: PlatformSpecificBuildOptions) = this()
@@ -40,7 +40,7 @@ object appInfoMod {
     
     def id: String = js.native
     
-    /* private */ val info: js.Any = js.native
+    /* private */ val info: Any = js.native
     
     def linuxPackageName: String = js.native
     
@@ -48,15 +48,17 @@ object appInfoMod {
     
     def name: String = js.native
     
-    /* private */ def notNullDevMetadata: js.Any = js.native
+    /* private */ def notNullDevMetadata: Any = js.native
     
-    /* private */ val platformSpecificOptions: js.Any = js.native
+    /* private */ val platformSpecificOptions: Any = js.native
     
     val productFilename: String = js.native
     
     val productName: String = js.native
     
     def sanitizedName: String = js.native
+    
+    val sanitizedProductName: String = js.native
     
     val shortVersion: js.UndefOr[String] = js.native
     

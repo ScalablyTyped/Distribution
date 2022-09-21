@@ -29,12 +29,12 @@ object DeleteQueuedReservedInstancesResult {
     
     inline def setFailedQueuedPurchaseDeletionsUndefined: Self = StObject.set(x, "FailedQueuedPurchaseDeletions", js.undefined)
     
-    inline def setFailedQueuedPurchaseDeletionsVarargs(value: FailedQueuedPurchaseDeletion*): Self = StObject.set(x, "FailedQueuedPurchaseDeletions", js.Array(value :_*))
+    inline def setFailedQueuedPurchaseDeletionsVarargs(value: FailedQueuedPurchaseDeletion*): Self = StObject.set(x, "FailedQueuedPurchaseDeletions", js.Array(value*))
     
     inline def setSuccessfulQueuedPurchaseDeletions(value: SuccessfulQueuedPurchaseDeletionSet): Self = StObject.set(x, "SuccessfulQueuedPurchaseDeletions", value.asInstanceOf[js.Any])
     
     inline def setSuccessfulQueuedPurchaseDeletionsUndefined: Self = StObject.set(x, "SuccessfulQueuedPurchaseDeletions", js.undefined)
     
-    inline def setSuccessfulQueuedPurchaseDeletionsVarargs(value: SuccessfulQueuedPurchaseDeletion*): Self = StObject.set(x, "SuccessfulQueuedPurchaseDeletions", js.Array(value :_*))
+    inline def setSuccessfulQueuedPurchaseDeletionsVarargs(value: SuccessfulQueuedPurchaseDeletion*): Self = StObject.set(x, "SuccessfulQueuedPurchaseDeletions", js.Array(value*))
   }
 }

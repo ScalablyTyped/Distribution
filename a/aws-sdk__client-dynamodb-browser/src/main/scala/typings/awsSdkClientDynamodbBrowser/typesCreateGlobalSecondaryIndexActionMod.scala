@@ -6,7 +6,6 @@ import typings.awsSdkClientDynamodbBrowser.typesProjectionMod.Projection
 import typings.awsSdkClientDynamodbBrowser.typesProjectionMod.UnmarshalledProjection
 import typings.awsSdkClientDynamodbBrowser.typesProvisionedThroughputMod.ProvisionedThroughput
 import typings.awsSdkClientDynamodbBrowser.typesProvisionedThroughputMod.UnmarshalledProvisionedThroughput
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object typesCreateGlobalSecondaryIndexActionMod {
     /**
       * <p>The key schema for the global secondary index.</p>
       */
-    var KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]
+    var KeySchema: js.Array[KeySchemaElement] | js.Iterable[KeySchemaElement]
     
     /**
       * <p>Represents attributes that are copied (projected) from the table into an index. These are in addition to the primary key attributes and index key attributes, which are automatically projected.</p>
@@ -39,7 +38,7 @@ object typesCreateGlobalSecondaryIndexActionMod {
     
     inline def apply(
       IndexName: String,
-      KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement],
+      KeySchema: js.Array[KeySchemaElement] | js.Iterable[KeySchemaElement],
       Projection: Projection,
       ProvisionedThroughput: ProvisionedThroughput
     ): CreateGlobalSecondaryIndexAction = {
@@ -51,9 +50,9 @@ object typesCreateGlobalSecondaryIndexActionMod {
       
       inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      inline def setKeySchema(value: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: js.Array[KeySchemaElement] | js.Iterable[KeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
@@ -99,7 +98,7 @@ object typesCreateGlobalSecondaryIndexActionMod {
       
       inline def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      inline def setKeySchemaVarargs(value: UnmarshalledKeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: UnmarshalledKeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
       
       inline def setProjection(value: UnmarshalledProjection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       

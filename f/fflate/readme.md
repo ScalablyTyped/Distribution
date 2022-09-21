@@ -1,7 +1,7 @@
 
 # Scala.js typings for fflate
 
-Typings are for version 0.3.9
+Typings are for version 0.7.3
 
 ## Library description:
 High performance (de)compression in an 8kB package
@@ -10,10 +10,10 @@ High performance (de)compression in an 8kB package
 | ------------------ | :-------------: |
 | Full name          | fflate |
 | Keywords           | gzip, gunzip, deflate, inflate, compression, decompression, zlib, pako, jszip, browser, node.js, tiny, fast, zip, unzip, non-blocking |
-| # releases         | 39 |
-| # dependents       | 19 |
-| # downloads        | 2293139 |
-| # stars            | 0 |
+| # releases         | 51 |
+| # dependents       | 0.0 |
+| # downloads        | 4078727.0 |
+| # stars            | 1275.0 |
 
 ## Links
 - [Homepage](https://101arrowz.github.io/fflate)

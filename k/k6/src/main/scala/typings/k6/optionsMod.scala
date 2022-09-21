@@ -2,6 +2,7 @@ package typings.k6
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.k6.anon.Max
+import typings.k6.anon.Policy
 import typings.k6.httpMod.CipherSuite
 import typings.k6.k6Strings.`constant-arrival-rate`
 import typings.k6.k6Strings.`constant-vus`
@@ -44,7 +45,7 @@ object optionsMod {
     
     /**
       * Time to wait for iterations to finish executing before stopping them forcefully.
-      * See https://k6.io/docs/using-k6/scenarios#graceful-stop-and-ramp-down
+      * See https://k6.io/docs/using-k6/scenarios#graceful-stop-and-ramp-down/
       *
       * Default value is 30s
       */
@@ -67,15 +68,18 @@ object optionsMod {
     var cert: String
     
     /** Domains certificate is valid for. */
-    var domains: js.Array[String]
+    var domains: js.UndefOr[js.Array[String]] = js.undefined
     
     /** PEM encoded certificate key. */
     var key: String
+    
+    /** PEM passphrase. */
+    var password: js.UndefOr[String] = js.undefined
   }
   object Certificate {
     
-    inline def apply(cert: String, domains: js.Array[String], key: String): Certificate = {
-      val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], domains = domains.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    inline def apply(cert: String, key: String): Certificate = {
+      val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Certificate]
     }
     
@@ -85,13 +89,19 @@ object optionsMod {
       
       inline def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
-      inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+      
+      inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     }
   }
   
-  type CollectorOptions = StringDictionary[js.Any]
+  type CollectorOptions = StringDictionary[Any]
   
   @js.native
   trait ConstantArrivalRateScenario
@@ -238,8 +248,14 @@ object optionsMod {
     /** Blacklist IP ranges from being called. */
     var blacklistIPs: js.UndefOr[js.Array[String]] = js.undefined
     
+    /** Blacklist hostnames from being called. Wildcards are supported. */
+    var blockHostnames: js.UndefOr[js.Array[String]] = js.undefined
+    
     /** Discard response bodies. */
     var discardResponseBodies: js.UndefOr[Boolean] = js.undefined
+    
+    /** DNS resolution behavior. https://k6.io/docs/using-k6/options#dns */
+    var dns: js.UndefOr[Policy] = js.undefined
     
     /** Test duration. */
     var duration: js.UndefOr[String] = js.undefined
@@ -358,11 +374,21 @@ object optionsMod {
       
       inline def setBlacklistIPsUndefined: Self = StObject.set(x, "blacklistIPs", js.undefined)
       
-      inline def setBlacklistIPsVarargs(value: String*): Self = StObject.set(x, "blacklistIPs", js.Array(value :_*))
+      inline def setBlacklistIPsVarargs(value: String*): Self = StObject.set(x, "blacklistIPs", js.Array(value*))
+      
+      inline def setBlockHostnames(value: js.Array[String]): Self = StObject.set(x, "blockHostnames", value.asInstanceOf[js.Any])
+      
+      inline def setBlockHostnamesUndefined: Self = StObject.set(x, "blockHostnames", js.undefined)
+      
+      inline def setBlockHostnamesVarargs(value: String*): Self = StObject.set(x, "blockHostnames", js.Array(value*))
       
       inline def setDiscardResponseBodies(value: Boolean): Self = StObject.set(x, "discardResponseBodies", value.asInstanceOf[js.Any])
       
       inline def setDiscardResponseBodiesUndefined: Self = StObject.set(x, "discardResponseBodies", js.undefined)
+      
+      inline def setDns(value: Policy): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+      
+      inline def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
       
       inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -444,19 +470,19 @@ object optionsMod {
       
       inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
       
-      inline def setStagesVarargs(value: Stage*): Self = StObject.set(x, "stages", js.Array(value :_*))
+      inline def setStagesVarargs(value: Stage*): Self = StObject.set(x, "stages", js.Array(value*))
       
       inline def setSummaryTrendStats(value: js.Array[String]): Self = StObject.set(x, "summaryTrendStats", value.asInstanceOf[js.Any])
       
       inline def setSummaryTrendStatsUndefined: Self = StObject.set(x, "summaryTrendStats", js.undefined)
       
-      inline def setSummaryTrendStatsVarargs(value: String*): Self = StObject.set(x, "summaryTrendStats", js.Array(value :_*))
+      inline def setSummaryTrendStatsVarargs(value: String*): Self = StObject.set(x, "summaryTrendStats", js.Array(value*))
       
       inline def setSystemTags(value: js.Array[String]): Self = StObject.set(x, "systemTags", value.asInstanceOf[js.Any])
       
       inline def setSystemTagsUndefined: Self = StObject.set(x, "systemTags", js.undefined)
       
-      inline def setSystemTagsVarargs(value: String*): Self = StObject.set(x, "systemTags", js.Array(value :_*))
+      inline def setSystemTagsVarargs(value: String*): Self = StObject.set(x, "systemTags", js.Array(value*))
       
       inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
@@ -478,13 +504,13 @@ object optionsMod {
       
       inline def setTlsAuthUndefined: Self = StObject.set(x, "tlsAuth", js.undefined)
       
-      inline def setTlsAuthVarargs(value: Certificate*): Self = StObject.set(x, "tlsAuth", js.Array(value :_*))
+      inline def setTlsAuthVarargs(value: Certificate*): Self = StObject.set(x, "tlsAuth", js.Array(value*))
       
       inline def setTlsCipherSuites(value: js.Array[CipherSuite]): Self = StObject.set(x, "tlsCipherSuites", value.asInstanceOf[js.Any])
       
       inline def setTlsCipherSuitesUndefined: Self = StObject.set(x, "tlsCipherSuites", js.undefined)
       
-      inline def setTlsCipherSuitesVarargs(value: CipherSuite*): Self = StObject.set(x, "tlsCipherSuites", js.Array(value :_*))
+      inline def setTlsCipherSuitesVarargs(value: CipherSuite*): Self = StObject.set(x, "tlsCipherSuites", js.Array(value*))
       
       inline def setTlsVersion(value: String | Max): Self = StObject.set(x, "tlsVersion", value.asInstanceOf[js.Any])
       

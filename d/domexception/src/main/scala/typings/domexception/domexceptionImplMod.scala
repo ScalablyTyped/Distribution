@@ -12,7 +12,7 @@ object domexceptionImplMod {
   
   @JSImport("domexception/lib/DOMException-impl", "implementation")
   @js.native
-  class implementation protected ()
+  open class implementation protected ()
     extends StObject
        with DOMExceptionImpl {
     def this(globalObject: js.Object, hasMessageName: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]) = this()

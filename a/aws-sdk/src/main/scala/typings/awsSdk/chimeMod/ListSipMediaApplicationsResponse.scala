@@ -33,6 +33,6 @@ object ListSipMediaApplicationsResponse {
     
     inline def setSipMediaApplicationsUndefined: Self = StObject.set(x, "SipMediaApplications", js.undefined)
     
-    inline def setSipMediaApplicationsVarargs(value: SipMediaApplication*): Self = StObject.set(x, "SipMediaApplications", js.Array(value :_*))
+    inline def setSipMediaApplicationsVarargs(value: SipMediaApplication*): Self = StObject.set(x, "SipMediaApplications", js.Array(value*))
   }
 }

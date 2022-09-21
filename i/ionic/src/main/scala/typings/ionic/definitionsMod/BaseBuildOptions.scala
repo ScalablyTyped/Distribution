@@ -28,7 +28,7 @@ object BaseBuildOptions {
     
     inline def `set--`(value: js.Array[String]): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
     
-    inline def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value :_*))
+    inline def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value*))
     
     inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

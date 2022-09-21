@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.MathPrototype")
 @js.native
-class MathPrototype ()
+open class MathPrototype ()
   extends StObject
      with typings.typescriptServices.TypeScript.MathPrototype
 object MathPrototype {

@@ -44,7 +44,7 @@ object ActionType {
     
     inline def setActionConfigurationPropertiesUndefined: Self = StObject.set(x, "actionConfigurationProperties", js.undefined)
     
-    inline def setActionConfigurationPropertiesVarargs(value: ActionConfigurationProperty*): Self = StObject.set(x, "actionConfigurationProperties", js.Array(value :_*))
+    inline def setActionConfigurationPropertiesVarargs(value: ActionConfigurationProperty*): Self = StObject.set(x, "actionConfigurationProperties", js.Array(value*))
     
     inline def setId(value: ActionTypeId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

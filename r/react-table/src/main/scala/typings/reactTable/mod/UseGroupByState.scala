@@ -19,6 +19,6 @@ object UseGroupByState {
     
     inline def setGroupBy(value: js.Array[IdType[D]]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    inline def setGroupByVarargs(value: IdType[D]*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
+    inline def setGroupByVarargs(value: IdType[D]*): Self = StObject.set(x, "groupBy", js.Array(value*))
   }
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "Navigation")
 @js.native
-class Navigation protected () extends _MDLComponent[NavigationProps] {
+open class Navigation protected () extends _MDLComponent[NavigationProps] {
   def this(props: NavigationProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: NavigationProps, context: js.Any) = this()
+  def this(props: NavigationProps, context: Any) = this()
 }

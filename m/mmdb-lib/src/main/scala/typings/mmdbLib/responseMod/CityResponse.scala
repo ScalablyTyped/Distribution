@@ -42,6 +42,6 @@ object CityResponse {
     
     inline def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
     
-    inline def setSubdivisionsVarargs(value: SubdivisionsRecord*): Self = StObject.set(x, "subdivisions", js.Array(value :_*))
+    inline def setSubdivisionsVarargs(value: SubdivisionsRecord*): Self = StObject.set(x, "subdivisions", js.Array(value*))
   }
 }

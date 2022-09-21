@@ -10,10 +10,10 @@ The lodash method `_.bindAll` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.bindall |
 | Keywords           | lodash-modularized, bindall |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 176397 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17999.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

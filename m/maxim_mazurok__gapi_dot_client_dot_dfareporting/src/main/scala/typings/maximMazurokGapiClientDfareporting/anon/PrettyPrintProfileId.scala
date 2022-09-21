@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDfareporting.anon
 
-import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CreativeField
+import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.ConversionsBatchUpdateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait PrettyPrintProfileId extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: CreativeField
+  var resource: ConversionsBatchUpdateRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait PrettyPrintProfileId extends StObject {
 }
 object PrettyPrintProfileId {
   
-  inline def apply(profileId: String, resource: CreativeField): PrettyPrintProfileId = {
+  inline def apply(profileId: String, resource: ConversionsBatchUpdateRequest): PrettyPrintProfileId = {
     val __obj = js.Dynamic.literal(profileId = profileId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintProfileId]
   }
@@ -94,7 +94,7 @@ object PrettyPrintProfileId {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: CreativeField): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ConversionsBatchUpdateRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

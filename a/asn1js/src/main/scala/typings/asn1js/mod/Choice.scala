@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "Choice")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.asn1js.mod.IAny because Already inherited
+- typings.asn1js.mod._AsnSchemaType because Already inherited
+- typings.asn1js.mod.IChoice because var conflicts: name, optional. Inlined value */ @JSImport("asn1js", "Choice")
 @js.native
-class Choice () extends StObject {
-  def this(params: ChoiceParams) = this()
+open class Choice () extends Any {
+  def this(hasValueParameters: ChoiceParams) = this()
   
-  var optional: scala.Boolean = js.native
-  
-  var value: js.Array[LocalValueBlock] = js.native
+  var value: js.Array[BaseBlock[ValueBlock, ValueBlockJson]] = js.native
 }

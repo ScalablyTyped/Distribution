@@ -181,13 +181,13 @@ object MarketplaceDeal {
     
     inline def setSellerContactsUndefined: Self = StObject.set(x, "sellerContacts", js.undefined)
     
-    inline def setSellerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "sellerContacts", js.Array(value :_*))
+    inline def setSellerContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "sellerContacts", js.Array(value*))
     
     inline def setSharedTargetings(value: js.Array[SharedTargeting]): Self = StObject.set(x, "sharedTargetings", value.asInstanceOf[js.Any])
     
     inline def setSharedTargetingsUndefined: Self = StObject.set(x, "sharedTargetings", js.undefined)
     
-    inline def setSharedTargetingsVarargs(value: SharedTargeting*): Self = StObject.set(x, "sharedTargetings", js.Array(value :_*))
+    inline def setSharedTargetingsVarargs(value: SharedTargeting*): Self = StObject.set(x, "sharedTargetings", js.Array(value*))
     
     inline def setSyndicationProduct(value: String): Self = StObject.set(x, "syndicationProduct", value.asInstanceOf[js.Any])
     

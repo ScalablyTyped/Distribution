@@ -25,7 +25,7 @@ object ListNamespacesResponse {
     
     inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
-    inline def setNamespacesVarargs(value: Namespace*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
+    inline def setNamespacesVarargs(value: Namespace*): Self = StObject.set(x, "namespaces", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

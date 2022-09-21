@@ -2,8 +2,8 @@ package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
-import typings.grpcGrpcJs.subchannelMod.Subchannel
-import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
+import typings.grpcGrpcJs.srcSubchannelMod.Subchannel
+import typings.grpcGrpcJs.subchannelAddressMod.SubchannelAddress
 import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,19 +17,16 @@ object subchannelPoolMod {
   
   @JSImport("@grpc/grpc-js/build/src/subchannel-pool", "SubchannelPool")
   @js.native
-  class SubchannelPool protected () extends StObject {
-    /**
-      * A pool of subchannels use for making connections. Subchannels with the
-      * exact same parameters will be reused.
-      * @param global If true, this is the global subchannel pool. Otherwise, it
-      * is the pool for a single channel.
-      */
-    def this(global: Boolean) = this()
+  /**
+    * A pool of subchannels use for making connections. Subchannels with the
+    * exact same parameters will be reused.
+    */
+  open class SubchannelPool () extends StObject {
     
     /**
       * A timer of a task performing a periodic subchannel cleanup.
       */
-    /* private */ var cleanupTimer: js.Any = js.native
+    /* private */ var cleanupTimer: Any = js.native
     
     /**
       * Ensures that the cleanup task is spawned.
@@ -51,9 +48,7 @@ object subchannelPoolMod {
       channelCredentials: ChannelCredentials
     ): Subchannel = js.native
     
-    /* private */ var global: js.Any = js.native
-    
-    /* private */ var pool: js.Any = js.native
+    /* private */ var pool: Any = js.native
     
     /**
       * Unrefs all unused subchannels and cancels the cleanup task if all

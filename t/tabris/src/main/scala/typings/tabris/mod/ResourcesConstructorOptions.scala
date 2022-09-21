@@ -16,7 +16,7 @@ trait ResourcesConstructorOptions[ResourceType, RawType] extends StObject {
   
   var `type`: js.UndefOr[Constructor[ResourceType]] = js.undefined
   
-  var validator: js.UndefOr[js.Function1[/* value */ js.Any, /* is RawType */ Boolean]] = js.undefined
+  var validator: js.UndefOr[js.Function1[/* value */ Any, /* is RawType */ Boolean]] = js.undefined
 }
 object ResourcesConstructorOptions {
   
@@ -45,7 +45,7 @@ object ResourcesConstructorOptions {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValidator(value: /* value */ js.Any => /* is RawType */ Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
+    inline def setValidator(value: /* value */ Any => /* is RawType */ Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
     
     inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
   }

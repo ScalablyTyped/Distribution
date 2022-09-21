@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheetRow")
 @js.native
-class GoogleSpreadsheetRow protected ()
+open class GoogleSpreadsheetRow protected ()
   extends StObject
      with /**
   * @description
   * This represents the properties that get loaded using the header row
   */
-/* x */ StringDictionary[js.Any] {
-  def this(parentSheet: GoogleSpreadsheetWorksheet, rowNumber: Double, data: js.Any) = this()
+/* x */ StringDictionary[Any] {
+  def this(parentSheet: GoogleSpreadsheetWorksheet, rowNumber: Double, data: Any) = this()
   
   /**
     * @description

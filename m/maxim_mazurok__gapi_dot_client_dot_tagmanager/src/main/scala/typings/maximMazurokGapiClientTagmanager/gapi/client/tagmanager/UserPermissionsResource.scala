@@ -1,11 +1,11 @@
 package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientTagmanager.anon.AccesstokenAltCallback
 import typings.maximMazurokGapiClientTagmanager.anon.Alt
+import typings.maximMazurokGapiClientTagmanager.anon.AltCallbackFields
 import typings.maximMazurokGapiClientTagmanager.anon.Callback
 import typings.maximMazurokGapiClientTagmanager.anon.Fields
-import typings.maximMazurokGapiClientTagmanager.anon.UploadTypeUploadprotocol
-import typings.maximMazurokGapiClientTagmanager.anon.UploadprotocolXgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UserPermissionsResource extends StObject {
   
-  def create(request: Alt, body: UserPermission): Request[UserPermission] = js.native
   /** Creates a user's Account & Container access. */
-  def create(request: UploadTypeUploadprotocol): Request[UserPermission] = js.native
+  def create(request: AccesstokenAltCallback): Request[UserPermission] = js.native
+  def create(request: Alt, body: UserPermission): Request[UserPermission] = js.native
   
   /** Removes a user from the account, revoking access to it and all of its containers. */
   def delete(): Request[Unit] = js.native
@@ -29,7 +29,7 @@ trait UserPermissionsResource extends StObject {
   def list(): Request[ListUserPermissionsResponse] = js.native
   def list(request: Fields): Request[ListUserPermissionsResponse] = js.native
   
-  def update(request: Callback, body: UserPermission): Request[UserPermission] = js.native
   /** Updates a user's Account & Container access. */
-  def update(request: UploadprotocolXgafv): Request[UserPermission] = js.native
+  def update(request: AltCallbackFields): Request[UserPermission] = js.native
+  def update(request: Callback, body: UserPermission): Request[UserPermission] = js.native
 }

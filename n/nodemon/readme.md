@@ -4,16 +4,16 @@
 Typings are for version 1.19
 
 ## Library description:
-Simple monitor script for use during development of a node.js app.
+Simple monitor script for use during development of a Node.js app.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | nodemon |
-| Keywords           | monitor, development, restart, autoload, reload, terminal |
-| # releases         | 17 |
-| # dependents       | 2122 |
-| # downloads        | 146106272 |
-| # stars            | 625 |
+| Keywords           | cli, monitor, monitor, development, restart, autoload, reload, terminal |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0436095666666668E7 |
+| # stars            | 24428.0 |
 
 ## Links
 - [Homepage](https://nodemon.io)

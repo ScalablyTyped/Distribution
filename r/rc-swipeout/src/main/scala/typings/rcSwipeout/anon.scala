@@ -47,7 +47,7 @@ object anon {
       
       inline def setLeft(value: js.Array[scala.Nothing]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      inline def setLeftVarargs(value: scala.Nothing*): Self = StObject.set(x, "left", js.Array(value :_*))
+      inline def setLeftVarargs(value: scala.Nothing*): Self = StObject.set(x, "left", js.Array(value*))
       
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
@@ -57,7 +57,7 @@ object anon {
       
       inline def setRight(value: js.Array[scala.Nothing]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      inline def setRightVarargs(value: scala.Nothing*): Self = StObject.set(x, "right", js.Array(value :_*))
+      inline def setRightVarargs(value: scala.Nothing*): Self = StObject.set(x, "right", js.Array(value*))
     }
   }
   
@@ -71,9 +71,9 @@ object anon {
     
     var disabled: Boolean
     
-    var onPress: js.Any
+    var onPress: Any
     
-    var text: js.Any
+    var text: Any
     
     var `type`: String
   }
@@ -84,8 +84,8 @@ object anon {
       color: String,
       component: Element,
       disabled: Boolean,
-      onPress: js.Any,
-      text: js.Any,
+      onPress: Any,
+      text: Any,
       `type`: String
     ): BackgroundColor = {
       val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onPress = onPress.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
@@ -103,9 +103,9 @@ object anon {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setOnPress(value: js.Any): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
+      inline def setOnPress(value: Any): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
       
-      inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -117,11 +117,11 @@ object anon {
     
     var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     var text: ReactNode
     
-    var `type`: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[Any] = js.undefined
   }
   object ClassName {
     
@@ -140,7 +140,7 @@ object anon {
       
       inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -148,7 +148,7 @@ object anon {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }

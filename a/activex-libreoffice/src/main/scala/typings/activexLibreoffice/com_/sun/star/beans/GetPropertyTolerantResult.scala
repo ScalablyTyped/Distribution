@@ -28,11 +28,11 @@ trait GetPropertyTolerantResult extends StObject {
     *
     * The value is undefined if **Result** is not {@link com.sun.star.beans.TolerantPropertySetResultType.SUCCESS} .
     */
-  var Value: js.Any
+  var Value: Any
 }
 object GetPropertyTolerantResult {
   
-  inline def apply(Result: Double, State: PropertyState, Value: js.Any): GetPropertyTolerantResult = {
+  inline def apply(Result: Double, State: PropertyState, Value: Any): GetPropertyTolerantResult = {
     val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPropertyTolerantResult]
   }
@@ -43,6 +43,6 @@ object GetPropertyTolerantResult {
     
     inline def setState(value: PropertyState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

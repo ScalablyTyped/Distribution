@@ -3,6 +3,7 @@ package typings.rosie
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rosie", "Factory")
   @js.native
-  class Factory[T] ()
+  open class Factory[T] ()
     extends StObject
        with IFactory[T]
   @JSImport("rosie", "Factory")
@@ -35,7 +36,7 @@ object mod {
       * @param {function(object, ?object)} callback
       * @return {Factory}
       */
-    def after(functionArg: js.Function2[/* obj */ T, /* opts */ js.UndefOr[js.Any], Unit]): IFactory[T] = js.native
+    def after(functionArg: js.Function2[/* obj */ T, /* opts */ js.UndefOr[Any], Unit]): IFactory[T] = js.native
     
     /**
       * Define an attribute on this factory. Attributes can optionally define a
@@ -82,19 +83,19 @@ object mod {
     ): IFactory[T] = js.native
     def attr[K /* <: /* keyof T */ String */](
       name: K,
+      dependencies: js.Array[String],
+      generatorFunction: js.Function1[
+          /* repeated */ Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+        ]
+    ): IFactory[T] = js.native
+    def attr[K /* <: /* keyof T */ String */](
+      name: K,
       generatorFunction: js.Function0[
           /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
         ]
     ): IFactory[T] = js.native
-    def attr[K /* <: /* keyof T */ String */, D /* <: /* keyof T */ String */](name: K, dependencies: js.Array[D], generatorFunction: js.Any): IFactory[T] = js.native
-    def attr[K /* <: /* keyof T */ String */, D /* <: /* keyof T */ String */](
-      name: K,
-      dependencies: js.Array[D],
-      generatorFunction: js.Function1[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[D] */ /* value */ js.Any, 
-          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-        ]
-    ): IFactory[T] = js.native
+    def attr[K /* <: /* keyof T */ String */, D /* <: /* keyof T */ String */](name: K, dependencies: js.Array[D], generatorFunction: Any): IFactory[T] = js.native
     def attr[K /* <: /* keyof T */ String */, D1 /* <: /* keyof T */ String */, D2 /* <: /* keyof T */ String */](
       name: K,
       dependencies: js.Tuple2[D1, D2],
@@ -137,6 +138,15 @@ object mod {
           /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
         ]
     ): IFactory[T] = js.native
+    @JSName("attr")
+    def attr_K_StringD_String[K /* <: /* keyof T */ String */, D /* <: /* keyof T */ String */](
+      name: K,
+      dependencies: js.Array[D],
+      generatorFunction: js.Function1[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[D] */ /* value */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+        ]
+    ): IFactory[T] = js.native
     
     /**
       * Builds a plain object containing values for each of the declared
@@ -157,9 +167,9 @@ object mod {
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactory & TopLevel[T],
-      options: js.Any
+      options: Any
     ): T = js.native
-    def attributes(attributes: Unit, options: js.Any): T = js.native
+    def attributes(attributes: Unit, options: Any): T = js.native
     
     /**
       * Convenience function for defining a set of attributes on this object as
@@ -179,7 +189,7 @@ object mod {
     def attrs[Keys /* <: /* keyof T */ String */](
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in Keys ]: T[K] | (opts : any | undefined): T[K]}
-      */ typings.rosie.rosieStrings.IFactory & TopLevel[js.Any]
+      */ typings.rosie.rosieStrings.IFactory & TopLevel[Any]
     ): IFactory[T] = js.native
     
     /**
@@ -200,9 +210,9 @@ object mod {
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactory & TopLevel[T],
-      options: js.Any
+      options: Any
     ): T = js.native
-    def build(attributes: Unit, options: js.Any): T = js.native
+    def build(attributes: Unit, options: Any): T = js.native
     
     def buildList(size: Double): js.Array[T] = js.native
     def buildList(
@@ -216,9 +226,9 @@ object mod {
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactory & TopLevel[T],
-      options: js.Any
+      options: Any
     ): js.Array[T] = js.native
-    def buildList(size: Double, attributes: Unit, options: js.Any): js.Array[T] = js.native
+    def buildList(size: Double, attributes: Unit, options: Any): js.Array[T] = js.native
     
     /**
       * Extends a given factory by copying over its attributes, options,
@@ -228,8 +238,8 @@ object mod {
       * @param {string|Factory} name The factory to extend.
       * @return {Factory}
       */
-    def extend[K /* <: T */, T](name: String): IFactory[K] = js.native
-    def extend[K /* <: T */, T](name: IFactory[T]): IFactory[K] = js.native
+    def extend[K /* <: Partial[T] */](name: String): IFactory[T] = js.native
+    def extend[K /* <: Partial[T] */](name: IFactory[K]): IFactory[T] = js.native
     
     /**
       * Sets the constructor for this factory to be another factory. This can be
@@ -269,11 +279,11 @@ object mod {
       * @return {Factory}
       */
     def option(name: String): IFactory[T] = js.native
-    def option(name: String, dependenciesOrValue: js.Any): IFactory[T] = js.native
-    def option(name: String, dependenciesOrValue: js.Any, value: js.Any): IFactory[T] = js.native
     def option(name: String, dependenciesOrValue: js.Array[String]): IFactory[T] = js.native
-    def option(name: String, dependenciesOrValue: js.Array[String], value: js.Any): IFactory[T] = js.native
-    def option(name: String, dependenciesOrValue: Unit, value: js.Any): IFactory[T] = js.native
+    def option(name: String, dependenciesOrValue: js.Array[String], value: Any): IFactory[T] = js.native
+    def option(name: String, dependenciesOrValue: Any): IFactory[T] = js.native
+    def option(name: String, dependenciesOrValue: Any, value: Any): IFactory[T] = js.native
+    def option(name: String, dependenciesOrValue: Unit, value: Any): IFactory[T] = js.native
     
     /**
       * Generates values for all the registered options using the values given.
@@ -282,7 +292,7 @@ object mod {
       * @param {object} options
       * @return {object}
       */
-    def options(options: js.Any): js.Any = js.native
+    def options(options: Any): Any = js.native
     
     /**
       * Defines an attribute that, by default, simply has an auto-incrementing
@@ -302,12 +312,8 @@ object mod {
       * @return {Factory}
       */
     def sequence[K /* <: /* keyof T */ String */](name: K): IFactory[T] = js.native
-    def sequence[K /* <: /* keyof T */ String */](name: K, builder: js.Function1[/* i */ Double, js.Any]): IFactory[T] = js.native
-    def sequence[K /* <: /* keyof T */ String */, D /* <: /* keyof T */ String */](
-      name: K,
-      dependencies: js.Array[D],
-      builder: js.Function2[/* i */ Double, /* repeated */ js.Any, js.Any]
-    ): IFactory[T] = js.native
+    def sequence[K /* <: /* keyof T */ String */](name: K, builder: js.Function1[/* i */ Double, Any]): IFactory[T] = js.native
+    def sequence[K /* <: /* keyof T */ String */, D /* <: /* keyof T */ String */](name: K, dependencies: js.Array[D], builder: js.Function2[/* i */ Double, /* repeated */ Any, Any]): IFactory[T] = js.native
   }
   
   @js.native
@@ -323,8 +329,8 @@ object mod {
       * @param {object} options
       * @return {object}
       */
-    def attributes(name: String, attributes: js.Any): js.Any = js.native
-    def attributes(name: String, attributes: js.Any, options: js.Any): js.Any = js.native
+    def attributes(name: String, attributes: Any): Any = js.native
+    def attributes(name: String, attributes: Any, options: Any): Any = js.native
     
     /**
       * Locates a factory by name and calls #build on it.
@@ -346,9 +352,9 @@ object mod {
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
       */ typings.rosie.rosieStrings.IFactoryStatic & TopLevel[T],
-      options: js.Any
+      options: Any
     ): T = js.native
-    def build[T](name: String, attributes: Unit, options: js.Any): T = js.native
+    def build[T](name: String, attributes: Unit, options: Any): T = js.native
     
     /**
       * Builds a collection of objects using the named factory.
@@ -373,9 +379,9 @@ object mod {
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k] | boolean}
       */ typings.rosie.rosieStrings.IFactoryStatic & TopLevel[T],
-      options: js.Any
+      options: Any
     ): js.Array[T] = js.native
-    def buildList[T](name: String, size: Double, attributes: Unit, options: js.Any): js.Array[T] = js.native
+    def buildList[T](name: String, size: Double, attributes: Unit, options: Any): js.Array[T] = js.native
     
     /**
       * Defines a factory by name and constructor function. Call #attr and #option
@@ -386,7 +392,7 @@ object mod {
       * @return {Factory}
       */
     def define[T](name: String): IFactory[T] = js.native
-    def define[T](name: String, constructor: js.Function1[/* repeated */ js.Any, js.Any]): IFactory[T] = js.native
-    def define[T](name: String, constructor: Instantiable1[/* opts (repeated) */ js.Any, js.Any]): IFactory[T] = js.native
+    def define[T](name: String, constructor: js.Function1[/* repeated */ Any, Any]): IFactory[T] = js.native
+    def define[T](name: String, constructor: Instantiable1[/* opts (repeated) */ Any, Any]): IFactory[T] = js.native
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathMatCol")
 @js.native
-/* private */ class OMathMatCol ()
+/* private */ open class OMathMatCol ()
   extends StObject
      with typings.activexWord.Word.OMathMatCol {
   
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Delete(): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.OMathMatCol_typekey")

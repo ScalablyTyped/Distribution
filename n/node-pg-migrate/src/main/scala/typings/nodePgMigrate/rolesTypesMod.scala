@@ -85,7 +85,7 @@ object rolesTypesMod {
       
       inline def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
       
-      inline def setAdminVarargs(value: String*): Self = StObject.set(x, "admin", js.Array(value :_*))
+      inline def setAdminVarargs(value: String*): Self = StObject.set(x, "admin", js.Array(value*))
       
       inline def setBypassrls(value: Boolean): Self = StObject.set(x, "bypassrls", value.asInstanceOf[js.Any])
       
@@ -107,7 +107,7 @@ object rolesTypesMod {
       
       inline def setInRoleUndefined: Self = StObject.set(x, "inRole", js.undefined)
       
-      inline def setInRoleVarargs(value: String*): Self = StObject.set(x, "inRole", js.Array(value :_*))
+      inline def setInRoleVarargs(value: String*): Self = StObject.set(x, "inRole", js.Array(value*))
       
       inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
       
@@ -127,9 +127,7 @@ object rolesTypesMod {
       
       inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      inline def setPasswordVarargs(
-        value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
-      ): Self = StObject.set(x, "password", js.Array(value :_*))
+      inline def setPasswordVarargs(value: Any*): Self = StObject.set(x, "password", js.Array(value*))
       
       inline def setReplication(value: Boolean): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
       
@@ -139,7 +137,7 @@ object rolesTypesMod {
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      inline def setRoleVarargs(value: String*): Self = StObject.set(x, "role", js.Array(value :_*))
+      inline def setRoleVarargs(value: String*): Self = StObject.set(x, "role", js.Array(value*))
       
       inline def setSuperuser(value: Boolean): Self = StObject.set(x, "superuser", value.asInstanceOf[js.Any])
       
@@ -151,9 +149,7 @@ object rolesTypesMod {
       
       inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
-      inline def setValidVarargs(
-        value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
-      ): Self = StObject.set(x, "valid", js.Array(value :_*))
+      inline def setValidVarargs(value: Any*): Self = StObject.set(x, "valid", js.Array(value*))
     }
   }
 }

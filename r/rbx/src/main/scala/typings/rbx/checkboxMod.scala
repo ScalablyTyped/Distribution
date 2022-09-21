@@ -54,7 +54,7 @@ object checkboxMod {
   
   @JSImport("rbx/elements/form/checkbox", "Checkbox")
   @js.native
-  val Checkbox: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Checkbox: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait CheckboxProps extends StObject {

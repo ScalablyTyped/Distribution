@@ -9,11 +9,11 @@ object dictionaryMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HashMap<string, T> * / any */ @JSImport("url-variables/lib/internal/Dictionary", "Dictionary")
   @js.native
-  class Dictionary[T] () extends StObject {
+  open class Dictionary[T] () extends StObject {
     
     /**
       * @inheritDoc
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
 }

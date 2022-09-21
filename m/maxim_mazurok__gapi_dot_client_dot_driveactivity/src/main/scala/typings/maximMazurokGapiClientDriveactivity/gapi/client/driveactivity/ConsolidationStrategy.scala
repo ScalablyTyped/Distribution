@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConsolidationStrategy extends StObject {
   
   /** The individual activities are consolidated using the legacy strategy. */
-  var legacy: js.UndefOr[js.Any] = js.undefined
+  var legacy: js.UndefOr[Any] = js.undefined
   
   /** The individual activities are not consolidated. */
-  var none: js.UndefOr[js.Any] = js.undefined
+  var none: js.UndefOr[Any] = js.undefined
 }
 object ConsolidationStrategy {
   
@@ -21,11 +21,11 @@ object ConsolidationStrategy {
   
   extension [Self <: ConsolidationStrategy](x: Self) {
     
-    inline def setLegacy(value: js.Any): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
+    inline def setLegacy(value: Any): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
     
     inline def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
     
-    inline def setNone(value: js.Any): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: Any): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     inline def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
   }

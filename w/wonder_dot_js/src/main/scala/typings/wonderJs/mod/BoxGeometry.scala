@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "BoxGeometry")
 @js.native
-class BoxGeometry ()
+open class BoxGeometry ()
   extends typings.wonderJs.boxGeometryMod.BoxGeometry
 /* static members */
 object BoxGeometry {

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "MultiFactorSession")
 @js.native
-/* private */ class MultiFactorSession () extends StObject
+/* private */ open class MultiFactorSession () extends StObject

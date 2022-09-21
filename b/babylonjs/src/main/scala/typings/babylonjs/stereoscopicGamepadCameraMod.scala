@@ -11,7 +11,7 @@ object stereoscopicGamepadCameraMod {
   
   @JSImport("babylonjs/Cameras/Stereoscopic/stereoscopicGamepadCamera", "StereoscopicGamepadCamera")
   @js.native
-  class StereoscopicGamepadCamera protected () extends GamepadCamera {
+  open class StereoscopicGamepadCamera protected () extends GamepadCamera {
     /**
       * Creates a new StereoscopicGamepadCamera
       * @param name defines camera name
@@ -20,6 +20,7 @@ object stereoscopicGamepadCameraMod {
       * @param isStereoscopicSideBySide defines is stereoscopic is done side by side or over under
       * @param scene defines the hosting scene
       */
+    def this(name: String, position: Vector3, interaxialDistance: Double, isStereoscopicSideBySide: Boolean) = this()
     def this(
       name: String,
       position: Vector3,
@@ -27,5 +28,7 @@ object stereoscopicGamepadCameraMod {
       isStereoscopicSideBySide: Boolean,
       scene: Scene
     ) = this()
+    
+    /* protected */ var _setRigMode: Any = js.native
   }
 }

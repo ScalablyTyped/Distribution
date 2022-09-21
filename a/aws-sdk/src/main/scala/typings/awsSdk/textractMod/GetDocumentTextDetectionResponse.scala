@@ -54,7 +54,7 @@ object GetDocumentTextDetectionResponse {
     
     inline def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
     
-    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value*))
     
     inline def setDetectDocumentTextModelVersion(value: String): Self = StObject.set(x, "DetectDocumentTextModelVersion", value.asInstanceOf[js.Any])
     
@@ -80,6 +80,6 @@ object GetDocumentTextDetectionResponse {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "Warnings", js.Array(value*))
   }
 }

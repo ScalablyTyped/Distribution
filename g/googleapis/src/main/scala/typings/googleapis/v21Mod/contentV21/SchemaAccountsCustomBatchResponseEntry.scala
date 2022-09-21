@@ -4,32 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A batch entry encoding a single non-batch accounts response.
-  */
 trait SchemaAccountsCustomBatchResponseEntry extends StObject {
   
   /**
-    * The retrieved, created, or updated account. Not defined if the method was
-    * delete, claimwebsite or link.
+    * The retrieved, created, or updated account. Not defined if the method was `delete`, `claimwebsite` or `link`.
     */
   var account: js.UndefOr[SchemaAccount] = js.undefined
   
   /**
     * The ID of the request entry this entry responds to.
     */
-  var batchId: js.UndefOr[Double] = js.undefined
+  var batchId: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * A list of errors defined if and only if the request failed.
+    * A list of errors for failed custombatch entries. *Note:* Schema errors fail the whole request.
     */
   var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#accountsCustomBatchResponseEntry&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#accountsCustomBatchResponseEntry`"
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAccountsCustomBatchResponseEntry {
   
@@ -46,6 +41,8 @@ object SchemaAccountsCustomBatchResponseEntry {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
+    inline def setBatchIdNull: Self = StObject.set(x, "batchId", null)
+    
     inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     inline def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
@@ -53,6 +50,8 @@ object SchemaAccountsCustomBatchResponseEntry {
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

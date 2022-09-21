@@ -63,7 +63,7 @@ object Bibliography {
     dispose: () => Unit,
     getAnchor: () => XTextRange,
     getServiceName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

@@ -36,14 +36,14 @@ trait TaskRequestItem extends StObject {
   
   val ConversationTopic: String = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   val CreationTime: VarDate = js.native
   
   def Delete(): Unit = js.native
   
   def Display(): Unit = js.native
-  def Display(Modal: js.Any): Unit = js.native
+  def Display(Modal: Any): Unit = js.native
   
   val DownloadState: OlDownloadState = js.native
   
@@ -67,7 +67,7 @@ trait TaskRequestItem extends StObject {
   
   val Links: typings.activexOutlook.Outlook.Links = js.native
   
-  val MAPIOBJECT: js.Any = js.native
+  val MAPIOBJECT: Any = js.native
   
   var MarkForDownload: OlRemoteStatus = js.native
   
@@ -75,7 +75,7 @@ trait TaskRequestItem extends StObject {
   
   var Mileage: String = js.native
   
-  def Move(DestFldr: Folder): js.Any = js.native
+  def Move(DestFldr: Folder): Any = js.native
   
   var NoAging: Boolean = js.native
   
@@ -86,18 +86,18 @@ trait TaskRequestItem extends StObject {
   
   val OutlookVersion: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PrintOut(): Unit = js.native
   
   val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
   
-  var RTFBody: js.Any = js.native
+  var RTFBody: Any = js.native
   
   def Save(): Unit = js.native
   
   def SaveAs(Path: String): Unit = js.native
-  def SaveAs(Path: String, Type: js.Any): Unit = js.native
+  def SaveAs(Path: String, Type: Any): Unit = js.native
   
   val Saved: Boolean = js.native
   

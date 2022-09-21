@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait calendarConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var blockDates: js.UndefOr[WebixCallback] = js.undefined
   
@@ -29,7 +29,7 @@ trait calendarConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var date: js.UndefOr[Date | String] = js.undefined
   
@@ -47,7 +47,7 @@ trait calendarConfig extends StObject {
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.undefined
+  var icons: js.UndefOr[Any] = js.undefined
   
   var id: js.UndefOr[String | Double] = js.undefined
   
@@ -83,9 +83,9 @@ trait calendarConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var onClick: js.UndefOr[StringDictionary[Any]] = js.undefined
   
-  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var onContext: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var onDblClick: js.UndefOr[WebixCallback] = js.undefined
   
@@ -120,7 +120,7 @@ object calendarConfig {
   
   extension [Self <: calendarConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -156,7 +156,7 @@ object calendarConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -192,7 +192,7 @@ object calendarConfig {
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    inline def setIcons(value: js.Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
@@ -262,11 +262,11 @@ object calendarConfig {
     
     inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    inline def setOnClick(value: StringDictionary[js.Any]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: StringDictionary[Any]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnContext(value: StringDictionary[js.Any]): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
+    inline def setOnContext(value: StringDictionary[Any]): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
     
     inline def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
     

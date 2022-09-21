@@ -14,9 +14,9 @@ trait OtherCorrectionsExceptions extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): OtherCorrectionsException
+  def Item(Index: Any): OtherCorrectionsException
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.OtherCorrectionsExceptions_typekey")
   var WordDotOtherCorrectionsExceptions_typekey: OtherCorrectionsExceptions
@@ -28,8 +28,8 @@ object OtherCorrectionsExceptions {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => OtherCorrectionsException,
-    Parent: js.Any,
+    Item: Any => OtherCorrectionsException,
+    Parent: Any,
     WordDotOtherCorrectionsExceptions_typekey: OtherCorrectionsExceptions
   ): OtherCorrectionsExceptions = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -47,9 +47,9 @@ object OtherCorrectionsExceptions {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => OtherCorrectionsException): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => OtherCorrectionsException): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotOtherCorrectionsExceptions_typekey(value: OtherCorrectionsExceptions): Self = StObject.set(x, "Word.OtherCorrectionsExceptions_typekey", value.asInstanceOf[js.Any])
   }

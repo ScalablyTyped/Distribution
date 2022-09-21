@@ -17,5 +17,5 @@ trait LineCallout3DConstructor
 Instantiable0[LineCallout3D]
      with Instantiable1[/* properties */ LineCallout3DProperties, LineCallout3D] {
   
-  def fromJSON(json: js.Any): LineCallout3D = js.native
+  def fromJSON(json: Any): LineCallout3D = js.native
 }

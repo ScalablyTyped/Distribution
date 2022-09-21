@@ -10,10 +10,10 @@ A diff/merging wrapper for Ace Editor built on google-diff-match-patch
 | ------------------ | :-------------: |
 | Full name          | ace-diff |
 | Keywords           | ace, dif, diffing, merge, merging, ace editor, syntax highlighting |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 54569 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14863.0 |
+| # stars            | 289.0 |
 
 ## Links
 - [Homepage](https://ace-diff.github.io/ace-diff/)

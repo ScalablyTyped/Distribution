@@ -24,6 +24,6 @@ object DetectSyntaxResponse {
     
     inline def setSyntaxTokensUndefined: Self = StObject.set(x, "SyntaxTokens", js.undefined)
     
-    inline def setSyntaxTokensVarargs(value: SyntaxToken*): Self = StObject.set(x, "SyntaxTokens", js.Array(value :_*))
+    inline def setSyntaxTokensVarargs(value: SyntaxToken*): Self = StObject.set(x, "SyntaxTokens", js.Array(value*))
   }
 }

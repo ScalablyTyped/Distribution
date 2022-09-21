@@ -47,11 +47,11 @@ object BaseStorage {
     copyStorageElementLastCommitTo: (String, XStorage) => Unit,
     copyToStorage: XStorage => Unit,
     dispose: () => Unit,
-    getByName: String => js.Any,
+    getByName: String => Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
     isStorageElement: String => Boolean,
@@ -60,14 +60,14 @@ object BaseStorage {
     openEncryptedStreamElement: (String, Double, String) => XStream,
     openStorageElement: (String, Double) => XStorage,
     openStreamElement: (String, Double) => XStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeElement: String => Unit,
     removeEventListener: XEventListener => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     renameElement: (String, String) => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    setPropertyValue: (String, Any) => Unit
   ): BaseStorage = {
     val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], OpenMode = OpenMode.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), cloneEncryptedStreamElement = js.Any.fromFunction2(cloneEncryptedStreamElement), cloneStreamElement = js.Any.fromFunction1(cloneStreamElement), copyElementTo = js.Any.fromFunction3(copyElementTo), copyLastCommitTo = js.Any.fromFunction1(copyLastCommitTo), copyStorageElementLastCommitTo = js.Any.fromFunction2(copyStorageElementLastCommitTo), copyToStorage = js.Any.fromFunction1(copyToStorage), dispose = js.Any.fromFunction0(dispose), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), isStorageElement = js.Any.fromFunction1(isStorageElement), isStreamElement = js.Any.fromFunction1(isStreamElement), moveElementTo = js.Any.fromFunction3(moveElementTo), openEncryptedStreamElement = js.Any.fromFunction3(openEncryptedStreamElement), openStorageElement = js.Any.fromFunction2(openStorageElement), openStreamElement = js.Any.fromFunction2(openStreamElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeElement = js.Any.fromFunction1(removeElement), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), renameElement = js.Any.fromFunction2(renameElement), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[BaseStorage]

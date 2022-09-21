@@ -10,10 +10,10 @@ Koa(v2)/Express middleware for handle multipart form
 | ------------------ | :-------------: |
 | Full name          | multy |
 | Keywords           | express, koa, multipart, form, parse, busboy |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1117 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 109.66666666666667 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/eduardorfs/multy#readme)

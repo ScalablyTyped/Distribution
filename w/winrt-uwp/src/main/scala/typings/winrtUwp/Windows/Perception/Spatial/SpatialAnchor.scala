@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpatialAnchor extends StObject {
   
   /* unmapped type */
-  var addEventListener: js.Any
+  var addEventListener: Any
   
   /* unmapped type */
-  var coordinateSystem: js.Any
+  var coordinateSystem: Any
   
   /* unmapped type */
-  var onrawcoordinatesystemadjusted: js.Any
+  var onrawcoordinatesystemadjusted: Any
   
   /* unmapped type */
-  var rawCoordinateSystem: js.Any
+  var rawCoordinateSystem: Any
   
   /* unmapped type */
-  var removeEventListener: js.Any
+  var removeEventListener: Any
 }
 object SpatialAnchor {
   
   inline def apply(
-    addEventListener: js.Any,
-    coordinateSystem: js.Any,
-    onrawcoordinatesystemadjusted: js.Any,
-    rawCoordinateSystem: js.Any,
-    removeEventListener: js.Any
+    addEventListener: Any,
+    coordinateSystem: Any,
+    onrawcoordinatesystemadjusted: Any,
+    rawCoordinateSystem: Any,
+    removeEventListener: Any
   ): SpatialAnchor = {
     val __obj = js.Dynamic.literal(addEventListener = addEventListener.asInstanceOf[js.Any], coordinateSystem = coordinateSystem.asInstanceOf[js.Any], onrawcoordinatesystemadjusted = onrawcoordinatesystemadjusted.asInstanceOf[js.Any], rawCoordinateSystem = rawCoordinateSystem.asInstanceOf[js.Any], removeEventListener = removeEventListener.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialAnchor]
@@ -36,14 +36,14 @@ object SpatialAnchor {
   
   extension [Self <: SpatialAnchor](x: Self) {
     
-    inline def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+    inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     
-    inline def setCoordinateSystem(value: js.Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
+    inline def setCoordinateSystem(value: Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
     
-    inline def setOnrawcoordinatesystemadjusted(value: js.Any): Self = StObject.set(x, "onrawcoordinatesystemadjusted", value.asInstanceOf[js.Any])
+    inline def setOnrawcoordinatesystemadjusted(value: Any): Self = StObject.set(x, "onrawcoordinatesystemadjusted", value.asInstanceOf[js.Any])
     
-    inline def setRawCoordinateSystem(value: js.Any): Self = StObject.set(x, "rawCoordinateSystem", value.asInstanceOf[js.Any])
+    inline def setRawCoordinateSystem(value: Any): Self = StObject.set(x, "rawCoordinateSystem", value.asInstanceOf[js.Any])
     
-    inline def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+    inline def setRemoveEventListener(value: Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
   }
 }

@@ -21,7 +21,7 @@ trait EventAttendee extends StObject {
     */
   var email: js.UndefOr[String] = js.undefined
   
-  /** The attendee's Profile ID, if available. It corresponds to the id field in the People collection of the Google+ API */
+  /** The attendee's Profile ID, if available. */
   var id: js.UndefOr[String] = js.undefined
   
   /** Whether this is an optional attendee. Optional. The default is False. */
@@ -35,10 +35,12 @@ trait EventAttendee extends StObject {
   
   /**
     * The attendee's response status. Possible values are:
-    * - "needsAction" - The attendee has not responded to the invitation.
+    * - "needsAction" - The attendee has not responded to the invitation (recommended for new events).
     * - "declined" - The attendee has declined the invitation.
     * - "tentative" - The attendee has tentatively accepted the invitation.
-    * - "accepted" - The attendee has accepted the invitation.
+    * - "accepted" - The attendee has accepted the invitation.  Warning: If you add an event using the values declined, tentative, or accepted, attendees with the "Add invitations to my
+    * calendar" setting set to "When I respond to invitation in email" won't see an event on their calendar unless they choose to change their invitation response in the event invitation
+    * email.
     */
   var responseStatus: js.UndefOr[String] = js.undefined
   

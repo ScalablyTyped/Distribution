@@ -11,38 +11,49 @@ object serviceusageV1beta1 {
   
   @JSImport("googleapis", "serviceusage_v1beta1.Resource$Operations")
   @js.native
-  class ResourceOperations protected ()
+  open class ResourceOperations protected ()
     extends typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.ResourceOperations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "serviceusage_v1beta1.Resource$Services")
   @js.native
-  class ResourceServices protected ()
+  open class ResourceServices protected ()
     extends typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.ResourceServices {
     def this(context: APIRequestContext) = this()
   }
   
-  /**
-    * Service Usage API
-    *
-    * Enables services that service consumers want to use on Google Cloud
-    * Platform, lists the available or enabled services, or disables services
-    * that service consumers no longer use.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const serviceusage = google.serviceusage('v1beta1');
-    *
-    * @namespace serviceusage
-    * @type {Function}
-    * @version v1beta1
-    * @variation v1beta1
-    * @param {object=} options Options for Serviceusage
-    */
+  @JSImport("googleapis", "serviceusage_v1beta1.Resource$Services$Consumerquotametrics")
+  @js.native
+  open class ResourceServicesConsumerquotametrics protected ()
+    extends typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.ResourceServicesConsumerquotametrics {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "serviceusage_v1beta1.Resource$Services$Consumerquotametrics$Limits")
+  @js.native
+  open class ResourceServicesConsumerquotametricsLimits protected ()
+    extends typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.ResourceServicesConsumerquotametricsLimits {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "serviceusage_v1beta1.Resource$Services$Consumerquotametrics$Limits$Adminoverrides")
+  @js.native
+  open class ResourceServicesConsumerquotametricsLimitsAdminoverrides protected ()
+    extends typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.ResourceServicesConsumerquotametricsLimitsAdminoverrides {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "serviceusage_v1beta1.Resource$Services$Consumerquotametrics$Limits$Consumeroverrides")
+  @js.native
+  open class ResourceServicesConsumerquotametricsLimitsConsumeroverrides protected ()
+    extends typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.ResourceServicesConsumerquotametricsLimitsConsumeroverrides {
+    def this(context: APIRequestContext) = this()
+  }
+  
   @JSImport("googleapis", "serviceusage_v1beta1.Serviceusage")
   @js.native
-  class Serviceusage protected ()
+  open class Serviceusage protected ()
     extends typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.Serviceusage {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()

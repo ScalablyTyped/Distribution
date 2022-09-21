@@ -28,7 +28,7 @@ object CreativeGroupsListResponse {
     
     inline def setCreativeGroupsUndefined: Self = StObject.set(x, "creativeGroups", js.undefined)
     
-    inline def setCreativeGroupsVarargs(value: CreativeGroup*): Self = StObject.set(x, "creativeGroups", js.Array(value :_*))
+    inline def setCreativeGroupsVarargs(value: CreativeGroup*): Self = StObject.set(x, "creativeGroups", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

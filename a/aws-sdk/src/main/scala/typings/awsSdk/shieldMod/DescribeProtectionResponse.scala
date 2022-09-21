@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeProtectionResponse extends StObject {
   
   /**
-    * The Protection object that is described.
+    * The Protection that you requested. 
     */
   var Protection: js.UndefOr[typings.awsSdk.shieldMod.Protection] = js.undefined
 }

@@ -10,10 +10,10 @@ Cordova Device Name Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-device-name |
 | Keywords           | ecosystem:cordova, cordova-android, cordova-windows, cordova-ios, cordova, device, name |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 28950 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2825.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/becvert/cordova-plugin-device-name)

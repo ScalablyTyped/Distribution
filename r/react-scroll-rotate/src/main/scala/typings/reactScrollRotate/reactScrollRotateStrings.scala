@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactScrollRotateStrings {
   
   @js.native
-  sealed trait prec extends StObject
-  inline def prec: prec = "prec".asInstanceOf[prec]
+  sealed trait perc extends StObject
+  inline def perc: perc = "perc".asInstanceOf[perc]
   
   @js.native
   sealed trait px extends StObject

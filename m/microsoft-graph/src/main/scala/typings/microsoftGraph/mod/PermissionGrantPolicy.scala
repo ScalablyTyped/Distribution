@@ -8,8 +8,10 @@ trait PermissionGrantPolicy
   extends StObject
      with PolicyBase {
   
+  // Condition sets which are excluded in this permission grant policy. Automatically expanded on GET.
   var excludes: js.UndefOr[NullableOption[js.Array[PermissionGrantConditionSet]]] = js.undefined
   
+  // Condition sets which are included in this permission grant policy. Automatically expanded on GET.
   var includes: js.UndefOr[NullableOption[js.Array[PermissionGrantConditionSet]]] = js.undefined
 }
 object PermissionGrantPolicy {
@@ -27,7 +29,7 @@ object PermissionGrantPolicy {
     
     inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
-    inline def setExcludesVarargs(value: PermissionGrantConditionSet*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: PermissionGrantConditionSet*): Self = StObject.set(x, "excludes", js.Array(value*))
     
     inline def setIncludes(value: NullableOption[js.Array[PermissionGrantConditionSet]]): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
@@ -35,6 +37,6 @@ object PermissionGrantPolicy {
     
     inline def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
     
-    inline def setIncludesVarargs(value: PermissionGrantConditionSet*): Self = StObject.set(x, "includes", js.Array(value :_*))
+    inline def setIncludesVarargs(value: PermissionGrantConditionSet*): Self = StObject.set(x, "includes", js.Array(value*))
   }
 }

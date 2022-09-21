@@ -24,6 +24,6 @@ object AddCardRes {
     
     inline def setCardListUndefined: Self = StObject.set(x, "cardList", js.undefined)
     
-    inline def setCardListVarargs(value: CardData*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: CardData*): Self = StObject.set(x, "cardList", js.Array(value*))
   }
 }

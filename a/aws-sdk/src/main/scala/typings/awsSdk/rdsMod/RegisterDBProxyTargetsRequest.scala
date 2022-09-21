@@ -39,13 +39,13 @@ object RegisterDBProxyTargetsRequest {
     
     inline def setDBClusterIdentifiersUndefined: Self = StObject.set(x, "DBClusterIdentifiers", js.undefined)
     
-    inline def setDBClusterIdentifiersVarargs(value: String*): Self = StObject.set(x, "DBClusterIdentifiers", js.Array(value :_*))
+    inline def setDBClusterIdentifiersVarargs(value: String*): Self = StObject.set(x, "DBClusterIdentifiers", js.Array(value*))
     
     inline def setDBInstanceIdentifiers(value: StringList): Self = StObject.set(x, "DBInstanceIdentifiers", value.asInstanceOf[js.Any])
     
     inline def setDBInstanceIdentifiersUndefined: Self = StObject.set(x, "DBInstanceIdentifiers", js.undefined)
     
-    inline def setDBInstanceIdentifiersVarargs(value: String*): Self = StObject.set(x, "DBInstanceIdentifiers", js.Array(value :_*))
+    inline def setDBInstanceIdentifiersVarargs(value: String*): Self = StObject.set(x, "DBInstanceIdentifiers", js.Array(value*))
     
     inline def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     

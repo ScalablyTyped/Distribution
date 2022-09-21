@@ -9,7 +9,7 @@ trait HTMLStyleSheetRule extends StObject {
   /* private */ @JSName("MSHTML.HTMLStyleSheetRule_typekey")
   var MSHTMLDotHTMLStyleSheetRule_typekey: HTMLStyleSheetRule
   
-  val constructor: js.Any
+  val constructor: Any
   
   var cssText: String
   
@@ -33,7 +33,7 @@ object HTMLStyleSheetRule {
   
   inline def apply(
     MSHTMLDotHTMLStyleSheetRule_typekey: HTMLStyleSheetRule,
-    constructor: js.Any,
+    constructor: Any,
     cssText: String,
     ie9_selectorText: String,
     msGetSpecificity: Double => Double,
@@ -52,7 +52,7 @@ object HTMLStyleSheetRule {
   
   extension [Self <: HTMLStyleSheetRule](x: Self) {
     
-    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An error event which is returned by the Error Reporting system.
-  */
 trait SchemaErrorEvent extends StObject {
   
   /**
@@ -15,16 +12,14 @@ trait SchemaErrorEvent extends StObject {
   var context: js.UndefOr[SchemaErrorContext] = js.undefined
   
   /**
-    * Time when the event occurred as provided in the error report. If the
-    * report did not contain a timestamp, the time the error was received by
-    * the Error Reporting system is used.
+    * Time when the event occurred as provided in the error report. If the report did not contain a timestamp, the time the error was received by the Error Reporting system is used.
     */
-  var eventTime: js.UndefOr[String] = js.undefined
+  var eventTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The stack trace that was reported or logged by the service.
     */
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The `ServiceContext` for which this error was reported.
@@ -46,9 +41,13 @@ object SchemaErrorEvent {
     
     inline def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
+    inline def setEventTimeNull: Self = StObject.set(x, "eventTime", null)
+    
     inline def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     

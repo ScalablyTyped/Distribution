@@ -77,5 +77,5 @@ trait ASPxClientReportViewer
     * Submits the values of the specified parameters.
     * @param parameters A dictionary containing the parameter names, along with their Object values.
     */
-  def SubmitParameters(parameters: StringDictionary[js.Any]): Unit = js.native
+  def SubmitParameters(parameters: StringDictionary[Any]): Unit = js.native
 }

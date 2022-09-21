@@ -53,7 +53,7 @@ object NodeGroup {
     
     inline def setNodeGroupMembersUndefined: Self = StObject.set(x, "NodeGroupMembers", js.undefined)
     
-    inline def setNodeGroupMembersVarargs(value: NodeGroupMember*): Self = StObject.set(x, "NodeGroupMembers", js.Array(value :_*))
+    inline def setNodeGroupMembersVarargs(value: NodeGroupMember*): Self = StObject.set(x, "NodeGroupMembers", js.Array(value*))
     
     inline def setPrimaryEndpoint(value: Endpoint): Self = StObject.set(x, "PrimaryEndpoint", value.asInstanceOf[js.Any])
     

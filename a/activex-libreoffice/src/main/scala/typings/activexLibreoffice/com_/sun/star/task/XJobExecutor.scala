@@ -30,12 +30,7 @@ trait XJobExecutor
 }
 object XJobExecutor {
   
-  inline def apply(
-    acquire: () => Unit,
-    queryInterface: `type` => js.Any,
-    release: () => Unit,
-    trigger: String => Unit
-  ): XJobExecutor = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => Any, release: () => Unit, trigger: String => Unit): XJobExecutor = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), trigger = js.Any.fromFunction1(trigger))
     __obj.asInstanceOf[XJobExecutor]
   }

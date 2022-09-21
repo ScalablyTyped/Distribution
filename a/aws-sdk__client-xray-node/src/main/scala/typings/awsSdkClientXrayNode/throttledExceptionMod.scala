@@ -8,5 +8,5 @@ object throttledExceptionMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/ThrottledException", "ThrottledException")
   @js.native
-  val ThrottledException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ThrottledException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

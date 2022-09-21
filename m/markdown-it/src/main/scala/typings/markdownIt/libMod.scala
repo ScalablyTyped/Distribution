@@ -20,7 +20,7 @@ object libMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("markdown-it/lib", JSImport.Namespace)
   @js.native
-  class Class ()
+  open class Class ()
     extends StObject
        with MarkdownIt {
     def this(options: Options) = this()
@@ -138,7 +138,7 @@ object libMod extends Shortcut {
       * @param src source string
       * @param env environment sandbox
       */
-    def parse(src: String, env: js.Any): js.Array[typings.markdownIt.tokenMod.^] = js.native
+    def parse(src: String, env: Any): js.Array[typings.markdownIt.tokenMod.^] = js.native
     
     /**
       * *internal*
@@ -150,7 +150,7 @@ object libMod extends Shortcut {
       * @param src source string
       * @param env environment sandbox
       */
-    def parseInline(src: String, env: js.Any): js.Array[typings.markdownIt.tokenMod.^] = js.native
+    def parseInline(src: String, env: Any): js.Array[typings.markdownIt.tokenMod.^] = js.native
     
     /**
       * Render markdown string into html. It does all magic for you :).
@@ -163,7 +163,7 @@ object libMod extends Shortcut {
       * @param env environment sandbox
       */
     def render(src: String): String = js.native
-    def render(src: String, env: js.Any): String = js.native
+    def render(src: String, env: Any): String = js.native
     
     /**
       * Similar to [[MarkdownIt.render]] but for single paragraph content. Result
@@ -173,7 +173,7 @@ object libMod extends Shortcut {
       * @param env environment sandbox
       */
     def renderInline(src: String): String = js.native
-    def renderInline(src: String, env: js.Any): String = js.native
+    def renderInline(src: String, env: Any): String = js.native
     
     /**
       * Instance of [[Renderer]]. Use it to modify output look. Or to add rendering
@@ -234,7 +234,7 @@ object libMod extends Shortcut {
       * ```
       */
     def use(plugin: PluginSimple): this.type = js.native
-    def use(plugin: PluginWithParams, params: js.Any*): this.type = js.native
+    def use(plugin: PluginWithParams, params: Any*): this.type = js.native
     def use[T](plugin: PluginWithOptions[T]): this.type = js.native
     def use[T](plugin: PluginWithOptions[T], options: T): this.type = js.native
     
@@ -279,12 +279,14 @@ object libMod extends Shortcut {
     
     /**
       * Highlighter function for fenced code blocks.
-      * Highlighter `function (str, lang)` should return escaped HTML. It can also
-      * return empty string if the source was not changed and should be escaped
-      * externaly. If result starts with <pre... internal wrapper is skipped.
+      * Highlighter `function (str, lang, attrs)` should return escaped HTML. It can
+      * also return empty string if the source was not changed and should be escaped
+      * externally. If result starts with <pre... internal wrapper is skipped.
       * @default null
       */
-    var highlight: js.UndefOr[(js.Function2[/* str */ String, /* lang */ String, String]) | Null] = js.undefined
+    var highlight: js.UndefOr[
+        (js.Function3[/* str */ String, /* lang */ String, /* attrs */ String, String]) | Null
+      ] = js.undefined
     
     /**
       * Set `true` to enable HTML tags in source. Be careful!
@@ -344,7 +346,7 @@ object libMod extends Shortcut {
       
       inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
       
-      inline def setHighlight(value: (/* str */ String, /* lang */ String) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction2(value))
+      inline def setHighlight(value: (/* str */ String, /* lang */ String, /* attrs */ String) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
       
       inline def setHighlightNull: Self = StObject.set(x, "highlight", null)
       
@@ -366,7 +368,7 @@ object libMod extends Shortcut {
       
       inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
       
-      inline def setQuotesVarargs(value: String*): Self = StObject.set(x, "quotes", js.Array(value :_*))
+      inline def setQuotesVarargs(value: String*): Self = StObject.set(x, "quotes", js.Array(value*))
       
       inline def setTypographer(value: Boolean): Self = StObject.set(x, "typographer", value.asInstanceOf[js.Any])
       
@@ -385,7 +387,7 @@ object libMod extends Shortcut {
   @js.native
   trait PluginWithParams extends StObject {
     
-    def apply(md: MarkdownIt, params: js.Any*): Unit = js.native
+    def apply(md: MarkdownIt, params: Any*): Unit = js.native
   }
   
   /**

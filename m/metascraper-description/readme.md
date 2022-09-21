@@ -10,15 +10,15 @@ Get description property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-description |
 | Keywords           | description, metascraper |
-| # releases         | 105 |
-| # dependents       | 21 |
-| # downloads        | 835228 |
-| # stars            | 0 |
+| # releases         | 84 |
+| # dependents       | 0.0 |
+| # downloads        | 98197.33333333333 |
+| # stars            | 1802.0 |
 
 ## Links
-- [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-description)
+- [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)
 - [Bugs](https://github.com/microlinkhq/metascraper/issues)
-- [Repository](https://github.com/microlinkhq/metascraper)
+- [Repository](https://github.com/microlinkhq/metascraper/tree/master)
 - [Npm](https://www.npmjs.com/package/metascraper-description)
     
 

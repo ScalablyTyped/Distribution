@@ -12,7 +12,7 @@ trait UpdateServiceSettingsRequest extends StObject {
   var EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.undefined
   
   /**
-    * Enables integration with AWS Organizations for cross-account discovery.
+    * Enables integration with Organizations for cross-account discovery.
     */
   var OrganizationConfiguration: js.UndefOr[typings.awsSdk.licensemanagerMod.OrganizationConfiguration] = js.undefined
   

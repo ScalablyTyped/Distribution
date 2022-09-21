@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.XMLSerializer")
 @js.native
-/* private */ class XMLSerializer ()
+/* private */ open class XMLSerializer ()
   extends StObject
      with typings.activexMshtml.MSHTML.XMLSerializer {
   

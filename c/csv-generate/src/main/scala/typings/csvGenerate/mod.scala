@@ -1,19 +1,12 @@
 package typings.csvGenerate
 
 import typings.node.streamMod.Readable
-import typings.std.Date
-import typings.std.Error
+import typings.node.streamMod.ReadableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
-  
-  inline def apply(): Generator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Generator]
-  inline def apply(callback: Callback): Generator = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Generator]
-  inline def apply(options: Unit, callback: Callback): Generator = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Generator]
-  inline def apply(options: Options): Generator = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Generator]
-  inline def apply(options: Options, callback: Callback): Generator = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Generator]
   
   @JSImport("csv-generate", JSImport.Namespace)
   @js.native
@@ -21,17 +14,23 @@ object mod {
   
   @JSImport("csv-generate", "Generator")
   @js.native
-  class Generator () extends Readable {
+  open class Generator () extends Readable {
     def this(options: Options) = this()
     
     val options: Options = js.native
   }
   
-  type Callback = js.Function2[/* err */ js.UndefOr[Error], /* records */ js.UndefOr[js.Any], Unit]
+  inline def generate(): Generator = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Generator]
+  inline def generate(callback: Callback): Generator = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(callback.asInstanceOf[js.Any]).asInstanceOf[Generator]
+  inline def generate(options: Unit, callback: Callback): Generator = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Generator]
+  inline def generate(options: Options): Generator = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[Generator]
+  inline def generate(options: Options, callback: Callback): Generator = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Generator]
   
-  type MatcherFunc = js.Function1[/* value */ js.Any, Boolean]
+  type Callback = js.Function2[/* err */ js.UndefOr[js.Error], /* records */ js.UndefOr[Any], Unit]
   
-  trait Options extends StObject {
+  trait Options
+    extends StObject
+       with ReadableOptions {
     
     /**
       * Define the number of generated fields and the generation method.
@@ -49,14 +48,9 @@ object mod {
     var duration: js.UndefOr[Double] = js.undefined
     
     /**
-      * If specified, then buffers will be decoded to strings using the specified encoding.
-      */
-    var encoding: js.UndefOr[String] = js.undefined
-    
-    /**
       * When to stop the generation.
       */
-    var end: js.UndefOr[Double | Date] = js.undefined
+    var end: js.UndefOr[Double | js.Date] = js.undefined
     
     /**
       * One or multiple characters to print at the end of the file; only apply when objectMode is disabled.
@@ -69,8 +63,6 @@ object mod {
       * Generate buffers equals length as defined by the `highWaterMark` option.
       */
     var fixed_size: js.UndefOr[Boolean] = js.undefined
-    
-    var highWaterMark: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of bytes to store in the internal buffer before ceasing to read from the underlying resource.
@@ -88,8 +80,6 @@ object mod {
       * Maximum number of characters per word. 
       */
     var max_word_length: js.UndefOr[Double] = js.undefined
-    
-    var objectMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether this stream should behave as a stream of objects.
@@ -124,7 +114,7 @@ object mod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -134,11 +124,7 @@ object mod {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-      
-      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
-      
-      inline def setEnd(value: Double | Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double | js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
@@ -153,10 +139,6 @@ object mod {
       inline def setFixed_size(value: Boolean): Self = StObject.set(x, "fixed_size", value.asInstanceOf[js.Any])
       
       inline def setFixed_sizeUndefined: Self = StObject.set(x, "fixed_size", js.undefined)
-      
-      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
-      
-      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
       inline def setHigh_water_mark(value: Double): Self = StObject.set(x, "high_water_mark", value.asInstanceOf[js.Any])
       
@@ -173,10 +155,6 @@ object mod {
       inline def setMax_word_length(value: Double): Self = StObject.set(x, "max_word_length", value.asInstanceOf[js.Any])
       
       inline def setMax_word_lengthUndefined: Self = StObject.set(x, "max_word_length", js.undefined)
-      
-      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
-      
-      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
       inline def setObject_mode(value: Boolean): Self = StObject.set(x, "object_mode", value.asInstanceOf[js.Any])
       

@@ -14,7 +14,7 @@ object agentMod {
   
   @JSImport("http-proxy-agent/dist/agent", JSImport.Default)
   @js.native
-  class default protected () extends HttpProxyAgent {
+  open class default protected () extends HttpProxyAgent {
     def this(_opts: String) = this()
     def this(_opts: HttpProxyAgentOptions) = this()
   }
@@ -30,9 +30,9 @@ object agentMod {
       */
     def callback(req: HttpProxyAgentClientRequest, opts: RequestOptions): js.Promise[Socket] = js.native
     
-    /* private */ var proxy: js.Any = js.native
+    /* private */ var proxy: Any = js.native
     
-    /* private */ var secureProxy: js.Any = js.native
+    /* private */ var secureProxy: Any = js.native
   }
   
   @js.native

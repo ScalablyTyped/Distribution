@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BaseNode
      with Expression
      with Literal
-     with Pureish {
+     with Pureish
+     with Standardized {
   
   var flags: String
   

@@ -22,7 +22,7 @@ object DiffOp {
     __obj.asInstanceOf[typings.simperium.anon.`0`]
   }
   
-  inline def `1`[T](v: NumberDictionary[js.Any]): typings.simperium.anon.`1`[T] = {
+  inline def `1`[T](v: NumberDictionary[DiffOp[Any]]): typings.simperium.anon.`1`[T] = {
     val __obj = js.Dynamic.literal(o = "L", v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.simperium.anon.`1`[T]]
   }

@@ -13,6 +13,8 @@ trait SchedulerMessagesViews extends StObject {
   var month: js.UndefOr[String] = js.undefined
   
   var week: js.UndefOr[String] = js.undefined
+  
+  var year: js.UndefOr[String] = js.undefined
 }
 object SchedulerMessagesViews {
   
@@ -38,5 +40,9 @@ object SchedulerMessagesViews {
     inline def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
     inline def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
+    
+    inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

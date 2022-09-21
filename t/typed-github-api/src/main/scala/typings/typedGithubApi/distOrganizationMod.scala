@@ -16,7 +16,7 @@ object distOrganizationMod {
   
   @JSImport("typed-github-api/dist/organization", "MyOrganizationClass")
   @js.native
-  class MyOrganizationClass protected ()
+  open class MyOrganizationClass protected ()
     extends OrganizationClass
        with MyOrganization {
     def this(data: PrivateOrganization, options: OptionsOrRef) = this()
@@ -54,7 +54,7 @@ object distOrganizationMod {
   - typings.typedGithubApi.organizationMod.OrganizationSummary because Already inherited
   - typings.typedGithubApi.organizationMod.Organization because var conflicts: avatarUri, description, id, login. Inlined name, company, blog, location, email, publicRepos, publicGists, followers, following, createdAt, updatedAt, htmlUri, hasOrganizationProjects, hasRepositoryProjects */ @JSImport("typed-github-api/dist/organization", "OrganizationClass")
   @js.native
-  class OrganizationClass protected () extends OrganizationSummaryClass {
+  open class OrganizationClass protected () extends OrganizationSummaryClass {
     def this(data: Organization, options: OptionsOrRef) = this()
     
     var blog: String = js.native
@@ -90,7 +90,7 @@ object distOrganizationMod {
   - typings.typedGithubApi.ownerRefMod.OwnerRef because Already inherited
   - typings.typedGithubApi.organizationMod.OrganizationSummary because var conflicts: login. Inlined id, avatarUri, description */ @JSImport("typed-github-api/dist/organization", "OrganizationSummaryClass")
   @js.native
-  class OrganizationSummaryClass protected () extends OwnerRefClass {
+  open class OrganizationSummaryClass protected () extends OwnerRefClass {
     def this(data: OrganizationSummary, options: OptionsOrRef) = this()
     
     var avatarUri: String = js.native

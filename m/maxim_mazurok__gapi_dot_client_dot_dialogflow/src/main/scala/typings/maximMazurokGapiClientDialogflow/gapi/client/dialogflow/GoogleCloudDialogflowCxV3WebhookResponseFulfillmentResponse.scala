@@ -29,6 +29,6 @@ object GoogleCloudDialogflowCxV3WebhookResponseFulfillmentResponse {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: GoogleCloudDialogflowCxV3ResponseMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: GoogleCloudDialogflowCxV3ResponseMessage*): Self = StObject.set(x, "messages", js.Array(value*))
   }
 }

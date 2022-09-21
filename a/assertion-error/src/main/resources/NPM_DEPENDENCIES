@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "assertion-error" : "1.1.0"
+      "assertion-error" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "assertion-error" : "1.1.0"
+      "assertion-error" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

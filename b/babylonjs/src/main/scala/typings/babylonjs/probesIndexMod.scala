@@ -10,7 +10,7 @@ object probesIndexMod {
   
   @JSImport("babylonjs/Probes/index", "ReflectionProbe")
   @js.native
-  class ReflectionProbe protected ()
+  open class ReflectionProbe protected ()
     extends typings.babylonjs.reflectionProbeMod.ReflectionProbe {
     /**
       * Creates a new reflection probe
@@ -18,7 +18,8 @@ object probesIndexMod {
       * @param size defines the texture resolution (for each face)
       * @param scene defines the hosting scene
       * @param generateMipMaps defines if mip maps should be generated automatically (true by default)
-      * @param useFloat defines if HDR data (flaot data) should be used to store colors (false by default)
+      * @param useFloat defines if HDR data (float data) should be used to store colors (false by default)
+      * @param linearSpace defines if the probe should be generated in linear space or not (false by default)
       */
     def this(/** defines the name of the probe */
     name: String, size: Double, scene: Scene) = this()
@@ -45,6 +46,42 @@ object probesIndexMod {
       generateMipMaps: Unit,
       useFloat: Boolean
     ) = this()
+    def this(
+      /** defines the name of the probe */
+    name: String,
+      size: Double,
+      scene: Scene,
+      generateMipMaps: Boolean,
+      useFloat: Boolean,
+      linearSpace: Boolean
+    ) = this()
+    def this(
+      /** defines the name of the probe */
+    name: String,
+      size: Double,
+      scene: Scene,
+      generateMipMaps: Boolean,
+      useFloat: Unit,
+      linearSpace: Boolean
+    ) = this()
+    def this(
+      /** defines the name of the probe */
+    name: String,
+      size: Double,
+      scene: Scene,
+      generateMipMaps: Unit,
+      useFloat: Boolean,
+      linearSpace: Boolean
+    ) = this()
+    def this(
+      /** defines the name of the probe */
+    name: String,
+      size: Double,
+      scene: Scene,
+      generateMipMaps: Unit,
+      useFloat: Unit,
+      linearSpace: Boolean
+    ) = this()
   }
   /* static members */
   object ReflectionProbe {
@@ -60,7 +97,7 @@ object probesIndexMod {
       * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
       * @returns The parsed reflection probe if successful
       */
-    inline def Parse(parsedReflectionProbe: js.Any, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedReflectionProbe.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe]]
+    inline def Parse(parsedReflectionProbe: Any, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedReflectionProbe.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.reflectionProbeMod.ReflectionProbe]]
   }
   
   /* augmented module */
@@ -104,7 +141,7 @@ object probesIndexMod {
         
         inline def setReflectionProbes(value: js.Array[typings.babylonjs.reflectionProbeMod.ReflectionProbe]): Self = StObject.set(x, "reflectionProbes", value.asInstanceOf[js.Any])
         
-        inline def setReflectionProbesVarargs(value: typings.babylonjs.reflectionProbeMod.ReflectionProbe*): Self = StObject.set(x, "reflectionProbes", js.Array(value :_*))
+        inline def setReflectionProbesVarargs(value: typings.babylonjs.reflectionProbeMod.ReflectionProbe*): Self = StObject.set(x, "reflectionProbes", js.Array(value*))
         
         inline def setRemoveReflectionProbe(value: typings.babylonjs.reflectionProbeMod.ReflectionProbe => Double): Self = StObject.set(x, "removeReflectionProbe", js.Any.fromFunction1(value))
       }

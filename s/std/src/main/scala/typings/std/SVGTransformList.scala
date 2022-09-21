@@ -1,70 +1,52 @@
 package typings.std
 
+import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The SVGTransformList defines a list of SVGTransform objects. */
-trait SVGTransformList extends StObject {
+@js.native
+trait SVGTransformList
+  extends StObject
+     with /* standard dom */
+/* index */ NumberDictionary[SVGTransform] {
   
-  def appendItem(newItem: SVGTransform): SVGTransform
+  /* standard dom */
+  def appendItem(newItem: SVGTransform): SVGTransform = js.native
   
-  def clear(): Unit
+  /* standard dom */
+  def clear(): Unit = js.native
   
-  def consolidate(): SVGTransform
+  /* standard dom */
+  def consolidate(): SVGTransform | Null = js.native
   
-  def createSVGTransformFromMatrix(matrix: SVGMatrix): SVGTransform
+  /* standard dom */
+  def createSVGTransformFromMatrix(): SVGTransform = js.native
+  def createSVGTransformFromMatrix(matrix: DOMMatrix2DInit): SVGTransform = js.native
   
-  def getItem(index: Double): SVGTransform
+  /* standard dom */
+  def getItem(index: Double): SVGTransform = js.native
   
-  def initialize(newItem: SVGTransform): SVGTransform
+  /* standard dom */
+  def initialize(newItem: SVGTransform): SVGTransform = js.native
   
-  def insertItemBefore(newItem: SVGTransform, index: Double): SVGTransform
+  /* standard dom */
+  def insertItemBefore(newItem: SVGTransform, index: Double): SVGTransform = js.native
   
-  val numberOfItems: Double
+  /* standard dom.iterable */
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[SVGTransform]] = js.native
   
-  def removeItem(index: Double): SVGTransform
+  /* standard dom */
+  val length: Double = js.native
   
-  def replaceItem(newItem: SVGTransform, index: Double): SVGTransform
-}
-object SVGTransformList {
+  /* standard dom */
+  val numberOfItems: Double = js.native
   
-  inline def apply(
-    appendItem: SVGTransform => SVGTransform,
-    clear: () => Unit,
-    consolidate: () => SVGTransform,
-    createSVGTransformFromMatrix: SVGMatrix => SVGTransform,
-    getItem: Double => SVGTransform,
-    initialize: SVGTransform => SVGTransform,
-    insertItemBefore: (SVGTransform, Double) => SVGTransform,
-    numberOfItems: Double,
-    removeItem: Double => SVGTransform,
-    replaceItem: (SVGTransform, Double) => SVGTransform
-  ): SVGTransformList = {
-    val __obj = js.Dynamic.literal(appendItem = js.Any.fromFunction1(appendItem), clear = js.Any.fromFunction0(clear), consolidate = js.Any.fromFunction0(consolidate), createSVGTransformFromMatrix = js.Any.fromFunction1(createSVGTransformFromMatrix), getItem = js.Any.fromFunction1(getItem), initialize = js.Any.fromFunction1(initialize), insertItemBefore = js.Any.fromFunction2(insertItemBefore), numberOfItems = numberOfItems.asInstanceOf[js.Any], removeItem = js.Any.fromFunction1(removeItem), replaceItem = js.Any.fromFunction2(replaceItem))
-    __obj.asInstanceOf[SVGTransformList]
-  }
+  /* standard dom */
+  def removeItem(index: Double): SVGTransform = js.native
   
-  extension [Self <: SVGTransformList](x: Self) {
-    
-    inline def setAppendItem(value: SVGTransform => SVGTransform): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
-    
-    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
-    
-    inline def setConsolidate(value: () => SVGTransform): Self = StObject.set(x, "consolidate", js.Any.fromFunction0(value))
-    
-    inline def setCreateSVGTransformFromMatrix(value: SVGMatrix => SVGTransform): Self = StObject.set(x, "createSVGTransformFromMatrix", js.Any.fromFunction1(value))
-    
-    inline def setGetItem(value: Double => SVGTransform): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
-    
-    inline def setInitialize(value: SVGTransform => SVGTransform): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
-    
-    inline def setInsertItemBefore(value: (SVGTransform, Double) => SVGTransform): Self = StObject.set(x, "insertItemBefore", js.Any.fromFunction2(value))
-    
-    inline def setNumberOfItems(value: Double): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
-    
-    inline def setRemoveItem(value: Double => SVGTransform): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
-    
-    inline def setReplaceItem(value: (SVGTransform, Double) => SVGTransform): Self = StObject.set(x, "replaceItem", js.Any.fromFunction2(value))
-  }
+  /* standard dom */
+  def replaceItem(newItem: SVGTransform, index: Double): SVGTransform = js.native
 }

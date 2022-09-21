@@ -17,7 +17,7 @@ object tabsNativeMod {
   
   @JSImport("rmc-tabs/lib/Tabs.native", "Tabs")
   @js.native
-  class Tabs protected ()
+  open class Tabs protected ()
     extends typings.rmcTabs.tabsBaseMod.Tabs[PropsType, StateType] {
     def this(props: PropsType) = this()
     
@@ -27,16 +27,16 @@ object tabsNativeMod {
     def goToTab(index: Double, force: Unit, animated: Boolean): Boolean = js.native
     
     def handleLayout(
-      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.LayoutChangeEvent */ js.Any
+      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.LayoutChangeEvent */ Any
     ): Unit = js.native
     
     def onMomentumScrollEnd(
-      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.NativeSyntheticEvent<RN.NativeScrollEvent> */ js.Any
+      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.NativeSyntheticEvent<RN.NativeScrollEvent> */ Any
     ): Unit = js.native
     
     def onScroll(): Unit = js.native
     def onScroll(
-      evt: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.NativeSyntheticEvent<RN.NativeScrollEvent> */ js.Any
+      evt: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.NativeSyntheticEvent<RN.NativeScrollEvent> */ Any
     ): Unit = js.native
     
     def renderContent(): Element = js.native
@@ -53,7 +53,7 @@ object tabsNativeMod {
     
     var scrollView: Component = js.native
     
-    def setScrollView(sv: js.Any): Unit = js.native
+    def setScrollView(sv: Any): Unit = js.native
   }
   /* static members */
   object Tabs {
@@ -77,12 +77,12 @@ object tabsNativeMod {
     extends StObject
        with typings.rmcTabs.propsTypeMod.PropsType {
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
     var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.undefined
     
     var style: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ Any
       ] = js.undefined
     
     var styles: js.UndefOr[TabBar] = js.undefined
@@ -96,7 +96,7 @@ object tabsNativeMod {
     
     extension [Self <: PropsType](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -105,7 +105,7 @@ object tabsNativeMod {
       inline def setKeyboardShouldPersistTapsUndefined: Self = StObject.set(x, "keyboardShouldPersistTaps", js.undefined)
       
       inline def setStyle(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ Any
       ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)

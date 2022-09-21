@@ -16,20 +16,35 @@ object tableMod extends Shortcut {
   
   /* Rewritten from type alias, can be one of: 
     - typings.carbonComponentsReact.carbonComponentsReactStrings.compact
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.lg
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.md
     - typings.carbonComponentsReact.carbonComponentsReactStrings.normal
     - typings.carbonComponentsReact.carbonComponentsReactStrings.short
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.sm
     - typings.carbonComponentsReact.carbonComponentsReactStrings.tall
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.xl
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.xs
   */
   trait DataTableSize extends StObject
   object DataTableSize {
     
     inline def compact: typings.carbonComponentsReact.carbonComponentsReactStrings.compact = "compact".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.compact]
     
+    inline def lg: typings.carbonComponentsReact.carbonComponentsReactStrings.lg = "lg".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.lg]
+    
+    inline def md: typings.carbonComponentsReact.carbonComponentsReactStrings.md = "md".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.md]
+    
     inline def normal: typings.carbonComponentsReact.carbonComponentsReactStrings.normal = "normal".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.normal]
     
     inline def short: typings.carbonComponentsReact.carbonComponentsReactStrings.short = "short".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.short]
     
+    inline def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
+    
     inline def tall: typings.carbonComponentsReact.carbonComponentsReactStrings.tall = "tall".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.tall]
+    
+    inline def xl: typings.carbonComponentsReact.carbonComponentsReactStrings.xl = "xl".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.xl]
+    
+    inline def xs: typings.carbonComponentsReact.carbonComponentsReactStrings.xs = "xs".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.xs]
   }
   
   type InheritedProps = TableHTMLAttributes[HTMLTableElement]
@@ -40,6 +55,9 @@ object tableMod extends Shortcut {
     
     var overflowMenuOnHover: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * @deprecated
+      */
     var shouldShowBorder: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[DataTableSize] = js.undefined

@@ -16,7 +16,7 @@ object sanitizationChainMod {
        with Sanitizers[SanitizationChain]
        with ContextRunner {
     
-    def apply(req: Request, res: js.Any, next: js.Function1[/* errors */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def apply(req: Request, res: Any, next: js.Function1[/* errors */ js.UndefOr[Any], Unit]): Unit = js.native
     
     var builder: ContextBuilder = js.native
   }

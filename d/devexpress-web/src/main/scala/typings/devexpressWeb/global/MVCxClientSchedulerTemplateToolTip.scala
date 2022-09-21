@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MVCxClientSchedulerTemplateToolTip")
 @js.native
-class MVCxClientSchedulerTemplateToolTip ()
+open class MVCxClientSchedulerTemplateToolTip ()
   extends StObject
      with typings.devexpressWeb.MVCxClientSchedulerTemplateToolTip {
   
@@ -18,7 +18,7 @@ class MVCxClientSchedulerTemplateToolTip ()
     * @param bounds An object that represents the tooltip bounds.
     */
   /* CompleteClass */
-  override def CalculatePosition(bounds: js.Any): typings.devexpressWeb.ASPxClientPoint = js.native
+  override def CalculatePosition(bounds: Any): typings.devexpressWeb.ASPxClientPoint = js.native
   
   /**
     * Returns the value that indicates whether or not the tooltip can be displayed.
@@ -51,14 +51,14 @@ class MVCxClientSchedulerTemplateToolTip ()
     * @param eventObject An object containing information about the event in which the menu is displayed.
     */
   /* CompleteClass */
-  override def ShowAppointmentMenu(eventObject: js.Any): Unit = js.native
+  override def ShowAppointmentMenu(eventObject: Any): Unit = js.native
   
   /**
     * Displays the View Menu at the position of the tooltip.
     * @param eventObject An object containing information about the event in which the menu is displayed.
     */
   /* CompleteClass */
-  override def ShowViewMenu(eventObject: js.Any): Unit = js.native
+  override def ShowViewMenu(eventObject: Any): Unit = js.native
   
   /**
     * Updates the tooltip content.

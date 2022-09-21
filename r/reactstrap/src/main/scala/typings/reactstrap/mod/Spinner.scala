@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "Spinner")
+@JSImport("reactstrap", "Spinner")
 @js.native
-class Spinner () extends default
+open class Spinner () extends default

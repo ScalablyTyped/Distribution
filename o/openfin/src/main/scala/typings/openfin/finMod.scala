@@ -14,7 +14,7 @@ object finMod {
   
   @JSImport("openfin/_v2/api/fin", JSImport.Default)
   @js.native
-  class default protected () extends Fin {
+  open class default protected () extends Fin {
     def this(wire: typings.openfin.transportMod.default) = this()
   }
   
@@ -45,8 +45,8 @@ object finMod {
     
     var Window: typings.openfin.windowWindowMod.default = js.native
     
-    val me: (View | Window | Frame | js.Object) & Identity & EntityTypeHelpers = js.native
+    val me: (View & Identity & EntityTypeHelpers) | (Window & Identity & EntityTypeHelpers) | (Frame & Identity & EntityTypeHelpers) | (js.Object & Identity & EntityTypeHelpers) = js.native
     
-    /* private */ var wire: js.Any = js.native
+    /* private */ var wire: Any = js.native
   }
 }

@@ -12,12 +12,12 @@ trait OrganizationConformancePack extends StObject {
   var ConformancePackInputParameters: js.UndefOr[typings.awsSdk.configserviceMod.ConformancePackInputParameters] = js.undefined
   
   /**
-    * Location of an Amazon S3 bucket where AWS Config can deliver evaluation results and conformance pack template that is used to create a pack. 
+    * The name of the Amazon S3 bucket where Config stores conformance pack templates.   This field is optional. 
     */
   var DeliveryS3Bucket: js.UndefOr[typings.awsSdk.configserviceMod.DeliveryS3Bucket] = js.undefined
   
   /**
-    * Any folder structure you want to add to an Amazon S3 bucket.
+    * Any folder structure you want to add to an Amazon S3 bucket.  This field is optional. 
     */
   var DeliveryS3KeyPrefix: js.UndefOr[typings.awsSdk.configserviceMod.DeliveryS3KeyPrefix] = js.undefined
   
@@ -29,7 +29,7 @@ trait OrganizationConformancePack extends StObject {
   /**
     * Last time when organization conformation pack was updated.
     */
-  var LastUpdateTime: Date
+  var LastUpdateTime: js.Date
   
   /**
     * Amazon Resource Name (ARN) of organization conformance pack.
@@ -44,7 +44,7 @@ trait OrganizationConformancePack extends StObject {
 object OrganizationConformancePack {
   
   inline def apply(
-    LastUpdateTime: Date,
+    LastUpdateTime: js.Date,
     OrganizationConformancePackArn: StringWithCharLimit256,
     OrganizationConformancePackName: OrganizationConformancePackName
   ): OrganizationConformancePack = {
@@ -58,7 +58,7 @@ object OrganizationConformancePack {
     
     inline def setConformancePackInputParametersUndefined: Self = StObject.set(x, "ConformancePackInputParameters", js.undefined)
     
-    inline def setConformancePackInputParametersVarargs(value: ConformancePackInputParameter*): Self = StObject.set(x, "ConformancePackInputParameters", js.Array(value :_*))
+    inline def setConformancePackInputParametersVarargs(value: ConformancePackInputParameter*): Self = StObject.set(x, "ConformancePackInputParameters", js.Array(value*))
     
     inline def setDeliveryS3Bucket(value: DeliveryS3Bucket): Self = StObject.set(x, "DeliveryS3Bucket", value.asInstanceOf[js.Any])
     
@@ -72,9 +72,9 @@ object OrganizationConformancePack {
     
     inline def setExcludedAccountsUndefined: Self = StObject.set(x, "ExcludedAccounts", js.undefined)
     
-    inline def setExcludedAccountsVarargs(value: AccountId*): Self = StObject.set(x, "ExcludedAccounts", js.Array(value :_*))
+    inline def setExcludedAccountsVarargs(value: AccountId*): Self = StObject.set(x, "ExcludedAccounts", js.Array(value*))
     
-    inline def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setOrganizationConformancePackArn(value: StringWithCharLimit256): Self = StObject.set(x, "OrganizationConformancePackArn", value.asInstanceOf[js.Any])
     

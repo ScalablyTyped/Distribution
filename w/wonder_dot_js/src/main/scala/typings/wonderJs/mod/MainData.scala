@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "MainData")
 @js.native
-class MainData ()
+open class MainData ()
   extends typings.wonderJs.mainDataMod.MainData
 /* static members */
 object MainData {

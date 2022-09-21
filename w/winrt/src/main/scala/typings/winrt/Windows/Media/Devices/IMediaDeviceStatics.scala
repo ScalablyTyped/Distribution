@@ -16,9 +16,9 @@ trait IMediaDeviceStatics extends StObject {
   
   def getVideoCaptureSelector(): String
   
-  var ondefaultaudiocapturedevicechanged: js.Any
+  var ondefaultaudiocapturedevicechanged: Any
   
-  var ondefaultaudiorenderdevicechanged: js.Any
+  var ondefaultaudiorenderdevicechanged: Any
 }
 object IMediaDeviceStatics {
   
@@ -28,8 +28,8 @@ object IMediaDeviceStatics {
     getDefaultAudioCaptureId: AudioDeviceRole => String,
     getDefaultAudioRenderId: AudioDeviceRole => String,
     getVideoCaptureSelector: () => String,
-    ondefaultaudiocapturedevicechanged: js.Any,
-    ondefaultaudiorenderdevicechanged: js.Any
+    ondefaultaudiocapturedevicechanged: Any,
+    ondefaultaudiorenderdevicechanged: Any
   ): IMediaDeviceStatics = {
     val __obj = js.Dynamic.literal(getAudioCaptureSelector = js.Any.fromFunction0(getAudioCaptureSelector), getAudioRenderSelector = js.Any.fromFunction0(getAudioRenderSelector), getDefaultAudioCaptureId = js.Any.fromFunction1(getDefaultAudioCaptureId), getDefaultAudioRenderId = js.Any.fromFunction1(getDefaultAudioRenderId), getVideoCaptureSelector = js.Any.fromFunction0(getVideoCaptureSelector), ondefaultaudiocapturedevicechanged = ondefaultaudiocapturedevicechanged.asInstanceOf[js.Any], ondefaultaudiorenderdevicechanged = ondefaultaudiorenderdevicechanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaDeviceStatics]
@@ -47,8 +47,8 @@ object IMediaDeviceStatics {
     
     inline def setGetVideoCaptureSelector(value: () => String): Self = StObject.set(x, "getVideoCaptureSelector", js.Any.fromFunction0(value))
     
-    inline def setOndefaultaudiocapturedevicechanged(value: js.Any): Self = StObject.set(x, "ondefaultaudiocapturedevicechanged", value.asInstanceOf[js.Any])
+    inline def setOndefaultaudiocapturedevicechanged(value: Any): Self = StObject.set(x, "ondefaultaudiocapturedevicechanged", value.asInstanceOf[js.Any])
     
-    inline def setOndefaultaudiorenderdevicechanged(value: js.Any): Self = StObject.set(x, "ondefaultaudiorenderdevicechanged", value.asInstanceOf[js.Any])
+    inline def setOndefaultaudiorenderdevicechanged(value: Any): Self = StObject.set(x, "ondefaultaudiorenderdevicechanged", value.asInstanceOf[js.Any])
   }
 }

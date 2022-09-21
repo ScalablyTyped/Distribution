@@ -10,12 +10,15 @@ trait TokenInfo extends StObject {
   
   var start: js.UndefOr[Double] = js.undefined
   
+  var `type`: String
+  
   var value: String
 }
 object TokenInfo {
   
-  inline def apply(value: String): TokenInfo = {
+  inline def apply(`type`: String, value: String): TokenInfo = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenInfo]
   }
   
@@ -28,6 +31,8 @@ object TokenInfo {
     inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

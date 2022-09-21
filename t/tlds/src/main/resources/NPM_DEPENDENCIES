@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tlds" : "1.212.0"
+      "tlds" : "1.231.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tlds" : "1.212.0"
+      "tlds" : "1.231.0"
     }
   ],
   "compile-devDependencies" : [

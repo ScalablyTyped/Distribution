@@ -8,5 +8,5 @@ object csvinputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_CSVInput", "_CSVInput")
   @js.native
-  val CSVInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CSVInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Chat")
 @js.native
-class Chat protected ()
+open class Chat protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Chat {
   def this(element: Element) = this()

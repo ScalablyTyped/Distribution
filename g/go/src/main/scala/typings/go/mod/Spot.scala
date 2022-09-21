@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The default constructor produces the Spot(0, 0, 0, 0), at the top-left corner.
   */
-class Spot () extends StObject {
+open class Spot () extends StObject {
   /**
     * The two-argument constructor produces the Spot(x, y), where X and Y are fractional distances, between zero and one.
     * @param {number} x must be between zero and one, inclusive.

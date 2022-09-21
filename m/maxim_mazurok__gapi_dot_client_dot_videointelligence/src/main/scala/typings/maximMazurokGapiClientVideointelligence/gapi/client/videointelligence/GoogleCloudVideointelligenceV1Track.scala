@@ -31,7 +31,7 @@ object GoogleCloudVideointelligenceV1Track {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: GoogleCloudVideointelligenceV1DetectedAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: GoogleCloudVideointelligenceV1DetectedAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object GoogleCloudVideointelligenceV1Track {
     
     inline def setTimestampedObjectsUndefined: Self = StObject.set(x, "timestampedObjects", js.undefined)
     
-    inline def setTimestampedObjectsVarargs(value: GoogleCloudVideointelligenceV1TimestampedObject*): Self = StObject.set(x, "timestampedObjects", js.Array(value :_*))
+    inline def setTimestampedObjectsVarargs(value: GoogleCloudVideointelligenceV1TimestampedObject*): Self = StObject.set(x, "timestampedObjects", js.Array(value*))
   }
 }

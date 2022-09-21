@@ -17,7 +17,7 @@ trait SmartTagOptions extends StObject {
   /* private */ @JSName("Excel.SmartTagOptions_typekey")
   var ExcelDotSmartTagOptions_typekey: SmartTagOptions
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object SmartTagOptions {
   
@@ -27,7 +27,7 @@ object SmartTagOptions {
     DisplaySmartTags: XlSmartTagDisplayMode,
     EmbedSmartTags: Boolean,
     ExcelDotSmartTagOptions_typekey: SmartTagOptions,
-    Parent: js.Any
+    Parent: Any
   ): SmartTagOptions = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DisplaySmartTags = DisplaySmartTags.asInstanceOf[js.Any], EmbedSmartTags = EmbedSmartTags.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.SmartTagOptions_typekey")(ExcelDotSmartTagOptions_typekey.asInstanceOf[js.Any])
@@ -46,6 +46,6 @@ object SmartTagOptions {
     
     inline def setExcelDotSmartTagOptions_typekey(value: SmartTagOptions): Self = StObject.set(x, "Excel.SmartTagOptions_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

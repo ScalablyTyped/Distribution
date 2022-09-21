@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("sequelize", "ForeignKeyConstraintError")
 @js.native
-class ForeignKeyConstraintErrorCls protected ()
+open class ForeignKeyConstraintErrorCls protected ()
   extends StObject
      with ForeignKeyConstraintError {
   /**
@@ -16,9 +16,11 @@ class ForeignKeyConstraintErrorCls protected ()
     */
   def this(options: Fields) = this()
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
 }

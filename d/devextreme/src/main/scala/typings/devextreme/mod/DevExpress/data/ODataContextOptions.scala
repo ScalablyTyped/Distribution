@@ -9,47 +9,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ODataContextOptions extends StObject {
   
   /**
-    * [descr:ODataContext.Options.beforeSend]
+    * Specifies a function that customizes the request before it is sent to the server.
     */
-  var beforeSend: js.UndefOr[js.Function1[/* options */ Async, js.Any]] = js.undefined
+  var beforeSend: js.UndefOr[js.Function1[/* options */ Async, Unit]] = js.undefined
   
   /**
-    * [descr:ODataContext.Options.deserializeDates]
+    * Specifies whether stores in the ODataContext serialize/parse date-time values.
     */
   var deserializeDates: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:ODataContext.Options.entities]
+    * Specifies entity collections to be accessed.
     */
-  var entities: js.UndefOr[js.Any] = js.undefined
+  var entities: js.UndefOr[Any] = js.undefined
   
   /**
-    * [descr:ODataContext.Options.errorHandler]
+    * Specifies a function that is executed when the ODataContext throws an error.
     */
-  var errorHandler: js.UndefOr[js.Function1[/* e */ ErrorDetails, js.Any]] = js.undefined
+  var errorHandler: js.UndefOr[js.Function1[/* e */ ErrorDetails, Unit]] = js.undefined
   
   /**
-    * [descr:ODataContext.Options.filterToLower]
+    * Specifies whether to convert string values to lowercase in filter and search requests. Applies to the following operations: &apos;startswith&apos;, &apos;endswith&apos;, &apos;contains&apos;, and &apos;notcontains&apos;.
     */
   var filterToLower: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:ODataContext.Options.jsonp]
+    * Specifies whether data should be sent using JSONP.
     */
   var jsonp: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:ODataContext.Options.url]
+    * Specifies the URL of an OData service.
     */
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * [descr:ODataContext.Options.version]
+    * Specifies the OData version.
     */
   var version: js.UndefOr[Double] = js.undefined
   
   /**
-    * [descr:ODataContext.Options.withCredentials]
+    * Specifies whether to send cookies, authorization headers, and client certificates in a cross-origin request.
     */
   var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
@@ -62,7 +62,7 @@ object ODataContextOptions {
   
   extension [Self <: ODataContextOptions](x: Self) {
     
-    inline def setBeforeSend(value: /* options */ Async => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+    inline def setBeforeSend(value: /* options */ Async => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
     inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
@@ -70,11 +70,11 @@ object ODataContextOptions {
     
     inline def setDeserializeDatesUndefined: Self = StObject.set(x, "deserializeDates", js.undefined)
     
-    inline def setEntities(value: js.Any): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: Any): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    inline def setErrorHandler(value: /* e */ ErrorDetails => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+    inline def setErrorHandler(value: /* e */ ErrorDetails => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     

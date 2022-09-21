@@ -1,5 +1,7 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +13,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.URL
   - java.lang.String
 */
-type Action = typings.awsSdk.pinpointMod._Action | java.lang.String
+type Action = _Action | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LEFT
+  - typings.awsSdk.awsSdkStrings.CENTER
+  - typings.awsSdk.awsSdkStrings.RIGHT
+  - java.lang.String
+*/
+type Alignment = _Alignment | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUSIVE
   - typings.awsSdk.awsSdkStrings.EXCLUSIVE
+  - typings.awsSdk.awsSdkStrings.CONTAINS
+  - typings.awsSdk.awsSdkStrings.BEFORE
+  - typings.awsSdk.awsSdkStrings.AFTER
+  - typings.awsSdk.awsSdkStrings.ON
+  - typings.awsSdk.awsSdkStrings.BETWEEN
   - java.lang.String
 */
-type AttributeType = typings.awsSdk.pinpointMod._AttributeType | java.lang.String
+type AttributeType = _AttributeType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LINK
+  - typings.awsSdk.awsSdkStrings.DEEP_LINK
+  - typings.awsSdk.awsSdkStrings.CLOSE
+  - java.lang.String
+*/
+type ButtonAction = _ButtonAction | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SCHEDULED
@@ -30,7 +53,7 @@ type AttributeType = typings.awsSdk.pinpointMod._AttributeType | java.lang.Strin
   - typings.awsSdk.awsSdkStrings.INVALID
   - java.lang.String
 */
-type CampaignStatus = typings.awsSdk.pinpointMod._CampaignStatus | java.lang.String
+type CampaignStatus = _CampaignStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUSH
@@ -45,9 +68,22 @@ type CampaignStatus = typings.awsSdk.pinpointMod._CampaignStatus | java.lang.Str
   - typings.awsSdk.awsSdkStrings.EMAIL
   - typings.awsSdk.awsSdkStrings.BAIDU
   - typings.awsSdk.awsSdkStrings.CUSTOM
+  - typings.awsSdk.awsSdkStrings.IN_APP
   - java.lang.String
 */
-type ChannelType = typings.awsSdk.pinpointMod._ChannelType | java.lang.String
+type ChannelType = _ChannelType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MONDAY
+  - typings.awsSdk.awsSdkStrings.TUESDAY
+  - typings.awsSdk.awsSdkStrings.WEDNESDAY
+  - typings.awsSdk.awsSdkStrings.THURSDAY
+  - typings.awsSdk.awsSdkStrings.FRIDAY
+  - typings.awsSdk.awsSdkStrings.SATURDAY
+  - typings.awsSdk.awsSdkStrings.SUNDAY
+  - java.lang.String
+*/
+type DayOfWeek = _DayOfWeek | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCESSFUL
@@ -59,14 +95,14 @@ type ChannelType = typings.awsSdk.pinpointMod._ChannelType | java.lang.String
   - typings.awsSdk.awsSdkStrings.DUPLICATE
   - java.lang.String
 */
-type DeliveryStatus = typings.awsSdk.pinpointMod._DeliveryStatus | java.lang.String
+type DeliveryStatus = _DeliveryStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUSIVE
   - typings.awsSdk.awsSdkStrings.EXCLUSIVE
   - java.lang.String
 */
-type DimensionType = typings.awsSdk.pinpointMod._DimensionType | java.lang.String
+type DimensionType = _DimensionType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HR_24
@@ -75,7 +111,7 @@ type DimensionType = typings.awsSdk.pinpointMod._DimensionType | java.lang.Strin
   - typings.awsSdk.awsSdkStrings.DAY_30
   - java.lang.String
 */
-type Duration = typings.awsSdk.pinpointMod._Duration | java.lang.String
+type Duration = _Duration | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUSH
@@ -90,23 +126,24 @@ type Duration = typings.awsSdk.pinpointMod._Duration | java.lang.String
   - typings.awsSdk.awsSdkStrings.EMAIL
   - typings.awsSdk.awsSdkStrings.BAIDU
   - typings.awsSdk.awsSdkStrings.CUSTOM
+  - typings.awsSdk.awsSdkStrings.IN_APP
   - java.lang.String
 */
-type EndpointTypesElement = typings.awsSdk.pinpointMod._EndpointTypesElement | java.lang.String
+type EndpointTypesElement = _EndpointTypesElement | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SYSTEM
   - typings.awsSdk.awsSdkStrings.ENDPOINT
   - java.lang.String
 */
-type FilterType = typings.awsSdk.pinpointMod._FilterType | java.lang.String
+type FilterType = _FilterType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CSV
   - typings.awsSdk.awsSdkStrings.JSON
   - java.lang.String
 */
-type Format = typings.awsSdk.pinpointMod._Format | java.lang.String
+type Format = _Format | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ONCE
@@ -115,9 +152,10 @@ type Format = typings.awsSdk.pinpointMod._Format | java.lang.String
   - typings.awsSdk.awsSdkStrings.WEEKLY
   - typings.awsSdk.awsSdkStrings.MONTHLY
   - typings.awsSdk.awsSdkStrings.EVENT
+  - typings.awsSdk.awsSdkStrings.IN_APP_EVENT
   - java.lang.String
 */
-type Frequency = typings.awsSdk.pinpointMod._Frequency | java.lang.String
+type Frequency = _Frequency | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL
@@ -125,7 +163,7 @@ type Frequency = typings.awsSdk.pinpointMod._Frequency | java.lang.String
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type Include = typings.awsSdk.pinpointMod._Include | java.lang.String
+type Include = _Include | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED
@@ -139,124 +177,145 @@ type Include = typings.awsSdk.pinpointMod._Include | java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type JobStatus = typings.awsSdk.pinpointMod._JobStatus | java.lang.String
+type JobStatus = _JobStatus | String
 
-type ListOfActivityResponse = js.Array[typings.awsSdk.pinpointMod.ActivityResponse]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BOTTOM_BANNER
+  - typings.awsSdk.awsSdkStrings.TOP_BANNER
+  - typings.awsSdk.awsSdkStrings.OVERLAYS
+  - typings.awsSdk.awsSdkStrings.MOBILE_FEED
+  - typings.awsSdk.awsSdkStrings.MIDDLE_BANNER
+  - typings.awsSdk.awsSdkStrings.CAROUSEL
+  - java.lang.String
+*/
+type Layout = _Layout | String
 
-type ListOfApplicationResponse = js.Array[typings.awsSdk.pinpointMod.ApplicationResponse]
+type ListOfActivityResponse = js.Array[ActivityResponse]
 
-type ListOfCampaignResponse = js.Array[typings.awsSdk.pinpointMod.CampaignResponse]
+type ListOfApplicationResponse = js.Array[ApplicationResponse]
 
-type ListOfEndpointBatchItem = js.Array[typings.awsSdk.pinpointMod.EndpointBatchItem]
+type ListOfCampaignResponse = js.Array[CampaignResponse]
 
-type ListOfEndpointResponse = js.Array[typings.awsSdk.pinpointMod.EndpointResponse]
+type ListOfClosedDaysRules = js.Array[ClosedDaysRule]
 
-type ListOfEndpointTypesElement = js.Array[typings.awsSdk.pinpointMod.EndpointTypesElement]
+type ListOfEndpointBatchItem = js.Array[EndpointBatchItem]
 
-type ListOfExportJobResponse = js.Array[typings.awsSdk.pinpointMod.ExportJobResponse]
+type ListOfEndpointResponse = js.Array[EndpointResponse]
 
-type ListOfImportJobResponse = js.Array[typings.awsSdk.pinpointMod.ImportJobResponse]
+type ListOfEndpointTypesElement = js.Array[EndpointTypesElement]
 
-type ListOfJourneyResponse = js.Array[typings.awsSdk.pinpointMod.JourneyResponse]
+type ListOfExportJobResponse = js.Array[ExportJobResponse]
 
-type ListOfMultiConditionalBranch = js.Array[typings.awsSdk.pinpointMod.MultiConditionalBranch]
+type ListOfImportJobResponse = js.Array[ImportJobResponse]
 
-type ListOfRandomSplitEntry = js.Array[typings.awsSdk.pinpointMod.RandomSplitEntry]
+type ListOfInAppMessageCampaign = js.Array[InAppMessageCampaign]
 
-type ListOfRecommenderConfigurationResponse = js.Array[typings.awsSdk.pinpointMod.RecommenderConfigurationResponse]
+type ListOfInAppMessageContent = js.Array[InAppMessageContent]
 
-type ListOfResultRow = js.Array[typings.awsSdk.pinpointMod.ResultRow]
+type ListOfJourneyResponse = js.Array[JourneyResponse]
 
-type ListOfResultRowValue = js.Array[typings.awsSdk.pinpointMod.ResultRowValue]
+type ListOfMultiConditionalBranch = js.Array[MultiConditionalBranch]
 
-type ListOfSegmentDimensions = js.Array[typings.awsSdk.pinpointMod.SegmentDimensions]
+type ListOfOpenHoursRules = js.Array[OpenHoursRule]
 
-type ListOfSegmentGroup = js.Array[typings.awsSdk.pinpointMod.SegmentGroup]
+type ListOfRandomSplitEntry = js.Array[RandomSplitEntry]
 
-type ListOfSegmentReference = js.Array[typings.awsSdk.pinpointMod.SegmentReference]
+type ListOfRecommenderConfigurationResponse = js.Array[RecommenderConfigurationResponse]
 
-type ListOfSegmentResponse = js.Array[typings.awsSdk.pinpointMod.SegmentResponse]
+type ListOfResultRow = js.Array[ResultRow]
 
-type ListOfSimpleCondition = js.Array[typings.awsSdk.pinpointMod.SimpleCondition]
+type ListOfResultRowValue = js.Array[ResultRowValue]
 
-type ListOfString = js.Array[typings.awsSdk.pinpointMod.string]
+type ListOfSegmentDimensions = js.Array[SegmentDimensions]
 
-type ListOfTemplateResponse = js.Array[typings.awsSdk.pinpointMod.TemplateResponse]
+type ListOfSegmentGroup = js.Array[SegmentGroup]
 
-type ListOfTemplateVersionResponse = js.Array[typings.awsSdk.pinpointMod.TemplateVersionResponse]
+type ListOfSegmentReference = js.Array[SegmentReference]
 
-type ListOfTreatmentResource = js.Array[typings.awsSdk.pinpointMod.TreatmentResource]
+type ListOfSegmentResponse = js.Array[SegmentResponse]
 
-type ListOfWriteTreatmentResource = js.Array[typings.awsSdk.pinpointMod.WriteTreatmentResource]
+type ListOfSimpleCondition = js.Array[SimpleCondition]
 
-type MapOfActivity = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.Activity]
+type ListOfString = js.Array[string]
 
-type MapOfAddressConfiguration = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.AddressConfiguration]
+type ListOfTemplateResponse = js.Array[TemplateResponse]
 
-type MapOfAttributeDimension = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.AttributeDimension]
+type ListOfTemplateVersionResponse = js.Array[TemplateVersionResponse]
 
-type MapOfChannelResponse = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.ChannelResponse]
+type ListOfTreatmentResource = js.Array[TreatmentResource]
 
-type MapOfDouble = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.double]
+type ListOfWriteTreatmentResource = js.Array[WriteTreatmentResource]
 
-type MapOfEndpointMessageResult = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.EndpointMessageResult]
+type MapOfActivity = StringDictionary[Activity]
 
-type MapOfEndpointSendConfiguration = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.EndpointSendConfiguration]
+type MapOfAddressConfiguration = StringDictionary[AddressConfiguration]
 
-type MapOfEvent = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.Event]
+type MapOfAttributeDimension = StringDictionary[AttributeDimension]
 
-type MapOfEventItemResponse = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.EventItemResponse]
+type MapOfChannelResponse = StringDictionary[ChannelResponse]
 
-type MapOfEventsBatch = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.EventsBatch]
+type MapOfDouble = StringDictionary[double]
 
-type MapOfInteger = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.integer]
+type MapOfEndpointMessageResult = StringDictionary[EndpointMessageResult]
 
-type MapOfItemResponse = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.ItemResponse]
+type MapOfEndpointSendConfiguration = StringDictionary[EndpointSendConfiguration]
 
-type MapOfListOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.ListOfString]
+type MapOfEvent = StringDictionary[Event]
 
-type MapOfMapOfEndpointMessageResult = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.MapOfEndpointMessageResult]
+type MapOfEventItemResponse = StringDictionary[EventItemResponse]
 
-type MapOfMessageResult = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.MessageResult]
+type MapOfEventsBatch = StringDictionary[EventsBatch]
 
-type MapOfMetricDimension = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.MetricDimension]
+type MapOfInteger = StringDictionary[integer]
 
-type MapOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.pinpointMod.string]
+type MapOfItemResponse = StringDictionary[ItemResponse]
+
+type MapOfListOfOpenHoursRules = StringDictionary[ListOfOpenHoursRules]
+
+type MapOfListOfString = StringDictionary[ListOfString]
+
+type MapOfMapOfEndpointMessageResult = StringDictionary[MapOfEndpointMessageResult]
+
+type MapOfMessageResult = StringDictionary[MessageResult]
+
+type MapOfMetricDimension = StringDictionary[MetricDimension]
+
+type MapOfString = StringDictionary[string]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TRANSACTIONAL
   - typings.awsSdk.awsSdkStrings.PROMOTIONAL
   - java.lang.String
 */
-type MessageType = typings.awsSdk.pinpointMod._MessageType | java.lang.String
+type MessageType = _MessageType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DELIVERY
   - typings.awsSdk.awsSdkStrings.FILTER
   - java.lang.String
 */
-type Mode = typings.awsSdk.pinpointMod._Mode | java.lang.String
+type Mode = _Mode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL
   - typings.awsSdk.awsSdkStrings.ANY
   - java.lang.String
 */
-type Operator = typings.awsSdk.pinpointMod._Operator | java.lang.String
+type Operator = _Operator | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.INACTIVE
   - java.lang.String
 */
-type RecencyType = typings.awsSdk.pinpointMod._RecencyType | java.lang.String
+type RecencyType = _RecencyType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DIMENSIONAL
   - typings.awsSdk.awsSdkStrings.IMPORT
   - java.lang.String
 */
-type SegmentType = typings.awsSdk.pinpointMod._SegmentType | java.lang.String
+type SegmentType = _SegmentType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL
@@ -264,7 +323,7 @@ type SegmentType = typings.awsSdk.pinpointMod._SegmentType | java.lang.String
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type SourceType = typings.awsSdk.pinpointMod._SourceType | java.lang.String
+type SourceType = _SourceType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DRAFT
@@ -272,18 +331,20 @@ type SourceType = typings.awsSdk.pinpointMod._SourceType | java.lang.String
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - typings.awsSdk.awsSdkStrings.CANCELLED
   - typings.awsSdk.awsSdkStrings.CLOSED
+  - typings.awsSdk.awsSdkStrings.PAUSED
   - java.lang.String
 */
-type State = typings.awsSdk.pinpointMod._State | java.lang.String
+type State = _State | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EMAIL
   - typings.awsSdk.awsSdkStrings.SMS
   - typings.awsSdk.awsSdkStrings.VOICE
   - typings.awsSdk.awsSdkStrings.PUSH
+  - typings.awsSdk.awsSdkStrings.INAPP
   - java.lang.String
 */
-type TemplateType = typings.awsSdk.pinpointMod._TemplateType | java.lang.String
+type TemplateType = _TemplateType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL
@@ -291,23 +352,23 @@ type TemplateType = typings.awsSdk.pinpointMod._TemplateType | java.lang.String
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type Type = typings.awsSdk.pinpointMod._Type | java.lang.String
+type Type = _Type | String
 
-type _Blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.pinpointMod.Blob | java.lang.String
+type _Blob = Buffer | js.typedarray.Uint8Array | Blob | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-12-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.pinpointMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type boolean = scala.Boolean
+type boolean = Boolean
 
-type double = scala.Double
+type double = Double
 
-type integer = scala.Double
+type integer = Double
 
-type string = java.lang.String
+type string = String
 
-type timestampIso8601 = typings.std.Date
+type timestampIso8601 = js.Date

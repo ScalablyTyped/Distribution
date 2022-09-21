@@ -196,7 +196,7 @@ trait IEntityResource extends StObject {
     * @returns {Promise} resourcePromise object containing the entity array.
     *
     */
-  def search(query: String, `type`: String, searchFrom: js.Any, canceler: js.Any): IPromise[IResourcePromise] = js.native
+  def search(query: String, `type`: String, searchFrom: Any, canceler: Any): IPromise[IResourcePromise] = js.native
   
   /**
     * @ngdoc method
@@ -219,5 +219,5 @@ trait IEntityResource extends StObject {
     * @returns {Promise} resourcePromise object containing the entity array.
     *
     */
-  def searchAll(query: String, canceler: js.Any): IPromise[IResourcePromise] = js.native
+  def searchAll(query: String, canceler: Any): IPromise[IResourcePromise] = js.native
 }

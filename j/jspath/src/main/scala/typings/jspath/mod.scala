@@ -10,6 +10,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def apply(path: String, data: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  inline def apply(path: String, data: js.Any, replacement: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def apply(path: String, data: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  inline def apply(path: String, data: Any, replacement: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
 }

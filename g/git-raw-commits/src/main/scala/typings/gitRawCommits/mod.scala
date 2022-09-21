@@ -67,12 +67,12 @@ object mod {
     */
   trait GitOptions
     extends StObject
-       with /* options */ StringDictionary[js.Any] {
+       with /* options */ StringDictionary[Any] {
     
     /**
       * A function to get debug information.
       */
-    var debug: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.undefined
+    var debug: js.UndefOr[js.Function1[/* message */ Any, Unit]] = js.undefined
     
     /**
       * Please check http://git-scm.com/docs/git-log for format options.
@@ -108,7 +108,7 @@ object mod {
     
     extension [Self <: GitOptions](x: Self) {
       
-      inline def setDebug(value: /* message */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* message */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       

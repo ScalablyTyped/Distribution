@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BABYLON.TranscodeResult")
 @js.native
-class TranscodeResult ()
+open class TranscodeResult ()
   extends StObject
      with typings.babylonjs.BABYLON.TranscodeResult {
   

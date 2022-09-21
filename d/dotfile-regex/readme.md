@@ -10,10 +10,10 @@ Regular expresson for matching dotfiles.
 | ------------------ | :-------------: |
 | Full name          | dotfile-regex |
 | Keywords           | detect, dotfile, expression, find, match, regex, regexp, regular |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 27981 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1849.6666666666667 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/regexhq/dotfile-regex)

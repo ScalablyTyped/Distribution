@@ -8,7 +8,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.org_admin
 import typings.arcgisJsApi.arcgisJsApiStrings.org_publisher
 import typings.arcgisJsApi.arcgisJsApiStrings.org_user
 import typings.arcgisJsApi.arcgisJsApiStrings.public
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +36,7 @@ trait PortalUser
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#created)
     */
-  var created: Date = js.native
+  var created: js.Date = js.native
   
   /**
     * The culture information for the user.
@@ -51,14 +50,14 @@ trait PortalUser
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#deleteItem)
     */
-  def deleteItem(item: PortalItem): js.Promise[js.Any] = js.native
+  def deleteItem(item: PortalItem): js.Promise[Any] = js.native
   
   /**
     * Deletes items from the user's portal content.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#deleteItems)
     */
-  def deleteItems(items: js.Array[PortalItem]): js.Promise[js.Any] = js.native
+  def deleteItems(items: js.Array[PortalItem]): js.Promise[Any] = js.native
   
   /**
     * A description of the user.
@@ -93,15 +92,15 @@ trait PortalUser
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
     */
-  def fetchItems(): js.Promise[js.Any] = js.native
-  def fetchItems(params: PortalUserFetchItemsParams): js.Promise[js.Any] = js.native
+  def fetchItems(): js.Promise[Any] = js.native
+  def fetchItems(params: PortalUserFetchItemsParams): js.Promise[Any] = js.native
   
   /**
     * Fetches the tag objects that have been created by the portal user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchTags)
     */
-  def fetchTags(): js.Promise[js.Array[js.Any]] = js.native
+  def fetchTags(): js.Promise[js.Array[Any]] = js.native
   
   /**
     * The user's full name.
@@ -123,7 +122,7 @@ trait PortalUser
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#modified)
     */
-  var modified: Date = js.native
+  var modified: js.Date = js.native
   
   /**
     * The ID of the organization the user belongs to.
@@ -180,7 +179,7 @@ trait PortalUser
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#sourceJSON)
     */
-  var sourceJSON: js.Any = js.native
+  var sourceJSON: Any = js.native
   
   /**
     * The URL to the thumbnail image for the user.

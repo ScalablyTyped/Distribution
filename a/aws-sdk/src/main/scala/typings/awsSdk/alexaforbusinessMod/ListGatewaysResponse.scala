@@ -29,7 +29,7 @@ object ListGatewaysResponse {
     
     inline def setGatewaysUndefined: Self = StObject.set(x, "Gateways", js.undefined)
     
-    inline def setGatewaysVarargs(value: GatewaySummary*): Self = StObject.set(x, "Gateways", js.Array(value :_*))
+    inline def setGatewaysVarargs(value: GatewaySummary*): Self = StObject.set(x, "Gateways", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

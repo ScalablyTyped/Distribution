@@ -25,7 +25,7 @@ object tiledrendering {
       * @since LibreOffice 5.0
       */
     def paintTile(
-      Parent: js.Any,
+      Parent: Any,
       nOutputWidth: Double,
       nOutputHeight: Double,
       nTilePosX: Double,
@@ -38,8 +38,8 @@ object tiledrendering {
     
     inline def apply(
       acquire: () => Unit,
-      paintTile: (js.Any, Double, Double, Double, Double, Double, Double) => Unit,
-      queryInterface: `type` => js.Any,
+      paintTile: (Any, Double, Double, Double, Double, Double, Double) => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XTiledRenderable = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), paintTile = js.Any.fromFunction7(paintTile), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -48,7 +48,7 @@ object tiledrendering {
     
     extension [Self <: XTiledRenderable](x: Self) {
       
-      inline def setPaintTile(value: (js.Any, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "paintTile", js.Any.fromFunction7(value))
+      inline def setPaintTile(value: (Any, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "paintTile", js.Any.fromFunction7(value))
     }
   }
 }

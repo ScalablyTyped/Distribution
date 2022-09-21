@@ -20,11 +20,11 @@ trait GroupShapes extends StObject {
   def Item(Index: String): Shape = js.native
   def Item(Index: Double): Shape = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Range(Index: String): ShapeRange = js.native
   def Range(Index: Double): ShapeRange = js.native
   def Range(Index: SafeArray[Double | String]): ShapeRange = js.native
   
-  def _Default(Index: js.Any): Shape = js.native
+  def _Default(Index: Any): Shape = js.native
 }

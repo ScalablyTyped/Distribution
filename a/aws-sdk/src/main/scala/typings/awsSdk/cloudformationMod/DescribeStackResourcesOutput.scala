@@ -24,6 +24,6 @@ object DescribeStackResourcesOutput {
     
     inline def setStackResourcesUndefined: Self = StObject.set(x, "StackResources", js.undefined)
     
-    inline def setStackResourcesVarargs(value: StackResource*): Self = StObject.set(x, "StackResources", js.Array(value :_*))
+    inline def setStackResourcesVarargs(value: StackResource*): Self = StObject.set(x, "StackResources", js.Array(value*))
   }
 }

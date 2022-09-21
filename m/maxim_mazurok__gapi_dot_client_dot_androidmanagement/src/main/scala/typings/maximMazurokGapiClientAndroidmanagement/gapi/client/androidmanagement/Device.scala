@@ -13,6 +13,12 @@ trait Device extends StObject {
   /** Reports for apps installed on the device. This information is only available when application_reports_enabled is true in the device's policy. */
   var applicationReports: js.UndefOr[js.Array[ApplicationReport]] = js.undefined
   
+  /**
+    * The password requirements currently applied to the device. The applied requirements may be slightly different from those specified in passwordPolicies in some cases. fieldPath is
+    * set based on passwordPolicies.
+    */
+  var appliedPasswordPolicies: js.UndefOr[js.Array[PasswordRequirements]] = js.undefined
+  
   /** The name of the policy currently applied to the device. */
   var appliedPolicyName: js.UndefOr[String] = js.undefined
   
@@ -67,7 +73,7 @@ trait Device extends StObject {
   /** Events related to memory and storage measurements in chronological order. This information is only available if memoryInfoEnabled is true in the device's policy. */
   var memoryEvents: js.UndefOr[js.Array[MemoryEvent]] = js.undefined
   
-  /** Memory information. This information is only available if memoryInfoEnabled is true in the device's policy. */
+  /** Memory information: contains information about device memory and storage. */
   var memoryInfo: js.UndefOr[MemoryInfo] = js.undefined
   
   /** The name of the device in the form enterprises/{enterpriseId}/devices/{deviceId}. */
@@ -117,7 +123,7 @@ trait Device extends StObject {
   var systemProperties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Device & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Device & TopLevel[Any]
   ] = js.undefined
   
   /** The user who owns the device. */
@@ -143,7 +149,13 @@ object Device {
     
     inline def setApplicationReportsUndefined: Self = StObject.set(x, "applicationReports", js.undefined)
     
-    inline def setApplicationReportsVarargs(value: ApplicationReport*): Self = StObject.set(x, "applicationReports", js.Array(value :_*))
+    inline def setApplicationReportsVarargs(value: ApplicationReport*): Self = StObject.set(x, "applicationReports", js.Array(value*))
+    
+    inline def setAppliedPasswordPolicies(value: js.Array[PasswordRequirements]): Self = StObject.set(x, "appliedPasswordPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setAppliedPasswordPoliciesUndefined: Self = StObject.set(x, "appliedPasswordPolicies", js.undefined)
+    
+    inline def setAppliedPasswordPoliciesVarargs(value: PasswordRequirements*): Self = StObject.set(x, "appliedPasswordPolicies", js.Array(value*))
     
     inline def setAppliedPolicyName(value: String): Self = StObject.set(x, "appliedPolicyName", value.asInstanceOf[js.Any])
     
@@ -173,7 +185,7 @@ object Device {
     
     inline def setDisplaysUndefined: Self = StObject.set(x, "displays", js.undefined)
     
-    inline def setDisplaysVarargs(value: Display*): Self = StObject.set(x, "displays", js.Array(value :_*))
+    inline def setDisplaysVarargs(value: Display*): Self = StObject.set(x, "displays", js.Array(value*))
     
     inline def setEnrollmentTime(value: String): Self = StObject.set(x, "enrollmentTime", value.asInstanceOf[js.Any])
     
@@ -195,7 +207,7 @@ object Device {
     
     inline def setHardwareStatusSamplesUndefined: Self = StObject.set(x, "hardwareStatusSamples", js.undefined)
     
-    inline def setHardwareStatusSamplesVarargs(value: HardwareStatus*): Self = StObject.set(x, "hardwareStatusSamples", js.Array(value :_*))
+    inline def setHardwareStatusSamplesVarargs(value: HardwareStatus*): Self = StObject.set(x, "hardwareStatusSamples", js.Array(value*))
     
     inline def setLastPolicyComplianceReportTime(value: String): Self = StObject.set(x, "lastPolicyComplianceReportTime", value.asInstanceOf[js.Any])
     
@@ -217,7 +229,7 @@ object Device {
     
     inline def setMemoryEventsUndefined: Self = StObject.set(x, "memoryEvents", js.undefined)
     
-    inline def setMemoryEventsVarargs(value: MemoryEvent*): Self = StObject.set(x, "memoryEvents", js.Array(value :_*))
+    inline def setMemoryEventsVarargs(value: MemoryEvent*): Self = StObject.set(x, "memoryEvents", js.Array(value*))
     
     inline def setMemoryInfo(value: MemoryInfo): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
     
@@ -235,7 +247,7 @@ object Device {
     
     inline def setNonComplianceDetailsUndefined: Self = StObject.set(x, "nonComplianceDetails", js.undefined)
     
-    inline def setNonComplianceDetailsVarargs(value: NonComplianceDetail*): Self = StObject.set(x, "nonComplianceDetails", js.Array(value :_*))
+    inline def setNonComplianceDetailsVarargs(value: NonComplianceDetail*): Self = StObject.set(x, "nonComplianceDetails", js.Array(value*))
     
     inline def setOwnership(value: String): Self = StObject.set(x, "ownership", value.asInstanceOf[js.Any])
     
@@ -253,13 +265,13 @@ object Device {
     
     inline def setPowerManagementEventsUndefined: Self = StObject.set(x, "powerManagementEvents", js.undefined)
     
-    inline def setPowerManagementEventsVarargs(value: PowerManagementEvent*): Self = StObject.set(x, "powerManagementEvents", js.Array(value :_*))
+    inline def setPowerManagementEventsVarargs(value: PowerManagementEvent*): Self = StObject.set(x, "powerManagementEvents", js.Array(value*))
     
     inline def setPreviousDeviceNames(value: js.Array[String]): Self = StObject.set(x, "previousDeviceNames", value.asInstanceOf[js.Any])
     
     inline def setPreviousDeviceNamesUndefined: Self = StObject.set(x, "previousDeviceNames", js.undefined)
     
-    inline def setPreviousDeviceNamesVarargs(value: String*): Self = StObject.set(x, "previousDeviceNames", js.Array(value :_*))
+    inline def setPreviousDeviceNamesVarargs(value: String*): Self = StObject.set(x, "previousDeviceNames", js.Array(value*))
     
     inline def setSecurityPosture(value: SecurityPosture): Self = StObject.set(x, "securityPosture", value.asInstanceOf[js.Any])
     
@@ -276,7 +288,7 @@ object Device {
     inline def setSystemProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Device & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Device & TopLevel[Any]
     ): Self = StObject.set(x, "systemProperties", value.asInstanceOf[js.Any])
     
     inline def setSystemPropertiesUndefined: Self = StObject.set(x, "systemProperties", js.undefined)

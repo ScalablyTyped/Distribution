@@ -10,10 +10,10 @@ HTTP (XHR) adapter for js-data in the browser.
 | ------------------ | :-------------: |
 | Full name          | js-data-http |
 | Keywords           | ajax, axios, rest, adapter, http, fetch, browser, xhr |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 156361 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10126.666666666666 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/js-data/js-data-http)

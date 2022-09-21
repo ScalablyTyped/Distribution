@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ClearCoatBlock")
 @js.native
-class ClearCoatBlock protected ()
+open class ClearCoatBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ClearCoatBlock {
   /**

@@ -1,5 +1,6 @@
 package typings.yeomanEnvironment
 
+import typings.yeomanEnvironment.conflicterMod.Status
 import typings.yeomanEnvironment.logMod.DefaultCategories
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,18 +26,21 @@ object yeomanEnvironmentStrings {
   sealed trait create
     extends StObject
        with DefaultCategories
+       with Status
   inline def create: create = "create".asInstanceOf[create]
   
   @js.native
   sealed trait force
     extends StObject
        with DefaultCategories
+       with Status
   inline def force: force = "force".asInstanceOf[force]
   
   @js.native
   sealed trait identical
     extends StObject
        with DefaultCategories
+       with Status
   inline def identical: identical = "identical".asInstanceOf[identical]
   
   @js.native
@@ -55,5 +59,6 @@ object yeomanEnvironmentStrings {
   sealed trait skip
     extends StObject
        with DefaultCategories
+       with Status
   inline def skip: skip = "skip".asInstanceOf[skip]
 }

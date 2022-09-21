@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Definitions
   extends StObject
-     with Instantiable1[/* dfns (repeated) */ js.Any, js.Any] {
+     with Instantiable1[/* dfns (repeated) */ Any, Any] {
   
-  var _dfns: js.Array[js.Any] = js.native
+  var _dfns: js.Array[Any] = js.native
   
   def toAQL(): String = js.native
 }

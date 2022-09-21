@@ -6,16 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UuidData extends StObject {
   
+  var hardware: String
+  
+  var macs: js.Array[String]
+  
   var os: String
 }
 object UuidData {
   
-  inline def apply(os: String): UuidData = {
-    val __obj = js.Dynamic.literal(os = os.asInstanceOf[js.Any])
+  inline def apply(hardware: String, macs: js.Array[String], os: String): UuidData = {
+    val __obj = js.Dynamic.literal(hardware = hardware.asInstanceOf[js.Any], macs = macs.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any])
     __obj.asInstanceOf[UuidData]
   }
   
   extension [Self <: UuidData](x: Self) {
+    
+    inline def setHardware(value: String): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
+    
+    inline def setMacs(value: js.Array[String]): Self = StObject.set(x, "macs", value.asInstanceOf[js.Any])
+    
+    inline def setMacsVarargs(value: String*): Self = StObject.set(x, "macs", js.Array(value*))
     
     inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
   }

@@ -6,15 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of linked data types.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Excel.LinkedDataTypeCollection")
 @js.native
-class LinkedDataTypeCollection ()
+open class LinkedDataTypeCollection ()
   extends StObject
      with typings.officeJsPreview.Excel.LinkedDataTypeCollection {
   

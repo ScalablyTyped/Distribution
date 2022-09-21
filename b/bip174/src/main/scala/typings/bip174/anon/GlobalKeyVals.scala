@@ -28,14 +28,14 @@ object GlobalKeyVals {
     
     inline def setGlobalKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "globalKeyVals", value.asInstanceOf[js.Any])
     
-    inline def setGlobalKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "globalKeyVals", js.Array(value :_*))
+    inline def setGlobalKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "globalKeyVals", js.Array(value*))
     
     inline def setInputKeyVals(value: js.Array[js.Array[KeyValue]]): Self = StObject.set(x, "inputKeyVals", value.asInstanceOf[js.Any])
     
-    inline def setInputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "inputKeyVals", js.Array(value :_*))
+    inline def setInputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "inputKeyVals", js.Array(value*))
     
     inline def setOutputKeyVals(value: js.Array[js.Array[KeyValue]]): Self = StObject.set(x, "outputKeyVals", value.asInstanceOf[js.Any])
     
-    inline def setOutputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "outputKeyVals", js.Array(value :_*))
+    inline def setOutputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "outputKeyVals", js.Array(value*))
   }
 }

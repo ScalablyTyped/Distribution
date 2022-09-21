@@ -17,5 +17,5 @@ trait InstantiableIColorMatrix
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IColorMatrix = js.native
+  def fromObject(`object`: Any): IColorMatrix = js.native
 }

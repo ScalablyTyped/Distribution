@@ -10,7 +10,7 @@ object controlControlMod {
   
   @JSImport("ol/control/Control", JSImport.Default)
   @js.native
-  class default protected () extends Control {
+  open class default protected () extends Control {
     def this(options: Options) = this()
   }
   

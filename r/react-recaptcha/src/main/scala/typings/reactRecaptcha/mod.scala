@@ -21,7 +21,7 @@ object mod {
   
   @JSImport("react-recaptcha", JSImport.Namespace)
   @js.native
-  class ^ () extends Recaptcha
+  open class ^ () extends Recaptcha
   @JSImport("react-recaptcha", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -35,12 +35,12 @@ object mod {
   /* static member */
   @JSImport("react-recaptcha", "propTypes")
   @js.native
-  def propTypes: js.Any = js.native
-  inline def propTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  def propTypes: Any = js.native
+  inline def propTypes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Recaptcha
-    extends Component[RecaptchaProps, js.Object, js.Any] {
+    extends Component[RecaptchaProps, js.Object, Any] {
     
     def execute(): Unit = js.native
     
@@ -55,13 +55,13 @@ object mod {
     
     var elementID: js.UndefOr[String] = js.undefined
     
-    var expiredCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var expiredCallback: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var expiredCallbackName: js.UndefOr[String] = js.undefined
     
     var hl: js.UndefOr[String] = js.undefined
     
-    var onloadCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onloadCallback: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var onloadCallbackName: js.UndefOr[String] = js.undefined
     
@@ -77,7 +77,7 @@ object mod {
     
     var `type`: js.UndefOr[audio | image] = js.undefined
     
-    var verifyCallback: js.UndefOr[js.Function1[/* response */ String, js.Any]] = js.undefined
+    var verifyCallback: js.UndefOr[js.Function1[/* response */ String, Any]] = js.undefined
     
     var verifyCallbackName: js.UndefOr[String] = js.undefined
   }
@@ -102,7 +102,7 @@ object mod {
       
       inline def setElementIDUndefined: Self = StObject.set(x, "elementID", js.undefined)
       
-      inline def setExpiredCallback(value: () => js.Any): Self = StObject.set(x, "expiredCallback", js.Any.fromFunction0(value))
+      inline def setExpiredCallback(value: () => Any): Self = StObject.set(x, "expiredCallback", js.Any.fromFunction0(value))
       
       inline def setExpiredCallbackName(value: String): Self = StObject.set(x, "expiredCallbackName", value.asInstanceOf[js.Any])
       
@@ -114,7 +114,7 @@ object mod {
       
       inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
       
-      inline def setOnloadCallback(value: () => js.Any): Self = StObject.set(x, "onloadCallback", js.Any.fromFunction0(value))
+      inline def setOnloadCallback(value: () => Any): Self = StObject.set(x, "onloadCallback", js.Any.fromFunction0(value))
       
       inline def setOnloadCallbackName(value: String): Self = StObject.set(x, "onloadCallbackName", value.asInstanceOf[js.Any])
       
@@ -146,7 +146,7 @@ object mod {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setVerifyCallback(value: /* response */ String => js.Any): Self = StObject.set(x, "verifyCallback", js.Any.fromFunction1(value))
+      inline def setVerifyCallback(value: /* response */ String => Any): Self = StObject.set(x, "verifyCallback", js.Any.fromFunction1(value))
       
       inline def setVerifyCallbackName(value: String): Self = StObject.set(x, "verifyCallbackName", value.asInstanceOf[js.Any])
       

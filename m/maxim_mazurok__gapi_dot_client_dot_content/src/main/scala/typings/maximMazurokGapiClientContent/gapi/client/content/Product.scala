@@ -9,6 +9,9 @@ trait Product extends StObject {
   /** Additional URLs of images of the item. */
   var additionalImageLinks: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** Additional cut of the item. Used together with size_type to represent combined size types for apparel items. */
+  var additionalSizeType: js.UndefOr[String] = js.undefined
+  
   /** Used to group items in an arbitrary way. Only for CPA%, discouraged otherwise. */
   var adsGrouping: js.UndefOr[String] = js.undefined
   
@@ -52,7 +55,7 @@ trait Product extends StObject {
   var costOfGoodsSold: js.UndefOr[Price] = js.undefined
   
   /**
-    * A list of custom (merchant-provided) attributes. It can also be used for submitting any attribute of the feed specification in its generic form (e.g., `{ "name": "size type",
+    * A list of custom (merchant-provided) attributes. It can also be used for submitting any attribute of the feed specification in its generic form (for example, `{ "name": "size type",
     * "value": "regular" }`). This is useful for submitting attributes not explicitly exposed by the API, such as additional attributes used for Buy on Google (formerly known as Shopping
     * Actions).
     */
@@ -94,7 +97,7 @@ trait Product extends StObject {
   /** The energy efficiency class as defined in EU directive 2010/30/EU. */
   var energyEfficiencyClass: js.UndefOr[String] = js.undefined
   
-  /** The list of destinations to exclude for this target (corresponds to unchecked check boxes in Merchant Center). */
+  /** The list of destinations to exclude for this target (corresponds to cleared check boxes in Merchant Center). */
   var excludedDestinations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
@@ -103,10 +106,19 @@ trait Product extends StObject {
     */
   var expirationDate: js.UndefOr[String] = js.undefined
   
+  /** Required for multi-seller accounts. Use this attribute if you're a marketplace uploading products for various sellers to your multi-seller account. */
+  var externalSellerId: js.UndefOr[String] = js.undefined
+  
+  /** Feed label for the item. Either `targetCountry` or `feedLabel` is required. */
+  var feedLabel: js.UndefOr[String] = js.undefined
+  
   /** Target gender of the item. */
   var gender: js.UndefOr[String] = js.undefined
   
-  /** Google's category of the item (see Google product taxonomy). */
+  /**
+    * Google's category of the item (see [Google product taxonomy](https://support.google.com/merchants/answer/1705911)). When querying products, this field will contain the user provided
+    * value. There is currently no way to get back the auto assigned google product categories through the API.
+    */
   var googleProductCategory: js.UndefOr[String] = js.undefined
   
   /** Global Trade Item Number (GTIN) of the item. */
@@ -148,6 +160,9 @@ trait Product extends StObject {
   /** URL directly linking to your item's page on your website. */
   var link: js.UndefOr[String] = js.undefined
   
+  /** URL template for merchant hosted local storefront. */
+  var linkTemplate: js.UndefOr[String] = js.undefined
+  
   /** Loyalty points that users receive after purchasing the item. Japan only. */
   var loyaltyPoints: js.UndefOr[LoyaltyPoints] = js.undefined
   
@@ -169,6 +184,9 @@ trait Product extends StObject {
   /** URL for the mobile-optimized version of your item's landing page. */
   var mobileLink: js.UndefOr[String] = js.undefined
   
+  /** URL template for merchant hosted local storefront optimized for mobile devices. */
+  var mobileLinkTemplate: js.UndefOr[String] = js.undefined
+  
   /** Manufacturer Part Number (MPN) of the item. */
   var mpn: js.UndefOr[String] = js.undefined
   
@@ -182,8 +200,17 @@ trait Product extends StObject {
     */
   var offerId: js.UndefOr[String] = js.undefined
   
-  /** The item's pattern (e.g. polka dots). */
+  /** The item's pattern (for example, polka dots). */
   var pattern: js.UndefOr[String] = js.undefined
+  
+  /** Publication of this item should be temporarily paused. Acceptable values are: - "`ads`" */
+  var pause: js.UndefOr[String] = js.undefined
+  
+  /** The pick up option for the item. Acceptable values are: - "`buy`" - "`reserve`" - "`ship to store`" - "`not supported`" */
+  var pickupMethod: js.UndefOr[String] = js.undefined
+  
+  /** Item store pickup timeline. Acceptable values are: - "`same day`" - "`next day`" - "`2-day`" - "`3-day`" - "`4-day`" - "`5-day`" - "`6-day`" - "`7-day`" - "`multi-week`" */
+  var pickupSla: js.UndefOr[String] = js.undefined
   
   /** Price of the item. */
   var price: js.UndefOr[Price] = js.undefined
@@ -191,11 +218,23 @@ trait Product extends StObject {
   /** Technical specification or additional product details. */
   var productDetails: js.UndefOr[js.Array[ProductProductDetail]] = js.undefined
   
+  /** The height of the product in the units provided. The value must be between 0 (exclusive) and 3000 (inclusive). */
+  var productHeight: js.UndefOr[ProductDimension] = js.undefined
+  
   /** Bullet points describing the most relevant highlights of a product. */
   var productHighlights: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** The length of the product in the units provided. The value must be between 0 (exclusive) and 3000 (inclusive). */
+  var productLength: js.UndefOr[ProductDimension] = js.undefined
+  
   /** Categories of the item (formatted as in products data specification). */
   var productTypes: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** The weight of the product in the units provided. The value must be between 0 (exclusive) and 2000 (inclusive). */
+  var productWeight: js.UndefOr[ProductWeight] = js.undefined
+  
+  /** The width of the product in the units provided. The value must be between 0 (exclusive) and 3000 (inclusive). */
+  var productWidth: js.UndefOr[ProductDimension] = js.undefined
   
   /** The unique ID of a promotion. */
   var promotionIds: js.UndefOr[js.Array[String]] = js.undefined
@@ -239,7 +278,7 @@ trait Product extends StObject {
   /** Size of the item. Only one value is allowed. For variants with different sizes, insert a separate product for each size with the same `itemGroupId` value (see size definition). */
   var sizes: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** The source of the offer, i.e., how the offer was created. Acceptable values are: - "`api`" - "`crawl`" - "`feed`" */
+  /** The source of the offer, that is, how the offer was created. Acceptable values are: - "`api`" - "`crawl`" - "`feed`" */
   var source: js.UndefOr[String] = js.undefined
   
   /** Number of periods (months or years) and amount of payment per period for an item with an associated subscription contract. */
@@ -279,7 +318,11 @@ object Product {
     
     inline def setAdditionalImageLinksUndefined: Self = StObject.set(x, "additionalImageLinks", js.undefined)
     
-    inline def setAdditionalImageLinksVarargs(value: String*): Self = StObject.set(x, "additionalImageLinks", js.Array(value :_*))
+    inline def setAdditionalImageLinksVarargs(value: String*): Self = StObject.set(x, "additionalImageLinks", js.Array(value*))
+    
+    inline def setAdditionalSizeType(value: String): Self = StObject.set(x, "additionalSizeType", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalSizeTypeUndefined: Self = StObject.set(x, "additionalSizeType", js.undefined)
     
     inline def setAdsGrouping(value: String): Self = StObject.set(x, "adsGrouping", value.asInstanceOf[js.Any])
     
@@ -289,7 +332,7 @@ object Product {
     
     inline def setAdsLabelsUndefined: Self = StObject.set(x, "adsLabels", js.undefined)
     
-    inline def setAdsLabelsVarargs(value: String*): Self = StObject.set(x, "adsLabels", js.Array(value :_*))
+    inline def setAdsLabelsVarargs(value: String*): Self = StObject.set(x, "adsLabels", js.Array(value*))
     
     inline def setAdsRedirect(value: String): Self = StObject.set(x, "adsRedirect", value.asInstanceOf[js.Any])
     
@@ -343,7 +386,7 @@ object Product {
     
     inline def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
     
-    inline def setCustomAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "customAttributes", js.Array(value :_*))
+    inline def setCustomAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "customAttributes", js.Array(value*))
     
     inline def setCustomLabel0(value: String): Self = StObject.set(x, "customLabel0", value.asInstanceOf[js.Any])
     
@@ -381,7 +424,7 @@ object Product {
     
     inline def setDisplayAdsSimilarIdsUndefined: Self = StObject.set(x, "displayAdsSimilarIds", js.undefined)
     
-    inline def setDisplayAdsSimilarIdsVarargs(value: String*): Self = StObject.set(x, "displayAdsSimilarIds", js.Array(value :_*))
+    inline def setDisplayAdsSimilarIdsVarargs(value: String*): Self = StObject.set(x, "displayAdsSimilarIds", js.Array(value*))
     
     inline def setDisplayAdsTitle(value: String): Self = StObject.set(x, "displayAdsTitle", value.asInstanceOf[js.Any])
     
@@ -399,11 +442,19 @@ object Product {
     
     inline def setExcludedDestinationsUndefined: Self = StObject.set(x, "excludedDestinations", js.undefined)
     
-    inline def setExcludedDestinationsVarargs(value: String*): Self = StObject.set(x, "excludedDestinations", js.Array(value :_*))
+    inline def setExcludedDestinationsVarargs(value: String*): Self = StObject.set(x, "excludedDestinations", js.Array(value*))
     
     inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+    
+    inline def setExternalSellerId(value: String): Self = StObject.set(x, "externalSellerId", value.asInstanceOf[js.Any])
+    
+    inline def setExternalSellerIdUndefined: Self = StObject.set(x, "externalSellerId", js.undefined)
+    
+    inline def setFeedLabel(value: String): Self = StObject.set(x, "feedLabel", value.asInstanceOf[js.Any])
+    
+    inline def setFeedLabelUndefined: Self = StObject.set(x, "feedLabel", js.undefined)
     
     inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
@@ -433,7 +484,7 @@ object Product {
     
     inline def setIncludedDestinationsUndefined: Self = StObject.set(x, "includedDestinations", js.undefined)
     
-    inline def setIncludedDestinationsVarargs(value: String*): Self = StObject.set(x, "includedDestinations", js.Array(value :_*))
+    inline def setIncludedDestinationsVarargs(value: String*): Self = StObject.set(x, "includedDestinations", js.Array(value*))
     
     inline def setInstallment(value: Installment): Self = StObject.set(x, "installment", value.asInstanceOf[js.Any])
     
@@ -452,6 +503,10 @@ object Product {
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    
+    inline def setLinkTemplate(value: String): Self = StObject.set(x, "linkTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setLinkTemplateUndefined: Self = StObject.set(x, "linkTemplate", js.undefined)
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
@@ -481,6 +536,10 @@ object Product {
     
     inline def setMobileLink(value: String): Self = StObject.set(x, "mobileLink", value.asInstanceOf[js.Any])
     
+    inline def setMobileLinkTemplate(value: String): Self = StObject.set(x, "mobileLinkTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setMobileLinkTemplateUndefined: Self = StObject.set(x, "mobileLinkTemplate", js.undefined)
+    
     inline def setMobileLinkUndefined: Self = StObject.set(x, "mobileLink", js.undefined)
     
     inline def setMpn(value: String): Self = StObject.set(x, "mpn", value.asInstanceOf[js.Any])
@@ -499,6 +558,18 @@ object Product {
     
     inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
+    inline def setPause(value: String): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    
+    inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+    
+    inline def setPickupMethod(value: String): Self = StObject.set(x, "pickupMethod", value.asInstanceOf[js.Any])
+    
+    inline def setPickupMethodUndefined: Self = StObject.set(x, "pickupMethod", js.undefined)
+    
+    inline def setPickupSla(value: String): Self = StObject.set(x, "pickupSla", value.asInstanceOf[js.Any])
+    
+    inline def setPickupSlaUndefined: Self = StObject.set(x, "pickupSla", js.undefined)
+    
     inline def setPrice(value: Price): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
@@ -507,25 +578,41 @@ object Product {
     
     inline def setProductDetailsUndefined: Self = StObject.set(x, "productDetails", js.undefined)
     
-    inline def setProductDetailsVarargs(value: ProductProductDetail*): Self = StObject.set(x, "productDetails", js.Array(value :_*))
+    inline def setProductDetailsVarargs(value: ProductProductDetail*): Self = StObject.set(x, "productDetails", js.Array(value*))
+    
+    inline def setProductHeight(value: ProductDimension): Self = StObject.set(x, "productHeight", value.asInstanceOf[js.Any])
+    
+    inline def setProductHeightUndefined: Self = StObject.set(x, "productHeight", js.undefined)
     
     inline def setProductHighlights(value: js.Array[String]): Self = StObject.set(x, "productHighlights", value.asInstanceOf[js.Any])
     
     inline def setProductHighlightsUndefined: Self = StObject.set(x, "productHighlights", js.undefined)
     
-    inline def setProductHighlightsVarargs(value: String*): Self = StObject.set(x, "productHighlights", js.Array(value :_*))
+    inline def setProductHighlightsVarargs(value: String*): Self = StObject.set(x, "productHighlights", js.Array(value*))
+    
+    inline def setProductLength(value: ProductDimension): Self = StObject.set(x, "productLength", value.asInstanceOf[js.Any])
+    
+    inline def setProductLengthUndefined: Self = StObject.set(x, "productLength", js.undefined)
     
     inline def setProductTypes(value: js.Array[String]): Self = StObject.set(x, "productTypes", value.asInstanceOf[js.Any])
     
     inline def setProductTypesUndefined: Self = StObject.set(x, "productTypes", js.undefined)
     
-    inline def setProductTypesVarargs(value: String*): Self = StObject.set(x, "productTypes", js.Array(value :_*))
+    inline def setProductTypesVarargs(value: String*): Self = StObject.set(x, "productTypes", js.Array(value*))
+    
+    inline def setProductWeight(value: ProductWeight): Self = StObject.set(x, "productWeight", value.asInstanceOf[js.Any])
+    
+    inline def setProductWeightUndefined: Self = StObject.set(x, "productWeight", js.undefined)
+    
+    inline def setProductWidth(value: ProductDimension): Self = StObject.set(x, "productWidth", value.asInstanceOf[js.Any])
+    
+    inline def setProductWidthUndefined: Self = StObject.set(x, "productWidth", js.undefined)
     
     inline def setPromotionIds(value: js.Array[String]): Self = StObject.set(x, "promotionIds", value.asInstanceOf[js.Any])
     
     inline def setPromotionIdsUndefined: Self = StObject.set(x, "promotionIds", js.undefined)
     
-    inline def setPromotionIdsVarargs(value: String*): Self = StObject.set(x, "promotionIds", js.Array(value :_*))
+    inline def setPromotionIdsVarargs(value: String*): Self = StObject.set(x, "promotionIds", js.Array(value*))
     
     inline def setSalePrice(value: Price): Self = StObject.set(x, "salePrice", value.asInstanceOf[js.Any])
     
@@ -555,7 +642,7 @@ object Product {
     
     inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
     
-    inline def setShippingVarargs(value: ProductShipping*): Self = StObject.set(x, "shipping", js.Array(value :_*))
+    inline def setShippingVarargs(value: ProductShipping*): Self = StObject.set(x, "shipping", js.Array(value*))
     
     inline def setShippingWeight(value: ProductShippingWeight): Self = StObject.set(x, "shippingWeight", value.asInstanceOf[js.Any])
     
@@ -569,7 +656,7 @@ object Product {
     
     inline def setShoppingAdsExcludedCountriesUndefined: Self = StObject.set(x, "shoppingAdsExcludedCountries", js.undefined)
     
-    inline def setShoppingAdsExcludedCountriesVarargs(value: String*): Self = StObject.set(x, "shoppingAdsExcludedCountries", js.Array(value :_*))
+    inline def setShoppingAdsExcludedCountriesVarargs(value: String*): Self = StObject.set(x, "shoppingAdsExcludedCountries", js.Array(value*))
     
     inline def setSizeSystem(value: String): Self = StObject.set(x, "sizeSystem", value.asInstanceOf[js.Any])
     
@@ -583,7 +670,7 @@ object Product {
     
     inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
-    inline def setSizesVarargs(value: String*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+    inline def setSizesVarargs(value: String*): Self = StObject.set(x, "sizes", js.Array(value*))
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
@@ -605,7 +692,7 @@ object Product {
     
     inline def setTaxesUndefined: Self = StObject.set(x, "taxes", js.undefined)
     
-    inline def setTaxesVarargs(value: ProductTax*): Self = StObject.set(x, "taxes", js.Array(value :_*))
+    inline def setTaxesVarargs(value: ProductTax*): Self = StObject.set(x, "taxes", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

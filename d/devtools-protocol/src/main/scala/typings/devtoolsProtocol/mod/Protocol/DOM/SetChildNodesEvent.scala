@@ -27,7 +27,7 @@ object SetChildNodesEvent {
     
     inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setParentId(value: NodeId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
   }

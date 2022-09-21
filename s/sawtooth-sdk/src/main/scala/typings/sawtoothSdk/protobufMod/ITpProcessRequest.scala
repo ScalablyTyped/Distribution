@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait ITpProcessRequest extends StObject {
   var header: js.UndefOr[ITransactionHeader | Null] = js.undefined
   
   /** TpProcessRequest payload */
-  var payload: js.UndefOr[Uint8Array | Null] = js.undefined
+  var payload: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   
   /** TpProcessRequest signature */
   var signature: js.UndefOr[String | Null] = js.undefined
@@ -40,7 +39,7 @@ object ITpProcessRequest {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.typedarray.Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadNull: Self = StObject.set(x, "payload", null)
     

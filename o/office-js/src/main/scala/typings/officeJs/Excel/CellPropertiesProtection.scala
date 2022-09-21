@@ -5,25 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the `format.protection` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties`, or the `format.protection` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
   *
-  * Represents the `format.protection` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties` or the `format.protection` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait CellPropertiesProtection extends StObject {
   
   /**
-    *
     * Represents the `format.protection.formulaHidden` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var formulaHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the `format.protection.locked` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var locked: js.UndefOr[Boolean] = js.undefined

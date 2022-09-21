@@ -11,7 +11,7 @@ object pictureInPictureViewMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/picture-in-picture/picture-in-picture.view", JSImport.Default)
   @js.native
-  class default protected () extends PictureInPictureView {
+  open class default protected () extends PictureInPictureView {
     def this(config: IPictureInPictureViewConfig) = this()
   }
   
@@ -20,22 +20,22 @@ object pictureInPictureViewMod {
     extends typings.playable.viewMod.default[IPictureInPictureViewStyles] {
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
     /* private */ @JSName("_$togglePictureInPictureControl")
-    var _$togglePictureInPictureControl: js.Any = js.native
+    var _$togglePictureInPictureControl: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _onButtonClick: js.Any = js.native
+    /* private */ var _onButtonClick: Any = js.native
     
-    /* private */ var _textMap: js.Any = js.native
+    /* private */ var _textMap: Any = js.native
     
-    /* private */ var _tooltipReference: js.Any = js.native
+    /* private */ var _tooltipReference: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def destroy(): Unit = js.native
     

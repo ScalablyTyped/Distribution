@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "DatePickerBase")
 @js.native
-class DatePickerBase protected ()
+open class DatePickerBase protected ()
   extends typings.officeUiFabricReact.mod.DatePickerBase {
   def this(props: IDatePickerProps) = this()
 }

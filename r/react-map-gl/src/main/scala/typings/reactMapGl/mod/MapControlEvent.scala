@@ -22,15 +22,15 @@ trait MapControlEvent extends StObject {
   
   var rightButton: js.UndefOr[Boolean] = js.undefined
   
-  var srcEvent: js.Any
+  var srcEvent: Any
   
-  var target: js.Any
+  var target: Any
   
   var `type`: String
 }
 object MapControlEvent {
   
-  inline def apply(center: Center, offsetCenter: Center, srcEvent: js.Any, target: js.Any, `type`: String): MapControlEvent = {
+  inline def apply(center: Center, offsetCenter: Center, srcEvent: Any, target: Any, `type`: String): MapControlEvent = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], offsetCenter = offsetCenter.asInstanceOf[js.Any], srcEvent = srcEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapControlEvent]
@@ -66,9 +66,9 @@ object MapControlEvent {
     
     inline def setRightButtonUndefined: Self = StObject.set(x, "rightButton", js.undefined)
     
-    inline def setSrcEvent(value: js.Any): Self = StObject.set(x, "srcEvent", value.asInstanceOf[js.Any])
+    inline def setSrcEvent(value: Any): Self = StObject.set(x, "srcEvent", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

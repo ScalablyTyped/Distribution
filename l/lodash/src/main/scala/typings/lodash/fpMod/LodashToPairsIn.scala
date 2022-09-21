@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashToPairsIn extends StObject {
   
-  def apply(`object`: js.Object): js.Array[js.Tuple2[String, js.Any]] = js.native
+  def apply(`object`: js.Object): js.Array[js.Tuple2[String, Any]] = js.native
   def apply[T](`object`: Dictionary[T]): js.Array[js.Tuple2[String, T]] = js.native
   def apply[T](`object`: NumericDictionary[T]): js.Array[js.Tuple2[String, T]] = js.native
 }

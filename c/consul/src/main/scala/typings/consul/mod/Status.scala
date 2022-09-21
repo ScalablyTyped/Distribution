@@ -14,12 +14,12 @@ trait Status extends StObject {
   /**
     * Returns the current Raft leader.
     */
-  def leader[TData](): Thenable[TData] = js.native
+  def leader[TData](): js.Promise[TData] = js.native
   /**
     * Returns the current Raft leader.
     */
   def leader[TData](callback: Callback[TData]): Unit = js.native
-  def leader[TData](opts: LeaderOptions): Thenable[TData] = js.native
+  def leader[TData](opts: LeaderOptions): js.Promise[TData] = js.native
   /**
     * Returns the current Raft leader.
     */
@@ -28,12 +28,12 @@ trait Status extends StObject {
   /**
     * Returns the current Raft peer set
     */
-  def peers[TData](): Thenable[TData] = js.native
+  def peers[TData](): js.Promise[TData] = js.native
   /**
     * Returns the current Raft peer set
     */
   def peers[TData](callback: Callback[TData]): Unit = js.native
-  def peers[TData](opts: PeersOptions): Thenable[TData] = js.native
+  def peers[TData](opts: PeersOptions): js.Promise[TData] = js.native
   /**
     * Returns the current Raft peer set
     */

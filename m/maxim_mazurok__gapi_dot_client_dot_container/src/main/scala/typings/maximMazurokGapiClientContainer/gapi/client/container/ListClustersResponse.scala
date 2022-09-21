@@ -25,12 +25,12 @@ object ListClustersResponse {
     
     inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value*))
     
     inline def setMissingZones(value: js.Array[String]): Self = StObject.set(x, "missingZones", value.asInstanceOf[js.Any])
     
     inline def setMissingZonesUndefined: Self = StObject.set(x, "missingZones", js.undefined)
     
-    inline def setMissingZonesVarargs(value: String*): Self = StObject.set(x, "missingZones", js.Array(value :_*))
+    inline def setMissingZonesVarargs(value: String*): Self = StObject.set(x, "missingZones", js.Array(value*))
   }
 }

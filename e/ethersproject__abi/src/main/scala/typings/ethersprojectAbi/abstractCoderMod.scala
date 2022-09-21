@@ -6,7 +6,6 @@ import typings.ethersprojectBignumber.bignumberMod.BigNumberish
 import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.BytesLike
 import typings.std.ReadonlyArray
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,13 +21,15 @@ object abstractCoderMod {
   abstract class Coder protected () extends StObject {
     def this(name: String, `type`: String, localName: String, dynamic: Boolean) = this()
     
-    def _throwError(message: String, value: js.Any): Unit = js.native
+    def _throwError(message: String, value: Any): Unit = js.native
     
-    def decode(reader: Reader): js.Any = js.native
+    def decode(reader: Reader): Any = js.native
+    
+    def defaultValue(): Any = js.native
     
     val dynamic: Boolean = js.native
     
-    def encode(writer: Writer, value: js.Any): Double = js.native
+    def encode(writer: Writer, value: Any): Double = js.native
     
     val localName: String = js.native
     
@@ -39,27 +40,35 @@ object abstractCoderMod {
   
   @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Reader")
   @js.native
-  class Reader protected () extends StObject {
+  open class Reader protected () extends StObject {
     def this(data: BytesLike) = this()
     def this(data: BytesLike, wordSize: Double) = this()
     def this(data: BytesLike, wordSize: Double, coerceFunc: CoerceFunc) = this()
     def this(data: BytesLike, wordSize: Unit, coerceFunc: CoerceFunc) = this()
+    def this(data: BytesLike, wordSize: Double, coerceFunc: Unit, allowLoose: Boolean) = this()
+    def this(data: BytesLike, wordSize: Double, coerceFunc: CoerceFunc, allowLoose: Boolean) = this()
+    def this(data: BytesLike, wordSize: Unit, coerceFunc: Unit, allowLoose: Boolean) = this()
+    def this(data: BytesLike, wordSize: Unit, coerceFunc: CoerceFunc, allowLoose: Boolean) = this()
     
-    def _coerceFunc(`type`: String, value: js.Any): js.Any = js.native
+    def _coerceFunc(`type`: String, value: Any): Any = js.native
     
-    val _data: Uint8Array = js.native
+    val _data: js.typedarray.Uint8Array = js.native
     
     var _offset: Double = js.native
     
-    def _peekBytes(offset: Double, length: Double): Uint8Array = js.native
+    def _peekBytes(offset: Double, length: Double): js.typedarray.Uint8Array = js.native
+    def _peekBytes(offset: Double, length: Double, loose: Boolean): js.typedarray.Uint8Array = js.native
     
-    def coerce(name: String, value: js.Any): js.Any = js.native
+    val allowLoose: Boolean = js.native
+    
+    def coerce(name: String, value: Any): Any = js.native
     
     def consumed: Double = js.native
     
     def data: String = js.native
     
-    def readBytes(length: Double): Uint8Array = js.native
+    def readBytes(length: Double): js.typedarray.Uint8Array = js.native
+    def readBytes(length: Double, loose: Boolean): js.typedarray.Uint8Array = js.native
     
     def readValue(): BigNumber = js.native
     
@@ -74,21 +83,25 @@ object abstractCoderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def coerce(name: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def coerce(name: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Writer")
   @js.native
-  class Writer () extends StObject {
+  open class Writer () extends StObject {
     def this(wordSize: Double) = this()
     
-    var _data: Uint8Array = js.native
+    var _data: js.Array[js.typedarray.Uint8Array] = js.native
     
-    def _getValue(value: BigNumberish): Uint8Array = js.native
+    var _dataLength: Double = js.native
     
-    var _padding: Uint8Array = js.native
+    def _getValue(value: BigNumberish): js.typedarray.Uint8Array = js.native
     
-    def _writeData(data: Uint8Array): Double = js.native
+    var _padding: js.typedarray.Uint8Array = js.native
+    
+    def _writeData(data: js.typedarray.Uint8Array): Double = js.native
+    
+    def appendWriter(writer: Writer): Double = js.native
     
     def data: String = js.native
     
@@ -105,11 +118,11 @@ object abstractCoderMod {
   
   inline def checkResultErrors(result: Result): js.Array[Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkResultErrors")(result.asInstanceOf[js.Any]).asInstanceOf[js.Array[Error]]
   
-  type CoerceFunc = js.Function2[/* type */ String, /* value */ js.Any, js.Any]
+  type CoerceFunc = js.Function2[/* type */ String, /* value */ Any, Any]
   
   @js.native
   trait Result
     extends StObject
-       with ReadonlyArray[js.Any]
-       with /* key */ StringDictionary[js.Any]
+       with ReadonlyArray[Any]
+       with /* key */ StringDictionary[Any]
 }

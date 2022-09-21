@@ -29,4 +29,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @api stable
   */
-class Feature () extends StObject
+open class Feature () extends StObject

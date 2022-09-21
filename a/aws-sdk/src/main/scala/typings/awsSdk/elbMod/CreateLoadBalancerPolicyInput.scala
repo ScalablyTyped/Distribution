@@ -41,7 +41,7 @@ object CreateLoadBalancerPolicyInput {
     
     inline def setPolicyAttributesUndefined: Self = StObject.set(x, "PolicyAttributes", js.undefined)
     
-    inline def setPolicyAttributesVarargs(value: PolicyAttribute*): Self = StObject.set(x, "PolicyAttributes", js.Array(value :_*))
+    inline def setPolicyAttributesVarargs(value: PolicyAttribute*): Self = StObject.set(x, "PolicyAttributes", js.Array(value*))
     
     inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     

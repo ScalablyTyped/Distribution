@@ -11,12 +11,16 @@ trait ColorSliderProperties
   /**
     * Only applicable when three thumbs (i.e.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#handlesSyncedToPrimary)
     */
   var handlesSyncedToPrimary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `true`, the slider will render a third handle between the two handles already provided by default.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#primaryHandleEnabled)
     */
@@ -57,7 +61,7 @@ object ColorSliderProperties {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: ColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: ColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setViewModel(value: ColorSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

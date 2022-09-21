@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.AnimationPropertiesOverride")
 @js.native
-class AnimationPropertiesOverride ()
+open class AnimationPropertiesOverride ()
   extends StObject
      with typings.babylonjs.BABYLON.AnimationPropertiesOverride {
   

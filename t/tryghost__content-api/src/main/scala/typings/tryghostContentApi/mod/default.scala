@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("@tryghost/content-api", JSImport.Default)
 @js.native
-class default protected ()
+open class default protected ()
   extends StObject
      with GhostAPI {
   def this(options: GhostContentAPIOptions) = this()

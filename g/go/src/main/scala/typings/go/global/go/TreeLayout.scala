@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a TreeLayout with no Layout.network and with no owning Layout.diagram.
   */
-class TreeLayout ()
+open class TreeLayout ()
   extends typings.go.mod.TreeLayout
 object TreeLayout {
   

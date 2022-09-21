@@ -36,7 +36,7 @@ trait DescriptionAnnotation extends StObject {
   
   var url: String
   
-  var verified_annotator_ids: js.Array[js.Any]
+  var verified_annotator_ids: js.Array[Any]
 }
 object DescriptionAnnotation {
   
@@ -55,7 +55,7 @@ object DescriptionAnnotation {
     range: Content,
     song_id: Double,
     url: String,
-    verified_annotator_ids: js.Array[js.Any]
+    verified_annotator_ids: js.Array[Any]
   ): DescriptionAnnotation = {
     val __obj = js.Dynamic.literal(_type = _type.asInstanceOf[js.Any], annotatable = annotatable.asInstanceOf[js.Any], annotations = annotations.asInstanceOf[js.Any], annotator_id = annotator_id.asInstanceOf[js.Any], annotator_login = annotator_login.asInstanceOf[js.Any], api_path = api_path.asInstanceOf[js.Any], classification = classification.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_description = is_description.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], song_id = song_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified_annotator_ids = verified_annotator_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescriptionAnnotation]
@@ -67,7 +67,7 @@ object DescriptionAnnotation {
     
     inline def setAnnotations(value: js.Array[Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    inline def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setAnnotator_id(value: Double): Self = StObject.set(x, "annotator_id", value.asInstanceOf[js.Any])
     
@@ -91,9 +91,9 @@ object DescriptionAnnotation {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setVerified_annotator_ids(value: js.Array[js.Any]): Self = StObject.set(x, "verified_annotator_ids", value.asInstanceOf[js.Any])
+    inline def setVerified_annotator_ids(value: js.Array[Any]): Self = StObject.set(x, "verified_annotator_ids", value.asInstanceOf[js.Any])
     
-    inline def setVerified_annotator_idsVarargs(value: js.Any*): Self = StObject.set(x, "verified_annotator_ids", js.Array(value :_*))
+    inline def setVerified_annotator_idsVarargs(value: Any*): Self = StObject.set(x, "verified_annotator_ids", js.Array(value*))
     
     inline def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
   }

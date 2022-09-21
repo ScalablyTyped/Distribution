@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(colors: (ColorInput | PositionedColorInput)*): Gradient = ^.asInstanceOf[js.Dynamic].apply(colors.asInstanceOf[js.Any]).asInstanceOf[Gradient]
+  inline def apply(colors: (ColorInput | PositionedColorInput)*): Gradient = ^.asInstanceOf[js.Dynamic].apply(colors.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Gradient]
   inline def apply(colors: js.Array[ColorInput | PositionedColorInput]): Gradient = ^.asInstanceOf[js.Dynamic].apply(colors.asInstanceOf[js.Any]).asInstanceOf[Gradient]
   
   @JSImport("gradient-string", JSImport.Namespace)

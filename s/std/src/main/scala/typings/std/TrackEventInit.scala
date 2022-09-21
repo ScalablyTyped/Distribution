@@ -8,6 +8,7 @@ trait TrackEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var track: js.UndefOr[TextTrack | Null] = js.undefined
 }
 object TrackEventInit {

@@ -43,6 +43,6 @@ object City {
     
     inline def setProvince(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
-    inline def setProvinceVarargs(value: scala.Nothing*): Self = StObject.set(x, "province", js.Array(value :_*))
+    inline def setProvinceVarargs(value: scala.Nothing*): Self = StObject.set(x, "province", js.Array(value*))
   }
 }

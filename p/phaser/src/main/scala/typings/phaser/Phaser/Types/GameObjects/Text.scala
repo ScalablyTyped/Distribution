@@ -1,12 +1,122 @@
 package typings.phaser.Phaser.Types.GameObjects
 
 import typings.phaser.TextStyleWordWrapCallback
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Text {
+  
+  /**
+    * Results object from a call to GetTextSize.
+    */
+  trait GetTextSizeObject extends StObject {
+    
+    /**
+      * The height of the Text object.
+      */
+    var height: Double
+    
+    /**
+      * The height of a line factoring in font and stroke.
+      */
+    var lineHeight: Double
+    
+    /**
+      * The line spacing of the Text object.
+      */
+    var lineSpacing: Double
+    
+    /**
+      * An array of the lines for each line in the Text object.
+      */
+    var lineWidths: js.Array[Double]
+    
+    /**
+      * The number of lines in the Text object.
+      */
+    var lines: Double
+    
+    /**
+      * The width of the longest line in the Text object.
+      */
+    var width: Double
+  }
+  object GetTextSizeObject {
+    
+    inline def apply(
+      height: Double,
+      lineHeight: Double,
+      lineSpacing: Double,
+      lineWidths: js.Array[Double],
+      lines: Double,
+      width: Double
+    ): GetTextSizeObject = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], lineSpacing = lineSpacing.asInstanceOf[js.Any], lineWidths = lineWidths.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetTextSizeObject]
+    }
+    
+    extension [Self <: GetTextSizeObject](x: Self) {
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      
+      inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
+      
+      inline def setLineWidths(value: js.Array[Double]): Self = StObject.set(x, "lineWidths", value.asInstanceOf[js.Any])
+      
+      inline def setLineWidthsVarargs(value: Double*): Self = StObject.set(x, "lineWidths", js.Array(value*))
+      
+      inline def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TextConfig
+    extends StObject
+       with GameObjectConfig {
+    
+    /**
+      * A Text Padding object.
+      */
+    var padding: js.UndefOr[TextPadding] = js.undefined
+    
+    /**
+      * The Text style configuration object.
+      */
+    var style: js.UndefOr[TextStyle] = js.undefined
+    
+    /**
+      * The text this Text object will display.
+      */
+    var text: js.UndefOr[String | js.Array[String]] = js.undefined
+  }
+  object TextConfig {
+    
+    inline def apply(): TextConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TextConfig]
+    }
+    
+    extension [Self <: TextConfig](x: Self) {
+      
+      inline def setPadding(value: TextPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      
+      inline def setStyle(value: TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setText(value: String | js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      
+      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
+    }
+  }
   
   /**
     * Font metrics for a Text Style object.
@@ -226,6 +336,11 @@ object Text {
     var fixedWidth: js.UndefOr[Double] = js.undefined
     
     /**
+      * The font family or font settings to set. Overrides the other font settings.
+      */
+    var font: js.UndefOr[String] = js.undefined
+    
+    /**
       * The font the Text object will render with. This is a Canvas style font string.
       */
     var fontFamily: js.UndefOr[String] = js.undefined
@@ -243,7 +358,7 @@ object Text {
     /**
       * The maximum number of lines to display within the Text object.
       */
-    var maxLines: js.UndefOr[integer] = js.undefined
+    var maxLines: js.UndefOr[Double] = js.undefined
     
     /**
       * A Text Metrics object. Use this to avoid expensive font size calculations in text heavy games.
@@ -327,6 +442,8 @@ object Text {
       
       inline def setFixedWidthUndefined: Self = StObject.set(x, "fixedWidth", js.undefined)
       
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
       inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
@@ -339,7 +456,9 @@ object Text {
       
       inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      inline def setMaxLines(value: integer): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      
+      inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
       
       inline def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
       
@@ -394,7 +513,7 @@ object Text {
     /**
       * The context in which the word wrap callback is invoked.
       */
-    var callbackScope: js.UndefOr[js.Any] = js.undefined
+    var callbackScope: js.UndefOr[Any] = js.undefined
     
     /**
       * Use basic or advanced word wrapping?
@@ -417,7 +536,7 @@ object Text {
       
       inline def setCallback(value: (/* text */ String, /* textObject */ typings.phaser.Phaser.GameObjects.Text) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      inline def setCallbackScope(value: js.Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
+      inline def setCallbackScope(value: Any): Self = StObject.set(x, "callbackScope", value.asInstanceOf[js.Any])
       
       inline def setCallbackScopeUndefined: Self = StObject.set(x, "callbackScope", js.undefined)
       

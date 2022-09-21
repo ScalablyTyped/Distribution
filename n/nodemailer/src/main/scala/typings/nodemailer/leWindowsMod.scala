@@ -9,7 +9,7 @@ object leWindowsMod {
   
   @JSImport("nodemailer/lib/sendmail-transport/le-windows", JSImport.Namespace)
   @js.native
-  class ^ () extends Transform
+  open class ^ () extends Transform
   
   type LeWindows = Transform
 }

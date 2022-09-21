@@ -13,6 +13,9 @@ trait LifecycleRule extends StObject {
     */
   var Expiration: js.UndefOr[LifecycleExpiration] = js.undefined
   
+  /**
+    * The Filter is used to identify objects that a Lifecycle Rule applies to. A Filter must have exactly one of Prefix, Tag, or And specified. Filter is required if the LifecycleRule does not contain a Prefix element.
+    */
   var Filter: js.UndefOr[LifecycleRuleFilter] = js.undefined
   
   /**
@@ -28,7 +31,7 @@ trait LifecycleRule extends StObject {
   var NoncurrentVersionTransitions: js.UndefOr[NoncurrentVersionTransitionList] = js.undefined
   
   /**
-    * Prefix identifying one or more objects to which the rule applies. This is No longer used; use Filter instead.
+    * Prefix identifying one or more objects to which the rule applies. This is no longer used; use Filter instead.  Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests. For more information, see  XML related object key constraints. 
     */
   var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
@@ -75,7 +78,7 @@ object LifecycleRule {
     
     inline def setNoncurrentVersionTransitionsUndefined: Self = StObject.set(x, "NoncurrentVersionTransitions", js.undefined)
     
-    inline def setNoncurrentVersionTransitionsVarargs(value: NoncurrentVersionTransition*): Self = StObject.set(x, "NoncurrentVersionTransitions", js.Array(value :_*))
+    inline def setNoncurrentVersionTransitionsVarargs(value: NoncurrentVersionTransition*): Self = StObject.set(x, "NoncurrentVersionTransitions", js.Array(value*))
     
     inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
@@ -87,6 +90,6 @@ object LifecycleRule {
     
     inline def setTransitionsUndefined: Self = StObject.set(x, "Transitions", js.undefined)
     
-    inline def setTransitionsVarargs(value: Transition*): Self = StObject.set(x, "Transitions", js.Array(value :_*))
+    inline def setTransitionsVarargs(value: Transition*): Self = StObject.set(x, "Transitions", js.Array(value*))
   }
 }

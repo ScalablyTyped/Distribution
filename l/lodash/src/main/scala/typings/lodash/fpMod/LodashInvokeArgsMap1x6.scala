@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashInvokeArgsMap1x6 extends StObject {
   
-  def apply(methodName: String): js.Array[js.Any] = js.native
-  def apply[TResult](method: js.Function1[/* repeated */ js.Any, TResult]): js.Array[TResult] = js.native
+  def apply(methodName: String): js.Array[Any] = js.native
+  def apply[TResult](method: js.Function1[/* repeated */ Any, TResult]): js.Array[TResult] = js.native
 }

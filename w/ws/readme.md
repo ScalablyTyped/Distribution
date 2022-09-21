@@ -1,7 +1,7 @@
 
 # Scala.js typings for ws
 
-Typings are for version 7.4
+Typings are for version 8.5
 
 ## Library description:
 Simple to use, blazing fast and thoroughly tested websocket client and server for Node.js
@@ -10,10 +10,10 @@ Simple to use, blazing fast and thoroughly tested websocket client and server fo
 | ------------------ | :-------------: |
 | Full name          | ws |
 | Keywords           | HyBi, Push, RFC-6455, WebSocket, WebSockets, real-time |
-| # releases         | 18 |
-| # dependents       | 7853 |
-| # downloads        | 1446066764 |
-| # stars            | 255 |
+| # releases         | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 2.4063769733333334E8 |
+| # stars            | 18519.0 |
 
 ## Links
 - [Homepage](https://github.com/websockets/ws)

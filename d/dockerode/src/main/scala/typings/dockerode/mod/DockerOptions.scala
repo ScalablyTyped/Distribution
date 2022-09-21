@@ -3,7 +3,7 @@ package typings.dockerode.mod
 import typings.dockerode.dockerodeStrings.http
 import typings.dockerode.dockerodeStrings.https
 import typings.dockerode.dockerodeStrings.ssh
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,13 +48,13 @@ object DockerOptions {
     
     inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
-    inline def setCaVarargs(value: (Buffer | String)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+    inline def setCaVarargs(value: (Buffer | String)*): Self = StObject.set(x, "ca", js.Array(value*))
     
     inline def setCert(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
-    inline def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+    inline def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value*))
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object DockerOptions {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setKeyVarargs(value: (Buffer | KeyObject | String)*): Self = StObject.set(x, "key", js.Array(value :_*))
+    inline def setKeyVarargs(value: (Buffer | KeyObject | String)*): Self = StObject.set(x, "key", js.Array(value*))
     
     inline def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

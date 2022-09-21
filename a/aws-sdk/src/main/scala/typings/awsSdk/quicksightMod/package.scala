@@ -1,17 +1,29 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.GROUP_NAME
+import typings.awsSdk.awsSdkStrings.INTERNAL_FAILURE
+import typings.awsSdk.awsSdkStrings.PARENT_FOLDER_ARN
+import typings.awsSdk.awsSdkStrings.QUICKSIGHT
+import typings.awsSdk.awsSdkStrings.QUICKSIGHT_USER
+import typings.awsSdk.awsSdkStrings.SHARED
+import typings.awsSdk.awsSdkStrings.StartsWith
+import typings.awsSdk.awsSdkStrings.StringEquals_
+import typings.awsSdk.awsSdkStrings.US
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActionList = js.Array[typings.awsSdk.quicksightMod.String]
+type ActionList = js.Array[String]
 
-type ActiveIAMPolicyAssignmentList = js.Array[typings.awsSdk.quicksightMod.ActiveIAMPolicyAssignment]
+type ActiveIAMPolicyAssignmentList = js.Array[ActiveIAMPolicyAssignment]
+
+type AdditionalDashboardIdList = js.Array[RestrictiveResourceId]
 
 type AliasName = java.lang.String
 
-type AnalysisErrorList = js.Array[typings.awsSdk.quicksightMod.AnalysisError]
+type AnalysisErrorList = js.Array[AnalysisError]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
@@ -26,17 +38,19 @@ type AnalysisErrorList = js.Array[typings.awsSdk.quicksightMod.AnalysisError]
   - typings.awsSdk.awsSdkStrings.COLUMN_REPLACEMENT_MISSING
   - java.lang.String
 */
-type AnalysisErrorType = typings.awsSdk.quicksightMod._AnalysisErrorType | java.lang.String
+type AnalysisErrorType = _AnalysisErrorType | java.lang.String
 
-type AnalysisFilterAttribute = typings.awsSdk.awsSdkStrings.QUICKSIGHT_USER | java.lang.String
+type AnalysisFilterAttribute = QUICKSIGHT_USER | java.lang.String
 
 type AnalysisName = java.lang.String
 
-type AnalysisSearchFilterList = js.Array[typings.awsSdk.quicksightMod.AnalysisSearchFilter]
+type AnalysisSearchFilterList = js.Array[AnalysisSearchFilter]
 
-type AnalysisSummaryList = js.Array[typings.awsSdk.quicksightMod.AnalysisSummary]
+type AnalysisSummaryList = js.Array[AnalysisSummary]
 
 type Arn = java.lang.String
+
+type ArnList = js.Array[Arn]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
@@ -44,7 +58,15 @@ type Arn = java.lang.String
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type AssignmentStatus = typings.awsSdk.quicksightMod._AssignmentStatus | java.lang.String
+type AssignmentStatus = _AssignmentStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IAM_AND_QUICKSIGHT
+  - typings.awsSdk.awsSdkStrings.IAM_ONLY
+  - typings.awsSdk.awsSdkStrings.ACTIVE_DIRECTORY
+  - java.lang.String
+*/
+type AuthenticationMethodOption = _AuthenticationMethodOption | java.lang.String
 
 type AwsAccountId = java.lang.String
 
@@ -52,13 +74,15 @@ type AwsAndAccountId = java.lang.String
 
 type Boolean = scala.Boolean
 
-type CalculatedColumnList = js.Array[typings.awsSdk.quicksightMod.CalculatedColumn]
+type CIDR = java.lang.String
+
+type CalculatedColumnList = js.Array[CalculatedColumn]
 
 type Catalog = java.lang.String
 
 type ClusterId = java.lang.String
 
-type ColorList = js.Array[typings.awsSdk.quicksightMod.HexColor]
+type ColorList = js.Array[HexColor]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STRING
@@ -67,31 +91,40 @@ type ColorList = js.Array[typings.awsSdk.quicksightMod.HexColor]
   - typings.awsSdk.awsSdkStrings.DATETIME
   - java.lang.String
 */
-type ColumnDataType = typings.awsSdk.quicksightMod._ColumnDataType | java.lang.String
+type ColumnDataType = _ColumnDataType | java.lang.String
 
 type ColumnDescriptiveText = java.lang.String
 
-type ColumnGroupColumnSchemaList = js.Array[typings.awsSdk.quicksightMod.ColumnGroupColumnSchema]
+type ColumnGroupColumnSchemaList = js.Array[ColumnGroupColumnSchema]
 
-type ColumnGroupList = js.Array[typings.awsSdk.quicksightMod.ColumnGroup]
+type ColumnGroupList = js.Array[ColumnGroup]
 
 type ColumnGroupName = java.lang.String
 
-type ColumnGroupSchemaList = js.Array[typings.awsSdk.quicksightMod.ColumnGroupSchema]
+type ColumnGroupSchemaList = js.Array[ColumnGroupSchema]
 
 type ColumnId = java.lang.String
 
-type ColumnLevelPermissionRuleList = js.Array[typings.awsSdk.quicksightMod.ColumnLevelPermissionRule]
+type ColumnLevelPermissionRuleList = js.Array[ColumnLevelPermissionRule]
 
-type ColumnList = js.Array[typings.awsSdk.quicksightMod.ColumnName]
+type ColumnList = js.Array[ColumnName]
 
 type ColumnName = java.lang.String
 
-type ColumnNameList = js.Array[typings.awsSdk.quicksightMod.String]
+type ColumnNameList = js.Array[String]
 
-type ColumnSchemaList = js.Array[typings.awsSdk.quicksightMod.ColumnSchema]
+type ColumnSchemaList = js.Array[ColumnSchema]
 
-type ColumnTagList = js.Array[typings.awsSdk.quicksightMod.ColumnTag]
+type ColumnTagList = js.Array[ColumnTag]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COLUMN_GEOGRAPHIC_ROLE
+  - typings.awsSdk.awsSdkStrings.COLUMN_DESCRIPTION
+  - java.lang.String
+*/
+type ColumnTagName = _ColumnTagName | java.lang.String
+
+type ColumnTagNames = js.Array[ColumnTagName]
 
 type CopySourceArn = java.lang.String
 
@@ -102,9 +135,9 @@ type CustomSqlName = java.lang.String
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type DashboardBehavior = typings.awsSdk.quicksightMod._DashboardBehavior | java.lang.String
+type DashboardBehavior = _DashboardBehavior | java.lang.String
 
-type DashboardErrorList = js.Array[typings.awsSdk.quicksightMod.DashboardError]
+type DashboardErrorList = js.Array[DashboardError]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
@@ -119,41 +152,41 @@ type DashboardErrorList = js.Array[typings.awsSdk.quicksightMod.DashboardError]
   - typings.awsSdk.awsSdkStrings.COLUMN_REPLACEMENT_MISSING
   - java.lang.String
 */
-type DashboardErrorType = typings.awsSdk.quicksightMod._DashboardErrorType | java.lang.String
+type DashboardErrorType = _DashboardErrorType | java.lang.String
 
-type DashboardFilterAttribute = typings.awsSdk.awsSdkStrings.QUICKSIGHT_USER | java.lang.String
+type DashboardFilterAttribute = QUICKSIGHT_USER | java.lang.String
 
 type DashboardName = java.lang.String
 
-type DashboardSearchFilterList = js.Array[typings.awsSdk.quicksightMod.DashboardSearchFilter]
+type DashboardSearchFilterList = js.Array[DashboardSearchFilter]
 
-type DashboardSummaryList = js.Array[typings.awsSdk.quicksightMod.DashboardSummary]
+type DashboardSummaryList = js.Array[DashboardSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EXPANDED
   - typings.awsSdk.awsSdkStrings.COLLAPSED
   - java.lang.String
 */
-type DashboardUIState = typings.awsSdk.quicksightMod._DashboardUIState | java.lang.String
+type DashboardUIState = _DashboardUIState | java.lang.String
 
-type DashboardVersionSummaryList = js.Array[typings.awsSdk.quicksightMod.DashboardVersionSummary]
+type DashboardVersionSummaryList = js.Array[DashboardVersionSummary]
 
-type DataSetArnsList = js.Array[typings.awsSdk.quicksightMod.Arn]
+type DataSetArnsList = js.Array[Arn]
 
-type DataSetConfigurationList = js.Array[typings.awsSdk.quicksightMod.DataSetConfiguration]
+type DataSetConfigurationList = js.Array[DataSetConfiguration]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SPICE
   - typings.awsSdk.awsSdkStrings.DIRECT_QUERY
   - java.lang.String
 */
-type DataSetImportMode = typings.awsSdk.quicksightMod._DataSetImportMode | java.lang.String
+type DataSetImportMode = _DataSetImportMode | java.lang.String
 
 type DataSetName = java.lang.String
 
-type DataSetReferenceList = js.Array[typings.awsSdk.quicksightMod.DataSetReference]
+type DataSetReferenceList = js.Array[DataSetReference]
 
-type DataSetSummaryList = js.Array[typings.awsSdk.quicksightMod.DataSetSummary]
+type DataSetSummaryList = js.Array[DataSetSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
@@ -166,11 +199,11 @@ type DataSetSummaryList = js.Array[typings.awsSdk.quicksightMod.DataSetSummary]
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type DataSourceErrorInfoType = typings.awsSdk.quicksightMod._DataSourceErrorInfoType | java.lang.String
+type DataSourceErrorInfoType = _DataSourceErrorInfoType | java.lang.String
 
-type DataSourceList = js.Array[typings.awsSdk.quicksightMod.DataSource]
+type DataSourceList = js.Array[DataSource]
 
-type DataSourceParametersList = js.Array[typings.awsSdk.quicksightMod.DataSourceParameters]
+type DataSourceParametersList = js.Array[DataSourceParameters]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ADOBE_ANALYTICS
@@ -196,15 +229,17 @@ type DataSourceParametersList = js.Array[typings.awsSdk.quicksightMod.DataSource
   - typings.awsSdk.awsSdkStrings.TERADATA
   - typings.awsSdk.awsSdkStrings.TWITTER
   - typings.awsSdk.awsSdkStrings.TIMESTREAM
+  - typings.awsSdk.awsSdkStrings.AMAZON_OPENSEARCH
+  - typings.awsSdk.awsSdkStrings.EXASOL
   - java.lang.String
 */
-type DataSourceType = typings.awsSdk.quicksightMod._DataSourceType | java.lang.String
+type DataSourceType = _DataSourceType | java.lang.String
 
 type Database = java.lang.String
 
-type DateTimeParameterList = js.Array[typings.awsSdk.quicksightMod.DateTimeParameter]
+type DateTimeParameterList = js.Array[DateTimeParameter]
 
-type DecimalParameterList = js.Array[typings.awsSdk.quicksightMod.DecimalParameter]
+type DecimalParameterList = js.Array[DecimalParameter]
 
 type Delimiter = java.lang.String
 
@@ -212,20 +247,37 @@ type Domain = java.lang.String
 
 type Double = scala.Double
 
-type DoubleList = js.Array[typings.awsSdk.quicksightMod.Double]
+type DoubleList = js.Array[Double]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
   - typings.awsSdk.awsSdkStrings.ENTERPRISE
+  - typings.awsSdk.awsSdkStrings.ENTERPRISE_AND_Q
   - java.lang.String
 */
-type Edition = typings.awsSdk.quicksightMod._Edition | java.lang.String
+type Edition = _Edition | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IAM
+  - typings.awsSdk.awsSdkStrings.QUICKSIGHT
+  - typings.awsSdk.awsSdkStrings.ANONYMOUS
+  - java.lang.String
+*/
+type EmbeddingIdentityType = _EmbeddingIdentityType | java.lang.String
 
 type EmbeddingUrl = java.lang.String
+
+type EntryPath = java.lang.String
 
 type EntryPoint = java.lang.String
 
 type Expression = java.lang.String
+
+type FieldFolderDescription = java.lang.String
+
+type FieldFolderMap = StringDictionary[FieldFolder]
+
+type FieldFolderPath = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CSV
@@ -236,11 +288,25 @@ type Expression = java.lang.String
   - typings.awsSdk.awsSdkStrings.JSON
   - java.lang.String
 */
-type FileFormat = typings.awsSdk.quicksightMod._FileFormat | java.lang.String
+type FileFormat = _FileFormat | java.lang.String
 
-type FilterOperator = typings.awsSdk.awsSdkStrings.StringEquals_ | java.lang.String
+type FilterOperator = StringEquals_ | java.lang.String
 
-type GeoSpatialCountryCode = typings.awsSdk.awsSdkStrings.US | java.lang.String
+type FolderColumnList = js.Array[String]
+
+type FolderFilterAttribute = PARENT_FOLDER_ARN | java.lang.String
+
+type FolderMemberList = js.Array[MemberIdArnPair]
+
+type FolderName = java.lang.String
+
+type FolderSearchFilterList = js.Array[FolderSearchFilter]
+
+type FolderSummaryList = js.Array[FolderSummary]
+
+type FolderType = SHARED | java.lang.String
+
+type GeoSpatialCountryCode = US | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COUNTRY
@@ -252,17 +318,25 @@ type GeoSpatialCountryCode = typings.awsSdk.awsSdkStrings.US | java.lang.String
   - typings.awsSdk.awsSdkStrings.LATITUDE
   - java.lang.String
 */
-type GeoSpatialDataRole = typings.awsSdk.quicksightMod._GeoSpatialDataRole | java.lang.String
+type GeoSpatialDataRole = _GeoSpatialDataRole | java.lang.String
 
 type GroupDescription = java.lang.String
 
-type GroupList = js.Array[typings.awsSdk.quicksightMod.Group]
+type GroupFilterAttribute = GROUP_NAME | java.lang.String
 
-type GroupMemberList = js.Array[typings.awsSdk.quicksightMod.GroupMember]
+type GroupFilterOperator = StartsWith | java.lang.String
+
+type GroupList = js.Array[Group]
+
+type GroupMemberList = js.Array[GroupMember]
 
 type GroupMemberName = java.lang.String
 
 type GroupName = java.lang.String
+
+type GroupSearchFilterList = js.Array[GroupSearchFilter]
+
+type GroupsList = js.Array[String]
 
 type HexColor = java.lang.String
 
@@ -270,22 +344,22 @@ type Host = java.lang.String
 
 type IAMPolicyAssignmentName = java.lang.String
 
-type IAMPolicyAssignmentSummaryList = js.Array[typings.awsSdk.quicksightMod.IAMPolicyAssignmentSummary]
+type IAMPolicyAssignmentSummaryList = js.Array[IAMPolicyAssignmentSummary]
 
-type IdentityMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.quicksightMod.IdentityNameList]
+type IdentityMap = StringDictionary[IdentityNameList]
 
 type IdentityName = java.lang.String
 
-type IdentityNameList = js.Array[typings.awsSdk.quicksightMod.IdentityName]
+type IdentityNameList = js.Array[IdentityName]
 
-type IdentityStore = typings.awsSdk.awsSdkStrings.QUICKSIGHT | java.lang.String
+type IdentityStore = QUICKSIGHT | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IAM
   - typings.awsSdk.awsSdkStrings.QUICKSIGHT
   - java.lang.String
 */
-type IdentityType = typings.awsSdk.quicksightMod._IdentityType | java.lang.String
+type IdentityType = _IdentityType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FAILURE_TO_ASSUME_ROLE
@@ -328,9 +402,13 @@ type IdentityType = typings.awsSdk.quicksightMod._IdentityType | java.lang.Strin
   - typings.awsSdk.awsSdkStrings.DATA_SOURCE_CONNECTION_FAILED
   - typings.awsSdk.awsSdkStrings.FAILURE_TO_PROCESS_JSON_FILE
   - typings.awsSdk.awsSdkStrings.INTERNAL_SERVICE_ERROR
+  - typings.awsSdk.awsSdkStrings.REFRESH_SUPPRESSED_BY_EDIT
+  - typings.awsSdk.awsSdkStrings.PERMISSION_NOT_FOUND
+  - typings.awsSdk.awsSdkStrings.ELASTICSEARCH_CURSOR_NOT_ENABLED
+  - typings.awsSdk.awsSdkStrings.CURSOR_NOT_ENABLED
   - java.lang.String
 */
-type IngestionErrorType = typings.awsSdk.quicksightMod._IngestionErrorType | java.lang.String
+type IngestionErrorType = _IngestionErrorType | java.lang.String
 
 type IngestionId = java.lang.String
 
@@ -341,7 +419,7 @@ type IngestionMaxResults = scala.Double
   - typings.awsSdk.awsSdkStrings.SCHEDULED
   - java.lang.String
 */
-type IngestionRequestSource = typings.awsSdk.quicksightMod._IngestionRequestSource | java.lang.String
+type IngestionRequestSource = _IngestionRequestSource | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIAL_INGESTION
@@ -350,7 +428,7 @@ type IngestionRequestSource = typings.awsSdk.quicksightMod._IngestionRequestSour
   - typings.awsSdk.awsSdkStrings.FULL_REFRESH
   - java.lang.String
 */
-type IngestionRequestType = typings.awsSdk.quicksightMod._IngestionRequestType | java.lang.String
+type IngestionRequestType = _IngestionRequestType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZED
@@ -361,9 +439,16 @@ type IngestionRequestType = typings.awsSdk.quicksightMod._IngestionRequestType |
   - typings.awsSdk.awsSdkStrings.CANCELLED
   - java.lang.String
 */
-type IngestionStatus = typings.awsSdk.quicksightMod._IngestionStatus | java.lang.String
+type IngestionStatus = _IngestionStatus | java.lang.String
 
-type Ingestions = js.Array[typings.awsSdk.quicksightMod.Ingestion]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INCREMENTAL_REFRESH
+  - typings.awsSdk.awsSdkStrings.FULL_REFRESH
+  - java.lang.String
+*/
+type IngestionType = _IngestionType | java.lang.String
+
+type Ingestions = js.Array[Ingestion]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STRING
@@ -375,13 +460,17 @@ type Ingestions = js.Array[typings.awsSdk.quicksightMod.Ingestion]
   - typings.awsSdk.awsSdkStrings.JSON
   - java.lang.String
 */
-type InputColumnDataType = typings.awsSdk.quicksightMod._InputColumnDataType | java.lang.String
+type InputColumnDataType = _InputColumnDataType | java.lang.String
 
-type InputColumnList = js.Array[typings.awsSdk.quicksightMod.InputColumn]
+type InputColumnList = js.Array[InputColumn]
 
 type InstanceId = java.lang.String
 
-type IntegerParameterList = js.Array[typings.awsSdk.quicksightMod.IntegerParameter]
+type IntegerParameterList = js.Array[IntegerParameter]
+
+type IpRestrictionRuleDescription = java.lang.String
+
+type IpRestrictionRuleMap = StringDictionary[IpRestrictionRuleDescription]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INNER
@@ -390,19 +479,27 @@ type IntegerParameterList = js.Array[typings.awsSdk.quicksightMod.IntegerParamet
   - typings.awsSdk.awsSdkStrings.RIGHT
   - java.lang.String
 */
-type JoinType = typings.awsSdk.quicksightMod._JoinType | java.lang.String
+type JoinType = _JoinType | java.lang.String
 
 type LogicalTableAlias = java.lang.String
 
 type LogicalTableId = java.lang.String
 
-type LogicalTableMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.quicksightMod.LogicalTable]
+type LogicalTableMap = StringDictionary[LogicalTable]
 
-type LongList = js.Array[typings.awsSdk.quicksightMod.Long_]
+type Long = scala.Double
 
-type Long_ = scala.Double
+type LongList = js.Array[Long]
 
 type MaxResults = scala.Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DASHBOARD
+  - typings.awsSdk.awsSdkStrings.ANALYSIS
+  - typings.awsSdk.awsSdkStrings.DATASET
+  - java.lang.String
+*/
+type MemberType = _MemberType | java.lang.String
 
 type Namespace = java.lang.String
 
@@ -411,7 +508,7 @@ type Namespace = java.lang.String
   - typings.awsSdk.awsSdkStrings.INTERNAL_SERVICE_ERROR
   - java.lang.String
 */
-type NamespaceErrorType = typings.awsSdk.quicksightMod._NamespaceErrorType | java.lang.String
+type NamespaceErrorType = _NamespaceErrorType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED
@@ -421,23 +518,27 @@ type NamespaceErrorType = typings.awsSdk.quicksightMod._NamespaceErrorType | jav
   - typings.awsSdk.awsSdkStrings.NON_RETRYABLE_FAILURE
   - java.lang.String
 */
-type NamespaceStatus = typings.awsSdk.quicksightMod._NamespaceStatus | java.lang.String
+type NamespaceStatus = _NamespaceStatus | java.lang.String
 
-type Namespaces = js.Array[typings.awsSdk.quicksightMod.NamespaceInfoV2]
+type Namespaces = js.Array[NamespaceInfoV2]
 
 type NonEmptyString = java.lang.String
+
+type NullableBoolean = scala.Boolean
 
 type OnClause = java.lang.String
 
 type OptionalPort = scala.Double
 
-type OutputColumnList = js.Array[typings.awsSdk.quicksightMod.OutputColumn]
+type OutputColumnList = js.Array[OutputColumn]
 
 type Password = java.lang.String
 
+type Path = js.Array[Arn]
+
 type PhysicalTableId = java.lang.String
 
-type PhysicalTableMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.quicksightMod.PhysicalTable]
+type PhysicalTableMap = StringDictionary[PhysicalTable]
 
 type Port = scala.Double
 
@@ -445,13 +546,15 @@ type PositiveInteger = scala.Double
 
 type Principal = java.lang.String
 
-type PrincipalList = js.Array[typings.awsSdk.quicksightMod.String]
+type PrincipalList = js.Array[String]
 
-type ProjectedColumnList = js.Array[typings.awsSdk.quicksightMod.String]
+type ProjectedColumnList = js.Array[String]
 
 type Query = java.lang.String
 
 type RecoveryWindowInDays = scala.Double
+
+type RelationalTableCatalog = java.lang.String
 
 type RelationalTableName = java.lang.String
 
@@ -461,7 +564,7 @@ type ResourceId = java.lang.String
 
 type ResourceName = java.lang.String
 
-type ResourcePermissionList = js.Array[typings.awsSdk.quicksightMod.ResourcePermission]
+type ResourcePermissionList = js.Array[ResourcePermission]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATION_IN_PROGRESS
@@ -473,7 +576,7 @@ type ResourcePermissionList = js.Array[typings.awsSdk.quicksightMod.ResourcePerm
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type ResourceStatus = typings.awsSdk.quicksightMod._ResourceStatus | java.lang.String
+type ResourceStatus = _ResourceStatus | java.lang.String
 
 type RestrictiveResourceId = java.lang.String
 
@@ -482,11 +585,22 @@ type RoleName = java.lang.String
 type RoleSessionName = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VERSION_1
+  - typings.awsSdk.awsSdkStrings.VERSION_2
+  - java.lang.String
+*/
+type RowLevelPermissionFormatVersion = _RowLevelPermissionFormatVersion | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GRANT_ACCESS
   - typings.awsSdk.awsSdkStrings.DENY_ACCESS
   - java.lang.String
 */
-type RowLevelPermissionPolicy = typings.awsSdk.quicksightMod._RowLevelPermissionPolicy | java.lang.String
+type RowLevelPermissionPolicy = _RowLevelPermissionPolicy | java.lang.String
+
+type RowLevelPermissionTagDelimiter = java.lang.String
+
+type RowLevelPermissionTagRuleList = js.Array[RowLevelPermissionTagRule]
 
 type S3Bucket = java.lang.String
 
@@ -494,31 +608,44 @@ type S3Key = java.lang.String
 
 type SessionLifetimeInMinutes = scala.Double
 
-type SheetList = js.Array[typings.awsSdk.quicksightMod.Sheet]
+type SessionTagKey = java.lang.String
+
+type SessionTagList = js.Array[SessionTag]
+
+type SessionTagValue = java.lang.String
+
+type SheetList = js.Array[Sheet]
 
 type SiteBaseUrl = java.lang.String
 
 type SqlQuery = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type Status = _Status | java.lang.String
+
 type StatusCode = scala.Double
 
 type String = java.lang.String
 
-type StringList = js.Array[typings.awsSdk.quicksightMod.String]
+type StringList = js.Array[String]
 
-type StringParameterList = js.Array[typings.awsSdk.quicksightMod.StringParameter]
+type StringParameterList = js.Array[StringParameter]
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.quicksightMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.quicksightMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type TemplateAliasList = js.Array[typings.awsSdk.quicksightMod.TemplateAlias]
+type TemplateAliasList = js.Array[TemplateAlias]
 
-type TemplateErrorList = js.Array[typings.awsSdk.quicksightMod.TemplateError]
+type TemplateErrorList = js.Array[TemplateError]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SOURCE_NOT_FOUND
@@ -527,30 +654,30 @@ type TemplateErrorList = js.Array[typings.awsSdk.quicksightMod.TemplateError]
   - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
   - java.lang.String
 */
-type TemplateErrorType = typings.awsSdk.quicksightMod._TemplateErrorType | java.lang.String
+type TemplateErrorType = _TemplateErrorType | java.lang.String
 
 type TemplateName = java.lang.String
 
-type TemplateSummaryList = js.Array[typings.awsSdk.quicksightMod.TemplateSummary]
+type TemplateSummaryList = js.Array[TemplateSummary]
 
-type TemplateVersionSummaryList = js.Array[typings.awsSdk.quicksightMod.TemplateVersionSummary]
+type TemplateVersionSummaryList = js.Array[TemplateVersionSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DOUBLE_QUOTE
   - typings.awsSdk.awsSdkStrings.SINGLE_QUOTE
   - java.lang.String
 */
-type TextQualifier = typings.awsSdk.quicksightMod._TextQualifier | java.lang.String
+type TextQualifier = _TextQualifier | java.lang.String
 
-type ThemeAliasList = js.Array[typings.awsSdk.quicksightMod.ThemeAlias]
+type ThemeAliasList = js.Array[ThemeAlias]
 
-type ThemeErrorList = js.Array[typings.awsSdk.quicksightMod.ThemeError]
+type ThemeErrorList = js.Array[ThemeError]
 
-type ThemeErrorType = typings.awsSdk.awsSdkStrings.INTERNAL_FAILURE | java.lang.String
+type ThemeErrorType = INTERNAL_FAILURE | java.lang.String
 
 type ThemeName = java.lang.String
 
-type ThemeSummaryList = js.Array[typings.awsSdk.quicksightMod.ThemeSummary]
+type ThemeSummaryList = js.Array[ThemeSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUICKSIGHT
@@ -558,21 +685,23 @@ type ThemeSummaryList = js.Array[typings.awsSdk.quicksightMod.ThemeSummary]
   - typings.awsSdk.awsSdkStrings.ALL
   - java.lang.String
 */
-type ThemeType = typings.awsSdk.quicksightMod._ThemeType | java.lang.String
+type ThemeType = _ThemeType | java.lang.String
 
-type ThemeVersionSummaryList = js.Array[typings.awsSdk.quicksightMod.ThemeVersionSummary]
+type ThemeVersionSummaryList = js.Array[ThemeVersionSummary]
 
-type TimestampList = js.Array[typings.awsSdk.quicksightMod.Timestamp_]
+type Timestamp = js.Date
 
-type Timestamp_ = typings.std.Date
+type TimestampList = js.Array[js.Date]
 
-type TransformOperationList = js.Array[typings.awsSdk.quicksightMod.TransformOperation]
+type TransformOperationList = js.Array[TransformOperation]
 
 type TypeCastFormat = java.lang.String
 
-type UpdateResourcePermissionList = js.Array[typings.awsSdk.quicksightMod.ResourcePermission]
+type UpdateLinkPermissionList = js.Array[ResourcePermission]
 
-type UserList = js.Array[typings.awsSdk.quicksightMod.User]
+type UpdateResourcePermissionList = js.Array[ResourcePermission]
+
+type UserList = js.Array[User]
 
 type UserName_ = java.lang.String
 
@@ -584,7 +713,7 @@ type UserName_ = java.lang.String
   - typings.awsSdk.awsSdkStrings.RESTRICTED_READER
   - java.lang.String
 */
-type UserRole = typings.awsSdk.quicksightMod._UserRole | java.lang.String
+type UserRole = _UserRole | java.lang.String
 
 type Username = java.lang.String
 
@@ -601,8 +730,4 @@ type WorkGroup = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.quicksightMod._apiVersion | java.lang.String
-
-type long = scala.Double
-
-type timestamp = typings.std.Date
+type apiVersion = _apiVersion | java.lang.String

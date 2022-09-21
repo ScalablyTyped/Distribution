@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("autobahn", "Invocation")
 @js.native
-class Invocation ()
+open class Invocation ()
   extends StObject
      with IInvocation {
   def this(caller: Double) = this()

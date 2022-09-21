@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Greengrass ()
+open class Greengrass ()
   extends typings.awsSdk.allMod.Greengrass {
   def this(options: ClientConfiguration) = this()
 }

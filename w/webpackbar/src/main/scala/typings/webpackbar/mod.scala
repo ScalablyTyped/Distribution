@@ -1,5 +1,6 @@
 package typings.webpackbar
 
+import typings.webpack.mod.ProgressPlugin
 import typings.webpackbar.anon.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,13 +13,8 @@ object mod {
     */
   @JSImport("webpackbar", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with WebpackBar {
+  open class ^ () extends WebpackBar {
     def this(options: Options) = this()
-    
-    /* CompleteClass */
-    override val state: Status = js.native
   }
   
   trait Options extends StObject {
@@ -106,7 +102,7 @@ object mod {
       
       inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
       
-      inline def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value :_*))
+      inline def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value*))
     }
   }
   
@@ -247,7 +243,7 @@ object mod {
       
       inline def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
+      inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value*))
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -272,21 +268,9 @@ object mod {
   /**
     * Elegant ProgressBar and Profiler for Webpack
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProgressPlugin * / any */ trait WebpackBar extends StObject {
+  @js.native
+  trait WebpackBar extends ProgressPlugin {
     
-    val state: Status
-  }
-  object WebpackBar {
-    
-    inline def apply(state: Status): WebpackBar = {
-      val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
-      __obj.asInstanceOf[WebpackBar]
-    }
-    
-    extension [Self <: WebpackBar](x: Self) {
-      
-      inline def setState(value: Status): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-    }
+    val state: Status = js.native
   }
 }

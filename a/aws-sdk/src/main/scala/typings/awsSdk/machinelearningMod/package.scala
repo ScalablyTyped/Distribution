@@ -1,13 +1,15 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.sgd
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Algorithm = typings.awsSdk.awsSdkStrings.sgd | java.lang.String
+type Algorithm = sgd | String
 
-type AwsUserArn = java.lang.String
+type AwsUserArn = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CreatedAt
@@ -20,17 +22,17 @@ type AwsUserArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.DataURI
   - java.lang.String
 */
-type BatchPredictionFilterVariable = typings.awsSdk.machinelearningMod._BatchPredictionFilterVariable | java.lang.String
+type BatchPredictionFilterVariable = _BatchPredictionFilterVariable | String
 
-type BatchPredictions = js.Array[typings.awsSdk.machinelearningMod.BatchPrediction]
+type BatchPredictions = js.Array[BatchPrediction]
 
-type ComparatorValue = java.lang.String
+type ComparatorValue = String
 
-type ComputeStatistics = scala.Boolean
+type ComputeStatistics = Boolean
 
-type DataRearrangement = java.lang.String
+type DataRearrangement = String
 
-type DataSchema = java.lang.String
+type DataSchema = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CreatedAt
@@ -41,36 +43,36 @@ type DataSchema = java.lang.String
   - typings.awsSdk.awsSdkStrings.IAMUser
   - java.lang.String
 */
-type DataSourceFilterVariable = typings.awsSdk.machinelearningMod._DataSourceFilterVariable | java.lang.String
+type DataSourceFilterVariable = _DataSourceFilterVariable | String
 
-type DataSources = js.Array[typings.awsSdk.machinelearningMod.DataSource]
+type DataSources = js.Array[DataSource]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PredictiveModelType
   - typings.awsSdk.awsSdkStrings.Algorithm
   - java.lang.String
 */
-type DetailsAttributes = typings.awsSdk.machinelearningMod._DetailsAttributes | java.lang.String
+type DetailsAttributes = _DetailsAttributes | String
 
-type DetailsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.machinelearningMod.DetailsValue]
+type DetailsMap = StringDictionary[DetailsValue]
 
-type DetailsValue = java.lang.String
+type DetailsValue = String
 
-type EDPPipelineId = java.lang.String
+type EDPPipelineId = String
 
-type EDPResourceRole = java.lang.String
+type EDPResourceRole = String
 
-type EDPSecurityGroupId = java.lang.String
+type EDPSecurityGroupId = String
 
-type EDPSecurityGroupIds = js.Array[typings.awsSdk.machinelearningMod.EDPSecurityGroupId]
+type EDPSecurityGroupIds = js.Array[EDPSecurityGroupId]
 
-type EDPServiceRole = java.lang.String
+type EDPServiceRole = String
 
-type EDPSubnetId = java.lang.String
+type EDPSubnetId = String
 
-type EntityId = java.lang.String
+type EntityId = String
 
-type EntityName = java.lang.String
+type EntityName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -80,9 +82,9 @@ type EntityName = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type EntityStatus = typings.awsSdk.machinelearningMod._EntityStatus | java.lang.String
+type EntityStatus = _EntityStatus | String
 
-type EpochTime = typings.std.Date
+type EpochTime = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CreatedAt
@@ -95,15 +97,15 @@ type EpochTime = typings.std.Date
   - typings.awsSdk.awsSdkStrings.DataURI
   - java.lang.String
 */
-type EvaluationFilterVariable = typings.awsSdk.machinelearningMod._EvaluationFilterVariable | java.lang.String
+type EvaluationFilterVariable = _EvaluationFilterVariable | String
 
-type Evaluations = js.Array[typings.awsSdk.machinelearningMod.Evaluation]
+type Evaluations = js.Array[Evaluation]
 
-type IntegerType = scala.Double
+type IntegerType = Double
 
-type Label = java.lang.String
+type Label = String
 
-type LongType = scala.Double
+type LongType = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CreatedAt
@@ -118,9 +120,9 @@ type LongType = scala.Double
   - typings.awsSdk.awsSdkStrings.TrainingDataURI
   - java.lang.String
 */
-type MLModelFilterVariable = typings.awsSdk.machinelearningMod._MLModelFilterVariable | java.lang.String
+type MLModelFilterVariable = _MLModelFilterVariable | String
 
-type MLModelName = java.lang.String
+type MLModelName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.REGRESSION
@@ -128,31 +130,31 @@ type MLModelName = java.lang.String
   - typings.awsSdk.awsSdkStrings.MULTICLASS
   - java.lang.String
 */
-type MLModelType = typings.awsSdk.machinelearningMod._MLModelType | java.lang.String
+type MLModelType = _MLModelType | String
 
-type MLModels = js.Array[typings.awsSdk.machinelearningMod.MLModel]
+type MLModels = js.Array[MLModel]
 
-type Message = java.lang.String
+type Message = String
 
-type PageLimit = scala.Double
+type PageLimit = Double
 
-type PerformanceMetricsProperties = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.machinelearningMod.PerformanceMetricsPropertyValue]
+type PerformanceMetricsProperties = StringDictionary[PerformanceMetricsPropertyValue]
 
-type PerformanceMetricsPropertyKey = java.lang.String
+type PerformanceMetricsPropertyKey = String
 
-type PerformanceMetricsPropertyValue = java.lang.String
+type PerformanceMetricsPropertyValue = String
 
-type PresignedS3Url = java.lang.String
+type PresignedS3Url = String
 
-type RDSDatabaseName = java.lang.String
+type RDSDatabaseName = String
 
-type RDSDatabasePassword = java.lang.String
+type RDSDatabasePassword = String
 
-type RDSDatabaseUsername = java.lang.String
+type RDSDatabaseUsername = String
 
-type RDSInstanceIdentifier = java.lang.String
+type RDSInstanceIdentifier = String
 
-type RDSSelectSqlQuery = java.lang.String
+type RDSSelectSqlQuery = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -161,48 +163,48 @@ type RDSSelectSqlQuery = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type RealtimeEndpointStatus = typings.awsSdk.machinelearningMod._RealtimeEndpointStatus | java.lang.String
+type RealtimeEndpointStatus = _RealtimeEndpointStatus | String
 
-type Recipe = java.lang.String
+type Recipe = String
 
-type Record = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.machinelearningMod.VariableValue]
+type Record = StringDictionary[VariableValue]
 
-type RedshiftClusterIdentifier = java.lang.String
+type RedshiftClusterIdentifier = String
 
-type RedshiftDatabaseName = java.lang.String
+type RedshiftDatabaseName = String
 
-type RedshiftDatabasePassword = java.lang.String
+type RedshiftDatabasePassword = String
 
-type RedshiftDatabaseUsername = java.lang.String
+type RedshiftDatabaseUsername = String
 
-type RedshiftSelectSqlQuery = java.lang.String
+type RedshiftSelectSqlQuery = String
 
-type RoleARN = java.lang.String
+type RoleARN = String
 
-type S3Url = java.lang.String
+type S3Url = String
 
-type ScoreThreshold = scala.Double
+type ScoreThreshold = Double
 
-type ScoreValue = scala.Double
+type ScoreValue = Double
 
-type ScoreValuePerLabelMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.machinelearningMod.ScoreValue]
+type ScoreValuePerLabelMap = StringDictionary[ScoreValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.asc_
   - typings.awsSdk.awsSdkStrings.dsc
   - java.lang.String
 */
-type SortOrder = typings.awsSdk.machinelearningMod._SortOrder | java.lang.String
+type SortOrder = _SortOrder | String
 
-type StringType = java.lang.String
+type StringType = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.machinelearningMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.machinelearningMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BatchPrediction
@@ -211,23 +213,23 @@ type TagValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.MLModel
   - java.lang.String
 */
-type TaggableResourceType = typings.awsSdk.machinelearningMod._TaggableResourceType | java.lang.String
+type TaggableResourceType = _TaggableResourceType | String
 
-type TrainingParameters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.machinelearningMod.StringType]
+type TrainingParameters = StringDictionary[StringType]
 
-type VariableName = java.lang.String
+type VariableName = String
 
-type VariableValue = java.lang.String
+type VariableValue = String
 
-type Verbose = scala.Boolean
+type Verbose = Boolean
 
-type VipURL = java.lang.String
+type VipURL = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2014-12-12`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.machinelearningMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type floatLabel = scala.Double
+type floatLabel = Double

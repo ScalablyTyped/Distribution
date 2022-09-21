@@ -71,7 +71,7 @@ object global {
       current: GlideRecord,
       operation: GlideRecordOperation,
       vars: js.Object,
-      withSchedule: js.Any
+      withSchedule: Any
     ): GlideRecord = js.native
     def startFlowRetroactive(
       workflowID: String,
@@ -79,7 +79,7 @@ object global {
       current: GlideRecord,
       operation: GlideRecordOperation,
       vars: Unit,
-      withSchedule: js.Any
+      withSchedule: Any
     ): GlideRecord = js.native
   }
 }

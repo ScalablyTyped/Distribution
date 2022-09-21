@@ -1,11 +1,7 @@
 package typings.restartHooks
 
-import typings.restartHooks.restartHooksBooleans.`true`
-import typings.restartHooks.restartHooksStrings.down
-import typings.restartHooks.restartHooksStrings.up
 import typings.restartHooks.useBreakpointMod.BreakpointDirection
-import typings.std.Partial
-import typings.std.Record
+import typings.restartHooks.useBreakpointMod.BreakpointMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,11 +28,12 @@ object anon {
   @js.native
   trait FnCall[TKey /* <: String */] extends StObject {
     
-    def apply(breakpointMap: Partial[Record[TKey, BreakpointDirection]]): Boolean = js.native
+    def apply(breakpointMap: BreakpointMap[TKey]): Boolean = js.native
+    def apply(breakpointMap: BreakpointMap[TKey], window: Window): Boolean = js.native
     def apply(breakpoint: TKey): Boolean = js.native
-    def apply(breakpoint: TKey, direction: `true`): Boolean = js.native
-    def apply(breakpoint: TKey, direction: down): Boolean = js.native
-    def apply(breakpoint: TKey, direction: up): Boolean = js.native
+    def apply(breakpoint: TKey, direction: Unit, window: Window): Boolean = js.native
+    def apply(breakpoint: TKey, direction: BreakpointDirection): Boolean = js.native
+    def apply(breakpoint: TKey, direction: BreakpointDirection, window: Window): Boolean = js.native
   }
   
   /* Inlined std.Partial<std.Record<@restart/hooks.@restart/hooks/cjs/useBreakpoint.DefaultBreakpoints, @restart/hooks.@restart/hooks/cjs/useBreakpoint.BreakpointDirection>> */
@@ -51,6 +48,8 @@ object anon {
     var xl: js.UndefOr[BreakpointDirection] = js.undefined
     
     var xs: js.UndefOr[BreakpointDirection] = js.undefined
+    
+    var xxl: js.UndefOr[BreakpointDirection] = js.undefined
   }
   object PartialRecordDefaultBreak {
     
@@ -80,6 +79,10 @@ object anon {
       inline def setXs(value: BreakpointDirection): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
       inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+      
+      inline def setXxl(value: BreakpointDirection): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
+      
+      inline def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
     }
   }
   

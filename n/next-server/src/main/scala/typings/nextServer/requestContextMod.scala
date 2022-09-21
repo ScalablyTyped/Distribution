@@ -9,5 +9,5 @@ object requestContextMod {
   
   @JSImport("next-server/dist/lib/request-context", "RequestContext")
   @js.native
-  val RequestContext: Context[js.Any] = js.native
+  val RequestContext: Context[Any] = js.native
 }

@@ -11,7 +11,7 @@ object portalHostMod {
   
   @JSImport("@ant-design/react-native/lib/portal/portal-host", JSImport.Default)
   @js.native
-  class default () extends PortalHost
+  open class default () extends PortalHost
   /* static members */
   object default {
     
@@ -64,13 +64,13 @@ object portalHostMod {
     
     def add(e: ReactNode): Double
     
-    /* private */ var nextKey: js.Any
+    /* private */ var nextKey: Any
     
     def remove(key: Double): Unit
   }
   object PortalGuard {
     
-    inline def apply(add: ReactNode => Double, nextKey: js.Any, remove: Double => Unit): PortalGuard = {
+    inline def apply(add: ReactNode => Double, nextKey: Any, remove: Double => Unit): PortalGuard = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), nextKey = nextKey.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove))
       __obj.asInstanceOf[PortalGuard]
     }
@@ -79,7 +79,7 @@ object portalHostMod {
       
       inline def setAdd(value: ReactNode => Double): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      inline def setNextKey(value: js.Any): Self = StObject.set(x, "nextKey", value.asInstanceOf[js.Any])
+      inline def setNextKey(value: Any): Self = StObject.set(x, "nextKey", value.asInstanceOf[js.Any])
       
       inline def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     }
@@ -87,7 +87,7 @@ object portalHostMod {
   
   @js.native
   trait PortalHost
-    extends Component[PortalHostProps, js.Object, js.Any] {
+    extends Component[PortalHostProps, js.Object, Any] {
     
     var _manager: js.UndefOr[typings.antDesignReactNative.portalManagerMod.default] = js.native
     
@@ -99,7 +99,7 @@ object portalHostMod {
     var _queue: js.Array[Operation] = js.native
     
     def _setManager(): Unit = js.native
-    def _setManager(manager: js.Any): Unit = js.native
+    def _setManager(manager: Any): Unit = js.native
     
     def _unmount(key: Double): Unit = js.native
     

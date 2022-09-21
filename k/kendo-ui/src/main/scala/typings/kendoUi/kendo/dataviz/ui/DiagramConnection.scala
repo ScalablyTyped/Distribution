@@ -69,7 +69,7 @@ object DiagramConnection {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: DiagramConnectionPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: DiagramConnectionPoint*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setSelection(value: DiagramConnectionSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     

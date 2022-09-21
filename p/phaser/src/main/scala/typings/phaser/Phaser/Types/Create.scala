@@ -25,7 +25,7 @@ object Create {
     /**
       * An array of data, where each row is a string of single values 0-9A-F, or the period character.
       */
-    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var data: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The indexed palette that the data cell values map to.
@@ -74,11 +74,11 @@ object Create {
       
       inline def setClearCanvasUndefined: Self = StObject.set(x, "clearCanvas", js.undefined)
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setPalette(value: Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       

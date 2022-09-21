@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.cardMod.ICardProps
+import typings.blueprintjsCore.cardMod.CardProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Card")
 @js.native
-class Card protected ()
+open class Card protected ()
   extends typings.blueprintjsCore.cardMod.Card {
-  def this(props: ICardProps) = this()
-  def this(props: ICardProps, context: js.Any) = this()
+  def this(props: CardProps) = this()
+  def this(props: CardProps, context: Any) = this()
 }
 /* static members */
 object Card {
@@ -21,8 +21,8 @@ object Card {
   
   @JSImport("@blueprintjs/core/lib/esm/components", "Card.defaultProps")
   @js.native
-  def defaultProps: ICardProps = js.native
-  inline def defaultProps_=(x: ICardProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: CardProps = js.native
+  inline def defaultProps_=(x: CardProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "Card.displayName")
   @js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/router", "UrlTree")
 @js.native
-class UrlTree () extends StObject {
+open class UrlTree () extends StObject {
   
   /** The fragment of the URL */
   var fragment: String | Null = js.native

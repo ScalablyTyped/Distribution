@@ -84,7 +84,7 @@ object SizePerPageDropDownProps {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: (Double | Text)*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: (Double | Text)*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setVariation(value: DropDirection): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
     

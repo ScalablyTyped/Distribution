@@ -9,7 +9,7 @@ object transposeGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/transpose_gpu", "TransposeProgram")
   @js.native
-  class TransposeProgram protected ()
+  open class TransposeProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(aShape: js.Array[Double], newDim: js.Array[Double]) = this()

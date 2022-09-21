@@ -16,7 +16,7 @@ object updateContinuousBackupsCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/commands/UpdateContinuousBackupsCommand", "UpdateContinuousBackupsCommand")
   @js.native
-  class UpdateContinuousBackupsCommand protected ()
+  open class UpdateContinuousBackupsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object updateContinuousBackupsCommandMod {
     override val middlewareStack: MiddlewareStack[UpdateContinuousBackupsInput, UpdateContinuousBackupsOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[UpdateContinuousBackupsInput, UpdateContinuousBackupsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UpdateContinuousBackupsInput, UpdateContinuousBackupsOutput] = js.native
   }
 }

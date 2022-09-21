@@ -18,7 +18,7 @@ trait CustomXMLValidationErrors extends StObject {
   def Add(Node: CustomXMLNode, ErrorName: String, ErrorText: String, ClearedOnUpdate: Boolean): Unit = js.native
   def Add(Node: CustomXMLNode, ErrorName: String, ErrorText: Unit, ClearedOnUpdate: Boolean): Unit = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -26,5 +26,5 @@ trait CustomXMLValidationErrors extends StObject {
   
   def Item(Index: Double): CustomXMLValidationError = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

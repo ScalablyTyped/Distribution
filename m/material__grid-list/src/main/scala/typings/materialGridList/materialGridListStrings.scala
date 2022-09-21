@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object materialGridListStrings {
   
   @js.native
+  sealed trait accentColor extends StObject
+  inline def accentColor: accentColor = "accentColor".asInstanceOf[accentColor]
+  
+  @js.native
   sealed trait alignContent extends StObject
   inline def alignContent: alignContent = "alignContent".asInstanceOf[alignContent]
   
@@ -63,6 +67,14 @@ object materialGridListStrings {
   inline def animationTimingFunction: animationTimingFunction = "animationTimingFunction".asInstanceOf[animationTimingFunction]
   
   @js.native
+  sealed trait appearance extends StObject
+  inline def appearance: appearance = "appearance".asInstanceOf[appearance]
+  
+  @js.native
+  sealed trait aspectRatio extends StObject
+  inline def aspectRatio: aspectRatio = "aspectRatio".asInstanceOf[aspectRatio]
+  
+  @js.native
   sealed trait backfaceVisibility extends StObject
   inline def backfaceVisibility: backfaceVisibility = "backfaceVisibility".asInstanceOf[backfaceVisibility]
   
@@ -73,6 +85,10 @@ object materialGridListStrings {
   @js.native
   sealed trait backgroundAttachment extends StObject
   inline def backgroundAttachment: backgroundAttachment = "backgroundAttachment".asInstanceOf[backgroundAttachment]
+  
+  @js.native
+  sealed trait backgroundBlendMode extends StObject
+  inline def backgroundBlendMode: backgroundBlendMode = "backgroundBlendMode".asInstanceOf[backgroundBlendMode]
   
   @js.native
   sealed trait backgroundClip extends StObject
@@ -123,6 +139,14 @@ object materialGridListStrings {
   inline def border: border = "border".asInstanceOf[border]
   
   @js.native
+  sealed trait borderBlock extends StObject
+  inline def borderBlock: borderBlock = "borderBlock".asInstanceOf[borderBlock]
+  
+  @js.native
+  sealed trait borderBlockColor extends StObject
+  inline def borderBlockColor: borderBlockColor = "borderBlockColor".asInstanceOf[borderBlockColor]
+  
+  @js.native
   sealed trait borderBlockEnd extends StObject
   inline def borderBlockEnd: borderBlockEnd = "borderBlockEnd".asInstanceOf[borderBlockEnd]
   
@@ -153,6 +177,14 @@ object materialGridListStrings {
   @js.native
   sealed trait borderBlockStartWidth extends StObject
   inline def borderBlockStartWidth: borderBlockStartWidth = "borderBlockStartWidth".asInstanceOf[borderBlockStartWidth]
+  
+  @js.native
+  sealed trait borderBlockStyle extends StObject
+  inline def borderBlockStyle: borderBlockStyle = "borderBlockStyle".asInstanceOf[borderBlockStyle]
+  
+  @js.native
+  sealed trait borderBlockWidth extends StObject
+  inline def borderBlockWidth: borderBlockWidth = "borderBlockWidth".asInstanceOf[borderBlockWidth]
   
   @js.native
   sealed trait borderBottom extends StObject
@@ -187,6 +219,14 @@ object materialGridListStrings {
   inline def borderColor: borderColor = "borderColor".asInstanceOf[borderColor]
   
   @js.native
+  sealed trait borderEndEndRadius extends StObject
+  inline def borderEndEndRadius: borderEndEndRadius = "borderEndEndRadius".asInstanceOf[borderEndEndRadius]
+  
+  @js.native
+  sealed trait borderEndStartRadius extends StObject
+  inline def borderEndStartRadius: borderEndStartRadius = "borderEndStartRadius".asInstanceOf[borderEndStartRadius]
+  
+  @js.native
   sealed trait borderImage extends StObject
   inline def borderImage: borderImage = "borderImage".asInstanceOf[borderImage]
   
@@ -209,6 +249,14 @@ object materialGridListStrings {
   @js.native
   sealed trait borderImageWidth extends StObject
   inline def borderImageWidth: borderImageWidth = "borderImageWidth".asInstanceOf[borderImageWidth]
+  
+  @js.native
+  sealed trait borderInline extends StObject
+  inline def borderInline: borderInline = "borderInline".asInstanceOf[borderInline]
+  
+  @js.native
+  sealed trait borderInlineColor extends StObject
+  inline def borderInlineColor: borderInlineColor = "borderInlineColor".asInstanceOf[borderInlineColor]
   
   @js.native
   sealed trait borderInlineEnd extends StObject
@@ -241,6 +289,14 @@ object materialGridListStrings {
   @js.native
   sealed trait borderInlineStartWidth extends StObject
   inline def borderInlineStartWidth: borderInlineStartWidth = "borderInlineStartWidth".asInstanceOf[borderInlineStartWidth]
+  
+  @js.native
+  sealed trait borderInlineStyle extends StObject
+  inline def borderInlineStyle: borderInlineStyle = "borderInlineStyle".asInstanceOf[borderInlineStyle]
+  
+  @js.native
+  sealed trait borderInlineWidth extends StObject
+  inline def borderInlineWidth: borderInlineWidth = "borderInlineWidth".asInstanceOf[borderInlineWidth]
   
   @js.native
   sealed trait borderLeft extends StObject
@@ -281,6 +337,14 @@ object materialGridListStrings {
   @js.native
   sealed trait borderSpacing extends StObject
   inline def borderSpacing: borderSpacing = "borderSpacing".asInstanceOf[borderSpacing]
+  
+  @js.native
+  sealed trait borderStartEndRadius extends StObject
+  inline def borderStartEndRadius: borderStartEndRadius = "borderStartEndRadius".asInstanceOf[borderStartEndRadius]
+  
+  @js.native
+  sealed trait borderStartStartRadius extends StObject
+  inline def borderStartStartRadius: borderStartStartRadius = "borderStartStartRadius".asInstanceOf[borderStartStartRadius]
   
   @js.native
   sealed trait borderStyle extends StObject
@@ -375,6 +439,10 @@ object materialGridListStrings {
   inline def colorInterpolationFilters: colorInterpolationFilters = "colorInterpolationFilters".asInstanceOf[colorInterpolationFilters]
   
   @js.native
+  sealed trait colorScheme extends StObject
+  inline def colorScheme: colorScheme = "colorScheme".asInstanceOf[colorScheme]
+  
+  @js.native
   sealed trait columnCount extends StObject
   inline def columnCount: columnCount = "columnCount".asInstanceOf[columnCount]
   
@@ -415,6 +483,10 @@ object materialGridListStrings {
   inline def columns: columns = "columns".asInstanceOf[columns]
   
   @js.native
+  sealed trait contain extends StObject
+  inline def contain: contain = "contain".asInstanceOf[contain]
+  
+  @js.native
   sealed trait content extends StObject
   inline def content: content = "content".asInstanceOf[content]
   
@@ -425,6 +497,10 @@ object materialGridListStrings {
   @js.native
   sealed trait counterReset extends StObject
   inline def counterReset: counterReset = "counterReset".asInstanceOf[counterReset]
+  
+  @js.native
+  sealed trait counterSet extends StObject
+  inline def counterSet: counterSet = "counterSet".asInstanceOf[counterSet]
   
   @js.native
   sealed trait cssFloat extends StObject
@@ -527,6 +603,10 @@ object materialGridListStrings {
   inline def fontKerning: fontKerning = "fontKerning".asInstanceOf[fontKerning]
   
   @js.native
+  sealed trait fontOpticalSizing extends StObject
+  inline def fontOpticalSizing: fontOpticalSizing = "fontOpticalSizing".asInstanceOf[fontOpticalSizing]
+  
+  @js.native
   sealed trait fontSize extends StObject
   inline def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
   
@@ -551,6 +631,10 @@ object materialGridListStrings {
   inline def fontVariant: fontVariant = "fontVariant".asInstanceOf[fontVariant]
   
   @js.native
+  sealed trait fontVariantAlternates extends StObject
+  inline def fontVariantAlternates: fontVariantAlternates = "fontVariantAlternates".asInstanceOf[fontVariantAlternates]
+  
+  @js.native
   sealed trait fontVariantCaps extends StObject
   inline def fontVariantCaps: fontVariantCaps = "fontVariantCaps".asInstanceOf[fontVariantCaps]
   
@@ -571,16 +655,16 @@ object materialGridListStrings {
   inline def fontVariantPosition: fontVariantPosition = "fontVariantPosition".asInstanceOf[fontVariantPosition]
   
   @js.native
+  sealed trait fontVariationSettings extends StObject
+  inline def fontVariationSettings: fontVariationSettings = "fontVariationSettings".asInstanceOf[fontVariationSettings]
+  
+  @js.native
   sealed trait fontWeight extends StObject
   inline def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
   
   @js.native
   sealed trait gap extends StObject
   inline def gap: gap = "gap".asInstanceOf[gap]
-  
-  @js.native
-  sealed trait glyphOrientationVertical extends StObject
-  inline def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
   
   @js.native
   sealed trait grid extends StObject
@@ -675,6 +759,38 @@ object materialGridListStrings {
   inline def inlineSize: inlineSize = "inlineSize".asInstanceOf[inlineSize]
   
   @js.native
+  sealed trait inset extends StObject
+  inline def inset: inset = "inset".asInstanceOf[inset]
+  
+  @js.native
+  sealed trait insetBlock extends StObject
+  inline def insetBlock: insetBlock = "insetBlock".asInstanceOf[insetBlock]
+  
+  @js.native
+  sealed trait insetBlockEnd extends StObject
+  inline def insetBlockEnd: insetBlockEnd = "insetBlockEnd".asInstanceOf[insetBlockEnd]
+  
+  @js.native
+  sealed trait insetBlockStart extends StObject
+  inline def insetBlockStart: insetBlockStart = "insetBlockStart".asInstanceOf[insetBlockStart]
+  
+  @js.native
+  sealed trait insetInline extends StObject
+  inline def insetInline: insetInline = "insetInline".asInstanceOf[insetInline]
+  
+  @js.native
+  sealed trait insetInlineEnd extends StObject
+  inline def insetInlineEnd: insetInlineEnd = "insetInlineEnd".asInstanceOf[insetInlineEnd]
+  
+  @js.native
+  sealed trait insetInlineStart extends StObject
+  inline def insetInlineStart: insetInlineStart = "insetInlineStart".asInstanceOf[insetInlineStart]
+  
+  @js.native
+  sealed trait isolation extends StObject
+  inline def isolation: isolation = "isolation".asInstanceOf[isolation]
+  
+  @js.native
   sealed trait justifyContent extends StObject
   inline def justifyContent: justifyContent = "justifyContent".asInstanceOf[justifyContent]
   
@@ -731,6 +847,10 @@ object materialGridListStrings {
   inline def margin: margin = "margin".asInstanceOf[margin]
   
   @js.native
+  sealed trait marginBlock extends StObject
+  inline def marginBlock: marginBlock = "marginBlock".asInstanceOf[marginBlock]
+  
+  @js.native
   sealed trait marginBlockEnd extends StObject
   inline def marginBlockEnd: marginBlockEnd = "marginBlockEnd".asInstanceOf[marginBlockEnd]
   
@@ -741,6 +861,10 @@ object materialGridListStrings {
   @js.native
   sealed trait marginBottom extends StObject
   inline def marginBottom: marginBottom = "marginBottom".asInstanceOf[marginBottom]
+  
+  @js.native
+  sealed trait marginInline extends StObject
+  inline def marginInline: marginInline = "marginInline".asInstanceOf[marginInline]
   
   @js.native
   sealed trait marginInlineEnd extends StObject
@@ -783,12 +907,24 @@ object materialGridListStrings {
   inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
+  sealed trait maskClip extends StObject
+  inline def maskClip: maskClip = "maskClip".asInstanceOf[maskClip]
+  
+  @js.native
   sealed trait maskComposite extends StObject
   inline def maskComposite: maskComposite = "maskComposite".asInstanceOf[maskComposite]
   
   @js.native
   sealed trait maskImage extends StObject
   inline def maskImage: maskImage = "maskImage".asInstanceOf[maskImage]
+  
+  @js.native
+  sealed trait maskMode extends StObject
+  inline def maskMode: maskMode = "maskMode".asInstanceOf[maskMode]
+  
+  @js.native
+  sealed trait maskOrigin extends StObject
+  inline def maskOrigin: maskOrigin = "maskOrigin".asInstanceOf[maskOrigin]
   
   @js.native
   sealed trait maskPosition extends StObject
@@ -839,12 +975,32 @@ object materialGridListStrings {
   inline def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
   
   @js.native
+  sealed trait mixBlendMode extends StObject
+  inline def mixBlendMode: mixBlendMode = "mixBlendMode".asInstanceOf[mixBlendMode]
+  
+  @js.native
   sealed trait objectFit extends StObject
   inline def objectFit: objectFit = "objectFit".asInstanceOf[objectFit]
   
   @js.native
   sealed trait objectPosition extends StObject
   inline def objectPosition: objectPosition = "objectPosition".asInstanceOf[objectPosition]
+  
+  @js.native
+  sealed trait offset extends StObject
+  inline def offset: offset = "offset".asInstanceOf[offset]
+  
+  @js.native
+  sealed trait offsetDistance extends StObject
+  inline def offsetDistance: offsetDistance = "offsetDistance".asInstanceOf[offsetDistance]
+  
+  @js.native
+  sealed trait offsetPath extends StObject
+  inline def offsetPath: offsetPath = "offsetPath".asInstanceOf[offsetPath]
+  
+  @js.native
+  sealed trait offsetRotate extends StObject
+  inline def offsetRotate: offsetRotate = "offsetRotate".asInstanceOf[offsetRotate]
   
   @js.native
   sealed trait opacity extends StObject
@@ -923,6 +1079,10 @@ object materialGridListStrings {
   inline def padding: padding = "padding".asInstanceOf[padding]
   
   @js.native
+  sealed trait paddingBlock extends StObject
+  inline def paddingBlock: paddingBlock = "paddingBlock".asInstanceOf[paddingBlock]
+  
+  @js.native
   sealed trait paddingBlockEnd extends StObject
   inline def paddingBlockEnd: paddingBlockEnd = "paddingBlockEnd".asInstanceOf[paddingBlockEnd]
   
@@ -933,6 +1093,10 @@ object materialGridListStrings {
   @js.native
   sealed trait paddingBottom extends StObject
   inline def paddingBottom: paddingBottom = "paddingBottom".asInstanceOf[paddingBottom]
+  
+  @js.native
+  sealed trait paddingInline extends StObject
+  inline def paddingInline: paddingInline = "paddingInline".asInstanceOf[paddingInline]
   
   @js.native
   sealed trait paddingInlineEnd extends StObject
@@ -1003,6 +1167,10 @@ object materialGridListStrings {
   inline def position: position = "position".asInstanceOf[position]
   
   @js.native
+  sealed trait printColorAdjust extends StObject
+  inline def printColorAdjust: printColorAdjust = "printColorAdjust".asInstanceOf[printColorAdjust]
+  
+  @js.native
   sealed trait quotes extends StObject
   inline def quotes: quotes = "quotes".asInstanceOf[quotes]
   
@@ -1023,10 +1191,6 @@ object materialGridListStrings {
   inline def rowGap: rowGap = "rowGap".asInstanceOf[rowGap]
   
   @js.native
-  sealed trait rubyAlign extends StObject
-  inline def rubyAlign: rubyAlign = "rubyAlign".asInstanceOf[rubyAlign]
-  
-  @js.native
   sealed trait rubyPosition extends StObject
   inline def rubyPosition: rubyPosition = "rubyPosition".asInstanceOf[rubyPosition]
   
@@ -1037,6 +1201,122 @@ object materialGridListStrings {
   @js.native
   sealed trait scrollBehavior extends StObject
   inline def scrollBehavior: scrollBehavior = "scrollBehavior".asInstanceOf[scrollBehavior]
+  
+  @js.native
+  sealed trait scrollMargin extends StObject
+  inline def scrollMargin: scrollMargin = "scrollMargin".asInstanceOf[scrollMargin]
+  
+  @js.native
+  sealed trait scrollMarginBlock extends StObject
+  inline def scrollMarginBlock: scrollMarginBlock = "scrollMarginBlock".asInstanceOf[scrollMarginBlock]
+  
+  @js.native
+  sealed trait scrollMarginBlockEnd extends StObject
+  inline def scrollMarginBlockEnd: scrollMarginBlockEnd = "scrollMarginBlockEnd".asInstanceOf[scrollMarginBlockEnd]
+  
+  @js.native
+  sealed trait scrollMarginBlockStart extends StObject
+  inline def scrollMarginBlockStart: scrollMarginBlockStart = "scrollMarginBlockStart".asInstanceOf[scrollMarginBlockStart]
+  
+  @js.native
+  sealed trait scrollMarginBottom extends StObject
+  inline def scrollMarginBottom: scrollMarginBottom = "scrollMarginBottom".asInstanceOf[scrollMarginBottom]
+  
+  @js.native
+  sealed trait scrollMarginInline extends StObject
+  inline def scrollMarginInline: scrollMarginInline = "scrollMarginInline".asInstanceOf[scrollMarginInline]
+  
+  @js.native
+  sealed trait scrollMarginInlineEnd extends StObject
+  inline def scrollMarginInlineEnd: scrollMarginInlineEnd = "scrollMarginInlineEnd".asInstanceOf[scrollMarginInlineEnd]
+  
+  @js.native
+  sealed trait scrollMarginInlineStart extends StObject
+  inline def scrollMarginInlineStart: scrollMarginInlineStart = "scrollMarginInlineStart".asInstanceOf[scrollMarginInlineStart]
+  
+  @js.native
+  sealed trait scrollMarginLeft extends StObject
+  inline def scrollMarginLeft: scrollMarginLeft = "scrollMarginLeft".asInstanceOf[scrollMarginLeft]
+  
+  @js.native
+  sealed trait scrollMarginRight extends StObject
+  inline def scrollMarginRight: scrollMarginRight = "scrollMarginRight".asInstanceOf[scrollMarginRight]
+  
+  @js.native
+  sealed trait scrollMarginTop extends StObject
+  inline def scrollMarginTop: scrollMarginTop = "scrollMarginTop".asInstanceOf[scrollMarginTop]
+  
+  @js.native
+  sealed trait scrollPadding extends StObject
+  inline def scrollPadding: scrollPadding = "scrollPadding".asInstanceOf[scrollPadding]
+  
+  @js.native
+  sealed trait scrollPaddingBlock extends StObject
+  inline def scrollPaddingBlock: scrollPaddingBlock = "scrollPaddingBlock".asInstanceOf[scrollPaddingBlock]
+  
+  @js.native
+  sealed trait scrollPaddingBlockEnd extends StObject
+  inline def scrollPaddingBlockEnd: scrollPaddingBlockEnd = "scrollPaddingBlockEnd".asInstanceOf[scrollPaddingBlockEnd]
+  
+  @js.native
+  sealed trait scrollPaddingBlockStart extends StObject
+  inline def scrollPaddingBlockStart: scrollPaddingBlockStart = "scrollPaddingBlockStart".asInstanceOf[scrollPaddingBlockStart]
+  
+  @js.native
+  sealed trait scrollPaddingBottom extends StObject
+  inline def scrollPaddingBottom: scrollPaddingBottom = "scrollPaddingBottom".asInstanceOf[scrollPaddingBottom]
+  
+  @js.native
+  sealed trait scrollPaddingInline extends StObject
+  inline def scrollPaddingInline: scrollPaddingInline = "scrollPaddingInline".asInstanceOf[scrollPaddingInline]
+  
+  @js.native
+  sealed trait scrollPaddingInlineEnd extends StObject
+  inline def scrollPaddingInlineEnd: scrollPaddingInlineEnd = "scrollPaddingInlineEnd".asInstanceOf[scrollPaddingInlineEnd]
+  
+  @js.native
+  sealed trait scrollPaddingInlineStart extends StObject
+  inline def scrollPaddingInlineStart: scrollPaddingInlineStart = "scrollPaddingInlineStart".asInstanceOf[scrollPaddingInlineStart]
+  
+  @js.native
+  sealed trait scrollPaddingLeft extends StObject
+  inline def scrollPaddingLeft: scrollPaddingLeft = "scrollPaddingLeft".asInstanceOf[scrollPaddingLeft]
+  
+  @js.native
+  sealed trait scrollPaddingRight extends StObject
+  inline def scrollPaddingRight: scrollPaddingRight = "scrollPaddingRight".asInstanceOf[scrollPaddingRight]
+  
+  @js.native
+  sealed trait scrollPaddingTop extends StObject
+  inline def scrollPaddingTop: scrollPaddingTop = "scrollPaddingTop".asInstanceOf[scrollPaddingTop]
+  
+  @js.native
+  sealed trait scrollSnapAlign extends StObject
+  inline def scrollSnapAlign: scrollSnapAlign = "scrollSnapAlign".asInstanceOf[scrollSnapAlign]
+  
+  @js.native
+  sealed trait scrollSnapStop extends StObject
+  inline def scrollSnapStop: scrollSnapStop = "scrollSnapStop".asInstanceOf[scrollSnapStop]
+  
+  @js.native
+  sealed trait scrollSnapType extends StObject
+  inline def scrollSnapType: scrollSnapType = "scrollSnapType".asInstanceOf[scrollSnapType]
+  
+  @js.native
+  sealed trait scrollbarGutter extends StObject
+  inline def scrollbarGutter: scrollbarGutter = "scrollbarGutter".asInstanceOf[scrollbarGutter]
+  
+  @js.native
+  sealed trait shapeImageThreshold extends StObject
+  inline def shapeImageThreshold: shapeImageThreshold = "shapeImageThreshold".asInstanceOf[shapeImageThreshold]
+  
+  @js.native
+  sealed trait shapeMargin extends StObject
+  inline def shapeMargin: shapeMargin = "shapeMargin".asInstanceOf[shapeMargin]
+  
+  @js.native
+  sealed trait shapeOutside extends StObject
+  inline def shapeOutside: shapeOutside = "shapeOutside".asInstanceOf[shapeOutside]
   
   @js.native
   sealed trait shapeRendering extends StObject
@@ -1119,8 +1399,16 @@ object materialGridListStrings {
   inline def textDecorationLine: textDecorationLine = "textDecorationLine".asInstanceOf[textDecorationLine]
   
   @js.native
+  sealed trait textDecorationSkipInk extends StObject
+  inline def textDecorationSkipInk: textDecorationSkipInk = "textDecorationSkipInk".asInstanceOf[textDecorationSkipInk]
+  
+  @js.native
   sealed trait textDecorationStyle extends StObject
   inline def textDecorationStyle: textDecorationStyle = "textDecorationStyle".asInstanceOf[textDecorationStyle]
+  
+  @js.native
+  sealed trait textDecorationThickness extends StObject
+  inline def textDecorationThickness: textDecorationThickness = "textDecorationThickness".asInstanceOf[textDecorationThickness]
   
   @js.native
   sealed trait textEmphasis extends StObject
@@ -1143,10 +1431,6 @@ object materialGridListStrings {
   inline def textIndent: textIndent = "textIndent".asInstanceOf[textIndent]
   
   @js.native
-  sealed trait textJustify extends StObject
-  inline def textJustify: textJustify = "textJustify".asInstanceOf[textJustify]
-  
-  @js.native
   sealed trait textOrientation extends StObject
   inline def textOrientation: textOrientation = "textOrientation".asInstanceOf[textOrientation]
   
@@ -1165,6 +1449,10 @@ object materialGridListStrings {
   @js.native
   sealed trait textTransform extends StObject
   inline def textTransform: textTransform = "textTransform".asInstanceOf[textTransform]
+  
+  @js.native
+  sealed trait textUnderlineOffset extends StObject
+  inline def textUnderlineOffset: textUnderlineOffset = "textUnderlineOffset".asInstanceOf[textUnderlineOffset]
   
   @js.native
   sealed trait textUnderlinePosition extends StObject
@@ -1459,10 +1747,6 @@ object materialGridListStrings {
   inline def webkitPerspectiveOrigin: webkitPerspectiveOrigin = "webkitPerspectiveOrigin".asInstanceOf[webkitPerspectiveOrigin]
   
   @js.native
-  sealed trait webkitTapHighlightColor extends StObject
-  inline def webkitTapHighlightColor: webkitTapHighlightColor = "webkitTapHighlightColor".asInstanceOf[webkitTapHighlightColor]
-  
-  @js.native
   sealed trait webkitTextFillColor extends StObject
   inline def webkitTextFillColor: webkitTextFillColor = "webkitTextFillColor".asInstanceOf[webkitTextFillColor]
   
@@ -1553,8 +1837,4 @@ object materialGridListStrings {
   @js.native
   sealed trait zIndex extends StObject
   inline def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
-  
-  @js.native
-  sealed trait zoom extends StObject
-  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "SmartArrayNoDuplicate")
 @js.native
-class SmartArrayNoDuplicate[T] protected ()
+open class SmartArrayNoDuplicate[T] protected ()
   extends typings.babylonjs.indexMod.SmartArrayNoDuplicate[T] {
   /**
     * Instantiates a Smart Array.

@@ -10,10 +10,10 @@ Javascript implementation of the L-diggity.
 | ------------------ | :-------------: |
 | Full name          | levenshtein |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 71 |
-| # downloads        | 521747 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 117900.66666666667 |
+| # stars            | 276.0 |
 
 ## Links
 - [Homepage](https://github.com/gf3/Levenshtein)

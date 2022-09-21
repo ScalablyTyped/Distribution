@@ -2,6 +2,7 @@ package typings.reactNativeMaterialMenu
 
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
@@ -17,39 +18,40 @@ object mod {
   
   @JSImport("react-native-material-menu", JSImport.Default)
   @js.native
-  class default () extends Menu
+  open class default () extends Menu
   
   @JSImport("react-native-material-menu", "MenuDivider")
   @js.native
-  class MenuDivider protected ()
-    extends Component[MenuDividerProps, js.Object, js.Any] {
+  open class MenuDivider protected ()
+    extends Component[MenuDividerProps, js.Object, Any] {
     def this(props: MenuDividerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MenuDividerProps, context: js.Any) = this()
+    def this(props: MenuDividerProps, context: Any) = this()
   }
   
   @JSImport("react-native-material-menu", "MenuItem")
   @js.native
-  class MenuItem protected ()
-    extends Component[MenuItemProps, js.Object, js.Any] {
+  open class MenuItem protected ()
+    extends Component[MenuItemProps, js.Object, Any] {
     def this(props: MenuItemProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: MenuItemProps, context: js.Any) = this()
+    def this(props: MenuItemProps, context: Any) = this()
   }
   
   @js.native
   trait Menu
-    extends Component[MenuProps, js.Object, js.Any] {
+    extends Component[MenuProps, js.Object, Any] {
     
-    def hide(): js.Object = js.native
+    def hide(): Unit = js.native
+    def hide(onHidden: js.Function0[Unit]): Unit = js.native
     
-    def show(): js.Object = js.native
+    def show(): Unit = js.native
   }
   
   trait MenuDividerProps extends StObject {
@@ -72,6 +74,8 @@ object mod {
   }
   
   trait MenuItemProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -97,6 +101,10 @@ object mod {
     }
     
     extension [Self <: MenuItemProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -140,6 +148,8 @@ object mod {
     
     var button: js.UndefOr[ReactElement] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var onHidden: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
@@ -162,6 +172,10 @@ object mod {
       inline def setButton(value: ReactElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
       inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setOnHidden(value: () => Unit): Self = StObject.set(x, "onHidden", js.Any.fromFunction0(value))
       

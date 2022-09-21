@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new canvas to draw images, shapes and texts on.
   * @see https://docs.scriptable.app/drawcontext/#-new-drawcontext
   */
-class DrawContext ()
+open class DrawContext ()
   extends StObject
      with typings.scriptableIos.DrawContext {
   
@@ -120,7 +120,7 @@ class DrawContext ()
   /**
     * _Retrieves the image._
     *
-    * Call this to retrieve the image you have drawn to the context. Note that this should be called before calling endDrawing().
+    * Call this to retrieve the image you have drawn to the context.
     * @see https://docs.scriptable.app/drawcontext/#-getimage
     */
   /* CompleteClass */

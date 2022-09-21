@@ -10,10 +10,10 @@ A library for binding to keys and key combos without the pain of key codes and k
 | ------------------ | :-------------: |
 | Full name          | keyboardjs |
 | Keywords           | Key Binding, Keyboard, Key combos, Keyboard Shortcuts |
-| # releases         | 6 |
-| # dependents       | 33 |
-| # downloads        | 679693 |
-| # stars            | 4 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 77512.66666666667 |
+| # stars            | 1957.0 |
 
 ## Links
 - [Homepage](https://github.com/RobertWHurst/KeyboardJS#readme)

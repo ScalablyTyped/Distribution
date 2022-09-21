@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTabControlBase")
 @js.native
-class ASPxClientTabControlBase ()
+open class ASPxClientTabControlBase ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTabControlBase {
   
@@ -101,13 +101,13 @@ class ASPxClientTabControlBase ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a tab specified by its index. An ASPxClientTab object representing the tab located at the specified index within the control's ASPxTabControl.Tabs collection.

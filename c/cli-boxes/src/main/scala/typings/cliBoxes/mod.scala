@@ -12,11 +12,13 @@ import cliBoxes = require('cli-boxes');
 console.log(cliBoxes.single);
 // {
 // 	topLeft: '┌',
+// 	top: '─',
 // 	topRight: '┐',
+// 	right: '│',
 // 	bottomRight: '┘',
+// 	bottom: '─',
 // 	bottomLeft: '└',
-// 	vertical: '│',
-// 	horizontal: '─'
+// 	left: '│'
 // }
 ```
 */
@@ -30,7 +32,19 @@ object mod {
   // TODO: Remove this for the next major release
   @JSImport("cli-boxes", "default")
   @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliBoxes */ js.Any = js.native
+  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliBoxes */ Any = js.native
+  
+  /**
+  		@example
+  		```
+  		↘↓↓↓↓↙
+  		→    ←
+  		↗↑↑↑↑↖
+  		```
+  		*/
+  @JSImport("cli-boxes", "arrow")
+  @js.native
+  val arrow: BoxStyle = js.native
   
   /**
   		@example
@@ -56,7 +70,7 @@ object mod {
   @js.native
   val classic: BoxStyle = js.native
   
-  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliBoxes */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliBoxes */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   		@example
@@ -123,45 +137,55 @@ object mod {
   	*/
   trait BoxStyle extends StObject {
     
+    val bottom: String
+    
     val bottomLeft: String
     
     val bottomRight: String
     
-    val horizontal: String
+    val left: String
+    
+    val right: String
+    
+    val top: String
     
     val topLeft: String
     
     val topRight: String
-    
-    val vertical: String
   }
   object BoxStyle {
     
     inline def apply(
+      bottom: String,
       bottomLeft: String,
       bottomRight: String,
-      horizontal: String,
+      left: String,
+      right: String,
+      top: String,
       topLeft: String,
-      topRight: String,
-      vertical: String
+      topRight: String
     ): BoxStyle = {
-      val __obj = js.Dynamic.literal(bottomLeft = bottomLeft.asInstanceOf[js.Any], bottomRight = bottomRight.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], topLeft = topLeft.asInstanceOf[js.Any], topRight = topRight.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], bottomLeft = bottomLeft.asInstanceOf[js.Any], bottomRight = bottomRight.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], topLeft = topLeft.asInstanceOf[js.Any], topRight = topRight.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoxStyle]
     }
     
     extension [Self <: BoxStyle](x: Self) {
       
+      inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      
       inline def setBottomLeft(value: String): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       
       inline def setBottomRight(value: String): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
       
-      inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      
+      inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
       inline def setTopLeft(value: String): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
       
       inline def setTopRight(value: String): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
-      
-      inline def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,6 +193,16 @@ object mod {
   	All box styles.
   	*/
   trait Boxes extends StObject {
+    
+    /**
+    		@example
+    		```
+    		↘↓↓↓↓↙
+    		→    ←
+    		↗↑↑↑↑↖
+    		```
+    		*/
+    val arrow: BoxStyle
     
     /**
     		@example
@@ -243,6 +277,7 @@ object mod {
   object Boxes {
     
     inline def apply(
+      arrow: BoxStyle,
       bold: BoxStyle,
       classic: BoxStyle,
       double: BoxStyle,
@@ -251,11 +286,13 @@ object mod {
       single: BoxStyle,
       singleDouble: BoxStyle
     ): Boxes = {
-      val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], classic = classic.asInstanceOf[js.Any], double = double.asInstanceOf[js.Any], doubleSingle = doubleSingle.asInstanceOf[js.Any], round = round.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any], singleDouble = singleDouble.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(arrow = arrow.asInstanceOf[js.Any], bold = bold.asInstanceOf[js.Any], classic = classic.asInstanceOf[js.Any], double = double.asInstanceOf[js.Any], doubleSingle = doubleSingle.asInstanceOf[js.Any], round = round.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any], singleDouble = singleDouble.asInstanceOf[js.Any])
       __obj.asInstanceOf[Boxes]
     }
     
     extension [Self <: Boxes](x: Self) {
+      
+      inline def setArrow(value: BoxStyle): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
       inline def setBold(value: BoxStyle): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       

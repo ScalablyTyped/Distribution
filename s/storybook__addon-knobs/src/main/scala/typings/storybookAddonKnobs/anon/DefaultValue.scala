@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DefaultValue extends StObject {
   
-  var callback: ButtonTypeOnClickProp & js.UndefOr[js.Function0[js.Any]]
+  var callback: ButtonTypeOnClickProp & js.UndefOr[js.Function0[Any]]
   
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   var disableDebounce: js.UndefOr[Boolean] = js.undefined
   
@@ -24,7 +24,7 @@ trait DefaultValue extends StObject {
   
   var name: String
   
-  var `type`: js.Any
+  var `type`: Any
   
   var used: js.UndefOr[Boolean] = js.undefined
   
@@ -33,11 +33,11 @@ trait DefaultValue extends StObject {
 object DefaultValue {
   
   inline def apply(
-    callback: ButtonTypeOnClickProp & js.UndefOr[js.Function0[js.Any]],
+    callback: ButtonTypeOnClickProp & js.UndefOr[js.Function0[Any]],
     hideLabel: `true` & js.UndefOr[Boolean],
     label: String,
     name: String,
-    `type`: js.Any,
+    `type`: Any,
     value: Unit
   ): DefaultValue = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], hideLabel = hideLabel.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
@@ -47,9 +47,9 @@ object DefaultValue {
   
   extension [Self <: DefaultValue](x: Self) {
     
-    inline def setCallback(value: ButtonTypeOnClickProp & js.UndefOr[js.Function0[js.Any]]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: ButtonTypeOnClickProp & js.UndefOr[js.Function0[Any]]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -71,7 +71,7 @@ object DefaultValue {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     

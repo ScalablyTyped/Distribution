@@ -16,6 +16,8 @@ trait ExchangeProviderInfo extends StObject {
   // changenow-icon.jpg
   var isActive: Boolean
   
+  var isDex: Boolean
+  
   var isFixedRate: Boolean
   
   var isRefundRequired: js.UndefOr[Boolean] = js.undefined
@@ -47,6 +49,7 @@ object ExchangeProviderInfo {
     buyTickers: js.Array[String],
     companyName: String,
     isActive: Boolean,
+    isDex: Boolean,
     isFixedRate: Boolean,
     kycUrl: String,
     logo: String,
@@ -55,7 +58,7 @@ object ExchangeProviderInfo {
     statusUrl: String,
     supportUrl: String
   ): ExchangeProviderInfo = {
-    val __obj = js.Dynamic.literal(addressFormats = addressFormats.asInstanceOf[js.Any], buyTickers = buyTickers.asInstanceOf[js.Any], companyName = companyName.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], isFixedRate = isFixedRate.asInstanceOf[js.Any], kycUrl = kycUrl.asInstanceOf[js.Any], logo = logo.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sellTickers = sellTickers.asInstanceOf[js.Any], statusUrl = statusUrl.asInstanceOf[js.Any], supportUrl = supportUrl.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addressFormats = addressFormats.asInstanceOf[js.Any], buyTickers = buyTickers.asInstanceOf[js.Any], companyName = companyName.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], isDex = isDex.asInstanceOf[js.Any], isFixedRate = isFixedRate.asInstanceOf[js.Any], kycUrl = kycUrl.asInstanceOf[js.Any], logo = logo.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sellTickers = sellTickers.asInstanceOf[js.Any], statusUrl = statusUrl.asInstanceOf[js.Any], supportUrl = supportUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExchangeProviderInfo]
   }
   
@@ -65,11 +68,13 @@ object ExchangeProviderInfo {
     
     inline def setBuyTickers(value: js.Array[String]): Self = StObject.set(x, "buyTickers", value.asInstanceOf[js.Any])
     
-    inline def setBuyTickersVarargs(value: String*): Self = StObject.set(x, "buyTickers", js.Array(value :_*))
+    inline def setBuyTickersVarargs(value: String*): Self = StObject.set(x, "buyTickers", js.Array(value*))
     
     inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    
+    inline def setIsDex(value: Boolean): Self = StObject.set(x, "isDex", value.asInstanceOf[js.Any])
     
     inline def setIsFixedRate(value: Boolean): Self = StObject.set(x, "isFixedRate", value.asInstanceOf[js.Any])
     
@@ -89,7 +94,7 @@ object ExchangeProviderInfo {
     
     inline def setSellTickers(value: js.Array[String]): Self = StObject.set(x, "sellTickers", value.asInstanceOf[js.Any])
     
-    inline def setSellTickersVarargs(value: String*): Self = StObject.set(x, "sellTickers", js.Array(value :_*))
+    inline def setSellTickersVarargs(value: String*): Self = StObject.set(x, "sellTickers", js.Array(value*))
     
     inline def setStatusUrl(value: String): Self = StObject.set(x, "statusUrl", value.asInstanceOf[js.Any])
     

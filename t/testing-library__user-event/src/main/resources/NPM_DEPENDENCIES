@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@testing-library/user-event" : "12.2.2"
+      "@testing-library/user-event" : "14.4.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@testing-library/user-event" : "12.2.2"
+      "@testing-library/user-event" : "14.4.3"
     }
   ],
   "compile-devDependencies" : [

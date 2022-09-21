@@ -17,13 +17,19 @@ trait GoogleCloudDialogflowV2QueryResult extends StObject {
   var allRequiredParamsPresent: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Indicates whether the conversational query triggers a cancellation for slot filling. For more information, see the [cancel slot filling
+    * documentation](https://cloud.google.com/dialogflow/es/docs/intents-actions-parameters#cancel).
+    */
+  var cancelsSlotFilling: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Free-form diagnostic information for the associated detect intent request. The fields of this data can change without notice, so you should not write code that depends on its
     * structure. The data may contain: - webhook call latency - webhook errors
     */
   var diagnosticInfo: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
   ] = js.undefined
   
   /** The collection of rich messages to present to the user. */
@@ -57,13 +63,13 @@ trait GoogleCloudDialogflowV2QueryResult extends StObject {
   /**
     * The collection of extracted parameters. Depending on your protocol or client library language, this is a map, associative array, symbol table, dictionary, or JSON object composed of
     * a collection of (MapKey, MapValue) pairs: - MapKey type: string - MapKey value: parameter name - MapValue type: - If parameter's entity type is a composite entity: map - Else:
-    * string or number, depending on parameter value type - MapValue value: - If parameter's entity type is a composite entity: map from composite entity property names to property values
-    * - Else: parameter value
+    * depending on parameter value type, could be one of string, number, boolean, null, list or map - MapValue value: - If parameter's entity type is a composite entity: map from
+    * composite entity property names to property values - Else: parameter value
     */
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -87,7 +93,7 @@ trait GoogleCloudDialogflowV2QueryResult extends StObject {
   var webhookPayload: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
   ] = js.undefined
   
   /** If the query was fulfilled by a webhook call, this field is set to the value of the `source` field returned in the webhook response. */
@@ -110,10 +116,14 @@ object GoogleCloudDialogflowV2QueryResult {
     
     inline def setAllRequiredParamsPresentUndefined: Self = StObject.set(x, "allRequiredParamsPresent", js.undefined)
     
+    inline def setCancelsSlotFilling(value: Boolean): Self = StObject.set(x, "cancelsSlotFilling", value.asInstanceOf[js.Any])
+    
+    inline def setCancelsSlotFillingUndefined: Self = StObject.set(x, "cancelsSlotFilling", js.undefined)
+    
     inline def setDiagnosticInfo(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
     ): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
     
     inline def setDiagnosticInfoUndefined: Self = StObject.set(x, "diagnosticInfo", js.undefined)
@@ -122,7 +132,7 @@ object GoogleCloudDialogflowV2QueryResult {
     
     inline def setFulfillmentMessagesUndefined: Self = StObject.set(x, "fulfillmentMessages", js.undefined)
     
-    inline def setFulfillmentMessagesVarargs(value: GoogleCloudDialogflowV2IntentMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value :_*))
+    inline def setFulfillmentMessagesVarargs(value: GoogleCloudDialogflowV2IntentMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value*))
     
     inline def setFulfillmentText(value: String): Self = StObject.set(x, "fulfillmentText", value.asInstanceOf[js.Any])
     
@@ -144,12 +154,12 @@ object GoogleCloudDialogflowV2QueryResult {
     
     inline def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
-    inline def setOutputContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
+    inline def setOutputContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = StObject.set(x, "outputContexts", js.Array(value*))
     
     inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
@@ -169,7 +179,7 @@ object GoogleCloudDialogflowV2QueryResult {
     inline def setWebhookPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
     ): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
     
     inline def setWebhookPayloadUndefined: Self = StObject.set(x, "webhookPayload", js.undefined)

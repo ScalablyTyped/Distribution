@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogCustomAttributeValue")
 @js.native
-class CatalogCustomAttributeValue () extends StObject {
+open class CatalogCustomAttributeValue () extends StObject {
   
   /**
     * A `true` or `false` value. Populated if `type` = `BOOLEAN`.

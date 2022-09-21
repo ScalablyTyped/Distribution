@@ -23,6 +23,6 @@ object Asm {
     
     inline def setGroups_to_display(value: js.Array[Double]): Self = StObject.set(x, "groups_to_display", value.asInstanceOf[js.Any])
     
-    inline def setGroups_to_displayVarargs(value: Double*): Self = StObject.set(x, "groups_to_display", js.Array(value :_*))
+    inline def setGroups_to_displayVarargs(value: Double*): Self = StObject.set(x, "groups_to_display", js.Array(value*))
   }
 }

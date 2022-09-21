@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object delayDeciderMod {
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/delayDecider", JSImport.Namespace)
+  @JSImport("@aws-sdk/middleware-retry/dist-types/delayDecider", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

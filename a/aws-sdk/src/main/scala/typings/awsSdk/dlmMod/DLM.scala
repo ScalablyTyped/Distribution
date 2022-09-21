@@ -15,12 +15,12 @@ trait DLM extends Service {
   var config_DLM: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a policy to manage the lifecycle of the specified AWS resources. You can create up to 100 lifecycle policies.
+    * Creates a policy to manage the lifecycle of the specified Amazon Web Services resources. You can create up to 100 lifecycle policies.
     */
   def createLifecyclePolicy(): Request[CreateLifecyclePolicyResponse, AWSError] = js.native
   def createLifecyclePolicy(callback: js.Function2[/* err */ AWSError, /* data */ CreateLifecyclePolicyResponse, Unit]): Request[CreateLifecyclePolicyResponse, AWSError] = js.native
   /**
-    * Creates a policy to manage the lifecycle of the specified AWS resources. You can create up to 100 lifecycle policies.
+    * Creates a policy to manage the lifecycle of the specified Amazon Web Services resources. You can create up to 100 lifecycle policies.
     */
   def createLifecyclePolicy(params: CreateLifecyclePolicyRequest): Request[CreateLifecyclePolicyResponse, AWSError] = js.native
   def createLifecyclePolicy(

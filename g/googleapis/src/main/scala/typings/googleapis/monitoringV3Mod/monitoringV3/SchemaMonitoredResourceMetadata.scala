@@ -5,31 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Auxiliary metadata for a MonitoredResource object. MonitoredResource
-  * objects contain the minimum set of information to uniquely identify a
-  * monitored resource instance. There is some other useful auxiliary metadata.
-  * Monitoring and Logging use an ingestion pipeline to extract metadata for
-  * cloud resources of all types, and store the metadata in this message.
-  */
 trait SchemaMonitoredResourceMetadata extends StObject {
   
   /**
-    * Output only. Values for predefined system metadata labels. System labels
-    * are a kind of metadata extracted by Google, including
-    * &quot;machine_image&quot;, &quot;vpc&quot;, &quot;subnet_id&quot;,
-    * &quot;security_group&quot;, &quot;name&quot;, etc. System label values
-    * can be only strings, Boolean values, or a list of strings. For example: {
-    * &quot;name&quot;: &quot;my-test-instance&quot;,
-    * &quot;security_group&quot;: [&quot;a&quot;, &quot;b&quot;,
-    * &quot;c&quot;],   &quot;spot_instance&quot;: false }
+    * Output only. Values for predefined system metadata labels. System labels are a kind of metadata extracted by Google, including "machine_image", "vpc", "subnet_id", "security_group", "name", etc. System label values can be only strings, Boolean values, or a list of strings. For example: { "name": "my-test-instance", "security_group": ["a", "b", "c"], "spot_instance": false \}
     */
-  var systemLabels: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var systemLabels: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
   
   /**
     * Output only. A map of user-defined metadata labels.
     */
-  var userLabels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var userLabels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
 }
 object SchemaMonitoredResourceMetadata {
   
@@ -40,11 +26,15 @@ object SchemaMonitoredResourceMetadata {
   
   extension [Self <: SchemaMonitoredResourceMetadata](x: Self) {
     
-    inline def setSystemLabels(value: StringDictionary[js.Any]): Self = StObject.set(x, "systemLabels", value.asInstanceOf[js.Any])
+    inline def setSystemLabels(value: StringDictionary[Any]): Self = StObject.set(x, "systemLabels", value.asInstanceOf[js.Any])
+    
+    inline def setSystemLabelsNull: Self = StObject.set(x, "systemLabels", null)
     
     inline def setSystemLabelsUndefined: Self = StObject.set(x, "systemLabels", js.undefined)
     
     inline def setUserLabels(value: StringDictionary[String]): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
+    
+    inline def setUserLabelsNull: Self = StObject.set(x, "userLabels", null)
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
   }

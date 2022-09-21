@@ -12,7 +12,7 @@ trait PersonalUsagePolicies extends StObject {
   /** Whether camera is disabled. */
   var cameraDisabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Controls how long the work profile can stay off. */
+  /** Controls how long the work profile can stay off. The duration must be at least 3 days. */
   var maxDaysWithWorkOff: js.UndefOr[Double] = js.undefined
   
   /** Policy applied to applications in the personal profile. */
@@ -37,7 +37,7 @@ object PersonalUsagePolicies {
     
     inline def setAccountTypesWithManagementDisabledUndefined: Self = StObject.set(x, "accountTypesWithManagementDisabled", js.undefined)
     
-    inline def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = StObject.set(x, "accountTypesWithManagementDisabled", js.Array(value :_*))
+    inline def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = StObject.set(x, "accountTypesWithManagementDisabled", js.Array(value*))
     
     inline def setCameraDisabled(value: Boolean): Self = StObject.set(x, "cameraDisabled", value.asInstanceOf[js.Any])
     
@@ -51,7 +51,7 @@ object PersonalUsagePolicies {
     
     inline def setPersonalApplicationsUndefined: Self = StObject.set(x, "personalApplications", js.undefined)
     
-    inline def setPersonalApplicationsVarargs(value: PersonalApplicationPolicy*): Self = StObject.set(x, "personalApplications", js.Array(value :_*))
+    inline def setPersonalApplicationsVarargs(value: PersonalApplicationPolicy*): Self = StObject.set(x, "personalApplications", js.Array(value*))
     
     inline def setPersonalPlayStoreMode(value: String): Self = StObject.set(x, "personalPlayStoreMode", value.asInstanceOf[js.Any])
     

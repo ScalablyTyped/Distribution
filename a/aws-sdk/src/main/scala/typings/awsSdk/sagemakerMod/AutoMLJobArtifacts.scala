@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoMLJobArtifacts extends StObject {
   
   /**
-    * The URL to the notebook location.
+    * The URL of the notebook location.
     */
   var CandidateDefinitionNotebookLocation: js.UndefOr[typings.awsSdk.sagemakerMod.CandidateDefinitionNotebookLocation] = js.undefined
   
   /**
-    * The URL to the notebook location.
+    * The URL of the notebook location.
     */
   var DataExplorationNotebookLocation: js.UndefOr[typings.awsSdk.sagemakerMod.DataExplorationNotebookLocation] = js.undefined
 }

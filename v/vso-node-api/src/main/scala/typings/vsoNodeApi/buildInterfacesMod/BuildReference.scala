@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BuildReference extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * The build number.
@@ -23,7 +22,7 @@ trait BuildReference extends StObject {
   /**
     * The time that the build was completed.
     */
-  var finishTime: Date
+  var finishTime: js.Date
   
   /**
     * The ID of the build.
@@ -33,7 +32,7 @@ trait BuildReference extends StObject {
   /**
     * The time that the build was queued.
     */
-  var queueTime: Date
+  var queueTime: js.Date
   
   /**
     * The identity on whose behalf the build was queued.
@@ -48,7 +47,7 @@ trait BuildReference extends StObject {
   /**
     * The time that the build was started.
     */
-  var startTime: Date
+  var startTime: js.Date
   
   /**
     * The build status.
@@ -58,15 +57,15 @@ trait BuildReference extends StObject {
 object BuildReference {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     buildNumber: String,
     deleted: Boolean,
-    finishTime: Date,
+    finishTime: js.Date,
     id: Double,
-    queueTime: Date,
+    queueTime: js.Date,
     requestedFor: IdentityRef,
     result: BuildResult,
-    startTime: Date,
+    startTime: js.Date,
     status: BuildStatus
   ): BuildReference = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], buildNumber = buildNumber.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], finishTime = finishTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], queueTime = queueTime.asInstanceOf[js.Any], requestedFor = requestedFor.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
@@ -79,20 +78,20 @@ object BuildReference {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: js.Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
+    inline def setQueueTime(value: js.Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
     inline def setRequestedFor(value: IdentityRef): Self = StObject.set(x, "requestedFor", value.asInstanceOf[js.Any])
     
     inline def setResult(value: BuildResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: BuildStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

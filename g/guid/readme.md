@@ -10,10 +10,10 @@ A Guid generator and validator.
 | ------------------ | :-------------: |
 | Full name          | guid |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 125 |
-| # downloads        | 694576 |
-| # stars            | 12 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 70779.66666666667 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/dandean/guid)

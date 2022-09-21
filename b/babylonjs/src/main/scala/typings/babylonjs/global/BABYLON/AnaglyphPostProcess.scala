@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.AnaglyphPostProcess")
 @js.native
-class AnaglyphPostProcess protected ()
+open class AnaglyphPostProcess protected ()
   extends StObject
      with typings.babylonjs.BABYLON.AnaglyphPostProcess {
   /**

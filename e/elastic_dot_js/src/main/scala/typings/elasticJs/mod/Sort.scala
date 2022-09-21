@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "Sort")
 @js.native
-class Sort protected () extends StObject {
+open class Sort protected () extends StObject {
   /*
     Defines a sort value
     */
@@ -132,7 +132,7 @@ class Sort protected () extends StObject {
     Retrieves the internal script object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets the script sort type.  Valid values are:

@@ -32,7 +32,7 @@ trait Transform extends StObject {
   
   var `type`: aggregate | filter | groupby | sort
   
-  var value: js.Any
+  var value: Any
 }
 object Transform {
   
@@ -47,7 +47,7 @@ object Transform {
     styles: js.Array[TransformStyle],
     target: Double | String | (js.Array[Double | String]),
     `type`: aggregate | filter | groupby | sort,
-    value: js.Any
+    value: Any
   ): Transform = {
     val __obj = js.Dynamic.literal(aggregations = aggregations.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], nameformat = nameformat.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], preservegaps = preservegaps.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -58,13 +58,13 @@ object Transform {
     
     inline def setAggregations(value: js.Array[TransformAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     
-    inline def setAggregationsVarargs(value: TransformAggregation*): Self = StObject.set(x, "aggregations", js.Array(value :_*))
+    inline def setAggregationsVarargs(value: TransformAggregation*): Self = StObject.set(x, "aggregations", js.Array(value*))
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     inline def setGroups(value: String | (js.Array[Double | String])): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: (Double | String)*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: (Double | String)*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setNameformat(value: String): Self = StObject.set(x, "nameformat", value.asInstanceOf[js.Any])
     
@@ -76,14 +76,14 @@ object Transform {
     
     inline def setStyles(value: js.Array[TransformStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    inline def setStylesVarargs(value: TransformStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: TransformStyle*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setTarget(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setTargetVarargs(value: (Double | String)*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: (Double | String)*): Self = StObject.set(x, "target", js.Array(value*))
     
     inline def setType(value: aggregate | filter | groupby | sort): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

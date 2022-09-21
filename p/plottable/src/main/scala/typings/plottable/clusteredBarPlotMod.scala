@@ -18,13 +18,13 @@ object clusteredBarPlotMod {
     * @constructor
     * @param {string} [orientation="vertical"] One of "vertical"/"horizontal".
     */
-  class ClusteredBar[X, Y] () extends Bar[X, Y] {
+  open class ClusteredBar[X, Y] () extends Bar[X, Y] {
     def this(orientation: BarOrientation) = this()
     
-    /* private */ var _clusterOffsets: js.Any = js.native
+    /* private */ var _clusterOffsets: Any = js.native
     
-    /* private */ def _makeInnerScale(): js.Any = js.native
+    /* private */ var _makeInnerScale: Any = js.native
     
-    /* private */ def _updateClusterPosition(): js.Any = js.native
+    /* private */ var _updateClusterPosition: Any = js.native
   }
 }

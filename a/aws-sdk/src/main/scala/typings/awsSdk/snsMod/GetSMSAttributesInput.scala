@@ -24,6 +24,6 @@ object GetSMSAttributesInput {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
   }
 }

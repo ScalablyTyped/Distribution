@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message to delete tenant project resource from the tenancy unit.
-  */
 trait SchemaDeleteTenantProjectRequest extends StObject {
   
   /**
-    * Tag of the resource within the tenancy unit.
+    * Required. Tag of the resource within the tenancy unit.
     */
-  var tag: js.UndefOr[String] = js.undefined
+  var tag: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDeleteTenantProjectRequest {
   
@@ -24,6 +21,8 @@ object SchemaDeleteTenantProjectRequest {
   extension [Self <: SchemaDeleteTenantProjectRequest](x: Self) {
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagNull: Self = StObject.set(x, "tag", null)
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }

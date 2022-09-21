@@ -23,7 +23,7 @@ object resizeGroupMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("office-ui-fabric-react/lib/components/ResizeGroup", "ResizeGroup")
   @js.native
-  class ResizeGroup protected ()
+  open class ResizeGroup protected ()
     extends typings.officeUiFabricReact.resizeGroupBaseMod.ResizeGroupBase {
     def this(props: IResizeGroupProps) = this()
   }
@@ -36,7 +36,7 @@ object resizeGroupMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ResizeGroup", "ResizeGroupBase")
   @js.native
-  class ResizeGroupBase protected ()
+  open class ResizeGroupBase protected ()
     extends typings.officeUiFabricReact.resizeGroupBaseMod.ResizeGroupBase {
     def this(props: IResizeGroupProps) = this()
   }

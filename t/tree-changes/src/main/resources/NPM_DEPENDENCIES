@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tree-changes" : "0.5.1"
+      "tree-changes" : "0.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tree-changes" : "0.5.1"
+      "tree-changes" : "0.10.0"
     }
   ],
   "compile-devDependencies" : [

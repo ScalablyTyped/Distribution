@@ -12,12 +12,12 @@ trait OTAUpdateInfo extends StObject {
   var additionalParameters: js.UndefOr[AdditionalParameterMap] = js.undefined
   
   /**
-    * The AWS IoT job ARN associated with the OTA update.
+    * The IoT job ARN associated with the OTA update.
     */
   var awsIotJobArn: js.UndefOr[AwsIotJobArn] = js.undefined
   
   /**
-    * The AWS IoT job ID associated with the OTA update.
+    * The IoT job ID associated with the OTA update.
     */
   var awsIotJobId: js.UndefOr[AwsIotJobId] = js.undefined
   
@@ -34,7 +34,7 @@ trait OTAUpdateInfo extends StObject {
   /**
     * The date when the OTA update was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the OTA update.
@@ -49,7 +49,7 @@ trait OTAUpdateInfo extends StObject {
   /**
     * The date when the OTA update was last updated.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The OTA update ARN.
@@ -115,7 +115,7 @@ object OTAUpdateInfo {
     
     inline def setAwsJobPresignedUrlConfigUndefined: Self = StObject.set(x, "awsJobPresignedUrlConfig", js.undefined)
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -127,7 +127,7 @@ object OTAUpdateInfo {
     
     inline def setErrorInfoUndefined: Self = StObject.set(x, "errorInfo", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
@@ -139,7 +139,7 @@ object OTAUpdateInfo {
     
     inline def setOtaUpdateFilesUndefined: Self = StObject.set(x, "otaUpdateFiles", js.undefined)
     
-    inline def setOtaUpdateFilesVarargs(value: OTAUpdateFile*): Self = StObject.set(x, "otaUpdateFiles", js.Array(value :_*))
+    inline def setOtaUpdateFilesVarargs(value: OTAUpdateFile*): Self = StObject.set(x, "otaUpdateFiles", js.Array(value*))
     
     inline def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
     
@@ -153,7 +153,7 @@ object OTAUpdateInfo {
     
     inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
-    inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value*))
     
     inline def setTargetSelection(value: TargetSelection): Self = StObject.set(x, "targetSelection", value.asInstanceOf[js.Any])
     
@@ -163,6 +163,6 @@ object OTAUpdateInfo {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value*))
   }
 }

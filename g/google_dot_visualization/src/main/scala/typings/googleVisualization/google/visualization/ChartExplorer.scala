@@ -31,7 +31,7 @@ object ChartExplorer {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

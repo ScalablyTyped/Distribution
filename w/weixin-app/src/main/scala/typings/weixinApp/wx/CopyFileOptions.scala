@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CopyFileOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   // 源文件路径，只可以是普通文件
   var destPath: String

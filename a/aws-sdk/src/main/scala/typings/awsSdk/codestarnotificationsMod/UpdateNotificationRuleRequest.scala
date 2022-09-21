@@ -12,12 +12,12 @@ trait UpdateNotificationRuleRequest extends StObject {
   var Arn: NotificationRuleArn
   
   /**
-    * The level of detail to include in the notifications for this resource. BASIC will include only the contents of the event as it would appear in AWS CloudWatch. FULL will include any supplemental information provided by AWS CodeStar Notifications and/or the service for the resource for which the notification is created.
+    * The level of detail to include in the notifications for this resource. BASIC will include only the contents of the event as it would appear in Amazon CloudWatch. FULL will include any supplemental information provided by AWS CodeStar Notifications and/or the service for the resource for which the notification is created.
     */
   var DetailType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.DetailType] = js.undefined
   
   /**
-    * A list of event types associated with this notification rule.
+    * A list of event types associated with this notification rule. For a complete list of event types and IDs, see Notification concepts in the Developer Tools Console User Guide.
     */
   var EventTypeIds: js.UndefOr[typings.awsSdk.codestarnotificationsMod.EventTypeIds] = js.undefined
   
@@ -55,7 +55,7 @@ object UpdateNotificationRuleRequest {
     
     inline def setEventTypeIdsUndefined: Self = StObject.set(x, "EventTypeIds", js.undefined)
     
-    inline def setEventTypeIdsVarargs(value: EventTypeId*): Self = StObject.set(x, "EventTypeIds", js.Array(value :_*))
+    inline def setEventTypeIdsVarargs(value: EventTypeId*): Self = StObject.set(x, "EventTypeIds", js.Array(value*))
     
     inline def setName(value: NotificationRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -69,6 +69,6 @@ object UpdateNotificationRuleRequest {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
   }
 }

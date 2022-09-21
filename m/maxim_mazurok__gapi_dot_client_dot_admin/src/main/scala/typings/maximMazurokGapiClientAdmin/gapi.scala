@@ -33,10 +33,10 @@ object gapi {
         /** Each activity record in the response. */
         var items: js.UndefOr[js.Array[Activity]] = js.undefined
         
-        /** The type of API resource. For an activity report, the value is reports#activities. */
+        /** The type of API resource. For an activity report, the value is `reports#activities`. */
         var kind: js.UndefOr[String] = js.undefined
         
-        /** Token for retrieving the follow-on next page of the report. The nextPageToken value is used in the request's pageToken query string. */
+        /** Token for retrieving the follow-on next page of the report. The `nextPageToken` value is used in the request's `pageToken` query string. */
         var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object Activities {
@@ -56,7 +56,7 @@ object gapi {
           
           inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          inline def setItemsVarargs(value: Activity*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: Activity*): Self = StObject.set(x, "items", js.Array(value*))
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
@@ -98,12 +98,12 @@ object gapi {
         var id: js.UndefOr[ApplicationName] = js.undefined
         
         /**
-          * IP address of the user doing the action. This is the Internet Protocol (IP) address of the user when logging into G Suite which may or may not reflect the user's physical location.
-          * For example, the IP address can be the user's proxy server's address or a virtual private network (VPN) address. The API supports IPv4 and IPv6.
+          * IP address of the user doing the action. This is the Internet Protocol (IP) address of the user when logging into Google Workspace, which may or may not reflect the user's physical
+          * location. For example, the IP address can be the user's proxy server's address or a virtual private network (VPN) address. The API supports IPv4 and IPv6.
           */
         var ipAddress: js.UndefOr[String] = js.undefined
         
-        /** The type of API resource. For an activity report, the value is audit#activity. */
+        /** The type of API resource. For an activity report, the value is `audit#activity`. */
         var kind: js.UndefOr[String] = js.undefined
         
         /** This is the domain that is affected by the report's event. For example domain of Admin console or the Drive application's document owner. */
@@ -130,7 +130,7 @@ object gapi {
           
           inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
           
-          inline def setEventsVarargs(value: Name*): Self = StObject.set(x, "events", js.Array(value :_*))
+          inline def setEventsVarargs(value: Name*): Self = StObject.set(x, "events", js.Array(value*))
           
           inline def setId(value: ApplicationName): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
@@ -161,14 +161,14 @@ object gapi {
         /** A UUID or similar unique string that identifies this channel. */
         var id: js.UndefOr[String] = js.undefined
         
-        /** Identifies this as a notification channel used to watch for changes to a resource, which is "api#channel". */
+        /** Identifies this as a notification channel used to watch for changes to a resource, which is "`api#channel`". */
         var kind: js.UndefOr[String] = js.undefined
         
         /** Additional parameters controlling delivery channel behavior. Optional. */
         var params: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.Channel & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.Channel & TopLevel[Any]
               ] = js.undefined
         
         /** A Boolean value to indicate whether payload is wanted. Optional. */
@@ -183,7 +183,7 @@ object gapi {
         /** An arbitrary string delivered to the target address with each notification delivered over this channel. Optional. */
         var token: js.UndefOr[String] = js.undefined
         
-        /** The type of delivery mechanism used for this channel. */
+        /** The type of delivery mechanism used for this channel. The value should be set to `"web_hook"`. */
         var `type`: js.UndefOr[String] = js.undefined
       }
       object Channel {
@@ -214,7 +214,7 @@ object gapi {
           inline def setParams(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.Channel & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.Channel & TopLevel[Any]
           ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
           
           inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
@@ -315,19 +315,19 @@ object gapi {
           
           inline def setMultiBoolValueUndefined: Self = StObject.set(x, "multiBoolValue", js.undefined)
           
-          inline def setMultiBoolValueVarargs(value: Boolean*): Self = StObject.set(x, "multiBoolValue", js.Array(value :_*))
+          inline def setMultiBoolValueVarargs(value: Boolean*): Self = StObject.set(x, "multiBoolValue", js.Array(value*))
           
           inline def setMultiIntValue(value: js.Array[String]): Self = StObject.set(x, "multiIntValue", value.asInstanceOf[js.Any])
           
           inline def setMultiIntValueUndefined: Self = StObject.set(x, "multiIntValue", js.undefined)
           
-          inline def setMultiIntValueVarargs(value: String*): Self = StObject.set(x, "multiIntValue", js.Array(value :_*))
+          inline def setMultiIntValueVarargs(value: String*): Self = StObject.set(x, "multiIntValue", js.Array(value*))
           
           inline def setMultiValue(value: js.Array[String]): Self = StObject.set(x, "multiValue", value.asInstanceOf[js.Any])
           
           inline def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
           
-          inline def setMultiValueVarargs(value: String*): Self = StObject.set(x, "multiValue", js.Array(value :_*))
+          inline def setMultiValueVarargs(value: String*): Self = StObject.set(x, "multiValue", js.Array(value*))
           
           inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
@@ -350,10 +350,13 @@ object gapi {
         /** ETag of the resource. */
         var etag: js.UndefOr[String] = js.undefined
         
-        /** The type of API resource. For a usage report, the value is admin#reports#usageReport. */
+        /** The type of API resource. For a usage report, the value is `admin#reports#usageReport`. */
         var kind: js.UndefOr[String] = js.undefined
         
-        /** Output only. Parameter value pairs for various applications. For the Customers usage report parameters and values, see the customer usage parameters reference. */
+        /**
+          * Output only. Parameter value pairs for various applications. For the Entity Usage Report parameters and values, see [the Entity Usage parameters
+          * reference](/admin-sdk/reports/v1/reference/usage-ref-appendix-a/entities).
+          */
         var parameters: js.UndefOr[js.Array[DatetimeValue]] = js.undefined
       }
       object UsageReport {
@@ -385,7 +388,7 @@ object gapi {
           
           inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
           
-          inline def setParametersVarargs(value: DatetimeValue*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+          inline def setParametersVarargs(value: DatetimeValue*): Self = StObject.set(x, "parameters", js.Array(value*))
         }
       }
       
@@ -394,12 +397,12 @@ object gapi {
         /** ETag of the resource. */
         var etag: js.UndefOr[String] = js.undefined
         
-        /** The type of API resource. For a usage report, the value is admin#reports#usageReports. */
+        /** The type of API resource. For a usage report, the value is `admin#reports#usageReports`. */
         var kind: js.UndefOr[String] = js.undefined
         
         /**
-          * Token to specify next page. A report with multiple pages has a nextPageToken property in the response. For your follow-on requests getting all of the report's pages, enter the
-          * nextPageToken value in the pageToken query string.
+          * Token to specify next page. A report with multiple pages has a `nextPageToken` property in the response. For your follow-on requests getting all of the report's pages, enter the
+          * `nextPageToken` value in the `pageToken` query string.
           */
         var nextPageToken: js.UndefOr[String] = js.undefined
         
@@ -434,13 +437,13 @@ object gapi {
           
           inline def setUsageReportsUndefined: Self = StObject.set(x, "usageReports", js.undefined)
           
-          inline def setUsageReportsVarargs(value: UsageReport*): Self = StObject.set(x, "usageReports", js.Array(value :_*))
+          inline def setUsageReportsVarargs(value: UsageReport*): Self = StObject.set(x, "usageReports", js.Array(value*))
           
           inline def setWarnings(value: js.Array[Code]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
           
           inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
           
-          inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+          inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value*))
         }
       }
       

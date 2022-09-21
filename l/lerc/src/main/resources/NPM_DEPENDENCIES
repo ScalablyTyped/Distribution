@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "lerc" : "4.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "lerc" : "4.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

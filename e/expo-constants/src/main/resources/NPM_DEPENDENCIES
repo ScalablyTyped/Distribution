@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-constants" : "9.2.0"
+      "expo-constants" : "13.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-constants" : "9.2.0"
+      "expo-constants" : "13.2.4"
     }
   ],
   "compile-devDependencies" : [

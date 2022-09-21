@@ -14,7 +14,7 @@ object mapMod {
   
   @JSImport("@lumino/algorithm/types/map", "MapIterator")
   @js.native
-  class MapIterator[T, U] protected ()
+  open class MapIterator[T, U] protected ()
     extends StObject
        with IIterator[U] {
     /**
@@ -26,11 +26,11 @@ object mapMod {
       */
     def this(source: IIterator[T], fn: js.Function2[/* value */ T, /* index */ Double, U]) = this()
     
-    /* private */ var _fn: js.Any = js.native
+    /* private */ var _fn: Any = js.native
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.

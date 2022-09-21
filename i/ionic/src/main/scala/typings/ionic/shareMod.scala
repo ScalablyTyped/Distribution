@@ -10,7 +10,7 @@ object shareMod {
   
   @JSImport("ionic/commands/share", "ShareCommand")
   @js.native
-  class ShareCommand protected () extends Command {
+  open class ShareCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
     def run(): js.Promise[Unit] = js.native

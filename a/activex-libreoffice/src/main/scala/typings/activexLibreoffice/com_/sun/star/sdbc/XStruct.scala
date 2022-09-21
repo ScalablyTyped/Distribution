@@ -34,7 +34,7 @@ trait XStruct
     * @returns an array containing the ordered attribute values.
     * @throws SQLException if a database access error occurs.
     */
-  def getAttributes(typeMap: XNameAccess): SafeArray[js.Any]
+  def getAttributes(typeMap: XNameAccess): SafeArray[Any]
   
   /**
     * retrieves the SQL type name of the SQL structured type that this `Struct` object represents.
@@ -48,9 +48,9 @@ object XStruct {
   inline def apply(
     SQLTypeName: String,
     acquire: () => Unit,
-    getAttributes: XNameAccess => SafeArray[js.Any],
+    getAttributes: XNameAccess => SafeArray[Any],
     getSQLTypeName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStruct = {
     val __obj = js.Dynamic.literal(SQLTypeName = SQLTypeName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAttributes = js.Any.fromFunction1(getAttributes), getSQLTypeName = js.Any.fromFunction0(getSQLTypeName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -59,7 +59,7 @@ object XStruct {
   
   extension [Self <: XStruct](x: Self) {
     
-    inline def setGetAttributes(value: XNameAccess => SafeArray[js.Any]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction1(value))
+    inline def setGetAttributes(value: XNameAccess => SafeArray[Any]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction1(value))
     
     inline def setGetSQLTypeName(value: () => String): Self = StObject.set(x, "getSQLTypeName", js.Any.fromFunction0(value))
     

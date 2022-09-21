@@ -11,9 +11,9 @@ Pollyfill for node.js `path.parse`, parses a filepath into an object.
 | Full name          | parse-filepath |
 | Keywords           | absolute, basename, dir, directory, dirname, ext, extension, extname, file, filename, filepath, is-absolute, name, object, parse, parser, parts, path, segment |
 | # releases         | 1 |
-| # dependents       | 133 |
-| # downloads        | 111608363 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5916351333333334E7 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/parse-filepath)

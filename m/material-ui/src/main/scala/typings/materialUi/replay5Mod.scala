@@ -10,10 +10,10 @@ object replay5Mod {
   
   @JSImport("material-ui/svg-icons/av/replay-5", JSImport.Default)
   @js.native
-  class default () extends AvReplay5
+  open class default () extends AvReplay5
   
   @JSImport("material-ui/svg-icons/av/replay-5", "AvReplay5")
   @js.native
-  class AvReplay5 ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvReplay5 ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

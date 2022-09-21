@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "MultiInput")
 @js.native
-class MultiInput () extends default
+open class MultiInput () extends default

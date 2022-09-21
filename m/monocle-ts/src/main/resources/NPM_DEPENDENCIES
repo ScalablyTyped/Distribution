@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "monocle-ts" : "2.3.3"
+      "monocle-ts" : "2.3.13"
     }
   ],
   "test-dependencies" : [
     {
-      "monocle-ts" : "2.3.3"
+      "monocle-ts" : "2.3.13"
     }
   ],
   "compile-devDependencies" : [

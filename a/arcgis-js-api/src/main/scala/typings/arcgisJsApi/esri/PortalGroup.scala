@@ -3,7 +3,6 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`private`
 import typings.arcgisJsApi.arcgisJsApiStrings.org_
 import typings.arcgisJsApi.arcgisJsApiStrings.public
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ trait PortalGroup
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#created)
     */
-  var created: Date = js.native
+  var created: js.Date = js.native
   
   /**
     * A detailed description of the group.
@@ -39,16 +38,16 @@ trait PortalGroup
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#fetchCategorySchema)
     */
-  def fetchCategorySchema(): js.Promise[js.Array[js.Any]] = js.native
-  def fetchCategorySchema(options: PortalGroupFetchCategorySchemaOptions): js.Promise[js.Array[js.Any]] = js.native
+  def fetchCategorySchema(): js.Promise[js.Array[Any]] = js.native
+  def fetchCategorySchema(options: PortalGroupFetchCategorySchemaOptions): js.Promise[js.Array[Any]] = js.native
   
   /**
     * Fetches the current members of the group.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#fetchMembers)
     */
-  def fetchMembers(): js.Promise[js.Any] = js.native
-  def fetchMembers(options: PortalGroupFetchMembersOptions): js.Promise[js.Any] = js.native
+  def fetchMembers(): js.Promise[Any] = js.native
+  def fetchMembers(options: PortalGroupFetchMembersOptions): js.Promise[Any] = js.native
   
   /**
     * Get the URL to the thumbnail image for the group.
@@ -68,6 +67,8 @@ trait PortalGroup
   /**
     * If set to `true`, then users will not be able to apply to join the group.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#isInvitationOnly)
     */
   var isInvitationOnly: Boolean = js.native
@@ -77,7 +78,7 @@ trait PortalGroup
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#modified)
     */
-  var modified: Date = js.native
+  var modified: js.Date = js.native
   
   /**
     * The username of the group's owner.
@@ -99,7 +100,7 @@ trait PortalGroup
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#queryItems)
     */
   def queryItems(): js.Promise[PortalQueryResult] = js.native
-  def queryItems(queryParams: Unit, options: PortalGroupQueryItemsOptions): js.Promise[PortalQueryResult] = js.native
+  def queryItems(queryParams: scala.Unit, options: PortalGroupQueryItemsOptions): js.Promise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParams): js.Promise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParamsProperties): js.Promise[PortalQueryResult] = js.native
   def queryItems(queryParams: PortalQueryParamsProperties, options: PortalGroupQueryItemsOptions): js.Promise[PortalQueryResult] = js.native

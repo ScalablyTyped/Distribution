@@ -29,6 +29,6 @@ object StartApplicationRequest {
     
     inline def setInputConfigurations(value: InputConfigurations): Self = StObject.set(x, "InputConfigurations", value.asInstanceOf[js.Any])
     
-    inline def setInputConfigurationsVarargs(value: InputConfiguration*): Self = StObject.set(x, "InputConfigurations", js.Array(value :_*))
+    inline def setInputConfigurationsVarargs(value: InputConfiguration*): Self = StObject.set(x, "InputConfigurations", js.Array(value*))
   }
 }

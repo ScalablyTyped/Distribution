@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/PostProcesses/index", "ExtractHighlightsPostProcess")
 @js.native
-class ExtractHighlightsPostProcess protected ()
+open class ExtractHighlightsPostProcess protected ()
   extends typings.babylonjs.extractHighlightsPostProcessMod.ExtractHighlightsPostProcess {
   def this(
     name: String,

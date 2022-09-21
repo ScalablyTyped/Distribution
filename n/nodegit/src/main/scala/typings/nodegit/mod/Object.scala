@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Object")
 @js.native
-class Object ()
+open class Object ()
   extends typings.nodegit.objectMod.Object
 /* static members */
 object Object {

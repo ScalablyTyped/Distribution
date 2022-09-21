@@ -25,7 +25,7 @@ trait RasterFunctionProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionArguments)
     */
-  var functionArguments: js.UndefOr[js.Any] = js.undefined
+  var functionArguments: js.UndefOr[Any] = js.undefined
   
   /**
     * The raster function name.
@@ -37,11 +37,15 @@ trait RasterFunctionProperties extends StObject {
   /**
     * Defines the pixel type of the output image.
     *
+    * @default unknown
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#outputPixelType)
     */
   var outputPixelType: js.UndefOr[
     c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown
   ] = js.undefined
+  
+  var rasterFunctionDefinition: js.UndefOr[Any] = js.undefined
   
   /**
     * The variable name for the raster function.
@@ -59,7 +63,7 @@ object RasterFunctionProperties {
   
   extension [Self <: RasterFunctionProperties](x: Self) {
     
-    inline def setFunctionArguments(value: js.Any): Self = StObject.set(x, "functionArguments", value.asInstanceOf[js.Any])
+    inline def setFunctionArguments(value: Any): Self = StObject.set(x, "functionArguments", value.asInstanceOf[js.Any])
     
     inline def setFunctionArgumentsUndefined: Self = StObject.set(x, "functionArguments", js.undefined)
     
@@ -70,6 +74,10 @@ object RasterFunctionProperties {
     inline def setOutputPixelType(value: c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown): Self = StObject.set(x, "outputPixelType", value.asInstanceOf[js.Any])
     
     inline def setOutputPixelTypeUndefined: Self = StObject.set(x, "outputPixelType", js.undefined)
+    
+    inline def setRasterFunctionDefinition(value: Any): Self = StObject.set(x, "rasterFunctionDefinition", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunctionDefinitionUndefined: Self = StObject.set(x, "rasterFunctionDefinition", js.undefined)
     
     inline def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,13 @@ trait PlotTilemapOptions extends StObject {
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highmaps) The border width for each heat map item.
+    * (Highcharts, Highmaps) The border radius for each heatmap item. The
+    * border's color and width can be set in marker options.
+    */
+  var borderRadius: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highmaps) The border width for each heatmap item.
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
@@ -108,7 +114,7 @@ trait PlotTilemapOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
@@ -144,6 +150,15 @@ trait PlotTilemapOptions extends StObject {
   var crisp: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
+    */
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highmaps) You can set the cursor to "pointer" if you have
     * click events attached to the series, to signal to the user that the
     * points and lines can be clicked.
@@ -158,14 +173,20 @@ trait PlotTilemapOptions extends StObject {
     * for customized functionality. Here you can add additional data for your
     * own event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) Indicates data is structured as columns instead of
+    * rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
-    * the JavaScript charts. Highstock by default applies data grouping when
-    * the points become closer than a certain pixel value, determined by the
-    * `groupPixelWidth` option.
+    * the JavaScript charts. Highcharts Stock by default applies data grouping
+    * when the points become closer than a certain pixel value, determined by
+    * the `groupPixelWidth` option.
     *
     * If data grouping is applied, the grouping information of grouped points
     * can be read from the Point.dataGroup. If point options other than the
@@ -297,7 +318,7 @@ trait PlotTilemapOptions extends StObject {
     */
   var linkedTo: js.UndefOr[String] = js.undefined
   
-  var marker: js.UndefOr[js.Any] = js.undefined
+  var marker: js.UndefOr[Any] = js.undefined
   
   /**
     * (Highstock) Options for the corresponding navigator series if
@@ -324,6 +345,12 @@ trait PlotTilemapOptions extends StObject {
   var nullColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
+    * (Highcharts, Highmaps) Options for the _Series on point_ feature. Only
+    * `pie` and `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotTilemapOnPointOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highmaps) Opacity of a series parts: line, fill (e.g. area)
     * and dataLabels.
     */
@@ -335,7 +362,7 @@ trait PlotTilemapOptions extends StObject {
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
-    * (Highcharts, Highmaps) Same as accessibility.pointDescriptionFormatter,
+    * (Highcharts, Highmaps) Same as accessibility.series.descriptionFormatter,
     * but for an individual series. Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
@@ -344,6 +371,18 @@ trait PlotTilemapOptions extends StObject {
     * (Highcharts, Highmaps) The padding between points in the tilemap.
     */
   var pointPadding: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highmaps) The row size - how many Y axis units each tilemap
@@ -388,11 +427,11 @@ trait PlotTilemapOptions extends StObject {
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Sticky tracking of mouse events. When true, the
-    * `mouseOut` event on a series isn't triggered until the mouse moves over
-    * another series, or out of the plot area. When false, the `mouseOut` event
-    * on a series is triggered when the mouse leaves the area around the
-    * series' graph or markers. This also implies the tooltip. When
+    * (Highcharts, Highstock, Highmaps) Sticky tracking of mouse events. When
+    * true, the `mouseOut` event on a series isn't triggered until the mouse
+    * moves over another series, or out of the plot area. When false, the
+    * `mouseOut` event on a series is triggered when the mouse leaves the area
+    * around the series' graph or markers. This also implies the tooltip. When
     * `stickyTracking` is false and `tooltip.shared` is false, the tooltip will
     * be hidden when moving the mouse between series.
     */
@@ -405,12 +444,12 @@ trait PlotTilemapOptions extends StObject {
   var tileShape: js.UndefOr[TilemapShapeValue] = js.undefined
   
   /**
-    * (Highcharts, Highstock) A configuration object for the tooltip rendering
-    * of each single series. Properties are inherited from tooltip. Overridable
-    * properties are `headerFormat`, `pointFormat`, `yDecimals`, `xDateFormat`,
-    * `yPrefix` and `ySuffix`. Unlike other series, in a scatter plot the
-    * series.name by default shows in the headerFormat and point.x and point.y
-    * in the pointFormat.
+    * (Highcharts, Highstock, Highmaps) A configuration object for the tooltip
+    * rendering of each single series. Properties are inherited from tooltip.
+    * Overridable properties are `headerFormat`, `pointFormat`, `yDecimals`,
+    * `xDateFormat`, `yPrefix` and `ySuffix`. Unlike other series, in a scatter
+    * plot the series.name by default shows in the headerFormat and point.x and
+    * point.y in the pointFormat.
     */
   var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   
@@ -479,6 +518,10 @@ object PlotTilemapOptions {
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
     inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
@@ -511,7 +554,7 @@ object PlotTilemapOptions {
     
     inline def setColsizeUndefined: Self = StObject.set(x, "colsize", js.undefined)
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
@@ -531,13 +574,21 @@ object PlotTilemapOptions {
     
     inline def setCrispUndefined: Self = StObject.set(x, "crisp", js.undefined)
     
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
     inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
@@ -547,7 +598,7 @@ object PlotTilemapOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: PlotTilemapDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: PlotTilemapDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -581,7 +632,7 @@ object PlotTilemapOptions {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setLabel(value: SeriesLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -599,7 +650,7 @@ object PlotTilemapOptions {
     
     inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
     
-    inline def setMarker(value: js.Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
@@ -614,6 +665,10 @@ object PlotTilemapOptions {
     inline def setNullColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "nullColor", value.asInstanceOf[js.Any])
     
     inline def setNullColorUndefined: Self = StObject.set(x, "nullColor", js.undefined)
+    
+    inline def setOnPoint(value: js.Object | PlotTilemapOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
@@ -630,6 +685,10 @@ object PlotTilemapOptions {
     inline def setPointPaddingUndefined: Self = StObject.set(x, "pointPadding", js.undefined)
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
     
     inline def setRowsize(value: Double): Self = StObject.set(x, "rowsize", value.asInstanceOf[js.Any])
     
@@ -691,6 +750,6 @@ object PlotTilemapOptions {
     
     inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("downshift", JSImport.Default)
 @js.native
-class default[Item] ()
-  extends Component[DownshiftProps[Item], js.Object, js.Any]
+open class default[Item] ()
+  extends Component[DownshiftProps[Item], js.Object, Any]
 /* static members */
 object default {
   

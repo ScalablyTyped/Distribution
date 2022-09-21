@@ -141,7 +141,7 @@ object mod extends Shortcut {
           
           inline def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
           
-          inline def setMarginsVarargs(value: Double*): Self = StObject.set(x, "margins", js.Array(value :_*))
+          inline def setMarginsVarargs(value: Double*): Self = StObject.set(x, "margins", js.Array(value*))
           
           inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
           

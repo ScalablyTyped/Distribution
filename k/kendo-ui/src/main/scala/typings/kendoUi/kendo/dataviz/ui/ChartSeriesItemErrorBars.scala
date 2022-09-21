@@ -12,13 +12,13 @@ trait ChartSeriesItemErrorBars extends StObject {
   
   var line: js.UndefOr[ChartSeriesItemErrorBarsLine] = js.undefined
   
-  var value: js.UndefOr[String | Double | js.Any | js.Function] = js.undefined
+  var value: js.UndefOr[String | Double | Any | js.Function] = js.undefined
   
   var visual: js.UndefOr[js.Function] = js.undefined
   
-  var xValue: js.UndefOr[String | Double | js.Any | js.Function] = js.undefined
+  var xValue: js.UndefOr[String | Double | Any | js.Function] = js.undefined
   
-  var yValue: js.UndefOr[String | Double | js.Any | js.Function] = js.undefined
+  var yValue: js.UndefOr[String | Double | Any | js.Function] = js.undefined
 }
 object ChartSeriesItemErrorBars {
   
@@ -41,7 +41,7 @@ object ChartSeriesItemErrorBars {
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    inline def setValue(value: String | Double | js.Any | js.Function): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double | Any | js.Function): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
@@ -49,11 +49,11 @@ object ChartSeriesItemErrorBars {
     
     inline def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
     
-    inline def setXValue(value: String | Double | js.Any | js.Function): Self = StObject.set(x, "xValue", value.asInstanceOf[js.Any])
+    inline def setXValue(value: String | Double | Any | js.Function): Self = StObject.set(x, "xValue", value.asInstanceOf[js.Any])
     
     inline def setXValueUndefined: Self = StObject.set(x, "xValue", js.undefined)
     
-    inline def setYValue(value: String | Double | js.Any | js.Function): Self = StObject.set(x, "yValue", value.asInstanceOf[js.Any])
+    inline def setYValue(value: String | Double | Any | js.Function): Self = StObject.set(x, "yValue", value.asInstanceOf[js.Any])
     
     inline def setYValueUndefined: Self = StObject.set(x, "yValue", js.undefined)
   }

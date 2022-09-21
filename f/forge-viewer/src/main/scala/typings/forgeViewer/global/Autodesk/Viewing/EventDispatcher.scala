@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.EventDispatcher")
 @js.native
-class EventDispatcher ()
+open class EventDispatcher ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.EventDispatcher

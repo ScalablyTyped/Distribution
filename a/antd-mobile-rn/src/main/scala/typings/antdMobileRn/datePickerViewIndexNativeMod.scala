@@ -10,7 +10,7 @@ object datePickerViewIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/date-picker-view/index.native", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antdMobileRn.datePickerViewMod.default
   /* static members */
   object default {

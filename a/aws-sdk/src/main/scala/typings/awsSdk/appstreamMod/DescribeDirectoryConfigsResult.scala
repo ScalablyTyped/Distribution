@@ -29,7 +29,7 @@ object DescribeDirectoryConfigsResult {
     
     inline def setDirectoryConfigsUndefined: Self = StObject.set(x, "DirectoryConfigs", js.undefined)
     
-    inline def setDirectoryConfigsVarargs(value: DirectoryConfig*): Self = StObject.set(x, "DirectoryConfigs", js.Array(value :_*))
+    inline def setDirectoryConfigsVarargs(value: DirectoryConfig*): Self = StObject.set(x, "DirectoryConfigs", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

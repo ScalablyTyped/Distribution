@@ -11,7 +11,7 @@ trait IgPopover
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Sets the time popover fades in and out when showing/hiding
@@ -39,7 +39,7 @@ trait IgPopover
     * Sets the containment for the popover. Accepts a jQuery object
     *
     */
-  var containment: js.UndefOr[js.Any] = js.undefined
+  var containment: js.UndefOr[Any] = js.undefined
   
   /**
     * sets the content for the popover container. If left null the content will be get from the target.
@@ -69,7 +69,7 @@ trait IgPopover
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  var directionPriority: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var directionPriority: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Sets the content for the popover header
@@ -103,7 +103,7 @@ trait IgPopover
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * defines height the popover won't exceed even if no specific one is set.
@@ -195,7 +195,7 @@ object IgPopover {
     
     inline def setCloseOnBlurUndefined: Self = StObject.set(x, "closeOnBlur", js.undefined)
     
-    inline def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
@@ -205,11 +205,11 @@ object IgPopover {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    inline def setDirectionPriority(value: js.Array[js.Any]): Self = StObject.set(x, "directionPriority", value.asInstanceOf[js.Any])
+    inline def setDirectionPriority(value: js.Array[Any]): Self = StObject.set(x, "directionPriority", value.asInstanceOf[js.Any])
     
     inline def setDirectionPriorityUndefined: Self = StObject.set(x, "directionPriority", js.undefined)
     
-    inline def setDirectionPriorityVarargs(value: js.Any*): Self = StObject.set(x, "directionPriority", js.Array(value :_*))
+    inline def setDirectionPriorityVarargs(value: Any*): Self = StObject.set(x, "directionPriority", js.Array(value*))
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
@@ -233,7 +233,7 @@ object IgPopover {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

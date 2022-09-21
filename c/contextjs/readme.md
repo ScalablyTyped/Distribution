@@ -10,10 +10,10 @@ Context Oriented Programming (COP) for ECMAScript 6
 | ------------------ | :-------------: |
 | Full name          | contextjs |
 | Keywords           | COP, Context, Oriented, Programming |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 634 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 54.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/LivelyKernel/ContextJS#readme)

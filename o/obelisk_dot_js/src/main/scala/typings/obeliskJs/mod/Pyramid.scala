@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "Pyramid")
 @js.native
-class Pyramid () extends AbstractPrimitive {
+open class Pyramid () extends AbstractPrimitive {
   def this(dimension: PyramidDimension) = this()
   def this(dimension: Unit, color: PyramidColor) = this()
   def this(dimension: PyramidDimension, color: PyramidColor) = this()

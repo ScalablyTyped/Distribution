@@ -169,11 +169,11 @@ object oleautomation {
     var Name: String
     
     /** The value of the argument whoose name is the one as contained in the member {@link Name} . */
-    var Value: js.Any
+    var Value: Any
   }
   object NamedArgument {
     
-    inline def apply(Name: String, Value: js.Any): NamedArgument = {
+    inline def apply(Name: String, Value: Any): NamedArgument = {
       val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[NamedArgument]
     }
@@ -182,7 +182,7 @@ object oleautomation {
       
       inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,18 +201,18 @@ object oleautomation {
   trait PropertyPutArgument extends StObject {
     
     /** contains the actual argument. */
-    var Value: js.Any
+    var Value: Any
   }
   object PropertyPutArgument {
     
-    inline def apply(Value: js.Any): PropertyPutArgument = {
+    inline def apply(Value: Any): PropertyPutArgument = {
       val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropertyPutArgument]
     }
     
     extension [Self <: PropertyPutArgument](x: Self) {
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   

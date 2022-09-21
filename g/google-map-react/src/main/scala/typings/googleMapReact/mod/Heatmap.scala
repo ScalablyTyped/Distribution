@@ -24,6 +24,6 @@ object Heatmap {
     
     inline def setPositions(value: js.Array[Position]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    inline def setPositionsVarargs(value: Position*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Position*): Self = StObject.set(x, "positions", js.Array(value*))
   }
 }

@@ -4,31 +4,66 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A rule for transforming a value.
-  */
 trait SchemaGooglePrivacyDlpV2PrimitiveTransformation extends StObject {
   
+  /**
+    * Bucketing
+    */
   var bucketingConfig: js.UndefOr[SchemaGooglePrivacyDlpV2BucketingConfig] = js.undefined
   
+  /**
+    * Mask
+    */
   var characterMaskConfig: js.UndefOr[SchemaGooglePrivacyDlpV2CharacterMaskConfig] = js.undefined
   
+  /**
+    * Deterministic Crypto
+    */
   var cryptoDeterministicConfig: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoDeterministicConfig] = js.undefined
   
+  /**
+    * Crypto
+    */
   var cryptoHashConfig: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoHashConfig] = js.undefined
   
+  /**
+    * Ffx-Fpe
+    */
   var cryptoReplaceFfxFpeConfig: js.UndefOr[SchemaGooglePrivacyDlpV2CryptoReplaceFfxFpeConfig] = js.undefined
   
+  /**
+    * Date Shift
+    */
   var dateShiftConfig: js.UndefOr[SchemaGooglePrivacyDlpV2DateShiftConfig] = js.undefined
   
+  /**
+    * Fixed size bucketing
+    */
   var fixedSizeBucketingConfig: js.UndefOr[SchemaGooglePrivacyDlpV2FixedSizeBucketingConfig] = js.undefined
   
+  /**
+    * Redact
+    */
   var redactConfig: js.UndefOr[SchemaGooglePrivacyDlpV2RedactConfig] = js.undefined
   
+  /**
+    * Replace with a specified value.
+    */
   var replaceConfig: js.UndefOr[SchemaGooglePrivacyDlpV2ReplaceValueConfig] = js.undefined
   
+  /**
+    * Replace with a value randomly drawn (with replacement) from a dictionary.
+    */
+  var replaceDictionaryConfig: js.UndefOr[SchemaGooglePrivacyDlpV2ReplaceDictionaryConfig] = js.undefined
+  
+  /**
+    * Replace with infotype
+    */
   var replaceWithInfoTypeConfig: js.UndefOr[SchemaGooglePrivacyDlpV2ReplaceWithInfoTypeConfig] = js.undefined
   
+  /**
+    * Time extraction
+    */
   var timePartConfig: js.UndefOr[SchemaGooglePrivacyDlpV2TimePartConfig] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2PrimitiveTransformation {
@@ -75,6 +110,10 @@ object SchemaGooglePrivacyDlpV2PrimitiveTransformation {
     inline def setReplaceConfig(value: SchemaGooglePrivacyDlpV2ReplaceValueConfig): Self = StObject.set(x, "replaceConfig", value.asInstanceOf[js.Any])
     
     inline def setReplaceConfigUndefined: Self = StObject.set(x, "replaceConfig", js.undefined)
+    
+    inline def setReplaceDictionaryConfig(value: SchemaGooglePrivacyDlpV2ReplaceDictionaryConfig): Self = StObject.set(x, "replaceDictionaryConfig", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceDictionaryConfigUndefined: Self = StObject.set(x, "replaceDictionaryConfig", js.undefined)
     
     inline def setReplaceWithInfoTypeConfig(value: SchemaGooglePrivacyDlpV2ReplaceWithInfoTypeConfig): Self = StObject.set(x, "replaceWithInfoTypeConfig", value.asInstanceOf[js.Any])
     

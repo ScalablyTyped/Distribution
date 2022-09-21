@@ -1,12 +1,24 @@
 package typings.reactInstantsearch
 
+import typings.reactInstantsearch.anon.ReadonlyButtonTextCompone
+import typings.reactInstantsearch.anon.ReadonlyDynamicWidgetsPro
+import typings.reactInstantsearch.anon.ReadonlyHitsPerPageProps
+import typings.reactInstantsearch.anon.ReadonlyMenuSelectProps
 import typings.reactInstantsearch.anon.ReadonlySearchBoxProps
+import typings.reactInstantsearch.anon.ReadonlySortByProps
 import typings.reactInstantsearch.anon.ReadonlyTranslations
+import typings.reactInstantsearchCore.mod.IndexProps
 import typings.reactInstantsearchCore.mod.InstantSearchProps
+import typings.reactInstantsearchDom.anon.ButtonTextComponent
+import typings.reactInstantsearchDom.anon.ReadonlyIndexProps
 import typings.reactInstantsearchDom.anon.ReadonlyInstantSearchProp
 import typings.reactInstantsearchDom.anon.Translations
+import typings.reactInstantsearchDom.mod.DynamicWidgetsProps
+import typings.reactInstantsearchDom.mod.HitsPerPageProps
 import typings.reactInstantsearchDom.mod.HitsProps
+import typings.reactInstantsearchDom.mod.MenuSelectProps
 import typings.reactInstantsearchDom.mod.SearchBoxProps
+import typings.reactInstantsearchDom.mod.SortByProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,127 +27,142 @@ object domMod {
   
   @JSImport("react-instantsearch/dom", "Breadcrumb")
   @js.native
-  class Breadcrumb protected ()
+  open class Breadcrumb protected ()
     extends typings.reactInstantsearchDom.mod.Breadcrumb {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "ClearRefinements")
   @js.native
-  class ClearRefinements protected ()
+  open class ClearRefinements protected ()
     extends typings.reactInstantsearchDom.mod.ClearRefinements {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "Configure")
   @js.native
-  class Configure protected ()
+  open class Configure protected ()
     extends typings.reactInstantsearchDom.mod.Configure {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "CurrentRefinements")
   @js.native
-  class CurrentRefinements protected ()
+  open class CurrentRefinements protected ()
     extends typings.reactInstantsearchDom.mod.CurrentRefinements {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
+  }
+  
+  @JSImport("react-instantsearch/dom", "DynamicWidgets")
+  @js.native
+  open class DynamicWidgets protected ()
+    extends typings.reactInstantsearchDom.mod.DynamicWidgets {
+    def this(props: ReadonlyDynamicWidgetsPro) = this()
+    def this(props: DynamicWidgetsProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DynamicWidgetsProps, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "HierarchicalMenu")
   @js.native
-  class HierarchicalMenu protected ()
+  open class HierarchicalMenu protected ()
     extends typings.reactInstantsearchDom.mod.HierarchicalMenu {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "Highlight")
   @js.native
-  class Highlight protected ()
+  open class Highlight protected ()
     extends typings.reactInstantsearchDom.mod.Highlight {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "Hits")
   @js.native
-  class Hits[T] protected ()
+  open class Hits[T] protected ()
     extends typings.reactInstantsearchDom.mod.Hits[T] {
     def this(props: HitsProps[T]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: HitsProps[T], context: js.Any) = this()
+    def this(props: HitsProps[T], context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "HitsPerPage")
   @js.native
-  class HitsPerPage protected ()
+  open class HitsPerPage protected ()
     extends typings.reactInstantsearchDom.mod.HitsPerPage {
-    def this(props: js.Any) = this()
+    def this(props: ReadonlyHitsPerPageProps) = this()
+    def this(props: HitsPerPageProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: HitsPerPageProps, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "Index")
   @js.native
-  class Index protected ()
+  open class Index protected ()
     extends typings.reactInstantsearchDom.mod.Index {
-    def this(props: js.Any) = this()
+    def this(props: IndexProps) = this()
+    def this(props: ReadonlyIndexProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: IndexProps, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "InfiniteHits")
   @js.native
-  class InfiniteHits protected ()
+  open class InfiniteHits protected ()
     extends typings.reactInstantsearchDom.mod.InfiniteHits {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "InstantSearch")
   @js.native
-  class InstantSearch protected ()
+  open class InstantSearch protected ()
     extends typings.reactInstantsearchDom.mod.InstantSearch {
     def this(props: InstantSearchProps) = this()
     def this(props: ReadonlyInstantSearchProp) = this()
@@ -143,144 +170,158 @@ object domMod {
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: InstantSearchProps, context: js.Any) = this()
+    def this(props: InstantSearchProps, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "Menu")
   @js.native
-  class Menu protected ()
+  open class Menu protected ()
     extends typings.reactInstantsearchDom.mod.Menu {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "MenuSelect")
   @js.native
-  class MenuSelect protected ()
+  open class MenuSelect protected ()
     extends typings.reactInstantsearchDom.mod.MenuSelect {
-    def this(props: js.Any) = this()
+    def this(props: ReadonlyMenuSelectProps) = this()
+    def this(props: MenuSelectProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: MenuSelectProps, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "NumericMenu")
   @js.native
-  class NumericMenu protected ()
+  open class NumericMenu protected ()
     extends typings.reactInstantsearchDom.mod.NumericMenu {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "Pagination")
   @js.native
-  class Pagination protected ()
+  open class Pagination protected ()
     extends typings.reactInstantsearchDom.mod.Pagination {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "Panel")
   @js.native
-  class Panel protected ()
+  open class Panel protected ()
     extends typings.reactInstantsearchDom.mod.Panel {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "PoweredBy")
   @js.native
-  class PoweredBy protected ()
+  open class PoweredBy protected ()
     extends typings.reactInstantsearchDom.mod.PoweredBy {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "RangeInput")
   @js.native
-  class RangeInput protected ()
+  open class RangeInput protected ()
     extends typings.reactInstantsearchDom.mod.RangeInput {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "RangeSlider")
   @js.native
-  class RangeSlider protected ()
+  open class RangeSlider protected ()
     extends typings.reactInstantsearchDom.mod.RangeSlider {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "RatingMenu")
   @js.native
-  class RatingMenu protected ()
+  open class RatingMenu protected ()
     extends typings.reactInstantsearchDom.mod.RatingMenu {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "RefinementList")
   @js.native
-  class RefinementList protected ()
+  open class RefinementList protected ()
     extends typings.reactInstantsearchDom.mod.RefinementList {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
+  }
+  
+  @JSImport("react-instantsearch/dom", "RelevantSort")
+  @js.native
+  open class RelevantSort protected ()
+    extends typings.reactInstantsearchDom.mod.RelevantSort {
+    def this(props: ReadonlyButtonTextCompone) = this()
+    def this(props: ButtonTextComponent) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ButtonTextComponent, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "ScrollTo")
   @js.native
-  class ScrollTo protected ()
+  open class ScrollTo protected ()
     extends typings.reactInstantsearchDom.mod.ScrollTo {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "SearchBox")
   @js.native
-  class SearchBox protected ()
+  open class SearchBox protected ()
     extends typings.reactInstantsearchDom.mod.SearchBox {
     def this(props: ReadonlySearchBoxProps) = this()
     def this(props: SearchBoxProps) = this()
@@ -288,36 +329,37 @@ object domMod {
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SearchBoxProps, context: js.Any) = this()
+    def this(props: SearchBoxProps, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "Snippet")
   @js.native
-  class Snippet protected ()
+  open class Snippet protected ()
     extends typings.reactInstantsearchDom.mod.Snippet {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "SortBy")
   @js.native
-  class SortBy protected ()
+  open class SortBy protected ()
     extends typings.reactInstantsearchDom.mod.SortBy {
-    def this(props: js.Any) = this()
+    def this(props: ReadonlySortByProps) = this()
+    def this(props: SortByProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: SortByProps, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "Stats")
   @js.native
-  class Stats protected ()
+  open class Stats protected ()
     extends typings.reactInstantsearchDom.mod.Stats {
     def this(props: ReadonlyTranslations) = this()
     def this(props: Translations) = this()
@@ -325,18 +367,18 @@ object domMod {
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Translations, context: js.Any) = this()
+    def this(props: Translations, context: Any) = this()
   }
   
   @JSImport("react-instantsearch/dom", "ToggleRefinement")
   @js.native
-  class ToggleRefinement protected ()
+  open class ToggleRefinement protected ()
     extends typings.reactInstantsearchDom.mod.ToggleRefinement {
-    def this(props: js.Any) = this()
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
 }

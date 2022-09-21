@@ -9,7 +9,7 @@ object mp4tagcontentsMod {
   
   @JSImport("jsmediatags/build2/MP4TagContents", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with MP4TagContents {
     def this(ftyp: String) = this()
@@ -38,7 +38,7 @@ object mp4tagcontentsMod {
   
   @JSImport("jsmediatags/build2/MP4TagContents", "Atom")
   @js.native
-  class Atom protected () extends StObject {
+  open class Atom protected () extends StObject {
     def this(name: String) = this()
     def this(name: String, data: ByteArray) = this()
     def this(name: String, data: Unit, atoms: js.Array[Atom]) = this()
@@ -72,7 +72,7 @@ object mp4tagcontentsMod {
       
       inline def set_atoms(value: js.Array[Atom]): Self = StObject.set(x, "_atoms", value.asInstanceOf[js.Any])
       
-      inline def set_atomsVarargs(value: Atom*): Self = StObject.set(x, "_atoms", js.Array(value :_*))
+      inline def set_atomsVarargs(value: Atom*): Self = StObject.set(x, "_atoms", js.Array(value*))
     }
   }
 }

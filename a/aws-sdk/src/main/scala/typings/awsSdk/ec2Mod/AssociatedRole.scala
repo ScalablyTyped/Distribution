@@ -17,7 +17,7 @@ trait AssociatedRole extends StObject {
   var CertificateS3BucketName: js.UndefOr[String] = js.undefined
   
   /**
-    * The key of the Amazon S3 object ey where the certificate, certificate chain, and encrypted private key bundle is stored. The object key is formated as follows: certificate_arn/role_arn. 
+    * The key of the Amazon S3 object ey where the certificate, certificate chain, and encrypted private key bundle is stored. The object key is formated as follows: role_arn/certificate_arn. 
     */
   var CertificateS3ObjectKey: js.UndefOr[String] = js.undefined
   

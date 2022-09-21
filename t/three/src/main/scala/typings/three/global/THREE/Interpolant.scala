@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class Interpolant protected ()
   extends typings.three.mod.Interpolant {
-  def this(parameterPositions: js.Any, sampleValues: js.Any, sampleSize: Double) = this()
-  def this(parameterPositions: js.Any, sampleValues: js.Any, sampleSize: Double, resultBuffer: js.Any) = this()
+  def this(parameterPositions: Any, sampleValues: Any, sampleSize: Double) = this()
+  def this(parameterPositions: Any, sampleValues: Any, sampleSize: Double, resultBuffer: Any) = this()
 }

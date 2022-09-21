@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogCustomAttributeDefinitionStringConfig")
 @js.native
-class CatalogCustomAttributeDefinitionStringConfig () extends StObject {
+open class CatalogCustomAttributeDefinitionStringConfig () extends StObject {
   
   /**
     * If true, each Custom Attribute instance associated with this Custom Attribute Definition must have a unique value

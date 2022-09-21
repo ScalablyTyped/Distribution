@@ -10,10 +10,10 @@ object panoramaWideAngleMod {
   
   @JSImport("material-ui/svg-icons/image/panorama-wide-angle", JSImport.Default)
   @js.native
-  class default () extends ImagePanoramaWideAngle
+  open class default () extends ImagePanoramaWideAngle
   
   @JSImport("material-ui/svg-icons/image/panorama-wide-angle", "ImagePanoramaWideAngle")
   @js.native
-  class ImagePanoramaWideAngle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImagePanoramaWideAngle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

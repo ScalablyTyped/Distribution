@@ -25,7 +25,7 @@ object GoogleAnalyticsAdminV1alphaListGoogleAdsLinksResponse {
     
     inline def setGoogleAdsLinksUndefined: Self = StObject.set(x, "googleAdsLinks", js.undefined)
     
-    inline def setGoogleAdsLinksVarargs(value: GoogleAnalyticsAdminV1alphaGoogleAdsLink*): Self = StObject.set(x, "googleAdsLinks", js.Array(value :_*))
+    inline def setGoogleAdsLinksVarargs(value: GoogleAnalyticsAdminV1alphaGoogleAdsLink*): Self = StObject.set(x, "googleAdsLinks", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

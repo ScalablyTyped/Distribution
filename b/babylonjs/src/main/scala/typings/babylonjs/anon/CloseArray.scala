@@ -59,7 +59,7 @@ object CloseArray {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: Color4*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color4*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     
@@ -79,7 +79,7 @@ object CloseArray {
     
     inline def setPathArray(value: js.Array[js.Array[Vector3]]): Self = StObject.set(x, "pathArray", value.asInstanceOf[js.Any])
     
-    inline def setPathArrayVarargs(value: js.Array[Vector3]*): Self = StObject.set(x, "pathArray", js.Array(value :_*))
+    inline def setPathArrayVarargs(value: js.Array[Vector3]*): Self = StObject.set(x, "pathArray", js.Array(value*))
     
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
@@ -93,6 +93,6 @@ object CloseArray {
     
     inline def setUvsUndefined: Self = StObject.set(x, "uvs", js.undefined)
     
-    inline def setUvsVarargs(value: Vector2*): Self = StObject.set(x, "uvs", js.Array(value :_*))
+    inline def setUvsVarargs(value: Vector2*): Self = StObject.set(x, "uvs", js.Array(value*))
   }
 }

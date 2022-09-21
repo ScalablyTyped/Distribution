@@ -10,5 +10,5 @@ trait VideoFactory
   extends Factory[
       VideoConstructor, 
       InstanceType[VideoConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[VideoConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

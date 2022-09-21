@@ -6,29 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Y extends StObject {
   
-  var height: js.Any
+  var height: Double
   
-  var width: js.Any
+  var width: Double
   
-  var x: js.Any
+  var x: Double
   
-  var y: js.Any
+  var y: Double
 }
 object Y {
   
-  inline def apply(height: js.Any, width: js.Any, x: js.Any, y: js.Any): Y = {
+  inline def apply(height: Double, width: Double, x: Double, y: Double): Y = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Y]
   }
   
   extension [Self <: Y](x: Self) {
     
-    inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

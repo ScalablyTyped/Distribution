@@ -1,6 +1,5 @@
 package typings.zipkin.mod
 
-import typings.std.Error
 import typings.zipkin.anon.RemoteServiceName
 import typings.zipkin.anon.ServerTags
 import typings.zipkin.mod.option.IOption
@@ -12,10 +11,10 @@ object Instrumentation {
   
   @JSImport("zipkin", "Instrumentation.HttpClient")
   @js.native
-  class HttpClient protected () extends StObject {
+  open class HttpClient protected () extends StObject {
     def this(args: RemoteServiceName) = this()
     
-    def recordError(traceId: TraceId, error: Error): Unit = js.native
+    def recordError(traceId: TraceId, error: js.Error): Unit = js.native
     
     def recordRequest[T](request: T, url: String, method: String): T = js.native
     
@@ -24,12 +23,12 @@ object Instrumentation {
   
   @JSImport("zipkin", "Instrumentation.HttpServer")
   @js.native
-  class HttpServer protected () extends StObject {
+  open class HttpServer protected () extends StObject {
     def this(args: ServerTags) = this()
     
-    def recordRequest(method: String, requestUrl: String, readHeader: js.Function1[/* header */ String, IOption[js.Any]]): TraceId = js.native
+    def recordRequest(method: String, requestUrl: String, readHeader: js.Function1[/* header */ String, IOption[Any]]): TraceId = js.native
     
     def recordResponse(traceId: TraceId, statusCode: String): Unit = js.native
-    def recordResponse(traceId: TraceId, statusCode: String, error: Error): Unit = js.native
+    def recordResponse(traceId: TraceId, statusCode: String, error: js.Error): Unit = js.native
   }
 }

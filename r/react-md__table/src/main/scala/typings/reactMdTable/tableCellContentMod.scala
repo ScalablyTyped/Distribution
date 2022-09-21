@@ -4,6 +4,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.textIconSpacingMod.TextIconSpacingProps
+import typings.reactMdTable.configMod.TableCellHorizontalAlignment
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,6 +39,12 @@ object tableCellContentMod {
        with TextIconSpacingProps {
     
     /**
+      * @remarks \@since 4.0.3
+      * @see {@link TableCellHorizontalAlignment}
+      */
+    var hAlign: js.UndefOr[TableCellHorizontalAlignment] = js.undefined
+    
+    /**
       * An optional id for the sort order button.
       */
     var id: js.UndefOr[String] = js.undefined
@@ -66,6 +73,10 @@ object tableCellContentMod {
     }
     
     extension [Self <: TableCellContentProps](x: Self) {
+      
+      inline def setHAlign(value: TableCellHorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
+      
+      inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

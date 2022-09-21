@@ -11,22 +11,22 @@ object explorerMod {
   
   @JSImport("cosmiconfig/dist/Explorer", "Explorer")
   @js.native
-  class Explorer protected () extends ExplorerBase[ExplorerOptions] {
+  open class Explorer protected () extends ExplorerBase[ExplorerOptions] {
     def this(options: ExplorerOptions) = this()
     
-    /* private */ var createCosmiconfigResult: js.Any = js.native
+    /* private */ var createCosmiconfigResult: Any = js.native
     
     def load(filepath: String): js.Promise[CosmiconfigResult] = js.native
     
-    /* private */ var loadFileContent: js.Any = js.native
+    /* private */ var loadFileContent: Any = js.native
     
-    /* private */ var loadSearchPlace: js.Any = js.native
+    /* private */ var loadSearchPlace: Any = js.native
     
     def search(): js.Promise[CosmiconfigResult] = js.native
     def search(searchFrom: String): js.Promise[CosmiconfigResult] = js.native
     
-    /* private */ var searchDirectory: js.Any = js.native
+    /* private */ var searchDirectory: Any = js.native
     
-    /* private */ var searchFromDirectory: js.Any = js.native
+    /* private */ var searchFromDirectory: Any = js.native
   }
 }

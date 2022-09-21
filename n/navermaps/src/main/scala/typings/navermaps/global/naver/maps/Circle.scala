@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Naver Overlays
 @JSGlobal("naver.maps.Circle")
 @js.native
-class Circle ()
+open class Circle ()
   extends StObject
      with typings.navermaps.naver.maps.Circle {
   def this(options: CircleOptions) = this()

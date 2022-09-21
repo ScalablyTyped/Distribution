@@ -34,7 +34,7 @@ object b2MouseJointDef {
     frequencyHz: Double,
     maxForce: Double,
     `type`: Double,
-    userData: js.Any
+    userData: Any
   ): b2MouseJointDef = {
     val __obj = js.Dynamic.literal(bodyA = bodyA.asInstanceOf[js.Any], bodyB = bodyB.asInstanceOf[js.Any], collideConnected = collideConnected.asInstanceOf[js.Any], dampingRatio = dampingRatio.asInstanceOf[js.Any], frequencyHz = frequencyHz.asInstanceOf[js.Any], maxForce = maxForce.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

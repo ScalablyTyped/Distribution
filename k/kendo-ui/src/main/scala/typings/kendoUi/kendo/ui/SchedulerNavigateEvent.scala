@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait SchedulerNavigateEvent
   
   var action: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
 }
@@ -28,7 +27,7 @@ object SchedulerNavigateEvent {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * User list response.
-  */
 trait SchemaUsersListResponse extends StObject {
   
   /**
@@ -15,16 +12,14 @@ trait SchemaUsersListResponse extends StObject {
   var items: js.UndefOr[js.Array[SchemaUser]] = js.undefined
   
   /**
-    * This is always sql#usersList.
+    * This is always *sql#usersList*.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An identifier that uniquely identifies the operation. You can use this
-    * identifier to retrieve the Operations resource that has information about
-    * the operation.
+    * An identifier that uniquely identifies the operation. You can use this identifier to retrieve the Operations resource that has information about the operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUsersListResponse {
   
@@ -39,13 +34,17 @@ object SchemaUsersListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaUser*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaUser*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

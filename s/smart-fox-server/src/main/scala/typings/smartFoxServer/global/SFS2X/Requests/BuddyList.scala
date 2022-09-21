@@ -13,7 +13,7 @@ object BuddyList {
   
   @JSGlobal("SFS2X.Requests.BuddyList.AddBuddyRequest")
   @js.native
-  class AddBuddyRequest protected ()
+  open class AddBuddyRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.BuddyList.AddBuddyRequest {
     /**
@@ -25,7 +25,7 @@ object BuddyList {
   
   @JSGlobal("SFS2X.Requests.BuddyList.BlockBuddyRequest")
   @js.native
-  class BlockBuddyRequest protected ()
+  open class BlockBuddyRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.BuddyList.BlockBuddyRequest {
     /**
@@ -38,7 +38,7 @@ object BuddyList {
   
   @JSGlobal("SFS2X.Requests.BuddyList.BuddyMessageRequest")
   @js.native
-  class BuddyMessageRequest protected ()
+  open class BuddyMessageRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.BuddyList.BuddyMessageRequest {
     /**
@@ -53,7 +53,7 @@ object BuddyList {
   
   @JSGlobal("SFS2X.Requests.BuddyList.GoOnlineRequest")
   @js.native
-  class GoOnlineRequest protected ()
+  open class GoOnlineRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.BuddyList.GoOnlineRequest {
     /**
@@ -68,13 +68,13 @@ object BuddyList {
   /**
     * Creates a new InitBuddyListRequest instance.
     */
-  class InitBuddyListRequest ()
+  open class InitBuddyListRequest ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.BuddyList.InitBuddyListRequest
   
   @JSGlobal("SFS2X.Requests.BuddyList.RemoveBuddyRequest")
   @js.native
-  class RemoveBuddyRequest protected ()
+  open class RemoveBuddyRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.BuddyList.RemoveBuddyRequest {
     /**
@@ -86,7 +86,7 @@ object BuddyList {
   
   @JSGlobal("SFS2X.Requests.BuddyList.SetBuddyVariablesRequest")
   @js.native
-  class SetBuddyVariablesRequest protected ()
+  open class SetBuddyVariablesRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.BuddyList.SetBuddyVariablesRequest {
     /**

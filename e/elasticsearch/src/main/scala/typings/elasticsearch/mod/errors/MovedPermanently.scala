@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.MovedPermanently")
 @js.native
-class MovedPermanently () extends Abstract
+open class MovedPermanently () extends Abstract

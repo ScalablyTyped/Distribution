@@ -9,6 +9,8 @@ trait EnableLongStackTrace extends StObject {
   var enableLongStackTrace: js.UndefOr[Boolean] = js.undefined
   
   var shouldCoalesceEventChangeDetection: js.UndefOr[Boolean] = js.undefined
+  
+  var shouldCoalesceRunChangeDetection: js.UndefOr[Boolean] = js.undefined
 }
 object EnableLongStackTrace {
   
@@ -26,5 +28,9 @@ object EnableLongStackTrace {
     inline def setShouldCoalesceEventChangeDetection(value: Boolean): Self = StObject.set(x, "shouldCoalesceEventChangeDetection", value.asInstanceOf[js.Any])
     
     inline def setShouldCoalesceEventChangeDetectionUndefined: Self = StObject.set(x, "shouldCoalesceEventChangeDetection", js.undefined)
+    
+    inline def setShouldCoalesceRunChangeDetection(value: Boolean): Self = StObject.set(x, "shouldCoalesceRunChangeDetection", value.asInstanceOf[js.Any])
+    
+    inline def setShouldCoalesceRunChangeDetectionUndefined: Self = StObject.set(x, "shouldCoalesceRunChangeDetection", js.undefined)
   }
 }

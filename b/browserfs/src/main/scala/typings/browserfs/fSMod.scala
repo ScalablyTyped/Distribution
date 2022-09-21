@@ -16,11 +16,10 @@ import typings.browserfs.fileSystemMod.BFSCallback
 import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import typings.browserfs.fileSystemMod.BFSThreeArgCallback
 import typings.browserfs.fileSystemMod.FileSystem
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.FSWatcher
 import typings.node.fsMod.ReadStream
 import typings.node.fsMod.WriteStream
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object fSMod {
   
   @JSImport("browserfs/dist/node/core/FS", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with FS
   /* static members */
@@ -56,12 +55,12 @@ object fSMod {
     
     var X_OK: Double = js.native
     
-    def _toUnixTimestamp(time: Double): Double = js.native
     /**
       * converts Date or number to a fractional UNIX timestamp
       * Grabbed from NodeJS sources (lib/fs.js)
       */
-    def _toUnixTimestamp(time: Date): Double = js.native
+    def _toUnixTimestamp(time: js.Date): Double = js.native
+    def _toUnixTimestamp(time: Double): Double = js.native
     
     def access(path: String, callback: js.Function1[/* err */ ApiError, Unit]): Unit = js.native
     def access(path: String, mode: Double, callback: js.Function1[/* err */ ApiError, Unit]): Unit = js.native
@@ -86,13 +85,13 @@ object fSMod {
       * @option options [String] flag Defaults to `'a'`.
       * @param callback
       */
-    def appendFile(filename: String, data: js.Any): Unit = js.native
-    def appendFile(filename: String, data: js.Any, cb: BFSOneArgCallback): Unit = js.native
-    def appendFile(filename: String, data: js.Any, encoding: String): Unit = js.native
-    def appendFile(filename: String, data: js.Any, encoding: String, cb: BFSOneArgCallback): Unit = js.native
-    def appendFile(filename: String, data: js.Any, options: Unit, cb: BFSOneArgCallback): Unit = js.native
-    def appendFile(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
-    def appendFile(filename: String, data: js.Any, options: EncodingFlag, cb: BFSOneArgCallback): Unit = js.native
+    def appendFile(filename: String, data: Any): Unit = js.native
+    def appendFile(filename: String, data: Any, cb: BFSOneArgCallback): Unit = js.native
+    def appendFile(filename: String, data: Any, encoding: String): Unit = js.native
+    def appendFile(filename: String, data: Any, encoding: String, cb: BFSOneArgCallback): Unit = js.native
+    def appendFile(filename: String, data: Any, options: Unit, cb: BFSOneArgCallback): Unit = js.native
+    def appendFile(filename: String, data: Any, options: EncodingFlag): Unit = js.native
+    def appendFile(filename: String, data: Any, options: EncodingFlag, cb: BFSOneArgCallback): Unit = js.native
     
     /**
       * Asynchronously append data to a file, creating the file if it not yet
@@ -110,9 +109,9 @@ object fSMod {
       * @option options [Number] mode Defaults to `0644`.
       * @option options [String] flag Defaults to `'a'`.
       */
-    def appendFileSync(filename: String, data: js.Any): Unit = js.native
-    def appendFileSync(filename: String, data: js.Any, encoding: String): Unit = js.native
-    def appendFileSync(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
+    def appendFileSync(filename: String, data: Any): Unit = js.native
+    def appendFileSync(filename: String, data: Any, encoding: String): Unit = js.native
+    def appendFileSync(filename: String, data: Any, options: EncodingFlag): Unit = js.native
     
     def chmod(path: String, mode: String): Unit = js.native
     def chmod(path: String, mode: String, cb: BFSOneArgCallback): Unit = js.native
@@ -159,7 +158,7 @@ object fSMod {
     def close(fd: Double): Unit = js.native
     def close(fd: Double, cb: BFSOneArgCallback): Unit = js.native
     
-    /* private */ def closeFd(fd: js.Any): js.Any = js.native
+    /* private */ def closeFd(fd: Any): Any = js.native
     
     /**
       * Synchronous close.
@@ -184,7 +183,7 @@ object fSMod {
       * @param callback
       */
     def exists(path: String): Unit = js.native
-    def exists(path: String, cb: js.Function1[/* exists */ Boolean, js.Any]): Unit = js.native
+    def exists(path: String, cb: js.Function1[/* exists */ Boolean, Any]): Unit = js.native
     
     /**
       * Test whether or not the given path exists by checking with the file system.
@@ -228,9 +227,9 @@ object fSMod {
       */
     def fchownSync(fd: Double, uid: Double, gid: Double): Unit = js.native
     
-    /* private */ def fd2file(fd: js.Any): js.Any = js.native
+    /* private */ def fd2file(fd: Any): Any = js.native
     
-    /* private */ var fdMap: js.Any = js.native
+    /* private */ var fdMap: Any = js.native
     
     /**
       * Asynchronous fdatasync.
@@ -299,6 +298,12 @@ object fSMod {
     def ftruncateSync(fd: Double): Unit = js.native
     def ftruncateSync(fd: Double, len: Double): Unit = js.native
     
+    def futimes(fd: Double, atime: js.Date, mtime: js.Date): Unit = js.native
+    def futimes(fd: Double, atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
+    def futimes(fd: Double, atime: js.Date, mtime: Double): Unit = js.native
+    def futimes(fd: Double, atime: js.Date, mtime: Double, cb: BFSOneArgCallback): Unit = js.native
+    def futimes(fd: Double, atime: Double, mtime: js.Date): Unit = js.native
+    def futimes(fd: Double, atime: Double, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     /**
       * Change the file timestamps of a file referenced by the supplied file
       * descriptor.
@@ -309,13 +314,10 @@ object fSMod {
       */
     def futimes(fd: Double, atime: Double, mtime: Double): Unit = js.native
     def futimes(fd: Double, atime: Double, mtime: Double, cb: BFSOneArgCallback): Unit = js.native
-    def futimes(fd: Double, atime: Double, mtime: Date): Unit = js.native
-    def futimes(fd: Double, atime: Double, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
-    def futimes(fd: Double, atime: Date, mtime: Double): Unit = js.native
-    def futimes(fd: Double, atime: Date, mtime: Double, cb: BFSOneArgCallback): Unit = js.native
-    def futimes(fd: Double, atime: Date, mtime: Date): Unit = js.native
-    def futimes(fd: Double, atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
     
+    def futimesSync(fd: Double, atime: js.Date, mtime: js.Date): Unit = js.native
+    def futimesSync(fd: Double, atime: js.Date, mtime: Double): Unit = js.native
+    def futimesSync(fd: Double, atime: Double, mtime: js.Date): Unit = js.native
     /**
       * Change the file timestamps of a file referenced by the supplied file
       * descriptor.
@@ -324,11 +326,8 @@ object fSMod {
       * @param mtime
       */
     def futimesSync(fd: Double, atime: Double, mtime: Double): Unit = js.native
-    def futimesSync(fd: Double, atime: Double, mtime: Date): Unit = js.native
-    def futimesSync(fd: Double, atime: Date, mtime: Double): Unit = js.native
-    def futimesSync(fd: Double, atime: Date, mtime: Date): Unit = js.native
     
-    /* private */ def getFdForFile(file: js.Any): js.Any = js.native
+    /* private */ def getFdForFile(file: Any): Any = js.native
     
     /**
       * **NONSTANDARD**: Grab the FileSystem instance that backs this API.
@@ -418,8 +417,8 @@ object fSMod {
       * @param callback
       */
     def mkdir(path: String): Unit = js.native
-    def mkdir(path: String, mode: js.Any): Unit = js.native
-    def mkdir(path: String, mode: js.Any, cb: BFSOneArgCallback): Unit = js.native
+    def mkdir(path: String, mode: Any): Unit = js.native
+    def mkdir(path: String, mode: Any, cb: BFSOneArgCallback): Unit = js.native
     def mkdir(path: String, mode: Unit, cb: BFSOneArgCallback): Unit = js.native
     
     /**
@@ -431,7 +430,7 @@ object fSMod {
     def mkdirSync(path: String, mode: String): Unit = js.native
     def mkdirSync(path: String, mode: Double): Unit = js.native
     
-    /* private */ var nextFd: js.Any = js.native
+    /* private */ var nextFd: Any = js.native
     
     /**
       * Asynchronous file open.
@@ -667,7 +666,7 @@ object fSMod {
       */
     def rmdirSync(path: String): Unit = js.native
     
-    /* private */ var root: js.Any = js.native
+    /* private */ var root: Any = js.native
     
     /**
       * Asynchronous `stat`.
@@ -749,6 +748,12 @@ object fSMod {
         ]
     ): Unit = js.native
     
+    def utimes(path: String, atime: js.Date, mtime: js.Date): Unit = js.native
+    def utimes(path: String, atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
+    def utimes(path: String, atime: js.Date, mtime: Double): Unit = js.native
+    def utimes(path: String, atime: js.Date, mtime: Double, cb: BFSOneArgCallback): Unit = js.native
+    def utimes(path: String, atime: Double, mtime: js.Date): Unit = js.native
+    def utimes(path: String, atime: Double, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     /**
       * Change file timestamps of the file referenced by the supplied path.
       * @param path
@@ -758,13 +763,10 @@ object fSMod {
       */
     def utimes(path: String, atime: Double, mtime: Double): Unit = js.native
     def utimes(path: String, atime: Double, mtime: Double, cb: BFSOneArgCallback): Unit = js.native
-    def utimes(path: String, atime: Double, mtime: Date): Unit = js.native
-    def utimes(path: String, atime: Double, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
-    def utimes(path: String, atime: Date, mtime: Double): Unit = js.native
-    def utimes(path: String, atime: Date, mtime: Double, cb: BFSOneArgCallback): Unit = js.native
-    def utimes(path: String, atime: Date, mtime: Date): Unit = js.native
-    def utimes(path: String, atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
     
+    def utimesSync(path: String, atime: js.Date, mtime: js.Date): Unit = js.native
+    def utimesSync(path: String, atime: js.Date, mtime: Double): Unit = js.native
+    def utimesSync(path: String, atime: Double, mtime: js.Date): Unit = js.native
     /**
       * Change file timestamps of the file referenced by the supplied path.
       * @param path
@@ -772,17 +774,14 @@ object fSMod {
       * @param mtime
       */
     def utimesSync(path: String, atime: Double, mtime: Double): Unit = js.native
-    def utimesSync(path: String, atime: Double, mtime: Date): Unit = js.native
-    def utimesSync(path: String, atime: Date, mtime: Double): Unit = js.native
-    def utimesSync(path: String, atime: Date, mtime: Date): Unit = js.native
     
     def watch(filename: String): FSWatcher = js.native
-    def watch(filename: String, listener: js.Function2[/* event */ String, /* filename */ String, js.Any]): FSWatcher = js.native
+    def watch(filename: String, listener: js.Function2[/* event */ String, /* filename */ String, Any]): FSWatcher = js.native
     def watch(filename: String, options: Persistent): FSWatcher = js.native
     def watch(
       filename: String,
       options: Persistent,
-      listener: js.Function2[/* event */ String, /* filename */ String, js.Any]
+      listener: js.Function2[/* event */ String, /* filename */ String, Any]
     ): FSWatcher = js.native
     
     def watchFile(
@@ -847,27 +846,15 @@ object fSMod {
       position: Null,
       cb: BFSThreeArgCallback[Double, Buffer]
     ): Unit = js.native
-    def write(fd: Double, data: js.Any): Unit = js.native
-    def write(fd: Double, data: js.Any, cb: BFSThreeArgCallback[Double, String]): Unit = js.native
-    def write(fd: Double, data: js.Any, position: Double): Unit = js.native
-    def write(fd: Double, data: js.Any, position: Double, cb: BFSThreeArgCallback[Double, String]): Unit = js.native
-    def write(fd: Double, data: js.Any, position: Double, encoding: String): Unit = js.native
-    def write(
-      fd: Double,
-      data: js.Any,
-      position: Double,
-      encoding: String,
-      cb: BFSThreeArgCallback[Double, String]
-    ): Unit = js.native
-    def write(fd: Double, data: js.Any, position: Null, cb: BFSThreeArgCallback[Double, String]): Unit = js.native
-    def write(fd: Double, data: js.Any, position: Null, encoding: String): Unit = js.native
-    def write(
-      fd: Double,
-      data: js.Any,
-      position: Null,
-      encoding: String,
-      cb: BFSThreeArgCallback[Double, String]
-    ): Unit = js.native
+    def write(fd: Double, data: Any): Unit = js.native
+    def write(fd: Double, data: Any, cb: BFSThreeArgCallback[Double, String]): Unit = js.native
+    def write(fd: Double, data: Any, position: Double): Unit = js.native
+    def write(fd: Double, data: Any, position: Double, cb: BFSThreeArgCallback[Double, String]): Unit = js.native
+    def write(fd: Double, data: Any, position: Double, encoding: String): Unit = js.native
+    def write(fd: Double, data: Any, position: Double, encoding: String, cb: BFSThreeArgCallback[Double, String]): Unit = js.native
+    def write(fd: Double, data: Any, position: Null, cb: BFSThreeArgCallback[Double, String]): Unit = js.native
+    def write(fd: Double, data: Any, position: Null, encoding: String): Unit = js.native
+    def write(fd: Double, data: Any, position: Null, encoding: String, cb: BFSThreeArgCallback[Double, String]): Unit = js.native
     
     /**
       * Asynchronously writes data to a file, replacing the file if it already
@@ -888,13 +875,13 @@ object fSMod {
       * @option options [String] flag Defaults to `'w'`.
       * @param callback
       */
-    def writeFile(filename: String, data: js.Any): Unit = js.native
-    def writeFile(filename: String, data: js.Any, cb: BFSOneArgCallback): Unit = js.native
-    def writeFile(filename: String, data: js.Any, encoding: String): Unit = js.native
-    def writeFile(filename: String, data: js.Any, encoding: String, cb: BFSOneArgCallback): Unit = js.native
-    def writeFile(filename: String, data: js.Any, encoding: Unit, cb: BFSOneArgCallback): Unit = js.native
-    def writeFile(filename: String, data: js.Any, options: Mode): Unit = js.native
-    def writeFile(filename: String, data: js.Any, options: Mode, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(filename: String, data: Any): Unit = js.native
+    def writeFile(filename: String, data: Any, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(filename: String, data: Any, encoding: String): Unit = js.native
+    def writeFile(filename: String, data: Any, encoding: String, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(filename: String, data: Any, encoding: Unit, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(filename: String, data: Any, options: Mode): Unit = js.native
+    def writeFile(filename: String, data: Any, options: Mode, cb: BFSOneArgCallback): Unit = js.native
     
     /**
       * Synchronously writes data to a file, replacing the file if it already
@@ -908,9 +895,9 @@ object fSMod {
       * @option options [Number] mode Defaults to `0644`.
       * @option options [String] flag Defaults to `'w'`.
       */
-    def writeFileSync(filename: String, data: js.Any): Unit = js.native
-    def writeFileSync(filename: String, data: js.Any, encoding: String): Unit = js.native
-    def writeFileSync(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
+    def writeFileSync(filename: String, data: Any): Unit = js.native
+    def writeFileSync(filename: String, data: Any, encoding: String): Unit = js.native
+    def writeFileSync(filename: String, data: Any, options: EncodingFlag): Unit = js.native
     
     /**
       * Write buffer to the file specified by `fd`.

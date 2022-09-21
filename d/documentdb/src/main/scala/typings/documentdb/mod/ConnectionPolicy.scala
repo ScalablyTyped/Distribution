@@ -25,7 +25,7 @@ trait ConnectionPolicy extends StObject {
   var MediaRequestTimeout: Double
   
   /** List of azure regions to be used as preferred locations for read requests. */
-  var PreferredLocations: js.Array[js.Any]
+  var PreferredLocations: js.Array[Any]
   
   /** Request timeout (time to wait for response from network peer). Represented in milliseconds. */
   var RequestTimeout: Double
@@ -40,7 +40,7 @@ object ConnectionPolicy {
     EnableEndpointDiscovery: Boolean,
     MediaReadMode: MediaReadMode,
     MediaRequestTimeout: Double,
-    PreferredLocations: js.Array[js.Any],
+    PreferredLocations: js.Array[Any],
     RequestTimeout: Double,
     RetryOptions: RetryOptions
   ): ConnectionPolicy = {
@@ -58,9 +58,9 @@ object ConnectionPolicy {
     
     inline def setMediaRequestTimeout(value: Double): Self = StObject.set(x, "MediaRequestTimeout", value.asInstanceOf[js.Any])
     
-    inline def setPreferredLocations(value: js.Array[js.Any]): Self = StObject.set(x, "PreferredLocations", value.asInstanceOf[js.Any])
+    inline def setPreferredLocations(value: js.Array[Any]): Self = StObject.set(x, "PreferredLocations", value.asInstanceOf[js.Any])
     
-    inline def setPreferredLocationsVarargs(value: js.Any*): Self = StObject.set(x, "PreferredLocations", js.Array(value :_*))
+    inline def setPreferredLocationsVarargs(value: Any*): Self = StObject.set(x, "PreferredLocations", js.Array(value*))
     
     inline def setRequestTimeout(value: Double): Self = StObject.set(x, "RequestTimeout", value.asInstanceOf[js.Any])
     

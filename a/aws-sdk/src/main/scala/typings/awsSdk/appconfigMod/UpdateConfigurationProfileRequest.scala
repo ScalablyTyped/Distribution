@@ -65,6 +65,6 @@ object UpdateConfigurationProfileRequest {
     
     inline def setValidatorsUndefined: Self = StObject.set(x, "Validators", js.undefined)
     
-    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "Validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "Validators", js.Array(value*))
   }
 }

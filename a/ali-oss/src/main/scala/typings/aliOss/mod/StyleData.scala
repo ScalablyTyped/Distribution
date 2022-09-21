@@ -6,15 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StyleData extends StObject {
   
-  // style name
+  /** style content */
   var Content: String
   
-  // style content
+  /** style create time */
   var CreateTime: String
   
-  // style create time
+  /** style last modify time */
   var LastModifyTime: String
   
+  /** style name */
   var Name: String
 }
 object StyleData {

@@ -31,11 +31,11 @@ object anon {
       * or a blueprint.
       */
     @JSName("/*")
-    def SlashAsterisk(req: js.Any, res: js.Any, next: js.Function0[js.Any]): js.Any
+    def SlashAsterisk(req: Any, res: Any, next: js.Function0[Any]): Any
   }
   object _empty {
     
-    inline def apply(SlashAsterisk: (js.Any, js.Any, js.Function0[js.Any]) => js.Any): _empty = {
+    inline def apply(SlashAsterisk: (Any, Any, js.Function0[Any]) => Any): _empty = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("/*")(js.Any.fromFunction3(SlashAsterisk))
       __obj.asInstanceOf[_empty]
@@ -43,7 +43,7 @@ object anon {
     
     extension [Self <: _empty](x: Self) {
       
-      inline def setSlashAsterisk(value: (js.Any, js.Any, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "/*", js.Any.fromFunction3(value))
+      inline def setSlashAsterisk(value: (Any, Any, js.Function0[Any]) => Any): Self = StObject.set(x, "/*", js.Any.fromFunction3(value))
     }
   }
 }

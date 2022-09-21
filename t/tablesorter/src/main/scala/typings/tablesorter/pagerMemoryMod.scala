@@ -51,7 +51,7 @@ object pagerMemoryMod {
       
       inline def setCurrentFilters(value: js.Array[String]): Self = StObject.set(x, "currentFilters", value.asInstanceOf[js.Any])
       
-      inline def setCurrentFiltersVarargs(value: String*): Self = StObject.set(x, "currentFilters", js.Array(value :_*))
+      inline def setCurrentFiltersVarargs(value: String*): Self = StObject.set(x, "currentFilters", js.Array(value*))
       
       inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
@@ -59,7 +59,7 @@ object pagerMemoryMod {
       
       inline def setSortList(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortList", value.asInstanceOf[js.Any])
       
-      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value :_*))
+      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value*))
       
       inline def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
     }

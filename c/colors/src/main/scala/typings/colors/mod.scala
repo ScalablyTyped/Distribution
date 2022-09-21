@@ -119,7 +119,7 @@ object mod {
   @js.native
   val reset: Color = js.native
   
-  inline def setTheme(theme: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTheme(theme: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("colors", "strikethrough")
   @js.native

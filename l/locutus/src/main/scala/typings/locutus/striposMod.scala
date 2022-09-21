@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object striposMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(fHaystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(fHaystack: js.Any, fNeedle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(fHaystack: js.Any, fNeedle: js.Any, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(fHaystack: js.Any, fNeedle: Unit, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(fHaystack: Unit, fNeedle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(fHaystack: Unit, fNeedle: js.Any, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(fHaystack: Unit, fNeedle: Unit, fOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(fHaystack: Any): Any = ^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(fHaystack: Any, fNeedle: Any): Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(fHaystack: Any, fNeedle: Any, fOffset: Any): Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(fHaystack: Any, fNeedle: Unit, fOffset: Any): Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(fHaystack: Unit, fNeedle: Any): Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(fHaystack: Unit, fNeedle: Any, fOffset: Any): Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(fHaystack: Unit, fNeedle: Unit, fOffset: Any): Any = (^.asInstanceOf[js.Dynamic].apply(fHaystack.asInstanceOf[js.Any], fNeedle.asInstanceOf[js.Any], fOffset.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/stripos", JSImport.Namespace)
   @js.native

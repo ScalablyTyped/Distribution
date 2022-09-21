@@ -29,7 +29,7 @@ object DescribeAggregationAuthorizationsResponse {
     
     inline def setAggregationAuthorizationsUndefined: Self = StObject.set(x, "AggregationAuthorizations", js.undefined)
     
-    inline def setAggregationAuthorizationsVarargs(value: AggregationAuthorization*): Self = StObject.set(x, "AggregationAuthorizations", js.Array(value :_*))
+    inline def setAggregationAuthorizationsVarargs(value: AggregationAuthorization*): Self = StObject.set(x, "AggregationAuthorizations", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

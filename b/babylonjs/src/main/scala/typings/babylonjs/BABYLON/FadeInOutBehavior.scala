@@ -9,17 +9,17 @@ trait FadeInOutBehavior
   extends StObject
      with Behavior[Mesh] {
   
-  /* private */ var _hoverValue: js.Any = js.native
+  /* private */ var _hoverValue: Any = js.native
   
-  /* private */ var _hovered: js.Any = js.native
+  /* private */ var _hovered: Any = js.native
   
-  /* private */ var _millisecondsPerFrame: js.Any = js.native
+  /* private */ var _millisecondsPerFrame: Any = js.native
   
-  /* private */ var _ownerNode: js.Any = js.native
+  /* private */ var _ownerNode: Any = js.native
   
-  /* private */ var _setAllVisibility: js.Any = js.native
+  /* private */ var _setAllVisibility: Any = js.native
   
-  /* private */ var _update: js.Any = js.native
+  /* private */ var _update: Any = js.native
   
   /**
     * Time in milliseconds to delay before fading in (Default: 0)

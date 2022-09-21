@@ -25,7 +25,7 @@ object Balances {
     
     inline def setBalances(value: js.Array[Double]): Self = StObject.set(x, "balances", value.asInstanceOf[js.Any])
     
-    inline def setBalancesVarargs(value: Double*): Self = StObject.set(x, "balances", js.Array(value :_*))
+    inline def setBalancesVarargs(value: Double*): Self = StObject.set(x, "balances", js.Array(value*))
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

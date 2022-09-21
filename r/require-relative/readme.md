@@ -11,9 +11,9 @@ require and resolve modules relative to a path of your choice
 | Full name          | require-relative |
 | Keywords           | require, resolve, modules, relative |
 | # releases         | 0 |
-| # dependents       | 114 |
-| # downloads        | 23419172 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2757301.6666666665 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/kamicane/require-relative)

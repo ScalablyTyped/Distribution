@@ -52,7 +52,7 @@ object XStarBasicAccess {
     addModule: (String, String, String, String) => Unit,
     createLibrary: (String, String, String, String) => Unit,
     getLibraryContainer: () => XNameContainer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStarBasicAccess = {
     val __obj = js.Dynamic.literal(LibraryContainer = LibraryContainer.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addDialog = js.Any.fromFunction3(addDialog), addModule = js.Any.fromFunction4(addModule), createLibrary = js.Any.fromFunction4(createLibrary), getLibraryContainer = js.Any.fromFunction0(getLibraryContainer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

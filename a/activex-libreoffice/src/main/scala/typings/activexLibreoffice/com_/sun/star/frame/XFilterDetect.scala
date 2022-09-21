@@ -23,7 +23,7 @@ object XFilterDetect {
   inline def apply(
     acquire: () => Unit,
     getContentType: String => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     useExternBrowser: String => Boolean
   ): XFilterDetect = {

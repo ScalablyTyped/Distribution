@@ -14,15 +14,15 @@ object mod {
   
   @JSImport("karma-html-detailed-reporter", "preprocessor:htmlDetailed")
   @js.native
-  def preprocessorHtmlDetailed: js.Tuple2[factory, js.Any] = js.native
+  def preprocessorHtmlDetailed: js.Tuple2[factory, Any] = js.native
   
-  inline def preprocessorHtmlDetailed_=(x: js.Tuple2[factory, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preprocessor:htmlDetailed")(x.asInstanceOf[js.Any])
+  inline def preprocessorHtmlDetailed_=(x: js.Tuple2[factory, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preprocessor:htmlDetailed")(x.asInstanceOf[js.Any])
   
   @JSImport("karma-html-detailed-reporter", "reporter:htmlDetailed")
   @js.native
-  def reporterHtmlDetailed: js.Tuple2[`type`, js.Any] = js.native
+  def reporterHtmlDetailed: js.Tuple2[`type`, Any] = js.native
   
-  inline def reporterHtmlDetailed_=(x: js.Tuple2[`type`, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reporter:htmlDetailed")(x.asInstanceOf[js.Any])
+  inline def reporterHtmlDetailed_=(x: js.Tuple2[`type`, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reporter:htmlDetailed")(x.asInstanceOf[js.Any])
   
   /* augmented module */
   object karmaAugmentingMod {

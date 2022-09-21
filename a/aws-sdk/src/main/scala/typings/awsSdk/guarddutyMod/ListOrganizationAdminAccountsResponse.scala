@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListOrganizationAdminAccountsResponse extends StObject {
   
   /**
-    * An AdminAccounts object that includes a list of accounts configured as GuardDuty delegated administrators.
+    * A list of accounts configured as GuardDuty delegated administrators.
     */
   var AdminAccounts: js.UndefOr[typings.awsSdk.guarddutyMod.AdminAccounts] = js.undefined
   
@@ -29,7 +29,7 @@ object ListOrganizationAdminAccountsResponse {
     
     inline def setAdminAccountsUndefined: Self = StObject.set(x, "AdminAccounts", js.undefined)
     
-    inline def setAdminAccountsVarargs(value: AdminAccount*): Self = StObject.set(x, "AdminAccounts", js.Array(value :_*))
+    inline def setAdminAccountsVarargs(value: AdminAccount*): Self = StObject.set(x, "AdminAccounts", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

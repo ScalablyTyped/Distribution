@@ -19,12 +19,12 @@ trait Catalog extends StObject {
   /**
     * Lists known datacenters
     */
-  def datacenters[TData](): Thenable[TData] = js.native
+  def datacenters[TData](): js.Promise[TData] = js.native
   /**
     * Lists known datacenters
     */
   def datacenters[TData](callback: Callback[TData]): Unit = js.native
-  def datacenters[TData](opts: DatacentersOptions): Thenable[TData] = js.native
+  def datacenters[TData](opts: DatacentersOptions): js.Promise[TData] = js.native
   /**
     * Lists known datacenters
     */
@@ -35,17 +35,17 @@ trait Catalog extends StObject {
   /**
     * Lists nodes in a given DC
     */
-  def nodes[TData](): Thenable[TData] = js.native
+  def nodes[TData](): js.Promise[TData] = js.native
   /**
     * Lists nodes in a given DC
     */
   def nodes[TData](callback: Callback[TData]): Unit = js.native
-  def nodes[TData](dc: String): Thenable[TData] = js.native
+  def nodes[TData](dc: String): js.Promise[TData] = js.native
   /**
     * Lists nodes in a given DC
     */
   def nodes[TData](dc: String, callback: Callback[TData]): Unit = js.native
-  def nodes[TData](opts: NodesOptions): Thenable[TData] = js.native
+  def nodes[TData](opts: NodesOptions): js.Promise[TData] = js.native
   /**
     * Lists nodes in a given DC
     */
@@ -56,17 +56,17 @@ trait Catalog extends StObject {
   /**
     * Lists services in a given DC
     */
-  def services[TData](): Thenable[TData] = js.native
+  def services[TData](): js.Promise[TData] = js.native
   /**
     * Lists services in a given DC
     */
   def services[TData](callback: Callback[TData]): Unit = js.native
-  def services[TData](dc: String): Thenable[TData] = js.native
+  def services[TData](dc: String): js.Promise[TData] = js.native
   /**
     * Lists services in a given DC
     */
   def services[TData](dc: String, callback: Callback[TData]): Unit = js.native
-  def services[TData](opts: ServicesOptions): Thenable[TData] = js.native
+  def services[TData](opts: ServicesOptions): js.Promise[TData] = js.native
   /**
     * Lists services in a given DC
     */
@@ -84,17 +84,17 @@ object Catalog {
     /**
       * Lists nodes in a given DC
       */
-    def list[TData](): Thenable[TData] = js.native
+    def list[TData](): js.Promise[TData] = js.native
     /**
       * Lists nodes in a given DC
       */
     def list[TData](callback: Callback[TData]): Unit = js.native
-    def list[TData](dc: String): Thenable[TData] = js.native
+    def list[TData](dc: String): js.Promise[TData] = js.native
     /**
       * Lists nodes in a given DC
       */
     def list[TData](dc: String, callback: Callback[TData]): Unit = js.native
-    def list[TData](opts: ListOptions): Thenable[TData] = js.native
+    def list[TData](opts: ListOptions): js.Promise[TData] = js.native
     /**
       * Lists nodes in a given DC
       */
@@ -103,7 +103,7 @@ object Catalog {
     /**
       * Lists the services provided by a node
       */
-    def services[TData](node: String): Thenable[TData] = js.native
+    def services[TData](node: String): js.Promise[TData] = js.native
     /**
       * Lists the services provided by a node
       */
@@ -111,7 +111,7 @@ object Catalog {
     /**
       * Lists the services provided by a node
       */
-    def services[TData](opts: typings.consul.mod.Catalog.Node.ServicesOptions): Thenable[TData] = js.native
+    def services[TData](opts: typings.consul.mod.Catalog.Node.ServicesOptions): js.Promise[TData] = js.native
     /**
       * Lists the services provided by a node
       */
@@ -165,17 +165,17 @@ object Catalog {
     /**
       * Lists services in a given DC
       */
-    def list[TData](): Thenable[TData] = js.native
+    def list[TData](): js.Promise[TData] = js.native
     /**
       * Lists services in a given DC
       */
     def list[TData](callback: Callback[TData]): Unit = js.native
-    def list[TData](dc: String): Thenable[TData] = js.native
+    def list[TData](dc: String): js.Promise[TData] = js.native
     /**
       * Lists services in a given DC
       */
     def list[TData](dc: String, callback: Callback[TData]): Unit = js.native
-    def list[TData](opts: typings.consul.mod.Catalog.Service.ListOptions): Thenable[TData] = js.native
+    def list[TData](opts: typings.consul.mod.Catalog.Service.ListOptions): js.Promise[TData] = js.native
     /**
       * Lists services in a given DC
       */
@@ -184,7 +184,7 @@ object Catalog {
     /**
       * Lists the nodes in a given service
       */
-    def nodes[TData](opts: typings.consul.mod.Catalog.Service.NodesOptions): Thenable[TData] = js.native
+    def nodes[TData](opts: typings.consul.mod.Catalog.Service.NodesOptions): js.Promise[TData] = js.native
     /**
       * Lists the nodes in a given service
       */
@@ -192,7 +192,7 @@ object Catalog {
     /**
       * Lists the nodes in a given service
       */
-    def nodes[TData](service: String): Thenable[TData] = js.native
+    def nodes[TData](service: String): js.Promise[TData] = js.native
     /**
       * Lists the nodes in a given service
       */

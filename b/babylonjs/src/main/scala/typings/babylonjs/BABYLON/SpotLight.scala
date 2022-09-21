@@ -9,9 +9,9 @@ trait SpotLight
   extends StObject
      with ShadowLight {
   
-  /* private */ var _angle: js.Any = js.native
+  /* private */ var _angle: Any = js.native
   
-  /* private */ var _computeAngleValues: js.Any = js.native
+  /* private */ var _computeAngleValues: Any = js.native
   
   /**
     * Main function for light texture projection matrix computing.
@@ -22,39 +22,39 @@ trait SpotLight
   
   /* protected */ def _computeProjectionTextureViewLightMatrix(): Unit = js.native
   
-  /* private */ var _cosHalfAngle: js.Any = js.native
+  /* private */ var _cosHalfAngle: Any = js.native
   
-  /* private */ var _innerAngle: js.Any = js.native
+  /* private */ var _innerAngle: Any = js.native
   
-  /* private */ var _lightAngleOffset: js.Any = js.native
+  /* private */ var _lightAngleOffset: Any = js.native
   
-  /* private */ var _lightAngleScale: js.Any = js.native
+  /* private */ var _lightAngleScale: Any = js.native
   
-  /* private */ var _projectionTexture: js.Any = js.native
+  /* private */ var _projectionTexture: Any = js.native
   
-  /* private */ var _projectionTextureDirty: js.Any = js.native
+  /* private */ var _projectionTextureDirty: Any = js.native
   
   /* protected */ var _projectionTextureLightFar: Double = js.native
   
   /* protected */ var _projectionTextureLightNear: Double = js.native
   
-  /* private */ var _projectionTextureMatrix: js.Any = js.native
+  /* private */ var _projectionTextureMatrix: Any = js.native
   
-  /* private */ var _projectionTextureProjectionLightDirty: js.Any = js.native
+  /* private */ var _projectionTextureProjectionLightDirty: Any = js.native
   
-  /* private */ var _projectionTextureProjectionLightMatrix: js.Any = js.native
+  /* private */ var _projectionTextureProjectionLightMatrix: Any = js.native
   
-  /* private */ var _projectionTextureScalingMatrix: js.Any = js.native
+  /* private */ var _projectionTextureScalingMatrix: Any = js.native
   
   /* protected */ var _projectionTextureUpDirection: Vector3 = js.native
   
-  /* private */ var _projectionTextureViewLightDirty: js.Any = js.native
+  /* private */ var _projectionTextureViewLightDirty: Any = js.native
   
-  /* private */ var _projectionTextureViewLightMatrix: js.Any = js.native
+  /* private */ var _projectionTextureViewLightMatrix: Any = js.native
   
-  /* private */ var _projectionTextureViewTargetVector: js.Any = js.native
+  /* private */ var _projectionTextureViewTargetVector: Any = js.native
   
-  /* private */ var _shadowAngleScale: js.Any = js.native
+  /* private */ var _shadowAngleScale: Any = js.native
   
   /**
     * Gets the cone angle of the spot light in Radians.
@@ -107,9 +107,15 @@ trait SpotLight
   def projectionTextureLightNear_=(value: Double): Unit = js.native
   
   /**
-    * Allows reading the projecton texture
+    * Allows reading the projection texture
     */
   def projectionTextureMatrix: Matrix = js.native
+  
+  /**
+    * Gets or sets the light projection matrix as used by the projection texture
+    */
+  def projectionTextureProjectionLightMatrix: Matrix = js.native
+  def projectionTextureProjectionLightMatrix_=(projection: Matrix): Unit = js.native
   
   /**
     * Gets the Up vector of the Spotlight for texture projection.

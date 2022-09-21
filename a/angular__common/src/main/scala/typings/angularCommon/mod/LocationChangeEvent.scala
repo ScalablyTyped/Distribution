@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LocationChangeEvent extends StObject {
   
-  var state: js.Any
+  var state: Any
   
   var `type`: String
 }
 object LocationChangeEvent {
   
-  inline def apply(state: js.Any, `type`: String): LocationChangeEvent = {
+  inline def apply(state: Any, `type`: String): LocationChangeEvent = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationChangeEvent]
@@ -20,7 +20,7 @@ object LocationChangeEvent {
   
   extension [Self <: LocationChangeEvent](x: Self) {
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

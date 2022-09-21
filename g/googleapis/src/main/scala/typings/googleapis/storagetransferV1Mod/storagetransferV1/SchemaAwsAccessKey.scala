@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * AWS access key (see [AWS Security
-  * Credentials](http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html)).
-  */
 trait SchemaAwsAccessKey extends StObject {
   
   /**
-    * AWS access key ID. Required.
+    * Required. AWS access key ID.
     */
-  var accessKeyId: js.UndefOr[String] = js.undefined
+  var accessKeyId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * AWS secret access key. This field is not returned in RPC responses.
-    * Required.
+    * Required. AWS secret access key. This field is not returned in RPC responses.
     */
-  var secretAccessKey: js.UndefOr[String] = js.undefined
+  var secretAccessKey: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAwsAccessKey {
   
@@ -32,9 +27,13 @@ object SchemaAwsAccessKey {
     
     inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     
+    inline def setAccessKeyIdNull: Self = StObject.set(x, "accessKeyId", null)
+    
     inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
     
     inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+    
+    inline def setSecretAccessKeyNull: Self = StObject.set(x, "secretAccessKey", null)
     
     inline def setSecretAccessKeyUndefined: Self = StObject.set(x, "secretAccessKey", js.undefined)
   }

@@ -10,15 +10,12 @@ Sticky component for React
 | ------------------ | :-------------: |
 | Full name          | react-sticky-el |
 | Keywords           | react, reactjs, sticky, fixed, react-sticky |
-| # releases         | 8 |
-| # dependents       | 7 |
-| # downloads        | 1802921 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 218099.33333333334 |
+| # stars            | 219.0 |
 
 ## Links
-- [Homepage](https://github.com/gm0t/react-sticky-el#readme)
-- [Bugs](https://github.com/gm0t/react-sticky-el/issues)
-- [Repository](https://github.com/gm0t/react-sticky-el)
 - [Npm](https://www.npmjs.com/package/react-sticky-el)
     
 

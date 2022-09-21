@@ -1,37 +1,101 @@
 package typings.assertionError
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Shortcut
-import typings.assertionError.anon.ShowDiff
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  @JSImport("assertion-error", JSImport.Namespace)
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.assertionError.mod.Result because var conflicts: name. Inlined ok, toJSON */ @JSImport("assertion-error", "AssertionError")
   @js.native
-  val ^ : js.Object & AssertionErrorConstructor = js.native
-  
-  type AssertionError[T] = Error & T & ShowDiff
-  
-  @js.native
-  trait AssertionErrorConstructor
+  open class AssertionError[T] ()
     extends StObject
-       with Instantiable1[/* message */ String, AssertionError[js.Object]]
-       with Instantiable2[/* message */ String, /* props */ js.Object, AssertionError[js.Object]]
-       with Instantiable3[
-          /* message */ String, 
-          (/* props */ js.Object) | (/* props */ Unit), 
-          /* ssf */ js.Function, 
-          AssertionError[js.Object]
-        ]
+       with Error
+       with /* key */ StringDictionary[Any] {
+    def this(message: String) = this()
+    def this(message: String, props: T) = this()
+    def this(message: Unit, props: T) = this()
+    def this(message: String, props: T, ssf: js.Function) = this()
+    def this(message: String, props: Unit, ssf: js.Function) = this()
+    def this(message: Unit, props: T, ssf: js.Function) = this()
+    def this(message: Unit, props: Unit, ssf: js.Function) = this()
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+    @JSName("name")
+    def name_MAssertionError: typings.assertionError.assertionErrorStrings.AssertionError = js.native
+    
+    def ok: Boolean = js.native
+    @JSName("ok")
+    var ok_FAssertionError: Boolean = js.native
+    
+    @JSName("stack")
+    def stack_MAssertionError: Any = js.native
+    
+    def toJSON(args: Any*): Record[String, Any] = js.native
+    def toJSON(stack: Boolean): Record[String, Any] = js.native
+  }
   
-  type _To = js.Object & AssertionErrorConstructor
+  @JSImport("assertion-error", "AssertionResult")
+  @js.native
+  open class AssertionResult[T] ()
+    extends StObject
+       with Result
+       with /* key */ StringDictionary[Any] {
+    def this(props: T) = this()
+    
+    /* CompleteClass */
+    var name: typings.assertionError.assertionErrorStrings.AssertionError | typings.assertionError.assertionErrorStrings.AssertionResult = js.native
+    @JSName("name")
+    def name_MAssertionResult: typings.assertionError.assertionErrorStrings.AssertionResult = js.native
+    
+    /* CompleteClass */
+    var ok: Boolean = js.native
+    @JSName("ok")
+    def ok_MAssertionResult: Boolean = js.native
+    
+    def toJSON(): Record[String, Any] = js.native
+    /* CompleteClass */
+    override def toJSON(args: Any*): Record[String, Any] = js.native
+  }
   
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Object & AssertionErrorConstructor = ^
+  trait Result extends StObject {
+    
+    var name: typings.assertionError.assertionErrorStrings.AssertionError | typings.assertionError.assertionErrorStrings.AssertionResult
+    
+    var ok: Boolean
+    
+    def toJSON(args: Any*): Record[String, Any]
+  }
+  object Result {
+    
+    inline def apply(
+      name: typings.assertionError.assertionErrorStrings.AssertionError | typings.assertionError.assertionErrorStrings.AssertionResult,
+      ok: Boolean,
+      toJSON: /* repeated */ Any => Record[String, Any]
+    ): Result = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], toJSON = js.Any.fromFunction1(toJSON))
+      __obj.asInstanceOf[Result]
+    }
+    
+    extension [Self <: Result](x: Self) {
+      
+      inline def setName(
+        value: typings.assertionError.assertionErrorStrings.AssertionError | typings.assertionError.assertionErrorStrings.AssertionResult
+      ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      
+      inline def setToJSON(value: /* repeated */ Any => Record[String, Any]): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+    }
+  }
 }

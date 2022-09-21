@@ -12,6 +12,9 @@ trait QueryInterpretationOptions extends StObject {
     */
   var disableNlInterpretation: js.UndefOr[Boolean] = js.undefined
   
+  /** Use this flag to disable supplemental results for a query. Supplemental results setting chosen at SearchApplication level will take precedence if set to True. */
+  var disableSupplementalResults: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Enable this flag to turn off all internal optimizations like natural language (NL) interpretation of queries, supplemental result retrieval, and usage of synonyms including custom
     * ones. Nl interpretation will be disabled if either one of the two flags is true.
@@ -30,6 +33,10 @@ object QueryInterpretationOptions {
     inline def setDisableNlInterpretation(value: Boolean): Self = StObject.set(x, "disableNlInterpretation", value.asInstanceOf[js.Any])
     
     inline def setDisableNlInterpretationUndefined: Self = StObject.set(x, "disableNlInterpretation", js.undefined)
+    
+    inline def setDisableSupplementalResults(value: Boolean): Self = StObject.set(x, "disableSupplementalResults", value.asInstanceOf[js.Any])
+    
+    inline def setDisableSupplementalResultsUndefined: Self = StObject.set(x, "disableSupplementalResults", js.undefined)
     
     inline def setEnableVerbatimMode(value: Boolean): Self = StObject.set(x, "enableVerbatimMode", value.asInstanceOf[js.Any])
     

@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DaylightViewModelConstructor
   extends StObject
-     with Instantiable0[DaylightViewModel]
+     with /**
+  * Provides the logic for the [Daylight](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html)
+  */
+Instantiable0[DaylightViewModel]
      with Instantiable1[/* properties */ DaylightViewModelProperties, DaylightViewModel]

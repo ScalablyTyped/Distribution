@@ -20,7 +20,7 @@ trait Property extends StObject {
   
   var Type: Double
   
-  var Value: js.Any
+  var Value: Any
 }
 object Property {
   
@@ -30,7 +30,7 @@ object Property {
     Name: String,
     Properties: Properties,
     Type: Double,
-    Value: js.Any
+    Value: Any
   ): Property = {
     val __obj = js.Dynamic.literal(Inherited = Inherited.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("DAO.Property_typekey")(DAODotProperty_typekey.asInstanceOf[js.Any])
@@ -49,6 +49,6 @@ object Property {
     
     inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

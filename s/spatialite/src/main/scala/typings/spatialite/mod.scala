@@ -1,7 +1,7 @@
 package typings.spatialite
 
+import typings.node.eventsMod.EventEmitterOptions
 import typings.sqlite3.mod.sqlite3
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,15 +14,15 @@ object mod {
   
   @JSImport("spatialite", "Database")
   @js.native
-  class Database protected ()
+  open class Database protected ()
     extends typings.sqlite3.mod.Database {
     def this(filename: String) = this()
-    def this(filename: String, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
+    def this(filename: String, callback: js.Function1[/* err */ js.Error | Null, Unit]) = this()
     def this(filename: String, mode: Double) = this()
-    def this(filename: String, mode: Double, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
-    def this(filename: String, mode: Unit, callback: js.Function1[/* err */ Error | Null, Unit]) = this()
+    def this(filename: String, mode: Double, callback: js.Function1[/* err */ js.Error | Null, Unit]) = this()
+    def this(filename: String, mode: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]) = this()
     
-    def spatialite(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def spatialite(cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   }
   
   @JSImport("spatialite", "OPEN_CREATE")
@@ -39,8 +39,10 @@ object mod {
   
   @JSImport("spatialite", "Statement")
   @js.native
-  class Statement ()
-    extends typings.sqlite3.mod.Statement
+  open class Statement ()
+    extends typings.sqlite3.mod.Statement {
+    def this(options: EventEmitterOptions) = this()
+  }
   
   object cached {
     
@@ -51,18 +53,18 @@ object mod {
     inline def Database(filename: String): typings.sqlite3.mod.Database = ^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.sqlite3.mod.Database]
     inline def Database(
       filename: String,
-      callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
+      callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ js.Error | Null, Unit]
     ): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
     inline def Database(filename: String, mode: Double): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
     inline def Database(
       filename: String,
       mode: Double,
-      callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
+      callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ js.Error | Null, Unit]
     ): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
     inline def Database(
       filename: String,
       mode: Unit,
-      callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
+      callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ js.Error | Null, Unit]
     ): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
   }
   

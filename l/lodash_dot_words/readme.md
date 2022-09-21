@@ -10,10 +10,10 @@ The lodash method `_.words` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.words |
 | Keywords           | lodash-modularized, words |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 4650661 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 318628.6666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

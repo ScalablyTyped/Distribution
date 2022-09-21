@@ -1,7 +1,6 @@
 package typings.uirouterCore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import typings.uirouterCore.paramTypeMod.ParamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -302,7 +301,7 @@ object paramsInterfaceMod {
       *
       * Default: `undefined`
       */
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object ParamDeclaration {
     
@@ -337,7 +336,7 @@ object paramsInterfaceMod {
       
       inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      inline def setReplaceVarargs(value: Replace*): Self = StObject.set(x, "replace", js.Array(value :_*))
+      inline def setReplaceVarargs(value: Replace*): Self = StObject.set(x, "replace", js.Array(value*))
       
       inline def setSquash(value: Boolean | String): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
       
@@ -347,7 +346,7 @@ object paramsInterfaceMod {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -370,8 +369,8 @@ object paramsInterfaceMod {
       * @param key The name of the parameter in which `val` is stored. Can be used for meta-programming of `ParamType` objects.
       * @returns a custom representation of the URL parameter value.
       */
-    def decode(`val`: String): js.Any = js.native
-    def decode(`val`: String, key: String): js.Any = js.native
+    def decode(`val`: String): Any = js.native
+    def decode(`val`: String, key: String): Any = js.native
     
     /**
       * Dynamic flag
@@ -403,8 +402,8 @@ object paramsInterfaceMod {
       * @param key The name of the parameter in which `val` is stored. Can be used for meta-programming of `ParamType` objects.
       * @returns a string representation of `val` that can be encoded in a URL.
       */
-    def encode(`val`: js.Any): String | js.Array[String] = js.native
-    def encode(`val`: js.Any, key: String): String | js.Array[String] = js.native
+    def encode(`val`: Any): String | js.Array[String] = js.native
+    def encode(`val`: Any, key: String): String | js.Array[String] = js.native
     
     /**
       * Determines whether two decoded values are equivalent.
@@ -418,7 +417,7 @@ object paramsInterfaceMod {
       * @param b A value to compare against.
       * @returns `true` if the values are equivalent/equal, otherwise `false`.
       */
-    def equals(a: js.Any, b: js.Any): Boolean = js.native
+    def equals(a: Any, b: Any): Boolean = js.native
     
     /**
       * Enables/disables inheriting of parameter values (of this type)
@@ -474,8 +473,8 @@ object paramsInterfaceMod {
       *        meta-programming of `ParamType` objects.
       * @returns `true` if the value matches the type, otherwise `false`.
       */
-    def is(`val`: js.Any): Boolean = js.native
-    def is(`val`: js.Any, key: String): Boolean = js.native
+    def is(`val`: Any): Boolean = js.native
+    def is(`val`: Any, key: String): Boolean = js.native
     
     /**
       * A regular expression that matches the encoded parameter type
@@ -491,7 +490,7 @@ object paramsInterfaceMod {
       * - No pattern modifiers like case insensitive
       * - No start-of-string or end-of-string: `/^foo$/`
       */
-    var pattern: js.UndefOr[RegExp] = js.native
+    var pattern: js.UndefOr[js.RegExp] = js.native
     
     /**
       * Disables url-encoding of parameter values
@@ -507,7 +506,7 @@ object paramsInterfaceMod {
     var raw: js.UndefOr[Boolean] = js.native
   }
   
-  type RawParams = StringDictionary[js.Any]
+  type RawParams = StringDictionary[Any]
   
   trait Replace extends StObject {
     

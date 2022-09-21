@@ -1,12 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientDataflow.anon.Accesstoken
+import typings.maximMazurokGapiClientDataflow.anon.Alt
+import typings.maximMazurokGapiClientDataflow.anon.Callback
+import typings.maximMazurokGapiClientDataflow.anon.Fields
 import typings.maximMazurokGapiClientDataflow.anon.JobId
-import typings.maximMazurokGapiClientDataflow.anon.Location
-import typings.maximMazurokGapiClientDataflow.anon.PrettyPrint
-import typings.maximMazurokGapiClientDataflow.anon.ProjectId
-import typings.maximMazurokGapiClientDataflow.anon.QuotaUser
-import typings.maximMazurokGapiClientDataflow.anon.Resource
+import typings.maximMazurokGapiClientDataflow.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,16 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DebugResource extends StObject {
   
   /** Get encoded debug configuration for component. Not cacheable. */
-  def getConfig(request: JobId): Request[GetDebugConfigResponse] = js.native
+  def getConfig(request: Accesstoken): Request[GetDebugConfigResponse] = js.native
+  def getConfig(request: Alt, body: GetDebugConfigRequest): Request[GetDebugConfigResponse] = js.native
   /** Get encoded debug configuration for component. Not cacheable. */
-  def getConfig(request: Location): Request[GetDebugConfigResponse] = js.native
-  def getConfig(request: PrettyPrint, body: GetDebugConfigRequest): Request[GetDebugConfigResponse] = js.native
-  def getConfig(request: QuotaUser, body: GetDebugConfigRequest): Request[GetDebugConfigResponse] = js.native
+  def getConfig(request: Fields): Request[GetDebugConfigResponse] = js.native
+  def getConfig(request: JobId, body: GetDebugConfigRequest): Request[GetDebugConfigResponse] = js.native
   
-  def sendCapture(request: PrettyPrint, body: SendDebugCaptureRequest): Request[js.Object] = js.native
+  def sendCapture(request: Alt, body: SendDebugCaptureRequest): Request[js.Object] = js.native
   /** Send encoded debug capture data for component. */
-  def sendCapture(request: ProjectId): Request[js.Object] = js.native
-  def sendCapture(request: QuotaUser, body: SendDebugCaptureRequest): Request[js.Object] = js.native
+  def sendCapture(request: Callback): Request[js.Object] = js.native
+  def sendCapture(request: JobId, body: SendDebugCaptureRequest): Request[js.Object] = js.native
   /** Send encoded debug capture data for component. */
-  def sendCapture(request: Resource): Request[js.Object] = js.native
+  def sendCapture(request: Key): Request[js.Object] = js.native
 }

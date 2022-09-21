@@ -66,6 +66,10 @@ object aceBuildsStrings {
   inline def changeSession: changeSession = "changeSession".asInstanceOf[changeSession]
   
   @js.native
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
+  
+  @js.native
   sealed trait code extends StObject
   inline def code: code = "code".asInstanceOf[code]
   
@@ -212,6 +216,18 @@ object aceBuildsStrings {
   @js.native
   sealed trait mode extends StObject
   inline def mode: mode = "mode".asInstanceOf[mode]
+  
+  @js.native
+  sealed trait mousemove extends StObject
+  inline def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
+  
+  @js.native
+  sealed trait mouseup extends StObject
+  inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  
+  @js.native
+  sealed trait mousewheel extends StObject
+  inline def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
   
   @js.native
   sealed trait navigateWithinSoftTabs extends StObject

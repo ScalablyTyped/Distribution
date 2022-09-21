@@ -20,7 +20,7 @@ object fieldMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Field(hasValidateNameRenderChildrenIsComponentProps: FieldAttributes[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(hasValidateNameRenderChildrenIsComponentProps.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def Field(hasValidateNameRenderChildrenIsComponentProps: FieldAttributes[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(hasValidateNameRenderChildrenIsComponentProps.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def useField[Val](propsOrFieldName: String): js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useField")(propsOrFieldName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]]]
   inline def useField[Val](propsOrFieldName: FieldHookConfig[Val]): js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useField")(propsOrFieldName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[FieldInputProps[Val], FieldMetaProps[Val], FieldHelperProps[Val]]]
@@ -33,23 +33,23 @@ object fieldMod {
       * Component to render. Can either be a string e.g. 'select', 'input', or 'textarea', or a component.
       */
     var as: js.UndefOr[
-        (ComponentType[FieldInputProps[V] | js.Object]) | String | ForwardRefExoticComponent[js.Any]
+        (ComponentType[FieldInputProps[V] | js.Object]) | String | ForwardRefExoticComponent[Any]
       ] = js.undefined
     
     /**
       * Children render function <Field name>{props => ...}</Field>)
       */
-    var children: js.UndefOr[(js.Function1[/* props */ FieldProps[V, js.Any], ReactNode]) | ReactNode] = js.undefined
+    var children: js.UndefOr[(js.Function1[/* props */ FieldProps[V, Any], ReactNode]) | ReactNode] = js.undefined
     
     /**
       * Field component to render. Can either be a string like 'select' or a component.
       */
     var component: js.UndefOr[
-        String | (ComponentType[(FieldProps[V, js.Any]) | js.Object]) | ForwardRefExoticComponent[js.Any]
+        String | (ComponentType[(FieldProps[V, Any]) | js.Object]) | ForwardRefExoticComponent[Any]
       ] = js.undefined
     
     /** Inner ref */
-    var innerRef: js.UndefOr[js.Function1[/* instance */ js.Any, Unit]] = js.undefined
+    var innerRef: js.UndefOr[js.Function1[/* instance */ Any, Unit]] = js.undefined
     
     /**
       * Field name
@@ -60,7 +60,7 @@ object fieldMod {
       * Render prop (works like React router's <Route render={props =>} />)
       * @deprecated
       */
-    var render: js.UndefOr[js.Function1[/* props */ FieldProps[V, js.Any], ReactNode]] = js.undefined
+    var render: js.UndefOr[js.Function1[/* props */ FieldProps[V, Any], ReactNode]] = js.undefined
     
     /** HTML input type */
     var `type`: js.UndefOr[String] = js.undefined
@@ -71,7 +71,7 @@ object fieldMod {
     var validate: js.UndefOr[FieldValidator] = js.undefined
     
     /** Field value */
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object FieldConfig {
     
@@ -82,31 +82,27 @@ object fieldMod {
     
     extension [Self <: FieldConfig[?], V](x: Self & FieldConfig[V]) {
       
-      inline def setAs(
-        value: (ComponentType[FieldInputProps[V] | js.Object]) | String | ForwardRefExoticComponent[js.Any]
-      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: (ComponentType[FieldInputProps[V] | js.Object]) | String | ForwardRefExoticComponent[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setChildren(value: (js.Function1[/* props */ FieldProps[V, js.Any], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: (js.Function1[/* props */ FieldProps[V, Any], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenFunction1(value: /* props */ FieldProps[V, js.Any] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* props */ FieldProps[V, Any] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setComponent(
-        value: String | (ComponentType[(FieldProps[V, js.Any]) | js.Object]) | ForwardRefExoticComponent[js.Any]
-      ): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String | (ComponentType[(FieldProps[V, Any]) | js.Object]) | ForwardRefExoticComponent[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setInnerRef(value: /* instance */ js.Any => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRef(value: /* instance */ Any => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setRender(value: /* props */ FieldProps[V, js.Any] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* props */ FieldProps[V, Any] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
@@ -114,11 +110,11 @@ object fieldMod {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValidate(value: /* value */ js.Any => String | Unit | (js.Promise[String | Unit])): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: /* value */ Any => String | Unit | (js.Promise[String | Unit])): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

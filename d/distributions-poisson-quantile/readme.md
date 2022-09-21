@@ -10,10 +10,10 @@ Poisson distribution quantile function.
 | ------------------ | :-------------: |
 | Full name          | distributions-poisson-quantile |
 | Keywords           | distributions.io, distributions, probability, statistics, stats, cdf, inverse, discrete, counts |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 11219 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61.666666666666664 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/distributions-io/poisson-quantile#readme)

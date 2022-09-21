@@ -10,10 +10,10 @@ object hdrOffMod {
   
   @JSImport("material-ui/svg-icons/image/hdr-off", JSImport.Default)
   @js.native
-  class default () extends ImageHdrOff
+  open class default () extends ImageHdrOff
   
   @JSImport("material-ui/svg-icons/image/hdr-off", "ImageHdrOff")
   @js.native
-  class ImageHdrOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageHdrOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

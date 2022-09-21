@@ -91,7 +91,7 @@ trait IGauge
   /** [Method] Returns the value of totalAngle
     * @returns Object
     */
-  var getTotalAngle: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getTotalAngle: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of value
     * @returns Number
@@ -197,7 +197,7 @@ trait IGauge
   /** [Method] Sets the value of totalAngle
     * @param totalAngle Object The new value.
     */
-  var setTotalAngle: js.UndefOr[js.Function1[/* totalAngle */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTotalAngle: js.UndefOr[js.Function1[/* totalAngle */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of value
     * @param value Number The new value.
@@ -292,7 +292,7 @@ object IGauge {
     
     inline def setGetSectorsUndefined: Self = StObject.set(x, "getSectors", js.undefined)
     
-    inline def setGetTotalAngle(value: () => js.Any): Self = StObject.set(x, "getTotalAngle", js.Any.fromFunction0(value))
+    inline def setGetTotalAngle(value: () => Any): Self = StObject.set(x, "getTotalAngle", js.Any.fromFunction0(value))
     
     inline def setGetTotalAngleUndefined: Self = StObject.set(x, "getTotalAngle", js.undefined)
     
@@ -388,7 +388,7 @@ object IGauge {
     
     inline def setSetSectorsUndefined: Self = StObject.set(x, "setSectors", js.undefined)
     
-    inline def setSetTotalAngle(value: /* totalAngle */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTotalAngle", js.Any.fromFunction1(value))
+    inline def setSetTotalAngle(value: /* totalAngle */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTotalAngle", js.Any.fromFunction1(value))
     
     inline def setSetTotalAngleUndefined: Self = StObject.set(x, "setTotalAngle", js.undefined)
     

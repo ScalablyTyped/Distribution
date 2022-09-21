@@ -11,10 +11,10 @@ object bufferMod {
   @js.native
   abstract class Buffer () extends Entity {
     
-    var buffer: js.Any = js.native
+    var buffer: Any = js.native
     
     def dispose(): Unit = js.native
     
-    def resetData(data: js.Any, args: js.Any*): Unit = js.native
+    def resetData(data: Any, args: Any*): Unit = js.native
   }
 }

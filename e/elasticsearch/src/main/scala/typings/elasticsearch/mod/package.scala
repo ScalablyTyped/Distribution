@@ -5,21 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DeleteDocumentByQueryResponse = typings.elasticsearch.mod.ReindexResponse
+type DeleteDocumentByQueryResponse = ReindexResponse
 
-type InfoParams = typings.elasticsearch.mod.GenericParams
+type InfoParams = GenericParams
 
-type NameList = java.lang.String | js.Array[java.lang.String] | scala.Boolean
+type NameList = String | js.Array[String] | Boolean
 
-type PingParams = typings.elasticsearch.mod.GenericParams
+type PingParams = GenericParams
 
 /* Rewritten from type alias, can be one of: 
   - scala.Boolean
   - typings.elasticsearch.elasticsearchStrings.wait_for
   - typings.elasticsearch.elasticsearchStrings._empty
 */
-type Refresh = typings.elasticsearch.mod._Refresh | scala.Boolean
+type Refresh = _Refresh | Boolean
 
-type TimeSpan = java.lang.String
+type TimeSpan = String
 
-type UpdateDocumentByQueryResponse = typings.elasticsearch.mod.ReindexResponse
+type UpdateDocumentByQueryResponse = ReindexResponse

@@ -93,7 +93,7 @@ object ApplicationSettings {
   /** Deprecated. Represents a command for changing web account credentials in the account settings pane. */
   @JSGlobal("Windows.UI.ApplicationSettings.CredentialCommand")
   @js.native
-  class CredentialCommand protected ()
+  open class CredentialCommand protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.CredentialCommand {
     /**
@@ -124,7 +124,7 @@ object ApplicationSettings {
   /** Creates a settings command object that represents a settings entry. This settings command can be appended to the ApplicationCommands vector. */
   @JSGlobal("Windows.UI.ApplicationSettings.SettingsCommand")
   @js.native
-  class SettingsCommand protected ()
+  open class SettingsCommand protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsCommand {
     /**
@@ -133,11 +133,11 @@ object ApplicationSettings {
       * @param label The label for the command, which is displayed in the settings pane.
       * @param handler The event handler that is called when the user selects this command in the settings pane.
       */
-    def this(settingsCommandId: js.Any, label: String, handler: UICommandInvokedHandler) = this()
+    def this(settingsCommandId: Any, label: String, handler: UICommandInvokedHandler) = this()
     
     /** Gets or sets the command ID. */
     /* CompleteClass */
-    var id: js.Any = js.native
+    var id: Any = js.native
     
     /** Gets or sets the handler for the event that is raised when the user selects the command. */
     /* CompleteClass */
@@ -278,7 +278,7 @@ object ApplicationSettings {
   /** Associates a command with a WebAccount in the account settings pane.. */
   @JSGlobal("Windows.UI.ApplicationSettings.WebAccountCommand")
   @js.native
-  class WebAccountCommand protected ()
+  open class WebAccountCommand protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.WebAccountCommand {
     /**
@@ -328,7 +328,7 @@ object ApplicationSettings {
   /** Associates a provider command with a WebAccountProvider in the account settings pane. */
   @JSGlobal("Windows.UI.ApplicationSettings.WebAccountProviderCommand")
   @js.native
-  class WebAccountProviderCommand protected ()
+  open class WebAccountProviderCommand protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ApplicationSettings.WebAccountProviderCommand {
     /**

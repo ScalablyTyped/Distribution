@@ -65,7 +65,7 @@ object levelItemMod {
   
   @JSImport("rbx/components/level/level-item", "LevelItem")
   @js.native
-  val LevelItem: ForwardRefAsExoticComponent[LevelItemProps, ElementType[js.Any]] = js.native
+  val LevelItem: ForwardRefAsExoticComponent[LevelItemProps, ElementType[Any]] = js.native
   
   trait LevelItemModifierProps extends StObject {
     

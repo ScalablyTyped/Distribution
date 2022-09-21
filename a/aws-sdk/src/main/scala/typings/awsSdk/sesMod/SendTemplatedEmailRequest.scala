@@ -80,7 +80,7 @@ object SendTemplatedEmailRequest {
     
     inline def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
     
-    inline def setReplyToAddressesVarargs(value: Address*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
+    inline def setReplyToAddressesVarargs(value: Address*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value*))
     
     inline def setReturnPath(value: Address): Self = StObject.set(x, "ReturnPath", value.asInstanceOf[js.Any])
     
@@ -100,7 +100,7 @@ object SendTemplatedEmailRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: MessageTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: MessageTag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTemplate(value: TemplateName): Self = StObject.set(x, "Template", value.asInstanceOf[js.Any])
     

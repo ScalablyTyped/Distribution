@@ -34,7 +34,7 @@ object DescribeTagsType {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new MessageOptions.
   * @param [properties] Properties to set
   */
-class MessageOptions ()
+open class MessageOptions ()
   extends StObject
      with IMessageOptions {
   def this(properties: IMessageOptions) = this()
@@ -41,7 +40,7 @@ class MessageOptions ()
     * Converts this MessageOptions to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
   
   /** MessageOptions uninterpretedOption. */
   @JSName("uninterpretedOption")
@@ -62,6 +61,8 @@ object MessageOptions {
   inline def create(): MessageOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageOptions]
   inline def create(properties: IMessageOptions): MessageOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[MessageOptions]
   
+  inline def decode(reader: js.typedarray.Uint8Array): MessageOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MessageOptions]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): MessageOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MessageOptions]
   /**
     * Decodes a MessageOptions message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -73,9 +74,8 @@ object MessageOptions {
   /* static member */
   inline def decode(reader: Reader): MessageOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MessageOptions]
   inline def decode(reader: Reader, length: Double): MessageOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MessageOptions]
-  inline def decode(reader: Uint8Array): MessageOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[MessageOptions]
-  inline def decode(reader: Uint8Array, length: Double): MessageOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[MessageOptions]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): MessageOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MessageOptions]
   /**
     * Decodes a MessageOptions message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -85,7 +85,6 @@ object MessageOptions {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): MessageOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MessageOptions]
-  inline def decodeDelimited(reader: Uint8Array): MessageOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[MessageOptions]
   
   /**
     * Encodes the specified MessageOptions message. Does not implicitly {@link google.protobuf.MessageOptions.verify|verify} messages.
@@ -113,7 +112,7 @@ object MessageOptions {
     * @returns MessageOptions
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): MessageOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[MessageOptions]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): MessageOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[MessageOptions]
   
   /**
     * Creates a plain object from a MessageOptions message. Also converts values to other types if specified.
@@ -122,8 +121,8 @@ object MessageOptions {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: MessageOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: MessageOptions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: MessageOptions): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: MessageOptions, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies a MessageOptions message.
@@ -131,5 +130,5 @@ object MessageOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

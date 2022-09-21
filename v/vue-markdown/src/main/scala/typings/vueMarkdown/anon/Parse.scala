@@ -6,29 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Parse extends StObject {
   
-  var State: js.Any
+  var State: scala.Any
   
-  var parse: js.Any
+  var parse: scala.Any
   
   var ruler: After
   
-  var tokenize: js.Any
+  var tokenize: scala.Any
 }
 object Parse {
   
-  inline def apply(State: js.Any, parse: js.Any, ruler: After, tokenize: js.Any): Parse = {
+  inline def apply(State: scala.Any, parse: scala.Any, ruler: After, tokenize: scala.Any): Parse = {
     val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], ruler = ruler.asInstanceOf[js.Any], tokenize = tokenize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parse]
   }
   
   extension [Self <: Parse](x: Self) {
     
-    inline def setParse(value: js.Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: scala.Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
     inline def setRuler(value: After): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: scala.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    inline def setTokenize(value: js.Any): Self = StObject.set(x, "tokenize", value.asInstanceOf[js.Any])
+    inline def setTokenize(value: scala.Any): Self = StObject.set(x, "tokenize", value.asInstanceOf[js.Any])
   }
 }

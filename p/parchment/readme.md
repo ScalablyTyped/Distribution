@@ -1,7 +1,7 @@
 
 # Scala.js typings for parchment
 
-Typings are for version 1.1.4
+Typings are for version 2.0.1
 
 ## Library description:
 A document model for rich text editors
@@ -10,10 +10,10 @@ A document model for rich text editors
 | ------------------ | :-------------: |
 | Full name          | parchment |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 47 |
-| # downloads        | 10673372 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4500786.0 |
+| # stars            | 493.0 |
 
 ## Links
 - [Homepage](http://quilljs.com/docs/parchment)

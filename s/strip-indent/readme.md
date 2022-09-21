@@ -1,7 +1,7 @@
 
 # Scala.js typings for strip-indent
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Strip leading whitespace from each line in a string
@@ -10,15 +10,12 @@ Strip leading whitespace from each line in a string
 | ------------------ | :-------------: |
 | Full name          | strip-indent |
 | Keywords           | strip, indent, indentation, normalize, remove, delete, whitespace, space, tab, string |
-| # releases         | 2 |
-| # dependents       | 345 |
-| # downloads        | 690266977 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8.076160466666667E7 |
+| # stars            | 128.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/strip-indent#readme)
-- [Bugs](https://github.com/sindresorhus/strip-indent/issues)
-- [Repository](https://github.com/sindresorhus/strip-indent)
 - [Npm](https://www.npmjs.com/package/strip-indent)
     
 

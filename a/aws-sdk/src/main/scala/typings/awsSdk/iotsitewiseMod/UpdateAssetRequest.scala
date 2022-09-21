@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateAssetRequest extends StObject {
   
   /**
+    * A description for the asset.
+    */
+  var assetDescription: js.UndefOr[Description] = js.undefined
+  
+  /**
     * The ID of the asset to update.
     */
   var assetId: ID
   
   /**
-    * A unique, friendly name for the asset.
+    * A friendly name for the asset.
     */
   var assetName: Name
   
@@ -29,6 +34,10 @@ object UpdateAssetRequest {
   }
   
   extension [Self <: UpdateAssetRequest](x: Self) {
+    
+    inline def setAssetDescription(value: Description): Self = StObject.set(x, "assetDescription", value.asInstanceOf[js.Any])
+    
+    inline def setAssetDescriptionUndefined: Self = StObject.set(x, "assetDescription", js.undefined)
     
     inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     

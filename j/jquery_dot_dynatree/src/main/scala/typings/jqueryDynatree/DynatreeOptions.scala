@@ -46,7 +46,7 @@ trait DynatreeOptions extends StObject {
   var dnd: js.UndefOr[DynaTreeDNDOptions] = js.undefined
   
   // 1:single, 2:multi, 3:multi-hier
-  var fx: js.UndefOr[js.Any] = js.undefined
+  var fx: js.UndefOr[Any] = js.undefined
   
   // 0:quiet, 1:normal, 2:debug
   var generateIds: js.UndefOr[Boolean] = js.undefined
@@ -85,7 +85,7 @@ trait DynatreeOptions extends StObject {
   var onClick: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* event */ Event, Boolean]] = js.undefined
   
   // Callback(dtnode) before a node is rendered. Return a HTML string to override.
-  var onCreate: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any, Unit]] = js.undefined
+  var onCreate: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* nodeSpan */ Any, Unit]] = js.undefined
   
   // Callback(dtnode) when a lazy node is expanded for the first time.
   var onCustomRender: js.UndefOr[js.Function1[/* dtnode */ DynaTreeNode, Unit]] = js.undefined
@@ -126,7 +126,7 @@ trait DynatreeOptions extends StObject {
   var onQuerySelect: js.UndefOr[js.Function2[/* flag */ String, /* dtnode */ DynaTreeNode, Unit]] = js.undefined
   
   // Callback(dtnode, nodeSpan) after a node was rendered for the first time.
-  var onRender: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any, Unit]] = js.undefined
+  var onRender: js.UndefOr[js.Function2[/* dtnode */ DynaTreeNode, /* nodeSpan */ Any, Unit]] = js.undefined
   
   // Callback(dtnode) when a node is deactivated.
   var onSelect: js.UndefOr[js.Function2[/* flag */ String, /* dtnode */ DynaTreeNode, Unit]] = js.undefined
@@ -135,7 +135,7 @@ trait DynatreeOptions extends StObject {
   var persist: js.UndefOr[Boolean] = js.undefined
   
   // Callback(dtnode, nodeSpan) after a node was rendered.
-  var postProcess: js.UndefOr[js.Function2[/* data */ js.Any, /* dataType */ js.Any, Unit]] = js.undefined
+  var postProcess: js.UndefOr[js.Function2[/* data */ Any, /* dataType */ Any, Unit]] = js.undefined
   
   // Show checkboxes.
   var selectMode: js.UndefOr[Double] = js.undefined
@@ -178,7 +178,7 @@ object DynatreeOptions {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: DynaTreeDataModel*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: DynaTreeDataModel*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setClassNames(value: DynatreeClassNamesOptions): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
@@ -204,7 +204,7 @@ object DynatreeOptions {
     
     inline def setDndUndefined: Self = StObject.set(x, "dnd", js.undefined)
     
-    inline def setFx(value: js.Any): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
+    inline def setFx(value: Any): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
     
     inline def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
     
@@ -256,7 +256,7 @@ object DynatreeOptions {
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnCreate(value: (/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any) => Unit): Self = StObject.set(x, "onCreate", js.Any.fromFunction2(value))
+    inline def setOnCreate(value: (/* dtnode */ DynaTreeNode, /* nodeSpan */ Any) => Unit): Self = StObject.set(x, "onCreate", js.Any.fromFunction2(value))
     
     inline def setOnCreateUndefined: Self = StObject.set(x, "onCreate", js.undefined)
     
@@ -308,7 +308,7 @@ object DynatreeOptions {
     
     inline def setOnQuerySelectUndefined: Self = StObject.set(x, "onQuerySelect", js.undefined)
     
-    inline def setOnRender(value: (/* dtnode */ DynaTreeNode, /* nodeSpan */ js.Any) => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction2(value))
+    inline def setOnRender(value: (/* dtnode */ DynaTreeNode, /* nodeSpan */ Any) => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction2(value))
     
     inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
@@ -320,7 +320,7 @@ object DynatreeOptions {
     
     inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
-    inline def setPostProcess(value: (/* data */ js.Any, /* dataType */ js.Any) => Unit): Self = StObject.set(x, "postProcess", js.Any.fromFunction2(value))
+    inline def setPostProcess(value: (/* data */ Any, /* dataType */ Any) => Unit): Self = StObject.set(x, "postProcess", js.Any.fromFunction2(value))
     
     inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
     

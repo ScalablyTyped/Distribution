@@ -1,7 +1,7 @@
 
 # Scala.js typings for moment-timezone
 
-Typings are for version 0.5.32
+Typings are for version 0.5.37
 
 ## Library description:
 Parse and display moments in any timezone.
@@ -10,10 +10,10 @@ Parse and display moments in any timezone.
 | ------------------ | :-------------: |
 | Full name          | moment-timezone |
 | Keywords           | moment, date, time, timezone, olson, iana, zone, tz |
-| # releases         | 9 |
-| # dependents       | 2967 |
-| # downloads        | 259724163 |
-| # stars            | 80 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0494981E7 |
+| # stars            | 3684.0 |
 
 ## Links
 - [Homepage](http://momentjs.com/timezone/)

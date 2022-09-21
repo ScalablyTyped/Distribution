@@ -3,7 +3,6 @@ package typings.appleMapkitJsBrowser
 import typings.appleMapkitJsBrowser.mapkit.CoordinateRegion
 import typings.appleMapkitJsBrowser.mapkit.Overlay
 import typings.appleMapkitJsBrowser.mapkit.Place
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -161,7 +160,7 @@ object anon {
       
       inline def setPlaces(value: js.Array[Place]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
       
-      inline def setPlacesVarargs(value: Place*): Self = StObject.set(x, "places", js.Array(value :_*))
+      inline def setPlacesVarargs(value: Place*): Self = StObject.set(x, "places", js.Array(value*))
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -214,11 +213,11 @@ object anon {
     
     var coordinate: typings.appleMapkitJsBrowser.mapkit.Coordinate
     
-    var timestamp: Date
+    var timestamp: js.Date
   }
   object Timestamp {
     
-    inline def apply(coordinate: typings.appleMapkitJsBrowser.mapkit.Coordinate, timestamp: Date): Timestamp = {
+    inline def apply(coordinate: typings.appleMapkitJsBrowser.mapkit.Coordinate, timestamp: js.Date): Timestamp = {
       val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Timestamp]
     }
@@ -227,7 +226,7 @@ object anon {
       
       inline def setCoordinate(value: typings.appleMapkitJsBrowser.mapkit.Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
 }

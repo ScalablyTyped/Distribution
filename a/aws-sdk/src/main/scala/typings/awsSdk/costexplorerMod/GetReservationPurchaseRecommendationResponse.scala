@@ -42,6 +42,6 @@ object GetReservationPurchaseRecommendationResponse {
     
     inline def setRecommendationsUndefined: Self = StObject.set(x, "Recommendations", js.undefined)
     
-    inline def setRecommendationsVarargs(value: ReservationPurchaseRecommendation*): Self = StObject.set(x, "Recommendations", js.Array(value :_*))
+    inline def setRecommendationsVarargs(value: ReservationPurchaseRecommendation*): Self = StObject.set(x, "Recommendations", js.Array(value*))
   }
 }

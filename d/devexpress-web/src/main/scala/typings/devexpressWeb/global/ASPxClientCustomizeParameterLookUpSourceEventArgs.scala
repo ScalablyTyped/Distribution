@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCustomizeParameterLookUpSourceEventArgs")
 @js.native
-class ASPxClientCustomizeParameterLookUpSourceEventArgs protected ()
+open class ASPxClientCustomizeParameterLookUpSourceEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCustomizeParameterLookUpSourceEventArgs {
   /**
@@ -26,7 +26,7 @@ class ASPxClientCustomizeParameterLookUpSourceEventArgs protected ()
     * Specifies the data source that provides look-up values for the parameter editor.
     */
   /* CompleteClass */
-  var dataSource: js.Any = js.native
+  var dataSource: Any = js.native
   
   /**
     * Provides access to the collection of look-up parameter values.

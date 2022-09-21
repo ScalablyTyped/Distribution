@@ -3,11 +3,8 @@ package typings.phaser.global.spine
 import typings.phaser.spine.ArrayLike
 import typings.phaser.spine.Restorable
 import typings.phaser.spine.webgl.VertexAttributeType
-import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
-import typings.std.OffscreenCanvas
-import typings.std.Uint16Array
 import typings.std.WebGLProgram
 import typings.std.WebGLRenderingContext
 import typings.std.WebGLUniformLocation
@@ -19,7 +16,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.AssetManager")
   @js.native
-  class AssetManager protected ()
+  open class AssetManager protected ()
     extends StObject
        with typings.phaser.spine.AssetManager {
     def this(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext) = this()
@@ -33,7 +30,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.Color2Attribute")
   @js.native
-  class Color2Attribute ()
+  open class Color2Attribute ()
     extends StObject
        with typings.phaser.spine.webgl.VertexAttribute {
     
@@ -49,7 +46,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.ColorAttribute")
   @js.native
-  class ColorAttribute ()
+  open class ColorAttribute ()
     extends StObject
        with typings.phaser.spine.webgl.VertexAttribute {
     
@@ -65,7 +62,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.GLTexture")
   @js.native
-  class GLTexture protected ()
+  open class GLTexture protected ()
     extends StObject
        with typings.phaser.spine.webgl.GLTexture {
     def this(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext, image: HTMLImageElement) = this()
@@ -162,19 +159,19 @@ object webgl {
   
   @JSGlobal("spine.webgl.ManagedWebGLRenderingContext")
   @js.native
-  class ManagedWebGLRenderingContext protected ()
+  open class ManagedWebGLRenderingContext protected ()
     extends StObject
        with typings.phaser.spine.webgl.ManagedWebGLRenderingContext {
     def this(canvasOrContext: HTMLCanvasElement) = this()
     def this(canvasOrContext: WebGLRenderingContext) = this()
-    def this(canvasOrContext: HTMLCanvasElement, contextConfig: js.Any) = this()
-    def this(canvasOrContext: WebGLRenderingContext, contextConfig: js.Any) = this()
+    def this(canvasOrContext: HTMLCanvasElement, contextConfig: Any) = this()
+    def this(canvasOrContext: WebGLRenderingContext, contextConfig: Any) = this()
     
     /* CompleteClass */
     override def addRestorable(restorable: Restorable): Unit = js.native
     
     /* CompleteClass */
-    var canvas: HTMLCanvasElement | OffscreenCanvas = js.native
+    var canvas: HTMLCanvasElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OffscreenCanvas */ Any) = js.native
     
     /* CompleteClass */
     var gl: WebGLRenderingContext = js.native
@@ -183,12 +180,12 @@ object webgl {
     override def removeRestorable(restorable: Restorable): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var restorables: js.Any = js.native
+    var restorables: Any = js.native
   }
   
   @JSGlobal("spine.webgl.Matrix4")
   @js.native
-  class Matrix4 ()
+  open class Matrix4 ()
     extends StObject
        with typings.phaser.spine.webgl.Matrix4 {
     
@@ -230,7 +227,7 @@ object webgl {
     override def set(values: ArrayLike[Double]): typings.phaser.spine.webgl.Matrix4 = js.native
     
     /* CompleteClass */
-    var temp: Float32Array = js.native
+    var temp: js.typedarray.Float32Array = js.native
     
     /* CompleteClass */
     override def translate(x: Double, y: Double, z: Double): typings.phaser.spine.webgl.Matrix4 = js.native
@@ -239,7 +236,7 @@ object webgl {
     override def transpose(): typings.phaser.spine.webgl.Matrix4 = js.native
     
     /* CompleteClass */
-    var values: Float32Array = js.native
+    var values: js.typedarray.Float32Array = js.native
   }
   object Matrix4 {
     
@@ -253,31 +250,31 @@ object webgl {
     /* static member */
     @JSGlobal("spine.webgl.Matrix4.tmpMatrix")
     @js.native
-    def tmpMatrix: js.Any = js.native
-    inline def tmpMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tmpMatrix")(x.asInstanceOf[js.Any])
+    def tmpMatrix: Any = js.native
+    inline def tmpMatrix_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tmpMatrix")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.Matrix4.xAxis")
     @js.native
-    def xAxis: js.Any = js.native
-    inline def xAxis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xAxis")(x.asInstanceOf[js.Any])
+    def xAxis: Any = js.native
+    inline def xAxis_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xAxis")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.Matrix4.yAxis")
     @js.native
-    def yAxis: js.Any = js.native
-    inline def yAxis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yAxis")(x.asInstanceOf[js.Any])
+    def yAxis: Any = js.native
+    inline def yAxis_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yAxis")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.Matrix4.zAxis")
     @js.native
-    def zAxis: js.Any = js.native
-    inline def zAxis_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zAxis")(x.asInstanceOf[js.Any])
+    def zAxis: Any = js.native
+    inline def zAxis_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zAxis")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("spine.webgl.Mesh")
   @js.native
-  class Mesh protected ()
+  open class Mesh protected ()
     extends StObject
        with typings.phaser.spine.webgl.Mesh {
     def this(
@@ -294,19 +291,19 @@ object webgl {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var attributes: js.Any = js.native
+    var attributes: Any = js.native
     
     /* CompleteClass */
     override def bind(shader: typings.phaser.spine.webgl.Shader): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var context: js.Any = js.native
+    var context: Any = js.native
     
     /* private */ /* CompleteClass */
-    var dirtyIndices: js.Any = js.native
+    var dirtyIndices: Any = js.native
     
     /* private */ /* CompleteClass */
-    var dirtyVertices: js.Any = js.native
+    var dirtyVertices: Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
@@ -318,28 +315,28 @@ object webgl {
     override def drawWithOffset(shader: typings.phaser.spine.webgl.Shader, primitiveType: Double, offset: Double, count: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var elementsPerVertex: js.Any = js.native
+    var elementsPerVertex: Any = js.native
     
     /* CompleteClass */
     override def getAttributes(): js.Array[typings.phaser.spine.webgl.VertexAttribute] = js.native
     
     /* CompleteClass */
-    override def getIndices(): Uint16Array = js.native
+    override def getIndices(): js.typedarray.Uint16Array = js.native
     
     /* CompleteClass */
     override def getVertexSizeInFloats(): Double = js.native
     
     /* CompleteClass */
-    override def getVertices(): Float32Array = js.native
+    override def getVertices(): js.typedarray.Float32Array = js.native
     
     /* private */ /* CompleteClass */
-    var indices: js.Any = js.native
+    var indices: Any = js.native
     
     /* private */ /* CompleteClass */
-    var indicesBuffer: js.Any = js.native
+    var indicesBuffer: Any = js.native
     
     /* private */ /* CompleteClass */
-    var indicesLength: js.Any = js.native
+    var indicesLength: Any = js.native
     
     /* CompleteClass */
     override def maxIndices(): Double = js.native
@@ -372,21 +369,21 @@ object webgl {
     override def unbind(shader: typings.phaser.spine.webgl.Shader): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var update: js.Any = js.native
+    var update: Any = js.native
     
     /* private */ /* CompleteClass */
-    var vertices: js.Any = js.native
+    var vertices: Any = js.native
     
     /* private */ /* CompleteClass */
-    var verticesBuffer: js.Any = js.native
+    var verticesBuffer: Any = js.native
     
     /* private */ /* CompleteClass */
-    var verticesLength: js.Any = js.native
+    var verticesLength: Any = js.native
   }
   
   @JSGlobal("spine.webgl.OrthoCamera")
   @js.native
-  class OrthoCamera protected ()
+  open class OrthoCamera protected ()
     extends StObject
        with typings.phaser.spine.webgl.OrthoCamera {
     def this(viewportWidth: Double, viewportHeight: Double) = this()
@@ -419,7 +416,7 @@ object webgl {
     override def setViewport(viewportWidth: Double, viewportHeight: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var tmp: js.Any = js.native
+    var tmp: Any = js.native
     
     /* CompleteClass */
     var up: typings.phaser.spine.webgl.Vector3 = js.native
@@ -442,7 +439,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.PolygonBatcher")
   @js.native
-  class PolygonBatcher protected ()
+  open class PolygonBatcher protected ()
     extends StObject
        with typings.phaser.spine.webgl.PolygonBatcher {
     def this(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext) = this()
@@ -466,7 +463,7 @@ object webgl {
     override def begin(shader: typings.phaser.spine.webgl.Shader): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var context: js.Any = js.native
+    var context: Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
@@ -479,48 +476,48 @@ object webgl {
     ): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var drawCalls: js.Any = js.native
+    var drawCalls: Any = js.native
     
     /* private */ /* CompleteClass */
-    var dstBlend: js.Any = js.native
+    var dstBlend: Any = js.native
     
     /* CompleteClass */
     override def end(): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var flush: js.Any = js.native
+    var flush: Any = js.native
     
     /* CompleteClass */
     override def getDrawCalls(): Double = js.native
     
     /* private */ /* CompleteClass */
-    var indicesLength: js.Any = js.native
+    var indicesLength: Any = js.native
     
     /* private */ /* CompleteClass */
-    var isDrawing: js.Any = js.native
+    var isDrawing: Any = js.native
     
     /* private */ /* CompleteClass */
-    var lastTexture: js.Any = js.native
+    var lastTexture: Any = js.native
     
     /* private */ /* CompleteClass */
-    var mesh: js.Any = js.native
+    var mesh: Any = js.native
     
     /* CompleteClass */
     override def setBlendMode(srcBlend: Double, dstBlend: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var shader: js.Any = js.native
+    var shader: Any = js.native
     
     /* private */ /* CompleteClass */
-    var srcBlend: js.Any = js.native
+    var srcBlend: Any = js.native
     
     /* private */ /* CompleteClass */
-    var verticesLength: js.Any = js.native
+    var verticesLength: Any = js.native
   }
   
   @JSGlobal("spine.webgl.Position2Attribute")
   @js.native
-  class Position2Attribute ()
+  open class Position2Attribute ()
     extends StObject
        with typings.phaser.spine.webgl.VertexAttribute {
     
@@ -536,7 +533,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.Position3Attribute")
   @js.native
-  class Position3Attribute ()
+  open class Position3Attribute ()
     extends StObject
        with typings.phaser.spine.webgl.VertexAttribute {
     
@@ -566,7 +563,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.SceneRenderer")
   @js.native
-  class SceneRenderer protected ()
+  open class SceneRenderer protected ()
     extends StObject
        with typings.phaser.spine.webgl.SceneRenderer {
     def this(canvas: HTMLCanvasElement, context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext) = this()
@@ -584,7 +581,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.Shader")
   @js.native
-  class Shader protected ()
+  open class Shader protected ()
     extends StObject
        with typings.phaser.spine.webgl.Shader {
     def this(
@@ -598,28 +595,28 @@ object webgl {
     override def bind(): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var compile: js.Any = js.native
+    var compile: Any = js.native
     
     /* private */ /* CompleteClass */
-    var compileProgram: js.Any = js.native
+    var compileProgram: Any = js.native
     
     /* private */ /* CompleteClass */
-    var compileShader: js.Any = js.native
+    var compileShader: Any = js.native
     
     /* private */ /* CompleteClass */
-    var context: js.Any = js.native
+    var context: Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var fragmentShader: js.Any = js.native
+    var fragmentShader: Any = js.native
     
     /* private */ /* CompleteClass */
-    var fs: js.Any = js.native
+    var fs: Any = js.native
     
     /* private */ /* CompleteClass */
-    var fsSource: js.Any = js.native
+    var fsSource: Any = js.native
     
     /* CompleteClass */
     override def getAttributeLocation(attribute: String): Double = js.native
@@ -643,7 +640,7 @@ object webgl {
     override def getVertexShaderSource(): String = js.native
     
     /* private */ /* CompleteClass */
-    var program: js.Any = js.native
+    var program: Any = js.native
     
     /* CompleteClass */
     override def restore(): Unit = js.native
@@ -673,25 +670,25 @@ object webgl {
     override def setUniformi(uniform: String, value: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var tmp2x2: js.Any = js.native
+    var tmp2x2: Any = js.native
     
     /* private */ /* CompleteClass */
-    var tmp3x3: js.Any = js.native
+    var tmp3x3: Any = js.native
     
     /* private */ /* CompleteClass */
-    var tmp4x4: js.Any = js.native
+    var tmp4x4: Any = js.native
     
     /* CompleteClass */
     override def unbind(): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var vertexShader: js.Any = js.native
+    var vertexShader: Any = js.native
     
     /* private */ /* CompleteClass */
-    var vs: js.Any = js.native
+    var vs: Any = js.native
     
     /* private */ /* CompleteClass */
-    var vsSource: js.Any = js.native
+    var vsSource: Any = js.native
   }
   object Shader {
     
@@ -751,7 +748,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.ShapeRenderer")
   @js.native
-  class ShapeRenderer protected ()
+  open class ShapeRenderer protected ()
     extends StObject
        with typings.phaser.spine.webgl.ShapeRenderer {
     def this(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext) = this()
@@ -779,7 +776,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.SkeletonDebugRenderer")
   @js.native
-  class SkeletonDebugRenderer protected ()
+  open class SkeletonDebugRenderer protected ()
     extends StObject
        with typings.phaser.spine.webgl.SkeletonDebugRenderer {
     def this(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext) = this()
@@ -797,19 +794,19 @@ object webgl {
     /* static member */
     @JSGlobal("spine.webgl.SkeletonDebugRenderer.GREEN")
     @js.native
-    def GREEN: js.Any = js.native
-    inline def GREEN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN")(x.asInstanceOf[js.Any])
+    def GREEN: Any = js.native
+    inline def GREEN_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.webgl.SkeletonDebugRenderer.LIGHT_GRAY")
     @js.native
-    def LIGHT_GRAY: js.Any = js.native
-    inline def LIGHT_GRAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY")(x.asInstanceOf[js.Any])
+    def LIGHT_GRAY: Any = js.native
+    inline def LIGHT_GRAY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHT_GRAY")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("spine.webgl.SkeletonRenderer")
   @js.native
-  class SkeletonRenderer protected ()
+  open class SkeletonRenderer protected ()
     extends StObject
        with typings.phaser.spine.webgl.SkeletonRenderer {
     def this(context: typings.phaser.spine.webgl.ManagedWebGLRenderingContext) = this()
@@ -830,7 +827,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.TexCoordAttribute")
   @js.native
-  class TexCoordAttribute ()
+  open class TexCoordAttribute ()
     extends StObject
        with typings.phaser.spine.webgl.VertexAttribute {
     def this(unit: Double) = this()
@@ -847,7 +844,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.Vector3")
   @js.native
-  class Vector3 ()
+  open class Vector3 ()
     extends StObject
        with typings.phaser.spine.webgl.Vector3 {
     def this(x: Double) = this()
@@ -906,7 +903,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.VertexAttribute")
   @js.native
-  class VertexAttribute protected ()
+  open class VertexAttribute protected ()
     extends StObject
        with typings.phaser.spine.webgl.VertexAttribute {
     def this(name: String, `type`: VertexAttributeType, numElements: Double) = this()
@@ -933,7 +930,7 @@ object webgl {
   
   @JSGlobal("spine.webgl.WebGLBlendModeConverter")
   @js.native
-  class WebGLBlendModeConverter ()
+  open class WebGLBlendModeConverter ()
     extends StObject
        with typings.phaser.spine.webgl.WebGLBlendModeConverter
   object WebGLBlendModeConverter {

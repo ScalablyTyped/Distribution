@@ -15,7 +15,7 @@ object spriteRendererMod {
   
   @JSImport("babylonjs/Sprites/spriteRenderer", "SpriteRenderer")
   @js.native
-  class SpriteRenderer protected () extends StObject {
+  open class SpriteRenderer protected () extends StObject {
     /**
       * Creates a new sprite Renderer
       * @param engine defines the engine the renderer works with
@@ -28,37 +28,43 @@ object spriteRendererMod {
     def this(engine: ThinEngine, capacity: Double, epsilon: Double, scene: Nullable[Scene]) = this()
     def this(engine: ThinEngine, capacity: Double, epsilon: Unit, scene: Nullable[Scene]) = this()
     
-    /* private */ var _appendSpriteVertex: js.Any = js.native
+    /* private */ var _appendSpriteVertex: Any = js.native
     
-    /* private */ var _buffer: js.Any = js.native
+    /* private */ var _buffer: Any = js.native
     
-    /* private */ val _capacity: js.Any = js.native
+    /* private */ var _buildIndexBuffer: Any = js.native
     
-    /* private */ var _effectBase: js.Any = js.native
+    /* private */ val _capacity: Any = js.native
     
-    /* private */ var _effectFog: js.Any = js.native
+    /* private */ var _drawWrapperBase: Any = js.native
     
-    /* private */ val _engine: js.Any = js.native
+    /* private */ var _drawWrapperDepth: Any = js.native
     
-    /* private */ val _epsilon: js.Any = js.native
+    /* private */ var _drawWrapperFog: Any = js.native
     
-    /* private */ var _indexBuffer: js.Any = js.native
+    /* private */ var _drawWrapperFogDepth: Any = js.native
     
-    /* private */ val _scene: js.Any = js.native
+    /* private */ val _engine: Any = js.native
     
-    /* private */ var _spriteBuffer: js.Any = js.native
+    /* private */ val _epsilon: Any = js.native
     
-    /* private */ val _useInstancing: js.Any = js.native
+    /* private */ var _indexBuffer: Any = js.native
     
-    /* private */ val _useVAO: js.Any = js.native
+    /* private */ val _scene: Any = js.native
     
-    /* private */ var _vertexArrayObject: js.Any = js.native
+    /* private */ var _spriteBuffer: Any = js.native
     
-    /* private */ var _vertexBufferSize: js.Any = js.native
+    /* private */ val _useInstancing: Any = js.native
     
-    /* private */ var _vertexBuffers: js.Any = js.native
+    /* private */ val _useVAO: Any = js.native
     
-    /* private */ var _vertexData: js.Any = js.native
+    /* private */ var _vertexArrayObject: Any = js.native
+    
+    /* private */ var _vertexBufferSize: Any = js.native
+    
+    /* private */ var _vertexBuffers: Any = js.native
+    
+    /* private */ var _vertexData: Any = js.native
     
     /**
       * Gets or sets a boolean indicating if alpha mode is automatically
@@ -104,6 +110,11 @@ object spriteRendererMod {
       * Gets or sets a boolean indicating if the manager must consider scene fog when rendering
       */
     var fogEnabled: Boolean = js.native
+    
+    /**
+      * Rebuilds the renderer (after a context lost, for eg)
+      */
+    def rebuild(): Unit = js.native
     
     /**
       * Render all child sprites

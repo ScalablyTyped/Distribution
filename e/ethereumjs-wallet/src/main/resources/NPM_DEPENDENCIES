@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ethereumjs-wallet" : "1.0.1"
+      "ethereumjs-wallet" : "1.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ethereumjs-wallet" : "1.0.1"
+      "ethereumjs-wallet" : "1.0.2"
     }
   ],
   "compile-devDependencies" : [

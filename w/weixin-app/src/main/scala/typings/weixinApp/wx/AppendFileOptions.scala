@@ -1,16 +1,15 @@
 package typings.weixinApp.wx
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AppendFileOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   // 要追加内容的文件路径
-  var data: String | ArrayBuffer
+  var data: String | js.typedarray.ArrayBuffer
   
   // 要追加的文本或二进制数据
   var encoding: js.UndefOr[String] = js.undefined
@@ -19,14 +18,14 @@ trait AppendFileOptions
 }
 object AppendFileOptions {
   
-  inline def apply(data: String | ArrayBuffer, filePath: String): AppendFileOptions = {
+  inline def apply(data: String | js.typedarray.ArrayBuffer, filePath: String): AppendFileOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendFileOptions]
   }
   
   extension [Self <: AppendFileOptions](x: Self) {
     
-    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

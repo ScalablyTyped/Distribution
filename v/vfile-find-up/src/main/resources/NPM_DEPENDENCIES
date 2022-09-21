@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vfile-find-up" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vfile-find-up" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

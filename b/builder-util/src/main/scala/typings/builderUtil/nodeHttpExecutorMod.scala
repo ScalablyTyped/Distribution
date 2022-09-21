@@ -10,7 +10,10 @@ object nodeHttpExecutorMod {
   
   @JSImport("builder-util/out/nodeHttpExecutor", "NodeHttpExecutor")
   @js.native
-  class NodeHttpExecutor () extends HttpExecutor[ClientRequest]
+  open class NodeHttpExecutor () extends HttpExecutor[ClientRequest] {
+    
+    def createRequest(options: Any, callback: js.Function1[/* response */ Any, Unit]): ClientRequest = js.native
+  }
   
   @JSImport("builder-util/out/nodeHttpExecutor", "httpExecutor")
   @js.native

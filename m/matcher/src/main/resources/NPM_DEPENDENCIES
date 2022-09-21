@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "matcher" : "3.0.0"
+      "matcher" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "matcher" : "3.0.0"
+      "matcher" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

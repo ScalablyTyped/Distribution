@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__firestore-types
 
-Typings are for version 2.0.0
+Typings are for version 2.5.0
 
 ## Library description:
 @firebase/firestore Types
@@ -10,10 +10,10 @@ Typings are for version 2.0.0
 | ------------------ | :-------------: |
 | Full name          | @firebase/firestore-types |
 | Keywords           | - |
-| # releases         | 1300 |
-| # dependents       | 24 |
-| # downloads        | 36131520 |
-| # stars            | 0 |
+| # releases         | 1156 |
+| # dependents       | 0.0 |
+| # downloads        | 5092631.333333333 |
+| # stars            | 4194.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

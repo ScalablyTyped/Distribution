@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "appdirsjs" : "1.2.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "appdirsjs" : "1.2.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

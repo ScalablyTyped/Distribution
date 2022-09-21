@@ -8,7 +8,7 @@ object hkp {
   
   @JSImport("openpgp", "hkp.HKP")
   @js.native
-  class HKP protected () extends StObject {
+  open class HKP protected () extends StObject {
     /**
       * Initialize the HKP client and configure it with the key server url and fetch function.
       * @param keyServerBaseUrl (optional) The HKP key server base url including
@@ -24,13 +24,13 @@ object hkp {
       *        or email address.
       * @returns The ascii armored public key.
       */
-    def lookup(): js.Promise[String] = js.native
+    def lookup(options: HKPOptions): js.Promise[String] = js.native
     
     /**
       * Upload a public key to the server.
       * @param publicKeyArmored An ascii armored public key to be uploaded.
       * @returns
       */
-    def upload(publicKeyArmored: String): js.Promise[js.Any] = js.native
+    def upload(publicKeyArmored: String): js.Promise[Any] = js.native
   }
 }

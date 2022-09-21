@@ -8,5 +8,5 @@ object getFolderInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetFolderInput", "GetFolderInput")
   @js.native
-  val GetFolderInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetFolderInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

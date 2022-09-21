@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bccompMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(leftOperand: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(leftOperand: js.Any, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(leftOperand: js.Any, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(leftOperand: Unit, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(leftOperand: Unit, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(leftOperand: Unit, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(leftOperand: Any): Any = ^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(leftOperand: Any, rightOperand: Any): Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(leftOperand: Any, rightOperand: Any, scale: Any): Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(leftOperand: Any, rightOperand: Unit, scale: Any): Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(leftOperand: Unit, rightOperand: Any): Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(leftOperand: Unit, rightOperand: Any, scale: Any): Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(leftOperand: Unit, rightOperand: Unit, scale: Any): Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/bc/bccomp", JSImport.Namespace)
   @js.native

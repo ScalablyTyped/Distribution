@@ -3,7 +3,7 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientYoutube.anon.Alt
 import typings.maximMazurokGapiClientYoutube.anon.LiveChatId
-import typings.maximMazurokGapiClientYoutube.anon.OauthtokenPart
+import typings.maximMazurokGapiClientYoutube.anon.PartPrettyPrint
 import typings.maximMazurokGapiClientYoutube.anon.Uploadprotocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait LiveChatMessagesResource extends StObject {
   
   def insert(request: Alt, body: LiveChatMessage): Request[LiveChatMessage] = js.native
   /** Inserts a new resource into this collection. */
-  def insert(request: OauthtokenPart): Request[LiveChatMessage] = js.native
+  def insert(request: PartPrettyPrint): Request[LiveChatMessage] = js.native
   
   /** Retrieves a list of resources, possibly filtered. */
   def list(): Request[LiveChatMessageListResponse] = js.native

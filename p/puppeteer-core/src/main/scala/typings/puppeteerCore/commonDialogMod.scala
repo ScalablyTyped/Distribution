@@ -1,7 +1,7 @@
 package typings.puppeteerCore
 
 import typings.devtoolsProtocol.mod.Protocol.Page.DialogType
-import typings.puppeteerCore.commonConnectionMod.CDPSession
+import typings.puppeteerCore.puppeteerCommonConnectionMod.CDPSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,22 +10,12 @@ object commonDialogMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/Dialog", "Dialog")
   @js.native
-  class Dialog protected () extends StObject {
+  open class Dialog protected () extends StObject {
     /**
       * @internal
       */
     def this(client: CDPSession, `type`: DialogType, message: String) = this()
     def this(client: CDPSession, `type`: DialogType, message: String, defaultValue: String) = this()
-    
-    /* private */ var _client: js.Any = js.native
-    
-    /* private */ var _defaultValue: js.Any = js.native
-    
-    /* private */ var _handled: js.Any = js.native
-    
-    /* private */ var _message: js.Any = js.native
-    
-    /* private */ var _type: js.Any = js.native
     
     /**
       * @param promptText - optional text that will be entered in the dialog
@@ -51,6 +41,8 @@ object commonDialogMod {
       * @returns The message displayed in the dialog.
       */
     def message(): String = js.native
+    
+    /* private */ var `private`: Any = js.native
     
     /**
       * @returns The type of the dialog.

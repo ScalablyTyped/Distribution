@@ -9,7 +9,7 @@ trait DescribeProjectResponse extends StObject {
   /**
     * The date and time that the project was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier (user name) of the user who created the project.
@@ -29,7 +29,7 @@ trait DescribeProjectResponse extends StObject {
   /**
     * The date and time that the project was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the project.
@@ -39,7 +39,7 @@ trait DescribeProjectResponse extends StObject {
   /**
     * The date and time when the project was opened. 
     */
-  var OpenDate: js.UndefOr[Date] = js.undefined
+  var OpenDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier (user name) of the user that opened the project for use. 
@@ -57,7 +57,7 @@ trait DescribeProjectResponse extends StObject {
   var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The ARN of the AWS Identity and Access Management (IAM) role that was assumed for this request.
+    * The ARN of the Identity and Access Management (IAM) role to be assumed when DataBrew runs the job.
     */
   var RoleArn: js.UndefOr[Arn] = js.undefined
   
@@ -82,7 +82,7 @@ object DescribeProjectResponse {
   
   extension [Self <: DescribeProjectResponse](x: Self) {
     
-    inline def setCreateDate(value: Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -98,13 +98,13 @@ object DescribeProjectResponse {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     inline def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setOpenDate(value: Date): Self = StObject.set(x, "OpenDate", value.asInstanceOf[js.Any])
+    inline def setOpenDate(value: js.Date): Self = StObject.set(x, "OpenDate", value.asInstanceOf[js.Any])
     
     inline def setOpenDateUndefined: Self = StObject.set(x, "OpenDate", js.undefined)
     

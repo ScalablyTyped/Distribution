@@ -13,13 +13,13 @@ trait MapsEventOptions extends StObject {
   
   var pixel: Pixel
   
-  var target: js.Any
+  var target: Any
   
   var `type`: String
 }
 object MapsEventOptions {
   
-  inline def apply(lnglat: LngLat, pixel: Pixel, target: js.Any, `type`: String): MapsEventOptions = {
+  inline def apply(lnglat: LngLat, pixel: Pixel, target: Any, `type`: String): MapsEventOptions = {
     val __obj = js.Dynamic.literal(lnglat = lnglat.asInstanceOf[js.Any], pixel = pixel.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapsEventOptions]
@@ -31,7 +31,7 @@ object MapsEventOptions {
     
     inline def setPixel(value: Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -8,6 +8,7 @@ trait MediaStreamTrackEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var track: MediaStreamTrack
 }
 object MediaStreamTrackEventInit {

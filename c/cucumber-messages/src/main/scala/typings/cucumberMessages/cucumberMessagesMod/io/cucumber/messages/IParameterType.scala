@@ -46,7 +46,7 @@ object IParameterType {
     
     inline def setRegularExpressionsUndefined: Self = StObject.set(x, "regularExpressions", js.undefined)
     
-    inline def setRegularExpressionsVarargs(value: String*): Self = StObject.set(x, "regularExpressions", js.Array(value :_*))
+    inline def setRegularExpressionsVarargs(value: String*): Self = StObject.set(x, "regularExpressions", js.Array(value*))
     
     inline def setUseForSnippets(value: Boolean): Self = StObject.set(x, "useForSnippets", value.asInstanceOf[js.Any])
     

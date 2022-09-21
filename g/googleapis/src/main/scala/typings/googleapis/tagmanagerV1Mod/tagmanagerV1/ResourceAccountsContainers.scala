@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts$Containers")
 @js.native
-class ResourceAccountsContainers protected () extends StObject {
+open class ResourceAccountsContainers protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * tagmanager.accounts.containers.create
-    * @desc Creates a Container.
-    * @alias tagmanager.accounts.containers.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The GTM Account ID.
-    * @param {().Container} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaContainer] = js.native
   def create(callback: BodyResponseCallback[SchemaContainer]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContainer] = js.native
@@ -35,8 +24,8 @@ class ResourceAccountsContainers protected () extends StObject {
   def create(params: ParamsResourceAccountsContainersCreate, callback: BodyResponseCallback[SchemaContainer]): Unit = js.native
   def create(
     params: ParamsResourceAccountsContainersCreate,
-    options: BodyResponseCallback[SchemaContainer],
-    callback: BodyResponseCallback[SchemaContainer]
+    options: BodyResponseCallback[Readable | SchemaContainer],
+    callback: BodyResponseCallback[Readable | SchemaContainer]
   ): Unit = js.native
   def create(params: ParamsResourceAccountsContainersCreate, options: MethodOptions): GaxiosPromise[SchemaContainer] = js.native
   def create(
@@ -44,20 +33,91 @@ class ResourceAccountsContainers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContainer]
   ): Unit = js.native
-  
   /**
-    * tagmanager.accounts.containers.delete
-    * @desc Deletes a Container.
-    * @alias tagmanager.accounts.containers.delete
-    * @memberOf! ()
+    * Creates a Container.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/tagmanager.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The GTM Account ID.
-    * @param {string} params.containerId The GTM Container ID.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const tagmanager = google.tagmanager('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/tagmanager.edit.containers'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await tagmanager.accounts.containers.create({
+    *     // The GTM Account ID.
+    *     accountId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "containerId": "my_containerId",
+    *       //   "domainName": [],
+    *       //   "enabledBuiltInVariable": [],
+    *       //   "fingerprint": "my_fingerprint",
+    *       //   "name": "my_name",
+    *       //   "notes": "my_notes",
+    *       //   "publicId": "my_publicId",
+    *       //   "timeZoneCountryId": "my_timeZoneCountryId",
+    *       //   "timeZoneId": "my_timeZoneId",
+    *       //   "usageContext": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "containerId": "my_containerId",
+    *   //   "domainName": [],
+    *   //   "enabledBuiltInVariable": [],
+    *   //   "fingerprint": "my_fingerprint",
+    *   //   "name": "my_name",
+    *   //   "notes": "my_notes",
+    *   //   "publicId": "my_publicId",
+    *   //   "timeZoneCountryId": "my_timeZoneCountryId",
+    *   //   "timeZoneId": "my_timeZoneId",
+    *   //   "usageContext": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceAccountsContainersCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceAccountsContainersCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -65,8 +125,8 @@ class ResourceAccountsContainers protected () extends StObject {
   def delete(params: ParamsResourceAccountsContainersDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceAccountsContainersDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceAccountsContainersDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(
@@ -74,24 +134,64 @@ class ResourceAccountsContainers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
+  /**
+    * Deletes a Container.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/tagmanager.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const tagmanager = google.tagmanager('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/tagmanager.delete.containers'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await tagmanager.accounts.containers.delete({
+    *     // The GTM Account ID.
+    *     accountId: 'placeholder-value',
+    *     // The GTM Container ID.
+    *     containerId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def delete(params: ParamsResourceAccountsContainersDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceAccountsContainersDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var environments: ResourceAccountsContainersEnvironments = js.native
   
   var folders: ResourceAccountsContainersFolders = js.native
   
-  /**
-    * tagmanager.accounts.containers.get
-    * @desc Gets a Container.
-    * @alias tagmanager.accounts.containers.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The GTM Account ID.
-    * @param {string} params.containerId The GTM Container ID.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaContainer] = js.native
   def get(callback: BodyResponseCallback[SchemaContainer]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContainer] = js.native
@@ -99,8 +199,8 @@ class ResourceAccountsContainers protected () extends StObject {
   def get(params: ParamsResourceAccountsContainersGet, callback: BodyResponseCallback[SchemaContainer]): Unit = js.native
   def get(
     params: ParamsResourceAccountsContainersGet,
-    options: BodyResponseCallback[SchemaContainer],
-    callback: BodyResponseCallback[SchemaContainer]
+    options: BodyResponseCallback[Readable | SchemaContainer],
+    callback: BodyResponseCallback[Readable | SchemaContainer]
   ): Unit = js.native
   def get(params: ParamsResourceAccountsContainersGet, options: MethodOptions): GaxiosPromise[SchemaContainer] = js.native
   def get(
@@ -108,19 +208,78 @@ class ResourceAccountsContainers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContainer]
   ): Unit = js.native
-  
   /**
-    * tagmanager.accounts.containers.list
-    * @desc Lists all Containers that belongs to a GTM Account.
-    * @alias tagmanager.accounts.containers.list
-    * @memberOf! ()
+    * Gets a Container.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/tagmanager.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The GTM Account ID.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const tagmanager = google.tagmanager('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/tagmanager.edit.containers',
+    *       'https://www.googleapis.com/auth/tagmanager.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await tagmanager.accounts.containers.get({
+    *     // The GTM Account ID.
+    *     accountId: 'placeholder-value',
+    *     // The GTM Container ID.
+    *     containerId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "containerId": "my_containerId",
+    *   //   "domainName": [],
+    *   //   "enabledBuiltInVariable": [],
+    *   //   "fingerprint": "my_fingerprint",
+    *   //   "name": "my_name",
+    *   //   "notes": "my_notes",
+    *   //   "publicId": "my_publicId",
+    *   //   "timeZoneCountryId": "my_timeZoneCountryId",
+    *   //   "timeZoneId": "my_timeZoneId",
+    *   //   "usageContext": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceAccountsContainersGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceAccountsContainersGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListContainersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListContainersResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListContainersResponse] = js.native
@@ -131,14 +290,73 @@ class ResourceAccountsContainers protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceAccountsContainersList,
-    options: BodyResponseCallback[SchemaListContainersResponse],
-    callback: BodyResponseCallback[SchemaListContainersResponse]
+    options: BodyResponseCallback[Readable | SchemaListContainersResponse],
+    callback: BodyResponseCallback[Readable | SchemaListContainersResponse]
   ): Unit = js.native
   def list(params: ParamsResourceAccountsContainersList, options: MethodOptions): GaxiosPromise[SchemaListContainersResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListContainersResponse]
+  ): Unit = js.native
+  /**
+    * Lists all Containers that belongs to a GTM Account.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/tagmanager.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const tagmanager = google.tagmanager('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/tagmanager.edit.containers',
+    *       'https://www.googleapis.com/auth/tagmanager.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await tagmanager.accounts.containers.list({
+    *     // The GTM Account ID.
+    *     accountId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "containers": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceAccountsContainersList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceAccountsContainersList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var move_folders: ResourceAccountsContainersMoveFolders = js.native
@@ -149,21 +367,6 @@ class ResourceAccountsContainers protected () extends StObject {
   
   var triggers: ResourceAccountsContainersTriggers = js.native
   
-  /**
-    * tagmanager.accounts.containers.update
-    * @desc Updates a Container.
-    * @alias tagmanager.accounts.containers.update
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The GTM Account ID.
-    * @param {string} params.containerId The GTM Container ID.
-    * @param {string=} params.fingerprint When provided, this fingerprint must match the fingerprint of the container in storage.
-    * @param {().Container} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def update(): GaxiosPromise[SchemaContainer] = js.native
   def update(callback: BodyResponseCallback[SchemaContainer]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaContainer] = js.native
@@ -171,14 +374,102 @@ class ResourceAccountsContainers protected () extends StObject {
   def update(params: ParamsResourceAccountsContainersUpdate, callback: BodyResponseCallback[SchemaContainer]): Unit = js.native
   def update(
     params: ParamsResourceAccountsContainersUpdate,
-    options: BodyResponseCallback[SchemaContainer],
-    callback: BodyResponseCallback[SchemaContainer]
+    options: BodyResponseCallback[Readable | SchemaContainer],
+    callback: BodyResponseCallback[Readable | SchemaContainer]
   ): Unit = js.native
   def update(params: ParamsResourceAccountsContainersUpdate, options: MethodOptions): GaxiosPromise[SchemaContainer] = js.native
   def update(
     params: ParamsResourceAccountsContainersUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaContainer]
+  ): Unit = js.native
+  /**
+    * Updates a Container.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/tagmanager.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const tagmanager = google.tagmanager('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/tagmanager.edit.containers'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await tagmanager.accounts.containers.update({
+    *     // The GTM Account ID.
+    *     accountId: 'placeholder-value',
+    *     // The GTM Container ID.
+    *     containerId: 'placeholder-value',
+    *     // When provided, this fingerprint must match the fingerprint of the container in storage.
+    *     fingerprint: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "containerId": "my_containerId",
+    *       //   "domainName": [],
+    *       //   "enabledBuiltInVariable": [],
+    *       //   "fingerprint": "my_fingerprint",
+    *       //   "name": "my_name",
+    *       //   "notes": "my_notes",
+    *       //   "publicId": "my_publicId",
+    *       //   "timeZoneCountryId": "my_timeZoneCountryId",
+    *       //   "timeZoneId": "my_timeZoneId",
+    *       //   "usageContext": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "containerId": "my_containerId",
+    *   //   "domainName": [],
+    *   //   "enabledBuiltInVariable": [],
+    *   //   "fingerprint": "my_fingerprint",
+    *   //   "name": "my_name",
+    *   //   "notes": "my_notes",
+    *   //   "publicId": "my_publicId",
+    *   //   "timeZoneCountryId": "my_timeZoneCountryId",
+    *   //   "timeZoneId": "my_timeZoneId",
+    *   //   "usageContext": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceAccountsContainersUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceAccountsContainersUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var variables: ResourceAccountsContainersVariables = js.native

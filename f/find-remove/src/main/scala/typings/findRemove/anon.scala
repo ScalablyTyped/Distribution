@@ -52,25 +52,25 @@ object anon {
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      inline def setDirVarargs(value: String*): Self = StObject.set(x, "dir", js.Array(value :_*))
+      inline def setDirVarargs(value: String*): Self = StObject.set(x, "dir", js.Array(value*))
       
       inline def setExtensions(value: String | js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setFiles(value: String | js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       

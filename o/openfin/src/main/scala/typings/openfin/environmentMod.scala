@@ -16,13 +16,13 @@ object environmentMod {
   
   trait Environment extends StObject {
     
-    def createChildWindow(options: js.Any): js.Promise[js.Any]
+    def createChildWindow(options: Any): js.Promise[Any]
     
     def getCurrentEntityIdentity(): Identity
     
     def getCurrentEntityType(): EntityType
     
-    def getNextMessageId(): js.Any
+    def getNextMessageId(): Any
     
     def getRandomId(): String
     
@@ -30,7 +30,7 @@ object environmentMod {
     
     def isWindowExists(uuid: String, name: String): Boolean
     
-    def raiseEvent(eventName: String, eventArgs: js.Any): Unit
+    def raiseEvent(eventName: String, eventArgs: Any): Unit
     
     def retrievePort(config: NewConnectConfig): js.Promise[Double]
     
@@ -39,14 +39,14 @@ object environmentMod {
   object Environment {
     
     inline def apply(
-      createChildWindow: js.Any => js.Promise[js.Any],
+      createChildWindow: Any => js.Promise[Any],
       getCurrentEntityIdentity: () => Identity,
       getCurrentEntityType: () => EntityType,
-      getNextMessageId: () => js.Any,
+      getNextMessageId: () => Any,
       getRandomId: () => String,
       getWebWindow: Identity => Window,
       isWindowExists: (String, String) => Boolean,
-      raiseEvent: (String, js.Any) => Unit,
+      raiseEvent: (String, Any) => Unit,
       retrievePort: NewConnectConfig => js.Promise[Double],
       writeToken: (String, String) => js.Promise[String]
     ): Environment = {
@@ -56,13 +56,13 @@ object environmentMod {
     
     extension [Self <: Environment](x: Self) {
       
-      inline def setCreateChildWindow(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "createChildWindow", js.Any.fromFunction1(value))
+      inline def setCreateChildWindow(value: Any => js.Promise[Any]): Self = StObject.set(x, "createChildWindow", js.Any.fromFunction1(value))
       
       inline def setGetCurrentEntityIdentity(value: () => Identity): Self = StObject.set(x, "getCurrentEntityIdentity", js.Any.fromFunction0(value))
       
       inline def setGetCurrentEntityType(value: () => EntityType): Self = StObject.set(x, "getCurrentEntityType", js.Any.fromFunction0(value))
       
-      inline def setGetNextMessageId(value: () => js.Any): Self = StObject.set(x, "getNextMessageId", js.Any.fromFunction0(value))
+      inline def setGetNextMessageId(value: () => Any): Self = StObject.set(x, "getNextMessageId", js.Any.fromFunction0(value))
       
       inline def setGetRandomId(value: () => String): Self = StObject.set(x, "getRandomId", js.Any.fromFunction0(value))
       
@@ -70,7 +70,7 @@ object environmentMod {
       
       inline def setIsWindowExists(value: (String, String) => Boolean): Self = StObject.set(x, "isWindowExists", js.Any.fromFunction2(value))
       
-      inline def setRaiseEvent(value: (String, js.Any) => Unit): Self = StObject.set(x, "raiseEvent", js.Any.fromFunction2(value))
+      inline def setRaiseEvent(value: (String, Any) => Unit): Self = StObject.set(x, "raiseEvent", js.Any.fromFunction2(value))
       
       inline def setRetrievePort(value: NewConnectConfig => js.Promise[Double]): Self = StObject.set(x, "retrievePort", js.Any.fromFunction1(value))
       

@@ -8,7 +8,7 @@ object wktMod {
   
   @JSImport("ol/format/WKT", JSImport.Default)
   @js.native
-  class default () extends WKT {
+  open class default () extends WKT {
     def this(opt_options: Options) = this()
   }
   

@@ -8,5 +8,5 @@ object getBucketLoggingOutputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/GetBucketLoggingOutput", "GetBucketLoggingOutput")
   @js.native
-  val GetBucketLoggingOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetBucketLoggingOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

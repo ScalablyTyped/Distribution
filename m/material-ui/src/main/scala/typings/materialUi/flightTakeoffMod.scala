@@ -10,10 +10,10 @@ object flightTakeoffMod {
   
   @JSImport("material-ui/svg-icons/action/flight-takeoff", JSImport.Default)
   @js.native
-  class default () extends ActionFlightTakeoff
+  open class default () extends ActionFlightTakeoff
   
   @JSImport("material-ui/svg-icons/action/flight-takeoff", "ActionFlightTakeoff")
   @js.native
-  class ActionFlightTakeoff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionFlightTakeoff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

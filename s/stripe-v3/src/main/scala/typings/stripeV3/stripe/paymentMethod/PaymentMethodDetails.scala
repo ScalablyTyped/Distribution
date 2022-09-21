@@ -27,7 +27,7 @@ trait PaymentMethodDetails extends StObject {
   
   var ach_debit: js.UndefOr[AchDebitDetails | Null] = js.undefined
   
-  var alipay: js.UndefOr[js.Any | Null] = js.undefined
+  var alipay: js.UndefOr[Any | Null] = js.undefined
   
   var bancontact: js.UndefOr[BanContactDetails | Null] = js.undefined
   
@@ -47,14 +47,14 @@ trait PaymentMethodDetails extends StObject {
   
   var sofort: js.UndefOr[SofortDetails | Null] = js.undefined
   
-  var stripe_account: js.UndefOr[js.Any | Null] = js.undefined
+  var stripe_account: js.UndefOr[Any | Null] = js.undefined
   
   /**
     * The type of transaction-specific details of the payment method used in the payment
     */
   var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | stripe_account | wechat
   
-  var wechat: js.UndefOr[js.Any | Null] = js.undefined
+  var wechat: js.UndefOr[Any | Null] = js.undefined
 }
 object PaymentMethodDetails {
   
@@ -80,7 +80,7 @@ object PaymentMethodDetails {
     
     inline def setAch_debitUndefined: Self = StObject.set(x, "ach_debit", js.undefined)
     
-    inline def setAlipay(value: js.Any): Self = StObject.set(x, "alipay", value.asInstanceOf[js.Any])
+    inline def setAlipay(value: Any): Self = StObject.set(x, "alipay", value.asInstanceOf[js.Any])
     
     inline def setAlipayNull: Self = StObject.set(x, "alipay", null)
     
@@ -140,7 +140,7 @@ object PaymentMethodDetails {
     
     inline def setSofortUndefined: Self = StObject.set(x, "sofort", js.undefined)
     
-    inline def setStripe_account(value: js.Any): Self = StObject.set(x, "stripe_account", value.asInstanceOf[js.Any])
+    inline def setStripe_account(value: Any): Self = StObject.set(x, "stripe_account", value.asInstanceOf[js.Any])
     
     inline def setStripe_accountNull: Self = StObject.set(x, "stripe_account", null)
     
@@ -150,7 +150,7 @@ object PaymentMethodDetails {
       value: ach_credit_transfer | ach_debit | alipay | bancontact | card | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | stripe_account | wechat
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setWechat(value: js.Any): Self = StObject.set(x, "wechat", value.asInstanceOf[js.Any])
+    inline def setWechat(value: Any): Self = StObject.set(x, "wechat", value.asInstanceOf[js.Any])
     
     inline def setWechatNull: Self = StObject.set(x, "wechat", null)
     

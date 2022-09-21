@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FunctionConfiguration extends StObject {
   
   /**
+    * The instruction set architecture that the function supports. Architecture is a string array with one of the valid values. The default architecture value is x86_64.
+    */
+  var Architectures: js.UndefOr[ArchitecturesList] = js.undefined
+  
+  /**
     * The SHA256 hash of the function's deployment package.
     */
   var CodeSha256: js.UndefOr[String] = js.undefined
@@ -32,6 +37,11 @@ trait FunctionConfiguration extends StObject {
   var Environment: js.UndefOr[EnvironmentResponse] = js.undefined
   
   /**
+    * The size of the function’s /tmp directory in MB. The default value is 512, but can be any whole number between 512 and 10240 MB.
+    */
+  var EphemeralStorage: js.UndefOr[typings.awsSdk.lambdaMod.EphemeralStorage] = js.undefined
+  
+  /**
     * Connection settings for an Amazon EFS file system.
     */
   var FileSystemConfigs: js.UndefOr[FileSystemConfigList] = js.undefined
@@ -52,7 +62,12 @@ trait FunctionConfiguration extends StObject {
   var Handler: js.UndefOr[typings.awsSdk.lambdaMod.Handler] = js.undefined
   
   /**
-    * The KMS key that's used to encrypt the function's environment variables. This key is only returned if you've configured a customer managed CMK.
+    * The function's image configuration values.
+    */
+  var ImageConfigResponse: js.UndefOr[typings.awsSdk.lambdaMod.ImageConfigResponse] = js.undefined
+  
+  /**
+    * The KMS key that's used to encrypt the function's environment variables. This key is only returned if you've configured a customer managed key.
     */
   var KMSKeyArn: js.UndefOr[typings.awsSdk.lambdaMod.KMSKeyArn] = js.undefined
   
@@ -82,14 +97,19 @@ trait FunctionConfiguration extends StObject {
   var Layers: js.UndefOr[LayersReferenceList] = js.undefined
   
   /**
-    * For Lambda@Edge functions, the ARN of the master function.
+    * For Lambda@Edge functions, the ARN of the main function.
     */
   var MasterArn: js.UndefOr[FunctionArn] = js.undefined
   
   /**
-    * The memory that's allocated to the function.
+    * The amount of memory available to the function at runtime. 
     */
   var MemorySize: js.UndefOr[typings.awsSdk.lambdaMod.MemorySize] = js.undefined
+  
+  /**
+    * The type of deployment package. Set to Image for container image and set Zip for .zip file archive.
+    */
+  var PackageType: js.UndefOr[typings.awsSdk.lambdaMod.PackageType] = js.undefined
   
   /**
     * The latest updated revision of the function or alias.
@@ -105,6 +125,16 @@ trait FunctionConfiguration extends StObject {
     * The runtime environment for the Lambda function.
     */
   var Runtime: js.UndefOr[typings.awsSdk.lambdaMod.Runtime] = js.undefined
+  
+  /**
+    * The ARN of the signing job.
+    */
+  var SigningJobArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * The ARN of the signing profile version.
+    */
+  var SigningProfileVersionArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The current state of the function. When the state is Inactive, you can reactivate the function by invoking it.
@@ -127,7 +157,7 @@ trait FunctionConfiguration extends StObject {
   var Timeout: js.UndefOr[typings.awsSdk.lambdaMod.Timeout] = js.undefined
   
   /**
-    * The function's AWS X-Ray tracing configuration.
+    * The function's X-Ray tracing configuration.
     */
   var TracingConfig: js.UndefOr[TracingConfigResponse] = js.undefined
   
@@ -150,6 +180,12 @@ object FunctionConfiguration {
   
   extension [Self <: FunctionConfiguration](x: Self) {
     
+    inline def setArchitectures(value: ArchitecturesList): Self = StObject.set(x, "Architectures", value.asInstanceOf[js.Any])
+    
+    inline def setArchitecturesUndefined: Self = StObject.set(x, "Architectures", js.undefined)
+    
+    inline def setArchitecturesVarargs(value: Architecture*): Self = StObject.set(x, "Architectures", js.Array(value*))
+    
     inline def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
     
     inline def setCodeSha256Undefined: Self = StObject.set(x, "CodeSha256", js.undefined)
@@ -170,11 +206,15 @@ object FunctionConfiguration {
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
+    inline def setEphemeralStorage(value: EphemeralStorage): Self = StObject.set(x, "EphemeralStorage", value.asInstanceOf[js.Any])
+    
+    inline def setEphemeralStorageUndefined: Self = StObject.set(x, "EphemeralStorage", js.undefined)
+    
     inline def setFileSystemConfigs(value: FileSystemConfigList): Self = StObject.set(x, "FileSystemConfigs", value.asInstanceOf[js.Any])
     
     inline def setFileSystemConfigsUndefined: Self = StObject.set(x, "FileSystemConfigs", js.undefined)
     
-    inline def setFileSystemConfigsVarargs(value: FileSystemConfig*): Self = StObject.set(x, "FileSystemConfigs", js.Array(value :_*))
+    inline def setFileSystemConfigsVarargs(value: FileSystemConfig*): Self = StObject.set(x, "FileSystemConfigs", js.Array(value*))
     
     inline def setFunctionArn(value: NameSpacedFunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
@@ -187,6 +227,10 @@ object FunctionConfiguration {
     inline def setHandler(value: Handler): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerUndefined: Self = StObject.set(x, "Handler", js.undefined)
+    
+    inline def setImageConfigResponse(value: ImageConfigResponse): Self = StObject.set(x, "ImageConfigResponse", value.asInstanceOf[js.Any])
+    
+    inline def setImageConfigResponseUndefined: Self = StObject.set(x, "ImageConfigResponse", js.undefined)
     
     inline def setKMSKeyArn(value: KMSKeyArn): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
     
@@ -212,7 +256,7 @@ object FunctionConfiguration {
     
     inline def setLayersUndefined: Self = StObject.set(x, "Layers", js.undefined)
     
-    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "Layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "Layers", js.Array(value*))
     
     inline def setMasterArn(value: FunctionArn): Self = StObject.set(x, "MasterArn", value.asInstanceOf[js.Any])
     
@@ -221,6 +265,10 @@ object FunctionConfiguration {
     inline def setMemorySize(value: MemorySize): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
     
     inline def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
+    
+    inline def setPackageType(value: PackageType): Self = StObject.set(x, "PackageType", value.asInstanceOf[js.Any])
+    
+    inline def setPackageTypeUndefined: Self = StObject.set(x, "PackageType", js.undefined)
     
     inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
@@ -233,6 +281,14 @@ object FunctionConfiguration {
     inline def setRuntime(value: Runtime): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
     
     inline def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
+    
+    inline def setSigningJobArn(value: Arn): Self = StObject.set(x, "SigningJobArn", value.asInstanceOf[js.Any])
+    
+    inline def setSigningJobArnUndefined: Self = StObject.set(x, "SigningJobArn", js.undefined)
+    
+    inline def setSigningProfileVersionArn(value: Arn): Self = StObject.set(x, "SigningProfileVersionArn", value.asInstanceOf[js.Any])
+    
+    inline def setSigningProfileVersionArnUndefined: Self = StObject.set(x, "SigningProfileVersionArn", js.undefined)
     
     inline def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

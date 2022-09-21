@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__messaging
 
-Typings are for version 0.7.3
+Typings are for version 0.9.16
 
 ## Library description:
 This is the Firebase Cloud Messaging component of the Firebase JS SDK.
@@ -10,10 +10,10 @@ This is the Firebase Cloud Messaging component of the Firebase JS SDK.
 | ------------------ | :-------------: |
 | Full name          | @firebase/messaging |
 | Keywords           | - |
-| # releases         | 1365 |
-| # dependents       | 18 |
-| # downloads        | 35980941 |
-| # stars            | 0 |
+| # releases         | 1249 |
+| # dependents       | 0.0 |
+| # downloads        | 5235737.333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

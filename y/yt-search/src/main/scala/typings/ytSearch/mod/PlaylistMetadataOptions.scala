@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlaylistMetadataOptions extends StObject {
   
+  /** @default 'US' */
+  var gl: js.UndefOr[String] = js.undefined
+  
+  /** @default 'en' */
+  var hl: js.UndefOr[String] = js.undefined
+  
   var listId: String
 }
 object PlaylistMetadataOptions {
@@ -16,6 +22,14 @@ object PlaylistMetadataOptions {
   }
   
   extension [Self <: PlaylistMetadataOptions](x: Self) {
+    
+    inline def setGl(value: String): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+    
+    inline def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
+    
+    inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
+    
+    inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
     
     inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Subdocument")
 @js.native
-/* private */ class Subdocument ()
+/* private */ open class Subdocument ()
   extends StObject
      with typings.activexWord.Word.Subdocument {
   
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Open(): typings.activexWord.Word.Document = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Path: String = js.native

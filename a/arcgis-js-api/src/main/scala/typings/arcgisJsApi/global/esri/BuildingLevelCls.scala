@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.BuildingLevel")
 @js.native
-class BuildingLevelCls ()
+/**
+  * Provides information for the building level filter, such as the value selected by the user or the minimum and maximum allowed values.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingLevel.html)
+  */
+open class BuildingLevelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.BuildingLevel {
   def this(properties: BuildingLevelProperties) = this()

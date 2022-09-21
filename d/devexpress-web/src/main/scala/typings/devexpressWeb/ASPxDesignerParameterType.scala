@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ASPxDesignerParameterType extends StObject {
   
-  var defaultVal: js.Any
+  var defaultVal: Any
   
   var displayValue: String
   
@@ -14,16 +14,16 @@ trait ASPxDesignerParameterType extends StObject {
   
   var value: String
   
-  def valueConverter(`val`: js.Any): js.Any
+  def valueConverter(`val`: Any): Any
 }
 object ASPxDesignerParameterType {
   
   inline def apply(
-    defaultVal: js.Any,
+    defaultVal: Any,
     displayValue: String,
     specifics: String,
     value: String,
-    valueConverter: js.Any => js.Any
+    valueConverter: Any => Any
   ): ASPxDesignerParameterType = {
     val __obj = js.Dynamic.literal(defaultVal = defaultVal.asInstanceOf[js.Any], displayValue = displayValue.asInstanceOf[js.Any], specifics = specifics.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueConverter = js.Any.fromFunction1(valueConverter))
     __obj.asInstanceOf[ASPxDesignerParameterType]
@@ -31,7 +31,7 @@ object ASPxDesignerParameterType {
   
   extension [Self <: ASPxDesignerParameterType](x: Self) {
     
-    inline def setDefaultVal(value: js.Any): Self = StObject.set(x, "defaultVal", value.asInstanceOf[js.Any])
+    inline def setDefaultVal(value: Any): Self = StObject.set(x, "defaultVal", value.asInstanceOf[js.Any])
     
     inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
     
@@ -39,6 +39,6 @@ object ASPxDesignerParameterType {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueConverter(value: js.Any => js.Any): Self = StObject.set(x, "valueConverter", js.Any.fromFunction1(value))
+    inline def setValueConverter(value: Any => Any): Self = StObject.set(x, "valueConverter", js.Any.fromFunction1(value))
   }
 }

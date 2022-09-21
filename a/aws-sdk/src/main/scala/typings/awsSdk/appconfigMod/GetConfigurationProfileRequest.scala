@@ -12,7 +12,7 @@ trait GetConfigurationProfileRequest extends StObject {
   var ApplicationId: Id
   
   /**
-    * The ID of the configuration profile you want to get.
+    * The ID of the configuration profile that you want to get.
     */
   var ConfigurationProfileId: Id
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait legendOptions extends StObject {
   
   //number of pixels or [x margin, y margin]
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var backgroundColor: js.UndefOr[Any] = js.undefined
   
   //null or color
   var backgroundOpacity: js.UndefOr[Double] = js.undefined
@@ -18,12 +18,12 @@ trait legendOptions extends StObject {
   var container: js.UndefOr[JQuery[HTMLElement]] = js.undefined
   
   //  null or (fn: string, series object -> string)
-  var labelBoxBorderColor: js.UndefOr[js.Any] = js.undefined
+  var labelBoxBorderColor: js.UndefOr[Any] = js.undefined
   
-  var labelFormatter: js.UndefOr[js.Function2[/* label */ String, /* series */ js.Any, String]] = js.undefined
+  var labelFormatter: js.UndefOr[js.Function2[/* label */ String, /* series */ Any, String]] = js.undefined
   
   //"ne" or "nw" or "se" or "sw"
-  var margin: js.UndefOr[js.Any] = js.undefined
+  var margin: js.UndefOr[Any] = js.undefined
   
   //color
   var noColumns: js.UndefOr[Double] = js.undefined
@@ -33,7 +33,7 @@ trait legendOptions extends StObject {
   var show: js.UndefOr[Boolean] = js.undefined
   
   // null or jQuery object/DOM element/jQuery expression
-  var sorted: js.UndefOr[js.Any] = js.undefined
+  var sorted: js.UndefOr[Any] = js.undefined
 }
 object legendOptions {
   
@@ -44,7 +44,7 @@ object legendOptions {
   
   extension [Self <: legendOptions](x: Self) {
     
-    inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
@@ -56,15 +56,15 @@ object legendOptions {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setLabelBoxBorderColor(value: js.Any): Self = StObject.set(x, "labelBoxBorderColor", value.asInstanceOf[js.Any])
+    inline def setLabelBoxBorderColor(value: Any): Self = StObject.set(x, "labelBoxBorderColor", value.asInstanceOf[js.Any])
     
     inline def setLabelBoxBorderColorUndefined: Self = StObject.set(x, "labelBoxBorderColor", js.undefined)
     
-    inline def setLabelFormatter(value: (/* label */ String, /* series */ js.Any) => String): Self = StObject.set(x, "labelFormatter", js.Any.fromFunction2(value))
+    inline def setLabelFormatter(value: (/* label */ String, /* series */ Any) => String): Self = StObject.set(x, "labelFormatter", js.Any.fromFunction2(value))
     
     inline def setLabelFormatterUndefined: Self = StObject.set(x, "labelFormatter", js.undefined)
     
-    inline def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -80,7 +80,7 @@ object legendOptions {
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    inline def setSorted(value: js.Any): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
+    inline def setSorted(value: Any): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
     
     inline def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
   }

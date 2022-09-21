@@ -31,6 +31,6 @@ object CompletionList {
     
     inline def setSuggestions(value: js.Array[CompletionItem]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    inline def setSuggestionsVarargs(value: CompletionItem*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: CompletionItem*): Self = StObject.set(x, "suggestions", js.Array(value*))
   }
 }

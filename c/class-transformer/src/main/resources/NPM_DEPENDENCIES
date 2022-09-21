@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "class-transformer" : "0.3.1"
+      "class-transformer" : "0.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "class-transformer" : "0.3.1"
+      "class-transformer" : "0.5.1"
     }
   ],
   "compile-devDependencies" : [

@@ -14,7 +14,7 @@ object objectMod {
   
   @JSImport("@storybook/addon-knobs/dist/components/types/Object", JSImport.Default)
   @js.native
-  class default[T] () extends ObjectType[T]
+  open class default[T] () extends ObjectType[T]
   object default {
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Object", JSImport.Default)
@@ -24,14 +24,14 @@ object objectMod {
     /* static member */
     @JSImport("@storybook/addon-knobs/dist/components/types/Object", "default.defaultProps")
     @js.native
-    def defaultProps: ObjectTypeProps[js.Any] = js.native
-    inline def defaultProps_=(x: ObjectTypeProps[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: ObjectTypeProps[Any] = js.native
+    inline def defaultProps_=(x: ObjectTypeProps[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("@storybook/addon-knobs/dist/components/types/Object", "default.deserialize")
     @js.native
-    def deserialize: js.Function1[/* value */ String, js.Any] = js.native
-    inline def deserialize_=(x: js.Function1[/* value */ String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
+    def deserialize: js.Function1[/* value */ String, Any] = js.native
+    inline def deserialize_=(x: js.Function1[/* value */ String, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
     
     /* static member */
     inline def getDerivedStateFromProps[T](props: ObjectTypeProps[T], state: ObjectTypeState[T]): ObjectTypeState[T] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ObjectTypeState[T] | Null]
@@ -45,25 +45,25 @@ object objectMod {
       
       @JSImport("@storybook/addon-knobs/dist/components/types/Object", "default.propTypes.knob")
       @js.native
-      def knob: Validator[KnobControlConfig[js.Any]] = js.native
-      inline def knob_=(x: Validator[KnobControlConfig[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("knob")(x.asInstanceOf[js.Any])
+      def knob: Validator[KnobControlConfig[Any]] = js.native
+      inline def knob_=(x: Validator[KnobControlConfig[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("knob")(x.asInstanceOf[js.Any])
       
       @JSImport("@storybook/addon-knobs/dist/components/types/Object", "default.propTypes.onChange")
       @js.native
-      def onChange: Validator[js.Function1[/* value */ js.Any, js.Any]] = js.native
-      inline def onChange_=(x: Validator[js.Function1[/* value */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
+      def onChange: Validator[js.Function1[/* value */ Any, Any]] = js.native
+      inline def onChange_=(x: Validator[js.Function1[/* value */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
     @JSImport("@storybook/addon-knobs/dist/components/types/Object", "default.serialize")
     @js.native
-    def serialize: js.Function1[/* object */ js.Any, String] = js.native
-    inline def serialize_=(x: js.Function1[/* object */ js.Any, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
+    def serialize: js.Function1[/* object */ Any, String] = js.native
+    inline def serialize_=(x: js.Function1[/* object */ Any, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait ObjectType[T]
-    extends Component[ObjectTypeProps[T], js.Object, js.Any] {
+    extends Component[ObjectTypeProps[T], js.Object, Any] {
     
     def handleChange(e: ChangeEvent[HTMLTextAreaElement]): Unit = js.native
     

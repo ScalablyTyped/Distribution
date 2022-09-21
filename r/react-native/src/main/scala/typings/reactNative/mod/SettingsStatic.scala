@@ -9,7 +9,7 @@ trait SettingsStatic extends StObject {
   
   def clearWatch(watchId: Double): Unit = js.native
   
-  def get(key: String): js.Any = js.native
+  def get(key: String): Any = js.native
   
   def set(settings: js.Object): Unit = js.native
   

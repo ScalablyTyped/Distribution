@@ -44,6 +44,6 @@ object SchedulingGroup {
     
     inline def setUserIdsUndefined: Self = StObject.set(x, "userIds", js.undefined)
     
-    inline def setUserIdsVarargs(value: String*): Self = StObject.set(x, "userIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: String*): Self = StObject.set(x, "userIds", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object FailureSummary {
     
     inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    inline def setFailuresVarargs(value: WorldFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: WorldFailure*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setTotalFailureCount(value: Integer): Self = StObject.set(x, "totalFailureCount", value.asInstanceOf[js.Any])
     

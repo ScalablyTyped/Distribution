@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a INSERT query. */
 @JSImport("massive", "Insert")
 @js.native
-class Insert protected () extends StObject {
-  def this(source: Readable, record: js.Array[js.Any]) = this()
+open class Insert protected () extends StObject {
+  def this(source: Readable, record: js.Array[Any]) = this()
   /** Represents an INSERT query. */
-  def this(source: Readable, record: AnyObject[js.Any]) = this()
+  def this(source: Readable, record: AnyObject[Any]) = this()
   def this(
     source: Readable,
-    record: js.Array[js.Any],
+    record: js.Array[Any],
     options: ResultProcessingOptions & PersistenceInsertOptions
   ) = this()
   def this(
     source: Readable,
-    record: AnyObject[js.Any],
+    record: AnyObject[Any],
     options: ResultProcessingOptions & PersistenceInsertOptions
   ) = this()
   

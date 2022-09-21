@@ -100,7 +100,7 @@ object Site {
     
     inline def setSiteContactsUndefined: Self = StObject.set(x, "siteContacts", js.undefined)
     
-    inline def setSiteContactsVarargs(value: SiteContact*): Self = StObject.set(x, "siteContacts", js.Array(value :_*))
+    inline def setSiteContactsVarargs(value: SiteContact*): Self = StObject.set(x, "siteContacts", js.Array(value*))
     
     inline def setSiteSettings(value: SiteSettings): Self = StObject.set(x, "siteSettings", value.asInstanceOf[js.Any])
     

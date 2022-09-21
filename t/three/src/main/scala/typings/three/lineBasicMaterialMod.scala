@@ -3,6 +3,7 @@ package typings.three
 import typings.three.colorMod.Color
 import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
+import typings.three.utilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,33 +12,34 @@ object lineBasicMaterialMod {
   
   @JSImport("three/src/materials/LineBasicMaterial", "LineBasicMaterial")
   @js.native
-  class LineBasicMaterial () extends Material {
+  open class LineBasicMaterial () extends Material {
     def this(parameters: LineBasicMaterialParameters) = this()
     
     /**
-    	 * @default 0xffffff
-    	 */
+      * @default 0xffffff
+      */
     var color: Color = js.native
     
     /**
-    	 * @default 'round'
-    	 */
+      * Whether the material is affected by fog. Default is true.
+      * @default true
+      */
+    var fog: Boolean = js.native
+    
+    /**
+      * @default 'round'
+      */
     var linecap: String = js.native
     
     /**
-    	 * @default 'round'
-    	 */
+      * @default 'round'
+      */
     var linejoin: String = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var linewidth: Double = js.native
-    
-    /**
-    	 * @default false
-    	 */
-    var morphTargets: Boolean = js.native
     
     def setValues(parameters: LineBasicMaterialParameters): Unit = js.native
   }
@@ -46,15 +48,15 @@ object lineBasicMaterialMod {
     extends StObject
        with MaterialParameters {
     
-    var color: js.UndefOr[Color | String | Double] = js.undefined
+    var color: js.UndefOr[ColorRepresentation] = js.undefined
+    
+    var fog: js.UndefOr[Boolean] = js.undefined
     
     var linecap: js.UndefOr[String] = js.undefined
     
     var linejoin: js.UndefOr[String] = js.undefined
     
     var linewidth: js.UndefOr[Double] = js.undefined
-    
-    var morphTargets: js.UndefOr[Boolean] = js.undefined
   }
   object LineBasicMaterialParameters {
     
@@ -65,9 +67,13 @@ object lineBasicMaterialMod {
     
     extension [Self <: LineBasicMaterialParameters](x: Self) {
       
-      inline def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorRepresentation): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setFog(value: Boolean): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
+      
+      inline def setFogUndefined: Self = StObject.set(x, "fog", js.undefined)
       
       inline def setLinecap(value: String): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
       
@@ -80,10 +86,6 @@ object lineBasicMaterialMod {
       inline def setLinewidth(value: Double): Self = StObject.set(x, "linewidth", value.asInstanceOf[js.Any])
       
       inline def setLinewidthUndefined: Self = StObject.set(x, "linewidth", js.undefined)
-      
-      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
-      
-      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
     }
   }
 }

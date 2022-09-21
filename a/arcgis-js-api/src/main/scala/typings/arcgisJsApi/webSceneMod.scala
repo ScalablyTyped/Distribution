@@ -20,14 +20,22 @@ object webSceneMod extends Shortcut {
   @JSImport("esri/WebScene", JSImport.Namespace)
   @js.native
   /**
-    * The web scene is the core element of 3D mapping across the ArcGIS platform.
+    * The web scene is the core element of 3D mapping across ArcGIS.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with WebScene {
     def this(properties: WebSceneProperties) = this()
+    
+    /**
+      * Returns a table based on the given table ID.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-TablesMixin.html#findTableById)
+      */
+    /* CompleteClass */
+    override def findTableById(tableId: String): Layer = js.native
     
     /**
       * A collection of [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) instances that are tables saved in a [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) and/or a [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).

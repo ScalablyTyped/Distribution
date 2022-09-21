@@ -50,6 +50,6 @@ object OrderinvoicesCreateRefundInvoiceRequest {
     
     inline def setShipmentInvoicesUndefined: Self = StObject.set(x, "shipmentInvoices", js.undefined)
     
-    inline def setShipmentInvoicesVarargs(value: ShipmentInvoice*): Self = StObject.set(x, "shipmentInvoices", js.Array(value :_*))
+    inline def setShipmentInvoicesVarargs(value: ShipmentInvoice*): Self = StObject.set(x, "shipmentInvoices", js.Array(value*))
   }
 }

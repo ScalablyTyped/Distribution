@@ -24,6 +24,6 @@ object DescribeDomainsRequest {
     
     inline def setDomainNamesUndefined: Self = StObject.set(x, "DomainNames", js.undefined)
     
-    inline def setDomainNamesVarargs(value: DomainName*): Self = StObject.set(x, "DomainNames", js.Array(value :_*))
+    inline def setDomainNamesVarargs(value: DomainName*): Self = StObject.set(x, "DomainNames", js.Array(value*))
   }
 }

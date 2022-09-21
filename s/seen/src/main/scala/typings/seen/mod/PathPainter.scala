@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "PathPainter")
 @js.native
-class PathPainter () extends Painter
+open class PathPainter () extends Painter

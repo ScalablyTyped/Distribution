@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Name
   extends StObject
-     with /* others */ StringDictionary[js.Any] {
+     with /* others */ StringDictionary[Any] {
   
   var amount: Double
   

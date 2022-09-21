@@ -20,6 +20,11 @@ trait AutomatedAbrSettings extends StObject {
     * Optional. The minimum target bitrate used in your automated ABR stack. Use this value to set a lower limit on the bitrate of video delivered to viewers with slow internet connections. If you don't specify a value, MediaConvert uses 600,000 (600 kb/s) by default.
     */
   var MinAbrBitrate: js.UndefOr[integerMin100000Max100000000] = js.undefined
+  
+  /**
+    * Optional. Use Automated ABR rules to specify restrictions for the rendition sizes MediaConvert will create in your ABR stack. You can use these rules if your ABR workflow has specific rendition size requirements, but you still want MediaConvert to optimize for video quality and overall file size.
+    */
+  var Rules: js.UndefOr[listOfAutomatedAbrRule] = js.undefined
 }
 object AutomatedAbrSettings {
   
@@ -41,5 +46,11 @@ object AutomatedAbrSettings {
     inline def setMinAbrBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MinAbrBitrate", value.asInstanceOf[js.Any])
     
     inline def setMinAbrBitrateUndefined: Self = StObject.set(x, "MinAbrBitrate", js.undefined)
+    
+    inline def setRules(value: listOfAutomatedAbrRule): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    
+    inline def setRulesVarargs(value: AutomatedAbrRule*): Self = StObject.set(x, "Rules", js.Array(value*))
   }
 }

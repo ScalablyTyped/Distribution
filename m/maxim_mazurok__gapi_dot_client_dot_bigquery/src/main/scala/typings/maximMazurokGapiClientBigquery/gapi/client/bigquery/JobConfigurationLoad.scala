@@ -29,13 +29,14 @@ trait JobConfigurationLoad extends StObject {
   var createDisposition: js.UndefOr[String] = js.undefined
   
   /**
-    * [Trusted Tester] Defines the list of possible SQL data types to which the source decimal values are converted. This list and the precision and the scale parameters of the decimal
-    * field determine the target type. In the order of NUMERIC, BIGNUMERIC, and STRING, a type is picked if it is in the specified list and if it supports the precision and the scale.
-    * STRING supports all precision and scale values. If none of the listed types supports the precision and the scale, the type supporting the widest range in the specified list is
-    * picked, and if a value exceeds the supported range when reading the data, an error will be thrown. For example: suppose decimal_target_type = ["NUMERIC", "BIGNUMERIC"]. Then if
-    * (precision,scale) is: * (38,9) -> NUMERIC; * (39,9) -> BIGNUMERIC (NUMERIC cannot hold 30 integer digits); * (38,10) -> BIGNUMERIC (NUMERIC cannot hold 10 fractional digits); *
-    * (76,38) -> BIGNUMERIC; * (77,38) -> BIGNUMERIC (error if value exeeds supported range). For duplicated types in this field, only one will be considered and the rest will be ignored.
-    * The order of the types in this field is ignored. For example, ["BIGNUMERIC", "NUMERIC"] is the same as ["NUMERIC", "BIGNUMERIC"] and NUMERIC always takes precedence over BIGNUMERIC.
+    * [Optional] Defines the list of possible SQL data types to which the source decimal values are converted. This list and the precision and the scale parameters of the decimal field
+    * determine the target type. In the order of NUMERIC, BIGNUMERIC, and STRING, a type is picked if it is in the specified list and if it supports the precision and the scale. STRING
+    * supports all precision and scale values. If none of the listed types supports the precision and the scale, the type supporting the widest range in the specified list is picked, and
+    * if a value exceeds the supported range when reading the data, an error will be thrown. Example: Suppose the value of this field is ["NUMERIC", "BIGNUMERIC"]. If (precision,scale)
+    * is: (38,9) -> NUMERIC; (39,9) -> BIGNUMERIC (NUMERIC cannot hold 30 integer digits); (38,10) -> BIGNUMERIC (NUMERIC cannot hold 10 fractional digits); (76,38) -> BIGNUMERIC; (77,38)
+    * -> BIGNUMERIC (error if value exeeds supported range). This field cannot contain duplicate types. The order of the types in this field is ignored. For example, ["BIGNUMERIC",
+    * "NUMERIC"] is the same as ["NUMERIC", "BIGNUMERIC"] and NUMERIC always takes precedence over BIGNUMERIC. Defaults to ["NUMERIC", "STRING"] for ORC and ["NUMERIC"] for the other file
+    * formats.
     */
   var decimalTargetTypes: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -61,7 +62,7 @@ trait JobConfigurationLoad extends StObject {
     */
   var fieldDelimiter: js.UndefOr[String] = js.undefined
   
-  /** [Optional, Trusted Tester] Options to configure hive partitioning support. */
+  /** [Optional] Options to configure hive partitioning support. */
   var hivePartitioningOptions: js.UndefOr[HivePartitioningOptions] = js.undefined
   
   /**
@@ -70,6 +71,12 @@ trait JobConfigurationLoad extends StObject {
     * what BigQuery treats as an extra value: CSV: Trailing columns JSON: Named values that don't match any column names
     */
   var ignoreUnknownValues: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * [Optional] If sourceFormat is set to newline-delimited JSON, indicates whether it should be processed as a JSON variant such as GeoJSON. For a sourceFormat other than JSON, omit
+    * this field. If the sourceFormat is newline-delimited JSON: - for newline-delimited GeoJSON: set to GEOJSON.
+    */
+  var jsonExtension: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The maximum number of bad records that BigQuery can ignore when running the job. If the number of bad records exceeds this value, an invalid error is returned in the job
@@ -83,6 +90,15 @@ trait JobConfigurationLoad extends StObject {
     * For STRING and BYTE columns, BigQuery interprets the empty string as an empty value.
     */
   var nullMarker: js.UndefOr[String] = js.undefined
+  
+  /** [Optional] Options to configure parquet support. */
+  var parquetOptions: js.UndefOr[ParquetOptions] = js.undefined
+  
+  /**
+    * [Optional] Preserves the embedded ASCII control characters (the first 32 characters in the ASCII-table, from '\x00' to '\x1F') when loading from CSV. Only applicable to CSV, ignored
+    * for other formats.
+    */
+  var preserveAsciiControlCharacters: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If sourceFormat is set to "DATASTORE_BACKUP", indicates which entity properties to load into BigQuery from a Cloud Datastore backup. Property names are case sensitive and must be
@@ -100,6 +116,9 @@ trait JobConfigurationLoad extends StObject {
   
   /** [TrustedTester] Range partitioning specification for this table. Only one of timePartitioning and rangePartitioning should be specified. */
   var rangePartitioning: js.UndefOr[RangePartitioning] = js.undefined
+  
+  /** User provided referencing file with the expected reader schema, Available for the format: AVRO, PARQUET, ORC. */
+  var referenceFileSchemaUri: js.UndefOr[String] = js.undefined
   
   /** [Optional] The schema for the destination table. The schema can be omitted if the destination table already exists, or if you're loading data from Google Cloud Datastore. */
   var schema: js.UndefOr[TableSchema] = js.undefined
@@ -141,8 +160,8 @@ trait JobConfigurationLoad extends StObject {
   var timePartitioning: js.UndefOr[TimePartitioning] = js.undefined
   
   /**
-    * [Optional] If sourceFormat is set to "AVRO", indicates whether to enable interpreting logical types into their corresponding types (ie. TIMESTAMP), instead of only using their raw
-    * types (ie. INTEGER).
+    * [Optional] If sourceFormat is set to "AVRO", indicates whether to interpret logical types as the corresponding BigQuery data type (for example, TIMESTAMP), instead of using the raw
+    * type (for example, INTEGER).
     */
   var useAvroLogicalTypes: js.UndefOr[Boolean] = js.undefined
   
@@ -187,7 +206,7 @@ object JobConfigurationLoad {
     
     inline def setDecimalTargetTypesUndefined: Self = StObject.set(x, "decimalTargetTypes", js.undefined)
     
-    inline def setDecimalTargetTypesVarargs(value: String*): Self = StObject.set(x, "decimalTargetTypes", js.Array(value :_*))
+    inline def setDecimalTargetTypesVarargs(value: String*): Self = StObject.set(x, "decimalTargetTypes", js.Array(value*))
     
     inline def setDestinationEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
     
@@ -217,6 +236,10 @@ object JobConfigurationLoad {
     
     inline def setIgnoreUnknownValuesUndefined: Self = StObject.set(x, "ignoreUnknownValues", js.undefined)
     
+    inline def setJsonExtension(value: String): Self = StObject.set(x, "jsonExtension", value.asInstanceOf[js.Any])
+    
+    inline def setJsonExtensionUndefined: Self = StObject.set(x, "jsonExtension", js.undefined)
+    
     inline def setMaxBadRecords(value: Double): Self = StObject.set(x, "maxBadRecords", value.asInstanceOf[js.Any])
     
     inline def setMaxBadRecordsUndefined: Self = StObject.set(x, "maxBadRecords", js.undefined)
@@ -225,11 +248,19 @@ object JobConfigurationLoad {
     
     inline def setNullMarkerUndefined: Self = StObject.set(x, "nullMarker", js.undefined)
     
+    inline def setParquetOptions(value: ParquetOptions): Self = StObject.set(x, "parquetOptions", value.asInstanceOf[js.Any])
+    
+    inline def setParquetOptionsUndefined: Self = StObject.set(x, "parquetOptions", js.undefined)
+    
+    inline def setPreserveAsciiControlCharacters(value: Boolean): Self = StObject.set(x, "preserveAsciiControlCharacters", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveAsciiControlCharactersUndefined: Self = StObject.set(x, "preserveAsciiControlCharacters", js.undefined)
+    
     inline def setProjectionFields(value: js.Array[String]): Self = StObject.set(x, "projectionFields", value.asInstanceOf[js.Any])
     
     inline def setProjectionFieldsUndefined: Self = StObject.set(x, "projectionFields", js.undefined)
     
-    inline def setProjectionFieldsVarargs(value: String*): Self = StObject.set(x, "projectionFields", js.Array(value :_*))
+    inline def setProjectionFieldsVarargs(value: String*): Self = StObject.set(x, "projectionFields", js.Array(value*))
     
     inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
@@ -238,6 +269,10 @@ object JobConfigurationLoad {
     inline def setRangePartitioning(value: RangePartitioning): Self = StObject.set(x, "rangePartitioning", value.asInstanceOf[js.Any])
     
     inline def setRangePartitioningUndefined: Self = StObject.set(x, "rangePartitioning", js.undefined)
+    
+    inline def setReferenceFileSchemaUri(value: String): Self = StObject.set(x, "referenceFileSchemaUri", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceFileSchemaUriUndefined: Self = StObject.set(x, "referenceFileSchemaUri", js.undefined)
     
     inline def setSchema(value: TableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
@@ -255,7 +290,7 @@ object JobConfigurationLoad {
     
     inline def setSchemaUpdateOptionsUndefined: Self = StObject.set(x, "schemaUpdateOptions", js.undefined)
     
-    inline def setSchemaUpdateOptionsVarargs(value: String*): Self = StObject.set(x, "schemaUpdateOptions", js.Array(value :_*))
+    inline def setSchemaUpdateOptionsVarargs(value: String*): Self = StObject.set(x, "schemaUpdateOptions", js.Array(value*))
     
     inline def setSkipLeadingRows(value: Double): Self = StObject.set(x, "skipLeadingRows", value.asInstanceOf[js.Any])
     
@@ -269,7 +304,7 @@ object JobConfigurationLoad {
     
     inline def setSourceUrisUndefined: Self = StObject.set(x, "sourceUris", js.undefined)
     
-    inline def setSourceUrisVarargs(value: String*): Self = StObject.set(x, "sourceUris", js.Array(value :_*))
+    inline def setSourceUrisVarargs(value: String*): Self = StObject.set(x, "sourceUris", js.Array(value*))
     
     inline def setTimePartitioning(value: TimePartitioning): Self = StObject.set(x, "timePartitioning", value.asInstanceOf[js.Any])
     

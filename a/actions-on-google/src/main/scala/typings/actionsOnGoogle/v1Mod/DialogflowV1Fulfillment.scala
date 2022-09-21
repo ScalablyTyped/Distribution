@@ -23,7 +23,7 @@ object DialogflowV1Fulfillment {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: DialogflowV1Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: DialogflowV1Message*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
     

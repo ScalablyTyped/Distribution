@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomTaskPane extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
-  val ContentControl: js.Any
+  val ContentControl: Any
   
   def Delete(): Unit
   
@@ -27,13 +27,13 @@ trait CustomTaskPane extends StObject {
   
   var Width: Double
   
-  val Window: js.Any
+  val Window: Any
 }
 object CustomTaskPane {
   
   inline def apply(
-    Application: js.Any,
-    ContentControl: js.Any,
+    Application: Any,
+    ContentControl: Any,
     Delete: () => Unit,
     DockPosition: MsoCTPDockPosition,
     DockPositionRestrict: MsoCTPDockPositionRestrict,
@@ -42,7 +42,7 @@ object CustomTaskPane {
     Title: String,
     Visible: Boolean,
     Width: Double,
-    Window: js.Any
+    Window: Any
   ): CustomTaskPane = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ContentControl = ContentControl.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), DockPosition = DockPosition.asInstanceOf[js.Any], DockPositionRestrict = DockPositionRestrict.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], Window = Window.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.CustomTaskPane_typekey")(OfficeDotCustomTaskPane_typekey.asInstanceOf[js.Any])
@@ -51,9 +51,9 @@ object CustomTaskPane {
   
   extension [Self <: CustomTaskPane](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setContentControl(value: js.Any): Self = StObject.set(x, "ContentControl", value.asInstanceOf[js.Any])
+    inline def setContentControl(value: Any): Self = StObject.set(x, "ContentControl", value.asInstanceOf[js.Any])
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
@@ -71,6 +71,6 @@ object CustomTaskPane {
     
     inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    inline def setWindow(value: js.Any): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Any): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
   }
 }

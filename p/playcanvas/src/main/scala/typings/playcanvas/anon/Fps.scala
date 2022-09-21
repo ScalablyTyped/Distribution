@@ -8,7 +8,7 @@ trait Fps extends StObject {
   
   var fps: js.UndefOr[Double] = js.undefined
   
-  var loop: js.UndefOr[js.Any] = js.undefined
+  var loop: js.UndefOr[Boolean] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -27,7 +27,7 @@ object Fps {
     
     inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
-    inline def setLoop(value: js.Any): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     

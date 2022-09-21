@@ -1,23 +1,25 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Arn = java.lang.String
+type Arn = String
 
-type Arns = js.Array[typings.awsSdk.clouddirectoryMod.Arn]
+type Arns = js.Array[Arn]
 
-type AttributeKeyAndValueList = js.Array[typings.awsSdk.clouddirectoryMod.AttributeKeyAndValue]
+type AttributeKeyAndValueList = js.Array[AttributeKeyAndValue]
 
-type AttributeKeyList = js.Array[typings.awsSdk.clouddirectoryMod.AttributeKey]
+type AttributeKeyList = js.Array[AttributeKey]
 
-type AttributeName = java.lang.String
+type AttributeName = String
 
-type AttributeNameAndValueList = js.Array[typings.awsSdk.clouddirectoryMod.AttributeNameAndValue]
+type AttributeNameAndValueList = js.Array[AttributeNameAndValue]
 
-type AttributeNameList = js.Array[typings.awsSdk.clouddirectoryMod.AttributeName]
+type AttributeNameList = js.Array[AttributeName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ValidationException
@@ -35,40 +37,40 @@ type AttributeNameList = js.Array[typings.awsSdk.clouddirectoryMod.AttributeName
   - typings.awsSdk.awsSdkStrings.InternalServiceException
   - java.lang.String
 */
-type BatchReadExceptionType = typings.awsSdk.clouddirectoryMod._BatchReadExceptionType | java.lang.String
+type BatchReadExceptionType = _BatchReadExceptionType | String
 
-type BatchReadOperationList = js.Array[typings.awsSdk.clouddirectoryMod.BatchReadOperation]
+type BatchReadOperationList = js.Array[BatchReadOperation]
 
-type BatchReadOperationResponseList = js.Array[typings.awsSdk.clouddirectoryMod.BatchReadOperationResponse]
+type BatchReadOperationResponseList = js.Array[BatchReadOperationResponse]
 
-type BatchReferenceName = java.lang.String
+type BatchReferenceName = String
 
-type BatchWriteOperationList = js.Array[typings.awsSdk.clouddirectoryMod.BatchWriteOperation]
+type BatchWriteOperationList = js.Array[BatchWriteOperation]
 
-type BatchWriteOperationResponseList = js.Array[typings.awsSdk.clouddirectoryMod.BatchWriteOperationResponse]
+type BatchWriteOperationResponseList = js.Array[BatchWriteOperationResponse]
 
-type BinaryAttributeValue = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.clouddirectoryMod.Blob | java.lang.String
+type BinaryAttributeValue = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type Bool = scala.Boolean
+type Bool = Boolean
 
-type BooleanAttributeValue = scala.Boolean
+type BooleanAttributeValue = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SERIALIZABLE
   - typings.awsSdk.awsSdkStrings.EVENTUAL
   - java.lang.String
 */
-type ConsistencyLevel = typings.awsSdk.clouddirectoryMod._ConsistencyLevel | java.lang.String
+type ConsistencyLevel = _ConsistencyLevel | String
 
-type Date = typings.std.Date
+type Date = js.Date
 
-type DatetimeAttributeValue = typings.std.Date
+type DatetimeAttributeValue = js.Date
 
-type DirectoryArn = java.lang.String
+type DirectoryArn = String
 
-type DirectoryList = js.Array[typings.awsSdk.clouddirectoryMod.Directory]
+type DirectoryList = js.Array[Directory]
 
-type DirectoryName = java.lang.String
+type DirectoryName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
@@ -76,11 +78,11 @@ type DirectoryName = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type DirectoryState = typings.awsSdk.clouddirectoryMod._DirectoryState | java.lang.String
+type DirectoryState = _DirectoryState | String
 
-type ExceptionMessage = java.lang.String
+type ExceptionMessage = String
 
-type FacetAttributeList = js.Array[typings.awsSdk.clouddirectoryMod.FacetAttribute]
+type FacetAttributeList = js.Array[FacetAttribute]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STRING
@@ -91,46 +93,46 @@ type FacetAttributeList = js.Array[typings.awsSdk.clouddirectoryMod.FacetAttribu
   - typings.awsSdk.awsSdkStrings.VARIANT
   - java.lang.String
 */
-type FacetAttributeType = typings.awsSdk.clouddirectoryMod._FacetAttributeType | java.lang.String
+type FacetAttributeType = _FacetAttributeType | String
 
-type FacetAttributeUpdateList = js.Array[typings.awsSdk.clouddirectoryMod.FacetAttributeUpdate]
+type FacetAttributeUpdateList = js.Array[FacetAttributeUpdate]
 
-type FacetName = java.lang.String
+type FacetName = String
 
-type FacetNameList = js.Array[typings.awsSdk.clouddirectoryMod.FacetName]
+type FacetNameList = js.Array[FacetName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STATIC
   - typings.awsSdk.awsSdkStrings.DYNAMIC
   - java.lang.String
 */
-type FacetStyle = typings.awsSdk.clouddirectoryMod._FacetStyle | java.lang.String
+type FacetStyle = _FacetStyle | String
 
-type IndexAttachmentList = js.Array[typings.awsSdk.clouddirectoryMod.IndexAttachment]
+type IndexAttachmentList = js.Array[IndexAttachment]
 
-type LinkAttributeUpdateList = js.Array[typings.awsSdk.clouddirectoryMod.LinkAttributeUpdate]
+type LinkAttributeUpdateList = js.Array[LinkAttributeUpdate]
 
-type LinkName = java.lang.String
+type LinkName = String
 
-type LinkNameToObjectIdentifierMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.clouddirectoryMod.ObjectIdentifier]
+type LinkNameToObjectIdentifierMap = StringDictionary[ObjectIdentifier]
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type NumberAttributeValue = java.lang.String
+type NumberAttributeValue = String
 
-type NumberResults = scala.Double
+type NumberResults = Double
 
-type ObjectAttributeRangeList = js.Array[typings.awsSdk.clouddirectoryMod.ObjectAttributeRange]
+type ObjectAttributeRangeList = js.Array[ObjectAttributeRange]
 
-type ObjectAttributeUpdateList = js.Array[typings.awsSdk.clouddirectoryMod.ObjectAttributeUpdate]
+type ObjectAttributeUpdateList = js.Array[ObjectAttributeUpdate]
 
-type ObjectIdentifier = java.lang.String
+type ObjectIdentifier = String
 
-type ObjectIdentifierAndLinkNameList = js.Array[typings.awsSdk.clouddirectoryMod.ObjectIdentifierAndLinkNameTuple]
+type ObjectIdentifierAndLinkNameList = js.Array[ObjectIdentifierAndLinkNameTuple]
 
-type ObjectIdentifierList = js.Array[typings.awsSdk.clouddirectoryMod.ObjectIdentifier]
+type ObjectIdentifierList = js.Array[ObjectIdentifier]
 
-type ObjectIdentifierToLinkNameMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.clouddirectoryMod.LinkName]
+type ObjectIdentifierToLinkNameMap = StringDictionary[LinkName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NODE
@@ -139,17 +141,17 @@ type ObjectIdentifierToLinkNameMap = org.scalablytyped.runtime.StringDictionary[
   - typings.awsSdk.awsSdkStrings.INDEX
   - java.lang.String
 */
-type ObjectType = typings.awsSdk.clouddirectoryMod._ObjectType | java.lang.String
+type ObjectType = _ObjectType | String
 
-type PathString = java.lang.String
+type PathString = String
 
-type PathToObjectIdentifiersList = js.Array[typings.awsSdk.clouddirectoryMod.PathToObjectIdentifiers]
+type PathToObjectIdentifiersList = js.Array[PathToObjectIdentifiers]
 
-type PolicyAttachmentList = js.Array[typings.awsSdk.clouddirectoryMod.PolicyAttachment]
+type PolicyAttachmentList = js.Array[PolicyAttachment]
 
-type PolicyToPathList = js.Array[typings.awsSdk.clouddirectoryMod.PolicyToPath]
+type PolicyToPathList = js.Array[PolicyToPath]
 
-type PolicyType = java.lang.String
+type PolicyType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FIRST
@@ -159,24 +161,24 @@ type PolicyType = java.lang.String
   - typings.awsSdk.awsSdkStrings.EXCLUSIVE
   - java.lang.String
 */
-type RangeMode = typings.awsSdk.clouddirectoryMod._RangeMode | java.lang.String
+type RangeMode = _RangeMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.REQUIRED_ALWAYS
   - typings.awsSdk.awsSdkStrings.NOT_REQUIRED
   - java.lang.String
 */
-type RequiredAttributeBehavior = typings.awsSdk.clouddirectoryMod._RequiredAttributeBehavior | java.lang.String
+type RequiredAttributeBehavior = _RequiredAttributeBehavior | String
 
-type RuleKey = java.lang.String
+type RuleKey = String
 
-type RuleMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.clouddirectoryMod.Rule]
+type RuleMap = StringDictionary[Rule]
 
-type RuleParameterKey = java.lang.String
+type RuleParameterKey = String
 
-type RuleParameterMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.clouddirectoryMod.RuleParameterValue]
+type RuleParameterMap = StringDictionary[RuleParameterValue]
 
-type RuleParameterValue = java.lang.String
+type RuleParameterValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BINARY_LENGTH
@@ -185,48 +187,48 @@ type RuleParameterValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.STRING_LENGTH
   - java.lang.String
 */
-type RuleType = typings.awsSdk.clouddirectoryMod._RuleType | java.lang.String
+type RuleType = _RuleType | String
 
-type SchemaFacetList = js.Array[typings.awsSdk.clouddirectoryMod.SchemaFacet]
+type SchemaFacetList = js.Array[SchemaFacet]
 
-type SchemaJsonDocument = java.lang.String
+type SchemaJsonDocument = String
 
-type SchemaName = java.lang.String
+type SchemaName = String
 
-type SelectorObjectReference = java.lang.String
+type SelectorObjectReference = String
 
-type StringAttributeValue = java.lang.String
+type StringAttributeValue = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.clouddirectoryMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.clouddirectoryMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type TagsNumberResults = scala.Double
+type TagsNumberResults = Double
 
-type TypedLinkAttributeDefinitionList = js.Array[typings.awsSdk.clouddirectoryMod.TypedLinkAttributeDefinition]
+type TypedLinkAttributeDefinitionList = js.Array[TypedLinkAttributeDefinition]
 
-type TypedLinkAttributeRangeList = js.Array[typings.awsSdk.clouddirectoryMod.TypedLinkAttributeRange]
+type TypedLinkAttributeRangeList = js.Array[TypedLinkAttributeRange]
 
-type TypedLinkFacetAttributeUpdateList = js.Array[typings.awsSdk.clouddirectoryMod.TypedLinkFacetAttributeUpdate]
+type TypedLinkFacetAttributeUpdateList = js.Array[TypedLinkFacetAttributeUpdate]
 
-type TypedLinkName = java.lang.String
+type TypedLinkName = String
 
-type TypedLinkNameList = js.Array[typings.awsSdk.clouddirectoryMod.TypedLinkName]
+type TypedLinkNameList = js.Array[TypedLinkName]
 
-type TypedLinkSpecifierList = js.Array[typings.awsSdk.clouddirectoryMod.TypedLinkSpecifier]
+type TypedLinkSpecifierList = js.Array[TypedLinkSpecifier]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_OR_UPDATE
   - typings.awsSdk.awsSdkStrings.DELETE
   - java.lang.String
 */
-type UpdateActionType = typings.awsSdk.clouddirectoryMod._UpdateActionType | java.lang.String
+type UpdateActionType = _UpdateActionType | String
 
-type Version = java.lang.String
+type Version = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-05-10`
@@ -234,4 +236,4 @@ type Version = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.clouddirectoryMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

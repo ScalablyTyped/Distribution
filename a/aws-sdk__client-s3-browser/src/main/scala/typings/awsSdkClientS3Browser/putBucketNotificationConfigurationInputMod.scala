@@ -8,5 +8,5 @@ object putBucketNotificationConfigurationInputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/PutBucketNotificationConfigurationInput", "PutBucketNotificationConfigurationInput")
   @js.native
-  val PutBucketNotificationConfigurationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutBucketNotificationConfigurationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

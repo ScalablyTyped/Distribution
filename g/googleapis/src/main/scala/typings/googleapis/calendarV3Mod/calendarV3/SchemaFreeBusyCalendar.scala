@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaFreeBusyCalendar extends StObject {
   
   /**
-    * List of time ranges during which this calendar should be regarded as
-    * busy.
+    * List of time ranges during which this calendar should be regarded as busy.
     */
   var busy: js.UndefOr[js.Array[SchemaTimePeriod]] = js.undefined
   
@@ -30,12 +29,12 @@ object SchemaFreeBusyCalendar {
     
     inline def setBusyUndefined: Self = StObject.set(x, "busy", js.undefined)
     
-    inline def setBusyVarargs(value: SchemaTimePeriod*): Self = StObject.set(x, "busy", js.Array(value :_*))
+    inline def setBusyVarargs(value: SchemaTimePeriod*): Self = StObject.set(x, "busy", js.Array(value*))
     
     inline def setErrors(value: js.Array[SchemaError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: SchemaError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SchemaError*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

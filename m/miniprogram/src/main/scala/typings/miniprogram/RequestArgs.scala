@@ -1,7 +1,6 @@
 package typings.miniprogram
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.miniprogram.anon.Headers
 import typings.miniprogram.miniprogramStrings.GET
 import typings.miniprogram.miniprogramStrings.POST
 import org.scalablytyped.runtime.StObject
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestArgs
   extends StObject
-     with AsyncCallback[Headers] {
+     with AsyncCallback[RequestCallbackValue] {
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * Expected return data format, default json, supporting json, text and base64.
@@ -39,7 +38,7 @@ object RequestArgs {
   
   extension [Self <: RequestArgs](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

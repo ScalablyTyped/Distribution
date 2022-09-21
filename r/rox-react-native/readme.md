@@ -1,7 +1,7 @@
 
 # Scala.js typings for rox-react-native
 
-Typings are for version 4.8
+Typings are for version 5.0
 
 ## Library description:
 Rollout.io ROX JS SDK Client
@@ -10,10 +10,10 @@ Rollout.io ROX JS SDK Client
 | ------------------ | :-------------: |
 | Full name          | rox-react-native |
 | Keywords           | feature-flag, feature-flags, rollout, rox, flags, flag, configuration, remote-control, rollout.io |
-| # releases         | 31 |
-| # dependents       | 0 |
-| # downloads        | 70595 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 5604.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://rollout.io)

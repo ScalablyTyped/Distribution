@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides HTTP content that uses a stream. */
 @JSGlobal("Windows.Web.Http.HttpStreamContent")
 @js.native
-class HttpStreamContent protected ()
+open class HttpStreamContent protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.HttpStreamContent {
   /**

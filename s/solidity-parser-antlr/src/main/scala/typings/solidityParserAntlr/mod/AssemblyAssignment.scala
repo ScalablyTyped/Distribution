@@ -31,7 +31,7 @@ object AssemblyAssignment {
     
     inline def setNames(value: js.Array[Identifier]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    inline def setNamesVarargs(value: Identifier*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: Identifier*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

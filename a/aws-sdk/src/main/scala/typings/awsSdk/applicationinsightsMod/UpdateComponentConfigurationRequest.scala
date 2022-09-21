@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateComponentConfigurationRequest extends StObject {
   
   /**
+    *  Automatically configures the component by applying the recommended configurations. 
+    */
+  var AutoConfigEnabled: js.UndefOr[typings.awsSdk.applicationinsightsMod.AutoConfigEnabled] = js.undefined
+  
+  /**
     * The configuration settings of the component. The value is the escaped JSON of the configuration. For more information about the JSON format, see Working with JSON. You can send a request to DescribeComponentConfigurationRecommendation to see the recommended configuration for a component. For the complete format of the component configuration file, see Component Configuration.
     */
   var ComponentConfiguration: js.UndefOr[typings.awsSdk.applicationinsightsMod.ComponentConfiguration] = js.undefined
@@ -27,7 +32,7 @@ trait UpdateComponentConfigurationRequest extends StObject {
   var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName
   
   /**
-    * The tier of the application component. Supported tiers include DOT_NET_WORKER, DOT_NET_WEB, DOT_NET_CORE, SQL_SERVER, and DEFAULT.
+    * The tier of the application component.
     */
   var Tier: js.UndefOr[typings.awsSdk.applicationinsightsMod.Tier] = js.undefined
 }
@@ -39,6 +44,10 @@ object UpdateComponentConfigurationRequest {
   }
   
   extension [Self <: UpdateComponentConfigurationRequest](x: Self) {
+    
+    inline def setAutoConfigEnabled(value: AutoConfigEnabled): Self = StObject.set(x, "AutoConfigEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAutoConfigEnabledUndefined: Self = StObject.set(x, "AutoConfigEnabled", js.undefined)
     
     inline def setComponentConfiguration(value: ComponentConfiguration): Self = StObject.set(x, "ComponentConfiguration", value.asInstanceOf[js.Any])
     

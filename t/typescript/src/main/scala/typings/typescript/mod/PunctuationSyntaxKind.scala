@@ -49,6 +49,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.SyntaxKind.ColonToken
   - typings.typescript.mod.SyntaxKind.AtToken
   - typings.typescript.mod.SyntaxKind.BacktickToken
+  - typings.typescript.mod.SyntaxKind.HashToken
   - typings.typescript.mod.SyntaxKind.EqualsToken
   - typings.typescript.mod.SyntaxKind.PlusEqualsToken
   - typings.typescript.mod.SyntaxKind.MinusEqualsToken

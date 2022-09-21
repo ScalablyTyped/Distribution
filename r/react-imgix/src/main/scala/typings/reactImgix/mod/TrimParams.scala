@@ -12,6 +12,8 @@ trait TrimParams extends StObject {
   
   var `trim-md`: js.UndefOr[ImgixParamType] = js.undefined
   
+  var `trim-pad`: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `trim-sd`: js.UndefOr[ImgixParamType] = js.undefined
   
   var `trim-tol`: js.UndefOr[ImgixParamType] = js.undefined
@@ -34,6 +36,10 @@ object TrimParams {
     inline def `setTrim-md`(value: ImgixParamType): Self = StObject.set(x, "trim-md", value.asInstanceOf[js.Any])
     
     inline def `setTrim-mdUndefined`: Self = StObject.set(x, "trim-md", js.undefined)
+    
+    inline def `setTrim-pad`(value: ImgixParamType): Self = StObject.set(x, "trim-pad", value.asInstanceOf[js.Any])
+    
+    inline def `setTrim-padUndefined`: Self = StObject.set(x, "trim-pad", js.undefined)
     
     inline def `setTrim-sd`(value: ImgixParamType): Self = StObject.set(x, "trim-sd", value.asInstanceOf[js.Any])
     

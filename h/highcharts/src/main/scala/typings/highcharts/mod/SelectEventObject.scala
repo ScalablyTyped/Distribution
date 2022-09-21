@@ -26,10 +26,10 @@ object SelectEventObject {
     
     inline def setXAxis(value: js.Array[SelectDataObject]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    inline def setXAxisVarargs(value: SelectDataObject*): Self = StObject.set(x, "xAxis", js.Array(value :_*))
+    inline def setXAxisVarargs(value: SelectDataObject*): Self = StObject.set(x, "xAxis", js.Array(value*))
     
     inline def setYAxis(value: js.Array[SelectDataObject]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    inline def setYAxisVarargs(value: SelectDataObject*): Self = StObject.set(x, "yAxis", js.Array(value :_*))
+    inline def setYAxisVarargs(value: SelectDataObject*): Self = StObject.set(x, "yAxis", js.Array(value*))
   }
 }

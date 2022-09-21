@@ -43,7 +43,7 @@ object CmafPackageCreateOrUpdateParameters {
     
     inline def setHlsManifestsUndefined: Self = StObject.set(x, "HlsManifests", js.undefined)
     
-    inline def setHlsManifestsVarargs(value: HlsManifestCreateOrUpdateParameters*): Self = StObject.set(x, "HlsManifests", js.Array(value :_*))
+    inline def setHlsManifestsVarargs(value: HlsManifestCreateOrUpdateParameters*): Self = StObject.set(x, "HlsManifests", js.Array(value*))
     
     inline def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     

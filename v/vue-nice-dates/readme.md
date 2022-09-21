@@ -10,10 +10,10 @@ A responsive, touch-friendly, and modular date picker library for Vue. This is a
 | ------------------ | :-------------: |
 | Full name          | vue-nice-dates |
 | Keywords           | vue, datepicker, date-picker, calendar |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 347 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 51.333333333333336 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/zhangchizi/vue-nice-dates#readme)

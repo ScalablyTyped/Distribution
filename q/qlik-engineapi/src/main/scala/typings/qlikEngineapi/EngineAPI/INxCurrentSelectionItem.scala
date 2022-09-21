@@ -124,7 +124,7 @@ object INxCurrentSelectionItem {
     
     inline def setQNotSelectedFieldSelectionInfo(value: js.Array[INxFieldSelectionInfo]): Self = StObject.set(x, "qNotSelectedFieldSelectionInfo", value.asInstanceOf[js.Any])
     
-    inline def setQNotSelectedFieldSelectionInfoVarargs(value: INxFieldSelectionInfo*): Self = StObject.set(x, "qNotSelectedFieldSelectionInfo", js.Array(value :_*))
+    inline def setQNotSelectedFieldSelectionInfoVarargs(value: INxFieldSelectionInfo*): Self = StObject.set(x, "qNotSelectedFieldSelectionInfo", js.Array(value*))
     
     inline def setQOneAndOnlyOne(value: Boolean): Self = StObject.set(x, "qOneAndOnlyOne", value.asInstanceOf[js.Any])
     
@@ -132,7 +132,7 @@ object INxCurrentSelectionItem {
     
     inline def setQRangeInfo(value: js.Array[IRangeSelectInfo]): Self = StObject.set(x, "qRangeInfo", value.asInstanceOf[js.Any])
     
-    inline def setQRangeInfoVarargs(value: IRangeSelectInfo*): Self = StObject.set(x, "qRangeInfo", js.Array(value :_*))
+    inline def setQRangeInfoVarargs(value: IRangeSelectInfo*): Self = StObject.set(x, "qRangeInfo", js.Array(value*))
     
     inline def setQReadableName(value: String): Self = StObject.set(x, "qReadableName", value.asInstanceOf[js.Any])
     
@@ -142,7 +142,7 @@ object INxCurrentSelectionItem {
     
     inline def setQSelectedFieldSelectionInfo(value: js.Array[INxFieldSelectionInfo]): Self = StObject.set(x, "qSelectedFieldSelectionInfo", value.asInstanceOf[js.Any])
     
-    inline def setQSelectedFieldSelectionInfoVarargs(value: INxFieldSelectionInfo*): Self = StObject.set(x, "qSelectedFieldSelectionInfo", js.Array(value :_*))
+    inline def setQSelectedFieldSelectionInfoVarargs(value: INxFieldSelectionInfo*): Self = StObject.set(x, "qSelectedFieldSelectionInfo", js.Array(value*))
     
     inline def setQSelectionThreshold(value: Double): Self = StObject.set(x, "qSelectionThreshold", value.asInstanceOf[js.Any])
     

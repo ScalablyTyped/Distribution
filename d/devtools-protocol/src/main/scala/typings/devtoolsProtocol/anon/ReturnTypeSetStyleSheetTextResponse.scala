@@ -23,7 +23,7 @@ object ReturnTypeSetStyleSheetTextResponse {
     
     inline def setParamsType(value: js.Array[SetStyleSheetTextRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: SetStyleSheetTextRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetStyleSheetTextRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: SetStyleSheetTextResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

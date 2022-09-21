@@ -18,7 +18,7 @@ trait ITwinTriggerField
     * @returns Object The template arguments
     */
   @JSName("getLabelableRenderData")
-  var getLabelableRenderData_ITwinTriggerField: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getLabelableRenderData_ITwinTriggerField: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Get the total width of the trigger button area
     * @returns Number The total trigger width
@@ -75,7 +75,7 @@ object ITwinTriggerField {
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    inline def setGetLabelableRenderData(value: () => js.Any): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
+    inline def setGetLabelableRenderData(value: () => Any): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
     
     inline def setGetLabelableRenderDataUndefined: Self = StObject.set(x, "getLabelableRenderData", js.undefined)
     

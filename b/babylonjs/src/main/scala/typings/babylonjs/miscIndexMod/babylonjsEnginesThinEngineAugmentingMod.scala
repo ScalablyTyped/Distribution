@@ -44,7 +44,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Unit,
       onError: Unit,
       format: Double,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -54,7 +54,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Unit,
       onError: Unit,
       format: Double,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -76,7 +76,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Unit,
       onError: Unit,
       format: Unit,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -86,7 +86,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Unit,
       onError: Unit,
       format: Unit,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -107,7 +107,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -117,7 +117,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double
     ): InternalTexture = js.native
@@ -128,10 +128,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -140,10 +140,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -153,7 +153,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
       forcedExtension: Unit,
@@ -166,10 +166,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -178,10 +178,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -191,7 +191,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Unit,
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
       forcedExtension: Unit,
@@ -221,7 +221,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Unit,
       format: Double,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -231,7 +231,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Unit,
       format: Double,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -253,7 +253,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Unit,
       format: Unit,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -263,7 +263,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Unit,
       format: Unit,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -284,7 +284,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -294,7 +294,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double
     ): InternalTexture = js.native
@@ -305,10 +305,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -317,10 +317,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -330,7 +330,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Double,
       forcedExtension: Unit,
@@ -343,10 +343,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any
+      forcedExtension: Any
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
       rootUrl: String,
@@ -355,10 +355,10 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
-      forcedExtension: js.Any,
+      forcedExtension: Any,
       createPolynomials: Boolean
     ): InternalTexture = js.native
     def createPrefilteredCubeTexture(
@@ -368,7 +368,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       lodOffset: Double,
       onLoad: Nullable[js.Function1[/* internalTexture */ Nullable[InternalTexture], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
       format: Unit,
       forcedExtension: Unit,

@@ -5,10 +5,8 @@ import typings.ol.extentMod.Extent
 import typings.ol.olStrings.afteroperations
 import typings.ol.olStrings.beforeoperations
 import typings.ol.pluggableMapMod.FrameState
-import typings.std.Error
 import typings.std.ImageData
 import typings.std.MessageEvent
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,13 +19,13 @@ object rasterMod {
   
   @JSImport("ol/source/Raster", JSImport.Default)
   @js.native
-  class default protected () extends RasterSource {
+  open class default protected () extends RasterSource {
     def this(options: Options) = this()
   }
   
   @JSImport("ol/source/Raster", "Processor")
   @js.native
-  class Processor protected ()
+  open class Processor protected ()
     extends typings.ol.disposableMod.default {
     def this(config: ProcessorOptions) = this()
     
@@ -39,12 +37,12 @@ object rasterMod {
     /**
       * Add a job to the queue.
       */
-    def _enqueue(job: js.Any): Unit = js.native
+    def _enqueue(job: Any): Unit = js.native
     
     /**
       * Handle messages from the worker.
       */
-    def _onWorkerMessage(index: Double, event: MessageEvent[js.Any]): Unit = js.native
+    def _onWorkerMessage(index: Double, event: MessageEvent[Any]): Unit = js.native
     
     /**
       * Resolve a job.  If there are no more worker threads, the processor callback
@@ -56,9 +54,9 @@ object rasterMod {
       * Run operation on input data.
       */
     def process(
-      inputs: js.Array[js.Array[js.Any] | ImageData],
-      meta: js.Any,
-      callback: js.Function3[/* p0 */ Error, /* p1 */ ImageData, /* p2 */ js.Object, Unit]
+      inputs: js.Array[js.Array[Any] | ImageData],
+      meta: Any,
+      callback: js.Function3[/* p0 */ js.Error, /* p1 */ ImageData, /* p2 */ js.Object, Unit]
     ): Unit = js.native
   }
   
@@ -84,15 +82,15 @@ object rasterMod {
   
   @JSImport("ol/source/Raster", "RasterSourceEvent")
   @js.native
-  class RasterSourceEvent protected ()
+  open class RasterSourceEvent protected ()
     extends typings.ol.eventMod.default {
-    def this(`type`: String, frameState: FrameState, data: js.Any) = this()
+    def this(`type`: String, frameState: FrameState, data: Any) = this()
     
     /**
       * An object made available to all operations.  This can be used by operations
       * as a storage object (e.g. for calculating statistics).
       */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /**
       * The raster extent.
@@ -105,22 +103,22 @@ object rasterMod {
     var resolution: Double = js.native
   }
   
-  inline def newImageData(data: Uint8ClampedArray, width: Double, height: Double): ImageData = (^.asInstanceOf[js.Dynamic].applyDynamic("newImageData")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImageData]
+  inline def newImageData(data: js.typedarray.Uint8ClampedArray, width: Double, height: Double): ImageData = (^.asInstanceOf[js.Dynamic].applyDynamic("newImageData")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImageData]
   
   trait FauxMessageEvent extends StObject {
     
-    var data: js.Any
+    var data: Any
   }
   object FauxMessageEvent {
     
-    inline def apply(data: js.Any): FauxMessageEvent = {
+    inline def apply(data: Any): FauxMessageEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[FauxMessageEvent]
     }
     
     extension [Self <: FauxMessageEvent](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,7 +130,7 @@ object rasterMod {
   
   trait Options extends StObject {
     
-    var lib: js.UndefOr[js.Any] = js.undefined
+    var lib: js.UndefOr[Any] = js.undefined
     
     var operation: js.UndefOr[Operation] = js.undefined
     
@@ -157,7 +155,7 @@ object rasterMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setLib(value: js.Any): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
+      inline def setLib(value: Any): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
       
       inline def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
       
@@ -179,7 +177,7 @@ object rasterMod {
       
       inline def setSourcesVarargs(
         value: (typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default])*
-      ): Self = StObject.set(x, "sources", js.Array(value :_*))
+      ): Self = StObject.set(x, "sources", js.Array(value*))
       
       inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
       
@@ -191,9 +189,9 @@ object rasterMod {
     
     var imageOps: js.UndefOr[Boolean] = js.undefined
     
-    var lib: js.UndefOr[js.Any] = js.undefined
+    var lib: js.UndefOr[Any] = js.undefined
     
-    def operation(p0: js.Array[js.Any], p1: js.Object): js.Any
+    def operation(p0: js.Array[Any], p1: js.Object): Any
     
     var queue: Double
     
@@ -201,7 +199,7 @@ object rasterMod {
   }
   object ProcessorOptions {
     
-    inline def apply(operation: (js.Array[js.Any], js.Object) => js.Any, queue: Double, threads: Double): ProcessorOptions = {
+    inline def apply(operation: (js.Array[Any], js.Object) => Any, queue: Double, threads: Double): ProcessorOptions = {
       val __obj = js.Dynamic.literal(operation = js.Any.fromFunction2(operation), queue = queue.asInstanceOf[js.Any], threads = threads.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessorOptions]
     }
@@ -212,11 +210,11 @@ object rasterMod {
       
       inline def setImageOpsUndefined: Self = StObject.set(x, "imageOps", js.undefined)
       
-      inline def setLib(value: js.Any): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
+      inline def setLib(value: Any): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
       
       inline def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
       
-      inline def setOperation(value: (js.Array[js.Any], js.Object) => js.Any): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
+      inline def setOperation(value: (js.Array[Any], js.Object) => Any): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
       
       inline def setQueue(value: Double): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
@@ -242,7 +240,7 @@ object rasterMod {
       * Set the operation.
       */
     def setOperation(operation: Operation): Unit = js.native
-    def setOperation(operation: Operation, opt_lib: js.Any): Unit = js.native
+    def setOperation(operation: Operation, opt_lib: Any): Unit = js.native
     
     @JSName("un")
     def un_afteroperations(`type`: afteroperations, listener: js.Function1[/* evt */ RasterSourceEvent, Unit]): Unit = js.native

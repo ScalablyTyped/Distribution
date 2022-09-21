@@ -15,11 +15,11 @@ object mod {
   
   @JSImport("@ethersproject/hdnode", "HDNode")
   @js.native
-  class HDNode protected ()
+  open class HDNode protected ()
     extends StObject
        with ExternallyOwnedAccount {
     def this(
-      constructorGuard: js.Any,
+      constructorGuard: Any,
       privateKey: String,
       publicKey: String,
       parentFingerprint: String,
@@ -36,7 +36,7 @@ object mod {
       *   - fromSeed
       */
     def this(
-      constructorGuard: js.Any,
+      constructorGuard: Any,
       privateKey: String,
       publicKey: String,
       parentFingerprint: String,
@@ -46,7 +46,7 @@ object mod {
       mnemonicOrPath: Mnemonic
     ) = this()
     
-    /* private */ var _derive: js.Any = js.native
+    /* private */ var _derive: Any = js.native
     
     /* CompleteClass */
     override val address: String = js.native
@@ -104,6 +104,8 @@ object mod {
   inline def entropyToMnemonic(entropy: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("entropyToMnemonic")(entropy.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def entropyToMnemonic(entropy: BytesLike, wordlist: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("entropyToMnemonic")(entropy.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def entropyToMnemonic(entropy: BytesLike, wordlist: Wordlist): String = (^.asInstanceOf[js.Dynamic].applyDynamic("entropyToMnemonic")(entropy.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def getAccountPath(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountPath")(index.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def isValidMnemonic(mnemonic: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidMnemonic")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isValidMnemonic(mnemonic: String, wordlist: Wordlist): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidMnemonic")(mnemonic.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[Boolean]

@@ -83,7 +83,7 @@ trait KiiPushMessageBuilder extends StObject {
     *
     * @return push message object. Can be used in {@link KiiTopic#sendMessage()}
     */
-  def build(): js.Any = js.native
+  def build(): Any = js.native
   
   /**
     * Enable/ Disable message distribution via APNS.

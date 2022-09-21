@@ -1,11 +1,12 @@
 package typings.babylonjs
 
-import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.particleMod.Particle
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import typings.babylonjs.uniformBufferEffectCommonAccessorMod.UniformBufferEffectCommonAccessor
+import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,15 @@ object iparticleemittertypeMod {
     
     /**
       * Called by the GPUParticleSystem to setup the update shader
-      * @param effect defines the update shader
+      * @param uboOrEffect defines the update shader
       */
-    def applyToShader(effect: Effect): Unit
+    def applyToShader(uboOrEffect: UniformBufferEffectCommonAccessor): Unit
+    
+    /**
+      * Creates the structure of the ubo for this particle emitter
+      * @param ubo ubo to create the structure for
+      */
+    def buildUniformLayout(ubo: UniformBuffer): Unit
     
     /**
       * Returns a string representing the class name
@@ -37,13 +44,13 @@ object iparticleemittertypeMod {
       * @param serializationObject defines the JSON object
       * @param scene defines the hosting scene
       */
-    def parse(serializationObject: js.Any, scene: Nullable[Scene]): Unit
+    def parse(serializationObject: Any, scene: Nullable[Scene]): Unit
     
     /**
       * Serializes the particle system to a JSON object.
       * @returns the JSON object
       */
-    def serialize(): js.Any
+    def serialize(): Any
     
     /**
       * Called by the particle System when the direction is computed for the created particle.
@@ -51,8 +58,15 @@ object iparticleemittertypeMod {
       * @param directionToUpdate is the direction vector to update with the result
       * @param particle is the particle we are computed the direction for
       * @param isLocal defines if the direction should be set in local space
+      * @param inverseWorldMatrix defines the inverted world matrix to use if isLocal is false
       */
-    def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit
+    def startDirectionFunction(
+      worldMatrix: Matrix,
+      directionToUpdate: Vector3,
+      particle: Particle,
+      isLocal: Boolean,
+      inverseWorldMatrix: Matrix
+    ): Unit
     
     /**
       * Called by the particle System when the position is computed for the created particle.
@@ -66,31 +80,34 @@ object iparticleemittertypeMod {
   object IParticleEmitterType {
     
     inline def apply(
-      applyToShader: Effect => Unit,
+      applyToShader: UniformBufferEffectCommonAccessor => Unit,
+      buildUniformLayout: UniformBuffer => Unit,
       getClassName: () => String,
       getEffectDefines: () => String,
-      parse: (js.Any, Nullable[Scene]) => Unit,
-      serialize: () => js.Any,
-      startDirectionFunction: (Matrix, Vector3, Particle, Boolean) => Unit,
+      parse: (Any, Nullable[Scene]) => Unit,
+      serialize: () => Any,
+      startDirectionFunction: (Matrix, Vector3, Particle, Boolean, Matrix) => Unit,
       startPositionFunction: (Matrix, Vector3, Particle, Boolean) => Unit
     ): IParticleEmitterType = {
-      val __obj = js.Dynamic.literal(applyToShader = js.Any.fromFunction1(applyToShader), getClassName = js.Any.fromFunction0(getClassName), getEffectDefines = js.Any.fromFunction0(getEffectDefines), parse = js.Any.fromFunction2(parse), serialize = js.Any.fromFunction0(serialize), startDirectionFunction = js.Any.fromFunction4(startDirectionFunction), startPositionFunction = js.Any.fromFunction4(startPositionFunction))
+      val __obj = js.Dynamic.literal(applyToShader = js.Any.fromFunction1(applyToShader), buildUniformLayout = js.Any.fromFunction1(buildUniformLayout), getClassName = js.Any.fromFunction0(getClassName), getEffectDefines = js.Any.fromFunction0(getEffectDefines), parse = js.Any.fromFunction2(parse), serialize = js.Any.fromFunction0(serialize), startDirectionFunction = js.Any.fromFunction5(startDirectionFunction), startPositionFunction = js.Any.fromFunction4(startPositionFunction))
       __obj.asInstanceOf[IParticleEmitterType]
     }
     
     extension [Self <: IParticleEmitterType](x: Self) {
       
-      inline def setApplyToShader(value: Effect => Unit): Self = StObject.set(x, "applyToShader", js.Any.fromFunction1(value))
+      inline def setApplyToShader(value: UniformBufferEffectCommonAccessor => Unit): Self = StObject.set(x, "applyToShader", js.Any.fromFunction1(value))
+      
+      inline def setBuildUniformLayout(value: UniformBuffer => Unit): Self = StObject.set(x, "buildUniformLayout", js.Any.fromFunction1(value))
       
       inline def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
       
       inline def setGetEffectDefines(value: () => String): Self = StObject.set(x, "getEffectDefines", js.Any.fromFunction0(value))
       
-      inline def setParse(value: (js.Any, Nullable[Scene]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+      inline def setParse(value: (Any, Nullable[Scene]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
-      inline def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+      inline def setSerialize(value: () => Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
       
-      inline def setStartDirectionFunction(value: (Matrix, Vector3, Particle, Boolean) => Unit): Self = StObject.set(x, "startDirectionFunction", js.Any.fromFunction4(value))
+      inline def setStartDirectionFunction(value: (Matrix, Vector3, Particle, Boolean, Matrix) => Unit): Self = StObject.set(x, "startDirectionFunction", js.Any.fromFunction5(value))
       
       inline def setStartPositionFunction(value: (Matrix, Vector3, Particle, Boolean) => Unit): Self = StObject.set(x, "startPositionFunction", js.Any.fromFunction4(value))
     }

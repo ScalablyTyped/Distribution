@@ -15,7 +15,7 @@ trait IElementContainer
   /** [Method] Removes items in the childEls array based on the return value of a supplied test function
     * @param testFn Function The test function.
     */
-  var removeChildEls: js.UndefOr[js.Function1[/* testFn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var removeChildEls: js.UndefOr[js.Function1[/* testFn */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IElementContainer {
   
@@ -30,7 +30,7 @@ object IElementContainer {
     
     inline def setAddChildElsUndefined: Self = StObject.set(x, "addChildEls", js.undefined)
     
-    inline def setRemoveChildEls(value: /* testFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeChildEls", js.Any.fromFunction1(value))
+    inline def setRemoveChildEls(value: /* testFn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "removeChildEls", js.Any.fromFunction1(value))
     
     inline def setRemoveChildElsUndefined: Self = StObject.set(x, "removeChildEls", js.undefined)
   }

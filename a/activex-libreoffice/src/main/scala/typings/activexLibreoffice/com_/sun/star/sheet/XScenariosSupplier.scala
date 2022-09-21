@@ -29,7 +29,7 @@ object XScenariosSupplier {
     Scenarios: XScenarios,
     acquire: () => Unit,
     getScenarios: () => XScenarios,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XScenariosSupplier = {
     val __obj = js.Dynamic.literal(Scenarios = Scenarios.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getScenarios = js.Any.fromFunction0(getScenarios), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

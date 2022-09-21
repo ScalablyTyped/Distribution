@@ -13,17 +13,17 @@ trait InteractiveWrongMediumException
      with ClassifiedInteractionRequest {
   
   /** identifies the medium thats needed to continue with the pending operation. */
-  var Medium: js.Any
+  var Medium: Any
 }
 object InteractiveWrongMediumException {
   
-  inline def apply(Classification: InteractionClassification, Context: XInterface, Medium: js.Any, Message: String): InteractiveWrongMediumException = {
+  inline def apply(Classification: InteractionClassification, Context: XInterface, Medium: Any, Message: String): InteractiveWrongMediumException = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Medium = Medium.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveWrongMediumException]
   }
   
   extension [Self <: InteractiveWrongMediumException](x: Self) {
     
-    inline def setMedium(value: js.Any): Self = StObject.set(x, "Medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: Any): Self = StObject.set(x, "Medium", value.asInstanceOf[js.Any])
   }
 }

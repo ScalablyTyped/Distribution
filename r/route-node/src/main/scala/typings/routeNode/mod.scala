@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("route-node", "RouteNode")
   @js.native
-  class RouteNode ()
+  open class RouteNode ()
     extends typings.routeNode.routeNodeMod.RouteNode {
     def this(name: String) = this()
     def this(name: String, path: String) = this()

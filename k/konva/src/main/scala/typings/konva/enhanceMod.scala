@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object enhanceMod {
   
-  @JSImport("konva/types/filters/Enhance", "Enhance")
+  @JSImport("konva/lib/filters/Enhance", "Enhance")
   @js.native
   val Enhance: Filter = js.native
 }

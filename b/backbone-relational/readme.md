@@ -10,15 +10,13 @@ Get and set relations (one-to-one, one-to-many, many-to-one) for Backbone models
 | ------------------ | :-------------: |
 | Full name          | backbone-relational |
 | Keywords           | backbone, relation, nested, model |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 459062 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11055.666666666666 |
+| # stars            | 2350.0 |
 
 ## Links
 - [Homepage](http://backbonerelational.org)
-- [Bugs](https://github.com/PaulUithol/Backbone-relational/issues)
-- [Repository](https://github.com/PaulUithol/Backbone-relational)
 - [Npm](https://www.npmjs.com/package/backbone-relational)
     
 

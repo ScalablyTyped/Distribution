@@ -10,10 +10,10 @@ Convenience wrapper for ReadableStream, with an API lifted from "from" and "thro
 | ------------------ | :-------------: |
 | Full name          | from2 |
 | Keywords           | from, stream, readable, pull, convenience, wrapper |
-| # releases         | 0 |
-| # dependents       | 214 |
-| # downloads        | 552973739 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.1214596333333336E7 |
+| # stars            | 129.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/from2)

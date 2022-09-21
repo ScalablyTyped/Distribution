@@ -10,10 +10,10 @@ A schema definition module for RabbitMQ graphs and messages
 | ------------------ | :-------------: |
 | Full name          | rabbitmq-schema |
 | Keywords           | rabbitmq, rabbit, schema, graph, exchange, queue, message, topology, topologies |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 864 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 106.66666666666667 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/tjmehta/rabbitmq-schema)

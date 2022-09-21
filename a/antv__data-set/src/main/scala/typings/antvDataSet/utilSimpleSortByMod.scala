@@ -10,8 +10,8 @@ object utilSimpleSortByMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  inline def default(arr: js.Array[js.Any], keys: SortTarget): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def default(arr: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+  inline def default(arr: js.Array[Any], keys: SortTarget): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  type SortTarget = String | js.Array[String] | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])
+  type SortTarget = String | js.Array[String] | (js.Function2[/* a */ Any, /* b */ Any, Double])
 }

@@ -39,7 +39,7 @@ object CharacterClass {
     
     inline def setElements(value: js.Array[CharacterClassElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: CharacterClassElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: CharacterClassElement*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
     

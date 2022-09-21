@@ -1,7 +1,6 @@
 package typings.nodeInt64
 
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +9,14 @@ object mod {
   
   @JSImport("node-int64", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Int64 {
-    def this(array: Uint8Array) = this()
+    def this(array: js.typedarray.Uint8Array) = this()
     def this(buffer: Buffer) = this()
     def this(num: Double) = this()
     def this(str: String) = this()
-    def this(array: Uint8Array, offset: Double) = this()
+    def this(array: js.typedarray.Uint8Array, offset: Double) = this()
     def this(buffer: Buffer, offset: Double) = this()
     def this(hi: Double, lo: Double) = this()
   }

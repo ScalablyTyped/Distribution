@@ -10,10 +10,10 @@ A TOML loader for Cosmiconfig
 | ------------------ | :-------------: |
 | Full name          | cosmiconfig-toml-loader |
 | Keywords           | coscmiconfig, toml, loader, load, configuration, config |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 4316144 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7583216.333333333 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/danielrearden/cosmiconfig-toml-loader#readme)

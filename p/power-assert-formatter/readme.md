@@ -10,10 +10,10 @@ Power Assert output formatter
 | ------------------ | :-------------: |
 | Full name          | power-assert-formatter |
 | Keywords           | power-assert, test, testing, assert, assertion |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 7567255 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 788806.3333333334 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/power-assert-js/power-assert-formatter)

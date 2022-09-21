@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Control extends StObject {
   
-  var BoundValue: js.Any = js.native
+  var BoundValue: Any = js.native
   
   var Cancel: Boolean = js.native
   
@@ -31,41 +31,41 @@ trait Control extends StObject {
   var MSFormsDotControl_typekey: Control = js.native
   
   def Move(): Unit = js.native
-  def Move(Left: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any, Width: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any, Width: js.Any, Height: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any, Width: js.Any, Height: js.Any, Layout: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any, Width: js.Any, Height: Unit, Layout: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any, Width: Unit, Height: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any, Width: Unit, Height: js.Any, Layout: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any, Width: Unit, Height: Unit, Layout: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: Unit, Width: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: Unit, Width: js.Any, Height: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: Unit, Width: js.Any, Height: js.Any, Layout: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: Unit, Width: js.Any, Height: Unit, Layout: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: Unit, Width: Unit, Height: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: Unit, Width: Unit, Height: js.Any, Layout: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: Unit, Width: Unit, Height: Unit, Layout: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: js.Any, Width: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: js.Any, Width: js.Any, Height: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: js.Any, Width: js.Any, Height: js.Any, Layout: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: js.Any, Width: js.Any, Height: Unit, Layout: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: js.Any, Width: Unit, Height: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: js.Any, Width: Unit, Height: js.Any, Layout: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: js.Any, Width: Unit, Height: Unit, Layout: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: Unit, Width: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: Unit, Width: js.Any, Height: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: Unit, Width: js.Any, Height: js.Any, Layout: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: Unit, Width: js.Any, Height: Unit, Layout: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: Unit, Width: Unit, Height: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: Unit, Width: Unit, Height: js.Any, Layout: js.Any): Unit = js.native
-  def Move(Left: Unit, Top: Unit, Width: Unit, Height: Unit, Layout: js.Any): Unit = js.native
+  def Move(Left: Any): Unit = js.native
+  def Move(Left: Any, Top: Any): Unit = js.native
+  def Move(Left: Any, Top: Any, Width: Any): Unit = js.native
+  def Move(Left: Any, Top: Any, Width: Any, Height: Any): Unit = js.native
+  def Move(Left: Any, Top: Any, Width: Any, Height: Any, Layout: Any): Unit = js.native
+  def Move(Left: Any, Top: Any, Width: Any, Height: Unit, Layout: Any): Unit = js.native
+  def Move(Left: Any, Top: Any, Width: Unit, Height: Any): Unit = js.native
+  def Move(Left: Any, Top: Any, Width: Unit, Height: Any, Layout: Any): Unit = js.native
+  def Move(Left: Any, Top: Any, Width: Unit, Height: Unit, Layout: Any): Unit = js.native
+  def Move(Left: Any, Top: Unit, Width: Any): Unit = js.native
+  def Move(Left: Any, Top: Unit, Width: Any, Height: Any): Unit = js.native
+  def Move(Left: Any, Top: Unit, Width: Any, Height: Any, Layout: Any): Unit = js.native
+  def Move(Left: Any, Top: Unit, Width: Any, Height: Unit, Layout: Any): Unit = js.native
+  def Move(Left: Any, Top: Unit, Width: Unit, Height: Any): Unit = js.native
+  def Move(Left: Any, Top: Unit, Width: Unit, Height: Any, Layout: Any): Unit = js.native
+  def Move(Left: Any, Top: Unit, Width: Unit, Height: Unit, Layout: Any): Unit = js.native
+  def Move(Left: Unit, Top: Any): Unit = js.native
+  def Move(Left: Unit, Top: Any, Width: Any): Unit = js.native
+  def Move(Left: Unit, Top: Any, Width: Any, Height: Any): Unit = js.native
+  def Move(Left: Unit, Top: Any, Width: Any, Height: Any, Layout: Any): Unit = js.native
+  def Move(Left: Unit, Top: Any, Width: Any, Height: Unit, Layout: Any): Unit = js.native
+  def Move(Left: Unit, Top: Any, Width: Unit, Height: Any): Unit = js.native
+  def Move(Left: Unit, Top: Any, Width: Unit, Height: Any, Layout: Any): Unit = js.native
+  def Move(Left: Unit, Top: Any, Width: Unit, Height: Unit, Layout: Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: Any, Height: Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: Any, Height: Any, Layout: Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: Any, Height: Unit, Layout: Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: Unit, Height: Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: Unit, Height: Any, Layout: Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: Unit, Height: Unit, Layout: Any): Unit = js.native
   
   var Name: String = js.native
   
-  val Object: js.Any = js.native
+  val Object: Any = js.native
   
   val OldHeight: Double = js.native
   
@@ -75,7 +75,7 @@ trait Control extends StObject {
   
   val OldWidth: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var RowSource: String = js.native
   
@@ -98,7 +98,7 @@ trait Control extends StObject {
   var Width: Double = js.native
   
   def ZOrder(): Unit = js.native
-  def ZOrder(zPosition: js.Any): Unit = js.native
+  def ZOrder(zPosition: Any): Unit = js.native
   
   def _GetHeight(Height: Double): Unit = js.native
   

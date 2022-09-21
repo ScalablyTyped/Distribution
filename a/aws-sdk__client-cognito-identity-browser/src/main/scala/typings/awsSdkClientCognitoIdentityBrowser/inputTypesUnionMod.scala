@@ -1,7 +1,6 @@
 package typings.awsSdkClientCognitoIdentityBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesCreateIdentityPoolInputMod.CreateIdentityPoolInput]
     }
     
-    inline def DeleteIdentitiesInput(IdentityIdsToDelete: js.Array[String] | Iterable[String]): typings.awsSdkClientCognitoIdentityBrowser.typesDeleteIdentitiesInputMod.DeleteIdentitiesInput = {
+    inline def DeleteIdentitiesInput(IdentityIdsToDelete: js.Array[String] | js.Iterable[String]): typings.awsSdkClientCognitoIdentityBrowser.typesDeleteIdentitiesInputMod.DeleteIdentitiesInput = {
       val __obj = js.Dynamic.literal(IdentityIdsToDelete = IdentityIdsToDelete.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesDeleteIdentitiesInputMod.DeleteIdentitiesInput]
     }
@@ -71,7 +70,10 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesGetIdentityPoolRolesInputMod.GetIdentityPoolRolesInput]
     }
     
-    inline def GetOpenIdTokenForDeveloperIdentityInput(IdentityPoolId: String, Logins: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenForDeveloperIdentityInputMod.GetOpenIdTokenForDeveloperIdentityInput = {
+    inline def GetOpenIdTokenForDeveloperIdentityInput(
+      IdentityPoolId: String,
+      Logins: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])
+    ): typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenForDeveloperIdentityInputMod.GetOpenIdTokenForDeveloperIdentityInput = {
       val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], Logins = Logins.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesGetOpenIdTokenForDeveloperIdentityInputMod.GetOpenIdTokenForDeveloperIdentityInput]
     }
@@ -106,7 +108,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesMergeDeveloperIdentitiesInputMod.MergeDeveloperIdentitiesInput]
     }
     
-    inline def SetIdentityPoolRolesInput(IdentityPoolId: String, Roles: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): typings.awsSdkClientCognitoIdentityBrowser.typesSetIdentityPoolRolesInputMod.SetIdentityPoolRolesInput = {
+    inline def SetIdentityPoolRolesInput(IdentityPoolId: String, Roles: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): typings.awsSdkClientCognitoIdentityBrowser.typesSetIdentityPoolRolesInputMod.SetIdentityPoolRolesInput = {
       val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], Roles = Roles.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesSetIdentityPoolRolesInputMod.SetIdentityPoolRolesInput]
     }
@@ -123,8 +125,8 @@ object inputTypesUnionMod {
     
     inline def UnlinkIdentityInput(
       IdentityId: String,
-      Logins: StringDictionary[String] | (Iterable[js.Tuple2[String, String]]),
-      LoginsToRemove: js.Array[String] | Iterable[String]
+      Logins: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]]),
+      LoginsToRemove: js.Array[String] | js.Iterable[String]
     ): typings.awsSdkClientCognitoIdentityBrowser.typesUnlinkIdentityInputMod.UnlinkIdentityInput = {
       val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any], Logins = Logins.asInstanceOf[js.Any], LoginsToRemove = LoginsToRemove.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCognitoIdentityBrowser.typesUnlinkIdentityInputMod.UnlinkIdentityInput]

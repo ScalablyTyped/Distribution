@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forge-apis", "HubsApi")
 @js.native
-class HubsApi () extends StObject {
+open class HubsApi () extends StObject {
+  def this(apiClient: Any) = this()
   
   /**
     * Returns data on a specific `hub_id`.

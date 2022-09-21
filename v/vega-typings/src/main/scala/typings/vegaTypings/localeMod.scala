@@ -92,7 +92,7 @@ object localeMod {
       
       inline def setGrouping(value: js.Array[Double]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
       
-      inline def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value :_*))
+      inline def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value*))
       
       inline def setMinus(value: String): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
       

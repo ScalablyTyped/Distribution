@@ -10,9 +10,9 @@ Serialization and Validation Framework for objects in RESTful APIs
 | Full name          | swiz |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 2255 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 264.6666666666667 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/racker/node-swiz)

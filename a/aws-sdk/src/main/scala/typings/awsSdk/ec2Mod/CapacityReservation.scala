@@ -22,9 +22,19 @@ trait CapacityReservation extends StObject {
   var AvailableInstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
+    * Information about instance capacity usage.
+    */
+  var CapacityAllocations: js.UndefOr[typings.awsSdk.ec2Mod.CapacityAllocations] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the Capacity Reservation.
     */
   var CapacityReservationArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The ID of the Capacity Reservation Fleet to which the Capacity Reservation belongs. Only valid for Capacity Reservations that were created by a Capacity Reservation Fleet.
+    */
+  var CapacityReservationFleetId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Capacity Reservation.
@@ -34,7 +44,7 @@ trait CapacityReservation extends StObject {
   /**
     * The date and time at which the Capacity Reservation was created.
     */
-  var CreateDate: js.UndefOr[DateTime] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates whether the Capacity Reservation supports EBS-optimized instances. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS- optimized instance.
@@ -44,7 +54,7 @@ trait CapacityReservation extends StObject {
   /**
     * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time.
     */
-  var EndDate: js.UndefOr[DateTime] = js.undefined
+  var EndDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates the way in which the Capacity Reservation ends. A Capacity Reservation can have one of the following end types:    unlimited - The Capacity Reservation remains active until you explicitly cancel it.    limited - The Capacity Reservation expires automatically at a specified date and time.  
@@ -52,7 +62,7 @@ trait CapacityReservation extends StObject {
   var EndDateType: js.UndefOr[typings.awsSdk.ec2Mod.EndDateType] = js.undefined
   
   /**
-    * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+    *  Deprecated. 
     */
   var EphemeralStorage: js.UndefOr[Boolean] = js.undefined
   
@@ -72,12 +82,27 @@ trait CapacityReservation extends StObject {
   var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the Capacity Reservation.
+    * The Amazon Resource Name (ARN) of the Outpost on which the Capacity Reservation was created.
+    */
+  var OutpostArn: js.UndefOr[typings.awsSdk.ec2Mod.OutpostArn] = js.undefined
+  
+  /**
+    * The ID of the Amazon Web Services account that owns the Capacity Reservation.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
-    * The current state of the Capacity Reservation. A Capacity Reservation can be in one of the following states:    active - The Capacity Reservation is active and the capacity is available for your use.    expired - The Capacity Reservation expired automatically at the date and time specified in your request. The reserved capacity is no longer available for your use.    cancelled - The Capacity Reservation was manually cancelled. The reserved capacity is no longer available for your use.    pending - The Capacity Reservation request was successful but the capacity provisioning is still pending.    failed - The Capacity Reservation request has failed. A request might fail due to invalid request parameters, capacity constraints, or instance limit constraints. Failed requests are retained for 60 minutes.  
+    * The Amazon Resource Name (ARN) of the cluster placement group in which the Capacity Reservation was created. For more information, see  Capacity Reservations for cluster placement groups in the Amazon EC2 User Guide.
+    */
+  var PlacementGroupArn: js.UndefOr[typings.awsSdk.ec2Mod.PlacementGroupArn] = js.undefined
+  
+  /**
+    * The date and time at which the Capacity Reservation was started.
+    */
+  var StartDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The current state of the Capacity Reservation. A Capacity Reservation can be in one of the following states:    active - The Capacity Reservation is active and the capacity is available for your use.    expired - The Capacity Reservation expired automatically at the date and time specified in your request. The reserved capacity is no longer available for your use.    cancelled - The Capacity Reservation was cancelled. The reserved capacity is no longer available for your use.    pending - The Capacity Reservation request was successful but the capacity provisioning is still pending.    failed - The Capacity Reservation request has failed. A request might fail due to invalid request parameters, capacity constraints, or instance limit constraints. Failed requests are retained for 60 minutes.  
     */
   var State: js.UndefOr[CapacityReservationState] = js.undefined
   
@@ -87,7 +112,7 @@ trait CapacityReservation extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * Indicates the tenancy of the Capacity Reservation. A Capacity Reservation can have one of the following tenancy settings:    default - The Capacity Reservation is created on hardware that is shared with other AWS accounts.    dedicated - The Capacity Reservation is created on single-tenant hardware that is dedicated to a single AWS account.  
+    * Indicates the tenancy of the Capacity Reservation. A Capacity Reservation can have one of the following tenancy settings:    default - The Capacity Reservation is created on hardware that is shared with other Amazon Web Services accounts.    dedicated - The Capacity Reservation is created on single-tenant hardware that is dedicated to a single Amazon Web Services account.  
     */
   var Tenancy: js.UndefOr[CapacityReservationTenancy] = js.undefined
   
@@ -117,15 +142,25 @@ object CapacityReservation {
     
     inline def setAvailableInstanceCountUndefined: Self = StObject.set(x, "AvailableInstanceCount", js.undefined)
     
+    inline def setCapacityAllocations(value: CapacityAllocations): Self = StObject.set(x, "CapacityAllocations", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityAllocationsUndefined: Self = StObject.set(x, "CapacityAllocations", js.undefined)
+    
+    inline def setCapacityAllocationsVarargs(value: CapacityAllocation*): Self = StObject.set(x, "CapacityAllocations", js.Array(value*))
+    
     inline def setCapacityReservationArn(value: String): Self = StObject.set(x, "CapacityReservationArn", value.asInstanceOf[js.Any])
     
     inline def setCapacityReservationArnUndefined: Self = StObject.set(x, "CapacityReservationArn", js.undefined)
+    
+    inline def setCapacityReservationFleetId(value: String): Self = StObject.set(x, "CapacityReservationFleetId", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityReservationFleetIdUndefined: Self = StObject.set(x, "CapacityReservationFleetId", js.undefined)
     
     inline def setCapacityReservationId(value: String): Self = StObject.set(x, "CapacityReservationId", value.asInstanceOf[js.Any])
     
     inline def setCapacityReservationIdUndefined: Self = StObject.set(x, "CapacityReservationId", js.undefined)
     
-    inline def setCreateDate(value: DateTime): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -133,7 +168,7 @@ object CapacityReservation {
     
     inline def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
     
-    inline def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     inline def setEndDateType(value: EndDateType): Self = StObject.set(x, "EndDateType", value.asInstanceOf[js.Any])
     
@@ -157,9 +192,21 @@ object CapacityReservation {
     
     inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
+    inline def setOutpostArn(value: OutpostArn): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
+    
+    inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
+    
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    
+    inline def setPlacementGroupArn(value: PlacementGroupArn): Self = StObject.set(x, "PlacementGroupArn", value.asInstanceOf[js.Any])
+    
+    inline def setPlacementGroupArnUndefined: Self = StObject.set(x, "PlacementGroupArn", js.undefined)
+    
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    
+    inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     
     inline def setState(value: CapacityReservationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
@@ -169,7 +216,7 @@ object CapacityReservation {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTenancy(value: CapacityReservationTenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     

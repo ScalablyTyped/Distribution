@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<std.Omit<iobroker.iobroker/objects.<global>.ioBroker.InstanceObject, 'common'>> */
 trait PartialInstanceObject
   extends StObject
-     with PartialObject {
+     with AnyPartialObject {
   
   var _id: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait PartialInstanceObject
   
   var from: js.UndefOr[String] = js.undefined
   
-  var native: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var native: js.UndefOr[Record[String, Any]] = js.undefined
   
   var ts: js.UndefOr[Double] = js.undefined
   
@@ -55,7 +55,7 @@ object PartialInstanceObject {
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    inline def setNative(value: Record[String, js.Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Record[String, Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     inline def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
     

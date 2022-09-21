@@ -43,6 +43,6 @@ object GoogleActionsTransactionsV3MerchantPaymentOption {
     
     inline def setMerchantPaymentMethodUndefined: Self = StObject.set(x, "merchantPaymentMethod", js.undefined)
     
-    inline def setMerchantPaymentMethodVarargs(value: GoogleActionsTransactionsV3MerchantPaymentMethod*): Self = StObject.set(x, "merchantPaymentMethod", js.Array(value :_*))
+    inline def setMerchantPaymentMethodVarargs(value: GoogleActionsTransactionsV3MerchantPaymentMethod*): Self = StObject.set(x, "merchantPaymentMethod", js.Array(value*))
   }
 }

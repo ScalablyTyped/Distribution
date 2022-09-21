@@ -71,13 +71,13 @@ object Device {
       
       inline def setIpv4AddressesUndefined: Self = StObject.set(x, "Ipv4Addresses", js.undefined)
       
-      inline def setIpv4AddressesVarargs(value: AddressPair*): Self = StObject.set(x, "Ipv4Addresses", js.Array(value :_*))
+      inline def setIpv4AddressesVarargs(value: AddressPair*): Self = StObject.set(x, "Ipv4Addresses", js.Array(value*))
       
       inline def setIpv6Addresses(value: js.Array[AddressPair]): Self = StObject.set(x, "Ipv6Addresses", value.asInstanceOf[js.Any])
       
       inline def setIpv6AddressesUndefined: Self = StObject.set(x, "Ipv6Addresses", js.undefined)
       
-      inline def setIpv6AddressesVarargs(value: AddressPair*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value :_*))
+      inline def setIpv6AddressesVarargs(value: AddressPair*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value*))
       
       inline def setIsAirplaneMode(value: Boolean): Self = StObject.set(x, "isAirplaneMode", value.asInstanceOf[js.Any])
       

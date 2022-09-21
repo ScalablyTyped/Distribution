@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 开放接口-----收货地址
 trait ChooseAddressOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   @JSName("success")
   var success_ChooseAddressOptions: js.UndefOr[js.Function1[/* res */ CityName, Unit]] = js.undefined

@@ -13,7 +13,7 @@ trait INamespace
   var nested: js.UndefOr[StringDictionary[AnyNestedObject]] = js.undefined
   
   /** Namespace options */
-  var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object INamespace {
   
@@ -28,7 +28,7 @@ object INamespace {
     
     inline def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
     
-    inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }

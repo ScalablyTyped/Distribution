@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio-chat
 
-Typings are for version 4.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 Twilio Chat service client library
@@ -10,10 +10,10 @@ Twilio Chat service client library
 | ------------------ | :-------------: |
 | Full name          | twilio-chat |
 | Keywords           | - |
-| # releases         | 62 |
-| # dependents       | 19 |
-| # downloads        | 2730392 |
-| # stars            | 0 |
+| # releases         | 73 |
+| # dependents       | 0.0 |
+| # downloads        | 276912.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/twilio-chat)

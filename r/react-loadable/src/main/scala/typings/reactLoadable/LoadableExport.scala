@@ -82,7 +82,7 @@ object LoadableExport {
       
       inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
+      inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value*))
       
       inline def setTimeout(value: Double | `false`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -103,7 +103,7 @@ object LoadableExport {
     
     var Capture: ComponentType[LoadableCaptureProps] = js.native
     
-    def Map[Props, Exports /* <: StringDictionary[js.Any] */](options: OptionsWithMap[Props, Exports]): ComponentType[Props] & LoadableComponent = js.native
+    def Map[Props, Exports /* <: StringDictionary[Any] */](options: OptionsWithMap[Props, Exports]): ComponentType[Props] & LoadableComponent = js.native
     
     /**
       * This will call all of the LoadableComponent.preload methods recursively until they are all
@@ -182,7 +182,7 @@ object LoadableExport {
   
   trait LoadingComponentProps extends StObject {
     
-    var error: js.Any
+    var error: Any
     
     var isLoading: Boolean
     
@@ -194,14 +194,14 @@ object LoadableExport {
   }
   object LoadingComponentProps {
     
-    inline def apply(error: js.Any, isLoading: Boolean, pastDelay: Boolean, retry: () => Unit, timedOut: Boolean): LoadingComponentProps = {
+    inline def apply(error: Any, isLoading: Boolean, pastDelay: Boolean, retry: () => Unit, timedOut: Boolean): LoadingComponentProps = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], pastDelay = pastDelay.asInstanceOf[js.Any], retry = js.Any.fromFunction0(retry), timedOut = timedOut.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadingComponentProps]
     }
     
     extension [Self <: LoadingComponentProps](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
@@ -238,7 +238,7 @@ object LoadableExport {
     }
   }
   
-  trait OptionsWithMap[Props, Exports /* <: StringDictionary[js.Any] */]
+  trait OptionsWithMap[Props, Exports /* <: StringDictionary[Any] */]
     extends StObject
        with CommonOptions {
     
@@ -268,7 +268,7 @@ object LoadableExport {
   }
   object OptionsWithMap {
     
-    inline def apply[Props, Exports /* <: StringDictionary[js.Any] */](
+    inline def apply[Props, Exports /* <: StringDictionary[Any] */](
       loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
       */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap & TopLevel[Exports],
@@ -279,7 +279,7 @@ object LoadableExport {
       __obj.asInstanceOf[OptionsWithMap[Props, Exports]]
     }
     
-    extension [Self <: OptionsWithMap[?, ?], Props, Exports /* <: StringDictionary[js.Any] */](x: Self & (OptionsWithMap[Props, Exports])) {
+    extension [Self <: OptionsWithMap[?, ?], Props, Exports /* <: StringDictionary[Any] */](x: Self & (OptionsWithMap[Props, Exports])) {
       
       inline def setLoader(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -340,7 +340,7 @@ object LoadableExport {
   trait OptionsWithoutRender[Props]
     extends StObject
        with CommonOptions
-       with Options[Props, js.Any] {
+       with Options[Props, Any] {
     
     /**
       * Function returning a promise which returns a React component displayed on success.

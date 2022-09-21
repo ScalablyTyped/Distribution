@@ -14,7 +14,7 @@ object imageMapGuideMod {
   
   @JSImport("ol/source/ImageMapGuide", JSImport.Default)
   @js.native
-  class default protected () extends ImageMapGuide {
+  open class default protected () extends ImageMapGuide {
     def this(options: Options) = this()
   }
   
@@ -31,7 +31,7 @@ object imageMapGuideMod {
       * Get the user-provided params, i.e. those passed to the constructor through
       * the "params" option, and possibly updated using the updateParams method.
       */
-    def getParams(): js.Any = js.native
+    def getParams(): Any = js.native
     
     def getUrl(
       baseUrl: String,
@@ -49,12 +49,12 @@ object imageMapGuideMod {
     /**
       * Update the user-provided params.
       */
-    def updateParams(params: js.Any): Unit = js.native
+    def updateParams(params: Any): Unit = js.native
   }
   
   trait Options extends StObject {
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var displayDpi: js.UndefOr[Double] = js.undefined
     
@@ -66,7 +66,7 @@ object imageMapGuideMod {
     
     var metersPerUnit: js.UndefOr[Double] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     var projection: js.UndefOr[ProjectionLike] = js.undefined
     
@@ -88,6 +88,8 @@ object imageMapGuideMod {
     extension [Self <: Options](x: Self) {
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -111,7 +113,7 @@ object imageMapGuideMod {
       
       inline def setMetersPerUnitUndefined: Self = StObject.set(x, "metersPerUnit", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -127,7 +129,7 @@ object imageMapGuideMod {
       
       inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
       
-      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

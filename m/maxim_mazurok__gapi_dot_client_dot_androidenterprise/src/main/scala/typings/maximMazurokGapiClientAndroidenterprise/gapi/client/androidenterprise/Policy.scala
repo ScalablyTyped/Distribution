@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Policy extends StObject {
   
   /**
-    * The auto-update policy for apps installed on the device. "choiceToTheUser" allows the device's user to configure the app update policy. "always" enables auto updates. "never"
-    * disables auto updates. "wifiOnly" enables auto updates only when the device is connected to wifi.
+    * Deprecated. Use autoUpdateMode instead. When autoUpdateMode is set to AUTO_UPDATE_POSTPONED or AUTO_UPDATE_HIGH_PRIORITY, this field has no effect. "choiceToTheUser" allows the
+    * device's user to configure the app update policy. "always" enables auto updates. "never" disables auto updates. "wifiOnly" enables auto updates only when the device is connected to
+    * wifi.
     */
   var autoUpdatePolicy: js.UndefOr[String] = js.undefined
   
@@ -57,6 +58,6 @@ object Policy {
     
     inline def setProductPolicyUndefined: Self = StObject.set(x, "productPolicy", js.undefined)
     
-    inline def setProductPolicyVarargs(value: ProductPolicy*): Self = StObject.set(x, "productPolicy", js.Array(value :_*))
+    inline def setProductPolicyVarargs(value: ProductPolicy*): Self = StObject.set(x, "productPolicy", js.Array(value*))
   }
 }

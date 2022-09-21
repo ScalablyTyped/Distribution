@@ -1,6 +1,5 @@
 package typings.highcharts.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,8 +108,8 @@ trait ExportingOptions extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) Path where Highcharts will look
     * for export module dependencies to load on demand if they don't already
     * exist on `window`. Should currently point to location of CanVG library,
-    * RGBColor.js, jsPDF and svg2pdf.js, required for client side export in
-    * certain browsers.
+    * jsPDF and svg2pdf.js, required for client side export in certain
+    * browsers.
     */
   var libURL: js.UndefOr[String] = js.undefined
   
@@ -131,6 +130,21 @@ trait ExportingOptions extends StObject {
     * is not a separate button).
     */
   var menuItemDefinitions: js.UndefOr[Dictionary[ExportingMenuObject]] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Settings for a custom font for
+    * the exported PDF, when using the `offline-exporting` module. This is used
+    * for languages containing non-ASCII characters, like Chinese, Russian,
+    * Japanese etc.
+    *
+    * As described in the jsPDF docs, the 14 standard fonts in PDF are limited
+    * to the ASCII-codepage. Therefore, in order to support other text in the
+    * exported PDF, one or more TTF font files have to be passed on to the
+    * exporting module.
+    *
+    * See more in the docs.
+    */
+  var pdfFont: js.UndefOr[ExportingPdfFontOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When printing the chart from the
@@ -244,7 +258,7 @@ object ExportingOptions {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setError(value: (/* options */ ExportingOptions, /* err */ Error) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+    inline def setError(value: (/* options */ ExportingOptions, /* err */ js.Error) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
@@ -267,6 +281,10 @@ object ExportingOptions {
     inline def setMenuItemDefinitions(value: Dictionary[ExportingMenuObject]): Self = StObject.set(x, "menuItemDefinitions", value.asInstanceOf[js.Any])
     
     inline def setMenuItemDefinitionsUndefined: Self = StObject.set(x, "menuItemDefinitions", js.undefined)
+    
+    inline def setPdfFont(value: ExportingPdfFontOptions): Self = StObject.set(x, "pdfFont", value.asInstanceOf[js.Any])
+    
+    inline def setPdfFontUndefined: Self = StObject.set(x, "pdfFont", js.undefined)
     
     inline def setPrintMaxWidth(value: Double): Self = StObject.set(x, "printMaxWidth", value.asInstanceOf[js.Any])
     

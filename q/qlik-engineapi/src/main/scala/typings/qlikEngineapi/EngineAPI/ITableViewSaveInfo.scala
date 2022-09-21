@@ -48,15 +48,15 @@ object ITableViewSaveInfo {
     
     inline def setQBroomPoints(value: js.Array[ITableViewBroomPointSaveInfo]): Self = StObject.set(x, "qBroomPoints", value.asInstanceOf[js.Any])
     
-    inline def setQBroomPointsVarargs(value: ITableViewBroomPointSaveInfo*): Self = StObject.set(x, "qBroomPoints", js.Array(value :_*))
+    inline def setQBroomPointsVarargs(value: ITableViewBroomPointSaveInfo*): Self = StObject.set(x, "qBroomPoints", js.Array(value*))
     
     inline def setQConnectionPoints(value: js.Array[ITableViewConnectionPointSaveInfo]): Self = StObject.set(x, "qConnectionPoints", value.asInstanceOf[js.Any])
     
-    inline def setQConnectionPointsVarargs(value: ITableViewConnectionPointSaveInfo*): Self = StObject.set(x, "qConnectionPoints", js.Array(value :_*))
+    inline def setQConnectionPointsVarargs(value: ITableViewConnectionPointSaveInfo*): Self = StObject.set(x, "qConnectionPoints", js.Array(value*))
     
     inline def setQTables(value: js.Array[ITableViewTableWinSaveInfo]): Self = StObject.set(x, "qTables", value.asInstanceOf[js.Any])
     
-    inline def setQTablesVarargs(value: ITableViewTableWinSaveInfo*): Self = StObject.set(x, "qTables", js.Array(value :_*))
+    inline def setQTablesVarargs(value: ITableViewTableWinSaveInfo*): Self = StObject.set(x, "qTables", js.Array(value*))
     
     inline def setQZoomFactor(value: Double): Self = StObject.set(x, "qZoomFactor", value.asInstanceOf[js.Any])
   }

@@ -10,10 +10,10 @@ Turbolinks makes navigating your web application faster
 | ------------------ | :-------------: |
 | Full name          | turbolinks |
 | Keywords           | turbolinks, browser, pushstate |
-| # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 8019075 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 954373.3333333334 |
+| # stars            | 12747.0 |
 
 ## Links
 - [Homepage](https://github.com/turbolinks/turbolinks#readme)

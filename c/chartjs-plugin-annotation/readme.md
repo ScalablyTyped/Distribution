@@ -10,13 +10,13 @@ Annotations for Chart.js
 | ------------------ | :-------------: |
 | Full name          | chartjs-plugin-annotation |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 2317228 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 561484.3333333334 |
+| # stars            | 492.0 |
 
 ## Links
-- [Homepage](https://github.com/chartjs/chartjs-plugin-annotation#readme)
+- [Homepage](https://www.chartjs.org/chartjs-plugin-annotation/index)
 - [Bugs](https://github.com/chartjs/chartjs-plugin-annotation/issues)
 - [Repository](https://github.com/chartjs/chartjs-plugin-annotation)
 - [Npm](https://www.npmjs.com/package/chartjs-plugin-annotation)

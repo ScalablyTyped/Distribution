@@ -10,10 +10,10 @@ object callEndMod {
   
   @JSImport("material-ui/svg-icons/communication/call-end", JSImport.Default)
   @js.native
-  class default () extends CommunicationCallEnd
+  open class default () extends CommunicationCallEnd
   
   @JSImport("material-ui/svg-icons/communication/call-end", "CommunicationCallEnd")
   @js.native
-  class CommunicationCallEnd ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationCallEnd ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

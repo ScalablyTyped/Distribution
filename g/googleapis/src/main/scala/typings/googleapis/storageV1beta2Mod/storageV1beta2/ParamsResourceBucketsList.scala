@@ -1,9 +1,5 @@
 package typings.googleapis.storageV1beta2Mod.storageV1beta2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,18 +9,12 @@ trait ParamsResourceBucketsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Maximum number of buckets to return.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * A previously-returned page token representing part of the larger set of
-    * results to view.
+    * A previously-returned page token representing part of the larger set of results to view.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -46,10 +36,6 @@ object ParamsResourceBucketsList {
   }
   
   extension [Self <: ParamsResourceBucketsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

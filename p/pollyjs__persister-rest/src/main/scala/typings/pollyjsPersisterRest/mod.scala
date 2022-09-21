@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@pollyjs/persister-rest", JSImport.Namespace)
   @js.native
-  class ^ () extends default
+  open class ^ () extends default
   
   type RESTPersister = default
 }

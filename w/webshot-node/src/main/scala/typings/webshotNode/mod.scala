@@ -1,8 +1,7 @@
 package typings.webshotNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadableStream
-import typings.std.Error
+import typings.std.ReadableStream
 import typings.webshotNode.anon.Bottom
 import typings.webshotNode.anon.Height
 import typings.webshotNode.anon.Width
@@ -18,14 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(src: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
-  inline def apply(src: String, cb: js.Function1[/* e */ Error | Null, Unit]): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(src: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+  inline def apply(src: String, cb: js.Function1[/* e */ js.Error | Null, Unit]): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
   inline def apply(src: String, dst: String): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(src: String, dst: String, cb: js.Function1[/* e */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(src: String, dst: String, cb: js.Function1[/* e */ js.Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(src: String, dst: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(src: String, dst: String, options: Options, cb: js.Function1[/* e */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(src: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
-  inline def apply(src: String, options: Options, cb: js.Function1[/* e */ Error | Null, Unit]): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(src: String, dst: String, options: Options, cb: js.Function1[/* e */ js.Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(src: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def apply(src: String, options: Options, cb: js.Function1[/* e */ js.Error | Null, Unit]): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
   
   @JSImport("webshot-node", JSImport.Namespace)
   @js.native
@@ -35,11 +34,11 @@ object mod {
     
     var captureSelector: js.UndefOr[Boolean] = js.undefined
     
-    var cookies: js.UndefOr[js.Array[StringDictionary[js.Any]] | Null] = js.undefined
+    var cookies: js.UndefOr[js.Array[StringDictionary[Any]] | Null] = js.undefined
     
     var customCSS: js.UndefOr[String] = js.undefined
     
-    var customHeaders: js.UndefOr[js.Array[StringDictionary[js.Any]] | Null] = js.undefined
+    var customHeaders: js.UndefOr[js.Array[StringDictionary[Any]] | Null] = js.undefined
     
     var defaultWhiteBackground: js.UndefOr[Boolean] = js.undefined
     
@@ -47,7 +46,7 @@ object mod {
     
     var errorIfStatusIsNot200: js.UndefOr[Boolean] = js.undefined
     
-    var phantomConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var phantomConfig: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var phantomPath: js.UndefOr[String] = js.undefined
     
@@ -84,25 +83,25 @@ object mod {
       
       inline def setCaptureSelectorUndefined: Self = StObject.set(x, "captureSelector", js.undefined)
       
-      inline def setCookies(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: js.Array[StringDictionary[Any]]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
       inline def setCookiesNull: Self = StObject.set(x, "cookies", null)
       
       inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      inline def setCookiesVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+      inline def setCookiesVarargs(value: StringDictionary[Any]*): Self = StObject.set(x, "cookies", js.Array(value*))
       
       inline def setCustomCSS(value: String): Self = StObject.set(x, "customCSS", value.asInstanceOf[js.Any])
       
       inline def setCustomCSSUndefined: Self = StObject.set(x, "customCSS", js.undefined)
       
-      inline def setCustomHeaders(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+      inline def setCustomHeaders(value: js.Array[StringDictionary[Any]]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
       inline def setCustomHeadersNull: Self = StObject.set(x, "customHeaders", null)
       
       inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
       
-      inline def setCustomHeadersVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "customHeaders", js.Array(value :_*))
+      inline def setCustomHeadersVarargs(value: StringDictionary[Any]*): Self = StObject.set(x, "customHeaders", js.Array(value*))
       
       inline def setDefaultWhiteBackground(value: Boolean): Self = StObject.set(x, "defaultWhiteBackground", value.asInstanceOf[js.Any])
       
@@ -116,7 +115,7 @@ object mod {
       
       inline def setErrorIfStatusIsNot200Undefined: Self = StObject.set(x, "errorIfStatusIsNot200", js.undefined)
       
-      inline def setPhantomConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "phantomConfig", value.asInstanceOf[js.Any])
+      inline def setPhantomConfig(value: StringDictionary[Any]): Self = StObject.set(x, "phantomConfig", value.asInstanceOf[js.Any])
       
       inline def setPhantomConfigUndefined: Self = StObject.set(x, "phantomConfig", js.undefined)
       

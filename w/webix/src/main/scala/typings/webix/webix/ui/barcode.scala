@@ -10,7 +10,7 @@ trait barcode
      with baseview {
   
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("config")
   var config_barcode: barcodeConfig = js.native
@@ -21,5 +21,5 @@ trait barcode
   
   def setValue(value: String): Unit = js.native
   
-  var types: js.Array[js.Any] = js.native
+  var types: js.Array[Any] = js.native
 }

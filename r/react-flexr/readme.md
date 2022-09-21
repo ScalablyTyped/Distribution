@@ -10,15 +10,12 @@ React flexbox grid made simple.
 | ------------------ | :-------------: |
 | Full name          | react-flexr |
 | Keywords           | react, grid, flex, flexbox, react-component |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 3395 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 239.33333333333334 |
+| # stars            | 90.0 |
 
 ## Links
-- [Homepage](https://github.com/kodyl/react-flexr#readme)
-- [Bugs](https://github.com/kodyl/react-flexr/issues)
-- [Repository](https://github.com/kodyl/react-flexr)
 - [Npm](https://www.npmjs.com/package/react-flexr)
     
 

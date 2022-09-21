@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.InterestFilter")
 @js.native
-class InterestFilter protected ()
+open class InterestFilter protected ()
   extends typings.ndnJs.mod.InterestFilter {
   def this(filter: typings.ndnJs.faceMod.InterestFilter) = this()
   def this(prefix: String) = this()

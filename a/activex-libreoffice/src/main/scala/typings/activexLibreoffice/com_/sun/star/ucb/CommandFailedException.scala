@@ -19,17 +19,17 @@ trait CommandFailedException
      with Exception {
   
   /** contains the exception that was passed to the {@link com.sun.star.task.XInteractionHandler} . */
-  var Reason: js.Any
+  var Reason: Any
 }
 object CommandFailedException {
   
-  inline def apply(Context: XInterface, Message: String, Reason: js.Any): CommandFailedException = {
+  inline def apply(Context: XInterface, Message: String, Reason: Any): CommandFailedException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandFailedException]
   }
   
   extension [Self <: CommandFailedException](x: Self) {
     
-    inline def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-jsonrpc/lib/messages", "ResponseError")
+@JSImport("vscode-jsonrpc/lib/common/messages", "ResponseError")
 @js.native
-class ResponseError[D] protected ()
+open class ResponseError[D] protected ()
   extends StObject
      with Error {
   def this(code: Double, message: String) = this()
@@ -17,9 +17,11 @@ class ResponseError[D] protected ()
   
   val data: js.UndefOr[D] = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   

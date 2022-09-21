@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("devextreme", "default.DevicesObject")
 @js.native
-class DevicesObject protected ()
+open class DevicesObject ()
   extends StObject
      with typings.devextreme.mod.DevExpress.DevicesObject {
   def this(options: Window) = this()

@@ -1,11 +1,22 @@
 package typings.materialBase
 
 import typings.materialBase.typesMod.EventType
+import typings.materialBase.typesMod.WindowEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialBaseStrings {
+  
+  @js.native
+  sealed trait DOMContentLoaded
+    extends StObject
+       with WindowEventType
+  inline def DOMContentLoaded: DOMContentLoaded = "DOMContentLoaded".asInstanceOf[DOMContentLoaded]
+  
+  @js.native
+  sealed trait ObserverRecord extends StObject
+  inline def ObserverRecord: ObserverRecord = "ObserverRecord".asInstanceOf[ObserverRecord]
   
   @js.native
   sealed trait abort
@@ -44,16 +55,16 @@ object materialBaseStrings {
   inline def auxclick: auxclick = "auxclick".asInstanceOf[auxclick]
   
   @js.native
+  sealed trait beforeinput
+    extends StObject
+       with EventType
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
+  
+  @js.native
   sealed trait blur
     extends StObject
        with EventType
   inline def blur: blur = "blur".asInstanceOf[blur]
-  
-  @js.native
-  sealed trait cancel
-    extends StObject
-       with EventType
-  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
   sealed trait canplay
@@ -86,6 +97,24 @@ object materialBaseStrings {
   inline def close: close = "close".asInstanceOf[close]
   
   @js.native
+  sealed trait compositionend
+    extends StObject
+       with EventType
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
+  
+  @js.native
+  sealed trait compositionstart
+    extends StObject
+       with EventType
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
+  
+  @js.native
+  sealed trait compositionupdate
+    extends StObject
+       with EventType
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
+  
+  @js.native
   sealed trait contextmenu
     extends StObject
        with EventType
@@ -104,6 +133,18 @@ object materialBaseStrings {
   inline def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   
   @js.native
+  sealed trait devicemotion
+    extends StObject
+       with WindowEventType
+  inline def devicemotion: devicemotion = "devicemotion".asInstanceOf[devicemotion]
+  
+  @js.native
+  sealed trait deviceorientation
+    extends StObject
+       with WindowEventType
+  inline def deviceorientation: deviceorientation = "deviceorientation".asInstanceOf[deviceorientation]
+  
+  @js.native
   sealed trait drag
     extends StObject
        with EventType
@@ -120,12 +161,6 @@ object materialBaseStrings {
     extends StObject
        with EventType
   inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
-  
-  @js.native
-  sealed trait dragexit
-    extends StObject
-       with EventType
-  inline def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
   
   @js.native
   sealed trait dragleave
@@ -192,6 +227,24 @@ object materialBaseStrings {
     extends StObject
        with EventType
   inline def focusout: focusout = "focusout".asInstanceOf[focusout]
+  
+  @js.native
+  sealed trait formdata
+    extends StObject
+       with EventType
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
+  
+  @js.native
+  sealed trait gamepadconnected
+    extends StObject
+       with WindowEventType
+  inline def gamepadconnected: gamepadconnected = "gamepadconnected".asInstanceOf[gamepadconnected]
+  
+  @js.native
+  sealed trait gamepaddisconnected
+    extends StObject
+       with WindowEventType
+  inline def gamepaddisconnected: gamepaddisconnected = "gamepaddisconnected".asInstanceOf[gamepaddisconnected]
   
   @js.native
   sealed trait gotpointercapture
@@ -300,6 +353,12 @@ object materialBaseStrings {
     extends StObject
        with EventType
   inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  
+  @js.native
+  sealed trait orientationchange
+    extends StObject
+       with WindowEventType
+  inline def orientationchange: orientationchange = "orientationchange".asInstanceOf[orientationchange]
   
   @js.native
   sealed trait pause
@@ -434,6 +493,12 @@ object materialBaseStrings {
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
+  sealed trait slotchange
+    extends StObject
+       with EventType
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
+  
+  @js.native
   sealed trait stalled
     extends StObject
        with EventType
@@ -522,6 +587,30 @@ object materialBaseStrings {
     extends StObject
        with EventType
   inline def waiting: waiting = "waiting".asInstanceOf[waiting]
+  
+  @js.native
+  sealed trait webkitanimationend
+    extends StObject
+       with EventType
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
+  
+  @js.native
+  sealed trait webkitanimationiteration
+    extends StObject
+       with EventType
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
+  
+  @js.native
+  sealed trait webkitanimationstart
+    extends StObject
+       with EventType
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
+  
+  @js.native
+  sealed trait webkittransitionend
+    extends StObject
+       with EventType
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
   
   @js.native
   sealed trait wheel

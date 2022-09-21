@@ -1,6 +1,8 @@
 package typings.antvComponent
 
 import typings.antvComponent.anon.PartialSliderCfg
+import typings.antvComponent.anon.Width
+import typings.antvComponent.handlerMod.IStyle
 import typings.antvComponent.interfacesMod.ISlider
 import typings.antvComponent.typesMod.GroupComponentCfg
 import typings.antvEventEmitter.mod.EventType
@@ -14,11 +16,11 @@ object sliderSliderMod {
   
   @JSImport("@antv/component/lib/slider/slider", JSImport.Default)
   @js.native
-  class default () extends Slider
+  open class default () extends Slider
   
   @JSImport("@antv/component/lib/slider/slider", "Slider")
   @js.native
-  class Slider ()
+  open class Slider ()
     extends typings.antvComponent.groupComponentMod.default[SliderCfg]
        with ISlider {
     
@@ -27,32 +29,32 @@ object sliderSliderMod {
       * 根据位置，调整返回新的位置
       * @param range
       */
-    /* private */ var _dodgeText: js.Any = js.native
+    /* private */ var _dodgeText: Any = js.native
     
     /**
       * 调整 offsetRange，因为一些范围的限制
       * @param offsetRange
       */
-    /* private */ var adjustOffsetRange: js.Any = js.native
+    /* private */ var adjustOffsetRange: Any = js.native
     
-    /* private */ var bindEvents: js.Any = js.native
+    /* private */ var bindEvents: Any = js.native
     
     @JSName("cfg")
     var cfg_Slider: SliderCfg = js.native
     
-    /* private */ var currentTarget: js.Any = js.native
+    /* private */ var currentTarget: Any = js.native
     
     def draw(): Unit = js.native
     
-    /* private */ var getContainerDOM: js.Any = js.native
+    /* private */ var getContainerDOM: Any = js.native
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) & Any = js.native
     
-    /* private */ var maxHandler: js.Any = js.native
+    /* private */ var maxHandler: Any = js.native
     
-    /* private */ var minHandler: js.Any = js.native
+    /* private */ var minHandler: Any = js.native
     
     /**
       * 取消监听一个事件，或者一个channel
@@ -61,13 +63,13 @@ object sliderSliderMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): this.type & js.Any = js.native
+    override def off(): this.type & Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String): this.type & js.Any = js.native
+    override def off(evt: String): this.type & Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String, callback: js.Function): this.type & js.Any = js.native
+    override def off(evt: String, callback: js.Function): this.type & Any = js.native
     
     /**
       * 监听一个事件
@@ -77,38 +79,43 @@ object sliderSliderMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
+    override def on(evt: String, callback: js.Function): this.type & Any = js.native
     
-    /* private */ var onMouseDown: js.Any = js.native
+    /* private */ var onMouseDown: Any = js.native
     
-    /* private */ var onMouseMove: js.Any = js.native
+    /* private */ var onMouseMove: Any = js.native
     
-    /* private */ var onMouseUp: js.Any = js.native
+    /* private */ var onMouseUp: Any = js.native
     
-    /* private */ var prevX: js.Any = js.native
+    /* private */ var prevX: Any = js.native
     
-    /* private */ var prevY: js.Any = js.native
+    /* private */ var prevY: Any = js.native
     
-    /* private */ var trend: js.Any = js.native
+    /* private */ var trend: Any = js.native
     
     def update(cfg: PartialSliderCfg): Unit = js.native
     
-    /* private */ var updateStartEnd: js.Any = js.native
+    /* private */ var updateStartEnd: Any = js.native
     
-    /* private */ var updateUI: js.Any = js.native
+    /* private */ var updateUI: Any = js.native
   }
+  
+  /**
+    * slider handler style 设置
+    */
+  type HandlerStyle = js.UndefOr[IStyle] & Width
   
   trait SliderCfg
     extends StObject
        with GroupComponentCfg {
     
-    val backgroundStyle: js.UndefOr[js.Any] = js.undefined
+    val backgroundStyle: js.UndefOr[Any] = js.undefined
     
     val end: js.UndefOr[Double] = js.undefined
     
-    val foregroundStyle: js.UndefOr[js.Any] = js.undefined
+    val foregroundStyle: js.UndefOr[Any] = js.undefined
     
-    val handlerStyle: js.UndefOr[js.Any] = js.undefined
+    val handlerStyle: js.UndefOr[HandlerStyle] = js.undefined
     
     val height: Double
     
@@ -122,7 +129,7 @@ object sliderSliderMod {
     
     val start: js.UndefOr[Double] = js.undefined
     
-    val textStyle: js.UndefOr[js.Any] = js.undefined
+    val textStyle: js.UndefOr[Any] = js.undefined
     
     val trendCfg: js.UndefOr[TrendCfg] = js.undefined
     
@@ -141,7 +148,7 @@ object sliderSliderMod {
     
     extension [Self <: SliderCfg](x: Self) {
       
-      inline def setBackgroundStyle(value: js.Any): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
+      inline def setBackgroundStyle(value: Any): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
       
       inline def setBackgroundStyleUndefined: Self = StObject.set(x, "backgroundStyle", js.undefined)
       
@@ -149,11 +156,11 @@ object sliderSliderMod {
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      inline def setForegroundStyle(value: js.Any): Self = StObject.set(x, "foregroundStyle", value.asInstanceOf[js.Any])
+      inline def setForegroundStyle(value: Any): Self = StObject.set(x, "foregroundStyle", value.asInstanceOf[js.Any])
       
       inline def setForegroundStyleUndefined: Self = StObject.set(x, "foregroundStyle", js.undefined)
       
-      inline def setHandlerStyle(value: js.Any): Self = StObject.set(x, "handlerStyle", value.asInstanceOf[js.Any])
+      inline def setHandlerStyle(value: HandlerStyle): Self = StObject.set(x, "handlerStyle", value.asInstanceOf[js.Any])
       
       inline def setHandlerStyleUndefined: Self = StObject.set(x, "handlerStyle", js.undefined)
       
@@ -179,7 +186,7 @@ object sliderSliderMod {
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      inline def setTextStyle(value: js.Any): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: Any): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
       inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
@@ -228,7 +235,7 @@ object sliderSliderMod {
       
       inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setIsArea(value: Boolean): Self = StObject.set(x, "isArea", value.asInstanceOf[js.Any])
       

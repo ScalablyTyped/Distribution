@@ -10,8 +10,8 @@ object eventBinderMod {
   @js.native
   abstract class EventBinder () extends StObject {
     
-    def off(args: js.Any*): Unit = js.native
+    def off(args: Any*): Unit = js.native
     
-    def on(args: js.Any*): Unit = js.native
+    def on(args: Any*): Unit = js.native
   }
 }

@@ -32,15 +32,17 @@ trait PostProcessRenderPipeline extends StObject {
   
   /* protected */ def _enableMSAAOnFirstPostProcess(sampleCount: Double): Boolean = js.native
   
+  /* private */ var _engine: Any = js.native
+  
   /** @hidden */
   var _name: String = js.native
   
   /** @hidden */
   def _rebuild(): Unit = js.native
   
-  /* private */ var _renderEffects: js.Any = js.native
+  /* private */ var _renderEffects: Any = js.native
   
-  /* private */ var _renderEffectsForIsolatedPass: js.Any = js.native
+  /* private */ var _renderEffectsForIsolatedPass: Any = js.native
   
   /** @hidden */
   def _reset(): Unit = js.native
@@ -61,8 +63,6 @@ trait PostProcessRenderPipeline extends StObject {
     * Disposes of the pipeline
     */
   def dispose(): Unit = js.native
-  
-  /* private */ var engine: js.Any = js.native
   
   /**
     * Gets the class name

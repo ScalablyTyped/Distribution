@@ -1,7 +1,7 @@
 
 # Scala.js typings for gaussian
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 A JavaScript model of a Gaussian distribution
@@ -10,10 +10,10 @@ A JavaScript model of a Gaussian distribution
 | ------------------ | :-------------: |
 | Full name          | gaussian |
 | Keywords           | gaussian, normal, distribution |
-| # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 346701 |
-| # stars            | 5 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 90688.33333333333 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/errcw/gaussian)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-java-home
 
-Typings are for version 1.1.0
+Typings are for version 1.2.2
 
 ## Library description:
 Find JAVA_HOME on any system
@@ -10,10 +10,10 @@ Find JAVA_HOME on any system
 | ------------------ | :-------------: |
 | Full name          | find-java-home |
 | Keywords           | JAVA_HOME, find, java, home |
-| # releases         | 5 |
-| # dependents       | 40 |
-| # downloads        | 1847615 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 197747.33333333334 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdevel/node-find-java-home)

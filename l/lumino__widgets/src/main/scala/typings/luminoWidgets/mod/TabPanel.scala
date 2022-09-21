@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the tab panel.
   */
-class TabPanel ()
+open class TabPanel ()
   extends typings.luminoWidgets.tabpanelMod.TabPanel {
   def this(options: IOptions) = this()
 }

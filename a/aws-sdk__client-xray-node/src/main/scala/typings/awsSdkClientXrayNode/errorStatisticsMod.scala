@@ -8,5 +8,5 @@ object errorStatisticsMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_ErrorStatistics", "_ErrorStatistics")
   @js.native
-  val ErrorStatistics: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ErrorStatistics: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

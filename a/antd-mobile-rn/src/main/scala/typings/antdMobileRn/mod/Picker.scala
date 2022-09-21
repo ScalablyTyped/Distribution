@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Picker")
 @js.native
-class Picker () extends default
+open class Picker () extends default
 /* static members */
 object Picker {
   

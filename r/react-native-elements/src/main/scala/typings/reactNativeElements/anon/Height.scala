@@ -1,19 +1,20 @@
 package typings.reactNativeElements.anon
 
+import typings.reactNativeElements.reactNativeElementsStrings.center
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Height extends StObject {
   
-  var height: js.UndefOr[Double] = js.undefined
+  var height: Double
   
-  var width: js.UndefOr[Double] = js.undefined
+  var justifyContent: center
 }
 object Height {
   
-  inline def apply(): Height = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(height: Double): Height = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], justifyContent = "center")
     __obj.asInstanceOf[Height]
   }
   
@@ -21,10 +22,6 @@ object Height {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-    
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setJustifyContent(value: center): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
   }
 }

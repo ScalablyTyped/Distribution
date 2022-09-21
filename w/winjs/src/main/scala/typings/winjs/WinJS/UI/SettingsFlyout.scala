@@ -36,7 +36,7 @@ trait SettingsFlyout extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this SettingsFlyout. Call this method when the SettingsFlyout is no longer needed. After calling this method, the SettingsFlyout becomes unusable.

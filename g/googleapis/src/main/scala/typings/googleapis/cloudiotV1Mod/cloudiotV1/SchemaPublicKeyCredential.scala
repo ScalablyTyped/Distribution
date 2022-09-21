@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A public key format and data.
-  */
 trait SchemaPublicKeyCredential extends StObject {
   
   /**
     * The format of the key.
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The key data.
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPublicKeyCredential {
   
@@ -30,9 +27,13 @@ object SchemaPublicKeyCredential {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
+    
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }

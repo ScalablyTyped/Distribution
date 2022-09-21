@@ -25,7 +25,7 @@ object CandlestickChartSpec {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: CandlestickData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: CandlestickData*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDomain(value: CandlestickDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

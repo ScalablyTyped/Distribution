@@ -12,7 +12,7 @@ trait Circle extends StObject {
   
   def getCenter(): LngLat
   
-  def getExtData(): js.Any
+  def getExtData(): Any
   
   def getOptions(): CircleOptions
   
@@ -22,7 +22,7 @@ trait Circle extends StObject {
   
   def setCenter(lnglat: LngLat): Unit
   
-  def setExtData(ext: js.Any): Unit
+  def setExtData(ext: Any): Unit
   
   def setMap(map: Map): Unit
   
@@ -38,12 +38,12 @@ object Circle {
     contains: LngLat => Boolean,
     getBounds: () => Bounds,
     getCenter: () => LngLat,
-    getExtData: () => js.Any,
+    getExtData: () => Any,
     getOptions: () => CircleOptions,
     getRadius: () => Double,
     hide: () => Unit,
     setCenter: LngLat => Unit,
-    setExtData: js.Any => Unit,
+    setExtData: Any => Unit,
     setMap: Map => Unit,
     setOptions: CircleOptions => Unit,
     setRadius: Double => Unit,
@@ -61,7 +61,7 @@ object Circle {
     
     inline def setGetCenter(value: () => LngLat): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
-    inline def setGetExtData(value: () => js.Any): Self = StObject.set(x, "getExtData", js.Any.fromFunction0(value))
+    inline def setGetExtData(value: () => Any): Self = StObject.set(x, "getExtData", js.Any.fromFunction0(value))
     
     inline def setGetOptions(value: () => CircleOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
@@ -71,7 +71,7 @@ object Circle {
     
     inline def setSetCenter(value: LngLat => Unit): Self = StObject.set(x, "setCenter", js.Any.fromFunction1(value))
     
-    inline def setSetExtData(value: js.Any => Unit): Self = StObject.set(x, "setExtData", js.Any.fromFunction1(value))
+    inline def setSetExtData(value: Any => Unit): Self = StObject.set(x, "setExtData", js.Any.fromFunction1(value))
     
     inline def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
     

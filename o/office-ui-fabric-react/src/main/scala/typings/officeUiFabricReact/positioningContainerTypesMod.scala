@@ -103,7 +103,7 @@ object positioningContainerTypesMod {
     /**
       * Callback when the positioningContainer tries to close.
       */
-    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * Optional callback when the layer content has mounted.
@@ -235,7 +235,7 @@ object positioningContainerTypesMod {
       
       inline def setOffsetFromTargetUndefined: Self = StObject.set(x, "offsetFromTarget", js.undefined)
       
-      inline def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       

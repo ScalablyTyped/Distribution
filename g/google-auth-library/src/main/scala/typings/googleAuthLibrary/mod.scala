@@ -2,18 +2,70 @@ package typings.googleAuthLibrary
 
 import org.scalablytyped.runtime.Shortcut
 import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
+import typings.googleAuthLibrary.awsclientMod.AwsClientOptions
+import typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClientOptions
 import typings.googleAuthLibrary.computeclientMod.ComputeOptions
+import typings.googleAuthLibrary.downscopedclientMod.CredentialAccessBoundary
+import typings.googleAuthLibrary.externalclientMod.ExternalAccountClientOptions
 import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClientOptions
 import typings.googleAuthLibrary.idtokenclientMod.IdTokenOptions
+import typings.googleAuthLibrary.impersonatedMod.ImpersonatedOptions
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.loginticketMod.TokenPayload
 import typings.googleAuthLibrary.oauth2clientMod.OAuth2ClientOptions
+import typings.googleAuthLibrary.oauth2clientMod.RefreshOptions
+import typings.googleAuthLibrary.pluggableAuthClientMod.PluggableAuthClientOptions
 import typings.googleAuthLibrary.refreshclientMod.UserRefreshClientOptions
+import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("google-auth-library", "AuthClient")
+  @js.native
+  abstract class AuthClient ()
+    extends typings.googleAuthLibrary.authclientMod.AuthClient {
+    def this(options: EventEmitterOptions) = this()
+  }
+  
+  @JSImport("google-auth-library", "AwsClient")
+  @js.native
+  open class AwsClient protected ()
+    extends typings.googleAuthLibrary.awsclientMod.AwsClient {
+    /**
+      * Instantiates an AwsClient instance using the provided JSON
+      * object loaded from an external account credentials file.
+      * An error is thrown if the credential is not a valid AWS credential.
+      * @param options The external account options object typically loaded
+      *   from the external account JSON credential file.
+      * @param additionalOptions Optional additional behavior customization
+      *   options. These currently customize expiration threshold time and
+      *   whether to retry on 401/403 API request errors.
+      */
+    def this(options: AwsClientOptions) = this()
+    def this(options: AwsClientOptions, additionalOptions: RefreshOptions) = this()
+  }
+  
+  @JSImport("google-auth-library", "BaseExternalAccountClient")
+  @js.native
+  abstract class BaseExternalAccountClient protected ()
+    extends typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient {
+    /**
+      * Instantiate a BaseExternalAccountClient instance using the provided JSON
+      * object loaded from an external account credentials file.
+      * @param options The external account options object typically loaded
+      *   from the external account JSON credential file.
+      * @param additionalOptions Optional additional behavior customization
+      *   options. These currently customize expiration threshold time and
+      *   whether to retry on 401/403 API request errors.
+      */
+    def this(options: BaseExternalAccountClientOptions) = this()
+    def this(options: BaseExternalAccountClientOptions, additionalOptions: RefreshOptions) = this()
+  }
   
   @JSImport("google-auth-library", "CodeChallengeMethod")
   @js.native
@@ -35,14 +87,14 @@ object mod {
     * Retrieve access token from the metadata server.
     * See: https://developers.google.com/compute/docs/authentication
     */
-  class Compute ()
+  open class Compute ()
     extends typings.googleAuthLibrary.computeclientMod.Compute {
     def this(options: ComputeOptions) = this()
   }
   
   @JSImport("google-auth-library", "DefaultTransporter")
   @js.native
-  class DefaultTransporter ()
+  open class DefaultTransporter ()
     extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
   /* static members */
   object DefaultTransporter {
@@ -53,6 +105,81 @@ object mod {
     @JSImport("google-auth-library", "DefaultTransporter.USER_AGENT")
     @js.native
     val USER_AGENT: String = js.native
+  }
+  
+  @JSImport("google-auth-library", "DownscopedClient")
+  @js.native
+  open class DownscopedClient protected ()
+    extends typings.googleAuthLibrary.downscopedclientMod.DownscopedClient {
+    /**
+      * Instantiates a downscoped client object using the provided source
+      * AuthClient and credential access boundary rules.
+      * To downscope permissions of a source AuthClient, a Credential Access
+      * Boundary that specifies which resources the new credential can access, as
+      * well as an upper bound on the permissions that are available on each
+      * resource, has to be defined. A downscoped client can then be instantiated
+      * using the source AuthClient and the Credential Access Boundary.
+      * @param authClient The source AuthClient to be downscoped based on the
+      *   provided Credential Access Boundary rules.
+      * @param credentialAccessBoundary The Credential Access Boundary which
+      *   contains a list of access boundary rules. Each rule contains information
+      *   on the resource that the rule applies to, the upper bound of the
+      *   permissions that are available on that resource and an optional
+      *   condition to further restrict permissions.
+      * @param additionalOptions Optional additional behavior customization
+      *   options. These currently customize expiration threshold time and
+      *   whether to retry on 401/403 API request errors.
+      * @param quotaProjectId Optional quota project id for setting up in the
+      *   x-goog-user-project header.
+      */
+    def this(
+      authClient: typings.googleAuthLibrary.authclientMod.AuthClient,
+      credentialAccessBoundary: CredentialAccessBoundary
+    ) = this()
+    def this(
+      authClient: typings.googleAuthLibrary.authclientMod.AuthClient,
+      credentialAccessBoundary: CredentialAccessBoundary,
+      additionalOptions: RefreshOptions
+    ) = this()
+    def this(
+      authClient: typings.googleAuthLibrary.authclientMod.AuthClient,
+      credentialAccessBoundary: CredentialAccessBoundary,
+      additionalOptions: Unit,
+      quotaProjectId: String
+    ) = this()
+    def this(
+      authClient: typings.googleAuthLibrary.authclientMod.AuthClient,
+      credentialAccessBoundary: CredentialAccessBoundary,
+      additionalOptions: RefreshOptions,
+      quotaProjectId: String
+    ) = this()
+  }
+  
+  @JSImport("google-auth-library", "ExternalAccountClient")
+  @js.native
+  open class ExternalAccountClient ()
+    extends typings.googleAuthLibrary.externalclientMod.ExternalAccountClient
+  /* static members */
+  object ExternalAccountClient {
+    
+    @JSImport("google-auth-library", "ExternalAccountClient")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * This static method will instantiate the
+      * corresponding type of external account credential depending on the
+      * underlying credential source.
+      * @param options The external account options object typically loaded
+      *   from the external account JSON credential file.
+      * @param additionalOptions Optional additional behavior customization
+      *   options. These currently customize expiration threshold time and
+      *   whether to retry on 401/403 API request errors.
+      * @return A BaseExternalAccountClient instance or null if the options
+      *   provided do not correspond to an external account credential.
+      */
+    inline def fromJSON(options: ExternalAccountClientOptions): typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null]
+    inline def fromJSON(options: ExternalAccountClientOptions, additionalOptions: RefreshOptions): typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(options.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient | Null]
   }
   
   @JSImport("google-auth-library", "GCPEnv")
@@ -66,6 +193,8 @@ object mod {
     
     /* "CLOUD_FUNCTIONS" */ val CLOUD_FUNCTIONS: typings.googleAuthLibrary.envDetectMod.GCPEnv.CLOUD_FUNCTIONS & String = js.native
     
+    /* "CLOUD_RUN" */ val CLOUD_RUN: typings.googleAuthLibrary.envDetectMod.GCPEnv.CLOUD_RUN & String = js.native
+    
     /* "COMPUTE_ENGINE" */ val COMPUTE_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.COMPUTE_ENGINE & String = js.native
     
     /* "KUBERNETES_ENGINE" */ val KUBERNETES_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.KUBERNETES_ENGINE & String = js.native
@@ -75,9 +204,9 @@ object mod {
   
   @JSImport("google-auth-library", "GoogleAuth")
   @js.native
-  class GoogleAuth ()
-    extends typings.googleAuthLibrary.googleauthMod.GoogleAuth {
-    def this(opts: GoogleAuthOptions) = this()
+  open class GoogleAuth[T /* <: typings.googleAuthLibrary.authclientMod.AuthClient */] ()
+    extends typings.googleAuthLibrary.googleauthMod.GoogleAuth[T] {
+    def this(opts: GoogleAuthOptions[T]) = this()
   }
   /* static members */
   object GoogleAuth {
@@ -97,7 +226,7 @@ object mod {
   
   @JSImport("google-auth-library", "IAMAuth")
   @js.native
-  class IAMAuth protected ()
+  open class IAMAuth protected ()
     extends typings.googleAuthLibrary.iamMod.IAMAuth {
     /**
       * IAM credentials.
@@ -111,7 +240,7 @@ object mod {
   
   @JSImport("google-auth-library", "IdTokenClient")
   @js.native
-  class IdTokenClient protected ()
+  open class IdTokenClient protected ()
     extends typings.googleAuthLibrary.idtokenclientMod.IdTokenClient {
     /**
       * Google ID Token client
@@ -122,9 +251,68 @@ object mod {
     def this(options: IdTokenOptions) = this()
   }
   
+  @JSImport("google-auth-library", "IdentityPoolClient")
+  @js.native
+  open class IdentityPoolClient protected ()
+    extends typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClient {
+    /**
+      * Instantiate an IdentityPoolClient instance using the provided JSON
+      * object loaded from an external account credentials file.
+      * An error is thrown if the credential is not a valid file-sourced or
+      * url-sourced credential or a workforce pool user project is provided
+      * with a non workforce audience.
+      * @param options The external account options object typically loaded
+      *   from the external account JSON credential file.
+      * @param additionalOptions Optional additional behavior customization
+      *   options. These currently customize expiration threshold time and
+      *   whether to retry on 401/403 API request errors.
+      */
+    def this(options: IdentityPoolClientOptions) = this()
+    def this(options: IdentityPoolClientOptions, additionalOptions: RefreshOptions) = this()
+  }
+  
+  @JSImport("google-auth-library", "Impersonated")
+  @js.native
+  /**
+    * Impersonated service account credentials.
+    *
+    * Create a new access token by impersonating another service account.
+    *
+    * Impersonated Credentials allowing credentials issued to a user or
+    * service account to impersonate another. The source project using
+    * Impersonated Credentials must enable the "IAMCredentials" API.
+    * Also, the target service account must grant the orginating principal
+    * the "Service Account Token Creator" IAM role.
+    *
+    * @param {object} options - The configuration object.
+    * @param {object} [options.sourceClient] the source credential used as to
+    * acquire the impersonated credentials.
+    * @param {string} [options.targetPrincipal] the service account to
+    * impersonate.
+    * @param {string[]} [options.delegates] the chained list of delegates
+    * required to grant the final access_token. If set, the sequence of
+    * identities must have "Service Account Token Creator" capability granted to
+    * the preceding identity. For example, if set to [serviceAccountB,
+    * serviceAccountC], the sourceCredential must have the Token Creator role on
+    * serviceAccountB. serviceAccountB must have the Token Creator on
+    * serviceAccountC. Finally, C must have Token Creator on target_principal.
+    * If left unset, sourceCredential must have that role on targetPrincipal.
+    * @param {string[]} [options.targetScopes] scopes to request during the
+    * authorization grant.
+    * @param {number} [options.lifetime] number of seconds the delegated
+    * credential should be valid for up to 3600 seconds by default, or 43,200
+    * seconds by extending the token's lifetime, see:
+    * https://cloud.google.com/iam/docs/creating-short-lived-service-account-credentials#sa-credentials-oauth
+    * @param {string} [options.endpoint] api endpoint override.
+    */
+  open class Impersonated ()
+    extends typings.googleAuthLibrary.impersonatedMod.Impersonated {
+    def this(options: ImpersonatedOptions) = this()
+  }
+  
   @JSImport("google-auth-library", "JWT")
   @js.native
-  class JWT protected ()
+  open class JWT protected ()
     extends typings.googleAuthLibrary.jwtclientMod.JWT {
     /**
       * JWT service account credentials.
@@ -151,7 +339,7 @@ object mod {
   
   @JSImport("google-auth-library", "JWTAccess")
   @js.native
-  class JWTAccess protected ()
+  open class JWTAccess protected ()
     extends typings.googleAuthLibrary.jwtaccessMod.JWTAccess {
     /**
       * JWTAccess service account credentials.
@@ -185,8 +373,8 @@ object mod {
       */
     @JSImport("google-auth-library", "JWTAccess.getExpirationTime")
     @js.native
-    def getExpirationTime: js.Any = js.native
-    inline def getExpirationTime_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getExpirationTime")(x.asInstanceOf[js.Any])
+    def getExpirationTime: Any = js.native
+    inline def getExpirationTime_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getExpirationTime")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("google-auth-library", "LoginTicket")
@@ -198,7 +386,7 @@ object mod {
     * @param {TokenPayload} pay Payload of the jwt
     * @constructor
     */
-  class LoginTicket ()
+  open class LoginTicket ()
     extends typings.googleAuthLibrary.loginticketMod.LoginTicket {
     def this(env: String) = this()
     def this(env: String, pay: TokenPayload) = this()
@@ -217,7 +405,7 @@ object mod {
     * @param opts optional options for overriding the given parameters.
     * @constructor
     */
-  class OAuth2Client ()
+  open class OAuth2Client ()
     extends typings.googleAuthLibrary.oauth2clientMod.OAuth2Client {
     def this(clientId: String) = this()
     def this(options: OAuth2ClientOptions) = this()
@@ -240,49 +428,49 @@ object mod {
       */
     @JSImport("google-auth-library", "OAuth2Client.CLOCK_SKEW_SECS_")
     @js.native
-    val CLOCK_SKEW_SECS_ : js.Any = js.native
+    val CLOCK_SKEW_SECS_ : Any = js.native
     
     /**
       * The base URL for auth endpoints.
       */
     @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_AUTH_BASE_URL_")
     @js.native
-    val GOOGLE_OAUTH2_AUTH_BASE_URL_ : js.Any = js.native
+    val GOOGLE_OAUTH2_AUTH_BASE_URL_ : Any = js.native
     
     /**
       * Google Sign on certificates in JWK format.
       */
     @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_")
     @js.native
-    val GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_ : js.Any = js.native
+    val GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_ : Any = js.native
     
     /**
       * Google Sign on certificates in PEM format.
       */
     @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_")
     @js.native
-    val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : js.Any = js.native
+    val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : Any = js.native
     
     /**
       * Google Sign on certificates in JWK format.
       */
     @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_")
     @js.native
-    val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : js.Any = js.native
+    val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : Any = js.native
     
     /**
       * The base endpoint to revoke tokens.
       */
     @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_REVOKE_URL_")
     @js.native
-    val GOOGLE_OAUTH2_REVOKE_URL_ : js.Any = js.native
+    val GOOGLE_OAUTH2_REVOKE_URL_ : Any = js.native
     
     /**
       * The base endpoint for token retrieval.
       */
     @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_TOKEN_URL_")
     @js.native
-    val GOOGLE_OAUTH2_TOKEN_URL_ : js.Any = js.native
+    val GOOGLE_OAUTH2_TOKEN_URL_ : Any = js.native
     
     @JSImport("google-auth-library", "OAuth2Client.GOOGLE_TOKEN_INFO_URL")
     @js.native
@@ -293,20 +481,38 @@ object mod {
       */
     @JSImport("google-auth-library", "OAuth2Client.ISSUERS_")
     @js.native
-    val ISSUERS_ : js.Any = js.native
+    val ISSUERS_ : Any = js.native
     
     /**
       * Max Token Lifetime is one day in seconds
       */
     @JSImport("google-auth-library", "OAuth2Client.MAX_TOKEN_LIFETIME_SECS_")
     @js.native
-    val MAX_TOKEN_LIFETIME_SECS_ : js.Any = js.native
+    val MAX_TOKEN_LIFETIME_SECS_ : Any = js.native
     
     /**
       * Generates an URL to revoke the given token.
       * @param token The existing token to be revoked.
       */
     inline def getRevokeTokenUrl(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRevokeTokenUrl")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  }
+  
+  @JSImport("google-auth-library", "PluggableAuthClient")
+  @js.native
+  open class PluggableAuthClient protected ()
+    extends typings.googleAuthLibrary.pluggableAuthClientMod.PluggableAuthClient {
+    /**
+      * Instantiates a PluggableAuthClient instance using the provided JSON
+      * object loaded from an external account credentials file.
+      * An error is thrown if the credential is not a valid pluggable auth credential.
+      * @param options The external account options object typically loaded from
+      *   the external account JSON credential file.
+      * @param additionalOptions Optional additional behavior customization
+      *   options. These currently customize expiration threshold time and
+      *   whether to retry on 401/403 API request errors.
+      */
+    def this(options: PluggableAuthClientOptions) = this()
+    def this(options: PluggableAuthClientOptions, additionalOptions: RefreshOptions) = this()
   }
   
   @JSImport("google-auth-library", "UserRefreshClient")
@@ -318,7 +524,7 @@ object mod {
     * @param clientSecret The authentication client secret.
     * @param refreshToken The authentication refresh token.
     */
-  class UserRefreshClient ()
+  open class UserRefreshClient ()
     extends typings.googleAuthLibrary.refreshclientMod.UserRefreshClient {
     def this(clientId: String) = this()
     def this(options: UserRefreshClientOptions) = this()
@@ -334,7 +540,7 @@ object mod {
     
     @JSImport("google-auth-library", "auth")
     @js.native
-    val ^ : typings.googleAuthLibrary.googleauthMod.GoogleAuth = js.native
+    val ^ : typings.googleAuthLibrary.googleauthMod.GoogleAuth[JSONClient] = js.native
     
     /**
       * Export DefaultTransporter as a static property of the class.
@@ -342,7 +548,7 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("google-auth-library", "auth.DefaultTransporter")
     @js.native
-    class DefaultTransporterCls ()
+    open class DefaultTransporterCls ()
       extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
     /* static members */
     object DefaultTransporterCls {
@@ -351,12 +557,12 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
     }
     
-    type _To = typings.googleAuthLibrary.googleauthMod.GoogleAuth
+    type _To = typings.googleAuthLibrary.googleauthMod.GoogleAuth[JSONClient]
     
     /* This means you don't have to write `^`, but can instead just say `auth.foo` */
-    override def _to: typings.googleAuthLibrary.googleauthMod.GoogleAuth = ^
+    override def _to: typings.googleAuthLibrary.googleauthMod.GoogleAuth[JSONClient] = ^
   }
 }

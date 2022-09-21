@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Arm64Writer")
 @js.native
-class Arm64Writer protected ()
+open class Arm64Writer protected ()
   extends StObject
      with typings.fridaGum.Arm64Writer {
   /**

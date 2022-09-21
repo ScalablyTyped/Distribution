@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-downloader-helper
 
-Typings are for version 1.0
+Typings are for version 2.1.4
 
 ## Library description:
 A simple http file downloader for node.js
@@ -10,10 +10,10 @@ A simple http file downloader for node.js
 | ------------------ | :-------------: |
 | Full name          | node-downloader-helper |
 | Keywords           | node, nodejs, node.js, download, resumable, resume, http |
-| # releases         | 5 |
-| # dependents       | 23 |
-| # downloads        | 805699 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 80112.0 |
+| # stars            | 182.0 |
 
 ## Links
 - [Homepage](https://github.com/hgouveia/node-downloader-helper)
@@ -24,7 +24,7 @@ A simple http file downloader for node.js
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

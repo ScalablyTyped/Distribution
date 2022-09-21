@@ -18,6 +18,9 @@ trait IosMinimumOperatingSystem extends StObject {
   // Version 13.0 or later.
   var v13_0: js.UndefOr[Boolean] = js.undefined
   
+  // Version 14.0 or later.
+  var v14_0: js.UndefOr[Boolean] = js.undefined
+  
   // Version 8.0 or later.
   var v8_0: js.UndefOr[Boolean] = js.undefined
   
@@ -48,6 +51,10 @@ object IosMinimumOperatingSystem {
     inline def setV13_0(value: Boolean): Self = StObject.set(x, "v13_0", value.asInstanceOf[js.Any])
     
     inline def setV13_0Undefined: Self = StObject.set(x, "v13_0", js.undefined)
+    
+    inline def setV14_0(value: Boolean): Self = StObject.set(x, "v14_0", value.asInstanceOf[js.Any])
+    
+    inline def setV14_0Undefined: Self = StObject.set(x, "v14_0", js.undefined)
     
     inline def setV8_0(value: Boolean): Self = StObject.set(x, "v8_0", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,8 @@
 package typings.reactTable.anon
 
 import typings.react.mod.CSSProperties
+import typings.react.mod.ChangeEvent
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +16,7 @@ trait PartialTableToggleRowsSel extends StObject {
   
   var indeterminate: js.UndefOr[Boolean] = js.undefined
   
-  var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[Element], Unit]] = js.undefined
   
   var role: js.UndefOr[String] = js.undefined
   
@@ -43,7 +45,7 @@ object PartialTableToggleRowsSel {
     
     inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
     
-    inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setOnChange(value: /* e */ ChangeEvent[Element] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

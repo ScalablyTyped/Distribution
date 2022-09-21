@@ -11,14 +11,14 @@ trait InputParameterCollection extends StObject {
   /* private */ @JSName("InfoPath.InputParameterCollection_typekey")
   var InfoPathDotInputParameterCollection_typekey: InputParameterCollection
   
-  def Item(varIndex: js.Any): InputParameterObject
+  def Item(varIndex: Any): InputParameterObject
 }
 object InputParameterCollection {
   
   inline def apply(
     Count: Double,
     InfoPathDotInputParameterCollection_typekey: InputParameterCollection,
-    Item: js.Any => InputParameterObject
+    Item: Any => InputParameterObject
   ): InputParameterCollection = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.updateDynamic("InfoPath.InputParameterCollection_typekey")(InfoPathDotInputParameterCollection_typekey.asInstanceOf[js.Any])
@@ -31,6 +31,6 @@ object InputParameterCollection {
     
     inline def setInfoPathDotInputParameterCollection_typekey(value: InputParameterCollection): Self = StObject.set(x, "InfoPath.InputParameterCollection_typekey", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => InputParameterObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => InputParameterObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

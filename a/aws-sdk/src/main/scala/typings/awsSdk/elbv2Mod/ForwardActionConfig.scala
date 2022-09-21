@@ -33,6 +33,6 @@ object ForwardActionConfig {
     
     inline def setTargetGroupsUndefined: Self = StObject.set(x, "TargetGroups", js.undefined)
     
-    inline def setTargetGroupsVarargs(value: TargetGroupTuple*): Self = StObject.set(x, "TargetGroups", js.Array(value :_*))
+    inline def setTargetGroupsVarargs(value: TargetGroupTuple*): Self = StObject.set(x, "TargetGroups", js.Array(value*))
   }
 }

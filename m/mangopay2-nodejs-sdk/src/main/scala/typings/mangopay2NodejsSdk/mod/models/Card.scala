@@ -1,7 +1,7 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.mod.card.CardData
-import typings.mangopay2NodejsSdk.mod.card.CardValidity
+import typings.mangopay2NodejsSdk.cardMod.card.CardData
+import typings.mangopay2NodejsSdk.cardMod.card.CardValidity
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mangopay2-nodejs-sdk", "models.Card")
 @js.native
-class Card protected ()
+open class Card protected ()
   extends EntityBase[CardData]
      with CardData {
   def this(data: CardData) = this()
@@ -42,7 +42,7 @@ class Card protected ()
     * The type of card
     */
   /* CompleteClass */
-  var CardType: typings.mangopay2NodejsSdk.mod.card.CardType = js.native
+  var CardType: typings.mangopay2NodejsSdk.cardMod.card.CardType = js.native
   
   /**
     * The Country of the Address

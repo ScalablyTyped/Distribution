@@ -8,34 +8,34 @@ object anon {
   
   trait Code extends StObject {
     
-    var code: js.Any
+    var code: Any
     
-    var error: js.Any
+    var error: Any
     
-    var extractedComments: js.Any
+    var extractedComments: Any
     
-    var map: js.Any
+    var map: Any
     
-    var warnings: js.Any
+    var warnings: Any
   }
   object Code {
     
-    inline def apply(code: js.Any, error: js.Any, extractedComments: js.Any, map: js.Any, warnings: js.Any): Code = {
+    inline def apply(code: Any, error: Any, extractedComments: Any, map: Any, warnings: Any): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], extractedComments = extractedComments.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
     extension [Self <: Code](x: Self) {
       
-      inline def setCode(value: js.Any): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Any): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setExtractedComments(value: js.Any): Self = StObject.set(x, "extractedComments", value.asInstanceOf[js.Any])
+      inline def setExtractedComments(value: Any): Self = StObject.set(x, "extractedComments", value.asInstanceOf[js.Any])
       
-      inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      inline def setWarnings(value: js.Any): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: Any): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     }
   }
 }

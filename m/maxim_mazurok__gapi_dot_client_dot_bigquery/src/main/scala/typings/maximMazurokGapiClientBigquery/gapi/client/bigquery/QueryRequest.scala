@@ -11,6 +11,12 @@ trait QueryRequest extends StObject {
   var connectionProperties: js.UndefOr[js.Array[ConnectionProperty]] = js.undefined
   
   /**
+    * If true, creates a new session, where session id will be a server generated random id. If false, runs query with an existing session_id passed in ConnectionProperty, otherwise runs
+    * query in non-session mode.
+    */
+  var createSession: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * [Optional] Specifies the default datasetId and projectId to assume for any unqualified table names in the query. If not set, all table names in the query string must be qualified in
     * the format 'datasetId.tableId'.
     */
@@ -33,7 +39,7 @@ trait QueryRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryRequest & TopLevel[Any]
   ] = js.undefined
   
   /** The geographic location where the job should run. See details at https://cloud.google.com/bigquery/docs/locations#specifying_your_location. */
@@ -108,7 +114,11 @@ object QueryRequest {
     
     inline def setConnectionPropertiesUndefined: Self = StObject.set(x, "connectionProperties", js.undefined)
     
-    inline def setConnectionPropertiesVarargs(value: ConnectionProperty*): Self = StObject.set(x, "connectionProperties", js.Array(value :_*))
+    inline def setConnectionPropertiesVarargs(value: ConnectionProperty*): Self = StObject.set(x, "connectionProperties", js.Array(value*))
+    
+    inline def setCreateSession(value: Boolean): Self = StObject.set(x, "createSession", value.asInstanceOf[js.Any])
+    
+    inline def setCreateSessionUndefined: Self = StObject.set(x, "createSession", js.undefined)
     
     inline def setDefaultDataset(value: DatasetReference): Self = StObject.set(x, "defaultDataset", value.asInstanceOf[js.Any])
     
@@ -125,7 +135,7 @@ object QueryRequest {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryRequest & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -156,7 +166,7 @@ object QueryRequest {
     
     inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
-    inline def setQueryParametersVarargs(value: QueryParameter*): Self = StObject.set(x, "queryParameters", js.Array(value :_*))
+    inline def setQueryParametersVarargs(value: QueryParameter*): Self = StObject.set(x, "queryParameters", js.Array(value*))
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     

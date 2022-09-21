@@ -8,14 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  /**
+    * Automatically cleanup the items in the provided `map`. The property of the expiration timestamp should be named `maxAge`.
+    *
+    * @param map - Map instance which should be cleaned up.
+    */
+  inline def apply[K, V /* <: MaxAgeEntry */](map: Map[K, V]): Any = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[Any]
+  /**
+    * Automatically cleanup the items in the provided `map`.
+    *
+    * @param map - Map instance which should be cleaned up.
+    * @param property - Name of the property which olds the expiry timestamp.
+    */
+  inline def apply[K, V](map: Map[K, V], property: String): Any = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
   @JSImport("map-age-cleaner", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[K, V /* <: MaxAgeEntry */](map: Map[K, V]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def default[K, V](map: Map[K, V], property: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  
-  type Entry = StringDictionary[js.Any]
+  type Entry = StringDictionary[Any]
   
   trait MaxAgeEntry
     extends StObject

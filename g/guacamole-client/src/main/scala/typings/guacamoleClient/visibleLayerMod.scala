@@ -11,7 +11,7 @@ object visibleLayerMod {
   
   @JSImport("guacamole-client/lib/VisibleLayer", "VisibleLayer")
   @js.native
-  class VisibleLayer protected () extends Layer {
+  open class VisibleLayer protected () extends Layer {
     /**
       * @param width The width of the Layer, in pixels. The canvas element backing this Layer will be given this width.
       * @param height The height of the Layer, in pixels. The canvas element backing this Layer will be given this height.

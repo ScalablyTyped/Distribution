@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/layout" : "2.4.3"
+      "@react-md/layout" : "5.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/layout" : "2.4.3"
+      "@react-md/layout" : "5.1.4"
     }
   ],
   "compile-devDependencies" : [

@@ -135,7 +135,7 @@ object OnAuthRequiredDetails {
     
     inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    inline def setResponseHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
     
     inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     

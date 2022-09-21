@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemEventArgs")
 @js.native
-class ASPxClientDashboardItemEventArgs ()
+open class ASPxClientDashboardItemEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemEventArgs {
   
@@ -18,14 +18,14 @@ class ASPxClientDashboardItemEventArgs ()
     * @param value The specified value.
     */
   /* CompleteClass */
-  override def IsNullValue(value: js.Any): Boolean = js.native
+  override def IsNullValue(value: Any): Boolean = js.native
   
   /**
     * Returns whether the specified value is 'others'. true, if the specified value is 'others'; otherwise, false.
     * @param value The specified value.
     */
   /* CompleteClass */
-  override def IsOthersValue(value: js.Any): Boolean = js.native
+  override def IsOthersValue(value: Any): Boolean = js.native
   
   /**
     * Gets the component name of the dashboard item.

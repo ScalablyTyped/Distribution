@@ -9,16 +9,16 @@ Use the gap, column-gap, and row-gap shorthand properties in CSS
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | postcss-gap-properties |
-| Keywords           | postcss, css, postcss-plugin, grids, layouts, columns, rows, gaps, shorthands, prefixes |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 145385491 |
-| # stars            | 0 |
+| Keywords           | columns, css, gaps, grids, layouts, postcss, postcss-plugin, prefixes, rows, shorthands |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6976603333333332E7 |
+| # stars            | 255.0 |
 
 ## Links
-- [Homepage](https://github.com/jonathantneal/postcss-gap-properties#readme)
-- [Bugs](https://github.com/jonathantneal/postcss-gap-properties/issues)
-- [Repository](https://github.com/jonathantneal/postcss-gap-properties)
+- [Homepage](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-gap-properties#readme)
+- [Bugs](https://github.com/csstools/postcss-plugins/issues)
+- [Repository](https://github.com/csstools/postcss-plugins)
 - [Npm](https://www.npmjs.com/package/postcss-gap-properties)
     
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SectionBase[ItemT, SectionT] extends StObject {
   
-  var ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
+  var ItemSeparatorComponent: js.UndefOr[ComponentType[Any] | Null] = js.undefined
   
   var data: js.Array[ItemT]
   
@@ -29,9 +29,9 @@ object SectionBase {
     
     inline def setData(value: js.Array[ItemT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    inline def setItemSeparatorComponent(value: ComponentType[Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     inline def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
     

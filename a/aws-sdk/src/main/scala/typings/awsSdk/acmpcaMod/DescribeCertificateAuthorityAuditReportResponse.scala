@@ -14,7 +14,7 @@ trait DescribeCertificateAuthorityAuditReportResponse extends StObject {
   /**
     * The date and time at which the report was created.
     */
-  var CreatedAt: js.UndefOr[TStamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Name of the S3 bucket that contains the report.
@@ -39,7 +39,7 @@ object DescribeCertificateAuthorityAuditReportResponse {
     
     inline def setAuditReportStatusUndefined: Self = StObject.set(x, "AuditReportStatus", js.undefined)
     
-    inline def setCreatedAt(value: TStamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     

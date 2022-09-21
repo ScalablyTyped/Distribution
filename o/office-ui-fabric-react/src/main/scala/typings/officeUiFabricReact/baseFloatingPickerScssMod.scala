@@ -8,5 +8,5 @@ object baseFloatingPickerScssMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/BaseFloatingPicker.scss", "callout")
   @js.native
-  val callout: /* "callout_6bdb9675" */ String = js.native
+  val callout: /* "callout_334300da" */ String = js.native
 }

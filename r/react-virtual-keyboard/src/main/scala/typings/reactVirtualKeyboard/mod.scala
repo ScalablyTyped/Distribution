@@ -12,10 +12,9 @@ object mod {
   
   @JSImport("react-virtual-keyboard", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[KeyboardProps, KeyboardState, js.Any]
+  open class default () extends Component[KeyboardProps, KeyboardState, Any]
   
-  type Keyboard = Component[KeyboardProps, KeyboardState, js.Any]
+  type Keyboard = Component[KeyboardProps, KeyboardState, Any]
   
   trait KeyboardProps extends StObject {
     

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeView")
 @js.native
-class ASPxClientTreeView ()
+open class ASPxClientTreeView ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeView {
   
@@ -96,7 +96,7 @@ class ASPxClientTreeView ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a node specified by its index within the ASPxTreeView's node collection. An ASPxClientTreeViewNode object, representing the node located at the specified index within the ASPxTreeView's node collection.
@@ -129,7 +129,7 @@ class ASPxClientTreeView ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Gets the root node of the ASPxTreeView object.
@@ -234,5 +234,5 @@ object ASPxClientTreeView {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientTreeView = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientTreeView]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientTreeView = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientTreeView]
 }

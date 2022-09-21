@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticWIDTHS
 import typings.semanticUiReact.semanticUiReactStrings.equal
 import org.scalablytyped.runtime.StObject
@@ -14,12 +14,12 @@ object formGroupMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormGroup", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FormGroupProps] = js.native
+  val default: FC[FormGroupProps] = js.native
   
   trait FormGroupProps
     extends StObject
        with StrictFormGroupProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FormGroupProps {
     
     inline def apply(): FormGroupProps = {
@@ -31,7 +31,7 @@ object formGroupMod extends Shortcut {
   trait StrictFormGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -60,7 +60,7 @@ object formGroupMod extends Shortcut {
     
     extension [Self <: StrictFormGroupProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -90,8 +90,8 @@ object formGroupMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[FormGroupProps]
+  type _To = FC[FormGroupProps]
   
   /* This means you don't have to write `default`, but can instead just say `formGroupMod.foo` */
-  override def _to: StatelessComponent[FormGroupProps] = default
+  override def _to: FC[FormGroupProps] = default
 }

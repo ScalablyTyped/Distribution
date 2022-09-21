@@ -99,7 +99,7 @@ object XDatabaseRange {
     getImportDescriptor: () => SafeArray[PropertyValue],
     getSortDescriptor: () => SafeArray[PropertyValue],
     getSubTotalDescriptor: () => XSubTotalDescriptor,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit,
     setDataArea: CellRangeAddress => Unit

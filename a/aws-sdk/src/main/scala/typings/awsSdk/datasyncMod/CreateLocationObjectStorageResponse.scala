@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLocationObjectStorageResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the agents associated with the self-managed object storage server location.
+    * Specifies the ARN of the object storage system location that you create.
     */
   var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/chunked-blob-reader-native" : "1.0.0-rc.3"
+      "@aws-sdk/chunked-blob-reader-native" : "3.170.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/chunked-blob-reader-native" : "1.0.0-rc.3"
+      "@aws-sdk/chunked-blob-reader-native" : "3.170.0"
     }
   ],
   "compile-devDependencies" : [

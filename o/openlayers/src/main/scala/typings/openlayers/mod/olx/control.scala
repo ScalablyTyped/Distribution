@@ -29,7 +29,7 @@ object control {
     
     var label: js.UndefOr[String | Node] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, Any]] = js.undefined
     
     var target: js.UndefOr[Element] = js.undefined
     
@@ -64,7 +64,7 @@ object control {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* event */ MapEvent => Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
@@ -82,7 +82,7 @@ object control {
     
     var element: js.UndefOr[Element] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, Any]] = js.undefined
     
     var target: js.UndefOr[Element | String] = js.undefined
   }
@@ -99,7 +99,7 @@ object control {
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* event */ MapEvent => Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
@@ -221,7 +221,7 @@ object control {
     
     var projection: ProjectionLike
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, Any]] = js.undefined
     
     var target: js.UndefOr[Element] = js.undefined
     
@@ -248,7 +248,7 @@ object control {
       
       inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
-      inline def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* event */ MapEvent => Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
@@ -274,7 +274,7 @@ object control {
     
     var layers: js.UndefOr[js.Array[Layer] | Collection[Layer]] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, Any]] = js.undefined
     
     var target: js.UndefOr[Element] = js.undefined
     
@@ -311,9 +311,9 @@ object control {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
       
-      inline def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* event */ MapEvent => Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
@@ -341,9 +341,9 @@ object control {
     
     var label: js.UndefOr[String | Element] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, Any]] = js.undefined
     
-    var resetNorth: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var resetNorth: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var target: js.UndefOr[Element] = js.undefined
     
@@ -374,11 +374,11 @@ object control {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* event */ MapEvent => Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      inline def setResetNorth(value: () => js.Any): Self = StObject.set(x, "resetNorth", js.Any.fromFunction0(value))
+      inline def setResetNorth(value: () => Any): Self = StObject.set(x, "resetNorth", js.Any.fromFunction0(value))
       
       inline def setResetNorthUndefined: Self = StObject.set(x, "resetNorth", js.undefined)
       
@@ -398,7 +398,7 @@ object control {
     
     var minWidth: js.UndefOr[Double] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, Any]] = js.undefined
     
     var target: js.UndefOr[Element] = js.undefined
     
@@ -421,7 +421,7 @@ object control {
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* event */ MapEvent => Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
@@ -506,7 +506,7 @@ object control {
     
     var minResolution: js.UndefOr[Double] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, Any]] = js.undefined
   }
   object ZoomSliderOptions {
     
@@ -533,7 +533,7 @@ object control {
       
       inline def setMinResolutionUndefined: Self = StObject.set(x, "minResolution", js.undefined)
       
-      inline def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* event */ MapEvent => Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }

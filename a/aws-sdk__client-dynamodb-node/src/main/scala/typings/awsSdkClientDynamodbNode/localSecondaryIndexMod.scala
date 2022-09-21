@@ -8,5 +8,5 @@ object localSecondaryIndexMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_LocalSecondaryIndex", "_LocalSecondaryIndex")
   @js.native
-  val LocalSecondaryIndex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val LocalSecondaryIndex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

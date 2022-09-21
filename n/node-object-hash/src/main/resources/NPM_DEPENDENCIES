@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "node-object-hash" : "2.0.0"
+      "node-object-hash" : "2.3.10"
     }
   ],
   "test-dependencies" : [
     {
-      "node-object-hash" : "2.0.0"
+      "node-object-hash" : "2.3.10"
     }
   ],
   "compile-devDependencies" : [

@@ -18,17 +18,17 @@ object registryMod {
     
     def free(id: String): Unit
     
-    def get(id: String): js.UndefOr[Actor[js.Any, AnyEventObject]]
+    def get(id: String): js.UndefOr[Actor[Any, AnyEventObject]]
     
-    def register(id: String, actor: Actor[js.Any, AnyEventObject]): String
+    def register(id: String, actor: Actor[Any, AnyEventObject]): String
   }
   object Registry_ {
     
     inline def apply(
       bookId: () => String,
       free: String => Unit,
-      get: String => js.UndefOr[Actor[js.Any, AnyEventObject]],
-      register: (String, Actor[js.Any, AnyEventObject]) => String
+      get: String => js.UndefOr[Actor[Any, AnyEventObject]],
+      register: (String, Actor[Any, AnyEventObject]) => String
     ): Registry_ = {
       val __obj = js.Dynamic.literal(bookId = js.Any.fromFunction0(bookId), free = js.Any.fromFunction1(free), get = js.Any.fromFunction1(get), register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[Registry_]
@@ -40,9 +40,9 @@ object registryMod {
       
       inline def setFree(value: String => Unit): Self = StObject.set(x, "free", js.Any.fromFunction1(value))
       
-      inline def setGet(value: String => js.UndefOr[Actor[js.Any, AnyEventObject]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[Actor[Any, AnyEventObject]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setRegister(value: (String, Actor[js.Any, AnyEventObject]) => String): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(value: (String, Actor[Any, AnyEventObject]) => String): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
   }
 }

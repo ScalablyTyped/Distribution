@@ -25,7 +25,7 @@ object SFCDescriptor {
     
     inline def setCustomBlocks(value: js.Array[SFCBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
     
-    inline def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
+    inline def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value*))
     
     inline def setScript(value: SFCBlock): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
@@ -33,7 +33,7 @@ object SFCDescriptor {
     
     inline def setStyles(value: js.Array[SFCBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    inline def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setTemplate(value: SFCBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

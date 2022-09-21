@@ -26,7 +26,7 @@ trait UpdateItemOptions extends StObject {
   
   var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
   
-  var ExpressionAttributeValues: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var ExpressionAttributeValues: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.undefined
   
@@ -36,7 +36,7 @@ trait UpdateItemOptions extends StObject {
   
   var UpdateExpression: js.UndefOr[typings.awsSdk.dynamodbMod.UpdateExpression] = js.undefined
   
-  var expected: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var expected: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object UpdateItemOptions {
   
@@ -67,7 +67,7 @@ object UpdateItemOptions {
     
     inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
     
-    inline def setExpressionAttributeValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+    inline def setExpressionAttributeValues(value: StringDictionary[Any]): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
     
     inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
     

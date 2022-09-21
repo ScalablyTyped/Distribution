@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/dragdrop" : "1.6.4"
+      "@lumino/dragdrop" : "1.14.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/dragdrop" : "1.6.4"
+      "@lumino/dragdrop" : "1.14.1"
     }
   ],
   "compile-devDependencies" : [

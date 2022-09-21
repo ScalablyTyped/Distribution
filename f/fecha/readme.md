@@ -1,7 +1,7 @@
 
 # Scala.js typings for fecha
 
-Typings are for version 4.2.0
+Typings are for version 4.2.3
 
 ## Library description:
 Date formatting and parsing
@@ -10,10 +10,10 @@ Date formatting and parsing
 | ------------------ | :-------------: |
 | Full name          | fecha |
 | Keywords           | date, parse, moment, format, fecha, formatting |
-| # releases         | 8 |
-| # dependents       | 232 |
-| # downloads        | 127270725 |
-| # stars            | 7 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5091030333333332E7 |
+| # stars            | 1984.0 |
 
 ## Links
 - [Homepage](https://github.com/taylorhakes/fecha)

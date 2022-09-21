@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@reach/tabs" : "0.17.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@reach/tabs" : "0.17.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

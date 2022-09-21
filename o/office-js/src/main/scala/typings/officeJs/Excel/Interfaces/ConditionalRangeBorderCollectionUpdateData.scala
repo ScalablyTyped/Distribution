@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalRangeBorderCollectionUpdateData extends StObject {
   
   /**
-    *
     * Gets the bottom border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var bottom: js.UndefOr[ConditionalRangeBorderUpdateData] = js.undefined
@@ -18,25 +18,25 @@ trait ConditionalRangeBorderCollectionUpdateData extends StObject {
   var items: js.UndefOr[js.Array[ConditionalRangeBorderData]] = js.undefined
   
   /**
-    *
     * Gets the left border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var left: js.UndefOr[ConditionalRangeBorderUpdateData] = js.undefined
   
   /**
-    *
     * Gets the right border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var right: js.UndefOr[ConditionalRangeBorderUpdateData] = js.undefined
   
   /**
-    *
     * Gets the top border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var top: js.UndefOr[ConditionalRangeBorderUpdateData] = js.undefined
@@ -58,7 +58,7 @@ object ConditionalRangeBorderCollectionUpdateData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ConditionalRangeBorderData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ConditionalRangeBorderData*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLeft(value: ConditionalRangeBorderUpdateData): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

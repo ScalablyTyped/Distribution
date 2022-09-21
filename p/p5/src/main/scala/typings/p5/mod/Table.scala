@@ -1,6 +1,5 @@
 package typings.p5.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +39,11 @@ trait Table extends StObject {
     */
   def clearRows(): Unit = js.native
   
+  /**
+    *   An array containing the names of the columns in
+    *   the table, if the "header" the table is loaded
+    *   with the "header" parameter.
+    */
   var columns: js.Array[String] = js.native
   
   def findRow(value: String, column: String): TableRow = js.native
@@ -86,7 +90,7 @@ trait Table extends StObject {
     *   Retrieves all table data and returns it as a
     *   multidimensional array.
     */
-  def getArray(): js.Array[js.Any] = js.native
+  def getArray(): js.Array[Any] = js.native
   
   /**
     *   Retrieves all values in the specified column, and
@@ -96,8 +100,8 @@ trait Table extends StObject {
     *   return
     *   @return Array of column values
     */
-  def getColumn(column: String): js.Array[js.Any] = js.native
-  def getColumn(column: Double): js.Array[js.Any] = js.native
+  def getColumn(column: String): js.Array[Any] = js.native
+  def getColumn(column: Double): js.Array[Any] = js.native
   
   /**
     *   Returns the total number of columns in a Table.
@@ -173,8 +177,8 @@ trait Table extends StObject {
     */
   def matchRow(regexp: String, column: String): TableRow = js.native
   def matchRow(regexp: String, column: Double): TableRow = js.native
-  def matchRow(regexp: RegExp, column: String): TableRow = js.native
-  def matchRow(regexp: RegExp, column: Double): TableRow = js.native
+  def matchRow(regexp: js.RegExp, column: String): TableRow = js.native
+  def matchRow(regexp: js.RegExp, column: Double): TableRow = js.native
   
   /**
     *   Finds the rows in the Table that match the regular
@@ -225,6 +229,11 @@ trait Table extends StObject {
   def removeTokens(chars: String, column: String): Unit = js.native
   def removeTokens(chars: String, column: Double): Unit = js.native
   
+  /**
+    *   An array containing the p5.TableRow objects that
+    *   make up the rows of the table. The same result as
+    *   calling getRows()
+    */
   var rows: js.Array[TableRow] = js.native
   
   /**

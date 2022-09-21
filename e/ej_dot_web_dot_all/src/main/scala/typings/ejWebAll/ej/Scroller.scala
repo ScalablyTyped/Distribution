@@ -340,11 +340,11 @@ object Scroller {
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
     
     /** returns the current data related to the event.
       */
-    var scrollData: js.UndefOr[js.Any] = js.undefined
+    var scrollData: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -367,11 +367,11 @@ object Scroller {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      inline def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
+      inline def setScrollData(value: Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
       
       inline def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
       
@@ -393,11 +393,11 @@ object Scroller {
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
     
     /** returns the current data related to the event.
       */
-    var scrollData: js.UndefOr[js.Any] = js.undefined
+    var scrollData: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -420,11 +420,11 @@ object Scroller {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      inline def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
+      inline def setScrollData(value: Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
       
       inline def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
       
@@ -446,11 +446,11 @@ object Scroller {
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
     
     /** returns the current data related to the event.
       */
-    var scrollData: js.UndefOr[js.Any] = js.undefined
+    var scrollData: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -473,11 +473,11 @@ object Scroller {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      inline def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
+      inline def setScrollData(value: Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
       
       inline def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
       
@@ -499,7 +499,7 @@ object Scroller {
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
   }
   object WheelMoveEventArgs {
     
@@ -518,7 +518,7 @@ object Scroller {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
@@ -536,11 +536,11 @@ object Scroller {
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
     
     /** returns the current data related to the event.
       */
-    var scrollData: js.UndefOr[js.Any] = js.undefined
+    var scrollData: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -563,11 +563,11 @@ object Scroller {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      inline def setScrollData(value: js.Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
+      inline def setScrollData(value: Any): Self = StObject.set(x, "scrollData", value.asInstanceOf[js.Any])
       
       inline def setScrollDataUndefined: Self = StObject.set(x, "scrollData", js.undefined)
       
@@ -589,7 +589,7 @@ object Scroller {
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.undefined
+    var originalEvent: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -612,7 +612,7 @@ object Scroller {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       

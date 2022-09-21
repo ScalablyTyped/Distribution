@@ -1,7 +1,6 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.enterprise.platformKeys.Token
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,10 @@ trait TypeofplatformKeys extends StObject {
     * @param challenge A challenge as emitted by the Verified Access Web API.
     * @param callback Called back with the challenge response.
     */
-  def challengeMachineKey(challenge: ArrayBuffer, callback: js.Function1[/* response */ ArrayBuffer, Unit]): Unit = js.native
+  def challengeMachineKey(
+    challenge: js.typedarray.ArrayBuffer,
+    callback: js.Function1[/* response */ js.typedarray.ArrayBuffer, Unit]
+  ): Unit = js.native
   /**
     * @since **Since Chrome 59.** - Note: the parameter 'registerKey' requires at least Chrome 59
     * @description
@@ -52,9 +54,9 @@ trait TypeofplatformKeys extends StObject {
     * @param callback Called back with the challenge response.
     */
   def challengeMachineKey(
-    challenge: ArrayBuffer,
+    challenge: js.typedarray.ArrayBuffer,
     registerKey: Boolean,
-    callback: js.Function1[/* response */ ArrayBuffer, Unit]
+    callback: js.Function1[/* response */ js.typedarray.ArrayBuffer, Unit]
   ): Unit = js.native
   
   /**
@@ -78,9 +80,9 @@ trait TypeofplatformKeys extends StObject {
     * @param callback Called back with the challenge response.
     */
   def challengeUserKey(
-    challenge: ArrayBuffer,
+    challenge: js.typedarray.ArrayBuffer,
     registerKey: Boolean,
-    callback: js.Function1[/* response */ ArrayBuffer, Unit]
+    callback: js.Function1[/* response */ js.typedarray.ArrayBuffer, Unit]
   ): Unit = js.native
   
   /**
@@ -89,7 +91,10 @@ trait TypeofplatformKeys extends StObject {
     * @param tokenId The id of a Token returned by getTokens.
     * @param callback Called back with the list of the available certificates.
     */
-  def getCertificates(tokenId: String, callback: js.Function1[/* certificates */ js.Array[ArrayBuffer], Unit]): Unit = js.native
+  def getCertificates(
+    tokenId: String,
+    callback: js.Function1[/* certificates */ js.Array[js.typedarray.ArrayBuffer], Unit]
+  ): Unit = js.native
   
   /**
     * Returns the available Tokens.
@@ -108,7 +113,7 @@ trait TypeofplatformKeys extends StObject {
     * @param certificate The DER encoding of a X.509 certificate.
     * @param [callback] Called back when this operation is finished.
     */
-  def importCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  def importCertificate(tokenId: String, certificate: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * Removes certificate from the given token if present.
@@ -119,5 +124,5 @@ trait TypeofplatformKeys extends StObject {
     * @param certificate The DER encoding of a X.509 certificate.
     * @param [callback] Called back when this operation is finished.
     */
-  def removeCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  def removeCertificate(tokenId: String, certificate: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
 }

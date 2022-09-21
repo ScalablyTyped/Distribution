@@ -27,11 +27,11 @@ object End {
     
     inline def setPathToEnd(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "pathToEnd", value.asInstanceOf[js.Any])
     
-    inline def setPathToEndVarargs(value: js.Array[Double]*): Self = StObject.set(x, "pathToEnd", js.Array(value :_*))
+    inline def setPathToEndVarargs(value: js.Array[Double]*): Self = StObject.set(x, "pathToEnd", js.Array(value*))
     
     inline def setPathToStart(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "pathToStart", value.asInstanceOf[js.Any])
     
-    inline def setPathToStartVarargs(value: js.Array[Double]*): Self = StObject.set(x, "pathToStart", js.Array(value :_*))
+    inline def setPathToStartVarargs(value: js.Array[Double]*): Self = StObject.set(x, "pathToStart", js.Array(value*))
     
     inline def setStart(value: X): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }

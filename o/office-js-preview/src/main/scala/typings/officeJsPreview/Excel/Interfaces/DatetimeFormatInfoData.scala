@@ -8,41 +8,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatetimeFormatInfoData extends StObject {
   
   /**
-    *
     * Gets the string used as the date separator. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var dateSeparator: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the format string for a long date value. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var longDatePattern: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the format string for a long time value. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var longTimePattern: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the format string for a short date value. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var shortDatePattern: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the string used as the time separator. This is based on current system settings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var timeSeparator: js.UndefOr[String] = js.undefined

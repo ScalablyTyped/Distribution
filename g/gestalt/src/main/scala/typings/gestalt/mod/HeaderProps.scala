@@ -6,32 +6,30 @@ import typings.gestalt.gestaltNumbers.`3`
 import typings.gestalt.gestaltNumbers.`4`
 import typings.gestalt.gestaltNumbers.`5`
 import typings.gestalt.gestaltNumbers.`6`
-import typings.gestalt.gestaltStrings.blue
+import typings.gestalt.gestaltStrings.`100`
+import typings.gestalt.gestaltStrings.`200`
+import typings.gestalt.gestaltStrings.`300`
+import typings.gestalt.gestaltStrings.`400`
+import typings.gestalt.gestaltStrings.`500`
+import typings.gestalt.gestaltStrings.`600`
 import typings.gestalt.gestaltStrings.breakWord
 import typings.gestalt.gestaltStrings.center
-import typings.gestalt.gestaltStrings.darkGray
-import typings.gestalt.gestaltStrings.eggplant
-import typings.gestalt.gestaltStrings.gray
-import typings.gestalt.gestaltStrings.green
+import typings.gestalt.gestaltStrings.dark
+import typings.gestalt.gestaltStrings.default
+import typings.gestalt.gestaltStrings.end
+import typings.gestalt.gestaltStrings.error
+import typings.gestalt.gestaltStrings.forceLeft
+import typings.gestalt.gestaltStrings.forceRight
+import typings.gestalt.gestaltStrings.inverse
 import typings.gestalt.gestaltStrings.justify
-import typings.gestalt.gestaltStrings.left
-import typings.gestalt.gestaltStrings.lg
-import typings.gestalt.gestaltStrings.lightGray
-import typings.gestalt.gestaltStrings.maroon
-import typings.gestalt.gestaltStrings.md
-import typings.gestalt.gestaltStrings.midnight
-import typings.gestalt.gestaltStrings.navy
+import typings.gestalt.gestaltStrings.light
+import typings.gestalt.gestaltStrings.none
 import typings.gestalt.gestaltStrings.normal
-import typings.gestalt.gestaltStrings.olive
-import typings.gestalt.gestaltStrings.orange
-import typings.gestalt.gestaltStrings.orchid
-import typings.gestalt.gestaltStrings.pine
-import typings.gestalt.gestaltStrings.purple
-import typings.gestalt.gestaltStrings.red
-import typings.gestalt.gestaltStrings.right
-import typings.gestalt.gestaltStrings.sm
-import typings.gestalt.gestaltStrings.watermelon
-import typings.gestalt.gestaltStrings.white
+import typings.gestalt.gestaltStrings.shopping
+import typings.gestalt.gestaltStrings.start
+import typings.gestalt.gestaltStrings.subtle
+import typings.gestalt.gestaltStrings.success
+import typings.gestalt.gestaltStrings.warning
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,21 +37,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeaderProps extends StObject {
   
-  var accessibilityLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
+  var accessibilityLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | none] = js.undefined
   
-  var align: js.UndefOr[left | right | center | justify] = js.undefined
+  var align: js.UndefOr[start | end | center | justify | forceLeft | forceRight] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
-  var color: js.UndefOr[
-    blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
-  ] = js.undefined
+  var color: js.UndefOr[default | subtle | success | error | warning | shopping | inverse | light | dark] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
+  var lineClamp: js.UndefOr[Double] = js.undefined
+  
   var overflow: js.UndefOr[normal | breakWord] = js.undefined
   
-  var size: js.UndefOr[sm | md | lg] = js.undefined
+  var size: js.UndefOr[`100` | `200` | `300` | `400` | `500` | `600`] = js.undefined
   
   var truncate: js.UndefOr[Boolean] = js.undefined
 }
@@ -66,11 +64,11 @@ object HeaderProps {
   
   extension [Self <: HeaderProps](x: Self) {
     
-    inline def setAccessibilityLevel(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "accessibilityLevel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLevel(value: `1` | `2` | `3` | `4` | `5` | `6` | none): Self = StObject.set(x, "accessibilityLevel", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLevelUndefined: Self = StObject.set(x, "accessibilityLevel", js.undefined)
     
-    inline def setAlign(value: left | right | center | justify): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: start | end | center | justify | forceLeft | forceRight): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
@@ -78,9 +76,7 @@ object HeaderProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setColor(
-      value: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
-    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: default | subtle | success | error | warning | shopping | inverse | light | dark): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
@@ -88,11 +84,15 @@ object HeaderProps {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
+    inline def setLineClamp(value: Double): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
+    
+    inline def setLineClampUndefined: Self = StObject.set(x, "lineClamp", js.undefined)
+    
     inline def setOverflow(value: normal | breakWord): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    inline def setSize(value: sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: `100` | `200` | `300` | `400` | `500` | `600`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     

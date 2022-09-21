@@ -1,0 +1,36 @@
+package typings.awsSdk.wellarchitectedMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait GetLensReviewOutput extends StObject {
+  
+  var LensReview: js.UndefOr[typings.awsSdk.wellarchitectedMod.LensReview] = js.undefined
+  
+  var MilestoneNumber: js.UndefOr[typings.awsSdk.wellarchitectedMod.MilestoneNumber] = js.undefined
+  
+  var WorkloadId: js.UndefOr[typings.awsSdk.wellarchitectedMod.WorkloadId] = js.undefined
+}
+object GetLensReviewOutput {
+  
+  inline def apply(): GetLensReviewOutput = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[GetLensReviewOutput]
+  }
+  
+  extension [Self <: GetLensReviewOutput](x: Self) {
+    
+    inline def setLensReview(value: LensReview): Self = StObject.set(x, "LensReview", value.asInstanceOf[js.Any])
+    
+    inline def setLensReviewUndefined: Self = StObject.set(x, "LensReview", js.undefined)
+    
+    inline def setMilestoneNumber(value: MilestoneNumber): Self = StObject.set(x, "MilestoneNumber", value.asInstanceOf[js.Any])
+    
+    inline def setMilestoneNumberUndefined: Self = StObject.set(x, "MilestoneNumber", js.undefined)
+    
+    inline def setWorkloadId(value: WorkloadId): Self = StObject.set(x, "WorkloadId", value.asInstanceOf[js.Any])
+    
+    inline def setWorkloadIdUndefined: Self = StObject.set(x, "WorkloadId", js.undefined)
+  }
+}

@@ -10,15 +10,12 @@ Cordova plugin to return the version number of the current app
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-app-version |
 | Keywords           | cordova, ecosystem:cordova, app, version, appversion, plugin |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 1062192 |
-| # stars            | 5 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 93716.33333333333 |
+| # stars            | 393.0 |
 
 ## Links
-- [Homepage](https://github.com/sampart/cordova-plugin-app-version#readme)
-- [Bugs](https://github.com/sampart/cordova-plugin-app-version/issues)
-- [Repository](https://github.com/sampart/cordova-plugin-app-version)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-app-version)
     
 

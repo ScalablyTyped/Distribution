@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.TileLayout")
 @js.native
-class TileLayout protected ()
+open class TileLayout protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.TileLayout {
   def this(element: Element) = this()

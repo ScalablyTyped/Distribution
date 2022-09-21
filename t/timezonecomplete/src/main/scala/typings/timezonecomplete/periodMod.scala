@@ -16,7 +16,7 @@ object periodMod {
   
   @JSImport("timezonecomplete/dist/lib/period", "Period")
   @js.native
-  class Period protected () extends StObject {
+  open class Period protected () extends StObject {
     /**
       * Constructor
       * LIMITATION: if dst equals RegularLocalTime, and unit is Second, Minute or Hour,
@@ -80,48 +80,48 @@ object periodMod {
       * Weeks are converted back to days.
       * @throws nothing
       */
-    /* private */ var _calcInternalValues: js.Any = js.native
+    /* private */ var _calcInternalValues: Any = js.native
     
     /**
       * Corrects the difference between _reference and _intReference.
       * @throws nothing
       */
-    /* private */ var _correctDay: js.Any = js.native
+    /* private */ var _correctDay: Any = js.native
     
     /**
       * DST handling
       */
-    /* private */ var _dst: js.Any = js.native
+    /* private */ var _dst: Any = js.native
     
     /**
       * Returns true if DST handling is relevant for us.
       * (i.e. if the reference time zone has DST)
       * @throws nothing
       */
-    /* private */ var _dstRelevant: js.Any = js.native
+    /* private */ var _dstRelevant: Any = js.native
     
     /**
       * Normalized internal DST handling. If DST handling is irrelevant
       * (because the reference time zone does not have DST)
       * then it is set to RegularInterval
       */
-    /* private */ var _intDst: js.Any = js.native
+    /* private */ var _intDst: Any = js.native
     
     /**
       * Normalized interval
       */
-    /* private */ var _intInterval: js.Any = js.native
+    /* private */ var _intInterval: Any = js.native
     
     /**
       * Normalized reference date, has day-of-month <= 28 for Monthly
       * period, or for Yearly period if month is February
       */
-    /* private */ var _intReference: js.Any = js.native
+    /* private */ var _intReference: Any = js.native
     
     /**
       * Interval
       */
-    /* private */ var _interval: js.Any = js.native
+    /* private */ var _interval: Any = js.native
     
     /**
       * If this._internalUnit in [Month, Year], normalizes the day-of-month
@@ -129,12 +129,12 @@ object periodMod {
       * @return a new date if different, otherwise the exact same object (no clone!)
       * @throws nothing
       */
-    /* private */ var _normalizeDay: js.Any = js.native
+    /* private */ var _normalizeDay: Any = js.native
     
     /**
       * Reference moment of period
       */
-    /* private */ var _reference: js.Any = js.native
+    /* private */ var _reference: Any = js.native
     
     /**
       * The amount of units of the interval
@@ -315,7 +315,7 @@ object periodMod {
     /* 1 */ val RegularLocalTime: typings.timezonecomplete.periodMod.PeriodDst.RegularLocalTime & Double = js.native
   }
   
-  inline def isPeriod(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeriod")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean]
+  inline def isPeriod(value: Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeriod")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean]
   
   inline def isValidPeriodJson(json: PeriodJson): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPeriodJson")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

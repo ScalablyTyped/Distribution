@@ -17,16 +17,16 @@ object Events {
     /**
       * An array of the object(s) that have been added. May be a single body, constraint, composite or a mixture of these.
       */
-    var `object`: js.Array[js.Any]
+    var `object`: js.Array[Any]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
   }
   object AfterAddEvent {
     
-    inline def apply(name: String, `object`: js.Array[js.Any], source: js.Any): AfterAddEvent = {
+    inline def apply(name: String, `object`: js.Array[Any], source: Any): AfterAddEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AfterAddEvent]
@@ -36,11 +36,11 @@ object Events {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Array[Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
+      inline def setObjectVarargs(value: Any*): Self = StObject.set(x, "object", js.Array(value*))
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,16 +54,16 @@ object Events {
     /**
       * An array of the object(s) that were removed. May be a single body, constraint, composite or a mixture of these.
       */
-    var `object`: js.Array[js.Any]
+    var `object`: js.Array[Any]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
   }
   object AfterRemoveEvent {
     
-    inline def apply(name: String, `object`: js.Array[js.Any], source: js.Any): AfterRemoveEvent = {
+    inline def apply(name: String, `object`: js.Array[Any], source: Any): AfterRemoveEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AfterRemoveEvent]
@@ -73,11 +73,11 @@ object Events {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Array[Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
+      inline def setObjectVarargs(value: Any*): Self = StObject.set(x, "object", js.Array(value*))
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,7 +91,7 @@ object Events {
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
     
     /**
       * The Matter Engine `timing.timestamp` value for the event.
@@ -100,7 +100,7 @@ object Events {
   }
   object AfterUpdateEvent {
     
-    inline def apply(name: String, source: js.Any, timestamp: Double): AfterUpdateEvent = {
+    inline def apply(name: String, source: Any, timestamp: Double): AfterUpdateEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[AfterUpdateEvent]
     }
@@ -109,7 +109,7 @@ object Events {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
@@ -125,16 +125,16 @@ object Events {
     /**
       * An array of the object(s) to be added. May be a single body, constraint, composite or a mixture of these.
       */
-    var `object`: js.Array[js.Any]
+    var `object`: js.Array[Any]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
   }
   object BeforeAddEvent {
     
-    inline def apply(name: String, `object`: js.Array[js.Any], source: js.Any): BeforeAddEvent = {
+    inline def apply(name: String, `object`: js.Array[Any], source: Any): BeforeAddEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeAddEvent]
@@ -144,11 +144,11 @@ object Events {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Array[Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
+      inline def setObjectVarargs(value: Any*): Self = StObject.set(x, "object", js.Array(value*))
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,16 +162,16 @@ object Events {
     /**
       * An array of the object(s) to be removed. May be a single body, constraint, composite or a mixture of these.
       */
-    var `object`: js.Array[js.Any]
+    var `object`: js.Array[Any]
     
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
   }
   object BeforeRemoveEvent {
     
-    inline def apply(name: String, `object`: js.Array[js.Any], source: js.Any): BeforeRemoveEvent = {
+    inline def apply(name: String, `object`: js.Array[Any], source: Any): BeforeRemoveEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeRemoveEvent]
@@ -181,11 +181,11 @@ object Events {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Array[Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      inline def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
+      inline def setObjectVarargs(value: Any*): Self = StObject.set(x, "object", js.Array(value*))
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,7 +199,7 @@ object Events {
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
     
     /**
       * The Matter Engine `timing.timestamp` value for the event.
@@ -208,7 +208,7 @@ object Events {
   }
   object BeforeUpdateEvent {
     
-    inline def apply(name: String, source: js.Any, timestamp: Double): BeforeUpdateEvent = {
+    inline def apply(name: String, source: Any, timestamp: Double): BeforeUpdateEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeUpdateEvent]
     }
@@ -217,7 +217,7 @@ object Events {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
@@ -238,7 +238,7 @@ object Events {
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
     
     /**
       * The Matter Engine `timing.timestamp` value for the event.
@@ -247,7 +247,7 @@ object Events {
   }
   object CollisionActiveEvent {
     
-    inline def apply(name: String, pairs: js.Array[MatterCollisionData], source: js.Any, timestamp: Double): CollisionActiveEvent = {
+    inline def apply(name: String, pairs: js.Array[MatterCollisionData], source: Any, timestamp: Double): CollisionActiveEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pairs = pairs.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollisionActiveEvent]
     }
@@ -258,9 +258,9 @@ object Events {
       
       inline def setPairs(value: js.Array[MatterCollisionData]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
       
-      inline def setPairsVarargs(value: MatterCollisionData*): Self = StObject.set(x, "pairs", js.Array(value :_*))
+      inline def setPairsVarargs(value: MatterCollisionData*): Self = StObject.set(x, "pairs", js.Array(value*))
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
@@ -281,7 +281,7 @@ object Events {
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
     
     /**
       * The Matter Engine `timing.timestamp` value for the event.
@@ -290,7 +290,7 @@ object Events {
   }
   object CollisionEndEvent {
     
-    inline def apply(name: String, pairs: js.Array[MatterCollisionData], source: js.Any, timestamp: Double): CollisionEndEvent = {
+    inline def apply(name: String, pairs: js.Array[MatterCollisionData], source: Any, timestamp: Double): CollisionEndEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pairs = pairs.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollisionEndEvent]
     }
@@ -301,9 +301,9 @@ object Events {
       
       inline def setPairs(value: js.Array[MatterCollisionData]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
       
-      inline def setPairsVarargs(value: MatterCollisionData*): Self = StObject.set(x, "pairs", js.Array(value :_*))
+      inline def setPairsVarargs(value: MatterCollisionData*): Self = StObject.set(x, "pairs", js.Array(value*))
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
@@ -324,7 +324,7 @@ object Events {
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
     
     /**
       * The Matter Engine `timing.timestamp` value for the event.
@@ -333,7 +333,7 @@ object Events {
   }
   object CollisionStartEvent {
     
-    inline def apply(name: String, pairs: js.Array[MatterCollisionData], source: js.Any, timestamp: Double): CollisionStartEvent = {
+    inline def apply(name: String, pairs: js.Array[MatterCollisionData], source: Any, timestamp: Double): CollisionStartEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pairs = pairs.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[CollisionStartEvent]
     }
@@ -344,9 +344,9 @@ object Events {
       
       inline def setPairs(value: js.Array[MatterCollisionData]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
       
-      inline def setPairsVarargs(value: MatterCollisionData*): Self = StObject.set(x, "pairs", js.Array(value :_*))
+      inline def setPairsVarargs(value: MatterCollisionData*): Self = StObject.set(x, "pairs", js.Array(value*))
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
@@ -362,11 +362,11 @@ object Events {
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
   }
   object SleepEndEvent {
     
-    inline def apply(name: String, source: js.Any): SleepEndEvent = {
+    inline def apply(name: String, source: Any): SleepEndEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[SleepEndEvent]
     }
@@ -375,7 +375,7 @@ object Events {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -389,11 +389,11 @@ object Events {
     /**
       * The source object of the event.
       */
-    var source: js.Any
+    var source: Any
   }
   object SleepStartEvent {
     
-    inline def apply(name: String, source: js.Any): SleepStartEvent = {
+    inline def apply(name: String, source: Any): SleepStartEvent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[SleepStartEvent]
     }
@@ -402,7 +402,7 @@ object Events {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
 }

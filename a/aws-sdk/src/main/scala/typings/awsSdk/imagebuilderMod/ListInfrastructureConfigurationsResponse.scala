@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListInfrastructureConfigurationsResponse extends StObject {
   
   /**
-    * The list of infrastructure configurations. 
+    * The list of infrastructure configurations.
     */
   var infrastructureConfigurationSummaryList: js.UndefOr[InfrastructureConfigurationSummaryList] = js.undefined
   
@@ -17,7 +17,7 @@ trait ListInfrastructureConfigurationsResponse extends StObject {
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -34,7 +34,7 @@ object ListInfrastructureConfigurationsResponse {
     
     inline def setInfrastructureConfigurationSummaryListUndefined: Self = StObject.set(x, "infrastructureConfigurationSummaryList", js.undefined)
     
-    inline def setInfrastructureConfigurationSummaryListVarargs(value: InfrastructureConfigurationSummary*): Self = StObject.set(x, "infrastructureConfigurationSummaryList", js.Array(value :_*))
+    inline def setInfrastructureConfigurationSummaryListVarargs(value: InfrastructureConfigurationSummary*): Self = StObject.set(x, "infrastructureConfigurationSummaryList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

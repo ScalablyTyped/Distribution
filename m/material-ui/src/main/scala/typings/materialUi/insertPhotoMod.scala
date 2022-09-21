@@ -10,10 +10,10 @@ object insertPhotoMod {
   
   @JSImport("material-ui/svg-icons/editor/insert-photo", JSImport.Default)
   @js.native
-  class default () extends EditorInsertPhoto
+  open class default () extends EditorInsertPhoto
   
   @JSImport("material-ui/svg-icons/editor/insert-photo", "EditorInsertPhoto")
   @js.native
-  class EditorInsertPhoto ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorInsertPhoto ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

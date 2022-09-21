@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Output only.  Commute details related to this job.
-  */
 trait SchemaCommuteInfo extends StObject {
   
   /**
@@ -15,12 +12,9 @@ trait SchemaCommuteInfo extends StObject {
   var jobLocation: js.UndefOr[SchemaLocation] = js.undefined
   
   /**
-    * The number of seconds required to travel to the job location from the
-    * query location. A duration of 0 seconds indicates that the job is not
-    * reachable within the requested duration, but was returned as part of an
-    * expanded query.
+    * The number of seconds required to travel to the job location from the query location. A duration of 0 seconds indicates that the job is not reachable within the requested duration, but was returned as part of an expanded query.
     */
-  var travelDuration: js.UndefOr[String] = js.undefined
+  var travelDuration: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCommuteInfo {
   
@@ -36,6 +30,8 @@ object SchemaCommuteInfo {
     inline def setJobLocationUndefined: Self = StObject.set(x, "jobLocation", js.undefined)
     
     inline def setTravelDuration(value: String): Self = StObject.set(x, "travelDuration", value.asInstanceOf[js.Any])
+    
+    inline def setTravelDurationNull: Self = StObject.set(x, "travelDuration", null)
     
     inline def setTravelDurationUndefined: Self = StObject.set(x, "travelDuration", js.undefined)
   }

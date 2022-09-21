@@ -1,5 +1,6 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.mod.HoverLabel
 import typings.plotlyJs.mod.XAxisName
 import typings.plotlyJs.mod.YAxisName
@@ -57,7 +58,7 @@ trait PartialAnnotationsArrowcolor extends StObject {
   
   var clicktoshow: js.UndefOr[`false` | onoff | onout] = js.undefined
   
-  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
+  var font: js.UndefOr[Partial[Font]] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -91,7 +92,7 @@ trait PartialAnnotationsArrowcolor extends StObject {
   
   var xanchor: js.UndefOr[auto | left | center | right] = js.undefined
   
-  var xclick: js.UndefOr[js.Any] = js.undefined
+  var xclick: js.UndefOr[Any] = js.undefined
   
   var xref: js.UndefOr[paper | XAxisName] = js.undefined
   
@@ -101,7 +102,7 @@ trait PartialAnnotationsArrowcolor extends StObject {
   
   var yanchor: js.UndefOr[auto | top | middle | bottom] = js.undefined
   
-  var yclick: js.UndefOr[js.Any] = js.undefined
+  var yclick: js.UndefOr[Any] = js.undefined
   
   var yref: js.UndefOr[paper | YAxisName] = js.undefined
   
@@ -180,7 +181,7 @@ object PartialAnnotationsArrowcolor {
     
     inline def setClicktoshowUndefined: Self = StObject.set(x, "clicktoshow", js.undefined)
     
-    inline def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Partial[Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
@@ -248,7 +249,7 @@ object PartialAnnotationsArrowcolor {
     
     inline def setXanchorUndefined: Self = StObject.set(x, "xanchor", js.undefined)
     
-    inline def setXclick(value: js.Any): Self = StObject.set(x, "xclick", value.asInstanceOf[js.Any])
+    inline def setXclick(value: Any): Self = StObject.set(x, "xclick", value.asInstanceOf[js.Any])
     
     inline def setXclickUndefined: Self = StObject.set(x, "xclick", js.undefined)
     
@@ -268,7 +269,7 @@ object PartialAnnotationsArrowcolor {
     
     inline def setYanchorUndefined: Self = StObject.set(x, "yanchor", js.undefined)
     
-    inline def setYclick(value: js.Any): Self = StObject.set(x, "yclick", value.asInstanceOf[js.Any])
+    inline def setYclick(value: Any): Self = StObject.set(x, "yclick", value.asInstanceOf[js.Any])
     
     inline def setYclickUndefined: Self = StObject.set(x, "yclick", js.undefined)
     

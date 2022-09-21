@@ -84,7 +84,7 @@ trait GridsterOptions extends StObject {
   /**
     * Return the data you want for each widget in the serialization.
     **/
-  var serialize_params: js.UndefOr[js.Function2[/* $w */ JQuery, /* wgd */ GridsterCoords, js.Any]] = js.undefined
+  var serialize_params: js.UndefOr[js.Function2[/* $w */ JQuery, /* wgd */ GridsterCoords, Any]] = js.undefined
   
   /**
     * Base widget dimensions in pixels.  The first index for the width and the second for the height.
@@ -167,7 +167,7 @@ object GridsterOptions {
     
     inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
-    inline def setSerialize_params(value: (/* $w */ JQuery, /* wgd */ GridsterCoords) => js.Any): Self = StObject.set(x, "serialize_params", js.Any.fromFunction2(value))
+    inline def setSerialize_params(value: (/* $w */ JQuery, /* wgd */ GridsterCoords) => Any): Self = StObject.set(x, "serialize_params", js.Any.fromFunction2(value))
     
     inline def setSerialize_paramsUndefined: Self = StObject.set(x, "serialize_params", js.undefined)
     
@@ -175,18 +175,18 @@ object GridsterOptions {
     
     inline def setWidget_base_dimensionsUndefined: Self = StObject.set(x, "widget_base_dimensions", js.undefined)
     
-    inline def setWidget_base_dimensionsVarargs(value: (auto | Double)*): Self = StObject.set(x, "widget_base_dimensions", js.Array(value :_*))
+    inline def setWidget_base_dimensionsVarargs(value: (auto | Double)*): Self = StObject.set(x, "widget_base_dimensions", js.Array(value*))
     
     inline def setWidget_margins(value: js.Array[Double]): Self = StObject.set(x, "widget_margins", value.asInstanceOf[js.Any])
     
     inline def setWidget_marginsUndefined: Self = StObject.set(x, "widget_margins", js.undefined)
     
-    inline def setWidget_marginsVarargs(value: Double*): Self = StObject.set(x, "widget_margins", js.Array(value :_*))
+    inline def setWidget_marginsVarargs(value: Double*): Self = StObject.set(x, "widget_margins", js.Array(value*))
     
     inline def setWidget_selector(value: String | js.Array[HTMLElement]): Self = StObject.set(x, "widget_selector", value.asInstanceOf[js.Any])
     
     inline def setWidget_selectorUndefined: Self = StObject.set(x, "widget_selector", js.undefined)
     
-    inline def setWidget_selectorVarargs(value: HTMLElement*): Self = StObject.set(x, "widget_selector", js.Array(value :_*))
+    inline def setWidget_selectorVarargs(value: HTMLElement*): Self = StObject.set(x, "widget_selector", js.Array(value*))
   }
 }

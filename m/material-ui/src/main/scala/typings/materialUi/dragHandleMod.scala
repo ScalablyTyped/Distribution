@@ -10,10 +10,10 @@ object dragHandleMod {
   
   @JSImport("material-ui/svg-icons/editor/drag-handle", JSImport.Default)
   @js.native
-  class default () extends EditorDragHandle
+  open class default () extends EditorDragHandle
   
   @JSImport("material-ui/svg-icons/editor/drag-handle", "EditorDragHandle")
   @js.native
-  class EditorDragHandle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorDragHandle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

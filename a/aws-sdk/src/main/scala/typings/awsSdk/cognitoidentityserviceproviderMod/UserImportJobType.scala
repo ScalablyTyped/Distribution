@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UserImportJobType extends StObject {
   
   /**
-    * The role ARN for the Amazon CloudWatch Logging role for the user import job. For more information, see "Creating the CloudWatch Logs IAM Role" in the Amazon Cognito Developer Guide.
+    * The role Amazon Resource Name (ARN) for the Amazon CloudWatch Logging role for the user import job. For more information, see "Creating the CloudWatch Logs IAM Role" in the Amazon Cognito Developer Guide.
     */
   var CloudWatchLogsRoleArn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * The date when the user import job was completed.
     */
-  var CompletionDate: js.UndefOr[DateType] = js.undefined
+  var CompletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The message returned when the user import job is completed.
@@ -24,10 +24,10 @@ trait UserImportJobType extends StObject {
   /**
     * The date the user import job was created.
     */
-  var CreationDate: js.UndefOr[DateType] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The number of users that could not be imported.
+    * The number of users that couldn't be imported.
     */
   var FailedUsers: js.UndefOr[LongType] = js.undefined
   
@@ -59,10 +59,10 @@ trait UserImportJobType extends StObject {
   /**
     * The date when the user import job was started.
     */
-  var StartDate: js.UndefOr[DateType] = js.undefined
+  var StartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the user import job. One of the following:    Created - The job was created but not started.    Pending - A transition state. You have started the job, but it has not begun importing users yet.    InProgress - The job has started, and users are being imported.    Stopping - You have stopped the job, but the job has not stopped importing users yet.    Stopped - You have stopped the job, and the job has stopped importing users.    Succeeded - The job has completed successfully.    Failed - The job has stopped due to an error.    Expired - You created a job, but did not start the job within 24-48 hours. All data associated with the job was deleted, and the job cannot be started.  
+    * The status of the user import job. One of the following:    Created - The job was created but not started.    Pending - A transition state. You have started the job, but it has not begun importing users yet.    InProgress - The job has started, and users are being imported.    Stopping - You have stopped the job, but the job has not stopped importing users yet.    Stopped - You have stopped the job, and the job has stopped importing users.    Succeeded - The job has completed successfully.    Failed - The job has stopped due to an error.    Expired - You created a job, but did not start the job within 24-48 hours. All data associated with the job was deleted, and the job can't be started.  
     */
   var Status: js.UndefOr[UserImportJobStatusType] = js.undefined
   
@@ -84,7 +84,7 @@ object UserImportJobType {
     
     inline def setCloudWatchLogsRoleArnUndefined: Self = StObject.set(x, "CloudWatchLogsRoleArn", js.undefined)
     
-    inline def setCompletionDate(value: DateType): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: js.Date): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
     inline def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
     
@@ -92,7 +92,7 @@ object UserImportJobType {
     
     inline def setCompletionMessageUndefined: Self = StObject.set(x, "CompletionMessage", js.undefined)
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -120,7 +120,7 @@ object UserImportJobType {
     
     inline def setSkippedUsersUndefined: Self = StObject.set(x, "SkippedUsers", js.undefined)
     
-    inline def setStartDate(value: DateType): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     

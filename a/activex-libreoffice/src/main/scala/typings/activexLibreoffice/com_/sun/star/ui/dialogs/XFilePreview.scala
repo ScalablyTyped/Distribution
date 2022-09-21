@@ -86,7 +86,7 @@ trait XFilePreview
     * @see com.sun.star.ui.dialogs.FilePreviewImageFormats
     * @throws com::sun::star::lang::IllegalArgumentException If the specified image format is invalid or not supported by the preview implementation
     */
-  def setImage(aImageFormat: Double, aImage: js.Any): Unit
+  def setImage(aImageFormat: Double, aImage: Any): Unit
   
   /**
     * Optionally sets the current show state of the preview. It is possible that the preview implementation doesn't support hiding the preview.
@@ -109,9 +109,9 @@ object XFilePreview {
     getShowState: () => Boolean,
     getSupportedImageFormats: () => SafeArray[Double],
     getTargetColorDepth: () => Color,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    setImage: (Double, js.Any) => Unit,
+    setImage: (Double, Any) => Unit,
     setShowState: Boolean => Boolean
   ): XFilePreview = {
     val __obj = js.Dynamic.literal(AvailableHeight = AvailableHeight.asInstanceOf[js.Any], AvailableWidth = AvailableWidth.asInstanceOf[js.Any], ShowState = ShowState.asInstanceOf[js.Any], SupportedImageFormats = SupportedImageFormats.asInstanceOf[js.Any], TargetColorDepth = TargetColorDepth.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAvailableHeight = js.Any.fromFunction0(getAvailableHeight), getAvailableWidth = js.Any.fromFunction0(getAvailableWidth), getShowState = js.Any.fromFunction0(getShowState), getSupportedImageFormats = js.Any.fromFunction0(getSupportedImageFormats), getTargetColorDepth = js.Any.fromFunction0(getTargetColorDepth), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setImage = js.Any.fromFunction2(setImage), setShowState = js.Any.fromFunction1(setShowState))
@@ -134,7 +134,7 @@ object XFilePreview {
     
     inline def setGetTargetColorDepth(value: () => Color): Self = StObject.set(x, "getTargetColorDepth", js.Any.fromFunction0(value))
     
-    inline def setSetImage(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setImage", js.Any.fromFunction2(value))
+    inline def setSetImage(value: (Double, Any) => Unit): Self = StObject.set(x, "setImage", js.Any.fromFunction2(value))
     
     inline def setSetShowState(value: Boolean => Boolean): Self = StObject.set(x, "setShowState", js.Any.fromFunction1(value))
     

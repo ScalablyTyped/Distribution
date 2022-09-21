@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Storage.StreamedFileDataRequest")
 @js.native
-class StreamedFileDataRequest ()
+open class StreamedFileDataRequest ()
   extends StObject
      with typings.winrt.Windows.Storage.StreamedFileDataRequest {
   

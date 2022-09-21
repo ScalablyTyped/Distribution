@@ -9,12 +9,16 @@ trait LayerOptionsProperties extends StObject {
   /**
     * Applicable to [Imagery Layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-LayerOptions.html#returnTopmostRaster)
     */
   var returnTopmostRaster: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Applicable to [Imagery Layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-LayerOptions.html#showNoDataRecords)
     */

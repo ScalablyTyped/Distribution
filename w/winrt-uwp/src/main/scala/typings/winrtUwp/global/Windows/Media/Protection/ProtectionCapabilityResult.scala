@@ -13,17 +13,17 @@ object ProtectionCapabilityResult {
   /* unmapped type */
   @JSGlobal("Windows.Media.Protection.ProtectionCapabilityResult.maybe")
   @js.native
-  def maybe: js.Any = js.native
-  inline def maybe_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maybe")(x.asInstanceOf[js.Any])
+  def maybe: Any = js.native
+  inline def maybe_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maybe")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.Media.Protection.ProtectionCapabilityResult.notSupported")
   @js.native
-  def notSupported: js.Any = js.native
-  inline def notSupported_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notSupported")(x.asInstanceOf[js.Any])
+  def notSupported: Any = js.native
+  inline def notSupported_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notSupported")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   @JSGlobal("Windows.Media.Protection.ProtectionCapabilityResult.probably")
   @js.native
-  def probably: js.Any = js.native
-  inline def probably_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("probably")(x.asInstanceOf[js.Any])
+  def probably: Any = js.native
+  inline def probably_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("probably")(x.asInstanceOf[js.Any])
 }

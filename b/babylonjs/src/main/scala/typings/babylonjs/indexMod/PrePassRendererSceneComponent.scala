@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "PrePassRendererSceneComponent")
 @js.native
-class PrePassRendererSceneComponent protected ()
+open class PrePassRendererSceneComponent protected ()
   extends typings.babylonjs.renderingIndexMod.PrePassRendererSceneComponent {
   /**
     * Creates a new instance of the component for the given scene

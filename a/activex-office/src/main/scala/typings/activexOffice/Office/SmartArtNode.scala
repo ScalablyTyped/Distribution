@@ -16,7 +16,7 @@ trait SmartArtNode extends StObject {
   def AddNode(Position: MsoSmartArtNodePosition): SmartArtNode = js.native
   def AddNode(Position: MsoSmartArtNodePosition, Type: MsoSmartArtNodeType): SmartArtNode = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Creator: Double = js.native
   
@@ -40,7 +40,7 @@ trait SmartArtNode extends StObject {
   
   var OrgChartLayout: MsoOrgChartLayoutType = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentNode: SmartArtNode = js.native
   
@@ -50,7 +50,7 @@ trait SmartArtNode extends StObject {
   
   def ReorderUp(): Unit = js.native
   
-  def Shapes(Index: js.Any): Shape = js.native
+  def Shapes(Index: Any): Shape = js.native
   @JSName("Shapes")
   val Shapes_Original: ShapeRange = js.native
   

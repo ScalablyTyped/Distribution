@@ -1,26 +1,44 @@
 package typings.awsSdkTypes
 
 import typings.awsSdkTypes.utilMod.Provider
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object credentialsMod {
   
+  trait AwsCredentialIdentity extends StObject {
+    
+    /**
+      * A {Date} when the identity or credential will no longer be accepted.
+      */
+    val expiration: js.UndefOr[js.Date] = js.undefined
+  }
+  object AwsCredentialIdentity {
+    
+    inline def apply(): AwsCredentialIdentity = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AwsCredentialIdentity]
+    }
+    
+    extension [Self <: AwsCredentialIdentity](x: Self) {
+      
+      inline def setExpiration(value: js.Date): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      
+      inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+    }
+  }
+  
   type CredentialProvider = Provider[Credentials]
   
-  trait Credentials extends StObject {
+  trait Credentials
+    extends StObject
+       with AwsCredentialIdentity {
     
     /**
       * AWS access key ID
       */
     val accessKeyId: String
-    
-    /**
-      * A {Date} when these credentials will no longer be accepted.
-      */
-    val expiration: js.UndefOr[Date] = js.undefined
     
     /**
       * AWS secret access key
@@ -43,10 +61,6 @@ object credentialsMod {
     extension [Self <: Credentials](x: Self) {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
-      
-      inline def setExpiration(value: Date): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
-      
-      inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
       
       inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,7 @@
 package typings.reactTypingEffect
 
 import typings.react.mod.Component
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,10 @@ object mod {
   
   @JSImport("react-typing-effect", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactTypingEffectProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ReactTypingEffectProps, js.Object, Any]
   
-  type ReactTypingEffect = Component[ReactTypingEffectProps, js.Object, js.Any]
+  type ReactTypingEffect = Component[ReactTypingEffectProps, js.Object, Any]
   
   trait ReactTypingEffectProps extends StObject {
     
@@ -21,6 +22,8 @@ object mod {
     var cursor: js.UndefOr[String] = js.undefined
     
     var cursorClassName: js.UndefOr[String] = js.undefined
+    
+    var displayTextRenderer: js.UndefOr[js.Function2[/* text */ String, /* i */ Double, Element]] = js.undefined
     
     var eraseDelay: js.UndefOr[Double] = js.undefined
     
@@ -55,6 +58,10 @@ object mod {
       
       inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
+      inline def setDisplayTextRenderer(value: (/* text */ String, /* i */ Double) => Element): Self = StObject.set(x, "displayTextRenderer", js.Any.fromFunction2(value))
+      
+      inline def setDisplayTextRendererUndefined: Self = StObject.set(x, "displayTextRenderer", js.undefined)
+      
       inline def setEraseDelay(value: Double): Self = StObject.set(x, "eraseDelay", value.asInstanceOf[js.Any])
       
       inline def setEraseDelayUndefined: Self = StObject.set(x, "eraseDelay", js.undefined)
@@ -73,7 +80,7 @@ object mod {
       
       inline def setText(value: String | js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
       
       inline def setTypingDelay(value: Double): Self = StObject.set(x, "typingDelay", value.asInstanceOf[js.Any])
       

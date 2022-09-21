@@ -39,7 +39,7 @@ object ListFindingsRequest {
     
     inline def setAssessmentRunArnsUndefined: Self = StObject.set(x, "assessmentRunArns", js.undefined)
     
-    inline def setAssessmentRunArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentRunArns", js.Array(value :_*))
+    inline def setAssessmentRunArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentRunArns", js.Array(value*))
     
     inline def setFilter(value: FindingFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

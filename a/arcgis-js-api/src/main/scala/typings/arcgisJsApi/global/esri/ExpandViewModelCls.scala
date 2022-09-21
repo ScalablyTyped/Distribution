@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.ExpandViewModel")
 @js.native
-class ExpandViewModelCls ()
+/**
+  * Provides the logic for the [Expand](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand-ExpandViewModel.html)
+  */
+open class ExpandViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ExpandViewModel {
   def this(properties: ExpandViewModelProperties) = this()

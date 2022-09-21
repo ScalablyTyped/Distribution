@@ -9,6 +9,9 @@ trait Placement extends StObject {
   /** Account ID of this placement. This field can be left blank. */
   var accountId: js.UndefOr[String] = js.undefined
   
+  /** Whether this placement is active, inactive, archived or permanently archived. */
+  var activeStatus: js.UndefOr[String] = js.undefined
+  
   /** Whether this placement opts out of ad blocking. When true, ad blocking is disabled for this placement. When false, the campaign and site settings take effect. */
   var adBlockingOptOut: js.UndefOr[Boolean] = js.undefined
   
@@ -20,9 +23,6 @@ trait Placement extends StObject {
   
   /** Dimension value for the ID of the advertiser. This is a read-only, auto-generated field. */
   var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  
-  /** Whether this placement is archived. */
-  var archived: js.UndefOr[Boolean] = js.undefined
   
   /** Campaign ID of this placement. This field is a required field on insertion. */
   var campaignId: js.UndefOr[String] = js.undefined
@@ -76,8 +76,11 @@ trait Placement extends StObject {
   /** Lookback window settings for this placement. */
   var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.undefined
   
-  /** Name of this placement.This is a required field and must be less than or equal to 256 characters long. */
+  /** Name of this placement.This is a required field and must be less than or equal to 512 characters long. */
   var name: js.UndefOr[String] = js.undefined
+  
+  /** Measurement partner provided settings for a wrapped placement. */
+  var partnerWrappingData: js.UndefOr[MeasurementPartnerWrappingData] = js.undefined
   
   /** Whether payment was approved for this placement. This is a read-only field relevant only to publisher-paid placements. */
   var paymentApproved: js.UndefOr[Boolean] = js.undefined
@@ -154,6 +157,9 @@ trait Placement extends StObject {
     * longer supported. This field now defaults to HTML5 when the following values are provided: FLASH, BOTH.
     */
   var vpaidAdapterChoice: js.UndefOr[String] = js.undefined
+  
+  /** Whether this placement opts out of tag wrapping. */
+  var wrappingOptOut: js.UndefOr[Boolean] = js.undefined
 }
 object Placement {
   
@@ -168,6 +174,10 @@ object Placement {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
+    inline def setActiveStatus(value: String): Self = StObject.set(x, "activeStatus", value.asInstanceOf[js.Any])
+    
+    inline def setActiveStatusUndefined: Self = StObject.set(x, "activeStatus", js.undefined)
+    
     inline def setAdBlockingOptOut(value: Boolean): Self = StObject.set(x, "adBlockingOptOut", value.asInstanceOf[js.Any])
     
     inline def setAdBlockingOptOutUndefined: Self = StObject.set(x, "adBlockingOptOut", js.undefined)
@@ -176,7 +186,7 @@ object Placement {
     
     inline def setAdditionalSizesUndefined: Self = StObject.set(x, "additionalSizes", js.undefined)
     
-    inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value :_*))
+    inline def setAdditionalSizesVarargs(value: Size*): Self = StObject.set(x, "additionalSizes", js.Array(value*))
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
@@ -185,10 +195,6 @@ object Placement {
     inline def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
-    
-    inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
-    
-    inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
     inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
@@ -254,6 +260,10 @@ object Placement {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setPartnerWrappingData(value: MeasurementPartnerWrappingData): Self = StObject.set(x, "partnerWrappingData", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerWrappingDataUndefined: Self = StObject.set(x, "partnerWrappingData", js.undefined)
+    
     inline def setPaymentApproved(value: Boolean): Self = StObject.set(x, "paymentApproved", value.asInstanceOf[js.Any])
     
     inline def setPaymentApprovedUndefined: Self = StObject.set(x, "paymentApproved", js.undefined)
@@ -314,7 +324,7 @@ object Placement {
     
     inline def setTagFormatsUndefined: Self = StObject.set(x, "tagFormats", js.undefined)
     
-    inline def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value :_*))
+    inline def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value*))
     
     inline def setTagSetting(value: TagSetting): Self = StObject.set(x, "tagSetting", value.asInstanceOf[js.Any])
     
@@ -331,5 +341,9 @@ object Placement {
     inline def setVpaidAdapterChoice(value: String): Self = StObject.set(x, "vpaidAdapterChoice", value.asInstanceOf[js.Any])
     
     inline def setVpaidAdapterChoiceUndefined: Self = StObject.set(x, "vpaidAdapterChoice", js.undefined)
+    
+    inline def setWrappingOptOut(value: Boolean): Self = StObject.set(x, "wrappingOptOut", value.asInstanceOf[js.Any])
+    
+    inline def setWrappingOptOutUndefined: Self = StObject.set(x, "wrappingOptOut", js.undefined)
   }
 }

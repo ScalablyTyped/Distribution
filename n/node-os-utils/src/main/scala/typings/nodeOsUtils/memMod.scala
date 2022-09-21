@@ -8,7 +8,7 @@ object memMod {
   
   @JSImport("node-os-utils/lib/mem", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Mem {
     
@@ -88,11 +88,19 @@ object memMod {
     var freeMemPercentage: Double
     
     var usedMemMb: Double
+    
+    var usedMemPercentage: Double
   }
   object MemInfo {
     
-    inline def apply(freeMemMb: Double, freeMemPercentage: Double, totalMemMb: Double, usedMemMb: Double): MemInfo = {
-      val __obj = js.Dynamic.literal(freeMemMb = freeMemMb.asInstanceOf[js.Any], freeMemPercentage = freeMemPercentage.asInstanceOf[js.Any], totalMemMb = totalMemMb.asInstanceOf[js.Any], usedMemMb = usedMemMb.asInstanceOf[js.Any])
+    inline def apply(
+      freeMemMb: Double,
+      freeMemPercentage: Double,
+      totalMemMb: Double,
+      usedMemMb: Double,
+      usedMemPercentage: Double
+    ): MemInfo = {
+      val __obj = js.Dynamic.literal(freeMemMb = freeMemMb.asInstanceOf[js.Any], freeMemPercentage = freeMemPercentage.asInstanceOf[js.Any], totalMemMb = totalMemMb.asInstanceOf[js.Any], usedMemMb = usedMemMb.asInstanceOf[js.Any], usedMemPercentage = usedMemPercentage.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemInfo]
     }
     
@@ -101,6 +109,8 @@ object memMod {
       inline def setFreeMemPercentage(value: Double): Self = StObject.set(x, "freeMemPercentage", value.asInstanceOf[js.Any])
       
       inline def setUsedMemMb(value: Double): Self = StObject.set(x, "usedMemMb", value.asInstanceOf[js.Any])
+      
+      inline def setUsedMemPercentage(value: Double): Self = StObject.set(x, "usedMemPercentage", value.asInstanceOf[js.Any])
     }
   }
   

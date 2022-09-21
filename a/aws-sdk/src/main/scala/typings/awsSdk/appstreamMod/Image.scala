@@ -29,7 +29,7 @@ trait Image extends StObject {
   /**
     * The time the image was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description to display.
@@ -52,6 +52,11 @@ trait Image extends StObject {
   var ImageBuilderSupported: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Describes the errors that are returned when a new image can't be created.
+    */
+  var ImageErrors: js.UndefOr[ResourceErrors] = js.undefined
+  
+  /**
     * The permissions to provide to the destination AWS account for the specified image.
     */
   var ImagePermissions: js.UndefOr[typings.awsSdk.appstreamMod.ImagePermissions] = js.undefined
@@ -69,7 +74,7 @@ trait Image extends StObject {
   /**
     * The release date of the public base image. For private images, this date is the release date of the base image from which the image was created.
     */
-  var PublicBaseImageReleasedDate: js.UndefOr[Timestamp] = js.undefined
+  var PublicBaseImageReleasedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The image starts in the PENDING state. If image creation succeeds, the state is AVAILABLE. If image creation fails, the state is FAILED.
@@ -99,7 +104,7 @@ object Image {
     
     inline def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
     
-    inline def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value :_*))
+    inline def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value*))
     
     inline def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = StObject.set(x, "AppstreamAgentVersion", value.asInstanceOf[js.Any])
     
@@ -113,7 +118,7 @@ object Image {
     
     inline def setBaseImageArnUndefined: Self = StObject.set(x, "BaseImageArn", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -133,6 +138,12 @@ object Image {
     
     inline def setImageBuilderSupportedUndefined: Self = StObject.set(x, "ImageBuilderSupported", js.undefined)
     
+    inline def setImageErrors(value: ResourceErrors): Self = StObject.set(x, "ImageErrors", value.asInstanceOf[js.Any])
+    
+    inline def setImageErrorsUndefined: Self = StObject.set(x, "ImageErrors", js.undefined)
+    
+    inline def setImageErrorsVarargs(value: ResourceError*): Self = StObject.set(x, "ImageErrors", js.Array(value*))
+    
     inline def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "ImagePermissions", value.asInstanceOf[js.Any])
     
     inline def setImagePermissionsUndefined: Self = StObject.set(x, "ImagePermissions", js.undefined)
@@ -143,7 +154,7 @@ object Image {
     
     inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
-    inline def setPublicBaseImageReleasedDate(value: Timestamp): Self = StObject.set(x, "PublicBaseImageReleasedDate", value.asInstanceOf[js.Any])
+    inline def setPublicBaseImageReleasedDate(value: js.Date): Self = StObject.set(x, "PublicBaseImageReleasedDate", value.asInstanceOf[js.Any])
     
     inline def setPublicBaseImageReleasedDateUndefined: Self = StObject.set(x, "PublicBaseImageReleasedDate", js.undefined)
     

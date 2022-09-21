@@ -8,5 +8,5 @@ object updateCommentInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/UpdateCommentInput", "UpdateCommentInput")
   @js.native
-  val UpdateCommentInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateCommentInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

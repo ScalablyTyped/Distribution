@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.ByeUserAgentClient")
 @js.native
-class ByeUserAgentClient protected ()
+open class ByeUserAgentClient protected ()
   extends typings.sipJs.coreMod.ByeUserAgentClient {
   def this(dialog: typings.sipJs.dialogsMod.SessionDialog) = this()
   def this(dialog: typings.sipJs.dialogsMod.SessionDialog, delegate: OutgoingRequestDelegate) = this()

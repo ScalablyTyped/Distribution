@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("backbone.marionette", "CollectionView")
 @js.native
-class CollectionView[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */, TView /* <: View[TModel] */, TCollection /* <: Collection[TModel] */] () extends View[TModel] {
+open class CollectionView[TModel /* <: Model[Any, ModelSetOptions, Any] */, TView /* <: View[TModel] */, TCollection /* <: Collection[TModel] */] () extends View[TModel] {
   def this(options: CollectionViewOptions[TModel, TCollection]) = this()
   
   /**
@@ -89,7 +89,7 @@ class CollectionView[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */, 
     * listeners.
     */
   @JSName("destroy")
-  def destroy_MCollectionView(args: js.Any*): CollectionView[TModel, TView, TCollection] = js.native
+  def destroy_MCollectionView(args: Any*): CollectionView[TModel, TView, TCollection] = js.native
   
   /**
     * Specify a view to use if the collection has no children.

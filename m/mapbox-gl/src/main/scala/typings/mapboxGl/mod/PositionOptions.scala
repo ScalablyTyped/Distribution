@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "PositionOptions")
 @js.native
-class PositionOptions () extends StObject {
+open class PositionOptions () extends StObject {
   
   var enableHighAccuracy: js.UndefOr[Boolean] = js.native
   

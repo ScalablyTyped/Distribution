@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetInfrastructureConfigurationRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the infrastructure configuration that you want to retrieve. 
+    * The Amazon Resource Name (ARN) of the infrastructure configuration that you want to retrieve.
     */
   var infrastructureConfigurationArn: InfrastructureConfigurationArn
 }

@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "ListItem")
 @js.native
-class ListItem protected ()
-  extends Component[Expandable, js.Any] {
+open class ListItem protected () extends Component[Expandable, Any] {
   def this(props: HTMLAttributesidclassName & Expandable) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & Expandable, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & Expandable, context: Any) = this()
 }

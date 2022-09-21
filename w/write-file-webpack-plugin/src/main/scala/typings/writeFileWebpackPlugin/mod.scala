@@ -1,6 +1,6 @@
 package typings.writeFileWebpackPlugin
 
-import typings.std.RegExp
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("write-file-webpack-plugin", JSImport.Default)
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("write-file-webpack-plugin", JSImport.Default)
   @js.native
-  class default () extends StObject {
+  open class default () extends StObject {
     def this(userOptions: UserOptionsType) = this()
   }
   
@@ -44,7 +44,7 @@ object mod {
       * A regular expression or function used to test if file should be written.
       * When not present, all bundle will be written.
       */
-    var test: js.UndefOr[RegExp] = js.undefined
+    var test: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * Use hash index to write only files that have changed since the last iteration.
@@ -77,7 +77,7 @@ object mod {
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      inline def setTest(value: RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: js.RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
@@ -87,5 +87,5 @@ object mod {
     }
   }
   
-  type WriteFilePlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
+  type WriteFilePlugin = Plugin
 }

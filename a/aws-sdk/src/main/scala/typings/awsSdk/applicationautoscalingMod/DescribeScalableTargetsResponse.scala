@@ -33,6 +33,6 @@ object DescribeScalableTargetsResponse {
     
     inline def setScalableTargetsUndefined: Self = StObject.set(x, "ScalableTargets", js.undefined)
     
-    inline def setScalableTargetsVarargs(value: ScalableTarget*): Self = StObject.set(x, "ScalableTargets", js.Array(value :_*))
+    inline def setScalableTargetsVarargs(value: ScalableTarget*): Self = StObject.set(x, "ScalableTargets", js.Array(value*))
   }
 }

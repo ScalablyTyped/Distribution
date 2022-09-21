@@ -11,6 +11,10 @@ object lodashStrings {
   inline def ConformsPredicateObject: ConformsPredicateObject = "ConformsPredicateObject".asInstanceOf[ConformsPredicateObject]
   
   @js.native
+  sealed trait EmptyObject extends StObject
+  inline def EmptyObject: EmptyObject = "EmptyObject".asInstanceOf[EmptyObject]
+  
+  @js.native
   sealed trait LoDashFp extends StObject
   inline def LoDashFp: LoDashFp = "LoDashFp".asInstanceOf[LoDashFp]
   

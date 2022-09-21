@@ -3,40 +3,6 @@ package typings.semanticUiTransition
 import typings.semanticUiTransition.SemanticUI.Transition.ClassNameSettings
 import typings.semanticUiTransition.SemanticUI.Transition.ClassNameSettings.Param
 import typings.semanticUiTransition.SemanticUI.Transition.ErrorSettings
-import typings.semanticUiTransition.anon.PartialPickImplkeyofImpl
-import typings.semanticUiTransition.anon.PartialPickImplkeyofImplAnimating
-import typings.semanticUiTransition.anon.PartialPickImplkeyofImplMethod
-import typings.semanticUiTransition.anon.PickImplallowRepeats
-import typings.semanticUiTransition.anon.PickImplanimating
-import typings.semanticUiTransition.anon.PickImplanimation
-import typings.semanticUiTransition.anon.PickImplclassName
-import typings.semanticUiTransition.anon.PickImpldebug
-import typings.semanticUiTransition.anon.PickImpldisabled
-import typings.semanticUiTransition.anon.PickImpldisplayType
-import typings.semanticUiTransition.anon.PickImplduration
-import typings.semanticUiTransition.anon.PickImplerror
-import typings.semanticUiTransition.anon.PickImplhidden
-import typings.semanticUiTransition.anon.PickImplinterval
-import typings.semanticUiTransition.anon.PickImplinward
-import typings.semanticUiTransition.anon.PickImplloading
-import typings.semanticUiTransition.anon.PickImpllooping
-import typings.semanticUiTransition.anon.PickImplmethod
-import typings.semanticUiTransition.anon.PickImplname
-import typings.semanticUiTransition.anon.PickImplnamespace
-import typings.semanticUiTransition.anon.PickImplnoAnimation
-import typings.semanticUiTransition.anon.PickImplonComplete
-import typings.semanticUiTransition.anon.PickImplonHide
-import typings.semanticUiTransition.anon.PickImplonShow
-import typings.semanticUiTransition.anon.PickImplonStart
-import typings.semanticUiTransition.anon.PickImploutward
-import typings.semanticUiTransition.anon.PickImplperformance
-import typings.semanticUiTransition.anon.PickImplqueue
-import typings.semanticUiTransition.anon.PickImplreverse
-import typings.semanticUiTransition.anon.PickImplsilent
-import typings.semanticUiTransition.anon.PickImpltransition
-import typings.semanticUiTransition.anon.PickImpluseFailSafe
-import typings.semanticUiTransition.anon.PickImplverbose
-import typings.semanticUiTransition.anon.PickImplvisible
 import typings.semanticUiTransition.semanticUiTransitionBooleans.`false`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`clear queue`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`force repaint`
@@ -51,38 +17,18 @@ import typings.semanticUiTransition.semanticUiTransitionStrings.`restore conditi
 import typings.semanticUiTransition.semanticUiTransitionStrings.`save conditions`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`set duration`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`stop all`
-import typings.semanticUiTransition.semanticUiTransitionStrings.allowRepeats
-import typings.semanticUiTransition.semanticUiTransitionStrings.animation
 import typings.semanticUiTransition.semanticUiTransitionStrings.auto
-import typings.semanticUiTransition.semanticUiTransitionStrings.className
-import typings.semanticUiTransition.semanticUiTransitionStrings.debug
 import typings.semanticUiTransition.semanticUiTransitionStrings.destroy
 import typings.semanticUiTransition.semanticUiTransitionStrings.disable
-import typings.semanticUiTransition.semanticUiTransitionStrings.displayType
-import typings.semanticUiTransition.semanticUiTransitionStrings.duration
 import typings.semanticUiTransition.semanticUiTransitionStrings.enable
-import typings.semanticUiTransition.semanticUiTransitionStrings.error
 import typings.semanticUiTransition.semanticUiTransitionStrings.hide
-import typings.semanticUiTransition.semanticUiTransitionStrings.interval
 import typings.semanticUiTransition.semanticUiTransitionStrings.looping
-import typings.semanticUiTransition.semanticUiTransitionStrings.name
-import typings.semanticUiTransition.semanticUiTransitionStrings.namespace
-import typings.semanticUiTransition.semanticUiTransitionStrings.onComplete
-import typings.semanticUiTransition.semanticUiTransitionStrings.onHide
-import typings.semanticUiTransition.semanticUiTransitionStrings.onShow
-import typings.semanticUiTransition.semanticUiTransitionStrings.onStart
-import typings.semanticUiTransition.semanticUiTransitionStrings.performance
-import typings.semanticUiTransition.semanticUiTransitionStrings.queue
 import typings.semanticUiTransition.semanticUiTransitionStrings.repaint
 import typings.semanticUiTransition.semanticUiTransitionStrings.reset
-import typings.semanticUiTransition.semanticUiTransitionStrings.reverse
 import typings.semanticUiTransition.semanticUiTransitionStrings.setting
 import typings.semanticUiTransition.semanticUiTransitionStrings.show
-import typings.semanticUiTransition.semanticUiTransitionStrings.silent
 import typings.semanticUiTransition.semanticUiTransitionStrings.stop
 import typings.semanticUiTransition.semanticUiTransitionStrings.toggle
-import typings.semanticUiTransition.semanticUiTransitionStrings.useFailSafe
-import typings.semanticUiTransition.semanticUiTransitionStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -170,48 +116,6 @@ object SemanticUI {
       * Resets all conditions changes during transition
       */
     def apply(behavior: reset): JQuery = js.native
-    def apply(behavior: setting, name: allowRepeats, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: allowRepeats, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: animation, value: String): JQuery = js.native
-    def apply(behavior: setting, name: animation, value: Unit): String = js.native
-    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
-    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: displayType, value: String): JQuery = js.native
-    def apply(behavior: setting, name: displayType, value: Unit): `false` | String = js.native
-    def apply(behavior: setting, name: displayType, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
-    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
-    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: interval, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: interval, value: Unit): Double = js.native
-    def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: Unit): String = js.native
-    def apply(behavior: setting, name: onComplete, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onComplete, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onStart, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onStart, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: queue, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: queue, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: reverse, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: reverse, value: Unit): auto | Boolean = js.native
-    def apply(behavior: setting, name: reverse, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: useFailSafe, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: useFailSafe, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: TransitionSettings): JQuery = js.native
     /**
       * Stop current animation and show element
@@ -227,6 +131,12 @@ object SemanticUI {
     def apply(behavior: toggle): JQuery = js.native
     def apply(settings: TransitionSettings): JQuery = js.native
     def apply(transition: String): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-transition.SemanticUI.TransitionSettings */ String */](
+      behavior: setting,
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-transition.SemanticUI.TransitionSettings._Impl[K] */ js.Any
+    ): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-transition.SemanticUI.TransitionSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-transition.SemanticUI.TransitionSettings._Impl[K] */ js.Any = js.native
     
     var settings: TransitionSettings = js.native
   }
@@ -320,7 +230,65 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplanimating | PickImpldisabled | PickImplhidden | PickImplinward | PickImplloading | PickImpllooping | PickImploutward | PickImpltransition | PickImplvisible) & PartialPickImplkeyofImplAnimating
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiTransition.anon.PickImplanimatingPartialP
+        - typings.semanticUiTransition.anon.PickImpldisabledPartialPi
+        - typings.semanticUiTransition.anon.PickImplhiddenPartialPick
+        - typings.semanticUiTransition.anon.PickImplinwardPartialPick
+        - typings.semanticUiTransition.anon.PickImplloadingPartialPic
+        - typings.semanticUiTransition.anon.PickImplloopingPartialPic
+        - typings.semanticUiTransition.anon.PickImploutwardPartialPic
+        - typings.semanticUiTransition.anon.PickImpltransitionPartial
+        - typings.semanticUiTransition.anon.PickImplvisiblePartialPic
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplanimatingPartialP(animating: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplanimatingPartialP = {
+          val __obj = js.Dynamic.literal(animating = animating.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplanimatingPartialP]
+        }
+        
+        inline def PickImpldisabledPartialPi(disabled: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImpldisabledPartialPi = {
+          val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImpldisabledPartialPi]
+        }
+        
+        inline def PickImplhiddenPartialPick(hidden: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplhiddenPartialPick = {
+          val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplhiddenPartialPick]
+        }
+        
+        inline def PickImplinwardPartialPick(inward: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplinwardPartialPick = {
+          val __obj = js.Dynamic.literal(inward = inward.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplinwardPartialPick]
+        }
+        
+        inline def PickImplloadingPartialPic(loading: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplloadingPartialPic = {
+          val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplloadingPartialPic]
+        }
+        
+        inline def PickImplloopingPartialPic(looping: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplloopingPartialPic = {
+          val __obj = js.Dynamic.literal(looping = looping.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplloopingPartialPic]
+        }
+        
+        inline def PickImploutwardPartialPic(outward: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImploutwardPartialPic = {
+          val __obj = js.Dynamic.literal(outward = outward.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImploutwardPartialPic]
+        }
+        
+        inline def PickImpltransitionPartial(transition: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImpltransitionPartial = {
+          val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImpltransitionPartial]
+        }
+        
+        inline def PickImplvisiblePartialPic(visible: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplvisiblePartialPic = {
+          val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplvisiblePartialPic]
+        }
+      }
     }
     type ClassNameSettings = Param
     
@@ -353,7 +321,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplnoAnimation | PickImplmethod) & PartialPickImplkeyofImplMethod
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiTransition.anon.PickImplnoAnimationPartia
+        - typings.semanticUiTransition.anon.PickImplmethodPartialPick
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplmethodPartialPick(method: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplmethodPartialPick = {
+          val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplmethodPartialPick]
+        }
+        
+        inline def PickImplnoAnimationPartia(noAnimation: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplnoAnimationPartia = {
+          val __obj = js.Dynamic.literal(noAnimation = noAnimation.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplnoAnimationPartia]
+        }
+      }
     }
     type ErrorSettings = typings.semanticUiTransition.SemanticUI.Transition.ErrorSettings.Param
   }
@@ -553,7 +537,139 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplanimation | PickImplinterval | PickImplreverse | PickImpldisplayType | PickImplduration | PickImpluseFailSafe | PickImplallowRepeats | PickImplqueue | PickImplonShow | PickImplonHide | PickImplonStart | PickImplonComplete | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiTransition.anon.PickImplanimationPartialP
+      - typings.semanticUiTransition.anon.PickImplintervalPartialPi
+      - typings.semanticUiTransition.anon.PickImplreversePartialPic
+      - typings.semanticUiTransition.anon.PickImpldisplayTypePartia
+      - typings.semanticUiTransition.anon.PickImpldurationPartialPi
+      - typings.semanticUiTransition.anon.PickImpluseFailSafePartia
+      - typings.semanticUiTransition.anon.PickImplallowRepeatsParti
+      - typings.semanticUiTransition.anon.PickImplqueuePartialPickI
+      - typings.semanticUiTransition.anon.PickImplonShowPartialPick
+      - typings.semanticUiTransition.anon.PickImplonHidePartialPick
+      - typings.semanticUiTransition.anon.PickImplonStartPartialPic
+      - typings.semanticUiTransition.anon.PickImplonCompletePartial
+      - typings.semanticUiTransition.anon.PickImplclassNamePartialP
+      - typings.semanticUiTransition.anon.PickImplerrorPartialPickI
+      - typings.semanticUiTransition.anon.PickImplnamespacePartialP
+      - typings.semanticUiTransition.anon.PickImplnamePartialPickIm
+      - typings.semanticUiTransition.anon.PickImplsilentPartialPick
+      - typings.semanticUiTransition.anon.PickImpldebugPartialPickI
+      - typings.semanticUiTransition.anon.PickImplperformancePartia
+      - typings.semanticUiTransition.anon.PickImplverbosePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplallowRepeatsParti(allowRepeats: Boolean & js.UndefOr[Boolean]): typings.semanticUiTransition.anon.PickImplallowRepeatsParti = {
+        val __obj = js.Dynamic.literal(allowRepeats = allowRepeats.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplallowRepeatsParti]
+      }
+      
+      inline def PickImplanimationPartialP(animation: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplanimationPartialP = {
+        val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplanimationPartialP]
+      }
+      
+      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiTransition.anon.PickImplclassNamePartialP = {
+        val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplclassNamePartialP]
+      }
+      
+      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiTransition.anon.PickImpldebugPartialPickI = {
+        val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImpldebugPartialPickI]
+      }
+      
+      inline def PickImpldisplayTypePartia(displayType: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiTransition.anon.PickImpldisplayTypePartia = {
+        val __obj = js.Dynamic.literal(displayType = displayType.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImpldisplayTypePartia]
+      }
+      
+      inline def PickImpldurationPartialPi(duration: Double & js.UndefOr[Double]): typings.semanticUiTransition.anon.PickImpldurationPartialPi = {
+        val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImpldurationPartialPi]
+      }
+      
+      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiTransition.anon.PickImplerrorPartialPickI = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplerrorPartialPickI]
+      }
+      
+      inline def PickImplintervalPartialPi(interval: Double & js.UndefOr[Double]): typings.semanticUiTransition.anon.PickImplintervalPartialPi = {
+        val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplintervalPartialPi]
+      }
+      
+      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplnamePartialPickIm = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplnamePartialPickIm]
+      }
+      
+      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiTransition.anon.PickImplnamespacePartialP = {
+        val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplnamespacePartialP]
+      }
+      
+      inline def PickImplonCompletePartial(
+        onComplete: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiTransition.anon.PickImplonCompletePartial = {
+        val __obj = js.Dynamic.literal(onComplete = onComplete.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplonCompletePartial]
+      }
+      
+      inline def PickImplonHidePartialPick(
+        onHide: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiTransition.anon.PickImplonHidePartialPick = {
+        val __obj = js.Dynamic.literal(onHide = onHide.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplonHidePartialPick]
+      }
+      
+      inline def PickImplonShowPartialPick(
+        onShow: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiTransition.anon.PickImplonShowPartialPick = {
+        val __obj = js.Dynamic.literal(onShow = onShow.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplonShowPartialPick]
+      }
+      
+      inline def PickImplonStartPartialPic(
+        onStart: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiTransition.anon.PickImplonStartPartialPic = {
+        val __obj = js.Dynamic.literal(onStart = onStart.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplonStartPartialPic]
+      }
+      
+      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiTransition.anon.PickImplperformancePartia = {
+        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplperformancePartia]
+      }
+      
+      inline def PickImplqueuePartialPickI(queue: Boolean & js.UndefOr[Boolean]): typings.semanticUiTransition.anon.PickImplqueuePartialPickI = {
+        val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplqueuePartialPickI]
+      }
+      
+      inline def PickImplreversePartialPic(reverse: (auto | Boolean) & (js.UndefOr[auto | Boolean])): typings.semanticUiTransition.anon.PickImplreversePartialPic = {
+        val __obj = js.Dynamic.literal(reverse = reverse.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplreversePartialPic]
+      }
+      
+      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiTransition.anon.PickImplsilentPartialPick = {
+        val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplsilentPartialPick]
+      }
+      
+      inline def PickImpluseFailSafePartia(useFailSafe: Boolean & js.UndefOr[Boolean]): typings.semanticUiTransition.anon.PickImpluseFailSafePartia = {
+        val __obj = js.Dynamic.literal(useFailSafe = useFailSafe.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImpluseFailSafePartia]
+      }
+      
+      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiTransition.anon.PickImplverbosePartialPic = {
+        val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiTransition.anon.PickImplverbosePartialPic]
+      }
+    }
   }
   /**
     * @see {@link http://semantic-ui.com/modules/transition.html#/settings}

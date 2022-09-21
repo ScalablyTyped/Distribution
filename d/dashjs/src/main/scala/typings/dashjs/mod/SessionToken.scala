@@ -12,11 +12,13 @@ trait SessionToken extends StObject {
   
   def getKeyStatuses(): MediaKeyStatusMap
   
-  def getSessionID(): String
+  def getSessionId(): String
   
   def getSessionType(): String
   
-  var initData: js.Any
+  def getUsable(): Boolean
+  
+  var initData: Any
   
   var session: MediaKeySession
 }
@@ -25,12 +27,13 @@ object SessionToken {
   inline def apply(
     getExpirationTime: () => Double,
     getKeyStatuses: () => MediaKeyStatusMap,
-    getSessionID: () => String,
+    getSessionId: () => String,
     getSessionType: () => String,
-    initData: js.Any,
+    getUsable: () => Boolean,
+    initData: Any,
     session: MediaKeySession
   ): SessionToken = {
-    val __obj = js.Dynamic.literal(getExpirationTime = js.Any.fromFunction0(getExpirationTime), getKeyStatuses = js.Any.fromFunction0(getKeyStatuses), getSessionID = js.Any.fromFunction0(getSessionID), getSessionType = js.Any.fromFunction0(getSessionType), initData = initData.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getExpirationTime = js.Any.fromFunction0(getExpirationTime), getKeyStatuses = js.Any.fromFunction0(getKeyStatuses), getSessionId = js.Any.fromFunction0(getSessionId), getSessionType = js.Any.fromFunction0(getSessionType), getUsable = js.Any.fromFunction0(getUsable), initData = initData.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionToken]
   }
   
@@ -40,11 +43,13 @@ object SessionToken {
     
     inline def setGetKeyStatuses(value: () => MediaKeyStatusMap): Self = StObject.set(x, "getKeyStatuses", js.Any.fromFunction0(value))
     
-    inline def setGetSessionID(value: () => String): Self = StObject.set(x, "getSessionID", js.Any.fromFunction0(value))
+    inline def setGetSessionId(value: () => String): Self = StObject.set(x, "getSessionId", js.Any.fromFunction0(value))
     
     inline def setGetSessionType(value: () => String): Self = StObject.set(x, "getSessionType", js.Any.fromFunction0(value))
     
-    inline def setInitData(value: js.Any): Self = StObject.set(x, "initData", value.asInstanceOf[js.Any])
+    inline def setGetUsable(value: () => Boolean): Self = StObject.set(x, "getUsable", js.Any.fromFunction0(value))
+    
+    inline def setInitData(value: Any): Self = StObject.set(x, "initData", value.asInstanceOf[js.Any])
     
     inline def setSession(value: MediaKeySession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }

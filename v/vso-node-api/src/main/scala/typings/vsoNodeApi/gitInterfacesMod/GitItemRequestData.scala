@@ -46,7 +46,7 @@ object GitItemRequestData {
     
     inline def setItemDescriptors(value: js.Array[GitItemDescriptor]): Self = StObject.set(x, "itemDescriptors", value.asInstanceOf[js.Any])
     
-    inline def setItemDescriptorsVarargs(value: GitItemDescriptor*): Self = StObject.set(x, "itemDescriptors", js.Array(value :_*))
+    inline def setItemDescriptorsVarargs(value: GitItemDescriptor*): Self = StObject.set(x, "itemDescriptors", js.Array(value*))
     
     inline def setLatestProcessedChange(value: Boolean): Self = StObject.set(x, "latestProcessedChange", value.asInstanceOf[js.Any])
   }

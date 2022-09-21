@@ -81,7 +81,7 @@ object CurrentGame {
       
       inline def setBannedChampion(value: js.Array[BannedChampion]): Self = StObject.set(x, "bannedChampion", value.asInstanceOf[js.Any])
       
-      inline def setBannedChampionVarargs(value: BannedChampion*): Self = StObject.set(x, "bannedChampion", js.Array(value :_*))
+      inline def setBannedChampionVarargs(value: BannedChampion*): Self = StObject.set(x, "bannedChampion", js.Array(value*))
       
       inline def setGameId(value: Double): Self = StObject.set(x, "gameId", value.asInstanceOf[js.Any])
       
@@ -101,7 +101,7 @@ object CurrentGame {
       
       inline def setParticipants(value: js.Array[CurrentGameParticipant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
-      inline def setParticipantsVarargs(value: CurrentGameParticipant*): Self = StObject.set(x, "participants", js.Array(value :_*))
+      inline def setParticipantsVarargs(value: CurrentGameParticipant*): Self = StObject.set(x, "participants", js.Array(value*))
       
       inline def setPlatformId(value: String): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
     }
@@ -155,13 +155,13 @@ object CurrentGame {
       
       inline def setMasteries(value: js.Array[Mastery]): Self = StObject.set(x, "masteries", value.asInstanceOf[js.Any])
       
-      inline def setMasteriesVarargs(value: Mastery*): Self = StObject.set(x, "masteries", js.Array(value :_*))
+      inline def setMasteriesVarargs(value: Mastery*): Self = StObject.set(x, "masteries", js.Array(value*))
       
       inline def setProfileIconId(value: Double): Self = StObject.set(x, "profileIconId", value.asInstanceOf[js.Any])
       
       inline def setRunes(value: js.Array[Rune]): Self = StObject.set(x, "runes", value.asInstanceOf[js.Any])
       
-      inline def setRunesVarargs(value: Rune*): Self = StObject.set(x, "runes", js.Array(value :_*))
+      inline def setRunesVarargs(value: Rune*): Self = StObject.set(x, "runes", js.Array(value*))
       
       inline def setSpell1Id(value: Double): Self = StObject.set(x, "spell1Id", value.asInstanceOf[js.Any])
       

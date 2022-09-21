@@ -34,7 +34,7 @@ object DescribeNotificationConfigurationsType {
     
     inline def setAutoScalingGroupNamesUndefined: Self = StObject.set(x, "AutoScalingGroupNames", js.undefined)
     
-    inline def setAutoScalingGroupNamesVarargs(value: ResourceName*): Self = StObject.set(x, "AutoScalingGroupNames", js.Array(value :_*))
+    inline def setAutoScalingGroupNamesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "AutoScalingGroupNames", js.Array(value*))
     
     inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     

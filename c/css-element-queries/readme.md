@@ -10,15 +10,12 @@ CSS-Element-Queries Polyfill. Proof-of-concept for high-speed element dimension/
 | ------------------ | :-------------: |
 | Full name          | css-element-queries |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 166 |
-| # downloads        | 7263718 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 723502.0 |
+| # stars            | 4239.0 |
 
 ## Links
-- [Homepage](https://github.com/marcj/css-element-queries)
-- [Bugs](https://github.com/marcj/css-element-queries/issues)
-- [Repository](https://github.com/marcj/css-element-queries)
 - [Npm](https://www.npmjs.com/package/css-element-queries)
     
 

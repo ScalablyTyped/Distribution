@@ -7,27 +7,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait PrintErrorType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PrintErrorType")
 @js.native
 object PrintErrorType extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait asDisplayed
     extends StObject
        with PrintErrorType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait blank
     extends StObject
        with PrintErrorType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait dash
     extends StObject
        with PrintErrorType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
   sealed trait notAvailable
     extends StObject

@@ -8,15 +8,19 @@ trait StockToolsGuiDefinitionsAdvancedOptions extends StObject {
   
   var fibonacci: js.UndefOr[StockToolsGuiDefinitionsAdvancedFibonacciOptions] = js.undefined
   
+  var fibonacciTimeZones: js.UndefOr[StockToolsGuiDefinitionsAdvancedFibonacciTimeZonesOptions] = js.undefined
+  
   /**
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var items: js.UndefOr[js.Array[Any]] = js.undefined
   
   var parallelChannel: js.UndefOr[StockToolsGuiDefinitionsAdvancedParallelChannelOptions] = js.undefined
   
   var pitchfork: js.UndefOr[StockToolsGuiDefinitionsAdvancedPitchforkOptions] = js.undefined
+  
+  var timeCycles: js.UndefOr[StockToolsGuiDefinitionsAdvancedTimeCyclesOptions] = js.undefined
 }
 object StockToolsGuiDefinitionsAdvancedOptions {
   
@@ -29,13 +33,17 @@ object StockToolsGuiDefinitionsAdvancedOptions {
     
     inline def setFibonacci(value: StockToolsGuiDefinitionsAdvancedFibonacciOptions): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
     
+    inline def setFibonacciTimeZones(value: StockToolsGuiDefinitionsAdvancedFibonacciTimeZonesOptions): Self = StObject.set(x, "fibonacciTimeZones", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZonesUndefined: Self = StObject.set(x, "fibonacciTimeZones", js.undefined)
+    
     inline def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setParallelChannel(value: StockToolsGuiDefinitionsAdvancedParallelChannelOptions): Self = StObject.set(x, "parallelChannel", value.asInstanceOf[js.Any])
     
@@ -44,5 +52,9 @@ object StockToolsGuiDefinitionsAdvancedOptions {
     inline def setPitchfork(value: StockToolsGuiDefinitionsAdvancedPitchforkOptions): Self = StObject.set(x, "pitchfork", value.asInstanceOf[js.Any])
     
     inline def setPitchforkUndefined: Self = StObject.set(x, "pitchfork", js.undefined)
+    
+    inline def setTimeCycles(value: StockToolsGuiDefinitionsAdvancedTimeCyclesOptions): Self = StObject.set(x, "timeCycles", value.asInstanceOf[js.Any])
+    
+    inline def setTimeCyclesUndefined: Self = StObject.set(x, "timeCycles", js.undefined)
   }
 }

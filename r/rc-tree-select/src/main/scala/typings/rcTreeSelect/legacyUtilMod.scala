@@ -2,9 +2,9 @@ package typings.rcTreeSelect
 
 import typings.rcTreeSelect.interfaceMod.ChangeEventExtra
 import typings.rcTreeSelect.interfaceMod.DataNode
-import typings.rcTreeSelect.interfaceMod.InnerDataNode
-import typings.rcTreeSelect.interfaceMod.LegacyDataNode
 import typings.rcTreeSelect.interfaceMod.RawValueType
+import typings.rcTreeSelect.treeSelectMod.DefaultOptionType
+import typings.rcTreeSelect.treeSelectMod.FieldNames
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,9 +22,10 @@ object legacyUtilMod {
     extra: ChangeEventExtra,
     triggerValue: RawValueType,
     checkedValues: js.Array[RawValueType],
-    treeData: js.Array[InnerDataNode],
-    showPosition: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillAdditionalInfo")(extra.asInstanceOf[js.Any], triggerValue.asInstanceOf[js.Any], checkedValues.asInstanceOf[js.Any], treeData.asInstanceOf[js.Any], showPosition.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    treeData: js.Array[DefaultOptionType],
+    showPosition: Boolean,
+    fieldNames: FieldNames
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillAdditionalInfo")(extra.asInstanceOf[js.Any], triggerValue.asInstanceOf[js.Any], checkedValues.asInstanceOf[js.Any], treeData.asInstanceOf[js.Any], showPosition.asInstanceOf[js.Any], fieldNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def fillLegacyProps(dataNode: DataNode): LegacyDataNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fillLegacyProps")(dataNode.asInstanceOf[js.Any]).asInstanceOf[LegacyDataNode]
+  inline def fillLegacyProps(dataNode: DataNode): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fillLegacyProps")(dataNode.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

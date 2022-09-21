@@ -1,6 +1,5 @@
 package typings.sinon.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,26 +65,26 @@ trait SinonFakeServer
     * Responds to all method requests to the given URL with the given response.
     * method is an HTTP verb.
     */
-  def respondWith(method: String, url: String, response: js.Array[js.Any]): Unit = js.native
+  def respondWith(method: String, url: String, response: js.Array[Any]): Unit = js.native
   /**
     * Responds to all method requests to URLs matching the regular expression.
     */
-  def respondWith(method: String, url: RegExp, body: String): Unit = js.native
+  def respondWith(method: String, url: js.RegExp, body: String): Unit = js.native
   /**
     * Responds to all method requests to URLs matching the regular expression.
     */
-  def respondWith(method: String, url: RegExp, fn: js.Function1[/* xhr */ SinonFakeXMLHttpRequest, Unit]): Unit = js.native
+  def respondWith(method: String, url: js.RegExp, fn: js.Function1[/* xhr */ SinonFakeXMLHttpRequest, Unit]): Unit = js.native
   /**
     * Responds to all method requests to URLs matching the regular expression.
     */
-  def respondWith(method: String, url: RegExp, response: js.Array[js.Any]): Unit = js.native
+  def respondWith(method: String, url: js.RegExp, response: js.Array[Any]): Unit = js.native
   /**
     * Causes the server to respond to any request not matched by another response with the provided data. The default catch-all response is [404, {}, ""].
     * Default status is 200 and default headers are none.
     * When the response is a Function, it will be passed the request object. You must manually call respond on it to complete the request.
     * @param response An Array with status, headers and response body, e.g. [200, { "Content-Type": "text/html", "Content-Length": 2 }, "OK"]
     */
-  def respondWith(response: js.Array[js.Any]): Unit = js.native
+  def respondWith(response: js.Array[Any]): Unit = js.native
   /**
     * Responds to all requests to given URL, e.g. /posts/1.
     */
@@ -97,22 +96,22 @@ trait SinonFakeServer
   /**
     * Responds to all requests to given URL, e.g. /posts/1.
     */
-  def respondWith(url: String, response: js.Array[js.Any]): Unit = js.native
+  def respondWith(url: String, response: js.Array[Any]): Unit = js.native
   /**
     * URL may be a regular expression, e.g. /\\/post\\//\\d+
     * If the response is a Function, it will be passed any capture groups from the regular expression along with the XMLHttpRequest object:
     */
-  def respondWith(url: RegExp, body: String): Unit = js.native
+  def respondWith(url: js.RegExp, body: String): Unit = js.native
   /**
     * URL may be a regular expression, e.g. /\\/post\\//\\d+
     * If the response is a Function, it will be passed any capture groups from the regular expression along with the XMLHttpRequest object:
     */
-  def respondWith(url: RegExp, fn: js.Function1[/* xhr */ SinonFakeXMLHttpRequest, Unit]): Unit = js.native
+  def respondWith(url: js.RegExp, fn: js.Function1[/* xhr */ SinonFakeXMLHttpRequest, Unit]): Unit = js.native
   /**
     * URL may be a regular expression, e.g. /\\/post\\//\\d+
     * If the response is a Function, it will be passed any capture groups from the regular expression along with the XMLHttpRequest object:
     */
-  def respondWith(url: RegExp, response: js.Array[js.Any]): Unit = js.native
+  def respondWith(url: js.RegExp, response: js.Array[Any]): Unit = js.native
   
   def restore(): Unit = js.native
 }

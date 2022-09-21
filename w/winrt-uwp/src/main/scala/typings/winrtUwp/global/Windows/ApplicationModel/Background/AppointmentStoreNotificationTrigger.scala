@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.AppointmentStoreNotificationTrigger")
 @js.native
 /** Initializes a new instance of the AppointmentStoreNotificationTrigger class. */
-class AppointmentStoreNotificationTrigger ()
+open class AppointmentStoreNotificationTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.AppointmentStoreNotificationTrigger

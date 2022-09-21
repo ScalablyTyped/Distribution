@@ -44,7 +44,7 @@ object UpdateImageRequest {
     
     inline def setDeletePropertiesUndefined: Self = StObject.set(x, "DeleteProperties", js.undefined)
     
-    inline def setDeletePropertiesVarargs(value: ImageDeleteProperty*): Self = StObject.set(x, "DeleteProperties", js.Array(value :_*))
+    inline def setDeletePropertiesVarargs(value: ImageDeleteProperty*): Self = StObject.set(x, "DeleteProperties", js.Array(value*))
     
     inline def setDescription(value: ImageDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,7 @@ object extensionsMod {
         * $fruits1.concatUnique("Pears", "Pears")    → Returns ["Apples", "Oranges", "Pears"]
         * $fruits1.concatUnique($fruits2, "Pears")   → Returns ["Apples", "Oranges", "Pears", "Plums"]
         */
-      def concatUnique(members: js.Any*): Array[T] = js.native
+      def concatUnique(members: Any*): Array[T] = js.native
       
       // deprecated members
       /**
@@ -58,6 +58,21 @@ object extensionsMod {
       def count(needle: T): Double = js.native
       def count(needle: T, position: Double): Double = js.native
       
+      def countWith(predicate: ArrayPredicate[T, Unit]): Double = js.native
+      /**
+        * Returns the number of times that members within the array pass the test implemented by the given predicate function.
+        * @param predicate The function used to test each member. It is called with three arguments:
+        * value: The member being processed.
+        * index: (optional, integer) The index of member being processed.
+        * array: (optional, array) The array being processed.
+        * @param thisArg The value to use as this when executing predicate.
+        * @since SugarCube 2.36.0
+        * @example
+        * // Given: $fruits = ["Apples", "Oranges", "Plums", "Oranges"]
+        * $fruits.countWith(function (fruit) { return fruit === "Oranges"; })  → Returns 2
+        */
+      def countWith[PredicateThisArg](predicate: ArrayPredicate[T, PredicateThisArg], thisArg: PredicateThisArg): Double = js.native
+      
       /**
         * Removes all instances of the given members from the array and returns a new array containing the removed members.
         * @param needles The members to remove. May be a list of members or an array.
@@ -83,6 +98,7 @@ object extensionsMod {
         */
       def deleteAt(indices: Double*): Array[T] = js.native
       
+      def deleteWith(predicate: ArrayPredicate[T, Unit]): Array[T] = js.native
       /**
         * Removes all of the members that pass the test implemented by the given predicate function from the array and returns
         * a new array containing the removed members.
@@ -113,11 +129,7 @@ object extensionsMod {
         * }) // Returns [{ name : "Apples" }, { name : "Apricots" }];
         * // and now $fruits is [{ name : "Oranges" }]
         */
-      def deleteWith(predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean]): Array[T] = js.native
-      def deleteWith(
-        predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-        thisArg: Array[T]
-      ): Array[T] = js.native
+      def deleteWith[PredicateThisArg](predicate: ArrayPredicate[T, PredicateThisArg], thisArg: PredicateThisArg): Array[T] = js.native
       
       /**
         * Returns the first member from the array. Does not modify the original.
@@ -132,6 +144,7 @@ object extensionsMod {
         * Returns a new array consisting of the flattened source array (i.e. flat map reduce). Does not modify the original.
         * Equivalent to ES2019 Array.prototype.flat(Infinity).
         * @since SugarCube 2.0.0
+        * @deprecated in favour of native Array.flat()
         * @example
         * // Given: $npa = [["Alfa", "Bravo"], [["Charlie", "Delta"], ["Echo"]], "Foxtrot"]
         * $npa.flatten() //  Returns ["Alfa", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"]
@@ -248,6 +261,13 @@ object extensionsMod {
       def unshiftUnique(members: T*): Double = js.native
     }
     
+    /**
+      * @param value The member being processed.
+      * @param index The index of member being processed.
+      * @param array The array being processed.
+      */
+    type ArrayPredicate[T, ThisType] = js.ThisFunction3[/* this */ ThisType, /* value */ T, /* index */ Double, /* array */ Array[T], Boolean]
+    
     @js.native
     trait JQuery extends StObject {
       
@@ -351,7 +371,7 @@ object extensionsMod {
       /**
         * Data to be passed to the handler in event.data when an event is triggered.
         */
-      var data: js.UndefOr[js.Any] = js.undefined
+      var data: js.UndefOr[Any] = js.undefined
       
       /**
         * Value for the aria-label and title attributes.
@@ -393,7 +413,7 @@ object extensionsMod {
         
         inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
         
-        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
@@ -468,8 +488,8 @@ object extensionsMod {
         * Object.keys(this).forEach(function (pn) { ownData[pn] = clone(this[pn]); }, this);
         * return JSON.reviveWrapper('new Character($ReviveData$)', ownData);
         */
-      def reviveWrapper(codeString: java.lang.String): js.Array[js.Any] = js.native
-      def reviveWrapper(codeString: java.lang.String, reviveData: js.Any): js.Array[js.Any] = js.native
+      def reviveWrapper(codeString: java.lang.String): js.Array[Any] = js.native
+      def reviveWrapper(codeString: java.lang.String, reviveData: Any): js.Array[Any] = js.native
     }
     
     @js.native
@@ -524,6 +544,116 @@ object extensionsMod {
         
         inline def setClamp(value: (Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction2(value))
       }
+    }
+    
+    @js.native
+    trait ReadonlyArray[T] extends StObject {
+      
+      /**
+        * Returns the number of times that the given member was found within the array, starting the search at position.
+        * @param needle The member to count.
+        * @param position The zero-based index at which to begin searching for needle. If omitted, will default to 0.
+        * @since SugarCube 2.0.0
+        * @example
+        * // Given: $fruits = ["Apples", "Oranges", "Plums", "Oranges"]
+        * $fruits.count("Oranges")     → Returns 2
+        * $fruits.count("Oranges", 2)  → Returns 1
+        */
+      def count(needle: T): Double = js.native
+      def count(needle: T, position: Double): Double = js.native
+      
+      def countWith(predicate: ArrayPredicate[T, Unit]): Double = js.native
+      /**
+        * Returns the number of times that members within the array pass the test implemented by the given predicate function.
+        * @param predicate The function used to test each member. It is called with three arguments:
+        * value: The member being processed.
+        * index: (optional, integer) The index of member being processed.
+        * array: (optional, array) The array being processed.
+        * @param thisArg The value to use as this when executing predicate.
+        * @since SugarCube 2.36.0
+        * @example
+        * // Given: $fruits = ["Apples", "Oranges", "Plums", "Oranges"]
+        * $fruits.countWith(function (fruit) { return fruit === "Oranges"; })  → Returns 2
+        */
+      def countWith[PredicateThisArg](predicate: ArrayPredicate[T, PredicateThisArg], thisArg: PredicateThisArg): Double = js.native
+      
+      /**
+        * Returns the first member from the array. Does not modify the original.
+        * @since SugarCube 2.2.7.0
+        * @example
+        * // Given: $pies = ["Blueberry", "Cherry", "Cream", "Pecan", "Pumpkin"]
+        * $pies.first() // Returns "Blueberry"
+        */
+      def first(): js.UndefOr[T] = js.native
+      
+      /**
+        * Returns a new array consisting of the flattened source array (i.e. flat map reduce). Does not modify the original.
+        * Equivalent to ES2019 Array.prototype.flat(Infinity).
+        * @since SugarCube 2.0.0
+        * @deprecated in favour of native Array.flat()
+        * @example
+        * // Given: $npa = [["Alfa", "Bravo"], [["Charlie", "Delta"], ["Echo"]], "Foxtrot"]
+        * $npa.flatten() //  Returns ["Alfa", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"]
+        */
+      def flatten(): Array[T] = js.native
+      
+      def includesAll(needles: T*): Boolean = js.native
+      /**
+        * Returns whether all of the given members were found within the array.
+        * @param needles The members to find. May be a list of members or an array.
+        * @since SugarCube 2.10.0
+        * @example
+        * // Given: $pies = ["Blueberry", "Cherry", "Cream", "Pecan", "Pumpkin"]
+        * <<if $pies.includesAll("Cherry", "Pecan")>>…found Cherry and Pecan pies…<</if>>
+        * @example
+        * // Given: $search = ["Blueberry", "Pumpkin"]
+        * <<if $pies.includesAll($search)>>…found Blueberry and Pumpkin pies…<</if>>
+        */
+      def includesAll(needles: Array[T]): Boolean = js.native
+      
+      def includesAny(needles: T*): Boolean = js.native
+      /**
+        * Returns whether any of the given members were found within the array.
+        * @param needles The members to find. May be a list of members or an array.
+        * @since SugarCube 2.10.0
+        * @example
+        * // Given: $pies = ["Blueberry", "Cherry", "Cream", "Pecan", "Pumpkin"]
+        * <<if $pies.includesAny("Cherry", "Pecan")>>…found Cherry or Pecan pie…<</if>>
+        * @example
+        * // Given: $search = ["Blueberry", "Pumpkin"]
+        * <<if $pies.includesAny($search)>>…found Blueberry or Pumpkin pie…<</if>>
+        */
+      def includesAny(needles: Array[T]): Boolean = js.native
+      
+      /**
+        * Returns the last member from the array. Does not modify the original.
+        * @since SugarCube 2.27.0
+        * @example
+        * // Given: $pies = ["Blueberry", "Cherry", "Cream", "Pecan", "Pumpkin"]
+        * $pies.last() // Returns "Pumpkin"
+        */
+      def last(): js.UndefOr[T] = js.native
+      
+      /**
+        * Returns a random member from the array. Does not modify the original.
+        * @since SugarCube 2.0.0
+        * @example
+        * // Given: $pies = ["Blueberry", "Cherry", "Cream", "Pecan", "Pumpkin"]
+        * $pies.random() // Returns a random pie from the array
+        */
+      def random(): js.UndefOr[T] = js.native
+      
+      /**
+        * Randomly selects the given number of unique members from the array and returns the selected members as a new array.
+        * Does not modify the original.
+        * @param want The number of members to select.
+        * @since SugarCube 2.20.0
+        * @example
+        * // Given: $pies = ["Blueberry", "Cherry", "Cream", "Pecan", "Pumpkin"]
+        * $pies.randomMany(3) // Returns a new array containing three unique random pies from the array
+        */
+      def randomMany(): Array[T] = js.native
+      def randomMany(want: Double): Array[T] = js.native
     }
     
     trait RegExpConstructor extends StObject {
@@ -609,18 +739,18 @@ object extensionsMod {
         * String.format("{0,6}", "foo"); // Returns "   foo"
         * String.format("{0,-6}", "foo"); //Returns "foo   "
         */
-      def format(format: java.lang.String, arguments: js.Any*): java.lang.String
+      def format(format: java.lang.String, arguments: Any*): java.lang.String
     }
     object StringConstructor {
       
-      inline def apply(format: (java.lang.String, /* repeated */ js.Any) => java.lang.String): StringConstructor = {
+      inline def apply(format: (java.lang.String, /* repeated */ Any) => java.lang.String): StringConstructor = {
         val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format))
         __obj.asInstanceOf[StringConstructor]
       }
       
       extension [Self <: StringConstructor](x: Self) {
         
-        inline def setFormat(value: (java.lang.String, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+        inline def setFormat(value: (java.lang.String, /* repeated */ Any) => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       }
     }
   }

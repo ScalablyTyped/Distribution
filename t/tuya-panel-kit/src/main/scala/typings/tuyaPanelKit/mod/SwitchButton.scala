@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "SwitchButton")
 @js.native
-class SwitchButton protected ()
-  extends Component[SwitchButtonProps, js.Object, js.Any] {
+open class SwitchButton protected ()
+  extends Component[SwitchButtonProps, js.Object, Any] {
   def this(props: SwitchButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SwitchButtonProps, context: js.Any) = this()
+  def this(props: SwitchButtonProps, context: Any) = this()
 }

@@ -11,9 +11,8 @@ import typings.phaser.Phaser.Input.Pointer
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Textures.Texture
-import typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer
-import typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
 import typings.phaser.Phaser.Tilemaps.Tile
+import typings.phaser.Phaser.Tilemaps.TilemapLayer
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeColliderType
@@ -23,7 +22,6 @@ import typings.phaser.Phaser.Types.Physics.Arcade.PhysicsGroupConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBodyConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterTileOptions
 import typings.phaser.Phaser.Types.Physics.Matter.MatterWorldConfig
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +47,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Arcade.ArcadePhysics")
     @js.native
-    class ArcadePhysics protected ()
+    open class ArcadePhysics protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Arcade.ArcadePhysics {
       /**
@@ -66,7 +64,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Arcade.Body")
     @js.native
-    class Body protected ()
+    open class Body protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Arcade.Body {
       /**
@@ -83,7 +81,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Arcade.Collider")
     @js.native
-    class Collider protected ()
+    open class Collider protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Arcade.Collider {
       /**
@@ -103,7 +101,7 @@ object Physics {
         object2: ArcadeColliderType,
         collideCallback: ArcadePhysicsCallback,
         processCallback: ArcadePhysicsCallback,
-        callbackContext: js.Any
+        callbackContext: Any
       ) = this()
       
       /**
@@ -218,7 +216,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Arcade.Events.COLLIDE")
       @js.native
-      val COLLIDE: js.Any = js.native
+      val COLLIDE: Any = js.native
       
       /**
         * The Arcade Physics World Overlap Event.
@@ -234,7 +232,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Arcade.Events.OVERLAP")
       @js.native
-      val OVERLAP: js.Any = js.native
+      val OVERLAP: Any = js.native
       
       /**
         * The Arcade Physics World Pause Event.
@@ -245,7 +243,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Arcade.Events.PAUSE")
       @js.native
-      val PAUSE: js.Any = js.native
+      val PAUSE: Any = js.native
       
       /**
         * The Arcade Physics World Resume Event.
@@ -256,7 +254,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Arcade.Events.RESUME")
       @js.native
-      val RESUME: js.Any = js.native
+      val RESUME: Any = js.native
       
       /**
         * The Arcade Physics Tile Collide Event.
@@ -272,7 +270,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Arcade.Events.TILE_COLLIDE")
       @js.native
-      val TILE_COLLIDE: js.Any = js.native
+      val TILE_COLLIDE: Any = js.native
       
       /**
         * The Arcade Physics Tile Overlap Event.
@@ -288,7 +286,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Arcade.Events.TILE_OVERLAP")
       @js.native
-      val TILE_OVERLAP: js.Any = js.native
+      val TILE_OVERLAP: Any = js.native
       
       /**
         * The Arcade Physics World Bounds Event.
@@ -302,7 +300,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Arcade.Events.WORLD_BOUNDS")
       @js.native
-      val WORLD_BOUNDS: js.Any = js.native
+      val WORLD_BOUNDS: Any = js.native
       
       /**
         * The Arcade Physics World Step Event.
@@ -316,7 +314,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Arcade.Events.WORLD_STEP")
       @js.native
-      val WORLD_STEP: js.Any = js.native
+      val WORLD_STEP: Any = js.native
     }
     
     /**
@@ -365,7 +363,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Arcade.Factory")
     @js.native
-    class Factory protected ()
+    open class Factory protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Arcade.Factory {
       /**
@@ -417,13 +415,23 @@ object Physics {
     /**
       * An Arcade Physics Group object.
       * 
-      * All Game Objects created by or added to this Group will automatically be given dynamic Arcade Physics bodies, if they have no body.
+      * The primary use of a Physics Group is a way to collect together physics enable objects
+      * that share the same intrinsic structure into a single pool. They can they be easily
+      * compared against other Groups, or Game Objects.
       * 
-      * Its static counterpart is {@link Phaser.Physics.Arcade.StaticGroup}.
+      * All Game Objects created by, or added to this Group will automatically be given **dynamic**
+      * Arcade Physics bodies (if they have no body already) and the bodies will receive the
+      * Groups {@link Phaser.Physics.Arcade.Group#defaults default values}.
+      * 
+      * You should not pass objects into this Group that should not receive a body. For example,
+      * do not add basic Geometry or Tilemap Layers into a Group, as they will not behave in the
+      * way you may expect. Groups should all ideally have objects of the same type in them.
+      * 
+      * If you wish to create a Group filled with Static Bodies, please see {@link Phaser.Physics.Arcade.StaticGroup}.
       */
     @JSImport("phaser", "Physics.Arcade.Group")
     @js.native
-    class Group protected ()
+    open class Group protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Arcade.Group {
       /**
@@ -507,7 +515,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Arcade.Image")
     @js.native
-    class Image protected ()
+    open class Image protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Arcade.Image {
       /**
@@ -521,9 +529,9 @@ object Physics {
       def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String) = this()
       def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: Texture) = this()
       def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String, frame: String) = this()
-      def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String, frame: integer) = this()
+      def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String, frame: Double) = this()
       def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: Texture, frame: String) = this()
-      def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: Texture, frame: integer) = this()
+      def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: Texture, frame: Double) = this()
       
       /**
         * The color of the body outline when it renders to the debug display.
@@ -674,7 +682,7 @@ object Physics {
         * @param value The depth of this Game Object.
         */
       /* CompleteClass */
-      override def setDepth(value: integer): this.type = js.native
+      override def setDepth(value: Double): this.type = js.native
       
       /**
         * Sets the display size of this Game Object.
@@ -846,7 +854,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Arcade.Sprite")
     @js.native
-    class Sprite protected ()
+    open class Sprite protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Arcade.Sprite {
       /**
@@ -860,9 +868,9 @@ object Physics {
       def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String) = this()
       def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: Texture) = this()
       def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String, frame: String) = this()
-      def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String, frame: integer) = this()
+      def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: String, frame: Double) = this()
       def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: Texture, frame: String) = this()
-      def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: Texture, frame: integer) = this()
+      def this(scene: typings.phaser.Phaser.Scene, x: Double, y: Double, texture: Texture, frame: Double) = this()
       
       /**
         * The color of the body outline when it renders to the debug display.
@@ -1013,7 +1021,7 @@ object Physics {
         * @param value The depth of this Game Object.
         */
       /* CompleteClass */
-      override def setDepth(value: integer): this.type = js.native
+      override def setDepth(value: Double): this.type = js.native
       
       /**
         * Sets the display size of this Game Object.
@@ -1144,7 +1152,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Arcade.StaticBody")
     @js.native
-    class StaticBody protected ()
+    open class StaticBody protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Arcade.StaticBody {
       /**
@@ -1164,7 +1172,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Arcade.StaticGroup")
     @js.native
-    class StaticGroup protected ()
+    open class StaticGroup protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Arcade.StaticGroup {
       /**
@@ -1290,16 +1298,7 @@ object Physics {
         body: typings.phaser.Phaser.Physics.Arcade.Body,
         tile: Tile,
         tileWorldRect: Rectangle,
-        tilemapLayer: DynamicTilemapLayer,
-        tileBias: Double,
-        isLayer: Boolean
-      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SeparateTile")(i.asInstanceOf[js.Any], body.asInstanceOf[js.Any], tile.asInstanceOf[js.Any], tileWorldRect.asInstanceOf[js.Any], tilemapLayer.asInstanceOf[js.Any], tileBias.asInstanceOf[js.Any], isLayer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-      inline def SeparateTile(
-        i: Double,
-        body: typings.phaser.Phaser.Physics.Arcade.Body,
-        tile: Tile,
-        tileWorldRect: Rectangle,
-        tilemapLayer: StaticTilemapLayer,
+        tilemapLayer: TilemapLayer,
         tileBias: Double,
         isLayer: Boolean
       ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SeparateTile")(i.asInstanceOf[js.Any], body.asInstanceOf[js.Any], tile.asInstanceOf[js.Any], tileWorldRect.asInstanceOf[js.Any], tilemapLayer.asInstanceOf[js.Any], tileBias.asInstanceOf[js.Any], isLayer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -1359,7 +1358,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Arcade.World")
     @js.native
-    class World protected ()
+    open class World protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Arcade.World {
       /**
@@ -1392,7 +1391,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Matter.BodyBounds")
     @js.native
-    class BodyBounds ()
+    open class BodyBounds ()
       extends StObject
          with typings.phaser.Phaser.Physics.Matter.BodyBounds
     
@@ -1408,7 +1407,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.AFTER_ADD")
       @js.native
-      val AFTER_ADD: js.Any = js.native
+      val AFTER_ADD: Any = js.native
       
       /**
         * The Matter Physics After Remove Event.
@@ -1420,7 +1419,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.AFTER_REMOVE")
       @js.native
-      val AFTER_REMOVE: js.Any = js.native
+      val AFTER_REMOVE: Any = js.native
       
       /**
         * The Matter Physics After Update Event.
@@ -1431,7 +1430,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.AFTER_UPDATE")
       @js.native
-      val AFTER_UPDATE: js.Any = js.native
+      val AFTER_UPDATE: Any = js.native
       
       /**
         * The Matter Physics Before Add Event.
@@ -1443,7 +1442,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.BEFORE_ADD")
       @js.native
-      val BEFORE_ADD: js.Any = js.native
+      val BEFORE_ADD: Any = js.native
       
       /**
         * The Matter Physics Before Remove Event.
@@ -1455,7 +1454,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.BEFORE_REMOVE")
       @js.native
-      val BEFORE_REMOVE: js.Any = js.native
+      val BEFORE_REMOVE: Any = js.native
       
       /**
         * The Matter Physics Before Update Event.
@@ -1466,7 +1465,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.BEFORE_UPDATE")
       @js.native
-      val BEFORE_UPDATE: js.Any = js.native
+      val BEFORE_UPDATE: Any = js.native
       
       /**
         * The Matter Physics Collision Active Event.
@@ -1478,7 +1477,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.COLLISION_ACTIVE")
       @js.native
-      val COLLISION_ACTIVE: js.Any = js.native
+      val COLLISION_ACTIVE: Any = js.native
       
       /**
         * The Matter Physics Collision End Event.
@@ -1490,7 +1489,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.COLLISION_END")
       @js.native
-      val COLLISION_END: js.Any = js.native
+      val COLLISION_END: Any = js.native
       
       /**
         * The Matter Physics Collision Start Event.
@@ -1502,7 +1501,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.COLLISION_START")
       @js.native
-      val COLLISION_START: js.Any = js.native
+      val COLLISION_START: Any = js.native
       
       /**
         * The Matter Physics Drag Event.
@@ -1514,7 +1513,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.DRAG")
       @js.native
-      val DRAG: js.Any = js.native
+      val DRAG: Any = js.native
       
       /**
         * The Matter Physics Drag End Event.
@@ -1526,7 +1525,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.DRAG_END")
       @js.native
-      val DRAG_END: js.Any = js.native
+      val DRAG_END: Any = js.native
       
       /**
         * The Matter Physics Drag Start Event.
@@ -1538,7 +1537,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.DRAG_START")
       @js.native
-      val DRAG_START: js.Any = js.native
+      val DRAG_START: Any = js.native
       
       /**
         * The Matter Physics World Pause Event.
@@ -1549,7 +1548,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.PAUSE")
       @js.native
-      val PAUSE: js.Any = js.native
+      val PAUSE: Any = js.native
       
       /**
         * The Matter Physics World Resume Event.
@@ -1560,7 +1559,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.RESUME")
       @js.native
-      val RESUME: js.Any = js.native
+      val RESUME: Any = js.native
       
       /**
         * The Matter Physics Sleep End Event.
@@ -1571,7 +1570,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.SLEEP_END")
       @js.native
-      val SLEEP_END: js.Any = js.native
+      val SLEEP_END: Any = js.native
       
       /**
         * The Matter Physics Sleep Start Event.
@@ -1582,7 +1581,7 @@ object Physics {
         */
       @JSImport("phaser", "Physics.Matter.Events.SLEEP_START")
       @js.native
-      val SLEEP_START: js.Any = js.native
+      val SLEEP_START: Any = js.native
     }
     
     /**
@@ -1601,7 +1600,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Matter.Factory")
     @js.native
-    class Factory protected ()
+    open class Factory protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Matter.Factory {
       /**
@@ -1621,7 +1620,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Matter.Image")
     @js.native
-    class Image protected ()
+    open class Image protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Matter.Image {
       /**
@@ -1647,7 +1646,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: String,
-        frame: integer
+        frame: Double
       ) = this()
       def this(
         world: typings.phaser.Phaser.Physics.Matter.World,
@@ -1661,7 +1660,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: Texture,
-        frame: integer
+        frame: Double
       ) = this()
       def this(
         world: typings.phaser.Phaser.Physics.Matter.World,
@@ -1676,7 +1675,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: String,
-        frame: Unit,
+        frame: Double,
         options: MatterBodyConfig
       ) = this()
       def this(
@@ -1684,7 +1683,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: String,
-        frame: integer,
+        frame: Unit,
         options: MatterBodyConfig
       ) = this()
       def this(
@@ -1700,7 +1699,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: Texture,
-        frame: Unit,
+        frame: Double,
         options: MatterBodyConfig
       ) = this()
       def this(
@@ -1708,7 +1707,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: Texture,
-        frame: integer,
+        frame: Unit,
         options: MatterBodyConfig
       ) = this()
       
@@ -1846,7 +1845,7 @@ object Physics {
         * @param value The depth of this Game Object.
         */
       /* CompleteClass */
-      override def setDepth(value: integer): this.type = js.native
+      override def setDepth(value: Double): this.type = js.native
       
       /**
         * Sets the display size of this Game Object.
@@ -2116,7 +2115,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Matter.MatterPhysics")
     @js.native
-    class MatterPhysics protected ()
+    open class MatterPhysics protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Matter.MatterPhysics {
       /**
@@ -2157,8 +2156,8 @@ object Physics {
         * @param vertexSets The vertex lists to parse.
         * @param options An optional Body configuration object that is used to set initial Body properties on creation.
         */
-      inline def parseVertices(vertexSets: js.Array[js.Any]): js.Array[BodyType] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseVertices")(vertexSets.asInstanceOf[js.Any]).asInstanceOf[js.Array[BodyType]]
-      inline def parseVertices(vertexSets: js.Array[js.Any], options: MatterBodyConfig): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseVertices")(vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
+      inline def parseVertices(vertexSets: js.Array[Any]): js.Array[BodyType] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseVertices")(vertexSets.asInstanceOf[js.Any]).asInstanceOf[js.Array[BodyType]]
+      inline def parseVertices(vertexSets: js.Array[Any], options: MatterBodyConfig): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseVertices")(vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
     }
     
     /**
@@ -2228,7 +2227,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Matter.PointerConstraint")
     @js.native
-    class PointerConstraint protected ()
+    open class PointerConstraint protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Matter.PointerConstraint {
       /**
@@ -2376,7 +2375,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Matter.Sprite")
     @js.native
-    class Sprite protected ()
+    open class Sprite protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Matter.Sprite {
       /**
@@ -2402,7 +2401,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: String,
-        frame: integer
+        frame: Double
       ) = this()
       def this(
         world: typings.phaser.Phaser.Physics.Matter.World,
@@ -2416,7 +2415,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: Texture,
-        frame: integer
+        frame: Double
       ) = this()
       def this(
         world: typings.phaser.Phaser.Physics.Matter.World,
@@ -2431,7 +2430,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: String,
-        frame: Unit,
+        frame: Double,
         options: MatterBodyConfig
       ) = this()
       def this(
@@ -2439,7 +2438,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: String,
-        frame: integer,
+        frame: Unit,
         options: MatterBodyConfig
       ) = this()
       def this(
@@ -2455,7 +2454,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: Texture,
-        frame: Unit,
+        frame: Double,
         options: MatterBodyConfig
       ) = this()
       def this(
@@ -2463,7 +2462,7 @@ object Physics {
         x: Double,
         y: Double,
         texture: Texture,
-        frame: integer,
+        frame: Unit,
         options: MatterBodyConfig
       ) = this()
       
@@ -2601,7 +2600,7 @@ object Physics {
         * @param value The depth of this Game Object.
         */
       /* CompleteClass */
-      override def setDepth(value: integer): this.type = js.native
+      override def setDepth(value: Double): this.type = js.native
       
       /**
         * Sets the display size of this Game Object.
@@ -2797,7 +2796,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Matter.TileBody")
     @js.native
-    class TileBody protected ()
+    open class TileBody protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Matter.TileBody {
       /**
@@ -2890,7 +2889,7 @@ object Physics {
       */
     @JSImport("phaser", "Physics.Matter.World")
     @js.native
-    class World protected ()
+    open class World protected ()
       extends StObject
          with typings.phaser.Phaser.Physics.Matter.World {
       /**

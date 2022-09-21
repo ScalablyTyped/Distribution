@@ -27,7 +27,7 @@ object ListPlaybackKeyPairsResponse {
     
     inline def setKeyPairs(value: PlaybackKeyPairList): Self = StObject.set(x, "keyPairs", value.asInstanceOf[js.Any])
     
-    inline def setKeyPairsVarargs(value: PlaybackKeyPairSummary*): Self = StObject.set(x, "keyPairs", js.Array(value :_*))
+    inline def setKeyPairsVarargs(value: PlaybackKeyPairSummary*): Self = StObject.set(x, "keyPairs", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

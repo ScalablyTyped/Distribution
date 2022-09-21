@@ -15,6 +15,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppStream extends Service {
   
   /**
+    * Associates the specified application with the specified fleet. This is only supported for Elastic fleets.
+    */
+  def associateApplicationFleet(): Request[AssociateApplicationFleetResult, AWSError] = js.native
+  def associateApplicationFleet(callback: js.Function2[/* err */ AWSError, /* data */ AssociateApplicationFleetResult, Unit]): Request[AssociateApplicationFleetResult, AWSError] = js.native
+  /**
+    * Associates the specified application with the specified fleet. This is only supported for Elastic fleets.
+    */
+  def associateApplicationFleet(params: AssociateApplicationFleetRequest): Request[AssociateApplicationFleetResult, AWSError] = js.native
+  def associateApplicationFleet(
+    params: AssociateApplicationFleetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateApplicationFleetResult, Unit]
+  ): Request[AssociateApplicationFleetResult, AWSError] = js.native
+  
+  /**
+    * Associates an application to entitle.
+    */
+  def associateApplicationToEntitlement(): Request[AssociateApplicationToEntitlementResult, AWSError] = js.native
+  def associateApplicationToEntitlement(
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateApplicationToEntitlementResult, Unit]
+  ): Request[AssociateApplicationToEntitlementResult, AWSError] = js.native
+  /**
+    * Associates an application to entitle.
+    */
+  def associateApplicationToEntitlement(params: AssociateApplicationToEntitlementRequest): Request[AssociateApplicationToEntitlementResult, AWSError] = js.native
+  def associateApplicationToEntitlement(
+    params: AssociateApplicationToEntitlementRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateApplicationToEntitlementResult, Unit]
+  ): Request[AssociateApplicationToEntitlementResult, AWSError] = js.native
+  
+  /**
     * Associates the specified fleet with the specified stack.
     */
   def associateFleet(): Request[AssociateFleetResult, AWSError] = js.native
@@ -74,6 +104,34 @@ trait AppStream extends Service {
   ): Request[CopyImageResponse, AWSError] = js.native
   
   /**
+    * Creates an app block. App blocks are an Amazon AppStream 2.0 resource that stores the details about the virtual hard disk in an S3 bucket. It also stores the setup script with details about how to mount the virtual hard disk. The virtual hard disk includes the application binaries and other files necessary to launch your applications. Multiple applications can be assigned to a single app block. This is only supported for Elastic fleets.
+    */
+  def createAppBlock(): Request[CreateAppBlockResult, AWSError] = js.native
+  def createAppBlock(callback: js.Function2[/* err */ AWSError, /* data */ CreateAppBlockResult, Unit]): Request[CreateAppBlockResult, AWSError] = js.native
+  /**
+    * Creates an app block. App blocks are an Amazon AppStream 2.0 resource that stores the details about the virtual hard disk in an S3 bucket. It also stores the setup script with details about how to mount the virtual hard disk. The virtual hard disk includes the application binaries and other files necessary to launch your applications. Multiple applications can be assigned to a single app block. This is only supported for Elastic fleets.
+    */
+  def createAppBlock(params: CreateAppBlockRequest): Request[CreateAppBlockResult, AWSError] = js.native
+  def createAppBlock(
+    params: CreateAppBlockRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAppBlockResult, Unit]
+  ): Request[CreateAppBlockResult, AWSError] = js.native
+  
+  /**
+    * Creates an application. Applications are an Amazon AppStream 2.0 resource that stores the details about how to launch applications on Elastic fleet streaming instances. An application consists of the launch details, icon, and display name. Applications are associated with an app block that contains the application binaries and other files. The applications assigned to an Elastic fleet are the applications users can launch.  This is only supported for Elastic fleets.
+    */
+  def createApplication(): Request[CreateApplicationResult, AWSError] = js.native
+  def createApplication(callback: js.Function2[/* err */ AWSError, /* data */ CreateApplicationResult, Unit]): Request[CreateApplicationResult, AWSError] = js.native
+  /**
+    * Creates an application. Applications are an Amazon AppStream 2.0 resource that stores the details about how to launch applications on Elastic fleet streaming instances. An application consists of the launch details, icon, and display name. Applications are associated with an app block that contains the application binaries and other files. The applications assigned to an Elastic fleet are the applications users can launch.  This is only supported for Elastic fleets.
+    */
+  def createApplication(params: CreateApplicationRequest): Request[CreateApplicationResult, AWSError] = js.native
+  def createApplication(
+    params: CreateApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateApplicationResult, Unit]
+  ): Request[CreateApplicationResult, AWSError] = js.native
+  
+  /**
     * Creates a Directory Config object in AppStream 2.0. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
     */
   def createDirectoryConfig(): Request[CreateDirectoryConfigResult, AWSError] = js.native
@@ -88,12 +146,26 @@ trait AppStream extends Service {
   ): Request[CreateDirectoryConfigResult, AWSError] = js.native
   
   /**
-    * Creates a fleet. A fleet consists of streaming instances that run a specified image.
+    * Creates a new entitlement. Entitlements control access to specific applications within a stack, based on user attributes. Entitlements apply to SAML 2.0 federated user identities. Amazon AppStream 2.0 user pool and streaming URL users are entitled to all applications in a stack. Entitlements don't apply to the desktop stream view application, or to applications managed by a dynamic app provider using the Dynamic Application Framework.
+    */
+  def createEntitlement(): Request[CreateEntitlementResult, AWSError] = js.native
+  def createEntitlement(callback: js.Function2[/* err */ AWSError, /* data */ CreateEntitlementResult, Unit]): Request[CreateEntitlementResult, AWSError] = js.native
+  /**
+    * Creates a new entitlement. Entitlements control access to specific applications within a stack, based on user attributes. Entitlements apply to SAML 2.0 federated user identities. Amazon AppStream 2.0 user pool and streaming URL users are entitled to all applications in a stack. Entitlements don't apply to the desktop stream view application, or to applications managed by a dynamic app provider using the Dynamic Application Framework.
+    */
+  def createEntitlement(params: CreateEntitlementRequest): Request[CreateEntitlementResult, AWSError] = js.native
+  def createEntitlement(
+    params: CreateEntitlementRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateEntitlementResult, Unit]
+  ): Request[CreateEntitlementResult, AWSError] = js.native
+  
+  /**
+    * Creates a fleet. A fleet consists of streaming instances that run a specified image when using Always-On or On-Demand.
     */
   def createFleet(): Request[CreateFleetResult, AWSError] = js.native
   def createFleet(callback: js.Function2[/* err */ AWSError, /* data */ CreateFleetResult, Unit]): Request[CreateFleetResult, AWSError] = js.native
   /**
-    * Creates a fleet. A fleet consists of streaming instances that run a specified image.
+    * Creates a fleet. A fleet consists of streaming instances that run a specified image when using Always-On or On-Demand.
     */
   def createFleet(params: CreateFleetRequest): Request[CreateFleetResult, AWSError] = js.native
   def createFleet(
@@ -158,6 +230,20 @@ trait AppStream extends Service {
   ): Request[CreateStreamingURLResult, AWSError] = js.native
   
   /**
+    * Creates a new image with the latest Windows operating system updates, driver updates, and AppStream 2.0 agent software. For more information, see the "Update an Image by Using Managed AppStream 2.0 Image Updates" section in Administer Your AppStream 2.0 Images, in the Amazon AppStream 2.0 Administration Guide.
+    */
+  def createUpdatedImage(): Request[CreateUpdatedImageResult, AWSError] = js.native
+  def createUpdatedImage(callback: js.Function2[/* err */ AWSError, /* data */ CreateUpdatedImageResult, Unit]): Request[CreateUpdatedImageResult, AWSError] = js.native
+  /**
+    * Creates a new image with the latest Windows operating system updates, driver updates, and AppStream 2.0 agent software. For more information, see the "Update an Image by Using Managed AppStream 2.0 Image Updates" section in Administer Your AppStream 2.0 Images, in the Amazon AppStream 2.0 Administration Guide.
+    */
+  def createUpdatedImage(params: CreateUpdatedImageRequest): Request[CreateUpdatedImageResult, AWSError] = js.native
+  def createUpdatedImage(
+    params: CreateUpdatedImageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateUpdatedImageResult, Unit]
+  ): Request[CreateUpdatedImageResult, AWSError] = js.native
+  
+  /**
     * Creates a usage report subscription. Usage reports are generated daily.
     */
   def createUsageReportSubscription(): Request[CreateUsageReportSubscriptionResult, AWSError] = js.native
@@ -186,6 +272,34 @@ trait AppStream extends Service {
   ): Request[CreateUserResult, AWSError] = js.native
   
   /**
+    * Deletes an app block.
+    */
+  def deleteAppBlock(): Request[DeleteAppBlockResult, AWSError] = js.native
+  def deleteAppBlock(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAppBlockResult, Unit]): Request[DeleteAppBlockResult, AWSError] = js.native
+  /**
+    * Deletes an app block.
+    */
+  def deleteAppBlock(params: DeleteAppBlockRequest): Request[DeleteAppBlockResult, AWSError] = js.native
+  def deleteAppBlock(
+    params: DeleteAppBlockRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAppBlockResult, Unit]
+  ): Request[DeleteAppBlockResult, AWSError] = js.native
+  
+  /**
+    * Deletes an application.
+    */
+  def deleteApplication(): Request[DeleteApplicationResult, AWSError] = js.native
+  def deleteApplication(callback: js.Function2[/* err */ AWSError, /* data */ DeleteApplicationResult, Unit]): Request[DeleteApplicationResult, AWSError] = js.native
+  /**
+    * Deletes an application.
+    */
+  def deleteApplication(params: DeleteApplicationRequest): Request[DeleteApplicationResult, AWSError] = js.native
+  def deleteApplication(
+    params: DeleteApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteApplicationResult, Unit]
+  ): Request[DeleteApplicationResult, AWSError] = js.native
+  
+  /**
     * Deletes the specified Directory Config object from AppStream 2.0. This object includes the information required to join streaming instances to an Active Directory domain.
     */
   def deleteDirectoryConfig(): Request[DeleteDirectoryConfigResult, AWSError] = js.native
@@ -198,6 +312,20 @@ trait AppStream extends Service {
     params: DeleteDirectoryConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDirectoryConfigResult, Unit]
   ): Request[DeleteDirectoryConfigResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified entitlement.
+    */
+  def deleteEntitlement(): Request[DeleteEntitlementResult, AWSError] = js.native
+  def deleteEntitlement(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEntitlementResult, Unit]): Request[DeleteEntitlementResult, AWSError] = js.native
+  /**
+    * Deletes the specified entitlement.
+    */
+  def deleteEntitlement(params: DeleteEntitlementRequest): Request[DeleteEntitlementResult, AWSError] = js.native
+  def deleteEntitlement(
+    params: DeleteEntitlementRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteEntitlementResult, Unit]
+  ): Request[DeleteEntitlementResult, AWSError] = js.native
   
   /**
     * Deletes the specified fleet.
@@ -298,6 +426,50 @@ trait AppStream extends Service {
   ): Request[DeleteUserResult, AWSError] = js.native
   
   /**
+    * Retrieves a list that describes one or more app blocks.
+    */
+  def describeAppBlocks(): Request[DescribeAppBlocksResult, AWSError] = js.native
+  def describeAppBlocks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppBlocksResult, Unit]): Request[DescribeAppBlocksResult, AWSError] = js.native
+  /**
+    * Retrieves a list that describes one or more app blocks.
+    */
+  def describeAppBlocks(params: DescribeAppBlocksRequest): Request[DescribeAppBlocksResult, AWSError] = js.native
+  def describeAppBlocks(
+    params: DescribeAppBlocksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppBlocksResult, Unit]
+  ): Request[DescribeAppBlocksResult, AWSError] = js.native
+  
+  /**
+    * Retrieves a list that describes one or more application fleet associations. Either ApplicationArn or FleetName must be specified.
+    */
+  def describeApplicationFleetAssociations(): Request[DescribeApplicationFleetAssociationsResult, AWSError] = js.native
+  def describeApplicationFleetAssociations(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeApplicationFleetAssociationsResult, Unit]
+  ): Request[DescribeApplicationFleetAssociationsResult, AWSError] = js.native
+  /**
+    * Retrieves a list that describes one or more application fleet associations. Either ApplicationArn or FleetName must be specified.
+    */
+  def describeApplicationFleetAssociations(params: DescribeApplicationFleetAssociationsRequest): Request[DescribeApplicationFleetAssociationsResult, AWSError] = js.native
+  def describeApplicationFleetAssociations(
+    params: DescribeApplicationFleetAssociationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeApplicationFleetAssociationsResult, Unit]
+  ): Request[DescribeApplicationFleetAssociationsResult, AWSError] = js.native
+  
+  /**
+    * Retrieves a list that describes one or more applications.
+    */
+  def describeApplications(): Request[DescribeApplicationsResult, AWSError] = js.native
+  def describeApplications(callback: js.Function2[/* err */ AWSError, /* data */ DescribeApplicationsResult, Unit]): Request[DescribeApplicationsResult, AWSError] = js.native
+  /**
+    * Retrieves a list that describes one or more applications.
+    */
+  def describeApplications(params: DescribeApplicationsRequest): Request[DescribeApplicationsResult, AWSError] = js.native
+  def describeApplications(
+    params: DescribeApplicationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeApplicationsResult, Unit]
+  ): Request[DescribeApplicationsResult, AWSError] = js.native
+  
+  /**
     * Retrieves a list that describes one or more specified Directory Config objects for AppStream 2.0, if the names for these objects are provided. Otherwise, all Directory Config objects in the account are described. These objects include the configuration information required to join fleets and image builders to Microsoft Active Directory domains.  Although the response syntax in this topic includes the account password, this password is not returned in the actual response.
     */
   def describeDirectoryConfigs(): Request[DescribeDirectoryConfigsResult, AWSError] = js.native
@@ -310,6 +482,20 @@ trait AppStream extends Service {
     params: DescribeDirectoryConfigsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDirectoryConfigsResult, Unit]
   ): Request[DescribeDirectoryConfigsResult, AWSError] = js.native
+  
+  /**
+    * Retrieves a list that describes one of more entitlements.
+    */
+  def describeEntitlements(): Request[DescribeEntitlementsResult, AWSError] = js.native
+  def describeEntitlements(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEntitlementsResult, Unit]): Request[DescribeEntitlementsResult, AWSError] = js.native
+  /**
+    * Retrieves a list that describes one of more entitlements.
+    */
+  def describeEntitlements(params: DescribeEntitlementsRequest): Request[DescribeEntitlementsResult, AWSError] = js.native
+  def describeEntitlements(
+    params: DescribeEntitlementsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEntitlementsResult, Unit]
+  ): Request[DescribeEntitlementsResult, AWSError] = js.native
   
   /**
     * Retrieves a list that describes one or more specified fleets, if the fleet names are provided. Otherwise, all fleets in the account are described.
@@ -454,6 +640,36 @@ trait AppStream extends Service {
   ): Request[DisableUserResult, AWSError] = js.native
   
   /**
+    * Disassociates the specified application from the fleet.
+    */
+  def disassociateApplicationFleet(): Request[DisassociateApplicationFleetResult, AWSError] = js.native
+  def disassociateApplicationFleet(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateApplicationFleetResult, Unit]): Request[DisassociateApplicationFleetResult, AWSError] = js.native
+  /**
+    * Disassociates the specified application from the fleet.
+    */
+  def disassociateApplicationFleet(params: DisassociateApplicationFleetRequest): Request[DisassociateApplicationFleetResult, AWSError] = js.native
+  def disassociateApplicationFleet(
+    params: DisassociateApplicationFleetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateApplicationFleetResult, Unit]
+  ): Request[DisassociateApplicationFleetResult, AWSError] = js.native
+  
+  /**
+    * Deletes the specified application from the specified entitlement.
+    */
+  def disassociateApplicationFromEntitlement(): Request[DisassociateApplicationFromEntitlementResult, AWSError] = js.native
+  def disassociateApplicationFromEntitlement(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateApplicationFromEntitlementResult, Unit]
+  ): Request[DisassociateApplicationFromEntitlementResult, AWSError] = js.native
+  /**
+    * Deletes the specified application from the specified entitlement.
+    */
+  def disassociateApplicationFromEntitlement(params: DisassociateApplicationFromEntitlementRequest): Request[DisassociateApplicationFromEntitlementResult, AWSError] = js.native
+  def disassociateApplicationFromEntitlement(
+    params: DisassociateApplicationFromEntitlementRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateApplicationFromEntitlementResult, Unit]
+  ): Request[DisassociateApplicationFromEntitlementResult, AWSError] = js.native
+  
+  /**
     * Disassociates the specified fleet from the specified stack.
     */
   def disassociateFleet(): Request[DisassociateFleetResult, AWSError] = js.native
@@ -522,6 +738,20 @@ trait AppStream extends Service {
     params: ListAssociatedStacksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAssociatedStacksResult, Unit]
   ): Request[ListAssociatedStacksResult, AWSError] = js.native
+  
+  /**
+    * Retrieves a list of entitled applications.
+    */
+  def listEntitledApplications(): Request[ListEntitledApplicationsResult, AWSError] = js.native
+  def listEntitledApplications(callback: js.Function2[/* err */ AWSError, /* data */ ListEntitledApplicationsResult, Unit]): Request[ListEntitledApplicationsResult, AWSError] = js.native
+  /**
+    * Retrieves a list of entitled applications.
+    */
+  def listEntitledApplications(params: ListEntitledApplicationsRequest): Request[ListEntitledApplicationsResult, AWSError] = js.native
+  def listEntitledApplications(
+    params: ListEntitledApplicationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEntitledApplicationsResult, Unit]
+  ): Request[ListEntitledApplicationsResult, AWSError] = js.native
   
   /**
     * Retrieves a list of all tags for the specified AppStream 2.0 resource. You can tag AppStream 2.0 image builders, images, fleets, and stacks. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Administration Guide.
@@ -622,6 +852,20 @@ trait AppStream extends Service {
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
+    * Updates the specified application.
+    */
+  def updateApplication(): Request[UpdateApplicationResult, AWSError] = js.native
+  def updateApplication(callback: js.Function2[/* err */ AWSError, /* data */ UpdateApplicationResult, Unit]): Request[UpdateApplicationResult, AWSError] = js.native
+  /**
+    * Updates the specified application.
+    */
+  def updateApplication(params: UpdateApplicationRequest): Request[UpdateApplicationResult, AWSError] = js.native
+  def updateApplication(
+    params: UpdateApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateApplicationResult, Unit]
+  ): Request[UpdateApplicationResult, AWSError] = js.native
+  
+  /**
     * Updates the specified Directory Config object in AppStream 2.0. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
     */
   def updateDirectoryConfig(): Request[UpdateDirectoryConfigResult, AWSError] = js.native
@@ -636,12 +880,26 @@ trait AppStream extends Service {
   ): Request[UpdateDirectoryConfigResult, AWSError] = js.native
   
   /**
-    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName, ComputeCapacity, ImageARN, ImageName, IdleDisconnectTimeoutInSeconds, and DisconnectTimeoutInSeconds attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
+    * Updates the specified entitlement.
+    */
+  def updateEntitlement(): Request[UpdateEntitlementResult, AWSError] = js.native
+  def updateEntitlement(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEntitlementResult, Unit]): Request[UpdateEntitlementResult, AWSError] = js.native
+  /**
+    * Updates the specified entitlement.
+    */
+  def updateEntitlement(params: UpdateEntitlementRequest): Request[UpdateEntitlementResult, AWSError] = js.native
+  def updateEntitlement(
+    params: UpdateEntitlementRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateEntitlementResult, Unit]
+  ): Request[UpdateEntitlementResult, AWSError] = js.native
+  
+  /**
+    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the following based on the fleet type:   Always-On and On-Demand fleet types You can update the DisplayName, ComputeCapacity, ImageARN, ImageName, IdleDisconnectTimeoutInSeconds, and DisconnectTimeoutInSeconds attributes.   Elastic fleet type You can update the DisplayName, IdleDisconnectTimeoutInSeconds, DisconnectTimeoutInSeconds, MaxConcurrentSessions, SessionScriptS3Location and UsbDeviceFilterStrings attributes.   If the fleet is in the STARTING or STOPPED state, you can't update it.
     */
   def updateFleet(): Request[UpdateFleetResult, AWSError] = js.native
   def updateFleet(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFleetResult, Unit]): Request[UpdateFleetResult, AWSError] = js.native
   /**
-    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName, ComputeCapacity, ImageARN, ImageName, IdleDisconnectTimeoutInSeconds, and DisconnectTimeoutInSeconds attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
+    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the following based on the fleet type:   Always-On and On-Demand fleet types You can update the DisplayName, ComputeCapacity, ImageARN, ImageName, IdleDisconnectTimeoutInSeconds, and DisconnectTimeoutInSeconds attributes.   Elastic fleet type You can update the DisplayName, IdleDisconnectTimeoutInSeconds, DisconnectTimeoutInSeconds, MaxConcurrentSessions, SessionScriptS3Location and UsbDeviceFilterStrings attributes.   If the fleet is in the STARTING or STOPPED state, you can't update it.
     */
   def updateFleet(params: UpdateFleetRequest): Request[UpdateFleetResult, AWSError] = js.native
   def updateFleet(

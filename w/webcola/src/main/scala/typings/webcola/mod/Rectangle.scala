@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "Rectangle")
 @js.native
-class Rectangle protected ()
+open class Rectangle protected ()
   extends typings.webcola.rectangleMod.Rectangle {
   def this(x: Double, X: Double, y: Double, Y: Double) = this()
 }

@@ -22,10 +22,10 @@ object mod {
     
     def apply(
       sel: Selection_[
-          js.Any, 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+          Any, 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
           BaseType, 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
         ]
     ): Unit = js.native
     
@@ -33,9 +33,9 @@ object mod {
     def animate(`val`: Boolean): Slider_ = js.native
     def animate(`val`: Double): Slider_ = js.native
     
-    def axis(): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any) = js.native
+    def axis(): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any) = js.native
     def axis(
-      `val`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
+      `val`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any
     ): Slider_ = js.native
     def axis(`val`: Boolean): Slider_ = js.native
     
@@ -48,16 +48,13 @@ object mod {
     def min(): Double = js.native
     def min(`val`: Double): Slider_ = js.native
     
-    @JSName("on")
-    def on_slide(evt: slide, callback: js.Function2[/* evt */ js.Any, /* val */ js.Any, Unit]): Slider_ = js.native
-    @JSName("on")
-    def on_slideend(evt: slideend, callback: js.Function2[/* evt */ js.Any, /* val */ js.Any, Unit]): Slider_ = js.native
+    def on(evt: slide | slideend, callback: js.Function2[/* evt */ Any, /* val */ Any, Unit]): Slider_ = js.native
     
     def orientation(): String = js.native
     def orientation(`val`: String): Slider_ = js.native
     
-    def scale(): js.Any = js.native
-    def scale(`val`: js.Any): Slider_ = js.native
+    def scale(): Any = js.native
+    def scale(`val`: Any): Slider_ = js.native
     
     def snap(): Boolean = js.native
     def snap(`val`: Boolean): Slider_ = js.native
@@ -65,7 +62,7 @@ object mod {
     def step(): Double = js.native
     def step(`val`: Double): Slider_ = js.native
     
-    def value(): js.Any = js.native
-    def value(`val`: js.Any): Slider_ = js.native
+    def value(): Any = js.native
+    def value(`val`: Any): Slider_ = js.native
   }
 }

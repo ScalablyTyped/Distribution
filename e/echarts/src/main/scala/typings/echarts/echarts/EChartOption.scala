@@ -6,6 +6,7 @@ import typings.echarts.anon.AnimationAnimationDelay
 import typings.echarts.anon.AnimationDelay
 import typings.echarts.anon.AnimationDelayAnimationDelayUpdate
 import typings.echarts.anon.AnimationDelayUpdate
+import typings.echarts.anon.AnimationDelayUpdateAnimationDuration
 import typings.echarts.anon.AnimationDuration
 import typings.echarts.anon.AnimationDurationUpdate
 import typings.echarts.anon.AnimationEasing
@@ -87,10 +88,11 @@ import typings.echarts.anon.SplitNumber
 import typings.echarts.anon.TextBorderColor
 import typings.echarts.anon.TextBorderWidth
 import typings.echarts.anon.TextShadowColor
+import typings.echarts.anon.Title
 import typings.echarts.anon.UpperLabel
 import typings.echarts.anon.`10`
 import typings.echarts.anon.`11`
-import typings.echarts.anon.`14`
+import typings.echarts.anon.`12`
 import typings.echarts.anon.`15`
 import typings.echarts.anon.`16`
 import typings.echarts.anon.`17`
@@ -101,14 +103,15 @@ import typings.echarts.anon.`21`
 import typings.echarts.anon.`22`
 import typings.echarts.anon.`23`
 import typings.echarts.anon.`24`
+import typings.echarts.anon.`25`
 import typings.echarts.anon.`2`
 import typings.echarts.anon.`3`
-import typings.echarts.anon.`4`
-import typings.echarts.anon.`7`
+import typings.echarts.anon.`5`
 import typings.echarts.anon.`8`
 import typings.echarts.anon.`9`
 import typings.echarts.echarts.EChartOption.AxisPointer
 import typings.echarts.echarts.EChartOption.BaseTextStyle
+import typings.echarts.echarts.EChartOption.BaseTextStyleWithRich
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.DataObject
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Label
@@ -132,6 +135,7 @@ import typings.echarts.echarts.EChartOption.Legend
 import typings.echarts.echarts.EChartOption.Legend.LegendDataObject
 import typings.echarts.echarts.EChartOption.Legend.PageFormatter
 import typings.echarts.echarts.EChartOption.Legend.PageIcons
+import typings.echarts.echarts.EChartOption.Legend.SelectorLabel
 import typings.echarts.echarts.EChartOption.SeriesCustom.RenderItem
 import typings.echarts.echarts.EChartOption.SeriesGraph.CategoryObject
 import typings.echarts.echarts.EChartOption.SeriesGraph.LinkObject
@@ -211,10 +215,10 @@ import typings.echarts.echartsStrings.vertical
 import typings.echarts.echartsStrings.weakFilter
 import typings.echarts.echartsStrings.x
 import typings.echarts.echartsStrings.y
-import typings.std.Date
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.std.HTMLImageElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -561,7 +565,7 @@ trait EChartOption[TSeries] extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#textStyle
     */
-  var textStyle: js.UndefOr[BaseTextStyle] = js.undefined
+  var textStyle: js.UndefOr[BaseTextStyle & BaseTextStyleWithRich] = js.undefined
   
   /**
     * `timeline` component, which provides functions like switching and playing
@@ -772,7 +776,7 @@ object EChartOption {
       
       inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      inline def setLinkVarargs(value: js.Object*): Self = StObject.set(x, "link", js.Array(value :_*))
+      inline def setLinkVarargs(value: js.Object*): Self = StObject.set(x, "link", js.Array(value*))
       
       inline def setTriggerOn(value: mousemove | click | mousemoveVerticallineclick | none): Self = StObject.set(x, "triggerOn", value.asInstanceOf[js.Any])
       
@@ -1109,7 +1113,7 @@ object EChartOption {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
       
       inline def setPosition(value: Type): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -1119,7 +1123,7 @@ object EChartOption {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setPositionVarargs(value: (Double | String)*): Self = StObject.set(x, "position", js.Array(value :_*))
+      inline def setPositionVarargs(value: (Double | String)*): Self = StObject.set(x, "position", js.Array(value*))
       
       inline def setTextStyle(value: BaseTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
@@ -1302,7 +1306,7 @@ object EChartOption {
         * It is available only for axis of type `'value'` or `'time'`.
         * @see https://echarts.apache.org/en/option.html#yAxis.minInterval
         */
-      var minInterval: js.UndefOr[js.Any] = js.undefined
+      var minInterval: js.UndefOr[Any] = js.undefined
       
       /**
         * Minor SplitLine of axis in grid area.
@@ -1491,13 +1495,13 @@ object EChartOption {
         
         inline def setBoundaryGapUndefined: Self = StObject.set(x, "boundaryGap", js.undefined)
         
-        inline def setBoundaryGapVarargs(value: (String | Double)*): Self = StObject.set(x, "boundaryGap", js.Array(value :_*))
+        inline def setBoundaryGapVarargs(value: (String | Double)*): Self = StObject.set(x, "boundaryGap", js.Array(value*))
         
         inline def setData(value: js.Array[String | Double | DataObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        inline def setDataVarargs(value: (String | Double | DataObject)*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: (String | Double | DataObject)*): Self = StObject.set(x, "data", js.Array(value*))
         
         inline def setGridIndex(value: Double): Self = StObject.set(x, "gridIndex", value.asInstanceOf[js.Any])
         
@@ -1529,7 +1533,7 @@ object EChartOption {
         
         inline def setMinFunction1(value: /* value */ Max => Double): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
         
-        inline def setMinInterval(value: js.Any): Self = StObject.set(x, "minInterval", value.asInstanceOf[js.Any])
+        inline def setMinInterval(value: Any): Self = StObject.set(x, "minInterval", value.asInstanceOf[js.Any])
         
         inline def setMinIntervalUndefined: Self = StObject.set(x, "minInterval", js.undefined)
         
@@ -1635,25 +1639,78 @@ object EChartOption {
       /**
         * @todo describe
         */
-      trait Label
-        extends StObject
-           with TextStyleWithRich {
+      /* Inlined parent std.Omit<echarts.echarts.EChartOption.TextStyleWithRich, 'color'> */
+      trait Label extends StObject {
+        
+        var align: js.UndefOr[String] = js.undefined
+        
+        var backgroundColor: js.UndefOr[String | js.Object] = js.undefined
+        
+        var borderColor: js.UndefOr[String] = js.undefined
+        
+        var borderRadius: js.UndefOr[Double] = js.undefined
+        
+        var borderWidth: js.UndefOr[Double] = js.undefined
+        
+        var color: js.UndefOr[String | (js.Function1[/* val */ String, Color])] = js.undefined
+        
+        var fontFamily: js.UndefOr[String] = js.undefined
+        
+        var fontSize: js.UndefOr[Double] = js.undefined
+        
+        var fontStyle: js.UndefOr[normal | italic | oblique] = js.undefined
+        
+        var fontWeight: js.UndefOr[
+                normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
+              ] = js.undefined
         
         var formatter: js.UndefOr[String | js.Function] = js.undefined
+        
+        var height: js.UndefOr[Double | String] = js.undefined
         
         var inside: js.UndefOr[Boolean] = js.undefined
         
         var interval: js.UndefOr[Double | js.Function] = js.undefined
         
+        var lineHeight: js.UndefOr[Double] = js.undefined
+        
         var margin: js.UndefOr[Double] = js.undefined
         
+        var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
+        
+        var rich: js.UndefOr[RichStyle] = js.undefined
+        
         var rotate: js.UndefOr[Double] = js.undefined
+        
+        var shadowBlur: js.UndefOr[Double] = js.undefined
+        
+        var shadowColor: js.UndefOr[String] = js.undefined
+        
+        var shadowOffsetX: js.UndefOr[Double] = js.undefined
+        
+        var shadowOffsetY: js.UndefOr[Double] = js.undefined
         
         var show: js.UndefOr[Boolean] = js.undefined
         
         var showMaxLabel: js.UndefOr[Boolean] = js.undefined
         
         var showMinLabel: js.UndefOr[Boolean] = js.undefined
+        
+        var textBorderColor: js.UndefOr[String] = js.undefined
+        
+        var textBorderWidth: js.UndefOr[Double] = js.undefined
+        
+        var textShadowBlur: js.UndefOr[Double] = js.undefined
+        
+        var textShadowColor: js.UndefOr[String] = js.undefined
+        
+        var textShadowOffsetX: js.UndefOr[Double] = js.undefined
+        
+        var textShadowOffsetY: js.UndefOr[Double] = js.undefined
+        
+        var verticalAlign: js.UndefOr[String] = js.undefined
+        
+        var width: js.UndefOr[Double | String] = js.undefined
       }
       object Label {
         
@@ -1664,9 +1721,57 @@ object EChartOption {
         
         extension [Self <: Label](x: Self) {
           
+          inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+          
+          inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+          
+          inline def setBackgroundColor(value: String | js.Object): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+          
+          inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+          
+          inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+          
+          inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+          
+          inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+          
+          inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+          
+          inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+          
+          inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+          
+          inline def setColor(value: String | (js.Function1[/* val */ String, Color])): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+          
+          inline def setColorFunction1(value: /* val */ String => Color): Self = StObject.set(x, "color", js.Any.fromFunction1(value))
+          
+          inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+          
+          inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+          
+          inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+          
+          inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+          
+          inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+          
+          inline def setFontStyle(value: normal | italic | oblique): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+          
+          inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+          
+          inline def setFontWeight(
+            value: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
+          ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+          
+          inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+          
           inline def setFormatter(value: String | js.Function): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
           
           inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+          
+          inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+          
+          inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
           
           inline def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
           
@@ -1676,13 +1781,43 @@ object EChartOption {
           
           inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
           
+          inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+          
+          inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+          
           inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
           
           inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
           
+          inline def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+          
+          inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+          
+          inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
+          
+          inline def setRich(value: RichStyle): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])
+          
+          inline def setRichUndefined: Self = StObject.set(x, "rich", js.undefined)
+          
           inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
           
           inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+          
+          inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
+          
+          inline def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
+          
+          inline def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+          
+          inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+          
+          inline def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
+          
+          inline def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
+          
+          inline def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
+          
+          inline def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
           
           inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
           
@@ -1695,6 +1830,38 @@ object EChartOption {
           inline def setShowMinLabelUndefined: Self = StObject.set(x, "showMinLabel", js.undefined)
           
           inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+          
+          inline def setTextBorderColor(value: String): Self = StObject.set(x, "textBorderColor", value.asInstanceOf[js.Any])
+          
+          inline def setTextBorderColorUndefined: Self = StObject.set(x, "textBorderColor", js.undefined)
+          
+          inline def setTextBorderWidth(value: Double): Self = StObject.set(x, "textBorderWidth", value.asInstanceOf[js.Any])
+          
+          inline def setTextBorderWidthUndefined: Self = StObject.set(x, "textBorderWidth", js.undefined)
+          
+          inline def setTextShadowBlur(value: Double): Self = StObject.set(x, "textShadowBlur", value.asInstanceOf[js.Any])
+          
+          inline def setTextShadowBlurUndefined: Self = StObject.set(x, "textShadowBlur", js.undefined)
+          
+          inline def setTextShadowColor(value: String): Self = StObject.set(x, "textShadowColor", value.asInstanceOf[js.Any])
+          
+          inline def setTextShadowColorUndefined: Self = StObject.set(x, "textShadowColor", js.undefined)
+          
+          inline def setTextShadowOffsetX(value: Double): Self = StObject.set(x, "textShadowOffsetX", value.asInstanceOf[js.Any])
+          
+          inline def setTextShadowOffsetXUndefined: Self = StObject.set(x, "textShadowOffsetX", js.undefined)
+          
+          inline def setTextShadowOffsetY(value: Double): Self = StObject.set(x, "textShadowOffsetY", value.asInstanceOf[js.Any])
+          
+          inline def setTextShadowOffsetYUndefined: Self = StObject.set(x, "textShadowOffsetY", js.undefined)
+          
+          inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+          
+          inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+          
+          inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+          
+          inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
         }
       }
       
@@ -1973,7 +2140,7 @@ object EChartOption {
           
           inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
           
-          inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+          inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
           
           inline def setPrecision(value: Double | String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
           
@@ -2218,17 +2385,17 @@ object EChartOption {
         
         inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
         
-        inline def setSymbolOffsetVarargs(value: Double*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+        inline def setSymbolOffsetVarargs(value: Double*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
         
         inline def setSymbolSize(value: js.Array[Double]): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
         
         inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
         
-        inline def setSymbolSizeVarargs(value: Double*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+        inline def setSymbolSizeVarargs(value: Double*): Self = StObject.set(x, "symbolSize", js.Array(value*))
         
         inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
         
-        inline def setSymbolVarargs(value: String*): Self = StObject.set(x, "symbol", js.Array(value :_*))
+        inline def setSymbolVarargs(value: String*): Self = StObject.set(x, "symbol", js.Array(value*))
       }
     }
   }
@@ -2404,7 +2571,7 @@ object EChartOption {
       
       inline def setCellSizeUndefined: Self = StObject.set(x, "cellSize", js.undefined)
       
-      inline def setCellSizeVarargs(value: (auto | Double)*): Self = StObject.set(x, "cellSize", js.Array(value :_*))
+      inline def setCellSizeVarargs(value: (auto | Double)*): Self = StObject.set(x, "cellSize", js.Array(value*))
       
       inline def setDayLabel(value: DayLabel): Self = StObject.set(x, "dayLabel", value.asInstanceOf[js.Any])
       
@@ -2438,7 +2605,7 @@ object EChartOption {
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      inline def setRangeVarargs(value: (Double | String)*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: (Double | String)*): Self = StObject.set(x, "range", js.Array(value*))
       
       inline def setRight(value: Double | String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
@@ -2551,7 +2718,7 @@ object EChartOption {
         
         inline def setNameMapUndefined: Self = StObject.set(x, "nameMap", js.undefined)
         
-        inline def setNameMapVarargs(value: (String | Double)*): Self = StObject.set(x, "nameMap", js.Array(value :_*))
+        inline def setNameMapVarargs(value: (String | Double)*): Self = StObject.set(x, "nameMap", js.Array(value*))
         
         inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
         
@@ -2631,7 +2798,7 @@ object EChartOption {
         
         inline def setNameMapUndefined: Self = StObject.set(x, "nameMap", js.undefined)
         
-        inline def setNameMapVarargs(value: (String | Double)*): Self = StObject.set(x, "nameMap", js.Array(value :_*))
+        inline def setNameMapVarargs(value: (String | Double)*): Self = StObject.set(x, "nameMap", js.Array(value*))
         
         inline def setYy(value: Double): Self = StObject.set(x, "yy", value.asInstanceOf[js.Any])
         
@@ -2707,7 +2874,7 @@ object EChartOption {
         
         inline def setNameMapUndefined: Self = StObject.set(x, "nameMap", js.undefined)
         
-        inline def setNameMapVarargs(value: (String | Double)*): Self = StObject.set(x, "nameMap", js.Array(value :_*))
+        inline def setNameMapVarargs(value: (String | Double)*): Self = StObject.set(x, "nameMap", js.Array(value*))
         
         inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
@@ -2776,7 +2943,7 @@ object EChartOption {
       
       var end: js.UndefOr[Double] = js.undefined
       
-      var endValue: js.UndefOr[Double | String | Date] = js.undefined
+      var endValue: js.UndefOr[Double | String | js.Date] = js.undefined
       
       var filterMode: js.UndefOr[filter | weakFilter | empty | none] = js.undefined
       
@@ -2784,11 +2951,11 @@ object EChartOption {
       
       var maxSpan: js.UndefOr[Double] = js.undefined
       
-      var maxValueSpan: js.UndefOr[Double | String | Date] = js.undefined
+      var maxValueSpan: js.UndefOr[Double | String | js.Date] = js.undefined
       
       var minSpan: js.UndefOr[Double] = js.undefined
       
-      var minValueSpan: js.UndefOr[Double | String | Date] = js.undefined
+      var minValueSpan: js.UndefOr[Double | String | js.Date] = js.undefined
       
       var moveOnMouseMove: js.UndefOr[Boolean] = js.undefined
       
@@ -2806,7 +2973,7 @@ object EChartOption {
       
       var start: js.UndefOr[Double] = js.undefined
       
-      var startValue: js.UndefOr[Double | String | Date] = js.undefined
+      var startValue: js.UndefOr[Double | String | js.Date] = js.undefined
       
       var throttle: js.UndefOr[Double] = js.undefined
       
@@ -2833,7 +3000,7 @@ object EChartOption {
         
         inline def setAngleAxisIndexUndefined: Self = StObject.set(x, "angleAxisIndex", js.undefined)
         
-        inline def setAngleAxisIndexVarargs(value: Double*): Self = StObject.set(x, "angleAxisIndex", js.Array(value :_*))
+        inline def setAngleAxisIndexVarargs(value: Double*): Self = StObject.set(x, "angleAxisIndex", js.Array(value*))
         
         inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
@@ -2843,7 +3010,7 @@ object EChartOption {
         
         inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
         
-        inline def setEndValue(value: Double | String | Date): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+        inline def setEndValue(value: Double | String | js.Date): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
         
         inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
         
@@ -2859,7 +3026,7 @@ object EChartOption {
         
         inline def setMaxSpanUndefined: Self = StObject.set(x, "maxSpan", js.undefined)
         
-        inline def setMaxValueSpan(value: Double | String | Date): Self = StObject.set(x, "maxValueSpan", value.asInstanceOf[js.Any])
+        inline def setMaxValueSpan(value: Double | String | js.Date): Self = StObject.set(x, "maxValueSpan", value.asInstanceOf[js.Any])
         
         inline def setMaxValueSpanUndefined: Self = StObject.set(x, "maxValueSpan", js.undefined)
         
@@ -2867,7 +3034,7 @@ object EChartOption {
         
         inline def setMinSpanUndefined: Self = StObject.set(x, "minSpan", js.undefined)
         
-        inline def setMinValueSpan(value: Double | String | Date): Self = StObject.set(x, "minValueSpan", value.asInstanceOf[js.Any])
+        inline def setMinValueSpan(value: Double | String | js.Date): Self = StObject.set(x, "minValueSpan", value.asInstanceOf[js.Any])
         
         inline def setMinValueSpanUndefined: Self = StObject.set(x, "minValueSpan", js.undefined)
         
@@ -2891,25 +3058,25 @@ object EChartOption {
         
         inline def setRadiusAxisIndexUndefined: Self = StObject.set(x, "radiusAxisIndex", js.undefined)
         
-        inline def setRadiusAxisIndexVarargs(value: Double*): Self = StObject.set(x, "radiusAxisIndex", js.Array(value :_*))
+        inline def setRadiusAxisIndexVarargs(value: Double*): Self = StObject.set(x, "radiusAxisIndex", js.Array(value*))
         
         inline def setRangeMode(value: js.Array[String]): Self = StObject.set(x, "rangeMode", value.asInstanceOf[js.Any])
         
         inline def setRangeModeUndefined: Self = StObject.set(x, "rangeMode", js.undefined)
         
-        inline def setRangeModeVarargs(value: String*): Self = StObject.set(x, "rangeMode", js.Array(value :_*))
+        inline def setRangeModeVarargs(value: String*): Self = StObject.set(x, "rangeMode", js.Array(value*))
         
         inline def setSingleAxisIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "singleAxisIndex", value.asInstanceOf[js.Any])
         
         inline def setSingleAxisIndexUndefined: Self = StObject.set(x, "singleAxisIndex", js.undefined)
         
-        inline def setSingleAxisIndexVarargs(value: Double*): Self = StObject.set(x, "singleAxisIndex", js.Array(value :_*))
+        inline def setSingleAxisIndexVarargs(value: Double*): Self = StObject.set(x, "singleAxisIndex", js.Array(value*))
         
         inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
         inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
         
-        inline def setStartValue(value: Double | String | Date): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+        inline def setStartValue(value: Double | String | js.Date): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
         
         inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
         
@@ -2925,13 +3092,13 @@ object EChartOption {
         
         inline def setXAxisIndexUndefined: Self = StObject.set(x, "xAxisIndex", js.undefined)
         
-        inline def setXAxisIndexVarargs(value: Double*): Self = StObject.set(x, "xAxisIndex", js.Array(value :_*))
+        inline def setXAxisIndexVarargs(value: Double*): Self = StObject.set(x, "xAxisIndex", js.Array(value*))
         
         inline def setYAxisIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "yAxisIndex", value.asInstanceOf[js.Any])
         
         inline def setYAxisIndexUndefined: Self = StObject.set(x, "yAxisIndex", js.undefined)
         
-        inline def setYAxisIndexVarargs(value: Double*): Self = StObject.set(x, "yAxisIndex", js.Array(value :_*))
+        inline def setYAxisIndexVarargs(value: Double*): Self = StObject.set(x, "yAxisIndex", js.Array(value*))
         
         inline def setZoomLock(value: Boolean): Self = StObject.set(x, "zoomLock", value.asInstanceOf[js.Any])
         
@@ -2962,7 +3129,7 @@ object EChartOption {
       
       var end: js.UndefOr[Double] = js.undefined
       
-      var endValue: js.UndefOr[Double | String | Date] = js.undefined
+      var endValue: js.UndefOr[Double | String | js.Date] = js.undefined
       
       var fillerColor: js.UndefOr[String] = js.undefined
       
@@ -2984,11 +3151,17 @@ object EChartOption {
       
       var maxSpan: js.UndefOr[Double] = js.undefined
       
-      var maxValueSpan: js.UndefOr[Double | String | Date] = js.undefined
+      var maxValueSpan: js.UndefOr[Double | String | js.Date] = js.undefined
       
       var minSpan: js.UndefOr[Double] = js.undefined
       
-      var minValueSpan: js.UndefOr[Double | String | Date] = js.undefined
+      var minValueSpan: js.UndefOr[Double | String | js.Date] = js.undefined
+      
+      var moveHandleIcon: js.UndefOr[String] = js.undefined
+      
+      var moveHandleSize: js.UndefOr[Double] = js.undefined
+      
+      var moveHandleStyle: js.UndefOr[js.Object] = js.undefined
       
       var orient: js.UndefOr[vertical | horizontal] = js.undefined
       
@@ -3010,7 +3183,7 @@ object EChartOption {
       
       var start: js.UndefOr[Double] = js.undefined
       
-      var startValue: js.UndefOr[Double | String | Date] = js.undefined
+      var startValue: js.UndefOr[Double | String | js.Date] = js.undefined
       
       var textStyle: js.UndefOr[BaseTextStyle] = js.undefined
       
@@ -3043,7 +3216,7 @@ object EChartOption {
         
         inline def setAngleAxisIndexUndefined: Self = StObject.set(x, "angleAxisIndex", js.undefined)
         
-        inline def setAngleAxisIndexVarargs(value: Double*): Self = StObject.set(x, "angleAxisIndex", js.Array(value :_*))
+        inline def setAngleAxisIndexVarargs(value: Double*): Self = StObject.set(x, "angleAxisIndex", js.Array(value*))
         
         inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
@@ -3065,7 +3238,7 @@ object EChartOption {
         
         inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
         
-        inline def setEndValue(value: Double | String | Date): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+        inline def setEndValue(value: Double | String | js.Date): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
         
         inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
         
@@ -3109,7 +3282,7 @@ object EChartOption {
         
         inline def setMaxSpanUndefined: Self = StObject.set(x, "maxSpan", js.undefined)
         
-        inline def setMaxValueSpan(value: Double | String | Date): Self = StObject.set(x, "maxValueSpan", value.asInstanceOf[js.Any])
+        inline def setMaxValueSpan(value: Double | String | js.Date): Self = StObject.set(x, "maxValueSpan", value.asInstanceOf[js.Any])
         
         inline def setMaxValueSpanUndefined: Self = StObject.set(x, "maxValueSpan", js.undefined)
         
@@ -3117,9 +3290,21 @@ object EChartOption {
         
         inline def setMinSpanUndefined: Self = StObject.set(x, "minSpan", js.undefined)
         
-        inline def setMinValueSpan(value: Double | String | Date): Self = StObject.set(x, "minValueSpan", value.asInstanceOf[js.Any])
+        inline def setMinValueSpan(value: Double | String | js.Date): Self = StObject.set(x, "minValueSpan", value.asInstanceOf[js.Any])
         
         inline def setMinValueSpanUndefined: Self = StObject.set(x, "minValueSpan", js.undefined)
+        
+        inline def setMoveHandleIcon(value: String): Self = StObject.set(x, "moveHandleIcon", value.asInstanceOf[js.Any])
+        
+        inline def setMoveHandleIconUndefined: Self = StObject.set(x, "moveHandleIcon", js.undefined)
+        
+        inline def setMoveHandleSize(value: Double): Self = StObject.set(x, "moveHandleSize", value.asInstanceOf[js.Any])
+        
+        inline def setMoveHandleSizeUndefined: Self = StObject.set(x, "moveHandleSize", js.undefined)
+        
+        inline def setMoveHandleStyle(value: js.Object): Self = StObject.set(x, "moveHandleStyle", value.asInstanceOf[js.Any])
+        
+        inline def setMoveHandleStyleUndefined: Self = StObject.set(x, "moveHandleStyle", js.undefined)
         
         inline def setOrient(value: vertical | horizontal): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
         
@@ -3129,13 +3314,13 @@ object EChartOption {
         
         inline def setRadiusAxisIndexUndefined: Self = StObject.set(x, "radiusAxisIndex", js.undefined)
         
-        inline def setRadiusAxisIndexVarargs(value: Double*): Self = StObject.set(x, "radiusAxisIndex", js.Array(value :_*))
+        inline def setRadiusAxisIndexVarargs(value: Double*): Self = StObject.set(x, "radiusAxisIndex", js.Array(value*))
         
         inline def setRangeMode(value: js.Array[String]): Self = StObject.set(x, "rangeMode", value.asInstanceOf[js.Any])
         
         inline def setRangeModeUndefined: Self = StObject.set(x, "rangeMode", js.undefined)
         
-        inline def setRangeModeVarargs(value: String*): Self = StObject.set(x, "rangeMode", js.Array(value :_*))
+        inline def setRangeModeVarargs(value: String*): Self = StObject.set(x, "rangeMode", js.Array(value*))
         
         inline def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
         
@@ -3161,13 +3346,13 @@ object EChartOption {
         
         inline def setSingleAxisIndexUndefined: Self = StObject.set(x, "singleAxisIndex", js.undefined)
         
-        inline def setSingleAxisIndexVarargs(value: Double*): Self = StObject.set(x, "singleAxisIndex", js.Array(value :_*))
+        inline def setSingleAxisIndexVarargs(value: Double*): Self = StObject.set(x, "singleAxisIndex", js.Array(value*))
         
         inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
         inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
         
-        inline def setStartValue(value: Double | String | Date): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+        inline def setStartValue(value: Double | String | js.Date): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
         
         inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
         
@@ -3191,13 +3376,13 @@ object EChartOption {
         
         inline def setXAxisIndexUndefined: Self = StObject.set(x, "xAxisIndex", js.undefined)
         
-        inline def setXAxisIndexVarargs(value: Double*): Self = StObject.set(x, "xAxisIndex", js.Array(value :_*))
+        inline def setXAxisIndexVarargs(value: Double*): Self = StObject.set(x, "xAxisIndex", js.Array(value*))
         
         inline def setYAxisIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "yAxisIndex", value.asInstanceOf[js.Any])
         
         inline def setYAxisIndexUndefined: Self = StObject.set(x, "yAxisIndex", js.undefined)
         
-        inline def setYAxisIndexVarargs(value: Double*): Self = StObject.set(x, "yAxisIndex", js.Array(value :_*))
+        inline def setYAxisIndexVarargs(value: Double*): Self = StObject.set(x, "yAxisIndex", js.Array(value*))
         
         inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
         
@@ -3245,7 +3430,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#dataset.source
       */
-    var source: js.UndefOr[js.Array[js.Any] | js.Object] = js.undefined
+    var source: js.UndefOr[js.Array[Any] | js.Object] = js.undefined
   }
   object Dataset {
     
@@ -3260,17 +3445,17 @@ object EChartOption {
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      inline def setDimensionsVarargs(value: (DimensionObject | String)*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: (DimensionObject | String)*): Self = StObject.set(x, "dimensions", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setSource(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: js.Array[Any] | js.Object): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: Any*): Self = StObject.set(x, "source", js.Array(value*))
     }
     
     /**
@@ -3370,25 +3555,25 @@ object EChartOption {
     
     inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
-    inline def setCalendarVarargs(value: Calendar*): Self = StObject.set(x, "calendar", js.Array(value :_*))
+    inline def setCalendarVarargs(value: Calendar*): Self = StObject.set(x, "calendar", js.Array(value*))
     
     inline def setColor(value: js.Array[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setDataZoom(value: js.Array[DataZoom]): Self = StObject.set(x, "dataZoom", value.asInstanceOf[js.Any])
     
     inline def setDataZoomUndefined: Self = StObject.set(x, "dataZoom", js.undefined)
     
-    inline def setDataZoomVarargs(value: DataZoom*): Self = StObject.set(x, "dataZoom", js.Array(value :_*))
+    inline def setDataZoomVarargs(value: DataZoom*): Self = StObject.set(x, "dataZoom", js.Array(value*))
     
     inline def setDataset(value: Dataset | js.Array[Dataset]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
     inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    inline def setDatasetVarargs(value: Dataset*): Self = StObject.set(x, "dataset", js.Array(value :_*))
+    inline def setDatasetVarargs(value: Dataset*): Self = StObject.set(x, "dataset", js.Array(value*))
     
     inline def setGeo(value: js.Object): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     
@@ -3398,13 +3583,13 @@ object EChartOption {
     
     inline def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
     
-    inline def setGraphicVarargs(value: js.Object*): Self = StObject.set(x, "graphic", js.Array(value :_*))
+    inline def setGraphicVarargs(value: js.Object*): Self = StObject.set(x, "graphic", js.Array(value*))
     
     inline def setGrid(value: Grid | js.Array[Grid]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    inline def setGridVarargs(value: Grid*): Self = StObject.set(x, "grid", js.Array(value :_*))
+    inline def setGridVarargs(value: Grid*): Self = StObject.set(x, "grid", js.Array(value*))
     
     inline def setHoverLayerThreshold(value: Double): Self = StObject.set(x, "hoverLayerThreshold", value.asInstanceOf[js.Any])
     
@@ -3446,15 +3631,15 @@ object EChartOption {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: TSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: TSeries*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setSingleAxis(value: SingleAxis | js.Array[SingleAxis]): Self = StObject.set(x, "singleAxis", value.asInstanceOf[js.Any])
     
     inline def setSingleAxisUndefined: Self = StObject.set(x, "singleAxis", js.undefined)
     
-    inline def setSingleAxisVarargs(value: SingleAxis*): Self = StObject.set(x, "singleAxis", js.Array(value :_*))
+    inline def setSingleAxisVarargs(value: SingleAxis*): Self = StObject.set(x, "singleAxis", js.Array(value*))
     
-    inline def setTextStyle(value: BaseTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: BaseTextStyle & BaseTextStyleWithRich): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
@@ -3466,7 +3651,7 @@ object EChartOption {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitleVarargs(value: EChartTitleOption*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: EChartTitleOption*): Self = StObject.set(x, "title", js.Array(value*))
     
     inline def setToolbox(value: js.Object): Self = StObject.set(x, "toolbox", value.asInstanceOf[js.Any])
     
@@ -3484,19 +3669,19 @@ object EChartOption {
     
     inline def setVisualMapUndefined: Self = StObject.set(x, "visualMap", js.undefined)
     
-    inline def setVisualMapVarargs(value: typings.echarts.echarts.EChartOption.VisualMap*): Self = StObject.set(x, "visualMap", js.Array(value :_*))
+    inline def setVisualMapVarargs(value: typings.echarts.echarts.EChartOption.VisualMap*): Self = StObject.set(x, "visualMap", js.Array(value*))
     
     inline def setXAxis(value: XAxis | js.Array[XAxis]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    inline def setXAxisVarargs(value: XAxis*): Self = StObject.set(x, "xAxis", js.Array(value :_*))
+    inline def setXAxisVarargs(value: XAxis*): Self = StObject.set(x, "xAxis", js.Array(value*))
     
     inline def setYAxis(value: YAxis | js.Array[YAxis]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     
-    inline def setYAxisVarargs(value: YAxis*): Self = StObject.set(x, "yAxis", js.Array(value :_*))
+    inline def setYAxisVarargs(value: YAxis*): Self = StObject.set(x, "yAxis", js.Array(value*))
   }
   
   /**
@@ -3864,7 +4049,7 @@ object EChartOption {
       *
       * @default 'auto'
       */
-    var height: js.UndefOr[Double] = js.undefined
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Icon of the legend items.
@@ -4072,6 +4257,42 @@ object EChartOption {
     var selectedMode: js.UndefOr[Boolean | single | multiple] = js.undefined
     
     /**
+      * The selector button in the legend component.
+      * Currently includes both a full selection and an inverse selection.
+      * The selector button doesn't display by default, the user can manually configure it.
+      */
+    var selector: js.UndefOr[Boolean | (js.Array[String | Title])] = js.undefined
+    
+    /**
+      * The gap between selector button and legend component.
+      *
+      * @default 10
+      */
+    var selectorButtonGap: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The gap between the selector button.
+      *
+      * @default 7
+      */
+    var selectorItemGap: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The text label style of the selector button, which is displayed by default.
+      */
+    var selectorLabel: js.UndefOr[SelectorLabel] = js.undefined
+    
+    /**
+      * The position of the selector button, which can be placed at the end or start of the legend component,
+      * the corresponding values are 'end' and 'start'.
+      * By default, when the legend is laid out horizontally, the selector is placed at the end of it,
+      * and when the legend is laid out vertically, the selector is placed at the start of it.
+      *
+      * @default 'auto'
+      */
+    var selectorPosition: js.UndefOr[String] = js.undefined
+    
+    /**
       * Size of shadow blur. This attribute should be used along with shadowColor,
       * shadowOffsetX, shadowOffsetY to set shadow to component.
       * Attention:
@@ -4155,7 +4376,7 @@ object EChartOption {
       *
       * @default 'auto'
       */
-    var width: js.UndefOr[Double] = js.undefined
+    var width: js.UndefOr[String | Double] = js.undefined
     
     /**
       * z value of all graphical elements in, which controls order of drawing graphical components.
@@ -4264,7 +4485,7 @@ object EChartOption {
       
       inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
       
-      inline def setBorderRadiusVarargs(value: Double*): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
+      inline def setBorderRadiusVarargs(value: Double*): Self = StObject.set(x, "borderRadius", js.Array(value*))
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
@@ -4278,7 +4499,7 @@ object EChartOption {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: (LegendDataObject | String)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (LegendDataObject | String)*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFormatter(value: String | typings.echarts.echarts.EChartOption.Legend.Formatter): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
@@ -4286,7 +4507,7 @@ object EChartOption {
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
@@ -4326,7 +4547,7 @@ object EChartOption {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
       
       inline def setPageButtonGap(value: Double): Self = StObject.set(x, "pageButtonGap", value.asInstanceOf[js.Any])
       
@@ -4358,7 +4579,7 @@ object EChartOption {
       
       inline def setPageIconSizeUndefined: Self = StObject.set(x, "pageIconSize", js.undefined)
       
-      inline def setPageIconSizeVarargs(value: Double*): Self = StObject.set(x, "pageIconSize", js.Array(value :_*))
+      inline def setPageIconSizeVarargs(value: Double*): Self = StObject.set(x, "pageIconSize", js.Array(value*))
       
       inline def setPageIcons(value: PageIcons): Self = StObject.set(x, "pageIcons", value.asInstanceOf[js.Any])
       
@@ -4383,6 +4604,28 @@ object EChartOption {
       inline def setSelectedModeUndefined: Self = StObject.set(x, "selectedMode", js.undefined)
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      
+      inline def setSelector(value: Boolean | (js.Array[String | Title])): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorButtonGap(value: Double): Self = StObject.set(x, "selectorButtonGap", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorButtonGapUndefined: Self = StObject.set(x, "selectorButtonGap", js.undefined)
+      
+      inline def setSelectorItemGap(value: Double): Self = StObject.set(x, "selectorItemGap", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorItemGapUndefined: Self = StObject.set(x, "selectorItemGap", js.undefined)
+      
+      inline def setSelectorLabel(value: SelectorLabel): Self = StObject.set(x, "selectorLabel", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorLabelUndefined: Self = StObject.set(x, "selectorLabel", js.undefined)
+      
+      inline def setSelectorPosition(value: String): Self = StObject.set(x, "selectorPosition", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorPositionUndefined: Self = StObject.set(x, "selectorPosition", js.undefined)
+      
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      
+      inline def setSelectorVarargs(value: (String | Title)*): Self = StObject.set(x, "selector", js.Array(value*))
       
       inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
       
@@ -4424,7 +4667,7 @@ object EChartOption {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
@@ -4470,13 +4713,350 @@ object EChartOption {
         
         inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
         
-        inline def setHorizontalVarargs(value: String*): Self = StObject.set(x, "horizontal", js.Array(value :_*))
+        inline def setHorizontalVarargs(value: String*): Self = StObject.set(x, "horizontal", js.Array(value*))
         
         inline def setVertical(value: js.Array[String]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
         
         inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
         
-        inline def setVerticalVarargs(value: String*): Self = StObject.set(x, "vertical", js.Array(value :_*))
+        inline def setVerticalVarargs(value: String*): Self = StObject.set(x, "vertical", js.Array(value*))
+      }
+    }
+    
+    trait SelectorLabel extends StObject {
+      
+      /**
+        * Horizontal alignment of text, automatic by default.
+        */
+      var align: js.UndefOr[left | center | right] = js.undefined
+      
+      /**
+        * Background color of the text fragment.
+        * Can be color string, like '#123234', 'red', 'rgba(0,23,11,0.3)'.
+        * Or image can be used, for example:
+        * @example
+        * ```ts
+        * backgroundColor: {
+        *     image: 'xxx/xxx.png'
+        *     // It can be URL of a image,
+        *     // or dataURI,
+        *     // or HTMLImageElement,
+        *     // or HTMLCanvasElement.
+        * }
+        * ```
+        *
+        * width or height can be specified when using background image, or auto adapted by default.
+        * If set as 'auto', the color will assigned as visual color, such as series color.
+        *
+        * @default 'transparent'
+        */
+      var backgroundColor: js.UndefOr[String | js.Object] = js.undefined
+      
+      /**
+        * Border color of the text fragment.
+        * If set as 'auto', the color will assigned as visual color, such as series color.
+        * @default 'transparent'
+        */
+      var borderColor: js.UndefOr[Color] = js.undefined
+      
+      /**
+        * Border radius of the text fragment.
+        */
+      var borderRadius: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Border width of the text fragment.
+        */
+      var borderWidth: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * text color.
+        * If set as 'auto', the color will assigned as visual color, such as series color.
+        *
+        * @default '#fff'
+        */
+      var color: js.UndefOr[Color] = js.undefined
+      
+      /**
+        * Distance to the host graphic element. Works when position is string value (like 'top'、'insideRight').
+        *
+        * @default 5
+        *
+        * @see https://echarts.apache.org/examples/zh/editor.html?c=doc-example/label-position
+        */
+      var distance: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * font family.
+        *
+        * @default 'sans-serif'
+        */
+      var fontFamily: js.UndefOr[String] = js.undefined
+      
+      /**
+        * font size
+        *
+        * @default 12
+        */
+      var fontSize: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * font style.
+        * Options are:'normal','italic','oblique'
+        *
+        * @default 'normal'
+        */
+      var fontStyle: js.UndefOr[normal | italic | oblique] = js.undefined
+      
+      /**
+        * font thick weight.
+        *
+        * @default 'normal'
+        */
+      var fontWeight: js.UndefOr[
+            normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
+          ] = js.undefined
+      
+      /**
+        * Height of the text block. It is the width of the text by default.
+        * You may want to use it in some cases like using background image (see backgroundColor).
+        * Notice, width and height specifies the width and height of the content, without padding.
+        * Notice, width and height only work when rich specified.
+        */
+      var height: js.UndefOr[Double | String] = js.undefined
+      
+      /**
+        * Line height of the text fragment.
+        */
+      var lineHeight: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Padding of the text fragment, for example:
+        * padding: [3, 4, 5, 6]: represents padding of [top, right, bottom, left].
+        * padding: 4: represents padding: [4, 4, 4, 4].
+        * padding: [3, 4]: represents padding: [3, 4, 3, 4].
+        * Notice, width and height specifies the width and height of the content, without padding
+        */
+      var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
+      
+      /**
+        * "Rich text styles" can be defined in this rich property
+        *
+        * @see https://echarts.apache.org/en/tutorial.html#Rich%20Text
+        */
+      var rich: js.UndefOr[RichStyle] = js.undefined
+      
+      /**
+        * Rotate label, from -90 degree to 90, positive value represents rotate anti-clockwise.
+        *
+        * @see https://echarts.apache.org/examples/zh/editor.html?c=bar-label-rotation
+        */
+      var rotate: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Show blur of the text block.
+        */
+      var shadowBlur: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Shadow color of the text block.
+        *
+        * @default 'transparent'
+        */
+      var shadowColor: js.UndefOr[Color] = js.undefined
+      
+      /**
+        * Shadow X offset of the text block.
+        */
+      var shadowOffsetX: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Shadow Y offset of the text block.
+        */
+      var shadowOffsetY: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Whether to show label.
+        *
+        * @default false
+        */
+      var show: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Storke color of the text.
+        * If set as 'auto', the color will assigned as visual color, such as series color.
+        *
+        * @default 'transparent'
+        */
+      var textBorderColor: js.UndefOr[Color] = js.undefined
+      
+      /**
+        * Storke line width of the text.
+        */
+      var textBorderWidth: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Shadow blue of the text itself.
+        */
+      var textShadowBlur: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Shadow color of the text itself.
+        *
+        * @default 'transparent'
+        */
+      var textShadowColor: js.UndefOr[Color] = js.undefined
+      
+      /**
+        * Shadow X offset of the text itself.
+        */
+      var textShadowOffsetX: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Shadow Y offset of the text itself.
+        */
+      var textShadowOffsetY: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Vertical alignment of text, automatic by default.
+        */
+      var verticalAlign: js.UndefOr[top | middle | bottom] = js.undefined
+      
+      /**
+        * Width of the text block. It is the width of the text by default. In most cases, there is no need to specify it. You may want to use it in some cases like make simple table or using background image (see backgroundColor).
+        * Notice, width and height specifies the width and height of the content, without padding. width can also be percent string, like '100%', which represents the percent of contentWidth (that is, the width without padding) of its container box. It is based on contentWidth because that each text fragment is layout based on the content box, where it makes no sense that calculating width based on outerWith in prectice.
+        * Notice, width and height only work when rich specified.
+        */
+      var width: js.UndefOr[Double | String] = js.undefined
+    }
+    object SelectorLabel {
+      
+      inline def apply(): SelectorLabel = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[SelectorLabel]
+      }
+      
+      extension [Self <: SelectorLabel](x: Self) {
+        
+        inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+        
+        inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+        
+        inline def setBackgroundColor(value: String | js.Object): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        
+        inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+        
+        inline def setBorderColor(value: Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+        
+        inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+        
+        inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+        
+        inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+        
+        inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+        
+        inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+        
+        inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        
+        inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+        
+        inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+        
+        inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+        
+        inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+        
+        inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+        
+        inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+        
+        inline def setFontStyle(value: normal | italic | oblique): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+        
+        inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+        
+        inline def setFontWeight(
+          value: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
+        ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+        
+        inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+        
+        inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        
+        inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+        
+        inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+        
+        inline def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+        
+        inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+        
+        inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
+        
+        inline def setRich(value: RichStyle): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])
+        
+        inline def setRichUndefined: Self = StObject.set(x, "rich", js.undefined)
+        
+        inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+        
+        inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+        
+        inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
+        
+        inline def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
+        
+        inline def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+        
+        inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+        
+        inline def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
+        
+        inline def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
+        
+        inline def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
+        
+        inline def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
+        
+        inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        
+        inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+        
+        inline def setTextBorderColor(value: Color): Self = StObject.set(x, "textBorderColor", value.asInstanceOf[js.Any])
+        
+        inline def setTextBorderColorUndefined: Self = StObject.set(x, "textBorderColor", js.undefined)
+        
+        inline def setTextBorderWidth(value: Double): Self = StObject.set(x, "textBorderWidth", value.asInstanceOf[js.Any])
+        
+        inline def setTextBorderWidthUndefined: Self = StObject.set(x, "textBorderWidth", js.undefined)
+        
+        inline def setTextShadowBlur(value: Double): Self = StObject.set(x, "textShadowBlur", value.asInstanceOf[js.Any])
+        
+        inline def setTextShadowBlurUndefined: Self = StObject.set(x, "textShadowBlur", js.undefined)
+        
+        inline def setTextShadowColor(value: Color): Self = StObject.set(x, "textShadowColor", value.asInstanceOf[js.Any])
+        
+        inline def setTextShadowColorUndefined: Self = StObject.set(x, "textShadowColor", js.undefined)
+        
+        inline def setTextShadowOffsetX(value: Double): Self = StObject.set(x, "textShadowOffsetX", value.asInstanceOf[js.Any])
+        
+        inline def setTextShadowOffsetXUndefined: Self = StObject.set(x, "textShadowOffsetX", js.undefined)
+        
+        inline def setTextShadowOffsetY(value: Double): Self = StObject.set(x, "textShadowOffsetY", value.asInstanceOf[js.Any])
+        
+        inline def setTextShadowOffsetYUndefined: Self = StObject.set(x, "textShadowOffsetY", js.undefined)
+        
+        inline def setVerticalAlign(value: top | middle | bottom): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+        
+        inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+        
+        inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
   }
@@ -4486,7 +5066,7 @@ object EChartOption {
     */
   trait LineStyle extends StObject {
     
-    var color: js.UndefOr[Color] = js.undefined
+    var color: js.UndefOr[Color | js.Array[Color]] = js.undefined
     
     var opacity: js.UndefOr[Double] = js.undefined
     
@@ -4511,9 +5091,11 @@ object EChartOption {
     
     extension [Self <: LineStyle](x: Self) {
       
-      inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Color | js.Array[Color]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setColorVarargs(value: Color*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
@@ -4582,7 +5164,7 @@ object EChartOption {
       
       inline def setColorStops(value: ColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       
-      inline def setColorStopsVarargs(value: Offset*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+      inline def setColorStopsVarargs(value: Offset*): Self = StObject.set(x, "colorStops", js.Array(value*))
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
@@ -4631,7 +5213,7 @@ object EChartOption {
       
       inline def setColorStops(value: ColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       
-      inline def setColorStopsVarargs(value: Offset*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+      inline def setColorStopsVarargs(value: Offset*): Self = StObject.set(x, "colorStops", js.Array(value*))
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
@@ -5012,6 +5594,23 @@ object EChartOption {
     var barWidth: js.UndefOr[Double | String] = js.undefined
     
     /**
+      * If clip the overflow on the coordinate system. Clip results varies between series:
+      *
+      * Scatter/EffectScatter：Ignore the symbols exceeds the coordinate system. Not clip the elements.
+      * Bar：Clip all the overflowed. With bar width kept.
+      * Line：Clip the overflowed line.
+      * Lines: Clip all the overflowed.
+      * Candlestick: Ignore the elements exceeds the coordinate system.
+      * Custom: Clip all the olverflowed.
+      *
+      * All these series have default value true except custom series. Set it to false if you don't want to clip.
+      *
+      *
+      * @see https://echarts.apache.org/en/option.html#series-bar.clip
+      */
+    var clip: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * The coordinate used in the series, whose options are:
       *
       * + `'cartesian2d'`
@@ -5241,7 +5840,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-bar.dimensions
       */
-    var dimensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dimensions: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * @see https://echarts.apache.org/en/option.html#series-bar.emphasis
@@ -5674,6 +6273,10 @@ object EChartOption {
       
       inline def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
       
+      inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      
+      inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+      
       inline def setCoordinateSystem(value: String): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
       
       inline def setCoordinateSystemUndefined: Self = StObject.set(x, "coordinateSystem", js.undefined)
@@ -5696,17 +6299,17 @@ object EChartOption {
         value: ((js.Array[
               Unit | String | Double | typings.echarts.echarts.EChartOption.SeriesBar.DataObject
             ]) | typings.echarts.echarts.EChartOption.SeriesBar.DataObject | Double | String | Unit)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
       inline def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
       
-      inline def setDimensions(value: js.Array[js.Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: js.Array[Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      inline def setDimensionsVarargs(value: js.Any*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: Any*): Self = StObject.set(x, "dimensions", js.Array(value*))
       
       inline def setEmphasis(value: ItemStyle): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
@@ -5879,7 +6482,7 @@ object EChartOption {
       * [7, 50]
       * @see https://echarts.apache.org/en/option.html#series-boxplot.boxWidth
       */
-    var boxWidth: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var boxWidth: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The coordinate used in the series, whose options are:
@@ -5981,7 +6584,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-boxplot.dimensions
       */
-    var dimensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dimensions: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * @see https://echarts.apache.org/en/option.html#series-boxplot.emphasis
@@ -6245,7 +6848,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-boxplot.data.value
         */
-      var value: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var value: js.UndefOr[js.Array[Any]] = js.undefined
     }
     object DataObject {
       
@@ -6272,11 +6875,11 @@ object EChartOption {
         
         inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
         
-        inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
     
@@ -6294,11 +6897,11 @@ object EChartOption {
       
       inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
       
-      inline def setBoxWidth(value: js.Array[js.Any]): Self = StObject.set(x, "boxWidth", value.asInstanceOf[js.Any])
+      inline def setBoxWidth(value: js.Array[Any]): Self = StObject.set(x, "boxWidth", value.asInstanceOf[js.Any])
       
       inline def setBoxWidthUndefined: Self = StObject.set(x, "boxWidth", js.undefined)
       
-      inline def setBoxWidthVarargs(value: js.Any*): Self = StObject.set(x, "boxWidth", js.Array(value :_*))
+      inline def setBoxWidthVarargs(value: Any*): Self = StObject.set(x, "boxWidth", js.Array(value*))
       
       inline def setCoordinateSystem(value: String): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
       
@@ -6308,13 +6911,13 @@ object EChartOption {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: (js.Array[Double | typings.echarts.echarts.EChartOption.SeriesBoxplot.DataObject])*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (js.Array[Double | typings.echarts.echarts.EChartOption.SeriesBoxplot.DataObject])*): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setDimensions(value: js.Array[js.Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: js.Array[Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      inline def setDimensionsVarargs(value: js.Any*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: Any*): Self = StObject.set(x, "dimensions", js.Array(value*))
       
       inline def setEmphasis(value: `2`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
@@ -6594,7 +7197,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-candlestick.dimensions
       */
-    var dimensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dimensions: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Emphasis style of candlestick.
@@ -6743,7 +7346,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine
       */
-    var markLine: js.UndefOr[AnimationDelay] = js.undefined
+    var markLine: js.UndefOr[AnimationEasing] = js.undefined
     
     /**
       * Mark point in a chart.
@@ -6938,7 +7541,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-candlestick.data.value
         */
-      var value: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var value: js.UndefOr[js.Array[Any]] = js.undefined
     }
     object DataObject {
       
@@ -6965,11 +7568,11 @@ object EChartOption {
         
         inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
         
-        inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
     
@@ -7011,13 +7614,13 @@ object EChartOption {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: (js.Array[Double | typings.echarts.echarts.EChartOption.SeriesCandlestick.DataObject])*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (js.Array[Double | typings.echarts.echarts.EChartOption.SeriesCandlestick.DataObject])*): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setDimensions(value: js.Array[js.Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: js.Array[Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      inline def setDimensionsVarargs(value: js.Any*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: Any*): Self = StObject.set(x, "dimensions", js.Array(value*))
       
       inline def setEmphasis(value: `3`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
@@ -7059,7 +7662,7 @@ object EChartOption {
       
       inline def setMarkAreaUndefined: Self = StObject.set(x, "markArea", js.undefined)
       
-      inline def setMarkLine(value: AnimationDelay): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
+      inline def setMarkLine(value: AnimationEasing): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
       
       inline def setMarkLineUndefined: Self = StObject.set(x, "markLine", js.undefined)
       
@@ -7605,7 +8208,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-custom.dimensions
       */
-    var dimensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dimensions: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * @see https://echarts.apache.org/en/option.html#series-custom.emphasis
@@ -8127,7 +8730,7 @@ object EChartOption {
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
     
@@ -8144,12 +8747,12 @@ object EChartOption {
       /**
         * date end of calendar.
         */
-      var end: js.UndefOr[js.Any] = js.undefined
+      var end: js.UndefOr[Any] = js.undefined
       
       /**
         * date start of calendar.
         */
-      var start: js.UndefOr[js.Any] = js.undefined
+      var start: js.UndefOr[Any] = js.undefined
       
       /**
         * number of weeks in calendar.
@@ -8169,11 +8772,11 @@ object EChartOption {
         
         inline def setDayCountUndefined: Self = StObject.set(x, "dayCount", js.undefined)
         
-        inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
         inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
         
-        inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
         
         inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
         
@@ -8531,7 +9134,7 @@ object EChartOption {
       /**
         * An object that developers can store something temporarily here. Life cycle: current round of rendering.
         */
-      var context: js.UndefOr[String] = js.undefined
+      var context: js.UndefOr[Record[String, Any]] = js.undefined
       
       /**
         * coordSys is variable by different types of coordinate systems.
@@ -8581,7 +9184,7 @@ object EChartOption {
         
         inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
         
-        inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: Record[String, Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
         inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
         
@@ -8651,7 +9254,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -8751,7 +9354,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -8829,7 +9432,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_arc.shape
@@ -8948,7 +9551,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -8964,21 +9567,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setShape(value: Clockwise): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
@@ -9042,7 +9645,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -9142,7 +9745,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -9220,7 +9823,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.shape
@@ -9339,7 +9942,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -9355,21 +9958,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setShape(value: Cpx1): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
@@ -9433,7 +10036,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -9533,7 +10136,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -9611,7 +10214,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_circle.shape
@@ -9730,7 +10333,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -9746,21 +10349,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setShape(value: Cx): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
@@ -9804,7 +10407,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.children
         */
-      var children: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var children: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * In
@@ -9872,7 +10475,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -9972,7 +10575,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -10050,7 +10653,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_group.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Whether response to mouse events / touch events.
@@ -10141,11 +10744,11 @@ object EChartOption {
       
       extension [Self <: RenderItemReturnGroup](x: Self) {
         
-        inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
         
         inline def setDiffChildrenByName(value: Boolean): Self = StObject.set(x, "diffChildrenByName", value.asInstanceOf[js.Any])
         
@@ -10163,7 +10766,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -10179,21 +10782,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
         
@@ -10250,7 +10853,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -10350,7 +10953,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -10428,7 +11031,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_image.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Whether response to mouse events / touch events.
@@ -10519,7 +11122,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -10535,21 +11138,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
         
@@ -10609,7 +11212,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -10709,7 +11312,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -10787,7 +11390,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_line.shape
@@ -10906,7 +11509,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -10922,21 +11525,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setShape(value: Percent): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
@@ -11010,7 +11613,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -11110,7 +11713,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -11188,7 +11791,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape
@@ -11307,7 +11910,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -11323,21 +11926,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setShape(value: D): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
@@ -11401,7 +12004,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -11501,7 +12104,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -11579,7 +12182,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polygon.shape
@@ -11698,7 +12301,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -11714,21 +12317,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setShape(value: Points): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
@@ -11792,7 +12395,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -11892,7 +12495,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -11970,7 +12573,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline.shape
@@ -12089,7 +12692,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -12105,21 +12708,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setShape(value: Points): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
@@ -12183,7 +12786,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -12283,7 +12886,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -12361,7 +12964,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape
@@ -12480,7 +13083,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -12496,21 +13099,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setShape(value: R): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
@@ -12574,7 +13177,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -12674,7 +13277,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -12752,7 +13355,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_ring.shape
@@ -12871,7 +13474,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -12887,21 +13490,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setShape(value: Cy): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
@@ -12965,7 +13568,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_sector.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -13065,7 +13668,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_sector.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -13143,7 +13746,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_sector.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_sector.shape
@@ -13262,7 +13865,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -13278,21 +13881,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setShape(value: Clockwise): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
         
@@ -13356,7 +13959,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.info
         */
-      var info: js.UndefOr[js.Any] = js.undefined
+      var info: js.UndefOr[Any] = js.undefined
       
       /**
         * Whether the element is visible.
@@ -13456,7 +14059,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.position
         */
-      var position: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var position: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * `2D transform` can be applied to graphic elements, including:
@@ -13534,7 +14137,7 @@ object EChartOption {
         * [1, 1]
         * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_text.scale
         */
-      var scale: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var scale: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Whether response to mouse events / touch events.
@@ -13625,7 +14228,7 @@ object EChartOption {
         
         inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
         inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
@@ -13641,21 +14244,21 @@ object EChartOption {
         
         inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
         
-        inline def setPosition(value: js.Array[js.Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: js.Array[Any]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+        inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
         
         inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
         
         inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
         
-        inline def setScale(value: js.Array[js.Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: js.Array[Any]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
         inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        inline def setScaleVarargs(value: js.Any*): Self = StObject.set(x, "scale", js.Array(value :_*))
+        inline def setScaleVarargs(value: Any*): Self = StObject.set(x, "scale", js.Array(value*))
         
         inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
         
@@ -13735,17 +14338,17 @@ object EChartOption {
         value: ((js.Array[
               Unit | String | Double | typings.echarts.echarts.EChartOption.SeriesCustom.DataObject
             ]) | typings.echarts.echarts.EChartOption.SeriesCustom.DataObject | Double | String | Unit)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
       inline def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
       
-      inline def setDimensions(value: js.Array[js.Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: js.Array[Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      inline def setDimensionsVarargs(value: js.Any*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: Any*): Self = StObject.set(x, "dimensions", js.Array(value*))
       
       inline def setEmphasis(value: `2`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
@@ -14197,7 +14800,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-effectScatter.dimensions
       */
-    var dimensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dimensions: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Type of effect.
@@ -14472,7 +15075,7 @@ object EChartOption {
       * [0, 0]
       * @see https://echarts.apache.org/en/option.html#series-effectScatter.symbolOffset
       */
-    var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Rotate degree of symbol.
@@ -14497,7 +15100,7 @@ object EChartOption {
       * 10
       * @see https://echarts.apache.org/en/option.html#series-effectScatter.symbolSize
       */
-    var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+    var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
     
     /**
       * tooltip settings in this series.
@@ -14581,7 +15184,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-effectScatter.data.emphasis
         */
-      var emphasis: js.UndefOr[`4`] = js.undefined
+      var emphasis: js.UndefOr[`5`] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-effectScatter.data.itemStyle
@@ -14665,7 +15268,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-effectScatter.data.symbolOffset
         */
-      var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Rotate degree of single data symbol.
@@ -14690,7 +15293,7 @@ object EChartOption {
         * 4
         * @see https://echarts.apache.org/en/option.html#series-effectScatter.data.symbolSize
         */
-      var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+      var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
       
       /**
         * tooltip settings in this series data.
@@ -14709,7 +15312,7 @@ object EChartOption {
       
       extension [Self <: typings.echarts.echarts.EChartOption.SeriesEffectScatter.DataObject](x: Self) {
         
-        inline def setEmphasis(value: `4`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `5`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -14727,21 +15330,21 @@ object EChartOption {
         
         inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
         
-        inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+        inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
         
         inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
         
-        inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+        inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
         
         inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
         
         inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
         
-        inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+        inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
         
         inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
         
-        inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+        inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
         
         inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
         
@@ -14811,17 +15414,17 @@ object EChartOption {
         value: ((js.Array[
               Unit | Double | String | typings.echarts.echarts.EChartOption.SeriesEffectScatter.DataObject
             ]) | typings.echarts.echarts.EChartOption.SeriesEffectScatter.DataObject | Double | String | Unit)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
       inline def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
       
-      inline def setDimensions(value: js.Array[js.Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: js.Array[Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      inline def setDimensionsVarargs(value: js.Any*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: Any*): Self = StObject.set(x, "dimensions", js.Array(value*))
       
       inline def setEffectType(value: String): Self = StObject.set(x, "effectType", value.asInstanceOf[js.Any])
       
@@ -14893,21 +15496,21 @@ object EChartOption {
       
       inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
       
-      inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+      inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
       
       inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
       
-      inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+      inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
       
       inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
       
       inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
       
-      inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+      inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
       
       inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
-      inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+      inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
@@ -15057,6 +15660,17 @@ object EChartOption {
     var animationThreshold: js.UndefOr[Double] = js.undefined
     
     /**
+      * Distance between funnel chart component and the bottom side of the container.
+      * `bottom` value can be instant pixel value like `20`;
+      * it can also be a percentage value relative to container width like `'20%'`.
+      *
+      * @default
+      * '60'
+      * @see https://echarts.apache.org/v4/en/option.html#series-funnel.bottom
+      */
+    var bottom: js.UndefOr[String | Double] = js.undefined
+    
+    /**
       * Data array of series, which can be a single data value, like:
       *
       * ```
@@ -15135,6 +15749,15 @@ object EChartOption {
     var gap: js.UndefOr[Double] = js.undefined
     
     /**
+      * Height of funnel chart component. Adaptive by default.
+      *
+      * @default
+      * "auto"
+      * @see https://echarts.apache.org/en/option.html#series-funnel.height
+      */
+    var height: js.UndefOr[String | Double] = js.undefined
+    
+    /**
       * Component ID, not specified by default.
       * If specified, it can be used to refer the component in option
       * or API.
@@ -15177,6 +15800,22 @@ object EChartOption {
     var labelLine: js.UndefOr[Length] = js.undefined
     
     /**
+      * Distance between funnel chart component and the left side of the container.
+      *
+      * `left` value can be instant pixel value like `20`;
+      * it can also be a percentage value relative to container width like `'20%'`;
+      * and it can also be `'left'`, `'center'`, or `'right'`.
+      *
+      * If the `left` value is set to be `'left'`, `'center'`, or `'right'`,
+      * then the component will be aligned automatically based on position.
+      *
+      * @default
+      * '80'
+      * @see https://echarts.apache.org/en/option.html#series-funnel.left
+      */
+    var left: js.UndefOr[String | Double] = js.undefined
+    
+    /**
       * Whether to enable highlighting chart when
       * [legend](https://echarts.apache.org/en/option.html#legend)
       * is being hovered.
@@ -15195,7 +15834,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-funnel.markArea
       */
-    var markArea: js.UndefOr[AnimationThreshold] = js.undefined
+    var markArea: js.UndefOr[Silent] = js.undefined
     
     /**
       * Use a line in the chart to illustrate.
@@ -15203,7 +15842,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-funnel.markLine
       */
-    var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
+    var markLine: js.UndefOr[AnimationThreshold] = js.undefined
     
     /**
       * Mark point in a chart.
@@ -15211,7 +15850,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-funnel.markPoint
       */
-    var markPoint: js.UndefOr[AnimationEasing] = js.undefined
+    var markPoint: js.UndefOr[AnimationEasingUpdate] = js.undefined
     
     /**
       * The specified maximum value.
@@ -15278,6 +15917,27 @@ object EChartOption {
     var name: js.UndefOr[String] = js.undefined
     
     /**
+      * Orient of funnel，Can be 'vertical' or 'horizontal'.
+      *
+      * @default
+      * "vertical"
+      * @see https://echarts.apache.org/v4/en/option.html#series-funnel.orient
+      */
+    var origin: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Distance between funnel chart component and the right side of the container.
+      *
+      * `right` value can be instant pixel value like `20`;
+      * it can also be a percentage value relative to container width like `'20%'`.
+      *
+      * @default
+      * '80'
+      * @see https://echarts.apache.org/en/option.html#series-funnel.right
+      */
+    var right: js.UndefOr[String | Double] = js.undefined
+    
+    /**
       * When
       * [dataset](https://echarts.apache.org/en/option.html#dataset)
       * is used, `seriesLayoutBy` specifies whether the column or the
@@ -15321,11 +15981,60 @@ object EChartOption {
     var tooltip: js.UndefOr[BaseTooltip] = js.undefined
     
     /**
+      * Distance between funnel chart component and the top side of the container.
+      *
+      * `top` value can be instant pixel value like `20`;
+      * it can also be a percentage value relative to container width like `'20%'`;
+      * and it can also be `'top'`, `'middle'`, or `'bottom'`.
+      *
+      * If the left value is set to be `'top'`, `'middle'`, or `'bottom'`,
+      * then the component will be aligned automatically based on position.
+      *
+      * @default
+      * '60'
+      * @see https://echarts.apache.org/en/option.html#series-funnel.top
+      */
+    var top: js.UndefOr[String | Double] = js.undefined
+    
+    /**
       * @default
       * "funnel"
       * @see https://echarts.apache.org/en/option.html#series-funnel.type
       */
     var `type`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Width of funnel chart component. Adaptive by default.
+      *
+      * @default
+      * "auto"
+      * @see https://echarts.apache.org/en/option.html#series-funnel.width
+      */
+    var width: js.UndefOr[String | Double] = js.undefined
+    
+    /**
+      * `z` value of all graphical elements in , which controls order of drawing graphical components.
+      * Components with smaller `z` values may be overwritten by those with larger `z` values.
+      *
+      * `z` has a lower priority to `zlevel`, and will not create new Canvas.
+      *
+      * @see https://echarts.apache.org/en/option.html#series-funnel.z
+      */
+    var z: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * `zlevel` value of all graphical elements in .
+      *
+      * `zlevel` is used to make layers with Canvas. Graphical elements with different
+      * `zlevel` values will be placed in different Canvases, which is a common optimization technique.
+      * We can put those frequently changed elements (like those with animations) to a separate `zlevel`.
+      * Notice that too many Canvases will increase memory cost, and should be used carefully on mobile phones to avoid crash.
+      *
+      * Canvases with bigger `zlevel` will be placed on Canvases with smaller `zlevel`.
+      *
+      * @see https://echarts.apache.org/en/option.html#series-funnel.zlevel
+      */
+    var zlevel: js.UndefOr[Double] = js.undefined
   }
   object SeriesFunnel {
     
@@ -15460,6 +16169,10 @@ object EChartOption {
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
+      inline def setBottom(value: String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      
       inline def setData(
         value: js.Array[
               js.Array[Double] | typings.echarts.echarts.EChartOption.SeriesFunnel.DataObject | Double
@@ -15468,7 +16181,7 @@ object EChartOption {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: (js.Array[Double] | typings.echarts.echarts.EChartOption.SeriesFunnel.DataObject | Double)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (js.Array[Double] | typings.echarts.echarts.EChartOption.SeriesFunnel.DataObject | Double)*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
@@ -15486,6 +16199,10 @@ object EChartOption {
       
       inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
       
+      inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -15502,19 +16219,23 @@ object EChartOption {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
+      inline def setLeft(value: String | Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      
       inline def setLegendHoverLink(value: Boolean): Self = StObject.set(x, "legendHoverLink", value.asInstanceOf[js.Any])
       
       inline def setLegendHoverLinkUndefined: Self = StObject.set(x, "legendHoverLink", js.undefined)
       
-      inline def setMarkArea(value: AnimationThreshold): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
+      inline def setMarkArea(value: Silent): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
       
       inline def setMarkAreaUndefined: Self = StObject.set(x, "markArea", js.undefined)
       
-      inline def setMarkLine(value: AnimationEasingUpdate): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
+      inline def setMarkLine(value: AnimationThreshold): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
       
       inline def setMarkLineUndefined: Self = StObject.set(x, "markLine", js.undefined)
       
-      inline def setMarkPoint(value: AnimationEasing): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
+      inline def setMarkPoint(value: AnimationEasingUpdate): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
       
       inline def setMarkPointUndefined: Self = StObject.set(x, "markPoint", js.undefined)
       
@@ -15538,6 +16259,14 @@ object EChartOption {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      
+      inline def setRight(value: String | Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      
       inline def setSeriesLayoutBy(value: String): Self = StObject.set(x, "seriesLayoutBy", value.asInstanceOf[js.Any])
       
       inline def setSeriesLayoutByUndefined: Self = StObject.set(x, "seriesLayoutBy", js.undefined)
@@ -15550,9 +16279,25 @@ object EChartOption {
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
+      inline def setTop(value: String | Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      
+      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+      
+      inline def setZlevel(value: Double): Self = StObject.set(x, "zlevel", value.asInstanceOf[js.Any])
+      
+      inline def setZlevelUndefined: Self = StObject.set(x, "zlevel", js.undefined)
     }
   }
   
@@ -15779,7 +16524,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-gauge.markArea
       */
-    var markArea: js.UndefOr[AnimationThreshold] = js.undefined
+    var markArea: js.UndefOr[Silent] = js.undefined
     
     /**
       * Use a line in the chart to illustrate.
@@ -15787,7 +16532,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-gauge.markLine
       */
-    var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
+    var markLine: js.UndefOr[AnimationThreshold] = js.undefined
     
     /**
       * Mark point in a chart.
@@ -15795,7 +16540,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-gauge.markPoint
       */
-    var markPoint: js.UndefOr[AnimationEasing] = js.undefined
+    var markPoint: js.UndefOr[AnimationEasingUpdate] = js.undefined
     
     /**
       * The maximum data value which map to
@@ -16015,7 +16760,7 @@ object EChartOption {
         value: ((js.Array[
               Unit | String | Double | typings.echarts.echarts.EChartOption.SeriesGauge.DataObject
             ]) | typings.echarts.echarts.EChartOption.SeriesGauge.DataObject | Double | String | Unit)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDetail(value: Rich): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
@@ -16037,15 +16782,15 @@ object EChartOption {
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      inline def setMarkArea(value: AnimationThreshold): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
+      inline def setMarkArea(value: Silent): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
       
       inline def setMarkAreaUndefined: Self = StObject.set(x, "markArea", js.undefined)
       
-      inline def setMarkLine(value: AnimationEasingUpdate): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
+      inline def setMarkLine(value: AnimationThreshold): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
       
       inline def setMarkLineUndefined: Self = StObject.set(x, "markLine", js.undefined)
       
-      inline def setMarkPoint(value: AnimationEasing): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
+      inline def setMarkPoint(value: AnimationEasingUpdate): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
       
       inline def setMarkPointUndefined: Self = StObject.set(x, "markPoint", js.undefined)
       
@@ -16377,7 +17122,7 @@ object EChartOption {
       * "[none', 'none']"
       * @see https://echarts.apache.org/en/option.html#series-graph.edgeSymbol
       */
-    var edgeSymbol: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+    var edgeSymbol: js.UndefOr[js.Array[Any] | String] = js.undefined
     
     /**
       * Size of symbol of two ends of edge line.
@@ -16392,7 +17137,7 @@ object EChartOption {
       * 10
       * @see https://echarts.apache.org/en/option.html#series-graph.edgeSymbolSize
       */
-    var edgeSymbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+    var edgeSymbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
     
     /**
       * Alias of
@@ -16401,7 +17146,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-graph.edges
       */
-    var edges: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var edges: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * @see https://echarts.apache.org/en/option.html#series-graph.emphasis
@@ -16632,7 +17377,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-graph.nodes
       */
-    var nodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var nodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Index of
@@ -16753,7 +17498,7 @@ object EChartOption {
       * [0, 0]
       * @see https://echarts.apache.org/en/option.html#series-graph.symbolOffset
       */
-    var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Rotate degree of node of relation graph symbol.
@@ -16791,7 +17536,7 @@ object EChartOption {
       * 10
       * @see https://echarts.apache.org/en/option.html#series-graph.symbolSize
       */
-    var symbolSize: js.UndefOr[js.Array[js.Any] | js.Function | Double] = js.undefined
+    var symbolSize: js.UndefOr[js.Array[Any] | js.Function | Double] = js.undefined
     
     /**
       * tooltip settings in this series.
@@ -16902,7 +17647,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-graph.categories.emphasis
         */
-      var emphasis: js.UndefOr[`7`] = js.undefined
+      var emphasis: js.UndefOr[`8`] = js.undefined
       
       /**
         * The style of node in this category.
@@ -17003,7 +17748,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-graph.categories.symbolOffset
         */
-      var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Rotate degree of node of this category symbol.
@@ -17026,7 +17771,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-graph.categories.symbolSize
         */
-      var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+      var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
     }
     object CategoryObject {
       
@@ -17037,7 +17782,7 @@ object EChartOption {
       
       extension [Self <: CategoryObject](x: Self) {
         
-        inline def setEmphasis(value: `7`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -17059,21 +17804,21 @@ object EChartOption {
         
         inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
         
-        inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+        inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
         
         inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
         
-        inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+        inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
         
         inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
         
         inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
         
-        inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+        inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
         
         inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
         
-        inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+        inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
         
         inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       }
@@ -17092,7 +17837,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-graph.data.emphasis
         */
-      var emphasis: js.UndefOr[`7`] = js.undefined
+      var emphasis: js.UndefOr[`8`] = js.undefined
       
       /**
         * If node are fixed when doing force directed layout.
@@ -17197,7 +17942,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-graph.data.symbolOffset
         */
-      var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Rotate degree of node of this category symbol.
@@ -17220,7 +17965,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-graph.data.symbolSize
         */
-      var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+      var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
       
       /**
         * tooltip settings in this series data.
@@ -17236,7 +17981,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-graph.data.value
         */
-      var value: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+      var value: js.UndefOr[js.Array[Any] | Double] = js.undefined
       
       /**
         * `x` value of node position.
@@ -17267,7 +18012,7 @@ object EChartOption {
         
         inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
         
-        inline def setEmphasis(value: `7`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -17293,21 +18038,21 @@ object EChartOption {
         
         inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
         
-        inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+        inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
         
         inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
         
-        inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+        inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
         
         inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
         
         inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
         
-        inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+        inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
         
         inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
         
-        inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+        inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
         
         inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
         
@@ -17315,11 +18060,11 @@ object EChartOption {
         
         inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
         
-        inline def setValue(value: js.Array[js.Any] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[Any] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
         
         inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
@@ -17368,7 +18113,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-graph.links.symbol
         */
-      var symbol: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+      var symbol: js.UndefOr[js.Array[Any] | String] = js.undefined
       
       /**
         * Symbol size of edge ends.
@@ -17378,7 +18123,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-graph.links.symbolSize
         */
-      var symbolSize: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+      var symbolSize: js.UndefOr[js.Array[Any] | String] = js.undefined
       
       /**
         * [name of target node](https://echarts.apache.org/en/option.html#series-graph.data.name)
@@ -17422,17 +18167,17 @@ object EChartOption {
         
         inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
         
-        inline def setSymbol(value: js.Array[js.Any] | String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+        inline def setSymbol(value: js.Array[Any] | String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
         
-        inline def setSymbolSize(value: js.Array[js.Any] | String): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+        inline def setSymbolSize(value: js.Array[Any] | String): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
         
         inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
         
-        inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+        inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
         
         inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
         
-        inline def setSymbolVarargs(value: js.Any*): Self = StObject.set(x, "symbol", js.Array(value :_*))
+        inline def setSymbolVarargs(value: Any*): Self = StObject.set(x, "symbol", js.Array(value*))
         
         inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
         
@@ -17482,7 +18227,7 @@ object EChartOption {
       
       inline def setAutoCurvenessUndefined: Self = StObject.set(x, "autoCurveness", js.undefined)
       
-      inline def setAutoCurvenessVarargs(value: Double*): Self = StObject.set(x, "autoCurveness", js.Array(value :_*))
+      inline def setAutoCurvenessVarargs(value: Double*): Self = StObject.set(x, "autoCurveness", js.Array(value*))
       
       inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -17496,7 +18241,7 @@ object EChartOption {
       
       inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
       
-      inline def setCategoriesVarargs(value: CategoryObject*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: CategoryObject*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setCircular(value: RotateLabel): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       
@@ -17514,7 +18259,7 @@ object EChartOption {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesGraph.DataObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesGraph.DataObject*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -17524,23 +18269,23 @@ object EChartOption {
       
       inline def setEdgeLabelUndefined: Self = StObject.set(x, "edgeLabel", js.undefined)
       
-      inline def setEdgeSymbol(value: js.Array[js.Any] | String): Self = StObject.set(x, "edgeSymbol", value.asInstanceOf[js.Any])
+      inline def setEdgeSymbol(value: js.Array[Any] | String): Self = StObject.set(x, "edgeSymbol", value.asInstanceOf[js.Any])
       
-      inline def setEdgeSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "edgeSymbolSize", value.asInstanceOf[js.Any])
+      inline def setEdgeSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "edgeSymbolSize", value.asInstanceOf[js.Any])
       
       inline def setEdgeSymbolSizeUndefined: Self = StObject.set(x, "edgeSymbolSize", js.undefined)
       
-      inline def setEdgeSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "edgeSymbolSize", js.Array(value :_*))
+      inline def setEdgeSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "edgeSymbolSize", js.Array(value*))
       
       inline def setEdgeSymbolUndefined: Self = StObject.set(x, "edgeSymbol", js.undefined)
       
-      inline def setEdgeSymbolVarargs(value: js.Any*): Self = StObject.set(x, "edgeSymbol", js.Array(value :_*))
+      inline def setEdgeSymbolVarargs(value: Any*): Self = StObject.set(x, "edgeSymbol", js.Array(value*))
       
-      inline def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
       inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
       
-      inline def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Any*): Self = StObject.set(x, "edges", js.Array(value*))
       
       inline def setEmphasis(value: EdgeLabel): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
@@ -17598,7 +18343,7 @@ object EChartOption {
       
       inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      inline def setLinksVarargs(value: LinkObject*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: LinkObject*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setMarkArea(value: AnimationDelayUpdate): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
       
@@ -17620,11 +18365,11 @@ object EChartOption {
       
       inline def setNodeScaleRatioUndefined: Self = StObject.set(x, "nodeScaleRatio", js.undefined)
       
-      inline def setNodes(value: js.Array[js.Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
       inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
       
-      inline def setNodesVarargs(value: js.Any*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Any*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setPolarIndex(value: Double): Self = StObject.set(x, "polarIndex", value.asInstanceOf[js.Any])
       
@@ -17648,21 +18393,21 @@ object EChartOption {
       
       inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
       
-      inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+      inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
       
       inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
       
-      inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+      inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
       
       inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
       
       inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
       
-      inline def setSymbolSize(value: js.Array[js.Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+      inline def setSymbolSize(value: js.Array[Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
       
       inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
-      inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+      inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
@@ -17925,7 +18670,7 @@ object EChartOption {
     /**
       * @see https://echarts.apache.org/en/option.html#series-heatmap.emphasis
       */
-    var emphasis: js.UndefOr[`7`] = js.undefined
+    var emphasis: js.UndefOr[`8`] = js.undefined
     
     /**
       * Index of
@@ -17975,7 +18720,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-heatmap.markArea
       */
-    var markArea: js.UndefOr[AnimationThreshold] = js.undefined
+    var markArea: js.UndefOr[Silent] = js.undefined
     
     /**
       * Use a line in the chart to illustrate.
@@ -17983,7 +18728,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-heatmap.markLine
       */
-    var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
+    var markLine: js.UndefOr[AnimationThreshold] = js.undefined
     
     /**
       * Mark point in a chart.
@@ -17991,7 +18736,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-heatmap.markPoint
       */
-    var markPoint: js.UndefOr[AnimationEasing] = js.undefined
+    var markPoint: js.UndefOr[AnimationEasingUpdate] = js.undefined
     
     /**
       * Maximum opacity. It is valid with
@@ -18119,7 +18864,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-heatmap.data.emphasis
         */
-      var emphasis: js.UndefOr[`7`] = js.undefined
+      var emphasis: js.UndefOr[`8`] = js.undefined
       
       /**
         * Style of a single data point. It is valid with
@@ -18155,7 +18900,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-heatmap.data.value
         */
-      var value: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var value: js.UndefOr[js.Array[Any]] = js.undefined
     }
     object DataObject {
       
@@ -18166,7 +18911,7 @@ object EChartOption {
       
       extension [Self <: typings.echarts.echarts.EChartOption.SeriesHeatmap.DataObject](x: Self) {
         
-        inline def setEmphasis(value: `7`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -18182,11 +18927,11 @@ object EChartOption {
         
         inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
     
@@ -18218,9 +18963,9 @@ object EChartOption {
         value: ((js.Array[
               Unit | Double | String | typings.echarts.echarts.EChartOption.SeriesHeatmap.DataObject
             ]) | typings.echarts.echarts.EChartOption.SeriesHeatmap.DataObject | Double | String | Unit)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setEmphasis(value: `7`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
       inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
@@ -18240,15 +18985,15 @@ object EChartOption {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setMarkArea(value: AnimationThreshold): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
+      inline def setMarkArea(value: Silent): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
       
       inline def setMarkAreaUndefined: Self = StObject.set(x, "markArea", js.undefined)
       
-      inline def setMarkLine(value: AnimationEasingUpdate): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
+      inline def setMarkLine(value: AnimationThreshold): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
       
       inline def setMarkLineUndefined: Self = StObject.set(x, "markLine", js.undefined)
       
-      inline def setMarkPoint(value: AnimationEasing): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
+      inline def setMarkPoint(value: AnimationEasingUpdate): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
       
       inline def setMarkPointUndefined: Self = StObject.set(x, "markPoint", js.undefined)
       
@@ -18691,7 +19436,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-line.dimensions
       */
-    var dimensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dimensions: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * 图形的高亮样式。
@@ -18699,7 +19444,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-line.emphasis
       */
-    var emphasis: js.UndefOr[`8`] = js.undefined
+    var emphasis: js.UndefOr[`9`] = js.undefined
     
     /**
       * Define what is encoded to for each dimension of `data`.
@@ -19093,7 +19838,7 @@ object EChartOption {
       * [0, 0]
       * @see https://echarts.apache.org/en/option.html#series-line.symbolOffset
       */
-    var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Rotate degree of symbol.
@@ -19131,7 +19876,7 @@ object EChartOption {
       * 4
       * @see https://echarts.apache.org/en/option.html#series-line.symbolSize
       */
-    var symbolSize: js.UndefOr[js.Array[js.Any] | js.Function | Double] = js.undefined
+    var symbolSize: js.UndefOr[js.Array[Any] | js.Function | Double] = js.undefined
     
     /**
       * tooltip settings in this series.
@@ -19215,7 +19960,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-line.data.emphasis
         */
-      var emphasis: js.UndefOr[`9`] = js.undefined
+      var emphasis: js.UndefOr[`10`] = js.undefined
       
       /**
         * The style of the symbol of single data point.
@@ -19313,7 +20058,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-line.data.symbolOffset
         */
-      var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Rotate degree of single data symbol.
@@ -19338,7 +20083,7 @@ object EChartOption {
         * 4
         * @see https://echarts.apache.org/en/option.html#series-line.data.symbolSize
         */
-      var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+      var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
       
       /**
         * tooltip settings in this series data.
@@ -19365,7 +20110,7 @@ object EChartOption {
       
       extension [Self <: typings.echarts.echarts.EChartOption.SeriesLine.DataObject](x: Self) {
         
-        inline def setEmphasis(value: `9`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `10`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -19387,21 +20132,21 @@ object EChartOption {
         
         inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
         
-        inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+        inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
         
         inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
         
-        inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+        inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
         
         inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
         
         inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
         
-        inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+        inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
         
         inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
         
-        inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+        inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
         
         inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
         
@@ -19483,19 +20228,19 @@ object EChartOption {
         value: ((js.Array[
               Unit | String | Double | typings.echarts.echarts.EChartOption.SeriesLine.DataObject
             ]) | typings.echarts.echarts.EChartOption.SeriesLine.DataObject | Double | String | Unit)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
       inline def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
       
-      inline def setDimensions(value: js.Array[js.Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: js.Array[Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      inline def setDimensionsVarargs(value: js.Any*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: Any*): Self = StObject.set(x, "dimensions", js.Array(value*))
       
-      inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: `9`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
       inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
@@ -19589,21 +20334,21 @@ object EChartOption {
       
       inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
       
-      inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+      inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
       
       inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
       
-      inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+      inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
       
       inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
       
       inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
       
-      inline def setSymbolSize(value: js.Array[js.Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+      inline def setSymbolSize(value: js.Array[Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
       
       inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
-      inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+      inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
@@ -19817,7 +20562,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-lines.emphasis
       */
-    var emphasis: js.UndefOr[`10`] = js.undefined
+    var emphasis: js.UndefOr[`11`] = js.undefined
     
     /**
       * Index of
@@ -19891,7 +20636,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-lines.markArea
       */
-    var markArea: js.UndefOr[AnimationThreshold] = js.undefined
+    var markArea: js.UndefOr[Silent] = js.undefined
     
     /**
       * Use a line in the chart to illustrate.
@@ -19899,7 +20644,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-lines.markLine
       */
-    var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
+    var markLine: js.UndefOr[AnimationThreshold] = js.undefined
     
     /**
       * Mark point in a chart.
@@ -19907,7 +20652,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-lines.markPoint
       */
-    var markPoint: js.UndefOr[AnimationEasing] = js.undefined
+    var markPoint: js.UndefOr[AnimationEasingUpdate] = js.undefined
     
     /**
       * Series name used for displaying in
@@ -19988,7 +20733,7 @@ object EChartOption {
       * "none"
       * @see https://echarts.apache.org/en/option.html#series-lines.symbol
       */
-    var symbol: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+    var symbol: js.UndefOr[js.Array[Any] | String] = js.undefined
     
     /**
       * Symbol size at the two ends of the line.
@@ -20002,7 +20747,7 @@ object EChartOption {
       * 10
       * @see https://echarts.apache.org/en/option.html#series-lines.symbolSize
       */
-    var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+    var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
     
     /**
       * @default
@@ -20086,12 +20831,12 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-lines.data.coords
         */
-      var coords: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var coords: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis
         */
-      var emphasis: js.UndefOr[`11`] = js.undefined
+      var emphasis: js.UndefOr[`12`] = js.undefined
       
       /**
         * @see https://echarts.apache.org/en/option.html#series-lines.data.label
@@ -20123,13 +20868,13 @@ object EChartOption {
       
       extension [Self <: typings.echarts.echarts.EChartOption.SeriesLines.DataObject](x: Self) {
         
-        inline def setCoords(value: js.Array[js.Any]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+        inline def setCoords(value: js.Array[Any]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
         
         inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
         
-        inline def setCoordsVarargs(value: js.Any*): Self = StObject.set(x, "coords", js.Array(value :_*))
+        inline def setCoordsVarargs(value: Any*): Self = StObject.set(x, "coords", js.Array(value*))
         
-        inline def setEmphasis(value: `11`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `12`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -20189,13 +20934,13 @@ object EChartOption {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesLines.DataObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesLines.DataObject*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setEffect(value: ConstantSpeed): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
       inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
       
-      inline def setEmphasis(value: `10`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: `11`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
       inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
@@ -20223,15 +20968,15 @@ object EChartOption {
       
       inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
       
-      inline def setMarkArea(value: AnimationThreshold): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
+      inline def setMarkArea(value: Silent): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
       
       inline def setMarkAreaUndefined: Self = StObject.set(x, "markArea", js.undefined)
       
-      inline def setMarkLine(value: AnimationEasingUpdate): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
+      inline def setMarkLine(value: AnimationThreshold): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
       
       inline def setMarkLineUndefined: Self = StObject.set(x, "markLine", js.undefined)
       
-      inline def setMarkPoint(value: AnimationEasing): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
+      inline def setMarkPoint(value: AnimationEasingUpdate): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
       
       inline def setMarkPointUndefined: Self = StObject.set(x, "markPoint", js.undefined)
       
@@ -20255,17 +21000,17 @@ object EChartOption {
       
       inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      inline def setSymbol(value: js.Array[js.Any] | String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: js.Array[Any] | String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+      inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
       
       inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
-      inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+      inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      inline def setSymbolVarargs(value: js.Any*): Self = StObject.set(x, "symbol", js.Array(value :_*))
+      inline def setSymbolVarargs(value: Any*): Self = StObject.set(x, "symbol", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -20352,7 +21097,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-map.boundingCoords
       */
-    var boundingCoords: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var boundingCoords: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Center of current view-port, in longitude and latitude.
@@ -20367,7 +21112,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-map.center
       */
-    var center: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var center: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Data array of map series, which can be a single data value, like:
@@ -20500,7 +21245,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-map.layoutCenter
       */
-    var layoutCenter: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var layoutCenter: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Size of map, see `layoutCenter` for more information.
@@ -20599,7 +21344,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-map.markArea
       */
-    var markArea: js.UndefOr[AnimationAnimationDelay] = js.undefined
+    var markArea: js.UndefOr[AnimationDelayAnimationDelayUpdate] = js.undefined
     
     /**
       * Use a line in the chart to illustrate.
@@ -20615,7 +21360,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-map.markPoint
       */
-    var markPoint: js.UndefOr[Silent] = js.undefined
+    var markPoint: js.UndefOr[AnimationAnimationDelay] = js.undefined
     
     /**
       * Series name used for displaying in
@@ -20823,7 +21568,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis
         */
-      var emphasis: js.UndefOr[`15`] = js.undefined
+      var emphasis: js.UndefOr[`16`] = js.undefined
       
       /**
         * Style of item polygon
@@ -20831,7 +21576,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-map.data.itemStyle
         */
-      var itemStyle: js.UndefOr[`14`] = js.undefined
+      var itemStyle: js.UndefOr[`15`] = js.undefined
       
       /**
         * Text label of , to explain some data information about graphic
@@ -20888,11 +21633,11 @@ object EChartOption {
       
       extension [Self <: typings.echarts.echarts.EChartOption.SeriesMap.DataObject](x: Self) {
         
-        inline def setEmphasis(value: `15`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `16`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
-        inline def setItemStyle(value: `14`): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+        inline def setItemStyle(value: `15`): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
         
         inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
         
@@ -20928,23 +21673,23 @@ object EChartOption {
       
       inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      inline def setBoundingCoords(value: js.Array[js.Any]): Self = StObject.set(x, "boundingCoords", value.asInstanceOf[js.Any])
+      inline def setBoundingCoords(value: js.Array[Any]): Self = StObject.set(x, "boundingCoords", value.asInstanceOf[js.Any])
       
       inline def setBoundingCoordsUndefined: Self = StObject.set(x, "boundingCoords", js.undefined)
       
-      inline def setBoundingCoordsVarargs(value: js.Any*): Self = StObject.set(x, "boundingCoords", js.Array(value :_*))
+      inline def setBoundingCoordsVarargs(value: Any*): Self = StObject.set(x, "boundingCoords", js.Array(value*))
       
-      inline def setCenter(value: js.Array[js.Any]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: js.Array[Any]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
       inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      inline def setCenterVarargs(value: js.Any*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Any*): Self = StObject.set(x, "center", js.Array(value*))
       
       inline def setData(value: js.Array[Double | typings.echarts.echarts.EChartOption.SeriesMap.DataObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: (Double | typings.echarts.echarts.EChartOption.SeriesMap.DataObject)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (Double | typings.echarts.echarts.EChartOption.SeriesMap.DataObject)*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
@@ -20966,11 +21711,11 @@ object EChartOption {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setLayoutCenter(value: js.Array[js.Any]): Self = StObject.set(x, "layoutCenter", value.asInstanceOf[js.Any])
+      inline def setLayoutCenter(value: js.Array[Any]): Self = StObject.set(x, "layoutCenter", value.asInstanceOf[js.Any])
       
       inline def setLayoutCenterUndefined: Self = StObject.set(x, "layoutCenter", js.undefined)
       
-      inline def setLayoutCenterVarargs(value: js.Any*): Self = StObject.set(x, "layoutCenter", js.Array(value :_*))
+      inline def setLayoutCenterVarargs(value: Any*): Self = StObject.set(x, "layoutCenter", js.Array(value*))
       
       inline def setLayoutSize(value: Double | String): Self = StObject.set(x, "layoutSize", value.asInstanceOf[js.Any])
       
@@ -20988,7 +21733,7 @@ object EChartOption {
       
       inline def setMapValueCalculationUndefined: Self = StObject.set(x, "mapValueCalculation", js.undefined)
       
-      inline def setMarkArea(value: AnimationAnimationDelay): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
+      inline def setMarkArea(value: AnimationDelayAnimationDelayUpdate): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
       
       inline def setMarkAreaUndefined: Self = StObject.set(x, "markArea", js.undefined)
       
@@ -20996,7 +21741,7 @@ object EChartOption {
       
       inline def setMarkLineUndefined: Self = StObject.set(x, "markLine", js.undefined)
       
-      inline def setMarkPoint(value: Silent): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
+      inline def setMarkPoint(value: AnimationAnimationDelay): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
       
       inline def setMarkPointUndefined: Self = StObject.set(x, "markPoint", js.undefined)
       
@@ -21337,7 +22082,7 @@ object EChartOption {
     /**
       * @see https://echarts.apache.org/en/option.html#series-parallel.emphasis
       */
-    var emphasis: js.UndefOr[`16`] = js.undefined
+    var emphasis: js.UndefOr[`17`] = js.undefined
     
     /**
       * Component ID, not specified by default.
@@ -21547,7 +22292,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-parallel.data.emphasis
         */
-      var emphasis: js.UndefOr[`16`] = js.undefined
+      var emphasis: js.UndefOr[`17`] = js.undefined
       
       /**
         * Line style.
@@ -21637,7 +22382,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-parallel.data.value
         */
-      var value: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var value: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * line width.
@@ -21662,7 +22407,7 @@ object EChartOption {
         
         inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        inline def setEmphasis(value: `16`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `17`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -21698,11 +22443,11 @@ object EChartOption {
         
         inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
         
         inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
@@ -21762,9 +22507,9 @@ object EChartOption {
       
       inline def setDataVarargs(
         value: ((js.Array[Double | String | typings.echarts.echarts.EChartOption.SeriesParallel.DataObject]) | typings.echarts.echarts.EChartOption.SeriesParallel.DataObject | Double | String)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setEmphasis(value: `16`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: `17`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
       inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
@@ -21972,7 +22717,7 @@ object EChartOption {
       * "cubicOut"
       * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate
       */
-    var animationEasingUpdate: js.UndefOr[`17`] = js.undefined
+    var animationEasingUpdate: js.UndefOr[`18`] = js.undefined
     
     /**
       * Whether to set graphic number threshold to animation.
@@ -22282,12 +23027,12 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-pictorialBar.dimensions
       */
-    var dimensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dimensions: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * @see https://echarts.apache.org/en/option.html#series-pictorialBar.emphasis
       */
-    var emphasis: js.UndefOr[`8`] = js.undefined
+    var emphasis: js.UndefOr[`9`] = js.undefined
     
     /**
       * Define what is encoded to for each dimension of `data`.
@@ -22346,7 +23091,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation
       */
-    var hoverAnimation: js.UndefOr[AnimationDelayAnimationDelayUpdate] = js.undefined
+    var hoverAnimation: js.UndefOr[AnimationDelayUpdateAnimationDuration] = js.undefined
     
     /**
       * Component ID, not specified by default.
@@ -22738,7 +23483,7 @@ object EChartOption {
       * [0, 0]
       * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolOffset
       */
-    var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Image can be used as the pattern of graphic elements.
@@ -22978,7 +23723,7 @@ object EChartOption {
       * ['100%', '100%']
       * @see https://echarts.apache.org/en/option.html#series-pictorialBar.symbolSize
       */
-    var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+    var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
     
     /**
       * tooltip settings in this series.
@@ -23169,7 +23914,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data.emphasis
         */
-      var emphasis: js.UndefOr[`18`] = js.undefined
+      var emphasis: js.UndefOr[`19`] = js.undefined
       
       /**
         * Whether to enable hover animation.
@@ -23517,7 +24262,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolOffset
         */
-      var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Image can be used as the pattern of graphic elements.
@@ -23758,7 +24503,7 @@ object EChartOption {
         * ['100%', '100%']
         * @see https://echarts.apache.org/en/option.html#series-pictorialBar.data.symbolSize
         */
-      var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+      var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
       
       /**
         * tooltip settings in this series data.
@@ -23826,7 +24571,7 @@ object EChartOption {
         
         inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
         
-        inline def setEmphasis(value: `18`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `19`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -23860,11 +24605,11 @@ object EChartOption {
         
         inline def setSymbolMarginUndefined: Self = StObject.set(x, "symbolMargin", js.undefined)
         
-        inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+        inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
         
         inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
         
-        inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+        inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
         
         inline def setSymbolPatternSize(value: Double): Self = StObject.set(x, "symbolPatternSize", value.asInstanceOf[js.Any])
         
@@ -23886,11 +24631,11 @@ object EChartOption {
         
         inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
         
-        inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+        inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
         
         inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
         
-        inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+        inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
         
         inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
         
@@ -23924,7 +24669,7 @@ object EChartOption {
       
       inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
       
-      inline def setAnimationEasingUpdate(value: `17`): Self = StObject.set(x, "animationEasingUpdate", value.asInstanceOf[js.Any])
+      inline def setAnimationEasingUpdate(value: `18`): Self = StObject.set(x, "animationEasingUpdate", value.asInstanceOf[js.Any])
       
       inline def setAnimationEasingUpdateUndefined: Self = StObject.set(x, "animationEasingUpdate", js.undefined)
       
@@ -23976,15 +24721,15 @@ object EChartOption {
         value: ((js.Array[
               Unit | Double | String | typings.echarts.echarts.EChartOption.SeriesPictorialBar.DataObject
             ]) | typings.echarts.echarts.EChartOption.SeriesPictorialBar.DataObject | Double | String | Unit)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setDimensions(value: js.Array[js.Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: js.Array[Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      inline def setDimensionsVarargs(value: js.Any*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: Any*): Self = StObject.set(x, "dimensions", js.Array(value*))
       
-      inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: `9`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
       inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
@@ -23992,7 +24737,7 @@ object EChartOption {
       
       inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      inline def setHoverAnimation(value: AnimationDelayAnimationDelayUpdate): Self = StObject.set(x, "hoverAnimation", value.asInstanceOf[js.Any])
+      inline def setHoverAnimation(value: AnimationDelayUpdateAnimationDuration): Self = StObject.set(x, "hoverAnimation", value.asInstanceOf[js.Any])
       
       inline def setHoverAnimationUndefined: Self = StObject.set(x, "hoverAnimation", js.undefined)
       
@@ -24046,11 +24791,11 @@ object EChartOption {
       
       inline def setSymbolMarginUndefined: Self = StObject.set(x, "symbolMargin", js.undefined)
       
-      inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+      inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
       
       inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
       
-      inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+      inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
       
       inline def setSymbolPatternSize(value: Double): Self = StObject.set(x, "symbolPatternSize", value.asInstanceOf[js.Any])
       
@@ -24072,11 +24817,11 @@ object EChartOption {
       
       inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
       
-      inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+      inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
       
       inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
-      inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+      inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
@@ -24285,7 +25030,7 @@ object EChartOption {
       * ['50%', '50%']
       * @see https://echarts.apache.org/en/option.html#series-pie.center
       */
-    var center: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var center: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Whether the layout of sectors of pie chart is clockwise.
@@ -24365,7 +25110,7 @@ object EChartOption {
     /**
       * @see https://echarts.apache.org/en/option.html#series-pie.emphasis
       */
-    var emphasis: js.UndefOr[`19`] = js.undefined
+    var emphasis: js.UndefOr[`20`] = js.undefined
     
     /**
       * Whether to enable the zoom animation effects when hovering sectors.
@@ -24450,7 +25195,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-pie.markArea
       */
-    var markArea: js.UndefOr[AnimationThreshold] = js.undefined
+    var markArea: js.UndefOr[Silent] = js.undefined
     
     /**
       * Use a line in the chart to illustrate.
@@ -24458,7 +25203,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-pie.markLine
       */
-    var markLine: js.UndefOr[AnimationEasingUpdate] = js.undefined
+    var markLine: js.UndefOr[AnimationThreshold] = js.undefined
     
     /**
       * Mark point in a chart.
@@ -24466,7 +25211,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-pie.markPoint
       */
-    var markPoint: js.UndefOr[AnimationEasing] = js.undefined
+    var markPoint: js.UndefOr[AnimationEasingUpdate] = js.undefined
     
     /**
       * The minimum angle of sector (0 ~ 360).
@@ -24516,7 +25261,7 @@ object EChartOption {
       * [0, '75%']
       * @see https://echarts.apache.org/en/option.html#series-pie.radius
       */
-    var radius: js.UndefOr[js.Array[js.Any] | Double | String] = js.undefined
+    var radius: js.UndefOr[js.Array[Any] | Double | String] = js.undefined
     
     /**
       * Whether to show as Nightingale chart, which distinguishs data
@@ -24670,7 +25415,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis
         */
-      var emphasis: js.UndefOr[`20`] = js.undefined
+      var emphasis: js.UndefOr[`21`] = js.undefined
       
       /**
         * Graphic style of , `emphasis` is the style when it is highlighted,
@@ -24738,7 +25483,7 @@ object EChartOption {
       
       extension [Self <: typings.echarts.echarts.EChartOption.SeriesPie.DataObject](x: Self) {
         
-        inline def setEmphasis(value: `20`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `21`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -24814,11 +25559,11 @@ object EChartOption {
       
       inline def setAvoidLabelOverlapUndefined: Self = StObject.set(x, "avoidLabelOverlap", js.undefined)
       
-      inline def setCenter(value: js.Array[js.Any]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: js.Array[Any]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
       inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      inline def setCenterVarargs(value: js.Any*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Any*): Self = StObject.set(x, "center", js.Array(value*))
       
       inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
@@ -24836,13 +25581,13 @@ object EChartOption {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: (js.Array[Double] | typings.echarts.echarts.EChartOption.SeriesPie.DataObject | Double)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (js.Array[Double] | typings.echarts.echarts.EChartOption.SeriesPie.DataObject | Double)*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
       inline def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
       
-      inline def setEmphasis(value: `19`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: `20`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
       inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
@@ -24874,15 +25619,15 @@ object EChartOption {
       
       inline def setLegendHoverLinkUndefined: Self = StObject.set(x, "legendHoverLink", js.undefined)
       
-      inline def setMarkArea(value: AnimationThreshold): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
+      inline def setMarkArea(value: Silent): Self = StObject.set(x, "markArea", value.asInstanceOf[js.Any])
       
       inline def setMarkAreaUndefined: Self = StObject.set(x, "markArea", js.undefined)
       
-      inline def setMarkLine(value: AnimationEasingUpdate): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
+      inline def setMarkLine(value: AnimationThreshold): Self = StObject.set(x, "markLine", value.asInstanceOf[js.Any])
       
       inline def setMarkLineUndefined: Self = StObject.set(x, "markLine", js.undefined)
       
-      inline def setMarkPoint(value: AnimationEasing): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
+      inline def setMarkPoint(value: AnimationEasingUpdate): Self = StObject.set(x, "markPoint", value.asInstanceOf[js.Any])
       
       inline def setMarkPointUndefined: Self = StObject.set(x, "markPoint", js.undefined)
       
@@ -24898,11 +25643,11 @@ object EChartOption {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setRadius(value: js.Array[js.Any] | Double | String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: js.Array[Any] | Double | String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
       inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      inline def setRadiusVarargs(value: js.Any*): Self = StObject.set(x, "radius", js.Array(value :_*))
+      inline def setRadiusVarargs(value: Any*): Self = StObject.set(x, "radius", js.Array(value*))
       
       inline def setRoseType(value: Boolean | String): Self = StObject.set(x, "roseType", value.asInstanceOf[js.Any])
       
@@ -25244,7 +25989,7 @@ object EChartOption {
       * [0, 0]
       * @see https://echarts.apache.org/en/option.html#series-radar.symbolOffset
       */
-    var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Rotate degree of symbol.
@@ -25282,7 +26027,7 @@ object EChartOption {
       * 4
       * @see https://echarts.apache.org/en/option.html#series-radar.symbolSize
       */
-    var symbolSize: js.UndefOr[js.Array[js.Any] | js.Function | Double] = js.undefined
+    var symbolSize: js.UndefOr[js.Array[Any] | js.Function | Double] = js.undefined
     
     /**
       * tooltip settings in this series.
@@ -25460,7 +26205,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-radar.data.symbolOffset
         */
-      var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Rotate degree of single data symbol.
@@ -25485,7 +26230,7 @@ object EChartOption {
         * 4
         * @see https://echarts.apache.org/en/option.html#series-radar.data.symbolSize
         */
-      var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+      var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
       
       /**
         * tooltip settings in this series data.
@@ -25542,21 +26287,21 @@ object EChartOption {
         
         inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
         
-        inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+        inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
         
         inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
         
-        inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+        inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
         
         inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
         
         inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
         
-        inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+        inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
         
         inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
         
-        inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+        inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
         
         inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
         
@@ -25568,7 +26313,7 @@ object EChartOption {
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
     
@@ -25614,7 +26359,7 @@ object EChartOption {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesRadar.DataObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesRadar.DataObject*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setEmphasis(value: AreaStyle): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
@@ -25654,21 +26399,21 @@ object EChartOption {
       
       inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
       
-      inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+      inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
       
       inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
       
-      inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+      inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
       
       inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
       
       inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
       
-      inline def setSymbolSize(value: js.Array[js.Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+      inline def setSymbolSize(value: js.Array[Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
       
       inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
-      inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+      inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
@@ -25907,7 +26652,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-sankey.edges
       */
-    var edges: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var edges: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis
@@ -26079,7 +26824,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-sankey.nodes
       */
-    var nodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var nodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The layout direction of the nodes in the Sankey diagram, which
@@ -26204,7 +26949,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-sankey.data.emphasis
         */
-      var emphasis: js.UndefOr[`7`] = js.undefined
+      var emphasis: js.UndefOr[`8`] = js.undefined
       
       /**
         * The style of this node.
@@ -26244,7 +26989,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-sankey.data.value
         */
-      var value: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+      var value: js.UndefOr[js.Array[Any] | Double] = js.undefined
     }
     object DataObject {
       
@@ -26255,7 +27000,7 @@ object EChartOption {
       
       extension [Self <: typings.echarts.echarts.EChartOption.SeriesSankey.DataObject](x: Self) {
         
-        inline def setEmphasis(value: `7`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -26275,11 +27020,11 @@ object EChartOption {
         
         inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
         
-        inline def setValue(value: js.Array[js.Any] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[Any] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
     
@@ -26288,7 +27033,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-sankey.links.emphasis
         */
-      var emphasis: js.UndefOr[`21`] = js.undefined
+      var emphasis: js.UndefOr[`22`] = js.undefined
       
       /**
         * The line stlye of edge.
@@ -26335,7 +27080,7 @@ object EChartOption {
       
       extension [Self <: typings.echarts.echarts.EChartOption.SeriesSankey.LinkObject](x: Self) {
         
-        inline def setEmphasis(value: `21`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `22`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -26405,17 +27150,17 @@ object EChartOption {
       
       inline def setDataVarargs(
         value: ((js.Array[Double | typings.echarts.echarts.EChartOption.SeriesSankey.DataObject]) | typings.echarts.echarts.EChartOption.SeriesSankey.DataObject | Double)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
       inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
       
-      inline def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Any*): Self = StObject.set(x, "edges", js.Array(value*))
       
       inline def setEmphasis(value: ItemStyleLabelLineStyle): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
@@ -26457,7 +27202,7 @@ object EChartOption {
       
       inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      inline def setLinksVarargs(value: typings.echarts.echarts.EChartOption.SeriesSankey.LinkObject*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: typings.echarts.echarts.EChartOption.SeriesSankey.LinkObject*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -26475,11 +27220,11 @@ object EChartOption {
       
       inline def setNodeWidthUndefined: Self = StObject.set(x, "nodeWidth", js.undefined)
       
-      inline def setNodes(value: js.Array[js.Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
       inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
       
-      inline def setNodesVarargs(value: js.Any*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Any*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setOrient(value: String): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
@@ -26906,12 +27651,12 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-scatter.dimensions
       */
-    var dimensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dimensions: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * @see https://echarts.apache.org/en/option.html#series-scatter.emphasis
       */
-    var emphasis: js.UndefOr[`8`] = js.undefined
+    var emphasis: js.UndefOr[`9`] = js.undefined
     
     /**
       * Define what is encoded to for each dimension of `data`.
@@ -27219,7 +27964,7 @@ object EChartOption {
       * [0, 0]
       * @see https://echarts.apache.org/en/option.html#series-scatter.symbolOffset
       */
-    var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Rotate degree of symbol.
@@ -27257,7 +28002,7 @@ object EChartOption {
       * 10
       * @see https://echarts.apache.org/en/option.html#series-scatter.symbolSize
       */
-    var symbolSize: js.UndefOr[js.Array[js.Any] | js.Function | Double] = js.undefined
+    var symbolSize: js.UndefOr[js.Array[Any] | js.Function | Double] = js.undefined
     
     /**
       * tooltip settings in this series.
@@ -27341,7 +28086,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-scatter.data.emphasis
         */
-      var emphasis: js.UndefOr[`4`] = js.undefined
+      var emphasis: js.UndefOr[`5`] = js.undefined
       
       /**
         * the style setting about single data point(bubble).
@@ -27434,7 +28179,7 @@ object EChartOption {
         * [0, 0]
         * @see https://echarts.apache.org/en/option.html#series-scatter.data.symbolOffset
         */
-      var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Rotate degree of single data symbol.
@@ -27457,7 +28202,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-scatter.data.symbolSize
         */
-      var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+      var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
       
       /**
         * tooltip settings in this series data.
@@ -27473,7 +28218,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-scatter.data.value
         */
-      var value: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var value: js.UndefOr[js.Array[Any]] = js.undefined
     }
     object DataObject {
       
@@ -27484,7 +28229,7 @@ object EChartOption {
       
       extension [Self <: typings.echarts.echarts.EChartOption.SeriesScatter.DataObject](x: Self) {
         
-        inline def setEmphasis(value: `4`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `5`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -27506,21 +28251,21 @@ object EChartOption {
         
         inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
         
-        inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+        inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
         
         inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
         
-        inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+        inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
         
         inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
         
         inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
         
-        inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+        inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
         
         inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
         
-        inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+        inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
         
         inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
         
@@ -27528,11 +28273,11 @@ object EChartOption {
         
         inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
         
-        inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
     
@@ -27596,19 +28341,19 @@ object EChartOption {
         value: ((js.Array[
               Unit | Double | String | typings.echarts.echarts.EChartOption.SeriesScatter.DataObject
             ]) | typings.echarts.echarts.EChartOption.SeriesScatter.DataObject | Double | String | Unit)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
       inline def setDatasetIndexUndefined: Self = StObject.set(x, "datasetIndex", js.undefined)
       
-      inline def setDimensions(value: js.Array[js.Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: js.Array[Any]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
       inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      inline def setDimensionsVarargs(value: js.Any*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: Any*): Self = StObject.set(x, "dimensions", js.Array(value*))
       
-      inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: `9`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
       inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
@@ -27690,21 +28435,21 @@ object EChartOption {
       
       inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
       
-      inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+      inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
       
       inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
       
-      inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+      inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
       
       inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
       
       inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
       
-      inline def setSymbolSize(value: js.Array[js.Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+      inline def setSymbolSize(value: js.Array[Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
       
       inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
-      inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+      inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
@@ -27888,7 +28633,7 @@ object EChartOption {
       * ['50%', '50%']
       * @see https://echarts.apache.org/en/option.html#series-sunburst.center
       */
-    var center: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var center: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The data structure of
@@ -27910,7 +28655,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-sunburst.downplay
       */
-    var downplay: js.UndefOr[`22`] = js.undefined
+    var downplay: js.UndefOr[`23`] = js.undefined
     
     /**
       * Item style when mouse is hovering. See
@@ -27920,7 +28665,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-sunburst.emphasis
       */
-    var emphasis: js.UndefOr[`22`] = js.undefined
+    var emphasis: js.UndefOr[`23`] = js.undefined
     
     /**
       * Item style when mouse is hovering related items. See
@@ -27930,7 +28675,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-sunburst.highlight
       */
-    var highlight: js.UndefOr[`22`] = js.undefined
+    var highlight: js.UndefOr[`23`] = js.undefined
     
     /**
       * When mouse hovers a sector, the sector is emphasized.
@@ -28056,7 +28801,7 @@ object EChartOption {
       * []
       * @see https://echarts.apache.org/en/option.html#series-sunburst.levels
       */
-    var levels: js.UndefOr[Downplay] = js.undefined
+    var levels: js.UndefOr[js.Array[Downplay]] = js.undefined
     
     /**
       * Series name used for displaying in
@@ -28103,7 +28848,7 @@ object EChartOption {
       * [0, '75%']
       * @see https://echarts.apache.org/en/option.html#series-sunburst.radius
       */
-    var radius: js.UndefOr[js.Array[js.Any] | Double | String] = js.undefined
+    var radius: js.UndefOr[js.Array[Any] | Double | String] = js.undefined
     
     /**
       * If there is no `name`, whether need to render it.
@@ -28200,7 +28945,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay
         */
-      var downplay: js.UndefOr[`22`] = js.undefined
+      var downplay: js.UndefOr[`23`] = js.undefined
       
       /**
         * Item style when mouse is hovering. See
@@ -28210,7 +28955,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-sunburst.data.emphasis
         */
-      var emphasis: js.UndefOr[`22`] = js.undefined
+      var emphasis: js.UndefOr[`23`] = js.undefined
       
       /**
         * Item style when mouse is hovering related items. See
@@ -28220,7 +28965,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-sunburst.data.highlight
         */
-      var highlight: js.UndefOr[`22`] = js.undefined
+      var highlight: js.UndefOr[`23`] = js.undefined
       
       /**
         * Style of Sunburst sectors.
@@ -28341,17 +29086,17 @@ object EChartOption {
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setChildrenVarargs(value: typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject*): Self = StObject.set(x, "children", js.Array(value*))
         
-        inline def setDownplay(value: `22`): Self = StObject.set(x, "downplay", value.asInstanceOf[js.Any])
+        inline def setDownplay(value: `23`): Self = StObject.set(x, "downplay", value.asInstanceOf[js.Any])
         
         inline def setDownplayUndefined: Self = StObject.set(x, "downplay", js.undefined)
         
-        inline def setEmphasis(value: `22`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `23`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
-        inline def setHighlight(value: `22`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+        inline def setHighlight(value: `23`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
         
         inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
         
@@ -28415,27 +29160,27 @@ object EChartOption {
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      inline def setCenter(value: js.Array[js.Any]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: js.Array[Any]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
       inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      inline def setCenterVarargs(value: js.Any*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Any*): Self = StObject.set(x, "center", js.Array(value*))
       
       inline def setData(value: js.Array[typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject*): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setDownplay(value: `22`): Self = StObject.set(x, "downplay", value.asInstanceOf[js.Any])
+      inline def setDownplay(value: `23`): Self = StObject.set(x, "downplay", value.asInstanceOf[js.Any])
       
       inline def setDownplayUndefined: Self = StObject.set(x, "downplay", js.undefined)
       
-      inline def setEmphasis(value: `22`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: `23`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
       inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
-      inline def setHighlight(value: `22`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: `23`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
       inline def setHighlightPolicy(value: String): Self = StObject.set(x, "highlightPolicy", value.asInstanceOf[js.Any])
       
@@ -28455,9 +29200,11 @@ object EChartOption {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setLevels(value: Downplay): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: js.Array[Downplay]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
       
       inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+      
+      inline def setLevelsVarargs(value: Downplay*): Self = StObject.set(x, "levels", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -28467,11 +29214,11 @@ object EChartOption {
       
       inline def setNodeClickUndefined: Self = StObject.set(x, "nodeClick", js.undefined)
       
-      inline def setRadius(value: js.Array[js.Any] | Double | String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: js.Array[Any] | Double | String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
       inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      inline def setRadiusVarargs(value: js.Any*): Self = StObject.set(x, "radius", js.Array(value :_*))
+      inline def setRadiusVarargs(value: Any*): Self = StObject.set(x, "radius", js.Array(value*))
       
       inline def setRenderLabelForZeroData(value: Boolean): Self = StObject.set(x, "renderLabelForZeroData", value.asInstanceOf[js.Any])
       
@@ -28546,7 +29293,7 @@ object EChartOption {
       * ["10%", "10%"]
       * @see https://echarts.apache.org/en/option.html#series-themeRiver.boundaryGap
       */
-    var boundaryGap: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var boundaryGap: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * coordinate. The theme river adopts sinle time axis.
@@ -28701,7 +29448,7 @@ object EChartOption {
     /**
       * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis
       */
-    var emphasis: js.UndefOr[`23`] = js.undefined
+    var emphasis: js.UndefOr[`24`] = js.undefined
     
     /**
       * Height of thmemRiver component.
@@ -28947,7 +29694,7 @@ object EChartOption {
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
     
@@ -28957,11 +29704,11 @@ object EChartOption {
       
       inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      inline def setBoundaryGap(value: js.Array[js.Any]): Self = StObject.set(x, "boundaryGap", value.asInstanceOf[js.Any])
+      inline def setBoundaryGap(value: js.Array[Any]): Self = StObject.set(x, "boundaryGap", value.asInstanceOf[js.Any])
       
       inline def setBoundaryGapUndefined: Self = StObject.set(x, "boundaryGap", js.undefined)
       
-      inline def setBoundaryGapVarargs(value: js.Any*): Self = StObject.set(x, "boundaryGap", js.Array(value :_*))
+      inline def setBoundaryGapVarargs(value: Any*): Self = StObject.set(x, "boundaryGap", js.Array(value*))
       
       inline def setCoordinateSystem(value: String): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
       
@@ -28981,9 +29728,9 @@ object EChartOption {
         value: ((js.Array[
               Unit | Double | String | typings.echarts.echarts.EChartOption.SeriesThemeRiver.DataObject
             ]) | typings.echarts.echarts.EChartOption.SeriesThemeRiver.DataObject | Double | String | Unit)*
-      ): Self = StObject.set(x, "data", js.Array(value :_*))
+      ): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setEmphasis(value: `23`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: `24`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
       inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
@@ -29098,7 +29845,7 @@ object EChartOption {
     /**
       * @see https://echarts.apache.org/en/option.html#series-tree.emphasis
       */
-    var emphasis: js.UndefOr[`24`] = js.undefined
+    var emphasis: js.UndefOr[`25`] = js.undefined
     
     /**
       * Subtree collapses and expands interaction, `default true`.
@@ -29366,7 +30113,7 @@ object EChartOption {
       * [0, 0]
       * @see https://echarts.apache.org/en/option.html#series-tree.symbolOffset
       */
-    var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Rotate degree of symbol.
@@ -29404,7 +30151,7 @@ object EChartOption {
       * 7
       * @see https://echarts.apache.org/en/option.html#series-tree.symbolSize
       */
-    var symbolSize: js.UndefOr[js.Array[js.Any] | js.Function | Double] = js.undefined
+    var symbolSize: js.UndefOr[js.Array[Any] | js.Function | Double] = js.undefined
     
     /**
       * tooltip settings in this series.
@@ -29601,7 +30348,7 @@ object EChartOption {
       /**
         * @see https://echarts.apache.org/en/option.html#series-tree.data.emphasis
         */
-      var emphasis: js.UndefOr[`4`] = js.undefined
+      var emphasis: js.UndefOr[`5`] = js.undefined
       
       /**
         * The style of the node.
@@ -29688,9 +30435,9 @@ object EChartOption {
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setChildrenVarargs(value: typings.echarts.echarts.EChartOption.SeriesTree.DataObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: typings.echarts.echarts.EChartOption.SeriesTree.DataObject*): Self = StObject.set(x, "children", js.Array(value*))
         
-        inline def setEmphasis(value: `4`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+        inline def setEmphasis(value: `5`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
         inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
         
@@ -29726,9 +30473,9 @@ object EChartOption {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesTree.DataObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesTree.DataObject*): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setEmphasis(value: `24`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: `25`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
       inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
@@ -29794,21 +30541,21 @@ object EChartOption {
       
       inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
       
-      inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+      inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
       
       inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
       
-      inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+      inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
       
       inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
       
       inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
       
-      inline def setSymbolSize(value: js.Array[js.Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+      inline def setSymbolSize(value: js.Array[Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
       
       inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
-      inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+      inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
@@ -30033,7 +30780,7 @@ object EChartOption {
       *
       * @see https://echarts.apache.org/en/option.html#series-treemap.colorAlpha
       */
-    var colorAlpha: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var colorAlpha: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Specify the rule according to which each node obtain color from
@@ -30361,7 +31108,7 @@ object EChartOption {
       * []
       * @see https://echarts.apache.org/en/option.html#series-treemap.levels
       */
-    var levels: js.UndefOr[ChildrenVisibleMin] = js.undefined
+    var levels: js.UndefOr[js.Array[ChildrenVisibleMin]] = js.undefined
     
     /**
       * Series name used for displaying in
@@ -30756,7 +31503,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-treemap.data.color
         */
-      var color: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var color: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * It indicates the range of tranparent rate (color alpha) for
@@ -30787,7 +31534,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-treemap.data.colorAlpha
         */
-      var colorAlpha: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var colorAlpha: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Specify the rule according to which each node obtain color
@@ -31017,7 +31764,7 @@ object EChartOption {
         *
         * @see https://echarts.apache.org/en/option.html#series-treemap.data.value
         */
-      var value: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+      var value: js.UndefOr[js.Array[Any] | Double] = js.undefined
       
       /**
         * A node will not be shown when its area size is smaller than
@@ -31132,19 +31879,19 @@ object EChartOption {
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setChildrenVarargs(value: typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject*): Self = StObject.set(x, "children", js.Array(value*))
         
         inline def setChildrenVisibleMin(value: Double): Self = StObject.set(x, "childrenVisibleMin", value.asInstanceOf[js.Any])
         
         inline def setChildrenVisibleMinUndefined: Self = StObject.set(x, "childrenVisibleMin", js.undefined)
         
-        inline def setColor(value: js.Array[js.Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: js.Array[Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        inline def setColorAlpha(value: js.Array[js.Any]): Self = StObject.set(x, "colorAlpha", value.asInstanceOf[js.Any])
+        inline def setColorAlpha(value: js.Array[Any]): Self = StObject.set(x, "colorAlpha", value.asInstanceOf[js.Any])
         
         inline def setColorAlphaUndefined: Self = StObject.set(x, "colorAlpha", js.undefined)
         
-        inline def setColorAlphaVarargs(value: js.Any*): Self = StObject.set(x, "colorAlpha", js.Array(value :_*))
+        inline def setColorAlphaVarargs(value: Any*): Self = StObject.set(x, "colorAlpha", js.Array(value*))
         
         inline def setColorMappingBy(value: String): Self = StObject.set(x, "colorMappingBy", value.asInstanceOf[js.Any])
         
@@ -31156,7 +31903,7 @@ object EChartOption {
         
         inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        inline def setColorVarargs(value: js.Any*): Self = StObject.set(x, "color", js.Array(value :_*))
+        inline def setColorVarargs(value: Any*): Self = StObject.set(x, "color", js.Array(value*))
         
         inline def setEmphasis(value: UpperLabel): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
         
@@ -31182,11 +31929,11 @@ object EChartOption {
         
         inline def setUpperLabelUndefined: Self = StObject.set(x, "upperLabel", js.undefined)
         
-        inline def setValue(value: js.Array[js.Any] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[Any] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
         
         inline def setVisibleMin(value: Double): Self = StObject.set(x, "visibleMin", value.asInstanceOf[js.Any])
         
@@ -31232,11 +31979,11 @@ object EChartOption {
       
       inline def setChildrenVisibleMinUndefined: Self = StObject.set(x, "childrenVisibleMin", js.undefined)
       
-      inline def setColorAlpha(value: js.Array[js.Any]): Self = StObject.set(x, "colorAlpha", value.asInstanceOf[js.Any])
+      inline def setColorAlpha(value: js.Array[Any]): Self = StObject.set(x, "colorAlpha", value.asInstanceOf[js.Any])
       
       inline def setColorAlphaUndefined: Self = StObject.set(x, "colorAlpha", js.undefined)
       
-      inline def setColorAlphaVarargs(value: js.Any*): Self = StObject.set(x, "colorAlpha", js.Array(value :_*))
+      inline def setColorAlphaVarargs(value: Any*): Self = StObject.set(x, "colorAlpha", js.Array(value*))
       
       inline def setColorMappingBy(value: String): Self = StObject.set(x, "colorMappingBy", value.asInstanceOf[js.Any])
       
@@ -31250,7 +31997,7 @@ object EChartOption {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: typings.echarts.echarts.EChartOption.SeriesTreemap.DataObject*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDrillDownIcon(value: String): Self = StObject.set(x, "drillDownIcon", value.asInstanceOf[js.Any])
       
@@ -31284,9 +32031,11 @@ object EChartOption {
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      inline def setLevels(value: ChildrenVisibleMin): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: js.Array[ChildrenVisibleMin]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
       
       inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+      
+      inline def setLevelsVarargs(value: ChildrenVisibleMin*): Self = StObject.set(x, "levels", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -31554,7 +32303,7 @@ object EChartOption {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
       
       inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
       
@@ -31646,6 +32395,27 @@ object EChartOption {
       * @default false
       */
     var alwaysShowContent: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Since v4.7.0
+      *
+      * Whether to append the tooltip DOM element as a child of the <body> of the HTML page,
+      * when using renderMode 'html'.
+      * By default false, means that the tooltip DOM element will be one of a descendant
+      * of its echarts DOM container.
+      * But that means that the tooltip might be cut when overflow the container
+      * if some of the ancestors DOM element of the echarts container are styled with overflow: hidden.
+      * This case could also be resolved by setting tooltip.confine, but it might not suitable for all scenarios.
+      * Here we provide appendToBody: true to auto append the tooltip element to <body>,
+      * which is a common way to resolve this kind of issue.
+      * But true is not set as a default value because to void to bring break change
+      * for some cases where tooltip is deeply customized and to void some unexpected bad cases.
+      *
+      * Note that it also works when CSS transform used.
+      *
+      * @default false
+      */
+    var appendToBody: js.UndefOr[Boolean] = js.undefined
     
     /**
       * `axisPointer` is a tool for displaying reference line
@@ -31917,7 +32687,7 @@ object EChartOption {
       var componentType: js.UndefOr[series] = js.undefined
       
       // Original data as input
-      var data: js.UndefOr[js.Any] = js.undefined
+      var data: js.UndefOr[Any] = js.undefined
       
       // Data index in input data array
       var dataIndex: js.UndefOr[Double] = js.undefined
@@ -31957,7 +32727,7 @@ object EChartOption {
       var seriesType: js.UndefOr[String] = js.undefined
       
       // Value of data
-      var value: js.UndefOr[Double | js.Array[js.Any]] = js.undefined
+      var value: js.UndefOr[Double | js.Array[Any]] = js.undefined
     }
     object Format {
       
@@ -31984,7 +32754,7 @@ object EChartOption {
         
         inline def setComponentTypeUndefined: Self = StObject.set(x, "componentType", js.undefined)
         
-        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         inline def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
         
@@ -32000,7 +32770,7 @@ object EChartOption {
         
         inline def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
         
-        inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
+        inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value*))
         
         inline def setEncode(value: js.Object): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
         
@@ -32030,11 +32800,11 @@ object EChartOption {
         
         inline def setSeriesTypeUndefined: Self = StObject.set(x, "seriesType", js.undefined)
         
-        inline def setValue(value: Double | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double | js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
     
@@ -32160,6 +32930,10 @@ object EChartOption {
       inline def setAlwaysShowContent(value: Boolean): Self = StObject.set(x, "alwaysShowContent", value.asInstanceOf[js.Any])
       
       inline def setAlwaysShowContentUndefined: Self = StObject.set(x, "alwaysShowContent", js.undefined)
+      
+      inline def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
+      
+      inline def setAppendToBodyUndefined: Self = StObject.set(x, "appendToBody", js.undefined)
       
       inline def setAxisPointer(value: typings.echarts.echarts.EChartOption.Tooltip.AxisPointer): Self = StObject.set(x, "axisPointer", value.asInstanceOf[js.Any])
       

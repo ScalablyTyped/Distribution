@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("sasl-scram-sha-1", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ScramSha1Mechanism {
     def this(options: Options) = this()
@@ -30,7 +30,7 @@ object mod {
     var name_ScramSha1Mechanism: `SCRAM-SHA-1` = js.native
     
     /* CompleteClass */
-    override def response(cred: StringDictionary[js.Any]): String = js.native
+    override def response(cred: StringDictionary[Any]): String = js.native
     /* CompleteClass */
     override def response(cred: Credentials): String = js.native
   }
@@ -41,7 +41,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sasl-scram-sha-1", "Mechanism")
   @js.native
-  class Mechanism ()
+  open class Mechanism ()
     extends StObject
        with ScramSha1Mechanism {
     def this(options: Options) = this()
@@ -59,7 +59,7 @@ object mod {
     var name_ScramSha1Mechanism: `SCRAM-SHA-1` = js.native
     
     /* CompleteClass */
-    override def response(cred: StringDictionary[js.Any]): String = js.native
+    override def response(cred: StringDictionary[Any]): String = js.native
     /* CompleteClass */
     override def response(cred: Credentials): String = js.native
   }

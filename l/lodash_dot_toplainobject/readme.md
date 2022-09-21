@@ -10,10 +10,10 @@ The lodash method `_.toPlainObject` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.toplainobject |
 | Keywords           | lodash-modularized, toplainobject |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 5419919 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 397614.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -131,26 +131,26 @@ object nativeBridgesMod {
   
   trait IGoogleAnalyticsSettings extends StObject {
     
-    def setDispatchInterval(intervalInSeconds: js.Any): Unit
+    def setDispatchInterval(intervalInSeconds: Any): Unit
     
-    def setDryRun(enabled: js.Any): Unit
+    def setDryRun(enabled: Any): Unit
     
-    def setOptOut(enabled: js.Any): Unit
+    def setOptOut(enabled: Any): Unit
   }
   object IGoogleAnalyticsSettings {
     
-    inline def apply(setDispatchInterval: js.Any => Unit, setDryRun: js.Any => Unit, setOptOut: js.Any => Unit): IGoogleAnalyticsSettings = {
+    inline def apply(setDispatchInterval: Any => Unit, setDryRun: Any => Unit, setOptOut: Any => Unit): IGoogleAnalyticsSettings = {
       val __obj = js.Dynamic.literal(setDispatchInterval = js.Any.fromFunction1(setDispatchInterval), setDryRun = js.Any.fromFunction1(setDryRun), setOptOut = js.Any.fromFunction1(setOptOut))
       __obj.asInstanceOf[IGoogleAnalyticsSettings]
     }
     
     extension [Self <: IGoogleAnalyticsSettings](x: Self) {
       
-      inline def setSetDispatchInterval(value: js.Any => Unit): Self = StObject.set(x, "setDispatchInterval", js.Any.fromFunction1(value))
+      inline def setSetDispatchInterval(value: Any => Unit): Self = StObject.set(x, "setDispatchInterval", js.Any.fromFunction1(value))
       
-      inline def setSetDryRun(value: js.Any => Unit): Self = StObject.set(x, "setDryRun", js.Any.fromFunction1(value))
+      inline def setSetDryRun(value: Any => Unit): Self = StObject.set(x, "setDryRun", js.Any.fromFunction1(value))
       
-      inline def setSetOptOut(value: js.Any => Unit): Self = StObject.set(x, "setOptOut", js.Any.fromFunction1(value))
+      inline def setSetOptOut(value: Any => Unit): Self = StObject.set(x, "setOptOut", js.Any.fromFunction1(value))
     }
   }
   
@@ -161,7 +161,7 @@ object nativeBridgesMod {
     
     def booleanForKey(key: String): js.Promise[Boolean] = js.native
     
-    def doubleForKey(key: js.Any): js.Promise[Double] = js.native
+    def doubleForKey(key: Any): js.Promise[Double] = js.native
     
     def openContainerWithId(containerId: String): js.Promise[Boolean] = js.native
     

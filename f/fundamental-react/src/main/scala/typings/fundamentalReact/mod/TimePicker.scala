@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "TimePicker")
 @js.native
-class TimePicker () extends default
+open class TimePicker () extends default
 object TimePicker {
   
   @JSImport("fundamental-react", "TimePicker")

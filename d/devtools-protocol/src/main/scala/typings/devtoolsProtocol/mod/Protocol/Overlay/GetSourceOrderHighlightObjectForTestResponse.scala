@@ -9,17 +9,17 @@ trait GetSourceOrderHighlightObjectForTestResponse extends StObject {
   /**
     * Source order highlight data for the node id provided.
     */
-  var highlight: js.Any
+  var highlight: Any
 }
 object GetSourceOrderHighlightObjectForTestResponse {
   
-  inline def apply(highlight: js.Any): GetSourceOrderHighlightObjectForTestResponse = {
+  inline def apply(highlight: Any): GetSourceOrderHighlightObjectForTestResponse = {
     val __obj = js.Dynamic.literal(highlight = highlight.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSourceOrderHighlightObjectForTestResponse]
   }
   
   extension [Self <: GetSourceOrderHighlightObjectForTestResponse](x: Self) {
     
-    inline def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
   }
 }

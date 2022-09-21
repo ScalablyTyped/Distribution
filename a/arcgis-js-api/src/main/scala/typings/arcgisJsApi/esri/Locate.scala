@@ -18,17 +18,21 @@ trait Locate
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#cancelLocate)
     */
-  def cancelLocate(): Unit = js.native
+  def cancelLocate(): scala.Unit = js.native
   
   /**
     * The HTML5 Geolocation Position options for locating.
     *
+    * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#geolocationOptions)
     */
-  var geolocationOptions: js.Any = js.native
+  var geolocationOptions: Any = js.native
   
   /**
     * Indicates whether the widget should navigate the view to the position and scale of the geolocated result.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#goToLocationEnabled)
     */
@@ -53,7 +57,7 @@ trait Locate
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#locate)
     */
-  def locate(): js.Promise[js.Any] = js.native
+  def locate(): js.Promise[Any] = js.native
   
   @JSName("on")
   def on_locate(name: locate, eventHandler: LocateLocateEventHandler): IHandle = js.native
@@ -61,7 +65,18 @@ trait Locate
   def on_locateerror(name: `locate-error`, eventHandler: LocateLocateErrorEventHandler): IHandle = js.native
   
   /**
+    * Indicates whether to display the [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) of the result graphic from the [locate()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate-LocateViewModel.html#locate) method.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#popupEnabled)
+    */
+  var popupEnabled: Boolean = js.native
+  
+  /**
     * Indicates the scale to set on the view when navigating to the position of the geolocated result once a location is returned from the [track](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#event-track) event.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#scale)
     */
@@ -69,6 +84,8 @@ trait Locate
   
   /**
     * Indicates whether the widget will automatically [rotate to user's direction](https://www.w3.org/TR/geolocation-API/#coordinates_interface).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#useHeadingEnabled)
     */

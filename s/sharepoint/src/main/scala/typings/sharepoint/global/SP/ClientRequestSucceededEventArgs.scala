@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientRequestSucceededEventArgs")
 @js.native
-class ClientRequestSucceededEventArgs ()
+open class ClientRequestSucceededEventArgs ()
   extends StObject
      with typings.sharepoint.SP.ClientRequestEventArgs {
   

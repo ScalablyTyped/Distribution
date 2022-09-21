@@ -32,6 +32,6 @@ object BatchGetAggregateResourceConfigRequest {
     
     inline def setResourceIdentifiers(value: ResourceIdentifiersList): Self = StObject.set(x, "ResourceIdentifiers", value.asInstanceOf[js.Any])
     
-    inline def setResourceIdentifiersVarargs(value: AggregateResourceIdentifier*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value :_*))
+    inline def setResourceIdentifiersVarargs(value: AggregateResourceIdentifier*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value*))
   }
 }

@@ -12,7 +12,7 @@ trait SetSelectedDataOptions extends StObject {
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.undefined
+  var asyncContext: js.UndefOr[Any] = js.undefined
   
   /**
     * Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of
@@ -68,7 +68,7 @@ object SetSelectedDataOptions {
   
   extension [Self <: SetSelectedDataOptions](x: Self) {
     
-    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
@@ -76,7 +76,7 @@ object SetSelectedDataOptions {
     
     inline def setCellFormatUndefined: Self = StObject.set(x, "cellFormat", js.undefined)
     
-    inline def setCellFormatVarargs(value: RangeFormatConfiguration*): Self = StObject.set(x, "cellFormat", js.Array(value :_*))
+    inline def setCellFormatVarargs(value: RangeFormatConfiguration*): Self = StObject.set(x, "cellFormat", js.Array(value*))
     
     inline def setCoercionType(value: CoercionType | String): Self = StObject.set(x, "coercionType", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLDocument7")
 @js.native
-/* private */ class IHTMLDocument7 ()
+/* private */ open class IHTMLDocument7 ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLDocument7 {
   
@@ -20,13 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def adoptNode(pNodeSource: typings.activexMshtml.MSHTML.IHTMLDOMNode): typings.activexMshtml.MSHTML.IHTMLDOMNode3 = js.native
   
   /* CompleteClass */
-  override def all(): js.Any = js.native
+  override def all(): Any = js.native
   /* CompleteClass */
-  override def all(name: js.Any): js.Any = js.native
+  override def all(name: Any): Any = js.native
   /* CompleteClass */
-  override def all(name: js.Any, index: js.Any): js.Any = js.native
+  override def all(name: Any, index: Any): Any = js.native
   /* CompleteClass */
-  override def all(name: Unit, index: js.Any): js.Any = js.native
+  override def all(name: Unit, index: Any): Any = js.native
   /* CompleteClass */
   @JSName("all")
   override val all_Original: IHTMLElementCollection = js.native
@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def createAttribute(bstrAttrName: String): typings.activexMshtml.MSHTML.IHTMLDOMAttribute = js.native
   
   /* CompleteClass */
-  override def createAttributeNS(pvarNS: js.Any, bstrAttrName: String): typings.activexMshtml.MSHTML.IHTMLDOMAttribute = js.native
+  override def createAttributeNS(pvarNS: Any, bstrAttrName: String): typings.activexMshtml.MSHTML.IHTMLDOMAttribute = js.native
   
   /* CompleteClass */
   override def createCDATASection(text: String): typings.activexMshtml.MSHTML.IHTMLDOMNode = js.native
@@ -50,13 +50,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def createElement(bstrTag: String): typings.activexMshtml.MSHTML.IHTMLElement = js.native
   
   /* CompleteClass */
-  override def createElementNS(pvarNS: js.Any, bstrTag: String): typings.activexMshtml.MSHTML.IHTMLElement = js.native
+  override def createElementNS(pvarNS: Any, bstrTag: String): typings.activexMshtml.MSHTML.IHTMLElement = js.native
   
   /* CompleteClass */
   override def createProcessingInstruction(bstrTarget: String, bstrData: String): typings.activexMshtml.MSHTML.IDOMProcessingInstruction = js.native
   
   /* CompleteClass */
-  override def defaultView(pvarIndex: js.Any): js.Any = js.native
+  override def defaultView(pvarIndex: Any): Any = js.native
   /* CompleteClass */
   @JSName("defaultView")
   override val defaultView_Original: IHTMLWindow2 = js.native
@@ -65,7 +65,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def getElementsByClassName(v: String): IHTMLElementCollection = js.native
   
   /* CompleteClass */
-  override def getElementsByTagNameNS(pvarNS: js.Any, bstrLocalName: String): IHTMLElementCollection = js.native
+  override def getElementsByTagNameNS(pvarNS: Any, bstrLocalName: String): IHTMLElementCollection = js.native
   
   /* CompleteClass */
   override def getSelection(): typings.activexMshtml.MSHTML.IHTMLSelection = js.native
@@ -86,124 +86,124 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def normalize(): Unit = js.native
   
   /* CompleteClass */
-  var onabort: js.Any = js.native
+  var onabort: Any = js.native
   
   /* CompleteClass */
-  var onblur: js.Any = js.native
+  var onblur: Any = js.native
   
   /* CompleteClass */
-  var oncanplay: js.Any = js.native
+  var oncanplay: Any = js.native
   
   /* CompleteClass */
-  var oncanplaythrough: js.Any = js.native
+  var oncanplaythrough: Any = js.native
   
   /* CompleteClass */
-  var onchange: js.Any = js.native
+  var onchange: Any = js.native
   
   /* CompleteClass */
-  var ondrag: js.Any = js.native
+  var ondrag: Any = js.native
   
   /* CompleteClass */
-  var ondragend: js.Any = js.native
+  var ondragend: Any = js.native
   
   /* CompleteClass */
-  var ondragenter: js.Any = js.native
+  var ondragenter: Any = js.native
   
   /* CompleteClass */
-  var ondragleave: js.Any = js.native
+  var ondragleave: Any = js.native
   
   /* CompleteClass */
-  var ondragover: js.Any = js.native
+  var ondragover: Any = js.native
   
   /* CompleteClass */
-  var ondrop: js.Any = js.native
+  var ondrop: Any = js.native
   
   /* CompleteClass */
-  var ondurationchange: js.Any = js.native
+  var ondurationchange: Any = js.native
   
   /* CompleteClass */
-  var onemptied: js.Any = js.native
+  var onemptied: Any = js.native
   
   /* CompleteClass */
-  var onended: js.Any = js.native
+  var onended: Any = js.native
   
   /* CompleteClass */
-  var onerror: js.Any = js.native
+  var onerror: Any = js.native
   
   /* CompleteClass */
-  var onfocus: js.Any = js.native
+  var onfocus: Any = js.native
   
   /* CompleteClass */
-  var oninput: js.Any = js.native
+  var oninput: Any = js.native
   
   /* CompleteClass */
-  var onload: js.Any = js.native
+  var onload: Any = js.native
   
   /* CompleteClass */
-  var onloadeddata: js.Any = js.native
+  var onloadeddata: Any = js.native
   
   /* CompleteClass */
-  var onloadedmetadata: js.Any = js.native
+  var onloadedmetadata: Any = js.native
   
   /* CompleteClass */
-  var onloadstart: js.Any = js.native
+  var onloadstart: Any = js.native
   
   /* CompleteClass */
-  var onmssitemodejumplistitemremoved: js.Any = js.native
+  var onmssitemodejumplistitemremoved: Any = js.native
   
   /* CompleteClass */
-  var onmsthumbnailclick: js.Any = js.native
+  var onmsthumbnailclick: Any = js.native
   
   /* CompleteClass */
-  var onpause: js.Any = js.native
+  var onpause: Any = js.native
   
   /* CompleteClass */
-  var onplay: js.Any = js.native
+  var onplay: Any = js.native
   
   /* CompleteClass */
-  var onplaying: js.Any = js.native
+  var onplaying: Any = js.native
   
   /* CompleteClass */
-  var onprogress: js.Any = js.native
+  var onprogress: Any = js.native
   
   /* CompleteClass */
-  var onratechange: js.Any = js.native
+  var onratechange: Any = js.native
   
   /* CompleteClass */
-  var onreset: js.Any = js.native
+  var onreset: Any = js.native
   
   /* CompleteClass */
-  var onscroll: js.Any = js.native
+  var onscroll: Any = js.native
   
   /* CompleteClass */
-  var onseeked: js.Any = js.native
+  var onseeked: Any = js.native
   
   /* CompleteClass */
-  var onseeking: js.Any = js.native
+  var onseeking: Any = js.native
   
   /* CompleteClass */
-  var onselect: js.Any = js.native
+  var onselect: Any = js.native
   
   /* CompleteClass */
-  var onstalled: js.Any = js.native
+  var onstalled: Any = js.native
   
   /* CompleteClass */
-  var onsubmit: js.Any = js.native
+  var onsubmit: Any = js.native
   
   /* CompleteClass */
-  var onsuspend: js.Any = js.native
+  var onsuspend: Any = js.native
   
   /* CompleteClass */
-  var ontimeupdate: js.Any = js.native
+  var ontimeupdate: Any = js.native
   
   /* CompleteClass */
-  var onvolumechange: js.Any = js.native
+  var onvolumechange: Any = js.native
   
   /* CompleteClass */
-  var onwaiting: js.Any = js.native
+  var onwaiting: Any = js.native
   
   /* CompleteClass */
-  override def parentWindow(pvarIndex: js.Any): js.Any = js.native
+  override def parentWindow(pvarIndex: Any): Any = js.native
   /* CompleteClass */
   @JSName("parentWindow")
   override val parentWindow_Original: IHTMLWindow2 = js.native

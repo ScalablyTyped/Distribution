@@ -11,9 +11,9 @@ Validate a package.json file
 | Full name          | validate-npm-package |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 33545 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 19821.333333333332 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/thejameskyle/validate-npm-package#readme)

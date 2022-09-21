@@ -1,7 +1,7 @@
 package typings.sentryBrowser
 
-import typings.sentryBrowser.anon.Key
 import typings.sentryBrowser.anon.PartialBreadcrumbsOptions
+import typings.sentryBrowser.anon.PartialLinkedErrorsOption
 import typings.sentryBrowser.anon.PartialTryCatchOptions
 import typings.sentryBrowser.globalhandlersMod.GlobalHandlersIntegrations
 import org.scalablytyped.runtime.StObject
@@ -10,119 +10,139 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object integrationsMod {
   
-  @JSImport("@sentry/browser/dist/integrations", "Breadcrumbs")
+  @JSImport("@sentry/browser/types/integrations", "Breadcrumbs")
   @js.native
   /**
     * @inheritDoc
     */
-  class Breadcrumbs ()
+  open class Breadcrumbs ()
     extends typings.sentryBrowser.breadcrumbsMod.Breadcrumbs {
     def this(options: PartialBreadcrumbsOptions) = this()
   }
   /* static members */
   object Breadcrumbs {
     
-    @JSImport("@sentry/browser/dist/integrations", "Breadcrumbs")
+    @JSImport("@sentry/browser/types/integrations", "Breadcrumbs")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    @JSImport("@sentry/browser/dist/integrations", "Breadcrumbs.id")
+    @JSImport("@sentry/browser/types/integrations", "Breadcrumbs.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@sentry/browser/dist/integrations", "GlobalHandlers")
+  @JSImport("@sentry/browser/types/integrations", "Dedupe")
+  @js.native
+  open class Dedupe ()
+    extends typings.sentryBrowser.dedupeMod.Dedupe
+  /* static members */
+  object Dedupe {
+    
+    @JSImport("@sentry/browser/types/integrations", "Dedupe")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/browser/types/integrations", "Dedupe.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@sentry/browser/types/integrations", "GlobalHandlers")
   @js.native
   /** JSDoc */
-  class GlobalHandlers ()
+  open class GlobalHandlers ()
     extends typings.sentryBrowser.globalhandlersMod.GlobalHandlers {
     def this(options: GlobalHandlersIntegrations) = this()
   }
   /* static members */
   object GlobalHandlers {
     
-    @JSImport("@sentry/browser/dist/integrations", "GlobalHandlers")
+    @JSImport("@sentry/browser/types/integrations", "GlobalHandlers")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    @JSImport("@sentry/browser/dist/integrations", "GlobalHandlers.id")
+    @JSImport("@sentry/browser/types/integrations", "GlobalHandlers.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@sentry/browser/dist/integrations", "LinkedErrors")
+  @JSImport("@sentry/browser/types/integrations", "HttpContext")
+  @js.native
+  open class HttpContext ()
+    extends typings.sentryBrowser.httpcontextMod.HttpContext
+  /* static members */
+  object HttpContext {
+    
+    @JSImport("@sentry/browser/types/integrations", "HttpContext")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/browser/types/integrations", "HttpContext.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@sentry/browser/types/integrations", "LinkedErrors")
   @js.native
   /**
     * @inheritDoc
     */
-  class LinkedErrors ()
+  open class LinkedErrors ()
     extends typings.sentryBrowser.linkederrorsMod.LinkedErrors {
-    def this(options: Key) = this()
+    def this(options: PartialLinkedErrorsOption) = this()
   }
   /* static members */
   object LinkedErrors {
     
-    @JSImport("@sentry/browser/dist/integrations", "LinkedErrors")
+    @JSImport("@sentry/browser/types/integrations", "LinkedErrors")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    @JSImport("@sentry/browser/dist/integrations", "LinkedErrors.id")
+    @JSImport("@sentry/browser/types/integrations", "LinkedErrors.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@sentry/browser/dist/integrations", "TryCatch")
+  @JSImport("@sentry/browser/types/integrations", "TryCatch")
   @js.native
   /**
     * @inheritDoc
     */
-  class TryCatch ()
+  open class TryCatch ()
     extends typings.sentryBrowser.trycatchMod.TryCatch {
     def this(options: PartialTryCatchOptions) = this()
   }
   /* static members */
   object TryCatch {
     
-    @JSImport("@sentry/browser/dist/integrations", "TryCatch")
+    @JSImport("@sentry/browser/types/integrations", "TryCatch")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    @JSImport("@sentry/browser/dist/integrations", "TryCatch.id")
-    @js.native
-    def id: String = js.native
-    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("@sentry/browser/dist/integrations", "UserAgent")
-  @js.native
-  class UserAgent ()
-    extends typings.sentryBrowser.useragentMod.UserAgent
-  /* static members */
-  object UserAgent {
-    
-    @JSImport("@sentry/browser/dist/integrations", "UserAgent")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * @inheritDoc
-      */
-    @JSImport("@sentry/browser/dist/integrations", "UserAgent.id")
+    @JSImport("@sentry/browser/types/integrations", "TryCatch.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])

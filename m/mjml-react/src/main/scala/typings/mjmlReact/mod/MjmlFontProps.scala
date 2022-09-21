@@ -1,10 +1,13 @@
 package typings.mjmlReact.mod
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MjmlFontProps extends StObject {
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var href: js.UndefOr[String] = js.undefined
   
@@ -18,6 +21,10 @@ object MjmlFontProps {
   }
   
   extension [Self <: MjmlFontProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

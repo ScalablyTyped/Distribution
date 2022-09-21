@@ -41,11 +41,11 @@ trait JsGridControl extends StObject {
   /** Attach event handler to a particular event type */
   def AttachEvent(eventType: EventType, fnOnEvent: js.Function1[/* args */ IEventArgs, Unit]): Unit = js.native
   
-  def CanMoveRecordsDownByOne(recordKeys: js.Any): Boolean = js.native
+  def CanMoveRecordsDownByOne(recordKeys: Any): Boolean = js.native
   
-  def CanMoveRecordsUpByOne(recordKeys: js.Any): Boolean = js.native
+  def CanMoveRecordsUpByOne(recordKeys: Any): Boolean = js.native
   
-  def ChangeKeys(oldKey: js.Any, newKey: js.Any): Unit = js.native
+  def ChangeKeys(oldKey: Any, newKey: Any): Unit = js.native
   
   def Cleanup(): Unit = js.native
   
@@ -73,19 +73,19 @@ trait JsGridControl extends StObject {
   /** Copy data from currently selected cells into the clipboard. */
   def CopyToClipboard(): Unit = js.native
   
-  def CreateAndSynchronizeToNewChangeKey(): js.Any = js.native
+  def CreateAndSynchronizeToNewChangeKey(): Any = js.native
   
-  def CreateDataUpdateCmd(bUseCustomInitialUpdate: Boolean): js.Any = js.native
+  def CreateDataUpdateCmd(bUseCustomInitialUpdate: Boolean): Any = js.native
   
   /** Cut data from currently selected cells into the clipboard.
     Will not work if current selection contains entry row or readonly cells. */
   def CutToClipboard(): Unit = js.native
   
-  def DeleteRecords(recordKeys: js.Any): js.Any = js.native
-  def DeleteRecords(recordKeys: js.Any, optChangeKey: js.Any): js.Any = js.native
+  def DeleteRecords(recordKeys: Any): Any = js.native
+  def DeleteRecords(recordKeys: Any, optChangeKey: Any): Any = js.native
   
   /** Detach a previously set event handler */
-  def DetachEvent(eventType: EventType, fnOnEvent: js.Any): Unit = js.native
+  def DetachEvent(eventType: EventType, fnOnEvent: Any): Unit = js.native
   
   /** Covers the grid with the semi-transparent panel, preventing any operations with it.
     Additionally, displays loading animated gif and optMsg as the message next to it.
@@ -112,56 +112,56 @@ trait JsGridControl extends StObject {
   /** Moves focus to the JsGrid control */
   def Focus(): Unit = js.native
   
-  def GetAllDataJson(fnOnFinished: js.Any): Unit = js.native
-  def GetAllDataJson(fnOnFinished: js.Any, optFnGetCellStyleID: js.Any): Unit = js.native
+  def GetAllDataJson(fnOnFinished: Any): Unit = js.native
+  def GetAllDataJson(fnOnFinished: Any, optFnGetCellStyleID: Any): Unit = js.native
   
   /** Get error message for the specified cell.
     If many errors are set on the cell, only first is returned.
     If there are no errors in the cell, returns null. */
   def GetCellErrorMessage(recordKey: Double, fieldKey: String): String = js.native
   
-  def GetChangeKeyForVersion(version: js.Any): js.Any = js.native
+  def GetChangeKeyForVersion(version: Any): Any = js.native
   
-  def GetCheckSelectionManager(): js.Any = js.native
+  def GetCheckSelectionManager(): Any = js.native
   
   /** Get ColumnInfo object by fieldKey
     @fieldKey when working with SharePoint data sources, fieldKey corresponds to field internal name */
   def GetColumnByFieldKey(fieldKey: String): ColumnInfo = js.native
-  def GetColumnByFieldKey(fieldKey: String, optPaneId: js.Any): ColumnInfo = js.native
+  def GetColumnByFieldKey(fieldKey: String, optPaneId: Any): ColumnInfo = js.native
   
   def GetColumns(): js.Array[ColumnInfo] = js.native
   def GetColumns(optPaneId: String): js.Array[ColumnInfo] = js.native
   
   def GetContiguousRowSelectionWithoutEntryRecords(): Begin = js.native
   
-  def GetCurrentChangeKey(): js.Any = js.native
+  def GetCurrentChangeKey(): Any = js.native
   
   /** Get current delegate. */
-  def GetDelegate(delegateKey: DelegateType): js.Any = js.native
+  def GetDelegate(delegateKey: DelegateType): Any = js.native
   
   /** Get diff tracker object that tracks changes to the grid data. */
   def GetDiffTracker(): DiffTracker = js.native
   
   /** Get entry record with the specified key.
     Entry record is a special type of record because it represents a new record that doesn't exist yet. */
-  def GetEntryRecord(key: js.Any): js.Any = js.native
+  def GetEntryRecord(key: Any): Any = js.native
   
-  def GetFocusedItem(): js.Any = js.native
+  def GetFocusedItem(): Any = js.native
   
-  def GetGanttZoomLevel(): js.Any = js.native
+  def GetGanttZoomLevel(): Any = js.native
   
-  def GetHierarchyQueryObject(): js.Any = js.native
+  def GetHierarchyQueryObject(): Any = js.native
   
-  def GetHierarchyState(bDecompressGuidKeys: Boolean): js.Any = js.native
+  def GetHierarchyState(bDecompressGuidKeys: Boolean): Any = js.native
   
   def GetLastRecordKey(): String = js.native
   
-  def GetLeftColumnIndex(): js.Any = js.native
-  def GetLeftColumnIndex(optPaneId: js.Any): js.Any = js.native
+  def GetLeftColumnIndex(): Any = js.native
+  def GetLeftColumnIndex(optPaneId: Any): Any = js.native
   
-  def GetNodeExpandCollapseState(recordKey: Double): js.Any = js.native
+  def GetNodeExpandCollapseState(recordKey: Double): Any = js.native
   
-  def GetOutlineLevel(record: js.Any): js.Any = js.native
+  def GetOutlineLevel(record: Any): Any = js.native
   
   /** Gets record based on the recordKey
     @recordKey internal unique id of a row. You can get recordKey from view index via GetRecordKeyByViewIndex method. */
@@ -178,27 +178,27 @@ trait JsGridControl extends StObject {
     */
   def GetRecordKeyByViewIndex(viewIdx: Double): Double = js.native
   
-  def GetReorderRange(recordKeys: js.Any): js.Any = js.native
+  def GetReorderRange(recordKeys: Any): Any = js.native
   
   /** Get error message for the specified row.
     If many errors are set on the row, only first is returned.
     If there are no errors in the row, returns null. */
   def GetRowErrorMessage(recordKey: Double): String = js.native
   
-  def GetSelectedColumnRanges(): js.Any = js.native
-  def GetSelectedColumnRanges(optPaneId: js.Any): js.Any = js.native
+  def GetSelectedColumnRanges(): Any = js.native
+  def GetSelectedColumnRanges(optPaneId: Any): Any = js.native
   
-  def GetSelectedRanges(): js.Any = js.native
-  def GetSelectedRanges(optPaneId: js.Any): js.Any = js.native
+  def GetSelectedRanges(): Any = js.native
+  def GetSelectedRanges(optPaneId: Any): Any = js.native
   
-  def GetSelectedRecordKeys(bDuplicatesAllowed: Boolean): js.Any = js.native
+  def GetSelectedRecordKeys(bDuplicatesAllowed: Boolean): Any = js.native
   
-  def GetSelectedRowRanges(): js.Any = js.native
-  def GetSelectedRowRanges(optPaneId: js.Any): js.Any = js.native
+  def GetSelectedRowRanges(): Any = js.native
+  def GetSelectedRowRanges(optPaneId: Any): Any = js.native
   
-  def GetSpCsrRenderCtx(): js.Any = js.native
+  def GetSpCsrRenderCtx(): Any = js.native
   
-  def GetSplitterPosition(): js.Any = js.native
+  def GetSplitterPosition(): Any = js.native
   
   /** Get top record view index.
     You can then use GetRecordKeyByViewIndex to convert this value into the recordKey. */
@@ -211,7 +211,7 @@ trait JsGridControl extends StObject {
   /** Get undo manager for performing undo/redo operations programmatically. */
   def GetUndoManager(): CommandManager = js.native
   
-  def GetUnfilteredHierarchyMap(): js.Any = js.native
+  def GetUnfilteredHierarchyMap(): Any = js.native
   
   /** Opposite to GetRecordKeyByViewIndex, resolves the view index of the record based on record key.
     recordKey - unique numeric identifier of a row in the current dataset.
@@ -229,30 +229,30 @@ trait JsGridControl extends StObject {
   
   def HideInitialLoadingBanner(): Unit = js.native
   
-  def IndentRecords(recordKeys: js.Any): js.Any = js.native
-  def IndentRecords(recordKeys: js.Any, optChangeKey: js.Any): js.Any = js.native
+  def IndentRecords(recordKeys: Any): Any = js.native
+  def IndentRecords(recordKeys: Any, optChangeKey: Any): Any = js.native
   
   /** Initialize the control */
   def Init(parameters: Parameters): Unit = js.native
   
-  def InsertHiddenRecord(recordKey: Double, changeKey: js.Any): js.Any = js.native
-  def InsertHiddenRecord(recordKey: Double, changeKey: js.Any, optAfterRecordKey: js.Any): js.Any = js.native
+  def InsertHiddenRecord(recordKey: Double, changeKey: Any): Any = js.native
+  def InsertHiddenRecord(recordKey: Double, changeKey: Any, optAfterRecordKey: Any): Any = js.native
   
-  def InsertProvisionalRecordAfter(afterRecordKey: Double, newRecord: js.Any, initialValues: js.Any): js.Any = js.native
+  def InsertProvisionalRecordAfter(afterRecordKey: Double, newRecord: Any, initialValues: Any): Any = js.native
   
-  def InsertProvisionalRecordBefore(beforeRecordKey: Double, newRecord: js.Any, initialValues: js.Any): js.Any = js.native
+  def InsertProvisionalRecordBefore(beforeRecordKey: Double, newRecord: Any, initialValues: Any): Any = js.native
   
-  def InsertRecordAfter(afterRecordKey: Double, newRecord: js.Any): js.Any = js.native
-  def InsertRecordAfter(afterRecordKey: Double, newRecord: js.Any, optChangeKey: js.Any): js.Any = js.native
+  def InsertRecordAfter(afterRecordKey: Double, newRecord: Any): Any = js.native
+  def InsertRecordAfter(afterRecordKey: Double, newRecord: Any, optChangeKey: Any): Any = js.native
   
-  def InsertRecordBefore(beforeRecordKey: Double, newRecord: js.Any): js.Any = js.native
-  def InsertRecordBefore(beforeRecordKey: Double, newRecord: js.Any, optChangeKey: js.Any): js.Any = js.native
+  def InsertRecordBefore(beforeRecordKey: Double, newRecord: Any): Any = js.native
+  def InsertRecordBefore(beforeRecordKey: Double, newRecord: Any, optChangeKey: Any): Any = js.native
   
   /** Determine whether the specified cell is editable. */
   def IsCellEditable(record: IRecord, fieldKey: String): Boolean = js.native
-  def IsCellEditable(record: IRecord, fieldKey: String, optPaneId: js.Any): Boolean = js.native
+  def IsCellEditable(record: IRecord, fieldKey: String, optPaneId: Any): Boolean = js.native
   
-  def IsChangeKeyApplied(changeKey: js.Any): js.Any = js.native
+  def IsChangeKeyApplied(changeKey: Any): Any = js.native
   
   /** Determine if the specified record key identifies valid entry row. */
   def IsEntryRecord(recordKey: Double): Boolean = js.native
@@ -273,365 +273,365 @@ trait JsGridControl extends StObject {
   def JumpToEntryRecord(): Unit = js.native
   
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any
+    optGanttDelegateNames: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Any,
+    optInitGanttStylesFnName: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Any,
+    optInitGanttStylesFnName: Any,
+    optInitGanttStylesFnArgsObj: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any,
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Any,
     optInitGanttStylesFnName: Unit,
-    optInitGanttStylesFnArgsObj: js.Any
+    optInitGanttStylesFnArgsObj: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Any,
     optInitTableViewParamsFnArgsObj: Unit,
-    optInitGanttStylesFnName: js.Any
+    optInitGanttStylesFnName: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Any,
     optInitTableViewParamsFnArgsObj: Unit,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
+    optInitGanttStylesFnName: Any,
+    optInitGanttStylesFnArgsObj: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: Unit,
-    optInitGanttStylesFnName: Unit,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: Unit,
-    optInitTableViewParamsFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: Unit,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: Unit,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: Unit,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: Unit,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: Unit,
-    optInitTableViewParamsFnArgsObj: Unit,
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: Unit,
-    optInitTableViewParamsFnArgsObj: Unit,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: js.Any,
-    optInitTableViewParamsFnName: Unit,
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Any,
     optInitTableViewParamsFnArgsObj: Unit,
     optInitGanttStylesFnName: Unit,
-    optInitGanttStylesFnArgsObj: js.Any
+    optInitGanttStylesFnArgsObj: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: js.Any
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Any,
+    optInitGanttStylesFnName: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Any,
+    optInitGanttStylesFnName: Any,
+    optInitGanttStylesFnArgsObj: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: js.Any,
+    optGanttDelegateNames: Any,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Any,
     optInitGanttStylesFnName: Unit,
-    optInitGanttStylesFnArgsObj: js.Any
+    optInitGanttStylesFnArgsObj: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: Unit,
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: Unit,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: js.Any,
-    optInitTableViewParamsFnArgsObj: Unit,
-    optInitGanttStylesFnName: Unit,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: Unit,
-    optInitTableViewParamsFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: Unit,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: Unit,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
-    optInitTableViewParamsFnName: Unit,
-    optInitTableViewParamsFnArgsObj: js.Any,
-    optInitGanttStylesFnName: Unit,
-    optInitGanttStylesFnArgsObj: js.Any
-  ): Unit = js.native
-  def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
-    title: String,
-    bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
+    optGanttDelegateNames: Any,
     optInitTableViewParamsFnName: Unit,
     optInitTableViewParamsFnArgsObj: Unit,
-    optInitGanttStylesFnName: js.Any
+    optInitGanttStylesFnName: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
+    optGanttDelegateNames: Any,
     optInitTableViewParamsFnName: Unit,
     optInitTableViewParamsFnArgsObj: Unit,
-    optInitGanttStylesFnName: js.Any,
-    optInitGanttStylesFnArgsObj: js.Any
+    optInitGanttStylesFnName: Any,
+    optInitGanttStylesFnArgsObj: Any
   ): Unit = js.native
   def LaunchPrintView(
-    additionalScriptFiles: js.Any,
-    beforeInitFnName: js.Any,
-    beforeInitFnArgsObj: js.Any,
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
     title: String,
     bEnableGantt: Boolean,
-    optGanttDelegateNames: Unit,
+    optGanttDelegateNames: Any,
     optInitTableViewParamsFnName: Unit,
     optInitTableViewParamsFnArgsObj: Unit,
     optInitGanttStylesFnName: Unit,
-    optInitGanttStylesFnArgsObj: js.Any
+    optInitGanttStylesFnArgsObj: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Any,
+    optInitGanttStylesFnName: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Any,
+    optInitGanttStylesFnName: Any,
+    optInitGanttStylesFnArgsObj: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Any,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: Any,
+    optInitGanttStylesFnArgsObj: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Any,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Any,
+    optInitGanttStylesFnName: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Any,
+    optInitGanttStylesFnName: Any,
+    optInitGanttStylesFnArgsObj: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Any,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: Any,
+    optInitGanttStylesFnArgsObj: Any
+  ): Unit = js.native
+  def LaunchPrintView(
+    additionalScriptFiles: Any,
+    beforeInitFnName: Any,
+    beforeInitFnArgsObj: Any,
+    title: String,
+    bEnableGantt: Boolean,
+    optGanttDelegateNames: Unit,
+    optInitTableViewParamsFnName: Unit,
+    optInitTableViewParamsFnArgsObj: Unit,
+    optInitGanttStylesFnName: Unit,
+    optInitGanttStylesFnArgsObj: Any
   ): Unit = js.native
   
-  def MarkPropUpdateInvalid(recordKey: Double, fieldKey: js.Any, changeKey: js.Any): js.Any = js.native
-  def MarkPropUpdateInvalid(recordKey: Double, fieldKey: js.Any, changeKey: js.Any, optErrorMsg: js.Any): js.Any = js.native
+  def MarkPropUpdateInvalid(recordKey: Double, fieldKey: Any, changeKey: Any): Any = js.native
+  def MarkPropUpdateInvalid(recordKey: Double, fieldKey: Any, changeKey: Any, optErrorMsg: Any): Any = js.native
   
-  def MoveRecordsDownByOne(recordKeys: js.Any): js.Any = js.native
+  def MoveRecordsDownByOne(recordKeys: Any): Any = js.native
   
-  def MoveRecordsUpByOne(recordKeys: js.Any): js.Any = js.native
+  def MoveRecordsUpByOne(recordKeys: Any): Any = js.native
   
   // todo
   def NotifyDataAvailable(): Unit = js.native
@@ -642,8 +642,8 @@ trait JsGridControl extends StObject {
   
   def NotifySave(): Unit = js.native
   
-  def OutdentRecords(recordKeys: js.Any): js.Any = js.native
-  def OutdentRecords(recordKeys: js.Any, optChangeKey: js.Any): js.Any = js.native
+  def OutdentRecords(recordKeys: Any): Any = js.native
+  def OutdentRecords(recordKeys: Any, optChangeKey: Any): Any = js.native
   
   /** Paste data from clipboard into currently selected cells. */
   def PasteFromClipboard(): Unit = js.native
@@ -662,12 +662,12 @@ trait JsGridControl extends StObject {
   /** Switches column header in rename mode, showing textbox and thus giving the user possibility to rename this column. */
   def RenameColumn(columnKey: String): Unit = js.native
   
-  def ReorderRecords(beginRecordKey: Double, endRecordKey: Double, afterRecordKey: Double, bSelectAfterwards: Boolean): js.Any = js.native
+  def ReorderRecords(beginRecordKey: Double, endRecordKey: Double, afterRecordKey: Double, bSelectAfterwards: Boolean): Any = js.native
   
   /** Replaces the control TableCache object with the provided one */
   def ResetData(cache: TableCache): Unit = js.native
   
-  def ScrollGanttToDate(date: js.Any): Unit = js.native
+  def ScrollGanttToDate(date: Any): Unit = js.native
   
   /** This method is used mostly when you have a rather tall JSGrid and you want to ensure that user sees
     that some error has occured.
@@ -675,72 +675,72 @@ trait JsGridControl extends StObject {
     If minId is specified, method searches for an error with first id which is greater than minId.
     Scrolls to the Returns the id of the found record.
     If there aren't any errors, that satisfy the conditions, method does nothing and returns null. */
-  def ScrollToAndExpandNextError(): js.Any = js.native
-  def ScrollToAndExpandNextError(minId: Double): js.Any = js.native
+  def ScrollToAndExpandNextError(): Any = js.native
+  def ScrollToAndExpandNextError(minId: Double): Any = js.native
   def ScrollToAndExpandNextError(
     minId: Double,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
-  ): js.Any = js.native
+  ): Any = js.native
   def ScrollToAndExpandNextError(
     minId: Unit,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
-  ): js.Any = js.native
+  ): Any = js.native
   
   /** Same as ScrollToAndExpandNextError, but searches within the specified record.
     recordKey should be not null, otherwise you'll get an exception.
     bDontExpand controls whether the error tooltip will be shown (if bDontExpand=true, tooltip will not be shown). */
-  def ScrollToAndExpandNextErrorOnRecord(): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(minId: Double): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(minId: Double, recordKey: Double): js.Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(): Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Double): Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Double, recordKey: Double): Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(
     minId: Double,
     recordKey: Double,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
-  ): js.Any = js.native
+  ): Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(
     minId: Double,
     recordKey: Double,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
     bDontExpand: Boolean
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(minId: Double, recordKey: Double, fnFilter: Unit, bDontExpand: Boolean): js.Any = js.native
+  ): Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Double, recordKey: Double, fnFilter: Unit, bDontExpand: Boolean): Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(
     minId: Double,
     recordKey: Unit,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
-  ): js.Any = js.native
+  ): Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(
     minId: Double,
     recordKey: Unit,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
     bDontExpand: Boolean
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(minId: Double, recordKey: Unit, fnFilter: Unit, bDontExpand: Boolean): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(minId: Unit, recordKey: Double): js.Any = js.native
+  ): Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Double, recordKey: Unit, fnFilter: Unit, bDontExpand: Boolean): Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Unit, recordKey: Double): Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(
     minId: Unit,
     recordKey: Double,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
-  ): js.Any = js.native
+  ): Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(
     minId: Unit,
     recordKey: Double,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
     bDontExpand: Boolean
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(minId: Unit, recordKey: Double, fnFilter: Unit, bDontExpand: Boolean): js.Any = js.native
+  ): Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Unit, recordKey: Double, fnFilter: Unit, bDontExpand: Boolean): Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(
     minId: Unit,
     recordKey: Unit,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean]
-  ): js.Any = js.native
+  ): Any = js.native
   def ScrollToAndExpandNextErrorOnRecord(
     minId: Unit,
     recordKey: Unit,
     fnFilter: js.Function3[/* recordKey */ Double, /* fieldKey */ String, /* id */ Double, Boolean],
     bDontExpand: Boolean
-  ): js.Any = js.native
-  def ScrollToAndExpandNextErrorOnRecord(minId: Unit, recordKey: Unit, fnFilter: Unit, bDontExpand: Boolean): js.Any = js.native
+  ): Any = js.native
+  def ScrollToAndExpandNextErrorOnRecord(minId: Unit, recordKey: Unit, fnFilter: Unit, bDontExpand: Boolean): Any = js.native
   
   def SelectCellRange(rowIdx1: Double, rowIdx2: Double, colIdx1: Double, colIdx2: Double, bAppend: Boolean): Unit = js.native
   def SelectCellRange(
@@ -752,12 +752,12 @@ trait JsGridControl extends StObject {
     optPaneId: String
   ): Unit = js.native
   
-  def SelectCellRangeByKey(recordKey1: String, recordKey2: String, colKey1: js.Any, colKey2: js.Any, bAppend: Boolean): Unit = js.native
+  def SelectCellRangeByKey(recordKey1: String, recordKey2: String, colKey1: Any, colKey2: Any, bAppend: Boolean): Unit = js.native
   def SelectCellRangeByKey(
     recordKey1: String,
     recordKey2: String,
-    colKey1: js.Any,
-    colKey2: js.Any,
+    colKey1: Any,
+    colKey2: Any,
     bAppend: Boolean,
     optPaneId: String
   ): Unit = js.native
@@ -765,25 +765,25 @@ trait JsGridControl extends StObject {
   def SelectColumnRange(colIdx1: Double, colIdx2: Double, bAppend: Boolean): Unit = js.native
   def SelectColumnRange(colIdx1: Double, colIdx2: Double, bAppend: Boolean, optPaneId: String): Unit = js.native
   
-  def SelectColumnRangeByKey(colKey1: js.Any, colKey2: js.Any, bAppend: Boolean): Unit = js.native
-  def SelectColumnRangeByKey(colKey1: js.Any, colKey2: js.Any, bAppend: Boolean, optPaneId: String): Unit = js.native
+  def SelectColumnRangeByKey(colKey1: Any, colKey2: Any, bAppend: Boolean): Unit = js.native
+  def SelectColumnRangeByKey(colKey1: Any, colKey2: Any, bAppend: Boolean, optPaneId: String): Unit = js.native
   
   def SelectRowRange(rowIdx1: Double, rowIdx2: Double, bAppend: Boolean): Unit = js.native
   def SelectRowRange(rowIdx1: Double, rowIdx2: Double, bAppend: Boolean, optPaneId: String): Unit = js.native
   
-  def SelectRowRangeByKey(rowKey1: js.Any, rowKey2: js.Any, bAppend: Boolean): Unit = js.native
-  def SelectRowRangeByKey(rowKey1: js.Any, rowKey2: js.Any, bAppend: Boolean, optPaneId: String): Unit = js.native
+  def SelectRowRangeByKey(rowKey1: Any, rowKey2: Any, bAppend: Boolean): Unit = js.native
+  def SelectRowRangeByKey(rowKey1: Any, rowKey2: Any, bAppend: Boolean, optPaneId: String): Unit = js.native
   
-  def SendKeyDownEvent(eventInfo: DomEvent): js.Any = js.native
+  def SendKeyDownEvent(eventInfo: DomEvent): Any = js.native
   
   /** Set error for the specified by recordKey and fieldKey cell.
     Returns id of the error, so that later you can clear the error using this id. */
   def SetCellError(recordKey: Double, fieldKey: String, errorMessage: String): Double = js.native
   
   /** Set a delegate. Delegates are way to replace default functionality with custom one. */
-  def SetDelegate(delegateKey: DelegateType, fn: js.Any): Unit = js.native
+  def SetDelegate(delegateKey: DelegateType, fn: Any): Unit = js.native
   
-  def SetGanttZoomLevel(level: js.Any): Unit = js.native
+  def SetGanttZoomLevel(level: Any): Unit = js.native
   
   /** Set error for the specified by recordKey row.
     In the leftmost column of this row, exclamation mark error indicator will appear.
@@ -791,11 +791,11 @@ trait JsGridControl extends StObject {
     Returns id of the error, so that later you can clear the error using this id. */
   def SetRowError(recordKey: Double, errorMessage: String): Double = js.native
   
-  def SetRowView(rowViewParam: js.Any): Unit = js.native
+  def SetRowView(rowViewParam: Any): Unit = js.native
   
-  def SetSplitterPosition(pos: js.Any): Unit = js.native
+  def SetSplitterPosition(pos: Any): Unit = js.native
   
-  def SetTableView(tableViewParams: js.Any): Unit = js.native
+  def SetTableView(tableViewParams: Any): Unit = js.native
   
   /** Show a previously hidden column at a specified position.
     If atIdx is not defined, column will be shown at it's previous position. */
@@ -818,15 +818,15 @@ trait JsGridControl extends StObject {
   /** Try saving the new record row (aka entry row) if it was edited. */
   def TryCommitFirstEntryRecords(fnCommitComplete: js.Function0[Unit]): Unit = js.native
   
-  def TryReadPropForChangeKey(recordKey: Double, fieldKey: js.Any, changeKey: js.Any): js.Any = js.native
+  def TryReadPropForChangeKey(recordKey: Double, fieldKey: Any, changeKey: Any): Any = js.native
   
-  def TryRestoreFocusAfterInsertOrDeleteColumns(origFocus: js.Any): Unit = js.native
+  def TryRestoreFocusAfterInsertOrDeleteColumns(origFocus: Any): Unit = js.native
   
   /** Update column descriptions */
   def UpdateColumns(columnInfoCollection: ColumnInfoCollection): Unit = js.native
   
-  def UpdateProperties(propertyUpdates: js.Any, changeName: js.Any): js.Any = js.native
-  def UpdateProperties(propertyUpdates: js.Any, changeName: js.Any, optChangeKey: js.Any): js.Any = js.native
+  def UpdateProperties(propertyUpdates: Any, changeName: Any): Any = js.native
+  def UpdateProperties(propertyUpdates: Any, changeName: Any, optChangeKey: Any): Any = js.native
 }
 object JsGridControl {
   
@@ -864,7 +864,7 @@ object JsGridControl {
     
     var minRowHeight: Double
     
-    var name: js.Any
+    var name: Any
     
     var styleManager: IStyleManager
     
@@ -882,7 +882,7 @@ object JsGridControl {
       isRTL: Boolean,
       minHeaderHeight: Double,
       minRowHeight: Double,
-      name: js.Any,
+      name: Any,
       styleManager: IStyleManager,
       tableCache: TableCache,
       tableViewParams: TableViewParameters
@@ -907,7 +907,7 @@ object JsGridControl {
       
       inline def setMinRowHeight(value: Double): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
       
-      inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setStyleManager(value: IStyleManager): Self = StObject.set(x, "styleManager", value.asInstanceOf[js.Any])
       
@@ -921,48 +921,48 @@ object JsGridControl {
   
   trait RowViewParameters extends StObject {
     
-    var autoFilterEntries: js.Any
+    var autoFilterEntries: Any
     
-    var autoFilterState: js.Any
+    var autoFilterState: Any
     
-    var filterState: js.Any
+    var filterState: Any
     
-    var filteredDescCounts: js.Any
+    var filteredDescCounts: Any
     
-    var groupingLevel: js.Any
+    var groupingLevel: Any
     
-    var groupingRecordKeyPrefix: js.Any
+    var groupingRecordKeyPrefix: Any
     
-    var hierarchyDelayLoadKeys: js.Any
+    var hierarchyDelayLoadKeys: Any
     
     var hierarchyMode: HierarchyMode
     
-    var hierarchyState: js.Any
+    var hierarchyState: Any
     
-    var sortState: js.Any
+    var sortState: Any
     
     var topViewIdx: Double
     
-    var unfilteredHierarchyMgr: js.Any
+    var unfilteredHierarchyMgr: Any
     
-    var view: js.Any
+    var view: Any
   }
   object RowViewParameters {
     
     inline def apply(
-      autoFilterEntries: js.Any,
-      autoFilterState: js.Any,
-      filterState: js.Any,
-      filteredDescCounts: js.Any,
-      groupingLevel: js.Any,
-      groupingRecordKeyPrefix: js.Any,
-      hierarchyDelayLoadKeys: js.Any,
+      autoFilterEntries: Any,
+      autoFilterState: Any,
+      filterState: Any,
+      filteredDescCounts: Any,
+      groupingLevel: Any,
+      groupingRecordKeyPrefix: Any,
+      hierarchyDelayLoadKeys: Any,
       hierarchyMode: HierarchyMode,
-      hierarchyState: js.Any,
-      sortState: js.Any,
+      hierarchyState: Any,
+      sortState: Any,
       topViewIdx: Double,
-      unfilteredHierarchyMgr: js.Any,
-      view: js.Any
+      unfilteredHierarchyMgr: Any,
+      view: Any
     ): RowViewParameters = {
       val __obj = js.Dynamic.literal(autoFilterEntries = autoFilterEntries.asInstanceOf[js.Any], autoFilterState = autoFilterState.asInstanceOf[js.Any], filterState = filterState.asInstanceOf[js.Any], filteredDescCounts = filteredDescCounts.asInstanceOf[js.Any], groupingLevel = groupingLevel.asInstanceOf[js.Any], groupingRecordKeyPrefix = groupingRecordKeyPrefix.asInstanceOf[js.Any], hierarchyDelayLoadKeys = hierarchyDelayLoadKeys.asInstanceOf[js.Any], hierarchyMode = hierarchyMode.asInstanceOf[js.Any], hierarchyState = hierarchyState.asInstanceOf[js.Any], sortState = sortState.asInstanceOf[js.Any], topViewIdx = topViewIdx.asInstanceOf[js.Any], unfilteredHierarchyMgr = unfilteredHierarchyMgr.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowViewParameters]
@@ -970,31 +970,31 @@ object JsGridControl {
     
     extension [Self <: RowViewParameters](x: Self) {
       
-      inline def setAutoFilterEntries(value: js.Any): Self = StObject.set(x, "autoFilterEntries", value.asInstanceOf[js.Any])
+      inline def setAutoFilterEntries(value: Any): Self = StObject.set(x, "autoFilterEntries", value.asInstanceOf[js.Any])
       
-      inline def setAutoFilterState(value: js.Any): Self = StObject.set(x, "autoFilterState", value.asInstanceOf[js.Any])
+      inline def setAutoFilterState(value: Any): Self = StObject.set(x, "autoFilterState", value.asInstanceOf[js.Any])
       
-      inline def setFilterState(value: js.Any): Self = StObject.set(x, "filterState", value.asInstanceOf[js.Any])
+      inline def setFilterState(value: Any): Self = StObject.set(x, "filterState", value.asInstanceOf[js.Any])
       
-      inline def setFilteredDescCounts(value: js.Any): Self = StObject.set(x, "filteredDescCounts", value.asInstanceOf[js.Any])
+      inline def setFilteredDescCounts(value: Any): Self = StObject.set(x, "filteredDescCounts", value.asInstanceOf[js.Any])
       
-      inline def setGroupingLevel(value: js.Any): Self = StObject.set(x, "groupingLevel", value.asInstanceOf[js.Any])
+      inline def setGroupingLevel(value: Any): Self = StObject.set(x, "groupingLevel", value.asInstanceOf[js.Any])
       
-      inline def setGroupingRecordKeyPrefix(value: js.Any): Self = StObject.set(x, "groupingRecordKeyPrefix", value.asInstanceOf[js.Any])
+      inline def setGroupingRecordKeyPrefix(value: Any): Self = StObject.set(x, "groupingRecordKeyPrefix", value.asInstanceOf[js.Any])
       
-      inline def setHierarchyDelayLoadKeys(value: js.Any): Self = StObject.set(x, "hierarchyDelayLoadKeys", value.asInstanceOf[js.Any])
+      inline def setHierarchyDelayLoadKeys(value: Any): Self = StObject.set(x, "hierarchyDelayLoadKeys", value.asInstanceOf[js.Any])
       
       inline def setHierarchyMode(value: HierarchyMode): Self = StObject.set(x, "hierarchyMode", value.asInstanceOf[js.Any])
       
-      inline def setHierarchyState(value: js.Any): Self = StObject.set(x, "hierarchyState", value.asInstanceOf[js.Any])
+      inline def setHierarchyState(value: Any): Self = StObject.set(x, "hierarchyState", value.asInstanceOf[js.Any])
       
-      inline def setSortState(value: js.Any): Self = StObject.set(x, "sortState", value.asInstanceOf[js.Any])
+      inline def setSortState(value: Any): Self = StObject.set(x, "sortState", value.asInstanceOf[js.Any])
       
       inline def setTopViewIdx(value: Double): Self = StObject.set(x, "topViewIdx", value.asInstanceOf[js.Any])
       
-      inline def setUnfilteredHierarchyMgr(value: js.Any): Self = StObject.set(x, "unfilteredHierarchyMgr", value.asInstanceOf[js.Any])
+      inline def setUnfilteredHierarchyMgr(value: Any): Self = StObject.set(x, "unfilteredHierarchyMgr", value.asInstanceOf[js.Any])
       
-      inline def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1039,10 +1039,10 @@ object JsGridControl {
     
     var keyFieldName: String
     
-    var messageOverrides: js.Any
+    var messageOverrides: Any
     
     // TODO
-    var operationalConstantsFieldKeyMap: js.Any
+    var operationalConstantsFieldKeyMap: Any
     
     var paneLayout: PaneLayout
     
@@ -1072,8 +1072,8 @@ object JsGridControl {
       ganttParams: GanttParameters,
       gridFieldMap: StringDictionary[GridField],
       keyFieldName: String,
-      messageOverrides: js.Any,
-      operationalConstantsFieldKeyMap: js.Any,
+      messageOverrides: Any,
+      operationalConstantsFieldKeyMap: Any,
       paneLayout: PaneLayout,
       pivotedGridParams: PivotedGridParameters,
       rowViewParams: RowViewParameters
@@ -1108,15 +1108,15 @@ object JsGridControl {
       
       inline def setCheckSelectionCheckboxDisabledRecordKeys(value: js.Array[String]): Self = StObject.set(x, "checkSelectionCheckboxDisabledRecordKeys", value.asInstanceOf[js.Any])
       
-      inline def setCheckSelectionCheckboxDisabledRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckboxDisabledRecordKeys", js.Array(value :_*))
+      inline def setCheckSelectionCheckboxDisabledRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckboxDisabledRecordKeys", js.Array(value*))
       
       inline def setCheckSelectionCheckboxHiddenRecordKeys(value: js.Array[String]): Self = StObject.set(x, "checkSelectionCheckboxHiddenRecordKeys", value.asInstanceOf[js.Any])
       
-      inline def setCheckSelectionCheckboxHiddenRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckboxHiddenRecordKeys", js.Array(value :_*))
+      inline def setCheckSelectionCheckboxHiddenRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckboxHiddenRecordKeys", js.Array(value*))
       
       inline def setCheckSelectionCheckedRecordKeys(value: js.Array[String]): Self = StObject.set(x, "checkSelectionCheckedRecordKeys", value.asInstanceOf[js.Any])
       
-      inline def setCheckSelectionCheckedRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckedRecordKeys", js.Array(value :_*))
+      inline def setCheckSelectionCheckedRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckedRecordKeys", js.Array(value*))
       
       inline def setColumns(value: ColumnInfoCollection): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -1128,9 +1128,9 @@ object JsGridControl {
       
       inline def setKeyFieldName(value: String): Self = StObject.set(x, "keyFieldName", value.asInstanceOf[js.Any])
       
-      inline def setMessageOverrides(value: js.Any): Self = StObject.set(x, "messageOverrides", value.asInstanceOf[js.Any])
+      inline def setMessageOverrides(value: Any): Self = StObject.set(x, "messageOverrides", value.asInstanceOf[js.Any])
       
-      inline def setOperationalConstantsFieldKeyMap(value: js.Any): Self = StObject.set(x, "operationalConstantsFieldKeyMap", value.asInstanceOf[js.Any])
+      inline def setOperationalConstantsFieldKeyMap(value: Any): Self = StObject.set(x, "operationalConstantsFieldKeyMap", value.asInstanceOf[js.Any])
       
       inline def setPaneLayout(value: PaneLayout): Self = StObject.set(x, "paneLayout", value.asInstanceOf[js.Any])
       

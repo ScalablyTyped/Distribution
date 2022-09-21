@@ -21,7 +21,7 @@ object layerLayerMod {
   
   @JSImport("ol/layer/Layer", JSImport.Default)
   @js.native
-  class default[SourceType /* <: typings.ol.sourceSourceMod.default */] protected () extends Layer[SourceType] {
+  open class default[SourceType /* <: typings.ol.sourceSourceMod.default */] protected () extends Layer[SourceType] {
     def this(options: Options) = this()
   }
   

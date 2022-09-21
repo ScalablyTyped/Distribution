@@ -28,13 +28,13 @@ object StreamingComputationTask {
     
     inline def setComputationRangesUndefined: Self = StObject.set(x, "computationRanges", js.undefined)
     
-    inline def setComputationRangesVarargs(value: StreamingComputationRanges*): Self = StObject.set(x, "computationRanges", js.Array(value :_*))
+    inline def setComputationRangesVarargs(value: StreamingComputationRanges*): Self = StObject.set(x, "computationRanges", js.Array(value*))
     
     inline def setDataDisks(value: js.Array[MountedDataDisk]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
     
     inline def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
     
-    inline def setDataDisksVarargs(value: MountedDataDisk*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
+    inline def setDataDisksVarargs(value: MountedDataDisk*): Self = StObject.set(x, "dataDisks", js.Array(value*))
     
     inline def setTaskType(value: String): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
     

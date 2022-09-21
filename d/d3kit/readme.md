@@ -10,15 +10,12 @@ A kit of tools to speed D3 related project development.
 | ------------------ | :-------------: |
 | Full name          | d3kit |
 | Keywords           | d3, d3kit, visualization, javascript |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 3221 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 906.0 |
+| # stars            | 418.0 |
 
 ## Links
-- [Homepage](https://github.com/twitter/d3kit#readme)
-- [Bugs](https://github.com/twitter/d3kit/issues)
-- [Repository](https://github.com/twitter/d3kit)
 - [Npm](https://www.npmjs.com/package/d3kit)
     
 

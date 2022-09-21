@@ -8,5 +8,5 @@ object selectObjectContentEventStreamMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_SelectObjectContentEventStream", "_SelectObjectContentEventStream")
   @js.native
-  val SelectObjectContentEventStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SelectObjectContentEventStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

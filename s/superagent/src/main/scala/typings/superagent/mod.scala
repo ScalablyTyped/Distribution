@@ -3,16 +3,16 @@ package typings.superagent
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.cookiejar.mod.CookieJar
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.ReadStream
 import typings.node.httpMod.Agent
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
 import typings.std.Blob
 import typings.std.Error
-import typings.std.XMLHttpRequest
+import typings.std.ReadableStream
+import typings.std.Record
+import typings.std.WritableStream
 import typings.superagent.anon.ContentType
 import typings.superagent.anon.Deadline
 import typings.superagent.anon.Passphrase
@@ -36,9 +36,9 @@ object mod extends Shortcut {
   @js.native
   val ^ : SuperAgentStatic = js.native
   
-  type BrowserParser = js.Function1[/* str */ String, js.Any]
+  type BrowserParser = js.Function1[/* str */ String, Any]
   
-  type CallbackHandler = js.Function2[/* err */ js.Any, /* res */ Response, Unit]
+  type CallbackHandler = js.Function2[/* err */ Any, /* res */ Response, Unit]
   
   trait HTTPError
     extends StObject
@@ -77,7 +77,7 @@ object mod extends Shortcut {
   
   type NodeParser = js.Function2[
     /* res */ Response, 
-    /* callback */ js.Function2[/* err */ Error | Null, /* body */ js.Any, Unit], 
+    /* callback */ js.Function2[/* err */ js.Error | Null, /* body */ Any, Unit], 
     Unit
   ]
   
@@ -168,9 +168,9 @@ object mod extends Shortcut {
     
     def ok(callback: js.Function1[/* res */ Response, Boolean]): this.type = js.native
     
-    def on(name: String, handler: js.Function1[/* event */ js.Any, Unit]): this.type = js.native
+    def on(name: String, handler: js.Function1[/* event */ Any, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(name: error, handler: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def on_error(name: error, handler: js.Function1[/* err */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_progress(name: progress, handler: js.Function1[/* event */ ProgressEvent, Unit]): this.type = js.native
     @JSName("on")
@@ -185,8 +185,8 @@ object mod extends Shortcut {
     def pfx(cert: Buffer): this.type = js.native
     def pfx(cert: Passphrase): this.type = js.native
     
-    def pipe(stream: WritableStream): Writable = js.native
-    def pipe(stream: WritableStream, options: js.Object): Writable = js.native
+    def pipe(stream: WritableStream[Any]): Writable = js.native
+    def pipe(stream: WritableStream[Any], options: js.Object): Writable = js.native
     
     def query(`val`: String): this.type = js.native
     def query(`val`: js.Object): this.type = js.native
@@ -234,13 +234,13 @@ object mod extends Shortcut {
   @js.native
   trait Response
     extends StObject
-       with ReadableStream {
+       with ReadableStream[Any] {
     
     var accepted: Boolean = js.native
     
     var badRequest: Boolean = js.native
     
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     var charset: String = js.native
     
@@ -248,7 +248,7 @@ object mod extends Shortcut {
     
     var error: `false` | HTTPError = js.native
     
-    var files: js.Any = js.native
+    var files: Any = js.native
     
     var forbidden: Boolean = js.native
     
@@ -256,13 +256,13 @@ object mod extends Shortcut {
     @JSName("get")
     def get_SetCookie(header: `Set-Cookie`): js.Array[String] = js.native
     
-    var header: js.Any = js.native
+    var header: Any = js.native
     
-    var headers: js.Any = js.native
+    var headers: Any = js.native
     
     var info: Boolean = js.native
     
-    var links: js.Object = js.native
+    var links: Record[String, String] = js.native
     
     var noContent: Boolean = js.native
     
@@ -280,6 +280,8 @@ object mod extends Shortcut {
     
     var status: Double = js.native
     
+    var statusCode: Double = js.native
+    
     var statusType: Double = js.native
     
     var text: String = js.native
@@ -288,7 +290,7 @@ object mod extends Shortcut {
     
     var unauthorized: Boolean = js.native
     
-    var xhr: XMLHttpRequest = js.native
+    var xhr: Any = js.native
   }
   
   trait ResponseError
@@ -318,7 +320,7 @@ object mod extends Shortcut {
     }
   }
   
-  type Serializer = js.Function1[/* obj */ js.Any, String]
+  type Serializer = js.Function1[/* obj */ Any, String]
   
   @js.native
   trait SuperAgent[Req /* <: SuperAgentRequest */] extends Stream {

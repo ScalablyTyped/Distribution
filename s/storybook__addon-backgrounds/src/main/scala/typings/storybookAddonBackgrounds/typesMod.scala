@@ -90,7 +90,7 @@ object typesMod {
       
       inline def setBackgroundsNull: Self = StObject.set(x, "backgrounds", null)
       
-      inline def setBackgroundsVarargs(value: Background*): Self = StObject.set(x, "backgrounds", js.Array(value :_*))
+      inline def setBackgroundsVarargs(value: Background*): Self = StObject.set(x, "backgrounds", js.Array(value*))
       
       inline def setDefaultBackgroundName(value: String): Self = StObject.set(x, "defaultBackgroundName", value.asInstanceOf[js.Any])
       
@@ -131,7 +131,7 @@ object typesMod {
       
       inline def setValues(value: js.Array[Background]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Background*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Background*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   

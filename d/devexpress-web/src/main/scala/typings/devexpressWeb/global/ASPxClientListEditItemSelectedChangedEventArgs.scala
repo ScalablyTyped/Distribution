@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientListEditItemSelectedChangedEventArgs")
 @js.native
-class ASPxClientListEditItemSelectedChangedEventArgs protected ()
+open class ASPxClientListEditItemSelectedChangedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientListEditItemSelectedChangedEventArgs {
   /**

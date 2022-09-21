@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.CurrencyTextbox")
 @js.native
-class CurrencyTextbox ()
+open class CurrencyTextbox ()
   extends StObject
      with typings.ejWebAll.ej.Editor

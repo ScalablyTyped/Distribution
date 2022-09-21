@@ -12,7 +12,7 @@ object webGLBufferRendererMod {
   
   @JSImport("three/src/renderers/webgl/WebGLBufferRenderer", "WebGLBufferRenderer")
   @js.native
-  class WebGLBufferRenderer protected () extends StObject {
+  open class WebGLBufferRenderer protected () extends StObject {
     def this(
       gl: WebGLRenderingContext,
       extensions: WebGLExtensions,
@@ -20,10 +20,10 @@ object webGLBufferRendererMod {
       capabilities: WebGLCapabilities
     ) = this()
     
-    def render(start: js.Any, count: Double): Unit = js.native
+    def render(start: Any, count: Double): Unit = js.native
     
-    def renderInstances(start: js.Any, count: Double, primcount: Double): Unit = js.native
+    def renderInstances(start: Any, count: Double, primcount: Double): Unit = js.native
     
-    def setMode(value: js.Any): Unit = js.native
+    def setMode(value: Any): Unit = js.native
   }
 }

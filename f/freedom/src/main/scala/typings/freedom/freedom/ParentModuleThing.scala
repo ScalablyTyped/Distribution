@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParentModuleThing
   extends StObject
      with ModuleSelfConstructor
-     with OnAndEmit[js.Any, js.Any]
+     with OnAndEmit[Any, Any]

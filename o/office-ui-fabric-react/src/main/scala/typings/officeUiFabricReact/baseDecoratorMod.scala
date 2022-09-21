@@ -9,13 +9,12 @@ object baseDecoratorMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/decorators/BaseDecorator", "BaseDecorator")
   @js.native
-  class BaseDecorator[TProps, TState] protected ()
-    extends Component[TProps, TState, js.Any] {
+  open class BaseDecorator[TProps, TState] protected () extends Component[TProps, TState, Any] {
     def this(props: TProps) = this()
     
-    /* protected */ var _composedComponentInstance: Component[TProps, TState, js.Any] = js.native
+    /* protected */ var _composedComponentInstance: Component[TProps, TState, Any] = js.native
     
-    /* private */ var _hoisted: js.Any = js.native
+    /* private */ var _hoisted: Any = js.native
     
     /**
       * Updates the ref to the component composed by the decorator, which will also take care of hoisting
@@ -23,6 +22,6 @@ object baseDecoratorMod {
       *
       * Pass this method as the argument to the 'ref' property of the composed component.
       */
-    /* protected */ def _updateComposedComponentRef(composedComponentInstance: Component[TProps, TState, js.Any]): Unit = js.native
+    /* protected */ def _updateComposedComponentRef(composedComponentInstance: Component[TProps, TState, Any]): Unit = js.native
   }
 }

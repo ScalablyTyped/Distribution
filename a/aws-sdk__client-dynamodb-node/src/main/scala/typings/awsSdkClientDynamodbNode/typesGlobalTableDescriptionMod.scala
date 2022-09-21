@@ -6,8 +6,6 @@ import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.DELETING
 import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.UPDATING
 import typings.awsSdkClientDynamodbNode.typesReplicaDescriptionMod.ReplicaDescription
 import typings.awsSdkClientDynamodbNode.typesReplicaDescriptionMod.UnmarshalledReplicaDescription
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +17,7 @@ object typesGlobalTableDescriptionMod {
     /**
       * <p>The creation time of the global table.</p>
       */
-    var CreationDateTime: js.UndefOr[Date | String | Double] = js.undefined
+    var CreationDateTime: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The unique identifier of the global table.</p>
@@ -39,7 +37,7 @@ object typesGlobalTableDescriptionMod {
     /**
       * <p>The regions where the global table has replicas.</p>
       */
-    var ReplicationGroup: js.UndefOr[js.Array[ReplicaDescription] | Iterable[ReplicaDescription]] = js.undefined
+    var ReplicationGroup: js.UndefOr[js.Array[ReplicaDescription] | js.Iterable[ReplicaDescription]] = js.undefined
   }
   object GlobalTableDescription {
     
@@ -50,7 +48,7 @@ object typesGlobalTableDescriptionMod {
     
     extension [Self <: GlobalTableDescription](x: Self) {
       
-      inline def setCreationDateTime(value: Date | String | Double): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+      inline def setCreationDateTime(value: js.Date | String | Double): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
       
       inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
       
@@ -66,11 +64,11 @@ object typesGlobalTableDescriptionMod {
       
       inline def setGlobalTableStatusUndefined: Self = StObject.set(x, "GlobalTableStatus", js.undefined)
       
-      inline def setReplicationGroup(value: js.Array[ReplicaDescription] | Iterable[ReplicaDescription]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+      inline def setReplicationGroup(value: js.Array[ReplicaDescription] | js.Iterable[ReplicaDescription]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
       inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      inline def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value*))
     }
   }
   
@@ -82,7 +80,7 @@ object typesGlobalTableDescriptionMod {
       * <p>The creation time of the global table.</p>
       */
     @JSName("CreationDateTime")
-    var CreationDateTime_UnmarshalledGlobalTableDescription: js.UndefOr[Date] = js.undefined
+    var CreationDateTime_UnmarshalledGlobalTableDescription: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The regions where the global table has replicas.</p>
@@ -99,7 +97,7 @@ object typesGlobalTableDescriptionMod {
     
     extension [Self <: UnmarshalledGlobalTableDescription](x: Self) {
       
-      inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+      inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
       
       inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
       
@@ -107,7 +105,7 @@ object typesGlobalTableDescriptionMod {
       
       inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      inline def setReplicationGroupVarargs(value: UnmarshalledReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: UnmarshalledReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value*))
     }
   }
 }

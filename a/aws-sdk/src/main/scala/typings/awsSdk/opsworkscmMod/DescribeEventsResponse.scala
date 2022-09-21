@@ -33,6 +33,6 @@ object DescribeEventsResponse {
     
     inline def setServerEventsUndefined: Self = StObject.set(x, "ServerEvents", js.undefined)
     
-    inline def setServerEventsVarargs(value: ServerEvent*): Self = StObject.set(x, "ServerEvents", js.Array(value :_*))
+    inline def setServerEventsVarargs(value: ServerEvent*): Self = StObject.set(x, "ServerEvents", js.Array(value*))
   }
 }

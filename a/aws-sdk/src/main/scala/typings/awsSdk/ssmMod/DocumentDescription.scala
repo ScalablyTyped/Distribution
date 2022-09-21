@@ -7,14 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentDescription extends StObject {
   
   /**
+    * The version of the document currently approved for use in the organization.
+    */
+  var ApprovedVersion: js.UndefOr[DocumentVersion] = js.undefined
+  
+  /**
     * Details about the document attachments, including names, locations, sizes, and so on.
     */
   var AttachmentsInformation: js.UndefOr[AttachmentInformationList] = js.undefined
   
   /**
+    * The user in your organization who created the document.
+    */
+  var Author: js.UndefOr[DocumentAuthor] = js.undefined
+  
+  /**
+    * The classification of a document to help you identify and categorize its use.
+    */
+  var Category: js.UndefOr[CategoryList] = js.undefined
+  
+  /**
+    * The value that identifies a document's category.
+    */
+  var CategoryEnum: js.UndefOr[CategoryEnumList] = js.undefined
+  
+  /**
     * The date when the document was created.
     */
-  var CreatedDate: js.UndefOr[DateTime] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The default version.
@@ -25,6 +45,11 @@ trait DocumentDescription extends StObject {
     * A description of the document. 
     */
   var Description: js.UndefOr[DescriptionInDocument] = js.undefined
+  
+  /**
+    * The friendly name of the SSM document. This value can differ for each version of the document. If you want to update this value, see UpdateDocument.
+    */
+  var DisplayName: js.UndefOr[DocumentDisplayName] = js.undefined
   
   /**
     * The document format, either JSON or YAML.
@@ -57,12 +82,12 @@ trait DocumentDescription extends StObject {
   var LatestVersion: js.UndefOr[DocumentVersion] = js.undefined
   
   /**
-    * The name of the Systems Manager document.
+    * The name of the SSM document.
     */
   var Name: js.UndefOr[DocumentARN] = js.undefined
   
   /**
-    * The AWS user account that created the document.
+    * The Amazon Web Services user account that created the document.
     */
   var Owner: js.UndefOr[DocumentOwner] = js.undefined
   
@@ -72,7 +97,12 @@ trait DocumentDescription extends StObject {
   var Parameters: js.UndefOr[DocumentParameterList] = js.undefined
   
   /**
-    * The list of OS platforms compatible with this Systems Manager document. 
+    * The version of the document that is currently under review.
+    */
+  var PendingReviewVersion: js.UndefOr[DocumentVersion] = js.undefined
+  
+  /**
+    * The list of operating system (OS) platforms compatible with this SSM document. 
     */
   var PlatformTypes: js.UndefOr[PlatformTypeList] = js.undefined
   
@@ -80,6 +110,16 @@ trait DocumentDescription extends StObject {
     * A list of SSM documents required by a document. For example, an ApplicationConfiguration document requires an ApplicationConfigurationSchema document.
     */
   var Requires: js.UndefOr[DocumentRequiresList] = js.undefined
+  
+  /**
+    * Details about the review of a document.
+    */
+  var ReviewInformation: js.UndefOr[ReviewInformationList] = js.undefined
+  
+  /**
+    * The current status of the review.
+    */
+  var ReviewStatus: js.UndefOr[typings.awsSdk.ssmMod.ReviewStatus] = js.undefined
   
   /**
     * The schema version.
@@ -92,12 +132,12 @@ trait DocumentDescription extends StObject {
   var Sha1: js.UndefOr[DocumentSha1] = js.undefined
   
   /**
-    * The status of the Systems Manager document.
+    * The status of the SSM document.
     */
   var Status: js.UndefOr[DocumentStatus] = js.undefined
   
   /**
-    * A message returned by AWS Systems Manager that explains the Status value. For example, a Failed status might be explained by the StatusInformation message, "The specified S3 bucket does not exist. Verify that the URL of the S3 bucket is correct."
+    * A message returned by Amazon Web Services Systems Manager that explains the Status value. For example, a Failed status might be explained by the StatusInformation message, "The specified S3 bucket doesn't exist. Verify that the URL of the S3 bucket is correct."
     */
   var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.undefined
   
@@ -107,7 +147,7 @@ trait DocumentDescription extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS resource and property types reference in the AWS CloudFormation User Guide. 
+    * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see Amazon Web Services resource and property types reference in the CloudFormation User Guide. 
     */
   var TargetType: js.UndefOr[typings.awsSdk.ssmMod.TargetType] = js.undefined
   
@@ -125,13 +165,33 @@ object DocumentDescription {
   
   extension [Self <: DocumentDescription](x: Self) {
     
+    inline def setApprovedVersion(value: DocumentVersion): Self = StObject.set(x, "ApprovedVersion", value.asInstanceOf[js.Any])
+    
+    inline def setApprovedVersionUndefined: Self = StObject.set(x, "ApprovedVersion", js.undefined)
+    
     inline def setAttachmentsInformation(value: AttachmentInformationList): Self = StObject.set(x, "AttachmentsInformation", value.asInstanceOf[js.Any])
     
     inline def setAttachmentsInformationUndefined: Self = StObject.set(x, "AttachmentsInformation", js.undefined)
     
-    inline def setAttachmentsInformationVarargs(value: AttachmentInformation*): Self = StObject.set(x, "AttachmentsInformation", js.Array(value :_*))
+    inline def setAttachmentsInformationVarargs(value: AttachmentInformation*): Self = StObject.set(x, "AttachmentsInformation", js.Array(value*))
     
-    inline def setCreatedDate(value: DateTime): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: DocumentAuthor): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorUndefined: Self = StObject.set(x, "Author", js.undefined)
+    
+    inline def setCategory(value: CategoryList): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryEnum(value: CategoryEnumList): Self = StObject.set(x, "CategoryEnum", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryEnumUndefined: Self = StObject.set(x, "CategoryEnum", js.undefined)
+    
+    inline def setCategoryEnumVarargs(value: Category*): Self = StObject.set(x, "CategoryEnum", js.Array(value*))
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
+    
+    inline def setCategoryVarargs(value: Category*): Self = StObject.set(x, "Category", js.Array(value*))
+    
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
@@ -142,6 +202,10 @@ object DocumentDescription {
     inline def setDescription(value: DescriptionInDocument): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setDisplayName(value: DocumentDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     inline def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "DocumentFormat", value.asInstanceOf[js.Any])
     
@@ -179,19 +243,33 @@ object DocumentDescription {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: DocumentParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: DocumentParameter*): Self = StObject.set(x, "Parameters", js.Array(value*))
+    
+    inline def setPendingReviewVersion(value: DocumentVersion): Self = StObject.set(x, "PendingReviewVersion", value.asInstanceOf[js.Any])
+    
+    inline def setPendingReviewVersionUndefined: Self = StObject.set(x, "PendingReviewVersion", js.undefined)
     
     inline def setPlatformTypes(value: PlatformTypeList): Self = StObject.set(x, "PlatformTypes", value.asInstanceOf[js.Any])
     
     inline def setPlatformTypesUndefined: Self = StObject.set(x, "PlatformTypes", js.undefined)
     
-    inline def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "PlatformTypes", js.Array(value :_*))
+    inline def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "PlatformTypes", js.Array(value*))
     
     inline def setRequires(value: DocumentRequiresList): Self = StObject.set(x, "Requires", value.asInstanceOf[js.Any])
     
     inline def setRequiresUndefined: Self = StObject.set(x, "Requires", js.undefined)
     
-    inline def setRequiresVarargs(value: DocumentRequires*): Self = StObject.set(x, "Requires", js.Array(value :_*))
+    inline def setRequiresVarargs(value: DocumentRequires*): Self = StObject.set(x, "Requires", js.Array(value*))
+    
+    inline def setReviewInformation(value: ReviewInformationList): Self = StObject.set(x, "ReviewInformation", value.asInstanceOf[js.Any])
+    
+    inline def setReviewInformationUndefined: Self = StObject.set(x, "ReviewInformation", js.undefined)
+    
+    inline def setReviewInformationVarargs(value: ReviewInformation*): Self = StObject.set(x, "ReviewInformation", js.Array(value*))
+    
+    inline def setReviewStatus(value: ReviewStatus): Self = StObject.set(x, "ReviewStatus", value.asInstanceOf[js.Any])
+    
+    inline def setReviewStatusUndefined: Self = StObject.set(x, "ReviewStatus", js.undefined)
     
     inline def setSchemaVersion(value: DocumentSchemaVersion): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
@@ -213,7 +291,7 @@ object DocumentDescription {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     

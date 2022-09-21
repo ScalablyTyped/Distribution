@@ -10,8 +10,8 @@ object checkboxMod {
   
   @JSImport("muicss/lib/react/checkbox", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CheckboxProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CheckboxProps, js.Object, Any]
   
-  type Checkbox = Component[CheckboxProps, js.Object, js.Any]
+  type Checkbox = Component[CheckboxProps, js.Object, Any]
 }

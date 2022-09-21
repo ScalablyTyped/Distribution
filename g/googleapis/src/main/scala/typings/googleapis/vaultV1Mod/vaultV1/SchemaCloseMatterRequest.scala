@@ -4,7 +4,4 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Close a matter by ID.
-  */
 trait SchemaCloseMatterRequest extends StObject

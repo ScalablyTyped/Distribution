@@ -22,7 +22,7 @@ object swipeMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Swipe {
     def this(properties: SwipeProperties) = this()

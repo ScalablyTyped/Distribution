@@ -72,17 +72,14 @@ trait NumberSchema
     */
   def precision(limit: Double): this.type = js.native
   
-  @JSName("sign")
-  def sign_negative(sign: negative): this.type = js.native
   /**
     * Requires the number to be negative or positive.
     */
-  @JSName("sign")
-  def sign_positive(sign: positive): this.type = js.native
+  def sign(sign: positive | negative): this.type = js.native
   
   /**
     * Allows the number to be outside of JavaScript's safety range (Number.MIN_SAFE_INTEGER & Number.MAX_SAFE_INTEGER).
     */
   def unsafe(): this.type = js.native
-  def unsafe(enabled: js.Any): this.type = js.native
+  def unsafe(enabled: Any): this.type = js.native
 }

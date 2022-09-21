@@ -9,7 +9,7 @@ trait ServerEvent extends StObject {
   /**
     * The time when the event occurred. 
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon S3 URL of the event's log file.
@@ -35,7 +35,7 @@ object ServerEvent {
   
   extension [Self <: ServerEvent](x: Self) {
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     

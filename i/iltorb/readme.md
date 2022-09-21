@@ -10,10 +10,10 @@ Brotli compression/decompression with native bindings
 | ------------------ | :-------------: |
 | Full name          | iltorb |
 | Keywords           | brotli, compression, decompression |
-| # releases         | 5 |
-| # dependents       | 74 |
-| # downloads        | 12201872 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1268406.3333333333 |
+| # stars            | 168.0 |
 
 ## Links
 - [Homepage](https://github.com/nstepien/iltorb)

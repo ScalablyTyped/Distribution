@@ -8,6 +8,16 @@ trait MotionPullUpProps
   extends StObject
      with MotionProps {
   
+  /**
+    * @language zh-CN
+    * @description 下拉的高度
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Height of pull down
+    * @defaultValue undefined
+    */
   var dropHeight: js.UndefOr[Double] = js.undefined
 }
 object MotionPullUpProps {

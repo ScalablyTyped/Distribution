@@ -10,10 +10,10 @@ object floatingActionButtonMod {
   
   @JSImport("material-ui/FloatingActionButton", JSImport.Default)
   @js.native
-  class default () extends FloatingActionButton
+  open class default () extends FloatingActionButton
   
   @JSImport("material-ui/FloatingActionButton", "FloatingActionButton")
   @js.native
-  class FloatingActionButton ()
-    extends Component[FloatingActionButtonProps, js.Object, js.Any]
+  open class FloatingActionButton ()
+    extends Component[FloatingActionButtonProps, js.Object, Any]
 }

@@ -31,6 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait `0` extends StObject {
+    
+    var disableWarnings: js.UndefOr[Boolean] = js.undefined
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`0`]
+    }
+    
+    extension [Self <: `0`](x: Self) {
+      
+      inline def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
+      
+      inline def setDisableWarningsUndefined: Self = StObject.set(x, "disableWarnings", js.undefined)
+    }
+  }
+  
   trait BundleId extends StObject {
     
     var bundleId: String
@@ -83,7 +102,7 @@ object anon {
     var RecaptchaVerifier: Instantiable0[typings.firebaseAuthTypes.mod.RecaptchaVerifier] = js.native
     
     var RecaptchaVerifier_Instance: Instantiable3[
-        /* container */ js.Any | String, 
+        /* container */ Any | String, 
         /* parameters */ js.UndefOr[js.Object | Null], 
         /* app */ js.UndefOr[typings.firebaseAppTypes.mod.FirebaseApp | Null], 
         RecaptchaVerifierInstance
@@ -94,6 +113,23 @@ object anon {
     var TwitterAuthProvider: TypeofTwitterAuthProvider = js.native
     
     var TwitterAuthProvider_Instance: Instantiable0[TwitterAuthProviderInstance] = js.native
+  }
+  
+  trait DisableWarnings extends StObject {
+    
+    val disableWarnings: Boolean
+  }
+  object DisableWarnings {
+    
+    inline def apply(disableWarnings: Boolean): DisableWarnings = {
+      val __obj = js.Dynamic.literal(disableWarnings = disableWarnings.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DisableWarnings]
+    }
+    
+    extension [Self <: DisableWarnings](x: Self) {
+      
+      inline def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
+    }
   }
   
   trait DisplayName extends StObject {

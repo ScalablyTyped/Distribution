@@ -84,20 +84,20 @@ object migrationBuilderMod {
   
   @JSImport("node-pg-migrate/dist/migration-builder", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with MigrationBuilderImpl {
     def this(db: DB, typeShorthands: Unit, shouldDecamelize: Boolean, logger: Logger) = this()
     def this(db: DB, typeShorthands: ColumnDefinitions, shouldDecamelize: Boolean, logger: Logger) = this()
     
     /* private */ /* CompleteClass */
-    var _REVERSE_MODE: js.Any = js.native
+    var _REVERSE_MODE: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _steps: js.Any = js.native
+    var _steps: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _useTransaction: js.Any = js.native
+    var _useTransaction: Any = js.native
     
     /* CompleteClass */
     override def addColumn(
@@ -510,11 +510,11 @@ object migrationBuilderMod {
     extends StObject
        with MigrationBuilder {
     
-    /* private */ var _REVERSE_MODE: js.Any
+    /* private */ var _REVERSE_MODE: Any
     
-    /* private */ var _steps: js.Any
+    /* private */ var _steps: Any
     
-    /* private */ var _useTransaction: js.Any
+    /* private */ var _useTransaction: Any
     
     def enableReverseMode(): this.type
     
@@ -527,9 +527,9 @@ object migrationBuilderMod {
   object MigrationBuilderImpl {
     
     inline def apply(
-      _REVERSE_MODE: js.Any,
-      _steps: js.Any,
-      _useTransaction: js.Any,
+      _REVERSE_MODE: Any,
+      _steps: Any,
+      _useTransaction: Any,
       addColumn: Parameters[AddColumns] => Unit,
       addColumns: Parameters[AddColumns] => Unit,
       addConstraint: Parameters[CreateConstraint] => Unit,
@@ -629,11 +629,11 @@ object migrationBuilderMod {
       
       inline def setIsUsingTransaction(value: () => Boolean): Self = StObject.set(x, "isUsingTransaction", js.Any.fromFunction0(value))
       
-      inline def set_REVERSE_MODE(value: js.Any): Self = StObject.set(x, "_REVERSE_MODE", value.asInstanceOf[js.Any])
+      inline def set_REVERSE_MODE(value: Any): Self = StObject.set(x, "_REVERSE_MODE", value.asInstanceOf[js.Any])
       
-      inline def set_steps(value: js.Any): Self = StObject.set(x, "_steps", value.asInstanceOf[js.Any])
+      inline def set_steps(value: Any): Self = StObject.set(x, "_steps", value.asInstanceOf[js.Any])
       
-      inline def set_useTransaction(value: js.Any): Self = StObject.set(x, "_useTransaction", value.asInstanceOf[js.Any])
+      inline def set_useTransaction(value: Any): Self = StObject.set(x, "_useTransaction", value.asInstanceOf[js.Any])
     }
   }
 }

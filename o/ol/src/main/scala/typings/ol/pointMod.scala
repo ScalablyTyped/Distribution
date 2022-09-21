@@ -10,7 +10,7 @@ object pointMod {
   
   @JSImport("ol/geom/Point", JSImport.Default)
   @js.native
-  class default protected () extends Point {
+  open class default protected () extends Point {
     def this(coordinates: Coordinate) = this()
     def this(coordinates: Coordinate, opt_layout: GeometryLayout) = this()
   }

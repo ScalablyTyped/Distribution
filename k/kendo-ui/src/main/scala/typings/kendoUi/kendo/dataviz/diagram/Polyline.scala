@@ -14,8 +14,8 @@ trait Polyline
   
   var options: PolylineOptions = js.native
   
-  def points(): js.Any = js.native
-  def points(points: js.Any): Unit = js.native
+  def points(): Any = js.native
+  def points(points: Any): Unit = js.native
   
   def visible(): Boolean = js.native
   def visible(visible: Boolean): Unit = js.native

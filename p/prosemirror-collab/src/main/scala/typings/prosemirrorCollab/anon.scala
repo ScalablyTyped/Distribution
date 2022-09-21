@@ -1,6 +1,5 @@
 package typings.prosemirrorCollab
 
-import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorState.mod.Transaction
 import typings.prosemirrorTransform.mod.Step
 import org.scalablytyped.runtime.StObject
@@ -57,39 +56,34 @@ object anon {
     }
   }
   
-  trait Origins[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  trait Origins extends StObject {
     
     var clientID: Double | String
     
-    var origins: js.Array[Transaction[S]]
+    var origins: js.Array[Transaction]
     
-    var steps: js.Array[Step[S]]
+    var steps: js.Array[Step]
     
     var version: Double
   }
   object Origins {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](
-      clientID: Double | String,
-      origins: js.Array[Transaction[S]],
-      steps: js.Array[Step[S]],
-      version: Double
-    ): Origins[S] = {
+    inline def apply(clientID: Double | String, origins: js.Array[Transaction], steps: js.Array[Step], version: Double): Origins = {
       val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Origins[S]]
+      __obj.asInstanceOf[Origins]
     }
     
-    extension [Self <: Origins[?], S /* <: Schema[js.Any, js.Any] */](x: Self & Origins[S]) {
+    extension [Self <: Origins](x: Self) {
       
       inline def setClientID(value: Double | String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
-      inline def setOrigins(value: js.Array[Transaction[S]]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+      inline def setOrigins(value: js.Array[Transaction]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
-      inline def setOriginsVarargs(value: Transaction[S]*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setOriginsVarargs(value: Transaction*): Self = StObject.set(x, "origins", js.Array(value*))
       
-      inline def setSteps(value: js.Array[Step[S]]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      inline def setStepsVarargs(value: Step[S]*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

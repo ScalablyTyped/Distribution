@@ -21,21 +21,21 @@ trait OGCFeatureLayerElevationInfo
      with Object {
   
   /**
-    * This object contains information about setting a custom z-value on the feature.
+    * Defines how to override a feature's Z-value based on its attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#elevationInfo)
     */
   var featureExpressionInfo: js.UndefOr[OGCFeatureLayerElevationInfoFeatureExpressionInfo] = js.undefined
   
   /**
-    * Defines how the graphic is placed with respect to the terrain surface.
+    * Defines how the feature is placed with respect to the terrain surface or 3D objects in the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#elevationInfo)
     */
   var mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`
   
   /**
-    * An elevation offset, which is added to the vertical position of the graphic.
+    * An elevation offset, which is added to the vertical position of the feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#elevationInfo)
     */

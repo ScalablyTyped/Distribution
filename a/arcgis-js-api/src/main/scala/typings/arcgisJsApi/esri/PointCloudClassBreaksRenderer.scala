@@ -5,7 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`high-four-bit`
 import typings.arcgisJsApi.arcgisJsApiStrings.`low-four-bit`
 import typings.arcgisJsApi.arcgisJsApiStrings.`modulo-ten`
 import typings.arcgisJsApi.arcgisJsApiStrings.`point-cloud-class-breaks`
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,9 +34,11 @@ trait PointCloudClassBreaksRenderer
   /**
     * A transform that is applied to the field value before evaluating the renderer.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#fieldTransformType)
     */
-  var fieldTransformType: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten` = js.native
+  var fieldTransformType: none_ | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten` = js.native
   
   /**
     * An object providing options for displaying the renderer in the Legend.

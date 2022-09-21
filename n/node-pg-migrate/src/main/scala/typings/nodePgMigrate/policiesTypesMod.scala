@@ -99,7 +99,7 @@ object policiesTypesMod {
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      inline def setRoleVarargs(value: String*): Self = StObject.set(x, "role", js.Array(value :_*))
+      inline def setRoleVarargs(value: String*): Self = StObject.set(x, "role", js.Array(value*))
       
       inline def setUsing(value: String): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
       

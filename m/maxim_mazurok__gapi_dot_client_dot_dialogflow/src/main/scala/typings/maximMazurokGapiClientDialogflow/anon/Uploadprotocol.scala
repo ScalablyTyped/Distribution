@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDialogflow.anon
 
+import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3StartExperimentRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ trait Uploadprotocol extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The unique identifier of the fulfillment. Format: `projects//agent/fulfillment`. */
+  /** Required. Resource name of the experiment to start. Format: `projects//locations//agents//environments//experiments/`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -37,8 +38,8 @@ trait Uploadprotocol extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Required. The mask to control which fields get updated. If the mask is not present, all fields will be updated. */
-  var updateMask: js.UndefOr[String] = js.undefined
+  /** Request body */
+  var resource: GoogleCloudDialogflowCxV3StartExperimentRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -48,8 +49,8 @@ trait Uploadprotocol extends StObject {
 }
 object Uploadprotocol {
   
-  inline def apply(name: String): Uploadprotocol = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: GoogleCloudDialogflowCxV3StartExperimentRequest): Uploadprotocol = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uploadprotocol]
   }
   
@@ -93,9 +94,7 @@ object Uploadprotocol {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setResource(value: GoogleCloudDialogflowCxV3StartExperimentRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

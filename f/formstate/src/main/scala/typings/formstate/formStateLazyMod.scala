@@ -12,7 +12,7 @@ object formStateLazyMod {
   
   @JSImport("formstate/lib/core/formStateLazy", "FormStateLazy")
   @js.native
-  class FormStateLazy[TValue /* <: ValidatableArray */] protected ()
+  open class FormStateLazy[TValue /* <: ValidatableArray */] protected ()
     extends StObject
        with Validatable[TValue] {
     def this(/** It is a function as fields can change over time */
@@ -90,5 +90,5 @@ object formStateLazyMod {
     def validators(validators: Validator[TValue]*): this.type = js.native
   }
   
-  type ValidatableArray = js.Array[Validatable[js.Any]]
+  type ValidatableArray = js.Array[Validatable[Any]]
 }

@@ -14,7 +14,7 @@ trait DynamicRouteConfig extends StObject {
   var routeConfig: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicRouteConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicRouteConfig & TopLevel[Any]
   ] = js.undefined
   
   /** This is the per-resource version information. This version is currently taken from the :ref:`version_info ` field at the time that the route configuration was loaded. */
@@ -36,7 +36,7 @@ object DynamicRouteConfig {
     inline def setRouteConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicRouteConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicRouteConfig & TopLevel[Any]
     ): Self = StObject.set(x, "routeConfig", value.asInstanceOf[js.Any])
     
     inline def setRouteConfigUndefined: Self = StObject.set(x, "routeConfig", js.undefined)

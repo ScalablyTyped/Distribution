@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumericMenuProvided extends StObject {
   
   /** a function to generate a URL for the corresponding search state */
-  def createURL(args: js.Any*): js.Any
+  def createURL(args: Any*): Any
   
   /**
     * the refinement currently applied. follow the shape of a string with a pattern of '{start}:{end}' which corresponds to the current selected item.
@@ -21,15 +21,15 @@ trait NumericMenuProvided extends StObject {
   var items: js.Array[IsRefined]
   
   /** a function to select a range. */
-  def refine(args: js.Any*): js.Any
+  def refine(args: Any*): Any
 }
 object NumericMenuProvided {
   
   inline def apply(
-    createURL: /* repeated */ js.Any => js.Any,
+    createURL: /* repeated */ Any => Any,
     currentRefinement: String,
     items: js.Array[IsRefined],
-    refine: /* repeated */ js.Any => js.Any
+    refine: /* repeated */ Any => Any
   ): NumericMenuProvided = {
     val __obj = js.Dynamic.literal(createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], refine = js.Any.fromFunction1(refine))
     __obj.asInstanceOf[NumericMenuProvided]
@@ -37,14 +37,14 @@ object NumericMenuProvided {
   
   extension [Self <: NumericMenuProvided](x: Self) {
     
-    inline def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    inline def setCreateURL(value: /* repeated */ Any => Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
     inline def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     
     inline def setItems(value: js.Array[IsRefined]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: IsRefined*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IsRefined*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    inline def setRefine(value: /* repeated */ Any => Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
   }
 }

@@ -11,4 +11,5 @@ object nearestMod {
   val ^ : js.Any = js.native
   
   inline def nearest(value: Double, min: Double, max: Double, steps: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("nearest")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def nearest(value: Double, min: Double, max: Double, steps: Double, range: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("nearest")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], steps.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

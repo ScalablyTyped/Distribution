@@ -10,7 +10,7 @@ trait IgSchedulerAgendaViewSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets the number of days shown in AgendaView mode.

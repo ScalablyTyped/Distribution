@@ -9,7 +9,7 @@ trait GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata e
   /** Timestamp when generate report request was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** The name of the dataset for which the analysis report is generated. Format: "projects/∗/datasets/ *" */
+  /** The name of the dataset for which the analysis report is generated. Format: "projects/ *‍/datasets/ *" */
   var dataset: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata {

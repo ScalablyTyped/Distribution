@@ -10,18 +10,18 @@ object ntlmsecurityMod {
   
   @JSImport("soap/lib/security/NTLMSecurity", "NTLMSecurity")
   @js.native
-  class NTLMSecurity protected ()
+  open class NTLMSecurity protected ()
     extends StObject
        with ISecurity {
-    def this(defaults: js.Any) = this()
+    def this(defaults: Any) = this()
     
     @JSName("addHeaders")
     def addHeaders_MNTLMSecurity(headers: IHeaders): Unit = js.native
     
     @JSName("addOptions")
-    def addOptions_MNTLMSecurity(options: js.Any): Unit = js.native
+    def addOptions_MNTLMSecurity(options: Any): Unit = js.native
     
-    /* private */ var defaults: js.Any = js.native
+    /* private */ var defaults: Any = js.native
     
     @JSName("toXML")
     def toXML_MNTLMSecurity(): String = js.native

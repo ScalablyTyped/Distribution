@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SizeSliderViewModelConstructor
   extends StObject
-     with Instantiable0[SizeSliderViewModel]
+     with /**
+  * Provides the logic for the [SizeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider-SizeSliderViewModel.html)
+  */
+Instantiable0[SizeSliderViewModel]
      with Instantiable1[/* properties */ SizeSliderViewModelProperties, SizeSliderViewModel]

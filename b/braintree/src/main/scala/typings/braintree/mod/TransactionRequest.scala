@@ -24,7 +24,7 @@ trait TransactionRequest extends StObject {
   
   var creditCard: js.UndefOr[Cvv] = js.undefined
   
-  var customFields: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var customFields: js.UndefOr[Record[String, Any]] = js.undefined
   
   var customer: js.UndefOr[Email] = js.undefined
   
@@ -114,7 +114,7 @@ object TransactionRequest {
     
     inline def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
     
-    inline def setCustomFields(value: Record[String, js.Any]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: Record[String, Any]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
@@ -150,7 +150,7 @@ object TransactionRequest {
     
     inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    inline def setLineItemsVarargs(value: TransactionLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: TransactionLineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
     
     inline def setMerchantAccountId(value: String): Self = StObject.set(x, "merchantAccountId", value.asInstanceOf[js.Any])
     

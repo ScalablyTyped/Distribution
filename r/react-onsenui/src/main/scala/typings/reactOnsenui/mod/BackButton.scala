@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "BackButton")
 @js.native
-class BackButton protected ()
-  extends Component[OnClick, js.Any] {
+open class BackButton protected () extends Component[OnClick, Any] {
   def this(props: HTMLAttributesidclassName & OnClick) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & OnClick, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & OnClick, context: Any) = this()
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-concat" : "1.0.2"
+      "it-concat" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "it-concat" : "1.0.2"
+      "it-concat" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

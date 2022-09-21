@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // -----------------------------------
 @JSGlobal("photonui.Color")
 @js.native
-class Color ()
+open class Color ()
   extends StObject
      with typings.photonui.photonui.Color {
   def this(color: String) = this()
-  def this(params: StringDictionary[js.Any]) = this()
+  def this(params: StringDictionary[Any]) = this()
   
   /* CompleteClass */
   var alpha: Double = js.native
@@ -46,7 +46,7 @@ class Color ()
   var red: Double = js.native
   
   /* CompleteClass */
-  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: js.Any): Unit = js.native
+  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: Any): Unit = js.native
   
   /* CompleteClass */
   override def removeCallback(id: String): Unit = js.native

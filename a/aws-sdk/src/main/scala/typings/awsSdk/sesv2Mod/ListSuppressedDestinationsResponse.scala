@@ -33,6 +33,6 @@ object ListSuppressedDestinationsResponse {
     
     inline def setSuppressedDestinationSummariesUndefined: Self = StObject.set(x, "SuppressedDestinationSummaries", js.undefined)
     
-    inline def setSuppressedDestinationSummariesVarargs(value: SuppressedDestinationSummary*): Self = StObject.set(x, "SuppressedDestinationSummaries", js.Array(value :_*))
+    inline def setSuppressedDestinationSummariesVarargs(value: SuppressedDestinationSummary*): Self = StObject.set(x, "SuppressedDestinationSummaries", js.Array(value*))
   }
 }

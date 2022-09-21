@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-min-delay" : "3.1.0"
+      "p-min-delay" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "p-min-delay" : "3.1.0"
+      "p-min-delay" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

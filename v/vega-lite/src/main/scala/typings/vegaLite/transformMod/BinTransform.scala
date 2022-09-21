@@ -39,7 +39,7 @@ object BinTransform {
     
     inline def setAs(value: FieldName | js.Array[FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    inline def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value*))
     
     inline def setBin(value: `true` | BinParams): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     

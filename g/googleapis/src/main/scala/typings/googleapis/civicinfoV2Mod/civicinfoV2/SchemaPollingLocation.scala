@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A location where a voter can vote. This may be an early vote site, an
-  * election day voting location, or a drop off location for a completed
-  * ballot.
-  */
 trait SchemaPollingLocation extends StObject {
   
   /**
@@ -17,67 +12,49 @@ trait SchemaPollingLocation extends StObject {
   var address: js.UndefOr[SchemaSimpleAddressType] = js.undefined
   
   /**
-    * The last date that this early vote site or drop off location may be used.
-    * This field is not populated for polling locations.
+    * The last date that this early vote site or drop off location may be used. This field is not populated for polling locations.
     */
-  var endDate: js.UndefOr[String] = js.undefined
+  var endDate: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An ID for this object. IDs may change in future requests and should not
-    * be cached. Access to this field requires special access that can be
-    * requested from the Request more link on the Quotas page.
+    * Latitude of the location, in degrees north of the equator. Note this field may not be available for some locations.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var latitude: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Latitude of the location, in degrees north of the equator. Only some
-    * locations -- generally, ballot drop boxes for vote-by-mail elections --
-    * will have this set; for others, use a geocoding service like the Google
-    * Maps API to resolve the address to a geographic point.
+    * Longitude of the location, in degrees east of the Prime Meridian. Note this field may not be available for some locations.
     */
-  var latitude: js.UndefOr[Double] = js.undefined
+  var longitude: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Longitude of the location, in degrees east of the Prime Meridian. Only
-    * some locations -- generally, ballot drop boxes for vote-by-mail elections
-    * -- will have this set; for others, use a geocoding service like the
-    * Google Maps API to resolve the address to a geographic point.
+    * The name of the early vote site or drop off location. This field is not populated for polling locations.
     */
-  var longitude: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * The name of the early vote site or drop off location. This field is not
-    * populated for polling locations.
-    */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Notes about this location (e.g. accessibility ramp or entrance to use).
     */
-  var notes: js.UndefOr[String] = js.undefined
+  var notes: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A description of when this location is open.
     */
-  var pollingHours: js.UndefOr[String] = js.undefined
+  var pollingHours: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A list of sources for this location. If multiple sources are listed the
-    * data has been aggregated from those sources.
+    * A list of sources for this location. If multiple sources are listed the data has been aggregated from those sources.
     */
   var sources: js.UndefOr[js.Array[SchemaSource]] = js.undefined
   
   /**
-    * The first date that this early vote site or drop off location may be
-    * used. This field is not populated for polling locations.
+    * The first date that this early vote site or drop off location may be used. This field is not populated for polling locations.
     */
-  var startDate: js.UndefOr[String] = js.undefined
+  var startDate: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The services provided by this early vote site or drop off location. This
-    * field is not populated for polling locations.
+    * The services provided by this early vote site or drop off location. This field is not populated for polling locations.
     */
-  var voterServices: js.UndefOr[String] = js.undefined
+  var voterServices: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPollingLocation {
   
@@ -94,29 +71,37 @@ object SchemaPollingLocation {
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
+    inline def setEndDateNull: Self = StObject.set(x, "endDate", null)
+    
     inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    
+    inline def setLatitudeNull: Self = StObject.set(x, "latitude", null)
     
     inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
     inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
+    inline def setLongitudeNull: Self = StObject.set(x, "longitude", null)
+    
     inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
+    inline def setNotesNull: Self = StObject.set(x, "notes", null)
+    
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     inline def setPollingHours(value: String): Self = StObject.set(x, "pollingHours", value.asInstanceOf[js.Any])
+    
+    inline def setPollingHoursNull: Self = StObject.set(x, "pollingHours", null)
     
     inline def setPollingHoursUndefined: Self = StObject.set(x, "pollingHours", js.undefined)
     
@@ -124,13 +109,17 @@ object SchemaPollingLocation {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SchemaSource*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    
+    inline def setStartDateNull: Self = StObject.set(x, "startDate", null)
     
     inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     inline def setVoterServices(value: String): Self = StObject.set(x, "voterServices", value.asInstanceOf[js.Any])
+    
+    inline def setVoterServicesNull: Self = StObject.set(x, "voterServices", null)
     
     inline def setVoterServicesUndefined: Self = StObject.set(x, "voterServices", js.undefined)
   }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "djb2a" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "djb2a" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

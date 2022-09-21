@@ -8,7 +8,7 @@ trait ApiModel extends StObject {
   
   var documentation: js.UndefOr[java.lang.String] = js.undefined
   
-  var metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any
+  var metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ Any
   
   var operations: OperationMap
   
@@ -17,7 +17,7 @@ trait ApiModel extends StObject {
 object ApiModel {
   
   inline def apply(
-    metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any,
+    metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ Any,
     operations: OperationMap,
     shapes: ShapeMap
   ): ApiModel = {
@@ -32,7 +32,7 @@ object ApiModel {
     inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     inline def setMetadata(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ Any
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setOperations(value: OperationMap): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])

@@ -25,7 +25,7 @@ object XReferenceResolvedListener {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     referenceResolved: Double => Unit,
     release: () => Unit
   ): XReferenceResolvedListener = {

@@ -29,7 +29,7 @@ trait Cluster extends StObject {
   /**
     * The date and time when the cluster was created.
     */
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreateTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of HSM that the cluster contains.
@@ -106,7 +106,7 @@ object Cluster {
     
     inline def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
-    inline def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreateTimestamp(value: js.Date): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
@@ -118,7 +118,7 @@ object Cluster {
     
     inline def setHsmsUndefined: Self = StObject.set(x, "Hsms", js.undefined)
     
-    inline def setHsmsVarargs(value: Hsm*): Self = StObject.set(x, "Hsms", js.Array(value :_*))
+    inline def setHsmsVarargs(value: Hsm*): Self = StObject.set(x, "Hsms", js.Array(value*))
     
     inline def setPreCoPassword(value: PreCoPassword): Self = StObject.set(x, "PreCoPassword", value.asInstanceOf[js.Any])
     
@@ -148,7 +148,7 @@ object Cluster {
     
     inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
     
     inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

@@ -59,13 +59,13 @@ object NetworkReportSpec {
     
     inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    inline def setDimensionFiltersVarargs(value: NetworkReportSpecDimensionFilter*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: NetworkReportSpecDimensionFilter*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
     
     inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setLocalizationSettings(value: LocalizationSettings): Self = StObject.set(x, "localizationSettings", value.asInstanceOf[js.Any])
     
@@ -79,13 +79,13 @@ object NetworkReportSpec {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setSortConditions(value: js.Array[NetworkReportSpecSortCondition]): Self = StObject.set(x, "sortConditions", value.asInstanceOf[js.Any])
     
     inline def setSortConditionsUndefined: Self = StObject.set(x, "sortConditions", js.undefined)
     
-    inline def setSortConditionsVarargs(value: NetworkReportSpecSortCondition*): Self = StObject.set(x, "sortConditions", js.Array(value :_*))
+    inline def setSortConditionsVarargs(value: NetworkReportSpecSortCondition*): Self = StObject.set(x, "sortConditions", js.Array(value*))
     
     inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     

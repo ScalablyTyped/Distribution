@@ -11,14 +11,11 @@ Converts a source-map from/to  different formats and allows adding/changing prop
 | Full name          | convert-source-map |
 | Keywords           | convert, sourcemap, source, map, browser, debug |
 | # releases         | 2 |
-| # dependents       | 591 |
-| # downloads        | 942728217 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.35471292E8 |
+| # stars            | 145.0 |
 
 ## Links
-- [Homepage](https://github.com/thlorenz/convert-source-map)
-- [Bugs](https://github.com/thlorenz/convert-source-map/issues)
-- [Repository](https://github.com/thlorenz/convert-source-map)
 - [Npm](https://www.npmjs.com/package/convert-source-map)
     
 

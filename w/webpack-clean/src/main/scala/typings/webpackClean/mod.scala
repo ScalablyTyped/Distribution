@@ -1,6 +1,6 @@
 package typings.webpackClean
 
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +10,10 @@ object mod {
   /**
     * A webpack plugin to clean specified files after build
     */
-  @JSImport("webpack-clean", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("webpack-clean", JSImport.Namespace)
   @js.native
-  class ^ protected ()
-    extends StObject
-       with Plugin {
+  open class ^ protected () extends StObject {
     /**
       * @param files  array of files or string for a single file relative to the basePath
       * or to the context of your config (if the basePath param is not specified)

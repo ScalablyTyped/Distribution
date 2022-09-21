@@ -33,6 +33,6 @@ object ValidationWarning {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: validationMessage*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: validationMessage*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

@@ -67,7 +67,7 @@ trait DBEngine extends StObject {
   
   val DefaultUser: String = js.native
   
-  def Errors(Item: js.Any): Error = js.native
+  def Errors(Item: Any): Error = js.native
   @JSName("Errors")
   val Errors_Original: Errors = js.native
   
@@ -122,7 +122,7 @@ trait DBEngine extends StObject {
   
   def Rollback(): Unit = js.native
   
-  def SetOption(Option: SetOptionEnum, Value: js.Any): Unit = js.native
+  def SetOption(Option: SetOptionEnum, Value: Any): Unit = js.native
   
   var SystemDB: String = js.native
   

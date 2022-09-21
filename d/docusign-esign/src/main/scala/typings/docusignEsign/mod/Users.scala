@@ -268,7 +268,7 @@ object Users {
     
     inline def setConnectConfigurationsUndefined: Self = StObject.set(x, "connectConfigurations", js.undefined)
     
-    inline def setConnectConfigurationsVarargs(value: ConnectUserObject*): Self = StObject.set(x, "connectConfigurations", js.Array(value :_*))
+    inline def setConnectConfigurationsVarargs(value: ConnectUserObject*): Self = StObject.set(x, "connectConfigurations", js.Array(value*))
     
     inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
@@ -288,7 +288,7 @@ object Users {
     
     inline def setCustomSettingsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "customSettings", js.Array(value :_*))
+    ): Self = StObject.set(x, "customSettings", js.Array(value*))
     
     inline def setDefaultAccountId(value: String): Self = StObject.set(x, "defaultAccountId", value.asInstanceOf[js.Any])
     
@@ -322,7 +322,7 @@ object Users {
     
     inline def setGroupListUndefined: Self = StObject.set(x, "groupList", js.undefined)
     
-    inline def setGroupListVarargs(value: (/* This object contains information about a group. */ Group)*): Self = StObject.set(x, "groupList", js.Array(value :_*))
+    inline def setGroupListVarargs(value: (/* This object contains information about a group. */ Group)*): Self = StObject.set(x, "groupList", js.Array(value*))
     
     inline def setHomeAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "homeAddress", value.asInstanceOf[js.Any])
     

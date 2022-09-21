@@ -1,9 +1,5 @@
 package typings.googleapis.v21Mod.contentV21
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,12 @@ trait ParamsResourceAccountsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * If view is set to "css", only return accounts that are assigned label with given ID.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of accounts to return in the response, used for
-    * paging.
+    * The maximum number of accounts to return in the response, used for paging.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
@@ -29,9 +24,19 @@ trait ParamsResourceAccountsList
   var merchantId: js.UndefOr[String] = js.undefined
   
   /**
+    * If set, only the accounts with the given name (case sensitive) will be returned.
+    */
+  var name: js.UndefOr[String] = js.undefined
+  
+  /**
     * The token returned by the previous request.
     */
   var pageToken: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Controls which fields will be populated. Acceptable values are: "merchant" and "css". The default value is "merchant".
+    */
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAccountsList {
   
@@ -42,9 +47,9 @@ object ParamsResourceAccountsList {
   
   extension [Self <: ParamsResourceAccountsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -54,8 +59,16 @@ object ParamsResourceAccountsList {
     
     inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

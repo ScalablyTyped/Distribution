@@ -28,7 +28,7 @@ object RegionInstanceGroupManagersListInstancesResponse {
     
     inline def setManagedInstancesUndefined: Self = StObject.set(x, "managedInstances", js.undefined)
     
-    inline def setManagedInstancesVarargs(value: ManagedInstance*): Self = StObject.set(x, "managedInstances", js.Array(value :_*))
+    inline def setManagedInstancesVarargs(value: ManagedInstance*): Self = StObject.set(x, "managedInstances", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

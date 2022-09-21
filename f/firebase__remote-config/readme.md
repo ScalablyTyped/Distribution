@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__remote-config
 
-Typings are for version 0.1.30
+Typings are for version 0.3.11
 
 ## Library description:
 The Remote Config package of the Firebase JS SDK
@@ -10,10 +10,10 @@ The Remote Config package of the Firebase JS SDK
 | ------------------ | :-------------: |
 | Full name          | @firebase/remote-config |
 | Keywords           | - |
-| # releases         | 1000 |
-| # dependents       | 7 |
-| # downloads        | 26544983 |
-| # stars            | 0 |
+| # releases         | 1243 |
+| # dependents       | 0.0 |
+| # downloads        | 5110103.0 |
+| # stars            | 4194.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

@@ -31,7 +31,7 @@ trait FetchResult extends StObject {
     *
     * One any contains the data of one whole row. Those methods which use this struct have to specify, what the any has to contain.
     */
-  var Rows: SafeArray[js.Any]
+  var Rows: SafeArray[Any]
   
   /**
     * indicates the index of the first row contained in {@link FetchResult.Rows} in the original result set. So if {@link FetchResult.StartIndex} equals `3`
@@ -43,7 +43,7 @@ trait FetchResult extends StObject {
 }
 object FetchResult {
   
-  inline def apply(FetchError: Double, Orientation: Boolean, Rows: SafeArray[js.Any], StartIndex: Double): FetchResult = {
+  inline def apply(FetchError: Double, Orientation: Boolean, Rows: SafeArray[Any], StartIndex: Double): FetchResult = {
     val __obj = js.Dynamic.literal(FetchError = FetchError.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], Rows = Rows.asInstanceOf[js.Any], StartIndex = StartIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchResult]
   }
@@ -54,7 +54,7 @@ object FetchResult {
     
     inline def setOrientation(value: Boolean): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    inline def setRows(value: SafeArray[js.Any]): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: SafeArray[Any]): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
     inline def setStartIndex(value: Double): Self = StObject.set(x, "StartIndex", value.asInstanceOf[js.Any])
   }

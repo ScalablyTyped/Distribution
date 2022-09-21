@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -26,9 +26,9 @@ trait TextRange
   var context_TextRange: RequestContext = js.native
   
   /**
+    * Returns a `ShapeFont` object that represents the font attributes for the text range.
     *
-    * Returns a ShapeFont object that represents the font attributes for the text range.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val font: ShapeFont = js.native
@@ -36,6 +36,7 @@ trait TextRange
   /**
     * Returns a TextRange object for the substring in the given range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param start The zero-based index of the first character to get from the text range.
@@ -55,14 +56,8 @@ trait TextRange
   def load(propertyNames: String): TextRange = js.native
   def load(propertyNames: js.Array[String]): TextRange = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.TextRange): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -72,9 +67,9 @@ trait TextRange
   def set(properties: TextRange): Unit = js.native
   
   /**
-    *
     * Represents the plain text content of the text range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var text: String = js.native

@@ -10,15 +10,12 @@ Tomorrow's ECMAScript modules today!
 | ------------------ | :-------------: |
 | Full name          | esm |
 | Keywords           | commonjs, ecmascript, export, import, modules, node, require |
-| # releases         | 32 |
-| # dependents       | 2042 |
-| # downloads        | 55442163 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8933835.333333334 |
+| # stars            | 5168.0 |
 
 ## Links
-- [Homepage](https://github.com/standard-things/esm#readme)
-- [Bugs](https://github.com/standard-things/esm/issues)
-- [Repository](https://github.com/standard-things/esm)
 - [Npm](https://www.npmjs.com/package/esm)
     
 

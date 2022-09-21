@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogCustomAttributeDefinition")
 @js.native
-class CatalogCustomAttributeDefinition () extends StObject {
+open class CatalogCustomAttributeDefinition () extends StObject {
   
   /**
     * The set of Catalog Object Types that this Custom Attribute may be applied to.

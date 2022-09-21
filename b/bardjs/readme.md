@@ -10,10 +10,10 @@ Spec helpers for testing angular v.1.x apps with Mocha, Jasmine or QUnit
 | ------------------ | :-------------: |
 | Full name          | bardjs |
 | Keywords           | angular, mocha, chai, mocks, testing, client-side |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 84667 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4606.0 |
+| # stars            | 176.0 |
 
 ## Links
 - [Homepage](https://github.com/wardbell/bardjs)

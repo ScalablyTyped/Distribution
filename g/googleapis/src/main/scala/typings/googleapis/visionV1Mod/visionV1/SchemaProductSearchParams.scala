@@ -4,40 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Parameters for a product search request.
-  */
 trait SchemaProductSearchParams extends StObject {
   
   /**
-    * The bounding polygon around the area of interest in the image. Optional.
-    * If it is not specified, system discretion will be applied.
+    * The bounding polygon around the area of interest in the image. If it is not specified, system discretion will be applied.
     */
   var boundingPoly: js.UndefOr[SchemaBoundingPoly] = js.undefined
   
   /**
-    * The filtering expression. This can be used to restrict search results
-    * based on Product labels. We currently support an AND of OR of key-value
-    * expressions, where each expression within an OR must have the same key.
-    * For example, &quot;(color = red OR color = blue) AND brand = Google&quot;
-    * is acceptable, but not &quot;(color = red OR brand = Google)&quot; or
-    * &quot;color: red&quot;.
+    * The filtering expression. This can be used to restrict search results based on Product labels. We currently support an AND of OR of key-value expressions, where each expression within an OR must have the same key. An '=' should be used to connect the key and value. For example, "(color = red OR color = blue) AND brand = Google" is acceptable, but "(color = red OR brand = Google)" is not acceptable. "color: red" is not acceptable because it uses a ':' instead of an '='.
     */
-  var filter: js.UndefOr[String] = js.undefined
+  var filter: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The list of product categories to search in. Currently, we only consider
-    * the first category, and either &quot;homegoods&quot;,
-    * &quot;apparel&quot;, or &quot;toys&quot; should be specified.
+    * The list of product categories to search in. Currently, we only consider the first category, and either "homegoods-v2", "apparel-v2", "toys-v2", "packagedgoods-v1", or "general-v1" should be specified. The legacy categories "homegoods", "apparel", and "toys" are still supported but will be deprecated. For new products, please use "homegoods-v2", "apparel-v2", or "toys-v2" for better product search accuracy. It is recommended to migrate existing products to these categories as well.
     */
-  var productCategories: js.UndefOr[js.Array[String]] = js.undefined
+  var productCategories: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The resource name of a ProductSet to be searched for similar images.
-    * Format is:
-    * `projects/PROJECT_ID/locations/LOC_ID/productSets/PRODUCT_SET_ID`.
+    * The resource name of a ProductSet to be searched for similar images. Format is: `projects/PROJECT_ID/locations/LOC_ID/productSets/PRODUCT_SET_ID`.
     */
-  var productSet: js.UndefOr[String] = js.undefined
+  var productSet: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaProductSearchParams {
   
@@ -54,15 +41,21 @@ object SchemaProductSearchParams {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
+    inline def setFilterNull: Self = StObject.set(x, "filter", null)
+    
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setProductCategories(value: js.Array[String]): Self = StObject.set(x, "productCategories", value.asInstanceOf[js.Any])
     
+    inline def setProductCategoriesNull: Self = StObject.set(x, "productCategories", null)
+    
     inline def setProductCategoriesUndefined: Self = StObject.set(x, "productCategories", js.undefined)
     
-    inline def setProductCategoriesVarargs(value: String*): Self = StObject.set(x, "productCategories", js.Array(value :_*))
+    inline def setProductCategoriesVarargs(value: String*): Self = StObject.set(x, "productCategories", js.Array(value*))
     
     inline def setProductSet(value: String): Self = StObject.set(x, "productSet", value.asInstanceOf[js.Any])
+    
+    inline def setProductSetNull: Self = StObject.set(x, "productSet", null)
     
     inline def setProductSetUndefined: Self = StObject.set(x, "productSet", js.undefined)
   }

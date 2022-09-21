@@ -38,7 +38,7 @@ object AnimationTriggerMetadata {
     
     inline def setDefinitions(value: js.Array[AnimationMetadata]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
-    inline def setDefinitionsVarargs(value: AnimationMetadata*): Self = StObject.set(x, "definitions", js.Array(value :_*))
+    inline def setDefinitionsVarargs(value: AnimationMetadata*): Self = StObject.set(x, "definitions", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

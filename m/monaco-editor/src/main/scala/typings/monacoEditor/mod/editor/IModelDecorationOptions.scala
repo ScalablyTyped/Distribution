@@ -8,14 +8,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IModelDecorationOptions extends StObject {
   
   /**
+    * If set, text will be injected in the view after the range.
+    */
+  var after: js.UndefOr[InjectedTextOptions | Null] = js.undefined
+  
+  /**
     * If set, the decoration will be rendered after the text with this CSS class name.
     */
   var afterContentClassName: js.UndefOr[String | Null] = js.undefined
   
   /**
+    * If set, text will be injected in the view before the range.
+    */
+  var before: js.UndefOr[InjectedTextOptions | Null] = js.undefined
+  
+  /**
     * If set, the decoration will be rendered before the text with this CSS class name.
     */
   var beforeContentClassName: js.UndefOr[String | Null] = js.undefined
+  
+  var blockClassName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * CSS class name describing the decoration.
@@ -80,6 +92,11 @@ trait IModelDecorationOptions extends StObject {
   var overviewRuler: js.UndefOr[IModelDecorationOverviewRulerOptions | Null] = js.undefined
   
   /**
+    * Always render the decoration (even when the range it encompasses is collapsed).
+    */
+  var showIfCollapsed: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Customize the growing behavior of the decoration when typing at the edges of the decoration.
     * Defaults to TrackedRangeStickiness.AlwaysGrowsWhenTypingAtEdges
     */
@@ -87,7 +104,8 @@ trait IModelDecorationOptions extends StObject {
   
   /**
     * Specifies the stack order of a decoration.
-    * A decoration with greater stack order is always in front of a decoration with a lower stack order.
+    * A decoration with greater stack order is always in front of a decoration with
+    * a lower stack order when the decorations are on the same line.
     */
   var zIndex: js.UndefOr[Double] = js.undefined
 }
@@ -100,17 +118,35 @@ object IModelDecorationOptions {
   
   extension [Self <: IModelDecorationOptions](x: Self) {
     
+    inline def setAfter(value: InjectedTextOptions): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    
     inline def setAfterContentClassName(value: String): Self = StObject.set(x, "afterContentClassName", value.asInstanceOf[js.Any])
     
     inline def setAfterContentClassNameNull: Self = StObject.set(x, "afterContentClassName", null)
     
     inline def setAfterContentClassNameUndefined: Self = StObject.set(x, "afterContentClassName", js.undefined)
     
+    inline def setAfterNull: Self = StObject.set(x, "after", null)
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setBefore(value: InjectedTextOptions): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    
     inline def setBeforeContentClassName(value: String): Self = StObject.set(x, "beforeContentClassName", value.asInstanceOf[js.Any])
     
     inline def setBeforeContentClassNameNull: Self = StObject.set(x, "beforeContentClassName", null)
     
     inline def setBeforeContentClassNameUndefined: Self = StObject.set(x, "beforeContentClassName", js.undefined)
+    
+    inline def setBeforeNull: Self = StObject.set(x, "before", null)
+    
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
+    inline def setBlockClassName(value: String): Self = StObject.set(x, "blockClassName", value.asInstanceOf[js.Any])
+    
+    inline def setBlockClassNameNull: Self = StObject.set(x, "blockClassName", null)
+    
+    inline def setBlockClassNameUndefined: Self = StObject.set(x, "blockClassName", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -136,7 +172,7 @@ object IModelDecorationOptions {
     
     inline def setGlyphMarginHoverMessageUndefined: Self = StObject.set(x, "glyphMarginHoverMessage", js.undefined)
     
-    inline def setGlyphMarginHoverMessageVarargs(value: IMarkdownString*): Self = StObject.set(x, "glyphMarginHoverMessage", js.Array(value :_*))
+    inline def setGlyphMarginHoverMessageVarargs(value: IMarkdownString*): Self = StObject.set(x, "glyphMarginHoverMessage", js.Array(value*))
     
     inline def setHoverMessage(value: IMarkdownString | js.Array[IMarkdownString]): Self = StObject.set(x, "hoverMessage", value.asInstanceOf[js.Any])
     
@@ -144,7 +180,7 @@ object IModelDecorationOptions {
     
     inline def setHoverMessageUndefined: Self = StObject.set(x, "hoverMessage", js.undefined)
     
-    inline def setHoverMessageVarargs(value: IMarkdownString*): Self = StObject.set(x, "hoverMessage", js.Array(value :_*))
+    inline def setHoverMessageVarargs(value: IMarkdownString*): Self = StObject.set(x, "hoverMessage", js.Array(value*))
     
     inline def setInlineClassName(value: String): Self = StObject.set(x, "inlineClassName", value.asInstanceOf[js.Any])
     
@@ -183,6 +219,10 @@ object IModelDecorationOptions {
     inline def setOverviewRulerNull: Self = StObject.set(x, "overviewRuler", null)
     
     inline def setOverviewRulerUndefined: Self = StObject.set(x, "overviewRuler", js.undefined)
+    
+    inline def setShowIfCollapsed(value: Boolean): Self = StObject.set(x, "showIfCollapsed", value.asInstanceOf[js.Any])
+    
+    inline def setShowIfCollapsedUndefined: Self = StObject.set(x, "showIfCollapsed", js.undefined)
     
     inline def setStickiness(value: TrackedRangeStickiness): Self = StObject.set(x, "stickiness", value.asInstanceOf[js.Any])
     

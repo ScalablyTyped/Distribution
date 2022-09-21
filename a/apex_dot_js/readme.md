@@ -10,10 +10,10 @@ Typings are for version 2.0
 | ------------------ | :-------------: |
 | Full name          | apex.js |
 | Keywords           | aws, lambda, λ, apex |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 26887 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 849.3333333333334 |
+| # stars            | 277.0 |
 
 ## Links
 - [Homepage](https://github.com/apex/node-apex#readme)

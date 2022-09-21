@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentelemetry__semantic-conventions
 
-Typings are for version 0.11.0
+Typings are for version 1.7.0
 
 ## Library description:
 OpenTelemetry semantic conventions
@@ -10,13 +10,13 @@ OpenTelemetry semantic conventions
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/semantic-conventions |
 | Keywords           | opentelemetry, nodejs, tracing, attributes, semantic conventions |
-| # releases         | 16 |
-| # dependents       | 39 |
-| # downloads        | 3720199 |
-| # stars            | 0 |
+| # releases         | 73 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3110018E7 |
+| # stars            | 1462.0 |
 
 ## Links
-- [Homepage](https://github.com/open-telemetry/opentelemetry-js#readme)
+- [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-semantic-conventions)
 - [Bugs](https://github.com/open-telemetry/opentelemetry-js/issues)
 - [Repository](https://github.com/open-telemetry/opentelemetry-js)
 - [Npm](https://www.npmjs.com/package/%40opentelemetry%2Fsemantic-conventions)

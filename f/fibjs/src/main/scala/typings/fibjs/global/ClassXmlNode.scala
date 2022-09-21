@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_XmlNode")
 @js.native
-class ClassXmlNode ()
+open class ClassXmlNode ()
   extends StObject
      with typings.fibjs.ClassXmlNode

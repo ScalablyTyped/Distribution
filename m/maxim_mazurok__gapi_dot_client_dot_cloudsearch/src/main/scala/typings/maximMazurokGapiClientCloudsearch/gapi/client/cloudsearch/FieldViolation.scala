@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FieldViolation extends StObject {
   
-  /** Description of the error. */
+  /** The description of the error. */
   var description: js.UndefOr[String] = js.undefined
   
   /** Path of field with violation. */

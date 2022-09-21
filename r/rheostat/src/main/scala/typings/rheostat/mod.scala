@@ -1,7 +1,7 @@
 package typings.rheostat
 
 import typings.react.mod.Component
-import typings.react.mod.ReactType
+import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +10,8 @@ object mod {
   
   @JSImport("rheostat", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, scala.Nothing, js.Any]
+  open class default ()
+    extends Component[Props, scala.Nothing, Any]
   
   trait Algorithm extends StObject {
     
@@ -38,19 +38,19 @@ object mod {
     
     var getNextHandlePosition: js.UndefOr[js.Function2[/* handleIdx */ Double, /* percentPosition */ Double, Double]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* publicState */ PublicState, js.Any]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* publicState */ PublicState, Any]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onClick: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var onKeyPress: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onKeyPress: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var onSliderDragEnd: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onSliderDragEnd: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var onSliderDragMove: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onSliderDragMove: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var onSliderDragStart: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onSliderDragStart: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var onValuesUpdated: js.UndefOr[js.Function1[/* publicState */ PublicState, js.Any]] = js.undefined
+    var onValuesUpdated: js.UndefOr[js.Function1[/* publicState */ PublicState, Any]] = js.undefined
   }
   object Events {
     
@@ -65,31 +65,31 @@ object mod {
       
       inline def setGetNextHandlePositionUndefined: Self = StObject.set(x, "getNextHandlePosition", js.undefined)
       
-      inline def setOnChange(value: /* publicState */ PublicState => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* publicState */ PublicState => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnClick(value: () => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnKeyPress(value: () => js.Any): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction0(value))
+      inline def setOnKeyPress(value: () => Any): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction0(value))
       
       inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      inline def setOnSliderDragEnd(value: () => js.Any): Self = StObject.set(x, "onSliderDragEnd", js.Any.fromFunction0(value))
+      inline def setOnSliderDragEnd(value: () => Any): Self = StObject.set(x, "onSliderDragEnd", js.Any.fromFunction0(value))
       
       inline def setOnSliderDragEndUndefined: Self = StObject.set(x, "onSliderDragEnd", js.undefined)
       
-      inline def setOnSliderDragMove(value: () => js.Any): Self = StObject.set(x, "onSliderDragMove", js.Any.fromFunction0(value))
+      inline def setOnSliderDragMove(value: () => Any): Self = StObject.set(x, "onSliderDragMove", js.Any.fromFunction0(value))
       
       inline def setOnSliderDragMoveUndefined: Self = StObject.set(x, "onSliderDragMove", js.undefined)
       
-      inline def setOnSliderDragStart(value: () => js.Any): Self = StObject.set(x, "onSliderDragStart", js.Any.fromFunction0(value))
+      inline def setOnSliderDragStart(value: () => Any): Self = StObject.set(x, "onSliderDragStart", js.Any.fromFunction0(value))
       
       inline def setOnSliderDragStartUndefined: Self = StObject.set(x, "onSliderDragStart", js.undefined)
       
-      inline def setOnValuesUpdated(value: /* publicState */ PublicState => js.Any): Self = StObject.set(x, "onValuesUpdated", js.Any.fromFunction1(value))
+      inline def setOnValuesUpdated(value: /* publicState */ PublicState => Any): Self = StObject.set(x, "onValuesUpdated", js.Any.fromFunction1(value))
       
       inline def setOnValuesUpdatedUndefined: Self = StObject.set(x, "onValuesUpdated", js.undefined)
     }
@@ -115,13 +115,13 @@ object mod {
     
     var autoAdjustVerticalPosition: js.UndefOr[Boolean] = js.undefined
     
-    var background: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var background: js.UndefOr[ElementType[Any]] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var handle: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var handle: js.UndefOr[ElementType[Any]] = js.undefined
     
     var max: js.UndefOr[Double] = js.undefined
     
@@ -129,11 +129,11 @@ object mod {
     
     var orientation: js.UndefOr[Orientation] = js.undefined
     
-    var pitComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var pitComponent: js.UndefOr[ElementType[Any]] = js.undefined
     
     var pitPoints: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var progressBar: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var progressBar: js.UndefOr[ElementType[Any]] = js.undefined
     
     var snap: js.UndefOr[Boolean] = js.undefined
     
@@ -158,7 +158,7 @@ object mod {
       
       inline def setAutoAdjustVerticalPositionUndefined: Self = StObject.set(x, "autoAdjustVerticalPosition", js.undefined)
       
-      inline def setBackground(value: ReactType[js.Any]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: ElementType[Any]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
@@ -170,7 +170,7 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setHandle(value: ReactType[js.Any]): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: ElementType[Any]): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
       inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
       
@@ -186,7 +186,7 @@ object mod {
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      inline def setPitComponent(value: ReactType[js.Any]): Self = StObject.set(x, "pitComponent", value.asInstanceOf[js.Any])
+      inline def setPitComponent(value: ElementType[Any]): Self = StObject.set(x, "pitComponent", value.asInstanceOf[js.Any])
       
       inline def setPitComponentUndefined: Self = StObject.set(x, "pitComponent", js.undefined)
       
@@ -194,9 +194,9 @@ object mod {
       
       inline def setPitPointsUndefined: Self = StObject.set(x, "pitPoints", js.undefined)
       
-      inline def setPitPointsVarargs(value: Double*): Self = StObject.set(x, "pitPoints", js.Array(value :_*))
+      inline def setPitPointsVarargs(value: Double*): Self = StObject.set(x, "pitPoints", js.Array(value*))
       
-      inline def setProgressBar(value: ReactType[js.Any]): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
+      inline def setProgressBar(value: ElementType[Any]): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
       
       inline def setProgressBarUndefined: Self = StObject.set(x, "progressBar", js.undefined)
       
@@ -206,7 +206,7 @@ object mod {
       
       inline def setSnapPointsUndefined: Self = StObject.set(x, "snapPoints", js.undefined)
       
-      inline def setSnapPointsVarargs(value: Double*): Self = StObject.set(x, "snapPoints", js.Array(value :_*))
+      inline def setSnapPointsVarargs(value: Double*): Self = StObject.set(x, "snapPoints", js.Array(value*))
       
       inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
       
@@ -214,7 +214,7 @@ object mod {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -241,9 +241,9 @@ object mod {
       
       inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
-  type Rheostat = Component[Props, scala.Nothing, js.Any]
+  type Rheostat = Component[Props, scala.Nothing, Any]
 }

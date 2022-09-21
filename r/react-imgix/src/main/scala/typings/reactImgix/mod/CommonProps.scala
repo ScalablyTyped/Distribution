@@ -12,6 +12,8 @@ trait CommonProps extends StObject {
   
   var className: js.UndefOr[String] = js.undefined
   
+  var domain: js.UndefOr[String] = js.undefined
+  
   var htmlAttributes: js.UndefOr[ImgixHTMLAttributes] = js.undefined
   
   var onMounted: js.UndefOr[
@@ -33,6 +35,10 @@ object CommonProps {
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     inline def setHtmlAttributes(value: ImgixHTMLAttributes): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
     

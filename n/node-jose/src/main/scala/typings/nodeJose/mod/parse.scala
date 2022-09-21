@@ -1,6 +1,6 @@
 package typings.nodeJose.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeJose.mod.JWE.DecryptResult
 import typings.nodeJose.mod.JWK.KeyStore
 import typings.nodeJose.mod.JWS.VerificationResult

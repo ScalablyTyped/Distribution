@@ -49,7 +49,7 @@ object XLocalizedAliases {
     listAliases: Locale => SafeArray[AliasProgrammaticPair],
     lookupAlias: (Locale, String) => String,
     lookupProgrammatic: (Locale, String) => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     rebindAliases: (String, String) => Unit,
     release: () => Unit,
     renameAlias: (Locale, String, String) => Unit,

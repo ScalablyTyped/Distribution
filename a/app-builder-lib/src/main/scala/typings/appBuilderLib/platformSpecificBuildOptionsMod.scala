@@ -8,16 +8,13 @@ import typings.appBuilderLib.coreMod.CompressionLevel
 import typings.appBuilderLib.coreMod.TargetConfiguration
 import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import typings.appBuilderLib.fileAssociationMod.FileAssociation
-import typings.appBuilderLib.integrityMod.AsarIntegrityOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformSpecificBuildOptionsMod {
   
-  trait AsarOptions
-    extends StObject
-       with AsarIntegrityOptions {
+  trait AsarOptions extends StObject {
     
     var ordering: js.UndefOr[String | Null] = js.undefined
     
@@ -78,7 +75,7 @@ object platformSpecificBuildOptionsMod {
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value*))
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -126,6 +123,8 @@ object platformSpecificBuildOptionsMod {
     /** @private */
     var cscLink: js.UndefOr[String | Null] = js.undefined
     
+    val defaultArch: js.UndefOr[String] = js.undefined
+    
     /**
       * Whether to infer update channel from application version pre-release components. e.g. if version `0.12.1-alpha.1`, channel will be set to `alpha`. Otherwise to `latest`.
       * @default true
@@ -136,6 +135,11 @@ object platformSpecificBuildOptionsMod {
       * The [electron-updater compatibility](/auto-update#compatibility) semver range.
       */
     val electronUpdaterCompatibility: js.UndefOr[String | Null] = js.undefined
+    
+    /**
+      * The executable name. Defaults to `productName`.
+      */
+    val executableName: js.UndefOr[String | Null] = js.undefined
     
     var extraFiles: js.UndefOr[(js.Array[FileSet | String]) | FileSet | String | Null] = js.undefined
     
@@ -205,7 +209,7 @@ object platformSpecificBuildOptionsMod {
       
       inline def setAsarUnpackUndefined: Self = StObject.set(x, "asarUnpack", js.undefined)
       
-      inline def setAsarUnpackVarargs(value: String*): Self = StObject.set(x, "asarUnpack", js.Array(value :_*))
+      inline def setAsarUnpackVarargs(value: String*): Self = StObject.set(x, "asarUnpack", js.Array(value*))
       
       inline def setCompression(value: CompressionLevel): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -225,6 +229,10 @@ object platformSpecificBuildOptionsMod {
       
       inline def setCscLinkUndefined: Self = StObject.set(x, "cscLink", js.undefined)
       
+      inline def setDefaultArch(value: String): Self = StObject.set(x, "defaultArch", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultArchUndefined: Self = StObject.set(x, "defaultArch", js.undefined)
+      
       inline def setDetectUpdateChannel(value: Boolean): Self = StObject.set(x, "detectUpdateChannel", value.asInstanceOf[js.Any])
       
       inline def setDetectUpdateChannelUndefined: Self = StObject.set(x, "detectUpdateChannel", js.undefined)
@@ -235,13 +243,19 @@ object platformSpecificBuildOptionsMod {
       
       inline def setElectronUpdaterCompatibilityUndefined: Self = StObject.set(x, "electronUpdaterCompatibility", js.undefined)
       
+      inline def setExecutableName(value: String): Self = StObject.set(x, "executableName", value.asInstanceOf[js.Any])
+      
+      inline def setExecutableNameNull: Self = StObject.set(x, "executableName", null)
+      
+      inline def setExecutableNameUndefined: Self = StObject.set(x, "executableName", js.undefined)
+      
       inline def setExtraFiles(value: (js.Array[FileSet | String]) | FileSet | String): Self = StObject.set(x, "extraFiles", value.asInstanceOf[js.Any])
       
       inline def setExtraFilesNull: Self = StObject.set(x, "extraFiles", null)
       
       inline def setExtraFilesUndefined: Self = StObject.set(x, "extraFiles", js.undefined)
       
-      inline def setExtraFilesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "extraFiles", js.Array(value :_*))
+      inline def setExtraFilesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "extraFiles", js.Array(value*))
       
       inline def setExtraResources(value: (js.Array[FileSet | String]) | FileSet | String): Self = StObject.set(x, "extraResources", value.asInstanceOf[js.Any])
       
@@ -249,13 +263,13 @@ object platformSpecificBuildOptionsMod {
       
       inline def setExtraResourcesUndefined: Self = StObject.set(x, "extraResources", js.undefined)
       
-      inline def setExtraResourcesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "extraResources", js.Array(value :_*))
+      inline def setExtraResourcesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "extraResources", js.Array(value*))
       
       inline def setFileAssociations(value: js.Array[FileAssociation] | FileAssociation): Self = StObject.set(x, "fileAssociations", value.asInstanceOf[js.Any])
       
       inline def setFileAssociationsUndefined: Self = StObject.set(x, "fileAssociations", js.undefined)
       
-      inline def setFileAssociationsVarargs(value: FileAssociation*): Self = StObject.set(x, "fileAssociations", js.Array(value :_*))
+      inline def setFileAssociationsVarargs(value: FileAssociation*): Self = StObject.set(x, "fileAssociations", js.Array(value*))
       
       inline def setFiles(value: (js.Array[FileSet | String]) | FileSet | String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -263,7 +277,7 @@ object platformSpecificBuildOptionsMod {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setForceCodeSigning(value: Boolean): Self = StObject.set(x, "forceCodeSigning", value.asInstanceOf[js.Any])
       
@@ -283,7 +297,7 @@ object platformSpecificBuildOptionsMod {
       
       inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value*))
       
       inline def setReleaseInfo(value: ReleaseInfo): Self = StObject.set(x, "releaseInfo", value.asInstanceOf[js.Any])
       
@@ -295,7 +309,7 @@ object platformSpecificBuildOptionsMod {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTargetVarargs(value: (String | TargetConfiguration)*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: (String | TargetConfiguration)*): Self = StObject.set(x, "target", js.Array(value*))
     }
   }
   
@@ -334,7 +348,7 @@ object platformSpecificBuildOptionsMod {
       
       inline def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
       
-      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
     }
   }
   

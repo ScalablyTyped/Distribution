@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SpeechRecognizer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hypothesisgenerated(
     `type`: hypothesisgenerated,
@@ -83,7 +83,7 @@ trait SpeechRecognizer extends StObject {
     */
   def recognizeWithUIAsync(): IPromiseWithIAsyncOperation[SpeechRecognitionResult] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_hypothesisgenerated(
     `type`: hypothesisgenerated,

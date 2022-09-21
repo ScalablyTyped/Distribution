@@ -6,96 +6,79 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ConditionalExpr")
 @js.native
-class ConditionalExpr protected ()
-  extends typings.angularCompiler.compilerMod.ConditionalExpr {
+open class ConditionalExpr protected () extends Expression {
+  def this(condition: Expression, trueCase: Expression) = this()
+  def this(condition: Expression, trueCase: Expression, falseCase: Expression) = this()
+  def this(condition: Expression, trueCase: Expression, falseCase: Null, `type`: Type) = this()
+  def this(condition: Expression, trueCase: Expression, falseCase: Unit, `type`: Type) = this()
+  def this(condition: Expression, trueCase: Expression, falseCase: Expression, `type`: Type) = this()
   def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression
-  ) = this()
-  def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: typings.angularCompiler.outputAstMod.Expression
-  ) = this()
-  def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: Null,
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: Unit,
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
+    condition: Expression,
+    trueCase: Expression,
     falseCase: Null,
     `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
+    condition: Expression,
+    trueCase: Expression,
     falseCase: Null,
     `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
+    condition: Expression,
+    trueCase: Expression,
     falseCase: Null,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    `type`: Type,
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
+    condition: Expression,
+    trueCase: Expression,
     falseCase: Unit,
     `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
+    condition: Expression,
+    trueCase: Expression,
     falseCase: Unit,
     `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
+    condition: Expression,
+    trueCase: Expression,
     falseCase: Unit,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    `type`: Type,
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: typings.angularCompiler.outputAstMod.Expression,
+    condition: Expression,
+    trueCase: Expression,
+    falseCase: Expression,
     `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: typings.angularCompiler.outputAstMod.Expression,
+    condition: Expression,
+    trueCase: Expression,
+    falseCase: Expression,
     `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan
   ) = this()
   def this(
-    condition: typings.angularCompiler.outputAstMod.Expression,
-    trueCase: typings.angularCompiler.outputAstMod.Expression,
-    falseCase: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    condition: Expression,
+    trueCase: Expression,
+    falseCase: Expression,
+    `type`: Type,
+    sourceSpan: ParseSourceSpan
   ) = this()
+  
+  var condition: Expression = js.native
+  
+  var falseCase: Expression | Null = js.native
+  
+  var trueCase: Expression = js.native
 }

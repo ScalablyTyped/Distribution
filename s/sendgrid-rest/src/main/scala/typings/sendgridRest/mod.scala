@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("sendgrid-rest", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(globalRequest: Request_) = this()
     
     /**
@@ -41,7 +41,7 @@ object mod {
     
     var body: js.Object | String
     
-    var headers: StringDictionary[js.Any]
+    var headers: StringDictionary[Any]
     
     var host: String
     
@@ -51,7 +51,7 @@ object mod {
     
     var port: String
     
-    var queryParams: StringDictionary[js.Any]
+    var queryParams: StringDictionary[Any]
     
     var test: Boolean
   }
@@ -59,12 +59,12 @@ object mod {
     
     inline def apply(
       body: js.Object | String,
-      headers: StringDictionary[js.Any],
+      headers: StringDictionary[Any],
       host: String,
       method: String,
       path: String,
       port: String,
-      queryParams: StringDictionary[js.Any],
+      queryParams: StringDictionary[Any],
       test: Boolean
     ): Request_ = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], queryParams = queryParams.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
@@ -75,7 +75,7 @@ object mod {
       
       inline def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -85,7 +85,7 @@ object mod {
       
       inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      inline def setQueryParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: StringDictionary[Any]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
       inline def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     }
@@ -95,13 +95,13 @@ object mod {
     
     var body: js.Object | String
     
-    var headers: StringDictionary[js.Any]
+    var headers: StringDictionary[Any]
     
     var statusCode: String
   }
   object Response {
     
-    inline def apply(body: js.Object | String, headers: StringDictionary[js.Any], statusCode: String): Response = {
+    inline def apply(body: js.Object | String, headers: StringDictionary[Any], statusCode: String): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
@@ -110,7 +110,7 @@ object mod {
       
       inline def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }

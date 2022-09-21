@@ -8,7 +8,7 @@ object attributeMod {
   
   @JSImport("marko/src/compiler/taglib-loader/Attribute", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Attribute {
     
@@ -22,13 +22,13 @@ object attributeMod {
     var defaultValue: String = js.native
     
     /* CompleteClass */
-    var deprecated: js.Any = js.native
+    var deprecated: Any = js.native
     
     /* CompleteClass */
     var dynamicAttribute: Boolean = js.native
     
     /* CompleteClass */
-    var `enum`: js.Any = js.native
+    var `enum`: Any = js.native
     
     /* CompleteClass */
     var filePath: String = js.native
@@ -69,11 +69,11 @@ object attributeMod {
     
     var defaultValue: String
     
-    var deprecated: js.Any
+    var deprecated: Any
     
     var dynamicAttribute: Boolean
     
-    var `enum`: js.Any
+    var `enum`: Any
     
     var filePath: String
     
@@ -85,7 +85,7 @@ object attributeMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var pattern: js.UndefOr[js.Any] = js.undefined
+    var pattern: js.UndefOr[Any] = js.undefined
     
     var preserveName: js.UndefOr[String] = js.undefined
     
@@ -109,9 +109,9 @@ object attributeMod {
       allowExpressions: Boolean,
       autocomplete: Boolean,
       defaultValue: String,
-      deprecated: js.Any,
+      deprecated: Any,
       dynamicAttribute: Boolean,
-      `enum`: js.Any,
+      `enum`: Any,
       filePath: String,
       html: Boolean,
       ignore: Boolean,
@@ -134,11 +134,11 @@ object attributeMod {
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      inline def setDeprecated(value: js.Any): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: Any): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
       inline def setDynamicAttribute(value: Boolean): Self = StObject.set(x, "dynamicAttribute", value.asInstanceOf[js.Any])
       
-      inline def setEnum(value: js.Any): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: Any): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -152,7 +152,7 @@ object attributeMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setPattern(value: js.Any): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: Any): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       

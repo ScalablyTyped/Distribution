@@ -1,16 +1,25 @@
 package typings.sentryBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sentryBrowser.backendMod.BrowserOptions
+import typings.sentryBrowser.anon.PartialBreadcrumbsOptions
+import typings.sentryBrowser.anon.PartialLinkedErrorsOption
+import typings.sentryBrowser.anon.PartialTryCatchOptions
+import typings.sentryBrowser.clientMod.BrowserClientOptions
+import typings.sentryBrowser.clientMod.BrowserOptions
+import typings.sentryBrowser.globalhandlersMod.GlobalHandlersIntegrations
 import typings.sentryBrowser.helpersMod.ReportDialogOptions
-import typings.sentryBrowser.integrationsMod.Breadcrumbs
-import typings.sentryBrowser.integrationsMod.GlobalHandlers
-import typings.sentryBrowser.integrationsMod.LinkedErrors
-import typings.sentryBrowser.integrationsMod.TryCatch
-import typings.sentryBrowser.integrationsMod.UserAgent
-import typings.sentryCore.mod.Integrations.FunctionToString
-import typings.sentryCore.mod.Integrations.InboundFilters
-import typings.sentryHub.interfacesMod.Carrier
+import typings.sentryBrowser.typesMod.BrowserTransportOptions
+import typings.sentryBrowser.utilsMod.FetchImpl
+import typings.sentryCore.anon.PartialInboundFiltersOpti
+import typings.sentryHub.anon.FnCall
+import typings.sentryHub.anon.FnCallBreadcrumbHint
+import typings.sentryHub.anon.FnCallCallback
+import typings.sentryHub.anon.FnCallContextCustomSamplingContext
+import typings.sentryHub.anon.FnCallEventHint
+import typings.sentryHub.anon.FnCallMessageLevelHint
+import typings.sentryHub.anon.FnCallNameContext
+import typings.sentryHub.anon.FnCallUser
+import typings.sentryHub.hubMod.Carrier
 import typings.sentryTypes.breadcrumbMod.Breadcrumb
 import typings.sentryTypes.clientMod.Client
 import typings.sentryTypes.eventMod.Event
@@ -18,36 +27,153 @@ import typings.sentryTypes.eventMod.EventHint
 import typings.sentryTypes.eventprocessorMod.EventProcessor
 import typings.sentryTypes.extraMod.Extra
 import typings.sentryTypes.extraMod.Extras
-import typings.sentryTypes.optionsMod.Options
+import typings.sentryTypes.miscMod.Primitive
+import typings.sentryTypes.optionsMod.ClientOptions
 import typings.sentryTypes.scopeMod.CaptureContext
 import typings.sentryTypes.severityMod.Severity
+import typings.sentryTypes.severityMod.SeverityLevel
+import typings.sentryTypes.stacktraceMod.StackLineParser
+import typings.sentryTypes.stacktraceMod.StackParser
 import typings.sentryTypes.transactionMod.CustomSamplingContext
-import typings.sentryTypes.transactionMod.Transaction
 import typings.sentryTypes.transactionMod.TransactionContext
+import typings.sentryTypes.transportMod.BaseTransportOptions
+import typings.sentryTypes.transportMod.InternalBaseTransportOptions
+import typings.sentryTypes.transportMod.Transport
+import typings.sentryTypes.transportMod.TransportRequestExecutor
 import typings.sentryTypes.userMod.User
+import typings.sentryUtils.promisebufferMod.PromiseBuffer
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exportsMod {
   
-  @JSImport("@sentry/browser/dist/exports", JSImport.Namespace)
+  @JSImport("@sentry/browser/types/exports", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@sentry/browser/dist/exports", "BrowserClient")
+  @JSImport("@sentry/browser/types/exports", "Breadcrumbs")
   @js.native
   /**
-    * Creates a new Browser SDK instance.
-    *
-    * @param options Configuration options for this SDK.
+    * @inheritDoc
     */
-  class BrowserClient ()
-    extends typings.sentryBrowser.clientMod.BrowserClient {
-    def this(options: BrowserOptions) = this()
+  open class Breadcrumbs ()
+    extends typings.sentryBrowser.integrationsMod.Breadcrumbs {
+    def this(options: PartialBreadcrumbsOptions) = this()
+  }
+  /* static members */
+  object Breadcrumbs {
+    
+    @JSImport("@sentry/browser/types/exports", "Breadcrumbs")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/browser/types/exports", "Breadcrumbs.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@sentry/browser/dist/exports", "Hub")
+  @JSImport("@sentry/browser/types/exports", "BrowserClient")
+  @js.native
+  open class BrowserClient protected ()
+    extends typings.sentryBrowser.clientMod.BrowserClient {
+    /**
+      * Creates a new Browser SDK instance.
+      *
+      * @param options Configuration options for this SDK.
+      */
+    def this(options: BrowserClientOptions) = this()
+  }
+  
+  @JSImport("@sentry/browser/types/exports", "Dedupe")
+  @js.native
+  open class Dedupe ()
+    extends typings.sentryBrowser.integrationsMod.Dedupe
+  /* static members */
+  object Dedupe {
+    
+    @JSImport("@sentry/browser/types/exports", "Dedupe")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/browser/types/exports", "Dedupe.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@sentry/browser/types/exports", "FunctionToString")
+  @js.native
+  open class FunctionToString ()
+    extends typings.sentryCore.mod.FunctionToString
+  /* static members */
+  object FunctionToString {
+    
+    @JSImport("@sentry/browser/types/exports", "FunctionToString")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/browser/types/exports", "FunctionToString.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@sentry/browser/types/exports", "GlobalHandlers")
+  @js.native
+  /** JSDoc */
+  open class GlobalHandlers ()
+    extends typings.sentryBrowser.integrationsMod.GlobalHandlers {
+    def this(options: GlobalHandlersIntegrations) = this()
+  }
+  /* static members */
+  object GlobalHandlers {
+    
+    @JSImport("@sentry/browser/types/exports", "GlobalHandlers")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/browser/types/exports", "GlobalHandlers.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@sentry/browser/types/exports", "HttpContext")
+  @js.native
+  open class HttpContext ()
+    extends typings.sentryBrowser.integrationsMod.HttpContext
+  /* static members */
+  object HttpContext {
+    
+    @JSImport("@sentry/browser/types/exports", "HttpContext")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/browser/types/exports", "HttpContext.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@sentry/browser/types/exports", "Hub")
   @js.native
   /**
     * Creates a new instance of the hub, will push one {@link Layer} into the
@@ -57,47 +183,92 @@ object exportsMod {
     * @param scope bound to the hub.
     * @param version number, higher number means higher priority.
     */
-  class Hub ()
+  open class Hub ()
     extends typings.sentryCore.mod.Hub {
-    def this(client: Client[Options]) = this()
+    def this(client: Client[ClientOptions[BaseTransportOptions]]) = this()
     def this(client: Unit, scope: typings.sentryHub.scopeMod.Scope) = this()
-    def this(client: Client[Options], scope: typings.sentryHub.scopeMod.Scope) = this()
+    def this(client: Client[ClientOptions[BaseTransportOptions]], scope: typings.sentryHub.scopeMod.Scope) = this()
     def this(client: Unit, scope: Unit, _version: Double) = this()
     def this(client: Unit, scope: typings.sentryHub.scopeMod.Scope, _version: Double) = this()
-    def this(client: Client[Options], scope: Unit, _version: Double) = this()
-    def this(client: Client[Options], scope: typings.sentryHub.scopeMod.Scope, _version: Double) = this()
+    def this(client: Client[ClientOptions[BaseTransportOptions]], scope: Unit, _version: Double) = this()
+    def this(
+      client: Client[ClientOptions[BaseTransportOptions]],
+      scope: typings.sentryHub.scopeMod.Scope,
+      _version: Double
+    ) = this()
   }
   
-  @JSImport("@sentry/browser/dist/exports", "SDK_NAME")
+  @JSImport("@sentry/browser/types/exports", "InboundFilters")
   @js.native
-  val SDK_NAME: /* "sentry.javascript.browser" */ String = js.native
+  open class InboundFilters ()
+    extends typings.sentryCore.mod.InboundFilters {
+    def this(_options: PartialInboundFiltersOpti) = this()
+  }
+  /* static members */
+  object InboundFilters {
+    
+    @JSImport("@sentry/browser/types/exports", "InboundFilters")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/browser/types/exports", "InboundFilters.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  }
   
-  @JSImport("@sentry/browser/dist/exports", "SDK_VERSION")
+  @JSImport("@sentry/browser/types/exports", "LinkedErrors")
   @js.native
-  val SDK_VERSION: /* "5.27.4" */ String = js.native
+  /**
+    * @inheritDoc
+    */
+  open class LinkedErrors ()
+    extends typings.sentryBrowser.integrationsMod.LinkedErrors {
+    def this(options: PartialLinkedErrorsOption) = this()
+  }
+  /* static members */
+  object LinkedErrors {
+    
+    @JSImport("@sentry/browser/types/exports", "LinkedErrors")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/browser/types/exports", "LinkedErrors.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  }
   
-  @JSImport("@sentry/browser/dist/exports", "Scope")
+  @JSImport("@sentry/browser/types/exports", "SDK_VERSION")
   @js.native
-  class Scope ()
+  val SDK_VERSION: /* "7.13.0" */ String = js.native
+  
+  @JSImport("@sentry/browser/types/exports", "Scope")
+  @js.native
+  open class Scope ()
     extends typings.sentryCore.mod.Scope
   /* static members */
   object Scope {
     
-    @JSImport("@sentry/browser/dist/exports", "Scope")
+    @JSImport("@sentry/browser/types/exports", "Scope")
     @js.native
     val ^ : js.Any = js.native
     
     inline def clone(scope: typings.sentryHub.scopeMod.Scope): typings.sentryHub.scopeMod.Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(scope.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.scopeMod.Scope]
   }
   
-  @JSImport("@sentry/browser/dist/exports", "Severity")
+  @JSImport("@sentry/browser/types/exports", "Severity")
   @js.native
   object Severity extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.sentryTypes.severityMod.Severity & String] = js.native
-    
-    /* "critical" */ val Critical: typings.sentryTypes.severityMod.Severity.Critical & String = js.native
     
     /* "debug" */ val Debug: typings.sentryTypes.severityMod.Severity.Debug & String = js.native
     
@@ -110,80 +281,86 @@ object exportsMod {
     /* "log" */ val Log: typings.sentryTypes.severityMod.Severity.Log & String = js.native
     
     /* "warning" */ val Warning: typings.sentryTypes.severityMod.Severity.Warning & String = js.native
-    
-    /**
-      * Converts a string-based level into a {@link Severity}.
-      *
-      * @param level string representation of Severity
-      * @returns Severity
-      */
-    def fromString(level: String): typings.sentryTypes.severityMod.Severity = js.native
   }
   
-  @JSImport("@sentry/browser/dist/exports", "Status")
+  @JSImport("@sentry/browser/types/exports", "TryCatch")
   @js.native
-  object Status extends StObject {
+  /**
+    * @inheritDoc
+    */
+  open class TryCatch ()
+    extends typings.sentryBrowser.integrationsMod.TryCatch {
+    def this(options: PartialTryCatchOptions) = this()
+  }
+  /* static members */
+  object TryCatch {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sentryTypes.statusMod.Status & String] = js.native
-    
-    /* "failed" */ val Failed: typings.sentryTypes.statusMod.Status.Failed & String = js.native
-    
-    /* "invalid" */ val Invalid: typings.sentryTypes.statusMod.Status.Invalid & String = js.native
-    
-    /* "rate_limit" */ val RateLimit: typings.sentryTypes.statusMod.Status.RateLimit & String = js.native
-    
-    /* "skipped" */ val Skipped: typings.sentryTypes.statusMod.Status.Skipped & String = js.native
-    
-    /* "success" */ val Success: typings.sentryTypes.statusMod.Status.Success & String = js.native
-    
-    /* "unknown" */ val Unknown: typings.sentryTypes.statusMod.Status.Unknown & String = js.native
+    @JSImport("@sentry/browser/types/exports", "TryCatch")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
-      * Converts a HTTP status code into a {@link Status}.
-      *
-      * @param code The HTTP response status code.
-      * @returns The send status or {@link Status.Unknown}.
+      * @inheritDoc
       */
-    def fromHttpCode(code: Double): typings.sentryTypes.statusMod.Status = js.native
+    @JSImport("@sentry/browser/types/exports", "TryCatch.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
-  inline def addBreadcrumb(breadcrumb: Breadcrumb): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCallBreadcrumbHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("addBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallBreadcrumbHint]]
   
   inline def addGlobalEventProcessor(callback: EventProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalEventProcessor")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def captureEvent(event: Event): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def captureEvent(event: Event): ReturnType[FnCallEventHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallEventHint]]
+  inline def captureEvent(event: Event, hint: EventHint): ReturnType[FnCallEventHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallEventHint]]
   
-  inline def captureException(exception: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def captureException(exception: js.Any, captureContext: CaptureContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureException(exception: Any): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCall]]
+  inline def captureException(exception: Any, captureContext: CaptureContext): ReturnType[FnCall] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCall]]
   
-  inline def captureMessage(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def captureMessage(message: String, captureContext: CaptureContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def captureMessage(message: String, captureContext: Severity): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureMessage(message: String): ReturnType[FnCallMessageLevelHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
+  inline def captureMessage(message: String, captureContext: CaptureContext): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
+  inline def captureMessage(message: String, captureContext: Severity): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
+  inline def captureMessage(message: String, captureContext: SeverityLevel): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
+  
+  @JSImport("@sentry/browser/types/exports", "chromeStackLineParser")
+  @js.native
+  val chromeStackLineParser: StackLineParser = js.native
   
   inline def close(): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[js.Thenable[Boolean]]
   inline def close(timeout: Double): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Boolean]]
   
-  inline def configureScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureScope")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configureScope(callback: js.Function1[/* scope */ typings.sentryHub.scopeMod.Scope, Unit]): ReturnType[FnCallCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("configureScope")(callback.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallCallback]]
   
-  @JSImport("@sentry/browser/dist/exports", "defaultIntegrations")
+  inline def createTransport(options: InternalBaseTransportOptions, makeRequest: TransportRequestExecutor): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(options.asInstanceOf[js.Any], makeRequest.asInstanceOf[js.Any])).asInstanceOf[Transport]
+  inline def createTransport(
+    options: InternalBaseTransportOptions,
+    makeRequest: TransportRequestExecutor,
+    buffer: PromiseBuffer[Unit]
+  ): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(options.asInstanceOf[js.Any], makeRequest.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Transport]
+  
+  @JSImport("@sentry/browser/types/exports", "defaultIntegrations")
   @js.native
   val defaultIntegrations: js.Array[
-    FunctionToString | InboundFilters | GlobalHandlers | TryCatch | Breadcrumbs | LinkedErrors | UserAgent
+    typings.sentryBrowser.integrationsMod.GlobalHandlers | typings.sentryBrowser.integrationsMod.TryCatch | typings.sentryBrowser.integrationsMod.Breadcrumbs | typings.sentryBrowser.integrationsMod.LinkedErrors | typings.sentryBrowser.integrationsMod.HttpContext | typings.sentryBrowser.integrationsMod.Dedupe | typings.sentryCore.mod.Integrations.InboundFilters | typings.sentryCore.mod.Integrations.FunctionToString
   ] = js.native
   
-  inline def eventFromException(options: Options, exception: js.Any): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(options.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
-  inline def eventFromException(options: Options, exception: js.Any, hint: EventHint): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(options.asInstanceOf[js.Any], exception.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
+  @JSImport("@sentry/browser/types/exports", "defaultStackLineParsers")
+  @js.native
+  val defaultStackLineParsers: js.Array[StackLineParser] = js.native
   
-  inline def eventFromMessage(options: Options, message: String): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
-  inline def eventFromMessage(options: Options, message: String, level: Unit, hint: EventHint): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
-  inline def eventFromMessage(options: Options, message: String, level: Severity): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
-  inline def eventFromMessage(options: Options, message: String, level: Severity, hint: EventHint): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
+  @JSImport("@sentry/browser/types/exports", "defaultStackParser")
+  @js.native
+  val defaultStackParser: StackParser = js.native
   
   inline def flush(): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[js.Thenable[Boolean]]
   inline def flush(timeout: Double): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Boolean]]
   
   inline def forceLoad(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLoad")().asInstanceOf[Unit]
+  
+  @JSImport("@sentry/browser/types/exports", "geckoStackLineParser")
+  @js.native
+  val geckoStackLineParser: StackLineParser = js.native
   
   inline def getCurrentHub(): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentHub")().asInstanceOf[typings.sentryHub.hubMod.Hub]
   
@@ -192,36 +369,52 @@ object exportsMod {
   inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
   inline def init(options: BrowserOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def injectReportDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectReportDialog")().asInstanceOf[Unit]
-  inline def injectReportDialog(options: ReportDialogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectReportDialog")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
   inline def lastEventId(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastEventId")().asInstanceOf[js.UndefOr[String]]
+  
+  inline def makeFetchTransport(options: BrowserTransportOptions): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFetchTransport")(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  inline def makeFetchTransport(options: BrowserTransportOptions, nativeFetch: FetchImpl): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFetchTransport")(options.asInstanceOf[js.Any], nativeFetch.asInstanceOf[js.Any])).asInstanceOf[Transport]
   
   inline def makeMain(hub: typings.sentryHub.hubMod.Hub): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMain")(hub.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.hubMod.Hub]
   
+  inline def makeXHRTransport(options: BrowserTransportOptions): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("makeXHRTransport")(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  
   inline def onLoad(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLoad")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setContext(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def setContext(name: String, context: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("@sentry/browser/types/exports", "opera10StackLineParser")
+  @js.native
+  val opera10StackLineParser: StackLineParser = js.native
   
-  inline def setExtra(key: String, extra: Extra): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtra")(key.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("@sentry/browser/types/exports", "opera11StackLineParser")
+  @js.native
+  val opera11StackLineParser: StackLineParser = js.native
   
-  inline def setExtras(extras: Extras): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setExtras")(extras.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setContext(name: String): ReturnType[FnCallNameContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(name.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallNameContext]]
+  inline def setContext(name: String, context: StringDictionary[Any]): ReturnType[FnCallNameContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallNameContext]]
   
-  inline def setTag(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setExtra(key: String, extra: Extra): ReturnType[js.Function2[/* key */ String, /* extra */ Extra, Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtra")(key.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[ReturnType[js.Function2[/* key */ String, /* extra */ Extra, Unit]]]
   
-  inline def setTags(tags: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTags")(tags.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setExtras(extras: Extras): ReturnType[js.Function1[/* extras */ Extras, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setExtras")(extras.asInstanceOf[js.Any]).asInstanceOf[ReturnType[js.Function1[/* extras */ Extras, Unit]]]
   
-  inline def setUser(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUser")().asInstanceOf[Unit]
-  inline def setUser(user: User): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUser")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTag(key: String, value: Primitive): ReturnType[js.Function2[/* key */ String, /* value */ Primitive, Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ReturnType[js.Function2[/* key */ String, /* value */ Primitive, Unit]]]
+  
+  inline def setTags(tags: StringDictionary[Primitive]): ReturnType[js.Function1[/* tags */ StringDictionary[Primitive], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setTags")(tags.asInstanceOf[js.Any]).asInstanceOf[ReturnType[js.Function1[/* tags */ StringDictionary[Primitive], Unit]]]
+  
+  inline def setUser(): ReturnType[FnCallUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("setUser")().asInstanceOf[ReturnType[FnCallUser]]
+  inline def setUser(user: User): ReturnType[FnCallUser] = ^.asInstanceOf[js.Dynamic].applyDynamic("setUser")(user.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallUser]]
   
   inline def showReportDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showReportDialog")().asInstanceOf[Unit]
+  inline def showReportDialog(options: Unit, hub: typings.sentryCore.mod.Hub): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showReportDialog")(options.asInstanceOf[js.Any], hub.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def showReportDialog(options: ReportDialogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showReportDialog")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def showReportDialog(options: ReportDialogOptions, hub: typings.sentryCore.mod.Hub): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showReportDialog")(options.asInstanceOf[js.Any], hub.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def startTransaction(context: TransactionContext): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any]).asInstanceOf[Transaction]
-  inline def startTransaction(context: TransactionContext, customSamplingContext: CustomSamplingContext): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any], customSamplingContext.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  inline def startTransaction(context: TransactionContext): ReturnType[FnCallContextCustomSamplingContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallContextCustomSamplingContext]]
+  inline def startTransaction(context: TransactionContext, customSamplingContext: CustomSamplingContext): ReturnType[FnCallContextCustomSamplingContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any], customSamplingContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallContextCustomSamplingContext]]
   
-  inline def withScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("withScope")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @JSImport("@sentry/browser/types/exports", "winjsStackLineParser")
+  @js.native
+  val winjsStackLineParser: StackLineParser = js.native
   
-  inline def wrap(fn: js.Function1[/* args */ js.Any, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def withScope(callback: js.Function1[/* scope */ typings.sentryHub.scopeMod.Scope, Unit]): ReturnType[FnCallCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("withScope")(callback.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallCallback]]
+  
+  inline def wrap(fn: js.Function1[/* args */ Any, Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

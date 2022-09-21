@@ -22,6 +22,6 @@ object defaultMetrics {
     
     inline def setMetricsList(value: js.Array[String]): Self = StObject.set(x, "metricsList", value.asInstanceOf[js.Any])
     
-    inline def setMetricsListVarargs(value: String*): Self = StObject.set(x, "metricsList", js.Array(value :_*))
+    inline def setMetricsListVarargs(value: String*): Self = StObject.set(x, "metricsList", js.Array(value*))
   }
 }

@@ -79,7 +79,7 @@ object IDirectionsStep {
     
     inline def setChildItineraryItems(value: js.Array[IDirectionsStep]): Self = StObject.set(x, "childItineraryItems", value.asInstanceOf[js.Any])
     
-    inline def setChildItineraryItemsVarargs(value: IDirectionsStep*): Self = StObject.set(x, "childItineraryItems", js.Array(value :_*))
+    inline def setChildItineraryItemsVarargs(value: IDirectionsStep*): Self = StObject.set(x, "childItineraryItems", js.Array(value*))
     
     inline def setCoordinate(value: Location): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
@@ -95,11 +95,11 @@ object IDirectionsStep {
     
     inline def setPostIntersectionHints(value: js.Array[String]): Self = StObject.set(x, "postIntersectionHints", value.asInstanceOf[js.Any])
     
-    inline def setPostIntersectionHintsVarargs(value: String*): Self = StObject.set(x, "postIntersectionHints", js.Array(value :_*))
+    inline def setPostIntersectionHintsVarargs(value: String*): Self = StObject.set(x, "postIntersectionHints", js.Array(value*))
     
     inline def setPreIntersectionHints(value: js.Array[String]): Self = StObject.set(x, "preIntersectionHints", value.asInstanceOf[js.Any])
     
-    inline def setPreIntersectionHintsVarargs(value: String*): Self = StObject.set(x, "preIntersectionHints", js.Array(value :_*))
+    inline def setPreIntersectionHintsVarargs(value: String*): Self = StObject.set(x, "preIntersectionHints", js.Array(value*))
     
     inline def setStartStopName(value: String): Self = StObject.set(x, "startStopName", value.asInstanceOf[js.Any])
     
@@ -113,6 +113,6 @@ object IDirectionsStep {
     
     inline def setWarnings(value: js.Array[IDirectionsStepWarning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    inline def setWarningsVarargs(value: IDirectionsStepWarning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: IDirectionsStepWarning*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

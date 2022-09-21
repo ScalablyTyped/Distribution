@@ -52,7 +52,7 @@ object VideoMetadata {
     
     inline def setMediaFilesUndefined: Self = StObject.set(x, "mediaFiles", js.undefined)
     
-    inline def setMediaFilesVarargs(value: MediaFile*): Self = StObject.set(x, "mediaFiles", js.Array(value :_*))
+    inline def setMediaFilesVarargs(value: MediaFile*): Self = StObject.set(x, "mediaFiles", js.Array(value*))
     
     inline def setSkipOffset(value: String): Self = StObject.set(x, "skipOffset", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenInsertBookmarkDialogCommand")
 @js.native
-class OpenInsertBookmarkDialogCommand ()
+open class OpenInsertBookmarkDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenInsertBookmarkDialogCommand {
   

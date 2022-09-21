@@ -8,5 +8,5 @@ object notifierMod {
   
   @JSImport("sip.js/lib/api/notifier", "Notifier")
   @js.native
-  class Notifier () extends StObject
+  open class Notifier () extends StObject
 }

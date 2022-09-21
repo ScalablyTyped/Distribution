@@ -10,7 +10,7 @@ object elementQueriesMod {
   
   @JSImport("playable/dist/src/modules/ui/core/element-queries", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.playable.elementQueriesElementQueriesMod.default {
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, hasPrefix: Prefix) = this()

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDevicesRequest extends StObject {
   
   /**
-    * The access tokens for the request to list devices.
+    * A valid access token that Amazon Cognito issued to the user whose list of devices you want to view.
     */
   var AccessToken: TokenModelType
   

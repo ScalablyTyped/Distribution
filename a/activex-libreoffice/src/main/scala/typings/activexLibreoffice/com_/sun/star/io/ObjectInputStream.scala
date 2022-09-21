@@ -41,7 +41,7 @@ object ObjectInputStream {
     jumpToFurthest: () => Unit,
     jumpToMark: Double => Unit,
     offsetToMark: Double => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     readBoolean: () => Double,
     readByte: () => Double,
     readBytes: (js.Array[SeqEquiv[Double]], Double) => Double,

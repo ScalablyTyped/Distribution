@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Retrieves and sets properties used for fetching a PlayReady-ND license. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDLicenseFetchDescriptor")
 @js.native
-class NDLicenseFetchDescriptor protected ()
+open class NDLicenseFetchDescriptor protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.NDLicenseFetchDescriptor {
   /**

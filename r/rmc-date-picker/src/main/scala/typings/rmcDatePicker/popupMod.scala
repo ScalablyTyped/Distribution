@@ -11,7 +11,7 @@ object popupMod {
   
   @JSImport("rmc-date-picker/lib/Popup", JSImport.Default)
   @js.native
-  class default () extends PopupDatePicker
+  open class default () extends PopupDatePicker
   object default {
     
     /* static member */
@@ -37,11 +37,11 @@ object popupMod {
     extends StObject
        with IPopupPickerProps {
     
-    var date: js.UndefOr[js.Any] = js.undefined
+    var date: js.UndefOr[Any] = js.undefined
     
     var datePicker: ReactElement
     
-    var onChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IPopupDatePickerProps {
     
@@ -52,22 +52,21 @@ object popupMod {
     
     extension [Self <: IPopupDatePickerProps](x: Self) {
       
-      inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDatePicker(value: ReactElement): Self = StObject.set(x, "datePicker", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setOnChange(value: /* date */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* date */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     }
   }
   
   @js.native
-  trait PopupDatePicker
-    extends Component[IPopupDatePickerProps, js.Any, js.Any] {
+  trait PopupDatePicker extends Component[IPopupDatePickerProps, Any, Any] {
     
-    def onOk(v: js.Any): Unit = js.native
+    def onOk(v: Any): Unit = js.native
   }
 }

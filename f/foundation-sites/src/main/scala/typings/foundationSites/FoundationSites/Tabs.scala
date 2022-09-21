@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Tabs extends StObject {
   
-  def destroy(): Unit = js.native
-  
   def selectTab(element: String): Unit = js.native
   def selectTab(element: JQuery): Unit = js.native
 }

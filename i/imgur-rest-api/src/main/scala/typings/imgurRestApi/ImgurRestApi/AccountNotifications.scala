@@ -21,10 +21,10 @@ object AccountNotifications {
     
     inline def setMessages(value: js.Array[Notification[Conversation]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    inline def setMessagesVarargs(value: Notification[Conversation]*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Notification[Conversation]*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setReplies(value: js.Array[Notification[Comment]]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
-    inline def setRepliesVarargs(value: Notification[Comment]*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: Notification[Comment]*): Self = StObject.set(x, "replies", js.Array(value*))
   }
 }

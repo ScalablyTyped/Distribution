@@ -9,7 +9,7 @@ trait RefreshCompletedEventUIParam extends StObject {
   /**
     * Used to get reference to chart object.
     */
-  var chart: js.UndefOr[js.Any] = js.undefined
+  var chart: js.UndefOr[Any] = js.undefined
 }
 object RefreshCompletedEventUIParam {
   
@@ -20,7 +20,7 @@ object RefreshCompletedEventUIParam {
   
   extension [Self <: RefreshCompletedEventUIParam](x: Self) {
     
-    inline def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
   }

@@ -19,6 +19,6 @@ object InlineKeyboardMarkup {
     
     inline def setInline_keyboard(value: js.Array[js.Array[InlineKeyboardButton]]): Self = StObject.set(x, "inline_keyboard", value.asInstanceOf[js.Any])
     
-    inline def setInline_keyboardVarargs(value: js.Array[InlineKeyboardButton]*): Self = StObject.set(x, "inline_keyboard", js.Array(value :_*))
+    inline def setInline_keyboardVarargs(value: js.Array[InlineKeyboardButton]*): Self = StObject.set(x, "inline_keyboard", js.Array(value*))
   }
 }

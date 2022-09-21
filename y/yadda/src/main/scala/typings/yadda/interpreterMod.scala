@@ -1,6 +1,5 @@
 package typings.yadda
 
-import typings.std.Error
 import typings.yadda.libMod.Scenario
 import typings.yadda.libMod.Step
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ object interpreterMod {
   
   @JSImport("yadda/lib/Interpreter", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Interpreter {
     def this(libraries: js.Array[typings.yadda.libraryMod.^]) = this()
@@ -25,26 +24,26 @@ object interpreterMod {
     def interpret(
       scenario: js.Array[Scenario],
       scenario_context: typings.yadda.contextMod.^,
-      next: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[Scenario], Unit]
+      next: js.Function2[/* err */ js.Error | Null, /* result */ js.UndefOr[Scenario], Unit]
     ): Unit = js.native
     def interpret(scenario: Scenario, scenario_context: typings.yadda.contextMod.^): Unit = js.native
     def interpret(
       scenario: Scenario,
       scenario_context: typings.yadda.contextMod.^,
-      next: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[Scenario], Unit]
+      next: js.Function2[/* err */ js.Error | Null, /* result */ js.UndefOr[Scenario], Unit]
     ): Unit = js.native
     
     def interpret_step(step: js.Array[Step], scenario_context: typings.yadda.contextMod.^): Unit = js.native
     def interpret_step(
       step: js.Array[Step],
       scenario_context: typings.yadda.contextMod.^,
-      next: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[Step], Unit]
+      next: js.Function2[/* err */ js.Error | Null, /* result */ js.UndefOr[Step], Unit]
     ): Unit = js.native
     def interpret_step(step: Step, scenario_context: typings.yadda.contextMod.^): Unit = js.native
     def interpret_step(
       step: Step,
       scenario_context: typings.yadda.contextMod.^,
-      next: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[Step], Unit]
+      next: js.Function2[/* err */ js.Error | Null, /* result */ js.UndefOr[Step], Unit]
     ): Unit = js.native
     
     def requires(libs: js.Array[typings.yadda.libraryMod.^]): this.type = js.native

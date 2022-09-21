@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("AppointmentsSelectionEventArgs")
 @js.native
-class AppointmentsSelectionEventArgs protected ()
+open class AppointmentsSelectionEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.AppointmentsSelectionEventArgs {
   /**

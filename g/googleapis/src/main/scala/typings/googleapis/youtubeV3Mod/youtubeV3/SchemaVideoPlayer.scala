@@ -4,22 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Player to be used for a video playback.
-  */
 trait SchemaVideoPlayer extends StObject {
   
-  var embedHeight: js.UndefOr[String] = js.undefined
+  var embedHeight: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An &lt;iframe&gt; tag that embeds a player that will play the video.
+    * An <iframe\> tag that embeds a player that will play the video.
     */
-  var embedHtml: js.UndefOr[String] = js.undefined
+  var embedHtml: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The embed width
     */
-  var embedWidth: js.UndefOr[String] = js.undefined
+  var embedWidth: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaVideoPlayer {
   
@@ -32,13 +29,19 @@ object SchemaVideoPlayer {
     
     inline def setEmbedHeight(value: String): Self = StObject.set(x, "embedHeight", value.asInstanceOf[js.Any])
     
+    inline def setEmbedHeightNull: Self = StObject.set(x, "embedHeight", null)
+    
     inline def setEmbedHeightUndefined: Self = StObject.set(x, "embedHeight", js.undefined)
     
     inline def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
     
+    inline def setEmbedHtmlNull: Self = StObject.set(x, "embedHtml", null)
+    
     inline def setEmbedHtmlUndefined: Self = StObject.set(x, "embedHtml", js.undefined)
     
     inline def setEmbedWidth(value: String): Self = StObject.set(x, "embedWidth", value.asInstanceOf[js.Any])
+    
+    inline def setEmbedWidthNull: Self = StObject.set(x, "embedWidth", null)
     
     inline def setEmbedWidthUndefined: Self = StObject.set(x, "embedWidth", js.undefined)
   }

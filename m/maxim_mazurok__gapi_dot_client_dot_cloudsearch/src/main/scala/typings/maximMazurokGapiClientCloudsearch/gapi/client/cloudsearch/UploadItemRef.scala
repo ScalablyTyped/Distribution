@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UploadItemRef extends StObject {
   
-  /** Name of the content reference. The maximum length is 2048 characters. */
+  /** The name of the content reference. The maximum length is 2048 characters. */
   var name: js.UndefOr[String] = js.undefined
 }
 object UploadItemRef {

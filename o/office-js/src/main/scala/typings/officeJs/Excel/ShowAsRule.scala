@@ -21,30 +21,31 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait ShowAsRule extends StObject {
   
   /**
+    * The PivotField to base the `ShowAs` calculation on, if applicable according to the `ShowAsCalculation` type, else `null`.
     *
-    * The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var baseField: js.UndefOr[PivotField] = js.undefined
   
   /**
+    * The item to base the `ShowAs` calculation on, if applicable according to the `ShowAsCalculation` type, else `null`.
     *
-    * The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var baseItem: js.UndefOr[PivotItem] = js.undefined
   
   /**
+    * The `ShowAs` calculation to use for the PivotField. See `Excel.ShowAsCalculation` for details.
     *
-    * The ShowAs Calculation to use for the Data PivotField. See Excel.ShowAsCalculation for Details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var calculation: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index

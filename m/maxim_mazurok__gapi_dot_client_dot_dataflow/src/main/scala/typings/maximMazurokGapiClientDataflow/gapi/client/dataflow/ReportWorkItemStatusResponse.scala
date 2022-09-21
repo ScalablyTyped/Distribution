@@ -11,7 +11,7 @@ trait ReportWorkItemStatusResponse extends StObject {
   var unifiedWorkerResponse: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusResponse & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusResponse & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -32,7 +32,7 @@ object ReportWorkItemStatusResponse {
     inline def setUnifiedWorkerResponse(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusResponse & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusResponse & TopLevel[Any]
     ): Self = StObject.set(x, "unifiedWorkerResponse", value.asInstanceOf[js.Any])
     
     inline def setUnifiedWorkerResponseUndefined: Self = StObject.set(x, "unifiedWorkerResponse", js.undefined)
@@ -41,6 +41,6 @@ object ReportWorkItemStatusResponse {
     
     inline def setWorkItemServiceStatesUndefined: Self = StObject.set(x, "workItemServiceStates", js.undefined)
     
-    inline def setWorkItemServiceStatesVarargs(value: WorkItemServiceState*): Self = StObject.set(x, "workItemServiceStates", js.Array(value :_*))
+    inline def setWorkItemServiceStatesVarargs(value: WorkItemServiceState*): Self = StObject.set(x, "workItemServiceStates", js.Array(value*))
   }
 }

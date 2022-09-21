@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SeveritySummary extends StObject {
   
   /**
-    * The total number of resources or compliance items that have a severity level of critical. Critical severity is determined by the organization that published the compliance items.
+    * The total number of resources or compliance items that have a severity level of Critical. Critical severity is determined by the organization that published the compliance items.
     */
   var CriticalCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
   

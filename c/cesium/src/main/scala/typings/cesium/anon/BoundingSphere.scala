@@ -1,9 +1,7 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian3
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
+import typings.cesium.mod.OrientedBoundingBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,15 +14,17 @@ trait BoundingSphere extends StObject {
   
   var createdByUpsampling: js.UndefOr[Boolean] = js.undefined
   
+  var credits: js.UndefOr[js.Array[typings.cesium.mod.Credit]] = js.undefined
+  
   var eastIndices: js.Array[Double]
   
   var eastSkirtHeight: Double
   
-  var encodedNormals: js.UndefOr[Uint8Array] = js.undefined
+  var encodedNormals: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   
   var horizonOcclusionPoint: Cartesian3
   
-  var indices: Uint16Array | Uint32Array
+  var indices: js.typedarray.Uint16Array | js.typedarray.Uint32Array
   
   var maximumHeight: Double
   
@@ -34,13 +34,15 @@ trait BoundingSphere extends StObject {
   
   var northSkirtHeight: Double
   
-  var quantizedVertices: Uint16Array
+  var orientedBoundingBox: js.UndefOr[OrientedBoundingBox] = js.undefined
+  
+  var quantizedVertices: js.typedarray.Uint16Array
   
   var southIndices: js.Array[Double]
   
   var southSkirtHeight: Double
   
-  var waterMask: js.UndefOr[Uint8Array] = js.undefined
+  var waterMask: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   
   var westIndices: js.Array[Double]
   
@@ -53,12 +55,12 @@ object BoundingSphere {
     eastIndices: js.Array[Double],
     eastSkirtHeight: Double,
     horizonOcclusionPoint: Cartesian3,
-    indices: Uint16Array | Uint32Array,
+    indices: js.typedarray.Uint16Array | js.typedarray.Uint32Array,
     maximumHeight: Double,
     minimumHeight: Double,
     northIndices: js.Array[Double],
     northSkirtHeight: Double,
-    quantizedVertices: Uint16Array,
+    quantizedVertices: js.typedarray.Uint16Array,
     southIndices: js.Array[Double],
     southSkirtHeight: Double,
     westIndices: js.Array[Double],
@@ -80,19 +82,25 @@ object BoundingSphere {
     
     inline def setCreatedByUpsamplingUndefined: Self = StObject.set(x, "createdByUpsampling", js.undefined)
     
+    inline def setCredits(value: js.Array[typings.cesium.mod.Credit]): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
+    
+    inline def setCreditsUndefined: Self = StObject.set(x, "credits", js.undefined)
+    
+    inline def setCreditsVarargs(value: typings.cesium.mod.Credit*): Self = StObject.set(x, "credits", js.Array(value*))
+    
     inline def setEastIndices(value: js.Array[Double]): Self = StObject.set(x, "eastIndices", value.asInstanceOf[js.Any])
     
-    inline def setEastIndicesVarargs(value: Double*): Self = StObject.set(x, "eastIndices", js.Array(value :_*))
+    inline def setEastIndicesVarargs(value: Double*): Self = StObject.set(x, "eastIndices", js.Array(value*))
     
     inline def setEastSkirtHeight(value: Double): Self = StObject.set(x, "eastSkirtHeight", value.asInstanceOf[js.Any])
     
-    inline def setEncodedNormals(value: Uint8Array): Self = StObject.set(x, "encodedNormals", value.asInstanceOf[js.Any])
+    inline def setEncodedNormals(value: js.typedarray.Uint8Array): Self = StObject.set(x, "encodedNormals", value.asInstanceOf[js.Any])
     
     inline def setEncodedNormalsUndefined: Self = StObject.set(x, "encodedNormals", js.undefined)
     
     inline def setHorizonOcclusionPoint(value: Cartesian3): Self = StObject.set(x, "horizonOcclusionPoint", value.asInstanceOf[js.Any])
     
-    inline def setIndices(value: Uint16Array | Uint32Array): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.typedarray.Uint16Array | js.typedarray.Uint32Array): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     inline def setMaximumHeight(value: Double): Self = StObject.set(x, "maximumHeight", value.asInstanceOf[js.Any])
     
@@ -100,25 +108,29 @@ object BoundingSphere {
     
     inline def setNorthIndices(value: js.Array[Double]): Self = StObject.set(x, "northIndices", value.asInstanceOf[js.Any])
     
-    inline def setNorthIndicesVarargs(value: Double*): Self = StObject.set(x, "northIndices", js.Array(value :_*))
+    inline def setNorthIndicesVarargs(value: Double*): Self = StObject.set(x, "northIndices", js.Array(value*))
     
     inline def setNorthSkirtHeight(value: Double): Self = StObject.set(x, "northSkirtHeight", value.asInstanceOf[js.Any])
     
-    inline def setQuantizedVertices(value: Uint16Array): Self = StObject.set(x, "quantizedVertices", value.asInstanceOf[js.Any])
+    inline def setOrientedBoundingBox(value: OrientedBoundingBox): Self = StObject.set(x, "orientedBoundingBox", value.asInstanceOf[js.Any])
+    
+    inline def setOrientedBoundingBoxUndefined: Self = StObject.set(x, "orientedBoundingBox", js.undefined)
+    
+    inline def setQuantizedVertices(value: js.typedarray.Uint16Array): Self = StObject.set(x, "quantizedVertices", value.asInstanceOf[js.Any])
     
     inline def setSouthIndices(value: js.Array[Double]): Self = StObject.set(x, "southIndices", value.asInstanceOf[js.Any])
     
-    inline def setSouthIndicesVarargs(value: Double*): Self = StObject.set(x, "southIndices", js.Array(value :_*))
+    inline def setSouthIndicesVarargs(value: Double*): Self = StObject.set(x, "southIndices", js.Array(value*))
     
     inline def setSouthSkirtHeight(value: Double): Self = StObject.set(x, "southSkirtHeight", value.asInstanceOf[js.Any])
     
-    inline def setWaterMask(value: Uint8Array): Self = StObject.set(x, "waterMask", value.asInstanceOf[js.Any])
+    inline def setWaterMask(value: js.typedarray.Uint8Array): Self = StObject.set(x, "waterMask", value.asInstanceOf[js.Any])
     
     inline def setWaterMaskUndefined: Self = StObject.set(x, "waterMask", js.undefined)
     
     inline def setWestIndices(value: js.Array[Double]): Self = StObject.set(x, "westIndices", value.asInstanceOf[js.Any])
     
-    inline def setWestIndicesVarargs(value: Double*): Self = StObject.set(x, "westIndices", js.Array(value :_*))
+    inline def setWestIndicesVarargs(value: Double*): Self = StObject.set(x, "westIndices", js.Array(value*))
     
     inline def setWestSkirtHeight(value: Double): Self = StObject.set(x, "westSkirtHeight", value.asInstanceOf[js.Any])
   }

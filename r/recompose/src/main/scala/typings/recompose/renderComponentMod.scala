@@ -13,6 +13,6 @@ object renderComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[TProps](component: String): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
-  inline def default[TProps](component: ComponentType[TProps]): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def default[TProps](component: String): ComponentEnhancer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[Any, Any]]
+  inline def default[TProps](component: ComponentType[TProps]): ComponentEnhancer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[Any, Any]]
 }

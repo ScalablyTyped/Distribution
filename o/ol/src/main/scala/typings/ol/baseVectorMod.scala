@@ -2,6 +2,7 @@ package typings.ol
 
 import typings.ol.extentMod.Extent
 import typings.ol.olFeatureMod.FeatureLike
+import typings.ol.pluggableMapMod.FrameState
 import typings.ol.renderMod.OrderFunction
 import typings.ol.styleStyleMod.Style
 import typings.ol.styleStyleMod.StyleFunction
@@ -14,7 +15,7 @@ object baseVectorMod {
   
   @JSImport("ol/layer/BaseVector", JSImport.Default)
   @js.native
-  class default[VectorSourceType /* <: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default] | typings.ol.sourceVectorTileMod.default */] () extends BaseVectorLayer[VectorSourceType] {
+  open class default[VectorSourceType /* <: typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default] | typings.ol.sourceVectorTileMod.default */] () extends BaseVectorLayer[VectorSourceType] {
     def this(opt_options: Options) = this()
   }
   
@@ -46,6 +47,11 @@ object baseVectorMod {
     def getUpdateWhileAnimating(): Boolean = js.native
     
     def getUpdateWhileInteracting(): Boolean = js.native
+    
+    /**
+      * Render declutter items for this layer
+      */
+    def renderDeclutter(frameState: FrameState): Unit = js.native
     
     def setRenderOrder(): Unit = js.native
     def setRenderOrder(renderOrder: OrderFunction): Unit = js.native
@@ -88,7 +94,7 @@ object baseVectorMod {
     
     var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.undefined
     
-    var style: js.UndefOr[StyleLike] = js.undefined
+    var style: js.UndefOr[StyleLike | Null] = js.undefined
     
     var updateWhileAnimating: js.UndefOr[Boolean] = js.undefined
     
@@ -159,9 +165,11 @@ object baseVectorMod {
       
       inline def setStyleFunction2(value: (/* p0 */ FeatureLike, /* p1 */ Double) => Style | js.Array[Style]): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
       
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
+      
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setUpdateWhileAnimating(value: Boolean): Self = StObject.set(x, "updateWhileAnimating", value.asInstanceOf[js.Any])
       

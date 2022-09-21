@@ -34,7 +34,7 @@ trait API extends StObject {
     *   corresponding WL.api method, respectively.
     */
   def api[T](properties: IAPIProperties): IPromise[T] = js.native
-  def api[T](properties: IAPIProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[T] = js.native
+  def api[T](properties: IAPIProperties, callback: js.Function1[/* response */ Any, Unit]): IPromise[T] = js.native
   
   /**
     * Makes a call to download a file from Microsoft SkyDrive.
@@ -58,7 +58,7 @@ trait API extends StObject {
     *   file's content type and file stream, respectively.
     */
   def backgroundDownload[T](properties: IBackgroundDownloadProperties): IPromise[T] = js.native
-  def backgroundDownload[T](properties: IBackgroundDownloadProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[T] = js.native
+  def backgroundDownload[T](properties: IBackgroundDownloadProperties, callback: js.Function1[/* response */ Any, Unit]): IPromise[T] = js.native
   
   /**
     * Makes a call to upload a file to Microsoft SkyDrive.
@@ -80,7 +80,7 @@ trait API extends StObject {
     *   corresponding WL.backgroudUpload method, respectively.
     */
   def backgroundUpload[T](properties: IBackgroundUploadProperties): IPromise[T] = js.native
-  def backgroundUpload[T](properties: IBackgroundUploadProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[T] = js.native
+  def backgroundUpload[T](properties: IBackgroundUploadProperties, callback: js.Function1[/* response */ Any, Unit]): IPromise[T] = js.native
   
   /**
     * Specifies whether the current user can be signed out of their
@@ -117,7 +117,7 @@ trait API extends StObject {
     *   to the corresponding WL.download method.
     */
   def download(properties: IDownloadProperties): IPromise[Unit] = js.native
-  def download(properties: IDownloadProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[Unit] = js.native
+  def download(properties: IDownloadProperties, callback: js.Function1[/* response */ Any, Unit]): IPromise[Unit] = js.native
   
   /**
     * Displays the Microsoft SkyDrive file picker, which enables
@@ -134,7 +134,7 @@ trait API extends StObject {
     *   method, respectively.
     */
   def fileDialog(properties: IFileDialogProperties): IPromise[IFilePickerResult] = js.native
-  def fileDialog(properties: IFileDialogProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[IFilePickerResult] = js.native
+  def fileDialog(properties: IFileDialogProperties, callback: js.Function1[/* response */ Any, Unit]): IPromise[IFilePickerResult] = js.native
   
   /**
     * Returns the sign-in status of the current user. If the user is signed
@@ -221,7 +221,7 @@ trait API extends StObject {
     *   corresponding WL.login method, respectively.
     */
   def login(properties: ILoginProperties): IPromise[ILoginStatus] = js.native
-  def login(properties: ILoginProperties, callback: js.Function1[/* status */ js.Any, Unit]): IPromise[ILoginStatus] = js.native
+  def login(properties: ILoginProperties, callback: js.Function1[/* status */ Any, Unit]): IPromise[ILoginStatus] = js.native
   
   /**
     * Signs the user out of Live Connect and clears any user state that is
@@ -284,5 +284,5 @@ trait API extends StObject {
     *   Explorer 10 only.
     */
   def upload[T](properties: IUploadProperties): IPromise[T] = js.native
-  def upload[T](properties: IUploadProperties, callback: js.Function1[/* response */ js.Any, Unit]): IPromise[T] = js.native
+  def upload[T](properties: IUploadProperties, callback: js.Function1[/* response */ Any, Unit]): IPromise[T] = js.native
 }

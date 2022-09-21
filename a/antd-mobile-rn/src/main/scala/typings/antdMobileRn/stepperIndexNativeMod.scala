@@ -13,7 +13,7 @@ object stepperIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/stepper/index.native", JSImport.Default)
   @js.native
-  class default () extends Stepper
+  open class default () extends Stepper
   /* static members */
   object default {
     
@@ -57,6 +57,5 @@ object stepperIndexNativeMod {
   }
   
   @js.native
-  trait Stepper
-    extends Component[StepProps, js.Any, js.Any]
+  trait Stepper extends Component[StepProps, Any, Any]
 }

@@ -29,7 +29,7 @@ object mod {
   
   @JSImport("ng-table", "NgTableController")
   @js.native
-  class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected ()
+  open class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected ()
     extends typings.ngTable.browserMod.NgTableController[TParams, TCol] {
     def this(
       $scope: ITableScope[TParams],
@@ -58,12 +58,12 @@ object mod {
   
   @JSImport("ng-table", "NgTableDefaultGetDataProvider")
   @js.native
-  class NgTableDefaultGetDataProvider ()
+  open class NgTableDefaultGetDataProvider ()
     extends typings.ngTable.coreMod.NgTableDefaultGetDataProvider
   
   @JSImport("ng-table", "NgTableEventsChannel")
   @js.native
-  class NgTableEventsChannel protected ()
+  open class NgTableEventsChannel protected ()
     extends typings.ngTable.coreMod.NgTableEventsChannel {
     def this($rootScope: IRootScopeService) = this()
   }
@@ -82,7 +82,7 @@ object mod {
   
   @JSImport("ng-table", "NgTableFilterConfig")
   @js.native
-  class NgTableFilterConfig protected ()
+  open class NgTableFilterConfig protected ()
     extends typings.ngTable.browserMod.NgTableFilterConfig {
     def this(/**
       * Readonly copy of the final values used to configure the service.
@@ -104,7 +104,7 @@ object mod {
   
   @JSImport("ng-table", "NgTableFilterConfigProvider")
   @js.native
-  class NgTableFilterConfigProvider protected ()
+  open class NgTableFilterConfigProvider protected ()
     extends typings.ngTable.browserMod.NgTableFilterConfigProvider {
     def this($injector: IInjectorService) = this()
   }
@@ -123,7 +123,7 @@ object mod {
   
   @JSImport("ng-table", "NgTableParams")
   @js.native
-  class NgTableParams[T] ()
+  open class NgTableParams[T] ()
     extends typings.ngTable.coreMod.NgTableParams[T] {
     def this(baseParameters: Boolean) = this()
     def this(baseParameters: IParamValues[T]) = this()
@@ -140,13 +140,13 @@ object mod {
     
     @JSImport("ng-table", "NgTableParams.$log")
     @js.native
-    def $log: js.Any = js.native
-    inline def $log_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
+    def $log: Any = js.native
+    inline def $log_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table", "NgTableParams.$q")
     @js.native
-    def $q: js.Any = js.native
-    inline def $q_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
+    def $q: Any = js.native
+    inline def $q_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
     
     inline def init(
       $q: IQService,
@@ -158,18 +158,18 @@ object mod {
     
     @JSImport("ng-table", "NgTableParams.ngTableDefaults")
     @js.native
-    def ngTableDefaults: js.Any = js.native
-    inline def ngTableDefaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
+    def ngTableDefaults: Any = js.native
+    inline def ngTableDefaults_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table", "NgTableParams.ngTableEventsChannel")
     @js.native
-    def ngTableEventsChannel: js.Any = js.native
-    inline def ngTableEventsChannel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
+    def ngTableEventsChannel: Any = js.native
+    inline def ngTableEventsChannel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table", "NgTableParams.ngTableSettings")
     @js.native
-    def ngTableSettings: js.Any = js.native
-    inline def ngTableSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
+    def ngTableSettings: Any = js.native
+    inline def ngTableSettings_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table", "ngTableBrowserModule")

@@ -7,17 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** This Streams API interface provides a built-in byte length queuing strategy that can be used when constructing streams. */
 trait ByteLengthQueuingStrategy
   extends StObject
-     with QueuingStrategy[ArrayBufferView] {
+     with QueuingStrategy[js.typedarray.ArrayBufferView] {
   
+  /* standard dom */
   @JSName("highWaterMark")
-  var highWaterMark_ByteLengthQueuingStrategy: Double
+  val highWaterMark_ByteLengthQueuingStrategy: Double
   
+  /* standard dom */
   @JSName("size")
-  def size_MByteLengthQueuingStrategy(chunk: ArrayBufferView): Double
+  def size_MByteLengthQueuingStrategy(chunk: js.typedarray.ArrayBufferView): Double
 }
 object ByteLengthQueuingStrategy {
   
-  inline def apply(highWaterMark: Double, size: ArrayBufferView => Double): ByteLengthQueuingStrategy = {
+  inline def apply(highWaterMark: Double, size: js.typedarray.ArrayBufferView => Double): ByteLengthQueuingStrategy = {
     val __obj = js.Dynamic.literal(highWaterMark = highWaterMark.asInstanceOf[js.Any], size = js.Any.fromFunction1(size))
     __obj.asInstanceOf[ByteLengthQueuingStrategy]
   }
@@ -26,6 +28,6 @@ object ByteLengthQueuingStrategy {
     
     inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
-    inline def setSize(value: ArrayBufferView => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
+    inline def setSize(value: js.typedarray.ArrayBufferView => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
   }
 }

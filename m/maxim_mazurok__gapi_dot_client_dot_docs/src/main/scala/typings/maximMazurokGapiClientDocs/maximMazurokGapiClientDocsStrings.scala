@@ -47,8 +47,16 @@ object maximMazurokGapiClientDocsStrings {
   inline def Paragraph: Paragraph = "Paragraph".asInstanceOf[Paragraph]
   
   @js.native
+  sealed trait Person extends StObject
+  inline def Person: Person = "Person".asInstanceOf[Person]
+  
+  @js.native
   sealed trait PositionedObject extends StObject
   inline def PositionedObject: PositionedObject = "PositionedObject".asInstanceOf[PositionedObject]
+  
+  @js.native
+  sealed trait RichLink extends StObject
+  inline def RichLink: RichLink = "RichLink".asInstanceOf[RichLink]
   
   @js.native
   sealed trait TableCell extends StObject

@@ -21,7 +21,7 @@ object DistrictSearchResult {
     
     inline def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
     
-    inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value :_*))
+    inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value*))
     
     inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
   }

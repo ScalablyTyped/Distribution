@@ -42,7 +42,7 @@ object mod extends Shortcut {
     def proto(): Unit = js.native
     
     def strict[R](f: js.Function0[R]): js.Function0[R] & FnProps[R] = js.native
-    def strict[R](f: js.Function1[/* repeated */ js.Any, R]): (js.Function1[/* repeated */ js.Any, R]) & FnProps[R] = js.native
+    def strict[R](f: js.Function1[/* repeated */ Any, R]): (js.Function1[/* repeated */ Any, R]) & FnProps[R] = js.native
     def strict[T1, T2, R](f: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): (js.Function2[/* t1 */ T1, /* t2 */ T2, R]) & FnProps[R] = js.native
     def strict[T1, T2, T3, R](f: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): (js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]) & FnProps[R] = js.native
     def strict[T1, T2, T3, T4, R](f: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]): (js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]) & FnProps[R] = js.native
@@ -136,7 +136,7 @@ object mod extends Shortcut {
   trait OnceFn extends StObject {
     
     def apply[R](f: js.Function0[R]): js.Function0[R] & FnProps[R] = js.native
-    def apply[R](f: js.Function1[/* repeated */ js.Any, R]): (js.Function1[/* repeated */ js.Any, R]) & FnProps[R] = js.native
+    def apply[R](f: js.Function1[/* repeated */ Any, R]): (js.Function1[/* repeated */ Any, R]) & FnProps[R] = js.native
     def apply[T1, T2, R](f: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): (js.Function2[/* t1 */ T1, /* t2 */ T2, R]) & FnProps[R] = js.native
     def apply[T1, T2, T3, R](f: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): (js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]) & FnProps[R] = js.native
     def apply[T1, T2, T3, T4, R](f: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]): (js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]) & FnProps[R] = js.native
@@ -233,7 +233,7 @@ object mod extends Shortcut {
     trait Function extends StObject {
       
       // tslint:disable-next-line ban-types
-      def once(): Function & FnProps[js.Any] = js.native
+      def once(): Function & FnProps[Any] = js.native
     }
   }
 }

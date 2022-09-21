@@ -28,11 +28,11 @@ object Frame {
     
     inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setParticipanFrames(value: js.Array[StringDictionary[ParticipantFrame]]): Self = StObject.set(x, "participanFrames", value.asInstanceOf[js.Any])
     
-    inline def setParticipanFramesVarargs(value: StringDictionary[ParticipantFrame]*): Self = StObject.set(x, "participanFrames", js.Array(value :_*))
+    inline def setParticipanFramesVarargs(value: StringDictionary[ParticipantFrame]*): Self = StObject.set(x, "participanFrames", js.Array(value*))
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }

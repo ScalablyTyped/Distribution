@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxSeparatePaneIndicator")
 @js.native
-class ASPxSeparatePaneIndicator ()
+open class ASPxSeparatePaneIndicator ()
   extends StObject
      with typings.devexpressWeb.ASPxSeparatePaneIndicator {
   

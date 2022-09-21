@@ -43,25 +43,25 @@ object Spreadsheet {
     
     inline def setDataSourceSchedulesUndefined: Self = StObject.set(x, "dataSourceSchedules", js.undefined)
     
-    inline def setDataSourceSchedulesVarargs(value: DataSourceRefreshSchedule*): Self = StObject.set(x, "dataSourceSchedules", js.Array(value :_*))
+    inline def setDataSourceSchedulesVarargs(value: DataSourceRefreshSchedule*): Self = StObject.set(x, "dataSourceSchedules", js.Array(value*))
     
     inline def setDataSources(value: js.Array[DataSource]): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
     
     inline def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
     
-    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value*))
     
     inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
     inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
-    inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+    inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value*))
     
     inline def setNamedRanges(value: js.Array[NamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
     
     inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
     
-    inline def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
+    inline def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value*))
     
     inline def setProperties(value: SpreadsheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
@@ -71,7 +71,7 @@ object Spreadsheet {
     
     inline def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
     
-    inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "sheets", js.Array(value*))
     
     inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     

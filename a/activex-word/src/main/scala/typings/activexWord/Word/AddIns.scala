@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AddIns extends StObject {
   
   def Add(FileName: String): AddIn = js.native
-  def Add(FileName: String, Install: js.Any): AddIn = js.native
+  def Add(FileName: String, Install: Any): AddIn = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -16,9 +16,9 @@ trait AddIns extends StObject {
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): AddIn = js.native
+  def Item(Index: Any): AddIn = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Unload(RemoveFromList: Boolean): Unit = js.native
   

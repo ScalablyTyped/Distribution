@@ -32,7 +32,7 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.EmptySyntaxList")
   @js.native
-  class EmptySyntaxList ()
+  open class EmptySyntaxList ()
     extends StObject
        with typings.typescriptServices.TypeScript.Syntax.EmptySyntaxList {
     
@@ -98,7 +98,7 @@ object Syntax {
     override def toArray(): js.Array[ISyntaxNodeOrToken] = js.native
     
     /* CompleteClass */
-    override def toJSON(key: js.Any): js.Any = js.native
+    override def toJSON(key: Any): Any = js.native
     
     /* CompleteClass */
     override def trailingTrivia(): ISyntaxTriviaList = js.native
@@ -112,7 +112,7 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.FixedWidthTokenWithLeadingAndTrailingTrivia")
   @js.native
-  class FixedWidthTokenWithLeadingAndTrailingTrivia protected ()
+  open class FixedWidthTokenWithLeadingAndTrailingTrivia protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Syntax.FixedWidthTokenWithLeadingAndTrailingTrivia {
     def this(
@@ -123,16 +123,16 @@ object Syntax {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _fullText: js.Any = js.native
+    var _fullText: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _leadingTriviaInfo: js.Any = js.native
+    var _leadingTriviaInfo: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _trailingTriviaInfo: js.Any = js.native
+    var _trailingTriviaInfo: Any = js.native
     
     /* CompleteClass */
-    override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+    override def accept(visitor: ISyntaxVisitor): Any = js.native
     
     /* CompleteClass */
     override def childAt(index: Double): ISyntaxElement = js.native
@@ -144,7 +144,7 @@ object Syntax {
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    override def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -228,13 +228,13 @@ object Syntax {
     override def leadingTriviaWidth(): Double = js.native
     
     /* private */ /* CompleteClass */
-    override def realize(): js.Any = js.native
+    override def realize(): Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
     
     /* CompleteClass */
-    override def toJSON(key: js.Any): js.Any = js.native
+    override def toJSON(key: Any): Any = js.native
     
     /* CompleteClass */
     var tokenKind: typings.typescriptServices.TypeScript.SyntaxKind = js.native
@@ -246,7 +246,7 @@ object Syntax {
     override def trailingTriviaWidth(): Double = js.native
     
     /* CompleteClass */
-    override def value(): js.Any = js.native
+    override def value(): Any = js.native
     
     /* CompleteClass */
     override def valueText(): String = js.native
@@ -263,7 +263,7 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.FixedWidthTokenWithLeadingTrivia")
   @js.native
-  class FixedWidthTokenWithLeadingTrivia protected ()
+  open class FixedWidthTokenWithLeadingTrivia protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Syntax.FixedWidthTokenWithLeadingTrivia {
     def this(
@@ -273,13 +273,13 @@ object Syntax {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _fullText: js.Any = js.native
+    var _fullText: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _leadingTriviaInfo: js.Any = js.native
+    var _leadingTriviaInfo: Any = js.native
     
     /* CompleteClass */
-    override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+    override def accept(visitor: ISyntaxVisitor): Any = js.native
     
     /* CompleteClass */
     override def childAt(index: Double): ISyntaxElement = js.native
@@ -291,7 +291,7 @@ object Syntax {
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    override def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -375,13 +375,13 @@ object Syntax {
     override def leadingTriviaWidth(): Double = js.native
     
     /* private */ /* CompleteClass */
-    override def realize(): js.Any = js.native
+    override def realize(): Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
     
     /* CompleteClass */
-    override def toJSON(key: js.Any): js.Any = js.native
+    override def toJSON(key: Any): Any = js.native
     
     /* CompleteClass */
     var tokenKind: typings.typescriptServices.TypeScript.SyntaxKind = js.native
@@ -393,7 +393,7 @@ object Syntax {
     override def trailingTriviaWidth(): Double = js.native
     
     /* CompleteClass */
-    override def value(): js.Any = js.native
+    override def value(): Any = js.native
     
     /* CompleteClass */
     override def valueText(): String = js.native
@@ -410,13 +410,13 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.FixedWidthTokenWithNoTrivia")
   @js.native
-  class FixedWidthTokenWithNoTrivia protected ()
+  open class FixedWidthTokenWithNoTrivia protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Syntax.FixedWidthTokenWithNoTrivia {
     def this(kind: typings.typescriptServices.TypeScript.SyntaxKind) = this()
     
     /* CompleteClass */
-    override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+    override def accept(visitor: ISyntaxVisitor): Any = js.native
     
     /* CompleteClass */
     override def childAt(index: Double): ISyntaxElement = js.native
@@ -428,7 +428,7 @@ object Syntax {
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    override def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -512,13 +512,13 @@ object Syntax {
     override def leadingTriviaWidth(): Double = js.native
     
     /* private */ /* CompleteClass */
-    override def realize(): js.Any = js.native
+    override def realize(): Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
     
     /* CompleteClass */
-    override def toJSON(key: js.Any): js.Any = js.native
+    override def toJSON(key: Any): Any = js.native
     
     /* CompleteClass */
     var tokenKind: typings.typescriptServices.TypeScript.SyntaxKind = js.native
@@ -530,7 +530,7 @@ object Syntax {
     override def trailingTriviaWidth(): Double = js.native
     
     /* CompleteClass */
-    override def value(): js.Any = js.native
+    override def value(): Any = js.native
     
     /* CompleteClass */
     override def valueText(): String = js.native
@@ -547,7 +547,7 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.FixedWidthTokenWithTrailingTrivia")
   @js.native
-  class FixedWidthTokenWithTrailingTrivia protected ()
+  open class FixedWidthTokenWithTrailingTrivia protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Syntax.FixedWidthTokenWithTrailingTrivia {
     def this(
@@ -557,13 +557,13 @@ object Syntax {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _fullText: js.Any = js.native
+    var _fullText: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _trailingTriviaInfo: js.Any = js.native
+    var _trailingTriviaInfo: Any = js.native
     
     /* CompleteClass */
-    override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+    override def accept(visitor: ISyntaxVisitor): Any = js.native
     
     /* CompleteClass */
     override def childAt(index: Double): ISyntaxElement = js.native
@@ -575,7 +575,7 @@ object Syntax {
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    override def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -659,13 +659,13 @@ object Syntax {
     override def leadingTriviaWidth(): Double = js.native
     
     /* private */ /* CompleteClass */
-    override def realize(): js.Any = js.native
+    override def realize(): Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
     
     /* CompleteClass */
-    override def toJSON(key: js.Any): js.Any = js.native
+    override def toJSON(key: Any): Any = js.native
     
     /* CompleteClass */
     var tokenKind: typings.typescriptServices.TypeScript.SyntaxKind = js.native
@@ -677,7 +677,7 @@ object Syntax {
     override def trailingTriviaWidth(): Double = js.native
     
     /* CompleteClass */
-    override def value(): js.Any = js.native
+    override def value(): Any = js.native
     
     /* CompleteClass */
     override def valueText(): String = js.native
@@ -694,7 +694,7 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.NormalModeFactory")
   @js.native
-  class NormalModeFactory_ ()
+  open class NormalModeFactory_ ()
     extends StObject
        with NormalModeFactory {
     
@@ -1230,7 +1230,7 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.StrictModeFactory")
   @js.native
-  class StrictModeFactory_ ()
+  open class StrictModeFactory_ ()
     extends StObject
        with StrictModeFactory {
     
@@ -1766,7 +1766,7 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.VariableWidthTokenWithLeadingAndTrailingTrivia")
   @js.native
-  class VariableWidthTokenWithLeadingAndTrailingTrivia protected ()
+  open class VariableWidthTokenWithLeadingAndTrailingTrivia protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Syntax.VariableWidthTokenWithLeadingAndTrailingTrivia {
     def this(
@@ -1777,16 +1777,16 @@ object Syntax {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _fullText: js.Any = js.native
+    var _fullText: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _leadingTriviaInfo: js.Any = js.native
+    var _leadingTriviaInfo: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _trailingTriviaInfo: js.Any = js.native
+    var _trailingTriviaInfo: Any = js.native
     
     /* CompleteClass */
-    override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+    override def accept(visitor: ISyntaxVisitor): Any = js.native
     
     /* CompleteClass */
     override def childAt(index: Double): ISyntaxElement = js.native
@@ -1798,7 +1798,7 @@ object Syntax {
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    override def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -1882,13 +1882,13 @@ object Syntax {
     override def leadingTriviaWidth(): Double = js.native
     
     /* private */ /* CompleteClass */
-    override def realize(): js.Any = js.native
+    override def realize(): Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
     
     /* CompleteClass */
-    override def toJSON(key: js.Any): js.Any = js.native
+    override def toJSON(key: Any): Any = js.native
     
     /* CompleteClass */
     var tokenKind: typings.typescriptServices.TypeScript.SyntaxKind = js.native
@@ -1900,7 +1900,7 @@ object Syntax {
     override def trailingTriviaWidth(): Double = js.native
     
     /* CompleteClass */
-    override def value(): js.Any = js.native
+    override def value(): Any = js.native
     
     /* CompleteClass */
     override def valueText(): String = js.native
@@ -1917,7 +1917,7 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.VariableWidthTokenWithLeadingTrivia")
   @js.native
-  class VariableWidthTokenWithLeadingTrivia protected ()
+  open class VariableWidthTokenWithLeadingTrivia protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Syntax.VariableWidthTokenWithLeadingTrivia {
     def this(
@@ -1927,13 +1927,13 @@ object Syntax {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _fullText: js.Any = js.native
+    var _fullText: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _leadingTriviaInfo: js.Any = js.native
+    var _leadingTriviaInfo: Any = js.native
     
     /* CompleteClass */
-    override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+    override def accept(visitor: ISyntaxVisitor): Any = js.native
     
     /* CompleteClass */
     override def childAt(index: Double): ISyntaxElement = js.native
@@ -1945,7 +1945,7 @@ object Syntax {
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    override def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -2029,13 +2029,13 @@ object Syntax {
     override def leadingTriviaWidth(): Double = js.native
     
     /* private */ /* CompleteClass */
-    override def realize(): js.Any = js.native
+    override def realize(): Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
     
     /* CompleteClass */
-    override def toJSON(key: js.Any): js.Any = js.native
+    override def toJSON(key: Any): Any = js.native
     
     /* CompleteClass */
     var tokenKind: typings.typescriptServices.TypeScript.SyntaxKind = js.native
@@ -2047,7 +2047,7 @@ object Syntax {
     override def trailingTriviaWidth(): Double = js.native
     
     /* CompleteClass */
-    override def value(): js.Any = js.native
+    override def value(): Any = js.native
     
     /* CompleteClass */
     override def valueText(): String = js.native
@@ -2064,16 +2064,16 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.VariableWidthTokenWithNoTrivia")
   @js.native
-  class VariableWidthTokenWithNoTrivia protected ()
+  open class VariableWidthTokenWithNoTrivia protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Syntax.VariableWidthTokenWithNoTrivia {
     def this(fullText: String, kind: typings.typescriptServices.TypeScript.SyntaxKind) = this()
     
     /* private */ /* CompleteClass */
-    var _fullText: js.Any = js.native
+    var _fullText: Any = js.native
     
     /* CompleteClass */
-    override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+    override def accept(visitor: ISyntaxVisitor): Any = js.native
     
     /* CompleteClass */
     override def childAt(index: Double): ISyntaxElement = js.native
@@ -2085,7 +2085,7 @@ object Syntax {
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    override def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -2169,13 +2169,13 @@ object Syntax {
     override def leadingTriviaWidth(): Double = js.native
     
     /* private */ /* CompleteClass */
-    override def realize(): js.Any = js.native
+    override def realize(): Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
     
     /* CompleteClass */
-    override def toJSON(key: js.Any): js.Any = js.native
+    override def toJSON(key: Any): Any = js.native
     
     /* CompleteClass */
     var tokenKind: typings.typescriptServices.TypeScript.SyntaxKind = js.native
@@ -2187,7 +2187,7 @@ object Syntax {
     override def trailingTriviaWidth(): Double = js.native
     
     /* CompleteClass */
-    override def value(): js.Any = js.native
+    override def value(): Any = js.native
     
     /* CompleteClass */
     override def valueText(): String = js.native
@@ -2204,7 +2204,7 @@ object Syntax {
   
   @JSGlobal("TypeScript.Syntax.VariableWidthTokenWithTrailingTrivia")
   @js.native
-  class VariableWidthTokenWithTrailingTrivia protected ()
+  open class VariableWidthTokenWithTrailingTrivia protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Syntax.VariableWidthTokenWithTrailingTrivia {
     def this(
@@ -2214,13 +2214,13 @@ object Syntax {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _fullText: js.Any = js.native
+    var _fullText: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _trailingTriviaInfo: js.Any = js.native
+    var _trailingTriviaInfo: Any = js.native
     
     /* CompleteClass */
-    override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+    override def accept(visitor: ISyntaxVisitor): Any = js.native
     
     /* CompleteClass */
     override def childAt(index: Double): ISyntaxElement = js.native
@@ -2232,7 +2232,7 @@ object Syntax {
     override def collectTextElements(elements: js.Array[String]): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+    override def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any = js.native
     
     /* CompleteClass */
     override def firstToken(): ISyntaxToken = js.native
@@ -2316,13 +2316,13 @@ object Syntax {
     override def leadingTriviaWidth(): Double = js.native
     
     /* private */ /* CompleteClass */
-    override def realize(): js.Any = js.native
+    override def realize(): Any = js.native
     
     /* CompleteClass */
     override def text(): String = js.native
     
     /* CompleteClass */
-    override def toJSON(key: js.Any): js.Any = js.native
+    override def toJSON(key: Any): Any = js.native
     
     /* CompleteClass */
     var tokenKind: typings.typescriptServices.TypeScript.SyntaxKind = js.native
@@ -2334,7 +2334,7 @@ object Syntax {
     override def trailingTriviaWidth(): Double = js.native
     
     /* CompleteClass */
-    override def value(): js.Any = js.native
+    override def value(): Any = js.native
     
     /* CompleteClass */
     override def valueText(): String = js.native
@@ -2517,7 +2517,7 @@ object Syntax {
   
   inline def tokenStructuralEquals(token1: ISyntaxToken, token2: ISyntaxToken): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenStructuralEquals")(token1.asInstanceOf[js.Any], token2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def tokenToJSON(token: ISyntaxToken): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenToJSON")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def tokenToJSON(token: ISyntaxToken): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenToJSON")(token.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def trivia(kind: typings.typescriptServices.TypeScript.SyntaxKind, text: String): ISyntaxTrivia = (^.asInstanceOf[js.Dynamic].applyDynamic("trivia")(kind.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[ISyntaxTrivia]
   
@@ -2529,7 +2529,7 @@ object Syntax {
   
   inline def trueExpression(): IUnaryExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("trueExpression")().asInstanceOf[IUnaryExpressionSyntax]
   
-  inline def value(token: ISyntaxToken): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def value(token: ISyntaxToken): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(token.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def valueText(token: ISyntaxToken): String = ^.asInstanceOf[js.Dynamic].applyDynamic("valueText")(token.asInstanceOf[js.Any]).asInstanceOf[String]
   

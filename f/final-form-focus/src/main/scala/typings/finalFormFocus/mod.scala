@@ -1,7 +1,6 @@
 package typings.finalFormFocus
 
 import typings.finalForm.mod.Decorator
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[FormValues](): Decorator[FormValues, Partial[FormValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
-  inline def default[FormValues](getInputs: Unit, findInput: FindInput): Decorator[FormValues, Partial[FormValues]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any], findInput.asInstanceOf[js.Any])).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
-  inline def default[FormValues](getInputs: GetInputs): Decorator[FormValues, Partial[FormValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any]).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
-  inline def default[FormValues](getInputs: GetInputs, findInput: FindInput): Decorator[FormValues, Partial[FormValues]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any], findInput.asInstanceOf[js.Any])).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
+  inline def default[FormValues, InitialFormValues](): Decorator[FormValues, InitialFormValues] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Decorator[FormValues, InitialFormValues]]
+  inline def default[FormValues, InitialFormValues](getInputs: Unit, findInput: FindInput): Decorator[FormValues, InitialFormValues] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any], findInput.asInstanceOf[js.Any])).asInstanceOf[Decorator[FormValues, InitialFormValues]]
+  inline def default[FormValues, InitialFormValues](getInputs: GetInputs): Decorator[FormValues, InitialFormValues] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any]).asInstanceOf[Decorator[FormValues, InitialFormValues]]
+  inline def default[FormValues, InitialFormValues](getInputs: GetInputs, findInput: FindInput): Decorator[FormValues, InitialFormValues] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any], findInput.asInstanceOf[js.Any])).asInstanceOf[Decorator[FormValues, InitialFormValues]]
   
   inline def getFormInputs(formName: String): GetInputs = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormInputs")(formName.asInstanceOf[js.Any]).asInstanceOf[GetInputs]
   

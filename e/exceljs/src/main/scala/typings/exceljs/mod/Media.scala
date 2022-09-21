@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Media extends StObject {
   
-  var buffer: Buffer
+  var buffer: js.typedarray.ArrayBuffer
   
   var `extension`: String
   
@@ -17,7 +17,7 @@ trait Media extends StObject {
 }
 object Media {
   
-  inline def apply(buffer: Buffer, `extension`: String, name: String, `type`: String): Media = {
+  inline def apply(buffer: js.typedarray.ArrayBuffer, `extension`: String, name: String, `type`: String): Media = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -26,7 +26,7 @@ object Media {
   
   extension [Self <: Media](x: Self) {
     
-    inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

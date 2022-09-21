@@ -17,31 +17,31 @@ trait BlocksArray
     * 
     * @param value The values that will be added to the end of the array
     */
-  def add(value: js.Any): BlocksArray = js.native
+  def add(value: Any): BlocksArray = js.native
   /**
     * @param value The values that will be added to the end of the array
     * @param index Optional index specifying where to insert the value
     */
-  def add(value: js.Any, index: Double): BlocksArray = js.native
+  def add(value: Any, index: Double): BlocksArray = js.native
   
   /**
     * Adds the values from the provided array(s) to the end of the collection
     * 
     * @param value The array that will be added to the end of the array
     */
-  def addMany(value: js.Array[js.Any]): BlocksArray = js.native
+  def addMany(value: js.Array[Any]): BlocksArray = js.native
   /**
     * @param value The array that will be added to the end of the array
     * @param index Optional position where the array of values to be inserted
     */
-  def addMany(value: js.Array[js.Any], index: Double): BlocksArray = js.native
+  def addMany(value: js.Array[Any], index: Double): BlocksArray = js.native
   
   /**
     * The concat() method is used to join two or more arrays
     * 
     * @param arrays The arrays to be joined
     */
-  def concat(arrays: js.Any*): js.Array[js.Any] = js.native
+  def concat(arrays: Any*): js.Array[Any] = js.native
   
   /**
     * Extends the current observable with particular functionality depending on the parameters specified.
@@ -50,7 +50,7 @@ trait BlocksArray
     * 
     * @param options Optional options
     */
-  def extend(options: js.Any*): BlocksArray = js.native
+  def extend(options: Any*): BlocksArray = js.native
   
   /**
     * The join() method joins the elements of an array into a string, and returns the string
@@ -72,26 +72,26 @@ trait BlocksArray
   /**
     * The pop() method removes the last element of a observable array, and returns that element
     */
-  def pop(): js.Any = js.native
+  def pop(): Any = js.native
   
   /** 
     * The push() method adds new items to the end of the observable array, and returns the new length
     * 
     * @param values The item(s) to add to the observable array
     */
-  def push(values: js.Any*): Double = js.native
+  def push(values: Any*): Double = js.native
   
   /**
     * Removes an item from the observable array
     * 
     * @param value The value that will be removed or a callback function which returns true or false to determine if the value should be removed
     */
-  def remove(value: js.Any): BlocksArray = js.native
+  def remove(value: Any): BlocksArray = js.native
   /**
     * @param value The value that will be removed or a callback function which returns true or false to determine if the value should be removed
     * @param thisArg Optional this context for the callback
     */
-  def remove(value: js.Any, thisArg: js.Function): BlocksArray = js.native
+  def remove(value: Any, thisArg: js.Function): BlocksArray = js.native
   
   /**
     * Removes all items from the observable array and optionally filter which items to be removed by providing a callback
@@ -105,7 +105,7 @@ trait BlocksArray
     * @param callback Optional callback function which filters which items to be removed. Returning a truthy value will remove the item and vice versa
     * @param thisArg Optional this context for the callback function
     */
-  def removeAll(callback: js.Function, thisArg: js.Any): BlocksArray = js.native
+  def removeAll(callback: js.Function, thisArg: Any): BlocksArray = js.native
   
   /**
     * Removes an item at the specified index
@@ -125,39 +125,39 @@ trait BlocksArray
     * 
     * @param value The new value that will be populated
     */
-  def reset(value: js.Array[js.Any]): BlocksArray = js.native
+  def reset(value: js.Array[Any]): BlocksArray = js.native
   
   /**
     * Reverses the order of the elements in the observable array
     */
-  def reverse(): js.Array[js.Any] = js.native
+  def reverse(): js.Array[Any] = js.native
   
   /**
     * Removes the first element of a observable array, and returns that element
     */
-  def shift(): js.Any = js.native
+  def shift(): Any = js.native
   
   /**
     * The slice() method returns the selected elements in an array, as a new array object
     * 
     * @param start An integer that specifies where to start the selection (The first element has an index of 0)
     */
-  def slice(start: Double): js.Array[js.Any] = js.native
+  def slice(start: Double): js.Array[Any] = js.native
   /**
     * @param start An integer that specifies where to start the selection (The first element has an index of 0)
     * @param end An integer that specifies where to end the selection. If omitted, all elements from the start position and to the end of the array will be selected.
     *            Use negative numbers to select from the end of an array
     */
-  def slice(start: Double, end: Double): js.Array[js.Any] = js.native
+  def slice(start: Double, end: Double): js.Array[Any] = js.native
   
   /**
     * Sorts the elements of an array
     */
-  def sort(): js.Array[js.Any] = js.native
+  def sort(): js.Array[Any] = js.native
   /**
     * @param sortfunction A function that defines the sort order
     */
-  def sort(sortfunction: js.Function): js.Array[js.Any] = js.native
+  def sort(sortfunction: js.Function): js.Array[Any] = js.native
   
   /**
     * Adds and/or removes elements from the observable array
@@ -167,7 +167,7 @@ trait BlocksArray
     * @param howMany The number of items to be removed. If set to 0, no items will be removed.
     * @param items The new item(s) to be added to the array.
     */
-  def splice(index: Double, howMany: Double, items: js.Any*): js.Array[js.Any] = js.native
+  def splice(index: Double, howMany: Double, items: Any*): js.Array[Any] = js.native
   
   /**
     * Swaps two values in the observable array. Note: Faster than removing the items and adding them at the locations
@@ -182,5 +182,5 @@ trait BlocksArray
     * 
     * @param items
     */
-  def unshift(items: js.Any*): Double = js.native
+  def unshift(items: Any*): Double = js.native
 }

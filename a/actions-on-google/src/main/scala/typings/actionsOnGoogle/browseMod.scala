@@ -5,6 +5,7 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsCarouselBrowse
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsCarouselBrowseImageDisplayOptions
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsCarouselBrowseItem
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsImage
+import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsOpenUrlAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ object browseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/browse", "BrowseCarousel")
   @js.native
-  class BrowseCarousel protected ()
+  open class BrowseCarousel protected ()
     extends StObject
        with GoogleActionsV2UiElementsCarouselBrowse
        with _RichResponseItem {
@@ -36,7 +37,7 @@ object browseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/browse", "BrowseCarouselItem")
   @js.native
-  class BrowseCarouselItem protected ()
+  open class BrowseCarouselItem protected ()
     extends StObject
        with GoogleActionsV2UiElementsCarouselBrowseItem {
     /**
@@ -67,6 +68,13 @@ object browseMod {
     var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
     
     /**
+      * The URL action that occurs by clicking the BrowseCarouselItem.
+      * You should either set this field or `url` but not both.
+      * @public
+      */
+    var openUrlAction: js.UndefOr[GoogleActionsV2UiElementsOpenUrlAction] = js.undefined
+    
+    /**
       * Title of the option item.
       * @public
       */
@@ -74,14 +82,15 @@ object browseMod {
     
     /**
       * The URL of the link opened by clicking the BrowseCarouselItem.
+      * You should either set this field or `openUrlAction` but not both.
       * @public
       */
-    var url: String
+    var url: js.UndefOr[String] = js.undefined
   }
   object BrowseCarouselItemOptions {
     
-    inline def apply(title: String, url: String): BrowseCarouselItemOptions = {
-      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(title: String): BrowseCarouselItemOptions = {
+      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrowseCarouselItemOptions]
     }
     
@@ -99,9 +108,15 @@ object browseMod {
       
       inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
+      inline def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
+      
+      inline def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
+      
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -134,7 +149,7 @@ object browseMod {
       
       inline def setItems(value: js.Array[GoogleActionsV2UiElementsCarouselBrowseItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: GoogleActionsV2UiElementsCarouselBrowseItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: GoogleActionsV2UiElementsCarouselBrowseItem*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
 }

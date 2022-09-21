@@ -33,6 +33,6 @@ object ListPrincipalsForPortfolioOutput {
     
     inline def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
     
-    inline def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "Principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "Principals", js.Array(value*))
   }
 }

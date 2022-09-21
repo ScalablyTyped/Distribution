@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("ReactCrop")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.reactImageCrop.mod.^
     
     @JSGlobal("ReactCrop")

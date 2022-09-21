@@ -8,20 +8,20 @@ object hierarchyMod {
   
   trait HierarchyApi extends StObject {
     
-    def getAllEdges(): js.Array[js.Any]
+    def getAllEdges(): js.Array[Any]
     
-    def getAllLinks(): js.Array[js.Any]
+    def getAllLinks(): js.Array[Any]
     
-    def getAllNodes(): js.Array[js.Any]
+    def getAllNodes(): js.Array[Any]
     
-    var root: js.UndefOr[js.Any] = js.undefined
+    var root: js.UndefOr[Any] = js.undefined
   }
   object HierarchyApi {
     
     inline def apply(
-      getAllEdges: () => js.Array[js.Any],
-      getAllLinks: () => js.Array[js.Any],
-      getAllNodes: () => js.Array[js.Any]
+      getAllEdges: () => js.Array[Any],
+      getAllLinks: () => js.Array[Any],
+      getAllNodes: () => js.Array[Any]
     ): HierarchyApi = {
       val __obj = js.Dynamic.literal(getAllEdges = js.Any.fromFunction0(getAllEdges), getAllLinks = js.Any.fromFunction0(getAllLinks), getAllNodes = js.Any.fromFunction0(getAllNodes))
       __obj.asInstanceOf[HierarchyApi]
@@ -29,13 +29,13 @@ object hierarchyMod {
     
     extension [Self <: HierarchyApi](x: Self) {
       
-      inline def setGetAllEdges(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAllEdges", js.Any.fromFunction0(value))
+      inline def setGetAllEdges(value: () => js.Array[Any]): Self = StObject.set(x, "getAllEdges", js.Any.fromFunction0(value))
       
-      inline def setGetAllLinks(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAllLinks", js.Any.fromFunction0(value))
+      inline def setGetAllLinks(value: () => js.Array[Any]): Self = StObject.set(x, "getAllLinks", js.Any.fromFunction0(value))
       
-      inline def setGetAllNodes(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAllNodes", js.Any.fromFunction0(value))
+      inline def setGetAllNodes(value: () => js.Array[Any]): Self = StObject.set(x, "getAllNodes", js.Any.fromFunction0(value))
       
-      inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
       inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }

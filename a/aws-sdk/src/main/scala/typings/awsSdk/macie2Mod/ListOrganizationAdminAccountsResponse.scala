@@ -29,7 +29,7 @@ object ListOrganizationAdminAccountsResponse {
     
     inline def setAdminAccountsUndefined: Self = StObject.set(x, "adminAccounts", js.undefined)
     
-    inline def setAdminAccountsVarargs(value: AdminAccount*): Self = StObject.set(x, "adminAccounts", js.Array(value :_*))
+    inline def setAdminAccountsVarargs(value: AdminAccount*): Self = StObject.set(x, "adminAccounts", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

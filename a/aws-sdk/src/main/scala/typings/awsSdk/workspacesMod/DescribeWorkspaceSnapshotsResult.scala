@@ -29,12 +29,12 @@ object DescribeWorkspaceSnapshotsResult {
     
     inline def setRebuildSnapshotsUndefined: Self = StObject.set(x, "RebuildSnapshots", js.undefined)
     
-    inline def setRebuildSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "RebuildSnapshots", js.Array(value :_*))
+    inline def setRebuildSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "RebuildSnapshots", js.Array(value*))
     
     inline def setRestoreSnapshots(value: SnapshotList): Self = StObject.set(x, "RestoreSnapshots", value.asInstanceOf[js.Any])
     
     inline def setRestoreSnapshotsUndefined: Self = StObject.set(x, "RestoreSnapshots", js.undefined)
     
-    inline def setRestoreSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "RestoreSnapshots", js.Array(value :_*))
+    inline def setRestoreSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "RestoreSnapshots", js.Array(value*))
   }
 }

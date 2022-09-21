@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLCanvasElement")
 @js.native
-/* private */ class IHTMLCanvasElement ()
+/* private */ open class IHTMLCanvasElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLCanvasElement {
   
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var height: Double = js.native
   
   /* CompleteClass */
-  override def toDataURL(`type`: String, jpegquality: js.Any): String = js.native
+  override def toDataURL(`type`: String, jpegquality: Any): String = js.native
   
   /* CompleteClass */
   var width: Double = js.native

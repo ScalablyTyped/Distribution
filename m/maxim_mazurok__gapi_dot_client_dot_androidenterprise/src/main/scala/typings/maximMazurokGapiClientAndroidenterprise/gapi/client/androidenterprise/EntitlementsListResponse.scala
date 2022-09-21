@@ -22,6 +22,6 @@ object EntitlementsListResponse {
     
     inline def setEntitlementUndefined: Self = StObject.set(x, "entitlement", js.undefined)
     
-    inline def setEntitlementVarargs(value: Entitlement*): Self = StObject.set(x, "entitlement", js.Array(value :_*))
+    inline def setEntitlementVarargs(value: Entitlement*): Self = StObject.set(x, "entitlement", js.Array(value*))
   }
 }

@@ -9,7 +9,6 @@ import typings.openpgp.openpgpStrings.binary
 import typings.openpgp.openpgpStrings.node
 import typings.openpgp.openpgpStrings.utf8
 import typings.openpgp.openpgpStrings.web
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait DecryptOptions extends StObject {
   /**
     * (optional) use the given date for verification instead of the current time
     */
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
   /**
     * (optional) whether to return data as a string(Stream) or Uint8Array(Stream). If 'utf8' (the default), also normalize newlines.
@@ -70,7 +69,7 @@ object DecryptOptions {
   
   extension [Self <: DecryptOptions](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
@@ -84,25 +83,25 @@ object DecryptOptions {
     
     inline def setPasswordsUndefined: Self = StObject.set(x, "passwords", js.undefined)
     
-    inline def setPasswordsVarargs(value: String*): Self = StObject.set(x, "passwords", js.Array(value :_*))
+    inline def setPasswordsVarargs(value: String*): Self = StObject.set(x, "passwords", js.Array(value*))
     
     inline def setPrivateKeys(value: Key | js.Array[Key]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
     
     inline def setPrivateKeysUndefined: Self = StObject.set(x, "privateKeys", js.undefined)
     
-    inline def setPrivateKeysVarargs(value: Key*): Self = StObject.set(x, "privateKeys", js.Array(value :_*))
+    inline def setPrivateKeysVarargs(value: Key*): Self = StObject.set(x, "privateKeys", js.Array(value*))
     
     inline def setPublicKeys(value: Key | js.Array[Key]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
     inline def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
-    inline def setPublicKeysVarargs(value: Key*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
+    inline def setPublicKeysVarargs(value: Key*): Self = StObject.set(x, "publicKeys", js.Array(value*))
     
     inline def setSessionKeys(value: Algorithm | js.Array[Algorithm]): Self = StObject.set(x, "sessionKeys", value.asInstanceOf[js.Any])
     
     inline def setSessionKeysUndefined: Self = StObject.set(x, "sessionKeys", js.undefined)
     
-    inline def setSessionKeysVarargs(value: Algorithm*): Self = StObject.set(x, "sessionKeys", js.Array(value :_*))
+    inline def setSessionKeysVarargs(value: Algorithm*): Self = StObject.set(x, "sessionKeys", js.Array(value*))
     
     inline def setSignature(value: Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     

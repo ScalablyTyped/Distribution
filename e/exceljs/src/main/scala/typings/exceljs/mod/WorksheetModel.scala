@@ -54,7 +54,7 @@ object WorksheetModel {
     
     inline def setMedia(value: js.Array[Media]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    inline def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
+    inline def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -64,10 +64,10 @@ object WorksheetModel {
     
     inline def setRowBreaks(value: js.Array[RowBreak]): Self = StObject.set(x, "rowBreaks", value.asInstanceOf[js.Any])
     
-    inline def setRowBreaksVarargs(value: RowBreak*): Self = StObject.set(x, "rowBreaks", js.Array(value :_*))
+    inline def setRowBreaksVarargs(value: RowBreak*): Self = StObject.set(x, "rowBreaks", js.Array(value*))
     
     inline def setViews(value: js.Array[WorksheetView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
-    inline def setViewsVarargs(value: WorksheetView*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: WorksheetView*): Self = StObject.set(x, "views", js.Array(value*))
   }
 }

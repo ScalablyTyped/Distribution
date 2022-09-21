@@ -10,10 +10,10 @@ JSS port of normalize.css
 | ------------------ | :-------------: |
 | Full name          | normalize-jss |
 | Keywords           | normalize, jss, jsstyles, cssinjs |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 11731 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1817.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/cssinjs/normalize-jss#readme)

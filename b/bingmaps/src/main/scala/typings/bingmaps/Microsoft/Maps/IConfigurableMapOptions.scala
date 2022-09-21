@@ -25,6 +25,6 @@ object IConfigurableMapOptions {
     
     inline def setModules(value: js.Array[IConfigurableMapModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    inline def setModulesVarargs(value: IConfigurableMapModule*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: IConfigurableMapModule*): Self = StObject.set(x, "modules", js.Array(value*))
   }
 }

@@ -52,6 +52,11 @@ trait DBEngineVersion extends StObject {
   var SupportedTimezones: js.UndefOr[SupportedTimezonesList] = js.undefined
   
   /**
+    * A value that indicates whether you can use Aurora global databases with a specific DB engine version.
+    */
+  var SupportsGlobalDatabases: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * A value that indicates whether the engine version supports exporting the log types specified by ExportableLogTypes to CloudWatch Logs.
     */
   var SupportsLogExportsToCloudwatchLogs: js.UndefOr[Boolean] = js.undefined
@@ -103,19 +108,23 @@ object DBEngineVersion {
     
     inline def setExportableLogTypesUndefined: Self = StObject.set(x, "ExportableLogTypes", js.undefined)
     
-    inline def setExportableLogTypesVarargs(value: String*): Self = StObject.set(x, "ExportableLogTypes", js.Array(value :_*))
+    inline def setExportableLogTypesVarargs(value: String*): Self = StObject.set(x, "ExportableLogTypes", js.Array(value*))
     
     inline def setSupportedCharacterSets(value: SupportedCharacterSetsList): Self = StObject.set(x, "SupportedCharacterSets", value.asInstanceOf[js.Any])
     
     inline def setSupportedCharacterSetsUndefined: Self = StObject.set(x, "SupportedCharacterSets", js.undefined)
     
-    inline def setSupportedCharacterSetsVarargs(value: CharacterSet*): Self = StObject.set(x, "SupportedCharacterSets", js.Array(value :_*))
+    inline def setSupportedCharacterSetsVarargs(value: CharacterSet*): Self = StObject.set(x, "SupportedCharacterSets", js.Array(value*))
     
     inline def setSupportedTimezones(value: SupportedTimezonesList): Self = StObject.set(x, "SupportedTimezones", value.asInstanceOf[js.Any])
     
     inline def setSupportedTimezonesUndefined: Self = StObject.set(x, "SupportedTimezones", js.undefined)
     
-    inline def setSupportedTimezonesVarargs(value: Timezone*): Self = StObject.set(x, "SupportedTimezones", js.Array(value :_*))
+    inline def setSupportedTimezonesVarargs(value: Timezone*): Self = StObject.set(x, "SupportedTimezones", js.Array(value*))
+    
+    inline def setSupportsGlobalDatabases(value: Boolean): Self = StObject.set(x, "SupportsGlobalDatabases", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsGlobalDatabasesUndefined: Self = StObject.set(x, "SupportsGlobalDatabases", js.undefined)
     
     inline def setSupportsLogExportsToCloudwatchLogs(value: Boolean): Self = StObject.set(x, "SupportsLogExportsToCloudwatchLogs", value.asInstanceOf[js.Any])
     
@@ -129,6 +138,6 @@ object DBEngineVersion {
     
     inline def setValidUpgradeTargetUndefined: Self = StObject.set(x, "ValidUpgradeTarget", js.undefined)
     
-    inline def setValidUpgradeTargetVarargs(value: UpgradeTarget*): Self = StObject.set(x, "ValidUpgradeTarget", js.Array(value :_*))
+    inline def setValidUpgradeTargetVarargs(value: UpgradeTarget*): Self = StObject.set(x, "ValidUpgradeTarget", js.Array(value*))
   }
 }

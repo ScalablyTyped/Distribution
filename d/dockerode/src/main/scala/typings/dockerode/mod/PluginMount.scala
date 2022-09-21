@@ -45,11 +45,11 @@ object PluginMount {
     
     inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "Options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "Options", js.Array(value*))
     
     inline def setSettable(value: js.Array[String]): Self = StObject.set(x, "Settable", value.asInstanceOf[js.Any])
     
-    inline def setSettableVarargs(value: String*): Self = StObject.set(x, "Settable", js.Array(value :_*))
+    inline def setSettableVarargs(value: String*): Self = StObject.set(x, "Settable", js.Array(value*))
     
     inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     

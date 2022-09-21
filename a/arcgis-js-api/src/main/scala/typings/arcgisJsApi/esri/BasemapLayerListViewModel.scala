@@ -24,7 +24,7 @@ trait BasemapLayerListViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#baseListItemCreatedFunction)
     */
-  def baseListItemCreatedFunction(event: js.Any): Unit = js.native
+  def baseListItemCreatedFunction(event: Any): scala.Unit = js.native
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html).
     *
@@ -52,7 +52,7 @@ trait BasemapLayerListViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#referenceListItemCreatedFunction)
     */
-  def referenceListItemCreatedFunction(event: js.Any): Unit = js.native
+  def referenceListItemCreatedFunction(event: Any): scala.Unit = js.native
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing reference layers.
     *
@@ -64,6 +64,8 @@ trait BasemapLayerListViewModel
   /**
     * The view model's state.
     *
+    * @default disabled
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#state)
     */
   val state: ready | loading | disabled = js.native
@@ -73,8 +75,8 @@ trait BasemapLayerListViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html#triggerAction)
     */
-  def triggerAction(action: ActionButton, item: ListItem): Unit = js.native
-  def triggerAction(action: ActionToggle, item: ListItem): Unit = js.native
+  def triggerAction(action: ActionButton, item: ListItem): scala.Unit = js.native
+  def triggerAction(action: ActionToggle, item: ListItem): scala.Unit = js.native
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).

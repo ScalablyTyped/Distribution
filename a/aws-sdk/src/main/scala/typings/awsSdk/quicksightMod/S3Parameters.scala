@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Parameters extends StObject {
   
   /**
-    * Location of the Amazon S3 manifest file. This is NULL if the manifest file was uploaded in the console.
+    * Location of the Amazon S3 manifest file. This is NULL if the manifest file was uploaded into Amazon QuickSight.
     */
   var ManifestFileLocation: typings.awsSdk.quicksightMod.ManifestFileLocation
 }

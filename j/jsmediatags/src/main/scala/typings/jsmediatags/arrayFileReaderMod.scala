@@ -9,7 +9,7 @@ object arrayFileReaderMod {
   
   @JSImport("jsmediatags/build2/ArrayFileReader", JSImport.Default)
   @js.native
-  class default protected () extends ArrayFileReader {
+  open class default protected () extends ArrayFileReader {
     def this(array: ByteArray) = this()
   }
   /* static members */
@@ -19,7 +19,7 @@ object arrayFileReaderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def canReadFile(file: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def canReadFile(file: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @js.native

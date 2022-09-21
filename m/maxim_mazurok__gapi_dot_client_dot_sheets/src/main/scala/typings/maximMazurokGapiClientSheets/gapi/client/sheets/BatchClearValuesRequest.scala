@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BatchClearValuesRequest extends StObject {
   
-  /** The ranges to clear, in A1 notation. */
+  /** The ranges to clear, in [A1 notation or R1C1 notation](/sheets/api/guides/concepts#cell). */
   var ranges: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BatchClearValuesRequest {
@@ -22,6 +22,6 @@ object BatchClearValuesRequest {
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value*))
   }
 }

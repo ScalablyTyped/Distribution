@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateProvisioningTemplateResponse extends StObject {
   
   /**
-    * The default version of the fleet provisioning template.
+    * The default version of the provisioning template.
     */
   var defaultVersionId: js.UndefOr[TemplateVersionId] = js.undefined
   
@@ -17,7 +17,7 @@ trait CreateProvisioningTemplateResponse extends StObject {
   var templateArn: js.UndefOr[TemplateArn] = js.undefined
   
   /**
-    * The name of the fleet provisioning template.
+    * The name of the provisioning template.
     */
   var templateName: js.UndefOr[TemplateName] = js.undefined
 }

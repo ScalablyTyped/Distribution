@@ -91,6 +91,6 @@ object FillPaint {
     
     inline def `setFill-translateUndefined`: Self = StObject.set(x, "fill-translate", js.undefined)
     
-    inline def `setFill-translateVarargs`(value: Double*): Self = StObject.set(x, "fill-translate", js.Array(value :_*))
+    inline def `setFill-translateVarargs`(value: Double*): Self = StObject.set(x, "fill-translate", js.Array(value*))
   }
 }

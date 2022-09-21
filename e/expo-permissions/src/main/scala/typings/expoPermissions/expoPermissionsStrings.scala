@@ -64,6 +64,30 @@ object expoPermissionsStrings {
   inline def location: location = "location".asInstanceOf[location]
   
   @js.native
+  sealed trait locationBackground
+    extends StObject
+       with PermissionType
+  inline def locationBackground: locationBackground = "locationBackground".asInstanceOf[locationBackground]
+  
+  @js.native
+  sealed trait locationForeground
+    extends StObject
+       with PermissionType
+  inline def locationForeground: locationForeground = "locationForeground".asInstanceOf[locationForeground]
+  
+  @js.native
+  sealed trait mediaLibrary
+    extends StObject
+       with PermissionType
+  inline def mediaLibrary: mediaLibrary = "mediaLibrary".asInstanceOf[mediaLibrary]
+  
+  @js.native
+  sealed trait mediaLibraryWriteOnly
+    extends StObject
+       with PermissionType
+  inline def mediaLibraryWriteOnly: mediaLibraryWriteOnly = "mediaLibraryWriteOnly".asInstanceOf[mediaLibraryWriteOnly]
+  
+  @js.native
   sealed trait motion
     extends StObject
        with PermissionType

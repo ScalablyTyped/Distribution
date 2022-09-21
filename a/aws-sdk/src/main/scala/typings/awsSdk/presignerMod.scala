@@ -16,7 +16,7 @@ object presignerMod {
   /**
     * Creates a presigner object with a set of configuration options.
     */
-  class Presigner () extends StObject {
+  open class Presigner () extends StObject {
     def this(options: PresignerOptions) = this()
     
     /**
@@ -44,7 +44,7 @@ object presignerMod {
       /**
         * An optional map of parameters to bind to every request sent by this service object. 
         */
-      var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+      var params: js.UndefOr[StringDictionary[Any]] = js.undefined
       
       /**
         * An optional pre-configured instance of the AWS.Polly service object to use for requests. The object may bound parameters used by the presigner.
@@ -60,7 +60,7 @@ object presignerMod {
       
       extension [Self <: PresignerOptions](x: Self) {
         
-        inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
         inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         

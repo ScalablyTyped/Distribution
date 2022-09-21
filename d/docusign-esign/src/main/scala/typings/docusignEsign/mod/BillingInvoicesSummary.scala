@@ -28,7 +28,7 @@ object BillingInvoicesSummary {
     
     inline def setBillingInvoicesUndefined: Self = StObject.set(x, "billingInvoices", js.undefined)
     
-    inline def setBillingInvoicesVarargs(value: BillingInvoice*): Self = StObject.set(x, "billingInvoices", js.Array(value :_*))
+    inline def setBillingInvoicesVarargs(value: BillingInvoice*): Self = StObject.set(x, "billingInvoices", js.Array(value*))
     
     inline def setPastDueBalance(value: String): Self = StObject.set(x, "pastDueBalance", value.asInstanceOf[js.Any])
     

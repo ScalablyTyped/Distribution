@@ -8,5 +8,5 @@ object tagQueueMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/TagQueue", "TagQueue")
   @js.native
-  val TagQueue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val TagQueue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

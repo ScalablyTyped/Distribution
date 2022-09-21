@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.Tile")
 @js.native
-class Tile protected () extends Source {
+open class Tile protected () extends Source {
   /**
     * @classdesc
     * Abstract base class; normally only used for creating subclasses and not

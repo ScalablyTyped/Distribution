@@ -10,10 +10,10 @@ Linq methods based on .NET
 | ------------------ | :-------------: |
 | Full name          | linqsharp |
 | Keywords           | linq |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 113 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18.666666666666668 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/brunolm/LinqSharp#readme)

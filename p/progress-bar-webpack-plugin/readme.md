@@ -10,15 +10,12 @@ A progress bar for Webpack.
 | ------------------ | :-------------: |
 | Full name          | progress-bar-webpack-plugin |
 | Keywords           | webpack, plugin, progress, bar |
-| # releases         | 3 |
-| # dependents       | 562 |
-| # downloads        | 6519896 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 584371.0 |
+| # stars            | 427.0 |
 
 ## Links
-- [Homepage](https://github.com/clessg/progress-bar-webpack-plugin#readme)
-- [Bugs](https://github.com/clessg/progress-bar-webpack-plugin/issues)
-- [Repository](https://github.com/clessg/progress-bar-webpack-plugin)
 - [Npm](https://www.npmjs.com/package/progress-bar-webpack-plugin)
     
 

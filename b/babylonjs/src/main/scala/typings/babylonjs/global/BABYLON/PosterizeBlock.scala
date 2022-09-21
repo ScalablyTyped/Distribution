@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PosterizeBlock")
 @js.native
-class PosterizeBlock protected ()
+open class PosterizeBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PosterizeBlock {
   /**

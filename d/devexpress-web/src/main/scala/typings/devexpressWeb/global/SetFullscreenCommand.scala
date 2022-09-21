@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SetFullscreenCommand")
 @js.native
-class SetFullscreenCommand ()
+open class SetFullscreenCommand ()
   extends StObject
      with typings.devexpressWeb.SetFullscreenCommand {
   

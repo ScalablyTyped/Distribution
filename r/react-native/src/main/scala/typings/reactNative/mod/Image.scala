@@ -10,10 +10,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @JSImport("react-native", "Image")
+- Dropped new (args : ...any): react-native.react-native.NativeMethods */ @JSImport("react-native", "Image")
 @js.native
-class Image ()
-  extends Component[ImageProps, js.Object, js.Any]
+open class Image ()
+  extends Component[ImageProps, js.Object, Any]
 /* static members */
 object Image {
   
@@ -26,26 +26,29 @@ object Image {
   def abortPrefetch: js.UndefOr[js.Function1[/* requestId */ Double, Unit]] = js.native
   inline def abortPrefetch_=(x: js.UndefOr[js.Function1[/* requestId */ Double, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("abortPrefetch")(x.asInstanceOf[js.Any])
   
-  inline def getSize(uri: String, success: js.Function2[/* width */ Double, /* height */ Double, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(uri.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getSize(uri: String, success: js.Function2[/* width */ Double, /* height */ Double, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(uri.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def getSize(
     uri: String,
     success: js.Function2[/* width */ Double, /* height */ Double, Unit],
-    failure: js.Function1[/* error */ js.Any, Unit]
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(uri.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    failure: js.Function1[/* error */ Any, Unit]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(uri.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def getSizeWithHeaders(
     uri: String,
     headers: StringDictionary[String],
     success: js.Function2[/* width */ Double, /* height */ Double, Unit]
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeWithHeaders")(uri.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeWithHeaders")(uri.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def getSizeWithHeaders(
     uri: String,
     headers: StringDictionary[String],
     success: js.Function2[/* width */ Double, /* height */ Double, Unit],
-    failure: js.Function1[/* error */ js.Any, Unit]
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeWithHeaders")(uri.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    failure: js.Function1[/* error */ Any, Unit]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeWithHeaders")(uri.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def prefetch(url: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("prefetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  
+  inline def prefetchWithMetadata(url: String, queryRootName: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("prefetchWithMetadata")(url.asInstanceOf[js.Any], queryRootName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def prefetchWithMetadata(url: String, queryRootName: String, rootTag: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("prefetchWithMetadata")(url.asInstanceOf[js.Any], queryRootName.asInstanceOf[js.Any], rootTag.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   @JSImport("react-native", "Image.queryCache")
   @js.native

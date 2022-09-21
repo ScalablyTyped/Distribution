@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("app-builder-lib", "AppInfo")
   @js.native
-  class AppInfo protected ()
+  open class AppInfo protected ()
     extends typings.appBuilderLib.appInfoMod.AppInfo {
     def this(info: typings.appBuilderLib.packagerMod.Packager) = this()
     def this(info: typings.appBuilderLib.packagerMod.Packager, buildVersion: String) = this()
@@ -51,12 +51,14 @@ object mod {
     
     /* 0 */ val ia32: typings.builderUtil.archMod.Arch.ia32 & Double = js.native
     
+    /* 4 */ val universal: typings.builderUtil.archMod.Arch.universal & Double = js.native
+    
     /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 & Double = js.native
   }
   
   @JSImport("app-builder-lib", "CancellationToken")
   @js.native
-  class CancellationToken ()
+  open class CancellationToken ()
     extends typings.builderUtilRuntime.mod.CancellationToken {
     def this(parent: typings.builderUtilRuntime.cancellationTokenMod.CancellationToken) = this()
   }
@@ -71,7 +73,7 @@ object mod {
   
   @JSImport("app-builder-lib", "Packager")
   @js.native
-  class Packager protected ()
+  open class Packager protected ()
     extends typings.appBuilderLib.packagerMod.Packager {
     def this(options: PackagerOptions) = this()
     def this(options: PackagerOptions, cancellationToken: typings.builderUtilRuntime.mod.CancellationToken) = this()
@@ -79,7 +81,7 @@ object mod {
   
   @JSImport("app-builder-lib", "Platform")
   @js.native
-  class Platform protected ()
+  open class Platform protected ()
     extends typings.appBuilderLib.coreMod.Platform {
     def this(
       name: String,
@@ -129,18 +131,18 @@ object mod {
     
     @JSImport("app-builder-lib", "PlatformPackager.buildAsyncTargets")
     @js.native
-    def buildAsyncTargets: js.Any = js.native
-    inline def buildAsyncTargets_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildAsyncTargets")(x.asInstanceOf[js.Any])
+    def buildAsyncTargets: Any = js.native
+    inline def buildAsyncTargets_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildAsyncTargets")(x.asInstanceOf[js.Any])
     
     @JSImport("app-builder-lib", "PlatformPackager.normalizePlatformSpecificBuildOptions")
     @js.native
-    def normalizePlatformSpecificBuildOptions: js.Any = js.native
-    inline def normalizePlatformSpecificBuildOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizePlatformSpecificBuildOptions")(x.asInstanceOf[js.Any])
+    def normalizePlatformSpecificBuildOptions: Any = js.native
+    inline def normalizePlatformSpecificBuildOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizePlatformSpecificBuildOptions")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("app-builder-lib", "PublishManager")
   @js.native
-  class PublishManager protected ()
+  open class PublishManager protected ()
     extends typings.appBuilderLib.publishManagerMod.PublishManager {
     def this(packager: typings.appBuilderLib.packagerMod.Packager, publishOptions: PublishOptions) = this()
     def this(
@@ -168,4 +170,5 @@ object mod {
   inline def checkBuildRequestOptions(options: PackagerOptions & PublishOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBuildRequestOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def getArchSuffix(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getArchSuffix(arch: Arch, defaultArch: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any], defaultArch.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -2,8 +2,6 @@ package typings.browserfs.anon
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.buffer.mod.Buffer
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +57,7 @@ trait TypeofBuffer_
   /**
     * The same as buf1.compare(buf2).
     */
-  def compare(buf1: Uint8Array, buf2: Uint8Array): Double = js.native
+  def compare(buf1: js.typedarray.Uint8Array, buf2: js.typedarray.Uint8Array): Double = js.native
   
   /**
     * Returns a buffer which is the result of concatenating all the buffers in the list together.
@@ -72,8 +70,8 @@ trait TypeofBuffer_
     * @param totalLength Total length of the buffers when concatenated.
     *   If totalLength is not provided, it is read from the buffers in the list. However, this adds an additional loop to the function, so it is faster to provide the length explicitly.
     */
-  def concat(list: js.Array[Uint8Array]): Buffer = js.native
-  def concat(list: js.Array[Uint8Array], totalLength: Double): Buffer = js.native
+  def concat(list: js.Array[js.typedarray.Uint8Array]): Buffer = js.native
+  def concat(list: js.Array[js.typedarray.Uint8Array], totalLength: Double): Buffer = js.native
   
   /**
     * When passed a reference to the .buffer property of a TypedArray instance,
@@ -85,23 +83,23 @@ trait TypeofBuffer_
     * @param byteOffset
     * @param length
     */
-  def from(arrayBuffer: ArrayBuffer): Buffer = js.native
-  def from(arrayBuffer: ArrayBuffer, byteOffset: Double): Buffer = js.native
-  def from(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): Buffer = js.native
-  def from(arrayBuffer: ArrayBuffer, byteOffset: Unit, length: Double): Buffer = js.native
+  def from(arrayBuffer: js.typedarray.ArrayBuffer): Buffer = js.native
+  def from(arrayBuffer: js.typedarray.ArrayBuffer, byteOffset: Double): Buffer = js.native
+  def from(arrayBuffer: js.typedarray.ArrayBuffer, byteOffset: Double, length: Double): Buffer = js.native
+  def from(arrayBuffer: js.typedarray.ArrayBuffer, byteOffset: Unit, length: Double): Buffer = js.native
   /**
     * Allocates a new Buffer using an {array} of octets.
     *
     * @param array
     */
-  def from(array: js.Array[js.Any]): Buffer = js.native
+  def from(array: js.Array[Any]): Buffer = js.native
+  def from(buffer: js.typedarray.Uint8Array): Buffer = js.native
   /**
     * Copies the passed {buffer} data onto a new Buffer instance.
     *
     * @param buffer
     */
   def from(buffer: Buffer): Buffer = js.native
-  def from(buffer: Uint8Array): Buffer = js.native
   /**
     * Creates a new Buffer containing the given JavaScript string {str}.
     * If provided, the {encoding} parameter identifies the character encoding.
@@ -117,7 +115,7 @@ trait TypeofBuffer_
     *
     * @param obj object to test.
     */
-  def isBuffer(obj: js.Any): /* is buffer.buffer.Buffer */ Boolean = js.native
+  def isBuffer(obj: Any): /* is buffer.buffer.Buffer */ Boolean = js.native
   
   /**
     * Returns true if {encoding} is a valid encoding argument.

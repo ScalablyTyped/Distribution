@@ -10,10 +10,10 @@ The lodash method `_.ceil` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.ceil |
 | Keywords           | lodash-modularized, ceil |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 3403 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2461.6666666666665 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

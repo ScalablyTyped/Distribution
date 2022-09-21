@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("uuid-js", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with uuid {
     
@@ -17,16 +17,16 @@ object mod {
     
     /* CompleteClass */
     override def fromParts(
-      timeLow: js.Any,
-      timeMid: js.Any,
-      timeHiAndVersion: js.Any,
-      clockSeqHiAndReserved: js.Any,
-      clockSeqLow: js.Any,
-      node: js.Any
+      timeLow: Any,
+      timeMid: Any,
+      timeHiAndVersion: Any,
+      clockSeqHiAndReserved: Any,
+      clockSeqLow: Any,
+      node: Any
     ): uuid = js.native
     
     /* CompleteClass */
-    override def toBytes(): js.Array[js.Any] = js.native
+    override def toBytes(): js.Array[Any] = js.native
     
     /* CompleteClass */
     override def toURN(): String = js.native
@@ -43,7 +43,7 @@ object mod {
   inline def firstFromTime(time: Double): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("firstFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
-  inline def fromBinary(binary: js.Any): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(binary.asInstanceOf[js.Any]).asInstanceOf[uuid]
+  inline def fromBinary(binary: Any): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(binary.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
   inline def fromBytes(ints: js.Array[Double]): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(ints.asInstanceOf[js.Any]).asInstanceOf[uuid]
@@ -53,13 +53,13 @@ object mod {
   inline def fromTime(time: Double, last: Boolean): uuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTime")(time.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[uuid]
   
   /* static member */
-  inline def fromURN(strId: js.Any): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURN")(strId.asInstanceOf[js.Any]).asInstanceOf[uuid]
+  inline def fromURN(strId: Any): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURN")(strId.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
-  inline def getTimeFieldValues(time: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeFieldValues")(time.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getTimeFieldValues(time: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeFieldValues")(time.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* static member */
-  inline def lastFromTime(time: js.Any): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("lastFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[uuid]
+  inline def lastFromTime(time: Any): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("lastFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[uuid]
   
   /* static member */
   @JSImport("uuid-js", "limitUI04")
@@ -122,7 +122,7 @@ object mod {
   inline def newTS(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("newTS")().asInstanceOf[uuid]
   
   /* static member */
-  inline def paddedString(string: js.Any, length: js.Any, z: js.Any): uuid = (^.asInstanceOf[js.Dynamic].applyDynamic("paddedString")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[uuid]
+  inline def paddedString(string: Any, length: Any, z: Any): uuid = (^.asInstanceOf[js.Dynamic].applyDynamic("paddedString")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[uuid]
   
   /* static member */
   inline def randomUI04(): uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUI04")().asInstanceOf[uuid]
@@ -156,15 +156,15 @@ object mod {
     def equals(uuid: uuid): Boolean
     
     def fromParts(
-      timeLow: js.Any,
-      timeMid: js.Any,
-      timeHiAndVersion: js.Any,
-      clockSeqHiAndReserved: js.Any,
-      clockSeqLow: js.Any,
-      node: js.Any
+      timeLow: Any,
+      timeMid: Any,
+      timeHiAndVersion: Any,
+      clockSeqHiAndReserved: Any,
+      clockSeqLow: Any,
+      node: Any
     ): uuid
     
-    def toBytes(): js.Array[js.Any]
+    def toBytes(): js.Array[Any]
     
     def toURN(): String
   }
@@ -172,8 +172,8 @@ object mod {
     
     inline def apply(
       equals_ : uuid => Boolean,
-      fromParts: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => uuid,
-      toBytes: () => js.Array[js.Any],
+      fromParts: (Any, Any, Any, Any, Any, Any) => uuid,
+      toBytes: () => js.Array[Any],
       toURN: () => String
     ): uuid = {
       val __obj = js.Dynamic.literal(fromParts = js.Any.fromFunction6(fromParts), toBytes = js.Any.fromFunction0(toBytes), toURN = js.Any.fromFunction0(toURN))
@@ -185,9 +185,9 @@ object mod {
       
       inline def setEquals_(value: uuid => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      inline def setFromParts(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => uuid): Self = StObject.set(x, "fromParts", js.Any.fromFunction6(value))
+      inline def setFromParts(value: (Any, Any, Any, Any, Any, Any) => uuid): Self = StObject.set(x, "fromParts", js.Any.fromFunction6(value))
       
-      inline def setToBytes(value: () => js.Array[js.Any]): Self = StObject.set(x, "toBytes", js.Any.fromFunction0(value))
+      inline def setToBytes(value: () => js.Array[Any]): Self = StObject.set(x, "toBytes", js.Any.fromFunction0(value))
       
       inline def setToURN(value: () => String): Self = StObject.set(x, "toURN", js.Any.fromFunction0(value))
     }

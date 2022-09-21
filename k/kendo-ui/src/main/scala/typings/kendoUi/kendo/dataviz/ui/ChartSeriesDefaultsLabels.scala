@@ -22,6 +22,8 @@ trait ChartSeriesDefaultsLabels extends StObject {
   
   var padding: js.UndefOr[Double | ChartSeriesDefaultsLabelsPadding] = js.undefined
   
+  var position: js.UndefOr[String | js.Function] = js.undefined
+  
   var rotation: js.UndefOr[String | Double] = js.undefined
   
   var template: js.UndefOr[String | js.Function] = js.undefined
@@ -72,6 +74,10 @@ object ChartSeriesDefaultsLabels {
     inline def setPadding(value: Double | ChartSeriesDefaultsLabelsPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setPosition(value: String | js.Function): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setRotation(value: String | Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

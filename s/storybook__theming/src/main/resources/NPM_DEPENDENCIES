@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/theming" : "6.1.2"
+      "@storybook/theming" : "6.5.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/theming" : "6.1.2"
+      "@storybook/theming" : "6.5.12"
     }
   ],
   "compile-devDependencies" : [

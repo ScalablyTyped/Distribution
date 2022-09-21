@@ -1,15 +1,20 @@
 package typings.reactNativeChartsWrapper.mod
 
+import typings.reactNative.mod.NativeSyntheticEvent
+import typings.reactNativeChartsWrapper.anon.Action
+import typings.reactNativeChartsWrapper.anon.FnCall
+import typings.reactNativeChartsWrapper.anon.Y
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ChartChangeEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNativeChartsWrapper.anon.Action]
+type ChartChangeEvent = NativeSyntheticEvent[Action]
 
-type ChartSelectEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNativeChartsWrapper.anon.Y | scala.Null]
+type ChartSelectEvent = NativeSyntheticEvent[Y | Null]
 
-type Color = typings.std.ReturnType[typings.reactNativeChartsWrapper.anon.FnCall]
+type Color = ReturnType[FnCall]
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.largeValue
@@ -18,4 +23,4 @@ type Color = typings.std.ReturnType[typings.reactNativeChartsWrapper.anon.FnCall
   - java.lang.String
   - js.Array[java.lang.String]
 */
-type ValueFormatter = typings.reactNativeChartsWrapper.mod._ValueFormatter | js.Array[java.lang.String] | java.lang.String
+type ValueFormatter = _ValueFormatter | js.Array[String] | String

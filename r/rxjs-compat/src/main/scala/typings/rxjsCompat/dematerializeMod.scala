@@ -10,5 +10,5 @@ object dematerializeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def dematerialize[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dematerialize")().asInstanceOf[js.Any]
+  inline def dematerialize[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dematerialize")().asInstanceOf[Any]
 }

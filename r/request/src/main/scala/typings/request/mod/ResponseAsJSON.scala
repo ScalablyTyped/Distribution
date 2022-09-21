@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResponseAsJSON extends StObject {
   
-  var body: js.Any
+  var body: Any
   
   var headers: Headers
   
@@ -16,14 +16,14 @@ trait ResponseAsJSON extends StObject {
 }
 object ResponseAsJSON {
   
-  inline def apply(body: js.Any, headers: Headers, request: RequestAsJSON, statusCode: Double): ResponseAsJSON = {
+  inline def apply(body: Any, headers: Headers, request: RequestAsJSON, statusCode: Double): ResponseAsJSON = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseAsJSON]
   }
   
   extension [Self <: ResponseAsJSON](x: Self) {
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

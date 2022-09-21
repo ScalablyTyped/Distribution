@@ -7,32 +7,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteResultProperties extends StObject {
   
   /**
-    * Route directions are returned if `RouteParameters.returnDirections = true`.
+    * Direction lines contains a set of line features for each segment of the route.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html#directions)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#directionLines)
+    */
+  var directionLines: js.UndefOr[FeatureSetProperties] = js.undefined
+  
+  /**
+    * Direction points contains a set of point features representing the direction maneuvers such as arriving to or departing from a stop, turning left or right, and other events along your route.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#directionPoints)
+    */
+  var directionPoints: js.UndefOr[FeatureSetProperties] = js.undefined
+  
+  /**
+    * Route directions are returned if `RouteParameters.returnDirections = true` and `RouteParameters.directionsOutputType` is not set to "featuresets"`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#directions)
     */
   var directions: js.UndefOr[DirectionsFeatureSetProperties] = js.undefined
   
   /**
     * The Route graphic that is returned if `RouteParameters.returnRoutes = true`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html#route)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#route)
     */
   var route: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
     * The name of the route.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html#routeName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#routeName)
     */
   var routeName: js.UndefOr[String] = js.undefined
   
   /**
     * Array of stops.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html#stops)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#stops)
     */
   var stops: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
+  
+  /**
+    * This provides access to the edges that are traversed while solving a network analysis layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#traversedEdges)
+    */
+  var traversedEdges: js.UndefOr[FeatureSetProperties] = js.undefined
+  
+  /**
+    * This provides access to the junctions that are traversed while solving a network analysis layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#traversedJunctions)
+    */
+  var traversedJunctions: js.UndefOr[FeatureSetProperties] = js.undefined
+  
+  /**
+    * This provides access to the turns that are traversed while solving a network analysis layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html#traversedTurns)
+    */
+  var traversedTurns: js.UndefOr[FeatureSetProperties] = js.undefined
 }
 object RouteResultProperties {
   
@@ -42,6 +77,14 @@ object RouteResultProperties {
   }
   
   extension [Self <: RouteResultProperties](x: Self) {
+    
+    inline def setDirectionLines(value: FeatureSetProperties): Self = StObject.set(x, "directionLines", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionLinesUndefined: Self = StObject.set(x, "directionLines", js.undefined)
+    
+    inline def setDirectionPoints(value: FeatureSetProperties): Self = StObject.set(x, "directionPoints", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionPointsUndefined: Self = StObject.set(x, "directionPoints", js.undefined)
     
     inline def setDirections(value: DirectionsFeatureSetProperties): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
@@ -59,6 +102,18 @@ object RouteResultProperties {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: GraphicProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: GraphicProperties*): Self = StObject.set(x, "stops", js.Array(value*))
+    
+    inline def setTraversedEdges(value: FeatureSetProperties): Self = StObject.set(x, "traversedEdges", value.asInstanceOf[js.Any])
+    
+    inline def setTraversedEdgesUndefined: Self = StObject.set(x, "traversedEdges", js.undefined)
+    
+    inline def setTraversedJunctions(value: FeatureSetProperties): Self = StObject.set(x, "traversedJunctions", value.asInstanceOf[js.Any])
+    
+    inline def setTraversedJunctionsUndefined: Self = StObject.set(x, "traversedJunctions", js.undefined)
+    
+    inline def setTraversedTurns(value: FeatureSetProperties): Self = StObject.set(x, "traversedTurns", value.asInstanceOf[js.Any])
+    
+    inline def setTraversedTurnsUndefined: Self = StObject.set(x, "traversedTurns", js.undefined)
   }
 }

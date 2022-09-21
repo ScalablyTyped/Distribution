@@ -10,10 +10,10 @@ object terrainMod {
   
   @JSImport("material-ui/svg-icons/maps/terrain", JSImport.Default)
   @js.native
-  class default () extends MapsTerrain
+  open class default () extends MapsTerrain
   
   @JSImport("material-ui/svg-icons/maps/terrain", "MapsTerrain")
   @js.native
-  class MapsTerrain ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsTerrain ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

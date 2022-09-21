@@ -4,38 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore/v1beta1", "firestore_v1beta1.Resource$Projects$Databases$Indexes")
 @js.native
-class ResourceProjectsDatabasesIndexes protected () extends StObject {
+open class ResourceProjectsDatabasesIndexes protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * firestore.projects.databases.indexes.create
-    * @desc Creates the specified index. A newly created index's initial state
-    * is `CREATING`. On completion of the returned
-    * google.longrunning.Operation, the state will be `READY`. If the index
-    * already exists, the call will return an `ALREADY_EXISTS` status.  During
-    * creation, the process could result in an error, in which case the index
-    * will move to the `ERROR` state. The process can be recovered by fixing
-    * the data that caused the error, removing the index with delete, then
-    * re-creating the index with create.  Indexes with a single field cannot be
-    * created.
-    * @alias firestore.projects.databases.indexes.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent The name of the database this index will apply to. For example: `projects/{project_id}/databases/{database_id}`
-    * @param {().GoogleFirestoreAdminV1beta1Index} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
@@ -46,8 +27,8 @@ class ResourceProjectsDatabasesIndexes protected () extends StObject {
   ): Unit = js.native
   def create(
     params: ParamsResourceProjectsDatabasesIndexesCreate,
-    options: BodyResponseCallback[SchemaGoogleLongrunningOperation],
-    callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
+    options: BodyResponseCallback[Readable | SchemaGoogleLongrunningOperation],
+    callback: BodyResponseCallback[Readable | SchemaGoogleLongrunningOperation]
   ): Unit = js.native
   def create(params: ParamsResourceProjectsDatabasesIndexesCreate, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(
@@ -55,19 +36,81 @@ class ResourceProjectsDatabasesIndexes protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
-  
   /**
-    * firestore.projects.databases.indexes.delete
-    * @desc Deletes an index.
-    * @alias firestore.projects.databases.indexes.delete
-    * @memberOf! ()
+    * Creates the specified index. A newly created index's initial state is `CREATING`. On completion of the returned google.longrunning.Operation, the state will be `READY`. If the index already exists, the call will return an `ALREADY_EXISTS` status. During creation, the process could result in an error, in which case the index will move to the `ERROR` state. The process can be recovered by fixing the data that caused the error, removing the index with delete, then re-creating the index with create. Indexes with a single field cannot be created.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/firestore.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The index name. For example: `projects/{project_id}/databases/{database_id}/indexes/{index_id}`
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const firestore = google.firestore('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/datastore',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await firestore.projects.databases.indexes.create({
+    *     // The name of the database this index will apply to. For example: `projects/{project_id\}/databases/{database_id\}`
+    *     parent: 'projects/my-project/databases/my-database',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "collectionId": "my_collectionId",
+    *       //   "fields": [],
+    *       //   "name": "my_name",
+    *       //   "state": "my_state"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceProjectsDatabasesIndexesCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceProjectsDatabasesIndexesCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -75,8 +118,8 @@ class ResourceProjectsDatabasesIndexes protected () extends StObject {
   def delete(params: ParamsResourceProjectsDatabasesIndexesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
     params: ParamsResourceProjectsDatabasesIndexesDelete,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def delete(params: ParamsResourceProjectsDatabasesIndexesDelete, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
@@ -84,19 +127,64 @@ class ResourceProjectsDatabasesIndexes protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * firestore.projects.databases.indexes.get
-    * @desc Gets an index.
-    * @alias firestore.projects.databases.indexes.get
-    * @memberOf! ()
+    * Deletes an index.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/firestore.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The name of the index. For example: `projects/{project_id}/databases/{database_id}/indexes/{index_id}`
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const firestore = google.firestore('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/datastore',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await firestore.projects.databases.indexes.delete({
+    *     // The index name. For example: `projects/{project_id\}/databases/{database_id\}/indexes/{index_id\}`
+    *     name: 'projects/my-project/databases/my-database/indexes/my-indexe',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceProjectsDatabasesIndexesDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceProjectsDatabasesIndexesDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1Index] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1Index]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1Index] = js.native
@@ -107,8 +195,8 @@ class ResourceProjectsDatabasesIndexes protected () extends StObject {
   ): Unit = js.native
   def get(
     params: ParamsResourceProjectsDatabasesIndexesGet,
-    options: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1Index],
-    callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1Index]
+    options: BodyResponseCallback[Readable | SchemaGoogleFirestoreAdminV1beta1Index],
+    callback: BodyResponseCallback[Readable | SchemaGoogleFirestoreAdminV1beta1Index]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsDatabasesIndexesGet, options: MethodOptions): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1Index] = js.native
   def get(
@@ -116,22 +204,69 @@ class ResourceProjectsDatabasesIndexes protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1Index]
   ): Unit = js.native
-  
   /**
-    * firestore.projects.databases.indexes.list
-    * @desc Lists the indexes that match the specified filters.
-    * @alias firestore.projects.databases.indexes.list
-    * @memberOf! ()
+    * Gets an index.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/firestore.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter
-    * @param {integer=} params.pageSize The standard List page size.
-    * @param {string=} params.pageToken The standard List page token.
-    * @param {string} params.parent The database name. For example: `projects/{project_id}/databases/{database_id}`
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const firestore = google.firestore('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/datastore',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await firestore.projects.databases.indexes.get({
+    *     // The name of the index. For example: `projects/{project_id\}/databases/{database_id\}/indexes/{index_id\}`
+    *     name: 'projects/my-project/databases/my-database/indexes/my-indexe',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "collectionId": "my_collectionId",
+    *   //   "fields": [],
+    *   //   "name": "my_name",
+    *   //   "state": "my_state"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceProjectsDatabasesIndexesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsDatabasesIndexesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse] = js.native
@@ -142,13 +277,78 @@ class ResourceProjectsDatabasesIndexes protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsDatabasesIndexesList,
-    options: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse],
-    callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse]
+    options: BodyResponseCallback[Readable | SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse],
+    callback: BodyResponseCallback[Readable | SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsDatabasesIndexesList, options: MethodOptions): GaxiosPromise[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse] = js.native
   def list(
     params: ParamsResourceProjectsDatabasesIndexesList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleFirestoreAdminV1beta1ListIndexesResponse]
+  ): Unit = js.native
+  /**
+    * Lists the indexes that match the specified filters.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/firestore.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const firestore = google.firestore('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/datastore',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await firestore.projects.databases.indexes.list({
+    *     filter: 'placeholder-value',
+    *     // The standard List page size.
+    *     pageSize: 'placeholder-value',
+    *     // The standard List page token.
+    *     pageToken: 'placeholder-value',
+    *     // The database name. For example: `projects/{project_id\}/databases/{database_id\}`
+    *     parent: 'projects/my-project/databases/my-database',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "indexes": [],
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceProjectsDatabasesIndexesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsDatabasesIndexesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

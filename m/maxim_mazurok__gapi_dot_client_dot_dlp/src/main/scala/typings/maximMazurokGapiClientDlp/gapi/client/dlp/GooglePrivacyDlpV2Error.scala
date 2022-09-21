@@ -29,6 +29,6 @@ object GooglePrivacyDlpV2Error {
     
     inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
-    inline def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
+    inline def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value*))
   }
 }

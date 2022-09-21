@@ -20,7 +20,7 @@ object mod {
   
   type Matchers = StringDictionary[js.Array[Settings]]
   
-  type Rename = String | (js.Function1[/* path */ ParsedPath, js.Any]) | Options
+  type Rename = String | (js.Function1[/* path */ ParsedPath, Any]) | Options
   
   type SamplingFactor = js.Tuple2[Double, Double]
   
@@ -97,7 +97,7 @@ object mod {
       
       inline def setRename(value: Rename): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
       
-      inline def setRenameFunction1(value: /* path */ ParsedPath => js.Any): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
+      inline def setRenameFunction1(value: /* path */ ParsedPath => Any): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
       
       inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
       

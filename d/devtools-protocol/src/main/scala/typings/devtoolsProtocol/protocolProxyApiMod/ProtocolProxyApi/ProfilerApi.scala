@@ -6,8 +6,6 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.preciseCoverageDeltaUpda
 import typings.devtoolsProtocol.mod.Protocol.Profiler.ConsoleProfileFinishedEvent
 import typings.devtoolsProtocol.mod.Protocol.Profiler.ConsoleProfileStartedEvent
 import typings.devtoolsProtocol.mod.Protocol.Profiler.GetBestEffortCoverageResponse
-import typings.devtoolsProtocol.mod.Protocol.Profiler.GetCountersResponse
-import typings.devtoolsProtocol.mod.Protocol.Profiler.GetRuntimeCallStatsResponse
 import typings.devtoolsProtocol.mod.Protocol.Profiler.PreciseCoverageDeltaUpdateEvent
 import typings.devtoolsProtocol.mod.Protocol.Profiler.SetSamplingIntervalRequest
 import typings.devtoolsProtocol.mod.Protocol.Profiler.StartPreciseCoverageRequest
@@ -24,43 +22,13 @@ trait ProfilerApi extends StObject {
   
   def disable(): js.Promise[Unit] = js.native
   
-  /**
-    * Disable counters collection.
-    */
-  def disableCounters(): js.Promise[Unit] = js.native
-  
-  /**
-    * Disable run time call stats collection.
-    */
-  def disableRuntimeCallStats(): js.Promise[Unit] = js.native
-  
   def enable(): js.Promise[Unit] = js.native
-  
-  /**
-    * Enable counters collection.
-    */
-  def enableCounters(): js.Promise[Unit] = js.native
-  
-  /**
-    * Enable run time call stats collection.
-    */
-  def enableRuntimeCallStats(): js.Promise[Unit] = js.native
   
   /**
     * Collect coverage data for the current isolate. The coverage data may be incomplete due to
     * garbage collection.
     */
   def getBestEffortCoverage(): js.Promise[GetBestEffortCoverageResponse] = js.native
-  
-  /**
-    * Retrieve counters.
-    */
-  def getCounters(): js.Promise[GetCountersResponse] = js.native
-  
-  /**
-    * Retrieve run time call stats.
-    */
-  def getRuntimeCallStats(): js.Promise[GetRuntimeCallStatsResponse] = js.native
   
   @JSName("on")
   def on_consoleProfileFinished(
@@ -79,7 +47,7 @@ trait ProfilerApi extends StObject {
     * Reports coverage delta since the last poll (either from an event like this, or from
     * `takePreciseCoverage` for the current isolate. May only be sent if precise code
     * coverage has been started. This event can be trigged by the embedder to, for example,
-    * trigger collection of coverage data immediatelly at a certain point in time.
+    * trigger collection of coverage data immediately at a certain point in time.
     */
   @JSName("on")
   def on_preciseCoverageDeltaUpdate(

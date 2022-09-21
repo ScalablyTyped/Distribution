@@ -15,7 +15,7 @@ trait PosSaleResponse extends StObject {
   /** Required. A unique identifier for the item. */
   var itemId: js.UndefOr[String] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#posSaleResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#posSaleResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Required. The price of the item. */
@@ -27,7 +27,7 @@ trait PosSaleResponse extends StObject {
   /** A unique ID to group items from the same sale event. */
   var saleId: js.UndefOr[String] = js.undefined
   
-  /** Required. The identifier of the merchant's store. Either a `storeCode` inserted via the API or the code of the store in Google My Business. */
+  /** Required. The identifier of the merchant's store. Either a `storeCode` inserted through the API or the code of the store in a Business Profile. */
   var storeCode: js.UndefOr[String] = js.undefined
   
   /** Required. The CLDR territory code for the item. */

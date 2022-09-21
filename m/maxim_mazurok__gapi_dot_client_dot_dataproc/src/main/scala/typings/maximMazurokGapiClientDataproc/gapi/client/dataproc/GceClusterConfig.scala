@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GceClusterConfig extends StObject {
   
+  /** Optional. Confidential Instance Config for clusters using Confidential VMs (https://cloud.google.com/compute/confidential-vm/docs). */
+  var confidentialInstanceConfig: js.UndefOr[ConfidentialInstanceConfig] = js.undefined
+  
   /**
     * Optional. If true, all instances in the cluster will only have internal IP addresses. By default, clusters are not restricted to internal IP addresses, and will have ephemeral
     * external IP addresses assigned to each instance. This internal_ip_only restriction can only be enabled for subnetwork enabled networks, and all off-cluster dependencies must be
@@ -21,7 +24,7 @@ trait GceClusterConfig extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.GceClusterConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.GceClusterConfig & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -56,6 +59,9 @@ trait GceClusterConfig extends StObject {
     */
   var serviceAccountScopes: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** Optional. Shielded Instance Config for clusters using Compute Engine Shielded VMs (https://cloud.google.com/security/shielded-cloud/shielded-vm). */
+  var shieldedInstanceConfig: js.UndefOr[ShieldedInstanceConfig] = js.undefined
+  
   /**
     * Optional. The Compute Engine subnetwork to be used for machine communications. Cannot be specified with network_uri.A full URL, partial URI, or short name are valid. Examples:
     * https://www.googleapis.com/compute/v1/projects/[project_id]/regions/us-east1/subnetworks/sub0 projects/[project_id]/regions/us-east1/subnetworks/sub0 sub0
@@ -81,6 +87,10 @@ object GceClusterConfig {
   
   extension [Self <: GceClusterConfig](x: Self) {
     
+    inline def setConfidentialInstanceConfig(value: ConfidentialInstanceConfig): Self = StObject.set(x, "confidentialInstanceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setConfidentialInstanceConfigUndefined: Self = StObject.set(x, "confidentialInstanceConfig", js.undefined)
+    
     inline def setInternalIpOnly(value: Boolean): Self = StObject.set(x, "internalIpOnly", value.asInstanceOf[js.Any])
     
     inline def setInternalIpOnlyUndefined: Self = StObject.set(x, "internalIpOnly", js.undefined)
@@ -88,7 +98,7 @@ object GceClusterConfig {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.GceClusterConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.GceClusterConfig & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -115,9 +125,13 @@ object GceClusterConfig {
     
     inline def setServiceAccountScopesUndefined: Self = StObject.set(x, "serviceAccountScopes", js.undefined)
     
-    inline def setServiceAccountScopesVarargs(value: String*): Self = StObject.set(x, "serviceAccountScopes", js.Array(value :_*))
+    inline def setServiceAccountScopesVarargs(value: String*): Self = StObject.set(x, "serviceAccountScopes", js.Array(value*))
     
     inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    
+    inline def setShieldedInstanceConfig(value: ShieldedInstanceConfig): Self = StObject.set(x, "shieldedInstanceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setShieldedInstanceConfigUndefined: Self = StObject.set(x, "shieldedInstanceConfig", js.undefined)
     
     inline def setSubnetworkUri(value: String): Self = StObject.set(x, "subnetworkUri", value.asInstanceOf[js.Any])
     
@@ -127,7 +141,7 @@ object GceClusterConfig {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setZoneUri(value: String): Self = StObject.set(x, "zoneUri", value.asInstanceOf[js.Any])
     

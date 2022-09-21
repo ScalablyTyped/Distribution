@@ -9,7 +9,7 @@ trait GradientStops extends StObject {
   
   def apply(Index: Double): GradientStop = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   

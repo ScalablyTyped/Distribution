@@ -19,6 +19,6 @@ object PivotSchemaColumnAxis {
     
     inline def setTuples(value: js.Array[PivotTupleModel]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
     
-    inline def setTuplesVarargs(value: PivotTupleModel*): Self = StObject.set(x, "tuples", js.Array(value :_*))
+    inline def setTuplesVarargs(value: PivotTupleModel*): Self = StObject.set(x, "tuples", js.Array(value*))
   }
 }

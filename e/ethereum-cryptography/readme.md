@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethereum-cryptography
 
-Typings are for version 0.1.3
+Typings are for version 1.1.2
 
 ## Library description:
 All the cryptographic primitives used in Ethereum
@@ -10,10 +10,10 @@ All the cryptographic primitives used in Ethereum
 | ------------------ | :-------------: |
 | Full name          | ethereum-cryptography |
 | Keywords           | ethereum, cryptography, digital signature, hash, encryption, prng, keccak, scrypt, pbkdf2, sha-256, ripemd-160, blake2b, aes, advanced encryption standar, secp256k1, ecdsa, bip32, hierarchical deterministic keys, hdwallet, hdkeys |
-| # releases         | 12 |
-| # dependents       | 12 |
-| # downloads        | 597575 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 2449369.6666666665 |
+| # stars            | 283.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereum/js-ethereum-cryptography#readme)

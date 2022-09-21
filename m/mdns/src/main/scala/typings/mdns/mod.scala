@@ -8,7 +8,7 @@ import typings.mdns.anon.Flags
 import typings.mdns.anon.Name
 import typings.mdns.mdnsStrings.serviceDown
 import typings.mdns.mdnsStrings.serviceUp
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
@@ -38,7 +38,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("mdns", "Advertisement")
   @js.native
-  class AdvertisementCls protected ()
+  open class AdvertisementCls protected ()
     extends StObject
        with Advertisement {
     def this(serviceType: ServiceType, port: Double) = this()
@@ -70,9 +70,9 @@ object mod {
     @JSName("on")
     def on_serviceUp(event: serviceUp, listener: js.Function1[/* info */ Service, Unit]): this.type = js.native
     
-    def start(): js.Any = js.native
+    def start(): Any = js.native
     
-    def stop(): js.Any = js.native
+    def stop(): Any = js.native
   }
   @JSImport("mdns", "Browser")
   @js.native
@@ -81,7 +81,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("mdns", "Browser")
   @js.native
-  class BrowserCls protected ()
+  open class BrowserCls protected ()
     extends StObject
        with Browser {
     def this(serviceType: ServiceType) = this()
@@ -128,7 +128,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("mdns", "ServiceType")
   @js.native
-  class ServiceTypeCls protected ()
+  open class ServiceTypeCls protected ()
     extends StObject
        with ServiceType {
     def this(serviceTypeIdentifier: String) = this()
@@ -169,9 +169,9 @@ object mod {
   
   @JSImport("mdns", "dns_sd")
   @js.native
-  def dnsSd: js.Any = js.native
+  def dnsSd: Any = js.native
   
-  inline def dnsSd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dns_sd")(x.asInstanceOf[js.Any])
+  inline def dnsSd_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dns_sd")(x.asInstanceOf[js.Any])
   
   // constants
   @JSImport("mdns", "isAvahi")
@@ -525,8 +525,8 @@ object mod {
   
   @JSImport("mdns", "kDNSServiceOutputFlags")
   @js.native
-  def kDNSServiceOutputFlags: js.Any = js.native
-  inline def kDNSServiceOutputFlags_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kDNSServiceOutputFlags")(x.asInstanceOf[js.Any])
+  def kDNSServiceOutputFlags: Any = js.native
+  inline def kDNSServiceOutputFlags_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kDNSServiceOutputFlags")(x.asInstanceOf[js.Any])
   
   @JSImport("mdns", "kDNSServiceProperty_DaemonVersion")
   @js.native
@@ -942,9 +942,9 @@ object mod {
   
   inline def kDNSServiceTypeX25_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kDNSServiceType_X25")(x.asInstanceOf[js.Any])
   
-  inline def loopbackInterface(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loopbackInterface")().asInstanceOf[js.Any]
+  inline def loopbackInterface(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loopbackInterface")().asInstanceOf[Any]
   
-  inline def makeServiceType(name: String, protocol: String, subtypes: String*): ServiceType = (^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(name.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any], subtypes.asInstanceOf[js.Any])).asInstanceOf[ServiceType]
+  inline def makeServiceType(name: String, protocol: String, subtypes: String*): ServiceType = (^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")((List(name.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).`++`(subtypes.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ServiceType]
   inline def makeServiceType(serviceTypeIdentifier: String): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(serviceTypeIdentifier.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
   inline def makeServiceType(serviceTypeIdentifier: js.Array[String]): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(serviceTypeIdentifier.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
   inline def makeServiceType(serviceTypeIdentifier: Name): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(serviceTypeIdentifier.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
@@ -972,9 +972,9 @@ object mod {
   inline def rst_=(x: DefaultResolverSequenceTasks): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rst")(x.asInstanceOf[js.Any])
   
   // static functions
-  inline def tcp(name: String, subtypes: String*): ServiceType = (^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(name.asInstanceOf[js.Any], subtypes.asInstanceOf[js.Any])).asInstanceOf[ServiceType]
+  inline def tcp(name: String, subtypes: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(List(name.asInstanceOf[js.Any]).`++`(subtypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ServiceType]
   
-  inline def udp(name: String, subtypes: String*): ServiceType = (^.asInstanceOf[js.Dynamic].applyDynamic("udp")(name.asInstanceOf[js.Any], subtypes.asInstanceOf[js.Any])).asInstanceOf[ServiceType]
+  inline def udp(name: String, subtypes: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(List(name.asInstanceOf[js.Any]).`++`(subtypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ServiceType]
   
   @js.native
   trait AdvertisementCreatable
@@ -997,13 +997,13 @@ object mod {
   // --- Ads ---
   trait AdvertisementOptions extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
-    var domain: js.UndefOr[js.Any] = js.undefined
+    var domain: js.UndefOr[Any] = js.undefined
     
-    var flags: js.UndefOr[js.Any] = js.undefined
+    var flags: js.UndefOr[Any] = js.undefined
     
-    var host: js.UndefOr[js.Any] = js.undefined
+    var host: js.UndefOr[Any] = js.undefined
     
     var interfaceIndex: js.UndefOr[Double] = js.undefined
     
@@ -1011,7 +1011,7 @@ object mod {
     
     var networkInterface: js.UndefOr[String] = js.undefined
     
-    var txtRecord: js.UndefOr[js.Any] = js.undefined
+    var txtRecord: js.UndefOr[Any] = js.undefined
   }
   object AdvertisementOptions {
     
@@ -1022,19 +1022,19 @@ object mod {
     
     extension [Self <: AdvertisementOptions](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setDomain(value: js.Any): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Any): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
       inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      inline def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
       inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
@@ -1050,7 +1050,7 @@ object mod {
       
       inline def setNetworkInterfaceUndefined: Self = StObject.set(x, "networkInterface", js.undefined)
       
-      inline def setTxtRecord(value: js.Any): Self = StObject.set(x, "txtRecord", value.asInstanceOf[js.Any])
+      inline def setTxtRecord(value: Any): Self = StObject.set(x, "txtRecord", value.asInstanceOf[js.Any])
       
       inline def setTxtRecordUndefined: Self = StObject.set(x, "txtRecord", js.undefined)
     }
@@ -1059,11 +1059,11 @@ object mod {
   // --- Browser ---
   trait BrowserOptions extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
-    var domain: js.UndefOr[js.Any] = js.undefined
+    var domain: js.UndefOr[Any] = js.undefined
     
-    var flags: js.UndefOr[js.Any] = js.undefined
+    var flags: js.UndefOr[Any] = js.undefined
     
     var interfaceIndex: js.UndefOr[Double] = js.undefined
     
@@ -1082,15 +1082,15 @@ object mod {
     
     extension [Self <: BrowserOptions](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setDomain(value: js.Any): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Any): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
       inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
@@ -1106,7 +1106,7 @@ object mod {
       
       inline def setResolverSequenceUndefined: Self = StObject.set(x, "resolverSequence", js.undefined)
       
-      inline def setResolverSequenceVarargs(value: (js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean])*): Self = StObject.set(x, "resolverSequence", js.Array(value :_*))
+      inline def setResolverSequenceVarargs(value: (js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean])*): Self = StObject.set(x, "resolverSequence", js.Array(value*))
     }
   }
   
@@ -1125,7 +1125,7 @@ object mod {
        with MDNSResolverSequenceTasks {
     
     def DNSServiceGetAddrInfo(): js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean] = js.native
-    def DNSServiceGetAddrInfo(options: js.Any): js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean] = js.native
+    def DNSServiceGetAddrInfo(options: Any): js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean] = js.native
     
     def DNSServiceResolve(): js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean] = js.native
     def DNSServiceResolve(options: Flags): js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean] = js.native
@@ -1140,7 +1140,7 @@ object mod {
     ): Unit = js.native
     
     def getaddrinfo(): js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean] = js.native
-    def getaddrinfo(options: js.Any): js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean] = js.native
+    def getaddrinfo(options: Any): js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean] = js.native
     
     def logService(): Unit = js.native
     
@@ -1195,7 +1195,7 @@ object mod {
     
     var replyDomain: String
     
-    var txtRecord: js.UndefOr[js.Any] = js.undefined
+    var txtRecord: js.UndefOr[Any] = js.undefined
     
     var `type`: ServiceType
   }
@@ -1221,7 +1221,7 @@ object mod {
       
       inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+      inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value*))
       
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -1245,7 +1245,7 @@ object mod {
       
       inline def setReplyDomain(value: String): Self = StObject.set(x, "replyDomain", value.asInstanceOf[js.Any])
       
-      inline def setTxtRecord(value: js.Any): Self = StObject.set(x, "txtRecord", value.asInstanceOf[js.Any])
+      inline def setTxtRecord(value: Any): Self = StObject.set(x, "txtRecord", value.asInstanceOf[js.Any])
       
       inline def setTxtRecordUndefined: Self = StObject.set(x, "txtRecord", js.undefined)
       

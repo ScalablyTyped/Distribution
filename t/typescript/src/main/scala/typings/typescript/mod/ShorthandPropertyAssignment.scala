@@ -16,10 +16,15 @@ trait ShorthandPropertyAssignment
   
   val equalsToken: js.UndefOr[EqualsToken] = js.native
   
+  /** @deprecated A shorthand property assignment cannot have an exclamation token */
   val exclamationToken: js.UndefOr[ExclamationToken] = js.native
   
   @JSName("kind")
   val kind_ShorthandPropertyAssignment: typings.typescript.mod.SyntaxKind.ShorthandPropertyAssignment = js.native
+  
+  /** @deprecated A shorthand property assignment cannot have modifiers */
+  @JSName("modifiers")
+  val modifiers_ShorthandPropertyAssignment: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("name")
   val name_ShorthandPropertyAssignment: Identifier = js.native
@@ -29,5 +34,6 @@ trait ShorthandPropertyAssignment
   @JSName("parent")
   val parent_ShorthandPropertyAssignment: ObjectLiteralExpression = js.native
   
+  /** @deprecated A shorthand property assignment cannot have a question token */
   val questionToken: js.UndefOr[QuestionToken] = js.native
 }

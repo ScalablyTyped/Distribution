@@ -22,6 +22,6 @@ object BatchGetJobsRequest {
     
     inline def setJobNames(value: JobNameList): Self = StObject.set(x, "JobNames", value.asInstanceOf[js.Any])
     
-    inline def setJobNamesVarargs(value: NameString*): Self = StObject.set(x, "JobNames", js.Array(value :_*))
+    inline def setJobNamesVarargs(value: NameString*): Self = StObject.set(x, "JobNames", js.Array(value*))
   }
 }

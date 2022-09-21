@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflow.html)
   */
-class CreateWorkflowCls ()
+open class CreateWorkflowCls ()
   extends StObject
      with typings.arcgisJsApi.esri.CreateWorkflow {
   def this(properties: CreateWorkflowProperties) = this()

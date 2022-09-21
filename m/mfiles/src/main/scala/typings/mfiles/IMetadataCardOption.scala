@@ -12,13 +12,13 @@ trait IMetadataCardOption extends StObject {
   
   def GetName(): String
   
-  def GetOptionValue(): js.Any
+  def GetOptionValue(): Any
   
   def IsEnabled(): Boolean
   
   def IsVisible(): Boolean
   
-  def SetOptionValue(value: js.Any): Unit
+  def SetOptionValue(value: Any): Unit
 }
 object IMetadataCardOption {
   
@@ -26,10 +26,10 @@ object IMetadataCardOption {
     Events: IEvents,
     GetExplanation: () => String,
     GetName: () => String,
-    GetOptionValue: () => js.Any,
+    GetOptionValue: () => Any,
     IsEnabled: () => Boolean,
     IsVisible: () => Boolean,
-    SetOptionValue: js.Any => Unit
+    SetOptionValue: Any => Unit
   ): IMetadataCardOption = {
     val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], GetExplanation = js.Any.fromFunction0(GetExplanation), GetName = js.Any.fromFunction0(GetName), GetOptionValue = js.Any.fromFunction0(GetOptionValue), IsEnabled = js.Any.fromFunction0(IsEnabled), IsVisible = js.Any.fromFunction0(IsVisible), SetOptionValue = js.Any.fromFunction1(SetOptionValue))
     __obj.asInstanceOf[IMetadataCardOption]
@@ -43,12 +43,12 @@ object IMetadataCardOption {
     
     inline def setGetName(value: () => String): Self = StObject.set(x, "GetName", js.Any.fromFunction0(value))
     
-    inline def setGetOptionValue(value: () => js.Any): Self = StObject.set(x, "GetOptionValue", js.Any.fromFunction0(value))
+    inline def setGetOptionValue(value: () => Any): Self = StObject.set(x, "GetOptionValue", js.Any.fromFunction0(value))
     
     inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "IsEnabled", js.Any.fromFunction0(value))
     
     inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "IsVisible", js.Any.fromFunction0(value))
     
-    inline def setSetOptionValue(value: js.Any => Unit): Self = StObject.set(x, "SetOptionValue", js.Any.fromFunction1(value))
+    inline def setSetOptionValue(value: Any => Unit): Self = StObject.set(x, "SetOptionValue", js.Any.fromFunction1(value))
   }
 }

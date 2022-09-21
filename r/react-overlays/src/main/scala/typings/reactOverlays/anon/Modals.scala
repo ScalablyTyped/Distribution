@@ -28,7 +28,7 @@ object Modals {
     
     inline def setModals(value: js.Array[ModalInstance]): Self = StObject.set(x, "modals", value.asInstanceOf[js.Any])
     
-    inline def setModalsVarargs(value: ModalInstance*): Self = StObject.set(x, "modals", js.Array(value :_*))
+    inline def setModalsVarargs(value: ModalInstance*): Self = StObject.set(x, "modals", js.Array(value*))
     
     inline def setStyle(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

@@ -7,22 +7,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait SheetVisibility extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.SheetVisibility")
 @js.native
 object SheetVisibility extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
   sealed trait hidden
     extends StObject
        with SheetVisibility
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
   sealed trait veryHidden
     extends StObject
        with SheetVisibility
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
   sealed trait visible
     extends StObject

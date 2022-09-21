@@ -20,17 +20,17 @@ trait ICropperHelper extends StObject {
     * Returns a collection of plugins available to the tinyMCE editor
     *
     */
-  def configuration(mediaTypeAlias: String): js.Any
+  def configuration(mediaTypeAlias: String): Any
 }
 object ICropperHelper {
   
-  inline def apply(configuration: String => js.Any): ICropperHelper = {
+  inline def apply(configuration: String => Any): ICropperHelper = {
     val __obj = js.Dynamic.literal(configuration = js.Any.fromFunction1(configuration))
     __obj.asInstanceOf[ICropperHelper]
   }
   
   extension [Self <: ICropperHelper](x: Self) {
     
-    inline def setConfiguration(value: String => js.Any): Self = StObject.set(x, "configuration", js.Any.fromFunction1(value))
+    inline def setConfiguration(value: String => Any): Self = StObject.set(x, "configuration", js.Any.fromFunction1(value))
   }
 }

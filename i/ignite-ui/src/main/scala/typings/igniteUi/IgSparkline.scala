@@ -11,7 +11,7 @@ trait IgSparkline
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets the sparkline brush.
@@ -40,7 +40,7 @@ trait IgSparkline
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets sets data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
@@ -90,7 +90,7 @@ trait IgSparkline
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.
     */
-  var formatLabel: js.UndefOr[js.Any] = js.undefined
+  var formatLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * The height of the sparkline. It can be set as a number in pixels, string (px) or percentage (%).
@@ -135,7 +135,7 @@ trait IgSparkline
     * The value or content to display on the horizontal axis.
     * This can be set to a formatted string, such as "{0}", or it can be set to a DataTemplate.
     */
-  var horizontalAxisLabel: js.UndefOr[js.Any] = js.undefined
+  var horizontalAxisLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the display state of the horizontal axis.
@@ -361,7 +361,7 @@ trait IgSparkline
     * The value or content to display on the vertical axis.
     * This can be set to a formatted string, such as "{0:n}", or it can be set to a DataTemplate.
     */
-  var verticalAxisLabel: js.UndefOr[js.Any] = js.undefined
+  var verticalAxisLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the display state of the vertical axis.
@@ -398,7 +398,7 @@ object IgSparkline {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -430,7 +430,7 @@ object IgSparkline {
     
     inline def setFirstMarkerVisibilityUndefined: Self = StObject.set(x, "firstMarkerVisibility", js.undefined)
     
-    inline def setFormatLabel(value: js.Any): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
+    inline def setFormatLabel(value: Any): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     
     inline def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
@@ -458,7 +458,7 @@ object IgSparkline {
     
     inline def setHorizontalAxisBrushUndefined: Self = StObject.set(x, "horizontalAxisBrush", js.undefined)
     
-    inline def setHorizontalAxisLabel(value: js.Any): Self = StObject.set(x, "horizontalAxisLabel", value.asInstanceOf[js.Any])
+    inline def setHorizontalAxisLabel(value: Any): Self = StObject.set(x, "horizontalAxisLabel", value.asInstanceOf[js.Any])
     
     inline def setHorizontalAxisLabelUndefined: Self = StObject.set(x, "horizontalAxisLabel", js.undefined)
     
@@ -594,7 +594,7 @@ object IgSparkline {
     
     inline def setVerticalAxisBrushUndefined: Self = StObject.set(x, "verticalAxisBrush", js.undefined)
     
-    inline def setVerticalAxisLabel(value: js.Any): Self = StObject.set(x, "verticalAxisLabel", value.asInstanceOf[js.Any])
+    inline def setVerticalAxisLabel(value: Any): Self = StObject.set(x, "verticalAxisLabel", value.asInstanceOf[js.Any])
     
     inline def setVerticalAxisLabelUndefined: Self = StObject.set(x, "verticalAxisLabel", js.undefined)
     

@@ -10,10 +10,10 @@ Async Node JS module to check if an email address exists
 | ------------------ | :-------------: |
 | Full name          | email-check |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 124343 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4851.333333333333 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/pensierinmusica/email-check#readme)

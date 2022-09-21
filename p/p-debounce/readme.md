@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-debounce
 
-Typings are for version 2.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Debounce promise-returning & async functions
@@ -10,10 +10,10 @@ Debounce promise-returning & async functions
 | ------------------ | :-------------: |
 | Full name          | p-debounce |
 | Keywords           | promise, debounce, debounced, limit, limited, concurrency, throttle, throat, limited, interval, rate, batch, ratelimit, task, queue, async, await, promises, bluebird |
-| # releases         | 3 |
-| # dependents       | 51 |
-| # downloads        | 1020560 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 211104.66666666666 |
+| # stars            | 147.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-debounce#readme)

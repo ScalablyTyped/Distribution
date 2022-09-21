@@ -9,5 +9,5 @@ trait UseThemeFunction
   extends StObject
      with _SystemStyleObject {
   
-  def apply(theme: js.Any): SystemStyleObject = js.native
+  def apply(theme: Any): SystemStyleObject = js.native
 }

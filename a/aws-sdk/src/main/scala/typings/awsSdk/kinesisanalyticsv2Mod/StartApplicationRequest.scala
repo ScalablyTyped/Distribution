@@ -14,12 +14,12 @@ trait StartApplicationRequest extends StObject {
   /**
     * Identifies the run configuration (start parameters) of a Kinesis Data Analytics application.
     */
-  var RunConfiguration: typings.awsSdk.kinesisanalyticsv2Mod.RunConfiguration
+  var RunConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RunConfiguration] = js.undefined
 }
 object StartApplicationRequest {
   
-  inline def apply(ApplicationName: ApplicationName, RunConfiguration: RunConfiguration): StartApplicationRequest = {
-    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], RunConfiguration = RunConfiguration.asInstanceOf[js.Any])
+  inline def apply(ApplicationName: ApplicationName): StartApplicationRequest = {
+    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartApplicationRequest]
   }
   
@@ -28,5 +28,7 @@ object StartApplicationRequest {
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     inline def setRunConfiguration(value: RunConfiguration): Self = StObject.set(x, "RunConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setRunConfigurationUndefined: Self = StObject.set(x, "RunConfiguration", js.undefined)
   }
 }

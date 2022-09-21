@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dashboard extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Description of the dashboard.
@@ -53,7 +53,7 @@ trait Dashboard extends StObject {
 object Dashboard {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     description: String,
     eTag: String,
     id: String,
@@ -88,8 +88,8 @@ object Dashboard {
     
     inline def setWidgets(value: js.Array[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     
-    inline def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+    inline def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value*))
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

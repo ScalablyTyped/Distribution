@@ -1,5 +1,6 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ type ARN = java.lang.String
   - typings.awsSdk.awsSdkStrings.full_
   - java.lang.String
 */
-type AlgorithmicStemming = typings.awsSdk.cloudsearchMod._AlgorithmicStemming | java.lang.String
+type AlgorithmicStemming = _AlgorithmicStemming | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ar_
@@ -41,7 +42,7 @@ type AlgorithmicStemming = typings.awsSdk.cloudsearchMod._AlgorithmicStemming | 
   - typings.awsSdk.awsSdkStrings.id__
   - typings.awsSdk.awsSdkStrings.it_
   - typings.awsSdk.awsSdkStrings.ja_
-  - typings.awsSdk.awsSdkStrings.ko
+  - typings.awsSdk.awsSdkStrings.ko_
   - typings.awsSdk.awsSdkStrings.lv_
   - typings.awsSdk.awsSdkStrings.mul
   - typings.awsSdk.awsSdkStrings.nl_
@@ -56,9 +57,9 @@ type AlgorithmicStemming = typings.awsSdk.cloudsearchMod._AlgorithmicStemming | 
   - typings.awsSdk.awsSdkStrings.`zh-Hant`
   - java.lang.String
 */
-type AnalysisSchemeLanguage = typings.awsSdk.cloudsearchMod._AnalysisSchemeLanguage | java.lang.String
+type AnalysisSchemeLanguage = _AnalysisSchemeLanguage | java.lang.String
 
-type AnalysisSchemeStatusList = js.Array[typings.awsSdk.cloudsearchMod.AnalysisSchemeStatus]
+type AnalysisSchemeStatusList = js.Array[AnalysisSchemeStatus]
 
 type Boolean = scala.Boolean
 
@@ -66,19 +67,19 @@ type DomainId = java.lang.String
 
 type DomainName = java.lang.String
 
-type DomainNameList = js.Array[typings.awsSdk.cloudsearchMod.DomainName]
+type DomainNameList = js.Array[DomainName]
 
-type DomainNameMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cloudsearchMod.APIVersion_]
+type DomainNameMap = StringDictionary[APIVersion_]
 
-type DomainStatusList = js.Array[typings.awsSdk.cloudsearchMod.DomainStatus]
+type DomainStatusList = js.Array[DomainStatus]
 
 type Double = scala.Double
 
 type DynamicFieldName = java.lang.String
 
-type DynamicFieldNameList = js.Array[typings.awsSdk.cloudsearchMod.DynamicFieldName]
+type DynamicFieldNameList = js.Array[DynamicFieldName]
 
-type ExpressionStatusList = js.Array[typings.awsSdk.cloudsearchMod.ExpressionStatus]
+type ExpressionStatusList = js.Array[ExpressionStatus]
 
 type ExpressionValue = java.lang.String
 
@@ -86,14 +87,14 @@ type FieldName = java.lang.String
 
 type FieldNameCommaList = java.lang.String
 
-type FieldNameList = js.Array[typings.awsSdk.cloudsearchMod.FieldName]
+type FieldNameList = js.Array[FieldName]
 
 type FieldValue = java.lang.String
 
-type IndexFieldStatusList = js.Array[typings.awsSdk.cloudsearchMod.IndexFieldStatus]
+type IndexFieldStatusList = js.Array[IndexFieldStatus]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.int
+  - typings.awsSdk.awsSdkStrings.int_
   - typings.awsSdk.awsSdkStrings.double_
   - typings.awsSdk.awsSdkStrings.literal
   - typings.awsSdk.awsSdkStrings.text_
@@ -106,7 +107,7 @@ type IndexFieldStatusList = js.Array[typings.awsSdk.cloudsearchMod.IndexFieldSta
   - typings.awsSdk.awsSdkStrings.`date-array`
   - java.lang.String
 */
-type IndexFieldType = typings.awsSdk.cloudsearchMod._IndexFieldType | java.lang.String
+type IndexFieldType = _IndexFieldType | java.lang.String
 
 type InstanceCount = scala.Double
 
@@ -125,7 +126,7 @@ type MultiAZ = scala.Boolean
   - typings.awsSdk.awsSdkStrings.FailedToValidate
   - java.lang.String
 */
-type OptionState = typings.awsSdk.cloudsearchMod._OptionState | java.lang.String
+type OptionState = _OptionState | java.lang.String
 
 type PartitionCount = scala.Double
 
@@ -138,9 +139,18 @@ type PartitionCount = scala.Double
   - typings.awsSdk.awsSdkStrings.searchDotm3Dotlarge
   - typings.awsSdk.awsSdkStrings.searchDotm3Dotxlarge
   - typings.awsSdk.awsSdkStrings.searchDotm3Dot2xlarge
+  - typings.awsSdk.awsSdkStrings.searchDotsmall
+  - typings.awsSdk.awsSdkStrings.searchDotmedium
+  - typings.awsSdk.awsSdkStrings.searchDotlarge
+  - typings.awsSdk.awsSdkStrings.searchDotxlarge
+  - typings.awsSdk.awsSdkStrings.searchDot2xlarge
+  - typings.awsSdk.awsSdkStrings.searchDotpreviousgenerationDotsmall
+  - typings.awsSdk.awsSdkStrings.searchDotpreviousgenerationDotlarge
+  - typings.awsSdk.awsSdkStrings.searchDotpreviousgenerationDotxlarge
+  - typings.awsSdk.awsSdkStrings.searchDotpreviousgenerationDot2xlarge
   - java.lang.String
 */
-type PartitionInstanceType = typings.awsSdk.cloudsearchMod._PartitionInstanceType | java.lang.String
+type PartitionInstanceType = _PartitionInstanceType | java.lang.String
 
 type PolicyDocument = java.lang.String
 
@@ -150,7 +160,7 @@ type ServiceUrl = java.lang.String
 
 type StandardName = java.lang.String
 
-type StandardNameList = js.Array[typings.awsSdk.cloudsearchMod.StandardName]
+type StandardNameList = js.Array[StandardName]
 
 type String = java.lang.String
 
@@ -160,20 +170,20 @@ type String = java.lang.String
   - typings.awsSdk.awsSdkStrings.high__
   - java.lang.String
 */
-type SuggesterFuzzyMatching = typings.awsSdk.cloudsearchMod._SuggesterFuzzyMatching | java.lang.String
+type SuggesterFuzzyMatching = _SuggesterFuzzyMatching | java.lang.String
 
-type SuggesterStatusList = js.Array[typings.awsSdk.cloudsearchMod.SuggesterStatus]
+type SuggesterStatusList = js.Array[SuggesterStatus]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`Policy-Min-TLS-1-0-2019-07`
   - typings.awsSdk.awsSdkStrings.`Policy-Min-TLS-1-2-2019-07`
   - java.lang.String
 */
-type TLSSecurityPolicy = typings.awsSdk.cloudsearchMod._TLSSecurityPolicy | java.lang.String
+type TLSSecurityPolicy = _TLSSecurityPolicy | java.lang.String
 
 type UIntValue = scala.Double
 
-type UpdateTimestamp = typings.std.Date
+type UpdateTimestamp = js.Date
 
 type Word = java.lang.String
 
@@ -183,4 +193,4 @@ type Word = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.cloudsearchMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

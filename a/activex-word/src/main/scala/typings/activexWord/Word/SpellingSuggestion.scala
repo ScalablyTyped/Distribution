@@ -12,7 +12,7 @@ trait SpellingSuggestion extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.SpellingSuggestion_typekey")
   var WordDotSpellingSuggestion_typekey: SpellingSuggestion
@@ -23,7 +23,7 @@ object SpellingSuggestion {
     Application: Application,
     Creator: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     WordDotSpellingSuggestion_typekey: SpellingSuggestion
   ): SpellingSuggestion = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object SpellingSuggestion {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotSpellingSuggestion_typekey(value: SpellingSuggestion): Self = StObject.set(x, "Word.SpellingSuggestion_typekey", value.asInstanceOf[js.Any])
   }

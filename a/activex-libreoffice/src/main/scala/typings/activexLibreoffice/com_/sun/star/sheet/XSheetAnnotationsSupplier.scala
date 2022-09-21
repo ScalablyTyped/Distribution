@@ -29,7 +29,7 @@ object XSheetAnnotationsSupplier {
     Annotations: XSheetAnnotations,
     acquire: () => Unit,
     getAnnotations: () => XSheetAnnotations,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSheetAnnotationsSupplier = {
     val __obj = js.Dynamic.literal(Annotations = Annotations.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAnnotations = js.Any.fromFunction0(getAnnotations), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

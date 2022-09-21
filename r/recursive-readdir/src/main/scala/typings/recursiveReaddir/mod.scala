@@ -3,7 +3,6 @@ package typings.recursiveReaddir
 import org.scalablytyped.runtime.Shortcut
 import typings.node.fsMod.Stats
 import typings.recursiveReaddir.mod.RecursiveReaddir.readDir
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod extends Shortcut {
   
   object RecursiveReaddir {
     
-    type Callback = js.Function2[/* error */ Error, /* files */ js.Array[String], Unit]
+    type Callback = js.Function2[/* error */ js.Error, /* files */ js.Array[String], Unit]
     
     type IgnoreFunction = js.Function2[/* file */ String, /* stats */ Stats, Boolean]
     

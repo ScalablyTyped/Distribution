@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("NativePointer")
 @js.native
-class NativePointer protected ()
+open class NativePointer protected ()
   extends StObject
      with typings.fridaGum.NativePointer {
   /**

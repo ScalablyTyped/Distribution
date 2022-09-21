@@ -8,7 +8,6 @@ import typings.openpgp.mod.signature.Signature
 import typings.openpgp.openpgpBooleans.`false`
 import typings.openpgp.openpgpStrings.node
 import typings.openpgp.openpgpStrings.web
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ trait EncryptOptions extends StObject {
   /**
     * (optional) override the creation date of the message signature
     */
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[js.Date] = js.undefined
   
   /**
     * (optional) if the signature should be detached (if true, signature will be added to returned object)
@@ -48,17 +47,17 @@ trait EncryptOptions extends StObject {
   /**
     * (optional) array of passwords or a single password to encrypt the message
     */
-  var passwords: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var passwords: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   /**
     * (optional) private keys for signing. If omitted message will not be signed
     */
-  var privateKeys: js.UndefOr[Key | js.Array[js.Any]] = js.undefined
+  var privateKeys: js.UndefOr[Key | js.Array[Any]] = js.undefined
   
   /**
     * (optional) array of keys or single key, used to encrypt the message
     */
-  var publicKeys: js.UndefOr[Key | js.Array[js.Any]] = js.undefined
+  var publicKeys: js.UndefOr[Key | js.Array[Any]] = js.undefined
   
   /**
     * (optional) if the unencrypted session key should be added to returned object
@@ -107,7 +106,7 @@ object EncryptOptions {
     
     inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
@@ -119,27 +118,27 @@ object EncryptOptions {
     
     inline def setFromUserIdsUndefined: Self = StObject.set(x, "fromUserIds", js.undefined)
     
-    inline def setFromUserIdsVarargs(value: UserID*): Self = StObject.set(x, "fromUserIds", js.Array(value :_*))
+    inline def setFromUserIdsVarargs(value: UserID*): Self = StObject.set(x, "fromUserIds", js.Array(value*))
     
     inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setPasswords(value: String | js.Array[js.Any]): Self = StObject.set(x, "passwords", value.asInstanceOf[js.Any])
+    inline def setPasswords(value: String | js.Array[Any]): Self = StObject.set(x, "passwords", value.asInstanceOf[js.Any])
     
     inline def setPasswordsUndefined: Self = StObject.set(x, "passwords", js.undefined)
     
-    inline def setPasswordsVarargs(value: js.Any*): Self = StObject.set(x, "passwords", js.Array(value :_*))
+    inline def setPasswordsVarargs(value: Any*): Self = StObject.set(x, "passwords", js.Array(value*))
     
-    inline def setPrivateKeys(value: Key | js.Array[js.Any]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
+    inline def setPrivateKeys(value: Key | js.Array[Any]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
     
     inline def setPrivateKeysUndefined: Self = StObject.set(x, "privateKeys", js.undefined)
     
-    inline def setPrivateKeysVarargs(value: js.Any*): Self = StObject.set(x, "privateKeys", js.Array(value :_*))
+    inline def setPrivateKeysVarargs(value: Any*): Self = StObject.set(x, "privateKeys", js.Array(value*))
     
-    inline def setPublicKeys(value: Key | js.Array[js.Any]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
+    inline def setPublicKeys(value: Key | js.Array[Any]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
     inline def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
-    inline def setPublicKeysVarargs(value: js.Any*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
+    inline def setPublicKeysVarargs(value: Any*): Self = StObject.set(x, "publicKeys", js.Array(value*))
     
     inline def setReturnSessionKey(value: Boolean): Self = StObject.set(x, "returnSessionKey", value.asInstanceOf[js.Any])
     
@@ -161,7 +160,7 @@ object EncryptOptions {
     
     inline def setToUserIdsUndefined: Self = StObject.set(x, "toUserIds", js.undefined)
     
-    inline def setToUserIdsVarargs(value: UserID*): Self = StObject.set(x, "toUserIds", js.Array(value :_*))
+    inline def setToUserIdsVarargs(value: UserID*): Self = StObject.set(x, "toUserIds", js.Array(value*))
     
     inline def setWildcard(value: Boolean): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
     

@@ -1,8 +1,7 @@
 package typings.tarn
 
-import typings.node.NodeJS.Timer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
+import typings.node.timersMod.global.NodeJS.Timer
 import typings.tarn.pendingOperationMod.PendingOperation
 import typings.tarn.promiseInspectionMod.PromiseInspection
 import typings.tarn.resourceMod.Resource
@@ -29,7 +28,7 @@ object poolMod {
   
   @JSImport("tarn/dist/Pool", "Pool")
   @js.native
-  class Pool[T] protected () extends StObject {
+  open class Pool[T] protected () extends StObject {
     def this(opt: PoolOptions[T]) = this()
     
     def _canAcquire(): Boolean = js.native
@@ -44,12 +43,12 @@ object poolMod {
     
     def _executeEventHandlers(
       eventName: String,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
     ): Unit = js.native
     
     def _hasFreeResources(): Boolean = js.native
     
-    def _logDestroyerError(eventId: Double, resource: T, err: Error): Unit = js.native
+    def _logDestroyerError(eventId: Double, resource: T, err: js.Error): Unit = js.native
     
     def _shouldCreateMoreResources(): Boolean = js.native
     
@@ -83,17 +82,17 @@ object poolMod {
     
     /* protected */ var createTimeoutMillis: Double = js.native
     
-    /* protected */ def creator(cb: Callback[T]): js.Any | js.Function0[js.Promise[T]] = js.native
+    /* protected */ def creator(cb: Callback[T]): Any | js.Function0[js.Promise[T]] = js.native
     /* protected */ @JSName("creator")
     var creator_Original: CallbackOrPromise[T] = js.native
     
-    def destroy(): js.Promise[PromiseInspection[js.Any | Unit]] = js.native
+    def destroy(): js.Promise[PromiseInspection[Any | Unit]] = js.native
     
     /* protected */ var destroyTimeoutMillis: Double = js.native
     
     /* protected */ var destroyed: Boolean = js.native
     
-    /* protected */ def destroyer(resource: T): js.Any = js.native
+    /* protected */ def destroyer(resource: T): Any = js.native
     
     /* protected */ var emitter: EventEmitter = js.native
     
@@ -108,7 +107,7 @@ object poolMod {
     def isEmpty(): Boolean = js.native
     
     /* protected */ @JSName("log")
-    def log_warn(msg: String, level: warn): js.Any = js.native
+    def log_warn(msg: String, level: warn): Any = js.native
     
     /* protected */ var max: Double = js.native
     
@@ -125,13 +124,13 @@ object poolMod {
     def numUsed(): Double = js.native
     
     @JSName("on")
-    def on_acquireFail(eventName: acquireFail, handler: js.Function2[/* eventId */ Double, /* err */ Error, Unit]): Unit = js.native
+    def on_acquireFail(eventName: acquireFail, handler: js.Function2[/* eventId */ Double, /* err */ js.Error, Unit]): Unit = js.native
     @JSName("on")
     def on_acquireRequest(eventName: acquireRequest, handler: js.Function1[/* eventId */ Double, Unit]): Unit = js.native
     @JSName("on")
     def on_acquireSuccess(eventName: acquireSuccess, handler: js.Function2[/* eventId */ Double, /* resource */ T, Unit]): Unit = js.native
     @JSName("on")
-    def on_createFail(eventName: createFail, handler: js.Function2[/* eventId */ Double, /* err */ Error, Unit]): Unit = js.native
+    def on_createFail(eventName: createFail, handler: js.Function2[/* eventId */ Double, /* err */ js.Error, Unit]): Unit = js.native
     @JSName("on")
     def on_createRequest(eventName: createRequest, handler: js.Function1[/* eventId */ Double, Unit]): Unit = js.native
     @JSName("on")
@@ -139,7 +138,7 @@ object poolMod {
     @JSName("on")
     def on_destroyFail(
       eventName: destroyFail,
-      handler: js.Function3[/* eventId */ Double, /* resource */ T, /* err */ Error, Unit]
+      handler: js.Function3[/* eventId */ Double, /* resource */ T, /* err */ js.Error, Unit]
     ): Unit = js.native
     @JSName("on")
     def on_destroyRequest(eventName: destroyRequest, handler: js.Function2[/* eventId */ Double, /* resource */ T, Unit]): Unit = js.native
@@ -174,23 +173,23 @@ object poolMod {
     def removeAllListeners(event: String): Unit = js.native
     def removeAllListeners(event: js.Symbol): Unit = js.native
     
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     /* protected */ var used: js.Array[Resource[T]] = js.native
     
     /* protected */ def validate(resource: T): Boolean = js.native
   }
   
-  type Callback[T] = js.Function2[/* err */ Error | Null, /* resource */ T, js.Any]
+  type Callback[T] = js.Function2[/* err */ js.Error | Null, /* resource */ T, Any]
   
-  type CallbackOrPromise[T] = js.Function1[/* cb */ Callback[T], js.Any | js.Function0[js.Promise[T]]]
+  type CallbackOrPromise[T] = js.Function1[/* cb */ Callback[T], Any | js.Function0[js.Promise[T]]]
   
   trait PoolOptions[T] extends StObject {
     
     var acquireTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    def create(cb: Callback[T]): js.Any | js.Function0[js.Promise[T]]
+    def create(cb: Callback[T]): Any | js.Function0[js.Promise[T]]
     
     var createRetryIntervalMillis: js.UndefOr[Double] = js.undefined
     
@@ -199,13 +198,13 @@ object poolMod {
     @JSName("create")
     var create_Original: CallbackOrPromise[T]
     
-    def destroy(resource: T): js.Any
+    def destroy(resource: T): Any
     
     var destroyTimeoutMillis: js.UndefOr[Double] = js.undefined
     
     var idleTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[js.Function1[/* msg */ String, js.Any]] = js.undefined
+    var log: js.UndefOr[js.Function1[/* msg */ String, Any]] = js.undefined
     
     var max: Double
     
@@ -220,8 +219,8 @@ object poolMod {
   object PoolOptions {
     
     inline def apply[T](
-      create: /* cb */ Callback[T] => js.Any | js.Function0[js.Promise[T]],
-      destroy: T => js.Any,
+      create: /* cb */ Callback[T] => Any | js.Function0[js.Promise[T]],
+      destroy: T => Any,
       max: Double,
       min: Double
     ): PoolOptions[T] = {
@@ -235,7 +234,7 @@ object poolMod {
       
       inline def setAcquireTimeoutMillisUndefined: Self = StObject.set(x, "acquireTimeoutMillis", js.undefined)
       
-      inline def setCreate(value: /* cb */ Callback[T] => js.Any | js.Function0[js.Promise[T]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* cb */ Callback[T] => Any | js.Function0[js.Promise[T]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
       inline def setCreateRetryIntervalMillis(value: Double): Self = StObject.set(x, "createRetryIntervalMillis", value.asInstanceOf[js.Any])
       
@@ -245,7 +244,7 @@ object poolMod {
       
       inline def setCreateTimeoutMillisUndefined: Self = StObject.set(x, "createTimeoutMillis", js.undefined)
       
-      inline def setDestroy(value: T => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: T => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
       inline def setDestroyTimeoutMillis(value: Double): Self = StObject.set(x, "destroyTimeoutMillis", value.asInstanceOf[js.Any])
       
@@ -255,7 +254,7 @@ object poolMod {
       
       inline def setIdleTimeoutMillisUndefined: Self = StObject.set(x, "idleTimeoutMillis", js.undefined)
       
-      inline def setLog(value: /* msg */ String => js.Any): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* msg */ String => Any): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       

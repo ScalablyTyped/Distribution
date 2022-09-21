@@ -1,7 +1,7 @@
 
 # Scala.js typings for postgres-array
 
-Typings are for version 2.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Parse postgres array columns
@@ -11,9 +11,9 @@ Parse postgres array columns
 | Full name          | postgres-array |
 | Keywords           | postgres, array, parser |
 | # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 70673343 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2687373333333334E7 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/bendrucker/postgres-array#readme)

@@ -9,13 +9,13 @@ object mod {
   
   @JSImport("tarn", "Pool")
   @js.native
-  class Pool[T] protected ()
+  open class Pool[T] protected ()
     extends typings.tarn.poolMod.Pool[T] {
     def this(opt: PoolOptions[T]) = this()
   }
   
   @JSImport("tarn", "TimeoutError")
   @js.native
-  class TimeoutError ()
+  open class TimeoutError ()
     extends typings.tarn.timeoutErrorMod.TimeoutError
 }

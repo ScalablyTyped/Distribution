@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/router", "Scroll")
 @js.native
-class Scroll protected ()
+open class Scroll protected ()
   extends StObject
-     with Event {
+     with Event2 {
   def this(/** @docsNotRequired */
   routerEvent: NavigationEnd) = this()
   def this(
@@ -42,4 +42,6 @@ class Scroll protected ()
   
   /** @docsNotRequired */
   val routerEvent: NavigationEnd = js.native
+  
+  val `type`: String | Double = js.native
 }

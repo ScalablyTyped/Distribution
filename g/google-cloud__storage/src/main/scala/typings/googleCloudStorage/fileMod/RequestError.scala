@@ -11,7 +11,7 @@ trait RequestError
   
   var code: js.UndefOr[String] = js.undefined
   
-  var errors: js.UndefOr[js.Array[Error]] = js.undefined
+  var errors: js.UndefOr[js.Array[js.Error]] = js.undefined
 }
 object RequestError {
   
@@ -26,10 +26,10 @@ object RequestError {
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: js.Error*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

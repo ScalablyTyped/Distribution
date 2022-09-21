@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ShowHorizontalRulerCommand")
 @js.native
-class ShowHorizontalRulerCommand ()
+open class ShowHorizontalRulerCommand ()
   extends StObject
      with typings.devexpressWeb.ShowHorizontalRulerCommand {
   

@@ -31,6 +31,6 @@ object UntagResourceRequest {
     
     inline def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
     
-    inline def setTagKeysVarargs(value: string*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: string*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

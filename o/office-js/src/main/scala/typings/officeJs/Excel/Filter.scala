@@ -46,9 +46,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Manages the filtering of a table's column.
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @js.native
@@ -59,6 +59,7 @@ trait Filter
   /**
     * Apply the given filter criteria on the given column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param criteria The criteria to apply.
@@ -69,6 +70,7 @@ trait Filter
   /**
     * Apply a "Bottom Item" filter to the column for the given number of elements.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param count The number of elements from the bottom to show.
@@ -78,6 +80,7 @@ trait Filter
   /**
     * Apply a "Bottom Percent" filter to the column for the given percentage of elements.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param percent The percentage of elements from the bottom to show.
@@ -87,6 +90,7 @@ trait Filter
   /**
     * Apply a "Cell Color" filter to the column for the given color.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param color The background color of the cells to show.
@@ -96,6 +100,7 @@ trait Filter
   /**
     * Apply an "Icon" filter to the column for the given criteria strings.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param criteria1 The first criteria string.
@@ -104,106 +109,36 @@ trait Filter
     */
   def applyCustomFilter(criteria1: String): Unit = js.native
   def applyCustomFilter(criteria1: String, criteria2: String): Unit = js.native
+  def applyCustomFilter(criteria1: String, criteria2: String, oper: And | Or): Unit = js.native
   def applyCustomFilter(criteria1: String, criteria2: String, oper: FilterOperator): Unit = js.native
+  def applyCustomFilter(criteria1: String, criteria2: Unit, oper: And | Or): Unit = js.native
   def applyCustomFilter(criteria1: String, criteria2: Unit, oper: FilterOperator): Unit = js.native
-  @JSName("applyCustomFilter")
-  def applyCustomFilter_And(criteria1: String, criteria2: String, oper: And): Unit = js.native
-  @JSName("applyCustomFilter")
-  def applyCustomFilter_And(criteria1: String, criteria2: Unit, oper: And): Unit = js.native
-  @JSName("applyCustomFilter")
-  def applyCustomFilter_Or(criteria1: String, criteria2: String, oper: Or): Unit = js.native
-  @JSName("applyCustomFilter")
-  def applyCustomFilter_Or(criteria1: String, criteria2: Unit, oper: Or): Unit = js.native
   
   /**
     * Apply a "Dynamic" filter to the column.
     *
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    *
+    * @param criteria The dynamic criteria to apply.
+    */
+  def applyDynamicFilter(
+    criteria: Unknown_ | AboveAverage | AllDatesInPeriodApril | AllDatesInPeriodAugust | AllDatesInPeriodDecember | AllDatesInPeriodFebruray | AllDatesInPeriodJanuary | AllDatesInPeriodJuly | AllDatesInPeriodJune | AllDatesInPeriodMarch | AllDatesInPeriodMay | AllDatesInPeriodNovember | AllDatesInPeriodOctober | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodSeptember | BelowAverage | LastMonth | LastQuarter | LastWeek | LastYear | NextMonth | NextQuarter | NextWeek | NextYear | ThisMonth | ThisQuarter | ThisWeek | ThisYear | Today | Tomorrow | YearToDate | Yesterday
+  ): Unit = js.native
+  /**
+    * Apply a "Dynamic" filter to the column.
+    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param criteria The dynamic criteria to apply.
     */
   def applyDynamicFilter(criteria: DynamicFilterCriteria): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AboveAverage(criteria: AboveAverage): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodApril(criteria: AllDatesInPeriodApril): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodAugust(criteria: AllDatesInPeriodAugust): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodDecember(criteria: AllDatesInPeriodDecember): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodFebruray(criteria: AllDatesInPeriodFebruray): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodJanuary(criteria: AllDatesInPeriodJanuary): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodJuly(criteria: AllDatesInPeriodJuly): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodJune(criteria: AllDatesInPeriodJune): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodMarch(criteria: AllDatesInPeriodMarch): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodMay(criteria: AllDatesInPeriodMay): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodNovember(criteria: AllDatesInPeriodNovember): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodOctober(criteria: AllDatesInPeriodOctober): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodQuarter1(criteria: AllDatesInPeriodQuarter1): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodQuarter2(criteria: AllDatesInPeriodQuarter2): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodQuarter3(criteria: AllDatesInPeriodQuarter3): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodQuarter4(criteria: AllDatesInPeriodQuarter4): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_AllDatesInPeriodSeptember(criteria: AllDatesInPeriodSeptember): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_BelowAverage(criteria: BelowAverage): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_LastMonth(criteria: LastMonth): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_LastQuarter(criteria: LastQuarter): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_LastWeek(criteria: LastWeek): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_LastYear(criteria: LastYear): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_NextMonth(criteria: NextMonth): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_NextQuarter(criteria: NextQuarter): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_NextWeek(criteria: NextWeek): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_NextYear(criteria: NextYear): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_ThisMonth(criteria: ThisMonth): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_ThisQuarter(criteria: ThisQuarter): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_ThisWeek(criteria: ThisWeek): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_ThisYear(criteria: ThisYear): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_Today(criteria: Today): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_Tomorrow(criteria: Tomorrow): Unit = js.native
-  /**
-    * Apply a "Dynamic" filter to the column.
-    *
-    * [Api set: ExcelApi 1.2]
-    *
-    * @param criteria The dynamic criteria to apply.
-    */
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_Unknown(criteria: Unknown_): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_YearToDate(criteria: YearToDate): Unit = js.native
-  @JSName("applyDynamicFilter")
-  def applyDynamicFilter_Yesterday(criteria: Yesterday): Unit = js.native
   
   /**
     * Apply a "Font Color" filter to the column for the given color.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param color The font color of the cells to show.
@@ -213,6 +148,7 @@ trait Filter
   /**
     * Apply an "Icon" filter to the column for the given icon.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param icon The icons of the cells to show.
@@ -222,6 +158,7 @@ trait Filter
   /**
     * Apply a "Top Item" filter to the column for the given number of elements.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param count The number of elements from the top to show.
@@ -231,6 +168,7 @@ trait Filter
   /**
     * Apply a "Top Percent" filter to the column for the given percentage of elements.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param percent The percentage of elements from the top to show.
@@ -240,15 +178,17 @@ trait Filter
   /**
     * Apply a "Values" filter to the column for the given values.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
-    * @param values The list of values to show. This must be an array of strings or an array of Excel.FilterDateTime objects.
+    * @param values The list of values to show. This must be an array of strings or an array of `Excel.FilterDateTime` objects.
     */
   def applyValuesFilter(values: js.Array[String | FilterDatetime]): Unit = js.native
   
   /**
     * Clear the filter on the given column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   def clear(): Unit = js.native
@@ -258,9 +198,9 @@ trait Filter
   var context_Filter: RequestContext = js.native
   
   /**
-    *
     * The currently applied filter on the given column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   val criteria: FilterCriteria = js.native

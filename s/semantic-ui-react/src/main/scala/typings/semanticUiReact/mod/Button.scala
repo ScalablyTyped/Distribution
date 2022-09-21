@@ -1,6 +1,6 @@
 package typings.semanticUiReact.mod
 
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import typings.semanticUiReact.buttonButtonMod.default
 import typings.semanticUiReact.buttonContentMod.ButtonContentProps
 import typings.semanticUiReact.buttonGroupMod.ButtonGroupProps
@@ -11,21 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("semantic-ui-react", "Button")
 @js.native
-class Button () extends default
+open class Button () extends default
 object Button {
   
   /* was `typeof ButtonContent` */
   @JSImport("semantic-ui-react", "Button.Content")
   @js.native
-  val Content: StatelessComponent[ButtonContentProps] = js.native
+  val Content: FC[ButtonContentProps] = js.native
   
   /* was `typeof ButtonGroup` */
   @JSImport("semantic-ui-react", "Button.Group")
   @js.native
-  val Group: StatelessComponent[ButtonGroupProps] = js.native
+  val Group: FC[ButtonGroupProps] = js.native
   
   /* was `typeof ButtonOr` */
   @JSImport("semantic-ui-react", "Button.Or")
   @js.native
-  val Or: StatelessComponent[ButtonOrProps] = js.native
+  val Or: FC[ButtonOrProps] = js.native
 }

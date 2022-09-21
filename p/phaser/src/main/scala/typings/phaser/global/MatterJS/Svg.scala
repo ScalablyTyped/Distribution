@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Svg")
 @js.native
-class Svg ()
+open class Svg ()
   extends StObject
      with typings.phaser.MatterJS.Svg
 object Svg {

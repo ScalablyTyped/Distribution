@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSpanner.anon
 
-import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.ExecuteSqlRequest
+import typings.maximMazurokGapiClientSpanner.gapi.client.spanner.ExecuteBatchDmlRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +36,9 @@ trait AccesstokenAlt extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ExecuteSqlRequest
+  var resource: ExecuteBatchDmlRequest
   
-  /** Required. The session in which the SQL query should be performed. */
+  /** Required. The session in which the DML statements should be performed. */
   var session: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -49,7 +49,7 @@ trait AccesstokenAlt extends StObject {
 }
 object AccesstokenAlt {
   
-  inline def apply(resource: ExecuteSqlRequest, session: String): AccesstokenAlt = {
+  inline def apply(resource: ExecuteBatchDmlRequest, session: String): AccesstokenAlt = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAlt]
   }
@@ -92,7 +92,7 @@ object AccesstokenAlt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ExecuteSqlRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ExecuteBatchDmlRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     

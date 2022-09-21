@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.OlapTableViewHeaderCell")
 @js.native
-class OlapTableViewHeaderCell ()
+open class OlapTableViewHeaderCell ()
   extends StObject
      with typings.igniteUi.Infragistics.OlapTableViewHeaderCell {
   

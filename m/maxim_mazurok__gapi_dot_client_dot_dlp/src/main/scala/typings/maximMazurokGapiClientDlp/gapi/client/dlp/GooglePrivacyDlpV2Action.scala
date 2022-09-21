@@ -6,20 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GooglePrivacyDlpV2Action extends StObject {
   
+  /** Create a de-identified copy of the input data. Applicable for non-image data only. The de-identified copy is in the same location as the original data. */
+  var deidentify: js.UndefOr[GooglePrivacyDlpV2Deidentify] = js.undefined
+  
   /** Enable email notification for project owners and editors on job's completion/failure. */
-  var jobNotificationEmails: js.UndefOr[js.Any] = js.undefined
+  var jobNotificationEmails: js.UndefOr[Any] = js.undefined
   
   /** Publish a notification to a pubsub topic. */
   var pubSub: js.UndefOr[GooglePrivacyDlpV2PublishToPubSub] = js.undefined
   
   /** Publish findings to Cloud Datahub. */
-  var publishFindingsToCloudDataCatalog: js.UndefOr[js.Any] = js.undefined
+  var publishFindingsToCloudDataCatalog: js.UndefOr[Any] = js.undefined
   
   /** Publish summary to Cloud Security Command Center (Alpha). */
-  var publishSummaryToCscc: js.UndefOr[js.Any] = js.undefined
+  var publishSummaryToCscc: js.UndefOr[Any] = js.undefined
   
   /** Enable Stackdriver metric dlp.googleapis.com/finding_count. */
-  var publishToStackdriver: js.UndefOr[js.Any] = js.undefined
+  var publishToStackdriver: js.UndefOr[Any] = js.undefined
   
   /** Save resulting findings in a provided location. */
   var saveFindings: js.UndefOr[GooglePrivacyDlpV2SaveFindings] = js.undefined
@@ -33,7 +36,11 @@ object GooglePrivacyDlpV2Action {
   
   extension [Self <: GooglePrivacyDlpV2Action](x: Self) {
     
-    inline def setJobNotificationEmails(value: js.Any): Self = StObject.set(x, "jobNotificationEmails", value.asInstanceOf[js.Any])
+    inline def setDeidentify(value: GooglePrivacyDlpV2Deidentify): Self = StObject.set(x, "deidentify", value.asInstanceOf[js.Any])
+    
+    inline def setDeidentifyUndefined: Self = StObject.set(x, "deidentify", js.undefined)
+    
+    inline def setJobNotificationEmails(value: Any): Self = StObject.set(x, "jobNotificationEmails", value.asInstanceOf[js.Any])
     
     inline def setJobNotificationEmailsUndefined: Self = StObject.set(x, "jobNotificationEmails", js.undefined)
     
@@ -41,15 +48,15 @@ object GooglePrivacyDlpV2Action {
     
     inline def setPubSubUndefined: Self = StObject.set(x, "pubSub", js.undefined)
     
-    inline def setPublishFindingsToCloudDataCatalog(value: js.Any): Self = StObject.set(x, "publishFindingsToCloudDataCatalog", value.asInstanceOf[js.Any])
+    inline def setPublishFindingsToCloudDataCatalog(value: Any): Self = StObject.set(x, "publishFindingsToCloudDataCatalog", value.asInstanceOf[js.Any])
     
     inline def setPublishFindingsToCloudDataCatalogUndefined: Self = StObject.set(x, "publishFindingsToCloudDataCatalog", js.undefined)
     
-    inline def setPublishSummaryToCscc(value: js.Any): Self = StObject.set(x, "publishSummaryToCscc", value.asInstanceOf[js.Any])
+    inline def setPublishSummaryToCscc(value: Any): Self = StObject.set(x, "publishSummaryToCscc", value.asInstanceOf[js.Any])
     
     inline def setPublishSummaryToCsccUndefined: Self = StObject.set(x, "publishSummaryToCscc", js.undefined)
     
-    inline def setPublishToStackdriver(value: js.Any): Self = StObject.set(x, "publishToStackdriver", value.asInstanceOf[js.Any])
+    inline def setPublishToStackdriver(value: Any): Self = StObject.set(x, "publishToStackdriver", value.asInstanceOf[js.Any])
     
     inline def setPublishToStackdriverUndefined: Self = StObject.set(x, "publishToStackdriver", js.undefined)
     

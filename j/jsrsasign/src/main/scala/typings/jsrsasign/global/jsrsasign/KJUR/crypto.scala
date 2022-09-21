@@ -109,7 +109,7 @@ object crypto {
     */
   @JSGlobal("jsrsasign.KJUR.crypto.DSA")
   @js.native
-  class DSA ()
+  open class DSA ()
     extends typings.jsrsasign.mod.KJUR.crypto.DSA
   
   /**
@@ -128,7 +128,7 @@ object crypto {
     */
   @JSGlobal("jsrsasign.KJUR.crypto.ECDSA")
   @js.native
-  class ECDSA ()
+  open class ECDSA ()
     extends typings.jsrsasign.mod.KJUR.crypto.ECDSA {
     def this(publicKey: Curve) = this()
   }
@@ -295,7 +295,7 @@ object crypto {
     */
   @JSGlobal("jsrsasign.KJUR.crypto.Mac")
   @js.native
-  class Mac protected ()
+  open class Mac protected ()
     extends typings.jsrsasign.mod.KJUR.crypto.Mac {
     def this(params: Pass) = this()
   }
@@ -330,7 +330,7 @@ object crypto {
     */
   @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest")
   @js.native
-  class MessageDigest protected ()
+  open class MessageDigest protected ()
     extends typings.jsrsasign.mod.KJUR.crypto.MessageDigest {
     def this(params: Prov) = this()
   }
@@ -488,7 +488,7 @@ object crypto {
     */
   @JSGlobal("jsrsasign.KJUR.crypto.Signature")
   @js.native
-  class Signature ()
+  open class Signature ()
     extends typings.jsrsasign.mod.KJUR.crypto.Signature {
     def this(params: `0`) = this()
   }

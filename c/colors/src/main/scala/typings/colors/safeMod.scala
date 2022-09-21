@@ -68,7 +68,7 @@ object safeMod {
   
   inline def reset(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def setTheme(theme: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTheme(theme: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def strikethrough(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strikethrough")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   

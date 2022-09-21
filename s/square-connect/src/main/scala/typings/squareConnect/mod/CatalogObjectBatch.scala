@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogObjectBatch")
 @js.native
-class CatalogObjectBatch () extends StObject {
+open class CatalogObjectBatch () extends StObject {
   
   /**
     * A list of CatalogObjects belonging to this batch.

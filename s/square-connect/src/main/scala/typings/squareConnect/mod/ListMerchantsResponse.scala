@@ -1,13 +1,12 @@
 package typings.squareConnect.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListMerchantsResponse")
 @js.native
-class ListMerchantsResponse () extends StObject {
+open class ListMerchantsResponse () extends StObject {
   
   /**
     * If the  response is truncated, the cursor to use in next request to fetch next set of objects.
@@ -17,7 +16,7 @@ class ListMerchantsResponse () extends StObject {
   /**
     * Information on errors encountered during the request.
     */
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[js.Error]] = js.native
   
   /**
     * The requested `Merchant` entities.

@@ -34,6 +34,6 @@ object BulkSendingListSummaries {
     
     inline def setBulkListSummariesVarargs(
       value: (/* This object contains basic information about a bulk send list. */ BulkSendingListSummary)*
-    ): Self = StObject.set(x, "bulkListSummaries", js.Array(value :_*))
+    ): Self = StObject.set(x, "bulkListSummaries", js.Array(value*))
   }
 }

@@ -13,12 +13,14 @@ object subSurfaceBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/subSurfaceBlock", "SubSurfaceBlock")
   @js.native
-  class SubSurfaceBlock protected () extends NodeMaterialBlock {
+  open class SubSurfaceBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new SubSurfaceBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
+    
+    def autoConfigure(): Unit = js.native
     
     /**
       * Gets the refraction object parameters

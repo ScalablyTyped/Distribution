@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element The DOM element that will host the new NavBar.
   * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
   **/
-class NavBar ()
+open class NavBar ()
   extends StObject
      with typings.winjs.WinJS.UI.NavBar {
   def this(element: HTMLElement) = this()
-  def this(element: Unit, options: js.Any) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: Unit, options: Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
 }
 object NavBar {
   
@@ -36,8 +36,8 @@ object NavBar {
   /* static member */
   @JSImport("winjs", "UI.NavBar.isDeclarativeControlContainer")
   @js.native
-  def isDeclarativeControlContainer: js.Any = js.native
-  inline def isDeclarativeControlContainer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDeclarativeControlContainer")(x.asInstanceOf[js.Any])
+  def isDeclarativeControlContainer: Any = js.native
+  inline def isDeclarativeControlContainer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDeclarativeControlContainer")(x.asInstanceOf[js.Any])
   
   /**
     * Indicates that the object is compatibile with declarative processing.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeContactFlowRequest extends StObject {
   
   /**
-    * The identifier of the contact flow.
+    * The identifier of the flow.
     */
   var ContactFlowId: typings.awsSdk.connectMod.ContactFlowId
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.Quaternion")
 @js.native
-class Quaternion ()
+open class Quaternion ()
   extends StObject
      with typings.cannon.CANNON.Quaternion {
   def this(x: Double) = this()

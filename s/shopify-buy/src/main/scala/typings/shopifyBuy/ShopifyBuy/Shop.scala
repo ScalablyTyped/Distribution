@@ -16,15 +16,15 @@ trait Shop extends StObject {
     * TODO Add types for the Shop properties below
     * PaymentSettings, ShopPolicy etc
     */
-  var paymentSettings: js.Any
+  var paymentSettings: Any
   
-  var primaryDomain: js.Any
+  var primaryDomain: Any
   
-  var privacyPolicy: js.Any
+  var privacyPolicy: Any
   
-  var refundPolicy: js.Any
+  var refundPolicy: Any
   
-  var termsOfService: js.Any
+  var termsOfService: Any
 }
 object Shop {
   
@@ -32,11 +32,11 @@ object Shop {
     description: String,
     moneyFormat: String,
     name: String,
-    paymentSettings: js.Any,
-    primaryDomain: js.Any,
-    privacyPolicy: js.Any,
-    refundPolicy: js.Any,
-    termsOfService: js.Any
+    paymentSettings: Any,
+    primaryDomain: Any,
+    privacyPolicy: Any,
+    refundPolicy: Any,
+    termsOfService: Any
   ): Shop = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], moneyFormat = moneyFormat.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paymentSettings = paymentSettings.asInstanceOf[js.Any], primaryDomain = primaryDomain.asInstanceOf[js.Any], privacyPolicy = privacyPolicy.asInstanceOf[js.Any], refundPolicy = refundPolicy.asInstanceOf[js.Any], termsOfService = termsOfService.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shop]
@@ -50,14 +50,14 @@ object Shop {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPaymentSettings(value: js.Any): Self = StObject.set(x, "paymentSettings", value.asInstanceOf[js.Any])
+    inline def setPaymentSettings(value: Any): Self = StObject.set(x, "paymentSettings", value.asInstanceOf[js.Any])
     
-    inline def setPrimaryDomain(value: js.Any): Self = StObject.set(x, "primaryDomain", value.asInstanceOf[js.Any])
+    inline def setPrimaryDomain(value: Any): Self = StObject.set(x, "primaryDomain", value.asInstanceOf[js.Any])
     
-    inline def setPrivacyPolicy(value: js.Any): Self = StObject.set(x, "privacyPolicy", value.asInstanceOf[js.Any])
+    inline def setPrivacyPolicy(value: Any): Self = StObject.set(x, "privacyPolicy", value.asInstanceOf[js.Any])
     
-    inline def setRefundPolicy(value: js.Any): Self = StObject.set(x, "refundPolicy", value.asInstanceOf[js.Any])
+    inline def setRefundPolicy(value: Any): Self = StObject.set(x, "refundPolicy", value.asInstanceOf[js.Any])
     
-    inline def setTermsOfService(value: js.Any): Self = StObject.set(x, "termsOfService", value.asInstanceOf[js.Any])
+    inline def setTermsOfService(value: Any): Self = StObject.set(x, "termsOfService", value.asInstanceOf[js.Any])
   }
 }

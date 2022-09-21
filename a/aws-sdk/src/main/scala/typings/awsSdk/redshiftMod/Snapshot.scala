@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Snapshot extends StObject {
   
   /**
-    * A list of the AWS customer accounts authorized to restore the snapshot. Returns null if no accounts are authorized. Visible only to the snapshot owner. 
+    * A list of the Amazon Web Services accounts authorized to restore the snapshot. Returns null if no accounts are authorized. Visible only to the snapshot owner. 
     */
   var AccountsWithRestoreAccess: js.UndefOr[AccountsWithRestoreAccessList] = js.undefined
   
@@ -29,7 +29,7 @@ trait Snapshot extends StObject {
   /**
     * The time (UTC) when the cluster was originally created.
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
+  var ClusterCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier of the cluster for which the snapshot was taken.
@@ -67,6 +67,11 @@ trait Snapshot extends StObject {
   var EncryptedWithHSM: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The cluster version of the cluster used to create the snapshot. For example, 1.0.15503. 
+    */
+  var EngineFullVersion: js.UndefOr[String] = js.undefined
+  
+  /**
     * An option that specifies whether to create the cluster with enhanced VPC routing enabled. To create a cluster that uses enhanced VPC routing, the cluster must be in a VPC. For more information, see Enhanced VPC Routing in the Amazon Redshift Cluster Management Guide. If this option is true, enhanced VPC routing is enabled.  Default: false
     */
   var EnhancedVpcRouting: js.UndefOr[Boolean] = js.undefined
@@ -77,7 +82,7 @@ trait Snapshot extends StObject {
   var EstimatedSecondsToCompletion: js.UndefOr[Long] = js.undefined
   
   /**
-    * The AWS Key Management Service (KMS) key ID of the encryption key that was used to encrypt data in the cluster from which the snapshot was taken.
+    * The Key Management Service (KMS) key ID of the encryption key that was used to encrypt data in the cluster from which the snapshot was taken.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -97,7 +102,7 @@ trait Snapshot extends StObject {
   var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The master user name for the cluster.
+    * The admin user name for the cluster.
     */
   var MasterUsername: js.UndefOr[String] = js.undefined
   
@@ -112,7 +117,7 @@ trait Snapshot extends StObject {
   var NumberOfNodes: js.UndefOr[Integer] = js.undefined
   
   /**
-    * For manual snapshots, the AWS customer account used to create or copy the snapshot. For automatic snapshots, the owner of the cluster. The owner can perform all snapshot actions, such as sharing a manual snapshot.
+    * For manual snapshots, the Amazon Web Services account used to create or copy the snapshot. For automatic snapshots, the owner of the cluster. The owner can perform all snapshot actions, such as sharing a manual snapshot.
     */
   var OwnerAccount: js.UndefOr[String] = js.undefined
   
@@ -129,7 +134,7 @@ trait Snapshot extends StObject {
   /**
     * The time (in UTC format) when Amazon Redshift began the snapshot. A snapshot contains a copy of the cluster data as of this exact time.
     */
-  var SnapshotCreateTime: js.UndefOr[TStamp] = js.undefined
+  var SnapshotCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The snapshot identifier that is provided in the request.
@@ -139,7 +144,7 @@ trait Snapshot extends StObject {
   /**
     * A timestamp representing the start of the retention period for the snapshot.
     */
-  var SnapshotRetentionStartTime: js.UndefOr[TStamp] = js.undefined
+  var SnapshotRetentionStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The snapshot type. Snapshots created using CreateClusterSnapshot and CopyClusterSnapshot are of type "manual". 
@@ -184,7 +189,7 @@ object Snapshot {
     
     inline def setAccountsWithRestoreAccessUndefined: Self = StObject.set(x, "AccountsWithRestoreAccess", js.undefined)
     
-    inline def setAccountsWithRestoreAccessVarargs(value: AccountWithRestoreAccess*): Self = StObject.set(x, "AccountsWithRestoreAccess", js.Array(value :_*))
+    inline def setAccountsWithRestoreAccessVarargs(value: AccountWithRestoreAccess*): Self = StObject.set(x, "AccountsWithRestoreAccess", js.Array(value*))
     
     inline def setActualIncrementalBackupSizeInMegaBytes(value: Double): Self = StObject.set(x, "ActualIncrementalBackupSizeInMegaBytes", value.asInstanceOf[js.Any])
     
@@ -198,7 +203,7 @@ object Snapshot {
     
     inline def setBackupProgressInMegaBytesUndefined: Self = StObject.set(x, "BackupProgressInMegaBytes", js.undefined)
     
-    inline def setClusterCreateTime(value: TStamp): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
+    inline def setClusterCreateTime(value: js.Date): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
     
     inline def setClusterCreateTimeUndefined: Self = StObject.set(x, "ClusterCreateTime", js.undefined)
     
@@ -229,6 +234,10 @@ object Snapshot {
     inline def setEncryptedWithHSM(value: Boolean): Self = StObject.set(x, "EncryptedWithHSM", value.asInstanceOf[js.Any])
     
     inline def setEncryptedWithHSMUndefined: Self = StObject.set(x, "EncryptedWithHSM", js.undefined)
+    
+    inline def setEngineFullVersion(value: String): Self = StObject.set(x, "EngineFullVersion", value.asInstanceOf[js.Any])
+    
+    inline def setEngineFullVersionUndefined: Self = StObject.set(x, "EngineFullVersion", js.undefined)
     
     inline def setEnhancedVpcRouting(value: Boolean): Self = StObject.set(x, "EnhancedVpcRouting", value.asInstanceOf[js.Any])
     
@@ -278,9 +287,9 @@ object Snapshot {
     
     inline def setRestorableNodeTypesUndefined: Self = StObject.set(x, "RestorableNodeTypes", js.undefined)
     
-    inline def setRestorableNodeTypesVarargs(value: String*): Self = StObject.set(x, "RestorableNodeTypes", js.Array(value :_*))
+    inline def setRestorableNodeTypesVarargs(value: String*): Self = StObject.set(x, "RestorableNodeTypes", js.Array(value*))
     
-    inline def setSnapshotCreateTime(value: TStamp): Self = StObject.set(x, "SnapshotCreateTime", value.asInstanceOf[js.Any])
+    inline def setSnapshotCreateTime(value: js.Date): Self = StObject.set(x, "SnapshotCreateTime", value.asInstanceOf[js.Any])
     
     inline def setSnapshotCreateTimeUndefined: Self = StObject.set(x, "SnapshotCreateTime", js.undefined)
     
@@ -288,7 +297,7 @@ object Snapshot {
     
     inline def setSnapshotIdentifierUndefined: Self = StObject.set(x, "SnapshotIdentifier", js.undefined)
     
-    inline def setSnapshotRetentionStartTime(value: TStamp): Self = StObject.set(x, "SnapshotRetentionStartTime", value.asInstanceOf[js.Any])
+    inline def setSnapshotRetentionStartTime(value: js.Date): Self = StObject.set(x, "SnapshotRetentionStartTime", value.asInstanceOf[js.Any])
     
     inline def setSnapshotRetentionStartTimeUndefined: Self = StObject.set(x, "SnapshotRetentionStartTime", js.undefined)
     
@@ -308,7 +317,7 @@ object Snapshot {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTotalBackupSizeInMegaBytes(value: Double): Self = StObject.set(x, "TotalBackupSizeInMegaBytes", value.asInstanceOf[js.Any])
     

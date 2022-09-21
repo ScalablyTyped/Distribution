@@ -10,9 +10,9 @@ trait SparkVerticalAxis extends StObject {
   
   val Creator: XlCreator
   
-  var CustomMaxScaleValue: js.Any
+  var CustomMaxScaleValue: Any
   
-  var CustomMinScaleValue: js.Any
+  var CustomMinScaleValue: Any
   
   /* private */ @JSName("Excel.SparkVerticalAxis_typekey")
   var ExcelDotSparkVerticalAxis_typekey: SparkVerticalAxis
@@ -21,19 +21,19 @@ trait SparkVerticalAxis extends StObject {
   
   var MinScaleType: XlSparkScale
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object SparkVerticalAxis {
   
   inline def apply(
     Application: Application,
     Creator: XlCreator,
-    CustomMaxScaleValue: js.Any,
-    CustomMinScaleValue: js.Any,
+    CustomMaxScaleValue: Any,
+    CustomMinScaleValue: Any,
     ExcelDotSparkVerticalAxis_typekey: SparkVerticalAxis,
     MaxScaleType: XlSparkScale,
     MinScaleType: XlSparkScale,
-    Parent: js.Any
+    Parent: Any
   ): SparkVerticalAxis = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], CustomMaxScaleValue = CustomMaxScaleValue.asInstanceOf[js.Any], CustomMinScaleValue = CustomMinScaleValue.asInstanceOf[js.Any], MaxScaleType = MaxScaleType.asInstanceOf[js.Any], MinScaleType = MinScaleType.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.SparkVerticalAxis_typekey")(ExcelDotSparkVerticalAxis_typekey.asInstanceOf[js.Any])
@@ -46,9 +46,9 @@ object SparkVerticalAxis {
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setCustomMaxScaleValue(value: js.Any): Self = StObject.set(x, "CustomMaxScaleValue", value.asInstanceOf[js.Any])
+    inline def setCustomMaxScaleValue(value: Any): Self = StObject.set(x, "CustomMaxScaleValue", value.asInstanceOf[js.Any])
     
-    inline def setCustomMinScaleValue(value: js.Any): Self = StObject.set(x, "CustomMinScaleValue", value.asInstanceOf[js.Any])
+    inline def setCustomMinScaleValue(value: Any): Self = StObject.set(x, "CustomMinScaleValue", value.asInstanceOf[js.Any])
     
     inline def setExcelDotSparkVerticalAxis_typekey(value: SparkVerticalAxis): Self = StObject.set(x, "Excel.SparkVerticalAxis_typekey", value.asInstanceOf[js.Any])
     
@@ -56,6 +56,6 @@ object SparkVerticalAxis {
     
     inline def setMinScaleType(value: XlSparkScale): Self = StObject.set(x, "MinScaleType", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ Get the current branch from the local git repository.
 | ------------------ | :-------------: |
 | Full name          | git-branch |
 | Keywords           | branch, git |
-| # releases         | 0 |
-| # dependents       | 118 |
-| # downloads        | 2104669 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 318665.6666666667 |
+| # stars            | 90.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/git-branch)

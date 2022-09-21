@@ -1,19 +1,18 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TaskAttachment extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
-  var createdOn: Date
+  var createdOn: js.Date
   
   var lastChangedBy: String
   
-  var lastChangedOn: Date
+  var lastChangedOn: js.Date
   
   var name: String
   
@@ -26,10 +25,10 @@ trait TaskAttachment extends StObject {
 object TaskAttachment {
   
   inline def apply(
-    _links: js.Any,
-    createdOn: Date,
+    _links: Any,
+    createdOn: js.Date,
     lastChangedBy: String,
-    lastChangedOn: Date,
+    lastChangedOn: js.Date,
     name: String,
     recordId: String,
     timelineId: String,
@@ -42,11 +41,11 @@ object TaskAttachment {
   
   extension [Self <: TaskAttachment](x: Self) {
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setLastChangedBy(value: String): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastChangedOn(value: Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
+    inline def setLastChangedOn(value: js.Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -56,6 +55,6 @@ object TaskAttachment {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,7 @@ trait FormOptions
     * Allow default keys (tab, vi keys, enter).
     */
   @JSName("keys")
-  var keys_FormOptions: js.UndefOr[js.Any] = js.undefined
+  var keys_FormOptions: js.UndefOr[Any] = js.undefined
 }
 object FormOptions {
   
@@ -23,7 +23,7 @@ object FormOptions {
   
   extension [Self <: FormOptions](x: Self) {
     
-    inline def setKeys(value: js.Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
   }

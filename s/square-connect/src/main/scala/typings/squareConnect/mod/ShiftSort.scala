@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ShiftSort")
 @js.native
-class ShiftSort () extends StObject {
+open class ShiftSort () extends StObject {
   
   /**
     * The field to sort on. See [ShiftSortField](#type-shiftsortfield) for possible values.

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lazy-val" : "1.0.4"
+      "lazy-val" : "1.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "lazy-val" : "1.0.4"
+      "lazy-val" : "1.0.5"
     }
   ],
   "compile-devDependencies" : [

@@ -91,5 +91,74 @@ object connectContactFlowMod {
     inline def TRANSFER: typings.awsLambda.awsLambdaStrings.TRANSFER = "TRANSFER".asInstanceOf[typings.awsLambda.awsLambdaStrings.TRANSFER]
   }
   
+  trait ConnectContactFlowQueue extends StObject {
+    
+    var ARN: String
+    
+    var Name: String
+  }
+  object ConnectContactFlowQueue {
+    
+    inline def apply(ARN: String, Name: String): ConnectContactFlowQueue = {
+      val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConnectContactFlowQueue]
+    }
+    
+    extension [Self <: ConnectContactFlowQueue](x: Self) {
+      
+      inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    }
+  }
+  
   type ConnectContactFlowResult = StringDictionary[String | Null]
+  
+  type CustomerAudio = Null | StartedCustomerAudio | (StartedCustomerAudio & StoppedCustomerAudio)
+  
+  trait StartedCustomerAudio extends StObject {
+    
+    var StartFragmentNumber: String
+    
+    var StartTimestamp: String
+    
+    var StreamARN: String
+  }
+  object StartedCustomerAudio {
+    
+    inline def apply(StartFragmentNumber: String, StartTimestamp: String, StreamARN: String): StartedCustomerAudio = {
+      val __obj = js.Dynamic.literal(StartFragmentNumber = StartFragmentNumber.asInstanceOf[js.Any], StartTimestamp = StartTimestamp.asInstanceOf[js.Any], StreamARN = StreamARN.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StartedCustomerAudio]
+    }
+    
+    extension [Self <: StartedCustomerAudio](x: Self) {
+      
+      inline def setStartFragmentNumber(value: String): Self = StObject.set(x, "StartFragmentNumber", value.asInstanceOf[js.Any])
+      
+      inline def setStartTimestamp(value: String): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
+      
+      inline def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait StoppedCustomerAudio extends StObject {
+    
+    var StopFragmentNumber: String
+    
+    var StopTimestamp: String
+  }
+  object StoppedCustomerAudio {
+    
+    inline def apply(StopFragmentNumber: String, StopTimestamp: String): StoppedCustomerAudio = {
+      val __obj = js.Dynamic.literal(StopFragmentNumber = StopFragmentNumber.asInstanceOf[js.Any], StopTimestamp = StopTimestamp.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StoppedCustomerAudio]
+    }
+    
+    extension [Self <: StoppedCustomerAudio](x: Self) {
+      
+      inline def setStopFragmentNumber(value: String): Self = StObject.set(x, "StopFragmentNumber", value.asInstanceOf[js.Any])
+      
+      inline def setStopTimestamp(value: String): Self = StObject.set(x, "StopTimestamp", value.asInstanceOf[js.Any])
+    }
+  }
 }

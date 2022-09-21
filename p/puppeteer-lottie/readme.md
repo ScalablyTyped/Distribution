@@ -10,10 +10,10 @@ Renders Lottie animations via Puppeteer to image, GIF, or MP4.
 | ------------------ | :-------------: |
 | Full name          | puppeteer-lottie |
 | Keywords           | puppeteer, lottie, lottie-web, bodymovin, after effects, render, animation, png, ffmpeg, gifski, gif, mp4, video |
-| # releases         | 20 |
-| # dependents       | 2 |
-| # downloads        | 5539 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 601.0 |
+| # stars            | 279.0 |
 
 ## Links
 - [Homepage](https://github.com/transitive-bullshit/puppeteer-lottie#readme)

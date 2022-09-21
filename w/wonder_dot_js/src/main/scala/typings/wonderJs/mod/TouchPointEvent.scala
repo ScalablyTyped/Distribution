@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "TouchPointEvent")
 @js.native
-class TouchPointEvent protected ()
+open class TouchPointEvent protected ()
   extends typings.wonderJs.touchPointEventMod.TouchPointEvent {
-  def this(event: js.Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName) = this()
+  def this(event: Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName) = this()
 }
 /* static members */
 object TouchPointEvent {

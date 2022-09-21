@@ -55,7 +55,7 @@ object HostCommon {
     
     inline def setAddress(value: js.Array[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    inline def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value :_*))
+    inline def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value*))
     
     inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Browser extends StObject {
   
-  var Buttons: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonSet */ js.Any = js.native
+  var Buttons: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonSet */ Any = js.native
   
   def inputBox(prompt: String): String = js.native
   def inputBox(prompt: String, buttons: ButtonSet): String = js.native

@@ -14,7 +14,7 @@ trait VirtualInterfaceTestHistory extends StObject {
   /**
     * The time that the virtual interface moves out of the DOWN state.
     */
-  var endTime: js.UndefOr[EndTime] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The owner ID of the tested virtual interface.
@@ -24,7 +24,7 @@ trait VirtualInterfaceTestHistory extends StObject {
   /**
     * The time that the virtual interface moves to the DOWN state.
     */
-  var startTime: js.UndefOr[StartTime] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the virtual interface failover test.
@@ -59,9 +59,9 @@ object VirtualInterfaceTestHistory {
     
     inline def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
     
-    inline def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
+    inline def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value*))
     
-    inline def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -69,7 +69,7 @@ object VirtualInterfaceTestHistory {
     
     inline def setOwnerAccountUndefined: Self = StObject.set(x, "ownerAccount", js.undefined)
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     

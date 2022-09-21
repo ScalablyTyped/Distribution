@@ -12,5 +12,5 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def createAdapter(logger: Logger): typings.bunyan.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(logger.asInstanceOf[js.Any]).asInstanceOf[typings.bunyan.mod.^]
-  inline def createAdapter(logger: Logger, mapping: js.Any): typings.bunyan.mod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(logger.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[typings.bunyan.mod.^]
+  inline def createAdapter(logger: Logger, mapping: Any): typings.bunyan.mod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(logger.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[typings.bunyan.mod.^]
 }

@@ -1,8 +1,6 @@
 package typings.awsSdkClientGlacierNode
 
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +22,7 @@ object typesUploadMultipartPartInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -41,7 +39,7 @@ object typesUploadMultipartPartInputMod {
     /**
       * <p>The data to upload.</p>
       */
-    var body: js.UndefOr[ArrayBuffer | ArrayBufferView | String | StreamType] = js.undefined
+    var body: js.UndefOr[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String | StreamType] = js.undefined
     
     /**
       * <p>The SHA256 tree hash of the data being uploaded.</p>
@@ -77,7 +75,7 @@ object typesUploadMultipartPartInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -88,7 +86,7 @@ object typesUploadMultipartPartInputMod {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      inline def setBody(value: ArrayBuffer | ArrayBufferView | String | StreamType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String | StreamType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "parchment" : "1.1.4"
+      "parchment" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "parchment" : "1.1.4"
+      "parchment" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

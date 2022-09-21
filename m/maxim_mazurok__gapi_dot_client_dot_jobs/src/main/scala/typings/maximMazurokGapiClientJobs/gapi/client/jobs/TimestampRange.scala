@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TimestampRange extends StObject {
   
-  /** End of the period. */
+  /** End of the period (exclusive). */
   var endTime: js.UndefOr[String] = js.undefined
   
-  /** Begin of the period. */
+  /** Begin of the period (inclusive). */
   var startTime: js.UndefOr[String] = js.undefined
 }
 object TimestampRange {

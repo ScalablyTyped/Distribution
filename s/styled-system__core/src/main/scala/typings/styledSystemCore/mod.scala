@@ -12,13 +12,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def compose(parsers: styleFn*): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(parsers.asInstanceOf[js.Any]).asInstanceOf[styleFn]
+  inline def compose(parsers: styleFn*): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(parsers.asInstanceOf[Seq[js.Any]]*).asInstanceOf[styleFn]
   
   inline def createParser(config: ConfigStyle): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")(config.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
   inline def createStyleFunction(args: ConfigStyle): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(args.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
-  inline def get(obj: js.Any, paths: (String | Double)*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: Any, paths: (String | Double)*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(List(obj.asInstanceOf[js.Any]).`++`(paths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def system(styleDefinitions: Config): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("system")(styleDefinitions.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
@@ -36,20 +36,20 @@ object mod {
       */
     var properties: js.UndefOr[
         js.Array[
-          /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any
+          /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 788 */ Any
         ]
       ] = js.undefined
     
     /** The CSS property to use in the returned style object (overridden by `properties` if present). */
     var property: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 789 */ Any
       ] = js.undefined
     
     /** A string referencing a key in the `theme` object. */
     var scale: js.UndefOr[String] = js.undefined
     
     /** A function to transform the raw value based on the scale. */
-    var transform: js.UndefOr[js.Function2[/* value */ js.Any, /* scale */ js.UndefOr[Scale], js.Any]] = js.undefined
+    var transform: js.UndefOr[js.Function2[/* value */ Any, /* scale */ js.UndefOr[Scale], Any]] = js.undefined
   }
   object ConfigStyle {
     
@@ -64,21 +64,21 @@ object mod {
       
       inline def setDefaultScaleUndefined: Self = StObject.set(x, "defaultScale", js.undefined)
       
-      inline def setDefaultScaleVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultScale", js.Array(value :_*))
+      inline def setDefaultScaleVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultScale", js.Array(value*))
       
       inline def setProperties(
         value: js.Array[
-              /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any
+              /* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 788 */ Any
             ]
       ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
       inline def setPropertiesVarargs(
-        value: (/* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any)*
-      ): Self = StObject.set(x, "properties", js.Array(value :_*))
+        value: (/* keyof csstype.csstype.Properties<string & {} | 0, string & {}> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 788 */ Any)*
+      ): Self = StObject.set(x, "properties", js.Array(value*))
       
-      inline def setProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 789 */ Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
@@ -86,7 +86,7 @@ object mod {
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      inline def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      inline def setTransform(value: (/* value */ Any, /* scale */ js.UndefOr[Scale]) => Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
@@ -99,7 +99,7 @@ object mod {
   @js.native
   trait styleFn extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
     
     var cache: js.UndefOr[js.Object] = js.native
     

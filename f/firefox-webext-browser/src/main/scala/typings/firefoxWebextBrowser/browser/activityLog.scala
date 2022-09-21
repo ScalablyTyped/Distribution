@@ -93,7 +93,7 @@ object activityLog {
   trait OnExtensionActivityDetailsData extends StObject {
     
     /** A list of arguments passed to the call. */
-    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var args: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** The result of the call. */
     var result: js.UndefOr[js.Object] = js.undefined
@@ -113,11 +113,11 @@ object activityLog {
     
     extension [Self <: OnExtensionActivityDetailsData](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setResult(value: js.Object): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       

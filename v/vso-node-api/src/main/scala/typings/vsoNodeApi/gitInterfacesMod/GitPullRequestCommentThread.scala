@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +16,13 @@ trait GitPullRequestCommentThread
 object GitPullRequestCommentThread {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     comments: js.Array[Comment],
     id: Double,
     isDeleted: Boolean,
-    lastUpdatedDate: Date,
-    properties: js.Any,
-    publishedDate: Date,
+    lastUpdatedDate: js.Date,
+    properties: Any,
+    publishedDate: js.Date,
     pullRequestThreadContext: GitPullRequestCommentThreadContext,
     status: CommentThreadStatus,
     threadContext: CommentThreadContext

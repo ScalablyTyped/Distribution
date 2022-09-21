@@ -55,7 +55,7 @@ object messageFilteringParametersMod {
   
   @JSImport("postmark/dist/client/models/messages/MessageFilteringParameters", "InboundMessagesFilteringParameters")
   @js.native
-  class InboundMessagesFilteringParameters protected () extends FilteringParameters {
+  open class InboundMessagesFilteringParameters protected () extends FilteringParameters {
     def this(
       count: js.UndefOr[Double],
       offset: js.UndefOr[Double],
@@ -88,7 +88,7 @@ object messageFilteringParametersMod {
   
   @JSImport("postmark/dist/client/models/messages/MessageFilteringParameters", "OutboundMessageClicksFilteringParameters")
   @js.native
-  class OutboundMessageClicksFilteringParameters protected () extends OutboundMessageTrackingFilteringParameters {
+  open class OutboundMessageClicksFilteringParameters protected () extends OutboundMessageTrackingFilteringParameters {
     def this(
       count: js.UndefOr[Double],
       offset: js.UndefOr[Double],
@@ -110,7 +110,7 @@ object messageFilteringParametersMod {
   
   @JSImport("postmark/dist/client/models/messages/MessageFilteringParameters", "OutboundMessageOpensFilteringParameters")
   @js.native
-  class OutboundMessageOpensFilteringParameters protected () extends OutboundMessageTrackingFilteringParameters {
+  open class OutboundMessageOpensFilteringParameters protected () extends OutboundMessageTrackingFilteringParameters {
     def this(
       count: js.UndefOr[Double],
       offset: js.UndefOr[Double],
@@ -160,7 +160,7 @@ object messageFilteringParametersMod {
   
   @JSImport("postmark/dist/client/models/messages/MessageFilteringParameters", "OutboundMessageTrackingFilteringParameters")
   @js.native
-  class OutboundMessageTrackingFilteringParameters protected () extends FilteringParameters {
+  open class OutboundMessageTrackingFilteringParameters protected () extends FilteringParameters {
     def this(
       count: js.UndefOr[Double],
       offset: js.UndefOr[Double],
@@ -206,9 +206,19 @@ object messageFilteringParametersMod {
     var tag: js.UndefOr[String] = js.native
   }
   
-  @JSImport("postmark/dist/client/models/messages/MessageFilteringParameters", "OutboundMessagesFilteringParameters")
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Already inherited
+  - scala.AnyRef because Already inherited
+  - scala.Any because Already inherited
+  - js.Any because Already inherited
+  - scala.AnyRef because Already inherited
+  - js.Object because Already inherited
+  - js.Any because Already inherited
+  - org.scalablytyped.runtime.StObject because Already inherited
+  - js.Object because Already inherited
+  - org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("postmark/dist/client/models/messages/MessageFilteringParameters", "OutboundMessagesFilteringParameters")
   @js.native
-  class OutboundMessagesFilteringParameters protected () extends FilteringParameters {
+  open class OutboundMessagesFilteringParameters protected () extends FilteringParameters {
     def this(
       count: js.UndefOr[Double],
       offset: js.UndefOr[Double],

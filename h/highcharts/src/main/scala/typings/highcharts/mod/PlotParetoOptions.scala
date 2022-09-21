@@ -106,7 +106,7 @@ trait PlotParetoOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
@@ -157,6 +157,15 @@ trait PlotParetoOptions extends StObject {
   var cropThreshold: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
+    */
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
     * can be clicked.
@@ -171,7 +180,7 @@ trait PlotParetoOptions extends StObject {
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * (Highcharts) Name of the dash style to use for the graph, or for some
@@ -183,11 +192,16 @@ trait PlotParetoOptions extends StObject {
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
+    * (Highcharts) Indicates data is structured as columns instead of rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
-    * the JavaScript charts. Highstock by default applies data grouping when
-    * the points become closer than a certain pixel value, determined by the
-    * `groupPixelWidth` option.
+    * the JavaScript charts. Highcharts Stock by default applies data grouping
+    * when the points become closer than a certain pixel value, determined by
+    * the `groupPixelWidth` option.
     *
     * If data grouping is applied, the grouping information of grouped points
     * can be read from the Point.dataGroup. If point options other than the
@@ -338,6 +352,12 @@ trait PlotParetoOptions extends StObject {
   var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
   
   /**
+    * (Highcharts) Options for the _Series on point_ feature. Only `pie` and
+    * `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotParetoOnPointOptions] = js.undefined
+  
+  /**
     * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
     * dataLabels.
     */
@@ -349,10 +369,22 @@ trait PlotParetoOptions extends StObject {
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
-    * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
-    * individual series. Overrides the chart wide configuration.
+    * (Highcharts) Same as accessibility.series.descriptionFormatter, but for
+    * an individual series. Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Whether to select the series initially. If `showCheckbox` is
@@ -486,7 +518,7 @@ object PlotParetoOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
@@ -514,17 +546,25 @@ object PlotParetoOptions {
     
     inline def setCropThresholdUndefined: Self = StObject.set(x, "cropThreshold", js.undefined)
     
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
     inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
@@ -534,7 +574,7 @@ object PlotParetoOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: PlotParetoDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: PlotParetoDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDataSorting(value: DataSortingOptionsObject | PlotParetoDataSortingOptions): Self = StObject.set(x, "dataSorting", value.asInstanceOf[js.Any])
     
@@ -564,7 +604,7 @@ object PlotParetoOptions {
     
     inline def setJoinByUndefined: Self = StObject.set(x, "joinBy", js.undefined)
     
-    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value :_*))
+    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value*))
     
     inline def setLabel(value: SeriesLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -598,6 +638,10 @@ object PlotParetoOptions {
     
     inline def setNavigatorOptionsUndefined: Self = StObject.set(x, "navigatorOptions", js.undefined)
     
+    inline def setOnPoint(value: js.Object | PlotParetoOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
+    
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
@@ -609,6 +653,10 @@ object PlotParetoOptions {
     inline def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

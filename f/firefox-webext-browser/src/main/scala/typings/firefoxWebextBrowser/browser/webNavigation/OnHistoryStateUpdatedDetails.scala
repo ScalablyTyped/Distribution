@@ -60,7 +60,7 @@ object OnHistoryStateUpdatedDetails {
     
     inline def setTransitionQualifiersUndefined: Self = StObject.set(x, "transitionQualifiers", js.undefined)
     
-    inline def setTransitionQualifiersVarargs(value: TransitionQualifier*): Self = StObject.set(x, "transitionQualifiers", js.Array(value :_*))
+    inline def setTransitionQualifiersVarargs(value: TransitionQualifier*): Self = StObject.set(x, "transitionQualifiers", js.Array(value*))
     
     inline def setTransitionType(value: TransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Name extends StObject {
+    
+    var name: String
+    
+    var v: String
+    
+    var w: String
+  }
+  object Name {
+    
+    inline def apply(name: String, v: String, w: String): Name = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Name]
+    }
+    
+    extension [Self <: Name](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      
+      inline def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Inlined dagre.dagre.Node<{}> */
   trait Node extends StObject {
     

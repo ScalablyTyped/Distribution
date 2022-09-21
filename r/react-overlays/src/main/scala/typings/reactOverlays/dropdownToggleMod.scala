@@ -1,10 +1,12 @@
 package typings.reactOverlays
 
 import typings.propTypes.mod.Validator
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
-import typings.reactOverlays.anon.UseDropdownToggleHelpersp
 import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -59,31 +61,31 @@ object dropdownToggleMod {
         */
       @JSImport("react-overlays/cjs/DropdownToggle", "default.propTypes.children")
       @js.native
-      def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      def children: Validator[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def children_=(x: Validator[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
     }
   }
   
-  inline def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers]]
+  inline def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleMetadata]]
   
   trait DropdownToggleProps extends StObject {
     
-    def children(args: UseDropdownToggleHelpersp): ReactNode
+    def children(props: UseDropdownToggleProps, meta: UseDropdownToggleMetadata): ReactNode
   }
   object DropdownToggleProps {
     
-    inline def apply(children: UseDropdownToggleHelpersp => ReactNode): DropdownToggleProps = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    inline def apply(children: (UseDropdownToggleProps, UseDropdownToggleMetadata) => ReactNode): DropdownToggleProps = {
+      val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children))
       __obj.asInstanceOf[DropdownToggleProps]
     }
     
     extension [Self <: DropdownToggleProps](x: Self) {
       
-      inline def setChildren(value: UseDropdownToggleHelpersp => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: (UseDropdownToggleProps, UseDropdownToggleMetadata) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
     }
   }
   
-  trait UseDropdownToggleHelpers extends StObject {
+  trait UseDropdownToggleMetadata extends StObject {
     
     var show: Boolean
     
@@ -93,17 +95,17 @@ object dropdownToggleMod {
         Unit
       ]
   }
-  object UseDropdownToggleHelpers {
+  object UseDropdownToggleMetadata {
     
     inline def apply(
       show: Boolean,
       toggle: (/* nextShow */ Boolean, /* event */ js.UndefOr[(SyntheticEvent[typings.std.Element, Event]) | Event]) => Unit
-    ): UseDropdownToggleHelpers = {
+    ): UseDropdownToggleMetadata = {
       val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any], toggle = js.Any.fromFunction2(toggle))
-      __obj.asInstanceOf[UseDropdownToggleHelpers]
+      __obj.asInstanceOf[UseDropdownToggleMetadata]
     }
     
-    extension [Self <: UseDropdownToggleHelpers](x: Self) {
+    extension [Self <: UseDropdownToggleMetadata](x: Self) {
       
       inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
@@ -119,12 +121,19 @@ object dropdownToggleMod {
     
     var `aria-haspopup`: Boolean
     
+    var onClick: MouseEventHandler[typings.std.Element]
+    
     var ref: js.Function1[/* ref */ HTMLElement | Null, Unit]
   }
   object UseDropdownToggleProps {
     
-    inline def apply(`aria-expanded`: Boolean, `aria-haspopup`: Boolean, ref: /* ref */ HTMLElement | Null => Unit): UseDropdownToggleProps = {
-      val __obj = js.Dynamic.literal(ref = js.Any.fromFunction1(ref))
+    inline def apply(
+      `aria-expanded`: Boolean,
+      `aria-haspopup`: Boolean,
+      onClick: MouseEvent[typings.std.Element, NativeMouseEvent] => Unit,
+      ref: /* ref */ HTMLElement | Null => Unit
+    ): UseDropdownToggleProps = {
+      val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), ref = js.Any.fromFunction1(ref))
       __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
       __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseDropdownToggleProps]
@@ -135,6 +144,8 @@ object dropdownToggleMod {
       inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-haspopup`(value: Boolean): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      
+      inline def setOnClick(value: MouseEvent[typings.std.Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     }

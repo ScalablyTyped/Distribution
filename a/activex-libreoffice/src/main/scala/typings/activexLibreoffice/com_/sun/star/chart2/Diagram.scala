@@ -112,7 +112,7 @@ object Diagram {
     getLegend: () => XLegend,
     getTitleObject: () => XTitle,
     getWall: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeCoordinateSystem: XCoordinateSystem => Unit,
     set3DSettingsToDefault: () => Unit,

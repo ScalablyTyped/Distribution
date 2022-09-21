@@ -1,6 +1,10 @@
 package typings.stickyCluster
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.stickyCluster.anon.Stickyclusterworkerindex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +19,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function1[/* server */ Server, Unit]
+  type Callback = js.Function1[
+    /* server */ Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ], 
+    Unit
+  ]
   
   type InitializeFn = js.Function1[/* callback */ Callback, Unit]
   
@@ -27,7 +40,7 @@ object mod {
     
     var env: js.UndefOr[js.Function1[/* index */ Double, Stickyclusterworkerindex]] = js.undefined
     
-    var errorHandler: js.UndefOr[js.Function1[/* err */ js.Any, Unit]] = js.undefined
+    var errorHandler: js.UndefOr[js.Function1[/* err */ Any, Unit]] = js.undefined
     
     var hardShutdownDelay: js.UndefOr[Double] = js.undefined
     
@@ -56,7 +69,7 @@ object mod {
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      inline def setErrorHandler(value: /* err */ js.Any => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+      inline def setErrorHandler(value: /* err */ Any => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
       inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       

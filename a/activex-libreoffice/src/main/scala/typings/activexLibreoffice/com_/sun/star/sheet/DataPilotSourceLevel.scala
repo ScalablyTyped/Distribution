@@ -57,14 +57,14 @@ object DataPilotSourceLevel {
     getMembers: () => XMembersAccess,
     getName: () => String,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     getResults: () => SafeArray[MemberResult],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setName: String => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    setPropertyValue: (String, Any) => Unit
   ): DataPilotSourceLevel = {
     val __obj = js.Dynamic.literal(Members = Members.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Results = Results.asInstanceOf[js.Any], ShowEmpty = ShowEmpty.asInstanceOf[js.Any], SubTotals = SubTotals.asInstanceOf[js.Any], SubTotals2 = SubTotals2.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getMembers = js.Any.fromFunction0(getMembers), getName = js.Any.fromFunction0(getName), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getResults = js.Any.fromFunction0(getResults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setName = js.Any.fromFunction1(setName), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[DataPilotSourceLevel]

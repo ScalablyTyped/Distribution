@@ -9,15 +9,12 @@ Asyncronous JavaScript loader and dependency manager
 | ------------------ | :-------------: |
 | Full name          | scriptjs |
 | Keywords           | ender, script, dependency, ajax, jsonp, loader |
-| # releases         | 2 |
-| # dependents       | 203 |
-| # downloads        | 20260737 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1911862.0 |
+| # stars            | 2910.0 |
 
 ## Links
-- [Homepage](https://github.com/ded/script.js)
-- [Bugs](https://github.com/ded/script.js/issues)
-- [Repository](https://github.com/ded/script.js)
 - [Npm](https://www.npmjs.com/package/scriptjs)
     
 

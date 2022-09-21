@@ -12,7 +12,7 @@ trait AwsDynamoDbTableSseDescription extends StObject {
   var InaccessibleEncryptionDateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The ARN of the AWS KMS customer master key (CMK) that is used for the AWS KMS encryption.
+    * The ARN of the KMS key that is used for the KMS encryption.
     */
   var KmsMasterKeyArn: js.UndefOr[NonEmptyString] = js.undefined
   

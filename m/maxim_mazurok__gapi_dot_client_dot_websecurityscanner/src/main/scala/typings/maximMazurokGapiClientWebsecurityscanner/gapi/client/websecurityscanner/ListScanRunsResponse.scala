@@ -29,6 +29,6 @@ object ListScanRunsResponse {
     
     inline def setScanRunsUndefined: Self = StObject.set(x, "scanRuns", js.undefined)
     
-    inline def setScanRunsVarargs(value: ScanRun*): Self = StObject.set(x, "scanRuns", js.Array(value :_*))
+    inline def setScanRunsVarargs(value: ScanRun*): Self = StObject.set(x, "scanRuns", js.Array(value*))
   }
 }

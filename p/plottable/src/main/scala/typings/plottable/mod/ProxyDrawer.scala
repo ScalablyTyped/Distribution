@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("plottable", "ProxyDrawer")
 @js.native
-class ProxyDrawer protected ()
+open class ProxyDrawer protected ()
   extends typings.plottable.drawerMod.ProxyDrawer {
   /**
     * A Drawer draws svg elements based on the input Dataset.

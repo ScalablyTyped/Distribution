@@ -15,7 +15,7 @@ trait ViewField extends StObject {
   /* private */ @JSName("Outlook.ViewField_typekey")
   var OutlookDotViewField_typekey: ViewField
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -28,7 +28,7 @@ object ViewField {
     Class: OlObjectClass,
     ColumnFormat: ColumnFormat,
     OutlookDotViewField_typekey: ViewField,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     ViewXMLSchemaName: String
   ): ViewField = {
@@ -47,7 +47,7 @@ object ViewField {
     
     inline def setOutlookDotViewField_typekey(value: ViewField): Self = StObject.set(x, "Outlook.ViewField_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

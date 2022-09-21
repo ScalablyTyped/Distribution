@@ -29,12 +29,12 @@ object Include {
     
     inline def setBucketsUndefined: Self = StObject.set(x, "Buckets", js.undefined)
     
-    inline def setBucketsVarargs(value: S3BucketArnString*): Self = StObject.set(x, "Buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: S3BucketArnString*): Self = StObject.set(x, "Buckets", js.Array(value*))
     
     inline def setRegions(value: Regions): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
     
     inline def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
     
-    inline def setRegionsVarargs(value: S3AWSRegion*): Self = StObject.set(x, "Regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: S3AWSRegion*): Self = StObject.set(x, "Regions", js.Array(value*))
   }
 }

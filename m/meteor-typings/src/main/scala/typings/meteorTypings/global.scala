@@ -217,7 +217,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Blaze.Template")
     @js.native
-    class TemplateCls ()
+    open class TemplateCls ()
       extends StObject
          with typings.meteorTypings.Blaze.Template {
       def this(viewName: String) = this()
@@ -226,7 +226,7 @@ object global {
       
       /* CompleteClass */
       @JSName("$")
-      var $: js.Any = js.native
+      var $: Any = js.native
       
       /* CompleteClass */
       override def constructView(): View = js.native
@@ -278,14 +278,14 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Blaze.TemplateInstance")
     @js.native
-    class TemplateInstanceCls protected ()
+    open class TemplateInstanceCls protected ()
       extends StObject
          with TemplateInstance {
       def this(view: View) = this()
       
       /* CompleteClass */
       @JSName("$")
-      override def $(selector: String): js.Any = js.native
+      override def $(selector: String): Any = js.native
       
       /* CompleteClass */
       override def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = js.native
@@ -306,7 +306,7 @@ object global {
       var lastNode: js.Object = js.native
       
       /* CompleteClass */
-      override def subscribe(name: String, args: js.Any*): SubscriptionHandle = js.native
+      override def subscribe(name: String, args: Any*): SubscriptionHandle = js.native
       
       /* CompleteClass */
       override def subscriptionsReady(): Boolean = js.native
@@ -329,7 +329,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Blaze.View")
     @js.native
-    class ViewCls ()
+    open class ViewCls ()
       extends StObject
          with View {
       def this(name: String) = this()
@@ -396,7 +396,7 @@ object global {
     inline def getView(): View = ^.asInstanceOf[js.Dynamic].applyDynamic("getView")().asInstanceOf[View]
     inline def getView(element: HTMLElement): View = ^.asInstanceOf[js.Dynamic].applyDynamic("getView")(element.asInstanceOf[js.Any]).asInstanceOf[View]
     
-    inline def isTemplate(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTemplate(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def remove(renderedView: View): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(renderedView.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -592,14 +592,14 @@ object global {
     inline def equals_(a: typings.meteorTypings.EJSON, b: typings.meteorTypings.EJSON): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def equals_(a: typings.meteorTypings.EJSON, b: typings.meteorTypings.EJSON, options: KeyOrderSensitive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def fromJSONValue(`val`: JSONable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSONValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def fromJSONValue(`val`: JSONable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSONValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def isBinary(x: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSGlobal("EJSON.newBinary")
     @js.native
-    def newBinary: js.Any = js.native
-    inline def newBinary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newBinary")(x.asInstanceOf[js.Any])
+    def newBinary: Any = js.native
+    inline def newBinary_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newBinary")(x.asInstanceOf[js.Any])
     
     inline def parse(str: String): typings.meteorTypings.EJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[typings.meteorTypings.EJSON]
     
@@ -655,7 +655,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("MailComposer")
   @js.native
-  class MailComposer protected ()
+  open class MailComposer protected ()
     extends StObject
        with typings.meteorTypings.MailComposer {
     def this(options: MailComposerOptions) = this()
@@ -664,7 +664,7 @@ object global {
     override def addHeader(name: String, value: String): Unit = js.native
     
     /* CompleteClass */
-    override def pipe(stream: js.Any): Unit = js.native
+    override def pipe(stream: Any): Unit = js.native
     
     /* CompleteClass */
     override def setMessageOption(from: String, to: String, body: String, html: String): Unit = js.native
@@ -685,46 +685,46 @@ object global {
     
     @JSGlobal("Match.Any")
     @js.native
-    def Any: js.Any = js.native
-    inline def Any_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Any")(x.asInstanceOf[js.Any])
+    def Any: scala.Any = js.native
+    inline def Any_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Any")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Match.Boolean")
     @js.native
-    def Boolean: js.Any = js.native
-    inline def Boolean_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
+    def Boolean: Any = js.native
+    inline def Boolean_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Match.Integer")
     @js.native
-    def Integer: js.Any = js.native
-    inline def Integer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
+    def Integer: Any = js.native
+    inline def Integer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
     
-    inline def Maybe(pattern: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Maybe")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def Maybe(pattern: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Maybe")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSGlobal("Match.Object")
     @js.native
-    def Object: js.Any = js.native
+    def Object: Any = js.native
     
-    inline def ObjectIncluding(dico: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectIncluding")(dico.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def ObjectIncluding(dico: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectIncluding")(dico.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def Object_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
+    inline def Object_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
     
-    inline def OneOf(patterns: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("OneOf")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def OneOf(patterns: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("OneOf")(patterns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
     
-    inline def Optional(pattern: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Optional")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def Optional(pattern: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Optional")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSGlobal("Match.String")
     @js.native
-    def String: js.Any = js.native
-    inline def String_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
+    def String: Any = js.native
+    inline def String_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
     
-    inline def Where(condition: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Where")(condition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def Where(condition: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Where")(condition.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def test(value: js.Any, pattern: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def test(value: Any, pattern: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSGlobal("Match.undefined")
     @js.native
-    def undefined: js.Any = js.native
-    inline def undefined_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefined")(x.asInstanceOf[js.Any])
+    def undefined: Any = js.native
+    inline def undefined_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefined")(x.asInstanceOf[js.Any])
   }
   
   object Meteor {
@@ -742,7 +742,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Meteor.Error")
     @js.native
-    class ErrorCls protected ()
+    open class ErrorCls protected ()
       extends StObject
          with Error {
       def this(error: String) = this()
@@ -767,20 +767,20 @@ object global {
     inline def absoluteUrl(path: String, options: ReplaceLocalhost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteUrl")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def absoluteUrl(path: Unit, options: ReplaceLocalhost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteUrl")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def apply(name: String, args: js.Array[EJSONable]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(name: String, args: js.Array[EJSONable], options: Unit, asyncCallback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(name: String, args: js.Array[EJSONable], options: OnResultReceived): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(name: String, args: js.Array[EJSONable], options: OnResultReceived, asyncCallback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(name: String, args: js.Array[EJSONable]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(name: String, args: js.Array[EJSONable], options: Unit, asyncCallback: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(name: String, args: js.Array[EJSONable], options: OnResultReceived): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(name: String, args: js.Array[EJSONable], options: OnResultReceived, asyncCallback: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def bindEnvironment(func: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bindEnvironment")(func.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def bindEnvironment(func: js.Function): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bindEnvironment")(func.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def call(name: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def call(name: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
     inline def clearInterval(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def clearTimeout(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def debug(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_debug")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_debug")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
     inline def defer(func: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -920,7 +920,7 @@ object global {
     
     /** Status **/
     /** Pub/Sub **/
-    inline def subscribe(name: String, args: js.Any*): SubscriptionHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SubscriptionHandle]
+    inline def subscribe(name: String, args: Any*): SubscriptionHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SubscriptionHandle]
     
     inline def user(): User = ^.asInstanceOf[js.Dynamic].applyDynamic("user")().asInstanceOf[User]
     
@@ -931,8 +931,8 @@ object global {
     def users: Collection[User] = js.native
     inline def users_=(x: Collection[User]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("users")(x.asInstanceOf[js.Any])
     
-    inline def wrapAsync(func: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def wrapAsync(func: js.Function, context: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def wrapAsync(func: js.Function): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def wrapAsync(func: js.Function, context: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   object Mongo {
@@ -948,7 +948,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Mongo.Collection")
     @js.native
-    class CollectionCls[T] ()
+    open class CollectionCls[T] ()
       extends StObject
          with Collection[T] {
       def this(name: String) = this()
@@ -965,7 +965,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Mongo.Cursor")
     @js.native
-    class CursorCls[T] ()
+    open class CursorCls[T] ()
       extends StObject
          with Cursor[T]
     
@@ -978,7 +978,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Mongo.ObjectID")
     @js.native
-    class ObjectIDCls ()
+    open class ObjectIDCls ()
       extends StObject
          with ObjectID {
       def this(hexString: String) = this()
@@ -995,7 +995,7 @@ object global {
     
     inline def depends(dependencies: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("depends")(dependencies.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def require(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def require(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   object Package {
@@ -1021,7 +1021,7 @@ object global {
     val ^ : js.Any = js.native
     
     // @param array, @return a random element in array
-    inline def choice(array: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def choice(array: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(array.asInstanceOf[js.Any]).asInstanceOf[String]
     // @param str, @return a random char in str
     inline def choice(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -1040,7 +1040,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactiveVar")
   @js.native
-  class ReactiveVar[T] protected ()
+  open class ReactiveVar[T] protected ()
     extends StObject
        with typings.meteorTypings.ReactiveVar[T] {
     def this(initialValue: T) = this()
@@ -1064,23 +1064,23 @@ object global {
     val ^ : js.Any = js.native
     
     inline def equals_(key: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def equals_(key: String, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals_(key: String, value: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def equals_(key: String, value: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def equals_(key: String, value: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def get(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def get(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def set(key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def set(key: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def set(key: String, value: EJSONable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def setDefault(key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefault")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setDefault(key: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefault")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def setDefault(key: String, value: EJSONable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefault")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Template")
   @js.native
-  class Template ()
+  open class Template ()
     extends StObject
        with typings.meteorTypings.Blaze.Template {
     def this(viewName: String) = this()
@@ -1089,7 +1089,7 @@ object global {
     
     /* CompleteClass */
     @JSName("$")
-    var $: js.Any = js.native
+    var $: Any = js.native
     
     /* CompleteClass */
     override def constructView(): View = js.native
@@ -1164,7 +1164,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Tracker.Dependency")
     @js.native
-    class DependencyCls ()
+    open class DependencyCls ()
       extends StObject
          with Dependency
     
@@ -1192,20 +1192,20 @@ object global {
     inline def onInvalidate(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onInvalidate")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  inline def check(value: js.Any, pattern: js.Any): Unit = (js.Dynamic.global.applyDynamic("check")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def check(value: Any, pattern: Any): Unit = (js.Dynamic.global.applyDynamic("check")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("console")
   @js.native
   def console: Console = js.native
   inline def console_=(x: Console): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
   
-  inline def execFileAsync(command: String): js.Any = js.Dynamic.global.applyDynamic("execFileAsync")(command.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def execFileAsync(command: String, args: js.Array[js.Any]): js.Any = (js.Dynamic.global.applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def execFileAsync(command: String, args: js.Array[js.Any], options: Cwd): js.Any = (js.Dynamic.global.applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def execFileAsync(command: String, args: Unit, options: Cwd): js.Any = (js.Dynamic.global.applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def execFileAsync(command: String): Any = js.Dynamic.global.applyDynamic("execFileAsync")(command.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def execFileAsync(command: String, args: js.Array[Any]): Any = (js.Dynamic.global.applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def execFileAsync(command: String, args: js.Array[Any], options: Cwd): Any = (js.Dynamic.global.applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def execFileAsync(command: String, args: Unit, options: Cwd): Any = (js.Dynamic.global.applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def execFileSync(command: String): String = js.Dynamic.global.applyDynamic("execFileSync")(command.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def execFileSync(command: String, args: js.Array[js.Any]): String = (js.Dynamic.global.applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def execFileSync(command: String, args: js.Array[js.Any], options: Cwd): String = (js.Dynamic.global.applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def execFileSync(command: String, args: js.Array[Any]): String = (js.Dynamic.global.applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def execFileSync(command: String, args: js.Array[Any], options: Cwd): String = (js.Dynamic.global.applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def execFileSync(command: String, args: Unit, options: Cwd): String = (js.Dynamic.global.applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

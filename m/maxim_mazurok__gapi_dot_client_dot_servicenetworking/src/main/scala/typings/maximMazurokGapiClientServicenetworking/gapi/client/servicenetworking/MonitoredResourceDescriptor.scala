@@ -31,7 +31,10 @@ trait MonitoredResourceDescriptor extends StObject {
     */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Required. The monitored resource type. For example, the type `"cloudsql_database"` represents databases in Google Cloud SQL. */
+  /**
+    * Required. The monitored resource type. For example, the type `"cloudsql_database"` represents databases in Google Cloud SQL. For a list of types, see [Monitoring resource
+    * types](https://cloud.google.com/monitoring/api/resources) and [Logging resource types](https://cloud.google.com/logging/docs/api/v2/resource-list).
+    */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object MonitoredResourceDescriptor {
@@ -55,7 +58,7 @@ object MonitoredResourceDescriptor {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLaunchStage(value: String): Self = StObject.set(x, "launchStage", value.asInstanceOf[js.Any])
     

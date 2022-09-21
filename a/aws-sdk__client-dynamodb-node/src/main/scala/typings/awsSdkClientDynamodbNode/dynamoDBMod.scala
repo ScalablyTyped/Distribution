@@ -78,7 +78,7 @@ object dynamoDBMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/DynamoDB", "DynamoDB")
   @js.native
-  class DynamoDB protected () extends DynamoDBClient {
+  open class DynamoDB protected () extends DynamoDBClient {
     def this(configuration: DynamoDBConfiguration) = this()
     
     /**
@@ -93,7 +93,7 @@ object dynamoDBMod {
     def batchGetItem(args: BatchGetItemInput): js.Promise[BatchGetItemOutput] = js.native
     def batchGetItem(
       args: BatchGetItemInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[BatchGetItemOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[BatchGetItemOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -109,7 +109,7 @@ object dynamoDBMod {
     def batchWriteItem(args: BatchWriteItemInput): js.Promise[BatchWriteItemOutput] = js.native
     def batchWriteItem(
       args: BatchWriteItemInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[BatchWriteItemOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[BatchWriteItemOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -127,7 +127,7 @@ object dynamoDBMod {
     def createBackup(args: CreateBackupInput): js.Promise[CreateBackupOutput] = js.native
     def createBackup(
       args: CreateBackupInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateBackupOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateBackupOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -143,7 +143,7 @@ object dynamoDBMod {
     def createGlobalTable(args: CreateGlobalTableInput): js.Promise[CreateGlobalTableOutput] = js.native
     def createGlobalTable(
       args: CreateGlobalTableInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateGlobalTableOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateGlobalTableOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -158,7 +158,7 @@ object dynamoDBMod {
     def createTable(args: CreateTableInput): js.Promise[CreateTableOutput] = js.native
     def createTable(
       args: CreateTableInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateTableOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateTableOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -174,7 +174,7 @@ object dynamoDBMod {
     def deleteBackup(args: DeleteBackupInput): js.Promise[DeleteBackupOutput] = js.native
     def deleteBackup(
       args: DeleteBackupInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBackupOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBackupOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -191,7 +191,7 @@ object dynamoDBMod {
     def deleteItem(args: DeleteItemInput): js.Promise[DeleteItemOutput] = js.native
     def deleteItem(
       args: DeleteItemInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteItemOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteItemOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -207,7 +207,7 @@ object dynamoDBMod {
     def deleteTable(args: DeleteTableInput): js.Promise[DeleteTableOutput] = js.native
     def deleteTable(
       args: DeleteTableInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteTableOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteTableOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -221,7 +221,7 @@ object dynamoDBMod {
     def describeBackup(args: DescribeBackupInput): js.Promise[DescribeBackupOutput] = js.native
     def describeBackup(
       args: DescribeBackupInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeBackupOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeBackupOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -235,7 +235,7 @@ object dynamoDBMod {
     def describeContinuousBackups(args: DescribeContinuousBackupsInput): js.Promise[DescribeContinuousBackupsOutput] = js.native
     def describeContinuousBackups(
       args: DescribeContinuousBackupsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeContinuousBackupsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeContinuousBackupsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -247,7 +247,7 @@ object dynamoDBMod {
     def describeEndpoints(args: DescribeEndpointsInput): js.Promise[DescribeEndpointsOutput] = js.native
     def describeEndpoints(
       args: DescribeEndpointsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeEndpointsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeEndpointsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -261,7 +261,7 @@ object dynamoDBMod {
     def describeGlobalTable(args: DescribeGlobalTableInput): js.Promise[DescribeGlobalTableOutput] = js.native
     def describeGlobalTable(
       args: DescribeGlobalTableInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeGlobalTableOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeGlobalTableOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -275,7 +275,7 @@ object dynamoDBMod {
     def describeGlobalTableSettings(args: DescribeGlobalTableSettingsInput): js.Promise[DescribeGlobalTableSettingsOutput] = js.native
     def describeGlobalTableSettings(
       args: DescribeGlobalTableSettingsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeGlobalTableSettingsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeGlobalTableSettingsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -288,7 +288,7 @@ object dynamoDBMod {
     def describeLimits(args: DescribeLimitsInput): js.Promise[DescribeLimitsOutput] = js.native
     def describeLimits(
       args: DescribeLimitsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeLimitsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeLimitsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -302,7 +302,7 @@ object dynamoDBMod {
     def describeTable(args: DescribeTableInput): js.Promise[DescribeTableOutput] = js.native
     def describeTable(
       args: DescribeTableInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeTableOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeTableOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -316,7 +316,7 @@ object dynamoDBMod {
     def describeTimeToLive(args: DescribeTimeToLiveInput): js.Promise[DescribeTimeToLiveOutput] = js.native
     def describeTimeToLive(
       args: DescribeTimeToLiveInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeTimeToLiveOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeTimeToLiveOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -329,7 +329,7 @@ object dynamoDBMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def getItem(args: GetItemInput): js.Promise[GetItemOutput] = js.native
-    def getItem(args: GetItemInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetItemOutput], Unit]): Unit = js.native
+    def getItem(args: GetItemInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetItemOutput], Unit]): Unit = js.native
     
     /**
       * <p>List backups associated with an AWS account. To list backups for a given table, specify <code>TableName</code>. <code>ListBackups</code> returns a paginated list of results with at most 1MB worth of items in a page. You can also specify a limit for the maximum number of entries to be returned in a page. </p> <p>In the request, start time is inclusive but end time is exclusive. Note that these limits are for the time at which the original backup was requested.</p> <p>You can call <code>ListBackups</code> a maximum of 5 times per second.</p>
@@ -341,7 +341,7 @@ object dynamoDBMod {
     def listBackups(args: ListBackupsInput): js.Promise[ListBackupsOutput] = js.native
     def listBackups(
       args: ListBackupsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListBackupsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListBackupsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -354,7 +354,7 @@ object dynamoDBMod {
     def listGlobalTables(args: ListGlobalTablesInput): js.Promise[ListGlobalTablesOutput] = js.native
     def listGlobalTables(
       args: ListGlobalTablesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListGlobalTablesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListGlobalTablesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -367,7 +367,7 @@ object dynamoDBMod {
     def listTables(args: ListTablesInput): js.Promise[ListTablesOutput] = js.native
     def listTables(
       args: ListTablesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListTablesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListTablesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -381,7 +381,7 @@ object dynamoDBMod {
     def listTagsOfResource(args: ListTagsOfResourceInput): js.Promise[ListTagsOfResourceOutput] = js.native
     def listTagsOfResource(
       args: ListTagsOfResourceInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListTagsOfResourceOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListTagsOfResourceOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -396,7 +396,7 @@ object dynamoDBMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def putItem(args: PutItemInput): js.Promise[PutItemOutput] = js.native
-    def putItem(args: PutItemInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutItemOutput], Unit]): Unit = js.native
+    def putItem(args: PutItemInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutItemOutput], Unit]): Unit = js.native
     
     /**
       * <p>The <code>Query</code> operation finds items based on primary key values. You can query any table or secondary index that has a composite primary key (a partition key and a sort key). </p> <p>Use the <code>KeyConditionExpression</code> parameter to provide a specific value for the partition key. The <code>Query</code> operation will return all of the items from the table or index with that partition key value. You can optionally narrow the scope of the <code>Query</code> operation by specifying a sort key value and a comparison operator in <code>KeyConditionExpression</code>. To further refine the <code>Query</code> results, you can optionally provide a <code>FilterExpression</code>. A <code>FilterExpression</code> determines which items within the results should be returned to you. All of the other results are discarded. </p> <p> A <code>Query</code> operation always returns a result set. If no matching items are found, the result set will be empty. Queries that do not return results consume the minimum number of read capacity units for that type of read operation. </p> <note> <p> DynamoDB calculates the number of read capacity units consumed based on item size, not on the amount of data that is returned to an application. The number of capacity units consumed will be the same whether you request all of the attributes (the default behavior) or just some of them (using a projection expression). The number will also be the same whether or not you use a <code>FilterExpression</code>. </p> </note> <p> <code>Query</code> results are always sorted by the sort key value. If the data type of the sort key is Number, the results are returned in numeric order; otherwise, the results are returned in order of UTF-8 bytes. By default, the sort order is ascending. To reverse the order, set the <code>ScanIndexForward</code> parameter to false. </p> <p> A single <code>Query</code> operation will read up to the maximum number of items set (if using the <code>Limit</code> parameter) or a maximum of 1 MB of data and then apply any filtering to the results using <code>FilterExpression</code>. If <code>LastEvaluatedKey</code> is present in the response, you will need to paginate the result set. For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html#Query.Pagination">Paginating the Results</a> in the <i>Amazon DynamoDB Developer Guide</i>. </p> <p> <code>FilterExpression</code> is applied after a <code>Query</code> finishes, but before the results are returned. A <code>FilterExpression</code> cannot contain partition key or sort key attributes. You need to specify those attributes in the <code>KeyConditionExpression</code>. </p> <note> <p> A <code>Query</code> operation can return an empty result set and a <code>LastEvaluatedKey</code> if all the items read for the page of results are filtered out. </p> </note> <p>You can query a table, a local secondary index, or a global secondary index. For a query on a table or on a local secondary index, you can set the <code>ConsistentRead</code> parameter to <code>true</code> and obtain a strongly consistent result. Global secondary indexes support eventually consistent reads only, so do not specify <code>ConsistentRead</code> when querying a global secondary index.</p>
@@ -408,7 +408,7 @@ object dynamoDBMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def query(args: QueryInput): js.Promise[QueryOutput] = js.native
-    def query(args: QueryInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[QueryOutput], Unit]): Unit = js.native
+    def query(args: QueryInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[QueryOutput], Unit]): Unit = js.native
     
     /**
       * <p>Creates a new table from an existing backup. Any number of users can execute up to 4 concurrent restores (any type of restore) in a given account. </p> <p>You can call <code>RestoreTableFromBackup</code> at a maximum rate of 10 times per second.</p> <p>You must manually set up the following on the restored table:</p> <ul> <li> <p>Auto scaling policies</p> </li> <li> <p>IAM policies</p> </li> <li> <p>Cloudwatch metrics and alarms</p> </li> <li> <p>Tags</p> </li> <li> <p>Stream settings</p> </li> <li> <p>Time to Live (TTL) settings</p> </li> </ul>
@@ -425,7 +425,7 @@ object dynamoDBMod {
     def restoreTableFromBackup(args: RestoreTableFromBackupInput): js.Promise[RestoreTableFromBackupOutput] = js.native
     def restoreTableFromBackup(
       args: RestoreTableFromBackupInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RestoreTableFromBackupOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RestoreTableFromBackupOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -444,7 +444,7 @@ object dynamoDBMod {
     def restoreTableToPointInTime(args: RestoreTableToPointInTimeInput): js.Promise[RestoreTableToPointInTimeOutput] = js.native
     def restoreTableToPointInTime(
       args: RestoreTableToPointInTimeInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RestoreTableToPointInTimeOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RestoreTableToPointInTimeOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -457,7 +457,7 @@ object dynamoDBMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def scan(args: ScanInput): js.Promise[ScanOutput] = js.native
-    def scan(args: ScanInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ScanOutput], Unit]): Unit = js.native
+    def scan(args: ScanInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ScanOutput], Unit]): Unit = js.native
     
     /**
       * <p>Associate a set of tags with an Amazon DynamoDB resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking. You can call TagResource up to 5 times per second, per account. </p> <p>For an overview on tagging DynamoDB resources, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html">Tagging for DynamoDB</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
@@ -472,7 +472,7 @@ object dynamoDBMod {
     def tagResource(args: TagResourceInput): js.Promise[TagResourceOutput] = js.native
     def tagResource(
       args: TagResourceInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[TagResourceOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[TagResourceOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -488,7 +488,7 @@ object dynamoDBMod {
     def untagResource(args: UntagResourceInput): js.Promise[UntagResourceOutput] = js.native
     def untagResource(
       args: UntagResourceInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UntagResourceOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UntagResourceOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -503,7 +503,7 @@ object dynamoDBMod {
     def updateContinuousBackups(args: UpdateContinuousBackupsInput): js.Promise[UpdateContinuousBackupsOutput] = js.native
     def updateContinuousBackups(
       args: UpdateContinuousBackupsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateContinuousBackupsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateContinuousBackupsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -520,7 +520,7 @@ object dynamoDBMod {
     def updateGlobalTable(args: UpdateGlobalTableInput): js.Promise[UpdateGlobalTableOutput] = js.native
     def updateGlobalTable(
       args: UpdateGlobalTableInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateGlobalTableOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateGlobalTableOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -538,7 +538,7 @@ object dynamoDBMod {
     def updateGlobalTableSettings(args: UpdateGlobalTableSettingsInput): js.Promise[UpdateGlobalTableSettingsOutput] = js.native
     def updateGlobalTableSettings(
       args: UpdateGlobalTableSettingsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateGlobalTableSettingsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateGlobalTableSettingsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -555,7 +555,7 @@ object dynamoDBMod {
     def updateItem(args: UpdateItemInput): js.Promise[UpdateItemOutput] = js.native
     def updateItem(
       args: UpdateItemInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateItemOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateItemOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -571,7 +571,7 @@ object dynamoDBMod {
     def updateTable(args: UpdateTableInput): js.Promise[UpdateTableOutput] = js.native
     def updateTable(
       args: UpdateTableInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateTableOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateTableOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -587,7 +587,7 @@ object dynamoDBMod {
     def updateTimeToLive(args: UpdateTimeToLiveInput): js.Promise[UpdateTimeToLiveOutput] = js.native
     def updateTimeToLive(
       args: UpdateTimeToLiveInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateTimeToLiveOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateTimeToLiveOutput], Unit]
     ): Unit = js.native
   }
 }

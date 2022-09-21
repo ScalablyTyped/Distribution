@@ -27,7 +27,7 @@ object DeleteMessageBatchRequest {
     
     inline def setEntries(value: DeleteMessageBatchRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: DeleteMessageBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: DeleteMessageBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
     
     inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }

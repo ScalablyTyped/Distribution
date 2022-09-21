@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_HttpServer")
 @js.native
-class ClassHttpServer protected ()
+open class ClassHttpServer protected ()
   extends StObject
      with typings.fibjs.ClassHttpServer {
   /**

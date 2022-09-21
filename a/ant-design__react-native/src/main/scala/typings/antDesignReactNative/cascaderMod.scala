@@ -8,7 +8,7 @@ object cascaderMod {
   
   @JSImport("@ant-design/react-native/lib/picker/cascader", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antDesignReactNative.cascaderCascaderMod.default
   object default {
     

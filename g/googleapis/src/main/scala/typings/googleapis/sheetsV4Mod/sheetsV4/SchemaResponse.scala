@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single response from an update.
-  */
 trait SchemaResponse extends StObject {
   
   /**
@@ -18,6 +15,11 @@ trait SchemaResponse extends StObject {
     * A reply from adding a chart.
     */
   var addChart: js.UndefOr[SchemaAddChartResponse] = js.undefined
+  
+  /**
+    * A reply from adding a data source.
+    */
+  var addDataSource: js.UndefOr[SchemaAddDataSourceResponse] = js.undefined
   
   /**
     * A reply from adding a dimension group.
@@ -45,6 +47,11 @@ trait SchemaResponse extends StObject {
   var addSheet: js.UndefOr[SchemaAddSheetResponse] = js.undefined
   
   /**
+    * A reply from adding a slicer.
+    */
+  var addSlicer: js.UndefOr[SchemaAddSlicerResponse] = js.undefined
+  
+  /**
     * A reply from creating a developer metadata entry.
     */
   var createDeveloperMetadata: js.UndefOr[SchemaCreateDeveloperMetadataResponse] = js.undefined
@@ -65,6 +72,11 @@ trait SchemaResponse extends StObject {
   var deleteDimensionGroup: js.UndefOr[SchemaDeleteDimensionGroupResponse] = js.undefined
   
   /**
+    * A reply from removing rows containing duplicate values.
+    */
+  var deleteDuplicates: js.UndefOr[SchemaDeleteDuplicatesResponse] = js.undefined
+  
+  /**
     * A reply from duplicating a filter view.
     */
   var duplicateFilterView: js.UndefOr[SchemaDuplicateFilterViewResponse] = js.undefined
@@ -80,9 +92,24 @@ trait SchemaResponse extends StObject {
   var findReplace: js.UndefOr[SchemaFindReplaceResponse] = js.undefined
   
   /**
+    * A reply from refreshing data source objects.
+    */
+  var refreshDataSource: js.UndefOr[SchemaRefreshDataSourceResponse] = js.undefined
+  
+  /**
+    * A reply from trimming whitespace.
+    */
+  var trimWhitespace: js.UndefOr[SchemaTrimWhitespaceResponse] = js.undefined
+  
+  /**
     * A reply from updating a conditional format rule.
     */
   var updateConditionalFormatRule: js.UndefOr[SchemaUpdateConditionalFormatRuleResponse] = js.undefined
+  
+  /**
+    * A reply from updating a data source.
+    */
+  var updateDataSource: js.UndefOr[SchemaUpdateDataSourceResponse] = js.undefined
   
   /**
     * A reply from updating a developer metadata entry.
@@ -90,7 +117,7 @@ trait SchemaResponse extends StObject {
   var updateDeveloperMetadata: js.UndefOr[SchemaUpdateDeveloperMetadataResponse] = js.undefined
   
   /**
-    * A reply from updating an embedded object&#39;s position.
+    * A reply from updating an embedded object's position.
     */
   var updateEmbeddedObjectPosition: js.UndefOr[SchemaUpdateEmbeddedObjectPositionResponse] = js.undefined
 }
@@ -110,6 +137,10 @@ object SchemaResponse {
     inline def setAddChart(value: SchemaAddChartResponse): Self = StObject.set(x, "addChart", value.asInstanceOf[js.Any])
     
     inline def setAddChartUndefined: Self = StObject.set(x, "addChart", js.undefined)
+    
+    inline def setAddDataSource(value: SchemaAddDataSourceResponse): Self = StObject.set(x, "addDataSource", value.asInstanceOf[js.Any])
+    
+    inline def setAddDataSourceUndefined: Self = StObject.set(x, "addDataSource", js.undefined)
     
     inline def setAddDimensionGroup(value: SchemaAddDimensionGroupResponse): Self = StObject.set(x, "addDimensionGroup", value.asInstanceOf[js.Any])
     
@@ -131,6 +162,10 @@ object SchemaResponse {
     
     inline def setAddSheetUndefined: Self = StObject.set(x, "addSheet", js.undefined)
     
+    inline def setAddSlicer(value: SchemaAddSlicerResponse): Self = StObject.set(x, "addSlicer", value.asInstanceOf[js.Any])
+    
+    inline def setAddSlicerUndefined: Self = StObject.set(x, "addSlicer", js.undefined)
+    
     inline def setCreateDeveloperMetadata(value: SchemaCreateDeveloperMetadataResponse): Self = StObject.set(x, "createDeveloperMetadata", value.asInstanceOf[js.Any])
     
     inline def setCreateDeveloperMetadataUndefined: Self = StObject.set(x, "createDeveloperMetadata", js.undefined)
@@ -147,6 +182,10 @@ object SchemaResponse {
     
     inline def setDeleteDimensionGroupUndefined: Self = StObject.set(x, "deleteDimensionGroup", js.undefined)
     
+    inline def setDeleteDuplicates(value: SchemaDeleteDuplicatesResponse): Self = StObject.set(x, "deleteDuplicates", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteDuplicatesUndefined: Self = StObject.set(x, "deleteDuplicates", js.undefined)
+    
     inline def setDuplicateFilterView(value: SchemaDuplicateFilterViewResponse): Self = StObject.set(x, "duplicateFilterView", value.asInstanceOf[js.Any])
     
     inline def setDuplicateFilterViewUndefined: Self = StObject.set(x, "duplicateFilterView", js.undefined)
@@ -159,9 +198,21 @@ object SchemaResponse {
     
     inline def setFindReplaceUndefined: Self = StObject.set(x, "findReplace", js.undefined)
     
+    inline def setRefreshDataSource(value: SchemaRefreshDataSourceResponse): Self = StObject.set(x, "refreshDataSource", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshDataSourceUndefined: Self = StObject.set(x, "refreshDataSource", js.undefined)
+    
+    inline def setTrimWhitespace(value: SchemaTrimWhitespaceResponse): Self = StObject.set(x, "trimWhitespace", value.asInstanceOf[js.Any])
+    
+    inline def setTrimWhitespaceUndefined: Self = StObject.set(x, "trimWhitespace", js.undefined)
+    
     inline def setUpdateConditionalFormatRule(value: SchemaUpdateConditionalFormatRuleResponse): Self = StObject.set(x, "updateConditionalFormatRule", value.asInstanceOf[js.Any])
     
     inline def setUpdateConditionalFormatRuleUndefined: Self = StObject.set(x, "updateConditionalFormatRule", js.undefined)
+    
+    inline def setUpdateDataSource(value: SchemaUpdateDataSourceResponse): Self = StObject.set(x, "updateDataSource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateDataSourceUndefined: Self = StObject.set(x, "updateDataSource", js.undefined)
     
     inline def setUpdateDeveloperMetadata(value: SchemaUpdateDeveloperMetadataResponse): Self = StObject.set(x, "updateDeveloperMetadata", value.asInstanceOf[js.Any])
     

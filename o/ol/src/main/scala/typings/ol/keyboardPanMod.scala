@@ -9,7 +9,7 @@ object keyboardPanMod {
   
   @JSImport("ol/interaction/KeyboardPan", JSImport.Default)
   @js.native
-  class default () extends KeyboardPan {
+  open class default () extends KeyboardPan {
     def this(opt_options: Options) = this()
   }
   

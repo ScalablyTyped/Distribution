@@ -18,51 +18,51 @@ trait ServerXMLHTTP60 extends StObject {
   def getAllResponseHeaders(): String = js.native
   
   /** Get an option value */
-  def getOption(option: SERVERXMLHTTP_OPTION): js.Any = js.native
+  def getOption(option: SERVERXMLHTTP_OPTION): Any = js.native
   
   /** Get HTTP response header */
   def getResponseHeader(bstrHeader: String): String = js.native
   
   /** Register a complete event handler */
-  val onreadystatechange: js.Any = js.native
+  val onreadystatechange: Any = js.native
   
   /** Open HTTP connection */
   def open(bstrMethod: String, bstrUrl: String): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any, bstrPassword: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: Unit, bstrPassword: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: js.Any, bstrPassword: js.Any): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: Unit, bstrPassword: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Any, bstrUser: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Any, bstrUser: Any, bstrPassword: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Any, bstrUser: Unit, bstrPassword: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: Any, bstrPassword: Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: Unit, bstrPassword: Any): Unit = js.native
   
   /** Get ready state */
   val readyState: Double = js.native
   
   /** Get response body */
-  val responseBody: js.Any = js.native
+  val responseBody: Any = js.native
   
   /** Get response body */
-  val responseStream: js.Any = js.native
+  val responseStream: Any = js.native
   
   /** Get response body */
   val responseText: String = js.native
   
   /** Get response body */
-  val responseXML: js.Any = js.native
+  val responseXML: Any = js.native
   
   /** Send HTTP request */
   def send(): Unit = js.native
-  def send(varBody: js.Any): Unit = js.native
+  def send(varBody: Any): Unit = js.native
   
   /** Set an option value */
-  def setOption(option: SERVERXMLHTTP_OPTION, value: js.Any): Unit = js.native
+  def setOption(option: SERVERXMLHTTP_OPTION, value: Any): Unit = js.native
   
   /** Specify proxy configuration */
   def setProxy(proxySetting: SXH_PROXY_SETTING): Unit = js.native
-  def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: js.Any): Unit = js.native
-  def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: js.Any, varBypassList: js.Any): Unit = js.native
-  def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: Unit, varBypassList: js.Any): Unit = js.native
+  def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: Any): Unit = js.native
+  def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: Any, varBypassList: Any): Unit = js.native
+  def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: Unit, varBypassList: Any): Unit = js.native
   
   /** Specify proxy authentication credentials */
   def setProxyCredentials(bstrUserName: String, bstrPassword: String): Unit = js.native
@@ -81,5 +81,5 @@ trait ServerXMLHTTP60 extends StObject {
   
   /** Wait for asynchronous send to complete, with optional timeout (in seconds) */
   def waitForResponse(): Boolean = js.native
-  def waitForResponse(timeoutInSeconds: js.Any): Boolean = js.native
+  def waitForResponse(timeoutInSeconds: Any): Boolean = js.native
 }

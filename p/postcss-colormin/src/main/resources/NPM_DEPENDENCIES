@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-colormin" : "5.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-colormin" : "5.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -10,7 +10,7 @@ object collection {
   - typings.yandexMaps.mod.IEventEmitter because Already inherited
   - typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "collection.Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends StObject
        with IChild[IControlParent]
        with IParentOnMap {

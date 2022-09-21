@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "Pointer")
 @js.native
-class Pointer protected () extends StObject {
+open class Pointer protected () extends StObject {
   /**
     * The mouse and touch tracker object. Each Chart item has one assosiated
     * Pointer item that can be accessed from the Chart.pointer property.
@@ -54,13 +54,15 @@ class Pointer protected () extends StObject {
     *
     * @return The offset of the chart container within the page
     */
-  def getChartPosition(): OffsetObject = js.native
+  def getChartPosition(): ChartPositionObject = js.native
   
   /**
     * Get the click position in terms of axis values.
     *
     * @param e
     *        Pointer event, extended with `chartX` and `chartY` properties.
+    *
+    * @return Axis coordinates.
     */
   def getCoordinates(e: PointerEventObject): PointerAxisCoordinatesObject = js.native
   
@@ -85,6 +87,9 @@ class Pointer protected () extends StObject {
     * Takes a browser event object and extends it with custom Highcharts
     * properties `chartX` and `chartY` in order to work on the internal
     * coordinate system.
+    *
+    * On map charts, the properties `lon` and `lat` are added to the event
+    * object given that the chart has projection information.
     *
     * @param e
     *        Event object in standard browsers.

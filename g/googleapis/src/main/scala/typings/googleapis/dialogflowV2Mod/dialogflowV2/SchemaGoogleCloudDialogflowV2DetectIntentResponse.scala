@@ -4,20 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The message returned from the DetectIntent method.
-  */
 trait SchemaGoogleCloudDialogflowV2DetectIntentResponse extends StObject {
   
   /**
-    * The audio data bytes encoded as specified in the request. Note: The
-    * output audio is generated based on the values of default platform text
-    * responses found in the `query_result.fulfillment_messages` field. If
-    * multiple default text responses exist, they will be concatenated when
-    * generating audio. If no default platform text responses exist, the
-    * generated audio content will be empty.
+    * The audio data bytes encoded as specified in the request. Note: The output audio is generated based on the values of default platform text responses found in the `query_result.fulfillment_messages` field. If multiple default text responses exist, they will be concatenated when generating audio. If no default platform text responses exist, the generated audio content will be empty. In some scenarios, multiple output audio fields may be present in the response structure. In these cases, only the top-most-level audio output has content.
     */
-  var outputAudio: js.UndefOr[String] = js.undefined
+  var outputAudio: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The config used by the speech synthesizer to generate the output audio.
@@ -25,16 +17,14 @@ trait SchemaGoogleCloudDialogflowV2DetectIntentResponse extends StObject {
   var outputAudioConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2OutputAudioConfig] = js.undefined
   
   /**
-    * The selected results of the conversational query or event processing. See
-    * `alternative_query_results` for additional potential results.
+    * The selected results of the conversational query or event processing. See `alternative_query_results` for additional potential results.
     */
   var queryResult: js.UndefOr[SchemaGoogleCloudDialogflowV2QueryResult] = js.undefined
   
   /**
-    * The unique identifier of the response. It can be used to locate a
-    * response in the training example set or for reporting issues.
+    * The unique identifier of the response. It can be used to locate a response in the training example set or for reporting issues.
     */
-  var responseId: js.UndefOr[String] = js.undefined
+  var responseId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Specifies the status of the webhook request.
@@ -56,6 +46,8 @@ object SchemaGoogleCloudDialogflowV2DetectIntentResponse {
     
     inline def setOutputAudioConfigUndefined: Self = StObject.set(x, "outputAudioConfig", js.undefined)
     
+    inline def setOutputAudioNull: Self = StObject.set(x, "outputAudio", null)
+    
     inline def setOutputAudioUndefined: Self = StObject.set(x, "outputAudio", js.undefined)
     
     inline def setQueryResult(value: SchemaGoogleCloudDialogflowV2QueryResult): Self = StObject.set(x, "queryResult", value.asInstanceOf[js.Any])
@@ -63,6 +55,8 @@ object SchemaGoogleCloudDialogflowV2DetectIntentResponse {
     inline def setQueryResultUndefined: Self = StObject.set(x, "queryResult", js.undefined)
     
     inline def setResponseId(value: String): Self = StObject.set(x, "responseId", value.asInstanceOf[js.Any])
+    
+    inline def setResponseIdNull: Self = StObject.set(x, "responseId", null)
     
     inline def setResponseIdUndefined: Self = StObject.set(x, "responseId", js.undefined)
     

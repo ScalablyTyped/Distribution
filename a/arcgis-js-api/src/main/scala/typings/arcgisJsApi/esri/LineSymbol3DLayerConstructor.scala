@@ -17,5 +17,5 @@ trait LineSymbol3DLayerConstructor
 Instantiable0[LineSymbol3DLayer]
      with Instantiable1[/* properties */ LineSymbol3DLayerProperties, LineSymbol3DLayer] {
   
-  def fromJSON(json: js.Any): LineSymbol3DLayer = js.native
+  def fromJSON(json: Any): LineSymbol3DLayer = js.native
 }

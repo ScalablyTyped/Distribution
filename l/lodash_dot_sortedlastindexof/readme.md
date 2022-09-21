@@ -10,10 +10,10 @@ The lodash method `_.sortedLastIndexOf` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.sortedlastindexof |
 | Keywords           | lodash-modularized, sortedlastindexof |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 753 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 62.333333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

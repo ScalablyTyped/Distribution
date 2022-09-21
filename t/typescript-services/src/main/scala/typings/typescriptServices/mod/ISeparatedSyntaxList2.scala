@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "ISeparatedSyntaxList2")
 @js.native
-class ISeparatedSyntaxList2 protected ()
+open class ISeparatedSyntaxList2 protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ISeparatedSyntaxList2 {
   def this(
@@ -16,22 +16,22 @@ class ISeparatedSyntaxList2 protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _astID: js.Any = js.native
+  var _astID: Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
   /* private */ /* CompleteClass */
-  var _fileName: js.Any = js.native
+  var _fileName: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _postComments: js.Any = js.native
+  var _postComments: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _preComments: js.Any = js.native
+  var _preComments: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _separatorCount: js.Any = js.native
+  var _separatorCount: Any = js.native
   
   /* CompleteClass */
   var _start: Double = js.native
@@ -52,7 +52,7 @@ class ISeparatedSyntaxList2 protected ()
   override def kind(): typings.typescriptServices.TypeScript.SyntaxKind = js.native
   
   /* private */ /* CompleteClass */
-  var members: js.Any = js.native
+  var members: Any = js.native
   
   /* CompleteClass */
   override def nonSeparatorAt(index: Double): typings.typescriptServices.TypeScript.AST = js.native

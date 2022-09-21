@@ -14,7 +14,7 @@ object triggersMod {
   
   @JSImport("gitlab/dist/types/core/services/Triggers", "Triggers")
   @js.native
-  class Triggers () extends BaseService {
+  open class Triggers () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def add(projectId: String): js.Promise[js.Object] = js.native

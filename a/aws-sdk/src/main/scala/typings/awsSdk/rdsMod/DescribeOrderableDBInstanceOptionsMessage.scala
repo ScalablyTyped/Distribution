@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeOrderableDBInstanceOptionsMessage extends StObject {
   
   /**
-    * The Availability Zone group associated with a Local Zone. Specify this parameter to retrieve available offerings for the Local Zones in the group. Omit this parameter to show the available offerings in the specified AWS Region.
+    * The Availability Zone group associated with a Local Zone. Specify this parameter to retrieve available offerings for the Local Zones in the group. Omit this parameter to show the available offerings in the specified Amazon Web Services Region. This setting doesn't apply to RDS Custom.
     */
   var AvailabilityZoneGroup: js.UndefOr[String] = js.undefined
   
@@ -17,7 +17,7 @@ trait DescribeOrderableDBInstanceOptionsMessage extends StObject {
   var DBInstanceClass: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the engine to retrieve DB instance options for.
+    * The name of the engine to retrieve DB instance options for. Valid Values:    aurora (for MySQL 5.6-compatible Aurora)    aurora-mysql (for MySQL 5.7-compatible and MySQL 8.0-compatible Aurora)    aurora-postgresql     mariadb     mysql     oracle-ee     oracle-ee-cdb     oracle-se2     oracle-se2-cdb     postgres     sqlserver-ee     sqlserver-se     sqlserver-ex     sqlserver-web   
     */
   var Engine: String
   
@@ -32,22 +32,22 @@ trait DescribeOrderableDBInstanceOptionsMessage extends StObject {
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The license model filter value. Specify this parameter to show only the available offerings matching the specified license model.
+    * The license model filter value. Specify this parameter to show only the available offerings matching the specified license model. RDS Custom supports only the BYOL licensing model.
     */
   var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
-    *  An optional pagination token provided by a previous DescribeOrderableDBInstanceOptions request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
+    * An optional pagination token provided by a previous DescribeOrderableDBInstanceOptions request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
   var Marker: js.UndefOr[String] = js.undefined
   
   /**
-    *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that you can retrieve the remaining results.  Default: 100 Constraints: Minimum 20, maximum 100.
+    * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that you can retrieve the remaining results. Default: 100 Constraints: Minimum 20, maximum 10000.
     */
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * A value that indicates whether to show only VPC or non-VPC offerings.
+    * A value that indicates whether to show only VPC or non-VPC offerings. RDS Custom supports only VPC offerings. RDS Custom supports only VPC offerings. If you describe non-VPC offerings for RDS Custom, the output shows VPC offerings.
     */
   var Vpc: js.UndefOr[BooleanOptional] = js.undefined
 }
@@ -78,7 +78,7 @@ object DescribeOrderableDBInstanceOptionsMessage {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setLicenseModel(value: String): Self = StObject.set(x, "LicenseModel", value.asInstanceOf[js.Any])
     

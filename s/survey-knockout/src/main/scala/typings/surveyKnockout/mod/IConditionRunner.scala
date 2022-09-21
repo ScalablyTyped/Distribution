@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IConditionRunner extends StObject {
   
-  def runCondition(values: HashTable[js.Any], properties: HashTable[js.Any]): js.Any
+  def runCondition(values: Any, properties: Any): Any
 }
 object IConditionRunner {
   
-  inline def apply(runCondition: (HashTable[js.Any], HashTable[js.Any]) => js.Any): IConditionRunner = {
+  inline def apply(runCondition: (Any, Any) => Any): IConditionRunner = {
     val __obj = js.Dynamic.literal(runCondition = js.Any.fromFunction2(runCondition))
     __obj.asInstanceOf[IConditionRunner]
   }
   
   extension [Self <: IConditionRunner](x: Self) {
     
-    inline def setRunCondition(value: (HashTable[js.Any], HashTable[js.Any]) => js.Any): Self = StObject.set(x, "runCondition", js.Any.fromFunction2(value))
+    inline def setRunCondition(value: (Any, Any) => Any): Self = StObject.set(x, "runCondition", js.Any.fromFunction2(value))
   }
 }

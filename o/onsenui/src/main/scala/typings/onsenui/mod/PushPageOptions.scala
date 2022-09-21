@@ -14,7 +14,7 @@ trait PushPageOptions extends StObject {
   
   var data: js.UndefOr[js.Object] = js.undefined
   
-  var page: js.UndefOr[js.Any] = js.undefined
+  var page: js.UndefOr[Any] = js.undefined
   
   var pageHTML: js.UndefOr[String] = js.undefined
 }
@@ -43,7 +43,7 @@ object PushPageOptions {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     inline def setPageHTML(value: String): Self = StObject.set(x, "pageHTML", value.asInstanceOf[js.Any])
     

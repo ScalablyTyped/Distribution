@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +14,13 @@ trait DateRangePickerOptions extends StObject {
   
   var culture: js.UndefOr[String] = js.undefined
   
-  var dates: js.UndefOr[js.Any] = js.undefined
+  var dates: js.UndefOr[Any] = js.undefined
   
   var depth: js.UndefOr[String] = js.undefined
   
-  var disableDates: js.UndefOr[js.Any | js.Function] = js.undefined
+  var disableDates: js.UndefOr[Any | js.Function] = js.undefined
+  
+  var fillMode: js.UndefOr[String] = js.undefined
   
   var footer: js.UndefOr[String | js.Function] = js.undefined
   
@@ -27,11 +28,11 @@ trait DateRangePickerOptions extends StObject {
   
   var labels: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[Date] = js.undefined
+  var max: js.UndefOr[js.Date] = js.undefined
   
   var messages: js.UndefOr[DateRangePickerMessages] = js.undefined
   
-  var min: js.UndefOr[Date] = js.undefined
+  var min: js.UndefOr[js.Date] = js.undefined
   
   var month: js.UndefOr[DateRangePickerMonth] = js.undefined
   
@@ -40,6 +41,10 @@ trait DateRangePickerOptions extends StObject {
   var open: js.UndefOr[js.Function1[/* e */ DateRangePickerOpenEvent, Unit]] = js.undefined
   
   var range: js.UndefOr[DateRangePickerRange] = js.undefined
+  
+  var rounded: js.UndefOr[String] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var start: js.UndefOr[String] = js.undefined
   
@@ -70,7 +75,7 @@ object DateRangePickerOptions {
     
     inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
-    inline def setDates(value: js.Any): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
+    inline def setDates(value: Any): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
     
     inline def setDatesUndefined: Self = StObject.set(x, "dates", js.undefined)
     
@@ -78,9 +83,13 @@ object DateRangePickerOptions {
     
     inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    inline def setDisableDates(value: js.Any | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
+    inline def setDisableDates(value: Any | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
     
     inline def setDisableDatesUndefined: Self = StObject.set(x, "disableDates", js.undefined)
+    
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
     
     inline def setFooter(value: String | js.Function): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
@@ -94,7 +103,7 @@ object DateRangePickerOptions {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setMax(value: Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
@@ -102,7 +111,7 @@ object DateRangePickerOptions {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMin(value: Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
@@ -121,6 +130,14 @@ object DateRangePickerOptions {
     inline def setRange(value: DateRangePickerRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

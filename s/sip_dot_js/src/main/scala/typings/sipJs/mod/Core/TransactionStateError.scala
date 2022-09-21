@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.TransactionStateError")
 @js.native
-class TransactionStateError ()
+open class TransactionStateError ()
   extends typings.sipJs.coreMod.TransactionStateError {
   def this(message: String) = this()
 }

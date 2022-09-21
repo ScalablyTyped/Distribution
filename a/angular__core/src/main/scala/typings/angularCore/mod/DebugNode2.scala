@@ -19,7 +19,7 @@ trait DebugNode2 extends StObject {
   /**
     * A list of Component/Directive types which need to be instantiated an this location.
     */
-  var factories: js.Array[Type[js.Any]]
+  var factories: js.Array[Type[Any]]
   
   /**
     * HTML representation of the node.
@@ -32,14 +32,24 @@ trait DebugNode2 extends StObject {
   var injector: NodeInjectorDebug
   
   /**
+    * Injector resolution path.
+    */
+  var injectorResolutionPath: Any
+  
+  /**
     * A list of Component/Directive instances which were instantiated an this location.
     */
-  var instances: js.Array[js.Any]
+  var instances: js.Array[Any]
   
   /**
     * DOM native node.
     */
   var native: Node
+  
+  /**
+    * Associated `TNode`
+    */
+  var tNode: TNode
   
   /**
     * Human readable node type.
@@ -50,13 +60,15 @@ object DebugNode2 {
   
   inline def apply(
     children: js.Array[DebugNode2],
-    factories: js.Array[Type[js.Any]],
+    factories: js.Array[Type[Any]],
     injector: NodeInjectorDebug,
-    instances: js.Array[js.Any],
+    injectorResolutionPath: Any,
+    instances: js.Array[Any],
     native: Node,
+    tNode: TNode,
     `type`: String
   ): DebugNode2 = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], factories = factories.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], html = null)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], factories = factories.asInstanceOf[js.Any], injector = injector.asInstanceOf[js.Any], injectorResolutionPath = injectorResolutionPath.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], tNode = tNode.asInstanceOf[js.Any], html = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugNode2]
   }
@@ -65,11 +77,11 @@ object DebugNode2 {
     
     inline def setChildren(value: js.Array[DebugNode2]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: DebugNode2*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: DebugNode2*): Self = StObject.set(x, "children", js.Array(value*))
     
-    inline def setFactories(value: js.Array[Type[js.Any]]): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
+    inline def setFactories(value: js.Array[Type[Any]]): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
     
-    inline def setFactoriesVarargs(value: Type[js.Any]*): Self = StObject.set(x, "factories", js.Array(value :_*))
+    inline def setFactoriesVarargs(value: Type[Any]*): Self = StObject.set(x, "factories", js.Array(value*))
     
     inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
@@ -77,11 +89,15 @@ object DebugNode2 {
     
     inline def setInjector(value: NodeInjectorDebug): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
     
-    inline def setInstances(value: js.Array[js.Any]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInjectorResolutionPath(value: Any): Self = StObject.set(x, "injectorResolutionPath", value.asInstanceOf[js.Any])
     
-    inline def setInstancesVarargs(value: js.Any*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstances(value: js.Array[Any]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    
+    inline def setInstancesVarargs(value: Any*): Self = StObject.set(x, "instances", js.Array(value*))
     
     inline def setNative(value: Node): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    
+    inline def setTNode(value: TNode): Self = StObject.set(x, "tNode", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

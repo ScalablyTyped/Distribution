@@ -10,10 +10,10 @@ object removeRedEyeMod {
   
   @JSImport("material-ui/svg-icons/image/remove-red-eye", JSImport.Default)
   @js.native
-  class default () extends ImageRemoveRedEye
+  open class default () extends ImageRemoveRedEye
   
   @JSImport("material-ui/svg-icons/image/remove-red-eye", "ImageRemoveRedEye")
   @js.native
-  class ImageRemoveRedEye ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageRemoveRedEye ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

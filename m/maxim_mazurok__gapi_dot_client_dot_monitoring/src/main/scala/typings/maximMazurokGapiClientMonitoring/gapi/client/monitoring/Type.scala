@@ -37,7 +37,7 @@ object Type {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -47,13 +47,13 @@ object Type {
     
     inline def setOneofsUndefined: Self = StObject.set(x, "oneofs", js.undefined)
     
-    inline def setOneofsVarargs(value: String*): Self = StObject.set(x, "oneofs", js.Array(value :_*))
+    inline def setOneofsVarargs(value: String*): Self = StObject.set(x, "oneofs", js.Array(value*))
     
     inline def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setSourceContext(value: SourceContext): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
     

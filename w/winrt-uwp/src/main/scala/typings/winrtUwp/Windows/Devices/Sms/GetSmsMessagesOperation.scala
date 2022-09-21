@@ -20,10 +20,10 @@ trait GetSmsMessagesOperation extends StObject {
   def close(): Unit
   
   /** Specifies whether the asynchronous message retrieval operation has completed or not. */
-  def completed(asyncInfo: IAsyncOperationWithProgress[IVectorView[js.Any], Double], asyncStatus: AsyncStatus): Unit
+  def completed(asyncInfo: IAsyncOperationWithProgress[IVectorView[Any], Double], asyncStatus: AsyncStatus): Unit
   /** Specifies whether the asynchronous message retrieval operation has completed or not. */
   @JSName("completed")
-  var completed_Original: AsyncOperationWithProgressCompletedHandler[IVectorView[js.Any], Double]
+  var completed_Original: AsyncOperationWithProgressCompletedHandler[IVectorView[Any], Double]
   
   /** Specifies the error code for the asynchronous message operation. */
   var errorCode: WinRTError
@@ -38,10 +38,10 @@ trait GetSmsMessagesOperation extends StObject {
   var id: Double
   
   /** Specifies the progress status of the asynchronous message operation. */
-  def progress(asyncInfo: IAsyncOperationWithProgress[IVectorView[js.Any], Double], progressInfo: Double): Unit
+  def progress(asyncInfo: IAsyncOperationWithProgress[IVectorView[Any], Double], progressInfo: Double): Unit
   /** Specifies the progress status of the asynchronous message operation. */
   @JSName("progress")
-  var progress_Original: AsyncOperationProgressHandler[IVectorView[js.Any], Double]
+  var progress_Original: AsyncOperationProgressHandler[IVectorView[Any], Double]
   
   /** Specifies the status of the asynchronous message operations. */
   var status: AsyncStatus
@@ -51,11 +51,11 @@ object GetSmsMessagesOperation {
   inline def apply(
     cancel: () => Unit,
     close: () => Unit,
-    completed: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], /* asyncStatus */ AsyncStatus) => Unit,
+    completed: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[Any], Double], /* asyncStatus */ AsyncStatus) => Unit,
     errorCode: WinRTError,
     getResults: () => IVectorView[ISmsMessage],
     id: Double,
-    progress: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], Double) => Unit,
+    progress: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[Any], Double], Double) => Unit,
     status: AsyncStatus
   ): GetSmsMessagesOperation = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), close = js.Any.fromFunction0(close), completed = js.Any.fromFunction2(completed), errorCode = errorCode.asInstanceOf[js.Any], getResults = js.Any.fromFunction0(getResults), id = id.asInstanceOf[js.Any], progress = js.Any.fromFunction2(progress), status = status.asInstanceOf[js.Any])
@@ -69,7 +69,7 @@ object GetSmsMessagesOperation {
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     inline def setCompleted(
-      value: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], /* asyncStatus */ AsyncStatus) => Unit
+      value: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[Any], Double], /* asyncStatus */ AsyncStatus) => Unit
     ): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
     inline def setErrorCode(value: WinRTError): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
@@ -78,7 +78,7 @@ object GetSmsMessagesOperation {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setProgress(value: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], Double) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+    inline def setProgress(value: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[Any], Double], Double) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
     inline def setStatus(value: AsyncStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

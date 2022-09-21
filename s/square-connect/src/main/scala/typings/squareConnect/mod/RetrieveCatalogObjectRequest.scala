@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RetrieveCatalogObjectRequest")
 @js.native
-class RetrieveCatalogObjectRequest () extends StObject {
+open class RetrieveCatalogObjectRequest () extends StObject {
   
   /**
     * If `true`, the response will include additional objects that are related to the requested object, as follows:

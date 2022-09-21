@@ -29,7 +29,7 @@ trait Block
   /**
     * Current implementation. You may replace it by assigning to this property.
     */
-  def implementation(args: js.Any*): js.Any
+  def implementation(args: Any*): Any
   /**
     * Current implementation. You may replace it by assigning to this property.
     */

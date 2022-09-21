@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyDBInstanceMessage extends StObject {
   
   /**
-    * The new amount of storage (in gibibytes) to allocate for the DB instance. Not applicable. Storage is managed by the DB Cluster.
+    * Not supported by Neptune.
     */
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -47,7 +47,7 @@ trait ModifyDBInstanceMessage extends StObject {
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The new compute and memory capacity of the DB instance, for example, db.m4.large. Not all DB instance classes are available in all AWS Regions. If you modify the DB instance class, an outage occurs during the change. The change is applied during the next maintenance window, unless ApplyImmediately is specified as true for this request. Default: Uses existing setting
+    * The new compute and memory capacity of the DB instance, for example, db.m4.large. Not all DB instance classes are available in all Amazon Regions. If you modify the DB instance class, an outage occurs during the change. The change is applied during the next maintenance window, unless ApplyImmediately is specified as true for this request. Default: Uses existing setting
     */
   var DBInstanceClass: js.UndefOr[String] = js.undefined
   
@@ -92,7 +92,7 @@ trait ModifyDBInstanceMessage extends StObject {
   var DomainIAMRoleName: js.UndefOr[String] = js.undefined
   
   /**
-    * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. You can enable IAM database authentication for the following database engines Not applicable. Mapping AWS IAM accounts to database accounts is managed by the DB cluster. For more information, see ModifyDBCluster. Default: false 
+    * True to enable mapping of Amazon Identity and Access Management (IAM) accounts to database accounts, and otherwise false. You can enable IAM database authentication for the following database engines Not applicable. Mapping Amazon IAM accounts to database accounts is managed by the DB cluster. For more information, see ModifyDBCluster. Default: false 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -112,12 +112,12 @@ trait ModifyDBInstanceMessage extends StObject {
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Not supported.
+    * Not supported by Neptune.
     */
   var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
-    * Not applicable.
+    * Not supported by Neptune.
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
   
@@ -250,7 +250,7 @@ object ModifyDBInstanceMessage {
     
     inline def setDBSecurityGroupsUndefined: Self = StObject.set(x, "DBSecurityGroups", js.undefined)
     
-    inline def setDBSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "DBSecurityGroups", js.Array(value :_*))
+    inline def setDBSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "DBSecurityGroups", js.Array(value*))
     
     inline def setDBSubnetGroupName(value: String): Self = StObject.set(x, "DBSubnetGroupName", value.asInstanceOf[js.Any])
     
@@ -348,6 +348,6 @@ object ModifyDBInstanceMessage {
     
     inline def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "VpcSecurityGroupIds", js.undefined)
     
-    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value :_*))
+    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value*))
   }
 }

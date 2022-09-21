@@ -22,6 +22,6 @@ object BatchGetDeploymentsInput {
     
     inline def setDeploymentIds(value: DeploymentsList): Self = StObject.set(x, "deploymentIds", value.asInstanceOf[js.Any])
     
-    inline def setDeploymentIdsVarargs(value: DeploymentId*): Self = StObject.set(x, "deploymentIds", js.Array(value :_*))
+    inline def setDeploymentIdsVarargs(value: DeploymentId*): Self = StObject.set(x, "deploymentIds", js.Array(value*))
   }
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a single stroke of ink.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.InkStroke")
 @js.native
-class InkStroke ()
+open class InkStroke ()
   extends StObject
      with typings.officeJsPreview.OneNote.InkStroke {
   

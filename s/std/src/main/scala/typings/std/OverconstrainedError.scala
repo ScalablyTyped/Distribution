@@ -8,7 +8,8 @@ trait OverconstrainedError
   extends StObject
      with Error {
   
-  var constraint: java.lang.String
+  /* standard dom */
+  val constraint: java.lang.String
 }
 object OverconstrainedError {
   

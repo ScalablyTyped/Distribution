@@ -13,14 +13,14 @@ object panZoomConstraintsMod {
   val ^ : js.Any = js.native
   
   inline def constrainZoomExtents(
-    scale: TransformableScale[js.Any, Double],
+    scale: TransformableScale[Any, Double],
     zoomAmount: Double,
     minDomainExtent: Double,
     maxDomainExtent: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("constrainZoomExtents")(scale.asInstanceOf[js.Any], zoomAmount.asInstanceOf[js.Any], minDomainExtent.asInstanceOf[js.Any], maxDomainExtent.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def constrainZoomValues(
-    scale: TransformableScale[js.Any, Double],
+    scale: TransformableScale[Any, Double],
     zoomAmount: Double,
     centerPoint: Double,
     minDomainValue: Double,
@@ -28,14 +28,14 @@ object panZoomConstraintsMod {
   ): CenterPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("constrainZoomValues")(scale.asInstanceOf[js.Any], zoomAmount.asInstanceOf[js.Any], centerPoint.asInstanceOf[js.Any], minDomainValue.asInstanceOf[js.Any], maxDomainValue.asInstanceOf[js.Any])).asInstanceOf[CenterPoint]
   
   inline def constrainedTranslation(
-    scale: TransformableScale[js.Any, Double],
+    scale: TransformableScale[Any, Double],
     translation: Double,
     minDomainValue: Double,
     maxDomainValue: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("constrainedTranslation")(scale.asInstanceOf[js.Any], translation.asInstanceOf[js.Any], minDomainValue.asInstanceOf[js.Any], maxDomainValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def constrainedZoom(
-    scale: TransformableScale[js.Any, Double],
+    scale: TransformableScale[Any, Double],
     zoomAmount: Double,
     centerPoint: Double,
     minDomainExtent: Double,

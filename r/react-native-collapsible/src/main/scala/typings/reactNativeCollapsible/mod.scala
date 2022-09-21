@@ -14,10 +14,10 @@ object mod {
   
   @JSImport("react-native-collapsible", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CollapsibleProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CollapsibleProps, js.Object, Any]
   
-  type Collapsible = Component[CollapsibleProps, js.Object, js.Any]
+  type Collapsible = Component[CollapsibleProps, js.Object, Any]
   
   trait CollapsibleProps extends StObject {
     
@@ -54,7 +54,7 @@ object mod {
       *
       * @default easeOutCubic
       */
-    var easing: js.UndefOr[EasingMode | js.Any] = js.undefined
+    var easing: js.UndefOr[EasingMode | Any] = js.undefined
     
     /**
       * Enable pointer events on collapsed view
@@ -67,6 +67,13 @@ object mod {
       * Function called when the animation finished
       */
     var onAnimationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+      * Render children in collapsible even if not visible
+      *
+      * @default true
+      */
+    var renderChildrenCollapsed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional styling for the container
@@ -98,7 +105,7 @@ object mod {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setEasing(value: EasingMode | js.Any): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: EasingMode | Any): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
       inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
@@ -109,6 +116,10 @@ object mod {
       inline def setOnAnimationEnd(value: () => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction0(value))
       
       inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
+      
+      inline def setRenderChildrenCollapsed(value: Boolean): Self = StObject.set(x, "renderChildrenCollapsed", value.asInstanceOf[js.Any])
+      
+      inline def setRenderChildrenCollapsedUndefined: Self = StObject.set(x, "renderChildrenCollapsed", js.undefined)
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

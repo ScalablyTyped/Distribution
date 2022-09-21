@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Updates a chart&#39;s specifications. (This does not move or resize a
-  * chart. To move or resize a chart, use UpdateEmbeddedObjectPositionRequest.)
-  */
 trait SchemaUpdateChartSpecRequest extends StObject {
   
   /**
     * The ID of the chart to update.
     */
-  var chartId: js.UndefOr[Double] = js.undefined
+  var chartId: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The specification to apply to the chart.
@@ -30,6 +26,8 @@ object SchemaUpdateChartSpecRequest {
   extension [Self <: SchemaUpdateChartSpecRequest](x: Self) {
     
     inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+    
+    inline def setChartIdNull: Self = StObject.set(x, "chartId", null)
     
     inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     

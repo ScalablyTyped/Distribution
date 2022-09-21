@@ -1,5 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
+import typings.jsrsasign.anon.Tlv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,6 +42,9 @@ trait ASN1Object extends StObject {
   
   /** flag whether internal data was changed */
   var isModified: String
+  
+  /** JSON object parameter for ASN.1 encode */
+  var params: Tlv | Null
 }
 object ASN1Object {
   
@@ -55,7 +59,7 @@ object ASN1Object {
     hV: String,
     isModified: String
   ): ASN1Object = {
-    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], params = null)
     __obj.asInstanceOf[ASN1Object]
   }
   
@@ -78,5 +82,9 @@ object ASN1Object {
     inline def setHV(value: String): Self = StObject.set(x, "hV", value.asInstanceOf[js.Any])
     
     inline def setIsModified(value: String): Self = StObject.set(x, "isModified", value.asInstanceOf[js.Any])
+    
+    inline def setParams(value: Tlv): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsNull: Self = StObject.set(x, "params", null)
   }
 }

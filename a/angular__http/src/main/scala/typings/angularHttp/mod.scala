@@ -19,17 +19,17 @@ object mod {
   
   @JSImport("@angular/http", "BaseRequestOptions")
   @js.native
-  class BaseRequestOptions ()
+  open class BaseRequestOptions ()
     extends typings.angularHttp.publicApiMod.BaseRequestOptions
   
   @JSImport("@angular/http", "BaseResponseOptions")
   @js.native
-  class BaseResponseOptions ()
+  open class BaseResponseOptions ()
     extends typings.angularHttp.publicApiMod.BaseResponseOptions
   
   @JSImport("@angular/http", "BrowserXhr")
   @js.native
-  class BrowserXhr ()
+  open class BrowserXhr ()
     extends typings.angularHttp.publicApiMod.BrowserXhr
   
   @JSImport("@angular/http", "Connection")
@@ -44,7 +44,7 @@ object mod {
   
   @JSImport("@angular/http", "CookieXSRFStrategy")
   @js.native
-  class CookieXSRFStrategy ()
+  open class CookieXSRFStrategy ()
     extends typings.angularHttp.publicApiMod.CookieXSRFStrategy {
     def this(_cookieName: String) = this()
     def this(_cookieName: String, _headerName: String) = this()
@@ -53,9 +53,9 @@ object mod {
   
   @JSImport("@angular/http", "Headers")
   @js.native
-  class Headers ()
+  open class Headers ()
     extends typings.angularHttp.publicApiMod.Headers {
-    def this(headers: StringDictionary[js.Any]) = this()
+    def this(headers: StringDictionary[Any]) = this()
     def this(headers: typings.angularHttp.headersMod.Headers) = this()
   }
   /* static members */
@@ -73,7 +73,7 @@ object mod {
   
   @JSImport("@angular/http", "Http")
   @js.native
-  class Http protected ()
+  open class Http protected ()
     extends typings.angularHttp.publicApiMod.Http {
     def this(
       _backend: typings.angularHttp.interfacesMod.ConnectionBackend,
@@ -83,22 +83,22 @@ object mod {
   
   @JSImport("@angular/http", "HttpModule")
   @js.native
-  class HttpModule ()
+  open class HttpModule ()
     extends typings.angularHttp.publicApiMod.HttpModule
   
   @JSImport("@angular/http", "JSONPBackend")
   @js.native
-  class JSONPBackend ()
+  open class JSONPBackend ()
     extends typings.angularHttp.publicApiMod.JSONPBackend
   
   @JSImport("@angular/http", "JSONPConnection")
   @js.native
-  class JSONPConnection ()
+  open class JSONPConnection ()
     extends typings.angularHttp.publicApiMod.JSONPConnection
   
   @JSImport("@angular/http", "Jsonp")
   @js.native
-  class Jsonp protected ()
+  open class Jsonp protected ()
     extends typings.angularHttp.publicApiMod.Jsonp {
     def this(
       backend: typings.angularHttp.interfacesMod.ConnectionBackend,
@@ -108,12 +108,12 @@ object mod {
   
   @JSImport("@angular/http", "JsonpModule")
   @js.native
-  class JsonpModule ()
+  open class JsonpModule ()
     extends typings.angularHttp.publicApiMod.JsonpModule
   
   @JSImport("@angular/http", "QueryEncoder")
   @js.native
-  class QueryEncoder ()
+  open class QueryEncoder ()
     extends typings.angularHttp.publicApiMod.QueryEncoder
   
   @JSImport("@angular/http", "ReadyState")
@@ -138,7 +138,7 @@ object mod {
   
   @JSImport("@angular/http", "Request")
   @js.native
-  class Request protected ()
+  open class Request protected ()
     extends typings.angularHttp.publicApiMod.Request {
     def this(requestOptions: RequestArgs) = this()
   }
@@ -167,14 +167,14 @@ object mod {
   
   @JSImport("@angular/http", "RequestOptions")
   @js.native
-  class RequestOptions ()
+  open class RequestOptions ()
     extends typings.angularHttp.publicApiMod.RequestOptions {
     def this(opts: RequestOptionsArgs) = this()
   }
   
   @JSImport("@angular/http", "Response")
   @js.native
-  class Response protected ()
+  open class Response protected ()
     extends typings.angularHttp.publicApiMod.Response {
     def this(responseOptions: typings.angularHttp.baseResponseOptionsMod.ResponseOptions) = this()
   }
@@ -197,7 +197,7 @@ object mod {
   
   @JSImport("@angular/http", "ResponseOptions")
   @js.native
-  class ResponseOptions ()
+  open class ResponseOptions ()
     extends typings.angularHttp.publicApiMod.ResponseOptions {
     def this(opts: ResponseOptionsArgs) = this()
   }
@@ -222,7 +222,7 @@ object mod {
   
   @JSImport("@angular/http", "URLSearchParams")
   @js.native
-  class URLSearchParams ()
+  open class URLSearchParams ()
     extends typings.angularHttp.publicApiMod.URLSearchParams {
     def this(rawParams: String) = this()
     def this(rawParams: String, queryEncoder: typings.angularHttp.urlSearchParamsMod.QueryEncoder) = this()
@@ -235,7 +235,7 @@ object mod {
   
   @JSImport("@angular/http", "XHRBackend")
   @js.native
-  class XHRBackend protected ()
+  open class XHRBackend protected ()
     extends typings.angularHttp.publicApiMod.XHRBackend {
     def this(
       _browserXHR: typings.angularHttp.browserXhrMod.BrowserXhr,
@@ -246,7 +246,7 @@ object mod {
   
   @JSImport("@angular/http", "XHRConnection")
   @js.native
-  class XHRConnection protected ()
+  open class XHRConnection protected ()
     extends typings.angularHttp.publicApiMod.XHRConnection {
     def this(
       req: typings.angularHttp.staticRequestMod.Request,
@@ -278,7 +278,7 @@ object mod {
   
   @JSImport("@angular/http", "\u0275angular_packages_http_http_e")
   @js.native
-  class ɵangularPackagesHttpHttpE () extends BrowserJsonp
+  open class ɵangularPackagesHttpHttpE () extends BrowserJsonp
   
   @JSImport("@angular/http", "\u0275angular_packages_http_http_f")
   @js.native

@@ -29,7 +29,7 @@ object DescribeFastSnapshotRestoresResult {
     
     inline def setFastSnapshotRestoresUndefined: Self = StObject.set(x, "FastSnapshotRestores", js.undefined)
     
-    inline def setFastSnapshotRestoresVarargs(value: DescribeFastSnapshotRestoreSuccessItem*): Self = StObject.set(x, "FastSnapshotRestores", js.Array(value :_*))
+    inline def setFastSnapshotRestoresVarargs(value: DescribeFastSnapshotRestoreSuccessItem*): Self = StObject.set(x, "FastSnapshotRestores", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

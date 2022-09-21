@@ -9,13 +9,15 @@ trait Camera
   extends StObject
      with Node {
   
+  /* private */ var _absoluteRotation: Any = js.native
+  
   /** @hidden */
   var _activeMeshes: SmartArray[AbstractMesh] = js.native
   
   /** @hidden */
-  var _cameraRigParams: js.Any = js.native
+  var _cameraRigParams: Any = js.native
   
-  /* private */ var _cascadePostProcessesToRigCams: js.Any = js.native
+  /* private */ var _cascadePostProcessesToRigCams: Any = js.native
   
   /** @hidden */
   def _checkInputs(): Unit = js.native
@@ -23,12 +25,12 @@ trait Camera
   /** @hidden */
   var _computedViewMatrix: Matrix = js.native
   
-  /* private */ var _doNotComputeProjectionMatrix: js.Any = js.native
+  /* private */ var _doNotComputeProjectionMatrix: Any = js.native
   
-  /* private */ var _frustumPlanes: js.Any = js.native
+  /* private */ var _frustumPlanes: Any = js.native
   
   /**
-    * Internal, gets the first post proces.
+    * Internal, gets the first post process.
     * @returns the first post process to be run on this camera.
     */
   def _getFirstPostProcess(): Nullable[PostProcess] = js.native
@@ -56,7 +58,7 @@ trait Camera
   /* protected */ var _globalPosition: Vector3 = js.native
   
   /** @hidden */
-  val _isCamera: Boolean = js.native
+  val _isCamera: /* true */ Boolean = js.native
   
   /** @hidden */
   var _isLeftCamera: Boolean = js.native
@@ -71,10 +73,39 @@ trait Camera
   def _isSynchronizedViewMatrix(): Boolean = js.native
   
   /**
+    * Define the mode of the camera (Camera.PERSPECTIVE_CAMERA or Camera.ORTHOGRAPHIC_CAMERA)
+    */
+  /* private */ var _mode: Any = js.native
+  
+  /**
     * @hidden
     * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
     */
   var _multiviewTexture: Nullable[RenderTargetTexture] = js.native
+  
+  /**
+    * Define the current limit on the bottom side for an orthographic camera
+    * In scene unit
+    */
+  /* private */ var _orthoBottom: Any = js.native
+  
+  /**
+    * Define the current limit on the left side for an orthographic camera
+    * In scene unit
+    */
+  /* private */ var _orthoLeft: Any = js.native
+  
+  /**
+    * Define the current limit on the right side for an orthographic camera
+    * In scene unit
+    */
+  /* private */ var _orthoRight: Any = js.native
+  
+  /**
+    * Define the current limit on the top side for an orthographic camera
+    * In scene unit
+    */
+  /* private */ var _orthoTop: Any = js.native
   
   /** @hidden */
   var _position: Vector3 = js.native
@@ -85,7 +116,13 @@ trait Camera
   /** @hidden */
   var _projectionMatrix: Matrix = js.native
   
-  /* private */ var _refreshFrustumPlanes: js.Any = js.native
+  /* private */ var _refreshFrustumPlanes: Any = js.native
+  
+  /**
+    * @hidden
+    * For WebXR cameras that are rendering to multiview texture arrays.
+    */
+  var _renderingMultiview: Boolean = js.native
   
   /**
     * @hidden
@@ -106,23 +143,25 @@ trait Camera
   /** @hidden */
   var _rigPostProcess: Nullable[PostProcess] = js.native
   
+  /* protected */ def _setRigMode(rigParams: Any): Unit = js.native
+  
   /** @hidden */
   def _setupInputs(): Unit = js.native
   
   /** @hidden */
   var _skipRendering: Boolean = js.native
   
-  /* private */ var _stateStored: js.Any = js.native
+  /* private */ var _stateStored: Any = js.native
   
-  /* private */ var _storedFov: js.Any = js.native
+  /* private */ var _storedFov: Any = js.native
   
-  /* private */ var _transformMatrix: js.Any = js.native
+  /* private */ var _transformMatrix: Any = js.native
   
   /* protected */ var _upVector: Vector3 = js.native
   
   /* protected */ def _updateCameraRotationMatrix(): Unit = js.native
   
-  /* private */ var _updateFrustumPlanes: js.Any = js.native
+  /* private */ var _updateFrustumPlanes: Any = js.native
   
   /**
     * May need to be overridden by children
@@ -146,18 +185,23 @@ trait Camera
   def absoluteRotation: Quaternion = js.native
   
   /**
+    * Automatically tilts the projection plane, using `projectionPlaneTilt`, to correct the perspective effect on vertical lines.
+    */
+  def applyVerticalCorrection(): Unit = js.native
+  
+  /**
     * Attach the input controls to a specific dom element to get the input from.
     * @param noPreventDefault Defines whether event caught by the controls should call preventdefault() (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
     */
   def attachControl(): Unit = js.native
   /**
     * Attach the input controls to a specific dom element to get the input from.
-    * @param ignored defines an ignored parameter kept for backward compatibility. If you want to define the source input element, you can set engine.inputElement before calling camera.attachControl
+    * @param ignored defines an ignored parameter kept for backward compatibility.
     * @param noPreventDefault Defines whether event caught by the controls should call preventdefault() (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
     * BACK COMPAT SIGNATURE ONLY.
     */
-  def attachControl(ignored: js.Any): Unit = js.native
-  def attachControl(ignored: js.Any, noPreventDefault: Boolean): Unit = js.native
+  def attachControl(ignored: Any): Unit = js.native
+  def attachControl(ignored: Any, noPreventDefault: Boolean): Unit = js.native
   def attachControl(noPreventDefault: Boolean): Unit = js.native
   
   /**
@@ -180,22 +224,26 @@ trait Camera
   /**
     * Clones the current camera.
     * @param name The cloned camera name
+    * @param newParent The cloned camera's new parent (none by default)
     * @returns the cloned camera
     */
   def clone(name: String): Camera = js.native
+  def clone(name: String, newParent: Nullable[Node]): Camera = js.native
   
   /**
     * needs to be overridden by children so sub has required properties to be copied
+    * @param name
+    * @param cameraIndex
     * @hidden
     */
   def createRigCamera(name: String, cameraIndex: Double): Nullable[Camera] = js.native
   
   /**
     * Defines the list of custom render target which are rendered to and then used as the input to this camera's render. Eg. display another camera view on a TV in the main scene
-    * This is pretty helpfull if you wish to make a camera render to a texture you could reuse somewhere
+    * This is pretty helpful if you wish to make a camera render to a texture you could reuse somewhere
     * else in the scene. (Eg. security camera)
     *
-    * To change the final output target of the camera, camera.outputRenderTarget should be used instead (eg. webXR renders to a render target corrisponding to an HMD)
+    * To change the final output target of the camera, camera.outputRenderTarget should be used instead (eg. webXR renders to a render target corresponding to an HMD)
     */
   var customRenderTargets: js.Array[RenderTargetTexture] = js.native
   
@@ -203,11 +251,7 @@ trait Camera
     * Detach the current controls from the specified dom element.
     */
   def detachControl(): Unit = js.native
-  /**
-    * Detach the current controls from the specified dom element.
-    * @param ignored defines an ignored parameter kept for backward compatibility. If you want to define the source input element, you can set engine.inputElement before calling camera.attachControl
-    */
-  def detachControl(ignored: js.Any): Unit = js.native
+  def detachControl(ignored: Any): Unit = js.native
   
   /**
     * Detach a post process to the camera.
@@ -244,7 +288,7 @@ trait Camera
   /**
     * Gets the direction of the camera relative to a given local axis.
     * @param localAxis Defines the reference axis to provide a relative direction.
-    * @return the direction
+    * @returns the direction
     */
   def getDirection(localAxis: Vector3): Vector3 = js.native
   
@@ -258,7 +302,7 @@ trait Camera
   /**
     * Gets a ray in the forward direction from the camera.
     * @param length Defines the length of the ray to create
-    * @param transform Defines the transform to apply to the ray, by default the world matrx is used to create a workd space ray
+    * @param transform Defines the transform to apply to the ray, by default the world matrix is used to create a workd space ray
     * @param origin Defines the start point of the ray which defaults to the camera position
     * @returns the forward ray
     */
@@ -352,7 +396,7 @@ trait Camera
   
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
-    * Unlike isInFrustum this cheks the full bounding box
+    * Unlike isInFrustum this checks the full bounding box
     * @param target The object to check
     * @returns true if the object is in frustum otherwise false
     */
@@ -419,10 +463,8 @@ trait Camera
     */
   var minZ: Double = js.native
   
-  /**
-    * Define the mode of the camera (Camera.PERSPECTIVE_CAMERA or Camera.ORTHOGRAPHIC_CAMERA)
-    */
-  var mode: Double = js.native
+  def mode: Double = js.native
+  def mode_=(mode: Double): Unit = js.native
   
   /**
     * Observable triggered when the inputs have been processed.
@@ -444,29 +486,17 @@ trait Camera
     */
   var onViewMatrixChangedObservable: Observable[Camera] = js.native
   
-  /**
-    * Define the current limit on the bottom side for an orthographic camera
-    * In scene unit
-    */
-  var orthoBottom: Nullable[Double] = js.native
+  def orthoBottom: Nullable[Double] = js.native
+  def orthoBottom_=(value: Nullable[Double]): Unit = js.native
   
-  /**
-    * Define the current limit on the left side for an orthographic camera
-    * In scene unit
-    */
-  var orthoLeft: Nullable[Double] = js.native
+  def orthoLeft: Nullable[Double] = js.native
+  def orthoLeft_=(value: Nullable[Double]): Unit = js.native
   
-  /**
-    * Define the current limit on the right side for an orthographic camera
-    * In scene unit
-    */
-  var orthoRight: Nullable[Double] = js.native
+  def orthoRight: Nullable[Double] = js.native
+  def orthoRight_=(value: Nullable[Double]): Unit = js.native
   
-  /**
-    * Define the current limit on the top side for an orthographic camera
-    * In scene unit
-    */
-  var orthoTop: Nullable[Double] = js.native
+  def orthoTop: Nullable[Double] = js.native
+  def orthoTop_=(value: Nullable[Double]): Unit = js.native
   
   /**
     * When set, the camera will render to this render target instead of the default canvas
@@ -480,6 +510,18 @@ trait Camera
     */
   def position: Vector3 = js.native
   def position_=(newPosition: Vector3): Unit = js.native
+  
+  /**
+    * Projection plane tilt around the X axis (horizontal), set in Radians. (default is 0)
+    * Can be used to make vertical lines in world space actually vertical on the screen.
+    * See https://forum.babylonjs.com/t/add-vertical-shift-to-3ds-max-exporter-babylon-cameras/17480
+    */
+  var projectionPlaneTilt: Double = js.native
+  
+  /**
+    * Render pass id used by the camera to render into the main framebuffer
+    */
+  var renderPassId: Double = js.native
   
   /**
     * Restored camera state. You must call storeState() first.
@@ -507,18 +549,29 @@ trait Camera
   def rightCamera: Nullable[FreeCamera] = js.native
   
   /**
-    * Serialiaze the camera setup to a json represention
-    * @returns the JSON representation
+    * The screen area in scene units squared
     */
-  def serialize(): js.Any = js.native
+  def screenArea: Double = js.native
   
   /**
+    * Serialiaze the camera setup to a json representation
+    * @returns the JSON representation
+    */
+  def serialize(): Any = js.native
+  
+  /**
+    * @param mode
+    * @param rigParams
     * @hidden
     */
-  def setCameraRigMode(mode: Double, rigParams: js.Any): Unit = js.native
+  def setCameraRigMode(mode: Double, rigParams: Any): Unit = js.native
   
-  /** @hidden */
-  def setCameraRigParameter(name: String, value: js.Any): Unit = js.native
+  /**
+    * @param name
+    * @param value
+    * @hidden
+    */
+  def setCameraRigParameter(name: String, value: Any): Unit = js.native
   
   /**
     * Store current camera state (fov, position, etc..)

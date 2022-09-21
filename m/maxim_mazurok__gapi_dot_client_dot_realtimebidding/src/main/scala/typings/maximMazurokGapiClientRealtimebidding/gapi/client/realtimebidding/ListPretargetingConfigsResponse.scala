@@ -29,6 +29,6 @@ object ListPretargetingConfigsResponse {
     
     inline def setPretargetingConfigsUndefined: Self = StObject.set(x, "pretargetingConfigs", js.undefined)
     
-    inline def setPretargetingConfigsVarargs(value: PretargetingConfig*): Self = StObject.set(x, "pretargetingConfigs", js.Array(value :_*))
+    inline def setPretargetingConfigsVarargs(value: PretargetingConfig*): Self = StObject.set(x, "pretargetingConfigs", js.Array(value*))
   }
 }

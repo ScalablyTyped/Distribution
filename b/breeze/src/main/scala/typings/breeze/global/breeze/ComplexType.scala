@@ -1,26 +1,25 @@
 package typings.breeze.global.breeze
 
+import typings.breeze.breeze.ComplexTypeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("breeze.ComplexType")
 @js.native
-class ComplexType ()
+open class ComplexType protected ()
   extends StObject
      with typings.breeze.breeze.ComplexType {
-  
-  /* CompleteClass */
-  override def addProperty(dataProperty: typings.breeze.breeze.DataProperty): typings.breeze.breeze.ComplexType = js.native
+  def this(config: ComplexTypeOptions) = this()
   
   /* CompleteClass */
   var complexProperties: js.Array[typings.breeze.breeze.DataProperty] = js.native
   
   /* CompleteClass */
-  var dataProperties: js.Array[typings.breeze.breeze.DataProperty] = js.native
+  var custom: Any = js.native
   
   /* CompleteClass */
-  override def getProperties(): js.Array[typings.breeze.breeze.DataProperty] = js.native
+  var dataProperties: js.Array[typings.breeze.breeze.DataProperty] = js.native
   
   /* CompleteClass */
   var name: String = js.native

@@ -1,8 +1,8 @@
 package typings.materialTabs
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialTabs.tabFoundationMod.MDCTabFoundation
-import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -13,9 +13,9 @@ object tabComponentMod {
   
   @JSImport("@material/tabs/tab/component", "MDCTab")
   @js.native
-  class MDCTab protected () extends MDCComponent[MDCTabFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCTabFoundation, args: js.Any*) = this()
+  open class MDCTab protected () extends MDCComponent[MDCTabFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCTabFoundation, args: Any*) = this()
     
     val computedLeft: Double = js.native
     
@@ -36,10 +36,10 @@ object tabComponentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTab]
+    inline def attachTo(root: typings.std.Element): MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTab]
   }
   
-  type MDCTabFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCTabFoundation], MDCTab]
+  type MDCTabFactory = js.Function2[/* el */ typings.std.Element, /* foundation */ js.UndefOr[MDCTabFoundation], MDCTab]
   
   @js.native
   trait MDCTabSelectedEvent

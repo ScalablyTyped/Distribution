@@ -10,10 +10,10 @@ object socialButtonMod {
   
   @JSImport("@catho/quantum/SocialButton", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SocialButtonProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SocialButtonProps, js.Object, Any]
   
-  type SocialButton = Component[SocialButtonProps, js.Object, js.Any]
+  type SocialButton = Component[SocialButtonProps, js.Object, Any]
   
   trait SocialButtonProps
     extends StObject

@@ -31,7 +31,7 @@ object anon {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setExtends(value: Error): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       

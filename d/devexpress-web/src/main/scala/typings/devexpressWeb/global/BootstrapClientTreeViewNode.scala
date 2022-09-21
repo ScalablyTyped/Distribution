@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientTreeViewNode")
 @js.native
-class BootstrapClientTreeViewNode ()
+open class BootstrapClientTreeViewNode ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientTreeViewNode {
   
@@ -53,7 +53,7 @@ class BootstrapClientTreeViewNode ()
     * Gets the HTML object that contains the current node.
     */
   /* CompleteClass */
-  override def GetHtmlElement(): js.Any = js.native
+  override def GetHtmlElement(): Any = js.native
   
   /**
     * Gets the CSS class of the icon displayed by the node.

@@ -10,15 +10,12 @@ Retrying made simple, easy and async
 | ------------------ | :-------------: |
 | Full name          | async-retry-ng |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 1770340 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1564561.0 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/turist-cloud/async-retry-ng#readme)
-- [Bugs](https://github.com/turist-cloud/async-retry-ng/issues)
-- [Repository](https://github.com/turist-cloud/async-retry-ng)
 - [Npm](https://www.npmjs.com/package/async-retry-ng)
     
 

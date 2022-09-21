@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("proton-native", "RadioButtons")
 @js.native
-class RadioButtons protected ()
-  extends Component[RadioButtonsProps, js.Object, js.Any] {
+open class RadioButtons protected ()
+  extends Component[RadioButtonsProps, js.Object, Any] {
   def this(props: RadioButtonsProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RadioButtonsProps, context: js.Any) = this()
+  def this(props: RadioButtonsProps, context: Any) = this()
 }
 /* static members */
 object RadioButtons {

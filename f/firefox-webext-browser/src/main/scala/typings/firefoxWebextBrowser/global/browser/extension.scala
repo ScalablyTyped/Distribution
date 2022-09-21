@@ -20,6 +20,7 @@ object `extension` {
   
   /**
     * Returns the JavaScript 'window' object for the background page running inside the current extension. Returns null if the extension has no background page.
+    * Not supported on manifest versions above 2.
     */
   inline def getBackgroundPage(): Window | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")().asInstanceOf[Window | Unit]
   
@@ -27,6 +28,8 @@ object `extension` {
   /**
     * Converts a relative path within an extension install directory to a fully-qualified URL.
     * @param path A path to a resource within an extension expressed relative to its install directory.
+    * @deprecated Please use `runtime.getURL`.
+    * Not supported on manifest versions above 2.
     * @returns The fully-qualified URL to the resource.
     */
   inline def getURL(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")(path.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -58,6 +61,8 @@ object `extension` {
   /* extension properties */
   /**
     * Set for the lifetime of a callback if an ansychronous extension api has resulted in an error. If no error has occured lastError will be `undefined`.
+    * @deprecated Please use `runtime.lastError`.
+    * Not supported on manifest versions above 2.
     */
   @JSGlobal("browser.extension.lastError")
   @js.native
@@ -75,9 +80,9 @@ object `extension` {
   val onRequest: js.UndefOr[
     WebExtEvent[
       js.Function3[
-        /* request */ js.Any, 
+        /* request */ Any, 
         /* sender */ MessageSender, 
-        /* sendResponse */ js.Function1[/* response */ js.UndefOr[js.Any], Unit], 
+        /* sendResponse */ js.Function1[/* response */ js.UndefOr[Any], Unit], 
         Unit
       ]
     ]
@@ -94,9 +99,9 @@ object `extension` {
   val onRequestExternal: js.UndefOr[
     WebExtEvent[
       js.Function3[
-        /* request */ js.Any, 
+        /* request */ Any, 
         /* sender */ MessageSender, 
-        /* sendResponse */ js.Function1[/* response */ js.UndefOr[js.Any], Unit], 
+        /* sendResponse */ js.Function1[/* response */ js.UndefOr[Any], Unit], 
         Unit
       ]
     ]

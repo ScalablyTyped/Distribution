@@ -10,10 +10,10 @@ A fast linked list (good for queues, stacks, etc.)
 | ------------------ | :-------------: |
 | Full name          | fast-list |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 110447 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 26503.0 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/fast-list#readme)

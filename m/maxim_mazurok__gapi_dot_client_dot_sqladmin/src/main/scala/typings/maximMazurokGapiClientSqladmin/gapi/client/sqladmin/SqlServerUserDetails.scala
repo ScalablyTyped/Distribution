@@ -29,6 +29,6 @@ object SqlServerUserDetails {
     
     inline def setServerRolesUndefined: Self = StObject.set(x, "serverRoles", js.undefined)
     
-    inline def setServerRolesVarargs(value: String*): Self = StObject.set(x, "serverRoles", js.Array(value :_*))
+    inline def setServerRolesVarargs(value: String*): Self = StObject.set(x, "serverRoles", js.Array(value*))
   }
 }

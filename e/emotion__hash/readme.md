@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__hash
 
-Typings are for version 0.8.0
+Typings are for version 0.9.0
 
 ## Library description:
 A MurmurHash2 implementation
@@ -10,15 +10,15 @@ A MurmurHash2 implementation
 | ------------------ | :-------------: |
 | Full name          | @emotion/hash |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 41 |
-| # downloads        | 215178692 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3.2982890333333332E7 |
+| # stars            | 15226.0 |
 
 ## Links
-- [Homepage](https://github.com/emotion-js/emotion#readme)
+- [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)
 - [Bugs](https://github.com/emotion-js/emotion/issues)
-- [Repository](https://github.com/emotion-js/emotion)
+- [Repository](https://github.com/emotion-js/emotion/tree/main)
 - [Npm](https://www.npmjs.com/package/%40emotion%2Fhash)
     
 

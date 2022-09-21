@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ThreatHitsResource extends StObject {
   
-  def create(request: Callback, body: ThreatHit): Request[js.Object] = js.native
+  def create(request: Callback, body: GoogleSecuritySafebrowsingV4ThreatHit): Request[js.Object] = js.native
   /** Reports a Safe Browsing threat list hit to Google. Only projects with TRUSTED_REPORTER visibility can use this method. */
   def create(request: Fields): Request[js.Object] = js.native
 }

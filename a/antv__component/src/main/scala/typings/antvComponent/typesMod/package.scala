@@ -1,31 +1,26 @@
 package typings.antvComponent.typesMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.antvGBase.interfacesMod.IGroup
+import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BaseCfg = org.scalablytyped.runtime.StringDictionary[js.Any]
+type BaseCfg = StringDictionary[Any]
 
-type LocationCfg = org.scalablytyped.runtime.StringDictionary[js.Any]
+type LocationCfg = StringDictionary[Any]
 
-type LooseObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type LooseObject = StringDictionary[Any]
 
 /** 用于返回样式 ShapeAttrs 的 Callback 函数定义 */
-type ShapeAttrsCallback = js.Function3[
-/* item */ js.Any, 
-/* index */ scala.Double, 
-/* items */ js.Array[js.Any], 
-typings.antvGBase.typesMod.ShapeAttrs]
+type ShapeAttrsCallback = js.Function3[/* item */ Any, /* index */ Double, /* items */ js.Array[Any], ShapeAttrs]
 
 type avoidCallback = js.Function3[
-/* isVertical */ scala.Boolean, 
-/* labelGroup */ typings.antvGBase.interfacesMod.IGroup, 
-/* limitLength */ js.UndefOr[scala.Double], 
-scala.Boolean]
+/* isVertical */ Boolean, 
+/* labelGroup */ IGroup, 
+/* limitLength */ js.UndefOr[Double], 
+Boolean]
 
-type formatterCallback = js.Function3[
-/* text */ java.lang.String, 
-/* item */ typings.antvComponent.typesMod.ListItem, 
-/* index */ scala.Double, 
-js.Any]
+type formatterCallback = js.Function3[/* text */ String, /* item */ ListItem, /* index */ Double, Any]

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new solid particle vertex
   */
-class SolidParticleVertex ()
+open class SolidParticleVertex ()
   extends StObject
      with typings.babylonjs.BABYLON.SolidParticleVertex

@@ -18,15 +18,15 @@ trait `11` extends StObject {
     element: Node,
     valueAccessor: js.Function0[MaybeSubscribable[String | BindingTemplateOptions]],
     allBindings: AllBindings,
-    viewModel: js.Any,
-    bindingContext: BindingContext[js.Any]
+    viewModel: Any,
+    bindingContext: BindingContext[Any]
   ): Unit
 }
 object `11` {
   
   inline def apply(
     init: (Node, js.Function0[MaybeSubscribable[String | BindingTemplateOptions]]) => BindingHandlerControlsDescendant,
-    update: (Node, js.Function0[MaybeSubscribable[String | BindingTemplateOptions]], AllBindings, js.Any, BindingContext[js.Any]) => Unit
+    update: (Node, js.Function0[MaybeSubscribable[String | BindingTemplateOptions]], AllBindings, Any, BindingContext[Any]) => Unit
   ): `11` = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction2(init), update = js.Any.fromFunction5(update))
     __obj.asInstanceOf[`11`]
@@ -39,7 +39,7 @@ object `11` {
     ): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
     inline def setUpdate(
-      value: (Node, js.Function0[MaybeSubscribable[String | BindingTemplateOptions]], AllBindings, js.Any, BindingContext[js.Any]) => Unit
+      value: (Node, js.Function0[MaybeSubscribable[String | BindingTemplateOptions]], AllBindings, Any, BindingContext[Any]) => Unit
     ): Self = StObject.set(x, "update", js.Any.fromFunction5(value))
   }
 }

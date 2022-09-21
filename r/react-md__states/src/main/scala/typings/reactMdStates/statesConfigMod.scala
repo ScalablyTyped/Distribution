@@ -3,8 +3,8 @@ package typings.reactMdStates
 import typings.react.mod.Context
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
 import typings.reactMdTransition.typesMod.TransitionTimeout
-import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,46 +15,7 @@ object statesConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  object StatesConfig {
-    
-    inline def apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren: StatesConfigProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/states/types/StatesConfig", "StatesConfig")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes.children")
-      @js.native
-      def children: js.Any = js.native
-      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes.disableProgrammaticRipple")
-      @js.native
-      def disableProgrammaticRipple: js.Any = js.native
-      inline def disableProgrammaticRipple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableProgrammaticRipple")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes.disableRipple")
-      @js.native
-      def disableRipple: js.Any = js.native
-      inline def disableRipple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableRipple")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes.rippleClassNames")
-      @js.native
-      def rippleClassNames: js.Any = js.native
-      inline def rippleClassNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rippleClassNames")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes.rippleTimeout")
-      @js.native
-      def rippleTimeout: js.Any = js.native
-      inline def rippleTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rippleTimeout")(x.asInstanceOf[js.Any])
-    }
-  }
+  inline def StatesConfig(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren: StatesConfigProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("StatesConfig")(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@react-md/states/types/StatesConfig", "StatesConfigContext")
   @js.native

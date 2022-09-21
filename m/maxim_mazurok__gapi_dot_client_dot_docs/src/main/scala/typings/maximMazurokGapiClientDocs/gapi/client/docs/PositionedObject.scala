@@ -23,7 +23,7 @@ trait PositionedObject extends StObject {
   var suggestedPositionedObjectPropertiesChanges: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedPositionedObjectProperties}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.PositionedObject & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.PositionedObject & TopLevel[Any]
   ] = js.undefined
 }
 object PositionedObject {
@@ -47,7 +47,7 @@ object PositionedObject {
     
     inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
     
-    inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+    inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
     
     inline def setSuggestedInsertionId(value: String): Self = StObject.set(x, "suggestedInsertionId", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object PositionedObject {
     inline def setSuggestedPositionedObjectPropertiesChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedPositionedObjectProperties}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.PositionedObject & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.PositionedObject & TopLevel[Any]
     ): Self = StObject.set(x, "suggestedPositionedObjectPropertiesChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedPositionedObjectPropertiesChangesUndefined: Self = StObject.set(x, "suggestedPositionedObjectPropertiesChanges", js.undefined)

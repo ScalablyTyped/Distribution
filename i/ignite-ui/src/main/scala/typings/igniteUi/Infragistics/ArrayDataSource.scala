@@ -27,7 +27,7 @@ trait ArrayDataSource extends StObject {
   /**
     * Returns a list of all transaction objects that are either pending, or have been committed in the data source.
     */
-  def allTransactions(): js.Array[js.Any] = js.native
+  def allTransactions(): js.Array[Any] = js.native
   
   /**
     * Analyzes the dataSource setting to automatically determine the type of the data source. Returns the data source type. See settings.type
@@ -98,7 +98,7 @@ trait ArrayDataSource extends StObject {
   /**
     * Returns the current normalized/transformed and paged/filtered/sorted data, i.e. the dataView
     */
-  def dataView(): js.Array[js.Any] = js.native
+  def dataView(): js.Array[Any] = js.native
   
   /**
     * Deletes a row from the data source.
@@ -147,7 +147,7 @@ trait ArrayDataSource extends StObject {
     * @param fields an array of fields that will be searched.
     */
   def filterByText(expression: String): Unit = js.native
-  def filterByText(expression: String, fields: js.Array[js.Any]): Unit = js.native
+  def filterByText(expression: String, fields: js.Array[Any]): Unit = js.native
   
   /**
     * Gets/sets a list of filtering settings
@@ -160,7 +160,7 @@ trait ArrayDataSource extends StObject {
   /**
     * Returns filtered data if local filtering is applied. If filtering is not applied OR type of filtering is remote returns undefined.
     */
-  def filteredData(): js.Array[js.Any] = js.native
+  def filteredData(): js.Array[Any] = js.native
   
   /**
     * Returns a record by a specified key (requires that primaryKey is set in the settings)
@@ -192,12 +192,12 @@ trait ArrayDataSource extends StObject {
   /**
     * Returns collection of data and non-data(grouped) records. Flat representation of hierarchical data
     */
-  def groupByData(): js.Array[js.Any] = js.native
+  def groupByData(): js.Array[Any] = js.native
   
   /**
     * Returns the current normalized/transformed and paged/filtered/sorted group-by data
     */
-  def groupByDataView(): js.Array[js.Any] = js.native
+  def groupByDataView(): js.Array[Any] = js.native
   
   /**
     * Gets / sets if the response from the server contains a property which specifies the total number of records in the server-side backend
@@ -229,7 +229,7 @@ trait ArrayDataSource extends StObject {
     * @param exprs array of sorting expressions. If not set check expressions defined in sorting settings
     */
   def isGroupByApplied(): Boolean = js.native
-  def isGroupByApplied(exprs: js.Array[js.Any]): Boolean = js.native
+  def isGroupByApplied(exprs: js.Array[Any]): Boolean = js.native
   
   /**
     * Check whether the specified gorupby record is collapsed
@@ -289,7 +289,7 @@ trait ArrayDataSource extends StObject {
   /**
     * Returns a list of all transaction objects that are pending to be committed or rolled back to the data source
     */
-  def pendingTransactions(): js.Array[js.Any] = js.native
+  def pendingTransactions(): js.Array[Any] = js.native
   
   /**
     * Gets /sets the page index that should be persisted. For now ONLY when filtering is applied and call explicitly DataBind.
@@ -513,5 +513,5 @@ trait ArrayDataSource extends StObject {
   /**
     * Returns collection of data and non-data(grouped) records. Returns only visible records(children of collapsed grouped records are not included in the collection)
     */
-  def visibleGroupByData(): js.Array[js.Any] = js.native
+  def visibleGroupByData(): js.Array[Any] = js.native
 }

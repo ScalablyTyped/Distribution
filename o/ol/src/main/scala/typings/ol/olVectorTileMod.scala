@@ -14,7 +14,7 @@ object olVectorTileMod {
   
   @JSImport("ol/VectorTile", JSImport.Default)
   @js.native
-  class default protected () extends VectorTile {
+  open class default protected () extends VectorTile {
     def this(
       tileCoord: TileCoord,
       state: TileState,

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.JitterEffect")
 @js.native
-class JitterEffect protected ()
+open class JitterEffect protected ()
   extends StObject
      with typings.phaser.spine.JitterEffect {
   def this(jitterX: Double, jitterY: Double) = this()

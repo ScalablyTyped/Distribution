@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("nearley", "Grammar")
   @js.native
-  class Grammar protected () extends StObject {
+  open class Grammar protected () extends StObject {
     def this(rules: js.Array[Rule]) = this()
     
     var byName: StringDictionary[js.Array[Rule]] = js.native
@@ -34,7 +34,7 @@ object mod {
   
   @JSImport("nearley", "Parser")
   @js.native
-  class Parser protected () extends StObject {
+  open class Parser protected () extends StObject {
     def this(grammar: Grammar) = this()
     def this(grammar: Grammar, options: ParserOptions) = this()
     
@@ -51,7 +51,7 @@ object mod {
       */
     def feed(chunk: String): this.type = js.native
     
-    def finish(): js.Array[js.Any] = js.native
+    def finish(): js.Array[Any] = js.native
     
     var grammar: Grammar = js.native
     
@@ -69,7 +69,7 @@ object mod {
       * Note that this is undefined before the first feed() call.
       * It isn't typed as `any[] | undefined` to spare you the null checks when it's definitely an array.
       */
-    var results: js.Array[js.Any] = js.native
+    var results: js.Array[Any] = js.native
     
     def save(): Dictkey = js.native
   }
@@ -91,9 +91,9 @@ object mod {
   
   @JSImport("nearley", "Rule")
   @js.native
-  class Rule protected () extends StObject {
-    def this(name: String, symbols: js.Array[js.Any]) = this()
-    def this(name: String, symbols: js.Array[js.Any], postprocess: Postprocessor) = this()
+  open class Rule protected () extends StObject {
+    def this(name: String, symbols: js.Array[Any]) = this()
+    def this(name: String, symbols: js.Array[Any], postprocess: Postprocessor) = this()
     
     var id: Double = js.native
     
@@ -101,7 +101,7 @@ object mod {
     
     var postprocess: js.UndefOr[Postprocessor] = js.native
     
-    var symbols: js.Array[js.Any] = js.native
+    var symbols: js.Array[Any] = js.native
     
     def toString(withCursorAt: Double): String = js.native
   }
@@ -141,7 +141,7 @@ object mod {
       
       inline def setParserRules(value: js.Array[ParserRule]): Self = StObject.set(x, "ParserRules", value.asInstanceOf[js.Any])
       
-      inline def setParserRulesVarargs(value: ParserRule*): Self = StObject.set(x, "ParserRules", js.Array(value :_*))
+      inline def setParserRulesVarargs(value: ParserRule*): Self = StObject.set(x, "ParserRules", js.Array(value*))
       
       inline def setParserStart(value: String): Self = StObject.set(x, "ParserStart", value.asInstanceOf[js.Any])
     }
@@ -175,7 +175,7 @@ object mod {
     def save(): LexerState = js.native
   }
   
-  type LexerState = StringDictionary[js.Any]
+  type LexerState = StringDictionary[Any]
   
   trait ParserOptions extends StObject {
     
@@ -208,11 +208,11 @@ object mod {
     
     var postprocess: js.UndefOr[Postprocessor] = js.undefined
     
-    var symbols: js.Array[js.Any]
+    var symbols: js.Array[Any]
   }
   object ParserRule {
     
-    inline def apply(name: String, symbols: js.Array[js.Any]): ParserRule = {
+    inline def apply(name: String, symbols: js.Array[Any]): ParserRule = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParserRule]
     }
@@ -222,19 +222,19 @@ object mod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setPostprocess(
-        value: (/* data */ js.Array[js.Any], /* reference */ js.UndefOr[Double], /* wantedBy */ js.UndefOr[js.Object]) => Unit
+        value: (/* data */ js.Array[Any], /* reference */ js.UndefOr[Double], /* wantedBy */ js.UndefOr[js.Object]) => Unit
       ): Self = StObject.set(x, "postprocess", js.Any.fromFunction3(value))
       
       inline def setPostprocessUndefined: Self = StObject.set(x, "postprocess", js.undefined)
       
-      inline def setSymbols(value: js.Array[js.Any]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: js.Array[Any]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      inline def setSymbolsVarargs(value: js.Any*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+      inline def setSymbolsVarargs(value: Any*): Self = StObject.set(x, "symbols", js.Array(value*))
     }
   }
   
   type Postprocessor = js.Function3[
-    /* data */ js.Array[js.Any], 
+    /* data */ js.Array[Any], 
     /* reference */ js.UndefOr[Double], 
     /* wantedBy */ js.UndefOr[js.Object], 
     Unit

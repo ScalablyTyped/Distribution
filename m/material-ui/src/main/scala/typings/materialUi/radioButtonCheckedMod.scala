@@ -10,10 +10,10 @@ object radioButtonCheckedMod {
   
   @JSImport("material-ui/svg-icons/toggle/radio-button-checked", JSImport.Default)
   @js.native
-  class default () extends ToggleRadioButtonChecked
+  open class default () extends ToggleRadioButtonChecked
   
   @JSImport("material-ui/svg-icons/toggle/radio-button-checked", "ToggleRadioButtonChecked")
   @js.native
-  class ToggleRadioButtonChecked ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ToggleRadioButtonChecked ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

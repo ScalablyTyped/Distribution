@@ -10,9 +10,9 @@ object componentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getRenderedComponents(out: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRenderedComponents")(out.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getRenderedComponents(out: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRenderedComponents")(out.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def writeInitComponentsCode(fromOut: js.Any, targetOut: js.Any, shouldIncludeAll: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeInitComponentsCode")(fromOut.asInstanceOf[js.Any], targetOut.asInstanceOf[js.Any], shouldIncludeAll.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeInitComponentsCode(fromOut: Any, targetOut: Any, shouldIncludeAll: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeInitComponentsCode")(fromOut.asInstanceOf[js.Any], targetOut.asInstanceOf[js.Any], shouldIncludeAll.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Component = typings.marko.componentMod.Component
 }

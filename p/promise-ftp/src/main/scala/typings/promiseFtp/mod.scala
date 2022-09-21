@@ -2,8 +2,7 @@ package typings.promiseFtp
 
 import typings.ftp.mod.ListingElement
 import typings.ftp.mod.Options
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.promiseFtp.anon.Code
 import typings.promiseFtp.promiseFtpStrings.`Bad sequence of commands`
 import typings.promiseFtp.promiseFtpStrings.`CanApostrophet open data connection`
@@ -23,8 +22,7 @@ import typings.promiseFtp.promiseFtpStrings.`Service not availableComma closing 
 import typings.promiseFtp.promiseFtpStrings.`Syntax error Slash Command unrecognized`
 import typings.promiseFtp.promiseFtpStrings.`Syntax error in parameters or arguments`
 import typings.promiseFtpCommon.mod.STATUSES
-import typings.std.Date
-import typings.std.Error
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +31,7 @@ object mod {
   
   @JSImport("promise-ftp", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PromiseFtp
   
@@ -125,30 +123,30 @@ object mod {
   
   @JSImport("promise-ftp", "FtpConnectionError")
   @js.native
-  class FtpConnectionError ()
+  open class FtpConnectionError ()
     extends typings.promiseFtpCommon.mod.FtpConnectionError
   
   @JSImport("promise-ftp", "FtpReconnectError")
   @js.native
-  class FtpReconnectError ()
+  open class FtpReconnectError ()
     extends typings.promiseFtpCommon.mod.FtpReconnectError {
     def this(disconnectError: String) = this()
-    def this(disconnectError: Error) = this()
+    def this(disconnectError: js.Error) = this()
     def this(disconnectError: String, connectError: String) = this()
-    def this(disconnectError: String, connectError: Error) = this()
+    def this(disconnectError: String, connectError: js.Error) = this()
+    def this(disconnectError: js.Error, connectError: String) = this()
+    def this(disconnectError: js.Error, connectError: js.Error) = this()
     def this(disconnectError: Unit, connectError: String) = this()
-    def this(disconnectError: Unit, connectError: Error) = this()
-    def this(disconnectError: Error, connectError: String) = this()
-    def this(disconnectError: Error, connectError: Error) = this()
+    def this(disconnectError: Unit, connectError: js.Error) = this()
     def this(disconnectError: String, connectError: String, onCwd: Boolean) = this()
+    def this(disconnectError: String, connectError: js.Error, onCwd: Boolean) = this()
     def this(disconnectError: String, connectError: Unit, onCwd: Boolean) = this()
-    def this(disconnectError: String, connectError: Error, onCwd: Boolean) = this()
+    def this(disconnectError: js.Error, connectError: String, onCwd: Boolean) = this()
+    def this(disconnectError: js.Error, connectError: js.Error, onCwd: Boolean) = this()
+    def this(disconnectError: js.Error, connectError: Unit, onCwd: Boolean) = this()
     def this(disconnectError: Unit, connectError: String, onCwd: Boolean) = this()
+    def this(disconnectError: Unit, connectError: js.Error, onCwd: Boolean) = this()
     def this(disconnectError: Unit, connectError: Unit, onCwd: Boolean) = this()
-    def this(disconnectError: Unit, connectError: Error, onCwd: Boolean) = this()
-    def this(disconnectError: Error, connectError: String, onCwd: Boolean) = this()
-    def this(disconnectError: Error, connectError: Unit, onCwd: Boolean) = this()
-    def this(disconnectError: Error, connectError: Error, onCwd: Boolean) = this()
   }
   
   @JSImport("promise-ftp", "STATUSES")
@@ -191,8 +189,8 @@ object mod {
       * @param destPath - the path of the file to create or append to.
       * @param useCompression - defaults to false.
       */
-    def append(input: ReadableStream, destPath: String): typings.bluebird.mod.^[Unit] = js.native
-    def append(input: ReadableStream, destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
+    def append(input: ReadableStream[Any], destPath: String): typings.bluebird.mod.^[Unit] = js.native
+    def append(input: ReadableStream[Any], destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
     
     /**
       * Set the transfer data type to ASCII.
@@ -241,7 +239,7 @@ object mod {
       * was an error, true if there was an error but the client didn't recieve it,
       * or false if there was no error.
       */
-    def end(): typings.bluebird.mod.^[Error | Boolean] = js.native
+    def end(): typings.bluebird.mod.^[js.Error | Boolean] = js.native
     
     /**
       * Retrieve a file at path from the server.
@@ -249,8 +247,8 @@ object mod {
       * @param useCompression - defaults to false.
       * @returns a stream which empties to the contents of the specified file.
       */
-    def get(path: String): typings.bluebird.mod.^[ReadableStream] = js.native
-    def get(path: String, useCompression: Boolean): typings.bluebird.mod.^[ReadableStream] = js.native
+    def get(path: String): typings.bluebird.mod.^[ReadableStream[Any]] = js.native
+    def get(path: String, useCompression: Boolean): typings.bluebird.mod.^[ReadableStream[Any]] = js.native
     
     def getConnectionStatus(): STATUSES = js.native
     
@@ -261,7 +259,7 @@ object mod {
       * be retrieved.
       * @returns the last modified date at the specified path.
       */
-    def lastMod(path: String): typings.bluebird.mod.^[Date] = js.native
+    def lastMod(path: String): typings.bluebird.mod.^[js.Date] = js.native
     
     /**
       * Retrieve the directory listing of path.
@@ -317,8 +315,8 @@ object mod {
       * @param destPath - the path of the file to write to.
       * @param useCompression - defaults to false.
       */
-    def put(input: ReadableStream, destPath: String): typings.bluebird.mod.^[Unit] = js.native
-    def put(input: ReadableStream, destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
+    def put(input: ReadableStream[Any], destPath: String): typings.bluebird.mod.^[Unit] = js.native
+    def put(input: ReadableStream[Any], destPath: String, useCompression: Boolean): typings.bluebird.mod.^[Unit] = js.native
     
     /**
       * Optional "standard" commands (RFC 959)

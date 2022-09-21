@@ -8,5 +8,5 @@ object updateAliasOutputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/UpdateAliasOutput", "UpdateAliasOutput")
   @js.native
-  val UpdateAliasOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateAliasOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

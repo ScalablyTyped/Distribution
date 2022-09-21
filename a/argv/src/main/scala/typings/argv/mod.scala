@@ -19,24 +19,24 @@ object mod extends Shortcut {
   
   trait args extends StObject {
     
-    var options: StringDictionary[js.Any]
+    var options: StringDictionary[Any]
     
     var targets: js.Array[String]
   }
   object args {
     
-    inline def apply(options: StringDictionary[js.Any], targets: js.Array[String]): args = {
+    inline def apply(options: StringDictionary[Any], targets: js.Array[String]): args = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
       __obj.asInstanceOf[args]
     }
     
     extension [Self <: args](x: Self) {
       
-      inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
     }
   }
   
@@ -67,10 +67,10 @@ object mod extends Shortcut {
     def run(argv: js.Array[String]): args = js.native
     
     // Creates custom type function
-    def `type`(name: String): js.Any = js.native
-    def `type`(name: String, callback: typeFunction): js.Any = js.native
-    def `type`(name: StringDictionary[typeFunction]): js.Any = js.native
-    def `type`(name: StringDictionary[typeFunction], callback: typeFunction): js.Any = js.native
+    def `type`(name: String): Any = js.native
+    def `type`(name: String, callback: typeFunction): Any = js.native
+    def `type`(name: StringDictionary[typeFunction]): Any = js.native
+    def `type`(name: StringDictionary[typeFunction], callback: typeFunction): Any = js.native
     
     // Setting version number, and auto setting version option
     def version(v: String): typings.argv.mod.argv = js.native
@@ -144,6 +144,6 @@ object mod extends Shortcut {
   @js.native
   trait typeFunction extends StObject {
     
-    def apply(value: js.Any, arglist: js.Any*): js.Any = js.native
+    def apply(value: Any, arglist: Any*): Any = js.native
   }
 }

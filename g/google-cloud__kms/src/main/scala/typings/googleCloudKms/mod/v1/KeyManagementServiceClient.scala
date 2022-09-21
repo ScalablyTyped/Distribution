@@ -22,32 +22,31 @@ import typings.googleCloudKms.mod.v1.KeyManagementServiceClient.ListCryptoKeysCa
 import typings.googleCloudKms.mod.v1.KeyManagementServiceClient.ListCryptoKeysRequest
 import typings.googleCloudKms.mod.v1.KeyManagementServiceClient.ListKeyRingsCallback
 import typings.googleCloudKms.mod.v1.KeyManagementServiceClient.ListKeyRingsRequest
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@google-cloud/kms", "v1.KeyManagementServiceClient")
 @js.native
-class KeyManagementServiceClient () extends StObject {
+open class KeyManagementServiceClient () extends StObject {
   def this(options: ConfigurationObject) = this()
   
-  def asymmetricSign(request: AsymmetricSignRequest): js.Promise[js.Tuple3[AsymmetricSignResponse, js.Any, js.Any]] = js.native
+  def asymmetricSign(request: AsymmetricSignRequest): js.Promise[js.Tuple3[AsymmetricSignResponse, Any, Any]] = js.native
   def asymmetricSign(request: AsymmetricSignRequest, callback: AsymmetricSignCallback): Unit = js.native
-  def asymmetricSign(request: AsymmetricSignRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[AsymmetricSignResponse, js.Any, js.Any]] = js.native
+  def asymmetricSign(request: AsymmetricSignRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[AsymmetricSignResponse, Any, Any]] = js.native
   def asymmetricSign(request: AsymmetricSignRequest, gaxOpts: CallOptions, callback: AsymmetricSignCallback): Unit = js.native
   
   // This needs to be after the declaration that has callback but not options.
-  def createCryptoKey(request: CreateCryptoKeyRequest): js.Promise[js.Tuple3[CryptoKey, js.Any, js.Any]] = js.native
+  def createCryptoKey(request: CreateCryptoKeyRequest): js.Promise[js.Tuple3[CryptoKey, Any, Any]] = js.native
   def createCryptoKey(request: CreateCryptoKeyRequest, callback: CreateCryptoKeyCallback): Unit = js.native
-  def createCryptoKey(request: CreateCryptoKeyRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[CryptoKey, js.Any, js.Any]] = js.native
+  def createCryptoKey(request: CreateCryptoKeyRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[CryptoKey, Any, Any]] = js.native
   def createCryptoKey(request: CreateCryptoKeyRequest, gaxOpts: CallOptions, callback: CreateCryptoKeyCallback): Unit = js.native
   
   // This needs to be after the declaration that has callback but not options.
-  def createKeyRing(request: CreateKeyRingRequest): js.Promise[js.Tuple3[KeyRing, js.Any, js.Any]] = js.native
+  def createKeyRing(request: CreateKeyRingRequest): js.Promise[js.Tuple3[KeyRing, Any, Any]] = js.native
   def createKeyRing(request: CreateKeyRingRequest, callback: CreateKeyRingCallback): Unit = js.native
-  def createKeyRing(request: CreateKeyRingRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[KeyRing, js.Any, js.Any]] = js.native
+  def createKeyRing(request: CreateKeyRingRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[KeyRing, Any, Any]] = js.native
   def createKeyRing(request: CreateKeyRingRequest, gaxOpts: CallOptions, callback: CreateKeyRingCallback): Unit = js.native
   
   def cryptoKeyPath(project: String, location: String, keyRing: String, cryptoKey: String): String = js.native
@@ -56,26 +55,26 @@ class KeyManagementServiceClient () extends StObject {
   
   def cryptoKeyVersionPath(project: String, location: String, keyRing: String, cryptoKey: String, cryptoKeyVersion: String): String = js.native
   
-  def decrypt(request: DecryptRequest): js.Promise[js.Tuple3[DecryptResponse, js.Any, js.Any]] = js.native
+  def decrypt(request: DecryptRequest): js.Promise[js.Tuple3[DecryptResponse, Any, Any]] = js.native
   def decrypt(request: DecryptRequest, callback: DecryptCallback): Unit = js.native
-  def decrypt(request: DecryptRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[DecryptResponse, js.Any, js.Any]] = js.native
+  def decrypt(request: DecryptRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[DecryptResponse, Any, Any]] = js.native
   def decrypt(request: DecryptRequest, gaxOpts: CallOptions, callback: DecryptCallback): Unit = js.native
   
-  def encrypt(request: EncryptRequest): js.Promise[js.Tuple3[EncryptResponse, js.Any, js.Any]] = js.native
+  def encrypt(request: EncryptRequest): js.Promise[js.Tuple3[EncryptResponse, Any, Any]] = js.native
   def encrypt(request: EncryptRequest, callback: EncryptCallback): Unit = js.native
-  def encrypt(request: EncryptRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[EncryptResponse, js.Any, js.Any]] = js.native
+  def encrypt(request: EncryptRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[EncryptResponse, Any, Any]] = js.native
   def encrypt(request: EncryptRequest, gaxOpts: CallOptions, callback: EncryptCallback): Unit = js.native
   
   def keyRingPath(project: String, location: String, keyRing: String): String = js.native
   
-  def listCryptoKeys(request: ListCryptoKeysRequest): js.Promise[js.Tuple3[js.Array[CryptoKey], js.Any, js.Any]] = js.native
+  def listCryptoKeys(request: ListCryptoKeysRequest): js.Promise[js.Tuple3[js.Array[CryptoKey], Any, Any]] = js.native
   def listCryptoKeys(request: ListCryptoKeysRequest, callback: ListCryptoKeysCallback): Unit = js.native
-  def listCryptoKeys(request: ListCryptoKeysRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[js.Array[CryptoKey], js.Any, js.Any]] = js.native
+  def listCryptoKeys(request: ListCryptoKeysRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[js.Array[CryptoKey], Any, Any]] = js.native
   def listCryptoKeys(request: ListCryptoKeysRequest, gaxOpts: CallOptions, callback: ListCryptoKeysCallback): Unit = js.native
   
-  def listKeyRings(request: ListKeyRingsRequest): js.Promise[js.Tuple3[js.Array[KeyRing], js.Any, js.Any]] = js.native
+  def listKeyRings(request: ListKeyRingsRequest): js.Promise[js.Tuple3[js.Array[KeyRing], Any, Any]] = js.native
   def listKeyRings(request: ListKeyRingsRequest, callback: ListKeyRingsCallback): Unit = js.native
-  def listKeyRings(request: ListKeyRingsRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[js.Array[KeyRing], js.Any, js.Any]] = js.native
+  def listKeyRings(request: ListKeyRingsRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[js.Array[KeyRing], Any, Any]] = js.native
   def listKeyRings(request: ListKeyRingsRequest, gaxOpts: CallOptions, callback: ListKeyRingsCallback): Unit = js.native
   
   def locationPath(project: String, location: String): String = js.native
@@ -83,8 +82,8 @@ class KeyManagementServiceClient () extends StObject {
 object KeyManagementServiceClient {
   
   type AsymmetricSignCallback = js.Function2[
-    /* err */ Error | Null, 
-    /* apiResponse */ js.Tuple3[AsymmetricSignResponse, js.Any, js.Any], 
+    /* err */ js.Error | Null, 
+    /* apiResponse */ js.Tuple3[AsymmetricSignResponse, Any, Any], 
     Unit
   ]
   
@@ -138,7 +137,7 @@ object KeyManagementServiceClient {
     
     var projectId: js.UndefOr[String] = js.undefined
     
-    var promise: js.UndefOr[js.Any] = js.undefined
+    var promise: js.UndefOr[Any] = js.undefined
     
     var servicePath: js.UndefOr[String] = js.undefined
   }
@@ -171,7 +170,7 @@ object KeyManagementServiceClient {
       
       inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
       
-      inline def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
@@ -181,7 +180,7 @@ object KeyManagementServiceClient {
     }
   }
   
-  type CreateCryptoKeyCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.Tuple3[CryptoKey, js.Any, js.Any], Unit]
+  type CreateCryptoKeyCallback = js.Function2[/* err */ js.Error | Null, /* apiResponse */ js.Tuple3[CryptoKey, Any, Any], Unit]
   
   trait CreateCryptoKeyRequest extends StObject {
     
@@ -214,7 +213,7 @@ object KeyManagementServiceClient {
     }
   }
   
-  type CreateKeyRingCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.Tuple3[KeyRing, js.Any, js.Any], Unit]
+  type CreateKeyRingCallback = js.Function2[/* err */ js.Error | Null, /* apiResponse */ js.Tuple3[KeyRing, Any, Any], Unit]
   
   trait CreateKeyRingRequest extends StObject {
     
@@ -244,8 +243,8 @@ object KeyManagementServiceClient {
   }
   
   type DecryptCallback = js.Function2[
-    /* err */ Error | Null, 
-    /* apiResponse */ js.Tuple3[DecryptResponse, js.Any, js.Any], 
+    /* err */ js.Error | Null, 
+    /* apiResponse */ js.Tuple3[DecryptResponse, Any, Any], 
     Unit
   ]
   
@@ -294,8 +293,8 @@ object KeyManagementServiceClient {
   }
   
   type EncryptCallback = js.Function2[
-    /* err */ Error | Null, 
-    /* apiResponse */ js.Tuple3[EncryptResponse, js.Any, js.Any], 
+    /* err */ js.Error | Null, 
+    /* apiResponse */ js.Tuple3[EncryptResponse, Any, Any], 
     Unit
   ]
   
@@ -348,8 +347,8 @@ object KeyManagementServiceClient {
   }
   
   type ListCryptoKeysCallback = js.Function2[
-    /* err */ Error | Null, 
-    /* apiResponse */ js.Tuple3[js.Array[CryptoKey], js.Any, js.Any], 
+    /* err */ js.Error | Null, 
+    /* apiResponse */ js.Tuple3[js.Array[CryptoKey], Any, Any], 
     Unit
   ]
   
@@ -383,8 +382,8 @@ object KeyManagementServiceClient {
   }
   
   type ListKeyRingsCallback = js.Function2[
-    /* err */ Error | Null, 
-    /* apiResponse */ js.Tuple3[js.Array[KeyRing], js.Any, js.Any], 
+    /* err */ js.Error | Null, 
+    /* apiResponse */ js.Tuple3[js.Array[KeyRing], Any, Any], 
     Unit
   ]
   

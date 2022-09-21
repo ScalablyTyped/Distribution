@@ -2,7 +2,7 @@ package typings.bdfjs
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -159,13 +159,13 @@ object mod {
       
       inline def setBitmap(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
       
-      inline def setBitmapVarargs(value: js.Array[Double]*): Self = StObject.set(x, "bitmap", js.Array(value :_*))
+      inline def setBitmapVarargs(value: js.Array[Double]*): Self = StObject.set(x, "bitmap", js.Array(value*))
       
       inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
       inline def setBytes(value: js.Array[Double]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      inline def setBytesVarargs(value: Double*): Self = StObject.set(x, "bytes", js.Array(value :_*))
+      inline def setBytesVarargs(value: Double*): Self = StObject.set(x, "bytes", js.Array(value*))
       
       inline def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       

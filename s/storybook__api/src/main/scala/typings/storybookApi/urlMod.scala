@@ -1,16 +1,16 @@
 package typings.storybookApi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reachRouter.mod.NavigateOptions
 import typings.storybookApi.anon.Path
 import typings.storybookApi.mod.ModuleFn
+import typings.storybookRouter.mod.NavigateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMod {
   
-  @JSImport("@storybook/api/dist/modules/url", "init")
+  @JSImport("@storybook/api/dist/ts3.9/modules/url", "init")
   @js.native
   val init: ModuleFn = js.native
   
@@ -22,7 +22,7 @@ object urlMod {
     
     def getUrlState(): Path
     
-    def navigateUrl(url: String, options: NavigateOptions[js.Object]): Unit
+    def navigateUrl(url: String, options: NavigateOptions): Unit
     
     def setQueryParams(input: QueryParams): Unit
   }
@@ -31,7 +31,7 @@ object urlMod {
     inline def apply(
       getQueryParam: String => js.UndefOr[String],
       getUrlState: () => Path,
-      navigateUrl: (String, NavigateOptions[js.Object]) => Unit,
+      navigateUrl: (String, NavigateOptions) => Unit,
       setQueryParams: QueryParams => Unit
     ): SubAPI = {
       val __obj = js.Dynamic.literal(getQueryParam = js.Any.fromFunction1(getQueryParam), getUrlState = js.Any.fromFunction0(getUrlState), navigateUrl = js.Any.fromFunction2(navigateUrl), setQueryParams = js.Any.fromFunction1(setQueryParams))
@@ -44,7 +44,7 @@ object urlMod {
       
       inline def setGetUrlState(value: () => Path): Self = StObject.set(x, "getUrlState", js.Any.fromFunction0(value))
       
-      inline def setNavigateUrl(value: (String, NavigateOptions[js.Object]) => Unit): Self = StObject.set(x, "navigateUrl", js.Any.fromFunction2(value))
+      inline def setNavigateUrl(value: (String, NavigateOptions) => Unit): Self = StObject.set(x, "navigateUrl", js.Any.fromFunction2(value))
       
       inline def setSetQueryParams(value: QueryParams => Unit): Self = StObject.set(x, "setQueryParams", js.Any.fromFunction1(value))
     }

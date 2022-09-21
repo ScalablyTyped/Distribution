@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Clusterer")
 @js.native
-class Clusterer_ ()
+open class Clusterer_ ()
   extends typings.yandexMaps.mod.Clusterer_ {
   def this(options: IClustererOptions) = this()
 }

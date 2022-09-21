@@ -13,7 +13,7 @@ object prinvokehistoryMod {
   /**
     * Default Constructor.
     */
-  class PRInvokeHistory () extends InvokeHistory {
+  open class PRInvokeHistory () extends InvokeHistory {
     /**
       * Construct from an {@link Invoke} message.
       *
@@ -29,7 +29,7 @@ object prinvokehistoryMod {
     /**
       * @hidden
       */
-    /* private */ var first: js.Any = js.native
+    /* private */ var first: Any = js.native
     
     /**
       * Get initial piece's index.
@@ -54,6 +54,6 @@ object prinvokehistoryMod {
     /**
       * @hidden
       */
-    /* private */ var last: js.Any = js.native
+    /* private */ var last: Any = js.native
   }
 }

@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("datadog-winston", JSImport.Namespace)
   @js.native
-  class ^ protected () extends DatadogWinston {
+  open class ^ protected () extends DatadogWinston {
     def this(options: DatadogTransportOptions) = this()
   }
   
@@ -24,6 +24,8 @@ object mod {
     var ddtags: js.UndefOr[String] = js.undefined
     
     var hostname: js.UndefOr[String] = js.undefined
+    
+    var intakeRegion: js.UndefOr[String] = js.undefined
     
     var service: js.UndefOr[String] = js.undefined
   }
@@ -50,6 +52,10 @@ object mod {
       
       inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
+      inline def setIntakeRegion(value: String): Self = StObject.set(x, "intakeRegion", value.asInstanceOf[js.Any])
+      
+      inline def setIntakeRegionUndefined: Self = StObject.set(x, "intakeRegion", js.undefined)
+      
       inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
       inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
@@ -61,6 +67,6 @@ object mod {
     extends typings.winstonTransport.mod.^ {
     
     @JSName("log")
-    var log_DatadogWinston: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], Unit]] = js.native
+    var log_DatadogWinston: js.UndefOr[js.Function2[/* info */ Any, /* next */ js.Function0[Unit], Unit]] = js.native
   }
 }

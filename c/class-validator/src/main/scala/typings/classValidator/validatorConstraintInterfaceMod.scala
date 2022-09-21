@@ -18,7 +18,7 @@ object validatorConstraintInterfaceMod {
     /**
       * Method to be called to perform custom validation over given value.
       */
-    def validate(value: js.Any): js.Promise[Boolean] | Boolean = js.native
-    def validate(value: js.Any, validationArguments: ValidationArguments): js.Promise[Boolean] | Boolean = js.native
+    def validate(value: Any): js.Promise[Boolean] | Boolean = js.native
+    def validate(value: Any, validationArguments: ValidationArguments): js.Promise[Boolean] | Boolean = js.native
   }
 }

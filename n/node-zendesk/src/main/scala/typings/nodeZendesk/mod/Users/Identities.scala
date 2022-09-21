@@ -117,7 +117,7 @@ object Identities {
       
       inline def setIdentities(value: js.Array[typings.nodeZendesk.mod.Users.Identities.ResponseModel]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
       
-      inline def setIdentitiesVarargs(value: typings.nodeZendesk.mod.Users.Identities.ResponseModel*): Self = StObject.set(x, "identities", js.Array(value :_*))
+      inline def setIdentitiesVarargs(value: typings.nodeZendesk.mod.Users.Identities.ResponseModel*): Self = StObject.set(x, "identities", js.Array(value*))
     }
   }
   
@@ -129,26 +129,26 @@ object Identities {
     def create(
       userId: ZendeskID,
       identity: typings.nodeZendesk.mod.Users.Identities.CreatePayload,
-      cb: ZendeskCallback[js.Any, js.Any]
+      cb: ZendeskCallback[Any, Any]
     ): typings.nodeZendesk.mod.Users.Identities.ResponseModel = js.native
     
-    def delete(userId: ZendeskID, identityId: ZendeskID): js.Promise[js.Any] = js.native
+    def delete(userId: ZendeskID, identityId: ZendeskID): js.Promise[Any] = js.native
     /** Deleting Identities */
-    def delete(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
+    def delete(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[Any, Any]): Any = js.native
     
     def list(userId: ZendeskID): js.Promise[typings.nodeZendesk.mod.Users.Identities.ListPayload] = js.native
     /** Listing Identities */
-    def list(userId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): typings.nodeZendesk.mod.Users.Identities.ListPayload = js.native
+    def list(userId: ZendeskID, cb: ZendeskCallback[Any, Any]): typings.nodeZendesk.mod.Users.Identities.ListPayload = js.native
     
     def makePrimary(userId: ZendeskID, identityId: ZendeskID): js.Promise[typings.nodeZendesk.mod.Users.Identities.ListPayload] = js.native
-    def makePrimary(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): typings.nodeZendesk.mod.Users.Identities.ListPayload = js.native
+    def makePrimary(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[Any, Any]): typings.nodeZendesk.mod.Users.Identities.ListPayload = js.native
     
-    def requestVerification(userId: ZendeskID, identityId: ZendeskID): js.Promise[js.Any] = js.native
-    def requestVerification(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): js.Any = js.native
+    def requestVerification(userId: ZendeskID, identityId: ZendeskID): js.Promise[Any] = js.native
+    def requestVerification(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[Any, Any]): Any = js.native
     
     def show(userId: ZendeskID, identityId: ZendeskID): js.Promise[typings.nodeZendesk.mod.Users.Identities.ResponsePayload] = js.native
     /** Viewing Identities */
-    def show(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = js.native
+    def show(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[Any, Any]): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = js.native
     
     def update(
       userId: ZendeskID,
@@ -160,11 +160,11 @@ object Identities {
       userId: ZendeskID,
       identityId: ZendeskID,
       identity: typings.nodeZendesk.mod.Users.Identities.UpdatePayload,
-      cb: ZendeskCallback[js.Any, js.Any]
+      cb: ZendeskCallback[Any, Any]
     ): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = js.native
     
     def verify(userId: ZendeskID, identityId: ZendeskID): js.Promise[typings.nodeZendesk.mod.Users.Identities.ResponsePayload] = js.native
-    def verify(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[js.Any, js.Any]): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = js.native
+    def verify(userId: ZendeskID, identityId: ZendeskID, cb: ZendeskCallback[Any, Any]): typings.nodeZendesk.mod.Users.Identities.ResponsePayload = js.native
   }
   
   trait ResponseModel

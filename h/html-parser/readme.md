@@ -10,10 +10,10 @@ HTML/XML parser with less explosions
 | ------------------ | :-------------: |
 | Full name          | html-parser |
 | Keywords           | html, xml, parser, explosion |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 130189 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6597.0 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://github.com/tmont/html-parser#readme)

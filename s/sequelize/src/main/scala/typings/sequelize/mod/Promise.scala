@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("sequelize", "Promise")
 @js.native
-class Promise[R] protected ()
+open class Promise[R] protected ()
   extends typings.bluebird.mod.^[R] {
   /**
     * Create a new promise. The passed in function will receive functions
@@ -22,10 +22,10 @@ class Promise[R] protected ()
     */
   def this(callback: js.Function3[
         /* resolve */ js.Function1[
-          /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
+          /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any]], 
           Unit
         ], 
-        /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+        /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
         /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]], 
         Unit
       ]) = this()

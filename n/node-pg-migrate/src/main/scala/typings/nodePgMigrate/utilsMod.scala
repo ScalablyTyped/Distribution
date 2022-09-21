@@ -25,14 +25,14 @@ object utilsMod {
   
   @JSImport("node-pg-migrate/dist/utils", "StringIdGenerator")
   @js.native
-  class StringIdGenerator () extends StObject {
+  open class StringIdGenerator () extends StObject {
     def this(chars: String) = this()
     
-    /* private */ val chars: js.Any = js.native
+    /* private */ val chars: Any = js.native
     
-    /* private */ var ids: js.Any = js.native
+    /* private */ var ids: Any = js.native
     
-    /* private */ var increment: js.Any = js.native
+    /* private */ var increment: Any = js.native
     
     def next(): String = js.native
   }
@@ -70,13 +70,14 @@ object utilsMod {
   inline def formatLines(lines: js.Array[String], replace: Unit, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLines")(lines.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def formatParams(params: js.Array[FunctionParam], mOptions: MigrationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatParams")(params.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def formatParams(params: Unit, mOptions: MigrationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatParams")(params.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getMigrationTableSchema(options: RunnerOption): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMigrationTableSchema")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getSchemas(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")().asInstanceOf[js.Array[String]]
   inline def getSchemas(schema: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def getSchemas(schema: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemas")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  inline def intersection[T](list1: js.Array[T], list2: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(list1.asInstanceOf[js.Any], list2.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def makeComment(`object`: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeComment")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def makeComment(`object`: String, name: String, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeComment")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]

@@ -1,6 +1,5 @@
 package typings.uirouterCore
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,11 +79,11 @@ object rejectFactoryMod {
   
   @JSImport("@uirouter/core/lib/transition/rejectFactory", "Rejection")
   @js.native
-  class Rejection protected () extends StObject {
+  open class Rejection protected () extends StObject {
     def this(`type`: Double) = this()
     def this(`type`: Double, message: String) = this()
-    def this(`type`: Double, message: String, detail: js.Any) = this()
-    def this(`type`: Double, message: Unit, detail: js.Any) = this()
+    def this(`type`: Double, message: String, detail: Any) = this()
+    def this(`type`: Double, message: Unit, detail: Any) = this()
     
     /** @internal */
     @JSName("$id")
@@ -97,7 +96,7 @@ object rejectFactoryMod {
       * For example, if an error was thrown from a hook, the `detail` will be the `Error` object.
       * If a hook returned a rejected promise, the `detail` will be the rejected value.
       */
-    var detail: js.Any = js.native
+    var detail: Any = js.native
     
     /**
       * A message describing the rejection
@@ -111,7 +110,7 @@ object rejectFactoryMod {
       */
     var redirected: Boolean = js.native
     
-    def toPromise(): js.Promise[js.Any] = js.native
+    def toPromise(): js.Promise[Any] = js.native
     
     /**
       * The type of the rejection.
@@ -137,22 +136,22 @@ object rejectFactoryMod {
     
     /** Returns a Rejection due to aborted transition */
     inline def aborted(): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("aborted")().asInstanceOf[Rejection]
-    inline def aborted(detail: js.Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("aborted")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
+    inline def aborted(detail: Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("aborted")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
     
     /** Returns a Rejection due to aborted transition */
     inline def errored(): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("errored")().asInstanceOf[Rejection]
-    inline def errored(detail: js.Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("errored")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
+    inline def errored(detail: Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("errored")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
     
     /** Returns a Rejection due to ignored transition */
     inline def ignored(): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")().asInstanceOf[Rejection]
-    inline def ignored(detail: js.Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
+    inline def ignored(detail: Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
     
     /** Returns a Rejection due to invalid transition */
     inline def invalid(): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Rejection]
-    inline def invalid(detail: js.Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
+    inline def invalid(detail: Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
     
     /** Returns true if the obj is a rejected promise created from the `asPromise` factory */
-    inline def isRejectionPromise(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejectionPromise")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isRejectionPromise(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejectionPromise")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns a Rejection
@@ -164,18 +163,18 @@ object rejectFactoryMod {
       * @returns `detail` if it is already a `Rejection`, else returns an ERROR Rejection.
       */
     inline def normalize(): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[Rejection]
-    inline def normalize(detail: js.Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
-    inline def normalize(detail: Error): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
+    inline def normalize(detail: js.Error): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
+    inline def normalize(detail: Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
     inline def normalize(detail: Rejection): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
     
     /** Returns a Rejection due to redirected transition */
     inline def redirected(): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("redirected")().asInstanceOf[Rejection]
-    inline def redirected(detail: js.Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("redirected")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
+    inline def redirected(detail: Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("redirected")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
     
     /** Returns a Rejection due to transition superseded */
     inline def superseded(): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("superseded")().asInstanceOf[Rejection]
-    inline def superseded(detail: js.Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
-    inline def superseded(detail: js.Any, options: js.Any): Rejection = (^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rejection]
-    inline def superseded(detail: Unit, options: js.Any): Rejection = (^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rejection]
+    inline def superseded(detail: Any): Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any]).asInstanceOf[Rejection]
+    inline def superseded(detail: Any, options: Any): Rejection = (^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rejection]
+    inline def superseded(detail: Unit, options: Any): Rejection = (^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rejection]
   }
 }

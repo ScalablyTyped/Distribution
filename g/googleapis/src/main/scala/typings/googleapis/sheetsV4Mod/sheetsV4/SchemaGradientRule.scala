@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A rule that applies a gradient color scale format, based on the
-  * interpolation points listed. The format of a cell will vary based on its
-  * contents as compared to the values of the interpolation points.
-  */
 trait SchemaGradientRule extends StObject {
   
   /**

@@ -17,7 +17,7 @@ object edit {
       * If specified, either a value or function evaluated before editing cell.
       * If falsy, then editing of cell is not allowed.
       */
-    var cellEditableCondition: js.UndefOr[js.Any | (js.Function1[/* $scope */ IScope, Boolean])] = js.undefined
+    var cellEditableCondition: js.UndefOr[Any | (js.Function1[/* $scope */ IScope, Boolean])] = js.undefined
     
     /** A filter that you would like to apply to the values in the options list of the dropdown */
     var editDropdownFilter: js.UndefOr[String] = js.undefined
@@ -115,7 +115,7 @@ object edit {
     
     extension [Self <: typings.uiGrid.mod.edit.IColumnDef[?], TEntity](x: Self & typings.uiGrid.mod.edit.IColumnDef[TEntity]) {
       
-      inline def setCellEditableCondition(value: js.Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
+      inline def setCellEditableCondition(value: Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
       
       inline def setCellEditableConditionFunction1(value: /* $scope */ IScope => Boolean): Self = StObject.set(x, "cellEditableCondition", js.Any.fromFunction1(value))
       
@@ -133,7 +133,7 @@ object edit {
       
       inline def setEditDropdownOptionsArrayUndefined: Self = StObject.set(x, "editDropdownOptionsArray", js.undefined)
       
-      inline def setEditDropdownOptionsArrayVarargs(value: IEditDropdown*): Self = StObject.set(x, "editDropdownOptionsArray", js.Array(value :_*))
+      inline def setEditDropdownOptionsArrayVarargs(value: IEditDropdown*): Self = StObject.set(x, "editDropdownOptionsArray", js.Array(value*))
       
       inline def setEditDropdownRowEntityOptionsArrayPath(value: String): Self = StObject.set(x, "editDropdownRowEntityOptionsArrayPath", value.asInstanceOf[js.Any])
       
@@ -171,11 +171,11 @@ object edit {
     
     var id: Double | String
     
-    var value: js.Any
+    var value: Any
   }
   object IEditDropdown {
     
-    inline def apply(id: Double | String, value: js.Any): IEditDropdown = {
+    inline def apply(id: Double | String, value: Any): IEditDropdown = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEditDropdown]
     }
@@ -184,7 +184,7 @@ object edit {
       
       inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,7 +211,7 @@ object edit {
       * If specified, either a value or function to be used by all columns before editing.
       * If falsy, then editing of cell is not allowed
       */
-    var cellEditableCondition: js.UndefOr[js.Any | (js.Function1[/* $scope */ IScope, Boolean])] = js.undefined
+    var cellEditableCondition: js.UndefOr[Any | (js.Function1[/* $scope */ IScope, Boolean])] = js.undefined
     
     /**
       * If specified, cellTemplate to use as the editor for all columns.
@@ -245,7 +245,7 @@ object edit {
     
     extension [Self <: typings.uiGrid.mod.edit.IGridOptions](x: Self) {
       
-      inline def setCellEditableCondition(value: js.Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
+      inline def setCellEditableCondition(value: Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
       
       inline def setCellEditableConditionFunction1(value: /* $scope */ IScope => Boolean): Self = StObject.set(x, "cellEditableCondition", js.Any.fromFunction1(value))
       
@@ -313,8 +313,8 @@ object edit {
   type afterCellEditHandler[TEntity] = js.Function4[
     /* rowEntity */ TEntity, 
     /* colDef */ IColumnDefOf[TEntity], 
-    /* newValue */ js.Any, 
-    /* oldValue */ js.Any, 
+    /* newValue */ Any, 
+    /* oldValue */ Any, 
     Unit
   ]
   

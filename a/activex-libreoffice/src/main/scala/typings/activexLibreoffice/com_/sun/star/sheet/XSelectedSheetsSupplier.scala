@@ -24,7 +24,7 @@ object XSelectedSheetsSupplier {
     SelectedSheets: SafeArray[Double],
     acquire: () => Unit,
     getSelectedSheets: () => SafeArray[Double],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSelectedSheetsSupplier = {
     val __obj = js.Dynamic.literal(SelectedSheets = SelectedSheets.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getSelectedSheets = js.Any.fromFunction0(getSelectedSheets), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

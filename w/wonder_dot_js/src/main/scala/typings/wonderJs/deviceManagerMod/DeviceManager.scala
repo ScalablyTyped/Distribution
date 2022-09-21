@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015/device/DeviceManager", "DeviceManager")
 @js.native
-class DeviceManager () extends StObject {
+open class DeviceManager () extends StObject {
   
   var alphaToCoverage: Boolean = js.native
   
   var blend: Boolean = js.native
   
-  def clear(options: js.Any): Unit = js.native
+  def clear(options: Any): Unit = js.native
   
   var contextConfig: ContextConfigData = js.native
   
@@ -49,7 +49,7 @@ class DeviceManager () extends StObject {
   
   def setBlendFuncSeparate(blendFuncSeparate: js.Array[EBlendFunc]): Unit = js.native
   
-  def setColorWrite(writeRed: js.Any, writeGreen: js.Any, writeBlue: js.Any, writeAlpha: js.Any): Unit = js.native
+  def setColorWrite(writeRed: Any, writeGreen: Any, writeBlue: Any, writeAlpha: Any): Unit = js.native
   
   def setHardwareScaling(level: Double): Unit = js.native
   
@@ -72,5 +72,5 @@ object DeviceManager {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+  inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
 }

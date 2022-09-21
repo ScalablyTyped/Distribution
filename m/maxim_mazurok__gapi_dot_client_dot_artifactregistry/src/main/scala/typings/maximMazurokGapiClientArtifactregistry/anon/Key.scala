@@ -28,7 +28,16 @@ trait Key extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The name of the parent resource where the tag will be created. */
+  /** The field to order the results by. */
+  var orderBy: js.UndefOr[String] = js.undefined
+  
+  /** The maximum number of artifacts to return. */
+  var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /** The next_page_token value returned from a previous list request, if any. */
+  var pageToken: js.UndefOr[String] = js.undefined
+  
+  /** Required. The name of the parent resource whose docker images will be listed. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -36,9 +45,6 @@ trait Key extends StObject {
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** The tag id to use for this repository. */
-  var tagId: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -83,6 +89,18 @@ object Key {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
@@ -92,10 +110,6 @@ object Key {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setTagId(value: String): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
-    
-    inline def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

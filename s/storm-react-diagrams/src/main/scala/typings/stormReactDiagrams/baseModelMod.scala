@@ -13,16 +13,16 @@ object baseModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/models/BaseModel", "BaseModel")
   @js.native
-  class BaseModel[X /* <: BaseEntity[BaseListener[js.Any]] */, T /* <: BaseModelListener */] () extends BaseEntity[T] {
+  open class BaseModel[X /* <: BaseEntity[BaseListener[Any]] */, T /* <: BaseModelListener */] () extends BaseEntity[T] {
     def this(`type`: String) = this()
     def this(`type`: String, id: String) = this()
     def this(`type`: Unit, id: String) = this()
     
-    def deSerialize(ob: js.Any, engine: DiagramEngine): Unit = js.native
+    def deSerialize(ob: Any, engine: DiagramEngine): Unit = js.native
     
     def getParent(): X = js.native
     
-    def getSelectedEntities(): js.Array[BaseModel[js.Any, T]] = js.native
+    def getSelectedEntities(): js.Array[BaseModel[Any, T]] = js.native
     
     def getType(): String = js.native
     
@@ -44,13 +44,10 @@ object baseModelMod {
   
   trait BaseModelListener
     extends StObject
-       with BaseListener[js.Any] {
+       with BaseListener[Any] {
     
     var entityRemoved: js.UndefOr[
-        js.Function1[
-          /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[js.Any]], this.type]], 
-          Unit
-        ]
+        js.Function1[/* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[Any]], this.type]], Unit]
       ] = js.undefined
     
     var selectionChanged: js.UndefOr[js.Function1[/* event */ BaseEventBaseModelBaseEnt, Unit]] = js.undefined
@@ -64,9 +61,7 @@ object baseModelMod {
     
     extension [Self <: BaseModelListener](x: Self) {
       
-      inline def setEntityRemoved(
-        value: /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]] => Unit
-      ): Self = StObject.set(x, "entityRemoved", js.Any.fromFunction1(value))
+      inline def setEntityRemoved(value: /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]] => Unit): Self = StObject.set(x, "entityRemoved", js.Any.fromFunction1(value))
       
       inline def setEntityRemovedUndefined: Self = StObject.set(x, "entityRemoved", js.undefined)
       

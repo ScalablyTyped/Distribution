@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the feeling associated with the entire text or entities in the
-  * text.
-  */
 trait SchemaSentiment extends StObject {
   
   /**
-    * A non-negative number in the [0, +inf) range, which represents the
-    * absolute magnitude of sentiment regardless of score (positive or
-    * negative).
+    * A non-negative number in the [0, +inf) range, which represents the absolute magnitude of sentiment regardless of score (positive or negative).
     */
-  var magnitude: js.UndefOr[Double] = js.undefined
+  var magnitude: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Sentiment score between -1.0 (negative sentiment) and 1.0 (positive
-    * sentiment).
+    * Sentiment score between -1.0 (negative sentiment) and 1.0 (positive sentiment).
     */
-  var score: js.UndefOr[Double] = js.undefined
+  var score: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaSentiment {
   
@@ -34,9 +27,13 @@ object SchemaSentiment {
     
     inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
     
+    inline def setMagnitudeNull: Self = StObject.set(x, "magnitude", null)
+    
     inline def setMagnitudeUndefined: Self = StObject.set(x, "magnitude", js.undefined)
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    
+    inline def setScoreNull: Self = StObject.set(x, "score", null)
     
     inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }

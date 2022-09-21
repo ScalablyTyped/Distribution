@@ -29,9 +29,9 @@ object input {
       endDocument: () => Unit,
       endElement: String => Unit,
       ignorableWhitespace: String => Unit,
-      initialize: SeqEquiv[js.Any] => Unit,
+      initialize: SeqEquiv[Any] => Unit,
       processingInstruction: (String, String) => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setDocumentLocator: XLocator => Unit,
       startDocument: () => Unit,
@@ -131,7 +131,7 @@ object input {
       getUidByIndex: Double => Double,
       getValueByIndex: Double => String,
       getValueByUidName: (Double, String) => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XAttributes = {
       val __obj = js.Dynamic.literal(Length = Length.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getIndexByQName = js.Any.fromFunction1(getIndexByQName), getIndexByUidName = js.Any.fromFunction2(getIndexByUidName), getLength = js.Any.fromFunction0(getLength), getLocalNameByIndex = js.Any.fromFunction1(getLocalNameByIndex), getQNameByIndex = js.Any.fromFunction1(getQNameByIndex), getTypeByIndex = js.Any.fromFunction1(getTypeByIndex), getUidByIndex = js.Any.fromFunction1(getUidByIndex), getValueByIndex = js.Any.fromFunction1(getValueByIndex), getValueByUidName = js.Any.fromFunction2(getValueByUidName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -262,7 +262,7 @@ object input {
       getUid: () => Double,
       ignorableWhitespace: String => Unit,
       processingInstruction: (String, String) => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       startChildElement: (Double, String, XAttributes) => XElement
     ): XElement = {
@@ -325,7 +325,7 @@ object input {
       acquire: () => Unit,
       getUidByUri: String => Double,
       getUriByUid: Double => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XNamespaceMapping = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getUidByUri = js.Any.fromFunction1(getUidByUri), getUriByUid = js.Any.fromFunction1(getUriByUid), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -381,7 +381,7 @@ object input {
       acquire: () => Unit,
       endDocument: () => Unit,
       processingInstruction: (String, String) => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setDocumentLocator: XLocator => Unit,
       startDocument: XNamespaceMapping => Unit,

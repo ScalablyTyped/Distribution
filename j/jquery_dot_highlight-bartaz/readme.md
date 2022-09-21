@@ -9,15 +9,12 @@ This is just my little place to play with JavaScript. Will contain bigger and sm
 | ------------------ | :-------------: |
 | Full name          | jquery.highlight-bartaz |
 | Keywords           | jquery, jquery.highlight |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 78.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/bartaz/sandbox.js#readme)
-- [Bugs](https://github.com/bartaz/sandbox.js/issues)
-- [Repository](https://github.com/bartaz/sandbox.js)
 - [Npm](https://www.npmjs.com/package/jquery.highlight-bartaz)
     
 

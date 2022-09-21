@@ -71,7 +71,7 @@ object XDispatchProviderInterceptor {
     getSlaveDispatchProvider: () => XDispatchProvider,
     queryDispatch: (URL, String, Double) => XDispatch,
     queryDispatches: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setMasterDispatchProvider: XDispatchProvider => Unit,
     setSlaveDispatchProvider: XDispatchProvider => Unit

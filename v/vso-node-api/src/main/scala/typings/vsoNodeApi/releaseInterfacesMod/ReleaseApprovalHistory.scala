@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,9 +13,9 @@ trait ReleaseApprovalHistory extends StObject {
   
   var comments: String
   
-  var createdOn: Date
+  var createdOn: js.Date
   
-  var modifiedOn: Date
+  var modifiedOn: js.Date
   
   var revision: Double
 }
@@ -26,8 +25,8 @@ object ReleaseApprovalHistory {
     approver: IdentityRef,
     changedBy: IdentityRef,
     comments: String,
-    createdOn: Date,
-    modifiedOn: Date,
+    createdOn: js.Date,
+    modifiedOn: js.Date,
     revision: Double
   ): ReleaseApprovalHistory = {
     val __obj = js.Dynamic.literal(approver = approver.asInstanceOf[js.Any], changedBy = changedBy.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], createdOn = createdOn.asInstanceOf[js.Any], modifiedOn = modifiedOn.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
@@ -42,9 +41,9 @@ object ReleaseApprovalHistory {
     
     inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
-    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: js.Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }

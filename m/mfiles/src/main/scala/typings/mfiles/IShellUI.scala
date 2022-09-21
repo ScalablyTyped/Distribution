@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IShellUI extends StObject {
   
-  def CreatePersistentBrowserContent(url: String, parameters: js.Any): Double = js.native
+  def CreatePersistentBrowserContent(url: String, parameters: Any): Double = js.native
   
   def DestroyPersistentContent(sessionHandle: Double): Unit = js.native
   
@@ -15,7 +15,7 @@ trait IShellUI extends StObject {
   
   def GetObjectTypeIconURL(objtype: Double): String = js.native
   
-  def NotifyVaultEntry(ID: String, data1: js.Any, data2: js.Any): js.Any = js.native
+  def NotifyVaultEntry(ID: String, data1: Any, data2: Any): Any = js.native
   
   val ServerVault: IVault = js.native
   
@@ -24,7 +24,7 @@ trait IShellUI extends StObject {
   def ShowMessage(message: String): Double = js.native
   def ShowMessage(message: IMessage): Double = js.native
   
-  def ShowPopupDashboard(dashboardID: String, waitUntilClosed: Boolean, data: js.Any): Unit = js.native
+  def ShowPopupDashboard(dashboardID: String, waitUntilClosed: Boolean, data: Any): Unit = js.native
   
   val Vault: IVault = js.native
   

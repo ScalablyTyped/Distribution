@@ -10,10 +10,10 @@ object screenRotationMod {
   
   @JSImport("material-ui/svg-icons/device/screen-rotation", JSImport.Default)
   @js.native
-  class default () extends DeviceScreenRotation
+  open class default () extends DeviceScreenRotation
   
   @JSImport("material-ui/svg-icons/device/screen-rotation", "DeviceScreenRotation")
   @js.native
-  class DeviceScreenRotation ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceScreenRotation ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

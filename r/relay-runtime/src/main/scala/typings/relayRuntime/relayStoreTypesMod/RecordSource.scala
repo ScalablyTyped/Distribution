@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RecordSource extends StObject {
   
-  def get(dataID: DataID): js.UndefOr[Record | Null]
+  // tslint:disable-next-line:no-unnecessary-generics
+  def get[T /* <: js.Object */](dataID: DataID): js.UndefOr[Record[T] | Null]
   
   def getRecordIDs(): js.Array[DataID]
   
@@ -19,17 +20,17 @@ trait RecordSource extends StObject {
   
   def size(): Double
   
-  def toJSON(): StringDictionary[Record]
+  def toJSON(): StringDictionary[Record[js.Object]]
 }
 object RecordSource {
   
   inline def apply(
-    get: DataID => js.UndefOr[Record | Null],
+    get: DataID => js.UndefOr[Record[Any] | Null],
     getRecordIDs: () => js.Array[DataID],
     getStatus: DataID => RecordState,
     has: DataID => Boolean,
     size: () => Double,
-    toJSON: () => StringDictionary[Record]
+    toJSON: () => StringDictionary[Record[js.Object]]
   ): RecordSource = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getRecordIDs = js.Any.fromFunction0(getRecordIDs), getStatus = js.Any.fromFunction1(getStatus), has = js.Any.fromFunction1(has), size = js.Any.fromFunction0(size), toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[RecordSource]
@@ -37,7 +38,7 @@ object RecordSource {
   
   extension [Self <: RecordSource](x: Self) {
     
-    inline def setGet(value: DataID => js.UndefOr[Record | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: DataID => js.UndefOr[Record[Any] | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setGetRecordIDs(value: () => js.Array[DataID]): Self = StObject.set(x, "getRecordIDs", js.Any.fromFunction0(value))
     
@@ -47,6 +48,6 @@ object RecordSource {
     
     inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     
-    inline def setToJSON(value: () => StringDictionary[Record]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => StringDictionary[Record[js.Object]]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

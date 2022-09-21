@@ -47,7 +47,7 @@ object X3DDisplay {
     acquire: () => Unit,
     getFloor: () => XPropertySet,
     getWall: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): X3DDisplay = {
     val __obj = js.Dynamic.literal(Floor = Floor.asInstanceOf[js.Any], Wall = Wall.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getFloor = js.Any.fromFunction0(getFloor), getWall = js.Any.fromFunction0(getWall), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

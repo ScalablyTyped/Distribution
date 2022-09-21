@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataSourceSchemaModel
   extends StObject
-     with /* index */ StringDictionary[js.Any] {
+     with /* index */ StringDictionary[Any] {
   
-  var fields: js.UndefOr[js.Any] = js.undefined
+  var fields: js.UndefOr[Any] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
 }
@@ -22,7 +22,7 @@ object DataSourceSchemaModel {
   
   extension [Self <: DataSourceSchemaModel](x: Self) {
     
-    inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     

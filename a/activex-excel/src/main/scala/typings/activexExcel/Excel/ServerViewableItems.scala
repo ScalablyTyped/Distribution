@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ServerViewableItems extends StObject {
   
-  def apply(Index: Double): js.Any = js.native
+  def apply(Index: Double): Any = js.native
   
-  def Add(Obj: js.Any): js.Any = js.native
+  def Add(Obj: Any): Any = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -21,9 +21,9 @@ trait ServerViewableItems extends StObject {
   
   def DeleteAll(): Unit = js.native
   
-  def Item(Index: Double): js.Any = js.native
+  def Item(Index: Double): Any = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): js.Any = js.native
+  def _Default(Index: Any): Any = js.native
 }

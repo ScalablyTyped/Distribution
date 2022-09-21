@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ActiveLayerInfoConstructor
   extends StObject
-     with Instantiable0[ActiveLayerInfo]
+     with /**
+  * ActiveLayerInfo is added to or removed from the collection of activeLayerInfos as layers become visible or invisible in the view.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html)
+  */
+Instantiable0[ActiveLayerInfo]
      with Instantiable1[/* properties */ ActiveLayerInfoProperties, ActiveLayerInfo]

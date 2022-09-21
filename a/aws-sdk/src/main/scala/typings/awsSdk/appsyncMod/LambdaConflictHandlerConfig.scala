@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LambdaConflictHandlerConfig extends StObject {
   
   /**
-    * The Arn for the Lambda function to use as the Conflict Handler.
+    * The Amazon Resource Name (ARN) for the Lambda function to use as the Conflict Handler.
     */
   var lambdaConflictHandlerArn: js.UndefOr[String] = js.undefined
 }

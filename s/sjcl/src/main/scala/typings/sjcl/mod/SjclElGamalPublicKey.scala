@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sjcl", "SjclElGamalPublicKey")
 @js.native
-class SjclElGamalPublicKey () extends SjclECCPublicKey {
+open class SjclElGamalPublicKey () extends SjclECCPublicKey {
   
   def kem(paranoia: Double): Tag = js.native
 }

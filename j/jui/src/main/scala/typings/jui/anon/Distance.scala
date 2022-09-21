@@ -18,7 +18,7 @@ trait Distance extends StObject {
     */
   var distance: js.UndefOr[Double] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.undefined
+  var event: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {Integer} [hideDuration=500]
@@ -62,7 +62,7 @@ trait Distance extends StObject {
     */
   var timeout: js.UndefOr[Double] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var tpl: js.UndefOr[Any] = js.undefined
 }
 object Distance {
   
@@ -77,7 +77,7 @@ object Distance {
     
     inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
@@ -109,7 +109,7 @@ object Distance {
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }

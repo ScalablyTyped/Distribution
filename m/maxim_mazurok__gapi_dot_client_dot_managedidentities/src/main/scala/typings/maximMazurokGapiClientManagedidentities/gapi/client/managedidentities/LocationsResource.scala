@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedidentities
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientManagedidentities.anon.Alt
+import typings.maximMazurokGapiClientManagedidentities.anon.Callback
 import typings.maximMazurokGapiClientManagedidentities.anon.PageSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait LocationsResource extends StObject {
   
   /** Gets information about a location. */
   def get(): Request[Location] = js.native
-  def get(request: Alt): Request[Location] = js.native
+  def get(request: Callback): Request[Location] = js.native
   
   var global: GlobalResource = js.native
   

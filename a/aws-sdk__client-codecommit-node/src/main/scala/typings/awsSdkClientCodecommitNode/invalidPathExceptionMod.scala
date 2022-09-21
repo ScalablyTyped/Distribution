@@ -8,5 +8,5 @@ object invalidPathExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidPathException", "InvalidPathException")
   @js.native
-  val InvalidPathException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidPathException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

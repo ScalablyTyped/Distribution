@@ -37,7 +37,7 @@ object addonsArrayAddonCatalogCa {
     
     inline def setAddons(value: js.Array[AddonCatalog]): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     
-    inline def setAddonsVarargs(value: AddonCatalog*): Self = StObject.set(x, "addons", js.Array(value :_*))
+    inline def setAddonsVarargs(value: AddonCatalog*): Self = StObject.set(x, "addons", js.Array(value*))
     
     inline def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
     

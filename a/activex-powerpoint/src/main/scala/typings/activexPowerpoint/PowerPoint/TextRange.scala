@@ -104,7 +104,7 @@ trait TextRange extends StObject {
   def Paragraphs(Start: Double, Length: Double): TextRange = js.native
   def Paragraphs(Start: Unit, Length: Double): TextRange = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Paste(): TextRange = js.native
   

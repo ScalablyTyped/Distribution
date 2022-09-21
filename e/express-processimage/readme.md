@@ -10,10 +10,10 @@ Express middleware that processes served images according to the query string
 | ------------------ | :-------------: |
 | Full name          | express-processimage |
 | Keywords           | express, middleware, image, images, png, jpg, jpeg, resize, scale, graphicsmagick, optipng, pngcrush, pngquant, jpegtran |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 66436 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2039.6666666666667 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/papandreou/express-processimage#readme)

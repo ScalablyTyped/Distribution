@@ -10,10 +10,10 @@ URI Template [RFC 6570] expansion and extraction
 | ------------------ | :-------------: |
 | Full name          | uri-template-lite |
 | Keywords           | uri, url, template, uri-template, rfc6570, litejs |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 1064287 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 199285.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/litejs/uri-template-lite#readme)

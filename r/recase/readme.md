@@ -11,9 +11,9 @@ Deep rekey Objects and Arrays as either camel case or snake case.
 | Full name          | recase |
 | Keywords           | rekey, key, recase, deep, copy, camel, snake, case, camelcase, snakecase, underscore, underscored |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 427705 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7428.333333333333 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/coolaj86/recase-js)

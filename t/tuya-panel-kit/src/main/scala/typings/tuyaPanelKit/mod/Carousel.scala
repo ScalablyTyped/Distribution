@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "Carousel")
 @js.native
-class Carousel protected ()
-  extends Component[CarouselProps, js.Object, js.Any] {
+open class Carousel protected ()
+  extends Component[CarouselProps, js.Object, Any] {
   def this(props: CarouselProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CarouselProps, context: js.Any) = this()
+  def this(props: CarouselProps, context: Any) = this()
 }

@@ -36,7 +36,7 @@ trait SheetProperties extends StObject {
   /** The type of sheet. Defaults to GRID. This field cannot be changed once set. */
   var sheetType: js.UndefOr[String] = js.undefined
   
-  /** The color of the tab in the UI. */
+  /** The color of the tab in the UI. Deprecated: Use tab_color_style. */
   var tabColor: js.UndefOr[Color] = js.undefined
   
   /** The color of the tab in the UI. If tab_color is also set, this field takes precedence. */

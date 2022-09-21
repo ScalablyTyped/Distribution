@@ -8,10 +8,10 @@ object materialUiMod {
   
   @JSImport("material-ui/Checkbox", JSImport.Default)
   @js.native
-  class default () extends Checkbox
+  open class default () extends Checkbox
   
   @JSImport("material-ui/Checkbox", "Checkbox")
   @js.native
-  class Checkbox ()
+  open class Checkbox ()
     extends typings.materialUi.MaterialUI.Switches.Checkbox
 }

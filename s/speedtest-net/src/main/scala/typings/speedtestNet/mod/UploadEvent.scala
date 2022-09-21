@@ -1,7 +1,6 @@
 package typings.speedtestNet.mod
 
 import typings.speedtestNet.speedtestNetStrings.upload
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait UploadEvent
   /** Indicates the overall progress of the test as a fraction (0 to 1). */
   var progress: Double
   
-  var timestamp: Date
+  var timestamp: js.Date
   
   @JSName("type")
   var type_UploadEvent: upload
@@ -24,7 +23,7 @@ trait UploadEvent
 }
 object UploadEvent {
   
-  inline def apply(progress: Double, timestamp: Date, upload: DownloadUploadData): UploadEvent = {
+  inline def apply(progress: Double, timestamp: js.Date, upload: DownloadUploadData): UploadEvent = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("upload")
     __obj.asInstanceOf[UploadEvent]
@@ -34,7 +33,7 @@ object UploadEvent {
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setType(value: upload): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

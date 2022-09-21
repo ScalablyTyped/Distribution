@@ -1,12 +1,10 @@
 package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Float32Array
-import typings.std.Int32Array
-import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.anon.A
 import typings.tensorflowTfjsCore.anon.Activation
 import typings.tensorflowTfjsCore.anon.Bias
+import typings.tensorflowTfjsCore.anon.Indexing
 import typings.tensorflowTfjsCore.anon.Indices
 import typings.tensorflowTfjsCore.anon.Mean
 import typings.tensorflowTfjsCore.anon.Values
@@ -23,10 +21,13 @@ import typings.tensorflowTfjsCore.distTensorMod.TensorBuffer
 import typings.tensorflowTfjsCore.distTensorMod.Variable
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
+import typings.tensorflowTfjsCore.distTypesMod.Rank.R0
 import typings.tensorflowTfjsCore.distTypesMod.Rank.R1
 import typings.tensorflowTfjsCore.distTypesMod.Rank.R2
 import typings.tensorflowTfjsCore.distTypesMod.Rank.R3
 import typings.tensorflowTfjsCore.distTypesMod.Rank.R4
+import typings.tensorflowTfjsCore.distTypesMod.Rank.R5
+import typings.tensorflowTfjsCore.distTypesMod.Rank.R6
 import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.distTypesMod.ScalarLike
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
@@ -50,19 +51,23 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bilinear
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bool
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ceil
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.complex64
+import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.constant
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.euclidean
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.floor
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.fro
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32
+import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.left
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.max
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.nearest
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reflect
+import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.right
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.round
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.string
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.symmetric
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.wrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,8 +94,6 @@ object opsForConverterMod {
   inline def add[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def addN[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("addN")(tensors.asInstanceOf[js.Any]).asInstanceOf[T]
-  
-  inline def addStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def all[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -143,10 +146,114 @@ object opsForConverterMod {
   
   inline def avgPool[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
-    filterSize: (js.Tuple2[Double, Double]) | Double,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_ | Double,
-    dimRoundingMode: js.UndefOr[floor | round | ceil]
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: ExplicitPadding
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: ExplicitPadding,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: same_ | valid_,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: Double,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: ExplicitPadding,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: ExplicitPadding,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: Double,
+    pad: same_ | valid_,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: Double,
+    pad: Double,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: Double,
+    pad: ExplicitPadding,
+    dimRoundingMode: ceil | floor | round
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def avgPool3d[T /* <: Tensor4D | Tensor5D */](
@@ -155,9 +262,8 @@ object opsForConverterMod {
     strides: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     dimRoundingMode: js.UndefOr[floor | round | ceil],
-    dataFormat: js.UndefOr[NDHWC | NCDHW],
-    dilations: js.UndefOr[(js.Tuple3[Double, Double, Double]) | Double]
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+    dataFormat: js.UndefOr[NDHWC | NCDHW]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "basicLSTMCell")
   @js.native
@@ -218,6 +324,8 @@ object opsForConverterMod {
   
   inline def batchToSpaceND[T /* <: Tensor[Rank] */](x: T | TensorLike, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("batchToSpaceND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], crops.asInstanceOf[js.Any])).asInstanceOf[T]
   
+  inline def bincount[T /* <: Tensor1D */](x: T | TensorLike, weights: T | TensorLike, size: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "booleanMaskAsync")
   @js.native
   val booleanMaskAsync: js.Function3[
@@ -226,6 +334,11 @@ object opsForConverterMod {
     /* axis */ js.UndefOr[Double], 
     js.Promise[Tensor[Rank]]
   ] = js.native
+  
+  inline def broadcastArgs[R /* <: Rank */](s0: Tensor[Rank], s1: Tensor[Rank]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastArgs")(s0.asInstanceOf[js.Any], s1.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def broadcastArgs[R /* <: Rank */](s0: Tensor[Rank], s1: TensorLike): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastArgs")(s0.asInstanceOf[js.Any], s1.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def broadcastArgs[R /* <: Rank */](s0: TensorLike, s1: Tensor[Rank]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastArgs")(s0.asInstanceOf[js.Any], s1.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def broadcastArgs[R /* <: Rank */](s0: TensorLike, s1: TensorLike): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastArgs")(s0.asInstanceOf[js.Any], s1.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
   inline def broadcastTo[R /* <: Rank */](
     x: Tensor[Rank],
@@ -247,17 +360,17 @@ object opsForConverterMod {
   inline def buffer[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: Unit,
-    values: Float32Array
+    values: js.typedarray.Float32Array
   ): TensorBuffer[R, float32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, float32]]
   inline def buffer[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: Unit,
-    values: Int32Array
+    values: js.typedarray.Int32Array
   ): TensorBuffer[R, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, int32]]
   inline def buffer[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: Unit,
-    values: Uint8Array
+    values: js.typedarray.Uint8Array
   ): TensorBuffer[R, bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, bool]]
   
   inline def buffer_bool[R /* <: Rank */](
@@ -267,7 +380,7 @@ object opsForConverterMod {
   inline def buffer_bool[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: bool,
-    values: Uint8Array
+    values: js.typedarray.Uint8Array
   ): TensorBuffer[R, bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, bool]]
   
   inline def buffer_complex64[R /* <: Rank */](
@@ -277,7 +390,7 @@ object opsForConverterMod {
   inline def buffer_complex64[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: complex64,
-    values: Float32Array
+    values: js.typedarray.Float32Array
   ): TensorBuffer[R, complex64] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, complex64]]
   
   inline def buffer_float32[R /* <: Rank */](
@@ -287,7 +400,7 @@ object opsForConverterMod {
   inline def buffer_float32[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: float32,
-    values: Float32Array
+    values: js.typedarray.Float32Array
   ): TensorBuffer[R, float32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, float32]]
   
   inline def buffer_int32[R /* <: Rank */](
@@ -297,7 +410,7 @@ object opsForConverterMod {
   inline def buffer_int32[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: int32,
-    values: Int32Array
+    values: js.typedarray.Int32Array
   ): TensorBuffer[R, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, int32]]
   
   inline def buffer_string[R /* <: Rank */](
@@ -364,17 +477,179 @@ object opsForConverterMod {
     filter: Tensor4D | TensorLike,
     outputShape: (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple3[Double, Double, Double]),
     strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_ | Double,
+    pad: valid_ | same_ | Double | ExplicitPadding,
     dimRoundingMode: js.UndefOr[floor | round | ceil]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def conv3d[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
-    filter: Tensor5D | TensorLike,
-    strides: (js.Tuple3[Double, Double, Double]) | Double,
-    pad: valid_ | same_,
-    dataFormat: js.UndefOr[NDHWC | NCDHW],
-    dilations: js.UndefOr[(js.Tuple3[Double, Double, Double]) | Double]
+    filter: Tensor5D,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: Tensor5D,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: Tensor5D,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC,
+    dilations: js.Tuple3[Double, Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: Tensor5D,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC,
+    dilations: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: Tensor5D,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_,
+    dataFormat: Unit,
+    dilations: js.Tuple3[Double, Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: Tensor5D,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_,
+    dataFormat: Unit,
+    dilations: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](x: T | TensorLike, filter: Tensor5D, strides: Double, pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: Tensor5D,
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: Tensor5D,
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC,
+    dilations: js.Tuple3[Double, Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: Tensor5D,
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC,
+    dilations: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: Tensor5D,
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: Unit,
+    dilations: js.Tuple3[Double, Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: Tensor5D,
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: Unit,
+    dilations: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC,
+    dilations: js.Tuple3[Double, Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC,
+    dilations: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_,
+    dataFormat: Unit,
+    dilations: js.Tuple3[Double, Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple3[Double, Double, Double],
+    pad: same_ | valid_,
+    dataFormat: Unit,
+    dilations: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](x: T | TensorLike, filter: TensorLike, strides: Double, pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC,
+    dilations: js.Tuple3[Double, Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: NCDHW | NDHWC,
+    dilations: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: Unit,
+    dilations: js.Tuple3[Double, Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: Double,
+    pad: same_ | valid_,
+    dataFormat: Unit,
+    dilations: Double
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
@@ -382,112 +657,56 @@ object opsForConverterMod {
     filter: Tensor5D,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
-    pad: same_
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: valid_
+    pad: same_ | valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double,
-    pad: same_
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: valid_
+    pad: same_ | valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
-    pad: same_
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: valid_
+    pad: same_ | valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double,
-    pad: same_
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: Double,
-    pad: valid_
+    pad: same_ | valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
-    pad: same_
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: valid_
+    pad: same_ | valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double,
-    pad: same_
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: valid_
+    pad: same_ | valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
-    pad: same_
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: valid_
+    pad: same_ | valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double,
-    pad: same_
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: Double,
-    pad: valid_
+    pad: same_ | valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def cos[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(x.asInstanceOf[js.Any]).asInstanceOf[T]
@@ -495,6 +714,23 @@ object opsForConverterMod {
   inline def cosh[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def cosineWindow(windowLength: Double, a: Double, b: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineWindow")(windowLength.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  
+  inline def cumprod[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def cumprod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumprod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -513,6 +749,9 @@ object opsForConverterMod {
   inline def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
   
+  inline def denseBincount[T /* <: Tensor1D | Tensor2D */](x: T | TensorLike, weights: T | TensorLike, size: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("denseBincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def denseBincount[T /* <: Tensor1D | Tensor2D */](x: T | TensorLike, weights: T | TensorLike, size: Double, binaryOutput: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("denseBincount")(x.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], size.asInstanceOf[js.Any], binaryOutput.asInstanceOf[js.Any])).asInstanceOf[T]
+  
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "depthToSpace")
   @js.native
   val depthToSpace: js.Function3[
@@ -526,7 +765,7 @@ object opsForConverterMod {
     x: T | TensorLike,
     filter: Tensor4D | TensorLike,
     strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_ | Double,
+    pad: valid_ | same_ | Double | ExplicitPadding,
     dataFormat: js.UndefOr[NHWC | NCHW],
     dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
     dimRoundingMode: js.UndefOr[floor | round | ceil]
@@ -536,13 +775,149 @@ object opsForConverterMod {
   @js.native
   val diag: js.Function1[/* x */ Tensor[Rank], Tensor[Rank]] = js.native
   
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filter: Tensor3D, strides: js.Tuple2[Double, Double], pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
-    filter: Tensor3D | TensorLike,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_,
-    dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
-    dataFormat: js.UndefOr[NHWC]
+    filter: Tensor3D,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dilations: js.Tuple2[Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: Tensor3D,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dilations: js.Tuple2[Double, Double],
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: Tensor3D,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dilations: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: Tensor3D,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dilations: Double,
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: Tensor3D,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dilations: Unit,
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filter: Tensor3D, strides: Double, pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: Tensor3D,
+    strides: Double,
+    pad: same_ | valid_,
+    dilations: js.Tuple2[Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: Tensor3D,
+    strides: Double,
+    pad: same_ | valid_,
+    dilations: js.Tuple2[Double, Double],
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filter: Tensor3D, strides: Double, pad: same_ | valid_, dilations: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: Tensor3D,
+    strides: Double,
+    pad: same_ | valid_,
+    dilations: Double,
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: Tensor3D,
+    strides: Double,
+    pad: same_ | valid_,
+    dilations: Unit,
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filter: TensorLike, strides: js.Tuple2[Double, Double], pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dilations: js.Tuple2[Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dilations: js.Tuple2[Double, Double],
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dilations: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dilations: Double,
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dilations: Unit,
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filter: TensorLike, strides: Double, pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: Double,
+    pad: same_ | valid_,
+    dilations: js.Tuple2[Double, Double]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: Double,
+    pad: same_ | valid_,
+    dilations: js.Tuple2[Double, Double],
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filter: TensorLike, strides: Double, pad: same_ | valid_, dilations: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: Double,
+    pad: same_ | valid_,
+    dilations: Double,
+    dataFormat: NHWC
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filter: TensorLike,
+    strides: Double,
+    pad: same_ | valid_,
+    dilations: Unit,
+    dataFormat: NHWC
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def div[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -554,8 +929,6 @@ object opsForConverterMod {
   inline def divNoNan[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def divNoNan[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def divNoNan[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  inline def divStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "dot")
   @js.native
@@ -571,6 +944,10 @@ object opsForConverterMod {
     Tensor[Rank]
   ] = js.native
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "einsum")
+  @js.native
+  val einsum: js.Function2[/* equation */ String, /* repeated */ Tensor[Rank], Tensor[Rank]] = js.native
+  
   inline def elu[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("elu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def enclosingPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("enclosingPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -580,9 +957,16 @@ object opsForConverterMod {
   inline def equal[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def equal[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def equalStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equalStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
   inline def erf[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("erf")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "euclideanNorm")
+  @js.native
+  val euclideanNorm: js.Function3[
+    /* x */ Tensor[Rank] | TensorLike, 
+    /* axis */ js.UndefOr[Double | js.Array[Double]], 
+    /* keepDims */ js.UndefOr[Boolean], 
+    Tensor[Rank]
+  ] = js.native
   
   inline def exp[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -656,20 +1040,29 @@ object opsForConverterMod {
     val ^ : js.Any = js.native
     
     inline def conv2d[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Activation[T]
-    ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights.asInstanceOf[js.Any]).asInstanceOf[T]
+      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Activation[T]
+    ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha.asInstanceOf[js.Any]).asInstanceOf[T]
     
     inline def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Bias[T]
-    ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights.asInstanceOf[js.Any]).asInstanceOf[T]
+      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Bias[T]
+    ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    inline def matMul[T /* <: Tensor[Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: A[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(hasABTransposeATransposeBBiasActivationPreluActivationWeights.asInstanceOf[js.Any]).asInstanceOf[T]
+    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "fused.matMul")
+    @js.native
+    val matMul: js.Function1[
+        /* hasABTransposeATransposeBBiasActivationPreluActivationWeightsLeakyreluAlpha */ A, 
+        Tensor[Rank]
+      ] = js.native
   }
   
   inline def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: Tensor[Rank], axis: Double, batchDims: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], batchDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: Tensor[Rank], axis: Unit, batchDims: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], batchDims.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: TensorLike, axis: Double, batchDims: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], batchDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: TensorLike, axis: Unit, batchDims: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], batchDims.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "gatherND")
   @js.native
@@ -689,10 +1082,6 @@ object opsForConverterMod {
   inline def greaterEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def greaterEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def greaterEqualStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqualStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  inline def greaterStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "ifft")
   @js.native
   val ifft: js.Function1[/* input */ Tensor[Rank], Tensor[Rank]] = js.native
@@ -706,65 +1095,79 @@ object opsForConverterMod {
     val ^ : js.Any = js.native
     
     inline def cropAndResize(
-      image: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R4],
-      boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R2],
-      boxInd: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R1],
+      image: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R4],
+      boxes: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R2],
+      boxInd: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
       cropSize: js.Tuple2[Double, Double],
-      method: js.UndefOr[nearest | bilinear],
+      method: js.UndefOr[bilinear | nearest],
       extrapolationValue: js.UndefOr[Double]
     ): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("cropAndResize")(image.asInstanceOf[js.Any], boxes.asInstanceOf[js.Any], boxInd.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], method.asInstanceOf[js.Any], extrapolationValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
     
     inline def flipLeftRight(image: String): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
-    inline def flipLeftRight(image: js.Array[Uint8Array]): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    inline def flipLeftRight(image: js.Array[js.typedarray.Uint8Array]): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    inline def flipLeftRight(image: js.typedarray.Float32Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    inline def flipLeftRight(image: js.typedarray.Int32Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    inline def flipLeftRight(image: js.typedarray.Uint8Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
     inline def flipLeftRight(image: Boolean): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
     inline def flipLeftRight(image: Double): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
-    inline def flipLeftRight(image: Float32Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
-    inline def flipLeftRight(image: Int32Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
-    inline def flipLeftRight(image: Uint8Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
     inline def flipLeftRight(image: Tensor[R4]): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
     inline def flipLeftRight(
       image: RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
         ]
     ): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
     
+    inline def grayscaleToRGB[T /* <: Tensor[R2 | R3 | R4 | R5 | R6] */](image: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscaleToRGB")(image.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def grayscaleToRGB[T /* <: Tensor[R2 | R3 | R4 | R5 | R6] */](image: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscaleToRGB")(image.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def grayscaleToRGB[T /* <: Tensor[R2 | R3 | R4 | R5 | R6] */](image: js.Array[js.typedarray.Uint8Array]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscaleToRGB")(image.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def grayscaleToRGB[T /* <: Tensor[R2 | R3 | R4 | R5 | R6] */](image: js.typedarray.Float32Array): T = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscaleToRGB")(image.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def grayscaleToRGB[T /* <: Tensor[R2 | R3 | R4 | R5 | R6] */](image: js.typedarray.Int32Array): T = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscaleToRGB")(image.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def grayscaleToRGB[T /* <: Tensor[R2 | R3 | R4 | R5 | R6] */](image: js.typedarray.Uint8Array): T = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscaleToRGB")(image.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def grayscaleToRGB[T /* <: Tensor[R2 | R3 | R4 | R5 | R6] */](image: Boolean): T = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscaleToRGB")(image.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def grayscaleToRGB[T /* <: Tensor[R2 | R3 | R4 | R5 | R6] */](image: Double): T = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscaleToRGB")(image.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def grayscaleToRGB[T /* <: Tensor[R2 | R3 | R4 | R5 | R6] */](
+      image: RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]
+    ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscaleToRGB")(image.asInstanceOf[js.Any]).asInstanceOf[T]
+    
     inline def nonMaxSuppression(
-      boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R2],
-      scores: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R1],
+      boxes: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R2],
+      scores: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
       maxOutputSize: Double,
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double]
     ): Tensor[R1] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppression")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[Tensor[R1]]
     
     inline def nonMaxSuppressionAsync(
-      boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R2],
-      scores: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R1],
+      boxes: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R2],
+      scores: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
       maxOutputSize: Double,
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double]
     ): js.Promise[Tensor[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionAsync")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tensor[R1]]]
     
     inline def nonMaxSuppressionPadded(
-      boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R2],
-      scores: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R1],
+      boxes: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R2],
+      scores: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
       maxOutputSize: Double,
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double],
@@ -772,12 +1175,12 @@ object opsForConverterMod {
     ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionPadded")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], padToMaxOutputSize.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
     
     inline def nonMaxSuppressionPaddedAsync(
-      boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R2],
-      scores: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R1],
+      boxes: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R2],
+      scores: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
       maxOutputSize: Double,
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double],
@@ -785,12 +1188,12 @@ object opsForConverterMod {
     ): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionPaddedAsync")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], padToMaxOutputSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
     
     inline def nonMaxSuppressionWithScore(
-      boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R2],
-      scores: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R1],
+      boxes: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R2],
+      scores: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
       maxOutputSize: Double,
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double],
@@ -798,12 +1201,12 @@ object opsForConverterMod {
     ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionWithScore")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], softNmsSigma.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
     
     inline def nonMaxSuppressionWithScoreAsync(
-      boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R2],
-      scores: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R1],
+      boxes: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R2],
+      scores: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
       maxOutputSize: Double,
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double],
@@ -812,72 +1215,238 @@ object opsForConverterMod {
     
     inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Boolean, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Unit, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Unit, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[js.typedarray.Uint8Array], size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[js.typedarray.Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
+      images: js.Array[js.typedarray.Uint8Array],
+      size: js.Tuple2[Double, Double],
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
+      images: js.Array[js.typedarray.Uint8Array],
+      size: js.Tuple2[Double, Double],
+      alignCorners: Unit,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Float32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Float32Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Float32Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Unit,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Int32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Int32Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Int32Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Unit,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Uint8Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Uint8Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Uint8Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Unit,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Unit, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Unit, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
       images: RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
         ],
       size: js.Tuple2[Double, Double]
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
       images: RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
         ],
       size: js.Tuple2[Double, Double],
       alignCorners: Boolean
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
+      images: RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ],
+      size: js.Tuple2[Double, Double],
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeBilinear[T /* <: Tensor[R3 | R4] */](
+      images: RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ],
+      size: js.Tuple2[Double, Double],
+      alignCorners: Unit,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
     
     inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Boolean, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Unit, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Unit, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[js.typedarray.Uint8Array], size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[js.typedarray.Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
+      images: js.Array[js.typedarray.Uint8Array],
+      size: js.Tuple2[Double, Double],
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
+      images: js.Array[js.typedarray.Uint8Array],
+      size: js.Tuple2[Double, Double],
+      alignCorners: Unit,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Float32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Float32Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Float32Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Unit,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Int32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Int32Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Int32Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Unit,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Uint8Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.typedarray.Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Uint8Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
+      images: js.typedarray.Uint8Array,
+      size: js.Tuple2[Double, Double],
+      alignCorners: Unit,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Unit, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Unit, halfPixelCenters: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
       images: RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
         ],
       size: js.Tuple2[Double, Double]
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
       images: RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
         ],
       size: js.Tuple2[Double, Double],
       alignCorners: Boolean
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
+      images: RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ],
+      size: js.Tuple2[Double, Double],
+      alignCorners: Boolean,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
+      images: RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ],
+      size: js.Tuple2[Double, Double],
+      alignCorners: Unit,
+      halfPixelCenters: Boolean
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
     
     inline def rotateWithOffset(
-      image: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | Tensor[R4],
+      image: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R4],
       radians: Double,
       fillValue: js.UndefOr[Double | (js.Tuple3[Double, Double, Double])],
       center: js.UndefOr[Double | (js.Tuple2[Double, Double])]
     ): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateWithOffset")(image.asInstanceOf[js.Any], radians.asInstanceOf[js.Any], fillValue.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
+    
+    inline def threshold(
+      image: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R3],
+      method: js.UndefOr[String],
+      inverted: js.UndefOr[Boolean],
+      threshValue: js.UndefOr[Double]
+    ): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("threshold")(image.asInstanceOf[js.Any], method.asInstanceOf[js.Any], inverted.asInstanceOf[js.Any], threshValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+    
+    inline def transform(
+      image: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R4],
+      transforms: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R2],
+      interpolation: js.UndefOr[bilinear | nearest],
+      fillMode: js.UndefOr[reflect | nearest | constant | wrap],
+      fillValue: js.UndefOr[Double],
+      outputShape: js.UndefOr[js.Tuple2[Double, Double]]
+    ): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(image.asInstanceOf[js.Any], transforms.asInstanceOf[js.Any], interpolation.asInstanceOf[js.Any], fillMode.asInstanceOf[js.Any], fillValue.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
   }
   
   inline def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: T | TensorLike, targets: TensorLike | U): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("inTopKAsync")(predictions.asInstanceOf[js.Any], targets.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
@@ -906,10 +1475,6 @@ object opsForConverterMod {
   inline def lessEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def lessEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def lessEqualStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqualStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  inline def lessStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
   object linalg {
     
     @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg")
@@ -918,15 +1483,15 @@ object opsForConverterMod {
     
     inline def bandPart[T /* <: Tensor[Rank] */](a: T, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def bandPart[T /* <: Tensor[Rank] */](a: String, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def bandPart[T /* <: Tensor[Rank] */](a: js.Array[Uint8Array], numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def bandPart[T /* <: Tensor[Rank] */](a: js.Array[js.typedarray.Uint8Array], numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def bandPart[T /* <: Tensor[Rank] */](a: js.typedarray.Float32Array, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def bandPart[T /* <: Tensor[Rank] */](a: js.typedarray.Int32Array, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def bandPart[T /* <: Tensor[Rank] */](a: js.typedarray.Uint8Array, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def bandPart[T /* <: Tensor[Rank] */](a: Boolean, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def bandPart[T /* <: Tensor[Rank] */](a: Double, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def bandPart[T /* <: Tensor[Rank] */](a: Float32Array, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def bandPart[T /* <: Tensor[Rank] */](a: Int32Array, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
-    inline def bandPart[T /* <: Tensor[Rank] */](a: Uint8Array, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def bandPart[T /* <: Tensor[Rank] */](
       a: RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
         ],
       numLower: Double,
       numUpper: Double
@@ -1004,142 +1569,147 @@ object opsForConverterMod {
     val ^ : js.Any = js.native
     
     inline def absoluteDifference[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-      labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
-      predictions: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
+      labels: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
+      predictions: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
       weights: js.UndefOr[
-          String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-            js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-          ]) | js.Array[Uint8Array] | Tensor[Rank]
+          String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+            js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+          ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank]
         ],
       reduction: js.UndefOr[Reduction]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDifference")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
     inline def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-      losses: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
+      losses: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
       weights: js.UndefOr[
-          String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-            js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-          ]) | js.Array[Uint8Array] | Tensor[Rank]
+          String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+            js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+          ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank]
         ],
       reduction: js.UndefOr[Reduction]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
     inline def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-      labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
-      predictions: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
+      labels: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
+      predictions: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
       axis: Double,
       weights: js.UndefOr[
-          String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-            js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-          ]) | js.Array[Uint8Array] | Tensor[Rank]
+          String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+            js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+          ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank]
         ],
       reduction: js.UndefOr[Reduction]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
     inline def hingeLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-      labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
-      predictions: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
+      labels: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
+      predictions: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
       weights: js.UndefOr[
-          String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-            js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-          ]) | js.Array[Uint8Array] | Tensor[Rank]
+          String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+            js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+          ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank]
         ],
       reduction: js.UndefOr[Reduction]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("hingeLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
     inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-      labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
-      predictions: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
+      labels: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
+      predictions: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
       weights: js.UndefOr[
-          String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-            js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-          ]) | js.Array[Uint8Array] | Tensor[Rank]
+          String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+            js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+          ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank]
         ],
       delta: js.UndefOr[Double],
       reduction: js.UndefOr[Reduction]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
     inline def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-      labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
-      predictions: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
+      labels: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
+      predictions: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
       weights: js.UndefOr[
-          String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-            js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-          ]) | js.Array[Uint8Array] | Tensor[Rank]
+          String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+            js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+          ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank]
         ],
       epsilon: js.UndefOr[Double],
       reduction: js.UndefOr[Reduction]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
     inline def meanSquaredError[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-      labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
-      predictions: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
+      labels: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
+      predictions: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
       weights: js.UndefOr[
-          String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-            js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-          ]) | js.Array[Uint8Array] | Tensor[Rank]
+          String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+            js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+          ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank]
         ],
       reduction: js.UndefOr[Reduction]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("meanSquaredError")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
     inline def sigmoidCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-      multiClassLabels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
-      logits: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
+      multiClassLabels: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
+      logits: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
       weights: js.UndefOr[
-          String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-            js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-          ]) | js.Array[Uint8Array] | Tensor[Rank]
+          String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+            js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+          ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank]
         ],
       labelSmoothing: js.UndefOr[Double],
       reduction: js.UndefOr[Reduction]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("sigmoidCrossEntropy")(multiClassLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
     inline def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-      onehotLabels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
-      logits: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-          js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-        ]) | js.Array[Uint8Array] | T,
+      onehotLabels: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
+      logits: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | T,
       weights: js.UndefOr[
-          String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
-            js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
-          ]) | js.Array[Uint8Array] | Tensor[Rank]
+          String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+            js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+          ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank]
         ],
       labelSmoothing: js.UndefOr[Double],
       reduction: js.UndefOr[Reduction]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
   }
+  
+  inline def lowerBound(sortedSequence: Tensor[Rank], values: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def lowerBound(sortedSequence: Tensor[Rank], values: TensorLike): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def lowerBound(sortedSequence: TensorLike, values: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def lowerBound(sortedSequence: TensorLike, values: TensorLike): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
   inline def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank], transposeA: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -1173,10 +1743,114 @@ object opsForConverterMod {
   
   inline def maxPool[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
-    filterSize: (js.Tuple2[Double, Double]) | Double,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_ | Double,
-    dimRoundingMode: js.UndefOr[floor | round | ceil]
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: ExplicitPadding
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: ExplicitPadding,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: same_ | valid_,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: Double,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: ExplicitPadding,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: ExplicitPadding,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: same_ | valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: Double,
+    pad: same_ | valid_,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: Double,
+    pad: Double,
+    dimRoundingMode: ceil | floor | round
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: ExplicitPadding): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
+    x: T | TensorLike,
+    filterSize: Double,
+    strides: Double,
+    pad: ExplicitPadding,
+    dimRoundingMode: ceil | floor | round
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def maxPool3d[T /* <: Tensor4D | Tensor5D */](
@@ -1185,10 +1859,22 @@ object opsForConverterMod {
     strides: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     dimRoundingMode: js.UndefOr[floor | round | ceil],
-    dataFormat: js.UndefOr[NDHWC | NCDHW],
-    dilations: js.UndefOr[(js.Tuple3[Double, Double, Double]) | Double]
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+    dataFormat: js.UndefOr[NDHWC | NCDHW]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
   
+  inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  inline def maxPoolWithArgmax[T /* <: Tensor4D */](
+    x: T | TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   inline def maxPoolWithArgmax[T /* <: Tensor4D */](
     x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
@@ -1202,30 +1888,12 @@ object opsForConverterMod {
     pad: Double,
     includeBatchInIndex: Boolean
   ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_ | valid_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   inline def maxPoolWithArgmax[T /* <: Tensor4D */](
     x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: same_
-  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T | TensorLike,
-    filterSize: js.Tuple2[Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: same_,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T | TensorLike,
-    filterSize: js.Tuple2[Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: valid_
-  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T | TensorLike,
-    filterSize: js.Tuple2[Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: valid_,
+    strides: Double,
+    pad: same_ | valid_,
     includeBatchInIndex: Boolean
   ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
@@ -1236,20 +1904,12 @@ object opsForConverterMod {
     pad: Double,
     includeBatchInIndex: Boolean
   ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_ | valid_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   inline def maxPoolWithArgmax[T /* <: Tensor4D */](
     x: T | TensorLike,
-    filterSize: js.Tuple2[Double, Double],
-    strides: Double,
-    pad: same_,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T | TensorLike,
-    filterSize: js.Tuple2[Double, Double],
-    strides: Double,
-    pad: valid_,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: same_ | valid_,
     includeBatchInIndex: Boolean
   ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
@@ -1260,35 +1920,21 @@ object opsForConverterMod {
     pad: Double,
     includeBatchInIndex: Boolean
   ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: same_ | valid_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   inline def maxPoolWithArgmax[T /* <: Tensor4D */](
     x: T | TensorLike,
     filterSize: Double,
-    strides: js.Tuple2[Double, Double],
-    pad: same_,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T | TensorLike,
-    filterSize: Double,
-    strides: js.Tuple2[Double, Double],
-    pad: valid_,
+    strides: Double,
+    pad: same_ | valid_,
     includeBatchInIndex: Boolean
   ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: Double): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: Double, includeBatchInIndex: Boolean): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: same_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: same_, includeBatchInIndex: Boolean): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: valid_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
-  inline def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: valid_, includeBatchInIndex: Boolean): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
   inline def maximum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def maximum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def maximum[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def maximum[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  inline def maximumStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximumStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -1302,6 +1948,15 @@ object opsForConverterMod {
   inline def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def meshgrid[T /* <: Tensor[Rank] */](): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")().asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: T | TensorLike): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: T | TensorLike, y: T | TensorLike): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: T | TensorLike, y: T | TensorLike, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: T | TensorLike, y: Unit, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: Unit, y: T | TensorLike): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: Unit, y: T | TensorLike, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def meshgrid[T /* <: Tensor[Rank] */](x: Unit, y: Unit, hasIndexing: Indexing): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("meshgrid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], hasIndexing.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def min[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -1321,17 +1976,12 @@ object opsForConverterMod {
   inline def minimum[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def minimum[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def minimumStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimumStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  inline def mirrorPad[T /* <: Tensor[Rank] */](x: T | TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def mirrorPad[T /* <: Tensor[Rank] */](x: T | TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], mode: symmetric): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def mirrorPad[T /* <: Tensor[Rank] */](x: T | TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect | symmetric): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def mod[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def mod[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def mod[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def mod[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  inline def modStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("modStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "moments")
   @js.native
@@ -1359,8 +2009,6 @@ object opsForConverterMod {
   inline def mul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def mul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def mul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  inline def mulStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mulStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "multiRNNCell")
   @js.native
@@ -1399,15 +2047,14 @@ object opsForConverterMod {
   inline def notEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def notEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def notEqualStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "oneHot")
   @js.native
-  val oneHot: js.Function4[
+  val oneHot: js.Function5[
     /* indices */ Tensor[Rank] | TensorLike, 
     /* depth */ Double, 
     /* onValue */ js.UndefOr[Double], 
     /* offValue */ js.UndefOr[Double], 
+    /* dtype */ js.UndefOr[DataType], 
     Tensor[Rank]
   ] = js.native
   
@@ -1475,17 +2122,16 @@ object opsForConverterMod {
     input: T | TensorLike,
     windowShape: (js.Tuple2[Double, Double]) | Double,
     poolingType: avg | max,
-    pad: valid_ | same_ | Double,
+    pad: valid_ | same_ | Double | ExplicitPadding,
     dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
-    strides: js.UndefOr[(js.Tuple2[Double, Double]) | Double]
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(input.asInstanceOf[js.Any], windowShape.asInstanceOf[js.Any], poolingType.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[T]
+    strides: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
+    dimRoundingMode: js.UndefOr[floor | round | ceil]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(input.asInstanceOf[js.Any], windowShape.asInstanceOf[js.Any], poolingType.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def pow[T /* <: Tensor[Rank] */](base: Tensor[Rank], exp: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def pow[T /* <: Tensor[Rank] */](base: Tensor[Rank], exp: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def pow[T /* <: Tensor[Rank] */](base: TensorLike, exp: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def pow[T /* <: Tensor[Rank] */](base: TensorLike, exp: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  inline def powStrict[T /* <: Tensor[Rank] */](base: T, exp: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("powStrict")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def prelu[T /* <: Tensor[Rank] */](x: T | TensorLike, alpha: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prelu")(x.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
   
@@ -1504,6 +2150,17 @@ object opsForConverterMod {
   inline def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "raggedTensorToTensor")
+  @js.native
+  val raggedTensorToTensor: js.Function5[
+    /* shape */ Tensor[Rank] | TensorLike, 
+    /* values */ Tensor[Rank] | TensorLike, 
+    /* defaultValue */ Tensor[Rank] | TensorLike, 
+    /* rowPartitionTensors */ js.Array[Tensor[Rank]], 
+    /* rowPartitionTypes */ js.Array[String], 
+    Tensor[Rank]
+  ] = js.native
   
   inline def rand[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
@@ -1528,39 +2185,19 @@ object opsForConverterMod {
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Double,
-    dtype: Unit,
-    seed: Double
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomGamma[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    alpha: Double,
-    beta: Double,
-    dtype: float32
+    dtype: float32 | int32
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Double,
-    dtype: float32,
+    dtype: float32 | int32,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Double,
-    dtype: int32
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomGamma[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    alpha: Double,
-    beta: Double,
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomGamma[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    alpha: Double,
-    beta: Unit,
     dtype: Unit,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
@@ -1568,26 +2205,20 @@ object opsForConverterMod {
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Unit,
-    dtype: float32
+    dtype: float32 | int32
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Unit,
-    dtype: float32,
+    dtype: float32 | int32,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Unit,
-    dtype: int32
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomGamma[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    alpha: Double,
-    beta: Unit,
-    dtype: int32,
+    dtype: Unit,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
@@ -1607,39 +2238,19 @@ object opsForConverterMod {
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
-    dtype: Unit,
-    seed: Double
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: Double,
-    dtype: float32
+    dtype: float32 | int32
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
-    dtype: float32,
+    dtype: float32 | int32,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
-    dtype: int32
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: Double,
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: Unit,
     dtype: Unit,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
@@ -1647,26 +2258,20 @@ object opsForConverterMod {
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Unit,
-    dtype: float32
+    dtype: float32 | int32
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Unit,
-    dtype: float32,
+    dtype: float32 | int32,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Unit,
-    dtype: int32
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: Unit,
-    dtype: int32,
+    dtype: Unit,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomNormal[R /* <: Rank */](
@@ -1678,39 +2283,19 @@ object opsForConverterMod {
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Double,
-    dtype: Unit,
-    seed: Double
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Unit,
-    stdDev: Double,
-    dtype: float32
+    dtype: float32 | int32
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Double,
-    dtype: float32,
+    dtype: float32 | int32,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Double,
-    dtype: int32
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Unit,
-    stdDev: Double,
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Unit,
-    stdDev: Unit,
     dtype: Unit,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
@@ -1718,28 +2303,40 @@ object opsForConverterMod {
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Unit,
-    dtype: float32
+    dtype: float32 | int32
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Unit,
-    dtype: float32,
+    dtype: float32 | int32,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Unit,
-    dtype: int32
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Unit,
-    stdDev: Unit,
-    dtype: int32,
+    dtype: Unit,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  
+  inline def randomStandardNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+  ): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomStandardNormal")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+  inline def randomStandardNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    dtype: float32 | int32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomStandardNormal")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def randomStandardNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    dtype: float32 | int32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomStandardNormal")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  inline def randomStandardNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomStandardNormal")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
   inline def randomUniform[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
@@ -1897,12 +2494,8 @@ object opsForConverterMod {
   
   inline def range(start: Double, stop: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   inline def range(start: Double, stop: Double, step: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
-  
-  inline def range_float32(start: Double, stop: Double, step: Double, dtype: float32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
-  inline def range_float32(start: Double, stop: Double, step: Unit, dtype: float32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
-  
-  inline def range_int32(start: Double, stop: Double, step: Double, dtype: int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
-  inline def range_int32(start: Double, stop: Double, step: Unit, dtype: int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  inline def range(start: Double, stop: Double, step: Double, dtype: float32 | int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  inline def range(start: Double, stop: Double, step: Unit, dtype: float32 | int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   
   inline def real[T /* <: Tensor[Rank] */](input: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("real")(input.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -1963,12 +2556,12 @@ object opsForConverterMod {
   
   inline def scalar(value: String): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
   inline def scalar(value: String, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
+  inline def scalar(value: js.typedarray.Uint8Array): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+  inline def scalar(value: js.typedarray.Uint8Array, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
   inline def scalar(value: Boolean): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
   inline def scalar(value: Boolean, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
   inline def scalar(value: Double): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
   inline def scalar(value: Double, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
-  inline def scalar(value: Uint8Array): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
-  inline def scalar(value: Uint8Array, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
   
   inline def scatterND[R /* <: Rank */](
     indices: Tensor[Rank],
@@ -1990,6 +2583,15 @@ object opsForConverterMod {
     updates: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  
+  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "searchSorted")
+  @js.native
+  val searchSorted: js.Function3[
+    /* sortedSequence */ Tensor[Rank] | TensorLike, 
+    /* values */ Tensor[Rank] | TensorLike, 
+    /* side */ js.UndefOr[left | right], 
+    Tensor[Rank]
+  ] = js.native
   
   inline def selu[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("selu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -2097,6 +2699,62 @@ object opsForConverterMod {
   
   inline def spaceToBatchND[T /* <: Tensor[Rank] */](x: T | TensorLike, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("spaceToBatchND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any])).asInstanceOf[T]
   
+  object sparse {
+    
+    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparse")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def sparseFillEmptyRows(
+      indices: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R2],
+      values: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
+      denseShape: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
+      defaultValue: String | Double | Boolean | js.typedarray.Uint8Array | Tensor[R0]
+    ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseFillEmptyRows")(indices.asInstanceOf[js.Any], values.asInstanceOf[js.Any], denseShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+    
+    inline def sparseReshape(
+      inputIndices: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R2],
+      inputShape: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
+      newShape: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1]
+    ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseReshape")(inputIndices.asInstanceOf[js.Any], inputShape.asInstanceOf[js.Any], newShape.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+    
+    inline def sparseSegmentMean(
+      data: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank],
+      indices: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
+      segmentIds: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1]
+    ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseSegmentMean")(data.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], segmentIds.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    
+    inline def sparseSegmentSum(
+      data: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank],
+      indices: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
+      segmentIds: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1]
+    ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseSegmentSum")(data.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], segmentIds.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  }
+  
   inline def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: Tensor[Rank],
@@ -2200,8 +2858,6 @@ object opsForConverterMod {
   inline def squaredDifference[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def squaredDifference[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifferenceStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
   inline def squeeze[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def squeeze[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def squeeze[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any]).asInstanceOf[T]
@@ -2228,12 +2884,55 @@ object opsForConverterMod {
     Tensor[Rank]
   ] = js.native
   
+  object string {
+    
+    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "string")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def stringNGrams(
+      data: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
+      dataSplits: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[Rank],
+      separator: String,
+      nGramWidths: js.Array[Double],
+      leftPad: String,
+      rightPad: String,
+      padWidth: Double,
+      preserveShortSequences: Boolean
+    ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("stringNGrams")(data.asInstanceOf[js.Any], dataSplits.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], nGramWidths.asInstanceOf[js.Any], leftPad.asInstanceOf[js.Any], rightPad.asInstanceOf[js.Any], padWidth.asInstanceOf[js.Any], preserveShortSequences.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+    
+    inline def stringSplit(
+      input: String | Double | Boolean | js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | (RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ]) | js.Array[js.typedarray.Uint8Array] | Tensor[R1],
+      delimiter: String | Double | Boolean | js.typedarray.Uint8Array | Tensor[R0],
+      skipEmpty: js.UndefOr[Boolean]
+    ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("stringSplit")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], skipEmpty.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+    
+    inline def stringToHashBucketFast(input: String, numBuckets: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToHashBucketFast")(input.asInstanceOf[js.Any], numBuckets.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def stringToHashBucketFast(input: js.Array[js.typedarray.Uint8Array], numBuckets: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToHashBucketFast")(input.asInstanceOf[js.Any], numBuckets.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def stringToHashBucketFast(input: js.typedarray.Float32Array, numBuckets: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToHashBucketFast")(input.asInstanceOf[js.Any], numBuckets.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def stringToHashBucketFast(input: js.typedarray.Int32Array, numBuckets: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToHashBucketFast")(input.asInstanceOf[js.Any], numBuckets.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def stringToHashBucketFast(input: js.typedarray.Uint8Array, numBuckets: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToHashBucketFast")(input.asInstanceOf[js.Any], numBuckets.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def stringToHashBucketFast(input: Boolean, numBuckets: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToHashBucketFast")(input.asInstanceOf[js.Any], numBuckets.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def stringToHashBucketFast(input: Double, numBuckets: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToHashBucketFast")(input.asInstanceOf[js.Any], numBuckets.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def stringToHashBucketFast(input: Tensor[Rank], numBuckets: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToHashBucketFast")(input.asInstanceOf[js.Any], numBuckets.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    inline def stringToHashBucketFast(
+      input: RecursiveArray[
+          js.Array[Double] | Boolean | Double | js.typedarray.Float32Array | js.typedarray.Int32Array | String | js.typedarray.Uint8Array
+        ],
+      numBuckets: Double
+    ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToHashBucketFast")(input.asInstanceOf[js.Any], numBuckets.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  }
+  
   inline def sub[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def sub[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def sub[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def sub[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  inline def subStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("subStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -2305,6 +3004,8 @@ object opsForConverterMod {
   
   inline def transpose[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def transpose[T /* <: Tensor[Rank] */](x: T | TensorLike, perm: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transpose[T /* <: Tensor[Rank] */](x: T | TensorLike, perm: js.Array[Double], conjugate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any], conjugate.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transpose[T /* <: Tensor[Rank] */](x: T | TensorLike, perm: Unit, conjugate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any], conjugate.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
@@ -2322,39 +3023,19 @@ object opsForConverterMod {
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
-    dtype: Unit,
-    seed: Double
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: Double,
-    dtype: float32
+    dtype: float32 | int32
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
-    dtype: float32,
+    dtype: float32 | int32,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
-    dtype: int32
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: Double,
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: Unit,
     dtype: Unit,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
@@ -2362,26 +3043,20 @@ object opsForConverterMod {
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Unit,
-    dtype: float32
+    dtype: float32 | int32
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Unit,
-    dtype: float32,
+    dtype: float32 | int32,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Unit,
-    dtype: int32
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: Unit,
-    dtype: int32,
+    dtype: Unit,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def truncatedNormal[R /* <: Rank */](
@@ -2393,39 +3068,19 @@ object opsForConverterMod {
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Double,
-    dtype: Unit,
-    seed: Double
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Unit,
-    stdDev: Double,
-    dtype: float32
+    dtype: float32 | int32
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Double,
-    dtype: float32,
+    dtype: float32 | int32,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Double,
-    dtype: int32
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Unit,
-    stdDev: Double,
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Unit,
-    stdDev: Unit,
     dtype: Unit,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
@@ -2433,26 +3088,20 @@ object opsForConverterMod {
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Unit,
-    dtype: float32
+    dtype: float32 | int32
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Unit,
-    dtype: float32,
+    dtype: float32 | int32,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   inline def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Unit,
     stdDev: Unit,
-    dtype: int32
-  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  inline def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Unit,
-    stdDev: Unit,
-    dtype: int32,
+    dtype: Unit,
     seed: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
@@ -2469,6 +3118,11 @@ object opsForConverterMod {
     /* axis */ js.UndefOr[Double], 
     js.Array[Tensor[Rank]]
   ] = js.native
+  
+  inline def upperBound(sortedSequence: Tensor[Rank], values: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def upperBound(sortedSequence: Tensor[Rank], values: TensorLike): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def upperBound(sortedSequence: TensorLike, values: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def upperBound(sortedSequence: TensorLike, values: TensorLike): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(sortedSequence.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
   inline def variable[R /* <: Rank */](initialValue: Tensor[R]): Variable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any]).asInstanceOf[Variable[R]]
   inline def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]

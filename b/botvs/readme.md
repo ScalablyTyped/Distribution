@@ -9,10 +9,10 @@ Typings are for version 1.0.5
 | ------------------ | :-------------: |
 | Full name          | botvs |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 156 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/botvs)

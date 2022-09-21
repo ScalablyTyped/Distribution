@@ -13,7 +13,7 @@ object pushRulesMod {
   
   @JSImport("gitlab/dist/types/core/services/PushRules", "PushRules")
   @js.native
-  class PushRules () extends BaseService {
+  open class PushRules () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def create(projectId: String): js.Promise[js.Object] = js.native

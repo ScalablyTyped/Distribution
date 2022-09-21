@@ -24,7 +24,7 @@ object dbMod {
     @js.native
     val ^ : js.Any = js.native
     inline def default[I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -42,7 +42,7 @@ object dbMod {
       ]]
     
     inline def createDatabase[I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -74,13 +74,13 @@ object dbMod {
     *                                                 map.
     * @param   [userOpts.fields=DefaultTableOpts.fields] - mapping of field key to {@link Field} object
     */
-  class Table[MClass /* <: Instantiable0[AnyModel] */] ()
+  open class Table[MClass /* <: Instantiable0[AnyModel] */] ()
     extends typings.reduxOrm.tableMod.Table[MClass] {
     def this(userOpts: ModelTableOpts[MClass]) = this()
   }
   
   inline def createDatabase[I /* <: IndexedModelClasses[
-    js.Any, 
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any

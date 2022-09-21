@@ -42,7 +42,6 @@ import typings.materializeCss.materializeCssStrings.setDate
 import typings.materializeCss.materializeCssStrings.showView
 import typings.materializeCss.materializeCssStrings.start
 import typings.materializeCss.materializeCssStrings.updateData
-import typings.std.Date
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -87,9 +86,9 @@ trait JQuery extends StObject {
   
   def datepicker(): JQuery = js.native
   def datepicker(method: /* keyof materialize-css.anon.PickDatepickeropenclosede */ open | close | destroy): JQuery = js.native
-  def datepicker(method: gotoDate, date: Date): JQuery = js.native
+  def datepicker(method: gotoDate, date: js.Date): JQuery = js.native
   def datepicker(method: setDate): JQuery = js.native
-  def datepicker(method: setDate, date: Date): JQuery = js.native
+  def datepicker(method: setDate, date: js.Date): JQuery = js.native
   def datepicker(options: PartialDatepickerOptions): JQuery = js.native
   
   def dropdown(): JQuery = js.native
@@ -150,11 +149,8 @@ trait JQuery extends StObject {
   
   def timepicker(): JQuery = js.native
   def timepicker(method: /* keyof materialize-css.anon.PickTimepickeropenclosede */ open | close | destroy): JQuery = js.native
+  def timepicker(method: showView, view: hours | minutes): JQuery = js.native
   def timepicker(options: PartialTimepickerOptions): JQuery = js.native
-  @JSName("timepicker")
-  def timepicker_hours(method: showView, view: hours): JQuery = js.native
-  @JSName("timepicker")
-  def timepicker_minutes(method: showView, view: minutes): JQuery = js.native
   
   def tooltip(): JQuery = js.native
   def tooltip(method: /* keyof materialize-css.anon.PickTooltipopenclosedestr */ open | close | destroy): JQuery = js.native

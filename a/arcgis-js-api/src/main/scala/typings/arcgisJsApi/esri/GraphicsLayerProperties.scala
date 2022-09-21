@@ -27,6 +27,8 @@ trait GraphicsLayerProperties
   /**
     * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#screenSizePerspectiveEnabled)
     */
   var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
@@ -48,7 +50,7 @@ object GraphicsLayerProperties {
     
     inline def setGraphicsUndefined: Self = StObject.set(x, "graphics", js.undefined)
     
-    inline def setGraphicsVarargs(value: GraphicProperties*): Self = StObject.set(x, "graphics", js.Array(value :_*))
+    inline def setGraphicsVarargs(value: GraphicProperties*): Self = StObject.set(x, "graphics", js.Array(value*))
     
     inline def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
     

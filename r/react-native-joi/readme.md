@@ -11,9 +11,9 @@ Object schema validation
 | Full name          | react-native-joi |
 | Keywords           | hapi, joi, schema, validation, react native |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 24704 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2413.3333333333335 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/GoldenOwlAsia/react-native-joi.git)

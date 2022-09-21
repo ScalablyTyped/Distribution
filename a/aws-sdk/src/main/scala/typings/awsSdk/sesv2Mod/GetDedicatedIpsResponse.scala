@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDedicatedIpsResponse extends StObject {
   
   /**
-    * A list of dedicated IP addresses that are associated with your AWS account.
+    * A list of dedicated IP addresses that are associated with your Amazon Web Services account.
     */
   var DedicatedIps: js.UndefOr[DedicatedIpList] = js.undefined
   
@@ -29,7 +29,7 @@ object GetDedicatedIpsResponse {
     
     inline def setDedicatedIpsUndefined: Self = StObject.set(x, "DedicatedIps", js.undefined)
     
-    inline def setDedicatedIpsVarargs(value: DedicatedIp*): Self = StObject.set(x, "DedicatedIps", js.Array(value :_*))
+    inline def setDedicatedIpsVarargs(value: DedicatedIp*): Self = StObject.set(x, "DedicatedIps", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

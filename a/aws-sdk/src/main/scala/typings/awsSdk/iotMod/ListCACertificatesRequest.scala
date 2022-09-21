@@ -20,6 +20,11 @@ trait ListCACertificatesRequest extends StObject {
     * The result page size.
     */
   var pageSize: js.UndefOr[PageSize] = js.undefined
+  
+  /**
+    * The name of the provisioning template.
+    */
+  var templateName: js.UndefOr[TemplateName] = js.undefined
 }
 object ListCACertificatesRequest {
   
@@ -41,5 +46,9 @@ object ListCACertificatesRequest {
     inline def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
   }
 }

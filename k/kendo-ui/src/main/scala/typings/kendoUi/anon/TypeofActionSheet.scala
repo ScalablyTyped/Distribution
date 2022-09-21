@@ -1,6 +1,6 @@
 package typings.kendoUi.anon
 
-import typings.kendoUi.kendo.mobile.ui.ActionSheet
+import typings.kendoUi.kendo.ui.ActionSheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

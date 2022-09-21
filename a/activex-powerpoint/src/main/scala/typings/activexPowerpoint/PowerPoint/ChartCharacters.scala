@@ -14,13 +14,13 @@ trait ChartCharacters extends StObject {
   
   val Creator: Double
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   val Font: ChartFont
   
-  def Insert(String: String): js.Any
+  def Insert(String: String): Any
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PhoneticCharacters: String
   
@@ -36,10 +36,10 @@ object ChartCharacters {
     Caption: String,
     Count: Double,
     Creator: Double,
-    Delete: () => js.Any,
+    Delete: () => Any,
     Font: ChartFont,
-    Insert: String => js.Any,
-    Parent: js.Any,
+    Insert: String => Any,
+    Parent: Any,
     PhoneticCharacters: String,
     PowerPointDotChartCharacters_typekey: ChartCharacters,
     Text: String
@@ -59,13 +59,13 @@ object ChartCharacters {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setFont(value: ChartFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    inline def setInsert(value: String => js.Any): Self = StObject.set(x, "Insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: String => Any): Self = StObject.set(x, "Insert", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPhoneticCharacters(value: String): Self = StObject.set(x, "PhoneticCharacters", value.asInstanceOf[js.Any])
     

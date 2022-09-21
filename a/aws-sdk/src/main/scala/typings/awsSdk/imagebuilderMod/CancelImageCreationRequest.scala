@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelImageCreationRequest extends StObject {
   
   /**
-    * The idempotency token used to make this request idempotent.
+    * Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see Ensuring idempotency in the Amazon EC2 API Reference.
     */
   var clientToken: ClientToken
   

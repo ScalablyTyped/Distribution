@@ -29,11 +29,11 @@ trait Notifications extends StObject {
   
   def getScheduledNotifications(): js.Promise[js.Array[Notification]]
   
-  def onNotification(listener: js.Function1[/* notification */ Notification, js.Any]): js.Function0[js.Any]
+  def onNotification(listener: js.Function1[/* notification */ Notification, Any]): js.Function0[Any]
   
-  def onNotificationDisplayed(listener: js.Function1[/* notification */ Notification, js.Any]): js.Function0[js.Any]
+  def onNotificationDisplayed(listener: js.Function1[/* notification */ Notification, Any]): js.Function0[Any]
   
-  def onNotificationOpened(listener: js.Function1[/* notificationOpen */ NotificationOpen, js.Any]): js.Function0[js.Any]
+  def onNotificationOpened(listener: js.Function1[/* notificationOpen */ NotificationOpen, Any]): js.Function0[Any]
   
   def removeAllDeliveredNotifications(): Unit
   
@@ -42,7 +42,7 @@ trait Notifications extends StObject {
   /**
     * Schedule a local notification to be shown on the device.
     */
-  def scheduleNotification(notification: Notification, schedule: Schedule): js.Any
+  def scheduleNotification(notification: Notification, schedule: Schedule): Any
   
   /**
     * Sets the badge number on the iOS app icon.
@@ -59,12 +59,12 @@ object Notifications {
     getBadge: () => js.Promise[Double],
     getInitialNotification: () => js.Promise[NotificationOpen],
     getScheduledNotifications: () => js.Promise[js.Array[Notification]],
-    onNotification: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any],
-    onNotificationDisplayed: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any],
-    onNotificationOpened: js.Function1[/* notificationOpen */ NotificationOpen, js.Any] => js.Function0[js.Any],
+    onNotification: js.Function1[/* notification */ Notification, Any] => js.Function0[Any],
+    onNotificationDisplayed: js.Function1[/* notification */ Notification, Any] => js.Function0[Any],
+    onNotificationOpened: js.Function1[/* notificationOpen */ NotificationOpen, Any] => js.Function0[Any],
     removeAllDeliveredNotifications: () => Unit,
     removeDeliveredNotification: String => Unit,
-    scheduleNotification: (Notification, Schedule) => js.Any,
+    scheduleNotification: (Notification, Schedule) => Any,
     setBadge: Double => Unit
   ): Notifications = {
     val __obj = js.Dynamic.literal(android = android.asInstanceOf[js.Any], cancelAllNotifications = js.Any.fromFunction0(cancelAllNotifications), cancelNotification = js.Any.fromFunction1(cancelNotification), displayNotification = js.Any.fromFunction1(displayNotification), getBadge = js.Any.fromFunction0(getBadge), getInitialNotification = js.Any.fromFunction0(getInitialNotification), getScheduledNotifications = js.Any.fromFunction0(getScheduledNotifications), onNotification = js.Any.fromFunction1(onNotification), onNotificationDisplayed = js.Any.fromFunction1(onNotificationDisplayed), onNotificationOpened = js.Any.fromFunction1(onNotificationOpened), removeAllDeliveredNotifications = js.Any.fromFunction0(removeAllDeliveredNotifications), removeDeliveredNotification = js.Any.fromFunction1(removeDeliveredNotification), scheduleNotification = js.Any.fromFunction2(scheduleNotification), setBadge = js.Any.fromFunction1(setBadge))
@@ -87,17 +87,17 @@ object Notifications {
     
     inline def setGetScheduledNotifications(value: () => js.Promise[js.Array[Notification]]): Self = StObject.set(x, "getScheduledNotifications", js.Any.fromFunction0(value))
     
-    inline def setOnNotification(value: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
+    inline def setOnNotification(value: js.Function1[/* notification */ Notification, Any] => js.Function0[Any]): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
     
-    inline def setOnNotificationDisplayed(value: js.Function1[/* notification */ Notification, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotificationDisplayed", js.Any.fromFunction1(value))
+    inline def setOnNotificationDisplayed(value: js.Function1[/* notification */ Notification, Any] => js.Function0[Any]): Self = StObject.set(x, "onNotificationDisplayed", js.Any.fromFunction1(value))
     
-    inline def setOnNotificationOpened(value: js.Function1[/* notificationOpen */ NotificationOpen, js.Any] => js.Function0[js.Any]): Self = StObject.set(x, "onNotificationOpened", js.Any.fromFunction1(value))
+    inline def setOnNotificationOpened(value: js.Function1[/* notificationOpen */ NotificationOpen, Any] => js.Function0[Any]): Self = StObject.set(x, "onNotificationOpened", js.Any.fromFunction1(value))
     
     inline def setRemoveAllDeliveredNotifications(value: () => Unit): Self = StObject.set(x, "removeAllDeliveredNotifications", js.Any.fromFunction0(value))
     
     inline def setRemoveDeliveredNotification(value: String => Unit): Self = StObject.set(x, "removeDeliveredNotification", js.Any.fromFunction1(value))
     
-    inline def setScheduleNotification(value: (Notification, Schedule) => js.Any): Self = StObject.set(x, "scheduleNotification", js.Any.fromFunction2(value))
+    inline def setScheduleNotification(value: (Notification, Schedule) => Any): Self = StObject.set(x, "scheduleNotification", js.Any.fromFunction2(value))
     
     inline def setSetBadge(value: Double => Unit): Self = StObject.set(x, "setBadge", js.Any.fromFunction1(value))
   }

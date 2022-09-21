@@ -10,10 +10,10 @@ Simple timeouts for promises
 | ------------------ | :-------------: |
 | Full name          | promise-timeout |
 | Keywords           | promise, timeout |
-| # releases         | 0 |
-| # dependents       | 67 |
-| # downloads        | 1410094 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 324138.0 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/building5/promise-timeout#readme)

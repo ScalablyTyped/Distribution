@@ -12,17 +12,25 @@ object anon {
     		Abort pending executions. All unresolved promises are rejected with a `pThrottle.AbortError` error.
     		*/
     def abort(): Unit
+    
+    /**
+    		Whether future function calls should be throttled or count towards throttling thresholds.
+    		@default true
+    		*/
+    var isEnabled: Boolean
   }
   object Abort {
     
-    inline def apply(abort: () => Unit): Abort = {
-      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
+    inline def apply(abort: () => Unit, isEnabled: Boolean): Abort = {
+      val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), isEnabled = isEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Abort]
     }
     
     extension [Self <: Abort](x: Self) {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     }
   }
 }

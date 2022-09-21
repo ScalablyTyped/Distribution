@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRichEditHyperlinkClickEventArgs")
 @js.native
-class ASPxClientRichEditHyperlinkClickEventArgs protected ()
+open class ASPxClientRichEditHyperlinkClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRichEditHyperlinkClickEventArgs {
   /**
@@ -20,7 +20,7 @@ class ASPxClientRichEditHyperlinkClickEventArgs protected ()
     * @param hyperlinkType The document link type.
     */
   def this(
-    htmlEvent: js.Any,
+    htmlEvent: Any,
     handled: Boolean,
     targetUri: String,
     hyperlinkType: typings.devexpressWeb.ASPxClientOfficeDocumentLinkType
@@ -36,7 +36,7 @@ class ASPxClientRichEditHyperlinkClickEventArgs protected ()
     * Gets a DHTML event object that relates to the processed event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets a value identifying the clicked hyperlink type.

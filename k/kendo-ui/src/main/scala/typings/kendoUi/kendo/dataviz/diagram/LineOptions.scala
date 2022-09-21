@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LineOptions extends StObject {
   
-  var from: js.UndefOr[js.Any] = js.undefined
+  var from: js.UndefOr[Any] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
   var stroke: js.UndefOr[LineStroke] = js.undefined
   
-  var to: js.UndefOr[js.Any] = js.undefined
+  var to: js.UndefOr[Any] = js.undefined
 }
 object LineOptions {
   
@@ -23,7 +23,7 @@ object LineOptions {
   
   extension [Self <: LineOptions](x: Self) {
     
-    inline def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
@@ -35,7 +35,7 @@ object LineOptions {
     
     inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }

@@ -11,8 +11,8 @@ trait ExtensionContext extends StObject {
   /**
     * Get the absolute path of a resource contained in the extension.
     *
-    * *Note* that an absolute uri can be constructed via [`Uri.joinPath`](#Uri.joinPath) and
-    * [`extensionUri`](#ExtensionContext.extensionUri), e.g. `vscode.Uri.joinPath(context.extensionUri, relativePath);`
+    * *Note* that an absolute uri can be constructed via {@linkcode Uri.joinPath} and
+    * {@linkcode ExtensionContext.extensionUri extensionUri}, e.g. `vscode.Uri.joinPath(context.extensionUri, relativePath);`
     *
     * @param relativePath A relative path to a resource contained in the extension.
     * @return The absolute path of the resource.
@@ -26,6 +26,11 @@ trait ExtensionContext extends StObject {
   val environmentVariableCollection: EnvironmentVariableCollection
   
   /**
+    * The current `Extension` instance.
+    */
+  val `extension`: Extension[Any]
+  
+  /**
     * The mode the extension is running in. This is specific to the current
     * extension. One extension may be in `ExtensionMode.Development` while
     * other extensions in the host run in `ExtensionMode.Release`.
@@ -34,7 +39,7 @@ trait ExtensionContext extends StObject {
   
   /**
     * The absolute file path of the directory containing the extension. Shorthand
-    * notation for [ExtensionContext.extensionUri.fsPath](#TextDocument.uri) (independent of the uri scheme).
+    * notation for {@link TextDocument.uri ExtensionContext.extensionUri.fsPath} (independent of the uri scheme).
     */
   val extensionPath: String
   
@@ -45,7 +50,7 @@ trait ExtensionContext extends StObject {
   
   /**
     * A memento object that stores state independent
-    * of the current opened [workspace](#workspace.workspaceFolders).
+    * of the current opened {@link workspace.workspaceFolders workspace}.
     */
   val globalState: MementosetKeysForSynckeys
   
@@ -54,9 +59,9 @@ trait ExtensionContext extends StObject {
     * The directory might not exist on disk and creation is
     * up to the extension. However, the parent directory is guaranteed to be existent.
     *
-    * Use [`globalState`](#ExtensionContext.globalState) to store key value data.
+    * Use {@linkcode ExtensionContext.globalState globalState} to store key value data.
     *
-    * @deprecated Use [globalStorageUri](#ExtensionContext.globalStorageUri) instead.
+    * @deprecated Use {@link ExtensionContext.globalStorageUri globalStorageUri} instead.
     */
   val globalStoragePath: String
   
@@ -65,9 +70,9 @@ trait ExtensionContext extends StObject {
     * The directory might not exist on disk and creation is
     * up to the extension. However, the parent directory is guaranteed to be existent.
     *
-    * Use [`globalState`](#ExtensionContext.globalState) to store key value data.
+    * Use {@linkcode ExtensionContext.globalState globalState} to store key value data.
     *
-    * @see [`workspace.fs`](#FileSystem) for how to read and write files and folders from
+    * @see {@linkcode FileSystem workspace.fs} for how to read and write files and folders from
     *  an uri.
     */
   val globalStorageUri: Uri
@@ -77,7 +82,7 @@ trait ExtensionContext extends StObject {
     * The directory might not exist on disk and creation is up to the extension. However,
     * the parent directory is guaranteed to be existent.
     *
-    * @deprecated Use [logUri](#ExtensionContext.logUri) instead.
+    * @deprecated Use {@link ExtensionContext.logUri logUri} instead.
     */
   val logPath: String
   
@@ -86,20 +91,26 @@ trait ExtensionContext extends StObject {
     * The directory might not exist on disk and creation is up to the extension. However,
     * the parent directory is guaranteed to be existent.
     *
-    * @see [`workspace.fs`](#FileSystem) for how to read and write files and folders from
+    * @see {@linkcode FileSystem workspace.fs} for how to read and write files and folders from
     *  an uri.
     */
   val logUri: Uri
+  
+  /**
+    * A storage utility for secrets. Secrets are persisted across reloads and are independent of the
+    * current opened {@link workspace.workspaceFolders workspace}.
+    */
+  val secrets: SecretStorage
   
   /**
     * An absolute file path of a workspace specific directory in which the extension
     * can store private state. The directory might not exist on disk and creation is
     * up to the extension. However, the parent directory is guaranteed to be existent.
     *
-    * Use [`workspaceState`](#ExtensionContext.workspaceState) or
-    * [`globalState`](#ExtensionContext.globalState) to store key value data.
+    * Use {@linkcode ExtensionContext.workspaceState workspaceState} or
+    * {@linkcode ExtensionContext.globalState globalState} to store key value data.
     *
-    * @deprecated Use [storageUri](#ExtensionContext.storageUri) instead.
+    * @deprecated Use {@link ExtensionContext.storageUri storageUri} instead.
     */
   val storagePath: js.UndefOr[String] = js.undefined
   
@@ -109,10 +120,10 @@ trait ExtensionContext extends StObject {
     * up to the extension. However, the parent directory is guaranteed to be existent.
     * The value is `undefined` when no workspace nor folder has been opened.
     *
-    * Use [`workspaceState`](#ExtensionContext.workspaceState) or
-    * [`globalState`](#ExtensionContext.globalState) to store key value data.
+    * Use {@linkcode ExtensionContext.workspaceState workspaceState} or
+    * {@linkcode ExtensionContext.globalState globalState} to store key value data.
     *
-    * @see [`workspace.fs`](#FileSystem) for how to read and write files and folders from
+    * @see {@linkcode FileSystem workspace.fs} for how to read and write files and folders from
     *  an uri.
     */
   val storageUri: js.UndefOr[Uri] = js.undefined
@@ -120,12 +131,14 @@ trait ExtensionContext extends StObject {
   /**
     * An array to which disposables can be added. When this
     * extension is deactivated the disposables will be disposed.
+    *
+    * *Note* that asynchronous dispose-functions aren't awaited.
     */
   val subscriptions: js.Array[Dispose]
   
   /**
     * A memento object that stores state in the context
-    * of the currently opened [workspace](#workspace.workspaceFolders).
+    * of the currently opened {@link workspace.workspaceFolders workspace}.
     */
   val workspaceState: Memento
 }
@@ -134,6 +147,7 @@ object ExtensionContext {
   inline def apply(
     asAbsolutePath: String => String,
     environmentVariableCollection: EnvironmentVariableCollection,
+    `extension`: Extension[Any],
     extensionMode: ExtensionMode,
     extensionPath: String,
     extensionUri: Uri,
@@ -142,10 +156,12 @@ object ExtensionContext {
     globalStorageUri: Uri,
     logPath: String,
     logUri: Uri,
+    secrets: SecretStorage,
     subscriptions: js.Array[Dispose],
     workspaceState: Memento
   ): ExtensionContext = {
-    val __obj = js.Dynamic.literal(asAbsolutePath = js.Any.fromFunction1(asAbsolutePath), environmentVariableCollection = environmentVariableCollection.asInstanceOf[js.Any], extensionMode = extensionMode.asInstanceOf[js.Any], extensionPath = extensionPath.asInstanceOf[js.Any], extensionUri = extensionUri.asInstanceOf[js.Any], globalState = globalState.asInstanceOf[js.Any], globalStoragePath = globalStoragePath.asInstanceOf[js.Any], globalStorageUri = globalStorageUri.asInstanceOf[js.Any], logPath = logPath.asInstanceOf[js.Any], logUri = logUri.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], workspaceState = workspaceState.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asAbsolutePath = js.Any.fromFunction1(asAbsolutePath), environmentVariableCollection = environmentVariableCollection.asInstanceOf[js.Any], extensionMode = extensionMode.asInstanceOf[js.Any], extensionPath = extensionPath.asInstanceOf[js.Any], extensionUri = extensionUri.asInstanceOf[js.Any], globalState = globalState.asInstanceOf[js.Any], globalStoragePath = globalStoragePath.asInstanceOf[js.Any], globalStorageUri = globalStorageUri.asInstanceOf[js.Any], logPath = logPath.asInstanceOf[js.Any], logUri = logUri.asInstanceOf[js.Any], secrets = secrets.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any], workspaceState = workspaceState.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionContext]
   }
   
@@ -154,6 +170,8 @@ object ExtensionContext {
     inline def setAsAbsolutePath(value: String => String): Self = StObject.set(x, "asAbsolutePath", js.Any.fromFunction1(value))
     
     inline def setEnvironmentVariableCollection(value: EnvironmentVariableCollection): Self = StObject.set(x, "environmentVariableCollection", value.asInstanceOf[js.Any])
+    
+    inline def setExtension(value: Extension[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     inline def setExtensionMode(value: ExtensionMode): Self = StObject.set(x, "extensionMode", value.asInstanceOf[js.Any])
     
@@ -171,6 +189,8 @@ object ExtensionContext {
     
     inline def setLogUri(value: Uri): Self = StObject.set(x, "logUri", value.asInstanceOf[js.Any])
     
+    inline def setSecrets(value: SecretStorage): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    
     inline def setStoragePath(value: String): Self = StObject.set(x, "storagePath", value.asInstanceOf[js.Any])
     
     inline def setStoragePathUndefined: Self = StObject.set(x, "storagePath", js.undefined)
@@ -181,7 +201,7 @@ object ExtensionContext {
     
     inline def setSubscriptions(value: js.Array[Dispose]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    inline def setSubscriptionsVarargs(value: Dispose*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: Dispose*): Self = StObject.set(x, "subscriptions", js.Array(value*))
     
     inline def setWorkspaceState(value: Memento): Self = StObject.set(x, "workspaceState", value.asInstanceOf[js.Any])
   }

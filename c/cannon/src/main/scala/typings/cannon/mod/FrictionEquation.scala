@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "FrictionEquation")
 @js.native
-class FrictionEquation protected ()
+open class FrictionEquation protected ()
   extends StObject
      with typings.cannon.CANNON.Equation {
   def this(bi: typings.cannon.CANNON.Body, bj: typings.cannon.CANNON.Body, slipForce: Double) = this()

@@ -32,7 +32,7 @@ object keyMod {
       
       inline def setKeyUsage(value: js.Array[String]): Self = StObject.set(x, "keyUsage", value.asInstanceOf[js.Any])
       
-      inline def setKeyUsageVarargs(value: String*): Self = StObject.set(x, "keyUsage", js.Array(value :_*))
+      inline def setKeyUsageVarargs(value: String*): Self = StObject.set(x, "keyUsage", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

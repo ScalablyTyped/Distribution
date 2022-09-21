@@ -82,7 +82,7 @@ object mod {
   @js.native
   trait Shader extends StObject {
     
-    val attributes: StringDictionary[Attribute & js.Array[js.Any]] = js.native
+    val attributes: StringDictionary[Attribute & js.Array[Any]] = js.native
     
     def bind(): Unit = js.native
     
@@ -94,7 +94,7 @@ object mod {
     
     val program: WebGLProgram = js.native
     
-    var uniforms: StringDictionary[js.Any] = js.native
+    var uniforms: StringDictionary[Any] = js.native
     
     def update(obj: Fragment): Unit = js.native
     def update(vertex: String, fragment: String): Unit = js.native

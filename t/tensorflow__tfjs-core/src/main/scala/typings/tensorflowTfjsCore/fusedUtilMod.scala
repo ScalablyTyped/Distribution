@@ -14,7 +14,14 @@ object fusedUtilMod {
   val ^ : js.Any = js.native
   
   inline def applyActivation(x: Tensor[Rank], activation: Activation): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyActivation")(x.asInstanceOf[js.Any], activation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def applyActivation(x: Tensor[Rank], activation: Activation, preluActivationWeights: Unit, leakyreluAlpha: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyActivation")(x.asInstanceOf[js.Any], activation.asInstanceOf[js.Any], preluActivationWeights.asInstanceOf[js.Any], leakyreluAlpha.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   inline def applyActivation(x: Tensor[Rank], activation: Activation, preluActivationWeights: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyActivation")(x.asInstanceOf[js.Any], activation.asInstanceOf[js.Any], preluActivationWeights.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def applyActivation(
+    x: Tensor[Rank],
+    activation: Activation,
+    preluActivationWeights: Tensor[Rank],
+    leakyreluAlpha: Double
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyActivation")(x.asInstanceOf[js.Any], activation.asInstanceOf[js.Any], preluActivationWeights.asInstanceOf[js.Any], leakyreluAlpha.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
   inline def getFusedBiasGradient(bias: Tensor[Rank], dyActivation: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFusedBiasGradient")(bias.asInstanceOf[js.Any], dyActivation.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   

@@ -31,16 +31,15 @@ object layoutPanelMod {
   
   @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", JSImport.Default)
   @js.native
-  class default () extends LayoutPanel
+  open class default () extends LayoutPanel
   object default {
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Actions")
     @js.native
-    class Actions protected ()
-      extends Component[HTMLAttributes[HTMLDivElement], ComponentState, js.Any] {
+    open class Actions protected () extends Component[HTMLAttributes[HTMLDivElement], ComponentState, Any] {
       def this(props: HTMLAttributes[HTMLDivElement]) = this()
-      def this(props: HTMLAttributes[HTMLDivElement], context: js.Any) = this()
+      def this(props: HTMLAttributes[HTMLDivElement], context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<react.react.HTMLAttributes<std.HTMLDivElement>, react.react.ComponentState> & {  displayName :'LayoutPanel.Actions'} */
@@ -52,18 +51,18 @@ object layoutPanelMod {
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Actions.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Actions.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Actions.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Actions.defaultProps")
       @js.native
@@ -94,10 +93,9 @@ object layoutPanelMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Body")
     @js.native
-    class Body protected ()
-      extends Component[HTMLAttributes[HTMLDivElement], ComponentState, js.Any] {
+    open class Body protected () extends Component[HTMLAttributes[HTMLDivElement], ComponentState, Any] {
       def this(props: HTMLAttributes[HTMLDivElement]) = this()
-      def this(props: HTMLAttributes[HTMLDivElement], context: js.Any) = this()
+      def this(props: HTMLAttributes[HTMLDivElement], context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<react.react.HTMLAttributes<std.HTMLDivElement>, react.react.ComponentState> & {  displayName :'LayoutPanel.Body'} */
@@ -109,18 +107,18 @@ object layoutPanelMod {
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Body.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Body.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Body.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Body.defaultProps")
       @js.native
@@ -151,10 +149,9 @@ object layoutPanelMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Filters")
     @js.native
-    class Filters protected ()
-      extends Component[HTMLAttributes[HTMLDivElement], ComponentState, js.Any] {
+    open class Filters protected () extends Component[HTMLAttributes[HTMLDivElement], ComponentState, Any] {
       def this(props: HTMLAttributes[HTMLDivElement]) = this()
-      def this(props: HTMLAttributes[HTMLDivElement], context: js.Any) = this()
+      def this(props: HTMLAttributes[HTMLDivElement], context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<react.react.HTMLAttributes<std.HTMLDivElement>, react.react.ComponentState> & {  displayName :'LayoutPanel.Filters'} */
@@ -166,18 +163,18 @@ object layoutPanelMod {
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Filters.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Filters.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Filters.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Filters.defaultProps")
       @js.native
@@ -208,10 +205,9 @@ object layoutPanelMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Footer")
     @js.native
-    class Footer protected ()
-      extends Component[HTMLAttributes[HTMLDivElement], ComponentState, js.Any] {
+    open class Footer protected () extends Component[HTMLAttributes[HTMLDivElement], ComponentState, Any] {
       def this(props: HTMLAttributes[HTMLDivElement]) = this()
-      def this(props: HTMLAttributes[HTMLDivElement], context: js.Any) = this()
+      def this(props: HTMLAttributes[HTMLDivElement], context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<react.react.HTMLAttributes<std.HTMLDivElement>, react.react.ComponentState> & {  displayName :'LayoutPanel.Footer'} */
@@ -223,18 +219,18 @@ object layoutPanelMod {
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Footer.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Footer.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Footer.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Footer.defaultProps")
       @js.native
@@ -265,10 +261,9 @@ object layoutPanelMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Head")
     @js.native
-    class Head protected ()
-      extends Component[LayoutPanelHeadProps, ComponentState, js.Any] {
+    open class Head protected () extends Component[LayoutPanelHeadProps, ComponentState, Any] {
       def this(props: LayoutPanelHeadProps) = this()
-      def this(props: LayoutPanelHeadProps, context: js.Any) = this()
+      def this(props: LayoutPanelHeadProps, context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/LayoutPanel/LayoutPanel.LayoutPanelHeadProps, react.react.ComponentState> & {  displayName :'LayoutPanel.Head'} */
@@ -280,18 +275,18 @@ object layoutPanelMod {
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Head.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Head.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Head.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Head.defaultProps")
       @js.native
@@ -322,10 +317,9 @@ object layoutPanelMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Header")
     @js.native
-    class Header protected ()
-      extends Component[HTMLAttributes[HTMLDivElement], ComponentState, js.Any] {
+    open class Header protected () extends Component[HTMLAttributes[HTMLDivElement], ComponentState, Any] {
       def this(props: HTMLAttributes[HTMLDivElement]) = this()
-      def this(props: HTMLAttributes[HTMLDivElement], context: js.Any) = this()
+      def this(props: HTMLAttributes[HTMLDivElement], context: Any) = this()
     }
     /* static member */
     /* Inlined react.react.ComponentClass<react.react.HTMLAttributes<std.HTMLDivElement>, react.react.ComponentState> & {  displayName :'LayoutPanel.Header'} */
@@ -337,18 +331,18 @@ object layoutPanelMod {
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Header.childContextTypes")
       @js.native
-      def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Header.contextType")
       @js.native
-      def contextType: js.UndefOr[Context[js.Any]] = js.native
-      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      def contextType: js.UndefOr[Context[Any]] = js.native
+      inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Header.contextTypes")
       @js.native
-      def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/LayoutPanel/LayoutPanel", "default.Header.defaultProps")
       @js.native
@@ -379,7 +373,7 @@ object layoutPanelMod {
   
   @js.native
   trait LayoutPanel
-    extends Component[HTMLAttributes[HTMLDivElement], js.Object, js.Any] {
+    extends Component[HTMLAttributes[HTMLDivElement], js.Object, Any] {
     
     var displayName: typings.fundamentalReact.fundamentalReactStrings.LayoutPanel = js.native
   }

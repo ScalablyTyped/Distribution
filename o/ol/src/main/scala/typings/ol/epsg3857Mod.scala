@@ -20,6 +20,10 @@ object epsg3857Mod {
   @js.native
   val HALF_SIZE: Double = js.native
   
+  @JSImport("ol/proj/epsg3857", "MAX_SAFE_Y")
+  @js.native
+  val MAX_SAFE_Y: Double = js.native
+  
   @JSImport("ol/proj/epsg3857", "PROJECTIONS")
   @js.native
   val PROJECTIONS: js.Array[default] = js.native

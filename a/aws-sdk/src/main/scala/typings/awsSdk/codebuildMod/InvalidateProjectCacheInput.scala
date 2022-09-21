@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InvalidateProjectCacheInput extends StObject {
   
   /**
-    * The name of the AWS CodeBuild build project that the cache is reset for.
+    * The name of the CodeBuild build project that the cache is reset for.
     */
   var projectName: NonEmptyString
 }

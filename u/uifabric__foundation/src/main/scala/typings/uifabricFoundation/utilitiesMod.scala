@@ -8,5 +8,5 @@ object utilitiesMod {
   
   @JSImport("@uifabric/foundation/lib/utilities", "assign")
   @js.native
-  val assign: js.Function2[/* t */ js.Any, /* repeated */ js.Any, js.Any] = js.native
+  val assign: js.Function2[/* t */ Any, /* repeated */ Any, Any] = js.native
 }

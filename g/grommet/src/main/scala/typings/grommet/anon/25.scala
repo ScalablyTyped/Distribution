@@ -1,18 +1,13 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
-import typings.std.Record
+import typings.grommet.utilsMod.OpacityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `25` extends StObject {
   
-  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
-  
-  var size: js.UndefOr[LargeMedium] = js.undefined
+  var opacity: js.UndefOr[OpacityType] = js.undefined
 }
 object `25` {
   
@@ -23,14 +18,8 @@ object `25` {
   
   extension [Self <: `25`](x: Self) {
     
-    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: OpacityType): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
-    
-    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
-    
-    inline def setSize(value: LargeMedium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

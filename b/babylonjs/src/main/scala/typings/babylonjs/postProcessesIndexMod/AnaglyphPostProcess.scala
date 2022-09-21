@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/PostProcesses/index", "AnaglyphPostProcess")
 @js.native
-class AnaglyphPostProcess protected ()
+open class AnaglyphPostProcess protected ()
   extends typings.babylonjs.anaglyphPostProcessMod.AnaglyphPostProcess {
   /**
     * Creates a new AnaglyphPostProcess

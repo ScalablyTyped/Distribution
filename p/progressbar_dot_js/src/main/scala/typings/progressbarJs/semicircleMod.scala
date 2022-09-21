@@ -9,7 +9,7 @@ object semicircleMod {
   
   @JSImport("progressbar.js/semicircle", JSImport.Namespace)
   @js.native
-  class ^ () extends SemiCircle
+  open class ^ () extends SemiCircle
   
   @js.native
   trait SemiCircle

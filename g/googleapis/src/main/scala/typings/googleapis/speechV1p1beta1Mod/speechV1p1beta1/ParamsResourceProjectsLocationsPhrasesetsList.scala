@@ -1,0 +1,47 @@
+package typings.googleapis.speechV1p1beta1Mod.speechV1p1beta1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParamsResourceProjectsLocationsPhrasesetsList
+  extends StObject
+     with StandardParameters {
+  
+  /**
+    * The maximum number of phrase sets to return. The service may return fewer than this value. If unspecified, at most 50 phrase sets will be returned. The maximum value is 1000; values above 1000 will be coerced to 1000.
+    */
+  var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * A page token, received from a previous `ListPhraseSet` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to `ListPhraseSet` must match the call that provided the page token.
+    */
+  var pageToken: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Required. The parent, which owns this collection of phrase set. Format: `projects/{project\}/locations/{location\}` Speech-to-Text supports three locations: `global`, `us` (US North America), and `eu` (Europe). If you are calling the `speech.googleapis.com` endpoint, use the `global` location. To specify a region, use a [regional endpoint](https://cloud.google.com/speech-to-text/docs/endpoints) with matching `us` or `eu` location value.
+    */
+  var parent: js.UndefOr[String] = js.undefined
+}
+object ParamsResourceProjectsLocationsPhrasesetsList {
+  
+  inline def apply(): ParamsResourceProjectsLocationsPhrasesetsList = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ParamsResourceProjectsLocationsPhrasesetsList]
+  }
+  
+  extension [Self <: ParamsResourceProjectsLocationsPhrasesetsList](x: Self) {
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+  }
+}

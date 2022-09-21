@@ -1,6 +1,6 @@
 package typings.browserfs
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ object inodeMod {
   
   @JSImport("browserfs/dist/node/generic/inode", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Inode {
     def this(id: String, size: Double, mode: Double, atime: Double, mtime: Double, ctime: Double) = this()

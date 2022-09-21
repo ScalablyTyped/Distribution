@@ -33,7 +33,7 @@ object Rule {
     
     inline def setClauses(value: js.Array[FilterClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
-    inline def setClausesVarargs(value: FilterClause*): Self = StObject.set(x, "clauses", js.Array(value :_*))
+    inline def setClausesVarargs(value: FilterClause*): Self = StObject.set(x, "clauses", js.Array(value*))
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

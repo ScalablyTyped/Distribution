@@ -1,6 +1,6 @@
 package typings.strtok3
 
-import typings.node.streamMod.Readable
+import typings.node.nodeStreamMod.Readable
 import typings.strtok3.abstractTokenizerMod.AbstractTokenizer
 import typings.strtok3.typesMod.IFileInfo
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ object readStreamTokenizerMod {
   
   @JSImport("strtok3/lib/ReadStreamTokenizer", "ReadStreamTokenizer")
   @js.native
-  class ReadStreamTokenizer protected () extends AbstractTokenizer {
+  open class ReadStreamTokenizer protected () extends AbstractTokenizer {
     def this(stream: Readable) = this()
     def this(stream: Readable, fileInfo: IFileInfo) = this()
     
@@ -21,6 +21,6 @@ object readStreamTokenizerMod {
       */
     def getFileInfo(): js.Promise[IFileInfo] = js.native
     
-    /* private */ var streamReader: js.Any = js.native
+    /* private */ var streamReader: Any = js.native
   }
 }

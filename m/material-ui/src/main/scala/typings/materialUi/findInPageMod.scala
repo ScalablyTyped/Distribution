@@ -10,10 +10,10 @@ object findInPageMod {
   
   @JSImport("material-ui/svg-icons/action/find-in-page", JSImport.Default)
   @js.native
-  class default () extends ActionFindInPage
+  open class default () extends ActionFindInPage
   
   @JSImport("material-ui/svg-icons/action/find-in-page", "ActionFindInPage")
   @js.native
-  class ActionFindInPage ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionFindInPage ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

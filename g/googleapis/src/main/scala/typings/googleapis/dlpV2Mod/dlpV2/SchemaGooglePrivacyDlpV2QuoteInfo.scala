@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Message for infoType-dependent details parsed from quote.
-  */
 trait SchemaGooglePrivacyDlpV2QuoteInfo extends StObject {
   
   /**

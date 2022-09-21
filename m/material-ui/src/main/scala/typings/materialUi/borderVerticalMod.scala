@@ -10,10 +10,10 @@ object borderVerticalMod {
   
   @JSImport("material-ui/svg-icons/editor/border-vertical", JSImport.Default)
   @js.native
-  class default () extends EditorBorderVertical
+  open class default () extends EditorBorderVertical
   
   @JSImport("material-ui/svg-icons/editor/border-vertical", "EditorBorderVertical")
   @js.native
-  class EditorBorderVertical ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorBorderVertical ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for delaunator
 
-Typings are for version 3.0
+Typings are for version 5.0
 
 ## Library description:
 An incredibly fast JavaScript library for Delaunay triangulation of 2D points
@@ -10,10 +10,10 @@ An incredibly fast JavaScript library for Delaunay triangulation of 2D points
 | ------------------ | :-------------: |
 | Full name          | delaunator |
 | Keywords           | delaunay triangulation, computational geometry, algorithms |
-| # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 12776358 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4937577.333333333 |
+| # stars            | 1773.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/delaunator#readme)

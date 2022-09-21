@@ -16,7 +16,7 @@ trait BuildOptions
     *
     * TODO: See set
     */
-  var include: js.UndefOr[js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]] = js.undefined
+  var include: js.UndefOr[js.Array[(Model[Any, Any, Any]) | IncludeOptions]] = js.undefined
   
   /**
     * Is this record new
@@ -37,11 +37,11 @@ object BuildOptions {
   
   extension [Self <: BuildOptions](x: Self) {
     
-    inline def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: js.Array[(Model[Any, Any, Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: ((Model[Any, Any, Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setIsNewRecord(value: Boolean): Self = StObject.set(x, "isNewRecord", value.asInstanceOf[js.Any])
     

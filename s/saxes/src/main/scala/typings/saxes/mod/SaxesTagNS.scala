@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Required<saxes.saxes.SaxesTag> & {  attributes :std.Record<string, saxes.saxes.SaxesAttributeNS>} */
 trait SaxesTagNS
   extends StObject
-     with TagForOptions[js.Any] {
+     with TagForOptions[Any] {
   
   var attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS])
   

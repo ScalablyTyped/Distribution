@@ -1,32 +1,31 @@
 package typings.waterline.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ModelInstance extends StObject {
   
-  var createdAt: js.UndefOr[Date] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   var id: js.UndefOr[Double | String] = js.undefined
   
   def save(): WaterlinePromise[this.type]
   
-  def toJSON(): js.Any
+  def toJSON(): Any
   
-  var updatedAt: js.UndefOr[Date] = js.undefined
+  var updatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object ModelInstance {
   
-  inline def apply(save: () => WaterlinePromise[ModelInstance], toJSON: () => js.Any): ModelInstance = {
+  inline def apply(save: () => WaterlinePromise[ModelInstance], toJSON: () => Any): ModelInstance = {
     val __obj = js.Dynamic.literal(save = js.Any.fromFunction0(save), toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[ModelInstance]
   }
   
   extension [Self <: ModelInstance](x: Self) {
     
-    inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -36,9 +35,9 @@ object ModelInstance {
     
     inline def setSave(value: () => WaterlinePromise[ModelInstance]): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
     
-    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
-    inline def setUpdatedAt(value: Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }

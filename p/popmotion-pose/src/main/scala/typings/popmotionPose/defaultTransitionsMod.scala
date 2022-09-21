@@ -18,10 +18,10 @@ object defaultTransitionsMod {
   val default: Map[
     String, 
     TransitionMap[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
       TransitionDefinition
     ]
   ] = js.native
   
-  inline def just(from: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(from.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def just(from: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(from.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

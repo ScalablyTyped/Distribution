@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.FieldLink")
 @js.native
-class FieldLink ()
+open class FieldLink ()
   extends StObject
      with typings.sharepoint.SP.FieldLink

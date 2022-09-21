@@ -26,7 +26,7 @@ object anon {
       
       inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
-      inline def setEntriesVarargs(value: T*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: T*): Self = StObject.set(x, "entries", js.Array(value*))
       
       inline def setSortAndExpand(value: Boolean): Self = StObject.set(x, "sortAndExpand", value.asInstanceOf[js.Any])
       

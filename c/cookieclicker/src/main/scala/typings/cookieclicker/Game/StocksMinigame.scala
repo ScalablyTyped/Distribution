@@ -1,6 +1,9 @@
 package typings.cookieclicker.Game
 
 import typings.cookieclicker.CanvasRenderingContext2D
+import typings.cookieclicker.cookieclickerNumbers.`0`
+import typings.cookieclicker.cookieclickerNumbers.`1`
+import typings.cookieclicker.cookieclickerNumbers.`2`
 import typings.std.HTMLCanvasElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -43,6 +46,9 @@ trait StocksMinigame
     */
   def drawGraph(): Unit = js.native
   def drawGraph(full: Boolean): Unit = js.native
+  
+  @JSName("draw")
+  def draw_MStocksMinigame(): Unit = js.native
   
   /**
     * Calculates the price of brokers
@@ -130,6 +136,9 @@ trait StocksMinigame
     */
   var loanTypes: js.Array[js.Tuple7[String, Double, Double, Double, Double, Double, String]] = js.native
   
+  @JSName("logic")
+  def logic_MStocksMinigame(): Unit = js.native
+  
   var officeLevel: Double = js.native
   
   /**
@@ -138,6 +147,9 @@ trait StocksMinigame
   def officeTooltip(): js.Function0[String] = js.native
   
   var offices: js.Array[StocksOffice] = js.native
+  
+  @JSName("onResize")
+  def onResize_MStocksMinigame(): Unit = js.native
   
   /** @deprecated */
   def oppTooltip(): js.Function0[String] = js.native
@@ -185,7 +197,7 @@ trait StocksMinigame
     */
   var ticks: Double = js.native
   
-  var toRedraw: PseudoBoolean = js.native
+  var toRedraw: `0` | `1` | `2` = js.native
   
   /**
     * Generates the tooltip function for a buy/sell button

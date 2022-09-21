@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "ModalDialog")
 @js.native
-class ModalDialog () extends ^
+open class ModalDialog () extends ^

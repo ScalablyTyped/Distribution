@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The number of winning bids with the specified dimension values for which
-  * the buyer was not billed, as described by the specified status.
-  */
 trait SchemaNonBillableWinningBidStatusRow extends StObject {
   
   /**
@@ -23,7 +19,7 @@ trait SchemaNonBillableWinningBidStatusRow extends StObject {
   /**
     * The status specifying why the winning bids were not billed.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaNonBillableWinningBidStatusRow {
   
@@ -43,6 +39,8 @@ object SchemaNonBillableWinningBidStatusRow {
     inline def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

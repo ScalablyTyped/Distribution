@@ -4,23 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for listing all reasons that bids lost in the auction.
-  */
 trait SchemaListLosingBidsResponse extends StObject {
   
   /**
-    * List of rows, with counts of losing bids aggregated by loss reason (i.e.
-    * creative status).
+    * List of rows, with counts of losing bids aggregated by loss reason (i.e. creative status).
     */
   var creativeStatusRows: js.UndefOr[js.Array[SchemaCreativeStatusRow]] = js.undefined
   
   /**
-    * A token to retrieve the next page of results. Pass this value in the
-    * ListLosingBidsRequest.pageToken field in the subsequent call to the
-    * losingBids.list method to retrieve the next page of results.
+    * A token to retrieve the next page of results. Pass this value in the ListLosingBidsRequest.pageToken field in the subsequent call to the losingBids.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListLosingBidsResponse {
   
@@ -35,9 +29,11 @@ object SchemaListLosingBidsResponse {
     
     inline def setCreativeStatusRowsUndefined: Self = StObject.set(x, "creativeStatusRows", js.undefined)
     
-    inline def setCreativeStatusRowsVarargs(value: SchemaCreativeStatusRow*): Self = StObject.set(x, "creativeStatusRows", js.Array(value :_*))
+    inline def setCreativeStatusRowsVarargs(value: SchemaCreativeStatusRow*): Self = StObject.set(x, "creativeStatusRows", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

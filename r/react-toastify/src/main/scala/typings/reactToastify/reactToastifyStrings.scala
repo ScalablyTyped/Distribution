@@ -1,7 +1,12 @@
 package typings.reactToastify
 
+import typings.reactToastify.constantMod.Default
+import typings.reactToastify.constantMod.Direction
 import typings.reactToastify.constantMod.KeyOfPosition
 import typings.reactToastify.constantMod.KeyOfType
+import typings.reactToastify.typesMod.DraggableDirection
+import typings.reactToastify.typesMod.Theme
+import typings.reactToastify.typesMod.ToastItemStatus
 import typings.reactToastify.typesMod.ToastPosition
 import typings.reactToastify.typesMod.TypeOptions
 import org.scalablytyped.runtime.StObject
@@ -9,10 +14,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactToastifyStrings {
-  
-  @js.native
-  sealed trait ADD extends StObject
-  inline def ADD: ADD = "ADD".asInstanceOf[ADD]
   
   @js.native
   sealed trait BOTTOM_CENTER
@@ -31,12 +32,6 @@ object reactToastifyStrings {
     extends StObject
        with KeyOfPosition
   inline def BOTTOM_RIGHT: BOTTOM_RIGHT = "BOTTOM_RIGHT".asInstanceOf[BOTTOM_RIGHT]
-  
-  @js.native
-  sealed trait DARK
-    extends StObject
-       with KeyOfType
-  inline def DARK: DARK = "DARK".asInstanceOf[DARK]
   
   @js.native
   sealed trait DEFAULT
@@ -59,10 +54,6 @@ object reactToastifyStrings {
   @js.native
   sealed trait Nullable extends StObject
   inline def Nullable: Nullable = "Nullable".asInstanceOf[Nullable]
-  
-  @js.native
-  sealed trait REMOVE extends StObject
-  inline def REMOVE: REMOVE = "REMOVE".asInstanceOf[REMOVE]
   
   @js.native
   sealed trait SUCCESS
@@ -91,7 +82,7 @@ object reactToastifyStrings {
   @js.native
   sealed trait Toastify
     extends StObject
-       with typings.reactToastify.constantMod.DEFAULT
+       with Default
   inline def Toastify: Toastify = "Toastify".asInstanceOf[Toastify]
   
   @js.native
@@ -99,6 +90,12 @@ object reactToastifyStrings {
     extends StObject
        with KeyOfType
   inline def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
+  
+  @js.native
+  sealed trait added
+    extends StObject
+       with ToastItemStatus
+  inline def added: added = "added".asInstanceOf[added]
   
   @js.native
   sealed trait `bottom-center`
@@ -119,10 +116,20 @@ object reactToastifyStrings {
   inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
-  sealed trait dark_
+  sealed trait colored
     extends StObject
-       with TypeOptions
-  inline def dark_ : dark_ = "dark".asInstanceOf[dark_]
+       with Theme
+  inline def colored: colored = "colored".asInstanceOf[colored]
+  
+  @js.native
+  sealed trait d extends StObject
+  inline def d: d = "d".asInstanceOf[d]
+  
+  @js.native
+  sealed trait dark
+    extends StObject
+       with Theme
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait default_
@@ -141,6 +148,18 @@ object reactToastifyStrings {
     extends StObject
        with TypeOptions
   inline def info_ : info_ = "info".asInstanceOf[info_]
+  
+  @js.native
+  sealed trait light
+    extends StObject
+       with Theme
+  inline def light: light = "light".asInstanceOf[light]
+  
+  @js.native
+  sealed trait removed
+    extends StObject
+       with ToastItemStatus
+  inline def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
   sealed trait success_
@@ -167,8 +186,28 @@ object reactToastifyStrings {
   inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
+  sealed trait updated
+    extends StObject
+       with ToastItemStatus
+  inline def updated: updated = "updated".asInstanceOf[updated]
+  
+  @js.native
   sealed trait warning_
     extends StObject
        with TypeOptions
   inline def warning_ : warning_ = "warning".asInstanceOf[warning_]
+  
+  @js.native
+  sealed trait x
+    extends StObject
+       with Direction
+       with DraggableDirection
+  inline def x: x = "x".asInstanceOf[x]
+  
+  @js.native
+  sealed trait y
+    extends StObject
+       with Direction
+       with DraggableDirection
+  inline def y: y = "y".asInstanceOf[y]
 }

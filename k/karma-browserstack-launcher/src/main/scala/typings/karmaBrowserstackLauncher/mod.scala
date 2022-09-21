@@ -176,7 +176,7 @@ object mod {
     * you can also pass through any additional options supported by browserstack. (EG. `url`, `resolution`, etc.)
     * See {@link browserstack.com/automate/capabilities} for a full list of supported options.
     */
-  /* option */ StringDictionary[js.Any] {
+  /* option */ StringDictionary[Any] {
     
     /** name of the browser */
     var browser: js.UndefOr[String | Null] = js.undefined

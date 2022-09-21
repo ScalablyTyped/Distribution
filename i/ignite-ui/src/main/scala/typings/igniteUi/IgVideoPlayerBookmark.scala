@@ -10,7 +10,7 @@ trait IgVideoPlayerBookmark
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets whether the bookmark is disabled or not.

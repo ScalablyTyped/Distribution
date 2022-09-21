@@ -14,10 +14,10 @@ object SignatureInformation {
     label: String,
     documentation: String,
     parameters: typings.vscodeLanguageserverTypes.mod.ParameterInformation*
-  ): typings.vscodeLanguageserverTypes.mod.SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SignatureInformation]
+  ): typings.vscodeLanguageserverTypes.mod.SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).`++`(parameters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SignatureInformation]
   inline def create(
     label: String,
     documentation: Unit,
     parameters: typings.vscodeLanguageserverTypes.mod.ParameterInformation*
-  ): typings.vscodeLanguageserverTypes.mod.SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SignatureInformation]
+  ): typings.vscodeLanguageserverTypes.mod.SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).`++`(parameters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscodeLanguageserverTypes.mod.SignatureInformation]
 }

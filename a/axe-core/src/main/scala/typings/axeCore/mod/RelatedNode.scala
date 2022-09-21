@@ -23,6 +23,6 @@ object RelatedNode {
     
     inline def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value*))
   }
 }

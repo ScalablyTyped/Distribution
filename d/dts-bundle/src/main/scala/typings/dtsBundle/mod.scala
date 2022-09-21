@@ -1,6 +1,5 @@
 package typings.dtsBundle
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object mod {
     
     var emitOnNoIncludedFileNotFound: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[RegExp | (js.Function2[/* file */ String, /* external */ Boolean, Boolean])] = js.undefined
+    var exclude: js.UndefOr[js.RegExp | (js.Function2[/* file */ String, /* external */ Boolean, Boolean])] = js.undefined
     
     var externals: js.UndefOr[Boolean] = js.undefined
     
@@ -72,7 +71,7 @@ object mod {
       
       inline def setEmitOnNoIncludedFileNotFoundUndefined: Self = StObject.set(x, "emitOnNoIncludedFileNotFound", js.undefined)
       
-      inline def setExclude(value: RegExp | (js.Function2[/* file */ String, /* external */ Boolean, Boolean])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.RegExp | (js.Function2[/* file */ String, /* external */ Boolean, Boolean])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeFunction2(value: (/* file */ String, /* external */ Boolean) => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction2(value))
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobile-detect
 
-Typings are for version 1.4.4
+Typings are for version 1.4.5
 
 ## Library description:
 Device detection (phone, tablet, desktop, mobile grade, os, versions)
@@ -11,9 +11,9 @@ Device detection (phone, tablet, desktop, mobile grade, os, versions)
 | Full name          | mobile-detect |
 | Keywords           | useragent, mobile, phone, tablet, detect, device, browser, version, mobilegrade, sniff |
 | # releases         | 2 |
-| # dependents       | 247 |
-| # downloads        | 8441159 |
-| # stars            | 57 |
+| # dependents       | 0.0 |
+| # downloads        | 739164.0 |
+| # stars            | 3926.0 |
 
 ## Links
 - [Homepage](https://hgoebl.github.io/mobile-detect.js/)

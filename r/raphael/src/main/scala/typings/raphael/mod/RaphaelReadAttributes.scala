@@ -73,6 +73,6 @@ object RaphaelReadAttributes {
     
     inline def setTransform(value: js.Array[RaphaelTransformSegment]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    inline def setTransformVarargs(value: RaphaelTransformSegment*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: RaphaelTransformSegment*): Self = StObject.set(x, "transform", js.Array(value*))
   }
 }

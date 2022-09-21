@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.Gauge")
 @js.native
-class Gauge protected ()
+open class Gauge protected ()
   extends StObject
      with typings.googleVisualization.google.visualization.Gauge {
   def this(element: Element) = this()

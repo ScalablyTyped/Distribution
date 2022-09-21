@@ -10,10 +10,10 @@ Computes the longest prefix string that is common to each path, excluding the ba
 | ------------------ | :-------------: |
 | Full name          | common-path-prefix |
 | Keywords           | common, path, directory, dir, file, root, typescript, common prefix, common path, common path start, common root |
-| # releases         | 3 |
-| # dependents       | 26 |
-| # downloads        | 12465478 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5095363666666666E7 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/novemberborn/common-path-prefix#readme)

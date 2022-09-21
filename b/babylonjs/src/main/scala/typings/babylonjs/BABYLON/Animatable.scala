@@ -7,26 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Animatable extends StObject {
   
-  /** @hidden */
+  /**
+    * @param delay
+    * @hidden
+    */
   def _animate(delay: Double): Boolean = js.native
   
-  /* private */ var _localDelayOffset: js.Any = js.native
+  /* private */ var _frameToSyncFromJump: Any = js.native
   
-  /* private */ var _paused: js.Any = js.native
+  /* private */ var _localDelayOffset: Any = js.native
   
-  /* private */ var _pausedDelay: js.Any = js.native
+  /* private */ var _manualJumpDelay: Any = js.native
   
-  /* private */ var _raiseOnAnimationEnd: js.Any = js.native
+  /* private */ var _paused: Any = js.native
   
-  /* private */ var _runtimeAnimations: js.Any = js.native
+  /* private */ var _pausedDelay: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _raiseOnAnimationEnd: Any = js.native
   
-  /* private */ var _speedRatio: js.Any = js.native
+  /* private */ var _runtimeAnimations: Any = js.native
   
-  /* private */ var _syncRoot: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _weight: js.Any = js.native
+  /* private */ var _speedRatio: Any = js.native
+  
+  /* private */ var _syncRoot: Any = js.native
+  
+  /* private */ var _weight: Any = js.native
   
   /**
     * Gets a boolean indicating if the animation has started
@@ -38,7 +45,7 @@ trait Animatable extends StObject {
     * @param target defines the target of the animations
     * @param animations defines the new animations to add
     */
-  def appendAnimations(target: js.Any, animations: js.Array[Animation]): Unit = js.native
+  def appendAnimations(target: Any, animations: js.Array[Animation]): Unit = js.native
   
   /**
     * Disable animation blending
@@ -64,7 +71,7 @@ trait Animatable extends StObject {
   
   /**
     * Gets the source animation for a specific property
-    * @param property defines the propertyu to look for
+    * @param property defines the property to look for
     * @returns null or the source animation for the given property
     */
   def getAnimationByTargetProperty(property: String): Nullable[Animation] = js.native
@@ -77,7 +84,7 @@ trait Animatable extends StObject {
   
   /**
     * Gets the runtime animation for a specific property
-    * @param property defines the propertyu to look for
+    * @param property defines the property to look for
     * @returns null or the runtime animation for the given property
     */
   def getRuntimeAnimationByTargetProperty(property: String): Nullable[RuntimeAnimation] = js.native
@@ -101,7 +108,7 @@ trait Animatable extends StObject {
   def masterFrame: Double = js.native
   
   /** defines a callback to call when animation ends if it is not looping */
-  var onAnimationEnd: js.UndefOr[js.Function0[Unit] | Null] = js.native
+  var onAnimationEnd: js.UndefOr[Nullable[js.Function0[Unit]]] = js.native
   
   /**
     * Observer raised when the animation ends
@@ -109,7 +116,7 @@ trait Animatable extends StObject {
   var onAnimationEndObservable: Observable[Animatable] = js.native
   
   /** defines a callback to call when animation loops */
-  var onAnimationLoop: js.UndefOr[js.Function0[Unit] | Null] = js.native
+  var onAnimationLoop: js.UndefOr[Nullable[js.Function0[Unit]]] = js.native
   
   /**
     * Observer raised when the animation loops
@@ -144,8 +151,8 @@ trait Animatable extends StObject {
     */
   def stop(): Unit = js.native
   def stop(animationName: String): Unit = js.native
-  def stop(animationName: String, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
-  def stop(animationName: Unit, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
+  def stop(animationName: String, targetMask: js.Function1[/* target */ Any, Boolean]): Unit = js.native
+  def stop(animationName: Unit, targetMask: js.Function1[/* target */ Any, Boolean]): Unit = js.native
   
   /**
     * Gets the root Animatable used to synchronize and normalize animations
@@ -155,20 +162,20 @@ trait Animatable extends StObject {
   /**
     * Synchronize and normalize current Animatable with a source Animatable
     * This is useful when using animation weights and when animations are not of the same length
-    * @param root defines the root Animatable to synchronize with
+    * @param root defines the root Animatable to synchronize with (null to stop synchronizing)
     * @returns the current Animatable
     */
-  def syncWith(root: Animatable): Animatable = js.native
+  def syncWith(root: Nullable[Animatable]): Animatable = js.native
   
   /** defines the target object */
-  var target: js.Any = js.native
+  var target: Any = js.native
   
   /** defines the ending frame number (default is 100) */
   var toFrame: Double = js.native
   
   /**
     * Wait asynchronously for the animation to end
-    * @returns a promise which will be fullfilled when the animation ends
+    * @returns a promise which will be fulfilled when the animation ends
     */
   def waitAsync(): js.Promise[Animatable] = js.native
   

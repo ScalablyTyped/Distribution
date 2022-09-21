@@ -26,7 +26,7 @@ object ICheckExpressionResult {
     
     inline def setQDangerousFieldNames(value: js.Array[INxRange]): Self = StObject.set(x, "qDangerousFieldNames", value.asInstanceOf[js.Any])
     
-    inline def setQDangerousFieldNamesVarargs(value: INxRange*): Self = StObject.set(x, "qDangerousFieldNames", js.Array(value :_*))
+    inline def setQDangerousFieldNamesVarargs(value: INxRange*): Self = StObject.set(x, "qDangerousFieldNames", js.Array(value*))
     
     inline def setQErrorMsg(value: String): Self = StObject.set(x, "qErrorMsg", value.asInstanceOf[js.Any])
   }

@@ -24,9 +24,7 @@ object emptyMod extends Shortcut {
     
     var image: js.UndefOr[ReactNode] = js.undefined
     
-    /**
-      * @since 3.16.0
-      */
+    /** @since 3.16.0 */
     var imageStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined

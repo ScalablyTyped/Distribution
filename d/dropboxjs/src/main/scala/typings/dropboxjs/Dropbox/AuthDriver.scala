@@ -103,14 +103,14 @@ object AuthDriver {
     
     def authType(): String = js.native
     
-    def closeBrowser(response: js.Any): Unit = js.native
+    def closeBrowser(response: Any): Unit = js.native
     
     def closeServer(): Unit = js.native
     
     def createApp(): Unit = js.native
     
     // TODO check request response types
-    def doRequest(request: js.Any, response: js.Any): Unit = js.native
+    def doRequest(request: Any, response: Any): Unit = js.native
     
     def openBrowser(url: String): Unit = js.native
     

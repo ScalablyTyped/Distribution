@@ -28,19 +28,13 @@ object ListIdentitiesResponse {
     __obj.asInstanceOf[ListIdentitiesResponse]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ListIdentitiesResponse")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: ListIdentitiesResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: ListIdentitiesResponse](x: Self) {
     
     inline def setIdentities(value: js.Array[IdentityDescription]): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
     
     inline def setIdentitiesUndefined: Self = StObject.set(x, "Identities", js.undefined)
     
-    inline def setIdentitiesVarargs(value: IdentityDescription*): Self = StObject.set(x, "Identities", js.Array(value :_*))
+    inline def setIdentitiesVarargs(value: IdentityDescription*): Self = StObject.set(x, "Identities", js.Array(value*))
     
     inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     

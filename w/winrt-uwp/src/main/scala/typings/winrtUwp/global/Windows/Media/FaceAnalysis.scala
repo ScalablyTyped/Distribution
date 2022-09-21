@@ -88,7 +88,7 @@ object FaceAnalysis {
       * @return An asynchronous operation that returns a list of DetectedFace objects upon successful completion.
       */
     /* CompleteClass */
-    override def processNextFrameAsync(videoFrame: typings.winrtUwp.Windows.Media.VideoFrame): IPromiseWithIAsyncOperation[IVector[js.Any]] = js.native
+    override def processNextFrameAsync(videoFrame: typings.winrtUwp.Windows.Media.VideoFrame): IPromiseWithIAsyncOperation[IVector[Any]] = js.native
   }
   object FaceTracker {
     

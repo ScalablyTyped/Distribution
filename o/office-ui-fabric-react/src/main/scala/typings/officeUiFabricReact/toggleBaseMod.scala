@@ -14,18 +14,18 @@ object toggleBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Toggle/Toggle.base", "ToggleBase")
   @js.native
-  class ToggleBase protected ()
-    extends Component[IToggleProps, IToggleState, js.Any]
+  open class ToggleBase protected ()
+    extends Component[IToggleProps, IToggleState, Any]
        with IToggle {
     def this(props: IToggleProps) = this()
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _noop: js.Any = js.native
+    /* private */ var _noop: Any = js.native
     
-    /* private */ var _onClick: js.Any = js.native
+    /* private */ var _onClick: Any = js.native
     
-    /* private */ var _toggleButton: js.Any = js.native
+    /* private */ var _toggleButton: Any = js.native
     
     /**
       * Gets the current checked state of the toggle.

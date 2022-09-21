@@ -35,14 +35,14 @@ object browse {
       getIntrospection: () => XIntrospectionAccess,
       getName: () => String,
       getType: () => Double,
-      getValue: String => js.Any,
+      getValue: String => Any,
       hasChildNodes: () => Boolean,
       hasMethod: String => Boolean,
       hasProperty: String => Boolean,
-      invoke: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
-      queryInterface: `type` => js.Any,
+      invoke: (String, SeqEquiv[Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[Any]]) => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
-      setValue: (String, js.Any) => Unit
+      setValue: (String, Any) => Unit
     ): BrowseNode = {
       val __obj = js.Dynamic.literal(ChildNodes = ChildNodes.asInstanceOf[js.Any], Introspection = Introspection.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getChildNodes = js.Any.fromFunction0(getChildNodes), getIntrospection = js.Any.fromFunction0(getIntrospection), getName = js.Any.fromFunction0(getName), getType = js.Any.fromFunction0(getType), getValue = js.Any.fromFunction1(getValue), hasChildNodes = js.Any.fromFunction0(hasChildNodes), hasMethod = js.Any.fromFunction1(hasMethod), hasProperty = js.Any.fromFunction1(hasProperty), invoke = js.Any.fromFunction4(invoke), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setValue = js.Any.fromFunction2(setValue))
       __obj.asInstanceOf[BrowseNode]
@@ -99,7 +99,7 @@ object browse {
     
     /**
       * Get the children of this node
-      * @returns {@link com.sun.star.script.browse.XBrowseNode} sequence of child nodes
+      * @returns sequence of child nodes
       */
     val ChildNodes: SafeArray[XBrowseNode]
     
@@ -117,7 +117,7 @@ object browse {
     
     /**
       * Get the children of this node
-      * @returns {@link com.sun.star.script.browse.XBrowseNode} sequence of child nodes
+      * @returns sequence of child nodes
       */
     def getChildNodes(): SafeArray[XBrowseNode]
     
@@ -150,7 +150,7 @@ object browse {
       getName: () => String,
       getType: () => Double,
       hasChildNodes: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XBrowseNode = {
       val __obj = js.Dynamic.literal(ChildNodes = ChildNodes.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getChildNodes = js.Any.fromFunction0(getChildNodes), getName = js.Any.fromFunction0(getName), getType = js.Any.fromFunction0(getType), hasChildNodes = js.Any.fromFunction0(hasChildNodes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -192,7 +192,7 @@ object browse {
     inline def apply(
       acquire: () => Unit,
       createView: Double => XBrowseNode,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XBrowseNodeFactory = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createView = js.Any.fromFunction1(createView), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

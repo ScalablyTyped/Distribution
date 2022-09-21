@@ -199,7 +199,7 @@ object bounceMod {
       
       inline def setBounces(value: js.Array[Bounce]): Self = StObject.set(x, "Bounces", value.asInstanceOf[js.Any])
       
-      inline def setBouncesVarargs(value: Bounce*): Self = StObject.set(x, "Bounces", js.Array(value :_*))
+      inline def setBouncesVarargs(value: Bounce*): Self = StObject.set(x, "Bounces", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
@@ -222,7 +222,7 @@ object bounceMod {
       
       inline def setBounces(value: js.Array[BounceMetric]): Self = StObject.set(x, "Bounces", value.asInstanceOf[js.Any])
       
-      inline def setBouncesVarargs(value: BounceMetric*): Self = StObject.set(x, "Bounces", js.Array(value :_*))
+      inline def setBouncesVarargs(value: BounceMetric*): Self = StObject.set(x, "Bounces", js.Array(value*))
       
       inline def setInactiveMails(value: Double): Self = StObject.set(x, "InactiveMails", value.asInstanceOf[js.Any])
     }

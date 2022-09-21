@@ -82,7 +82,7 @@ object anon {
   
   trait Bools extends StObject {
     
-    var bools: js.Any
+    var bools: Any
     
     var desc: String
     
@@ -92,20 +92,20 @@ object anon {
     
     var names: js.Array[String]
     
-    var numbers: js.Any
+    var numbers: Any
     
-    var strings: js.Any
+    var strings: Any
   }
   object Bools {
     
     inline def apply(
-      bools: js.Any,
+      bools: Any,
       desc: String,
       header: DataSize,
       name: String,
       names: js.Array[String],
-      numbers: js.Any,
-      strings: js.Any
+      numbers: Any,
+      strings: Any
     ): Bools = {
       val __obj = js.Dynamic.literal(bools = bools.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bools]
@@ -113,7 +113,7 @@ object anon {
     
     extension [Self <: Bools](x: Self) {
       
-      inline def setBools(value: js.Any): Self = StObject.set(x, "bools", value.asInstanceOf[js.Any])
+      inline def setBools(value: Any): Self = StObject.set(x, "bools", value.asInstanceOf[js.Any])
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
@@ -123,11 +123,11 @@ object anon {
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
       
-      inline def setNumbers(value: js.Any): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+      inline def setNumbers(value: Any): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
       
-      inline def setStrings(value: js.Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+      inline def setStrings(value: Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,9 +135,9 @@ object anon {
     
     var ch: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
-    var track: js.UndefOr[js.Any] = js.undefined
+    var track: js.UndefOr[Any] = js.undefined
   }
   object Ch {
     
@@ -152,11 +152,11 @@ object anon {
       
       inline def setChUndefined: Self = StObject.set(x, "ch", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTrack(value: js.Any): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      inline def setTrack(value: Any): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
       
       inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     }

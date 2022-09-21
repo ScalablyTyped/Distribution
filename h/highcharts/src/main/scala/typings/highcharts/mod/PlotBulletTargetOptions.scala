@@ -15,6 +15,11 @@ trait PlotBulletTargetOptions extends StObject {
   var borderColor: js.UndefOr[ColorString] = js.undefined
   
   /**
+    * (Highcharts) The border radius of the rectangle representing the target.
+    */
+  var borderRadius: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highcharts) The border width of the rectangle representing the target.
     *
     * In styled mode, use class `highcharts-bullet-target` instead.
@@ -54,6 +59,10 @@ object PlotBulletTargetOptions {
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     

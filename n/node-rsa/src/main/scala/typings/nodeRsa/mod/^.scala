@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Generate new key with length specified.
   */
-class ^ ()
+open class ^ ()
   extends StObject
      with NodeRSA {
   /**

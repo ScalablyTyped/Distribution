@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ensure-error" : "3.0.1"
+      "ensure-error" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ensure-error" : "3.0.1"
+      "ensure-error" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

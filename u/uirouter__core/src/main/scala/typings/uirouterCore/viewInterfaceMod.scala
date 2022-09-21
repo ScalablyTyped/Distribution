@@ -104,7 +104,7 @@ object viewInterfaceMod {
       
       inline def setPath(value: js.Array[PathNode]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: PathNode*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: PathNode*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setViewDecl(value: ViewDeclaration): Self = StObject.set(x, "viewDecl", value.asInstanceOf[js.Any])
     }

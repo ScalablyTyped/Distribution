@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import typings.reactNative.anon.PlatformConstantsVersionn
 import typings.reactNative.reactNativeStrings.android
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,4 +12,10 @@ trait PlatformAndroidStatic
      with PlatformStatic {
   
   var OS: android = js.native
+  
+  @JSName("Version")
+  var Version_PlatformAndroidStatic: Double = js.native
+  
+  @JSName("constants")
+  var constants_PlatformAndroidStatic: PlatformConstantsVersionn = js.native
 }

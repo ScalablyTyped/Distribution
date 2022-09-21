@@ -10,10 +10,10 @@ object lockOutlineMod {
   
   @JSImport("material-ui/svg-icons/action/lock-outline", JSImport.Default)
   @js.native
-  class default () extends ActionLockOutline
+  open class default () extends ActionLockOutline
   
   @JSImport("material-ui/svg-icons/action/lock-outline", "ActionLockOutline")
   @js.native
-  class ActionLockOutline ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionLockOutline ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

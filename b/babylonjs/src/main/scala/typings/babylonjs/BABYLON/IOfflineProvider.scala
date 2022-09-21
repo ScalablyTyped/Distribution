@@ -26,48 +26,48 @@ trait IOfflineProvider extends StObject {
     * @param errorCallback defines a callback to call on error
     * @param useArrayBuffer defines a boolean to use array buffer instead of text string
     */
-  def loadFile(url: String, sceneLoaded: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+  def loadFile(url: String, sceneLoaded: js.Function1[/* data */ Any, Unit]): Unit = js.native
   def loadFile(
     url: String,
-    sceneLoaded: js.Function1[/* data */ js.Any, Unit],
-    progressCallBack: js.Function1[/* data */ js.Any, Unit]
+    sceneLoaded: js.Function1[/* data */ Any, Unit],
+    progressCallBack: js.Function1[/* data */ Any, Unit]
   ): Unit = js.native
   def loadFile(
     url: String,
-    sceneLoaded: js.Function1[/* data */ js.Any, Unit],
-    progressCallBack: js.Function1[/* data */ js.Any, Unit],
+    sceneLoaded: js.Function1[/* data */ Any, Unit],
+    progressCallBack: js.Function1[/* data */ Any, Unit],
     errorCallback: js.Function0[Unit]
   ): Unit = js.native
   def loadFile(
     url: String,
-    sceneLoaded: js.Function1[/* data */ js.Any, Unit],
-    progressCallBack: js.Function1[/* data */ js.Any, Unit],
+    sceneLoaded: js.Function1[/* data */ Any, Unit],
+    progressCallBack: js.Function1[/* data */ Any, Unit],
     errorCallback: js.Function0[Unit],
     useArrayBuffer: Boolean
   ): Unit = js.native
   def loadFile(
     url: String,
-    sceneLoaded: js.Function1[/* data */ js.Any, Unit],
-    progressCallBack: js.Function1[/* data */ js.Any, Unit],
+    sceneLoaded: js.Function1[/* data */ Any, Unit],
+    progressCallBack: js.Function1[/* data */ Any, Unit],
     errorCallback: Unit,
     useArrayBuffer: Boolean
   ): Unit = js.native
   def loadFile(
     url: String,
-    sceneLoaded: js.Function1[/* data */ js.Any, Unit],
+    sceneLoaded: js.Function1[/* data */ Any, Unit],
     progressCallBack: Unit,
     errorCallback: js.Function0[Unit]
   ): Unit = js.native
   def loadFile(
     url: String,
-    sceneLoaded: js.Function1[/* data */ js.Any, Unit],
+    sceneLoaded: js.Function1[/* data */ Any, Unit],
     progressCallBack: Unit,
     errorCallback: js.Function0[Unit],
     useArrayBuffer: Boolean
   ): Unit = js.native
   def loadFile(
     url: String,
-    sceneLoaded: js.Function1[/* data */ js.Any, Unit],
+    sceneLoaded: js.Function1[/* data */ Any, Unit],
     progressCallBack: Unit,
     errorCallback: Unit,
     useArrayBuffer: Boolean

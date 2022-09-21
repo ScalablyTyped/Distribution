@@ -15,7 +15,7 @@ trait Column extends StObject {
   /* private */ @JSName("Outlook.Column_typekey")
   var OutlookDotColumn_typekey: Column
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -26,7 +26,7 @@ object Column {
     Class: OlObjectClass,
     Name: String,
     OutlookDotColumn_typekey: Column,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): Column = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object Column {
     
     inline def setOutlookDotColumn_typekey(value: Column): Self = StObject.set(x, "Outlook.Column_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

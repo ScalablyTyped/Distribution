@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LogConfigCounterOptionsCustomField extends StObject {
   
-  /** Name is the field name. */
+  /** This is deprecated and has no effect. Do not use. */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Value is the field value. It is important that in contrast to the CounterOptions.field, the value here is a constant that is not derived from the IAMContext. */
+  /** This is deprecated and has no effect. Do not use. */
   var value: js.UndefOr[String] = js.undefined
 }
 object LogConfigCounterOptionsCustomField {

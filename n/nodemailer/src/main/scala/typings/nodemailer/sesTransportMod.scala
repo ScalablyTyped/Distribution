@@ -5,13 +5,13 @@ import typings.nodemailer.anon.Callback
 import typings.nodemailer.anon.Data
 import typings.nodemailer.anon.Name
 import typings.nodemailer.anon.Pending
+import typings.nodemailer.mailerMod.Address
 import typings.nodemailer.mimeNodeMod.Envelope
 import typings.nodemailer.mod.Transport
 import typings.nodemailer.mod.TransportOptions
 import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.nodemailerStrings.idle
 import typings.nodemailer.sharedMod.Logger
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ object sesTransportMod {
   
   @JSImport("nodemailer/lib/ses-transport", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SESTransport {
+  open class ^ protected () extends SESTransport {
     def this(options: Options) = this()
     
     /* CompleteClass */
@@ -28,13 +28,13 @@ object sesTransportMod {
     
     /* CompleteClass */
     override def send(
-      mail: typings.nodemailer.mailMessageMod.^,
-      callback: js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]
+      mail: typings.nodemailer.mailMessageMod.^[SentMessageInfo],
+      callback: js.Function2[/* err */ js.Error | Null, SentMessageInfo, Unit]
     ): Unit = js.native
     
     /* CompleteClass */
     var verify: (js.UndefOr[
-        js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+        js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
       ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
     
     /* CompleteClass */
@@ -122,7 +122,7 @@ object sesTransportMod {
       
       inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
       
-      inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+      inline def setDestinationsVarargs(value: String*): Self = StObject.set(x, "Destinations", js.Array(value*))
       
       inline def setFromArn(value: String): Self = StObject.set(x, "FromArn", value.asInstanceOf[js.Any])
       
@@ -148,7 +148,7 @@ object sesTransportMod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      inline def setTagsVarargs(value: Name*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Name*): Self = StObject.set(x, "Tags", js.Array(value*))
     }
   }
   
@@ -158,7 +158,7 @@ object sesTransportMod {
        with TransportOptions {
     
     /** is an option that expects an instantiated aws.SES object */
-    var SES: js.Any
+    var SES: Any
     
     // aws-sdk.SES object
     /** How many messages per second is allowed to be delivered to SES */
@@ -169,7 +169,7 @@ object sesTransportMod {
   }
   object Options {
     
-    inline def apply(SES: js.Any): Options = {
+    inline def apply(SES: Any): Options = {
       val __obj = js.Dynamic.literal(SES = SES.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -180,7 +180,7 @@ object sesTransportMod {
       
       inline def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
       
-      inline def setSES(value: js.Any): Self = StObject.set(x, "SES", value.asInstanceOf[js.Any])
+      inline def setSES(value: Any): Self = StObject.set(x, "SES", value.asInstanceOf[js.Any])
       
       inline def setSendingRate(value: Double): Self = StObject.set(x, "sendingRate", value.asInstanceOf[js.Any])
       
@@ -191,7 +191,7 @@ object sesTransportMod {
   @js.native
   trait SESTransport
     extends EventEmitter
-       with Transport {
+       with Transport[SentMessageInfo] {
     
     @JSName("addListener")
     def addListener_idle(event: idle, listener: js.Function0[Unit]): this.type = js.native
@@ -212,7 +212,7 @@ object sesTransportMod {
     var logger: Logger = js.native
     
     @JSName("mailer")
-    var mailer_SESTransport: typings.nodemailer.mailerMod.^ = js.native
+    var mailer_SESTransport: typings.nodemailer.mailerMod.^[SentMessageInfo] = js.native
     
     var maxConnections: Double = js.native
     
@@ -240,16 +240,18 @@ object sesTransportMod {
     
     var sendingRateTTL: Double | Null = js.native
     
-    var ses: js.Any = js.native
+    var ses: Any = js.native
     
     @JSName("verify")
     def verify_MSESTransport(): js.Promise[`true`] = js.native
     /** Verifies SES configuration */
     @JSName("verify")
-    def verify_true(callback: js.Function2[/* err */ Error | Null, `true`, Unit]): Unit = js.native
+    def verify_true(callback: js.Function2[/* err */ js.Error | Null, `true`, Unit]): Unit = js.native
   }
   
   trait SentMessageInfo extends StObject {
+    
+    var accepted: js.Array[String | Address]
     
     /** an envelope object {from:‘address’, to:[‘address’]} */
     var envelope: Envelope
@@ -257,20 +259,43 @@ object sesTransportMod {
     /** the Message-ID header value. This value is derived from the response of SES API, so it differs from the Message-ID values used in logging. */
     var messageId: String
     
+    var pending: js.Array[String | Address]
+    
+    var rejected: js.Array[String | Address]
+    
     var response: String
   }
   object SentMessageInfo {
     
-    inline def apply(envelope: Envelope, messageId: String, response: String): SentMessageInfo = {
-      val __obj = js.Dynamic.literal(envelope = envelope.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    inline def apply(
+      accepted: js.Array[String | Address],
+      envelope: Envelope,
+      messageId: String,
+      pending: js.Array[String | Address],
+      rejected: js.Array[String | Address],
+      response: String
+    ): SentMessageInfo = {
+      val __obj = js.Dynamic.literal(accepted = accepted.asInstanceOf[js.Any], envelope = envelope.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[SentMessageInfo]
     }
     
     extension [Self <: SentMessageInfo](x: Self) {
       
+      inline def setAccepted(value: js.Array[String | Address]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
+      
+      inline def setAcceptedVarargs(value: (String | Address)*): Self = StObject.set(x, "accepted", js.Array(value*))
+      
       inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       
       inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      
+      inline def setPending(value: js.Array[String | Address]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      
+      inline def setPendingVarargs(value: (String | Address)*): Self = StObject.set(x, "pending", js.Array(value*))
+      
+      inline def setRejected(value: js.Array[String | Address]): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+      
+      inline def setRejectedVarargs(value: (String | Address)*): Self = StObject.set(x, "rejected", js.Array(value*))
       
       inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }

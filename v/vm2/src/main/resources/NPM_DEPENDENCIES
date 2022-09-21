@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vm2" : "3.9.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vm2" : "3.9.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

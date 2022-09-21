@@ -1,7 +1,7 @@
 package typings.materialBanner
 
 import typings.materialBanner.anon.PartialMDCBannerAdapter
-import typings.std.Element
+import typings.materialBase.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,10 +24,10 @@ object mod {
   
   @JSImport("@material/banner", "MDCBanner")
   @js.native
-  class MDCBanner protected ()
+  open class MDCBanner protected ()
     extends typings.materialBanner.componentMod.MDCBanner {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: typings.materialBanner.foundationMod.MDCBannerFoundation, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: typings.materialBanner.foundationMod.MDCBannerFoundation, args: Any*) = this()
   }
   /* static members */
   object MDCBanner {
@@ -36,12 +36,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialBanner.componentMod.MDCBanner = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialBanner.componentMod.MDCBanner]
+    inline def attachTo(root: typings.std.Element): typings.materialBanner.componentMod.MDCBanner = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialBanner.componentMod.MDCBanner]
   }
   
   @JSImport("@material/banner", "MDCBannerFoundation")
   @js.native
-  class MDCBannerFoundation ()
+  open class MDCBannerFoundation ()
     extends typings.materialBanner.foundationMod.MDCBannerFoundation {
     def this(adapter: PartialMDCBannerAdapter) = this()
   }
@@ -74,6 +74,11 @@ object mod {
     @JSImport("@material/banner", "events")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("@material/banner", "events.ACTION_CLICKED")
+    @js.native
+    def ACTION_CLICKED: String = js.native
+    inline def ACTION_CLICKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTION_CLICKED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/banner", "events.CLOSED")
     @js.native

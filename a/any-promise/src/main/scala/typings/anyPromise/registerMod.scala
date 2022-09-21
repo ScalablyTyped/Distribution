@@ -25,11 +25,11 @@ object registerMod {
           /* callback */ js.Function2[
             /* resolve */ js.Function1[
               /* value */ js.UndefOr[
-                (/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any])
+                (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
               ], 
               Unit
             ], 
-            /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
             Unit
           ], 
           typings.anyPromise.mod.^[js.Object]
@@ -56,11 +56,11 @@ object registerMod {
               /* callback */ js.Function2[
                 /* resolve */ js.Function1[
                   /* value */ js.UndefOr[
-                    (/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any])
+                    (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
                   ], 
                   Unit
                 ], 
-                /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+                /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
                 Unit
               ], 
               typings.anyPromise.mod.^[js.Object]
@@ -77,11 +77,11 @@ object registerMod {
         /* callback */ js.Function2[
           /* resolve */ js.Function1[
             /* value */ js.UndefOr[
-              (/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any])
+              (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
             ], 
             Unit
           ], 
-          /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+          /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
           Unit
         ], 
         typings.anyPromise.mod.^[js.Object]
@@ -96,11 +96,11 @@ object registerMod {
           /* callback */ js.Function2[
             /* resolve */ js.Function1[
               /* value */ js.UndefOr[
-                (/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any])
+                (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
               ], 
               Unit
             ], 
-            /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
             Unit
           ], 
           typings.anyPromise.mod.^[js.Object]
@@ -120,11 +120,11 @@ object registerMod {
               /* callback */ js.Function2[
                 /* resolve */ js.Function1[
                   /* value */ js.UndefOr[
-                    (/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any])
+                    (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
                   ], 
                   Unit
                 ], 
-                /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+                /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
                 Unit
               ], 
               typings.anyPromise.mod.^[js.Object]

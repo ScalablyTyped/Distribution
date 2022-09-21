@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "LegacyTileSource")
 @js.native
-class LegacyTileSource () extends TileSource {
+open class LegacyTileSource () extends TileSource {
   def this(levels: js.Array[Height]) = this()
 }

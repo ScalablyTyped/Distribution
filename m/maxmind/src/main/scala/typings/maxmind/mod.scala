@@ -1,10 +1,9 @@
 package typings.maxmind
 
 import typings.maxmind.anon.Max
-import typings.mmdbLib.mod.default
 import typings.mmdbLib.responseMod.Response
 import typings.mmdbLib.typesMod.ReaderOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +22,10 @@ object mod {
     
     inline def init(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[scala.Nothing]
     
-    inline def open[T](filepath: String): js.Promise[typings.mmdbLib.mod.default[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mmdbLib.mod.default[T]]]
-    inline def open[T](filepath: String, opts: Unit, cb: Callback): js.Promise[typings.mmdbLib.mod.default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.default[T]]]
-    inline def open[T](filepath: String, opts: OpenOpts): js.Promise[typings.mmdbLib.mod.default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.default[T]]]
-    inline def open[T](filepath: String, opts: OpenOpts, cb: Callback): js.Promise[typings.mmdbLib.mod.default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.default[T]]]
+    inline def open[T](filepath: String): js.Promise[typings.mmdbLib.mod.Reader[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mmdbLib.mod.Reader[T]]]
+    inline def open[T](filepath: String, opts: Unit, cb: Callback): js.Promise[typings.mmdbLib.mod.Reader[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.Reader[T]]]
+    inline def open[T](filepath: String, opts: OpenOpts): js.Promise[typings.mmdbLib.mod.Reader[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.Reader[T]]]
+    inline def open[T](filepath: String, opts: OpenOpts, cb: Callback): js.Promise[typings.mmdbLib.mod.Reader[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.Reader[T]]]
     
     inline def openSync(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")().asInstanceOf[scala.Nothing]
     
@@ -35,17 +34,18 @@ object mod {
   
   @JSImport("maxmind", "Reader")
   @js.native
-  class Reader[T /* <: Response */] protected () extends default[T] {
+  open class Reader[T /* <: Response */] protected ()
+    extends typings.mmdbLib.mod.Reader[T] {
     def this(db: Buffer) = this()
     def this(db: Buffer, opts: ReaderOptions) = this()
   }
   
   inline def init(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[scala.Nothing]
   
-  inline def open[T](filepath: String): js.Promise[default[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default[T]]]
-  inline def open[T](filepath: String, opts: Unit, cb: Callback): js.Promise[default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default[T]]]
-  inline def open[T](filepath: String, opts: OpenOpts): js.Promise[default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default[T]]]
-  inline def open[T](filepath: String, opts: OpenOpts, cb: Callback): js.Promise[default[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[default[T]]]
+  inline def open[T](filepath: String): js.Promise[typings.mmdbLib.mod.Reader[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mmdbLib.mod.Reader[T]]]
+  inline def open[T](filepath: String, opts: Unit, cb: Callback): js.Promise[typings.mmdbLib.mod.Reader[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.Reader[T]]]
+  inline def open[T](filepath: String, opts: OpenOpts): js.Promise[typings.mmdbLib.mod.Reader[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.Reader[T]]]
+  inline def open[T](filepath: String, opts: OpenOpts, cb: Callback): js.Promise[typings.mmdbLib.mod.Reader[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mmdbLib.mod.Reader[T]]]
   
   inline def openSync(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")().asInstanceOf[scala.Nothing]
   

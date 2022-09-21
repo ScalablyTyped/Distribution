@@ -41,7 +41,7 @@ object mod {
   
   @JSImport("easystarjs", "js")
   @js.native
-  class js_ () extends StObject {
+  open class js_ () extends StObject {
     
     /**
       * Avoid a particular point on the grid,

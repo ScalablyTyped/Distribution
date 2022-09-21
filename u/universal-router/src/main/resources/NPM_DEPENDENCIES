@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "universal-router" : "9.0.1"
+      "universal-router" : "9.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "universal-router" : "9.0.1"
+      "universal-router" : "9.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -51,6 +51,6 @@ object DescribeSpotFleetRequestsRequest {
     
     inline def setSpotFleetRequestIdsUndefined: Self = StObject.set(x, "SpotFleetRequestIds", js.undefined)
     
-    inline def setSpotFleetRequestIdsVarargs(value: SpotFleetRequestId*): Self = StObject.set(x, "SpotFleetRequestIds", js.Array(value :_*))
+    inline def setSpotFleetRequestIdsVarargs(value: SpotFleetRequestId*): Self = StObject.set(x, "SpotFleetRequestIds", js.Array(value*))
   }
 }

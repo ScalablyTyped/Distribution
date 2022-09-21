@@ -174,28 +174,28 @@ object anon {
       
       inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
       
-      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value*))
     }
   }
   
   trait DistanceInWords extends StObject {
     
-    def distanceInWords(token: js.Any, count: js.Any, options: js.Any): js.Any
+    def distanceInWords(token: Any, count: Any, options: Any): Any
     
-    def format(): js.Any
+    def format(): Any
   }
   object DistanceInWords {
     
-    inline def apply(distanceInWords: (js.Any, js.Any, js.Any) => js.Any, format: () => js.Any): DistanceInWords = {
+    inline def apply(distanceInWords: (Any, Any, Any) => Any, format: () => Any): DistanceInWords = {
       val __obj = js.Dynamic.literal(distanceInWords = js.Any.fromFunction3(distanceInWords), format = js.Any.fromFunction0(format))
       __obj.asInstanceOf[DistanceInWords]
     }
     
     extension [Self <: DistanceInWords](x: Self) {
       
-      inline def setDistanceInWords(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "distanceInWords", js.Any.fromFunction3(value))
+      inline def setDistanceInWords(value: (Any, Any, Any) => Any): Self = StObject.set(x, "distanceInWords", js.Any.fromFunction3(value))
       
-      inline def setFormat(value: () => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
+      inline def setFormat(value: () => Any): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
     }
   }
   

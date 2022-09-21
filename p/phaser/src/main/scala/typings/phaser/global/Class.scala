@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class")
 @js.native
-class Class protected ()
+open class Class protected ()
   extends StObject
      with typings.phaser.Class {
   /**

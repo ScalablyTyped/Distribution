@@ -12,6 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DOMDebugger {
   
   /* Rewritten from type alias, can be one of: 
+    - typings.devtoolsProtocol.devtoolsProtocolStrings.`trustedtype-sink-violation`
+    - typings.devtoolsProtocol.devtoolsProtocolStrings.`trustedtype-policy-violation`
+  */
+  trait CSPViolationType extends StObject
+  object CSPViolationType {
+    
+    inline def `trustedtype-policy-violation`: typings.devtoolsProtocol.devtoolsProtocolStrings.`trustedtype-policy-violation` = "trustedtype-policy-violation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`trustedtype-policy-violation`]
+    
+    inline def `trustedtype-sink-violation`: typings.devtoolsProtocol.devtoolsProtocolStrings.`trustedtype-sink-violation` = "trustedtype-sink-violation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`trustedtype-sink-violation`]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
     - typings.devtoolsProtocol.devtoolsProtocolStrings.`subtree-modified`
     - typings.devtoolsProtocol.devtoolsProtocolStrings.`attribute-modified`
     - typings.devtoolsProtocol.devtoolsProtocolStrings.`node-removed`
@@ -182,7 +194,7 @@ object DOMDebugger {
       
       inline def setListeners(value: js.Array[EventListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      inline def setListenersVarargs(value: EventListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      inline def setListenersVarargs(value: EventListener*): Self = StObject.set(x, "listeners", js.Array(value*))
     }
   }
   
@@ -280,6 +292,28 @@ object DOMDebugger {
     extension [Self <: RemoveXHRBreakpointRequest](x: Self) {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SetBreakOnCSPViolationRequest extends StObject {
+    
+    /**
+      * CSP Violations to stop upon.
+      */
+    var violationTypes: js.Array[CSPViolationType]
+  }
+  object SetBreakOnCSPViolationRequest {
+    
+    inline def apply(violationTypes: js.Array[CSPViolationType]): SetBreakOnCSPViolationRequest = {
+      val __obj = js.Dynamic.literal(violationTypes = violationTypes.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SetBreakOnCSPViolationRequest]
+    }
+    
+    extension [Self <: SetBreakOnCSPViolationRequest](x: Self) {
+      
+      inline def setViolationTypes(value: js.Array[CSPViolationType]): Self = StObject.set(x, "violationTypes", value.asInstanceOf[js.Any])
+      
+      inline def setViolationTypesVarargs(value: CSPViolationType*): Self = StObject.set(x, "violationTypes", js.Array(value*))
     }
   }
   

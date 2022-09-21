@@ -8,5 +8,5 @@ object getVaultAccessPolicyOutputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/GetVaultAccessPolicyOutput", "GetVaultAccessPolicyOutput")
   @js.native
-  val GetVaultAccessPolicyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetVaultAccessPolicyOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

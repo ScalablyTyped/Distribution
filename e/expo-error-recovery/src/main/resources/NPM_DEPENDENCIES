@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-error-recovery" : "1.3.0"
+      "expo-error-recovery" : "3.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-error-recovery" : "1.3.0"
+      "expo-error-recovery" : "3.2.0"
     }
   ],
   "compile-devDependencies" : [

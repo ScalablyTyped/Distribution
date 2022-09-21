@@ -7,6 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentIdentifier extends StObject {
   
   /**
+    * The user in your organization who created the document.
+    */
+  var Author: js.UndefOr[DocumentAuthor] = js.undefined
+  
+  /**
+    * The date the SSM document was created.
+    */
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * An optional field where you can specify a friendly name for the SSM document. This value can differ for each version of the document. If you want to update this value, see UpdateDocument.
+    */
+  var DisplayName: js.UndefOr[DocumentDisplayName] = js.undefined
+  
+  /**
     * The document format, either JSON or YAML.
     */
   var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.undefined
@@ -22,12 +37,12 @@ trait DocumentIdentifier extends StObject {
   var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
-    * The name of the Systems Manager document.
+    * The name of the SSM document.
     */
   var Name: js.UndefOr[DocumentARN] = js.undefined
   
   /**
-    * The AWS user account that created the document.
+    * The Amazon Web Services user account that created the document.
     */
   var Owner: js.UndefOr[DocumentOwner] = js.undefined
   
@@ -42,6 +57,11 @@ trait DocumentIdentifier extends StObject {
   var Requires: js.UndefOr[DocumentRequiresList] = js.undefined
   
   /**
+    * The current status of a document review.
+    */
+  var ReviewStatus: js.UndefOr[typings.awsSdk.ssmMod.ReviewStatus] = js.undefined
+  
+  /**
     * The schema version.
     */
   var SchemaVersion: js.UndefOr[DocumentSchemaVersion] = js.undefined
@@ -52,12 +72,12 @@ trait DocumentIdentifier extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS resource and property types reference in the AWS CloudFormation User Guide. 
+    * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see Amazon Web Services resource and property types reference in the CloudFormation User Guide. 
     */
   var TargetType: js.UndefOr[typings.awsSdk.ssmMod.TargetType] = js.undefined
   
   /**
-    * An optional field specifying the version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
+    * An optional field specifying the version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and can't be changed.
     */
   var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
 }
@@ -69,6 +89,18 @@ object DocumentIdentifier {
   }
   
   extension [Self <: DocumentIdentifier](x: Self) {
+    
+    inline def setAuthor(value: DocumentAuthor): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorUndefined: Self = StObject.set(x, "Author", js.undefined)
+    
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    
+    inline def setDisplayName(value: DocumentDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     inline def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "DocumentFormat", value.asInstanceOf[js.Any])
     
@@ -94,13 +126,17 @@ object DocumentIdentifier {
     
     inline def setPlatformTypesUndefined: Self = StObject.set(x, "PlatformTypes", js.undefined)
     
-    inline def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "PlatformTypes", js.Array(value :_*))
+    inline def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "PlatformTypes", js.Array(value*))
     
     inline def setRequires(value: DocumentRequiresList): Self = StObject.set(x, "Requires", value.asInstanceOf[js.Any])
     
     inline def setRequiresUndefined: Self = StObject.set(x, "Requires", js.undefined)
     
-    inline def setRequiresVarargs(value: DocumentRequires*): Self = StObject.set(x, "Requires", js.Array(value :_*))
+    inline def setRequiresVarargs(value: DocumentRequires*): Self = StObject.set(x, "Requires", js.Array(value*))
+    
+    inline def setReviewStatus(value: ReviewStatus): Self = StObject.set(x, "ReviewStatus", value.asInstanceOf[js.Any])
+    
+    inline def setReviewStatusUndefined: Self = StObject.set(x, "ReviewStatus", js.undefined)
     
     inline def setSchemaVersion(value: DocumentSchemaVersion): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
@@ -110,7 +146,7 @@ object DocumentIdentifier {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     

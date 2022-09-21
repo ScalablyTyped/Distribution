@@ -1,7 +1,7 @@
 
 # Scala.js typings for elm
 
-Typings are for version 0.12
+Typings are for version 0.19
 
 ## Library description:
 Installer for Elm: just downloads the binary into node_modules
@@ -10,15 +10,12 @@ Installer for Elm: just downloads the binary into node_modules
 | ------------------ | :-------------: |
 | Full name          | elm |
 | Keywords           | bin, binary, binaries, elm, install, installer |
-| # releases         | 7 |
-| # dependents       | 24 |
-| # downloads        | 1265227 |
-| # stars            | 42 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 147445.0 |
+| # stars            | 6882.0 |
 
 ## Links
-- [Homepage](https://github.com/elm/compiler/tree/master/installers/npm)
-- [Bugs](https://github.com/elm/compiler/issues)
-- [Repository](https://github.com/elm/compiler)
 - [Npm](https://www.npmjs.com/package/elm)
     
 

@@ -3,6 +3,7 @@ package typings.antd
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Context
 import typings.react.mod.FC
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,6 +20,8 @@ object configProviderSizeContextMod extends Shortcut {
   
   trait SizeContextProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var size: js.UndefOr[SizeType] = js.undefined
   }
   object SizeContextProps {
@@ -29,6 +32,10 @@ object configProviderSizeContextMod extends Shortcut {
     }
     
     extension [Self <: SizeContextProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

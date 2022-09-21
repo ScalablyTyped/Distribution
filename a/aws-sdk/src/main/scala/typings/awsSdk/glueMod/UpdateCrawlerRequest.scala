@@ -22,7 +22,7 @@ trait UpdateCrawlerRequest extends StObject {
   var CrawlerSecurityConfiguration: js.UndefOr[typings.awsSdk.glueMod.CrawlerSecurityConfiguration] = js.undefined
   
   /**
-    * The AWS Glue database where results are stored, such as: arn:aws:daylight:us-east-1::database/sometable/ *.
+    * The Glue database where results are stored, such as: arn:aws:daylight:us-east-1::database/sometable/ *.
     */
   var DatabaseName: js.UndefOr[typings.awsSdk.glueMod.DatabaseName] = js.undefined
   
@@ -30,6 +30,16 @@ trait UpdateCrawlerRequest extends StObject {
     * A description of the new crawler.
     */
   var Description: js.UndefOr[DescriptionStringRemovable] = js.undefined
+  
+  /**
+    * Specifies Lake Formation configuration settings for the crawler.
+    */
+  var LakeFormationConfiguration: js.UndefOr[typings.awsSdk.glueMod.LakeFormationConfiguration] = js.undefined
+  
+  /**
+    * Specifies data lineage configuration settings for the crawler.
+    */
+  var LineageConfiguration: js.UndefOr[typings.awsSdk.glueMod.LineageConfiguration] = js.undefined
   
   /**
     * Name of the new crawler.
@@ -79,7 +89,7 @@ object UpdateCrawlerRequest {
     
     inline def setClassifiersUndefined: Self = StObject.set(x, "Classifiers", js.undefined)
     
-    inline def setClassifiersVarargs(value: NameString*): Self = StObject.set(x, "Classifiers", js.Array(value :_*))
+    inline def setClassifiersVarargs(value: NameString*): Self = StObject.set(x, "Classifiers", js.Array(value*))
     
     inline def setConfiguration(value: CrawlerConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
@@ -96,6 +106,14 @@ object UpdateCrawlerRequest {
     inline def setDescription(value: DescriptionStringRemovable): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setLakeFormationConfiguration(value: LakeFormationConfiguration): Self = StObject.set(x, "LakeFormationConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setLakeFormationConfigurationUndefined: Self = StObject.set(x, "LakeFormationConfiguration", js.undefined)
+    
+    inline def setLineageConfiguration(value: LineageConfiguration): Self = StObject.set(x, "LineageConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setLineageConfigurationUndefined: Self = StObject.set(x, "LineageConfiguration", js.undefined)
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

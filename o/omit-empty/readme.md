@@ -10,15 +10,12 @@ Recursively omit empty properties from an object. Omits empty objects, arrays, s
 | ------------------ | :-------------: |
 | Full name          | omit-empty |
 | Keywords           | clear, delete, empty, find, has, hasown, javascript, js, key, keys, node, node-js, object, omit, properties, property, remove, util, utilities, utility, value |
-| # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 3135747 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 403519.6666666667 |
+| # stars            | 70.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/omit-empty)
-- [Bugs](https://github.com/jonschlinkert/omit-empty/issues)
-- [Repository](https://github.com/jonschlinkert/omit-empty)
 - [Npm](https://www.npmjs.com/package/omit-empty)
     
 

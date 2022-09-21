@@ -1,24 +1,34 @@
 package typings.fontkit
 
-import org.scalablytyped.runtime.Shortcut
 import typings.fontkit.fontkitStrings.bezierCurveTo
 import typings.fontkit.fontkitStrings.closePath
 import typings.fontkit.fontkitStrings.lineTo
 import typings.fontkit.fontkitStrings.moveTo
 import typings.fontkit.fontkitStrings.quadraticCurveTo
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.CanvasRenderingContext2D
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  @JSImport("fontkit", JSImport.Default)
+  @JSImport("fontkit", JSImport.Namespace)
   @js.native
-  val default: Fontkit = js.native
+  val ^ : js.Any = js.native
+  
+  inline def create(buffer: Buffer): Font = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[Font]
+  inline def create(buffer: Buffer, postscriptName: String): Font = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any], postscriptName.asInstanceOf[js.Any])).asInstanceOf[Font]
+  
+  inline def open(
+    filename: String,
+    postscriptName: String,
+    callback: js.Function2[/* err */ js.Error | Null, /* font */ Font, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filename.asInstanceOf[js.Any], postscriptName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def openSync(filename: String): Font = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(filename.asInstanceOf[js.Any]).asInstanceOf[Font]
+  inline def openSync(filename: String, postscriptName: String): Font = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(filename.asInstanceOf[js.Any], postscriptName.asInstanceOf[js.Any])).asInstanceOf[Font]
   
   trait BBOX extends StObject {
     
@@ -179,37 +189,6 @@ object mod extends Shortcut {
     var xHeight: Double = js.native
   }
   
-  @js.native
-  trait Fontkit extends StObject {
-    
-    /**
-      * Returns a font object for the given buffer.
-      * For collection fonts (such as TrueType collection files),
-      * you can pass a postscriptName to get that font out of the collection instead of a collection object.
-      */
-    def create(buffer: Buffer): Font = js.native
-    def create(buffer: Buffer, postscriptName: String): Font = js.native
-    
-    /**
-      * Opens a font file asynchronously, and calls the callback with a font object.
-      * For collection fonts (such as TrueType collection files),
-      * you can pass a postscriptName to get that font out of the collection instead of a collection object.
-      */
-    def open(
-      filename: String,
-      postscriptName: String,
-      callback: js.Function2[/* err */ Error | Null, /* font */ Font, Unit]
-    ): Unit = js.native
-    
-    /**
-      * Opens a font file synchronously, and returns a font object.
-      * For collection fonts (such as TrueType collection files),
-      * you can pass a postscriptName to get that font out of the collection instead of a collection object.
-      */
-    def openSync(filename: String): Font = js.native
-    def openSync(filename: String, postscriptName: String): Font = js.native
-  }
-  
   trait Glyph extends StObject {
     
     /** the glyph’s advance width */
@@ -247,6 +226,9 @@ object mod extends Shortcut {
     
     /** a vector Path object representing the glyph */
     var path: Path
+    
+    /** Renders the glyph to the given graphics context, at the specified font size. */
+    def render(ctx: CanvasRenderingContext2D, size: Double): Unit
   }
   object Glyph {
     
@@ -258,9 +240,10 @@ object mod extends Shortcut {
       id: Double,
       isLigature: Boolean,
       isMark: Boolean,
-      path: Path
+      path: Path,
+      render: (CanvasRenderingContext2D, Double) => Unit
     ): Glyph = {
-      val __obj = js.Dynamic.literal(advanceWidth = advanceWidth.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], cbox = cbox.asInstanceOf[js.Any], codePoints = codePoints.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLigature = isLigature.asInstanceOf[js.Any], isMark = isMark.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(advanceWidth = advanceWidth.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], cbox = cbox.asInstanceOf[js.Any], codePoints = codePoints.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLigature = isLigature.asInstanceOf[js.Any], isMark = isMark.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
       __obj.asInstanceOf[Glyph]
     }
     
@@ -274,7 +257,7 @@ object mod extends Shortcut {
       
       inline def setCodePoints(value: js.Array[Double]): Self = StObject.set(x, "codePoints", value.asInstanceOf[js.Any])
       
-      inline def setCodePointsVarargs(value: Double*): Self = StObject.set(x, "codePoints", js.Array(value :_*))
+      inline def setCodePointsVarargs(value: Double*): Self = StObject.set(x, "codePoints", js.Array(value*))
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -283,6 +266,8 @@ object mod extends Shortcut {
       inline def setIsMark(value: Boolean): Self = StObject.set(x, "isMark", value.asInstanceOf[js.Any])
       
       inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setRender(value: (CanvasRenderingContext2D, Double) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }
   }
   
@@ -400,13 +385,13 @@ object mod extends Shortcut {
       
       inline def setGlyphs(value: js.Array[Glyph]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
       
-      inline def setGlyphsVarargs(value: Glyph*): Self = StObject.set(x, "glyphs", js.Array(value :_*))
+      inline def setGlyphsVarargs(value: Glyph*): Self = StObject.set(x, "glyphs", js.Array(value*))
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
       inline def setPositions(value: js.Array[GlyphPosition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
-      inline def setPositionsVarargs(value: GlyphPosition*): Self = StObject.set(x, "positions", js.Array(value :_*))
+      inline def setPositionsVarargs(value: GlyphPosition*): Self = StObject.set(x, "positions", js.Array(value*))
       
       inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     }
@@ -471,14 +456,9 @@ object mod extends Shortcut {
       
       inline def setArgs(value: js.Array[Double]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: Double*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Double*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setCommand(value: moveTo | lineTo | quadraticCurveTo | bezierCurveTo | closePath): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = Fontkit
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Fontkit = default
 }

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gl-react", "NearestCopy")
 @js.native
-class NearestCopy protected ()
-  extends Component[NearestCopyProps, js.Object, js.Any] {
+open class NearestCopy protected ()
+  extends Component[NearestCopyProps, js.Object, Any] {
   def this(props: NearestCopyProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: NearestCopyProps, context: js.Any) = this()
+  def this(props: NearestCopyProps, context: Any) = this()
   
   def getNodeRef(): Node = js.native
 }

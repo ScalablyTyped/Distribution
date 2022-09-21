@@ -11,9 +11,9 @@ wallop is a minimal 4kb library for showing & hiding things
 | Full name          | wallop |
 | Keywords           | slider, css, js, minimal, responsive, wallop |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 21418 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1793.6666666666667 |
+| # stars            | 1114.0 |
 
 ## Links
 - [Homepage](http://pedroduarte.me/wallop)

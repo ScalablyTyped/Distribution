@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ObtainTokenResponse")
 @js.native
-class ObtainTokenResponse () extends StObject {
+open class ObtainTokenResponse () extends StObject {
   
   /**
     * A valid OAuth access token. OAuth access tokens are 64 bytes long.

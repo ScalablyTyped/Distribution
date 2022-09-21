@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__credential-provider-node
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 AWS credential provider that sources credentials from a Node.JS environment.
@@ -10,10 +10,10 @@ AWS credential provider that sources credentials from a Node.JS environment.
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-provider-node |
 | Keywords           | aws, credentials |
-| # releases         | 45 |
-| # dependents       | 255 |
-| # downloads        | 7071119 |
-| # stars            | 0 |
+| # releases         | 115 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5536725E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/credential-provider-node)

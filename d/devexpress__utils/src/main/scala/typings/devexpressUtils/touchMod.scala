@@ -12,7 +12,7 @@ object touchMod {
   
   @JSImport("@devexpress/utils/lib/utils/touch", "TouchUtils")
   @js.native
-  class TouchUtils () extends StObject
+  open class TouchUtils () extends StObject
   /* static members */
   object TouchUtils {
     

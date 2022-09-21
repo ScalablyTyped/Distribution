@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.peopleV1Mod.peopleV1.Options
-import typings.googleapis.peopleV1Mod.peopleV1.People
+import typings.googleapis.driveactivityV2Mod.driveactivityV2.Driveactivity
+import typings.googleapis.driveactivityV2Mod.driveactivityV2.Options
+import typings.googleapis.googleapisStrings.v2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn100 extends StObject {
   
-  def apply(options: Options): People = js.native
-  def apply(version: v1): People = js.native
+  def apply(options: Options): Driveactivity = js.native
+  def apply(version: v2): Driveactivity = js.native
 }

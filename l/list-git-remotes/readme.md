@@ -10,10 +10,10 @@ List the remotes for a local git repository. Sync and async.
 | ------------------ | :-------------: |
 | Full name          | list-git-remotes |
 | Keywords           | git, list, remotes |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 29522 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3340.3333333333335 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/list-git-remotes)

@@ -10,10 +10,10 @@ Convert TTF files to WOFF2 ones.
 | ------------------ | :-------------: |
 | Full name          | ttf2woff2 |
 | Keywords           | ttf, woff2, fonts |
-| # releases         | 4 |
-| # dependents       | 122 |
-| # downloads        | 4410386 |
-| # stars            | 8 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 539688.3333333334 |
+| # stars            | 223.0 |
 
 ## Links
 - [Homepage](https://github.com/nfroidure/ttf2woff2)

@@ -1,19 +1,50 @@
 package typings.sharp.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.sharp.anon.B
+import typings.sharp.sharpStrings.`b-w`
+import typings.sharp.sharpStrings.av1
+import typings.sharp.sharpStrings.avif
+import typings.sharp.sharpStrings.bw
+import typings.sharp.sharpStrings.cmyk
+import typings.sharp.sharpStrings.dz
+import typings.sharp.sharpStrings.fits
+import typings.sharp.sharpStrings.gif
+import typings.sharp.sharpStrings.heif
+import typings.sharp.sharpStrings.hevc
+import typings.sharp.sharpStrings.input
+import typings.sharp.sharpStrings.jpeg
+import typings.sharp.sharpStrings.jpg
+import typings.sharp.sharpStrings.magick
+import typings.sharp.sharpStrings.multiband
+import typings.sharp.sharpStrings.openslide
+import typings.sharp.sharpStrings.pdf
+import typings.sharp.sharpStrings.png
+import typings.sharp.sharpStrings.ppm
+import typings.sharp.sharpStrings.raw
+import typings.sharp.sharpStrings.srgb
+import typings.sharp.sharpStrings.svg
+import typings.sharp.sharpStrings.tif
+import typings.sharp.sharpStrings.tiff
+import typings.sharp.sharpStrings.v
+import typings.sharp.sharpStrings.webp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Metadata
-  extends StObject
-     with WriteableMetadata {
+trait Metadata extends StObject {
+  
+  /** Default background colour, if present, for PNG (bKGD) and GIF images, either an RGB Object or a single greyscale value */
+  var background: js.UndefOr[B | Double] = js.undefined
   
   /** Number of bands e.g. 3 for sRGB, 4 for CMYK */
   var channels: js.UndefOr[Channels] = js.undefined
   
   /** String containing JPEG chroma subsampling, 4:2:0 or 4:4:4 for RGB, 4:2:0:4 or 4:4:4:4 for CMYK */
   var chromaSubsampling: String
+  
+  /** The encoder used to compress an HEIF file, `av1` (AVIF) or `hevc` (HEIC) */
+  var compression: js.UndefOr[av1 | hevc] = js.undefined
   
   /** Delay in ms between each page in an animated image, provided as an array of integers. */
   var delay: js.UndefOr[js.Array[Double]] = js.undefined
@@ -28,7 +59,9 @@ trait Metadata
   var exif: js.UndefOr[Buffer] = js.undefined
   
   /** Name of decoder used to decompress image data e.g. jpeg, png, webp, gif, svg */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[
+    avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp
+  ] = js.undefined
   
   /** Boolean indicating the presence of an alpha transparency channel */
   var hasAlpha: js.UndefOr[Boolean] = js.undefined
@@ -51,6 +84,9 @@ trait Metadata
   /** Number of times to loop an animated image, zero refers to a continuous loop. */
   var loop: js.UndefOr[Double] = js.undefined
   
+  /** Number value of the EXIF Orientation header, if present */
+  var orientation: js.UndefOr[Double] = js.undefined
+  
   /** Number of pixels high each page in a multi-page image will be. */
   var pageHeight: js.UndefOr[Double] = js.undefined
   
@@ -63,8 +99,8 @@ trait Metadata
   /** Total size of image in bytes, for Stream and Buffer input only */
   var size: js.UndefOr[Double] = js.undefined
   
-  /** Name of colour space interpretation e.g. srgb, rgb, cmyk, lab, b-w ... */
-  var space: js.UndefOr[String] = js.undefined
+  /** Name of colour space interpretation */
+  var space: js.UndefOr[multiband | `b-w` | bw | cmyk | srgb] = js.undefined
   
   /** Buffer containing raw TIFFTAG_PHOTOSHOP data, if present */
   var tifftagPhotoshop: js.UndefOr[Buffer] = js.undefined
@@ -84,17 +120,25 @@ object Metadata {
   
   extension [Self <: Metadata](x: Self) {
     
+    inline def setBackground(value: B | Double): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
     inline def setChannels(value: Channels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     inline def setChromaSubsampling(value: String): Self = StObject.set(x, "chromaSubsampling", value.asInstanceOf[js.Any])
     
+    inline def setCompression(value: av1 | hevc): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    
     inline def setDelay(value: js.Array[Double]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    inline def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value :_*))
+    inline def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value*))
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
@@ -108,7 +152,9 @@ object Metadata {
     
     inline def setExifUndefined: Self = StObject.set(x, "exif", js.undefined)
     
-    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(
+      value: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp
+    ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
@@ -140,6 +186,10 @@ object Metadata {
     
     inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
+    inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
     inline def setPageHeight(value: Double): Self = StObject.set(x, "pageHeight", value.asInstanceOf[js.Any])
     
     inline def setPageHeightUndefined: Self = StObject.set(x, "pageHeight", js.undefined)
@@ -156,7 +206,7 @@ object Metadata {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: multiband | `b-w` | bw | cmyk | srgb): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     

@@ -10,19 +10,17 @@ trait RippleBackgroundPropType
      with BaseBackgroundPropType
      with BackgroundPropType {
   
-  var borderless: js.UndefOr[Boolean] = js.undefined
+  var borderless: Boolean
   
-  var color: js.UndefOr[ColorValue] = js.undefined
-  
-  var radius: js.UndefOr[Double] = js.undefined
+  var color: js.UndefOr[Double | Null] = js.undefined
   
   @JSName("type")
   var type_RippleBackgroundPropType: RippleAndroid
 }
 object RippleBackgroundPropType {
   
-  inline def apply(): RippleBackgroundPropType = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(borderless: Boolean): RippleBackgroundPropType = {
+    val __obj = js.Dynamic.literal(borderless = borderless.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RippleAndroid")
     __obj.asInstanceOf[RippleBackgroundPropType]
   }
@@ -31,15 +29,11 @@ object RippleBackgroundPropType {
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
-    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColorNull: Self = StObject.set(x, "color", null)
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-    
-    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
-    
-    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     inline def setType(value: RippleAndroid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

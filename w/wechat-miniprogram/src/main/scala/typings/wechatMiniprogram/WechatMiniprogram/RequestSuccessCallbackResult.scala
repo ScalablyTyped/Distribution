@@ -1,11 +1,10 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestSuccessCallbackResult extends StObject {
+trait RequestSuccessCallbackResult[T /* <: String | IAnyObject | js.typedarray.ArrayBuffer */] extends StObject {
   
   /** 开发者服务器返回的 cookies，格式为字符串数组
     *
@@ -13,7 +12,7 @@ trait RequestSuccessCallbackResult extends StObject {
   var cookies: js.Array[String]
   
   /** 开发者服务器返回的数据 */
-  var data: String | IAnyObject | ArrayBuffer
+  var data: T
   
   var errMsg: String
   
@@ -32,25 +31,25 @@ trait RequestSuccessCallbackResult extends StObject {
 }
 object RequestSuccessCallbackResult {
   
-  inline def apply(
+  inline def apply[T /* <: String | IAnyObject | js.typedarray.ArrayBuffer */](
     cookies: js.Array[String],
-    data: String | IAnyObject | ArrayBuffer,
+    data: T,
     errMsg: String,
     header: IAnyObject,
     profile: RequestProfile,
     statusCode: Double
-  ): RequestSuccessCallbackResult = {
+  ): RequestSuccessCallbackResult[T] = {
     val __obj = js.Dynamic.literal(cookies = cookies.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RequestSuccessCallbackResult]
+    __obj.asInstanceOf[RequestSuccessCallbackResult[T]]
   }
   
-  extension [Self <: RequestSuccessCallbackResult](x: Self) {
+  extension [Self <: RequestSuccessCallbackResult[?], T /* <: String | IAnyObject | js.typedarray.ArrayBuffer */](x: Self & RequestSuccessCallbackResult[T]) {
     
     inline def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    inline def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+    inline def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value*))
     
-    inline def setData(value: String | IAnyObject | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

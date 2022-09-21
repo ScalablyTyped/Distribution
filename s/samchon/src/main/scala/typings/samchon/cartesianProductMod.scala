@@ -9,7 +9,7 @@ object cartesianProductMod {
   
   @JSImport("samchon/library/case_generators/CartesianProduct", "CartesianProduct")
   @js.native
-  class CartesianProduct protected ()
+  open class CartesianProduct protected ()
     extends StObject
        with ICaseGenerator {
     /**
@@ -36,12 +36,12 @@ object cartesianProductMod {
     /**
       * @hidden
       */
-    /* private */ var digits_ : js.Any = js.native
+    /* private */ var digits_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var dividers_ : js.Any = js.native
+    /* private */ var dividers_ : Any = js.native
     
     /**
       * Get size of all cases.
@@ -54,6 +54,6 @@ object cartesianProductMod {
     /**
       * @hidden
       */
-    /* private */ var size_ : js.Any = js.native
+    /* private */ var size_ : Any = js.native
   }
 }

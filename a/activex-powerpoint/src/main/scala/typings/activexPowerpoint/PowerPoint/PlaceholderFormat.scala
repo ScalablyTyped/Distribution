@@ -13,7 +13,7 @@ trait PlaceholderFormat extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.PlaceholderFormat_typekey")
   var PowerPointDotPlaceholderFormat_typekey: PlaceholderFormat
@@ -26,7 +26,7 @@ object PlaceholderFormat {
     Application: Application,
     ContainedType: MsoShapeType,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotPlaceholderFormat_typekey: PlaceholderFormat,
     Type: PpPlaceholderType
   ): PlaceholderFormat = {
@@ -43,7 +43,7 @@ object PlaceholderFormat {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotPlaceholderFormat_typekey(value: PlaceholderFormat): Self = StObject.set(x, "PowerPoint.PlaceholderFormat_typekey", value.asInstanceOf[js.Any])
     

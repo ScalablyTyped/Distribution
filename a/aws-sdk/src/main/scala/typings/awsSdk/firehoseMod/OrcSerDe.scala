@@ -73,7 +73,7 @@ object OrcSerDe {
     
     inline def setBloomFilterColumnsUndefined: Self = StObject.set(x, "BloomFilterColumns", js.undefined)
     
-    inline def setBloomFilterColumnsVarargs(value: NonEmptyStringWithoutWhitespace*): Self = StObject.set(x, "BloomFilterColumns", js.Array(value :_*))
+    inline def setBloomFilterColumnsVarargs(value: NonEmptyStringWithoutWhitespace*): Self = StObject.set(x, "BloomFilterColumns", js.Array(value*))
     
     inline def setBloomFilterFalsePositiveProbability(value: Proportion): Self = StObject.set(x, "BloomFilterFalsePositiveProbability", value.asInstanceOf[js.Any])
     

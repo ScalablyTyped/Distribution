@@ -9,7 +9,7 @@ object columnFormatterMod {
   
   @JSImport("@fast-csv/parse/build/src/parser/column/ColumnFormatter", "ColumnFormatter")
   @js.native
-  class ColumnFormatter protected () extends StObject {
+  open class ColumnFormatter protected () extends StObject {
     def this(parserOptions: ParserOptions) = this()
     
     def format(col: String): String = js.native

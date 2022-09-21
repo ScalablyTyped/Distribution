@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The default constructor produces the Point(0,0).
   */
-class Point ()
+open class Point ()
   extends typings.go.mod.Point {
   /**
     * The two-argument constructor produces the Point(x, y).

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Returns list of supported data sources and their metadata.
-  */
 trait SchemaListDataSourcesResponse extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaListDataSourcesResponse extends StObject {
   var dataSources: js.UndefOr[js.Array[SchemaDataSource]] = js.undefined
   
   /**
-    * Output only. The next-pagination token. For multiple-page list results,
-    * this token can be used as the `ListDataSourcesRequest.page_token` to
-    * request the next page of list results.
+    * Output only. The next-pagination token. For multiple-page list results, this token can be used as the `ListDataSourcesRequest.page_token` to request the next page of list results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListDataSourcesResponse {
   
@@ -34,9 +29,11 @@ object SchemaListDataSourcesResponse {
     
     inline def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
     
-    inline def setDataSourcesVarargs(value: SchemaDataSource*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: SchemaDataSource*): Self = StObject.set(x, "dataSources", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

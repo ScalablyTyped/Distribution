@@ -10,10 +10,10 @@ math-random is an isomorphic, drop-in replacement for `Math.random` that uses cr
 | ------------------ | :-------------: |
 | Full name          | math-random |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 40 |
-| # downloads        | 165677619 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1070231E7 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/michaelrhodes/math-random#readme)

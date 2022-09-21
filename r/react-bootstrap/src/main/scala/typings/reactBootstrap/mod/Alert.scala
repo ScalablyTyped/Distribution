@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Alert")
 @js.native
-class Alert ()
+open class Alert ()
   extends typings.reactBootstrap.libMod.Alert

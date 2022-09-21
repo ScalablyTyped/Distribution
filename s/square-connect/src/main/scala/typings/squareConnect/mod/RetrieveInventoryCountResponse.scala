@@ -1,13 +1,12 @@
 package typings.squareConnect.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "RetrieveInventoryCountResponse")
 @js.native
-class RetrieveInventoryCountResponse () extends StObject {
+open class RetrieveInventoryCountResponse () extends StObject {
   
   /**
     * The current calculated inventory counts for the requested object and locations.
@@ -23,5 +22,5 @@ class RetrieveInventoryCountResponse () extends StObject {
   /**
     * Any errors that occurred during the request.
     */
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[js.Error]] = js.native
 }

@@ -9,10 +9,10 @@ Node implementation of Google's JavaScript Library (Currently Implemented: Googl
 | ------------------ | :-------------: |
 | Full name          | gapi |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 87968 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18907.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](http://github.com/phated/node-gapi)

@@ -33,6 +33,6 @@ object ListSimulationApplicationsResponse {
     
     inline def setSimulationApplicationSummariesUndefined: Self = StObject.set(x, "simulationApplicationSummaries", js.undefined)
     
-    inline def setSimulationApplicationSummariesVarargs(value: SimulationApplicationSummary*): Self = StObject.set(x, "simulationApplicationSummaries", js.Array(value :_*))
+    inline def setSimulationApplicationSummariesVarargs(value: SimulationApplicationSummary*): Self = StObject.set(x, "simulationApplicationSummaries", js.Array(value*))
   }
 }

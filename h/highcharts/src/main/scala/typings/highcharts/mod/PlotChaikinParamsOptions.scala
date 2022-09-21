@@ -6,6 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlotChaikinParamsOptions extends StObject {
   
+  var index: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highstock) Parameter used indirectly for calculating the `AD` indicator.
+    * Decides about the number of data points that are taken into account for
+    * the indicator calculations.
+    */
+  var period: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) Periods for Chaikin Oscillator calculations.
     */
@@ -27,11 +36,19 @@ object PlotChaikinParamsOptions {
   
   extension [Self <: PlotChaikinParamsOptions](x: Self) {
     
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    
     inline def setPeriods(value: js.Array[Double]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     
     inline def setPeriodsUndefined: Self = StObject.set(x, "periods", js.undefined)
     
-    inline def setPeriodsVarargs(value: Double*): Self = StObject.set(x, "periods", js.Array(value :_*))
+    inline def setPeriodsVarargs(value: Double*): Self = StObject.set(x, "periods", js.Array(value*))
     
     inline def setVolumeSeriesID(value: String): Self = StObject.set(x, "volumeSeriesID", value.asInstanceOf[js.Any])
     

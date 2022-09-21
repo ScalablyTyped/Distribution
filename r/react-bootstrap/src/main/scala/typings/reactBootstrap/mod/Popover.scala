@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Popover")
 @js.native
-class Popover ()
+open class Popover ()
   extends typings.reactBootstrap.libMod.Popover

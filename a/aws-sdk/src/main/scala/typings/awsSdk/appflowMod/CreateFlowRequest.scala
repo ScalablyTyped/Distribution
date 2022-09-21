@@ -67,7 +67,7 @@ object CreateFlowRequest {
     
     inline def setDestinationFlowConfigList(value: DestinationFlowConfigList): Self = StObject.set(x, "destinationFlowConfigList", value.asInstanceOf[js.Any])
     
-    inline def setDestinationFlowConfigListVarargs(value: DestinationFlowConfig*): Self = StObject.set(x, "destinationFlowConfigList", js.Array(value :_*))
+    inline def setDestinationFlowConfigListVarargs(value: DestinationFlowConfig*): Self = StObject.set(x, "destinationFlowConfigList", js.Array(value*))
     
     inline def setFlowName(value: FlowName): Self = StObject.set(x, "flowName", value.asInstanceOf[js.Any])
     
@@ -83,7 +83,7 @@ object CreateFlowRequest {
     
     inline def setTasks(value: Tasks): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value*))
     
     inline def setTriggerConfig(value: TriggerConfig): Self = StObject.set(x, "triggerConfig", value.asInstanceOf[js.Any])
   }

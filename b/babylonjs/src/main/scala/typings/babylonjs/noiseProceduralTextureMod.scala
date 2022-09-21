@@ -12,7 +12,7 @@ object noiseProceduralTextureMod {
   
   @JSImport("babylonjs/Materials/Textures/Procedurals/noiseProceduralTexture", "NoiseProceduralTexture")
   @js.native
-  class NoiseProceduralTexture protected () extends ProceduralTexture {
+  open class NoiseProceduralTexture protected () extends ProceduralTexture {
     /**
       * Creates a new NoiseProceduralTexture
       * @param name defines the name fo the texture
@@ -56,7 +56,7 @@ object noiseProceduralTextureMod {
       generateMipMaps: Boolean
     ) = this()
     
-    /* private */ var _updateShaderUniforms: js.Any = js.native
+    /* private */ var _updateShaderUniforms: Any = js.native
     
     /** Gets or sets animation speed factor (default is 1) */
     var animationSpeedFactor: Double = js.native
@@ -84,9 +84,8 @@ object noiseProceduralTextureMod {
       * Creates a NoiseProceduralTexture from parsed noise procedural texture data
       * @param parsedTexture defines parsed texture data
       * @param scene defines the current scene
-      * @param rootUrl defines the root URL containing noise procedural texture information
       * @returns a parsed NoiseProceduralTexture
       */
-    inline def Parse(parsedTexture: js.Any, scene: Scene): NoiseProceduralTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[NoiseProceduralTexture]
+    inline def Parse(parsedTexture: Any, scene: Scene): NoiseProceduralTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[NoiseProceduralTexture]
   }
 }

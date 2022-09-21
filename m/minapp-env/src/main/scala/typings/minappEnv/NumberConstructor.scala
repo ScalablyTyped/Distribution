@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberConstructor
   extends StObject
      with Instantiable0[Number]
-     with Instantiable1[/* value */ js.Any, Number] {
+     with Instantiable1[/* value */ Any, Number] {
   
   def apply(): Double = js.native
-  def apply(value: js.Any): Double = js.native
+  def apply(value: Any): Double = js.native
   
   /**
     * The value of Number.EPSILON is the difference between 1 and the smallest value greater than 1

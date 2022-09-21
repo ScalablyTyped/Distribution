@@ -11,5 +11,6 @@ object cssVarMod {
   val ^ : js.Any = js.native
   
   inline def default(cssVariable: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssVariable.asInstanceOf[js.Any]).asInstanceOf[String | Double]
-  inline def default(cssVariable: String, passThrough: Boolean): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssVariable.asInstanceOf[js.Any], passThrough.asInstanceOf[js.Any])).asInstanceOf[String | Double]
+  inline def default(cssVariable: String, defaultValue: String): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssVariable.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String | Double]
+  inline def default(cssVariable: String, defaultValue: Double): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssVariable.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String | Double]
 }

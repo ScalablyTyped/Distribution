@@ -1,7 +1,7 @@
 
 # Scala.js typings for spex
 
-Typings are for version 3.0.2
+Typings are for version 3.2.0
 
 ## Library description:
 Specialized Promise Extensions
@@ -10,15 +10,12 @@ Specialized Promise Extensions
 | ------------------ | :-------------: |
 | Full name          | spex |
 | Keywords           | promise, throttle, throttling, load balancing |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 6993132 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1288375.3333333333 |
+| # stars            | 51.0 |
 
 ## Links
-- [Homepage](https://github.com/vitaly-t/spex)
-- [Bugs](https://github.com/vitaly-t/spex/issues)
-- [Repository](https://github.com/vitaly-t/spex)
 - [Npm](https://www.npmjs.com/package/spex)
     
 

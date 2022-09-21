@@ -25,12 +25,12 @@ object Vertex2DList {
     
     inline def setXOffsetsUndefined: Self = StObject.set(x, "xOffsets", js.undefined)
     
-    inline def setXOffsetsVarargs(value: Double*): Self = StObject.set(x, "xOffsets", js.Array(value :_*))
+    inline def setXOffsetsVarargs(value: Double*): Self = StObject.set(x, "xOffsets", js.Array(value*))
     
     inline def setYOffsets(value: js.Array[Double]): Self = StObject.set(x, "yOffsets", value.asInstanceOf[js.Any])
     
     inline def setYOffsetsUndefined: Self = StObject.set(x, "yOffsets", js.undefined)
     
-    inline def setYOffsetsVarargs(value: Double*): Self = StObject.set(x, "yOffsets", js.Array(value :_*))
+    inline def setYOffsetsVarargs(value: Double*): Self = StObject.set(x, "yOffsets", js.Array(value*))
   }
 }

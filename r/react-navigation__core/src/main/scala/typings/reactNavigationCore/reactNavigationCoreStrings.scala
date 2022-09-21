@@ -11,12 +11,12 @@ object reactNavigationCoreStrings {
   inline def NAVIGATE: NAVIGATE = "NAVIGATE".asInstanceOf[NAVIGATE]
   
   @js.native
-  sealed trait ScreenListeners extends StObject
-  inline def ScreenListeners: ScreenListeners = "ScreenListeners".asInstanceOf[ScreenListeners]
+  sealed trait PathConfigMap extends StObject
+  inline def PathConfigMap: PathConfigMap = "PathConfigMap".asInstanceOf[PathConfigMap]
   
   @js.native
-  sealed trait __unsafe_action__ extends StObject
-  inline def __unsafe_action__ : __unsafe_action__ = "__unsafe_action__".asInstanceOf[__unsafe_action__]
+  sealed trait ScreenListeners extends StObject
+  inline def ScreenListeners: ScreenListeners = "ScreenListeners".asInstanceOf[ScreenListeners]
   
   @js.native
   sealed trait _empty extends StObject
@@ -35,10 +35,6 @@ object reactNavigationCoreStrings {
   inline def beforeRemove: beforeRemove = "beforeRemove".asInstanceOf[beforeRemove]
   
   @js.native
-  sealed trait blur extends StObject
-  inline def blur: blur = "blur".asInstanceOf[blur]
-  
-  @js.native
   sealed trait canGoBack extends StObject
   inline def canGoBack: canGoBack = "canGoBack".asInstanceOf[canGoBack]
   
@@ -47,12 +43,8 @@ object reactNavigationCoreStrings {
   inline def children: children = "children".asInstanceOf[children]
   
   @js.native
-  sealed trait dangerouslyGetParent extends StObject
-  inline def dangerouslyGetParent: dangerouslyGetParent = "dangerouslyGetParent".asInstanceOf[dangerouslyGetParent]
-  
-  @js.native
-  sealed trait dangerouslyGetState extends StObject
-  inline def dangerouslyGetState: dangerouslyGetState = "dangerouslyGetState".asInstanceOf[dangerouslyGetState]
+  sealed trait defaultScreenOptions extends StObject
+  inline def defaultScreenOptions: defaultScreenOptions = "defaultScreenOptions".asInstanceOf[defaultScreenOptions]
   
   @js.native
   sealed trait dispatch extends StObject
@@ -63,12 +55,24 @@ object reactNavigationCoreStrings {
   inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
+  sealed trait getId extends StObject
+  inline def getId: getId = "getId".asInstanceOf[getId]
+  
+  @js.native
+  sealed trait getParent extends StObject
+  inline def getParent: getParent = "getParent".asInstanceOf[getParent]
+  
+  @js.native
   sealed trait getState extends StObject
   inline def getState: getState = "getState".asInstanceOf[getState]
   
   @js.native
   sealed trait goBack extends StObject
   inline def goBack: goBack = "goBack".asInstanceOf[goBack]
+  
+  @js.native
+  sealed trait id extends StObject
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait initialRouteName extends StObject
@@ -79,12 +83,12 @@ object reactNavigationCoreStrings {
   inline def isFocused: isFocused = "isFocused".asInstanceOf[isFocused]
   
   @js.native
-  sealed trait navigate_ extends StObject
-  inline def navigate_ : navigate_ = "navigate".asInstanceOf[navigate_]
+  sealed trait key extends StObject
+  inline def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait options extends StObject
-  inline def options: options = "options".asInstanceOf[options]
+  sealed trait navigate_ extends StObject
+  inline def navigate_ : navigate_ = "navigate".asInstanceOf[navigate_]
   
   @js.native
   sealed trait removeListener extends StObject
@@ -93,6 +97,10 @@ object reactNavigationCoreStrings {
   @js.native
   sealed trait reset extends StObject
   inline def reset: reset = "reset".asInstanceOf[reset]
+  
+  @js.native
+  sealed trait screenListeners_ extends StObject
+  inline def screenListeners_ : screenListeners_ = "screenListeners".asInstanceOf[screenListeners_]
   
   @js.native
   sealed trait screenOptions extends StObject
@@ -105,8 +113,4 @@ object reactNavigationCoreStrings {
   @js.native
   sealed trait setParams extends StObject
   inline def setParams: setParams = "setParams".asInstanceOf[setParams]
-  
-  @js.native
-  sealed trait state extends StObject
-  inline def state: state = "state".asInstanceOf[state]
 }

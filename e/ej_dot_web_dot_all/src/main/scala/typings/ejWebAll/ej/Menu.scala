@@ -57,41 +57,41 @@ trait Menu
     * @returns {void}
     */
   def hideItems(itemID: String): Unit = js.native
-  def hideItems(itemID: js.Array[js.Any]): Unit = js.native
+  def hideItems(itemID: js.Array[Any]): Unit = js.native
   
   /** Insert the menu item as child of target node.
     * @param {any} Information about Menu item.
     * @param {string|any} Selector of target node or Object of target node.
     * @returns {void}
     */
-  def insert(item: js.Any, target: String): Unit = js.native
-  def insert(item: js.Any, target: js.Any): Unit = js.native
+  def insert(item: Any, target: String): Unit = js.native
+  def insert(item: Any, target: Any): Unit = js.native
   
   /** Insert the menu item after the target node.
     * @param {any} Information about Menu item.
     * @param {string|any} Selector of target node or Object of target node.
     * @returns {void}
     */
-  def insertAfter(item: js.Any, target: String): Unit = js.native
-  def insertAfter(item: js.Any, target: js.Any): Unit = js.native
+  def insertAfter(item: Any, target: String): Unit = js.native
+  def insertAfter(item: Any, target: Any): Unit = js.native
   
   /** Insert the menu item before the target node.
     * @param {any} Information about Menu item.
     * @param {string|any} Selector of target node or Object of target node.
     * @returns {void}
     */
-  def insertBefore(item: js.Any, target: String): Unit = js.native
-  def insertBefore(item: js.Any, target: js.Any): Unit = js.native
+  def insertBefore(item: Any, target: String): Unit = js.native
+  def insertBefore(item: Any, target: Any): Unit = js.native
   
   @JSName("model")
   var model_Menu: Model = js.native
   
+  def remove(target: js.Array[Any]): Unit = js.native
   /** Remove Menu item.
     * @param {any|any[]} Selector of target node or Object of target node.
     * @returns {void}
     */
-  def remove(target: js.Any): Unit = js.native
-  def remove(target: js.Array[js.Any]): Unit = js.native
+  def remove(target: Any): Unit = js.native
   
   /** To show the Menu control.
     * @param {number} x co-ordinate position of context menu.
@@ -100,14 +100,14 @@ trait Menu
     * @param {any} name of the event
     * @returns {void}
     */
-  def show(locationX: Double, locationY: Double, targetElement: js.Any, event: js.Any): Unit = js.native
+  def show(locationX: Double, locationY: Double, targetElement: Any, event: Any): Unit = js.native
   
   /** Show the specific items in Menu control.
     * @param {string|any[]} ItemID of the Menu item to be shown
     * @returns {void}
     */
   def showItems(itemID: String): Unit = js.native
-  def showItems(itemID: js.Array[js.Any]): Unit = js.native
+  def showItems(itemID: js.Array[Any]): Unit = js.native
 }
 object Menu {
   
@@ -123,7 +123,7 @@ object Menu {
     
     /** returns the target element
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -146,7 +146,7 @@ object Menu {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -160,11 +160,11 @@ object Menu {
     
     /** returns clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the event
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the menu model
       */
@@ -191,11 +191,11 @@ object Menu {
     
     extension [Self <: ClickEventArgs](x: Self) {
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -225,7 +225,7 @@ object Menu {
     
     /** returns the target element
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -244,7 +244,7 @@ object Menu {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -316,11 +316,11 @@ object Menu {
     
     /** It receives the child data for the inner level.
       */
-    var child: js.UndefOr[js.Any] = js.undefined
+    var child: js.UndefOr[Any] = js.undefined
     
     /** It receives datasource as Essential DataManager object and JSON object.
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Specifies the HTML attributes to â€œLIâ€ item list.
       */
@@ -348,7 +348,7 @@ object Menu {
     
     /** It receives query to retrieve data from the table (query is same as SQL).
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Specifies the sprite CSS class to â€œLIâ€ item list.
       */
@@ -375,11 +375,11 @@ object Menu {
     
     extension [Self <: Fields](x: Self) {
       
-      inline def setChild(value: js.Any): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+      inline def setChild(value: Any): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
       inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -407,7 +407,7 @@ object Menu {
       
       inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -433,11 +433,11 @@ object Menu {
     
     /** returns clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the event
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns clicked menu item text
       */
@@ -460,11 +460,11 @@ object Menu {
     
     extension [Self <: KeydownEventArgs](x: Self) {
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -566,7 +566,7 @@ object Menu {
     /** Specifies the list of HTML attributes to be added to menu control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Enables/disables responsive support for the Menu control during the window resizing time.
       * @Default {true}
@@ -724,7 +724,7 @@ object Menu {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -802,11 +802,11 @@ object Menu {
     
     /** returns clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the event
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the menu model
       */
@@ -829,11 +829,11 @@ object Menu {
     
     extension [Self <: MouseoutEventArgs](x: Self) {
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -855,11 +855,11 @@ object Menu {
     
     /** returns clicked menu item element
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the event
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the menu model
       */
@@ -882,11 +882,11 @@ object Menu {
     
     extension [Self <: MouseoverEventArgs](x: Self) {
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -912,7 +912,7 @@ object Menu {
     
     /** returns the target element
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -931,7 +931,7 @@ object Menu {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -949,7 +949,7 @@ object Menu {
     
     /** returns the event object
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** returns the menu model
       */
@@ -972,7 +972,7 @@ object Menu {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
@@ -994,7 +994,7 @@ object Menu {
     
     /** returns the event object
       */
-    var e: js.UndefOr[js.Any] = js.undefined
+    var e: js.UndefOr[Any] = js.undefined
     
     /** returns the menu model
       */
@@ -1017,7 +1017,7 @@ object Menu {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       

@@ -31,7 +31,7 @@ object ResizePanelOptions {
     
     inline def setDockingPanelsUndefined: Self = StObject.set(x, "dockingPanels", js.undefined)
     
-    inline def setDockingPanelsVarargs(value: DockingPanel*): Self = StObject.set(x, "dockingPanels", js.Array(value :_*))
+    inline def setDockingPanelsVarargs(value: DockingPanel*): Self = StObject.set(x, "dockingPanels", js.Array(value*))
     
     inline def setViewer(value: Viewer3D): Self = StObject.set(x, "viewer", value.asInstanceOf[js.Any])
     

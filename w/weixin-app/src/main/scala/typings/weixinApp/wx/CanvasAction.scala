@@ -23,7 +23,7 @@ object CanvasAction {
     
     inline def setData(value: js.Array[CanvasAction | Double | String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: (CanvasAction | Double | String)*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: (CanvasAction | Double | String)*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }

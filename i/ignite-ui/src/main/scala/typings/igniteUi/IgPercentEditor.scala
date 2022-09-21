@@ -10,7 +10,7 @@ trait IgPercentEditor
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets whether the editor value can become null.
@@ -112,7 +112,7 @@ trait IgPercentEditor
   /**
     * Removed from numeric editor options
     */
-  var excludeKeys: js.UndefOr[js.Any] = js.undefined
+  var excludeKeys: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the character, which is used as separator for groups (like thousands).
@@ -135,7 +135,7 @@ trait IgPercentEditor
     * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
-  var groups: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var groups: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets/Sets the height of the control.
@@ -149,7 +149,7 @@ trait IgPercentEditor
   /**
     * Removed from numeric editor options
     */
-  var includeKeys: js.UndefOr[js.Any] = js.undefined
+  var includeKeys: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.
@@ -180,7 +180,7 @@ trait IgPercentEditor
     * Items in the list can be of type number.
     *
     */
-  var listItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var listItems: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
@@ -192,7 +192,7 @@ trait IgPercentEditor
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the maximum number of decimal places supported by the editor.
@@ -207,7 +207,7 @@ trait IgPercentEditor
   /**
     * Removed from numeric editor options
     */
-  var maxLength: js.UndefOr[js.Any] = js.undefined
+  var maxLength: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the maximum value which can be entered in the editor by the end user.
@@ -379,17 +379,17 @@ trait IgPercentEditor
     */
   var textAlign: js.UndefOr[String] = js.undefined
   
-  var textMode: js.UndefOr[js.Any] = js.undefined
+  var textMode: js.UndefOr[Any] = js.undefined
   
   /**
     * Removed from numeric editor options
     */
-  var toLower: js.UndefOr[js.Any] = js.undefined
+  var toLower: js.UndefOr[Any] = js.undefined
   
   /**
     * Removed from numeric editor options
     */
-  var toUpper: js.UndefOr[js.Any] = js.undefined
+  var toUpper: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets options supported by the [igValidator](ui.igvalidator#options) widget.
@@ -397,14 +397,14 @@ trait IgPercentEditor
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  var validatorOptions: js.UndefOr[js.Any] = js.undefined
+  var validatorOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     *
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the number of the items to be shown at once when the drop-down list get opened.
@@ -473,7 +473,7 @@ object IgPercentEditor {
     
     inline def setDropDownOrientationUndefined: Self = StObject.set(x, "dropDownOrientation", js.undefined)
     
-    inline def setExcludeKeys(value: js.Any): Self = StObject.set(x, "excludeKeys", value.asInstanceOf[js.Any])
+    inline def setExcludeKeys(value: Any): Self = StObject.set(x, "excludeKeys", value.asInstanceOf[js.Any])
     
     inline def setExcludeKeysUndefined: Self = StObject.set(x, "excludeKeys", js.undefined)
     
@@ -481,17 +481,17 @@ object IgPercentEditor {
     
     inline def setGroupSeparatorUndefined: Self = StObject.set(x, "groupSeparator", js.undefined)
     
-    inline def setGroups(value: js.Array[js.Any]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[Any]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: js.Any*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Any*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setIncludeKeys(value: js.Any): Self = StObject.set(x, "includeKeys", value.asInstanceOf[js.Any])
+    inline def setIncludeKeys(value: Any): Self = StObject.set(x, "includeKeys", value.asInstanceOf[js.Any])
     
     inline def setIncludeKeysUndefined: Self = StObject.set(x, "includeKeys", js.undefined)
     
@@ -511,17 +511,17 @@ object IgPercentEditor {
     
     inline def setListItemHoverDurationUndefined: Self = StObject.set(x, "listItemHoverDuration", js.undefined)
     
-    inline def setListItems(value: js.Array[js.Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
+    inline def setListItems(value: js.Array[Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
     
     inline def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
     
-    inline def setListItemsVarargs(value: js.Any*): Self = StObject.set(x, "listItems", js.Array(value :_*))
+    inline def setListItemsVarargs(value: Any*): Self = StObject.set(x, "listItems", js.Array(value*))
     
     inline def setListWidth(value: Double): Self = StObject.set(x, "listWidth", value.asInstanceOf[js.Any])
     
     inline def setListWidthUndefined: Self = StObject.set(x, "listWidth", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -529,7 +529,7 @@ object IgPercentEditor {
     
     inline def setMaxDecimalsUndefined: Self = StObject.set(x, "maxDecimals", js.undefined)
     
-    inline def setMaxLength(value: js.Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
@@ -621,23 +621,23 @@ object IgPercentEditor {
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    inline def setTextMode(value: js.Any): Self = StObject.set(x, "textMode", value.asInstanceOf[js.Any])
+    inline def setTextMode(value: Any): Self = StObject.set(x, "textMode", value.asInstanceOf[js.Any])
     
     inline def setTextModeUndefined: Self = StObject.set(x, "textMode", js.undefined)
     
-    inline def setToLower(value: js.Any): Self = StObject.set(x, "toLower", value.asInstanceOf[js.Any])
+    inline def setToLower(value: Any): Self = StObject.set(x, "toLower", value.asInstanceOf[js.Any])
     
     inline def setToLowerUndefined: Self = StObject.set(x, "toLower", js.undefined)
     
-    inline def setToUpper(value: js.Any): Self = StObject.set(x, "toUpper", value.asInstanceOf[js.Any])
+    inline def setToUpper(value: Any): Self = StObject.set(x, "toUpper", value.asInstanceOf[js.Any])
     
     inline def setToUpperUndefined: Self = StObject.set(x, "toUpper", js.undefined)
     
-    inline def setValidatorOptions(value: js.Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
+    inline def setValidatorOptions(value: Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
     
     inline def setValidatorOptionsUndefined: Self = StObject.set(x, "validatorOptions", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

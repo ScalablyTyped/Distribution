@@ -14,5 +14,5 @@ trait Apps extends StObject {
   def getSelf(): DOMRequest[App] = js.native
   
   def install(url: String): DOMRequest[App] = js.native
-  def install(url: String, receipts: js.Array[js.Any]): DOMRequest[App] = js.native
+  def install(url: String, receipts: js.Array[Any]): DOMRequest[App] = js.native
 }

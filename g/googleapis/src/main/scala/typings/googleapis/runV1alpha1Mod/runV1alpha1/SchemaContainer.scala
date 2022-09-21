@@ -4,191 +4,89 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single application container. This specifies both the container to run,
-  * the command to run in the container and the arguments to supply to it. Note
-  * that additional arguments may be supplied by the system to the container at
-  * runtime.
-  */
 trait SchemaContainer extends StObject {
   
   /**
-    * Arguments to the entrypoint. The docker image&#39;s CMD is used if this
-    * is not provided. Variable references $(VAR_NAME) are expanded using the
-    * container&#39;s environment. If a variable cannot be resolved, the
-    * reference in the input string will be unchanged. The $(VAR_NAME) syntax
-    * can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references
-    * will never be expanded, regardless of whether the variable exists or not.
-    * Cannot be updated. More info:
-    * https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
-    * +optional
+    * (Optional) Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
     */
-  var args: js.UndefOr[js.Array[String]] = js.undefined
+  var args: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  var command: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Entrypoint array. Not executed within a shell. The docker image&#39;s
-    * ENTRYPOINT is used if this is not provided. Variable references
-    * $(VAR_NAME) are expanded using the container&#39;s environment. If a
-    * variable cannot be resolved, the reference in the input string will be
-    * unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie:
-    * $$(VAR_NAME). Escaped references will never be expanded, regardless of
-    * whether the variable exists or not. Cannot be updated. More info:
-    * https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
-    * +optional
-    */
-  var command: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * List of environment variables to set in the container. Cannot be updated.
-    * +optional
+    * (Optional) List of environment variables to set in the container.
     */
   var env: js.UndefOr[js.Array[SchemaEnvVar]] = js.undefined
   
   /**
-    * List of sources to populate environment variables in the container. The
-    * keys defined within a source must be a C_IDENTIFIER. All invalid keys
-    * will be reported as an event when the container is starting. When a key
-    * exists in multiple sources, the value associated with the last source
-    * will take precedence. Values defined by an Env with a duplicate key will
-    * take precedence. Cannot be updated. +optional
+    * (Optional) List of sources to populate environment variables in the container. The keys defined within a source must be a C_IDENTIFIER. All invalid keys will be reported as an event when the container is starting. When a key exists in multiple sources, the value associated with the last source will take precedence. Values defined by an Env with a duplicate key will take precedence. Cannot be updated.
     */
   var envFrom: js.UndefOr[js.Array[SchemaEnvFromSource]] = js.undefined
   
   /**
-    * Docker image name. More info:
-    * https://kubernetes.io/docs/concepts/containers/images
+    * Only supports containers from Google Container Registry or Artifact Registry URL of the Container image. More info: https://kubernetes.io/docs/concepts/containers/images
     */
-  var image: js.UndefOr[String] = js.undefined
+  var image: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always
-    * if :latest tag is specified, or IfNotPresent otherwise. Cannot be
-    * updated. More info:
-    * https://kubernetes.io/docs/concepts/containers/images#updating-images
-    * +optional
+    * (Optional) Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     */
-  var imagePullPolicy: js.UndefOr[String] = js.undefined
+  var imagePullPolicy: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Actions that the management system should take in response to container
-    * lifecycle events. Cannot be updated. +optional
-    */
-  var lifecycle: js.UndefOr[SchemaLifecycle] = js.undefined
-  
-  /**
-    * Periodic probe of container liveness. Container will be restarted if the
-    * probe fails. Cannot be updated. More info:
-    * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
-    * +optional
+    * (Optional) Periodic probe of container liveness. Container will be restarted if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     */
   var livenessProbe: js.UndefOr[SchemaProbe] = js.undefined
   
   /**
-    * Name of the container specified as a DNS_LABEL. Each container must have
-    * a unique name (DNS_LABEL). Cannot be updated.
+    * (Optional) Name of the container specified as a DNS_LABEL. Currently unused in Cloud Run. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#dns-label-names
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * List of ports to expose from the container. Exposing a port here gives
-    * the system additional information about the network connections a
-    * container uses, but is primarily informational. Not specifying a port
-    * here DOES NOT prevent that port from being exposed. Any port which is
-    * listening on the default &quot;0.0.0.0&quot; address inside a container
-    * will be accessible from the network. Cannot be updated. +optional
+    * (Optional) List of ports to expose from the container. Only a single port can be specified. The specified ports must be listening on all interfaces (0.0.0.0) within the container to be accessible. If omitted, a port number will be chosen and passed to the container through the PORT environment variable for the container to listen on.
     */
   var ports: js.UndefOr[js.Array[SchemaContainerPort]] = js.undefined
   
   /**
-    * Periodic probe of container service readiness. Container will be removed
-    * from service endpoints if the probe fails. Cannot be updated. More info:
-    * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
-    * +optional
+    * (Optional) Periodic probe of container service readiness. Container will be removed from service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     */
   var readinessProbe: js.UndefOr[SchemaProbe] = js.undefined
   
   /**
-    * Compute Resources required by this container. Cannot be updated. More
-    * info:
-    * https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
-    * +optional
+    * (Optional) Compute Resources required by this container. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
     */
   var resources: js.UndefOr[SchemaResourceRequirements] = js.undefined
   
   /**
-    * Security options the pod should run with. More info:
-    * https://kubernetes.io/docs/concepts/policy/security-context/ More info:
-    * https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
-    * +optional
+    * (Optional) Security options the pod should run with. More info: https://kubernetes.io/docs/concepts/policy/security-context/ More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
     */
   var securityContext: js.UndefOr[SchemaSecurityContext] = js.undefined
   
   /**
-    * Whether this container should allocate a buffer for stdin in the
-    * container runtime. If this is not set, reads from stdin in the container
-    * will always result in EOF. Default is false. +optional
+    * (Optional) Startup probe of application within the container. All other probes are disabled if a startup probe is provided, until it succeeds. Container will not be added to service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     */
-  var stdin: js.UndefOr[Boolean] = js.undefined
+  var startupProbe: js.UndefOr[SchemaProbe] = js.undefined
   
   /**
-    * Whether the container runtime should close the stdin channel after it has
-    * been opened by a single attach. When stdin is true the stdin stream will
-    * remain open across multiple attach sessions. If stdinOnce is set to true,
-    * stdin is opened on container start, is empty until the first client
-    * attaches to stdin, and then remains open and accepts data until the
-    * client disconnects, at which time stdin is closed and remains closed
-    * until the container is restarted. If this flag is false, a container
-    * processes that reads from stdin will never receive an EOF. Default is
-    * false +optional
+    * (Optional) Path at which the file to which the container's termination message will be written is mounted into the container's filesystem. Message written is intended to be brief final status, such as an assertion failure message. Will be truncated by the node if greater than 4096 bytes. The total message length across all containers will be limited to 12kb. Defaults to /dev/termination-log.
     */
-  var stdinOnce: js.UndefOr[Boolean] = js.undefined
+  var terminationMessagePath: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional: Path at which the file to which the container&#39;s termination
-    * message will be written is mounted into the container&#39;s filesystem.
-    * Message written is intended to be brief final status, such as an
-    * assertion failure message. Will be truncated by the node if greater than
-    * 4096 bytes. The total message length across all containers will be
-    * limited to 12kb. Defaults to /dev/termination-log. Cannot be updated.
-    * +optional
+    * (Optional) Indicate how the termination message should be populated. File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
     */
-  var terminationMessagePath: js.UndefOr[String] = js.undefined
+  var terminationMessagePolicy: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Indicate how the termination message should be populated. File will use
-    * the contents of terminationMessagePath to populate the container status
-    * message on both success and failure. FallbackToLogsOnError will use the
-    * last chunk of container log output if the termination message file is
-    * empty and the container exited with an error. The log output is limited
-    * to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot
-    * be updated. +optional
-    */
-  var terminationMessagePolicy: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Whether this container should allocate a TTY for itself, also requires
-    * &#39;stdin&#39; to be true. Default is false. +optional
-    */
-  var tty: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * volumeDevices is the list of block devices to be used by the container.
-    * This is an alpha feature and may change in the future. +optional
-    */
-  var volumeDevices: js.UndefOr[js.Array[SchemaVolumeDevice]] = js.undefined
-  
-  /**
-    * Pod volumes to mount into the container&#39;s filesystem. Cannot be
-    * updated. +optional
+    * (Optional) Volume to mount into the container's filesystem. Only supports SecretVolumeSources. Pod volumes to mount into the container's filesystem.
     */
   var volumeMounts: js.UndefOr[js.Array[SchemaVolumeMount]] = js.undefined
   
   /**
-    * Container&#39;s working directory. If not specified, the container
-    * runtime&#39;s default will be used, which might be configured in the
-    * container image. Cannot be updated. +optional
+    * (Optional) Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image.
     */
-  var workingDir: js.UndefOr[String] = js.undefined
+  var workingDir: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaContainer {
   
@@ -201,15 +99,19 @@ object SchemaContainer {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
+    inline def setArgsNull: Self = StObject.set(x, "args", null)
+    
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setCommand(value: js.Array[String]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
+    inline def setCommandNull: Self = StObject.set(x, "command", null)
+    
     inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value*))
     
     inline def setEnv(value: js.Array[SchemaEnvVar]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
@@ -217,23 +119,23 @@ object SchemaContainer {
     
     inline def setEnvFromUndefined: Self = StObject.set(x, "envFrom", js.undefined)
     
-    inline def setEnvFromVarargs(value: SchemaEnvFromSource*): Self = StObject.set(x, "envFrom", js.Array(value :_*))
+    inline def setEnvFromVarargs(value: SchemaEnvFromSource*): Self = StObject.set(x, "envFrom", js.Array(value*))
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setEnvVarargs(value: SchemaEnvVar*): Self = StObject.set(x, "env", js.Array(value :_*))
+    inline def setEnvVarargs(value: SchemaEnvVar*): Self = StObject.set(x, "env", js.Array(value*))
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
+    inline def setImageNull: Self = StObject.set(x, "image", null)
+    
     inline def setImagePullPolicy(value: String): Self = StObject.set(x, "imagePullPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setImagePullPolicyNull: Self = StObject.set(x, "imagePullPolicy", null)
     
     inline def setImagePullPolicyUndefined: Self = StObject.set(x, "imagePullPolicy", js.undefined)
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
-    
-    inline def setLifecycle(value: SchemaLifecycle): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
-    
-    inline def setLifecycleUndefined: Self = StObject.set(x, "lifecycle", js.undefined)
     
     inline def setLivenessProbe(value: SchemaProbe): Self = StObject.set(x, "livenessProbe", value.asInstanceOf[js.Any])
     
@@ -241,13 +143,15 @@ object SchemaContainer {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPorts(value: js.Array[SchemaContainerPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    inline def setPortsVarargs(value: SchemaContainerPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: SchemaContainerPort*): Self = StObject.set(x, "ports", js.Array(value*))
     
     inline def setReadinessProbe(value: SchemaProbe): Self = StObject.set(x, "readinessProbe", value.asInstanceOf[js.Any])
     
@@ -261,39 +165,31 @@ object SchemaContainer {
     
     inline def setSecurityContextUndefined: Self = StObject.set(x, "securityContext", js.undefined)
     
-    inline def setStdin(value: Boolean): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+    inline def setStartupProbe(value: SchemaProbe): Self = StObject.set(x, "startupProbe", value.asInstanceOf[js.Any])
     
-    inline def setStdinOnce(value: Boolean): Self = StObject.set(x, "stdinOnce", value.asInstanceOf[js.Any])
-    
-    inline def setStdinOnceUndefined: Self = StObject.set(x, "stdinOnce", js.undefined)
-    
-    inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+    inline def setStartupProbeUndefined: Self = StObject.set(x, "startupProbe", js.undefined)
     
     inline def setTerminationMessagePath(value: String): Self = StObject.set(x, "terminationMessagePath", value.asInstanceOf[js.Any])
+    
+    inline def setTerminationMessagePathNull: Self = StObject.set(x, "terminationMessagePath", null)
     
     inline def setTerminationMessagePathUndefined: Self = StObject.set(x, "terminationMessagePath", js.undefined)
     
     inline def setTerminationMessagePolicy(value: String): Self = StObject.set(x, "terminationMessagePolicy", value.asInstanceOf[js.Any])
     
+    inline def setTerminationMessagePolicyNull: Self = StObject.set(x, "terminationMessagePolicy", null)
+    
     inline def setTerminationMessagePolicyUndefined: Self = StObject.set(x, "terminationMessagePolicy", js.undefined)
-    
-    inline def setTty(value: Boolean): Self = StObject.set(x, "tty", value.asInstanceOf[js.Any])
-    
-    inline def setTtyUndefined: Self = StObject.set(x, "tty", js.undefined)
-    
-    inline def setVolumeDevices(value: js.Array[SchemaVolumeDevice]): Self = StObject.set(x, "volumeDevices", value.asInstanceOf[js.Any])
-    
-    inline def setVolumeDevicesUndefined: Self = StObject.set(x, "volumeDevices", js.undefined)
-    
-    inline def setVolumeDevicesVarargs(value: SchemaVolumeDevice*): Self = StObject.set(x, "volumeDevices", js.Array(value :_*))
     
     inline def setVolumeMounts(value: js.Array[SchemaVolumeMount]): Self = StObject.set(x, "volumeMounts", value.asInstanceOf[js.Any])
     
     inline def setVolumeMountsUndefined: Self = StObject.set(x, "volumeMounts", js.undefined)
     
-    inline def setVolumeMountsVarargs(value: SchemaVolumeMount*): Self = StObject.set(x, "volumeMounts", js.Array(value :_*))
+    inline def setVolumeMountsVarargs(value: SchemaVolumeMount*): Self = StObject.set(x, "volumeMounts", js.Array(value*))
     
     inline def setWorkingDir(value: String): Self = StObject.set(x, "workingDir", value.asInstanceOf[js.Any])
+    
+    inline def setWorkingDirNull: Self = StObject.set(x, "workingDir", null)
     
     inline def setWorkingDirUndefined: Self = StObject.set(x, "workingDir", js.undefined)
   }

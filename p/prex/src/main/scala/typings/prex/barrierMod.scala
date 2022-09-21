@@ -1,6 +1,6 @@
 package typings.prex
 
-import typings.esfxCancelable.distMod.Cancelable
+import typings.esfxCancelable.mod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object barrierMod {
   
   @JSImport("prex/out/lib/barrier", "Barrier")
   @js.native
-  class Barrier protected () extends StObject {
+  open class Barrier protected () extends StObject {
     /**
       * Initializes a new instance of the Barrier class.
       *
@@ -23,25 +23,25 @@ object barrierMod {
       postPhaseAction: js.Function1[/* barrier */ Barrier, Unit | js.Thenable[Unit]]
     ) = this()
     
-    /* private */ var _finishPhase: js.Any = js.native
+    /* private */ var _finishPhase: Any = js.native
     
-    /* private */ var _isExecutingPostPhaseAction: js.Any = js.native
+    /* private */ var _isExecutingPostPhaseAction: Any = js.native
     
-    /* private */ var _nextPhase: js.Any = js.native
+    /* private */ var _nextPhase: Any = js.native
     
-    /* private */ var _participantCount: js.Any = js.native
+    /* private */ var _participantCount: Any = js.native
     
-    /* private */ var _phaseNumber: js.Any = js.native
+    /* private */ var _phaseNumber: Any = js.native
     
-    /* private */ var _postPhaseAction: js.Any = js.native
+    /* private */ var _postPhaseAction: Any = js.native
     
-    /* private */ var _rejectNextPhase: js.Any = js.native
+    /* private */ var _rejectNextPhase: Any = js.native
     
-    /* private */ var _remainingParticipants: js.Any = js.native
+    /* private */ var _remainingParticipants: Any = js.native
     
-    /* private */ var _resolveNextPhase: js.Any = js.native
+    /* private */ var _resolveNextPhase: Any = js.native
     
-    /* private */ var _waiters: js.Any = js.native
+    /* private */ var _waiters: Any = js.native
     
     /**
       * Notifies the Barrier there will be additional participants.

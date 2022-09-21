@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofNavigationDrawer extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: NavigationDrawer
 }
 object TypeofNavigationDrawer {
   
-  inline def apply(Locale: js.Any, fn: NavigationDrawer): TypeofNavigationDrawer = {
+  inline def apply(Locale: Any, fn: NavigationDrawer): TypeofNavigationDrawer = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofNavigationDrawer]
   }
@@ -24,6 +24,6 @@ object TypeofNavigationDrawer {
     
     inline def setFn(value: NavigationDrawer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

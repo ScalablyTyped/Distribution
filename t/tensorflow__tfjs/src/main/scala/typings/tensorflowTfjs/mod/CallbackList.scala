@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param queueLength Queue length for keeping running statistics over
   *   callback execution time.
   */
-class CallbackList ()
+open class CallbackList ()
   extends typings.tensorflowTfjsLayers.mod.CallbackList {
   def this(callbacks: js.Array[BaseCallback]) = this()
   def this(callbacks: js.Array[BaseCallback], queueLength: Double) = this()

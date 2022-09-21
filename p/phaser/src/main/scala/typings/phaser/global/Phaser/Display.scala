@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Geom.Rectangle
 import typings.phaser.Phaser.Types.Display.ColorObject
 import typings.phaser.Phaser.Types.Display.HSVColorObject
 import typings.phaser.Phaser.Types.Display.InputColorObject
-import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.WebGLRenderingContext
@@ -23,28 +22,28 @@ object Display {
       */
     @JSGlobal("Phaser.Display.Align.BOTTOM_CENTER")
     @js.native
-    val BOTTOM_CENTER: integer = js.native
+    val BOTTOM_CENTER: Double = js.native
     
     /**
       * A constant representing a bottom-left alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.BOTTOM_LEFT")
     @js.native
-    val BOTTOM_LEFT: integer = js.native
+    val BOTTOM_LEFT: Double = js.native
     
     /**
       * A constant representing a bottom-right alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.BOTTOM_RIGHT")
     @js.native
-    val BOTTOM_RIGHT: integer = js.native
+    val BOTTOM_RIGHT: Double = js.native
     
     /**
       * A constant representing a center alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.CENTER")
     @js.native
-    val CENTER: integer = js.native
+    val CENTER: Double = js.native
     
     object In {
       
@@ -121,10 +120,10 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      inline def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[G]
-      inline def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
-      inline def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
-      inline def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: integer, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      inline def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[G]
+      inline def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: Double, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      inline def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: Double, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      inline def QuickSet[G /* <: GameObject */](child: G, alignIn: GameObject, position: Double, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignIn.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned in the right center of the other.
@@ -180,63 +179,63 @@ object Display {
       */
     @JSGlobal("Phaser.Display.Align.LEFT_BOTTOM")
     @js.native
-    val LEFT_BOTTOM: integer = js.native
+    val LEFT_BOTTOM: Double = js.native
     
     /**
       * A constant representing a left-center alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.LEFT_CENTER")
     @js.native
-    val LEFT_CENTER: integer = js.native
+    val LEFT_CENTER: Double = js.native
     
     /**
       * A constant representing a left-top alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.LEFT_TOP")
     @js.native
-    val LEFT_TOP: integer = js.native
+    val LEFT_TOP: Double = js.native
     
     /**
       * A constant representing a right-bottom alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.RIGHT_BOTTOM")
     @js.native
-    val RIGHT_BOTTOM: integer = js.native
+    val RIGHT_BOTTOM: Double = js.native
     
     /**
       * A constant representing a right-center alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.RIGHT_CENTER")
     @js.native
-    val RIGHT_CENTER: integer = js.native
+    val RIGHT_CENTER: Double = js.native
     
     /**
       * A constant representing a right-top alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.RIGHT_TOP")
     @js.native
-    val RIGHT_TOP: integer = js.native
+    val RIGHT_TOP: Double = js.native
     
     /**
       * A constant representing a top-center alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.TOP_CENTER")
     @js.native
-    val TOP_CENTER: integer = js.native
+    val TOP_CENTER: Double = js.native
     
     /**
       * A constant representing a top-left alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.TOP_LEFT")
     @js.native
-    val TOP_LEFT: integer = js.native
+    val TOP_LEFT: Double = js.native
     
     /**
       * A constant representing a top-right alignment or position.
       */
     @JSGlobal("Phaser.Display.Align.TOP_RIGHT")
     @js.native
-    val TOP_RIGHT: integer = js.native
+    val TOP_RIGHT: Double = js.native
     
     object To {
       
@@ -325,10 +324,10 @@ object Display {
         * @param offsetX Optional horizontal offset from the position. Default 0.
         * @param offsetY Optional vertical offset from the position. Default 0.
         */
-      inline def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[G]
-      inline def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
-      inline def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
-      inline def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      inline def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[G]
+      inline def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: Double, offsetX: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[G]
+      inline def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: Double, offsetX: Double, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
+      inline def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: Double, offsetX: Unit, offsetY: Double): G = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSet")(child.asInstanceOf[js.Any], alignTo.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[G]
       
       /**
         * Takes given Game Object and aligns it so that it is positioned next to the right bottom position of the other.
@@ -421,7 +420,7 @@ object Display {
     */
   @JSGlobal("Phaser.Display.BaseShader")
   @js.native
-  class BaseShader protected ()
+  open class BaseShader protected ()
     extends StObject
        with typings.phaser.Phaser.Display.BaseShader {
     /**
@@ -435,10 +434,10 @@ object Display {
     def this(key: String, fragmentSrc: String) = this()
     def this(key: String, fragmentSrc: String, vertexSrc: String) = this()
     def this(key: String, fragmentSrc: Unit, vertexSrc: String) = this()
-    def this(key: String, fragmentSrc: String, vertexSrc: String, uniforms: js.Any) = this()
-    def this(key: String, fragmentSrc: String, vertexSrc: Unit, uniforms: js.Any) = this()
-    def this(key: String, fragmentSrc: Unit, vertexSrc: String, uniforms: js.Any) = this()
-    def this(key: String, fragmentSrc: Unit, vertexSrc: Unit, uniforms: js.Any) = this()
+    def this(key: String, fragmentSrc: String, vertexSrc: String, uniforms: Any) = this()
+    def this(key: String, fragmentSrc: String, vertexSrc: Unit, uniforms: Any) = this()
+    def this(key: String, fragmentSrc: Unit, vertexSrc: String, uniforms: Any) = this()
+    def this(key: String, fragmentSrc: Unit, vertexSrc: Unit, uniforms: Any) = this()
     
     /**
       * The source code, as a string, of the fragment shader being used.
@@ -456,7 +455,7 @@ object Display {
       * The default uniforms for this shader.
       */
     /* CompleteClass */
-    var uniforms: js.Any = js.native
+    var uniforms: Any = js.native
     
     /**
       * The source code, as a string, of the vertex shader being used.
@@ -630,22 +629,22 @@ object Display {
         * @param canvasType The type of the Canvas. Either `Phaser.CANVAS` or `Phaser.WEBGL`. Default Phaser.CANVAS.
         * @param selfParent Use the generated Canvas element as the parent? Default false.
         */
-      inline def create(parent: js.Any): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: Unit, height: Unit, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: Unit, height: Unit, canvasType: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: Unit, height: Unit, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: Unit, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: Unit, height: integer, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: Unit, height: integer, canvasType: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: Unit, height: integer, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: integer, height: Unit, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: integer, height: Unit, canvasType: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: integer, height: Unit, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: integer, height: integer, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: integer, height: integer, canvasType: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create(parent: js.Any, width: integer, height: integer, canvasType: integer, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Double, height: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Double, height: Double, canvasType: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Double, height: Double, canvasType: Double, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Double, height: Double, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Double, height: Unit, canvasType: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Double, height: Unit, canvasType: Double, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Double, height: Unit, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Unit, height: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Unit, height: Double, canvasType: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Unit, height: Double, canvasType: Double, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Unit, height: Double, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Unit, height: Unit, canvasType: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Unit, height: Unit, canvasType: Double, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create(parent: Any, width: Unit, height: Unit, canvasType: Unit, selfParent: Boolean): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], canvasType.asInstanceOf[js.Any], selfParent.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
       
       /**
         * Creates a new Canvas DOM element, or pulls one from the pool if free.
@@ -653,10 +652,10 @@ object Display {
         * @param width The width of the Canvas. Default 1.
         * @param height The height of the Canvas. Default 1.
         */
-      inline def create2D(parent: js.Any): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
-      inline def create2D(parent: js.Any, width: Unit, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create2D(parent: js.Any, width: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def create2D(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create2D(parent: Any): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
+      inline def create2D(parent: Any, width: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create2D(parent: Any, width: Double, height: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def create2D(parent: Any, width: Unit, height: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create2D")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
       
       /**
         * Creates a new Canvas DOM element, or pulls one from the pool if free.
@@ -664,10 +663,10 @@ object Display {
         * @param width The width of the Canvas. Default 1.
         * @param height The height of the Canvas. Default 1.
         */
-      inline def createWebGL(parent: js.Any): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
-      inline def createWebGL(parent: js.Any, width: Unit, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def createWebGL(parent: js.Any, width: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
-      inline def createWebGL(parent: js.Any, width: integer, height: integer): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def createWebGL(parent: Any): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
+      inline def createWebGL(parent: Any, width: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def createWebGL(parent: Any, width: Double, height: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+      inline def createWebGL(parent: Any, width: Unit, height: Double): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createWebGL")(parent.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
       
       /**
         * Disable context smoothing on any new Canvas element created.
@@ -684,24 +683,24 @@ object Display {
         * @param canvasType The type of the Canvas. Either `Phaser.CANVAS` or `Phaser.WEBGL`. Default Phaser.CANVAS.
         */
       inline def first(): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[HTMLCanvasElement]
-      inline def first(canvasType: integer): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(canvasType.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
+      inline def first(canvasType: Double): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(canvasType.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
       
       /**
         * Gets the total number of free canvas elements in the pool.
         */
-      inline def free(): integer = ^.asInstanceOf[js.Dynamic].applyDynamic("free")().asInstanceOf[integer]
+      inline def free(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("free")().asInstanceOf[Double]
       
       /**
         * Looks up a canvas based on its parent, and if found puts it back in the pool, freeing it up for re-use.
         * The canvas has its width and height set to 1, and its parent attribute nulled.
         * @param parent The canvas or the parent of the canvas to free.
         */
-      inline def remove(parent: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(parent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def remove(parent: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(parent.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Gets the total number of used canvas elements in the pool.
         */
-      inline def total(): integer = ^.asInstanceOf[js.Dynamic].applyDynamic("total")().asInstanceOf[integer]
+      inline def total(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("total")().asInstanceOf[Double]
     }
     
     object Smoothing {
@@ -777,30 +776,44 @@ object Display {
     * @param blue The blue color value. A number between 0 and 255. Default 0.
     * @param alpha The alpha value. A number between 0 and 255. Default 255.
     */
-  class Color ()
+  open class Color ()
     extends StObject
        with typings.phaser.Phaser.Display.Color {
-    def this(red: integer) = this()
-    def this(red: Unit, green: integer) = this()
-    def this(red: integer, green: integer) = this()
-    def this(red: Unit, green: Unit, blue: integer) = this()
-    def this(red: Unit, green: integer, blue: integer) = this()
-    def this(red: integer, green: Unit, blue: integer) = this()
-    def this(red: integer, green: integer, blue: integer) = this()
-    def this(red: Unit, green: Unit, blue: Unit, alpha: integer) = this()
-    def this(red: Unit, green: Unit, blue: integer, alpha: integer) = this()
-    def this(red: Unit, green: integer, blue: Unit, alpha: integer) = this()
-    def this(red: Unit, green: integer, blue: integer, alpha: integer) = this()
-    def this(red: integer, green: Unit, blue: Unit, alpha: integer) = this()
-    def this(red: integer, green: Unit, blue: integer, alpha: integer) = this()
-    def this(red: integer, green: integer, blue: Unit, alpha: integer) = this()
-    def this(red: integer, green: integer, blue: integer, alpha: integer) = this()
+    def this(red: Double) = this()
+    def this(red: Double, green: Double) = this()
+    def this(red: Unit, green: Double) = this()
+    def this(red: Double, green: Double, blue: Double) = this()
+    def this(red: Double, green: Unit, blue: Double) = this()
+    def this(red: Unit, green: Double, blue: Double) = this()
+    def this(red: Unit, green: Unit, blue: Double) = this()
+    def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
+    def this(red: Double, green: Double, blue: Unit, alpha: Double) = this()
+    def this(red: Double, green: Unit, blue: Double, alpha: Double) = this()
+    def this(red: Double, green: Unit, blue: Unit, alpha: Double) = this()
+    def this(red: Unit, green: Double, blue: Double, alpha: Double) = this()
+    def this(red: Unit, green: Double, blue: Unit, alpha: Double) = this()
+    def this(red: Unit, green: Unit, blue: Double, alpha: Double) = this()
+    def this(red: Unit, green: Unit, blue: Unit, alpha: Double) = this()
   }
   object Color {
     
     @JSGlobal("Phaser.Display.Color")
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Return an array of Colors in a Color Spectrum.
+      * 
+      * The spectrum colors flow in the order: red, yellow, green, blue.
+      * 
+      * By default this function will return an array with 1024 elements in.
+      * 
+      * However, you can reduce this to a smaller quantity if needed, by specitying the `limit` parameter.
+      * @param limit How many colors should be returned? The maximum is 1024 but you can set a smaller quantity if required. Default 1024.
+      */
+    /* static member */
+    inline def ColorSpectrum(): js.Array[ColorObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("ColorSpectrum")().asInstanceOf[js.Array[ColorObject]]
+    inline def ColorSpectrum(limit: Double): js.Array[ColorObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("ColorSpectrum")(limit.asInstanceOf[js.Any]).asInstanceOf[js.Array[ColorObject]]
     
     /**
       * Converts the given color value into an Object containing r,g,b and a properties.
@@ -814,7 +827,7 @@ object Display {
       * @param color The color channel to get the hex value for, must be a value between 0 and 255.
       */
     /* static member */
-    inline def ComponentToHex(color: integer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ComponentToHex")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ComponentToHex(color: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ComponentToHex")(color.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Given 3 separate color values this will return an integer representation of it.
@@ -823,7 +836,7 @@ object Display {
       * @param blue The blue color value. A number between 0 and 255.
       */
     /* static member */
-    inline def GetColor(red: integer, green: integer, blue: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetColor")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def GetColor(red: Double, green: Double, blue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetColor")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Given an alpha and 3 color values this will return an integer representation of it.
@@ -833,7 +846,7 @@ object Display {
       * @param alpha The alpha color value. A number between 0 and 255.
       */
     /* static member */
-    inline def GetColor32(red: integer, green: integer, blue: integer, alpha: integer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetColor32")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def GetColor32(red: Double, green: Double, blue: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetColor32")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Converts HSL (hue, saturation and lightness) values to a Phaser Color object.
@@ -856,10 +869,11 @@ object Display {
     inline def HSVColorWheel(s: Unit, v: Double): js.Array[ColorObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVColorWheel")(s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Array[ColorObject]]
     
     /**
-      * Converts an HSV (hue, saturation and value) color value to RGB.
-      * Conversion formula from http://en.wikipedia.org/wiki/HSL_color_space.
+      * Converts a HSV (hue, saturation and value) color set to RGB.
+      * 
+      * Conversion formula from https://en.wikipedia.org/wiki/HSL_and_HSV
+      * 
       * Assumes HSV values are contained in the set [0, 1].
-      * Based on code by Michael Jackson (https://github.com/mjijackson)
       * @param h The hue, in the range 0 - 1. This is the base color.
       * @param s The saturation, in the range 0 - 1. This controls how much of the hue will be in the final color, where 1 is fully saturated and 0 will give you white.
       * @param v The value, in the range 0 - 1. This controls how dark the color is. Where 1 is as bright as possible and 0 is black.
@@ -893,7 +907,7 @@ object Display {
       * @param input The color value to convert into a Color object.
       */
     /* static member */
-    inline def IntegerToColor(input: integer): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegerToColor")(input.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
+    inline def IntegerToColor(input: Double): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegerToColor")(input.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
     
     /**
       * Return the component parts of a color as an Object with the properties alpha, red, green, blue.
@@ -902,7 +916,7 @@ object Display {
       * @param input The color value to convert into a Color object.
       */
     /* static member */
-    inline def IntegerToRGB(input: integer): ColorObject = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegerToRGB")(input.asInstanceOf[js.Any]).asInstanceOf[ColorObject]
+    inline def IntegerToRGB(input: Double): ColorObject = ^.asInstanceOf[js.Dynamic].applyDynamic("IntegerToRGB")(input.asInstanceOf[js.Any]).asInstanceOf[ColorObject]
     
     object Interpolate {
       
@@ -1026,9 +1040,9 @@ object Display {
       * @param out An object to store the color values in. If not given an HSV Color Object will be created.
       */
     /* static member */
-    inline def RGBToHSV(r: integer, g: integer, b: integer): HSVColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToHSV")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[HSVColorObject | typings.phaser.Phaser.Display.Color]
-    inline def RGBToHSV(r: integer, g: integer, b: integer, out: typings.phaser.Phaser.Display.Color): HSVColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToHSV")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[HSVColorObject | typings.phaser.Phaser.Display.Color]
-    inline def RGBToHSV(r: integer, g: integer, b: integer, out: HSVColorObject): HSVColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToHSV")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[HSVColorObject | typings.phaser.Phaser.Display.Color]
+    inline def RGBToHSV(r: Double, g: Double, b: Double): HSVColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToHSV")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[HSVColorObject | typings.phaser.Phaser.Display.Color]
+    inline def RGBToHSV(r: Double, g: Double, b: Double, out: typings.phaser.Phaser.Display.Color): HSVColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToHSV")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[HSVColorObject | typings.phaser.Phaser.Display.Color]
+    inline def RGBToHSV(r: Double, g: Double, b: Double, out: HSVColorObject): HSVColorObject | typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToHSV")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[HSVColorObject | typings.phaser.Phaser.Display.Color]
     
     /**
       * Converts the color values into an HTML compatible color string, prefixed with either `#` or `0x`.
@@ -1039,10 +1053,10 @@ object Display {
       * @param prefix The prefix of the string. Either `#` or `0x`. Default #.
       */
     /* static member */
-    inline def RGBToString(r: integer, g: integer, b: integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def RGBToString(r: integer, g: integer, b: integer, a: Unit, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def RGBToString(r: integer, g: integer, b: integer, a: integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def RGBToString(r: integer, g: integer, b: integer, a: integer, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def RGBToString(r: Double, g: Double, b: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def RGBToString(r: Double, g: Double, b: Double, a: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def RGBToString(r: Double, g: Double, b: Double, a: Double, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def RGBToString(r: Double, g: Double, b: Double, a: Unit, prefix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("RGBToString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Creates a new Color object where the r, g, and b values have been set to random values
@@ -1052,9 +1066,9 @@ object Display {
       */
     /* static member */
     inline def RandomRGB(): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")().asInstanceOf[typings.phaser.Phaser.Display.Color]
-    inline def RandomRGB(min: Unit, max: integer): typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Display.Color]
-    inline def RandomRGB(min: integer): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")(min.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
-    inline def RandomRGB(min: integer, max: integer): typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Display.Color]
+    inline def RandomRGB(min: Double): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")(min.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
+    inline def RandomRGB(min: Double, max: Double): typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Display.Color]
+    inline def RandomRGB(min: Unit, max: Double): typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomRGB")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Display.Color]
     
     /**
       * Converts the given source color value into an instance of a Color class.
@@ -1066,6 +1080,19 @@ object Display {
     inline def ValueToColor(input: Double): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueToColor")(input.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
     inline def ValueToColor(input: InputColorObject): typings.phaser.Phaser.Display.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("ValueToColor")(input.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Display.Color]
   }
+  
+  /**
+    * The ColorMatrix class creates a 5x4 matrix that can be used in shaders and graphics
+    * operations. It provides methods required to modify the color values, such as adjusting
+    * the brightness, setting a sepia tone, hue rotation and more.
+    * 
+    * Use the method `getData` to return a Float32Array containing the current color values.
+    */
+  @JSGlobal("Phaser.Display.ColorMatrix")
+  @js.native
+  open class ColorMatrix ()
+    extends StObject
+       with typings.phaser.Phaser.Display.ColorMatrix
   
   object Masks {
     
@@ -1085,6 +1112,9 @@ object Display {
       *  A pixel with an alpha of 1 in the masked Game Object will receive the same alpha as the
       * corresponding pixel in the mask.
       * 
+      * Note: You cannot combine Bitmap Masks and Blend Modes on the same Game Object. You can, however,
+      * combine Geometry Masks and Blend Modes together.
+      * 
       * The Bitmap Mask's location matches the location of its Game Object, not the location of the
       * masked objects. Moving or transforming the underlying Game Object will change the mask
       * (and affect the visibility of any masked objects), whereas moving or transforming a masked object
@@ -1097,7 +1127,7 @@ object Display {
       */
     @JSGlobal("Phaser.Display.Masks.BitmapMask")
     @js.native
-    class BitmapMask protected ()
+    open class BitmapMask protected ()
       extends StObject
          with typings.phaser.Phaser.Display.Masks.BitmapMask {
       /**
@@ -1127,7 +1157,7 @@ object Display {
       */
     @JSGlobal("Phaser.Display.Masks.GeometryMask")
     @js.native
-    class GeometryMask protected ()
+    open class GeometryMask protected ()
       extends StObject
          with typings.phaser.Phaser.Display.Masks.GeometryMask {
       /**
@@ -1137,5 +1167,29 @@ object Display {
         */
       def this(scene: typings.phaser.Phaser.Scene, graphicsGeometry: Graphics) = this()
     }
+  }
+  
+  /**
+    * The RGB class holds a single color value and allows for easy modification and reading of it,
+    * with optional on-change callback notification and a dirty flag.
+    */
+  @JSGlobal("Phaser.Display.RGB")
+  @js.native
+  /**
+    * 
+    * @param red The red color value. A number between 0 and 1. Default 0.
+    * @param green The green color value. A number between 0 and 1. Default 0.
+    * @param blue The blue color value. A number between 0 and 1. Default 0.
+    */
+  open class RGB ()
+    extends StObject
+       with typings.phaser.Phaser.Display.RGB {
+    def this(red: Double) = this()
+    def this(red: Double, green: Double) = this()
+    def this(red: Unit, green: Double) = this()
+    def this(red: Double, green: Double, blue: Double) = this()
+    def this(red: Double, green: Unit, blue: Double) = this()
+    def this(red: Unit, green: Double, blue: Double) = this()
+    def this(red: Unit, green: Unit, blue: Double) = this()
   }
 }

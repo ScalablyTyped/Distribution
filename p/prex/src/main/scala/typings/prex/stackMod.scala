@@ -1,6 +1,5 @@
 package typings.prex
 
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +13,12 @@ object stackMod {
     *
     * @param iterable An optional iterable of values or promises.
     */
-  class AsyncStack[T] () extends StObject {
-    def this(iterable: Iterable[T | js.Thenable[T]]) = this()
+  open class AsyncStack[T] () extends StObject {
+    def this(iterable: js.Iterable[T | js.Thenable[T]]) = this()
     
-    /* private */ var _available: js.Any = js.native
+    /* private */ var _available: Any = js.native
     
-    /* private */ var _pending: js.Any = js.native
+    /* private */ var _pending: Any = js.native
     
     /**
       * Removes and returns a Promise for the top value of the stack. If the stack is empty,

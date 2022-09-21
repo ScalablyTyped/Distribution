@@ -29,7 +29,7 @@ object GetCrawlerMetricsResponse {
     
     inline def setCrawlerMetricsListUndefined: Self = StObject.set(x, "CrawlerMetricsList", js.undefined)
     
-    inline def setCrawlerMetricsListVarargs(value: CrawlerMetrics*): Self = StObject.set(x, "CrawlerMetricsList", js.Array(value :_*))
+    inline def setCrawlerMetricsListVarargs(value: CrawlerMetrics*): Self = StObject.set(x, "CrawlerMetricsList", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

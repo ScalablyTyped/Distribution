@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RichEditCommands")
 @js.native
-class RichEditCommands ()
+open class RichEditCommands ()
   extends StObject
      with typings.devexpressWeb.RichEditCommands {
   

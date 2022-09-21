@@ -29,7 +29,7 @@ trait ContributionConstraint extends StObject {
   /**
     * Properties that are fed to the contribution filter class
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * Constraints can be optionally be applied to one or more of the relationships defined in the contribution. If no relationships are defined then all relationships are associated with the constraint. This means the default behaviour will elimiate the contribution from the tree completely if the constraint is applied.
@@ -43,7 +43,7 @@ object ContributionConstraint {
     id: String,
     inverse: Boolean,
     name: String,
-    properties: js.Any,
+    properties: Any,
     relationships: js.Array[String]
   ): ContributionConstraint = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], relationships = relationships.asInstanceOf[js.Any])
@@ -60,10 +60,10 @@ object ContributionConstraint {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setRelationships(value: js.Array[String]): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
-    inline def setRelationshipsVarargs(value: String*): Self = StObject.set(x, "relationships", js.Array(value :_*))
+    inline def setRelationshipsVarargs(value: String*): Self = StObject.set(x, "relationships", js.Array(value*))
   }
 }

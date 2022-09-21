@@ -10,15 +10,13 @@ jQuery Loading Overlay Plugin
 | ------------------ | :-------------: |
 | Full name          | jquery-loading-overlay |
 | Keywords           | loading, overlay, ajax, jquery, jquery-plugin |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 5416 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 148.66666666666666 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](http://jgerigmeyer.github.io/jquery-loading-overlay/)
-- [Bugs](https://github.com/jgerigmeyer/jquery-loading-overlay/issues)
-- [Repository](https://github.com/jgerigmeyer/jquery-loading-overlay)
 - [Npm](https://www.npmjs.com/package/jquery-loading-overlay)
     
 

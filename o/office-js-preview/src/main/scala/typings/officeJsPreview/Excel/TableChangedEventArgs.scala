@@ -16,33 +16,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the table that raised the changed event.
   *
-  * Provides information about the table that raised the Changed event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait TableChangedEventArgs extends StObject {
   
   /**
-    *
     * Gets the address that represents the changed area of a table on a specific worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var address: String
   
   /**
+    * Gets the change type that represents how the changed event is triggered. See `Excel.DataChangeType` for details.
     *
-    * Gets the change type that represents how the Changed event is triggered. See Excel.DataChangeType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var changeType: DataChangeType | Unknown_ | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted
   
   /**
+    * Gets the information about the change detail. This property can be retrieved when the changed event is triggered on a single cell. If the changed event is triggered on multiple cells, this property cannot be retrieved.
     *
-    * Gets the information about the change detail. This property can be retrieved when the Changed event is triggered on a single cell. If the Changed event is triggered on multiple cells, this property cannot be retrieved.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var details: ChangedEventDetail
@@ -64,33 +64,33 @@ trait TableChangedEventArgs extends StObject {
   def getRangeOrNullObject(ctx: RequestContext): Range
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the ID of the table in which the data changed.
     *
-    * Gets the id of the table in which the data changed.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var tableId: String
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: TableChanged
   
   /**
+    * Gets the ID of the worksheet in which the data changed.
     *
-    * Gets the id of the worksheet in which the data changed.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var worksheetId: String

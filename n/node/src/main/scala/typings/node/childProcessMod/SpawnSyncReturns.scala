@@ -1,16 +1,15 @@
 package typings.node.childProcessMod
 
 import typings.node.processMod.global.NodeJS.Signals
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SpawnSyncReturns[T] extends StObject {
   
-  var error: js.UndefOr[Error] = js.undefined
+  var error: js.UndefOr[js.Error] = js.undefined
   
-  var output: js.Array[String]
+  var output: js.Array[T | Null]
   
   var pid: Double
   
@@ -24,20 +23,20 @@ trait SpawnSyncReturns[T] extends StObject {
 }
 object SpawnSyncReturns {
   
-  inline def apply[T](output: js.Array[String], pid: Double, stderr: T, stdout: T): SpawnSyncReturns[T] = {
+  inline def apply[T](output: js.Array[T | Null], pid: Double, stderr: T, stdout: T): SpawnSyncReturns[T] = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any], signal = null, status = null)
     __obj.asInstanceOf[SpawnSyncReturns[T]]
   }
   
   extension [Self <: SpawnSyncReturns[?], T](x: Self & SpawnSyncReturns[T]) {
     
-    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: js.Array[T | Null]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
+    inline def setOutputVarargs(value: (T | Null)*): Self = StObject.set(x, "output", js.Array(value*))
     
     inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     

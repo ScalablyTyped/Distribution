@@ -40,7 +40,7 @@ object detailsRowFieldsTypesMod {
     /**
       * Data source for this component
       */
-    var item: js.Any
+    var item: Any
     
     /**
       * The item index of the collection for the DetailsList
@@ -51,13 +51,18 @@ object detailsRowFieldsTypesMod {
       * Subset of classnames currently generated in DetailsRow that are used within DetailsRowFields.
       */
     var rowClassNames: kinkeyofPickIDetailsRowSt
+    
+    /**
+      * Id for the current row's row-header
+      */
+    var rowHeaderId: js.UndefOr[String] = js.undefined
   }
   object IDetailsRowFieldsProps {
     
     inline def apply(
       columnStartIndex: Double,
       columns: js.Array[IColumn],
-      item: js.Any,
+      item: Any,
       itemIndex: Double,
       rowClassNames: kinkeyofPickIDetailsRowSt
     ): IDetailsRowFieldsProps = {
@@ -75,7 +80,7 @@ object detailsRowFieldsTypesMod {
       
       inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
@@ -85,11 +90,15 @@ object detailsRowFieldsTypesMod {
       
       inline def setEnableUpdateAnimationsUndefined: Self = StObject.set(x, "enableUpdateAnimations", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
       
       inline def setRowClassNames(value: kinkeyofPickIDetailsRowSt): Self = StObject.set(x, "rowClassNames", value.asInstanceOf[js.Any])
+      
+      inline def setRowHeaderId(value: String): Self = StObject.set(x, "rowHeaderId", value.asInstanceOf[js.Any])
+      
+      inline def setRowHeaderIdUndefined: Self = StObject.set(x, "rowHeaderId", js.undefined)
     }
   }
   
@@ -100,7 +109,7 @@ object detailsRowFieldsTypesMod {
     
     var getCellValueKey: js.UndefOr[
         js.Function3[
-          /* item */ js.UndefOr[js.Any], 
+          /* item */ js.UndefOr[Any], 
           /* index */ js.UndefOr[Double], 
           /* column */ js.UndefOr[IColumn], 
           String
@@ -109,7 +118,7 @@ object detailsRowFieldsTypesMod {
     
     var onRenderItemColumn: js.UndefOr[
         js.Function3[
-          /* item */ js.UndefOr[js.Any], 
+          /* item */ js.UndefOr[Any], 
           /* index */ js.UndefOr[Double], 
           /* column */ js.UndefOr[IColumn], 
           ReactNode
@@ -130,13 +139,13 @@ object detailsRowFieldsTypesMod {
       inline def setCellsByColumnUndefined: Self = StObject.set(x, "cellsByColumn", js.undefined)
       
       inline def setGetCellValueKey(
-        value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String
+        value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String
       ): Self = StObject.set(x, "getCellValueKey", js.Any.fromFunction3(value))
       
       inline def setGetCellValueKeyUndefined: Self = StObject.set(x, "getCellValueKey", js.undefined)
       
       inline def setOnRenderItemColumn(
-        value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => ReactNode
+        value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => ReactNode
       ): Self = StObject.set(x, "onRenderItemColumn", js.Any.fromFunction3(value))
       
       inline def setOnRenderItemColumnUndefined: Self = StObject.set(x, "onRenderItemColumn", js.undefined)

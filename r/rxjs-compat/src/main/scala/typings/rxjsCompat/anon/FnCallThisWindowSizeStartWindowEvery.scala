@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisWindowSizeStartWindowEvery extends StObject {
   
-  def apply[T](windowSize: Double): js.Any = js.native
-  def apply[T](windowSize: Double, startWindowEvery: Double): js.Any = js.native
+  def apply[T](windowSize: Double): Any = js.native
+  def apply[T](windowSize: Double, startWindowEvery: Double): Any = js.native
 }

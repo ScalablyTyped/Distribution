@@ -3,7 +3,8 @@ package typings.xmlCore
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Node
-import typings.xmlCore.anon.Type
+import typings.xmlCore.anon.XmlAttributeTypeanytypest
+import typings.xmlCore.anon.XmlChildElementTypeanytyp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +55,7 @@ object typesMod {
       GetIterator: () => js.Array[I],
       IsEmpty: () => Boolean,
       Item: Double => I | Null,
-      Map: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], js.Any] => ICollection[js.Any],
+      Map: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], Any] => ICollection[Any],
       Pop: () => js.UndefOr[I],
       RemoveAt: Double => Unit,
       Some: js.Function3[/* value */ I, /* index */ Double, /* array */ js.Array[I], Boolean] => Boolean,
@@ -89,7 +90,7 @@ object typesMod {
       inline def setItem(value: Double => I | Null): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
       
       inline def setMap(
-        value: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], js.Any] => ICollection[js.Any]
+        value: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], Any] => ICollection[Any]
       ): Self = StObject.set(x, "Map", js.Any.fromFunction1(value))
       
       inline def setPop(value: () => js.UndefOr[I]): Self = StObject.set(x, "Pop", js.Any.fromFunction0(value))
@@ -339,9 +340,7 @@ object typesMod {
   
   trait XmlSchema extends StObject {
     
-    var items: js.UndefOr[
-        StringDictionary[(XmlChildElementType[js.Any] | XmlAttributeType[js.Any]) & Type]
-      ] = js.undefined
+    var items: js.UndefOr[StringDictionary[XmlChildElementTypeanytyp | XmlAttributeTypeanytypest]] = js.undefined
     
     var localName: js.UndefOr[String] = js.undefined
     
@@ -351,7 +350,7 @@ object typesMod {
     
     var prefix: js.UndefOr[String | Null] = js.undefined
     
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
   }
   object XmlSchema {
     
@@ -362,7 +361,7 @@ object typesMod {
     
     extension [Self <: XmlSchema](x: Self) {
       
-      inline def setItems(value: StringDictionary[(XmlChildElementType[js.Any] | XmlAttributeType[js.Any]) & Type]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: StringDictionary[XmlChildElementTypeanytyp | XmlAttributeTypeanytypest]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
@@ -386,7 +385,7 @@ object typesMod {
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }

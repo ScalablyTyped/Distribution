@@ -9,7 +9,7 @@ trait OGradientOptions extends StObject {
   
   var colorStops: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var gradientTransform: js.UndefOr[js.Any] = js.undefined
+  var gradientTransform: js.UndefOr[Any] = js.undefined
   
   var r1: js.UndefOr[Double] = js.undefined
   
@@ -38,7 +38,7 @@ object OGradientOptions {
     
     inline def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
     
-    inline def setGradientTransform(value: js.Any): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+    inline def setGradientTransform(value: Any): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
     
     inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
     

@@ -29,6 +29,6 @@ object GitForkSyncRequestParameters {
     
     inline def setSourceToTargetRefs(value: js.Array[SourceToTargetRef]): Self = StObject.set(x, "sourceToTargetRefs", value.asInstanceOf[js.Any])
     
-    inline def setSourceToTargetRefsVarargs(value: SourceToTargetRef*): Self = StObject.set(x, "sourceToTargetRefs", js.Array(value :_*))
+    inline def setSourceToTargetRefsVarargs(value: SourceToTargetRef*): Self = StObject.set(x, "sourceToTargetRefs", js.Array(value*))
   }
 }

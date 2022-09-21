@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.SlicePlane")
 @js.native
 /**
-  * Provides the shape definition of a slice plane for the [Slice](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html) widget.
+  * Provides the shape definition of a slice plane for a [Slice](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html) widget or [SliceAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html).
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SlicePlane.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html)
   */
-class SlicePlaneCls ()
+open class SlicePlaneCls ()
   extends StObject
      with typings.arcgisJsApi.esri.SlicePlane {
   def this(properties: SlicePlaneProperties) = this()
   
   /**
-    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
     */
   /* CompleteClass */
-  override def toJSON(): js.Any = js.native
+  override def toJSON(): Any = js.native
 }

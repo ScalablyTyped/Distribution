@@ -1,7 +1,7 @@
 
 # Scala.js typings for number-is-nan
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 ES2015 `Number.isNaN()` ponyfill
@@ -11,9 +11,9 @@ ES2015 `Number.isNaN()` ponyfill
 | Full name          | number-is-nan |
 | Keywords           | es2015, ecmascript, ponyfill, polyfill, shim, number, is, nan, not |
 | # releases         | 2 |
-| # dependents       | 126 |
-| # downloads        | 636990711 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6.3847338E7 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/number-is-nan#readme)

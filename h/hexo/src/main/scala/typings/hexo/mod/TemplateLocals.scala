@@ -46,7 +46,7 @@ trait TemplateLocals extends StObject {
   
   var path: String
   
-  var site: js.Any
+  var site: Any
   
   var theme: HexoConfig
   
@@ -63,7 +63,7 @@ object TemplateLocals {
     layout: String,
     page: typings.hexo.mod.Locals.Post | Page | Category | Tag | IndexPage | ArchivePage | CategoryPage | TagPage,
     path: String,
-    site: js.Any,
+    site: Any,
     theme: HexoConfig,
     url: String,
     view_dir: String
@@ -87,7 +87,7 @@ object TemplateLocals {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setSite(value: js.Any): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+    inline def setSite(value: Any): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
     inline def setTheme(value: HexoConfig): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     

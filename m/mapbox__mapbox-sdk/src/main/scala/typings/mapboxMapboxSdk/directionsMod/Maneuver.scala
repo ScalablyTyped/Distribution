@@ -60,7 +60,7 @@ object Maneuver {
     
     inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setModifier(value: ManeuverModifier): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     

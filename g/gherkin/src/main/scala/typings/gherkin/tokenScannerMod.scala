@@ -8,16 +8,16 @@ object tokenScannerMod {
   
   @JSImport("gherkin/dist/src/TokenScanner", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TokenScanner {
     def this(source: String) = this()
     
     /* private */ /* CompleteClass */
-    var lineNumber: js.Any = js.native
+    var lineNumber: Any = js.native
     
     /* private */ /* CompleteClass */
-    var lines: js.Any = js.native
+    var lines: Any = js.native
     
     /* CompleteClass */
     override def read(): typings.gherkin.tokenMod.default = js.native
@@ -25,24 +25,24 @@ object tokenScannerMod {
   
   trait TokenScanner extends StObject {
     
-    /* private */ var lineNumber: js.Any
+    /* private */ var lineNumber: Any
     
-    /* private */ var lines: js.Any
+    /* private */ var lines: Any
     
     def read(): typings.gherkin.tokenMod.default
   }
   object TokenScanner {
     
-    inline def apply(lineNumber: js.Any, lines: js.Any, read: () => typings.gherkin.tokenMod.default): TokenScanner = {
+    inline def apply(lineNumber: Any, lines: Any, read: () => typings.gherkin.tokenMod.default): TokenScanner = {
       val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], read = js.Any.fromFunction0(read))
       __obj.asInstanceOf[TokenScanner]
     }
     
     extension [Self <: TokenScanner](x: Self) {
       
-      inline def setLineNumber(value: js.Any): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Any): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      inline def setLines(value: js.Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
       inline def setRead(value: () => typings.gherkin.tokenMod.default): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     }

@@ -31,7 +31,7 @@ trait BehindSecureProxy extends StObject {
     * Transports and options for the server (winston) logger. 
     *   config.server.log = see config
     */
-  var log: js.Any
+  var log: Any
   
   /**
     * Maximum number of child process spawned for workers.
@@ -57,7 +57,7 @@ object BehindSecureProxy {
   inline def apply(
     behindSecureProxy: Boolean,
     extlibExcludes: js.Array[String],
-    log: js.Any,
+    log: Any,
     maxWorkers: Double,
     port: Double,
     timeout: Double
@@ -72,13 +72,13 @@ object BehindSecureProxy {
     
     inline def setExtlibExcludes(value: js.Array[String]): Self = StObject.set(x, "extlibExcludes", value.asInstanceOf[js.Any])
     
-    inline def setExtlibExcludesVarargs(value: String*): Self = StObject.set(x, "extlibExcludes", js.Array(value :_*))
+    inline def setExtlibExcludesVarargs(value: String*): Self = StObject.set(x, "extlibExcludes", js.Array(value*))
     
     inline def setHandle(value: Fd): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     inline def setHandleNull: Self = StObject.set(x, "handle", null)
     
-    inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     inline def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ trait ASPxClientXYDiagram
 object ASPxClientXYDiagram {
   
   inline def apply(
-    DiagramToPoint: (js.Any, js.Any, ASPxClientAxis2D, ASPxClientAxis2D, ASPxClientXYDiagramPane) => ASPxClientControlCoordinates,
+    DiagramToPoint: (Any, Any, ASPxClientAxis2D, ASPxClientAxis2D, ASPxClientXYDiagramPane) => ASPxClientControlCoordinates,
     PointToDiagram: (Double, Double) => ASPxClientDiagramCoordinates,
     ShowCrosshair: (Double, Double) => Unit,
     axisX: ASPxClientAxisBase,

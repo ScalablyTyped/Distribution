@@ -12,7 +12,7 @@ trait PresignedUrlConfig extends StObject {
   var expiresInSec: js.UndefOr[ExpiresInSec] = js.undefined
   
   /**
-    * The ARN of an IAM role that grants grants permission to download files from the S3 bucket where the job data/updates are stored. The role must also grant permission for IoT to download the files.
+    * The ARN of an IAM role that grants grants permission to download files from the S3 bucket where the job data/updates are stored. The role must also grant permission for IoT to download the files.  For information about addressing the confused deputy problem, see cross-service confused deputy prevention in the Amazon Web Services IoT Core developer guide. 
     */
   var roleArn: js.UndefOr[RoleArn] = js.undefined
 }

@@ -39,7 +39,7 @@ trait RequestAPI[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriU
   def delete(uri: String, options: TOptions, callback: RequestCallback): TRequest = js.native
   def delete(uri: String, options: Unit, callback: RequestCallback): TRequest = js.native
   
-  def forever(agentOptions: js.Any, optionsArg: js.Any): TRequest = js.native
+  def forever(agentOptions: Any, optionsArg: Any): TRequest = js.native
   
   def get(options: TUriUrlOptions & TOptions): TRequest = js.native
   def get(options: TUriUrlOptions & TOptions, callback: RequestCallback): TRequest = js.native
@@ -66,7 +66,7 @@ trait RequestAPI[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriU
   def initParams(uri: String, options: Unit, callback: RequestCallback): RequiredUriUrl & TOptions = js.native
   
   def jar(): CookieJar = js.native
-  def jar(store: js.Any): CookieJar = js.native
+  def jar(store: Any): CookieJar = js.native
   
   def patch(options: TUriUrlOptions & TOptions): TRequest = js.native
   def patch(options: TUriUrlOptions & TOptions, callback: RequestCallback): TRequest = js.native

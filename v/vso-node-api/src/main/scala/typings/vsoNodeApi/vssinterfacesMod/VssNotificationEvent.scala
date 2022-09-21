@@ -19,7 +19,7 @@ trait VssNotificationEvent extends StObject {
   /**
     * Required: The event payload.  If Data is a string, it must be in Json or XML format.  Otherwise it must have a serialization format attribute.
     */
-  var data: js.Any
+  var data: Any
   
   /**
     * Required: The name of the event.  This event must be registered in the context it is being fired.
@@ -36,7 +36,7 @@ object VssNotificationEvent {
   inline def apply(
     actors: js.Array[EventActor],
     artifactUris: js.Array[String],
-    data: js.Any,
+    data: Any,
     eventType: String,
     scopes: js.Array[EventScope]
   ): VssNotificationEvent = {
@@ -48,18 +48,18 @@ object VssNotificationEvent {
     
     inline def setActors(value: js.Array[EventActor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
     
-    inline def setActorsVarargs(value: EventActor*): Self = StObject.set(x, "actors", js.Array(value :_*))
+    inline def setActorsVarargs(value: EventActor*): Self = StObject.set(x, "actors", js.Array(value*))
     
     inline def setArtifactUris(value: js.Array[String]): Self = StObject.set(x, "artifactUris", value.asInstanceOf[js.Any])
     
-    inline def setArtifactUrisVarargs(value: String*): Self = StObject.set(x, "artifactUris", js.Array(value :_*))
+    inline def setArtifactUrisVarargs(value: String*): Self = StObject.set(x, "artifactUris", js.Array(value*))
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     inline def setScopes(value: js.Array[EventScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    inline def setScopesVarargs(value: EventScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: EventScope*): Self = StObject.set(x, "scopes", js.Array(value*))
   }
 }

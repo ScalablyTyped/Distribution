@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "ExecuteCodeAction")
 @js.native
-class ExecuteCodeAction protected ()
+open class ExecuteCodeAction protected ()
   extends typings.babylonjs.actionsIndexMod.ExecuteCodeAction {
   /**
     * Instantiate the action
@@ -15,11 +15,11 @@ class ExecuteCodeAction protected ()
     * @param condition defines the trigger related conditions
     */
   def this(
-    triggerOptions: js.Any,
+    triggerOptions: Any,
     func: js.Function1[/* evt */ typings.babylonjs.actionEventMod.ActionEvent, Unit]
   ) = this()
   def this(
-    triggerOptions: js.Any,
+    triggerOptions: Any,
     func: js.Function1[/* evt */ typings.babylonjs.actionEventMod.ActionEvent, Unit],
     condition: typings.babylonjs.conditionMod.Condition
   ) = this()

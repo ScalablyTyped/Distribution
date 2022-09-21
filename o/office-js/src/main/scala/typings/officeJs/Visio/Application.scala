@@ -29,25 +29,15 @@ trait Application
   var context_Application: RequestContext = js.native
   
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    *
-    * @remarks
-    *
-    * In addition to this signature, this method has the following signatures:
-    *
-    * `load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Application = js.native
-  def load(option: String): Application = js.native
-  def load(option: js.Array[String]): Application = js.native
-  def load(option: ApplicationLoadOptions): Application = js.native
-  def load(option: Expand): Application = js.native
+  def load(options: ApplicationLoadOptions): Application = js.native
+  def load(propertyNamesAndPaths: Expand): Application = js.native
+  def load(propertyNames: String): Application = js.native
+  def load(propertyNames: js.Array[String]): Application = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Application): Unit = js.native
@@ -66,6 +56,11 @@ trait Application
   def set(properties: ApplicationUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
+    * Set mock data
+    */
+  def setMockData(data: ApplicationData): Unit = js.native
+  
+  /**
     *
     * Show or hide the iFrame application borders.
     *
@@ -82,7 +77,7 @@ trait Application
     * @param id The type of the Toolbar
     * @param show Whether the toolbar is visibile or not.
     */
-  def showToolbar(id: ToolBarType, show: Boolean): Unit = js.native
+  def showToolbar(id: CommandBar | PageNavigationBar | StatusBar, show: Boolean): Unit = js.native
   /**
     *
     * Sets the visibility of a specific toolbar in the application.
@@ -92,12 +87,7 @@ trait Application
     * @param id The type of the Toolbar
     * @param show Whether the toolbar is visibile or not.
     */
-  @JSName("showToolbar")
-  def showToolbar_CommandBar(id: CommandBar, show: Boolean): Unit = js.native
-  @JSName("showToolbar")
-  def showToolbar_PageNavigationBar(id: PageNavigationBar, show: Boolean): Unit = js.native
-  @JSName("showToolbar")
-  def showToolbar_StatusBar(id: StatusBar, show: Boolean): Unit = js.native
+  def showToolbar(id: ToolBarType, show: Boolean): Unit = js.native
   
   /**
     *

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-codecommit-node", "ListBranchesCommand")
 @js.native
-class ListBranchesCommand protected ()
+open class ListBranchesCommand protected ()
   extends typings.awsSdkClientCodecommitNode.listBranchesCommandMod.ListBranchesCommand {
   def this(input: ListBranchesInput) = this()
 }

@@ -115,7 +115,7 @@ object useMessageQueueMod {
       
       inline def setDefaultQueueUndefined: Self = StObject.set(x, "defaultQueue", js.undefined)
       
-      inline def setDefaultQueueVarargs(value: M*): Self = StObject.set(x, "defaultQueue", js.Array(value :_*))
+      inline def setDefaultQueueVarargs(value: M*): Self = StObject.set(x, "defaultQueue", js.Array(value*))
       
       inline def setDuplicates(value: DuplicateBehavior): Self = StObject.set(x, "duplicates", value.asInstanceOf[js.Any])
       
@@ -160,7 +160,7 @@ object useMessageQueueMod {
       
       inline def setQueue(value: js.Array[M]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      inline def setQueueVarargs(value: M*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: M*): Self = StObject.set(x, "queue", js.Array(value*))
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
@@ -168,7 +168,7 @@ object useMessageQueueMod {
   
   trait PopMessageAction
     extends StObject
-       with MessageActions[js.Any] {
+       with MessageActions[Any] {
     
     var `type`: /* "POP_MESSAGE" */ String
   }
@@ -188,7 +188,7 @@ object useMessageQueueMod {
   
   trait ResetQueueAction
     extends StObject
-       with MessageActions[js.Any] {
+       with MessageActions[Any] {
     
     var `type`: /* "RESET_QUEUE" */ String
   }

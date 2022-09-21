@@ -11,7 +11,7 @@ object subtitlesMod {
   
   @JSImport("playable/dist/src/modules/ui/subtitles/subtitles", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Subtitles {
     def this(hasRootContainerEngineEventEmitter: EventEmitterRootContainer) = this()
@@ -25,7 +25,7 @@ object subtitlesMod {
     /* was `typeof SubtitlesView` */
     @JSImport("playable/dist/src/modules/ui/subtitles/subtitles", "default.View")
     @js.native
-    class View ()
+    open class View ()
       extends typings.playable.subtitlesViewMod.default
     
     /* static member */
@@ -46,29 +46,29 @@ object subtitlesMod {
     extends StObject
        with ISubtitles {
     
-    /* private */ var _activeSubtitleIndex: js.Any = js.native
+    /* private */ var _activeSubtitleIndex: Any = js.native
     
-    /* private */ var _addSubtitle: js.Any = js.native
+    /* private */ var _addSubtitle: Any = js.native
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _clearActiveSubtitle: js.Any = js.native
+    /* private */ var _clearActiveSubtitle: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _initUI: js.Any = js.native
+    /* private */ var _initUI: Any = js.native
     
-    /* private */ var _setActiveSubtitle: js.Any = js.native
+    /* private */ var _setActiveSubtitle: Any = js.native
     
-    /* private */ var _showSubtitles: js.Any = js.native
+    /* private */ var _showSubtitles: Any = js.native
     
-    /* private */ var _trackList: js.Any = js.native
+    /* private */ var _trackList: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
-    /* private */ var _video: js.Any = js.native
+    /* private */ var _video: Any = js.native
     
     def getElement(): HTMLElement = js.native
     

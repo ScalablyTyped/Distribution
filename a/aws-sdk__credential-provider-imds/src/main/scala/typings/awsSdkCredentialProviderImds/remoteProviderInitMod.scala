@@ -1,20 +1,21 @@
 package typings.awsSdkCredentialProviderImds
 
+import typings.awsSdkTypes.loggerMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteProviderInitMod {
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/RemoteProviderInit", JSImport.Namespace)
+  @JSImport("@aws-sdk/credential-provider-imds/dist-types/remoteProvider/RemoteProviderInit", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/RemoteProviderInit", "DEFAULT_MAX_RETRIES")
+  @JSImport("@aws-sdk/credential-provider-imds/dist-types/remoteProvider/RemoteProviderInit", "DEFAULT_MAX_RETRIES")
   @js.native
   val DEFAULT_MAX_RETRIES: /* 0 */ Double = js.native
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/RemoteProviderInit", "DEFAULT_TIMEOUT")
+  @JSImport("@aws-sdk/credential-provider-imds/dist-types/remoteProvider/RemoteProviderInit", "DEFAULT_TIMEOUT")
   @js.native
   val DEFAULT_TIMEOUT: /* 1000 */ Double = js.native
   
@@ -47,8 +48,10 @@ object remoteProviderInitMod {
     }
   }
   
-  /* Inlined std.Partial<@aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/RemoteProviderInit.RemoteProviderConfig> */
+  /* Inlined parent std.Partial<@aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist-types/remoteProvider/RemoteProviderInit.RemoteProviderConfig> */
   trait RemoteProviderInit extends StObject {
+    
+    var logger: js.UndefOr[Logger] = js.undefined
     
     var maxRetries: js.UndefOr[Double] = js.undefined
     
@@ -62,6 +65,10 @@ object remoteProviderInitMod {
     }
     
     extension [Self <: RemoteProviderInit](x: Self) {
+      
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
       inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       

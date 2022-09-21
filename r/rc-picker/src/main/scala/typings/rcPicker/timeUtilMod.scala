@@ -1,6 +1,7 @@
 package typings.rcPicker
 
 import typings.rcPicker.generateMod.GenerateConfig
+import typings.rcPicker.interfaceMod.NullableDateType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +22,8 @@ object timeUtilMod {
     minuteStep: Double,
     secondStep: Double
   ): js.Tuple3[Double, Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLowerBoundTime")(hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], hourStep.asInstanceOf[js.Any], minuteStep.asInstanceOf[js.Any], secondStep.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Double, Double]]
+  
+  inline def setDateTime[DateType](generateConfig: GenerateConfig[DateType], date: DateType, defaultDate: NullableDateType[DateType]): DateType = (^.asInstanceOf[js.Dynamic].applyDynamic("setDateTime")(generateConfig.asInstanceOf[js.Any], date.asInstanceOf[js.Any], defaultDate.asInstanceOf[js.Any])).asInstanceOf[DateType]
   
   inline def setTime[DateType](
     generateConfig: GenerateConfig[DateType],

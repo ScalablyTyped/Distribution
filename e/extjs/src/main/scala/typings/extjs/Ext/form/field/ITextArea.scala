@@ -18,7 +18,7 @@ trait ITextArea
     * @returns Object value The field value
     */
   @JSName("getValue")
-  var getValue_ITextArea: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValue_ITextArea: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var preventScrollbars: js.UndefOr[Boolean] = js.undefined
@@ -31,7 +31,7 @@ trait ITextArea
     * @returns Object The modified initial value
     */
   @JSName("transformOriginalValue")
-  var transformOriginalValue_ITextArea: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var transformOriginalValue_ITextArea: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Any]] = js.undefined
 }
 object ITextArea {
   
@@ -50,7 +50,7 @@ object ITextArea {
     
     inline def setEnterIsSpecialUndefined: Self = StObject.set(x, "enterIsSpecial", js.undefined)
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
@@ -62,7 +62,7 @@ object ITextArea {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setTransformOriginalValue(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
+    inline def setTransformOriginalValue(value: /* value */ js.UndefOr[Any] => Any): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
     
     inline def setTransformOriginalValueUndefined: Self = StObject.set(x, "transformOriginalValue", js.undefined)
   }

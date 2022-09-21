@@ -43,7 +43,7 @@ object ListBucketInventoryConfigurationsOutput {
     
     inline def setInventoryConfigurationListUndefined: Self = StObject.set(x, "InventoryConfigurationList", js.undefined)
     
-    inline def setInventoryConfigurationListVarargs(value: InventoryConfiguration*): Self = StObject.set(x, "InventoryConfigurationList", js.Array(value :_*))
+    inline def setInventoryConfigurationListVarargs(value: InventoryConfiguration*): Self = StObject.set(x, "InventoryConfigurationList", js.Array(value*))
     
     inline def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

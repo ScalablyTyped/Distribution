@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.WebUI
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
@@ -27,7 +26,7 @@ trait WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs extends StObject 
   var splashScreen: SplashScreen
   
   /** Gets the starting date and time of the time frame to be shown. */
-  var timeToShow: Date
+  var timeToShow: js.Date
   
   /** Gets the action to be performed by the appointments provider. */
   var verb: String
@@ -40,7 +39,7 @@ object WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs {
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen,
-    timeToShow: Date,
+    timeToShow: js.Date,
     verb: String
   ): WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs = {
     val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], timeToShow = timeToShow.asInstanceOf[js.Any], verb = verb.asInstanceOf[js.Any])
@@ -59,7 +58,7 @@ object WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs {
     
     inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
-    inline def setTimeToShow(value: Date): Self = StObject.set(x, "timeToShow", value.asInstanceOf[js.Any])
+    inline def setTimeToShow(value: js.Date): Self = StObject.set(x, "timeToShow", value.asInstanceOf[js.Any])
     
     inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }

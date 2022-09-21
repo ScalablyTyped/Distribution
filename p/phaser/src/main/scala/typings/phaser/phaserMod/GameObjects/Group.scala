@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.Group")
 @js.native
-class Group protected ()
+open class Group protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Group {
   /**

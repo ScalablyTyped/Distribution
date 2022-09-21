@@ -43,7 +43,7 @@ object XUIElementSettings {
   inline def apply(
     acquire: () => Unit,
     getSettings: Boolean => XIndexAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setSettings: XIndexAccess => Unit,
     updateSettings: () => Unit

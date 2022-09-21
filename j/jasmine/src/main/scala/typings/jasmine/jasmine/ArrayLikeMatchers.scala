@@ -15,12 +15,9 @@ trait ArrayLikeMatchers[T]
   @JSName("not")
   var not_ArrayLikeMatchers: ArrayLikeMatchers[T] = js.native
   
-  def toBe(expected: ArrayContaining[T]): Boolean = js.native
-  def toBe(expected: ArrayContaining[T], expectationFailOutput: js.Any): Boolean = js.native
+  def toBe(expected: ArrayContaining[T]): Unit = js.native
+  def toBe(expected: ArrayContaining[T], expectationFailOutput: scala.Any): Unit = js.native
   
-  def toContain(expected: Expected[T]): Boolean = js.native
-  def toContain(expected: Expected[T], expectationFailOutput: js.Any): Boolean = js.native
-  
-  def toEqual(expected: ArrayContaining[T]): Boolean = js.native
-  def toEqual(expected: ArrayContaining[T], expectationFailOutput: js.Any): Boolean = js.native
+  def toEqual(expected: ArrayContaining[T]): Unit = js.native
+  def toEqual(expected: ArrayContaining[T], expectationFailOutput: scala.Any): Unit = js.native
 }

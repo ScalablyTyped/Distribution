@@ -11,10 +11,10 @@ object mod {
   
   @JSImport("react-text-marquee", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[MarqueeProps, js.Object, js.Any]
+  open class default ()
+    extends Component[MarqueeProps, js.Object, Any]
   
-  type Marquee = Component[MarqueeProps, js.Object, js.Any]
+  type Marquee = Component[MarqueeProps, js.Object, Any]
   
   trait MarqueeProps
     extends StObject

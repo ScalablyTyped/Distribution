@@ -9,7 +9,7 @@ object anon {
   
   trait Body extends StObject {
     
-    var body: js.Any
+    var body: Any
     
     var request: Option
     
@@ -17,14 +17,14 @@ object anon {
   }
   object Body {
     
-    inline def apply(body: js.Any, request: Option, statusCode: Double): Body = {
+    inline def apply(body: Any, request: Option, statusCode: Double): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
     extension [Self <: Body](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setRequest(value: Option): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -38,11 +38,11 @@ object anon {
     
     var path: String
     
-    var scheme: js.Any
+    var scheme: Any
   }
   object Method {
     
-    inline def apply(method: String, path: String, scheme: js.Any): Method = {
+    inline def apply(method: String, path: String, scheme: Any): Method = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Method]
     }
@@ -53,7 +53,7 @@ object anon {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     }
   }
   

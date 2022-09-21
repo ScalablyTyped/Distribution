@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/animation" : "8.0.0"
+      "@material/animation" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/animation" : "8.0.0"
+      "@material/animation" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -22,6 +22,6 @@ object V1Beta1ImportProducerQuotaPoliciesResponse {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: V1Beta1ProducerQuotaPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: V1Beta1ProducerQuotaPolicy*): Self = StObject.set(x, "policies", js.Array(value*))
   }
 }

@@ -34,7 +34,7 @@ object MultiConditionalSplitActivity {
     
     inline def setBranchesUndefined: Self = StObject.set(x, "Branches", js.undefined)
     
-    inline def setBranchesVarargs(value: MultiConditionalBranch*): Self = StObject.set(x, "Branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: MultiConditionalBranch*): Self = StObject.set(x, "Branches", js.Array(value*))
     
     inline def setDefaultActivity(value: string): Self = StObject.set(x, "DefaultActivity", value.asInstanceOf[js.Any])
     

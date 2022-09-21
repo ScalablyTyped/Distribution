@@ -14,7 +14,7 @@ trait UpdateFailureState extends StObject {
   var failedConfiguration: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.UpdateFailureState & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.UpdateFailureState & TopLevel[Any]
   ] = js.undefined
   
   /** Time of the latest failed update attempt. */
@@ -36,7 +36,7 @@ object UpdateFailureState {
     inline def setFailedConfiguration(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.UpdateFailureState & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.UpdateFailureState & TopLevel[Any]
     ): Self = StObject.set(x, "failedConfiguration", value.asInstanceOf[js.Any])
     
     inline def setFailedConfigurationUndefined: Self = StObject.set(x, "failedConfiguration", js.undefined)

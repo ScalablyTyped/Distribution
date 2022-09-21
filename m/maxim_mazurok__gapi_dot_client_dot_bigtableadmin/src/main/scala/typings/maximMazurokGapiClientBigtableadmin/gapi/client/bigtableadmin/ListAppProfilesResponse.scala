@@ -31,13 +31,13 @@ object ListAppProfilesResponse {
     
     inline def setAppProfilesUndefined: Self = StObject.set(x, "appProfiles", js.undefined)
     
-    inline def setAppProfilesVarargs(value: AppProfile*): Self = StObject.set(x, "appProfiles", js.Array(value :_*))
+    inline def setAppProfilesVarargs(value: AppProfile*): Self = StObject.set(x, "appProfiles", js.Array(value*))
     
     inline def setFailedLocations(value: js.Array[String]): Self = StObject.set(x, "failedLocations", value.asInstanceOf[js.Any])
     
     inline def setFailedLocationsUndefined: Self = StObject.set(x, "failedLocations", js.undefined)
     
-    inline def setFailedLocationsVarargs(value: String*): Self = StObject.set(x, "failedLocations", js.Array(value :_*))
+    inline def setFailedLocationsVarargs(value: String*): Self = StObject.set(x, "failedLocations", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -38,12 +38,12 @@ object StorePage {
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    inline def setLinkVarargs(value: String*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: String*): Self = StObject.set(x, "link", js.Array(value*))
     
     inline def setName(value: js.Array[LocalizedText]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNameVarargs(value: LocalizedText*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: LocalizedText*): Self = StObject.set(x, "name", js.Array(value*))
   }
 }

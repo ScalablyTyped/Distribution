@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "JobAssignment")
 @js.native
-class JobAssignment () extends StObject {
+open class JobAssignment () extends StObject {
   
   /**
     * The total pay amount for a 12 month period on the job. Set if the job `PayType` is `SALARY`.

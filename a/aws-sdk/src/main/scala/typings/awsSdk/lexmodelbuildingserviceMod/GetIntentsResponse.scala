@@ -29,7 +29,7 @@ object GetIntentsResponse {
     
     inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    inline def setIntentsVarargs(value: IntentMetadata*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: IntentMetadata*): Self = StObject.set(x, "intents", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

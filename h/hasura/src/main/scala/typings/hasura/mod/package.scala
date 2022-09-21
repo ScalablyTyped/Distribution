@@ -1,60 +1,66 @@
 package typings.hasura.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.hasura.anon.Type
+import typings.hasura.anon.`0`
+import typings.hasura.mod.^
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def HASURA_ROLE_ADMIN: /* "admin" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HASURA_ROLE_ADMIN").asInstanceOf[/* "admin" */ java.lang.String]
+inline def HASURA_ROLE_ADMIN: /* "admin" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("HASURA_ROLE_ADMIN").asInstanceOf[/* "admin" */ String]
 
-inline def XHasuraAdminSecret: /* "x-hasura-admin-secret" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraAdminSecret").asInstanceOf[/* "x-hasura-admin-secret" */ java.lang.String]
+inline def XHasuraAdminSecret: /* "x-hasura-admin-secret" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraAdminSecret").asInstanceOf[/* "x-hasura-admin-secret" */ String]
 
-inline def XHasuraClientName: /* "hasura-client-name" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraClientName").asInstanceOf[/* "hasura-client-name" */ java.lang.String]
+inline def XHasuraClientName: /* "hasura-client-name" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraClientName").asInstanceOf[/* "hasura-client-name" */ String]
 
-inline def XHasuraRole: /* "x-hasura-role" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraRole").asInstanceOf[/* "x-hasura-role" */ java.lang.String]
+inline def XHasuraRole: /* "x-hasura-role" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraRole").asInstanceOf[/* "x-hasura-role" */ String]
 
-inline def XHasuraUserID: /* "x-hasura-user-id" */ java.lang.String = typings.hasura.mod.^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraUserID").asInstanceOf[/* "x-hasura-user-id" */ java.lang.String]
+inline def XHasuraUserID: /* "x-hasura-user-id" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("XHasuraUserID").asInstanceOf[/* "x-hasura-user-id" */ String]
 
 type Aggregate[T] = T & typings.hasura.anon.Aggregate
 
-type AggregateResult[T] = (typings.hasura.mod.NumberAggregateResult[T, typings.hasura.mod.NumberScalarKeys[T]]) | typings.hasura.mod.BaseAggregateResult[T]
+type AggregateResult[T] = (NumberAggregateResult[T, NumberScalarKeys[T]]) | BaseAggregateResult[T]
 
-type HasuraDataItem[T /* <: typings.std.Record[java.lang.String, js.Any] */] = T & org.scalablytyped.runtime.StringDictionary[js.Any]
+type HasuraDataItem[T /* <: Record[String, Any] */] = T & StringDictionary[Any]
 
-type HasuraDataResult[T /* <: typings.std.Record[java.lang.String, js.Any] */] = js.Array[typings.hasura.mod.HasuraDataItem[T]]
+type HasuraDataResult[T /* <: Record[String, Any] */] = js.Array[HasuraDataItem[T]]
 
-type HasuraDeleteInput[T /* <: typings.std.Record[java.lang.String, js.Any] */, WhereKey /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+type HasuraDeleteInput[T /* <: Record[String, Any] */, WhereKey /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ ok in WhereKey ]: hasura.hasura.WhereBoolExp<T>}
-  */ typings.hasura.hasuraStrings.HasuraDeleteInput & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.hasura.hasuraStrings.HasuraDeleteInput & TopLevel[Any]
 
-type HasuraInsertInput[T /* <: typings.std.Record[java.lang.String, js.Any] */, OKey /* <: java.lang.String */, ConflictKey /* <: java.lang.String */] = typings.hasura.hasuraStrings.HasuraInsertInput & org.scalablytyped.runtime.TopLevel[js.Any] & (typings.hasura.mod.HasuraInsertOnConflict[T, ConflictKey])
+type HasuraInsertInput[T /* <: Record[String, Any] */, OKey /* <: String */, ConflictKey /* <: String */] = typings.hasura.hasuraStrings.HasuraInsertInput & TopLevel[Any] & (HasuraInsertOnConflict[T, ConflictKey])
 
-type HasuraInsertInputObject[T /* <: typings.std.Record[java.lang.String, js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+type HasuraInsertInputObject[T /* <: Record[String, Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ key in keyof T ]:? hasura.hasura.Equals<T[key], hasura.hasura.ScalarJSON<T[key]>> extends true? T[key] : hasura.hasura.Equals<T[key], hasura.hasura.ScalarJSONB<T[key]>> extends true? T[key] : T[key] extends hasura.hasura.ObjectType? hasura.hasura.HasuraInsertInputSingle<T[key], 'data', 'on_conflict'> : T[key] extends std.Array<hasura.hasura.ObjectType>? hasura.hasura.HasuraInsertInput<T[key][0], 'data', 'on_conflict'> : T[key]}
-  */ typings.hasura.hasuraStrings.HasuraInsertInputObject & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.hasura.hasuraStrings.HasuraInsertInputObject & TopLevel[Any]
 
-type HasuraInsertInputSingle[T /* <: typings.std.Record[java.lang.String, js.Any] */, OKey /* <: java.lang.String */, OC /* <: java.lang.String */] = typings.hasura.hasuraStrings.HasuraInsertInputSingle & org.scalablytyped.runtime.TopLevel[js.Any] & (typings.hasura.mod.HasuraInsertOnConflict[T, OC])
+type HasuraInsertInputSingle[T /* <: Record[String, Any] */, OKey /* <: String */, OC /* <: String */] = typings.hasura.hasuraStrings.HasuraInsertInputSingle & TopLevel[Any] & (HasuraInsertOnConflict[T, OC])
 
-type HasuraInsertOnConflict[T /* <: typings.std.Record[java.lang.String, js.Any] */, OC /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+type HasuraInsertOnConflict[T /* <: Record[String, Any] */, OC /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ oc in OC ]:? {  constraint :string,   update_columns :std.Array<keyof T>,   where :hasura.hasura.WhereBoolExp<T> | undefined}}
-  */ typings.hasura.hasuraStrings.HasuraInsertOnConflict & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.hasura.hasuraStrings.HasuraInsertOnConflict & TopLevel[Any]
 
-type JSONColumnBoolExp = typings.hasura.mod.ColumnBoolExp[java.lang.String]
+type JSONColumnBoolExp = ColumnBoolExp[String]
 
 type MinMaxAggregateKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]: hasura.hasura.Equals<T[key], hasura.hasura.ScalarUUID> extends true? never : T[key] extends number | string | boolean? key : never}[keyof T] */ js.Any
 
 type NumberScalarKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]: T[key] extends number? key : never}[keyof T] */ js.Any
 
-type ObjectType = typings.std.Record[
-java.lang.String, 
-typings.hasura.mod.ScalarType | (typings.std.Record[java.lang.String, typings.hasura.mod.ScalarType]) | (js.Array[typings.std.Record[java.lang.String, typings.hasura.mod.ScalarType]])]
+type ObjectType = Record[
+String, 
+ScalarType | (Record[String, ScalarType]) | (js.Array[Record[String, ScalarType]])]
 
-type OrderByAggregate[T /* <: typings.std.Record[java.lang.String, js.Any] */] = ((typings.hasura.mod.BaseOrderByAggregate[T] & (typings.hasura.mod.NumberOrderByAggregate[T, typings.hasura.mod.NumberScalarKeys[T]])) | typings.hasura.mod.BaseOrderByAggregate[T]) & typings.hasura.mod.OrderBy[T]
+type OrderByAggregate[T /* <: Record[String, Any] */] = ((BaseOrderByAggregate[T] & (NumberOrderByAggregate[T, NumberScalarKeys[T]])) | BaseOrderByAggregate[T]) & OrderBy[T]
 
 type ScalaKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]: hasura.hasura.Equals<T[key], hasura.hasura.ScalarJSON<T[key]>> extends true? key : hasura.hasura.Equals<T[key], hasura.hasura.ScalarJSONB<T[key]>> extends true? key : T[key] extends number | string | boolean? key : never}[keyof T] */ js.Any
 
-type ScalarJSON[T] = T & typings.hasura.anon.Type
+type ScalarJSON[T] = T & Type
 
-type ScalarJSONB[T] = T & typings.hasura.anon.`0`
+type ScalarJSONB[T] = T & `0`
 
-type ScalarType = java.lang.String | scala.Double | scala.Boolean | typings.hasura.mod.ScalarJSON[js.Any] | typings.hasura.mod.ScalarJSONB[js.Any]
+type ScalarType = String | Double | Boolean | ScalarJSON[Any] | ScalarJSONB[Any]

@@ -1,5 +1,6 @@
 package typings.pemJwk
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,21 @@ object mod {
   
   inline def jwk2pem(rsa_jwk: RSA_JWK): String = ^.asInstanceOf[js.Dynamic].applyDynamic("jwk2pem")(rsa_jwk.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def pem2jwk(rsa_pem: String): RSA_JWK = ^.asInstanceOf[js.Dynamic].applyDynamic("pem2jwk")(rsa_pem.asInstanceOf[js.Any]).asInstanceOf[RSA_JWK]
+  inline def pem2jwk[T /* <: Extras */](rsa_pem: String): JWK[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pem2jwk")(rsa_pem.asInstanceOf[js.Any]).asInstanceOf[JWK[T]]
+  inline def pem2jwk[T /* <: Extras */](rsa_pem: String, extras: T): JWK[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pem2jwk")(rsa_pem.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[JWK[T]]
+  
+  trait Extras
+    extends StObject
+       with /* key */ StringDictionary[Extras | String | Boolean | Double]
+  object Extras {
+    
+    inline def apply(): Extras = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Extras]
+    }
+  }
+  
+  type JWK[T /* <: Extras */] = RSA_JWK & T
   
   trait RSA_JWK extends StObject {
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("TableCell")
 @js.native
-class TableCell ()
+open class TableCell ()
   extends StObject
      with typings.devexpressWeb.TableCell {
   

@@ -62,7 +62,7 @@ trait VideoDeviceController extends StObject {
     * @param propertyId The property identifier.
     * @return The property value.
     */
-  def getDeviceProperty(propertyId: String): js.Any
+  def getDeviceProperty(propertyId: String): Any
   
   /**
     * Gets the encoding properties for the specified media stream type for the video device.
@@ -112,7 +112,7 @@ trait VideoDeviceController extends StObject {
     * @param propertyId The property identifier.
     * @param propertyValue The new value of the property.
     */
-  def setDeviceProperty(propertyId: String, propertyValue: js.Any): Unit
+  def setDeviceProperty(propertyId: String, propertyValue: Any): Unit
   
   /**
     * Sets the encoding properties asynchronously for the specified media stream type for the video device.
@@ -171,7 +171,7 @@ object VideoDeviceController {
     focus: MediaDeviceControl,
     focusControl: FocusControl,
     getAvailableMediaStreamProperties: MediaStreamType => IVectorView[IMediaEncodingProperties],
-    getDeviceProperty: String => js.Any,
+    getDeviceProperty: String => Any,
     getMediaStreamProperties: MediaStreamType => IMediaEncodingProperties,
     hdrVideoControl: HdrVideoControl,
     hue: MediaDeviceControl,
@@ -185,7 +185,7 @@ object VideoDeviceController {
     regionsOfInterestControl: RegionsOfInterestControl,
     roll: MediaDeviceControl,
     sceneModeControl: SceneModeControl,
-    setDeviceProperty: (String, js.Any) => Unit,
+    setDeviceProperty: (String, Any) => Unit,
     setMediaStreamPropertiesAsync: (MediaStreamType, IMediaEncodingProperties) => IPromiseWithIAsyncAction,
     tilt: MediaDeviceControl,
     torchControl: TorchControl,
@@ -229,7 +229,7 @@ object VideoDeviceController {
     
     inline def setGetAvailableMediaStreamProperties(value: MediaStreamType => IVectorView[IMediaEncodingProperties]): Self = StObject.set(x, "getAvailableMediaStreamProperties", js.Any.fromFunction1(value))
     
-    inline def setGetDeviceProperty(value: String => js.Any): Self = StObject.set(x, "getDeviceProperty", js.Any.fromFunction1(value))
+    inline def setGetDeviceProperty(value: String => Any): Self = StObject.set(x, "getDeviceProperty", js.Any.fromFunction1(value))
     
     inline def setGetMediaStreamProperties(value: MediaStreamType => IMediaEncodingProperties): Self = StObject.set(x, "getMediaStreamProperties", js.Any.fromFunction1(value))
     
@@ -257,7 +257,7 @@ object VideoDeviceController {
     
     inline def setSceneModeControl(value: SceneModeControl): Self = StObject.set(x, "sceneModeControl", value.asInstanceOf[js.Any])
     
-    inline def setSetDeviceProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "setDeviceProperty", js.Any.fromFunction2(value))
+    inline def setSetDeviceProperty(value: (String, Any) => Unit): Self = StObject.set(x, "setDeviceProperty", js.Any.fromFunction2(value))
     
     inline def setSetMediaStreamPropertiesAsync(value: (MediaStreamType, IMediaEncodingProperties) => IPromiseWithIAsyncAction): Self = StObject.set(x, "setMediaStreamPropertiesAsync", js.Any.fromFunction2(value))
     

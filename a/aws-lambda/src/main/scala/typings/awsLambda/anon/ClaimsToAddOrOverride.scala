@@ -30,7 +30,7 @@ object ClaimsToAddOrOverride {
     
     inline def setClaimsToSuppressUndefined: Self = StObject.set(x, "claimsToSuppress", js.undefined)
     
-    inline def setClaimsToSuppressVarargs(value: String*): Self = StObject.set(x, "claimsToSuppress", js.Array(value :_*))
+    inline def setClaimsToSuppressVarargs(value: String*): Self = StObject.set(x, "claimsToSuppress", js.Array(value*))
     
     inline def setGroupOverrideDetails(value: GroupsToOverride): Self = StObject.set(x, "groupOverrideDetails", value.asInstanceOf[js.Any])
     

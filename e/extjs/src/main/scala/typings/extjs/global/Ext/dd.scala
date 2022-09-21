@@ -14,7 +14,7 @@ object dd {
   
   @JSGlobal("Ext.dd.DDM")
   @js.native
-  class DDM ()
+  open class DDM ()
     extends StObject
        with typings.extjs.Ext.dd.DDM
   /* static members */
@@ -40,22 +40,22 @@ object dd {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-    inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+    inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-    inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+    inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-    inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+    inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.DDM.clickPixelThresh")
@@ -86,8 +86,8 @@ object dd {
       * @param id String the id of the elment to get
       * @returns Object The style property of the element
       */
-    inline def getCss(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")().asInstanceOf[js.Any]
-    inline def getCss(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getCss(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")().asInstanceOf[Any]
+    inline def getCss(id: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns the DragDrop instance for a given id
       * @param id String the id of the DragDrop object
@@ -100,15 +100,15 @@ object dd {
       * @param id String the id of the elment to get
       * @returns Object The element
       */
-    inline def getElement(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[js.Any]
-    inline def getElement(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getElement(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[Any]
+    inline def getElement(id: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-    inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+    inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns a Region object containing the drag and drop element s position and size including the padding configured fo
       * @param oDD Ext.dd.DragDrop the drag and drop object to get the location for.
@@ -132,7 +132,7 @@ object dd {
       * @returns Ext.Base this
       */
     inline def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
-    inline def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+    inline def initConfig(config: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Utility function to determine if a given element has been registered as a drag drop item
       * @param id String the element id to check
@@ -168,7 +168,7 @@ object dd {
       * @returns Boolean true if typeof oDD = DragDrop
       */
     inline def isTypeOfDD(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")().asInstanceOf[Boolean]
-    inline def isTypeOfDD(the: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")(the.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTypeOfDD(the: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")(the.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Lock all drag and drop functionality */
     inline def lock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")().asInstanceOf[Unit]
@@ -195,7 +195,7 @@ object dd {
       * @param groups Object an associative array of groups to refresh
       */
     inline def refreshCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")().asInstanceOf[Unit]
-    inline def refreshCache(groups: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")(groups.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def refreshCache(groups: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")(groups.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Each DragDrop instance must be registered with the DragDropManager
       * @param oDD Ext.dd.DragDrop the DragDrop object to register
@@ -266,7 +266,7 @@ object dd {
   
   @JSGlobal("Ext.dd.DragDropManager")
   @js.native
-  class DragDropManager_ ()
+  open class DragDropManager_ ()
     extends StObject
        with typings.extjs.Ext.dd.DragDropManager_
   /* static members */
@@ -292,22 +292,22 @@ object dd {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-    inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+    inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-    inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+    inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-    inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+    inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.DragDropManager.clickPixelThresh")
@@ -338,8 +338,8 @@ object dd {
       * @param id String the id of the elment to get
       * @returns Object The style property of the element
       */
-    inline def getCss(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")().asInstanceOf[js.Any]
-    inline def getCss(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getCss(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")().asInstanceOf[Any]
+    inline def getCss(id: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns the DragDrop instance for a given id
       * @param id String the id of the DragDrop object
@@ -352,15 +352,15 @@ object dd {
       * @param id String the id of the elment to get
       * @returns Object The element
       */
-    inline def getElement(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[js.Any]
-    inline def getElement(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getElement(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[Any]
+    inline def getElement(id: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-    inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+    inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns a Region object containing the drag and drop element s position and size including the padding configured fo
       * @param oDD Ext.dd.DragDrop the drag and drop object to get the location for.
@@ -384,7 +384,7 @@ object dd {
       * @returns Ext.Base this
       */
     inline def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
-    inline def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+    inline def initConfig(config: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Utility function to determine if a given element has been registered as a drag drop item
       * @param id String the element id to check
@@ -420,7 +420,7 @@ object dd {
       * @returns Boolean true if typeof oDD = DragDrop
       */
     inline def isTypeOfDD(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")().asInstanceOf[Boolean]
-    inline def isTypeOfDD(the: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")(the.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTypeOfDD(the: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")(the.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Lock all drag and drop functionality */
     inline def lock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")().asInstanceOf[Unit]
@@ -447,7 +447,7 @@ object dd {
       * @param groups Object an associative array of groups to refresh
       */
     inline def refreshCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")().asInstanceOf[Unit]
-    inline def refreshCache(groups: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")(groups.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def refreshCache(groups: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")(groups.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Each DragDrop instance must be registered with the DragDropManager
       * @param oDD Ext.dd.DragDrop the DragDrop object to register
@@ -518,7 +518,7 @@ object dd {
   
   @JSGlobal("Ext.dd.DragDropMgr")
   @js.native
-  class DragDropMgr ()
+  open class DragDropMgr ()
     extends StObject
        with typings.extjs.Ext.dd.DragDropMgr
   /* static members */
@@ -544,22 +544,22 @@ object dd {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-    inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+    inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-    inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+    inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-    inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+    inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.DragDropMgr.clickPixelThresh")
@@ -590,8 +590,8 @@ object dd {
       * @param id String the id of the elment to get
       * @returns Object The style property of the element
       */
-    inline def getCss(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")().asInstanceOf[js.Any]
-    inline def getCss(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getCss(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")().asInstanceOf[Any]
+    inline def getCss(id: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCss")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns the DragDrop instance for a given id
       * @param id String the id of the DragDrop object
@@ -604,15 +604,15 @@ object dd {
       * @param id String the id of the elment to get
       * @returns Object The element
       */
-    inline def getElement(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[js.Any]
-    inline def getElement(id: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getElement(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[Any]
+    inline def getElement(id: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-    inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+    inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns a Region object containing the drag and drop element s position and size including the padding configured fo
       * @param oDD Ext.dd.DragDrop the drag and drop object to get the location for.
@@ -636,7 +636,7 @@ object dd {
       * @returns Ext.Base this
       */
     inline def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
-    inline def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+    inline def initConfig(config: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Utility function to determine if a given element has been registered as a drag drop item
       * @param id String the element id to check
@@ -672,7 +672,7 @@ object dd {
       * @returns Boolean true if typeof oDD = DragDrop
       */
     inline def isTypeOfDD(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")().asInstanceOf[Boolean]
-    inline def isTypeOfDD(the: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")(the.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTypeOfDD(the: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfDD")(the.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** [Method] Lock all drag and drop functionality */
     inline def lock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")().asInstanceOf[Unit]
@@ -699,7 +699,7 @@ object dd {
       * @param groups Object an associative array of groups to refresh
       */
     inline def refreshCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")().asInstanceOf[Unit]
-    inline def refreshCache(groups: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")(groups.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def refreshCache(groups: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")(groups.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Method] Each DragDrop instance must be registered with the DragDropManager
       * @param oDD Ext.dd.DragDrop the DragDrop object to register
@@ -770,7 +770,7 @@ object dd {
   
   @JSGlobal("Ext.dd.Registry")
   @js.native
-  class Registry ()
+  open class Registry ()
     extends StObject
        with typings.extjs.Ext.dd.Registry
   /* static members */
@@ -784,73 +784,73 @@ object dd {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-    inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+    inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-    inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+    inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-    inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+    inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns the handle registered for a DOM Node by id
       * @param id String/HTMLElement The DOM node or id to look up
       * @returns Object handle The custom handle data
       */
-    inline def getHandle(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandle")().asInstanceOf[js.Any]
-    inline def getHandle(id: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandle")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getHandle(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandle")().asInstanceOf[Any]
+    inline def getHandle(id: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandle")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns the handle that is registered for the DOM node that is the target of the event
       * @param e Event The event
       * @returns Object handle The custom handle data
       */
-    inline def getHandleFromEvent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandleFromEvent")().asInstanceOf[js.Any]
-    inline def getHandleFromEvent(e: Event): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandleFromEvent")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getHandleFromEvent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandleFromEvent")().asInstanceOf[Any]
+    inline def getHandleFromEvent(e: Event): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandleFromEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-    inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+    inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns a custom data object that is registered for a DOM node by id
       * @param id String/HTMLElement The DOM node or id to look up
       * @returns Object data The custom data
       */
-    inline def getTarget(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")().asInstanceOf[js.Any]
-    inline def getTarget(id: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getTarget(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")().asInstanceOf[Any]
+    inline def getTarget(id: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Returns a custom data object that is registered for the DOM node that is the target of the event
       * @param e Event The event
       * @returns Object data The custom data
       */
-    inline def getTargetFromEvent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetFromEvent")().asInstanceOf[js.Any]
-    inline def getTargetFromEvent(e: Event): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetFromEvent")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getTargetFromEvent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetFromEvent")().asInstanceOf[Any]
+    inline def getTargetFromEvent(e: Event): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetFromEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Initialize configuration for this class
       * @param config Object
       * @returns Ext.Base this
       */
     inline def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
-    inline def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+    inline def initConfig(config: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Registers a drag drop element
       * @param element String/HTMLElement The id or DOM node to register
       * @param data Object An custom data object that will be passed between the elements that are involved in drag drop operations. You can populate this object with any arbitrary properties that your own code knows how to interpret, plus there are some specific properties known to the Registry that should be populated in the data object (if applicable):
       */
     inline def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
-    inline def register(element: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def register(element: js.Any, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(element.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def register(element: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(element.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(element: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register(element: Any, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(element.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(element: Unit, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(element.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.dd.Registry.self")
@@ -867,12 +867,12 @@ object dd {
       * @param element String/HTMLElement The id or DOM node to unregister
       */
     inline def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
-    inline def unregister(element: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unregister(element: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("Ext.dd.ScrollManager")
   @js.native
-  class ScrollManager ()
+  open class ScrollManager ()
     extends StObject
        with typings.extjs.Ext.dd.ScrollManager
   /* static members */
@@ -898,22 +898,22 @@ object dd {
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
       * @returns Object Returns the result of calling the overridden method
       */
-    inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-    inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+    inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] Call the parent method of the current method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
       * @returns Object Returns the result of calling the parent method
       */
-    inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-    inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+    inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
       * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
       * @returns Object Returns the result of calling the superclass method
       */
-    inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-    inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+    inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Property] (String) */
     @JSGlobal("Ext.dd.ScrollManager.ddGroup")
@@ -931,8 +931,8 @@ object dd {
       * @param name String Name of the config option to return.
       * @returns Object/Mixed The full config object or a single config value when name parameter specified.
       */
-    inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-    inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+    inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.ScrollManager.hthresh")
@@ -951,7 +951,7 @@ object dd {
       * @returns Ext.Base this
       */
     inline def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
-    inline def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+    inline def initConfig(config: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
     
     /** [Method] Manually trigger a cache refresh  */
     inline def refreshCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCache")().asInstanceOf[Unit]
@@ -960,7 +960,7 @@ object dd {
       * @param el String/HTMLElement/Ext.Element/String[]/HTMLElement[]/Ext.Element[] The id of or the element to be scrolled or an array of either
       */
     inline def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
-    inline def register(el: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register(el: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Property] (Ext.Class) */
     @JSGlobal("Ext.dd.ScrollManager.self")
@@ -977,7 +977,7 @@ object dd {
       * @param el String/HTMLElement/Ext.Element/String[]/HTMLElement[]/Ext.Element[] The id of or the element to be removed or an array of either
       */
     inline def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
-    inline def unregister(el: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unregister(el: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** [Property] (Number) */
     @JSGlobal("Ext.dd.ScrollManager.vthresh")

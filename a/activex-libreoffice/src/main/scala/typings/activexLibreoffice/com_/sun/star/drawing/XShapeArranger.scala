@@ -38,7 +38,7 @@ object XShapeArranger {
     acquire: () => Unit,
     arrange: (XShapes, Arrangement) => Unit,
     bringToFront: (XShapes, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reverseOrder: XShapes => Unit,
     sendToBack: (XShapes, Double) => Unit,

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".concurrently-5oeeHgIv" : "7.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".concurrently-5oeeHgIv" : "7.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

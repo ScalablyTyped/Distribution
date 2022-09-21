@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param filter Filter function to decide which modules are kept in the map.
   */
-class ModuleMap ()
+open class ModuleMap ()
   extends StObject
      with typings.fridaGum.ModuleMap {
   def this(filter: ModuleMapFilter) = this()

@@ -3,7 +3,7 @@ package typings.reactstrap
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object carouselIndicatorsMod {
   
-  @JSImport("reactstrap/lib/CarouselIndicators", JSImport.Default)
+  @JSImport("reactstrap/types/lib/CarouselIndicators", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CarouselIndicatorsProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CarouselIndicatorsProps, js.Object, Any]
   
-  type CarouselIndicators = Component[CarouselIndicatorsProps, js.Object, js.Any]
+  type CarouselIndicators = Component[CarouselIndicatorsProps, js.Object, Any]
   
   trait CarouselIndicatorsProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var activeIndex: Double
     
@@ -48,7 +48,7 @@ object carouselIndicatorsMod {
       
       inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setOnClickHandler(value: Double => Unit): Self = StObject.set(x, "onClickHandler", js.Any.fromFunction1(value))
     }

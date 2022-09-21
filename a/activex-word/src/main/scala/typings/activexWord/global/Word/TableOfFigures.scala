@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TableOfFigures")
 @js.native
-/* private */ class TableOfFigures ()
+/* private */ open class TableOfFigures ()
   extends StObject
      with typings.activexWord.Word.TableOfFigures {
   
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var LowerHeadingLevel: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Range: typings.activexWord.Word.Range = js.native

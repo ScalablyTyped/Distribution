@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccountTakeoverRiskConfigurationType extends StObject {
   
   /**
-    * Account takeover risk configuration actions
+    * Account takeover risk configuration actions.
     */
   var Actions: AccountTakeoverActionsType
   

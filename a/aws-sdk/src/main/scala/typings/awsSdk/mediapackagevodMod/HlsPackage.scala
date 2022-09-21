@@ -14,6 +14,11 @@ trait HlsPackage extends StObject {
   var HlsManifests: listOfHlsManifest
   
   /**
+    * When enabled, MediaPackage passes through digital video broadcasting (DVB) subtitles into the output.
+    */
+  var IncludeDvbSubtitles: js.UndefOr[boolean] = js.undefined
+  
+  /**
     * Duration (in seconds) of each fragment. Actual fragments will be
   rounded to the nearest multiple of the source fragment duration.
     */
@@ -39,7 +44,11 @@ object HlsPackage {
     
     inline def setHlsManifests(value: listOfHlsManifest): Self = StObject.set(x, "HlsManifests", value.asInstanceOf[js.Any])
     
-    inline def setHlsManifestsVarargs(value: HlsManifest*): Self = StObject.set(x, "HlsManifests", js.Array(value :_*))
+    inline def setHlsManifestsVarargs(value: HlsManifest*): Self = StObject.set(x, "HlsManifests", js.Array(value*))
+    
+    inline def setIncludeDvbSubtitles(value: boolean): Self = StObject.set(x, "IncludeDvbSubtitles", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeDvbSubtitlesUndefined: Self = StObject.set(x, "IncludeDvbSubtitles", js.undefined)
     
     inline def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.PassThrough
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object mod {
   
   @JSImport("fluent-ffmpeg", "FfmpegCommand")
   @js.native
-  class FfmpegCommand () extends EventEmitter {
+  open class FfmpegCommand () extends EventEmitter {
     def this(input: String) = this()
     def this(input: Readable) = this()
     def this(options: FfmpegCommandOptions) = this()
@@ -156,15 +156,15 @@ object mod {
     def duration(duration: Double): FfmpegCommand = js.native
     
     // ffprobe
-    def ffprobe(callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]): Unit = js.native
-    def ffprobe(index: Double, callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]): Unit = js.native
+    def ffprobe(callback: js.Function2[/* err */ Any, /* data */ FfprobeData, Unit]): Unit = js.native
+    def ffprobe(index: Double, callback: js.Function2[/* err */ Any, /* data */ FfprobeData, Unit]): Unit = js.native
     // tslint:disable-line unified-signatures
     def ffprobe(
       index: Double,
       options: js.Array[String],
-      callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
+      callback: js.Function2[/* err */ Any, /* data */ FfprobeData, Unit]
     ): Unit = js.native
-    def ffprobe(options: js.Array[String], callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]): Unit = js.native
+    def ffprobe(options: js.Array[String], callback: js.Function2[/* err */ Any, /* data */ FfprobeData, Unit]): Unit = js.native
     
     def filterGraph(spec: String): FfmpegCommand = js.native
     def filterGraph(spec: String, map: String): FfmpegCommand = js.native
@@ -269,10 +269,8 @@ object mod {
     def pipe(stream: Writable): Writable | PassThrough = js.native
     def pipe(stream: Writable, options: End): Writable | PassThrough = js.native
     
-    def pnreset(proset: String): FfmpegCommand = js.native
-    def pnreset(proset: GetPreset): FfmpegCommand = js.native
-    
-    def preset(format: String): FfmpegCommand = js.native
+    def preset(preset: String): FfmpegCommand = js.native
+    def preset(preset: PresetFunction): FfmpegCommand = js.native
     
     // processor
     def renice(niceness: Double): FfmpegCommand = js.native
@@ -351,8 +349,8 @@ object mod {
     def updateFlvMetadata(): FfmpegCommand = js.native
     
     // options/misc
-    def usingPreset(proset: String): FfmpegCommand = js.native
-    def usingPreset(proset: GetPreset): FfmpegCommand = js.native
+    def usingPreset(preset: String): FfmpegCommand = js.native
+    def usingPreset(preset: PresetFunction): FfmpegCommand = js.native
     
     def videoBitrate(bitrate: String): FfmpegCommand = js.native
     def videoBitrate(bitrate: String, constant: Boolean): FfmpegCommand = js.native
@@ -492,23 +490,19 @@ object mod {
   
   inline def availableFormats(callback: FormatsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableFormats")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def ffprobe(file: String, callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def ffprobe(
-    file: String,
-    index: Double,
-    callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], index.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ffprobe(file: String, callback: js.Function2[/* err */ Any, /* data */ FfprobeData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ffprobe(file: String, index: Double, callback: js.Function2[/* err */ Any, /* data */ FfprobeData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], index.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   // tslint:disable-line unified-signatures
   inline def ffprobe(
     file: String,
     index: Double,
     options: js.Array[String],
-    callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
+    callback: js.Function2[/* err */ Any, /* data */ FfprobeData, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def ffprobe(
     file: String,
     options: js.Array[String],
-    callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
+    callback: js.Function2[/* err */ Any, /* data */ FfprobeData, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getAvailableCodecs(callback: CodecsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableCodecs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -545,7 +539,7 @@ object mod {
       
       inline def setOptions(value: String | js.Array[String] | js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
     }
   }
   
@@ -617,7 +611,7 @@ object mod {
   
   type Codecs = StringDictionary[Codec]
   
-  type CodecsCallback = js.Function2[/* err */ Error, /* codecs */ Codecs, Unit]
+  type CodecsCallback = js.Function2[/* err */ js.Error, /* codecs */ Codecs, Unit]
   
   trait Encoder extends StObject {
     
@@ -671,25 +665,25 @@ object mod {
   
   type Encoders = StringDictionary[Encoder]
   
-  type EncodersCallback = js.Function2[/* err */ Error, /* encoders */ Encoders, Unit]
+  type EncodersCallback = js.Function2[/* err */ js.Error, /* encoders */ Encoders, Unit]
   
   trait FfmpegCommandLogger extends StObject {
     
-    def debug(data: js.Any*): Unit
+    def debug(data: Any*): Unit
     
-    def error(data: js.Any*): Unit
+    def error(data: Any*): Unit
     
-    def info(data: js.Any*): Unit
+    def info(data: Any*): Unit
     
-    def warn(data: js.Any*): Unit
+    def warn(data: Any*): Unit
   }
   object FfmpegCommandLogger {
     
     inline def apply(
-      debug: /* repeated */ js.Any => Unit,
-      error: /* repeated */ js.Any => Unit,
-      info: /* repeated */ js.Any => Unit,
-      warn: /* repeated */ js.Any => Unit
+      debug: /* repeated */ Any => Unit,
+      error: /* repeated */ Any => Unit,
+      info: /* repeated */ Any => Unit,
+      warn: /* repeated */ Any => Unit
     ): FfmpegCommandLogger = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
       __obj.asInstanceOf[FfmpegCommandLogger]
@@ -697,13 +691,13 @@ object mod {
     
     extension [Self <: FfmpegCommandLogger](x: Self) {
       
-      inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* repeated */ Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -776,7 +770,7 @@ object mod {
   
   trait FfprobeData extends StObject {
     
-    var chapters: js.Array[js.Any]
+    var chapters: js.Array[Any]
     
     var format: FfprobeFormat
     
@@ -784,28 +778,28 @@ object mod {
   }
   object FfprobeData {
     
-    inline def apply(chapters: js.Array[js.Any], format: FfprobeFormat, streams: js.Array[FfprobeStream]): FfprobeData = {
+    inline def apply(chapters: js.Array[Any], format: FfprobeFormat, streams: js.Array[FfprobeStream]): FfprobeData = {
       val __obj = js.Dynamic.literal(chapters = chapters.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], streams = streams.asInstanceOf[js.Any])
       __obj.asInstanceOf[FfprobeData]
     }
     
     extension [Self <: FfprobeData](x: Self) {
       
-      inline def setChapters(value: js.Array[js.Any]): Self = StObject.set(x, "chapters", value.asInstanceOf[js.Any])
+      inline def setChapters(value: js.Array[Any]): Self = StObject.set(x, "chapters", value.asInstanceOf[js.Any])
       
-      inline def setChaptersVarargs(value: js.Any*): Self = StObject.set(x, "chapters", js.Array(value :_*))
+      inline def setChaptersVarargs(value: Any*): Self = StObject.set(x, "chapters", js.Array(value*))
       
       inline def setFormat(value: FfprobeFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setStreams(value: js.Array[FfprobeStream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
       
-      inline def setStreamsVarargs(value: FfprobeStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: FfprobeStream*): Self = StObject.set(x, "streams", js.Array(value*))
     }
   }
   
   trait FfprobeFormat
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var bit_rate: js.UndefOr[Double] = js.undefined
     
@@ -827,7 +821,7 @@ object mod {
     
     var start_time: js.UndefOr[Double] = js.undefined
     
-    var tags: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var tags: js.UndefOr[Record[String, String | Double]] = js.undefined
   }
   object FfprobeFormat {
     
@@ -878,17 +872,15 @@ object mod {
       
       inline def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
       
-      inline def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Record[String, String | Double]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
-      
-      inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
   trait FfprobeStream
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var avg_frame_rate: js.UndefOr[String] = js.undefined
     
@@ -963,6 +955,8 @@ object mod {
     var r_frame_rate: js.UndefOr[String] = js.undefined
     
     var refs: js.UndefOr[Double] = js.undefined
+    
+    var rotation: js.UndefOr[String | Double] = js.undefined
     
     var sample_aspect_ratio: js.UndefOr[String] = js.undefined
     
@@ -1135,6 +1129,10 @@ object mod {
       
       inline def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
       
+      inline def setRotation(value: String | Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      
       inline def setSample_aspect_ratio(value: String): Self = StObject.set(x, "sample_aspect_ratio", value.asInstanceOf[js.Any])
       
       inline def setSample_aspect_ratioUndefined: Self = StObject.set(x, "sample_aspect_ratio", js.undefined)
@@ -1171,7 +1169,7 @@ object mod {
   
   trait FfprobeStreamDisposition
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var default: js.UndefOr[Double] = js.undefined
     
@@ -1301,7 +1299,7 @@ object mod {
     
     var inputs: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var options: js.UndefOr[js.Any | String | js.Array[js.Any]] = js.undefined
+    var options: js.UndefOr[Any | String | js.Array[Any]] = js.undefined
     
     var outputs: js.UndefOr[String | js.Array[String]] = js.undefined
   }
@@ -1320,25 +1318,25 @@ object mod {
       
       inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
       
-      inline def setOptions(value: js.Any | String | js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any | String | js.Array[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Any*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setOutputs(value: String | js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
       inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      inline def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value*))
     }
   }
   
   type Filters = StringDictionary[Filter]
   
-  type FiltersCallback = js.Function2[/* err */ Error, /* filters */ Filters, Unit]
+  type FiltersCallback = js.Function2[/* err */ js.Error, /* filters */ Filters, Unit]
   
   trait Format extends StObject {
     
@@ -1367,9 +1365,9 @@ object mod {
   
   type Formats = StringDictionary[Format]
   
-  type FormatsCallback = js.Function2[/* err */ Error, /* formats */ Formats, Unit]
+  type FormatsCallback = js.Function2[/* err */ js.Error, /* formats */ Formats, Unit]
   
-  type GetPreset = js.Function1[/* command */ FfmpegCommand, String]
+  type PresetFunction = js.Function1[/* command */ FfmpegCommand, Unit]
   
   trait ScreenshotsConfig extends StObject {
     
@@ -1420,13 +1418,13 @@ object mod {
       
       inline def setTimemarksUndefined: Self = StObject.set(x, "timemarks", js.undefined)
       
-      inline def setTimemarksVarargs(value: (Double | String)*): Self = StObject.set(x, "timemarks", js.Array(value :_*))
+      inline def setTimemarksVarargs(value: (Double | String)*): Self = StObject.set(x, "timemarks", js.Array(value*))
       
       inline def setTimestamps(value: js.Array[Double | String]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
       
       inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
       
-      inline def setTimestampsVarargs(value: (Double | String)*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
+      inline def setTimestampsVarargs(value: (Double | String)*): Self = StObject.set(x, "timestamps", js.Array(value*))
     }
   }
 }

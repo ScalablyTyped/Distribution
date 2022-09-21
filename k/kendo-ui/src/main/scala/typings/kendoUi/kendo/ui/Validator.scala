@@ -11,7 +11,7 @@ trait Validator
   extends StObject
      with Widget {
   
-  def errors(): js.Any = js.native
+  def errors(): Any = js.native
   
   def hideMessages(): Unit = js.native
   
@@ -19,6 +19,8 @@ trait Validator
   
   @JSName("options")
   var options_Validator: ValidatorOptions = js.native
+  
+  def reset(): Unit = js.native
   
   def showValidationSummary(): Unit = js.native
   

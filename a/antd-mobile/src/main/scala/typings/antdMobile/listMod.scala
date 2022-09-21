@@ -1,79 +1,51 @@
 package typings.antdMobile
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.antdMobile.anon.PartialListProps
-import typings.antdMobile.anon.TypeofItem
+import typings.antdMobile.anon.PartialheaderReactNodeund
+import typings.antdMobile.anon.WeakValidationMapheaderRe
+import typings.antdMobile.anon.headerReactNodeundefinedm
 import typings.antdMobile.listItemMod.ListItemProps
-import typings.antdMobile.listPropsTypeMod.ListPropsType
-import typings.react.mod.CSSProperties
-import typings.react.mod.Component
+import typings.react.mod.FC
+import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
   
-  @JSImport("antd-mobile/lib/list", JSImport.Default)
-  @js.native
-  class default () extends List
-  /* static members */
+  /* Inlined react.react.ForwardRefExoticComponent<{  header :react.react.ReactNode | undefined,   mode :'default' | 'card' | undefined,   children :react.react.ReactNode | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--active-background-color' | '--align-items' | '--border-bottom' | '--border-inner' | '--border-top' | '--extra-max-width' | '--font-size' | '--header-font-size' | '--padding-left' | '--padding-right' | '--prefix-padding-right' | '--prefix-width', string>> | undefined,   tabIndex :number | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/list/list.ListRef>> & {  Item :react.react.FC<antd-mobile.antd-mobile/es/components/list/list-item.ListItemProps>} */
   object default {
     
-    @JSImport("antd-mobile/lib/list", JSImport.Default)
+    /**
+      * **NOTE**: Exotic components are not callable.
+      */
+    inline def apply(props: headerReactNodeundefinedm): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
+    @JSImport("antd-mobile/es/components/list", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("antd-mobile/lib/list", "default.Item")
+    @JSImport("antd-mobile/es/components/list", "default.Item")
     @js.native
-    def Item: (Instantiable1[/* props */ ListItemProps, typings.antdMobile.listItemMod.default]) & TypeofItem = js.native
-    inline def Item_=(x: (Instantiable1[/* props */ ListItemProps, typings.antdMobile.listItemMod.default]) & TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item: FC[ListItemProps] = js.native
+    inline def Item_=(x: FC[ListItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
-    @JSImport("antd-mobile/lib/list", "default.defaultProps")
+    @JSImport("antd-mobile/es/components/list", "default.defaultProps")
     @js.native
-    def defaultProps: PartialListProps = js.native
-    inline def defaultProps_=(x: PartialListProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
-  
-  @js.native
-  trait List
-    extends Component[ListProps, js.Any, js.Any]
-  
-  trait ListProps
-    extends StObject
-       with ListPropsType {
+    def defaultProps: js.UndefOr[PartialheaderReactNodeund] = js.native
+    inline def defaultProps_=(x: js.UndefOr[PartialheaderReactNodeund]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    var className: js.UndefOr[String] = js.undefined
+    @JSImport("antd-mobile/es/components/list", "default.displayName")
+    @js.native
+    def displayName: js.UndefOr[String] = js.native
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    var prefixCls: js.UndefOr[String] = js.undefined
+    @JSImport("antd-mobile/es/components/list", "default.propTypes")
+    @js.native
+    def propTypes: js.UndefOr[WeakValidationMapheaderRe] = js.native
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapheaderRe]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    var role: js.UndefOr[String] = js.undefined
-    
-    var style: js.UndefOr[CSSProperties] = js.undefined
-  }
-  object ListProps {
-    
-    inline def apply(): ListProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ListProps]
-    }
-    
-    extension [Self <: ListProps](x: Self) {
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
-      
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
-      
-      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
-      
-      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-    }
+    @JSImport("antd-mobile/es/components/list", "default.$$typeof")
+    @js.native
+    val typeof: js.Symbol = js.native
   }
 }

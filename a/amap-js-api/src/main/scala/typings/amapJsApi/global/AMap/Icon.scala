@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 点标记的图标
   * @param options 选项
   */
-class Icon ()
+open class Icon ()
   extends StObject
      with typings.amapJsApi.AMap.Icon {
   def this(options: Options) = this()

@@ -35,7 +35,7 @@ trait MemberKeyid extends StObject {
   /**
     * The namespace in which the entity exists. If not specified, the `EntityKey` represents a Google-managed entity such as a Google user or a Google Group. If specified, the
     * `EntityKey` represents an external-identity-mapped group. The namespace must correspond to an identity source created in Admin Console and must be in the form of
-    * `identitysources/{identity_source_id}.
+    * `identitysources/{identity_source}`.
     */
   @JSName("memberKey.namespace")
   var memberKeyDotnamespace: js.UndefOr[String] = js.undefined
@@ -43,7 +43,7 @@ trait MemberKeyid extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The parent `Group` resource under which to lookup the `Membership` name. Must be of the form `groups/{group_id}`. */
+  /** Required. The parent `Group` resource under which to lookup the `Membership` name. Must be of the form `groups/{group}`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

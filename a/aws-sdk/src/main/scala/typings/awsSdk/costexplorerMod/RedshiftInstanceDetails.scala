@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RedshiftInstanceDetails extends StObject {
   
   /**
-    * Whether the recommendation is for a current-generation instance.
+    * Determines whether the recommendation is for a current-generation instance.
     */
   var CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined
   
@@ -17,17 +17,17 @@ trait RedshiftInstanceDetails extends StObject {
   var Family: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The type of node that AWS recommends.
+    * The type of node that Amazon Web Services recommends.
     */
   var NodeType: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The AWS Region of the recommended reservation.
+    * The Amazon Web Services Region of the recommended reservation.
     */
   var Region: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * Whether the recommended reservation is size flexible.
+    * Determines whether the recommended reservation is size flexible.
     */
   var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
 }

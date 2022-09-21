@@ -1,7 +1,7 @@
 
 # Scala.js typings for writable-consumable-stream
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 An async stream which can be iterated over using a for-await-of loop.
@@ -10,10 +10,10 @@ An async stream which can be iterated over using a for-await-of loop.
 | ------------------ | :-------------: |
 | Full name          | writable-consumable-stream |
 | Keywords           | async, generator, stream, data, for-await-of |
-| # releases         | 9 |
-| # dependents       | 6 |
-| # downloads        | 89543 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18622.666666666668 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/writable-consumable-stream#readme)

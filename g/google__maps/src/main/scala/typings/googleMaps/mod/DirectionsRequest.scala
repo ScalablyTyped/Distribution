@@ -1,7 +1,6 @@
 package typings.googleMaps.mod
 
 import typings.googleMaps.googleMapsStrings.now
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait DirectionsRequest extends StObject {
     * You can specify either `departure_time` or `arrival_time`, but not both.
     * Note that `arrival_time` must be specified as an integer.
     */
-  var arrival_time: js.UndefOr[Date | Double] = js.undefined
+  var arrival_time: js.UndefOr[js.Date | Double] = js.undefined
   
   /** Indicates that the calculated route(s) should avoid the indicated features. */
   var avoid: js.UndefOr[js.Array[TravelRestriction]] = js.undefined
@@ -36,7 +35,7 @@ trait DirectionsRequest extends StObject {
     *    This option is only available if the request contains a valid API key, or a valid Google Maps APIs Premium Plan client ID
     *    and signature. The `departure_time` must be set to the current time or some time in the future. It cannot be in the past.
     */
-  var departure_time: js.UndefOr[Date | Double | now] = js.undefined
+  var departure_time: js.UndefOr[js.Date | Double | now] = js.undefined
   
   /**
     * The address, textual latitude/longitude value, or place ID to which you wish to calculate directions.
@@ -151,7 +150,7 @@ object DirectionsRequest {
     
     inline def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
-    inline def setArrival_time(value: Date | Double): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
+    inline def setArrival_time(value: js.Date | Double): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
     
     inline def setArrival_timeUndefined: Self = StObject.set(x, "arrival_time", js.undefined)
     
@@ -159,9 +158,9 @@ object DirectionsRequest {
     
     inline def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
     
-    inline def setAvoidVarargs(value: TravelRestriction*): Self = StObject.set(x, "avoid", js.Array(value :_*))
+    inline def setAvoidVarargs(value: TravelRestriction*): Self = StObject.set(x, "avoid", js.Array(value*))
     
-    inline def setDeparture_time(value: Date | Double | now): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
+    inline def setDeparture_time(value: js.Date | Double | now): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
     
     inline def setDeparture_timeUndefined: Self = StObject.set(x, "departure_time", js.undefined)
     
@@ -193,7 +192,7 @@ object DirectionsRequest {
     
     inline def setTransit_modeUndefined: Self = StObject.set(x, "transit_mode", js.undefined)
     
-    inline def setTransit_modeVarargs(value: TransitMode*): Self = StObject.set(x, "transit_mode", js.Array(value :_*))
+    inline def setTransit_modeVarargs(value: TransitMode*): Self = StObject.set(x, "transit_mode", js.Array(value*))
     
     inline def setTransit_routing_preference(value: TransitRoutingPreference): Self = StObject.set(x, "transit_routing_preference", value.asInstanceOf[js.Any])
     
@@ -207,6 +206,6 @@ object DirectionsRequest {
     
     inline def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
     
-    inline def setWaypointsVarargs(value: LatLng*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: LatLng*): Self = StObject.set(x, "waypoints", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAppsListResponse extends StObject {
   
   /**
-    * Information about the specified AWS Firewall Manager applications list.
+    * Information about the specified Firewall Manager applications list.
     */
   var AppsList: js.UndefOr[AppsListData] = js.undefined
   

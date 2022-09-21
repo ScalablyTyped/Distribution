@@ -20,7 +20,7 @@ trait WorkbookFilterCriteria extends StObject {
   
   var operator: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var values: js.UndefOr[NullableOption[Any]] = js.undefined
 }
 object WorkbookFilterCriteria {
   
@@ -67,7 +67,7 @@ object WorkbookFilterCriteria {
     
     inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    inline def setValues(value: NullableOption[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: NullableOption[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesNull: Self = StObject.set(x, "values", null)
     

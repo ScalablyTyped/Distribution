@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "PlacesChildFriendly")
 @js.native
-class PlacesChildFriendly ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class PlacesChildFriendly ()
+  extends Component[SvgIconProps, js.Object, Any]

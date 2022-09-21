@@ -47,7 +47,7 @@ trait FieldSchemaInView
   // e.g. "Menu"
   var css: String
   
-  var fieldRenderer: js.Any
+  var fieldRenderer: Any
   
   /** Specifies if the field contains list item menu.
     Corresponds to ViewFields/FieldRef/@ListItemMenu attribute. Either "TRUE" or "FALSE" and might be missing. */
@@ -74,7 +74,7 @@ object FieldSchemaInView {
     Sortable: String,
     Type: String,
     css: String,
-    fieldRenderer: js.Any,
+    fieldRenderer: Any,
     listItemMenu: String
   ): FieldSchemaInView = {
     val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing.asInstanceOf[js.Any], CalloutMenu = CalloutMenu.asInstanceOf[js.Any], ClassInfo = ClassInfo.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], Explicit = Explicit.asInstanceOf[js.Any], FieldTitle = FieldTitle.asInstanceOf[js.Any], FieldType = FieldType.asInstanceOf[js.Any], Filterable = Filterable.asInstanceOf[js.Any], GridActiveAndReadOnly = GridActiveAndReadOnly.asInstanceOf[js.Any], GroupField = GroupField.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ReadOnly = ReadOnly.asInstanceOf[js.Any], RealFieldName = RealFieldName.asInstanceOf[js.Any], ResultType = ResultType.asInstanceOf[js.Any], Sortable = Sortable.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], fieldRenderer = fieldRenderer.asInstanceOf[js.Any], listItemMenu = listItemMenu.asInstanceOf[js.Any])
@@ -93,7 +93,7 @@ object FieldSchemaInView {
     
     inline def setExplicit(value: String): Self = StObject.set(x, "Explicit", value.asInstanceOf[js.Any])
     
-    inline def setFieldRenderer(value: js.Any): Self = StObject.set(x, "fieldRenderer", value.asInstanceOf[js.Any])
+    inline def setFieldRenderer(value: Any): Self = StObject.set(x, "fieldRenderer", value.asInstanceOf[js.Any])
     
     inline def setFieldTitle(value: String): Self = StObject.set(x, "FieldTitle", value.asInstanceOf[js.Any])
     

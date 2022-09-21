@@ -1,43 +1,44 @@
 package typings.awsSdk.codestarnotificationsMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ClientRequestToken = java.lang.String
+type ClientRequestToken = String
 
-type CreatedTimestamp = typings.std.Date
+type CreatedTimestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BASIC
   - typings.awsSdk.awsSdkStrings.FULL
   - java.lang.String
 */
-type DetailType = typings.awsSdk.codestarnotificationsMod._DetailType | java.lang.String
+type DetailType = _DetailType | String
 
-type EventTypeBatch = js.Array[typings.awsSdk.codestarnotificationsMod.EventTypeSummary]
+type EventTypeBatch = js.Array[EventTypeSummary]
 
-type EventTypeId = java.lang.String
+type EventTypeId = String
 
-type EventTypeIds = js.Array[typings.awsSdk.codestarnotificationsMod.EventTypeId]
+type EventTypeIds = js.Array[EventTypeId]
 
-type EventTypeName = java.lang.String
+type EventTypeName = String
 
-type ForceUnsubscribeAll = scala.Boolean
+type ForceUnsubscribeAll = Boolean
 
-type LastModifiedTimestamp = typings.std.Date
+type LastModifiedTimestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RESOURCE_TYPE
   - typings.awsSdk.awsSdkStrings.SERVICE_NAME
   - java.lang.String
 */
-type ListEventTypesFilterName = typings.awsSdk.codestarnotificationsMod._ListEventTypesFilterName | java.lang.String
+type ListEventTypesFilterName = _ListEventTypesFilterName | String
 
-type ListEventTypesFilterValue = java.lang.String
+type ListEventTypesFilterValue = String
 
-type ListEventTypesFilters = js.Array[typings.awsSdk.codestarnotificationsMod.ListEventTypesFilter]
+type ListEventTypesFilters = js.Array[ListEventTypesFilter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EVENT_TYPE_ID
@@ -46,11 +47,11 @@ type ListEventTypesFilters = js.Array[typings.awsSdk.codestarnotificationsMod.Li
   - typings.awsSdk.awsSdkStrings.TARGET_ADDRESS
   - java.lang.String
 */
-type ListNotificationRulesFilterName = typings.awsSdk.codestarnotificationsMod._ListNotificationRulesFilterName | java.lang.String
+type ListNotificationRulesFilterName = _ListNotificationRulesFilterName | String
 
-type ListNotificationRulesFilterValue = java.lang.String
+type ListNotificationRulesFilterValue = String
 
-type ListNotificationRulesFilters = js.Array[typings.awsSdk.codestarnotificationsMod.ListNotificationRulesFilter]
+type ListNotificationRulesFilters = js.Array[ListNotificationRulesFilter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TARGET_TYPE
@@ -58,48 +59,48 @@ type ListNotificationRulesFilters = js.Array[typings.awsSdk.codestarnotification
   - typings.awsSdk.awsSdkStrings.TARGET_STATUS
   - java.lang.String
 */
-type ListTargetsFilterName = typings.awsSdk.codestarnotificationsMod._ListTargetsFilterName | java.lang.String
+type ListTargetsFilterName = _ListTargetsFilterName | String
 
-type ListTargetsFilterValue = java.lang.String
+type ListTargetsFilterValue = String
 
-type ListTargetsFilters = js.Array[typings.awsSdk.codestarnotificationsMod.ListTargetsFilter]
+type ListTargetsFilters = js.Array[ListTargetsFilter]
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type NotificationRuleArn = java.lang.String
+type NotificationRuleArn = String
 
-type NotificationRuleBatch = js.Array[typings.awsSdk.codestarnotificationsMod.NotificationRuleSummary]
+type NotificationRuleBatch = js.Array[NotificationRuleSummary]
 
-type NotificationRuleCreatedBy = java.lang.String
+type NotificationRuleCreatedBy = String
 
-type NotificationRuleId = java.lang.String
+type NotificationRuleId = String
 
-type NotificationRuleName = java.lang.String
+type NotificationRuleName = String
 
-type NotificationRuleResource = java.lang.String
+type NotificationRuleResource = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type NotificationRuleStatus = typings.awsSdk.codestarnotificationsMod._NotificationRuleStatus | java.lang.String
+type NotificationRuleStatus = _NotificationRuleStatus | String
 
-type ResourceType = java.lang.String
+type ResourceType = String
 
-type ServiceName = java.lang.String
+type ServiceName = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeys = js.Array[typings.awsSdk.codestarnotificationsMod.TagKey]
+type TagKeys = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codestarnotificationsMod.TagValue]
+type Tags = StringDictionary[TagValue]
 
-type TargetAddress = java.lang.String
+type TargetAddress = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -109,17 +110,17 @@ type TargetAddress = java.lang.String
   - typings.awsSdk.awsSdkStrings.DEACTIVATED
   - java.lang.String
 */
-type TargetStatus = typings.awsSdk.codestarnotificationsMod._TargetStatus | java.lang.String
+type TargetStatus = _TargetStatus | String
 
-type TargetType = java.lang.String
+type TargetType = String
 
-type Targets = js.Array[typings.awsSdk.codestarnotificationsMod.Target]
+type Targets = js.Array[Target]
 
-type TargetsBatch = js.Array[typings.awsSdk.codestarnotificationsMod.TargetSummary]
+type TargetsBatch = js.Array[TargetSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-10-15`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.codestarnotificationsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

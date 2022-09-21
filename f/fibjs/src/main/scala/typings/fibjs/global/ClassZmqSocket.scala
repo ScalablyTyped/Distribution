@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassZmqSocket ()
+open class ClassZmqSocket ()
   extends StObject
      with typings.fibjs.ClassZmqSocket {
   def this(`type`: Double) = this()

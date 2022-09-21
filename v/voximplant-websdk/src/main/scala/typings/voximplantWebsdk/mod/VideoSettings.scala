@@ -12,7 +12,7 @@ trait VideoSettings extends StObject {
   /**
     * The exact aspect ratio (width in pixels divided by height in pixels, represented as a double rounded to the tenth decimal place) or aspect ratio range
     */
-  var aspectRatio: js.UndefOr[Double | js.Any] = js.undefined
+  var aspectRatio: js.UndefOr[Double | Any] = js.undefined
   
   /**
     * The origin-unique identifier for the source of the MediaStreamTrack
@@ -22,12 +22,12 @@ trait VideoSettings extends StObject {
   /**
     * This string (or each string, when a list) should be one of the members of VideoFacingModeEnum
     */
-  var facingMode: js.UndefOr[String | js.Any] = js.undefined
+  var facingMode: js.UndefOr[String | Any] = js.undefined
   
   /**
     * The exact frame rate (frames per second) or frame rate range
     */
-  var frameRate: js.UndefOr[Double | js.Any] = js.undefined
+  var frameRate: js.UndefOr[Double | Any] = js.undefined
   
   /**
     * The origin-unique group identifier for the source of the MediaStreamTrack. Two devices have the same group identifier if they belong to the same physical device
@@ -37,7 +37,7 @@ trait VideoSettings extends StObject {
   /**
     * The height or height range, in pixels
     */
-  var height: js.UndefOr[Double | js.Any] = js.undefined
+  var height: js.UndefOr[Double | Any] = js.undefined
   
   /**
     *    Mandatory constraints object
@@ -52,7 +52,7 @@ trait VideoSettings extends StObject {
   /**
     * The width or width range, in pixels
     */
-  var width: js.UndefOr[Double | js.Any] = js.undefined
+  var width: js.UndefOr[Double | Any] = js.undefined
 }
 object VideoSettings {
   
@@ -63,7 +63,7 @@ object VideoSettings {
   
   extension [Self <: VideoSettings](x: Self) {
     
-    inline def setAspectRatio(value: Double | js.Any): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: Double | Any): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
@@ -71,11 +71,11 @@ object VideoSettings {
     
     inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    inline def setFacingMode(value: String | js.Any): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
+    inline def setFacingMode(value: String | Any): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
     
     inline def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
     
-    inline def setFrameRate(value: Double | js.Any): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: Double | Any): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
@@ -83,7 +83,7 @@ object VideoSettings {
     
     inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    inline def setHeight(value: Double | js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -95,7 +95,7 @@ object VideoSettings {
     
     inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    inline def setWidth(value: Double | js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

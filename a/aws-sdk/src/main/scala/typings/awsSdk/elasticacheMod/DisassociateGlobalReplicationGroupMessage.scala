@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisassociateGlobalReplicationGroupMessage extends StObject {
   
   /**
-    * The name of the Global Datastore
+    * The name of the Global datastore
     */
   var GlobalReplicationGroupId: String
   
   /**
-    * The name of the secondary cluster you wish to remove from the Global Datastore
+    * The name of the secondary cluster you wish to remove from the Global datastore
     */
   var ReplicationGroupId: String
   
   /**
-    * The AWS region of secondary cluster you wish to remove from the Global Datastore
+    * The Amazon region of secondary cluster you wish to remove from the Global datastore
     */
   var ReplicationGroupRegion: String
 }

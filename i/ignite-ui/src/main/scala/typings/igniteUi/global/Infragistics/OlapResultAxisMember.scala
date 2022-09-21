@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.OlapResultAxisMember")
 @js.native
-class OlapResultAxisMember ()
+open class OlapResultAxisMember ()
   extends StObject
      with typings.igniteUi.Infragistics.OlapResultAxisMember {
   

@@ -10,10 +10,10 @@ DirectedGraph container class + BFT/DFT/transpose algorithms inspired by Boost C
 | ------------------ | :-------------: |
 | Full name          | jsgraph |
 | Keywords           | graph, vertex, vertices, edge, edges, node, nodes, link, algorithm, depth-first search, breadth-first search, BFS, DFS, data modeling, data, JSON, data semantics, semantic data, container, dependency, topological, transpose, filter, transform, route, model, classify, classification, analysis, sorting, in-memory, database, relational, hyper-relational, design pattern, visit, visitor |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 14399 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12946.0 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/Encapsule/jsgraph)

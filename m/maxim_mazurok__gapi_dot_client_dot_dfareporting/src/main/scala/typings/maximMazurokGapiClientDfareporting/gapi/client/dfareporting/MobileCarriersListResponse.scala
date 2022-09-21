@@ -29,6 +29,6 @@ object MobileCarriersListResponse {
     
     inline def setMobileCarriersUndefined: Self = StObject.set(x, "mobileCarriers", js.undefined)
     
-    inline def setMobileCarriersVarargs(value: MobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value :_*))
+    inline def setMobileCarriersVarargs(value: MobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value*))
   }
 }

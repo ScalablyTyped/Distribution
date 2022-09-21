@@ -48,7 +48,7 @@ object XFrameLoaderQuery {
     acquire: () => Unit,
     getAvailableFilterNames: () => SafeArray[String],
     getLoaderProperties: String => SafeArray[PropertyValue],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     searchFilter: (String, SeqEquiv[PropertyValue]) => String
   ): XFrameLoaderQuery = {

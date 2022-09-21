@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchCatalogObjectsRequest")
 @js.native
-class SearchCatalogObjectsRequest () extends StObject {
+open class SearchCatalogObjectsRequest () extends StObject {
   
   /**
     * Return objects modified after this [timestamp](https://developer.squareup.com/docs/build-basics/working-with-dates),

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.dataviz.ChartPlotArea")
 @js.native
-class ChartPlotArea ()
+open class ChartPlotArea ()
   extends StObject
      with typings.kendoUi.kendo.dataviz.ChartPlotArea

@@ -87,7 +87,7 @@ object Materials {
     
     inline def `setMaterial-purposeUndefined`: Self = StObject.set(x, "material-purpose", js.undefined)
     
-    inline def `setMaterial-purposeVarargs`(value: MaterialPurpose*): Self = StObject.set(x, "material-purpose", js.Array(value :_*))
+    inline def `setMaterial-purposeVarargs`(value: MaterialPurpose*): Self = StObject.set(x, "material-purpose", js.Array(value*))
     
     inline def `setMaterial-rate`(value: Double): Self = StObject.set(x, "material-rate", value.asInstanceOf[js.Any])
     

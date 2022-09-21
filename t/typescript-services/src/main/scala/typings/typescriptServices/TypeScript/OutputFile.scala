@@ -37,7 +37,7 @@ object OutputFile {
     
     inline def setSourceMapEntries(value: js.Array[SourceMapEntry]): Self = StObject.set(x, "sourceMapEntries", value.asInstanceOf[js.Any])
     
-    inline def setSourceMapEntriesVarargs(value: SourceMapEntry*): Self = StObject.set(x, "sourceMapEntries", js.Array(value :_*))
+    inline def setSourceMapEntriesVarargs(value: SourceMapEntry*): Self = StObject.set(x, "sourceMapEntries", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

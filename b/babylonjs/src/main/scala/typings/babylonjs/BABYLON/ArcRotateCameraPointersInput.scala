@@ -9,11 +9,25 @@ trait ArcRotateCameraPointersInput
   extends StObject
      with BaseCameraPointersInput {
   
-  /* private */ var _isPanClick: js.Any = js.native
+  /**
+    * Move camera from multi touch panning positions.
+    * @param previousMultiTouchPanPosition
+    * @param multiTouchPanPosition
+    */
+  /* private */ var _computeMultiTouchPanning: Any = js.native
   
-  /* private */ var _isPinching: js.Any = js.native
+  /**
+    * Move camera from pinch zoom distances.
+    * @param previousPinchSquaredDistance
+    * @param pinchSquaredDistance
+    */
+  /* private */ var _computePinchZoom: Any = js.native
   
-  /* private */ var _twoFingerActivityCount: js.Any = js.native
+  /* private */ var _isPanClick: Any = js.native
+  
+  /* private */ var _isPinching: Any = js.native
+  
+  /* private */ var _twoFingerActivityCount: Any = js.native
   
   /**
     * Defines the pointer angular sensibility  along the X axis or how fast is
@@ -45,6 +59,17 @@ trait ArcRotateCameraPointersInput
   var multiTouchPanning: Boolean = js.native
   
   /**
+    * Called each time a new POINTERUP event occurs. Ie, for each button
+    * release.
+    */
+  def onButtonUp(): Unit = js.native
+  
+  /**
+    * Called on pointer POINTERDOUBLETAP event.
+    */
+  def onDoubleTap(): Unit = js.native
+  
+  /**
     * Defines the pointer panning sensibility or how fast is the camera moving.
     */
   var panningSensibility: Double = js.native
@@ -66,6 +91,11 @@ trait ArcRotateCameraPointersInput
     * Defines the pointer pinch precision or how fast is the camera zooming.
     */
   var pinchPrecision: Double = js.native
+  
+  /**
+    * Defines whether zoom (2 fingers pinch) is enabled through multitouch
+    */
+  var pinchZoom: Boolean = js.native
   
   /**
     * When useNaturalPinchZoom is true, multi touch zoom will zoom in such

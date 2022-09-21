@@ -4,10 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about the target of activity.
-  */
 trait SchemaTarget extends StObject {
+  
+  /**
+    * The target is a shared drive.
+    */
+  var drive: js.UndefOr[SchemaDrive] = js.undefined
   
   /**
     * The target is a Drive item.
@@ -20,7 +22,7 @@ trait SchemaTarget extends StObject {
   var fileComment: js.UndefOr[SchemaFileComment] = js.undefined
   
   /**
-    * The target is a Team Drive.
+    * This field is deprecated; please use the `drive` field instead.
     */
   var teamDrive: js.UndefOr[SchemaTeamDrive] = js.undefined
 }
@@ -33,9 +35,13 @@ object SchemaTarget {
   
   extension [Self <: SchemaTarget](x: Self) {
     
+    inline def setDrive(value: SchemaDrive): Self = StObject.set(x, "drive", value.asInstanceOf[js.Any])
+    
     inline def setDriveItem(value: SchemaDriveItem): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
     
     inline def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
+    
+    inline def setDriveUndefined: Self = StObject.set(x, "drive", js.undefined)
     
     inline def setFileComment(value: SchemaFileComment): Self = StObject.set(x, "fileComment", value.asInstanceOf[js.Any])
     

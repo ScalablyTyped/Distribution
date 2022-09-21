@@ -22,7 +22,7 @@ trait IRowConfig extends StObject {
   
   var selectWithCheckboxOnly: Boolean
   
-  var selectedItems: js.Array[js.Any]
+  var selectedItems: js.Array[Any]
 }
 object IRowConfig {
   
@@ -35,7 +35,7 @@ object IRowConfig {
     rowClasses: js.Array[String],
     rowHeight: Double,
     selectWithCheckboxOnly: Boolean,
-    selectedItems: js.Array[js.Any]
+    selectedItems: js.Array[Any]
   ): IRowConfig = {
     val __obj = js.Dynamic.literal(afterSelectionChangeCallback = js.Any.fromFunction0(afterSelectionChangeCallback), beforeSelectionChangeCallback = js.Any.fromFunction0(beforeSelectionChangeCallback), enableCellSelection = enableCellSelection.asInstanceOf[js.Any], enableRowSelection = enableRowSelection.asInstanceOf[js.Any], jqueryUITheme = jqueryUITheme.asInstanceOf[js.Any], rowClasses = rowClasses.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any], selectWithCheckboxOnly = selectWithCheckboxOnly.asInstanceOf[js.Any], selectedItems = selectedItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRowConfig]
@@ -55,14 +55,14 @@ object IRowConfig {
     
     inline def setRowClasses(value: js.Array[String]): Self = StObject.set(x, "rowClasses", value.asInstanceOf[js.Any])
     
-    inline def setRowClassesVarargs(value: String*): Self = StObject.set(x, "rowClasses", js.Array(value :_*))
+    inline def setRowClassesVarargs(value: String*): Self = StObject.set(x, "rowClasses", js.Array(value*))
     
     inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     inline def setSelectWithCheckboxOnly(value: Boolean): Self = StObject.set(x, "selectWithCheckboxOnly", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
   }
 }

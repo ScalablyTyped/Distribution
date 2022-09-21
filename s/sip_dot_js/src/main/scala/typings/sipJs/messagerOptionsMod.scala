@@ -28,7 +28,7 @@ object messagerOptionsMod {
       
       inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value*))
       
       inline def setParams(value: FromDisplayName): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

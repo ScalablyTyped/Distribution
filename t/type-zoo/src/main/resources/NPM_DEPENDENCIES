@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "type-zoo" : "3.1.1"
+      "type-zoo" : "3.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "type-zoo" : "3.1.1"
+      "type-zoo" : "3.4.1"
     }
   ],
   "compile-devDependencies" : [

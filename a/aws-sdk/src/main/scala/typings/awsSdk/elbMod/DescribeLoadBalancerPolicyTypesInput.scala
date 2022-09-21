@@ -24,6 +24,6 @@ object DescribeLoadBalancerPolicyTypesInput {
     
     inline def setPolicyTypeNamesUndefined: Self = StObject.set(x, "PolicyTypeNames", js.undefined)
     
-    inline def setPolicyTypeNamesVarargs(value: PolicyTypeName*): Self = StObject.set(x, "PolicyTypeNames", js.Array(value :_*))
+    inline def setPolicyTypeNamesVarargs(value: PolicyTypeName*): Self = StObject.set(x, "PolicyTypeNames", js.Array(value*))
   }
 }

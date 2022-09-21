@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dom-serializer" : "0.2.2"
+      "dom-serializer" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "dom-serializer" : "0.2.2"
+      "dom-serializer" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

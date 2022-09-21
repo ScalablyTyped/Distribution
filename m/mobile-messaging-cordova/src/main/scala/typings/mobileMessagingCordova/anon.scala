@@ -25,7 +25,7 @@ object anon {
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setActionsVarargs(value: AuthenticationRequired*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: AuthenticationRequired*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
@@ -166,7 +166,7 @@ object anon {
       
       inline def setNotificationTypesUndefined: Self = StObject.set(x, "notificationTypes", js.undefined)
       
-      inline def setNotificationTypesVarargs(value: String*): Self = StObject.set(x, "notificationTypes", js.Array(value :_*))
+      inline def setNotificationTypesVarargs(value: String*): Self = StObject.set(x, "notificationTypes", js.Array(value*))
     }
   }
   
@@ -193,6 +193,23 @@ object anon {
       inline def setNotificationAccentColor(value: String): Self = StObject.set(x, "notificationAccentColor", value.asInstanceOf[js.Any])
       
       inline def setNotificationIcon(value: String): Self = StObject.set(x, "notificationIcon", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ShowModally extends StObject {
+    
+    var showModally: Boolean
+  }
+  object ShowModally {
+    
+    inline def apply(showModally: Boolean): ShowModally = {
+      val __obj = js.Dynamic.literal(showModally = showModally.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ShowModally]
+    }
+    
+    extension [Self <: ShowModally](x: Self) {
+      
+      inline def setShowModally(value: Boolean): Self = StObject.set(x, "showModally", value.asInstanceOf[js.Any])
     }
   }
 }

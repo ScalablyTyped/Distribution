@@ -2,8 +2,6 @@ package typings.vue2Editor
 
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Event
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,34 +16,50 @@ object mod extends Shortcut {
   @js.native
   val VueEditor: VueEditorConstructor = js.native
   
-  @js.native
-  trait VueEditorConstructor
-    extends StObject
-       with VueConstructor[Vue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any */ trait VueEditorConstructor extends StObject {
     
-    def data(): VueEditorData = js.native
+    def data(): VueEditorData
     
-    var methods: VueEditorMethods = js.native
+    var methods: VueEditorMethods
     
-    var props: VueEditorProps = js.native
+    var props: VueEditorProps
     
-    var watch: VueEditorWatch = js.native
+    var watch: VueEditorWatch
+  }
+  object VueEditorConstructor {
+    
+    inline def apply(data: () => VueEditorData, methods: VueEditorMethods, props: VueEditorProps, watch: VueEditorWatch): VueEditorConstructor = {
+      val __obj = js.Dynamic.literal(data = js.Any.fromFunction0(data), methods = methods.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any])
+      __obj.asInstanceOf[VueEditorConstructor]
+    }
+    
+    extension [Self <: VueEditorConstructor](x: Self) {
+      
+      inline def setData(value: () => VueEditorData): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      
+      inline def setMethods(value: VueEditorMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: VueEditorProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setWatch(value: VueEditorWatch): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    }
   }
   
   trait VueEditorData extends StObject {
     
-    var quill: js.Any
+    var quill: Any
   }
   object VueEditorData {
     
-    inline def apply(quill: js.Any): VueEditorData = {
+    inline def apply(quill: Any): VueEditorData = {
       val __obj = js.Dynamic.literal(quill = quill.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueEditorData]
     }
     
     extension [Self <: VueEditorData](x: Self) {
       
-      inline def setQuill(value: js.Any): Self = StObject.set(x, "quill", value.asInstanceOf[js.Any])
+      inline def setQuill(value: Any): Self = StObject.set(x, "quill", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,21 +67,21 @@ object mod extends Shortcut {
     
     def checkForCustomImageHandler(): Unit
     
-    def customImageHandler(image: js.Any, callback: js.Any): Unit
+    def customImageHandler(image: Any, callback: Any): Unit
     
     def emitImageInfo($event: Event): Unit
     
     def handleInitialContent(): Unit
     
-    def handleSelectionChange(range: js.Any, oldRange: js.Any): Unit
+    def handleSelectionChange(range: Any, oldRange: Any): Unit
     
     def handleTextChange(): Unit
     
     def initializeEditor(): Unit
     
-    def listenForEditorEvent(`type`: js.Any): Unit
+    def listenForEditorEvent(`type`: Any): Unit
     
-    def prepareEditorConfig(editorConfig: js.Any): Unit
+    def prepareEditorConfig(editorConfig: Any): Unit
     
     def registerEditorEventListeners(): Unit
     
@@ -83,14 +97,14 @@ object mod extends Shortcut {
     
     inline def apply(
       checkForCustomImageHandler: () => Unit,
-      customImageHandler: (js.Any, js.Any) => Unit,
+      customImageHandler: (Any, Any) => Unit,
       emitImageInfo: Event => Unit,
       handleInitialContent: () => Unit,
-      handleSelectionChange: (js.Any, js.Any) => Unit,
+      handleSelectionChange: (Any, Any) => Unit,
       handleTextChange: () => Unit,
       initializeEditor: () => Unit,
-      listenForEditorEvent: js.Any => Unit,
-      prepareEditorConfig: js.Any => Unit,
+      listenForEditorEvent: Any => Unit,
+      prepareEditorConfig: Any => Unit,
       registerEditorEventListeners: () => Unit,
       registerPrototypes: () => Unit,
       setModules: () => Unit,
@@ -105,21 +119,21 @@ object mod extends Shortcut {
       
       inline def setCheckForCustomImageHandler(value: () => Unit): Self = StObject.set(x, "checkForCustomImageHandler", js.Any.fromFunction0(value))
       
-      inline def setCustomImageHandler(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "customImageHandler", js.Any.fromFunction2(value))
+      inline def setCustomImageHandler(value: (Any, Any) => Unit): Self = StObject.set(x, "customImageHandler", js.Any.fromFunction2(value))
       
       inline def setEmitImageInfo(value: Event => Unit): Self = StObject.set(x, "emitImageInfo", js.Any.fromFunction1(value))
       
       inline def setHandleInitialContent(value: () => Unit): Self = StObject.set(x, "handleInitialContent", js.Any.fromFunction0(value))
       
-      inline def setHandleSelectionChange(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "handleSelectionChange", js.Any.fromFunction2(value))
+      inline def setHandleSelectionChange(value: (Any, Any) => Unit): Self = StObject.set(x, "handleSelectionChange", js.Any.fromFunction2(value))
       
       inline def setHandleTextChange(value: () => Unit): Self = StObject.set(x, "handleTextChange", js.Any.fromFunction0(value))
       
       inline def setInitializeEditor(value: () => Unit): Self = StObject.set(x, "initializeEditor", js.Any.fromFunction0(value))
       
-      inline def setListenForEditorEvent(value: js.Any => Unit): Self = StObject.set(x, "listenForEditorEvent", js.Any.fromFunction1(value))
+      inline def setListenForEditorEvent(value: Any => Unit): Self = StObject.set(x, "listenForEditorEvent", js.Any.fromFunction1(value))
       
-      inline def setPrepareEditorConfig(value: js.Any => Unit): Self = StObject.set(x, "prepareEditorConfig", js.Any.fromFunction1(value))
+      inline def setPrepareEditorConfig(value: Any => Unit): Self = StObject.set(x, "prepareEditorConfig", js.Any.fromFunction1(value))
       
       inline def setRegisterEditorEventListeners(value: () => Unit): Self = StObject.set(x, "registerEditorEventListeners", js.Any.fromFunction0(value))
       
@@ -137,15 +151,15 @@ object mod extends Shortcut {
     
     var disabled: Boolean
     
-    var editorOptions: js.Any
+    var editorOptions: Any
     
-    var editorToolbar: js.Array[js.Any]
+    var editorToolbar: js.Array[Any]
     
     var id: String
     
     var placeholder: String
     
-    var useCustomImageHandler: js.Any
+    var useCustomImageHandler: Any
     
     var useMarkdownShortcuts: Boolean
     
@@ -155,11 +169,11 @@ object mod extends Shortcut {
     
     inline def apply(
       disabled: Boolean,
-      editorOptions: js.Any,
-      editorToolbar: js.Array[js.Any],
+      editorOptions: Any,
+      editorToolbar: js.Array[Any],
       id: String,
       placeholder: String,
-      useCustomImageHandler: js.Any,
+      useCustomImageHandler: Any,
       useMarkdownShortcuts: Boolean,
       value: String
     ): VueEditorProps = {
@@ -171,17 +185,17 @@ object mod extends Shortcut {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setEditorOptions(value: js.Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
+      inline def setEditorOptions(value: Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
       
-      inline def setEditorToolbar(value: js.Array[js.Any]): Self = StObject.set(x, "editorToolbar", value.asInstanceOf[js.Any])
+      inline def setEditorToolbar(value: js.Array[Any]): Self = StObject.set(x, "editorToolbar", value.asInstanceOf[js.Any])
       
-      inline def setEditorToolbarVarargs(value: js.Any*): Self = StObject.set(x, "editorToolbar", js.Array(value :_*))
+      inline def setEditorToolbarVarargs(value: Any*): Self = StObject.set(x, "editorToolbar", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      inline def setUseCustomImageHandler(value: js.Any): Self = StObject.set(x, "useCustomImageHandler", value.asInstanceOf[js.Any])
+      inline def setUseCustomImageHandler(value: Any): Self = StObject.set(x, "useCustomImageHandler", value.asInstanceOf[js.Any])
       
       inline def setUseMarkdownShortcuts(value: Boolean): Self = StObject.set(x, "useMarkdownShortcuts", value.asInstanceOf[js.Any])
       
@@ -193,11 +207,11 @@ object mod extends Shortcut {
     
     def disabled(status: Boolean): Unit
     
-    def value(`val`: js.Any): Unit
+    def value(`val`: Any): Unit
   }
   object VueEditorWatch {
     
-    inline def apply(disabled: Boolean => Unit, value: js.Any => Unit): VueEditorWatch = {
+    inline def apply(disabled: Boolean => Unit, value: Any => Unit): VueEditorWatch = {
       val __obj = js.Dynamic.literal(disabled = js.Any.fromFunction1(disabled), value = js.Any.fromFunction1(value))
       __obj.asInstanceOf[VueEditorWatch]
     }
@@ -206,7 +220,7 @@ object mod extends Shortcut {
       
       inline def setDisabled(value: Boolean => Unit): Self = StObject.set(x, "disabled", js.Any.fromFunction1(value))
       
-      inline def setValue(value: js.Any => Unit): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setValue(value: Any => Unit): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
     }
   }
   

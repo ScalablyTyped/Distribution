@@ -38,7 +38,7 @@ object Principal {
     
     inline def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
     
-    inline def setRolesVarargs(value: PermissionInfo*): Self = StObject.set(x, "Roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: PermissionInfo*): Self = StObject.set(x, "Roles", js.Array(value*))
     
     inline def setType(value: PrincipalType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

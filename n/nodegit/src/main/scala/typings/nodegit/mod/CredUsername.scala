@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "CredUsername")
 @js.native
-class CredUsername ()
+open class CredUsername ()
   extends typings.nodegit.credUsernameMod.CredUsername

@@ -1,6 +1,5 @@
 package typings.tsMockito
 
-import typings.std.PropertyDescriptor
 import typings.tsMockito.matcherMod.Matcher
 import typings.tsMockito.methodActionMod.MethodAction
 import typings.tsMockito.methodStubMod.MethodStub
@@ -13,59 +12,59 @@ object mockMod {
   
   @JSImport("ts-mockito/lib/Mock", "Mocker")
   @js.native
-  class Mocker protected () extends StObject {
-    def this(clazz: js.Any) = this()
-    def this(clazz: js.Any, instance: js.Any) = this()
+  open class Mocker protected () extends StObject {
+    def this(clazz: Any) = this()
+    def this(clazz: Any, instance: Any) = this()
     
-    /* private */ var clazz: js.Any = js.native
+    /* private */ var clazz: Any = js.native
     
-    /* protected */ def createActionListener(key: String): js.Function0[js.Any] = js.native
+    /* protected */ def createActionListener(key: String): js.Function0[Any] = js.native
     
-    def createCatchAllHandlerForRemainingPropertiesWithoutGetters(): js.Any = js.native
+    def createCatchAllHandlerForRemainingPropertiesWithoutGetters(): Any = js.native
     
-    /* protected */ def createInstanceActionListener(key: String, prototype: js.Any): Unit = js.native
+    /* protected */ def createInstanceActionListener(key: String, prototype: Any): Unit = js.native
     
-    /* protected */ def createInstancePropertyDescriptorListener(key: String, descriptor: PropertyDescriptor, prototype: js.Any): Unit = js.native
+    /* protected */ def createInstancePropertyDescriptorListener(key: String, descriptor: js.PropertyDescriptor, prototype: Any): Unit = js.native
     
-    /* private */ var createMethodStub: js.Any = js.native
+    /* private */ var createMethodStub: Any = js.native
     
-    /* private */ var createMethodToStub: js.Any = js.native
+    /* private */ var createMethodToStub: Any = js.native
     
-    /* private */ var createPropertyStub: js.Any = js.native
+    /* private */ var createPropertyStub: Any = js.native
     
-    /* private */ var excludedPropertyNames: js.Any = js.native
+    /* private */ var excludedPropertyNames: Any = js.native
     
     def getActionsByName(name: String): js.Array[MethodAction] = js.native
     
     def getAllMatchingActions(methodName: String, matchers: js.Array[Matcher]): js.Array[MethodAction] = js.native
     
-    /* protected */ def getEmptyMethodStub(key: String, args: js.Array[js.Any]): MethodStub = js.native
+    /* protected */ def getEmptyMethodStub(key: String, args: js.Array[Any]): MethodStub = js.native
     
     def getFirstMatchingAction(methodName: String, matchers: js.Array[Matcher]): MethodAction = js.native
     
-    /* private */ var getMethodStub: js.Any = js.native
+    /* private */ var getMethodStub: Any = js.native
     
-    def getMock(): js.Any = js.native
+    def getMock(): Any = js.native
     
-    var instance: js.Any = js.native
+    var instance: Any = js.native
     
-    /* private */ var methodActions: js.Any = js.native
+    /* private */ var methodActions: Any = js.native
     
-    /* private */ var methodStubCollections: js.Any = js.native
+    /* private */ var methodStubCollections: Any = js.native
     
-    var mock: js.Any = js.native
+    var mock: Any = js.native
     
-    /* private */ var mockableFunctionsFinder: js.Any = js.native
+    /* private */ var mockableFunctionsFinder: Any = js.native
     
     /* protected */ var objectInspector: ObjectInspector = js.native
     
-    /* private */ var objectPropertyCodeRetriever: js.Any = js.native
+    /* private */ var objectPropertyCodeRetriever: Any = js.native
     
-    /* private */ var processClassCode: js.Any = js.native
+    /* private */ var processClassCode: Any = js.native
     
-    /* private */ var processFunctionsCode: js.Any = js.native
+    /* private */ var processFunctionsCode: Any = js.native
     
-    /* protected */ def processProperties(`object`: js.Any): Unit = js.native
+    /* protected */ def processProperties(`object`: Any): Unit = js.native
     
     def reset(): Unit = js.native
     

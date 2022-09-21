@@ -43,7 +43,7 @@ object LViewDebugRange {
     
     inline def setContent(value: js.Array[LViewDebugRangeContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentVarargs(value: LViewDebugRangeContent*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: LViewDebugRangeContent*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

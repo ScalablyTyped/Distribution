@@ -1,7 +1,7 @@
 
 # Scala.js typings for inquirer
 
-Typings are for version 7.3
+Typings are for version 9.0
 
 ## Library description:
 A collection of common interactive command line user interfaces.
@@ -9,11 +9,11 @@ A collection of common interactive command line user interfaces.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | inquirer |
-| Keywords           | command, prompt, stdin, cli, tty, menu |
-| # releases         | 21 |
-| # dependents       | 22653 |
-| # downloads        | 1151738427 |
-| # stars            | 443 |
+| Keywords           | answer, answers, ask, base, cli, cli, command, command-line, confirm, enquirer, generate, generator, hyper, input, inquire, inquirer, interface, iterm, javascript, menu, node, nodejs, prompt, promptly, prompts, question, readline, scaffold, scaffolder, scaffolding, stdin, stdout, terminal, tty, ui, yeoman, yo, zsh |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0817918233333333E8 |
+| # stars            | 16841.0 |
 
 ## Links
 - [Homepage](https://github.com/SBoudrias/Inquirer.js#readme)

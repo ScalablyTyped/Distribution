@@ -24,6 +24,6 @@ object DeleteRemediationExceptionsResponse {
     
     inline def setFailedBatchesUndefined: Self = StObject.set(x, "FailedBatches", js.undefined)
     
-    inline def setFailedBatchesVarargs(value: FailedDeleteRemediationExceptionsBatch*): Self = StObject.set(x, "FailedBatches", js.Array(value :_*))
+    inline def setFailedBatchesVarargs(value: FailedDeleteRemediationExceptionsBatch*): Self = StObject.set(x, "FailedBatches", js.Array(value*))
   }
 }

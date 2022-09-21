@@ -121,7 +121,7 @@ object AllUsers {
     
     inline def setStateFilterUndefined: Self = StObject.set(x, "stateFilter", js.undefined)
     
-    inline def setStateFilterVarargs(value: String*): Self = StObject.set(x, "stateFilter", js.Array(value :_*))
+    inline def setStateFilterVarargs(value: String*): Self = StObject.set(x, "stateFilter", js.Array(value*))
     
     inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     

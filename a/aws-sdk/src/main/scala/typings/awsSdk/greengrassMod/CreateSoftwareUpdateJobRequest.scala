@@ -56,6 +56,6 @@ object CreateSoftwareUpdateJobRequest {
     
     inline def setUpdateTargetsOperatingSystem(value: UpdateTargetsOperatingSystem): Self = StObject.set(x, "UpdateTargetsOperatingSystem", value.asInstanceOf[js.Any])
     
-    inline def setUpdateTargetsVarargs(value: string*): Self = StObject.set(x, "UpdateTargets", js.Array(value :_*))
+    inline def setUpdateTargetsVarargs(value: string*): Self = StObject.set(x, "UpdateTargets", js.Array(value*))
   }
 }

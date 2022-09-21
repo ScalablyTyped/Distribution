@@ -30,7 +30,7 @@ object ModifierInvocation {
     
     inline def setArgumentsNull: Self = StObject.set(x, "arguments", null)
     
-    inline def setArgumentsVarargs(value: Expression*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Expression*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

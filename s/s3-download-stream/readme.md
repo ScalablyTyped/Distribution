@@ -11,14 +11,11 @@ s3 download streams
 | Full name          | s3-download-stream |
 | Keywords           | s3 |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 536305 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 23912.0 |
+| # stars            | 17.0 |
 
 ## Links
-- [Homepage](https://github.com/jb55/s3-download-stream#readme)
-- [Bugs](https://github.com/jb55/s3-download-stream/issues)
-- [Repository](https://github.com/jb55/s3-download-stream)
 - [Npm](https://www.npmjs.com/package/s3-download-stream)
     
 

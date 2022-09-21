@@ -11,7 +11,7 @@ trait Media extends StObject {
   var activeTrackIds: js.Array[Double]
   
   /**
-    * @param {function(boolean)} listener
+    * @param listener
     */
   def addUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit
   
@@ -23,9 +23,9 @@ trait Media extends StObject {
   var customData: js.Object
   
   /**
-    * @param {!chrome.cast.media.EditTracksInfoRequest} editTracksInfoRequest
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param editTracksInfoRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def editTracksInfo(
     editTracksInfoRequest: EditTracksInfoRequest,
@@ -34,15 +34,15 @@ trait Media extends StObject {
   ): Unit
   
   /**
-    * @return {number}
+    * @return
     * @suppress {deprecated} Uses currentTime member to compute estimated time.
     */
   def getEstimatedTime(): Double
   
   /**
-    * @param {chrome.cast.media.GetStatusRequest} getStatusRequest
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param getStatusRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def getStatus(
     getStatusRequest: GetStatusRequest,
@@ -63,9 +63,9 @@ trait Media extends StObject {
   var mediaSessionId: Double
   
   /**
-    * @param {chrome.cast.media.PauseRequest} pauseRequest
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param pauseRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def pause(
     pauseRequest: PauseRequest,
@@ -74,9 +74,9 @@ trait Media extends StObject {
   ): Unit
   
   /**
-    * @param {chrome.cast.media.PlayRequest} playRequest
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param playRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def play(
     playRequest: PlayRequest,
@@ -91,9 +91,9 @@ trait Media extends StObject {
   var preloadedItemId: Double
   
   /**
-    * @param {!chrome.cast.media.QueueItem} item
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param item
+    * @param successCallback
+    * @param errorCallback
     */
   def queueAppendItem(
     item: QueueItem,
@@ -102,9 +102,9 @@ trait Media extends StObject {
   ): Unit
   
   /**
-    * @param {!chrome.cast.media.QueueInsertItemsRequest} queueInsertItemsRequest
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param queueInsertItemsRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def queueInsertItems(
     queueInsertItemsRequest: QueueInsertItemsRequest,
@@ -113,17 +113,17 @@ trait Media extends StObject {
   ): Unit
   
   /**
-    * @param {!number} itemId
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param itemId
+    * @param successCallback
+    * @param errorCallback
     */
   def queueJumpToItem(itemId: Double, successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit
   
   /**
-    * @param {!number} itemId
-    * @param {!number} newIndex
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param itemId
+    * @param newIndex
+    * @param successCallback
+    * @param errorCallback
     */
   def queueMoveItemToNewIndex(
     itemId: Double,
@@ -133,28 +133,28 @@ trait Media extends StObject {
   ): Unit
   
   /**
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param successCallback
+    * @param errorCallback
     */
   def queueNext(successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit
   
   /**
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param successCallback
+    * @param errorCallback
     */
   def queuePrev(successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit
   
   /**
-    * @param {!number} itemId
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param itemId
+    * @param successCallback
+    * @param errorCallback
     */
   def queueRemoveItem(itemId: Double, successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit
   
   /**
-    * @param {!chrome.cast.media.QueueReorderItemsRequest} queueReorderItemsRequest
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param queueReorderItemsRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def queueReorderItems(
     queueReorderItemsRequest: QueueReorderItemsRequest,
@@ -163,9 +163,9 @@ trait Media extends StObject {
   ): Unit
   
   /**
-    * @param {!chrome.cast.media.RepeatMode} repeatMode
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param repeatMode
+    * @param successCallback
+    * @param errorCallback
     */
   def queueSetRepeatMode(
     repeatMode: RepeatMode,
@@ -174,9 +174,9 @@ trait Media extends StObject {
   ): Unit
   
   /**
-    * @param {!chrome.cast.media.QueueUpdateItemsRequest} queueUpdateItemsRequest
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param queueUpdateItemsRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def queueUpdateItems(
     queueUpdateItemsRequest: QueueUpdateItemsRequest,
@@ -185,16 +185,16 @@ trait Media extends StObject {
   ): Unit
   
   /**
-    * @param {function(boolean)} listener
+    * @param listener
     */
   def removeUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit
   
   var repeatMode: RepeatMode
   
   /**
-    * @param {!chrome.cast.media.SeekRequest} seekRequest
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param seekRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def seek(
     seekRequest: SeekRequest,
@@ -205,9 +205,9 @@ trait Media extends StObject {
   var sessionId: String
   
   /**
-    * @param {!chrome.cast.media.VolumeRequest} volumeRequest
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param volumeRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def setVolume(
     volumeRequest: VolumeRequest,
@@ -216,9 +216,9 @@ trait Media extends StObject {
   ): Unit
   
   /**
-    * @param {chrome.cast.media.StopRequest} stopRequest
-    * @param {function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param stopRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def stop(
     stopRequest: StopRequest,
@@ -229,8 +229,8 @@ trait Media extends StObject {
   var supportedMediaCommands: js.Array[MediaCommand]
   
   /**
-    * @param {!chrome.cast.media.MediaCommand} command
-    * @return {boolean}
+    * @param command
+    * @return whether or not the receiver supports the given chrome.cast.media.MediaCommand
     */
   def supportsCommand(command: MediaCommand): Boolean
   
@@ -284,7 +284,7 @@ object Media {
     
     inline def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
     
-    inline def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value :_*))
+    inline def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value*))
     
     inline def setAddUpdateListener(value: js.Function1[/* isAlive */ Boolean, Unit] => Unit): Self = StObject.set(x, "addUpdateListener", js.Any.fromFunction1(value))
     
@@ -306,7 +306,7 @@ object Media {
     
     inline def setItems(value: js.Array[QueueItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: QueueItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: QueueItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLiveSeekableRange(value: LiveSeekableRange): Self = StObject.set(x, "liveSeekableRange", value.asInstanceOf[js.Any])
     
@@ -362,7 +362,7 @@ object Media {
     
     inline def setSupportedMediaCommands(value: js.Array[MediaCommand]): Self = StObject.set(x, "supportedMediaCommands", value.asInstanceOf[js.Any])
     
-    inline def setSupportedMediaCommandsVarargs(value: MediaCommand*): Self = StObject.set(x, "supportedMediaCommands", js.Array(value :_*))
+    inline def setSupportedMediaCommandsVarargs(value: MediaCommand*): Self = StObject.set(x, "supportedMediaCommands", js.Array(value*))
     
     inline def setSupportsCommand(value: MediaCommand => Boolean): Self = StObject.set(x, "supportsCommand", js.Any.fromFunction1(value))
     

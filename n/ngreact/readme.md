@@ -10,10 +10,10 @@ Use React Components in Angular
 | ------------------ | :-------------: |
 | Full name          | ngreact |
 | Keywords           | angularjs, angular, react, ngReact |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 3586674 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 96209.33333333333 |
+| # stars            | 2627.0 |
 
 ## Links
 - [Homepage](https://github.com/davidchang/ngReact#readme)

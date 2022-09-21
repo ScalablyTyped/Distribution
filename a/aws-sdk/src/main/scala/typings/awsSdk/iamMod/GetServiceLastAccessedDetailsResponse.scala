@@ -19,12 +19,12 @@ trait GetServiceLastAccessedDetailsResponse extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the generated report job was completed or failed. This field is null if the job is still in progress, as indicated by a job status value of IN_PROGRESS.
     */
-  var JobCompletionDate: dateType
+  var JobCompletionDate: js.Date
   
   /**
     * The date and time, in ISO 8601 date-time format, when the report job was created.
     */
-  var JobCreationDate: dateType
+  var JobCreationDate: js.Date
   
   /**
     * The status of the job.
@@ -49,8 +49,8 @@ trait GetServiceLastAccessedDetailsResponse extends StObject {
 object GetServiceLastAccessedDetailsResponse {
   
   inline def apply(
-    JobCompletionDate: dateType,
-    JobCreationDate: dateType,
+    JobCompletionDate: js.Date,
+    JobCreationDate: js.Date,
     JobStatus: jobStatusType,
     ServicesLastAccessed: ServicesLastAccessed
   ): GetServiceLastAccessedDetailsResponse = {
@@ -68,9 +68,9 @@ object GetServiceLastAccessedDetailsResponse {
     
     inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    inline def setJobCompletionDate(value: dateType): Self = StObject.set(x, "JobCompletionDate", value.asInstanceOf[js.Any])
+    inline def setJobCompletionDate(value: js.Date): Self = StObject.set(x, "JobCompletionDate", value.asInstanceOf[js.Any])
     
-    inline def setJobCreationDate(value: dateType): Self = StObject.set(x, "JobCreationDate", value.asInstanceOf[js.Any])
+    inline def setJobCreationDate(value: js.Date): Self = StObject.set(x, "JobCreationDate", value.asInstanceOf[js.Any])
     
     inline def setJobStatus(value: jobStatusType): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
@@ -84,6 +84,6 @@ object GetServiceLastAccessedDetailsResponse {
     
     inline def setServicesLastAccessed(value: ServicesLastAccessed): Self = StObject.set(x, "ServicesLastAccessed", value.asInstanceOf[js.Any])
     
-    inline def setServicesLastAccessedVarargs(value: ServiceLastAccessed*): Self = StObject.set(x, "ServicesLastAccessed", js.Array(value :_*))
+    inline def setServicesLastAccessedVarargs(value: ServiceLastAccessed*): Self = StObject.set(x, "ServicesLastAccessed", js.Array(value*))
   }
 }

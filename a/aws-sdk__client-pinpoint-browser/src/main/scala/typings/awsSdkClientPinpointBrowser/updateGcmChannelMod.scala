@@ -8,5 +8,5 @@ object updateGcmChannelMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/UpdateGcmChannel", "UpdateGcmChannel")
   @js.native
-  val UpdateGcmChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val UpdateGcmChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

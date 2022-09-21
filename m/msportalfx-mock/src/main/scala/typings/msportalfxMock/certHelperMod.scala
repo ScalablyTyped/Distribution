@@ -20,6 +20,6 @@ object certHelperMod {
       *
       * @return The generated localhost certificate/
       */
-    inline def createLocalHostSSLOptions(): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalHostSSLOptions")().asInstanceOf[Promise[js.Any]]
+    inline def createLocalHostSSLOptions(): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalHostSSLOptions")().asInstanceOf[Promise[Any]]
   }
 }

@@ -7,12 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `14` extends StObject {
   
   /**
-    * Color of the area.
+    * Specify the left-top point.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-map.data.itemStyle.areaColor
+    * @see https://echarts.apache.org/en/option.html#series-map.markArea.data.0
     */
-  var areaColor: js.UndefOr[BorderType] = js.undefined
+  var `0`: js.UndefOr[ValueIndex] = js.undefined
+  
+  /**
+    * Specify the right-bottom point.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markArea.data.1
+    */
+  var `1`: js.UndefOr[ValueIndex] = js.undefined
 }
 object `14` {
   
@@ -23,8 +31,12 @@ object `14` {
   
   extension [Self <: `14`](x: Self) {
     
-    inline def setAreaColor(value: BorderType): Self = StObject.set(x, "areaColor", value.asInstanceOf[js.Any])
+    inline def set0(value: ValueIndex): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
-    inline def setAreaColorUndefined: Self = StObject.set(x, "areaColor", js.undefined)
+    inline def set0Undefined: Self = StObject.set(x, "0", js.undefined)
+    
+    inline def set1(value: ValueIndex): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    
+    inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
   }
 }

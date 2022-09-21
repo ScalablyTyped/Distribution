@@ -16,7 +16,7 @@ object global {
     
     @JSGlobal("SIPml.Event")
     @js.native
-    class Event ()
+    open class Event ()
       extends StObject
          with typings.sipml.SIPml.Event {
       
@@ -41,7 +41,7 @@ object global {
     
     @JSGlobal("SIPml.EventTarget")
     @js.native
-    class EventTarget[EventSubscriptionType /* <: String */, EventType /* <: typings.sipml.SIPml.Event */] ()
+    open class EventTarget[EventSubscriptionType /* <: String */, EventType /* <: typings.sipml.SIPml.Event */] ()
       extends StObject
          with typings.sipml.SIPml.EventTarget[EventSubscriptionType, EventType] {
       
@@ -54,7 +54,7 @@ object global {
     
     @JSGlobal("SIPml.Session")
     @js.native
-    class Session ()
+    open class Session ()
       extends StObject
          with typings.sipml.SIPml.Session {
       
@@ -68,7 +68,7 @@ object global {
       
       @JSGlobal("SIPml.Session.Call")
       @js.native
-      class Call ()
+      open class Call ()
         extends StObject
            with typings.sipml.SIPml.Session.Call {
         
@@ -81,7 +81,7 @@ object global {
       
       @JSGlobal("SIPml.Session.Event")
       @js.native
-      class Event ()
+      open class Event ()
         extends StObject
            with typings.sipml.SIPml.Session.Event {
         
@@ -112,7 +112,7 @@ object global {
       
       @JSGlobal("SIPml.Session.Message")
       @js.native
-      class Message ()
+      open class Message ()
         extends StObject
            with typings.sipml.SIPml.Session.Message {
         
@@ -125,7 +125,7 @@ object global {
       
       @JSGlobal("SIPml.Session.Publish")
       @js.native
-      class Publish ()
+      open class Publish ()
         extends StObject
            with typings.sipml.SIPml.Session.Publish {
         
@@ -138,7 +138,7 @@ object global {
       
       @JSGlobal("SIPml.Session.Registration")
       @js.native
-      class Registration ()
+      open class Registration ()
         extends StObject
            with typings.sipml.SIPml.Session.Registration {
         
@@ -151,7 +151,7 @@ object global {
       
       @JSGlobal("SIPml.Session.Subscribe")
       @js.native
-      class Subscribe ()
+      open class Subscribe ()
         extends StObject
            with typings.sipml.SIPml.Session.Subscribe {
         
@@ -165,7 +165,7 @@ object global {
     
     @JSGlobal("SIPml.Stack")
     @js.native
-    class Stack ()
+    open class Stack ()
       extends StObject
          with typings.sipml.SIPml.Stack {
       def this(configuration: Configuration) = this()
@@ -183,7 +183,7 @@ object global {
       
       @JSGlobal("SIPml.Stack.Event")
       @js.native
-      class Event ()
+      open class Event ()
         extends StObject
            with typings.sipml.SIPml.Stack.Event {
         
@@ -221,12 +221,9 @@ object global {
     inline def haveMediaStream(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("haveMediaStream")().asInstanceOf[Boolean]
     
     inline def init(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Boolean]
-    inline def init(readyCallback: js.Function1[/* e */ js.Any, js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    inline def init(
-      readyCallback: js.Function1[/* e */ js.Any, js.Any],
-      errorCallback: js.Function1[/* e */ js.Any, js.Any]
-    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def init(readyCallback: Unit, errorCallback: js.Function1[/* e */ js.Any, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def init(readyCallback: js.Function1[/* e */ Any, Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def init(readyCallback: js.Function1[/* e */ Any, Any], errorCallback: js.Function1[/* e */ Any, Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def init(readyCallback: Unit, errorCallback: js.Function1[/* e */ Any, Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(readyCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def isInitialized(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInitialized")().asInstanceOf[Boolean]
     

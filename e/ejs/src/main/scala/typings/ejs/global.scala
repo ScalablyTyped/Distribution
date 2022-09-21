@@ -31,7 +31,7 @@ object global {
     
     @JSGlobal("ejs.Template")
     @js.native
-    class Template protected ()
+    open class Template protected ()
       extends typings.ejs.mod.Template {
       def this(text: String) = this()
       def this(text: String, opts: Options) = this()
@@ -90,7 +90,7 @@ object global {
     inline def delimiter_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delimiter")(x.asInstanceOf[js.Any])
     
     inline def escapeXML(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXML")().asInstanceOf[String]
-    inline def escapeXML(markup: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXML")(markup.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeXML(markup: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXML")(markup.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSGlobal("ejs.fileLoader")
     @js.native

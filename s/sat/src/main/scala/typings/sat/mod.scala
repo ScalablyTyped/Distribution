@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("sat", "Box")
   @js.native
-  class Box ()
+  open class Box ()
     extends StObject
        with typings.sat.SAT.Box {
     def this(pos: typings.sat.SAT.Vector) = this()
@@ -38,7 +38,7 @@ object mod {
   
   @JSImport("sat", "Circle")
   @js.native
-  class Circle ()
+  open class Circle ()
     extends StObject
        with typings.sat.SAT.Circle {
     def this(pos: typings.sat.SAT.Vector) = this()
@@ -54,7 +54,7 @@ object mod {
   
   @JSImport("sat", "Polygon")
   @js.native
-  class Polygon ()
+  open class Polygon ()
     extends StObject
        with typings.sat.SAT.Polygon {
     def this(pos: typings.sat.SAT.Vector) = this()
@@ -106,18 +106,18 @@ object mod {
   
   @JSImport("sat", "Response")
   @js.native
-  class Response ()
+  open class Response ()
     extends StObject
        with typings.sat.SAT.Response {
     
     /* CompleteClass */
-    var a: js.Any = js.native
+    var a: Any = js.native
     
     /* CompleteClass */
     var aInB: Boolean = js.native
     
     /* CompleteClass */
-    var b: js.Any = js.native
+    var b: Any = js.native
     
     /* CompleteClass */
     var bInA: Boolean = js.native
@@ -142,7 +142,7 @@ object mod {
     * @param {number} x The x-coordinate of the Vector.
     * @param {number} y The y-coordinate of the Vector.
     */
-  class Vector ()
+  open class Vector ()
     extends StObject
        with typings.sat.SAT.Vector {
     def this(x: Double) = this()

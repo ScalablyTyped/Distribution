@@ -14,7 +14,7 @@ trait MailboxExportJob extends StObject {
   /**
     * The mailbox export job end timestamp.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier of the user or resource associated with the mailbox.
@@ -44,7 +44,7 @@ trait MailboxExportJob extends StObject {
   /**
     * The mailbox export job start timestamp.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the mailbox export job.
@@ -64,7 +64,7 @@ object MailboxExportJob {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -88,7 +88,7 @@ object MailboxExportJob {
     
     inline def setS3PathUndefined: Self = StObject.set(x, "S3Path", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

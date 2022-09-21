@@ -1,6 +1,5 @@
 package typings.weixinApp.wx
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,8 +15,8 @@ trait FileSystemManager extends StObject {
   
   def appendFileSync(filePath: String, data: String): Unit = js.native
   def appendFileSync(filePath: String, data: String, encoding: String): Unit = js.native
-  def appendFileSync(filePath: String, data: ArrayBuffer): Unit = js.native
-  def appendFileSync(filePath: String, data: ArrayBuffer, encoding: String): Unit = js.native
+  def appendFileSync(filePath: String, data: js.typedarray.ArrayBuffer): Unit = js.native
+  def appendFileSync(filePath: String, data: js.typedarray.ArrayBuffer, encoding: String): Unit = js.native
   
   def copyFile(options: CopyFileOptions): Unit = js.native
   
@@ -34,8 +33,8 @@ trait FileSystemManager extends StObject {
   
   def readFile(options: ReadFileOptions): Unit = js.native
   
-  def readFileSync(filePath: String): String | ArrayBuffer = js.native
-  def readFileSync(filePath: String, encoding: String): String | ArrayBuffer = js.native
+  def readFileSync(filePath: String): String | js.typedarray.ArrayBuffer = js.native
+  def readFileSync(filePath: String, encoding: String): String | js.typedarray.ArrayBuffer = js.native
   
   def readdir(options: ReaddirOptions): Unit = js.native
   
@@ -74,6 +73,6 @@ trait FileSystemManager extends StObject {
   
   def writeFileSync(filePath: String, data: String): Unit = js.native
   def writeFileSync(filePath: String, data: String, encoding: String): Unit = js.native
-  def writeFileSync(filePath: String, data: ArrayBuffer): Unit = js.native
-  def writeFileSync(filePath: String, data: ArrayBuffer, encoding: String): Unit = js.native
+  def writeFileSync(filePath: String, data: js.typedarray.ArrayBuffer): Unit = js.native
+  def writeFileSync(filePath: String, data: js.typedarray.ArrayBuffer, encoding: String): Unit = js.native
 }

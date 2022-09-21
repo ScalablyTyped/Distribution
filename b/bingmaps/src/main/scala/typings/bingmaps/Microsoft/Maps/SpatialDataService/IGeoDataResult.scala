@@ -54,10 +54,10 @@ object IGeoDataResult {
     
     inline def setPolygons(value: js.Array[Polygon]): Self = StObject.set(x, "Polygons", value.asInstanceOf[js.Any])
     
-    inline def setPolygonsVarargs(value: Polygon*): Self = StObject.set(x, "Polygons", js.Array(value :_*))
+    inline def setPolygonsVarargs(value: Polygon*): Self = StObject.set(x, "Polygons", js.Array(value*))
     
     inline def setPrimitives(value: js.Array[IGeoDataPrimitive]): Self = StObject.set(x, "Primitives", value.asInstanceOf[js.Any])
     
-    inline def setPrimitivesVarargs(value: IGeoDataPrimitive*): Self = StObject.set(x, "Primitives", js.Array(value :_*))
+    inline def setPrimitivesVarargs(value: IGeoDataPrimitive*): Self = StObject.set(x, "Primitives", js.Array(value*))
   }
 }

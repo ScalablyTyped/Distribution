@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Get an Artist’s Top Tracks
-  * 
+  *
   * GET /v1/artists/{id}/top-tracks
   * https://developer.spotify.com/web-api/get-artists-top-tracks/
   */
@@ -25,6 +25,6 @@ object ArtistsTopTracksResponse {
     
     inline def setTracks(value: js.Array[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    inline def setTracksVarargs(value: TrackObjectFull*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: TrackObjectFull*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

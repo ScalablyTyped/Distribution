@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typedoc", "ParameterReflection")
 @js.native
-class ParameterReflection protected ()
-  extends typings.typedoc.reflectionsMod.ParameterReflection {
-  def this(name: String, kind: typings.typedoc.abstractMod.ReflectionKind) = this()
+open class ParameterReflection protected ()
+  extends typings.typedoc.modelsMod.ParameterReflection {
+  def this(name: String, kind: typings.typedoc.kindMod.ReflectionKind) = this()
   def this(
     name: String,
-    kind: typings.typedoc.abstractMod.ReflectionKind,
+    kind: typings.typedoc.kindMod.ReflectionKind,
     parent: typings.typedoc.abstractMod.Reflection
   ) = this()
 }

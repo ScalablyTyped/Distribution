@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRibbonItem")
 @js.native
-class ASPxClientRibbonItem ()
+open class ASPxClientRibbonItem ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRibbonItem {
   
@@ -23,7 +23,7 @@ class ASPxClientRibbonItem ()
     * Returns the item value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a ribbon item is displayed.
@@ -43,7 +43,7 @@ class ASPxClientRibbonItem ()
     * @param value An  that specifies the item value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Gets the client group object to which the current item belongs.

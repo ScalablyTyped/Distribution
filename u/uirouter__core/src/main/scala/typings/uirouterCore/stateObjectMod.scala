@@ -26,7 +26,7 @@ object stateObjectMod {
   @JSImport("@uirouter/core/lib/state/stateObject", "StateObject")
   @js.native
   /** @deprecated use State.create() */
-  class StateObject ()
+  open class StateObject ()
     extends StObject
        with _StateOrName {
     def this(config: StateDeclaration) = this()
@@ -43,7 +43,7 @@ object stateObjectMod {
       * The definition object's `data` field is replaced with a new object
       * which prototypally inherits from the parent state definition's `data` field.
       */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /**
       * @deprecated this does not properly handle dot notation
@@ -137,10 +137,10 @@ object stateObjectMod {
     var resolvables: js.Array[Resolvable] = js.native
     
     /** Prototypally inherits from [[StateDeclaration.resolve]] */
-    var resolve: (StringDictionary[String | js.Array[js.Any] | js.Function]) | js.Array[js.Any] = js.native
+    var resolve: (StringDictionary[String | js.Array[Any] | js.Function]) | js.Array[Any] = js.native
     
     /** Prototypally inherits from [[StateDeclaration.resolvePolicy]] */
-    var resolvePolicy: js.Any = js.native
+    var resolvePolicy: Any = js.native
     
     /**
       * Returns the root node of this state's tree.
@@ -183,12 +183,12 @@ object stateObjectMod {
     inline def create(stateDecl: _StateDeclaration): StateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stateDecl.asInstanceOf[js.Any]).asInstanceOf[StateObject]
     
     /** Predicate which returns true if the object is an internal [[StateObject]] object */
-    inline def isState(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean]
+    inline def isState(obj: Any): /* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean]
     
     /** Predicate which returns true if the object is an class with @State() decorator */
     inline def isStateClass(stateDecl: _StateDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateClass")(stateDecl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Predicate which returns true if the object is a [[StateDeclaration]] object */
-    inline def isStateDeclaration(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateDeclaration")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean]
+    inline def isStateDeclaration(obj: Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateDeclaration")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.StateDeclaration */ Boolean]
   }
 }

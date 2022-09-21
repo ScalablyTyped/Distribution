@@ -16,7 +16,7 @@ object mod {
   inline def expressMiddleware(options: Port): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("expressMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   inline def wrapExpressHttpProxy(
-    proxy: js.Function2[/* host */ String, /* options */ js.UndefOr[js.Any], Handler],
+    proxy: js.Function2[/* host */ String, /* options */ js.UndefOr[Any], Handler],
     options: RemoteServiceName
-  ): js.Function2[/* host */ String, /* options */ js.UndefOr[js.Any], Handler] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapExpressHttpProxy")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* host */ String, /* options */ js.UndefOr[js.Any], Handler]]
+  ): js.Function2[/* host */ String, /* options */ js.UndefOr[Any], Handler] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapExpressHttpProxy")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* host */ String, /* options */ js.UndefOr[Any], Handler]]
 }

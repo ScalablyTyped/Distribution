@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMessageChannel extends StObject {
   
-  def onMessage(message: Message): js.Any
+  def onMessage(message: Message): Any
   
   def sendMessage(message: Message): Unit
 }
 object IMessageChannel {
   
-  inline def apply(onMessage: Message => js.Any, sendMessage: Message => Unit): IMessageChannel = {
+  inline def apply(onMessage: Message => Any, sendMessage: Message => Unit): IMessageChannel = {
     val __obj = js.Dynamic.literal(onMessage = js.Any.fromFunction1(onMessage), sendMessage = js.Any.fromFunction1(sendMessage))
     __obj.asInstanceOf[IMessageChannel]
   }
   
   extension [Self <: IMessageChannel](x: Self) {
     
-    inline def setOnMessage(value: Message => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    inline def setOnMessage(value: Message => Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     inline def setSendMessage(value: Message => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
   }

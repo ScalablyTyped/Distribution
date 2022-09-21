@@ -1,7 +1,6 @@
 package typings.wechatMiniprogram.WechatMiniprogram.Component
 
 import typings.std.Partial
-import typings.std.Record
 import typings.wechatMiniprogram.WechatMiniprogram.Behavior.BehaviorIdentifier
 import typings.wechatMiniprogram.WechatMiniprogram.CreateIntersectionObserverOption
 import typings.wechatMiniprogram.WechatMiniprogram.EventChannel
@@ -131,8 +130,8 @@ trait InstanceMethods[D /* <: DataOption */] extends StObject {
   ): Unit = js.native
   
   /** 触发事件，参见组件事件 */
-  def triggerEvent(name: String): Unit = js.native
-  def triggerEvent(name: String, detail: Unit, options: TriggerEventOption): Unit = js.native
-  def triggerEvent(name: String, detail: Record[String, js.Any]): Unit = js.native
-  def triggerEvent(name: String, detail: Record[String, js.Any], options: TriggerEventOption): Unit = js.native
+  def triggerEvent[DetailType](name: String): Unit = js.native
+  def triggerEvent[DetailType](name: String, detail: DetailType): Unit = js.native
+  def triggerEvent[DetailType](name: String, detail: DetailType, options: TriggerEventOption): Unit = js.native
+  def triggerEvent[DetailType](name: String, detail: Unit, options: TriggerEventOption): Unit = js.native
 }

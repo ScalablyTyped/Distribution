@@ -10,10 +10,10 @@ Checksum validator
 | ------------------ | :-------------: |
 | Full name          | sumchecker |
 | Keywords           | checksum, hash |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 19591091 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3804895.3333333335 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/malept/sumchecker#readme)

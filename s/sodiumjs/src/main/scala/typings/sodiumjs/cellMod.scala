@@ -18,7 +18,7 @@ object cellMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell")
   @js.native
-  class Cell[A] protected () extends StObject {
+  open class Cell[A] protected () extends StObject {
     def this(initValue: A) = this()
     def this(initValue: A, str: Stream[A]) = this()
     
@@ -34,7 +34,7 @@ object cellMod {
       */
     def calmRefEq(): Cell[A] = js.native
     
-    /* private */ var cleanup: js.Any = js.native
+    /* private */ var cleanup: Any = js.native
     
     @JSName("fantasy-land/ap")
     def `fantasy-landSlashap`[B](cf: Cell[js.Function1[/* a */ A, B]]): Cell[B] = js.native
@@ -164,19 +164,19 @@ object cellMod {
     
     /* protected */ def setStream(str: Stream[A]): Unit = js.native
     
-    /* private */ var str: js.Any = js.native
+    /* private */ var str: Any = js.native
     
     /**
       * High order depenency traking. If any newly created sodium objects within a value of a cell of a sodium object
       * happen to accumulate state, this method will keep the accumulation of state up to date.
       */
-    def tracking(extractor: js.Function1[/* a */ A, js.Array[Stream[js.Any] | Cell[js.Any]]]): Cell[A] = js.native
+    def tracking(extractor: js.Function1[/* a */ A, js.Array[Stream[Any] | Cell[Any]]]): Cell[A] = js.native
     
     /* protected */ var value: A = js.native
     
     /* protected */ var valueUpdate: A = js.native
     
-    /* private */ var vertex: js.Any = js.native
+    /* private */ var vertex: Any = js.native
   }
   /* static members */
   object Cell {
@@ -187,8 +187,8 @@ object cellMod {
     
     @JSImport("sodiumjs/dist/typings/sodium/Cell", "Cell._liftArray")
     @js.native
-    def _liftArray: js.Any = js.native
-    inline def _liftArray_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_liftArray")(x.asInstanceOf[js.Any])
+    def _liftArray: Any = js.native
+    inline def _liftArray_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_liftArray")(x.asInstanceOf[js.Any])
     
     /**
       * Apply a value inside a cell to a function inside a cell. This is the

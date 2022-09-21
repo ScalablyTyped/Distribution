@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-minify-font-values" : "5.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-minify-font-values" : "5.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

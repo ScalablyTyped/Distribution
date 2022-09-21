@@ -10,6 +10,7 @@ object mod {
     * create -- sync function for reading user input from stdin
     * @param   {Object} config {
     *   sigint: {Boolean} exit on ^C
+    *   eot: {Boolean} exit on ^D
     *   autocomplete: {StringArray} function({String})
     *   history: {String} a history control object (see `prompt-sync-history`)
     * }
@@ -28,6 +29,8 @@ object mod {
     
     var autocomplete: js.UndefOr[AutoCompleteFunction] = js.undefined
     
+    var eot: js.UndefOr[Boolean] = js.undefined
+    
     var history: js.UndefOr[History] = js.undefined
     
     var sigint: js.UndefOr[Boolean] = js.undefined
@@ -44,6 +47,10 @@ object mod {
       inline def setAutocomplete(value: /* input */ String => js.Array[String]): Self = StObject.set(x, "autocomplete", js.Any.fromFunction1(value))
       
       inline def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
+      
+      inline def setEot(value: Boolean): Self = StObject.set(x, "eot", value.asInstanceOf[js.Any])
+      
+      inline def setEotUndefined: Self = StObject.set(x, "eot", js.undefined)
       
       inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
@@ -161,7 +168,7 @@ object mod {
       * prompt -- sync function for reading user input from stdin
       *  @param {String} ask opening question/statement to prompt for
       *  @param {String} value initial value for the prompt
-      *  @param   {Object} opts {
+      *  @param {Object} opts {
       *   echo: set to a character to be echoed, default is '*'. Use '' for no echo
       *   value: {String} initial value for the prompt
       *   ask: {String} opening question/statement to prompt for, does not override ask param

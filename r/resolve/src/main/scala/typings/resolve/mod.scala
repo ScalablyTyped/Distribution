@@ -1,9 +1,7 @@
 package typings.resolve
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +38,25 @@ object mod {
   def sync: js.Function2[/* id */ String, /* opts */ js.UndefOr[SyncOpts], String] = js.native
   inline def sync_=(x: js.Function2[/* id */ String, /* opts */ js.UndefOr[SyncOpts], String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
   
-  trait AsyncOpts
+  /* Rewritten from type alias, can be one of: 
+    - typings.resolve.anon.readFilefilestringcbreadF
+    - typings.resolve.anon.readFileneverundefinedrea
+  */
+  trait AsyncOpts extends StObject
+  object AsyncOpts {
+    
+    inline def readFilefilestringcbreadF(): typings.resolve.anon.readFilefilestringcbreadF = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.resolve.anon.readFilefilestringcbreadF]
+    }
+    
+    inline def readFileneverundefinedrea(): typings.resolve.anon.readFileneverundefinedrea = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.resolve.anon.readFileneverundefinedrea]
+    }
+  }
+  
+  trait BaseAsyncOpts
     extends StObject
        with Opts {
     
@@ -50,20 +66,17 @@ object mod {
     /** function to asynchronously test whether a file exists */
     var isFile: js.UndefOr[js.Function2[/* file */ String, /* cb */ existsCallback, Unit]] = js.undefined
     
-    /** how to read files asynchronously (defaults to fs.readFile) */
-    var readFile: js.UndefOr[js.Function2[/* file */ String, /* cb */ readFileCallback, Unit]] = js.undefined
-    
     /** function to asynchronously resolve a potential symlink to its real path */
     var realpath: js.UndefOr[js.Function2[/* file */ String, /* cb */ realpathCallback, Unit]] = js.undefined
   }
-  object AsyncOpts {
+  object BaseAsyncOpts {
     
-    inline def apply(): AsyncOpts = {
+    inline def apply(): BaseAsyncOpts = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AsyncOpts]
+      __obj.asInstanceOf[BaseAsyncOpts]
     }
     
-    extension [Self <: AsyncOpts](x: Self) {
+    extension [Self <: BaseAsyncOpts](x: Self) {
       
       inline def setIsDirectory(value: (/* directory */ String, /* cb */ existsCallback) => Unit): Self = StObject.set(x, "isDirectory", js.Any.fromFunction2(value))
       
@@ -73,21 +86,69 @@ object mod {
       
       inline def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
       
-      inline def setReadFile(value: (/* file */ String, /* cb */ readFileCallback) => Unit): Self = StObject.set(x, "readFile", js.Any.fromFunction2(value))
-      
-      inline def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
-      
       inline def setRealpath(value: (/* file */ String, /* cb */ realpathCallback) => Unit): Self = StObject.set(x, "realpath", js.Any.fromFunction2(value))
       
       inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
     }
   }
   
+  trait BaseSyncOpts
+    extends StObject
+       with Opts {
+    
+    /** function to synchronously test whether a directory exists */
+    var isDirectory: js.UndefOr[js.Function1[/* directory */ String, Boolean]] = js.undefined
+    
+    /** function to synchronously test whether a file exists */
+    var isFile: js.UndefOr[js.Function1[/* file */ String, Boolean]] = js.undefined
+    
+    /** function to synchronously resolve a potential symlink to its real path */
+    var realpathSync: js.UndefOr[js.Function1[/* file */ String, String]] = js.undefined
+  }
+  object BaseSyncOpts {
+    
+    inline def apply(): BaseSyncOpts = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BaseSyncOpts]
+    }
+    
+    extension [Self <: BaseSyncOpts](x: Self) {
+      
+      inline def setIsDirectory(value: /* directory */ String => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction1(value))
+      
+      inline def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
+      
+      inline def setIsFile(value: /* file */ String => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction1(value))
+      
+      inline def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
+      
+      inline def setRealpathSync(value: /* file */ String => String): Self = StObject.set(x, "realpathSync", js.Any.fromFunction1(value))
+      
+      inline def setRealpathSyncUndefined: Self = StObject.set(x, "realpathSync", js.undefined)
+    }
+  }
+  
+  type JSONArray = js.Array[JSONValue]
+  
+  trait JSONObject
+    extends StObject
+       with /* x */ StringDictionary[JSONValue]
+  object JSONObject {
+    
+    inline def apply(): JSONObject = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[JSONObject]
+    }
+  }
+  
+  // https://github.com/Microsoft/TypeScript/issues/3496#issuecomment-128553540
+  type JSONValue = String | Double | Boolean | JSONObject | Any
+  
   trait Opts extends StObject {
     
     /** package.json data applicable to the module being loaded */
     @JSName("package")
-    var _package: js.UndefOr[js.Any] = js.undefined
+    var _package: js.UndefOr[Any] = js.undefined
     
     /** directory to begin resolving from (defaults to __dirname) */
     var basedir: js.UndefOr[String] = js.undefined
@@ -95,11 +156,16 @@ object mod {
     /** array of file extensions to search in order (defaults to ['.js']) */
     var extensions: js.UndefOr[String | js.Array[String]] = js.undefined
     
+    /** set to false to exclude node core modules (e.g. fs) from the search */
+    var includeCoreModules: js.UndefOr[Boolean] = js.undefined
+    
     /** directory (or directories) in which to recursively look for modules. (default to 'node_modules') */
     var moduleDirectory: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** transform the parsed package.json contents before looking at the "main" field */
-    var packageFilter: js.UndefOr[js.Function2[/* pkg */ js.Any, /* pkgfile */ String, js.Any]] = js.undefined
+    var packageFilter: js.UndefOr[
+        js.Function3[/* pkg */ PackageJSON, /* pkgFile */ String, /* dir */ String, PackageJSON]
+      ] = js.undefined
     
     /** return the list of candidate paths where the packages sources may be found (probably don't use this) */
     var packageIterator: js.UndefOr[
@@ -114,7 +180,7 @@ object mod {
     
     /** transform a path within a package */
     var pathFilter: js.UndefOr[
-        js.Function3[/* pkg */ js.Any, /* path */ String, /* relativePath */ String, String]
+        js.Function3[/* pkg */ PackageJSON, /* path */ String, /* relativePath */ String, String]
       ] = js.undefined
     
     /** require.paths array to use if nothing is found on the normal node_modules recursive walk (probably don't use this) */
@@ -146,15 +212,19 @@ object mod {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
+      
+      inline def setIncludeCoreModules(value: Boolean): Self = StObject.set(x, "includeCoreModules", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeCoreModulesUndefined: Self = StObject.set(x, "includeCoreModules", js.undefined)
       
       inline def setModuleDirectory(value: String | js.Array[String]): Self = StObject.set(x, "moduleDirectory", value.asInstanceOf[js.Any])
       
       inline def setModuleDirectoryUndefined: Self = StObject.set(x, "moduleDirectory", js.undefined)
       
-      inline def setModuleDirectoryVarargs(value: String*): Self = StObject.set(x, "moduleDirectory", js.Array(value :_*))
+      inline def setModuleDirectoryVarargs(value: String*): Self = StObject.set(x, "moduleDirectory", js.Array(value*))
       
-      inline def setPackageFilter(value: (/* pkg */ js.Any, /* pkgfile */ String) => js.Any): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
+      inline def setPackageFilter(value: (/* pkg */ PackageJSON, /* pkgFile */ String, /* dir */ String) => PackageJSON): Self = StObject.set(x, "packageFilter", js.Any.fromFunction3(value))
       
       inline def setPackageFilterUndefined: Self = StObject.set(x, "packageFilter", js.undefined)
       
@@ -164,7 +234,7 @@ object mod {
       
       inline def setPackageIteratorUndefined: Self = StObject.set(x, "packageIterator", js.undefined)
       
-      inline def setPathFilter(value: (/* pkg */ js.Any, /* path */ String, /* relativePath */ String) => String): Self = StObject.set(x, "pathFilter", js.Any.fromFunction3(value))
+      inline def setPathFilter(value: (/* pkg */ PackageJSON, /* path */ String, /* relativePath */ String) => String): Self = StObject.set(x, "pathFilter", js.Any.fromFunction3(value))
       
       inline def setPathFilterUndefined: Self = StObject.set(x, "pathFilter", js.undefined)
       
@@ -172,21 +242,23 @@ object mod {
       
       inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
       
       inline def setPreserveSymlinks(value: Boolean): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
       
       inline def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
       
-      inline def set_package(value: js.Any): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: Any): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
       
       inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
     }
   }
   
+  type PackageJSON = JSONObject
+  
   trait PackageMeta
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var name: String
     
@@ -207,48 +279,27 @@ object mod {
     }
   }
   
-  trait SyncOpts
-    extends StObject
-       with Opts {
-    
-    /** function to synchronously test whether a directory exists */
-    var isDirectory: js.UndefOr[js.Function1[/* directory */ String, Boolean]] = js.undefined
-    
-    /** function to synchronously test whether a file exists */
-    var isFile: js.UndefOr[js.Function1[/* file */ String, Boolean]] = js.undefined
-    
-    /** how to read files synchronously (defaults to fs.readFileSync) */
-    var readFileSync: js.UndefOr[js.Function2[/* file */ String, /* encoding */ BufferEncoding, String | Buffer]] = js.undefined
-    
-    /** function to synchronously resolve a potential symlink to its real path */
-    var realpathSync: js.UndefOr[js.Function1[/* file */ String, String]] = js.undefined
-  }
+  type StringOrToString = String | ToString
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.resolve.anon.readFileSyncfilestringStr
+    - typings.resolve.anon.readFileSyncneverundefine
+  */
+  trait SyncOpts extends StObject
   object SyncOpts {
     
-    inline def apply(): SyncOpts = {
+    inline def readFileSyncfilestringStr(): typings.resolve.anon.readFileSyncfilestringStr = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SyncOpts]
+      __obj.asInstanceOf[typings.resolve.anon.readFileSyncfilestringStr]
     }
     
-    extension [Self <: SyncOpts](x: Self) {
-      
-      inline def setIsDirectory(value: /* directory */ String => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction1(value))
-      
-      inline def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
-      
-      inline def setIsFile(value: /* file */ String => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction1(value))
-      
-      inline def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
-      
-      inline def setReadFileSync(value: (/* file */ String, /* encoding */ BufferEncoding) => String | Buffer): Self = StObject.set(x, "readFileSync", js.Any.fromFunction2(value))
-      
-      inline def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
-      
-      inline def setRealpathSync(value: /* file */ String => String): Self = StObject.set(x, "realpathSync", js.Any.fromFunction1(value))
-      
-      inline def setRealpathSyncUndefined: Self = StObject.set(x, "realpathSync", js.undefined)
+    inline def readFileSyncneverundefine(): typings.resolve.anon.readFileSyncneverundefine = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.resolve.anon.readFileSyncneverundefine]
     }
   }
+  
+  trait ToString extends StObject
   
   /**
     * Callback invoked when checking if a file or directory exists
@@ -256,7 +307,7 @@ object mod {
     * @param error
     * @param exists If the given file or directory exists
     */
-  type existsCallback = js.Function2[/* err */ Error | Null, /* isFile */ js.UndefOr[Boolean], Unit]
+  type existsCallback = js.Function2[/* err */ js.Error | Null, /* isFile */ js.UndefOr[Boolean], Unit]
   
   /**
     * Callback invoked when reading a file
@@ -264,7 +315,15 @@ object mod {
     * @param error
     * @param isFile If the given file exists
     */
-  type readFileCallback = js.Function2[/* err */ Error | Null, /* file */ js.UndefOr[Buffer], Unit]
+  type readFileCallback = js.Function2[/* err */ js.Error | Null, /* file */ js.UndefOr[StringOrToString], Unit]
+  
+  /**
+    * Callback invoked when reading and parsing a package.json file
+    *
+    * @param error
+    * @param resolved Absolute path to the resolved file
+    */
+  type readPackageCallback = js.Function2[/* err */ js.Error | Null, /* package */ js.UndefOr[Record[String, Any]], Unit]
   
   /**
     * Callback invoked when resolving a potential symlink
@@ -272,7 +331,7 @@ object mod {
     * @param error
     * @param resolved Absolute path to the resolved file
     */
-  type realpathCallback = js.Function2[/* err */ Error | Null, /* resolved */ js.UndefOr[String], Unit]
+  type realpathCallback = js.Function2[/* err */ js.Error | Null, /* resolved */ js.UndefOr[String], Unit]
   
   /**
     * Callback invoked when resolving asynchronously
@@ -281,7 +340,7 @@ object mod {
     * @param resolved Absolute path to resolved identifier
     */
   type resolveCallback = js.Function3[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* resolved */ js.UndefOr[String], 
     /* pkg */ js.UndefOr[PackageMeta], 
     Unit

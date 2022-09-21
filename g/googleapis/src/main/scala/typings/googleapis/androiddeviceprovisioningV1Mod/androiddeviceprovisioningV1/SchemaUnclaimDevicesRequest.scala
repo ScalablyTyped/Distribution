@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to unclaim devices asynchronously in batch.
-  */
 trait SchemaUnclaimDevicesRequest extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaUnclaimDevicesRequest {
     
     inline def setUnclaimsUndefined: Self = StObject.set(x, "unclaims", js.undefined)
     
-    inline def setUnclaimsVarargs(value: SchemaPartnerUnclaim*): Self = StObject.set(x, "unclaims", js.Array(value :_*))
+    inline def setUnclaimsVarargs(value: SchemaPartnerUnclaim*): Self = StObject.set(x, "unclaims", js.Array(value*))
   }
 }

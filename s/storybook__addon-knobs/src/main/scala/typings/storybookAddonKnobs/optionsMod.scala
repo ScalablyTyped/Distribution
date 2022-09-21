@@ -1,7 +1,6 @@
 package typings.storybookAddonKnobs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import typings.std.NonNullable
@@ -19,8 +18,8 @@ object optionsMod {
   /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsTypeProps<any>> & {  serialize :{None <T>(value : T): T},   deserialize :{None <T>(value : T): T}} */
   object default {
     
-    inline def apply(props: PropsWithChildren[OptionsTypeProps[js.Any]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[OptionsTypeProps[js.Any]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: OptionsTypeProps[Any]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: OptionsTypeProps[Any], context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", JSImport.Default)
     @js.native
@@ -28,8 +27,8 @@ object optionsMod {
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", "default.defaultProps")
     @js.native

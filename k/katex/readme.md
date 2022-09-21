@@ -1,7 +1,7 @@
 
 # Scala.js typings for katex
 
-Typings are for version 0.11
+Typings are for version 0.14
 
 ## Library description:
 Fast math typesetting for the web.
@@ -10,13 +10,13 @@ Fast math typesetting for the web.
 | ------------------ | :-------------: |
 | Full name          | katex |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 383 |
-| # downloads        | 9777890 |
-| # stars            | 11 |
+| # releases         | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 1576184.0 |
+| # stars            | 15703.0 |
 
 ## Links
-- [Homepage](https://katex.org/)
+- [Homepage](https://katex.org)
 - [Bugs](https://github.com/KaTeX/KaTeX/issues)
 - [Repository](https://github.com/KaTeX/KaTeX)
 - [Npm](https://www.npmjs.com/package/katex)

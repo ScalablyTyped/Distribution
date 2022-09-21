@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Types.Cameras.Scene2D.JSONCamera
 import typings.phaser.Phaser.Types.Core.LoaderConfig
 import typings.phaser.Phaser.Types.Core.PhysicsConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.PackFileSection
-import typings.phaser.integer
 import typings.phaser.phaserBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,13 +23,13 @@ object Scenes {
     /**
       * Any additional properties, which will be copied to the Scene after it's created (except `data` or `sys`).
       */
-    var extend: js.UndefOr[js.Any] = js.undefined
+    var extend: js.UndefOr[Any] = js.undefined
     
     /**
       * Any values, which will be merged into the Scene's Data Manager store.
       */
     @JSName("extend.data")
-    var extendDotdata: js.UndefOr[js.Any] = js.undefined
+    var extendDotdata: js.UndefOr[Any] = js.undefined
     
     /**
       * The scene's init callback.
@@ -45,7 +44,7 @@ object Scenes {
     /**
       * The scene's update callback. See {@link Phaser.Scene#update}.
       */
-    var update: js.UndefOr[js.Function] = js.undefined
+    var update: js.UndefOr[SceneUpdateCallback] = js.undefined
   }
   object CreateSceneFromObjectConfig {
     
@@ -56,27 +55,27 @@ object Scenes {
     
     extension [Self <: CreateSceneFromObjectConfig](x: Self) {
       
-      inline def setCreate(value: /* data */ js.Object => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: SceneCreateCallback): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
       inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      inline def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+      inline def setExtend(value: Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
-      inline def setExtendDotdata(value: js.Any): Self = StObject.set(x, "extend.data", value.asInstanceOf[js.Any])
+      inline def setExtendDotdata(value: Any): Self = StObject.set(x, "extend.data", value.asInstanceOf[js.Any])
       
       inline def setExtendDotdataUndefined: Self = StObject.set(x, "extend.data", js.undefined)
       
       inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
       
-      inline def setInit(value: /* data */ js.Object => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: SceneInitCallback): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      inline def setPreload(value: () => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction0(value))
+      inline def setPreload(value: ScenePreloadCallback): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
       inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
-      inline def setUpdate(value: js.Function): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: SceneUpdateCallback): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
@@ -87,20 +86,20 @@ object Scenes {
     * This method is called by the Scene Manager when the scene starts, after `init()` and `preload()`.
     * If the LoaderPlugin started after `preload()`, then this method is called only after loading is complete.
     */
-  type SceneCreateCallback = js.Function1[/* data */ js.Object, Unit]
+  type SceneCreateCallback = js.ThisFunction1[/* this */ Scene, /* data */ js.Object, Unit]
   
   /**
     * Can be defined on your own Scenes.
     * This method is called by the Scene Manager when the scene starts, before `preload()` and `create()`.
     */
-  type SceneInitCallback = js.Function1[/* data */ js.Object, Unit]
+  type SceneInitCallback = js.ThisFunction1[/* this */ Scene, /* data */ js.Object, Unit]
   
   /**
     * Can be defined on your own Scenes. Use it to load assets.
     * This method is called by the Scene Manager, after `init()` and before `create()`, only if the Scene has a LoaderPlugin.
     * After this method completes, if the LoaderPlugin's queue isn't empty, the LoaderPlugin will start automatically.
     */
-  type ScenePreloadCallback = js.Function0[Unit]
+  type ScenePreloadCallback = js.ThisFunction0[/* this */ Scene, Unit]
   
   trait SceneTransitionConfig extends StObject {
     
@@ -112,12 +111,12 @@ object Scenes {
     /**
       * An object containing any data you wish to be passed to the target scene's init / create methods (if sleep is false) or to the target scene's wake event callback (if sleep is true).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * The duration, in ms, for the transition to last.
       */
-    var duration: js.UndefOr[integer] = js.undefined
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Move the target Scene to be above this one before the transition starts.
@@ -137,7 +136,7 @@ object Scenes {
     /**
       * The context in which the callback is invoked.
       */
-    var onUpdateScope: js.UndefOr[js.Any] = js.undefined
+    var onUpdateScope: js.UndefOr[Any] = js.undefined
     
     /**
       * Will the Scene responsible for the transition be removed from the Scene Manager after the transition completes?
@@ -167,11 +166,11 @@ object Scenes {
       
       inline def setAllowInputUndefined: Self = StObject.set(x, "allowInput", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
@@ -185,7 +184,7 @@ object Scenes {
       
       inline def setOnUpdate(value: js.Function): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      inline def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
+      inline def setOnUpdateScope(value: Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
       
       inline def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
       
@@ -202,6 +201,8 @@ object Scenes {
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
+  
+  type SceneUpdateCallback = js.ThisFunction0[/* this */ Scene, Unit]
   
   trait SettingsConfig extends StObject {
     
@@ -248,7 +249,7 @@ object Scenes {
     /**
       * The plugin configuration object for the Scene.
       */
-    var plugins: js.UndefOr[`false` | js.Any] = js.undefined
+    var plugins: js.UndefOr[`false` | Any] = js.undefined
     
     /**
       * Does the Scene start as visible or not? A visible Scene renders each step.
@@ -272,7 +273,7 @@ object Scenes {
       
       inline def setCamerasUndefined: Self = StObject.set(x, "cameras", js.undefined)
       
-      inline def setCamerasVarargs(value: JSONCamera*): Self = StObject.set(x, "cameras", js.Array(value :_*))
+      inline def setCamerasVarargs(value: JSONCamera*): Self = StObject.set(x, "cameras", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -298,7 +299,7 @@ object Scenes {
       
       inline def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
       
-      inline def setPlugins(value: `false` | js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: `false` | Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
@@ -363,7 +364,7 @@ object Scenes {
     /**
       * The plugin configuration object for the Scene.
       */
-    var plugins: `false` | js.Any
+    var plugins: `false` | Any
     
     /**
       * The current status of the Scene. Maps to the Scene constants.
@@ -378,7 +379,7 @@ object Scenes {
     /**
       * The duration of the transition, if set.
       */
-    var transitionDuration: integer
+    var transitionDuration: Double
     
     /**
       * The Scene this Scene is transitioning from, if set.
@@ -403,10 +404,10 @@ object Scenes {
       map: StringDictionary[String],
       pack: `false` | PackFileSection,
       physics: PhysicsConfig,
-      plugins: `false` | js.Any,
+      plugins: `false` | Any,
       status: Double,
       transitionAllowInput: Boolean,
-      transitionDuration: integer,
+      transitionDuration: Double,
       transitionFrom: Scene,
       visible: Boolean
     ): SettingsObject = {
@@ -420,7 +421,7 @@ object Scenes {
       
       inline def setCameras(value: JSONCamera | js.Array[JSONCamera]): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
       
-      inline def setCamerasVarargs(value: JSONCamera*): Self = StObject.set(x, "cameras", js.Array(value :_*))
+      inline def setCamerasVarargs(value: JSONCamera*): Self = StObject.set(x, "cameras", js.Array(value*))
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -438,13 +439,13 @@ object Scenes {
       
       inline def setPhysics(value: PhysicsConfig): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
       
-      inline def setPlugins(value: `false` | js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: `false` | Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       inline def setTransitionAllowInput(value: Boolean): Self = StObject.set(x, "transitionAllowInput", value.asInstanceOf[js.Any])
       
-      inline def setTransitionDuration(value: integer): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
       inline def setTransitionFrom(value: Scene): Self = StObject.set(x, "transitionFrom", value.asInstanceOf[js.Any])
       

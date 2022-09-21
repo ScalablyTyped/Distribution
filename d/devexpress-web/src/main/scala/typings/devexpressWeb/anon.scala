@@ -8,9 +8,9 @@ object anon {
   
   trait ModifyPdfDocument extends StObject {
     
-    var modifyPdfDocument: js.UndefOr[js.Function1[/* pdfDocument */ js.Any, Unit]] = js.undefined
+    var modifyPdfDocument: js.UndefOr[js.Function1[/* pdfDocument */ Any, Unit]] = js.undefined
     
-    var modifyPdfPage: js.UndefOr[js.Function1[/* pdfDocument */ js.Any, Unit]] = js.undefined
+    var modifyPdfPage: js.UndefOr[js.Function1[/* pdfDocument */ Any, Unit]] = js.undefined
   }
   object ModifyPdfDocument {
     
@@ -21,11 +21,11 @@ object anon {
     
     extension [Self <: ModifyPdfDocument](x: Self) {
       
-      inline def setModifyPdfDocument(value: /* pdfDocument */ js.Any => Unit): Self = StObject.set(x, "modifyPdfDocument", js.Any.fromFunction1(value))
+      inline def setModifyPdfDocument(value: /* pdfDocument */ Any => Unit): Self = StObject.set(x, "modifyPdfDocument", js.Any.fromFunction1(value))
       
       inline def setModifyPdfDocumentUndefined: Self = StObject.set(x, "modifyPdfDocument", js.undefined)
       
-      inline def setModifyPdfPage(value: /* pdfDocument */ js.Any => Unit): Self = StObject.set(x, "modifyPdfPage", js.Any.fromFunction1(value))
+      inline def setModifyPdfPage(value: /* pdfDocument */ Any => Unit): Self = StObject.set(x, "modifyPdfPage", js.Any.fromFunction1(value))
       
       inline def setModifyPdfPageUndefined: Self = StObject.set(x, "modifyPdfPage", js.undefined)
     }

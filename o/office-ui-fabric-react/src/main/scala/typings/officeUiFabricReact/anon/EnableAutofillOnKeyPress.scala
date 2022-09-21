@@ -19,6 +19,6 @@ object EnableAutofillOnKeyPress {
     
     inline def setEnableAutofillOnKeyPress(value: js.Array[Double]): Self = StObject.set(x, "enableAutofillOnKeyPress", value.asInstanceOf[js.Any])
     
-    inline def setEnableAutofillOnKeyPressVarargs(value: Double*): Self = StObject.set(x, "enableAutofillOnKeyPress", js.Array(value :_*))
+    inline def setEnableAutofillOnKeyPressVarargs(value: Double*): Self = StObject.set(x, "enableAutofillOnKeyPress", js.Array(value*))
   }
 }

@@ -11,5 +11,5 @@ trait IControllerProvider
      with IServiceProvider {
   
   def register(name: String, controllerConstructor: Function): Unit = js.native
-  def register(name: String, dependencyAnnotatedConstructor: js.Array[js.Any]): Unit = js.native
+  def register(name: String, dependencyAnnotatedConstructor: js.Array[Any]): Unit = js.native
 }

@@ -31,7 +31,7 @@ object ShareOptions {
     
     inline def setExcludedActivityTypesUndefined: Self = StObject.set(x, "excludedActivityTypes", js.undefined)
     
-    inline def setExcludedActivityTypesVarargs(value: String*): Self = StObject.set(x, "excludedActivityTypes", js.Array(value :_*))
+    inline def setExcludedActivityTypesVarargs(value: String*): Self = StObject.set(x, "excludedActivityTypes", js.Array(value*))
     
     inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     

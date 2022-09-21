@@ -13,7 +13,7 @@ object stateProviderMod {
   
   @JSImport("@uirouter/angularjs/lib/stateProvider", "StateProvider")
   @js.native
-  class StateProvider protected () extends StObject {
+  open class StateProvider protected () extends StObject {
     def this(stateRegistry: StateRegistry, stateService: StateService) = this()
     
     /**
@@ -249,8 +249,8 @@ object stateProviderMod {
       */
     def state(name: String, definition: Ng1StateDeclaration): StateProvider = js.native
     
-    /* private */ var stateRegistry: js.Any = js.native
+    /* private */ var stateRegistry: Any = js.native
     
-    /* private */ var stateService: js.Any = js.native
+    /* private */ var stateService: Any = js.native
   }
 }

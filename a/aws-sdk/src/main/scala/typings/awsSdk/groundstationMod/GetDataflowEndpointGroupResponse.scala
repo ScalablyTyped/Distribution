@@ -47,7 +47,7 @@ object GetDataflowEndpointGroupResponse {
     
     inline def setEndpointsDetailsUndefined: Self = StObject.set(x, "endpointsDetails", js.undefined)
     
-    inline def setEndpointsDetailsVarargs(value: EndpointDetails*): Self = StObject.set(x, "endpointsDetails", js.Array(value :_*))
+    inline def setEndpointsDetailsVarargs(value: EndpointDetails*): Self = StObject.set(x, "endpointsDetails", js.Array(value*))
     
     inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

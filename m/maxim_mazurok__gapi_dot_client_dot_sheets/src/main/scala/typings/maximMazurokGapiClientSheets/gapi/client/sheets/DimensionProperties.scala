@@ -38,7 +38,7 @@ object DimensionProperties {
     
     inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
-    inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+    inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value*))
     
     inline def setHiddenByFilter(value: Boolean): Self = StObject.set(x, "hiddenByFilter", value.asInstanceOf[js.Any])
     

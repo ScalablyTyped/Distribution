@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PDisp extends StObject {
   
-  val URL: js.Any
+  val URL: Any
   
-  val pDisp: js.Any
+  val pDisp: Any
 }
 object PDisp {
   
-  inline def apply(URL: js.Any, pDisp: js.Any): PDisp = {
+  inline def apply(URL: Any, pDisp: Any): PDisp = {
     val __obj = js.Dynamic.literal(URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDisp]
   }
   
   extension [Self <: PDisp](x: Self) {
     
-    inline def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
+    inline def setPDisp(value: Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
     
-    inline def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

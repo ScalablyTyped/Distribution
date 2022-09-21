@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.Viewer3D")
 @js.native
-class Viewer3D protected ()
+open class Viewer3D protected ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.Viewer3D {
   def this(container: HTMLElement) = this()

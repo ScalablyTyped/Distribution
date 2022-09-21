@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Particle")
 @js.native
-class Particle ()
+open class Particle ()
   extends typings.p2.mod.Particle {
   def this(options: SharedShapeOptions) = this()
 }

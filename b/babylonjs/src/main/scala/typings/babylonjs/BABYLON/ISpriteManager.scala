@@ -60,6 +60,11 @@ trait ISpriteManager
   var name: String = js.native
   
   /**
+    * Rebuilds the manager (after a context lost, for eg)
+    */
+  def rebuild(): Unit = js.native
+  
+  /**
     * Renders the list of sprites on screen.
     */
   def render(): Unit = js.native

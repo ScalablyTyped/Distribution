@@ -1,6 +1,5 @@
 package typings.wicgFileSystemAccess
 
-import typings.wicgFileSystemAccess.mod.global.FileSystemHandleKind
 import typings.wicgFileSystemAccess.mod.global.FileSystemPermissionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,15 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object wicgFileSystemAccessStrings {
   
   @js.native
-  sealed trait directory
-    extends StObject
-       with FileSystemHandleKind
+  sealed trait directory extends StObject
   inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
-  sealed trait file
-    extends StObject
-       with FileSystemHandleKind
+  sealed trait file extends StObject
   inline def file: file = "file".asInstanceOf[file]
   
   @js.native

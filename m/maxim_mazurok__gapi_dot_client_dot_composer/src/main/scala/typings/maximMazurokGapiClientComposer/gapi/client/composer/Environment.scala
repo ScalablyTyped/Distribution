@@ -21,7 +21,7 @@ trait Environment extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.Environment & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.Environment & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -59,7 +59,7 @@ object Environment {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.Environment & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.Environment & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

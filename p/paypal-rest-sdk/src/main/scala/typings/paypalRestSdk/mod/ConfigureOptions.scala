@@ -12,7 +12,7 @@ trait ConfigureOptions extends StObject {
   
   var client_secret: String
   
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   var host: js.UndefOr[String] = js.undefined
   
@@ -47,7 +47,7 @@ object ConfigureOptions {
     
     inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     

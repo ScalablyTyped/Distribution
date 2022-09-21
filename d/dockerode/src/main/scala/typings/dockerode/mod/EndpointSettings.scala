@@ -47,7 +47,7 @@ object EndpointSettings {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "Aliases", js.Array(value*))
     
     inline def setDriverOpts(value: StringDictionary[String]): Self = StObject.set(x, "DriverOpts", value.asInstanceOf[js.Any])
     
@@ -89,7 +89,7 @@ object EndpointSettings {
     
     inline def setLinksUndefined: Self = StObject.set(x, "Links", js.undefined)
     
-    inline def setLinksVarargs(value: String*): Self = StObject.set(x, "Links", js.Array(value :_*))
+    inline def setLinksVarargs(value: String*): Self = StObject.set(x, "Links", js.Array(value*))
     
     inline def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "Sunburst")
 @js.native
-class Sunburst[T] protected ()
-  extends Component[SunburstProps & T, js.Object, js.Any] {
+open class Sunburst[T] protected ()
+  extends Component[SunburstProps & T, js.Object, Any] {
   def this(props: SunburstProps & T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SunburstProps & T, context: js.Any) = this()
+  def this(props: SunburstProps & T, context: Any) = this()
 }

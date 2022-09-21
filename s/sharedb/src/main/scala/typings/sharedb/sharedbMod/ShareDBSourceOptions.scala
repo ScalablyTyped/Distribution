@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ShareDBSourceOptions extends StObject {
   
-  var source: js.UndefOr[Boolean] = js.undefined
+  var source: js.UndefOr[Any] = js.undefined
 }
 object ShareDBSourceOptions {
   
@@ -17,7 +17,7 @@ object ShareDBSourceOptions {
   
   extension [Self <: ShareDBSourceOptions](x: Self) {
     
-    inline def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }

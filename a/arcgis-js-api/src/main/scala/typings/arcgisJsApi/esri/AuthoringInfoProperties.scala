@@ -1,16 +1,32 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
+import typings.arcgisJsApi.arcgisJsApiStrings.`circle-arrow`
+import typings.arcgisJsApi.arcgisJsApiStrings.`circle-caret`
+import typings.arcgisJsApi.arcgisJsApiStrings.`circle-plus-minus`
 import typings.arcgisJsApi.arcgisJsApiStrings.`class-breaks-color`
 import typings.arcgisJsApi.arcgisJsApiStrings.`class-breaks-size`
 import typings.arcgisJsApi.arcgisJsApiStrings.`classed-color`
 import typings.arcgisJsApi.arcgisJsApiStrings.`classed-size`
 import typings.arcgisJsApi.arcgisJsApiStrings.`decimal-degrees`
+import typings.arcgisJsApi.arcgisJsApiStrings.`defined-interval`
 import typings.arcgisJsApi.arcgisJsApiStrings.`equal-interval`
+import typings.arcgisJsApi.arcgisJsApiStrings.`flow-line`
+import typings.arcgisJsApi.arcgisJsApiStrings.`happy-sad`
+import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
 import typings.arcgisJsApi.arcgisJsApiStrings.`natural-breaks`
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
+import typings.arcgisJsApi.arcgisJsApiStrings.`plus-minus`
 import typings.arcgisJsApi.arcgisJsApiStrings.`standard-deviation`
 import typings.arcgisJsApi.arcgisJsApiStrings.`univariate-color-size`
+import typings.arcgisJsApi.arcgisJsApiStrings.`wave-front`
+import typings.arcgisJsApi.arcgisJsApiStrings.above
+import typings.arcgisJsApi.arcgisJsApiStrings.arrow
+import typings.arcgisJsApi.arcgisJsApiStrings.below
+import typings.arcgisJsApi.arcgisJsApiStrings.caret
 import typings.arcgisJsApi.arcgisJsApiStrings.centimeters
+import typings.arcgisJsApi.arcgisJsApiStrings.circle
+import typings.arcgisJsApi.arcgisJsApiStrings.custom_
 import typings.arcgisJsApi.arcgisJsApiStrings.decimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.feet_
 import typings.arcgisJsApi.arcgisJsApiStrings.inches
@@ -20,6 +36,9 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.quantile
+import typings.arcgisJsApi.arcgisJsApiStrings.square_
+import typings.arcgisJsApi.arcgisJsApiStrings.thumb
+import typings.arcgisJsApi.arcgisJsApiStrings.triangle_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +51,9 @@ trait AuthoringInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#classificationMethod)
     */
-  var classificationMethod: js.UndefOr[`equal-interval` | manual | `natural-breaks` | quantile | `standard-deviation`] = js.undefined
+  var classificationMethod: js.UndefOr[
+    `equal-interval` | `defined-interval` | manual | `natural-breaks` | quantile | `standard-deviation`
+  ] = js.undefined
   
   /**
     * Indicates the color ramp was used to create the symbols for Unique Value or Class Breaks renderer for Imagery Layer.
@@ -61,6 +82,13 @@ trait AuthoringInfoProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#fields)
     */
   var fields: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Only applicable to flow renderers.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#flowTheme)
+    */
+  var flowTheme: js.UndefOr[`flow-line` | `wave-front`] = js.undefined
   
   /**
     * The focus of a [relationship renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html).
@@ -107,13 +135,36 @@ trait AuthoringInfoProperties extends StObject {
   var standardDeviationInterval: js.UndefOr[Double] = js.undefined
   
   /**
+    * Only for renderers of type `univariate-color-size` with an `above-and-below` [univariateTheme](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#univariateTheme).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#statistics)
+    */
+  var statistics: js.UndefOr[AuthoringInfoStatistics] = js.undefined
+  
+  /**
     * Indicates the renderer type generated from one of the Smart Mapping functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#type)
     */
   var `type`: js.UndefOr[
-    `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.predominance | typings.arcgisJsApi.arcgisJsApiStrings.relationship | `univariate-color-size`
+    `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.flow | typings.arcgisJsApi.arcgisJsApiStrings.predominance | typings.arcgisJsApi.arcgisJsApiStrings.relationship | `univariate-color-size`
   ] = js.undefined
+  
+  /**
+    * Only applicable to [univariateColorSize](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html) renderers with an `above-and-below` [univariateTheme](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#univariateTheme).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#univariateSymbolStyle)
+    */
+  var univariateSymbolStyle: js.UndefOr[
+    caret | `circle-caret` | arrow | `circle-arrow` | `plus-minus` | `circle-plus-minus` | square_ | circle | triangle_ | `happy-sad` | thumb | custom_
+  ] = js.undefined
+  
+  /**
+    * Only applicable to [univariateColorSize](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html) renderers.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#univariateTheme)
+    */
+  var univariateTheme: js.UndefOr[`high-to-low` | above | below | `above-and-below`] = js.undefined
   
   /**
     * Contains authoring properties of visual variables generated from one of the Smart Mapping methods or sliders.
@@ -131,7 +182,9 @@ object AuthoringInfoProperties {
   
   extension [Self <: AuthoringInfoProperties](x: Self) {
     
-    inline def setClassificationMethod(value: `equal-interval` | manual | `natural-breaks` | quantile | `standard-deviation`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
+    inline def setClassificationMethod(
+      value: `equal-interval` | `defined-interval` | manual | `natural-breaks` | quantile | `standard-deviation`
+    ): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
     
     inline def setClassificationMethodUndefined: Self = StObject.set(x, "classificationMethod", js.undefined)
     
@@ -151,7 +204,11 @@ object AuthoringInfoProperties {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setFlowTheme(value: `flow-line` | `wave-front`): Self = StObject.set(x, "flowTheme", value.asInstanceOf[js.Any])
+    
+    inline def setFlowThemeUndefined: Self = StObject.set(x, "flowTheme", js.undefined)
     
     inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
@@ -179,16 +236,30 @@ object AuthoringInfoProperties {
     
     inline def setStandardDeviationIntervalUndefined: Self = StObject.set(x, "standardDeviationInterval", js.undefined)
     
+    inline def setStatistics(value: AuthoringInfoStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    
     inline def setType(
-      value: `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.predominance | typings.arcgisJsApi.arcgisJsApiStrings.relationship | `univariate-color-size`
+      value: `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.flow | typings.arcgisJsApi.arcgisJsApiStrings.predominance | typings.arcgisJsApi.arcgisJsApiStrings.relationship | `univariate-color-size`
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUnivariateSymbolStyle(
+      value: caret | `circle-caret` | arrow | `circle-arrow` | `plus-minus` | `circle-plus-minus` | square_ | circle | triangle_ | `happy-sad` | thumb | custom_
+    ): Self = StObject.set(x, "univariateSymbolStyle", value.asInstanceOf[js.Any])
+    
+    inline def setUnivariateSymbolStyleUndefined: Self = StObject.set(x, "univariateSymbolStyle", js.undefined)
+    
+    inline def setUnivariateTheme(value: `high-to-low` | above | below | `above-and-below`): Self = StObject.set(x, "univariateTheme", value.asInstanceOf[js.Any])
+    
+    inline def setUnivariateThemeUndefined: Self = StObject.set(x, "univariateTheme", js.undefined)
     
     inline def setVisualVariables(value: js.Array[AuthoringInfoVisualVariableProperties]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
     
     inline def setVisualVariablesUndefined: Self = StObject.set(x, "visualVariables", js.undefined)
     
-    inline def setVisualVariablesVarargs(value: AuthoringInfoVisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
+    inline def setVisualVariablesVarargs(value: AuthoringInfoVisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value*))
   }
 }

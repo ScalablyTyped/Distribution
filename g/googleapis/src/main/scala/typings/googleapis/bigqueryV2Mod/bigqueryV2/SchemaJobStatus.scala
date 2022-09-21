@@ -7,23 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaJobStatus extends StObject {
   
   /**
-    * [Output-only] Final error result of the job. If present, indicates that
-    * the job has completed and was unsuccessful.
+    * [Output-only] Final error result of the job. If present, indicates that the job has completed and was unsuccessful.
     */
   var errorResult: js.UndefOr[SchemaErrorProto] = js.undefined
   
   /**
-    * [Output-only] The first errors encountered during the running of the job.
-    * The final message includes the number of errors that caused the process
-    * to stop. Errors here do not necessarily mean that the job has completed
-    * or was unsuccessful.
+    * [Output-only] The first errors encountered during the running of the job. The final message includes the number of errors that caused the process to stop. Errors here do not necessarily mean that the job has completed or was unsuccessful.
     */
   var errors: js.UndefOr[js.Array[SchemaErrorProto]] = js.undefined
   
   /**
     * [Output-only] Running state of the job.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaJobStatus {
   
@@ -42,9 +38,11 @@ object SchemaJobStatus {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: SchemaErrorProto*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SchemaErrorProto*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

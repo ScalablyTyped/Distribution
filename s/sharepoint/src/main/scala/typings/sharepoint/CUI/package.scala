@@ -1,76 +1,77 @@
 package typings.sharepoint.CUI
 
+import typings.microsoftAjax.Sys.EventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ButtonDock = typings.sharepoint.CUI.Component
+type ButtonDock = Component
 
-type CommandEventArgs = typings.microsoftAjax.Sys.EventArgs
+type CommandEventArgs = EventArgs
 
-type ContextMenu = typings.sharepoint.CUI.Menu
+type ContextMenu = Menu
 
-type ContextMenuDock = typings.sharepoint.CUI.Component
+type ContextMenuDock = Component
 
-type ContextMenuLauncher = typings.sharepoint.CUI.MenuLauncher
+type ContextMenuLauncher = MenuLauncher
 
-type ContextMenuRoot = typings.sharepoint.CUI.Root
+type ContextMenuRoot = Root
 
-type ContextMenuRootProperties = typings.sharepoint.CUI.RootProperties
+type ContextMenuRootProperties = RootProperties
 
-type ControlComponent = typings.sharepoint.CUI.Component
+type ControlComponent = Component
 
-type DeclarativeTemplate = typings.sharepoint.CUI.Template
+type DeclarativeTemplate = Template
 
-type Gallery = typings.sharepoint.CUI.Component
+type Gallery = Component
 
-type GroupPopup = typings.sharepoint.CUI.Component
+type GroupPopup = Component
 
-type GroupPopupLayout = typings.sharepoint.CUI.Layout
+type GroupPopupLayout = Layout
 
-type Jewel = typings.sharepoint.CUI.Root
+type Jewel = Root
 
-type JewelBuildContext = typings.sharepoint.CUI.BuildContext
+type JewelBuildContext = BuildContext
 
-type JewelBuildOptions = typings.sharepoint.CUI.BuildOptions
+type JewelBuildOptions = BuildOptions
 
-type JewelBuilder = typings.sharepoint.CUI.Builder
+type JewelBuilder = Builder
 
-type Menu = typings.sharepoint.CUI.Component
+type Menu = Component
 
-type MenuItem = typings.sharepoint.CUI.ControlComponent
+type MenuItem = ControlComponent
 
-type MenuLauncherControlProperties = typings.sharepoint.CUI.ControlProperties
+type MenuLauncherControlProperties = ControlProperties
 
-type MenuSection = typings.sharepoint.CUI.Component
+type MenuSection = Component
 
-type QAT = typings.sharepoint.CUI.Root
+type QAT = Root
 
-type QATBuildContext = typings.sharepoint.CUI.BuildContext
+type QATBuildContext = BuildContext
 
-type QATBuildOptions = typings.sharepoint.CUI.BuildOptions
+type QATBuildOptions = BuildOptions
 
-type QATBuilder = typings.sharepoint.CUI.Builder
+type QATBuilder = Builder
 
-type RibbonBuildContext = typings.sharepoint.CUI.BuildContext
+type RibbonBuildContext = BuildContext
 
-type RibbonBuildOptions = typings.sharepoint.CUI.BuildOptions
+type RibbonBuildOptions = BuildOptions
 
-type RibbonBuilder = typings.sharepoint.CUI.Builder
+type RibbonBuilder = Builder
 
-type RibbonEventCommandProperties = typings.sharepoint.CUI.RootEventCommandProperties
+type RibbonEventCommandProperties = RootEventCommandProperties
 
-type Row = typings.sharepoint.CUI.Component
+type Row = Component
 
-type Strip = typings.sharepoint.CUI.RibbonComponent
+type Strip = RibbonComponent
 
-type ToolTip = typings.sharepoint.CUI.Component
+type ToolTip = Component
 
-type Toolbar = typings.sharepoint.CUI.Root
+type Toolbar = Root
 
-type ToolbarBuildContext = typings.sharepoint.CUI.BuildContext
+type ToolbarBuildContext = BuildContext
 
-type ToolbarBuildOptions = typings.sharepoint.CUI.BuildOptions
+type ToolbarBuildOptions = BuildOptions
 
-type ToolbarBuilder = typings.sharepoint.CUI.Builder
+type ToolbarBuilder = Builder

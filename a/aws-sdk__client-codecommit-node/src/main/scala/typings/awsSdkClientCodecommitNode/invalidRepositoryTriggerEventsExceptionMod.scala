@@ -8,5 +8,5 @@ object invalidRepositoryTriggerEventsExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidRepositoryTriggerEventsException", "InvalidRepositoryTriggerEventsException")
   @js.native
-  val InvalidRepositoryTriggerEventsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidRepositoryTriggerEventsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

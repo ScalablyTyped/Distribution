@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class MarketplaceCatalog ()
+open class MarketplaceCatalog ()
   extends typings.awsSdk.allMod.MarketplaceCatalog {
   def this(options: ClientConfiguration) = this()
 }

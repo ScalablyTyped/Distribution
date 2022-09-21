@@ -13,11 +13,11 @@ trait VertexRemoveEventInfo
      with UpdateToolEventInfo {
   
   /**
-    * An array of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) with [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries representing the vertices that were removed.
+    * An array of x,y coordinates representing the vertices removed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
     */
-  var removed: js.Array[Graphic]
+  var removed: js.Array[Double]
   
   /**
     * Type is always `vertex-remove`.
@@ -39,7 +39,7 @@ object VertexRemoveEventInfo {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    removed: js.Array[Graphic],
+    removed: js.Array[Double],
     vertices: js.Array[VertexRemoveEventInfoVertices]
   ): VertexRemoveEventInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), removed = removed.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
@@ -49,14 +49,14 @@ object VertexRemoveEventInfo {
   
   extension [Self <: VertexRemoveEventInfo](x: Self) {
     
-    inline def setRemoved(value: js.Array[Graphic]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: js.Array[Double]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    inline def setRemovedVarargs(value: Graphic*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: Double*): Self = StObject.set(x, "removed", js.Array(value*))
     
     inline def setType(value: `vertex-remove`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setVertices(value: js.Array[VertexRemoveEventInfoVertices]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    inline def setVerticesVarargs(value: VertexRemoveEventInfoVertices*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: VertexRemoveEventInfoVertices*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

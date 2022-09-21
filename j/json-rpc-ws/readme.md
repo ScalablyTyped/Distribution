@@ -10,10 +10,10 @@ json-rpc websocket transport
 | ------------------ | :-------------: |
 | Full name          | json-rpc-ws |
 | Keywords           | json-rpc, websocket |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 2378 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 208.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/andyet/json-rpc-ws#readme)

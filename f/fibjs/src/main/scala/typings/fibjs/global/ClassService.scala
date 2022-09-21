@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_Service")
 @js.native
-class ClassService protected ()
+open class ClassService protected ()
   extends StObject
      with typings.fibjs.ClassService {
   /**

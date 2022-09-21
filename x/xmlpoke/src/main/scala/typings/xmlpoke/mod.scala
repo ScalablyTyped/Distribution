@@ -18,7 +18,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("xmlpoke", "CDataValue")
   @js.native
-  class CDataValue protected ()
+  open class CDataValue protected ()
     extends StObject
        with typings.xmlpoke.XmlPoke.CDataValue {
     def this(value: String) = this()
@@ -34,7 +34,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("xmlpoke", "XmlString")
   @js.native
-  class XmlString protected ()
+  open class XmlString protected ()
     extends StObject
        with XmlValue {
     def this(value: String) = this()

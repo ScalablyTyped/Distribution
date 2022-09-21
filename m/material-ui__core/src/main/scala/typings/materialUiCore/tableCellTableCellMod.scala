@@ -1,7 +1,6 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.anon.PartialClassNameMapTableCBody
+import typings.materialUiCore.anon.PartialClassNameMapTableC
 import typings.materialUiCore.materialUiCoreStrings.`additions removals`
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -59,18 +58,21 @@ import typings.materialUiCore.materialUiCoreStrings.tree
 import typings.materialUiCore.materialUiCoreStrings.url
 import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.materialUiCoreStrings.yes
+import typings.materialUiCore.tableTableMod.Padding
+import typings.materialUiCore.tableTableMod.Size
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
-import typings.react.mod.ComponentType
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
+import typings.react.mod.ElementType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
@@ -85,9 +87,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
 import typings.react.mod.Ref
-import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.ThHTMLAttributes
 import typings.react.mod.TouchEvent
@@ -98,6 +98,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.react.mod.global.JSX.Element
 import typings.react.reactStrings.baseline
 import typings.react.reactStrings.bottom
 import typings.react.reactStrings.middle
@@ -108,29 +109,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object tableCellTableCellMod extends Shortcut {
+object tableCellTableCellMod {
   
-  @JSImport("@material-ui/core/TableCell/TableCell", JSImport.Default)
+  @JSImport("@material-ui/core/TableCell/TableCell", JSImport.Namespace)
   @js.native
-  val default: ComponentType[TableCellProps] = js.native
+  val ^ : js.Any = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.default
-    - typings.materialUiCore.materialUiCoreStrings.checkbox
-    - typings.materialUiCore.materialUiCoreStrings.dense
-    - typings.materialUiCore.materialUiCoreStrings.none
-  */
-  trait Padding extends StObject
-  object Padding {
-    
-    inline def default: typings.materialUiCore.materialUiCoreStrings.default = "default".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.default]
-    
-    inline def checkbox: typings.materialUiCore.materialUiCoreStrings.checkbox = "checkbox".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.checkbox]
-    
-    inline def dense: typings.materialUiCore.materialUiCoreStrings.dense = "dense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dense]
-    
-    inline def none: typings.materialUiCore.materialUiCoreStrings.none = "none".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.none]
-  }
+  inline def default(props: TableCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiCore.materialUiCoreBooleans.`false`
@@ -189,13 +174,25 @@ object tableCellTableCellMod extends Shortcut {
     - typings.materialUiCore.materialUiCoreStrings.head
     - typings.materialUiCore.materialUiCoreStrings.body
     - typings.materialUiCore.materialUiCoreStrings.footer
-    - typings.materialUiCore.materialUiCoreStrings.numeric
-    - typings.materialUiCore.materialUiCoreStrings.paddingDense
+    - typings.materialUiCore.materialUiCoreStrings.alignLeft
+    - typings.materialUiCore.materialUiCoreStrings.alignCenter
+    - typings.materialUiCore.materialUiCoreStrings.alignRight
+    - typings.materialUiCore.materialUiCoreStrings.alignJustify
+    - typings.materialUiCore.materialUiCoreStrings.sizeSmall
     - typings.materialUiCore.materialUiCoreStrings.paddingCheckbox
     - typings.materialUiCore.materialUiCoreStrings.paddingNone
+    - typings.materialUiCore.materialUiCoreStrings.stickyHeader
   */
   trait TableCellClassKey extends StObject
   object TableCellClassKey {
+    
+    inline def alignCenter: typings.materialUiCore.materialUiCoreStrings.alignCenter = "alignCenter".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.alignCenter]
+    
+    inline def alignJustify: typings.materialUiCore.materialUiCoreStrings.alignJustify = "alignJustify".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.alignJustify]
+    
+    inline def alignLeft: typings.materialUiCore.materialUiCoreStrings.alignLeft = "alignLeft".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.alignLeft]
+    
+    inline def alignRight: typings.materialUiCore.materialUiCoreStrings.alignRight = "alignRight".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.alignRight]
     
     inline def body: typings.materialUiCore.materialUiCoreStrings.body = "body".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body]
     
@@ -203,15 +200,15 @@ object tableCellTableCellMod extends Shortcut {
     
     inline def head: typings.materialUiCore.materialUiCoreStrings.head = "head".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.head]
     
-    inline def numeric: typings.materialUiCore.materialUiCoreStrings.numeric = "numeric".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.numeric]
-    
     inline def paddingCheckbox: typings.materialUiCore.materialUiCoreStrings.paddingCheckbox = "paddingCheckbox".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paddingCheckbox]
-    
-    inline def paddingDense: typings.materialUiCore.materialUiCoreStrings.paddingDense = "paddingDense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paddingDense]
     
     inline def paddingNone: typings.materialUiCore.materialUiCoreStrings.paddingNone = "paddingNone".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paddingNone]
     
     inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+    
+    inline def sizeSmall: typings.materialUiCore.materialUiCoreStrings.sizeSmall = "sizeSmall".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sizeSmall]
+    
+    inline def stickyHeader: typings.materialUiCore.materialUiCoreStrings.stickyHeader = "stickyHeader".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.stickyHeader]
   }
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TableCell/TableCell.TableCellBaseProps, @material-ui/core.@material-ui/core/TableCell/TableCell.TableCellClassKey, 'align'> */
@@ -223,15 +220,21 @@ object tableCellTableCellMod extends Shortcut {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Set the text-align on the table cell content.
+      *
+      * Monetary or generally number fields **should be right aligned** as that allows
+      * you to add them up quickly in your head without having to worry about decimals.
+      */
     var align: js.UndefOr[inherit | left | center | right | justify] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -249,21 +252,21 @@ object tableCellTableCellMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -277,11 +280,11 @@ object tableCellTableCellMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -293,13 +296,13 @@ object tableCellTableCellMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -309,7 +312,7 @@ object tableCellTableCellMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -329,17 +332,27 @@ object tableCellTableCellMod extends Shortcut {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * The table cell contents.
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
-    var classes: js.UndefOr[PartialClassNameMapTableCBody] = js.undefined
+    /**
+      * Override or extend the styles applied to the component.
+      */
+    var classes: js.UndefOr[PartialClassNameMapTableC] = js.undefined
     
     var colSpan: js.UndefOr[Double] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[ReactType[TableCellBaseProps]] = js.undefined
+    /**
+      * The component used for the root node.
+      * Either a string to use a HTML element or a component.
+      */
+    var component: js.UndefOr[ElementType[TableCellBaseProps]] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -365,9 +378,9 @@ object tableCellTableCellMod extends Shortcut {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -384,8 +397,6 @@ object tableCellTableCellMod extends Shortcut {
     var itemType: js.UndefOr[String] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
-    
-    var numeric: js.UndefOr[Boolean] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLTableHeaderCellElement]] = js.undefined
     
@@ -545,6 +556,11 @@ object tableCellTableCellMod extends Shortcut {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLTableHeaderCellElement]] = js.undefined
     
+    /**
+      * Sets the padding applied to the cell.
+      * By default, the Table parent component set the value (`normal`).
+      * `default` is deprecated, use `normal` instead.
+      */
     var padding: js.UndefOr[Padding] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
@@ -555,20 +571,34 @@ object tableCellTableCellMod extends Shortcut {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rowSpan: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Set scope attribute.
+      */
     var scope: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Specify the size of the cell.
+      * By default, the Table parent component set the value (`medium`).
+      */
+    var size: js.UndefOr[Size] = js.undefined
+    
     var slot: js.UndefOr[String] = js.undefined
     
+    /**
+      * Set aria-sort direction.
+      */
     var sortDirection: js.UndefOr[SortDirection] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
@@ -593,6 +623,10 @@ object tableCellTableCellMod extends Shortcut {
         typings.materialUiCore.materialUiCoreStrings.top | typings.materialUiCore.materialUiCoreStrings.middle | typings.materialUiCore.materialUiCoreStrings.bottom | typings.materialUiCore.materialUiCoreStrings.baseline
       ] = js.undefined
     
+    /**
+      * Specify the cell type.
+      * By default, the TableHead, TableBody or TableFooter parent component set the value.
+      */
     var variant: js.UndefOr[head | body | footer] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -628,7 +662,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -636,7 +670,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -672,7 +706,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -684,7 +718,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -692,7 +726,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -700,7 +734,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -728,15 +762,15 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -760,7 +794,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -770,7 +804,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -790,7 +824,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -838,7 +872,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClasses(value: PartialClassNameMapTableCBody): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: PartialClassNameMapTableC): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
@@ -850,7 +884,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setComponent(value: ReactType[TableCellBaseProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[TableCellBaseProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -878,7 +912,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -904,13 +938,13 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
@@ -948,10 +982,6 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
-      
-      inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
-      
       inline def setOnAbort(value: SyntheticEvent[HTMLTableHeaderCellElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
       inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
@@ -976,7 +1006,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLTableHeaderCellElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLTableHeaderCellElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1076,7 +1106,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLTableHeaderCellElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLTableHeaderCellElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1288,6 +1318,14 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1296,7 +1334,7 @@ object tableCellTableCellMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1311,6 +1349,10 @@ object tableCellTableCellMod extends Shortcut {
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
@@ -1375,9 +1417,4 @@ object tableCellTableCellMod extends Shortcut {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
-  
-  type _To = ComponentType[TableCellProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `tableCellTableCellMod.foo` */
-  override def _to: ComponentType[TableCellProps] = default
 }

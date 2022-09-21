@@ -1,12 +1,17 @@
 package typings.babylonjs
 
+import typings.std.DOMPointReadOnly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait XRPose extends StObject {
   
+  val angularVelocity: js.UndefOr[DOMPointReadOnly] = js.undefined
+  
   val emulatedPosition: Boolean
+  
+  val linearVelocity: js.UndefOr[DOMPointReadOnly] = js.undefined
   
   val transform: XRRigidTransform
 }
@@ -19,7 +24,15 @@ object XRPose {
   
   extension [Self <: XRPose](x: Self) {
     
+    inline def setAngularVelocity(value: DOMPointReadOnly): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
+    
+    inline def setAngularVelocityUndefined: Self = StObject.set(x, "angularVelocity", js.undefined)
+    
     inline def setEmulatedPosition(value: Boolean): Self = StObject.set(x, "emulatedPosition", value.asInstanceOf[js.Any])
+    
+    inline def setLinearVelocity(value: DOMPointReadOnly): Self = StObject.set(x, "linearVelocity", value.asInstanceOf[js.Any])
+    
+    inline def setLinearVelocityUndefined: Self = StObject.set(x, "linearVelocity", js.undefined)
     
     inline def setTransform(value: XRRigidTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
   }

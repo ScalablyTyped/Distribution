@@ -10,10 +10,10 @@ object syncProblemMod {
   
   @JSImport("material-ui/svg-icons/notification/sync-problem", JSImport.Default)
   @js.native
-  class default () extends NotificationSyncProblem
+  open class default () extends NotificationSyncProblem
   
   @JSImport("material-ui/svg-icons/notification/sync-problem", "NotificationSyncProblem")
   @js.native
-  class NotificationSyncProblem ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationSyncProblem ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

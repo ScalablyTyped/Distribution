@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object uuidMod {
   
-  @JSImport("vscode-languageclient/lib/utils/uuid", JSImport.Namespace)
+  @JSImport("vscode-languageclient/lib/common/utils/uuid", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("vscode-languageclient/lib/utils/uuid", "empty")
+  @JSImport("vscode-languageclient/lib/common/utils/uuid", "empty")
   @js.native
   val empty: UUID = js.native
   

@@ -3,6 +3,7 @@ package typings.reactNativeFlipCard
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
@@ -14,16 +15,15 @@ object mod {
   
   @JSImport("react-native-flip-card", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FlipCardProps, js.Object, js.Any]
+  open class default ()
+    extends Component[FlipCardProps, js.Object, Any]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-flip-card", "Back")
   @js.native
-  class Back protected ()
-    extends Component[BackProps, ComponentState, js.Any] {
+  open class Back protected () extends Component[BackProps, ComponentState, Any] {
     def this(props: BackProps) = this()
-    def this(props: BackProps, context: js.Any) = this()
+    def this(props: BackProps, context: Any) = this()
   }
   @JSImport("react-native-flip-card", "Back")
   @js.native
@@ -32,10 +32,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-native-flip-card", "Face")
   @js.native
-  class Face protected ()
-    extends Component[FaceProps, ComponentState, js.Any] {
+  open class Face protected () extends Component[FaceProps, ComponentState, Any] {
     def this(props: FaceProps) = this()
-    def this(props: FaceProps, context: js.Any) = this()
+    def this(props: FaceProps, context: Any) = this()
   }
   @JSImport("react-native-flip-card", "Face")
   @js.native
@@ -62,7 +61,7 @@ object mod {
       
       inline def setChilren(value: js.Array[Element]): Self = StObject.set(x, "chilren", value.asInstanceOf[js.Any])
       
-      inline def setChilrenVarargs(value: Element*): Self = StObject.set(x, "chilren", js.Array(value :_*))
+      inline def setChilrenVarargs(value: Element*): Self = StObject.set(x, "chilren", js.Array(value*))
       
       inline def setFlipHorizontal(value: Boolean): Self = StObject.set(x, "flipHorizontal", value.asInstanceOf[js.Any])
       
@@ -87,17 +86,19 @@ object mod {
       
       inline def setChilren(value: js.Array[Element]): Self = StObject.set(x, "chilren", value.asInstanceOf[js.Any])
       
-      inline def setChilrenVarargs(value: Element*): Self = StObject.set(x, "chilren", js.Array(value :_*))
+      inline def setChilrenVarargs(value: Element*): Self = StObject.set(x, "chilren", js.Array(value*))
     }
   }
   
-  type FlipCard = Component[FlipCardProps, js.Object, js.Any]
+  type FlipCard = Component[FlipCardProps, js.Object, Any]
   
   trait FlipCardProps extends StObject {
     
     var alignHeight: js.UndefOr[Boolean] = js.undefined
     
     var alignWidth: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[js.Array[ReactNode]] = js.undefined
     
     var clickable: js.UndefOr[Boolean] = js.undefined
     
@@ -135,6 +136,12 @@ object mod {
       inline def setAlignWidth(value: Boolean): Self = StObject.set(x, "alignWidth", value.asInstanceOf[js.Any])
       
       inline def setAlignWidthUndefined: Self = StObject.set(x, "alignWidth", js.undefined)
+      
+      inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
       

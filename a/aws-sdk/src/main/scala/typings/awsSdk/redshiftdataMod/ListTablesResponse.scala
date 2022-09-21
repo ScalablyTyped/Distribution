@@ -33,6 +33,6 @@ object ListTablesResponse {
     
     inline def setTablesUndefined: Self = StObject.set(x, "Tables", js.undefined)
     
-    inline def setTablesVarargs(value: TableMember*): Self = StObject.set(x, "Tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: TableMember*): Self = StObject.set(x, "Tables", js.Array(value*))
   }
 }

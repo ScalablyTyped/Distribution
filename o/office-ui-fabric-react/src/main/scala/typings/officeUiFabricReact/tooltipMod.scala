@@ -152,14 +152,14 @@ object tooltipMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipBase")
   @js.native
-  class TooltipBase protected ()
+  open class TooltipBase protected ()
     extends typings.officeUiFabricReact.tooltipBaseMod.TooltipBase {
     def this(props: ITooltipProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ITooltipProps, context: js.Any) = this()
+    def this(props: ITooltipProps, context: Any) = this()
   }
   /* static members */
   object TooltipBase {
@@ -194,7 +194,7 @@ object tooltipMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipHostBase")
   @js.native
-  class TooltipHostBase protected ()
+  open class TooltipHostBase protected ()
     extends typings.officeUiFabricReact.tooltipHostBaseMod.TooltipHostBase {
     def this(props: ITooltipHostProps) = this()
   }
@@ -207,8 +207,8 @@ object tooltipMod {
     
     @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipHostBase._currentVisibleTooltip")
     @js.native
-    def _currentVisibleTooltip: js.Any = js.native
-    inline def _currentVisibleTooltip_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_currentVisibleTooltip")(x.asInstanceOf[js.Any])
+    def _currentVisibleTooltip: Any = js.native
+    inline def _currentVisibleTooltip_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_currentVisibleTooltip")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipHostBase.defaultProps")
     @js.native

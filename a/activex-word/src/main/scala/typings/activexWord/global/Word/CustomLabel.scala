@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CustomLabel")
 @js.native
-/* private */ class CustomLabel ()
+/* private */ open class CustomLabel ()
   extends StObject
      with typings.activexWord.Word.CustomLabel {
   
@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PageSize: WdCustomLabelPageSize = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var SideMargin: Double = js.native

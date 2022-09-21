@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Point")
 @js.native
-class Point protected ()
+open class Point protected ()
   extends StObject
      with typings.scriptableIos.Point {
   /**

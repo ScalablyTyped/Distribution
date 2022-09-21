@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateS3ResourcesRequest extends StObject {
   
   /**
-    * The ID of the Amazon Macie Classic member account whose resources you want to associate with Macie Classic. 
+    * (Discontinued) The ID of the Amazon Macie Classic member account whose resources you want to associate with Macie Classic.
     */
   var memberAccountId: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
-    * The S3 resources that you want to associate with Amazon Macie Classic for monitoring and data classification. 
+    * (Discontinued) The S3 resources that you want to associate with Amazon Macie Classic for monitoring and data classification.
     */
   var s3Resources: S3ResourcesClassification
 }
@@ -31,6 +31,6 @@ object AssociateS3ResourcesRequest {
     
     inline def setS3Resources(value: S3ResourcesClassification): Self = StObject.set(x, "s3Resources", value.asInstanceOf[js.Any])
     
-    inline def setS3ResourcesVarargs(value: S3ResourceClassification*): Self = StObject.set(x, "s3Resources", js.Array(value :_*))
+    inline def setS3ResourcesVarargs(value: S3ResourceClassification*): Self = StObject.set(x, "s3Resources", js.Array(value*))
   }
 }

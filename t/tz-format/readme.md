@@ -10,9 +10,9 @@ Format a date with timezone
 | Full name          | tz-format |
 | Keywords           | datetime, date-time, format, timezone, tz, iso |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 11583 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1169.6666666666667 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/samverschueren/tz-format#readme)

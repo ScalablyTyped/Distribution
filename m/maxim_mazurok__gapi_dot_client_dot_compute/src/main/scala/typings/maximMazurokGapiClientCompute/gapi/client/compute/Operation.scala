@@ -41,6 +41,9 @@ trait Operation extends StObject {
   /** [Output Only] Name of the operation. */
   var name: js.UndefOr[String] = js.undefined
   
+  /** [Output Only] An ID that represents a group of operations, such as when a group of operations results from a `bulkInsert` API request. */
+  var operationGroupId: js.UndefOr[String] = js.undefined
+  
   /** [Output Only] The type of operation, such as `insert`, `update`, or `delete`, and so on. */
   var operationType: js.UndefOr[String] = js.undefined
   
@@ -136,6 +139,10 @@ object Operation {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setOperationGroupId(value: String): Self = StObject.set(x, "operationGroupId", value.asInstanceOf[js.Any])
+    
+    inline def setOperationGroupIdUndefined: Self = StObject.set(x, "operationGroupId", js.undefined)
+    
     inline def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
@@ -180,7 +187,7 @@ object Operation {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value*))
     
     inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     

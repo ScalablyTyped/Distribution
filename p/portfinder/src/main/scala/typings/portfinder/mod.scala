@@ -1,6 +1,5 @@
 package typings.portfinder
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object mod {
   inline def getPorts(
     count: Double,
     options: PortFinderOptions,
-    callback: js.Function2[/* err */ Error, /* ports */ js.Array[Double], Unit]
+    callback: js.Function2[/* err */ js.Error, /* ports */ js.Array[Double], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPorts")(count.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait PortFinderOptions extends StObject {
@@ -80,5 +79,5 @@ object mod {
     }
   }
   
-  type PortfinderCallback = js.Function2[/* err */ Error, /* port */ Double, Unit]
+  type PortfinderCallback = js.Function2[/* err */ js.Error, /* port */ Double, Unit]
 }

@@ -38,7 +38,7 @@ object GcpUserAccessBinding {
     
     inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    inline def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value*))
     
     inline def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     

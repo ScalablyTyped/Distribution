@@ -8,5 +8,5 @@ object deleteImportedKeyMaterialOutputMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/DeleteImportedKeyMaterialOutput", "DeleteImportedKeyMaterialOutput")
   @js.native
-  val DeleteImportedKeyMaterialOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteImportedKeyMaterialOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

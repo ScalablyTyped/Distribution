@@ -1,6 +1,6 @@
 package typings.vegaLite
 
-import typings.vegaLite.anon.`4`
+import typings.vegaLite.anon.`6`
 import typings.vegaLite.channeldefMod.Field
 import typings.vegaLite.compositemarkBaseMod.CompositeMarkNormalizer
 import typings.vegaLite.compositemarkCommonMod.GenericCompositeMarkDef
@@ -12,6 +12,8 @@ import typings.vegaLite.errorbarMod.ErrorEncoding
 import typings.vegaLite.normalizeBaseMod.NormalizerParams
 import typings.vegaLite.specLayerMod.NormalizedLayerSpec
 import typings.vegaLite.specUnitMod.GenericUnitSpec
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.vegaLiteStrings.band
 import typings.vegaLite.vegaLiteStrings.borders
 import typings.vegaLite.vegaLiteStrings.errorband
@@ -38,12 +40,15 @@ object errorbandMod {
   @js.native
   val errorBandNormalizer: CompositeMarkNormalizer[errorband] = js.native
   
-  inline def normalizeErrorBand(spec: GenericUnitSpec[Encoding[String], ErrorBand | ErrorBandDef], hasConfig: NormalizerParams): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBand")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
+  inline def normalizeErrorBand(
+    spec: GenericUnitSpec[Encoding[String], ErrorBand | ErrorBandDef, SelectionParameter[SelectionType]],
+    hasConfig: NormalizerParams
+  ): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBand")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
   
   type ErrorBand = errorband
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Record<vega-lite.vega-lite/build/src/compositemark/errorband.ErrorBandPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>> ]:? std.Record<vega-lite.vega-lite/build/src/compositemark/errorband.ErrorBandPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>>[P]} */ trait ErrorBandConfig extends StObject {
+  - Dropped {[ P in keyof std.Record<vega-lite.vega-lite/build/src/compositemark/errorband.ErrorBandPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>> ]:? std.Record<vega-lite.vega-lite/build/src/compositemark/errorband.ErrorBandPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef>>[P]} */ trait ErrorBandConfig extends StObject {
     
     /**
       * The center of the error band. Available options include:
@@ -141,7 +146,7 @@ object errorbandMod {
     }
   }
   
-  type ErrorBandDef = GenericCompositeMarkDef[ErrorBand] & ErrorBandConfig & `4`
+  type ErrorBandDef = GenericCompositeMarkDef[ErrorBand] & ErrorBandConfig & `6`
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.band
@@ -151,5 +156,9 @@ object errorbandMod {
   
   type ErrorBandPartsMixins = PartsMixins[ErrorBandPart]
   
-  type ErrorBandUnitSpec[EE] = GenericUnitSpec[ErrorEncoding[Field] & EE, ErrorBand | ErrorBandDef]
+  type ErrorBandUnitSpec[EE] = GenericUnitSpec[
+    ErrorEncoding[Field] & EE, 
+    ErrorBand | ErrorBandDef, 
+    SelectionParameter[SelectionType]
+  ]
 }

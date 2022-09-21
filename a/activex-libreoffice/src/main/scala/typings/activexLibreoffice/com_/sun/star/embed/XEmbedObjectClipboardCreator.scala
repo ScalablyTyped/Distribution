@@ -38,7 +38,7 @@ object XEmbedObjectClipboardCreator {
   inline def apply(
     acquire: () => Unit,
     createInstanceInitFromClipboard: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XEmbedObjectClipboardCreator = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstanceInitFromClipboard = js.Any.fromFunction3(createInstanceInitFromClipboard), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

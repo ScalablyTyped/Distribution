@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.PointCollection")
 @js.native
-class PointCollection protected ()
+open class PointCollection protected ()
   extends StObject
      with typings.bmapgl.BMapGL.PointCollection {
   def this(points: js.Array[typings.bmapgl.BMapGL.Point]) = this()

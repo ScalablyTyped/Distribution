@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-types
 
-Typings are for version 7.0.1
+Typings are for version 12.0.2
 
 ## Library description:
 Types for OpenAPI documents.
@@ -10,10 +10,10 @@ Types for OpenAPI documents.
 | ------------------ | :-------------: |
 | Full name          | openapi-types |
 | Keywords           | openapi, swagger, types, typescript |
-| # releases         | 8 |
-| # dependents       | 106 |
-| # downloads        | 18369758 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 3432978.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/openapi-types#readme)

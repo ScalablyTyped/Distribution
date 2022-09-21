@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new UriToLinesMapping.
   * @param [properties] Properties to set
   */
-class UriToLinesMapping ()
+open class UriToLinesMapping ()
   extends StObject
      with IUriToLinesMapping {
   def this(properties: IUriToLinesMapping) = this()
@@ -28,14 +27,14 @@ class UriToLinesMapping ()
   /** UriToLinesMapping lines. */
   @JSName("lines")
   var lines_UriToLinesMapping: js.Array[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)
   ] = js.native
   
   /**
     * Converts this UriToLinesMapping to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object UriToLinesMapping {
   
@@ -52,6 +51,8 @@ object UriToLinesMapping {
   inline def create(): UriToLinesMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[UriToLinesMapping]
   inline def create(properties: IUriToLinesMapping): UriToLinesMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[UriToLinesMapping]
   
+  inline def decode(reader: js.typedarray.Uint8Array): UriToLinesMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UriToLinesMapping]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): UriToLinesMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UriToLinesMapping]
   /**
     * Decodes an UriToLinesMapping message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -63,9 +64,8 @@ object UriToLinesMapping {
   /* static member */
   inline def decode(reader: Reader): UriToLinesMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UriToLinesMapping]
   inline def decode(reader: Reader, length: Double): UriToLinesMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UriToLinesMapping]
-  inline def decode(reader: Uint8Array): UriToLinesMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UriToLinesMapping]
-  inline def decode(reader: Uint8Array, length: Double): UriToLinesMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UriToLinesMapping]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): UriToLinesMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UriToLinesMapping]
   /**
     * Decodes an UriToLinesMapping message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -75,7 +75,6 @@ object UriToLinesMapping {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): UriToLinesMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UriToLinesMapping]
-  inline def decodeDelimited(reader: Uint8Array): UriToLinesMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UriToLinesMapping]
   
   /**
     * Encodes the specified UriToLinesMapping message. Does not implicitly {@link io.cucumber.messages.UriToLinesMapping.verify|verify} messages.
@@ -103,7 +102,7 @@ object UriToLinesMapping {
     * @returns UriToLinesMapping
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): UriToLinesMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[UriToLinesMapping]
+  inline def fromObject(`object`: StringDictionary[Any]): UriToLinesMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[UriToLinesMapping]
   
   /**
     * Creates a plain object from an UriToLinesMapping message. Also converts values to other types if specified.
@@ -112,8 +111,8 @@ object UriToLinesMapping {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: UriToLinesMapping): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: UriToLinesMapping, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: UriToLinesMapping): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: UriToLinesMapping, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an UriToLinesMapping message.
@@ -121,5 +120,5 @@ object UriToLinesMapping {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

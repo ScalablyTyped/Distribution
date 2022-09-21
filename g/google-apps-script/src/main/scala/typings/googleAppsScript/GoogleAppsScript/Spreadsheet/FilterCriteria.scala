@@ -13,7 +13,7 @@ trait FilterCriteria extends StObject {
   
   def getCriteriaType(): BooleanCriteria
   
-  def getCriteriaValues(): js.Array[js.Any]
+  def getCriteriaValues(): js.Array[Any]
   
   def getHiddenValues(): js.Array[String]
   
@@ -24,7 +24,7 @@ object FilterCriteria {
   inline def apply(
     copy: () => FilterCriteriaBuilder,
     getCriteriaType: () => BooleanCriteria,
-    getCriteriaValues: () => js.Array[js.Any],
+    getCriteriaValues: () => js.Array[Any],
     getHiddenValues: () => js.Array[String],
     getVisibleValues: () => js.Array[String]
   ): FilterCriteria = {
@@ -38,7 +38,7 @@ object FilterCriteria {
     
     inline def setGetCriteriaType(value: () => BooleanCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
-    inline def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
+    inline def setGetCriteriaValues(value: () => js.Array[Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
     inline def setGetHiddenValues(value: () => js.Array[String]): Self = StObject.set(x, "getHiddenValues", js.Any.fromFunction0(value))
     

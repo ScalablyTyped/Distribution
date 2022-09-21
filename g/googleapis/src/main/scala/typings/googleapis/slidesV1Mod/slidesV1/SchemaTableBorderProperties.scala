@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The border styling properties of the TableBorderCell.
-  */
 trait SchemaTableBorderProperties extends StObject {
   
   /**
     * The dash style of the border.
     */
-  var dashStyle: js.UndefOr[String] = js.undefined
+  var dashStyle: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The fill of the table border.
@@ -34,6 +31,8 @@ object SchemaTableBorderProperties {
   extension [Self <: SchemaTableBorderProperties](x: Self) {
     
     inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashStyleNull: Self = StObject.set(x, "dashStyle", null)
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     

@@ -20,8 +20,8 @@ object mod {
   
   @JSImport("react-imgpro", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ProcessImageProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ProcessImageProps, js.Object, Any]
   
   object ReactImgpro {
     
@@ -46,7 +46,7 @@ object mod {
       inline def neighbor: typings.reactImgpro.reactImgproStrings.neighbor = "neighbor".asInstanceOf[typings.reactImgpro.reactImgproStrings.neighbor]
     }
     
-    type ProcessImage = Component[ProcessImageProps, js.Object, js.Any]
+    type ProcessImage = Component[ProcessImageProps, js.Object, Any]
     
     trait ProcessImageProps extends StObject {
       

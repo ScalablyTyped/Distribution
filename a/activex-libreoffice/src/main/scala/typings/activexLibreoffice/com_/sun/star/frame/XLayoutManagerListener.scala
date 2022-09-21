@@ -26,15 +26,15 @@ trait XLayoutManagerListener
     * @param eLayoutEvent identifies the layout event that has occurred.
     * @param aInfo provides additional information about the event. The type of info depends on the event.
     */
-  def layoutEvent(aSource: EventObject, eLayoutEvent: Double, aInfo: js.Any): Unit
+  def layoutEvent(aSource: EventObject, eLayoutEvent: Double, aInfo: Any): Unit
 }
 object XLayoutManagerListener {
   
   inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
-    layoutEvent: (EventObject, Double, js.Any) => Unit,
-    queryInterface: `type` => js.Any,
+    layoutEvent: (EventObject, Double, Any) => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XLayoutManagerListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), layoutEvent = js.Any.fromFunction3(layoutEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -43,6 +43,6 @@ object XLayoutManagerListener {
   
   extension [Self <: XLayoutManagerListener](x: Self) {
     
-    inline def setLayoutEvent(value: (EventObject, Double, js.Any) => Unit): Self = StObject.set(x, "layoutEvent", js.Any.fromFunction3(value))
+    inline def setLayoutEvent(value: (EventObject, Double, Any) => Unit): Self = StObject.set(x, "layoutEvent", js.Any.fromFunction3(value))
   }
 }

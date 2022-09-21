@@ -1,12 +1,13 @@
 package typings.seleniumWebdriver.mod
 
+import typings.seleniumWebdriver.webdriverMod.ShadowRootPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "WebElement")
 @js.native
-class WebElement protected ()
+open class WebElement protected ()
   extends StObject
      with Serializable[IWebElementId] {
   def this(driver: WebDriver, id: String) = this()
@@ -157,6 +158,14 @@ class WebElement protected ()
     * the document element, and the element's size in pixels.
     */
   def getRect(): js.Promise[IRectangle] = js.native
+  
+  /**
+    * Get the shadow root of the current web element.
+    * @returns {!Promise<ShadowRoot>} A promise that will be
+    *      resolved with the elements shadow root or rejected
+    *      with {@link NoSuchShadowRootError}
+    */
+  def getShadowRoot(): ShadowRootPromise = js.native
   
   /**
     * DEPRECATED 3.0

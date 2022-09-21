@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDetectorRequest extends StObject {
   
   /**
-    * An object that describes which data sources will be updated.
+    * Describes which data sources will be updated.
     */
   var DataSources: js.UndefOr[DataSourceConfigurations] = js.undefined
   

@@ -11,11 +11,11 @@ trait MenuOptions
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.undefined
+  var icons: js.UndefOr[Any] = js.undefined
   
   var menus: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[Any] = js.undefined
   
   // TODO
   var role: js.UndefOr[String] = js.undefined
@@ -33,7 +33,7 @@ object MenuOptions {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setIcons(value: js.Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
@@ -41,7 +41,7 @@ object MenuOptions {
     
     inline def setMenusUndefined: Self = StObject.set(x, "menus", js.undefined)
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     

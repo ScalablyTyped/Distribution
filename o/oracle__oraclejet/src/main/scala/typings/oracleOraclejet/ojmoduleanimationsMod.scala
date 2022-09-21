@@ -140,23 +140,17 @@ object ojmoduleanimationsMod {
     
     var isInitial: Boolean
     
-    var newViewModel: js.Any
+    var newViewModel: Any
     
     var node: Element
     
-    var oldViewModel: js.Any
+    var oldViewModel: Any
     
-    def valueAccessor(): js.Any
+    def valueAccessor(): Any
   }
   object SwitcherCallBackParam {
     
-    inline def apply(
-      isInitial: Boolean,
-      newViewModel: js.Any,
-      node: Element,
-      oldViewModel: js.Any,
-      valueAccessor: () => js.Any
-    ): SwitcherCallBackParam = {
+    inline def apply(isInitial: Boolean, newViewModel: Any, node: Element, oldViewModel: Any, valueAccessor: () => Any): SwitcherCallBackParam = {
       val __obj = js.Dynamic.literal(isInitial = isInitial.asInstanceOf[js.Any], newViewModel = newViewModel.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], oldViewModel = oldViewModel.asInstanceOf[js.Any], valueAccessor = js.Any.fromFunction0(valueAccessor))
       __obj.asInstanceOf[SwitcherCallBackParam]
     }
@@ -165,13 +159,13 @@ object ojmoduleanimationsMod {
       
       inline def setIsInitial(value: Boolean): Self = StObject.set(x, "isInitial", value.asInstanceOf[js.Any])
       
-      inline def setNewViewModel(value: js.Any): Self = StObject.set(x, "newViewModel", value.asInstanceOf[js.Any])
+      inline def setNewViewModel(value: Any): Self = StObject.set(x, "newViewModel", value.asInstanceOf[js.Any])
       
       inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      inline def setOldViewModel(value: js.Any): Self = StObject.set(x, "oldViewModel", value.asInstanceOf[js.Any])
+      inline def setOldViewModel(value: Any): Self = StObject.set(x, "oldViewModel", value.asInstanceOf[js.Any])
       
-      inline def setValueAccessor(value: () => js.Any): Self = StObject.set(x, "valueAccessor", js.Any.fromFunction0(value))
+      inline def setValueAccessor(value: () => Any): Self = StObject.set(x, "valueAccessor", js.Any.fromFunction0(value))
     }
   }
 }

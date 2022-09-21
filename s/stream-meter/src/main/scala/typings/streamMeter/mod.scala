@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("stream-meter", "StreamMeter")
   @js.native
-  class StreamMeter () extends Transform {
+  open class StreamMeter () extends Transform {
     def this(maxBytes: Double) = this()
     
     var bytes: Double = js.native

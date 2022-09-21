@@ -9,7 +9,7 @@ trait HCEMessageRes extends StObject {
   /**
     * 客户端接收到 NFC 设备的指令
     */
-  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 消息类型
@@ -30,11 +30,11 @@ object HCEMessageRes {
   
   extension [Self <: HCEMessageRes](x: Self) {
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setMessageType(value: Double): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     

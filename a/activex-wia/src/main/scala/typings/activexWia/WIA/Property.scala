@@ -26,7 +26,7 @@ trait Property extends StObject {
   val SubType: WiaSubType
   
   /** Returns the default Property Value if the SubType is not UnspecifiedSubType */
-  val SubTypeDefault: js.Any
+  val SubTypeDefault: Any
   
   /** Returns the maximum valid Property Value if the SubType is RangeSubType */
   val SubTypeMax: Double
@@ -39,16 +39,16 @@ trait Property extends StObject {
   
   /** Returns the specified item in the vector by position */
   /** Returns a Vector of valid Property Values if the SubType is ListSubType or valid flag Values that can be ored together if the SubType is FlagSubType */
-  def SubTypeValues(Index: Double): js.Any
+  def SubTypeValues(Index: Double): Any
   /** Returns a Vector of valid Property Values if the SubType is ListSubType or valid flag Values that can be ored together if the SubType is FlagSubType */
   @JSName("SubTypeValues")
-  val SubTypeValues_Original: Vector[js.Any]
+  val SubTypeValues_Original: Vector[Any]
   
   /** Returns either a WiaPropertyType or a WiaImagePropertyType */
   val Type: Double
   
   /** Returns/Sets the Property Value */
-  var Value: js.Any
+  var Value: Any
   
   /* private */ @JSName("WIA.Property_typekey")
   var WIADotProperty_typekey: Property
@@ -61,13 +61,13 @@ object Property {
     Name: String,
     PropertyID: Double,
     SubType: WiaSubType,
-    SubTypeDefault: js.Any,
+    SubTypeDefault: Any,
     SubTypeMax: Double,
     SubTypeMin: Double,
     SubTypeStep: Double,
-    SubTypeValues: Vector[js.Any],
+    SubTypeValues: Vector[Any],
     Type: Double,
-    Value: js.Any,
+    Value: Any,
     WIADotProperty_typekey: Property
   ): Property = {
     val __obj = js.Dynamic.literal(IsReadOnly = IsReadOnly.asInstanceOf[js.Any], IsVector = IsVector.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PropertyID = PropertyID.asInstanceOf[js.Any], SubType = SubType.asInstanceOf[js.Any], SubTypeDefault = SubTypeDefault.asInstanceOf[js.Any], SubTypeMax = SubTypeMax.asInstanceOf[js.Any], SubTypeMin = SubTypeMin.asInstanceOf[js.Any], SubTypeStep = SubTypeStep.asInstanceOf[js.Any], SubTypeValues = SubTypeValues.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
@@ -87,7 +87,7 @@ object Property {
     
     inline def setSubType(value: WiaSubType): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
     
-    inline def setSubTypeDefault(value: js.Any): Self = StObject.set(x, "SubTypeDefault", value.asInstanceOf[js.Any])
+    inline def setSubTypeDefault(value: Any): Self = StObject.set(x, "SubTypeDefault", value.asInstanceOf[js.Any])
     
     inline def setSubTypeMax(value: Double): Self = StObject.set(x, "SubTypeMax", value.asInstanceOf[js.Any])
     
@@ -95,11 +95,11 @@ object Property {
     
     inline def setSubTypeStep(value: Double): Self = StObject.set(x, "SubTypeStep", value.asInstanceOf[js.Any])
     
-    inline def setSubTypeValues(value: Vector[js.Any]): Self = StObject.set(x, "SubTypeValues", value.asInstanceOf[js.Any])
+    inline def setSubTypeValues(value: Vector[Any]): Self = StObject.set(x, "SubTypeValues", value.asInstanceOf[js.Any])
     
     inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     inline def setWIADotProperty_typekey(value: Property): Self = StObject.set(x, "WIA.Property_typekey", value.asInstanceOf[js.Any])
   }

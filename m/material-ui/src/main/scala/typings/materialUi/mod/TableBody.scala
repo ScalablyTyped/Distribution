@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "TableBody")
 @js.native
-class TableBody ()
-  extends Component[TableBodyProps, js.Object, js.Any]
+open class TableBody ()
+  extends Component[TableBodyProps, js.Object, Any]

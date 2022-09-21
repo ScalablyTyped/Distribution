@@ -52,8 +52,8 @@ trait ModalDialog
     *
     * @return The current content of the modal dialog
     */
-  def content(): js.Any = js.native
-  def content(value: Content): js.Any = js.native
+  def content(): Any = js.native
+  def content(value: Content): Any = js.native
   
   /**
     * Returns the description string for this modal. Primarily used for

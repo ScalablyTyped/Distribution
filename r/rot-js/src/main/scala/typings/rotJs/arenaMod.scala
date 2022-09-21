@@ -8,7 +8,7 @@ object arenaMod {
   
   @JSImport("rot-js/lib/map/arena", JSImport.Default)
   @js.native
-  class default () extends Arena
+  open class default () extends Arena
   
   @js.native
   trait Arena

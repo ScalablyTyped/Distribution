@@ -49,11 +49,11 @@ trait DataViewDefinitionBuilder extends StObject {
   
   def build(): DataViewDefinition
   
-  def setColumns(columns: js.Array[js.Any]): DataViewDefinitionBuilder
+  def setColumns(columns: js.Array[Any]): DataViewDefinitionBuilder
 }
 object DataViewDefinitionBuilder {
   
-  inline def apply(build: () => DataViewDefinition, setColumns: js.Array[js.Any] => DataViewDefinitionBuilder): DataViewDefinitionBuilder = {
+  inline def apply(build: () => DataViewDefinition, setColumns: js.Array[Any] => DataViewDefinitionBuilder): DataViewDefinitionBuilder = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setColumns = js.Any.fromFunction1(setColumns))
     __obj.asInstanceOf[DataViewDefinitionBuilder]
   }
@@ -62,6 +62,6 @@ object DataViewDefinitionBuilder {
     
     inline def setBuild(value: () => DataViewDefinition): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    inline def setSetColumns(value: js.Array[js.Any] => DataViewDefinitionBuilder): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
+    inline def setSetColumns(value: js.Array[Any] => DataViewDefinitionBuilder): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
   }
 }

@@ -1,36 +1,22 @@
 package typings.antvScale
 
+import typings.antvScale.continuousMod.Continuous
+import typings.antvScale.typesMod.TimeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeMod {
   
-  /**
-    * 时间分类度量
-    * @class
-    */
-  @JSImport("@antv/scale/lib/category/time", JSImport.Default)
+  @JSImport("@antv/scale/lib/scales/time", "Time")
   @js.native
-  class default () extends TimeCat
-  
   /**
-    * 时间分类度量
-    * @class
+    * 构造函数，根据自定义的选项和默认选项生成当前选项
+    * @param options 需要自定义配置的选项
     */
-  @js.native
-  trait TimeCat
-    extends typings.antvScale.categoryBaseMod.default {
+  open class Time () extends Continuous[TimeOptions] {
+    def this(options: TimeOptions) = this()
     
-    /**
-      * 由于时间类型数据需要转换一下，所以复写 getText
-      * @override
-      */
-    def getText(value: String): js.Any = js.native
-    def getText(value: String, tickIndex: Double): js.Any = js.native
-    def getText(value: Double): js.Any = js.native
-    def getText(value: Double, tickIndex: Double): js.Any = js.native
-    
-    var mask: js.Any = js.native
+    def getFormatter(): js.Function1[/* d */ js.Date, String] = js.native
   }
 }

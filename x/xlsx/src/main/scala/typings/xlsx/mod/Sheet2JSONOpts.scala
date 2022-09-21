@@ -13,19 +13,22 @@ trait Sheet2JSONOpts
   var blankrows: js.UndefOr[Boolean] = js.undefined
   
   /** Default value for null/undefined values */
-  var defval: js.UndefOr[js.Any] = js.undefined
+  var defval: js.UndefOr[Any] = js.undefined
   
   /** Output format */
   var header: js.UndefOr[A | Double | js.Array[String]] = js.undefined
   
   /** Override worksheet range */
-  var range: js.UndefOr[js.Any] = js.undefined
+  var range: js.UndefOr[Any] = js.undefined
   
   /** if true, return raw data; if false, return formatted text */
   var raw: js.UndefOr[Boolean] = js.undefined
   
   /** if true, return raw numbers; if false, return formatted numbers */
   var rawNumbers: js.UndefOr[Boolean] = js.undefined
+  
+  /** if true, skip hidden rows and columns */
+  var skipHidden: js.UndefOr[Boolean] = js.undefined
 }
 object Sheet2JSONOpts {
   
@@ -40,7 +43,7 @@ object Sheet2JSONOpts {
     
     inline def setBlankrowsUndefined: Self = StObject.set(x, "blankrows", js.undefined)
     
-    inline def setDefval(value: js.Any): Self = StObject.set(x, "defval", value.asInstanceOf[js.Any])
+    inline def setDefval(value: Any): Self = StObject.set(x, "defval", value.asInstanceOf[js.Any])
     
     inline def setDefvalUndefined: Self = StObject.set(x, "defval", js.undefined)
     
@@ -48,9 +51,9 @@ object Sheet2JSONOpts {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
+    inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value*))
     
-    inline def setRange(value: js.Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
@@ -61,5 +64,9 @@ object Sheet2JSONOpts {
     inline def setRawNumbersUndefined: Self = StObject.set(x, "rawNumbers", js.undefined)
     
     inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    
+    inline def setSkipHidden(value: Boolean): Self = StObject.set(x, "skipHidden", value.asInstanceOf[js.Any])
+    
+    inline def setSkipHiddenUndefined: Self = StObject.set(x, "skipHidden", js.undefined)
   }
 }

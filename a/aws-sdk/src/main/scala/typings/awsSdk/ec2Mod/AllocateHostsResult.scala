@@ -24,6 +24,6 @@ object AllocateHostsResult {
     
     inline def setHostIdsUndefined: Self = StObject.set(x, "HostIds", js.undefined)
     
-    inline def setHostIdsVarargs(value: String*): Self = StObject.set(x, "HostIds", js.Array(value :_*))
+    inline def setHostIdsVarargs(value: String*): Self = StObject.set(x, "HostIds", js.Array(value*))
   }
 }

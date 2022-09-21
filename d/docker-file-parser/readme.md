@@ -1,7 +1,7 @@
 
 # Scala.js typings for docker-file-parser
 
-Typings are for version 1.0.5
+Typings are for version 1.0.7
 
 ## Library description:
 Parses a Dockerfile and returns an array of commands.
@@ -10,10 +10,10 @@ Parses a Dockerfile and returns an array of commands.
 | ------------------ | :-------------: |
 | Full name          | docker-file-parser |
 | Keywords           | dockerfile, docker, parser |
-| # releases         | 2 |
-| # dependents       | 26 |
-| # downloads        | 951023 |
-| # stars            | 2 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 120402.33333333333 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/joyent/docker-file-parser)

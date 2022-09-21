@@ -4,13 +4,12 @@ import org.scalablytyped.runtime.Shortcut
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.rdfJs.mod.DatasetCore
-import typings.rdfJs.mod.DatasetCoreFactory
-import typings.rdfJs.mod.Quad
-import typings.rdfJs.mod.Stream
 import typings.rdfjsExpressHandler.anon.Typeofformats
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.datasetMod.DatasetCore
+import typings.rdfjsTypes.datasetMod.DatasetCoreFactory
+import typings.rdfjsTypes.streamMod.Stream
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,17 +21,55 @@ object mod extends Shortcut {
   val ^ : RdfHandler = js.native
   
   type BaseIriFromRequest = js.Function1[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     js.Promise[String] | String
   ]
   
   @js.native
   trait RdfHandler extends StObject {
     
-    def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def apply(options: RdfHandlerOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def apply(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def apply(options: RdfHandlerOptions): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
-    def attach(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): js.Promise[Unit] = js.native
+    def attach(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]]
+    ): js.Promise[Unit] = js.native
+    def attach(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]],
+      options: RdfHandlerOptions
+    ): js.Promise[Unit] = js.native
   }
   
   trait RdfHandlerOptions extends StObject {
@@ -56,7 +93,15 @@ object mod extends Shortcut {
       
       inline def setBaseIriFromRequest(value: Boolean | BaseIriFromRequest): Self = StObject.set(x, "baseIriFromRequest", value.asInstanceOf[js.Any])
       
-      inline def setBaseIriFromRequestFunction1(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Promise[String] | String): Self = StObject.set(x, "baseIriFromRequest", js.Any.fromFunction1(value))
+      inline def setBaseIriFromRequestFunction1(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => js.Promise[String] | String
+      ): Self = StObject.set(x, "baseIriFromRequest", js.Any.fromFunction1(value))
       
       inline def setBaseIriFromRequestUndefined: Self = StObject.set(x, "baseIriFromRequest", js.undefined)
       
@@ -81,14 +126,31 @@ object mod extends Shortcut {
   
   object expressServeStaticCoreAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      def dataset(): js.Promise[DatasetCore[Quad, Quad]] = js.native
-      def dataset(parserOptions: js.Any): js.Promise[DatasetCore[Quad, Quad]] = js.native
+      var dataset: js.UndefOr[
+            js.Function1[/* parserOptions */ js.UndefOr[Any], js.Promise[DatasetCore[Quad, Quad]]]
+          ] = js.undefined
       
-      def quadStream(): Stream[Quad] = js.native
-      def quadStream(parserOptions: js.Any): Stream[Quad] = js.native
+      var quadStream: js.UndefOr[js.Function1[/* parserOptions */ js.UndefOr[Any], Stream[Quad]]] = js.undefined
+    }
+    object Request {
+      
+      inline def apply(): Request = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[Request]
+      }
+      
+      extension [Self <: Request](x: Self) {
+        
+        inline def setDataset(value: /* parserOptions */ js.UndefOr[Any] => js.Promise[DatasetCore[Quad, Quad]]): Self = StObject.set(x, "dataset", js.Any.fromFunction1(value))
+        
+        inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+        
+        inline def setQuadStream(value: /* parserOptions */ js.UndefOr[Any] => Stream[Quad]): Self = StObject.set(x, "quadStream", js.Any.fromFunction1(value))
+        
+        inline def setQuadStreamUndefined: Self = StObject.set(x, "quadStream", js.undefined)
+      }
     }
     
     trait Response extends StObject {

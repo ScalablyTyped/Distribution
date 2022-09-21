@@ -10,10 +10,10 @@ Finds the common standard cache directory
 | ------------------ | :-------------: |
 | Full name          | find-cache-dir |
 | Keywords           | cache, directory, dir, caching, find, search |
-| # releases         | 7 |
-| # dependents       | 443 |
-| # downloads        | 1122590122 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3905513466666666E8 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/avajs/find-cache-dir#readme)

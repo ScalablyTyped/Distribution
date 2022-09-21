@@ -9,7 +9,7 @@ object messaging {
   
   @JSImport("react-native-firebase", "RNFirebase.messaging.IOSMessaging")
   @js.native
-  class IOSMessaging () extends StObject {
+  open class IOSMessaging () extends StObject {
     
     /**
       * Returns the devices APNS token.
@@ -24,7 +24,7 @@ object messaging {
   
   @JSImport("react-native-firebase", "RNFirebase.messaging.RemoteMessage")
   @js.native
-  class RemoteMessage () extends StObject {
+  open class RemoteMessage () extends StObject {
     
     var collapseKey: js.UndefOr[String] = js.native
     
@@ -84,13 +84,13 @@ object messaging {
       * the payload object is passed to the listener callback.
       * This method is only triggered when the app is running.
       */
-    def onMessage(listener: js.Function1[/* message */ js.Any, js.Any]): js.Function0[js.Any] = js.native
+    def onMessage(listener: js.Function1[/* message */ Any, Any]): js.Function0[Any] = js.native
     
     /**
       * On the event a devices FCM token is refreshed by Google,
       *  the new token is returned in a callback listener.
       */
-    def onTokenRefresh(listener: js.Function1[/* token */ String, js.Any]): js.Function0[js.Any] = js.native
+    def onTokenRefresh(listener: js.Function1[/* token */ String, Any]): js.Function0[Any] = js.native
     
     /**
       * Requests app notification permissions in an Alert dialog.

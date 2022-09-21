@@ -8,5 +8,5 @@ object subscribeToShardEventStreamMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/_SubscribeToShardEventStream", "_SubscribeToShardEventStream")
   @js.native
-  val SubscribeToShardEventStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SubscribeToShardEventStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

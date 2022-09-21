@@ -31,7 +31,7 @@ object mod {
   
   @JSImport("enquirer", JSImport.Namespace)
   @js.native
-  class ^[T] () extends Enquirer[T] {
+  open class ^[T] () extends Enquirer[T] {
     def this(options: js.Object) = this()
     def this(options: js.Object, answers: T) = this()
     def this(options: Unit, answers: T) = this()
@@ -42,7 +42,7 @@ object mod {
   
   @JSImport("enquirer", "Prompt")
   @js.native
-  class Prompt_ () extends BasePrompt
+  open class Prompt_ () extends BasePrompt
   
   inline def prompt[T](
     questions: js.Array[
@@ -104,7 +104,7 @@ object mod {
       
       inline def setChoices(value: js.Array[Choice | String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
-      inline def setChoicesVarargs(value: (Choice | String)*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: (Choice | String)*): Self = StObject.set(x, "choices", js.Array(value*))
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -151,7 +151,7 @@ object mod {
     
     def render(): Unit = js.native
     
-    def run(): js.Promise[js.Any] = js.native
+    def run(): js.Promise[Any] = js.native
   }
   
   trait BasePromptOptions
@@ -160,7 +160,7 @@ object mod {
     
     var format: js.UndefOr[js.Function1[/* value */ String, String | js.Promise[String]]] = js.undefined
     
-    var initial: js.UndefOr[js.Any] = js.undefined
+    var initial: js.UndefOr[Any] = js.undefined
     
     var message: String | (js.Function0[js.Promise[String] | String])
     
@@ -169,7 +169,7 @@ object mod {
     var onCancel: js.UndefOr[
         js.Function3[
           /* name */ String, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* prompt */ Prompt_, 
           Boolean | js.Promise[Boolean]
         ]
@@ -178,7 +178,7 @@ object mod {
     var onSubmit: js.UndefOr[
         js.Function3[
           /* name */ String, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* prompt */ Prompt_, 
           Boolean | js.Promise[Boolean]
         ]
@@ -218,7 +218,7 @@ object mod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setInitial(value: js.Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
       inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
       
@@ -230,15 +230,11 @@ object mod {
       
       inline def setNameFunction0(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
       
-      inline def setOnCancel(
-        value: (/* name */ String, /* value */ js.Any, /* prompt */ Prompt_) => Boolean | js.Promise[Boolean]
-      ): Self = StObject.set(x, "onCancel", js.Any.fromFunction3(value))
+      inline def setOnCancel(value: (/* name */ String, /* value */ Any, /* prompt */ Prompt_) => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "onCancel", js.Any.fromFunction3(value))
       
       inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      inline def setOnSubmit(
-        value: (/* name */ String, /* value */ js.Any, /* prompt */ Prompt_) => Boolean | js.Promise[Boolean]
-      ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
+      inline def setOnSubmit(value: (/* name */ String, /* value */ Any, /* prompt */ Prompt_) => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       

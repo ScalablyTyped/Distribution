@@ -23,7 +23,7 @@ object UnsubscribeData {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }

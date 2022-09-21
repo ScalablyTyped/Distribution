@@ -24,10 +24,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-user-tour", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[TourProps, ComponentState, js.Any] {
+  open class default protected () extends Component[TourProps, ComponentState, Any] {
     def this(props: TourProps) = this()
-    def this(props: TourProps, context: js.Any) = this()
+    def this(props: TourProps, context: Any) = this()
   }
   @JSImport("react-user-tour", JSImport.Default)
   @js.native
@@ -36,7 +35,7 @@ object mod {
   
   trait TourProps
     extends StObject
-       with HTMLAttributes[js.Any] {
+       with HTMLAttributes[Any] {
     
     /**
       A boolean value representing whether or not the tour should currently be displayed
@@ -46,7 +45,7 @@ object mod {
     /**
       We provide an arrow that points to the selector, but you may optionally pass in your own React element in the place of the arrow provided.
       */
-    var arrow: js.UndefOr[js.Any] = js.undefined
+    var arrow: js.UndefOr[Any] = js.undefined
     
     /**
       If you choose to use the provided arrow, you can set the color here by passing in a hex value.
@@ -67,12 +66,12 @@ object mod {
     /**
       Optional style object for the container div around the buttons.
       */
-    var buttonContainerStyle: js.UndefOr[js.Any] = js.undefined
+    var buttonContainerStyle: js.UndefOr[Any] = js.undefined
     
     /**
       Optional style object for buttons displayed on component.
       */
-    var buttonStyle: js.UndefOr[js.Any] = js.undefined
+    var buttonStyle: js.UndefOr[Any] = js.undefined
     
     /**
       Text that will appear on the button that closes the tour.
@@ -139,7 +138,7 @@ object mod {
       Optional style object.
       */
     @JSName("style")
-    var style_TourProps: js.UndefOr[js.Any] = js.undefined
+    var style_TourProps: js.UndefOr[Any] = js.undefined
   }
   object TourProps {
     
@@ -159,7 +158,7 @@ object mod {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      inline def setArrow(value: js.Any): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+      inline def setArrow(value: Any): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
       inline def setArrowColor(value: String): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
       
@@ -175,11 +174,11 @@ object mod {
       
       inline def setBackButtonTextUndefined: Self = StObject.set(x, "backButtonText", js.undefined)
       
-      inline def setButtonContainerStyle(value: js.Any): Self = StObject.set(x, "buttonContainerStyle", value.asInstanceOf[js.Any])
+      inline def setButtonContainerStyle(value: Any): Self = StObject.set(x, "buttonContainerStyle", value.asInstanceOf[js.Any])
       
       inline def setButtonContainerStyleUndefined: Self = StObject.set(x, "buttonContainerStyle", js.undefined)
       
-      inline def setButtonStyle(value: js.Any): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+      inline def setButtonStyle(value: Any): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
       
       inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
       
@@ -213,9 +212,9 @@ object mod {
       
       inline def setSteps(value: js.Array[TourStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      inline def setStepsVarargs(value: TourStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: TourStep*): Self = StObject.set(x, "steps", js.Array(value*))
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

@@ -47,21 +47,21 @@ object componentMod {
     
     var id: String = js.native
     
-    var input: js.Any = js.native
+    var input: Any = js.native
     
     def isDestroyed(): Boolean = js.native
     
-    def replaceState(newState: js.Any): Unit = js.native
+    def replaceState(newState: Any): Unit = js.native
     
-    def setState(name: String, value: js.Any): Unit = js.native
-    def setState(name: js.Any): Unit = js.native
+    def setState(name: String, value: Any): Unit = js.native
+    def setState(name: Any): Unit = js.native
     
     def setStateDirty(name: String): Unit = js.native
-    def setStateDirty(name: String, value: js.Any): Unit = js.native
+    def setStateDirty(name: String, value: Any): Unit = js.native
     
-    def shouldUpdate(newState: js.Any, newProps: js.Any): Boolean = js.native
+    def shouldUpdate(newState: Any, newProps: Any): Boolean = js.native
     
-    var state: js.Any = js.native
+    var state: Any = js.native
     
     def update(): Unit = js.native
   }

@@ -21,35 +21,40 @@ object customErrorUmdMod {
   
   @JSImport("ts-custom-error/dist/custom-error.umd", "CustomError")
   @js.native
-  class CustomError ()
+  open class CustomError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  inline def customErrorFactory[Properties](fn: js.ThisFunction1[/* this */ Properties, /* repeated */ js.Any, Unit]): CustomErrorConstructor[Properties] = ^.asInstanceOf[js.Dynamic].applyDynamic("customErrorFactory")(fn.asInstanceOf[js.Any]).asInstanceOf[CustomErrorConstructor[Properties]]
-  inline def customErrorFactory[Properties](
-    fn: js.ThisFunction1[/* this */ Properties, /* repeated */ js.Any, Unit],
-    parent: GenericErrorConstructor
-  ): CustomErrorConstructor[Properties] = (^.asInstanceOf[js.Dynamic].applyDynamic("customErrorFactory")(fn.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[CustomErrorConstructor[Properties]]
+  inline def customErrorFactory[Properties /* <: CustomErrorProperties */](fn: CustomErrorFunction[Properties]): CustomErrorConstructor[Properties] = ^.asInstanceOf[js.Dynamic].applyDynamic("customErrorFactory")(fn.asInstanceOf[js.Any]).asInstanceOf[CustomErrorConstructor[Properties]]
+  inline def customErrorFactory[Properties /* <: CustomErrorProperties */](fn: CustomErrorFunction[Properties], parent: GenericErrorConstructor): CustomErrorConstructor[Properties] = (^.asInstanceOf[js.Dynamic].applyDynamic("customErrorFactory")(fn.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[CustomErrorConstructor[Properties]]
   
   @js.native
   trait CustomErrorConstructor[Properties /* <: CustomErrorProperties */]
     extends StObject
        with ErrorConstructor {
     
-    def apply(args: js.Any*): CustomErrorInterface & Properties = js.native
+    def apply(args: Any*): js.Error & Properties = js.native
   }
   
-  type CustomErrorInterface = Error
+  @js.native
+  trait CustomErrorFunction[Properties] extends StObject {
+    
+    def apply(args: Any*): Unit = js.native
+  }
   
-  type CustomErrorProperties = StringDictionary[js.Any]
+  type CustomErrorInterface = js.Error
+  
+  type CustomErrorProperties = StringDictionary[Any]
   
   type GenericErrorConstructor = ErrorConstructor | EvalErrorConstructor | RangeErrorConstructor | ReferenceErrorConstructor | SyntaxErrorConstructor | TypeErrorConstructor | URIErrorConstructor | CustomErrorConstructor[CustomErrorProperties]
 }

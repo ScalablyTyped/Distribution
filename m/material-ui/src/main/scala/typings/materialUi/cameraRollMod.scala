@@ -10,10 +10,10 @@ object cameraRollMod {
   
   @JSImport("material-ui/svg-icons/image/camera-roll", JSImport.Default)
   @js.native
-  class default () extends ImageCameraRoll
+  open class default () extends ImageCameraRoll
   
   @JSImport("material-ui/svg-icons/image/camera-roll", "ImageCameraRoll")
   @js.native
-  class ImageCameraRoll ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCameraRoll ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

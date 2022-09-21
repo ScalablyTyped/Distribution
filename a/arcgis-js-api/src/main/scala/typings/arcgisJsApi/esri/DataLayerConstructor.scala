@@ -12,10 +12,10 @@ trait DataLayerConstructor
      with /**
   * Input for properties of ClosestFacilityParameters, RouteParameters or ServiceAreaParameters.
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html)
   */
 Instantiable0[DataLayer]
      with Instantiable1[/* properties */ DataLayerProperties, DataLayer] {
   
-  def fromJSON(json: js.Any): DataLayer = js.native
+  def fromJSON(json: Any): DataLayer = js.native
 }

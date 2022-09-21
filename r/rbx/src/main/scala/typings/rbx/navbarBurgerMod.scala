@@ -57,7 +57,7 @@ object navbarBurgerMod {
   
   @JSImport("rbx/components/navbar/navbar-burger", "NavbarBurger")
   @js.native
-  val NavbarBurger: ForwardRefAsExoticComponent[NavbarBurgerProps, ElementType[js.Any]] = js.native
+  val NavbarBurger: ForwardRefAsExoticComponent[NavbarBurgerProps, ElementType[Any]] = js.native
   
   trait NavbarBurgerModifierProps extends StObject {
     

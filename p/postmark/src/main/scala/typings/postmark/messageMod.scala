@@ -13,7 +13,7 @@ object messageMod {
   
   @JSImport("postmark/dist/client/models/message/Message", "Message")
   @js.native
-  class Message protected () extends StObject {
+  open class Message protected () extends StObject {
     def this(
       From: String,
       Subject: String,
@@ -70,7 +70,7 @@ object messageMod {
     
     var Cc: js.UndefOr[String] = js.undefined
     
-    var MessageID: js.UndefOr[String] = js.undefined
+    var MessageID: String
     
     var SubmittedAt: String
     
@@ -78,8 +78,8 @@ object messageMod {
   }
   object MessageSendingResponse {
     
-    inline def apply(ErrorCode: Double, Message: String, SubmittedAt: String): MessageSendingResponse = {
-      val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], SubmittedAt = SubmittedAt.asInstanceOf[js.Any])
+    inline def apply(ErrorCode: Double, Message: String, MessageID: String, SubmittedAt: String): MessageSendingResponse = {
+      val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], MessageID = MessageID.asInstanceOf[js.Any], SubmittedAt = SubmittedAt.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageSendingResponse]
     }
     
@@ -94,8 +94,6 @@ object messageMod {
       inline def setCcUndefined: Self = StObject.set(x, "Cc", js.undefined)
       
       inline def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
-      
-      inline def setMessageIDUndefined: Self = StObject.set(x, "MessageID", js.undefined)
       
       inline def setSubmittedAt(value: String): Self = StObject.set(x, "SubmittedAt", value.asInstanceOf[js.Any])
       

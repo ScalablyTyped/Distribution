@@ -10,10 +10,10 @@ Chai oequal() that uses object's equality method.
 | ------------------ | :-------------: |
 | Full name          | chai-oequal |
 | Keywords           | chai |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 570 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 42.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/wrwrwr/chai-oequal)

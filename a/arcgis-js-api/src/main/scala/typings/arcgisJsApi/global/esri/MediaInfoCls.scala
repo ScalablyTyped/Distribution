@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.MediaInfo")
 @js.native
-class MediaInfoCls ()
+open class MediaInfoCls ()
   extends StObject
      with typings.arcgisJsApi.esri.MediaInfo {
   

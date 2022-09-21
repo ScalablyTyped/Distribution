@@ -1,6 +1,6 @@
 package typings.vegaLite
 
-import typings.vegaLite.anon.PartialRecordfillstrokeco
+import typings.vegaLite.anon.PartialRecordfillcolorfil
 import typings.vegaLite.channelMod.NonPositionScaleChannel
 import typings.vegaLite.legendComponentMod.LegendComponent
 import typings.vegaLite.modelMod.Model
@@ -17,7 +17,7 @@ object legendParseMod {
   
   inline def mergeLegendComponent(mergedLegend: LegendComponent, childLegend: LegendComponent): LegendComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeLegendComponent")(mergedLegend.asInstanceOf[js.Any], childLegend.asInstanceOf[js.Any])).asInstanceOf[LegendComponent]
   
-  inline def parseLegend(model: Model): PartialRecordfillstrokeco = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLegend")(model.asInstanceOf[js.Any]).asInstanceOf[PartialRecordfillstrokeco]
+  inline def parseLegend(model: Model): PartialRecordfillcolorfil = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLegend")(model.asInstanceOf[js.Any]).asInstanceOf[PartialRecordfillcolorfil]
   
   inline def parseLegendForChannel(model: UnitModel, channel: NonPositionScaleChannel): LegendComponent = (^.asInstanceOf[js.Dynamic].applyDynamic("parseLegendForChannel")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[LegendComponent]
 }

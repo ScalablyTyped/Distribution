@@ -8,5 +8,5 @@ object branchNameExistsExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/BranchNameExistsException", "BranchNameExistsException")
   @js.native
-  val BranchNameExistsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val BranchNameExistsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

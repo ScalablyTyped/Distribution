@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeclineInvitationsResponse extends StObject {
   
   /**
-    * The list of AWS accounts that were not processed. For each account, the list includes the account ID and the email address.
+    * The list of Amazon Web Services accounts that were not processed. For each account, the list includes the account ID and the email address.
     */
   var UnprocessedAccounts: js.UndefOr[ResultList] = js.undefined
 }
@@ -24,6 +24,6 @@ object DeclineInvitationsResponse {
     
     inline def setUnprocessedAccountsUndefined: Self = StObject.set(x, "UnprocessedAccounts", js.undefined)
     
-    inline def setUnprocessedAccountsVarargs(value: Result*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
+    inline def setUnprocessedAccountsVarargs(value: Result*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value*))
   }
 }

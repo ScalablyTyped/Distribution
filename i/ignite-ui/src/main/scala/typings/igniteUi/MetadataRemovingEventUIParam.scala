@@ -9,7 +9,7 @@ trait MetadataRemovingEventUIParam extends StObject {
   /**
     * Gets a reference to the data.
     */
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[Any] = js.undefined
   
   /**
     * A reference to the dragged element.
@@ -25,7 +25,7 @@ object MetadataRemovingEventUIParam {
   
   extension [Self <: MetadataRemovingEventUIParam](x: Self) {
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     

@@ -134,7 +134,7 @@ trait ClassMongoCollection
     * 
     * 
     */
-  def insert(documents: js.Array[js.Any]): Unit = js.native
+  def insert(documents: js.Array[Any]): Unit = js.native
   
   /**
     * 

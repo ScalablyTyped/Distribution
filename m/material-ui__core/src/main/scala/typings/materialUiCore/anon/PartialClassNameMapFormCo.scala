@@ -4,14 +4,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/FormControl/FormControl.FormControlClassKey>> */
+/* Inlined std.Partial<@material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/FormControlLabel/FormControlLabel.FormControlLabelClassKey>> */
 trait PartialClassNameMapFormCo extends StObject {
   
-  var fullWidth: js.UndefOr[String] = js.undefined
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var marginDense: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.undefined
   
-  var marginNormal: js.UndefOr[String] = js.undefined
+  var labelPlacementBottom: js.UndefOr[String] = js.undefined
+  
+  var labelPlacementStart: js.UndefOr[String] = js.undefined
+  
+  var labelPlacementTop: js.UndefOr[String] = js.undefined
   
   var root: js.UndefOr[String] = js.undefined
 }
@@ -24,17 +28,25 @@ object PartialClassNameMapFormCo {
   
   extension [Self <: PartialClassNameMapFormCo](x: Self) {
     
-    inline def setFullWidth(value: String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setMarginDense(value: String): Self = StObject.set(x, "marginDense", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setMarginDenseUndefined: Self = StObject.set(x, "marginDense", js.undefined)
+    inline def setLabelPlacementBottom(value: String): Self = StObject.set(x, "labelPlacementBottom", value.asInstanceOf[js.Any])
     
-    inline def setMarginNormal(value: String): Self = StObject.set(x, "marginNormal", value.asInstanceOf[js.Any])
+    inline def setLabelPlacementBottomUndefined: Self = StObject.set(x, "labelPlacementBottom", js.undefined)
     
-    inline def setMarginNormalUndefined: Self = StObject.set(x, "marginNormal", js.undefined)
+    inline def setLabelPlacementStart(value: String): Self = StObject.set(x, "labelPlacementStart", value.asInstanceOf[js.Any])
+    
+    inline def setLabelPlacementStartUndefined: Self = StObject.set(x, "labelPlacementStart", js.undefined)
+    
+    inline def setLabelPlacementTop(value: String): Self = StObject.set(x, "labelPlacementTop", value.asInstanceOf[js.Any])
+    
+    inline def setLabelPlacementTopUndefined: Self = StObject.set(x, "labelPlacementTop", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

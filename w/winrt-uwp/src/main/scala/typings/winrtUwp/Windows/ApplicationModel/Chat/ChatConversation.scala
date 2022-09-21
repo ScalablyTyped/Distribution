@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Chat
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ChatConversation extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_remoteparticipantcomposingchanged(
     `type`: remoteparticipantcomposingchanged,
@@ -56,7 +55,7 @@ trait ChatConversation extends StObject {
     * @param value Mark all messages before this DateTime as read.
     * @return An async action indicating that the operation has completed.
     */
-  def markMessagesAsReadAsync(value: Date): IPromiseWithIAsyncAction = js.native
+  def markMessagesAsReadAsync(value: js.Date): IPromiseWithIAsyncAction = js.native
   
   /** Gets the ID of the most recent message in the conversation. */
   var mostRecentMessageId: String = js.native
@@ -86,7 +85,7 @@ trait ChatConversation extends StObject {
   /** Gets a list of all the participants in the conversation. */
   var participants: IVector[String] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_remoteparticipantcomposingchanged(
     `type`: remoteparticipantcomposingchanged,

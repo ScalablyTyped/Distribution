@@ -1,7 +1,6 @@
 package typings.reactTapEventPlugin
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod extends Shortcut {
   trait StrategyOverrides extends StObject {
     
     var shouldRejectClick: js.UndefOr[
-        js.Function2[/* lastTouchEventTimestamp */ Date, /* clickEventTimestamp */ Date, Boolean]
+        js.Function2[/* lastTouchEventTimestamp */ js.Date, /* clickEventTimestamp */ js.Date, Boolean]
       ] = js.undefined
   }
   object StrategyOverrides {
@@ -27,7 +26,7 @@ object mod extends Shortcut {
     
     extension [Self <: StrategyOverrides](x: Self) {
       
-      inline def setShouldRejectClick(value: (/* lastTouchEventTimestamp */ Date, /* clickEventTimestamp */ Date) => Boolean): Self = StObject.set(x, "shouldRejectClick", js.Any.fromFunction2(value))
+      inline def setShouldRejectClick(value: (/* lastTouchEventTimestamp */ js.Date, /* clickEventTimestamp */ js.Date) => Boolean): Self = StObject.set(x, "shouldRejectClick", js.Any.fromFunction2(value))
       
       inline def setShouldRejectClickUndefined: Self = StObject.set(x, "shouldRejectClick", js.undefined)
     }

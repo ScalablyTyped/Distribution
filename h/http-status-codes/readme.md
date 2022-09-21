@@ -1,7 +1,7 @@
 
 # Scala.js typings for http-status-codes
 
-Typings are for version 2.1.4
+Typings are for version 2.2.0
 
 ## Library description:
 Constants enumerating the HTTP status codes. Based on the Java Apache HttpStatus API.
@@ -10,15 +10,12 @@ Constants enumerating the HTTP status codes. Based on the Java Apache HttpStatus
 | ------------------ | :-------------: |
 | Full name          | http-status-codes |
 | Keywords           | node, http, apache, HttpStatus, httpclient, status, codes |
-| # releases         | 29 |
-| # dependents       | 639 |
-| # downloads        | 30500094 |
-| # stars            | 26 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 4480113.333333333 |
+| # stars            | 771.0 |
 
 ## Links
-- [Homepage](https://github.com/prettymuchbryce/node-http-status#readme)
-- [Bugs](https://github.com/prettymuchbryce/node-http-status/issues)
-- [Repository](https://github.com/prettymuchbryce/node-http-status)
 - [Npm](https://www.npmjs.com/package/http-status-codes)
     
 

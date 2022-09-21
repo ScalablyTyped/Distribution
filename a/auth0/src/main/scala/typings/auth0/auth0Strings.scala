@@ -1,12 +1,15 @@
 package typings.auth0
 
+import typings.auth0.mod.AuthMethod
 import typings.auth0.mod.ClientAppType
 import typings.auth0.mod.CustomDomainStatus
 import typings.auth0.mod.CustomDomainType
 import typings.auth0.mod.DeleteDeleteMultifactorParamsProvider
+import typings.auth0.mod.EnrollmentStatus
 import typings.auth0.mod.Grant
 import typings.auth0.mod.JobFormat
 import typings.auth0.mod.JobStatus
+import typings.auth0.mod.LogEventTypeCode
 import typings.auth0.mod.SendType
 import typings.auth0.mod.Strategy
 import typings.auth0.mod.UnlinkAccountsParamsProvider
@@ -47,6 +50,12 @@ object auth0Strings {
   inline def adfs: adfs = "adfs".asInstanceOf[adfs]
   
   @js.native
+  sealed trait admin_update_launch
+    extends StObject
+       with LogEventTypeCode
+  inline def admin_update_launch: admin_update_launch = "admin_update_launch".asInstanceOf[admin_update_launch]
+  
+  @js.native
   sealed trait amazon
     extends StObject
        with Strategy
@@ -59,6 +68,12 @@ object auth0Strings {
        with Strategy
        with UnlinkAccountsParamsProvider
   inline def aol: aol = "aol".asInstanceOf[aol]
+  
+  @js.native
+  sealed trait api_limit
+    extends StObject
+       with LogEventTypeCode
+  inline def api_limit: api_limit = "api_limit".asInstanceOf[api_limit]
   
   @js.native
   sealed trait auth0
@@ -86,6 +101,12 @@ object auth0Strings {
     extends StObject
        with CustomDomainType
   inline def auth0_managed_certs: auth0_managed_certs = "auth0_managed_certs".asInstanceOf[auth0_managed_certs]
+  
+  @js.native
+  sealed trait authentication
+    extends StObject
+       with AuthMethod
+  inline def authentication: authentication = "authentication".asInstanceOf[authentication]
   
   @js.native
   sealed trait authorization_code
@@ -135,6 +156,12 @@ object auth0Strings {
   inline def cloudbees: cloudbees = "cloudbees".asInstanceOf[cloudbees]
   
   @js.native
+  sealed trait cls
+    extends StObject
+       with LogEventTypeCode
+  inline def cls: cls = "cls".asInstanceOf[cls]
+  
+  @js.native
   sealed trait code
     extends StObject
        with SendType
@@ -151,6 +178,18 @@ object auth0Strings {
     extends StObject
        with ClientAppType
   inline def concur: concur = "concur".asInstanceOf[concur]
+  
+  @js.native
+  sealed trait confirmed
+    extends StObject
+       with EnrollmentStatus
+  inline def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
+  
+  @js.native
+  sealed trait cs
+    extends StObject
+       with LogEventTypeCode
+  inline def cs: cs = "cs".asInstanceOf[cs]
   
   @js.native
   sealed trait csv
@@ -172,6 +211,12 @@ object auth0Strings {
   inline def daccount: daccount = "daccount".asInstanceOf[daccount]
   
   @js.native
+  sealed trait depnote
+    extends StObject
+       with LogEventTypeCode
+  inline def depnote: depnote = "depnote".asInstanceOf[depnote]
+  
+  @js.native
   sealed trait disabled
     extends StObject
        with CustomDomainStatus
@@ -184,6 +229,12 @@ object auth0Strings {
        with Strategy
        with UnlinkAccountsParamsProvider
   inline def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
+  
+  @js.native
+  sealed trait du
+    extends StObject
+       with LogEventTypeCode
+  inline def du: du = "du".asInstanceOf[du]
   
   @js.native
   sealed trait duo
@@ -239,6 +290,12 @@ object auth0Strings {
   inline def exact: exact = "exact".asInstanceOf[exact]
   
   @js.native
+  sealed trait f
+    extends StObject
+       with LogEventTypeCode
+  inline def f: f = "f".asInstanceOf[f]
+  
+  @js.native
   sealed trait facebook
     extends StObject
        with Strategy
@@ -250,6 +307,174 @@ object auth0Strings {
     extends StObject
        with JobStatus
   inline def failed: failed = "failed".asInstanceOf[failed]
+  
+  @js.native
+  sealed trait fapi
+    extends StObject
+       with LogEventTypeCode
+  inline def fapi: fapi = "fapi".asInstanceOf[fapi]
+  
+  @js.native
+  sealed trait fc
+    extends StObject
+       with LogEventTypeCode
+  inline def fc: fc = "fc".asInstanceOf[fc]
+  
+  @js.native
+  sealed trait fce
+    extends StObject
+       with LogEventTypeCode
+  inline def fce: fce = "fce".asInstanceOf[fce]
+  
+  @js.native
+  sealed trait fco
+    extends StObject
+       with LogEventTypeCode
+  inline def fco: fco = "fco".asInstanceOf[fco]
+  
+  @js.native
+  sealed trait fcoa
+    extends StObject
+       with LogEventTypeCode
+  inline def fcoa: fcoa = "fcoa".asInstanceOf[fcoa]
+  
+  @js.native
+  sealed trait fcp
+    extends StObject
+       with LogEventTypeCode
+  inline def fcp: fcp = "fcp".asInstanceOf[fcp]
+  
+  @js.native
+  sealed trait fcph
+    extends StObject
+       with LogEventTypeCode
+  inline def fcph: fcph = "fcph".asInstanceOf[fcph]
+  
+  @js.native
+  sealed trait fcpn
+    extends StObject
+       with LogEventTypeCode
+  inline def fcpn: fcpn = "fcpn".asInstanceOf[fcpn]
+  
+  @js.native
+  sealed trait fcpr
+    extends StObject
+       with LogEventTypeCode
+  inline def fcpr: fcpr = "fcpr".asInstanceOf[fcpr]
+  
+  @js.native
+  sealed trait fcpro
+    extends StObject
+       with LogEventTypeCode
+  inline def fcpro: fcpro = "fcpro".asInstanceOf[fcpro]
+  
+  @js.native
+  sealed trait fcu
+    extends StObject
+       with LogEventTypeCode
+  inline def fcu: fcu = "fcu".asInstanceOf[fcu]
+  
+  @js.native
+  sealed trait fd
+    extends StObject
+       with LogEventTypeCode
+  inline def fd: fd = "fd".asInstanceOf[fd]
+  
+  @js.native
+  sealed trait fdeac
+    extends StObject
+       with LogEventTypeCode
+  inline def fdeac: fdeac = "fdeac".asInstanceOf[fdeac]
+  
+  @js.native
+  sealed trait fdeaz
+    extends StObject
+       with LogEventTypeCode
+  inline def fdeaz: fdeaz = "fdeaz".asInstanceOf[fdeaz]
+  
+  @js.native
+  sealed trait fdecc
+    extends StObject
+       with LogEventTypeCode
+  inline def fdecc: fdecc = "fdecc".asInstanceOf[fdecc]
+  
+  @js.native
+  sealed trait fdu
+    extends StObject
+       with LogEventTypeCode
+  inline def fdu: fdu = "fdu".asInstanceOf[fdu]
+  
+  @js.native
+  sealed trait feacft
+    extends StObject
+       with LogEventTypeCode
+  inline def feacft: feacft = "feacft".asInstanceOf[feacft]
+  
+  @js.native
+  sealed trait feccft
+    extends StObject
+       with LogEventTypeCode
+  inline def feccft: feccft = "feccft".asInstanceOf[feccft]
+  
+  @js.native
+  sealed trait fede
+    extends StObject
+       with LogEventTypeCode
+  inline def fede: fede = "fede".asInstanceOf[fede]
+  
+  @js.native
+  sealed trait fens
+    extends StObject
+       with LogEventTypeCode
+  inline def fens: fens = "fens".asInstanceOf[fens]
+  
+  @js.native
+  sealed trait feoobft
+    extends StObject
+       with LogEventTypeCode
+  inline def feoobft: feoobft = "feoobft".asInstanceOf[feoobft]
+  
+  @js.native
+  sealed trait feotpft
+    extends StObject
+       with LogEventTypeCode
+  inline def feotpft: feotpft = "feotpft".asInstanceOf[feotpft]
+  
+  @js.native
+  sealed trait fepft
+    extends StObject
+       with LogEventTypeCode
+  inline def fepft: fepft = "fepft".asInstanceOf[fepft]
+  
+  @js.native
+  sealed trait fepotpft
+    extends StObject
+       with LogEventTypeCode
+  inline def fepotpft: fepotpft = "fepotpft".asInstanceOf[fepotpft]
+  
+  @js.native
+  sealed trait fercft
+    extends StObject
+       with LogEventTypeCode
+  inline def fercft: fercft = "fercft".asInstanceOf[fercft]
+  
+  @js.native
+  sealed trait ferrt
+    extends StObject
+       with LogEventTypeCode
+  inline def ferrt: ferrt = "ferrt".asInstanceOf[ferrt]
+  
+  @js.native
+  sealed trait fertft
+    extends StObject
+       with LogEventTypeCode
+  inline def fertft: fertft = "fertft".asInstanceOf[fertft]
+  
+  @js.native
+  sealed trait fi
+    extends StObject
+       with LogEventTypeCode
+  inline def fi: fi = "fi".asInstanceOf[fi]
   
   @js.native
   sealed trait fitbit
@@ -264,6 +489,168 @@ object auth0Strings {
        with Strategy
        with UnlinkAccountsParamsProvider
   inline def flickr: flickr = "flickr".asInstanceOf[flickr]
+  
+  @js.native
+  sealed trait flo
+    extends StObject
+       with LogEventTypeCode
+  inline def flo: flo = "flo".asInstanceOf[flo]
+  
+  @js.native
+  sealed trait fn
+    extends StObject
+       with LogEventTypeCode
+  inline def fn: fn = "fn".asInstanceOf[fn]
+  
+  @js.native
+  sealed trait fp
+    extends StObject
+       with LogEventTypeCode
+  inline def fp: fp = "fp".asInstanceOf[fp]
+  
+  @js.native
+  sealed trait fs
+    extends StObject
+       with LogEventTypeCode
+  inline def fs: fs = "fs".asInstanceOf[fs]
+  
+  @js.native
+  sealed trait fsa
+    extends StObject
+       with LogEventTypeCode
+  inline def fsa: fsa = "fsa".asInstanceOf[fsa]
+  
+  @js.native
+  sealed trait fu
+    extends StObject
+       with LogEventTypeCode
+  inline def fu: fu = "fu".asInstanceOf[fu]
+  
+  @js.native
+  sealed trait fui
+    extends StObject
+       with LogEventTypeCode
+  inline def fui: fui = "fui".asInstanceOf[fui]
+  
+  @js.native
+  sealed trait fv
+    extends StObject
+       with LogEventTypeCode
+  inline def fv: fv = "fv".asInstanceOf[fv]
+  
+  @js.native
+  sealed trait fvr
+    extends StObject
+       with LogEventTypeCode
+  inline def fvr: fvr = "fvr".asInstanceOf[fvr]
+  
+  @js.native
+  sealed trait gd_auth_failed
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_auth_failed: gd_auth_failed = "gd_auth_failed".asInstanceOf[gd_auth_failed]
+  
+  @js.native
+  sealed trait gd_auth_rejected
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_auth_rejected: gd_auth_rejected = "gd_auth_rejected".asInstanceOf[gd_auth_rejected]
+  
+  @js.native
+  sealed trait gd_auth_succeed
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_auth_succeed: gd_auth_succeed = "gd_auth_succeed".asInstanceOf[gd_auth_succeed]
+  
+  @js.native
+  sealed trait gd_enrollment_complete
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_enrollment_complete: gd_enrollment_complete = "gd_enrollment_complete".asInstanceOf[gd_enrollment_complete]
+  
+  @js.native
+  sealed trait gd_otp_rate_limit_exceed
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_otp_rate_limit_exceed: gd_otp_rate_limit_exceed = "gd_otp_rate_limit_exceed".asInstanceOf[gd_otp_rate_limit_exceed]
+  
+  @js.native
+  sealed trait gd_recovery_failed
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_recovery_failed: gd_recovery_failed = "gd_recovery_failed".asInstanceOf[gd_recovery_failed]
+  
+  @js.native
+  sealed trait gd_recovery_rate_limit_exceed
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_recovery_rate_limit_exceed: gd_recovery_rate_limit_exceed = "gd_recovery_rate_limit_exceed".asInstanceOf[gd_recovery_rate_limit_exceed]
+  
+  @js.native
+  sealed trait gd_recovery_succeed
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_recovery_succeed: gd_recovery_succeed = "gd_recovery_succeed".asInstanceOf[gd_recovery_succeed]
+  
+  @js.native
+  sealed trait gd_send_pn
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_send_pn: gd_send_pn = "gd_send_pn".asInstanceOf[gd_send_pn]
+  
+  @js.native
+  sealed trait gd_send_sms
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_send_sms: gd_send_sms = "gd_send_sms".asInstanceOf[gd_send_sms]
+  
+  @js.native
+  sealed trait gd_send_sms_failure
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_send_sms_failure: gd_send_sms_failure = "gd_send_sms_failure".asInstanceOf[gd_send_sms_failure]
+  
+  @js.native
+  sealed trait gd_send_voice
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_send_voice: gd_send_voice = "gd_send_voice".asInstanceOf[gd_send_voice]
+  
+  @js.native
+  sealed trait gd_send_voice_failure
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_send_voice_failure: gd_send_voice_failure = "gd_send_voice_failure".asInstanceOf[gd_send_voice_failure]
+  
+  @js.native
+  sealed trait gd_start_auth
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_start_auth: gd_start_auth = "gd_start_auth".asInstanceOf[gd_start_auth]
+  
+  @js.native
+  sealed trait gd_start_enroll
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_start_enroll: gd_start_enroll = "gd_start_enroll".asInstanceOf[gd_start_enroll]
+  
+  @js.native
+  sealed trait gd_tenant_update
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_tenant_update: gd_tenant_update = "gd_tenant_update".asInstanceOf[gd_tenant_update]
+  
+  @js.native
+  sealed trait gd_unenroll
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_unenroll: gd_unenroll = "gd_unenroll".asInstanceOf[gd_unenroll]
+  
+  @js.native
+  sealed trait gd_update_device_account
+    extends StObject
+       with LogEventTypeCode
+  inline def gd_update_device_account: gd_update_device_account = "gd_update_device_account".asInstanceOf[gd_update_device_account]
   
   @js.native
   sealed trait github
@@ -295,6 +682,7 @@ object auth0Strings {
   @js.native
   sealed trait guardian
     extends StObject
+       with AuthMethod
        with Strategy
        with UnlinkAccountsParamsProvider
   inline def guardian: guardian = "guardian".asInstanceOf[guardian]
@@ -326,6 +714,37 @@ object auth0Strings {
   inline def json: json = "json".asInstanceOf[json]
   
   @js.native
+  sealed trait limit_delegation
+    extends StObject
+       with LogEventTypeCode
+  inline def limit_delegation: limit_delegation = "limit_delegation".asInstanceOf[limit_delegation]
+  
+  @js.native
+  sealed trait limit_mu
+    extends StObject
+       with LogEventTypeCode
+  inline def limit_mu: limit_mu = "limit_mu".asInstanceOf[limit_mu]
+  
+  @js.native
+  sealed trait limit_sul
+    extends StObject
+       with LogEventTypeCode
+  inline def limit_sul: limit_sul = "limit_sul".asInstanceOf[limit_sul]
+  
+  @js.native
+  sealed trait limit_wc
+    extends StObject
+       with LogEventTypeCode
+  inline def limit_wc: limit_wc = "limit_wc".asInstanceOf[limit_wc]
+  
+  @js.native
+  sealed trait line
+    extends StObject
+       with Strategy
+       with UnlinkAccountsParamsProvider
+  inline def line: line = "line".asInstanceOf[line]
+  
+  @js.native
   sealed trait link
     extends StObject
        with SendType
@@ -337,6 +756,18 @@ object auth0Strings {
        with Strategy
        with UnlinkAccountsParamsProvider
   inline def linkedin: linkedin = "linkedin".asInstanceOf[linkedin]
+  
+  @js.native
+  sealed trait mfar
+    extends StObject
+       with LogEventTypeCode
+  inline def mfar: mfar = "mfar".asInstanceOf[mfar]
+  
+  @js.native
+  sealed trait mgmt_api_read
+    extends StObject
+       with LogEventTypeCode
+  inline def mgmt_api_read: mgmt_api_read = "mgmt_api_read".asInstanceOf[mgmt_api_read]
   
   @js.native
   sealed trait miicard
@@ -415,6 +846,7 @@ object auth0Strings {
   sealed trait pending
     extends StObject
        with CustomDomainStatus
+       with EnrollmentStatus
        with JobStatus
   inline def pending: pending = "pending".asInstanceOf[pending]
   
@@ -432,6 +864,12 @@ object auth0Strings {
   inline def pingfederate: pingfederate = "pingfederate".asInstanceOf[pingfederate]
   
   @js.native
+  sealed trait pla
+    extends StObject
+       with LogEventTypeCode
+  inline def pla: pla = "pla".asInstanceOf[pla]
+  
+  @js.native
   sealed trait planningcenter
     extends StObject
        with Strategy
@@ -443,6 +881,16 @@ object auth0Strings {
     extends StObject
        with JobStatus
   inline def processing: processing = "processing".asInstanceOf[processing]
+  
+  @js.native
+  sealed trait public_key extends StObject
+  inline def public_key: public_key = "public_key".asInstanceOf[public_key]
+  
+  @js.native
+  sealed trait pwd_leak
+    extends StObject
+       with LogEventTypeCode
+  inline def pwd_leak: pwd_leak = "pwd_leak".asInstanceOf[pwd_leak]
   
   @js.native
   sealed trait ready
@@ -476,6 +924,16 @@ object auth0Strings {
   inline def rms: rms = "rms".asInstanceOf[rms]
   
   @js.native
+  sealed trait rotating_refresh_token extends StObject
+  inline def rotating_refresh_token: rotating_refresh_token = "rotating_refresh_token".asInstanceOf[rotating_refresh_token]
+  
+  @js.native
+  sealed trait s
+    extends StObject
+       with LogEventTypeCode
+  inline def s: s = "s".asInstanceOf[s]
+  
+  @js.native
   sealed trait salesforce
     extends StObject
        with ClientAppType
@@ -505,16 +963,130 @@ object auth0Strings {
   inline def samlp: samlp = "samlp".asInstanceOf[samlp]
   
   @js.native
+  sealed trait sapi
+    extends StObject
+       with LogEventTypeCode
+  inline def sapi: sapi = "sapi".asInstanceOf[sapi]
+  
+  @js.native
+  sealed trait sce
+    extends StObject
+       with LogEventTypeCode
+  inline def sce: sce = "sce".asInstanceOf[sce]
+  
+  @js.native
+  sealed trait scoa
+    extends StObject
+       with LogEventTypeCode
+  inline def scoa: scoa = "scoa".asInstanceOf[scoa]
+  
+  @js.native
+  sealed trait scp
+    extends StObject
+       with LogEventTypeCode
+  inline def scp: scp = "scp".asInstanceOf[scp]
+  
+  @js.native
+  sealed trait scph
+    extends StObject
+       with LogEventTypeCode
+  inline def scph: scph = "scph".asInstanceOf[scph]
+  
+  @js.native
+  sealed trait scpn
+    extends StObject
+       with LogEventTypeCode
+  inline def scpn: scpn = "scpn".asInstanceOf[scpn]
+  
+  @js.native
+  sealed trait scpr
+    extends StObject
+       with LogEventTypeCode
+  inline def scpr: scpr = "scpr".asInstanceOf[scpr]
+  
+  @js.native
+  sealed trait scu
+    extends StObject
+       with LogEventTypeCode
+  inline def scu: scu = "scu".asInstanceOf[scu]
+  
+  @js.native
+  sealed trait sd
+    extends StObject
+       with LogEventTypeCode
+  inline def sd: sd = "sd".asInstanceOf[sd]
+  
+  @js.native
+  sealed trait sdu
+    extends StObject
+       with LogEventTypeCode
+  inline def sdu: sdu = "sdu".asInstanceOf[sdu]
+  
+  @js.native
+  sealed trait seacft
+    extends StObject
+       with LogEventTypeCode
+  inline def seacft: seacft = "seacft".asInstanceOf[seacft]
+  
+  @js.native
+  sealed trait seccft
+    extends StObject
+       with LogEventTypeCode
+  inline def seccft: seccft = "seccft".asInstanceOf[seccft]
+  
+  @js.native
+  sealed trait sede
+    extends StObject
+       with LogEventTypeCode
+  inline def sede: sede = "sede".asInstanceOf[sede]
+  
+  @js.native
   sealed trait self_managed_certs
     extends StObject
        with CustomDomainType
   inline def self_managed_certs: self_managed_certs = "self_managed_certs".asInstanceOf[self_managed_certs]
   
   @js.native
+  sealed trait sens
+    extends StObject
+       with LogEventTypeCode
+  inline def sens: sens = "sens".asInstanceOf[sens]
+  
+  @js.native
   sealed trait sentry
     extends StObject
        with ClientAppType
   inline def sentry: sentry = "sentry".asInstanceOf[sentry]
+  
+  @js.native
+  sealed trait seoobft
+    extends StObject
+       with LogEventTypeCode
+  inline def seoobft: seoobft = "seoobft".asInstanceOf[seoobft]
+  
+  @js.native
+  sealed trait seotpft
+    extends StObject
+       with LogEventTypeCode
+  inline def seotpft: seotpft = "seotpft".asInstanceOf[seotpft]
+  
+  @js.native
+  sealed trait sepft
+    extends StObject
+       with LogEventTypeCode
+  inline def sepft: sepft = "sepft".asInstanceOf[sepft]
+  
+  @js.native
+  sealed trait sercft
+    extends StObject
+       with LogEventTypeCode
+  inline def sercft: sercft = "sercft".asInstanceOf[sercft]
+  
+  @js.native
+  sealed trait sertft
+    extends StObject
+       with LogEventTypeCode
+  inline def sertft: sertft = "sertft".asInstanceOf[sertft]
   
   @js.native
   sealed trait sharepoint
@@ -532,14 +1104,27 @@ object auth0Strings {
   inline def shopify: shopify = "shopify".asInstanceOf[shopify]
   
   @js.native
+  sealed trait si
+    extends StObject
+       with LogEventTypeCode
+  inline def si: si = "si".asInstanceOf[si]
+  
+  @js.native
   sealed trait slack
     extends StObject
        with ClientAppType
   inline def slack: slack = "slack".asInstanceOf[slack]
   
   @js.native
+  sealed trait slo
+    extends StObject
+       with LogEventTypeCode
+  inline def slo: slo = "slo".asInstanceOf[slo]
+  
+  @js.native
   sealed trait sms
     extends StObject
+       with AuthMethod
        with Strategy
        with UnlinkAccountsParamsProvider
   inline def sms: sms = "sms".asInstanceOf[sms]
@@ -562,6 +1147,66 @@ object auth0Strings {
     extends StObject
        with ClientAppType
   inline def springcm: springcm = "springcm".asInstanceOf[springcm]
+  
+  @js.native
+  sealed trait srrt
+    extends StObject
+       with LogEventTypeCode
+  inline def srrt: srrt = "srrt".asInstanceOf[srrt]
+  
+  @js.native
+  sealed trait ss
+    extends StObject
+       with LogEventTypeCode
+  inline def ss: ss = "ss".asInstanceOf[ss]
+  
+  @js.native
+  sealed trait ssa
+    extends StObject
+       with LogEventTypeCode
+  inline def ssa: ssa = "ssa".asInstanceOf[ssa]
+  
+  @js.native
+  sealed trait sui
+    extends StObject
+       with LogEventTypeCode
+  inline def sui: sui = "sui".asInstanceOf[sui]
+  
+  @js.native
+  sealed trait sv
+    extends StObject
+       with LogEventTypeCode
+  inline def sv: sv = "sv".asInstanceOf[sv]
+  
+  @js.native
+  sealed trait svr
+    extends StObject
+       with LogEventTypeCode
+  inline def svr: svr = "svr".asInstanceOf[svr]
+  
+  @js.native
+  sealed trait sys_os_update_end
+    extends StObject
+       with LogEventTypeCode
+  inline def sys_os_update_end: sys_os_update_end = "sys_os_update_end".asInstanceOf[sys_os_update_end]
+  
+  @js.native
+  sealed trait sys_os_update_start
+    extends StObject
+       with LogEventTypeCode
+  inline def sys_os_update_start: sys_os_update_start = "sys_os_update_start".asInstanceOf[sys_os_update_start]
+  
+  @js.native
+  sealed trait sys_update_end
+    extends StObject
+       with LogEventTypeCode
+  inline def sys_update_end: sys_update_end = "sys_update_end".asInstanceOf[sys_update_end]
+  
+  @js.native
+  sealed trait sys_update_start
+    extends StObject
+       with LogEventTypeCode
+  inline def sys_update_start: sys_update_start = "sys_update_start".asInstanceOf[sys_update_start]
   
   @js.native
   sealed trait thecity
@@ -596,6 +1241,12 @@ object auth0Strings {
   inline def txt: txt = "txt".asInstanceOf[txt]
   
   @js.native
+  sealed trait ublkdu
+    extends StObject
+       with LogEventTypeCode
+  inline def ublkdu: ublkdu = "ublkdu".asInstanceOf[ublkdu]
+  
+  @js.native
   sealed trait untappd
     extends StObject
        with Strategy
@@ -620,6 +1271,12 @@ object auth0Strings {
        with Strategy
        with UnlinkAccountsParamsProvider
   inline def vkontakte: vkontakte = "vkontakte".asInstanceOf[vkontakte]
+  
+  @js.native
+  sealed trait w
+    extends StObject
+       with LogEventTypeCode
+  inline def w: w = "w".asInstanceOf[w]
   
   @js.native
   sealed trait waad

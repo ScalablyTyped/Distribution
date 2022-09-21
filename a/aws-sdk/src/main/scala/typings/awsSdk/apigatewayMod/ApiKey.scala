@@ -9,7 +9,7 @@ trait ApiKey extends StObject {
   /**
     * The timestamp when the API Key was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An AWS Marketplace customer identifier , when integrating with the AWS SaaS Marketplace.
@@ -34,7 +34,7 @@ trait ApiKey extends StObject {
   /**
     * The timestamp when the API Key was last updated.
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the API Key.
@@ -65,7 +65,7 @@ object ApiKey {
   
   extension [Self <: ApiKey](x: Self) {
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
@@ -85,7 +85,7 @@ object ApiKey {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     
@@ -97,7 +97,7 @@ object ApiKey {
     
     inline def setStageKeysUndefined: Self = StObject.set(x, "stageKeys", js.undefined)
     
-    inline def setStageKeysVarargs(value: String*): Self = StObject.set(x, "stageKeys", js.Array(value :_*))
+    inline def setStageKeysVarargs(value: String*): Self = StObject.set(x, "stageKeys", js.Array(value*))
     
     inline def setTags(value: MapOfStringToString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

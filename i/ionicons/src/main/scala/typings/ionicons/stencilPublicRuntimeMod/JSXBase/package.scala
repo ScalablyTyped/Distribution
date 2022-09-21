@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AudioHTMLAttributes[T] = typings.ionicons.stencilPublicRuntimeMod.JSXBase.MediaHTMLAttributes[T]
+type AudioHTMLAttributes[T] = MediaHTMLAttributes[T]

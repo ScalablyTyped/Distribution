@@ -10,10 +10,10 @@ A minimalist hotword / wake word for the web, based on Porcupine
 | ------------------ | :-------------: |
 | Full name          | bumblebee-hotword |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 1193 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 170.66666666666666 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/jaxcore/bumblebee-hotword#readme)

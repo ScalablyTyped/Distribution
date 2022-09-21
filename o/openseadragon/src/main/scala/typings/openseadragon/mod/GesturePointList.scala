@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "GesturePointList")
 @js.native
-class GesturePointList protected () extends StObject {
+open class GesturePointList protected () extends StObject {
   def this(`type`: String) = this()
   
   def add(gesturePoint: GesturePoint): Double = js.native

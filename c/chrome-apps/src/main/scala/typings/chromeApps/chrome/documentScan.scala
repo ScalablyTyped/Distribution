@@ -45,7 +45,7 @@ object documentScan {
       
       inline def setDataUrls(value: js.Array[String]): Self = StObject.set(x, "dataUrls", value.asInstanceOf[js.Any])
       
-      inline def setDataUrlsVarargs(value: String*): Self = StObject.set(x, "dataUrls", js.Array(value :_*))
+      inline def setDataUrlsVarargs(value: String*): Self = StObject.set(x, "dataUrls", js.Array(value*))
       
       inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     }
@@ -76,7 +76,7 @@ object documentScan {
       
       inline def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
       
-      inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
+      inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value*))
     }
   }
 }

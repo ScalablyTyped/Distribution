@@ -15,11 +15,11 @@ trait Date extends StObject {
   /**
     * Date value. String values will be automatically converted to dates.
     */
-  var date: typings.std.Date | String
+  var date: js.Date | String
 }
 object Date {
   
-  inline def apply(comparator: FilterComparator, date: typings.std.Date | String): Date = {
+  inline def apply(comparator: FilterComparator, date: js.Date | String): Date = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[Date]
   }
@@ -28,6 +28,6 @@ object Date {
     
     inline def setComparator(value: FilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    inline def setDate(value: typings.std.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

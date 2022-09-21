@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__basex
 
-Typings are for version 5.0.5
+Typings are for version 5.7.0
 
 ## Library description:
 Base-X without Buffer.
@@ -10,10 +10,10 @@ Base-X without Buffer.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/basex |
 | Keywords           | Ethereum, ethers |
-| # releases         | 26 |
-| # dependents       | 10 |
-| # downloads        | 1160625 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 2632087.3333333335 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

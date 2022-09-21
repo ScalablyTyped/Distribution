@@ -61,7 +61,7 @@ object CreateProxySessionRequest {
     
     inline def setCapabilities(value: CapabilityList): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
-    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value*))
     
     inline def setExpiryMinutes(value: PositiveInteger): Self = StObject.set(x, "ExpiryMinutes", value.asInstanceOf[js.Any])
     
@@ -85,7 +85,7 @@ object CreateProxySessionRequest {
     
     inline def setParticipantPhoneNumbers(value: ParticipantPhoneNumberList): Self = StObject.set(x, "ParticipantPhoneNumbers", value.asInstanceOf[js.Any])
     
-    inline def setParticipantPhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "ParticipantPhoneNumbers", js.Array(value :_*))
+    inline def setParticipantPhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "ParticipantPhoneNumbers", js.Array(value*))
     
     inline def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param children - An array of items that will be added to the
   * newly created layer
   */
-class Layer ()
+open class Layer ()
   extends StObject
      with typings.paper.paper.Layer {
   def this(children: js.Array[typings.paper.paper.Item]) = this()

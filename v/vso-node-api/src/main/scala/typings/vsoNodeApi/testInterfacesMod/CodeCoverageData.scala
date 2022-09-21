@@ -36,6 +36,6 @@ object CodeCoverageData {
     
     inline def setCoverageStats(value: js.Array[CodeCoverageStatistics]): Self = StObject.set(x, "coverageStats", value.asInstanceOf[js.Any])
     
-    inline def setCoverageStatsVarargs(value: CodeCoverageStatistics*): Self = StObject.set(x, "coverageStats", js.Array(value :_*))
+    inline def setCoverageStatsVarargs(value: CodeCoverageStatistics*): Self = StObject.set(x, "coverageStats", js.Array(value*))
   }
 }

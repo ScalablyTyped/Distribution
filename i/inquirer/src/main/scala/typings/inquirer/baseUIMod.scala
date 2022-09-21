@@ -1,7 +1,7 @@
 package typings.inquirer
 
 import typings.inquirer.mod.StreamOptions
-import typings.inquirer.mod.prompts.PromptBase
+import typings.inquirer.mod.inquirer.prompts.PromptBase
 import typings.node.readlineMod.Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,15 +12,15 @@ object baseUIMod {
   /**
     * Represents a ui.
     */
-  @JSImport("inquirer/lib/ui/baseUI", JSImport.Namespace)
+  @JSImport("inquirer/lib/ui/baseUI", JSImport.Default)
   @js.native
   /**
-    * Initializes a new instance of the `UI` class.
+    * Initializes a new instance of the {@link UI `UI`} class.
     *
     * @param options
     * The input- and output-stream of the ui.
     */
-  class ^ ()
+  open class default ()
     extends StObject
        with UI {
     def this(options: StreamOptions) = this()

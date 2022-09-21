@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.PDFViewer")
 @js.native
-class PDFViewer protected ()
+open class PDFViewer protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.PDFViewer {
   def this(element: Element) = this()

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "GridTile")
 @js.native
-class GridTile ()
-  extends Component[GridTileProps, js.Object, js.Any]
+open class GridTile ()
+  extends Component[GridTileProps, js.Object, Any]

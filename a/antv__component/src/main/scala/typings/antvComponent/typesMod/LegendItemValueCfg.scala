@@ -20,10 +20,16 @@ trait LegendItemValueCfg extends StObject {
   var formatter: js.UndefOr[formatterCallback] = js.undefined
   
   /**
+    * 图例值和后面的间隔，可以控制和 RadioIcon 的间距
+    * @type {number}
+    */
+  var spacing: js.UndefOr[Double] = js.undefined
+  
+  /**
     * 图例项附加值的配置
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs] = js.undefined
+  var style: js.UndefOr[ShapeAttrs | ShapeAttrsCallback] = js.undefined
 }
 object LegendItemValueCfg {
   
@@ -38,11 +44,17 @@ object LegendItemValueCfg {
     
     inline def setAlignRightUndefined: Self = StObject.set(x, "alignRight", js.undefined)
     
-    inline def setFormatter(value: (/* text */ String, /* item */ ListItem, /* index */ Double) => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
+    inline def setFormatter(value: (/* text */ String, /* item */ ListItem, /* index */ Double) => Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    
+    inline def setStyle(value: ShapeAttrs | ShapeAttrsCallback): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleFunction3(value: (/* item */ Any, /* index */ Double, /* items */ js.Array[Any]) => ShapeAttrs): Self = StObject.set(x, "style", js.Any.fromFunction3(value))
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

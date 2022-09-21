@@ -10,37 +10,36 @@ object messageBarBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/MessageBar/MessageBar.base", "MessageBarBase")
   @js.native
-  class MessageBarBase protected ()
-    extends Component[IMessageBarProps, IMessageBarState, js.Any] {
+  open class MessageBarBase protected () extends Component[IMessageBarProps, IMessageBarState, Any] {
     def this(props: IMessageBarProps) = this()
     
-    /* private */ var ICON_MAP: js.Any = js.native
+    /* private */ var ICON_MAP: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _getActionsDiv: js.Any = js.native
+    /* private */ var _getActionsDiv: Any = js.native
     
-    /* private */ var _getAnnouncementPriority: js.Any = js.native
+    /* private */ var _getAnnouncementPriority: Any = js.native
     
-    /* private */ var _getClassNames: js.Any = js.native
+    /* private */ var _getClassNames: Any = js.native
     
-    /* private */ var _getDismissDiv: js.Any = js.native
+    /* private */ var _getDismissDiv: Any = js.native
     
-    /* private */ var _getDismissSingleLine: js.Any = js.native
+    /* private */ var _getDismissSingleLine: Any = js.native
     
-    /* private */ var _getExpandSingleLine: js.Any = js.native
+    /* private */ var _getExpandSingleLine: Any = js.native
     
-    /* private */ var _getIconSpan: js.Any = js.native
+    /* private */ var _getIconSpan: Any = js.native
     
-    /* private */ var _getRegionProps: js.Any = js.native
+    /* private */ var _getRegionProps: Any = js.native
     
-    /* private */ var _onClick: js.Any = js.native
+    /* private */ var _onClick: Any = js.native
     
-    /* private */ var _renderInnerText: js.Any = js.native
+    /* private */ var _renderInnerText: Any = js.native
     
-    /* private */ var _renderMultiLine: js.Any = js.native
+    /* private */ var _renderMultiLine: Any = js.native
     
-    /* private */ var _renderSingleLine: js.Any = js.native
+    /* private */ var _renderSingleLine: Any = js.native
   }
   /* static members */
   object MessageBarBase {

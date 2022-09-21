@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.LensFlaresOptimization")
 @js.native
-class LensFlaresOptimization ()
+open class LensFlaresOptimization ()
   extends StObject
      with typings.babylonjs.BABYLON.LensFlaresOptimization {
   

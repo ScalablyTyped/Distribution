@@ -51,7 +51,7 @@ object ExtensionCategory {
     
     inline def setAssociatedProducts(value: js.Array[String]): Self = StObject.set(x, "associatedProducts", value.asInstanceOf[js.Any])
     
-    inline def setAssociatedProductsVarargs(value: String*): Self = StObject.set(x, "associatedProducts", js.Array(value :_*))
+    inline def setAssociatedProductsVarargs(value: String*): Self = StObject.set(x, "associatedProducts", js.Array(value*))
     
     inline def setCategoryId(value: Double): Self = StObject.set(x, "categoryId", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object ExtensionCategory {
     
     inline def setLanguageTitles(value: js.Array[CategoryLanguageTitle]): Self = StObject.set(x, "languageTitles", value.asInstanceOf[js.Any])
     
-    inline def setLanguageTitlesVarargs(value: CategoryLanguageTitle*): Self = StObject.set(x, "languageTitles", js.Array(value :_*))
+    inline def setLanguageTitlesVarargs(value: CategoryLanguageTitle*): Self = StObject.set(x, "languageTitles", js.Array(value*))
     
     inline def setParentCategoryName(value: String): Self = StObject.set(x, "parentCategoryName", value.asInstanceOf[js.Any])
   }

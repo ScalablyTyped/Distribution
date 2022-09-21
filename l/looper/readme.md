@@ -10,10 +10,10 @@ async loops that never RangeError
 | ------------------ | :-------------: |
 | Full name          | looper |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 3090257 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 939937.6666666666 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/looper)

@@ -40,7 +40,7 @@ trait ICodeEditor
   
   /**
     * All decorations added through this call will get the ownerId of this editor.
-    * @see `ITextModel.deltaDecorations`
+    * @deprecated
     */
   def deltaDecorations(oldDecorations: js.Array[String], newDecorations: js.Array[IModelDeltaDecoration]): js.Array[String] = js.native
   
@@ -104,6 +104,11 @@ trait ICodeEditor
   def getAction(id: String): IEditorAction = js.native
   
   /**
+    * Get the vertical position (top offset) for the line's bottom w.r.t. to the first line.
+    */
+  def getBottomForLineNumber(lineNumber: Double): Double = js.native
+  
+  /**
     * Returns the editor's container dom node
     */
   def getContainerDomNode(): HTMLElement = js.native
@@ -125,7 +130,12 @@ trait ICodeEditor
     * @id Unique identifier of the contribution.
     * @return The contribution or null if contribution not found.
     */
-  def getContribution[T /* <: IEditorContribution */](id: String): T = js.native
+  def getContribution[T /* <: IEditorContribution */](id: String): T | Null = js.native
+  
+  /**
+    * Get all the decorations for a range (filtering out decorations from other editors).
+    */
+  def getDecorationsInRange(range: Range): js.Array[IModelDecoration] | Null = js.native
   
   /**
     * Returns the editor's dom node
@@ -202,7 +212,7 @@ trait ICodeEditor
   def getTargetAtClientPoint(clientX: Double, clientY: Double): IMouseTarget | Null = js.native
   
   /**
-    * Get the vertical position (top offset) for the line w.r.t. to the first line.
+    * Get the vertical position (top offset) for the line's top w.r.t. to the first line.
     */
   def getTopForLineNumber(lineNumber: Double): Double = js.native
   
@@ -213,7 +223,7 @@ trait ICodeEditor
   
   /**
     * Get value of the current model attached to this editor.
-    * @see `ITextModel.getValue`
+    * @see {@link ITextModel.getValue}
     */
   def getValue(): String = js.native
   def getValue(options: LineEnding): String = js.native
@@ -245,164 +255,203 @@ trait ICodeEditor
     * An event emitted on a "contextmenu".
     * @event
     */
-  def onContextMenu(listener: js.Function1[/* e */ IEditorMouseEvent, Unit]): IDisposable = js.native
+  def onContextMenu(listener: js.Function1[/* e */ IEditorMouseEvent, Any]): IDisposable = js.native
+  def onContextMenu(listener: js.Function1[/* e */ IEditorMouseEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when editing failed because the editor is read-only.
     * @event
     */
-  def onDidAttemptReadOnlyEdit(listener: js.Function0[Unit]): IDisposable = js.native
+  def onDidAttemptReadOnlyEdit(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidAttemptReadOnlyEdit(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the text inside this editor lost focus (i.e. cursor stops blinking).
     * @event
     */
-  def onDidBlurEditorText(listener: js.Function0[Unit]): IDisposable = js.native
+  def onDidBlurEditorText(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidBlurEditorText(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the text inside this editor or an editor widget lost focus.
     * @event
     */
-  def onDidBlurEditorWidget(listener: js.Function0[Unit]): IDisposable = js.native
+  def onDidBlurEditorWidget(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidBlurEditorWidget(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the configuration of the editor has changed. (e.g. `editor.updateOptions()`)
     * @event
     */
-  def onDidChangeConfiguration(listener: js.Function1[/* e */ ConfigurationChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeConfiguration(listener: js.Function1[/* e */ ConfigurationChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeConfiguration(listener: js.Function1[/* e */ ConfigurationChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the cursor position has changed.
     * @event
     */
-  def onDidChangeCursorPosition(listener: js.Function1[/* e */ ICursorPositionChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeCursorPosition(listener: js.Function1[/* e */ ICursorPositionChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeCursorPosition(listener: js.Function1[/* e */ ICursorPositionChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the cursor selection has changed.
     * @event
     */
-  def onDidChangeCursorSelection(listener: js.Function1[/* e */ ICursorSelectionChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeCursorSelection(listener: js.Function1[/* e */ ICursorSelectionChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeCursorSelection(listener: js.Function1[/* e */ ICursorSelectionChangedEvent, Any], thisArg: Any): IDisposable = js.native
+  
+  /**
+    * An event emitted when hidden areas change in the editor (e.g. due to folding).
+    * @event
+    */
+  def onDidChangeHiddenAreas(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidChangeHiddenAreas(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the model of this editor has changed (e.g. `editor.setModel()`).
     * @event
     */
-  def onDidChangeModel(listener: js.Function1[/* e */ IModelChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeModel(listener: js.Function1[/* e */ IModelChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeModel(listener: js.Function1[/* e */ IModelChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the content of the current model has changed.
     * @event
     */
-  def onDidChangeModelContent(listener: js.Function1[/* e */ IModelContentChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeModelContent(listener: js.Function1[/* e */ IModelContentChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeModelContent(listener: js.Function1[/* e */ IModelContentChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the decorations of the current model have changed.
     * @event
     */
-  def onDidChangeModelDecorations(listener: js.Function1[/* e */ IModelDecorationsChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeModelDecorations(listener: js.Function1[/* e */ IModelDecorationsChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeModelDecorations(listener: js.Function1[/* e */ IModelDecorationsChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the language of the current model has changed.
     * @event
     */
-  def onDidChangeModelLanguage(listener: js.Function1[/* e */ IModelLanguageChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeModelLanguage(listener: js.Function1[/* e */ IModelLanguageChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeModelLanguage(listener: js.Function1[/* e */ IModelLanguageChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the language configuration of the current model has changed.
     * @event
     */
-  def onDidChangeModelLanguageConfiguration(listener: js.Function1[/* e */ IModelLanguageConfigurationChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeModelLanguageConfiguration(listener: js.Function1[/* e */ IModelLanguageConfigurationChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeModelLanguageConfiguration(listener: js.Function1[/* e */ IModelLanguageConfigurationChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the options of the current model has changed.
     * @event
     */
-  def onDidChangeModelOptions(listener: js.Function1[/* e */ IModelOptionsChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeModelOptions(listener: js.Function1[/* e */ IModelOptionsChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeModelOptions(listener: js.Function1[/* e */ IModelOptionsChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted after composition has ended.
     */
-  def onDidCompositionEnd(listener: js.Function0[Unit]): IDisposable = js.native
+  def onDidCompositionEnd(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidCompositionEnd(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted after composition has started.
     */
-  def onDidCompositionStart(listener: js.Function0[Unit]): IDisposable = js.native
+  def onDidCompositionStart(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidCompositionStart(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the content width or content height in the editor has changed.
     * @event
     */
-  def onDidContentSizeChange(listener: js.Function1[/* e */ IContentSizeChangedEvent, Unit]): IDisposable = js.native
+  def onDidContentSizeChange(listener: js.Function1[/* e */ IContentSizeChangedEvent, Any]): IDisposable = js.native
+  def onDidContentSizeChange(listener: js.Function1[/* e */ IContentSizeChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the text inside this editor gained focus (i.e. cursor starts blinking).
     * @event
     */
-  def onDidFocusEditorText(listener: js.Function0[Unit]): IDisposable = js.native
+  def onDidFocusEditorText(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidFocusEditorText(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the text inside this editor or an editor widget gained focus.
     * @event
     */
-  def onDidFocusEditorWidget(listener: js.Function0[Unit]): IDisposable = js.native
+  def onDidFocusEditorWidget(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidFocusEditorWidget(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the layout of the editor has changed.
     * @event
     */
-  def onDidLayoutChange(listener: js.Function1[/* e */ EditorLayoutInfo, Unit]): IDisposable = js.native
+  def onDidLayoutChange(listener: js.Function1[/* e */ EditorLayoutInfo, Any]): IDisposable = js.native
+  def onDidLayoutChange(listener: js.Function1[/* e */ EditorLayoutInfo, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when users paste text in the editor.
     * @event
     */
-  def onDidPaste(listener: js.Function1[/* e */ IPasteEvent, Unit]): IDisposable = js.native
+  def onDidPaste(listener: js.Function1[/* e */ IPasteEvent, Any]): IDisposable = js.native
+  def onDidPaste(listener: js.Function1[/* e */ IPasteEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the scroll in the editor has changed.
     * @event
     */
-  def onDidScrollChange(listener: js.Function1[/* e */ IScrollEvent, Unit]): IDisposable = js.native
+  def onDidScrollChange(listener: js.Function1[/* e */ IScrollEvent, Any]): IDisposable = js.native
+  def onDidScrollChange(listener: js.Function1[/* e */ IScrollEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted on a "keydown".
     * @event
     */
-  def onKeyDown(listener: js.Function1[/* e */ IKeyboardEvent, Unit]): IDisposable = js.native
+  def onKeyDown(listener: js.Function1[/* e */ IKeyboardEvent, Any]): IDisposable = js.native
+  def onKeyDown(listener: js.Function1[/* e */ IKeyboardEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted on a "keyup".
     * @event
     */
-  def onKeyUp(listener: js.Function1[/* e */ IKeyboardEvent, Unit]): IDisposable = js.native
+  def onKeyUp(listener: js.Function1[/* e */ IKeyboardEvent, Any]): IDisposable = js.native
+  def onKeyUp(listener: js.Function1[/* e */ IKeyboardEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted on a "mousedown".
     * @event
     */
-  def onMouseDown(listener: js.Function1[/* e */ IEditorMouseEvent, Unit]): IDisposable = js.native
+  def onMouseDown(listener: js.Function1[/* e */ IEditorMouseEvent, Any]): IDisposable = js.native
+  def onMouseDown(listener: js.Function1[/* e */ IEditorMouseEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted on a "mouseleave".
     * @event
     */
-  def onMouseLeave(listener: js.Function1[/* e */ IPartialEditorMouseEvent, Unit]): IDisposable = js.native
+  def onMouseLeave(listener: js.Function1[/* e */ IPartialEditorMouseEvent, Any]): IDisposable = js.native
+  def onMouseLeave(listener: js.Function1[/* e */ IPartialEditorMouseEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted on a "mousemove".
     * @event
     */
-  def onMouseMove(listener: js.Function1[/* e */ IEditorMouseEvent, Unit]): IDisposable = js.native
+  def onMouseMove(listener: js.Function1[/* e */ IEditorMouseEvent, Any]): IDisposable = js.native
+  def onMouseMove(listener: js.Function1[/* e */ IEditorMouseEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted on a "mouseup".
     * @event
     */
-  def onMouseUp(listener: js.Function1[/* e */ IEditorMouseEvent, Unit]): IDisposable = js.native
+  def onMouseUp(listener: js.Function1[/* e */ IEditorMouseEvent, Any]): IDisposable = js.native
+  def onMouseUp(listener: js.Function1[/* e */ IEditorMouseEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
-    * Push an "undo stop" in the undo-redo stack.
+    * Remove the "undo stop" in the undo-redo stack.
+    */
+  def popUndoStop(): Boolean = js.native
+  
+  /**
+    * Create an "undo stop" in the undo-redo stack.
     */
   def pushUndoStop(): Boolean = js.native
   
@@ -410,6 +459,11 @@ trait ICodeEditor
     * Remove a content widget.
     */
   def removeContentWidget(widget: IContentWidget): Unit = js.native
+  
+  /**
+    * Remove previously added decorations.
+    */
+  def removeDecorations(decorationIds: js.Array[String]): Unit = js.native
   
   /**
     * Remove an overlay widget.
@@ -422,10 +476,10 @@ trait ICodeEditor
   def render(): Unit = js.native
   def render(forceRedraw: Boolean): Unit = js.native
   
-  /**
-    * Restores the view state of the editor from a serializable object generated by `saveViewState`.
-    */
   def restoreViewState(state: ICodeEditorViewState): Unit = js.native
+  
+  def setBanner(bannerDomNode: Null, height: Double): Unit = js.native
+  def setBanner(bannerDomNode: HTMLElement, height: Double): Unit = js.native
   
   def setModel(model: ITextModel): Unit = js.native
   
@@ -449,7 +503,7 @@ trait ICodeEditor
   
   /**
     * Set the value of the current model attached to this editor.
-    * @see `ITextModel.setValue`
+    * @see {@link ITextModel.setValue}
     */
   def setValue(newValue: String): Unit = js.native
 }

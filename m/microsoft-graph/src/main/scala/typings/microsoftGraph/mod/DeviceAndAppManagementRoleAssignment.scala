@@ -26,6 +26,6 @@ object DeviceAndAppManagementRoleAssignment {
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Merge")
 @js.native
-class Merge ()
+open class Merge ()
   extends typings.nodegit.mergeMod.Merge
 /* static members */
 object Merge {
@@ -32,13 +32,13 @@ object Merge {
     repo: typings.nodegit.repositoryMod.Repository,
     ourCommit: typings.nodegit.commitMod.Commit,
     theirCommit: typings.nodegit.commitMod.Commit
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("commits")(repo.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], theirCommit.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("commits")(repo.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], theirCommit.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def commits(
     repo: typings.nodegit.repositoryMod.Repository,
     ourCommit: typings.nodegit.commitMod.Commit,
     theirCommit: typings.nodegit.commitMod.Commit,
     options: typings.nodegit.mergeOptionsMod.MergeOptions
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("commits")(repo.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], theirCommit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("commits")(repo.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], theirCommit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def fileInitInput(opts: MergeFileInput, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fileInitInput")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -47,24 +47,24 @@ object Merge {
   inline def merge(
     repo: typings.nodegit.repositoryMod.Repository,
     theirHead: typings.nodegit.annotatedCommitMod.AnnotatedCommit
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(repo.asInstanceOf[js.Any], theirHead.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(repo.asInstanceOf[js.Any], theirHead.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def merge(
     repo: typings.nodegit.repositoryMod.Repository,
     theirHead: typings.nodegit.annotatedCommitMod.AnnotatedCommit,
     mergeOpts: Unit,
     checkoutOpts: typings.nodegit.checkoutOptionsMod.CheckoutOptions
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(repo.asInstanceOf[js.Any], theirHead.asInstanceOf[js.Any], mergeOpts.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(repo.asInstanceOf[js.Any], theirHead.asInstanceOf[js.Any], mergeOpts.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def merge(
     repo: typings.nodegit.repositoryMod.Repository,
     theirHead: typings.nodegit.annotatedCommitMod.AnnotatedCommit,
     mergeOpts: typings.nodegit.mergeOptionsMod.MergeOptions
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(repo.asInstanceOf[js.Any], theirHead.asInstanceOf[js.Any], mergeOpts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(repo.asInstanceOf[js.Any], theirHead.asInstanceOf[js.Any], mergeOpts.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def merge(
     repo: typings.nodegit.repositoryMod.Repository,
     theirHead: typings.nodegit.annotatedCommitMod.AnnotatedCommit,
     mergeOpts: typings.nodegit.mergeOptionsMod.MergeOptions,
     checkoutOpts: typings.nodegit.checkoutOptionsMod.CheckoutOptions
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(repo.asInstanceOf[js.Any], theirHead.asInstanceOf[js.Any], mergeOpts.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(repo.asInstanceOf[js.Any], theirHead.asInstanceOf[js.Any], mergeOpts.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def trees(
     repo: typings.nodegit.repositoryMod.Repository,

@@ -12,7 +12,7 @@ object byeUserAgentClientMod {
   
   @JSImport("sip.js/lib/core/user-agents/bye-user-agent-client", "ByeUserAgentClient")
   @js.native
-  class ByeUserAgentClient protected () extends UserAgentClient {
+  open class ByeUserAgentClient protected () extends UserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate) = this()
     def this(dialog: SessionDialog, delegate: Unit, options: RequestOptions) = this()

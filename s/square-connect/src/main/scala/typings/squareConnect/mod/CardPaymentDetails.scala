@@ -3,14 +3,13 @@ package typings.squareConnect.mod
 import typings.squareConnect.squareConnectStrings.FAILURE
 import typings.squareConnect.squareConnectStrings.SUCCESS
 import typings.squareConnect.squareConnectStrings.UNKNOWN
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CardPaymentDetails")
 @js.native
-class CardPaymentDetails () extends StObject {
+open class CardPaymentDetails () extends StObject {
   
   /**
     * For EMV payments, the cryptogram generated for the payment.
@@ -60,7 +59,7 @@ class CardPaymentDetails () extends StObject {
   /**
     * Information on errors encountered during the request.
     */
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[js.Error]] = js.native
   
   /**
     * Whether or not the card is required to be physically present in order for the payment to be refunded.

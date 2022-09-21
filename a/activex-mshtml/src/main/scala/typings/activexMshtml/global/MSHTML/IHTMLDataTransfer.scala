@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLDataTransfer")
 @js.native
-/* private */ class IHTMLDataTransfer ()
+/* private */ open class IHTMLDataTransfer ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLDataTransfer {
   
@@ -24,8 +24,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var effectAllowed: String = js.native
   
   /* CompleteClass */
-  override def getData(format: String): js.Any = js.native
+  override def getData(format: String): Any = js.native
   
   /* CompleteClass */
-  override def setData(format: String, data: js.Any): Boolean = js.native
+  override def setData(format: String, data: Any): Boolean = js.native
 }

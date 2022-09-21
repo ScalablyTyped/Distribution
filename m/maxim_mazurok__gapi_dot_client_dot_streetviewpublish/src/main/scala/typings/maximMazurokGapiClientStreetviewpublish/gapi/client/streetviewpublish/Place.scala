@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Place extends StObject {
   
-  /** Output-only. The language_code that the name is localized with. This should be the language_code specified in the request, but may be a fallback. */
+  /** Output only. The language_code that the name is localized with. This should be the language_code specified in the request, but may be a fallback. */
   var languageCode: js.UndefOr[String] = js.undefined
   
-  /** Output-only. The name of the place, localized to the language_code. */
+  /** Output only. The name of the place, localized to the language_code. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Place identifier, as described in https://developers.google.com/places/place-id. */

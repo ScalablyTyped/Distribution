@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.RequestVariable")
 @js.native
-class RequestVariable protected ()
+open class RequestVariable protected ()
   extends StObject
      with typings.sharepoint.SP.RequestVariable {
   def this(context: typings.sharepoint.SP.ClientRuntimeContext) = this()

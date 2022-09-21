@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hast-to-hyperscript" : "9.0.0"
+      "hast-to-hyperscript" : "10.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "hast-to-hyperscript" : "9.0.0"
+      "hast-to-hyperscript" : "10.0.1"
     }
   ],
   "compile-devDependencies" : [

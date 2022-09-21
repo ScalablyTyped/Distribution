@@ -9,10 +9,10 @@ Library to manage tokens obtained via OpenID Connect (OIDC)
 | ------------------ | :-------------: |
 | Full name          | oidc-token-manager |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 12001 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 631.0 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/IdentityModel/oidc-token-manager)

@@ -10,15 +10,15 @@ trait Background extends StObject {
   
   var animateOption: Appear
   
-  var background: js.Any
+  var background: Any
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -42,7 +42,7 @@ trait Background extends StObject {
   
   var offsetY: Double
   
-  var title: js.Any
+  var title: Any
   
   var `type`: String
   
@@ -59,11 +59,11 @@ object Background {
   inline def apply(
     animate: Boolean,
     animateOption: Appear,
-    background: js.Any,
+    background: Any,
     capture: Boolean,
-    container: js.Any,
-    events: js.Any,
-    group: js.Any,
+    container: Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -73,7 +73,7 @@ object Background {
     name: String,
     offsetX: Double,
     offsetY: Double,
-    title: js.Any,
+    title: Any,
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean,
@@ -91,15 +91,15 @@ object Background {
     
     inline def setAnimateOption(value: Appear): Self = StObject.set(x, "animateOption", value.asInstanceOf[js.Any])
     
-    inline def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -119,7 +119,7 @@ object Background {
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

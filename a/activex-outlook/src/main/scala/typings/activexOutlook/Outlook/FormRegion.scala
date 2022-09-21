@@ -16,7 +16,7 @@ trait FormRegion extends StObject {
   
   var EnableAutoLayout: Boolean
   
-  val Form: js.Any
+  val Form: Any
   
   val FormRegionMode: OlFormRegionMode
   
@@ -26,14 +26,14 @@ trait FormRegion extends StObject {
   
   val IsExpanded: Boolean
   
-  val Item: js.Any
+  val Item: Any
   
   val Language: Double
   
   /* private */ @JSName("Outlook.FormRegion_typekey")
   var OutlookDotFormRegion_typekey: FormRegion
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reflow(): Unit
   
@@ -41,7 +41,7 @@ trait FormRegion extends StObject {
   
   val Session: NameSpace
   
-  def SetControlItemProperty(Control: js.Any, PropertyName: String): Unit
+  def SetControlItemProperty(Control: Any, PropertyName: String): Unit
   
   var SuppressControlReplacement: Boolean
   
@@ -55,19 +55,19 @@ object FormRegion {
     Detail: String,
     DisplayName: String,
     EnableAutoLayout: Boolean,
-    Form: js.Any,
+    Form: Any,
     FormRegionMode: OlFormRegionMode,
     Inspector: Inspector,
     InternalName: String,
     IsExpanded: Boolean,
-    Item: js.Any,
+    Item: Any,
     Language: Double,
     OutlookDotFormRegion_typekey: FormRegion,
-    Parent: js.Any,
+    Parent: Any,
     Reflow: () => Unit,
     Select: () => Unit,
     Session: NameSpace,
-    SetControlItemProperty: (js.Any, String) => Unit,
+    SetControlItemProperty: (Any, String) => Unit,
     SuppressControlReplacement: Boolean,
     Visible: Boolean
   ): FormRegion = {
@@ -88,7 +88,7 @@ object FormRegion {
     
     inline def setEnableAutoLayout(value: Boolean): Self = StObject.set(x, "EnableAutoLayout", value.asInstanceOf[js.Any])
     
-    inline def setForm(value: js.Any): Self = StObject.set(x, "Form", value.asInstanceOf[js.Any])
+    inline def setForm(value: Any): Self = StObject.set(x, "Form", value.asInstanceOf[js.Any])
     
     inline def setFormRegionMode(value: OlFormRegionMode): Self = StObject.set(x, "FormRegionMode", value.asInstanceOf[js.Any])
     
@@ -98,13 +98,13 @@ object FormRegion {
     
     inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "IsExpanded", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     inline def setLanguage(value: Double): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     inline def setOutlookDotFormRegion_typekey(value: FormRegion): Self = StObject.set(x, "Outlook.FormRegion_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReflow(value: () => Unit): Self = StObject.set(x, "Reflow", js.Any.fromFunction0(value))
     
@@ -112,7 +112,7 @@ object FormRegion {
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    inline def setSetControlItemProperty(value: (js.Any, String) => Unit): Self = StObject.set(x, "SetControlItemProperty", js.Any.fromFunction2(value))
+    inline def setSetControlItemProperty(value: (Any, String) => Unit): Self = StObject.set(x, "SetControlItemProperty", js.Any.fromFunction2(value))
     
     inline def setSuppressControlReplacement(value: Boolean): Self = StObject.set(x, "SuppressControlReplacement", value.asInstanceOf[js.Any])
     

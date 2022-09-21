@@ -1,12 +1,8 @@
 package typings.jsreportCore
 
-import typings.jsreportCore.jsreportCoreStrings.`dedicated-process`
-import typings.jsreportCore.jsreportCoreStrings.`http-server`
-import typings.jsreportCore.jsreportCoreStrings.`in-process`
-import typings.jsreportCore.mod.Engine
-import typings.jsreportCore.mod.Helpers
-import typings.jsreportCore.mod.Options
-import typings.jsreportCore.mod.Recipe
+import typings.jsreportCore.mod.EngineStrategy
+import typings.jsreportCore.mod.ReporterOptionsBlobStorageProvider
+import typings.jsreportCore.mod.ReporterOptionsStoreProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,203 +11,245 @@ object anon {
   
   trait AllowedModules extends StObject {
     
-    var allowedModules: js.Array[String]
+    var allowedModules: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    var forkOptions: js.UndefOr[ExecArgv] = js.undefined
+    
+    /**
+      * defines the number of worker processes used for generating reports
+      * @default 1
+      */
+    var numberOfWorkers: js.UndefOr[Double] = js.undefined
+    
+    /** @default 'dedicated-process' */
+    var strategy: js.UndefOr[EngineStrategy] = js.undefined
+    
+    var templateCache: js.UndefOr[Max] = js.undefined
+    
+    /** sets the reporter timeout in milliseconds */
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object AllowedModules {
     
-    inline def apply(allowedModules: js.Array[String]): AllowedModules = {
-      val __obj = js.Dynamic.literal(allowedModules = allowedModules.asInstanceOf[js.Any])
+    inline def apply(): AllowedModules = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AllowedModules]
     }
     
     extension [Self <: AllowedModules](x: Self) {
       
-      inline def setAllowedModules(value: js.Array[String]): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
+      inline def setAllowedModules(value: String | js.Array[String]): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
       
-      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
+      inline def setAllowedModulesUndefined: Self = StObject.set(x, "allowedModules", js.undefined)
+      
+      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value*))
+      
+      inline def setForkOptions(value: ExecArgv): Self = StObject.set(x, "forkOptions", value.asInstanceOf[js.Any])
+      
+      inline def setForkOptionsUndefined: Self = StObject.set(x, "forkOptions", js.undefined)
+      
+      inline def setNumberOfWorkers(value: Double): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
+      
+      inline def setNumberOfWorkersUndefined: Self = StObject.set(x, "numberOfWorkers", js.undefined)
+      
+      inline def setStrategy(value: EngineStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      
+      inline def setTemplateCache(value: Max): Self = StObject.set(x, "templateCache", value.asInstanceOf[js.Any])
+      
+      inline def setTemplateCacheUndefined: Self = StObject.set(x, "templateCache", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
-  /* Inlined std.Partial<jsreport-core.jsreport-core.Configuration> */
-  trait PartialConfiguration extends StObject {
-    
-    var autoTempCleanup: js.UndefOr[Boolean] = js.undefined
+  trait DataDirectory extends StObject {
     
     var dataDirectory: js.UndefOr[String] = js.undefined
     
-    var extensionsLocationCache: js.UndefOr[Boolean] = js.undefined
-    
-    var loadConfig: js.UndefOr[Boolean] = js.undefined
-    
-    var logger: js.UndefOr[Silent] = js.undefined
-    
-    var rootDirectory: js.UndefOr[String] = js.undefined
-    
-    var scripts: js.UndefOr[AllowedModules] = js.undefined
-    
-    var tasks: js.UndefOr[PartialallowedModulesArra] = js.undefined
-    
-    var tempDirectory: js.UndefOr[String] = js.undefined
+    var provider: js.UndefOr[ReporterOptionsBlobStorageProvider] = js.undefined
   }
-  object PartialConfiguration {
+  object DataDirectory {
     
-    inline def apply(): PartialConfiguration = {
+    inline def apply(): DataDirectory = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialConfiguration]
+      __obj.asInstanceOf[DataDirectory]
     }
     
-    extension [Self <: PartialConfiguration](x: Self) {
-      
-      inline def setAutoTempCleanup(value: Boolean): Self = StObject.set(x, "autoTempCleanup", value.asInstanceOf[js.Any])
-      
-      inline def setAutoTempCleanupUndefined: Self = StObject.set(x, "autoTempCleanup", js.undefined)
+    extension [Self <: DataDirectory](x: Self) {
       
       inline def setDataDirectory(value: String): Self = StObject.set(x, "dataDirectory", value.asInstanceOf[js.Any])
       
       inline def setDataDirectoryUndefined: Self = StObject.set(x, "dataDirectory", js.undefined)
       
-      inline def setExtensionsLocationCache(value: Boolean): Self = StObject.set(x, "extensionsLocationCache", value.asInstanceOf[js.Any])
+      inline def setProvider(value: ReporterOptionsBlobStorageProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      inline def setExtensionsLocationCacheUndefined: Self = StObject.set(x, "extensionsLocationCache", js.undefined)
-      
-      inline def setLoadConfig(value: Boolean): Self = StObject.set(x, "loadConfig", value.asInstanceOf[js.Any])
-      
-      inline def setLoadConfigUndefined: Self = StObject.set(x, "loadConfig", js.undefined)
-      
-      inline def setLogger(value: Silent): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
-      
-      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
-      
-      inline def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
-      
-      inline def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
-      
-      inline def setScripts(value: AllowedModules): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
-      
-      inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
-      
-      inline def setTasks(value: PartialallowedModulesArra): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
-      
-      inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
-      
-      inline def setTempDirectory(value: String): Self = StObject.set(x, "tempDirectory", value.asInstanceOf[js.Any])
-      
-      inline def setTempDirectoryUndefined: Self = StObject.set(x, "tempDirectory", js.undefined)
+      inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     }
   }
   
-  /* Inlined std.Partial<jsreport-core.jsreport-core.Request> */
-  trait PartialRequest extends StObject {
+  trait Enabled extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.UndefOr[Options] = js.undefined
-    
-    var template: js.UndefOr[PartialTemplate] = js.undefined
+    var format: js.UndefOr[String] = js.undefined
   }
-  object PartialRequest {
+  object Enabled {
     
-    inline def apply(): PartialRequest = {
+    inline def apply(): Enabled = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialRequest]
+      __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: PartialRequest](x: Self) {
+    extension [Self <: Enabled](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
-      
-      inline def setTemplate(value: PartialTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
-      
-      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   
-  /* Inlined std.Partial<jsreport-core.jsreport-core.Template> */
-  trait PartialTemplate extends StObject {
+  trait ExecArgv extends StObject {
     
-    var content: js.UndefOr[String] = js.undefined
-    
-    var engine: js.UndefOr[Engine | String] = js.undefined
-    
-    var helpers: js.UndefOr[Helpers] = js.undefined
-    
-    var recipe: js.UndefOr[Recipe | String] = js.undefined
+    var execArgv: js.UndefOr[String | js.Array[String]] = js.undefined
   }
-  object PartialTemplate {
+  object ExecArgv {
     
-    inline def apply(): PartialTemplate = {
+    inline def apply(): ExecArgv = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialTemplate]
+      __obj.asInstanceOf[ExecArgv]
     }
     
-    extension [Self <: PartialTemplate](x: Self) {
+    extension [Self <: ExecArgv](x: Self) {
       
-      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setExecArgv(value: String | js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
       
-      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
       
-      inline def setEngine(value: Engine | String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
-      
-      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
-      
-      inline def setHelpers(value: Helpers): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
-      
-      inline def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
-      
-      inline def setRecipe(value: Recipe | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
-      
-      inline def setRecipeUndefined: Self = StObject.set(x, "recipe", js.undefined)
+      inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value*))
     }
   }
   
-  /* Inlined std.Partial<{  allowedModules :std.Array<string> | string,   strategy :'dedicated-process' | 'http-server' | 'in-process' | string}> */
-  trait PartialallowedModulesArra extends StObject {
+  trait Max extends StObject {
     
-    var allowedModules: js.UndefOr[js.Array[String] | String] = js.undefined
+    var enabled: Boolean
     
-    var strategy: js.UndefOr[`dedicated-process` | `http-server` | `in-process` | String] = js.undefined
+    var max: Double
   }
-  object PartialallowedModulesArra {
+  object Max {
     
-    inline def apply(): PartialallowedModulesArra = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialallowedModulesArra]
+    inline def apply(enabled: Boolean, max: Double): Max = {
+      val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: PartialallowedModulesArra](x: Self) {
+    extension [Self <: Max](x: Self) {
       
-      inline def setAllowedModules(value: js.Array[String] | String): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      inline def setAllowedModulesUndefined: Self = StObject.set(x, "allowedModules", js.undefined)
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Partial<jsreport-core.jsreport-core.RequestOptions> */
+  trait PartialRequestOptions extends StObject {
+    
+    var preview: js.UndefOr[Boolean] = js.undefined
+    
+    var reportName: js.UndefOr[String] = js.undefined
+    
+    var timeout: js.UndefOr[Double] = js.undefined
+  }
+  object PartialRequestOptions {
+    
+    inline def apply(): PartialRequestOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialRequestOptions]
+    }
+    
+    extension [Self <: PartialRequestOptions](x: Self) {
       
-      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
+      inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
-      inline def setStrategy(value: `dedicated-process` | `http-server` | `in-process` | String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       
-      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setReportName(value: String): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
+      
+      inline def setReportNameUndefined: Self = StObject.set(x, "reportName", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    }
+  }
+  
+  trait Provider extends StObject {
+    
+    var provider: js.UndefOr[ReporterOptionsStoreProvider] = js.undefined
+  }
+  object Provider {
+    
+    inline def apply(): Provider = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Provider]
+    }
+    
+    extension [Self <: Provider](x: Self) {
+      
+      inline def setProvider(value: ReporterOptionsStoreProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      
+      inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    }
+  }
+  
+  trait SecretKey extends StObject {
+    
+    /** @default true */
+    var enabled: js.UndefOr[Boolean] = js.undefined
+    
+    /** lenght must be 16 characters */
+    var secretKey: String
+  }
+  object SecretKey {
+    
+    inline def apply(secretKey: String): SecretKey = {
+      val __obj = js.Dynamic.literal(secretKey = secretKey.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SecretKey]
+    }
+    
+    extension [Self <: SecretKey](x: Self) {
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     }
   }
   
   trait Silent extends StObject {
     
-    var silent: Boolean
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object Silent {
     
-    inline def apply(silent: Boolean): Silent = {
-      val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+    inline def apply(): Silent = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Silent]
     }
     
     extension [Self <: Silent](x: Self) {
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
 }

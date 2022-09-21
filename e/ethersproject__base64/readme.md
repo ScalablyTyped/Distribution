@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__base64
 
-Typings are for version 5.0.5
+Typings are for version 5.7.0
 
 ## Library description:
 Base64 coder.
@@ -10,10 +10,10 @@ Base64 coder.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/base64 |
 | Keywords           | Ethereum, ethers |
-| # releases         | 27 |
-| # dependents       | 9 |
-| # downloads        | 1595330 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 3481600.0 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

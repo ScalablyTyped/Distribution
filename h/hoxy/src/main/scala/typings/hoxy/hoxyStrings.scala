@@ -48,6 +48,10 @@ object hoxyStrings {
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait buffer
     extends StObject
        with BodyParser

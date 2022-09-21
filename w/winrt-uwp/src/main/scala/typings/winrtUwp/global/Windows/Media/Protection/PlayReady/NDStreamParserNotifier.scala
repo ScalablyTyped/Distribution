@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Protection.PlayReady.NDStreamParserNotifier")
 @js.native
 /** Creates a new instance of the NDStreamParserNotifier class. */
-class NDStreamParserNotifier ()
+open class NDStreamParserNotifier ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.NDStreamParserNotifier {
   

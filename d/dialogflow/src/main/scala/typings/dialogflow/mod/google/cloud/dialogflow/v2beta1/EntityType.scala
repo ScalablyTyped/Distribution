@@ -7,7 +7,6 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.Kind
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new EntityType.
   * @param [properties] Properties to set
   */
-class EntityType ()
+open class EntityType ()
   extends StObject
      with IEntityType {
   def this(properties: IEntityType) = this()
@@ -52,7 +51,7 @@ class EntityType ()
     * Converts this EntityType to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object EntityType {
   
@@ -90,7 +89,7 @@ object EntityType {
     * Constructs a new Entity.
     * @param [properties] Properties to set
     */
-  class Entity ()
+  open class Entity ()
     extends StObject
        with IEntity {
     def this(properties: IEntity) = this()
@@ -103,7 +102,7 @@ object EntityType {
       * Converts this Entity to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     /** Entity value. */
     @JSName("value")
@@ -124,6 +123,8 @@ object EntityType {
     inline def create(): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Entity]
     inline def create(properties: IEntity): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Entity]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entity]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Entity = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entity]
     /**
       * Decodes an Entity message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -135,9 +136,8 @@ object EntityType {
     /* static member */
     inline def decode(reader: Reader): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entity]
     inline def decode(reader: Reader, length: Double): Entity = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entity]
-    inline def decode(reader: Uint8Array): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entity]
-    inline def decode(reader: Uint8Array, length: Double): Entity = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entity]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entity]
     /**
       * Decodes an Entity message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -147,7 +147,6 @@ object EntityType {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entity]
-    inline def decodeDelimited(reader: Uint8Array): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entity]
     
     /**
       * Encodes the specified Entity message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.EntityType.Entity.verify|verify} messages.
@@ -175,7 +174,7 @@ object EntityType {
       * @returns Entity
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Entity]
+    inline def fromObject(`object`: StringDictionary[Any]): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Entity]
     
     /**
       * Creates a plain object from an Entity message. Also converts values to other types if specified.
@@ -184,8 +183,8 @@ object EntityType {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Entity): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Entity, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Entity): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Entity, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an Entity message.
@@ -193,7 +192,7 @@ object EntityType {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   @js.native
@@ -240,6 +239,8 @@ object EntityType {
   inline def create(): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EntityType]
   inline def create(properties: IEntityType): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[EntityType]
   
+  inline def decode(reader: js.typedarray.Uint8Array): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EntityType]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): EntityType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EntityType]
   /**
     * Decodes an EntityType message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -251,9 +252,8 @@ object EntityType {
   /* static member */
   inline def decode(reader: Reader): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EntityType]
   inline def decode(reader: Reader, length: Double): EntityType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EntityType]
-  inline def decode(reader: Uint8Array): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EntityType]
-  inline def decode(reader: Uint8Array, length: Double): EntityType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EntityType]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EntityType]
   /**
     * Decodes an EntityType message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -263,7 +263,6 @@ object EntityType {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EntityType]
-  inline def decodeDelimited(reader: Uint8Array): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EntityType]
   
   /**
     * Encodes the specified EntityType message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.EntityType.verify|verify} messages.
@@ -291,7 +290,7 @@ object EntityType {
     * @returns EntityType
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EntityType]
+  inline def fromObject(`object`: StringDictionary[Any]): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EntityType]
   
   /**
     * Creates a plain object from an EntityType message. Also converts values to other types if specified.
@@ -300,8 +299,8 @@ object EntityType {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: EntityType): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: EntityType, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: EntityType): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: EntityType, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an EntityType message.
@@ -309,7 +308,7 @@ object EntityType {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Entity. */
   trait IEntity extends StObject {
@@ -335,7 +334,7 @@ object EntityType {
       
       inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
       
-      inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+      inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value*))
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

@@ -10,10 +10,10 @@ Regular expression for matching npm organization names
 | ------------------ | :-------------: |
 | Full name          | org-regex |
 | Keywords           | scoped, npm, package, organization, name, regex, regexp, regular, expression |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 373292 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 249801.33333333334 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/sidoshi/org-regex#readme)

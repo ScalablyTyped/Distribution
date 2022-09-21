@@ -5,53 +5,53 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "image.toJSON()". */
+/** An interface describing the data returned by calling `image.toJSON()`. */
 trait ImageData extends StObject {
   
   /**
-    *
     * Gets or sets the description of the Image.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the height of the Image layout.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets or sets the hyperlink of the Image.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the ID of the Image object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var ocrData: js.UndefOr[ImageOcrData] = js.undefined
   
   /**
-    *
     * Gets or sets the width of the Image layout.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var width: js.UndefOr[Double] = js.undefined

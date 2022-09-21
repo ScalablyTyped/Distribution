@@ -37,7 +37,7 @@ trait CaptionSnippet extends StObject {
   /** The language of the caption track. The property value is a BCP-47 language tag. */
   var language: js.UndefOr[String] = js.undefined
   
-  /** The date and time when the caption track was last updated. The value is specified in ISO 8601 format. */
+  /** The date and time when the caption track was last updated. */
   var lastUpdated: js.UndefOr[String] = js.undefined
   
   /** The name of the caption track. The name is intended to be visible to the user as an option during playback. */

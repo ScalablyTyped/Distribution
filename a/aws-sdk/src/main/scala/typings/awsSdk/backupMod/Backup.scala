@@ -15,12 +15,12 @@ trait Backup extends Service {
   var config_Backup: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a backup plan using a backup plan name and backup rules. A backup plan is a document that contains information that AWS Backup uses to schedule tasks that create recovery points for resources. If you call CreateBackupPlan with a plan that already exists, an AlreadyExistsException is returned.
+    * Creates a backup plan using a backup plan name and backup rules. A backup plan is a document that contains information that Backup uses to schedule tasks that create recovery points for resources. If you call CreateBackupPlan with a plan that already exists, you receive an AlreadyExistsException exception.
     */
   def createBackupPlan(): Request[CreateBackupPlanOutput, AWSError] = js.native
   def createBackupPlan(callback: js.Function2[/* err */ AWSError, /* data */ CreateBackupPlanOutput, Unit]): Request[CreateBackupPlanOutput, AWSError] = js.native
   /**
-    * Creates a backup plan using a backup plan name and backup rules. A backup plan is a document that contains information that AWS Backup uses to schedule tasks that create recovery points for resources. If you call CreateBackupPlan with a plan that already exists, an AlreadyExistsException is returned.
+    * Creates a backup plan using a backup plan name and backup rules. A backup plan is a document that contains information that Backup uses to schedule tasks that create recovery points for resources. If you call CreateBackupPlan with a plan that already exists, you receive an AlreadyExistsException exception.
     */
   def createBackupPlan(params: CreateBackupPlanInput): Request[CreateBackupPlanOutput, AWSError] = js.native
   def createBackupPlan(
@@ -29,12 +29,12 @@ trait Backup extends Service {
   ): Request[CreateBackupPlanOutput, AWSError] = js.native
   
   /**
-    * Creates a JSON document that specifies a set of resources to assign to a backup plan. Resources can be included by specifying patterns for a ListOfTags and selected Resources.  For example, consider the following patterns:    Resources: "arn:aws:ec2:region:account-id:volume/volume-id"     ConditionKey:"department"   ConditionValue:"finance"   ConditionType:"StringEquals"     ConditionKey:"importance"   ConditionValue:"critical"   ConditionType:"StringEquals"    Using these patterns would back up all Amazon Elastic Block Store (Amazon EBS) volumes that are tagged as "department=finance", "importance=critical", in addition to an EBS volume with the specified volume ID. Resources and conditions are additive in that all resources that match the pattern are selected. This shouldn't be confused with a logical AND, where all conditions must match. The matching patterns are logically put together using the OR operator. In other words, all patterns that match are selected for backup.
+    * Creates a JSON document that specifies a set of resources to assign to a backup plan. For examples, see Assigning resources programmatically. 
     */
   def createBackupSelection(): Request[CreateBackupSelectionOutput, AWSError] = js.native
   def createBackupSelection(callback: js.Function2[/* err */ AWSError, /* data */ CreateBackupSelectionOutput, Unit]): Request[CreateBackupSelectionOutput, AWSError] = js.native
   /**
-    * Creates a JSON document that specifies a set of resources to assign to a backup plan. Resources can be included by specifying patterns for a ListOfTags and selected Resources.  For example, consider the following patterns:    Resources: "arn:aws:ec2:region:account-id:volume/volume-id"     ConditionKey:"department"   ConditionValue:"finance"   ConditionType:"StringEquals"     ConditionKey:"importance"   ConditionValue:"critical"   ConditionType:"StringEquals"    Using these patterns would back up all Amazon Elastic Block Store (Amazon EBS) volumes that are tagged as "department=finance", "importance=critical", in addition to an EBS volume with the specified volume ID. Resources and conditions are additive in that all resources that match the pattern are selected. This shouldn't be confused with a logical AND, where all conditions must match. The matching patterns are logically put together using the OR operator. In other words, all patterns that match are selected for backup.
+    * Creates a JSON document that specifies a set of resources to assign to a backup plan. For examples, see Assigning resources programmatically. 
     */
   def createBackupSelection(params: CreateBackupSelectionInput): Request[CreateBackupSelectionOutput, AWSError] = js.native
   def createBackupSelection(
@@ -43,18 +43,46 @@ trait Backup extends Service {
   ): Request[CreateBackupSelectionOutput, AWSError] = js.native
   
   /**
-    * Creates a logical container where backups are stored. A CreateBackupVault request includes a name, optionally one or more resource tags, an encryption key, and a request ID.  Sensitive data, such as passport numbers, should not be included the name of a backup vault. 
+    * Creates a logical container where backups are stored. A CreateBackupVault request includes a name, optionally one or more resource tags, an encryption key, and a request ID.  Do not include sensitive data, such as passport numbers, in the name of a backup vault. 
     */
   def createBackupVault(): Request[CreateBackupVaultOutput, AWSError] = js.native
   def createBackupVault(callback: js.Function2[/* err */ AWSError, /* data */ CreateBackupVaultOutput, Unit]): Request[CreateBackupVaultOutput, AWSError] = js.native
   /**
-    * Creates a logical container where backups are stored. A CreateBackupVault request includes a name, optionally one or more resource tags, an encryption key, and a request ID.  Sensitive data, such as passport numbers, should not be included the name of a backup vault. 
+    * Creates a logical container where backups are stored. A CreateBackupVault request includes a name, optionally one or more resource tags, an encryption key, and a request ID.  Do not include sensitive data, such as passport numbers, in the name of a backup vault. 
     */
   def createBackupVault(params: CreateBackupVaultInput): Request[CreateBackupVaultOutput, AWSError] = js.native
   def createBackupVault(
     params: CreateBackupVaultInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBackupVaultOutput, Unit]
   ): Request[CreateBackupVaultOutput, AWSError] = js.native
+  
+  /**
+    * Creates a framework with one or more controls. A framework is a collection of controls that you can use to evaluate your backup practices. By using pre-built customizable controls to define your policies, you can evaluate whether your backup practices comply with your policies and which resources are not yet in compliance.
+    */
+  def createFramework(): Request[CreateFrameworkOutput, AWSError] = js.native
+  def createFramework(callback: js.Function2[/* err */ AWSError, /* data */ CreateFrameworkOutput, Unit]): Request[CreateFrameworkOutput, AWSError] = js.native
+  /**
+    * Creates a framework with one or more controls. A framework is a collection of controls that you can use to evaluate your backup practices. By using pre-built customizable controls to define your policies, you can evaluate whether your backup practices comply with your policies and which resources are not yet in compliance.
+    */
+  def createFramework(params: CreateFrameworkInput): Request[CreateFrameworkOutput, AWSError] = js.native
+  def createFramework(
+    params: CreateFrameworkInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateFrameworkOutput, Unit]
+  ): Request[CreateFrameworkOutput, AWSError] = js.native
+  
+  /**
+    * Creates a report plan. A report plan is a document that contains information about the contents of the report and where Backup will deliver it. If you call CreateReportPlan with a plan that already exists, you receive an AlreadyExistsException exception.
+    */
+  def createReportPlan(): Request[CreateReportPlanOutput, AWSError] = js.native
+  def createReportPlan(callback: js.Function2[/* err */ AWSError, /* data */ CreateReportPlanOutput, Unit]): Request[CreateReportPlanOutput, AWSError] = js.native
+  /**
+    * Creates a report plan. A report plan is a document that contains information about the contents of the report and where Backup will deliver it. If you call CreateReportPlan with a plan that already exists, you receive an AlreadyExistsException exception.
+    */
+  def createReportPlan(params: CreateReportPlanInput): Request[CreateReportPlanOutput, AWSError] = js.native
+  def createReportPlan(
+    params: CreateReportPlanInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateReportPlanOutput, Unit]
+  ): Request[CreateReportPlanOutput, AWSError] = js.native
   
   /**
     * Deletes a backup plan. A backup plan can only be deleted after all associated selections of resources have been deleted. Deleting a backup plan deletes the current version of a backup plan. Previous versions, if any, will still exist.
@@ -113,6 +141,20 @@ trait Backup extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Deletes Backup Vault Lock from a backup vault specified by a backup vault name. If the Vault Lock configuration is immutable, then you cannot delete Vault Lock using API operations, and you will receive an InvalidRequestException if you attempt to do so. For more information, see Vault Lock in the Backup Developer Guide.
+    */
+  def deleteBackupVaultLockConfiguration(): Request[js.Object, AWSError] = js.native
+  def deleteBackupVaultLockConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes Backup Vault Lock from a backup vault specified by a backup vault name. If the Vault Lock configuration is immutable, then you cannot delete Vault Lock using API operations, and you will receive an InvalidRequestException if you attempt to do so. For more information, see Vault Lock in the Backup Developer Guide.
+    */
+  def deleteBackupVaultLockConfiguration(params: DeleteBackupVaultLockConfigurationInput): Request[js.Object, AWSError] = js.native
+  def deleteBackupVaultLockConfiguration(
+    params: DeleteBackupVaultLockConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
     * Deletes event notifications for the specified backup vault.
     */
   def deleteBackupVaultNotifications(): Request[js.Object, AWSError] = js.native
@@ -127,16 +169,44 @@ trait Backup extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes the recovery point specified by a recovery point ID.
+    * Deletes the framework specified by a framework name.
+    */
+  def deleteFramework(): Request[js.Object, AWSError] = js.native
+  def deleteFramework(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the framework specified by a framework name.
+    */
+  def deleteFramework(params: DeleteFrameworkInput): Request[js.Object, AWSError] = js.native
+  def deleteFramework(
+    params: DeleteFrameworkInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the recovery point specified by a recovery point ID. If the recovery point ID belongs to a continuous backup, calling this endpoint deletes the existing continuous backup and stops future continuous backup.
     */
   def deleteRecoveryPoint(): Request[js.Object, AWSError] = js.native
   def deleteRecoveryPoint(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the recovery point specified by a recovery point ID.
+    * Deletes the recovery point specified by a recovery point ID. If the recovery point ID belongs to a continuous backup, calling this endpoint deletes the existing continuous backup and stops future continuous backup.
     */
   def deleteRecoveryPoint(params: DeleteRecoveryPointInput): Request[js.Object, AWSError] = js.native
   def deleteRecoveryPoint(
     params: DeleteRecoveryPointInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the report plan specified by a report plan name.
+    */
+  def deleteReportPlan(): Request[js.Object, AWSError] = js.native
+  def deleteReportPlan(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the report plan specified by a report plan name.
+    */
+  def deleteReportPlan(params: DeleteReportPlanInput): Request[js.Object, AWSError] = js.native
+  def deleteReportPlan(
+    params: DeleteReportPlanInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   
@@ -183,12 +253,26 @@ trait Backup extends Service {
   ): Request[DescribeCopyJobOutput, AWSError] = js.native
   
   /**
-    * The current feature settings for the AWS Account.
+    * Returns the framework details for the specified FrameworkName.
+    */
+  def describeFramework(): Request[DescribeFrameworkOutput, AWSError] = js.native
+  def describeFramework(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFrameworkOutput, Unit]): Request[DescribeFrameworkOutput, AWSError] = js.native
+  /**
+    * Returns the framework details for the specified FrameworkName.
+    */
+  def describeFramework(params: DescribeFrameworkInput): Request[DescribeFrameworkOutput, AWSError] = js.native
+  def describeFramework(
+    params: DescribeFrameworkInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFrameworkOutput, Unit]
+  ): Request[DescribeFrameworkOutput, AWSError] = js.native
+  
+  /**
+    * Describes whether the Amazon Web Services account is opted in to cross-account backup. Returns an error if the account is not a member of an Organizations organization. Example: describe-global-settings --region us-west-2 
     */
   def describeGlobalSettings(): Request[DescribeGlobalSettingsOutput, AWSError] = js.native
   def describeGlobalSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeGlobalSettingsOutput, Unit]): Request[DescribeGlobalSettingsOutput, AWSError] = js.native
   /**
-    * The current feature settings for the AWS Account.
+    * Describes whether the Amazon Web Services account is opted in to cross-account backup. Returns an error if the account is not a member of an Organizations organization. Example: describe-global-settings --region us-west-2 
     */
   def describeGlobalSettings(params: DescribeGlobalSettingsInput): Request[DescribeGlobalSettingsOutput, AWSError] = js.native
   def describeGlobalSettings(
@@ -197,12 +281,12 @@ trait Backup extends Service {
   ): Request[DescribeGlobalSettingsOutput, AWSError] = js.native
   
   /**
-    * Returns information about a saved resource, including the last time it was backed up, its Amazon Resource Name (ARN), and the AWS service type of the saved resource.
+    * Returns information about a saved resource, including the last time it was backed up, its Amazon Resource Name (ARN), and the Amazon Web Services service type of the saved resource.
     */
   def describeProtectedResource(): Request[DescribeProtectedResourceOutput, AWSError] = js.native
   def describeProtectedResource(callback: js.Function2[/* err */ AWSError, /* data */ DescribeProtectedResourceOutput, Unit]): Request[DescribeProtectedResourceOutput, AWSError] = js.native
   /**
-    * Returns information about a saved resource, including the last time it was backed up, its Amazon Resource Name (ARN), and the AWS service type of the saved resource.
+    * Returns information about a saved resource, including the last time it was backed up, its Amazon Resource Name (ARN), and the Amazon Web Services service type of the saved resource.
     */
   def describeProtectedResource(params: DescribeProtectedResourceInput): Request[DescribeProtectedResourceOutput, AWSError] = js.native
   def describeProtectedResource(
@@ -225,18 +309,46 @@ trait Backup extends Service {
   ): Request[DescribeRecoveryPointOutput, AWSError] = js.native
   
   /**
-    * Returns the current service opt-in settings for the Region. If service-opt-in is enabled for a service, AWS Backup tries to protect that service's resources in this Region, when the resource is included in an on-demand backup or scheduled backup plan. Otherwise, AWS Backup does not try to protect that service's resources in this Region, AWS Backup does not try to protect that service's resources in this Region.
+    * Returns the current service opt-in settings for the Region. If service opt-in is enabled for a service, Backup tries to protect that service's resources in this Region, when the resource is included in an on-demand backup or scheduled backup plan. Otherwise, Backup does not try to protect that service's resources in this Region.
     */
   def describeRegionSettings(): Request[DescribeRegionSettingsOutput, AWSError] = js.native
   def describeRegionSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegionSettingsOutput, Unit]): Request[DescribeRegionSettingsOutput, AWSError] = js.native
   /**
-    * Returns the current service opt-in settings for the Region. If service-opt-in is enabled for a service, AWS Backup tries to protect that service's resources in this Region, when the resource is included in an on-demand backup or scheduled backup plan. Otherwise, AWS Backup does not try to protect that service's resources in this Region, AWS Backup does not try to protect that service's resources in this Region.
+    * Returns the current service opt-in settings for the Region. If service opt-in is enabled for a service, Backup tries to protect that service's resources in this Region, when the resource is included in an on-demand backup or scheduled backup plan. Otherwise, Backup does not try to protect that service's resources in this Region.
     */
   def describeRegionSettings(params: DescribeRegionSettingsInput): Request[DescribeRegionSettingsOutput, AWSError] = js.native
   def describeRegionSettings(
     params: DescribeRegionSettingsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegionSettingsOutput, Unit]
   ): Request[DescribeRegionSettingsOutput, AWSError] = js.native
+  
+  /**
+    * Returns the details associated with creating a report as specified by its ReportJobId.
+    */
+  def describeReportJob(): Request[DescribeReportJobOutput, AWSError] = js.native
+  def describeReportJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeReportJobOutput, Unit]): Request[DescribeReportJobOutput, AWSError] = js.native
+  /**
+    * Returns the details associated with creating a report as specified by its ReportJobId.
+    */
+  def describeReportJob(params: DescribeReportJobInput): Request[DescribeReportJobOutput, AWSError] = js.native
+  def describeReportJob(
+    params: DescribeReportJobInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReportJobOutput, Unit]
+  ): Request[DescribeReportJobOutput, AWSError] = js.native
+  
+  /**
+    * Returns a list of all report plans for an Amazon Web Services account and Amazon Web Services Region.
+    */
+  def describeReportPlan(): Request[DescribeReportPlanOutput, AWSError] = js.native
+  def describeReportPlan(callback: js.Function2[/* err */ AWSError, /* data */ DescribeReportPlanOutput, Unit]): Request[DescribeReportPlanOutput, AWSError] = js.native
+  /**
+    * Returns a list of all report plans for an Amazon Web Services account and Amazon Web Services Region.
+    */
+  def describeReportPlan(params: DescribeReportPlanInput): Request[DescribeReportPlanOutput, AWSError] = js.native
+  def describeReportPlan(
+    params: DescribeReportPlanInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReportPlanOutput, Unit]
+  ): Request[DescribeReportPlanOutput, AWSError] = js.native
   
   /**
     * Returns metadata associated with a restore job that is specified by a job ID.
@@ -253,6 +365,20 @@ trait Backup extends Service {
   ): Request[DescribeRestoreJobOutput, AWSError] = js.native
   
   /**
+    * Deletes the specified continuous backup recovery point from Backup and releases control of that continuous backup to the source service, such as Amazon RDS. The source service will continue to create and retain continuous backups using the lifecycle that you specified in your original backup plan. Does not support snapshot backup recovery points.
+    */
+  def disassociateRecoveryPoint(): Request[js.Object, AWSError] = js.native
+  def disassociateRecoveryPoint(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified continuous backup recovery point from Backup and releases control of that continuous backup to the source service, such as Amazon RDS. The source service will continue to create and retain continuous backups using the lifecycle that you specified in your original backup plan. Does not support snapshot backup recovery points.
+    */
+  def disassociateRecoveryPoint(params: DisassociateRecoveryPointInput): Request[js.Object, AWSError] = js.native
+  def disassociateRecoveryPoint(
+    params: DisassociateRecoveryPointInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
     * Returns the backup plan that is specified by the plan ID as a backup template.
     */
   def exportBackupPlanTemplate(): Request[ExportBackupPlanTemplateOutput, AWSError] = js.native
@@ -267,12 +393,12 @@ trait Backup extends Service {
   ): Request[ExportBackupPlanTemplateOutput, AWSError] = js.native
   
   /**
-    * Returns BackupPlan details for the specified BackupPlanId. Returns the body of a backup plan in JSON format, in addition to plan metadata.
+    * Returns BackupPlan details for the specified BackupPlanId. The details are the body of a backup plan in JSON format, in addition to plan metadata.
     */
   def getBackupPlan(): Request[GetBackupPlanOutput, AWSError] = js.native
   def getBackupPlan(callback: js.Function2[/* err */ AWSError, /* data */ GetBackupPlanOutput, Unit]): Request[GetBackupPlanOutput, AWSError] = js.native
   /**
-    * Returns BackupPlan details for the specified BackupPlanId. Returns the body of a backup plan in JSON format, in addition to plan metadata.
+    * Returns BackupPlan details for the specified BackupPlanId. The details are the body of a backup plan in JSON format, in addition to plan metadata.
     */
   def getBackupPlan(params: GetBackupPlanInput): Request[GetBackupPlanOutput, AWSError] = js.native
   def getBackupPlan(
@@ -365,18 +491,18 @@ trait Backup extends Service {
   ): Request[GetRecoveryPointRestoreMetadataOutput, AWSError] = js.native
   
   /**
-    * Returns the AWS resource types supported by AWS Backup.
+    * Returns the Amazon Web Services resource types supported by Backup.
     */
   def getSupportedResourceTypes(): Request[GetSupportedResourceTypesOutput, AWSError] = js.native
   def getSupportedResourceTypes(callback: js.Function2[/* err */ AWSError, /* data */ GetSupportedResourceTypesOutput, Unit]): Request[GetSupportedResourceTypesOutput, AWSError] = js.native
   
   /**
-    * Returns a list of existing backup jobs for an authenticated account.
+    * Returns a list of existing backup jobs for an authenticated account for the last 30 days. For a longer period of time, consider using these monitoring tools.
     */
   def listBackupJobs(): Request[ListBackupJobsOutput, AWSError] = js.native
   def listBackupJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListBackupJobsOutput, Unit]): Request[ListBackupJobsOutput, AWSError] = js.native
   /**
-    * Returns a list of existing backup jobs for an authenticated account.
+    * Returns a list of existing backup jobs for an authenticated account for the last 30 days. For a longer period of time, consider using these monitoring tools.
     */
   def listBackupJobs(params: ListBackupJobsInput): Request[ListBackupJobsOutput, AWSError] = js.native
   def listBackupJobs(
@@ -413,12 +539,12 @@ trait Backup extends Service {
   ): Request[ListBackupPlanVersionsOutput, AWSError] = js.native
   
   /**
-    * Returns a list of existing backup plans for an authenticated account. The list is populated only if the advanced option is set for the backup plan. The list contains information such as Amazon Resource Names (ARNs), plan IDs, creation and deletion dates, version IDs, plan names, and creator request IDs.
+    * Returns a list of all active backup plans for an authenticated account. The list contains information such as Amazon Resource Names (ARNs), plan IDs, creation and deletion dates, version IDs, plan names, and creator request IDs.
     */
   def listBackupPlans(): Request[ListBackupPlansOutput, AWSError] = js.native
   def listBackupPlans(callback: js.Function2[/* err */ AWSError, /* data */ ListBackupPlansOutput, Unit]): Request[ListBackupPlansOutput, AWSError] = js.native
   /**
-    * Returns a list of existing backup plans for an authenticated account. The list is populated only if the advanced option is set for the backup plan. The list contains information such as Amazon Resource Names (ARNs), plan IDs, creation and deletion dates, version IDs, plan names, and creator request IDs.
+    * Returns a list of all active backup plans for an authenticated account. The list contains information such as Amazon Resource Names (ARNs), plan IDs, creation and deletion dates, version IDs, plan names, and creator request IDs.
     */
   def listBackupPlans(params: ListBackupPlansInput): Request[ListBackupPlansOutput, AWSError] = js.native
   def listBackupPlans(
@@ -469,12 +595,26 @@ trait Backup extends Service {
   ): Request[ListCopyJobsOutput, AWSError] = js.native
   
   /**
-    * Returns an array of resources successfully backed up by AWS Backup, including the time the resource was saved, an Amazon Resource Name (ARN) of the resource, and a resource type.
+    * Returns a list of all frameworks for an Amazon Web Services account and Amazon Web Services Region.
+    */
+  def listFrameworks(): Request[ListFrameworksOutput, AWSError] = js.native
+  def listFrameworks(callback: js.Function2[/* err */ AWSError, /* data */ ListFrameworksOutput, Unit]): Request[ListFrameworksOutput, AWSError] = js.native
+  /**
+    * Returns a list of all frameworks for an Amazon Web Services account and Amazon Web Services Region.
+    */
+  def listFrameworks(params: ListFrameworksInput): Request[ListFrameworksOutput, AWSError] = js.native
+  def listFrameworks(
+    params: ListFrameworksInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListFrameworksOutput, Unit]
+  ): Request[ListFrameworksOutput, AWSError] = js.native
+  
+  /**
+    * Returns an array of resources successfully backed up by Backup, including the time the resource was saved, an Amazon Resource Name (ARN) of the resource, and a resource type.
     */
   def listProtectedResources(): Request[ListProtectedResourcesOutput, AWSError] = js.native
   def listProtectedResources(callback: js.Function2[/* err */ AWSError, /* data */ ListProtectedResourcesOutput, Unit]): Request[ListProtectedResourcesOutput, AWSError] = js.native
   /**
-    * Returns an array of resources successfully backed up by AWS Backup, including the time the resource was saved, an Amazon Resource Name (ARN) of the resource, and a resource type.
+    * Returns an array of resources successfully backed up by Backup, including the time the resource was saved, an Amazon Resource Name (ARN) of the resource, and a resource type.
     */
   def listProtectedResources(params: ListProtectedResourcesInput): Request[ListProtectedResourcesOutput, AWSError] = js.native
   def listProtectedResources(
@@ -497,12 +637,12 @@ trait Backup extends Service {
   ): Request[ListRecoveryPointsByBackupVaultOutput, AWSError] = js.native
   
   /**
-    * Returns detailed information about recovery points of the type specified by a resource Amazon Resource Name (ARN).
+    * Returns detailed information about all the recovery points of the type specified by a resource Amazon Resource Name (ARN).  For Amazon EFS and Amazon EC2, this action only lists recovery points created by Backup. 
     */
   def listRecoveryPointsByResource(): Request[ListRecoveryPointsByResourceOutput, AWSError] = js.native
   def listRecoveryPointsByResource(callback: js.Function2[/* err */ AWSError, /* data */ ListRecoveryPointsByResourceOutput, Unit]): Request[ListRecoveryPointsByResourceOutput, AWSError] = js.native
   /**
-    * Returns detailed information about recovery points of the type specified by a resource Amazon Resource Name (ARN).
+    * Returns detailed information about all the recovery points of the type specified by a resource Amazon Resource Name (ARN).  For Amazon EFS and Amazon EC2, this action only lists recovery points created by Backup. 
     */
   def listRecoveryPointsByResource(params: ListRecoveryPointsByResourceInput): Request[ListRecoveryPointsByResourceOutput, AWSError] = js.native
   def listRecoveryPointsByResource(
@@ -511,12 +651,40 @@ trait Backup extends Service {
   ): Request[ListRecoveryPointsByResourceOutput, AWSError] = js.native
   
   /**
-    * Returns a list of jobs that AWS Backup initiated to restore a saved resource, including metadata about the recovery process.
+    * Returns details about your report jobs.
+    */
+  def listReportJobs(): Request[ListReportJobsOutput, AWSError] = js.native
+  def listReportJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListReportJobsOutput, Unit]): Request[ListReportJobsOutput, AWSError] = js.native
+  /**
+    * Returns details about your report jobs.
+    */
+  def listReportJobs(params: ListReportJobsInput): Request[ListReportJobsOutput, AWSError] = js.native
+  def listReportJobs(
+    params: ListReportJobsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReportJobsOutput, Unit]
+  ): Request[ListReportJobsOutput, AWSError] = js.native
+  
+  /**
+    * Returns a list of your report plans. For detailed information about a single report plan, use DescribeReportPlan.
+    */
+  def listReportPlans(): Request[ListReportPlansOutput, AWSError] = js.native
+  def listReportPlans(callback: js.Function2[/* err */ AWSError, /* data */ ListReportPlansOutput, Unit]): Request[ListReportPlansOutput, AWSError] = js.native
+  /**
+    * Returns a list of your report plans. For detailed information about a single report plan, use DescribeReportPlan.
+    */
+  def listReportPlans(params: ListReportPlansInput): Request[ListReportPlansOutput, AWSError] = js.native
+  def listReportPlans(
+    params: ListReportPlansInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReportPlansOutput, Unit]
+  ): Request[ListReportPlansOutput, AWSError] = js.native
+  
+  /**
+    * Returns a list of jobs that Backup initiated to restore a saved resource, including details about the recovery process.
     */
   def listRestoreJobs(): Request[ListRestoreJobsOutput, AWSError] = js.native
   def listRestoreJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListRestoreJobsOutput, Unit]): Request[ListRestoreJobsOutput, AWSError] = js.native
   /**
-    * Returns a list of jobs that AWS Backup initiated to restore a saved resource, including metadata about the recovery process.
+    * Returns a list of jobs that Backup initiated to restore a saved resource, including details about the recovery process.
     */
   def listRestoreJobs(params: ListRestoreJobsInput): Request[ListRestoreJobsOutput, AWSError] = js.native
   def listRestoreJobs(
@@ -525,12 +693,12 @@ trait Backup extends Service {
   ): Request[ListRestoreJobsOutput, AWSError] = js.native
   
   /**
-    * Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.   ListTags are currently only supported with Amazon EFS backups. 
+    * Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.  ListTags only works for resource types that support full Backup management of their backups. Those resource types are listed in the "Full Backup management" section of the  Feature availability by resource table.
     */
   def listTags(): Request[ListTagsOutput, AWSError] = js.native
   def listTags(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsOutput, Unit]): Request[ListTagsOutput, AWSError] = js.native
   /**
-    * Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.   ListTags are currently only supported with Amazon EFS backups. 
+    * Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.  ListTags only works for resource types that support full Backup management of their backups. Those resource types are listed in the "Full Backup management" section of the  Feature availability by resource table.
     */
   def listTags(params: ListTagsInput): Request[ListTagsOutput, AWSError] = js.native
   def listTags(params: ListTagsInput, callback: js.Function2[/* err */ AWSError, /* data */ ListTagsOutput, Unit]): Request[ListTagsOutput, AWSError] = js.native
@@ -546,6 +714,20 @@ trait Backup extends Service {
   def putBackupVaultAccessPolicy(params: PutBackupVaultAccessPolicyInput): Request[js.Object, AWSError] = js.native
   def putBackupVaultAccessPolicy(
     params: PutBackupVaultAccessPolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Applies Backup Vault Lock to a backup vault, preventing attempts to delete any recovery point stored in or created in a backup vault. Vault Lock also prevents attempts to update the lifecycle policy that controls the retention period of any recovery point currently stored in a backup vault. If specified, Vault Lock enforces a minimum and maximum retention period for future backup and copy jobs that target a backup vault.  Backup Vault Lock has yet to receive a third-party assessment for SEC 17a-4(f) and CFTC. 
+    */
+  def putBackupVaultLockConfiguration(): Request[js.Object, AWSError] = js.native
+  def putBackupVaultLockConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Applies Backup Vault Lock to a backup vault, preventing attempts to delete any recovery point stored in or created in a backup vault. Vault Lock also prevents attempts to update the lifecycle policy that controls the retention period of any recovery point currently stored in a backup vault. If specified, Vault Lock enforces a minimum and maximum retention period for future backup and copy jobs that target a backup vault.  Backup Vault Lock has yet to receive a third-party assessment for SEC 17a-4(f) and CFTC. 
+    */
+  def putBackupVaultLockConfiguration(params: PutBackupVaultLockConfigurationInput): Request[js.Object, AWSError] = js.native
+  def putBackupVaultLockConfiguration(
+    params: PutBackupVaultLockConfigurationInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   
@@ -578,12 +760,12 @@ trait Backup extends Service {
   ): Request[StartBackupJobOutput, AWSError] = js.native
   
   /**
-    * Starts a job to create a one-time copy of the specified resource.
+    * Starts a job to create a one-time copy of the specified resource. Does not support continuous backups.
     */
   def startCopyJob(): Request[StartCopyJobOutput, AWSError] = js.native
   def startCopyJob(callback: js.Function2[/* err */ AWSError, /* data */ StartCopyJobOutput, Unit]): Request[StartCopyJobOutput, AWSError] = js.native
   /**
-    * Starts a job to create a one-time copy of the specified resource.
+    * Starts a job to create a one-time copy of the specified resource. Does not support continuous backups.
     */
   def startCopyJob(params: StartCopyJobInput): Request[StartCopyJobOutput, AWSError] = js.native
   def startCopyJob(
@@ -592,12 +774,26 @@ trait Backup extends Service {
   ): Request[StartCopyJobOutput, AWSError] = js.native
   
   /**
-    * Recovers the saved resource identified by an Amazon Resource Name (ARN). 
+    * Starts an on-demand report job for the specified report plan.
+    */
+  def startReportJob(): Request[StartReportJobOutput, AWSError] = js.native
+  def startReportJob(callback: js.Function2[/* err */ AWSError, /* data */ StartReportJobOutput, Unit]): Request[StartReportJobOutput, AWSError] = js.native
+  /**
+    * Starts an on-demand report job for the specified report plan.
+    */
+  def startReportJob(params: StartReportJobInput): Request[StartReportJobOutput, AWSError] = js.native
+  def startReportJob(
+    params: StartReportJobInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartReportJobOutput, Unit]
+  ): Request[StartReportJobOutput, AWSError] = js.native
+  
+  /**
+    * Recovers the saved resource identified by an Amazon Resource Name (ARN).
     */
   def startRestoreJob(): Request[StartRestoreJobOutput, AWSError] = js.native
   def startRestoreJob(callback: js.Function2[/* err */ AWSError, /* data */ StartRestoreJobOutput, Unit]): Request[StartRestoreJobOutput, AWSError] = js.native
   /**
-    * Recovers the saved resource identified by an Amazon Resource Name (ARN). 
+    * Recovers the saved resource identified by an Amazon Resource Name (ARN).
     */
   def startRestoreJob(params: StartRestoreJobInput): Request[StartRestoreJobOutput, AWSError] = js.native
   def startRestoreJob(
@@ -653,12 +849,26 @@ trait Backup extends Service {
   ): Request[UpdateBackupPlanOutput, AWSError] = js.native
   
   /**
-    * Updates the current global settings for the AWS Account. Use the DescribeGlobalSettings API to determine the current settings.
+    * Updates an existing framework identified by its FrameworkName with the input document in JSON format.
+    */
+  def updateFramework(): Request[UpdateFrameworkOutput, AWSError] = js.native
+  def updateFramework(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFrameworkOutput, Unit]): Request[UpdateFrameworkOutput, AWSError] = js.native
+  /**
+    * Updates an existing framework identified by its FrameworkName with the input document in JSON format.
+    */
+  def updateFramework(params: UpdateFrameworkInput): Request[UpdateFrameworkOutput, AWSError] = js.native
+  def updateFramework(
+    params: UpdateFrameworkInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateFrameworkOutput, Unit]
+  ): Request[UpdateFrameworkOutput, AWSError] = js.native
+  
+  /**
+    * Updates whether the Amazon Web Services account is opted in to cross-account backup. Returns an error if the account is not an Organizations management account. Use the DescribeGlobalSettings API to determine the current settings.
     */
   def updateGlobalSettings(): Request[js.Object, AWSError] = js.native
   def updateGlobalSettings(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Updates the current global settings for the AWS Account. Use the DescribeGlobalSettings API to determine the current settings.
+    * Updates whether the Amazon Web Services account is opted in to cross-account backup. Returns an error if the account is not an Organizations management account. Use the DescribeGlobalSettings API to determine the current settings.
     */
   def updateGlobalSettings(params: UpdateGlobalSettingsInput): Request[js.Object, AWSError] = js.native
   def updateGlobalSettings(
@@ -667,12 +877,12 @@ trait Backup extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Sets the transition lifecycle of a recovery point. The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup transitions and expires backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “expire after days” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. 
+    * Sets the transition lifecycle of a recovery point. The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. Backup transitions and expires backups automatically according to the lifecycle that you define. Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “retention” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. Resource types that are able to be transitioned to cold storage are listed in the "Lifecycle to cold storage" section of the  Feature availability by resource table. Backup ignores this expression for other resource types. This operation does not support continuous backups.
     */
   def updateRecoveryPointLifecycle(): Request[UpdateRecoveryPointLifecycleOutput, AWSError] = js.native
   def updateRecoveryPointLifecycle(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRecoveryPointLifecycleOutput, Unit]): Request[UpdateRecoveryPointLifecycleOutput, AWSError] = js.native
   /**
-    * Sets the transition lifecycle of a recovery point. The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup transitions and expires backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “expire after days” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. 
+    * Sets the transition lifecycle of a recovery point. The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. Backup transitions and expires backups automatically according to the lifecycle that you define. Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “retention” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. Resource types that are able to be transitioned to cold storage are listed in the "Lifecycle to cold storage" section of the  Feature availability by resource table. Backup ignores this expression for other resource types. This operation does not support continuous backups.
     */
   def updateRecoveryPointLifecycle(params: UpdateRecoveryPointLifecycleInput): Request[UpdateRecoveryPointLifecycleOutput, AWSError] = js.native
   def updateRecoveryPointLifecycle(
@@ -681,16 +891,30 @@ trait Backup extends Service {
   ): Request[UpdateRecoveryPointLifecycleOutput, AWSError] = js.native
   
   /**
-    * Updates the current service opt-in settings for the Region. If service-opt-in is enabled for a service, AWS Backup tries to protect that service's resources in this Region, when the resource is included in an on-demand backup or scheduled backup plan. Otherwise, AWS Backup does not try to protect that service's resources in this Region. Use the DescribeRegionSettings API to determine the resource types that are supported.
+    * Updates the current service opt-in settings for the Region. If service-opt-in is enabled for a service, Backup tries to protect that service's resources in this Region, when the resource is included in an on-demand backup or scheduled backup plan. Otherwise, Backup does not try to protect that service's resources in this Region. Use the DescribeRegionSettings API to determine the resource types that are supported.
     */
   def updateRegionSettings(): Request[js.Object, AWSError] = js.native
   def updateRegionSettings(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Updates the current service opt-in settings for the Region. If service-opt-in is enabled for a service, AWS Backup tries to protect that service's resources in this Region, when the resource is included in an on-demand backup or scheduled backup plan. Otherwise, AWS Backup does not try to protect that service's resources in this Region. Use the DescribeRegionSettings API to determine the resource types that are supported.
+    * Updates the current service opt-in settings for the Region. If service-opt-in is enabled for a service, Backup tries to protect that service's resources in this Region, when the resource is included in an on-demand backup or scheduled backup plan. Otherwise, Backup does not try to protect that service's resources in this Region. Use the DescribeRegionSettings API to determine the resource types that are supported.
     */
   def updateRegionSettings(params: UpdateRegionSettingsInput): Request[js.Object, AWSError] = js.native
   def updateRegionSettings(
     params: UpdateRegionSettingsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Updates an existing report plan identified by its ReportPlanName with the input document in JSON format.
+    */
+  def updateReportPlan(): Request[UpdateReportPlanOutput, AWSError] = js.native
+  def updateReportPlan(callback: js.Function2[/* err */ AWSError, /* data */ UpdateReportPlanOutput, Unit]): Request[UpdateReportPlanOutput, AWSError] = js.native
+  /**
+    * Updates an existing report plan identified by its ReportPlanName with the input document in JSON format.
+    */
+  def updateReportPlan(params: UpdateReportPlanInput): Request[UpdateReportPlanOutput, AWSError] = js.native
+  def updateReportPlan(
+    params: UpdateReportPlanInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateReportPlanOutput, Unit]
+  ): Request[UpdateReportPlanOutput, AWSError] = js.native
 }

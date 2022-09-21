@@ -21,5 +21,5 @@ object utilMod {
   inline def rmDir(dirPath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmDir")(dirPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def rmDir(dirPath: String, removeSelf: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rmDir")(dirPath.asInstanceOf[js.Any], removeSelf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def unzip(file: String, dest: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(file.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def unzip(file: String, dest: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(file.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 }

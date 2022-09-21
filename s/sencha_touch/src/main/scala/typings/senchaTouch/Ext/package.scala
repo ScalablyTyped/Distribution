@@ -1,46 +1,51 @@
 package typings.senchaTouch.Ext
 
+import typings.senchaTouch.Ext.data.IConnection
+import typings.senchaTouch.Ext.dom.IQuery
+import typings.senchaTouch.Ext.env.IOS
+import typings.senchaTouch.Ext.util.ICollection
+import typings.senchaTouch.Ext.viewport.IDefault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type IAbstractComponent = typings.senchaTouch.Ext.IEvented
+type IAbstractComponent = IEvented
 
-type IAbstractPlugin = typings.senchaTouch.Ext.IBase
+type IAbstractPlugin = IBase
 
-type IAjax = typings.senchaTouch.Ext.data.IConnection
+type IAjax = IConnection
 
-type IAnim = typings.senchaTouch.Ext.IBase
+type IAnim = IBase
 
-type IAnimationQueue = typings.senchaTouch.Ext.IBase
+type IAnimationQueue = IBase
 
 type IBrowser = typings.senchaTouch.Ext.env.IBrowser
 
-type IComponentManager = typings.senchaTouch.Ext.IBase
+type IComponentManager = IBase
 
-type IComponentMgr = typings.senchaTouch.Ext.IBase
+type IComponentMgr = IBase
 
-type IDate = typings.senchaTouch.Ext.IDateExtras
+type IDate = IDateExtras
 
-type IDomQuery = typings.senchaTouch.Ext.dom.IQuery
+type IDomQuery = IQuery
 
 type IFeature = typings.senchaTouch.Ext.env.IFeature
 
-type IModelManager = typings.senchaTouch.Ext.IAbstractManager
+type IModelManager = IAbstractManager
 
-type IModelMgr = typings.senchaTouch.Ext.IAbstractManager
+type IModelMgr = IAbstractManager
 
-type IMsg = typings.senchaTouch.Ext.IMessageBox
+type IMsg = IMessageBox
 
-type IOs = typings.senchaTouch.Ext.env.IOS
+type IOs = IOS
 
-type IPromise = typings.senchaTouch.Ext.IBase
+type IPromise = IBase
 
-type IStoreManager = typings.senchaTouch.Ext.util.ICollection
+type IStoreManager = ICollection
 
-type IStoreMgr = typings.senchaTouch.Ext.util.ICollection
+type IStoreMgr = ICollection
 
-type ITaskQueue = typings.senchaTouch.Ext.IBase
+type ITaskQueue = IBase
 
-type IViewport = typings.senchaTouch.Ext.viewport.IDefault
+type IViewport = IDefault

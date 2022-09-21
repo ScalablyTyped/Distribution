@@ -2,6 +2,7 @@ package typings.rcPicker
 
 import org.scalablytyped.runtime.Shortcut
 import typings.rcPicker.interfaceMod.OnSelect
+import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.rcPickerStrings.key
 import typings.rcPicker.rcPickerStrings.mouse
 import typings.rcPicker.rcPickerStrings.submit
@@ -49,7 +50,7 @@ object panelContextMod extends Shortcut {
   trait PanelContextProps extends StObject {
     
     /** Only used for TimePicker and this is a deprecated prop */
-    var defaultOpenValue: js.UndefOr[js.Any] = js.undefined
+    var defaultOpenValue: js.UndefOr[Any] = js.undefined
     
     /** Only work with time panel */
     var hideHeader: js.UndefOr[Boolean] = js.undefined
@@ -60,11 +61,13 @@ object panelContextMod extends Shortcut {
     
     var hideRanges: js.UndefOr[Boolean] = js.undefined
     
-    var onDateMouseEnter: js.UndefOr[js.Function1[/* date */ js.Any, Unit]] = js.undefined
+    var mode: js.UndefOr[PanelMode] = js.undefined
     
-    var onDateMouseLeave: js.UndefOr[js.Function1[/* date */ js.Any, Unit]] = js.undefined
+    var onDateMouseEnter: js.UndefOr[js.Function1[/* date */ Any, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[OnSelect[js.Any]] = js.undefined
+    var onDateMouseLeave: js.UndefOr[js.Function1[/* date */ Any, Unit]] = js.undefined
+    
+    var onSelect: js.UndefOr[OnSelect[Any]] = js.undefined
     
     var open: js.UndefOr[Boolean] = js.undefined
     
@@ -81,7 +84,7 @@ object panelContextMod extends Shortcut {
     
     extension [Self <: PanelContextProps](x: Self) {
       
-      inline def setDefaultOpenValue(value: js.Any): Self = StObject.set(x, "defaultOpenValue", value.asInstanceOf[js.Any])
+      inline def setDefaultOpenValue(value: Any): Self = StObject.set(x, "defaultOpenValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultOpenValueUndefined: Self = StObject.set(x, "defaultOpenValue", js.undefined)
       
@@ -101,15 +104,19 @@ object panelContextMod extends Shortcut {
       
       inline def setHideRangesUndefined: Self = StObject.set(x, "hideRanges", js.undefined)
       
-      inline def setOnDateMouseEnter(value: /* date */ js.Any => Unit): Self = StObject.set(x, "onDateMouseEnter", js.Any.fromFunction1(value))
+      inline def setMode(value: PanelMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      
+      inline def setOnDateMouseEnter(value: /* date */ Any => Unit): Self = StObject.set(x, "onDateMouseEnter", js.Any.fromFunction1(value))
       
       inline def setOnDateMouseEnterUndefined: Self = StObject.set(x, "onDateMouseEnter", js.undefined)
       
-      inline def setOnDateMouseLeave(value: /* date */ js.Any => Unit): Self = StObject.set(x, "onDateMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnDateMouseLeave(value: /* date */ Any => Unit): Self = StObject.set(x, "onDateMouseLeave", js.Any.fromFunction1(value))
       
       inline def setOnDateMouseLeaveUndefined: Self = StObject.set(x, "onDateMouseLeave", js.undefined)
       
-      inline def setOnSelect(value: (js.Any, /* type */ key | mouse | submit) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (Any, /* type */ key | mouse | submit) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       

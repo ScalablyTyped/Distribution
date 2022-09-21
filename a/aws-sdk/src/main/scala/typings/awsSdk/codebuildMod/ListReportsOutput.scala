@@ -12,7 +12,7 @@ trait ListReportsOutput extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    *  The list of returned ARNs for the reports in the current AWS account. 
+    *  The list of returned ARNs for the reports in the current Amazon Web Services account. 
     */
   var reports: js.UndefOr[ReportArns] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListReportsOutput {
     
     inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
-    inline def setReportsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reports", js.Array(value :_*))
+    inline def setReportsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reports", js.Array(value*))
   }
 }

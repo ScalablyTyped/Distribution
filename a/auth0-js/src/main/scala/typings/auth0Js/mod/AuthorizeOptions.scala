@@ -11,7 +11,7 @@ trait AuthorizeOptions extends StObject {
   
   var accessType: js.UndefOr[String] = js.undefined
   
-  var appState: js.UndefOr[js.Any] = js.undefined
+  var appState: js.UndefOr[Any] = js.undefined
   
   var approvalPrompt: js.UndefOr[String] = js.undefined
   
@@ -60,7 +60,7 @@ object AuthorizeOptions {
     
     inline def setAccessTypeUndefined: Self = StObject.set(x, "accessType", js.undefined)
     
-    inline def setAppState(value: js.Any): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
+    inline def setAppState(value: Any): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
     
     inline def setAppStateUndefined: Self = StObject.set(x, "appState", js.undefined)
     
@@ -84,7 +84,7 @@ object AuthorizeOptions {
     
     inline def setConnection_scopeUndefined: Self = StObject.set(x, "connection_scope", js.undefined)
     
-    inline def setConnection_scopeVarargs(value: String*): Self = StObject.set(x, "connection_scope", js.Array(value :_*))
+    inline def setConnection_scopeVarargs(value: String*): Self = StObject.set(x, "connection_scope", js.Array(value*))
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

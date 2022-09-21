@@ -19,7 +19,7 @@ object mod {
   @js.native
   trait ExpessEngine extends StObject {
     
-    def apply(path: String, options: js.Any, cb: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
+    def apply(path: String, options: Any, cb: js.Function1[/* repeated */ Any, Any]): Any = js.native
     
     var cache: TemplateCache = js.native
   }

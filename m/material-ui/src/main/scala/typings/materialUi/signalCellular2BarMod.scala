@@ -10,10 +10,10 @@ object signalCellular2BarMod {
   
   @JSImport("material-ui/svg-icons/device/signal-cellular-2-bar", JSImport.Default)
   @js.native
-  class default () extends DeviceSignalCellular2Bar
+  open class default () extends DeviceSignalCellular2Bar
   
   @JSImport("material-ui/svg-icons/device/signal-cellular-2-bar", "DeviceSignalCellular2Bar")
   @js.native
-  class DeviceSignalCellular2Bar ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceSignalCellular2Bar ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

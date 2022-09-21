@@ -1,6 +1,6 @@
 package typings.popperjsCore
 
-import typings.std.HTMLElement
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -136,7 +136,7 @@ object enumsMod {
     inline def top: typings.popperjsCore.popperjsCoreStrings.top = "top".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.top]
   }
   
-  type Boundary = HTMLElement | js.Array[HTMLElement] | typings.popperjsCore.popperjsCoreStrings.clippingParents
+  type Boundary = Element | js.Array[Element] | typings.popperjsCore.popperjsCoreStrings.clippingParents
   
   /* Rewritten from type alias, can be one of: 
     - typings.popperjsCore.popperjsCoreStrings.`top-start`

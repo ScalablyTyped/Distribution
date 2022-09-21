@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ValidationResult[T] extends StObject {
   
-  var error: js.UndefOr[js.Any] = js.undefined
+  var error: js.UndefOr[Any] = js.undefined
   
-  var errors: js.UndefOr[js.Any] = js.undefined
+  var errors: js.UndefOr[Any] = js.undefined
   
   var value: T
 }
@@ -21,11 +21,11 @@ object ValidationResult {
   
   extension [Self <: ValidationResult[?], T](x: Self & ValidationResult[T]) {
     
-    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     

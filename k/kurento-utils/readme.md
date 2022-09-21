@@ -10,10 +10,10 @@ Kurento JavaScript Utilities
 | ------------------ | :-------------: |
 | Full name          | kurento-utils |
 | Keywords           | kurento, mcu, sfu, rpc, mediaserver, pipe, audio, video, media, recording, stream, streaming, videoconference, broadcast, multicast, client, server, browser, chrome, edge, firefox, safari, webrtc, datachannel, sdp, ice, stun, turn, h264, h.264, opus, vp8, rtp, srtp, rtsp |
-| # releases         | 10 |
-| # dependents       | 6 |
-| # downloads        | 83615 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7536.666666666667 |
+| # stars            | 91.0 |
 
 ## Links
 - [Homepage](https://www.kurento.org)

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactElement
-import typings.react.mod.ReactType
 import typings.reactAddonsTransitionGroup.mod.reactAugmentingMod.TransitionGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,10 +21,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-addons-transition-group", JSImport.Namespace)
   @js.native
-  class Class protected ()
-    extends Component[TransitionGroupProps, ComponentState, js.Any] {
+  open class Class protected () extends Component[TransitionGroupProps, ComponentState, Any] {
     def this(props: TransitionGroupProps) = this()
-    def this(props: TransitionGroupProps, context: js.Any) = this()
+    def this(props: TransitionGroupProps, context: Any) = this()
   }
   
   type ReactTransitionGroup = ComponentClass[TransitionGroupProps, ComponentState]
@@ -43,7 +42,7 @@ object mod extends Shortcut {
       
       var childFactory: js.UndefOr[js.Function1[/* child */ ReactElement, ReactElement]] = js.undefined
       
-      var component: js.UndefOr[ReactType[js.Any]] = js.undefined
+      var component: js.UndefOr[ElementType[Any]] = js.undefined
     }
     object HTMLTransitionGroupProps {
       
@@ -58,7 +57,7 @@ object mod extends Shortcut {
         
         inline def setChildFactoryUndefined: Self = StObject.set(x, "childFactory", js.undefined)
         
-        inline def setComponent(value: ReactType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+        inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
         
         inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       }

@@ -9,9 +9,9 @@ trait TargetCamera
   extends StObject
      with Camera {
   
-  /* private */ var _cachedQuaternionRotationZ: js.Any = js.native
+  /* private */ var _cachedQuaternionRotationZ: Any = js.native
   
-  /* private */ var _cachedRotationZ: js.Any = js.native
+  /* private */ var _cachedRotationZ: Any = js.native
   
   /** @hidden */
   var _camMatrix: Matrix = js.native
@@ -33,12 +33,12 @@ trait TargetCamera
   /** @hidden */
   def _decideIfNeedsToMove(): Boolean = js.native
   
-  /* private */ var _defaultUp: js.Any = js.native
+  /* private */ var _defaultUp: Any = js.native
   
   /** @hidden */
   def _getLockedTargetPosition(): Nullable[Vector3] = js.native
   
-  /* private */ var _getRigCamPositionAndTarget: js.Any = js.native
+  /* private */ var _getRigCamPositionAndTarget: Any = js.native
   
   /** @hidden */
   var _initialFocalDistance: Double = js.native
@@ -53,19 +53,19 @@ trait TargetCamera
     * Update the up vector to apply the rotation of the camera (So if you changed the camera rotation.z this will let you update the up vector as well)
     * @returns the current camera
     */
-  /* private */ var _rotateUpVectorWithCameraRotationMatrix: js.Any = js.native
+  /* private */ var _rotateUpVectorWithCameraRotationMatrix: Any = js.native
   
-  /* private */ var _storedPosition: js.Any = js.native
+  /* private */ var _storedPosition: Any = js.native
   
-  /* private */ var _storedRotation: js.Any = js.native
+  /* private */ var _storedRotation: Any = js.native
   
-  /* private */ var _storedRotationQuaternion: js.Any = js.native
+  /* private */ var _storedRotationQuaternion: Any = js.native
   
-  /* private */ var _tmpQuaternion: js.Any = js.native
+  /* private */ var _tmpQuaternion: Any = js.native
   
-  /* private */ var _tmpTargetVector: js.Any = js.native
+  /* private */ var _tmpTargetVector: Any = js.native
   
-  /* private */ var _tmpUpVector: js.Any = js.native
+  /* private */ var _tmpUpVector: Any = js.native
   
   /** @hidden */
   var _transformedReferencePoint: Vector3 = js.native
@@ -115,8 +115,9 @@ trait TargetCamera
   
   /**
     * Define the current target of the camera as an object or a position.
+    * Please note that locking a target will disable panning.
     */
-  var lockedTarget: js.Any = js.native
+  var lockedTarget: Any = js.native
   
   /**
     * Add constraint to the camera to prevent it to move freely in all directions and
@@ -136,7 +137,7 @@ trait TargetCamera
   
   /**
     * Defines the target the camera should look at.
-    * @param target Defines the new target as a Vector or a mesh
+    * @param target Defines the new target as a Vector
     */
   def setTarget(target: Vector3): Unit = js.native
   

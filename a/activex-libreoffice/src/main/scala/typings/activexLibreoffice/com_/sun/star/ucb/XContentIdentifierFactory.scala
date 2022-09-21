@@ -28,7 +28,7 @@ object XContentIdentifierFactory {
   inline def apply(
     acquire: () => Unit,
     createContentIdentifier: String => XContentIdentifier,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XContentIdentifierFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createContentIdentifier = js.Any.fromFunction1(createContentIdentifier), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

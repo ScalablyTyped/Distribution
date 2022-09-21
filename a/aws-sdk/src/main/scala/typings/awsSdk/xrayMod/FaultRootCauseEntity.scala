@@ -34,7 +34,7 @@ object FaultRootCauseEntity {
     
     inline def setExceptionsUndefined: Self = StObject.set(x, "Exceptions", js.undefined)
     
-    inline def setExceptionsVarargs(value: RootCauseException*): Self = StObject.set(x, "Exceptions", js.Array(value :_*))
+    inline def setExceptionsVarargs(value: RootCauseException*): Self = StObject.set(x, "Exceptions", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

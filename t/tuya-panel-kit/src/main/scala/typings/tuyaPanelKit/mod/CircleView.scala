@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "CircleView")
 @js.native
-class CircleView protected ()
-  extends Component[CircleViewProps, js.Object, js.Any] {
+open class CircleView protected ()
+  extends Component[CircleViewProps, js.Object, Any] {
   def this(props: CircleViewProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CircleViewProps, context: js.Any) = this()
+  def this(props: CircleViewProps, context: Any) = this()
 }

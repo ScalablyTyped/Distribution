@@ -14,29 +14,29 @@ object getPathFromStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(state: State): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def default(state: State, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default[ParamList /* <: js.Object */](state: State): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default[ParamList /* <: js.Object */](state: State, options: Options[ParamList]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  trait Options extends StObject {
+  trait Options[ParamList] extends StObject {
     
     var initialRouteName: js.UndefOr[String] = js.undefined
     
-    var screens: PathConfigMap
+    var screens: PathConfigMap[ParamList]
   }
   object Options {
     
-    inline def apply(screens: PathConfigMap): Options = {
+    inline def apply[ParamList](screens: PathConfigMap[ParamList]): Options[ParamList] = {
       val __obj = js.Dynamic.literal(screens = screens.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[Options[ParamList]]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: Options[?], ParamList](x: Self & Options[ParamList]) {
       
       inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       
       inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
       
-      inline def setScreens(value: PathConfigMap): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
+      inline def setScreens(value: PathConfigMap[ParamList]): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
     }
   }
   

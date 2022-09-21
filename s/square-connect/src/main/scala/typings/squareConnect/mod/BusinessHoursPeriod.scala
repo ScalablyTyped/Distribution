@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "BusinessHoursPeriod")
 @js.native
-class BusinessHoursPeriod () extends StObject {
+open class BusinessHoursPeriod () extends StObject {
   
   /**
     * The day of week for this time period. See [DayOfWeek](#type-dayofweek) for possible values

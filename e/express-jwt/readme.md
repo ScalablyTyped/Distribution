@@ -1,6 +1,7 @@
 
 # Scala.js typings for express-jwt
 
+Typings are for version 6.0
 
 ## Library description:
 JWT authentication middleware.
@@ -9,10 +10,10 @@ JWT authentication middleware.
 | ------------------ | :-------------: |
 | Full name          | express-jwt |
 | Keywords           | auth, authn, authentication, authz, authorization, http, jwt, token, oauth, express |
-| # releases         | 3 |
-| # dependents       | 435 |
-| # downloads        | 13612333 |
-| # stars            | 95 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 2436935.0 |
+| # stars            | 4241.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/express-jwt#readme)

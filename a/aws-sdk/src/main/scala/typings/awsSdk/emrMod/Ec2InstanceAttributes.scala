@@ -74,13 +74,13 @@ object Ec2InstanceAttributes {
     
     inline def setAdditionalMasterSecurityGroupsUndefined: Self = StObject.set(x, "AdditionalMasterSecurityGroups", js.undefined)
     
-    inline def setAdditionalMasterSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "AdditionalMasterSecurityGroups", js.Array(value :_*))
+    inline def setAdditionalMasterSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "AdditionalMasterSecurityGroups", js.Array(value*))
     
     inline def setAdditionalSlaveSecurityGroups(value: StringList): Self = StObject.set(x, "AdditionalSlaveSecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setAdditionalSlaveSecurityGroupsUndefined: Self = StObject.set(x, "AdditionalSlaveSecurityGroups", js.undefined)
     
-    inline def setAdditionalSlaveSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "AdditionalSlaveSecurityGroups", js.Array(value :_*))
+    inline def setAdditionalSlaveSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "AdditionalSlaveSecurityGroups", js.Array(value*))
     
     inline def setEc2AvailabilityZone(value: String): Self = StObject.set(x, "Ec2AvailabilityZone", value.asInstanceOf[js.Any])
     
@@ -110,13 +110,13 @@ object Ec2InstanceAttributes {
     
     inline def setRequestedEc2AvailabilityZonesUndefined: Self = StObject.set(x, "RequestedEc2AvailabilityZones", js.undefined)
     
-    inline def setRequestedEc2AvailabilityZonesVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "RequestedEc2AvailabilityZones", js.Array(value :_*))
+    inline def setRequestedEc2AvailabilityZonesVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "RequestedEc2AvailabilityZones", js.Array(value*))
     
     inline def setRequestedEc2SubnetIds(value: XmlStringMaxLen256List): Self = StObject.set(x, "RequestedEc2SubnetIds", value.asInstanceOf[js.Any])
     
     inline def setRequestedEc2SubnetIdsUndefined: Self = StObject.set(x, "RequestedEc2SubnetIds", js.undefined)
     
-    inline def setRequestedEc2SubnetIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "RequestedEc2SubnetIds", js.Array(value :_*))
+    inline def setRequestedEc2SubnetIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "RequestedEc2SubnetIds", js.Array(value*))
     
     inline def setServiceAccessSecurityGroup(value: String): Self = StObject.set(x, "ServiceAccessSecurityGroup", value.asInstanceOf[js.Any])
     

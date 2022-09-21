@@ -34,7 +34,7 @@ trait MigrationTaskSummary extends StObject {
   /**
     * The timestamp when the task was gathered.
     */
-  var UpdateDateTime: js.UndefOr[typings.awsSdk.migrationhubMod.UpdateDateTime] = js.undefined
+  var UpdateDateTime: js.UndefOr[js.Date] = js.undefined
 }
 object MigrationTaskSummary {
   
@@ -65,7 +65,7 @@ object MigrationTaskSummary {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setUpdateDateTime(value: UpdateDateTime): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateDateTime(value: js.Date): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
     
     inline def setUpdateDateTimeUndefined: Self = StObject.set(x, "UpdateDateTime", js.undefined)
   }

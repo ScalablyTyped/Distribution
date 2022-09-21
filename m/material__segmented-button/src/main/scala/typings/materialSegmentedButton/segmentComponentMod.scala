@@ -1,10 +1,10 @@
 package typings.materialSegmentedButton
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialRipple.componentMod.MDCRipple
 import typings.materialRipple.componentMod.MDCRippleFactory
 import typings.materialSegmentedButton.segmentFoundationMod.MDCSegmentedButtonSegmentFoundation
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +14,9 @@ object segmentComponentMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/segmented-button/segment/component", "MDCSegmentedButtonSegment")
   @js.native
-  class MDCSegmentedButtonSegment protected () extends MDCComponent[MDCSegmentedButtonSegmentFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCSegmentedButtonSegmentFoundation, args: js.Any*) = this()
+  open class MDCSegmentedButtonSegment protected () extends MDCComponent[MDCSegmentedButtonSegmentFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCSegmentedButtonSegmentFoundation, args: Any*) = this()
     
     var disabled: js.UndefOr[Boolean] = js.native
     
@@ -25,9 +25,9 @@ object segmentComponentMod {
       */
     def getSegmentId(): js.UndefOr[String] = js.native
     
-    /* private */ var handleClick: js.Any = js.native
+    /* private */ var handleClick: Any = js.native
     
-    /* private */ var index: js.Any = js.native
+    /* private */ var index: Any = js.native
     
     def initialize(): Unit = js.native
     def initialize(rippleFactory: MDCRippleFactory): Unit = js.native
@@ -38,11 +38,11 @@ object segmentComponentMod {
       */
     def isSelected(): Boolean = js.native
     
-    /* private */ var isSingleSelect: js.Any = js.native
+    /* private */ var isSingleSelect: Any = js.native
     
     def ripple: MDCRipple = js.native
     
-    /* private */ var rippleComponent: js.Any = js.native
+    /* private */ var rippleComponent: Any = js.native
     
     /**
       * Sets segment's index value
@@ -77,11 +77,11 @@ object segmentComponentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCSegmentedButtonSegment = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSegmentedButtonSegment]
+    inline def attachTo(root: typings.std.Element): MDCSegmentedButtonSegment = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSegmentedButtonSegment]
   }
   
   type MDCSegmentedButtonSegmentFactory = js.Function2[
-    /* el */ Element, 
+    /* el */ typings.std.Element, 
     /* foundation */ js.UndefOr[MDCSegmentedButtonSegmentFoundation], 
     MDCSegmentedButtonSegment
   ]

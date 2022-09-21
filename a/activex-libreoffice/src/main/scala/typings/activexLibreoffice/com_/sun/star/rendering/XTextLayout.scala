@@ -246,7 +246,7 @@ object XTextLayout {
     getTextHit: RealPoint2D => TextHit,
     justify: Double => Double,
     queryInkMeasures: () => SafeArray[RealRectangle2D],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryLogicalAdvancements: () => SafeArray[Double],
     queryLogicalHighlighting: (Double, Double) => XPolyPolygon2D,
     queryMeasures: () => SafeArray[RealRectangle2D],

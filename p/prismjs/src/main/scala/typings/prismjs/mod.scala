@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.prismjs.prismjsStrings.Array
 import typings.prismjs.prismjsStrings.Function
 import typings.prismjs.prismjsStrings.Number
+import typings.prismjs.prismjsStrings.RegExp
 import typings.prismjs.prismjsStrings.Undefined
 import typings.prismjs.prismjsStrings.`after-highlight`
 import typings.prismjs.prismjsStrings.`after-tokenize`
@@ -30,7 +31,6 @@ import typings.std.Element
 import typings.std.ParentNode
 import typings.std.Pick
 import typings.std.Record
-import typings.std.RegExp
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +44,7 @@ object mod {
   
   @JSImport("prismjs", "Token")
   @js.native
-  class Token protected () extends StObject {
+  open class Token protected () extends StObject {
     /**
       * Creates a new token.
       *
@@ -117,11 +117,15 @@ object mod {
       * @param language The name of current language.
       * @param [parent] The parent token stream, if any.
       * @return The HTML representation of the token or token stream.
-      * @private
       */
     inline def stringify(token: TokenStream, language: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(token.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def stringify(token: TokenStream, language: String, parent: js.Array[String | Token]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(token.asInstanceOf[js.Any], language.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[String]
   }
+  
+  @JSImport("prismjs", "disableWorkerMessageHandler")
+  @js.native
+  def disableWorkerMessageHandler: js.UndefOr[Boolean] = js.native
+  inline def disableWorkerMessageHandler_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableWorkerMessageHandler")(x.asInstanceOf[js.Any])
   
   inline def highlight(text: String, grammar: Grammar, language: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(text.asInstanceOf[js.Any], grammar.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -316,9 +320,14 @@ object mod {
   @js.native
   val languages: Languages_ = js.native
   
+  @JSImport("prismjs", "manual")
+  @js.native
+  def manual: js.UndefOr[Boolean] = js.native
+  inline def manual_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manual")(x.asInstanceOf[js.Any])
+  
   @JSImport("prismjs", "plugins")
   @js.native
-  val plugins: Record[String, js.Any] = js.native
+  val plugins: Record[String, Any] = js.native
   
   inline def tokenize(text: String, grammar: Grammar): js.Array[String | Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any], grammar.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | Token]]
   
@@ -335,12 +344,14 @@ object mod {
     inline def encode(tokens: TokenStream): TokenStream = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(tokens.asInstanceOf[js.Any]).asInstanceOf[TokenStream]
     
     /** Get the unique id of this object or give it one if it does not have one */
-    inline def objId(obj: js.Any): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("objId")(obj.asInstanceOf[js.Any]).asInstanceOf[Identifier]
+    inline def objId(obj: Any): Identifier = ^.asInstanceOf[js.Dynamic].applyDynamic("objId")(obj.asInstanceOf[js.Any]).asInstanceOf[Identifier]
     
     inline def `type`(o: String): typings.prismjs.prismjsStrings.String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[typings.prismjs.prismjsStrings.String]
-    inline def `type`(o: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def `type`(o: js.Array[js.Any]): Array = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Array]
+    inline def `type`(o: js.Array[Any]): Array = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Array]
     inline def `type`(o: js.Function): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Function]
+    // tslint:enable:ban-types
+    inline def `type`(o: js.RegExp): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+    inline def `type`(o: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[String]
     // tslint:disable:ban-types
     inline def `type`(o: Boolean): typings.prismjs.prismjsStrings.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[typings.prismjs.prismjsStrings.Boolean]
     inline def `type`(o: Double): Number = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Number]
@@ -348,8 +359,6 @@ object mod {
     inline def `type`(o: Null): typings.prismjs.prismjsStrings.Null = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[typings.prismjs.prismjsStrings.Null]
     inline def `type`(o: Unit): Undefined = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Undefined]
     inline def `type`(o: typings.std.Number): Number = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[Number]
-    // tslint:enable:ban-types
-    inline def `type`(o: RegExp): typings.prismjs.prismjsStrings.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(o.asInstanceOf[js.Any]).asInstanceOf[typings.prismjs.prismjsStrings.RegExp]
     
     trait Identifier extends StObject {
       
@@ -413,7 +422,7 @@ object mod {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -443,7 +452,7 @@ object mod {
       
       inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      inline def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
+      inline def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value*))
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
@@ -459,7 +468,7 @@ object mod {
     }
   }
   
-  type Grammar = GrammarRest & (Record[String, GrammarValue])
+  type Grammar = GrammarRest | (Record[String, GrammarValue])
   
   trait GrammarRest extends StObject {
     
@@ -511,67 +520,67 @@ object mod {
       
       inline def setAtruleUndefined: Self = StObject.set(x, "atrule", js.undefined)
       
-      inline def setAtruleVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "atrule", js.Array(value :_*))
+      inline def setAtruleVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "atrule", js.Array(value*))
       
       inline def setBoolean(value: GrammarValue): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
       inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      inline def setBooleanVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "boolean", js.Array(value :_*))
+      inline def setBooleanVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "boolean", js.Array(value*))
       
       inline def `setClass-name`(value: GrammarValue): Self = StObject.set(x, "class-name", value.asInstanceOf[js.Any])
       
       inline def `setClass-nameUndefined`: Self = StObject.set(x, "class-name", js.undefined)
       
-      inline def `setClass-nameVarargs`(value: (RegExp | TokenObject)*): Self = StObject.set(x, "class-name", js.Array(value :_*))
+      inline def `setClass-nameVarargs`(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "class-name", js.Array(value*))
       
       inline def setComment(value: GrammarValue): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
       inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      inline def setCommentVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "comment", js.Array(value :_*))
+      inline def setCommentVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "comment", js.Array(value*))
       
       inline def setFunction(value: GrammarValue): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
       inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
-      inline def setFunctionVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "function", js.Array(value :_*))
+      inline def setFunctionVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "function", js.Array(value*))
       
       inline def setImportant(value: GrammarValue): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
       
       inline def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
       
-      inline def setImportantVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "important", js.Array(value :_*))
+      inline def setImportantVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "important", js.Array(value*))
       
       inline def setKeyword(value: GrammarValue): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
       inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
       
-      inline def setKeywordVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "keyword", js.Array(value :_*))
+      inline def setKeywordVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "keyword", js.Array(value*))
       
       inline def setNumber(value: GrammarValue): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
       inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      inline def setNumberVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "number", js.Array(value :_*))
+      inline def setNumberVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "number", js.Array(value*))
       
       inline def setOperator(value: GrammarValue): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
       inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      inline def setOperatorVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "operator", js.Array(value :_*))
+      inline def setOperatorVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "operator", js.Array(value*))
       
       inline def setProperty(value: GrammarValue): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      inline def setPropertyVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "property", js.Array(value :_*))
+      inline def setPropertyVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "property", js.Array(value*))
       
       inline def setPunctuation(value: GrammarValue): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
       
       inline def setPunctuationUndefined: Self = StObject.set(x, "punctuation", js.undefined)
       
-      inline def setPunctuationVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "punctuation", js.Array(value :_*))
+      inline def setPunctuationVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "punctuation", js.Array(value*))
       
       inline def setRest(value: Grammar): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
       
@@ -581,29 +590,29 @@ object mod {
       
       inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      inline def setSelectorVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "selector", js.Array(value :_*))
+      inline def setSelectorVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "selector", js.Array(value*))
       
       inline def setString(value: GrammarValue): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
       inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      inline def setStringVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "string", js.Array(value*))
       
       inline def setStyle(value: GrammarValue): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setUrl(value: GrammarValue): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      inline def setUrlVarargs(value: (RegExp | TokenObject)*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: (js.RegExp | TokenObject)*): Self = StObject.set(x, "url", js.Array(value*))
     }
   }
   
-  type GrammarValue = RegExp | TokenObject | (js.Array[RegExp | TokenObject])
+  type GrammarValue = js.RegExp | TokenObject | (js.Array[js.RegExp | TokenObject])
   
   type HighlightCallback = js.Function1[/* element */ Element, Unit]
   
@@ -612,6 +621,7 @@ object mod {
     */
   StringDictionary[Grammar]
   
+  @js.native
   trait LanguageMapProtocol extends StObject {
     
     /**
@@ -628,7 +638,7 @@ object mod {
       *     'color': /\b(?:red|green|blue)\b/
       * });
       */
-    def extend(id: String, redef: Grammar): Grammar
+    def extend(id: String, redef: Grammar): Grammar = js.native
     
     /**
       * Inserts tokens _before_ another token in a language definition or any other grammar.
@@ -654,40 +664,15 @@ object mod {
       *     'style': { ... }
       * });
       */
-    def insertBefore(inside: String, before: String, insert: Grammar, root: LanguageMap): Grammar
-  }
-  object LanguageMapProtocol {
-    
-    inline def apply(
-      extend: (String, Grammar) => Grammar,
-      insertBefore: (String, String, Grammar, LanguageMap) => Grammar
-    ): LanguageMapProtocol = {
-      val __obj = js.Dynamic.literal(extend = js.Any.fromFunction2(extend), insertBefore = js.Any.fromFunction4(insertBefore))
-      __obj.asInstanceOf[LanguageMapProtocol]
-    }
-    
-    extension [Self <: LanguageMapProtocol](x: Self) {
-      
-      inline def setExtend(value: (String, Grammar) => Grammar): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
-      
-      inline def setInsertBefore(value: (String, String, Grammar, LanguageMap) => Grammar): Self = StObject.set(x, "insertBefore", js.Any.fromFunction4(value))
-    }
+    def insertBefore(inside: String, before: String, insert: Grammar): Grammar = js.native
+    def insertBefore(inside: String, before: String, insert: Grammar, root: LanguageMap): Grammar = js.native
   }
   
+  @js.native
   trait Languages_
     extends StObject
        with LanguageMapProtocol
        with LanguageMap
-  object Languages_ {
-    
-    inline def apply(
-      extend: (String, Grammar) => Grammar,
-      insertBefore: (String, String, Grammar, LanguageMap) => Grammar
-    ): Languages_ = {
-      val __obj = js.Dynamic.literal(extend = js.Any.fromFunction2(extend), insertBefore = js.Any.fromFunction4(insertBefore))
-      __obj.asInstanceOf[Languages_]
-    }
-  }
   
   trait TokenObject extends StObject {
     
@@ -721,11 +706,11 @@ object mod {
     /**
       * The regular expression of the token.
       */
-    var pattern: RegExp
+    var pattern: js.RegExp
   }
   object TokenObject {
     
-    inline def apply(pattern: RegExp): TokenObject = {
+    inline def apply(pattern: js.RegExp): TokenObject = {
       val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenObject]
     }
@@ -736,7 +721,7 @@ object mod {
       
       inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
       
       inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
       
@@ -750,7 +735,7 @@ object mod {
       
       inline def setLookbehindUndefined: Self = StObject.set(x, "lookbehind", js.undefined)
       
-      inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     }
   }
   

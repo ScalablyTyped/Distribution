@@ -11,7 +11,7 @@ trait Columns extends StObject {
     *  on the idea of "fixed sized columns", not by the standard comma or semicolon "separator". So, the columns array holds the number
     * of characters for each column so that the parser will be able to split each line in the correct way [...]
     */
-  var columns: js.UndefOr[js.Any] = js.undefined
+  var columns: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets the CSV data directly embedded in the JSON, as a string. However new-line characters are not allowed in the definition of an
@@ -20,11 +20,15 @@ trait Columns extends StObject {
     */
   var `data-string`: js.UndefOr[String] = js.undefined
   
+  var dataString: js.UndefOr[String] = js.undefined
+  
   /**
     * Specifies if the CSV data contains descriptive headers for each column as the first or second row (depending on title presence). t
     * rue | false | 1 | 0
     */
   var `horizontal-labels`: js.UndefOr[Boolean] = js.undefined
+  
+  var horizontalLabels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies if the CSV data should be processed in a mirrored way (per line instead of per column). Note the different format used f
@@ -38,10 +42,14 @@ trait Columns extends StObject {
     */
   var `row-separator`: js.UndefOr[String] = js.undefined
   
+  var rowSeparator: js.UndefOr[String] = js.undefined
+  
   /**
     * Specifies whether or not each column in the csv data should have its own scale on the chart. true | false | 1 | 0
     */
   var `separate-scales`: js.UndefOr[Boolean] = js.undefined
+  
+  var separateScales: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the separator between the data cells, default is ",". Any single character can be used as a separator. "*" | "/" | "," | ...
@@ -53,6 +61,8 @@ trait Columns extends StObject {
     * rate scale. If it is, smart-scales will assign the unique data columns to separate scales. true | false | 1 | 0
     */
   var `smart-scales`: js.UndefOr[Boolean] = js.undefined
+  
+  var smartScales: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies if the CSV data contains a descriptive title on the first line. If this attribute it not included, then the library look
@@ -71,6 +81,8 @@ trait Columns extends StObject {
     * Specifies if the CSV data contains descriptive headers for each row. true | false | 1 | 0
     */
   var `vertical-labels`: js.UndefOr[Boolean] = js.undefined
+  
+  var verticalLabels: js.UndefOr[Boolean] = js.undefined
 }
 object Columns {
   
@@ -81,7 +93,7 @@ object Columns {
   
   extension [Self <: Columns](x: Self) {
     
-    inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
@@ -89,9 +101,17 @@ object Columns {
     
     inline def `setData-stringUndefined`: Self = StObject.set(x, "data-string", js.undefined)
     
+    inline def setDataString(value: String): Self = StObject.set(x, "dataString", value.asInstanceOf[js.Any])
+    
+    inline def setDataStringUndefined: Self = StObject.set(x, "dataString", js.undefined)
+    
     inline def `setHorizontal-labels`(value: Boolean): Self = StObject.set(x, "horizontal-labels", value.asInstanceOf[js.Any])
     
     inline def `setHorizontal-labelsUndefined`: Self = StObject.set(x, "horizontal-labels", js.undefined)
+    
+    inline def setHorizontalLabels(value: Boolean): Self = StObject.set(x, "horizontalLabels", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalLabelsUndefined: Self = StObject.set(x, "horizontalLabels", js.undefined)
     
     inline def setMirrored(value: Boolean): Self = StObject.set(x, "mirrored", value.asInstanceOf[js.Any])
     
@@ -101,9 +121,17 @@ object Columns {
     
     inline def `setRow-separatorUndefined`: Self = StObject.set(x, "row-separator", js.undefined)
     
+    inline def setRowSeparator(value: String): Self = StObject.set(x, "rowSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setRowSeparatorUndefined: Self = StObject.set(x, "rowSeparator", js.undefined)
+    
     inline def `setSeparate-scales`(value: Boolean): Self = StObject.set(x, "separate-scales", value.asInstanceOf[js.Any])
     
     inline def `setSeparate-scalesUndefined`: Self = StObject.set(x, "separate-scales", js.undefined)
+    
+    inline def setSeparateScales(value: Boolean): Self = StObject.set(x, "separateScales", value.asInstanceOf[js.Any])
+    
+    inline def setSeparateScalesUndefined: Self = StObject.set(x, "separateScales", js.undefined)
     
     inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
@@ -112,6 +140,10 @@ object Columns {
     inline def `setSmart-scales`(value: Boolean): Self = StObject.set(x, "smart-scales", value.asInstanceOf[js.Any])
     
     inline def `setSmart-scalesUndefined`: Self = StObject.set(x, "smart-scales", js.undefined)
+    
+    inline def setSmartScales(value: Boolean): Self = StObject.set(x, "smartScales", value.asInstanceOf[js.Any])
+    
+    inline def setSmartScalesUndefined: Self = StObject.set(x, "smartScales", js.undefined)
     
     inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
@@ -124,5 +156,9 @@ object Columns {
     inline def `setVertical-labels`(value: Boolean): Self = StObject.set(x, "vertical-labels", value.asInstanceOf[js.Any])
     
     inline def `setVertical-labelsUndefined`: Self = StObject.set(x, "vertical-labels", js.undefined)
+    
+    inline def setVerticalLabels(value: Boolean): Self = StObject.set(x, "verticalLabels", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalLabelsUndefined: Self = StObject.set(x, "verticalLabels", js.undefined)
   }
 }

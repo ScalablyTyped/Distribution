@@ -226,7 +226,7 @@ object cades {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cades.CompleteCertificateRefs")
   @js.native
-  class CompleteCertificateRefs ()
+  open class CompleteCertificateRefs ()
     extends typings.jsrsasign.mod.KJUR.asn1.cades.CompleteCertificateRefs {
     def this(params: Length) = this()
   }
@@ -246,7 +246,7 @@ object cades {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cades.OtherCertID")
   @js.native
-  class OtherCertID ()
+  open class OtherCertID ()
     extends typings.jsrsasign.mod.KJUR.asn1.cades.OtherCertID {
     def this(params: String) = this()
     def this(params: Cert) = this()
@@ -271,7 +271,7 @@ object cades {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cades.OtherHash")
   @js.native
-  class OtherHash ()
+  open class OtherHash ()
     extends typings.jsrsasign.mod.KJUR.asn1.cades.OtherHash {
     def this(params: String) = this()
     def this(params: Alg) = this()
@@ -292,7 +292,7 @@ object cades {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cades.OtherHashAlgAndValue")
   @js.native
-  class OtherHashAlgAndValue ()
+  open class OtherHashAlgAndValue ()
     extends typings.jsrsasign.mod.KJUR.asn1.cades.OtherHashAlgAndValue {
     def this(params: Alg) = this()
   }
@@ -323,7 +323,7 @@ object cades {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cades.SignaturePolicyIdentifier")
   @js.native
-  class SignaturePolicyIdentifier ()
+  open class SignaturePolicyIdentifier ()
     extends typings.jsrsasign.mod.KJUR.asn1.cades.SignaturePolicyIdentifier {
     def this(params: Hash) = this()
   }
@@ -340,7 +340,7 @@ object cades {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.cades.SignatureTimeStamp")
   @js.native
-  class SignatureTimeStamp ()
+  open class SignatureTimeStamp ()
     extends typings.jsrsasign.mod.KJUR.asn1.cades.SignatureTimeStamp {
     def this(params: Res) = this()
   }

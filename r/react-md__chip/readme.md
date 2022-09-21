@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__chip
 
-Typings are for version 2.4.2
+Typings are for version 5.1.3
 
 ## Library description:
 Create a compact actionable element that can be used to represent an input, attribute, or action. A chip can be used to represent filters, tags, emails, or other inline elements.
@@ -10,10 +10,10 @@ Create a compact actionable element that can be used to represent an input, attr
 | ------------------ | :-------------: |
 | Full name          | @react-md/chip |
 | Keywords           | accessibility, a11y, react-md, material design, react, chip, component, components |
-| # releases         | 33 |
-| # dependents       | 1 |
-| # downloads        | 17111 |
-| # stars            | 0 |
+| # releases         | 41 |
+| # dependents       | 0.0 |
+| # downloads        | 4705.0 |
+| # stars            | 2312.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/chip/demos)

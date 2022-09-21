@@ -9,14 +9,13 @@ object textareaItemDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/textarea-item/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends BasicTextAreaItemExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends BasicTextAreaItemExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait BasicTextAreaItemExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicTextAreaItemExample extends Component[Any, Any, Any] {
     
-    def onChange(`val`: js.Any): Unit = js.native
+    def onChange(`val`: Any): Unit = js.native
   }
 }

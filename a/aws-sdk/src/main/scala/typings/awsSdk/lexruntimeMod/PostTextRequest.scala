@@ -54,7 +54,7 @@ object PostTextRequest {
     
     inline def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
-    inline def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value :_*))
+    inline def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value*))
     
     inline def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     

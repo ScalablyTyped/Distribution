@@ -16,7 +16,7 @@ trait Files extends StObject {
   
   var selectable: Boolean
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
 }
 object Files {
   
@@ -25,7 +25,7 @@ object Files {
     onChange: () => Unit,
     onFail: () => Unit,
     selectable: Boolean,
-    styles: StringDictionary[RegisteredStyle[js.Any]]
+    styles: StringDictionary[RegisteredStyle[Any]]
   ): Files = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onFail = js.Any.fromFunction0(onFail), selectable = selectable.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Files]
@@ -35,7 +35,7 @@ object Files {
     
     inline def setFiles(value: js.Array[scala.Nothing]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: scala.Nothing*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: scala.Nothing*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
@@ -43,6 +43,6 @@ object Files {
     
     inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

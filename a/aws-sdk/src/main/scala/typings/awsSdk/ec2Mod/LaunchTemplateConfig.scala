@@ -33,6 +33,6 @@ object LaunchTemplateConfig {
     
     inline def setOverridesUndefined: Self = StObject.set(x, "Overrides", js.undefined)
     
-    inline def setOverridesVarargs(value: LaunchTemplateOverrides*): Self = StObject.set(x, "Overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: LaunchTemplateOverrides*): Self = StObject.set(x, "Overrides", js.Array(value*))
   }
 }

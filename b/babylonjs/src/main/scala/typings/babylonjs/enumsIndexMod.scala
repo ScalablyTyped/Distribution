@@ -95,11 +95,15 @@ object enumsIndexMod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues & Double] = js.native
     
+    /* 10 */ val CameraParameters: typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues.CameraParameters & Double = js.native
+    
     /* 7 */ val CameraPosition: typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues.CameraPosition & Double = js.native
     
     /* 9 */ val DeltaTime: typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues.DeltaTime & Double = js.native
     
     /* 8 */ val FogColor: typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues.FogColor & Double = js.native
+    
+    /* 11 */ val MaterialAlpha: typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues.MaterialAlpha & Double = js.native
     
     /* 3 */ val Projection: typings.babylonjs.nodeMaterialSystemValuesMod.NodeMaterialSystemValues.Projection & Double = js.native
     

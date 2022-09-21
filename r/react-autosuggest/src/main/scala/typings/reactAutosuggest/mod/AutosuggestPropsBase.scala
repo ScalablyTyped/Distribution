@@ -14,6 +14,11 @@ trait AutosuggestPropsBase[TSuggestion] extends StObject {
   var alwaysRenderSuggestions: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Provides arbitrary properties to the outer `div` container of Autosuggest. Allows the override of accessibility properties.
+    */
+  var containerProps: js.UndefOr[ContainerProps] = js.undefined
+  
+  /**
     * Set it to false if you don't want Autosuggest to keep the input focused when suggestions are clicked/tapped.
     */
   var focusInputOnSuggestionClick: js.UndefOr[Boolean] = js.undefined
@@ -61,7 +66,7 @@ trait AutosuggestPropsBase[TSuggestion] extends StObject {
   /**
     * Use it only if you need to customize the rendering of the input.
     */
-  var renderInputComponent: js.UndefOr[RenderInputComponent[TSuggestion]] = js.undefined
+  var renderInputComponent: js.UndefOr[RenderInputComponent] = js.undefined
   
   /**
     * Use your imagination to define how suggestions are rendered.
@@ -102,6 +107,10 @@ object AutosuggestPropsBase {
     
     inline def setAlwaysRenderSuggestionsUndefined: Self = StObject.set(x, "alwaysRenderSuggestions", js.undefined)
     
+    inline def setContainerProps(value: ContainerProps): Self = StObject.set(x, "containerProps", value.asInstanceOf[js.Any])
+    
+    inline def setContainerPropsUndefined: Self = StObject.set(x, "containerProps", js.undefined)
+    
     inline def setFocusInputOnSuggestionClick(value: Boolean): Self = StObject.set(x, "focusInputOnSuggestionClick", value.asInstanceOf[js.Any])
     
     inline def setFocusInputOnSuggestionClickUndefined: Self = StObject.set(x, "focusInputOnSuggestionClick", js.undefined)
@@ -122,9 +131,7 @@ object AutosuggestPropsBase {
     
     inline def setOnSuggestionHighlightedUndefined: Self = StObject.set(x, "onSuggestionHighlighted", js.undefined)
     
-    inline def setOnSuggestionSelected(
-      value: (/* event */ FormEvent[js.Any], /* data */ SuggestionSelectedEventData[TSuggestion]) => Unit
-    ): Self = StObject.set(x, "onSuggestionSelected", js.Any.fromFunction2(value))
+    inline def setOnSuggestionSelected(value: (/* event */ FormEvent[Any], /* data */ SuggestionSelectedEventData[TSuggestion]) => Unit): Self = StObject.set(x, "onSuggestionSelected", js.Any.fromFunction2(value))
     
     inline def setOnSuggestionSelectedUndefined: Self = StObject.set(x, "onSuggestionSelected", js.undefined)
     
@@ -134,7 +141,7 @@ object AutosuggestPropsBase {
     
     inline def setOnSuggestionsFetchRequested(value: /* request */ SuggestionsFetchRequestedParams => Unit): Self = StObject.set(x, "onSuggestionsFetchRequested", js.Any.fromFunction1(value))
     
-    inline def setRenderInputComponent(value: /* inputProps */ InputProps[TSuggestion] => ReactNode): Self = StObject.set(x, "renderInputComponent", js.Any.fromFunction1(value))
+    inline def setRenderInputComponent(value: /* inputProps */ RenderInputComponentProps => ReactNode): Self = StObject.set(x, "renderInputComponent", js.Any.fromFunction1(value))
     
     inline def setRenderInputComponentUndefined: Self = StObject.set(x, "renderInputComponent", js.undefined)
     

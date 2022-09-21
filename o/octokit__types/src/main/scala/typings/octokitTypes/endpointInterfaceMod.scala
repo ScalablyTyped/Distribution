@@ -31,22 +31,8 @@ object endpointInterfaceMod {
         D & O, 
         /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
       ]) = js.native
-    def apply[R /* <: Route */, P /* <: RequestParameters */](route: R, parameters: P): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
-        P, 
-        /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
-      ]) = js.native
-    /**
-      * Transforms a GitHub REST API endpoint into generic request options
-      *
-      * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
-      * @param {object} [parameters] URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
-      */
-    def apply[R /* <: Route */, P /* <: RequestParameters */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
-        P, 
-        /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
-      ]) = js.native
     def apply[R /* <: Route */, P /* <: RequestParameters */](
-      route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any,
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R,
       parameters: P
     ): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
         P, 
@@ -65,14 +51,14 @@ object endpointInterfaceMod {
     
     def merge(): D & EndpointDefaults = js.native
     def merge[P /* <: RequestParameters */](options: P): EndpointDefaults & D & P = js.native
-    def merge[R /* <: Route */, P /* <: RequestParameters */](route: R, parameters: P): D & (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & P = js.native
-    def merge[R /* <: Route */, P /* <: RequestParameters */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any): D & (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & P = js.native
     def merge[R /* <: Route */, P /* <: RequestParameters */](
-      route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any,
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R,
       parameters: P
     ): D & (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & P = js.native
     @JSName("merge")
-    def merge_R_RouteP_RequestParameters[R /* <: Route */, P /* <: RequestParameters */](route: R): D & (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & P = js.native
+    def merge_R_RouteP_RequestParameters[R /* <: Route */, P /* <: RequestParameters */](
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R
+    ): D & (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & P = js.native
     
     /**
       * Stateless method to turn endpoint options into request options.

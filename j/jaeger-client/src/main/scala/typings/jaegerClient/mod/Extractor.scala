@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Extractor extends StObject {
   
-  def extract(carrier: js.Any): SpanContext | Null
+  def extract(carrier: Any): SpanContext | Null
 }
 object Extractor {
   
-  inline def apply(extract: js.Any => SpanContext | Null): Extractor = {
+  inline def apply(extract: Any => SpanContext | Null): Extractor = {
     val __obj = js.Dynamic.literal(extract = js.Any.fromFunction1(extract))
     __obj.asInstanceOf[Extractor]
   }
   
   extension [Self <: Extractor](x: Self) {
     
-    inline def setExtract(value: js.Any => SpanContext | Null): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
+    inline def setExtract(value: Any => SpanContext | Null): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
   }
 }

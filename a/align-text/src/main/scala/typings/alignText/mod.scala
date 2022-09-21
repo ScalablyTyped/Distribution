@@ -9,9 +9,9 @@ object mod {
   inline def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def apply(text: String, fn: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(text: String, fn: Callback): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(text: js.Array[js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def apply(text: js.Array[js.Any], fn: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def apply(text: js.Array[js.Any], fn: Callback): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(text: js.Array[Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def apply(text: js.Array[Any], fn: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(text: js.Array[Any], fn: Callback): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("align-text", JSImport.Namespace)
   @js.native

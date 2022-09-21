@@ -25,6 +25,6 @@ object GameRequestDialogResponse {
     
     inline def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+    inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value*))
   }
 }

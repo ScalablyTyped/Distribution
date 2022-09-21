@@ -12,7 +12,7 @@ object errorMod {
   
   @JSImport("tslint/lib/error", "Error")
   @js.native
-  class Error () extends StObject {
+  open class Error () extends StObject {
     def this(message: String) = this()
     
     var message: String = js.native
@@ -24,7 +24,7 @@ object errorMod {
   
   @JSImport("tslint/lib/error", "FatalError")
   @js.native
-  class FatalError protected () extends Error {
+  open class FatalError protected () extends Error {
     def this(message: String) = this()
     def this(message: String, innerError: Error) = this()
     
@@ -43,7 +43,7 @@ object errorMod {
     inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
   }
   
-  inline def isError(possibleError: js.Any): /* is tslint.tslint/lib/error.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(possibleError.asInstanceOf[js.Any]).asInstanceOf[/* is tslint.tslint/lib/error.Error */ Boolean]
+  inline def isError(possibleError: Any): /* is tslint.tslint/lib/error.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(possibleError.asInstanceOf[js.Any]).asInstanceOf[/* is tslint.tslint/lib/error.Error */ Boolean]
   
   inline def showRuleCrashWarning(message: String, ruleName: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showRuleCrashWarning")(message.asInstanceOf[js.Any], ruleName.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

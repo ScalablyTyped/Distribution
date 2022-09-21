@@ -10,10 +10,10 @@ object wbCloudyMod {
   
   @JSImport("material-ui/svg-icons/image/wb-cloudy", JSImport.Default)
   @js.native
-  class default () extends ImageWbCloudy
+  open class default () extends ImageWbCloudy
   
   @JSImport("material-ui/svg-icons/image/wb-cloudy", "ImageWbCloudy")
   @js.native
-  class ImageWbCloudy ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageWbCloudy ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

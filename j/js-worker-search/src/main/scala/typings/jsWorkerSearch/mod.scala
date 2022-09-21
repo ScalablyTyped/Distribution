@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("js-worker-search", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with SearchApi {
     def this(someParam: CaseSensitive) = this()
@@ -19,6 +19,9 @@ object mod {
     
     /* CompleteClass */
     override def search(query: String): js.Promise[js.Array[String]] = js.native
+    
+    /* CompleteClass */
+    override def terminate(): Unit = js.native
   }
   
   @js.native
@@ -54,11 +57,17 @@ object mod {
     def indexDocument(uid: String, text: String): Unit
     
     def search(query: String): js.Promise[js.Array[String]]
+    
+    def terminate(): Unit
   }
   object SearchApi {
     
-    inline def apply(indexDocument: (String, String) => Unit, search: String => js.Promise[js.Array[String]]): SearchApi = {
-      val __obj = js.Dynamic.literal(indexDocument = js.Any.fromFunction2(indexDocument), search = js.Any.fromFunction1(search))
+    inline def apply(
+      indexDocument: (String, String) => Unit,
+      search: String => js.Promise[js.Array[String]],
+      terminate: () => Unit
+    ): SearchApi = {
+      val __obj = js.Dynamic.literal(indexDocument = js.Any.fromFunction2(indexDocument), search = js.Any.fromFunction1(search), terminate = js.Any.fromFunction0(terminate))
       __obj.asInstanceOf[SearchApi]
     }
     
@@ -67,6 +76,8 @@ object mod {
       inline def setIndexDocument(value: (String, String) => Unit): Self = StObject.set(x, "indexDocument", js.Any.fromFunction2(value))
       
       inline def setSearch(value: String => js.Promise[js.Array[String]]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      
+      inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
     }
   }
 }

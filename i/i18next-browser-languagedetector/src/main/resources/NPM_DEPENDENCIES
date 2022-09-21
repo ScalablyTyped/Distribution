@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "i18next-browser-languagedetector" : "6.0.1"
+      "i18next-browser-languagedetector" : "6.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "i18next-browser-languagedetector" : "6.0.1"
+      "i18next-browser-languagedetector" : "6.1.5"
     }
   ],
   "compile-devDependencies" : [

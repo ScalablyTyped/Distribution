@@ -61,7 +61,7 @@ object UpdateMaintenanceWindowTargetResult {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
     
     inline def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     

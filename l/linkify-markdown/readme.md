@@ -10,10 +10,10 @@ A cli tool which automatically add references to issues, pull requests, user men
 | ------------------ | :-------------: |
 | Full name          | linkify-markdown |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 1066639 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19707.333333333332 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/nitin42/linkify-markdown#readme)

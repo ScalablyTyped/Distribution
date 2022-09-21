@@ -9,7 +9,7 @@ object httptunnelMod {
   
   @JSImport("guacamole-client/lib/HTTPTunnel", "HTTPTunnel")
   @js.native
-  class HTTPTunnel protected () extends Tunnel {
+  open class HTTPTunnel protected () extends Tunnel {
     /**
       * @param tunnelURL The URL of the HTTP tunneling service.
       * @param [crossDomain=false] Whether tunnel requests will be cross-domain, and thus must use CORS

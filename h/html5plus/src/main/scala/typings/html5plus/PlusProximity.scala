@@ -28,11 +28,8 @@ trait PlusProximity extends StObject {
     */
   def getCurrentProximity(): Unit = js.native
   def getCurrentProximity(successCB: js.Function1[/* result */ Double, Unit]): Unit = js.native
-  def getCurrentProximity(
-    successCB: js.Function1[/* result */ Double, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def getCurrentProximity(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getCurrentProximity(successCB: js.Function1[/* result */ Double, Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def getCurrentProximity(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 监听设备接近距离的变化
@@ -42,9 +39,6 @@ trait PlusProximity extends StObject {
     */
   def watchProximity(): Double = js.native
   def watchProximity(changeCB: js.Function1[/* result */ Double, Unit]): Double = js.native
-  def watchProximity(
-    changeCB: js.Function1[/* result */ Double, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Double = js.native
-  def watchProximity(changeCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Double = js.native
+  def watchProximity(changeCB: js.Function1[/* result */ Double, Unit], errorCB: js.Function1[/* result */ Any, Unit]): Double = js.native
+  def watchProximity(changeCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Double = js.native
 }

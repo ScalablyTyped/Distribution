@@ -25,7 +25,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`short-date`
 import typings.arcgisJsApi.arcgisJsApiStrings.`short-month-year`
 import typings.arcgisJsApi.arcgisJsApiStrings.`short-time`
 import typings.arcgisJsApi.arcgisJsApiStrings.year
-import typings.std.Date
 import typings.std.Intl.DateTimeFormatOptions
 import typings.std.Intl.NumberFormatOptions
 import org.scalablytyped.runtime.StObject
@@ -46,56 +45,9 @@ trait intl extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#convertDateFormatToIntlOptions)
     */
   def convertDateFormatToIntlOptions(): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_dayshortmonthyear(format: `day-short-month-year`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_dayshortmonthyearlongtime(format: `day-short-month-year-long-time`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_dayshortmonthyearlongtime24(format: `day-short-month-year-long-time-24`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_dayshortmonthyearshorttime(format: `day-short-month-year-short-time`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_dayshortmonthyearshorttime24(format: `day-short-month-year-short-time-24`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longdate(format: `long-date`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longdatelongtime(format: `long-date-long-time`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longdatelongtime24(format: `long-date-long-time-24`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longdateshorttime(format: `long-date-short-time`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longdateshorttime24(format: `long-date-short-time-24`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longmonthdayyear(format: `long-month-day-year`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longmonthdayyearlongtime(format: `long-month-day-year-long-time`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longmonthdayyearlongtime24(format: `long-month-day-year-long-time-24`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longmonthdayyearshorttime(format: `long-month-day-year-short-time`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longmonthdayyearshorttime24(format: `long-month-day-year-short-time-24`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longmonthyear(format: `long-month-year`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_longtime(format: `long-time`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_shortdate(format: `short-date`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_shortdatelongtime(format: `short-date-long-time`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_shortdatelongtime24(format: `short-date-long-time-24`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_shortdateshorttime(format: `short-date-short-time`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_shortdateshorttime24(format: `short-date-short-time-24`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_shortmonthyear(format: `short-month-year`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_shorttime(format: `short-time`): DateTimeFormatOptions = js.native
-  @JSName("convertDateFormatToIntlOptions")
-  def convertDateFormatToIntlOptions_year(format: year): DateTimeFormatOptions = js.native
+  def convertDateFormatToIntlOptions(
+    format: `short-date` | `short-date-short-time` | `short-date-short-time-24` | `short-date-long-time` | `short-date-long-time-24` | `long-month-day-year` | `long-month-day-year-short-time` | `long-month-day-year-short-time-24` | `long-month-day-year-long-time` | `long-month-day-year-long-time-24` | `day-short-month-year` | `day-short-month-year-short-time` | `day-short-month-year-short-time-24` | `day-short-month-year-long-time` | `day-short-month-year-long-time-24` | `long-date` | `long-date-short-time` | `long-date-short-time-24` | `long-date-long-time` | `long-date-long-time-24` | `long-month-year` | `short-month-year` | year | `short-time` | `long-time`
+  ): DateTimeFormatOptions = js.native
   
   /**
     * Converts a [NumberFormat](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#NumberFormat) to an [Intl.NumberFormatOptions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat#Parameters) object.
@@ -105,15 +57,29 @@ trait intl extends StObject {
   def convertNumberFormatToIntlOptions(): NumberFormatOptions = js.native
   def convertNumberFormatToIntlOptions(format: NumberFormat): NumberFormatOptions = js.native
   
-  def formatDate(value: Double): String = js.native
-  def formatDate(value: Double, formatOptions: DateTimeFormatOptions): String = js.native
+  /**
+    * Creates a message bundle loader specialized in loading translation files as JSON files.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#createJSONLoader)
+    */
+  def createJSONLoader(params: intlCreateJSONLoaderParams): MessageBundleLoader = js.native
+  
+  /**
+    * Loads a localized message bundle used with the current API locale.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#fetchMessageBundle)
+    */
+  def fetchMessageBundle(bundleId: String): js.Promise[Any] = js.native
+  
   /**
     * Formats a `Date` or `Number` value to a string in the current locale.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#formatDate)
     */
-  def formatDate(value: Date): String = js.native
-  def formatDate(value: Date, formatOptions: DateTimeFormatOptions): String = js.native
+  def formatDate(value: js.Date): String = js.native
+  def formatDate(value: js.Date, formatOptions: DateTimeFormatOptions): String = js.native
+  def formatDate(value: Double): String = js.native
+  def formatDate(value: Double, formatOptions: DateTimeFormatOptions): String = js.native
   
   /**
     * Formats a `Number` value to a string in the current locale.
@@ -131,11 +97,18 @@ trait intl extends StObject {
   def getLocale(): String = js.native
   
   /**
-    * Evokes a callback to notify when the locale changes.
+    * Returns one of the known message bundle locale for an input locale.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#normalizeMessageBundleLocale)
+    */
+  def normalizeMessageBundleLocale(locale: String): String | Any = js.native
+  
+  /**
+    * Registers a [callback](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#LocaleChangeCallback) that gets notified when the locale changes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#onLocaleChange)
     */
-  def onLocaleChange(listener: js.Function): js.Any = js.native
+  def onLocaleChange(callback: LocaleChangeCallback): Handle = js.native
   
   /**
     * Provides right-to-left preference for input locale.
@@ -146,17 +119,24 @@ trait intl extends StObject {
   def prefersRTL(locale: String): Boolean = js.native
   
   /**
+    * Registers a message loader to load specified message bundles needed for translating strings.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#registerMessageBundleLoader)
+    */
+  def registerMessageBundleLoader(loader: MessageBundleLoader): Any = js.native
+  
+  /**
     * Sets the locale used by the API.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#setLocale)
     */
-  def setLocale(locale: String): Unit = js.native
+  def setLocale(locale: String): scala.Unit = js.native
   
   /**
     * Use this to substitute keys in a `template` string with values from the argument `data`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#substitute)
     */
-  def substitute(template: String, data: js.Any): String = js.native
-  def substitute(template: String, data: js.Any, options: SubstituteOptions): String = js.native
+  def substitute(template: String, data: Any): String = js.native
+  def substitute(template: String, data: Any, options: SubstituteOptions): String = js.native
 }

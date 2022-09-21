@@ -45,7 +45,7 @@ object mod extends Shortcut {
     }
   }
   
-  type StylesObject = js.Any
+  type StylesObject = Any
   
   trait TypeOptions extends StObject {
     
@@ -78,6 +78,25 @@ object mod extends Shortcut {
   override def _to: CSSModules = ^
   
   object reactAugmentingMod {
+    
+    trait Attributes extends StObject {
+      
+      var styleName: js.UndefOr[String] = js.undefined
+    }
+    object Attributes {
+      
+      inline def apply(): Attributes = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[Attributes]
+      }
+      
+      extension [Self <: Attributes](x: Self) {
+        
+        inline def setStyleName(value: String): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
+        
+        inline def setStyleNameUndefined: Self = StObject.set(x, "styleName", js.undefined)
+      }
+    }
     
     trait HTMLAttributes[T] extends StObject {
       

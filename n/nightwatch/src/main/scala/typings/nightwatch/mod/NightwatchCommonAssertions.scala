@@ -1,5 +1,12 @@
 package typings.nightwatch.mod
 
+import typings.nightwatch.anon.AwaitableNightwatchAPINigAcceptAlert
+import typings.nightwatch.anon.AwaitableNightwatchAPINigActions
+import typings.nightwatch.anon.AwaitableNightwatchAPINigAssert
+import typings.nightwatch.anon.AwaitableNightwatchAPINigBack
+import typings.nightwatch.anon.AwaitableNightwatchAPINigBaseUrl
+import typings.nightwatch.anon.AwaitableNightwatchAPINigBrowserName
+import typings.nightwatch.anon.AwaitableNightwatchAPINigCaptureBrowserConsoleLogs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +25,8 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def attributeContains(selector: String, attribute: String, expected: String): NightwatchAPI = js.native
-  def attributeContains(selector: String, attribute: String, expected: String, message: String): NightwatchAPI = js.native
+  def attributeContains(selector: Definition, attribute: String, expected: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def attributeContains(selector: Definition, attribute: String, expected: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the given attribute of an element has the expected value.
@@ -30,8 +37,25 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def attributeEquals(selector: String, attribute: String, expected: String): NightwatchAPI = js.native
-  def attributeEquals(selector: String, attribute: String, expected: String, message: String): NightwatchAPI = js.native
+  def attributeEquals(selector: Definition, attribute: String, expected: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def attributeEquals(selector: Definition, attribute: String, expected: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  
+  /**
+    * Check if an element's attribute value matches a regular expression.
+    *
+    * @example
+    *
+    * ```
+    *    this.demoTest = function (browser) {
+    *      browser.assert.attributeMatches('body', 'data-attr', '(value)');
+    *    };
+    * ```
+    *
+    */
+  def attributeMatches(selector: Definition, attribute: String, regex: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def attributeMatches(selector: Definition, attribute: String, regex: String, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def attributeMatches(selector: Definition, attribute: String, regex: js.RegExp): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def attributeMatches(selector: Definition, attribute: String, regex: js.RegExp, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the given element contains the specified text.
@@ -41,21 +65,25 @@ trait NightwatchCommonAssertions extends StObject {
     *      browser.assert.containsText('#main', 'The Night Watch');
     *    };
     * ```
+    *
+    * @deprecated In favour of `assert.textContains()`.
     */
-  def containsText(selector: String, expectedText: String): NightwatchAPI = js.native
-  def containsText(selector: String, expectedText: String, message: String): NightwatchAPI = js.native
+  def containsText(selector: Definition, expectedText: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def containsText(selector: Definition, expectedText: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
-    * Checks if the given element exists in the DOM.
+    * Checks if the given element does not have the specified CSS class.
     *
     * ```
-    *    this.demoTest = function (client) {
-    *      browser.assert.elementNotPresent(".should_not_exist");
+    *    this.demoTest = function (browser) {
+    *      browser.assert.cssClassNotPresent('#main', 'container');
     *    };
     * ```
+    *
+    * @deprecated In favour of `assert.not.hasClass()`.
     */
-  def cssClassNotPresent(selector: String, className: String): NightwatchAPI = js.native
-  def cssClassNotPresent(selector: String, className: String, msg: String): NightwatchAPI = js.native
+  def cssClassNotPresent(selector: Definition, className: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def cssClassNotPresent(selector: Definition, className: String, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the given element has the specified CSS class.
@@ -65,9 +93,11 @@ trait NightwatchCommonAssertions extends StObject {
     *      browser.assert.cssClassPresent('#main', 'container');
     *    };
     * ```
+    *
+    * @deprecated In favour of `assert.hasClass()`.
     */
-  def cssClassPresent(selector: String, className: String): NightwatchAPI = js.native
-  def cssClassPresent(selector: String, className: String, message: String): NightwatchAPI = js.native
+  def cssClassPresent(selector: Definition, className: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def cssClassPresent(selector: Definition, className: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the specified css property of a given element has the expected value.
@@ -78,31 +108,54 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def cssProperty(selector: String, cssProperty: String, expected: String): NightwatchAPI = js.native
-  def cssProperty(selector: String, cssProperty: String, expected: String, msg: String): NightwatchAPI = js.native
-  def cssProperty(selector: String, cssProperty: String, expected: Double): NightwatchAPI = js.native
-  def cssProperty(selector: String, cssProperty: String, expected: Double, msg: String): NightwatchAPI = js.native
-  
-  def deepEqual(value: js.Any, expected: js.Any): NightwatchAPI = js.native
-  def deepEqual(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
-  
-  def deepStrictEqual(value: js.Any, expected: js.Any): NightwatchAPI = js.native
-  def deepStrictEqual(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
-  
-  def doesNotThrow(value: js.Any, expected: js.Any): NightwatchAPI = js.native
-  def doesNotThrow(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  def cssProperty(selector: Definition, cssProperty: String, expected: String): AwaitableNightwatchAPINigActions = js.native
+  def cssProperty(selector: Definition, cssProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigActions = js.native
+  def cssProperty(selector: Definition, cssProperty: String, expected: Double): AwaitableNightwatchAPINigActions = js.native
+  def cssProperty(selector: Definition, cssProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigActions = js.native
   
   /**
-    * Checks if the given element exists in the DOM.
+    * Checks if the specified DOM property of a given element has the expected value.
+    * For all the available DOM element properties, consult the [Element doc at MDN](https://developer.mozilla.org/en-US/docs/Web/API/element).
+    * Several properties can be specified (either as an array or command-separated list). Nightwatch will check each one for presence.
+    */
+  def domPropertyContains(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyContains(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyContains(selector: Definition, domProperty: String, expected: Double): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyContains(selector: Definition, domProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigAssert = js.native
+  
+  /**
+    * Checks if the specified DOM property of a given element has the expected value.
+    * For all the available DOM element properties, consult the [Element doc at MDN](https://developer.mozilla.org/en-US/docs/Web/API/element).
+    * If the result value is JSON object or array, a deep equality comparison will be performed.
+    */
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: Double): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigAssert = js.native
+  
+  /**
+    * Check if specified DOM property value of a given element matches a regex.
+    * For all the available DOM element properties, consult the [Element doc at MDN](https://developer.mozilla.org/en-US/docs/Web/API/element).
+    */
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: js.RegExp): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: js.RegExp, msg: String): AwaitableNightwatchAPINigAssert = js.native
+  
+  /**
+    * Checks if the given element does not exists in the DOM.
     *
+    * @example
     * ```
-    *    this.demoTest = function (client) {
+    *    this.demoTest = function (browser) {
     *      browser.assert.elementNotPresent(".should_not_exist");
     *    };
     * ```
+    *
+    * @deprecated In favour of `assert.not.elementPresent()`.
     */
-  def elementNotPresent(selector: String): NightwatchAPI = js.native
-  def elementNotPresent(selector: String, msg: String): NightwatchAPI = js.native
+  def elementNotPresent(selector: Definition): AwaitableNightwatchAPINigCaptureBrowserConsoleLogs = js.native
+  def elementNotPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigCaptureBrowserConsoleLogs = js.native
   
   /**
     * Checks if the given element exists in the DOM.
@@ -113,64 +166,160 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def elementPresent(selector: String): NightwatchAPI = js.native
-  def elementPresent(selector: String, msg: String): NightwatchAPI = js.native
+  def elementPresent(selector: Definition): AwaitableNightwatchAPINigCaptureBrowserConsoleLogs = js.native
+  def elementPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigCaptureBrowserConsoleLogs = js.native
   
-  def equal(value: js.Any, expected: js.Any): NightwatchAPI = js.native
-  def equal(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  /**
+    * Checks if the number of elements specified by a selector is equal to a given value.
+    *
+    * @example
+    *
+    * this.demoTest = function (browser) {
+    *   browser.assert.elementsCount('div', 10);
+    *   browser.assert.not.elementsCount('div', 10);
+    * }
+    *
+    */
+  def elementsCount(selector: Definition, count: Double): AwaitableNightwatchAPINigBrowserName = js.native
+  def elementsCount(selector: Definition, count: Double, msg: String): AwaitableNightwatchAPINigBrowserName = js.native
   
-  def fail(): NightwatchAPI = js.native
-  def fail(actual: js.Any): NightwatchAPI = js.native
-  def fail(actual: js.Any, expected: js.Any): NightwatchAPI = js.native
-  def fail(actual: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
-  def fail(actual: js.Any, expected: js.Any, message: String, operator: String): NightwatchAPI = js.native
-  def fail(actual: js.Any, expected: js.Any, message: Unit, operator: String): NightwatchAPI = js.native
-  def fail(actual: js.Any, expected: Unit, message: String): NightwatchAPI = js.native
-  def fail(actual: js.Any, expected: Unit, message: String, operator: String): NightwatchAPI = js.native
-  def fail(actual: js.Any, expected: Unit, message: Unit, operator: String): NightwatchAPI = js.native
-  def fail(actual: Unit, expected: js.Any): NightwatchAPI = js.native
-  def fail(actual: Unit, expected: js.Any, message: String): NightwatchAPI = js.native
-  def fail(actual: Unit, expected: js.Any, message: String, operator: String): NightwatchAPI = js.native
-  def fail(actual: Unit, expected: js.Any, message: Unit, operator: String): NightwatchAPI = js.native
-  def fail(actual: Unit, expected: Unit, message: String): NightwatchAPI = js.native
-  def fail(actual: Unit, expected: Unit, message: String, operator: String): NightwatchAPI = js.native
-  def fail(actual: Unit, expected: Unit, message: Unit, operator: String): NightwatchAPI = js.native
+  /**
+    * Checks if the given element is enabled (as indicated by the 'disabled' attribute).
+    *
+    * @example
+    *  this.demoTest = function (browser) {
+    *    browser.assert.enabled('.should_be_enabled');
+    *    browser.assert.enabled({selector: '.should_be_enabled'});
+    *    browser.assert.enabled({selector: '.should_be_enabled', suppressNotFoundErrors: true});
+    *  };
+    */
+  def enabled(selector: Definition): AwaitableNightwatchAPINigBack = js.native
+  def enabled(selector: Definition, message: String): AwaitableNightwatchAPINigBack = js.native
+  
+  /**
+    * Checks if the given element contains the specified DOM attribute.
+    *
+    * Equivalent of: https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttribute
+    *
+    * @example
+    *
+    * ```
+    *    this.demoTest = function (browser) {
+    *      browser.assert.hasAttribute('#main', 'data-track');
+    *    };
+    * ```
+    *
+    */
+  def hasAttribute(selector: Definition, expectedAttribute: String): AwaitableNightwatchAPINigBaseUrl = js.native
+  def hasAttribute(selector: Definition, expectedAttribute: String, msg: String): AwaitableNightwatchAPINigBaseUrl = js.native
+  
+  /**
+    * Checks if the given element has the specified CSS class.
+    *
+    * @example
+    *
+    *
+    * ```
+    *    this.demoTest = function (browser) {
+    *      browser.assert.hasClass('#main', 'container');
+    *      browser.assert.hasClass('#main', ['visible', 'container']);
+    *      browser.assert.hasClass('#main', 'visible container');
+    *    };
+    * ```
+    *
+    */
+  def hasClass(selector: Definition, className: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def hasClass(selector: Definition, className: String, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def hasClass(selector: Definition, className: js.Array[String]): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def hasClass(selector: Definition, className: js.Array[String], msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the given element is not visible on the page.
     *
+    * @example
     * ```
-    *    this.demoTest = function (client) {
-    *      browser.assert.hidden(".should_not_be_visible");
+    *    this.demoTest = function (browser) {
+    *      browser.assert.hidden('.should_not_be_visible');
     *    };
     * ```
+    *
+    * @deprecated In favour of `assert.not.visible()`.
     */
-  def hidden(selector: String): NightwatchAPI = js.native
-  def hidden(selector: String, msg: String): NightwatchAPI = js.native
+  def hidden(selector: Definition): AwaitableNightwatchAPINigBack = js.native
+  def hidden(selector: Definition, msg: String): AwaitableNightwatchAPINigBack = js.native
   
-  def ifError(value: js.Any): NightwatchAPI = js.native
-  def ifError(value: js.Any, message: String): NightwatchAPI = js.native
+  /**
+    * Checks if the given element is selected.
+    *
+    * @example
+    *  this.demoTest = function (browser) {
+    *    browser.assert.selected('.should_be_selected');
+    *    browser.assert.selected({selector: '.should_be_selected'});
+    *    browser.assert.selected({selector: '.should_be_selected', suppressNotFoundErrors: true});
+    *  };
+    */
+  def selected(selector: Definition): AwaitableNightwatchAPINigBack = js.native
+  def selected(selector: Definition, message: String): AwaitableNightwatchAPINigBack = js.native
   
-  def notDeepEqual(actual: js.Any, expected: js.Any): NightwatchAPI = js.native
-  def notDeepEqual(actual: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  /**
+    * Checks if the given element contains the specified text.
+    *
+    * @example
+    * ```
+    *   this.demoTest = function (browser) {
+    *     browser.assert.textContains('#main', 'The Night Watch');
+    *   };
+    * ```
+    *
+    */
+  def textContains(selector: Definition, expectedText: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def textContains(selector: Definition, expectedText: String, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
-  def notDeepStrictEqual(value: js.Any): NightwatchAPI = js.native
-  def notDeepStrictEqual(value: js.Any, message: String): NightwatchAPI = js.native
+  /**
+    * Check if an element's inner text equals the expected text.
+    *
+    * @example
+    *
+    * ```
+    *   this.demoTest = function (browser) {
+    *     browser.assert.textEquals('#main', 'The Night Watch');
+    *   };
+    * ```
+    *
+    */
+  def textEquals(selector: Definition, expectedText: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def textEquals(selector: Definition, expectedText: String, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
-  def notEqual(actual: js.Any, expected: js.Any): NightwatchAPI = js.native
-  def notEqual(actual: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
+  /**
+    * Check if an elements inner text matches a regular expression.
+    *
+    * @example
+    *
+    * ```
+    *   this.demoTest = function (browser) {
+    *     browser.assert.textMatches('#main', '^Nightwatch');
+    *   };
+    * ```
+    *
+    */
+  def textMatches(selector: Definition, regex: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def textMatches(selector: Definition, regex: String, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def textMatches(selector: Definition, regex: js.RegExp): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def textMatches(selector: Definition, regex: js.RegExp, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
-  def notStrictEqual(value: js.Any, expected: js.Any): NightwatchAPI = js.native
-  def notStrictEqual(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
-  
-  def ok(actual: Boolean): NightwatchAPI = js.native
-  def ok(actual: Boolean, message: String): NightwatchAPI = js.native
-  
-  def strictEqual(value: js.Any, expected: js.Any): NightwatchAPI = js.native
-  def strictEqual(value: js.Any, expected: js.Any, message: String): NightwatchAPI = js.native
-  
-  def throws(fn: js.Function0[Unit]): NightwatchAPI = js.native
-  def throws(fn: js.Function0[Unit], message: String): NightwatchAPI = js.native
+  /**
+    * Checks if the page title equals the given value.
+    *
+    * ```
+    *    this.demoTest = function (client) {
+    *      browser.assert.title("Nightwatch.js");
+    *    };
+    * ```
+    *
+    * @deprecated In favour of `titleEquals()`.
+    */
+  def title(expected: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def title(expected: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the page title equals the given value.
@@ -181,20 +330,37 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def title(expected: String): NightwatchAPI = js.native
-  def title(expected: String, message: String): NightwatchAPI = js.native
+  def titleContains(expected: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def titleContains(expected: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the page title equals the given value.
-    *
+    * @since 2.0
     * ```
     *    this.demoTest = function (client) {
-    *      browser.assert.title("Nightwatch.js");
+    *      browser.assert.titleEquals("Nightwatch.js");
     *    };
     * ```
     */
-  def titleContains(expected: String): NightwatchAPI = js.native
-  def titleContains(expected: String, message: String): NightwatchAPI = js.native
+  def titleEquals(expected: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def titleEquals(expected: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  
+  /**
+    * Checks if the current title matches a regular expression.
+    *
+    * @example
+    *
+    * ```
+    *    this.demoTest = function (client) {
+    *      browser.assert.titleMatches('^Nightwatch');
+    *    };
+    * ```
+    *
+    */
+  def titleMatches(regex: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def titleMatches(regex: String, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def titleMatches(regex: js.RegExp): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def titleMatches(regex: js.RegExp, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the current URL contains the given value.
@@ -205,8 +371,8 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def urlContains(expectedText: String): NightwatchAPI = js.native
-  def urlContains(expectedText: String, message: String): NightwatchAPI = js.native
+  def urlContains(expectedText: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def urlContains(expectedText: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the current url equals the given value.
@@ -217,8 +383,24 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def urlEquals(expected: String): NightwatchAPI = js.native
-  def urlEquals(expected: String, message: String): NightwatchAPI = js.native
+  def urlEquals(expected: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def urlEquals(expected: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  
+  /**
+    * Checks if the current url matches a regular expression.
+    *
+    * @example
+    * ```
+    *    this.demoTest = function (client) {
+    *      browser.assert.urlMatches('^https');
+    *    };
+    * ```
+    *
+    */
+  def urlMatches(regex: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def urlMatches(regex: String, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def urlMatches(regex: js.RegExp): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def urlMatches(regex: js.RegExp, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the given form element's value equals the expected value.
@@ -228,9 +410,11 @@ trait NightwatchCommonAssertions extends StObject {
     *      browser.assert.value("form.login input[type=text]", "username");
     *    };
     * ```
+    *
+    * @deprecated In favour of `assert.valueEquals()`.
     */
-  def value(selector: String, expectedText: String): NightwatchAPI = js.native
-  def value(selector: String, expectedText: String, message: String): NightwatchAPI = js.native
+  def value(selector: Definition, expectedText: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def value(selector: Definition, expectedText: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the given form element's value contains the expected value.
@@ -241,8 +425,24 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def valueContains(selector: String, expectedText: String): NightwatchAPI = js.native
-  def valueContains(selector: String, expectedText: String, message: String): NightwatchAPI = js.native
+  def valueContains(selector: Definition, expectedText: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def valueContains(selector: Definition, expectedText: String, message: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  
+  /**
+    * Checks if the given form element's value equals the expected value.
+    *
+    * The existing .assert.value() command.
+    *
+    * @example
+    * ```
+    *    this.demoTest = function (browser) {
+    *      browser.assert.valueEquals("form.login input[type=text]", "username");
+    *    };
+    * ```
+    *
+    */
+  def valueEquals(selector: Definition, expected: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def valueEquals(selector: Definition, expected: String, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the given element is visible on the page.
@@ -253,6 +453,6 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def visible(selector: String): NightwatchAPI = js.native
-  def visible(selector: String, message: String): NightwatchAPI = js.native
+  def visible(selector: Definition): AwaitableNightwatchAPINigBack = js.native
+  def visible(selector: Definition, message: String): AwaitableNightwatchAPINigBack = js.native
 }

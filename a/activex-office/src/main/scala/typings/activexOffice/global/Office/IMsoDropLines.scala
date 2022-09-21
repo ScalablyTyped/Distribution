@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoDropLines")
 @js.native
-/* private */ class IMsoDropLines ()
+/* private */ open class IMsoDropLines ()
   extends StObject
      with typings.activexOffice.Office.IMsoDropLines {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Border: typings.activexOffice.Office.IMsoBorder = js.native
@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotIMsoDropLines_typekey: typings.activexOffice.Office.IMsoDropLines = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Select(): Unit = js.native

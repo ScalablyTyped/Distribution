@@ -6,11 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "RegexValidator")
 @js.native
-class RegexValidator () extends SurveyValidator {
+open class RegexValidator () extends SurveyValidator {
   def this(regex: String) = this()
   
-  /**
+  /*
     * The regex property.
     */
-  var regex: String = js.native
+  def regex: String = js.native
+  def regex_=(`val`: String): Unit = js.native
 }

@@ -30,6 +30,6 @@ object CompatibleVersionsMap {
     
     inline def setTargetVersionsUndefined: Self = StObject.set(x, "TargetVersions", js.undefined)
     
-    inline def setTargetVersionsVarargs(value: ElasticsearchVersionString*): Self = StObject.set(x, "TargetVersions", js.Array(value :_*))
+    inline def setTargetVersionsVarargs(value: ElasticsearchVersionString*): Self = StObject.set(x, "TargetVersions", js.Array(value*))
   }
 }

@@ -12,12 +12,12 @@ trait ListDetectorModelVersionsRequest extends StObject {
   var detectorModelName: DetectorModelName
   
   /**
-    * The maximum number of results to return at one time.
+    * The maximum number of results to be returned per request.
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
-    * The token for the next set of results.
+    * The token that you can use to return the next set of results.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
 }

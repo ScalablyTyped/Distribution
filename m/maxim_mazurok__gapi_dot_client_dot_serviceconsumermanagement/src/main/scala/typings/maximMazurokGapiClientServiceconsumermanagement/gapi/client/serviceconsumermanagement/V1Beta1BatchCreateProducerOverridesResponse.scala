@@ -22,6 +22,6 @@ object V1Beta1BatchCreateProducerOverridesResponse {
     
     inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    inline def setOverridesVarargs(value: V1Beta1QuotaOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: V1Beta1QuotaOverride*): Self = StObject.set(x, "overrides", js.Array(value*))
   }
 }

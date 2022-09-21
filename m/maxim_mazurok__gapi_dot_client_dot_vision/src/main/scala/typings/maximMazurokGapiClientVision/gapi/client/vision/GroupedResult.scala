@@ -32,12 +32,12 @@ object GroupedResult {
     
     inline def setObjectAnnotationsUndefined: Self = StObject.set(x, "objectAnnotations", js.undefined)
     
-    inline def setObjectAnnotationsVarargs(value: ObjectAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value :_*))
+    inline def setObjectAnnotationsVarargs(value: ObjectAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value*))
     
     inline def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

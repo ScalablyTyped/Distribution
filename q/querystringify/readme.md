@@ -10,10 +10,10 @@ Querystringify - Small, simple but powerful query string parser.
 | ------------------ | :-------------: |
 | Full name          | querystringify |
 | Keywords           | query, string, query-string, querystring, qs, stringify, parse, decode, encode |
-| # releases         | 4 |
-| # dependents       | 123 |
-| # downloads        | 377157555 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.2652812666666664E7 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/unshiftio/querystringify)

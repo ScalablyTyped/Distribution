@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html)
   */
-class SlideCls ()
+open class SlideCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Slide {
   def this(properties: SlideProperties) = this()

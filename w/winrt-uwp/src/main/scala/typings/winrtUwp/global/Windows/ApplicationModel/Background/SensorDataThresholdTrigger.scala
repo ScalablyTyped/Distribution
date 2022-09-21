@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a trigger that responds when a threshold limit for a sensor is crossed. */
 @JSGlobal("Windows.ApplicationModel.Background.SensorDataThresholdTrigger")
 @js.native
-class SensorDataThresholdTrigger protected ()
+open class SensorDataThresholdTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.SensorDataThresholdTrigger {
   /**

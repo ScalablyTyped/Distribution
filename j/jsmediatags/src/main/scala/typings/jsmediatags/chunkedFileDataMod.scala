@@ -10,7 +10,7 @@ object chunkedFileDataMod {
   
   @JSImport("jsmediatags/build2/ChunkedFileData", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ChunkedFileData {
     
@@ -27,7 +27,7 @@ object chunkedFileDataMod {
     override def addData(offset: Double, data: DataType): Unit = js.native
     
     /* CompleteClass */
-    override def getByteAt(offset: Double): js.Any = js.native
+    override def getByteAt(offset: Double): Any = js.native
     
     /* CompleteClass */
     override def hasDataRange(offsetStart: Double, offsetEnd: Double): Boolean = js.native
@@ -55,7 +55,7 @@ object chunkedFileDataMod {
     
     def addData(offset: Double, data: DataType): Unit
     
-    def getByteAt(offset: Double): js.Any
+    def getByteAt(offset: Double): Any
     
     def hasDataRange(offsetStart: Double, offsetEnd: Double): Boolean
   }
@@ -66,7 +66,7 @@ object chunkedFileDataMod {
       _getChunkRange: (Double, Double) => EndIx,
       _sliceData: (DataType, Double, Double) => DataType,
       addData: (Double, DataType) => Unit,
-      getByteAt: Double => js.Any,
+      getByteAt: Double => Any,
       hasDataRange: (Double, Double) => Boolean
     ): ChunkedFileData = {
       val __obj = js.Dynamic.literal(_concatData = js.Any.fromFunction2(_concatData), _getChunkRange = js.Any.fromFunction2(_getChunkRange), _sliceData = js.Any.fromFunction3(_sliceData), addData = js.Any.fromFunction2(addData), getByteAt = js.Any.fromFunction1(getByteAt), hasDataRange = js.Any.fromFunction2(hasDataRange))
@@ -77,7 +77,7 @@ object chunkedFileDataMod {
       
       inline def setAddData(value: (Double, DataType) => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction2(value))
       
-      inline def setGetByteAt(value: Double => js.Any): Self = StObject.set(x, "getByteAt", js.Any.fromFunction1(value))
+      inline def setGetByteAt(value: Double => Any): Self = StObject.set(x, "getByteAt", js.Any.fromFunction1(value))
       
       inline def setHasDataRange(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasDataRange", js.Any.fromFunction2(value))
       

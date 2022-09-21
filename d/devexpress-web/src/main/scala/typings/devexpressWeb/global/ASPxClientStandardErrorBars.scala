@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientStandardErrorBars")
 @js.native
-class ASPxClientStandardErrorBars ()
+open class ASPxClientStandardErrorBars ()
   extends StObject
      with typings.devexpressWeb.ASPxClientIndicator {
   

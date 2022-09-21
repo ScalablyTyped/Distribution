@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object noopMod {
   
-  @JSImport("@antv/util/lib/noop", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/noop", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.ColumnInfo")
 @js.native
-class ColumnInfo protected ()
+open class ColumnInfo protected ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.ColumnInfo {
   def this(name: String, imgSrc: String, key: String, width: Double) = this()
@@ -34,7 +34,7 @@ class ColumnInfo protected ()
   /** this function should return id of the style for the given cell in the column
     styles and their ids are registered for a JsGridControl via jsGridParams.styleManager.RegisterCellStyle method */
   /* CompleteClass */
-  override def fnGetCellStyleId(record: IRecord, fieldKey: String, dataValue: js.Any): String = js.native
+  override def fnGetCellStyleId(record: IRecord, fieldKey: String, dataValue: Any): String = js.native
   
   /** this function should return name of the display control for the given cell in the column
     the name should be previously associated with the display control via SP.JsGrid.PropertyType.Utils.RegisterDisplayControl method */
@@ -48,7 +48,7 @@ class ColumnInfo protected ()
   
   /** set custom tooltip for the given cell in the column. by default, localized value is displayed as the tooltip */
   /* CompleteClass */
-  override def fnGetSingleValueTooltip(record: IRecord, fieldKey: String, dataValue: js.Any, localizedValue: js.Any): String = js.native
+  override def fnGetSingleValueTooltip(record: IRecord, fieldKey: String, dataValue: Any, localizedValue: Any): String = js.native
   
   /** set widget control names for a particular cell
     widgets are basically in-cell buttons with associated popup controls, e.g. date selector or address book button
@@ -61,11 +61,11 @@ class ColumnInfo protected ()
   
   /** determine whether the cells in this column should be clickable */
   /* CompleteClass */
-  override def fnShouldLinkSingleValue(record: IRecord, fieldKey: String, dataValue: js.Any, localizedValue: js.Any): Boolean = js.native
+  override def fnShouldLinkSingleValue(record: IRecord, fieldKey: String, dataValue: Any, localizedValue: Any): Boolean = js.native
   
   /** if a particular cell is determined as clickable by fnShouldLinkSingleValue, this function will be called when the cell is clicked */
   /* CompleteClass */
-  override def fnSingleValueClicked(record: IRecord, fieldKey: String, dataValue: js.Any, localizedValue: js.Any): Unit = js.native
+  override def fnSingleValueClicked(record: IRecord, fieldKey: String, dataValue: Any, localizedValue: Any): Unit = js.native
   
   /** Custom image HTML.
     If you define this in addition to the imgSrc attribute, then instead of standard img tag

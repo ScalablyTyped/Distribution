@@ -1,17 +1,17 @@
 package typings.googleapis.anon
 
-import typings.googleapis.bloggerV3Mod.bloggerV3.SchemaComment
+import typings.googleapis.bloggerV3Mod.bloggerV3.SchemaPost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ItemsSelfLink extends StObject {
   
-  var items: js.UndefOr[js.Array[SchemaComment]] = js.undefined
+  var items: js.UndefOr[js.Array[SchemaPost]] = js.undefined
   
   var selfLink: js.UndefOr[String] = js.undefined
   
-  var totalItems: js.UndefOr[String] = js.undefined
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object ItemsSelfLink {
   
@@ -22,17 +22,17 @@ object ItemsSelfLink {
   
   extension [Self <: ItemsSelfLink](x: Self) {
     
-    inline def setItems(value: js.Array[SchemaComment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaPost]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaComment*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaPost*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    inline def setTotalItems(value: String): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+    inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
     inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }

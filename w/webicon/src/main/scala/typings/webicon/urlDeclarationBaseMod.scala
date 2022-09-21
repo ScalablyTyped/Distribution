@@ -11,12 +11,12 @@ object urlDeclarationBaseMod {
     /**
       * The `GET`-variables of the url.
       */
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     /**
       * The actual url.
       */
-    var url: js.UndefOr[js.Any] = js.undefined
+    var url: js.UndefOr[Any] = js.undefined
   }
   object UrlDeclarationBase {
     
@@ -27,11 +27,11 @@ object urlDeclarationBaseMod {
     
     extension [Self <: UrlDeclarationBase](x: Self) {
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }

@@ -1,17 +1,16 @@
 package typings.webpackCleanupPlugin
 
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webpack-cleanup-plugin", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("webpack-cleanup-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with Plugin {
+  open class ^ () extends StObject {
     def this(options: Options) = this()
   }
   
@@ -45,7 +44,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       

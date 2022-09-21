@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PublicKeyCredentialParameters extends StObject {
   
+  /* standard dom */
   var alg: COSEAlgorithmIdentifier
   
+  /* standard dom */
   var `type`: PublicKeyCredentialType
 }
 object PublicKeyCredentialParameters {

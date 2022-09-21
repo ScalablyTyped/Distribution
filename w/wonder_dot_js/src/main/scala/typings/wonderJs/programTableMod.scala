@@ -9,7 +9,7 @@ object programTableMod {
   
   @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/ProgramTable", "ProgramTable")
   @js.native
-  class ProgramTable () extends StObject
+  open class ProgramTable () extends StObject
   /* static members */
   object ProgramTable {
     

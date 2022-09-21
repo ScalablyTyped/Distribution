@@ -24,6 +24,6 @@ object AwsCloudFrontDistributionOriginGroups {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: AwsCloudFrontDistributionOriginGroup*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: AwsCloudFrontDistributionOriginGroup*): Self = StObject.set(x, "Items", js.Array(value*))
   }
 }

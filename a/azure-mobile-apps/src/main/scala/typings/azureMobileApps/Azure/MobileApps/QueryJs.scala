@@ -25,7 +25,7 @@ trait QueryJs extends StObject {
   
   def take(count: Double): QueryJs
   
-  def where(filter: js.Any): QueryJs
+  def where(filter: Any): QueryJs
 }
 object QueryJs {
   
@@ -37,7 +37,7 @@ object QueryJs {
     select: String => QueryJs,
     skip: Double => QueryJs,
     take: Double => QueryJs,
-    where: js.Any => QueryJs
+    where: Any => QueryJs
   ): QueryJs = {
     val __obj = js.Dynamic.literal(includeDeleted = js.Any.fromFunction0(includeDeleted), includeTotalCount = js.Any.fromFunction0(includeTotalCount), orderBy = js.Any.fromFunction1(orderBy), orderByDescending = js.Any.fromFunction1(orderByDescending), select = js.Any.fromFunction1(select), skip = js.Any.fromFunction1(skip), take = js.Any.fromFunction1(take), where = js.Any.fromFunction1(where))
     __obj.asInstanceOf[QueryJs]
@@ -67,6 +67,6 @@ object QueryJs {
     
     inline def setTake(value: Double => QueryJs): Self = StObject.set(x, "take", js.Any.fromFunction1(value))
     
-    inline def setWhere(value: js.Any => QueryJs): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
+    inline def setWhere(value: Any => QueryJs): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
   }
 }

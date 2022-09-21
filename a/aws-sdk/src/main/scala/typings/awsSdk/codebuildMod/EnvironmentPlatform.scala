@@ -29,7 +29,7 @@ object EnvironmentPlatform {
     
     inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    inline def setLanguagesVarargs(value: EnvironmentLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: EnvironmentLanguage*): Self = StObject.set(x, "languages", js.Array(value*))
     
     inline def setPlatform(value: PlatformType): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     

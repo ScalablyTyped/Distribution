@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLProject extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Creator: Double = js.native
   
-  def HTMLProjectItems(Index: js.Any): HTMLProjectItem = js.native
+  def HTMLProjectItems(Index: Any): HTMLProjectItem = js.native
   @JSName("HTMLProjectItems")
   val HTMLProjectItems_Original: HTMLProjectItems = js.native
   
@@ -22,7 +22,7 @@ trait HTMLProject extends StObject {
   def Open(): Unit = js.native
   def Open(OpenKind: MsoHTMLProjectOpen): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /** @param Refresh [Refresh=true] */
   def RefreshDocument(): Unit = js.native

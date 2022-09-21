@@ -8,73 +8,73 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentPropertiesUpdateData extends StObject {
   
   /**
-    *
     * The author of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var author: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The category of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var category: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The comments of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var comments: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The company of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var company: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The keywords of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var keywords: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The manager of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var manager: js.UndefOr[String] = js.undefined
   
   /**
+    * Gets the revision number of the workbook.
     *
-    * Gets the revision number of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var revisionNumber: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The subject of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var subject: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The title of the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var title: js.UndefOr[String] = js.undefined

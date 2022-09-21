@@ -3,7 +3,6 @@ package typings.ds18b20
 import typings.ds18b20.ds18b20Strings.decimal
 import typings.ds18b20.ds18b20Strings.default
 import typings.ds18b20.ds18b20Strings.hex
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +21,9 @@ object mod {
   inline def temperatureSync(sensorId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("temperatureSync")(sensorId.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def temperatureSync(sensorId: String, options: TemperatureOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("temperatureSync")(sensorId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  type SensorsCallback = js.Function2[/* err */ Error | Null, /* ids */ js.Array[String], Unit]
+  type SensorsCallback = js.Function2[/* err */ js.Error | Null, /* ids */ js.Array[String], Unit]
   
-  type TemperatureCallback = js.Function2[/* err */ Error | Null, /* value */ Double, Unit]
+  type TemperatureCallback = js.Function2[/* err */ js.Error | Null, /* value */ Double, Unit]
   
   trait TemperatureOptions extends StObject {
     

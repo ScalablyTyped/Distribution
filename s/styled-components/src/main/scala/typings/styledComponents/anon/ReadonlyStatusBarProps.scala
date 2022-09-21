@@ -3,6 +3,7 @@ package typings.styledComponents.anon
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.StatusBarStyle
 import typings.styledComponents.styledComponentsStrings.fade
+import typings.styledComponents.styledComponentsStrings.none
 import typings.styledComponents.styledComponentsStrings.slide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,13 +16,13 @@ trait ReadonlyStatusBarProps extends StObject {
   
   val backgroundColor: js.UndefOr[ColorValue] = js.undefined
   
-  val barStyle: js.UndefOr[StatusBarStyle] = js.undefined
+  val barStyle: js.UndefOr[Null | StatusBarStyle] = js.undefined
   
   val hidden: js.UndefOr[Boolean] = js.undefined
   
   val networkActivityIndicatorVisible: js.UndefOr[Boolean] = js.undefined
   
-  val showHideTransition: js.UndefOr[fade | slide] = js.undefined
+  val showHideTransition: js.UndefOr[Null | fade | slide | none] = js.undefined
   
   val translucent: js.UndefOr[Boolean] = js.undefined
 }
@@ -44,6 +45,8 @@ object ReadonlyStatusBarProps {
     
     inline def setBarStyle(value: StatusBarStyle): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
+    inline def setBarStyleNull: Self = StObject.set(x, "barStyle", null)
+    
     inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
@@ -54,7 +57,9 @@ object ReadonlyStatusBarProps {
     
     inline def setNetworkActivityIndicatorVisibleUndefined: Self = StObject.set(x, "networkActivityIndicatorVisible", js.undefined)
     
-    inline def setShowHideTransition(value: fade | slide): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
+    inline def setShowHideTransition(value: fade | slide | none): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
+    
+    inline def setShowHideTransitionNull: Self = StObject.set(x, "showHideTransition", null)
     
     inline def setShowHideTransitionUndefined: Self = StObject.set(x, "showHideTransition", js.undefined)
     

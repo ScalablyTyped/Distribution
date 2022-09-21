@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ali-oss", JSImport.Namespace)
 @js.native
-class ^ protected ()
+open class ^ protected ()
   extends StObject
      with OSS {
   def this(options: Options) = this()

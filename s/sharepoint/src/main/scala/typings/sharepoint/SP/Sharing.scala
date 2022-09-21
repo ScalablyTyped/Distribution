@@ -50,9 +50,9 @@ object Sharing {
   object UserRoleAssignment {
     
     inline def apply(
-      customFromJson: js.Any => Boolean,
+      customFromJson: Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-      fromJson: js.Any => Unit,
+      fromJson: Any => Unit,
       get_role: () => Role,
       get_typeId: () => String,
       get_userId: () => String,
@@ -95,9 +95,9 @@ object Sharing {
   object UserSharingResult {
     
     inline def apply(
-      customFromJson: js.Any => Boolean,
+      customFromJson: Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-      fromJson: js.Any => Unit,
+      fromJson: Any => Unit,
       get_allowedRoles: () => js.Array[Role],
       get_currentRole: () => Role,
       get_isUserKnown: () => Boolean,

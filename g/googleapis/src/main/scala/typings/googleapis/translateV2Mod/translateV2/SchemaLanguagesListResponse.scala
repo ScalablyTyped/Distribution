@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaLanguagesListResponse extends StObject {
   
   /**
-    * List of source/target languages supported by the translation API. If
-    * target parameter is unspecified, the list is sorted by the ASCII code
-    * point order of the language code. If target parameter is specified, the
-    * list is sorted by the collation order of the language name in the target
-    * language.
+    * List of source/target languages supported by the translation API. If target parameter is unspecified, the list is sorted by the ASCII code point order of the language code. If target parameter is specified, the list is sorted by the collation order of the language name in the target language.
     */
   var languages: js.UndefOr[js.Array[SchemaLanguagesResource]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaLanguagesListResponse {
     
     inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    inline def setLanguagesVarargs(value: SchemaLanguagesResource*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: SchemaLanguagesResource*): Self = StObject.set(x, "languages", js.Array(value*))
   }
 }

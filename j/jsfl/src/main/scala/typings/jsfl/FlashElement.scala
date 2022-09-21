@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var firstFrame: Double
   
-  def getPersistentData(name: String): js.Any
+  def getPersistentData(name: String): Any
   
   def getTransformationPoint(): FlashPoint
   
@@ -84,7 +84,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var selected: Boolean
   
-  def setPersistentData(name: String, `type`: String, value: js.Any): Unit
+  def setPersistentData(name: String, `type`: String, value: Any): Unit
   
   def setTransformationPoint(transformationPoint: FlashPoint): Unit
   
@@ -144,7 +144,7 @@ object FlashElement {
     forceSimple: Boolean,
     getBits: () => FlashBitmap,
     getCubicSegmentPoints: Double => js.Array[FlashPoint],
-    getPersistentData: String => js.Any,
+    getPersistentData: String => Any,
     getTransformationPoint: () => FlashPoint,
     hPixels: Double,
     hasPersistentData: String => Boolean,
@@ -162,14 +162,14 @@ object FlashElement {
     members: js.Array[FlashShape],
     name: String,
     numCubicSegments: Double,
-    parameters: js.Array[js.Any],
+    parameters: js.Array[Any],
     removePersistentData: String => Unit,
     rotation: Double,
     scaleX: Double,
     scaleY: Double,
     selected: Boolean,
     setBits: FlashBitmap => Unit,
-    setPersistentData: (String, String, js.Any) => Unit,
+    setPersistentData: (String, String, Any) => Unit,
     setTransformationPoint: FlashPoint => Unit,
     shortcut: String,
     silent: Boolean,
@@ -229,11 +229,11 @@ object FlashElement {
     
     inline def setFilters(value: js.Array[FlashFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: FlashFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: FlashFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setFirstFrame(value: Double): Self = StObject.set(x, "firstFrame", value.asInstanceOf[js.Any])
     
-    inline def setGetPersistentData(value: String => js.Any): Self = StObject.set(x, "getPersistentData", js.Any.fromFunction1(value))
+    inline def setGetPersistentData(value: String => Any): Self = StObject.set(x, "getPersistentData", js.Any.fromFunction1(value))
     
     inline def setGetTransformationPoint(value: () => FlashPoint): Self = StObject.set(x, "getTransformationPoint", js.Any.fromFunction0(value))
     
@@ -263,7 +263,7 @@ object FlashElement {
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    inline def setSetPersistentData(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "setPersistentData", js.Any.fromFunction3(value))
+    inline def setSetPersistentData(value: (String, String, Any) => Unit): Self = StObject.set(x, "setPersistentData", js.Any.fromFunction3(value))
     
     inline def setSetTransformationPoint(value: FlashPoint => Unit): Self = StObject.set(x, "setTransformationPoint", js.Any.fromFunction1(value))
     

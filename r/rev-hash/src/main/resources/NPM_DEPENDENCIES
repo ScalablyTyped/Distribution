@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rev-hash" : "3.0.0"
+      "rev-hash" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rev-hash" : "3.0.0"
+      "rev-hash" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

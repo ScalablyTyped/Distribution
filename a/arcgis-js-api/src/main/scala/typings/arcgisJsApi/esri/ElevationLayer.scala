@@ -52,7 +52,7 @@ trait ElevationLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#sourceJSON)
     */
-  var sourceJSON: js.Any = js.native
+  var sourceJSON: Any = js.native
   
   @JSName("type")
   val type_ElevationLayer: elevation = js.native

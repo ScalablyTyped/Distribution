@@ -8,7 +8,7 @@ trait PlaylistItem extends StObject {
   
   var src: String
   
-  var tracks: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var tracks: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object PlaylistItem {
   
@@ -21,10 +21,10 @@ object PlaylistItem {
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    inline def setTracks(value: js.Array[js.Any]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: js.Array[Any]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    inline def setTracksVarargs(value: js.Any*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: Any*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

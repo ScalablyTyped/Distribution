@@ -11,7 +11,7 @@ trait Revision extends StObject {
   var exportLinks: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.Revision & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.Revision & TopLevel[Any]
   ] = js.undefined
   
   /** The ID of the revision. */
@@ -69,7 +69,7 @@ object Revision {
     inline def setExportLinks(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.Revision & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.Revision & TopLevel[Any]
     ): Self = StObject.set(x, "exportLinks", value.asInstanceOf[js.Any])
     
     inline def setExportLinksUndefined: Self = StObject.set(x, "exportLinks", js.undefined)

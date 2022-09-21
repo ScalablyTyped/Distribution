@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__core
 
-Typings are for version 3.2.1
+Typings are for version 4.0.5
 
 ## Library description:
 Extendable client for GitHub's REST & GraphQL APIs
@@ -10,10 +10,10 @@ Extendable client for GitHub's REST & GraphQL APIs
 | ------------------ | :-------------: |
 | Full name          | @octokit/core |
 | Keywords           | octokit, github, api, sdk, toolkit |
-| # releases         | 35 |
-| # dependents       | 58 |
-| # downloads        | 30339397 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6910837E7 |
+| # stars            | 939.0 |
 
 ## Links
 - [Homepage](https://github.com/octokit/core.js#readme)

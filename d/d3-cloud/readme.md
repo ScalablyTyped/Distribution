@@ -10,10 +10,10 @@ Generate word clouds in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | d3-cloud |
 | Keywords           | word, cloud, tag, visualization, canvas |
-| # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 1469482 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 506333.3333333333 |
+| # stars            | 3560.0 |
 
 ## Links
 - [Homepage](https://www.jasondavies.com/wordcloud/)

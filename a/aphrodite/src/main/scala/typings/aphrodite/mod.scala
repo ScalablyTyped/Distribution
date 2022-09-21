@@ -30,7 +30,7 @@ object mod {
   
   inline def StyleSheet_=(x: StyleSheetStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StyleSheet")(x.asInstanceOf[js.Any])
   
-  inline def css(styles: CSSInputTypes*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(styles.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def css(styles: CSSInputTypes*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(styles.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   inline def flushToStyleTag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushToStyleTag")().asInstanceOf[Unit]
   
@@ -136,10 +136,10 @@ object mod {
   
   type StyleDeclaration[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: aphrodite.aphrodite/typings/css-properties.CSSProperties | aphrodite.aphrodite.StyleDeclarationMap}
-    */ typings.aphrodite.aphroditeStrings.StyleDeclaration & TopLevel[js.Any]
+    */ typings.aphrodite.aphroditeStrings.StyleDeclaration & TopLevel[Any]
   
   type StyleDeclarationMap = Map[
-    /* keyof aphrodite.aphrodite/typings/css-properties.CSSProperties */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 340 */ js.Any, 
+    /* keyof aphrodite.aphrodite/typings/css-properties.CSSProperties */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 340 */ Any, 
     String | Double
   ]
   
@@ -172,7 +172,7 @@ object mod {
       */
     def create[T](styles: StyleDeclaration[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue}
-      */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[js.Any]
+      */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[Any]
     
     def extend(extensions: js.Array[Extension]): Exports
     
@@ -184,9 +184,9 @@ object mod {
   object StyleSheetStatic {
     
     inline def apply(
-      create: StyleDeclaration[js.Any] => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+      create: StyleDeclaration[Any] => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue}
-      */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[js.Any],
+      */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[Any],
       extend: js.Array[Extension] => Exports,
       rehydrate: js.Array[String] => Unit
     ): StyleSheetStatic = {
@@ -197,9 +197,9 @@ object mod {
     extension [Self <: StyleSheetStatic](x: Self) {
       
       inline def setCreate(
-        value: StyleDeclaration[js.Any] => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+        value: StyleDeclaration[Any] => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue}
-        */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[js.Any]
+        */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[Any]
       ): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
       inline def setExtend(value: js.Array[Extension] => Exports): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))

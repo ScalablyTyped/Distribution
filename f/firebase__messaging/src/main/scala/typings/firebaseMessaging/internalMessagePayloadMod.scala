@@ -9,7 +9,7 @@ object internalMessagePayloadMod {
   
   @js.native
   sealed trait MessageType extends StObject
-  @JSImport("@firebase/messaging/dist/interfaces/internal-message-payload", "MessageType")
+  @JSImport("@firebase/messaging/dist/esm/src/interfaces/internal-message-payload", "MessageType")
   @js.native
   object MessageType extends StObject {
     
@@ -61,7 +61,9 @@ object internalMessagePayloadMod {
     
     var collapse_key: String
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
+    
+    var fcmMessageId: String
     
     var fcmOptions: js.UndefOr[FcmOptionsInternal] = js.undefined
     
@@ -75,8 +77,8 @@ object internalMessagePayloadMod {
   }
   object MessagePayloadInternal {
     
-    inline def apply(collapse_key: String, from: String): MessagePayloadInternal = {
-      val __obj = js.Dynamic.literal(collapse_key = collapse_key.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
+    inline def apply(collapse_key: String, fcmMessageId: String, from: String): MessagePayloadInternal = {
+      val __obj = js.Dynamic.literal(collapse_key = collapse_key.asInstanceOf[js.Any], fcmMessageId = fcmMessageId.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessagePayloadInternal]
     }
     
@@ -84,9 +86,11 @@ object internalMessagePayloadMod {
       
       inline def setCollapse_key(value: String): Self = StObject.set(x, "collapse_key", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setFcmMessageId(value: String): Self = StObject.set(x, "fcmMessageId", value.asInstanceOf[js.Any])
       
       inline def setFcmOptions(value: FcmOptionsInternal): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
       

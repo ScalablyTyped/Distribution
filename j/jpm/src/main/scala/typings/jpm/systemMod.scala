@@ -27,7 +27,7 @@ object systemMod {
   
   @JSImport("sdk/system", "env")
   @js.native
-  val env: js.Any = js.native
+  val env: Any = js.native
   
   inline def exit(code: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exit")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

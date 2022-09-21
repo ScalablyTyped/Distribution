@@ -36,14 +36,14 @@ object mod {
   
   @JSImport("galactus/lib", "DestroyerOfModules")
   @js.native
-  class DestroyerOfModules protected ()
+  open class DestroyerOfModules protected ()
     extends typings.galactus.destroyerOfModulesMod.DestroyerOfModules {
     def this(hasRootDirectoryWalkerShouldKeepModuleTest: RootDirectory) = this()
   }
   
   @JSImport("galactus/lib", "Walker")
   @js.native
-  class Walker protected ()
+  open class Walker protected ()
     extends typings.floraColossus.mod.Walker {
     def this(modulePath: String) = this()
   }

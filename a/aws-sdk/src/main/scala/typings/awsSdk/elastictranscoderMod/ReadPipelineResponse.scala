@@ -33,6 +33,6 @@ object ReadPipelineResponse {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "Warnings", js.Array(value*))
   }
 }

@@ -20,7 +20,7 @@ trait Writers extends StObject {
     *    return record[this.id];
     * };
     */
-  var _attributeWriter: js.UndefOr[js.Function1[/* record */ js.Any, js.Any]] = js.undefined
+  var _attributeWriter: js.UndefOr[js.Function1[/* record */ Any, Any]] = js.undefined
   
   /**
     * Function that returns the HTML code that will be injected for the cell
@@ -55,7 +55,7 @@ trait Writers extends StObject {
     *     return td + '>' + html + '</td>';
     * };
     */
-  var _cellWriter: js.UndefOr[js.Function2[/* column */ Column, /* record */ js.Any, String]] = js.undefined
+  var _cellWriter: js.UndefOr[js.Function2[/* column */ Column, /* record */ Any, String]] = js.undefined
   
   /**
     * Function that write the data inside each row
@@ -81,7 +81,7 @@ trait Writers extends StObject {
   var _rowWriter: js.UndefOr[
     js.Function4[
       /* rowIndex */ Double, 
-      /* record */ js.Any, 
+      /* record */ Any, 
       /* columns */ js.Array[Column], 
       /* cellWriter */ js.Function, 
       String
@@ -97,16 +97,16 @@ object Writers {
   
   extension [Self <: Writers](x: Self) {
     
-    inline def set_attributeWriter(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "_attributeWriter", js.Any.fromFunction1(value))
+    inline def set_attributeWriter(value: /* record */ Any => Any): Self = StObject.set(x, "_attributeWriter", js.Any.fromFunction1(value))
     
     inline def set_attributeWriterUndefined: Self = StObject.set(x, "_attributeWriter", js.undefined)
     
-    inline def set_cellWriter(value: (/* column */ Column, /* record */ js.Any) => String): Self = StObject.set(x, "_cellWriter", js.Any.fromFunction2(value))
+    inline def set_cellWriter(value: (/* column */ Column, /* record */ Any) => String): Self = StObject.set(x, "_cellWriter", js.Any.fromFunction2(value))
     
     inline def set_cellWriterUndefined: Self = StObject.set(x, "_cellWriter", js.undefined)
     
     inline def set_rowWriter(
-      value: (/* rowIndex */ Double, /* record */ js.Any, /* columns */ js.Array[Column], /* cellWriter */ js.Function) => String
+      value: (/* rowIndex */ Double, /* record */ Any, /* columns */ js.Array[Column], /* cellWriter */ js.Function) => String
     ): Self = StObject.set(x, "_rowWriter", js.Any.fromFunction4(value))
     
     inline def set_rowWriterUndefined: Self = StObject.set(x, "_rowWriter", js.undefined)

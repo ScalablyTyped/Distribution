@@ -18,13 +18,13 @@ trait PartialTabProps extends StObject {
   
   var index: js.UndefOr[Double] = js.undefined
   
-  var linkProps: js.UndefOr[js.Any] = js.undefined
+  var linkProps: js.UndefOr[Any] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
   var selected: js.UndefOr[Boolean] = js.undefined
   
-  var tabContentProps: js.UndefOr[js.Any] = js.undefined
+  var tabContentProps: js.UndefOr[Any] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
 }
@@ -57,11 +57,11 @@ object PartialTabProps {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setLinkProps(value: js.Any): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
+    inline def setLinkProps(value: Any): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
     
     inline def setLinkPropsUndefined: Self = StObject.set(x, "linkProps", js.undefined)
     
-    inline def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* repeated */ Any => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
@@ -69,7 +69,7 @@ object PartialTabProps {
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setTabContentProps(value: js.Any): Self = StObject.set(x, "tabContentProps", value.asInstanceOf[js.Any])
+    inline def setTabContentProps(value: Any): Self = StObject.set(x, "tabContentProps", value.asInstanceOf[js.Any])
     
     inline def setTabContentPropsUndefined: Self = StObject.set(x, "tabContentProps", js.undefined)
     

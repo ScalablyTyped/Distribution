@@ -27,6 +27,6 @@ object IPProtocol {
     
     inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    inline def setPortsVarargs(value: String*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: String*): Self = StObject.set(x, "ports", js.Array(value*))
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@theme-ui/components" : "0.14.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@theme-ui/components" : "0.14.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

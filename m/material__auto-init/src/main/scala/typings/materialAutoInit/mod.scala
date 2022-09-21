@@ -1,6 +1,5 @@
 package typings.materialAutoInit
 
-import org.scalablytyped.runtime.Instantiable3
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.std.Document
@@ -39,14 +38,14 @@ object mod {
     def register: js.Function3[
         /* componentName */ String, 
         /* Constructor */ MDCAttachable, 
-        /* warn */ js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]], 
+        /* warn */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
         Unit
       ] = js.native
     inline def register_=(
       x: js.Function3[
           /* componentName */ String, 
           /* Constructor */ MDCAttachable, 
-          /* warn */ js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]], 
+          /* warn */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
           Unit
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("register")(x.asInstanceOf[js.Any])
@@ -80,14 +79,14 @@ object mod {
     def register: js.Function3[
         /* componentName */ String, 
         /* Constructor */ MDCAttachable, 
-        /* warn */ js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]], 
+        /* warn */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
         Unit
       ] = js.native
     inline def register_=(
       x: js.Function3[
           /* componentName */ String, 
           /* Constructor */ MDCAttachable, 
-          /* warn */ js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]], 
+          /* warn */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
           Unit
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("register")(x.asInstanceOf[js.Any])
@@ -95,14 +94,8 @@ object mod {
   
   @js.native
   trait MDCAttachable
-    extends StObject
-       with Instantiable3[
-          /* root */ Element, 
-          (/* foundation */ MDCFoundation[js.Object]) | (/* foundation */ Unit), 
-          /* args (repeated) */ js.Any, 
-          MDCComponent[MDCFoundation[js.Object]]
-        ] {
+    extends js.Function {
     
-    def attachTo[F /* <: MDCFoundation[js.Object] */](root: Element): MDCComponent[F] = js.native
+    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = js.native
   }
 }

@@ -25,7 +25,7 @@ object OptionsSingleStrict {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     

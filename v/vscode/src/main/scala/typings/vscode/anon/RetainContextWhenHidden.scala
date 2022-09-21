@@ -12,7 +12,7 @@ trait RetainContextWhenHidden extends StObject {
     *
     * Normally the webview's html context is created when the view becomes visible
     * and destroyed when it is hidden. Extensions that have complex state
-    * or UI can set the `retainContextWhenHidden` to make VS Code keep the webview
+    * or UI can set the `retainContextWhenHidden` to make the editor keep the webview
     * context around, even when the webview moves to a background tab. When a webview using
     * `retainContextWhenHidden` becomes hidden, its scripts and other dynamic content are suspended.
     * When the view becomes visible again, the context is automatically restored

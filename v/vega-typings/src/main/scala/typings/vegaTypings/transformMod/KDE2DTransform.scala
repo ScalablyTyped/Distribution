@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KDE2DTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[String | SignalRef] = js.undefined
   
@@ -54,7 +54,7 @@ object KDE2DTransform {
     
     inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
-    inline def setBandwidthVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bandwidth", js.Array(value :_*))
+    inline def setBandwidthVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bandwidth", js.Array(value*))
     
     inline def setCellSize(value: Double | SignalRef): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
     
@@ -68,11 +68,11 @@ object KDE2DTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: (String | TransformField)*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: (String | TransformField)*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setSize(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setSizeVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "size", js.Array(value*))
     
     inline def setType(value: kde2d): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

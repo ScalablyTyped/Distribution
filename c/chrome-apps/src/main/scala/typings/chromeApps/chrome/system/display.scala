@@ -176,7 +176,7 @@ object display {
       
       inline def setAvailableDisplayZoomFactors(value: js.Array[double]): Self = StObject.set(x, "availableDisplayZoomFactors", value.asInstanceOf[js.Any])
       
-      inline def setAvailableDisplayZoomFactorsVarargs(value: double*): Self = StObject.set(x, "availableDisplayZoomFactors", js.Array(value :_*))
+      inline def setAvailableDisplayZoomFactorsVarargs(value: double*): Self = StObject.set(x, "availableDisplayZoomFactors", js.Array(value*))
       
       inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -202,13 +202,13 @@ object display {
       
       inline def setMirroringDestinationIds(value: js.Array[String]): Self = StObject.set(x, "mirroringDestinationIds", value.asInstanceOf[js.Any])
       
-      inline def setMirroringDestinationIdsVarargs(value: String*): Self = StObject.set(x, "mirroringDestinationIds", js.Array(value :_*))
+      inline def setMirroringDestinationIdsVarargs(value: String*): Self = StObject.set(x, "mirroringDestinationIds", js.Array(value*))
       
       inline def setMirroringSourceId(value: String): Self = StObject.set(x, "mirroringSourceId", value.asInstanceOf[js.Any])
       
       inline def setModes(value: js.Array[DisplayMode]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
       
-      inline def setModesVarargs(value: DisplayMode*): Self = StObject.set(x, "modes", js.Array(value :_*))
+      inline def setModesVarargs(value: DisplayMode*): Self = StObject.set(x, "modes", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -612,7 +612,7 @@ object display {
       
       inline def setMirroringDestinationIdsUndefined: Self = StObject.set(x, "mirroringDestinationIds", js.undefined)
       
-      inline def setMirroringDestinationIdsVarargs(value: String*): Self = StObject.set(x, "mirroringDestinationIds", js.Array(value :_*))
+      inline def setMirroringDestinationIdsVarargs(value: String*): Self = StObject.set(x, "mirroringDestinationIds", js.Array(value*))
       
       inline def setMirroringSourceId(value: String): Self = StObject.set(x, "mirroringSourceId", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,7 @@ object XActionLockable {
     acquire: () => Unit,
     addActionLock: () => Unit,
     isActionLocked: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeActionLock: () => Unit,
     resetActionLocks: () => Double,

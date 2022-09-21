@@ -1,7 +1,7 @@
 
 # Scala.js typings for base-64
 
-Typings are for version 0.1
+Typings are for version 1.0
 
 ## Library description:
 A robust base64 encoder/decoder that is fully compatible with `atob()` and `btoa()`, written in JavaScript.
@@ -11,9 +11,9 @@ A robust base64 encoder/decoder that is fully compatible with `atob()` and `btoa
 | Full name          | base-64 |
 | Keywords           | codec, decoder, encoder, base64, atob, btoa |
 | # releases         | 2 |
-| # dependents       | 711 |
-| # downloads        | 21102038 |
-| # stars            | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 3917644.3333333335 |
+| # stars            | 459.0 |
 
 ## Links
 - [Homepage](https://mths.be/base64)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_healthcare
 
-Typings are for version 1.0.20201118
+Typings are for version 1.0.20220727
 
 ## Library description:
 TypeScript typings for Cloud Healthcare API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Healthcare API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.healthcare |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 951 |
-| # stars            | 0 |
+| # releases         | 60 |
+| # dependents       | 0.0 |
+| # downloads        | 850.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

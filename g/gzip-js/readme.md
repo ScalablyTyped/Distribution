@@ -10,10 +10,10 @@ GZIP in pure JavaScript (works in the browser)
 | ------------------ | :-------------: |
 | Full name          | gzip-js |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 799825 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 239535.0 |
+| # stars            | 408.0 |
 
 ## Links
 - [Homepage](https://github.com/beatgammit/gzip-js#readme)

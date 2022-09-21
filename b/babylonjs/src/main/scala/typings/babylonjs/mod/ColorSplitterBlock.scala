@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "ColorSplitterBlock")
 @js.native
-class ColorSplitterBlock protected ()
+open class ColorSplitterBlock protected ()
   extends typings.babylonjs.legacyMod.ColorSplitterBlock {
   /**
     * Create a new ColorSplitterBlock

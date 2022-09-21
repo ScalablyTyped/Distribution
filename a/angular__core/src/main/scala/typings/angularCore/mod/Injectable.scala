@@ -10,9 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Injectable extends StObject {
   
   /**
-    * Determines which injectors will provide the injectable,
-    * by either associating it with an `@NgModule` or other `InjectorType`,
-    * or by specifying that this injectable should be provided in one of the following injectors:
+    * Determines which injectors will provide the injectable.
+    *
+    * - `Type<any>` - associates the injectable with an `@NgModule` or other `InjectorType`,
+    * - 'null' : Equivalent to `undefined`. The injectable is not provided in any scope automatically
+    * and must be added to a `providers` array of an [@NgModule](api/core/NgModule#providers),
+    * [@Component](api/core/Directive#providers) or [@Directive](api/core/Directive#providers).
+    *
+    * The following options specify that this injectable should be provided in one of the following
+    * injectors:
     * - 'root' : The application-level injector in most apps.
     * - 'platform' : A special singleton platform injector shared by all
     * applications on the page.
@@ -20,7 +26,7 @@ trait Injectable extends StObject {
     * modules share one instance.
     *
     */
-  var providedIn: js.UndefOr[Type[js.Any] | root | platform | any | Null] = js.undefined
+  var providedIn: js.UndefOr[Type[Any] | root | platform | any | Null] = js.undefined
 }
 object Injectable {
   
@@ -30,7 +36,7 @@ object Injectable {
   
   extension [Self <: Injectable](x: Self) {
     
-    inline def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: Type[Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     inline def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
     

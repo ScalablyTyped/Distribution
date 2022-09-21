@@ -19,12 +19,16 @@ trait LineCallout3DProperties
   /**
     * The color of the callout line.
     *
+    * @default black
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#color)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The width of the callout line in points.
+    *
+    * @default 1px
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#size)
     */
@@ -49,7 +53,7 @@ object LineCallout3DProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

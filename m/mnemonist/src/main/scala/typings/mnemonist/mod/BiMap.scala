@@ -2,21 +2,21 @@ package typings.mnemonist.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mnemonist.biMapMod.default
-import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mnemonist", "BiMap")
 @js.native
-class BiMap[K, V] () extends default[K, V]
-
+open class BiMap[K, V] () extends default[K, V]
 /* static members */
-@JSImport("mnemonist", "BiMap")
-@js.native
-object BiMap extends js.Object {
-  def from[I, J](iterable: StringDictionary[J]): typings.mnemonist.biMapMod.BiMap[I, J] = js.native
+object BiMap {
+  
+  @JSImport("mnemonist", "BiMap")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // Statics
-  def from[I, J](iterable: Iterable[js.Tuple2[I, J]]): typings.mnemonist.biMapMod.BiMap[I, J] = js.native
+  inline def from[I, J](iterable: js.Iterable[js.Tuple2[I, J]]): typings.mnemonist.biMapMod.BiMap[I, J] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.mnemonist.biMapMod.BiMap[I, J]]
+  inline def from[I, J](iterable: StringDictionary[J]): typings.mnemonist.biMapMod.BiMap[I, J] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.mnemonist.biMapMod.BiMap[I, J]]
 }
-

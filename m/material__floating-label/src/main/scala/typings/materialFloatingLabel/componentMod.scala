@@ -1,8 +1,8 @@
 package typings.materialFloatingLabel
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialFloatingLabel.foundationMod.MDCFloatingLabelFoundation
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,9 @@ object componentMod {
   
   @JSImport("@material/floating-label/component", "MDCFloatingLabel")
   @js.native
-  class MDCFloatingLabel protected () extends MDCComponent[MDCFloatingLabelFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCFloatingLabelFoundation, args: js.Any*) = this()
+  open class MDCFloatingLabel protected () extends MDCComponent[MDCFloatingLabelFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCFloatingLabelFoundation, args: Any*) = this()
     
     /**
       * Styles the label to float/dock.
@@ -42,11 +42,11 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCFloatingLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCFloatingLabel]
+    inline def attachTo(root: typings.std.Element): MDCFloatingLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCFloatingLabel]
   }
   
   type MDCFloatingLabelFactory = js.Function2[
-    /* el */ Element, 
+    /* el */ typings.std.Element, 
     /* foundation */ js.UndefOr[MDCFloatingLabelFoundation], 
     MDCFloatingLabel
   ]

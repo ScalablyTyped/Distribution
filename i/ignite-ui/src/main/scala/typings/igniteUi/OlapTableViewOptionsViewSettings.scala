@@ -10,7 +10,7 @@ trait OlapTableViewOptionsViewSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Optional="false" value indicating wheter the column headers should be arranged for compact header layout - each hieararchy is in a single row.

@@ -10,10 +10,10 @@ Webpack plugin for using service workers
 | ------------------ | :-------------: |
 | Full name          | sw-precache-webpack-plugin |
 | Keywords           | webpack, plugin, precache, sw-precache, service, worker |
-| # releases         | 2 |
-| # dependents       | 1389 |
-| # downloads        | 9986661 |
-| # stars            | 22 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 446834.6666666667 |
+| # stars            | 1442.0 |
 
 ## Links
 - [Homepage](https://github.com/goldhand/sw-precache-webpack-plugin#readme)

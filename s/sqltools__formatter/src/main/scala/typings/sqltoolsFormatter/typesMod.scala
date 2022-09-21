@@ -236,49 +236,49 @@ object typesMod {
       
       inline def setCloseParens(value: js.Array[String]): Self = StObject.set(x, "closeParens", value.asInstanceOf[js.Any])
       
-      inline def setCloseParensVarargs(value: String*): Self = StObject.set(x, "closeParens", js.Array(value :_*))
+      inline def setCloseParensVarargs(value: String*): Self = StObject.set(x, "closeParens", js.Array(value*))
       
       inline def setIndexedPlaceholderTypes(value: js.Array[String]): Self = StObject.set(x, "indexedPlaceholderTypes", value.asInstanceOf[js.Any])
       
       inline def setIndexedPlaceholderTypesUndefined: Self = StObject.set(x, "indexedPlaceholderTypes", js.undefined)
       
-      inline def setIndexedPlaceholderTypesVarargs(value: String*): Self = StObject.set(x, "indexedPlaceholderTypes", js.Array(value :_*))
+      inline def setIndexedPlaceholderTypesVarargs(value: String*): Self = StObject.set(x, "indexedPlaceholderTypes", js.Array(value*))
       
       inline def setLineCommentTypes(value: js.Array[String]): Self = StObject.set(x, "lineCommentTypes", value.asInstanceOf[js.Any])
       
-      inline def setLineCommentTypesVarargs(value: String*): Self = StObject.set(x, "lineCommentTypes", js.Array(value :_*))
+      inline def setLineCommentTypesVarargs(value: String*): Self = StObject.set(x, "lineCommentTypes", js.Array(value*))
       
       inline def setNamedPlaceholderTypes(value: js.Array[String]): Self = StObject.set(x, "namedPlaceholderTypes", value.asInstanceOf[js.Any])
       
-      inline def setNamedPlaceholderTypesVarargs(value: String*): Self = StObject.set(x, "namedPlaceholderTypes", js.Array(value :_*))
+      inline def setNamedPlaceholderTypesVarargs(value: String*): Self = StObject.set(x, "namedPlaceholderTypes", js.Array(value*))
       
       inline def setOpenParens(value: js.Array[String]): Self = StObject.set(x, "openParens", value.asInstanceOf[js.Any])
       
-      inline def setOpenParensVarargs(value: String*): Self = StObject.set(x, "openParens", js.Array(value :_*))
+      inline def setOpenParensVarargs(value: String*): Self = StObject.set(x, "openParens", js.Array(value*))
       
       inline def setReservedNewlineWords(value: js.Array[String]): Self = StObject.set(x, "reservedNewlineWords", value.asInstanceOf[js.Any])
       
-      inline def setReservedNewlineWordsVarargs(value: String*): Self = StObject.set(x, "reservedNewlineWords", js.Array(value :_*))
+      inline def setReservedNewlineWordsVarargs(value: String*): Self = StObject.set(x, "reservedNewlineWords", js.Array(value*))
       
       inline def setReservedTopLevelWords(value: js.Array[String]): Self = StObject.set(x, "reservedTopLevelWords", value.asInstanceOf[js.Any])
       
       inline def setReservedTopLevelWordsNoIndent(value: js.Array[String]): Self = StObject.set(x, "reservedTopLevelWordsNoIndent", value.asInstanceOf[js.Any])
       
-      inline def setReservedTopLevelWordsNoIndentVarargs(value: String*): Self = StObject.set(x, "reservedTopLevelWordsNoIndent", js.Array(value :_*))
+      inline def setReservedTopLevelWordsNoIndentVarargs(value: String*): Self = StObject.set(x, "reservedTopLevelWordsNoIndent", js.Array(value*))
       
-      inline def setReservedTopLevelWordsVarargs(value: String*): Self = StObject.set(x, "reservedTopLevelWords", js.Array(value :_*))
+      inline def setReservedTopLevelWordsVarargs(value: String*): Self = StObject.set(x, "reservedTopLevelWords", js.Array(value*))
       
       inline def setReservedWords(value: js.Array[String]): Self = StObject.set(x, "reservedWords", value.asInstanceOf[js.Any])
       
-      inline def setReservedWordsVarargs(value: String*): Self = StObject.set(x, "reservedWords", js.Array(value :_*))
+      inline def setReservedWordsVarargs(value: String*): Self = StObject.set(x, "reservedWords", js.Array(value*))
       
       inline def setSpecialWordChars(value: js.Array[String]): Self = StObject.set(x, "specialWordChars", value.asInstanceOf[js.Any])
       
-      inline def setSpecialWordCharsVarargs(value: String*): Self = StObject.set(x, "specialWordChars", js.Array(value :_*))
+      inline def setSpecialWordCharsVarargs(value: String*): Self = StObject.set(x, "specialWordChars", js.Array(value*))
       
       inline def setStringTypes(value: js.Array[String]): Self = StObject.set(x, "stringTypes", value.asInstanceOf[js.Any])
       
-      inline def setStringTypesVarargs(value: String*): Self = StObject.set(x, "stringTypes", js.Array(value :_*))
+      inline def setStringTypesVarargs(value: String*): Self = StObject.set(x, "stringTypes", js.Array(value*))
     }
   }
 }

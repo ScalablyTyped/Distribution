@@ -1,6 +1,5 @@
 package typings.flatbush
 
-import typings.std.ArrayBuffer
 import typings.std.Float32ArrayConstructor
 import typings.std.Float64ArrayConstructor
 import typings.std.Int16ArrayConstructor
@@ -18,7 +17,7 @@ object mod {
   
   @JSImport("flatbush", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with FlatbushClass {
     /**
@@ -40,7 +39,7 @@ object mod {
     * Very useful for transferring indices between threads or storing them in a file.
     */
   /* static member */
-  inline def from(data: ArrayBuffer): FlatbushClass = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[FlatbushClass]
+  inline def from(data: js.typedarray.ArrayBuffer): FlatbushClass = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[FlatbushClass]
   
   type Flatbush = FlatbushClass
   
@@ -65,7 +64,7 @@ object mod {
     /**
       * array buffer that holds the index
       */
-    val data: ArrayBuffer = js.native
+    val data: js.typedarray.ArrayBuffer = js.native
     
     /**
       * Performs indexing of the added rectangles. Their number must match the one provided when creating a Flatbush object.

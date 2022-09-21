@@ -20,7 +20,7 @@ trait MUIDataTableState extends StObject {
   
   var count: Double
   
-  var data: js.Array[js.Any]
+  var data: js.Array[Any]
   
   var displayData: DisplayData
   
@@ -54,7 +54,7 @@ object MUIDataTableState {
     columnOrder: js.Array[Double],
     columns: js.Array[MUIDataTableColumnState],
     count: Double,
-    data: js.Array[js.Any],
+    data: js.Array[Any],
     displayData: DisplayData,
     expandedRows: MUIDataTableStateRows,
     filterData: js.Array[js.Array[String]],
@@ -82,31 +82,31 @@ object MUIDataTableState {
     
     inline def setColumnOrder(value: js.Array[Double]): Self = StObject.set(x, "columnOrder", value.asInstanceOf[js.Any])
     
-    inline def setColumnOrderVarargs(value: Double*): Self = StObject.set(x, "columnOrder", js.Array(value :_*))
+    inline def setColumnOrderVarargs(value: Double*): Self = StObject.set(x, "columnOrder", js.Array(value*))
     
     inline def setColumns(value: js.Array[MUIDataTableColumnState]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: MUIDataTableColumnState*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: MUIDataTableColumnState*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDisplayData(value: DisplayData): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     
-    inline def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value :_*))
+    inline def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value*))
     
     inline def setExpandedRows(value: MUIDataTableStateRows): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
     
     inline def setFilterData(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
     
-    inline def setFilterDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterData", js.Array(value :_*))
+    inline def setFilterDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterData", js.Array(value*))
     
     inline def setFilterList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
     
-    inline def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
+    inline def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value*))
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
@@ -118,7 +118,7 @@ object MUIDataTableState {
     
     inline def setRowsPerPageOptions(value: js.Array[Double]): Self = StObject.set(x, "rowsPerPageOptions", value.asInstanceOf[js.Any])
     
-    inline def setRowsPerPageOptionsVarargs(value: Double*): Self = StObject.set(x, "rowsPerPageOptions", js.Array(value :_*))
+    inline def setRowsPerPageOptionsVarargs(value: Double*): Self = StObject.set(x, "rowsPerPageOptions", js.Array(value*))
     
     inline def setSearchProps(value: HTMLAttributes[HTMLInputElement]): Self = StObject.set(x, "searchProps", value.asInstanceOf[js.Any])
     

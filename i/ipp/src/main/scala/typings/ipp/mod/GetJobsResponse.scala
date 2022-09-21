@@ -40,7 +40,7 @@ object GetJobsResponse {
     
     inline def `setJob-attributes-tagUndefined`: Self = StObject.set(x, "job-attributes-tag", js.undefined)
     
-    inline def `setJob-attributes-tagVarargs`(value: JobTemplateAttributes*): Self = StObject.set(x, "job-attributes-tag", js.Array(value :_*))
+    inline def `setJob-attributes-tagVarargs`(value: JobTemplateAttributes*): Self = StObject.set(x, "job-attributes-tag", js.Array(value*))
     
     inline def `setOperation-attributes-tag`(value: Attributesnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
     
@@ -50,7 +50,7 @@ object GetJobsResponse {
     
     inline def `setUnsupported-attributesUndefined`: Self = StObject.set(x, "unsupported-attributes", js.undefined)
     
-    inline def `setUnsupported-attributesVarargs`(value: String*): Self = StObject.set(x, "unsupported-attributes", js.Array(value :_*))
+    inline def `setUnsupported-attributesVarargs`(value: String*): Self = StObject.set(x, "unsupported-attributes", js.Array(value*))
     
     inline def setVersion(value: IPPVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

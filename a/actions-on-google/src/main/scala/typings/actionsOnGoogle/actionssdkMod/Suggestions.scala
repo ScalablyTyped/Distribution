@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "Suggestions")
 @js.native
-class Suggestions protected ()
+open class Suggestions protected ()
   extends typings.actionsOnGoogle.conversationMod.Suggestions
      with _IncomingMessage {
   /**

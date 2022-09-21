@@ -36,6 +36,6 @@ object AnalyzeIamPolicyResponse {
     
     inline def setServiceAccountImpersonationAnalysisUndefined: Self = StObject.set(x, "serviceAccountImpersonationAnalysis", js.undefined)
     
-    inline def setServiceAccountImpersonationAnalysisVarargs(value: IamPolicyAnalysis*): Self = StObject.set(x, "serviceAccountImpersonationAnalysis", js.Array(value :_*))
+    inline def setServiceAccountImpersonationAnalysisVarargs(value: IamPolicyAnalysis*): Self = StObject.set(x, "serviceAccountImpersonationAnalysis", js.Array(value*))
   }
 }

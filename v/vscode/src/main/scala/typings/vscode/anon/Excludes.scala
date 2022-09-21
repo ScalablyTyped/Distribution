@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Excludes extends StObject {
   
-  var excludes: js.Array[String]
+  val excludes: js.Array[String]
   
-  var recursive: Boolean
+  val recursive: Boolean
 }
 object Excludes {
   
@@ -21,7 +21,7 @@ object Excludes {
     
     inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
-    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
   }

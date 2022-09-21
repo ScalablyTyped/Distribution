@@ -1,29 +1,38 @@
 package typings.bookshelf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CollectionSetOptions extends EventOptions {
+trait CollectionSetOptions
+  extends StObject
+     with EventOptions {
+  
   var add: js.UndefOr[Boolean] = js.undefined
+  
   var merge: js.UndefOr[Boolean] = js.undefined
+  
   var remove: js.UndefOr[Boolean] = js.undefined
 }
-
 object CollectionSetOptions {
-  @scala.inline
-  def apply(
-    add: js.UndefOr[Boolean] = js.undefined,
-    merge: js.UndefOr[Boolean] = js.undefined,
-    remove: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined
-  ): CollectionSetOptions = {
+  
+  inline def apply(): CollectionSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionSetOptions]
   }
+  
+  extension [Self <: CollectionSetOptions](x: Self) {
+    
+    inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    
+    inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    
+    inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+    
+    inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+  }
 }
-

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "PredicateCondition")
 @js.native
-class PredicateCondition protected ()
+open class PredicateCondition protected ()
   extends typings.babylonjs.actionsIndexMod.PredicateCondition {
   /**
     * Creates a new PredicateCondition

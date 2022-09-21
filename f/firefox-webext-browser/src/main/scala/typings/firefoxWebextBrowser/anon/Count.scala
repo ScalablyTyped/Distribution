@@ -27,12 +27,12 @@ object Count {
     
     inline def setRangeDataUndefined: Self = StObject.set(x, "rangeData", js.undefined)
     
-    inline def setRangeDataVarargs(value: EndOffset*): Self = StObject.set(x, "rangeData", js.Array(value :_*))
+    inline def setRangeDataVarargs(value: EndOffset*): Self = StObject.set(x, "rangeData", js.Array(value*))
     
     inline def setRectData(value: js.Array[RectsAndTexts]): Self = StObject.set(x, "rectData", value.asInstanceOf[js.Any])
     
     inline def setRectDataUndefined: Self = StObject.set(x, "rectData", js.undefined)
     
-    inline def setRectDataVarargs(value: RectsAndTexts*): Self = StObject.set(x, "rectData", js.Array(value :_*))
+    inline def setRectDataVarargs(value: RectsAndTexts*): Self = StObject.set(x, "rectData", js.Array(value*))
   }
 }

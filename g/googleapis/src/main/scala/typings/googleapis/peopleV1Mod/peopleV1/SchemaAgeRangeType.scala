@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A person&#39;s age range.
-  */
 trait SchemaAgeRangeType extends StObject {
   
   /**
     * The age range.
     */
-  var ageRange: js.UndefOr[String] = js.undefined
+  var ageRange: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Metadata about the age range.
@@ -29,6 +26,8 @@ object SchemaAgeRangeType {
   extension [Self <: SchemaAgeRangeType](x: Self) {
     
     inline def setAgeRange(value: String): Self = StObject.set(x, "ageRange", value.asInstanceOf[js.Any])
+    
+    inline def setAgeRangeNull: Self = StObject.set(x, "ageRange", null)
     
     inline def setAgeRangeUndefined: Self = StObject.set(x, "ageRange", js.undefined)
     

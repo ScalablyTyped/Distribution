@@ -1,7 +1,7 @@
 
 # Scala.js typings for dom-align
 
-Typings are for version 1.12.0
+Typings are for version 1.12.3
 
 ## Library description:
 Align DOM Node Flexibly
@@ -10,10 +10,10 @@ Align DOM Node Flexibly
 | ------------------ | :-------------: |
 | Full name          | dom-align |
 | Keywords           | dom, align |
-| # releases         | 13 |
-| # dependents       | 123 |
-| # downloads        | 40124976 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 6133434.0 |
+| # stars            | 323.0 |
 
 ## Links
 - [Homepage](http://github.com/yiminghe/dom-align)

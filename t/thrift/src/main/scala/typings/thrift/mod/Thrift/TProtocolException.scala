@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("thrift", "Thrift.TProtocolException")
 @js.native
-class TProtocolException protected ()
+open class TProtocolException protected ()
   extends StObject
      with Error {
   def this(`type`: TProtocolExceptionType, message: String) = this()
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   

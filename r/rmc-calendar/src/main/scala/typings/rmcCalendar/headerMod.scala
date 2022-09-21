@@ -12,7 +12,7 @@ object headerMod {
   
   @JSImport("rmc-calendar/lib/calendar/Header", JSImport.Default)
   @js.native
-  class default () extends Header
+  open class default () extends Header
   /* static members */
   object default {
     
@@ -28,7 +28,7 @@ object headerMod {
   
   @js.native
   trait Header
-    extends PureComponent[PropsType, js.Object, js.Any]
+    extends PureComponent[PropsType, js.Object, Any]
   
   trait PropsType extends StObject {
     

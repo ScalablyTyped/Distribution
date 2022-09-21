@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("sybasepromised")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.sybasePromised.mod.^ {
       def this(options: ConnectionOptions) = this()
     }

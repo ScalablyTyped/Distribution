@@ -19,7 +19,7 @@ trait LogSubscription extends StObject {
   /**
     * The date and time that the log subscription was created.
     */
-  var SubscriptionCreatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.SubscriptionCreatedDateTime] = js.undefined
+  var SubscriptionCreatedDateTime: js.UndefOr[js.Date] = js.undefined
 }
 object LogSubscription {
   
@@ -38,7 +38,7 @@ object LogSubscription {
     
     inline def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
-    inline def setSubscriptionCreatedDateTime(value: SubscriptionCreatedDateTime): Self = StObject.set(x, "SubscriptionCreatedDateTime", value.asInstanceOf[js.Any])
+    inline def setSubscriptionCreatedDateTime(value: js.Date): Self = StObject.set(x, "SubscriptionCreatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setSubscriptionCreatedDateTimeUndefined: Self = StObject.set(x, "SubscriptionCreatedDateTime", js.undefined)
   }

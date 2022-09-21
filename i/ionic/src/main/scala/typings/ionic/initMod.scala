@@ -12,7 +12,7 @@ object initMod {
   
   @JSImport("ionic/commands/init", "InitCommand")
   @js.native
-  class InitCommand protected () extends Command {
+  open class InitCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native

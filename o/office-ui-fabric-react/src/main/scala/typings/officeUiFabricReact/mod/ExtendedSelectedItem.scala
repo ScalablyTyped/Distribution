@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "ExtendedSelectedItem")
 @js.native
-class ExtendedSelectedItem protected ()
+open class ExtendedSelectedItem protected ()
   extends typings.officeUiFabricReact.libSelectedItemsListMod.ExtendedSelectedItem {
   def this(props: ISelectedPeopleItemProps) = this()
 }

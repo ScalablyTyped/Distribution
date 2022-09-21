@@ -12,41 +12,41 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents an icon criterion which contains a type, value, an operator, and an optional custom icon, if not using an icon set.
   *
-  * Represents an Icon Criterion which contains a type, value, an Operator, and an optional custom icon, if not using an iconset.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalIconCriterion extends StObject {
   
   /**
+    * The custom icon for the current criterion, if different from the default icon set, else `null` will be returned.
     *
-    * The custom icon for the current criterion if different from the default IconSet, else null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var customIcon: js.UndefOr[Icon] = js.undefined
   
   /**
-    *
     * A number or a formula depending on the type.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formula: String
   
   /**
+    * `greaterThan` or `greaterThanOrEqual` for each of the rule types for the icon conditional format.
     *
-    * GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var operator: ConditionalIconCriterionOperator | Invalid | GreaterThan | GreaterThanOrEqual
   
   /**
-    *
     * What the icon conditional formula should be based on.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var `type`: ConditionalFormatIconRuleType | Invalid | Number | Percent | Formula | Percentile

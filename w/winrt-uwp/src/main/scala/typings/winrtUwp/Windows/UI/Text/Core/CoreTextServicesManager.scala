@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CoreTextServicesManager extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_inputlanguagechanged(`type`: inputlanguagechanged, listener: TypedEventHandler[CoreTextServicesManager, js.Any]): Unit = js.native
+  def addEventListener_inputlanguagechanged(`type`: inputlanguagechanged, listener: TypedEventHandler[CoreTextServicesManager, Any]): Unit = js.native
   
   /**
     * Creates a context object used by a text input control to communicate with the text input server. Each text input control must create its own context object.
@@ -27,12 +27,12 @@ trait CoreTextServicesManager extends StObject {
   var inputLanguage: Language = js.native
   
   /** Occurs when the current input language has changed. */
-  def oninputlanguagechanged(ev: js.Any & WinRTEvent[CoreTextServicesManager]): Unit = js.native
+  def oninputlanguagechanged(ev: Any & WinRTEvent[CoreTextServicesManager]): Unit = js.native
   /** Occurs when the current input language has changed. */
   @JSName("oninputlanguagechanged")
-  var oninputlanguagechanged_Original: TypedEventHandler[CoreTextServicesManager, js.Any] = js.native
+  var oninputlanguagechanged_Original: TypedEventHandler[CoreTextServicesManager, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_inputlanguagechanged(`type`: inputlanguagechanged, listener: TypedEventHandler[CoreTextServicesManager, js.Any]): Unit = js.native
+  def removeEventListener_inputlanguagechanged(`type`: inputlanguagechanged, listener: TypedEventHandler[CoreTextServicesManager, Any]): Unit = js.native
 }

@@ -1,6 +1,6 @@
 package typings.backblazeB2.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +45,7 @@ object UploadPartOpts {
     
     inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    inline def setOnUploadProgress(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+    inline def setOnUploadProgress(value: /* event */ Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
     
     inline def setOnUploadProgressNull: Self = StObject.set(x, "onUploadProgress", null)
     

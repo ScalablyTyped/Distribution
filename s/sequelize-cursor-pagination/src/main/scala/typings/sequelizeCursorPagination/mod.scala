@@ -22,8 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[MethodName /* <: String */](): js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]]]
-  inline def apply[MethodName /* <: String */](options: WithPaginationOptions[MethodName]): js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* model */ js.Any, WithPaginationModel[MethodName, js.Any, js.Any, js.Any]]]
+  inline def apply[MethodName /* <: String */](): js.Function1[/* model */ Any, WithPaginationModel[MethodName, Any, Any, Any]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* model */ Any, WithPaginationModel[MethodName, Any, Any, Any]]]
+  inline def apply[MethodName /* <: String */](options: WithPaginationOptions[MethodName]): js.Function1[/* model */ Any, WithPaginationModel[MethodName, Any, Any, Any]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* model */ Any, WithPaginationModel[MethodName, Any, Any, Any]]]
   
   @JSImport("sequelize-cursor-pagination", JSImport.Namespace)
   @js.native
@@ -44,7 +44,9 @@ object mod {
       // limit the number of records returned
       var desc: js.UndefOr[Boolean] = js.undefined
       
-      var include: js.UndefOr[js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]] = js.undefined
+      var include: js.UndefOr[
+            (js.Array[(Model[Any, Any, Any]) | IncludeOptions]) | (Model[Any, Any, Any]) | IncludeOptions
+          ] = js.undefined
       
       var limit: js.UndefOr[Double] = js.undefined
       
@@ -75,7 +77,7 @@ object mod {
         
         inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
         
-        inline def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+        inline def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = StObject.set(x, "attributes", js.Array(value*))
         
         inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
         
@@ -85,11 +87,13 @@ object mod {
         
         inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
         
-        inline def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+        inline def setInclude(
+          value: (js.Array[(Model[Any, Any, Any]) | IncludeOptions]) | (Model[Any, Any, Any]) | IncludeOptions
+        ): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
         
         inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
         
-        inline def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value :_*))
+        inline def setIncludeVarargs(value: ((Model[Any, Any, Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value*))
         
         inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
@@ -107,7 +111,7 @@ object mod {
         
         inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
         
-        inline def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value :_*))
+        inline def setWhereVarargs(value: (col | and | or | String)*): Self = StObject.set(x, "where", js.Array(value*))
       }
     }
     
@@ -184,7 +188,7 @@ object mod {
       }
     }
     
-    type WithPaginationModel[MethodName /* <: String */, Model, ModelInst, ModelAttrs] = Model & typings.sequelizeCursorPagination.sequelizeCursorPaginationStrings.WithPaginationModel & TopLevel[js.Any]
+    type WithPaginationModel[MethodName /* <: String */, Model, ModelInst, ModelAttrs] = Model & typings.sequelizeCursorPagination.sequelizeCursorPaginationStrings.WithPaginationModel & TopLevel[Any]
     
     trait WithPaginationOptions[MethodName /* <: String */] extends StObject {
       

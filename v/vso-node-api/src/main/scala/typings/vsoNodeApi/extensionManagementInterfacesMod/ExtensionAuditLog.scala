@@ -32,7 +32,7 @@ object ExtensionAuditLog {
     
     inline def setEntries(value: js.Array[ExtensionAuditLogEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: ExtensionAuditLogEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: ExtensionAuditLogEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     

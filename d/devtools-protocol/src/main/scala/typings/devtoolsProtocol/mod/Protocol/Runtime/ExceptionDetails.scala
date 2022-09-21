@@ -23,6 +23,13 @@ trait ExceptionDetails extends StObject {
   var exceptionId: integer
   
   /**
+    * Dictionary with entries of meta data that the client associated
+    * with this exception, such as information about associated network
+    * requests, etc.
+    */
+  var exceptionMetaData: js.UndefOr[Any] = js.undefined
+  
+  /**
     * Identifier of the context where exception happened.
     */
   var executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
@@ -66,6 +73,10 @@ object ExceptionDetails {
     inline def setException(value: RemoteObject): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
     inline def setExceptionId(value: integer): Self = StObject.set(x, "exceptionId", value.asInstanceOf[js.Any])
+    
+    inline def setExceptionMetaData(value: Any): Self = StObject.set(x, "exceptionMetaData", value.asInstanceOf[js.Any])
+    
+    inline def setExceptionMetaDataUndefined: Self = StObject.set(x, "exceptionMetaData", js.undefined)
     
     inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     

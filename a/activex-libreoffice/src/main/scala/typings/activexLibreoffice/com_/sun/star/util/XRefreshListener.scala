@@ -20,7 +20,7 @@ object XRefreshListener {
   inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refreshed: EventObject => Unit,
     release: () => Unit
   ): XRefreshListener = {

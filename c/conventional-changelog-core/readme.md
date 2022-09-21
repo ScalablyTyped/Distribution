@@ -1,7 +1,7 @@
 
 # Scala.js typings for conventional-changelog-core
 
-Typings are for version 4.1
+Typings are for version 4.2
 
 ## Library description:
 conventional-changelog core
@@ -10,10 +10,10 @@ conventional-changelog core
 | ------------------ | :-------------: |
 | Full name          | conventional-changelog-core |
 | Keywords           | conventional-changelog, conventional, changelog, log |
-| # releases         | 19 |
-| # dependents       | 52 |
-| # downloads        | 61952715 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 8272260.0 |
+| # stars            | 6435.0 |
 
 ## Links
 - [Homepage](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-core#readme)

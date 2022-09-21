@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new SharedIniFileCredentials object.
   */
-class SharedIniFileCredentials ()
+open class SharedIniFileCredentials ()
   extends typings.awsSdk.mod.SharedIniFileCredentials {
   def this(options: SharedIniFileCredentialsOptions) = this()
 }

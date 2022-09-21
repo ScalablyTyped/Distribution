@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of comment objects that are part of the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 trait CommentCollectionLoadOptions extends StObject {
@@ -19,73 +19,73 @@ trait CommentCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the email of the comment's author.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var authorEmail: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the name of the comment's author.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var authorName: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The comment's content. The string is plain text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the content type of the comment.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var contentType: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Gets the creation time of the comment. Returns `null` if the comment was converted from a note, since the comment does not have a creation date.
     *
-    * For EACH ITEM in the collection: Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var creationDate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies the comment identifier.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the entities (e.g., people) that are mentioned in comments.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var mentions: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: The comment thread status. A value of `true` means that the comment thread is resolved.
     *
-    * For EACH ITEM in the collection: The comment thread status. A value of "true" means the comment thread is resolved.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var resolved: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
     *
+    * @remarks
     * [Api set: ExcelApi 1.11]
     */
   var richContent: js.UndefOr[Boolean] = js.undefined

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "google-p12-pem" : "3.0.3"
+      "google-p12-pem" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "google-p12-pem" : "3.0.3"
+      "google-p12-pem" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

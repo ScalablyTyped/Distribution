@@ -54,7 +54,7 @@ object numericMod {
   
   @JSImport("rbx/elements/other/numeric", "Numeric")
   @js.native
-  val Numeric: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Numeric: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait NumericProps extends StObject {

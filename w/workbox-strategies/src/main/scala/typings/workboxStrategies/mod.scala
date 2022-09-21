@@ -13,35 +13,35 @@ object mod {
   
   @JSImport("workbox-strategies", "CacheFirst")
   @js.native
-  class CacheFirst ()
+  open class CacheFirst ()
     extends typings.workboxStrategies.cacheFirstMod.CacheFirst {
     def this(options: CacheFirstOptions) = this()
   }
   
   @JSImport("workbox-strategies", "CacheOnly")
   @js.native
-  class CacheOnly ()
+  open class CacheOnly ()
     extends typings.workboxStrategies.cacheOnlyMod.CacheOnly {
     def this(options: CacheOnlyOptions) = this()
   }
   
   @JSImport("workbox-strategies", "NetworkFirst")
   @js.native
-  class NetworkFirst ()
+  open class NetworkFirst ()
     extends typings.workboxStrategies.networkFirstMod.NetworkFirst {
     def this(options: NetworkFirstOptions) = this()
   }
   
   @JSImport("workbox-strategies", "NetworkOnly")
   @js.native
-  class NetworkOnly ()
+  open class NetworkOnly ()
     extends typings.workboxStrategies.networkOnlyMod.NetworkOnly {
     def this(options: NetworkOnlyOptions) = this()
   }
   
   @JSImport("workbox-strategies", "StaleWhileRevalidate")
   @js.native
-  class StaleWhileRevalidate ()
+  open class StaleWhileRevalidate ()
     extends typings.workboxStrategies.staleWhileRevalidateMod.StaleWhileRevalidate {
     def this(options: StaleWhileRevalidateOptions) = this()
   }

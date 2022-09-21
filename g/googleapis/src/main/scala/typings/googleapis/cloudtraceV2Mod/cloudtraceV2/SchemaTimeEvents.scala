@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A collection of `TimeEvent`s. A `TimeEvent` is a time-stamped annotation on
-  * the span, consisting of either user-supplied key:value pairs, or details of
-  * a message sent/received between Spans.
-  */
 trait SchemaTimeEvents extends StObject {
   
   /**
-    * The number of dropped annotations in all the included time events. If the
-    * value is 0, then no annotations were dropped.
+    * The number of dropped annotations in all the included time events. If the value is 0, then no annotations were dropped.
     */
-  var droppedAnnotationsCount: js.UndefOr[Double] = js.undefined
+  var droppedAnnotationsCount: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The number of dropped message events in all the included time events. If
-    * the value is 0, then no message events were dropped.
+    * The number of dropped message events in all the included time events. If the value is 0, then no message events were dropped.
     */
-  var droppedMessageEventsCount: js.UndefOr[Double] = js.undefined
+  var droppedMessageEventsCount: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * A collection of `TimeEvent`s.
@@ -39,9 +32,13 @@ object SchemaTimeEvents {
     
     inline def setDroppedAnnotationsCount(value: Double): Self = StObject.set(x, "droppedAnnotationsCount", value.asInstanceOf[js.Any])
     
+    inline def setDroppedAnnotationsCountNull: Self = StObject.set(x, "droppedAnnotationsCount", null)
+    
     inline def setDroppedAnnotationsCountUndefined: Self = StObject.set(x, "droppedAnnotationsCount", js.undefined)
     
     inline def setDroppedMessageEventsCount(value: Double): Self = StObject.set(x, "droppedMessageEventsCount", value.asInstanceOf[js.Any])
+    
+    inline def setDroppedMessageEventsCountNull: Self = StObject.set(x, "droppedMessageEventsCount", null)
     
     inline def setDroppedMessageEventsCountUndefined: Self = StObject.set(x, "droppedMessageEventsCount", js.undefined)
     
@@ -49,6 +46,6 @@ object SchemaTimeEvents {
     
     inline def setTimeEventUndefined: Self = StObject.set(x, "timeEvent", js.undefined)
     
-    inline def setTimeEventVarargs(value: SchemaTimeEvent*): Self = StObject.set(x, "timeEvent", js.Array(value :_*))
+    inline def setTimeEventVarargs(value: SchemaTimeEvent*): Self = StObject.set(x, "timeEvent", js.Array(value*))
   }
 }

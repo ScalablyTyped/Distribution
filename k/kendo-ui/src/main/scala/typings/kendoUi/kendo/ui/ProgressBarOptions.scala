@@ -8,6 +8,8 @@ trait ProgressBarOptions extends StObject {
   
   var animation: js.UndefOr[Boolean | ProgressBarAnimation] = js.undefined
   
+  var ariaRole: js.UndefOr[Boolean] = js.undefined
+  
   var change: js.UndefOr[js.Function1[/* e */ ProgressBarChangeEvent, Unit]] = js.undefined
   
   var chunkCount: js.UndefOr[Double] = js.undefined
@@ -15,6 +17,10 @@ trait ProgressBarOptions extends StObject {
   var complete: js.UndefOr[js.Function1[/* e */ ProgressBarCompleteEvent, Unit]] = js.undefined
   
   var enable: js.UndefOr[Boolean] = js.undefined
+  
+  var label: js.UndefOr[String] = js.undefined
+  
+  var labelId: js.UndefOr[String] = js.undefined
   
   var max: js.UndefOr[Double] = js.undefined
   
@@ -45,6 +51,10 @@ object ProgressBarOptions {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
+    inline def setAriaRole(value: Boolean): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRoleUndefined: Self = StObject.set(x, "ariaRole", js.undefined)
+    
     inline def setChange(value: /* e */ ProgressBarChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
@@ -60,6 +70,14 @@ object ProgressBarOptions {
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
+    
+    inline def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.hapi.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.catbox.mod.ClientOptions
 import typings.hapi.anon.Concurrent
 import typings.hapi.anon.Encoding
@@ -8,6 +9,9 @@ import typings.hapi.anon.Log
 import typings.hapi.anon.Parser
 import typings.hapi.hapiBooleans.`false`
 import typings.mimos.mod.MimosOptions
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,7 +93,15 @@ trait ServerOptions extends StObject {
     * If the listener needs to be manually started, set autoListen to false.
     * If the listener uses TLS, set tls to true.
     */
-  var listener: js.UndefOr[typings.node.httpMod.Server] = js.undefined
+  var listener: js.UndefOr[
+    typings.node.httpMod.Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]
+  ] = js.undefined
   
   /**
     * Default value: { sampleInterval: 0 }.
@@ -166,7 +178,15 @@ trait ServerOptions extends StObject {
     * Default value: none.
     * Used to create an HTTPS connection. The tls object is passed unchanged to the node HTTPS server as described in the node HTTPS documentation.
     */
-  var tls: js.UndefOr[Boolean | typings.node.httpsMod.ServerOptions] = js.undefined
+  var tls: js.UndefOr[
+    Boolean | (typings.node.httpsMod.ServerOptions[
+      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      ]
+    ])
+  ] = js.undefined
   
   /**
     * Default value: constructed from runtime server information.
@@ -199,7 +219,7 @@ object ServerOptions {
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    inline def setCacheVarargs(value: ServerOptionsCache*): Self = StObject.set(x, "cache", js.Array(value :_*))
+    inline def setCacheVarargs(value: ServerOptionsCache*): Self = StObject.set(x, "cache", js.Array(value*))
     
     inline def setCompression(value: Boolean | ServerOptionsCompression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
@@ -213,7 +233,15 @@ object ServerOptions {
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setListener(value: typings.node.httpMod.Server): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+    inline def setListener(
+      value: typings.node.httpMod.Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     
@@ -249,7 +277,15 @@ object ServerOptions {
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    inline def setTls(value: Boolean | typings.node.httpsMod.ServerOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(
+      value: Boolean | (typings.node.httpsMod.ServerOptions[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+    ): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
     inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
     

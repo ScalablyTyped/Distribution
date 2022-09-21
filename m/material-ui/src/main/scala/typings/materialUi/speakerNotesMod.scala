@@ -10,10 +10,10 @@ object speakerNotesMod {
   
   @JSImport("material-ui/svg-icons/action/speaker-notes", JSImport.Default)
   @js.native
-  class default () extends ActionSpeakerNotes
+  open class default () extends ActionSpeakerNotes
   
   @JSImport("material-ui/svg-icons/action/speaker-notes", "ActionSpeakerNotes")
   @js.native
-  class ActionSpeakerNotes ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSpeakerNotes ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

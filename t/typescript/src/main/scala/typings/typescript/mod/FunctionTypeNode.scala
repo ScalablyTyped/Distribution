@@ -15,4 +15,8 @@ trait FunctionTypeNode
   
   @JSName("kind")
   val kind_FunctionTypeNode: FunctionType = js.native
+  
+  /** @deprecated A function type cannot have modifiers */
+  @JSName("modifiers")
+  val modifiers_FunctionTypeNode: js.UndefOr[NodeArray[Modifier]] = js.native
 }

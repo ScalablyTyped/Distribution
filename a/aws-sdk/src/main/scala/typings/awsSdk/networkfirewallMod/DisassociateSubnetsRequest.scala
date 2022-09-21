@@ -45,7 +45,7 @@ object DisassociateSubnetsRequest {
     
     inline def setSubnetIds(value: AzSubnets): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    inline def setSubnetIdsVarargs(value: AzSubnet*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: AzSubnet*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
     

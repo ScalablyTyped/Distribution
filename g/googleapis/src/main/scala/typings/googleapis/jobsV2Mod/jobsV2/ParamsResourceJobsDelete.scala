@@ -1,9 +1,5 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,21 +9,12 @@ trait ParamsResourceJobsDelete
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Deprecated. This field is not working anymore.  Optional.  If set to
-    * true, this call waits for all processing steps to complete before the job
-    * is cleaned up. Otherwise, the call returns while some steps are still
-    * taking place asynchronously, hence faster.
+    * Deprecated. This field is not working anymore. Optional. If set to true, this call waits for all processing steps to complete before the job is cleaned up. Otherwise, the call returns while some steps are still taking place asynchronously, hence faster.
     */
   var disableFastProcess: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Required.  The resource name of the job to be deleted, such as
-    * "jobs/11111111".
+    * Required. The resource name of the job to be deleted, such as "jobs/11111111".
     */
   var name: js.UndefOr[String] = js.undefined
 }
@@ -39,10 +26,6 @@ object ParamsResourceJobsDelete {
   }
   
   extension [Self <: ParamsResourceJobsDelete](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDisableFastProcess(value: Boolean): Self = StObject.set(x, "disableFastProcess", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetUserResponse extends StObject {
   
   /**
-    *  This response parameter is no longer supported. It provides information only about SMS MFA configurations. It doesn't provide information about TOTP software token MFA configurations. To look up information about either type of MFA configuration, use UserMFASettingList instead.
+    *  This response parameter is no longer supported. It provides information only about SMS MFA configurations. It doesn't provide information about time-based one-time password (TOTP) software token MFA configurations. To look up information about either type of MFA configuration, use UserMFASettingList instead.
     */
   var MFAOptions: js.UndefOr[MFAOptionListType] = js.undefined
   
@@ -22,12 +22,12 @@ trait GetUserResponse extends StObject {
   var UserAttributes: AttributeListType
   
   /**
-    * The MFA options that are enabled for the user. The possible values in this list are SMS_MFA and SOFTWARE_TOKEN_MFA.
+    * The MFA options that are activated for the user. The possible values in this list are SMS_MFA and SOFTWARE_TOKEN_MFA.
     */
   var UserMFASettingList: js.UndefOr[UserMFASettingListType] = js.undefined
   
   /**
-    * The user name of the user you wish to retrieve from the get user request.
+    * The user name of the user you want to retrieve from the get user request.
     */
   var Username: UsernameType
 }
@@ -44,7 +44,7 @@ object GetUserResponse {
     
     inline def setMFAOptionsUndefined: Self = StObject.set(x, "MFAOptions", js.undefined)
     
-    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
+    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value*))
     
     inline def setPreferredMfaSetting(value: StringType): Self = StObject.set(x, "PreferredMfaSetting", value.asInstanceOf[js.Any])
     
@@ -52,13 +52,13 @@ object GetUserResponse {
     
     inline def setUserAttributes(value: AttributeListType): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
     
-    inline def setUserAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "UserAttributes", js.Array(value :_*))
+    inline def setUserAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "UserAttributes", js.Array(value*))
     
     inline def setUserMFASettingList(value: UserMFASettingListType): Self = StObject.set(x, "UserMFASettingList", value.asInstanceOf[js.Any])
     
     inline def setUserMFASettingListUndefined: Self = StObject.set(x, "UserMFASettingList", js.undefined)
     
-    inline def setUserMFASettingListVarargs(value: StringType*): Self = StObject.set(x, "UserMFASettingList", js.Array(value :_*))
+    inline def setUserMFASettingListVarargs(value: StringType*): Self = StObject.set(x, "UserMFASettingList", js.Array(value*))
     
     inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }

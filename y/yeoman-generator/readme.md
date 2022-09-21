@@ -1,7 +1,7 @@
 
 # Scala.js typings for yeoman-generator
 
-Typings are for version 4.11
+Typings are for version 5.2
 
 ## Library description:
 Rails-inspired generator system that provides scaffolding for your apps
@@ -10,10 +10,10 @@ Rails-inspired generator system that provides scaffolding for your apps
 | ------------------ | :-------------: |
 | Full name          | yeoman-generator |
 | Keywords           | development, dev, build, tool, cli, scaffold, scaffolding, generate, generator, yeoman, app |
-| # releases         | 25 |
-| # dependents       | 11117 |
-| # downloads        | 22587855 |
-| # stars            | 52 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 3169368.0 |
+| # stars            | 1097.0 |
 
 ## Links
 - [Homepage](http://yeoman.io)

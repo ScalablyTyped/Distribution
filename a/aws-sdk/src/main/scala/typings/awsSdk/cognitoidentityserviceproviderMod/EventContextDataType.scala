@@ -22,7 +22,7 @@ trait EventContextDataType extends StObject {
   var DeviceName: js.UndefOr[StringType] = js.undefined
   
   /**
-    * The user's IP address.
+    * The source IP address of your user's device.
     */
   var IpAddress: js.UndefOr[StringType] = js.undefined
   

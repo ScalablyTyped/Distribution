@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.JustifyContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait JustifyContentProps extends StObject {
   
-  val justifyContent: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any
-    ]
-  ] = js.undefined
+  val justifyContent: js.UndefOr[ResponsiveValue[JustifyContent]] = js.undefined
 }
 object JustifyContentProps {
   
@@ -21,16 +18,10 @@ object JustifyContentProps {
   
   extension [Self <: JustifyContentProps](x: Self) {
     
-    inline def setJustifyContent(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any
-        ]
-    ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: ResponsiveValue[JustifyContent]): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
     inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     
-    inline def setJustifyContentVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any)*
-    ): Self = StObject.set(x, "justifyContent", js.Array(value :_*))
+    inline def setJustifyContentVarargs(value: JustifyContent*): Self = StObject.set(x, "justifyContent", js.Array(value*))
   }
 }

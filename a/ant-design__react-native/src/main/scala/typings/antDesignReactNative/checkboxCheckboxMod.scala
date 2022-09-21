@@ -1,56 +1,31 @@
 package typings.antDesignReactNative
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignReactNative.checkboxPropsTypeMod.CheckboxPropsType
 import typings.antDesignReactNative.checkboxStyleMod.CheckboxStyle
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
-import typings.react.mod.Component
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
+import typings.reactNative.mod.AccessibilityProps
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TextStyle
+import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object checkboxCheckboxMod {
+object checkboxCheckboxMod extends Shortcut {
   
   @JSImport("@ant-design/react-native/lib/checkbox/Checkbox", JSImport.Default)
   @js.native
-  class default protected () extends Checkbox {
-    def this(props: CheckboxProps, context: js.Any) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("@ant-design/react-native/lib/checkbox/Checkbox", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/react-native/lib/checkbox/Checkbox", "default.AgreeItem")
-    @js.native
-    def AgreeItem: js.Any = js.native
-    inline def AgreeItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/react-native/lib/checkbox/Checkbox", "default.CheckboxItem")
-    @js.native
-    def CheckboxItem: js.Any = js.native
-    inline def CheckboxItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
-  }
-  
-  @js.native
-  trait Checkbox
-    extends Component[CheckboxProps, js.Any, js.Any] {
-    
-    @JSName("UNSAFE_componentWillReceiveProps")
-    def UNSAFE_componentWillReceiveProps_MCheckbox(nextProps: CheckboxProps): Unit = js.native
-    
-    def handleClick(): Unit = js.native
-  }
+  val default: ForwardRefExoticComponent[CheckboxProps & RefAttributes[Any]] = js.native
   
   trait CheckboxProps
     extends StObject
        with CheckboxPropsType
-       with WithThemeStyles[CheckboxStyle] {
+       with WithThemeStyles[CheckboxStyle]
+       with AccessibilityProps {
     
-    var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object CheckboxProps {
     
@@ -61,11 +36,33 @@ object checkboxCheckboxMod {
     
     extension [Self <: CheckboxProps](x: Self) {
       
-      inline def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleNull: Self = StObject.set(x, "style", null)
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
+  
+  trait RefCheckboxProps extends StObject {
+    
+    def onPress(): Unit
+  }
+  object RefCheckboxProps {
+    
+    inline def apply(onPress: () => Unit): RefCheckboxProps = {
+      val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction0(onPress))
+      __obj.asInstanceOf[RefCheckboxProps]
+    }
+    
+    extension [Self <: RefCheckboxProps](x: Self) {
+      
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    }
+  }
+  
+  type _To = ForwardRefExoticComponent[CheckboxProps & RefAttributes[Any]]
+  
+  /* This means you don't have to write `default`, but can instead just say `checkboxCheckboxMod.foo` */
+  override def _to: ForwardRefExoticComponent[CheckboxProps & RefAttributes[Any]] = default
 }

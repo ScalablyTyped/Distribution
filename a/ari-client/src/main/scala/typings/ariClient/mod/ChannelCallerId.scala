@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ object ChannelCallerId {
     caller_presentation: Double,
     caller_presentation_txt: String,
     channel: Channel,
-    timestamp: Date,
+    timestamp: js.Date,
     `type`: String
   ): ChannelCallerId = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], caller_presentation = caller_presentation.asInstanceOf[js.Any], caller_presentation_txt = caller_presentation_txt.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])

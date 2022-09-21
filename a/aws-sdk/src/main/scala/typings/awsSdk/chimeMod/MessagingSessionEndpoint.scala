@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessagingSessionEndpoint extends StObject {
   
   /**
-    * The URL of a meeting session endpoint.
+    * The endpoint to which you establish a websocket connection.
     */
   var Url: js.UndefOr[UrlType] = js.undefined
 }

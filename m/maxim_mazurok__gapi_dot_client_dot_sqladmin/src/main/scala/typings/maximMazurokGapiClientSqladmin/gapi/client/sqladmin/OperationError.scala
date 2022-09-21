@@ -9,7 +9,7 @@ trait OperationError extends StObject {
   /** Identifies the specific error that occurred. */
   var code: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#operationError*. */
+  /** This is always `sql#operationError`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Additional information about the error encountered. */

@@ -10,5 +10,5 @@ trait Expression
      with Node
      with ForInitializer {
   
-  var _expressionBrand: js.Any = js.native
+  var _expressionBrand: Any = js.native
 }

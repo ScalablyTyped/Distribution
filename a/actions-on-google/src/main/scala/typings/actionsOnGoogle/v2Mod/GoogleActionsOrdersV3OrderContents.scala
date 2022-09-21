@@ -26,6 +26,6 @@ object GoogleActionsOrdersV3OrderContents {
     
     inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    inline def setLineItemsVarargs(value: GoogleActionsOrdersV3LineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: GoogleActionsOrdersV3LineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
   }
 }

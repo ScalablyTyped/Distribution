@@ -14,32 +14,32 @@ trait SchemaOrderReportTransaction extends StObject {
   /**
     * The date the disbursement was created, in ISO 8601 format.
     */
-  var disbursementCreationDate: js.UndefOr[String] = js.undefined
+  var disbursementCreationDate: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The date the disbursement was initiated, in ISO 8601 format.
     */
-  var disbursementDate: js.UndefOr[String] = js.undefined
+  var disbursementDate: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the disbursement.
     */
-  var disbursementId: js.UndefOr[String] = js.undefined
+  var disbursementId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the managing account.
     */
-  var merchantId: js.UndefOr[String] = js.undefined
+  var merchantId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Merchant-provided ID of the order.
     */
-  var merchantOrderId: js.UndefOr[String] = js.undefined
+  var merchantOrderId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the order.
     */
-  var orderId: js.UndefOr[String] = js.undefined
+  var orderId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Total amount for the items.
@@ -49,7 +49,7 @@ trait SchemaOrderReportTransaction extends StObject {
   /**
     * The date of the transaction, in ISO 8601 format.
     */
-  var transactionDate: js.UndefOr[String] = js.undefined
+  var transactionDate: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrderReportTransaction {
   
@@ -66,25 +66,37 @@ object SchemaOrderReportTransaction {
     
     inline def setDisbursementCreationDate(value: String): Self = StObject.set(x, "disbursementCreationDate", value.asInstanceOf[js.Any])
     
+    inline def setDisbursementCreationDateNull: Self = StObject.set(x, "disbursementCreationDate", null)
+    
     inline def setDisbursementCreationDateUndefined: Self = StObject.set(x, "disbursementCreationDate", js.undefined)
     
     inline def setDisbursementDate(value: String): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
+    
+    inline def setDisbursementDateNull: Self = StObject.set(x, "disbursementDate", null)
     
     inline def setDisbursementDateUndefined: Self = StObject.set(x, "disbursementDate", js.undefined)
     
     inline def setDisbursementId(value: String): Self = StObject.set(x, "disbursementId", value.asInstanceOf[js.Any])
     
+    inline def setDisbursementIdNull: Self = StObject.set(x, "disbursementId", null)
+    
     inline def setDisbursementIdUndefined: Self = StObject.set(x, "disbursementId", js.undefined)
     
     inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    
+    inline def setMerchantIdNull: Self = StObject.set(x, "merchantId", null)
     
     inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     inline def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
     
+    inline def setMerchantOrderIdNull: Self = StObject.set(x, "merchantOrderId", null)
+    
     inline def setMerchantOrderIdUndefined: Self = StObject.set(x, "merchantOrderId", js.undefined)
     
     inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    
+    inline def setOrderIdNull: Self = StObject.set(x, "orderId", null)
     
     inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
@@ -93,6 +105,8 @@ object SchemaOrderReportTransaction {
     inline def setProductAmountUndefined: Self = StObject.set(x, "productAmount", js.undefined)
     
     inline def setTransactionDate(value: String): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionDateNull: Self = StObject.set(x, "transactionDate", null)
     
     inline def setTransactionDateUndefined: Self = StObject.set(x, "transactionDate", js.undefined)
   }

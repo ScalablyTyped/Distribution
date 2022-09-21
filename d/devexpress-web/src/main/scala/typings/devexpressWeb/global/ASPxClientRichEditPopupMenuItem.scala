@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRichEditPopupMenuItem")
 @js.native
-class ASPxClientRichEditPopupMenuItem ()
+open class ASPxClientRichEditPopupMenuItem ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRichEditPopupMenuItem {
   

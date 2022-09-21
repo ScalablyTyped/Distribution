@@ -1,6 +1,5 @@
 package typings.nodemailer
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object cookiesMod {
   /** Creates a biskviit cookie jar for managing cookie values in memory */
   @JSImport("nodemailer/lib/fetch/cookies", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Cookies {
     def this(options: Options) = this()
@@ -62,7 +61,7 @@ object cookiesMod {
     
     var domain: js.UndefOr[String] = js.undefined
     
-    var expires: js.UndefOr[Date] = js.undefined
+    var expires: js.UndefOr[js.Date] = js.undefined
     
     var httponly: js.UndefOr[Boolean] = js.undefined
     
@@ -87,7 +86,7 @@ object cookiesMod {
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
@@ -173,7 +172,7 @@ object cookiesMod {
       
       inline def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      inline def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+      inline def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value*))
       
       inline def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

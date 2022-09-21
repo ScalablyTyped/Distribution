@@ -1,36 +1,43 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
 import typings.react.mod.Component
-import typings.reactSketchapp.propsMod.PathProps
+import typings.reactSketchapp.anon.FillRule
+import typings.reactSketchapp.anon.Points
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polylineMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/Polyline", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg/Polyline", "Polyline")
   @js.native
-  class default ()
-    extends Component[PolylineProps, js.Object, js.Any]
-  
-  type Polyline = Component[PolylineProps, js.Object, js.Any]
-  
-  trait PolylineProps
-    extends StObject
-       with PathProps {
-    
-    var points: String
+  open class Polyline protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
-  object PolylineProps {
+  /* static members */
+  object Polyline {
     
-    inline def apply(points: String): PolylineProps = {
-      val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PolylineProps]
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Polyline", "Polyline")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: PolylineProps](x: Self) {
-      
-      inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Polyline", "Polyline.defaultProps")
+    @js.native
+    def defaultProps: Points = js.native
+    inline def defaultProps_=(x: Points): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Svg/Polyline", "Polyline.propTypes")
+    @js.native
+    def propTypes: FillRule = js.native
+    inline def propTypes_=(x: FillRule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  type Props = InferProps[FillRule]
 }

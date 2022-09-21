@@ -3,8 +3,7 @@ package typings.dialogflowFulfillment
 import typings.dialogflowFulfillment.mod.Platforms
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,22 +83,45 @@ object anon {
   
   trait Request extends StObject {
     
-    var request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+    var request: Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]
     
-    var response: Response_[js.Any]
+    var response: Response_[Any, Record[String, Any]]
   }
   object Request {
     
-    inline def apply(request: Request_[ParamsDictionary, js.Any, js.Any, Query], response: Response_[js.Any]): Request = {
+    inline def apply(
+      request: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      response: Response_[Any, Record[String, Any]]
+    ): Request = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
     extension [Self <: Request](x: Self) {
       
-      inline def setRequest(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(
+        value: Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]
+      ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      inline def setResponse(value: Response_[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response_[Any, Record[String, Any]]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   

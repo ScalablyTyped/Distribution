@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "PropertyWrite")
 @js.native
-class PropertyWrite protected ()
-  extends typings.angularCompiler.compilerMod.PropertyWrite {
+open class PropertyWrite protected () extends ASTWithName {
   def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    nameSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    receiver: typings.angularCompiler.astMod.AST,
+    span: ParseSpan,
+    sourceSpan: AbsoluteSourceSpan,
+    nameSpan: AbsoluteSourceSpan,
+    receiver: AST,
     name: String,
-    value: typings.angularCompiler.astMod.AST
+    value: AST
   ) = this()
+  
+  var name: String = js.native
+  
+  var receiver: AST = js.native
+  
+  var value: AST = js.native
 }

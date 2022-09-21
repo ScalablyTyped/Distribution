@@ -27,7 +27,7 @@ trait AwsEc2SecurityGroupDetails extends StObject {
   var IpPermissionsEgress: js.UndefOr[AwsEc2SecurityGroupIpPermissionList] = js.undefined
   
   /**
-    * The AWS account ID of the owner of the security group.
+    * The Amazon Web Services account ID of the owner of the security group.
     */
   var OwnerId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -59,11 +59,11 @@ object AwsEc2SecurityGroupDetails {
     
     inline def setIpPermissionsEgressUndefined: Self = StObject.set(x, "IpPermissionsEgress", js.undefined)
     
-    inline def setIpPermissionsEgressVarargs(value: AwsEc2SecurityGroupIpPermission*): Self = StObject.set(x, "IpPermissionsEgress", js.Array(value :_*))
+    inline def setIpPermissionsEgressVarargs(value: AwsEc2SecurityGroupIpPermission*): Self = StObject.set(x, "IpPermissionsEgress", js.Array(value*))
     
     inline def setIpPermissionsUndefined: Self = StObject.set(x, "IpPermissions", js.undefined)
     
-    inline def setIpPermissionsVarargs(value: AwsEc2SecurityGroupIpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value :_*))
+    inline def setIpPermissionsVarargs(value: AwsEc2SecurityGroupIpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value*))
     
     inline def setOwnerId(value: NonEmptyString): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     

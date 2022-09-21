@@ -10,10 +10,10 @@ object zoomOutMod {
   
   @JSImport("material-ui/svg-icons/action/zoom-out", JSImport.Default)
   @js.native
-  class default () extends ActionZoomOut
+  open class default () extends ActionZoomOut
   
   @JSImport("material-ui/svg-icons/action/zoom-out", "ActionZoomOut")
   @js.native
-  class ActionZoomOut ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionZoomOut ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

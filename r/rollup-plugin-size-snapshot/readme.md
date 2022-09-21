@@ -10,10 +10,10 @@ Typings are for version 0.10
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-size-snapshot |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 48 |
-| # downloads        | 811945 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 37989.666666666664 |
+| # stars            | 157.0 |
 
 ## Links
 - [Homepage](https://github.com/TrySound/rollup-plugin-size-snapshot#readme)

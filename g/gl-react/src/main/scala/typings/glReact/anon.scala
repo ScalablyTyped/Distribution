@@ -66,39 +66,39 @@ object anon {
   
   trait GlParent extends StObject {
     
-    var glParent: Surface[js.Any] | typings.glReact.mod.Node
+    var glParent: Surface[Any] | typings.glReact.mod.Node
     
-    var glSurface: Surface[js.Any]
+    var glSurface: Surface[Any]
   }
   object GlParent {
     
-    inline def apply(glParent: Surface[js.Any] | typings.glReact.mod.Node, glSurface: Surface[js.Any]): GlParent = {
+    inline def apply(glParent: Surface[Any] | typings.glReact.mod.Node, glSurface: Surface[Any]): GlParent = {
       val __obj = js.Dynamic.literal(glParent = glParent.asInstanceOf[js.Any], glSurface = glSurface.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlParent]
     }
     
     extension [Self <: GlParent](x: Self) {
       
-      inline def setGlParent(value: Surface[js.Any] | typings.glReact.mod.Node): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
+      inline def setGlParent(value: Surface[Any] | typings.glReact.mod.Node): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
       
-      inline def setGlSurface(value: Surface[js.Any]): Self = StObject.set(x, "glSurface", value.asInstanceOf[js.Any])
+      inline def setGlSurface(value: Surface[Any]): Self = StObject.set(x, "glSurface", value.asInstanceOf[js.Any])
     }
   }
   
   trait GlParentAny extends StObject {
     
-    var glParent: js.Any
+    var glParent: Any
   }
   object GlParentAny {
     
-    inline def apply(glParent: js.Any): GlParentAny = {
+    inline def apply(glParent: Any): GlParentAny = {
       val __obj = js.Dynamic.literal(glParent = glParent.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlParentAny]
     }
     
     extension [Self <: GlParentAny](x: Self) {
       
-      inline def setGlParent(value: js.Any): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
+      inline def setGlParent(value: Any): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,22 +121,22 @@ object anon {
   
   trait GlSurface extends StObject {
     
-    var glParent: js.Any
+    var glParent: Any
     
-    var glSurface: js.Any
+    var glSurface: Any
   }
   object GlSurface {
     
-    inline def apply(glParent: js.Any, glSurface: js.Any): GlSurface = {
+    inline def apply(glParent: Any, glSurface: Any): GlSurface = {
       val __obj = js.Dynamic.literal(glParent = glParent.asInstanceOf[js.Any], glSurface = glSurface.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlSurface]
     }
     
     extension [Self <: GlSurface](x: Self) {
       
-      inline def setGlParent(value: js.Any): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
+      inline def setGlParent(value: Any): Self = StObject.set(x, "glParent", value.asInstanceOf[js.Any])
       
-      inline def setGlSurface(value: js.Any): Self = StObject.set(x, "glSurface", value.asInstanceOf[js.Any])
+      inline def setGlSurface(value: Any): Self = StObject.set(x, "glSurface", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,13 +164,13 @@ object anon {
   
   trait Obj extends StObject {
     
-    var obj: js.Any
+    var obj: Any
     
     var `type`: String
   }
   object Obj {
     
-    inline def apply(obj: js.Any, `type`: String): Obj = {
+    inline def apply(obj: Any, `type`: String): Obj = {
       val __obj = js.Dynamic.literal(obj = obj.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Obj]
@@ -178,7 +178,7 @@ object anon {
     
     extension [Self <: Obj](x: Self) {
       
-      inline def setObj(value: js.Any): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+      inline def setObj(value: Any): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -186,7 +186,7 @@ object anon {
   
   trait Ratio extends StObject {
     
-    var obj: js.Any
+    var obj: Any
     
     var ratio: Boolean
     
@@ -194,7 +194,7 @@ object anon {
   }
   object Ratio {
     
-    inline def apply(obj: js.Any, ratio: Boolean, `type`: String): Ratio = {
+    inline def apply(obj: Any, ratio: Boolean, `type`: String): Ratio = {
       val __obj = js.Dynamic.literal(obj = obj.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ratio]
@@ -202,7 +202,7 @@ object anon {
     
     extension [Self <: Ratio](x: Self) {
       
-      inline def setObj(value: js.Any): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+      inline def setObj(value: Any): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
       
       inline def setRatio(value: Boolean): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       

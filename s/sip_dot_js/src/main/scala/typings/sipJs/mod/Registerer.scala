@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Registerer")
 @js.native
-class Registerer protected ()
+open class Registerer protected ()
   extends typings.sipJs.apiMod.Registerer {
   /**
     * Constructs a new instance of the `Registerer` class.
@@ -26,18 +26,22 @@ object Registerer {
   
   @JSImport("sip.js", "Registerer.defaultExpires")
   @js.native
-  val defaultExpires: js.Any = js.native
+  val defaultExpires: Any = js.native
   
   /** Default registerer options. */
   @JSImport("sip.js", "Registerer.defaultOptions")
   @js.native
-  def defaultOptions: js.Any = js.native
-  inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+  def defaultOptions: Any = js.native
+  inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sip.js", "Registerer.defaultRefreshFrequency")
+  @js.native
+  val defaultRefreshFrequency: Any = js.native
   
   @JSImport("sip.js", "Registerer.newUUID")
   @js.native
-  def newUUID: js.Any = js.native
-  inline def newUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
+  def newUUID: Any = js.native
+  inline def newUUID_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
   
   /**
     * Strip properties with undefined values from options.
@@ -47,6 +51,6 @@ object Registerer {
     */
   @JSImport("sip.js", "Registerer.stripUndefinedProperties")
   @js.native
-  def stripUndefinedProperties: js.Any = js.native
-  inline def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
+  def stripUndefinedProperties: Any = js.native
+  inline def stripUndefinedProperties_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
 }

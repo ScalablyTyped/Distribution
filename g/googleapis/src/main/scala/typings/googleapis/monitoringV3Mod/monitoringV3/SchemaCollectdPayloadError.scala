@@ -4,27 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes the error status for payloads that were not written.
-  */
 trait SchemaCollectdPayloadError extends StObject {
   
   /**
-    * Records the error status for the payload. If this field is present, the
-    * partial errors for nested values won&#39;t be populated.
+    * Records the error status for the payload. If this field is present, the partial errors for nested values won't be populated.
     */
   var error: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
-    * The zero-based index in
-    * CreateCollectdTimeSeriesRequest.collectd_payloads.
+    * The zero-based index in CreateCollectdTimeSeriesRequest.collectd_payloads.
     */
-  var index: js.UndefOr[Double] = js.undefined
+  var index: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Records the error status for values that were not written due to an
-    * error.Failed payloads for which nothing is written will not include
-    * partial value errors.
+    * Records the error status for values that were not written due to an error.Failed payloads for which nothing is written will not include partial value errors.
     */
   var valueErrors: js.UndefOr[js.Array[SchemaCollectdValueError]] = js.undefined
 }
@@ -43,12 +36,14 @@ object SchemaCollectdPayloadError {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
+    inline def setIndexNull: Self = StObject.set(x, "index", null)
+    
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     inline def setValueErrors(value: js.Array[SchemaCollectdValueError]): Self = StObject.set(x, "valueErrors", value.asInstanceOf[js.Any])
     
     inline def setValueErrorsUndefined: Self = StObject.set(x, "valueErrors", js.undefined)
     
-    inline def setValueErrorsVarargs(value: SchemaCollectdValueError*): Self = StObject.set(x, "valueErrors", js.Array(value :_*))
+    inline def setValueErrorsVarargs(value: SchemaCollectdValueError*): Self = StObject.set(x, "valueErrors", js.Array(value*))
   }
 }

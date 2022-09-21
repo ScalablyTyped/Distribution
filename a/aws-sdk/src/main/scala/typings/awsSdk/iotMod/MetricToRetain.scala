@@ -12,7 +12,7 @@ trait MetricToRetain extends StObject {
   var metric: BehaviorMetric
   
   /**
-    * The dimension of a metric.
+    * The dimension of a metric. This can't be used with custom metrics.
     */
   var metricDimension: js.UndefOr[MetricDimension] = js.undefined
 }

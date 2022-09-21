@@ -8,7 +8,7 @@ object domainMod {
   
   @JSImport("postmark/dist/client/models/domains/Domain", "CreateDomainRequest")
   @js.native
-  class CreateDomainRequest protected () extends StObject {
+  open class CreateDomainRequest protected () extends StObject {
     def this(Name: String) = this()
     def this(Name: String, ReturnPathDomain: String) = this()
     
@@ -19,7 +19,7 @@ object domainMod {
   
   @JSImport("postmark/dist/client/models/domains/Domain", "UpdateDomainRequest")
   @js.native
-  class UpdateDomainRequest protected () extends StObject {
+  open class UpdateDomainRequest protected () extends StObject {
     def this(ReturnPathDomain: String) = this()
     
     var ReturnPathDomain: js.UndefOr[String] = js.native
@@ -168,7 +168,7 @@ object domainMod {
       
       inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
       
-      inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }

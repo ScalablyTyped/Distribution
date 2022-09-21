@@ -14,22 +14,22 @@ trait DragStartEventUIParam extends StObject {
   /**
     * Gets a reference to the data.
     */
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the offset.
     */
-  var offset: js.UndefOr[js.Any] = js.undefined
+  var offset: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the original position of the draggable element.
     */
-  var originalPosition: js.UndefOr[js.Any] = js.undefined
+  var originalPosition: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the current position of the draggable element.
     */
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[Any] = js.undefined
 }
 object DragStartEventUIParam {
   
@@ -44,19 +44,19 @@ object DragStartEventUIParam {
     
     inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
+    inline def setOriginalPosition(value: Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
     
     inline def setOriginalPositionUndefined: Self = StObject.set(x, "originalPosition", js.undefined)
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }

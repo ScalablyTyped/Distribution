@@ -1,11 +1,13 @@
 package typings.reactFoundation
 
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
+import typings.react.mod.FunctionComponent
+import typings.react.mod.HTMLAttributeAnchorTarget
 import typings.react.mod.HTMLAttributeReferrerPolicy
-import typings.react.mod.StatelessComponent
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.email
 import typings.react.reactStrings.inherit
@@ -32,11 +34,11 @@ object buttonMod {
   
   @JSImport("react-foundation/components/button", "Button")
   @js.native
-  val Button: StatelessComponent[ButtonProps] = js.native
+  val Button: FunctionComponent[ButtonProps] = js.native
   
   @JSImport("react-foundation/components/button", "Link")
   @js.native
-  val Link: StatelessComponent[LinkProps] = js.native
+  val Link: FunctionComponent[LinkProps] = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait ButtonProps
@@ -79,7 +81,7 @@ object buttonMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -121,7 +123,7 @@ object buttonMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -200,7 +202,7 @@ object buttonMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,7 @@ object buttonMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -278,7 +280,7 @@ object buttonMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -419,7 +421,7 @@ object buttonMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
-    var download: js.UndefOr[js.Any] = js.undefined
+    var download: js.UndefOr[Any] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -431,7 +433,7 @@ object buttonMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -481,7 +483,7 @@ object buttonMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -497,7 +499,7 @@ object buttonMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[String] = js.undefined
+    var target: js.UndefOr[HTMLAttributeAnchorTarget] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
@@ -564,13 +566,13 @@ object buttonMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
       inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
@@ -594,7 +596,7 @@ object buttonMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -670,7 +672,7 @@ object buttonMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -702,7 +704,7 @@ object buttonMod {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLAttributeAnchorTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       

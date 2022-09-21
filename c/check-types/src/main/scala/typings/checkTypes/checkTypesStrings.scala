@@ -9,4 +9,8 @@ object checkTypesStrings {
   @js.native
   sealed trait CheckType extends StObject
   inline def CheckType: CheckType = "CheckType".asInstanceOf[CheckType]
+  
+  @js.native
+  sealed trait ExtendWithAssert extends StObject
+  inline def ExtendWithAssert: ExtendWithAssert = "ExtendWithAssert".asInstanceOf[ExtendWithAssert]
 }

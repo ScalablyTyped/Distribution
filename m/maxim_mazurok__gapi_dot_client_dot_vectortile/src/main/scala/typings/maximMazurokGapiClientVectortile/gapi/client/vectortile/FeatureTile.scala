@@ -48,7 +48,7 @@ object FeatureTile {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object FeatureTile {
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    inline def setProvidersVarargs(value: ProviderInfo*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: ProviderInfo*): Self = StObject.set(x, "providers", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

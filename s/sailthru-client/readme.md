@@ -10,10 +10,10 @@ Node.js client for Sailthru API
 | ------------------ | :-------------: |
 | Full name          | sailthru-client |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 80386 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 24174.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/sailthru/sailthru-node-client#readme)

@@ -17,7 +17,12 @@ object relationshipMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/Relationship", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Describes a [layer's](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) relationship with another layer or table.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html)
+    */
+  open class Class ()
     extends StObject
        with Relationship_ {
     def this(properties: RelationshipProperties) = this()

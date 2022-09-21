@@ -2,7 +2,6 @@ package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
-import typings.std.RegExp
 import typings.uirouterCore.paramMod.Param
 import typings.uirouterCore.paramTypesMod.ParamTypes
 import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
@@ -44,10 +43,10 @@ trait TypeofUrlMatcher
   def encodeDashes(str: String): String = js.native
   
   /** @internal */
-  var nameValidator: RegExp = js.native
+  var nameValidator: js.RegExp = js.native
   
   /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
-  def pathSegmentsAndParams(matcher: UrlMatcher): js.Any = js.native
+  def pathSegmentsAndParams(matcher: UrlMatcher): Any = js.native
   
   /** @internal Given a matcher, return an array with the matcher's query params */
   def queryParams(matcher: UrlMatcher): js.Array[Param] = js.native

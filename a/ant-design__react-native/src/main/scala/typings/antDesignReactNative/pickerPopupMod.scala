@@ -13,7 +13,7 @@ object pickerPopupMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@ant-design/react-native/lib/picker/Popup", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ComponentDidUpdate {
     def this(props: ReadonlyPopupPickerProps) = this()
@@ -26,8 +26,8 @@ object pickerPopupMod {
     
     @JSImport("@ant-design/react-native/lib/picker/Popup", "default.contextType")
     @js.native
-    def contextType: js.UndefOr[Context[js.Any]] = js.native
-    inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: js.UndefOr[Context[Any]] = js.native
+    inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/picker/Popup", "default.defaultProps")
     @js.native

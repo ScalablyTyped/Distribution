@@ -43,6 +43,6 @@ object MemberNameArray {
     
     inline def setEntries(value: js.Array[MemberName]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: MemberName*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: MemberName*): Self = StObject.set(x, "entries", js.Array(value*))
   }
 }

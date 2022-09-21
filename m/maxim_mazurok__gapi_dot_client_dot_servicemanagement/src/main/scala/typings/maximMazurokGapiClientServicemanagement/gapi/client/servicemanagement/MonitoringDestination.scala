@@ -25,7 +25,7 @@ object MonitoringDestination {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setMonitoredResource(value: String): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
     

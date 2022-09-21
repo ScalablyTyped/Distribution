@@ -10,7 +10,7 @@ trait IBodyDefinition extends StObject {
     * A `Number` specifying the angle of the body, in radians.
     *
     * @property angle
-    * @type number
+    * @type {number | undefined}
     * @default 0
     */
   var angle: js.UndefOr[Double] = js.undefined
@@ -20,7 +20,7 @@ trait IBodyDefinition extends StObject {
     *
     * @readOnly
     * @property angularSpeed
-    * @type number
+    * @type {number | undefined}
     * @default 0
     */
   var angularSpeed: js.UndefOr[Double] = js.undefined
@@ -31,7 +31,7 @@ trait IBodyDefinition extends StObject {
     *
     * @readOnly
     * @property angularVelocity
-    * @type number
+    * @type {number | undefined}
     * @default 0
     */
   var angularVelocity: js.UndefOr[Double] = js.undefined
@@ -40,7 +40,7 @@ trait IBodyDefinition extends StObject {
     * A `Number` that _measures_ the area of the body's convex hull, calculated at creation by `Body.create`.
     *
     * @property area
-    * @type string
+    * @type {string | undefined}
     * @default
     */
   var area: js.UndefOr[Double] = js.undefined
@@ -51,7 +51,7 @@ trait IBodyDefinition extends StObject {
     * They are constantly updated by `Body.update` during the simulation.
     *
     * @property axes
-    * @type vector[]
+    * @type {Vector[] | undefined}
     */
   var axes: js.UndefOr[js.Array[Vector]] = js.undefined
   
@@ -60,7 +60,7 @@ trait IBodyDefinition extends StObject {
     * It is automatically calculated from the given convex hull (`vertices` array) in `Body.create` and constantly updated by `Body.update` during simulation.
     *
     * @property bounds
-    * @type bounds
+    * @type {Bounds | undefined}
     */
   var bounds: js.UndefOr[Bounds] = js.undefined
   
@@ -87,7 +87,7 @@ trait IBodyDefinition extends StObject {
     * are both true.
     *
     * @property collisionFilter
-    * @type object
+    * @type {ICollisionFilter | undefined}
     */
   var collisionFilter: js.UndefOr[ICollisionFilter] = js.undefined
   
@@ -97,7 +97,7 @@ trait IBodyDefinition extends StObject {
     * This is generally preferable to simply setting mass and allows for more intuitive definition of materials (e.g. rock has a higher density than wood).
     *
     * @property density
-    * @type number
+    * @type {number | undefined}
     * @default 0.001
     */
   var density: js.UndefOr[Double] = js.undefined
@@ -106,7 +106,7 @@ trait IBodyDefinition extends StObject {
     * A `Vector` that specifies the force to apply in the current step. It is zeroed after every `Body.update`. See also `Body.applyForce`.
     *
     * @property force
-    * @type vector
+    * @type {Vector | undefined}
     * @default { x: 0, y: 0 }
     */
   var force: js.UndefOr[Vector] = js.undefined
@@ -124,7 +124,7 @@ trait IBodyDefinition extends StObject {
     *     Math.min(bodyA.friction, bodyB.friction)
     *
     * @property friction
-    * @type number
+    * @type {number | undefined}
     * @default 0.1
     */
   var friction: js.UndefOr[Double] = js.undefined
@@ -136,7 +136,7 @@ trait IBodyDefinition extends StObject {
     * The effects of the value are non-linear.
     *
     * @property frictionAir
-    * @type number
+    * @type {number | undefined}
     * @default 0.01
     */
   var frictionAir: js.UndefOr[Double] = js.undefined
@@ -148,7 +148,7 @@ trait IBodyDefinition extends StObject {
     * This value is multiplied with the `friction` property to make it easier to change `friction` and maintain an appropriate amount of static friction.
     *
     * @property frictionStatic
-    * @type number
+    * @type {number | undefined}
     * @default 0.5
     */
   var frictionStatic: js.UndefOr[Double] = js.undefined
@@ -157,7 +157,7 @@ trait IBodyDefinition extends StObject {
     * An integer `Number` uniquely identifying number generated in `Body.create` by `Common.nextId`.
     *
     * @property id
-    * @type number
+    * @type {number | undefined}
     */
   var id: js.UndefOr[Double] = js.undefined
   
@@ -167,7 +167,7 @@ trait IBodyDefinition extends StObject {
     * If you modify this value, you must also modify the `body.inverseInertia` property (`1 / inertia`).
     *
     * @property inertia
-    * @type number
+    * @type {number | undefined}
     */
   var inertia: js.UndefOr[Double] = js.undefined
   
@@ -176,7 +176,7 @@ trait IBodyDefinition extends StObject {
     * If you modify this value, you must also modify the `body.inertia` property.
     *
     * @property inverseInertia
-    * @type number
+    * @type {number | undefined}
     */
   var inverseInertia: js.UndefOr[Double] = js.undefined
   
@@ -185,7 +185,7 @@ trait IBodyDefinition extends StObject {
     * If you modify this value, you must also modify the `body.mass` property.
     *
     * @property inverseMass
-    * @type number
+    * @type {number | undefined}
     */
   var inverseMass: js.UndefOr[Double] = js.undefined
   
@@ -193,7 +193,7 @@ trait IBodyDefinition extends StObject {
     * A flag that indicates whether a body is a sensor. Sensor triggers collision events, but doesn't react with colliding body physically.
     *
     * @property isSensor
-    * @type boolean
+    * @type {boolean | undefined}
     * @default false
     */
   var isSensor: js.UndefOr[Boolean] = js.undefined
@@ -203,7 +203,7 @@ trait IBodyDefinition extends StObject {
     * If you need to set a body as sleeping, you should use `Sleeping.set` as this requires more than just setting this flag.
     *
     * @property isSleeping
-    * @type boolean
+    * @type {boolean | undefined}
     * @default false
     */
   var isSleeping: js.UndefOr[Boolean] = js.undefined
@@ -213,7 +213,7 @@ trait IBodyDefinition extends StObject {
     * If you need to set a body as static after its creation, you should use `Body.setStatic` as this requires more than just setting this flag.
     *
     * @property isStatic
-    * @type boolean
+    * @type {boolean | undefined}
     * @default false
     */
   var isStatic: js.UndefOr[Boolean] = js.undefined
@@ -222,7 +222,7 @@ trait IBodyDefinition extends StObject {
     * An arbitrary `String` name to help the user identify and manage bodies.
     *
     * @property label
-    * @type string
+    * @type {string | undefined}
     * @default "Body"
     */
   var label: js.UndefOr[String] = js.undefined
@@ -232,7 +232,7 @@ trait IBodyDefinition extends StObject {
     * If you modify this value, you must also modify the `body.inverseMass` property (`1 / mass`).
     *
     * @property mass
-    * @type number
+    * @type {number | undefined}
     */
   var mass: js.UndefOr[Double] = js.undefined
   
@@ -242,7 +242,7 @@ trait IBodyDefinition extends StObject {
     *
     * @readOnly
     * @property motion
-    * @type number
+    * @type {number | undefined}
     * @default 0
     */
   var motion: js.UndefOr[Double] = js.undefined
@@ -253,7 +253,7 @@ trait IBodyDefinition extends StObject {
     * See `body.parts`.
     *
     * @property parent
-    * @type body
+    * @type {Body | undefined}
     */
   var parent: js.UndefOr[Body] = js.undefined
   
@@ -266,7 +266,7 @@ trait IBodyDefinition extends StObject {
     * Use `Body.setParts` when setting parts to ensure correct updates of all properties.
     *
     * @property parts
-    * @type body[]
+    * @type {Body[] | undefined}
     */
   var parts: js.UndefOr[js.Array[Body]] = js.undefined
   
@@ -274,23 +274,24 @@ trait IBodyDefinition extends StObject {
     * An object reserved for storing plugin-specific properties.
     *
     * @property plugin
-    * @type {}
+    * @type {{}}
     */
-  var plugin: js.UndefOr[js.Any] = js.undefined
+  var plugin: js.UndefOr[Any] = js.undefined
   
   /**
     * A `Vector` that specifies the current world-space position of the body.
     *
     * @property position
-    * @type vector
-    * @default { x: 0, y:      */
+    * @type {Vector | undefined}
+    * @default { x: 0, y: 0 }
+    */
   var position: js.UndefOr[Vector] = js.undefined
   
   /**
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
     *
     * @property render
-    * @type object
+    * @type {IBodyRenderOptions | undefined}
     */
   var render: js.UndefOr[IBodyRenderOptions] = js.undefined
   
@@ -303,7 +304,7 @@ trait IBodyDefinition extends StObject {
     *     Math.max(bodyA.restitution, bodyB.restitution)
     *
     * @property restitution
-    * @type number
+    * @type {number | undefined}
     * @default 0
     */
   var restitution: js.UndefOr[Double] = js.undefined
@@ -312,7 +313,7 @@ trait IBodyDefinition extends StObject {
     * A `Number` that defines the number of updates in which this body must have near-zero velocity before it is set as sleeping by the `Matter.Sleeping` module (if sleeping is enabled by the engine).
     *
     * @property sleepThreshold
-    * @type number
+    * @type {number | undefined}
     * @default 60
     */
   var sleepThreshold: js.UndefOr[Double] = js.undefined
@@ -323,7 +324,7 @@ trait IBodyDefinition extends StObject {
     * The default should generally suffice, although very large bodies may require larger values for stable stacking.
     *
     * @property slop
-    * @type number
+    * @type {number | undefined}
     * @default 0.05
     */
   var slop: js.UndefOr[Double] = js.undefined
@@ -333,7 +334,7 @@ trait IBodyDefinition extends StObject {
     *
     * @readOnly
     * @property speed
-    * @type number
+    * @type {number | undefined}
     * @default 0
     */
   var speed: js.UndefOr[Double] = js.undefined
@@ -342,7 +343,7 @@ trait IBodyDefinition extends StObject {
     * A `Number` that allows per-body time scaling, e.g. a force-field where bodies inside are in slow-motion, while others are at full speed.
     *
     * @property timeScale
-    * @type number
+    * @type {number | undefined}
     * @default 1
     */
   var timeScale: js.UndefOr[Double] = js.undefined
@@ -351,7 +352,7 @@ trait IBodyDefinition extends StObject {
     * A `Number` that specifies the torque (turning force) to apply in the current step. It is zeroed after every `Body.update`.
     *
     * @property torque
-    * @type number
+    * @type {number | undefined}
     * @default 0
     */
   var torque: js.UndefOr[Double] = js.undefined
@@ -360,7 +361,7 @@ trait IBodyDefinition extends StObject {
     * A `String` denoting the type of object.
     *
     * @property type
-    * @type string
+    * @type {string | undefined}
     * @default "body"
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -389,7 +390,7 @@ trait IBodyDefinition extends StObject {
     * Concave hulls are not currently supported. The module `Matter.Vertices` contains useful methods for working with vertices.
     *
     * @property vertices
-    * @type vector[]
+    * @type {Vector[] | undefined}
     */
   var vertices: js.UndefOr[js.Array[Vector]] = js.undefined
 }
@@ -422,7 +423,7 @@ object IBodyDefinition {
     
     inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    inline def setAxesVarargs(value: Vector*): Self = StObject.set(x, "axes", js.Array(value :_*))
+    inline def setAxesVarargs(value: Vector*): Self = StObject.set(x, "axes", js.Array(value*))
     
     inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
@@ -500,9 +501,9 @@ object IBodyDefinition {
     
     inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
-    inline def setPartsVarargs(value: Body*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: Body*): Self = StObject.set(x, "parts", js.Array(value*))
     
-    inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
@@ -550,6 +551,6 @@ object IBodyDefinition {
     
     inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    inline def setVerticesVarargs(value: Vector*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: Vector*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

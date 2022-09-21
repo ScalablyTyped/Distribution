@@ -1,7 +1,6 @@
 package typings.easyXapiSupertest
 
 import typings.easyXapiSupertest.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,15 +13,15 @@ object domainMod {
   
   @JSImport("domain", "Domain")
   @js.native
-  class Domain () extends EventEmitter {
+  open class Domain () extends EventEmitter {
     
     def add(emitter: EventEmitter): Unit = js.native
     
-    def bind(cb: js.Function2[/* err */ Error, /* data */ js.Any, js.Any]): js.Any = js.native
+    def bind(cb: js.Function2[/* err */ js.Error, /* data */ Any, Any]): Any = js.native
     
     def dispose(): Unit = js.native
     
-    def intercept(cb: js.Function1[/* data */ js.Any, js.Any]): js.Any = js.native
+    def intercept(cb: js.Function1[/* data */ Any, Any]): Any = js.native
     
     def remove(emitter: EventEmitter): Unit = js.native
     

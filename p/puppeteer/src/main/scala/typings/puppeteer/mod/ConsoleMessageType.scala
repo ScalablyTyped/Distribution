@@ -1,5 +1,6 @@
 package typings.puppeteer.mod
 
+import typings.puppeteer.puppeteerStrings.clear_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.puppeteer.puppeteerStrings.dirxml
   - typings.puppeteer.puppeteerStrings.table
   - typings.puppeteer.puppeteerStrings.trace
-  - typings.puppeteer.puppeteerStrings.clear
+  - typings.puppeteer.puppeteerStrings.clear_
   - typings.puppeteer.puppeteerStrings.startGroup
   - typings.puppeteer.puppeteerStrings.startGroupCollapsed
   - typings.puppeteer.puppeteerStrings.endGroup
@@ -23,13 +24,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.puppeteer.puppeteerStrings.profileEnd
   - typings.puppeteer.puppeteerStrings.count
   - typings.puppeteer.puppeteerStrings.timeEnd
+  - typings.puppeteer.puppeteerStrings.verbose
 */
 trait ConsoleMessageType extends StObject
 object ConsoleMessageType {
   
   inline def assert: typings.puppeteer.puppeteerStrings.assert = "assert".asInstanceOf[typings.puppeteer.puppeteerStrings.assert]
   
-  inline def clear: typings.puppeteer.puppeteerStrings.clear = "clear".asInstanceOf[typings.puppeteer.puppeteerStrings.clear]
+  inline def clear: clear_ = "clear".asInstanceOf[clear_]
   
   inline def count: typings.puppeteer.puppeteerStrings.count = "count".asInstanceOf[typings.puppeteer.puppeteerStrings.count]
   
@@ -60,6 +62,8 @@ object ConsoleMessageType {
   inline def timeEnd: typings.puppeteer.puppeteerStrings.timeEnd = "timeEnd".asInstanceOf[typings.puppeteer.puppeteerStrings.timeEnd]
   
   inline def trace: typings.puppeteer.puppeteerStrings.trace = "trace".asInstanceOf[typings.puppeteer.puppeteerStrings.trace]
+  
+  inline def verbose: typings.puppeteer.puppeteerStrings.verbose = "verbose".asInstanceOf[typings.puppeteer.puppeteerStrings.verbose]
   
   inline def warning: typings.puppeteer.puppeteerStrings.warning = "warning".asInstanceOf[typings.puppeteer.puppeteerStrings.warning]
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Animation extends StObject {
   
-  def camera(camera: Camera, target: StringDictionary[js.Any], options: StringDictionary[js.Any]): Double
+  def camera(camera: Camera, target: StringDictionary[Any], options: StringDictionary[Any]): Double
 }
 object Animation {
   
-  inline def apply(camera: (Camera, StringDictionary[js.Any], StringDictionary[js.Any]) => Double): Animation = {
+  inline def apply(camera: (Camera, StringDictionary[Any], StringDictionary[Any]) => Double): Animation = {
     val __obj = js.Dynamic.literal(camera = js.Any.fromFunction3(camera))
     __obj.asInstanceOf[Animation]
   }
   
   extension [Self <: Animation](x: Self) {
     
-    inline def setCamera(value: (Camera, StringDictionary[js.Any], StringDictionary[js.Any]) => Double): Self = StObject.set(x, "camera", js.Any.fromFunction3(value))
+    inline def setCamera(value: (Camera, StringDictionary[Any], StringDictionary[Any]) => Double): Self = StObject.set(x, "camera", js.Any.fromFunction3(value))
   }
 }

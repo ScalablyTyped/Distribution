@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Double")
 @js.native
-class Double protected () extends StObject {
+open class Double protected () extends StObject {
   /**
     * A Double Attribute.
     * @param name The logical name of the attribute.

@@ -42,7 +42,7 @@ object XInterceptorInfo {
     InterceptedURLs: SafeArray[String],
     acquire: () => Unit,
     getInterceptedURLs: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XInterceptorInfo = {
     val __obj = js.Dynamic.literal(InterceptedURLs = InterceptedURLs.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getInterceptedURLs = js.Any.fromFunction0(getInterceptedURLs), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

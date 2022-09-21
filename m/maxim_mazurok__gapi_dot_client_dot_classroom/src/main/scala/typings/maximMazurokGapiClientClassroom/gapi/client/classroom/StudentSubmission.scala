@@ -132,7 +132,7 @@ object StudentSubmission {
     
     inline def setSubmissionHistoryUndefined: Self = StObject.set(x, "submissionHistory", js.undefined)
     
-    inline def setSubmissionHistoryVarargs(value: SubmissionHistory*): Self = StObject.set(x, "submissionHistory", js.Array(value :_*))
+    inline def setSubmissionHistoryVarargs(value: SubmissionHistory*): Self = StObject.set(x, "submissionHistory", js.Array(value*))
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

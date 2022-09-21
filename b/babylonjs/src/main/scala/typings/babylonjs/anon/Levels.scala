@@ -19,6 +19,6 @@ object Levels {
     
     inline def setLevels(value: js.Array[TranscodedPixels]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    inline def setLevelsVarargs(value: TranscodedPixels*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: TranscodedPixels*): Self = StObject.set(x, "levels", js.Array(value*))
   }
 }

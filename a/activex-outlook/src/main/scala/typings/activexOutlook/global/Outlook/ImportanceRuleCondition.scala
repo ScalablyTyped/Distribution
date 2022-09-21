@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.ImportanceRuleCondition")
 @js.native
-/* private */ class ImportanceRuleCondition ()
+/* private */ open class ImportanceRuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.ImportanceRuleCondition {
   
@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotImportanceRuleCondition_typekey: typings.activexOutlook.Outlook.ImportanceRuleCondition = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

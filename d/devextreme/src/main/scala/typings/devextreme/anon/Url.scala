@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Url extends StObject {
   
+  /**
+    * Specifies the height of an image that is used as a point marker.
+    */
   var height: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies a URL leading to the image to be used as a point marker.
+    */
   var url: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the width of an image that is used as a point marker.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object Url {

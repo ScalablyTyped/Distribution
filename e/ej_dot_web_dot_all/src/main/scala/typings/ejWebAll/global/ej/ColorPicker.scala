@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.ColorPicker")
 @js.native
-class ColorPicker protected ()
+open class ColorPicker protected ()
   extends StObject
      with typings.ejWebAll.ej.ColorPicker {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object ColorPicker {
   /* static member */
   @JSGlobal("ej.ColorPicker.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.ColorPicker.ModelType")
   @js.native

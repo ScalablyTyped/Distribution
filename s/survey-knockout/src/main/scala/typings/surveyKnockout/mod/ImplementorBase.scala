@@ -6,10 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "ImplementorBase")
 @js.native
-class ImplementorBase protected () extends StObject {
-  def this(element: Base) = this()
+open class ImplementorBase protected () extends StObject {
+  def this(element: Any) = this()
   
   def dispose(): Unit = js.native
   
-  var element: Base = js.native
+  var element: Any = js.native
+  
+  var implementedMark: Any = js.native
 }

@@ -10,10 +10,10 @@ Configurable and extensible validator/linter for OpenAPI documents
 | ------------------ | :-------------: |
 | Full name          | ibm-openapi-validator |
 | Keywords           | - |
-| # releases         | 77 |
-| # dependents       | 6 |
-| # downloads        | 599393 |
-| # stars            | 0 |
+| # releases         | 121 |
+| # dependents       | 0.0 |
+| # downloads        | 176780.0 |
+| # stars            | 331.0 |
 
 ## Links
 - [Homepage](https://github.com/IBM/openapi-validator#readme)

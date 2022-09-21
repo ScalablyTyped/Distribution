@@ -10,10 +10,10 @@ Check whether a value is a generator or generator function
 | ------------------ | :-------------: |
 | Full name          | is-generator |
 | Keywords           | generator, generator function, yield, function, await, es6, function* |
-| # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 22203683 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3239065.3333333335 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/is-generator)

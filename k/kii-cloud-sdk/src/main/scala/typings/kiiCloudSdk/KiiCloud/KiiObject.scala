@@ -5,7 +5,6 @@ import typings.kiiCloudSdk.anon.`13`
 import typings.kiiCloudSdk.anon.`14`
 import typings.kiiCloudSdk.anon.`15`
 import typings.std.Blob
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -452,8 +451,8 @@ trait KiiObject extends StObject {
     *         }
     *     );
     */
-  def publishBodyExpiresAt(expiresAt: Date): js.Promise[js.Tuple2[KiiObject, String]] = js.native
-  def publishBodyExpiresAt(expiresAt: Date, callbacks: `15`): js.Promise[js.Tuple2[KiiObject, String]] = js.native
+  def publishBodyExpiresAt(expiresAt: js.Date): js.Promise[js.Tuple2[KiiObject, String]] = js.native
+  def publishBodyExpiresAt(expiresAt: js.Date, callbacks: `15`): js.Promise[js.Tuple2[KiiObject, String]] = js.native
   
   /**
     * Publish object body with expiration duration.<br>
@@ -711,7 +710,7 @@ trait KiiObject extends StObject {
     *     var obj = . . .; // a KiiObject
     *     obj.set("score", 4298);
     */
-  def set(key: String, value: js.Any): Unit = js.native
+  def set(key: String, value: Any): Unit = js.native
   
   /**
     * Set Geo point to this object with the specified key.

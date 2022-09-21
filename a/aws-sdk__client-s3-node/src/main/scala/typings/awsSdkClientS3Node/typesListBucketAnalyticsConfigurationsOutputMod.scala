@@ -48,7 +48,7 @@ object typesListBucketAnalyticsConfigurationsOutputMod {
       
       inline def setAnalyticsConfigurationListUndefined: Self = StObject.set(x, "AnalyticsConfigurationList", js.undefined)
       
-      inline def setAnalyticsConfigurationListVarargs(value: UnmarshalledAnalyticsConfiguration*): Self = StObject.set(x, "AnalyticsConfigurationList", js.Array(value :_*))
+      inline def setAnalyticsConfigurationListVarargs(value: UnmarshalledAnalyticsConfiguration*): Self = StObject.set(x, "AnalyticsConfigurationList", js.Array(value*))
       
       inline def setContinuationToken(value: String): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
       

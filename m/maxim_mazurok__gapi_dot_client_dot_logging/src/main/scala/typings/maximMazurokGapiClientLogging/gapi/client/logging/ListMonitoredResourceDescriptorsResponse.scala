@@ -32,6 +32,6 @@ object ListMonitoredResourceDescriptorsResponse {
     
     inline def setResourceDescriptorsUndefined: Self = StObject.set(x, "resourceDescriptors", js.undefined)
     
-    inline def setResourceDescriptorsVarargs(value: MonitoredResourceDescriptor*): Self = StObject.set(x, "resourceDescriptors", js.Array(value :_*))
+    inline def setResourceDescriptorsVarargs(value: MonitoredResourceDescriptor*): Self = StObject.set(x, "resourceDescriptors", js.Array(value*))
   }
 }

@@ -56,7 +56,7 @@ object anon {
       
       inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeaders(value: typings.restfulJs.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

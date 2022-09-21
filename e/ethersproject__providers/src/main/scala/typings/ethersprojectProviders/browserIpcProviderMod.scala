@@ -8,5 +8,5 @@ object browserIpcProviderMod {
   
   @JSImport("@ethersproject/providers/lib/browser-ipc-provider", "IpcProvider")
   @js.native
-  val IpcProvider: js.Any = js.native
+  val IpcProvider: Any = js.native
 }

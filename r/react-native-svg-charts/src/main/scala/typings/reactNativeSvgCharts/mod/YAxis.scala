@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-svg-charts", "YAxis")
 @js.native
-class YAxis[T] protected ()
-  extends PureComponent[YAxisProps[T], js.Object, js.Any] {
+open class YAxis[T] protected ()
+  extends PureComponent[YAxisProps[T], js.Object, Any] {
   def this(props: YAxisProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: YAxisProps[T], context: js.Any) = this()
+  def this(props: YAxisProps[T], context: Any) = this()
 }

@@ -2,7 +2,6 @@ package typings.reactThemeableTs
 
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.SFC
 import typings.reactThemeableTs.themeableMod.IStaticFnReturn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,8 +13,8 @@ object hocMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def themeDecorator[P /* <: IThemeDecoratorArgs */](): js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")().asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any]]
-  inline def themeDecorator[P /* <: IThemeDecoratorArgs */](hasThemeKeyThemePropMemoizeeOptsContextPath: IThemeDecoratorArgs): js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")(hasThemeKeyThemePropMemoizeeOptsContextPath.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any]]
+  inline def themeDecorator[P /* <: IThemeDecoratorArgs */](): js.Function1[/* WrappedComponent */ TDecComponent[P], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")().asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], Any]]
+  inline def themeDecorator[P /* <: IThemeDecoratorArgs */](hasThemeKeyThemePropMemoizeeOptsContextPath: IThemeDecoratorArgs): js.Function1[/* WrappedComponent */ TDecComponent[P], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")(hasThemeKeyThemePropMemoizeeOptsContextPath.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], Any]]
   
   trait IHOCDefaultNoThemeProps extends StObject {
     
@@ -38,7 +37,7 @@ object hocMod {
     extends StObject
        with IHOCDefaultNoThemeProps {
     
-    var theme: js.UndefOr[js.Any] = js.undefined
+    var theme: js.UndefOr[Any] = js.undefined
   }
   object IHOCDefaultProps {
     
@@ -49,7 +48,7 @@ object hocMod {
     
     extension [Self <: IHOCDefaultProps](x: Self) {
       
-      inline def setTheme(value: js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
@@ -59,7 +58,7 @@ object hocMod {
     
     var contextPath: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var memoizeeOpts: js.UndefOr[js.Any] = js.undefined
+    var memoizeeOpts: js.UndefOr[Any] = js.undefined
     
     var themeKey: js.UndefOr[String] = js.undefined
     
@@ -78,9 +77,9 @@ object hocMod {
       
       inline def setContextPathUndefined: Self = StObject.set(x, "contextPath", js.undefined)
       
-      inline def setContextPathVarargs(value: String*): Self = StObject.set(x, "contextPath", js.Array(value :_*))
+      inline def setContextPathVarargs(value: String*): Self = StObject.set(x, "contextPath", js.Array(value*))
       
-      inline def setMemoizeeOpts(value: js.Any): Self = StObject.set(x, "memoizeeOpts", value.asInstanceOf[js.Any])
+      inline def setMemoizeeOpts(value: Any): Self = StObject.set(x, "memoizeeOpts", value.asInstanceOf[js.Any])
       
       inline def setMemoizeeOptsUndefined: Self = StObject.set(x, "memoizeeOpts", js.undefined)
       
@@ -94,5 +93,5 @@ object hocMod {
     }
   }
   
-  type TDecComponent[P] = SFC[P] | (ComponentClass[P, ComponentState])
+  type TDecComponent[P] = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<P> */ Any) | (ComponentClass[P, ComponentState])
 }

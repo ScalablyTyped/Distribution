@@ -10,10 +10,10 @@ The lodash method `_.hasIn` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.hasin |
 | Keywords           | lodash-modularized, hasin |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 1079700 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 308184.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

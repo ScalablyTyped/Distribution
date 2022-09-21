@@ -34,6 +34,6 @@ object ISearchFieldDictionary {
     
     inline def setQResult(value: js.Array[ISearchTermResult]): Self = StObject.set(x, "qResult", value.asInstanceOf[js.Any])
     
-    inline def setQResultVarargs(value: ISearchTermResult*): Self = StObject.set(x, "qResult", js.Array(value :_*))
+    inline def setQResultVarargs(value: ISearchTermResult*): Self = StObject.set(x, "qResult", js.Array(value*))
   }
 }

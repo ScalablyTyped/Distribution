@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ScaleBarViewModelConstructor
   extends StObject
-     with Instantiable0[ScaleBarViewModel]
+     with /**
+  * Provides the logic for the [ScaleBar](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar-ScaleBarViewModel.html)
+  */
+Instantiable0[ScaleBarViewModel]
      with Instantiable1[/* properties */ ScaleBarViewModelProperties, ScaleBarViewModel]

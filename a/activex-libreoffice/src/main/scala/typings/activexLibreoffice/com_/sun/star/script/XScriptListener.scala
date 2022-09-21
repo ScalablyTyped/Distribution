@@ -13,7 +13,7 @@ trait XScriptListener
      with XEventListener {
   
   /** gets called when a "vetoable event" occurs at the object. */
-  def approveFiring(aEvent: ScriptEvent): js.Any
+  def approveFiring(aEvent: ScriptEvent): Any
   
   /**
     * gets called when an event takes place. For that a {@link ScriptEventDescriptor} is registered at and attached to an object by an {@link
@@ -25,10 +25,10 @@ object XScriptListener {
   
   inline def apply(
     acquire: () => Unit,
-    approveFiring: ScriptEvent => js.Any,
+    approveFiring: ScriptEvent => Any,
     disposing: EventObject => Unit,
     firing: ScriptEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XScriptListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), approveFiring = js.Any.fromFunction1(approveFiring), disposing = js.Any.fromFunction1(disposing), firing = js.Any.fromFunction1(firing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -37,7 +37,7 @@ object XScriptListener {
   
   extension [Self <: XScriptListener](x: Self) {
     
-    inline def setApproveFiring(value: ScriptEvent => js.Any): Self = StObject.set(x, "approveFiring", js.Any.fromFunction1(value))
+    inline def setApproveFiring(value: ScriptEvent => Any): Self = StObject.set(x, "approveFiring", js.Any.fromFunction1(value))
     
     inline def setFiring(value: ScriptEvent => Unit): Self = StObject.set(x, "firing", js.Any.fromFunction1(value))
   }

@@ -15,6 +15,9 @@ trait SearchAnalyticsQueryRequest extends StObject {
     */
   var aggregationType: js.UndefOr[String] = js.undefined
   
+  /** The data state to be fetched, can be full or all, the latter including full and partial data. */
+  var dataState: js.UndefOr[String] = js.undefined
+  
   /**
     * [Optional] Zero or more filters to apply to the dimension grouping values; for example, 'query contains \"buy\"' to see only data where the query string contains the substring
     * \"buy\" (not case-sensitive). You can filter by a dimension without grouping by it.
@@ -41,6 +44,9 @@ trait SearchAnalyticsQueryRequest extends StObject {
   
   /** [Optional; Default is 0] Zero-based index of the first row in the response. Must be a non-negative number. */
   var startRow: js.UndefOr[Double] = js.undefined
+  
+  /** Optional. [Optional; Default is \"web\"] Type of report: search type, or either Discover or Gnews. */
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SearchAnalyticsQueryRequest {
   
@@ -55,17 +61,21 @@ object SearchAnalyticsQueryRequest {
     
     inline def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
     
+    inline def setDataState(value: String): Self = StObject.set(x, "dataState", value.asInstanceOf[js.Any])
+    
+    inline def setDataStateUndefined: Self = StObject.set(x, "dataState", js.undefined)
+    
     inline def setDimensionFilterGroups(value: js.Array[ApiDimensionFilterGroup]): Self = StObject.set(x, "dimensionFilterGroups", value.asInstanceOf[js.Any])
     
     inline def setDimensionFilterGroupsUndefined: Self = StObject.set(x, "dimensionFilterGroups", js.undefined)
     
-    inline def setDimensionFilterGroupsVarargs(value: ApiDimensionFilterGroup*): Self = StObject.set(x, "dimensionFilterGroups", js.Array(value :_*))
+    inline def setDimensionFilterGroupsVarargs(value: ApiDimensionFilterGroup*): Self = StObject.set(x, "dimensionFilterGroups", js.Array(value*))
     
     inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
@@ -86,5 +96,9 @@ object SearchAnalyticsQueryRequest {
     inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
     inline def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

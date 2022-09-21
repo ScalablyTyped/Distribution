@@ -26,10 +26,10 @@ object TempFilesData {
     
     inline def setTempFilePaths(value: js.Array[String]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
     
-    inline def setTempFilePathsVarargs(value: String*): Self = StObject.set(x, "tempFilePaths", js.Array(value :_*))
+    inline def setTempFilePathsVarargs(value: String*): Self = StObject.set(x, "tempFilePaths", js.Array(value*))
     
     inline def setTempFiles(value: js.Array[TempFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
     
-    inline def setTempFilesVarargs(value: TempFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
+    inline def setTempFilesVarargs(value: TempFile*): Self = StObject.set(x, "tempFiles", js.Array(value*))
   }
 }

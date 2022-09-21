@@ -12,7 +12,7 @@ trait LoggingEnabled extends StObject {
   var TargetBucket: typings.awsSdk.s3Mod.TargetBucket
   
   /**
-    * Container for granting information.
+    * Container for granting information. Buckets that use the bucket owner enforced setting for Object Ownership don't support target grants. For more information, see Permissions for server access log delivery in the Amazon S3 User Guide.
     */
   var TargetGrants: js.UndefOr[typings.awsSdk.s3Mod.TargetGrants] = js.undefined
   
@@ -36,7 +36,7 @@ object LoggingEnabled {
     
     inline def setTargetGrantsUndefined: Self = StObject.set(x, "TargetGrants", js.undefined)
     
-    inline def setTargetGrantsVarargs(value: TargetGrant*): Self = StObject.set(x, "TargetGrants", js.Array(value :_*))
+    inline def setTargetGrantsVarargs(value: TargetGrant*): Self = StObject.set(x, "TargetGrants", js.Array(value*))
     
     inline def setTargetPrefix(value: TargetPrefix): Self = StObject.set(x, "TargetPrefix", value.asInstanceOf[js.Any])
   }

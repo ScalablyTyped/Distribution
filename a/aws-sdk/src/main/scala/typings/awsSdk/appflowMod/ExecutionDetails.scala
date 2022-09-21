@@ -19,7 +19,7 @@ trait ExecutionDetails extends StObject {
   /**
     *  Specifies the time of the most recent flow run. 
     */
-  var mostRecentExecutionTime: js.UndefOr[Date] = js.undefined
+  var mostRecentExecutionTime: js.UndefOr[js.Date] = js.undefined
 }
 object ExecutionDetails {
   
@@ -38,7 +38,7 @@ object ExecutionDetails {
     
     inline def setMostRecentExecutionStatusUndefined: Self = StObject.set(x, "mostRecentExecutionStatus", js.undefined)
     
-    inline def setMostRecentExecutionTime(value: Date): Self = StObject.set(x, "mostRecentExecutionTime", value.asInstanceOf[js.Any])
+    inline def setMostRecentExecutionTime(value: js.Date): Self = StObject.set(x, "mostRecentExecutionTime", value.asInstanceOf[js.Any])
     
     inline def setMostRecentExecutionTimeUndefined: Self = StObject.set(x, "mostRecentExecutionTime", js.undefined)
   }

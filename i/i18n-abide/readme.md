@@ -10,10 +10,10 @@ Express/connect module for Node i18n and l10n support
 | ------------------ | :-------------: |
 | Full name          | i18n-abide |
 | Keywords           | express, connect, l10n, i18n, gettext |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 150399 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2280.3333333333335 |
+| # stars            | 144.0 |
 
 ## Links
 - [Homepage](https://github.com/mozilla/i18n-abide)

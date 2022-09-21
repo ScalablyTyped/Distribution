@@ -14,7 +14,7 @@ object global {
       */
     @JSGlobal("ProgressBar")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.progress.mod.^ {
       def this(format: String, options: ProgressBarOptions) = this()
       /**

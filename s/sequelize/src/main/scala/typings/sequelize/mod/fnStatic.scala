@@ -12,4 +12,4 @@ trait fnStatic
   * @param fn The function you want to call
   * @param args All further arguments will be passed as arguments to the function
   */
-Instantiable2[/* fn */ String, /* args (repeated) */ js.Any, fn]
+Instantiable2[/* fn */ String, /* args (repeated) */ Any, fn]

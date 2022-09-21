@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MobileBroadbandAccountWatcher extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_accountadded(
     `type`: accountadded,
@@ -33,9 +33,9 @@ trait MobileBroadbandAccountWatcher extends StObject {
     listener: TypedEventHandler[MobileBroadbandAccountWatcher, MobileBroadbandAccountUpdatedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any]): Unit = js.native
+  def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[MobileBroadbandAccountWatcher, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any]): Unit = js.native
+  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[MobileBroadbandAccountWatcher, Any]): Unit = js.native
   
   /** Occurs when a Mobile Broadband Account is added to the client. */
   def onaccountadded(ev: MobileBroadbandAccountEventArgs & WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
@@ -56,18 +56,18 @@ trait MobileBroadbandAccountWatcher extends StObject {
   var onaccountupdated_Original: TypedEventHandler[MobileBroadbandAccountWatcher, MobileBroadbandAccountUpdatedEventArgs] = js.native
   
   /** Occurs when the account watcher has finished enumerating accounts for the client. */
-  def onenumerationcompleted(ev: js.Any & WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
+  def onenumerationcompleted(ev: Any & WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
   /** Occurs when the account watcher has finished enumerating accounts for the client. */
   @JSName("onenumerationcompleted")
-  var onenumerationcompleted_Original: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any] = js.native
+  var onenumerationcompleted_Original: TypedEventHandler[MobileBroadbandAccountWatcher, Any] = js.native
   
   /** Occurs when the MobileBroadbandAccountWatcher has stopped. */
-  def onstopped(ev: js.Any & WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
+  def onstopped(ev: Any & WinRTEvent[MobileBroadbandAccountWatcher]): Unit = js.native
   /** Occurs when the MobileBroadbandAccountWatcher has stopped. */
   @JSName("onstopped")
-  var onstopped_Original: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any] = js.native
+  var onstopped_Original: TypedEventHandler[MobileBroadbandAccountWatcher, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_accountadded(
     `type`: accountadded,
@@ -84,9 +84,9 @@ trait MobileBroadbandAccountWatcher extends StObject {
     listener: TypedEventHandler[MobileBroadbandAccountWatcher, MobileBroadbandAccountUpdatedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any]): Unit = js.native
+  def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[MobileBroadbandAccountWatcher, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[MobileBroadbandAccountWatcher, js.Any]): Unit = js.native
+  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[MobileBroadbandAccountWatcher, Any]): Unit = js.native
   
   /** Starts the account watcher. */
   def start(): Unit = js.native

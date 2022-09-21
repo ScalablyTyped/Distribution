@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassExpression
   extends StObject
      with BaseClass
-     with Class
-     with Expression {
+     with Class {
   
   var id: js.UndefOr[Identifier | Null] = js.undefined
   

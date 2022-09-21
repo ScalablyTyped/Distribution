@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.yandexMaps.mod.IChild because Already inherited
 - typings.yandexMaps.mod.IGeoObject because var conflicts: events, options. Inlined geometry, properties, state, getOverlay, getOverlaySync */ @JSImport("yandex-maps", "ClusterPlacemark")
 @js.native
-class ClusterPlacemark protected () extends Item {
+open class ClusterPlacemark protected () extends Item {
   def this(geometry: js.Array[Double], properties: IClusterPlacemarkProperties) = this()
   def this(geometry: js.Object, properties: IClusterPlacemarkProperties) = this()
   def this(geometry: IPointGeometry, properties: IClusterPlacemarkProperties) = this()

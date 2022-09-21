@@ -15,7 +15,7 @@ object textBufferMod {
   
   @JSImport("terminal-kit/TextBuffer", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with TextBuffer {
     def this(options: Options) = this()
@@ -105,9 +105,9 @@ object textBufferMod {
     
     def getHidden(): Boolean = js.native
     
-    def getMisc(): js.Any = js.native
+    def getMisc(): Any = js.native
     
-    def getMiscAt(x: Double, y: Double): js.Any = js.native
+    def getMiscAt(x: Double, y: Double): Any = js.native
     
     def getText(): String = js.native
     
@@ -119,7 +119,7 @@ object textBufferMod {
     
     def joinLine(): Unit = js.native
     
-    def load(filepath: String, callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def load(filepath: String, callback: js.Function1[/* error */ js.UndefOr[Any], Unit]): Unit = js.native
     
     def move(x: Double, y: Double): Unit = js.native
     
@@ -149,7 +149,7 @@ object textBufferMod {
     
     def newLine(): Unit = js.native
     
-    def save(filepath: String, callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def save(filepath: String, callback: js.Function1[/* error */ js.UndefOr[Any], Unit]): Unit = js.native
     
     def setAttrAt(attr: Double, x: Double, y: Double): Unit = js.native
     def setAttrAt(attr: Attributes, x: Double, y: Double): Unit = js.native

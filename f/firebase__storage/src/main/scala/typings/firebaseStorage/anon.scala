@@ -1,11 +1,11 @@
 package typings.firebaseStorage
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.firebaseStorage.compatMod.firebaseAppTypesAugmentingMod.FirebaseApp
-import typings.firebaseStorageTypes.mod.FirebaseStorage
-import typings.firebaseStorageTypes.mod.StringFormat
-import typings.firebaseStorageTypes.mod.TaskEvent
-import typings.firebaseStorageTypes.mod.TaskState
+import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseStorage.publicTypesMod.StorageReference
+import typings.firebaseUtil.mod.EmulatorMockTokenOptions
+import typings.nodeFetch.mod.RequestInfo
+import typings.nodeFetch.mod.RequestInit
+import typings.nodeFetch.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,117 +29,265 @@ object anon {
     }
   }
   
-  trait BASE64 extends StObject {
-    
-    var BASE64: StringFormat
-    
-    var BASE64URL: StringFormat
-    
-    var DATA_URL: StringFormat
-    
-    var RAW: StringFormat
-  }
-  object BASE64 {
-    
-    inline def apply(BASE64: StringFormat, BASE64URL: StringFormat, DATA_URL: StringFormat, RAW: StringFormat): BASE64 = {
-      val __obj = js.Dynamic.literal(BASE64 = BASE64.asInstanceOf[js.Any], BASE64URL = BASE64URL.asInstanceOf[js.Any], DATA_URL = DATA_URL.asInstanceOf[js.Any], RAW = RAW.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BASE64]
-    }
-    
-    extension [Self <: BASE64](x: Self) {
-      
-      inline def setBASE64(value: StringFormat): Self = StObject.set(x, "BASE64", value.asInstanceOf[js.Any])
-      
-      inline def setBASE64URL(value: StringFormat): Self = StObject.set(x, "BASE64URL", value.asInstanceOf[js.Any])
-      
-      inline def setDATA_URL(value: StringFormat): Self = StObject.set(x, "DATA_URL", value.asInstanceOf[js.Any])
-      
-      inline def setRAW(value: StringFormat): Self = StObject.set(x, "RAW", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait CANCELED extends StObject {
-    
-    var CANCELED: TaskState
-    
-    var ERROR: TaskState
-    
-    var PAUSED: TaskState
-    
-    var RUNNING: TaskState
-    
-    var SUCCESS: TaskState
-  }
-  object CANCELED {
-    
-    inline def apply(CANCELED: TaskState, ERROR: TaskState, PAUSED: TaskState, RUNNING: TaskState, SUCCESS: TaskState): CANCELED = {
-      val __obj = js.Dynamic.literal(CANCELED = CANCELED.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], PAUSED = PAUSED.asInstanceOf[js.Any], RUNNING = RUNNING.asInstanceOf[js.Any], SUCCESS = SUCCESS.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CANCELED]
-    }
-    
-    extension [Self <: CANCELED](x: Self) {
-      
-      inline def setCANCELED(value: TaskState): Self = StObject.set(x, "CANCELED", value.asInstanceOf[js.Any])
-      
-      inline def setERROR(value: TaskState): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
-      
-      inline def setPAUSED(value: TaskState): Self = StObject.set(x, "PAUSED", value.asInstanceOf[js.Any])
-      
-      inline def setRUNNING(value: TaskState): Self = StObject.set(x, "RUNNING", value.asInstanceOf[js.Any])
-      
-      inline def setSUCCESS(value: TaskState): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
-    }
-  }
-  
   @js.native
-  trait Call extends StObject {
+  trait FnCall extends StObject {
     
-    def apply(): FirebaseStorage = js.native
-    def apply(app: FirebaseApp): FirebaseStorage = js.native
-    
-    var Storage: Instantiable0[FirebaseStorage] = js.native
-    
-    var StringFormat: BASE64 = js.native
-    
-    var TaskEvent: STATECHANGED = js.native
-    
-    var TaskState: CANCELED = js.native
+    def apply(url: RequestInfo): js.Promise[Response] = js.native
+    def apply(url: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   }
   
-  trait Delete extends StObject {
+  trait MockUserToken extends StObject {
     
-    /**
-      * Called when the associated app is deleted.
-      */
-    def delete(): js.Promise[Unit]
+    var mockUserToken: js.UndefOr[EmulatorMockTokenOptions | String] = js.undefined
   }
-  object Delete {
+  object MockUserToken {
     
-    inline def apply(delete: () => js.Promise[Unit]): Delete = {
-      val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete))
-      __obj.asInstanceOf[Delete]
+    inline def apply(): MockUserToken = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MockUserToken]
     }
     
-    extension [Self <: Delete](x: Self) {
+    extension [Self <: MockUserToken](x: Self) {
       
-      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setMockUserToken(value: EmulatorMockTokenOptions | String): Self = StObject.set(x, "mockUserToken", value.asInstanceOf[js.Any])
+      
+      inline def setMockUserTokenUndefined: Self = StObject.set(x, "mockUserToken", js.undefined)
     }
   }
   
-  trait STATECHANGED extends StObject {
+  /* Inlined std.Partial<@firebase/storage.@firebase/storage/dist/node-esm/src/metadata.Metadata> */
+  trait PartialMetadata extends StObject {
     
-    var STATE_CHANGED: TaskEvent
+    var bucket: js.UndefOr[String] = js.undefined
+    
+    var cacheControl: js.UndefOr[String] = js.undefined
+    
+    var contentDisposition: js.UndefOr[String] = js.undefined
+    
+    var contentEncoding: js.UndefOr[String] = js.undefined
+    
+    var contentLanguage: js.UndefOr[String] = js.undefined
+    
+    var contentType: js.UndefOr[String] = js.undefined
+    
+    var customMetadata: js.UndefOr[StringDictionary[String]] = js.undefined
+    
+    var downloadTokens: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var fullPath: js.UndefOr[String] = js.undefined
+    
+    var generation: js.UndefOr[String] = js.undefined
+    
+    var md5Hash: js.UndefOr[String] = js.undefined
+    
+    var metageneration: js.UndefOr[String] = js.undefined
+    
+    var name: js.UndefOr[String] = js.undefined
+    
+    var ref: js.UndefOr[StorageReference] = js.undefined
+    
+    var size: js.UndefOr[Double] = js.undefined
+    
+    var timeCreated: js.UndefOr[String] = js.undefined
+    
+    var updated: js.UndefOr[String] = js.undefined
   }
-  object STATECHANGED {
+  object PartialMetadata {
     
-    inline def apply(STATE_CHANGED: TaskEvent): STATECHANGED = {
-      val __obj = js.Dynamic.literal(STATE_CHANGED = STATE_CHANGED.asInstanceOf[js.Any])
-      __obj.asInstanceOf[STATECHANGED]
+    inline def apply(): PartialMetadata = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialMetadata]
     }
     
-    extension [Self <: STATECHANGED](x: Self) {
+    extension [Self <: PartialMetadata](x: Self) {
       
-      inline def setSTATE_CHANGED(value: TaskEvent): Self = StObject.set(x, "STATE_CHANGED", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      
+      inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
+      
+      inline def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
+      
+      inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+      
+      inline def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
+      
+      inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+      
+      inline def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
+      
+      inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
+      
+      inline def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
+      
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      
+      inline def setCustomMetadata(value: StringDictionary[String]): Self = StObject.set(x, "customMetadata", value.asInstanceOf[js.Any])
+      
+      inline def setCustomMetadataUndefined: Self = StObject.set(x, "customMetadata", js.undefined)
+      
+      inline def setDownloadTokens(value: js.Array[String]): Self = StObject.set(x, "downloadTokens", value.asInstanceOf[js.Any])
+      
+      inline def setDownloadTokensUndefined: Self = StObject.set(x, "downloadTokens", js.undefined)
+      
+      inline def setDownloadTokensVarargs(value: String*): Self = StObject.set(x, "downloadTokens", js.Array(value*))
+      
+      inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
+      
+      inline def setFullPathUndefined: Self = StObject.set(x, "fullPath", js.undefined)
+      
+      inline def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+      
+      inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+      
+      inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
+      
+      inline def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
+      
+      inline def setMetageneration(value: String): Self = StObject.set(x, "metageneration", value.asInstanceOf[js.Any])
+      
+      inline def setMetagenerationUndefined: Self = StObject.set(x, "metageneration", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setRef(value: StorageReference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setTimeCreated(value: String): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+      
+      inline def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
+      
+      inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      
+      inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<@firebase/storage.@firebase/storage/dist/src/metadata.Metadata> */
+  trait PartialMetadataBucket extends StObject {
+    
+    var bucket: js.UndefOr[String] = js.undefined
+    
+    var cacheControl: js.UndefOr[String] = js.undefined
+    
+    var contentDisposition: js.UndefOr[String] = js.undefined
+    
+    var contentEncoding: js.UndefOr[String] = js.undefined
+    
+    var contentLanguage: js.UndefOr[String] = js.undefined
+    
+    var contentType: js.UndefOr[String] = js.undefined
+    
+    var customMetadata: js.UndefOr[StringDictionary[String]] = js.undefined
+    
+    var downloadTokens: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var fullPath: js.UndefOr[String] = js.undefined
+    
+    var generation: js.UndefOr[String] = js.undefined
+    
+    var md5Hash: js.UndefOr[String] = js.undefined
+    
+    var metageneration: js.UndefOr[String] = js.undefined
+    
+    var name: js.UndefOr[String] = js.undefined
+    
+    var ref: js.UndefOr[typings.firebaseStorage.srcPublicTypesMod.StorageReference] = js.undefined
+    
+    var size: js.UndefOr[Double] = js.undefined
+    
+    var timeCreated: js.UndefOr[String] = js.undefined
+    
+    var updated: js.UndefOr[String] = js.undefined
+  }
+  object PartialMetadataBucket {
+    
+    inline def apply(): PartialMetadataBucket = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialMetadataBucket]
+    }
+    
+    extension [Self <: PartialMetadataBucket](x: Self) {
+      
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      
+      inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
+      
+      inline def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
+      
+      inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+      
+      inline def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
+      
+      inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+      
+      inline def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
+      
+      inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
+      
+      inline def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
+      
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      
+      inline def setCustomMetadata(value: StringDictionary[String]): Self = StObject.set(x, "customMetadata", value.asInstanceOf[js.Any])
+      
+      inline def setCustomMetadataUndefined: Self = StObject.set(x, "customMetadata", js.undefined)
+      
+      inline def setDownloadTokens(value: js.Array[String]): Self = StObject.set(x, "downloadTokens", value.asInstanceOf[js.Any])
+      
+      inline def setDownloadTokensUndefined: Self = StObject.set(x, "downloadTokens", js.undefined)
+      
+      inline def setDownloadTokensVarargs(value: String*): Self = StObject.set(x, "downloadTokens", js.Array(value*))
+      
+      inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
+      
+      inline def setFullPathUndefined: Self = StObject.set(x, "fullPath", js.undefined)
+      
+      inline def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+      
+      inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+      
+      inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
+      
+      inline def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
+      
+      inline def setMetageneration(value: String): Self = StObject.set(x, "metageneration", value.asInstanceOf[js.Any])
+      
+      inline def setMetagenerationUndefined: Self = StObject.set(x, "metageneration", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setRef(value: typings.firebaseStorage.srcPublicTypesMod.StorageReference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setTimeCreated(value: String): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+      
+      inline def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
+      
+      inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      
+      inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     }
   }
   
@@ -159,6 +307,23 @@ object anon {
       inline def setServerResponse(value: String): Self = StObject.set(x, "serverResponse", value.asInstanceOf[js.Any])
       
       inline def setServerResponseNull: Self = StObject.set(x, "serverResponse", null)
+    }
+  }
+  
+  trait Token extends StObject {
+    
+    var token: String
+  }
+  object Token {
+    
+    inline def apply(token: String): Token = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Token]
+    }
+    
+    extension [Self <: Token](x: Self) {
+      
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

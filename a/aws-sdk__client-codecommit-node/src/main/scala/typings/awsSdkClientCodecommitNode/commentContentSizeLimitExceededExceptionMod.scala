@@ -8,5 +8,5 @@ object commentContentSizeLimitExceededExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/CommentContentSizeLimitExceededException", "CommentContentSizeLimitExceededException")
   @js.native
-  val CommentContentSizeLimitExceededException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CommentContentSizeLimitExceededException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

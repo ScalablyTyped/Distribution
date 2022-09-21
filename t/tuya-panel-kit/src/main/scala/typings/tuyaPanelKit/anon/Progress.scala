@@ -10,17 +10,17 @@ trait Progress extends StObject {
   /**
     * Animated node representing the progress value of the next screen.
     */
-  var progress: AnimatedInterpolation
+  var progress: AnimatedInterpolation[Double | String]
 }
 object Progress {
   
-  inline def apply(progress: AnimatedInterpolation): Progress = {
+  inline def apply(progress: AnimatedInterpolation[Double | String]): Progress = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }
   
   extension [Self <: Progress](x: Self) {
     
-    inline def setProgress(value: AnimatedInterpolation): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,6 @@ import typings.sane.saneStrings.change
 import typings.sane.saneStrings.delete
 import typings.sane.saneStrings.error
 import typings.sane.saneStrings.ready
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +25,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sane", "FSEventsWatcher")
   @js.native
-  class FSEventsWatcher protected () extends SaneWatcher {
+  open class FSEventsWatcher protected () extends SaneWatcher {
     def this(dir: String) = this()
     def this(dir: String, options: Options) = this()
   }
@@ -38,7 +36,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sane", "NodeWatcher")
   @js.native
-  class NodeWatcher protected () extends SaneWatcher {
+  open class NodeWatcher protected () extends SaneWatcher {
     def this(dir: String) = this()
     def this(dir: String, options: Options) = this()
   }
@@ -49,7 +47,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sane", "PollWatcher")
   @js.native
-  class PollWatcher protected () extends SaneWatcher {
+  open class PollWatcher protected () extends SaneWatcher {
     def this(dir: String) = this()
     def this(dir: String, options: Options) = this()
   }
@@ -60,7 +58,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sane", "WatchmanWatcher")
   @js.native
-  class WatchmanWatcher protected () extends SaneWatcher {
+  open class WatchmanWatcher protected () extends SaneWatcher {
     def this(dir: String) = this()
     def this(dir: String, options: Options) = this()
   }
@@ -83,7 +81,7 @@ object mod {
     inline def delete: typings.sane.saneStrings.delete = "delete".asInstanceOf[typings.sane.saneStrings.delete]
   }
   
-  type AnymatchMatcher = String | RegExp | (js.Function1[/* repeated */ String, Boolean])
+  type AnymatchMatcher = String | js.RegExp | (js.Function1[/* repeated */ String, Boolean])
   
   /* Rewritten from type alias, can be one of: 
     - typings.sane.saneStrings.ready
@@ -146,7 +144,7 @@ object mod {
       
       inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
       
-      inline def setGlobVarargs(value: String*): Self = StObject.set(x, "glob", js.Array(value :_*))
+      inline def setGlobVarargs(value: String*): Self = StObject.set(x, "glob", js.Array(value*))
       
       inline def setIgnored(value: AnymatchMatcher | js.Array[AnymatchMatcher]): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
       
@@ -154,7 +152,7 @@ object mod {
       
       inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
       
-      inline def setIgnoredVarargs(value: AnymatchMatcher*): Self = StObject.set(x, "ignored", js.Array(value :_*))
+      inline def setIgnoredVarargs(value: AnymatchMatcher*): Self = StObject.set(x, "ignored", js.Array(value*))
       
       inline def setPoll(value: Boolean): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
       
@@ -173,8 +171,10 @@ object mod {
   @js.native
   trait SaneWatcher extends EventEmitter {
     
-    @JSName("addListener")
-    def addListener_add(event: add, listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]): this.type = js.native
+    def addListener(
+      event: add | change,
+      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
+    ): this.type = js.native
     @JSName("addListener")
     def addListener_all(
       event: all,
@@ -187,14 +187,9 @@ object mod {
         ]
     ): this.type = js.native
     @JSName("addListener")
-    def addListener_change(
-      event: change,
-      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
-    ): this.type = js.native
-    @JSName("addListener")
     def addListener_delete(event: delete, listener: js.Function2[/* path */ String, /* root */ String, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
     
@@ -203,18 +198,15 @@ object mod {
     
     val dot: Boolean = js.native
     
-    @JSName("emit")
-    def emit_add(event: add, path: String, root: String, stat: Stats): Boolean = js.native
+    def emit(event: add | change, path: String, root: String, stat: Stats): Boolean = js.native
     @JSName("emit")
     def emit_all(event: all, eventType: AllEventType, path: String, root: String): Boolean = js.native
     @JSName("emit")
     def emit_all(event: all, eventType: AllEventType, path: String, root: String, stat: Stats): Boolean = js.native
     @JSName("emit")
-    def emit_change(event: change, path: String, root: String, stat: Stats): Boolean = js.native
-    @JSName("emit")
     def emit_delete(event: delete, path: String, root: String): Boolean = js.native
     @JSName("emit")
-    def emit_error(event: error, error: Error): Boolean = js.native
+    def emit_error(event: error, error: js.Error): Boolean = js.native
     @JSName("emit")
     def emit_ready(event: ready): Boolean = js.native
     
@@ -229,8 +221,10 @@ object mod {
     // tslint:disable-next-line ban-types
     def listeners(event: EventType): js.Array[js.Function] = js.native
     
-    @JSName("on")
-    def on_add(event: add, listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]): this.type = js.native
+    def on(
+      event: add | change,
+      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
+    ): this.type = js.native
     @JSName("on")
     def on_all(
       event: all,
@@ -243,19 +237,16 @@ object mod {
         ]
     ): this.type = js.native
     @JSName("on")
-    def on_change(
-      event: change,
-      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
-    ): this.type = js.native
-    @JSName("on")
     def on_delete(event: delete, listener: js.Function2[/* path */ String, /* root */ String, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
     
-    @JSName("once")
-    def once_add(event: add, listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]): this.type = js.native
+    def once(
+      event: add | change,
+      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
+    ): this.type = js.native
     @JSName("once")
     def once_all(
       event: all,
@@ -268,19 +259,16 @@ object mod {
         ]
     ): this.type = js.native
     @JSName("once")
-    def once_change(
-      event: change,
-      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
-    ): this.type = js.native
-    @JSName("once")
     def once_delete(event: delete, listener: js.Function2[/* path */ String, /* root */ String, Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     @JSName("once")
     def once_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
     
-    @JSName("prependListener")
-    def prependListener_add(event: add, listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]): this.type = js.native
+    def prependListener(
+      event: add | change,
+      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
+    ): this.type = js.native
     @JSName("prependListener")
     def prependListener_all(
       event: all,
@@ -293,19 +281,16 @@ object mod {
         ]
     ): this.type = js.native
     @JSName("prependListener")
-    def prependListener_change(
-      event: change,
-      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
-    ): this.type = js.native
-    @JSName("prependListener")
     def prependListener_delete(event: delete, listener: js.Function2[/* path */ String, /* root */ String, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
     
-    @JSName("prependOnceListener")
-    def prependOnceListener_add(event: add, listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]): this.type = js.native
+    def prependOnceListener(
+      event: add | change,
+      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
+    ): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_all(
       event: all,
@@ -318,21 +303,18 @@ object mod {
         ]
     ): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_change(
-      event: change,
-      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
-    ): this.type = js.native
-    @JSName("prependOnceListener")
     def prependOnceListener_delete(event: delete, listener: js.Function2[/* path */ String, /* root */ String, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
     
     def removeAllListeners(event: EventType): this.type = js.native
     
-    @JSName("removeListener")
-    def removeListener_add(event: add, listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]): this.type = js.native
+    def removeListener(
+      event: add | change,
+      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
+    ): this.type = js.native
     @JSName("removeListener")
     def removeListener_all(
       event: all,
@@ -345,14 +327,9 @@ object mod {
         ]
     ): this.type = js.native
     @JSName("removeListener")
-    def removeListener_change(
-      event: change,
-      listener: js.Function3[/* path */ String, /* root */ String, /* stat */ Stats, Unit]
-    ): this.type = js.native
-    @JSName("removeListener")
     def removeListener_delete(event: delete, listener: js.Function2[/* path */ String, /* root */ String, Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+    def removeListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.SlideRange")
 @js.native
-/* private */ class SlideRange ()
+/* private */ open class SlideRange ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.SlideRange

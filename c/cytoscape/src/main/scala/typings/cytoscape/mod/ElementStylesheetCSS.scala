@@ -10,17 +10,17 @@ trait ElementStylesheetCSS
   extends StObject
      with StylesheetCSS {
   
-  def json(): js.Any
+  def json(): Any
 }
 object ElementStylesheetCSS {
   
-  inline def apply(css: Node | Edge | typings.cytoscape.mod.Css.Core, json: () => js.Any, selector: String): ElementStylesheetCSS = {
+  inline def apply(css: Node | Edge | typings.cytoscape.mod.Css.Core, json: () => Any, selector: String): ElementStylesheetCSS = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementStylesheetCSS]
   }
   
   extension [Self <: ElementStylesheetCSS](x: Self) {
     
-    inline def setJson(value: () => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    inline def setJson(value: () => Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
   }
 }

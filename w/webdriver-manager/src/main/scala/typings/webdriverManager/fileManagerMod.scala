@@ -12,7 +12,7 @@ object fileManagerMod {
   
   @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager")
   @js.native
-  class FileManager () extends StObject
+  open class FileManager () extends StObject
   /* static members */
   object FileManager {
     

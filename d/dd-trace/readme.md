@@ -1,7 +1,7 @@
 
 # Scala.js typings for dd-trace
 
-Typings are for version 0.28.1
+Typings are for version 3.3.1
 
 ## Library description:
 Datadog APM tracing client for JavaScript
@@ -9,11 +9,11 @@ Datadog APM tracing client for JavaScript
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | dd-trace |
-| Keywords           | datadog, trace, tracing, opentracing, apm |
-| # releases         | 144 |
-| # dependents       | 38 |
-| # downloads        | 20773283 |
-| # stars            | 0 |
+| Keywords           | datadog, trace, tracing, profile, profiler, profiling, opentracing, apm |
+| # releases         | 117 |
+| # dependents       | 0.0 |
+| # downloads        | 6253284.0 |
+| # stars            | 382.0 |
 
 ## Links
 - [Homepage](https://github.com/DataDog/dd-trace-js#readme)

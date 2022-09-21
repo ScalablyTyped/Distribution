@@ -17,17 +17,17 @@ object global {
     
     @JSGlobal("Minilog.Console")
     @js.native
-    class Console ()
+    open class Console ()
       extends typings.minilog.mod.Console
     
     @JSGlobal("Minilog.Filter")
     @js.native
-    class Filter ()
+    open class Filter ()
       extends typings.minilog.mod.Filter
     
     @JSGlobal("Minilog.Transform")
     @js.native
-    class Transform ()
+    open class Transform ()
       extends typings.minilog.mod.Transform
     
     @JSGlobal("Minilog.backends")
@@ -37,8 +37,8 @@ object global {
     
     @JSGlobal("Minilog.defaultBackend")
     @js.native
-    def defaultBackend: js.Any = js.native
-    inline def defaultBackend_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultBackend")(x.asInstanceOf[js.Any])
+    def defaultBackend: Any = js.native
+    inline def defaultBackend_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultBackend")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Minilog.defaultFormatter")
     @js.native
@@ -49,7 +49,7 @@ object global {
     
     inline def enable(): typings.minilog.mod.Minilog = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[typings.minilog.mod.Minilog]
     
-    inline def pipe(dest: js.Any): typings.minilog.mod.Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.minilog.mod.Transform]
+    inline def pipe(dest: Any): typings.minilog.mod.Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.minilog.mod.Transform]
     
     @JSGlobal("Minilog.suggest")
     @js.native

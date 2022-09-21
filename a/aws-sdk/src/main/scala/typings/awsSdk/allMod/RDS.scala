@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class RDS () extends ^ {
+open class RDS () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
 object RDS {
@@ -22,7 +22,7 @@ object RDS {
   /**
     * A signer object can be used to generate an auth token to a database.
     */
-  class Signer ()
+  open class Signer ()
     extends typings.awsSdk.rdsMod.Signer {
     def this(options: SignerOptions) = this()
   }

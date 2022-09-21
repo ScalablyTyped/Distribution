@@ -4,26 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Details of the user&#39;s name.
-  */
 trait SchemaName extends StObject {
   
   /**
-    * The user&#39;s last name.  Read-only.
+    * The user's last name. Read-only.
     */
-  var familyName: js.UndefOr[String] = js.undefined
+  var familyName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The user&#39;s full name formed by concatenating the first and last name
-    * values.  Read-only.
+    * The user's full name formed by concatenating the first and last name values. Read-only.
     */
-  var fullName: js.UndefOr[String] = js.undefined
+  var fullName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The user&#39;s first name.  Read-only.
+    * The user's first name. Read-only.
     */
-  var givenName: js.UndefOr[String] = js.undefined
+  var givenName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaName {
   
@@ -36,13 +32,19 @@ object SchemaName {
     
     inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
+    inline def setFamilyNameNull: Self = StObject.set(x, "familyName", null)
+    
     inline def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
     
     inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
+    inline def setFullNameNull: Self = StObject.set(x, "fullName", null)
+    
     inline def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
     inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+    
+    inline def setGivenNameNull: Self = StObject.set(x, "givenName", null)
     
     inline def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
   }

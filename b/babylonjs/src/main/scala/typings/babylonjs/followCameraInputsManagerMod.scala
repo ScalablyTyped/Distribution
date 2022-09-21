@@ -10,7 +10,7 @@ object followCameraInputsManagerMod {
   
   @JSImport("babylonjs/Cameras/followCameraInputsManager", "FollowCameraInputsManager")
   @js.native
-  class FollowCameraInputsManager protected () extends CameraInputsManager[FollowCamera] {
+  open class FollowCameraInputsManager protected () extends CameraInputsManager[FollowCamera] {
     /**
       * Instantiates a new FollowCameraInputsManager.
       * @param camera Defines the camera the inputs belong to

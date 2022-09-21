@@ -1,9 +1,9 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.PartialClassNameMapSnackbAnchorOriginBottomCenter
 import typings.materialUiCore.anon.PartialClickAwayListenerP
 import typings.materialUiCore.anon.PartialSnackbarContentPro
+import typings.materialUiCore.anon.TransitionPropschildrenRe
 import typings.materialUiCore.materialUiCoreStrings.`additions removals`
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -63,6 +63,7 @@ import typings.materialUiCore.transitionMod.TransitionProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -84,10 +85,10 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -97,17 +98,20 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object snackbarSnackbarMod extends Shortcut {
+object snackbarSnackbarMod {
   
-  @JSImport("@material-ui/core/Snackbar/Snackbar", JSImport.Default)
+  @JSImport("@material-ui/core/Snackbar/Snackbar", JSImport.Namespace)
   @js.native
-  val default: ComponentType[SnackbarProps] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(props: SnackbarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiCore.materialUiCoreStrings.root
@@ -136,6 +140,18 @@ object snackbarSnackbarMod extends Shortcut {
     inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.materialUiCore.materialUiCoreStrings.timeout
+    - typings.materialUiCore.materialUiCoreStrings.clickaway
+  */
+  trait SnackbarCloseReason extends StObject
+  object SnackbarCloseReason {
+    
+    inline def clickaway: typings.materialUiCore.materialUiCoreStrings.clickaway = "clickaway".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.clickaway]
+    
+    inline def timeout: typings.materialUiCore.materialUiCoreStrings.timeout = "timeout".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.timeout]
+  }
+  
   trait SnackbarOrigin extends StObject {
     
     var horizontal: left | center | right
@@ -160,29 +176,48 @@ object snackbarSnackbarMod extends Shortcut {
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, @material-ui/core.@material-ui/core/Snackbar/Snackbar.SnackbarClassKey, never> */
   trait SnackbarProps extends StObject {
     
+    /**
+      * Props applied to the `ClickAwayListener` element.
+      */
     var ClickAwayListenerProps: js.UndefOr[PartialClickAwayListenerP] = js.undefined
     
+    /**
+      * Props applied to the [`SnackbarContent`](/api/snackbar-content/) element.
+      */
     var ContentProps: js.UndefOr[PartialSnackbarContentPro] = js.undefined
     
-    var TransitionComponent: js.UndefOr[ComponentType[TransitionProps]] = js.undefined
+    /**
+      * The component used for the transition.
+      * [Follow this guide](/components/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.
+      */
+    var TransitionComponent: js.UndefOr[ComponentType[TransitionPropschildrenRe]] = js.undefined
     
+    /**
+      * Props applied to the [`Transition`](http://reactcommunity.org/react-transition-group/transition#Transition-props) element.
+      */
     var TransitionProps: js.UndefOr[typings.materialUiCore.transitionMod.TransitionProps] = js.undefined
     
     var about: js.UndefOr[String] = js.undefined
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * The action to display. It renders after the message, at the end of the snackbar.
+      */
     var action: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * The anchor of the `Snackbar`.
+      */
     var anchorOrigin: js.UndefOr[SnackbarOrigin] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -200,21 +235,21 @@ object snackbarSnackbarMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -228,11 +263,11 @@ object snackbarSnackbarMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -244,13 +279,13 @@ object snackbarSnackbarMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -260,7 +295,7 @@ object snackbarSnackbarMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -278,14 +313,26 @@ object snackbarSnackbarMod extends Shortcut {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
-    var autoHideDuration: js.UndefOr[Double] = js.undefined
+    /**
+      * The number of milliseconds to wait before automatically calling the
+      * `onClose` function. `onClose` should then set the state of the `open`
+      * prop to hide the Snackbar. This behavior is disabled by default with
+      * the `null` value.
+      */
+    var autoHideDuration: js.UndefOr[Double | Null] = js.undefined
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.undefined
+    /**
+      * Replace the `SnackbarContent` component.
+      */
+    var children: js.UndefOr[ReactElement] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Override or extend the styles applied to the component.
+      */
     var classes: js.UndefOr[PartialClassNameMapSnackbAnchorOriginBottomCenter] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
@@ -304,6 +351,9 @@ object snackbarSnackbarMod extends Shortcut {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * If `true`, the `autoHideDuration` timer will expire even if the window is not focused.
+      */
     var disableWindowBlurListener: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
@@ -312,9 +362,9 @@ object snackbarSnackbarMod extends Shortcut {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -330,8 +380,20 @@ object snackbarSnackbarMod extends Shortcut {
     
     var itemType: js.UndefOr[String] = js.undefined
     
+    /**
+      * When displaying multiple consecutive Snackbars from a parent rendering a single
+      * <Snackbar/>, add the key prop to ensure independent treatment of each message.
+      * e.g. <Snackbar key={message} />, otherwise, the message may update-in-place and
+      * features such as autoHideDuration may be canceled.
+      * @document
+      */
+    var key: js.UndefOr[Any] = js.undefined
+    
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * The message to display.
+      */
     var message: js.UndefOr[ReactNode] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -356,8 +418,18 @@ object snackbarSnackbarMod extends Shortcut {
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback fired when the component requests to be closed.
+      * Typically `onClose` is used to set state in the parent component,
+      * which is used to control the `Snackbar` `open` prop.
+      * The `reason` parameter can optionally be used to control the response to `onClose`,
+      * for example ignoring `clickaway`.
+      *
+      * @param {object} event The event source of the callback.
+      * @param {string} reason Can be: `"timeout"` (`autoHideDuration` expired), `"clickaway"`.
+      */
     var onClose: js.UndefOr[
-        js.Function2[/* event */ SyntheticEvent[js.Any, Event], /* reason */ String, Unit]
+        js.Function2[/* event */ SyntheticEvent[Any, Event], /* reason */ SnackbarCloseReason, Unit]
       ] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -398,19 +470,43 @@ object snackbarSnackbarMod extends Shortcut {
     
     var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onEnter: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired before the transition is entering.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onEnter: js.UndefOr[Any] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired when the transition has entered.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onEntered: js.UndefOr[Any] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired when the transition is entering.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onEntering: js.UndefOr[Any] = js.undefined
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired before the transition is exiting.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onExit: js.UndefOr[Any] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired when the transition has exited.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onExited: js.UndefOr[Any] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired when the transition is exiting.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onExiting: js.UndefOr[Any] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
@@ -434,9 +530,9 @@ object snackbarSnackbarMod extends Shortcut {
     
     var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
+    var onMouseEnter: js.UndefOr[MouseEventHandler[Any]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
+    var onMouseLeave: js.UndefOr[MouseEventHandler[Any]] = js.undefined
     
     var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -508,7 +604,10 @@ object snackbarSnackbarMod extends Shortcut {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    var open: Boolean
+    /**
+      * If `true`, `Snackbar` is open.
+      */
+    var open: js.UndefOr[Boolean] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -518,13 +617,21 @@ object snackbarSnackbarMod extends Shortcut {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The number of milliseconds to wait before dismissing after user interaction.
+      * If `autoHideDuration` prop isn't specified, it does nothing.
+      * If `autoHideDuration` prop is specified but `resumeHideDuration` isn't,
+      * we default to `autoHideDuration / 2` ms.
+      */
     var resumeHideDuration: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -542,7 +649,11 @@ object snackbarSnackbarMod extends Shortcut {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var transitionDuration: js.UndefOr[js.Any] = js.undefined
+    /**
+      * The duration for the transition, in milliseconds.
+      * You may specify a single timeout for all transitions, or individually with an object.
+      */
+    var transitionDuration: js.UndefOr[Any] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
@@ -554,8 +665,8 @@ object snackbarSnackbarMod extends Shortcut {
   }
   object SnackbarProps {
     
-    inline def apply(open: Boolean): SnackbarProps = {
-      val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
+    inline def apply(): SnackbarProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SnackbarProps]
     }
     
@@ -581,7 +692,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -589,7 +700,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -625,7 +736,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -637,7 +748,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -645,7 +756,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -653,7 +764,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -681,15 +792,15 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -713,7 +824,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -723,7 +834,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -743,7 +854,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -781,13 +892,15 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
       
+      inline def setAutoHideDurationNull: Self = StObject.set(x, "autoHideDuration", null)
+      
       inline def setAutoHideDurationUndefined: Self = StObject.set(x, "autoHideDuration", js.undefined)
       
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -835,7 +948,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -857,13 +970,13 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
@@ -897,6 +1010,10 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
@@ -929,7 +1046,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLDivElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -949,7 +1066,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnClose(value: (/* event */ SyntheticEvent[js.Any, Event], /* reason */ String) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+      inline def setOnClose(value: (/* event */ SyntheticEvent[Any, Event], /* reason */ SnackbarCloseReason) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
@@ -1029,15 +1146,15 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      inline def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
       inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      inline def setOnEntered(value: js.Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+      inline def setOnEntered(value: Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
       
       inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
       
-      inline def setOnEntering(value: js.Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+      inline def setOnEntering(value: Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
       
       inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
       
@@ -1045,19 +1162,19 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnExit(value: js.Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+      inline def setOnExit(value: Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
       
       inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      inline def setOnExited(value: js.Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+      inline def setOnExited(value: Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
       
       inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
       
-      inline def setOnExiting(value: js.Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
+      inline def setOnExiting(value: Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
       
       inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLDivElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1101,11 +1218,11 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      inline def setOnMouseEnter(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
       inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      inline def setOnMouseLeave(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
       inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
@@ -1251,6 +1368,8 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
@@ -1267,6 +1386,14 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1279,7 +1406,7 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setResumeHideDurationUndefined: Self = StObject.set(x, "resumeHideDuration", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1315,11 +1442,11 @@ object snackbarSnackbarMod extends Shortcut {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTransitionComponent(value: ComponentType[TransitionProps]): Self = StObject.set(x, "TransitionComponent", value.asInstanceOf[js.Any])
+      inline def setTransitionComponent(value: ComponentType[TransitionPropschildrenRe]): Self = StObject.set(x, "TransitionComponent", value.asInstanceOf[js.Any])
       
       inline def setTransitionComponentUndefined: Self = StObject.set(x, "TransitionComponent", js.undefined)
       
-      inline def setTransitionDuration(value: js.Any): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Any): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
       inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
@@ -1344,9 +1471,4 @@ object snackbarSnackbarMod extends Shortcut {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  type _To = ComponentType[SnackbarProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `snackbarSnackbarMod.foo` */
-  override def _to: ComponentType[SnackbarProps] = default
 }

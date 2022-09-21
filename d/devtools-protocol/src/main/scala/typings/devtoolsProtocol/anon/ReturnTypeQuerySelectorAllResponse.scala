@@ -23,7 +23,7 @@ object ReturnTypeQuerySelectorAllResponse {
     
     inline def setParamsType(value: js.Array[QuerySelectorAllRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: QuerySelectorAllRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: QuerySelectorAllRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: QuerySelectorAllResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

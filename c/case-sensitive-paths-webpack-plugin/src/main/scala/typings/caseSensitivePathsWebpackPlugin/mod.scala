@@ -1,6 +1,6 @@
 package typings.caseSensitivePathsWebpackPlugin
 
-import typings.std.Plugin
+import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,21 +9,33 @@ object mod {
   
   @JSImport("case-sensitive-paths-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with CaseSensitivePathsWebpackPlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
-  @js.native
-  trait CaseSensitivePathsWebpackPlugin
-    extends StObject
-       with Plugin {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ trait CaseSensitivePathsWebpackPlugin extends StObject {
     
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    def apply(compiler: Compiler): Unit
+  }
+  object CaseSensitivePathsWebpackPlugin {
+    
+    inline def apply(apply: Compiler => Unit): CaseSensitivePathsWebpackPlugin = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
+      __obj.asInstanceOf[CaseSensitivePathsWebpackPlugin]
+    }
+    
+    extension [Self <: CaseSensitivePathsWebpackPlugin](x: Self) {
+      
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+    }
   }
   
   trait Options extends StObject {

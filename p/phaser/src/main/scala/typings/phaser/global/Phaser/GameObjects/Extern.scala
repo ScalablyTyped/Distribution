@@ -2,7 +2,6 @@ package typings.phaser.global.Phaser.GameObjects
 
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.Frame
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,17 +15,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * clear down the pipeline and prepare a transform matrix which your render function can
   * take advantage of, if required.
   * 
-  * The WebGL context is then left is a 'clean' state, ready for you to bind your own shaders,
-  * or draw to it, whatever you wish to do. Once you've finished, you should free-up any
-  * of your resources. The Extern will then rebind the Phaser pipeline and carry on 
-  * rendering the display list.
+  * The WebGL context is then left in a 'clean' state, ready for you to bind your own shaders,
+  * or draw to it, whatever you wish to do. This should all take place in the `render` method.
+  * The correct way to deploy an Extern object is to create a class that extends it, then
+  * override the `render` (and optionally `preUpdate`) methods and pass off control to your
+  * 3rd party libraries or custom WebGL code there.
+  * 
+  * Once you've finished, you should free-up any of your resources.
+  * The Extern will then rebind the Phaser pipeline and carry on rendering the display list.
   * 
   * Although this object has lots of properties such as Alpha, Blend Mode and Tint, none of
   * them are used during rendering unless you take advantage of them in your own render code.
   */
 @JSGlobal("Phaser.GameObjects.Extern")
 @js.native
-class Extern protected ()
+open class Extern protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Extern {
   /**
@@ -118,7 +121,7 @@ class Extern protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

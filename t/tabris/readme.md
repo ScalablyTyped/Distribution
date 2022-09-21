@@ -1,7 +1,7 @@
 
 # Scala.js typings for tabris
 
-Typings are for version 3.6.1
+Typings are for version 3.8.0
 
 ## Library description:
 Mobile apps with native UIs in JavaScript
@@ -10,10 +10,10 @@ Mobile apps with native UIs in JavaScript
 | ------------------ | :-------------: |
 | Full name          | tabris |
 | Keywords           | native, mobile, ios, android |
-| # releases         | 916 |
-| # dependents       | 0 |
-| # downloads        | 855181 |
-| # stars            | 3 |
+| # releases         | 1348 |
+| # dependents       | 0.0 |
+| # downloads        | 16958.666666666668 |
+| # stars            | 1352.0 |
 
 ## Links
 - [Homepage](http://tabrisjs.com/)

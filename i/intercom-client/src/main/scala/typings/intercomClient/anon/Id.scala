@@ -1,7 +1,6 @@
 package typings.intercomClient.anon
 
 import typings.intercomClient.companyMod.CompanyIdentifier
-import typings.intercomClient.leadMod.LeadIdentifier
 import typings.intercomClient.userMod.UserIdIdentifier
 import typings.intercomClient.visitorMod.VisitorIdentifier
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Id
   extends StObject
      with CompanyIdentifier
-     with LeadIdentifier
      with UserIdIdentifier
      with VisitorIdentifier {
   

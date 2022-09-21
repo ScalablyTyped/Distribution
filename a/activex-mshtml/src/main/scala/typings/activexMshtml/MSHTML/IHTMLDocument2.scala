@@ -10,34 +10,34 @@ trait IHTMLDocument2 extends StObject {
   /* private */ @JSName("MSHTML.IHTMLDocument2_typekey")
   var MSHTMLDotIHTMLDocument2_typekey: IHTMLDocument2 = js.native
   
-  val Script: js.Any = js.native
+  val Script: Any = js.native
   
   val activeElement: IHTMLElement = js.native
   
-  var alinkColor: js.Any = js.native
+  var alinkColor: Any = js.native
   
-  def all(): js.Any = js.native
-  def all(name: js.Any): js.Any = js.native
-  def all(name: js.Any, index: js.Any): js.Any = js.native
-  def all(name: Unit, index: js.Any): js.Any = js.native
+  def all(): Any = js.native
+  def all(name: Any): Any = js.native
+  def all(name: Any, index: Any): Any = js.native
+  def all(name: Unit, index: Any): Any = js.native
   @JSName("all")
   val all_Original: IHTMLElementCollection = js.native
   
-  def anchors(): js.Any = js.native
-  def anchors(name: js.Any): js.Any = js.native
-  def anchors(name: js.Any, index: js.Any): js.Any = js.native
-  def anchors(name: Unit, index: js.Any): js.Any = js.native
+  def anchors(): Any = js.native
+  def anchors(name: Any): Any = js.native
+  def anchors(name: Any, index: Any): Any = js.native
+  def anchors(name: Unit, index: Any): Any = js.native
   @JSName("anchors")
   val anchors_Original: IHTMLElementCollection = js.native
   
-  def applets(): js.Any = js.native
-  def applets(name: js.Any): js.Any = js.native
-  def applets(name: js.Any, index: js.Any): js.Any = js.native
-  def applets(name: Unit, index: js.Any): js.Any = js.native
+  def applets(): Any = js.native
+  def applets(name: Any): Any = js.native
+  def applets(name: Any, index: Any): Any = js.native
+  def applets(name: Unit, index: Any): Any = js.native
   @JSName("applets")
   val applets_Original: IHTMLElementCollection = js.native
   
-  var bgColor: js.Any = js.native
+  var bgColor: Any = js.native
   
   val body: IHTMLElement = js.native
   
@@ -68,24 +68,24 @@ trait IHTMLDocument2 extends StObject {
   
   def elementFromPoint(x: Double, y: Double): IHTMLElement = js.native
   
-  def embeds(): js.Any = js.native
-  def embeds(name: js.Any): js.Any = js.native
-  def embeds(name: js.Any, index: js.Any): js.Any = js.native
-  def embeds(name: Unit, index: js.Any): js.Any = js.native
+  def embeds(): Any = js.native
+  def embeds(name: Any): Any = js.native
+  def embeds(name: Any, index: Any): Any = js.native
+  def embeds(name: Unit, index: Any): Any = js.native
   @JSName("embeds")
   val embeds_Original: IHTMLElementCollection = js.native
   
   /** @param showUI [showUI=false] */
   def execCommand(cmdID: String): Boolean = js.native
   def execCommand(cmdID: String, showUI: Boolean): Boolean = js.native
-  def execCommand(cmdID: String, showUI: Boolean, value: js.Any): Boolean = js.native
-  def execCommand(cmdID: String, showUI: Unit, value: js.Any): Boolean = js.native
+  def execCommand(cmdID: String, showUI: Boolean, value: Any): Boolean = js.native
+  def execCommand(cmdID: String, showUI: Unit, value: Any): Boolean = js.native
   
   def execCommandShowHelp(cmdID: String): Boolean = js.native
   
   var expando: Boolean = js.native
   
-  var fgColor: js.Any = js.native
+  var fgColor: Any = js.native
   
   val fileCreatedDate: String = js.native
   
@@ -95,32 +95,32 @@ trait IHTMLDocument2 extends StObject {
   
   val fileUpdatedDate: String = js.native
   
-  def forms(): js.Any = js.native
-  def forms(name: js.Any): js.Any = js.native
-  def forms(name: js.Any, index: js.Any): js.Any = js.native
-  def forms(name: Unit, index: js.Any): js.Any = js.native
+  def forms(): Any = js.native
+  def forms(name: Any): Any = js.native
+  def forms(name: Any, index: Any): Any = js.native
+  def forms(name: Unit, index: Any): Any = js.native
   @JSName("forms")
   val forms_Original: IHTMLElementCollection = js.native
   
-  def frames(pvarIndex: js.Any): js.Any = js.native
+  def frames(pvarIndex: Any): Any = js.native
   @JSName("frames")
   val frames_Original: FramesCollection = js.native
   
-  def images(): js.Any = js.native
-  def images(name: js.Any): js.Any = js.native
-  def images(name: js.Any, index: js.Any): js.Any = js.native
-  def images(name: Unit, index: js.Any): js.Any = js.native
+  def images(): Any = js.native
+  def images(name: Any): Any = js.native
+  def images(name: Any, index: Any): Any = js.native
+  def images(name: Unit, index: Any): Any = js.native
   @JSName("images")
   val images_Original: IHTMLElementCollection = js.native
   
   val lastModified: String = js.native
   
-  var linkColor: js.Any = js.native
+  var linkColor: Any = js.native
   
-  def links(): js.Any = js.native
-  def links(name: js.Any): js.Any = js.native
-  def links(name: js.Any, index: js.Any): js.Any = js.native
-  def links(name: Unit, index: js.Any): js.Any = js.native
+  def links(): Any = js.native
+  def links(name: Any): Any = js.native
+  def links(name: Any, index: Any): Any = js.native
+  def links(name: Unit, index: Any): Any = js.native
   @JSName("links")
   val links_Original: IHTMLElementCollection = js.native
   
@@ -130,70 +130,70 @@ trait IHTMLDocument2 extends StObject {
   
   val nameProp: String = js.native
   
-  var onafterupdate: js.Any = js.native
+  var onafterupdate: Any = js.native
   
-  var onbeforeupdate: js.Any = js.native
+  var onbeforeupdate: Any = js.native
   
-  var onclick: js.Any = js.native
+  var onclick: Any = js.native
   
-  var ondblclick: js.Any = js.native
+  var ondblclick: Any = js.native
   
-  var ondragstart: js.Any = js.native
+  var ondragstart: Any = js.native
   
-  var onerrorupdate: js.Any = js.native
+  var onerrorupdate: Any = js.native
   
-  var onhelp: js.Any = js.native
+  var onhelp: Any = js.native
   
-  var onkeydown: js.Any = js.native
+  var onkeydown: Any = js.native
   
-  var onkeypress: js.Any = js.native
+  var onkeypress: Any = js.native
   
-  var onkeyup: js.Any = js.native
+  var onkeyup: Any = js.native
   
-  var onmousedown: js.Any = js.native
+  var onmousedown: Any = js.native
   
-  var onmousemove: js.Any = js.native
+  var onmousemove: Any = js.native
   
-  var onmouseout: js.Any = js.native
+  var onmouseout: Any = js.native
   
-  var onmouseover: js.Any = js.native
+  var onmouseover: Any = js.native
   
-  var onmouseup: js.Any = js.native
+  var onmouseup: Any = js.native
   
-  var onreadystatechange: js.Any = js.native
+  var onreadystatechange: Any = js.native
   
-  var onrowenter: js.Any = js.native
+  var onrowenter: Any = js.native
   
-  var onrowexit: js.Any = js.native
+  var onrowexit: Any = js.native
   
-  var onselectstart: js.Any = js.native
+  var onselectstart: Any = js.native
   
   /** @param url [url='text/html'] */
-  def open(): js.Any = js.native
-  def open(url: String): js.Any = js.native
-  def open(url: String, name: js.Any): js.Any = js.native
-  def open(url: String, name: js.Any, features: js.Any): js.Any = js.native
-  def open(url: String, name: js.Any, features: js.Any, replace: js.Any): js.Any = js.native
-  def open(url: String, name: js.Any, features: Unit, replace: js.Any): js.Any = js.native
-  def open(url: String, name: Unit, features: js.Any): js.Any = js.native
-  def open(url: String, name: Unit, features: js.Any, replace: js.Any): js.Any = js.native
-  def open(url: String, name: Unit, features: Unit, replace: js.Any): js.Any = js.native
-  def open(url: Unit, name: js.Any): js.Any = js.native
-  def open(url: Unit, name: js.Any, features: js.Any): js.Any = js.native
-  def open(url: Unit, name: js.Any, features: js.Any, replace: js.Any): js.Any = js.native
-  def open(url: Unit, name: js.Any, features: Unit, replace: js.Any): js.Any = js.native
-  def open(url: Unit, name: Unit, features: js.Any): js.Any = js.native
-  def open(url: Unit, name: Unit, features: js.Any, replace: js.Any): js.Any = js.native
-  def open(url: Unit, name: Unit, features: Unit, replace: js.Any): js.Any = js.native
+  def open(): Any = js.native
+  def open(url: String): Any = js.native
+  def open(url: String, name: Any): Any = js.native
+  def open(url: String, name: Any, features: Any): Any = js.native
+  def open(url: String, name: Any, features: Any, replace: Any): Any = js.native
+  def open(url: String, name: Any, features: Unit, replace: Any): Any = js.native
+  def open(url: String, name: Unit, features: Any): Any = js.native
+  def open(url: String, name: Unit, features: Any, replace: Any): Any = js.native
+  def open(url: String, name: Unit, features: Unit, replace: Any): Any = js.native
+  def open(url: Unit, name: Any): Any = js.native
+  def open(url: Unit, name: Any, features: Any): Any = js.native
+  def open(url: Unit, name: Any, features: Any, replace: Any): Any = js.native
+  def open(url: Unit, name: Any, features: Unit, replace: Any): Any = js.native
+  def open(url: Unit, name: Unit, features: Any): Any = js.native
+  def open(url: Unit, name: Unit, features: Any, replace: Any): Any = js.native
+  def open(url: Unit, name: Unit, features: Unit, replace: Any): Any = js.native
   
-  def parentWindow(pvarIndex: js.Any): js.Any = js.native
+  def parentWindow(pvarIndex: Any): Any = js.native
   @JSName("parentWindow")
   val parentWindow_Original: IHTMLWindow2 = js.native
   
-  def plugins(): js.Any = js.native
-  def plugins(name: js.Any): js.Any = js.native
-  def plugins(name: js.Any, index: js.Any): js.Any = js.native
-  def plugins(name: Unit, index: js.Any): js.Any = js.native
+  def plugins(): Any = js.native
+  def plugins(name: Any): Any = js.native
+  def plugins(name: Any, index: Any): Any = js.native
+  def plugins(name: Unit, index: Any): Any = js.native
   @JSName("plugins")
   val plugins_Original: IHTMLElementCollection = js.native
   
@@ -209,16 +209,16 @@ trait IHTMLDocument2 extends StObject {
   
   def queryCommandText(cmdID: String): String = js.native
   
-  def queryCommandValue(cmdID: String): js.Any = js.native
+  def queryCommandValue(cmdID: String): Any = js.native
   
   val readyState: String = js.native
   
   val referrer: String = js.native
   
-  def scripts(): js.Any = js.native
-  def scripts(name: js.Any): js.Any = js.native
-  def scripts(name: js.Any, index: js.Any): js.Any = js.native
-  def scripts(name: Unit, index: js.Any): js.Any = js.native
+  def scripts(): Any = js.native
+  def scripts(name: Any): Any = js.native
+  def scripts(name: Any, index: Any): Any = js.native
+  def scripts(name: Unit, index: Any): Any = js.native
   @JSName("scripts")
   val scripts_Original: IHTMLElementCollection = js.native
   
@@ -226,7 +226,7 @@ trait IHTMLDocument2 extends StObject {
   
   val selection: IHTMLSelectionObject = js.native
   
-  def styleSheets(pvarIndex: js.Any): js.Any = js.native
+  def styleSheets(pvarIndex: Any): Any = js.native
   @JSName("styleSheets")
   val styleSheets_Original: IHTMLStyleSheetsCollection = js.native
   
@@ -234,9 +234,9 @@ trait IHTMLDocument2 extends StObject {
   
   var url: String = js.native
   
-  var vlinkColor: js.Any = js.native
+  var vlinkColor: Any = js.native
   
-  def write(psarray: js.Any*): Unit = js.native
+  def write(psarray: Any*): Unit = js.native
   
-  def writeln(psarray: js.Any*): Unit = js.native
+  def writeln(psarray: Any*): Unit = js.native
 }

@@ -21,6 +21,6 @@ object IhideMenuItems {
     
     inline def setMenuList(value: js.Array[menuProtected | menuShare]): Self = StObject.set(x, "menuList", value.asInstanceOf[js.Any])
     
-    inline def setMenuListVarargs(value: (menuProtected | menuShare)*): Self = StObject.set(x, "menuList", js.Array(value :_*))
+    inline def setMenuListVarargs(value: (menuProtected | menuShare)*): Self = StObject.set(x, "menuList", js.Array(value*))
   }
 }

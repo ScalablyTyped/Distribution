@@ -10,10 +10,10 @@ Image processing component for React
 | ------------------ | :-------------: |
 | Full name          | react-imgpro |
 | Keywords           | react, image processing, image, jimp, sepia, colors, invert, image component |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 33723 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 781.6666666666666 |
+| # stars            | 2189.0 |
 
 ## Links
 - [Homepage](https://github.com/nitin42/react-imgpro#readme)

@@ -47,7 +47,7 @@ object SceneViewToMapOptions {
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: (IntersectItem | Collection[IntersectItem] | js.Array[IntersectItem] | Ground)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: (IntersectItem | Collection[IntersectItem] | js.Array[IntersectItem] | Ground)*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setInclude(
       value: (js.Array[IntersectItem | Collection[IntersectItem] | js.Array[IntersectItem] | Ground]) | Collection[IntersectItem] | IntersectItem
@@ -55,6 +55,6 @@ object SceneViewToMapOptions {
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: (IntersectItem | Collection[IntersectItem] | js.Array[IntersectItem] | Ground)*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: (IntersectItem | Collection[IntersectItem] | js.Array[IntersectItem] | Ground)*): Self = StObject.set(x, "include", js.Array(value*))
   }
 }

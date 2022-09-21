@@ -19,16 +19,12 @@ trait ProductInformationFilter extends StObject {
   /**
     * Filter value.
     */
-  var ProductInformationFilterValue: StringList
+  var ProductInformationFilterValue: js.UndefOr[StringList] = js.undefined
 }
 object ProductInformationFilter {
   
-  inline def apply(
-    ProductInformationFilterComparator: String,
-    ProductInformationFilterName: String,
-    ProductInformationFilterValue: StringList
-  ): ProductInformationFilter = {
-    val __obj = js.Dynamic.literal(ProductInformationFilterComparator = ProductInformationFilterComparator.asInstanceOf[js.Any], ProductInformationFilterName = ProductInformationFilterName.asInstanceOf[js.Any], ProductInformationFilterValue = ProductInformationFilterValue.asInstanceOf[js.Any])
+  inline def apply(ProductInformationFilterComparator: String, ProductInformationFilterName: String): ProductInformationFilter = {
+    val __obj = js.Dynamic.literal(ProductInformationFilterComparator = ProductInformationFilterComparator.asInstanceOf[js.Any], ProductInformationFilterName = ProductInformationFilterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductInformationFilter]
   }
   
@@ -40,6 +36,8 @@ object ProductInformationFilter {
     
     inline def setProductInformationFilterValue(value: StringList): Self = StObject.set(x, "ProductInformationFilterValue", value.asInstanceOf[js.Any])
     
-    inline def setProductInformationFilterValueVarargs(value: String*): Self = StObject.set(x, "ProductInformationFilterValue", js.Array(value :_*))
+    inline def setProductInformationFilterValueUndefined: Self = StObject.set(x, "ProductInformationFilterValue", js.undefined)
+    
+    inline def setProductInformationFilterValueVarargs(value: String*): Self = StObject.set(x, "ProductInformationFilterValue", js.Array(value*))
   }
 }

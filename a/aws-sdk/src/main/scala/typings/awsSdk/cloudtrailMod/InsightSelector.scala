@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InsightSelector extends StObject {
   
   /**
-    * The type of insights to log on a trail. In this release, only ApiCallRateInsight is supported as an insight type.
+    * The type of insights to log on a trail. ApiCallRateInsight and ApiErrorRateInsight are valid insight types.
     */
   var InsightType: js.UndefOr[typings.awsSdk.cloudtrailMod.InsightType] = js.undefined
 }

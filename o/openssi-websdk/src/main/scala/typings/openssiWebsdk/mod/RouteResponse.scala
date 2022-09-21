@@ -19,6 +19,6 @@ object RouteResponse {
     
     inline def setAgents(value: js.Array[AgentResponse]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     
-    inline def setAgentsVarargs(value: AgentResponse*): Self = StObject.set(x, "agents", js.Array(value :_*))
+    inline def setAgentsVarargs(value: AgentResponse*): Self = StObject.set(x, "agents", js.Array(value*))
   }
 }

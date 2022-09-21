@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "AnyArrayType")
 @js.native
-class AnyArrayType ()
-  extends Type_[js.Array[js.Any], js.Array[js.Any], js.Any] {
+open class AnyArrayType ()
+  extends Type_[js.Array[Any], js.Array[Any], Any] {
   
   /**
     * @since 1.0.0

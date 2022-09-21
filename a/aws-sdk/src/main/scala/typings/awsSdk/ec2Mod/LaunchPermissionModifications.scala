@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LaunchPermissionModifications extends StObject {
   
   /**
-    * The AWS account ID to add to the list of launch permissions for the AMI.
+    * The Amazon Web Services account ID, organization ARN, or OU ARN to add to the list of launch permissions for the AMI.
     */
   var Add: js.UndefOr[LaunchPermissionList] = js.undefined
   
   /**
-    * The AWS account ID to remove from the list of launch permissions for the AMI.
+    * The Amazon Web Services account ID, organization ARN, or OU ARN to remove from the list of launch permissions for the AMI.
     */
   var Remove: js.UndefOr[LaunchPermissionList] = js.undefined
 }
@@ -29,12 +29,12 @@ object LaunchPermissionModifications {
     
     inline def setAddUndefined: Self = StObject.set(x, "Add", js.undefined)
     
-    inline def setAddVarargs(value: LaunchPermission*): Self = StObject.set(x, "Add", js.Array(value :_*))
+    inline def setAddVarargs(value: LaunchPermission*): Self = StObject.set(x, "Add", js.Array(value*))
     
     inline def setRemove(value: LaunchPermissionList): Self = StObject.set(x, "Remove", value.asInstanceOf[js.Any])
     
     inline def setRemoveUndefined: Self = StObject.set(x, "Remove", js.undefined)
     
-    inline def setRemoveVarargs(value: LaunchPermission*): Self = StObject.set(x, "Remove", js.Array(value :_*))
+    inline def setRemoveVarargs(value: LaunchPermission*): Self = StObject.set(x, "Remove", js.Array(value*))
   }
 }

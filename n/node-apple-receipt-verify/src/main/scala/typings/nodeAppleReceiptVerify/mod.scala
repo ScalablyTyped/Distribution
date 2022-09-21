@@ -150,7 +150,7 @@ object mod {
       
       inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      inline def setEnvironmentVarargs(value: String*): Self = StObject.set(x, "environment", js.Array(value :_*))
+      inline def setEnvironmentVarargs(value: String*): Self = StObject.set(x, "environment", js.Array(value*))
       
       inline def setExcludeOldTransactions(value: Boolean): Self = StObject.set(x, "excludeOldTransactions", value.asInstanceOf[js.Any])
       

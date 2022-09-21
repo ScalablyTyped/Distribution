@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "CodeLens")
 @js.native
-class CodeLens protected () extends StObject {
+open class CodeLens protected () extends StObject {
   /**
     * Creates a new code lens object.
     *

@@ -21,10 +21,10 @@ trait BubbleChart
   var brushOn_Original: IGetSet[Boolean, BubbleChart] = js.native
   
   def chartBodyG(): Selection_[
-    js.Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+    Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
     BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
   ] = js.native
   
   def clipPadding(): Double = js.native
@@ -48,29 +48,29 @@ trait BubbleChart
   var elasticY_Original: IGetSet[Boolean, BubbleChart] = js.native
   
   def focus(): Unit = js.native
-  def focus(range: js.Array[js.Any]): Unit = js.native
+  def focus(range: js.Array[Any]): Unit = js.native
   
   def g(): Selection_[
-    js.Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+    Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
     BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
   ] = js.native
   def g(
     t: Selection_[
-      js.Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ]
   ): BubbleChart = js.native
   @JSName("g")
   var g_Original: IGetSet[
     Selection_[
-      js.Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ], 
     BubbleChart
   ] = js.native
@@ -82,10 +82,10 @@ trait BubbleChart
   @JSName("mouseZoomable")
   var mouseZoomable_Original: IGetSet[Boolean, BubbleChart] = js.native
   
-  def rangeChart(): BaseMixin[js.Any] = js.native
-  def rangeChart(t: BaseMixin[js.Any]): BubbleChart = js.native
+  def rangeChart(): BaseMixin[Any] = js.native
+  def rangeChart(t: BaseMixin[Any]): BubbleChart = js.native
   @JSName("rangeChart")
-  var rangeChart_Original: IGetSet[BaseMixin[js.Any], BubbleChart] = js.native
+  var rangeChart_Original: IGetSet[BaseMixin[Any], BubbleChart] = js.native
   
   def renderHorizontalGridLines(): Boolean = js.native
   def renderHorizontalGridLines(t: Boolean): BubbleChart = js.native
@@ -97,22 +97,22 @@ trait BubbleChart
   @JSName("renderVerticalGridLines")
   var renderVerticalGridLines_Original: IGetSet[Boolean, BubbleChart] = js.native
   
-  def round(): js.Function1[/* value */ js.Any, js.Any] = js.native
-  def round(t: js.Function1[/* value */ js.Any, js.Any]): BubbleChart = js.native
+  def round(): js.Function1[/* value */ Any, Any] = js.native
+  def round(t: js.Function1[/* value */ Any, Any]): BubbleChart = js.native
   @JSName("round")
-  var round_Original: IGetSet[js.Function1[/* value */ js.Any, js.Any], BubbleChart] = js.native
+  var round_Original: IGetSet[js.Function1[/* value */ Any, Any], BubbleChart] = js.native
   
   def useRightYAxis(): Boolean = js.native
   def useRightYAxis(t: Boolean): BubbleChart = js.native
   @JSName("useRightYAxis")
   var useRightYAxis_Original: IGetSet[Boolean, BubbleChart] = js.native
   
-  def x(): js.Function1[/* n */ js.Any, js.Any] = js.native
-  def x(t: js.Function1[/* n */ js.Any, js.Any]): BubbleChart = js.native
+  def x(): js.Function1[/* n */ Any, Any] = js.native
+  def x(t: js.Function1[/* n */ Any, Any]): BubbleChart = js.native
   
-  def xAxis(): js.Any = js.native
+  def xAxis(): Any = js.native
   def xAxis(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
+    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any
   ): BubbleChart = js.native
   
   def xAxisLabel(): String = js.native
@@ -121,9 +121,9 @@ trait BubbleChart
   @JSName("xAxisLabel")
   var xAxisLabel_Original: IBiGetSet[String, Double, BubbleChart] = js.native
   
-  def xAxisMax(): js.Any = js.native
+  def xAxisMax(): Any = js.native
   
-  def xAxisMin(): js.Any = js.native
+  def xAxisMin(): Any = js.native
   
   def xAxisPadding(): Double = js.native
   def xAxisPadding(t: Double): BubbleChart = js.native
@@ -132,7 +132,7 @@ trait BubbleChart
   
   @JSName("xAxis")
   var xAxis_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any, 
     BubbleChart
   ] = js.native
   
@@ -144,14 +144,14 @@ trait BubbleChart
   var xUnits_Original: IGetSet[UnitFunction, BubbleChart] = js.native
   
   @JSName("x")
-  var x_Original: IGetSet[js.Function1[/* n */ js.Any, js.Any], BubbleChart] = js.native
+  var x_Original: IGetSet[js.Function1[/* n */ Any, Any], BubbleChart] = js.native
   
   def y(): Scale[Double] = js.native
   def y(t: Scale[Double]): BubbleChart = js.native
   
-  def yAxis(): js.Any = js.native
+  def yAxis(): Any = js.native
   def yAxis(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
+    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any
   ): BubbleChart = js.native
   
   def yAxisLabel(): String = js.native
@@ -160,9 +160,9 @@ trait BubbleChart
   @JSName("yAxisLabel")
   var yAxisLabel_Original: IBiGetSet[String, Double, BubbleChart] = js.native
   
-  def yAxisMax(): js.Any = js.native
+  def yAxisMax(): Any = js.native
   
-  def yAxisMin(): js.Any = js.native
+  def yAxisMin(): Any = js.native
   
   def yAxisPadding(): Double = js.native
   def yAxisPadding(t: Double): BubbleChart = js.native
@@ -171,7 +171,7 @@ trait BubbleChart
   
   @JSName("yAxis")
   var yAxis_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any, 
     BubbleChart
   ] = js.native
   
@@ -183,8 +183,8 @@ trait BubbleChart
   @JSName("zoomOutRestrict")
   var zoomOutRestrict_Original: IGetSet[Boolean, BubbleChart] = js.native
   
-  def zoomScale(): js.Array[js.Any] = js.native
-  def zoomScale(t: js.Array[js.Any]): BubbleChart = js.native
+  def zoomScale(): js.Array[Any] = js.native
+  def zoomScale(t: js.Array[Any]): BubbleChart = js.native
   @JSName("zoomScale")
-  var zoomScale_Original: IGetSet[js.Array[js.Any], BubbleChart] = js.native
+  var zoomScale_Original: IGetSet[js.Array[Any], BubbleChart] = js.native
 }

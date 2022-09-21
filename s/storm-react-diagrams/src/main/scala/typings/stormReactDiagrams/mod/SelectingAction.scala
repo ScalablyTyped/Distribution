@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "SelectingAction")
 @js.native
-class SelectingAction protected ()
+open class SelectingAction protected ()
   extends typings.stormReactDiagrams.selectingActionMod.SelectingAction {
   def this(mouseX: Double, mouseY: Double) = this()
 }

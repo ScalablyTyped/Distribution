@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "DelayedRender")
 @js.native
-class DelayedRender protected ()
+open class DelayedRender protected ()
   extends typings.officeUiFabricReact.utilitiesMod.DelayedRender {
   def this(props: IDelayedRenderProps) = this()
 }

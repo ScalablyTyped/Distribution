@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "Map")
 @js.native
-class Map_ protected ()
+open class Map_ protected ()
   extends StObject
      with IEventEmitter {
   def this(parentElement: String, state: IMapState) = this()

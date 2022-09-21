@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.Setting.IEntry
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Setting.
   * @param [properties] Properties to set
   */
-class Setting ()
+open class Setting ()
   extends StObject
      with ISetting {
   def this(properties: ISetting) = this()
@@ -29,7 +28,7 @@ class Setting ()
     * Converts this Setting to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object Setting {
@@ -45,7 +44,7 @@ object Setting {
     * Constructs a new Entry.
     * @param [properties] Properties to set
     */
-  class Entry ()
+  open class Entry ()
     extends StObject
        with IEntry {
     def this(properties: IEntry) = this()
@@ -58,7 +57,7 @@ object Setting {
       * Converts this Entry to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     /** Entry value. */
     @JSName("value")
@@ -79,6 +78,8 @@ object Setting {
     inline def create(): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Entry]
     inline def create(properties: IEntry): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Entry]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entry]
     /**
       * Decodes an Entry message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -90,9 +91,8 @@ object Setting {
     /* static member */
     inline def decode(reader: Reader): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
     inline def decode(reader: Reader, length: Double): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entry]
-    inline def decode(reader: Uint8Array): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
-    inline def decode(reader: Uint8Array, length: Double): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entry]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
     /**
       * Decodes an Entry message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -102,7 +102,6 @@ object Setting {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
-    inline def decodeDelimited(reader: Uint8Array): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
     
     /**
       * Encodes the specified Entry message. Does not implicitly {@link Setting.Entry.verify|verify} messages.
@@ -130,7 +129,7 @@ object Setting {
       * @returns Entry
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Entry]
+    inline def fromObject(`object`: StringDictionary[Any]): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Entry]
     
     /**
       * Creates a plain object from an Entry message. Also converts values to other types if specified.
@@ -139,8 +138,8 @@ object Setting {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Entry): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Entry, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Entry): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Entry, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an Entry message.
@@ -148,7 +147,7 @@ object Setting {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -159,6 +158,8 @@ object Setting {
   inline def create(): Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Setting]
   inline def create(properties: ISetting): Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Setting]
   
+  inline def decode(reader: js.typedarray.Uint8Array): Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Setting]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): Setting = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Setting]
   /**
     * Decodes a Setting message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -169,9 +170,8 @@ object Setting {
     */
   inline def decode(reader: Reader): Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Setting]
   inline def decode(reader: Reader, length: Double): Setting = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Setting]
-  inline def decode(reader: Uint8Array): Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Setting]
-  inline def decode(reader: Uint8Array, length: Double): Setting = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Setting]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Setting]
   /**
     * Decodes a Setting message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -180,7 +180,6 @@ object Setting {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Setting]
-  inline def decodeDelimited(reader: Uint8Array): Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Setting]
   
   /**
     * Encodes the specified Setting message. Does not implicitly {@link Setting.verify|verify} messages.
@@ -205,7 +204,7 @@ object Setting {
     * @param object Plain object
     * @returns Setting
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Setting]
+  inline def fromObject(`object`: StringDictionary[Any]): Setting = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Setting]
   
   /**
     * Creates a plain object from a Setting message. Also converts values to other types if specified.
@@ -213,15 +212,15 @@ object Setting {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: Setting): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: Setting, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Setting): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: Setting, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a Setting message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Entry. */
   trait IEntry extends StObject {

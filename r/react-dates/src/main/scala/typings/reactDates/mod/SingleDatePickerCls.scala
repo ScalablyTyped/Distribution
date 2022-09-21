@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("react-dates", "SingleDatePicker")
 @js.native
-class SingleDatePickerCls protected ()
-  extends Component[typings.reactDates.mod.SingleDatePickerShape, ComponentState, js.Any] {
+open class SingleDatePickerCls protected ()
+  extends Component[typings.reactDates.mod.SingleDatePickerShape, ComponentState, Any] {
   def this(props: typings.reactDates.mod.SingleDatePickerShape) = this()
-  def this(props: typings.reactDates.mod.SingleDatePickerShape, context: js.Any) = this()
+  def this(props: typings.reactDates.mod.SingleDatePickerShape, context: Any) = this()
 }

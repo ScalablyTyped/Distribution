@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommandInvocation extends StObject {
   
   /**
-    * CloudWatch Logs information where you want Systems Manager to send the command output.
+    * Amazon CloudWatch Logs information where you want Amazon Web Services Systems Manager to send the command output.
     */
   var CloudWatchOutputConfig: js.UndefOr[typings.awsSdk.ssmMod.CloudWatchOutputConfig] = js.undefined
   
@@ -16,6 +16,9 @@ trait CommandInvocation extends StObject {
     */
   var CommandId: js.UndefOr[typings.awsSdk.ssmMod.CommandId] = js.undefined
   
+  /**
+    * Plugins processed by the command.
+    */
   var CommandPlugins: js.UndefOr[CommandPluginList] = js.undefined
   
   /**
@@ -29,42 +32,42 @@ trait CommandInvocation extends StObject {
   var DocumentName: js.UndefOr[typings.awsSdk.ssmMod.DocumentName] = js.undefined
   
   /**
-    * The SSM document version.
+    * The Systems Manager document (SSM document) version.
     */
   var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
-    * The instance ID in which this invocation was requested.
+    * The managed node ID in which this invocation was requested.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
-    * The name of the invocation target. For EC2 instances this is the value for the aws:Name tag. For on-premises instances, this is the name of the instance.
+    * The fully qualified host name of the managed node.
     */
   var InstanceName: js.UndefOr[InstanceTagName] = js.undefined
   
   /**
-    * Configurations for sending notifications about command status changes on a per instance basis.
+    * Configurations for sending notifications about command status changes on a per managed node basis.
     */
   var NotificationConfig: js.UndefOr[typings.awsSdk.ssmMod.NotificationConfig] = js.undefined
   
   /**
-    * The time and date the request was sent to this instance.
+    * The time and date the request was sent to this managed node.
     */
-  var RequestedDateTime: js.UndefOr[DateTime] = js.undefined
+  var RequestedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The IAM service role that Run Command uses to act on your behalf when sending notifications about command status changes on a per instance basis.
+    * The Identity and Access Management (IAM) service role that Run Command, a capability of Amazon Web Services Systems Manager, uses to act on your behalf when sending notifications about command status changes on a per managed node basis.
     */
   var ServiceRole: js.UndefOr[typings.awsSdk.ssmMod.ServiceRole] = js.undefined
   
   /**
-    * The URL to the plugin's StdErr file in Amazon S3, if the S3 bucket was defined for the parent command. For an invocation, StandardErrorUrl is populated if there is just one plugin defined for the command, and the S3 bucket was defined for the command.
+    * The URL to the plugin's StdErr file in Amazon Simple Storage Service (Amazon S3), if the S3 bucket was defined for the parent command. For an invocation, StandardErrorUrl is populated if there is just one plugin defined for the command, and the S3 bucket was defined for the command.
     */
   var StandardErrorUrl: js.UndefOr[Url] = js.undefined
   
   /**
-    * The URL to the plugin's StdOut file in Amazon S3, if the S3 bucket was defined for the parent command. For an invocation, StandardOutputUrl is populated if there is just one plugin defined for the command, and the S3 bucket was defined for the command.
+    * The URL to the plugin's StdOut file in Amazon Simple Storage Service (Amazon S3), if the S3 bucket was defined for the parent command. For an invocation, StandardOutputUrl is populated if there is just one plugin defined for the command, and the S3 bucket was defined for the command.
     */
   var StandardOutputUrl: js.UndefOr[Url] = js.undefined
   
@@ -74,7 +77,7 @@ trait CommandInvocation extends StObject {
   var Status: js.UndefOr[CommandInvocationStatus] = js.undefined
   
   /**
-    * A detailed status of the command execution for each invocation (each instance targeted by the command). StatusDetails includes more information than Status because it includes states resulting from error and concurrency control parameters. StatusDetails can show different results than Status. For more information about these statuses, see Understanding command statuses in the AWS Systems Manager User Guide. StatusDetails can be one of the following values:   Pending: The command has not been sent to the instance.   In Progress: The command has been sent to the instance but has not reached a terminal state.   Success: The execution of the command or plugin was successfully completed. This is a terminal state.   Delivery Timed Out: The command was not delivered to the instance before the delivery timeout expired. Delivery timeouts do not count against the parent command's MaxErrors limit, but they do contribute to whether the parent command status is Success or Incomplete. This is a terminal state.   Execution Timed Out: Command execution started on the instance, but the execution was not complete before the execution timeout expired. Execution timeouts count against the MaxErrors limit of the parent command. This is a terminal state.   Failed: The command was not successful on the instance. For a plugin, this indicates that the result code was not zero. For a command invocation, this indicates that the result code for one or more plugins was not zero. Invocation failures count against the MaxErrors limit of the parent command. This is a terminal state.   Canceled: The command was terminated before it was completed. This is a terminal state.   Undeliverable: The command can't be delivered to the instance. The instance might not exist or might not be responding. Undeliverable invocations don't count against the parent command's MaxErrors limit and don't contribute to whether the parent command status is Success or Incomplete. This is a terminal state.   Terminated: The parent command exceeded its MaxErrors limit and subsequent command invocations were canceled by the system. This is a terminal state.  
+    * A detailed status of the command execution for each invocation (each managed node targeted by the command). StatusDetails includes more information than Status because it includes states resulting from error and concurrency control parameters. StatusDetails can show different results than Status. For more information about these statuses, see Understanding command statuses in the Amazon Web Services Systems Manager User Guide. StatusDetails can be one of the following values:   Pending: The command hasn't been sent to the managed node.   In Progress: The command has been sent to the managed node but hasn't reached a terminal state.   Success: The execution of the command or plugin was successfully completed. This is a terminal state.   Delivery Timed Out: The command wasn't delivered to the managed node before the delivery timeout expired. Delivery timeouts don't count against the parent command's MaxErrors limit, but they do contribute to whether the parent command status is Success or Incomplete. This is a terminal state.   Execution Timed Out: Command execution started on the managed node, but the execution wasn't complete before the execution timeout expired. Execution timeouts count against the MaxErrors limit of the parent command. This is a terminal state.   Failed: The command wasn't successful on the managed node. For a plugin, this indicates that the result code wasn't zero. For a command invocation, this indicates that the result code for one or more plugins wasn't zero. Invocation failures count against the MaxErrors limit of the parent command. This is a terminal state.   Cancelled: The command was terminated before it was completed. This is a terminal state.   Undeliverable: The command can't be delivered to the managed node. The managed node might not exist or might not be responding. Undeliverable invocations don't count against the parent command's MaxErrors limit and don't contribute to whether the parent command status is Success or Incomplete. This is a terminal state.   Terminated: The parent command exceeded its MaxErrors limit and subsequent command invocations were canceled by the system. This is a terminal state.   Delayed: The system attempted to send the command to the managed node but wasn't successful. The system retries again.  
     */
   var StatusDetails: js.UndefOr[typings.awsSdk.ssmMod.StatusDetails] = js.undefined
   
@@ -104,7 +107,7 @@ object CommandInvocation {
     
     inline def setCommandPluginsUndefined: Self = StObject.set(x, "CommandPlugins", js.undefined)
     
-    inline def setCommandPluginsVarargs(value: CommandPlugin*): Self = StObject.set(x, "CommandPlugins", js.Array(value :_*))
+    inline def setCommandPluginsVarargs(value: CommandPlugin*): Self = StObject.set(x, "CommandPlugins", js.Array(value*))
     
     inline def setComment(value: Comment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
@@ -130,7 +133,7 @@ object CommandInvocation {
     
     inline def setNotificationConfigUndefined: Self = StObject.set(x, "NotificationConfig", js.undefined)
     
-    inline def setRequestedDateTime(value: DateTime): Self = StObject.set(x, "RequestedDateTime", value.asInstanceOf[js.Any])
+    inline def setRequestedDateTime(value: js.Date): Self = StObject.set(x, "RequestedDateTime", value.asInstanceOf[js.Any])
     
     inline def setRequestedDateTimeUndefined: Self = StObject.set(x, "RequestedDateTime", js.undefined)
     

@@ -8,5 +8,5 @@ object metricsFilterMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_MetricsFilter", "_MetricsFilter")
   @js.native
-  val MetricsFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val MetricsFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

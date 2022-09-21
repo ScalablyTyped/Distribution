@@ -4,7 +4,6 @@ import typings.babylonjs.mathMod.Vector3
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.transformNodeMod.TransformNode
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,13 @@ object inavigationengineMod {
     var radius: Double
     
     /**
-      * How aggresive the agent manager should be at avoiding collisions with this agent. [Limit: >= 0]
+      * Observers will be notified when agent gets inside the virtual circle with this Radius around destination point.
+      * Default is agent radius
+      */
+    var reachRadius: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * How aggressive the agent manager should be at avoiding collisions with this agent. [Limit: >= 0]
       */
     var separationWeight: Double
   }
@@ -76,6 +81,10 @@ object inavigationengineMod {
       inline def setPathOptimizationRange(value: Double): Self = StObject.set(x, "pathOptimizationRange", value.asInstanceOf[js.Any])
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      
+      inline def setReachRadius(value: Double): Self = StObject.set(x, "reachRadius", value.asInstanceOf[js.Any])
+      
+      inline def setReachRadiusUndefined: Self = StObject.set(x, "reachRadius", js.undefined)
       
       inline def setSeparationWeight(value: Double): Self = StObject.set(x, "separationWeight", value.asInstanceOf[js.Any])
     }
@@ -168,6 +177,13 @@ object inavigationengineMod {
     def getAgents(): js.Array[Double]
     
     /**
+      * Get the next corner points composing the path (max 4 points)
+      * @param index agent index returned by addAgent
+      * @returns array containing world position composing the path
+      */
+    def getCorners(index: Double): js.Array[Vector3]
+    
+    /**
       * Get the Bounding box extent specified by setDefaultQueryExtent
       * @returns the box extent values
       */
@@ -228,6 +244,7 @@ object inavigationengineMod {
       getAgentVelocity: Double => Vector3,
       getAgentVelocityToRef: (Double, Vector3) => Unit,
       getAgents: () => js.Array[Double],
+      getCorners: Double => js.Array[Vector3],
       getDefaultQueryExtent: () => Vector3,
       getDefaultQueryExtentToRef: Vector3 => Unit,
       overOffmeshConnection: Double => Boolean,
@@ -236,7 +253,7 @@ object inavigationengineMod {
       update: Double => Unit,
       updateAgentParameters: (Double, IAgentParameters) => Unit
     ): ICrowd = {
-      val __obj = js.Dynamic.literal(addAgent = js.Any.fromFunction3(addAgent), agentGoto = js.Any.fromFunction2(agentGoto), agentTeleport = js.Any.fromFunction2(agentTeleport), dispose = js.Any.fromFunction0(dispose), getAgentNextTargetPath = js.Any.fromFunction1(getAgentNextTargetPath), getAgentNextTargetPathToRef = js.Any.fromFunction2(getAgentNextTargetPathToRef), getAgentPosition = js.Any.fromFunction1(getAgentPosition), getAgentPositionToRef = js.Any.fromFunction2(getAgentPositionToRef), getAgentState = js.Any.fromFunction1(getAgentState), getAgentVelocity = js.Any.fromFunction1(getAgentVelocity), getAgentVelocityToRef = js.Any.fromFunction2(getAgentVelocityToRef), getAgents = js.Any.fromFunction0(getAgents), getDefaultQueryExtent = js.Any.fromFunction0(getDefaultQueryExtent), getDefaultQueryExtentToRef = js.Any.fromFunction1(getDefaultQueryExtentToRef), overOffmeshConnection = js.Any.fromFunction1(overOffmeshConnection), removeAgent = js.Any.fromFunction1(removeAgent), setDefaultQueryExtent = js.Any.fromFunction1(setDefaultQueryExtent), update = js.Any.fromFunction1(update), updateAgentParameters = js.Any.fromFunction2(updateAgentParameters))
+      val __obj = js.Dynamic.literal(addAgent = js.Any.fromFunction3(addAgent), agentGoto = js.Any.fromFunction2(agentGoto), agentTeleport = js.Any.fromFunction2(agentTeleport), dispose = js.Any.fromFunction0(dispose), getAgentNextTargetPath = js.Any.fromFunction1(getAgentNextTargetPath), getAgentNextTargetPathToRef = js.Any.fromFunction2(getAgentNextTargetPathToRef), getAgentPosition = js.Any.fromFunction1(getAgentPosition), getAgentPositionToRef = js.Any.fromFunction2(getAgentPositionToRef), getAgentState = js.Any.fromFunction1(getAgentState), getAgentVelocity = js.Any.fromFunction1(getAgentVelocity), getAgentVelocityToRef = js.Any.fromFunction2(getAgentVelocityToRef), getAgents = js.Any.fromFunction0(getAgents), getCorners = js.Any.fromFunction1(getCorners), getDefaultQueryExtent = js.Any.fromFunction0(getDefaultQueryExtent), getDefaultQueryExtentToRef = js.Any.fromFunction1(getDefaultQueryExtentToRef), overOffmeshConnection = js.Any.fromFunction1(overOffmeshConnection), removeAgent = js.Any.fromFunction1(removeAgent), setDefaultQueryExtent = js.Any.fromFunction1(setDefaultQueryExtent), update = js.Any.fromFunction1(update), updateAgentParameters = js.Any.fromFunction2(updateAgentParameters))
       __obj.asInstanceOf[ICrowd]
     }
     
@@ -266,6 +283,8 @@ object inavigationengineMod {
       
       inline def setGetAgents(value: () => js.Array[Double]): Self = StObject.set(x, "getAgents", js.Any.fromFunction0(value))
       
+      inline def setGetCorners(value: Double => js.Array[Vector3]): Self = StObject.set(x, "getCorners", js.Any.fromFunction1(value))
+      
       inline def setGetDefaultQueryExtent(value: () => Vector3): Self = StObject.set(x, "getDefaultQueryExtent", js.Any.fromFunction0(value))
       
       inline def setGetDefaultQueryExtentToRef(value: Vector3 => Unit): Self = StObject.set(x, "getDefaultQueryExtentToRef", js.Any.fromFunction1(value))
@@ -283,6 +302,11 @@ object inavigationengineMod {
   }
   
   trait INavMeshParameters extends StObject {
+    
+    /**
+      * The size of the non-navigable border around the heightfield.
+      */
+    var borderSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The y-axis cell size to use for fields. [Limit: > 0] [Units: wu]
@@ -312,7 +336,7 @@ object inavigationengineMod {
     var maxEdgeLen: Double
     
     /**
-      * The maximum distance a simplfied contour's border edges should deviate
+      * The maximum distance a simplified contour's border edges should deviate
       * the original raw contour. [Limit: >=0] [Units: vx]
       */
     var maxSimplificationError: Double
@@ -333,6 +357,13 @@ object inavigationengineMod {
       * The minimum number of cells allowed to form isolated island areas. [Limit: >=0] [Units: vx]
       */
     var minRegionArea: Double
+    
+    /**
+      * If using obstacles, the navmesh must be subdivided internaly by tiles.
+      * This member defines the tile cube side length in world units.
+      * If no obstacles are needed, leave it undefined or 0.
+      */
+    var tileSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum ledge height that is considered to still be traversable. [Limit: >=0] [Units: vx]
@@ -379,6 +410,10 @@ object inavigationengineMod {
     
     extension [Self <: INavMeshParameters](x: Self) {
       
+      inline def setBorderSize(value: Double): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
+      
+      inline def setBorderSizeUndefined: Self = StObject.set(x, "borderSize", js.undefined)
+      
       inline def setCh(value: Double): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
       
       inline def setCs(value: Double): Self = StObject.set(x, "cs", value.asInstanceOf[js.Any])
@@ -397,6 +432,10 @@ object inavigationengineMod {
       
       inline def setMinRegionArea(value: Double): Self = StObject.set(x, "minRegionArea", value.asInstanceOf[js.Any])
       
+      inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+      
+      inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+      
       inline def setWalkableClimb(value: Double): Self = StObject.set(x, "walkableClimb", value.asInstanceOf[js.Any])
       
       inline def setWalkableHeight(value: Double): Self = StObject.set(x, "walkableHeight", value.asInstanceOf[js.Any])
@@ -410,10 +449,28 @@ object inavigationengineMod {
   trait INavigationEnginePlugin extends StObject {
     
     /**
+      * Creates an oriented box obstacle and add it to the navigation
+      * @param position world position
+      * @param extent box size
+      * @param angle angle in radians of the box orientation on Y axis
+      * @returns the obstacle freshly created
+      */
+    def addBoxObstacle(position: Vector3, extent: Vector3, angle: Double): IObstacle
+    
+    /**
+      * Creates a cylinder obstacle and add it to the navigation
+      * @param position world position
+      * @param radius cylinder radius
+      * @param height cylinder height
+      * @returns the obstacle freshly created
+      */
+    def addCylinderObstacle(position: Vector3, radius: Double, height: Double): IObstacle
+    
+    /**
       * build the navmesh from a previously saved state using getNavmeshData
       * @param data the Uint8Array returned by getNavmeshData
       */
-    def buildFromNavmeshData(data: Uint8Array): Unit
+    def buildFromNavmeshData(data: js.typedarray.Uint8Array): Unit
     
     /**
       * Compute a navigation path from start to end. Returns an empty array if no path can be computed
@@ -441,7 +498,7 @@ object inavigationengineMod {
     
     /**
       * Creates a navigation mesh
-      * @param meshes array of all the geometry used to compute the navigatio mesh
+      * @param meshes array of all the geometry used to compute the navigation mesh
       * @param parameters bunch of parameters used to filter geometry
       */
     def createNavMesh(meshes: js.Array[Mesh], parameters: INavMeshParameters): Unit
@@ -487,7 +544,7 @@ object inavigationengineMod {
       * returns the navmesh data that can be used later. The navmesh must be built before retrieving the data
       * @returns data the Uint8Array that can be saved and reused
       */
-    def getNavmeshData(): Uint8Array
+    def getNavmeshData(): js.typedarray.Uint8Array
     
     /**
       * Get a navigation mesh constrained position, within a particular radius
@@ -539,6 +596,12 @@ object inavigationengineMod {
     var name: String
     
     /**
+      * Removes an obstacle created by addCylinderObstacle or addBoxObstacle
+      * @param obstacle obstacle to remove from the navigation
+      */
+    def removeObstacle(obstacle: IObstacle): Unit
+    
+    /**
       * Set the Bounding box extent for doing spatial queries (getClosestPoint, getRandomPointAround, ...)
       * The queries will try to find a solution within those bounds
       * default is (1,1,1)
@@ -566,7 +629,9 @@ object inavigationengineMod {
   object INavigationEnginePlugin {
     
     inline def apply(
-      buildFromNavmeshData: Uint8Array => Unit,
+      addBoxObstacle: (Vector3, Vector3, Double) => IObstacle,
+      addCylinderObstacle: (Vector3, Double, Double) => IObstacle,
+      buildFromNavmeshData: js.typedarray.Uint8Array => Unit,
       computePath: (Vector3, Vector3) => js.Array[Vector3],
       createCrowd: (Double, Double, Scene) => ICrowd,
       createDebugNavMesh: Scene => Mesh,
@@ -577,7 +642,7 @@ object inavigationengineMod {
       getDefaultQueryExtent: () => Vector3,
       getDefaultQueryExtentToRef: Vector3 => Unit,
       getMaximumSubStepCount: () => Double,
-      getNavmeshData: () => Uint8Array,
+      getNavmeshData: () => js.typedarray.Uint8Array,
       getRandomPointAround: (Vector3, Double) => Vector3,
       getRandomPointAroundToRef: (Vector3, Double, Vector3) => Unit,
       getTimeStep: () => Double,
@@ -585,17 +650,22 @@ object inavigationengineMod {
       moveAlong: (Vector3, Vector3) => Vector3,
       moveAlongToRef: (Vector3, Vector3, Vector3) => Unit,
       name: String,
+      removeObstacle: IObstacle => Unit,
       setDefaultQueryExtent: Vector3 => Unit,
       setMaximumSubStepCount: Double => Unit,
       setTimeStep: Double => Unit
     ): INavigationEnginePlugin = {
-      val __obj = js.Dynamic.literal(buildFromNavmeshData = js.Any.fromFunction1(buildFromNavmeshData), computePath = js.Any.fromFunction2(computePath), createCrowd = js.Any.fromFunction3(createCrowd), createDebugNavMesh = js.Any.fromFunction1(createDebugNavMesh), createNavMesh = js.Any.fromFunction2(createNavMesh), dispose = js.Any.fromFunction0(dispose), getClosestPoint = js.Any.fromFunction1(getClosestPoint), getClosestPointToRef = js.Any.fromFunction2(getClosestPointToRef), getDefaultQueryExtent = js.Any.fromFunction0(getDefaultQueryExtent), getDefaultQueryExtentToRef = js.Any.fromFunction1(getDefaultQueryExtentToRef), getMaximumSubStepCount = js.Any.fromFunction0(getMaximumSubStepCount), getNavmeshData = js.Any.fromFunction0(getNavmeshData), getRandomPointAround = js.Any.fromFunction2(getRandomPointAround), getRandomPointAroundToRef = js.Any.fromFunction3(getRandomPointAroundToRef), getTimeStep = js.Any.fromFunction0(getTimeStep), isSupported = js.Any.fromFunction0(isSupported), moveAlong = js.Any.fromFunction2(moveAlong), moveAlongToRef = js.Any.fromFunction3(moveAlongToRef), name = name.asInstanceOf[js.Any], setDefaultQueryExtent = js.Any.fromFunction1(setDefaultQueryExtent), setMaximumSubStepCount = js.Any.fromFunction1(setMaximumSubStepCount), setTimeStep = js.Any.fromFunction1(setTimeStep))
+      val __obj = js.Dynamic.literal(addBoxObstacle = js.Any.fromFunction3(addBoxObstacle), addCylinderObstacle = js.Any.fromFunction3(addCylinderObstacle), buildFromNavmeshData = js.Any.fromFunction1(buildFromNavmeshData), computePath = js.Any.fromFunction2(computePath), createCrowd = js.Any.fromFunction3(createCrowd), createDebugNavMesh = js.Any.fromFunction1(createDebugNavMesh), createNavMesh = js.Any.fromFunction2(createNavMesh), dispose = js.Any.fromFunction0(dispose), getClosestPoint = js.Any.fromFunction1(getClosestPoint), getClosestPointToRef = js.Any.fromFunction2(getClosestPointToRef), getDefaultQueryExtent = js.Any.fromFunction0(getDefaultQueryExtent), getDefaultQueryExtentToRef = js.Any.fromFunction1(getDefaultQueryExtentToRef), getMaximumSubStepCount = js.Any.fromFunction0(getMaximumSubStepCount), getNavmeshData = js.Any.fromFunction0(getNavmeshData), getRandomPointAround = js.Any.fromFunction2(getRandomPointAround), getRandomPointAroundToRef = js.Any.fromFunction3(getRandomPointAroundToRef), getTimeStep = js.Any.fromFunction0(getTimeStep), isSupported = js.Any.fromFunction0(isSupported), moveAlong = js.Any.fromFunction2(moveAlong), moveAlongToRef = js.Any.fromFunction3(moveAlongToRef), name = name.asInstanceOf[js.Any], removeObstacle = js.Any.fromFunction1(removeObstacle), setDefaultQueryExtent = js.Any.fromFunction1(setDefaultQueryExtent), setMaximumSubStepCount = js.Any.fromFunction1(setMaximumSubStepCount), setTimeStep = js.Any.fromFunction1(setTimeStep))
       __obj.asInstanceOf[INavigationEnginePlugin]
     }
     
     extension [Self <: INavigationEnginePlugin](x: Self) {
       
-      inline def setBuildFromNavmeshData(value: Uint8Array => Unit): Self = StObject.set(x, "buildFromNavmeshData", js.Any.fromFunction1(value))
+      inline def setAddBoxObstacle(value: (Vector3, Vector3, Double) => IObstacle): Self = StObject.set(x, "addBoxObstacle", js.Any.fromFunction3(value))
+      
+      inline def setAddCylinderObstacle(value: (Vector3, Double, Double) => IObstacle): Self = StObject.set(x, "addCylinderObstacle", js.Any.fromFunction3(value))
+      
+      inline def setBuildFromNavmeshData(value: js.typedarray.Uint8Array => Unit): Self = StObject.set(x, "buildFromNavmeshData", js.Any.fromFunction1(value))
       
       inline def setComputePath(value: (Vector3, Vector3) => js.Array[Vector3]): Self = StObject.set(x, "computePath", js.Any.fromFunction2(value))
       
@@ -617,7 +687,7 @@ object inavigationengineMod {
       
       inline def setGetMaximumSubStepCount(value: () => Double): Self = StObject.set(x, "getMaximumSubStepCount", js.Any.fromFunction0(value))
       
-      inline def setGetNavmeshData(value: () => Uint8Array): Self = StObject.set(x, "getNavmeshData", js.Any.fromFunction0(value))
+      inline def setGetNavmeshData(value: () => js.typedarray.Uint8Array): Self = StObject.set(x, "getNavmeshData", js.Any.fromFunction0(value))
       
       inline def setGetRandomPointAround(value: (Vector3, Double) => Vector3): Self = StObject.set(x, "getRandomPointAround", js.Any.fromFunction2(value))
       
@@ -633,6 +703,8 @@ object inavigationengineMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
+      inline def setRemoveObstacle(value: IObstacle => Unit): Self = StObject.set(x, "removeObstacle", js.Any.fromFunction1(value))
+      
       inline def setSetDefaultQueryExtent(value: Vector3 => Unit): Self = StObject.set(x, "setDefaultQueryExtent", js.Any.fromFunction1(value))
       
       inline def setSetMaximumSubStepCount(value: Double => Unit): Self = StObject.set(x, "setMaximumSubStepCount", js.Any.fromFunction1(value))
@@ -640,4 +712,6 @@ object inavigationengineMod {
       inline def setSetTimeStep(value: Double => Unit): Self = StObject.set(x, "setTimeStep", js.Any.fromFunction1(value))
     }
   }
+  
+  trait IObstacle extends StObject
 }

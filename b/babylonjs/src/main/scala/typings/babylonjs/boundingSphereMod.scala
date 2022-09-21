@@ -12,7 +12,7 @@ object boundingSphereMod {
   
   @JSImport("babylonjs/Culling/boundingSphere", "BoundingSphere")
   @js.native
-  class BoundingSphere protected () extends StObject {
+  open class BoundingSphere protected () extends StObject {
     /**
       * Creates a new bounding sphere
       * @param min defines the minimum vector (in local space)
@@ -22,10 +22,13 @@ object boundingSphereMod {
     def this(min: DeepImmutable[Vector3], max: DeepImmutable[Vector3]) = this()
     def this(min: DeepImmutable[Vector3], max: DeepImmutable[Vector3], worldMatrix: DeepImmutable[Matrix]) = this()
     
-    /** @hidden */
+    /**
+      * @param worldMatrix
+      * @hidden
+      */
     def _update(worldMatrix: DeepImmutable[Matrix]): Unit = js.native
     
-    /* private */ var _worldMatrix: js.Any = js.native
+    /* private */ var _worldMatrix: Any = js.native
     
     /**
       * Gets the center of the bounding sphere in local space
@@ -109,15 +112,25 @@ object boundingSphereMod {
     val ^ : js.Any = js.native
     
     /**
-      * Checks if two sphere intersct
+      * Creates a sphere from a center and a radius
+      * @param center The center
+      * @param radius radius
+      * @param matrix Optional worldMatrix
+      * @returns The sphere
+      */
+    inline def CreateFromCenterAndRadius(center: DeepImmutable[Vector3], radius: Double): BoundingSphere = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromCenterAndRadius")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[BoundingSphere]
+    inline def CreateFromCenterAndRadius(center: DeepImmutable[Vector3], radius: Double, matrix: DeepImmutable[Matrix]): BoundingSphere = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromCenterAndRadius")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[BoundingSphere]
+    
+    /**
+      * Checks if two sphere intersect
       * @param sphere0 sphere 0
       * @param sphere1 sphere 1
-      * @returns true if the speres intersect
+      * @returns true if the spheres intersect
       */
     inline def Intersects(sphere0: DeepImmutable[BoundingSphere], sphere1: DeepImmutable[BoundingSphere]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersects")(sphere0.asInstanceOf[js.Any], sphere1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("babylonjs/Culling/boundingSphere", "BoundingSphere.TmpVector3")
+    @JSImport("babylonjs/Culling/boundingSphere", "BoundingSphere._TmpVector3")
     @js.native
-    val TmpVector3: js.Any = js.native
+    val _TmpVector3: Any = js.native
   }
 }

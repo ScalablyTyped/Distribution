@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "json-schema-traverse" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "json-schema-traverse" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

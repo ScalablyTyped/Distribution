@@ -10,10 +10,10 @@ object adbMod {
   
   @JSImport("material-ui/svg-icons/notification/adb", JSImport.Default)
   @js.native
-  class default () extends NotificationAdb
+  open class default () extends NotificationAdb
   
   @JSImport("material-ui/svg-icons/notification/adb", "NotificationAdb")
   @js.native
-  class NotificationAdb ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationAdb ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

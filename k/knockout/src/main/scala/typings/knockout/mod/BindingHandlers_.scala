@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BindingHandlers_
   extends StObject
-     with /* name */ StringDictionary[BindingHandler[js.Any]] {
+     with /* name */ StringDictionary[BindingHandler[Any]] {
   
   var attr: `2`
   

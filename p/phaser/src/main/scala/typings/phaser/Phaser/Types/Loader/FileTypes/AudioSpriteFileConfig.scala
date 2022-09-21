@@ -10,7 +10,7 @@ trait AudioSpriteFileConfig extends StObject {
   /**
     * The audio configuration options.
     */
-  var audioConfig: js.UndefOr[js.Any] = js.undefined
+  var audioConfig: js.UndefOr[Any] = js.undefined
   
   /**
     * The absolute or relative URL to load the audio file from.
@@ -46,7 +46,7 @@ object AudioSpriteFileConfig {
   
   extension [Self <: AudioSpriteFileConfig](x: Self) {
     
-    inline def setAudioConfig(value: js.Any): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
+    inline def setAudioConfig(value: Any): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     
     inline def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
     

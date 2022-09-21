@@ -10,7 +10,7 @@ trait IEnumValueDescriptorProto extends StObject {
   
   var number: js.UndefOr[Double] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
 }
 object IEnumValueDescriptorProto {
   
@@ -29,7 +29,7 @@ object IEnumValueDescriptorProto {
     
     inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }

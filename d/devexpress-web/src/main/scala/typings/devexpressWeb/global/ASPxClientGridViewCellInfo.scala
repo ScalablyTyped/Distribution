@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewCellInfo")
 @js.native
-class ASPxClientGridViewCellInfo ()
+open class ASPxClientGridViewCellInfo ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewCellInfo {
   
@@ -23,7 +23,7 @@ class ASPxClientGridViewCellInfo ()
     * Gets the row's key.
     */
   /* CompleteClass */
-  var key: js.Any = js.native
+  var key: Any = js.native
   
   /**
     * Gets the visible index of the row that contains the cell currently being processed.

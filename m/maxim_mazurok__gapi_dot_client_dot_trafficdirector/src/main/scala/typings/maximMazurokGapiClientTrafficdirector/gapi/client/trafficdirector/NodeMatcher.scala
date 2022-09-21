@@ -29,6 +29,6 @@ object NodeMatcher {
     
     inline def setNodeMetadatasUndefined: Self = StObject.set(x, "nodeMetadatas", js.undefined)
     
-    inline def setNodeMetadatasVarargs(value: StructMatcher*): Self = StObject.set(x, "nodeMetadatas", js.Array(value :_*))
+    inline def setNodeMetadatasVarargs(value: StructMatcher*): Self = StObject.set(x, "nodeMetadatas", js.Array(value*))
   }
 }

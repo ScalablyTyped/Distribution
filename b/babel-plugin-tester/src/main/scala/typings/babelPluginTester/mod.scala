@@ -7,6 +7,7 @@ import typings.babelCore.mod.ConfigItem
 import typings.babelCore.mod.CreateConfigItemOptions
 import typings.babelCore.mod.FileParseCallback
 import typings.babelCore.mod.FileResultCallback
+import typings.babelCore.mod.InputSourceMap
 import typings.babelCore.mod.MatchPattern
 import typings.babelCore.mod.MatchPatternContext
 import typings.babelCore.mod.Node
@@ -18,6 +19,7 @@ import typings.babelCore.mod.TransformCaller
 import typings.babelCore.mod.TransformOptions
 import typings.babelGenerator.mod.GeneratorOptions
 import typings.babelParser.mod.ParserOptions
+import typings.babelPluginTester.anon.Config
 import typings.babelPluginTester.anon.Filename
 import typings.babelPluginTester.anon.TypeofNodePath
 import typings.babelPluginTester.anon.Typeoftraverse
@@ -47,13 +49,10 @@ import typings.babelTemplate.mod.TemplateBuilder
 import typings.babelTemplate.mod.TemplateBuilderOptions
 import typings.babelTraverse.mod.NodePath
 import typings.babelTypes.mod.Statement
-import typings.prettier.mod.Options
-import typings.std.Error
 import typings.std.Exclude
 import typings.std.NonNullable
 import typings.std.Pick
 import typings.std.Record
-import typings.std.RegExp
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -67,7 +66,8 @@ object mod {
   
   inline def default(options: PluginTesterOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def prettierFormatter(code: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettierFormatter")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def prettierFormatter(code: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettierFormatter")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def prettierFormatter(code: String, options: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettierFormatter")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object unstringSnapshotSerializer {
     
@@ -77,7 +77,7 @@ object mod {
     
     inline def print(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def test(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+    inline def test(value: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   }
   
   @js.native
@@ -102,6 +102,9 @@ object mod {
     
     def loadPartialConfig(): ReadonlyPartialConfig | Null = js.native
     def loadPartialConfig(options: TransformOptions): ReadonlyPartialConfig | Null = js.native
+    
+    def loadPartialConfigAsync(): js.Promise[ReadonlyPartialConfig | Null] = js.native
+    def loadPartialConfigAsync(options: TransformOptions): js.Promise[ReadonlyPartialConfig | Null] = js.native
     
     def parse(code: String): ParseResult | Null = js.native
     def parse(code: String, callback: FileParseCallback): Unit = js.native
@@ -131,7 +134,7 @@ object mod {
     /**
       * Building from a template literal produces an AST builder function by default.
       */
-    def template(tpl: TemplateStringsArray, args: js.Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Statement | js.Array[Statement]] = js.native
+    def template(tpl: TemplateStringsArray, args: Any*): js.Function1[/* arg */ js.UndefOr[PublicReplacements], Statement | js.Array[Statement]] = js.native
     @JSName("template")
     val template_Original: DefaultTemplateBuilder = js.native
     
@@ -223,7 +226,13 @@ object mod {
     
     var babelrcRoots: js.UndefOr[Boolean | MatchPattern | js.Array[MatchPattern] | Null] = js.undefined
     
+    var browserslistConfigFile: js.UndefOr[Boolean | Null] = js.undefined
+    
+    var browserslistEnv: js.UndefOr[String | Null] = js.undefined
+    
     var caller: js.UndefOr[TransformCaller] = js.undefined
+    
+    var cloneInputAst: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * The code that you want to run through your babel plugin. This must be
@@ -277,7 +286,9 @@ object mod {
       * }
       * ```
       */
-    var error: js.UndefOr[Boolean | String | RegExp | Error | (js.Function1[/* error */ js.Any, Boolean])] = js.undefined
+    var error: js.UndefOr[
+        Boolean | String | js.RegExp | js.Error | (js.Function1[/* error */ Any, Boolean])
+      ] = js.undefined
     
     var exclude: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.undefined
     
@@ -363,7 +374,7 @@ object mod {
     
     var include: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.undefined
     
-    var inputSourceMap: js.UndefOr[js.Object | Null] = js.undefined
+    var inputSourceMap: js.UndefOr[InputSourceMap | Null] = js.undefined
     
     var minified: js.UndefOr[Boolean | Null] = js.undefined
     
@@ -419,7 +430,7 @@ object mod {
       * }
       * ```
       */
-    var plugin: js.Any
+    var plugin: Any
     
     /**
       * This is used for the describe title as well as the test titles. If it can be inferred from the plugin's name then it will be and you don't need to provide this option.
@@ -515,14 +526,14 @@ object mod {
         (js.Function3[
           /* pluginAlias */ String, 
           /* visitorType */ enter | exit, 
-          /* callback */ js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ js.Any, Unit], 
-          js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ js.Any, Unit]
+          /* callback */ js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ Any, Unit], 
+          js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ Any, Unit]
         ]) | Null
       ] = js.undefined
   }
   object PluginTesterOptions {
     
-    inline def apply(plugin: js.Any): PluginTesterOptions = {
+    inline def apply(plugin: Any): PluginTesterOptions = {
       val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginTesterOptions]
     }
@@ -567,13 +578,31 @@ object mod {
       
       inline def setBabelrcRootsUndefined: Self = StObject.set(x, "babelrcRoots", js.undefined)
       
-      inline def setBabelrcRootsVarargs(value: MatchPattern*): Self = StObject.set(x, "babelrcRoots", js.Array(value :_*))
+      inline def setBabelrcRootsVarargs(value: MatchPattern*): Self = StObject.set(x, "babelrcRoots", js.Array(value*))
       
       inline def setBabelrcUndefined: Self = StObject.set(x, "babelrc", js.undefined)
+      
+      inline def setBrowserslistConfigFile(value: Boolean): Self = StObject.set(x, "browserslistConfigFile", value.asInstanceOf[js.Any])
+      
+      inline def setBrowserslistConfigFileNull: Self = StObject.set(x, "browserslistConfigFile", null)
+      
+      inline def setBrowserslistConfigFileUndefined: Self = StObject.set(x, "browserslistConfigFile", js.undefined)
+      
+      inline def setBrowserslistEnv(value: String): Self = StObject.set(x, "browserslistEnv", value.asInstanceOf[js.Any])
+      
+      inline def setBrowserslistEnvNull: Self = StObject.set(x, "browserslistEnv", null)
+      
+      inline def setBrowserslistEnvUndefined: Self = StObject.set(x, "browserslistEnv", js.undefined)
       
       inline def setCaller(value: TransformCaller): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
       
       inline def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
+      
+      inline def setCloneInputAst(value: Boolean): Self = StObject.set(x, "cloneInputAst", value.asInstanceOf[js.Any])
+      
+      inline def setCloneInputAstNull: Self = StObject.set(x, "cloneInputAst", null)
+      
+      inline def setCloneInputAstUndefined: Self = StObject.set(x, "cloneInputAst", js.undefined)
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -617,9 +646,9 @@ object mod {
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      inline def setError(value: Boolean | String | RegExp | Error | (js.Function1[/* error */ js.Any, Boolean])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean | String | js.RegExp | js.Error | (js.Function1[/* error */ Any, Boolean])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setErrorFunction1(value: /* error */ js.Any => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setErrorFunction1(value: /* error */ Any => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -629,7 +658,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: MatchPattern*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: MatchPattern*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
@@ -683,7 +712,7 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: MatchPattern*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: MatchPattern*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setInclude(value: MatchPattern | js.Array[MatchPattern]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
@@ -691,9 +720,9 @@ object mod {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: MatchPattern*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: MatchPattern*): Self = StObject.set(x, "include", js.Array(value*))
       
-      inline def setInputSourceMap(value: js.Object): Self = StObject.set(x, "inputSourceMap", value.asInstanceOf[js.Any])
+      inline def setInputSourceMap(value: InputSourceMap): Self = StObject.set(x, "inputSourceMap", value.asInstanceOf[js.Any])
       
       inline def setInputSourceMapNull: Self = StObject.set(x, "inputSourceMap", null)
       
@@ -739,7 +768,7 @@ object mod {
       
       inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      inline def setOverridesVarargs(value: TransformOptions*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+      inline def setOverridesVarargs(value: TransformOptions*): Self = StObject.set(x, "overrides", js.Array(value*))
       
       inline def setParserOpts(value: ParserOptions): Self = StObject.set(x, "parserOpts", value.asInstanceOf[js.Any])
       
@@ -747,7 +776,7 @@ object mod {
       
       inline def setParserOptsUndefined: Self = StObject.set(x, "parserOpts", js.undefined)
       
-      inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
       inline def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
       
@@ -763,7 +792,7 @@ object mod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: PluginItem*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: PluginItem*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setPresets(value: js.Array[PluginItem]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
       
@@ -771,7 +800,7 @@ object mod {
       
       inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
       
-      inline def setPresetsVarargs(value: PluginItem*): Self = StObject.set(x, "presets", js.Array(value :_*))
+      inline def setPresetsVarargs(value: PluginItem*): Self = StObject.set(x, "presets", js.Array(value*))
       
       inline def setRetainLines(value: Boolean): Self = StObject.set(x, "retainLines", value.asInstanceOf[js.Any])
       
@@ -843,20 +872,20 @@ object mod {
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      inline def setTestVarargs(value: MatchPattern*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: MatchPattern*): Self = StObject.set(x, "test", js.Array(value*))
       
       inline def setTests(value: (js.Array[TestObject | String]) | (Record[String, TestObject | String])): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
       
       inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
       
-      inline def setTestsVarargs(value: (TestObject | String)*): Self = StObject.set(x, "tests", js.Array(value :_*))
+      inline def setTestsVarargs(value: (TestObject | String)*): Self = StObject.set(x, "tests", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setWrapPluginVisitorMethod(
-        value: (/* pluginAlias */ String, /* visitorType */ enter | exit, /* callback */ js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ js.Any, Unit]) => js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ js.Any, Unit]
+        value: (/* pluginAlias */ String, /* visitorType */ enter | exit, /* callback */ js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ Any, Unit]) => js.Function2[/* path */ NodePath[typings.babelTypes.mod.Node], /* state */ Any, Unit]
       ): Self = StObject.set(x, "wrapPluginVisitorMethod", js.Any.fromFunction3(value))
       
       inline def setWrapPluginVisitorMethodNull: Self = StObject.set(x, "wrapPluginVisitorMethod", null)
@@ -913,7 +942,9 @@ object mod {
       * }
       * ```
       */
-    var error: js.UndefOr[Boolean | String | RegExp | Error | (js.Function1[/* error */ js.Any, Boolean])] = js.undefined
+    var error: js.UndefOr[
+        Boolean | String | js.RegExp | js.Error | (js.Function1[/* error */ Any, Boolean])
+      ] = js.undefined
     
     /**
       * If you'd rather put your code in a separate file, you can specify a
@@ -959,6 +990,12 @@ object mod {
       * instead (works the same as fixture).
       */
     var outputFixture: js.UndefOr[String] = js.undefined
+    
+    /**
+      * This can be used to pass options into your plugin at transform time.
+      *
+      */
+    var pluginOptions: js.UndefOr[PluginOptions] = js.undefined
     
     /**
       * If you need something set up before a particular test is run, you can do
@@ -1019,9 +1056,9 @@ object mod {
       
       inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      inline def setError(value: Boolean | String | RegExp | Error | (js.Function1[/* error */ js.Any, Boolean])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean | String | js.RegExp | js.Error | (js.Function1[/* error */ Any, Boolean])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setErrorFunction1(value: /* error */ js.Any => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setErrorFunction1(value: /* error */ Any => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -1044,6 +1081,10 @@ object mod {
       inline def setOutputFixtureUndefined: Self = StObject.set(x, "outputFixture", js.undefined)
       
       inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      
+      inline def setPluginOptions(value: PluginOptions): Self = StObject.set(x, "pluginOptions", value.asInstanceOf[js.Any])
+      
+      inline def setPluginOptionsUndefined: Self = StObject.set(x, "pluginOptions", js.undefined)
       
       inline def setSetup(
         value: () => Unit | (NonNullable[js.UndefOr[js.Function0[Unit | js.Promise[Unit]]]]) | (js.Promise[(NonNullable[js.UndefOr[js.Function0[Unit | js.Promise[Unit]]]]) | Unit])

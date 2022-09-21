@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Comment")
 @js.native
-/* private */ class Comment ()
+/* private */ open class Comment ()
   extends StObject
      with typings.activexWord.Word.Comment {
   
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val IsInk: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Range: typings.activexWord.Word.Range = js.native

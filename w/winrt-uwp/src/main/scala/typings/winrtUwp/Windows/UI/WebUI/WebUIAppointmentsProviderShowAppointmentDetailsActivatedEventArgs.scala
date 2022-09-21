@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.WebUI
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
@@ -15,7 +14,7 @@ trait WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs extends 
   var activatedOperation: ActivatedOperation
   
   /** Gets the start date of the appointment instance for which the app should display details. */
-  var instanceStartDate: Date
+  var instanceStartDate: js.Date
   
   /** Gets the activation type. */
   var kind: ActivationKind
@@ -39,7 +38,7 @@ object WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
   
   inline def apply(
     activatedOperation: ActivatedOperation,
-    instanceStartDate: Date,
+    instanceStartDate: js.Date,
     kind: ActivationKind,
     localId: String,
     previousExecutionState: ApplicationExecutionState,
@@ -55,7 +54,7 @@ object WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     
-    inline def setInstanceStartDate(value: Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
+    inline def setInstanceStartDate(value: js.Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

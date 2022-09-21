@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".tree-kill-EpdEDHw9" : "1.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".tree-kill-EpdEDHw9" : "1.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

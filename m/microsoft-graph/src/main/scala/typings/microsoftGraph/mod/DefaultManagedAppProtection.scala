@@ -69,13 +69,13 @@ object DefaultManagedAppProtection {
     
     inline def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
     
-    inline def setAppsVarargs(value: ManagedMobileApp*): Self = StObject.set(x, "apps", js.Array(value :_*))
+    inline def setAppsVarargs(value: ManagedMobileApp*): Self = StObject.set(x, "apps", js.Array(value*))
     
     inline def setCustomSettings(value: js.Array[KeyValuePair]): Self = StObject.set(x, "customSettings", value.asInstanceOf[js.Any])
     
     inline def setCustomSettingsUndefined: Self = StObject.set(x, "customSettings", js.undefined)
     
-    inline def setCustomSettingsVarargs(value: KeyValuePair*): Self = StObject.set(x, "customSettings", js.Array(value :_*))
+    inline def setCustomSettingsVarargs(value: KeyValuePair*): Self = StObject.set(x, "customSettings", js.Array(value*))
     
     inline def setDeployedAppCount(value: Double): Self = StObject.set(x, "deployedAppCount", value.asInstanceOf[js.Any])
     

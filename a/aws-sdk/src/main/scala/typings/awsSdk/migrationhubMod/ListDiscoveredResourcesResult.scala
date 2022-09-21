@@ -29,7 +29,7 @@ object ListDiscoveredResourcesResult {
     
     inline def setDiscoveredResourceListUndefined: Self = StObject.set(x, "DiscoveredResourceList", js.undefined)
     
-    inline def setDiscoveredResourceListVarargs(value: DiscoveredResource*): Self = StObject.set(x, "DiscoveredResourceList", js.Array(value :_*))
+    inline def setDiscoveredResourceListVarargs(value: DiscoveredResource*): Self = StObject.set(x, "DiscoveredResourceList", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

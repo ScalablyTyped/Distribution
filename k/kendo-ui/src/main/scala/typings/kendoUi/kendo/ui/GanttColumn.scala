@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GanttColumn extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.undefined
+  var attributes: js.UndefOr[Any] = js.undefined
   
-  var columns: js.UndefOr[js.Any] = js.undefined
+  var columns: js.UndefOr[Any] = js.undefined
   
   var editable: js.UndefOr[Boolean] = js.undefined
   
@@ -22,7 +22,7 @@ trait GanttColumn extends StObject {
   
   var format: js.UndefOr[String] = js.undefined
   
-  var headerAttributes: js.UndefOr[js.Any] = js.undefined
+  var headerAttributes: js.UndefOr[Any] = js.undefined
   
   var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
@@ -49,11 +49,11 @@ object GanttColumn {
   
   extension [Self <: GanttColumn](x: Self) {
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
@@ -81,7 +81,7 @@ object GanttColumn {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setHeaderAttributes(value: js.Any): Self = StObject.set(x, "headerAttributes", value.asInstanceOf[js.Any])
+    inline def setHeaderAttributes(value: Any): Self = StObject.set(x, "headerAttributes", value.asInstanceOf[js.Any])
     
     inline def setHeaderAttributesUndefined: Self = StObject.set(x, "headerAttributes", js.undefined)
     

@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request message for the `BatchWriteSpans` method.
-  */
 trait SchemaBatchWriteSpansRequest extends StObject {
   
   /**
-    * A list of new spans. The span names must not match existing spans, or the
-    * results are undefined.
+    * Required. A list of new spans. The span names must not match existing spans, otherwise the results are undefined.
     */
   var spans: js.UndefOr[js.Array[SchemaSpan]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaBatchWriteSpansRequest {
     
     inline def setSpansUndefined: Self = StObject.set(x, "spans", js.undefined)
     
-    inline def setSpansVarargs(value: SchemaSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
+    inline def setSpansVarargs(value: SchemaSpan*): Self = StObject.set(x, "spans", js.Array(value*))
   }
 }

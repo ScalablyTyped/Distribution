@@ -11,7 +11,7 @@ object croppedImageControlMod {
   
   @JSImport("@wordpress/customize-browser/CroppedImageControl", "CroppedImageControl")
   @js.native
-  class CroppedImageControl protected () extends MediaControl {
+  open class CroppedImageControl protected () extends MediaControl {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
@@ -20,13 +20,13 @@ object croppedImageControlMod {
     
     def mustBeCropped(flexW: Boolean, flexH: Boolean, dstW: Double, dstH: Double, imgW: Double, imgH: Double): Boolean = js.native
     
-    def onCropped(croppedImage: js.Any): Unit = js.native
+    def onCropped(croppedImage: Any): Unit = js.native
     
     def onSelect(): Unit = js.native
     
     def onSkippedCrop(): Unit = js.native
     
-    def setImageFromAttachment(attachment: js.Any): Unit = js.native
+    def setImageFromAttachment(attachment: Any): Unit = js.native
   }
   
   trait ImageSelectOptions extends StObject {

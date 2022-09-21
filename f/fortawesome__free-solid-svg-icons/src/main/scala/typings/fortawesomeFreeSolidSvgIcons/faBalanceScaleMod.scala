@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object faBalanceScaleMod {
   
+  @JSImport("@fortawesome/free-solid-svg-icons/faBalanceScale", "aliases")
+  @js.native
+  val aliases: js.Array[String | Double] = js.native
+  
   @JSImport("@fortawesome/free-solid-svg-icons/faBalanceScale", "definition")
   @js.native
   val definition: IconDefinition = js.native
@@ -27,7 +31,7 @@ object faBalanceScaleMod {
   
   @JSImport("@fortawesome/free-solid-svg-icons/faBalanceScale", "ligatures")
   @js.native
-  val ligatures: js.Array[String] = js.native
+  val ligatures: js.Array[String | Double] = js.native
   
   @JSImport("@fortawesome/free-solid-svg-icons/faBalanceScale", "prefix")
   @js.native

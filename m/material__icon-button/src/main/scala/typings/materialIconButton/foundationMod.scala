@@ -11,16 +11,22 @@ object foundationMod {
   
   @JSImport("@material/icon-button/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCIconButtonToggleFoundation {
+  open class default () extends MDCIconButtonToggleFoundation {
     def this(adapter: PartialMDCIconButtonToggl) = this()
   }
   
   @JSImport("@material/icon-button/foundation", "MDCIconButtonToggleFoundation")
   @js.native
-  class MDCIconButtonToggleFoundation () extends MDCFoundation[MDCIconButtonToggleAdapter] {
+  open class MDCIconButtonToggleFoundation () extends MDCFoundation[MDCIconButtonToggleAdapter] {
     def this(adapter: PartialMDCIconButtonToggl) = this()
     
     def handleClick(): Unit = js.native
+    
+    /**
+      * Whether the icon button has an aria label that changes depending on
+      * toggled state.
+      */
+    /* private */ var hasToggledAriaLabel: Any = js.native
     
     def isOn(): Boolean = js.native
     

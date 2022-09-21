@@ -4,7 +4,9 @@ import typings.arcgisJsApi.arcgisJsApiStrings.capture
 import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.live
 import typings.arcgisJsApi.arcgisJsApiStrings.loading
+import typings.arcgisJsApi.arcgisJsApiStrings.local
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
+import typings.arcgisJsApi.arcgisJsApiStrings.session
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,16 +55,11 @@ trait CoordinateConversionViewModel
   /**
     * Describes the current mode of the widget.
     *
+    * @default live
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#mode)
     */
   var mode: live | capture = js.native
-  
-  /**
-    * The number of milliseconds of delay before conversion requests will be sent to the [GeometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#requestDelay)
-    */
-  var requestDelay: Double = js.native
   
   /**
     * Attempt to convert a string into a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).
@@ -74,9 +71,29 @@ trait CoordinateConversionViewModel
   /**
     * The view model's state.
     *
+    * @default disabled
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#state)
     */
   val state: ready | loading | disabled = js.native
+  
+  /**
+    * If this property is set to `true`, sessionStorage or localStorage (depending on [storageType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#storageType)) will be used to hydrate and persist the CoordinateConversion widget's state.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#storageEnabled)
+    */
+  var storageEnabled: Boolean = js.native
+  
+  /**
+    * This property determines whether sessionStorage or localStorage will be used to store widget state.
+    *
+    * @default "session"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#storageType)
+    */
+  var storageType: session | local = js.native
   
   /**
     * Update the input conversions based on the input point.

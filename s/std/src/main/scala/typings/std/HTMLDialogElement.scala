@@ -10,19 +10,26 @@ trait HTMLDialogElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /**
+    * Closes the dialog element.
+    *
+    * The argument, if provided, provides a return value.
+    */
+  /* standard dom */
   def close(): Unit = js.native
   def close(returnValue: java.lang.String): Unit = js.native
   
+  /* standard dom */
   var open: scala.Boolean = js.native
   
   /* InferMemberOverrides */
@@ -36,9 +43,13 @@ trait HTMLDialogElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   var returnValue: java.lang.String = js.native
   
+  /** Displays the dialog element. */
+  /* standard dom */
   def show(): Unit = js.native
   
+  /* standard dom */
   def showModal(): Unit = js.native
 }

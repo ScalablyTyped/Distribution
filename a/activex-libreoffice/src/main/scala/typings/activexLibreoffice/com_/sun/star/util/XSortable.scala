@@ -57,7 +57,7 @@ object XSortable {
   inline def apply(
     acquire: () => Unit,
     createSortDescriptor: () => SafeArray[PropertyValue],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     sort: SeqEquiv[PropertyValue] => Unit
   ): XSortable = {

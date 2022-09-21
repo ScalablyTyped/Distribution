@@ -54,7 +54,7 @@ object panelTabGroupMod {
   
   @JSImport("rbx/components/panel/panel-tab-group", "PanelTabGroup")
   @js.native
-  val PanelTabGroup: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val PanelTabGroup: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait PanelTabGroupProps extends StObject {

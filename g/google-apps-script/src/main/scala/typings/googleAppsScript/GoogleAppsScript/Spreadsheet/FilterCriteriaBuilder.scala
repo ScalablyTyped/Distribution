@@ -17,7 +17,7 @@ trait FilterCriteriaBuilder extends StObject {
   
   def getCriteriaType(): BooleanCriteria = js.native
   
-  def getCriteriaValues(): js.Array[js.Any] = js.native
+  def getCriteriaValues(): js.Array[Any] = js.native
   
   def getHiddenValues(): js.Array[String] = js.native
   
@@ -68,5 +68,5 @@ trait FilterCriteriaBuilder extends StObject {
   
   def whenTextStartsWith(text: String): FilterCriteriaBuilder = js.native
   
-  def withCriteria(criteria: BooleanCriteria, args: js.Array[js.Any]): FilterCriteriaBuilder = js.native
+  def withCriteria(criteria: BooleanCriteria, args: js.Array[Any]): FilterCriteriaBuilder = js.native
 }

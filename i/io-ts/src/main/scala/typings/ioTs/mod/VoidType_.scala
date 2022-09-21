@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "VoidType")
 @js.native
-class VoidType_ ()
-  extends Type_[Unit, Unit, js.Any] {
+open class VoidType_ () extends Type_[Unit, Unit, Any] {
   
   /**
     * @since 1.0.0

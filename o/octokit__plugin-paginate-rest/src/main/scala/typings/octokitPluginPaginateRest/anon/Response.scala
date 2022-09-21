@@ -1,23 +1,31 @@
 package typings.octokitPluginPaginateRest.anon
 
-import typings.octokitTypes.endpointsMod.OauthAuthorizationsListGrantsEndpoint
-import typings.octokitTypes.endpointsMod.OauthAuthorizationsListGrantsResponseData
-import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.endpointsMod.RequiredPreview
+import typings.octokitTypes.endpointsMod.ToOctokitParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Response extends StObject {
   
-  var parameters: OauthAuthorizationsListGrantsEndpoint
+  var parameters: (ToOctokitParameters[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
+  ]) & RequiredPreview[Any]
   
-  var response: OctokitResponse[OauthAuthorizationsListGrantsResponseData]
+  var response: ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
+  ]
 }
 object Response {
   
   inline def apply(
-    parameters: OauthAuthorizationsListGrantsEndpoint,
-    response: OctokitResponse[OauthAuthorizationsListGrantsResponseData]
+    parameters: (ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
+    ]) & RequiredPreview[Any],
+    response: ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
+    ]
   ): Response = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
@@ -25,8 +33,16 @@ object Response {
   
   extension [Self <: Response](x: Self) {
     
-    inline def setParameters(value: OauthAuthorizationsListGrantsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(
+      value: (ToOctokitParameters[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
+        ]) & RequiredPreview[Any]
+    ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponse(value: OctokitResponse[OauthAuthorizationsListGrantsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(
+      value: ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

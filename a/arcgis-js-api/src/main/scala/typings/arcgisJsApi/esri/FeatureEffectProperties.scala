@@ -7,32 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureEffectProperties extends StObject {
   
   /**
-    * The graphical [css filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) operation applied to the features that do not meet the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#filter) requirements.
+    * The [effect](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureEffect.html#Effect) applied to features that do not meet the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureEffect.html#filter) requirements.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#excludedEffect)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureEffect.html#excludedEffect)
     */
-  var excludedEffect: js.UndefOr[String] = js.undefined
+  var excludedEffect: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   /**
-    * Indicates if labels for features that are [excluded](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#excludedEffect) from the effect are visible.
+    * Indicates if labels are visible for features that are [excluded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureEffect.html#excludedEffect) from the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureEffect.html#filter).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#excludedLabelsVisible)
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureEffect.html#excludedLabelsVisible)
     */
   var excludedLabelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The filter that drives the effect.
+    * The [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html) that drives the effect.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#filter)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureEffect.html#filter)
     */
   var filter: js.UndefOr[FeatureFilterProperties] = js.undefined
   
   /**
-    * The graphical [css filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) operation applied to the features that meet the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#filter) requirements.
+    * The [effect](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureEffect.html#Effect) applied to features that meet the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureEffect.html#filter) requirements.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#includedEffect)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureEffect.html#includedEffect)
     */
-  var includedEffect: js.UndefOr[String] = js.undefined
+  var includedEffect: js.UndefOr[js.Array[Any] | String] = js.undefined
 }
 object FeatureEffectProperties {
   
@@ -43,9 +45,11 @@ object FeatureEffectProperties {
   
   extension [Self <: FeatureEffectProperties](x: Self) {
     
-    inline def setExcludedEffect(value: String): Self = StObject.set(x, "excludedEffect", value.asInstanceOf[js.Any])
+    inline def setExcludedEffect(value: js.Array[Any] | String): Self = StObject.set(x, "excludedEffect", value.asInstanceOf[js.Any])
     
     inline def setExcludedEffectUndefined: Self = StObject.set(x, "excludedEffect", js.undefined)
+    
+    inline def setExcludedEffectVarargs(value: Any*): Self = StObject.set(x, "excludedEffect", js.Array(value*))
     
     inline def setExcludedLabelsVisible(value: Boolean): Self = StObject.set(x, "excludedLabelsVisible", value.asInstanceOf[js.Any])
     
@@ -55,8 +59,10 @@ object FeatureEffectProperties {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setIncludedEffect(value: String): Self = StObject.set(x, "includedEffect", value.asInstanceOf[js.Any])
+    inline def setIncludedEffect(value: js.Array[Any] | String): Self = StObject.set(x, "includedEffect", value.asInstanceOf[js.Any])
     
     inline def setIncludedEffectUndefined: Self = StObject.set(x, "includedEffect", js.undefined)
+    
+    inline def setIncludedEffectVarargs(value: Any*): Self = StObject.set(x, "includedEffect", js.Array(value*))
   }
 }

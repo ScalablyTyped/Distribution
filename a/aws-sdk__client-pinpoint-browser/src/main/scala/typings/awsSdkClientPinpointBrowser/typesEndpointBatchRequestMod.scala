@@ -2,7 +2,6 @@ package typings.awsSdkClientPinpointBrowser
 
 import typings.awsSdkClientPinpointBrowser.typesEndpointBatchItemMod.EndpointBatchItem
 import typings.awsSdkClientPinpointBrowser.typesEndpointBatchItemMod.UnmarshalledEndpointBatchItem
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object typesEndpointBatchRequestMod {
     /**
       * List of items to update. Maximum 100 items
       */
-    var Item: js.UndefOr[js.Array[EndpointBatchItem] | Iterable[EndpointBatchItem]] = js.undefined
+    var Item: js.UndefOr[js.Array[EndpointBatchItem] | js.Iterable[EndpointBatchItem]] = js.undefined
   }
   object EndpointBatchRequest {
     
@@ -25,11 +24,11 @@ object typesEndpointBatchRequestMod {
     
     extension [Self <: EndpointBatchRequest](x: Self) {
       
-      inline def setItem(value: js.Array[EndpointBatchItem] | Iterable[EndpointBatchItem]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[EndpointBatchItem] | js.Iterable[EndpointBatchItem]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      inline def setItemVarargs(value: EndpointBatchItem*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: EndpointBatchItem*): Self = StObject.set(x, "Item", js.Array(value*))
     }
   }
   
@@ -56,7 +55,7 @@ object typesEndpointBatchRequestMod {
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      inline def setItemVarargs(value: UnmarshalledEndpointBatchItem*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledEndpointBatchItem*): Self = StObject.set(x, "Item", js.Array(value*))
     }
   }
 }

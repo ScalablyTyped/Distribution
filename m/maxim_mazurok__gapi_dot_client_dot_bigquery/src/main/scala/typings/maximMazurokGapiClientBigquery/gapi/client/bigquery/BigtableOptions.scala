@@ -38,7 +38,7 @@ object BigtableOptions {
     
     inline def setColumnFamiliesUndefined: Self = StObject.set(x, "columnFamilies", js.undefined)
     
-    inline def setColumnFamiliesVarargs(value: BigtableColumnFamily*): Self = StObject.set(x, "columnFamilies", js.Array(value :_*))
+    inline def setColumnFamiliesVarargs(value: BigtableColumnFamily*): Self = StObject.set(x, "columnFamilies", js.Array(value*))
     
     inline def setIgnoreUnspecifiedColumnFamilies(value: Boolean): Self = StObject.set(x, "ignoreUnspecifiedColumnFamilies", value.asInstanceOf[js.Any])
     

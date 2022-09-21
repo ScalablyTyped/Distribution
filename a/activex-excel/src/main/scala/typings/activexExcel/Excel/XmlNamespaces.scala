@@ -22,9 +22,9 @@ trait XmlNamespaces extends StObject {
   def Item(Index: String): XmlNamespace = js.native
   def Item(Index: Double): XmlNamespace = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Value: String = js.native
   
-  def _Default(Index: js.Any): XmlNamespace = js.native
+  def _Default(Index: Any): XmlNamespace = js.native
 }

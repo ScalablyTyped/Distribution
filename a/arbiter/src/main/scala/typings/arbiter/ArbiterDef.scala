@@ -22,8 +22,8 @@ object ArbiterDef {
       * @param data Pass data to subscribers that contains details about the message.
       */
     def publish(msg: String): Boolean = js.native
-    def publish(msg: String, data: js.Any): Boolean = js.native
-    def publish(msg: String, data: js.Any, options: PublishOptions): Boolean = js.native
+    def publish(msg: String, data: Any): Boolean = js.native
+    def publish(msg: String, data: Any, options: PublishOptions): Boolean = js.native
     def publish(msg: String, data: Unit, options: PublishOptions): Boolean = js.native
     
     /**
@@ -37,40 +37,40 @@ object ArbiterDef {
       *
       * @param msg comma separated messages or use wildcard like a/b/ *
       */
-    def subscribe(msg: String, func: SubscribeHandler): js.Any = js.native
+    def subscribe(msg: String, func: SubscribeHandler): Any = js.native
     /**
       * Subscribes to messages. Can use comma separated or wildcards in message.
       * Returns: subscription id or [id1,id2] if subscribing to multiple messages
       */
-    def subscribe(msg: String, options: SubscribeOptions, context: js.Any, func: SubscribeHandler): js.Any = js.native
+    def subscribe(msg: String, options: SubscribeOptions, context: Any, func: SubscribeHandler): Any = js.native
     /**
       * Subscribes to messages.
       * Returns: subscription id or [id1,id2] if subscribing to multiple messages
       *
       * @param msg comma separated messages or use wildcard like a/b/ *
       */
-    def subscribe(msg: String, options: SubscribeOptions, func: SubscribeHandler): js.Any = js.native
+    def subscribe(msg: String, options: SubscribeOptions, func: SubscribeHandler): Any = js.native
     /**
       * Subscribes to messages.
       * Returns: subscription id or [id1,id2] if subscribing to multiple messages
       *
       * @param msg comma separated messages or use wildcard like a/b/ *
       */
-    def subscribe(msg: js.Array[String], func: SubscribeHandler): js.Any = js.native
+    def subscribe(msg: js.Array[String], func: SubscribeHandler): Any = js.native
     /**
       * Subscribes to messages.
       * Returns: subscription id or [id1,id2] if subscribing to multiple messages
       *
       * @param msg comma separated messages or use wildcard like a/b/ *
       */
-    def subscribe(msg: js.Array[String], options: SubscribeOptions, context: js.Any, func: SubscribeHandler): js.Any = js.native
+    def subscribe(msg: js.Array[String], options: SubscribeOptions, context: Any, func: SubscribeHandler): Any = js.native
     /**
       * Subscribes to messages.
       * Returns: subscription id or [id1,id2] if subscribing to multiple messages
       *
       * @param msg comma separated messages or use wildcard like a/b/ *
       */
-    def subscribe(msg: js.Array[String], options: SubscribeOptions, func: SubscribeHandler): js.Any = js.native
+    def subscribe(msg: js.Array[String], options: SubscribeOptions, func: SubscribeHandler): Any = js.native
     
     /**
       * Unsubscribing simply sets a flag which prevents the subscriber from executing, in case you want to re-subscribe later.
@@ -126,7 +126,7 @@ object ArbiterDef {
     }
   }
   
-  type SubscribeHandler = js.Function3[/* data */ js.Any, /* message */ String, /* subscriber_context */ js.Any, Unit]
+  type SubscribeHandler = js.Function3[/* data */ Any, /* message */ String, /* subscriber_context */ Any, Unit]
   
   trait SubscribeOptions extends StObject {
     

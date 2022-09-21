@@ -9,13 +9,20 @@ trait ActionManager
   extends StObject
      with AbstractActionManager {
   
-  /** @hidden */
-  def _getEffectiveTarget(target: js.Any, propertyPath: String): js.Any = js.native
+  /**
+    * @param target
+    * @param propertyPath
+    * @hidden
+    */
+  def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
   
-  /** @hidden */
+  /**
+    * @param propertyPath
+    * @hidden
+    */
   def _getProperty(propertyPath: String): String = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /**
     * Gets hosting scene

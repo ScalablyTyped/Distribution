@@ -29,6 +29,6 @@ object SortRangeRequest {
     
     inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
     
-    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value*))
   }
 }

@@ -13,7 +13,7 @@ object graticuleMod {
   
   @JSImport("ol/layer/Graticule", JSImport.Default)
   @js.native
-  class default () extends Graticule {
+  open class default () extends Graticule {
     def this(opt_options: Options) = this()
   }
   
@@ -150,7 +150,7 @@ object graticuleMod {
       
       inline def setIntervalsUndefined: Self = StObject.set(x, "intervals", js.undefined)
       
-      inline def setIntervalsVarargs(value: Double*): Self = StObject.set(x, "intervals", js.Array(value :_*))
+      inline def setIntervalsVarargs(value: Double*): Self = StObject.set(x, "intervals", js.Array(value*))
       
       inline def setLatLabelFormatter(value: /* p0 */ Double => String): Self = StObject.set(x, "latLabelFormatter", js.Any.fromFunction1(value))
       

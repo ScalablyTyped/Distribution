@@ -9,18 +9,18 @@ trait Ajax extends StObject {
   /*Used internally to load a given file without checking if it already has been loaded, or where it is to
     * be found.
     */
-  def Load(file: String, callBack: js.Any): js.Any
+  def Load(file: String, callBack: Any): Any
   
   /*Registers a callback to be executed when the given file is loaded. The file load operation needs to be started
     * when this method is called, so it can be used to register a hook for a file that may be loaded in the future.
     */
-  def LoadHook(file: String, callBack: js.Any): js.Any
+  def LoadHook(file: String, callBack: Any): Any
   
   /*Used with combined configuration files to indicate what files are in the configuration file. Marks the files
     * as loading (since there will never be an explicit Load() or Require() call for them), so that load-hooks and
     * other load-related events can be properly processed when the loadComplete() occurs.
     */
-  def Preloading(args: js.Any*): Unit
+  def Preloading(args: Any*): Unit
   
   /*Loads the given file if it hasn’t been already. The file must be a JavaScript file or a CSS stylesheet; i.e.,
     * it must end in .js or .css. Alternatively, it can be an object with a single key:value pair where the key is
@@ -34,14 +34,14 @@ trait Ajax extends StObject {
     * MathJax.Ajax.STATUS.OK. If the file is already loaded, the callback will be called immediately and the file
     * will not be loaded again.
     */
-  def Require(file: String, callBack: js.Any): js.Any
+  def Require(file: String, callBack: Any): Any
   
   var STATUS: typings.mathjax.MathJax.STATUS
   
   /*Creates a stylesheet from the given style data. styles can either be a string containing a stylesheet
     * definition, or an object containing a CSS Style Object.
     */
-  def Styles(styles: js.Any, callback: js.Any): js.Any
+  def Styles(styles: Any, callback: Any): Any
   
   /*Returns a complete URL to a file (replacing [MathJax] with the actual root URL location).*/
   def fileURL(file: String): String
@@ -62,7 +62,7 @@ trait Ajax extends StObject {
   /*An object containing the load hooks for the various files, set up by the LoadHook() method, or by the
     * MathJax.Hub.Register.LoadHook() method.
     */
-  var loadHooks: js.Any
+  var loadHooks: Any
   
   /*Called when the timeout period is over and the file hasn’t loaded. This indicates an error condition, and the
     * MathJax.Ajax.loadError() method will be executed, then the file’s callback will be run with
@@ -74,7 +74,7 @@ trait Ajax extends StObject {
     * MathJax.Ajax.loaded["file"] will be non-null when the file has been loaded, with the value being the
     * MathJax.Ajax.STATUS value of the load attempt.
     */
-  var loaded: js.Any
+  var loaded: Any
   
   /*An object containing the files that are currently loading, the callbacks that are to be run when they load or
     * timeout, and additional internal data.*/
@@ -86,18 +86,18 @@ trait Ajax extends StObject {
 object Ajax {
   
   inline def apply(
-    Load: (String, js.Any) => js.Any,
-    LoadHook: (String, js.Any) => js.Any,
-    Preloading: /* repeated */ js.Any => Unit,
-    Require: (String, js.Any) => js.Any,
+    Load: (String, Any) => Any,
+    LoadHook: (String, Any) => Any,
+    Preloading: /* repeated */ Any => Unit,
+    Require: (String, Any) => Any,
     STATUS: STATUS,
-    Styles: (js.Any, js.Any) => js.Any,
+    Styles: (Any, Any) => Any,
     fileURL: String => String,
     loadComplete: String => Unit,
     loadError: String => Unit,
-    loadHooks: js.Any,
+    loadHooks: Any,
     loadTimeout: String => Unit,
-    loaded: js.Any,
+    loaded: Any,
     loading: Boolean
   ): Ajax = {
     val __obj = js.Dynamic.literal(Load = js.Any.fromFunction2(Load), LoadHook = js.Any.fromFunction2(LoadHook), Preloading = js.Any.fromFunction1(Preloading), Require = js.Any.fromFunction2(Require), STATUS = STATUS.asInstanceOf[js.Any], Styles = js.Any.fromFunction2(Styles), fileURL = js.Any.fromFunction1(fileURL), loadComplete = js.Any.fromFunction1(loadComplete), loadError = js.Any.fromFunction1(loadError), loadHooks = loadHooks.asInstanceOf[js.Any], loadTimeout = js.Any.fromFunction1(loadTimeout), loaded = loaded.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any])
@@ -108,29 +108,29 @@ object Ajax {
     
     inline def setFileURL(value: String => String): Self = StObject.set(x, "fileURL", js.Any.fromFunction1(value))
     
-    inline def setLoad(value: (String, js.Any) => js.Any): Self = StObject.set(x, "Load", js.Any.fromFunction2(value))
+    inline def setLoad(value: (String, Any) => Any): Self = StObject.set(x, "Load", js.Any.fromFunction2(value))
     
     inline def setLoadComplete(value: String => Unit): Self = StObject.set(x, "loadComplete", js.Any.fromFunction1(value))
     
     inline def setLoadError(value: String => Unit): Self = StObject.set(x, "loadError", js.Any.fromFunction1(value))
     
-    inline def setLoadHook(value: (String, js.Any) => js.Any): Self = StObject.set(x, "LoadHook", js.Any.fromFunction2(value))
+    inline def setLoadHook(value: (String, Any) => Any): Self = StObject.set(x, "LoadHook", js.Any.fromFunction2(value))
     
-    inline def setLoadHooks(value: js.Any): Self = StObject.set(x, "loadHooks", value.asInstanceOf[js.Any])
+    inline def setLoadHooks(value: Any): Self = StObject.set(x, "loadHooks", value.asInstanceOf[js.Any])
     
     inline def setLoadTimeout(value: String => Unit): Self = StObject.set(x, "loadTimeout", js.Any.fromFunction1(value))
     
-    inline def setLoaded(value: js.Any): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Any): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    inline def setPreloading(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "Preloading", js.Any.fromFunction1(value))
+    inline def setPreloading(value: /* repeated */ Any => Unit): Self = StObject.set(x, "Preloading", js.Any.fromFunction1(value))
     
-    inline def setRequire(value: (String, js.Any) => js.Any): Self = StObject.set(x, "Require", js.Any.fromFunction2(value))
+    inline def setRequire(value: (String, Any) => Any): Self = StObject.set(x, "Require", js.Any.fromFunction2(value))
     
     inline def setSTATUS(value: STATUS): Self = StObject.set(x, "STATUS", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Styles", js.Any.fromFunction2(value))
+    inline def setStyles(value: (Any, Any) => Any): Self = StObject.set(x, "Styles", js.Any.fromFunction2(value))
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

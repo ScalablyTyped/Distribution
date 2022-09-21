@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Authority extends StObject {
   
-  var authority: js.UndefOr[String] = js.undefined
+  val authority: js.UndefOr[String] = js.undefined
   
-  var fragment: js.UndefOr[String] = js.undefined
+  val fragment: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String] = js.undefined
+  val path: js.UndefOr[String] = js.undefined
   
-  var query: js.UndefOr[String] = js.undefined
+  val query: js.UndefOr[String] = js.undefined
   
-  var scheme: js.UndefOr[String] = js.undefined
+  val scheme: String
 }
 object Authority {
   
-  inline def apply(): Authority = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(scheme: String): Authority = {
+    val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Authority]
   }
   
@@ -42,7 +42,5 @@ object Authority {
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
-    
-    inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
   }
 }

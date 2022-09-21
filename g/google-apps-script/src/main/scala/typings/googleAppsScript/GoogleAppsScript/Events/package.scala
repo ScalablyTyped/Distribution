@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 // tslint:disable-next-line: no-empty-interface
-type DoGet = typings.googleAppsScript.GoogleAppsScript.Events.AppsScriptHttpRequestEvent
+type DoGet = AppsScriptHttpRequestEvent

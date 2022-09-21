@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDatacatalog.anon
 
-import typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest
+import typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1EntryGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait AltCallback extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the tag template. Example: * projects/{project_id}/locations/{location}/tagTemplates/{tag_template_id}/fields/{tag_template_field_id} */
+  /** The resource name of the entry group in URL format. Note: The entry group itself and its child resources might not be stored in the location specified in its name. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,13 @@ trait AltCallback extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest
+  var resource: GoogleCloudDatacatalogV1EntryGroup
+  
+  /**
+    * Names of fields whose values to overwrite on an entry group. If this parameter is absent or empty, all modifiable fields are overwritten. If such fields are non-required and
+    * omitted in the request body, their values are emptied.
+    */
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +55,7 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(name: String, resource: GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest): AltCallback = {
+  inline def apply(name: String, resource: GoogleCloudDatacatalogV1EntryGroup): AltCallback = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
@@ -94,7 +100,11 @@ object AltCallback {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleCloudDatacatalogV1EntryGroup): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Better HTML5 drag events
 | ------------------ | :-------------: |
 | Full name          | dragster |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 17770 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1810.6666666666667 |
+| # stars            | 100.0 |
 
 ## Links
 - [Homepage](https://github.com/bensmithett/dragster)

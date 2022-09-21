@@ -34,7 +34,7 @@ object RespondDecisionTaskCompletedInput {
     
     inline def setDecisionsUndefined: Self = StObject.set(x, "decisions", js.undefined)
     
-    inline def setDecisionsVarargs(value: Decision*): Self = StObject.set(x, "decisions", js.Array(value :_*))
+    inline def setDecisionsVarargs(value: Decision*): Self = StObject.set(x, "decisions", js.Array(value*))
     
     inline def setExecutionContext(value: Data): Self = StObject.set(x, "executionContext", value.asInstanceOf[js.Any])
     

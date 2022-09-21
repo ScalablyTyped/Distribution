@@ -12,6 +12,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLDListElement
 import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
+import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -31,11 +32,13 @@ import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
 import typings.std.HTMLMetaElement
+import typings.std.HTMLMeterElement
 import typings.std.HTMLModElement
 import typings.std.HTMLOListElement
 import typings.std.HTMLObjectElement
 import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
+import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
 import typings.std.HTMLParamElement
 import typings.std.HTMLPreElement
@@ -55,6 +58,7 @@ import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
 import typings.std.HTMLTextAreaElement
+import typings.std.HTMLTimeElement
 import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
@@ -130,7 +134,7 @@ object global {
     
     @js.native
     trait ElementClass
-      extends Component[js.Any, js.Object, js.Any]
+      extends Component[Any, js.Object, Any]
     
     type IntrinsicAttributes = Attributes
     
@@ -170,7 +174,7 @@ object global {
       
       var big: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]
+      var blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]
       
       var body: DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]
       
@@ -203,11 +207,11 @@ object global {
       
       var defs: SVGProps[SVGDefsElement]
       
-      var del: DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement]
+      var del: DetailedHTMLProps[DelHTMLAttributes[HTMLModElement], HTMLModElement]
       
       var desc: SVGProps[SVGDescElement]
       
-      var details: DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement]
+      var details: DetailedHTMLProps[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement]
       
       var dfn: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
@@ -359,7 +363,7 @@ object global {
       
       var metadata: SVGProps[SVGMetadataElement]
       
-      var meter: DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement]
+      var meter: DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement]
       
       var mpath: SVGProps[SVGElement]
       
@@ -377,7 +381,7 @@ object global {
       
       var option: DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]
       
-      var output: DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement]
+      var output: DetailedHTMLProps[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement]
       
       var p: DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]
       
@@ -466,7 +470,7 @@ object global {
       
       var thead: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
       
-      var time: DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement]
+      var time: DetailedHTMLProps[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement]
       
       var title: DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]
       
@@ -510,7 +514,7 @@ object global {
         bdi: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         bdo: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         big: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
-        blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement],
+        blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement],
         body: DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement],
         br: DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement],
         button: DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement],
@@ -526,9 +530,9 @@ object global {
         datalist: DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement],
         dd: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         defs: SVGProps[SVGDefsElement],
-        del: DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement],
+        del: DetailedHTMLProps[DelHTMLAttributes[HTMLModElement], HTMLModElement],
         desc: SVGProps[SVGDescElement],
-        details: DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement],
+        details: DetailedHTMLProps[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement],
         dfn: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         dialog: DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement],
         div: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement],
@@ -604,7 +608,7 @@ object global {
         menuitem: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         meta: DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement],
         metadata: SVGProps[SVGMetadataElement],
-        meter: DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement],
+        meter: DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement],
         mpath: SVGProps[SVGElement],
         nav: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
         noindex: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
@@ -613,7 +617,7 @@ object global {
         ol: DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement],
         optgroup: DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement],
         option: DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement],
-        output: DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement],
+        output: DetailedHTMLProps[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement],
         p: DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement],
         param: DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement],
         path: SVGProps[SVGPathElement],
@@ -657,7 +661,7 @@ object global {
         tfoot: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement],
         th: DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement],
         thead: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement],
-        time: DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement],
+        time: DetailedHTMLProps[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement],
         title: DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement],
         tr: DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement],
         track: DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement],
@@ -709,7 +713,7 @@ object global {
         
         inline def setBig(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
         
-        inline def setBlockquote(value: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
+        inline def setBlockquote(value: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
         
         inline def setBody(value: DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -741,11 +745,11 @@ object global {
         
         inline def setDefs(value: SVGProps[SVGDefsElement]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
         
-        inline def setDel(value: DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+        inline def setDel(value: DetailedHTMLProps[DelHTMLAttributes[HTMLModElement], HTMLModElement]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
         
         inline def setDesc(value: SVGProps[SVGDescElement]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
         
-        inline def setDetails(value: DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        inline def setDetails(value: DetailedHTMLProps[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
         inline def setDfn(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
         
@@ -897,7 +901,7 @@ object global {
         
         inline def setMetadata(value: SVGProps[SVGMetadataElement]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        inline def setMeter(value: DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+        inline def setMeter(value: DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
         
         inline def setMpath(value: SVGProps[SVGElement]): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
         
@@ -915,7 +919,7 @@ object global {
         
         inline def setOption(value: DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
         
-        inline def setOutput(value: DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+        inline def setOutput(value: DetailedHTMLProps[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
         
         inline def setP(value: DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
         
@@ -1003,7 +1007,7 @@ object global {
         
         inline def setThead(value: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
         
-        inline def setTime(value: DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+        inline def setTime(value: DetailedHTMLProps[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
         
         inline def setTitle(value: DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -1033,6 +1037,6 @@ object global {
     
     // We can't recurse forever because `type` can't be self-referential;
     // let's assume it's reasonable to do a single React.lazy() around a single React.memo() / vice-versa
-    type LibraryManagedAttributes[C, P] = ReactManagedAttributes[js.Any | C, P]
+    type LibraryManagedAttributes[C, P] = ReactManagedAttributes[Any | C, P]
   }
 }

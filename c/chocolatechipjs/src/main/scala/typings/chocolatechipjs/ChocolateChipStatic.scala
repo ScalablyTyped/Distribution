@@ -25,7 +25,7 @@ trait ChocolateChipStatic extends StObject {
     *
     * @param callback A function to execute after the DOM is ready.
     */
-  def apply(callback: js.Function0[js.Any]): Unit = js.native
+  def apply(callback: js.Function0[Any]): Unit = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
@@ -111,8 +111,8 @@ trait ChocolateChipStatic extends StObject {
     * @param callback A function to execute.
     * @param duration The number of milliseconds to delay execution.
     */
-  def delay(callback: js.Function): js.Any = js.native
-  def delay(callback: js.Function, duration: Double): js.Any = js.native
+  def delay(callback: js.Function): Any = js.native
+  def delay(callback: js.Function, duration: Double): Any = js.native
   
   /**
     * This method allows you to execute a callback on each item in an array of elements.
@@ -120,7 +120,7 @@ trait ChocolateChipStatic extends StObject {
     * @param array An array of elements.
     * @param callback A callback to execute on each element. This has two parameters: the context, followed by the index of the current iteration.
     */
-  def each[T](array: js.Array[T], callback: js.Function2[/* ctx */ T, /* idx */ Double, js.Any]): js.Any = js.native
+  def each[T](array: js.Array[T], callback: js.Function2[/* ctx */ T, /* idx */ Double, Any]): Any = js.native
   
   /**
     * Extend the ChocolateChipJS object itself with the provided object.
@@ -168,7 +168,7 @@ trait ChocolateChipStatic extends StObject {
     *
     * @param obj Object to test whether or not it is an array.
     */
-  def isArray(obj: js.Any): Boolean = js.native
+  def isArray(obj: Any): Boolean = js.native
   
   /**
     * Whether OS is Blackberry.
@@ -191,21 +191,21 @@ trait ChocolateChipStatic extends StObject {
     * @param obj Object to test whether or not it is an empty object.
     * @return boolean
     */
-  def isEmptyObject(obj: js.Any): Boolean = js.native
+  def isEmptyObject(obj: Any): Boolean = js.native
   
   /**
     * Determine whether the argument is a float.
     *
     * @param obj Object to test whether or not it is a float.
     */
-  def isFloat(obj: js.Any): Boolean = js.native
+  def isFloat(obj: Any): Boolean = js.native
   
   /**
     * Determine whether the argument is a function.
     *
     * @param obj Object to test whether or not it is an function.
     */
-  def isFunction(obj: js.Any): Boolean = js.native
+  def isFunction(obj: Any): Boolean = js.native
   
   /**
     * Whether browser is IE10.
@@ -222,7 +222,7 @@ trait ChocolateChipStatic extends StObject {
     *
     * @param obj Object to test whether or not it is an integer.
     */
-  def isInteger(obj: js.Any): Boolean = js.native
+  def isInteger(obj: Any): Boolean = js.native
   
   /**
     * Whether browser is running on mobile device.
@@ -239,14 +239,14 @@ trait ChocolateChipStatic extends StObject {
     *
     * @param obj Object to test whether or not it is a number.
     */
-  def isNumber(obj: js.Any): Boolean = js.native
+  def isNumber(obj: Any): Boolean = js.native
   
   /**
     * Determine whether the argument is an object.
     *
     * @param obj Object to test whether or not it is an object.
     */
-  def isObject(obj: js.Any): Boolean = js.native
+  def isObject(obj: Any): Boolean = js.native
   
   /**
     * Whether there is a network connection.
@@ -268,7 +268,7 @@ trait ChocolateChipStatic extends StObject {
     *
     * @param obj Object to test whether or not it is a string.
     */
-  def isString(obj: js.Any): Boolean = js.native
+  def isString(obj: Any): Boolean = js.native
   
   /**
     * Whether OS supports touch events.
@@ -338,8 +338,8 @@ trait ChocolateChipStatic extends StObject {
     * @param url A string defining the url to target.
     * @param options And object literal of properties: {timeout? number, callbackName?: string, clear?: boolean}
     */
-  def jsonp(url: String): js.Any = js.native
-  def jsonp(url: String, options: CallbackName): js.Any = js.native
+  def jsonp(url: String): Any = js.native
+  def jsonp(url: String, options: CallbackName): Any = js.native
   
   /**
     * Contains the name of the library (ChocolateChip).
@@ -368,8 +368,8 @@ trait ChocolateChipStatic extends StObject {
     * @param callback A callback function that is executed after the script loads.
     * @return {Function}
     */
-  def processJSON(json: String): js.Any = js.native
-  def processJSON(json: String, name: String): js.Any = js.native
+  def processJSON(json: String): Any = js.native
+  def processJSON(json: String, name: String): Any = js.native
   
   /**
     *    Publish a topic with data for the topic's subscribers to receive.
@@ -378,7 +378,7 @@ trait ChocolateChipStatic extends StObject {
     * @param data The data to send with the publication. This can be of any type: string, number, array, object, etc.
     * @return {void}
     */
-  def publish(topic: String, data: js.Any): String = js.native
+  def publish(topic: String, data: Any): String = js.native
   
   /**
     * Replace one element with another.
@@ -403,7 +403,7 @@ trait ChocolateChipStatic extends StObject {
     * @param result The result of a method to test if it can be returned in an array.
     * @return An array holding the results of a method, otherwise an empty array.
     */
-  def returnResult(result: js.Array[HTMLElement]): js.Array[js.Any] = js.native
+  def returnResult(result: js.Array[HTMLElement]): js.Array[Any] = js.native
   
   /**
     * This method takes a referenced form and serializes its element names and values, which it returns as a string. This is required if you want to send form data.
@@ -411,7 +411,7 @@ trait ChocolateChipStatic extends StObject {
     * @param element A string, HTML element or ChocolateChipElementArray containing a reference to a from.
     * @return An encode string form element names and values.
     */
-  def serialize(element: js.Any): String = js.native
+  def serialize(element: Any): String = js.native
   def serialize(form: ChocolateChipElementArray): String = js.native
   /**
     * Serialize
@@ -425,7 +425,7 @@ trait ChocolateChipStatic extends StObject {
     * @param topic A topic to subscribe to. This can be a single term, or any type of namespaced term with delimiters.
     * @param callback You can receive any type: string, number, array, object, etc.
     */
-  def subscribe(topic: String, callback: js.Function2[/* topic */ String, /* data */ js.Any, js.Any]): Boolean = js.native
+  def subscribe(topic: String, callback: js.Function2[/* topic */ String, /* data */ Any, Any]): Boolean = js.native
   
   /**
     * This method parses a string and an optoinal variable name and returns a parsed template in the form of a function. You can then pass this function data to get rendered nodes.

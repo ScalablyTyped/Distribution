@@ -16,7 +16,7 @@ object updateTableCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/commands/UpdateTableCommand", "UpdateTableCommand")
   @js.native
-  class UpdateTableCommand protected ()
+  open class UpdateTableCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object updateTableCommandMod {
     override val middlewareStack: MiddlewareStack[UpdateTableInput, UpdateTableOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[UpdateTableInput, UpdateTableOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UpdateTableInput, UpdateTableOutput] = js.native
   }
 }

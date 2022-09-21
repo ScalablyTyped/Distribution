@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NativeEventTarget extends StObject {
   
-  def off(name: String, cb: js.Function1[/* e */ js.Any, js.Any]): Unit
+  def off(name: String, cb: js.Function1[/* e */ Any, Any]): Unit
   
-  def on(name: String, cb: js.Function1[/* e */ js.Any, js.Any]): Unit
+  def on(name: String, cb: js.Function1[/* e */ Any, Any]): Unit
 }
 object NativeEventTarget {
   
   inline def apply(
-    off: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit,
-    on: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit
+    off: (String, js.Function1[/* e */ Any, Any]) => Unit,
+    on: (String, js.Function1[/* e */ Any, Any]) => Unit
   ): NativeEventTarget = {
     val __obj = js.Dynamic.literal(off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on))
     __obj.asInstanceOf[NativeEventTarget]
@@ -22,8 +22,8 @@ object NativeEventTarget {
   
   extension [Self <: NativeEventTarget](x: Self) {
     
-    inline def setOff(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+    inline def setOff(value: (String, js.Function1[/* e */ Any, Any]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     
-    inline def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Function1[/* e */ Any, Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

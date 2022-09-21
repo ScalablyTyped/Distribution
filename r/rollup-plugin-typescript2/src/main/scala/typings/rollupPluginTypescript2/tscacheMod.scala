@@ -1,10 +1,10 @@
 package typings.rollupPluginTypescript2
 
-import typings.rollupPluginTypescript2.contextMod.IContext
+import typings.rollupPluginTypescript2.contextMod.RollupContext
+import typings.rollupPluginTypescript2.diagnosticsMod.IDiagnostics
 import typings.rollupPluginTypescript2.rollupPluginTypescript2Booleans.`false`
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.Diagnostic
-import typings.typescript.mod.DiagnosticCategory
 import typings.typescript.mod.EmitOutput
 import typings.typescript.mod.IScriptSnapshot
 import typings.typescript.mod.LanguageServiceHost
@@ -21,81 +21,83 @@ object tscacheMod {
   
   @JSImport("rollup-plugin-typescript2/dist/tscache", "TsCache")
   @js.native
-  class TsCache protected () extends StObject {
+  open class TsCache protected () extends StObject {
     def this(
       noCache: Boolean,
       hashIgnoreUnknown: Boolean,
       host: LanguageServiceHost,
       cacheRoot: String,
       options: CompilerOptions,
-      rollupConfig: js.Any,
+      rollupConfig: Any,
       rootFilenames: js.Array[String],
-      context: IContext
+      context: RollupContext
     ) = this()
     
-    /* private */ var ambientTypes: js.Any = js.native
+    /* private */ var ambientTypes: Any = js.native
     
-    /* private */ var ambientTypesDirty: js.Any = js.native
+    /* private */ var ambientTypesDirty: Any = js.native
     
-    /* private */ var cacheDir: js.Any = js.native
+    /* private */ var cacheDir: Any = js.native
     
-    /* private */ var cachePrefix: js.Any = js.native
+    /* private */ var cachePrefix: Any = js.native
     
-    /* private */ var cacheRoot: js.Any = js.native
+    /* private */ var cacheRoot: Any = js.native
     
-    /* private */ var cacheVersion: js.Any = js.native
+    /* private */ var cacheVersion: Any = js.native
     
-    /* private */ var checkAmbientTypes: js.Any = js.native
+    /* private */ var checkAmbientTypes: Any = js.native
     
-    def clean(): Unit = js.native
+    /* private */ var clean: Any = js.native
     
-    /* private */ var codeCache: js.Any = js.native
+    /* private */ var codeCache: Any = js.native
     
-    /* private */ var context: js.Any = js.native
+    /* private */ var context: Any = js.native
     
-    /* private */ var dependencyTree: js.Any = js.native
+    /** @returns an FS-safe hash string for use as a path to the cached content */
+    /* private */ var createHash: Any = js.native
+    
+    /* private */ var dependencyTree: Any = js.native
     
     def done(): Unit = js.native
     
+    /* private */ var getCached: Any = js.native
+    
     def getCompiled(id: String, snapshot: IScriptSnapshot, transform: js.Function0[js.UndefOr[ICode]]): js.UndefOr[ICode] = js.native
     
-    /* private */ var getDiagnostics: js.Any = js.native
+    /* private */ var getDiagnostics: Any = js.native
     
     def getSemanticDiagnostics(id: String, snapshot: IScriptSnapshot, check: js.Function0[js.Array[Diagnostic]]): js.Array[IDiagnostics] = js.native
     
     def getSyntacticDiagnostics(id: String, snapshot: IScriptSnapshot, check: js.Function0[js.Array[Diagnostic]]): js.Array[IDiagnostics] = js.native
     
-    /* private */ var hashOptions: js.Any = js.native
+    /* private */ var hashOptions: Any = js.native
     
-    /* private */ var host: js.Any = js.native
+    /* private */ var host: Any = js.native
     
-    /* private */ var init: js.Any = js.native
+    /* private */ var init: Any = js.native
     
-    /* private */ var isDirty: js.Any = js.native
+    /** @returns true if node, any of its imports, or any ambient types changed */
+    /* private */ var isDirty: Any = js.native
     
-    /* private */ var makeName: js.Any = js.native
+    /* private */ var markAsDirty: Any = js.native
     
-    /* private */ var markAsDirty: js.Any = js.native
+    /* private */ var noCache: Any = js.native
     
-    /* private */ var noCache: js.Any = js.native
+    /* private */ var options: Any = js.native
     
-    /* private */ var options: js.Any = js.native
+    /* private */ var rollupConfig: Any = js.native
     
-    /* private */ var rollupConfig: js.Any = js.native
-    
-    /* private */ var semanticDiagnosticsCache: js.Any = js.native
+    /* private */ var semanticDiagnosticsCache: Any = js.native
     
     def setDependency(importee: String, importer: String): Unit = js.native
     
-    /* private */ var syntacticDiagnosticsCache: js.Any = js.native
+    /* private */ var syntacticDiagnosticsCache: Any = js.native
     
-    /* private */ var typesCache: js.Any = js.native
+    /* private */ var typesCache: Any = js.native
     
     @JSName("walkTree")
     def walkTree_false(cb: js.Function1[/* id */ String, Unit | `false`]): Unit = js.native
   }
-  
-  inline def convertDiagnostic(`type`: String, data: js.Array[Diagnostic]): js.Array[IDiagnostics] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDiagnostic")(`type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[IDiagnostics]]
   
   inline def convertEmitOutput(output: EmitOutput): ICode = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEmitOutput")(output.asInstanceOf[js.Any]).asInstanceOf[ICode]
   inline def convertEmitOutput(output: EmitOutput, references: js.Array[String]): ICode = (^.asInstanceOf[js.Dynamic].applyDynamic("convertEmitOutput")(output.asInstanceOf[js.Any], references.asInstanceOf[js.Any])).asInstanceOf[ICode]
@@ -142,47 +144,7 @@ object tscacheMod {
       
       inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
-    }
-  }
-  
-  trait IDiagnostics extends StObject {
-    
-    var category: DiagnosticCategory
-    
-    var code: Double
-    
-    var fileLine: js.UndefOr[String] = js.undefined
-    
-    var flatMessage: String
-    
-    var formatted: String
-    
-    var `type`: String
-  }
-  object IDiagnostics {
-    
-    inline def apply(category: DiagnosticCategory, code: Double, flatMessage: String, formatted: String, `type`: String): IDiagnostics = {
-      val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], flatMessage = flatMessage.asInstanceOf[js.Any], formatted = formatted.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IDiagnostics]
-    }
-    
-    extension [Self <: IDiagnostics](x: Self) {
-      
-      inline def setCategory(value: DiagnosticCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
-      
-      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      inline def setFileLine(value: String): Self = StObject.set(x, "fileLine", value.asInstanceOf[js.Any])
-      
-      inline def setFileLineUndefined: Self = StObject.set(x, "fileLine", js.undefined)
-      
-      inline def setFlatMessage(value: String): Self = StObject.set(x, "flatMessage", value.asInstanceOf[js.Any])
-      
-      inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value*))
     }
   }
 }

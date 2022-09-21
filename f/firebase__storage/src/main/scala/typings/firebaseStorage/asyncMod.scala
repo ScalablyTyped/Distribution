@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object asyncMod {
   
-  @JSImport("@firebase/storage/dist/src/implementation/async", JSImport.Namespace)
+  @JSImport("@firebase/storage/dist/node-esm/src/implementation/async", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -9,7 +9,7 @@ trait DescribeCrossAccountAccessRoleResponse extends StObject {
   /**
     * The date when the cross-account access role was registered.
     */
-  var registeredAt: Timestamp
+  var registeredAt: js.Date
   
   /**
     * The ARN that specifies the IAM role that Amazon Inspector uses to access your AWS account.
@@ -23,14 +23,14 @@ trait DescribeCrossAccountAccessRoleResponse extends StObject {
 }
 object DescribeCrossAccountAccessRoleResponse {
   
-  inline def apply(registeredAt: Timestamp, roleArn: Arn, valid: Bool): DescribeCrossAccountAccessRoleResponse = {
+  inline def apply(registeredAt: js.Date, roleArn: Arn, valid: Bool): DescribeCrossAccountAccessRoleResponse = {
     val __obj = js.Dynamic.literal(registeredAt = registeredAt.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCrossAccountAccessRoleResponse]
   }
   
   extension [Self <: DescribeCrossAccountAccessRoleResponse](x: Self) {
     
-    inline def setRegisteredAt(value: Timestamp): Self = StObject.set(x, "registeredAt", value.asInstanceOf[js.Any])
+    inline def setRegisteredAt(value: js.Date): Self = StObject.set(x, "registeredAt", value.asInstanceOf[js.Any])
     
     inline def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

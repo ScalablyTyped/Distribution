@@ -11,7 +11,7 @@ object mod {
     
     var compilers: js.UndefOr[IWallabyBuiltInCompilers] = js.undefined
     
-    var defaults: js.UndefOr[js.Any] = js.undefined
+    var defaults: js.UndefOr[Any] = js.undefined
     
     var localProjectDir: js.UndefOr[String] = js.undefined
     
@@ -30,7 +30,7 @@ object mod {
       
       inline def setCompilersUndefined: Self = StObject.set(x, "compilers", js.undefined)
       
-      inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
       inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
@@ -65,11 +65,11 @@ object mod {
     
     var map: String
     
-    var ranges: js.Any
+    var ranges: Any
   }
   object IWallabyCompilerResult {
     
-    inline def apply(code: String, map: String, ranges: js.Any): IWallabyCompilerResult = {
+    inline def apply(code: String, map: String, ranges: Any): IWallabyCompilerResult = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], ranges = ranges.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWallabyCompilerResult]
     }
@@ -80,11 +80,11 @@ object mod {
       
       inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      inline def setRanges(value: js.Any): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+      inline def setRanges(value: Any): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     }
   }
   
-  type IWallabyCompilers = StringDictionary[js.Any]
+  type IWallabyCompilers = StringDictionary[Any]
   
   trait IWallabyConfig extends StObject {
     
@@ -129,7 +129,7 @@ object mod {
       
       inline def setFiles(value: js.Array[IWallabyFilePattern | String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: (IWallabyFilePattern | String)*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: (IWallabyFilePattern | String)*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setPostprocessor(value: IWallabyProcessor): Self = StObject.set(x, "postprocessor", value.asInstanceOf[js.Any])
       
@@ -145,7 +145,7 @@ object mod {
       
       inline def setTests(value: js.Array[IWallabyFilePattern | String]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
       
-      inline def setTestsVarargs(value: (IWallabyFilePattern | String)*): Self = StObject.set(x, "tests", js.Array(value :_*))
+      inline def setTestsVarargs(value: (IWallabyFilePattern | String)*): Self = StObject.set(x, "tests", js.Array(value*))
       
       inline def setWorkers(value: IWallabyWorkers): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
       

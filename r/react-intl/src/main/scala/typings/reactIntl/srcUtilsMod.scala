@@ -1,9 +1,10 @@
 package typings.reactIntl
 
+import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
 import typings.formatjsIntl.srcTypesMod.CustomFormats
+import typings.formatjsIntl.srcTypesMod.MessageIds
 import typings.formatjsIntl.srcTypesMod.OnErrorFn
 import typings.intlMessageformat.srcFormattersMod.FormatXMLElementFn
-import typings.intlMessageformatParser.srcTypesMod.MessageFormatElement
 import typings.react.mod.ReactNode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -16,7 +17,7 @@ object srcUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /* Inlined std.Pick<react-intl.react-intl/src/types.IntlConfig, 'formats' | 'messages' | 'timeZone' | 'textComponent' | 'defaultLocale' | 'defaultFormats' | 'onError'> */
+  /* Inlined std.Pick<react-intl.react-intl/src/types.ResolvedIntlConfig, 'fallbackOnEmptyString' | 'formats' | 'messages' | 'timeZone' | 'textComponent' | 'defaultLocale' | 'defaultFormats' | 'onError'> */
   object DEFAULT_INTL_CONFIG {
     
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG")
@@ -33,6 +34,11 @@ object srcUtilsMod {
     def defaultLocale: String = js.native
     inline def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
     
+    @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.fallbackOnEmptyString")
+    @js.native
+    def fallbackOnEmptyString: js.UndefOr[Boolean] = js.native
+    inline def fallbackOnEmptyString_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbackOnEmptyString")(x.asInstanceOf[js.Any])
+    
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.formats")
     @js.native
     def formats: CustomFormats = js.native
@@ -40,8 +46,8 @@ object srcUtilsMod {
     
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.messages")
     @js.native
-    def messages: Record[String, js.Array[MessageFormatElement] | String] = js.native
-    inline def messages_=(x: Record[String, js.Array[MessageFormatElement] | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messages")(x.asInstanceOf[js.Any])
+    def messages: Record[MessageIds, js.Array[MessageFormatElement] | String] = js.native
+    inline def messages_=(x: Record[MessageIds, js.Array[MessageFormatElement] | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messages")(x.asInstanceOf[js.Any])
     
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.onError")
     @js.native
@@ -51,11 +57,11 @@ object srcUtilsMod {
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.textComponent")
     @js.native
     def textComponent: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any
       ] = js.native
     inline def textComponent_=(
       x: js.UndefOr[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textComponent")(x.asInstanceOf[js.Any])
     
@@ -70,5 +76,10 @@ object srcUtilsMod {
   ): FormatXMLElementFn[ReactNode, String | ReactNode | (js.Array[String | ReactNode])] = ^.asInstanceOf[js.Dynamic].applyDynamic("assignUniqueKeysToParts")(formatXMLElementFn.asInstanceOf[js.Any]).asInstanceOf[FormatXMLElementFn[ReactNode, String | ReactNode | (js.Array[String | ReactNode])]]
   
   inline def invariantIntlContext(): /* asserts intl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariantIntlContext")().asInstanceOf[/* asserts intl */ Boolean]
-  inline def invariantIntlContext(intl: js.Any): /* asserts intl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariantIntlContext")(intl.asInstanceOf[js.Any]).asInstanceOf[/* asserts intl */ Boolean]
+  inline def invariantIntlContext(intl: Any): /* asserts intl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariantIntlContext")(intl.asInstanceOf[js.Any]).asInstanceOf[/* asserts intl */ Boolean]
+  
+  inline def shallowEqual[T /* <: Record[String, Any] */](): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")().asInstanceOf[Boolean]
+  inline def shallowEqual[T /* <: Record[String, Any] */](objA: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(objA.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def shallowEqual[T /* <: Record[String, Any] */](objA: T, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shallowEqual[T /* <: Record[String, Any] */](objA: Unit, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

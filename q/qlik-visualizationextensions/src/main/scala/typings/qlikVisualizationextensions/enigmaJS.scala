@@ -12,47 +12,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object enigmaJS {
   
-  @js.native
   trait IGeneratedAPI extends StObject {
     
     /**
       * manual emit an events
       * @param event - event that occures
       */
-    @JSName("emit")
-    def emit_changed(event: changed): Unit = js.native
-    @JSName("emit")
-    def emit_closed(event: closed): Unit = js.native
+    def emit(event: changed | closed): Unit
     
     /**
       * Despite the name, this property corresponds to the qInfo.qType property on your generic object's properties object.
       */
-    var genericType: String = js.native
+    var genericType: String
     
     /**
       * This property contains the handle QIX Engine assigned to the API.
       * Used internally in enigma.js for caches and JSON-RPC
       */
-    var handle: Double = js.native
+    var handle: Double
     
     /**
       * This property contains the unique identifier for this API.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * register a function for events
       * @param event - function called if this event occures
       * @param func - function that is called
       */
-    @JSName("on")
-    def on_changed(event: changed, func: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
-    def on_closed(event: closed, func: js.Function0[Unit]): Unit = js.native
+    def on(event: changed | closed, func: js.Function0[Unit]): Unit
     
     /**
       * This property contains the schema class name for this API.
       */
-    var `type`: String = js.native
+    var `type`: String
+  }
+  object IGeneratedAPI {
+    
+    inline def apply(
+      emit: changed | closed => Unit,
+      genericType: String,
+      handle: Double,
+      id: String,
+      on: (changed | closed, js.Function0[Unit]) => Unit,
+      `type`: String
+    ): IGeneratedAPI = {
+      val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), genericType = genericType.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], on = js.Any.fromFunction2(on))
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IGeneratedAPI]
+    }
+    
+    extension [Self <: IGeneratedAPI](x: Self) {
+      
+      inline def setEmit(value: changed | closed => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
+      
+      inline def setGenericType(value: String): Self = StObject.set(x, "genericType", value.asInstanceOf[js.Any])
+      
+      inline def setHandle(value: Double): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setOn(value: (changed | closed, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
   }
 }

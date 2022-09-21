@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Globalization
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -207,13 +206,13 @@ object DateTimeFormatting {
       * @param timeZoneId An identifier from the IANA Time Zone Database which identifies the time zone that should be used (for example, "Americas/Los_Angeles" for Pacific Time).
       * @return A string that represents the date, time, and time zone.
       */
-    def format(datetime: Date, timeZoneId: String): String = js.native
+    def format(datetime: js.Date, timeZoneId: String): String = js.native
     /**
       * Returns a string representation of the provided date and time.
       * @param value The date and time to be formatted.
       * @return A string that represents the date and time.
       */
-    def format(value: Date): String = js.native
+    def format(value: js.Date): String = js.native
     
     /** Gets or sets the region that is used when formatting dates and times. */
     var geographicRegion: String = js.native

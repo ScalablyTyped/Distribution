@@ -14,7 +14,7 @@ object emitterTypesIndexMod {
   /**
     * Creates a new instance BoxParticleEmitter
     */
-  class BoxParticleEmitter ()
+  open class BoxParticleEmitter ()
     extends typings.babylonjs.boxParticleEmitterMod.BoxParticleEmitter
   
   @JSImport("babylonjs/Particles/EmitterTypes/index", "ConeParticleEmitter")
@@ -25,7 +25,7 @@ object emitterTypesIndexMod {
     * @param angle the cone base angle (PI by default)
     * @param directionRandomizer defines how much to randomize the particle direction [0-1] (default is 0)
     */
-  class ConeParticleEmitter ()
+  open class ConeParticleEmitter ()
     extends typings.babylonjs.coneParticleEmitterMod.ConeParticleEmitter {
     def this(radius: Double) = this()
     def this(radius: Double, angle: Double) = this()
@@ -61,7 +61,7 @@ object emitterTypesIndexMod {
   /**
     * Creates a new instance CustomParticleEmitter
     */
-  class CustomParticleEmitter ()
+  open class CustomParticleEmitter ()
     extends typings.babylonjs.customParticleEmitterMod.CustomParticleEmitter
   
   @JSImport("babylonjs/Particles/EmitterTypes/index", "CylinderDirectedParticleEmitter")
@@ -74,7 +74,7 @@ object emitterTypesIndexMod {
     * @param direction1 the min limit of the emission direction (up vector by default)
     * @param direction2 the max limit of the emission direction (up vector by default)
     */
-  class CylinderDirectedParticleEmitter ()
+  open class CylinderDirectedParticleEmitter ()
     extends typings.babylonjs.cylinderParticleEmitterMod.CylinderDirectedParticleEmitter {
     def this(radius: Double) = this()
     def this(radius: Double, height: Double) = this()
@@ -374,7 +374,7 @@ object emitterTypesIndexMod {
     * @param radiusRange the range of the emission cylinder [0-1] 0 Surface only, 1 Entire Radius (1 by default)
     * @param directionRandomizer defines how much to randomize the particle direction [0-1]
     */
-  class CylinderParticleEmitter ()
+  open class CylinderParticleEmitter ()
     extends typings.babylonjs.cylinderParticleEmitterMod.CylinderParticleEmitter {
     def this(/**
       * The radius of the emission cylinder.
@@ -610,7 +610,7 @@ object emitterTypesIndexMod {
     * @param radiusRange the range of the emission hemisphere [0-1] 0 Surface only, 1 Entire Radius (1 by default)
     * @param directionRandomizer defines how much to randomize the particle direction [0-1]
     */
-  class HemisphericParticleEmitter ()
+  open class HemisphericParticleEmitter ()
     extends typings.babylonjs.hemisphericParticleEmitterMod.HemisphericParticleEmitter {
     def this(/**
       * The radius of the emission hemisphere.
@@ -700,7 +700,7 @@ object emitterTypesIndexMod {
     * Creates a new instance MeshParticleEmitter
     * @param mesh defines the mesh to use as source
     */
-  class MeshParticleEmitter ()
+  open class MeshParticleEmitter ()
     extends typings.babylonjs.meshParticleEmitterMod.MeshParticleEmitter {
     def this(mesh: Nullable[AbstractMesh]) = this()
   }
@@ -710,7 +710,7 @@ object emitterTypesIndexMod {
   /**
     * Creates a new instance PointParticleEmitter
     */
-  class PointParticleEmitter ()
+  open class PointParticleEmitter ()
     extends typings.babylonjs.pointParticleEmitterMod.PointParticleEmitter
   
   @JSImport("babylonjs/Particles/EmitterTypes/index", "SphereDirectedParticleEmitter")
@@ -721,7 +721,7 @@ object emitterTypesIndexMod {
     * @param direction1 the min limit of the emission direction (up vector by default)
     * @param direction2 the max limit of the emission direction (up vector by default)
     */
-  class SphereDirectedParticleEmitter ()
+  open class SphereDirectedParticleEmitter ()
     extends typings.babylonjs.sphereParticleEmitterMod.SphereDirectedParticleEmitter {
     def this(radius: Double) = this()
     def this(radius: Double, /**
@@ -786,7 +786,7 @@ object emitterTypesIndexMod {
     * @param radiusRange the range of the emission sphere [0-1] 0 Surface only, 1 Entire Radius (1 by default)
     * @param directionRandomizer defines how much to randomize the particle direction [0-1]
     */
-  class SphereParticleEmitter ()
+  open class SphereParticleEmitter ()
     extends typings.babylonjs.sphereParticleEmitterMod.SphereParticleEmitter {
     def this(/**
       * The radius of the emission sphere.

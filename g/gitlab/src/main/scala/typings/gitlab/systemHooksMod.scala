@@ -14,7 +14,7 @@ object systemHooksMod {
   
   @JSImport("gitlab/dist/types/core/services/SystemHooks", "SystemHooks")
   @js.native
-  class SystemHooks () extends BaseService {
+  open class SystemHooks () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def add(url: String): js.Promise[js.Object] = js.native

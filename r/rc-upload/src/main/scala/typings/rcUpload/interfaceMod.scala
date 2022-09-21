@@ -1,6 +1,5 @@
 package typings.rcUpload
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.rcUpload.rcUploadStrings.`additions removals`
 import typings.rcUpload.rcUploadStrings.`additions text`
 import typings.rcUpload.rcUploadStrings.`inline`
@@ -21,6 +20,7 @@ import typings.rcUpload.rcUploadStrings.dialog
 import typings.rcUpload.rcUploadStrings.done
 import typings.rcUpload.rcUploadStrings.email
 import typings.rcUpload.rcUploadStrings.enter
+import typings.rcUpload.rcUploadStrings.environment
 import typings.rcUpload.rcUploadStrings.execute
 import typings.rcUpload.rcUploadStrings.go
 import typings.rcUpload.rcUploadStrings.grammar
@@ -58,11 +58,13 @@ import typings.rcUpload.rcUploadStrings.text
 import typings.rcUpload.rcUploadStrings.time
 import typings.rcUpload.rcUploadStrings.tree
 import typings.rcUpload.rcUploadStrings.url
+import typings.rcUpload.rcUploadStrings.user
 import typings.rcUpload.rcUploadStrings.vertical
 import typings.rcUpload.rcUploadStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
@@ -77,6 +79,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.JSXElementConstructor
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -99,19 +102,27 @@ import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Blob
+import typings.std.DOMHighResTimeStamp
+import typings.std.Element
 import typings.std.Error
 import typings.std.Event
 import typings.std.EventTarget
+import typings.std.Exclude
 import typings.std.File
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import typings.std.ProgressEvent
+import typings.std.Record
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
+  
+  type Action = String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]])
+  
+  type BeforeUploadFileType = File | Blob | Boolean | String
   
   @js.native
   trait RcFile
@@ -121,12 +132,180 @@ object interfaceMod {
     var uid: String = js.native
   }
   
-  @js.native
-  trait UploadProgressEvent
-    extends StObject
-       with ProgressEvent[EventTarget] {
+  /* Inlined parent std.Partial<std.ProgressEvent<std.EventTarget>> */
+  trait UploadProgressEvent extends StObject {
     
-    var percent: Double = js.native
+    var AT_TARGET: js.UndefOr[Double] = js.undefined
+    
+    var BUBBLING_PHASE: js.UndefOr[Double] = js.undefined
+    
+    var CAPTURING_PHASE: js.UndefOr[Double] = js.undefined
+    
+    var NONE: js.UndefOr[Double] = js.undefined
+    
+    var bubbles: js.UndefOr[Boolean] = js.undefined
+    
+    var cancelBubble: js.UndefOr[Boolean] = js.undefined
+    
+    var cancelable: js.UndefOr[Boolean] = js.undefined
+    
+    var composed: js.UndefOr[Boolean] = js.undefined
+    
+    var composedPath: js.UndefOr[js.Function0[js.Array[EventTarget]]] = js.undefined
+    
+    var currentTarget: js.UndefOr[EventTarget | Null] = js.undefined
+    
+    var defaultPrevented: js.UndefOr[Boolean] = js.undefined
+    
+    var eventPhase: js.UndefOr[Double] = js.undefined
+    
+    var initEvent: js.UndefOr[js.Function1[/* type */ String, Unit]] = js.undefined
+    
+    var isTrusted: js.UndefOr[Boolean] = js.undefined
+    
+    var lengthComputable: js.UndefOr[Boolean] = js.undefined
+    
+    var loaded: js.UndefOr[Double] = js.undefined
+    
+    var percent: js.UndefOr[Double] = js.undefined
+    
+    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var returnValue: js.UndefOr[Boolean] = js.undefined
+    
+    var srcElement: js.UndefOr[EventTarget | Null] = js.undefined
+    
+    var stopImmediatePropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var target: js.UndefOr[EventTarget | Null] = js.undefined
+    
+    var timeStamp: js.UndefOr[DOMHighResTimeStamp] = js.undefined
+    
+    var total: js.UndefOr[Double] = js.undefined
+    
+    var `type`: js.UndefOr[String] = js.undefined
+  }
+  object UploadProgressEvent {
+    
+    inline def apply(): UploadProgressEvent = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadProgressEvent]
+    }
+    
+    extension [Self <: UploadProgressEvent](x: Self) {
+      
+      inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
+      
+      inline def setAT_TARGETUndefined: Self = StObject.set(x, "AT_TARGET", js.undefined)
+      
+      inline def setBUBBLING_PHASE(value: Double): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
+      
+      inline def setBUBBLING_PHASEUndefined: Self = StObject.set(x, "BUBBLING_PHASE", js.undefined)
+      
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      
+      inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+      
+      inline def setCAPTURING_PHASE(value: Double): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
+      
+      inline def setCAPTURING_PHASEUndefined: Self = StObject.set(x, "CAPTURING_PHASE", js.undefined)
+      
+      inline def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
+      
+      inline def setCancelBubbleUndefined: Self = StObject.set(x, "cancelBubble", js.undefined)
+      
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      
+      inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+      
+      inline def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
+      
+      inline def setComposedPath(value: () => js.Array[EventTarget]): Self = StObject.set(x, "composedPath", js.Any.fromFunction0(value))
+      
+      inline def setComposedPathUndefined: Self = StObject.set(x, "composedPath", js.undefined)
+      
+      inline def setComposedUndefined: Self = StObject.set(x, "composed", js.undefined)
+      
+      inline def setCurrentTarget(value: EventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentTargetNull: Self = StObject.set(x, "currentTarget", null)
+      
+      inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
+      
+      inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultPreventedUndefined: Self = StObject.set(x, "defaultPrevented", js.undefined)
+      
+      inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      
+      inline def setEventPhaseUndefined: Self = StObject.set(x, "eventPhase", js.undefined)
+      
+      inline def setInitEvent(value: /* type */ String => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction1(value))
+      
+      inline def setInitEventUndefined: Self = StObject.set(x, "initEvent", js.undefined)
+      
+      inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+      
+      inline def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
+      
+      inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
+      
+      inline def setLengthComputableUndefined: Self = StObject.set(x, "lengthComputable", js.undefined)
+      
+      inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      
+      inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+      
+      inline def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+      
+      inline def setNONEUndefined: Self = StObject.set(x, "NONE", js.undefined)
+      
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      
+      inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+      
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      
+      inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+      
+      inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+      
+      inline def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
+      
+      inline def setSrcElement(value: EventTarget): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
+      
+      inline def setSrcElementNull: Self = StObject.set(x, "srcElement", null)
+      
+      inline def setSrcElementUndefined: Self = StObject.set(x, "srcElement", js.undefined)
+      
+      inline def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+      
+      inline def setStopImmediatePropagationUndefined: Self = StObject.set(x, "stopImmediatePropagation", js.undefined)
+      
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      
+      inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+      
+      inline def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      
+      inline def setTimeStamp(value: DOMHighResTimeStamp): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      
+      inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
+      
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
   }
   
   /* Inlined parent std.Omit<react.react.InputHTMLAttributes<std.HTMLInputElement>, 'onError' | 'onProgress'> */
@@ -138,17 +317,17 @@ object interfaceMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var action: js.UndefOr[String | (js.Function1[/* file */ RcFile, String])] = js.undefined
+    var action: js.UndefOr[Action] = js.undefined
     
     var alt: js.UndefOr[String] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -166,21 +345,21 @@ object interfaceMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -194,11 +373,11 @@ object interfaceMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -210,13 +389,13 @@ object interfaceMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -226,7 +405,7 @@ object interfaceMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -251,10 +430,14 @@ object interfaceMod {
     var autoSave: js.UndefOr[String] = js.undefined
     
     var beforeUpload: js.UndefOr[
-        js.Function2[/* file */ RcFile, /* FileList */ js.Array[RcFile], Boolean | js.Promise[RcFile]]
+        js.Function2[
+          /* file */ RcFile, 
+          /* FileList */ js.Array[RcFile], 
+          BeforeUploadFileType | (js.Promise[Unit | BeforeUploadFileType])
+        ]
       ] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -264,7 +447,7 @@ object interfaceMod {
     
     var color: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[JSXElementConstructor[js.Any]] = js.undefined
+    var component: js.UndefOr[JSXElementConstructor[Any]] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -272,11 +455,13 @@ object interfaceMod {
     
     var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var customRequest: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var customRequest: js.UndefOr[js.Function1[/* option */ UploadRequestOption[Any], Unit]] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
-    var data: js.UndefOr[js.Object | (js.Function1[/* file */ RcFile | String | Blob, js.Object])] = js.undefined
+    var data: js.UndefOr[
+        (Record[String, Any]) | (js.Function1[/* file */ RcFile | String | Blob, Record[String, Any]])
+      ] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
     
@@ -314,7 +499,7 @@ object interfaceMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -357,6 +542,8 @@ object interfaceMod {
     var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.undefined
     
     var onAuxClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
+    
+    var onBatchStart: js.UndefOr[js.Function1[/* fileList */ js.Array[typings.rcUpload.anon.File], Unit]] = js.undefined
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
@@ -413,7 +600,9 @@ object interfaceMod {
     
     var onEnded: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onError: js.UndefOr[js.Function3[/* error */ Error, /* ret */ js.Object, /* file */ RcFile, Unit]] = js.undefined
+    var onError: js.UndefOr[
+        js.Function3[/* error */ js.Error, /* ret */ Record[String, Any], /* file */ RcFile, Unit]
+      ] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
@@ -494,7 +683,7 @@ object interfaceMod {
     var onSubmit: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
     var onSuccess: js.UndefOr[
-        js.Function3[/* response */ js.Object, /* file */ RcFile, /* xhr */ js.Object, Unit]
+        js.Function3[/* response */ Record[String, Any], /* file */ RcFile, /* xhr */ XMLHttpRequest, Unit]
       ] = js.undefined
     
     var onSuspend: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
@@ -539,7 +728,7 @@ object interfaceMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -563,13 +752,9 @@ object interfaceMod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var transformFile: js.UndefOr[
-        js.Function1[/* file */ RcFile, String | Blob | RcFile | (js.Thenable[String | Blob | RcFile])]
-      ] = js.undefined
-    
     var translate: js.UndefOr[yes | no] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
@@ -604,9 +789,9 @@ object interfaceMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAction(value: String | (js.Function1[/* file */ RcFile, String])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      inline def setActionFunction1(value: /* file */ RcFile => String): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setActionFunction1(value: /* file */ RcFile => String | js.Thenable[String]): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -618,7 +803,7 @@ object interfaceMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -626,7 +811,7 @@ object interfaceMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -662,7 +847,7 @@ object interfaceMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -674,7 +859,7 @@ object interfaceMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -682,7 +867,7 @@ object interfaceMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -690,7 +875,7 @@ object interfaceMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -718,15 +903,15 @@ object interfaceMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -750,7 +935,7 @@ object interfaceMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -760,7 +945,7 @@ object interfaceMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -780,7 +965,7 @@ object interfaceMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -828,11 +1013,13 @@ object interfaceMod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setBeforeUpload(value: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => Boolean | js.Promise[RcFile]): Self = StObject.set(x, "beforeUpload", js.Any.fromFunction2(value))
+      inline def setBeforeUpload(
+        value: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => BeforeUploadFileType | (js.Promise[Unit | BeforeUploadFileType])
+      ): Self = StObject.set(x, "beforeUpload", js.Any.fromFunction2(value))
       
       inline def setBeforeUploadUndefined: Self = StObject.set(x, "beforeUpload", js.undefined)
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -852,9 +1039,9 @@ object interfaceMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setComponent(value: JSXElementConstructor[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: JSXElementConstructor[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      inline def setComponentFunction1(value: js.Any => ReactElement | Null): Self = StObject.set(x, "component", js.Any.fromFunction1(value))
+      inline def setComponentFunction1(value: Any => ReactElement | Null): Self = StObject.set(x, "component", js.Any.fromFunction1(value))
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -870,7 +1057,7 @@ object interfaceMod {
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      inline def setCustomRequest(value: () => Unit): Self = StObject.set(x, "customRequest", js.Any.fromFunction0(value))
+      inline def setCustomRequest(value: /* option */ UploadRequestOption[Any] => Unit): Self = StObject.set(x, "customRequest", js.Any.fromFunction1(value))
       
       inline def setCustomRequestUndefined: Self = StObject.set(x, "customRequest", js.undefined)
       
@@ -878,9 +1065,11 @@ object interfaceMod {
       
       inline def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
       
-      inline def setData(value: js.Object | (js.Function1[/* file */ RcFile | String | Blob, js.Object])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(
+        value: (Record[String, Any]) | (js.Function1[/* file */ RcFile | String | Blob, Record[String, Any]])
+      ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataFunction1(value: /* file */ RcFile | String | Blob => js.Object): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
+      inline def setDataFunction1(value: /* file */ RcFile | String | Blob => Record[String, Any]): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -896,7 +1085,7 @@ object interfaceMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -958,7 +1147,7 @@ object interfaceMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -1046,11 +1235,15 @@ object interfaceMod {
       
       inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
+      inline def setOnBatchStart(value: /* fileList */ js.Array[typings.rcUpload.anon.File] => Unit): Self = StObject.set(x, "onBatchStart", js.Any.fromFunction1(value))
+      
+      inline def setOnBatchStartUndefined: Self = StObject.set(x, "onBatchStart", js.undefined)
+      
       inline def setOnBeforeInput(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1148,11 +1341,11 @@ object interfaceMod {
       
       inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      inline def setOnError(value: (/* error */ Error, /* ret */ js.Object, /* file */ RcFile) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
+      inline def setOnError(value: (/* error */ js.Error, /* ret */ Record[String, Any], /* file */ RcFile) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1308,7 +1501,7 @@ object interfaceMod {
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      inline def setOnSuccess(value: (/* response */ js.Object, /* file */ RcFile, /* xhr */ js.Object) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
+      inline def setOnSuccess(value: (/* response */ Record[String, Any], /* file */ RcFile, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
       
       inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
       
@@ -1396,7 +1589,7 @@ object interfaceMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1444,15 +1637,11 @@ object interfaceMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTransformFile(value: /* file */ RcFile => String | Blob | RcFile | (js.Thenable[String | Blob | RcFile])): Self = StObject.set(x, "transformFile", js.Any.fromFunction1(value))
-      
-      inline def setTransformFileUndefined: Self = StObject.set(x, "transformFile", js.undefined)
-      
       inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -1468,7 +1657,7 @@ object interfaceMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
@@ -1517,7 +1706,7 @@ object interfaceMod {
     }
   }
   
-  type UploadRequestHeader = StringDictionary[String]
+  type UploadRequestHeader = Record[String, String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.rcUpload.rcUploadStrings.POST
@@ -1547,9 +1736,9 @@ object interfaceMod {
     
     var action: String
     
-    var data: js.UndefOr[js.Object] = js.undefined
+    var data: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var file: RcFile
+    var file: (Exclude[BeforeUploadFileType, File | Boolean]) | RcFile
     
     var filename: js.UndefOr[String] = js.undefined
     
@@ -1567,13 +1756,17 @@ object interfaceMod {
     
     var onProgress: js.UndefOr[js.Function1[/* event */ UploadProgressEvent, Unit]] = js.undefined
     
-    var onSuccess: js.UndefOr[js.Function2[/* body */ T, /* xhr */ XMLHttpRequest, Unit]] = js.undefined
+    var onSuccess: js.UndefOr[js.Function2[/* body */ T, /* xhr */ js.UndefOr[XMLHttpRequest], Unit]] = js.undefined
     
     var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object UploadRequestOption {
     
-    inline def apply[T](action: String, file: RcFile, method: UploadRequestMethod): UploadRequestOption[T] = {
+    inline def apply[T](
+      action: String,
+      file: (Exclude[BeforeUploadFileType, File | Boolean]) | RcFile,
+      method: UploadRequestMethod
+    ): UploadRequestOption[T] = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadRequestOption[T]]
     }
@@ -1582,11 +1775,11 @@ object interfaceMod {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setFile(value: RcFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: (Exclude[BeforeUploadFileType, File | Boolean]) | RcFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -1608,7 +1801,7 @@ object interfaceMod {
       
       inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      inline def setOnSuccess(value: (/* body */ T, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
+      inline def setOnSuccess(value: (/* body */ T, /* xhr */ js.UndefOr[XMLHttpRequest]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
       
       inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
       

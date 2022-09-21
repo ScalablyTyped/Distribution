@@ -10,7 +10,7 @@ object updateMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/permission/update", "UpdatePermission")
   @js.native
-  class UpdatePermission protected () extends Permission {
+  open class UpdatePermission protected () extends Permission {
     /**
       * @param options UpdatePermission options
       * @public
@@ -46,7 +46,7 @@ object updateMod {
       
       inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
-      inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value*))
       
       inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     }

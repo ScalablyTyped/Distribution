@@ -26,10 +26,10 @@ object Popper {
     
     inline def setPopper(value: js.Array[typings.std.Element | Window | VisualViewport]): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
-    inline def setPopperVarargs(value: (typings.std.Element | Window | VisualViewport)*): Self = StObject.set(x, "popper", js.Array(value :_*))
+    inline def setPopperVarargs(value: (typings.std.Element | Window | VisualViewport)*): Self = StObject.set(x, "popper", js.Array(value*))
     
     inline def setReference(value: js.Array[typings.std.Element | Window | VisualViewport]): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    inline def setReferenceVarargs(value: (typings.std.Element | Window | VisualViewport)*): Self = StObject.set(x, "reference", js.Array(value :_*))
+    inline def setReferenceVarargs(value: (typings.std.Element | Window | VisualViewport)*): Self = StObject.set(x, "reference", js.Array(value*))
   }
 }

@@ -12,7 +12,7 @@ object immediateMod {
   
   @JSImport("ol/render/canvas/Immediate", JSImport.Default)
   @js.native
-  class default protected () extends CanvasImmediateRenderer {
+  open class default protected () extends CanvasImmediateRenderer {
     def this(
       context: CanvasRenderingContext2D,
       pixelRatio: Double,

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "QueryMixin")
 @js.native
-class QueryMixin () extends StObject {
+open class QueryMixin () extends StObject {
   
   /*
     The type of ejs object.  For internal use only.
@@ -22,5 +22,5 @@ class QueryMixin () extends StObject {
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

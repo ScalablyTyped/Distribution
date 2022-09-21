@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CertificateConfiguration extends StObject {
   
   /**
-    * Indicates whether a TLS/SSL certificate was generated for a fleet.     
+    * Indicates whether a TLS/SSL certificate is generated for a fleet.  Valid values include:     GENERATED - Generate a TLS/SSL certificate for this fleet.    DISABLED - (default) Do not generate a TLS/SSL certificate for this fleet.   
     */
   var CertificateType: typings.awsSdk.gameliftMod.CertificateType
 }

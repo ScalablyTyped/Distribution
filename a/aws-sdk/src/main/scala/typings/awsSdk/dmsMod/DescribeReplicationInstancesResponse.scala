@@ -33,6 +33,6 @@ object DescribeReplicationInstancesResponse {
     
     inline def setReplicationInstancesUndefined: Self = StObject.set(x, "ReplicationInstances", js.undefined)
     
-    inline def setReplicationInstancesVarargs(value: ReplicationInstance*): Self = StObject.set(x, "ReplicationInstances", js.Array(value :_*))
+    inline def setReplicationInstancesVarargs(value: ReplicationInstance*): Self = StObject.set(x, "ReplicationInstances", js.Array(value*))
   }
 }

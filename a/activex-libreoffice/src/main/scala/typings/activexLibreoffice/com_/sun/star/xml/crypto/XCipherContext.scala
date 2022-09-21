@@ -38,7 +38,7 @@ object XCipherContext {
     acquire: () => Unit,
     convertWithCipherContext: SeqEquiv[Double] => SafeArray[Double],
     finalizeCipherContextAndDispose: () => SafeArray[Double],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCipherContext = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertWithCipherContext = js.Any.fromFunction1(convertWithCipherContext), finalizeCipherContextAndDispose = js.Any.fromFunction0(finalizeCipherContextAndDispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

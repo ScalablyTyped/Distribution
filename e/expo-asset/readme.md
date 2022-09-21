@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-asset
 
-Typings are for version 8.2.0
+Typings are for version 8.6.1
 
 ## Library description:
 An Expo universal module to download assets and pass them into other APIs
@@ -10,13 +10,13 @@ An Expo universal module to download assets and pass them into other APIs
 | ------------------ | :-------------: |
 | Full name          | expo-asset |
 | Keywords           | react-native, expo, asset |
-| # releases         | 28 |
-| # dependents       | 10 |
-| # downloads        | 874177 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 1029546.6666666666 |
+| # stars            | 16909.0 |
 
 ## Links
-- [Homepage](https://docs.expo.io/versions/latest/sdk/asset/)
+- [Homepage](https://docs.expo.dev/versions/latest/sdk/asset/)
 - [Bugs](https://github.com/expo/expo/issues)
 - [Repository](https://github.com/expo/expo)
 - [Npm](https://www.npmjs.com/package/expo-asset)

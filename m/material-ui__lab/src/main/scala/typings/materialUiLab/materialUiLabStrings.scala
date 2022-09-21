@@ -312,10 +312,6 @@ object materialUiLabStrings {
   inline def expanded: expanded = "expanded".asInstanceOf[expanded]
   
   @js.native
-  sealed trait extended extends StObject
-  inline def extended: extended = "extended".asInstanceOf[extended]
-  
-  @js.native
   sealed trait fab
     extends StObject
        with SpeedDialActionClassKey
@@ -926,6 +922,10 @@ object materialUiLabStrings {
   inline def small: small = "small".asInstanceOf[small]
   
   @js.native
+  sealed trait span extends StObject
+  inline def span: span = "span".asInstanceOf[span]
+  
+  @js.native
   sealed trait spelling extends StObject
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
   
@@ -986,10 +986,6 @@ object materialUiLabStrings {
   @js.native
   sealed trait step extends StObject
   inline def step: step = "step".asInstanceOf[step]
-  
-  @js.native
-  sealed trait submit extends StObject
-  inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
   sealed trait success

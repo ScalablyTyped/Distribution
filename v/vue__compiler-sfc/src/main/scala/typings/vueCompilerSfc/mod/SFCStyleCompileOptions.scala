@@ -11,25 +11,30 @@ trait SFCStyleCompileOptions extends StObject {
   
   var id: String
   
+  var inMap: js.UndefOr[RawSourceMap] = js.undefined
+  
+  var isProd: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * @deprecated use `inMap` instead.
+    */
   var map: js.UndefOr[RawSourceMap] = js.undefined
   
-  var postcssOptions: js.UndefOr[js.Any] = js.undefined
+  var postcssOptions: js.UndefOr[Any] = js.undefined
   
-  var postcssPlugins: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var postcssPlugins: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var preprocessCustomRequire: js.UndefOr[js.Function1[/* id */ String, js.Any]] = js.undefined
+  var preprocessCustomRequire: js.UndefOr[js.Function1[/* id */ String, Any]] = js.undefined
   
   var preprocessLang: js.UndefOr[PreprocessLang] = js.undefined
   
-  var preprocessOptions: js.UndefOr[js.Any] = js.undefined
+  var preprocessOptions: js.UndefOr[Any] = js.undefined
   
   var scoped: js.UndefOr[Boolean] = js.undefined
   
   var source: String
   
   var trim: js.UndefOr[Boolean] = js.undefined
-  
-  var vars: js.UndefOr[Boolean] = js.undefined
 }
 object SFCStyleCompileOptions {
   
@@ -44,21 +49,29 @@ object SFCStyleCompileOptions {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setInMap(value: RawSourceMap): Self = StObject.set(x, "inMap", value.asInstanceOf[js.Any])
+    
+    inline def setInMapUndefined: Self = StObject.set(x, "inMap", js.undefined)
+    
+    inline def setIsProd(value: Boolean): Self = StObject.set(x, "isProd", value.asInstanceOf[js.Any])
+    
+    inline def setIsProdUndefined: Self = StObject.set(x, "isProd", js.undefined)
+    
     inline def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setPostcssOptions(value: js.Any): Self = StObject.set(x, "postcssOptions", value.asInstanceOf[js.Any])
+    inline def setPostcssOptions(value: Any): Self = StObject.set(x, "postcssOptions", value.asInstanceOf[js.Any])
     
     inline def setPostcssOptionsUndefined: Self = StObject.set(x, "postcssOptions", js.undefined)
     
-    inline def setPostcssPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "postcssPlugins", value.asInstanceOf[js.Any])
+    inline def setPostcssPlugins(value: js.Array[Any]): Self = StObject.set(x, "postcssPlugins", value.asInstanceOf[js.Any])
     
     inline def setPostcssPluginsUndefined: Self = StObject.set(x, "postcssPlugins", js.undefined)
     
-    inline def setPostcssPluginsVarargs(value: js.Any*): Self = StObject.set(x, "postcssPlugins", js.Array(value :_*))
+    inline def setPostcssPluginsVarargs(value: Any*): Self = StObject.set(x, "postcssPlugins", js.Array(value*))
     
-    inline def setPreprocessCustomRequire(value: /* id */ String => js.Any): Self = StObject.set(x, "preprocessCustomRequire", js.Any.fromFunction1(value))
+    inline def setPreprocessCustomRequire(value: /* id */ String => Any): Self = StObject.set(x, "preprocessCustomRequire", js.Any.fromFunction1(value))
     
     inline def setPreprocessCustomRequireUndefined: Self = StObject.set(x, "preprocessCustomRequire", js.undefined)
     
@@ -66,7 +79,7 @@ object SFCStyleCompileOptions {
     
     inline def setPreprocessLangUndefined: Self = StObject.set(x, "preprocessLang", js.undefined)
     
-    inline def setPreprocessOptions(value: js.Any): Self = StObject.set(x, "preprocessOptions", value.asInstanceOf[js.Any])
+    inline def setPreprocessOptions(value: Any): Self = StObject.set(x, "preprocessOptions", value.asInstanceOf[js.Any])
     
     inline def setPreprocessOptionsUndefined: Self = StObject.set(x, "preprocessOptions", js.undefined)
     
@@ -79,9 +92,5 @@ object SFCStyleCompileOptions {
     inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
     inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
-    
-    inline def setVars(value: Boolean): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
-    
-    inline def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
   }
 }

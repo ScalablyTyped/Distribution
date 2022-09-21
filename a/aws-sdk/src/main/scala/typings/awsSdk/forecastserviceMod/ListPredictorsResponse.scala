@@ -33,6 +33,6 @@ object ListPredictorsResponse {
     
     inline def setPredictorsUndefined: Self = StObject.set(x, "Predictors", js.undefined)
     
-    inline def setPredictorsVarargs(value: PredictorSummary*): Self = StObject.set(x, "Predictors", js.Array(value :_*))
+    inline def setPredictorsVarargs(value: PredictorSummary*): Self = StObject.set(x, "Predictors", js.Array(value*))
   }
 }

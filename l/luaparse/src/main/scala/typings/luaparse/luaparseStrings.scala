@@ -263,10 +263,22 @@ object luaparseStrings {
   inline def and: and = "and".asInstanceOf[and]
   
   @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
   sealed trait not extends StObject
   inline def not: not = "not".asInstanceOf[not]
   
   @js.native
   sealed trait or extends StObject
   inline def or: or = "or".asInstanceOf[or]
+  
+  @js.native
+  sealed trait `pseudo-latin1` extends StObject
+  inline def `pseudo-latin1`: `pseudo-latin1` = "pseudo-latin1".asInstanceOf[`pseudo-latin1`]
+  
+  @js.native
+  sealed trait `x-user-defined` extends StObject
+  inline def `x-user-defined`: `x-user-defined` = "x-user-defined".asInstanceOf[`x-user-defined`]
 }

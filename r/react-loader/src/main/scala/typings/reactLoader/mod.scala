@@ -9,8 +9,8 @@ object mod {
   
   @JSImport("react-loader", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[LoaderProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[LoaderProps, js.Object, Any]
   
   trait LoaderOptions extends StObject {
     
@@ -176,5 +176,5 @@ object mod {
     }
   }
   
-  type ReactLoader = Component[LoaderProps, js.Object, js.Any]
+  type ReactLoader = Component[LoaderProps, js.Object, Any]
 }

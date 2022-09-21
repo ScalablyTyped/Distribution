@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * @api stable
   */
-class Collection[T] ()
+open class Collection[T] ()
   extends typings.openlayers.mod.Collection[T] {
   def this(opt_array: js.Array[T]) = this()
 }
@@ -36,7 +36,7 @@ object Collection {
     */
   @JSGlobal("ol.Collection.Event")
   @js.native
-  class Event protected ()
+  open class Event protected ()
     extends typings.openlayers.mod.Collection.Event {
     /**
       * @classdesc
@@ -47,6 +47,6 @@ object Collection {
       * @param opt_element Element.
       */
     def this(`type`: EventType) = this()
-    def this(`type`: EventType, opt_element: js.Any) = this()
+    def this(`type`: EventType, opt_element: Any) = this()
   }
 }

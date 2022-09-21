@@ -8,5 +8,5 @@ object deleteRequestMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_DeleteRequest", "_DeleteRequest")
   @js.native
-  val DeleteRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

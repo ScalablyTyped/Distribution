@@ -21,7 +21,7 @@ trait RoleDetail extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the role was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of instance profiles that contain this role.
@@ -29,22 +29,22 @@ trait RoleDetail extends StObject {
   var InstanceProfileList: js.UndefOr[instanceProfileListType] = js.undefined
   
   /**
-    * The path to the role. For more information about paths, see IAM Identifiers in the IAM User Guide.
+    * The path to the role. For more information about paths, see IAM identifiers in the IAM User Guide.
     */
   var Path: js.UndefOr[pathType] = js.undefined
   
   /**
-    * The ARN of the policy used to set the permissions boundary for the role. For more information about permissions boundaries, see Permissions Boundaries for IAM Identities  in the IAM User Guide.
+    * The ARN of the policy used to set the permissions boundary for the role. For more information about permissions boundaries, see Permissions boundaries for IAM identities  in the IAM User Guide.
     */
   var PermissionsBoundary: js.UndefOr[AttachedPermissionsBoundary] = js.undefined
   
   /**
-    * The stable and unique string identifying the role. For more information about IDs, see IAM Identifiers in the IAM User Guide.
+    * The stable and unique string identifying the role. For more information about IDs, see IAM identifiers in the IAM User Guide.
     */
   var RoleId: js.UndefOr[idType] = js.undefined
   
   /**
-    * Contains information about the last time that an IAM role was used. This includes the date and time and the Region in which the role was last used. Activity is only reported for the trailing 400 days. This period can be shorter if your Region began supporting these features within the last year. The role might have been used more than 400 days ago. For more information, see Regions Where Data Is Tracked in the IAM User Guide.
+    * Contains information about the last time that an IAM role was used. This includes the date and time and the Region in which the role was last used. Activity is only reported for the trailing 400 days. This period can be shorter if your Region began supporting these features within the last year. The role might have been used more than 400 days ago. For more information, see Regions where data is tracked in the IAM User Guide.
     */
   var RoleLastUsed: js.UndefOr[typings.awsSdk.iamMod.RoleLastUsed] = js.undefined
   
@@ -59,7 +59,7 @@ trait RoleDetail extends StObject {
   var RolePolicyList: js.UndefOr[policyDetailListType] = js.undefined
   
   /**
-    * A list of tags that are attached to the specified role. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+    * A list of tags that are attached to the role. For more information about tagging, see Tagging IAM resources in the IAM User Guide.
     */
   var Tags: js.UndefOr[tagListType] = js.undefined
 }
@@ -84,9 +84,9 @@ object RoleDetail {
     
     inline def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
-    inline def setAttachedManagedPoliciesVarargs(value: AttachedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
+    inline def setAttachedManagedPoliciesVarargs(value: AttachedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value*))
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -94,7 +94,7 @@ object RoleDetail {
     
     inline def setInstanceProfileListUndefined: Self = StObject.set(x, "InstanceProfileList", js.undefined)
     
-    inline def setInstanceProfileListVarargs(value: InstanceProfile*): Self = StObject.set(x, "InstanceProfileList", js.Array(value :_*))
+    inline def setInstanceProfileListVarargs(value: InstanceProfile*): Self = StObject.set(x, "InstanceProfileList", js.Array(value*))
     
     inline def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
@@ -120,12 +120,12 @@ object RoleDetail {
     
     inline def setRolePolicyListUndefined: Self = StObject.set(x, "RolePolicyList", js.undefined)
     
-    inline def setRolePolicyListVarargs(value: PolicyDetail*): Self = StObject.set(x, "RolePolicyList", js.Array(value :_*))
+    inline def setRolePolicyListVarargs(value: PolicyDetail*): Self = StObject.set(x, "RolePolicyList", js.Array(value*))
     
     inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

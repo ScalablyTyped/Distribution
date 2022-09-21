@@ -130,31 +130,26 @@ trait Entity[C]
   def flushToDOM(): Unit = js.native
   def flushToDOM(recursive: Boolean): Unit = js.native
   
-  @JSName("getAttribute")
-  def getAttribute_position(`type`: position): Coordinate = js.native
-  @JSName("getAttribute")
-  def getAttribute_rotation(`type`: rotation): Coordinate = js.native
-  @JSName("getAttribute")
-  def getAttribute_scale(`type`: scale): Coordinate = js.native
+  def getAttribute(`type`: position | rotation | scale): Coordinate = js.native
   
   /**
     * @deprecated since 0.4.0
     */
-  def getComputedAttribute(attr: String): Component[js.Any, System[js.Any]] = js.native
+  def getComputedAttribute(attr: String): Component[Any, System[Any]] = js.native
   
-  def getDOMAttribute(attr: String): js.Any = js.native
+  def getDOMAttribute(attr: String): Any = js.native
   
-  def getObject3D(`type`: String): Object3D = js.native
+  def getObject3D(`type`: String): Object3D[typings.three.eventDispatcherMod.Event] = js.native
   
-  def getOrCreateObject3D(`type`: String, construct: js.Any): Object3D = js.native
+  def getOrCreateObject3D(`type`: String, construct: Any): Object3D[typings.three.eventDispatcherMod.Event] = js.native
   
   def is(stateName: String): Boolean = js.native
   
   var isPlaying: Boolean = js.native
   
-  var object3D: Object3D = js.native
+  var object3D: Object3D[typings.three.eventDispatcherMod.Event] = js.native
   
-  var object3DMap: ObjectMap[Object3D] = js.native
+  var object3DMap: ObjectMap[Object3D[typings.three.eventDispatcherMod.Event]] = js.native
   
   def pause(): Unit = js.native
   
@@ -168,13 +163,8 @@ trait Entity[C]
   
   var sceneEl: js.UndefOr[Scene] = js.native
   
-  def setAttribute(attr: String, property: String, componentAttrValue: js.Any): Unit = js.native
-  @JSName("setAttribute")
-  def setAttribute_position(`type`: position, value: Coordinate): Unit = js.native
-  @JSName("setAttribute")
-  def setAttribute_rotation(`type`: rotation, value: Coordinate): Unit = js.native
-  @JSName("setAttribute")
-  def setAttribute_scale(`type`: scale, value: Coordinate): Unit = js.native
+  def setAttribute(attr: String, property: String, componentAttrValue: Any): Unit = js.native
+  def setAttribute(`type`: position | rotation | scale, value: Coordinate): Unit = js.native
   
-  def setObject3D(`type`: String, obj: Object3D): Unit = js.native
+  def setObject3D(`type`: String, obj: Object3D[typings.three.eventDispatcherMod.Event]): Unit = js.native
 }

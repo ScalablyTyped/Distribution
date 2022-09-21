@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("semaphore-async-await", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.semaphoreAsyncAwait.semaphoreMod.default {
     /**
       * Creates a semaphore.
@@ -24,6 +24,6 @@ object mod {
   /**
     * Creates a lock.
     */
-  class Lock ()
+  open class Lock ()
     extends typings.semaphoreAsyncAwait.lockMod.Lock
 }

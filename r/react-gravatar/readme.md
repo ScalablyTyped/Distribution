@@ -10,10 +10,10 @@ React component for rendering a gravatar profile image
 | ------------------ | :-------------: |
 | Full name          | react-gravatar |
 | Keywords           | gravatar, react, react-component |
-| # releases         | 1 |
-| # dependents       | 27 |
-| # downloads        | 979036 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 105274.33333333333 |
+| # stars            | 268.0 |
 
 ## Links
 - [Homepage](https://github.com/KyleAMathews/react-gravatar)

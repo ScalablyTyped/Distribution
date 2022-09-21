@@ -12,7 +12,7 @@ trait SendChannelMessageResponse extends StObject {
   var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
-    * The ID string assigned to each message. 
+    * The ID string assigned to each message.
     */
   var MessageId: js.UndefOr[typings.awsSdk.chimeMod.MessageId] = js.undefined
 }

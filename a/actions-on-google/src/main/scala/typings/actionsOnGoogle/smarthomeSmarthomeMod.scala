@@ -41,10 +41,20 @@ object smarthomeSmarthomeMod {
     /** @hidden */
     var _intents: SmartHomeHandlers
     
-    /** @public */
+    /**
+      * @public
+      * @deprecated Home Graph credentials are deprecated.
+      * Use Google APIs Node.js Client for Home Graph:
+      * https://www.npmjs.com/package/@googleapis/homegraph
+      */
     var jwt: js.UndefOr[SmartHomeJwt] = js.undefined
     
-    /** @public */
+    /**
+      * @public
+      * @deprecated Home Graph credentials are deprecated.
+      * Use Google APIs Node.js Client for Home Graph:
+      * https://www.npmjs.com/package/@googleapis/homegraph
+      */
     var key: js.UndefOr[String] = js.undefined
     
     /**
@@ -177,6 +187,9 @@ object smarthomeSmarthomeMod {
       * @param reportedState A payload containing a device or set of devices with their states
       *
       * @public
+      * @deprecated Home Graph wrapper methods are deprecated.
+      * Use Google APIs Node.js Client for Home Graph:
+      * https://www.npmjs.com/package/@googleapis/homegraph
       */
     def reportState(reportedState: SmartHomeV1ReportStateRequest): js.Promise[String]
     
@@ -215,6 +228,9 @@ object smarthomeSmarthomeMod {
       * @param agentUserId The user identifier.
       *
       * @public
+      * @deprecated Home Graph wrapper methods are deprecated.
+      * Use Google APIs Node.js Client for Home Graph:
+      * https://www.npmjs.com/package/@googleapis/homegraph
       */
     def requestSync(agentUserId: String): js.Promise[String]
   }
@@ -349,6 +365,9 @@ object smarthomeSmarthomeMod {
       * This is used for report state. See https://jwt.io/. A JWT can be
       * created through the Google Cloud Console: https://console.cloud.google.com/apis/credentials
       * @public
+      * @deprecated Home Graph credentials are deprecated.
+      * Use Google APIs Node.js Client for Home Graph:
+      * https://www.npmjs.com/package/@googleapis/homegraph
       */
     var jwt: js.UndefOr[SmartHomeJwt] = js.undefined
     
@@ -357,6 +376,9 @@ object smarthomeSmarthomeMod {
       * https://console.cloud.google.com/apis/api/homegraph.googleapis.com/overview
       * to learn more.
       * @public
+      * @deprecated Home Graph credentials are deprecated.
+      * Use Google APIs Node.js Client for Home Graph:
+      * https://www.npmjs.com/package/@googleapis/homegraph
       */
     var key: js.UndefOr[String] = js.undefined
   }

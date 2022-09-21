@@ -18,11 +18,11 @@ trait Client extends StObject {
     */
   def addEventListener(
     eventName: Events,
-    eventHandler: js.Function1[/* eventObject */ VoxImplantEvent | VoxImplantIMEvent, js.Any]
+    eventHandler: js.Function1[/* eventObject */ VoxImplantEvent | VoxImplantIMEvent, Any]
   ): Unit = js.native
   def addEventListener(
     eventName: IMEvents,
-    eventHandler: js.Function1[/* eventObject */ VoxImplantEvent | VoxImplantIMEvent, js.Any]
+    eventHandler: js.Function1[/* eventObject */ VoxImplantEvent | VoxImplantIMEvent, Any]
   ): Unit = js.native
   
   /**
@@ -50,9 +50,9 @@ trait Client extends StObject {
     *    @param failedCallback A function called in case of problems while changing audio recording device
     */
   def attachRecordingDevice(): Unit = js.native
-  def attachRecordingDevice(successCallback: js.Function0[js.Any]): Unit = js.native
-  def attachRecordingDevice(successCallback: js.Function0[js.Any], failedCallback: js.Function0[js.Any]): Unit = js.native
-  def attachRecordingDevice(successCallback: Unit, failedCallback: js.Function0[js.Any]): Unit = js.native
+  def attachRecordingDevice(successCallback: js.Function0[Any]): Unit = js.native
+  def attachRecordingDevice(successCallback: js.Function0[Any], failedCallback: js.Function0[Any]): Unit = js.native
+  def attachRecordingDevice(successCallback: Unit, failedCallback: js.Function0[Any]): Unit = js.native
   
   /**
     *    Get a list of all currently available audio playback devices
@@ -310,8 +310,8 @@ trait Client extends StObject {
     *    @param eventName Event name
     *    @param eventHandler Handler function
     */
-  def removeEventListener(eventName: Events, eventHandler: js.Function0[js.Any]): Unit = js.native
-  def removeEventListener(eventName: IMEvents, eventHandler: js.Function0[js.Any]): Unit = js.native
+  def removeEventListener(eventName: Events, eventHandler: js.Function0[Any]): Unit = js.native
+  def removeEventListener(eventName: IMEvents, eventHandler: js.Function0[Any]): Unit = js.native
   
   /**
     *    Remove message sent to user
@@ -453,13 +453,13 @@ trait Client extends StObject {
   def setVideoBandwidth(bandwidth: Double): Unit = js.native
   
   def setVideoSettings(settings: FlashVideoSettings): Unit = js.native
-  def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[js.Any]): Unit = js.native
+  def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[Any]): Unit = js.native
   def setVideoSettings(
     settings: FlashVideoSettings,
-    successCallback: js.Function0[js.Any],
-    failedCallback: js.Function0[js.Any]
+    successCallback: js.Function0[Any],
+    failedCallback: js.Function0[Any]
   ): Unit = js.native
-  def setVideoSettings(settings: FlashVideoSettings, successCallback: Unit, failedCallback: js.Function0[js.Any]): Unit = js.native
+  def setVideoSettings(settings: FlashVideoSettings, successCallback: Unit, failedCallback: js.Function0[Any]): Unit = js.native
   /**
     *    Set video settings globally. This settings will be used for the next call.
     *
@@ -468,13 +468,9 @@ trait Client extends StObject {
     *    @param failedCallback Failed callback function
     */
   def setVideoSettings(settings: VideoSettings): Unit = js.native
-  def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[js.Any]): Unit = js.native
-  def setVideoSettings(
-    settings: VideoSettings,
-    successCallback: js.Function0[js.Any],
-    failedCallback: js.Function0[js.Any]
-  ): Unit = js.native
-  def setVideoSettings(settings: VideoSettings, successCallback: Unit, failedCallback: js.Function0[js.Any]): Unit = js.native
+  def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[Any]): Unit = js.native
+  def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[Any], failedCallback: js.Function0[Any]): Unit = js.native
+  def setVideoSettings(settings: VideoSettings, successCallback: Unit, failedCallback: js.Function0[Any]): Unit = js.native
   
   /**
     *    Show flash settings panel
@@ -515,9 +511,9 @@ trait Client extends StObject {
   def unbanChatRoomUser(room: String, user_id: String, reason: String): Unit = js.native
   
   def useAudioSource(id: String): Unit = js.native
-  def useAudioSource(id: String, successCallback: js.Function0[js.Any]): Unit = js.native
-  def useAudioSource(id: String, successCallback: js.Function0[js.Any], failedCallback: js.Function0[js.Any]): Unit = js.native
-  def useAudioSource(id: String, successCallback: Unit, failedCallback: js.Function0[js.Any]): Unit = js.native
+  def useAudioSource(id: String, successCallback: js.Function0[Any]): Unit = js.native
+  def useAudioSource(id: String, successCallback: js.Function0[Any], failedCallback: js.Function0[Any]): Unit = js.native
+  def useAudioSource(id: String, successCallback: Unit, failedCallback: js.Function0[Any]): Unit = js.native
   /**
     *    Use specified audio source , use audioSources to get the list of available audio sources
     *
@@ -526,14 +522,14 @@ trait Client extends StObject {
     *    @param failedCallback Called in WebRTC mode if audio source couldn't be changed successfully
     */
   def useAudioSource(id: Double): Unit = js.native
-  def useAudioSource(id: Double, successCallback: js.Function0[js.Any]): Unit = js.native
-  def useAudioSource(id: Double, successCallback: js.Function0[js.Any], failedCallback: js.Function0[js.Any]): Unit = js.native
-  def useAudioSource(id: Double, successCallback: Unit, failedCallback: js.Function0[js.Any]): Unit = js.native
+  def useAudioSource(id: Double, successCallback: js.Function0[Any]): Unit = js.native
+  def useAudioSource(id: Double, successCallback: js.Function0[Any], failedCallback: js.Function0[Any]): Unit = js.native
+  def useAudioSource(id: Double, successCallback: Unit, failedCallback: js.Function0[Any]): Unit = js.native
   
   def useVideoSource(id: String): Unit = js.native
-  def useVideoSource(id: String, successCallback: js.Function0[js.Any]): Unit = js.native
-  def useVideoSource(id: String, successCallback: js.Function0[js.Any], failedCallback: js.Function0[js.Any]): Unit = js.native
-  def useVideoSource(id: String, successCallback: Unit, failedCallback: js.Function0[js.Any]): Unit = js.native
+  def useVideoSource(id: String, successCallback: js.Function0[Any]): Unit = js.native
+  def useVideoSource(id: String, successCallback: js.Function0[Any], failedCallback: js.Function0[Any]): Unit = js.native
+  def useVideoSource(id: String, successCallback: Unit, failedCallback: js.Function0[Any]): Unit = js.native
   /**
     *    Use specified audio source , use audioSources to get the list of available audio sources
     *
@@ -542,9 +538,9 @@ trait Client extends StObject {
     *    @param failedCallback Called in WebRTC mode if video source couldn't be changed successfully
     */
   def useVideoSource(id: Double): Unit = js.native
-  def useVideoSource(id: Double, successCallback: js.Function0[js.Any]): Unit = js.native
-  def useVideoSource(id: Double, successCallback: js.Function0[js.Any], failedCallback: js.Function0[js.Any]): Unit = js.native
-  def useVideoSource(id: Double, successCallback: Unit, failedCallback: js.Function0[js.Any]): Unit = js.native
+  def useVideoSource(id: Double, successCallback: js.Function0[Any]): Unit = js.native
+  def useVideoSource(id: Double, successCallback: js.Function0[Any], failedCallback: js.Function0[Any]): Unit = js.native
+  def useVideoSource(id: Double, successCallback: Unit, failedCallback: js.Function0[Any]): Unit = js.native
   
   /**
     *    Get a list of all currently available video sources / cameras

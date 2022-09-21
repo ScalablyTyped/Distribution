@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PutAccountSettingDefaultResponse extends StObject {
   
+  /**
+    * The current setting for a resource.
+    */
   var setting: js.UndefOr[Setting] = js.undefined
 }
 object PutAccountSettingDefaultResponse {

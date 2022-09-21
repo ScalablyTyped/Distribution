@@ -1,5 +1,6 @@
 package typings.argparse
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.argparse.anon.Instantiable
 import typings.argparse.anon.InstantiableAction
 import typings.argparse.anon.Required
@@ -27,18 +28,20 @@ object mod {
   
   @JSImport("argparse", "ArgumentDefaultsHelpFormatter")
   @js.native
-  class ArgumentDefaultsHelpFormatter () extends StObject
+  open class ArgumentDefaultsHelpFormatter () extends StObject
   
   @JSImport("argparse", "ArgumentError")
   @js.native
-  class ArgumentError protected ()
+  open class ArgumentError protected ()
     extends StObject
        with Error {
     def this(argument: Action, message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -47,7 +50,7 @@ object mod {
   
   @JSImport("argparse", "ArgumentGroup")
   @js.native
-  class ArgumentGroup () extends StObject {
+  open class ArgumentGroup () extends StObject {
     
     def add_argument(arg1: String, arg2: String): Unit = js.native
     def add_argument(arg1: String, arg2: String, options: ArgumentOptions): Unit = js.native
@@ -60,7 +63,7 @@ object mod {
     def add_mutually_exclusive_group(): ArgumentGroup = js.native
     def add_mutually_exclusive_group(options: Required): ArgumentGroup = js.native
     
-    def get_default(dest: String): js.Any = js.native
+    def get_default(dest: String): Any = js.native
     
     def set_defaults(): Unit = js.native
     def set_defaults(options: js.Object): Unit = js.native
@@ -68,7 +71,7 @@ object mod {
   
   @JSImport("argparse", "ArgumentParser")
   @js.native
-  class ArgumentParser () extends ArgumentGroup {
+  open class ArgumentParser () extends ArgumentGroup {
     def this(options: ArgumentParserOptions) = this()
     
     def add_subparsers(): SubParser = js.native
@@ -77,7 +80,7 @@ object mod {
     def convert_arg_line_to_args(argLine: String): js.Array[String] = js.native
     
     def error(err: String): Unit = js.native
-    def error(err: Error): Unit = js.native
+    def error(err: js.Error): Unit = js.native
     
     def exit(status: Double, message: String): Unit = js.native
     
@@ -85,32 +88,56 @@ object mod {
     
     def format_usage(): String = js.native
     
-    def parse_args(): js.Any = js.native
-    def parse_args(args: js.Array[String]): js.Any = js.native
-    def parse_args(args: js.Array[String], ns: js.Object): js.Any = js.native
-    def parse_args(args: js.Array[String], ns: Namespace): js.Any = js.native
-    def parse_args(args: Unit, ns: js.Object): js.Any = js.native
-    def parse_args(args: Unit, ns: Namespace): js.Any = js.native
+    def parse_args(): Any = js.native
+    def parse_args(args: js.Array[String]): Any = js.native
+    def parse_args(args: js.Array[String], ns: js.Object): Any = js.native
+    def parse_args(args: js.Array[String], ns: Namespace): Any = js.native
+    def parse_args(args: Unit, ns: js.Object): Any = js.native
+    def parse_args(args: Unit, ns: Namespace): Any = js.native
     
-    def parse_known_args(): js.Array[js.Any] = js.native
-    def parse_known_args(args: js.Array[String]): js.Array[js.Any] = js.native
-    def parse_known_args(args: js.Array[String], ns: js.Object): js.Array[js.Any] = js.native
-    def parse_known_args(args: js.Array[String], ns: Namespace): js.Array[js.Any] = js.native
-    def parse_known_args(args: Unit, ns: js.Object): js.Array[js.Any] = js.native
-    def parse_known_args(args: Unit, ns: Namespace): js.Array[js.Any] = js.native
+    def parse_known_args(): js.Array[Any] = js.native
+    def parse_known_args(args: js.Array[String]): js.Array[Any] = js.native
+    def parse_known_args(args: js.Array[String], ns: js.Object): js.Array[Any] = js.native
+    def parse_known_args(args: js.Array[String], ns: Namespace): js.Array[Any] = js.native
+    def parse_known_args(args: Unit, ns: js.Object): js.Array[Any] = js.native
+    def parse_known_args(args: Unit, ns: Namespace): js.Array[Any] = js.native
     
     def print_help(): Unit = js.native
     
     def print_usage(): Unit = js.native
   }
   
+  @JSImport("argparse", "ArgumentTypeError")
+  @js.native
+  open class ArgumentTypeError protected ()
+    extends StObject
+       with Error {
+    def this(message: String) = this()
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
+  @JSImport("argparse", "BooleanOptionalAction")
+  @js.native
+  open class BooleanOptionalAction protected () extends Action {
+    def this(options: ActionConstructorOptions) = this()
+  }
+  
   @JSImport("argparse", "HelpFormatter")
   @js.native
-  class HelpFormatter () extends StObject
+  open class HelpFormatter () extends StObject
   
   @JSImport("argparse", "Namespace")
   @js.native
-  class Namespace protected () extends StObject {
+  open class Namespace protected ()
+    extends StObject
+       with /* key */ StringDictionary[Any] {
     def this(options: js.Object) = this()
   }
   
@@ -132,11 +159,11 @@ object mod {
   
   @JSImport("argparse", "RawDescriptionHelpFormatter")
   @js.native
-  class RawDescriptionHelpFormatter () extends StObject
+  open class RawDescriptionHelpFormatter () extends StObject
   
   @JSImport("argparse", "RawTextHelpFormatter")
   @js.native
-  class RawTextHelpFormatter () extends StObject
+  open class RawTextHelpFormatter () extends StObject
   
   @JSImport("argparse", "SUPPRESS")
   @js.native
@@ -144,7 +171,7 @@ object mod {
   
   @JSImport("argparse", "SubParser")
   @js.native
-  class SubParser () extends StObject {
+  open class SubParser () extends StObject {
     
     def add_parser(name: String): ArgumentParser = js.native
     def add_parser(name: String, options: SubArgumentParserOptions): ArgumentParser = js.native
@@ -165,7 +192,7 @@ object mod {
   
   trait ArgumentGroupOptions extends StObject {
     
-    var argument_default: js.UndefOr[js.Any] = js.undefined
+    var argument_default: js.UndefOr[Any] = js.undefined
     
     var description: js.UndefOr[String] = js.undefined
     
@@ -182,7 +209,7 @@ object mod {
     
     extension [Self <: ArgumentGroupOptions](x: Self) {
       
-      inline def setArgument_default(value: js.Any): Self = StObject.set(x, "argument_default", value.asInstanceOf[js.Any])
+      inline def setArgument_default(value: Any): Self = StObject.set(x, "argument_default", value.asInstanceOf[js.Any])
       
       inline def setArgument_defaultUndefined: Self = StObject.set(x, "argument_default", js.undefined)
       
@@ -202,14 +229,14 @@ object mod {
   
   trait ArgumentOptions extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
     var action: js.UndefOr[String | InstantiableAction] = js.undefined
     
     // tslint:disable-line:ban-types
     var choices: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var const: js.UndefOr[js.Any] = js.undefined
+    var const: js.UndefOr[Any] = js.undefined
     
     var dest: js.UndefOr[String] = js.undefined
     
@@ -245,13 +272,13 @@ object mod {
       
       inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
       
-      inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value*))
       
-      inline def setConst(value: js.Any): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+      inline def setConst(value: Any): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
       
       inline def setConstUndefined: Self = StObject.set(x, "const", js.undefined)
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -267,7 +294,7 @@ object mod {
       
       inline def setMetavarUndefined: Self = StObject.set(x, "metavar", js.undefined)
       
-      inline def setMetavarVarargs(value: String*): Self = StObject.set(x, "metavar", js.Array(value :_*))
+      inline def setMetavarVarargs(value: String*): Self = StObject.set(x, "metavar", js.Array(value*))
       
       inline def setNargs(value: String | Double): Self = StObject.set(x, "nargs", value.asInstanceOf[js.Any])
       
@@ -277,7 +304,7 @@ object mod {
       
       inline def setOption_stringsUndefined: Self = StObject.set(x, "option_strings", js.undefined)
       
-      inline def setOption_stringsVarargs(value: String*): Self = StObject.set(x, "option_strings", js.Array(value :_*))
+      inline def setOption_stringsVarargs(value: String*): Self = StObject.set(x, "option_strings", js.Array(value*))
       
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
@@ -297,7 +324,7 @@ object mod {
     
     var add_help: js.UndefOr[Boolean] = js.undefined
     
-    var argument_default: js.UndefOr[js.Any] = js.undefined
+    var argument_default: js.UndefOr[Any] = js.undefined
     
     var description: js.UndefOr[String] = js.undefined
     
@@ -328,7 +355,7 @@ object mod {
       
       inline def setAdd_helpUndefined: Self = StObject.set(x, "add_help", js.undefined)
       
-      inline def setArgument_default(value: js.Any): Self = StObject.set(x, "argument_default", value.asInstanceOf[js.Any])
+      inline def setArgument_default(value: Any): Self = StObject.set(x, "argument_default", value.asInstanceOf[js.Any])
       
       inline def setArgument_defaultUndefined: Self = StObject.set(x, "argument_default", js.undefined)
       
@@ -352,7 +379,7 @@ object mod {
       
       inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
       
-      inline def setParentsVarargs(value: ArgumentParser*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: ArgumentParser*): Self = StObject.set(x, "parents", js.Array(value*))
       
       inline def setPrefix_chars(value: String): Self = StObject.set(x, "prefix_chars", value.asInstanceOf[js.Any])
       
@@ -389,7 +416,7 @@ object mod {
       
       inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
       
       inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
@@ -412,6 +439,8 @@ object mod {
     var parser_class: js.UndefOr[Instantiable] = js.undefined
     
     var prog: js.UndefOr[String] = js.undefined
+    
+    var required: js.UndefOr[Boolean] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
   }
@@ -451,6 +480,10 @@ object mod {
       inline def setProg(value: String): Self = StObject.set(x, "prog", value.asInstanceOf[js.Any])
       
       inline def setProgUndefined: Self = StObject.set(x, "prog", js.undefined)
+      
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

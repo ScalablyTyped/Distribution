@@ -1,5 +1,7 @@
 package typings.onfleetNodeOnfleet
 
+import typings.onfleetNodeOnfleet.metadataMod.MatchMetadata
+import typings.onfleetNodeOnfleet.metadataMod.MatchMetadataResult
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.`super`
 import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.standard
@@ -11,7 +13,7 @@ object administratorsMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Administrators", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Admin {
     
@@ -25,6 +27,12 @@ object administratorsMod {
     override def get(): js.Promise[js.Array[OnfleetAdmin]] = js.native
     
     /* CompleteClass */
+    override def matchMetadata(obj: OnfleetMetadata): js.Promise[js.Array[MatchMetadataResult]] = js.native
+    /* CompleteClass */
+    @JSName("matchMetadata")
+    var matchMetadata_Original: MatchMetadata[OnfleetMetadata] = js.native
+    
+    /* CompleteClass */
     override def update(id: String, obj: UpdateAdminProps): js.Promise[OnfleetAdmin] = js.native
   }
   
@@ -36,6 +44,10 @@ object administratorsMod {
     
     def get(): js.Promise[js.Array[OnfleetAdmin]]
     
+    def matchMetadata(obj: OnfleetMetadata): js.Promise[js.Array[MatchMetadataResult]]
+    @JSName("matchMetadata")
+    var matchMetadata_Original: MatchMetadata[OnfleetMetadata]
+    
     def update(id: String, obj: UpdateAdminProps): js.Promise[OnfleetAdmin]
   }
   object Admin {
@@ -44,9 +56,10 @@ object administratorsMod {
       create: CreateAdminProps => js.Promise[OnfleetAdmin],
       deleteOne: String => js.Promise[Unit],
       get: () => js.Promise[js.Array[OnfleetAdmin]],
+      matchMetadata: OnfleetMetadata => js.Promise[js.Array[MatchMetadataResult]],
       update: (String, UpdateAdminProps) => js.Promise[OnfleetAdmin]
     ): Admin = {
-      val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), deleteOne = js.Any.fromFunction1(deleteOne), get = js.Any.fromFunction0(get), update = js.Any.fromFunction2(update))
+      val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), deleteOne = js.Any.fromFunction1(deleteOne), get = js.Any.fromFunction0(get), matchMetadata = js.Any.fromFunction1(matchMetadata), update = js.Any.fromFunction2(update))
       __obj.asInstanceOf[Admin]
     }
     
@@ -57,6 +70,8 @@ object administratorsMod {
       inline def setDeleteOne(value: String => js.Promise[Unit]): Self = StObject.set(x, "deleteOne", js.Any.fromFunction1(value))
       
       inline def setGet(value: () => js.Promise[js.Array[OnfleetAdmin]]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      
+      inline def setMatchMetadata(value: OnfleetMetadata => js.Promise[js.Array[MatchMetadataResult]]): Self = StObject.set(x, "matchMetadata", js.Any.fromFunction1(value))
       
       inline def setUpdate(value: (String, UpdateAdminProps) => js.Promise[OnfleetAdmin]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }

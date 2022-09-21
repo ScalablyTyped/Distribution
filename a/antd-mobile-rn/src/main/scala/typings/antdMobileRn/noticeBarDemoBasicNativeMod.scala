@@ -9,9 +9,8 @@ object noticeBarDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/notice-bar/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends NoticeBarExample
+  open class default () extends NoticeBarExample
   
   @js.native
-  trait NoticeBarExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait NoticeBarExample extends Component[Any, Any, Any]
 }

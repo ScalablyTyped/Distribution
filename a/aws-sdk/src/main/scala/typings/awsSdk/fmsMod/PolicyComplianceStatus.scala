@@ -12,14 +12,14 @@ trait PolicyComplianceStatus extends StObject {
   var EvaluationResults: js.UndefOr[typings.awsSdk.fmsMod.EvaluationResults] = js.undefined
   
   /**
-    * Details about problems with dependent services, such as AWS WAF or AWS Config, that are causing a resource to be noncompliant. The details include the name of the dependent service and the error message received that indicates the problem with the service.
+    * Details about problems with dependent services, such as WAF or Config, and the error message received that indicates the problem with the service.
     */
   var IssueInfoMap: js.UndefOr[typings.awsSdk.fmsMod.IssueInfoMap] = js.undefined
   
   /**
     * Timestamp of the last update to the EvaluationResult objects.
     */
-  var LastUpdated: js.UndefOr[TimeStamp] = js.undefined
+  var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The member account ID.
@@ -27,17 +27,17 @@ trait PolicyComplianceStatus extends StObject {
   var MemberAccount: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
-    * The ID of the AWS Firewall Manager policy.
+    * The ID of the Firewall Manager policy.
     */
   var PolicyId: js.UndefOr[typings.awsSdk.fmsMod.PolicyId] = js.undefined
   
   /**
-    * The name of the AWS Firewall Manager policy.
+    * The name of the Firewall Manager policy.
     */
   var PolicyName: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * The AWS account that created the AWS Firewall Manager policy.
+    * The Amazon Web Services account that created the Firewall Manager policy.
     */
   var PolicyOwner: js.UndefOr[AWSAccountId] = js.undefined
 }
@@ -54,13 +54,13 @@ object PolicyComplianceStatus {
     
     inline def setEvaluationResultsUndefined: Self = StObject.set(x, "EvaluationResults", js.undefined)
     
-    inline def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value :_*))
+    inline def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value*))
     
     inline def setIssueInfoMap(value: IssueInfoMap): Self = StObject.set(x, "IssueInfoMap", value.asInstanceOf[js.Any])
     
     inline def setIssueInfoMapUndefined: Self = StObject.set(x, "IssueInfoMap", js.undefined)
     
-    inline def setLastUpdated(value: TimeStamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     

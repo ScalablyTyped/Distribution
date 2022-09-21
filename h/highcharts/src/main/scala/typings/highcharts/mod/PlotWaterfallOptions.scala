@@ -176,7 +176,7 @@ trait PlotWaterfallOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
@@ -224,6 +224,15 @@ trait PlotWaterfallOptions extends StObject {
   var cropThreshold: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
+    */
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
     * can be clicked.
@@ -238,7 +247,7 @@ trait PlotWaterfallOptions extends StObject {
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * (Highcharts) A name for the dash style to use for the line connecting the
@@ -252,11 +261,16 @@ trait PlotWaterfallOptions extends StObject {
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
+    * (Highcharts) Indicates data is structured as columns instead of rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
-    * the JavaScript charts. Highstock by default applies data grouping when
-    * the points become closer than a certain pixel value, determined by the
-    * `groupPixelWidth` option.
+    * the JavaScript charts. Highcharts Stock by default applies data grouping
+    * when the points become closer than a certain pixel value, determined by
+    * the `groupPixelWidth` option.
     *
     * If data grouping is applied, the grouping information of grouped points
     * can be read from the Point.dataGroup. If point options other than the
@@ -483,6 +497,12 @@ trait PlotWaterfallOptions extends StObject {
   var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
+    * (Highcharts) Options for the _Series on point_ feature. Only `pie` and
+    * `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotWaterfallOnPointOptions] = js.undefined
+  
+  /**
     * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
     * dataLabels.
     */
@@ -494,8 +514,8 @@ trait PlotWaterfallOptions extends StObject {
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
-    * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
-    * individual series. Overrides the chart wide configuration.
+    * (Highcharts) Same as accessibility.series.descriptionFormatter, but for
+    * an individual series. Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
   
@@ -508,6 +528,9 @@ trait PlotWaterfallOptions extends StObject {
     *
     * It can be also be combined with `pointIntervalUnit` to draw irregular
     * time intervals.
+    *
+    * If combined with `relativeXValue`, an x value can be set on each point,
+    * and the `pointInterval` is added x times to the `pointStart` setting.
     *
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
@@ -579,17 +602,33 @@ trait PlotWaterfallOptions extends StObject {
     * a series, pointStart defines on what value to start. For example, if a
     * series contains one yearly value starting from 1945, set pointStart to
     * 1945.
+    *
+    * If combined with `relativeXValue`, an x value can be set on each point.
+    * The x value from the point options is multiplied by `pointInterval` and
+    * added to `pointStart` to produce a modified x value.
     */
   var pointStart: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A pixel value specifying a fixed width for
-    * each column or bar point. When `null`, the width is calculated from the
-    * `pointPadding` and `groupPadding`. The width effects the dimension that
-    * is not based on the point value. For column series it is the hoizontal
-    * length and for bar series it is the vertical length.
+    * each column or bar point. When set to `undefined`, the width is
+    * calculated from the `pointPadding` and `groupPadding`. The width effects
+    * the dimension that is not based on the point value. For column series it
+    * is the hoizontal length and for bar series it is the vertical length.
     */
   var pointWidth: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Whether to select the series initially. If `showCheckbox` is
@@ -814,9 +853,9 @@ object PlotWaterfallOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
@@ -840,17 +879,25 @@ object PlotWaterfallOptions {
     
     inline def setCropThresholdUndefined: Self = StObject.set(x, "cropThreshold", js.undefined)
     
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
     inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
@@ -860,7 +907,7 @@ object PlotWaterfallOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: PlotWaterfallDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: PlotWaterfallDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDataSorting(value: DataSortingOptionsObject | PlotWaterfallDataSortingOptions): Self = StObject.set(x, "dataSorting", value.asInstanceOf[js.Any])
     
@@ -922,13 +969,13 @@ object PlotWaterfallOptions {
     
     inline def setJoinByUndefined: Self = StObject.set(x, "joinBy", js.undefined)
     
-    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value :_*))
+    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value*))
     
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setLabel(value: SeriesLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -969,6 +1016,10 @@ object PlotWaterfallOptions {
     inline def setNegativeColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
     
     inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
+    
+    inline def setOnPoint(value: js.Object | PlotWaterfallOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
@@ -1011,6 +1062,10 @@ object PlotWaterfallOptions {
     inline def setPointWidth(value: Double): Self = StObject.set(x, "pointWidth", value.asInstanceOf[js.Any])
     
     inline def setPointWidthUndefined: Self = StObject.set(x, "pointWidth", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
@@ -1086,6 +1141,6 @@ object PlotWaterfallOptions {
     
     inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

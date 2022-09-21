@@ -15,6 +15,6 @@ object mod {
   val ^ : js.Any = js.native
   
   type DeepReadonly[T] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ P in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias deep-freeze.deep-freeze.DeepReadonly<T[P]> * / object}
-    */ typings.deepFreeze.deepFreezeStrings.DeepReadonly & TopLevel[js.Any]) | T
+  {readonly [ P in keyof T ]: deep-freeze.deep-freeze.DeepReadonly<T[P]>}
+    */ typings.deepFreeze.deepFreezeStrings.DeepReadonly & TopLevel[T]) | T
 }

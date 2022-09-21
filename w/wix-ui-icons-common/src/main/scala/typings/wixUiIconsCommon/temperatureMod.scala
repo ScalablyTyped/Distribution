@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object temperatureMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Temperature", JSImport.Default)
   @js.native
-  val default: SFC[TemperatureProps] = js.native
+  val default: FC[TemperatureProps] = js.native
   
   trait TemperatureProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object TemperatureProps {
     
@@ -29,14 +29,14 @@ object temperatureMod extends Shortcut {
     
     extension [Self <: TemperatureProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[TemperatureProps]
+  type _To = FC[TemperatureProps]
   
   /* This means you don't have to write `default`, but can instead just say `temperatureMod.foo` */
-  override def _to: SFC[TemperatureProps] = default
+  override def _to: FC[TemperatureProps] = default
 }

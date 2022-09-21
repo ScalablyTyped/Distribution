@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RotateServerCaContext extends StObject {
   
-  /** This is always *sql#rotateServerCaContext*. */
+  /** This is always `sql#rotateServerCaContext`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The fingerprint of the next version to be rotated to. If left unspecified, will be rotated to the most recently added server CA version. */

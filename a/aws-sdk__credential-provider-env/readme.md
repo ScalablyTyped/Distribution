@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__credential-provider-env
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 AWS credential provider that sources credentials from known environment variables
@@ -10,10 +10,10 @@ AWS credential provider that sources credentials from known environment variable
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-provider-env |
 | Keywords           | aws, credentials |
-| # releases         | 39 |
-| # dependents       | 3 |
-| # downloads        | 7063451 |
-| # stars            | 0 |
+| # releases         | 58 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4590227333333334E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/credential-provider-env)

@@ -9,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an empty network.
   */
-class CircularNetwork () extends LayoutNetwork
+open class CircularNetwork () extends LayoutNetwork

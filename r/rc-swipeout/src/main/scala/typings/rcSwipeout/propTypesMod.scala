@@ -23,7 +23,7 @@ object propTypesMod {
     
     var right: js.UndefOr[js.Array[ClassName]] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object IPropTypes {
     
@@ -46,7 +46,7 @@ object propTypesMod {
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      inline def setLeftVarargs(value: ClassName*): Self = StObject.set(x, "left", js.Array(value :_*))
+      inline def setLeftVarargs(value: ClassName*): Self = StObject.set(x, "left", js.Array(value*))
       
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
@@ -64,9 +64,9 @@ object propTypesMod {
       
       inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      inline def setRightVarargs(value: ClassName*): Self = StObject.set(x, "right", js.Array(value :_*))
+      inline def setRightVarargs(value: ClassName*): Self = StObject.set(x, "right", js.Array(value*))
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

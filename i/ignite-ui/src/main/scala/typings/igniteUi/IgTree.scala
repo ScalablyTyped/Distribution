@@ -11,7 +11,7 @@ trait IgTree
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets the duration of each animation such as the expand/collapse.
@@ -51,7 +51,7 @@ trait IgTree
     * Once the data source is initialized, this option becomes an instance of the $.ig.HierarchicalDataSource.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the type of the data source. Delegates the value to [$.ig.DataSource.settings.type](ig.datasource#options:settings.type). Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource.settings.type.
@@ -175,7 +175,7 @@ trait IgTree
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after the checkstate of a node is changed.
@@ -383,7 +383,7 @@ object IgTree {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -451,7 +451,7 @@ object IgTree {
     
     inline def setLoadOnDemandUndefined: Self = StObject.set(x, "loadOnDemand", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

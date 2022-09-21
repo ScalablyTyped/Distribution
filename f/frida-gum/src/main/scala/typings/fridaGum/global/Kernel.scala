@@ -127,17 +127,23 @@ object Kernel {
     *
     * @param address Starting address to scan from.
     * @param size Number of bytes to scan.
-    * @param pattern Match pattern of the form “13 37 ?? ff” to match 0x13 followed by 0x37 followed by any byte
-    *                followed by 0xff. For more advanced matching it is also possible to specify an r2-style mask.
-    *                The mask is bitwise AND-ed against both the needle and the haystack. To specify the mask append
-    *                a `:` character after the needle, followed by the mask using the same syntax.
-    *                For example: “13 37 13 37 : 1f ff ff f1”.
-    *                For convenience it is also possible to specify nibble-level wildcards, like “?3 37 13 ?7”,
-    *                which gets translated into masks behind the scenes.
+    * @param pattern Match pattern, see `MatchPattern` for details.
     * @param callbacks Object with callbacks.
     */
-  inline def scan(address: UInt64, size: Double, pattern: String, callbacks: KernelMemoryScanCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def scan(address: UInt64, size: UInt64, pattern: String, callbacks: KernelMemoryScanCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scan(address: UInt64, size: Double, pattern: String, callbacks: KernelMemoryScanCallbacks): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def scan(
+    address: UInt64,
+    size: Double,
+    pattern: typings.fridaGum.MatchPattern,
+    callbacks: KernelMemoryScanCallbacks
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def scan(address: UInt64, size: UInt64, pattern: String, callbacks: KernelMemoryScanCallbacks): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def scan(
+    address: UInt64,
+    size: UInt64,
+    pattern: typings.fridaGum.MatchPattern,
+    callbacks: KernelMemoryScanCallbacks
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Synchronous version of `scan()`.
@@ -147,7 +153,9 @@ object Kernel {
     * @param pattern Match pattern, see `Memory.scan()` for details.
     */
   inline def scanSync(address: UInt64, size: Double, pattern: String): js.Array[KernelMemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[KernelMemoryScanMatch]]
+  inline def scanSync(address: UInt64, size: Double, pattern: typings.fridaGum.MatchPattern): js.Array[KernelMemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[KernelMemoryScanMatch]]
   inline def scanSync(address: UInt64, size: UInt64, pattern: String): js.Array[KernelMemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[KernelMemoryScanMatch]]
+  inline def scanSync(address: UInt64, size: UInt64, pattern: typings.fridaGum.MatchPattern): js.Array[KernelMemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[KernelMemoryScanMatch]]
   
   inline def writeByteArray(address: UInt64, value: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeByteArray")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeByteArray(address: UInt64, value: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeByteArray")(address.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]

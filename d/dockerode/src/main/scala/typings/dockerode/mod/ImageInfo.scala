@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ImageInfo extends StObject {
   
+  var Containers: Double
+  
   var Created: Double
   
   var Id: String
@@ -17,7 +19,9 @@ trait ImageInfo extends StObject {
   
   var RepoDigests: js.UndefOr[js.Array[String]] = js.undefined
   
-  var RepoTags: js.Array[String]
+  var RepoTags: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var SharedSize: Double
   
   var Size: Double
   
@@ -26,19 +30,22 @@ trait ImageInfo extends StObject {
 object ImageInfo {
   
   inline def apply(
+    Containers: Double,
     Created: Double,
     Id: String,
     Labels: StringDictionary[String],
     ParentId: String,
-    RepoTags: js.Array[String],
+    SharedSize: Double,
     Size: Double,
     VirtualSize: Double
   ): ImageInfo = {
-    val __obj = js.Dynamic.literal(Created = Created.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], ParentId = ParentId.asInstanceOf[js.Any], RepoTags = RepoTags.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], VirtualSize = VirtualSize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Containers = Containers.asInstanceOf[js.Any], Created = Created.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], ParentId = ParentId.asInstanceOf[js.Any], SharedSize = SharedSize.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], VirtualSize = VirtualSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageInfo]
   }
   
   extension [Self <: ImageInfo](x: Self) {
+    
+    inline def setContainers(value: Double): Self = StObject.set(x, "Containers", value.asInstanceOf[js.Any])
     
     inline def setCreated(value: Double): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
@@ -52,11 +59,15 @@ object ImageInfo {
     
     inline def setRepoDigestsUndefined: Self = StObject.set(x, "RepoDigests", js.undefined)
     
-    inline def setRepoDigestsVarargs(value: String*): Self = StObject.set(x, "RepoDigests", js.Array(value :_*))
+    inline def setRepoDigestsVarargs(value: String*): Self = StObject.set(x, "RepoDigests", js.Array(value*))
     
     inline def setRepoTags(value: js.Array[String]): Self = StObject.set(x, "RepoTags", value.asInstanceOf[js.Any])
     
-    inline def setRepoTagsVarargs(value: String*): Self = StObject.set(x, "RepoTags", js.Array(value :_*))
+    inline def setRepoTagsUndefined: Self = StObject.set(x, "RepoTags", js.undefined)
+    
+    inline def setRepoTagsVarargs(value: String*): Self = StObject.set(x, "RepoTags", js.Array(value*))
+    
+    inline def setSharedSize(value: Double): Self = StObject.set(x, "SharedSize", value.asInstanceOf[js.Any])
     
     inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ trait FpgaImage extends StObject {
   /**
     * The date and time the AFI was created.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates whether data retention support is enabled for the AFI.
@@ -42,7 +42,7 @@ trait FpgaImage extends StObject {
   var OwnerAlias: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account ID of the AFI owner.
+    * The ID of the Amazon Web Services account that owns the AFI.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -62,7 +62,7 @@ trait FpgaImage extends StObject {
   var Public: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The version of the AWS Shell that was used to create the bitstream.
+    * The version of the Amazon Web Services Shell that was used to create the bitstream.
     */
   var ShellVersion: js.UndefOr[String] = js.undefined
   
@@ -79,7 +79,7 @@ trait FpgaImage extends StObject {
   /**
     * The time of the most recent update to the AFI.
     */
-  var UpdateTime: js.UndefOr[DateTime] = js.undefined
+  var UpdateTime: js.UndefOr[js.Date] = js.undefined
 }
 object FpgaImage {
   
@@ -90,7 +90,7 @@ object FpgaImage {
   
   extension [Self <: FpgaImage](x: Self) {
     
-    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
@@ -130,7 +130,7 @@ object FpgaImage {
     
     inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value*))
     
     inline def setPublic(value: Boolean): Self = StObject.set(x, "Public", value.asInstanceOf[js.Any])
     
@@ -148,9 +148,9 @@ object FpgaImage {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
-    inline def setUpdateTime(value: DateTime): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: js.Date): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
   }

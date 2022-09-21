@@ -182,7 +182,9 @@ object pkgOptionsMod {
     val license: js.UndefOr[String | Null] = js.undefined
     
     /**
-      * Identifies applications that must be closed before the package is installed.\n\nCorresponds to [must-close](https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW77)
+      * Identifies applications that must be closed before the package is installed.
+      *
+      * Corresponds to [must-close](https://developer.apple.com/library/archive/documentation/DeveloperTools/Reference/DistributionDefinitionRef/Chapters/Distribution_XML_Ref.html#//apple_ref/doc/uid/TP40005370-CH100-SW77).
       */
     val mustClose: js.UndefOr[js.Array[String] | Null] = js.undefined
     
@@ -307,7 +309,7 @@ object pkgOptionsMod {
       
       inline def setMustCloseUndefined: Self = StObject.set(x, "mustClose", js.undefined)
       
-      inline def setMustCloseVarargs(value: String*): Self = StObject.set(x, "mustClose", js.Array(value :_*))
+      inline def setMustCloseVarargs(value: String*): Self = StObject.set(x, "mustClose", js.Array(value*))
       
       inline def setOverwriteAction(value: upgrade | update): Self = StObject.set(x, "overwriteAction", value.asInstanceOf[js.Any])
       
@@ -321,7 +323,7 @@ object pkgOptionsMod {
       
       inline def setProductbuildUndefined: Self = StObject.set(x, "productbuild", js.undefined)
       
-      inline def setProductbuildVarargs(value: String*): Self = StObject.set(x, "productbuild", js.Array(value :_*))
+      inline def setProductbuildVarargs(value: String*): Self = StObject.set(x, "productbuild", js.Array(value*))
       
       inline def setScripts(value: String): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       

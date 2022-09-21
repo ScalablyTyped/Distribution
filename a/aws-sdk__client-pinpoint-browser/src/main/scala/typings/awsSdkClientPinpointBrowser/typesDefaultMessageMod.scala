@@ -1,7 +1,6 @@
 package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object typesDefaultMessageMod {
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     var Substitutions: js.UndefOr[
-        (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ] = js.undefined
   }
   object DefaultMessage {
@@ -36,7 +35,7 @@ object typesDefaultMessageMod {
       inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
       inline def setSubstitutions(
-        value: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        value: (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       
       inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)

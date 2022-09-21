@@ -15,7 +15,7 @@ object Application {
     
     @JSGlobal("SP.Application.UI.DefaultFormsInformation")
     @js.native
-    class DefaultFormsInformation ()
+    open class DefaultFormsInformation ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.DefaultFormsInformation {
       
@@ -23,12 +23,12 @@ object Application {
       var DefaultForms: typings.sharepoint.SP.Application.UI.FormsInfo = js.native
       
       /* CompleteClass */
-      var OtherForms: js.Any = js.native
+      var OtherForms: Any = js.native
     }
     
     @JSGlobal("SP.Application.UI.DefaultFormsMenuBuilder")
     @js.native
-    class DefaultFormsMenuBuilder ()
+    open class DefaultFormsMenuBuilder ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.DefaultFormsMenuBuilder
     object DefaultFormsMenuBuilder {
@@ -43,7 +43,7 @@ object Application {
     
     @JSGlobal("SP.Application.UI.FormsInfo")
     @js.native
-    class FormsInfo ()
+    open class FormsInfo ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.FormsInfo {
       
@@ -62,7 +62,7 @@ object Application {
     
     @JSGlobal("SP.Application.UI.MoreColorsPage")
     @js.native
-    class MoreColorsPage protected ()
+    open class MoreColorsPage protected ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.MoreColorsPage {
       def this(e: HTMLElement) = this()
@@ -132,7 +132,7 @@ object Application {
         *      An EventHandlerList object that contains references to all the events and handlers for this component.
         */
       /* CompleteClass */
-      override def get_events(): js.Any = js.native
+      override def get_events(): Any = js.native
       
       /**
         * Gets the ID of the current Component object.
@@ -183,7 +183,7 @@ object Application {
         *      false in all cases.
         */
       /* CompleteClass */
-      override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+      override def onBubbleEvent(source: Any, args: Any): Boolean = js.native
       
       /**
         * Calls the onBubbleEvent method of the parent control.
@@ -199,7 +199,7 @@ object Application {
         *          The event arguments.
         */
       /* CompleteClass */
-      override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+      override def raiseBubbleEvent(source: Any, args: Any): Unit = js.native
       
       /**
         * Raises the propertyChanged event for the specified property.
@@ -259,7 +259,7 @@ object Application {
     
     @JSGlobal("SP.Application.UI.MoreColorsPicker")
     @js.native
-    class MoreColorsPicker protected ()
+    open class MoreColorsPicker protected ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.MoreColorsPicker {
       def this(e: HTMLElement) = this()
@@ -332,7 +332,7 @@ object Application {
         *      An EventHandlerList object that contains references to all the events and handlers for this component.
         */
       /* CompleteClass */
-      override def get_events(): js.Any = js.native
+      override def get_events(): Any = js.native
       
       /**
         * Gets the ID of the current Component object.
@@ -380,7 +380,7 @@ object Application {
         *      false in all cases.
         */
       /* CompleteClass */
-      override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+      override def onBubbleEvent(source: Any, args: Any): Boolean = js.native
       
       /**
         * Calls the onBubbleEvent method of the parent control.
@@ -396,7 +396,7 @@ object Application {
         *          The event arguments.
         */
       /* CompleteClass */
-      override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+      override def raiseBubbleEvent(source: Any, args: Any): Unit = js.native
       
       /**
         * Raises the propertyChanged event for the specified property.
@@ -456,7 +456,7 @@ object Application {
     
     @JSGlobal("SP.Application.UI.ThemeWebPage")
     @js.native
-    class ThemeWebPage protected ()
+    open class ThemeWebPage protected ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.ThemeWebPage {
       def this(e: HTMLElement) = this()
@@ -487,7 +487,7 @@ object Application {
       override def add_propertyChanged(handler: js.Function): Unit = js.native
       
       /* CompleteClass */
-      override def add_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit = js.native
+      override def add_themeDisplayUpdated(value: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit]): Unit = js.native
       
       //#endregion
       //#region Methods
@@ -529,7 +529,7 @@ object Application {
         *      An EventHandlerList object that contains references to all the events and handlers for this component.
         */
       /* CompleteClass */
-      override def get_events(): js.Any = js.native
+      override def get_events(): Any = js.native
       
       /**
         * Gets the ID of the current Component object.
@@ -556,7 +556,7 @@ object Application {
       override def get_isUpdating(): Boolean = js.native
       
       /* CompleteClass */
-      override def get_thmxThemes(): js.Any = js.native
+      override def get_thmxThemes(): Any = js.native
       
       /**
         * Initializes the current Component object.
@@ -580,7 +580,7 @@ object Application {
         *      false in all cases.
         */
       /* CompleteClass */
-      override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+      override def onBubbleEvent(source: Any, args: Any): Boolean = js.native
       
       /* CompleteClass */
       override def onThemeSelectionChanged(evt: DomEvent): Unit = js.native
@@ -599,7 +599,7 @@ object Application {
         *          The event arguments.
         */
       /* CompleteClass */
-      override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+      override def raiseBubbleEvent(source: Any, args: Any): Unit = js.native
       
       /**
         * Raises the propertyChanged event for the specified property.
@@ -632,7 +632,7 @@ object Application {
       override def remove_propertyChanged(handler: js.Function): Unit = js.native
       
       /* CompleteClass */
-      override def remove_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit = js.native
+      override def remove_themeDisplayUpdated(value: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit]): Unit = js.native
       
       /**
         * Sets the ID of the current Component object.
@@ -642,7 +642,7 @@ object Application {
       override def set_id(value: String): Unit = js.native
       
       /* CompleteClass */
-      override def set_thmxThemes(value: js.Any): Unit = js.native
+      override def set_thmxThemes(value: Any): Unit = js.native
       
       /**
         * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
@@ -665,7 +665,7 @@ object Application {
     
     @JSGlobal("SP.Application.UI.ViewSelectorGroups")
     @js.native
-    class ViewSelectorGroups ()
+    open class ViewSelectorGroups ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.ViewSelectorGroups {
       
@@ -673,24 +673,24 @@ object Application {
       var DefaultView: typings.sharepoint.SP.Application.UI.ViewSelectorMenuItem = js.native
       
       /* CompleteClass */
-      var ModeratedViews: js.Any = js.native
+      var ModeratedViews: Any = js.native
       
       /* CompleteClass */
-      var OtherViews: js.Any = js.native
+      var OtherViews: Any = js.native
       
       /* CompleteClass */
-      var PersonalViews: js.Any = js.native
+      var PersonalViews: Any = js.native
       
       /* CompleteClass */
-      var PublicViews: js.Any = js.native
+      var PublicViews: Any = js.native
       
       /* CompleteClass */
-      var ViewCreation: js.Any = js.native
+      var ViewCreation: Any = js.native
     }
     
     @JSGlobal("SP.Application.UI.ViewSelectorMenuBuilder")
     @js.native
-    class ViewSelectorMenuBuilder ()
+    open class ViewSelectorMenuBuilder ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.ViewSelectorMenuBuilder
     object ViewSelectorMenuBuilder {
@@ -700,7 +700,7 @@ object Application {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def getFilterMenuItemsCallback(): js.Function1[/* menuItems */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_filterMenuItemsCallback")().asInstanceOf[js.Function1[/* menuItems */ js.Any, js.Any]]
+      inline def getFilterMenuItemsCallback(): js.Function1[/* menuItems */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_filterMenuItemsCallback")().asInstanceOf[js.Function1[/* menuItems */ Any, Any]]
       
       /* static member */
       inline def getViewInformation(
@@ -709,7 +709,7 @@ object Application {
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewInformation")(requestor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      inline def setFilterMenuItemsCallback(value: js.Function1[/* menuItems */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_filterMenuItemsCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setFilterMenuItemsCallback(value: js.Function1[/* menuItems */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_filterMenuItemsCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /* static member */
       inline def showMenu(elem: HTMLElement, options: typings.sharepoint.SP.Application.UI.ViewSelectorMenuOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showMenu")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -717,7 +717,7 @@ object Application {
     
     @JSGlobal("SP.Application.UI.ViewSelectorMenuItem")
     @js.native
-    class ViewSelectorMenuItem ()
+    open class ViewSelectorMenuItem ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.ViewSelectorMenuItem {
       
@@ -751,7 +751,7 @@ object Application {
     
     @JSGlobal("SP.Application.UI.ViewSelectorMenuOptions")
     @js.native
-    class ViewSelectorMenuOptions ()
+    open class ViewSelectorMenuOptions ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.ViewSelectorMenuOptions {
       
@@ -782,7 +782,7 @@ object Application {
     
     @JSGlobal("SP.Application.UI.ViewSelectorSubMenu")
     @js.native
-    class ViewSelectorSubMenu ()
+    open class ViewSelectorSubMenu ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.ViewSelectorSubMenu {
       
@@ -790,7 +790,7 @@ object Application {
       var ImageSourceUrl: String = js.native
       
       /* CompleteClass */
-      var SubMenuItems: js.Any = js.native
+      var SubMenuItems: Any = js.native
       
       /* CompleteClass */
       var Text: String = js.native
@@ -798,10 +798,10 @@ object Application {
     
     @JSGlobal("SP.Application.UI.WikiPageNameInPlaceEditor")
     @js.native
-    class WikiPageNameInPlaceEditor protected ()
+    open class WikiPageNameInPlaceEditor protected ()
       extends StObject
          with typings.sharepoint.SP.Application.UI.WikiPageNameInPlaceEditor {
-      def this(ownerDoc: js.Any, displayElemId: String, editElemId: String, editTextBoxId: String) = this()
+      def this(ownerDoc: Any, displayElemId: String, editElemId: String, editTextBoxId: String) = this()
       
       /* CompleteClass */
       override def editingPageCallback(): Unit = js.native

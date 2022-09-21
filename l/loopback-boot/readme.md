@@ -10,10 +10,10 @@ Convention-based bootstrapper for LoopBack applications
 | ------------------ | :-------------: |
 | Full name          | loopback-boot |
 | Keywords           | StrongLoop, LoopBack, Configuration, Bootstrap |
-| # releases         | 4 |
-| # dependents       | 107 |
-| # downloads        | 1671111 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 98182.33333333333 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/strongloop/loopback-boot#readme)

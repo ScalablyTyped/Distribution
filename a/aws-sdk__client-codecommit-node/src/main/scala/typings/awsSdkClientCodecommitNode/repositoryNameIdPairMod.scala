@@ -8,5 +8,5 @@ object repositoryNameIdPairMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_RepositoryNameIdPair", "_RepositoryNameIdPair")
   @js.native
-  val RepositoryNameIdPair: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RepositoryNameIdPair: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

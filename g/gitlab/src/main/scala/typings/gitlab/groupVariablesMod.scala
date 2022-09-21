@@ -10,7 +10,7 @@ object groupVariablesMod {
   
   @JSImport("gitlab/dist/types/core/services/GroupVariables", "GroupVariables")
   @js.native
-  class GroupVariables protected () extends ResourceVariables {
+  open class GroupVariables protected () extends ResourceVariables {
     def this(options: BaseServiceOptions) = this()
   }
 }

@@ -14,7 +14,7 @@ object global {
       */
     @JSGlobal("fastTextEncoding.TextDecoderClass")
     @js.native
-    class TextDecoderClass ()
+    open class TextDecoderClass ()
       extends StObject
          with typings.fastTextEncoding.fastTextEncoding.TextDecoderClass {
       def this(utfLabel: String) = this()
@@ -27,7 +27,7 @@ object global {
       */
     @JSGlobal("fastTextEncoding.TextEncoderClass")
     @js.native
-    class TextEncoderClass ()
+    open class TextEncoderClass ()
       extends StObject
          with typings.fastTextEncoding.fastTextEncoding.TextEncoderClass {
       def this(label: String) = this()

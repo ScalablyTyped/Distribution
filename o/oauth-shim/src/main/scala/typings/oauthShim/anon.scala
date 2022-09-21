@@ -10,7 +10,7 @@ object anon {
   
   trait Accesstoken
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var access_token: js.UndefOr[String] = js.undefined
   }
@@ -62,7 +62,7 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var path: js.UndefOr[String] = js.undefined
   }
@@ -84,18 +84,18 @@ object anon {
   trait Get extends StObject {
     
     @JSName("get")
-    def get_false(query: js.Any, cb: js.Function1[/* success */ `false` | js.Object, Unit]): Unit
+    def get_false(query: Any, cb: js.Function1[/* success */ `false` | js.Object, Unit]): Unit
   }
   object Get {
     
-    inline def apply(get: (js.Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Get = {
+    inline def apply(get: (Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Get = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
       __obj.asInstanceOf[Get]
     }
     
     extension [Self <: Get](x: Self) {
       
-      inline def setGet(value: (js.Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
   }
 }

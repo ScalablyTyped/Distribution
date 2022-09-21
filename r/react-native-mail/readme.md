@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-mail
 
-Typings are for version 3.0
+Typings are for version 6.1.1
 
 ## Library description:
 A wrapper on top of MFMailComposeViewController from iOS and Mail Intent on android
@@ -10,10 +10,10 @@ A wrapper on top of MFMailComposeViewController from iOS and Mail Intent on andr
 | ------------------ | :-------------: |
 | Full name          | react-native-mail |
 | Keywords           | react, react-native, react-component, ios, android, email, MFMailComposeViewController |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 385202 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 49819.0 |
+| # stars            | 427.0 |
 
 ## Links
 - [Homepage](https://github.com/chirag04/react-native-mail#readme)
@@ -24,7 +24,7 @@ A wrapper on top of MFMailComposeViewController from iOS and Mail Intent on andr
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

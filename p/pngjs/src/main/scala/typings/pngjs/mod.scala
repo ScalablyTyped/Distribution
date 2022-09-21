@@ -1,6 +1,6 @@
 package typings.pngjs
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Duplex
 import typings.pngjs.anon.Blue
 import typings.pngjs.anon.FnCall
@@ -15,7 +15,6 @@ import typings.pngjs.pngjsStrings.close
 import typings.pngjs.pngjsStrings.error
 import typings.pngjs.pngjsStrings.metadata
 import typings.pngjs.pngjsStrings.parsed
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object mod {
   
   @JSImport("pngjs", "PNG")
   @js.native
-  class PNG () extends Duplex {
+  open class PNG () extends Duplex {
     def this(options: PNGOptions) = this()
     
     def adjustGamma(): Unit = js.native
@@ -45,11 +44,11 @@ object mod {
     
     var height: Double = js.native
     
-    def on(event: String, callback: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
+    def on(event: String, callback: js.ThisFunction1[/* this */ this.type, /* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_close(event: close, callback: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, callback: js.ThisFunction1[/* this */ this.type, /* error */ Error, Unit]): this.type = js.native
+    def on_error(event: error, callback: js.ThisFunction1[/* this */ this.type, /* error */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_metadata(event: metadata, callback: js.ThisFunction1[/* this */ this.type, /* metadata */ Metadata, Unit]): this.type = js.native
     @JSName("on")
@@ -58,9 +57,9 @@ object mod {
     def pack(): PNG = js.native
     
     def parse(data: String): PNG = js.native
-    def parse(data: String, callback: js.Function2[/* error */ Error, /* data */ this.type, Unit]): PNG = js.native
+    def parse(data: String, callback: js.Function2[/* error */ js.Error, /* data */ this.type, Unit]): PNG = js.native
     def parse(data: Buffer): PNG = js.native
-    def parse(data: Buffer, callback: js.Function2[/* error */ Error, /* data */ this.type, Unit]): PNG = js.native
+    def parse(data: Buffer, callback: js.Function2[/* error */ js.Error, /* data */ this.type, Unit]): PNG = js.native
     
     var width: Double = js.native
   }
@@ -305,7 +304,7 @@ object mod {
       
       inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      inline def setFilterTypeVarargs(value: Double*): Self = StObject.set(x, "filterType", js.Array(value :_*))
+      inline def setFilterTypeVarargs(value: Double*): Self = StObject.set(x, "filterType", js.Array(value*))
       
       inline def setInputColorType(value: ColorType): Self = StObject.set(x, "inputColorType", value.asInstanceOf[js.Any])
       
@@ -320,6 +319,8 @@ object mod {
   trait ParserOptions extends StObject {
     
     var checkCRC: js.UndefOr[Boolean] = js.undefined
+    
+    var skipRescale: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptions {
     
@@ -333,6 +334,10 @@ object mod {
       inline def setCheckCRC(value: Boolean): Self = StObject.set(x, "checkCRC", value.asInstanceOf[js.Any])
       
       inline def setCheckCRCUndefined: Self = StObject.set(x, "checkCRC", js.undefined)
+      
+      inline def setSkipRescale(value: Boolean): Self = StObject.set(x, "skipRescale", value.asInstanceOf[js.Any])
+      
+      inline def setSkipRescaleUndefined: Self = StObject.set(x, "skipRescale", js.undefined)
     }
   }
 }

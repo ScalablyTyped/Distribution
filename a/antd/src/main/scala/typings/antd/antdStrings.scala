@@ -5,31 +5,33 @@ import typings.antd.buttonButtonMod.ButtonHTMLType
 import typings.antd.buttonButtonMod.ButtonShape
 import typings.antd.buttonButtonMod.ButtonType
 import typings.antd.buttonButtonMod.LegacyButtonType
-import typings.antd.cardMod.CardSize
+import typings.antd.cardCardMod.CardSize
 import typings.antd.carouselMod.CarouselEffect
 import typings.antd.carouselMod.DotPosition
-import typings.antd.cascaderMod.CascaderExpandTrigger
+import typings.antd.collapseCollapseMod.ExpandIconPositionLegacy
 import typings.antd.collapseCollapseMod._ExpandIconPosition
+import typings.antd.collapsePanelMod.CollapsibleType
 import typings.antd.configProviderContextMod._DirectionType
 import typings.antd.configProviderSizeContextMod._SizeType
 import typings.antd.directoryTreeMod.ExpandAction
-import typings.antd.drawerMod.placementType
+import typings.antd.drawerMod.sizeType
 import typings.antd.dropdownButtonMod.DropdownButtonType
 import typings.antd.dropdownDropdownMod.Placement
 import typings.antd.formFormMod.FormLayout
+import typings.antd.formInterfaceMod.FormLabelAlign
 import typings.antd.formItemMod.ValidateStatus
 import typings.antd.generateCalendarMod.CalendarMode
+import typings.antd.generatePickerMod.DataPickerPlacement
 import typings.antd.gridColMod._FlexType
-import typings.antd.inputNumberMod.OmitAttrs
-import typings.antd.interfaceMod.FormLabelAlign
 import typings.antd.listMod.ColumnType
 import typings.antd.listMod.ListItemLayout
 import typings.antd.listMod.ListSize
-import typings.antd.localeReceiverMod.LocaleComponent
+import typings.antd.localeReceiverMod.LocaleComponentName
 import typings.antd.mentionsMod.MentionPlacement
 import typings.antd.menuContextMod.MenuTheme
 import typings.antd.menuMod.MenuMode
 import typings.antd.messageMod.NoticeType
+import typings.antd.motionMod.SelectCommonPlacement
 import typings.antd.notificationMod.IconType
 import typings.antd.notificationMod.NotificationPlacement
 import typings.antd.paginationPaginationMod.PaginationPosition
@@ -46,7 +48,9 @@ import typings.antd.siderMod.SiderTheme
 import typings.antd.sizeContextMod._AvatarSize
 import typings.antd.spinMod.SpinSize
 import typings.antd.statisticUtilsMod._Formatter
+import typings.antd.statusUtilsMod.InputStatus
 import typings.antd.switchMod.SwitchSize
+import typings.antd.tableInterfaceMod.RowSelectMethod
 import typings.antd.tableInterfaceMod.RowSelectionType
 import typings.antd.tableInterfaceMod.TableAction
 import typings.antd.tableInterfaceMod.TablePaginationPosition
@@ -69,14 +73,17 @@ object antdStrings {
   @js.native
   sealed trait default
     extends StObject
+       with ButtonShape
        with ButtonType
        with CardSize
+       with DropdownButtonType
        with ListSize
        with ProgressSize
        with RadioGroupOptionType
        with SpinSize
        with SwitchSize
        with _AvatarSize
+       with sizeType
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
@@ -92,8 +99,8 @@ object antdStrings {
   inline def `404`: `404` = "404".asInstanceOf[`404`]
   
   @js.native
-  sealed trait `4Dot8Dot5` extends StObject
-  inline def `4Dot8Dot5`: `4Dot8Dot5` = "4.8.5".asInstanceOf[`4Dot8Dot5`]
+  sealed trait `4Dot23Dot2` extends StObject
+  inline def `4Dot23Dot2`: `4Dot23Dot2` = "4.23.2".asInstanceOf[`4Dot23Dot2`]
   
   @js.native
   sealed trait `500`
@@ -104,37 +111,43 @@ object antdStrings {
   @js.native
   sealed trait Calendar
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Calendar: Calendar = "Calendar".asInstanceOf[Calendar]
   
   @js.native
   sealed trait DatePicker
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def DatePicker: DatePicker = "DatePicker".asInstanceOf[DatePicker]
   
   @js.native
   sealed trait Empty
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Empty: Empty = "Empty".asInstanceOf[Empty]
   
   @js.native
   sealed trait Form
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Form: Form = "Form".asInstanceOf[Form]
   
   @js.native
   sealed trait Icon
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Icon: Icon = "Icon".asInstanceOf[Icon]
+  
+  @js.native
+  sealed trait Image
+    extends StObject
+       with LocaleComponentName
+  inline def Image: Image = "Image".asInstanceOf[Image]
   
   @js.native
   sealed trait Modal
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Modal: Modal = "Modal".asInstanceOf[Modal]
   
   @js.native
@@ -152,19 +165,19 @@ object antdStrings {
   @js.native
   sealed trait PageHeader
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def PageHeader: PageHeader = "PageHeader".asInstanceOf[PageHeader]
   
   @js.native
   sealed trait Pagination
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Pagination: Pagination = "Pagination".asInstanceOf[Pagination]
   
   @js.native
   sealed trait Popconfirm
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Popconfirm: Popconfirm = "Popconfirm".asInstanceOf[Popconfirm]
   
   @js.native
@@ -184,44 +197,55 @@ object antdStrings {
   inline def SELECT_INVERT: SELECT_INVERT = "SELECT_INVERT".asInstanceOf[SELECT_INVERT]
   
   @js.native
+  sealed trait SELECT_NONE
+    extends StObject
+       with INTERNAL_SELECTION_ITEM
+  inline def SELECT_NONE: SELECT_NONE = "SELECT_NONE".asInstanceOf[SELECT_NONE]
+  
+  @js.native
+  sealed trait SHOW_CHILD extends StObject
+  inline def SHOW_CHILD: SHOW_CHILD = "SHOW_CHILD".asInstanceOf[SHOW_CHILD]
+  
+  @js.native
   sealed trait Select
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Select: Select = "Select".asInstanceOf[Select]
   
   @js.native
   sealed trait Table
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Table: Table = "Table".asInstanceOf[Table]
   
   @js.native
   sealed trait Text
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Text: Text = "Text".asInstanceOf[Text]
   
   @js.native
   sealed trait TimePicker
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def TimePicker: TimePicker = "TimePicker".asInstanceOf[TimePicker]
   
   @js.native
   sealed trait Transfer
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Transfer: Transfer = "Transfer".asInstanceOf[Transfer]
   
   @js.native
   sealed trait Upload
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def Upload: Upload = "Upload".asInstanceOf[Upload]
   
   @js.native
   sealed trait _empty
     extends StObject
+       with InputStatus
        with ValidateStatus
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -246,208 +270,18 @@ object antdStrings {
   inline def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   
   @js.native
-  sealed trait all extends StObject
+  sealed trait all
+    extends StObject
+       with RowSelectMethod
   inline def all: all = "all".asInstanceOf[all]
-  
-  @js.native
-  sealed trait allowClear extends StObject
-  inline def allowClear: allowClear = "allowClear".asInstanceOf[allowClear]
   
   @js.native
   sealed trait alternate extends StObject
   inline def alternate: alternate = "alternate".asInstanceOf[alternate]
   
   @js.native
-  sealed trait `aria-activedescendant` extends StObject
-  inline def `aria-activedescendant`: `aria-activedescendant` = "aria-activedescendant".asInstanceOf[`aria-activedescendant`]
-  
-  @js.native
-  sealed trait `aria-atomic` extends StObject
-  inline def `aria-atomic`: `aria-atomic` = "aria-atomic".asInstanceOf[`aria-atomic`]
-  
-  @js.native
-  sealed trait `aria-autocomplete` extends StObject
-  inline def `aria-autocomplete`: `aria-autocomplete` = "aria-autocomplete".asInstanceOf[`aria-autocomplete`]
-  
-  @js.native
-  sealed trait `aria-busy` extends StObject
-  inline def `aria-busy`: `aria-busy` = "aria-busy".asInstanceOf[`aria-busy`]
-  
-  @js.native
-  sealed trait `aria-checked` extends StObject
-  inline def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
-  
-  @js.native
-  sealed trait `aria-colcount` extends StObject
-  inline def `aria-colcount`: `aria-colcount` = "aria-colcount".asInstanceOf[`aria-colcount`]
-  
-  @js.native
-  sealed trait `aria-colindex` extends StObject
-  inline def `aria-colindex`: `aria-colindex` = "aria-colindex".asInstanceOf[`aria-colindex`]
-  
-  @js.native
-  sealed trait `aria-colspan` extends StObject
-  inline def `aria-colspan`: `aria-colspan` = "aria-colspan".asInstanceOf[`aria-colspan`]
-  
-  @js.native
-  sealed trait `aria-controls` extends StObject
-  inline def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
-  
-  @js.native
-  sealed trait `aria-current` extends StObject
-  inline def `aria-current`: `aria-current` = "aria-current".asInstanceOf[`aria-current`]
-  
-  @js.native
-  sealed trait `aria-describedby` extends StObject
-  inline def `aria-describedby`: `aria-describedby` = "aria-describedby".asInstanceOf[`aria-describedby`]
-  
-  @js.native
-  sealed trait `aria-details` extends StObject
-  inline def `aria-details`: `aria-details` = "aria-details".asInstanceOf[`aria-details`]
-  
-  @js.native
-  sealed trait `aria-disabled` extends StObject
-  inline def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
-  
-  @js.native
-  sealed trait `aria-dropeffect` extends StObject
-  inline def `aria-dropeffect`: `aria-dropeffect` = "aria-dropeffect".asInstanceOf[`aria-dropeffect`]
-  
-  @js.native
-  sealed trait `aria-errormessage` extends StObject
-  inline def `aria-errormessage`: `aria-errormessage` = "aria-errormessage".asInstanceOf[`aria-errormessage`]
-  
-  @js.native
-  sealed trait `aria-expanded` extends StObject
-  inline def `aria-expanded`: `aria-expanded` = "aria-expanded".asInstanceOf[`aria-expanded`]
-  
-  @js.native
-  sealed trait `aria-flowto` extends StObject
-  inline def `aria-flowto`: `aria-flowto` = "aria-flowto".asInstanceOf[`aria-flowto`]
-  
-  @js.native
-  sealed trait `aria-grabbed` extends StObject
-  inline def `aria-grabbed`: `aria-grabbed` = "aria-grabbed".asInstanceOf[`aria-grabbed`]
-  
-  @js.native
-  sealed trait `aria-haspopup` extends StObject
-  inline def `aria-haspopup`: `aria-haspopup` = "aria-haspopup".asInstanceOf[`aria-haspopup`]
-  
-  @js.native
-  sealed trait `aria-hidden` extends StObject
-  inline def `aria-hidden`: `aria-hidden` = "aria-hidden".asInstanceOf[`aria-hidden`]
-  
-  @js.native
-  sealed trait `aria-invalid` extends StObject
-  inline def `aria-invalid`: `aria-invalid` = "aria-invalid".asInstanceOf[`aria-invalid`]
-  
-  @js.native
-  sealed trait `aria-keyshortcuts` extends StObject
-  inline def `aria-keyshortcuts`: `aria-keyshortcuts` = "aria-keyshortcuts".asInstanceOf[`aria-keyshortcuts`]
-  
-  @js.native
-  sealed trait `aria-label` extends StObject
-  inline def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
-  
-  @js.native
-  sealed trait `aria-labelledby` extends StObject
-  inline def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
-  
-  @js.native
-  sealed trait `aria-level` extends StObject
-  inline def `aria-level`: `aria-level` = "aria-level".asInstanceOf[`aria-level`]
-  
-  @js.native
-  sealed trait `aria-live` extends StObject
-  inline def `aria-live`: `aria-live` = "aria-live".asInstanceOf[`aria-live`]
-  
-  @js.native
-  sealed trait `aria-modal` extends StObject
-  inline def `aria-modal`: `aria-modal` = "aria-modal".asInstanceOf[`aria-modal`]
-  
-  @js.native
-  sealed trait `aria-multiline` extends StObject
-  inline def `aria-multiline`: `aria-multiline` = "aria-multiline".asInstanceOf[`aria-multiline`]
-  
-  @js.native
-  sealed trait `aria-multiselectable` extends StObject
-  inline def `aria-multiselectable`: `aria-multiselectable` = "aria-multiselectable".asInstanceOf[`aria-multiselectable`]
-  
-  @js.native
-  sealed trait `aria-orientation` extends StObject
-  inline def `aria-orientation`: `aria-orientation` = "aria-orientation".asInstanceOf[`aria-orientation`]
-  
-  @js.native
-  sealed trait `aria-owns` extends StObject
-  inline def `aria-owns`: `aria-owns` = "aria-owns".asInstanceOf[`aria-owns`]
-  
-  @js.native
-  sealed trait `aria-placeholder` extends StObject
-  inline def `aria-placeholder`: `aria-placeholder` = "aria-placeholder".asInstanceOf[`aria-placeholder`]
-  
-  @js.native
-  sealed trait `aria-posinset` extends StObject
-  inline def `aria-posinset`: `aria-posinset` = "aria-posinset".asInstanceOf[`aria-posinset`]
-  
-  @js.native
-  sealed trait `aria-pressed` extends StObject
-  inline def `aria-pressed`: `aria-pressed` = "aria-pressed".asInstanceOf[`aria-pressed`]
-  
-  @js.native
-  sealed trait `aria-readonly` extends StObject
-  inline def `aria-readonly`: `aria-readonly` = "aria-readonly".asInstanceOf[`aria-readonly`]
-  
-  @js.native
-  sealed trait `aria-relevant` extends StObject
-  inline def `aria-relevant`: `aria-relevant` = "aria-relevant".asInstanceOf[`aria-relevant`]
-  
-  @js.native
-  sealed trait `aria-required` extends StObject
-  inline def `aria-required`: `aria-required` = "aria-required".asInstanceOf[`aria-required`]
-  
-  @js.native
-  sealed trait `aria-roledescription` extends StObject
-  inline def `aria-roledescription`: `aria-roledescription` = "aria-roledescription".asInstanceOf[`aria-roledescription`]
-  
-  @js.native
-  sealed trait `aria-rowcount` extends StObject
-  inline def `aria-rowcount`: `aria-rowcount` = "aria-rowcount".asInstanceOf[`aria-rowcount`]
-  
-  @js.native
-  sealed trait `aria-rowindex` extends StObject
-  inline def `aria-rowindex`: `aria-rowindex` = "aria-rowindex".asInstanceOf[`aria-rowindex`]
-  
-  @js.native
-  sealed trait `aria-rowspan` extends StObject
-  inline def `aria-rowspan`: `aria-rowspan` = "aria-rowspan".asInstanceOf[`aria-rowspan`]
-  
-  @js.native
-  sealed trait `aria-selected` extends StObject
-  inline def `aria-selected`: `aria-selected` = "aria-selected".asInstanceOf[`aria-selected`]
-  
-  @js.native
-  sealed trait `aria-setsize` extends StObject
-  inline def `aria-setsize`: `aria-setsize` = "aria-setsize".asInstanceOf[`aria-setsize`]
-  
-  @js.native
-  sealed trait `aria-sort` extends StObject
-  inline def `aria-sort`: `aria-sort` = "aria-sort".asInstanceOf[`aria-sort`]
-  
-  @js.native
-  sealed trait `aria-valuemax` extends StObject
-  inline def `aria-valuemax`: `aria-valuemax` = "aria-valuemax".asInstanceOf[`aria-valuemax`]
-  
-  @js.native
-  sealed trait `aria-valuemin` extends StObject
-  inline def `aria-valuemin`: `aria-valuemin` = "aria-valuemin".asInstanceOf[`aria-valuemin`]
-  
-  @js.native
-  sealed trait `aria-valuenow` extends StObject
-  inline def `aria-valuenow`: `aria-valuenow` = "aria-valuenow".asInstanceOf[`aria-valuenow`]
-  
-  @js.native
-  sealed trait `aria-valuetext` extends StObject
-  inline def `aria-valuetext`: `aria-valuetext` = "aria-valuetext".asInstanceOf[`aria-valuetext`]
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait ascend
@@ -470,14 +304,6 @@ object antdStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait autoComplete extends StObject
-  inline def autoComplete: autoComplete = "autoComplete".asInstanceOf[autoComplete]
-  
-  @js.native
-  sealed trait autoFocus extends StObject
-  inline def autoFocus: autoFocus = "autoFocus".asInstanceOf[autoFocus]
-  
-  @js.native
   sealed trait baseline extends StObject
   inline def baseline: baseline = "baseline".asInstanceOf[baseline]
   
@@ -486,8 +312,8 @@ object antdStrings {
   inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
-  sealed trait bordered extends StObject
-  inline def bordered: bordered = "bordered".asInstanceOf[bordered]
+  sealed trait blur extends StObject
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
   sealed trait both
@@ -500,10 +326,11 @@ object antdStrings {
     extends StObject
        with DotPosition
        with MentionPlacement
+       with NotificationPlacement
        with PaginationPosition
+       with Placement
        with TabsPosition
        with TooltipPlacement
-       with placementType
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
@@ -516,8 +343,10 @@ object antdStrings {
   @js.native
   sealed trait bottomLeft
     extends StObject
+       with DataPickerPlacement
        with NotificationPlacement
        with Placement
+       with SelectCommonPlacement
        with TablePaginationPosition
        with TooltipPlacement
   inline def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
@@ -525,8 +354,10 @@ object antdStrings {
   @js.native
   sealed trait bottomRight
     extends StObject
+       with DataPickerPlacement
        with NotificationPlacement
        with Placement
+       with SelectCommonPlacement
        with TablePaginationPosition
        with TooltipPlacement
   inline def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
@@ -578,17 +409,8 @@ object antdStrings {
   inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
-  sealed trait className extends StObject
-  inline def className: className = "className".asInstanceOf[className]
-  
-  @js.native
-  sealed trait clearIcon extends StObject
-  inline def clearIcon: clearIcon = "clearIcon".asInstanceOf[clearIcon]
-  
-  @js.native
   sealed trait click
     extends StObject
-       with CascaderExpandTrigger
        with ExpandAction
   inline def click: click = "click".asInstanceOf[click]
   
@@ -611,6 +433,10 @@ object antdStrings {
   @js.native
   sealed trait components extends StObject
   inline def components: components = "components".asInstanceOf[components]
+  
+  @js.native
+  sealed trait confirm extends StObject
+  inline def confirm: confirm = "confirm".asInstanceOf[confirm]
   
   @js.native
   sealed trait contextMenu extends StObject
@@ -662,34 +488,12 @@ object antdStrings {
   inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait dateRender extends StObject
-  inline def dateRender: dateRender = "dateRender".asInstanceOf[dateRender]
-  
-  @js.native
   sealed trait `datetime-local` extends StObject
   inline def `datetime-local`: `datetime-local` = "datetime-local".asInstanceOf[`datetime-local`]
   
   @js.native
   sealed trait decimal extends StObject
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
-  
-  @js.native
-  sealed trait defaultOpen extends StObject
-  inline def defaultOpen: defaultOpen = "defaultOpen".asInstanceOf[defaultOpen]
-  
-  @js.native
-  sealed trait defaultOpenValue extends StObject
-  inline def defaultOpenValue: defaultOpenValue = "defaultOpenValue".asInstanceOf[defaultOpenValue]
-  
-  @js.native
-  sealed trait defaultPickerValue extends StObject
-  inline def defaultPickerValue: defaultPickerValue = "defaultPickerValue".asInstanceOf[defaultPickerValue]
-  
-  @js.native
-  sealed trait defaultValue
-    extends StObject
-       with OmitAttrs
-  inline def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
   
   @js.native
   sealed trait descend
@@ -706,28 +510,10 @@ object antdStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait direction extends StObject
-  inline def direction: direction = "direction".asInstanceOf[direction]
-  
-  @js.native
-  sealed trait disabled extends StObject
+  sealed trait disabled
+    extends StObject
+       with CollapsibleType
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
-  
-  @js.native
-  sealed trait disabledDate extends StObject
-  inline def disabledDate: disabledDate = "disabledDate".asInstanceOf[disabledDate]
-  
-  @js.native
-  sealed trait disabledHours extends StObject
-  inline def disabledHours: disabledHours = "disabledHours".asInstanceOf[disabledHours]
-  
-  @js.native
-  sealed trait disabledMinutes extends StObject
-  inline def disabledMinutes: disabledMinutes = "disabledMinutes".asInstanceOf[disabledMinutes]
-  
-  @js.native
-  sealed trait disabledSeconds extends StObject
-  inline def disabledSeconds: disabledSeconds = "disabledSeconds".asInstanceOf[disabledSeconds]
   
   @js.native
   sealed trait disabledTime extends StObject
@@ -746,22 +532,10 @@ object antdStrings {
   inline def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
   
   @js.native
-  sealed trait down extends StObject
-  inline def down: down = "down".asInstanceOf[down]
-  
-  @js.native
   sealed trait drag
     extends StObject
        with UploadType
   inline def drag: drag = "drag".asInstanceOf[drag]
-  
-  @js.native
-  sealed trait dropdownAlign extends StObject
-  inline def dropdownAlign: dropdownAlign = "dropdownAlign".asInstanceOf[dropdownAlign]
-  
-  @js.native
-  sealed trait dropdownClassName extends StObject
-  inline def dropdownClassName: dropdownClassName = "dropdownClassName".asInstanceOf[dropdownClassName]
   
   @js.native
   sealed trait `editable-card`
@@ -777,6 +551,7 @@ object antdStrings {
   sealed trait end
     extends StObject
        with RibbonPlacement
+       with _ExpandIconPosition
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
@@ -784,9 +559,14 @@ object antdStrings {
   inline def enter: enter = "enter".asInstanceOf[enter]
   
   @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
+  
+  @js.native
   sealed trait error
     extends StObject
        with IconType
+       with InputStatus
        with NoticeType
        with ResultStatusType
        with UploadFileStatus
@@ -830,20 +610,12 @@ object antdStrings {
   inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
-  sealed trait format extends StObject
-  inline def format: format = "format".asInstanceOf[format]
-  
-  @js.native
   sealed trait geekblue extends StObject
   inline def geekblue: geekblue = "geekblue".asInstanceOf[geekblue]
   
   @js.native
   sealed trait generateConfig extends StObject
   inline def generateConfig: generateConfig = "generateConfig".asInstanceOf[generateConfig]
-  
-  @js.native
-  sealed trait getPopupContainer extends StObject
-  inline def getPopupContainer: getPopupContainer = "getPopupContainer".asInstanceOf[getPopupContainer]
   
   @js.native
   sealed trait ghost
@@ -855,7 +627,7 @@ object antdStrings {
   @js.native
   sealed trait global
     extends StObject
-       with LocaleComponent
+       with LocaleComponentName
   inline def global: global = "global".asInstanceOf[global]
   
   @js.native
@@ -879,6 +651,10 @@ object antdStrings {
   inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
+  sealed trait group extends StObject
+  inline def group: group = "group".asInstanceOf[group]
+  
+  @js.native
   sealed trait gutter
     extends StObject
        with ColumnType
@@ -893,16 +669,14 @@ object antdStrings {
   inline def handleFilter: handleFilter = "handleFilter".asInstanceOf[handleFilter]
   
   @js.native
-  sealed trait header extends StObject
+  sealed trait header
+    extends StObject
+       with CollapsibleType
   inline def header: header = "header".asInstanceOf[header]
   
   @js.native
   sealed trait hidden extends StObject
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
-  
-  @js.native
-  sealed trait hideDisabledOptions extends StObject
-  inline def hideDisabledOptions: hideDisabledOptions = "hideDisabledOptions".asInstanceOf[hideDisabledOptions]
   
   @js.native
   sealed trait hideHeader extends StObject
@@ -917,22 +691,16 @@ object antdStrings {
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait hourStep extends StObject
-  inline def hourStep: hourStep = "hourStep".asInstanceOf[hourStep]
-  
-  @js.native
-  sealed trait hover
-    extends StObject
-       with CascaderExpandTrigger
+  sealed trait hover extends StObject
   inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
-  sealed trait id extends StObject
-  inline def id: id = "id".asInstanceOf[id]
+  sealed trait icon_ extends StObject
+  inline def icon_ : icon_ = "icon".asInstanceOf[icon_]
   
   @js.native
-  sealed trait image extends StObject
-  inline def image: image = "image".asInstanceOf[image]
+  sealed trait image_ extends StObject
+  inline def image_ : image_ = "image".asInstanceOf[image_]
   
   @js.native
   sealed trait info
@@ -962,16 +730,10 @@ object antdStrings {
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait inputReadOnly extends StObject
-  inline def inputReadOnly: inputReadOnly = "inputReadOnly".asInstanceOf[inputReadOnly]
-  
-  @js.native
-  sealed trait `jump-next` extends StObject
-  inline def `jump-next`: `jump-next` = "jump-next".asInstanceOf[`jump-next`]
-  
-  @js.native
-  sealed trait `jump-prev` extends StObject
-  inline def `jump-prev`: `jump-prev` = "jump-prev".asInstanceOf[`jump-prev`]
+  sealed trait invert
+    extends StObject
+       with RowSelectMethod
+  inline def invert: invert = "invert".asInstanceOf[invert]
   
   @js.native
   sealed trait large
@@ -980,18 +742,22 @@ object antdStrings {
        with SpinSize
        with _AvatarSize
        with _SizeType
+       with sizeType
   inline def large: large = "large".asInstanceOf[large]
+  
+  @js.native
+  sealed trait leave extends StObject
+  inline def leave: leave = "leave".asInstanceOf[leave]
   
   @js.native
   sealed trait left
     extends StObject
        with DotPosition
+       with ExpandIconPositionLegacy
        with FormLabelAlign
        with TabsPosition
        with TooltipPlacement
        with TransferDirection
-       with _ExpandIconPosition
-       with placementType
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
@@ -1035,6 +801,7 @@ object antdStrings {
   sealed trait link
     extends StObject
        with ButtonType
+       with DropdownButtonType
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
@@ -1052,9 +819,7 @@ object antdStrings {
   inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait locale
-    extends StObject
-       with LocaleComponent
+  sealed trait locale extends StObject
   inline def locale: locale = "locale".asInstanceOf[locale]
   
   @js.native
@@ -1101,16 +866,8 @@ object antdStrings {
   inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait minuteStep extends StObject
-  inline def minuteStep: minuteStep = "minuteStep".asInstanceOf[minuteStep]
-  
-  @js.native
   sealed trait mixed extends StObject
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
-  
-  @js.native
-  sealed trait mode extends StObject
-  inline def mode: mode = "mode".asInstanceOf[mode]
   
   @js.native
   sealed trait month
@@ -1119,20 +876,14 @@ object antdStrings {
   inline def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait monthCellRender extends StObject
-  inline def monthCellRender: monthCellRender = "monthCellRender".asInstanceOf[monthCellRender]
-  
-  @js.native
   sealed trait move extends StObject
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait multiple extends StObject
+  sealed trait multiple
+    extends StObject
+       with RowSelectMethod
   inline def multiple: multiple = "multiple".asInstanceOf[multiple]
-  
-  @js.native
-  sealed trait name extends StObject
-  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait navigation extends StObject
@@ -1159,6 +910,7 @@ object antdStrings {
   @js.native
   sealed trait none
     extends StObject
+       with RowSelectMethod
        with _FlexType
   inline def none: none = "none".asInstanceOf[none]
   
@@ -1189,64 +941,6 @@ object antdStrings {
   inline def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait onBlur extends StObject
-  inline def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
-  
-  @js.native
-  sealed trait onChange
-    extends StObject
-       with OmitAttrs
-  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
-  
-  @js.native
-  sealed trait onClick extends StObject
-  inline def onClick: onClick = "onClick".asInstanceOf[onClick]
-  
-  @js.native
-  sealed trait onContextMenu extends StObject
-  inline def onContextMenu: onContextMenu = "onContextMenu".asInstanceOf[onContextMenu]
-  
-  @js.native
-  sealed trait onFocus extends StObject
-  inline def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
-  
-  @js.native
-  sealed trait onMouseDown extends StObject
-  inline def onMouseDown: onMouseDown = "onMouseDown".asInstanceOf[onMouseDown]
-  
-  @js.native
-  sealed trait onMouseEnter extends StObject
-  inline def onMouseEnter: onMouseEnter = "onMouseEnter".asInstanceOf[onMouseEnter]
-  
-  @js.native
-  sealed trait onMouseLeave extends StObject
-  inline def onMouseLeave: onMouseLeave = "onMouseLeave".asInstanceOf[onMouseLeave]
-  
-  @js.native
-  sealed trait onMouseUp extends StObject
-  inline def onMouseUp: onMouseUp = "onMouseUp".asInstanceOf[onMouseUp]
-  
-  @js.native
-  sealed trait onOk extends StObject
-  inline def onOk: onOk = "onOk".asInstanceOf[onOk]
-  
-  @js.native
-  sealed trait onOpenChange extends StObject
-  inline def onOpenChange: onOpenChange = "onOpenChange".asInstanceOf[onOpenChange]
-  
-  @js.native
-  sealed trait onPanelChange extends StObject
-  inline def onPanelChange: onPanelChange = "onPanelChange".asInstanceOf[onPanelChange]
-  
-  @js.native
-  sealed trait onSelect extends StObject
-  inline def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
-  
-  @js.native
-  sealed trait open extends StObject
-  inline def open: open = "open".asInstanceOf[open]
-  
-  @js.native
   sealed trait optional extends StObject
   inline def optional: optional = "optional".asInstanceOf[optional]
   
@@ -1275,10 +969,6 @@ object antdStrings {
   inline def paginate: paginate = "paginate".asInstanceOf[paginate]
   
   @js.native
-  sealed trait panelRender extends StObject
-  inline def panelRender: panelRender = "panelRender".asInstanceOf[panelRender]
-  
-  @js.native
   sealed trait parallel extends StObject
   inline def parallel: parallel = "parallel".asInstanceOf[parallel]
   
@@ -1299,10 +989,6 @@ object antdStrings {
   inline def picker: picker = "picker".asInstanceOf[picker]
   
   @js.native
-  sealed trait pickerRef extends StObject
-  inline def pickerRef: pickerRef = "pickerRef".asInstanceOf[pickerRef]
-  
-  @js.native
   sealed trait picture
     extends StObject
        with UploadListType
@@ -1319,10 +1005,6 @@ object antdStrings {
   inline def pink: pink = "pink".asInstanceOf[pink]
   
   @js.native
-  sealed trait placeholder extends StObject
-  inline def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
-  
-  @js.native
   sealed trait polite extends StObject
   inline def polite: polite = "polite".asInstanceOf[polite]
   
@@ -1331,20 +1013,8 @@ object antdStrings {
   inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait popupStyle extends StObject
-  inline def popupStyle: popupStyle = "popupStyle".asInstanceOf[popupStyle]
-  
-  @js.native
   sealed trait post_ extends StObject
   inline def post_ : post_ = "post".asInstanceOf[post_]
-  
-  @js.native
-  sealed trait prefixCls extends StObject
-  inline def prefixCls: prefixCls = "prefixCls".asInstanceOf[prefixCls]
-  
-  @js.native
-  sealed trait prev extends StObject
-  inline def prev: prev = "prev".asInstanceOf[prev]
   
   @js.native
   sealed trait prevIcon extends StObject
@@ -1414,10 +1084,6 @@ object antdStrings {
   inline def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
-  sealed trait renderExtraFooter extends StObject
-  inline def renderExtraFooter: renderExtraFooter = "renderExtraFooter".asInstanceOf[renderExtraFooter]
-  
-  @js.native
   sealed trait reset
     extends StObject
        with ButtonHTMLType
@@ -1433,12 +1099,11 @@ object antdStrings {
   sealed trait right
     extends StObject
        with DotPosition
+       with ExpandIconPositionLegacy
        with FormLabelAlign
        with TabsPosition
        with TooltipPlacement
        with TransferDirection
-       with _ExpandIconPosition
-       with placementType
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
@@ -1452,10 +1117,6 @@ object antdStrings {
     extends StObject
        with TooltipPlacement
   inline def rightTop: rightTop = "rightTop".asInstanceOf[rightTop]
-  
-  @js.native
-  sealed trait role extends StObject
-  inline def role: role = "role".asInstanceOf[role]
   
   @js.native
   sealed trait round
@@ -1486,10 +1147,6 @@ object antdStrings {
   inline def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait secondStep extends StObject
-  inline def secondStep: secondStep = "secondStep".asInstanceOf[secondStep]
-  
-  @js.native
   sealed trait secondary
     extends StObject
        with BaseType
@@ -1510,34 +1167,18 @@ object antdStrings {
   inline def send: send = "send".asInstanceOf[send]
   
   @js.native
-  sealed trait showHour extends StObject
-  inline def showHour: showHour = "showHour".asInstanceOf[showHour]
-  
-  @js.native
-  sealed trait showMinute extends StObject
-  inline def showMinute: showMinute = "showMinute".asInstanceOf[showMinute]
-  
-  @js.native
-  sealed trait showNow extends StObject
-  inline def showNow: showNow = "showNow".asInstanceOf[showNow]
-  
-  @js.native
-  sealed trait showSecond extends StObject
-  inline def showSecond: showSecond = "showSecond".asInstanceOf[showSecond]
-  
-  @js.native
-  sealed trait showTime extends StObject
-  inline def showTime: showTime = "showTime".asInstanceOf[showTime]
-  
-  @js.native
-  sealed trait showToday extends StObject
-  inline def showToday: showToday = "showToday".asInstanceOf[showToday]
-  
-  @js.native
-  sealed trait size
+  sealed trait single
     extends StObject
-       with OmitAttrs
-  inline def size: size = "size".asInstanceOf[size]
+       with RowSelectMethod
+  inline def single: single = "single".asInstanceOf[single]
+  
+  @js.native
+  sealed trait `slide-down` extends StObject
+  inline def `slide-down`: `slide-down` = "slide-down".asInstanceOf[`slide-down`]
+  
+  @js.native
+  sealed trait `slide-up` extends StObject
+  inline def `slide-up`: `slide-up` = "slide-up".asInstanceOf[`slide-up`]
   
   @js.native
   sealed trait sm
@@ -1579,6 +1220,10 @@ object antdStrings {
   inline def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
   
   @js.native
+  sealed trait `space-evenly` extends StObject
+  inline def `space-evenly`: `space-evenly` = "space-evenly".asInstanceOf[`space-evenly`]
+  
+  @js.native
   sealed trait spelling extends StObject
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
   
@@ -1590,6 +1235,7 @@ object antdStrings {
   sealed trait start
     extends StObject
        with RibbonPlacement
+       with _ExpandIconPosition
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
@@ -1599,10 +1245,6 @@ object antdStrings {
   @js.native
   sealed trait stretch extends StObject
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
-  
-  @js.native
-  sealed trait style extends StObject
-  inline def style: style = "style".asInstanceOf[style]
   
   @js.native
   sealed trait submit
@@ -1622,20 +1264,12 @@ object antdStrings {
   inline def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait suffixIcon extends StObject
-  inline def suffixIcon: suffixIcon = "suffixIcon".asInstanceOf[suffixIcon]
-  
-  @js.native
   sealed trait superNextIcon extends StObject
   inline def superNextIcon: superNextIcon = "superNextIcon".asInstanceOf[superNextIcon]
   
   @js.native
   sealed trait superPrevIcon extends StObject
   inline def superPrevIcon: superPrevIcon = "superPrevIcon".asInstanceOf[superPrevIcon]
-  
-  @js.native
-  sealed trait tabIndex extends StObject
-  inline def tabIndex: tabIndex = "tabIndex".asInstanceOf[tabIndex]
   
   @js.native
   sealed trait tags extends StObject
@@ -1654,9 +1288,18 @@ object antdStrings {
   inline def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
+  sealed trait textSlashhtml extends StObject
+  inline def textSlashhtml: textSlashhtml = "text/html".asInstanceOf[textSlashhtml]
+  
+  @js.native
+  sealed trait textSlashplain extends StObject
+  inline def textSlashplain: textSlashplain = "text/plain".asInstanceOf[textSlashplain]
+  
+  @js.native
   sealed trait text_
     extends StObject
        with ButtonType
+       with DropdownButtonType
        with UploadListType
   inline def text_ : text_ = "text".asInstanceOf[text_]
   
@@ -1669,10 +1312,11 @@ object antdStrings {
     extends StObject
        with DotPosition
        with MentionPlacement
+       with NotificationPlacement
        with PaginationPosition
+       with Placement
        with TabsPosition
        with TooltipPlacement
-       with placementType
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native
@@ -1685,8 +1329,10 @@ object antdStrings {
   @js.native
   sealed trait topLeft
     extends StObject
+       with DataPickerPlacement
        with NotificationPlacement
        with Placement
+       with SelectCommonPlacement
        with TablePaginationPosition
        with TooltipPlacement
   inline def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
@@ -1694,23 +1340,21 @@ object antdStrings {
   @js.native
   sealed trait topRight
     extends StObject
+       with DataPickerPlacement
        with NotificationPlacement
        with Placement
+       with SelectCommonPlacement
        with TablePaginationPosition
        with TooltipPlacement
   inline def topRight: topRight = "topRight".asInstanceOf[topRight]
-  
-  @js.native
-  sealed trait transitionName extends StObject
-  inline def transitionName: transitionName = "transitionName".asInstanceOf[transitionName]
   
   @js.native
   sealed trait tree extends StObject
   inline def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait up extends StObject
-  inline def up: up = "up".asInstanceOf[up]
+  sealed trait update extends StObject
+  inline def update: update = "update".asInstanceOf[update]
   
   @js.native
   sealed trait uploading
@@ -1723,18 +1367,18 @@ object antdStrings {
   inline def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait use12Hours extends StObject
-  inline def use12Hours: use12Hours = "use12Hours".asInstanceOf[use12Hours]
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait validating
     extends StObject
        with ValidateStatus
   inline def validating: validating = "validating".asInstanceOf[validating]
-  
-  @js.native
-  sealed trait value extends StObject
-  inline def value: value = "value".asInstanceOf[value]
   
   @js.native
   sealed trait vertical
@@ -1764,10 +1408,15 @@ object antdStrings {
   sealed trait wait extends StObject
   
   @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
+  
+  @js.native
   sealed trait warning
     extends StObject
        with BaseType
        with IconType
+       with InputStatus
        with NoticeType
        with ResultStatusType
        with ValidateStatus

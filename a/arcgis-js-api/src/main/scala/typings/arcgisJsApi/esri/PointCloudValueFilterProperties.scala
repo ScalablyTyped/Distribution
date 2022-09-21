@@ -13,6 +13,8 @@ trait PointCloudValueFilterProperties
   /**
     * Whether points should be included or excluded from the filter.
     *
+    * @default "exclude"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#mode)
     */
   var mode: js.UndefOr[include | exclude] = js.undefined
@@ -41,6 +43,6 @@ object PointCloudValueFilterProperties {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

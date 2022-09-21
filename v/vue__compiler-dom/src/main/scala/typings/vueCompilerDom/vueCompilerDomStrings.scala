@@ -13,4 +13,8 @@ object vueCompilerDomStrings {
   @js.native
   sealed trait directive extends StObject
   inline def directive: directive = "directive".asInstanceOf[directive]
+  
+  @js.native
+  sealed trait filter extends StObject
+  inline def filter: filter = "filter".asInstanceOf[filter]
 }

@@ -23,7 +23,7 @@ object IStandardKernel {
     
     inline def setConnectionProviderIds(value: js.Array[String]): Self = StObject.set(x, "connectionProviderIds", value.asInstanceOf[js.Any])
     
-    inline def setConnectionProviderIdsVarargs(value: String*): Self = StObject.set(x, "connectionProviderIds", js.Array(value :_*))
+    inline def setConnectionProviderIdsVarargs(value: String*): Self = StObject.set(x, "connectionProviderIds", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

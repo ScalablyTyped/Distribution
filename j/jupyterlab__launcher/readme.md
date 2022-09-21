@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__launcher
 
-Typings are for version 2.2.6
+Typings are for version 3.4.7
 
 ## Library description:
 JupyterLab - Launcher Panel
@@ -10,10 +10,10 @@ JupyterLab - Launcher Panel
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/launcher |
 | Keywords           | - |
-| # releases         | 126 |
-| # dependents       | 118 |
-| # downloads        | 1526180 |
-| # stars            | 0 |
+| # releases         | 146 |
+| # dependents       | 0.0 |
+| # downloads        | 202285.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

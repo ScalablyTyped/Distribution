@@ -10,10 +10,10 @@ a human-readable cron
 | ------------------ | :-------------: |
 | Full name          | ontime |
 | Keywords           | cron, crontab, cronjob, schedule, scheduler, job scheduler, task scheduler, timer, interval |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 14831 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2132.6666666666665 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](http://code.woong.org/ontime)

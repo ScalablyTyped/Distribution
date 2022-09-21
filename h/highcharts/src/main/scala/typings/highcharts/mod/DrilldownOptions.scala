@@ -54,11 +54,10 @@ trait DrilldownOptions extends StObject {
   var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
-    * (Highcharts, Highmaps) Options for the drill up button that appears when
-    * drilling down on a series. The text for the button is defined in
-    * lang.drillUpText.
+    * (Highcharts) Options for the breadcrumbs, the navigation at the top
+    * leading the way up through the drilldown levels.
     */
-  var drillUpButton: js.UndefOr[DrilldownDrillUpButtonOptions] = js.undefined
+  var breadcrumbs: js.UndefOr[DrilldownBreadcrumbsOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) An array of series configurations for the drill
@@ -93,14 +92,14 @@ object DrilldownOptions {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setDrillUpButton(value: DrilldownDrillUpButtonOptions): Self = StObject.set(x, "drillUpButton", value.asInstanceOf[js.Any])
+    inline def setBreadcrumbs(value: DrilldownBreadcrumbsOptions): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
     
-    inline def setDrillUpButtonUndefined: Self = StObject.set(x, "drillUpButton", js.undefined)
+    inline def setBreadcrumbsUndefined: Self = StObject.set(x, "breadcrumbs", js.undefined)
     
     inline def setSeries(value: js.Array[SeriesOptionsType]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: SeriesOptionsType*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: SeriesOptionsType*): Self = StObject.set(x, "series", js.Array(value*))
   }
 }

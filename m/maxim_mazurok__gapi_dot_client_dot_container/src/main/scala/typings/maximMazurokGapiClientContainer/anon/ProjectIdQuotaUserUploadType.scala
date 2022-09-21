@@ -25,8 +25,8 @@ trait ProjectIdQuotaUserUploadType extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name (project and location) of the server config to get, specified in the format `projects/∗/locations/ *`. */
-  var name: js.UndefOr[String] = js.undefined
+  /** The name (project and location) of the server config to get, specified in the format `projects/ *‍/locations/ *`. */
+  var name: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -35,10 +35,10 @@ trait ProjectIdQuotaUserUploadType extends StObject {
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the
-    * name field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been
+    * deprecated and replaced by the name field.
     */
-  var projectId: String
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
@@ -53,12 +53,12 @@ trait ProjectIdQuotaUserUploadType extends StObject {
     * Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) to return operations for. This field has been deprecated and
     * replaced by the name field.
     */
-  var zone: String
+  var zone: js.UndefOr[String] = js.undefined
 }
 object ProjectIdQuotaUserUploadType {
   
-  inline def apply(projectId: String, zone: String): ProjectIdQuotaUserUploadType = {
-    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
+  inline def apply(name: String): ProjectIdQuotaUserUploadType = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectIdQuotaUserUploadType]
   }
   
@@ -90,8 +90,6 @@ object ProjectIdQuotaUserUploadType {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -101,6 +99,8 @@ object ProjectIdQuotaUserUploadType {
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
@@ -115,5 +115,7 @@ object ProjectIdQuotaUserUploadType {
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
     
     inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

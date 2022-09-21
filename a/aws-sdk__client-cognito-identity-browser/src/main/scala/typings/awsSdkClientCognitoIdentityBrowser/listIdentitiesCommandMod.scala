@@ -16,7 +16,7 @@ object listIdentitiesCommandMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/commands/ListIdentitiesCommand", "ListIdentitiesCommand")
   @js.native
-  class ListIdentitiesCommand protected ()
+  open class ListIdentitiesCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object listIdentitiesCommandMod {
     override val middlewareStack: MiddlewareStack[ListIdentitiesInput, ListIdentitiesOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[ListIdentitiesInput, ListIdentitiesOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CognitoIdentityResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ListIdentitiesInput, ListIdentitiesOutput] = js.native
   }
 }

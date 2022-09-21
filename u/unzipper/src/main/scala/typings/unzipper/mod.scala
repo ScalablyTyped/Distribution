@@ -1,16 +1,16 @@
 package typings.unzipper
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.RequestOptions
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.PassThrough
-import typings.std.RegExp
+import typings.node.streamMod.Transform
 import typings.unzipper.anon.CompressedSize
 import typings.unzipper.anon.Disknum
 import typings.unzipper.anon.Path
+import typings.unzipper.anon.Promise
 import typings.unzipper.anon.Size
-import typings.unzipper.anon.TransformpromisePromisevo
 import typings.unzipper.unzipperStrings.Directory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -37,7 +37,7 @@ object mod {
     
     inline def file(filename: String): js.Promise[CentralDirectory] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CentralDirectory]]
     
-    inline def s3(client: js.Any, params: js.Any): js.Promise[CentralDirectory] = (^.asInstanceOf[js.Dynamic].applyDynamic("s3")(client.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CentralDirectory]]
+    inline def s3(client: Any, params: Any): js.Promise[CentralDirectory] = (^.asInstanceOf[js.Dynamic].applyDynamic("s3")(client.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CentralDirectory]]
     
     inline def url(request: ClientRequest, opt: String): js.Promise[CentralDirectory] = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(request.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CentralDirectory]]
     inline def url(request: ClientRequest, opt: RequestOptions): js.Promise[CentralDirectory] = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(request.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CentralDirectory]]
@@ -47,9 +47,9 @@ object mod {
   inline def Parse(opts: ParseOptions): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
   
   inline def ParseOne(): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")().asInstanceOf[Duplex]
+  inline def ParseOne(`match`: js.RegExp): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any]).asInstanceOf[Duplex]
+  inline def ParseOne(`match`: js.RegExp, opts: ParseOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Duplex]
   inline def ParseOne(`match`: Unit, opts: ParseOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Duplex]
-  inline def ParseOne(`match`: RegExp): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any]).asInstanceOf[Duplex]
-  inline def ParseOne(`match`: RegExp, opts: ParseOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Duplex]
   
   inline def unzip(source: Size, offset: Double, _password: String): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(source.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], _password.asInstanceOf[js.Any])).asInstanceOf[Entry]
   
@@ -105,7 +105,7 @@ object mod {
       
       inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setNumberOfRecords(value: Double): Self = StObject.set(x, "numberOfRecords", value.asInstanceOf[js.Any])
       
@@ -122,7 +122,7 @@ object mod {
   @js.native
   trait Entry extends PassThrough {
     
-    def autodrain(): TransformpromisePromisevo = js.native
+    def autodrain(): Transform & Promise = js.native
     
     def buffer(): js.Promise[Buffer] = js.native
     
@@ -155,7 +155,7 @@ object mod {
     
     var externalFileAttributes: Double = js.native
     
-    var extra: js.Any = js.native
+    var extra: Any = js.native
     
     var extraFieldLength: Double = js.native
     

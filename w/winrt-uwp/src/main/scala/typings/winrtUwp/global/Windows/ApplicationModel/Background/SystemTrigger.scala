@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a system event that triggers a background task to run. */
 @JSGlobal("Windows.ApplicationModel.Background.SystemTrigger")
 @js.native
-class SystemTrigger protected ()
+open class SystemTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.SystemTrigger {
   /**

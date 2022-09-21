@@ -1,15 +1,13 @@
 package typings.jupyterlabServices.messagesMod
 
 import typings.luminoCoreutils.jsonMod.JSONObject
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IOptions[T /* <: Message */] extends StObject {
   
-  var buffers: js.UndefOr[js.Array[ArrayBuffer | ArrayBufferView]] = js.undefined
+  var buffers: js.UndefOr[js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView]] = js.undefined
   
   var channel: /* import warning: importer.ImportType#apply Failed type conversion: T['channel'] */ js.Any
   
@@ -43,11 +41,11 @@ object IOptions {
   
   extension [Self <: IOptions[?], T /* <: Message */](x: Self & IOptions[T]) {
     
-    inline def setBuffers(value: js.Array[ArrayBuffer | ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
+    inline def setBuffers(value: js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     
     inline def setBuffersUndefined: Self = StObject.set(x, "buffers", js.undefined)
     
-    inline def setBuffersVarargs(value: (ArrayBuffer | ArrayBufferView)*): Self = StObject.set(x, "buffers", js.Array(value :_*))
+    inline def setBuffersVarargs(value: (js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView)*): Self = StObject.set(x, "buffers", js.Array(value*))
     
     inline def setChannel(value: /* import warning: importer.ImportType#apply Failed type conversion: T['channel'] */ js.Any): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

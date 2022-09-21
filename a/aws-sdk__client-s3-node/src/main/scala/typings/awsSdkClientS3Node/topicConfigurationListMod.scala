@@ -8,5 +8,5 @@ object topicConfigurationListMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_TopicConfigurationList", "_TopicConfigurationList")
   @js.native
-  val TopicConfigurationList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val TopicConfigurationList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

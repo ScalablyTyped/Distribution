@@ -39,7 +39,7 @@ object mod extends Shortcut {
       * @param obj Object to encode.
       * @returns {} Encoded string.
       */
-    def encode(obj: js.Any): String
+    def encode(obj: Any): String
     
     /**
       * Rison-encodes a javascript array without surrounding parens (A-Rison).
@@ -60,18 +60,18 @@ object mod extends Shortcut {
       * @param obj Object to encode.
       * @returns {} Encoded string.
       */
-    def encode_uri(obj: js.Any): String
+    def encode_uri(obj: Any): String
   }
   object IRison {
     
     inline def apply(
-      decode: String => js.Any,
-      decode_array: String => js.Array[js.Any],
-      decode_object: String => js.Any,
-      encode: js.Any => String,
-      encode_array: js.Array[js.Any] => String,
-      encode_object: js.Any => String,
-      encode_uri: js.Any => String
+      decode: String => Any,
+      decode_array: String => js.Array[Any],
+      decode_object: String => Any,
+      encode: Any => String,
+      encode_array: js.Array[Any] => String,
+      encode_object: Any => String,
+      encode_uri: Any => String
     ): IRison = {
       val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), decode_array = js.Any.fromFunction1(decode_array), decode_object = js.Any.fromFunction1(decode_object), encode = js.Any.fromFunction1(encode), encode_array = js.Any.fromFunction1(encode_array), encode_object = js.Any.fromFunction1(encode_object), encode_uri = js.Any.fromFunction1(encode_uri))
       __obj.asInstanceOf[IRison]
@@ -79,19 +79,19 @@ object mod extends Shortcut {
     
     extension [Self <: IRison](x: Self) {
       
-      inline def setDecode(value: String => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: String => Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      inline def setDecode_array(value: String => js.Array[js.Any]): Self = StObject.set(x, "decode_array", js.Any.fromFunction1(value))
+      inline def setDecode_array(value: String => js.Array[Any]): Self = StObject.set(x, "decode_array", js.Any.fromFunction1(value))
       
-      inline def setDecode_object(value: String => js.Any): Self = StObject.set(x, "decode_object", js.Any.fromFunction1(value))
+      inline def setDecode_object(value: String => Any): Self = StObject.set(x, "decode_object", js.Any.fromFunction1(value))
       
-      inline def setEncode(value: js.Any => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: Any => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      inline def setEncode_array(value: js.Array[js.Any] => String): Self = StObject.set(x, "encode_array", js.Any.fromFunction1(value))
+      inline def setEncode_array(value: js.Array[Any] => String): Self = StObject.set(x, "encode_array", js.Any.fromFunction1(value))
       
-      inline def setEncode_object(value: js.Any => String): Self = StObject.set(x, "encode_object", js.Any.fromFunction1(value))
+      inline def setEncode_object(value: Any => String): Self = StObject.set(x, "encode_object", js.Any.fromFunction1(value))
       
-      inline def setEncode_uri(value: js.Any => String): Self = StObject.set(x, "encode_uri", js.Any.fromFunction1(value))
+      inline def setEncode_uri(value: Any => String): Self = StObject.set(x, "encode_uri", js.Any.fromFunction1(value))
     }
   }
   

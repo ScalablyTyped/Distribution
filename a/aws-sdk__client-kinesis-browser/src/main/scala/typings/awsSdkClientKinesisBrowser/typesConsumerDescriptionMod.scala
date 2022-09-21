@@ -3,7 +3,6 @@ package typings.awsSdkClientKinesisBrowser
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ACTIVE
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.CREATING
 import typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.DELETING
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object typesConsumerDescriptionMod {
     /**
       * <p/>
       */
-    var ConsumerCreationTimestamp: Date | String | Double
+    var ConsumerCreationTimestamp: js.Date | String | Double
     
     /**
       * <p>The name of the consumer is something you choose when you register the consumer.</p>
@@ -41,7 +40,7 @@ object typesConsumerDescriptionMod {
     
     inline def apply(
       ConsumerARN: String,
-      ConsumerCreationTimestamp: Date | String | Double,
+      ConsumerCreationTimestamp: js.Date | String | Double,
       ConsumerName: String,
       ConsumerStatus: CREATING | DELETING | ACTIVE | String,
       StreamARN: String
@@ -54,7 +53,7 @@ object typesConsumerDescriptionMod {
       
       inline def setConsumerARN(value: String): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
       
-      inline def setConsumerCreationTimestamp(value: Date | String | Double): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setConsumerCreationTimestamp(value: js.Date | String | Double): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
       
       inline def setConsumerName(value: String): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
       
@@ -72,13 +71,13 @@ object typesConsumerDescriptionMod {
       * <p/>
       */
     @JSName("ConsumerCreationTimestamp")
-    var ConsumerCreationTimestamp_UnmarshalledConsumerDescription: Date
+    var ConsumerCreationTimestamp_UnmarshalledConsumerDescription: js.Date
   }
   object UnmarshalledConsumerDescription {
     
     inline def apply(
       ConsumerARN: String,
-      ConsumerCreationTimestamp: Date,
+      ConsumerCreationTimestamp: js.Date,
       ConsumerName: String,
       ConsumerStatus: CREATING | DELETING | ACTIVE | String,
       StreamARN: String
@@ -89,7 +88,7 @@ object typesConsumerDescriptionMod {
     
     extension [Self <: UnmarshalledConsumerDescription](x: Self) {
       
-      inline def setConsumerCreationTimestamp(value: Date): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setConsumerCreationTimestamp(value: js.Date): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
     }
   }
 }

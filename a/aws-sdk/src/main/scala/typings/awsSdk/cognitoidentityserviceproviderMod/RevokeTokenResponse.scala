@@ -1,0 +1,7 @@
+package typings.awsSdk.cognitoidentityserviceproviderMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait RevokeTokenResponse extends StObject

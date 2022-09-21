@@ -10,11 +10,11 @@ trait MessageResult
   
   var trace: Trace
   
-  var values: js.Any
+  var values: scala.Any
 }
 object MessageResult {
   
-  inline def apply(trace: Trace, `type`: String, values: js.Any): MessageResult = {
+  inline def apply(trace: Trace, `type`: String, values: scala.Any): MessageResult = {
     val __obj = js.Dynamic.literal(trace = trace.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageResult]
@@ -24,6 +24,6 @@ object MessageResult {
     
     inline def setTrace(value: Trace): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: scala.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

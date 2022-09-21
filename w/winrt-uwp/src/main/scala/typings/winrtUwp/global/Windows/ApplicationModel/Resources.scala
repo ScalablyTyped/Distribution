@@ -93,7 +93,7 @@ object Resources {
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceContext")
     @js.native
     /** Creates a cloned ResourceContext object. */
-    class ResourceContext ()
+    open class ResourceContext ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext
     object ResourceContext {
@@ -279,7 +279,7 @@ object Resources {
         * @return The iterator. The current position of the iterator is index 0, or the end of the map if the map is empty.
         */
       /* CompleteClass */
-      override def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+      override def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
       
       /**
         * Determines whether the map view contains the specified key.
@@ -377,7 +377,7 @@ object Resources {
         * @return The iterator. The current position of the iterator is index 0, or the end of the map view if the map view is empty.
         */
       /* CompleteClass */
-      override def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+      override def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
       
       /**
         * Determines whether the map view contains the specified key.
@@ -460,7 +460,7 @@ object Resources {
   @JSGlobal("Windows.ApplicationModel.Resources.ResourceLoader")
   @js.native
   /** Constructs a new ResourceLoader object for the "Resources" subtree of the currently running app's main ResourceMap . */
-  class ResourceLoader ()
+  open class ResourceLoader ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader {
     /**

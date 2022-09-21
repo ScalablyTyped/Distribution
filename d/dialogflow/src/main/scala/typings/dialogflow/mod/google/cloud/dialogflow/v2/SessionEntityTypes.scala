@@ -8,7 +8,6 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2.SessionEntityTypes.Upda
 import typings.dialogflow.mod.google.protobuf.Empty
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.rpc.Service
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a SessionEntityTypes */
 @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.SessionEntityTypes")
 @js.native
-class SessionEntityTypes protected () extends Service {
+open class SessionEntityTypes protected () extends Service {
   /**
     * Constructs a new SessionEntityTypes service.
     * @param rpcImpl RPC implementation
@@ -117,21 +116,21 @@ object SessionEntityTypes {
     * @param error Error, if any
     * @param [response] SessionEntityType
     */
-  type CreateSessionEntityTypeCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[SessionEntityType], Unit]
+  type CreateSessionEntityTypeCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[SessionEntityType], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.SessionEntityTypes#deleteSessionEntityType}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteSessionEntityTypeCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteSessionEntityTypeCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.SessionEntityTypes#getSessionEntityType}.
     * @param error Error, if any
     * @param [response] SessionEntityType
     */
-  type GetSessionEntityTypeCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[SessionEntityType], Unit]
+  type GetSessionEntityTypeCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[SessionEntityType], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2.SessionEntityTypes#listSessionEntityTypes}.
@@ -139,7 +138,7 @@ object SessionEntityTypes {
     * @param [response] ListSessionEntityTypesResponse
     */
   type ListSessionEntityTypesCallback = js.Function2[
-    /* error */ Error | Null, 
+    /* error */ js.Error | Null, 
     /* response */ js.UndefOr[ListSessionEntityTypesResponse], 
     Unit
   ]
@@ -149,5 +148,5 @@ object SessionEntityTypes {
     * @param error Error, if any
     * @param [response] SessionEntityType
     */
-  type UpdateSessionEntityTypeCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[SessionEntityType], Unit]
+  type UpdateSessionEntityTypeCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[SessionEntityType], Unit]
 }

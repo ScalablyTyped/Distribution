@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.RaisedCosine")
 @js.native
-class RaisedCosine ()
+open class RaisedCosine ()
   extends typings.ranjs.mod.dist.RaisedCosine {
   def this(mu: Double) = this()
   def this(mu: Double, s: Double) = this()

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RuleSummary extends StObject {
   
+  /**
+    * The action that WAF should take on a web request when it matches a rule's statement. Settings at the web ACL level can override the rule action setting. 
+    */
   var Action: js.UndefOr[RuleAction] = js.undefined
   
   /**

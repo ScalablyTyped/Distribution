@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tsconfig-paths" : "3.9.0"
+      "tsconfig-paths" : "4.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tsconfig-paths" : "3.9.0"
+      "tsconfig-paths" : "4.1.0"
     }
   ],
   "compile-devDependencies" : [

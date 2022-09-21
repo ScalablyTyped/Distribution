@@ -8,5 +8,5 @@ object inputMod {
   
   @JSImport("@nulogy/components/src/Input", "Input")
   @js.native
-  val Input: js.Any = js.native
+  val Input: Any = js.native
 }

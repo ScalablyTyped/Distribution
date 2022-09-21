@@ -1,6 +1,5 @@
 package typings.workboxPrecaching
 
-import typings.std.RegExp
 import typings.std.URL
 import typings.workboxPrecaching.anon.Url
 import typings.workboxPrecaching.urlmanipulationMod.URLManipulation
@@ -16,7 +15,7 @@ object fetchListenerOptionsMod {
     
     var directoryIndex: js.UndefOr[String] = js.undefined
     
-    var ignoreURLParametersMatching: js.UndefOr[js.Array[RegExp]] = js.undefined
+    var ignoreURLParametersMatching: js.UndefOr[js.Array[js.RegExp]] = js.undefined
     
     var urlManipulation: js.UndefOr[URLManipulation] = js.undefined
   }
@@ -37,11 +36,11 @@ object fetchListenerOptionsMod {
       
       inline def setDirectoryIndexUndefined: Self = StObject.set(x, "directoryIndex", js.undefined)
       
-      inline def setIgnoreURLParametersMatching(value: js.Array[RegExp]): Self = StObject.set(x, "ignoreURLParametersMatching", value.asInstanceOf[js.Any])
+      inline def setIgnoreURLParametersMatching(value: js.Array[js.RegExp]): Self = StObject.set(x, "ignoreURLParametersMatching", value.asInstanceOf[js.Any])
       
       inline def setIgnoreURLParametersMatchingUndefined: Self = StObject.set(x, "ignoreURLParametersMatching", js.undefined)
       
-      inline def setIgnoreURLParametersMatchingVarargs(value: RegExp*): Self = StObject.set(x, "ignoreURLParametersMatching", js.Array(value :_*))
+      inline def setIgnoreURLParametersMatchingVarargs(value: js.RegExp*): Self = StObject.set(x, "ignoreURLParametersMatching", js.Array(value*))
       
       inline def setUrlManipulation(value: /* url */ Url => js.Array[URL]): Self = StObject.set(x, "urlManipulation", js.Any.fromFunction1(value))
       

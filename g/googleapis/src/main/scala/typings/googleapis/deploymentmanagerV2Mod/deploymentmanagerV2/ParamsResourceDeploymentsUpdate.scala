@@ -1,9 +1,5 @@
 package typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceDeploymentsUpdate
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Sets the policy to use for creating new resources.
@@ -33,16 +24,7 @@ trait ParamsResourceDeploymentsUpdate
   var deployment: js.UndefOr[String] = js.undefined
   
   /**
-    * If set to true, updates the deployment and creates and updates the
-    * "shell" resources but does not actually alter or instantiate these
-    * resources. This allows you to preview what your deployment will look
-    * like. You can use this intent to preview how an update would affect your
-    * deployment. You must provide a target.config with a configuration if this
-    * is set to true. After previewing a deployment, you can deploy your
-    * resources by making a request with the update() or you can
-    * cancelPreview() to remove the preview altogether. Note that the
-    * deployment will still exist after you cancel the preview and you must
-    * separately delete this deployment if you want to remove it.
+    * If set to true, updates the deployment and creates and updates the "shell" resources but does not actually alter or instantiate these resources. This allows you to preview what your deployment will look like. You can use this intent to preview how an update would affect your deployment. You must provide a `target.config` with a configuration if this is set to true. After previewing a deployment, you can deploy your resources by making a request with the `update()` or you can `cancelPreview()` to remove the preview altogether. Note that the deployment will still exist after you cancel the preview and you must separately delete this deployment if you want to remove it.
     */
   var preview: js.UndefOr[Boolean] = js.undefined
   
@@ -64,10 +46,6 @@ object ParamsResourceDeploymentsUpdate {
   }
   
   extension [Self <: ParamsResourceDeploymentsUpdate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCreatePolicy(value: String): Self = StObject.set(x, "createPolicy", value.asInstanceOf[js.Any])
     

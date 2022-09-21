@@ -10,10 +10,10 @@ A helper utility to apply combineReducers functionality in React useReducer hook
 | ------------------ | :-------------: |
 | Full name          | react-combine-reducers |
 | Keywords           | react, react-hooks, reducer, combine, reducers, hooks |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 45830 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 15211.666666666666 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/ankita1010/react-combine-reducers#readme)

@@ -11,7 +11,6 @@ import typings.meteorTypings.anon.LoginStyle
 import typings.meteorTypings.anon.OnResultReceived
 import typings.meteorTypings.anon.ReplaceLocalhost
 import typings.meteorTypings.meteorMod.Meteor.Connection
-import typings.std.Error
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -58,7 +57,7 @@ object meteorMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/meteor", "Meteor.Error")
     @js.native
-    class ErrorCls protected ()
+    open class ErrorCls protected ()
       extends StObject
          with Error {
       def this(error: String) = this()
@@ -87,20 +86,20 @@ object meteorMod {
     inline def absoluteUrl(path: String, options: ReplaceLocalhost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteUrl")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def absoluteUrl(path: Unit, options: ReplaceLocalhost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteUrl")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def apply(name: String, args: js.Array[EJSONable]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(name: String, args: js.Array[EJSONable], options: Unit, asyncCallback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(name: String, args: js.Array[EJSONable], options: OnResultReceived): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(name: String, args: js.Array[EJSONable], options: OnResultReceived, asyncCallback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(name: String, args: js.Array[EJSONable]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(name: String, args: js.Array[EJSONable], options: Unit, asyncCallback: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(name: String, args: js.Array[EJSONable], options: OnResultReceived): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(name: String, args: js.Array[EJSONable], options: OnResultReceived, asyncCallback: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def bindEnvironment(func: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bindEnvironment")(func.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def bindEnvironment(func: js.Function): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bindEnvironment")(func.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def call(name: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def call(name: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
     inline def clearInterval(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def clearTimeout(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def debug(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_debug")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_debug")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
     inline def defer(func: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -233,7 +232,7 @@ object meteorMod {
     
     /** Status **/
     /** Pub/Sub **/
-    inline def subscribe(name: String, args: js.Any*): SubscriptionHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SubscriptionHandle]
+    inline def subscribe(name: String, args: Any*): SubscriptionHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SubscriptionHandle]
     
     inline def user(): User_ = ^.asInstanceOf[js.Dynamic].applyDynamic("user")().asInstanceOf[User_]
     
@@ -244,8 +243,8 @@ object meteorMod {
     def users: Collection[User_] = js.native
     inline def users_=(x: Collection[User_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("users")(x.asInstanceOf[js.Any])
     
-    inline def wrapAsync(func: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def wrapAsync(func: js.Function, context: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def wrapAsync(func: js.Function): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def wrapAsync(func: js.Function, context: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsync")(func.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /** Connection **/
     trait Connection extends StObject {
@@ -397,35 +396,30 @@ object meteorMod {
     
     trait LocalStorage extends StObject {
       
-      var _data: js.Any
+      var _data: Any
       
-      def getItem(key: js.Any): js.Any
+      def getItem(key: Any): Any
       
-      def removeItem(key: js.Any): Unit
+      def removeItem(key: Any): Unit
       
-      def setItem(key: js.Any, value: js.Any): js.Any
+      def setItem(key: Any, value: Any): Any
     }
     object LocalStorage {
       
-      inline def apply(
-        _data: js.Any,
-        getItem: js.Any => js.Any,
-        removeItem: js.Any => Unit,
-        setItem: (js.Any, js.Any) => js.Any
-      ): LocalStorage = {
+      inline def apply(_data: Any, getItem: Any => Any, removeItem: Any => Unit, setItem: (Any, Any) => Any): LocalStorage = {
         val __obj = js.Dynamic.literal(_data = _data.asInstanceOf[js.Any], getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
         __obj.asInstanceOf[LocalStorage]
       }
       
       extension [Self <: LocalStorage](x: Self) {
         
-        inline def setGetItem(value: js.Any => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+        inline def setGetItem(value: Any => Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
         
-        inline def setRemoveItem(value: js.Any => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+        inline def setRemoveItem(value: Any => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
         
-        inline def setSetItem(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+        inline def setSetItem(value: (Any, Any) => Any): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
         
-        inline def set_data(value: js.Any): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
+        inline def set_data(value: Any): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
       }
     }
     
@@ -483,7 +477,7 @@ object meteorMod {
         
         inline def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
         
-        inline def setRequestPermissionsVarargs(value: String*): Self = StObject.set(x, "requestPermissions", js.Array(value :_*))
+        inline def setRequestPermissionsVarargs(value: String*): Self = StObject.set(x, "requestPermissions", js.Array(value*))
       }
     }
     
@@ -491,20 +485,20 @@ object meteorMod {
     /** Settings **/
     trait Settings_
       extends StObject
-         with /* id */ StringDictionary[js.Any] {
+         with /* id */ StringDictionary[Any] {
       
-      var public: StringDictionary[js.Any]
+      var public: StringDictionary[Any]
     }
     object Settings_ {
       
-      inline def apply(public: StringDictionary[js.Any]): Settings_ = {
+      inline def apply(public: StringDictionary[Any]): Settings_ = {
         val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any])
         __obj.asInstanceOf[Settings_]
       }
       
       extension [Self <: Settings_](x: Self) {
         
-        inline def setPublic(value: StringDictionary[js.Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+        inline def setPublic(value: StringDictionary[Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       }
     }
     
@@ -562,9 +556,9 @@ object meteorMod {
       
       var emails: js.UndefOr[js.Array[UserEmail]] = js.undefined
       
-      var profile: js.UndefOr[js.Any] = js.undefined
+      var profile: js.UndefOr[Any] = js.undefined
       
-      var services: js.UndefOr[js.Any] = js.undefined
+      var services: js.UndefOr[Any] = js.undefined
       
       var username: js.UndefOr[String] = js.undefined
     }
@@ -585,13 +579,13 @@ object meteorMod {
         
         inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
         
-        inline def setEmailsVarargs(value: UserEmail*): Self = StObject.set(x, "emails", js.Array(value :_*))
+        inline def setEmailsVarargs(value: UserEmail*): Self = StObject.set(x, "emails", js.Array(value*))
         
-        inline def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+        inline def setProfile(value: Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
         
         inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
         
-        inline def setServices(value: js.Any): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+        inline def setServices(value: Any): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
         
         inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
         
@@ -614,7 +608,7 @@ object meteorMod {
     
     var connection: Connection
     
-    def error(error: Error): Unit
+    def error(error: js.Error): Unit
     
     def onStop(func: js.Function): Unit
     
@@ -632,7 +626,7 @@ object meteorMod {
       added: (String, String, js.Object) => Unit,
       changed: (String, String, js.Object) => Unit,
       connection: Connection,
-      error: Error => Unit,
+      error: js.Error => Unit,
       onStop: js.Function => Unit,
       ready: () => Unit,
       removed: (String, String) => Unit,
@@ -651,7 +645,7 @@ object meteorMod {
       
       inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setOnStop(value: js.Function => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
       

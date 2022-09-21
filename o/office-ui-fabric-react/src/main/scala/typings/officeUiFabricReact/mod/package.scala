@@ -1,2031 +1,2042 @@
 package typings.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.fluentuiDomUtilities.ivirtualelementMod.IVirtualElement
+import typings.fluentuiReactWindowProvider.windowProviderMod.WindowProviderProps
+import typings.fluentuiTheme.ianimationstylesMod.IAnimationStyles
+import typings.fluentuiTheme.ianimationstylesMod.IAnimationVariables
+import typings.fluentuiTheme.ieffectsMod.IEffects
+import typings.fluentuiTheme.ifontstylesMod.IFontStyles
+import typings.fluentuiTheme.ipaletteMod.IPalette
+import typings.fluentuiTheme.ischemeMod.ISchemeNames
+import typings.fluentuiTheme.ithemeMod.IPartialTheme
+import typings.fluentuiTheme.ithemeMod.ITheme
+import typings.fluentuiTheme.themeMod.PartialTheme
+import typings.fluentuiTheme.themeMod.Theme
+import typings.officeUiFabricReact.activityItemClassNamesMod.IActivityItemClassNames
+import typings.officeUiFabricReact.activityItemTypesMod.IActivityItemStyles
+import typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
+import typings.officeUiFabricReact.anon.AddMeasurementToCache
+import typings.officeUiFabricReact.anon.GetInitialResizeGroupState
+import typings.officeUiFabricReact.anon.IGenericItemkeyKey
+import typings.officeUiFabricReact.anon.IsAvailable
+import typings.officeUiFabricReact.anon.IsMeasured
+import typings.officeUiFabricReact.anon.IsSize10
+import typings.officeUiFabricReact.anon.PickIPersonaPropsprimaryT
+import typings.officeUiFabricReact.anon.RequiredPickIShimmeredDet
+import typings.officeUiFabricReact.anon.Target
+import typings.officeUiFabricReact.anon.Viewport
+import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerStyleProps
+import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerStyles
+import typings.officeUiFabricReact.breadcrumbTypesMod.IBreadcrumbProps
+import typings.officeUiFabricReact.buttonGridTypesMod.IButtonGridProps
+import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
+import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
+import typings.officeUiFabricReact.checkTypesMod.ICheckProps
+import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
+import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps
+import typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupProps
+import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
+import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps
+import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps
+import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps
+import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarStyleProps
+import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarStyles
+import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps
+import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemStyleProps
+import typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemStyles
+import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem
+import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps
+import typings.officeUiFabricReact.contextualMenuTypesMod.IMenuItemStyles
+import typings.officeUiFabricReact.datePickerTypesMod.IDatePickerProps
+import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnProps
+import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnStyleProps
+import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnStyles
+import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps
+import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderStyleProps
+import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderStyles
+import typings.officeUiFabricReact.detailsListTypesMod.IColumn
+import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps
+import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListStyleProps
+import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListStyles
+import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckProps
+import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckStyleProps
+import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckStyles
+import typings.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps
+import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
+import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps
+import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyleProps
+import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyles
+import typings.officeUiFabricReact.dialogContentTypesMod.IDialogContentProps
+import typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps
+import typings.officeUiFabricReact.dialogTypesMod.IDialogProps
+import typings.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsProps
+import typings.officeUiFabricReact.documentCardActivityTypesMod.IDocumentCardActivityProps
+import typings.officeUiFabricReact.documentCardDetailsTypesMod.IDocumentCardDetailsProps
+import typings.officeUiFabricReact.documentCardImageTypesMod.IDocumentCardImageProps
+import typings.officeUiFabricReact.documentCardLocationTypesMod.IDocumentCardLocationProps
+import typings.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoProps
+import typings.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewProps
+import typings.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusProps
+import typings.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleProps
+import typings.officeUiFabricReact.documentCardTypesMod.IDocumentCardProps
+import typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps
+import typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps
+import typings.officeUiFabricReact.fabricTypesMod.IFabricProps
+import typings.officeUiFabricReact.facepileTypesMod.IFacepileProps
+import typings.officeUiFabricReact.focusTrapCalloutTypesMod.IFocusTrapCalloutProps
+import typings.officeUiFabricReact.fontIconMod.IIconContent
+import typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps
+import typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
+import typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps
+import typings.officeUiFabricReact.groupSpacerTypesMod.IGroupSpacerProps
+import typings.officeUiFabricReact.groupedListTypesMod.IGroup
+import typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
+import typings.officeUiFabricReact.hoverCardTypesMod.IHoverCardProps
+import typings.officeUiFabricReact.iconTypesMod.IFontIconProps
+import typings.officeUiFabricReact.iconTypesMod.IIconProps
+import typings.officeUiFabricReact.iconTypesMod.IImageIconProps
+import typings.officeUiFabricReact.ikeytiptransitionkeyMod.IKeytipTransitionKey
+import typings.officeUiFabricReact.imageTypesMod.IImageProps
+import typings.officeUiFabricReact.interfacesMod.IColor
+import typings.officeUiFabricReact.interfacesMod.IHSL
+import typings.officeUiFabricReact.interfacesMod.IHSV
+import typings.officeUiFabricReact.interfacesMod.IRGB
+import typings.officeUiFabricReact.ithemerulesMod.IThemeRules
+import typings.officeUiFabricReact.keytipConfigMod.IKeytipConfig
+import typings.officeUiFabricReact.keytipConfigMod.IKeytipConfigItem
+import typings.officeUiFabricReact.keytipConfigMod.IKeytipConfigMap
+import typings.officeUiFabricReact.keytipDataTypesMod.IKeytipDataProps
+import typings.officeUiFabricReact.keytipDataTypesMod.KeytipDataOptions
+import typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps
+import typings.officeUiFabricReact.labelTypesMod.ILabelProps
+import typings.officeUiFabricReact.layerHostTypesMod.ILayerHost
+import typings.officeUiFabricReact.layerTypesMod.ILayerProps
+import typings.officeUiFabricReact.layerTypesMod.ILayerStyleProps
+import typings.officeUiFabricReact.layerTypesMod.ILayerStyles
+import typings.officeUiFabricReact.linkTypesMod.ILinkProps
+import typings.officeUiFabricReact.marqueeSelectionTypesMod.IMarqueeSelectionProps
+import typings.officeUiFabricReact.messageBarTypesMod.IMessageBarProps
+import typings.officeUiFabricReact.mod.^
+import typings.officeUiFabricReact.modalTypesMod.IModalProps
+import typings.officeUiFabricReact.navTypesMod.INavProps
+import typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`
+import typings.officeUiFabricReact.officeUiFabricReactStrings.`data-no-horizontal-wrap`
+import typings.officeUiFabricReact.officeUiFabricReactStrings.`data-no-vertical-wrap`
+import typings.officeUiFabricReact.officeUiFabricReactStrings.a
+import typings.officeUiFabricReact.officeUiFabricReactStrings.absolute
+import typings.officeUiFabricReact.officeUiFabricReactStrings.b
+import typings.officeUiFabricReact.officeUiFabricReactStrings.border
+import typings.officeUiFabricReact.officeUiFabricReactStrings.borderBottom
+import typings.officeUiFabricReact.officeUiFabricReactStrings.g
+import typings.officeUiFabricReact.officeUiFabricReactStrings.horizontal
+import typings.officeUiFabricReact.officeUiFabricReactStrings.localStorage
+import typings.officeUiFabricReact.officeUiFabricReactStrings.none
+import typings.officeUiFabricReact.officeUiFabricReactStrings.r
+import typings.officeUiFabricReact.officeUiFabricReactStrings.relative
+import typings.officeUiFabricReact.officeUiFabricReactStrings.sessionStorage
+import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
+import typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps
+import typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
+import typings.officeUiFabricReact.panelTypesMod.IPanelProps
+import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedProps
+import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedStyleProps
+import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedStyles
+import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionProps
+import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionStyleProps
+import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionStyles
+import typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps
+import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
+import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
+import typings.officeUiFabricReact.personaTypesMod.PersonaSize
+import typings.officeUiFabricReact.pivotTypesMod.IPivotProps
+import typings.officeUiFabricReact.plainCardTypesMod.IPlainCardProps
+import typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo
+import typings.officeUiFabricReact.positioningTypesMod.IPositionProps
+import typings.officeUiFabricReact.positioningTypesMod.IPositionedData
+import typings.officeUiFabricReact.positioningTypesMod.IWindowWithSegments
+import typings.officeUiFabricReact.progressIndicatorTypesMod.IProgressIndicatorProps
+import typings.officeUiFabricReact.ratingTypesMod.IRatingProps
+import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneContext
+import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneProps
+import typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
+import typings.officeUiFabricReact.selectableOptionTypesMod.ISelectableOption
+import typings.officeUiFabricReact.separatorTypesMod.ISeparatorProps
+import typings.officeUiFabricReact.shimmerCircleTypesMod.IShimmerCircleProps
+import typings.officeUiFabricReact.shimmerElementsGroupTypesMod.IShimmerElementsGroupProps
+import typings.officeUiFabricReact.shimmerGapTypesMod.IShimmerGapProps
+import typings.officeUiFabricReact.shimmerLineTypesMod.IShimmerLineProps
+import typings.officeUiFabricReact.shimmerTypesMod.IShimmerProps
+import typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps
+import typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListStyles
+import typings.officeUiFabricReact.sliderTypesMod.ISliderProps
+import typings.officeUiFabricReact.spinnerTypesMod.ISpinnerProps
+import typings.officeUiFabricReact.splitButtonClassNamesMod.ISplitButtonClassNames
+import typings.officeUiFabricReact.stackItemTypesMod.IStackItemProps
+import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionsItemStyleProps
+import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionsItemStyles
+import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
+import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsStyleProps
+import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsStyles
+import typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerProps
+import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps
+import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemStyleProps
+import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemStyles
+import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionProps
+import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionStyleProps
+import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionStyles
+import typings.officeUiFabricReact.tagPickerTypesMod.ITagPickerProps
+import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
+import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
+import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldStyleProps
+import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldStyles
+import typings.officeUiFabricReact.textTypesMod.ITextProps
+import typings.officeUiFabricReact.textTypesMod.ITextStyles
+import typings.officeUiFabricReact.textTypesMod.ITextTokens
+import typings.officeUiFabricReact.toggleTypesMod.IToggleProps
+import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
+import typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
+import typings.officeUiFabricReact.verticalDividerTypesMod.IVerticalDividerProps
+import typings.react.mod.Component
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.ComponentType
+import typings.react.mod.Context
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.FunctionComponent
+import typings.react.mod.HTMLAttributes
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PropsWithoutRef
+import typings.react.mod.ReactElement
+import typings.react.mod.Ref
+import typings.react.mod.RefAttributes
+import typings.react.mod.RefObject
+import typings.react.mod.global.JSX.Element
+import typings.std.Document
+import typings.std.Event
+import typings.std.HTMLElement
+import typings.std.Number
+import typings.std.Partial
+import typings.std.Record
+import typings.std.TypedPropertyDescriptor
+import typings.std.Window
+import typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject
+import typings.uifabricFoundation.libIcomponentMod.IViewComponent
+import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.ikeyframesMod.IKeyframes
+import typings.uifabricMergeStyles.irawstyleMod.IRawStyle
+import typings.uifabricMergeStyles.irawstylebaseMod.IFontFace
+import typings.uifabricMergeStyles.istyleMod.IStyle
+import typings.uifabricMergeStyles.istyleMod.IStyleBaseArray
+import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet
+import typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet
+import typings.uifabricMergeStyles.istylesetMod.IStyleSet
+import typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly
+import typings.uifabricStyling.anon.PartialIIconOptions
+import typings.uifabricStyling.colorClassNamesMod.IColorClassNames
+import typings.uifabricStyling.getGlobalClassNamesMod.GlobalClassNames
+import typings.uifabricStyling.iconsMod.IIconOptions
+import typings.uifabricStyling.iconsMod.IIconRecord
+import typings.uifabricStyling.iconsMod.IIconSubset
+import typings.uifabricStyling.igetfocusstylesMod.IGetFocusStylesOptions
+import typings.uifabricUtilities.anon.AsyncPlaceholder
+import typings.uifabricUtilities.anon.Configurable
+import typings.uifabricUtilities.anon.Focus
+import typings.uifabricUtilities.anon.RootRef
+import typings.uifabricUtilities.anon.Rtl
+import typings.uifabricUtilities.asAsyncMod.IAsAsyncOptions
+import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
+import typings.uifabricUtilities.classNamesFunctionMod.IClassNamesFunctionOptions
+import typings.uifabricUtilities.cssMod.ICssInput
+import typings.uifabricUtilities.customizationsMod.ISettings
+import typings.uifabricUtilities.customizationsMod.ISettingsFunction
+import typings.uifabricUtilities.customizerContextMod.ICustomizerContext
+import typings.uifabricUtilities.customizerTypesMod.ICustomizerProps
+import typings.uifabricUtilities.icomponentasMod.IComponentAs
+import typings.uifabricUtilities.irectangleMod.IRectangle
+import typings.uifabricUtilities.irendercomponentMod.IRenderComponent
+import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
+import typings.uifabricUtilities.isizeMod.ISize
+import typings.uifabricUtilities.mathMod.IFitContentToBoundsOptions
+import typings.uifabricUtilities.pointMod.Point
+import typings.uifabricUtilities.styledMod.ICustomizableProps
+import typings.uifabricUtilities.styledMod.IPropsWithStyles
+import typings.uifabricUtilities.warnControlledUsageMod.IWarnControlledUsageParams
+import typings.uifabricUtilities.warnWarnMod.ISettingsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def AnimationStyles: typings.fluentuiTheme.ianimationstylesMod.IAnimationStyles = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AnimationStyles").asInstanceOf[typings.fluentuiTheme.ianimationstylesMod.IAnimationStyles]
+inline def AnimationStyles: IAnimationStyles = ^.asInstanceOf[js.Dynamic].selectDynamic("AnimationStyles").asInstanceOf[IAnimationStyles]
 
-inline def AnimationVariables: typings.fluentuiTheme.ianimationstylesMod.IAnimationVariables = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AnimationVariables").asInstanceOf[typings.fluentuiTheme.ianimationstylesMod.IAnimationVariables]
+inline def AnimationVariables: IAnimationVariables = ^.asInstanceOf[js.Dynamic].selectDynamic("AnimationVariables").asInstanceOf[IAnimationVariables]
 
-inline def Announced: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Announced").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps]]
+inline def Announced: FunctionComponent[IAnnouncedProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Announced").asInstanceOf[FunctionComponent[IAnnouncedProps]]
 
-inline def Breadcrumb: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.breadcrumbTypesMod.IBreadcrumbProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Breadcrumb").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.breadcrumbTypesMod.IBreadcrumbProps]]
+inline def Breadcrumb: FunctionComponent[IBreadcrumbProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Breadcrumb").asInstanceOf[FunctionComponent[IBreadcrumbProps]]
 
-inline def ButtonGrid: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.buttonGridTypesMod.IButtonGridProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ButtonGrid").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.buttonGridTypesMod.IButtonGridProps]]
+inline def ButtonGrid: FunctionComponent[IButtonGridProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ButtonGrid").asInstanceOf[FunctionComponent[IButtonGridProps]]
 
-inline def COACHMARK_ATTRIBUTE_NAME: /* "data-coachmarkid" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("COACHMARK_ATTRIBUTE_NAME").asInstanceOf[/* "data-coachmarkid" */ java.lang.String]
+inline def COACHMARK_ATTRIBUTE_NAME: /* "data-coachmarkid" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("COACHMARK_ATTRIBUTE_NAME").asInstanceOf[/* "data-coachmarkid" */ String]
 
-inline def CalloutContent: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.calloutTypesMod.ICalloutProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CalloutContent").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.calloutTypesMod.ICalloutProps]]
+inline def CalloutContent: FunctionComponent[ICalloutProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("CalloutContent").asInstanceOf[FunctionComponent[ICalloutProps]]
 
-inline def Check: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.checkTypesMod.ICheckProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Check").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.checkTypesMod.ICheckProps]]
+inline def Check: FunctionComponent[ICheckProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Check").asInstanceOf[FunctionComponent[ICheckProps]]
 
-inline def CheckBase: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.checkTypesMod.ICheckProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CheckBase").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.checkTypesMod.ICheckProps]]
+inline def CheckBase: FunctionComponent[ICheckProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("CheckBase").asInstanceOf[FunctionComponent[ICheckProps]]
 
-inline def Checkbox: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Checkbox").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps]]
+inline def Checkbox: FunctionComponent[ICheckboxProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Checkbox").asInstanceOf[FunctionComponent[ICheckboxProps]]
 
-inline def ChoiceGroup: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ChoiceGroup").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupProps]]
+inline def ChoiceGroup: FunctionComponent[IChoiceGroupProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ChoiceGroup").asInstanceOf[FunctionComponent[IChoiceGroupProps]]
 
-inline def ChoiceGroupOption: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ChoiceGroupOption").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps]]
+inline def ChoiceGroupOption: FunctionComponent[IChoiceGroupOptionProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ChoiceGroupOption").asInstanceOf[FunctionComponent[IChoiceGroupOptionProps]]
 
-inline def Coachmark: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Coachmark").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps]]
+inline def Coachmark: FunctionComponent[ICoachmarkProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Coachmark").asInstanceOf[FunctionComponent[ICoachmarkProps]]
 
-inline def ColorClassNames: typings.uifabricStyling.colorClassNamesMod.IColorClassNames = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ColorClassNames").asInstanceOf[typings.uifabricStyling.colorClassNamesMod.IColorClassNames]
+inline def ColorClassNames: IColorClassNames = ^.asInstanceOf[js.Dynamic].selectDynamic("ColorClassNames").asInstanceOf[IColorClassNames]
 
-inline def ColorPicker: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ColorPicker").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps]]
+inline def ColorPicker: FunctionComponent[IColorPickerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ColorPicker").asInstanceOf[FunctionComponent[IColorPickerProps]]
 
-inline def ColorPickerGridCell: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ColorPickerGridCell").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps]]
+inline def ColorPickerGridCell: FunctionComponent[IColorPickerGridCellProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ColorPickerGridCell").asInstanceOf[FunctionComponent[IColorPickerGridCellProps]]
 
-inline def CommandBar: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CommandBar").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps]]
+inline def CommandBar: FunctionComponent[ICommandBarProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommandBar").asInstanceOf[FunctionComponent[ICommandBarProps]]
 
-inline def CompactPeoplePicker: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CompactPeoplePicker").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps]]
+inline def CompactPeoplePicker: FunctionComponent[IPeoplePickerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("CompactPeoplePicker").asInstanceOf[FunctionComponent[IPeoplePickerProps]]
 
-inline def ContextualMenu: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContextualMenu").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps]]
+inline def ContextualMenu: FunctionComponent[IContextualMenuProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ContextualMenu").asInstanceOf[FunctionComponent[IContextualMenuProps]]
 
-inline def ContextualMenuItem: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContextualMenuItem").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps]]
+inline def ContextualMenuItem: FunctionComponent[IContextualMenuItemProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ContextualMenuItem").asInstanceOf[FunctionComponent[IContextualMenuItemProps]]
 
-inline def CustomizerContext: typings.react.mod.Context[typings.uifabricUtilities.customizerContextMod.ICustomizerContext] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CustomizerContext").asInstanceOf[typings.react.mod.Context[typings.uifabricUtilities.customizerContextMod.ICustomizerContext]]
+inline def CustomizerContext: Context[ICustomizerContext] = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomizerContext").asInstanceOf[Context[ICustomizerContext]]
 
-inline def DATAKTP_ARIA_TARGET: /* "data-ktp-aria-target" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DATAKTP_ARIA_TARGET").asInstanceOf[/* "data-ktp-aria-target" */ java.lang.String]
+inline def DATAKTP_ARIA_TARGET: /* "data-ktp-aria-target" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DATAKTP_ARIA_TARGET").asInstanceOf[/* "data-ktp-aria-target" */ String]
 
-inline def DATAKTP_EXECUTE_TARGET: /* "data-ktp-execute-target" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DATAKTP_EXECUTE_TARGET").asInstanceOf[/* "data-ktp-execute-target" */ java.lang.String]
+inline def DATAKTP_EXECUTE_TARGET: /* "data-ktp-execute-target" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DATAKTP_EXECUTE_TARGET").asInstanceOf[/* "data-ktp-execute-target" */ String]
 
-inline def DATAKTP_TARGET: /* "data-ktp-target" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DATAKTP_TARGET").asInstanceOf[/* "data-ktp-target" */ java.lang.String]
+inline def DATAKTP_TARGET: /* "data-ktp-target" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DATAKTP_TARGET").asInstanceOf[/* "data-ktp-target" */ String]
 
-inline def DATA_IS_SCROLLABLE_ATTRIBUTE: /* "data-is-scrollable" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DATA_IS_SCROLLABLE_ATTRIBUTE").asInstanceOf[/* "data-is-scrollable" */ java.lang.String]
+inline def DATA_IS_SCROLLABLE_ATTRIBUTE: /* "data-is-scrollable" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DATA_IS_SCROLLABLE_ATTRIBUTE").asInstanceOf[/* "data-is-scrollable" */ String]
 
-inline def DATA_PORTAL_ATTRIBUTE: /* "data-portal-element" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DATA_PORTAL_ATTRIBUTE").asInstanceOf[/* "data-portal-element" */ java.lang.String]
+inline def DATA_PORTAL_ATTRIBUTE: /* "data-portal-element" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DATA_PORTAL_ATTRIBUTE").asInstanceOf[/* "data-portal-element" */ String]
 
-inline def DEFAULT_CELL_STYLE_PROPS: typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_CELL_STYLE_PROPS").asInstanceOf[typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps]
+inline def DAYS_IN_WEEK: /* 7 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("DAYS_IN_WEEK").asInstanceOf[/* 7 */ Double]
 
-inline def DEFAULT_MASK_CHAR: /* "_" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_MASK_CHAR").asInstanceOf[/* "_" */ java.lang.String]
+inline def DEFAULT_CELL_STYLE_PROPS: ICellStyleProps = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_CELL_STYLE_PROPS").asInstanceOf[ICellStyleProps]
 
-inline def DatePicker: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.datePickerTypesMod.IDatePickerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DatePicker").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.datePickerTypesMod.IDatePickerProps]]
+inline def DEFAULT_MASK_CHAR: /* "_" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_MASK_CHAR").asInstanceOf[/* "_" */ String]
 
-inline def DefaultEffects: typings.fluentuiTheme.ieffectsMod.IEffects = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DefaultEffects").asInstanceOf[typings.fluentuiTheme.ieffectsMod.IEffects]
+inline def DatePicker: FunctionComponent[IDatePickerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DatePicker").asInstanceOf[FunctionComponent[IDatePickerProps]]
 
-inline def DefaultFontStyles: typings.fluentuiTheme.ifontstylesMod.IFontStyles = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DefaultFontStyles").asInstanceOf[typings.fluentuiTheme.ifontstylesMod.IFontStyles]
+inline def DefaultEffects: IEffects = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultEffects").asInstanceOf[IEffects]
 
-inline def DefaultPalette: typings.fluentuiTheme.ipaletteMod.IPalette = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DefaultPalette").asInstanceOf[typings.fluentuiTheme.ipaletteMod.IPalette]
+inline def DefaultFontStyles: IFontStyles = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultFontStyles").asInstanceOf[IFontStyles]
 
-inline def DetailsHeader: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DetailsHeader").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps]]
+inline def DefaultPalette: IPalette = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultPalette").asInstanceOf[IPalette]
 
-inline def DetailsList: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DetailsList").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps]]
+inline def DetailsColumn: FunctionComponent[IDetailsColumnProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DetailsColumn").asInstanceOf[FunctionComponent[IDetailsColumnProps]]
 
-inline def DetailsRow: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DetailsRow").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps]]
+inline def DetailsHeader: FunctionComponent[IDetailsHeaderBaseProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DetailsHeader").asInstanceOf[FunctionComponent[IDetailsHeaderBaseProps]]
 
-inline def DetailsRowCheck: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DetailsRowCheck").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckProps]]
+inline def DetailsList: FunctionComponent[IDetailsListProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DetailsList").asInstanceOf[FunctionComponent[IDetailsListProps]]
 
-inline def DetailsRowFields: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DetailsRowFields").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps]]
+inline def DetailsRow: FunctionComponent[IDetailsRowBaseProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DetailsRow").asInstanceOf[FunctionComponent[IDetailsRowBaseProps]]
 
-inline def Dialog: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.dialogTypesMod.IDialogProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Dialog").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.dialogTypesMod.IDialogProps]]
+inline def DetailsRowCheck: FunctionComponent[IDetailsRowCheckProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DetailsRowCheck").asInstanceOf[FunctionComponent[IDetailsRowCheckProps]]
 
-inline def DialogContent: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.dialogContentTypesMod.IDialogContentProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DialogContent").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.dialogContentTypesMod.IDialogContentProps]]
+inline def DetailsRowFields: FunctionComponent[IDetailsRowFieldsProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DetailsRowFields").asInstanceOf[FunctionComponent[IDetailsRowFieldsProps]]
 
-inline def DialogFooter: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DialogFooter").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps]]
+inline def Dialog: FunctionComponent[IDialogProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Dialog").asInstanceOf[FunctionComponent[IDialogProps]]
 
-inline def DocumentCard: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.documentCardTypesMod.IDocumentCardProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCard").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.documentCardTypesMod.IDocumentCardProps]]
+inline def DialogContent: FunctionComponent[IDialogContentProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DialogContent").asInstanceOf[FunctionComponent[IDialogContentProps]]
 
-inline def DocumentCardActions: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardActions").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsProps]]
+inline def DialogFooter: FunctionComponent[IDialogFooterProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DialogFooter").asInstanceOf[FunctionComponent[IDialogFooterProps]]
 
-inline def DocumentCardActivity: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.documentCardActivityTypesMod.IDocumentCardActivityProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardActivity").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.documentCardActivityTypesMod.IDocumentCardActivityProps]]
+inline def DocumentCard: FunctionComponent[IDocumentCardProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCard").asInstanceOf[FunctionComponent[IDocumentCardProps]]
 
-inline def DocumentCardDetails: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.documentCardDetailsTypesMod.IDocumentCardDetailsProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardDetails").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.documentCardDetailsTypesMod.IDocumentCardDetailsProps]]
+inline def DocumentCardActions: FunctionComponent[IDocumentCardActionsProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardActions").asInstanceOf[FunctionComponent[IDocumentCardActionsProps]]
 
-inline def DocumentCardImage: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.documentCardImageTypesMod.IDocumentCardImageProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardImage").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.documentCardImageTypesMod.IDocumentCardImageProps]]
+inline def DocumentCardActivity: FunctionComponent[IDocumentCardActivityProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardActivity").asInstanceOf[FunctionComponent[IDocumentCardActivityProps]]
 
-inline def DocumentCardLocation: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.documentCardLocationTypesMod.IDocumentCardLocationProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardLocation").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.documentCardLocationTypesMod.IDocumentCardLocationProps]]
+inline def DocumentCardDetails: FunctionComponent[IDocumentCardDetailsProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardDetails").asInstanceOf[FunctionComponent[IDocumentCardDetailsProps]]
 
-inline def DocumentCardLogo: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardLogo").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoProps]]
+inline def DocumentCardImage: FunctionComponent[IDocumentCardImageProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardImage").asInstanceOf[FunctionComponent[IDocumentCardImageProps]]
 
-inline def DocumentCardPreview: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardPreview").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewProps]]
+inline def DocumentCardLocation: FunctionComponent[IDocumentCardLocationProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardLocation").asInstanceOf[FunctionComponent[IDocumentCardLocationProps]]
 
-inline def DocumentCardStatus: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardStatus").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusProps]]
+inline def DocumentCardLogo: FunctionComponent[IDocumentCardLogoProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardLogo").asInstanceOf[FunctionComponent[IDocumentCardLogoProps]]
 
-inline def DocumentCardTitle: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardTitle").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleProps]]
+inline def DocumentCardPreview: FunctionComponent[IDocumentCardPreviewProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardPreview").asInstanceOf[FunctionComponent[IDocumentCardPreviewProps]]
 
-inline def Dropdown: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Dropdown").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps]]
+inline def DocumentCardStatus: FunctionComponent[IDocumentCardStatusProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardStatus").asInstanceOf[FunctionComponent[IDocumentCardStatusProps]]
 
-inline def EdgeChromiumHighContrastSelector: /* "@media screen and (forced-colors: active)" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EdgeChromiumHighContrastSelector").asInstanceOf[/* "@media screen and (forced-colors: active)" */ java.lang.String]
+inline def DocumentCardTitle: FunctionComponent[IDocumentCardTitleProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("DocumentCardTitle").asInstanceOf[FunctionComponent[IDocumentCardTitleProps]]
 
-inline def ExpandingCard: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ExpandingCard").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps]]
+inline def Dropdown: FunctionComponent[IDropdownProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Dropdown").asInstanceOf[FunctionComponent[IDropdownProps]]
 
-inline def Fabric: typings.react.mod.ForwardRefExoticComponent[
-typings.officeUiFabricReact.fabricTypesMod.IFabricProps & typings.react.mod.RefAttributes[typings.officeUiFabricReact.fabricBaseMod.FabricBase]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Fabric").asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.officeUiFabricReact.fabricTypesMod.IFabricProps & typings.react.mod.RefAttributes[typings.officeUiFabricReact.fabricBaseMod.FabricBase]]]
+inline def EdgeChromiumHighContrastSelector: /* "@media screen and (-ms-high-contrast: active), screen and (forced-colors: active)" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("EdgeChromiumHighContrastSelector").asInstanceOf[/* "@media screen and (-ms-high-contrast: active), screen and (forced-colors: active)" */ String]
 
-inline def Facepile: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.facepileTypesMod.IFacepileProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Facepile").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.facepileTypesMod.IFacepileProps]]
+inline def ExpandingCard: FunctionComponent[IExpandingCardProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ExpandingCard").asInstanceOf[FunctionComponent[IExpandingCardProps]]
 
-inline def FocusRects: typings.react.mod.FunctionComponent[typings.uifabricUtilities.anon.RootRef] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FocusRects").asInstanceOf[typings.react.mod.FunctionComponent[typings.uifabricUtilities.anon.RootRef]]
+inline def Fabric: ForwardRefExoticComponent[
+IFabricProps & RefAttributes[typings.officeUiFabricReact.fabricBaseMod.FabricBase]] = ^.asInstanceOf[js.Dynamic].selectDynamic("Fabric").asInstanceOf[ForwardRefExoticComponent[
+IFabricProps & RefAttributes[typings.officeUiFabricReact.fabricBaseMod.FabricBase]]]
 
-inline def FocusTrapCallout: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.focusTrapCalloutTypesMod.IFocusTrapCalloutProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FocusTrapCallout").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.focusTrapCalloutTypesMod.IFocusTrapCalloutProps]]
+inline def Facepile: FunctionComponent[IFacepileProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Facepile").asInstanceOf[FunctionComponent[IFacepileProps]]
 
-inline def FontIcon: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.iconTypesMod.IFontIconProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FontIcon").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.iconTypesMod.IFontIconProps]]
+inline def FocusRects: FunctionComponent[RootRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("FocusRects").asInstanceOf[FunctionComponent[RootRef]]
 
-inline def Grid: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.buttonGridTypesMod.IButtonGridProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Grid").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.buttonGridTypesMod.IButtonGridProps]]
+inline def FocusTrapCallout: FunctionComponent[IFocusTrapCalloutProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("FocusTrapCallout").asInstanceOf[FunctionComponent[IFocusTrapCalloutProps]]
 
-inline def GroupFooter: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GroupFooter").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps]]
+inline def FontIcon: FunctionComponent[IFontIconProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("FontIcon").asInstanceOf[FunctionComponent[IFontIconProps]]
 
-inline def GroupHeader: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GroupHeader").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps]]
+inline def GetGroupCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetGroupCount")().asInstanceOf[Double]
+inline def GetGroupCount(groups: js.Array[IGroup]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetGroupCount")(groups.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def GroupShowAll: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GroupShowAll").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps]]
+inline def Grid: FunctionComponent[IButtonGridProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Grid").asInstanceOf[FunctionComponent[IButtonGridProps]]
 
-inline def GroupSpacer: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.groupSpacerTypesMod.IGroupSpacerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GroupSpacer").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.groupSpacerTypesMod.IGroupSpacerProps]]
+inline def GroupFooter: FunctionComponent[IGroupFooterProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupFooter").asInstanceOf[FunctionComponent[IGroupFooterProps]]
 
-inline def GroupedList: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("GroupedList").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps]]
+inline def GroupHeader: FunctionComponent[IGroupHeaderProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupHeader").asInstanceOf[FunctionComponent[IGroupHeaderProps]]
 
-inline def HEX_REGEX: typings.std.RegExp = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HEX_REGEX").asInstanceOf[typings.std.RegExp]
+inline def GroupShowAll: FunctionComponent[IGroupShowAllProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupShowAll").asInstanceOf[FunctionComponent[IGroupShowAllProps]]
 
-inline def HighContrastSelector: /* "@media screen and (-ms-high-contrast: active)" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HighContrastSelector").asInstanceOf[/* "@media screen and (-ms-high-contrast: active)" */ java.lang.String]
+inline def GroupSpacer: FunctionComponent[IGroupSpacerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupSpacer").asInstanceOf[FunctionComponent[IGroupSpacerProps]]
 
-inline def HighContrastSelectorBlack: /* "@media screen and (-ms-high-contrast: white-on-black)" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HighContrastSelectorBlack").asInstanceOf[/* "@media screen and (-ms-high-contrast: white-on-black)" */ java.lang.String]
+inline def GroupedList: FunctionComponent[IGroupedListProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("GroupedList").asInstanceOf[FunctionComponent[IGroupedListProps]]
 
-inline def HighContrastSelectorWhite: /* "@media screen and (-ms-high-contrast: black-on-white)" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HighContrastSelectorWhite").asInstanceOf[/* "@media screen and (-ms-high-contrast: black-on-white)" */ java.lang.String]
+inline def HEX_REGEX: js.RegExp = ^.asInstanceOf[js.Dynamic].selectDynamic("HEX_REGEX").asInstanceOf[js.RegExp]
 
-inline def HoverCard: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.hoverCardTypesMod.IHoverCardProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HoverCard").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.hoverCardTypesMod.IHoverCardProps]]
+inline def HighContrastSelector: /* "@media screen and (-ms-high-contrast: active), screen and (forced-colors: active)" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("HighContrastSelector").asInstanceOf[/* "@media screen and (-ms-high-contrast: active), screen and (forced-colors: active)" */ String]
 
-inline def Icon: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.iconTypesMod.IIconProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Icon").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.iconTypesMod.IIconProps]]
+inline def HighContrastSelectorBlack: /* "@media screen and (-ms-high-contrast: white-on-black), screen and (forced-colors: active) and (prefers-color-scheme: dark)" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("HighContrastSelectorBlack").asInstanceOf[/* "@media screen and (-ms-high-contrast: white-on-black), screen and (forced-colors: active) and (prefers-color-scheme: dark)" */ String]
 
-inline def Image: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.imageTypesMod.IImageProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Image").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.imageTypesMod.IImageProps]]
+inline def HighContrastSelectorWhite: /* "@media screen and (-ms-high-contrast: black-on-white), screen and (forced-colors: active) and (prefers-color-scheme: light)" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("HighContrastSelectorWhite").asInstanceOf[/* "@media screen and (-ms-high-contrast: black-on-white), screen and (forced-colors: active) and (prefers-color-scheme: light)" */ String]
 
-inline def ImageIcon: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.iconTypesMod.IImageIconProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ImageIcon").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.iconTypesMod.IImageIconProps]]
+inline def HoverCard: FunctionComponent[IHoverCardProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("HoverCard").asInstanceOf[FunctionComponent[IHoverCardProps]]
 
-inline def IsFocusVisibleClassName: /* "ms-Fabric--isFocusVisible" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("IsFocusVisibleClassName").asInstanceOf[/* "ms-Fabric--isFocusVisible" */ java.lang.String]
+inline def Icon: FunctionComponent[IIconProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Icon").asInstanceOf[FunctionComponent[IIconProps]]
 
-inline def KTP_ARIA_SEPARATOR: /* ", " */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("KTP_ARIA_SEPARATOR").asInstanceOf[/* ", " */ java.lang.String]
+inline def Image: FunctionComponent[IImageProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Image").asInstanceOf[FunctionComponent[IImageProps]]
 
-inline def KTP_FULL_PREFIX: java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("KTP_FULL_PREFIX").asInstanceOf[java.lang.String]
+inline def ImageIcon: FunctionComponent[IImageIconProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ImageIcon").asInstanceOf[FunctionComponent[IImageIconProps]]
 
-inline def KTP_LAYER_ID: /* "ktp-layer-id" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("KTP_LAYER_ID").asInstanceOf[/* "ktp-layer-id" */ java.lang.String]
+inline def IsFocusVisibleClassName: /* "ms-Fabric--isFocusVisible" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("IsFocusVisibleClassName").asInstanceOf[/* "ms-Fabric--isFocusVisible" */ String]
 
-inline def KTP_PREFIX: /* "ktp" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("KTP_PREFIX").asInstanceOf[/* "ktp" */ java.lang.String]
+inline def KTP_ARIA_SEPARATOR: /* ", " */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("KTP_ARIA_SEPARATOR").asInstanceOf[/* ", " */ String]
 
-inline def KTP_SEPARATOR: /* "-" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("KTP_SEPARATOR").asInstanceOf[/* "-" */ java.lang.String]
+inline def KTP_FULL_PREFIX: String = ^.asInstanceOf[js.Dynamic].selectDynamic("KTP_FULL_PREFIX").asInstanceOf[String]
 
-inline def KeytipData: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.keytipDataTypesMod.IKeytipDataProps & typings.uifabricUtilities.irendercomponentMod.IRenderComponent[js.Object]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("KeytipData").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.keytipDataTypesMod.IKeytipDataProps & typings.uifabricUtilities.irendercomponentMod.IRenderComponent[js.Object]]]
+inline def KTP_LAYER_ID: /* "ktp-layer-id" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("KTP_LAYER_ID").asInstanceOf[/* "ktp-layer-id" */ String]
 
-inline def KeytipLayer: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("KeytipLayer").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps]]
+inline def KTP_PREFIX: /* "ktp" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("KTP_PREFIX").asInstanceOf[/* "ktp" */ String]
 
-inline def Label: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.labelTypesMod.ILabelProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Label").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.labelTypesMod.ILabelProps]]
+inline def KTP_SEPARATOR: /* "-" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("KTP_SEPARATOR").asInstanceOf[/* "-" */ String]
 
-inline def Layer: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.layerTypesMod.ILayerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Layer").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.layerTypesMod.ILayerProps]]
+inline def KeytipData: FunctionComponent[IKeytipDataProps & IRenderComponent[js.Object]] = ^.asInstanceOf[js.Dynamic].selectDynamic("KeytipData").asInstanceOf[FunctionComponent[IKeytipDataProps & IRenderComponent[js.Object]]]
 
-inline def Link: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.linkTypesMod.ILinkProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Link").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.linkTypesMod.ILinkProps]]
+inline def KeytipLayer: FunctionComponent[IKeytipLayerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("KeytipLayer").asInstanceOf[FunctionComponent[IKeytipLayerProps]]
 
-inline def ListPeoplePicker: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ListPeoplePicker").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps]]
+inline def Label: FunctionComponent[ILabelProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Label").asInstanceOf[FunctionComponent[ILabelProps]]
 
-inline def MAX_COLOR_ALPHA: /* 100 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_ALPHA").asInstanceOf[/* 100 */ scala.Double]
+inline def Layer: FunctionComponent[ILayerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Layer").asInstanceOf[FunctionComponent[ILayerProps]]
 
-inline def MAX_COLOR_HUE: /* 359 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_HUE").asInstanceOf[/* 359 */ scala.Double]
+inline def Link: FunctionComponent[ILinkProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Link").asInstanceOf[FunctionComponent[ILinkProps]]
 
-inline def MAX_COLOR_RGB: /* 255 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_RGB").asInstanceOf[/* 255 */ scala.Double]
+inline def ListPeoplePicker: FunctionComponent[IPeoplePickerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ListPeoplePicker").asInstanceOf[FunctionComponent[IPeoplePickerProps]]
 
-inline def MAX_COLOR_RGBA: /* 255 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_RGBA").asInstanceOf[/* 255 */ scala.Double]
+inline def MAX_COLOR_ALPHA: /* 100 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_ALPHA").asInstanceOf[/* 100 */ Double]
 
-inline def MAX_COLOR_SATURATION: /* 100 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_SATURATION").asInstanceOf[/* 100 */ scala.Double]
+inline def MAX_COLOR_HUE: /* 359 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_HUE").asInstanceOf[/* 359 */ Double]
 
-inline def MAX_COLOR_VALUE: /* 100 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_VALUE").asInstanceOf[/* 100 */ scala.Double]
+inline def MAX_COLOR_RGB: /* 255 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_RGB").asInstanceOf[/* 255 */ Double]
 
-inline def MAX_HEX_LENGTH: /* 6 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MAX_HEX_LENGTH").asInstanceOf[/* 6 */ scala.Double]
+inline def MAX_COLOR_RGBA: /* 255 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_RGBA").asInstanceOf[/* 255 */ Double]
 
-inline def MAX_RGBA_LENGTH: /* 3 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MAX_RGBA_LENGTH").asInstanceOf[/* 3 */ scala.Double]
+inline def MAX_COLOR_SATURATION: /* 100 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_SATURATION").asInstanceOf[/* 100 */ Double]
 
-inline def MIN_HEX_LENGTH: /* 3 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MIN_HEX_LENGTH").asInstanceOf[/* 3 */ scala.Double]
+inline def MAX_COLOR_VALUE: /* 100 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MAX_COLOR_VALUE").asInstanceOf[/* 100 */ Double]
 
-inline def MIN_RGBA_LENGTH: /* 1 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MIN_RGBA_LENGTH").asInstanceOf[/* 1 */ scala.Double]
+inline def MAX_HEX_LENGTH: /* 6 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MAX_HEX_LENGTH").asInstanceOf[/* 6 */ Double]
 
-inline def MarqueeSelection: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.marqueeSelectionTypesMod.IMarqueeSelectionProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MarqueeSelection").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.marqueeSelectionTypesMod.IMarqueeSelectionProps]]
+inline def MAX_RGBA_LENGTH: /* 3 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MAX_RGBA_LENGTH").asInstanceOf[/* 3 */ Double]
 
-inline def MeasuredContext: typings.react.mod.Context[typings.officeUiFabricReact.anon.IsMeasured] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MeasuredContext").asInstanceOf[typings.react.mod.Context[typings.officeUiFabricReact.anon.IsMeasured]]
+inline def MIN_HEX_LENGTH: /* 3 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MIN_HEX_LENGTH").asInstanceOf[/* 3 */ Double]
 
-inline def MessageBar: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.messageBarTypesMod.IMessageBarProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("MessageBar").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.messageBarTypesMod.IMessageBarProps]]
+inline def MIN_RGBA_LENGTH: /* 1 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("MIN_RGBA_LENGTH").asInstanceOf[/* 1 */ Double]
 
-inline def Modal: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.modalTypesMod.IModalProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Modal").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.modalTypesMod.IModalProps]]
+inline def MarqueeSelection: FunctionComponent[IMarqueeSelectionProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("MarqueeSelection").asInstanceOf[FunctionComponent[IMarqueeSelectionProps]]
 
-inline def Nav: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.navTypesMod.INavProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Nav").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.navTypesMod.INavProps]]
+inline def MeasuredContext: Context[IsMeasured] = ^.asInstanceOf[js.Dynamic].selectDynamic("MeasuredContext").asInstanceOf[Context[IsMeasured]]
 
-inline def NormalPeoplePicker: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NormalPeoplePicker").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps]]
+inline def MessageBar: FunctionComponent[IMessageBarProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("MessageBar").asInstanceOf[FunctionComponent[IMessageBarProps]]
 
-inline def ONKEYDOWN_TIMEOUT_DURATION: /* 1000 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ONKEYDOWN_TIMEOUT_DURATION").asInstanceOf[/* 1000 */ scala.Double]
+inline def Modal: FunctionComponent[IModalProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Modal").asInstanceOf[FunctionComponent[IModalProps]]
 
-inline def OverflowSet: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OverflowSet").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps]]
+inline def Nav: FunctionComponent[INavProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Nav").asInstanceOf[FunctionComponent[INavProps]]
 
-inline def Overlay: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.overlayTypesMod.IOverlayProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Overlay").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.overlayTypesMod.IOverlayProps]]
+inline def NormalPeoplePicker: FunctionComponent[IPeoplePickerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("NormalPeoplePicker").asInstanceOf[FunctionComponent[IPeoplePickerProps]]
 
-inline def Panel: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.panelTypesMod.IPanelProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Panel").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.panelTypesMod.IPanelProps]]
+inline def ONKEYDOWN_TIMEOUT_DURATION: /* 1000 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ONKEYDOWN_TIMEOUT_DURATION").asInstanceOf[/* 1000 */ Double]
 
-inline def PeoplePickerItem: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PeoplePickerItem").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedProps]]
+inline def OverflowSet: FunctionComponent[IOverflowSetProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("OverflowSet").asInstanceOf[FunctionComponent[IOverflowSetProps]]
 
-inline def PeoplePickerItemBase(props: typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedProps): typings.react.mod.global.JSX.Element = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PeoplePickerItemBase")(props.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
+inline def Overlay: FunctionComponent[IOverlayProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Overlay").asInstanceOf[FunctionComponent[IOverlayProps]]
 
-inline def PeoplePickerItemSuggestion: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PeoplePickerItemSuggestion").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionProps]]
+inline def Panel: FunctionComponent[IPanelProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Panel").asInstanceOf[FunctionComponent[IPanelProps]]
 
-inline def PeoplePickerItemSuggestionBase(props: typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionProps): typings.react.mod.global.JSX.Element = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PeoplePickerItemSuggestionBase")(props.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
+inline def PeoplePickerItem: FunctionComponent[IPeoplePickerItemSelectedProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("PeoplePickerItem").asInstanceOf[FunctionComponent[IPeoplePickerItemSelectedProps]]
 
-inline def Persona: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.personaTypesMod.IPersonaProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Persona").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.personaTypesMod.IPersonaProps]]
+inline def PeoplePickerItemBase(props: IPeoplePickerItemSelectedProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PeoplePickerItemBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def PersonaCoin: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PersonaCoin").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps]]
+inline def PeoplePickerItemSuggestion: FunctionComponent[IPeoplePickerItemSuggestionProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("PeoplePickerItemSuggestion").asInstanceOf[FunctionComponent[IPeoplePickerItemSuggestionProps]]
 
-inline def Pivot: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.pivotTypesMod.IPivotProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Pivot").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.pivotTypesMod.IPivotProps]]
+inline def PeoplePickerItemSuggestionBase(props: IPeoplePickerItemSuggestionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PeoplePickerItemSuggestionBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def PlainCard: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.plainCardTypesMod.IPlainCardProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PlainCard").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.plainCardTypesMod.IPlainCardProps]]
+inline def Persona: FunctionComponent[IPersonaProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Persona").asInstanceOf[FunctionComponent[IPersonaProps]]
 
-inline def ProgressIndicator: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.progressIndicatorTypesMod.IProgressIndicatorProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ProgressIndicator").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.progressIndicatorTypesMod.IProgressIndicatorProps]]
+inline def PersonaCoin: FunctionComponent[IPersonaCoinProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("PersonaCoin").asInstanceOf[FunctionComponent[IPersonaCoinProps]]
 
-inline def RGBA_REGEX: typings.std.RegExp = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_REGEX").asInstanceOf[typings.std.RegExp]
+inline def Pivot: FunctionComponent[IPivotProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Pivot").asInstanceOf[FunctionComponent[IPivotProps]]
 
-inline def Rating: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.ratingTypesMod.IRatingProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Rating").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.ratingTypesMod.IRatingProps]]
+inline def PlainCard: FunctionComponent[IPlainCardProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("PlainCard").asInstanceOf[FunctionComponent[IPlainCardProps]]
 
-inline def SELECTION_CHANGE: /* "change" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SELECTION_CHANGE").asInstanceOf[/* "change" */ java.lang.String]
+inline def ProgressIndicator: FunctionComponent[IProgressIndicatorProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ProgressIndicator").asInstanceOf[FunctionComponent[IProgressIndicatorProps]]
 
-inline def ScreenWidthMaxLarge: scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMaxLarge").asInstanceOf[scala.Double]
+inline def RGBA_REGEX: js.RegExp = ^.asInstanceOf[js.Dynamic].selectDynamic("RGBA_REGEX").asInstanceOf[js.RegExp]
 
-inline def ScreenWidthMaxMedium: scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMaxMedium").asInstanceOf[scala.Double]
+inline def Rating: FunctionComponent[IRatingProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Rating").asInstanceOf[FunctionComponent[IRatingProps]]
 
-inline def ScreenWidthMaxSmall: scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMaxSmall").asInstanceOf[scala.Double]
+inline def SELECTION_CHANGE: /* "change" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SELECTION_CHANGE").asInstanceOf[/* "change" */ String]
 
-inline def ScreenWidthMaxXLarge: scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMaxXLarge").asInstanceOf[scala.Double]
+inline def SELECTION_ITEMS_CHANGE: /* "items-change" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SELECTION_ITEMS_CHANGE").asInstanceOf[/* "items-change" */ String]
 
-inline def ScreenWidthMaxXXLarge: scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMaxXXLarge").asInstanceOf[scala.Double]
+inline def ScreenWidthMaxLarge: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMaxLarge").asInstanceOf[Double]
 
-inline def ScreenWidthMinLarge: /* 640 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinLarge").asInstanceOf[/* 640 */ scala.Double]
+inline def ScreenWidthMaxMedium: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMaxMedium").asInstanceOf[Double]
 
-inline def ScreenWidthMinMedium: /* 480 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinMedium").asInstanceOf[/* 480 */ scala.Double]
+inline def ScreenWidthMaxSmall: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMaxSmall").asInstanceOf[Double]
 
-inline def ScreenWidthMinSmall: /* 320 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinSmall").asInstanceOf[/* 320 */ scala.Double]
+inline def ScreenWidthMaxXLarge: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMaxXLarge").asInstanceOf[Double]
 
-inline def ScreenWidthMinUhfMobile: /* 768 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinUhfMobile").asInstanceOf[/* 768 */ scala.Double]
+inline def ScreenWidthMaxXXLarge: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMaxXXLarge").asInstanceOf[Double]
 
-inline def ScreenWidthMinXLarge: /* 1024 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinXLarge").asInstanceOf[/* 1024 */ scala.Double]
+inline def ScreenWidthMinLarge: /* 640 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinLarge").asInstanceOf[/* 640 */ Double]
 
-inline def ScreenWidthMinXXLarge: /* 1366 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinXXLarge").asInstanceOf[/* 1366 */ scala.Double]
+inline def ScreenWidthMinMedium: /* 480 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinMedium").asInstanceOf[/* 480 */ Double]
 
-inline def ScreenWidthMinXXXLarge: /* 1920 */ scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinXXXLarge").asInstanceOf[/* 1920 */ scala.Double]
+inline def ScreenWidthMinSmall: /* 320 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinSmall").asInstanceOf[/* 320 */ Double]
 
-inline def ScrollablePane: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScrollablePane").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneProps]]
+inline def ScreenWidthMinUhfMobile: /* 768 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinUhfMobile").asInstanceOf[/* 768 */ Double]
 
-inline def ScrollablePaneContext: typings.react.mod.Context[typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneContext] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScrollablePaneContext").asInstanceOf[typings.react.mod.Context[typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneContext]]
+inline def ScreenWidthMinXLarge: /* 1024 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinXLarge").asInstanceOf[/* 1024 */ Double]
 
-inline def SearchBox: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SearchBox").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps]]
+inline def ScreenWidthMinXXLarge: /* 1366 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinXXLarge").asInstanceOf[/* 1366 */ Double]
 
-inline def Separator: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.separatorTypesMod.ISeparatorProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Separator").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.separatorTypesMod.ISeparatorProps]]
+inline def ScreenWidthMinXXXLarge: /* 1920 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ScreenWidthMinXXXLarge").asInstanceOf[/* 1920 */ Double]
 
-inline def SeparatorBase: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.separatorTypesMod.ISeparatorProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SeparatorBase").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.separatorTypesMod.ISeparatorProps]]
+inline def ScrollablePane: FunctionComponent[IScrollablePaneProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ScrollablePane").asInstanceOf[FunctionComponent[IScrollablePaneProps]]
 
-inline def Shimmer: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerTypesMod.IShimmerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Shimmer").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerTypesMod.IShimmerProps]]
+inline def ScrollablePaneContext: Context[IScrollablePaneContext] = ^.asInstanceOf[js.Dynamic].selectDynamic("ScrollablePaneContext").asInstanceOf[Context[IScrollablePaneContext]]
 
-inline def ShimmerCircle: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerCircleTypesMod.IShimmerCircleProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerCircle").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerCircleTypesMod.IShimmerCircleProps]]
+inline def SearchBox: FunctionComponent[ISearchBoxProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SearchBox").asInstanceOf[FunctionComponent[ISearchBoxProps]]
 
-inline def ShimmerCircleBase: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerCircleTypesMod.IShimmerCircleProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerCircleBase").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerCircleTypesMod.IShimmerCircleProps]]
+inline def Separator: FunctionComponent[ISeparatorProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Separator").asInstanceOf[FunctionComponent[ISeparatorProps]]
 
-inline def ShimmerElementsGroup: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.shimmerElementsGroupTypesMod.IShimmerElementsGroupProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerElementsGroup").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.shimmerElementsGroupTypesMod.IShimmerElementsGroupProps]]
+inline def SeparatorBase: FunctionComponent[ISeparatorProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SeparatorBase").asInstanceOf[FunctionComponent[ISeparatorProps]]
 
-inline def ShimmerElementsGroupBase: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.shimmerElementsGroupTypesMod.IShimmerElementsGroupProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerElementsGroupBase").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.shimmerElementsGroupTypesMod.IShimmerElementsGroupProps]]
+inline def Shimmer: FunctionComponent[IShimmerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Shimmer").asInstanceOf[FunctionComponent[IShimmerProps]]
 
-inline def ShimmerGap: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerGapTypesMod.IShimmerGapProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerGap").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerGapTypesMod.IShimmerGapProps]]
+inline def ShimmerCircle: FunctionComponent[IShimmerCircleProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerCircle").asInstanceOf[FunctionComponent[IShimmerCircleProps]]
 
-inline def ShimmerGapBase: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerGapTypesMod.IShimmerGapProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerGapBase").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerGapTypesMod.IShimmerGapProps]]
+inline def ShimmerCircleBase: FunctionComponent[IShimmerCircleProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerCircleBase").asInstanceOf[FunctionComponent[IShimmerCircleProps]]
 
-inline def ShimmerLine: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerLineTypesMod.IShimmerLineProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerLine").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerLineTypesMod.IShimmerLineProps]]
+inline def ShimmerElementsGroup: FunctionComponent[IShimmerElementsGroupProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerElementsGroup").asInstanceOf[FunctionComponent[IShimmerElementsGroupProps]]
 
-inline def ShimmerLineBase: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerLineTypesMod.IShimmerLineProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerLineBase").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.shimmerLineTypesMod.IShimmerLineProps]]
+inline def ShimmerElementsGroupBase: FunctionComponent[IShimmerElementsGroupProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerElementsGroupBase").asInstanceOf[FunctionComponent[IShimmerElementsGroupProps]]
 
-inline def ShimmeredDetailsList: typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ShimmeredDetailsList").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps]]
+inline def ShimmerGap: FunctionComponent[IShimmerGapProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerGap").asInstanceOf[FunctionComponent[IShimmerGapProps]]
 
-inline def Slider: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.sliderTypesMod.ISliderProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Slider").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.sliderTypesMod.ISliderProps]]
+inline def ShimmerGapBase: FunctionComponent[IShimmerGapProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerGapBase").asInstanceOf[FunctionComponent[IShimmerGapProps]]
 
-inline def Spinner: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.spinnerTypesMod.ISpinnerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Spinner").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.spinnerTypesMod.ISpinnerProps]]
+inline def ShimmerLine: FunctionComponent[IShimmerLineProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerLine").asInstanceOf[FunctionComponent[IShimmerLineProps]]
 
-inline def StackItem: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.stackItemTypesMod.IStackItemProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StackItem").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.stackItemTypesMod.IStackItemProps]]
+inline def ShimmerLineBase: FunctionComponent[IShimmerLineProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ShimmerLineBase").asInstanceOf[FunctionComponent[IShimmerLineProps]]
 
-inline def SwatchColorPicker: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SwatchColorPicker").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerProps]]
+inline def ShimmeredDetailsList: FunctionComponent[IShimmeredDetailsListProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("ShimmeredDetailsList").asInstanceOf[FunctionComponent[IShimmeredDetailsListProps]]
 
-inline def TagItem: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TagItem").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps]]
+inline def Slider: FunctionComponent[ISliderProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Slider").asInstanceOf[FunctionComponent[ISliderProps]]
 
-inline def TagItemBase(props: typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps): typings.react.mod.global.JSX.Element = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TagItemBase")(props.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
+inline def Spinner: FunctionComponent[ISpinnerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Spinner").asInstanceOf[FunctionComponent[ISpinnerProps]]
 
-inline def TagItemSuggestion: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TagItemSuggestion").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionProps]]
+inline def StackItem: FunctionComponent[IStackItemProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("StackItem").asInstanceOf[FunctionComponent[IStackItemProps]]
 
-inline def TagItemSuggestionBase(props: typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionProps): typings.react.mod.global.JSX.Element = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TagItemSuggestionBase")(props.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.global.JSX.Element]
+inline def SwatchColorPicker: FunctionComponent[ISwatchColorPickerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SwatchColorPicker").asInstanceOf[FunctionComponent[ISwatchColorPickerProps]]
 
-inline def TagPicker: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.tagPickerTypesMod.ITagPickerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TagPicker").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.tagPickerTypesMod.ITagPickerProps]]
+inline def TagItem: FunctionComponent[ITagItemProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TagItem").asInstanceOf[FunctionComponent[ITagItemProps]]
 
-inline def TeachingBubble: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TeachingBubble").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps]]
+inline def TagItemBase(props: ITagItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TagItemBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def TeachingBubbleContent: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TeachingBubbleContent").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps]]
+inline def TagItemSuggestion: FunctionComponent[ITagItemSuggestionProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TagItemSuggestion").asInstanceOf[FunctionComponent[ITagItemSuggestionProps]]
 
-inline def Text: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.textTypesMod.ITextProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Text").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.textTypesMod.ITextProps]]
+inline def TagItemSuggestionBase(props: ITagItemSuggestionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TagItemSuggestionBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def TextField: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextField").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps]]
+inline def TagPicker: FunctionComponent[ITagPickerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TagPicker").asInstanceOf[FunctionComponent[ITagPickerProps]]
 
-inline def TextStyles: typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject[
-typings.officeUiFabricReact.textTypesMod.ITextProps, 
-typings.officeUiFabricReact.textTypesMod.ITextTokens, 
-typings.officeUiFabricReact.textTypesMod.ITextStyles] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextStyles").asInstanceOf[typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject[
-typings.officeUiFabricReact.textTypesMod.ITextProps, 
-typings.officeUiFabricReact.textTypesMod.ITextTokens, 
-typings.officeUiFabricReact.textTypesMod.ITextStyles]]
+inline def TeachingBubble: FunctionComponent[ITeachingBubbleProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TeachingBubble").asInstanceOf[FunctionComponent[ITeachingBubbleProps]]
 
-inline def TextView: typings.uifabricFoundation.libIcomponentMod.IViewComponent[typings.officeUiFabricReact.textTypesMod.ITextProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextView").asInstanceOf[typings.uifabricFoundation.libIcomponentMod.IViewComponent[typings.officeUiFabricReact.textTypesMod.ITextProps]]
+inline def TeachingBubbleContent: FunctionComponent[ITeachingBubbleProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TeachingBubbleContent").asInstanceOf[FunctionComponent[ITeachingBubbleProps]]
 
-inline def ThemeSettingName: /* "theme" */ java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ThemeSettingName").asInstanceOf[/* "theme" */ java.lang.String]
+inline def Text: FunctionComponent[ITextProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Text").asInstanceOf[FunctionComponent[ITextProps]]
 
-inline def Toggle: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.toggleTypesMod.IToggleProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Toggle").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.toggleTypesMod.IToggleProps]]
+inline def TextField: FunctionComponent[ITextFieldProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TextField").asInstanceOf[FunctionComponent[ITextFieldProps]]
 
-inline def Tooltip: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Tooltip").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps]]
+inline def TextStyles: IStylesFunctionOrObject[ITextProps, ITextTokens, ITextStyles] = ^.asInstanceOf[js.Dynamic].selectDynamic("TextStyles").asInstanceOf[IStylesFunctionOrObject[ITextProps, ITextTokens, ITextStyles]]
 
-inline def TooltipHost: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TooltipHost").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps]]
+inline def TextView: IViewComponent[ITextProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TextView").asInstanceOf[IViewComponent[ITextProps]]
 
-inline def VerticalDivider: typings.react.mod.FunctionComponent[typings.officeUiFabricReact.verticalDividerTypesMod.IVerticalDividerProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VerticalDivider").asInstanceOf[typings.react.mod.FunctionComponent[typings.officeUiFabricReact.verticalDividerTypesMod.IVerticalDividerProps]]
+inline def ThemeSettingName: /* "theme" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("ThemeSettingName").asInstanceOf[/* "theme" */ String]
 
-inline def WindowContext: typings.react.mod.Context[typings.fluentuiReactWindowProvider.windowProviderMod.WindowProviderProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("WindowContext").asInstanceOf[typings.react.mod.Context[typings.fluentuiReactWindowProvider.windowProviderMod.WindowProviderProps]]
+inline def Toggle: FunctionComponent[IToggleProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Toggle").asInstanceOf[FunctionComponent[IToggleProps]]
 
-inline def WindowProvider: typings.react.mod.FunctionComponent[typings.fluentuiReactWindowProvider.windowProviderMod.WindowProviderProps] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("WindowProvider").asInstanceOf[typings.react.mod.FunctionComponent[typings.fluentuiReactWindowProvider.windowProviderMod.WindowProviderProps]]
+inline def Tooltip: FunctionComponent[ITooltipProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Tooltip").asInstanceOf[FunctionComponent[ITooltipProps]]
 
-inline def addDirectionalKeyCode(which: scala.Double): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addDirectionalKeyCode")(which.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def TooltipHost: FunctionComponent[ITooltipHostProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("TooltipHost").asInstanceOf[FunctionComponent[ITooltipHostProps]]
 
-inline def addElementAtIndex[T](array: js.Array[T], index: scala.Double, itemToAdd: T): js.Array[T] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addElementAtIndex")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], itemToAdd.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def VerticalDivider: FunctionComponent[IVerticalDividerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("VerticalDivider").asInstanceOf[FunctionComponent[IVerticalDividerProps]]
 
-inline def allowOverscrollOnElement(element: scala.Null, events: typings.uifabricUtilities.eventGroupMod.EventGroup): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def allowOverscrollOnElement(element: typings.std.HTMLElement, events: typings.uifabricUtilities.eventGroupMod.EventGroup): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def WindowContext: Context[WindowProviderProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("WindowContext").asInstanceOf[Context[WindowProviderProps]]
 
-inline def allowScrollOnElement(element: scala.Null, events: typings.uifabricUtilities.eventGroupMod.EventGroup): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def allowScrollOnElement(element: typings.std.HTMLElement, events: typings.uifabricUtilities.eventGroupMod.EventGroup): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def WindowProvider: FunctionComponent[WindowProviderProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("WindowProvider").asInstanceOf[FunctionComponent[WindowProviderProps]]
 
-inline def anchorProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("anchorProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def addDays(date: js.Date, days: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addDays")(date.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[js.Date]
 
-inline def appendFunction(parent: js.Any, functions: js.Any*): js.Function0[scala.Unit] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("appendFunction")(parent.asInstanceOf[js.Any], functions.asInstanceOf[js.Any])).asInstanceOf[js.Function0[scala.Unit]]
+inline def addDirectionalKeyCode(which: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDirectionalKeyCode")(which.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def addElementAtIndex[T](array: js.Array[T], index: Double, itemToAdd: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addElementAtIndex")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], itemToAdd.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 
-inline def asAsync[TProps](options: typings.uifabricUtilities.asAsyncMod.IAsAsyncOptions[TProps]): typings.react.mod.ForwardRefExoticComponent[
-(typings.react.mod.PropsWithoutRef[TProps & typings.uifabricUtilities.anon.AsyncPlaceholder]) & typings.react.mod.RefAttributes[typings.react.mod.ElementType[TProps]]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("asAsync")(options.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-(typings.react.mod.PropsWithoutRef[TProps & typings.uifabricUtilities.anon.AsyncPlaceholder]) & typings.react.mod.RefAttributes[typings.react.mod.ElementType[TProps]]]]
+inline def addMonths(date: js.Date, months: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMonths")(date.asInstanceOf[js.Any], months.asInstanceOf[js.Any])).asInstanceOf[js.Date]
 
-inline def assertNever(x: scala.Nothing): scala.Nothing = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("assertNever")(x.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+inline def addWeeks(date: js.Date, weeks: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addWeeks")(date.asInstanceOf[js.Any], weeks.asInstanceOf[js.Any])).asInstanceOf[js.Date]
 
-inline def assign(target: js.Any, args: js.Any*): js.Any = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def addYears(date: js.Date, years: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addYears")(date.asInstanceOf[js.Any], years.asInstanceOf[js.Any])).asInstanceOf[js.Date]
 
-inline def audioProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("audioProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def allowOverscrollOnElement(element: Null, events: typings.uifabricUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def allowOverscrollOnElement(element: HTMLElement, events: typings.uifabricUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def baseElementEvents: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("baseElementEvents").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def allowScrollOnElement(element: Null, events: typings.uifabricUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def allowScrollOnElement(element: HTMLElement, events: typings.uifabricUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def baseElementProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("baseElementProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def anchorProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("anchorProperties").asInstanceOf[Record[String, Double]]
+
+inline def appendFunction(parent: Any, functions: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("appendFunction")(scala.List(parent.asInstanceOf[js.Any]).`++`(functions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
+
+inline def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
+inline def asAsync[TProps](options: IAsAsyncOptions[TProps]): ForwardRefExoticComponent[
+(PropsWithoutRef[TProps & AsyncPlaceholder]) & RefAttributes[typings.react.mod.ElementType[TProps]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("asAsync")(options.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[
+(PropsWithoutRef[TProps & AsyncPlaceholder]) & RefAttributes[typings.react.mod.ElementType[TProps]]]]
+
+inline def assertNever(x: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNever")(x.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+
+inline def assign(target: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(scala.List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+
+inline def audioProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("audioProperties").asInstanceOf[Record[String, Double]]
+
+inline def baseElementEvents: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("baseElementEvents").asInstanceOf[Record[String, Double]]
+
+inline def baseElementProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("baseElementProperties").asInstanceOf[Record[String, Double]]
 
 inline def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ key in keyof T ]:? string}
-  */ typings.officeUiFabricReact.officeUiFabricReactStrings.buildClassMap & org.scalablytyped.runtime.TopLevel[js.Any] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("buildClassMap")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  */ typings.officeUiFabricReact.officeUiFabricReactStrings.buildClassMap & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClassMap")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ key in keyof T ]:? string}
-  */ typings.officeUiFabricReact.officeUiFabricReactStrings.buildClassMap & org.scalablytyped.runtime.TopLevel[js.Any]]
+  */ typings.officeUiFabricReact.officeUiFabricReactStrings.buildClassMap & TopLevel[Any]]
 
 inline def buildColumns(
-  items: js.Array[js.Any],
-  canResizeColumns: js.UndefOr[scala.Boolean],
+  items: js.Array[Any],
+  canResizeColumns: js.UndefOr[Boolean],
   onColumnClick: js.UndefOr[
-  js.Function2[
-    /* ev */ typings.react.mod.MouseEvent[typings.std.HTMLElement, typings.react.mod.NativeMouseEvent], 
-    /* column */ typings.officeUiFabricReact.detailsListTypesMod.IColumn, 
-    scala.Unit
-  ]
+  js.Function2[/* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* column */ IColumn, Unit]
 ],
-  sortedColumnKey: js.UndefOr[java.lang.String],
-  isSortedDescending: js.UndefOr[scala.Boolean],
-  groupedColumnKey: js.UndefOr[java.lang.String],
-  isMultiline: js.UndefOr[scala.Boolean]
-): js.Array[typings.officeUiFabricReact.detailsListTypesMod.IColumn] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("buildColumns")(items.asInstanceOf[js.Any], canResizeColumns.asInstanceOf[js.Any], onColumnClick.asInstanceOf[js.Any], sortedColumnKey.asInstanceOf[js.Any], isSortedDescending.asInstanceOf[js.Any], groupedColumnKey.asInstanceOf[js.Any], isMultiline.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.officeUiFabricReact.detailsListTypesMod.IColumn]]
+  sortedColumnKey: js.UndefOr[String],
+  isSortedDescending: js.UndefOr[Boolean],
+  groupedColumnKey: js.UndefOr[String],
+  isMultiline: js.UndefOr[Boolean]
+): js.Array[IColumn] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildColumns")(items.asInstanceOf[js.Any], canResizeColumns.asInstanceOf[js.Any], onColumnClick.asInstanceOf[js.Any], sortedColumnKey.asInstanceOf[js.Any], isSortedDescending.asInstanceOf[js.Any], groupedColumnKey.asInstanceOf[js.Any], isMultiline.asInstanceOf[js.Any])).asInstanceOf[js.Array[IColumn]]
 
-inline def buildKeytipConfigMap(config: typings.officeUiFabricReact.keytipConfigMod.IKeytipConfig): typings.officeUiFabricReact.keytipConfigMod.IKeytipConfigMap = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("buildKeytipConfigMap")(config.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.keytipConfigMod.IKeytipConfigMap]
+inline def buildKeytipConfigMap(config: IKeytipConfig): IKeytipConfigMap = ^.asInstanceOf[js.Dynamic].applyDynamic("buildKeytipConfigMap")(config.asInstanceOf[js.Any]).asInstanceOf[IKeytipConfigMap]
 
-inline def buttonProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("buttonProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def buttonProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("buttonProperties").asInstanceOf[Record[String, Double]]
 
-inline def calculatePrecision(value: java.lang.String): scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
-inline def calculatePrecision(value: scala.Double): scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def calculatePrecision(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+inline def calculatePrecision(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def canAnyMenuItemsCheck(items: js.Array[typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem]): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("canAnyMenuItemsCheck")(items.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def canAnyMenuItemsCheck(items: js.Array[IContextualMenuItem]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canAnyMenuItemsCheck")(items.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def clamp(value: scala.Double, max: scala.Double): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def clamp(value: scala.Double, max: scala.Double, min: scala.Double): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def clamp(value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def clamp(value: Double, max: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](): js.Function2[
-/* getStyles */ js.UndefOr[
-  typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-], 
+inline def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: IStyleSet[TStyleSet] */](): js.Function2[
+/* getStyles */ js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]], 
 /* styleProps */ js.UndefOr[TStyleProps], 
-typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[TStyleSet]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("classNamesFunction")().asInstanceOf[js.Function2[
-/* getStyles */ js.UndefOr[
-  typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-], 
+IProcessedStyleSet[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("classNamesFunction")().asInstanceOf[js.Function2[
+/* getStyles */ js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]], 
 /* styleProps */ js.UndefOr[TStyleProps], 
-typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[TStyleSet]]]
-inline def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](options: typings.uifabricUtilities.classNamesFunctionMod.IClassNamesFunctionOptions): js.Function2[
-/* getStyles */ js.UndefOr[
-  typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-], 
+IProcessedStyleSet[TStyleSet]]]
+inline def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: IStyleSet[TStyleSet] */](options: IClassNamesFunctionOptions): js.Function2[
+/* getStyles */ js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]], 
 /* styleProps */ js.UndefOr[TStyleProps], 
-typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[TStyleSet]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("classNamesFunction")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-/* getStyles */ js.UndefOr[
-  typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-], 
+IProcessedStyleSet[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("classNamesFunction")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+/* getStyles */ js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]], 
 /* styleProps */ js.UndefOr[TStyleProps], 
-typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[TStyleSet]]]
+IProcessedStyleSet[TStyleSet]]]
 
-inline def colGroupProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("colGroupProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def colGroupProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("colGroupProperties").asInstanceOf[Record[String, Double]]
 
-inline def colProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("colProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def colProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("colProperties").asInstanceOf[Record[String, Double]]
 
-inline def composeComponentAs[TProps](
-  outer: typings.uifabricUtilities.icomponentasMod.IComponentAs[TProps],
-  inner: typings.uifabricUtilities.icomponentasMod.IComponentAs[TProps]
-): typings.uifabricUtilities.icomponentasMod.IComponentAs[TProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("composeComponentAs")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.icomponentasMod.IComponentAs[TProps]]
+inline def compareDatePart(date1: js.Date, date2: js.Date): Number = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDatePart")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Number]
 
-inline def composeRenderFunction[TProps](
-  outer: typings.uifabricUtilities.irenderfunctionMod.IRenderFunction[TProps],
-  inner: typings.uifabricUtilities.irenderfunctionMod.IRenderFunction[TProps]
-): typings.uifabricUtilities.irenderfunctionMod.IRenderFunction[TProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("composeRenderFunction")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.irenderfunctionMod.IRenderFunction[TProps]]
+inline def compareDates(date1: js.Date, date2: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def concatStyleSets[TStyleSet](): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]]]
-inline def concatStyleSets[TStyleSet](styleSet: TStyleSet): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]]]
-inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: TStyleSet2): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: scala.Null, styleSet2: TStyleSet2): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: scala.Unit, styleSet2: TStyleSet2): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
+inline def composeComponentAs[TProps](outer: IComponentAs[TProps], inner: IComponentAs[TProps]): IComponentAs[TProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeComponentAs")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any])).asInstanceOf[IComponentAs[TProps]]
 
-inline def concatStyleSetsWithProps[TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  styleProps: TStyleProps,
-  allStyles: (js.UndefOr[
-  typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-])*
-): typings.uifabricMergeStyles.deepPartialMod.DeepPartial[TStyleSet] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSetsWithProps")(styleProps.asInstanceOf[js.Any], allStyles.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.deepPartialMod.DeepPartial[TStyleSet]]
+inline def composeRenderFunction[TProps](outer: IRenderFunction[TProps], inner: IRenderFunction[TProps]): IRenderFunction[TProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeRenderFunction")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any])).asInstanceOf[IRenderFunction[TProps]]
 
-inline def concatStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def concatStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
+inline def concatStyleSets[TStyleSet](): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]
+inline def concatStyleSets[TStyleSet](styleSet: TStyleSet): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]
+inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: Unit, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
 
-inline def concatStyleSets_false(
-  styleSets: (js.UndefOr[
-  typings.uifabricMergeStyles.istylesetMod.IStyleSet[org.scalablytyped.runtime.StringDictionary[js.Any]] | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-])*
-): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[js.Any] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSets.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[js.Any]]
-inline def concatStyleSets_false[TStyleSet](styleSet: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]]]
-inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: scala.Null, styleSet2: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: scala.Unit, styleSet2: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`, styleSet2: TStyleSet2): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def concatStyleSets_false[TStyleSet1, TStyleSet2](
-  styleSet1: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`,
-  styleSet2: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`
-): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
+inline def concatStyleSetsWithProps[TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](styleProps: TStyleProps, allStyles: (js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]])*): DeepPartial[TStyleSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSetsWithProps")(scala.List(styleProps.asInstanceOf[js.Any]).`++`(allStyles.asInstanceOf[Seq[js.Any]])*).asInstanceOf[DeepPartial[TStyleSet]]
+
+inline def concatStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def concatStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+
+inline def concatStyleSets_false(styleSets: (js.UndefOr[IStyleSet[StringDictionary[Any]] | `false` | Null])*): IConcatenatedStyleSet[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSets.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IConcatenatedStyleSet[Any]]
+inline def concatStyleSets_false[TStyleSet](styleSet: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]
+inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: Unit, styleSet2: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: `false`, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def concatStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: `false`, styleSet2: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
 inline def concatStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3](
-  styleSet1: js.UndefOr[
-  TStyleSet1 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet2: js.UndefOr[
-  TStyleSet2 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet3: js.UndefOr[
-  TStyleSet3 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-]
-): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3]]]
+  styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+  styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+  styleSet3: js.UndefOr[TStyleSet3 | `false` | Null]
+): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3]]]
 inline def concatStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4](
-  styleSet1: js.UndefOr[
-  TStyleSet1 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet2: js.UndefOr[
-  TStyleSet2 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet3: js.UndefOr[
-  TStyleSet3 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet4: js.UndefOr[
-  TStyleSet4 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-]
-): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet4]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet4]]]
+  styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+  styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+  styleSet3: js.UndefOr[TStyleSet3 | `false` | Null],
+  styleSet4: js.UndefOr[TStyleSet4 | `false` | Null]
+): IConcatenatedStyleSet[
+ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[
+ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4]]]
 inline def concatStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4, TStyleSet5](
-  styleSet1: js.UndefOr[
-  TStyleSet1 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet2: js.UndefOr[
-  TStyleSet2 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet3: js.UndefOr[
-  TStyleSet3 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet4: js.UndefOr[
-  TStyleSet4 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet5: js.UndefOr[
-  TStyleSet5 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-]
-): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet4] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet5]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any], styleSet5.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet4] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet5]]]
+  styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+  styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+  styleSet3: js.UndefOr[TStyleSet3 | `false` | Null],
+  styleSet4: js.UndefOr[TStyleSet4 | `false` | Null],
+  styleSet5: js.UndefOr[TStyleSet5 | `false` | Null]
+): IConcatenatedStyleSet[
+ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4] & ObjectOnly[TStyleSet5]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any], styleSet5.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[
+ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4] & ObjectOnly[TStyleSet5]]]
 inline def concatStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4, TStyleSet5, TStyleSet6](
-  styleSet1: js.UndefOr[
-  TStyleSet1 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet2: js.UndefOr[
-  TStyleSet2 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet3: js.UndefOr[
-  TStyleSet3 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet4: js.UndefOr[
-  TStyleSet4 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet5: js.UndefOr[
-  TStyleSet5 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet6: js.UndefOr[
-  TStyleSet6 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-]
-): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet4] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet5] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet6]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any], styleSet5.asInstanceOf[js.Any], styleSet6.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet4] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet5] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet6]]]
+  styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+  styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+  styleSet3: js.UndefOr[TStyleSet3 | `false` | Null],
+  styleSet4: js.UndefOr[TStyleSet4 | `false` | Null],
+  styleSet5: js.UndefOr[TStyleSet5 | `false` | Null],
+  styleSet6: js.UndefOr[TStyleSet6 | `false` | Null]
+): IConcatenatedStyleSet[
+ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4] & ObjectOnly[TStyleSet5] & ObjectOnly[TStyleSet6]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any], styleSet5.asInstanceOf[js.Any], styleSet6.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[
+ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4] & ObjectOnly[TStyleSet5] & ObjectOnly[TStyleSet6]]]
 
-inline def concatStyleSets_false_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`): typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
+inline def concatStyleSets_false_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: `false`): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
 
-inline def constructKeytip(
-  configMap: typings.officeUiFabricReact.keytipConfigMod.IKeytipConfigMap,
-  parentSequence: js.Array[java.lang.String],
-  keytip: typings.officeUiFabricReact.keytipConfigMod.IKeytipConfigItem
-): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("constructKeytip")(configMap.asInstanceOf[js.Any], parentSequence.asInstanceOf[js.Any], keytip.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def constructKeytip(configMap: IKeytipConfigMap, parentSequence: js.Array[String], keytip: IKeytipConfigItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("constructKeytip")(configMap.asInstanceOf[js.Any], parentSequence.asInstanceOf[js.Any], keytip.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def correctHSV(color: typings.officeUiFabricReact.interfacesMod.IHSV): typings.officeUiFabricReact.interfacesMod.IHSV = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("correctHSV")(color.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSV]
+inline def correctHSV(color: IHSV): IHSV = ^.asInstanceOf[js.Dynamic].applyDynamic("correctHSV")(color.asInstanceOf[js.Any]).asInstanceOf[IHSV]
 
-inline def correctHex(hex: java.lang.String): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("correctHex")(hex.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def correctHex(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("correctHex")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def correctRGB(color: typings.officeUiFabricReact.interfacesMod.IRGB): typings.officeUiFabricReact.interfacesMod.IRGB = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("correctRGB")(color.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IRGB]
+inline def correctRGB(color: IRGB): IRGB = ^.asInstanceOf[js.Dynamic].applyDynamic("correctRGB")(color.asInstanceOf[js.Any]).asInstanceOf[IRGB]
 
-inline def createArray[T](size: scala.Double, getItem: js.Function1[/* index */ scala.Double, T]): js.Array[T] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createArray")(size.asInstanceOf[js.Any], getItem.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def createArray[T](size: Double, getItem: js.Function1[/* index */ Double, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createArray")(size.asInstanceOf[js.Any], getItem.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 
-inline def createFontStyles(): typings.fluentuiTheme.ifontstylesMod.IFontStyles = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")().asInstanceOf[typings.fluentuiTheme.ifontstylesMod.IFontStyles]
-inline def createFontStyles(localeCode: java.lang.String): typings.fluentuiTheme.ifontstylesMod.IFontStyles = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")(localeCode.asInstanceOf[js.Any]).asInstanceOf[typings.fluentuiTheme.ifontstylesMod.IFontStyles]
+inline def createFontStyles(): IFontStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")().asInstanceOf[IFontStyles]
+inline def createFontStyles(localeCode: String): IFontStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")(localeCode.asInstanceOf[js.Any]).asInstanceOf[IFontStyles]
 
 inline def createGenericItem(
-  name: java.lang.String,
+  name: String,
   currentValidationState: typings.officeUiFabricReact.basePickerTypesMod.ValidationState
-): typings.officeUiFabricReact.anon.IGenericItemkeyKey = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createGenericItem")(name.asInstanceOf[js.Any], currentValidationState.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.anon.IGenericItemkeyKey]
+): IGenericItemkeyKey = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericItem")(name.asInstanceOf[js.Any], currentValidationState.asInstanceOf[js.Any])).asInstanceOf[IGenericItemkeyKey]
 
-inline def createItem(name: java.lang.String, isValid: scala.Boolean): typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel[typings.officeUiFabricReact.personaTypesMod.IPersonaProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createItem")(name.asInstanceOf[js.Any], isValid.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel[typings.officeUiFabricReact.personaTypesMod.IPersonaProps]]
+inline def createItem(name: String, isValid: Boolean): ISuggestionModel[IPersonaProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("createItem")(name.asInstanceOf[js.Any], isValid.asInstanceOf[js.Any])).asInstanceOf[ISuggestionModel[IPersonaProps]]
 
-inline def createMemoizer[F /* <: js.Function1[/* input */ js.Any, js.Any] */](getValue: F): F = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMemoizer")(getValue.asInstanceOf[js.Any]).asInstanceOf[F]
+inline def createMemoizer[F /* <: js.Function1[/* input */ Any, Any] */](getValue: F): F = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoizer")(getValue.asInstanceOf[js.Any]).asInstanceOf[F]
 
 inline def createMergedRef[TType, TValue](): js.Function1[
 /* repeated */ js.UndefOr[
-  (js.Function1[/* instance */ TType | TValue | scala.Null, scala.Unit]) | (typings.react.mod.RefObject[TType | TValue | scala.Null]) | scala.Null
+  (js.Function1[/* instance */ TType | TValue | Null, Unit]) | (RefObject[TType | TValue | Null]) | Null
 ], 
-js.Function1[/* newValue */ TType | TValue | scala.Null, scala.Unit]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMergedRef")().asInstanceOf[js.Function1[
+js.Function1[/* newValue */ TType | TValue | Null, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMergedRef")().asInstanceOf[js.Function1[
 /* repeated */ js.UndefOr[
-  (js.Function1[/* instance */ TType | TValue | scala.Null, scala.Unit]) | (typings.react.mod.RefObject[TType | TValue | scala.Null]) | scala.Null
+  (js.Function1[/* instance */ TType | TValue | Null, Unit]) | (RefObject[TType | TValue | Null]) | Null
 ], 
-js.Function1[/* newValue */ TType | TValue | scala.Null, scala.Unit]]]
+js.Function1[/* newValue */ TType | TValue | Null, Unit]]]
 inline def createMergedRef[TType, TValue](value: TValue): js.Function1[
 /* repeated */ js.UndefOr[
-  (js.Function1[/* instance */ TType | TValue | scala.Null, scala.Unit]) | (typings.react.mod.RefObject[TType | TValue | scala.Null]) | scala.Null
+  (js.Function1[/* instance */ TType | TValue | Null, Unit]) | (RefObject[TType | TValue | Null]) | Null
 ], 
-js.Function1[/* newValue */ TType | TValue | scala.Null, scala.Unit]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMergedRef")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+js.Function1[/* newValue */ TType | TValue | Null, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMergedRef")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* repeated */ js.UndefOr[
-  (js.Function1[/* instance */ TType | TValue | scala.Null, scala.Unit]) | (typings.react.mod.RefObject[TType | TValue | scala.Null]) | scala.Null
+  (js.Function1[/* instance */ TType | TValue | Null, Unit]) | (RefObject[TType | TValue | Null]) | Null
 ], 
-js.Function1[/* newValue */ TType | TValue | scala.Null, scala.Unit]]]
+js.Function1[/* newValue */ TType | TValue | Null, Unit]]]
 
-inline def createTheme(): typings.fluentuiTheme.themeMod.Theme = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")().asInstanceOf[typings.fluentuiTheme.themeMod.Theme]
-inline def createTheme(theme: scala.Unit, depComments: scala.Boolean): typings.fluentuiTheme.themeMod.Theme = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[typings.fluentuiTheme.themeMod.Theme]
-inline def createTheme(theme: typings.fluentuiTheme.themeMod.PartialTheme): typings.fluentuiTheme.themeMod.Theme = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[typings.fluentuiTheme.themeMod.Theme]
-inline def createTheme(theme: typings.fluentuiTheme.themeMod.PartialTheme, depComments: scala.Boolean): typings.fluentuiTheme.themeMod.Theme = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[typings.fluentuiTheme.themeMod.Theme]
+inline def createTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")().asInstanceOf[Theme]
+inline def createTheme(theme: Unit, depComments: Boolean): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[Theme]
+inline def createTheme(theme: PartialTheme): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Theme]
+inline def createTheme(theme: PartialTheme, depComments: Boolean): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[Theme]
 
-inline def css(args: typings.uifabricUtilities.cssMod.ICssInput*): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def css(args: ICssInput*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
 
-inline def cssColor(): js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")().asInstanceOf[js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB]]
-inline def cssColor(color: java.lang.String): js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB]]
+inline def cssColor(): js.UndefOr[IRGB] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")().asInstanceOf[js.UndefOr[IRGB]]
+inline def cssColor(color: String): js.UndefOr[IRGB] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IRGB]]
 
-inline def customizable(scope: java.lang.String, fields: js.Array[java.lang.String]): js.Function1[/* ComposedComponent */ typings.react.mod.ComponentType[js.Any], js.Any] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("customizable")(scope.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ComposedComponent */ typings.react.mod.ComponentType[js.Any], js.Any]]
-inline def customizable(scope: java.lang.String, fields: js.Array[java.lang.String], concatStyles: scala.Boolean): js.Function1[/* ComposedComponent */ typings.react.mod.ComponentType[js.Any], js.Any] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("customizable")(scope.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], concatStyles.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ComposedComponent */ typings.react.mod.ComponentType[js.Any], js.Any]]
+inline def customizable(scope: String, fields: js.Array[String]): js.Function1[/* ComposedComponent */ ComponentType[Any], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("customizable")(scope.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ComposedComponent */ ComponentType[Any], Any]]
+inline def customizable(scope: String, fields: js.Array[String], concatStyles: Boolean): js.Function1[/* ComposedComponent */ ComponentType[Any], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("customizable")(scope.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], concatStyles.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ComposedComponent */ ComponentType[Any], Any]]
 
-inline def disableBodyScroll(): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")().asInstanceOf[scala.Unit]
+inline def disableBodyScroll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")().asInstanceOf[Unit]
 
-inline def divProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("divProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def divProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("divProperties").asInstanceOf[Record[String, Double]]
 
-inline def doesElementContainFocus(element: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("doesElementContainFocus")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def doesElementContainFocus(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("doesElementContainFocus")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def elementContains(): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")().asInstanceOf[scala.Boolean]
-inline def elementContains(parent: scala.Null, child: scala.Null, allowVirtualParents: scala.Boolean): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def elementContains(parent: scala.Null, child: typings.std.HTMLElement): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def elementContains(parent: scala.Null, child: typings.std.HTMLElement, allowVirtualParents: scala.Boolean): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def elementContains(parent: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-inline def elementContains(parent: typings.std.HTMLElement, child: scala.Null, allowVirtualParents: scala.Boolean): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def elementContains(parent: typings.std.HTMLElement, child: typings.std.HTMLElement): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def elementContains(
-  parent: typings.std.HTMLElement,
-  child: typings.std.HTMLElement,
-  allowVirtualParents: scala.Boolean
-): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def elementContains(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")().asInstanceOf[Boolean]
+inline def elementContains(parent: Null, child: Null, allowVirtualParents: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def elementContains(parent: Null, child: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def elementContains(parent: Null, child: HTMLElement, allowVirtualParents: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def elementContains(parent: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def elementContains(parent: HTMLElement, child: Null, allowVirtualParents: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def elementContains(parent: HTMLElement, child: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def elementContains(parent: HTMLElement, child: HTMLElement, allowVirtualParents: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def elementContainsAttribute(element: typings.std.HTMLElement, attribute: java.lang.String): java.lang.String | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("elementContainsAttribute")(element.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | scala.Null]
+inline def elementContainsAttribute(element: HTMLElement, attribute: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("elementContainsAttribute")(element.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 
-inline def enableBodyScroll(): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("enableBodyScroll")().asInstanceOf[scala.Unit]
+inline def enableBodyScroll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBodyScroll")().asInstanceOf[Unit]
 
-inline def extendComponent[T /* <: typings.react.mod.Component[js.Object, js.Object, js.Any] */](
+inline def extendComponent[T /* <: Component[js.Object, js.Object, Any] */](
   parent: T,
   methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ key in keyof T ]:? T[key]}
-  */ typings.officeUiFabricReact.officeUiFabricReactStrings.extendComponent & org.scalablytyped.runtime.TopLevel[T]
-): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendComponent")(parent.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  */ typings.officeUiFabricReact.officeUiFabricReactStrings.extendComponent & TopLevel[T]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendComponent")(parent.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def filteredAssign(
-  isAllowed: js.Function1[/* propName */ java.lang.String, scala.Boolean],
-  target: js.Any,
-  args: js.Any*
-): js.Any = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("filteredAssign")(isAllowed.asInstanceOf[js.Any], target.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def filteredAssign(isAllowed: js.Function1[/* propName */ String, Boolean], target: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredAssign")((scala.List(isAllowed.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
 
-inline def find[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean]): js.UndefOr[T] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("find")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+inline def find[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 
-inline def findElementRecursive(
-  element: scala.Null,
-  matchFunction: js.Function1[/* element */ typings.std.HTMLElement, scala.Boolean]
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findElementRecursive")(element.asInstanceOf[js.Any], matchFunction.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
-inline def findElementRecursive(
-  element: typings.std.HTMLElement,
-  matchFunction: js.Function1[/* element */ typings.std.HTMLElement, scala.Boolean]
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findElementRecursive")(element.asInstanceOf[js.Any], matchFunction.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+inline def findElementRecursive(element: Null, matchFunction: js.Function1[/* element */ HTMLElement, Boolean]): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findElementRecursive")(element.asInstanceOf[js.Any], matchFunction.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+inline def findElementRecursive(element: HTMLElement, matchFunction: js.Function1[/* element */ HTMLElement, Boolean]): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findElementRecursive")(element.asInstanceOf[js.Any], matchFunction.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 
-inline def findIndex[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean]): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def findIndex[T](
-  array: js.Array[T],
-  cb: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean],
-  fromIndex: scala.Double
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def findIndex[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def findIndex[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean], fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def findScrollableParent(): js.UndefOr[typings.std.HTMLElement | typings.std.Window | scala.Null] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findScrollableParent")().asInstanceOf[js.UndefOr[typings.std.HTMLElement | typings.std.Window | scala.Null]]
-inline def findScrollableParent(startingElement: typings.std.HTMLElement): js.UndefOr[typings.std.HTMLElement | typings.std.Window | scala.Null] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findScrollableParent")(startingElement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.std.HTMLElement | typings.std.Window | scala.Null]]
+inline def findScrollableParent(): js.UndefOr[HTMLElement | Window | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findScrollableParent")().asInstanceOf[js.UndefOr[HTMLElement | Window | Null]]
+inline def findScrollableParent(startingElement: HTMLElement): js.UndefOr[HTMLElement | Window | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findScrollableParent")(startingElement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HTMLElement | Window | Null]]
 
-inline def fitContentToBounds(options: typings.uifabricUtilities.mathMod.IFitContentToBoundsOptions): typings.uifabricUtilities.isizeMod.ISize = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fitContentToBounds")(options.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricUtilities.isizeMod.ISize]
+inline def fitContentToBounds(options: IFitContentToBoundsOptions): ISize = ^.asInstanceOf[js.Dynamic].applyDynamic("fitContentToBounds")(options.asInstanceOf[js.Any]).asInstanceOf[ISize]
 
-inline def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+inline def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 
-inline def focusAsync(): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("focusAsync")().asInstanceOf[scala.Unit]
-inline def focusAsync(element: typings.std.HTMLElement): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("focusAsync")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def focusAsync(element: typings.uifabricUtilities.anon.Focus): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("focusAsync")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def focusAsync(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusAsync")().asInstanceOf[Unit]
+inline def focusAsync(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusAsync")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def focusAsync(element: Focus): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusAsync")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def focusClear(): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("focusClear")().asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+inline def focusClear(): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("focusClear")().asInstanceOf[IRawStyle]
 
-inline def focusFirstChild(rootElement: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("focusFirstChild")(rootElement.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def focusFirstChild(rootElement: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusFirstChild")(rootElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def fontFace(font: typings.uifabricMergeStyles.irawstylebaseMod.IFontFace): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fontFace")(font.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def fontFace(font: IFontFace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFace")(font.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def formProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("formProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def formProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("formProperties").asInstanceOf[Record[String, Double]]
 
-inline def format(s: java.lang.String, values: js.Any*): java.lang.String = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(s.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def format(s: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(s.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 
-inline def getAllSelectedOptions(
-  options: js.Array[typings.officeUiFabricReact.selectableOptionTypesMod.ISelectableOption],
-  selectedIndices: js.Array[scala.Double]
-): js.Array[typings.officeUiFabricReact.selectableOptionTypesMod.ISelectableOption] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getAllSelectedOptions")(options.asInstanceOf[js.Any], selectedIndices.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.officeUiFabricReact.selectableOptionTypesMod.ISelectableOption]]
+inline def getActivityItemClassNames(
+  styles: IActivityItemStyles,
+  className: String,
+  activityPersonas: js.Array[IPersonaProps],
+  isCompact: Boolean
+): IActivityItemClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getActivityItemClassNames")(styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], activityPersonas.asInstanceOf[js.Any], isCompact.asInstanceOf[js.Any])).asInstanceOf[IActivityItemClassNames]
 
-inline def getAriaDescribedBy(keySequences: js.Array[java.lang.String]): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getAriaDescribedBy")(keySequences.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getActivityItemStyles(
+  theme: js.UndefOr[ITheme],
+  customStyles: js.UndefOr[IActivityItemStyles],
+  animateBeaconSignal: js.UndefOr[Boolean],
+  beaconColorOne: js.UndefOr[String],
+  beaconColorTwo: js.UndefOr[String],
+  isCompact: js.UndefOr[Boolean]
+): IActivityItemStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getActivityItemStyles")(theme.asInstanceOf[js.Any], customStyles.asInstanceOf[js.Any], animateBeaconSignal.asInstanceOf[js.Any], beaconColorOne.asInstanceOf[js.Any], beaconColorTwo.asInstanceOf[js.Any], isCompact.asInstanceOf[js.Any])).asInstanceOf[IActivityItemStyles]
 
-inline def getBackgroundShade(
-  color: typings.officeUiFabricReact.interfacesMod.IColor,
-  shade: typings.officeUiFabricReact.shadesMod.Shade
-): typings.officeUiFabricReact.interfacesMod.IColor | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | scala.Null]
-inline def getBackgroundShade(
-  color: typings.officeUiFabricReact.interfacesMod.IColor,
-  shade: typings.officeUiFabricReact.shadesMod.Shade,
-  isInverted: scala.Boolean
-): typings.officeUiFabricReact.interfacesMod.IColor | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | scala.Null]
+inline def getAllSelectedOptions(options: js.Array[ISelectableOption], selectedIndices: js.Array[Double]): js.Array[ISelectableOption] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllSelectedOptions")(options.asInstanceOf[js.Any], selectedIndices.asInstanceOf[js.Any])).asInstanceOf[js.Array[ISelectableOption]]
 
-inline def getBoundsFromTargetWindow(
-  target: scala.Null,
-  targetWindow: typings.officeUiFabricReact.positioningTypesMod.IWindowWithSegments
-): typings.uifabricUtilities.irectangleMod.IRectangle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.irectangleMod.IRectangle]
-inline def getBoundsFromTargetWindow(
-  target: typings.std.Element,
-  targetWindow: typings.officeUiFabricReact.positioningTypesMod.IWindowWithSegments
-): typings.uifabricUtilities.irectangleMod.IRectangle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.irectangleMod.IRectangle]
-inline def getBoundsFromTargetWindow(
-  target: typings.std.MouseEvent,
-  targetWindow: typings.officeUiFabricReact.positioningTypesMod.IWindowWithSegments
-): typings.uifabricUtilities.irectangleMod.IRectangle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.irectangleMod.IRectangle]
-inline def getBoundsFromTargetWindow(
-  target: typings.uifabricUtilities.pointMod.Point,
-  targetWindow: typings.officeUiFabricReact.positioningTypesMod.IWindowWithSegments
-): typings.uifabricUtilities.irectangleMod.IRectangle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.irectangleMod.IRectangle]
+inline def getAriaDescribedBy(keySequences: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAriaDescribedBy")(keySequences.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getChildren(parent: typings.std.HTMLElement): js.Array[typings.std.HTMLElement] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.std.HTMLElement]]
-inline def getChildren(parent: typings.std.HTMLElement, allowVirtualChildren: scala.Boolean): js.Array[typings.std.HTMLElement] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any], allowVirtualChildren.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.std.HTMLElement]]
+inline def getBackgroundShade(color: IColor, shade: typings.officeUiFabricReact.shadesMod.Shade): IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any])).asInstanceOf[IColor | Null]
+inline def getBackgroundShade(color: IColor, shade: typings.officeUiFabricReact.shadesMod.Shade, isInverted: Boolean): IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[IColor | Null]
 
-inline def getColorFromHSV(hsv: typings.officeUiFabricReact.interfacesMod.IHSV): typings.officeUiFabricReact.interfacesMod.IColor = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromHSV")(hsv.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
-inline def getColorFromHSV(hsv: typings.officeUiFabricReact.interfacesMod.IHSV, a: scala.Double): typings.officeUiFabricReact.interfacesMod.IColor = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromHSV")(hsv.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+inline def getBasePickerStyles(props: IBasePickerStyleProps): IBasePickerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getBasePickerStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IBasePickerStyles]
 
-inline def getColorFromRGBA(rgba: typings.officeUiFabricReact.interfacesMod.IRGB): typings.officeUiFabricReact.interfacesMod.IColor = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromRGBA")(rgba.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+inline def getBoundsFromTargetWindow(target: Null, targetWindow: IWindowWithSegments): IRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[IRectangle]
+inline def getBoundsFromTargetWindow(target: typings.officeUiFabricReact.utilitiesMod.Rectangle, targetWindow: IWindowWithSegments): IRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[IRectangle]
+inline def getBoundsFromTargetWindow(target: typings.std.Element, targetWindow: IWindowWithSegments): IRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[IRectangle]
+inline def getBoundsFromTargetWindow(target: typings.std.MouseEvent, targetWindow: IWindowWithSegments): IRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[IRectangle]
+inline def getBoundsFromTargetWindow(target: Point, targetWindow: IWindowWithSegments): IRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsFromTargetWindow")(target.asInstanceOf[js.Any], targetWindow.asInstanceOf[js.Any])).asInstanceOf[IRectangle]
 
-inline def getColorFromString(inputColor: java.lang.String): js.UndefOr[typings.officeUiFabricReact.interfacesMod.IColor] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromString")(inputColor.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.officeUiFabricReact.interfacesMod.IColor]]
+inline def getChildren(parent: HTMLElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+inline def getChildren(parent: HTMLElement, allowVirtualChildren: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any], allowVirtualChildren.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
 
-inline def getContrastRatio(
-  color1: typings.officeUiFabricReact.interfacesMod.IColor,
-  color2: typings.officeUiFabricReact.interfacesMod.IColor
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getContrastRatio")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def getColorFromHSV(hsv: IHSV): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromHSV")(hsv.asInstanceOf[js.Any]).asInstanceOf[IColor]
+inline def getColorFromHSV(hsv: IHSV, a: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromHSV")(hsv.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[IColor]
 
-inline def getDetailsRowStyles(props: typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyleProps): typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyles = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsRowStyles")(props.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyles]
+inline def getColorFromRGBA(rgba: IRGB): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromRGBA")(rgba.asInstanceOf[js.Any]).asInstanceOf[IColor]
 
-inline def getDistanceBetweenPoints(point1: typings.uifabricUtilities.pointMod.Point, point2: typings.uifabricUtilities.pointMod.Point): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceBetweenPoints")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def getColorFromString(inputColor: String): js.UndefOr[IColor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromString")(inputColor.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IColor]]
 
-inline def getDocument(): js.UndefOr[typings.std.Document] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")().asInstanceOf[js.UndefOr[typings.std.Document]]
-inline def getDocument(rootElement: typings.std.HTMLElement): js.UndefOr[typings.std.Document] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(rootElement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.std.Document]]
+inline def getCommandBarStyles(props: ICommandBarStyleProps): ICommandBarStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getCommandBarStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICommandBarStyles]
 
-inline def getEdgeChromiumNoHighContrastAdjustSelector(): typings.uifabricStyling.anon.EdgeChromiumHighContrastSelector = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getEdgeChromiumNoHighContrastAdjustSelector")().asInstanceOf[typings.uifabricStyling.anon.EdgeChromiumHighContrastSelector]
+inline def getCommandButtonStyles(): IButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getCommandButtonStyles")().asInstanceOf[IButtonStyles]
+inline def getCommandButtonStyles(customStyles: IButtonStyles): IButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getCommandButtonStyles")(customStyles.asInstanceOf[js.Any]).asInstanceOf[IButtonStyles]
 
-inline def getElementIndexPath(fromElement: typings.std.HTMLElement, toElement: typings.std.HTMLElement): js.Array[scala.Double] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getElementIndexPath")(fromElement.asInstanceOf[js.Any], toElement.asInstanceOf[js.Any])).asInstanceOf[js.Array[scala.Double]]
+inline def getContextualMenuItemClassNames(
+  theme: ITheme,
+  disabled: Boolean,
+  expanded: Boolean,
+  checked: Boolean,
+  isAnchorLink: Boolean,
+  knownIcon: Boolean,
+  itemClassName: js.UndefOr[String],
+  dividerClassName: js.UndefOr[String],
+  iconClassName: js.UndefOr[String],
+  subMenuClassName: js.UndefOr[String],
+  primaryDisabled: js.UndefOr[Boolean],
+  className: js.UndefOr[String]
+): IContextualMenuItemStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getContextualMenuItemClassNames")(theme.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], isAnchorLink.asInstanceOf[js.Any], knownIcon.asInstanceOf[js.Any], itemClassName.asInstanceOf[js.Any], dividerClassName.asInstanceOf[js.Any], iconClassName.asInstanceOf[js.Any], subMenuClassName.asInstanceOf[js.Any], primaryDisabled.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[IContextualMenuItemStyles]
+
+inline def getContextualMenuItemStyles(props: IContextualMenuItemStyleProps): IContextualMenuItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getContextualMenuItemStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IContextualMenuItemStyles]
+
+inline def getContrastRatio(color1: IColor, color2: IColor): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getContrastRatio")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Double]
+
+inline def getDatePartHashValue(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatePartHashValue")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+
+inline def getDateRangeArray(
+  date: js.Date,
+  dateRangeType: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType,
+  firstDayOfWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek
+): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+inline def getDateRangeArray(
+  date: js.Date,
+  dateRangeType: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType,
+  firstDayOfWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek,
+  workWeekDays: js.Array[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek]
+): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+inline def getDateRangeArray(
+  date: js.Date,
+  dateRangeType: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType,
+  firstDayOfWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek,
+  workWeekDays: js.Array[typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek],
+  daysToSelectInDayView: Double
+): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any], daysToSelectInDayView.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+inline def getDateRangeArray(
+  date: js.Date,
+  dateRangeType: typings.fluentuiDateTimeUtilities.dateValuesMod.DateRangeType,
+  firstDayOfWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek,
+  workWeekDays: Unit,
+  daysToSelectInDayView: Double
+): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any], daysToSelectInDayView.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+
+inline def getDetailsColumnStyles(props: IDetailsColumnStyleProps): IDetailsColumnStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsColumnStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsColumnStyles]
+
+inline def getDetailsHeaderStyles(props: IDetailsHeaderStyleProps): IDetailsHeaderStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsHeaderStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsHeaderStyles]
+
+inline def getDetailsListStyles(props: IDetailsListStyleProps): IDetailsListStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsListStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsListStyles]
+
+inline def getDetailsRowCheckStyles(props: IDetailsRowCheckStyleProps): IDetailsRowCheckStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsRowCheckStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsRowCheckStyles]
+
+inline def getDetailsRowStyles(props: IDetailsRowStyleProps): IDetailsRowStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsRowStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsRowStyles]
+
+inline def getDistanceBetweenPoints(point1: Point, point2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceBetweenPoints")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Double]
+
+inline def getDocument(): js.UndefOr[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")().asInstanceOf[js.UndefOr[Document]]
+inline def getDocument(rootElement: HTMLElement): js.UndefOr[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocument")(rootElement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Document]]
+
+inline def getEdgeChromiumNoHighContrastAdjustSelector(): typings.uifabricStyling.anon.EdgeChromiumHighContrastSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("getEdgeChromiumNoHighContrastAdjustSelector")().asInstanceOf[typings.uifabricStyling.anon.EdgeChromiumHighContrastSelector]
+
+inline def getElementIndexPath(fromElement: HTMLElement, toElement: HTMLElement): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementIndexPath")(fromElement.asInstanceOf[js.Any], toElement.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+
+inline def getEndDateOfWeek(date: js.Date, firstDayOfWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndDateOfWeek")(date.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[js.Date]
 
 inline def getFadedOverflowStyle(
-  theme: typings.fluentuiTheme.ithemeMod.ITheme,
+  theme: ITheme,
   color: js.UndefOr[
-  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 124 */ js.Any
+  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 124 */ Any
 ],
-  direction: js.UndefOr[
-  typings.officeUiFabricReact.officeUiFabricReactStrings.horizontal | typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
-],
-  width: js.UndefOr[java.lang.String | scala.Double],
-  height: js.UndefOr[java.lang.String | scala.Double]
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFadedOverflowStyle")(theme.asInstanceOf[js.Any], color.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+  direction: js.UndefOr[horizontal | vertical],
+  width: js.UndefOr[String | Double],
+  height: js.UndefOr[String | Double]
+): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFadedOverflowStyle")(theme.asInstanceOf[js.Any], color.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
 
-inline def getFirstFocusable(rootElement: typings.std.HTMLElement, currentElement: typings.std.HTMLElement): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFirstFocusable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
-inline def getFirstFocusable(
-  rootElement: typings.std.HTMLElement,
-  currentElement: typings.std.HTMLElement,
-  includeElementsInFocusZones: scala.Boolean
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFirstFocusable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+inline def getFirstFocusable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstFocusable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+inline def getFirstFocusable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstFocusable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 
-inline def getFirstTabbable(rootElement: typings.std.HTMLElement, currentElement: typings.std.HTMLElement): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFirstTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+inline def getFirstTabbable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+inline def getFirstTabbable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 inline def getFirstTabbable(
-  rootElement: typings.std.HTMLElement,
-  currentElement: typings.std.HTMLElement,
-  includeElementsInFocusZones: scala.Boolean
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFirstTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+  rootElement: HTMLElement,
+  currentElement: HTMLElement,
+  includeElementsInFocusZones: Boolean,
+  checkNode: Boolean
+): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 inline def getFirstTabbable(
-  rootElement: typings.std.HTMLElement,
-  currentElement: typings.std.HTMLElement,
-  includeElementsInFocusZones: scala.Boolean,
-  checkNode: scala.Boolean
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFirstTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
-inline def getFirstTabbable(
-  rootElement: typings.std.HTMLElement,
-  currentElement: typings.std.HTMLElement,
-  includeElementsInFocusZones: scala.Unit,
-  checkNode: scala.Boolean
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFirstTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+  rootElement: HTMLElement,
+  currentElement: HTMLElement,
+  includeElementsInFocusZones: Unit,
+  checkNode: Boolean
+): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 
-inline def getFocusOutlineStyle(theme: typings.fluentuiTheme.ithemeMod.ITheme): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getFocusOutlineStyle(theme: typings.fluentuiTheme.ithemeMod.ITheme, inset: scala.Double): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getFocusOutlineStyle(theme: typings.fluentuiTheme.ithemeMod.ITheme, inset: scala.Double, width: scala.Double): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getFocusOutlineStyle(
-  theme: typings.fluentuiTheme.ithemeMod.ITheme,
-  inset: scala.Double,
-  width: scala.Double,
-  color: java.lang.String
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getFocusOutlineStyle(
-  theme: typings.fluentuiTheme.ithemeMod.ITheme,
-  inset: scala.Double,
-  width: scala.Unit,
-  color: java.lang.String
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getFocusOutlineStyle(theme: typings.fluentuiTheme.ithemeMod.ITheme, inset: scala.Unit, width: scala.Double): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getFocusOutlineStyle(
-  theme: typings.fluentuiTheme.ithemeMod.ITheme,
-  inset: scala.Unit,
-  width: scala.Double,
-  color: java.lang.String
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getFocusOutlineStyle(
-  theme: typings.fluentuiTheme.ithemeMod.ITheme,
-  inset: scala.Unit,
-  width: scala.Unit,
-  color: java.lang.String
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+inline def getFocusOutlineStyle(theme: ITheme): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[IRawStyle]
+inline def getFocusOutlineStyle(theme: ITheme, inset: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Unit, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getFocusOutlineStyle(theme: ITheme, inset: Unit, width: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getFocusOutlineStyle(theme: ITheme, inset: Unit, width: Double, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getFocusOutlineStyle(theme: ITheme, inset: Unit, width: Unit, color: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusOutlineStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
 
-inline def getFocusStyle(theme: typings.fluentuiTheme.ithemeMod.ITheme): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+inline def getFocusStyle(theme: ITheme): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[IRawStyle]
 inline def getFocusStyle(
-  theme: typings.fluentuiTheme.ithemeMod.ITheme,
-  inset: js.UndefOr[scala.Double],
-  position: js.UndefOr[
-  typings.officeUiFabricReact.officeUiFabricReactStrings.relative | typings.officeUiFabricReact.officeUiFabricReactStrings.absolute
-],
-  highContrastStyle: js.UndefOr[typings.uifabricMergeStyles.irawstyleMod.IRawStyle],
-  borderColor: js.UndefOr[java.lang.String],
-  outlineColor: js.UndefOr[java.lang.String],
-  isFocusedOnly: js.UndefOr[scala.Boolean]
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], position.asInstanceOf[js.Any], highContrastStyle.asInstanceOf[js.Any], borderColor.asInstanceOf[js.Any], outlineColor.asInstanceOf[js.Any], isFocusedOnly.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getFocusStyle(
-  theme: typings.fluentuiTheme.ithemeMod.ITheme,
-  options: typings.uifabricStyling.igetfocusstylesMod.IGetFocusStylesOptions
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+  theme: ITheme,
+  inset: js.UndefOr[Double],
+  position: js.UndefOr[relative | absolute],
+  highContrastStyle: js.UndefOr[IRawStyle],
+  borderColor: js.UndefOr[String],
+  outlineColor: js.UndefOr[String],
+  isFocusedOnly: js.UndefOr[Boolean]
+): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any], inset.asInstanceOf[js.Any], position.asInstanceOf[js.Any], highContrastStyle.asInstanceOf[js.Any], borderColor.asInstanceOf[js.Any], outlineColor.asInstanceOf[js.Any], isFocusedOnly.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getFocusStyle(theme: ITheme, options: IGetFocusStylesOptions): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusStyle")(theme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
 
-inline def getFocusableByIndexPath(parent: typings.std.HTMLElement, path: js.Array[scala.Double]): js.UndefOr[typings.std.HTMLElement] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableByIndexPath")(parent.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.std.HTMLElement]]
+inline def getFocusableByIndexPath(parent: HTMLElement, path: js.Array[Double]): js.UndefOr[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableByIndexPath")(parent.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[HTMLElement]]
 
-inline def getFontIcon(iconName: java.lang.String): typings.react.mod.ReactElement | scala.Null = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ReactElement | scala.Null]
-inline def getFontIcon(iconName: java.lang.String, className: java.lang.String): typings.react.mod.ReactElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactElement | scala.Null]
-inline def getFontIcon(iconName: java.lang.String, className: java.lang.String, ariaLabel: java.lang.String): typings.react.mod.ReactElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], ariaLabel.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactElement | scala.Null]
-inline def getFontIcon(iconName: java.lang.String, className: scala.Unit, ariaLabel: java.lang.String): typings.react.mod.ReactElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], ariaLabel.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactElement | scala.Null]
+inline def getFontIcon(iconName: String): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+inline def getFontIcon(iconName: String, className: String): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+inline def getFontIcon(iconName: String, className: String, ariaLabel: String): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], ariaLabel.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+inline def getFontIcon(iconName: String, className: Unit, ariaLabel: String): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontIcon")(iconName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], ariaLabel.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
 
-inline def getFullColorString(color: typings.officeUiFabricReact.interfacesMod.IColor): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFullColorString")(color.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getFullColorString(color: IColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getGlobalClassNames[T](
-  classNames: typings.uifabricStyling.getGlobalClassNamesMod.GlobalClassNames[T],
-  theme: typings.fluentuiTheme.ithemeMod.ITheme
-): typings.uifabricStyling.getGlobalClassNamesMod.GlobalClassNames[T] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalClassNames")(classNames.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricStyling.getGlobalClassNamesMod.GlobalClassNames[T]]
-inline def getGlobalClassNames[T](
-  classNames: typings.uifabricStyling.getGlobalClassNamesMod.GlobalClassNames[T],
-  theme: typings.fluentuiTheme.ithemeMod.ITheme,
-  disableGlobalClassNames: scala.Boolean
-): typings.uifabricStyling.getGlobalClassNamesMod.GlobalClassNames[T] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalClassNames")(classNames.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], disableGlobalClassNames.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricStyling.getGlobalClassNamesMod.GlobalClassNames[T]]
+inline def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme): GlobalClassNames[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalClassNames")(classNames.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[GlobalClassNames[T]]
+inline def getGlobalClassNames[T](classNames: GlobalClassNames[T], theme: ITheme, disableGlobalClassNames: Boolean): GlobalClassNames[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalClassNames")(classNames.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], disableGlobalClassNames.asInstanceOf[js.Any])).asInstanceOf[GlobalClassNames[T]]
 
-inline def getIcon(): js.UndefOr[typings.uifabricStyling.iconsMod.IIconRecord] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")().asInstanceOf[js.UndefOr[typings.uifabricStyling.iconsMod.IIconRecord]]
-inline def getIcon(name: java.lang.String): js.UndefOr[typings.uifabricStyling.iconsMod.IIconRecord] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.uifabricStyling.iconsMod.IIconRecord]]
+inline def getHighContrastNoAdjustStyle(): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getHighContrastNoAdjustStyle")().asInstanceOf[IRawStyle]
 
-inline def getIconClassName(name: java.lang.String): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getIconClassName")(name.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getIcon(): js.UndefOr[IIconRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")().asInstanceOf[js.UndefOr[IIconRecord]]
+inline def getIcon(name: String): js.UndefOr[IIconRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIcon")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IIconRecord]]
 
-inline def getIconContent(): typings.officeUiFabricReact.fontIconMod.IIconContent | scala.Null = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getIconContent")().asInstanceOf[typings.officeUiFabricReact.fontIconMod.IIconContent | scala.Null]
-inline def getIconContent(iconName: java.lang.String): typings.officeUiFabricReact.fontIconMod.IIconContent | scala.Null = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getIconContent")(iconName.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.fontIconMod.IIconContent | scala.Null]
+inline def getIconClassName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconClassName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getId(): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[java.lang.String]
-inline def getId(prefix: java.lang.String): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getId")(prefix.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getIconContent(): IIconContent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconContent")().asInstanceOf[IIconContent | Null]
+inline def getIconContent(iconName: String): IIconContent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconContent")(iconName.asInstanceOf[js.Any]).asInstanceOf[IIconContent | Null]
 
-inline def getInitials(displayName: java.lang.String, isRtl: scala.Boolean): java.lang.String = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def getInitials(displayName: java.lang.String, isRtl: scala.Boolean, allowPhoneInitials: scala.Boolean): java.lang.String = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def getInitials(displayName: scala.Null, isRtl: scala.Boolean): java.lang.String = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def getInitials(displayName: scala.Null, isRtl: scala.Boolean, allowPhoneInitials: scala.Boolean): java.lang.String = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def getInitials(displayName: scala.Unit, isRtl: scala.Boolean): java.lang.String = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def getInitials(displayName: scala.Unit, isRtl: scala.Boolean, allowPhoneInitials: scala.Boolean): java.lang.String = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def getId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[String]
+inline def getId(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getInputFocusStyle(borderColor: java.lang.String, borderRadius: java.lang.String): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+inline def getInitialResponsiveMode(): typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialResponsiveMode")().asInstanceOf[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode]
+
+inline def getInitials(displayName: String, isRtl: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def getInitials(displayName: String, isRtl: Boolean, allowPhoneInitials: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def getInitials(displayName: Null, isRtl: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def getInitials(displayName: Null, isRtl: Boolean, allowPhoneInitials: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def getInitials(displayName: Unit, isRtl: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def getInitials(displayName: Unit, isRtl: Boolean, allowPhoneInitials: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInitials")(displayName.asInstanceOf[js.Any], isRtl.asInstanceOf[js.Any], allowPhoneInitials.asInstanceOf[js.Any])).asInstanceOf[String]
+
+inline def getInputFocusStyle(borderColor: String, borderRadius: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getInputFocusStyle(borderColor: String, borderRadius: String, borderType: border | borderBottom): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
 inline def getInputFocusStyle(
-  borderColor: java.lang.String,
-  borderRadius: java.lang.String,
-  borderType: scala.Unit,
-  borderPosition: scala.Double
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getInputFocusStyle(borderColor: java.lang.String, borderRadius: scala.Double): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+  borderColor: String,
+  borderRadius: String,
+  borderType: border | borderBottom,
+  borderPosition: Double
+): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getInputFocusStyle(borderColor: String, borderRadius: String, borderType: Unit, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getInputFocusStyle(borderColor: String, borderRadius: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getInputFocusStyle(borderColor: String, borderRadius: Double, borderType: border | borderBottom): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
 inline def getInputFocusStyle(
-  borderColor: java.lang.String,
-  borderRadius: scala.Double,
-  borderType: scala.Unit,
-  borderPosition: scala.Double
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+  borderColor: String,
+  borderRadius: Double,
+  borderType: border | borderBottom,
+  borderPosition: Double
+): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
+inline def getInputFocusStyle(borderColor: String, borderRadius: Double, borderType: Unit, borderPosition: Double): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
 
-inline def getInputFocusStyle_border(
-  borderColor: java.lang.String,
-  borderRadius: java.lang.String,
-  borderType: typings.officeUiFabricReact.officeUiFabricReactStrings.border
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getInputFocusStyle_border(
-  borderColor: java.lang.String,
-  borderRadius: java.lang.String,
-  borderType: typings.officeUiFabricReact.officeUiFabricReactStrings.border,
-  borderPosition: scala.Double
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getInputFocusStyle_border(
-  borderColor: java.lang.String,
-  borderRadius: scala.Double,
-  borderType: typings.officeUiFabricReact.officeUiFabricReactStrings.border
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getInputFocusStyle_border(
-  borderColor: java.lang.String,
-  borderRadius: scala.Double,
-  borderType: typings.officeUiFabricReact.officeUiFabricReactStrings.border,
-  borderPosition: scala.Double
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+inline def getLanguage(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")().asInstanceOf[String | Null]
+inline def getLanguage(persistenceType: localStorage | sessionStorage | none): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")(persistenceType.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 
-inline def getInputFocusStyle_borderBottom(
-  borderColor: java.lang.String,
-  borderRadius: java.lang.String,
-  borderType: typings.officeUiFabricReact.officeUiFabricReactStrings.borderBottom
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getInputFocusStyle_borderBottom(
-  borderColor: java.lang.String,
-  borderRadius: java.lang.String,
-  borderType: typings.officeUiFabricReact.officeUiFabricReactStrings.borderBottom,
-  borderPosition: scala.Double
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getInputFocusStyle_borderBottom(
-  borderColor: java.lang.String,
-  borderRadius: scala.Double,
-  borderType: typings.officeUiFabricReact.officeUiFabricReactStrings.borderBottom
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
-inline def getInputFocusStyle_borderBottom(
-  borderColor: java.lang.String,
-  borderRadius: scala.Double,
-  borderType: typings.officeUiFabricReact.officeUiFabricReactStrings.borderBottom,
-  borderPosition: scala.Double
-): typings.uifabricMergeStyles.irawstyleMod.IRawStyle = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInputFocusStyle")(borderColor.asInstanceOf[js.Any], borderRadius.asInstanceOf[js.Any], borderType.asInstanceOf[js.Any], borderPosition.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+inline def getLastFocusable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocusable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+inline def getLastFocusable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocusable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 
-inline def getLanguage(): java.lang.String | scala.Null = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")().asInstanceOf[java.lang.String | scala.Null]
-
-inline def getLanguage_localStorage(persistenceType: typings.officeUiFabricReact.officeUiFabricReactStrings.localStorage): java.lang.String | scala.Null = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")(persistenceType.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | scala.Null]
-
-inline def getLanguage_none(persistenceType: typings.officeUiFabricReact.officeUiFabricReactStrings.none): java.lang.String | scala.Null = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")(persistenceType.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | scala.Null]
-
-inline def getLanguage_sessionStorage(persistenceType: typings.officeUiFabricReact.officeUiFabricReactStrings.sessionStorage): java.lang.String | scala.Null = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")(persistenceType.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | scala.Null]
-
-inline def getLastFocusable(rootElement: typings.std.HTMLElement, currentElement: typings.std.HTMLElement): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocusable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
-inline def getLastFocusable(
-  rootElement: typings.std.HTMLElement,
-  currentElement: typings.std.HTMLElement,
-  includeElementsInFocusZones: scala.Boolean
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocusable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
-
-inline def getLastTabbable(rootElement: typings.std.HTMLElement, currentElement: typings.std.HTMLElement): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLastTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+inline def getLastTabbable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
+inline def getLastTabbable(rootElement: HTMLElement, currentElement: HTMLElement, includeElementsInFocusZones: Boolean): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 inline def getLastTabbable(
-  rootElement: typings.std.HTMLElement,
-  currentElement: typings.std.HTMLElement,
-  includeElementsInFocusZones: scala.Boolean
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLastTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+  rootElement: HTMLElement,
+  currentElement: HTMLElement,
+  includeElementsInFocusZones: Boolean,
+  checkNode: Boolean
+): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 inline def getLastTabbable(
-  rootElement: typings.std.HTMLElement,
-  currentElement: typings.std.HTMLElement,
-  includeElementsInFocusZones: scala.Boolean,
-  checkNode: scala.Boolean
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLastTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
-inline def getLastTabbable(
-  rootElement: typings.std.HTMLElement,
-  currentElement: typings.std.HTMLElement,
-  includeElementsInFocusZones: scala.Unit,
-  checkNode: scala.Boolean
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLastTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+  rootElement: HTMLElement,
+  currentElement: HTMLElement,
+  includeElementsInFocusZones: Unit,
+  checkNode: Boolean
+): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastTabbable")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 
+inline def getLayerCount(hostId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerCount")(hostId.asInstanceOf[js.Any]).asInstanceOf[Double]
+
+inline def getLayerHost(hostId: String): js.UndefOr[ILayerHost] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerHost")(hostId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ILayerHost]]
+
+inline def getLayerHostSelector(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerHostSelector")().asInstanceOf[js.UndefOr[String]]
+
+inline def getLayerStyles(props: ILayerStyleProps): ILayerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ILayerStyles]
+
+inline def getMaxHeight(
+  target: typings.officeUiFabricReact.utilitiesMod.Rectangle,
+  targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def getMaxHeight(
+  target: typings.officeUiFabricReact.utilitiesMod.Rectangle,
+  targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
+  gapSpace: Double
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def getMaxHeight(
+  target: typings.officeUiFabricReact.utilitiesMod.Rectangle,
+  targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
+  gapSpace: Double,
+  bounds: Unit,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def getMaxHeight(
+  target: typings.officeUiFabricReact.utilitiesMod.Rectangle,
+  targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
+  gapSpace: Double,
+  bounds: IRectangle
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def getMaxHeight(
+  target: typings.officeUiFabricReact.utilitiesMod.Rectangle,
+  targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
+  gapSpace: Double,
+  bounds: IRectangle,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def getMaxHeight(
+  target: typings.officeUiFabricReact.utilitiesMod.Rectangle,
+  targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
+  gapSpace: Unit,
+  bounds: Unit,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def getMaxHeight(
+  target: typings.officeUiFabricReact.utilitiesMod.Rectangle,
+  targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
+  gapSpace: Unit,
+  bounds: IRectangle
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def getMaxHeight(
+  target: typings.officeUiFabricReact.utilitiesMod.Rectangle,
+  targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
+  gapSpace: Unit,
+  bounds: IRectangle,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.Element,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.Element,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.Element,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double,
-  bounds: scala.Unit,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double,
+  bounds: Unit,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.Element,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double,
+  bounds: IRectangle
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.Element,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double,
+  bounds: IRectangle,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.Element,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Unit,
-  bounds: scala.Unit,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Unit,
+  bounds: Unit,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.Element,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Unit,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Unit,
+  bounds: IRectangle
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.Element,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Unit,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Unit,
+  bounds: IRectangle,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.MouseEvent,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.MouseEvent,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.MouseEvent,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double,
-  bounds: scala.Unit,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double,
+  bounds: Unit,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.MouseEvent,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double,
+  bounds: IRectangle
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.MouseEvent,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double,
+  bounds: IRectangle,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.MouseEvent,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Unit,
-  bounds: scala.Unit,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Unit,
+  bounds: Unit,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.MouseEvent,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Unit,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Unit,
+  bounds: IRectangle
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
   target: typings.std.MouseEvent,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Unit,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Unit,
+  bounds: IRectangle,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def getMaxHeight(target: Point, targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
-  target: typings.uifabricUtilities.pointMod.Point,
-  targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def getMaxHeight(
-  target: typings.uifabricUtilities.pointMod.Point,
+  target: Point,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
-  target: typings.uifabricUtilities.pointMod.Point,
+  target: Point,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double,
-  bounds: scala.Unit,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double,
+  bounds: Unit,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
-  target: typings.uifabricUtilities.pointMod.Point,
+  target: Point,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double,
+  bounds: IRectangle
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
-  target: typings.uifabricUtilities.pointMod.Point,
+  target: Point,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Double,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Double,
+  bounds: IRectangle,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
-  target: typings.uifabricUtilities.pointMod.Point,
+  target: Point,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Unit,
-  bounds: scala.Unit,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Unit,
+  bounds: Unit,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
-  target: typings.uifabricUtilities.pointMod.Point,
+  target: Point,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Unit,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Unit,
+  bounds: IRectangle
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Double]
 inline def getMaxHeight(
-  target: typings.uifabricUtilities.pointMod.Point,
+  target: Point,
   targetEdge: typings.officeUiFabricReact.directionalHintMod.DirectionalHint,
-  gapSpace: scala.Unit,
-  bounds: typings.uifabricUtilities.irectangleMod.IRectangle,
-  coverTarget: scala.Boolean
-): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  gapSpace: Unit,
+  bounds: IRectangle,
+  coverTarget: Boolean
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxHeight")(target.asInstanceOf[js.Any], targetEdge.asInstanceOf[js.Any], gapSpace.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], coverTarget.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def getMeasurementCache(): typings.officeUiFabricReact.anon.AddMeasurementToCache = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMeasurementCache")().asInstanceOf[typings.officeUiFabricReact.anon.AddMeasurementToCache]
+inline def getMeasurementCache(): AddMeasurementToCache = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasurementCache")().asInstanceOf[AddMeasurementToCache]
 
-inline def getMenuItemStyles(theme: typings.fluentuiTheme.ithemeMod.ITheme): typings.officeUiFabricReact.contextualMenuTypesMod.IMenuItemStyles = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getMenuItemStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.contextualMenuTypesMod.IMenuItemStyles]
+inline def getMenuItemStyles(theme: ITheme): IMenuItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuItemStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[IMenuItemStyles]
 
-inline def getNativeElementProps[TAttributes /* <: typings.react.mod.HTMLAttributes[js.Any] */](tagName: java.lang.String, props: js.Object): TAttributes = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getNativeElementProps")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[TAttributes]
-inline def getNativeElementProps[TAttributes /* <: typings.react.mod.HTMLAttributes[js.Any] */](tagName: java.lang.String, props: js.Object, excludedPropNames: js.Array[java.lang.String]): TAttributes = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getNativeElementProps")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[TAttributes]
+inline def getMonthEnd(date: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthEnd")(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
 
-inline def getNativeProps[T /* <: typings.std.Record[java.lang.String, js.Any] */](props: typings.std.Record[java.lang.String, js.Any], allowedPropNames: js.Array[java.lang.String]): T = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def getNativeProps[T /* <: typings.std.Record[java.lang.String, js.Any] */](
-  props: typings.std.Record[java.lang.String, js.Any],
-  allowedPropNames: js.Array[java.lang.String],
-  excludedPropNames: js.Array[java.lang.String]
-): T = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def getNativeProps[T /* <: typings.std.Record[java.lang.String, js.Any] */](
-  props: typings.std.Record[java.lang.String, js.Any],
-  allowedPropNames: typings.std.Record[java.lang.String, scala.Double]
-): T = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def getNativeProps[T /* <: typings.std.Record[java.lang.String, js.Any] */](
-  props: typings.std.Record[java.lang.String, js.Any],
-  allowedPropNames: typings.std.Record[java.lang.String, scala.Double],
-  excludedPropNames: js.Array[java.lang.String]
-): T = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def getMonthStart(date: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthStart")(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+
+inline def getNativeElementProps[TAttributes /* <: HTMLAttributes[Any] */](tagName: String, props: js.Object): TAttributes = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeElementProps")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[TAttributes]
+inline def getNativeElementProps[TAttributes /* <: HTMLAttributes[Any] */](tagName: String, props: js.Object, excludedPropNames: js.Array[String]): TAttributes = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeElementProps")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[TAttributes]
+
+inline def getNativeProps[T /* <: Record[String, Any] */](props: Record[String, Any], allowedPropNames: js.Array[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def getNativeProps[T /* <: Record[String, Any] */](
+  props: Record[String, Any],
+  allowedPropNames: js.Array[String],
+  excludedPropNames: js.Array[String]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def getNativeProps[T /* <: Record[String, Any] */](props: Record[String, Any], allowedPropNames: Record[String, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def getNativeProps[T /* <: Record[String, Any] */](
+  props: Record[String, Any],
+  allowedPropNames: Record[String, Double],
+  excludedPropNames: js.Array[String]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeProps")(props.asInstanceOf[js.Any], allowedPropNames.asInstanceOf[js.Any], excludedPropNames.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def getNextElement(
-  rootElement: typings.std.HTMLElement,
-  currentElement: typings.std.HTMLElement | scala.Null,
-  checkNode: js.UndefOr[scala.Boolean],
-  suppressParentTraversal: js.UndefOr[scala.Boolean],
-  suppressChildTraversal: js.UndefOr[scala.Boolean],
-  includeElementsInFocusZones: js.UndefOr[scala.Boolean],
-  allowFocusRoot: js.UndefOr[scala.Boolean],
-  tabbable: js.UndefOr[scala.Boolean]
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getNextElement")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any], suppressParentTraversal.asInstanceOf[js.Any], suppressChildTraversal.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], allowFocusRoot.asInstanceOf[js.Any], tabbable.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+  rootElement: HTMLElement,
+  currentElement: HTMLElement | Null,
+  checkNode: js.UndefOr[Boolean],
+  suppressParentTraversal: js.UndefOr[Boolean],
+  suppressChildTraversal: js.UndefOr[Boolean],
+  includeElementsInFocusZones: js.UndefOr[Boolean],
+  allowFocusRoot: js.UndefOr[Boolean],
+  tabbable: js.UndefOr[Boolean]
+): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextElement")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any], suppressParentTraversal.asInstanceOf[js.Any], suppressChildTraversal.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], allowFocusRoot.asInstanceOf[js.Any], tabbable.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 
-inline def getNextResizeGroupStateProvider(): typings.officeUiFabricReact.anon.GetInitialResizeGroupState = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")().asInstanceOf[typings.officeUiFabricReact.anon.GetInitialResizeGroupState]
-inline def getNextResizeGroupStateProvider(measurementCache: typings.officeUiFabricReact.anon.AddMeasurementToCache): typings.officeUiFabricReact.anon.GetInitialResizeGroupState = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")(measurementCache.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.anon.GetInitialResizeGroupState]
+inline def getNextResizeGroupStateProvider(): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")().asInstanceOf[GetInitialResizeGroupState]
+inline def getNextResizeGroupStateProvider(measurementCache: AddMeasurementToCache): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")(measurementCache.asInstanceOf[js.Any]).asInstanceOf[GetInitialResizeGroupState]
 
-inline def getOppositeEdge(edge: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge): typings.officeUiFabricReact.positioningTypesMod.RectangleEdge = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getOppositeEdge")(edge.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.positioningTypesMod.RectangleEdge]
+inline def getOppositeEdge(edge: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge): typings.officeUiFabricReact.positioningTypesMod.RectangleEdge = ^.asInstanceOf[js.Dynamic].applyDynamic("getOppositeEdge")(edge.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.positioningTypesMod.RectangleEdge]
 
-inline def getParent(child: typings.std.HTMLElement): typings.std.HTMLElement | scala.Null = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(child.asInstanceOf[js.Any]).asInstanceOf[typings.std.HTMLElement | scala.Null]
-inline def getParent(child: typings.std.HTMLElement, allowVirtualParents: scala.Boolean): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+inline def getParent(child: HTMLElement): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(child.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+inline def getParent(child: HTMLElement, allowVirtualParents: Boolean): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(child.asInstanceOf[js.Any], allowVirtualParents.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 
-inline def getPersonaInitialsColor(props: typings.officeUiFabricReact.anon.PickIPersonaPropsprimaryT): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getPersonaInitialsColor")(props.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getPeoplePickerItemStyles(props: IPeoplePickerItemSelectedStyleProps): IPeoplePickerItemSelectedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeoplePickerItemStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPeoplePickerItemSelectedStyles]
 
-inline def getPlaceholderStyles(styles: typings.uifabricMergeStyles.istyleMod.IStyle): typings.uifabricMergeStyles.istyleMod.IStyle = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholderStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istyleMod.IStyle]
+inline def getPeoplePickerItemSuggestionStyles(props: IPeoplePickerItemSuggestionStyleProps): IPeoplePickerItemSuggestionStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeoplePickerItemSuggestionStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPeoplePickerItemSuggestionStyles]
+
+inline def getPersonaInitialsColor(props: PickIPersonaPropsprimaryT): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPersonaInitialsColor")(props.asInstanceOf[js.Any]).asInstanceOf[String]
+
+inline def getPlaceholderStyles(styles: IStyle): IStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlaceholderStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[IStyle]
 
 inline def getPreviousElement(
-  rootElement: typings.std.HTMLElement,
-  currentElement: typings.std.HTMLElement | scala.Null,
-  checkNode: js.UndefOr[scala.Boolean],
-  suppressParentTraversal: js.UndefOr[scala.Boolean],
-  traverseChildren: js.UndefOr[scala.Boolean],
-  includeElementsInFocusZones: js.UndefOr[scala.Boolean],
-  allowFocusRoot: js.UndefOr[scala.Boolean],
-  tabbable: js.UndefOr[scala.Boolean]
-): typings.std.HTMLElement | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousElement")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any], suppressParentTraversal.asInstanceOf[js.Any], traverseChildren.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], allowFocusRoot.asInstanceOf[js.Any], tabbable.asInstanceOf[js.Any])).asInstanceOf[typings.std.HTMLElement | scala.Null]
+  rootElement: HTMLElement,
+  currentElement: HTMLElement | Null,
+  checkNode: js.UndefOr[Boolean],
+  suppressParentTraversal: js.UndefOr[Boolean],
+  traverseChildren: js.UndefOr[Boolean],
+  includeElementsInFocusZones: js.UndefOr[Boolean],
+  allowFocusRoot: js.UndefOr[Boolean],
+  tabbable: js.UndefOr[Boolean]
+): HTMLElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousElement")(rootElement.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any], checkNode.asInstanceOf[js.Any], suppressParentTraversal.asInstanceOf[js.Any], traverseChildren.asInstanceOf[js.Any], includeElementsInFocusZones.asInstanceOf[js.Any], allowFocusRoot.asInstanceOf[js.Any], tabbable.asInstanceOf[js.Any])).asInstanceOf[HTMLElement | Null]
 
-inline def getPropsWithDefaults[TProps /* <: js.Object */](defaultProps: typings.std.Partial[TProps], propsWithoutDefaults: TProps): TProps = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getPropsWithDefaults")(defaultProps.asInstanceOf[js.Any], propsWithoutDefaults.asInstanceOf[js.Any])).asInstanceOf[TProps]
+inline def getPropsWithDefaults[TProps /* <: js.Object */](defaultProps: Partial[TProps], propsWithoutDefaults: TProps): TProps = (^.asInstanceOf[js.Dynamic].applyDynamic("getPropsWithDefaults")(defaultProps.asInstanceOf[js.Any], propsWithoutDefaults.asInstanceOf[js.Any])).asInstanceOf[TProps]
 
-inline def getRTL(): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRTL")().asInstanceOf[scala.Boolean]
-inline def getRTL(theme: typings.uifabricUtilities.anon.Rtl): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRTL")(theme.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def getRTL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getRTL")().asInstanceOf[Boolean]
+inline def getRTL(theme: Rtl): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getRTL")(theme.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def getRTLSafeKeyCode(key: scala.Double): scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRTLSafeKeyCode")(key.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
-inline def getRTLSafeKeyCode(key: scala.Double, theme: typings.uifabricUtilities.anon.Rtl): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRTLSafeKeyCode")(key.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def getRTLSafeKeyCode(key: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRTLSafeKeyCode")(key.asInstanceOf[js.Any]).asInstanceOf[Double]
+inline def getRTLSafeKeyCode(key: Double, theme: Rtl): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRTLSafeKeyCode")(key.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def getRect(): js.UndefOr[typings.uifabricUtilities.irectangleMod.IRectangle] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRect")().asInstanceOf[js.UndefOr[typings.uifabricUtilities.irectangleMod.IRectangle]]
-inline def getRect(element: typings.std.HTMLElement): js.UndefOr[typings.uifabricUtilities.irectangleMod.IRectangle] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRect")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.uifabricUtilities.irectangleMod.IRectangle]]
-inline def getRect(element: typings.std.Window): js.UndefOr[typings.uifabricUtilities.irectangleMod.IRectangle] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRect")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.uifabricUtilities.irectangleMod.IRectangle]]
+inline def getRect(): js.UndefOr[IRectangle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRect")().asInstanceOf[js.UndefOr[IRectangle]]
+inline def getRect(element: HTMLElement): js.UndefOr[IRectangle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRect")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IRectangle]]
+inline def getRect(element: Window): js.UndefOr[IRectangle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRect")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IRectangle]]
 
-inline def getResourceUrl(url: java.lang.String): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getResourceUrl")(url.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getResourceUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getScreenSelector(min: scala.Double, max: scala.Double): java.lang.String = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def getResponsiveMode(): typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getResponsiveMode")().asInstanceOf[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode]
+inline def getResponsiveMode(currentWindow: Window): typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getResponsiveMode")(currentWindow.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode]
 
-inline def getScrollbarWidth(): scala.Double = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getScrollbarWidth")().asInstanceOf[scala.Double]
+inline def getScreenSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")().asInstanceOf[String]
+inline def getScreenSelector(min: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def getScreenSelector(min: Double, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def getScreenSelector(min: Unit, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getShade(
-  color: typings.officeUiFabricReact.interfacesMod.IColor,
-  shade: typings.officeUiFabricReact.shadesMod.Shade
-): typings.officeUiFabricReact.interfacesMod.IColor | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | scala.Null]
-inline def getShade(
-  color: typings.officeUiFabricReact.interfacesMod.IColor,
-  shade: typings.officeUiFabricReact.shadesMod.Shade,
-  isInverted: scala.Boolean
-): typings.officeUiFabricReact.interfacesMod.IColor | scala.Null = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | scala.Null]
+inline def getScrollbarWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollbarWidth")().asInstanceOf[Double]
 
+inline def getShade(color: IColor, shade: typings.officeUiFabricReact.shadesMod.Shade): IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any])).asInstanceOf[IColor | Null]
+inline def getShade(color: IColor, shade: typings.officeUiFabricReact.shadesMod.Shade, isInverted: Boolean): IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[IColor | Null]
+
+inline def getShimmeredDetailsListStyles(props: RequiredPickIShimmeredDet): IShimmeredDetailsListStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getShimmeredDetailsListStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IShimmeredDetailsListStyles]
+
+inline def getSplitButtonClassNames(styles: IButtonStyles, disabled: Boolean, expanded: Boolean, checked: Boolean): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]
 inline def getSplitButtonClassNames(
-  styles: typings.officeUiFabricReact.buttonTypesMod.IButtonStyles,
-  disabled: scala.Boolean,
-  expanded: scala.Boolean,
-  checked: scala.Boolean
-): typings.officeUiFabricReact.splitButtonClassNamesMod.ISplitButtonClassNames = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.splitButtonClassNamesMod.ISplitButtonClassNames]
-inline def getSplitButtonClassNames(
-  styles: typings.officeUiFabricReact.buttonTypesMod.IButtonStyles,
-  disabled: scala.Boolean,
-  expanded: scala.Boolean,
-  checked: scala.Boolean,
-  primaryDisabled: scala.Boolean
-): typings.officeUiFabricReact.splitButtonClassNamesMod.ISplitButtonClassNames = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], primaryDisabled.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.splitButtonClassNamesMod.ISplitButtonClassNames]
+  styles: IButtonStyles,
+  disabled: Boolean,
+  expanded: Boolean,
+  checked: Boolean,
+  primaryDisabled: Boolean
+): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], primaryDisabled.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]
 
-inline def getSubmenuItems(item: typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem): js.UndefOr[js.Array[typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSubmenuItems")(item.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem]]]
+inline def getStartDateOfWeek(date: js.Date, firstDayOfWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getStartDateOfWeek")(date.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[js.Date]
 
-inline def getTheme(): typings.fluentuiTheme.ithemeMod.ITheme = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")().asInstanceOf[typings.fluentuiTheme.ithemeMod.ITheme]
-inline def getTheme(depComments: scala.Boolean): typings.fluentuiTheme.ithemeMod.ITheme = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")(depComments.asInstanceOf[js.Any]).asInstanceOf[typings.fluentuiTheme.ithemeMod.ITheme]
+inline def getSubmenuItems(item: IContextualMenuItem): js.UndefOr[js.Array[IContextualMenuItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubmenuItems")(item.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[IContextualMenuItem]]]
+inline def getSubmenuItems(item: IContextualMenuItem, options: Target): js.UndefOr[js.Array[IContextualMenuItem]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubmenuItems")(item.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[IContextualMenuItem]]]
 
-inline def getThemedContext(context: typings.uifabricUtilities.customizerContextMod.ICustomizerContext): typings.uifabricUtilities.customizerContextMod.ICustomizerContext = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricUtilities.customizerContextMod.ICustomizerContext]
-inline def getThemedContext(
-  context: typings.uifabricUtilities.customizerContextMod.ICustomizerContext,
-  scheme: scala.Unit,
-  theme: typings.fluentuiTheme.ithemeMod.ITheme
-): typings.uifabricUtilities.customizerContextMod.ICustomizerContext = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizerContextMod.ICustomizerContext]
-inline def getThemedContext(
-  context: typings.uifabricUtilities.customizerContextMod.ICustomizerContext,
-  scheme: typings.fluentuiTheme.ischemeMod.ISchemeNames
-): typings.uifabricUtilities.customizerContextMod.ICustomizerContext = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizerContextMod.ICustomizerContext]
-inline def getThemedContext(
-  context: typings.uifabricUtilities.customizerContextMod.ICustomizerContext,
-  scheme: typings.fluentuiTheme.ischemeMod.ISchemeNames,
-  theme: typings.fluentuiTheme.ithemeMod.ITheme
-): typings.uifabricUtilities.customizerContextMod.ICustomizerContext = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizerContextMod.ICustomizerContext]
+inline def getSuggestionsItemStyles(props: ISuggestionsItemStyleProps): ISuggestionsItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestionsItemStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ISuggestionsItemStyles]
 
-inline def getVirtualParent(child: typings.std.HTMLElement): js.UndefOr[typings.std.HTMLElement] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getVirtualParent")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.std.HTMLElement]]
+inline def getSuggestionsStyles(props: ISuggestionsStyleProps): ISuggestionsStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestionsStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ISuggestionsStyles]
 
-inline def getWindow(): js.UndefOr[typings.std.Window] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getWindow")().asInstanceOf[js.UndefOr[typings.std.Window]]
-inline def getWindow(rootElement: typings.std.Element): js.UndefOr[typings.std.Window] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getWindow")(rootElement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.std.Window]]
+inline def getTagItemStyles(props: ITagItemStyleProps): ITagItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagItemStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ITagItemStyles]
 
-inline def hasHorizontalOverflow(element: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasHorizontalOverflow")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def getTagItemSuggestionStyles(props: ITagItemSuggestionStyleProps): ITagItemSuggestionStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagItemSuggestionStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ITagItemSuggestionStyles]
 
-inline def hasOverflow(element: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasOverflow")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def getTextFieldStyles(props: ITextFieldStyleProps): ITextFieldStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextFieldStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ITextFieldStyles]
 
-inline def hasVerticalOverflow(element: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasVerticalOverflow")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def getTheme(): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")().asInstanceOf[ITheme]
+inline def getTheme(depComments: Boolean): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")(depComments.asInstanceOf[js.Any]).asInstanceOf[ITheme]
 
-inline def hiddenContentStyle: typings.uifabricMergeStyles.irawstyleMod.IRawStyle = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("hiddenContentStyle").asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+inline def getThemedContext(context: ICustomizerContext): ICustomizerContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any]).asInstanceOf[ICustomizerContext]
+inline def getThemedContext(context: ICustomizerContext, scheme: Unit, theme: ITheme): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
+inline def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
+inline def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames, theme: ITheme): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getThemedContext")(context.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
 
-inline def hoistMethods(destination: js.Any, source: js.Any): js.Array[java.lang.String] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
-inline def hoistMethods(destination: js.Any, source: js.Any, exclusions: js.Array[java.lang.String]): js.Array[java.lang.String] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def getVirtualParent(child: HTMLElement): js.UndefOr[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVirtualParent")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HTMLElement]]
 
-inline def hoistStatics[TSource /* <: js.Object */, TDest](source: TSource, dest: TDest): TDest = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[TDest]
+inline def getWeekNumber(
+  date: js.Date,
+  firstDayOfWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek,
+  firstWeekOfYear: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear
+): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekNumber")(date.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], firstWeekOfYear.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def hsl2hsv(h: scala.Double, s: scala.Double, l: scala.Double): typings.officeUiFabricReact.interfacesMod.IHSV = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hsl2hsv")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSV]
+inline def getWeekNumbersInMonth(
+  weeksInMonth: Double,
+  firstDayOfWeek: typings.fluentuiDateTimeUtilities.dateValuesMod.DayOfWeek,
+  firstWeekOfYear: typings.fluentuiDateTimeUtilities.dateValuesMod.FirstWeekOfYear,
+  navigatedDate: js.Date
+): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekNumbersInMonth")(weeksInMonth.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], firstWeekOfYear.asInstanceOf[js.Any], navigatedDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 
-inline def hsl2rgb(h: scala.Double, s: scala.Double, l: scala.Double): typings.officeUiFabricReact.interfacesMod.IRGB = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IRGB]
+inline def getWindow(): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindow")().asInstanceOf[js.UndefOr[Window]]
+inline def getWindow(rootElement: typings.std.Element): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindow")(rootElement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Window]]
 
-inline def hsv2hex(h: scala.Double, s: scala.Double, v: scala.Double): java.lang.String = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hsv2hex")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def getYearEnd(date: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getYearEnd")(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
 
-inline def hsv2hsl(h: scala.Double, s: scala.Double, v: scala.Double): typings.officeUiFabricReact.interfacesMod.IHSL = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hsv2hsl")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSL]
+inline def getYearStart(date: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getYearStart")(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
 
-inline def hsv2rgb(h: scala.Double, s: scala.Double, v: scala.Double): typings.officeUiFabricReact.interfacesMod.IRGB = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hsv2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IRGB]
+inline def hasHorizontalOverflow(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasHorizontalOverflow")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def htmlElementProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("htmlElementProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def hasOverflow(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOverflow")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def iframeProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("iframeProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def hasVerticalOverflow(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasVerticalOverflow")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def imageProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("imageProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def hiddenContentStyle: IRawStyle = ^.asInstanceOf[js.Dynamic].selectDynamic("hiddenContentStyle").asInstanceOf[IRawStyle]
 
-inline def imgProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("imgProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def hoistMethods(destination: Any, source: Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+inline def hoistMethods(destination: Any, source: Any, exclusions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 
-inline def initializeComponentRef[TProps /* <: typings.uifabricUtilities.baseComponentTypesMod.IBaseProps[js.Any] */, TState](obj: typings.react.mod.Component[TProps, TState, js.Any]): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("initializeComponentRef")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def hoistStatics[TSource /* <: js.Object */, TDest](source: TSource, dest: TDest): TDest = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[TDest]
 
-inline def initializeFocusRects(): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("initializeFocusRects")().asInstanceOf[scala.Unit]
-inline def initializeFocusRects(window: typings.std.Window): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("initializeFocusRects")(window.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def hsl2hsv(h: Double, s: Double, l: Double): IHSV = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2hsv")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[IHSV]
 
-inline def initializeIcons(): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")().asInstanceOf[scala.Unit]
-inline def initializeIcons(baseUrl: java.lang.String): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def initializeIcons(baseUrl: java.lang.String, options: typings.uifabricStyling.iconsMod.IIconOptions): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")(baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def initializeIcons(baseUrl: scala.Unit, options: typings.uifabricStyling.iconsMod.IIconOptions): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")(baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def hsl2rgb(h: Double, s: Double, l: Double): IRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[IRGB]
 
-inline def inputProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("inputProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def hsv2hex(h: Double, s: Double, v: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2hex")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def isControlled[P](props: P, valueProp: /* keyof P */ java.lang.String): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isControlled")(props.asInstanceOf[js.Any], valueProp.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def hsv2hsl(h: Double, s: Double, v: Double): IHSL = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2hsl")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[IHSL]
 
-inline def isDark(color: typings.officeUiFabricReact.interfacesMod.IColor): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isDark")(color.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def hsv2rgb(h: Double, s: Double, v: Double): IRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[IRGB]
 
-inline def isDirectionalKeyCode(which: scala.Double): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isDirectionalKeyCode")(which.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def htmlElementProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("htmlElementProperties").asInstanceOf[Record[String, Double]]
 
-inline def isElementFocusSubZone(): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isElementFocusSubZone")().asInstanceOf[scala.Boolean]
-inline def isElementFocusSubZone(element: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isElementFocusSubZone")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def iframeProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("iframeProperties").asInstanceOf[Record[String, Double]]
 
-inline def isElementFocusZone(): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isElementFocusZone")().asInstanceOf[scala.Boolean]
-inline def isElementFocusZone(element: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isElementFocusZone")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def imageProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("imageProperties").asInstanceOf[Record[String, Double]]
 
-inline def isElementTabbable(element: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isElementTabbable")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-inline def isElementTabbable(element: typings.std.HTMLElement, checkTabIndex: scala.Boolean): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isElementTabbable")(element.asInstanceOf[js.Any], checkTabIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def imgProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("imgProperties").asInstanceOf[Record[String, Double]]
 
-inline def isElementVisible(): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isElementVisible")().asInstanceOf[scala.Boolean]
-inline def isElementVisible(element: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isElementVisible")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def initializeComponentRef[TProps /* <: IBaseProps[Any] */, TState](obj: Component[TProps, TState, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeComponentRef")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def isIE11(): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isIE11")().asInstanceOf[scala.Boolean]
+inline def initializeFocusRects(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeFocusRects")().asInstanceOf[Unit]
+inline def initializeFocusRects(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeFocusRects")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def isIOS(): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isIOS")().asInstanceOf[scala.Boolean]
+inline def initializeIcons(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")().asInstanceOf[Unit]
+inline def initializeIcons(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def initializeIcons(baseUrl: String, options: IIconOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")(baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def initializeIcons(baseUrl: Unit, options: IIconOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")(baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def isMac(): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isMac")().asInstanceOf[scala.Boolean]
-inline def isMac(reset: scala.Boolean): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isMac")(reset.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def initializeResponsiveMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeResponsiveMode")().asInstanceOf[Unit]
+inline def initializeResponsiveMode(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeResponsiveMode")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def isRelativeUrl(url: java.lang.String): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isRelativeUrl")(url.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def inputProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("inputProperties").asInstanceOf[Record[String, Double]]
 
-inline def isValidShade(): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isValidShade")().asInstanceOf[scala.Boolean]
-inline def isValidShade(shade: typings.officeUiFabricReact.shadesMod.Shade): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isValidShade")(shade.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isControlled[P](props: P, valueProp: /* keyof P */ String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isControlled")(props.asInstanceOf[js.Any], valueProp.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def isVirtualElement(element: typings.fluentuiDomUtilities.ivirtualelementMod.IVirtualElement): /* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isVirtualElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ scala.Boolean]
-inline def isVirtualElement(element: typings.std.HTMLElement): /* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isVirtualElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ scala.Boolean]
+inline def isDark(color: IColor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDark")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def keyframes(timeline: typings.uifabricMergeStyles.ikeyframesMod.IKeyframes): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(timeline.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def isDirectionalKeyCode(which: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectionalKeyCode")(which.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def ktpTargetFromId(keytipId: java.lang.String): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ktpTargetFromId")(keytipId.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def isElementFocusSubZone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementFocusSubZone")().asInstanceOf[Boolean]
+inline def isElementFocusSubZone(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementFocusSubZone")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def ktpTargetFromSequences(keySequences: js.Array[java.lang.String]): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ktpTargetFromSequences")(keySequences.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def isElementFocusZone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementFocusZone")().asInstanceOf[Boolean]
+inline def isElementFocusZone(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementFocusZone")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def labelProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("labelProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def isElementTabbable(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementTabbable")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def isElementTabbable(element: HTMLElement, checkTabIndex: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementTabbable")(element.asInstanceOf[js.Any], checkTabIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def liProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("liProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def isElementVisible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementVisible")().asInstanceOf[Boolean]
+inline def isElementVisible(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementVisible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def loadTheme(theme: typings.fluentuiTheme.ithemeMod.IPartialTheme): typings.fluentuiTheme.ithemeMod.ITheme = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[typings.fluentuiTheme.ithemeMod.ITheme]
-inline def loadTheme(theme: typings.fluentuiTheme.ithemeMod.IPartialTheme, depComments: scala.Boolean): typings.fluentuiTheme.ithemeMod.ITheme = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[typings.fluentuiTheme.ithemeMod.ITheme]
+inline def isIE11(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIE11")().asInstanceOf[Boolean]
+
+inline def isIOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS")().asInstanceOf[Boolean]
+
+inline def isInDateRangeArray(date: js.Date, dateRange: js.Array[js.Date]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInDateRangeArray")(date.asInstanceOf[js.Any], dateRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
+inline def isMac(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")().asInstanceOf[Boolean]
+inline def isMac(reset: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")(reset.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def isRelativeUrl(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelativeUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def isValidShade(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidShade")().asInstanceOf[Boolean]
+inline def isValidShade(shade: typings.officeUiFabricReact.shadesMod.Shade): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidShade")(shade.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def isVirtualElement(element: IVirtualElement): /* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVirtualElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ Boolean]
+inline def isVirtualElement(element: HTMLElement): /* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVirtualElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is @fluentui/dom-utilities.@fluentui/dom-utilities/lib/IVirtualElement.IVirtualElement */ Boolean]
+
+inline def keyframes(timeline: IKeyframes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(timeline.asInstanceOf[js.Any]).asInstanceOf[String]
+
+inline def ktpTargetFromId(keytipId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ktpTargetFromId")(keytipId.asInstanceOf[js.Any]).asInstanceOf[String]
+
+inline def ktpTargetFromSequences(keySequences: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ktpTargetFromSequences")(keySequences.asInstanceOf[js.Any]).asInstanceOf[String]
+
+inline def labelProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("labelProperties").asInstanceOf[Record[String, Double]]
+
+inline def liProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("liProperties").asInstanceOf[Record[String, Double]]
+
+inline def loadTheme(theme: IPartialTheme): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[ITheme]
+inline def loadTheme(theme: IPartialTheme, depComments: Boolean): ITheme = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[ITheme]
 
 inline def mapEnumByName[T](
-  theEnum: js.Any,
+  theEnum: Any,
   callback: js.Function2[
-  /* name */ js.UndefOr[java.lang.String], 
-  /* value */ js.UndefOr[java.lang.String | scala.Double], 
+  /* name */ js.UndefOr[String], 
+  /* value */ js.UndefOr[String | Double], 
   js.UndefOr[T]
 ]
-): js.UndefOr[js.Array[js.UndefOr[T]]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mapEnumByName")(theEnum.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[js.UndefOr[T]]]]
+): js.UndefOr[js.Array[js.UndefOr[T]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapEnumByName")(theEnum.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[js.UndefOr[T]]]]
 
-inline def memoize[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: typings.std.TypedPropertyDescriptor[T]): typings.uifabricUtilities.anon.Configurable[T] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.anon.Configurable[T]]
+inline def memoize[T /* <: js.Function */](target: Any, key: String, descriptor: TypedPropertyDescriptor[T]): Configurable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Configurable[T]]
 
-inline def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T): T = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: scala.Double): T = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: scala.Double, ignoreNullOrUndefinedResult: scala.Boolean): T = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any], ignoreNullOrUndefinedResult.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RetType] */, RetType](cb: T, maxCacheSize: scala.Unit, ignoreNullOrUndefinedResult: scala.Boolean): T = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any], ignoreNullOrUndefinedResult.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def memoizeFunction[T /* <: js.Function1[/* repeated */ Any, RetType] */, RetType](cb: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def memoizeFunction[T /* <: js.Function1[/* repeated */ Any, RetType] */, RetType](cb: T, maxCacheSize: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def memoizeFunction[T /* <: js.Function1[/* repeated */ Any, RetType] */, RetType](cb: T, maxCacheSize: Double, ignoreNullOrUndefinedResult: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any], ignoreNullOrUndefinedResult.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def memoizeFunction[T /* <: js.Function1[/* repeated */ Any, RetType] */, RetType](cb: T, maxCacheSize: Unit, ignoreNullOrUndefinedResult: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("memoizeFunction")(cb.asInstanceOf[js.Any], maxCacheSize.asInstanceOf[js.Any], ignoreNullOrUndefinedResult.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def mergeAriaAttributeValues_false(
-  ariaAttributes: (js.UndefOr[
-  java.lang.String | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`
-])*
-): js.UndefOr[java.lang.String] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeAriaAttributeValues")(ariaAttributes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[java.lang.String]]
+inline def mergeAriaAttributeValues_false(ariaAttributes: (js.UndefOr[String | `false`])*): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAriaAttributeValues")(ariaAttributes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.UndefOr[String]]
 
-inline def mergeCustomizations(
-  props: typings.uifabricUtilities.customizerTypesMod.ICustomizerProps,
-  parentContext: typings.uifabricUtilities.customizerContextMod.ICustomizerContext
-): typings.uifabricUtilities.customizerContextMod.ICustomizerContext = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeCustomizations")(props.asInstanceOf[js.Any], parentContext.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizerContextMod.ICustomizerContext]
+inline def mergeCustomizations(props: ICustomizerProps, parentContext: ICustomizerContext): ICustomizerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeCustomizations")(props.asInstanceOf[js.Any], parentContext.asInstanceOf[js.Any])).asInstanceOf[ICustomizerContext]
 
-inline def mergeOverflows(keySequences: js.Array[java.lang.String], overflowKeySequences: js.Array[java.lang.String]): js.Array[java.lang.String] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOverflows")(keySequences.asInstanceOf[js.Any], overflowKeySequences.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
+inline def mergeOverflows(keySequences: js.Array[String], overflowKeySequences: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOverflows")(keySequences.asInstanceOf[js.Any], overflowKeySequences.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 
-inline def mergeScopedSettings(): typings.uifabricUtilities.customizationsMod.ISettings = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")().asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def mergeScopedSettings(oldSettings: scala.Unit, newSettings: typings.uifabricUtilities.customizationsMod.ISettings): typings.uifabricUtilities.customizationsMod.ISettings = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def mergeScopedSettings(
-  oldSettings: scala.Unit,
-  newSettings: typings.uifabricUtilities.customizationsMod.ISettingsFunction
-): typings.uifabricUtilities.customizationsMod.ISettings = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def mergeScopedSettings(oldSettings: typings.uifabricUtilities.customizationsMod.ISettings): typings.uifabricUtilities.customizationsMod.ISettings = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")(oldSettings.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def mergeScopedSettings(
-  oldSettings: typings.uifabricUtilities.customizationsMod.ISettings,
-  newSettings: typings.uifabricUtilities.customizationsMod.ISettings
-): typings.uifabricUtilities.customizationsMod.ISettings = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def mergeScopedSettings(
-  oldSettings: typings.uifabricUtilities.customizationsMod.ISettings,
-  newSettings: typings.uifabricUtilities.customizationsMod.ISettingsFunction
-): typings.uifabricUtilities.customizationsMod.ISettings = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
+inline def mergeScopedSettings(): ISettings = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")().asInstanceOf[ISettings]
+inline def mergeScopedSettings(oldSettings: Unit, newSettings: ISettings): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
+inline def mergeScopedSettings(oldSettings: Unit, newSettings: ISettingsFunction): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
+inline def mergeScopedSettings(oldSettings: ISettings): ISettings = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")(oldSettings.asInstanceOf[js.Any]).asInstanceOf[ISettings]
+inline def mergeScopedSettings(oldSettings: ISettings, newSettings: ISettings): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
+inline def mergeScopedSettings(oldSettings: ISettings, newSettings: ISettingsFunction): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeScopedSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
 
-inline def mergeSettings(): typings.uifabricUtilities.customizationsMod.ISettings = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")().asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def mergeSettings(oldSettings: scala.Unit, newSettings: typings.uifabricUtilities.customizationsMod.ISettings): typings.uifabricUtilities.customizationsMod.ISettings = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def mergeSettings(
-  oldSettings: scala.Unit,
-  newSettings: typings.uifabricUtilities.customizationsMod.ISettingsFunction
-): typings.uifabricUtilities.customizationsMod.ISettings = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def mergeSettings(oldSettings: typings.uifabricUtilities.customizationsMod.ISettings): typings.uifabricUtilities.customizationsMod.ISettings = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def mergeSettings(
-  oldSettings: typings.uifabricUtilities.customizationsMod.ISettings,
-  newSettings: typings.uifabricUtilities.customizationsMod.ISettings
-): typings.uifabricUtilities.customizationsMod.ISettings = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def mergeSettings(
-  oldSettings: typings.uifabricUtilities.customizationsMod.ISettings,
-  newSettings: typings.uifabricUtilities.customizationsMod.ISettingsFunction
-): typings.uifabricUtilities.customizationsMod.ISettings = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
+inline def mergeSettings(): ISettings = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")().asInstanceOf[ISettings]
+inline def mergeSettings(oldSettings: Unit, newSettings: ISettings): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
+inline def mergeSettings(oldSettings: Unit, newSettings: ISettingsFunction): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
+inline def mergeSettings(oldSettings: ISettings): ISettings = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any]).asInstanceOf[ISettings]
+inline def mergeSettings(oldSettings: ISettings, newSettings: ISettings): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
+inline def mergeSettings(oldSettings: ISettings, newSettings: ISettingsFunction): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
 
-inline def mergeStyleSets[TStyleSet](): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")().asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]]]
-inline def mergeStyleSets[TStyleSet](styleSet: TStyleSet): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]]]
-inline def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: TStyleSet2): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: scala.Null, styleSet2: TStyleSet2): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: scala.Unit, styleSet2: TStyleSet2): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets[TStyleSet](): IProcessedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")().asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet]]]
+inline def mergeStyleSets[TStyleSet](styleSet: TStyleSet): IProcessedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet]]]
+inline def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets[TStyleSet1, TStyleSet2](styleSet1: Unit, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
 
-inline def mergeStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")().asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def mergeStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")().asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
 
-inline def mergeStyleSets_false(
-  styleSets: (js.UndefOr[
-  typings.uifabricMergeStyles.istylesetMod.IStyleSet[org.scalablytyped.runtime.StringDictionary[js.Any]] | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-])*
-): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[js.Any] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSets.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[js.Any]]
-inline def mergeStyleSets_false[TStyleSet](styleSet: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet]]]
-inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: scala.Null, styleSet2: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: scala.Unit, styleSet2: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`, styleSet2: TStyleSet2): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
-inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](
-  styleSet1: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`,
-  styleSet2: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`
-): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets_false(styleSets: (js.UndefOr[IStyleSet[StringDictionary[Any]] | `false` | Null])*): IProcessedStyleSet[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSets.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IProcessedStyleSet[Any]]
+inline def mergeStyleSets_false[TStyleSet](styleSet: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet]]]
+inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: Unit, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: `false`, styleSet2: TStyleSet2): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets_false[TStyleSet1, TStyleSet2](styleSet1: `false`, styleSet2: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
 inline def mergeStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3](
-  styleSet1: js.UndefOr[
-  TStyleSet1 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet2: js.UndefOr[
-  TStyleSet2 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet3: js.UndefOr[
-  TStyleSet3 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-]
-): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3]]]
+  styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+  styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+  styleSet3: js.UndefOr[TStyleSet3 | `false` | Null]
+): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3]]]
 inline def mergeStyleSets_false[TStyleSet1, TStyleSet2, TStyleSet3, TStyleSet4](
-  styleSet1: js.UndefOr[
-  TStyleSet1 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet2: js.UndefOr[
-  TStyleSet2 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet3: js.UndefOr[
-  TStyleSet3 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-],
-  styleSet4: js.UndefOr[
-  TStyleSet4 | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-]
-): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet4]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet3] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet4]]]
+  styleSet1: js.UndefOr[TStyleSet1 | `false` | Null],
+  styleSet2: js.UndefOr[TStyleSet2 | `false` | Null],
+  styleSet3: js.UndefOr[TStyleSet3 | `false` | Null],
+  styleSet4: js.UndefOr[TStyleSet4 | `false` | Null]
+): IProcessedStyleSet[
+ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any], styleSet3.asInstanceOf[js.Any], styleSet4.asInstanceOf[js.Any])).asInstanceOf[IProcessedStyleSet[
+ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2] & ObjectOnly[TStyleSet3] & ObjectOnly[TStyleSet4]]]
 
-inline def mergeStyleSets_false_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`): typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet[
-typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet1] & typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly[TStyleSet2]]]
+inline def mergeStyleSets_false_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: `false`): IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[IProcessedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
 
-inline def mergeStyles_false(
-  args: (js.UndefOr[
-  typings.uifabricMergeStyles.istyleMod.IStyle | typings.uifabricMergeStyles.istyleMod.IStyleBaseArray | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false` | scala.Null
-])*
-): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(args.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def mergeStyles_false(args: (js.UndefOr[IStyle | IStyleBaseArray | `false` | Null])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
 
-inline def merge_false[T](
-  target: typings.std.Partial[T],
-  args: (js.UndefOr[
-  typings.std.Partial[T] | scala.Null | typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`
-])*
-): T = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
 
-inline def modalize(target: typings.std.HTMLElement): js.Function0[scala.Unit] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("modalize")(target.asInstanceOf[js.Any]).asInstanceOf[js.Function0[scala.Unit]]
+inline def modalize(target: HTMLElement): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("modalize")(target.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
 
-inline def noWrap: typings.uifabricMergeStyles.irawstyleMod.IRawStyle = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("noWrap").asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+inline def noWrap: IRawStyle = ^.asInstanceOf[js.Dynamic].selectDynamic("noWrap").asInstanceOf[IRawStyle]
 
-inline def normalize: typings.uifabricMergeStyles.irawstyleMod.IRawStyle = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("normalize").asInstanceOf[typings.uifabricMergeStyles.irawstyleMod.IRawStyle]
+inline def normalize: IRawStyle = ^.asInstanceOf[js.Dynamic].selectDynamic("normalize").asInstanceOf[IRawStyle]
 
-inline def nullRender(): typings.react.mod.global.JSX.Element | scala.Null = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("nullRender")().asInstanceOf[typings.react.mod.global.JSX.Element | scala.Null]
+inline def notifyHostChanged(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyHostChanged")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def olProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("olProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def nullRender(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullRender")().asInstanceOf[Element | Null]
 
-inline def omit[TObj /* <: typings.std.Record[java.lang.String, js.Any] */](obj: TObj, exclusions: js.Array[/* keyof TObj */ java.lang.String]): TObj = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[TObj]
+inline def olProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("olProperties").asInstanceOf[Record[String, Double]]
 
+inline def omit[TObj /* <: Record[String, Any] */](obj: TObj, exclusions: js.Array[/* keyof TObj */ String]): TObj = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[TObj]
+
+inline def on(element: Document, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 inline def on(
-  element: typings.std.Document,
-  eventName: java.lang.String,
-  callback: js.Function1[/* ev */ typings.std.Event, scala.Unit]
-): js.Function0[scala.Unit] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[scala.Unit]]
-inline def on(
-  element: typings.std.Document,
-  eventName: java.lang.String,
-  callback: js.Function1[/* ev */ typings.std.Event, scala.Unit],
-  options: scala.Boolean
-): js.Function0[scala.Unit] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[scala.Unit]]
+  element: Document,
+  eventName: String,
+  callback: js.Function1[/* ev */ Event, Unit],
+  options: Boolean
+): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+inline def on(element: typings.std.Element, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 inline def on(
   element: typings.std.Element,
-  eventName: java.lang.String,
-  callback: js.Function1[/* ev */ typings.std.Event, scala.Unit]
-): js.Function0[scala.Unit] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[scala.Unit]]
-inline def on(
-  element: typings.std.Element,
-  eventName: java.lang.String,
-  callback: js.Function1[/* ev */ typings.std.Event, scala.Unit],
-  options: scala.Boolean
-): js.Function0[scala.Unit] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[scala.Unit]]
-inline def on(
-  element: typings.std.Window,
-  eventName: java.lang.String,
-  callback: js.Function1[/* ev */ typings.std.Event, scala.Unit]
-): js.Function0[scala.Unit] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[scala.Unit]]
-inline def on(
-  element: typings.std.Window,
-  eventName: java.lang.String,
-  callback: js.Function1[/* ev */ typings.std.Event, scala.Unit],
-  options: scala.Boolean
-): js.Function0[scala.Unit] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[scala.Unit]]
+  eventName: String,
+  callback: js.Function1[/* ev */ Event, Unit],
+  options: Boolean
+): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+inline def on(element: Window, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+inline def on(element: Window, eventName: String, callback: js.Function1[/* ev */ Event, Unit], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 
-inline def optionProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("optionProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
+inline def optionProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("optionProperties").asInstanceOf[Record[String, Double]]
 
-inline def portalContainsElement(target: typings.std.HTMLElement): scala.Boolean = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("portalContainsElement")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-inline def portalContainsElement(target: typings.std.HTMLElement, parent: typings.std.HTMLElement): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("portalContainsElement")(target.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def portalContainsElement(target: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("portalContainsElement")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def portalContainsElement(target: HTMLElement, parent: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("portalContainsElement")(target.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
+inline def positionCallout(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("positionCallout")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any])).asInstanceOf[ICalloutPositionedInfo]
 inline def positionCallout(
-  props: typings.officeUiFabricReact.positioningTypesMod.IPositionProps,
-  hostElement: typings.std.HTMLElement,
-  elementToPosition: typings.std.HTMLElement
-): typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("positionCallout")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo]
-inline def positionCallout(
-  props: typings.officeUiFabricReact.positioningTypesMod.IPositionProps,
-  hostElement: typings.std.HTMLElement,
-  elementToPosition: typings.std.HTMLElement,
-  previousPositions: typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo
-): typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("positionCallout")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any], previousPositions.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo]
+  props: IPositionProps,
+  hostElement: HTMLElement,
+  elementToPosition: HTMLElement,
+  previousPositions: ICalloutPositionedInfo
+): ICalloutPositionedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("positionCallout")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any], previousPositions.asInstanceOf[js.Any])).asInstanceOf[ICalloutPositionedInfo]
 
+inline def positionCard(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("positionCard")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any])).asInstanceOf[ICalloutPositionedInfo]
 inline def positionCard(
-  props: typings.officeUiFabricReact.positioningTypesMod.IPositionProps,
-  hostElement: typings.std.HTMLElement,
-  elementToPosition: typings.std.HTMLElement
-): typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("positionCard")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo]
-inline def positionCard(
-  props: typings.officeUiFabricReact.positioningTypesMod.IPositionProps,
-  hostElement: typings.std.HTMLElement,
-  elementToPosition: typings.std.HTMLElement,
-  previousPositions: typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo
-): typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("positionCard")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any], previousPositions.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.positioningTypesMod.ICalloutPositionedInfo]
+  props: IPositionProps,
+  hostElement: HTMLElement,
+  elementToPosition: HTMLElement,
+  previousPositions: ICalloutPositionedInfo
+): ICalloutPositionedInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("positionCard")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any], previousPositions.asInstanceOf[js.Any])).asInstanceOf[ICalloutPositionedInfo]
 
+inline def positionElement(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): IPositionedData = (^.asInstanceOf[js.Dynamic].applyDynamic("positionElement")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any])).asInstanceOf[IPositionedData]
 inline def positionElement(
-  props: typings.officeUiFabricReact.positioningTypesMod.IPositionProps,
-  hostElement: typings.std.HTMLElement,
-  elementToPosition: typings.std.HTMLElement
-): typings.officeUiFabricReact.positioningTypesMod.IPositionedData = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("positionElement")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.positioningTypesMod.IPositionedData]
-inline def positionElement(
-  props: typings.officeUiFabricReact.positioningTypesMod.IPositionProps,
-  hostElement: typings.std.HTMLElement,
-  elementToPosition: typings.std.HTMLElement,
-  previousPositions: typings.officeUiFabricReact.positioningTypesMod.IPositionedData
-): typings.officeUiFabricReact.positioningTypesMod.IPositionedData = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("positionElement")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any], previousPositions.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.positioningTypesMod.IPositionedData]
+  props: IPositionProps,
+  hostElement: HTMLElement,
+  elementToPosition: HTMLElement,
+  previousPositions: IPositionedData
+): IPositionedData = (^.asInstanceOf[js.Dynamic].applyDynamic("positionElement")(props.asInstanceOf[js.Any], hostElement.asInstanceOf[js.Any], elementToPosition.asInstanceOf[js.Any], previousPositions.asInstanceOf[js.Any])).asInstanceOf[IPositionedData]
 
-inline def precisionRound(value: scala.Double, precision: scala.Double): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-inline def precisionRound(value: scala.Double, precision: scala.Double, base: scala.Double): scala.Double = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def precisionRound(value: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
+inline def precisionRound(value: Double, precision: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
 
-inline def presenceBoolean(presence: typings.officeUiFabricReact.personaTypesMod.PersonaPresence): typings.officeUiFabricReact.anon.IsAvailable = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("presenceBoolean")(presence.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.anon.IsAvailable]
+inline def presenceBoolean(presence: typings.officeUiFabricReact.personaTypesMod.PersonaPresence): IsAvailable = ^.asInstanceOf[js.Dynamic].applyDynamic("presenceBoolean")(presence.asInstanceOf[js.Any]).asInstanceOf[IsAvailable]
 
-inline def raiseClick(target: typings.std.Element): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("raiseClick")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def raiseClick(target: typings.std.Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("raiseClick")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def registerDefaultFontFaces(baseUrl: java.lang.String): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultFontFaces")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def registerDefaultFontFaces(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultFontFaces")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def registerIconAlias(iconName: java.lang.String, mappedToName: java.lang.String): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerIconAlias")(iconName.asInstanceOf[js.Any], mappedToName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def registerIconAlias(iconName: String, mappedToName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerIconAlias")(iconName.asInstanceOf[js.Any], mappedToName.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def registerIcons(iconSubset: typings.uifabricStyling.iconsMod.IIconSubset): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def registerIcons(
-  iconSubset: typings.uifabricStyling.iconsMod.IIconSubset,
-  options: typings.uifabricStyling.anon.PartialIIconOptions
-): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def registerIcons(iconSubset: IIconSubset): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def registerIcons(iconSubset: IIconSubset, options: PartialIIconOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerIcons")(iconSubset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ typings.fluentuiTheme.ithemeMod.ITheme, scala.Unit]): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerOnThemeChangeCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def registerLayer(hostId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLayer")(hostId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def removeIndex[T](array: js.Array[T], index: scala.Double): js.Array[T] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeIndex")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def registerLayerHost(hostId: String, layerHost: ILayerHost): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLayerHost")(hostId.asInstanceOf[js.Any], layerHost.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def removeOnThemeChangeCallback(callback: js.Function1[/* theme */ typings.fluentuiTheme.ithemeMod.ITheme, scala.Unit]): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeOnThemeChangeCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnThemeChangeCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def replaceElement[T](array: js.Array[T], newElement: T, index: scala.Double): js.Array[T] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("replaceElement")(array.asInstanceOf[js.Any], newElement.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+inline def removeIndex[T](array: js.Array[T], index: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeIndex")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 
-inline def resetControlledWarnings(): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetControlledWarnings")().asInstanceOf[scala.Unit]
+inline def removeOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOnThemeChangeCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def resetIds(): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetIds")().asInstanceOf[scala.Unit]
-inline def resetIds(counter: scala.Double): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetIds")(counter.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def replaceElement[T](array: js.Array[T], newElement: T, index: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceElement")(array.asInstanceOf[js.Any], newElement.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 
-inline def resetMemoizations(): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetMemoizations")().asInstanceOf[scala.Unit]
+inline def resetControlledWarnings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetControlledWarnings")().asInstanceOf[Unit]
 
-inline def rgb2hex(r: scala.Double, g: scala.Double, b: scala.Double): java.lang.String = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def resetIds(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIds")().asInstanceOf[Unit]
+inline def resetIds(counter: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIds")(counter.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def rgb2hsv(r: scala.Double, g: scala.Double, b: scala.Double): typings.officeUiFabricReact.interfacesMod.IHSV = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsv")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSV]
+inline def resetMemoizations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetMemoizations")().asInstanceOf[Unit]
 
-inline def safeRequestAnimationFrame(component: typings.react.mod.Component[js.Object, js.Object, js.Any]): js.Function1[/* cb */ js.Function, scala.Unit] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("safeRequestAnimationFrame")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* cb */ js.Function, scala.Unit]]
+inline def rgb2hex(r: Double, g: Double, b: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def safeSetTimeout(component: typings.react.mod.Component[js.Object, js.Object, js.Any]): js.Function2[/* cb */ js.Function, /* duration */ scala.Double, scala.Unit] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("safeSetTimeout")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* cb */ js.Function, /* duration */ scala.Double, scala.Unit]]
-
-inline def selectProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("selectProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
-
-inline def sequencesToID(keySequences: js.Array[java.lang.String]): java.lang.String = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sequencesToID")(keySequences.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-
-inline def setBaseUrl(baseUrl: java.lang.String): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setBaseUrl")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def setFocusVisibility(enabled: scala.Boolean): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setFocusVisibility")(enabled.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def setFocusVisibility(enabled: scala.Boolean, target: typings.std.Element): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setFocusVisibility")(enabled.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def setIconOptions(options: typings.uifabricStyling.anon.PartialIIconOptions): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setIconOptions")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def setLanguage(language: java.lang.String): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def setLanguage(language: java.lang.String, avoidPersisting: scala.Boolean): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], avoidPersisting.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def setLanguage_localStorage(
-  language: java.lang.String,
-  persistenceType: typings.officeUiFabricReact.officeUiFabricReactStrings.localStorage
-): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], persistenceType.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def setLanguage_none(
-  language: java.lang.String,
-  persistenceType: typings.officeUiFabricReact.officeUiFabricReactStrings.none
-): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], persistenceType.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def setLanguage_sessionStorage(
-  language: java.lang.String,
-  persistenceType: typings.officeUiFabricReact.officeUiFabricReactStrings.sessionStorage
-): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], persistenceType.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def setMemoizeWeakMap(weakMap: js.Any): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setMemoizeWeakMap")(weakMap.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def setPortalAttribute(element: typings.std.HTMLElement): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setPortalAttribute")(element.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def setRTL(isRTL: scala.Boolean): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setRTL")(isRTL.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def setRTL(isRTL: scala.Boolean, persistSetting: scala.Boolean): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setRTL")(isRTL.asInstanceOf[js.Any], persistSetting.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def setSSR(isEnabled: scala.Boolean): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setSSR")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def setVirtualParent(child: typings.std.HTMLElement): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setVirtualParent")(child.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def setVirtualParent(child: typings.std.HTMLElement, parent: typings.std.HTMLElement): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setVirtualParent")(child.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def setWarningCallback(): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setWarningCallback")().asInstanceOf[scala.Unit]
-inline def setWarningCallback(warningCallback: js.Function1[/* message */ java.lang.String, scala.Unit]): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setWarningCallback")(warningCallback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def shallowCompare[TA /* <: js.Any */, TB /* <: js.Any */](a: TA, b: TB): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-
-inline def shouldWrapFocus_datanohorizontalwrap(
-  element: typings.std.HTMLElement,
-  noWrapDataAttribute: typings.officeUiFabricReact.officeUiFabricReactStrings.`data-no-horizontal-wrap`
-): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("shouldWrapFocus")(element.asInstanceOf[js.Any], noWrapDataAttribute.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-
-inline def shouldWrapFocus_datanoverticalwrap(
-  element: typings.std.HTMLElement,
-  noWrapDataAttribute: typings.officeUiFabricReact.officeUiFabricReactStrings.`data-no-vertical-wrap`
-): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("shouldWrapFocus")(element.asInstanceOf[js.Any], noWrapDataAttribute.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-
-inline def sizeBoolean(size: typings.officeUiFabricReact.personaTypesMod.PersonaSize): typings.officeUiFabricReact.anon.IsSize10 = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sizeBoolean")(size.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.anon.IsSize10]
-
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]]
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: scala.Unit,
-  pure: scala.Boolean
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps,
-  pure: scala.Boolean
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: scala.Unit,
-  pure: scala.Boolean
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps,
-  pure: scala.Boolean
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]]
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: scala.Unit,
-  pure: scala.Boolean
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps,
-  pure: scala.Boolean
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: scala.Unit,
-  pure: scala.Boolean
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-inline def styled[TComponentProps /* <: typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps,
-  pure: scala.Boolean
-): typings.react.mod.FunctionComponent[TComponentProps] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.FunctionComponent[TComponentProps]]
-
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]]
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: scala.Unit,
-  pure: scala.Boolean
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps,
-  pure: scala.Boolean
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: scala.Unit,
-  pure: scala.Boolean
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.ComponentClass[TComponentProps, typings.react.mod.ComponentState],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps,
-  pure: scala.Boolean
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]]
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: scala.Unit,
-  pure: scala.Boolean
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: js.Function1[/* props */ TComponentProps, typings.std.Partial[TComponentProps]],
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps,
-  pure: scala.Boolean
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: scala.Unit,
-  pure: scala.Boolean
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (typings.uifabricUtilities.styledMod.IPropsWithStyles[TStyleProps, TStyleSet]) & typings.react.mod.RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */, TRef](
-  Component: typings.react.mod.FunctionComponent[TComponentProps],
-  baseStyles: typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
-  getProps: scala.Unit,
-  customizable: typings.uifabricUtilities.styledMod.ICustomizableProps,
-  pure: scala.Boolean
-): typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[TComponentProps] & typings.react.mod.RefAttributes[TRef]]]
-
-inline def tableProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("tableProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
-
-inline def tdProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("tdProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
-
-inline def textAreaProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("textAreaProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
-
-inline def thProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("thProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
-
-inline def themeRulesStandardCreator(): typings.officeUiFabricReact.ithemerulesMod.IThemeRules = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("themeRulesStandardCreator")().asInstanceOf[typings.officeUiFabricReact.ithemerulesMod.IThemeRules]
-
-inline def toMatrix[T](items: js.Array[T], columnCount: scala.Double): js.Array[js.Array[T]] = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("toMatrix")(items.asInstanceOf[js.Any], columnCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
-
-inline def trProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("trProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
-
-inline def transitionKeysAreEqual(
-  key1: typings.officeUiFabricReact.ikeytiptransitionkeyMod.IKeytipTransitionKey,
-  key2: typings.officeUiFabricReact.ikeytiptransitionkeyMod.IKeytipTransitionKey
-): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysAreEqual")(key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-
-inline def transitionKeysContain(
-  keys: js.Array[typings.officeUiFabricReact.ikeytiptransitionkeyMod.IKeytipTransitionKey],
-  key: typings.officeUiFabricReact.ikeytiptransitionkeyMod.IKeytipTransitionKey
-): scala.Boolean = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysContain")(keys.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-
-inline def unhoistMethods(source: js.Any, methodNames: js.Array[java.lang.String]): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unhoistMethods")(source.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def unregisterIcons(iconNames: js.Array[java.lang.String]): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unregisterIcons")(iconNames.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def updateA(color: typings.officeUiFabricReact.interfacesMod.IColor, a: scala.Double): typings.officeUiFabricReact.interfacesMod.IColor = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateA")(color.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
-
-inline def updateH(color: typings.officeUiFabricReact.interfacesMod.IColor, h: scala.Double): typings.officeUiFabricReact.interfacesMod.IColor = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateH")(color.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
-
-inline def updateRGB_a(
-  color: typings.officeUiFabricReact.interfacesMod.IColor,
-  component: typings.officeUiFabricReact.officeUiFabricReactStrings.a,
-  value: scala.Double
-): typings.officeUiFabricReact.interfacesMod.IColor = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
-
-inline def updateRGB_b(
-  color: typings.officeUiFabricReact.interfacesMod.IColor,
-  component: typings.officeUiFabricReact.officeUiFabricReactStrings.b,
-  value: scala.Double
-): typings.officeUiFabricReact.interfacesMod.IColor = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
-
-inline def updateRGB_g(
-  color: typings.officeUiFabricReact.interfacesMod.IColor,
-  component: typings.officeUiFabricReact.officeUiFabricReactStrings.g,
-  value: scala.Double
-): typings.officeUiFabricReact.interfacesMod.IColor = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
-
-inline def updateRGB_r(
-  color: typings.officeUiFabricReact.interfacesMod.IColor,
-  component: typings.officeUiFabricReact.officeUiFabricReactStrings.r,
-  value: scala.Double
-): typings.officeUiFabricReact.interfacesMod.IColor = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
-
-inline def updateSV(color: typings.officeUiFabricReact.interfacesMod.IColor, s: scala.Double, v: scala.Double): typings.officeUiFabricReact.interfacesMod.IColor = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateSV")(color.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
-
-inline def updateT(color: typings.officeUiFabricReact.interfacesMod.IColor, t: scala.Double): typings.officeUiFabricReact.interfacesMod.IColor = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateT")(color.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
-
-inline def useCustomizationSettings(properties: js.Array[java.lang.String]): typings.uifabricUtilities.customizationsMod.ISettings = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useCustomizationSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-inline def useCustomizationSettings(properties: js.Array[java.lang.String], scopeName: java.lang.String): typings.uifabricUtilities.customizationsMod.ISettings = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useCustomizationSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[typings.uifabricUtilities.customizationsMod.ISettings]
-
-inline def useDocument(): js.UndefOr[typings.std.Document] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDocument")().asInstanceOf[js.UndefOr[typings.std.Document]]
-
-inline def useFocusRects(): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useFocusRects")().asInstanceOf[scala.Unit]
-inline def useFocusRects(rootRef: typings.react.mod.RefObject[typings.std.HTMLElement]): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useFocusRects")(rootRef.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def useKeytipRef[TElement /* <: typings.std.HTMLElement */](options: typings.officeUiFabricReact.keytipDataTypesMod.KeytipDataOptions): typings.react.mod.Ref[TElement] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useKeytipRef")(options.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.Ref[TElement]]
-
-inline def useWindow(): js.UndefOr[typings.std.Window] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useWindow")().asInstanceOf[js.UndefOr[typings.std.Window]]
-
-inline def values[T](obj: js.Any): js.Array[T] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-
-inline def videoProperties: typings.std.Record[java.lang.String, scala.Double] = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("videoProperties").asInstanceOf[typings.std.Record[java.lang.String, scala.Double]]
-
-inline def warn(message: java.lang.String): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def rgb2hsv(r: Double, g: Double, b: Double): IHSV = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsv")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[IHSV]
+
+inline def safeRequestAnimationFrame(component: Component[js.Object, js.Object, Any]): js.Function1[/* cb */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeRequestAnimationFrame")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* cb */ js.Function, Unit]]
+
+inline def safeSetTimeout(component: Component[js.Object, js.Object, Any]): js.Function2[/* cb */ js.Function, /* duration */ Double, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeSetTimeout")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* cb */ js.Function, /* duration */ Double, Unit]]
+
+inline def selectProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("selectProperties").asInstanceOf[Record[String, Double]]
+
+inline def sequencesToID(keySequences: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sequencesToID")(keySequences.asInstanceOf[js.Any]).asInstanceOf[String]
+
+inline def setBaseUrl(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseUrl")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setFocusVisibility(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFocusVisibility")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setFocusVisibility(enabled: Boolean, target: typings.std.Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFocusVisibility")(enabled.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setIconOptions(options: PartialIIconOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIconOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setLanguage(language: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setLanguage(language: String, avoidPersisting: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], avoidPersisting.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def setLanguage(language: String, persistenceType: localStorage | sessionStorage | none): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any], persistenceType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setLayerHostSelector(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLayerHostSelector")().asInstanceOf[Unit]
+inline def setLayerHostSelector(selector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLayerHostSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setMemoizeWeakMap(weakMap: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMemoizeWeakMap")(weakMap.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setMonth(date: js.Date, month: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setMonth")(date.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+
+inline def setPortalAttribute(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPortalAttribute")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setRTL(isRTL: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRTL")(isRTL.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setRTL(isRTL: Boolean, persistSetting: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRTL")(isRTL.asInstanceOf[js.Any], persistSetting.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setResponsiveMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setResponsiveMode")().asInstanceOf[Unit]
+inline def setResponsiveMode(responsiveMode: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setResponsiveMode")(responsiveMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setSSR(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSSR")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setVirtualParent(child: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVirtualParent")(child.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setVirtualParent(child: HTMLElement, parent: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVirtualParent")(child.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setWarningCallback(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWarningCallback")().asInstanceOf[Unit]
+inline def setWarningCallback(warningCallback: js.Function1[/* message */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWarningCallback")(warningCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def shallowCompare[TA /* <: Any */, TB /* <: Any */](a: TA, b: TB): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
+inline def shouldWrapFocus(element: HTMLElement, noWrapDataAttribute: `data-no-vertical-wrap` | `data-no-horizontal-wrap`): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldWrapFocus")(element.asInstanceOf[js.Any], noWrapDataAttribute.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
+inline def sizeBoolean(size: PersonaSize): IsSize10 = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeBoolean")(size.asInstanceOf[js.Any]).asInstanceOf[IsSize10]
+
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: Unit,
+  pure: Boolean
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: ICustomizableProps
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: ICustomizableProps,
+  pure: Boolean
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: Unit,
+  pure: Boolean
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: ICustomizableProps
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: ICustomizableProps,
+  pure: Boolean
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: Unit,
+  pure: Boolean
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: ICustomizableProps
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: ICustomizableProps,
+  pure: Boolean
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: Unit,
+  pure: Boolean
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: ICustomizableProps
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+inline def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: ICustomizableProps,
+  pure: Boolean
+): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
+
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: Unit,
+  pure: Boolean
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: ICustomizableProps
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: ICustomizableProps,
+  pure: Boolean
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: Unit,
+  pure: Boolean
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: ICustomizableProps
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: ComponentClass[TComponentProps, ComponentState],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: ICustomizableProps,
+  pure: Boolean
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: Unit,
+  pure: Boolean
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: ICustomizableProps
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+  customizable: ICustomizableProps,
+  pure: Boolean
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: Unit,
+  pure: Boolean
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: ICustomizableProps
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  Component: FunctionComponent[TComponentProps],
+  baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+  getProps: Unit,
+  customizable: ICustomizableProps,
+  pure: Boolean
+): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
+
+inline def tableProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("tableProperties").asInstanceOf[Record[String, Double]]
+
+inline def tdProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("tdProperties").asInstanceOf[Record[String, Double]]
+
+inline def textAreaProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("textAreaProperties").asInstanceOf[Record[String, Double]]
+
+inline def thProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("thProperties").asInstanceOf[Record[String, Double]]
+
+inline def themeRulesStandardCreator(): IThemeRules = ^.asInstanceOf[js.Dynamic].applyDynamic("themeRulesStandardCreator")().asInstanceOf[IThemeRules]
+
+inline def toMatrix[T](items: js.Array[T], columnCount: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toMatrix")(items.asInstanceOf[js.Any], columnCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+
+inline def trProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("trProperties").asInstanceOf[Record[String, Double]]
+
+inline def transitionKeysAreEqual(key1: IKeytipTransitionKey, key2: IKeytipTransitionKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysAreEqual")(key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
+inline def transitionKeysContain(keys: js.Array[IKeytipTransitionKey], key: IKeytipTransitionKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysContain")(keys.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
+inline def unhoistMethods(source: Any, methodNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unhoistMethods")(source.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def unregisterIcons(iconNames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterIcons")(iconNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def unregisterLayer(hostId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterLayer")(hostId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def unregisterLayerHost(hostId: String, layerHost: ILayerHost): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterLayerHost")(hostId.asInstanceOf[js.Any], layerHost.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def updateA(color: IColor, a: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateA")(color.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[IColor]
+
+inline def updateH(color: IColor, h: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateH")(color.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[IColor]
+
+inline def updateRGB(color: IColor, component: r | g | b | a, value: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IColor]
+
+inline def updateSV(color: IColor, s: Double, v: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSV")(color.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[IColor]
+
+inline def updateT(color: IColor, t: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateT")(color.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[IColor]
+
+inline def useCustomizationSettings(properties: js.Array[String]): ISettings = ^.asInstanceOf[js.Dynamic].applyDynamic("useCustomizationSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[ISettings]
+inline def useCustomizationSettings(properties: js.Array[String], scopeName: String): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("useCustomizationSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[ISettings]
+
+inline def useDocument(): js.UndefOr[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDocument")().asInstanceOf[js.UndefOr[Document]]
+
+inline def useFocusRects(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusRects")().asInstanceOf[Unit]
+inline def useFocusRects(rootRef: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusRects")(rootRef.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def useKeytipRef[TElement /* <: HTMLElement */](options: KeytipDataOptions): Ref[TElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeytipRef")(options.asInstanceOf[js.Any]).asInstanceOf[Ref[TElement]]
+
+inline def useWindow(): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindow")().asInstanceOf[js.UndefOr[Window]]
+
+inline def values[T](obj: Any): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+
+inline def videoProperties: Record[String, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("videoProperties").asInstanceOf[Record[String, Double]]
+
+inline def warn(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def warnConditionallyRequiredProps[P](
-  componentName: java.lang.String,
+  componentName: String,
   props: P,
-  requiredProps: js.Array[java.lang.String],
-  conditionalPropName: java.lang.String,
-  condition: scala.Boolean
-): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("warnConditionallyRequiredProps")(componentName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], requiredProps.asInstanceOf[js.Any], conditionalPropName.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  requiredProps: js.Array[String],
+  conditionalPropName: String,
+  condition: Boolean
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnConditionallyRequiredProps")(componentName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], requiredProps.asInstanceOf[js.Any], conditionalPropName.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def warnControlledUsage[P](params: typings.uifabricUtilities.warnControlledUsageMod.IWarnControlledUsageParams[P]): scala.Unit = typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("warnControlledUsage")(params.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def warnControlledUsage[P](params: IWarnControlledUsageParams[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnControlledUsage")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def warnDeprecations[P](
-  componentName: java.lang.String,
-  props: P,
-  deprecationMap: typings.uifabricUtilities.warnWarnMod.ISettingsMap[P]
-): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecations")(componentName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], deprecationMap.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def warnDeprecations[P](componentName: String, props: P, deprecationMap: ISettingsMap[P]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecations")(componentName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], deprecationMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def warnMutuallyExclusive[P](
-  componentName: java.lang.String,
-  props: P,
-  exclusiveMap: typings.uifabricUtilities.warnWarnMod.ISettingsMap[P]
-): scala.Unit = (typings.officeUiFabricReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("warnMutuallyExclusive")(componentName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], exclusiveMap.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def warnMutuallyExclusive[P](componentName: String, props: P, exclusiveMap: ISettingsMap[P]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnMutuallyExclusive")(componentName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], exclusiveMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def withResponsiveMode[TProps /* <: typings.officeUiFabricReact.anon.ResponsiveMode */, TState](
+  ComposedComponent: Instantiable2[/* props */ TProps, /* args (repeated) */ Any, Component[TProps, TState, Any]]
+): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withResponsiveMode")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[Any]
+
+inline def withViewport[TProps /* <: Viewport */, TState](
+  ComposedComponent: Instantiable2[/* props */ TProps, /* args (repeated) */ Any, Component[TProps, TState, Any]]
+): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withViewport")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[Any]

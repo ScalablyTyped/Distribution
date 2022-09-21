@@ -26,7 +26,10 @@ trait Name extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. The resource name of the capacity commitment, e.g., `projects/myproject/locations/US/capacityCommitments/123` */
+  /**
+    * Output only. The resource name of the capacity commitment, e.g., `projects/myproject/locations/US/capacityCommitments/123` The commitment_id must only contain lower case
+    * alphanumeric characters or dashes. It must start with a letter and must not end with a dash. Its maximum length is 64 characters.
+    */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

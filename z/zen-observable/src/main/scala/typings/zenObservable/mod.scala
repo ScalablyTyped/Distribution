@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("zen-observable", JSImport.Namespace)
   @js.native
-  class ^[T] protected ()
+  open class ^[T] protected ()
     extends StObject
        with Observable[T] {
     def this(subscriber: Subscriber[T]) = this()
@@ -28,7 +28,7 @@ object mod {
   inline def from[R](observable: ObservableLike[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
   
   /* static member */
-  inline def of[R](items: R*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  inline def of[R](items: R*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Observable[R]]
   
   @js.native
   trait Observable[T] extends StObject {
@@ -36,6 +36,8 @@ object mod {
     def concat[R](observable: Observable[R]*): Observable[R] = js.native
     
     def filter(callback: js.Function1[/* value */ T, Boolean]): Observable[T] = js.native
+    @JSName("filter")
+    def filter_S_T[S /* <: T */](callback: js.Function1[/* value */ T, /* is S */ Boolean]): Observable[S] = js.native
     
     def flatMap[R](callback: js.Function1[/* value */ T, ObservableLike[R]]): Observable[R] = js.native
     
@@ -52,10 +54,10 @@ object mod {
     
     def subscribe(observer: Observer[T]): Subscription = js.native
     def subscribe(onNext: js.Function1[/* value */ T, Unit]): Subscription = js.native
-    def subscribe(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* error */ js.Any, Unit]): Subscription = js.native
+    def subscribe(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* error */ Any, Unit]): Subscription = js.native
     def subscribe(
       onNext: js.Function1[/* value */ T, Unit],
-      onError: js.Function1[/* error */ js.Any, Unit],
+      onError: js.Function1[/* error */ Any, Unit],
       onComplete: js.Function0[Unit]
     ): Subscription = js.native
     def subscribe(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onComplete: js.Function0[Unit]): Subscription = js.native
@@ -92,11 +94,11 @@ object mod {
         
         var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
         
-        var error: js.UndefOr[js.Function1[/* errorValue */ js.Any, Unit]] = js.undefined
+        var error: js.UndefOr[js.Function1[/* errorValue */ Any, Unit]] = js.undefined
         
         var next: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
         
-        var start: js.UndefOr[js.Function1[/* subscription */ Subscription, js.Any]] = js.undefined
+        var start: js.UndefOr[js.Function1[/* subscription */ Subscription, Any]] = js.undefined
       }
       object Observer {
         
@@ -111,7 +113,7 @@ object mod {
           
           inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
           
-          inline def setError(value: /* errorValue */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+          inline def setError(value: /* errorValue */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
           
           inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
           
@@ -119,7 +121,7 @@ object mod {
           
           inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
           
-          inline def setStart(value: /* subscription */ Subscription => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+          inline def setStart(value: /* subscription */ Subscription => Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
           
           inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
         }
@@ -154,13 +156,13 @@ object mod {
         
         def complete(): Unit
         
-        def error(errorValue: js.Any): Unit
+        def error(errorValue: Any): Unit
         
         def next(value: T): Unit
       }
       object SubscriptionObserver {
         
-        inline def apply[T](closed: Boolean, complete: () => Unit, error: js.Any => Unit, next: T => Unit): SubscriptionObserver[T] = {
+        inline def apply[T](closed: Boolean, complete: () => Unit, error: Any => Unit, next: T => Unit): SubscriptionObserver[T] = {
           val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
           __obj.asInstanceOf[SubscriptionObserver[T]]
         }
@@ -171,7 +173,7 @@ object mod {
           
           inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
           
-          inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+          inline def setError(value: Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
           
           inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
         }

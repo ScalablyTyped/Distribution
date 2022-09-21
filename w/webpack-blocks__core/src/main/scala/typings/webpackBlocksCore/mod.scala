@@ -1,7 +1,8 @@
 package typings.webpackBlocksCore
 
-import typings.std.Plugin
-import typings.std.RegExp
+import typings.webpack.mod.Configuration
+import typings.webpack.mod.Plugin
+import typings.webpack.mod.RuleSetRule
 import typings.webpackBlocksCore.anon.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,10 +60,7 @@ object mod {
   type ConfigSetter[T /* <: Context */] = js.Function2[
     /* context */ T, 
     /* util */ Util, 
-    js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ /* config */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-    ]
+    js.Function1[/* config */ Configuration, Configuration]
   ]
   
   trait Context extends StObject {
@@ -85,20 +83,20 @@ object mod {
   
   trait InitialContext extends StObject {
     
-    var webpack: js.Any
+    var webpack: Any
     
     var webpackVersion: String
   }
   object InitialContext {
     
-    inline def apply(webpack: js.Any, webpackVersion: String): InitialContext = {
+    inline def apply(webpack: Any, webpackVersion: String): InitialContext = {
       val __obj = js.Dynamic.literal(webpack = webpack.asInstanceOf[js.Any], webpackVersion = webpackVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialContext]
     }
     
     extension [Self <: InitialContext](x: Self) {
       
-      inline def setWebpack(value: js.Any): Self = StObject.set(x, "webpack", value.asInstanceOf[js.Any])
+      inline def setWebpack(value: Any): Self = StObject.set(x, "webpack", value.asInstanceOf[js.Any])
       
       inline def setWebpackVersion(value: String): Self = StObject.set(x, "webpackVersion", value.asInstanceOf[js.Any])
     }
@@ -106,7 +104,7 @@ object mod {
   
   trait MatchOptions extends StObject {
     
-    var exclude: js.UndefOr[RegExp] = js.undefined
+    var exclude: js.UndefOr[js.RegExp] = js.undefined
     
     var include: js.UndefOr[String] = js.undefined
   }
@@ -119,7 +117,7 @@ object mod {
     
     extension [Self <: MatchOptions](x: Self) {
       
-      inline def setExclude(value: RegExp): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.RegExp): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
@@ -131,34 +129,18 @@ object mod {
   
   trait Util extends StObject {
     
-    def addLoader(
-      loaderDefinition: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RuleSetRule */ js.Any
-    ): js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-      ]
+    def addLoader(loaderDefinition: RuleSetRule): js.Function0[Configuration]
     
-    def addPlugin(plugin: Plugin): js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-      ]
+    def addPlugin(plugin: Plugin): js.Function0[Configuration]
     
-    def merge(
-      configSnippet: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-    ): js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-      ]
+    def merge(configSnippet: Configuration): js.Function0[Configuration]
   }
   object Util {
     
     inline def apply(
-      addLoader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RuleSetRule */ js.Any => js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-        ],
-      addPlugin: Plugin => js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-        ],
-      merge: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any => js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-        ]
+      addLoader: RuleSetRule => js.Function0[Configuration],
+      addPlugin: Plugin => js.Function0[Configuration],
+      merge: Configuration => js.Function0[Configuration]
     ): Util = {
       val __obj = js.Dynamic.literal(addLoader = js.Any.fromFunction1(addLoader), addPlugin = js.Any.fromFunction1(addPlugin), merge = js.Any.fromFunction1(merge))
       __obj.asInstanceOf[Util]
@@ -166,23 +148,11 @@ object mod {
     
     extension [Self <: Util](x: Self) {
       
-      inline def setAddLoader(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RuleSetRule */ js.Any => js.Function0[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-            ]
-      ): Self = StObject.set(x, "addLoader", js.Any.fromFunction1(value))
+      inline def setAddLoader(value: RuleSetRule => js.Function0[Configuration]): Self = StObject.set(x, "addLoader", js.Any.fromFunction1(value))
       
-      inline def setAddPlugin(
-        value: Plugin => js.Function0[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-            ]
-      ): Self = StObject.set(x, "addPlugin", js.Any.fromFunction1(value))
+      inline def setAddPlugin(value: Plugin => js.Function0[Configuration]): Self = StObject.set(x, "addPlugin", js.Any.fromFunction1(value))
       
-      inline def setMerge(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any => js.Function0[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-            ]
-      ): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
+      inline def setMerge(value: Configuration => js.Function0[Configuration]): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
     }
   }
 }

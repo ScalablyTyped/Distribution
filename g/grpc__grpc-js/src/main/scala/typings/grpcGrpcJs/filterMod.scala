@@ -4,7 +4,7 @@ import typings.grpcGrpcJs.callStreamMod.Call
 import typings.grpcGrpcJs.callStreamMod.StatusObject
 import typings.grpcGrpcJs.callStreamMod.WriteObject
 import typings.grpcGrpcJs.metadataMod.Metadata
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,6 +27,9 @@ object filterMod {
     override def receiveTrailers(status: StatusObject): StatusObject = js.native
     
     /* CompleteClass */
+    override def refresh(): Unit = js.native
+    
+    /* CompleteClass */
     override def sendMessage(message: js.Promise[WriteObject]): js.Promise[WriteObject] = js.native
     
     /* CompleteClass */
@@ -41,6 +44,8 @@ object filterMod {
     
     def receiveTrailers(status: StatusObject): StatusObject
     
+    def refresh(): Unit
+    
     def sendMessage(message: js.Promise[WriteObject]): js.Promise[WriteObject]
     
     def sendMetadata(metadata: js.Promise[Metadata]): js.Promise[Metadata]
@@ -51,10 +56,11 @@ object filterMod {
       receiveMessage: js.Promise[Buffer] => js.Promise[Buffer],
       receiveMetadata: Metadata => Metadata,
       receiveTrailers: StatusObject => StatusObject,
+      refresh: () => Unit,
       sendMessage: js.Promise[WriteObject] => js.Promise[WriteObject],
       sendMetadata: js.Promise[Metadata] => js.Promise[Metadata]
     ): Filter = {
-      val __obj = js.Dynamic.literal(receiveMessage = js.Any.fromFunction1(receiveMessage), receiveMetadata = js.Any.fromFunction1(receiveMetadata), receiveTrailers = js.Any.fromFunction1(receiveTrailers), sendMessage = js.Any.fromFunction1(sendMessage), sendMetadata = js.Any.fromFunction1(sendMetadata))
+      val __obj = js.Dynamic.literal(receiveMessage = js.Any.fromFunction1(receiveMessage), receiveMetadata = js.Any.fromFunction1(receiveMetadata), receiveTrailers = js.Any.fromFunction1(receiveTrailers), refresh = js.Any.fromFunction0(refresh), sendMessage = js.Any.fromFunction1(sendMessage), sendMetadata = js.Any.fromFunction1(sendMetadata))
       __obj.asInstanceOf[Filter]
     }
     
@@ -65,6 +71,8 @@ object filterMod {
       inline def setReceiveMetadata(value: Metadata => Metadata): Self = StObject.set(x, "receiveMetadata", js.Any.fromFunction1(value))
       
       inline def setReceiveTrailers(value: StatusObject => StatusObject): Self = StObject.set(x, "receiveTrailers", js.Any.fromFunction1(value))
+      
+      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
       
       inline def setSendMessage(value: js.Promise[WriteObject] => js.Promise[WriteObject]): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
       

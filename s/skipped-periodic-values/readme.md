@@ -11,9 +11,9 @@ Given a point and a distance, determine how many periodic values were skipped.
 | Full name          | skipped-periodic-values |
 | Keywords           | mathematics, math, period, periodic, contained, solution, function |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1323607 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 142176.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/jmeas/skipped-periodic-values.js)

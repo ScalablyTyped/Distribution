@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.MediaPlayer")
 @js.native
-class MediaPlayer protected ()
+open class MediaPlayer protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.MediaPlayer {
   def this(element: Element) = this()

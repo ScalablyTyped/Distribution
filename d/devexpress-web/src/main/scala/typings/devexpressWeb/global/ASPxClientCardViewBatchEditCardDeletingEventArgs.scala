@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCardViewBatchEditCardDeletingEventArgs")
 @js.native
-class ASPxClientCardViewBatchEditCardDeletingEventArgs protected ()
+open class ASPxClientCardViewBatchEditCardDeletingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewBatchEditCardDeletingEventArgs {
   /**
@@ -17,10 +17,10 @@ class ASPxClientCardViewBatchEditCardDeletingEventArgs protected ()
     * @param visibleIndex An integer value that specifies the processed card visible index.
     * @param cardValues A hashtable that stores information about the processed card's cells.
     */
-  def this(visibleIndex: Double, cardValues: js.Any) = this()
+  def this(visibleIndex: Double, cardValues: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -29,7 +29,7 @@ class ASPxClientCardViewBatchEditCardDeletingEventArgs protected ()
     * Gets a hashtable that maintains information about deleted cells.
     */
   /* CompleteClass */
-  var cardValues: js.Any = js.native
+  var cardValues: Any = js.native
   
   /**
     * Gets the processed card visible index.

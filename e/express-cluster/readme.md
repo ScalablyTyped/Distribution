@@ -10,15 +10,12 @@ Simple drop-in for express apps to spawn multiple processes
 | ------------------ | :-------------: |
 | Full name          | express-cluster |
 | Keywords           | cluster, express, http, https, net, listener |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 199716 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11861.333333333334 |
+| # stars            | 120.0 |
 
 ## Links
-- [Homepage](https://github.com/Flipboard/express-cluster)
-- [Bugs](https://github.com/Flipboard/express-cluster/issues)
-- [Repository](https://github.com/Flipboard/express-cluster)
 - [Npm](https://www.npmjs.com/package/express-cluster)
     
 

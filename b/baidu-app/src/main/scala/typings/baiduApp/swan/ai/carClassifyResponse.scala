@@ -30,6 +30,6 @@ object carClassifyResponse {
     
     inline def setResult(value: js.Array[Name]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: Name*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: Name*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InheritedFrom extends StObject {
   
+  var additionalRoles: js.UndefOr[js.Array[String]] = js.undefined
+  
   var inherited: js.UndefOr[Boolean] = js.undefined
   
   var inheritedFrom: js.UndefOr[String] = js.undefined
@@ -22,6 +24,12 @@ object InheritedFrom {
   }
   
   extension [Self <: InheritedFrom](x: Self) {
+    
+    inline def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalRolesUndefined: Self = StObject.set(x, "additionalRoles", js.undefined)
+    
+    inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value*))
     
     inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
     

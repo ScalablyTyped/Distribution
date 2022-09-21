@@ -1,7 +1,6 @@
 package typings.fluxStandardAction
 
 import typings.fluxStandardAction.fluxStandardActionBooleans.`true`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,21 +11,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isError[Type /* <: String */, CustomError /* <: Error */, Meta](action: js.Any): /* is flux-standard-action.flux-standard-action.ErrorFluxStandardAction<Type, CustomError, Meta> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(action.asInstanceOf[js.Any]).asInstanceOf[/* is flux-standard-action.flux-standard-action.ErrorFluxStandardAction<Type, CustomError, Meta> */ Boolean]
+  inline def isError[Type /* <: String */, CustomError /* <: js.Error */, Meta](action: Any): /* is flux-standard-action.flux-standard-action.ErrorFluxStandardAction<Type, CustomError, Meta> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(action.asInstanceOf[js.Any]).asInstanceOf[/* is flux-standard-action.flux-standard-action.ErrorFluxStandardAction<Type, CustomError, Meta> */ Boolean]
   
-  inline def isFSA[Type /* <: String */, Payload, Meta](action: js.Any): /* is flux-standard-action.flux-standard-action.FluxStandardAction<Type, Payload, Meta> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFSA")(action.asInstanceOf[js.Any]).asInstanceOf[/* is flux-standard-action.flux-standard-action.FluxStandardAction<Type, Payload, Meta> */ Boolean]
+  inline def isFSA[Type /* <: String */, Payload, Meta](action: Any): /* is flux-standard-action.flux-standard-action.FluxStandardAction<Type, Payload, Meta> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFSA")(action.asInstanceOf[js.Any]).asInstanceOf[/* is flux-standard-action.flux-standard-action.FluxStandardAction<Type, Payload, Meta> */ Boolean]
   
-  type ErrorFSA[CustomError /* <: Error */, Meta, Type /* <: String */] = ErrorFluxStandardAction[Type, CustomError, Meta]
+  type ErrorFSA[CustomError /* <: js.Error */, Meta, Type /* <: String */] = ErrorFluxStandardAction[Type, CustomError, Meta]
   
-  type ErrorFSAAuto[Type /* <: String */, CustomError /* <: Error */, Meta] = ErrorFluxStandardActionAuto[Type, CustomError, Meta]
+  type ErrorFSAAuto[Type /* <: String */, CustomError /* <: js.Error */, Meta] = ErrorFluxStandardActionAuto[Type, CustomError, Meta]
   
-  type ErrorFSAWithMeta[Type /* <: String */, CustomError /* <: Error */, Meta] = ErrorFluxStandardActionWithMeta[Type, CustomError, Meta]
+  type ErrorFSAWithMeta[Type /* <: String */, CustomError /* <: js.Error */, Meta] = ErrorFluxStandardActionWithMeta[Type, CustomError, Meta]
   
-  type ErrorFSAWithPayload[Type /* <: String */, CustomError /* <: Error */, Meta] = ErrorFluxStandardActionWithPayload[Type, CustomError, Meta]
+  type ErrorFSAWithPayload[Type /* <: String */, CustomError /* <: js.Error */, Meta] = ErrorFluxStandardActionWithPayload[Type, CustomError, Meta]
   
-  type ErrorFSAWithPayloadAndMeta[Type /* <: String */, CustomError /* <: Error */, Meta] = ErrorFluxStandardActionWithPayloadAndMeta[Type, CustomError, Meta]
+  type ErrorFSAWithPayloadAndMeta[Type /* <: String */, CustomError /* <: js.Error */, Meta] = ErrorFluxStandardActionWithPayloadAndMeta[Type, CustomError, Meta]
   
-  trait ErrorFluxStandardAction[Type /* <: String */, CustomError /* <: Error */, Meta]
+  trait ErrorFluxStandardAction[Type /* <: String */, CustomError /* <: js.Error */, Meta]
     extends StObject
        with FluxStandardAction[Type, CustomError, Meta] {
     
@@ -38,29 +37,29 @@ object mod {
   }
   object ErrorFluxStandardAction {
     
-    inline def apply[Type /* <: String */, CustomError /* <: Error */, Meta](`type`: Type): ErrorFluxStandardAction[Type, CustomError, Meta] = {
+    inline def apply[Type /* <: String */, CustomError /* <: js.Error */, Meta](`type`: Type): ErrorFluxStandardAction[Type, CustomError, Meta] = {
       val __obj = js.Dynamic.literal(error = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorFluxStandardAction[Type, CustomError, Meta]]
     }
     
-    extension [Self <: ErrorFluxStandardAction[?, ?, ?], Type /* <: String */, CustomError /* <: Error */, Meta](x: Self & (ErrorFluxStandardAction[Type, CustomError, Meta])) {
+    extension [Self <: ErrorFluxStandardAction[?, ?, ?], Type /* <: String */, CustomError /* <: js.Error */, Meta](x: Self & (ErrorFluxStandardAction[Type, CustomError, Meta])) {
       
       inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
-  type ErrorFluxStandardActionAuto[Type /* <: String */, CustomError /* <: Error */, Meta] = (ErrorFluxStandardActionWithPayloadAndMeta[Type, CustomError, Meta]) | (ErrorFluxStandardActionWithPayload[Type, CustomError, Meta])
+  type ErrorFluxStandardActionAuto[Type /* <: String */, CustomError /* <: js.Error */, Meta] = (ErrorFluxStandardActionWithPayloadAndMeta[Type, CustomError, Meta]) | (ErrorFluxStandardActionWithPayload[Type, CustomError, Meta])
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.fluxStandardAction.mod.FluxStandardActionAuto because Already inherited
   - typings.fluxStandardAction.mod.FluxStandardAction because Already inherited
-  - typings.fluxStandardAction.mod.FluxStandardActionWithMeta because var conflicts: error, meta, payload, `type`. Inlined  */ trait ErrorFluxStandardActionWithMeta[Type /* <: String */, CustomError /* <: Error */, Meta]
+  - typings.fluxStandardAction.mod.FluxStandardActionWithMeta because var conflicts: error, meta, payload, `type`. Inlined  */ trait ErrorFluxStandardActionWithMeta[Type /* <: String */, CustomError /* <: js.Error */, Meta]
     extends StObject
        with ErrorFluxStandardAction[Type, CustomError, Meta]
   object ErrorFluxStandardActionWithMeta {
     
-    inline def apply[Type /* <: String */, CustomError /* <: Error */, Meta](`type`: Type): ErrorFluxStandardActionWithMeta[Type, CustomError, Meta] = {
+    inline def apply[Type /* <: String */, CustomError /* <: js.Error */, Meta](`type`: Type): ErrorFluxStandardActionWithMeta[Type, CustomError, Meta] = {
       val __obj = js.Dynamic.literal(error = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorFluxStandardActionWithMeta[Type, CustomError, Meta]]
@@ -70,19 +69,19 @@ object mod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.fluxStandardAction.mod.FluxStandardActionAuto because Already inherited
   - typings.fluxStandardAction.mod.FluxStandardAction because Already inherited
-  - typings.fluxStandardAction.mod.FluxStandardActionWithPayload because var conflicts: error, meta, payload, `type`. Inlined  */ trait ErrorFluxStandardActionWithPayload[Type /* <: String */, CustomError /* <: Error */, Meta]
+  - typings.fluxStandardAction.mod.FluxStandardActionWithPayload because var conflicts: error, meta, payload, `type`. Inlined  */ trait ErrorFluxStandardActionWithPayload[Type /* <: String */, CustomError /* <: js.Error */, Meta]
     extends StObject
        with ErrorFluxStandardAction[Type, CustomError, Meta]
   object ErrorFluxStandardActionWithPayload {
     
-    inline def apply[Type /* <: String */, CustomError /* <: Error */, Meta](`type`: Type): ErrorFluxStandardActionWithPayload[Type, CustomError, Meta] = {
+    inline def apply[Type /* <: String */, CustomError /* <: js.Error */, Meta](`type`: Type): ErrorFluxStandardActionWithPayload[Type, CustomError, Meta] = {
       val __obj = js.Dynamic.literal(error = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorFluxStandardActionWithPayload[Type, CustomError, Meta]]
     }
   }
   
-  type ErrorFluxStandardActionWithPayloadAndMeta[Type /* <: String */, CustomError /* <: Error */, Meta] = (ErrorFluxStandardActionWithPayload[Type, CustomError, Meta]) & (ErrorFluxStandardActionWithMeta[Type, CustomError, Meta])
+  type ErrorFluxStandardActionWithPayloadAndMeta[Type /* <: String */, CustomError /* <: js.Error */, Meta] = (ErrorFluxStandardActionWithPayload[Type, CustomError, Meta]) & (ErrorFluxStandardActionWithMeta[Type, CustomError, Meta])
   
   type FSA[Type /* <: String */, Payload, Meta] = FluxStandardAction[Type, Payload, Meta]
   

@@ -12,40 +12,40 @@ object constantsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@material/slider/constants", "attributes.ARIA_DISABLED")
-    @js.native
-    def ARIA_DISABLED: String = js.native
-    inline def ARIA_DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_DISABLED")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@material/slider/constants", "attributes.ARIA_VALUEMAX")
-    @js.native
-    def ARIA_VALUEMAX: String = js.native
-    inline def ARIA_VALUEMAX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUEMAX")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@material/slider/constants", "attributes.ARIA_VALUEMIN")
-    @js.native
-    def ARIA_VALUEMIN: String = js.native
-    inline def ARIA_VALUEMIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUEMIN")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@material/slider/constants", "attributes.ARIA_VALUENOW")
-    @js.native
-    def ARIA_VALUENOW: String = js.native
-    inline def ARIA_VALUENOW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUENOW")(x.asInstanceOf[js.Any])
-    
     @JSImport("@material/slider/constants", "attributes.ARIA_VALUETEXT")
     @js.native
     def ARIA_VALUETEXT: String = js.native
     inline def ARIA_VALUETEXT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUETEXT")(x.asInstanceOf[js.Any])
     
-    @JSImport("@material/slider/constants", "attributes.DATA_ATTR_BIG_STEP")
+    @JSImport("@material/slider/constants", "attributes.DATA_MIN_RANGE")
     @js.native
-    def DATA_ATTR_BIG_STEP: String = js.native
-    inline def DATA_ATTR_BIG_STEP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_ATTR_BIG_STEP")(x.asInstanceOf[js.Any])
+    def DATA_MIN_RANGE: String = js.native
+    inline def DATA_MIN_RANGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_MIN_RANGE")(x.asInstanceOf[js.Any])
     
-    @JSImport("@material/slider/constants", "attributes.DATA_ATTR_STEP")
+    @JSImport("@material/slider/constants", "attributes.INPUT_DISABLED")
     @js.native
-    def DATA_ATTR_STEP: String = js.native
-    inline def DATA_ATTR_STEP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_ATTR_STEP")(x.asInstanceOf[js.Any])
+    def INPUT_DISABLED: String = js.native
+    inline def INPUT_DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT_DISABLED")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "attributes.INPUT_MAX")
+    @js.native
+    def INPUT_MAX: String = js.native
+    inline def INPUT_MAX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT_MAX")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "attributes.INPUT_MIN")
+    @js.native
+    def INPUT_MIN: String = js.native
+    inline def INPUT_MIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT_MIN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "attributes.INPUT_STEP")
+    @js.native
+    def INPUT_STEP: String = js.native
+    inline def INPUT_STEP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT_STEP")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "attributes.INPUT_VALUE")
+    @js.native
+    def INPUT_VALUE: String = js.native
+    inline def INPUT_VALUE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT_VALUE")(x.asInstanceOf[js.Any])
   }
   
   object cssClasses {
@@ -64,6 +64,11 @@ object constantsMod {
     def DISCRETE: String = js.native
     inline def DISCRETE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCRETE")(x.asInstanceOf[js.Any])
     
+    @JSImport("@material/slider/constants", "cssClasses.INPUT")
+    @js.native
+    def INPUT: String = js.native
+    inline def INPUT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/slider/constants", "cssClasses.RANGE")
     @js.native
     def RANGE: String = js.native
@@ -73,6 +78,11 @@ object constantsMod {
     @js.native
     def THUMB: String = js.native
     inline def THUMB_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THUMB")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "cssClasses.THUMB_FOCUSED")
+    @js.native
+    def THUMB_FOCUSED: String = js.native
+    inline def THUMB_FOCUSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THUMB_FOCUSED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/slider/constants", "cssClasses.THUMB_KNOB")
     @js.native
@@ -119,6 +129,11 @@ object constantsMod {
     def TRACK_ACTIVE: String = js.native
     inline def TRACK_ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRACK_ACTIVE")(x.asInstanceOf[js.Any])
     
+    @JSImport("@material/slider/constants", "cssClasses.VALUE_INDICATOR_CONTAINER")
+    @js.native
+    def VALUE_INDICATOR_CONTAINER: String = js.native
+    inline def VALUE_INDICATOR_CONTAINER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_INDICATOR_CONTAINER")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/slider/constants", "cssClasses.VALUE_INDICATOR_TEXT")
     @js.native
     def VALUE_INDICATOR_TEXT: String = js.native
@@ -148,14 +163,56 @@ object constantsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@material/slider/constants", "numbers.BIG_STEP_FACTOR")
+    @JSImport("@material/slider/constants", "numbers.MIN_RANGE")
     @js.native
-    def BIG_STEP_FACTOR: Double = js.native
-    inline def BIG_STEP_FACTOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BIG_STEP_FACTOR")(x.asInstanceOf[js.Any])
+    def MIN_RANGE: Double = js.native
+    inline def MIN_RANGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_RANGE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "numbers.STEP_SIZE")
+    @js.native
+    def STEP_SIZE: Double = js.native
+    inline def STEP_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STEP_SIZE")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/slider/constants", "numbers.THUMB_UPDATE_MIN_PX")
     @js.native
     def THUMB_UPDATE_MIN_PX: Double = js.native
     inline def THUMB_UPDATE_MIN_PX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THUMB_UPDATE_MIN_PX")(x.asInstanceOf[js.Any])
+  }
+  
+  object strings {
+    
+    @JSImport("@material/slider/constants", "strings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/slider/constants", "strings.VAR_VALUE_INDICATOR_CARET_LEFT")
+    @js.native
+    def VAR_VALUE_INDICATOR_CARET_LEFT: String = js.native
+    inline def VAR_VALUE_INDICATOR_CARET_LEFT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VAR_VALUE_INDICATOR_CARET_LEFT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "strings.VAR_VALUE_INDICATOR_CARET_RIGHT")
+    @js.native
+    def VAR_VALUE_INDICATOR_CARET_RIGHT: String = js.native
+    inline def VAR_VALUE_INDICATOR_CARET_RIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VAR_VALUE_INDICATOR_CARET_RIGHT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "strings.VAR_VALUE_INDICATOR_CARET_TRANSFORM")
+    @js.native
+    def VAR_VALUE_INDICATOR_CARET_TRANSFORM: String = js.native
+    inline def VAR_VALUE_INDICATOR_CARET_TRANSFORM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VAR_VALUE_INDICATOR_CARET_TRANSFORM")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "strings.VAR_VALUE_INDICATOR_CONTAINER_LEFT")
+    @js.native
+    def VAR_VALUE_INDICATOR_CONTAINER_LEFT: String = js.native
+    inline def VAR_VALUE_INDICATOR_CONTAINER_LEFT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VAR_VALUE_INDICATOR_CONTAINER_LEFT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "strings.VAR_VALUE_INDICATOR_CONTAINER_RIGHT")
+    @js.native
+    def VAR_VALUE_INDICATOR_CONTAINER_RIGHT: String = js.native
+    inline def VAR_VALUE_INDICATOR_CONTAINER_RIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VAR_VALUE_INDICATOR_CONTAINER_RIGHT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/slider/constants", "strings.VAR_VALUE_INDICATOR_CONTAINER_TRANSFORM")
+    @js.native
+    def VAR_VALUE_INDICATOR_CONTAINER_TRANSFORM: String = js.native
+    inline def VAR_VALUE_INDICATOR_CONTAINER_TRANSFORM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VAR_VALUE_INDICATOR_CONTAINER_TRANSFORM")(x.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.HtmlTableDataSource")
 @js.native
-class HtmlTableDataSource protected ()
+open class HtmlTableDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.HtmlTableDataSource {
   def this(settings: HtmlTableDataSourceSettings) = this()

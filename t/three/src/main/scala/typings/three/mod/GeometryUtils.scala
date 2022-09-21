@@ -10,8 +10,14 @@ object GeometryUtils {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def center(geometry: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(geometry.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  /**
+    * @deprecated Use {@link Geometry#center geometry.center()} instead.
+    */
+  inline def center(geometry: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(geometry.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def merge(geometry1: js.Any, geometry2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def merge(geometry1: js.Any, geometry2: js.Any, materialIndexOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any], materialIndexOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  /**
+    * @deprecated Use {@link Geometry#merge geometry.merge( geometry2, matrix, materialIndexOffset )} instead.
+    */
+  inline def merge(geometry1: Any, geometry2: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def merge(geometry1: Any, geometry2: Any, materialIndexOffset: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any], materialIndexOffset.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

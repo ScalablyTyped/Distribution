@@ -14,11 +14,11 @@ trait Template extends StObject {
   
   var title: String
   
-  var value: js.Any
+  var value: Any
 }
 object Template {
   
-  inline def apply(field: String, text: String, title: String, value: js.Any): Template = {
+  inline def apply(field: String, text: String, title: String, value: Any): Template = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }
@@ -35,6 +35,6 @@ object Template {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

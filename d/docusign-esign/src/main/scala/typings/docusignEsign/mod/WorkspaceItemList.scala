@@ -34,6 +34,6 @@ object WorkspaceItemList {
     
     inline def setItemsVarargs(
       value: (/* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem)*
-    ): Self = StObject.set(x, "items", js.Array(value :_*))
+    ): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

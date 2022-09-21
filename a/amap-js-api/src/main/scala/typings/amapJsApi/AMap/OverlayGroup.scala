@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverlayGroup[O /* <: Overlay[js.Any] */, ExtraData]
+trait OverlayGroup[O /* <: Overlay[Any] */, ExtraData]
   extends StObject
      with Overlay[ExtraData] {
   

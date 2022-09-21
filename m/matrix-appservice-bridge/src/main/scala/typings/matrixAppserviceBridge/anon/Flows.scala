@@ -19,6 +19,6 @@ object Flows {
     
     inline def setFlows(value: js.Array[TypeString]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
-    inline def setFlowsVarargs(value: TypeString*): Self = StObject.set(x, "flows", js.Array(value :_*))
+    inline def setFlowsVarargs(value: TypeString*): Self = StObject.set(x, "flows", js.Array(value*))
   }
 }

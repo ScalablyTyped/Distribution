@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.TextField")
 @js.native
-class TextField ()
+open class TextField ()
   extends typings.materialUi.MaterialUI.TextField

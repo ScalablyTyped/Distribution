@@ -42,22 +42,22 @@ object anon {
   
   trait Left extends StObject {
     
-    var left: js.Any
+    var left: Any
     
-    var right: js.Any
+    var right: Any
   }
   object Left {
     
-    inline def apply(left: js.Any, right: js.Any): Left = {
+    inline def apply(left: Any, right: Any): Left = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
       __obj.asInstanceOf[Left]
     }
     
     extension [Self <: Left](x: Self) {
       
-      inline def setLeft(value: js.Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      inline def setRight(value: js.Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Any): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
   }
 }

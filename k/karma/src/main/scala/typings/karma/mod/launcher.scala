@@ -9,8 +9,8 @@ object launcher {
   
   @JSImport("karma", "launcher.Launcher")
   @js.native
-  class Launcher protected () extends StObject {
-    def this(emitter: EventEmitter, injector: js.Any) = this()
+  open class Launcher protected () extends StObject {
+    def this(emitter: EventEmitter, injector: Any) = this()
     
     def areAllCaptured(): Boolean = js.native
     
@@ -19,7 +19,7 @@ object launcher {
     def killAll(callback: js.Function0[Unit]): Unit = js.native
     
     // TODO: Can this return value ever be typified?
-    def launch(names: js.Array[String], protocol: String, hostname: String, port: Double, urlRoot: String): js.Array[js.Any] = js.native
+    def launch(names: js.Array[String], protocol: String, hostname: String, port: Double, urlRoot: String): js.Array[Any] = js.native
     
     def markCaptured(id: String): Unit = js.native
     

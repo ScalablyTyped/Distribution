@@ -34,7 +34,7 @@ object SimulatePolicyResponse {
     
     inline def setEvaluationResultsUndefined: Self = StObject.set(x, "EvaluationResults", js.undefined)
     
-    inline def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value :_*))
+    inline def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value*))
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

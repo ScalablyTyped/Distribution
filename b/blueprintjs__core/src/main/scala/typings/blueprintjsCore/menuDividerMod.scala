@@ -11,14 +11,14 @@ object menuDividerMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/menu/menuDivider", "MenuDivider")
   @js.native
-  class MenuDivider protected ()
-    extends Component[IMenuDividerProps, js.Object, js.Any] {
-    def this(props: IMenuDividerProps) = this()
+  open class MenuDivider protected ()
+    extends Component[MenuDividerProps, js.Object, Any] {
+    def this(props: MenuDividerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IMenuDividerProps, context: js.Any) = this()
+    def this(props: MenuDividerProps, context: Any) = this()
   }
   /* static members */
   object MenuDivider {
@@ -57,4 +57,6 @@ object menuDividerMod {
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
+  
+  type MenuDividerProps = IMenuDividerProps
 }

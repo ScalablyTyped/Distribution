@@ -34,7 +34,7 @@ object GetAggregateConfigRuleComplianceSummaryResponse {
     
     inline def setAggregateComplianceCountsUndefined: Self = StObject.set(x, "AggregateComplianceCounts", js.undefined)
     
-    inline def setAggregateComplianceCountsVarargs(value: AggregateComplianceCount*): Self = StObject.set(x, "AggregateComplianceCounts", js.Array(value :_*))
+    inline def setAggregateComplianceCountsVarargs(value: AggregateComplianceCount*): Self = StObject.set(x, "AggregateComplianceCounts", js.Array(value*))
     
     inline def setGroupByKey(value: StringWithCharLimit256): Self = StObject.set(x, "GroupByKey", value.asInstanceOf[js.Any])
     

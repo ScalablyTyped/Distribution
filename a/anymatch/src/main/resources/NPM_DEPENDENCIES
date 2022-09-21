@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "anymatch" : "3.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "anymatch" : "3.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

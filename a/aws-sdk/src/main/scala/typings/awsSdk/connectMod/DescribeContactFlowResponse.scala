@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeContactFlowResponse extends StObject {
   
   /**
-    * Information about the contact flow.
+    * Information about the flow.
     */
   var ContactFlow: js.UndefOr[typings.awsSdk.connectMod.ContactFlow] = js.undefined
 }

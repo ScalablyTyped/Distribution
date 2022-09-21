@@ -23,18 +23,18 @@ object baseCameraMouseWheelInputMod {
       * https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent/deltaMode
       * https://stackoverflow.com/questions/20110224/what-is-the-height-of-a-line-in-a-wheel-event-deltamode-dom-delta-line
       */
-    /* private */ val _ffMultiplier: js.Any = js.native
+    /* private */ val _ffMultiplier: Any = js.native
     
     /**
       * Different event attributes for wheel data fall into a few set ranges.
       * Some relevant but dated date here:
       * https://stackoverflow.com/questions/5527601/normalizing-mousewheel-speed-across-browsers
       */
-    /* private */ val _normalize: js.Any = js.native
+    /* private */ val _normalize: Any = js.native
     
-    /* private */ var _observer: js.Any = js.native
+    /* private */ var _observer: Any = js.native
     
-    /* private */ var _wheel: js.Any = js.native
+    /* private */ var _wheel: Any = js.native
     
     /**
       * Incremental value of multiple mouse wheel movements of the X axis.

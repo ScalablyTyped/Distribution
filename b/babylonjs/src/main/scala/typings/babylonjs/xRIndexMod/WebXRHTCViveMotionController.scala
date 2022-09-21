@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/XR/index", "WebXRHTCViveMotionController")
 @js.native
-class WebXRHTCViveMotionController protected ()
+open class WebXRHTCViveMotionController protected ()
   extends typings.babylonjs.motionControllerIndexMod.WebXRHTCViveMotionController {
   /**
     * Create a new Vive motion controller object

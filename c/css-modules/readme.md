@@ -9,10 +9,10 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | css-modules |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 33595 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3057.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/css-modules)

@@ -19,7 +19,7 @@ trait nlobjSearchResult
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * return an array of all nlobjSearchColumn objects returned in this search.
@@ -39,7 +39,7 @@ Instantiable0[js.Any] {
     * @return {int}
     * @return
     */
-  def getId(): js.Any = js.native
+  def getId(): Any = js.native
   
   /**
     * return the recordtype for the record returned in this row.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "SceneLayer")
 @js.native
-class SceneLayer protected () extends RenderLayer {
+open class SceneLayer protected () extends RenderLayer {
   def this(scene: Scene) = this()
   
   var cache: Boolean = js.native

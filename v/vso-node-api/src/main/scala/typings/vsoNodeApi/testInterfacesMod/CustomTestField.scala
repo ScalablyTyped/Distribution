@@ -8,11 +8,11 @@ trait CustomTestField extends StObject {
   
   var fieldName: String
   
-  var value: js.Any
+  var value: Any
 }
 object CustomTestField {
   
-  inline def apply(fieldName: String, value: js.Any): CustomTestField = {
+  inline def apply(fieldName: String, value: Any): CustomTestField = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomTestField]
   }
@@ -21,6 +21,6 @@ object CustomTestField {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

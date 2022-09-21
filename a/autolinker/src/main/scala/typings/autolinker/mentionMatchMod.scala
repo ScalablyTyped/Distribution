@@ -1,9 +1,10 @@
 package typings.autolinker
 
+import typings.autolinker.abstractMatchMod.AbstractMatch
+import typings.autolinker.abstractMatchMod.AbstractMatchConfig
 import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
-import typings.autolinker.autolinkerMod.MentionServices
 import typings.autolinker.matchMatchMod.Match
-import typings.autolinker.matchMatchMod.MatchConfig
+import typings.autolinker.mentionUtilsMod.MentionService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,9 @@ object mentionMatchMod {
   
   @JSImport("autolinker/dist/commonjs/match/mention-match", "MentionMatch")
   @js.native
-  class MentionMatch protected () extends Match {
+  open class MentionMatch protected ()
+    extends AbstractMatch
+       with Match {
     /**
       * @method constructor
       * @param {Object} cfg The configuration properties for the Match
@@ -33,14 +36,14 @@ object mentionMatchMod {
       *
       * @return {String}
       */
-    def getServiceName(): MentionServices = js.native
+    def getServiceName(): MentionService = js.native
     
     /**
       * @cfg {String} mention (required)
       *
       * The Mention that was matched, without the '@' character.
       */
-    /* private */ val mention: js.Any = js.native
+    /* private */ val mention: Any = js.native
     
     /**
       * @cfg {String} serviceName
@@ -48,16 +51,27 @@ object mentionMatchMod {
       * The service to point mention matches to. See {@link Autolinker#mention}
       * for available values.
       */
-    /* private */ val serviceName: js.Any = js.native
+    /* private */ val serviceName: Any = js.native
+    
+    /**
+      * @public
+      * @property {'mention'} type
+      *
+      * A string name for the type of match that this class represents. Can be
+      * used in a TypeScript discriminating union to type-narrow from the
+      * `Match` type.
+      */
+    @JSName("type")
+    val type_MentionMatch: typings.autolinker.autolinkerStrings.mention = js.native
   }
   
   trait MentionMatchConfig
     extends StObject
-       with MatchConfig {
+       with AbstractMatchConfig {
     
     var mention: String
     
-    var serviceName: MentionServices
+    var serviceName: MentionService
   }
   object MentionMatchConfig {
     
@@ -65,7 +79,7 @@ object mentionMatchMod {
       matchedText: String,
       mention: String,
       offset: Double,
-      serviceName: MentionServices,
+      serviceName: MentionService,
       tagBuilder: AnchorTagBuilder
     ): MentionMatchConfig = {
       val __obj = js.Dynamic.literal(matchedText = matchedText.asInstanceOf[js.Any], mention = mention.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
@@ -76,7 +90,7 @@ object mentionMatchMod {
       
       inline def setMention(value: String): Self = StObject.set(x, "mention", value.asInstanceOf[js.Any])
       
-      inline def setServiceName(value: MentionServices): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: MentionService): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
 }

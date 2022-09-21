@@ -17,7 +17,7 @@ trait CreateBuildOutput extends StObject {
   var StorageLocation: js.UndefOr[S3Location] = js.undefined
   
   /**
-    * This element is returned only when the operation is called without a storage location. It contains credentials to use when you are uploading a build file to an S3 bucket that is owned by Amazon GameLift. Credentials have a limited life span. To refresh these credentials, call RequestUploadCredentials. 
+    * This element is returned only when the operation is called without a storage location. It contains credentials to use when you are uploading a build file to an Amazon S3 bucket that is owned by Amazon GameLift. Credentials have a limited life span. To refresh these credentials, call RequestUploadCredentials. 
     */
   var UploadCredentials: js.UndefOr[AwsCredentials] = js.undefined
 }

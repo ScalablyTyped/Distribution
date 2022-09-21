@@ -21,7 +21,7 @@ object MarkSeriesProps {
   
   extension [Self <: MarkSeriesProps](x: Self) {
     
-    inline def setGetNull(value: MarkSeriesPoint => js.Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
+    inline def setGetNull(value: MarkSeriesPoint => Any): Self = StObject.set(x, "getNull", js.Any.fromFunction1(value))
     
     inline def setGetNullUndefined: Self = StObject.set(x, "getNull", js.undefined)
     

@@ -14,7 +14,7 @@ trait DBProxyTargetGroup extends StObject {
   /**
     * The date and time when the target group was first created.
     */
-  var CreatedDate: js.UndefOr[TStamp] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier for the RDS proxy associated with this target group.
@@ -37,14 +37,14 @@ trait DBProxyTargetGroup extends StObject {
   var TargetGroupArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier for the target group. This name must be unique for all target groups owned by your AWS account in the specified AWS Region.
+    * The identifier for the target group. This name must be unique for all target groups owned by your Amazon Web Services account in the specified Amazon Web Services Region.
     */
   var TargetGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the target group was last updated.
     */
-  var UpdatedDate: js.UndefOr[TStamp] = js.undefined
+  var UpdatedDate: js.UndefOr[js.Date] = js.undefined
 }
 object DBProxyTargetGroup {
   
@@ -59,7 +59,7 @@ object DBProxyTargetGroup {
     
     inline def setConnectionPoolConfigUndefined: Self = StObject.set(x, "ConnectionPoolConfig", js.undefined)
     
-    inline def setCreatedDate(value: TStamp): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
@@ -83,7 +83,7 @@ object DBProxyTargetGroup {
     
     inline def setTargetGroupNameUndefined: Self = StObject.set(x, "TargetGroupName", js.undefined)
     
-    inline def setUpdatedDate(value: TStamp): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: js.Date): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setUpdatedDateUndefined: Self = StObject.set(x, "UpdatedDate", js.undefined)
   }

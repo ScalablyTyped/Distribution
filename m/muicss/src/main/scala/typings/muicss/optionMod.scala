@@ -10,8 +10,8 @@ object optionMod {
   
   @JSImport("muicss/lib/react/option", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[OptionProps, js.Object, js.Any]
+  open class default ()
+    extends Component[OptionProps, js.Object, Any]
   
-  type Option = Component[OptionProps, js.Object, js.Any]
+  type Option = Component[OptionProps, js.Object, Any]
 }

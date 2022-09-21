@@ -1,13 +1,15 @@
 package typings.fpTs.anon
 
-import typings.fpTs.readonlyRecordMod.ReadonlyRecord_
+import typings.fpTs.predicateMod.Predicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn9[A] extends StObject {
+trait Fn9[E] extends StObject {
   
-  def apply(me: ReadonlyRecord_[String, A], that: ReadonlyRecord_[String, A]): Boolean = js.native
-  def apply(that: ReadonlyRecord_[String, A]): js.Function1[/* me */ ReadonlyRecord_[String, A], Boolean] = js.native
+  def apply[A](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, B> */ /* mb */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<M, R, E, B> */ Any
+  ] = js.native
 }

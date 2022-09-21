@@ -15,6 +15,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object identity {
   
+  @js.native
+  sealed trait AccountStatus extends StObject
+  @JSGlobal("chrome.identity.AccountStatus")
+  @js.native
+  object AccountStatus extends StObject {
+    
+    @js.native
+    sealed trait ANY
+      extends StObject
+         with AccountStatus
+    
+    @js.native
+    sealed trait SYNC
+      extends StObject
+         with AccountStatus
+  }
+  
   trait AccountInfo extends StObject {
     
     /** A unique identifier for the account. This ID will not change for the lifetime of the account. */
@@ -30,6 +47,29 @@ object identity {
     extension [Self <: AccountInfo](x: Self) {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ProfileDetails extends StObject {
+    
+    /**
+      * Optional.
+      * A status of the primary account signed into a profile whose ProfileUserInfo should be returned. Defaults to SYNC account status.
+      */
+    var accountStatus: js.UndefOr[AccountStatus] = js.undefined
+  }
+  object ProfileDetails {
+    
+    inline def apply(): ProfileDetails = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ProfileDetails]
+    }
+    
+    extension [Self <: ProfileDetails](x: Self) {
+      
+      inline def setAccountStatus(value: AccountStatus): Self = StObject.set(x, "accountStatus", value.asInstanceOf[js.Any])
+      
+      inline def setAccountStatusUndefined: Self = StObject.set(x, "accountStatus", js.undefined)
     }
   }
   
@@ -80,7 +120,7 @@ object identity {
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     }
   }
   

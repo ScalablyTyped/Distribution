@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MultipartUpload extends StObject {
   
   /**
+    * The algorithm that was used to create a checksum of the object.
+    */
+  var ChecksumAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.ChecksumAlgorithm] = js.undefined
+  
+  /**
     * Date and time at which the multipart upload was initiated.
     */
-  var Initiated: js.UndefOr[typings.awsSdk.s3Mod.Initiated] = js.undefined
+  var Initiated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Identifies who initiated the multipart upload.
@@ -45,7 +50,11 @@ object MultipartUpload {
   
   extension [Self <: MultipartUpload](x: Self) {
     
-    inline def setInitiated(value: Initiated): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
+    inline def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setChecksumAlgorithmUndefined: Self = StObject.set(x, "ChecksumAlgorithm", js.undefined)
+    
+    inline def setInitiated(value: js.Date): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
     
     inline def setInitiatedUndefined: Self = StObject.set(x, "Initiated", js.undefined)
     

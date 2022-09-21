@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAppInstancesResponse extends StObject {
   
   /**
-    * The information for each app instance.
+    * The information for each AppInstance.
     */
   var AppInstances: js.UndefOr[AppInstanceList] = js.undefined
   
   /**
-    * The token passed by previous API requests until the maximum number of app instances is reached.
+    * The token passed by previous API requests until the maximum number of AppInstances is reached.
     */
   var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListAppInstancesResponse {
     
     inline def setAppInstancesUndefined: Self = StObject.set(x, "AppInstances", js.undefined)
     
-    inline def setAppInstancesVarargs(value: AppInstanceSummary*): Self = StObject.set(x, "AppInstances", js.Array(value :_*))
+    inline def setAppInstancesVarargs(value: AppInstanceSummary*): Self = StObject.set(x, "AppInstances", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

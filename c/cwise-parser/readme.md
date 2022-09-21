@@ -10,15 +10,12 @@ Parser for cwise
 | ------------------ | :-------------: |
 | Full name          | cwise-parser |
 | Keywords           | cwise, parser, ndarray, internals |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 3388591 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 154564.66666666666 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/scijs/cwise-parser#readme)
-- [Bugs](https://github.com/scijs/cwise-parser/issues)
-- [Repository](https://github.com/scijs/cwise-parser)
 - [Npm](https://www.npmjs.com/package/cwise-parser)
     
 

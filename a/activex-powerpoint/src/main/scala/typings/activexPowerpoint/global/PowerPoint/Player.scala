@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Player")
 @js.native
-/* private */ class Player ()
+/* private */ open class Player ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Player {
   
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def GoToPreviousBookmark(): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Pause(): Unit = js.native

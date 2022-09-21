@@ -10,10 +10,10 @@ Find files or directories by name
 | ------------------ | :-------------: |
 | Full name          | find |
 | Keywords           | find, findfile, search, files |
-| # releases         | 2 |
-| # dependents       | 220 |
-| # downloads        | 29368457 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4211744.666666667 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/yuanchuan/find#readme)

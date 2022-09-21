@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the CancelEventArgs class.
   */
-class CancelEventArgs ()
+open class CancelEventArgs ()
   extends StObject
      with typings.microsoftAjax.Sys.CancelEventArgs {
   

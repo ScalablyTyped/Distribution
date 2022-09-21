@@ -11,7 +11,7 @@ trait ITaskArguments[T]
   extends StObject
      with IArguments {
   
-  def cb(): js.Any = js.native
+  def cb(): Any = js.native
   
   var options: CndMode & T = js.native
 }

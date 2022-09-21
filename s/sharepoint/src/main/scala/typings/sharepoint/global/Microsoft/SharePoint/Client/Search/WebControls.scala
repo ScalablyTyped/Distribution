@@ -11,18 +11,18 @@ object WebControls {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.WebControls.ControlMessage")
   @js.native
-  class ControlMessage ()
+  open class ControlMessage ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.WebControls.ControlMessage {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_code(): Double = js.native

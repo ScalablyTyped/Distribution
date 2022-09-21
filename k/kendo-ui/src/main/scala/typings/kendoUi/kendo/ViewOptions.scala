@@ -18,6 +18,8 @@ trait ViewOptions extends StObject {
   
   var tagName: js.UndefOr[String] = js.undefined
   
+  var useWithBlock: js.UndefOr[Boolean] = js.undefined
+  
   var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object ViewOptions {
@@ -52,6 +54,10 @@ object ViewOptions {
     inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    
+    inline def setUseWithBlock(value: Boolean): Self = StObject.set(x, "useWithBlock", value.asInstanceOf[js.Any])
+    
+    inline def setUseWithBlockUndefined: Self = StObject.set(x, "useWithBlock", js.undefined)
     
     inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     

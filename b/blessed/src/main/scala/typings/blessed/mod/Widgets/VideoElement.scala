@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.VideoElement")
 @js.native
-class VideoElement () extends BoxElement {
+open class VideoElement () extends BoxElement {
   def this(options: VideoOptions) = this()
   
   @JSName("options")
@@ -15,5 +15,5 @@ class VideoElement () extends BoxElement {
   /**
     * The terminal element running mplayer or mpv.
     */
-  var tty: js.Any = js.native
+  var tty: Any = js.native
 }

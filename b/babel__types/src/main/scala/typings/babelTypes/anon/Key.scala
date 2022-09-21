@@ -1,6 +1,6 @@
 package typings.babelTypes.anon
 
-import typings.babelTypes.mod.Node
+import typings.babelTypes.libMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

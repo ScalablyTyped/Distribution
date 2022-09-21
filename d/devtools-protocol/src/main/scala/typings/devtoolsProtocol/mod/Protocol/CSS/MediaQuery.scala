@@ -29,6 +29,6 @@ object MediaQuery {
     
     inline def setExpressions(value: js.Array[MediaQueryExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    inline def setExpressionsVarargs(value: MediaQueryExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: MediaQueryExpression*): Self = StObject.set(x, "expressions", js.Array(value*))
   }
 }

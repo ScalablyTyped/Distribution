@@ -14,7 +14,7 @@ trait ModalDialogOpenedEventUIParam extends StObject {
   /**
     * Gets access the GroupBy widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object ModalDialogOpenedEventUIParam {
   
@@ -29,7 +29,7 @@ object ModalDialogOpenedEventUIParam {
     
     inline def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

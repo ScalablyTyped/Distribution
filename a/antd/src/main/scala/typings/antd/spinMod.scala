@@ -1,87 +1,52 @@
 package typings.antd
 
-import typings.antd.antdStrings.large
-import typings.antd.antdStrings.small
-import typings.antd.configProviderContextMod.ConfigConsumerProps
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
-import typings.react.mod.Component
+import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object spinMod {
+object spinMod extends Shortcut {
   
   @JSImport("antd/lib/spin", JSImport.Default)
   @js.native
-  class default protected () extends Spin {
-    def this(props: SpinProps) = this()
+  val default: SpinFCType = js.native
+  
+  trait SpinClassProps
+    extends StObject
+       with SpinProps {
+    
+    var spinPrefixCls: String
   }
-  object default {
+  object SpinClassProps {
     
-    @JSImport("antd/lib/spin", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    object defaultProps {
-      
-      @JSImport("antd/lib/spin", "default.defaultProps")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("antd/lib/spin", "default.defaultProps.size")
-      @js.native
-      def size: small | large | typings.antd.antdStrings.default = js.native
-      inline def size_=(x: small | large | typings.antd.antdStrings.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
-      
-      @JSImport("antd/lib/spin", "default.defaultProps.spinning")
-      @js.native
-      def spinning: Boolean = js.native
-      inline def spinning_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spinning")(x.asInstanceOf[js.Any])
-      
-      @JSImport("antd/lib/spin", "default.defaultProps.wrapperClassName")
-      @js.native
-      def wrapperClassName: String = js.native
-      inline def wrapperClassName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapperClassName")(x.asInstanceOf[js.Any])
+    inline def apply(spinPrefixCls: String): SpinClassProps = {
+      val __obj = js.Dynamic.literal(spinPrefixCls = spinPrefixCls.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SpinClassProps]
     }
     
-    /* static member */
-    inline def setDefaultIndicator(indicator: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultIndicator")(indicator.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    extension [Self <: SpinClassProps](x: Self) {
+      
+      inline def setSpinPrefixCls(value: String): Self = StObject.set(x, "spinPrefixCls", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
-  trait Spin
-    extends Component[SpinProps, SpinState, js.Any] {
+  trait SpinFCType
+    extends StObject
+       with FunctionComponent[SpinProps] {
     
-    def cancelExistingSpin(): Unit = js.native
-    
-    @JSName("componentDidMount")
-    def componentDidMount_MSpin(): Unit = js.native
-    
-    @JSName("componentDidUpdate")
-    def componentDidUpdate_MSpin(): Unit = js.native
-    
-    @JSName("componentWillUnmount")
-    def componentWillUnmount_MSpin(): Unit = js.native
-    
-    def debouncifyUpdateSpinning(): Unit = js.native
-    def debouncifyUpdateSpinning(props: SpinProps): Unit = js.native
-    
-    def isNestedPattern(): Boolean = js.native
-    
-    def originalUpdateSpinning(): Unit = js.native
-    
-    def renderSpin(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
-    
-    def updateSpinning(): Unit = js.native
+    def setDefaultIndicator(indicator: ReactNode): Unit = js.native
   }
   
   type SpinIndicator = ReactElement
   
   trait SpinProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -97,7 +62,7 @@ object spinMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tip: js.UndefOr[String] = js.undefined
+    var tip: js.UndefOr[ReactNode] = js.undefined
     
     var wrapperClassName: js.UndefOr[String] = js.undefined
   }
@@ -109,6 +74,10 @@ object spinMod {
     }
     
     extension [Self <: SpinProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -138,7 +107,7 @@ object spinMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTip(value: String): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
+      inline def setTip(value: ReactNode): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
       
       inline def setTipUndefined: Self = StObject.set(x, "tip", js.undefined)
       
@@ -179,4 +148,9 @@ object spinMod {
       inline def setSpinningUndefined: Self = StObject.set(x, "spinning", js.undefined)
     }
   }
+  
+  type _To = SpinFCType
+  
+  /* This means you don't have to write `default`, but can instead just say `spinMod.foo` */
+  override def _to: SpinFCType = default
 }

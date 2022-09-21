@@ -26,57 +26,76 @@ object clientInterceptorsMod {
   
   @JSImport("@grpc/grpc-js/build/src/client-interceptors", "InterceptingCall")
   @js.native
-  class InterceptingCall protected ()
+  open class InterceptingCall protected ()
     extends StObject
        with InterceptingCallInterface {
     def this(nextCall: InterceptingCallInterface) = this()
     def this(nextCall: InterceptingCallInterface, requester: Requester) = this()
     
-    /* private */ var nextCall: js.Any = js.native
+    /* private */ var nextCall: Any = js.native
     
     /**
       * Indicates that a status was received but could not be propagated because
       * a message was still being processed.
       */
-    /* private */ var pendingHalfClose: js.Any = js.native
+    /* private */ var pendingHalfClose: Any = js.native
+    
+    /* private */ var pendingMessage: Any = js.native
     
     /**
-      * Indicates that a message has been passed to the listener's onReceiveMessage
-      * method it has not been passed to the corresponding next callback
+      * Message context for a pending message that is waiting for
       */
-    /* private */ var processingMessage: js.Any = js.native
+    /* private */ var pendingMessageContext: Any = js.native
+    
+    /* private */ var processPendingHalfClose: Any = js.native
+    
+    /* private */ var processPendingMessage: Any = js.native
+    
+    /**
+      * Indicates that a message has been passed to the requester's sendMessage
+      * method but it has not been passed to the corresponding next callback
+      */
+    /* private */ var processingMessage: Any = js.native
+    
+    /**
+      * Indicates that metadata has been passed to the requester's start
+      * method but it has not been passed to the corresponding next callback
+      */
+    /* private */ var processingMetadata: Any = js.native
     
     /**
       * The requester that this InterceptingCall uses to modify outgoing operations
       */
-    /* private */ var requester: js.Any = js.native
+    /* private */ var requester: Any = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/client-interceptors", "InterceptorConfigurationError")
   @js.native
-  class InterceptorConfigurationError protected ()
+  open class InterceptorConfigurationError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/client-interceptors", "ListenerBuilder")
   @js.native
-  class ListenerBuilder () extends StObject {
+  open class ListenerBuilder () extends StObject {
     
     def build(): Listener = js.native
     
-    /* private */ var message: js.Any = js.native
+    /* private */ var message: Any = js.native
     
-    /* private */ var metadata: js.Any = js.native
+    /* private */ var metadata: Any = js.native
     
-    /* private */ var status: js.Any = js.native
+    /* private */ var status: Any = js.native
     
     def withOnReceiveMessage(onReceiveMessage: MessageListener): this.type = js.native
     
@@ -87,17 +106,17 @@ object clientInterceptorsMod {
   
   @JSImport("@grpc/grpc-js/build/src/client-interceptors", "RequesterBuilder")
   @js.native
-  class RequesterBuilder () extends StObject {
+  open class RequesterBuilder () extends StObject {
     
     def build(): Requester = js.native
     
-    /* private */ var cancel: js.Any = js.native
+    /* private */ var cancel: Any = js.native
     
-    /* private */ var halfClose: js.Any = js.native
+    /* private */ var halfClose: Any = js.native
     
-    /* private */ var message: js.Any = js.native
+    /* private */ var message: Any = js.native
     
-    /* private */ var start: js.Any = js.native
+    /* private */ var start: Any = js.native
     
     def withCancel(cancel: CancelRequester): this.type = js.native
     
@@ -110,7 +129,7 @@ object clientInterceptorsMod {
   
   inline def getInterceptingCall(
     interceptorArgs: InterceptorArguments,
-    methodDefinition: ClientMethodDefinition[js.Any, js.Any],
+    methodDefinition: ClientMethodDefinition[Any, Any],
     options: CallOptions,
     channel: Channel
   ): InterceptingCallInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("getInterceptingCall")(interceptorArgs.asInstanceOf[js.Any], methodDefinition.asInstanceOf[js.Any], options.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[InterceptingCallInterface]
@@ -129,7 +148,7 @@ object clientInterceptorsMod {
     @JSName("halfClose")
     var halfClose_Original: CloseRequester
     
-    def sendMessage(message: js.Any, next: js.Function1[/* message */ js.Any, Unit]): Unit
+    def sendMessage(message: Any, next: js.Function1[/* message */ Any, Unit]): Unit
     @JSName("sendMessage")
     var sendMessage_Original: MessageRequester
     
@@ -146,7 +165,7 @@ object clientInterceptorsMod {
     inline def apply(
       cancel: /* next */ js.Function0[Unit] => Unit,
       halfClose: /* next */ js.Function0[Unit] => Unit,
-      sendMessage: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit,
+      sendMessage: (/* message */ Any, /* next */ js.Function1[/* message */ Any, Unit]) => Unit,
       start: (/* metadata */ Metadata, /* listener */ InterceptingListener, /* next */ js.Function2[/* metadata */ Metadata, /* listener */ InterceptingListener | Listener, Unit]) => Unit
     ): FullRequester = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), halfClose = js.Any.fromFunction1(halfClose), sendMessage = js.Any.fromFunction2(sendMessage), start = js.Any.fromFunction3(start))
@@ -159,7 +178,7 @@ object clientInterceptorsMod {
       
       inline def setHalfClose(value: /* next */ js.Function0[Unit] => Unit): Self = StObject.set(x, "halfClose", js.Any.fromFunction1(value))
       
-      inline def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
+      inline def setSendMessage(value: (/* message */ Any, /* next */ js.Function1[/* message */ Any, Unit]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
       
       inline def setStart(
         value: (/* metadata */ Metadata, /* listener */ InterceptingListener, /* next */ js.Function2[/* metadata */ Metadata, /* listener */ InterceptingListener | Listener, Unit]) => Unit
@@ -176,9 +195,9 @@ object clientInterceptorsMod {
     
     def halfClose(): Unit = js.native
     
-    def sendMessage(message: js.Any): Unit = js.native
+    def sendMessage(message: Any): Unit = js.native
     
-    def sendMessageWithContext(context: MessageContext, message: js.Any): Unit = js.native
+    def sendMessageWithContext(context: MessageContext, message: Any): Unit = js.native
     
     def setCredentials(credentials: CallCredentials): Unit = js.native
     
@@ -216,19 +235,19 @@ object clientInterceptorsMod {
       
       inline def setCallInterceptorProviders(value: js.Array[InterceptorProvider]): Self = StObject.set(x, "callInterceptorProviders", value.asInstanceOf[js.Any])
       
-      inline def setCallInterceptorProvidersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "callInterceptorProviders", js.Array(value :_*))
+      inline def setCallInterceptorProvidersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "callInterceptorProviders", js.Array(value*))
       
       inline def setCallInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "callInterceptors", value.asInstanceOf[js.Any])
       
-      inline def setCallInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "callInterceptors", js.Array(value :_*))
+      inline def setCallInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "callInterceptors", js.Array(value*))
       
       inline def setClientInterceptorProviders(value: js.Array[InterceptorProvider]): Self = StObject.set(x, "clientInterceptorProviders", value.asInstanceOf[js.Any])
       
-      inline def setClientInterceptorProvidersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "clientInterceptorProviders", js.Array(value :_*))
+      inline def setClientInterceptorProvidersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "clientInterceptorProviders", js.Array(value*))
       
       inline def setClientInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "clientInterceptors", value.asInstanceOf[js.Any])
       
-      inline def setClientInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "clientInterceptors", js.Array(value :_*))
+      inline def setClientInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "clientInterceptors", js.Array(value*))
     }
   }
   
@@ -236,24 +255,24 @@ object clientInterceptorsMod {
     extends StObject
        with CallOptions {
     
-    var method_definition: ClientMethodDefinition[js.Any, js.Any]
+    var method_definition: ClientMethodDefinition[Any, Any]
   }
   object InterceptorOptions {
     
-    inline def apply(method_definition: ClientMethodDefinition[js.Any, js.Any]): InterceptorOptions = {
+    inline def apply(method_definition: ClientMethodDefinition[Any, Any]): InterceptorOptions = {
       val __obj = js.Dynamic.literal(method_definition = method_definition.asInstanceOf[js.Any])
       __obj.asInstanceOf[InterceptorOptions]
     }
     
     extension [Self <: InterceptorOptions](x: Self) {
       
-      inline def setMethod_definition(value: ClientMethodDefinition[js.Any, js.Any]): Self = StObject.set(x, "method_definition", value.asInstanceOf[js.Any])
+      inline def setMethod_definition(value: ClientMethodDefinition[Any, Any]): Self = StObject.set(x, "method_definition", value.asInstanceOf[js.Any])
     }
   }
   
-  type InterceptorProvider = js.Function1[/* methodDefinition */ ClientMethodDefinition[js.Any, js.Any], Interceptor]
+  type InterceptorProvider = js.Function1[/* methodDefinition */ ClientMethodDefinition[Any, Any], Interceptor]
   
-  type MessageRequester = js.Function2[/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit], Unit]
+  type MessageRequester = js.Function2[/* message */ Any, /* next */ js.Function1[/* message */ Any, Unit], Unit]
   
   type MetadataRequester = js.Function3[
     /* metadata */ Metadata, 
@@ -292,7 +311,7 @@ object clientInterceptorsMod {
       
       inline def setHalfCloseUndefined: Self = StObject.set(x, "halfClose", js.undefined)
       
-      inline def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
+      inline def setSendMessage(value: (/* message */ Any, /* next */ js.Function1[/* message */ Any, Unit]) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
       
       inline def setSendMessageUndefined: Self = StObject.set(x, "sendMessage", js.undefined)
       

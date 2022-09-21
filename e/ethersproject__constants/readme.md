@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__constants
 
-Typings are for version 5.0.6
+Typings are for version 5.7.0
 
 ## Library description:
 Common Ethereum constants used for ethers.
@@ -10,10 +10,10 @@ Common Ethereum constants used for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/constants |
 | Keywords           | Ethereum, ethers |
-| # releases         | 28 |
-| # dependents       | 40 |
-| # downloads        | 2919399 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 3615486.6666666665 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

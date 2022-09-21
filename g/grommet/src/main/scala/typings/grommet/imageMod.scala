@@ -10,6 +10,7 @@ import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
+import typings.react.mod.ClassAttributes
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
 import typings.react.mod.ImgHTMLAttributes
@@ -22,9 +23,20 @@ object imageMod {
   
   @JSImport("grommet/components/Image", "Image")
   @js.native
-  val Image: FC[
-    ImageProps & (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])
-  ] = js.native
+  val Image: FC[ImageExtendedProps] = js.native
+  
+  trait ImageExtendedProps
+    extends StObject
+       with ImageProps
+       with ClassAttributes[HTMLImageElement]
+       with ImgHTMLAttributes[HTMLImageElement]
+  object ImageExtendedProps {
+    
+    inline def apply(): ImageExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ImageExtendedProps]
+    }
+  }
   
   trait ImageProps extends StObject {
     
@@ -86,4 +98,6 @@ object imageMod {
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     }
   }
+  
+  type imgProps = DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]
 }

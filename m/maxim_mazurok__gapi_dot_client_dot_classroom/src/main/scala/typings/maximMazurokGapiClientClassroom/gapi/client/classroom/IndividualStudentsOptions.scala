@@ -22,6 +22,6 @@ object IndividualStudentsOptions {
     
     inline def setStudentIdsUndefined: Self = StObject.set(x, "studentIds", js.undefined)
     
-    inline def setStudentIdsVarargs(value: String*): Self = StObject.set(x, "studentIds", js.Array(value :_*))
+    inline def setStudentIdsVarargs(value: String*): Self = StObject.set(x, "studentIds", js.Array(value*))
   }
 }

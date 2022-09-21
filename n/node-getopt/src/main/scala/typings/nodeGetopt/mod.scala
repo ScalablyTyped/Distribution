@@ -2,7 +2,6 @@ package typings.nodeGetopt
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("node-getopt", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Getopt {
     /**
@@ -25,7 +24,7 @@ object mod {
       *    ARG can be replaced by any word.
       * @param options
       */
-    def this(options: js.Array[js.Any]) = this()
+    def this(options: js.Array[Any]) = this()
   }
   @JSImport("node-getopt", JSImport.Namespace)
   @js.native
@@ -71,7 +70,7 @@ object mod {
   /* static member */
   inline def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
   
-  type ErrorFunc = js.Function1[/* exception */ Error, Unit]
+  type ErrorFunc = js.Function1[/* exception */ js.Error, Unit]
   
   type EventCallback = js.Function2[/* args */ js.Array[String], /* options */ OptionMap, Unit]
   
@@ -167,7 +166,7 @@ object mod {
       
       inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
-      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value*))
       
       inline def setEmpty(value: () => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       

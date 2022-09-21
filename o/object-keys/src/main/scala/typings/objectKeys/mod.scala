@@ -12,5 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def shim(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shim")().asInstanceOf[js.Any]
+  inline def shim(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shim")().asInstanceOf[Any]
 }

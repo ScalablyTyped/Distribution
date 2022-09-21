@@ -23,6 +23,6 @@ object SearchInResponseBodyResponse {
     
     inline def setResult(value: js.Array[SearchMatch]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: SearchMatch*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: SearchMatch*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

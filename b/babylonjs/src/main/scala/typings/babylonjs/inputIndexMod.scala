@@ -22,7 +22,7 @@ object inputIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Input/index", "InputBlock")
   @js.native
-  class InputBlock protected ()
+  open class InputBlock protected ()
     extends typings.babylonjs.inputBlockMod.InputBlock {
     /**
       * Creates a new InputBlock

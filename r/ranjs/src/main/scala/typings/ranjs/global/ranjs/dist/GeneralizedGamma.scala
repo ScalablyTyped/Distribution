@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.GeneralizedGamma")
 @js.native
-class GeneralizedGamma ()
+open class GeneralizedGamma ()
   extends typings.ranjs.mod.dist.GeneralizedGamma {
   def this(a: Double) = this()
   def this(a: Double, d: Double) = this()

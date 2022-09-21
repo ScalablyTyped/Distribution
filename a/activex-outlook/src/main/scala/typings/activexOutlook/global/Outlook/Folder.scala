@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Folder")
 @js.native
-/* private */ class Folder ()
+/* private */ open class Folder ()
   extends StObject
      with typings.activexOutlook.Outlook.Folder

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "drange" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "drange" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

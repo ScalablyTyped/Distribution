@@ -10,7 +10,7 @@ object basicCameraControllerMod {
   
   @JSImport("wonder.js/dist/es2015/component/camera/controller/basic/BasicCameraController", "BasicCameraController")
   @js.native
-  class BasicCameraController protected () extends CameraController {
+  open class BasicCameraController protected () extends CameraController {
     def this(cameraComponent: Camera) = this()
   }
   /* static members */

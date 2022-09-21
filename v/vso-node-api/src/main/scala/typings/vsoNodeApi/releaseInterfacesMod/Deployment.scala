@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait Deployment extends StObject {
   /**
     * Gets links to access the deployment.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Gets attempt number.
@@ -21,7 +20,7 @@ trait Deployment extends StObject {
   /**
     * Gets the date on which deployment is complete.
     */
-  var completedOn: Date
+  var completedOn: js.Date
   
   /**
     * Gets the list of condition associated with deployment.
@@ -51,7 +50,7 @@ trait Deployment extends StObject {
   /**
     * Gets the date on which deployment is last modified.
     */
-  var lastModifiedOn: Date
+  var lastModifiedOn: js.Date
   
   /**
     * Gets operation status of deployment.
@@ -71,7 +70,7 @@ trait Deployment extends StObject {
   /**
     * Gets the date on which deployment is queued.
     */
-  var queuedOn: Date
+  var queuedOn: js.Date
   
   /**
     * Gets reason of deployment.
@@ -106,37 +105,37 @@ trait Deployment extends StObject {
   /**
     * Gets the date on which deployment is scheduled.
     */
-  var scheduledDeploymentTime: Date
+  var scheduledDeploymentTime: js.Date
   
   /**
     * Gets the date on which deployment is started.
     */
-  var startedOn: Date
+  var startedOn: js.Date
 }
 object Deployment {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     attempt: Double,
-    completedOn: Date,
+    completedOn: js.Date,
     conditions: js.Array[Condition],
     definitionEnvironmentId: Double,
     deploymentStatus: DeploymentStatus,
     id: Double,
     lastModifiedBy: IdentityRef,
-    lastModifiedOn: Date,
+    lastModifiedOn: js.Date,
     operationStatus: DeploymentOperationStatus,
     postDeployApprovals: js.Array[ReleaseApproval],
     preDeployApprovals: js.Array[ReleaseApproval],
-    queuedOn: Date,
+    queuedOn: js.Date,
     reason: DeploymentReason,
     release: ReleaseReference,
     releaseDefinition: ReleaseDefinitionShallowReference,
     releaseEnvironment: ReleaseEnvironmentShallowReference,
     requestedBy: IdentityRef,
     requestedFor: IdentityRef,
-    scheduledDeploymentTime: Date,
-    startedOn: Date
+    scheduledDeploymentTime: js.Date,
+    startedOn: js.Date
   ): Deployment = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], attempt = attempt.asInstanceOf[js.Any], completedOn = completedOn.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], definitionEnvironmentId = definitionEnvironmentId.asInstanceOf[js.Any], deploymentStatus = deploymentStatus.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastModifiedBy = lastModifiedBy.asInstanceOf[js.Any], lastModifiedOn = lastModifiedOn.asInstanceOf[js.Any], operationStatus = operationStatus.asInstanceOf[js.Any], postDeployApprovals = postDeployApprovals.asInstanceOf[js.Any], preDeployApprovals = preDeployApprovals.asInstanceOf[js.Any], queuedOn = queuedOn.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], releaseDefinition = releaseDefinition.asInstanceOf[js.Any], releaseEnvironment = releaseEnvironment.asInstanceOf[js.Any], requestedBy = requestedBy.asInstanceOf[js.Any], requestedFor = requestedFor.asInstanceOf[js.Any], scheduledDeploymentTime = scheduledDeploymentTime.asInstanceOf[js.Any], startedOn = startedOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployment]
@@ -146,11 +145,11 @@ object Deployment {
     
     inline def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
     
-    inline def setCompletedOn(value: Date): Self = StObject.set(x, "completedOn", value.asInstanceOf[js.Any])
+    inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "completedOn", value.asInstanceOf[js.Any])
     
     inline def setConditions(value: js.Array[Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setDefinitionEnvironmentId(value: Double): Self = StObject.set(x, "definitionEnvironmentId", value.asInstanceOf[js.Any])
     
@@ -160,19 +159,19 @@ object Deployment {
     
     inline def setLastModifiedBy(value: IdentityRef): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedOn(value: Date): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedOn(value: js.Date): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
     
     inline def setOperationStatus(value: DeploymentOperationStatus): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
     
     inline def setPostDeployApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "postDeployApprovals", value.asInstanceOf[js.Any])
     
-    inline def setPostDeployApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "postDeployApprovals", js.Array(value :_*))
+    inline def setPostDeployApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "postDeployApprovals", js.Array(value*))
     
     inline def setPreDeployApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "preDeployApprovals", value.asInstanceOf[js.Any])
     
-    inline def setPreDeployApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "preDeployApprovals", js.Array(value :_*))
+    inline def setPreDeployApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "preDeployApprovals", js.Array(value*))
     
-    inline def setQueuedOn(value: Date): Self = StObject.set(x, "queuedOn", value.asInstanceOf[js.Any])
+    inline def setQueuedOn(value: js.Date): Self = StObject.set(x, "queuedOn", value.asInstanceOf[js.Any])
     
     inline def setReason(value: DeploymentReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
@@ -186,10 +185,10 @@ object Deployment {
     
     inline def setRequestedFor(value: IdentityRef): Self = StObject.set(x, "requestedFor", value.asInstanceOf[js.Any])
     
-    inline def setScheduledDeploymentTime(value: Date): Self = StObject.set(x, "scheduledDeploymentTime", value.asInstanceOf[js.Any])
+    inline def setScheduledDeploymentTime(value: js.Date): Self = StObject.set(x, "scheduledDeploymentTime", value.asInstanceOf[js.Any])
     
-    inline def setStartedOn(value: Date): Self = StObject.set(x, "startedOn", value.asInstanceOf[js.Any])
+    inline def setStartedOn(value: js.Date): Self = StObject.set(x, "startedOn", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ApplePayApi.
   * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
   */
-class ApplePayApi () extends StObject {
+open class ApplePayApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   /**
@@ -19,5 +19,5 @@ class ApplePayApi () extends StObject {
     * developers to bulk activate Web Apple Pay with Square for merchants using their platform. To learn more about
     * Apple Pay on Web see the Apple Pay section in the [Square Payment Form Walkthrough](/docs/payment-form/payment-form-walkthrough).
     */
-  def registerDomain(args: js.Any*): js.Promise[RegisterDomainResponse] = js.native
+  def registerDomain(args: Any*): js.Promise[RegisterDomainResponse] = js.native
 }

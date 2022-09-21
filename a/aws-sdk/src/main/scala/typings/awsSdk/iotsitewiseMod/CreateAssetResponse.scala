@@ -12,7 +12,7 @@ trait CreateAssetResponse extends StObject {
   var assetArn: ARN
   
   /**
-    * The ID of the asset. This ID uniquely identifies the asset within AWS IoT SiteWise and can be used with other AWS IoT SiteWise APIs.
+    * The ID of the asset. This ID uniquely identifies the asset within IoT SiteWise and can be used with other IoT SiteWise APIs.
     */
   var assetId: ID
   

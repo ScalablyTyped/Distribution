@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jsonSchema.mod.JSONSchema6
 import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEventHandler
@@ -80,7 +81,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FieldProps[T]
   extends StObject
-     with /* name */ StringDictionary[js.Any] {
+     with /* name */ StringDictionary[Any] {
   
   var about: js.UndefOr[String] = js.native
   
@@ -88,11 +89,11 @@ trait FieldProps[T]
   
   var `aria-activedescendant`: js.UndefOr[String] = js.native
   
-  var `aria-atomic`: js.UndefOr[Boolean] = js.native
+  var `aria-atomic`: js.UndefOr[Booleanish] = js.native
   
   var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
   
-  var `aria-busy`: js.UndefOr[Boolean] = js.native
+  var `aria-busy`: js.UndefOr[Booleanish] = js.native
   
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
   
@@ -110,21 +111,21 @@ trait FieldProps[T]
   
   var `aria-details`: js.UndefOr[String] = js.native
   
-  var `aria-disabled`: js.UndefOr[Boolean] = js.native
+  var `aria-disabled`: js.UndefOr[Booleanish] = js.native
   
   var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
   
   var `aria-errormessage`: js.UndefOr[String] = js.native
   
-  var `aria-expanded`: js.UndefOr[Boolean] = js.native
+  var `aria-expanded`: js.UndefOr[Booleanish] = js.native
   
   var `aria-flowto`: js.UndefOr[String] = js.native
   
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  var `aria-grabbed`: js.UndefOr[Booleanish] = js.native
   
   var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
   
-  var `aria-hidden`: js.UndefOr[Boolean] = js.native
+  var `aria-hidden`: js.UndefOr[Booleanish] = js.native
   
   var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
   
@@ -138,11 +139,11 @@ trait FieldProps[T]
   
   var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
   
-  var `aria-modal`: js.UndefOr[Boolean] = js.native
+  var `aria-modal`: js.UndefOr[Booleanish] = js.native
   
-  var `aria-multiline`: js.UndefOr[Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[Booleanish] = js.native
   
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[Booleanish] = js.native
   
   var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
   
@@ -154,13 +155,13 @@ trait FieldProps[T]
   
   var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
   
-  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-readonly`: js.UndefOr[Booleanish] = js.native
   
   var `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
   ] = js.native
   
-  var `aria-required`: js.UndefOr[Boolean] = js.native
+  var `aria-required`: js.UndefOr[Booleanish] = js.native
   
   var `aria-roledescription`: js.UndefOr[String] = js.native
   
@@ -170,7 +171,7 @@ trait FieldProps[T]
   
   var `aria-rowspan`: js.UndefOr[Double] = js.native
   
-  var `aria-selected`: js.UndefOr[Boolean] = js.native
+  var `aria-selected`: js.UndefOr[Booleanish] = js.native
   
   var `aria-setsize`: js.UndefOr[Double] = js.native
   
@@ -218,7 +219,7 @@ trait FieldProps[T]
   
   var errorSchema: ErrorSchema = js.native
   
-  var formContext: js.Any = js.native
+  var formContext: Any = js.native
   
   var formData: T = js.native
   
@@ -226,9 +227,9 @@ trait FieldProps[T]
   
   var id: js.UndefOr[String] = js.native
   
-  var idSchema: IdSchema[js.Any] = js.native
+  var idSchema: IdSchema[Any] = js.native
   
-  var inlist: js.UndefOr[js.Any] = js.native
+  var inlist: js.UndefOr[Any] = js.native
   
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
   
@@ -270,10 +271,10 @@ trait FieldProps[T]
   var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
   
   var onChange: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
-  def onChange(e: js.Any): js.Any = js.native
-  def onChange(e: js.Any, es: ErrorSchema): js.Any = js.native
-  def onChange(e: IChangeEvent[T]): js.Any = js.native
-  def onChange(e: IChangeEvent[T], es: ErrorSchema): js.Any = js.native
+  def onChange(e: Any): Any = js.native
+  def onChange(e: Any, es: ErrorSchema): Any = js.native
+  def onChange(e: IChangeEvent[T]): Any = js.native
+  def onChange(e: IChangeEvent[T], es: ErrorSchema): Any = js.native
   
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
   
@@ -431,7 +432,7 @@ trait FieldProps[T]
   
   var results: js.UndefOr[Double] = js.native
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[AriaRole] = js.native
   
   var schema: JSONSchema6 = js.native
   

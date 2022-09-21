@@ -67,7 +67,7 @@ object JobConfigurationExtract {
     
     inline def setDestinationUrisUndefined: Self = StObject.set(x, "destinationUris", js.undefined)
     
-    inline def setDestinationUrisVarargs(value: String*): Self = StObject.set(x, "destinationUris", js.Array(value :_*))
+    inline def setDestinationUrisVarargs(value: String*): Self = StObject.set(x, "destinationUris", js.Array(value*))
     
     inline def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
     

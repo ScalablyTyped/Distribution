@@ -2,7 +2,7 @@ package typings.trtcJsSdk.mod
 
 import typings.std.HTMLDivElement
 import typings.std.MediaStreamTrack
-import typings.trtcJsSdk.anon.State
+import typings.trtcJsSdk.anon.Reason
 import typings.trtcJsSdk.trtcJsSdkStrings.`player-state-changed`
 import typings.trtcJsSdk.trtcJsSdkStrings.`screen-sharing-stopped`
 import org.scalablytyped.runtime.StObject
@@ -72,7 +72,7 @@ trait Stream extends StObject {
   
   /** 监听Stream事件 */
   @JSName("on")
-  def on_playerstatechanged(event: `player-state-changed`, handler: Callback[State]): Unit = js.native
+  def on_playerstatechanged(event: `player-state-changed`, handler: Callback[Reason]): Unit = js.native
   @JSName("on")
   def on_screensharingstopped(event: `screen-sharing-stopped`, handler: Callback[Unit]): Unit = js.native
   
@@ -99,7 +99,7 @@ trait Stream extends StObject {
     * });
     * ```
     */
-  def resume(): Unit = js.native
+  def resume(): js.Promise[Unit] = js.native
   
   /**
     * 设置声音输出设备

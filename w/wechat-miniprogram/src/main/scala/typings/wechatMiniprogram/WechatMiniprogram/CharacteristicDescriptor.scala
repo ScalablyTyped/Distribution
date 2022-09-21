@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait CharacteristicDescriptor extends StObject {
   var uuid: String
   
   /** 描述符数据 */
-  var value: js.UndefOr[ArrayBuffer] = js.undefined
+  var value: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
 }
 object CharacteristicDescriptor {
   
@@ -32,7 +31,7 @@ object CharacteristicDescriptor {
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

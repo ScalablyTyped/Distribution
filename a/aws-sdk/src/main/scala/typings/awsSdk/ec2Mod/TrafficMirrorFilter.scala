@@ -53,25 +53,25 @@ object TrafficMirrorFilter {
     
     inline def setEgressFilterRulesUndefined: Self = StObject.set(x, "EgressFilterRules", js.undefined)
     
-    inline def setEgressFilterRulesVarargs(value: TrafficMirrorFilterRule*): Self = StObject.set(x, "EgressFilterRules", js.Array(value :_*))
+    inline def setEgressFilterRulesVarargs(value: TrafficMirrorFilterRule*): Self = StObject.set(x, "EgressFilterRules", js.Array(value*))
     
     inline def setIngressFilterRules(value: TrafficMirrorFilterRuleList): Self = StObject.set(x, "IngressFilterRules", value.asInstanceOf[js.Any])
     
     inline def setIngressFilterRulesUndefined: Self = StObject.set(x, "IngressFilterRules", js.undefined)
     
-    inline def setIngressFilterRulesVarargs(value: TrafficMirrorFilterRule*): Self = StObject.set(x, "IngressFilterRules", js.Array(value :_*))
+    inline def setIngressFilterRulesVarargs(value: TrafficMirrorFilterRule*): Self = StObject.set(x, "IngressFilterRules", js.Array(value*))
     
     inline def setNetworkServices(value: TrafficMirrorNetworkServiceList): Self = StObject.set(x, "NetworkServices", value.asInstanceOf[js.Any])
     
     inline def setNetworkServicesUndefined: Self = StObject.set(x, "NetworkServices", js.undefined)
     
-    inline def setNetworkServicesVarargs(value: TrafficMirrorNetworkService*): Self = StObject.set(x, "NetworkServices", js.Array(value :_*))
+    inline def setNetworkServicesVarargs(value: TrafficMirrorNetworkService*): Self = StObject.set(x, "NetworkServices", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTrafficMirrorFilterId(value: String): Self = StObject.set(x, "TrafficMirrorFilterId", value.asInstanceOf[js.Any])
     

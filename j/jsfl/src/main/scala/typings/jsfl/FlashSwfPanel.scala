@@ -6,29 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FlashSwfPanel extends StObject {
   
-  def call(): js.Any
+  def call(): Any
   
-  var name: js.Any
+  var name: Any
   
-  var path: js.Any
+  var path: Any
   
-  def setFocus(): js.Any
+  def setFocus(): Any
 }
 object FlashSwfPanel {
   
-  inline def apply(call: () => js.Any, name: js.Any, path: js.Any, setFocus: () => js.Any): FlashSwfPanel = {
+  inline def apply(call: () => Any, name: Any, path: Any, setFocus: () => Any): FlashSwfPanel = {
     val __obj = js.Dynamic.literal(call = js.Any.fromFunction0(call), name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], setFocus = js.Any.fromFunction0(setFocus))
     __obj.asInstanceOf[FlashSwfPanel]
   }
   
   extension [Self <: FlashSwfPanel](x: Self) {
     
-    inline def setCall(value: () => js.Any): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
+    inline def setCall(value: () => Any): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
     
-    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setSetFocus(value: () => js.Any): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
+    inline def setSetFocus(value: () => Any): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
   }
 }

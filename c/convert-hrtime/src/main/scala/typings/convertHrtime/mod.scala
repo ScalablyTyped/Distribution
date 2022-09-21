@@ -6,41 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Convert the result of [`process.hrtime()`](https://nodejs.org/api/process.html#process_process_hrtime_time) to seconds, milliseconds, nanoseconds.
-  @example
-  ```
-  import convertHrtime = require('convert-hrtime');
-  convertHrtime(process.hrtime(process.hrtime()));
-  //=> {seconds: 0.000002399, milliseconds: 0.002399, nanoseconds: 2399}
-  ```
-  */
-  inline def apply(hrtime: js.Tuple2[Double, Double]): HRTime = ^.asInstanceOf[js.Dynamic].apply(hrtime.asInstanceOf[js.Any]).asInstanceOf[HRTime]
-  
   @JSImport("convert-hrtime", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait HRTime extends StObject {
+  inline def default(hrtime: js.BigInt): HighResolutionTime = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hrtime.asInstanceOf[js.Any]).asInstanceOf[HighResolutionTime]
+  
+  trait HighResolutionTime extends StObject {
     
     var milliseconds: Double
     
-    var nanoseconds: Double
+    var nanoseconds: js.BigInt
     
     var seconds: Double
   }
-  object HRTime {
+  object HighResolutionTime {
     
-    inline def apply(milliseconds: Double, nanoseconds: Double, seconds: Double): HRTime = {
+    inline def apply(milliseconds: Double, nanoseconds: js.BigInt, seconds: Double): HighResolutionTime = {
       val __obj = js.Dynamic.literal(milliseconds = milliseconds.asInstanceOf[js.Any], nanoseconds = nanoseconds.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
-      __obj.asInstanceOf[HRTime]
+      __obj.asInstanceOf[HighResolutionTime]
     }
     
-    extension [Self <: HRTime](x: Self) {
+    extension [Self <: HighResolutionTime](x: Self) {
       
       inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       
-      inline def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
+      inline def setNanoseconds(value: js.BigInt): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
       
       inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     }

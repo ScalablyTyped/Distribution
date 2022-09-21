@@ -3,12 +3,9 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.`no-hide-descendants`
 import typings.reactNative.reactNativeStrings.assertive
 import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.button
 import typings.reactNative.reactNativeStrings.no
 import typings.reactNative.reactNativeStrings.none
 import typings.reactNative.reactNativeStrings.polite
-import typings.reactNative.reactNativeStrings.radiobutton_checked
-import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,13 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessibilityPropsAndroid extends StObject {
   
   /**
-    * In some cases, we also want to alert the end user of the type of selected component (i.e., that it is a “button”).
-    * If we were using native buttons, this would work automatically. Since we are using javascript, we need to
-    * provide a bit more context for TalkBack. To do so, you must specify the ‘accessibilityComponentType’ property
-    * for any UI component. For instances, we support ‘button’, ‘radiobutton_checked’ and ‘radiobutton_unchecked’ and so on.
+    * Specifies the nativeID of the associated label text. When the assistive technology focuses on the component with this props, the text is read aloud.
     * @platform android
     */
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Indicates to accessibility services whether the user should be notified when this view changes.
@@ -55,9 +49,11 @@ object AccessibilityPropsAndroid {
   
   extension [Self <: AccessibilityPropsAndroid](x: Self) {
     
-    inline def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
     
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
     
     inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     

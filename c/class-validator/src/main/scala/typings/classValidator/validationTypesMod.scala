@@ -8,7 +8,7 @@ object validationTypesMod {
   
   @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes")
   @js.native
-  class ValidationTypes () extends StObject
+  open class ValidationTypes () extends StObject
   /* static members */
   object ValidationTypes {
     

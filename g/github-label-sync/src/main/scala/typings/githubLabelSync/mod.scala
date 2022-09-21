@@ -22,6 +22,8 @@ object mod {
     
     var color: String
     
+    var description: js.UndefOr[String] = js.undefined
+    
     var name: String
   }
   object BasicLabel {
@@ -34,6 +36,10 @@ object mod {
     extension [Self <: BasicLabel](x: Self) {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -88,7 +94,7 @@ object mod {
       
       inline def setLabels(value: js.Array[LabelInfo]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      inline def setLabelsVarargs(value: LabelInfo*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: LabelInfo*): Self = StObject.set(x, "labels", js.Array(value*))
       
       inline def setLog(value: Info): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
@@ -135,8 +141,6 @@ object mod {
        with BasicLabel {
     
     var aliases: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var description: js.UndefOr[String] = js.undefined
   }
   object LabelInfo {
     
@@ -151,11 +155,7 @@ object mod {
       
       inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
-      
-      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
-      
-      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
     }
   }
   
@@ -223,7 +223,7 @@ object mod {
       
       inline def setLabels(value: js.Array[LabelInfo]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      inline def setLabelsVarargs(value: LabelInfo*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: LabelInfo*): Self = StObject.set(x, "labels", js.Array(value*))
       
       inline def setLog(value: Info): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       

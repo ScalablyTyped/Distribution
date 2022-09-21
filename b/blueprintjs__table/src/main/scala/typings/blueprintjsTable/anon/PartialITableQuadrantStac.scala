@@ -4,9 +4,11 @@ import typings.blueprintjsTable.esmRegionsMod.TableLoadingOption
 import typings.blueprintjsTable.gridMod.Grid
 import typings.blueprintjsTable.tableQuadrantMod.QuadrantType
 import typings.react.mod.EventHandler
+import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,30 +17,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@blueprintjs/table.@blueprintjs/table/lib/esm/quadrants/tableQuadrantStack.ITableQuadrantStackProps> */
 trait PartialITableQuadrantStac extends StObject {
   
-  var bodyRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.undefined
+  var bodyRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   
   var bodyRenderer: js.UndefOr[
     js.Function3[
       /* quadrantType */ QuadrantType, 
       /* showFrozenRowsOnly */ js.UndefOr[Boolean], 
       /* showFrozenColumnsOnly */ js.UndefOr[Boolean], 
-      Element
+      js.UndefOr[Element]
     ]
   ] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
-  var columnHeaderCellRenderer: js.UndefOr[
+  var columnHeaderRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
+  
+  var columnHeaderRenderer: js.UndefOr[
     js.Function4[
-      /* refHandler */ js.Function1[/* ref */ HTMLElement, Unit], 
-      /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double], Unit], 
+      /* refHandler */ Ref[HTMLDivElement], 
+      /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double] | Null, Unit], 
       /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], 
       /* showFrozenColumnsOnly */ js.UndefOr[Boolean], 
-      Element
+      js.UndefOr[Element]
     ]
   ] = js.undefined
   
-  var columnHeaderRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
+  var didHeadersMount: js.UndefOr[Boolean] = js.undefined
+  
+  var enableColumnHeader: js.UndefOr[Boolean] = js.undefined
   
   var enableColumnInteractionBar: js.UndefOr[Boolean] = js.undefined
   
@@ -60,9 +66,7 @@ trait PartialITableQuadrantStac extends StObject {
   
   var loadingOptions: js.UndefOr[js.Array[TableLoadingOption]] = js.undefined
   
-  var menuRenderer: js.UndefOr[
-    js.Function1[/* refHandler */ js.Function1[/* ref */ HTMLElement, Unit], Element]
-  ] = js.undefined
+  var menuRenderer: js.UndefOr[js.Function1[/* refHandler */ js.UndefOr[Ref[HTMLDivElement]], Element]] = js.undefined
   
   var numColumns: js.UndefOr[Double] = js.undefined
   
@@ -74,21 +78,21 @@ trait PartialITableQuadrantStac extends StObject {
   
   var onScroll: js.UndefOr[EventHandler[SyntheticEvent[HTMLElement, Event]]] = js.undefined
   
-  var quadrantRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
+  var quadrantRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   
-  var rowHeaderCellRenderer: js.UndefOr[
+  var rowHeaderRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
+  
+  var rowHeaderRenderer: js.UndefOr[
     js.Function4[
-      /* refHandler */ js.Function1[/* ref */ HTMLElement, Unit], 
-      /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double], Unit], 
+      /* refHandler */ Ref[HTMLDivElement], 
+      /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double] | Null, Unit], 
       /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], 
       /* showFrozenRowsOnly */ js.UndefOr[Boolean], 
-      Element
+      js.UndefOr[Element]
     ]
   ] = js.undefined
   
-  var rowHeaderRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.undefined
-  
-  var scrollContainerRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.undefined
+  var scrollContainerRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   
   var throttleScrolling: js.UndefOr[Boolean] = js.undefined
   
@@ -103,12 +107,16 @@ object PartialITableQuadrantStac {
   
   extension [Self <: PartialITableQuadrantStac](x: Self) {
     
-    inline def setBodyRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "bodyRef", js.Any.fromFunction1(value))
+    inline def setBodyRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "bodyRef", value.asInstanceOf[js.Any])
+    
+    inline def setBodyRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "bodyRef", js.Any.fromFunction1(value))
+    
+    inline def setBodyRefNull: Self = StObject.set(x, "bodyRef", null)
     
     inline def setBodyRefUndefined: Self = StObject.set(x, "bodyRef", js.undefined)
     
     inline def setBodyRenderer(
-      value: (/* quadrantType */ QuadrantType, /* showFrozenRowsOnly */ js.UndefOr[Boolean], /* showFrozenColumnsOnly */ js.UndefOr[Boolean]) => Element
+      value: (/* quadrantType */ QuadrantType, /* showFrozenRowsOnly */ js.UndefOr[Boolean], /* showFrozenColumnsOnly */ js.UndefOr[Boolean]) => js.UndefOr[Element]
     ): Self = StObject.set(x, "bodyRenderer", js.Any.fromFunction3(value))
     
     inline def setBodyRendererUndefined: Self = StObject.set(x, "bodyRenderer", js.undefined)
@@ -117,15 +125,27 @@ object PartialITableQuadrantStac {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setColumnHeaderCellRenderer(
-      value: (/* refHandler */ js.Function1[/* ref */ HTMLElement, Unit], /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double], Unit], /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], /* showFrozenColumnsOnly */ js.UndefOr[Boolean]) => Element
-    ): Self = StObject.set(x, "columnHeaderCellRenderer", js.Any.fromFunction4(value))
+    inline def setColumnHeaderRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "columnHeaderRef", value.asInstanceOf[js.Any])
     
-    inline def setColumnHeaderCellRendererUndefined: Self = StObject.set(x, "columnHeaderCellRenderer", js.undefined)
+    inline def setColumnHeaderRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "columnHeaderRef", js.Any.fromFunction1(value))
     
-    inline def setColumnHeaderRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "columnHeaderRef", js.Any.fromFunction1(value))
+    inline def setColumnHeaderRefNull: Self = StObject.set(x, "columnHeaderRef", null)
     
     inline def setColumnHeaderRefUndefined: Self = StObject.set(x, "columnHeaderRef", js.undefined)
+    
+    inline def setColumnHeaderRenderer(
+      value: (/* refHandler */ Ref[HTMLDivElement], /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double] | Null, Unit], /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], /* showFrozenColumnsOnly */ js.UndefOr[Boolean]) => js.UndefOr[Element]
+    ): Self = StObject.set(x, "columnHeaderRenderer", js.Any.fromFunction4(value))
+    
+    inline def setColumnHeaderRendererUndefined: Self = StObject.set(x, "columnHeaderRenderer", js.undefined)
+    
+    inline def setDidHeadersMount(value: Boolean): Self = StObject.set(x, "didHeadersMount", value.asInstanceOf[js.Any])
+    
+    inline def setDidHeadersMountUndefined: Self = StObject.set(x, "didHeadersMount", js.undefined)
+    
+    inline def setEnableColumnHeader(value: Boolean): Self = StObject.set(x, "enableColumnHeader", value.asInstanceOf[js.Any])
+    
+    inline def setEnableColumnHeaderUndefined: Self = StObject.set(x, "enableColumnHeader", js.undefined)
     
     inline def setEnableColumnInteractionBar(value: Boolean): Self = StObject.set(x, "enableColumnInteractionBar", value.asInstanceOf[js.Any])
     
@@ -167,9 +187,9 @@ object PartialITableQuadrantStac {
     
     inline def setLoadingOptionsUndefined: Self = StObject.set(x, "loadingOptions", js.undefined)
     
-    inline def setLoadingOptionsVarargs(value: TableLoadingOption*): Self = StObject.set(x, "loadingOptions", js.Array(value :_*))
+    inline def setLoadingOptionsVarargs(value: TableLoadingOption*): Self = StObject.set(x, "loadingOptions", js.Array(value*))
     
-    inline def setMenuRenderer(value: /* refHandler */ js.Function1[/* ref */ HTMLElement, Unit] => Element): Self = StObject.set(x, "menuRenderer", js.Any.fromFunction1(value))
+    inline def setMenuRenderer(value: /* refHandler */ js.UndefOr[Ref[HTMLDivElement]] => Element): Self = StObject.set(x, "menuRenderer", js.Any.fromFunction1(value))
     
     inline def setMenuRendererUndefined: Self = StObject.set(x, "menuRenderer", js.undefined)
     
@@ -193,21 +213,33 @@ object PartialITableQuadrantStac {
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setQuadrantRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "quadrantRef", js.Any.fromFunction1(value))
+    inline def setQuadrantRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "quadrantRef", value.asInstanceOf[js.Any])
+    
+    inline def setQuadrantRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "quadrantRef", js.Any.fromFunction1(value))
+    
+    inline def setQuadrantRefNull: Self = StObject.set(x, "quadrantRef", null)
     
     inline def setQuadrantRefUndefined: Self = StObject.set(x, "quadrantRef", js.undefined)
     
-    inline def setRowHeaderCellRenderer(
-      value: (/* refHandler */ js.Function1[/* ref */ HTMLElement, Unit], /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double], Unit], /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], /* showFrozenRowsOnly */ js.UndefOr[Boolean]) => Element
-    ): Self = StObject.set(x, "rowHeaderCellRenderer", js.Any.fromFunction4(value))
+    inline def setRowHeaderRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "rowHeaderRef", value.asInstanceOf[js.Any])
     
-    inline def setRowHeaderCellRendererUndefined: Self = StObject.set(x, "rowHeaderCellRenderer", js.undefined)
+    inline def setRowHeaderRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "rowHeaderRef", js.Any.fromFunction1(value))
     
-    inline def setRowHeaderRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "rowHeaderRef", js.Any.fromFunction1(value))
+    inline def setRowHeaderRefNull: Self = StObject.set(x, "rowHeaderRef", null)
     
     inline def setRowHeaderRefUndefined: Self = StObject.set(x, "rowHeaderRef", js.undefined)
     
-    inline def setScrollContainerRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "scrollContainerRef", js.Any.fromFunction1(value))
+    inline def setRowHeaderRenderer(
+      value: (/* refHandler */ Ref[HTMLDivElement], /* resizeHandler */ js.Function1[/* verticalGuides */ js.Array[Double] | Null, Unit], /* reorderingHandler */ js.Function3[/* oldIndex */ Double, /* newIndex */ Double, /* length */ Double, Unit], /* showFrozenRowsOnly */ js.UndefOr[Boolean]) => js.UndefOr[Element]
+    ): Self = StObject.set(x, "rowHeaderRenderer", js.Any.fromFunction4(value))
+    
+    inline def setRowHeaderRendererUndefined: Self = StObject.set(x, "rowHeaderRenderer", js.undefined)
+    
+    inline def setScrollContainerRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "scrollContainerRef", value.asInstanceOf[js.Any])
+    
+    inline def setScrollContainerRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "scrollContainerRef", js.Any.fromFunction1(value))
+    
+    inline def setScrollContainerRefNull: Self = StObject.set(x, "scrollContainerRef", null)
     
     inline def setScrollContainerRefUndefined: Self = StObject.set(x, "scrollContainerRef", js.undefined)
     

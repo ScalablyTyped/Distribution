@@ -36,21 +36,21 @@ object routerMod {
   
   trait Config extends StObject {
     
-    var decoders: Record[String, js.Any]
+    var decoders: Record[String, Any]
     
-    var defaultParams: Record[String, js.Any]
+    var defaultParams: Record[String, Any]
     
-    var encoders: Record[String, js.Any]
+    var encoders: Record[String, Any]
     
-    var forwardMap: Record[String, js.Any]
+    var forwardMap: Record[String, Any]
   }
   object Config {
     
     inline def apply(
-      decoders: Record[String, js.Any],
-      defaultParams: Record[String, js.Any],
-      encoders: Record[String, js.Any],
-      forwardMap: Record[String, js.Any]
+      decoders: Record[String, Any],
+      defaultParams: Record[String, Any],
+      encoders: Record[String, Any],
+      forwardMap: Record[String, Any]
     ): Config = {
       val __obj = js.Dynamic.literal(decoders = decoders.asInstanceOf[js.Any], defaultParams = defaultParams.asInstanceOf[js.Any], encoders = encoders.asInstanceOf[js.Any], forwardMap = forwardMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
@@ -58,34 +58,34 @@ object routerMod {
     
     extension [Self <: Config](x: Self) {
       
-      inline def setDecoders(value: Record[String, js.Any]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
+      inline def setDecoders(value: Record[String, Any]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       
-      inline def setDefaultParams(value: Record[String, js.Any]): Self = StObject.set(x, "defaultParams", value.asInstanceOf[js.Any])
+      inline def setDefaultParams(value: Record[String, Any]): Self = StObject.set(x, "defaultParams", value.asInstanceOf[js.Any])
       
-      inline def setEncoders(value: Record[String, js.Any]): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
+      inline def setEncoders(value: Record[String, Any]): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
       
-      inline def setForwardMap(value: Record[String, js.Any]): Self = StObject.set(x, "forwardMap", value.asInstanceOf[js.Any])
+      inline def setForwardMap(value: Record[String, Any]): Self = StObject.set(x, "forwardMap", value.asInstanceOf[js.Any])
     }
   }
   
-  type DefaultDependencies = Record[String, js.Any]
+  type DefaultDependencies = Record[String, Any]
   
   trait Listener
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    def next(`val`: js.Any): js.Object
+    def next(`val`: Any): js.Object
   }
   object Listener {
     
-    inline def apply(next: js.Any => js.Object): Listener = {
+    inline def apply(next: Any => js.Object): Listener = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Listener]
     }
     
     extension [Self <: Listener](x: Self) {
       
-      inline def setNext(value: js.Any => js.Object): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: Any => js.Object): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
@@ -93,7 +93,7 @@ object routerMod {
     /* toState */ State, 
     /* fromState */ State, 
     /* done */ DoneFn, 
-    Boolean | js.Promise[js.Any] | Unit
+    Boolean | js.Promise[Any] | Unit
   ]
   
   type MiddlewareFactory[Dependencies /* <: DefaultDependencies */] = js.Function2[
@@ -194,7 +194,7 @@ object routerMod {
         js.Function3[
           /* toState */ js.UndefOr[State], 
           /* fromState */ js.UndefOr[State], 
-          /* err */ js.UndefOr[js.Any], 
+          /* err */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -236,7 +236,7 @@ object routerMod {
       inline def setOnTransitionCancelUndefined: Self = StObject.set(x, "onTransitionCancel", js.undefined)
       
       inline def setOnTransitionError(
-        value: (/* toState */ js.UndefOr[State], /* fromState */ js.UndefOr[State], /* err */ js.UndefOr[js.Any]) => Unit
+        value: (/* toState */ js.UndefOr[State], /* fromState */ js.UndefOr[State], /* err */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "onTransitionError", js.Any.fromFunction3(value))
       
       inline def setOnTransitionErrorUndefined: Self = StObject.set(x, "onTransitionError", js.undefined)
@@ -300,7 +300,7 @@ object routerMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: Route[Dependencies]*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Route[Dependencies]*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDecodeParams(value: /* pathParams */ Params => Params): Self = StObject.set(x, "decodeParams", js.Any.fromFunction1(value))
       
@@ -332,7 +332,7 @@ object routerMod {
     def add(routes: Route[Dependencies]): Router[Dependencies] = js.native
     def add(routes: Route[Dependencies], finalSort: Boolean): Router[Dependencies] = js.native
     
-    def addEventListener(eventName: js.Any, cb: js.Any): Unsubscribe = js.native
+    def addEventListener(eventName: Any, cb: Any): Unsubscribe = js.native
     
     def addNode(name: String, path: String): Router[Dependencies] = js.native
     def addNode(name: String, path: String, canActivateHandler: ActivationFnFactory[Dependencies]): Router[Dependencies] = js.native
@@ -367,9 +367,9 @@ object routerMod {
       factory: js.Function2[
           /* router */ js.UndefOr[Router[Dependencies]], 
           /* dependencies */ js.UndefOr[Dependencies], 
-          js.Any
+          Any
         ]
-    ): js.Any = js.native
+    ): Any = js.native
     
     def forward(fromRoute: String, toRoute: String): Router[Dependencies] = js.native
     
@@ -396,7 +396,7 @@ object routerMod {
     
     def getState(): State = js.native
     
-    def invokeEventListeners(eventName: js.Any, args: js.Any*): Unit = js.native
+    def invokeEventListeners(eventName: Any, args: Any*): Unit = js.native
     
     def isActive(name: String): Boolean = js.native
     def isActive(name: String, params: Unit, strictEquality: Boolean): Boolean = js.native
@@ -414,19 +414,19 @@ object routerMod {
     
     def makeState(name: String): State = js.native
     def makeState(name: String, params: Unit, path: String): State = js.native
-    def makeState(name: String, params: Unit, path: String, meta: js.Any): State = js.native
-    def makeState(name: String, params: Unit, path: String, meta: js.Any, forceId: Double): State = js.native
+    def makeState(name: String, params: Unit, path: String, meta: Any): State = js.native
+    def makeState(name: String, params: Unit, path: String, meta: Any, forceId: Double): State = js.native
     def makeState(name: String, params: Unit, path: String, meta: Unit, forceId: Double): State = js.native
-    def makeState(name: String, params: Unit, path: Unit, meta: js.Any): State = js.native
-    def makeState(name: String, params: Unit, path: Unit, meta: js.Any, forceId: Double): State = js.native
+    def makeState(name: String, params: Unit, path: Unit, meta: Any): State = js.native
+    def makeState(name: String, params: Unit, path: Unit, meta: Any, forceId: Double): State = js.native
     def makeState(name: String, params: Unit, path: Unit, meta: Unit, forceId: Double): State = js.native
     def makeState(name: String, params: Params): State = js.native
     def makeState(name: String, params: Params, path: String): State = js.native
-    def makeState(name: String, params: Params, path: String, meta: js.Any): State = js.native
-    def makeState(name: String, params: Params, path: String, meta: js.Any, forceId: Double): State = js.native
+    def makeState(name: String, params: Params, path: String, meta: Any): State = js.native
+    def makeState(name: String, params: Params, path: String, meta: Any, forceId: Double): State = js.native
     def makeState(name: String, params: Params, path: String, meta: Unit, forceId: Double): State = js.native
-    def makeState(name: String, params: Params, path: Unit, meta: js.Any): State = js.native
-    def makeState(name: String, params: Params, path: Unit, meta: js.Any, forceId: Double): State = js.native
+    def makeState(name: String, params: Params, path: Unit, meta: Any): State = js.native
+    def makeState(name: String, params: Params, path: Unit, meta: Any, forceId: Double): State = js.native
     def makeState(name: String, params: Params, path: Unit, meta: Unit, forceId: Double): State = js.native
     
     def matchPath(path: String): State | Null = js.native
@@ -444,15 +444,15 @@ object routerMod {
     def navigateToDefault(opts: NavigationOptions): CancelFn = js.native
     def navigateToDefault(opts: NavigationOptions, done: DoneFn): CancelFn = js.native
     
-    def removeEventListener(eventName: js.Any, cb: js.Any): Unit = js.native
+    def removeEventListener(eventName: Any, cb: Any): Unit = js.native
     
     var rootNode: RouteNode = js.native
     
     def setDependencies(deps: Dependencies): Router[DefaultDependencies] = js.native
     
-    def setDependency(dependencyName: String, dependency: js.Any): Router[DefaultDependencies] = js.native
+    def setDependency(dependencyName: String, dependency: Any): Router[DefaultDependencies] = js.native
     
-    def setOption(option: String, value: js.Any): Router[Dependencies] = js.native
+    def setOption(option: String, value: Any): Router[Dependencies] = js.native
     
     def setRootPath(rootPath: String): Unit = js.native
     
@@ -470,7 +470,7 @@ object routerMod {
     def subscribe(listener: Listener): Unsubscribe | Subscription = js.native
     def subscribe(listener: SubscribeFn): Unsubscribe | Subscription = js.native
     
-    def transitionToState(toState: State, fromState: State, opts: NavigationOptions, done: DoneFn): js.Any = js.native
+    def transitionToState(toState: State, fromState: State, opts: NavigationOptions, done: DoneFn): Any = js.native
     
     def useMiddleware(middlewares: MiddlewareFactory[Dependencies]*): Unsubscribe = js.native
     

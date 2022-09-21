@@ -1,12 +1,8 @@
 package typings.vueRx
 
-import typings.rxjs.mod.Observable_
-import typings.std.Event
 import typings.std.Record
-import typings.vue.optionsMod.WatchOptions
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
-import typings.vueRx.anon.Msg
+import typings.vueRuntimeCore.mod.WatchOptions
+import typings.vueRx.anon.TypeofVue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +13,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(V: VueConstructor[Vue]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(V.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(V: TypeofVue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(V.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type Observables = Record[String, Observable_[js.Any]]
+  type Observables = Record[
+    String, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+  ]
   
   trait WatchObservable[T] extends StObject {
     
@@ -44,7 +43,7 @@ object mod {
   
   object vueTypesOptionsAugmentingMod {
     
-    trait ComponentOptions[V /* <: Vue */] extends StObject {
+    trait ComponentOptions[V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */] extends StObject {
       
       var domStreams: js.UndefOr[js.Array[String]] = js.undefined
       
@@ -54,24 +53,24 @@ object mod {
     }
     object ComponentOptions {
       
-      inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
+      inline def apply[V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](): ComponentOptions[V] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ComponentOptions[V]]
       }
       
-      extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
+      extension [Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](x: Self & ComponentOptions[V]) {
         
         inline def setDomStreams(value: js.Array[String]): Self = StObject.set(x, "domStreams", value.asInstanceOf[js.Any])
         
         inline def setDomStreamsUndefined: Self = StObject.set(x, "domStreams", js.undefined)
         
-        inline def setDomStreamsVarargs(value: String*): Self = StObject.set(x, "domStreams", js.Array(value :_*))
+        inline def setDomStreamsVarargs(value: String*): Self = StObject.set(x, "domStreams", js.Array(value*))
         
         inline def setObservableMethods(value: js.Array[String] | (Record[String, String])): Self = StObject.set(x, "observableMethods", value.asInstanceOf[js.Any])
         
         inline def setObservableMethodsUndefined: Self = StObject.set(x, "observableMethods", js.undefined)
         
-        inline def setObservableMethodsVarargs(value: String*): Self = StObject.set(x, "observableMethods", js.Array(value :_*))
+        inline def setObservableMethodsVarargs(value: String*): Self = StObject.set(x, "observableMethods", js.Array(value*))
         
         inline def setSubscriptions(value: Observables | (js.ThisFunction0[/* this */ V, Observables])): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
         
@@ -86,50 +85,53 @@ object mod {
     trait Vue extends StObject {
       
       @JSName("$createObservableMethod")
-      def $createObservableMethod(methodName: String): Observable_[js.Any] = js.native
+      def $createObservableMethod(methodName: String): Any = js.native
       
       @JSName("$eventToObservable")
-      def $eventToObservable(event: String): Observable_[Msg] = js.native
+      def $eventToObservable(event: String): Any = js.native
       
       @JSName("$fromDOMEvent")
-      def $fromDOMEvent(selector: String, event: String): Observable_[Event] = js.native
+      def $fromDOMEvent(selector: String, event: String): Any = js.native
       @JSName("$fromDOMEvent")
-      def $fromDOMEvent(selector: Null, event: String): Observable_[Event] = js.native
+      def $fromDOMEvent(selector: Null, event: String): Any = js.native
       
       @JSName("$observables")
       var $observables: Observables = js.native
       
       @JSName("$subscribeTo")
-      def $subscribeTo[T](observable: Observable_[T], next: js.Function1[/* t */ T, Unit]): Unit = js.native
-      @JSName("$subscribeTo")
       def $subscribeTo[T](
-        observable: Observable_[T],
-        next: js.Function1[/* t */ T, Unit],
-        error: js.Function1[/* e */ js.Any, Unit]
+        observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any,
+        next: js.Function1[/* t */ T, Unit]
       ): Unit = js.native
       @JSName("$subscribeTo")
       def $subscribeTo[T](
-        observable: Observable_[T],
+        observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any,
         next: js.Function1[/* t */ T, Unit],
-        error: js.Function1[/* e */ js.Any, Unit],
+        error: js.Function1[/* e */ Any, Unit]
+      ): Unit = js.native
+      @JSName("$subscribeTo")
+      def $subscribeTo[T](
+        observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any,
+        next: js.Function1[/* t */ T, Unit],
+        error: js.Function1[/* e */ Any, Unit],
         complete: js.Function0[Unit]
       ): Unit = js.native
       @JSName("$subscribeTo")
       def $subscribeTo[T](
-        observable: Observable_[T],
+        observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any,
         next: js.Function1[/* t */ T, Unit],
         error: Unit,
         complete: js.Function0[Unit]
       ): Unit = js.native
       
       @JSName("$watchAsObservable")
-      def $watchAsObservable(expr: String): Observable_[WatchObservable[js.Any]] = js.native
+      def $watchAsObservable(expr: String): Any = js.native
       @JSName("$watchAsObservable")
-      def $watchAsObservable(expr: String, options: WatchOptions): Observable_[WatchObservable[js.Any]] = js.native
+      def $watchAsObservable(expr: String, options: WatchOptions[Boolean]): Any = js.native
       @JSName("$watchAsObservable")
-      def $watchAsObservable[T](fn: js.ThisFunction0[/* this */ this.type, T]): Observable_[WatchObservable[T]] = js.native
+      def $watchAsObservable[T](fn: js.ThisFunction0[/* this */ this.type, T]): Any = js.native
       @JSName("$watchAsObservable")
-      def $watchAsObservable[T](fn: js.ThisFunction0[/* this */ this.type, T], options: WatchOptions): Observable_[WatchObservable[T]] = js.native
+      def $watchAsObservable[T](fn: js.ThisFunction0[/* this */ this.type, T], options: WatchOptions[Boolean]): Any = js.native
     }
   }
 }

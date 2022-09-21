@@ -1,13 +1,12 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.ui.dxFileManagerDetailsColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `3` extends StObject {
   
-  var columns: js.UndefOr[js.Array[dxFileManagerDetailsColumn | String]] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
 }
 object `3` {
   
@@ -18,10 +17,8 @@ object `3` {
   
   extension [Self <: `3`](x: Self) {
     
-    inline def setColumns(value: js.Array[dxFileManagerDetailsColumn | String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
-    
-    inline def setColumnsVarargs(value: (dxFileManagerDetailsColumn | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
   }
 }

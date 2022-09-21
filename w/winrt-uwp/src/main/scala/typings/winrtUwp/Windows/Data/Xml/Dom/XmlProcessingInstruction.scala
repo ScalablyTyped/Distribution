@@ -60,10 +60,10 @@ trait XmlProcessingInstruction extends StObject {
   var lastChild: IXmlNode
   
   /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
-  var localName: js.Any
+  var localName: Any
   
   /** Returns the Uniform Resource Identifier (URI) for the namespace. */
-  var namespaceUri: js.Any
+  var namespaceUri: Any
   
   /** Gets the next sibling of the node in the parent's child list. */
   var nextSibling: IXmlNode
@@ -75,7 +75,7 @@ trait XmlProcessingInstruction extends StObject {
   var nodeType: NodeType
   
   /** Gets or sets the text associated with the node. */
-  var nodeValue: js.Any
+  var nodeValue: Any
   
   /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
   def normalize(): Unit
@@ -87,7 +87,7 @@ trait XmlProcessingInstruction extends StObject {
   var parentNode: IXmlNode
   
   /** Gets or sets the namespace prefix. */
-  var prefix: js.Any
+  var prefix: Any
   
   /** Gets the previous sibling of the node in the parent's child list. */
   var previousSibling: IXmlNode
@@ -120,7 +120,7 @@ trait XmlProcessingInstruction extends StObject {
     * @param namespaces Contains a string that specifies namespaces for use in XPath expressions when it is necessary to define new namespaces externally. Namespaces are defined in the XML style, as a space-separated list of namespace declaration attributes. You can use this property to set the default namespace as well.
     * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
     */
-  def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList
+  def selectNodesNS(xpath: String, namespaces: Any): XmlNodeList
   
   /**
     * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -135,7 +135,7 @@ trait XmlProcessingInstruction extends StObject {
     * @param namespaces Contains a string that specifies the namespaces to use in XPath expressions when it is necessary to define new namespaces externally. Namespaces are defined in the XML style, as a space-separated list of namespace declaration attributes. You can use this property to set the default namespace as well.
     * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
     */
-  def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode
+  def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode
   
   /** Gets the target for the processing instruction. */
   var target: String
@@ -154,23 +154,23 @@ object XmlProcessingInstruction {
     innerText: String,
     insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
     lastChild: IXmlNode,
-    localName: js.Any,
-    namespaceUri: js.Any,
+    localName: Any,
+    namespaceUri: Any,
     nextSibling: IXmlNode,
     nodeName: String,
     nodeType: NodeType,
-    nodeValue: js.Any,
+    nodeValue: Any,
     normalize: () => Unit,
     ownerDocument: XmlDocument,
     parentNode: IXmlNode,
-    prefix: js.Any,
+    prefix: Any,
     previousSibling: IXmlNode,
     removeChild: IXmlNode => IXmlNode,
     replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
     selectNodes: String => XmlNodeList,
-    selectNodesNS: (String, js.Any) => XmlNodeList,
+    selectNodesNS: (String, Any) => XmlNodeList,
     selectSingleNode: String => IXmlNode,
-    selectSingleNodeNS: (String, js.Any) => IXmlNode,
+    selectSingleNodeNS: (String, Any) => IXmlNode,
     target: String
   ): XmlProcessingInstruction = {
     val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction1(cloneNode), data = data.asInstanceOf[js.Any], firstChild = firstChild.asInstanceOf[js.Any], getXml = js.Any.fromFunction0(getXml), hasChildNodes = js.Any.fromFunction0(hasChildNodes), innerText = innerText.asInstanceOf[js.Any], insertBefore = js.Any.fromFunction2(insertBefore), lastChild = lastChild.asInstanceOf[js.Any], localName = localName.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], normalize = js.Any.fromFunction0(normalize), ownerDocument = ownerDocument.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any], removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS), target = target.asInstanceOf[js.Any])
@@ -201,9 +201,9 @@ object XmlProcessingInstruction {
     
     inline def setLastChild(value: IXmlNode): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
-    inline def setLocalName(value: js.Any): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+    inline def setLocalName(value: Any): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
-    inline def setNamespaceUri(value: js.Any): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
+    inline def setNamespaceUri(value: Any): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
     
     inline def setNextSibling(value: IXmlNode): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
@@ -211,7 +211,7 @@ object XmlProcessingInstruction {
     
     inline def setNodeType(value: NodeType): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
-    inline def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     inline def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
@@ -219,7 +219,7 @@ object XmlProcessingInstruction {
     
     inline def setParentNode(value: IXmlNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    inline def setPrefix(value: js.Any): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Any): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     inline def setPreviousSibling(value: IXmlNode): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
@@ -229,11 +229,11 @@ object XmlProcessingInstruction {
     
     inline def setSelectNodes(value: String => XmlNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
     
-    inline def setSelectNodesNS(value: (String, js.Any) => XmlNodeList): Self = StObject.set(x, "selectNodesNS", js.Any.fromFunction2(value))
+    inline def setSelectNodesNS(value: (String, Any) => XmlNodeList): Self = StObject.set(x, "selectNodesNS", js.Any.fromFunction2(value))
     
     inline def setSelectSingleNode(value: String => IXmlNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction1(value))
     
-    inline def setSelectSingleNodeNS(value: (String, js.Any) => IXmlNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction2(value))
+    inline def setSelectSingleNodeNS(value: (String, Any) => IXmlNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction2(value))
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

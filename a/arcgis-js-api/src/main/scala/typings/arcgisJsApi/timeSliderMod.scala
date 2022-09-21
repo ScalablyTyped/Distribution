@@ -22,7 +22,7 @@ object timeSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with TimeSlider {
     def this(properties: TimeSliderProperties) = this()

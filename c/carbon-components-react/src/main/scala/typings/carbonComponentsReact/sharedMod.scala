@@ -24,6 +24,9 @@ object sharedMod {
   /* Rewritten from type alias, can be one of: 
     - typings.carbonComponentsReact.carbonComponentsReactStrings.default
     - typings.carbonComponentsReact.carbonComponentsReactStrings.field
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.lg
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.md
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.sm
     - typings.carbonComponentsReact.carbonComponentsReactStrings.small
   */
   trait FileUploaderSize extends StObject
@@ -32,6 +35,12 @@ object sharedMod {
     inline def default: typings.carbonComponentsReact.carbonComponentsReactStrings.default = "default".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.default]
     
     inline def field: typings.carbonComponentsReact.carbonComponentsReactStrings.field = "field".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.field]
+    
+    inline def lg: typings.carbonComponentsReact.carbonComponentsReactStrings.lg = "lg".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.lg]
+    
+    inline def md: typings.carbonComponentsReact.carbonComponentsReactStrings.md = "md".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.md]
+    
+    inline def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
     
     inline def small: typings.carbonComponentsReact.carbonComponentsReactStrings.small = "small".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
   }

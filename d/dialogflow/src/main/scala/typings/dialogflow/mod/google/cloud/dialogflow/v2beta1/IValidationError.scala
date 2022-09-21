@@ -34,7 +34,7 @@ object IValidationError {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

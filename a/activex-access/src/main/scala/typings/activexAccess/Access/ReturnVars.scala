@@ -19,5 +19,5 @@ trait ReturnVars extends StObject {
   def Item(Index: String): ReturnVar = js.native
   def Item(Index: Double): ReturnVar = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

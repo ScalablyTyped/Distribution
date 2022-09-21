@@ -1,7 +1,6 @@
 package typings.firefoxWebextBrowser.global.browser
 
 import typings.firefoxWebextBrowser.browser.clipboard.SetImageDataImageType
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,5 +24,5 @@ object clipboard {
     * @param imageData The image data to be copied.
     * @param imageType The type of imageData.
     */
-  inline def setImageData(imageData: ArrayBuffer, imageType: SetImageDataImageType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], imageType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def setImageData(imageData: js.typedarray.ArrayBuffer, imageType: SetImageDataImageType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], imageType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

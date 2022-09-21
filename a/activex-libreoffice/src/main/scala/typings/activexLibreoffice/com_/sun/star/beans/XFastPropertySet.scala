@@ -22,7 +22,7 @@ trait XFastPropertySet
     * @throws UnknownPropertyException if the property does not exist.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getFastPropertyValue(nHandle: Double): js.Any
+  def getFastPropertyValue(nHandle: Double): Any
   
   /**
     * sets the value to the property with the specified name.
@@ -33,16 +33,16 @@ trait XFastPropertySet
     * @throws IllegalArgumentException if the new value cannot be converted to the type of the underlying property by an identity or widening conversion.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def setFastPropertyValue(nHandle: Double, aValue: js.Any): Unit
+  def setFastPropertyValue(nHandle: Double, aValue: Any): Unit
 }
 object XFastPropertySet {
   
   inline def apply(
     acquire: () => Unit,
-    getFastPropertyValue: Double => js.Any,
-    queryInterface: `type` => js.Any,
+    getFastPropertyValue: Double => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    setFastPropertyValue: (Double, js.Any) => Unit
+    setFastPropertyValue: (Double, Any) => Unit
   ): XFastPropertySet = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getFastPropertyValue = js.Any.fromFunction1(getFastPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setFastPropertyValue = js.Any.fromFunction2(setFastPropertyValue))
     __obj.asInstanceOf[XFastPropertySet]
@@ -50,8 +50,8 @@ object XFastPropertySet {
   
   extension [Self <: XFastPropertySet](x: Self) {
     
-    inline def setGetFastPropertyValue(value: Double => js.Any): Self = StObject.set(x, "getFastPropertyValue", js.Any.fromFunction1(value))
+    inline def setGetFastPropertyValue(value: Double => Any): Self = StObject.set(x, "getFastPropertyValue", js.Any.fromFunction1(value))
     
-    inline def setSetFastPropertyValue(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setFastPropertyValue", js.Any.fromFunction2(value))
+    inline def setSetFastPropertyValue(value: (Double, Any) => Unit): Self = StObject.set(x, "setFastPropertyValue", js.Any.fromFunction2(value))
   }
 }

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +8,11 @@ trait TaskLog
   extends StObject
      with TaskLogReference {
   
-  var createdOn: Date
+  var createdOn: js.Date
   
   var indexLocation: String
   
-  var lastChangedOn: Date
+  var lastChangedOn: js.Date
   
   var lineCount: Double
   
@@ -22,10 +21,10 @@ trait TaskLog
 object TaskLog {
   
   inline def apply(
-    createdOn: Date,
+    createdOn: js.Date,
     id: Double,
     indexLocation: String,
-    lastChangedOn: Date,
+    lastChangedOn: js.Date,
     lineCount: Double,
     location: String,
     path: String
@@ -36,11 +35,11 @@ object TaskLog {
   
   extension [Self <: TaskLog](x: Self) {
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setIndexLocation(value: String): Self = StObject.set(x, "indexLocation", value.asInstanceOf[js.Any])
     
-    inline def setLastChangedOn(value: Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
+    inline def setLastChangedOn(value: js.Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
     
     inline def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
     

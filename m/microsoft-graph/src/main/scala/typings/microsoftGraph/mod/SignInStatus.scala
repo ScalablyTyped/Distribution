@@ -10,7 +10,7 @@ trait SignInStatus extends StObject {
   var additionalDetails: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Provides the 5-6digit error code that's generated during a sign-in failure. Check out the list of error codes and
+    * Provides the 5-6 digit error code that's generated during a sign-in failure. Check out the list of error codes and
     * messages.
     */
   var errorCode: js.UndefOr[NullableOption[Double]] = js.undefined

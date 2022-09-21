@@ -33,6 +33,6 @@ object ListRecordHistoryOutput {
     
     inline def setRecordDetailsUndefined: Self = StObject.set(x, "RecordDetails", js.undefined)
     
-    inline def setRecordDetailsVarargs(value: RecordDetail*): Self = StObject.set(x, "RecordDetails", js.Array(value :_*))
+    inline def setRecordDetailsVarargs(value: RecordDetail*): Self = StObject.set(x, "RecordDetails", js.Array(value*))
   }
 }

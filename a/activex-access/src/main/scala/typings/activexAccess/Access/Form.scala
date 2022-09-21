@@ -119,7 +119,7 @@ trait Form extends StObject {
   
   var Caption: String = js.native
   
-  val ChartSpace: js.Any = js.native
+  val ChartSpace: Any = js.native
   
   var CloseButton: Boolean = js.native
   
@@ -215,7 +215,7 @@ trait Form extends StObject {
   
   var DividingLines: Boolean = js.native
   
-  val Dynaset: js.Any = js.native
+  val Dynaset: Any = js.native
   
   var FastLaserPrinting: Boolean = js.native
   
@@ -441,21 +441,21 @@ trait Form extends StObject {
   
   var Pages: Double = js.native
   
-  var PaintPalette: js.Any = js.native
+  var PaintPalette: Any = js.native
   
   var Painting: Boolean = js.native
   
   var PaletteSource: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Picture: String = js.native
   
   var PictureAlignment: Double = js.native
   
-  var PictureData: js.Any = js.native
+  var PictureData: Any = js.native
   
-  var PicturePalette: js.Any = js.native
+  var PicturePalette: Any = js.native
   
   var PictureSizeMode: Double = js.native
   
@@ -463,7 +463,7 @@ trait Form extends StObject {
   
   var PictureType: Double = js.native
   
-  val PivotTable: js.Any = js.native
+  val PivotTable: Any = js.native
   
   var PivotTableChange: String = js.native
   
@@ -478,11 +478,11 @@ trait Form extends StObject {
   @JSName("Properties")
   val Properties_Original: Properties = js.native
   
-  var PrtDevMode: js.Any = js.native
+  var PrtDevMode: Any = js.native
   
-  var PrtDevNames: js.Any = js.native
+  var PrtDevNames: Any = js.native
   
-  var PrtMip: js.Any = js.native
+  var PrtMip: Any = js.native
   
   var Query: String = js.native
   
@@ -525,7 +525,7 @@ trait Form extends StObject {
   def Section(Index: String): typings.activexAccess.Access.Section = js.native
   def Section(Index: AcFormSection): typings.activexAccess.Access.Section = js.native
   
-  def SectionOld(Index: js.Any): Section = js.native
+  def SectionOld(Index: Any): Section = js.native
   
   var SelHeight: Double = js.native
   
@@ -611,60 +611,60 @@ trait Form extends StObject {
   
   var ZoomControl: Double = js.native
   
-  def _Evaluate(bstrExpr: String, ppsa: js.Any*): js.Any = js.native
+  def _Evaluate(bstrExpr: String, ppsa: Any*): Any = js.native
   
   var _Name: String = js.native
   
   var acHiddenCurrentPage: Double = js.native
   
-  def accChild(varChild: js.Any): js.Any = js.native
+  def accChild(varChild: Any): Any = js.native
   
   val accChildCount: Double = js.native
   
   def accDefaultAction(): String = js.native
-  def accDefaultAction(varChild: js.Any): String = js.native
+  def accDefaultAction(varChild: Any): String = js.native
   
   def accDescription(): String = js.native
-  def accDescription(varChild: js.Any): String = js.native
+  def accDescription(varChild: Any): String = js.native
   
   def accDoDefaultAction(): Unit = js.native
-  def accDoDefaultAction(varChild: js.Any): Unit = js.native
+  def accDoDefaultAction(varChild: Any): Unit = js.native
   
-  val accFocus: js.Any = js.native
+  val accFocus: Any = js.native
   
   def accHelp(): String = js.native
-  def accHelp(varChild: js.Any): String = js.native
+  def accHelp(varChild: Any): String = js.native
   
   def accHelpTopic(pszHelpFile: String): Double = js.native
-  def accHelpTopic(pszHelpFile: String, varChild: js.Any): Double = js.native
+  def accHelpTopic(pszHelpFile: String, varChild: Any): Double = js.native
   
-  def accHitTest(xLeft: Double, yTop: Double): js.Any = js.native
+  def accHitTest(xLeft: Double, yTop: Double): Any = js.native
   
   def accKeyboardShortcut(): String = js.native
-  def accKeyboardShortcut(varChild: js.Any): String = js.native
+  def accKeyboardShortcut(varChild: Any): String = js.native
   
   def accLocation(pxLeft: Double, pyTop: Double, pcxWidth: Double, pcyHeight: Double): Unit = js.native
-  def accLocation(pxLeft: Double, pyTop: Double, pcxWidth: Double, pcyHeight: Double, varChild: js.Any): Unit = js.native
+  def accLocation(pxLeft: Double, pyTop: Double, pcxWidth: Double, pcyHeight: Double, varChild: Any): Unit = js.native
   
   def accName(): String = js.native
-  def accName(varChild: js.Any): String = js.native
+  def accName(varChild: Any): String = js.native
   
-  def accNavigate(navDir: Double): js.Any = js.native
-  def accNavigate(navDir: Double, varStart: js.Any): js.Any = js.native
+  def accNavigate(navDir: Double): Any = js.native
+  def accNavigate(navDir: Double, varStart: Any): Any = js.native
   
-  val accParent: js.Any = js.native
+  val accParent: Any = js.native
   
-  def accRole(): js.Any = js.native
-  def accRole(varChild: js.Any): js.Any = js.native
+  def accRole(): Any = js.native
+  def accRole(varChild: Any): Any = js.native
   
   def accSelect(flagsSelect: Double): Unit = js.native
-  def accSelect(flagsSelect: Double, varChild: js.Any): Unit = js.native
+  def accSelect(flagsSelect: Double, varChild: Any): Unit = js.native
   
-  val accSelection: js.Any = js.native
+  val accSelection: Any = js.native
   
-  def accState(): js.Any = js.native
-  def accState(varChild: js.Any): js.Any = js.native
+  def accState(): Any = js.native
+  def accState(varChild: Any): Any = js.native
   
   def accValue(): String = js.native
-  def accValue(varChild: js.Any): String = js.native
+  def accValue(varChild: Any): String = js.native
 }

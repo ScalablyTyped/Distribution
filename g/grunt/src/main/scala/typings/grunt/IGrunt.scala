@@ -36,14 +36,14 @@ trait IGrunt
   @JSName("package")
   var _package: NodePackage = js.native
   
-  def config(prop: java.lang.String): js.Any = js.native
+  def config(prop: java.lang.String): Any = js.native
   /**
     * Get or set a value from the project's Grunt configuration.
     * This method serves as an alias to other methods;
     * if two arguments are passed, grunt.config.set is called,
     * otherwise grunt.config.get is called.
     */
-  def config(prop: java.lang.String, value: js.Any): js.Any = js.native
+  def config(prop: java.lang.String, value: Any): Any = js.native
   @JSName("config")
   var config_Original: ConfigModule = js.native
   

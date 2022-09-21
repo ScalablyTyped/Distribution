@@ -34,7 +34,7 @@ object AlarmConfiguration {
     
     inline def setAlarmsUndefined: Self = StObject.set(x, "alarms", js.undefined)
     
-    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "alarms", js.Array(value :_*))
+    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "alarms", js.Array(value*))
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

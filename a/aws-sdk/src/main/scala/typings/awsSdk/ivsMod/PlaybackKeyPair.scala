@@ -17,12 +17,12 @@ trait PlaybackKeyPair extends StObject {
   var fingerprint: js.UndefOr[PlaybackKeyPairFingerprint] = js.undefined
   
   /**
-    * Key-pair name.
+    * Playback-key-pair name. The value does not need to be unique.
     */
   var name: js.UndefOr[PlaybackKeyPairName] = js.undefined
   
   /**
-    * Array of 1-50 maps, each of the form string:string (key:value).
+    * Array of 1-50 maps, each of the form string:string (key:value). See Tagging Amazon Web Services Resources for more information, including restrictions that apply to tags and "Tag naming limits and requirements"; Amazon IVS has no service-specific constraints beyond what is documented there.
     */
   var tags: js.UndefOr[Tags] = js.undefined
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewColumn")
 @js.native
-class ASPxClientGridViewColumn ()
+open class ASPxClientGridViewColumn ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewColumn {
   

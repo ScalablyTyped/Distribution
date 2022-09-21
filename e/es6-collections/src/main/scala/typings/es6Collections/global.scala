@@ -9,7 +9,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Map")
   @js.native
-  class Map[K, V] ()
+  open class Map[K, V] ()
     extends StObject
        with typings.es6Collections.Map[K, V] {
     def this(iterable: ForEachable[js.Tuple2[K, V]]) = this()
@@ -22,7 +22,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Set")
   @js.native
-  class Set[T] ()
+  open class Set[T] ()
     extends StObject
        with typings.es6Collections.Set[T] {
     def this(iterable: ForEachable[T]) = this()
@@ -35,7 +35,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WeakMap")
   @js.native
-  class WeakMap[K /* <: js.Object */, V] ()
+  open class WeakMap[K /* <: js.Object */, V] ()
     extends StObject
        with typings.es6Collections.WeakMap[K, V] {
     def this(iterable: ForEachable[js.Tuple2[K, V]]) = this()
@@ -48,7 +48,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WeakSet")
   @js.native
-  class WeakSet[T] ()
+  open class WeakSet[T] ()
     extends StObject
        with typings.es6Collections.WeakSet[T] {
     def this(iterable: ForEachable[T]) = this()

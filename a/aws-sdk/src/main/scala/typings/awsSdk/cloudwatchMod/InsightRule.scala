@@ -12,12 +12,17 @@ trait InsightRule extends StObject {
   var Definition: InsightRuleDefinition
   
   /**
+    *  An optional built-in rule that Amazon Web Services manages. 
+    */
+  var ManagedRule: js.UndefOr[InsightRuleIsManaged] = js.undefined
+  
+  /**
     * The name of the rule.
     */
   var Name: InsightRuleName
   
   /**
-    * For rules that you create, this is always {"Name": "CloudWatchLogRule", "Version": 1}. For built-in rules, this is {"Name": "ServiceLogRule", "Version": 1} 
+    * For rules that you create, this is always {"Name": "CloudWatchLogRule", "Version": 1}. For managed rules, this is {"Name": "ServiceLogRule", "Version": 1} 
     */
   var Schema: InsightRuleSchema
   
@@ -41,6 +46,10 @@ object InsightRule {
   extension [Self <: InsightRule](x: Self) {
     
     inline def setDefinition(value: InsightRuleDefinition): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
+    
+    inline def setManagedRule(value: InsightRuleIsManaged): Self = StObject.set(x, "ManagedRule", value.asInstanceOf[js.Any])
+    
+    inline def setManagedRuleUndefined: Self = StObject.set(x, "ManagedRule", js.undefined)
     
     inline def setName(value: InsightRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

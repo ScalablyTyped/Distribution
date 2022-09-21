@@ -21,6 +21,6 @@ object IHistoryReply {
     
     inline def setHistory(value: js.Array[js.Tuple3[Double, Double, String | (js.Tuple2[String, String])]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    inline def setHistoryVarargs(value: (js.Tuple3[Double, Double, String | (js.Tuple2[String, String])])*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: (js.Tuple3[Double, Double, String | (js.Tuple2[String, String])])*): Self = StObject.set(x, "history", js.Array(value*))
   }
 }

@@ -25,10 +25,10 @@ object ProtocolHandler {
   
   inline def apply(
     acquire: () => Unit,
-    initialize: SeqEquiv[js.Any] => Unit,
+    initialize: SeqEquiv[Any] => Unit,
     queryDispatch: (URL, String, Double) => XDispatch,
     queryDispatches: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): ProtocolHandler = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), initialize = js.Any.fromFunction1(initialize), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@markedjs/html-differ", "HtmlDiffer")
   @js.native
-  class HtmlDiffer () extends StObject {
+  open class HtmlDiffer () extends StObject {
     def this(options: Options) = this()
     def this(preset: CustomPreset) = this()
     def this(preset: Preset) = this()
@@ -79,7 +79,7 @@ object mod {
       * In cases when the value of the attribute is an invalid JSON or can not be wrapped into a function, it will be compared as undefined.
       * @default []
       */
-    var compareAttributesAsJSON: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var compareAttributesAsJSON: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Sets what kind of respective attributes' content will be ignored during the comparison:
@@ -122,17 +122,17 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCompareAttributesAsJSON(value: js.Array[js.Any]): Self = StObject.set(x, "compareAttributesAsJSON", value.asInstanceOf[js.Any])
+      inline def setCompareAttributesAsJSON(value: js.Array[Any]): Self = StObject.set(x, "compareAttributesAsJSON", value.asInstanceOf[js.Any])
       
       inline def setCompareAttributesAsJSONUndefined: Self = StObject.set(x, "compareAttributesAsJSON", js.undefined)
       
-      inline def setCompareAttributesAsJSONVarargs(value: js.Any*): Self = StObject.set(x, "compareAttributesAsJSON", js.Array(value :_*))
+      inline def setCompareAttributesAsJSONVarargs(value: Any*): Self = StObject.set(x, "compareAttributesAsJSON", js.Array(value*))
       
       inline def setIgnoreAttributes(value: js.Array[String]): Self = StObject.set(x, "ignoreAttributes", value.asInstanceOf[js.Any])
       
       inline def setIgnoreAttributesUndefined: Self = StObject.set(x, "ignoreAttributes", js.undefined)
       
-      inline def setIgnoreAttributesVarargs(value: String*): Self = StObject.set(x, "ignoreAttributes", js.Array(value :_*))
+      inline def setIgnoreAttributesVarargs(value: String*): Self = StObject.set(x, "ignoreAttributes", js.Array(value*))
       
       inline def setIgnoreComments(value: Boolean): Self = StObject.set(x, "ignoreComments", value.asInstanceOf[js.Any])
       

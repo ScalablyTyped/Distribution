@@ -1,147 +1,203 @@
 package typings.globby
 
-import typings.fastGlob.mod.Options
+import typings.fastGlob.anon.PartialFileSystemAdapter
+import typings.fastGlob.mod.Entry
+import typings.fastGlob.typesMod.Pattern
 import typings.globby.anon.Extensions
-import typings.node.NodeJS.ReadableStream
+import typings.globby.anon.OptionsobjectModetrue
+import typings.node.nodeUrlMod.URL
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  	Find files and directories using glob patterns.
-  	Note that glob patterns can only contain forward-slashes, not backward-slashes, so if you want to construct a glob pattern from path components, you need to use `path.posix.join()` instead of `path.join()`.
-  	@param patterns - See the supported [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
-  	@param options - See the [`fast-glob` options](https://github.com/mrmlnc/fast-glob#options-3) in addition to the ones in this package.
-  	@returns The matching paths.
-  	@example
-  	```
-  	import globby = require('globby');
-  	(async () => {
-  		const paths = await globby(['*', '!cake']);
-  		console.log(paths);
-  		//=> ['unicorn', 'rainbow']
-  	})();
-  	```
-  	*/
-  inline def apply(patterns: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  inline def apply(patterns: String, options: GlobbyOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  inline def apply(patterns: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  inline def apply(patterns: js.Array[String], options: GlobbyOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  
   @JSImport("globby", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Note that you should avoid running the same tasks multiple times as they contain a file system cache. Instead, run this method each time to ensure file system changes are taken into consideration.
-  	@param patterns - See the supported [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
-  	@param options - See the [`fast-glob` options](https://github.com/mrmlnc/fast-glob#options-3) in addition to the ones in this package.
-  	@returns An object in the format `{pattern: string, options: object}`, which can be passed as arguments to [`fast-glob`](https://github.com/mrmlnc/fast-glob). This is useful for other globbing-related packages.
-  	*/
-  inline def generateGlobTasks(patterns: String): js.Array[GlobTask] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[GlobTask]]
-  inline def generateGlobTasks(patterns: String, options: GlobbyOptions): js.Array[GlobTask] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[GlobTask]]
-  inline def generateGlobTasks(patterns: js.Array[String]): js.Array[GlobTask] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[GlobTask]]
-  inline def generateGlobTasks(patterns: js.Array[String], options: GlobbyOptions): js.Array[GlobTask] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[GlobTask]]
+  inline def generateGlobTasks(patterns: String): js.Promise[js.Array[GlobTask]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GlobTask]]]
+  inline def generateGlobTasks(patterns: String, options: Options): js.Promise[js.Array[GlobTask]] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[GlobTask]]]
+  inline def generateGlobTasks(patterns: js.Array[String]): js.Promise[js.Array[GlobTask]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GlobTask]]]
+  inline def generateGlobTasks(patterns: js.Array[String], options: Options): js.Promise[js.Array[GlobTask]] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasks")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[GlobTask]]]
   
-  /**
-  	`.gitignore` files matched by the ignore config are not used for the resulting filter function.
-  	@returns A filter function indicating whether a given path is ignored via a `.gitignore` file.
-  	@example
-  	```
-  	import {gitignore} from 'globby';
-  	(async () => {
-  		const isIgnored = await gitignore();
-  		console.log(isIgnored('some/file'));
-  	})();
-  	```
-  	*/
-  inline def gitignore(): js.Promise[FilterFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("gitignore")().asInstanceOf[js.Promise[FilterFunction]]
-  inline def gitignore(options: GitignoreOptions): js.Promise[FilterFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("gitignore")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FilterFunction]]
-  @JSImport("globby", "gitignore")
-  @js.native
-  val gitignore_Fmod: Gitignore = js.native
+  inline def generateGlobTasksSync(patterns: String): js.Array[GlobTask] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasksSync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[GlobTask]]
+  inline def generateGlobTasksSync(patterns: String, options: Options): js.Array[GlobTask] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasksSync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[GlobTask]]
+  inline def generateGlobTasksSync(patterns: js.Array[String]): js.Array[GlobTask] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasksSync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[GlobTask]]
+  inline def generateGlobTasksSync(patterns: js.Array[String], options: Options): js.Array[GlobTask] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateGlobTasksSync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[GlobTask]]
   
-  /**
-  	Note that the options affect the results.
-  	This function is backed by [`fast-glob`](https://github.com/mrmlnc/fast-glob#isdynamicpatternpattern-options).
-  	@param patterns - See the supported [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
-  	@param options - See the [`fast-glob` options](https://github.com/mrmlnc/fast-glob#options-3).
-  	@returns Whether there are any special glob characters in the `patterns`.
-  	*/
-  inline def hasMagic(patterns: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(patterns.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def hasMagic(patterns: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def hasMagic(patterns: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(patterns.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def hasMagic(patterns: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def globby(patterns: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("globby")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def globby(patterns: String, options: OptionsobjectModetrue): js.Promise[js.Array[GlobEntry]] = (^.asInstanceOf[js.Dynamic].applyDynamic("globby")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[GlobEntry]]]
+  inline def globby(patterns: String, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("globby")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def globby(patterns: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("globby")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def globby(patterns: js.Array[String], options: OptionsobjectModetrue): js.Promise[js.Array[GlobEntry]] = (^.asInstanceOf[js.Dynamic].applyDynamic("globby")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[GlobEntry]]]
+  inline def globby(patterns: js.Array[String], options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("globby")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  /**
-  	Find files and directories using glob patterns.
-  	Note that glob patterns can only contain forward-slashes, not backward-slashes, so if you want to construct a glob pattern from path components, you need to use `path.posix.join()` instead of `path.join()`.
-  	@param patterns - See the supported [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
-  	@param options - See the [`fast-glob` options](https://github.com/mrmlnc/fast-glob#options-3) in addition to the ones in this package.
-  	@returns The stream of matching paths.
-  	@example
-  	```
-  	import globby = require('globby');
-  	(async () => {
-  		for await (const path of globby.stream('*.tmp')) {
-  			console.log(path);
-  		}
-  	})();
-  	```
-  	*/
-  inline def stream(patterns: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(patterns.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
-  inline def stream(patterns: String, options: GlobbyOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
-  inline def stream(patterns: js.Array[String]): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(patterns.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
-  inline def stream(patterns: js.Array[String], options: GlobbyOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def globbyStream(patterns: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+  inline def globbyStream(patterns: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def globbyStream(patterns: js.Array[String]): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
+  inline def globbyStream(patterns: js.Array[String], options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("globbyStream")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
   
-  /**
-  	Find files and directories using glob patterns.
-  	Note that glob patterns can only contain forward-slashes, not backward-slashes, so if you want to construct a glob pattern from path components, you need to use `path.posix.join()` instead of `path.join()`.
-  	@param patterns - See the supported [glob patterns](https://github.com/sindresorhus/globby#globbing-patterns).
-  	@param options - See the [`fast-glob` options](https://github.com/mrmlnc/fast-glob#options-3) in addition to the ones in this package.
-  	@returns The matching paths.
-  	*/
-  inline def sync(patterns: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def sync(patterns: String, options: GlobbyOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def sync(patterns: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def sync(patterns: js.Array[String], options: GlobbyOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def globbySync(patterns: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globbySync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def globbySync(patterns: String, options: OptionsobjectModetrue): js.Array[GlobEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("globbySync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[GlobEntry]]
+  inline def globbySync(patterns: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globbySync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def globbySync(patterns: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("globbySync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def globbySync(patterns: js.Array[String], options: OptionsobjectModetrue): js.Array[GlobEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("globbySync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[GlobEntry]]
+  inline def globbySync(patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("globbySync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  inline def isDynamicPattern(patterns: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicPattern")(patterns.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDynamicPattern(patterns: String, options: typings.globby.anon.FastGlobOptionsWithoutCwd): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicPattern")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isDynamicPattern(patterns: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicPattern")(patterns.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDynamicPattern(patterns: js.Array[String], options: typings.globby.anon.FastGlobOptionsWithoutCwd): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicPattern")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isGitIgnored(): js.Promise[GlobbyFilterFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("isGitIgnored")().asInstanceOf[js.Promise[GlobbyFilterFunction]]
+  inline def isGitIgnored(options: GitignoreOptions): js.Promise[GlobbyFilterFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("isGitIgnored")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GlobbyFilterFunction]]
+  
+  inline def isGitIgnoredSync(): GlobbyFilterFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("isGitIgnoredSync")().asInstanceOf[GlobbyFilterFunction]
+  inline def isGitIgnoredSync(options: GitignoreOptions): GlobbyFilterFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("isGitIgnoredSync")(options.asInstanceOf[js.Any]).asInstanceOf[GlobbyFilterFunction]
   
   type ExpandDirectoriesOption = Boolean | js.Array[String] | Extensions
   
-  type FilterFunction = js.Function1[/* path */ String, Boolean]
-  
-  @js.native
-  trait Gitignore extends StObject {
+  /* Inlined std.Omit<fast-glob.fast-glob.Options, 'cwd'> */
+  trait FastGlobOptionsWithoutCwd extends StObject {
     
-    /**
-    	`.gitignore` files matched by the ignore config are not used for the resulting filter function.
-    	@returns A filter function indicating whether a given path is ignored via a `.gitignore` file.
-    	@example
-    	```
-    	import {gitignore} from 'globby';
-    	(async () => {
-    		const isIgnored = await gitignore();
-    		console.log(isIgnored('some/file'));
-    	})();
-    	```
-    	*/
-    def apply(): js.Promise[FilterFunction] = js.native
-    def apply(options: GitignoreOptions): js.Promise[FilterFunction] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
     
-    /**
-    	@returns A filter function indicating whether a given path is ignored via a `.gitignore` file.
-    	*/
-    def sync(): FilterFunction = js.native
-    def sync(options: GitignoreOptions): FilterFunction = js.native
+    var baseNameMatch: js.UndefOr[Boolean] = js.undefined
+    
+    var braceExpansion: js.UndefOr[Boolean] = js.undefined
+    
+    var caseSensitiveMatch: js.UndefOr[Boolean] = js.undefined
+    
+    var concurrency: js.UndefOr[Double] = js.undefined
+    
+    var deep: js.UndefOr[Double] = js.undefined
+    
+    var dot: js.UndefOr[Boolean] = js.undefined
+    
+    var extglob: js.UndefOr[Boolean] = js.undefined
+    
+    var followSymbolicLinks: js.UndefOr[Boolean] = js.undefined
+    
+    var fs: js.UndefOr[PartialFileSystemAdapter] = js.undefined
+    
+    var globstar: js.UndefOr[Boolean] = js.undefined
+    
+    var ignore: js.UndefOr[js.Array[Pattern]] = js.undefined
+    
+    var markDirectories: js.UndefOr[Boolean] = js.undefined
+    
+    var objectMode: js.UndefOr[Boolean] = js.undefined
+    
+    var onlyDirectories: js.UndefOr[Boolean] = js.undefined
+    
+    var onlyFiles: js.UndefOr[Boolean] = js.undefined
+    
+    var stats: js.UndefOr[Boolean] = js.undefined
+    
+    var suppressErrors: js.UndefOr[Boolean] = js.undefined
+    
+    var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
+    
+    var unique: js.UndefOr[Boolean] = js.undefined
+  }
+  object FastGlobOptionsWithoutCwd {
+    
+    inline def apply(): FastGlobOptionsWithoutCwd = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FastGlobOptionsWithoutCwd]
+    }
+    
+    extension [Self <: FastGlobOptionsWithoutCwd](x: Self) {
+      
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      
+      inline def setBaseNameMatch(value: Boolean): Self = StObject.set(x, "baseNameMatch", value.asInstanceOf[js.Any])
+      
+      inline def setBaseNameMatchUndefined: Self = StObject.set(x, "baseNameMatch", js.undefined)
+      
+      inline def setBraceExpansion(value: Boolean): Self = StObject.set(x, "braceExpansion", value.asInstanceOf[js.Any])
+      
+      inline def setBraceExpansionUndefined: Self = StObject.set(x, "braceExpansion", js.undefined)
+      
+      inline def setCaseSensitiveMatch(value: Boolean): Self = StObject.set(x, "caseSensitiveMatch", value.asInstanceOf[js.Any])
+      
+      inline def setCaseSensitiveMatchUndefined: Self = StObject.set(x, "caseSensitiveMatch", js.undefined)
+      
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      
+      inline def setDeep(value: Double): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      
+      inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      
+      inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
+      
+      inline def setExtglob(value: Boolean): Self = StObject.set(x, "extglob", value.asInstanceOf[js.Any])
+      
+      inline def setExtglobUndefined: Self = StObject.set(x, "extglob", js.undefined)
+      
+      inline def setFollowSymbolicLinks(value: Boolean): Self = StObject.set(x, "followSymbolicLinks", value.asInstanceOf[js.Any])
+      
+      inline def setFollowSymbolicLinksUndefined: Self = StObject.set(x, "followSymbolicLinks", js.undefined)
+      
+      inline def setFs(value: PartialFileSystemAdapter): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      
+      inline def setGlobstar(value: Boolean): Self = StObject.set(x, "globstar", value.asInstanceOf[js.Any])
+      
+      inline def setGlobstarUndefined: Self = StObject.set(x, "globstar", js.undefined)
+      
+      inline def setIgnore(value: js.Array[Pattern]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      
+      inline def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value*))
+      
+      inline def setMarkDirectories(value: Boolean): Self = StObject.set(x, "markDirectories", value.asInstanceOf[js.Any])
+      
+      inline def setMarkDirectoriesUndefined: Self = StObject.set(x, "markDirectories", js.undefined)
+      
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      
+      inline def setOnlyDirectories(value: Boolean): Self = StObject.set(x, "onlyDirectories", value.asInstanceOf[js.Any])
+      
+      inline def setOnlyDirectoriesUndefined: Self = StObject.set(x, "onlyDirectories", js.undefined)
+      
+      inline def setOnlyFiles(value: Boolean): Self = StObject.set(x, "onlyFiles", value.asInstanceOf[js.Any])
+      
+      inline def setOnlyFilesUndefined: Self = StObject.set(x, "onlyFiles", js.undefined)
+      
+      inline def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      
+      inline def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
+      
+      inline def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
+      
+      inline def setThrowErrorOnBrokenSymbolicLink(value: Boolean): Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", value.asInstanceOf[js.Any])
+      
+      inline def setThrowErrorOnBrokenSymbolicLinkUndefined: Self = StObject.set(x, "throwErrorOnBrokenSymbolicLink", js.undefined)
+      
+      inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    }
   }
   
   trait GitignoreOptions extends StObject {
     
-    val cwd: js.UndefOr[String] = js.undefined
-    
-    val ignore: js.UndefOr[js.Array[String]] = js.undefined
+    val cwd: js.UndefOr[URL | String] = js.undefined
   }
   object GitignoreOptions {
     
@@ -152,88 +208,109 @@ object mod {
     
     extension [Self <: GitignoreOptions](x: Self) {
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-      
-      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
-      
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     }
   }
   
+  type GlobEntry = Entry
+  
   trait GlobTask extends StObject {
     
-    val options: GlobbyOptions
+    val options: Options
     
-    val pattern: String
+    val patterns: js.Array[String]
   }
   object GlobTask {
     
-    inline def apply(options: GlobbyOptions, pattern: String): GlobTask = {
-      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
+    inline def apply(options: Options, patterns: js.Array[String]): GlobTask = {
+      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobTask]
     }
     
     extension [Self <: GlobTask](x: Self) {
       
-      inline def setOptions(value: GlobbyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value*))
     }
   }
   
-  trait GlobbyOptions
+  type GlobbyFilterFunction = js.Function1[/* path */ URL | String, Boolean]
+  
+  trait Options
     extends StObject
-       with typings.fastGlob.settingsMod.Options {
+       with FastGlobOptionsWithoutCwd {
     
     /**
-    		If set to `true`, `globby` will automatically glob directories for you. If you define an `Array` it will only glob files that matches the patterns inside the `Array`. You can also define an `Object` with `files` and `extensions` like in the example below.
-    		Note that if you set this option to `false`, you won't get back matched directories unless you set `onlyFiles: false`.
-    		@default true
-    		@example
-    		```
-    		import globby = require('globby');
-    		(async () => {
-    			const paths = await globby('images', {
-    				expandDirectories: {
-    					files: ['cat', 'unicorn', '*.jpg'],
-    					extensions: ['png']
-    				}
-    			});
-    			console.log(paths);
-    			//=> ['cat.png', 'unicorn.png', 'cow.jpg', 'rainbow.jpg']
-    		})();
-    		```
-    		*/
+    	The current working directory in which to search.
+    	@default process.cwd()
+    	*/
+    val cwd: js.UndefOr[URL | String] = js.undefined
+    
+    /**
+    	If set to `true`, `globby` will automatically glob directories for you. If you define an `Array` it will only glob files that matches the patterns inside the `Array`. You can also define an `Object` with `files` and `extensions` like in the example below.
+    	Note that if you set this option to `false`, you won't get back matched directories unless you set `onlyFiles: false`.
+    	@default true
+    	@example
+    	```
+    	import {globby} from 'globby';
+    	const paths = await globby('images', {
+    		expandDirectories: {
+    			files: ['cat', 'unicorn', '*.jpg'],
+    			extensions: ['png']
+    		}
+    	});
+    	console.log(paths);
+    	//=> ['cat.png', 'unicorn.png', 'cow.jpg', 'rainbow.jpg']
+    	```
+    	*/
     val expandDirectories: js.UndefOr[ExpandDirectoriesOption] = js.undefined
     
     /**
-    		Respect ignore patterns in `.gitignore` files that apply to the globbed files.
-    		@default false
-    		*/
+    	Respect ignore patterns in `.gitignore` files that apply to the globbed files.
+    	@default false
+    	*/
     val gitignore: js.UndefOr[Boolean] = js.undefined
-  }
-  object GlobbyOptions {
     
-    inline def apply(): GlobbyOptions = {
+    /**
+    	Glob patterns to look for ignore files, which are then used to ignore globbed files.
+    	This is a more generic form of the `gitignore` option, allowing you to find ignore files with a [compatible syntax](http://git-scm.com/docs/gitignore). For instance, this works with Babel's `.babelignore`, Prettier's `.prettierignore`, or ESLint's `.eslintignore` files.
+    	@default undefined
+    	*/
+    val ignoreFiles: js.UndefOr[String | js.Array[String]] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GlobbyOptions]
+      __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: GlobbyOptions](x: Self) {
+    extension [Self <: Options](x: Self) {
+      
+      inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
       inline def setExpandDirectories(value: ExpandDirectoriesOption): Self = StObject.set(x, "expandDirectories", value.asInstanceOf[js.Any])
       
       inline def setExpandDirectoriesUndefined: Self = StObject.set(x, "expandDirectories", js.undefined)
       
-      inline def setExpandDirectoriesVarargs(value: String*): Self = StObject.set(x, "expandDirectories", js.Array(value :_*))
+      inline def setExpandDirectoriesVarargs(value: String*): Self = StObject.set(x, "expandDirectories", js.Array(value*))
       
       inline def setGitignore(value: Boolean): Self = StObject.set(x, "gitignore", value.asInstanceOf[js.Any])
       
       inline def setGitignoreUndefined: Self = StObject.set(x, "gitignore", js.undefined)
+      
+      inline def setIgnoreFiles(value: String | js.Array[String]): Self = StObject.set(x, "ignoreFiles", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreFilesUndefined: Self = StObject.set(x, "ignoreFiles", js.undefined)
+      
+      inline def setIgnoreFilesVarargs(value: String*): Self = StObject.set(x, "ignoreFiles", js.Array(value*))
     }
   }
 }

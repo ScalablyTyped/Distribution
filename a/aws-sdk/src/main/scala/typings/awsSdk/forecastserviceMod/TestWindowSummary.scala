@@ -19,12 +19,12 @@ trait TestWindowSummary extends StObject {
   /**
     * The time at which the test ended.
     */
-  var TestWindowEnd: js.UndefOr[Timestamp] = js.undefined
+  var TestWindowEnd: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time at which the test began.
     */
-  var TestWindowStart: js.UndefOr[Timestamp] = js.undefined
+  var TestWindowStart: js.UndefOr[js.Date] = js.undefined
 }
 object TestWindowSummary {
   
@@ -43,11 +43,11 @@ object TestWindowSummary {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setTestWindowEnd(value: Timestamp): Self = StObject.set(x, "TestWindowEnd", value.asInstanceOf[js.Any])
+    inline def setTestWindowEnd(value: js.Date): Self = StObject.set(x, "TestWindowEnd", value.asInstanceOf[js.Any])
     
     inline def setTestWindowEndUndefined: Self = StObject.set(x, "TestWindowEnd", js.undefined)
     
-    inline def setTestWindowStart(value: Timestamp): Self = StObject.set(x, "TestWindowStart", value.asInstanceOf[js.Any])
+    inline def setTestWindowStart(value: js.Date): Self = StObject.set(x, "TestWindowStart", value.asInstanceOf[js.Any])
     
     inline def setTestWindowStartUndefined: Self = StObject.set(x, "TestWindowStart", js.undefined)
   }

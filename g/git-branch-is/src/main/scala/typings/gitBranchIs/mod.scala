@@ -1,20 +1,34 @@
 package typings.gitBranchIs
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(branchNameOrTest: BranchNameOrTest): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def apply(branchNameOrTest: BranchNameOrTest): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   inline def apply(branchNameOrTest: BranchNameOrTest, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(branchNameOrTest: BranchNameOrTest, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(branchNameOrTest: BranchNameOrTest, options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(branchNameOrTest: BranchNameOrTest, options: GitBranchIsOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(branchNameOrTest: BranchNameOrTest, options: GitBranchIsOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("git-branch-is", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def getBranch(options: GitBranchIsOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBranch")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  /**
+    * Gets the name of the current (i.e. checked out) branch of a git repository.
+    *
+    * @param options Options.
+    * @param callback Callback function called
+    * with the current branch name, empty string if not on a branch, or
+    * <code>Error</code> if there was an error determining the branch name.
+    * @returns If <code>callback</code> is not given, a
+    * <code>Promise</code> with the current branch name, empty string if not on a
+    * branch, or <code>Error</code> if there was an error determining the branch
+    * name.
+    */
+  inline def getBranch(options: GitBranchIsOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBranch")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Expected name of current branch
@@ -25,19 +39,19 @@ object mod {
   /**
     * test function to apply to the branch name
     */
-  type BranchNameTest = js.Function1[/* branchName */ String, Boolean | js.Promise[Boolean]]
+  type BranchNameTest = js.Function1[/* branchName */ String, Boolean]
   
   /**
     * function called with the return value of <code>branchNameOrTest</code> if it is a function,
     * or the result of identity checking <code>branchNameOrTest</code> to the
     * current branch name
     */
-  type Callback = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[Boolean], Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* result */ String, Unit]
   
   /**
     * Options for {@link gitBranchIs}.
     */
-  trait Options extends StObject {
+  trait GitBranchIsOptions extends StObject {
     
     /**
       * Current working directory where the branch name is
@@ -66,14 +80,14 @@ object mod {
       */
     var gitPath: js.UndefOr[String] = js.undefined
   }
-  object Options {
+  object GitBranchIsOptions {
     
-    inline def apply(): Options = {
+    inline def apply(): GitBranchIsOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[GitBranchIsOptions]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: GitBranchIsOptions](x: Self) {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -83,7 +97,7 @@ object mod {
       
       inline def setGitArgsUndefined: Self = StObject.set(x, "gitArgs", js.undefined)
       
-      inline def setGitArgsVarargs(value: String*): Self = StObject.set(x, "gitArgs", js.Array(value :_*))
+      inline def setGitArgsVarargs(value: String*): Self = StObject.set(x, "gitArgs", js.Array(value*))
       
       inline def setGitDir(value: String): Self = StObject.set(x, "gitDir", value.asInstanceOf[js.Any])
       

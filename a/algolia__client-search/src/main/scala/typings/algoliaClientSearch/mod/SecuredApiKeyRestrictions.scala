@@ -36,7 +36,7 @@ object SecuredApiKeyRestrictions {
     
     inline def setRestrictIndicesUndefined: Self = StObject.set(x, "restrictIndices", js.undefined)
     
-    inline def setRestrictIndicesVarargs(value: String*): Self = StObject.set(x, "restrictIndices", js.Array(value :_*))
+    inline def setRestrictIndicesVarargs(value: String*): Self = StObject.set(x, "restrictIndices", js.Array(value*))
     
     inline def setRestrictSources(value: String): Self = StObject.set(x, "restrictSources", value.asInstanceOf[js.Any])
     

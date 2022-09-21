@@ -1,7 +1,7 @@
 
 # Scala.js typings for park-miller
 
-Typings are for version 1.1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Park-Miller pseudorandom number generator (PRNG)
@@ -11,9 +11,9 @@ Park-Miller pseudorandom number generator (PRNG)
 | Full name          | park-miller |
 | Keywords           | park-miller, park, miller, pseudorandom, number, generator, algorithm, random, lcg, congruential, integer, int, float, boolean, seed, seeded, prng, rng, lehmer |
 | # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 54500 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8733.666666666666 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/park-miller#readme)

@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait SendSocketMessageOption extends StObject {
   var complete: js.UndefOr[SendSocketMessageCompleteCallback] = js.undefined
   
   /** 需要发送的内容 */
-  var data: String | ArrayBuffer
+  var data: String | js.typedarray.ArrayBuffer
   
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[SendSocketMessageFailCallback] = js.undefined
@@ -21,7 +20,7 @@ trait SendSocketMessageOption extends StObject {
 }
 object SendSocketMessageOption {
   
-  inline def apply(data: String | ArrayBuffer): SendSocketMessageOption = {
+  inline def apply(data: String | js.typedarray.ArrayBuffer): SendSocketMessageOption = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendSocketMessageOption]
   }
@@ -32,7 +31,7 @@ object SendSocketMessageOption {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     

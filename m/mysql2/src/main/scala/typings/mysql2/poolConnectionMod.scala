@@ -8,7 +8,7 @@ object poolConnectionMod {
   
   @JSImport("mysql2/typings/mysql/lib/PoolConnection", JSImport.Namespace)
   @js.native
-  class ^ () extends PoolConnection
+  open class ^ () extends PoolConnection
   
   @js.native
   trait PoolConnection

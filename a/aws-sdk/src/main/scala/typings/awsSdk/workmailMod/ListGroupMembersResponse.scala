@@ -29,7 +29,7 @@ object ListGroupMembersResponse {
     
     inline def setMembersUndefined: Self = StObject.set(x, "Members", js.undefined)
     
-    inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "Members", js.Array(value :_*))
+    inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "Members", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

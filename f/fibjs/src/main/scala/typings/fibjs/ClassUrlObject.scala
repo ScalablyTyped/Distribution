@@ -178,7 +178,7 @@ trait ClassUrlObject
     *
     * @type Value
     */
-  var query: js.Any = js.native
+  var query: Any = js.native
   
   /**
     *

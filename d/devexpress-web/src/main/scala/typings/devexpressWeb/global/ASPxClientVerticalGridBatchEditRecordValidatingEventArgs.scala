@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridBatchEditRecordValidatingEventArgs")
 @js.native
-class ASPxClientVerticalGridBatchEditRecordValidatingEventArgs protected ()
+open class ASPxClientVerticalGridBatchEditRecordValidatingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridBatchEditRecordValidatingEventArgs {
   /**
@@ -17,13 +17,13 @@ class ASPxClientVerticalGridBatchEditRecordValidatingEventArgs protected ()
     * @param visibleIndex An integer value that specifies the processed record's visible index.
     * @param validationInfo An object containing validation information.
     */
-  def this(visibleIndex: Double, validationInfo: js.Any) = this()
+  def this(visibleIndex: Double, validationInfo: Any) = this()
   
   /**
     * Provides validation information on the record currently being validated.
     */
   /* CompleteClass */
-  var validationInfo: js.Any = js.native
+  var validationInfo: Any = js.native
   
   /**
     * Gets the processed record's visible index.

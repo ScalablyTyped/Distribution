@@ -22,6 +22,6 @@ object BatchDeleteImportDataRequest {
     
     inline def setImportTaskIds(value: ToDeleteIdentifierList): Self = StObject.set(x, "importTaskIds", value.asInstanceOf[js.Any])
     
-    inline def setImportTaskIdsVarargs(value: ImportTaskIdentifier*): Self = StObject.set(x, "importTaskIds", js.Array(value :_*))
+    inline def setImportTaskIdsVarargs(value: ImportTaskIdentifier*): Self = StObject.set(x, "importTaskIds", js.Array(value*))
   }
 }

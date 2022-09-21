@@ -15,26 +15,26 @@ object mod {
   
   @JSImport("conductor-animate", "Animated")
   @js.native
-  class Animated protected ()
-    extends PureComponent[AnimatedProps, js.Object, js.Any] {
+  open class Animated protected ()
+    extends PureComponent[AnimatedProps, js.Object, Any] {
     def this(props: AnimatedProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: AnimatedProps, context: js.Any) = this()
+    def this(props: AnimatedProps, context: Any) = this()
   }
   
   @JSImport("conductor-animate", "Conductor")
   @js.native
-  class Conductor protected ()
-    extends PureComponent[ConductorProps, js.Object, js.Any] {
+  open class Conductor protected ()
+    extends PureComponent[ConductorProps, js.Object, Any] {
     def this(props: ConductorProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ConductorProps, context: js.Any) = this()
+    def this(props: ConductorProps, context: Any) = this()
   }
   
   trait AnimatedProps extends StObject {
@@ -68,7 +68,7 @@ object mod {
     }
   }
   
-  type Animations = StringDictionary[(ComponentClass[js.Any, ComponentState]) | FunctionComponent[js.Any]]
+  type Animations = StringDictionary[(ComponentClass[Any, ComponentState]) | FunctionComponent[Any]]
   
   trait ConductorProps extends StObject {
     

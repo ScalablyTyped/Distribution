@@ -2,6 +2,7 @@ package typings.reactStackGrid
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactStackGrid.anon.Appear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +12,7 @@ object mod {
   
   @JSImport("react-stack-grid", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[StackGridProps, js.Any, js.Any]
+  open class default () extends Component[StackGridProps, Any, Any]
   
   @JSImport("react-stack-grid", "easings")
   @js.native
@@ -22,7 +22,24 @@ object mod {
   @js.native
   val transitions: transitionsProps = js.native
   
-  type StackGrid = Component[StackGridProps, js.Any, js.Any]
+  trait Grid extends StObject {
+    
+    def updateLayout(): Unit
+  }
+  object Grid {
+    
+    inline def apply(updateLayout: () => Unit): Grid = {
+      val __obj = js.Dynamic.literal(updateLayout = js.Any.fromFunction0(updateLayout))
+      __obj.asInstanceOf[Grid]
+    }
+    
+    extension [Self <: Grid](x: Self) {
+      
+      inline def setUpdateLayout(value: () => Unit): Self = StObject.set(x, "updateLayout", js.Any.fromFunction0(value))
+    }
+  }
+  
+  type StackGrid = Component[StackGridProps, Any, Any]
   
   trait StackGridProps extends StObject {
     
@@ -31,6 +48,8 @@ object mod {
     var appearDelay: js.UndefOr[Double] = js.undefined
     
     var appeared: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -48,7 +67,7 @@ object mod {
     
     var entered: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var gridRef: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var gridRef: js.UndefOr[js.Function1[/* grid */ Grid, Unit]] = js.undefined
     
     var gutterHeight: js.UndefOr[Double] = js.undefined
     
@@ -95,6 +114,10 @@ object mod {
       
       inline def setAppearedUndefined: Self = StObject.set(x, "appeared", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -125,7 +148,7 @@ object mod {
       
       inline def setEnteredUndefined: Self = StObject.set(x, "entered", js.undefined)
       
-      inline def setGridRef(value: () => Unit): Self = StObject.set(x, "gridRef", js.Any.fromFunction0(value))
+      inline def setGridRef(value: /* grid */ Grid => Unit): Self = StObject.set(x, "gridRef", js.Any.fromFunction1(value))
       
       inline def setGridRefUndefined: Self = StObject.set(x, "gridRef", js.undefined)
       

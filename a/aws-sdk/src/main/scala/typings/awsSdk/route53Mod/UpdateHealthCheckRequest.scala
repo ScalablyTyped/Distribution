@@ -57,7 +57,7 @@ trait UpdateHealthCheckRequest extends StObject {
   var IPAddress: js.UndefOr[typings.awsSdk.route53Mod.IPAddress] = js.undefined
   
   /**
-    * When CloudWatch has insufficient data about the metric to determine the alarm state, the status that you want Amazon Route 53 to assign to the health check:    Healthy: Route 53 considers the health check to be healthy.    Unhealthy: Route 53 considers the health check to be unhealthy.    LastKnownStatus: Route 53 uses the status of the health check from the last time CloudWatch had sufficient data to determine the alarm state. For new health checks that have no last known status, the default status for the health check is healthy.  
+    * When CloudWatch has insufficient data about the metric to determine the alarm state, the status that you want Amazon Route 53 to assign to the health check:    Healthy: Route 53 considers the health check to be healthy.    Unhealthy: Route 53 considers the health check to be unhealthy.    LastKnownStatus: By default, Route 53 uses the status of the health check from the last time CloudWatch had sufficient data to determine the alarm state. For new health checks that have no last known status, the status for the health check is healthy.  
     */
   var InsufficientDataHealthStatus: js.UndefOr[typings.awsSdk.route53Mod.InsufficientDataHealthStatus] = js.undefined
   
@@ -108,7 +108,7 @@ object UpdateHealthCheckRequest {
     
     inline def setChildHealthChecksUndefined: Self = StObject.set(x, "ChildHealthChecks", js.undefined)
     
-    inline def setChildHealthChecksVarargs(value: HealthCheckId*): Self = StObject.set(x, "ChildHealthChecks", js.Array(value :_*))
+    inline def setChildHealthChecksVarargs(value: HealthCheckId*): Self = StObject.set(x, "ChildHealthChecks", js.Array(value*))
     
     inline def setDisabled(value: Disabled): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
@@ -156,13 +156,13 @@ object UpdateHealthCheckRequest {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
     
-    inline def setRegionsVarargs(value: HealthCheckRegion*): Self = StObject.set(x, "Regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: HealthCheckRegion*): Self = StObject.set(x, "Regions", js.Array(value*))
     
     inline def setResetElements(value: ResettableElementNameList): Self = StObject.set(x, "ResetElements", value.asInstanceOf[js.Any])
     
     inline def setResetElementsUndefined: Self = StObject.set(x, "ResetElements", js.undefined)
     
-    inline def setResetElementsVarargs(value: ResettableElementName*): Self = StObject.set(x, "ResetElements", js.Array(value :_*))
+    inline def setResetElementsVarargs(value: ResettableElementName*): Self = StObject.set(x, "ResetElements", js.Array(value*))
     
     inline def setResourcePath(value: ResourcePath): Self = StObject.set(x, "ResourcePath", value.asInstanceOf[js.Any])
     

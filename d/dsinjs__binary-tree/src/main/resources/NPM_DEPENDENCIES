@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@dsinjs/binary-tree" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@dsinjs/binary-tree" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

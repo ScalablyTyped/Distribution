@@ -198,13 +198,13 @@ object anon {
       
       inline def setBornUndefined: Self = StObject.set(x, "born", js.undefined)
       
-      inline def setBornVarargs(value: Double*): Self = StObject.set(x, "born", js.Array(value :_*))
+      inline def setBornVarargs(value: Double*): Self = StObject.set(x, "born", js.Array(value*))
       
       inline def setSurvive(value: js.Array[Double]): Self = StObject.set(x, "survive", value.asInstanceOf[js.Any])
       
       inline def setSurviveUndefined: Self = StObject.set(x, "survive", js.undefined)
       
-      inline def setSurviveVarargs(value: Double*): Self = StObject.set(x, "survive", js.Array(value :_*))
+      inline def setSurviveVarargs(value: Double*): Self = StObject.set(x, "survive", js.Array(value*))
       
       inline def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
       

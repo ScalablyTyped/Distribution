@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FresnelParameters extends StObject {
   
-  /* private */ var _isEnabled: js.Any = js.native
+  /* private */ var _isEnabled: Any = js.native
   
   /**
     * Define bias applied to computed fresnel term
@@ -44,7 +44,7 @@ trait FresnelParameters extends StObject {
   
   /**
     * Serializes the current fresnel parameters to a JSON representation.
-    * @return the JSON serialization
+    * @returns the JSON serialization
     */
   def serialize(): IFresnelParametersSerialized = js.native
 }

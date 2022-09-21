@@ -18,5 +18,5 @@ object warnWarnMod {
   
   type ISettingsMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
-    */ typings.uifabricUtilities.uifabricUtilitiesStrings.ISettingsMap & TopLevel[js.Any]
+    */ typings.uifabricUtilities.uifabricUtilitiesStrings.ISettingsMap & TopLevel[Any]
 }

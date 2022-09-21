@@ -14,9 +14,9 @@ trait TextStyle extends StObject {
   
   var decorationColor: js.UndefOr[InputColor] = js.undefined
   
-  var decorationThickness: js.UndefOr[Double] = js.undefined
+  var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
   
-  var decrationStyle: js.UndefOr[DecorationStyle] = js.undefined
+  var decorationThickness: js.UndefOr[Double] = js.undefined
   
   var fontFamilies: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -26,7 +26,11 @@ trait TextStyle extends StObject {
   
   var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
+  var fontVariations: js.UndefOr[js.Array[TextFontVariations]] = js.undefined
+  
   var foregroundColor: js.UndefOr[InputColor] = js.undefined
+  
+  var halfLeading: js.UndefOr[Boolean] = js.undefined
   
   var heightMultiplier: js.UndefOr[Double] = js.undefined
   
@@ -53,13 +57,13 @@ object TextStyle {
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+    inline def setBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
     inline def setColor(value: InputColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setDecoration(value: Double): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
     
@@ -67,7 +71,11 @@ object TextStyle {
     
     inline def setDecorationColorUndefined: Self = StObject.set(x, "decorationColor", js.undefined)
     
-    inline def setDecorationColorVarargs(value: Double*): Self = StObject.set(x, "decorationColor", js.Array(value :_*))
+    inline def setDecorationColorVarargs(value: Double*): Self = StObject.set(x, "decorationColor", js.Array(value*))
+    
+    inline def setDecorationStyle(value: DecorationStyle): Self = StObject.set(x, "decorationStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDecorationStyleUndefined: Self = StObject.set(x, "decorationStyle", js.undefined)
     
     inline def setDecorationThickness(value: Double): Self = StObject.set(x, "decorationThickness", value.asInstanceOf[js.Any])
     
@@ -75,21 +83,17 @@ object TextStyle {
     
     inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
     
-    inline def setDecrationStyle(value: DecorationStyle): Self = StObject.set(x, "decrationStyle", value.asInstanceOf[js.Any])
-    
-    inline def setDecrationStyleUndefined: Self = StObject.set(x, "decrationStyle", js.undefined)
-    
     inline def setFontFamilies(value: js.Array[String]): Self = StObject.set(x, "fontFamilies", value.asInstanceOf[js.Any])
     
     inline def setFontFamiliesUndefined: Self = StObject.set(x, "fontFamilies", js.undefined)
     
-    inline def setFontFamiliesVarargs(value: String*): Self = StObject.set(x, "fontFamilies", js.Array(value :_*))
+    inline def setFontFamiliesVarargs(value: String*): Self = StObject.set(x, "fontFamilies", js.Array(value*))
     
     inline def setFontFeatures(value: js.Array[TextFontFeatures]): Self = StObject.set(x, "fontFeatures", value.asInstanceOf[js.Any])
     
     inline def setFontFeaturesUndefined: Self = StObject.set(x, "fontFeatures", js.undefined)
     
-    inline def setFontFeaturesVarargs(value: TextFontFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value :_*))
+    inline def setFontFeaturesVarargs(value: TextFontFeatures*): Self = StObject.set(x, "fontFeatures", js.Array(value*))
     
     inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
@@ -99,11 +103,21 @@ object TextStyle {
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
+    inline def setFontVariations(value: js.Array[TextFontVariations]): Self = StObject.set(x, "fontVariations", value.asInstanceOf[js.Any])
+    
+    inline def setFontVariationsUndefined: Self = StObject.set(x, "fontVariations", js.undefined)
+    
+    inline def setFontVariationsVarargs(value: TextFontVariations*): Self = StObject.set(x, "fontVariations", js.Array(value*))
+    
     inline def setForegroundColor(value: InputColor): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
     inline def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
     
-    inline def setForegroundColorVarargs(value: Double*): Self = StObject.set(x, "foregroundColor", js.Array(value :_*))
+    inline def setForegroundColorVarargs(value: Double*): Self = StObject.set(x, "foregroundColor", js.Array(value*))
+    
+    inline def setHalfLeading(value: Boolean): Self = StObject.set(x, "halfLeading", value.asInstanceOf[js.Any])
+    
+    inline def setHalfLeadingUndefined: Self = StObject.set(x, "halfLeading", js.undefined)
     
     inline def setHeightMultiplier(value: Double): Self = StObject.set(x, "heightMultiplier", value.asInstanceOf[js.Any])
     
@@ -121,7 +135,7 @@ object TextStyle {
     
     inline def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
-    inline def setShadowsVarargs(value: TextShadow*): Self = StObject.set(x, "shadows", js.Array(value :_*))
+    inline def setShadowsVarargs(value: TextShadow*): Self = StObject.set(x, "shadows", js.Array(value*))
     
     inline def setTextBaseline(value: TextBaseline): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
     

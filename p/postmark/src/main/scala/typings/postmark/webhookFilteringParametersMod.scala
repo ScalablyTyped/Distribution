@@ -8,7 +8,7 @@ object webhookFilteringParametersMod {
   
   @JSImport("postmark/dist/client/models/webhooks/WebhookFilteringParameters", "WebhookFilteringParameters")
   @js.native
-  class WebhookFilteringParameters protected () extends StObject {
+  open class WebhookFilteringParameters protected () extends StObject {
     def this(messageStream: String) = this()
     
     var messageStream: js.UndefOr[String] = js.native

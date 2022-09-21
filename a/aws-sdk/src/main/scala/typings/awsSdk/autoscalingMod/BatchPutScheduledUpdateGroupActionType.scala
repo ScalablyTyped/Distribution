@@ -9,7 +9,7 @@ trait BatchPutScheduledUpdateGroupActionType extends StObject {
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
     * One or more scheduled actions. The maximum number allowed is 50.
@@ -19,7 +19,7 @@ trait BatchPutScheduledUpdateGroupActionType extends StObject {
 object BatchPutScheduledUpdateGroupActionType {
   
   inline def apply(
-    AutoScalingGroupName: ResourceName,
+    AutoScalingGroupName: XmlStringMaxLen255,
     ScheduledUpdateGroupActions: ScheduledUpdateGroupActionRequests
   ): BatchPutScheduledUpdateGroupActionType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], ScheduledUpdateGroupActions = ScheduledUpdateGroupActions.asInstanceOf[js.Any])
@@ -28,10 +28,10 @@ object BatchPutScheduledUpdateGroupActionType {
   
   extension [Self <: BatchPutScheduledUpdateGroupActionType](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setScheduledUpdateGroupActions(value: ScheduledUpdateGroupActionRequests): Self = StObject.set(x, "ScheduledUpdateGroupActions", value.asInstanceOf[js.Any])
     
-    inline def setScheduledUpdateGroupActionsVarargs(value: ScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "ScheduledUpdateGroupActions", js.Array(value :_*))
+    inline def setScheduledUpdateGroupActionsVarargs(value: ScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "ScheduledUpdateGroupActions", js.Array(value*))
   }
 }

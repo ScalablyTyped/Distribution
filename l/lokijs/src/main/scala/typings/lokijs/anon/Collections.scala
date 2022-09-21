@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Collections extends StObject {
   
-  var collections: js.Array[Collection[js.Any]]
+  var collections: js.Array[Collection[Any]]
   
   var databaseVersion: Double
   
@@ -17,16 +17,16 @@ trait Collections extends StObject {
 }
 object Collections {
   
-  inline def apply(collections: js.Array[Collection[js.Any]], databaseVersion: Double, throttledSaves: Boolean): Collections = {
+  inline def apply(collections: js.Array[Collection[Any]], databaseVersion: Double, throttledSaves: Boolean): Collections = {
     val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any], databaseVersion = databaseVersion.asInstanceOf[js.Any], throttledSaves = throttledSaves.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collections]
   }
   
   extension [Self <: Collections](x: Self) {
     
-    inline def setCollections(value: js.Array[Collection[js.Any]]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+    inline def setCollections(value: js.Array[Collection[Any]]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
-    inline def setCollectionsVarargs(value: Collection[js.Any]*): Self = StObject.set(x, "collections", js.Array(value :_*))
+    inline def setCollectionsVarargs(value: Collection[Any]*): Self = StObject.set(x, "collections", js.Array(value*))
     
     inline def setDatabaseVersion(value: Double): Self = StObject.set(x, "databaseVersion", value.asInstanceOf[js.Any])
     

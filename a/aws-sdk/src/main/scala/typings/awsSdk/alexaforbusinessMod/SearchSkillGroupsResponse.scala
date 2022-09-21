@@ -38,7 +38,7 @@ object SearchSkillGroupsResponse {
     
     inline def setSkillGroupsUndefined: Self = StObject.set(x, "SkillGroups", js.undefined)
     
-    inline def setSkillGroupsVarargs(value: SkillGroupData*): Self = StObject.set(x, "SkillGroups", js.Array(value :_*))
+    inline def setSkillGroupsVarargs(value: SkillGroupData*): Self = StObject.set(x, "SkillGroups", js.Array(value*))
     
     inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     

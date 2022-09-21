@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLMarqueeElement")
 @js.native
-/* private */ class HTMLMarqueeElement ()
+/* private */ open class HTMLMarqueeElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLMarqueeElement

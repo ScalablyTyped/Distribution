@@ -4,33 +4,42 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * NodePoolAutoscaling contains information required by cluster autoscaler to
-  * adjust the size of the node pool to the current cluster usage.
-  */
 trait SchemaNodePoolAutoscaling extends StObject {
   
   /**
     * Can this node pool be deleted automatically.
     */
-  var autoprovisioned: js.UndefOr[Boolean] = js.undefined
+  var autoprovisioned: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Is autoscaling enabled for this node pool.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Maximum number of nodes in the NodePool. Must be &gt;= min_node_count.
-    * There has to enough quota to scale up the cluster.
+    * Location policy used when scaling up a nodepool.
     */
-  var maxNodeCount: js.UndefOr[Double] = js.undefined
+  var locationPolicy: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Minimum number of nodes in the NodePool. Must be &gt;= 1 and &lt;=
-    * max_node_count.
+    * Maximum number of nodes for one location in the NodePool. Must be \>= min_node_count. There has to be enough quota to scale up the cluster.
     */
-  var minNodeCount: js.UndefOr[Double] = js.undefined
+  var maxNodeCount: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * Minimum number of nodes for one location in the NodePool. Must be \>= 1 and <= max_node_count.
+    */
+  var minNodeCount: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * Maximum number of nodes in the node pool. Must be greater than total_min_node_count. There has to be enough quota to scale up the cluster. The total_*_node_count fields are mutually exclusive with the *_node_count fields.
+    */
+  var totalMaxNodeCount: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * Minimum number of nodes in the node pool. Must be greater than 1 less than total_max_node_count. The total_*_node_count fields are mutually exclusive with the *_node_count fields.
+    */
+  var totalMinNodeCount: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaNodePoolAutoscaling {
   
@@ -43,18 +52,44 @@ object SchemaNodePoolAutoscaling {
     
     inline def setAutoprovisioned(value: Boolean): Self = StObject.set(x, "autoprovisioned", value.asInstanceOf[js.Any])
     
+    inline def setAutoprovisionedNull: Self = StObject.set(x, "autoprovisioned", null)
+    
     inline def setAutoprovisionedUndefined: Self = StObject.set(x, "autoprovisioned", js.undefined)
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
+    inline def setEnabledNull: Self = StObject.set(x, "enabled", null)
+    
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
+    inline def setLocationPolicy(value: String): Self = StObject.set(x, "locationPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setLocationPolicyNull: Self = StObject.set(x, "locationPolicy", null)
+    
+    inline def setLocationPolicyUndefined: Self = StObject.set(x, "locationPolicy", js.undefined)
+    
     inline def setMaxNodeCount(value: Double): Self = StObject.set(x, "maxNodeCount", value.asInstanceOf[js.Any])
+    
+    inline def setMaxNodeCountNull: Self = StObject.set(x, "maxNodeCount", null)
     
     inline def setMaxNodeCountUndefined: Self = StObject.set(x, "maxNodeCount", js.undefined)
     
     inline def setMinNodeCount(value: Double): Self = StObject.set(x, "minNodeCount", value.asInstanceOf[js.Any])
     
+    inline def setMinNodeCountNull: Self = StObject.set(x, "minNodeCount", null)
+    
     inline def setMinNodeCountUndefined: Self = StObject.set(x, "minNodeCount", js.undefined)
+    
+    inline def setTotalMaxNodeCount(value: Double): Self = StObject.set(x, "totalMaxNodeCount", value.asInstanceOf[js.Any])
+    
+    inline def setTotalMaxNodeCountNull: Self = StObject.set(x, "totalMaxNodeCount", null)
+    
+    inline def setTotalMaxNodeCountUndefined: Self = StObject.set(x, "totalMaxNodeCount", js.undefined)
+    
+    inline def setTotalMinNodeCount(value: Double): Self = StObject.set(x, "totalMinNodeCount", value.asInstanceOf[js.Any])
+    
+    inline def setTotalMinNodeCountNull: Self = StObject.set(x, "totalMinNodeCount", null)
+    
+    inline def setTotalMinNodeCountUndefined: Self = StObject.set(x, "totalMinNodeCount", js.undefined)
   }
 }

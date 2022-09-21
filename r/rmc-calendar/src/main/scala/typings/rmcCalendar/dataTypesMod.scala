@@ -2,7 +2,6 @@ package typings.rmcCalendar
 
 import typings.react.mod.ReactNode
 import typings.rmcCalendar.singleMonthMod.default
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -116,9 +115,9 @@ object dataTypesMod {
     trait ExtraData extends StObject {
       
       /** (web only) 附加cell样式 className */
-      var cellCls: js.UndefOr[js.Any] = js.undefined
+      var cellCls: js.UndefOr[Any] = js.undefined
       
-      var cellRender: js.UndefOr[js.Function1[/* date */ Date, ReactNode]] = js.undefined
+      var cellRender: js.UndefOr[js.Function1[/* date */ js.Date, ReactNode]] = js.undefined
       
       /** 是否禁止选择 */
       var disable: js.UndefOr[Boolean] = js.undefined
@@ -135,11 +134,11 @@ object dataTypesMod {
       
       extension [Self <: ExtraData](x: Self) {
         
-        inline def setCellCls(value: js.Any): Self = StObject.set(x, "cellCls", value.asInstanceOf[js.Any])
+        inline def setCellCls(value: Any): Self = StObject.set(x, "cellCls", value.asInstanceOf[js.Any])
         
         inline def setCellClsUndefined: Self = StObject.set(x, "cellCls", js.undefined)
         
-        inline def setCellRender(value: /* date */ Date => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction1(value))
+        inline def setCellRender(value: /* date */ js.Date => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction1(value))
         
         inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
         
@@ -286,7 +285,7 @@ object dataTypesMod {
         
         inline def setWeek(value: js.Array[String]): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
         
-        inline def setWeekVarargs(value: String*): Self = StObject.set(x, "week", js.Array(value :_*))
+        inline def setWeekVarargs(value: String*): Self = StObject.set(x, "week", js.Array(value*))
         
         inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
         
@@ -300,11 +299,11 @@ object dataTypesMod {
       
       var componentRef: js.UndefOr[default] = js.undefined
       
-      var firstDate: Date
+      var firstDate: js.Date
       
       var height: js.UndefOr[Double] = js.undefined
       
-      var lastDate: Date
+      var lastDate: js.Date
       
       var title: String
       
@@ -316,7 +315,7 @@ object dataTypesMod {
     }
     object MonthData {
       
-      inline def apply(firstDate: Date, lastDate: Date, title: String, weeks: js.Array[js.Array[CellData]]): MonthData = {
+      inline def apply(firstDate: js.Date, lastDate: js.Date, title: String, weeks: js.Array[js.Array[CellData]]): MonthData = {
         val __obj = js.Dynamic.literal(firstDate = firstDate.asInstanceOf[js.Any], lastDate = lastDate.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], weeks = weeks.asInstanceOf[js.Any])
         __obj.asInstanceOf[MonthData]
       }
@@ -331,13 +330,13 @@ object dataTypesMod {
         
         inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
         
-        inline def setFirstDate(value: Date): Self = StObject.set(x, "firstDate", value.asInstanceOf[js.Any])
+        inline def setFirstDate(value: js.Date): Self = StObject.set(x, "firstDate", value.asInstanceOf[js.Any])
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
         inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        inline def setLastDate(value: Date): Self = StObject.set(x, "lastDate", value.asInstanceOf[js.Any])
+        inline def setLastDate(value: js.Date): Self = StObject.set(x, "lastDate", value.asInstanceOf[js.Any])
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -347,7 +346,7 @@ object dataTypesMod {
         
         inline def setWeeks(value: js.Array[js.Array[CellData]]): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
         
-        inline def setWeeksVarargs(value: js.Array[CellData]*): Self = StObject.set(x, "weeks", js.Array(value :_*))
+        inline def setWeeksVarargs(value: js.Array[CellData]*): Self = StObject.set(x, "weeks", js.Array(value*))
         
         inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         

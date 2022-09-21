@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SFS2X.ErrorCodes")
 @js.native
-class ErrorCodes ()
+open class ErrorCodes ()
   extends StObject
      with typings.smartFoxServer.SFS2X.ErrorCodes
 /* static members */

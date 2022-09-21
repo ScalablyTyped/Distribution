@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAndroidpublisher.anon
 
-import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.Variant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ trait VersionCode extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Unique identifier of the Android app. */
+  /** Package name of the app. */
   var packageName: String
   
   /** Returns response with indentations and line breaks. */
@@ -38,22 +37,19 @@ trait VersionCode extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: Variant
-  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
   
-  /** The version code of the App Bundle. */
-  var versionCode: String
+  /** Version code of the app bundle. */
+  var versionCode: Double
 }
 object VersionCode {
   
-  inline def apply(packageName: String, resource: Variant, versionCode: String): VersionCode = {
-    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], versionCode = versionCode.asInstanceOf[js.Any])
+  inline def apply(packageName: String, versionCode: Double): VersionCode = {
+    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], versionCode = versionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionCode]
   }
   
@@ -97,8 +93,6 @@ object VersionCode {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Variant): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
     inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
@@ -107,6 +101,6 @@ object VersionCode {
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
     
-    inline def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
   }
 }

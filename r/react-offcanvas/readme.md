@@ -10,10 +10,10 @@ Off-canvas menus for React.
 | ------------------ | :-------------: |
 | Full name          | react-offcanvas |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 25394 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2818.3333333333335 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/vutran/react-offcanvas#readme)

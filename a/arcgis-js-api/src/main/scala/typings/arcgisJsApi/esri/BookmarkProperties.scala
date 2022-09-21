@@ -7,13 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BookmarkProperties extends StObject {
   
   /**
-    * The extent of the specified bookmark item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#extent)
-    */
-  var extent: js.UndefOr[ExtentProperties] = js.undefined
-  
-  /**
     * The name of the bookmark item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#name)
@@ -26,6 +19,13 @@ trait BookmarkProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#thumbnail)
     */
   var thumbnail: js.UndefOr[BookmarkThumbnail] = js.undefined
+  
+  /**
+    * The time extent of the bookmark item.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#timeExtent)
+    */
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
   
   /**
     * The viewpoint of the bookmark item.
@@ -43,10 +43,6 @@ object BookmarkProperties {
   
   extension [Self <: BookmarkProperties](x: Self) {
     
-    inline def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
-    
-    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -54,6 +50,10 @@ object BookmarkProperties {
     inline def setThumbnail(value: BookmarkThumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
     inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    
+    inline def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
     
     inline def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     

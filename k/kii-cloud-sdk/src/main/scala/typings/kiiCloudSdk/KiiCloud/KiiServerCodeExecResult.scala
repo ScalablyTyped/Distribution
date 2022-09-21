@@ -21,11 +21,11 @@ trait KiiServerCodeExecResult extends StObject {
     *
     * @return returned by server code entry.
     */
-  def getReturnedValue(): js.Any
+  def getReturnedValue(): Any
 }
 object KiiServerCodeExecResult {
   
-  inline def apply(getExecutedSteps: () => Double, getReturnedValue: () => js.Any): KiiServerCodeExecResult = {
+  inline def apply(getExecutedSteps: () => Double, getReturnedValue: () => Any): KiiServerCodeExecResult = {
     val __obj = js.Dynamic.literal(getExecutedSteps = js.Any.fromFunction0(getExecutedSteps), getReturnedValue = js.Any.fromFunction0(getReturnedValue))
     __obj.asInstanceOf[KiiServerCodeExecResult]
   }
@@ -34,6 +34,6 @@ object KiiServerCodeExecResult {
     
     inline def setGetExecutedSteps(value: () => Double): Self = StObject.set(x, "getExecutedSteps", js.Any.fromFunction0(value))
     
-    inline def setGetReturnedValue(value: () => js.Any): Self = StObject.set(x, "getReturnedValue", js.Any.fromFunction0(value))
+    inline def setGetReturnedValue(value: () => Any): Self = StObject.set(x, "getReturnedValue", js.Any.fromFunction0(value))
   }
 }

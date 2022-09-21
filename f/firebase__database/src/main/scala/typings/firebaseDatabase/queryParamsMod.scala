@@ -1,207 +1,130 @@
 package typings.firebaseDatabase
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.indexMod.Index
 import typings.firebaseDatabase.nodeFilterMod.NodeFilter
+import typings.firebaseDatabase.priorityIndexMod.PriorityIndex
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryParamsMod {
   
-  @JSImport("@firebase/database/dist/src/core/view/QueryParams", "QueryParams")
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/QueryParams", JSImport.Namespace)
   @js.native
-  class QueryParams () extends StObject {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/QueryParams", "QueryParams")
+  @js.native
+  open class QueryParams () extends StObject {
     
-    /**
-      * @return {!QueryParams}
-      * @private
-      */
-    /* private */ var copy_ : js.Any = js.native
+    def copy(): QueryParams = js.native
     
-    /**
-      * @param {*} indexValue
-      * @param {?string=} key
-      * @return {!QueryParams}
-      */
-    def endAt(indexValue: js.Any): QueryParams = js.native
-    def endAt(indexValue: js.Any, key: String): QueryParams = js.native
+    var endBeforeSet_ : Boolean = js.native
     
-    /* private */ var endNameSet_ : js.Any = js.native
+    var endNameSet_ : Boolean = js.native
     
-    /* private */ var endSet_ : js.Any = js.native
+    var endSet_ : Boolean = js.native
     
-    /**
-      * @return {!Index}
-      */
     def getIndex(): Index = js.native
     
     /**
       * Only valid to call if hasEnd() returns true.
       * Returns the end key name for the range defined by these query parameters
-      * @return {!string}
       */
     def getIndexEndName(): String = js.native
     
     /**
       * Only valid to call if hasEnd() returns true.
-      * @return {*}
       */
-    def getIndexEndValue(): js.Any = js.native
+    def getIndexEndValue(): Any = js.native
     
     /**
       * Only valid to call if hasStart() returns true.
       * Returns the starting key name for the range defined by these query parameters
-      * @return {!string}
       */
     def getIndexStartName(): String = js.native
     
     /**
       * Only valid to call if hasStart() returns true
-      * @return {*}
       */
-    def getIndexStartValue(): js.Any = js.native
+    def getIndexStartValue(): Any = js.native
     
     /**
       * Only valid to call if hasLimit() returns true
-      * @return {!number}
       */
     def getLimit(): Double = js.native
     
     /**
-      * @return {!NodeFilter}
-      */
-    def getNodeFilter(): NodeFilter = js.native
-    
-    /**
-      * @return {!Object}
-      */
-    def getQueryObject(): js.Object = js.native
-    
-    /**
-      * @return {boolean} True if a limit has been set and it has been explicitly anchored
+      * @returns True if a limit has been set and it has been explicitly anchored
       */
     def hasAnchoredLimit(): Boolean = js.native
     
-    /**
-      * @return {boolean}
-      */
     def hasEnd(): Boolean = js.native
     
-    /**
-      * @return {boolean}
-      */
+    def hasEndBefore(): Boolean = js.native
+    
     def hasLimit(): Boolean = js.native
     
-    /**
-      * @return {boolean}
-      */
     def hasStart(): Boolean = js.native
     
-    /* private */ var indexEndName_ : js.Any = js.native
+    def hasStartAfter(): Boolean = js.native
     
-    /* private */ var indexEndValue_ : js.Any = js.native
+    var indexEndName_ : String = js.native
     
-    /* private */ var indexStartName_ : js.Any = js.native
+    var indexEndValue_ : Any | Null = js.native
     
-    /* private */ var indexStartValue_ : js.Any = js.native
+    var indexStartName_ : String = js.native
     
-    /* private */ var index_ : js.Any = js.native
+    var indexStartValue_ : Any | Null = js.native
     
-    /**
-      * @return {boolean}
-      */
+    var index_ : PriorityIndex = js.native
+    
     def isDefault(): Boolean = js.native
     
     /**
-      * @return {boolean} True if it would return from left.
+      * @returns True if it would return from left.
       */
     def isViewFromLeft(): Boolean = js.native
     
-    /**
-      * @param {!number} newLimit
-      * @return {!QueryParams}
-      */
-    def limit(newLimit: Double): QueryParams = js.native
+    var limitSet_ : Boolean = js.native
     
-    /* private */ var limitSet_ : js.Any = js.native
+    var limit_ : Double = js.native
     
-    /**
-      * @param {!number} newLimit
-      * @return {!QueryParams}
-      */
-    def limitToFirst(newLimit: Double): QueryParams = js.native
-    
-    /**
-      * @param {!number} newLimit
-      * @return {!QueryParams}
-      */
-    def limitToLast(newLimit: Double): QueryParams = js.native
-    
-    /* private */ var limit_ : js.Any = js.native
-    
-    /**
-      * @return {boolean}
-      */
     def loadsAllData(): Boolean = js.native
     
-    /**
-      * @param {!Index} index
-      * @return {!QueryParams}
-      */
-    def orderBy(index: Index): QueryParams = js.native
+    var startAfterSet_ : Boolean = js.native
     
-    /**
-      * @param {*} indexValue
-      * @param {?string=} key
-      * @return {!QueryParams}
-      */
-    def startAt(indexValue: js.Any): QueryParams = js.native
-    def startAt(indexValue: js.Any, key: String): QueryParams = js.native
+    var startNameSet_ : Boolean = js.native
     
-    /* private */ var startNameSet_ : js.Any = js.native
+    var startSet_ : Boolean = js.native
     
-    /* private */ var startSet_ : js.Any = js.native
-    
-    /**
-      * Returns a set of REST query string parameters representing this query.
-      *
-      * @return {!Object.<string,*>} query string parameters
-      */
-    def toRestQueryStringParameters(): StringDictionary[String | Double] = js.native
-    
-    /* private */ var viewFrom_ : js.Any = js.native
+    var viewFrom_ : String = js.native
   }
-  /* static members */
-  object QueryParams {
-    
-    /**
-      * Default, empty query parameters
-      * @type {!QueryParams}
-      * @const
-      */
-    @JSImport("@firebase/database/dist/src/core/view/QueryParams", "QueryParams.DEFAULT")
-    @js.native
-    val DEFAULT: QueryParams = js.native
-    
-    /**
-      * REST Query Constants
-      * @const
-      * @enum {string}
-      * @private
-      */
-    @JSImport("@firebase/database/dist/src/core/view/QueryParams", "QueryParams.REST_QUERY_CONSTANTS_")
-    @js.native
-    val REST_QUERY_CONSTANTS_ : js.Any = js.native
-    
-    /**
-      * Wire Protocol Constants
-      * @const
-      * @enum {string}
-      * @private
-      */
-    @JSImport("@firebase/database/dist/src/core/view/QueryParams", "QueryParams.WIRE_PROTOCOL_CONSTANTS_")
-    @js.native
-    val WIRE_PROTOCOL_CONSTANTS_ : js.Any = js.native
-  }
+  
+  inline def queryParamsEndAt(queryParams: QueryParams, indexValue: Any): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsEndAt")(queryParams.asInstanceOf[js.Any], indexValue.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  inline def queryParamsEndAt(queryParams: QueryParams, indexValue: Any, key: String): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsEndAt")(queryParams.asInstanceOf[js.Any], indexValue.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  
+  inline def queryParamsEndBefore(queryParams: QueryParams, indexValue: Any): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsEndBefore")(queryParams.asInstanceOf[js.Any], indexValue.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  inline def queryParamsEndBefore(queryParams: QueryParams, indexValue: Any, key: String): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsEndBefore")(queryParams.asInstanceOf[js.Any], indexValue.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  
+  inline def queryParamsGetNodeFilter(queryParams: QueryParams): NodeFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsGetNodeFilter")(queryParams.asInstanceOf[js.Any]).asInstanceOf[NodeFilter]
+  
+  inline def queryParamsGetQueryObject(queryParams: QueryParams): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsGetQueryObject")(queryParams.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
+  
+  inline def queryParamsLimit(queryParams: QueryParams, newLimit: Double): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsLimit")(queryParams.asInstanceOf[js.Any], newLimit.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  
+  inline def queryParamsLimitToFirst(queryParams: QueryParams, newLimit: Double): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsLimitToFirst")(queryParams.asInstanceOf[js.Any], newLimit.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  
+  inline def queryParamsLimitToLast(queryParams: QueryParams, newLimit: Double): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsLimitToLast")(queryParams.asInstanceOf[js.Any], newLimit.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  
+  inline def queryParamsOrderBy(queryParams: QueryParams, index: Index): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsOrderBy")(queryParams.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  
+  inline def queryParamsStartAfter(queryParams: QueryParams, indexValue: Any): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsStartAfter")(queryParams.asInstanceOf[js.Any], indexValue.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  inline def queryParamsStartAfter(queryParams: QueryParams, indexValue: Any, key: String): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsStartAfter")(queryParams.asInstanceOf[js.Any], indexValue.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  
+  inline def queryParamsStartAt(queryParams: QueryParams, indexValue: Any): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsStartAt")(queryParams.asInstanceOf[js.Any], indexValue.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  inline def queryParamsStartAt(queryParams: QueryParams, indexValue: Any, key: String): QueryParams = (^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsStartAt")(queryParams.asInstanceOf[js.Any], indexValue.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[QueryParams]
+  
+  inline def queryParamsToRestQueryStringParameters(queryParams: QueryParams): Record[String, String | Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParamsToRestQueryStringParameters")(queryParams.asInstanceOf[js.Any]).asInstanceOf[Record[String, String | Double]]
 }

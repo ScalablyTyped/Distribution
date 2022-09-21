@@ -9,7 +9,6 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.IN
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.PROCESSING
 import typings.awsSdkClientPinpointBrowser.typesImportJobResourceMod.ImportJobResource
 import typings.awsSdkClientPinpointBrowser.typesImportJobResourceMod.UnmarshalledImportJobResource
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +50,7 @@ object typesImportJobResponseMod {
     /**
       * Provides up to 100 of the first failed entries for the job, if any exist.
       */
-    var Failures: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var Failures: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * The unique ID of the import job.
@@ -121,11 +120,11 @@ object typesImportJobResponseMod {
       
       inline def setFailedPiecesUndefined: Self = StObject.set(x, "FailedPieces", js.undefined)
       
-      inline def setFailures(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
+      inline def setFailures(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
       
       inline def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
       
-      inline def setFailuresVarargs(value: String*): Self = StObject.set(x, "Failures", js.Array(value :_*))
+      inline def setFailuresVarargs(value: String*): Self = StObject.set(x, "Failures", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
@@ -186,7 +185,7 @@ object typesImportJobResponseMod {
       
       inline def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
       
-      inline def setFailuresVarargs(value: String*): Self = StObject.set(x, "Failures", js.Array(value :_*))
+      inline def setFailuresVarargs(value: String*): Self = StObject.set(x, "Failures", js.Array(value*))
     }
   }
 }

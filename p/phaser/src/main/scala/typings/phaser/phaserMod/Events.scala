@@ -11,7 +11,7 @@ object Events {
     */
   @JSImport("phaser", "Events.EventEmitter")
   @js.native
-  class EventEmitter ()
+  open class EventEmitter ()
     extends StObject
        with typings.phaser.Phaser.Events.EventEmitter
 }

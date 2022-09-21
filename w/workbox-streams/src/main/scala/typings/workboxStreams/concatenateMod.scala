@@ -18,11 +18,11 @@ object concatenateMod {
     
     var done: js.Promise[Unit]
     
-    var stream: ReadableStream[js.Any]
+    var stream: ReadableStream[Any]
   }
   object ConcatenateReturn {
     
-    inline def apply(done: js.Promise[Unit], stream: ReadableStream[js.Any]): ConcatenateReturn = {
+    inline def apply(done: js.Promise[Unit], stream: ReadableStream[Any]): ConcatenateReturn = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConcatenateReturn]
     }
@@ -31,7 +31,7 @@ object concatenateMod {
       
       inline def setDone(value: js.Promise[Unit]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      inline def setStream(value: ReadableStream[js.Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: ReadableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
 }

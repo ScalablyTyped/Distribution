@@ -19,7 +19,7 @@ object companyMod {
     
     val created_at: Double
     
-    var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var custom_attributes: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     val id: String
     
@@ -65,7 +65,7 @@ object companyMod {
       
       inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      inline def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
+      inline def setCustom_attributes(value: StringDictionary[Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
       
       inline def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
       
@@ -153,7 +153,7 @@ object companyMod {
       
       inline def setCompanies(value: js.Array[Company & CompanyIdentifier]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
       
-      inline def setCompaniesVarargs(value: (Company & CompanyIdentifier)*): Self = StObject.set(x, "companies", js.Array(value :_*))
+      inline def setCompaniesVarargs(value: (Company & CompanyIdentifier)*): Self = StObject.set(x, "companies", js.Array(value*))
       
       inline def setPages(value: Next): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       

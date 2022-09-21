@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateVocabularyRequest extends StObject {
   
   /**
-    * The language code of the vocabulary entries.
+    * The language code that represents the language of the entries in the custom vocabulary you want to update. Each vocabulary must contain terms in only one language. A custom vocabulary can only be used to transcribe files in the same language as the vocabulary. For example, if you create a vocabulary using US English (en-US), you can only apply this vocabulary to files that contain English audio. For a list of supported languages and their associated language codes, refer to the Supported languages table.
     */
   var LanguageCode: typings.awsSdk.transcribeserviceMod.LanguageCode
   
   /**
-    * An array of strings containing the vocabulary entries.
+    * Use this parameter if you want to update your vocabulary by including all desired terms, as comma-separated values, within your request. The other option for updating your vocabulary is to save your entries in a text file and upload them to an Amazon S3 bucket, then specify the location of your file using the VocabularyFileUri parameter. Note that if you include Phrases in your request, you cannot use VocabularyFileUri; you must choose one or the other. Each language has a character set that contains all allowed characters for that specific language. If you use unsupported characters, your vocabulary filter request fails. Refer to Character Sets for Custom Vocabularies to get the character set for your language.
     */
   var Phrases: js.UndefOr[typings.awsSdk.transcribeserviceMod.Phrases] = js.undefined
   
   /**
-    * The S3 location of the text file that contains the definition of the custom vocabulary. The URI must be in the same region as the API endpoint that you are calling. The general form is  For example: For more information about S3 object names, see Object Keys in the Amazon S3 Developer Guide. For more information about custom vocabularies, see Custom Vocabularies.
+    * The Amazon S3 location of the text file that contains your custom vocabulary. The URI must be located in the same Amazon Web Services Region as the resource you're calling. Here's an example URI path: s3://DOC-EXAMPLE-BUCKET/my-vocab-file.txt  Note that if you include VocabularyFileUri in your request, you cannot use the Phrases flag; you must choose one or the other.
     */
   var VocabularyFileUri: js.UndefOr[Uri] = js.undefined
   
   /**
-    * The name of the vocabulary to update. The name is case sensitive. If you try to update a vocabulary with the same name as a previous vocabulary you will receive a ConflictException error.
+    * The name of the custom vocabulary you want to update. Vocabulary names are case sensitive.
     */
   var VocabularyName: typings.awsSdk.transcribeserviceMod.VocabularyName
 }
@@ -41,7 +41,7 @@ object UpdateVocabularyRequest {
     
     inline def setPhrasesUndefined: Self = StObject.set(x, "Phrases", js.undefined)
     
-    inline def setPhrasesVarargs(value: Phrase*): Self = StObject.set(x, "Phrases", js.Array(value :_*))
+    inline def setPhrasesVarargs(value: Phrase*): Self = StObject.set(x, "Phrases", js.Array(value*))
     
     inline def setVocabularyFileUri(value: Uri): Self = StObject.set(x, "VocabularyFileUri", value.asInstanceOf[js.Any])
     

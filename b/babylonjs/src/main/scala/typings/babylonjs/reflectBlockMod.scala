@@ -10,7 +10,7 @@ object reflectBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/reflectBlock", "ReflectBlock")
   @js.native
-  class ReflectBlock protected () extends NodeMaterialBlock {
+  open class ReflectBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new ReflectBlock
       * @param name defines the block name

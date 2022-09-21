@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait ITemplateOptions
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var description: js.UndefOr[String] = js.undefined
   
@@ -112,43 +112,43 @@ object ITemplateOptions {
     
     inline def setOnBlur(value: String | IExpressionFunction): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
-    inline def setOnBlurFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction3(value))
+    inline def setOnBlurFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction3(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     inline def setOnChange(value: String | IExpressionFunction): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    inline def setOnChangeFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
+    inline def setOnChangeFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     inline def setOnClick(value: String | IExpressionFunction): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
-    inline def setOnClickFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
+    inline def setOnClickFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     inline def setOnFocus(value: String | IExpressionFunction): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
     
-    inline def setOnFocusFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction3(value))
+    inline def setOnFocusFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction3(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     inline def setOnKeydown(value: String | IExpressionFunction): Self = StObject.set(x, "onKeydown", value.asInstanceOf[js.Any])
     
-    inline def setOnKeydownFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onKeydown", js.Any.fromFunction3(value))
+    inline def setOnKeydownFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "onKeydown", js.Any.fromFunction3(value))
     
     inline def setOnKeydownUndefined: Self = StObject.set(x, "onKeydown", js.undefined)
     
     inline def setOnKeypress(value: String | IExpressionFunction): Self = StObject.set(x, "onKeypress", value.asInstanceOf[js.Any])
     
-    inline def setOnKeypressFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onKeypress", js.Any.fromFunction3(value))
+    inline def setOnKeypressFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "onKeypress", js.Any.fromFunction3(value))
     
     inline def setOnKeypressUndefined: Self = StObject.set(x, "onKeypress", js.undefined)
     
     inline def setOnKeyup(value: String | IExpressionFunction): Self = StObject.set(x, "onKeyup", value.asInstanceOf[js.Any])
     
-    inline def setOnKeyupFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "onKeyup", js.Any.fromFunction3(value))
+    inline def setOnKeyupFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "onKeyup", js.Any.fromFunction3(value))
     
     inline def setOnKeyupUndefined: Self = StObject.set(x, "onKeyup", js.undefined)
     
@@ -156,7 +156,7 @@ object ITemplateOptions {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: ISelectOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: ISelectOption*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  type Domain = js.Any
+  trait Task extends StObject {
+    
+    def call(): Unit
+  }
+  object Task {
+    
+    inline def apply(call: () => Unit): Task = {
+      val __obj = js.Dynamic.literal(call = js.Any.fromFunction0(call))
+      __obj.asInstanceOf[Task]
+    }
+    
+    extension [Self <: Task](x: Self) {
+      
+      inline def setCall(value: () => Unit): Self = StObject.set(x, "call", js.Any.fromFunction0(value))
+    }
+  }
   
-  type Task = js.Any
+  type TaskFn = js.Function0[Unit]
 }

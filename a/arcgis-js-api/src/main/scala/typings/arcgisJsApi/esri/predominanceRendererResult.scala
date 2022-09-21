@@ -29,7 +29,7 @@ trait predominanceRendererResult
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#RendererResult)
     */
-  var excludedCategoryInfos: js.Array[js.Any]
+  var excludedCategoryInfos: js.Array[Any]
   
   /**
     * An opacity visual variable representing the percentage of the total count comprised by the predominant value of all fields.
@@ -39,7 +39,7 @@ trait predominanceRendererResult
   var opacity: js.UndefOr[opacityVisualVariableResult] = js.undefined
   
   /**
-    * The predominance scheme used by the renderer based on the given basemap.
+    * The predominance scheme used by the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#RendererResult)
     */
@@ -72,7 +72,7 @@ object predominanceRendererResult {
     basemapId: String,
     basemapTheme: String,
     constructor: js.Function,
-    excludedCategoryInfos: js.Array[js.Any],
+    excludedCategoryInfos: js.Array[Any],
     hasOwnProperty: PropertyKey => Boolean,
     predominanceScheme: PredominanceScheme,
     predominantCategoryInfos: js.Array[typeUniqueValueInfo],
@@ -89,9 +89,9 @@ object predominanceRendererResult {
     
     inline def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    inline def setExcludedCategoryInfos(value: js.Array[js.Any]): Self = StObject.set(x, "excludedCategoryInfos", value.asInstanceOf[js.Any])
+    inline def setExcludedCategoryInfos(value: js.Array[Any]): Self = StObject.set(x, "excludedCategoryInfos", value.asInstanceOf[js.Any])
     
-    inline def setExcludedCategoryInfosVarargs(value: js.Any*): Self = StObject.set(x, "excludedCategoryInfos", js.Array(value :_*))
+    inline def setExcludedCategoryInfosVarargs(value: Any*): Self = StObject.set(x, "excludedCategoryInfos", js.Array(value*))
     
     inline def setOpacity(value: opacityVisualVariableResult): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
@@ -101,7 +101,7 @@ object predominanceRendererResult {
     
     inline def setPredominantCategoryInfos(value: js.Array[typeUniqueValueInfo]): Self = StObject.set(x, "predominantCategoryInfos", value.asInstanceOf[js.Any])
     
-    inline def setPredominantCategoryInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "predominantCategoryInfos", js.Array(value :_*))
+    inline def setPredominantCategoryInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "predominantCategoryInfos", js.Array(value*))
     
     inline def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     

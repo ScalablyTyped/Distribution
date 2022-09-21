@@ -1,7 +1,10 @@
 package typings.relayRuntime.relayStoreTypesMod
 
-import typings.relayRuntime.anon.Operation
+import typings.relayRuntime.anon.OperationUpdater
 import typings.relayRuntime.anon.OptimisticResponse
+import typings.relayRuntime.anon.Readonlykindmissingfieldl
+import typings.relayRuntime.anon.Readonlykindmissingfieldt
+import typings.relayRuntime.anon.Readonlykindrelayresolver
 import typings.relayRuntime.anon.Source
 import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
 import typings.relayRuntime.relayNetworkTypesMod.Network
@@ -20,7 +23,7 @@ trait Environment extends StObject {
     * Apply an optimistic mutation response and/or updater. The mutation can be
     * reverted by calling `dispose()` on the returned value.
     */
-  def applyMutation(optimisticConfig: OptimisticResponseConfig): Disposable = js.native
+  def applyMutation(optimisticConfig: OptimisticResponseConfig[Any]): Disposable = js.native
   
   /**
     * Apply an optimistic update to the environment. The mutation can be reverted
@@ -62,7 +65,7 @@ trait Environment extends StObject {
     * Note: Observables are lazy, so calling this method will do nothing until
     * the result is subscribed to: environment.execute({...}).subscribe({...}).
     */
-  def execute(config: Operation): RelayObservable[GraphQLResponse] = js.native
+  def execute(config: OperationUpdater): RelayObservable[GraphQLResponse] = js.native
   
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
@@ -103,6 +106,22 @@ trait Environment extends StObject {
   def getStore(): Store = js.native
   
   /**
+    * Returns true if a request is currently "active", meaning it's currently
+    * actively receiving payloads or downloading modules, and has not received
+    * a final payload yet. Note that a request might still be pending (or "in flight")
+    * without actively receiving payload, for example a live query or an
+    * active GraphQL subscription
+    */
+  def isRequestActive(requestIdentifier: String): Boolean = js.native
+  
+  /**
+    * Returns true if the environment is for use during server side rendering.
+    * functions like getQueryResource key off of this in order to determine
+    * whether we need to set up certain caches and timeout's.
+    */
+  def isServer(): Boolean = js.native
+  
+  /**
     * Read the results of a selector from in-memory records in the store.
     * Optionally takes an owner, corresponding to the operation that
     * owns this selector (fragment).
@@ -112,7 +131,21 @@ trait Environment extends StObject {
   /**
     * Extra information attached to the environment instance
     */
-  var options: js.Any = js.native
+  var options: Any = js.native
+  
+  /**
+    * Called by Relay when it encounters a missing field that has been annotated
+    * with `@required(action: LOG)`.
+    */
+  def requiredFieldLogger(arg: Readonlykindmissingfieldl): Unit = js.native
+  def requiredFieldLogger(arg: Readonlykindmissingfieldt): Unit = js.native
+  def requiredFieldLogger(arg: Readonlykindrelayresolver): Unit = js.native
+  /**
+    * Called by Relay when it encounters a missing field that has been annotated
+    * with `@required(action: LOG)`.
+    */
+  @JSName("requiredFieldLogger")
+  var requiredFieldLogger_Original: RequiredFieldLogger = js.native
   
   /**
     * Ensure that all the records necessary to fulfill the given operation are

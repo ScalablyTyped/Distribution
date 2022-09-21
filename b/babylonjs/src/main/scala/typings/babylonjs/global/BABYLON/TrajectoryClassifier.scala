@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.TrajectoryClassifier")
 @js.native
-/* private */ class TrajectoryClassifier ()
+/* private */ open class TrajectoryClassifier ()
   extends StObject
      with typings.babylonjs.BABYLON.TrajectoryClassifier {
   
   /* private */ /* CompleteClass */
-  var _levenshteinAlphabet: js.Any = js.native
+  var _levenshteinAlphabet: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _maximumAllowableMatchCost: js.Any = js.native
+  var _maximumAllowableMatchCost: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _nameToDescribedTrajectory: js.Any = js.native
+  var _nameToDescribedTrajectory: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _vector3Alphabet: js.Any = js.native
+  var _vector3Alphabet: Any = js.native
   
   /**
     * Add a new Trajectory to the set with a given name.

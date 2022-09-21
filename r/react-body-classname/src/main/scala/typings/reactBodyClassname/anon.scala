@@ -1,23 +1,30 @@
 package typings.reactBodyClassname
 
+import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait ClassName extends StObject {
+  trait Children extends StObject {
+    
+    var children: js.UndefOr[ReactElement] = js.undefined
     
     var className: String
   }
-  object ClassName {
+  object Children {
     
-    inline def apply(className: String): ClassName = {
+    inline def apply(className: String): Children = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ClassName]
+      __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    extension [Self <: Children](x: Self) {
+      
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     }

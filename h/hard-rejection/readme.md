@@ -10,10 +10,10 @@ Make unhandled promise rejections fail hard right away instead of the default si
 | ------------------ | :-------------: |
 | Full name          | hard-rejection |
 | Keywords           | promise, promises, unhandled, uncaught, rejection, hard, fail, catch, throw, handler, exit, debug, debugging, verbose, immediate, immediately |
-| # releases         | 3 |
-| # dependents       | 62 |
-| # downloads        | 99662418 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0400016E7 |
+| # stars            | 101.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/hard-rejection#readme)

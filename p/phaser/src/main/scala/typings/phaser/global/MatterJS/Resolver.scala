@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Resolver")
 @js.native
-class Resolver ()
+open class Resolver ()
   extends StObject
      with typings.phaser.MatterJS.Resolver
 object Resolver {

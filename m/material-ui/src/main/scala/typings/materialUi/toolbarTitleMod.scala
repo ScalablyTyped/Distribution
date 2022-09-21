@@ -10,10 +10,10 @@ object toolbarTitleMod {
   
   @JSImport("material-ui/Toolbar/ToolbarTitle", JSImport.Default)
   @js.native
-  class default () extends ToolbarTitle
+  open class default () extends ToolbarTitle
   
   @JSImport("material-ui/Toolbar/ToolbarTitle", "ToolbarTitle")
   @js.native
-  class ToolbarTitle ()
-    extends Component[ToolbarTitleProps, js.Object, js.Any]
+  open class ToolbarTitle ()
+    extends Component[ToolbarTitleProps, js.Object, Any]
 }

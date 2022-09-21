@@ -10,9 +10,9 @@ Recursive filesystem (and other) operations that Node *should* have.
 | Full name          | wrench |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 680 |
-| # downloads        | 6140877 |
-| # stars            | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 382471.0 |
+| # stars            | 441.0 |
 
 ## Links
 - [Homepage](https://github.com/ryanmcgrath/wrench-js#readme)

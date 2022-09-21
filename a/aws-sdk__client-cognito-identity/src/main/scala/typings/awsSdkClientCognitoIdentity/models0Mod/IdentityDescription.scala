@@ -1,6 +1,5 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait IdentityDescription extends StObject {
   /**
     * <p>Date on which the identity was created.</p>
     */
-  var CreationDate: js.UndefOr[Date] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * <p>A unique identifier in the format REGION:GUID.</p>
@@ -20,7 +19,7 @@ trait IdentityDescription extends StObject {
   /**
     * <p>Date on which the identity was last modified.</p>
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * <p>The provider names.</p>
@@ -34,15 +33,9 @@ object IdentityDescription {
     __obj.asInstanceOf[IdentityDescription]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "IdentityDescription")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: IdentityDescription): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: IdentityDescription](x: Self) {
     
-    inline def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -50,7 +43,7 @@ object IdentityDescription {
     
     inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
@@ -58,6 +51,6 @@ object IdentityDescription {
     
     inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
     
-    inline def setLoginsVarargs(value: String*): Self = StObject.set(x, "Logins", js.Array(value :_*))
+    inline def setLoginsVarargs(value: String*): Self = StObject.set(x, "Logins", js.Array(value*))
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeParagraphBackColorCommand")
 @js.native
-class ChangeParagraphBackColorCommand ()
+open class ChangeParagraphBackColorCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeParagraphBackColorCommand {
   

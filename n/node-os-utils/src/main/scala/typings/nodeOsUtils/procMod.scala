@@ -8,7 +8,7 @@ object procMod {
   
   @JSImport("node-os-utils/lib/proc", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Proc {
     

@@ -10,7 +10,7 @@ object anonymousObserverMod {
   
   @JSImport("wonder-frp/dist/commonjs/observer/AnonymousObserver", "AnonymousObserver")
   @js.native
-  class AnonymousObserver protected () extends Observer {
+  open class AnonymousObserver protected () extends Observer {
     def this(observer: IObserver) = this()
     def this(onNext: js.Function, onError: js.Function, onCompleted: js.Function) = this()
   }

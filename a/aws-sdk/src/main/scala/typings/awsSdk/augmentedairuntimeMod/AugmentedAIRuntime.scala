@@ -15,12 +15,12 @@ trait AugmentedAIRuntime extends Service {
   var config_AugmentedAIRuntime: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Deletes the specified human loop for a flow definition.
+    * Deletes the specified human loop for a flow definition. If the human loop was deleted, this operation will return a ResourceNotFoundException. 
     */
   def deleteHumanLoop(): Request[DeleteHumanLoopResponse, AWSError] = js.native
   def deleteHumanLoop(callback: js.Function2[/* err */ AWSError, /* data */ DeleteHumanLoopResponse, Unit]): Request[DeleteHumanLoopResponse, AWSError] = js.native
   /**
-    * Deletes the specified human loop for a flow definition.
+    * Deletes the specified human loop for a flow definition. If the human loop was deleted, this operation will return a ResourceNotFoundException. 
     */
   def deleteHumanLoop(params: DeleteHumanLoopRequest): Request[DeleteHumanLoopResponse, AWSError] = js.native
   def deleteHumanLoop(
@@ -29,12 +29,12 @@ trait AugmentedAIRuntime extends Service {
   ): Request[DeleteHumanLoopResponse, AWSError] = js.native
   
   /**
-    * Returns information about the specified human loop.
+    * Returns information about the specified human loop. If the human loop was deleted, this operation will return a ResourceNotFoundException error. 
     */
   def describeHumanLoop(): Request[DescribeHumanLoopResponse, AWSError] = js.native
   def describeHumanLoop(callback: js.Function2[/* err */ AWSError, /* data */ DescribeHumanLoopResponse, Unit]): Request[DescribeHumanLoopResponse, AWSError] = js.native
   /**
-    * Returns information about the specified human loop.
+    * Returns information about the specified human loop. If the human loop was deleted, this operation will return a ResourceNotFoundException error. 
     */
   def describeHumanLoop(params: DescribeHumanLoopRequest): Request[DescribeHumanLoopResponse, AWSError] = js.native
   def describeHumanLoop(

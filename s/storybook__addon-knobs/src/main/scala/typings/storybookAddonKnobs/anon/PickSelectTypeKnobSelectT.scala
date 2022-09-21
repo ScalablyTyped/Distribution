@@ -28,7 +28,7 @@ object PickSelectTypeKnobSelectT {
     
     inline def setOptions(value: SelectTypeOptionsProp[SelectTypeKnobValue]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: SelectTypeKnobValue*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: SelectTypeKnobValue*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setSelectV2(value: `true`): Self = StObject.set(x, "selectV2", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object PickSelectTypeKnobSelectT {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: PropertyKey*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: PropertyKey*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

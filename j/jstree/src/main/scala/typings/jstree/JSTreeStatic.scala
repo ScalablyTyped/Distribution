@@ -42,7 +42,7 @@ trait JSTreeStatic extends StObject {
     */
   def destroy(): Unit = js.native
   
-  var idregex: js.Any = js.native
+  var idregex: Any = js.native
   
   var path: String = js.native
   
@@ -50,7 +50,7 @@ trait JSTreeStatic extends StObject {
     * stores all loaded jstree plugins (used internally)
     * @name $.jstree.plugins
     */
-  var plugins: js.Array[js.Any] = js.native
+  var plugins: js.Array[Any] = js.native
   
   def reference(needle: String): JSTree = js.native
   def reference(needle: JQuery): JSTree = js.native

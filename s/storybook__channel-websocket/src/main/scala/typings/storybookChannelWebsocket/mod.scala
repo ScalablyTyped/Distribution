@@ -17,44 +17,42 @@ object mod {
   
   @JSImport("@storybook/channel-websocket", "WebsocketTransport")
   @js.native
-  class WebsocketTransport protected () extends StObject {
+  open class WebsocketTransport protected () extends StObject {
     def this(hasUrlOnError: WebsocketTransportArgs) = this()
     
-    /* private */ var buffer: js.Any = js.native
+    /* private */ var buffer: Any = js.native
     
-    /* private */ var connect: js.Any = js.native
+    /* private */ var connect: Any = js.native
     
-    /* private */ var flush: js.Any = js.native
+    /* private */ var flush: Any = js.native
     
-    /* private */ var handler: js.Any = js.native
+    /* private */ var handler: Any = js.native
     
-    /* private */ var isReady: js.Any = js.native
+    /* private */ var isReady: Any = js.native
     
-    def send(event: js.Any): Unit = js.native
+    def send(event: Any): Unit = js.native
     
-    /* private */ var sendLater: js.Any = js.native
+    /* private */ var sendLater: Any = js.native
     
-    /* private */ var sendNow: js.Any = js.native
+    /* private */ var sendNow: Any = js.native
     
     def setHandler(handler: ChannelHandler): Unit = js.native
     
-    /* private */ var socket: js.Any = js.native
+    /* private */ var socket: Any = js.native
   }
   
   trait CreateChannelArgs extends StObject {
     
-    var async: Boolean
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    def onError(message: Event): Unit
-    @JSName("onError")
-    var onError_Original: OnError
+    var onError: js.UndefOr[OnError] = js.undefined
     
     var url: String
   }
   object CreateChannelArgs {
     
-    inline def apply(async: Boolean, onError: /* message */ Event => Unit, url: String): CreateChannelArgs = {
-      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError), url = url.asInstanceOf[js.Any])
+    inline def apply(url: String): CreateChannelArgs = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateChannelArgs]
     }
     
@@ -62,7 +60,11 @@ object mod {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      
       inline def setOnError(value: /* message */ Event => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

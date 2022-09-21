@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MVCxClientPageControl")
 @js.native
-class MVCxClientPageControl ()
+open class MVCxClientPageControl ()
   extends StObject
      with typings.devexpressWeb.MVCxClientPageControl {
   
@@ -101,13 +101,13 @@ class MVCxClientPageControl ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a tab specified by its index. An ASPxClientTab object representing the tab located at the specified index within the control's ASPxTabControl.Tabs collection.
@@ -227,5 +227,5 @@ object MVCxClientPageControl {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.MVCxClientPageControl = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.MVCxClientPageControl]
+  inline def Cast(obj: Any): typings.devexpressWeb.MVCxClientPageControl = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.MVCxClientPageControl]
 }

@@ -29,7 +29,7 @@ trait SelectNamesDialog extends StObject {
   /* private */ @JSName("Outlook.SelectNamesDialog_typekey")
   var OutlookDotSelectNamesDialog_typekey: SelectNamesDialog
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Recipients: typings.activexOutlook.Outlook.Recipients
   
@@ -55,7 +55,7 @@ object SelectNamesDialog {
     InitialAddressList: AddressList,
     NumberOfRecipientSelectors: OlRecipientSelectors,
     OutlookDotSelectNamesDialog_typekey: SelectNamesDialog,
-    Parent: js.Any,
+    Parent: Any,
     Recipients: Recipients,
     Session: NameSpace,
     SetDefaultDisplayMode: OlDefaultSelectNamesDisplayMode => Unit,
@@ -91,7 +91,7 @@ object SelectNamesDialog {
     
     inline def setOutlookDotSelectNamesDialog_typekey(value: SelectNamesDialog): Self = StObject.set(x, "Outlook.SelectNamesDialog_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRecipients(value: Recipients): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     

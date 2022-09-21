@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("pixl-xml", "Parser")
   @js.native
-  class Parser[OutputJsonInterface] protected () extends StObject {
+  open class Parser[OutputJsonInterface] protected () extends StObject {
     def this(xml: String) = this()
     def this(xml: String, options: PixlParseOptions) = this()
     
@@ -34,7 +34,7 @@ object mod {
     
     var dtdNodeList: js.Array[String] = js.native
     
-    var errors: js.Array[js.Any] = js.native
+    var errors: js.Array[Any] = js.native
     
     /**
       * Returns the parsed XML tree. This tree is mutable and can be modified
@@ -68,9 +68,9 @@ object mod {
   
   inline def hashKeysToArray(input: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("hashKeysToArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def isaArray(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isaArray")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isaArray(input: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isaArray")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isaHash(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isaHash")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isaHash(input: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isaHash")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def numKeys(hash: js.Object): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("numKeys")(hash.asInstanceOf[js.Any]).asInstanceOf[Double]
   

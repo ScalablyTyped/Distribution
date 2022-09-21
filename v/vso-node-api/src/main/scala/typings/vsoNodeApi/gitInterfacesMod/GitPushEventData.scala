@@ -39,7 +39,7 @@ object GitPushEventData {
     
     inline def setCommits(value: js.Array[GitCommit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    inline def setCommitsVarargs(value: GitCommit*): Self = StObject.set(x, "commits", js.Array(value :_*))
+    inline def setCommitsVarargs(value: GitCommit*): Self = StObject.set(x, "commits", js.Array(value*))
     
     inline def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateAnomalyMonitorResponse extends StObject {
   
   /**
-    *  A cost anomaly monitor ARN. 
+    * A cost anomaly monitor ARN. 
     */
   var MonitorArn: GenericString
 }

@@ -3,11 +3,11 @@ package typings.semanticUiReact
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.dimmerDimmerMod.DimmerProps
 import typings.semanticUiReact.genericMod.SemanticFLOATS
 import typings.semanticUiReact.genericMod.SemanticSIZES
@@ -33,13 +33,13 @@ object imageImageMod extends Shortcut {
     extends StObject
        with FunctionComponent[ImageProps] {
     
-    var Group: StatelessComponent[ImageGroupProps] = js.native
+    var Group: FC[ImageGroupProps] = js.native
   }
   
   trait ImageProps
     extends StObject
        with StrictImageProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ImageProps {
     
     inline def apply(): ImageProps = {
@@ -51,7 +51,7 @@ object imageImageMod extends Shortcut {
   trait StrictImageProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** An image may be formatted to appear inline with text as an avatar. */
     var avatar: js.UndefOr[Boolean] = js.undefined
@@ -125,7 +125,7 @@ object imageImageMod extends Shortcut {
     
     extension [Self <: StrictImageProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

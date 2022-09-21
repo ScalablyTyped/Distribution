@@ -24,7 +24,7 @@ trait NavigateToMiniProgramOptions extends StObject {
   /**
     * 需要传递给目标uni-app的数据
     */
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[Any] = js.undefined
   
   /**
     * 接口调用失败的回调函数
@@ -62,7 +62,7 @@ object NavigateToMiniProgramOptions {
     
     inline def setEnvVersionUndefined: Self = StObject.set(x, "envVersion", js.undefined)
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     

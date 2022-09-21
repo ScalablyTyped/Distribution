@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSwiftPlotDiagramAxis")
 @js.native
-class ASPxClientSwiftPlotDiagramAxis ()
+open class ASPxClientSwiftPlotDiagramAxis ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAxis2D {
   

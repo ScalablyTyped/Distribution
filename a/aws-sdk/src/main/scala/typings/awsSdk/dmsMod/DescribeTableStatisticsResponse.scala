@@ -42,6 +42,6 @@ object DescribeTableStatisticsResponse {
     
     inline def setTableStatisticsUndefined: Self = StObject.set(x, "TableStatistics", js.undefined)
     
-    inline def setTableStatisticsVarargs(value: TableStatistics*): Self = StObject.set(x, "TableStatistics", js.Array(value :_*))
+    inline def setTableStatisticsVarargs(value: TableStatistics*): Self = StObject.set(x, "TableStatistics", js.Array(value*))
   }
 }

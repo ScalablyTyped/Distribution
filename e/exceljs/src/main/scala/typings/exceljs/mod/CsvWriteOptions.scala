@@ -17,7 +17,7 @@ trait CsvWriteOptions extends StObject {
   
   var includeEmptyRows: Boolean
   
-  def map(value: js.Any, index: Double): js.Any
+  def map(value: Any, index: Double): Any
   
   var sheetId: Double
   
@@ -31,7 +31,7 @@ object CsvWriteOptions {
     encoding: String,
     formatterOptions: PartialFastCsvFormatterOp,
     includeEmptyRows: Boolean,
-    map: (js.Any, Double) => js.Any,
+    map: (Any, Double) => Any,
     sheetId: Double,
     sheetName: String
   ): CsvWriteOptions = {
@@ -51,7 +51,7 @@ object CsvWriteOptions {
     
     inline def setIncludeEmptyRows(value: Boolean): Self = StObject.set(x, "includeEmptyRows", value.asInstanceOf[js.Any])
     
-    inline def setMap(value: (js.Any, Double) => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (Any, Double) => Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
     inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     

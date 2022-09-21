@@ -21,7 +21,7 @@ trait Rating
   
   def reset(): Unit = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def value(value: Double): Unit = js.native
   

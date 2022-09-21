@@ -1,0 +1,269 @@
+package typings.googleapis.iapV1beta1Mod.iapV1beta1
+
+import typings.gaxios.commonMod.GaxiosPromise
+import typings.googleapisCommon.apiMod.APIRequestContext
+import typings.googleapisCommon.apiMod.BodyResponseCallback
+import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("googleapis/build/src/apis/iap/v1beta1", "iap_v1beta1.Resource$V1beta1")
+@js.native
+open class ResourceV1beta1 protected () extends StObject {
+  def this(context: APIRequestContext) = this()
+  
+  var context: APIRequestContext = js.native
+  
+  def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: ParamsResourceV1beta1Getiampolicy): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: ParamsResourceV1beta1Getiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(
+    params: ParamsResourceV1beta1Getiampolicy,
+    options: BodyResponseCallback[Readable | SchemaPolicy],
+    callback: BodyResponseCallback[Readable | SchemaPolicy]
+  ): Unit = js.native
+  def getIamPolicy(params: ParamsResourceV1beta1Getiampolicy, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(
+    params: ParamsResourceV1beta1Getiampolicy,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaPolicy]
+  ): Unit = js.native
+  /**
+    * Gets the access control policy for an Identity-Aware Proxy protected resource. More information about managing access via IAP can be found at: https://cloud.google.com/iap/docs/managing-access#managing_access_via_the_api
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/iap.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const iap = google.iap('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await iap.getIamPolicy({
+    *     // REQUIRED: The resource for which the policy is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.
+    *     resource: '.*',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "options": {}
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bindings": [],
+    *   //   "etag": "my_etag",
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def getIamPolicy(params: ParamsResourceV1beta1Getiampolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getIamPolicy(
+    params: ParamsResourceV1beta1Getiampolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: ParamsResourceV1beta1Setiampolicy): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: ParamsResourceV1beta1Setiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(
+    params: ParamsResourceV1beta1Setiampolicy,
+    options: BodyResponseCallback[Readable | SchemaPolicy],
+    callback: BodyResponseCallback[Readable | SchemaPolicy]
+  ): Unit = js.native
+  def setIamPolicy(params: ParamsResourceV1beta1Setiampolicy, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(
+    params: ParamsResourceV1beta1Setiampolicy,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaPolicy]
+  ): Unit = js.native
+  /**
+    * Sets the access control policy for an Identity-Aware Proxy protected resource. Replaces any existing policy. More information about managing access via IAP can be found at: https://cloud.google.com/iap/docs/managing-access#managing_access_via_the_api
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/iap.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const iap = google.iap('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await iap.setIamPolicy({
+    *     // REQUIRED: The resource for which the policy is being specified. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.
+    *     resource: '.*',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "policy": {}
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "bindings": [],
+    *   //   "etag": "my_etag",
+    *   //   "version": 0
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def setIamPolicy(params: ParamsResourceV1beta1Setiampolicy, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setIamPolicy(
+    params: ParamsResourceV1beta1Setiampolicy,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: ParamsResourceV1beta1Testiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(
+    params: ParamsResourceV1beta1Testiampermissions,
+    callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
+  ): Unit = js.native
+  def testIamPermissions(
+    params: ParamsResourceV1beta1Testiampermissions,
+    options: BodyResponseCallback[Readable | SchemaTestIamPermissionsResponse],
+    callback: BodyResponseCallback[Readable | SchemaTestIamPermissionsResponse]
+  ): Unit = js.native
+  def testIamPermissions(params: ParamsResourceV1beta1Testiampermissions, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(
+    params: ParamsResourceV1beta1Testiampermissions,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]
+  ): Unit = js.native
+  /**
+    * Returns permissions that a caller has on the Identity-Aware Proxy protected resource. If the resource does not exist or the caller does not have Identity-Aware Proxy permissions a [google.rpc.Code.PERMISSION_DENIED] will be returned. More information about managing access via IAP can be found at: https://cloud.google.com/iap/docs/managing-access#managing_access_via_the_api
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/iap.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const iap = google.iap('v1beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await iap.testIamPermissions({
+    *     // REQUIRED: The resource for which the policy detail is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for this field.
+    *     resource: '.*',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "permissions": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "permissions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def testIamPermissions(params: ParamsResourceV1beta1Testiampermissions, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def testIamPermissions(
+    params: ParamsResourceV1beta1Testiampermissions,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+}

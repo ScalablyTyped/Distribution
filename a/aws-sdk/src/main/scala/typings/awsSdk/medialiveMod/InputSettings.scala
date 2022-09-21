@@ -45,6 +45,11 @@ trait InputSettings extends StObject {
   var NetworkInputSettings: js.UndefOr[typings.awsSdk.medialiveMod.NetworkInputSettings] = js.undefined
   
   /**
+    * PID from which to read SCTE-35 messages. If left undefined, EML will select the first SCTE-35 PID found in the input.
+    */
+  var Scte35Pid: js.UndefOr[integerMin32Max8191] = js.undefined
+  
+  /**
     * Specifies whether to extract applicable ancillary data from a SMPTE-2038 source in this input. Applicable data types are captions, timecode, AFD, and SCTE-104 messages.
   - PREFER: Extract from SMPTE-2038 if present in this input, otherwise extract from another source (if any).
   - IGNORE: Never extract any ancillary data from SMPTE-2038.
@@ -74,13 +79,13 @@ object InputSettings {
     
     inline def setAudioSelectorsUndefined: Self = StObject.set(x, "AudioSelectors", js.undefined)
     
-    inline def setAudioSelectorsVarargs(value: AudioSelector*): Self = StObject.set(x, "AudioSelectors", js.Array(value :_*))
+    inline def setAudioSelectorsVarargs(value: AudioSelector*): Self = StObject.set(x, "AudioSelectors", js.Array(value*))
     
     inline def setCaptionSelectors(value: listOfCaptionSelector): Self = StObject.set(x, "CaptionSelectors", value.asInstanceOf[js.Any])
     
     inline def setCaptionSelectorsUndefined: Self = StObject.set(x, "CaptionSelectors", js.undefined)
     
-    inline def setCaptionSelectorsVarargs(value: CaptionSelector*): Self = StObject.set(x, "CaptionSelectors", js.Array(value :_*))
+    inline def setCaptionSelectorsVarargs(value: CaptionSelector*): Self = StObject.set(x, "CaptionSelectors", js.Array(value*))
     
     inline def setDeblockFilter(value: InputDeblockFilter): Self = StObject.set(x, "DeblockFilter", value.asInstanceOf[js.Any])
     
@@ -101,6 +106,10 @@ object InputSettings {
     inline def setNetworkInputSettings(value: NetworkInputSettings): Self = StObject.set(x, "NetworkInputSettings", value.asInstanceOf[js.Any])
     
     inline def setNetworkInputSettingsUndefined: Self = StObject.set(x, "NetworkInputSettings", js.undefined)
+    
+    inline def setScte35Pid(value: integerMin32Max8191): Self = StObject.set(x, "Scte35Pid", value.asInstanceOf[js.Any])
+    
+    inline def setScte35PidUndefined: Self = StObject.set(x, "Scte35Pid", js.undefined)
     
     inline def setSmpte2038DataPreference(value: Smpte2038DataPreference): Self = StObject.set(x, "Smpte2038DataPreference", value.asInstanceOf[js.Any])
     

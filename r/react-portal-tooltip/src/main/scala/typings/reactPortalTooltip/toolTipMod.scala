@@ -12,10 +12,10 @@ object toolTipMod {
   
   @JSImport("react-portal-tooltip/lib/ToolTip", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TooltipProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TooltipProps, js.Object, Any]
   
-  type Tooltip = Component[TooltipProps, js.Object, js.Any]
+  type Tooltip = Component[TooltipProps, js.Object, Any]
   
   trait TooltipProps
     extends StObject
@@ -25,13 +25,13 @@ object toolTipMod {
     
     var group: js.UndefOr[String] = js.undefined
     
-    var parent: String | Element | RefObject[js.Any]
+    var parent: String | Element | RefObject[Any]
     
     var tooltipTimeout: js.UndefOr[Double] = js.undefined
   }
   object TooltipProps {
     
-    inline def apply(parent: String | Element | RefObject[js.Any]): TooltipProps = {
+    inline def apply(parent: String | Element | RefObject[Any]): TooltipProps = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipProps]
     }
@@ -46,7 +46,7 @@ object toolTipMod {
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      inline def setParent(value: String | Element | RefObject[js.Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String | Element | RefObject[Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       inline def setTooltipTimeout(value: Double): Self = StObject.set(x, "tooltipTimeout", value.asInstanceOf[js.Any])
       

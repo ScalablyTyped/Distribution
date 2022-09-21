@@ -1,22 +1,22 @@
 
 # Scala.js typings for primereact
 
-Typings are for version 5.0.1
+Typings are for version 8.5.0
 
 ## Library description:
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/primereact.svg)](https://badge.fury.io/js/primereact) [![Discord Chat](https://img.shields.io/discord/5579
+PrimeReact is an open source UI library for React featuring a rich set of 80+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with Prime
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | primereact |
-| Keywords           | - |
-| # releases         | 30 |
-| # dependents       | 24 |
-| # downloads        | 869037 |
-| # stars            | 1 |
+| Keywords           | primereact, react, hooks, next, nextjs, ui-kit, ui library, component library, material, material design, bootstrap, tailwind theme, dark theme, react components, responsive components |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 258057.66666666666 |
+| # stars            | 3102.0 |
 
 ## Links
-- [Homepage](https://github.com/primefaces/primereact#readme)
+- [Homepage](https://www.primefaces.org/primereact)
 - [Bugs](https://github.com/primefaces/primereact/issues)
 - [Repository](https://github.com/primefaces/primereact)
 - [Npm](https://www.npmjs.com/package/primereact)

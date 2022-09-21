@@ -7,8 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "DirectionalLight")
 @js.native
-class DirectionalLight protected () extends Light {
-  def this(option: Direction) = this()
+open class DirectionalLight protected () extends StObject {
+  def this(options: Direction) = this()
   
+  /**
+    * The color of the light.
+    */
+  var color: Color = js.native
+  
+  /**
+    * The direction in which light gets emitted.
+    */
   var direction: Cartesian3 = js.native
+  
+  /**
+    * The intensity of the light.
+    */
+  var intensity: Double = js.native
 }

@@ -10,15 +10,12 @@ Copy to clipboard with AngularJS directive, without using Flash.
 | ------------------ | :-------------: |
 | Full name          | angular-clipboard |
 | Keywords           | angular, clipboard, copy, paste, selection |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 676404 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 59099.333333333336 |
+| # stars            | 197.0 |
 
 ## Links
-- [Homepage](https://github.com/omichelsen/angular-clipboard#readme)
-- [Bugs](https://github.com/omichelsen/angular-clipboard/issues)
-- [Repository](https://github.com/omichelsen/angular-clipboard)
 - [Npm](https://www.npmjs.com/package/angular-clipboard)
     
 

@@ -10,7 +10,7 @@ object msbuildFormatterMod {
   
   @JSImport("tslint/lib/formatters/msbuildFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter
+  open class Formatter () extends AbstractFormatter
   /* static members */
   object Formatter {
     

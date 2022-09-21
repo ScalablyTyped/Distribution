@@ -10,15 +10,12 @@ Listen to device orientation changes in React Native applications and programmat
 | ------------------ | :-------------: |
 | Full name          | react-native-orientation |
 | Keywords           | orientation, react-native, ios, android |
-| # releases         | 1 |
-| # dependents       | 40 |
-| # downloads        | 1088261 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 65684.33333333333 |
+| # stars            | 1665.0 |
 
 ## Links
-- [Homepage](https://github.com/yamill/react-native-orientation#readme)
-- [Bugs](https://github.com/yamill/react-native-orientation/issues)
-- [Repository](https://github.com/yamill/react-native-orientation)
 - [Npm](https://www.npmjs.com/package/react-native-orientation)
     
 

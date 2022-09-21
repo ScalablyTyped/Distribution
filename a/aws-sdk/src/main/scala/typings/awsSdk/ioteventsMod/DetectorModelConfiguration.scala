@@ -9,7 +9,7 @@ trait DetectorModelConfiguration extends StObject {
   /**
     * The time the detector model was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the detector model.
@@ -44,7 +44,7 @@ trait DetectorModelConfiguration extends StObject {
   /**
     * The time the detector model was last updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the role that grants permission to AWS IoT Events to perform its operations.
@@ -65,7 +65,7 @@ object DetectorModelConfiguration {
   
   extension [Self <: DetectorModelConfiguration](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
@@ -93,7 +93,7 @@ object DetectorModelConfiguration {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     

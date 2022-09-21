@@ -77,7 +77,7 @@ object ProtectedRange {
     
     inline def setUnprotectedRangesUndefined: Self = StObject.set(x, "unprotectedRanges", js.undefined)
     
-    inline def setUnprotectedRangesVarargs(value: GridRange*): Self = StObject.set(x, "unprotectedRanges", js.Array(value :_*))
+    inline def setUnprotectedRangesVarargs(value: GridRange*): Self = StObject.set(x, "unprotectedRanges", js.Array(value*))
     
     inline def setWarningOnly(value: Boolean): Self = StObject.set(x, "warningOnly", value.asInstanceOf[js.Any])
     

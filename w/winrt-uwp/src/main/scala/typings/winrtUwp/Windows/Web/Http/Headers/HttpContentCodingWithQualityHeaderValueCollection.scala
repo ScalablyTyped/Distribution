@@ -49,7 +49,7 @@ trait HttpContentCodingWithQualityHeaderValueCollection
     */
   def getView(): IVectorView[HttpContentCodingWithQualityHeaderValue] = js.native
   
-  def indexOf(value: HttpContentCodingWithQualityHeaderValue, extra: js.Any*): Index = js.native
+  def indexOf(value: HttpContentCodingWithQualityHeaderValue, extra: Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

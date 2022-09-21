@@ -1,7 +1,9 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.rotationGizmoMod.RotationGizmo
-import typings.babylonjs.scaleGizmoMod.ScaleGizmo
+import typings.babylonjs.boundingBoxGizmoMod.IBoundingBoxGizmo
+import typings.babylonjs.positionGizmoMod.IPositionGizmo
+import typings.babylonjs.rotationGizmoMod.IRotationGizmo
+import typings.babylonjs.scaleGizmoMod.IScaleGizmo
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BoundingBoxGizmo extends StObject {
   
-  var boundingBoxGizmo: Nullable[typings.babylonjs.boundingBoxGizmoMod.BoundingBoxGizmo]
+  var boundingBoxGizmo: Nullable[IBoundingBoxGizmo]
   
-  var positionGizmo: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+  var positionGizmo: Nullable[IPositionGizmo]
   
-  var rotationGizmo: Nullable[RotationGizmo]
+  var rotationGizmo: Nullable[IRotationGizmo]
   
-  var scaleGizmo: Nullable[ScaleGizmo]
+  var scaleGizmo: Nullable[IScaleGizmo]
 }
 object BoundingBoxGizmo {
   
@@ -26,19 +28,19 @@ object BoundingBoxGizmo {
   
   extension [Self <: BoundingBoxGizmo](x: Self) {
     
-    inline def setBoundingBoxGizmo(value: Nullable[typings.babylonjs.boundingBoxGizmoMod.BoundingBoxGizmo]): Self = StObject.set(x, "boundingBoxGizmo", value.asInstanceOf[js.Any])
+    inline def setBoundingBoxGizmo(value: Nullable[IBoundingBoxGizmo]): Self = StObject.set(x, "boundingBoxGizmo", value.asInstanceOf[js.Any])
     
     inline def setBoundingBoxGizmoNull: Self = StObject.set(x, "boundingBoxGizmo", null)
     
-    inline def setPositionGizmo(value: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]): Self = StObject.set(x, "positionGizmo", value.asInstanceOf[js.Any])
+    inline def setPositionGizmo(value: Nullable[IPositionGizmo]): Self = StObject.set(x, "positionGizmo", value.asInstanceOf[js.Any])
     
     inline def setPositionGizmoNull: Self = StObject.set(x, "positionGizmo", null)
     
-    inline def setRotationGizmo(value: Nullable[RotationGizmo]): Self = StObject.set(x, "rotationGizmo", value.asInstanceOf[js.Any])
+    inline def setRotationGizmo(value: Nullable[IRotationGizmo]): Self = StObject.set(x, "rotationGizmo", value.asInstanceOf[js.Any])
     
     inline def setRotationGizmoNull: Self = StObject.set(x, "rotationGizmo", null)
     
-    inline def setScaleGizmo(value: Nullable[ScaleGizmo]): Self = StObject.set(x, "scaleGizmo", value.asInstanceOf[js.Any])
+    inline def setScaleGizmo(value: Nullable[IScaleGizmo]): Self = StObject.set(x, "scaleGizmo", value.asInstanceOf[js.Any])
     
     inline def setScaleGizmoNull: Self = StObject.set(x, "scaleGizmo", null)
   }

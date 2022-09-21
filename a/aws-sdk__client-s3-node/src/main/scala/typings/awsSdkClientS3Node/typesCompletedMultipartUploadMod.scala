@@ -2,7 +2,6 @@ package typings.awsSdkClientS3Node
 
 import typings.awsSdkClientS3Node.typesCompletedPartMod.CompletedPart
 import typings.awsSdkClientS3Node.typesCompletedPartMod.UnmarshalledCompletedPart
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object typesCompletedMultipartUploadMod {
     /**
       * _CompletedPartList shape
       */
-    var Parts: js.UndefOr[js.Array[CompletedPart] | Iterable[CompletedPart]] = js.undefined
+    var Parts: js.UndefOr[js.Array[CompletedPart] | js.Iterable[CompletedPart]] = js.undefined
   }
   object CompletedMultipartUpload {
     
@@ -25,11 +24,11 @@ object typesCompletedMultipartUploadMod {
     
     extension [Self <: CompletedMultipartUpload](x: Self) {
       
-      inline def setParts(value: js.Array[CompletedPart] | Iterable[CompletedPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: js.Array[CompletedPart] | js.Iterable[CompletedPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
       
       inline def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
       
-      inline def setPartsVarargs(value: CompletedPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: CompletedPart*): Self = StObject.set(x, "Parts", js.Array(value*))
     }
   }
   
@@ -56,7 +55,7 @@ object typesCompletedMultipartUploadMod {
       
       inline def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
       
-      inline def setPartsVarargs(value: UnmarshalledCompletedPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: UnmarshalledCompletedPart*): Self = StObject.set(x, "Parts", js.Array(value*))
     }
   }
 }

@@ -223,13 +223,13 @@ object SIPml {
         
         inline def setSip_capsUndefined: Self = StObject.set(x, "sip_caps", js.undefined)
         
-        inline def setSip_capsVarargs(value: js.Object*): Self = StObject.set(x, "sip_caps", js.Array(value :_*))
+        inline def setSip_capsVarargs(value: js.Object*): Self = StObject.set(x, "sip_caps", js.Array(value*))
         
         inline def setSip_headers(value: js.Array[js.Object]): Self = StObject.set(x, "sip_headers", value.asInstanceOf[js.Any])
         
         inline def setSip_headersUndefined: Self = StObject.set(x, "sip_headers", js.undefined)
         
-        inline def setSip_headersVarargs(value: js.Object*): Self = StObject.set(x, "sip_headers", js.Array(value :_*))
+        inline def setSip_headersVarargs(value: js.Object*): Self = StObject.set(x, "sip_headers", js.Array(value*))
         
         inline def setVideo_local(value: HTMLElement): Self = StObject.set(x, "video_local", value.asInstanceOf[js.Any])
         
@@ -306,10 +306,10 @@ object SIPml {
          with Session {
       
       def send(to: String): Double = js.native
-      def send(to: String, content: js.Any): Double = js.native
-      def send(to: String, content: js.Any, contentType: String): Double = js.native
-      def send(to: String, content: js.Any, contentType: String, configuration: Configuration): Double = js.native
-      def send(to: String, content: js.Any, contentType: Unit, configuration: Configuration): Double = js.native
+      def send(to: String, content: Any): Double = js.native
+      def send(to: String, content: Any, contentType: String): Double = js.native
+      def send(to: String, content: Any, contentType: String, configuration: Configuration): Double = js.native
+      def send(to: String, content: Any, contentType: Unit, configuration: Configuration): Double = js.native
       def send(to: String, content: Unit, contentType: String): Double = js.native
       def send(to: String, content: Unit, contentType: String, configuration: Configuration): Double = js.native
       def send(to: String, content: Unit, contentType: Unit, configuration: Configuration): Double = js.native
@@ -321,10 +321,10 @@ object SIPml {
          with Session {
       
       def publish(): Double = js.native
-      def publish(content: js.Any): Double = js.native
-      def publish(content: js.Any, contentType: String): Double = js.native
-      def publish(content: js.Any, contentType: String, configuration: Configuration): Double = js.native
-      def publish(content: js.Any, contentType: Unit, configuration: Configuration): Double = js.native
+      def publish(content: Any): Double = js.native
+      def publish(content: Any, contentType: String): Double = js.native
+      def publish(content: Any, contentType: String, configuration: Configuration): Double = js.native
+      def publish(content: Any, contentType: Unit, configuration: Configuration): Double = js.native
       def publish(content: Unit, contentType: String): Double = js.native
       def publish(content: Unit, contentType: String, configuration: Configuration): Double = js.native
       def publish(content: Unit, contentType: Unit, configuration: Configuration): Double = js.native
@@ -372,8 +372,8 @@ object SIPml {
     extends StObject
        with EventTarget[typings.sipml.SIPml.Stack.EventSubscriptionType, typings.sipml.SIPml.Stack.Event] {
     
-    def newSession(`type`: String): js.Any = js.native
-    def newSession(`type`: String, configuration: Configuration): js.Any = js.native
+    def newSession(`type`: String): Any = js.native
+    def newSession(`type`: String, configuration: Configuration): Any = js.native
     
     def setConfiguration(configuration: typings.sipml.SIPml.Stack.Configuration): Double = js.native
     
@@ -459,7 +459,7 @@ object SIPml {
         
         inline def setIce_serversUndefined: Self = StObject.set(x, "ice_servers", js.undefined)
         
-        inline def setIce_serversVarargs(value: js.Object*): Self = StObject.set(x, "ice_servers", js.Array(value :_*))
+        inline def setIce_serversVarargs(value: js.Object*): Self = StObject.set(x, "ice_servers", js.Array(value*))
         
         inline def setImpi(value: String): Self = StObject.set(x, "impi", value.asInstanceOf[js.Any])
         
@@ -485,7 +485,7 @@ object SIPml {
         
         inline def setSip_headersUndefined: Self = StObject.set(x, "sip_headers", js.undefined)
         
-        inline def setSip_headersVarargs(value: js.Object*): Self = StObject.set(x, "sip_headers", js.Array(value :_*))
+        inline def setSip_headersVarargs(value: js.Object*): Self = StObject.set(x, "sip_headers", js.Array(value*))
         
         inline def setVideo_size(value: MaxHeight): Self = StObject.set(x, "video_size", value.asInstanceOf[js.Any])
         

@@ -28,8 +28,8 @@ trait Role[T /* <: Attributes */]
   
   def getUsers[U /* <: User[Attributes] */](): Relation[Role[Attributes], U] = js.native
   
-  def setName(name: String): js.Any = js.native
-  def setName(name: String, options: SuccessFailureOptions): js.Any = js.native
+  def setName(name: String): Any = js.native
+  def setName(name: String, options: SuccessFailureOptions): Any = js.native
 }
 object Role {
   

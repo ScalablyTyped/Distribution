@@ -10,10 +10,10 @@ Lodash mixins for (deep) object accessing / manipulation.
 | ------------------ | :-------------: |
 | Full name          | lodash-deep |
 | Keywords           | lodash, mixin, mixins, deep, object, walking |
-| # releases         | 0 |
-| # dependents       | 66 |
-| # downloads        | 648356 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 68284.66666666667 |
+| # stars            | 220.0 |
 
 ## Links
 - [Homepage](https://github.com/marklagendijk/lodash-deep)

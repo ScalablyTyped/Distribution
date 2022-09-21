@@ -29,7 +29,7 @@ object DataSourceRestriction {
     
     inline def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
     
-    inline def setFilterOptionsVarargs(value: FilterOptions*): Self = StObject.set(x, "filterOptions", js.Array(value :_*))
+    inline def setFilterOptionsVarargs(value: FilterOptions*): Self = StObject.set(x, "filterOptions", js.Array(value*))
     
     inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

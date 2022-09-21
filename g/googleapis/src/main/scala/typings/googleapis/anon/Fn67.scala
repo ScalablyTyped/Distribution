@@ -1,7 +1,7 @@
 package typings.googleapis.anon
 
-import typings.googleapis.fileV1Mod.fileV1.File
-import typings.googleapis.fileV1Mod.fileV1.Options
+import typings.googleapis.composerV1Mod.composerV1.Composer
+import typings.googleapis.composerV1Mod.composerV1.Options
 import typings.googleapis.googleapisStrings.v1
 import typings.googleapis.googleapisStrings.v1beta1
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn67 extends StObject {
   
-  def apply(options: Options): File = js.native
-  def apply(options: typings.googleapis.fileV1beta1Mod.fileV1beta1.Options): typings.googleapis.fileV1beta1Mod.fileV1beta1.File = js.native
-  def apply(version: v1): File = js.native
-  def apply(version: v1beta1): typings.googleapis.fileV1beta1Mod.fileV1beta1.File = js.native
+  def apply(options: Options): Composer = js.native
+  def apply(options: typings.googleapis.composerV1beta1Mod.composerV1beta1.Options): typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer = js.native
+  def apply(version: v1): Composer = js.native
+  def apply(version: v1beta1): typings.googleapis.composerV1beta1Mod.composerV1beta1.Composer = js.native
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PostDispatch[TTarget]
   extends StObject
-     with _SpecialEventHook[TTarget, js.Any] {
+     with _SpecialEventHook[TTarget, Any] {
   
   def postDispatch(event: Event): Unit
 }

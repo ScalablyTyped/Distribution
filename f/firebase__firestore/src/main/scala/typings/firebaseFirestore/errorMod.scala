@@ -1,27 +1,19 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestoreTypes.mod.FirestoreErrorCode
-import typings.std.Error
+import typings.firebaseFirestore.firebaseFirestoreStrings.unknown_
+import typings.firebaseUtil.mod.FirebaseError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/util/error", JSImport.Namespace)
-@js.native
-object errorMod extends js.Object {
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.firebaseFirestoreTypes.mod.FirestoreError because var conflicts: message, name, stack. Inlined code */ @js.native
-  class FirestoreError protected () extends Error {
-    def this(code: Code, message: String) = this()
-    val code: Code | FirestoreErrorCode = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+object errorMod {
   
-  @js.native
-  object Code extends js.Object {
+  object Code {
+    
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * The operation was aborted, typically due to a concurrency issue like
       * sequencer check failures, transaction aborts, etc.
@@ -29,16 +21,32 @@ object errorMod extends js.Object {
       * See litmus test above for deciding between FAILED_PRECONDITION, ABORTED,
       * and UNAVAILABLE.
       */
-    var ABORTED: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.ABORTED")
+    @js.native
+    def ABORTED: FirestoreErrorCode = js.native
+    inline def ABORTED_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABORTED")(x.asInstanceOf[js.Any])
+    
     /**
       * Some entity that we attempted to create (e.g., file or directory) already
       * exists.
       */
-    var ALREADY_EXISTS: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.ALREADY_EXISTS")
+    @js.native
+    def ALREADY_EXISTS: FirestoreErrorCode = js.native
+    inline def ALREADY_EXISTS_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALREADY_EXISTS")(x.asInstanceOf[js.Any])
+    
     /** The operation was cancelled (typically by the caller). */
-    var CANCELLED: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.CANCELLED")
+    @js.native
+    def CANCELLED: FirestoreErrorCode = js.native
+    inline def CANCELLED_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELLED")(x.asInstanceOf[js.Any])
+    
     /** Unrecoverable data loss or corruption. */
-    var DATA_LOSS: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.DATA_LOSS")
+    @js.native
+    def DATA_LOSS: FirestoreErrorCode = js.native
+    inline def DATA_LOSS_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_LOSS")(x.asInstanceOf[js.Any])
+    
     /**
       * Deadline expired before operation could complete. For operations that
       * change the state of the system, this error may be returned even if the
@@ -46,7 +54,11 @@ object errorMod extends js.Object {
       * from a server could have been delayed long enough for the deadline to
       * expire.
       */
-    var DEADLINE_EXCEEDED: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.DEADLINE_EXCEEDED")
+    @js.native
+    def DEADLINE_EXCEEDED: FirestoreErrorCode = js.native
+    inline def DEADLINE_EXCEEDED_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEADLINE_EXCEEDED")(x.asInstanceOf[js.Any])
+    
     /**
       * Operation was rejected because the system is not in a state required for
       * the operation's execution. For example, directory to be deleted may be
@@ -67,23 +79,43 @@ object errorMod extends js.Object {
       *      server does not match the condition. E.g., conflicting
       *      read-modify-write on the same resource.
       */
-    var FAILED_PRECONDITION: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.FAILED_PRECONDITION")
+    @js.native
+    def FAILED_PRECONDITION: FirestoreErrorCode = js.native
+    inline def FAILED_PRECONDITION_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILED_PRECONDITION")(x.asInstanceOf[js.Any])
+    
     /**
       * Internal errors. Means some invariants expected by underlying System has
       * been broken. If you see one of these errors, Something is very broken.
       */
-    var INTERNAL: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.INTERNAL")
+    @js.native
+    def INTERNAL: FirestoreErrorCode = js.native
+    inline def INTERNAL_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERNAL")(x.asInstanceOf[js.Any])
+    
     /**
       * Client specified an invalid argument. Note that this differs from
       * FAILED_PRECONDITION. INVALID_ARGUMENT indicates arguments that are
       * problematic regardless of the state of the system (e.g., a malformed file
       * name).
       */
-    var INVALID_ARGUMENT: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.INVALID_ARGUMENT")
+    @js.native
+    def INVALID_ARGUMENT: FirestoreErrorCode = js.native
+    inline def INVALID_ARGUMENT_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_ARGUMENT")(x.asInstanceOf[js.Any])
+    
     /** Some requested entity (e.g., file or directory) was not found. */
-    var NOT_FOUND: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.NOT_FOUND")
+    @js.native
+    def NOT_FOUND: FirestoreErrorCode = js.native
+    inline def NOT_FOUND_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_FOUND")(x.asInstanceOf[js.Any])
+    
     /** Not an error; returned on success. */
-    var OK: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.OK")
+    @js.native
+    def OK: FirestoreErrorCode = js.native
+    inline def OK_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OK")(x.asInstanceOf[js.Any])
+    
     /**
       * Operation was attempted past the valid range. E.g., seeking or reading
       * past end of file.
@@ -99,7 +131,11 @@ object errorMod extends js.Object {
       * when it applies so that callers who are iterating through a space can
       * easily look for an OUT_OF_RANGE error to detect when they are done.
       */
-    var OUT_OF_RANGE: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.OUT_OF_RANGE")
+    @js.native
+    def OUT_OF_RANGE: FirestoreErrorCode = js.native
+    inline def OUT_OF_RANGE_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUT_OF_RANGE")(x.asInstanceOf[js.Any])
+    
     /**
       * The caller does not have permission to execute the specified operation.
       * PERMISSION_DENIED must not be used for rejections caused by exhausting
@@ -107,17 +143,29 @@ object errorMod extends js.Object {
       * PERMISSION_DENIED must not be used if the caller can not be identified
       * (use UNAUTHENTICATED instead for those errors).
       */
-    var PERMISSION_DENIED: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.PERMISSION_DENIED")
+    @js.native
+    def PERMISSION_DENIED: FirestoreErrorCode = js.native
+    inline def PERMISSION_DENIED_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERMISSION_DENIED")(x.asInstanceOf[js.Any])
+    
     /**
       * Some resource has been exhausted, perhaps a per-user quota, or perhaps the
       * entire file system is out of space.
       */
-    var RESOURCE_EXHAUSTED: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.RESOURCE_EXHAUSTED")
+    @js.native
+    def RESOURCE_EXHAUSTED: FirestoreErrorCode = js.native
+    inline def RESOURCE_EXHAUSTED_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESOURCE_EXHAUSTED")(x.asInstanceOf[js.Any])
+    
     /**
       * The request does not have valid authentication credentials for the
       * operation.
       */
-    var UNAUTHENTICATED: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.UNAUTHENTICATED")
+    @js.native
+    def UNAUTHENTICATED: FirestoreErrorCode = js.native
+    inline def UNAUTHENTICATED_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNAUTHENTICATED")(x.asInstanceOf[js.Any])
+    
     /**
       * The service is currently unavailable. This is a most likely a transient
       * condition and may be corrected by retrying with a backoff.
@@ -125,13 +173,98 @@ object errorMod extends js.Object {
       * See litmus test above for deciding between FAILED_PRECONDITION, ABORTED,
       * and UNAVAILABLE.
       */
-    var UNAVAILABLE: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.UNAVAILABLE")
+    @js.native
+    def UNAVAILABLE: FirestoreErrorCode = js.native
+    inline def UNAVAILABLE_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNAVAILABLE")(x.asInstanceOf[js.Any])
+    
     /** Operation is not implemented or not supported/enabled in this service. */
-    var UNIMPLEMENTED: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.UNIMPLEMENTED")
+    @js.native
+    def UNIMPLEMENTED: FirestoreErrorCode = js.native
+    inline def UNIMPLEMENTED_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNIMPLEMENTED")(x.asInstanceOf[js.Any])
+    
     /** Unknown error or an error from a different error domain. */
-    var UNKNOWN: FirestoreErrorCode = js.native
+    @JSImport("@firebase/firestore/dist/firestore/src/util/error", "Code.UNKNOWN")
+    @js.native
+    def UNKNOWN: FirestoreErrorCode = js.native
+    inline def UNKNOWN_=(x: FirestoreErrorCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN")(x.asInstanceOf[js.Any])
+  }
+  type Code = FirestoreErrorCode
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/util/error", "FirestoreError")
+  @js.native
+  open class FirestoreError protected () extends FirebaseError {
+    /** @hideconstructor */
+    def this(
+      /**
+      * The backend error code associated with this error.
+      */
+    code: FirestoreErrorCode,
+      /**
+      * A custom error description.
+      */
+    message: String
+    ) = this()
+    
+    /**
+      * The backend error code associated with this error.
+      */
+    @JSName("code")
+    val code_FirestoreError: FirestoreErrorCode = js.native
   }
   
-  type Code = FirestoreErrorCode
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebaseFirestore.firebaseFirestoreStrings.cancelled
+    - typings.firebaseFirestore.firebaseFirestoreStrings.unknown_
+    - typings.firebaseFirestore.firebaseFirestoreStrings.`invalid-argument`
+    - typings.firebaseFirestore.firebaseFirestoreStrings.`deadline-exceeded`
+    - typings.firebaseFirestore.firebaseFirestoreStrings.`not-found`
+    - typings.firebaseFirestore.firebaseFirestoreStrings.`already-exists`
+    - typings.firebaseFirestore.firebaseFirestoreStrings.`permission-denied`
+    - typings.firebaseFirestore.firebaseFirestoreStrings.`resource-exhausted`
+    - typings.firebaseFirestore.firebaseFirestoreStrings.`failed-precondition`
+    - typings.firebaseFirestore.firebaseFirestoreStrings.aborted
+    - typings.firebaseFirestore.firebaseFirestoreStrings.`out-of-range`
+    - typings.firebaseFirestore.firebaseFirestoreStrings.unimplemented
+    - typings.firebaseFirestore.firebaseFirestoreStrings.internal
+    - typings.firebaseFirestore.firebaseFirestoreStrings.unavailable
+    - typings.firebaseFirestore.firebaseFirestoreStrings.`data-loss`
+    - typings.firebaseFirestore.firebaseFirestoreStrings.unauthenticated
+  */
+  trait FirestoreErrorCode extends StObject
+  object FirestoreErrorCode {
+    
+    inline def aborted: typings.firebaseFirestore.firebaseFirestoreStrings.aborted = "aborted".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.aborted]
+    
+    inline def `already-exists`: typings.firebaseFirestore.firebaseFirestoreStrings.`already-exists` = "already-exists".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`already-exists`]
+    
+    inline def cancelled: typings.firebaseFirestore.firebaseFirestoreStrings.cancelled = "cancelled".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.cancelled]
+    
+    inline def `data-loss`: typings.firebaseFirestore.firebaseFirestoreStrings.`data-loss` = "data-loss".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`data-loss`]
+    
+    inline def `deadline-exceeded`: typings.firebaseFirestore.firebaseFirestoreStrings.`deadline-exceeded` = "deadline-exceeded".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`deadline-exceeded`]
+    
+    inline def `failed-precondition`: typings.firebaseFirestore.firebaseFirestoreStrings.`failed-precondition` = "failed-precondition".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`failed-precondition`]
+    
+    inline def internal: typings.firebaseFirestore.firebaseFirestoreStrings.internal = "internal".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.internal]
+    
+    inline def `invalid-argument`: typings.firebaseFirestore.firebaseFirestoreStrings.`invalid-argument` = "invalid-argument".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`invalid-argument`]
+    
+    inline def `not-found`: typings.firebaseFirestore.firebaseFirestoreStrings.`not-found` = "not-found".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`not-found`]
+    
+    inline def `out-of-range`: typings.firebaseFirestore.firebaseFirestoreStrings.`out-of-range` = "out-of-range".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`out-of-range`]
+    
+    inline def `permission-denied`: typings.firebaseFirestore.firebaseFirestoreStrings.`permission-denied` = "permission-denied".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`permission-denied`]
+    
+    inline def `resource-exhausted`: typings.firebaseFirestore.firebaseFirestoreStrings.`resource-exhausted` = "resource-exhausted".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`resource-exhausted`]
+    
+    inline def unauthenticated: typings.firebaseFirestore.firebaseFirestoreStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.unauthenticated]
+    
+    inline def unavailable: typings.firebaseFirestore.firebaseFirestoreStrings.unavailable = "unavailable".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.unavailable]
+    
+    inline def unimplemented: typings.firebaseFirestore.firebaseFirestoreStrings.unimplemented = "unimplemented".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.unimplemented]
+    
+    inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  }
 }
-

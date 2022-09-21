@@ -3,7 +3,6 @@ package typings.babelPresetEnv
 import typings.babelPresetEnv.babelPresetEnvBooleans.`true`
 import typings.babelPresetEnv.babelPresetEnvStrings.current
 import typings.babelPresetEnv.babelPresetEnvStrings.tp
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,7 +117,7 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: PluginListItem*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: PluginListItem*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setForceAllTransforms(value: Boolean): Self = StObject.set(x, "forceAllTransforms", value.asInstanceOf[js.Any])
       
@@ -132,7 +131,7 @@ object mod {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: PluginListItem*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: PluginListItem*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
       
@@ -154,7 +153,7 @@ object mod {
       
       inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      inline def setTargetsVarargs(value: BrowserslistQuery*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: BrowserslistQuery*): Self = StObject.set(x, "targets", js.Array(value*))
       
       inline def setUseBuiltIns(value: UseBuiltInsOption): Self = StObject.set(x, "useBuiltIns", value.asInstanceOf[js.Any])
       
@@ -164,7 +163,7 @@ object mod {
   
   type PluginList = js.Array[PluginListItem]
   
-  type PluginListItem = String | RegExp
+  type PluginListItem = String | js.RegExp
   
   /* Rewritten from type alias, can be one of: 
     - typings.babelPresetEnv.babelPresetEnvStrings.Android

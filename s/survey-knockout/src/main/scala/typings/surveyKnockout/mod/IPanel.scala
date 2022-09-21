@@ -5,78 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.surveyKnockout.mod.IParentElement because var conflicts: isReadOnly. Inlined addElement, removeElement */ trait IPanel
+- typings.surveyKnockout.mod.IParentElement because var conflicts: isReadOnly. Inlined addElement, removeElement */ @js.native
+trait IPanel
   extends StObject
      with ISurveyElement {
   
-  def addElement(element: IElement, index: Double): js.Any
+  def addElement(element: IElement, index: Double): Any = js.native
   
-  def elementWidthChanged(el: IElement): js.Any
+  def elementWidthChanged(el: IElement): Any = js.native
   
-  var elements: js.Array[IElement]
+  var elements: Any = js.native
   
-  def getChildrenLayoutType(): String
+  def ensureRowsVisibility(): Unit = js.native
   
-  def getQuestionStartIndex(): String
+  def getChildrenLayoutType(): String = js.native
   
-  def getQuestionTitleLocation(): String
+  def getQuestionStartIndex(): String = js.native
   
-  def indexOf(el: IElement): Double
+  def getQuestionTitleLocation(): String = js.native
   
-  var parent: IPanel
+  def indexOf(el: IElement): Double = js.native
   
-  def removeElement(element: IElement): Boolean
-}
-object IPanel {
-  
-  inline def apply(
-    addElement: (IElement, Double) => js.Any,
-    containsErrors: Boolean,
-    delete: () => js.Any,
-    elementWidthChanged: IElement => js.Any,
-    elements: js.Array[IElement],
-    getChildrenLayoutType: () => String,
-    getQuestionStartIndex: () => String,
-    getQuestionTitleLocation: () => String,
-    getType: () => String,
-    indexOf: IElement => Double,
-    isPage: Boolean,
-    isPanel: Boolean,
-    isReadOnly: Boolean,
-    isVisible: Boolean,
-    locStrsChanged: () => js.Any,
-    name: String,
-    onFirstRendering: () => js.Any,
-    onSurveyLoad: () => js.Any,
-    parent: IPanel,
-    removeElement: IElement => Boolean,
-    setSurveyImpl: ISurveyImpl => js.Any,
-    setVisibleIndex: Double => Double
-  ): IPanel = {
-    val __obj = js.Dynamic.literal(addElement = js.Any.fromFunction2(addElement), containsErrors = containsErrors.asInstanceOf[js.Any], delete = js.Any.fromFunction0(delete), elementWidthChanged = js.Any.fromFunction1(elementWidthChanged), elements = elements.asInstanceOf[js.Any], getChildrenLayoutType = js.Any.fromFunction0(getChildrenLayoutType), getQuestionStartIndex = js.Any.fromFunction0(getQuestionStartIndex), getQuestionTitleLocation = js.Any.fromFunction0(getQuestionTitleLocation), getType = js.Any.fromFunction0(getType), indexOf = js.Any.fromFunction1(indexOf), isPage = isPage.asInstanceOf[js.Any], isPanel = isPanel.asInstanceOf[js.Any], isReadOnly = isReadOnly.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], locStrsChanged = js.Any.fromFunction0(locStrsChanged), name = name.asInstanceOf[js.Any], onFirstRendering = js.Any.fromFunction0(onFirstRendering), onSurveyLoad = js.Any.fromFunction0(onSurveyLoad), parent = parent.asInstanceOf[js.Any], removeElement = js.Any.fromFunction1(removeElement), setSurveyImpl = js.Any.fromFunction1(setSurveyImpl), setVisibleIndex = js.Any.fromFunction1(setVisibleIndex))
-    __obj.asInstanceOf[IPanel]
-  }
-  
-  extension [Self <: IPanel](x: Self) {
-    
-    inline def setAddElement(value: (IElement, Double) => js.Any): Self = StObject.set(x, "addElement", js.Any.fromFunction2(value))
-    
-    inline def setElementWidthChanged(value: IElement => js.Any): Self = StObject.set(x, "elementWidthChanged", js.Any.fromFunction1(value))
-    
-    inline def setElements(value: js.Array[IElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
-    
-    inline def setElementsVarargs(value: IElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
-    
-    inline def setGetChildrenLayoutType(value: () => String): Self = StObject.set(x, "getChildrenLayoutType", js.Any.fromFunction0(value))
-    
-    inline def setGetQuestionStartIndex(value: () => String): Self = StObject.set(x, "getQuestionStartIndex", js.Any.fromFunction0(value))
-    
-    inline def setGetQuestionTitleLocation(value: () => String): Self = StObject.set(x, "getQuestionTitleLocation", js.Any.fromFunction0(value))
-    
-    inline def setIndexOf(value: IElement => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
-    
-    inline def setParent(value: IPanel): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
-    
-    inline def setRemoveElement(value: IElement => Boolean): Self = StObject.set(x, "removeElement", js.Any.fromFunction1(value))
-  }
+  def removeElement(element: IElement): Boolean = js.native
 }

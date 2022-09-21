@@ -53,13 +53,13 @@ object ModifyReplicationGroupShardConfigurationMessage {
     
     inline def setNodeGroupsToRemoveUndefined: Self = StObject.set(x, "NodeGroupsToRemove", js.undefined)
     
-    inline def setNodeGroupsToRemoveVarargs(value: AllowedNodeGroupId*): Self = StObject.set(x, "NodeGroupsToRemove", js.Array(value :_*))
+    inline def setNodeGroupsToRemoveVarargs(value: AllowedNodeGroupId*): Self = StObject.set(x, "NodeGroupsToRemove", js.Array(value*))
     
     inline def setNodeGroupsToRetain(value: NodeGroupsToRetainList): Self = StObject.set(x, "NodeGroupsToRetain", value.asInstanceOf[js.Any])
     
     inline def setNodeGroupsToRetainUndefined: Self = StObject.set(x, "NodeGroupsToRetain", js.undefined)
     
-    inline def setNodeGroupsToRetainVarargs(value: AllowedNodeGroupId*): Self = StObject.set(x, "NodeGroupsToRetain", js.Array(value :_*))
+    inline def setNodeGroupsToRetainVarargs(value: AllowedNodeGroupId*): Self = StObject.set(x, "NodeGroupsToRetain", js.Array(value*))
     
     inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
@@ -67,6 +67,6 @@ object ModifyReplicationGroupShardConfigurationMessage {
     
     inline def setReshardingConfigurationUndefined: Self = StObject.set(x, "ReshardingConfiguration", js.undefined)
     
-    inline def setReshardingConfigurationVarargs(value: ReshardingConfiguration*): Self = StObject.set(x, "ReshardingConfiguration", js.Array(value :_*))
+    inline def setReshardingConfigurationVarargs(value: ReshardingConfiguration*): Self = StObject.set(x, "ReshardingConfiguration", js.Array(value*))
   }
 }

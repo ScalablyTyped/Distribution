@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "SurveyTriggerComplete")
 @js.native
-class SurveyTriggerComplete () extends SurveyTrigger
+open class SurveyTriggerComplete () extends SurveyTrigger

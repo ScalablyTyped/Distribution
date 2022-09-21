@@ -12,7 +12,7 @@ object mailComposerMod {
   /** Creates the object for composing a MimeNode instance out from the mail options */
   @JSImport("nodemailer/lib/mail-composer", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with MailComposer {
     def this(mail: Options) = this()

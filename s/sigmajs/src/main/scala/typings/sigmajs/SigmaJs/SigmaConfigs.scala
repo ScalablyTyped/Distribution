@@ -16,7 +16,7 @@ trait SigmaConfigs extends StObject {
   
   var renderers: js.UndefOr[js.Array[Renderer]] = js.undefined
   
-  var settings: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var settings: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object SigmaConfigs {
   
@@ -43,9 +43,9 @@ object SigmaConfigs {
     
     inline def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)
     
-    inline def setRenderersVarargs(value: Renderer*): Self = StObject.set(x, "renderers", js.Array(value :_*))
+    inline def setRenderersVarargs(value: Renderer*): Self = StObject.set(x, "renderers", js.Array(value*))
     
-    inline def setSettings(value: StringDictionary[js.Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: StringDictionary[Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
   }

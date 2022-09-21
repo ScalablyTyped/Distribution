@@ -14,7 +14,7 @@ trait GetPhoneNumberSettingsResponse extends StObject {
   /**
     * The updated outbound calling name timestamp, in ISO 8601 format.
     */
-  var CallingNameUpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var CallingNameUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object GetPhoneNumberSettingsResponse {
   
@@ -29,7 +29,7 @@ object GetPhoneNumberSettingsResponse {
     
     inline def setCallingNameUndefined: Self = StObject.set(x, "CallingName", js.undefined)
     
-    inline def setCallingNameUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CallingNameUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCallingNameUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "CallingNameUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCallingNameUpdatedTimestampUndefined: Self = StObject.set(x, "CallingNameUpdatedTimestamp", js.undefined)
   }

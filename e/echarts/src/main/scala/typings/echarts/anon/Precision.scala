@@ -139,7 +139,7 @@ trait Precision extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.data
     */
-  var data: js.UndefOr[`12`] = js.undefined
+  var data: js.UndefOr[`13`] = js.undefined
   
   /**
     * Mark line text.
@@ -188,7 +188,7 @@ trait Precision extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.symbol
     */
-  var symbol: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+  var symbol: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   /**
     * Symbol size at the two ends of the mark line.
@@ -200,7 +200,7 @@ trait Precision extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.markLine.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
 }
 object Precision {
   
@@ -243,7 +243,7 @@ object Precision {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setData(value: `12`): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: `13`): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -263,16 +263,16 @@ object Precision {
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setSymbol(value: js.Array[js.Any] | String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: js.Array[Any] | String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+    inline def setSymbolSize(value: js.Array[Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
     
     inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
     
-    inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+    inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    inline def setSymbolVarargs(value: js.Any*): Self = StObject.set(x, "symbol", js.Array(value :_*))
+    inline def setSymbolVarargs(value: Any*): Self = StObject.set(x, "symbol", js.Array(value*))
   }
 }

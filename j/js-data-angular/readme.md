@@ -10,15 +10,12 @@ Angular wrapper for js-data.
 | ------------------ | :-------------: |
 | Full name          | js-data-angular |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 91094 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5996.0 |
+| # stars            | 983.0 |
 
 ## Links
-- [Homepage](https://github.com/js-data/js-data-angular#readme)
-- [Bugs](https://github.com/js-data/js-data-angular/issues)
-- [Repository](https://github.com/js-data/js-data-angular)
 - [Npm](https://www.npmjs.com/package/js-data-angular)
     
 

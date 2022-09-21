@@ -19,6 +19,6 @@ object RuleSet {
     
     inline def setRules(value: js.Array[TransformationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: TransformationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: TransformationRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

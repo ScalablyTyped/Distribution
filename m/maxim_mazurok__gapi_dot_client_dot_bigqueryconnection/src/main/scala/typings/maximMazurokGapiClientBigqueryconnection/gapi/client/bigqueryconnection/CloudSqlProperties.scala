@@ -15,6 +15,12 @@ trait CloudSqlProperties extends StObject {
   /** Cloud SQL instance ID in the form `project:location:instance`. */
   var instanceId: js.UndefOr[String] = js.undefined
   
+  /**
+    * Output only. The account ID of the service used for the purpose of this connection. When the connection is used in the context of an operation in BigQuery, this service account will
+    * serve as the identity being used for connecting to the CloudSQL instance specified in this connection.
+    */
+  var serviceAccountId: js.UndefOr[String] = js.undefined
+  
   /** Type of the Cloud SQL database. */
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -38,6 +44,10 @@ object CloudSqlProperties {
     inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
     inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+    
+    inline def setServiceAccountId(value: String): Self = StObject.set(x, "serviceAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAccountIdUndefined: Self = StObject.set(x, "serviceAccountId", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

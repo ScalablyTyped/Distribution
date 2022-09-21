@@ -46,7 +46,7 @@ object integrationMod {
   @js.native
   trait IntegrationClass[T]
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, T] {
+       with Instantiable1[/* args (repeated) */ Any, T] {
     
     /**
       * Property that holds the integration name

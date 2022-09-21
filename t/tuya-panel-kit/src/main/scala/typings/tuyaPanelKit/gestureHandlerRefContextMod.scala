@@ -3,7 +3,7 @@ package typings.tuyaPanelKit
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Context
 import typings.react.mod.Ref
-import typings.reactNativeGestureHandler.mod.PanGestureHandler
+import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

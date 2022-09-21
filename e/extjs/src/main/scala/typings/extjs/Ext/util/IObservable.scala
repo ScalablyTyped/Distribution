@@ -13,7 +13,7 @@ trait IObservable
   /** [Method] Adds the specified events to the list of events which this Observable may fire
     * @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
     */
-  var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Appends an event handler to this object
     * @param eventName String/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -24,11 +24,11 @@ trait IObservable
     */
   var addListener: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      js.Any
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -42,12 +42,12 @@ trait IObservable
     */
   var addManagedListener: js.UndefOr[
     js.Function5[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      js.Any
+      /* item */ js.UndefOr[Any], 
+      /* ename */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -60,14 +60,14 @@ trait IObservable
   /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
     * @param eventNames String/String[] The event name to bubble, or an Array of event names.
     */
-  var enableBubble: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var enableBubble: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
     * @param eventName String The name of the event to fire.
     * @param args Object... Variable number of parameters are passed to handlers.
     * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
     */
-  var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
+  var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ Any, Boolean]] = js.undefined
   
   /** [Method] Fires the specified event with the passed parameter list
     * @param eventName String The name of the event to fire.
@@ -85,13 +85,13 @@ trait IObservable
   var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[String], Boolean]] = js.undefined
   
   /** [Property] (Object) */
-  var hasListeners: js.UndefOr[js.Any] = js.undefined
+  var hasListeners: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Boolean) */
   var isObservable: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var listeners: js.UndefOr[js.Any] = js.undefined
+  var listeners: js.UndefOr[Any] = js.undefined
   
   /** [Method] Shorthand for addManagedListener
     * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
@@ -103,12 +103,12 @@ trait IObservable
     */
   var mon: js.UndefOr[
     js.Function5[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      js.Any
+      /* item */ js.UndefOr[Any], 
+      /* ename */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -120,10 +120,10 @@ trait IObservable
     */
   var mun: js.UndefOr[
     js.Function4[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
+      /* ename */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -137,11 +137,11 @@ trait IObservable
     */
   var on: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      js.Any
+      /* eventName */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -153,10 +153,10 @@ trait IObservable
     */
   var relayEvents: js.UndefOr[
     js.Function3[
-      /* origin */ js.UndefOr[js.Any], 
+      /* origin */ js.UndefOr[Any], 
       /* events */ js.UndefOr[Array], 
       /* prefix */ js.UndefOr[String], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -168,8 +168,8 @@ trait IObservable
   var removeListener: js.UndefOr[
     js.Function3[
       /* eventName */ js.UndefOr[String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -182,10 +182,10 @@ trait IObservable
     */
   var removeManagedListener: js.UndefOr[
     js.Function4[
-      /* item */ js.UndefOr[js.Any], 
-      /* ename */ js.UndefOr[js.Any], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
+      /* ename */ js.UndefOr[Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -193,7 +193,7 @@ trait IObservable
   /** [Method] Resumes firing of the named event s
     * @param eventName String... Multiple event names to resume.
     */
-  var resumeEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var resumeEvent: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   /** [Method] Resumes firing events see suspendEvents */
   var resumeEvents: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -201,7 +201,7 @@ trait IObservable
   /** [Method] Suspends firing of the named event s
     * @param eventName String... Multiple event names to suspend.
     */
-  var suspendEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var suspendEvent: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   /** [Method] Suspends the firing of all events
     * @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
@@ -216,8 +216,8 @@ trait IObservable
   var un: js.UndefOr[
     js.Function3[
       /* eventName */ js.UndefOr[String], 
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -231,18 +231,18 @@ object IObservable {
   
   extension [Self <: IObservable](x: Self) {
     
-    inline def setAddEvents(value: /* eventNames */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
+    inline def setAddEvents(value: /* eventNames */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
     
     inline def setAddEventsUndefined: Self = StObject.set(x, "addEvents", js.undefined)
     
     inline def setAddListener(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
     
     inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
     
     inline def setAddManagedListener(
-      value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      value: (/* item */ js.UndefOr[Any], /* ename */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "addManagedListener", js.Any.fromFunction5(value))
     
     inline def setAddManagedListenerUndefined: Self = StObject.set(x, "addManagedListener", js.undefined)
@@ -255,11 +255,11 @@ object IObservable {
     
     inline def setClearManagedListenersUndefined: Self = StObject.set(x, "clearManagedListeners", js.undefined)
     
-    inline def setEnableBubble(value: /* eventNames */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
+    inline def setEnableBubble(value: /* eventNames */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
     
     inline def setEnableBubbleUndefined: Self = StObject.set(x, "enableBubble", js.undefined)
     
-    inline def setFireEvent(value: (/* eventName */ String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
+    inline def setFireEvent(value: (/* eventName */ String, /* repeated */ Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
     
     inline def setFireEventArgs(value: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array]) => Boolean): Self = StObject.set(x, "fireEventArgs", js.Any.fromFunction2(value))
     
@@ -271,7 +271,7 @@ object IObservable {
     
     inline def setHasListenerUndefined: Self = StObject.set(x, "hasListener", js.undefined)
     
-    inline def setHasListeners(value: js.Any): Self = StObject.set(x, "hasListeners", value.asInstanceOf[js.Any])
+    inline def setHasListeners(value: Any): Self = StObject.set(x, "hasListeners", value.asInstanceOf[js.Any])
     
     inline def setHasListenersUndefined: Self = StObject.set(x, "hasListeners", js.undefined)
     
@@ -279,47 +279,47 @@ object IObservable {
     
     inline def setIsObservableUndefined: Self = StObject.set(x, "isObservable", js.undefined)
     
-    inline def setListeners(value: js.Any): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: Any): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
     inline def setMon(
-      value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      value: (/* item */ js.UndefOr[Any], /* ename */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "mon", js.Any.fromFunction5(value))
     
     inline def setMonUndefined: Self = StObject.set(x, "mon", js.undefined)
     
     inline def setMun(
-      value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* item */ js.UndefOr[Any], /* ename */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "mun", js.Any.fromFunction4(value))
     
     inline def setMunUndefined: Self = StObject.set(x, "mun", js.undefined)
     
     inline def setOn(
-      value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     inline def setRelayEvents(
-      value: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => js.Any
+      value: (/* origin */ js.UndefOr[Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[String]) => Any
     ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction3(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
     inline def setRemoveListener(
-      value: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
     
     inline def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
     
     inline def setRemoveManagedListener(
-      value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* item */ js.UndefOr[Any], /* ename */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "removeManagedListener", js.Any.fromFunction4(value))
     
     inline def setRemoveManagedListenerUndefined: Self = StObject.set(x, "removeManagedListener", js.undefined)
     
-    inline def setResumeEvent(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "resumeEvent", js.Any.fromFunction1(value))
+    inline def setResumeEvent(value: /* repeated */ Any => Unit): Self = StObject.set(x, "resumeEvent", js.Any.fromFunction1(value))
     
     inline def setResumeEventUndefined: Self = StObject.set(x, "resumeEvent", js.undefined)
     
@@ -327,7 +327,7 @@ object IObservable {
     
     inline def setResumeEventsUndefined: Self = StObject.set(x, "resumeEvents", js.undefined)
     
-    inline def setSuspendEvent(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "suspendEvent", js.Any.fromFunction1(value))
+    inline def setSuspendEvent(value: /* repeated */ Any => Unit): Self = StObject.set(x, "suspendEvent", js.Any.fromFunction1(value))
     
     inline def setSuspendEventUndefined: Self = StObject.set(x, "suspendEvent", js.undefined)
     
@@ -336,7 +336,7 @@ object IObservable {
     inline def setSuspendEventsUndefined: Self = StObject.set(x, "suspendEvents", js.undefined)
     
     inline def setUn(
-      value: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* eventName */ js.UndefOr[String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "un", js.Any.fromFunction3(value))
     
     inline def setUnUndefined: Self = StObject.set(x, "un", js.undefined)

@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object messageItemMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Message/MessageItem", JSImport.Default)
   @js.native
-  val default: StatelessComponent[MessageItemProps] = js.native
+  val default: FC[MessageItemProps] = js.native
   
   trait MessageItemProps
     extends StObject
        with StrictMessageItemProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object MessageItemProps {
     
     inline def apply(): MessageItemProps = {
@@ -30,7 +30,7 @@ object messageItemMod extends Shortcut {
   trait StrictMessageItemProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object messageItemMod extends Shortcut {
     
     extension [Self <: StrictMessageItemProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object messageItemMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[MessageItemProps]
+  type _To = FC[MessageItemProps]
   
   /* This means you don't have to write `default`, but can instead just say `messageItemMod.foo` */
-  override def _to: StatelessComponent[MessageItemProps] = default
+  override def _to: FC[MessageItemProps] = default
 }

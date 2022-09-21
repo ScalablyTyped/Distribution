@@ -31,12 +31,12 @@ object ChartParallelAxesResizeControlledAxisOptions {
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    inline def setNextVarargs(value: (Double | String)*): Self = StObject.set(x, "next", js.Array(value :_*))
+    inline def setNextVarargs(value: (Double | String)*): Self = StObject.set(x, "next", js.Array(value*))
     
     inline def setPrev(value: js.Array[Double | String]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
     inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
-    inline def setPrevVarargs(value: (Double | String)*): Self = StObject.set(x, "prev", js.Array(value :_*))
+    inline def setPrevVarargs(value: (Double | String)*): Self = StObject.set(x, "prev", js.Array(value*))
   }
 }

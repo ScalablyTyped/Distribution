@@ -29,12 +29,12 @@ object ShareDetails {
     
     inline def setShareErrorsUndefined: Self = StObject.set(x, "ShareErrors", js.undefined)
     
-    inline def setShareErrorsVarargs(value: ShareError*): Self = StObject.set(x, "ShareErrors", js.Array(value :_*))
+    inline def setShareErrorsVarargs(value: ShareError*): Self = StObject.set(x, "ShareErrors", js.Array(value*))
     
     inline def setSuccessfulShares(value: SuccessfulShares): Self = StObject.set(x, "SuccessfulShares", value.asInstanceOf[js.Any])
     
     inline def setSuccessfulSharesUndefined: Self = StObject.set(x, "SuccessfulShares", js.undefined)
     
-    inline def setSuccessfulSharesVarargs(value: AccountId*): Self = StObject.set(x, "SuccessfulShares", js.Array(value :_*))
+    inline def setSuccessfulSharesVarargs(value: AccountId*): Self = StObject.set(x, "SuccessfulShares", js.Array(value*))
   }
 }

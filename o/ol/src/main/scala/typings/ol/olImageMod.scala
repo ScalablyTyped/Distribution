@@ -16,7 +16,7 @@ object olImageMod {
   
   @JSImport("ol/Image", JSImport.Default)
   @js.native
-  class default protected () extends ImageWrapper {
+  open class default protected () extends ImageWrapper {
     def this(
       extent: Extent,
       resolution: Double,
@@ -35,9 +35,9 @@ object olImageMod {
     ) = this()
   }
   
-  inline def listenImage(image: HTMLCanvasElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  inline def listenImage(image: HTMLImageElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  inline def listenImage(image: HTMLVideoElement, loadHandler: js.Function0[js.Any], errorHandler: js.Function0[js.Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenImage(image: HTMLCanvasElement, loadHandler: js.Function0[Any], errorHandler: js.Function0[Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenImage(image: HTMLImageElement, loadHandler: js.Function0[Any], errorHandler: js.Function0[Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listenImage(image: HTMLVideoElement, loadHandler: js.Function0[Any], errorHandler: js.Function0[Any]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listenImage")(image.asInstanceOf[js.Any], loadHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @js.native
   trait ImageWrapper

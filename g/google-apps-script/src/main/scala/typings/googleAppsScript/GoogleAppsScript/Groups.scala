@@ -95,7 +95,7 @@ object Groups {
     */
   trait GroupsApp extends StObject {
     
-    var Role: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ js.Any
+    var Role: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ Any
     
     def getGroupByEmail(email: String): Group
     
@@ -104,7 +104,7 @@ object Groups {
   object GroupsApp {
     
     inline def apply(
-      Role: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ js.Any,
+      Role: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ Any,
       getGroupByEmail: String => Group,
       getGroups: () => js.Array[Group]
     ): GroupsApp = {
@@ -118,7 +118,7 @@ object Groups {
       
       inline def setGetGroups(value: () => js.Array[Group]): Self = StObject.set(x, "getGroups", js.Any.fromFunction0(value))
       
-      inline def setRole(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ js.Any): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+      inline def setRole(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Role */ Any): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     }
   }
 }

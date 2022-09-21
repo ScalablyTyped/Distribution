@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Media.VideoEffects")
 @js.native
-class VideoEffects ()
+open class VideoEffects ()
   extends StObject
      with typings.winrt.Windows.Media.VideoEffects
 /* static members */

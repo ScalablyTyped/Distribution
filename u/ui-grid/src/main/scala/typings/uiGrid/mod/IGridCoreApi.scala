@@ -12,9 +12,9 @@ trait IGridCoreApi[TEntity] extends StObject {
   // Methods
   /**
     * adds a row header column to the grid
-    * @param {IColumnDef} column Column Definition
-    * @param {number} order Number that indicates where the column should be placed in the grid.
-    * @param {boolean} stopColumnBuild Prevents the buildColumn callback from being triggered. This is useful to improve performance of the grid during initial load.
+    * @param column Column Definition
+    * @param order Number that indicates where the column should be placed in the grid.
+    * @param stopColumnBuild Prevents the buildColumn callback from being triggered. This is useful to improve performance of the grid during initial load.
     */
   def addRowHeaderColumn(column: IColumnDefOf[TEntity]): Unit = js.native
   def addRowHeaderColumn(column: IColumnDefOf[TEntity], order: Double): Unit = js.native
@@ -28,8 +28,8 @@ trait IGridCoreApi[TEntity] extends StObject {
     * remove again, which can simplify management of which items are included
     * in the menu when.  (Noting that in most cases the shown and active functions
     * provide a better way to handle visibility of menu items)
-    * @param {IGridInstance} grid the grid on which we are acting
-    * @param {Array<IMenuItem>} items menu items in the format as described in the tutorial, with
+    * @param grid the grid on which we are acting
+    * @param items menu items in the format as described in the tutorial, with
     * the added note that if you want to use remove you must also specify an `id` field,
     * which is provided when you want to remove an item.  The id should be unique.
     */
@@ -37,10 +37,10 @@ trait IGridCoreApi[TEntity] extends StObject {
   
   /**
     * Clears all filters and optionally refreshes the visible rows.
-    * @param {boolean} [refreshRows=true] Defaults to true.
-    * @param {boolean} [clearConditions=false] Defaults to false.
-    * @param {boolean} [clearFlags=false] Defaults to false.
-    * @returns {ng.IPromise<any>} If `refreshRows` is true, returns a promise of the rows refreshing.
+    * @param [refreshRows=true] Defaults to true.
+    * @param [clearConditions=false] Defaults to false.
+    * @param [clearFlags=false] Defaults to false.
+    * @returns If `refreshRows` is true, returns a promise of the rows refreshing.
     */
   def clearAllFilters(): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
   def clearAllFilters(refreshRows: Boolean): IPromise[js.Array[IGridRowOf[TEntity]]] = js.native
@@ -57,13 +57,13 @@ trait IGridCoreApi[TEntity] extends StObject {
     * If the row is currently invisible then sets it to visible and calls
     * both grid refresh and emits the rowsVisibleChanged event
     * TODO: if a filter is active then we can't just set it to visible?
-    * @param {TEntity} rowEntity gridOptions.data[] array instance
+    * @param rowEntity gridOptions.data[] array instance
     */
   def clearRowInvisible(rowEntity: TEntity): Unit = js.native
   
   /**
     * Returns all visible rows
-    * @returns {Array<IGridRow>} an array of gridRow
+    * @returns an array of gridRow
     */
   def getVisibleRows(): js.Array[IGridRowOf[TEntity]] = js.native
   
@@ -71,7 +71,7 @@ trait IGridCoreApi[TEntity] extends StObject {
     * Trigger a grid resize, normally this would be picked
     * up by a watch on window size, but in some circumstances it is necessary
     * to call this manually
-    * @returns {ng.IPromise<any>} promise that is resolved when render completes?
+    * @returns promise that is resolved when render completes?
     */
   def handleWindowResize(): Unit = js.native
   
@@ -81,7 +81,7 @@ trait IGridCoreApi[TEntity] extends StObject {
     * might be particularly relevant where you've changed values within the data
     * and you'd like cell classes to be re-evaluated, or changed config within
     * the columnDef and you'd like headerCellClasses to be re-evaluated.
-    * @param {string} type one of the
+    * @param type one of the
     *        uiGridConstants.dataChange values (ALL, ROW, EDIT, COLUMN), which tells
     *        us which refreshes to fire.
     */
@@ -103,14 +103,14 @@ trait IGridCoreApi[TEntity] extends StObject {
   /**
     * Refresh the rendered grid on screen.
     *
-    * @param {boolean} [rowsAltered] Optional flag for refreshing when the number of rows has changed.
+    * @param [rowsAltered] Optional flag for refreshing when the number of rows has changed.
     */
-  def refresh(): IPromise[js.Any] = js.native
-  def refresh(rowsAltered: Boolean): IPromise[js.Any] = js.native
+  def refresh(): IPromise[Any] = js.native
+  def refresh(rowsAltered: Boolean): IPromise[Any] = js.native
   
   /**
     * Refresh the rendered rows on screen?  Note: not functional at present
-    * @returns {ng.IPromise<any>} promise that is resolved when render completes?
+    * @returns promise that is resolved when render completes?
     */
   def refreshRows(): IPromise[Boolean] = js.native
   
@@ -120,10 +120,10 @@ trait IGridCoreApi[TEntity] extends StObject {
     * to alter the set of columns as long as the count is not
     * modified.
     *
-    * @param {IColumnProcessor} processorFunction columns processor function, which
+    * @param processorFunction columns processor function, which
     *        is run in the context of the grid (i.e. this for the function will be the grid), and must
     *        return the updated columns list, which is passed to the next processor in the chain
-    * @param {number} priority the priority of this processor.  In general we try to do them in 100s to leave room
+    * @param priority the priority of this processor.  In general we try to do them in 100s to leave room
     *        for other people to inject columns processors at intermediate priorities.  Lower priority
     *        columnsProcessors run earlier.
     *
@@ -138,10 +138,10 @@ trait IGridCoreApi[TEntity] extends StObject {
     * to alter the set of rows (sorting, etc) as long as the count is not
     * modified.
     *
-    * @param {IRowProcessor} rowProcessor rows processor function, which
+    * @param rowProcessor rows processor function, which
     *        is run in the context of the grid (i.e. this for the function will be the grid), and must
     *        return the updated rows list, which is passed to the next processor in the chain
-    * @param {number} priority the priority of this processor.  In general we try to do them in 100s to leave room
+    * @param priority the priority of this processor.  In general we try to do them in 100s to leave room
     *        for other people to inject rows processors at intermediate priorities.  Lower priority rowsProcessors
     *        run earlier.
     *
@@ -153,9 +153,9 @@ trait IGridCoreApi[TEntity] extends StObject {
   /**
     * Scroll the grid such that the specified
     * row and column is in view
-    * @param {TEntity} entity gridOptions.data[] array instance to make visible
-    * @param {IColumnDef} colDef to make visible
-    * @returns {ng.IPromise<any>} a promise that is resolved after any scrolling is finished
+    * @param entity gridOptions.data[] array instance to make visible
+    * @param colDef to make visible
+    * @returns a promise that is resolved after any scrolling is finished
     */
   def scrollTo(entity: TEntity, colDef: IColumnDefOf[TEntity]): Unit = js.native
   
@@ -163,19 +163,19 @@ trait IGridCoreApi[TEntity] extends StObject {
   /**
     * Scrolls the grid to make a certain row and column combo visible,
     * in the case that it is not completely visible on the screen already.
-    * @param {IGridRow} gridRow row to make visible
-    * @param {IGridColumn} gridCol column to make visible
-    * @returns {ng.IPromise<any>} a promise that is resolved when scrolling is complete
+    * @param gridRow row to make visible
+    * @param gridCol column to make visible
+    * @returns a promise that is resolved when scrolling is complete
     */
   def scrollToIfNecessary(gridRow: IGridRowOf[TEntity], gridCol: IGridColumnOf[TEntity]): Unit = js.native
   
   /**
     * A null handling method that can be used when building custom sort
     * functions
-    * @param {any} a Sort value a
-    * @param {any} b Sort value b
-    * @returns {number} null if there were no nulls/undefineds, otherwise returns
+    * @param a Sort value a
+    * @param b Sort value b
+    * @returns null if there were no nulls/undefineds, otherwise returns
     * a sort value that should be passed back from the sort function
     */
-  def sortHandleNulls(a: js.Any, b: js.Any): Double = js.native
+  def sortHandleNulls(a: Any, b: Any): Double = js.native
 }

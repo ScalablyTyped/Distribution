@@ -50,7 +50,7 @@ object GoogleCloudVisionV1p4beta1Block {
     
     inline def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
-    inline def setParagraphsVarargs(value: GoogleCloudVisionV1p4beta1Paragraph*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
+    inline def setParagraphsVarargs(value: GoogleCloudVisionV1p4beta1Paragraph*): Self = StObject.set(x, "paragraphs", js.Array(value*))
     
     inline def setProperty(value: GoogleCloudVisionV1p4beta1TextAnnotationTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     

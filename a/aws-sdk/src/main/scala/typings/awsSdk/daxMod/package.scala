@@ -5,24 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AvailabilityZoneList = js.Array[typings.awsSdk.daxMod.String]
+type AvailabilityZoneList = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IMMEDIATE
   - typings.awsSdk.awsSdkStrings.REQUIRES_REBOOT
   - java.lang.String
 */
-type ChangeType = typings.awsSdk.daxMod._ChangeType | java.lang.String
+type ChangeType = _ChangeType | java.lang.String
 
-type ClusterList = js.Array[typings.awsSdk.daxMod.Cluster]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.TLS
+  - java.lang.String
+*/
+type ClusterEndpointEncryptionType = _ClusterEndpointEncryptionType | java.lang.String
 
-type ClusterNameList = js.Array[typings.awsSdk.daxMod.String]
+type ClusterList = js.Array[Cluster]
 
-type EventList = js.Array[typings.awsSdk.daxMod.Event]
+type ClusterNameList = js.Array[String]
 
-type Integer = scala.Double
+type EventList = js.Array[Event]
 
-type IntegerOptional = scala.Double
+type Integer = Double
+
+type IntegerOptional = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TRUE
@@ -30,32 +37,32 @@ type IntegerOptional = scala.Double
   - typings.awsSdk.awsSdkStrings.CONDITIONAL
   - java.lang.String
 */
-type IsModifiable = typings.awsSdk.daxMod._IsModifiable | java.lang.String
+type IsModifiable = _IsModifiable | java.lang.String
 
-type KeyList = js.Array[typings.awsSdk.daxMod.String]
+type KeyList = js.Array[String]
 
-type NodeIdentifierList = js.Array[typings.awsSdk.daxMod.String]
+type NodeIdentifierList = js.Array[String]
 
-type NodeList = js.Array[typings.awsSdk.daxMod.Node]
+type NodeList = js.Array[Node]
 
-type NodeTypeSpecificValueList = js.Array[typings.awsSdk.daxMod.NodeTypeSpecificValue]
+type NodeTypeSpecificValueList = js.Array[NodeTypeSpecificValue]
 
-type ParameterGroupList = js.Array[typings.awsSdk.daxMod.ParameterGroup]
+type ParameterGroupList = js.Array[ParameterGroup]
 
-type ParameterGroupNameList = js.Array[typings.awsSdk.daxMod.String]
+type ParameterGroupNameList = js.Array[String]
 
-type ParameterList = js.Array[typings.awsSdk.daxMod.Parameter]
+type ParameterList = js.Array[Parameter]
 
-type ParameterNameValueList = js.Array[typings.awsSdk.daxMod.ParameterNameValue]
+type ParameterNameValueList = js.Array[ParameterNameValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.NODE_TYPE_SPECIFIC
   - java.lang.String
 */
-type ParameterType = typings.awsSdk.daxMod._ParameterType | java.lang.String
+type ParameterType = _ParameterType | java.lang.String
 
-type SSEEnabled = scala.Boolean
+type SSEEnabled = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLING
@@ -64,11 +71,11 @@ type SSEEnabled = scala.Boolean
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type SSEStatus = typings.awsSdk.daxMod._SSEStatus | java.lang.String
+type SSEStatus = _SSEStatus | java.lang.String
 
-type SecurityGroupIdentifierList = js.Array[typings.awsSdk.daxMod.String]
+type SecurityGroupIdentifierList = js.Array[String]
 
-type SecurityGroupMembershipList = js.Array[typings.awsSdk.daxMod.SecurityGroupMembership]
+type SecurityGroupMembershipList = js.Array[SecurityGroupMembership]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLUSTER
@@ -76,25 +83,25 @@ type SecurityGroupMembershipList = js.Array[typings.awsSdk.daxMod.SecurityGroupM
   - typings.awsSdk.awsSdkStrings.SUBNET_GROUP
   - java.lang.String
 */
-type SourceType = typings.awsSdk.daxMod._SourceType | java.lang.String
+type SourceType = _SourceType | java.lang.String
 
 type String = java.lang.String
 
-type SubnetGroupList = js.Array[typings.awsSdk.daxMod.SubnetGroup]
+type SubnetGroupList = js.Array[SubnetGroup]
 
-type SubnetGroupNameList = js.Array[typings.awsSdk.daxMod.String]
+type SubnetGroupNameList = js.Array[String]
 
-type SubnetIdentifierList = js.Array[typings.awsSdk.daxMod.String]
+type SubnetIdentifierList = js.Array[String]
 
-type SubnetList = js.Array[typings.awsSdk.daxMod.Subnet]
+type SubnetList = js.Array[Subnet]
 
-type TStamp = typings.std.Date
+type TStamp = js.Date
 
-type TagList = js.Array[typings.awsSdk.daxMod.Tag]
+type TagList = js.Array[Tag]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-04-19`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.daxMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

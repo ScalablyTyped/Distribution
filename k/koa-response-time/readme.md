@@ -10,10 +10,10 @@ X-Repsonse-Time middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-response-time |
 | Keywords           | koa, middleware, response, duration |
-| # releases         | 2 |
-| # dependents       | 69 |
-| # downloads        | 317213 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 54732.666666666664 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/response-time#readme)

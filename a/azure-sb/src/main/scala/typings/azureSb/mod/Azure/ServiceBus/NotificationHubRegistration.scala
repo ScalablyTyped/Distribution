@@ -1,30 +1,29 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
 import typings.azureSb.anon.ContentRootElement
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NotificationHubRegistration extends StObject {
   
-  var BodyTemplate: js.UndefOr[js.Any] = js.undefined
+  var BodyTemplate: js.UndefOr[Any] = js.undefined
   
   var ChannelUri: js.UndefOr[String] = js.undefined
   
   var DeviceToken: js.UndefOr[String] = js.undefined
   
-  var Expiry: js.UndefOr[Date] = js.undefined
+  var Expiry: js.UndefOr[js.Date] = js.undefined
   
   var GcmRegistrationId: js.UndefOr[String] = js.undefined
   
-  var MpnsHeaders: js.UndefOr[js.Any] = js.undefined
+  var MpnsHeaders: js.UndefOr[Any] = js.undefined
   
   var RegistrationId: String
   
   var Tags: js.UndefOr[String] = js.undefined
   
-  var WnsHeaders: js.UndefOr[js.Any] = js.undefined
+  var WnsHeaders: js.UndefOr[Any] = js.undefined
   
   @JSName("_")
   var _underscore: ContentRootElement
@@ -39,7 +38,7 @@ object NotificationHubRegistration {
   
   extension [Self <: NotificationHubRegistration](x: Self) {
     
-    inline def setBodyTemplate(value: js.Any): Self = StObject.set(x, "BodyTemplate", value.asInstanceOf[js.Any])
+    inline def setBodyTemplate(value: Any): Self = StObject.set(x, "BodyTemplate", value.asInstanceOf[js.Any])
     
     inline def setBodyTemplateUndefined: Self = StObject.set(x, "BodyTemplate", js.undefined)
     
@@ -51,7 +50,7 @@ object NotificationHubRegistration {
     
     inline def setDeviceTokenUndefined: Self = StObject.set(x, "DeviceToken", js.undefined)
     
-    inline def setExpiry(value: Date): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: js.Date): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
     
     inline def setExpiryUndefined: Self = StObject.set(x, "Expiry", js.undefined)
     
@@ -59,7 +58,7 @@ object NotificationHubRegistration {
     
     inline def setGcmRegistrationIdUndefined: Self = StObject.set(x, "GcmRegistrationId", js.undefined)
     
-    inline def setMpnsHeaders(value: js.Any): Self = StObject.set(x, "MpnsHeaders", value.asInstanceOf[js.Any])
+    inline def setMpnsHeaders(value: Any): Self = StObject.set(x, "MpnsHeaders", value.asInstanceOf[js.Any])
     
     inline def setMpnsHeadersUndefined: Self = StObject.set(x, "MpnsHeaders", js.undefined)
     
@@ -69,7 +68,7 @@ object NotificationHubRegistration {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setWnsHeaders(value: js.Any): Self = StObject.set(x, "WnsHeaders", value.asInstanceOf[js.Any])
+    inline def setWnsHeaders(value: Any): Self = StObject.set(x, "WnsHeaders", value.asInstanceOf[js.Any])
     
     inline def setWnsHeadersUndefined: Self = StObject.set(x, "WnsHeaders", js.undefined)
     

@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If no DIV identifier is supplied one will be created in memory. The Diagram's Diagram.div property
   * can then be set later on.
   */
-class Diagram () extends StObject {
+open class Diagram () extends StObject {
   def this(div: String) = this()
   /**
     * Construct an empty Diagram for a particular DIV HTML element.
@@ -760,10 +760,10 @@ class Diagram () extends StObject {
   def focus(): Unit = js.native
   
   // undocumented
-  def getInputOption(name: String): js.Any = js.native
+  def getInputOption(name: String): Any = js.native
   
   // undocumented
-  def getRenderingHint(name: String): js.Any = js.native
+  def getRenderingHint(name: String): Any = js.native
   
   /**Gets or sets a Panel of type Panel.Grid acting as the background grid extending across the whole viewport of this diagram.*/
   var grid: Panel = js.native
@@ -1066,7 +1066,7 @@ class Diagram () extends StObject {
   var selection: Set[Part] = js.native
   
   // undocumented
-  def setInputOption(name: String, `val`: js.Any): Unit = js.native
+  def setInputOption(name: String, `val`: Any): Unit = js.native
   
   /**
     * This method sets a collection of properties according to the property/value pairs that have been set on the given Object,
@@ -1075,7 +1075,7 @@ class Diagram () extends StObject {
   def setProperties(props: js.Object): Unit = js.native
   
   // undocumented
-  def setRenderingHint(name: String, `val`: js.Any): Unit = js.native
+  def setRenderingHint(name: String, `val`: Any): Unit = js.native
   
   // undocumented
   def simulatedMouseMove(e: Event, modelpt: Point): Boolean = js.native

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArchiveGroupSettings extends StObject {
   
   /**
+    * Parameters that control interactions with the CDN.
+    */
+  var ArchiveCdnSettings: js.UndefOr[typings.awsSdk.medialiveMod.ArchiveCdnSettings] = js.undefined
+  
+  /**
     * A directory and base filename where archive files should be written.
     */
   var Destination: OutputLocationRef
@@ -24,6 +29,10 @@ object ArchiveGroupSettings {
   }
   
   extension [Self <: ArchiveGroupSettings](x: Self) {
+    
+    inline def setArchiveCdnSettings(value: ArchiveCdnSettings): Self = StObject.set(x, "ArchiveCdnSettings", value.asInstanceOf[js.Any])
+    
+    inline def setArchiveCdnSettingsUndefined: Self = StObject.set(x, "ArchiveCdnSettings", js.undefined)
     
     inline def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

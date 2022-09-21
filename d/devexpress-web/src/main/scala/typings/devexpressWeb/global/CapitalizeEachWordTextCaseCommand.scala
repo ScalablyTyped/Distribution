@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CapitalizeEachWordTextCaseCommand")
 @js.native
-class CapitalizeEachWordTextCaseCommand ()
+open class CapitalizeEachWordTextCaseCommand ()
   extends StObject
      with typings.devexpressWeb.CapitalizeEachWordTextCaseCommand {
   

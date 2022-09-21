@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.InfoPathEditorObject")
 @js.native
-/* private */ class InfoPathEditorObject ()
+/* private */ open class InfoPathEditorObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.InfoPathEditorObject {
   
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def FlushDocument(): Unit = js.native
   
   /* CompleteClass */
-  var Host: js.Any = js.native
+  var Host: Any = js.native
   
   /* CompleteClass */
   var HostName: String = js.native
@@ -33,13 +33,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Load(bstrURL: String): Unit = js.native
   
   /* CompleteClass */
-  override def LoadFromStream(punkStream: js.Any): Unit = js.native
+  override def LoadFromStream(punkStream: Any): Unit = js.native
   
   /* CompleteClass */
   override def NewFromSolution(bstrSolutionURI: String): Unit = js.native
   
   /* CompleteClass */
-  override def NewFromSolutionWithData(bstrURLXSN: String, punkStream: js.Any, dwBehavior: Double): Unit = js.native
+  override def NewFromSolutionWithData(bstrURLXSN: String, punkStream: Any, dwBehavior: Double): Unit = js.native
   
   /* CompleteClass */
   override def SetInitEventHandler(handler: typings.activexInfopath.InfoPath.IInitEventHandler): Unit = js.native

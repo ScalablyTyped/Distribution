@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IterativeCalculationData extends StObject {
   
   /**
-    *
     * True if Excel will use iteration to resolve circular references.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the maximum amount of change between each iteration as Excel resolves circular references.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var maxChange: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var maxIteration: js.UndefOr[Double] = js.undefined

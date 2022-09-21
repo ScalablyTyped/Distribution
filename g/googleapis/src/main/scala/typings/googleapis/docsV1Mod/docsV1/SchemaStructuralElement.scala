@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A StructuralElement describes content that provides structure to the
-  * document.
-  */
 trait SchemaStructuralElement extends StObject {
   
   /**
-    * The zero-based end index of this structural element, exclusive, in UTF-16
-    * code units.
+    * The zero-based end index of this structural element, exclusive, in UTF-16 code units.
     */
-  var endIndex: js.UndefOr[Double] = js.undefined
+  var endIndex: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * A paragraph type of structural element.
@@ -27,10 +22,9 @@ trait SchemaStructuralElement extends StObject {
   var sectionBreak: js.UndefOr[SchemaSectionBreak] = js.undefined
   
   /**
-    * The zero-based start index of this structural element, in UTF-16 code
-    * units.
+    * The zero-based start index of this structural element, in UTF-16 code units.
     */
-  var startIndex: js.UndefOr[Double] = js.undefined
+  var startIndex: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * A table type of structural element.
@@ -53,6 +47,8 @@ object SchemaStructuralElement {
     
     inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
+    inline def setEndIndexNull: Self = StObject.set(x, "endIndex", null)
+    
     inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     inline def setParagraph(value: SchemaParagraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
@@ -64,6 +60,8 @@ object SchemaStructuralElement {
     inline def setSectionBreakUndefined: Self = StObject.set(x, "sectionBreak", js.undefined)
     
     inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    
+    inline def setStartIndexNull: Self = StObject.set(x, "startIndex", null)
     
     inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     

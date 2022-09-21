@@ -1,60 +1,61 @@
 package typings.aureliaBinding.mod
 
+import typings.aureliaBinding.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def bindingBehavior(name: java.lang.String): js.Any = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("bindingBehavior")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def bindingBehavior(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bindingBehavior")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def camelCase(name: java.lang.String): java.lang.String = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(name.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def camelCase(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def computedFrom(propertyNames: java.lang.String*): js.Any = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("computedFrom")(propertyNames.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def computedFrom(propertyNames: String*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computedFrom")(propertyNames.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
 
-inline def connectBindingToSignal(binding: typings.aureliaBinding.mod.Binding, name: java.lang.String): scala.Unit = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectBindingToSignal")(binding.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def connectBindingToSignal(binding: Binding, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectBindingToSignal")(binding.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def connectable(): scala.Unit = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connectable")().asInstanceOf[scala.Unit]
+inline def connectable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectable")().asInstanceOf[Unit]
 
-inline def createOverrideContext(bindingContext: js.Any): typings.aureliaBinding.mod.OverrideContext = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createOverrideContext")(bindingContext.asInstanceOf[js.Any]).asInstanceOf[typings.aureliaBinding.mod.OverrideContext]
-inline def createOverrideContext(bindingContext: js.Any, parentOverrideContext: typings.aureliaBinding.mod.OverrideContext): typings.aureliaBinding.mod.OverrideContext = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createOverrideContext")(bindingContext.asInstanceOf[js.Any], parentOverrideContext.asInstanceOf[js.Any])).asInstanceOf[typings.aureliaBinding.mod.OverrideContext]
+inline def createOverrideContext(bindingContext: Any): OverrideContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createOverrideContext")(bindingContext.asInstanceOf[js.Any]).asInstanceOf[OverrideContext]
+inline def createOverrideContext(bindingContext: Any, parentOverrideContext: OverrideContext): OverrideContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createOverrideContext")(bindingContext.asInstanceOf[js.Any], parentOverrideContext.asInstanceOf[js.Any])).asInstanceOf[OverrideContext]
 
-inline def createScopeForTest(bindingContext: js.Any): typings.aureliaBinding.mod.Scope = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createScopeForTest")(bindingContext.asInstanceOf[js.Any]).asInstanceOf[typings.aureliaBinding.mod.Scope]
-inline def createScopeForTest(bindingContext: js.Any, parentBindingContext: js.Any): typings.aureliaBinding.mod.Scope = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createScopeForTest")(bindingContext.asInstanceOf[js.Any], parentBindingContext.asInstanceOf[js.Any])).asInstanceOf[typings.aureliaBinding.mod.Scope]
+inline def createScopeForTest(bindingContext: Any): Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("createScopeForTest")(bindingContext.asInstanceOf[js.Any]).asInstanceOf[Scope]
+inline def createScopeForTest(bindingContext: Any, parentBindingContext: Any): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("createScopeForTest")(bindingContext.asInstanceOf[js.Any], parentBindingContext.asInstanceOf[js.Any])).asInstanceOf[Scope]
 
-inline def declarePropertyDependencies(ctor: js.Any, propertyName: java.lang.String, dependencies: js.Array[java.lang.String]): scala.Unit = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("declarePropertyDependencies")(ctor.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def declarePropertyDependencies(ctor: Any, propertyName: String, dependencies: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("declarePropertyDependencies")(ctor.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def disableConnectQueue(): scala.Unit = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("disableConnectQueue")().asInstanceOf[scala.Unit]
+inline def disableConnectQueue(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableConnectQueue")().asInstanceOf[Unit]
 
-inline def enableConnectQueue(): scala.Unit = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("enableConnectQueue")().asInstanceOf[scala.Unit]
+inline def enableConnectQueue(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableConnectQueue")().asInstanceOf[Unit]
 
-inline def enqueueBindingConnect(binding: typings.aureliaBinding.mod.Binding): scala.Unit = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("enqueueBindingConnect")(binding.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def enqueueBindingConnect(binding: Binding): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enqueueBindingConnect")(binding.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def getChangeRecords(): js.Any = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getChangeRecords")().asInstanceOf[js.Any]
+inline def getChangeRecords(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getChangeRecords")().asInstanceOf[Any]
 
-inline def getContextFor(name: java.lang.String, scope: typings.aureliaBinding.mod.Scope): js.Any = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getContextFor")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def getContextFor(name: java.lang.String, scope: typings.aureliaBinding.mod.Scope, ancestor: scala.Double): js.Any = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getContextFor")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], ancestor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def getContextFor(name: String, scope: Scope): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getContextFor")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def getContextFor(name: String, scope: Scope, ancestor: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getContextFor")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], ancestor.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def hasDeclaredDependencies(descriptor: typings.std.PropertyDescriptor): scala.Boolean = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasDeclaredDependencies")(descriptor.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def hasDeclaredDependencies(descriptor: js.PropertyDescriptor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDeclaredDependencies")(descriptor.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def mergeSplice(splices: js.Any, index: scala.Double, removed: js.Any, addedCount: scala.Double): js.Any = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("mergeSplice")(splices.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removed.asInstanceOf[js.Any], addedCount.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def mergeSplice(splices: Any, index: Double, removed: Any, addedCount: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSplice")(splices.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removed.asInstanceOf[js.Any], addedCount.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def observable(): js.Any = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("observable")().asInstanceOf[js.Any]
-inline def observable(targetOrConfig: js.Object): js.Any = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-inline def observable(targetOrConfig: js.Object, key: js.Any): js.Any = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def observable(targetOrConfig: js.Object, key: js.Any, descriptor: js.Any): js.Any = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def observable(targetOrConfig: js.Object, key: scala.Unit, descriptor: js.Any): js.Any = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def observable(targetOrConfig: scala.Unit, key: js.Any): js.Any = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def observable(targetOrConfig: scala.Unit, key: js.Any, descriptor: js.Any): js.Any = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def observable(targetOrConfig: scala.Unit, key: scala.Unit, descriptor: js.Any): js.Any = (typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def observable(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("observable")().asInstanceOf[Any]
+inline def observable(targetOrConfig: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def observable(targetOrConfig: js.Object, key: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def observable(targetOrConfig: js.Object, key: Any, descriptor: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def observable(targetOrConfig: js.Object, key: Unit, descriptor: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def observable(targetOrConfig: Unit, key: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def observable(targetOrConfig: Unit, key: Any, descriptor: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def observable(targetOrConfig: Unit, key: Unit, descriptor: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("observable")(targetOrConfig.asInstanceOf[js.Any], key.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def setConnectQueueThreshold(value: scala.Double): scala.Unit = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setConnectQueueThreshold")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setConnectQueueThreshold(value: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConnectQueueThreshold")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def signalBindings(name: java.lang.String): scala.Unit = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("signalBindings")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def signalBindings(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("signalBindings")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def sourceContext: java.lang.String = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].selectDynamic("sourceContext").asInstanceOf[java.lang.String]
+inline def sourceContext: String = ^.asInstanceOf[js.Dynamic].selectDynamic("sourceContext").asInstanceOf[String]
 
-inline def subscriberCollection(): js.Any = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("subscriberCollection")().asInstanceOf[js.Any]
+inline def subscriberCollection(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("subscriberCollection")().asInstanceOf[Any]
 
-inline def targetContext: java.lang.String = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].selectDynamic("targetContext").asInstanceOf[java.lang.String]
+inline def targetContext: String = ^.asInstanceOf[js.Dynamic].selectDynamic("targetContext").asInstanceOf[String]
 
-inline def valueConverter(name: java.lang.String): js.Any = typings.aureliaBinding.mod.^.asInstanceOf[js.Dynamic].applyDynamic("valueConverter")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def valueConverter(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueConverter")(name.asInstanceOf[js.Any]).asInstanceOf[Any]

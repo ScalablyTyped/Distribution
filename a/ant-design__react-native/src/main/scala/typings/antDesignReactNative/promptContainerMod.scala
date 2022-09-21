@@ -1,6 +1,5 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.AntLocale
 import typings.antDesignReactNative.anon.Type
 import typings.antDesignReactNative.antDesignReactNativeStrings.`login-password`
 import typings.antDesignReactNative.antDesignReactNativeStrings.`secure-text`
@@ -10,6 +9,7 @@ import typings.antDesignReactNative.modalPropsTypeMod.CallbackOnBackHandler
 import typings.antDesignReactNative.modalPropsTypeMod.CallbackOrActions
 import typings.antDesignReactNative.stylePromptMod.PromptStyle
 import typings.react.mod.Component
+import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ object promptContainerMod {
   
   @JSImport("@ant-design/react-native/lib/modal/PromptContainer", JSImport.Default)
   @js.native
-  class default protected () extends PropmptContainer {
+  open class default protected () extends PropmptContainer {
     def this(props: PropmptContainerProps) = this()
   }
   /* static members */
@@ -30,10 +30,10 @@ object promptContainerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@ant-design/react-native/lib/modal/PromptContainer", "default.contextTypes")
+    @JSImport("@ant-design/react-native/lib/modal/PromptContainer", "default.contextType")
     @js.native
-    def contextTypes: AntLocale = js.native
-    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextType: Context[js.Object] = js.native
+    inline def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/modal/PromptContainer", "default.defaultProps")
     @js.native
@@ -42,8 +42,7 @@ object promptContainerMod {
   }
   
   @js.native
-  trait PropmptContainer
-    extends Component[PropmptContainerProps, js.Any, js.Any] {
+  trait PropmptContainer extends Component[PropmptContainerProps, Any, Any] {
     
     def onBackAndroid(): Boolean = js.native
     
@@ -87,7 +86,7 @@ object promptContainerMod {
       
       inline def setActionsFunction2(value: (/* valueOrLogin */ String, /* password */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "actions", js.Any.fromFunction2(value))
       
-      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -109,7 +108,7 @@ object promptContainerMod {
       
       inline def setPlaceholdersUndefined: Self = StObject.set(x, "placeholders", js.undefined)
       
-      inline def setPlaceholdersVarargs(value: String*): Self = StObject.set(x, "placeholders", js.Array(value :_*))
+      inline def setPlaceholdersVarargs(value: String*): Self = StObject.set(x, "placeholders", js.Array(value*))
       
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

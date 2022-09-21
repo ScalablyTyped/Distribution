@@ -33,6 +33,6 @@ object ListRootsResponse {
     
     inline def setRootsUndefined: Self = StObject.set(x, "Roots", js.undefined)
     
-    inline def setRootsVarargs(value: Root*): Self = StObject.set(x, "Roots", js.Array(value :_*))
+    inline def setRootsVarargs(value: Root*): Self = StObject.set(x, "Roots", js.Array(value*))
   }
 }

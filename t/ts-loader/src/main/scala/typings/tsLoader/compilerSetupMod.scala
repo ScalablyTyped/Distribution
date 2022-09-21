@@ -1,6 +1,7 @@
 package typings.tsLoader
 
 import typings.tsLoader.anon.Compiler
+import typings.tsLoader.anon.Typeoftypescript
 import typings.tsLoader.interfacesMod.LoaderOptions
 import typings.tsLoader.loggerMod.Logger
 import typings.typescript.mod.CompilerOptions
@@ -17,5 +18,5 @@ object compilerSetupMod {
   
   inline def getCompiler(loaderOptions: LoaderOptions, log: Logger): Compiler = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompiler")(loaderOptions.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[Compiler]
   
-  inline def getCompilerOptions(configParseResult: ParsedCommandLine): CompilerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompilerOptions")(configParseResult.asInstanceOf[js.Any]).asInstanceOf[CompilerOptions]
+  inline def getCompilerOptions(configParseResult: ParsedCommandLine, compiler: Typeoftypescript): CompilerOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompilerOptions")(configParseResult.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any])).asInstanceOf[CompilerOptions]
 }

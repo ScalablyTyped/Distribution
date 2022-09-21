@@ -45,7 +45,7 @@ object Wizard {
     execute: () => Double,
     getCurrentPage: () => XWizardPage,
     goBackTo: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDefaultButton: Double => Unit,
     setTitle: String => Unit,

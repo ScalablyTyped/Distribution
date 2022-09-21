@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +38,7 @@ object ChannelUserevent {
   inline def apply(
     application: String,
     eventname: String,
-    timestamp: Date,
+    timestamp: js.Date,
     `type`: String,
     userevent: IndexableObject
   ): ChannelUserevent = {

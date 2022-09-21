@@ -11,7 +11,7 @@ trait CalendarOptions extends StObject {
   
   var components: js.UndefOr[js.Array[String]] = js.undefined
   
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], Any]] = js.undefined
   
   var ctag: js.UndefOr[String] = js.undefined
   
@@ -50,9 +50,9 @@ object CalendarOptions {
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    inline def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value*))
     
-    inline def setConstructor(value: /* options */ js.UndefOr[CalendarOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* options */ js.UndefOr[CalendarOptions] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
@@ -76,13 +76,13 @@ object CalendarOptions {
     
     inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     
-    inline def setObjectsVarargs(value: CalendarObject*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: CalendarObject*): Self = StObject.set(x, "objects", js.Array(value*))
     
     inline def setReports(value: js.Array[String]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
     
     inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
-    inline def setReportsVarargs(value: String*): Self = StObject.set(x, "reports", js.Array(value :_*))
+    inline def setReportsVarargs(value: String*): Self = StObject.set(x, "reports", js.Array(value*))
     
     inline def setResourcetype(value: String): Self = StObject.set(x, "resourcetype", value.asInstanceOf[js.Any])
     

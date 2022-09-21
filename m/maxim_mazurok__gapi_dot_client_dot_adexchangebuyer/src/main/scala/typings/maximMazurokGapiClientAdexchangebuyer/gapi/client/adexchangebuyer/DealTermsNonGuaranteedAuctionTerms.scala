@@ -29,6 +29,6 @@ object DealTermsNonGuaranteedAuctionTerms {
     
     inline def setReservePricePerBuyersUndefined: Self = StObject.set(x, "reservePricePerBuyers", js.undefined)
     
-    inline def setReservePricePerBuyersVarargs(value: PricePerBuyer*): Self = StObject.set(x, "reservePricePerBuyers", js.Array(value :_*))
+    inline def setReservePricePerBuyersVarargs(value: PricePerBuyer*): Self = StObject.set(x, "reservePricePerBuyers", js.Array(value*))
   }
 }

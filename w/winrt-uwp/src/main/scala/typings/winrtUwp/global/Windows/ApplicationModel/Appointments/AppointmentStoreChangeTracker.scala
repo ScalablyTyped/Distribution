@@ -12,13 +12,13 @@ abstract class AppointmentStoreChangeTracker ()
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangeTracker {
   
   /* CompleteClass */
-  var enable: js.Any = js.native
+  var enable: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var getChangeReader: js.Any = js.native
+  var getChangeReader: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var reset: js.Any = js.native
+  var reset: Any = js.native
 }

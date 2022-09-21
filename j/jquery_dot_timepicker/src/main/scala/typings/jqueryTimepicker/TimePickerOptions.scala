@@ -24,7 +24,7 @@ trait TimePickerOptions extends StObject {
   var atPosition: js.UndefOr[String] = js.undefined
   
   /** Define a callback function executed before the timepicker is shown */
-  var beforeShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var beforeShow: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /**
     * 'button' element that will trigger the timepicker.
@@ -67,17 +67,17 @@ trait TimePickerOptions extends StObject {
   var nowButtonText: js.UndefOr[String] = js.undefined
   
   /** Define a callback function when the timepicker is closed */
-  var onClose: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ js.Any, js.Any]] = js.undefined
+  var onClose: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ Any, Any]] = js.undefined
   
   //NEW: 2011-02-03
   /** callback for enabling / disabling on selectable hours  ex : function(hour) { return true; } */
-  var onHourShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onHourShow: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** callback for enabling / disabling on time selection  ex : function(hour,minute) { return true; } */
-  var onMinuteShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onMinuteShow: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** Define a callback function when a hour / minutes is selected */
-  var onSelect: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ js.Any, js.Any]] = js.undefined
+  var onSelect: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ Any, Any]] = js.undefined
   
   /** optionally parse inputs of whole hours with minutes omitted */
   var optionalMinutes: js.UndefOr[Boolean] = js.undefined
@@ -118,7 +118,7 @@ trait TimePickerOptions extends StObject {
   var showOn: js.UndefOr[String] = js.undefined
   
   /** Options for enhanced animations */
-  var showOptions: js.UndefOr[js.Any] = js.undefined
+  var showOptions: js.UndefOr[Any] = js.undefined
   
   /** Define whether or not to show AM/PM with selected time */
   var showPeriod: js.UndefOr[Boolean] = js.undefined
@@ -154,7 +154,7 @@ object TimePickerOptions {
     
     inline def setAtPositionUndefined: Self = StObject.set(x, "atPosition", js.undefined)
     
-    inline def setBeforeShow(value: () => js.Any): Self = StObject.set(x, "beforeShow", js.Any.fromFunction0(value))
+    inline def setBeforeShow(value: () => Any): Self = StObject.set(x, "beforeShow", js.Any.fromFunction0(value))
     
     inline def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     
@@ -198,19 +198,19 @@ object TimePickerOptions {
     
     inline def setNowButtonTextUndefined: Self = StObject.set(x, "nowButtonText", js.undefined)
     
-    inline def setOnClose(value: (/* timeText */ String, /* inst */ js.Any) => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+    inline def setOnClose(value: (/* timeText */ String, /* inst */ Any) => Any): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
     
     inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    inline def setOnHourShow(value: () => js.Any): Self = StObject.set(x, "onHourShow", js.Any.fromFunction0(value))
+    inline def setOnHourShow(value: () => Any): Self = StObject.set(x, "onHourShow", js.Any.fromFunction0(value))
     
     inline def setOnHourShowUndefined: Self = StObject.set(x, "onHourShow", js.undefined)
     
-    inline def setOnMinuteShow(value: () => js.Any): Self = StObject.set(x, "onMinuteShow", js.Any.fromFunction0(value))
+    inline def setOnMinuteShow(value: () => Any): Self = StObject.set(x, "onMinuteShow", js.Any.fromFunction0(value))
     
     inline def setOnMinuteShowUndefined: Self = StObject.set(x, "onMinuteShow", js.undefined)
     
-    inline def setOnSelect(value: (/* timeText */ String, /* inst */ js.Any) => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+    inline def setOnSelect(value: (/* timeText */ String, /* inst */ Any) => Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
@@ -262,7 +262,7 @@ object TimePickerOptions {
     
     inline def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
     
-    inline def setShowOptions(value: js.Any): Self = StObject.set(x, "showOptions", value.asInstanceOf[js.Any])
+    inline def setShowOptions(value: Any): Self = StObject.set(x, "showOptions", value.asInstanceOf[js.Any])
     
     inline def setShowOptionsUndefined: Self = StObject.set(x, "showOptions", js.undefined)
     

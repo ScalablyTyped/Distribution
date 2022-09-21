@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-progressive" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-progressive" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

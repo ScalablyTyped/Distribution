@@ -20,6 +20,8 @@ trait TimeInfo
   /**
     * The time extent defines the start time and end time for all data in the layer.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent)
     */
   var fullTimeExtent: TimeExtent = js.native
@@ -37,6 +39,15 @@ trait TimeInfo
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField)
     */
   var startField: String = js.native
+  
+  /**
+    * Defines information about daylight savings time and the time zone in which data was collected.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#timeReference)
+    */
+  var timeReference: TimeReference = js.native
   
   /**
     * The name of the field used to join or group discrete locations.

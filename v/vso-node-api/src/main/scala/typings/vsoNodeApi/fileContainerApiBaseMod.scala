@@ -14,7 +14,7 @@ object fileContainerApiBaseMod {
   
   @JSImport("vso-node-api/FileContainerApiBase", "FileContainerApiBase")
   @js.native
-  class FileContainerApiBase protected () extends IFileContainerApiBase {
+  open class FileContainerApiBase protected () extends IFileContainerApiBase {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }

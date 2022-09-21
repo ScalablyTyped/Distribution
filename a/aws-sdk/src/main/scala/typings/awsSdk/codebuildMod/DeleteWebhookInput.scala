@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteWebhookInput extends StObject {
   
   /**
-    * The name of the AWS CodeBuild project.
+    * The name of the CodeBuild project.
     */
   var projectName: ProjectName
 }

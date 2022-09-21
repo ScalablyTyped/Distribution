@@ -5,73 +5,73 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the `format.borders` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties`, or the `format.borders` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
   *
-  * Represents the `format.borders` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties` or the `format.borders` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait CellBorderCollection extends StObject {
   
   /**
-    *
     * Represents the `format.borders.bottom` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bottom: js.UndefOr[CellBorder] = js.undefined
   
   /**
-    *
     * Represents the `format.borders.diagonalDown` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var diagonalDown: js.UndefOr[CellBorder] = js.undefined
   
   /**
-    *
     * Represents the `format.borders.diagonalUp` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var diagonalUp: js.UndefOr[CellBorder] = js.undefined
   
   /**
-    *
     * Represents the `format.borders.horizontal` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var horizontal: js.UndefOr[CellBorder] = js.undefined
   
   /**
-    *
     * Represents the `format.borders.left` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var left: js.UndefOr[CellBorder] = js.undefined
   
   /**
-    *
     * Represents the `format.borders.right` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var right: js.UndefOr[CellBorder] = js.undefined
   
   /**
-    *
     * Represents the `format.borders.top` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var top: js.UndefOr[CellBorder] = js.undefined
   
   /**
-    *
     * Represents the `format.borders.vertical` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var vertical: js.UndefOr[CellBorder] = js.undefined

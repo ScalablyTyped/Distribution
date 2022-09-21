@@ -10,10 +10,10 @@ A distributed maintained collection of patterns that indicate that something pro
 | ------------------ | :-------------: |
 | Full name          | is-secret |
 | Keywords           | secret, validate, redact, protect, filter |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 4862061 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 175110.66666666666 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/watson/is-secret#readme)

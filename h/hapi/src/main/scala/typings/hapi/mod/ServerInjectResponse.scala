@@ -1,7 +1,7 @@
 package typings.hapi.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.shot.anon.Req
 import typings.shot.mod.Headers
 import org.scalablytyped.runtime.StObject
@@ -33,7 +33,7 @@ object ServerInjectResponse {
     request: Request,
     statusCode: Double,
     statusMessage: String,
-    trailers: StringDictionary[js.Any]
+    trailers: StringDictionary[Any]
   ): ServerInjectResponse = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], rawPayload = rawPayload.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], trailers = trailers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInjectResponse]

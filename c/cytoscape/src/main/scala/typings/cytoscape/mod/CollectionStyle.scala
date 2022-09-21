@@ -27,18 +27,18 @@ trait CollectionStyle extends StObject {
   /**
     * Get a name-value pair object containing visual style properties and their values for the element.
     */
-  def css(): StringDictionary[js.Any] = js.native
+  def css(): StringDictionary[Any] = js.native
   /**
     * Get a particular style property value.
     * @param name The name of the visual style property to get.
     */
-  def css(name: String): js.Any = js.native
+  def css(name: String): Any = js.native
   /**
     * Set a particular style property value.
     * @param name The name of the visual style property to set.
     * @param value The value to which the property is set.
     */
-  def css(name: String, value: js.Any): this.type = js.native
+  def css(name: String, value: Any): this.type = js.native
   /**
     * Set several particular style property values.
     * @param obj An object of style property name-value pairs to set.
@@ -71,18 +71,18 @@ trait CollectionStyle extends StObject {
   /**
     * Get a name-value pair object containing visual style properties and their values for the element.
     */
-  def style(): StringDictionary[js.Any] = js.native
+  def style(): StringDictionary[Any] = js.native
   /**
     * Get a particular style property value.
     * @param name The name of the visual style property to get.
     */
-  def style(name: String): js.Any = js.native
+  def style(name: String): Any = js.native
   /**
     * Set a particular style property value.
     * @param name The name of the visual style property to set.
     * @param value The value to which the property is set.
     */
-  def style(name: String, value: js.Any): this.type = js.native
+  def style(name: String, value: Any): this.type = js.native
   /**
     * Set several particular style property values.
     * @param obj An object of style property name-value pairs to set.

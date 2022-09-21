@@ -27,7 +27,7 @@ trait ColumnConfiguration extends StObject {
   var DocumentTitleColumnName: js.UndefOr[ColumnName] = js.undefined
   
   /**
-    * An array of objects that map database column names to the corresponding fields in an index. You must first create the fields in the index using the UpdateIndex operation.
+    * An array of objects that map database column names to the corresponding fields in an index. You must first create the fields in the index using the UpdateIndex API.
     */
   var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.undefined
 }
@@ -46,7 +46,7 @@ object ColumnConfiguration {
     
     inline def setChangeDetectingColumns(value: ChangeDetectingColumns): Self = StObject.set(x, "ChangeDetectingColumns", value.asInstanceOf[js.Any])
     
-    inline def setChangeDetectingColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "ChangeDetectingColumns", js.Array(value :_*))
+    inline def setChangeDetectingColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "ChangeDetectingColumns", js.Array(value*))
     
     inline def setDocumentDataColumnName(value: ColumnName): Self = StObject.set(x, "DocumentDataColumnName", value.asInstanceOf[js.Any])
     
@@ -60,6 +60,6 @@ object ColumnConfiguration {
     
     inline def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
     
-    inline def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
+    inline def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ trait Parent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The parent resource path. "projects/∗/locations/global/catalogs/default_catalog/eventStores/default_event_store". */
+  /** Required. The parent resource path. `projects/ *‍/locations/global/catalogs/default_catalog/eventStores/default_event_store`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

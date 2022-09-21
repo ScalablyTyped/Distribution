@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientActionSetProperty")
 @js.native
-class ClientActionSetProperty protected ()
+open class ClientActionSetProperty protected ()
   extends StObject
      with typings.sharepoint.SP.ClientAction {
-  def this(obj: typings.sharepoint.SP.ClientObject, propName: String, propValue: js.Any) = this()
+  def this(obj: typings.sharepoint.SP.ClientObject, propName: String, propValue: Any) = this()
   
   /* CompleteClass */
   override def get_id(): Double = js.native

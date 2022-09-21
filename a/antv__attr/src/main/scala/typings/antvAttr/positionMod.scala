@@ -9,7 +9,7 @@ object positionMod {
   
   @JSImport("@antv/attr/lib/attributes/position", JSImport.Default)
   @js.native
-  class default protected () extends Position {
+  open class default protected () extends Position {
     def this(cfg: AttributeCfg) = this()
   }
   

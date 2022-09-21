@@ -18,6 +18,8 @@ trait TileLayoutOptions extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
+  var navigatable: js.UndefOr[Boolean] = js.undefined
+  
   var reorder: js.UndefOr[js.Function1[/* e */ TileLayoutReorderEvent, Unit]] = js.undefined
   
   var reorderable: js.UndefOr[Boolean] = js.undefined
@@ -53,7 +55,7 @@ object TileLayoutOptions {
     
     inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    inline def setContainersVarargs(value: TileLayoutContainer*): Self = StObject.set(x, "containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: TileLayoutContainer*): Self = StObject.set(x, "containers", js.Array(value*))
     
     inline def setGap(value: TileLayoutGap): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
@@ -66,6 +68,10 @@ object TileLayoutOptions {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
+    
+    inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
     
     inline def setReorder(value: /* e */ TileLayoutReorderEvent => Unit): Self = StObject.set(x, "reorder", js.Any.fromFunction1(value))
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "WorkweekConfig")
 @js.native
-class WorkweekConfig () extends StObject {
+open class WorkweekConfig () extends StObject {
   
   /**
     * A read-only timestamp in RFC 3339 format; presented in UTC.

@@ -33,6 +33,6 @@ object ListXssMatchSetsResponse {
     
     inline def setXssMatchSetsUndefined: Self = StObject.set(x, "XssMatchSets", js.undefined)
     
-    inline def setXssMatchSetsVarargs(value: XssMatchSetSummary*): Self = StObject.set(x, "XssMatchSets", js.Array(value :_*))
+    inline def setXssMatchSetsVarargs(value: XssMatchSetSummary*): Self = StObject.set(x, "XssMatchSets", js.Array(value*))
   }
 }

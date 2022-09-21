@@ -1,6 +1,6 @@
 package typings.thrift.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("thrift", "WSConnection")
 @js.native
-class WSConnection protected () extends EventEmitter {
+open class WSConnection protected () extends EventEmitter {
   def this(host: String, port: Double) = this()
   def this(host: String, port: Double, options: ConnectOptions) = this()
   

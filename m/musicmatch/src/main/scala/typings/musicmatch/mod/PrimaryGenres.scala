@@ -20,6 +20,6 @@ object PrimaryGenres {
     
     inline def setMusic_genre_list(value: js.Array[Musicgenre]): Self = StObject.set(x, "music_genre_list", value.asInstanceOf[js.Any])
     
-    inline def setMusic_genre_listVarargs(value: Musicgenre*): Self = StObject.set(x, "music_genre_list", js.Array(value :_*))
+    inline def setMusic_genre_listVarargs(value: Musicgenre*): Self = StObject.set(x, "music_genre_list", js.Array(value*))
   }
 }

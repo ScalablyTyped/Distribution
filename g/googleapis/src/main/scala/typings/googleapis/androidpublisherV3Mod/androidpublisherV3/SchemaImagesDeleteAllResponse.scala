@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaImagesDeleteAllResponse extends StObject {
   
+  /**
+    * The deleted images.
+    */
   var deleted: js.UndefOr[js.Array[SchemaImage]] = js.undefined
 }
 object SchemaImagesDeleteAllResponse {
@@ -21,6 +24,6 @@ object SchemaImagesDeleteAllResponse {
     
     inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    inline def setDeletedVarargs(value: SchemaImage*): Self = StObject.set(x, "deleted", js.Array(value :_*))
+    inline def setDeletedVarargs(value: SchemaImage*): Self = StObject.set(x, "deleted", js.Array(value*))
   }
 }

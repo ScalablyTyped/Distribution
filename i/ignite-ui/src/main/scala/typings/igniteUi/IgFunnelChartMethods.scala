@@ -46,7 +46,7 @@ trait IgFunnelChartMethods extends StObject {
   /**
     * Get reference of actual data used by chart.
     */
-  def getData(): js.Array[js.Any] = js.native
+  def getData(): js.Array[Any] = js.native
   
   /**
     * Get item within actual data used by chart. That is similar to this.getData()[ index ].
@@ -121,8 +121,8 @@ trait IgFunnelChartMethods extends StObject {
     * @param selection Array or selected slice indexes.
     * @return array|object If parameter is undefined, then array of selected indexes is returned. Otherwise, it returns reference to igFunnelChart.
     */
-  def selectedSliceIndexes(): js.Array[js.Any] = js.native
-  def selectedSliceIndexes(selection: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def selectedSliceIndexes(): js.Array[Any] = js.native
+  def selectedSliceIndexes(selection: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     * Gets array of selected slice items.
@@ -130,8 +130,8 @@ trait IgFunnelChartMethods extends StObject {
     * @param selection Array or selected slice items.
     * @return array|object If parameter is undefined, then array of selected items is returned. Otherwise, it returns reference to igFunnelChart.
     */
-  def selectedSliceItems(): js.Array[js.Any] = js.native
-  def selectedSliceItems(selection: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def selectedSliceItems(): js.Array[Any] = js.native
+  def selectedSliceItems(selection: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     * Updates an item in the data source and notifies the chart.

@@ -24,6 +24,6 @@ object GetAssociatedEnclaveCertificateIamRolesResult {
     
     inline def setAssociatedRolesUndefined: Self = StObject.set(x, "AssociatedRoles", js.undefined)
     
-    inline def setAssociatedRolesVarargs(value: AssociatedRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value :_*))
+    inline def setAssociatedRolesVarargs(value: AssociatedRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value*))
   }
 }

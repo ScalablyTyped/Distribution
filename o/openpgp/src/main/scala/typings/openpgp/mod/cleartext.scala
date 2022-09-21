@@ -2,7 +2,6 @@ package typings.openpgp.mod
 
 import typings.openpgp.anon.Keyid
 import typings.openpgp.mod.signature.Signature
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object cleartext {
     */
   @JSImport("openpgp", "cleartext.CleartextMessage")
   @js.native
-  class CleartextMessage protected () extends StObject {
+  open class CleartextMessage protected () extends StObject {
     /**
       * @param text The cleartext of the signed message
       * @param signature The detached signature or an empty signature for unsigned messages
@@ -36,7 +35,7 @@ object cleartext {
       * Returns the key IDs of the keys that signed the cleartext message
       * @returns array of keyid objects
       */
-    def getSigningKeyIds(): js.Array[js.Any] = js.native
+    def getSigningKeyIds(): js.Array[Any] = js.native
     
     /**
       * Get cleartext
@@ -52,7 +51,7 @@ object cleartext {
       * @param userIds (optional) user IDs to sign with, e.g. [ { name:'Steve Sender', email:'steve@openpgp.org' }]
       * @returns new cleartext message with signed content
       */
-    def sign(privateKeys: js.Array[js.Any], signature: Signature, date: Date, userIds: js.Array[js.Any]): js.Promise[CleartextMessage] = js.native
+    def sign(privateKeys: js.Array[Any], signature: Signature, date: js.Date, userIds: js.Array[Any]): js.Promise[CleartextMessage] = js.native
     
     /**
       * Sign the cleartext message
@@ -62,7 +61,7 @@ object cleartext {
       * @param userIds (optional) user IDs to sign with, e.g. [ { name:'Steve Sender', email:'steve@openpgp.org' }]
       * @returns new detached signature of message content
       */
-    def signDetached(privateKeys: js.Array[js.Any], signature: Signature, date: Date, userIds: js.Array[js.Any]): js.Promise[Signature] = js.native
+    def signDetached(privateKeys: js.Array[Any], signature: Signature, date: js.Date, userIds: js.Array[Any]): js.Promise[Signature] = js.native
     
     /**
       * Verify signatures of cleartext signed message
@@ -70,7 +69,7 @@ object cleartext {
       * @param date (optional) Verify the signature against the given date, i.e. check signature creation time < date < expiration time
       * @returns list of signer's keyid and validity of signature
       */
-    def verify(keys: js.Array[js.Any], date: Date): js.Promise[js.Array[Keyid]] = js.native
+    def verify(keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Keyid]] = js.native
     
     /**
       * Verify signatures of cleartext signed message
@@ -78,7 +77,7 @@ object cleartext {
       * @param date (optional) Verify the signature against the given date, i.e. check signature creation time < date < expiration time
       * @returns list of signer's keyid and validity of signature
       */
-    def verifyDetached(keys: js.Array[js.Any], date: Date): js.Promise[js.Array[Keyid]] = js.native
+    def verifyDetached(keys: js.Array[Any], date: js.Date): js.Promise[js.Array[Keyid]] = js.native
   }
   
   /**

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BindingTemplateOptions
   extends StObject
-     with TemplateOptions[js.Any]
-     with MappingOptions[js.Any] {
+     with TemplateOptions[Any]
+     with MappingOptions[Any] {
   
   var as: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
-  var foreach: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var foreach: js.UndefOr[js.Array[Any]] = js.undefined
   
   var `if`: js.UndefOr[Boolean] = js.undefined
   
@@ -23,7 +23,7 @@ trait BindingTemplateOptions
   
   var includeDestroyed: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String | (js.Function1[/* val */ js.Any, String])] = js.undefined
+  var name: js.UndefOr[String | (js.Function1[/* val */ Any, String])] = js.undefined
   
   var nodes: js.UndefOr[js.Array[Node]] = js.undefined
 }
@@ -40,15 +40,15 @@ object BindingTemplateOptions {
     
     inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setForeach(value: js.Array[js.Any]): Self = StObject.set(x, "foreach", value.asInstanceOf[js.Any])
+    inline def setForeach(value: js.Array[Any]): Self = StObject.set(x, "foreach", value.asInstanceOf[js.Any])
     
     inline def setForeachUndefined: Self = StObject.set(x, "foreach", js.undefined)
     
-    inline def setForeachVarargs(value: js.Any*): Self = StObject.set(x, "foreach", js.Array(value :_*))
+    inline def setForeachVarargs(value: Any*): Self = StObject.set(x, "foreach", js.Array(value*))
     
     inline def setIf(value: Boolean): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
     
@@ -62,9 +62,9 @@ object BindingTemplateOptions {
     
     inline def setIncludeDestroyedUndefined: Self = StObject.set(x, "includeDestroyed", js.undefined)
     
-    inline def setName(value: String | (js.Function1[/* val */ js.Any, String])): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String | (js.Function1[/* val */ Any, String])): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameFunction1(value: /* val */ js.Any => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+    inline def setNameFunction1(value: /* val */ Any => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -72,6 +72,6 @@ object BindingTemplateOptions {
     
     inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

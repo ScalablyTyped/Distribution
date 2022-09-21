@@ -1,9 +1,8 @@
 package typings.googlemapsInfobubble
 
-import typings.googlemaps.google.maps.LatLng
-import typings.googlemaps.google.maps.Map
-import typings.googlemaps.google.maps.Marker
-import typings.std.Element
+import typings.googleMaps.google.maps.LatLng
+import typings.googleMaps.google.maps.Map
+import typings.googleMaps.google.maps.Marker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,16 +62,11 @@ object google {
           * @map The google map object
           * @marker The marker used for anchoring the infobubble to
           */
-        def open(map: Map[Element], marker: Marker): Unit
+        def open(map: Map, marker: Marker): Unit
       }
       object InfoBubble {
         
-        inline def apply(
-          close: () => Unit,
-          getPosition: () => LatLng,
-          isOpen: () => Boolean,
-          open: (Map[Element], Marker) => Unit
-        ): InfoBubble = {
+        inline def apply(close: () => Unit, getPosition: () => LatLng, isOpen: () => Boolean, open: (Map, Marker) => Unit): InfoBubble = {
           val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getPosition = js.Any.fromFunction0(getPosition), isOpen = js.Any.fromFunction0(isOpen), open = js.Any.fromFunction2(open))
           __obj.asInstanceOf[InfoBubble]
         }
@@ -85,7 +79,7 @@ object google {
           
           inline def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
           
-          inline def setOpen(value: (Map[Element], Marker) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
+          inline def setOpen(value: (Map, Marker) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
         }
       }
       

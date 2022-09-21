@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "Actor")
 @js.native
-class Actor protected () extends StObject {
+open class Actor protected () extends StObject {
   def this(name: String, email: String) = this()
   
   var email: String = js.native

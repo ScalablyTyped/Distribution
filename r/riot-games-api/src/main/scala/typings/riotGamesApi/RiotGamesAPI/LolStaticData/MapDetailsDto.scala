@@ -31,6 +31,6 @@ object MapDetailsDto {
     
     inline def setUnpurchasableItemList(value: js.Array[Double]): Self = StObject.set(x, "unpurchasableItemList", value.asInstanceOf[js.Any])
     
-    inline def setUnpurchasableItemListVarargs(value: Double*): Self = StObject.set(x, "unpurchasableItemList", js.Array(value :_*))
+    inline def setUnpurchasableItemListVarargs(value: Double*): Self = StObject.set(x, "unpurchasableItemList", js.Array(value*))
   }
 }

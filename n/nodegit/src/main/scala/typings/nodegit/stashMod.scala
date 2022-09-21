@@ -20,7 +20,7 @@ object stashMod {
   
   @JSImport("nodegit/stash", "Stash")
   @js.native
-  class Stash () extends StObject
+  open class Stash () extends StObject
   /* static members */
   object Stash {
     
@@ -112,7 +112,7 @@ object stashMod {
     
     var progressCb: js.UndefOr[js.Function] = js.undefined
     
-    var progressPayload: js.UndefOr[js.Any] = js.undefined
+    var progressPayload: js.UndefOr[Any] = js.undefined
     
     var version: js.UndefOr[Double] = js.undefined
   }
@@ -137,7 +137,7 @@ object stashMod {
       
       inline def setProgressCbUndefined: Self = StObject.set(x, "progressCb", js.undefined)
       
-      inline def setProgressPayload(value: js.Any): Self = StObject.set(x, "progressPayload", value.asInstanceOf[js.Any])
+      inline def setProgressPayload(value: Any): Self = StObject.set(x, "progressPayload", value.asInstanceOf[js.Any])
       
       inline def setProgressPayloadUndefined: Self = StObject.set(x, "progressPayload", js.undefined)
       

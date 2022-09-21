@@ -10,7 +10,7 @@ object categoryAxisMod {
   
   @JSImport("plottable/build/src/axes/categoryAxis", "Category")
   @js.native
-  class Category protected () extends Axis[String] {
+  open class Category protected () extends Axis[String] {
     /**
       * Constructs a Category Axis.
       *
@@ -28,7 +28,7 @@ object categoryAxisMod {
       * @param {Plottable.Scales.Category} scale The scale this axis is representing.
       * @param {d3.Selection} ticks The tick elements to write.
       */
-    /* private */ def _drawTicks(stepWidth: js.Any, ticks: js.Any): js.Any = js.native
+    /* private */ var _drawTicks: Any = js.native
     
     /**
       * Measures the size of the tick labels without making any (permanent) DOM changes.
@@ -38,49 +38,49 @@ object categoryAxisMod {
       * @param {Plottable.Scales.Category} scale The scale this axis is representing.
       * @param {string[]} ticks The strings that will be printed on the ticks.
       */
-    /* private */ def _measureTickLabels(axisWidth: js.Any, axisHeight: js.Any): js.Any = js.native
+    /* private */ var _measureTickLabels: Any = js.native
     
-    /* private */ var _measurer: js.Any = js.native
+    /* private */ var _measurer: Any = js.native
     
     /**
       * The rotation angle of tick label text. Only 0, 90, -90 are supported
       */
-    /* private */ var _tickLabelAngle: js.Any = js.native
+    /* private */ var _tickLabelAngle: Any = js.native
     
     /**
       * Maximum allowable number of wrapped lines for tick labels.
       */
-    /* private */ var _tickLabelMaxLines: js.Any = js.native
+    /* private */ var _tickLabelMaxLines: Any = js.native
     
     /**
       * Maximum allowable px width of tick labels.
       */
-    /* private */ var _tickLabelMaxWidth: js.Any = js.native
+    /* private */ var _tickLabelMaxWidth: Any = js.native
     
     /**
       * The shear angle of the tick label text. Only values -80 <= x <= 80 are supported
       */
-    /* private */ var _tickLabelShearAngle: js.Any = js.native
+    /* private */ var _tickLabelShearAngle: Any = js.native
     
     /**
       * Return the space required by the ticks, padding included.
       * @returns {number}
       */
-    /* private */ def _tickSpaceRequired(): js.Any = js.native
+    /* private */ var _tickSpaceRequired: Any = js.native
     
-    /* private */ var _typesetterContext: js.Any = js.native
+    /* private */ var _typesetterContext: Any = js.native
     
     /**
       * A Wrapper configured according to the other properties on this axis.
       * @returns {Typesettable.Wrapper}
       */
-    /* private */ val _wrapper: js.Any = js.native
+    /* private */ def _wrapper: Any = js.native
     
     /**
       * A Writer attached to this measurer and wrapper.
       * @returns {Typesettable.Writer}
       */
-    /* private */ val _writer: js.Any = js.native
+    /* private */ def _writer: Any = js.native
     
     /**
       * Take the scale and drop ticks at regular intervals such that the resultant ticks are all a reasonable minimum
@@ -159,8 +159,8 @@ object categoryAxisMod {
       */
     @JSImport("plottable/build/src/axes/categoryAxis", "Category._MINIMUM_WIDTH_PER_LABEL_PX")
     @js.native
-    def _MINIMUM_WIDTH_PER_LABEL_PX: js.Any = js.native
-    inline def _MINIMUM_WIDTH_PER_LABEL_PX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MINIMUM_WIDTH_PER_LABEL_PX")(x.asInstanceOf[js.Any])
+    def _MINIMUM_WIDTH_PER_LABEL_PX: Any = js.native
+    inline def _MINIMUM_WIDTH_PER_LABEL_PX_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MINIMUM_WIDTH_PER_LABEL_PX")(x.asInstanceOf[js.Any])
   }
   
   trait IDownsampleInfo extends StObject {
@@ -180,7 +180,7 @@ object categoryAxisMod {
       
       inline def setDomain(value: js.Array[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value*))
       
       inline def setStepWidth(value: Double): Self = StObject.set(x, "stepWidth", value.asInstanceOf[js.Any])
     }

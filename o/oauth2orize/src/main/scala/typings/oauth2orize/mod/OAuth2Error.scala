@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param code Defaults to *server_error*.
   * @param status Defaults to 500.
   */
-class OAuth2Error ()
+open class OAuth2Error ()
   extends StObject
      with Error {
   def this(message: String) = this()
@@ -32,9 +32,11 @@ class OAuth2Error ()
   
   var code: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   

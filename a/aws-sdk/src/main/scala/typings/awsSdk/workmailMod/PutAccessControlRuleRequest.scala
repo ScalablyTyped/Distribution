@@ -74,7 +74,7 @@ object PutAccessControlRuleRequest {
     
     inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    inline def setActionsVarargs(value: AccessControlRuleAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: AccessControlRuleAction*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setDescription(value: AccessControlRuleDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -84,7 +84,7 @@ object PutAccessControlRuleRequest {
     
     inline def setIpRangesUndefined: Self = StObject.set(x, "IpRanges", js.undefined)
     
-    inline def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "IpRanges", js.Array(value :_*))
+    inline def setIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "IpRanges", js.Array(value*))
     
     inline def setName(value: AccessControlRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -92,19 +92,19 @@ object PutAccessControlRuleRequest {
     
     inline def setNotActionsUndefined: Self = StObject.set(x, "NotActions", js.undefined)
     
-    inline def setNotActionsVarargs(value: AccessControlRuleAction*): Self = StObject.set(x, "NotActions", js.Array(value :_*))
+    inline def setNotActionsVarargs(value: AccessControlRuleAction*): Self = StObject.set(x, "NotActions", js.Array(value*))
     
     inline def setNotIpRanges(value: IpRangeList): Self = StObject.set(x, "NotIpRanges", value.asInstanceOf[js.Any])
     
     inline def setNotIpRangesUndefined: Self = StObject.set(x, "NotIpRanges", js.undefined)
     
-    inline def setNotIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "NotIpRanges", js.Array(value :_*))
+    inline def setNotIpRangesVarargs(value: IpRange*): Self = StObject.set(x, "NotIpRanges", js.Array(value*))
     
     inline def setNotUserIds(value: UserIdList): Self = StObject.set(x, "NotUserIds", value.asInstanceOf[js.Any])
     
     inline def setNotUserIdsUndefined: Self = StObject.set(x, "NotUserIds", js.undefined)
     
-    inline def setNotUserIdsVarargs(value: WorkMailIdentifier*): Self = StObject.set(x, "NotUserIds", js.Array(value :_*))
+    inline def setNotUserIdsVarargs(value: WorkMailIdentifier*): Self = StObject.set(x, "NotUserIds", js.Array(value*))
     
     inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
@@ -112,6 +112,6 @@ object PutAccessControlRuleRequest {
     
     inline def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
-    inline def setUserIdsVarargs(value: WorkMailIdentifier*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: WorkMailIdentifier*): Self = StObject.set(x, "UserIds", js.Array(value*))
   }
 }

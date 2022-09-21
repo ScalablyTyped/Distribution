@@ -9,11 +9,41 @@ object signatureMod {
   
   @JSImport("postmark/dist/client/models/senders/Signature", "CreateSignatureRequest")
   @js.native
-  class CreateSignatureRequest protected () extends StObject {
-    def this(name: String, fromEmail: String) = this()
-    def this(name: String, fromEmail: String, replyToEmail: String) = this()
-    def this(name: String, fromEmail: String, replyToEmail: String, returnPathDomain: String) = this()
-    def this(name: String, fromEmail: String, replyToEmail: Unit, returnPathDomain: String) = this()
+  open class CreateSignatureRequest protected () extends StObject {
+    def this(Name: String, FromEmail: String) = this()
+    def this(Name: String, FromEmail: String, ReplyToEmail: String) = this()
+    def this(Name: String, FromEmail: String, ReplyToEmail: String, ReturnPathDomain: String) = this()
+    def this(Name: String, FromEmail: String, ReplyToEmail: Unit, ReturnPathDomain: String) = this()
+    def this(
+      Name: String,
+      FromEmail: String,
+      ReplyToEmail: String,
+      ReturnPathDomain: String,
+      ConfirmationPersonalNote: String
+    ) = this()
+    def this(
+      Name: String,
+      FromEmail: String,
+      ReplyToEmail: String,
+      ReturnPathDomain: Unit,
+      ConfirmationPersonalNote: String
+    ) = this()
+    def this(
+      Name: String,
+      FromEmail: String,
+      ReplyToEmail: Unit,
+      ReturnPathDomain: String,
+      ConfirmationPersonalNote: String
+    ) = this()
+    def this(
+      Name: String,
+      FromEmail: String,
+      ReplyToEmail: Unit,
+      ReturnPathDomain: Unit,
+      ConfirmationPersonalNote: String
+    ) = this()
+    
+    var ConfirmationPersonalNote: js.UndefOr[String] = js.native
     
     var FromEmail: String = js.native
     
@@ -26,16 +56,19 @@ object signatureMod {
   
   @JSImport("postmark/dist/client/models/senders/Signature", "UpdateSignatureRequest")
   @js.native
-  class UpdateSignatureRequest () extends StObject {
+  open class UpdateSignatureRequest protected () extends StObject {
     def this(Name: String) = this()
     def this(Name: String, ReplyToEmail: String) = this()
-    def this(Name: Unit, ReplyToEmail: String) = this()
     def this(Name: String, ReplyToEmail: String, ReturnPathDomain: String) = this()
     def this(Name: String, ReplyToEmail: Unit, ReturnPathDomain: String) = this()
-    def this(Name: Unit, ReplyToEmail: String, ReturnPathDomain: String) = this()
-    def this(Name: Unit, ReplyToEmail: Unit, ReturnPathDomain: String) = this()
+    def this(Name: String, ReplyToEmail: String, ReturnPathDomain: String, ConfirmationPersonalNote: String) = this()
+    def this(Name: String, ReplyToEmail: String, ReturnPathDomain: Unit, ConfirmationPersonalNote: String) = this()
+    def this(Name: String, ReplyToEmail: Unit, ReturnPathDomain: String, ConfirmationPersonalNote: String) = this()
+    def this(Name: String, ReplyToEmail: Unit, ReturnPathDomain: Unit, ConfirmationPersonalNote: String) = this()
     
-    var Name: js.UndefOr[String] = js.native
+    var ConfirmationPersonalNote: js.UndefOr[String] = js.native
+    
+    var Name: String = js.native
     
     var ReplyToEmail: js.UndefOr[String] = js.native
     
@@ -90,6 +123,8 @@ object signatureMod {
     extends StObject
        with DomainDetails {
     
+    var ConfirmationPersonalNote: String
+    
     var Confirmed: Boolean
     
     var Domain: String
@@ -101,6 +136,7 @@ object signatureMod {
   object SignatureDetails {
     
     inline def apply(
+      ConfirmationPersonalNote: String,
       Confirmed: Boolean,
       DKIMHost: String,
       DKIMPendingHost: String,
@@ -124,11 +160,13 @@ object signatureMod {
       SafeToRemoveRevokedKeyFromDNS: String,
       WeakDKIM: Boolean
     ): SignatureDetails = {
-      val __obj = js.Dynamic.literal(Confirmed = Confirmed.asInstanceOf[js.Any], DKIMHost = DKIMHost.asInstanceOf[js.Any], DKIMPendingHost = DKIMPendingHost.asInstanceOf[js.Any], DKIMPendingTextValue = DKIMPendingTextValue.asInstanceOf[js.Any], DKIMRevokedHost = DKIMRevokedHost.asInstanceOf[js.Any], DKIMRevokedTextValue = DKIMRevokedTextValue.asInstanceOf[js.Any], DKIMTextValue = DKIMTextValue.asInstanceOf[js.Any], DKIMUpdateStatus = DKIMUpdateStatus.asInstanceOf[js.Any], DKIMVerified = DKIMVerified.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any], EmailAddress = EmailAddress.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ReplyToEmailAddress = ReplyToEmailAddress.asInstanceOf[js.Any], ReturnPathDomain = ReturnPathDomain.asInstanceOf[js.Any], ReturnPathDomainCNAMEValue = ReturnPathDomainCNAMEValue.asInstanceOf[js.Any], ReturnPathDomainVerified = ReturnPathDomainVerified.asInstanceOf[js.Any], SPFHost = SPFHost.asInstanceOf[js.Any], SPFTextValue = SPFTextValue.asInstanceOf[js.Any], SPFVerified = SPFVerified.asInstanceOf[js.Any], SafeToRemoveRevokedKeyFromDNS = SafeToRemoveRevokedKeyFromDNS.asInstanceOf[js.Any], WeakDKIM = WeakDKIM.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ConfirmationPersonalNote = ConfirmationPersonalNote.asInstanceOf[js.Any], Confirmed = Confirmed.asInstanceOf[js.Any], DKIMHost = DKIMHost.asInstanceOf[js.Any], DKIMPendingHost = DKIMPendingHost.asInstanceOf[js.Any], DKIMPendingTextValue = DKIMPendingTextValue.asInstanceOf[js.Any], DKIMRevokedHost = DKIMRevokedHost.asInstanceOf[js.Any], DKIMRevokedTextValue = DKIMRevokedTextValue.asInstanceOf[js.Any], DKIMTextValue = DKIMTextValue.asInstanceOf[js.Any], DKIMUpdateStatus = DKIMUpdateStatus.asInstanceOf[js.Any], DKIMVerified = DKIMVerified.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any], EmailAddress = EmailAddress.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ReplyToEmailAddress = ReplyToEmailAddress.asInstanceOf[js.Any], ReturnPathDomain = ReturnPathDomain.asInstanceOf[js.Any], ReturnPathDomainCNAMEValue = ReturnPathDomainCNAMEValue.asInstanceOf[js.Any], ReturnPathDomainVerified = ReturnPathDomainVerified.asInstanceOf[js.Any], SPFHost = SPFHost.asInstanceOf[js.Any], SPFTextValue = SPFTextValue.asInstanceOf[js.Any], SPFVerified = SPFVerified.asInstanceOf[js.Any], SafeToRemoveRevokedKeyFromDNS = SafeToRemoveRevokedKeyFromDNS.asInstanceOf[js.Any], WeakDKIM = WeakDKIM.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignatureDetails]
     }
     
     extension [Self <: SignatureDetails](x: Self) {
+      
+      inline def setConfirmationPersonalNote(value: String): Self = StObject.set(x, "ConfirmationPersonalNote", value.asInstanceOf[js.Any])
       
       inline def setConfirmed(value: Boolean): Self = StObject.set(x, "Confirmed", value.asInstanceOf[js.Any])
       
@@ -157,7 +195,7 @@ object signatureMod {
       
       inline def setSenderSignatures(value: js.Array[Signature]): Self = StObject.set(x, "SenderSignatures", value.asInstanceOf[js.Any])
       
-      inline def setSenderSignaturesVarargs(value: Signature*): Self = StObject.set(x, "SenderSignatures", js.Array(value :_*))
+      inline def setSenderSignaturesVarargs(value: Signature*): Self = StObject.set(x, "SenderSignatures", js.Array(value*))
       
       inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }

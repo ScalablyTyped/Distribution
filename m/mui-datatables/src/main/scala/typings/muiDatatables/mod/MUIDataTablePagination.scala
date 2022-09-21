@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MUIDataTablePagination extends StObject {
   
   def changeRowsPerPage(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+  ): Any
   
   var count: Double
   
@@ -21,7 +21,7 @@ trait MUIDataTablePagination extends StObject {
 object MUIDataTablePagination {
   
   inline def apply(
-    changeRowsPerPage: js.Any => js.Any,
+    changeRowsPerPage: Any => Any,
     count: Double,
     options: MUIDataTableOptions,
     page: Double,
@@ -33,7 +33,7 @@ object MUIDataTablePagination {
   
   extension [Self <: MUIDataTablePagination](x: Self) {
     
-    inline def setChangeRowsPerPage(value: js.Any => js.Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
+    inline def setChangeRowsPerPage(value: Any => Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -4,15 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes HttpsTrigger, could be used to connect web hooks to function.
-  */
 trait SchemaHttpsTrigger extends StObject {
+  
+  /**
+    * The security level for the function.
+    */
+  var securityLevel: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. The deployed url for the function.
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaHttpsTrigger {
   
@@ -23,7 +25,15 @@ object SchemaHttpsTrigger {
   
   extension [Self <: SchemaHttpsTrigger](x: Self) {
     
+    inline def setSecurityLevel(value: String): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityLevelNull: Self = StObject.set(x, "securityLevel", null)
+    
+    inline def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
+    
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }

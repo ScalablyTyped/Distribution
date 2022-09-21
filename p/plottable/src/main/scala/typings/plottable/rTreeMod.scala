@@ -44,7 +44,7 @@ object rTreeMod {
   
   @JSImport("plottable/build/src/utils/rTree", "RTree")
   @js.native
-  class RTree[T] () extends StObject {
+  open class RTree[T] () extends StObject {
     def this(maxNodeChildren: Double) = this()
     def this(maxNodeChildren: Double, splitStrategy: IRTreeSplitStrategy) = this()
     def this(maxNodeChildren: Unit, splitStrategy: IRTreeSplitStrategy) = this()
@@ -94,27 +94,27 @@ object rTreeMod {
       */
     def locateNearestY(xy: Point): js.Array[T] = js.native
     
-    /* private */ var maxNodeChildren: js.Any = js.native
+    /* private */ var maxNodeChildren: Any = js.native
     
     def query(predicate: js.Function1[/* b */ RTreeBounds, Boolean]): js.Array[T] = js.native
     
     def queryNodes(predicate: js.Function1[/* b */ RTreeNode[T], QueryPredicateResult]): js.Array[RTreeNode[T]] = js.native
     
-    /* private */ var root: js.Any = js.native
+    /* private */ var root: Any = js.native
     
-    /* private */ var size: js.Any = js.native
+    /* private */ var size: Any = js.native
     
-    /* private */ var splitStrategy: js.Any = js.native
+    /* private */ var splitStrategy: Any = js.native
   }
   
   @JSImport("plottable/build/src/utils/rTree", "RTreeBounds")
   @js.native
-  class RTreeBounds protected () extends StObject {
+  open class RTreeBounds protected () extends StObject {
     def this(xl: Double, yl: Double, xh: Double, yh: Double) = this()
     
     def area(): Double = js.native
     
-    /* private */ var areaCached: js.Any = js.native
+    /* private */ var areaCached: Any = js.native
     
     def contains(xy: Point): Boolean = js.native
     
@@ -217,7 +217,7 @@ object rTreeMod {
   
   @JSImport("plottable/build/src/utils/rTree", "RTreeNode")
   @js.native
-  class RTreeNode[T] protected () extends StObject {
+  open class RTreeNode[T] protected () extends StObject {
     def this(leaf: Boolean) = this()
     
     var bounds: RTreeBounds = js.native

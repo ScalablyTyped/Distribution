@@ -33,6 +33,6 @@ object GetSamplingRulesResult {
     
     inline def setSamplingRuleRecordsUndefined: Self = StObject.set(x, "SamplingRuleRecords", js.undefined)
     
-    inline def setSamplingRuleRecordsVarargs(value: SamplingRuleRecord*): Self = StObject.set(x, "SamplingRuleRecords", js.Array(value :_*))
+    inline def setSamplingRuleRecordsVarargs(value: SamplingRuleRecord*): Self = StObject.set(x, "SamplingRuleRecords", js.Array(value*))
   }
 }

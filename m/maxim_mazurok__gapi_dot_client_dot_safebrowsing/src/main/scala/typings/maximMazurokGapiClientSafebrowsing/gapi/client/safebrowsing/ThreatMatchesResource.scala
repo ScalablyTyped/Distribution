@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ThreatMatchesResource extends StObject {
   
-  def find(request: Callback, body: FindThreatMatchesRequest): Request[FindThreatMatchesResponse] = js.native
+  def find(request: Callback, body: GoogleSecuritySafebrowsingV4FindThreatMatchesRequest): Request[GoogleSecuritySafebrowsingV4FindThreatMatchesResponse] = js.native
   /** Finds the threat entries that match the Safe Browsing lists. */
-  def find(request: Oauthtoken): Request[FindThreatMatchesResponse] = js.native
+  def find(request: Oauthtoken): Request[GoogleSecuritySafebrowsingV4FindThreatMatchesResponse] = js.native
 }

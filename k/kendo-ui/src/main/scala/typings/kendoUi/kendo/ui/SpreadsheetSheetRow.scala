@@ -27,7 +27,7 @@ object SpreadsheetSheetRow {
     
     inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    inline def setCellsVarargs(value: SpreadsheetSheetRowCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: SpreadsheetSheetRowCell*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

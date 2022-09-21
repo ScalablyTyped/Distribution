@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EachTextureCallback extends StObject {
   
-  def apply(texture: Texture, args: js.Any*): Unit = js.native
+  def apply(texture: Texture, args: Any*): Unit = js.native
 }

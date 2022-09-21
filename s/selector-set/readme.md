@@ -10,10 +10,10 @@ An efficient data structure for matching and querying elements against a large s
 | ------------------ | :-------------: |
 | Full name          | selector-set |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 161689 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 26314.666666666668 |
+| # stars            | 276.0 |
 
 ## Links
 - [Homepage](https://github.com/josh/selector-set#readme)

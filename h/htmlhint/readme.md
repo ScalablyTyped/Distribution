@@ -1,7 +1,7 @@
 
 # Scala.js typings for htmlhint
 
-Typings are for version 0.9
+Typings are for version 1.1
 
 ## Library description:
 The Static Code Analysis Tool for your HTML
@@ -11,9 +11,9 @@ The Static Code Analysis Tool for your HTML
 | Full name          | htmlhint |
 | Keywords           | html, hint, analysis, javascript |
 | # releases         | 15 |
-| # dependents       | 73 |
-| # downloads        | 2393707 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 341418.3333333333 |
+| # stars            | 2804.0 |
 
 ## Links
 - [Homepage](https://htmlhint.com)

@@ -129,13 +129,13 @@ object Mail {
     
     inline def setBccRecipients(value: js.Array[String]): Self = StObject.set(x, "bccRecipients", value.asInstanceOf[js.Any])
     
-    inline def setBccRecipientsVarargs(value: String*): Self = StObject.set(x, "bccRecipients", js.Array(value :_*))
+    inline def setBccRecipientsVarargs(value: String*): Self = StObject.set(x, "bccRecipients", js.Array(value*))
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setCcRecipients(value: js.Array[String]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
     
-    inline def setCcRecipientsVarargs(value: String*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
+    inline def setCcRecipientsVarargs(value: String*): Self = StObject.set(x, "ccRecipients", js.Array(value*))
     
     inline def setIsBodyHTML(value: Boolean): Self = StObject.set(x, "isBodyHTML", value.asInstanceOf[js.Any])
     
@@ -147,6 +147,6 @@ object Mail {
     
     inline def setToRecipients(value: js.Array[String]): Self = StObject.set(x, "toRecipients", value.asInstanceOf[js.Any])
     
-    inline def setToRecipientsVarargs(value: String*): Self = StObject.set(x, "toRecipients", js.Array(value :_*))
+    inline def setToRecipientsVarargs(value: String*): Self = StObject.set(x, "toRecipients", js.Array(value*))
   }
 }

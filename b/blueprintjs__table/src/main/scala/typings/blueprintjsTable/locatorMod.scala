@@ -12,34 +12,54 @@ object locatorMod {
   
   @JSImport("@blueprintjs/table/lib/esm/locator", "Locator")
   @js.native
-  class Locator protected ()
+  open class Locator protected ()
     extends StObject
        with ILocator {
     def this(tableElement: HTMLElement, scrollContainerElement: HTMLElement, cellContainerElement: HTMLElement) = this()
     
-    /* private */ var cellContainerElement: js.Any = js.native
+    /* private */ var cellContainerElement: Any = js.native
     
-    /* private */ var convertCellIndexToClientX: js.Any = js.native
+    /* private */ var convertCellIndexToClientX: Any = js.native
     
-    /* private */ var convertCellIndexToClientY: js.Any = js.native
+    /* private */ var convertCellIndexToClientY: Any = js.native
     
-    /* private */ var convertCellMidpointToClientX: js.Any = js.native
+    /* private */ var convertCellMidpointToClientX: Any = js.native
     
-    /* private */ var convertCellMidpointToClientY: js.Any = js.native
+    /* private */ var convertCellMidpointToClientY: Any = js.native
     
-    /* private */ var getColumnCellSelector: js.Any = js.native
+    /* private */ var getColumnCellSelector: Any = js.native
     
-    /* private */ var getTableRect: js.Any = js.native
+    /* private */ var getTableRect: Any = js.native
     
     def getViewportRect(): Rect = js.native
     
-    /* private */ var grid: js.Any = js.native
+    /* private */ var grid: Any = js.native
     
-    /* private */ var numFrozenColumns: js.Any = js.native
+    /**
+      * Pass in an already-computed viewport rect here, if available, to reduce DOM reads.
+      *
+      * @returns whether the rendered columns overflow or exactly fit the visible viewport horizontally, helpful for scrolling calculations
+      */
+    def hasHorizontalOverflowOrExactFit(): Boolean = js.native
+    def hasHorizontalOverflowOrExactFit(rowHeaderWidth: Double): Boolean = js.native
+    def hasHorizontalOverflowOrExactFit(rowHeaderWidth: Double, viewportRect: Rect): Boolean = js.native
+    def hasHorizontalOverflowOrExactFit(rowHeaderWidth: Unit, viewportRect: Rect): Boolean = js.native
     
-    /* private */ var numFrozenRows: js.Any = js.native
+    /**
+      * Pass in an already-computed viewport rect here, if available, to reduce DOM reads.
+      *
+      * @returns whether the rendered rows overflow or exactly fit the visible viewport vertically, helpful for scrolling calculations
+      */
+    def hasVerticalOverflowOrExactFit(): Boolean = js.native
+    def hasVerticalOverflowOrExactFit(columnHeaderHeight: Double): Boolean = js.native
+    def hasVerticalOverflowOrExactFit(columnHeaderHeight: Double, viewportRect: Rect): Boolean = js.native
+    def hasVerticalOverflowOrExactFit(columnHeaderHeight: Unit, viewportRect: Rect): Boolean = js.native
     
-    /* private */ var scrollContainerElement: js.Any = js.native
+    /* private */ var numFrozenColumns: Any = js.native
+    
+    /* private */ var numFrozenRows: Any = js.native
+    
+    /* private */ var scrollContainerElement: Any = js.native
     
     def setGrid(grid: Grid): this.type = js.native
     
@@ -47,11 +67,11 @@ object locatorMod {
     
     def setNumFrozenRows(numFrozenRows: Double): this.type = js.native
     
-    /* private */ var tableElement: js.Any = js.native
+    /* private */ var tableElement: Any = js.native
     
-    /* private */ var toGridX: js.Any = js.native
+    /* private */ var toGridX: Any = js.native
     
-    /* private */ var toGridY: js.Any = js.native
+    /* private */ var toGridY: Any = js.native
   }
   /* static members */
   object Locator {
@@ -70,8 +90,8 @@ object locatorMod {
   trait ILocator extends StObject {
     
     /**
-      * Locates a cell's row and column index given the client X
-      * coordinate. Returns -1 if the coordinate is not over a table cell.
+      * Locates a cell's row and column index given the client X and Y
+      * coordinates.
       */
     def convertPointToCell(clientX: Double, clientY: Double): Col = js.native
     

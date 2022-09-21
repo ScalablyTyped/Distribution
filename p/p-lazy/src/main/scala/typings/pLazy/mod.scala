@@ -7,33 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("p-lazy", JSImport.Namespace)
+  @JSImport("p-lazy", JSImport.Default)
   @js.native
-  class ^[ValueType] ()
+  open class default[ValueType] ()
     extends StObject
        with Promise[ValueType]
-  @JSImport("p-lazy", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-  	Create a `PLazy` promise from a promise-returning or async function.
-  	@example
-  	```
-  	import PLazy = require('p-lazy');
-  	const lazyPromise = new PLazy(resolve => {
-  		someHeavyOperation(resolve);
-  	});
-  	// `someHeavyOperation` is not yet called
-  	(async () => {
-  		await doSomethingFun;
-  		// `someHeavyOperation` is called
-  		console.log(await lazyPromise);
-  	})();
-  	```
-  	*/
-  /* static member */
-  inline def from[ValueType](fn: js.Function0[ValueType | js.Thenable[ValueType]]): PLazy[ValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(fn.asInstanceOf[js.Any]).asInstanceOf[PLazy[ValueType]]
+  /* static members */
+  object default {
+    
+    @JSImport("p-lazy", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+    	Create a `PLazy` promise from a promise-returning or async function.
+    	@example
+    	```
+    	import PLazy from 'p-lazy';
+    	const lazyPromise = new PLazy(resolve => {
+    		someHeavyOperation(resolve);
+    	});
+    	// `someHeavyOperation` is not yet called
+    	await doSomethingFun;
+    	// `someHeavyOperation` is called
+    	console.log(await lazyPromise);
+    	```
+    	*/
+    inline def from[ValueType](function_ : js.Function0[ValueType | js.Thenable[ValueType]]): PLazy[ValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(function_.asInstanceOf[js.Any]).asInstanceOf[PLazy[ValueType]]
+  }
   
   type PLazy[ValueType] = js.Promise[ValueType]
 }

@@ -8,6 +8,7 @@ trait RTCErrorEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var error: RTCError
 }
 object RTCErrorEventInit {

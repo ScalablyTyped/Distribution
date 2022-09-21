@@ -10,15 +10,12 @@ Disable the document's scrolling
 | ------------------ | :-------------: |
 | Full name          | no-scroll |
 | Keywords           | scroll, scrolling, disable, modal, dialog |
-| # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 3282436 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 276251.0 |
+| # stars            | 238.0 |
 
 ## Links
-- [Homepage](https://github.com/davidtheclark/no-scroll#readme)
-- [Bugs](https://github.com/davidtheclark/no-scroll/issues)
-- [Repository](https://github.com/davidtheclark/no-scroll)
 - [Npm](https://www.npmjs.com/package/no-scroll)
     
 

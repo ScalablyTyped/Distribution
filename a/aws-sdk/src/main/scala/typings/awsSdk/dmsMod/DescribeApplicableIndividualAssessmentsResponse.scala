@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeApplicableIndividualAssessmentsResponse extends StObject {
   
   /**
-    * List of names for the individual assessments supported by the premigration assessment run that you start based on the specified request parameters. For more information on the available individual assessments, including compatibility with different migration task configurations, see Working with premigration assessment runs in the AWS Database Migration Service User Guide. 
+    * List of names for the individual assessments supported by the premigration assessment run that you start based on the specified request parameters. For more information on the available individual assessments, including compatibility with different migration task configurations, see Working with premigration assessment runs in the Database Migration Service User Guide. 
     */
   var IndividualAssessmentNames: js.UndefOr[IndividualAssessmentNameList] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeApplicableIndividualAssessmentsResponse {
     
     inline def setIndividualAssessmentNamesUndefined: Self = StObject.set(x, "IndividualAssessmentNames", js.undefined)
     
-    inline def setIndividualAssessmentNamesVarargs(value: String*): Self = StObject.set(x, "IndividualAssessmentNames", js.Array(value :_*))
+    inline def setIndividualAssessmentNamesVarargs(value: String*): Self = StObject.set(x, "IndividualAssessmentNames", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

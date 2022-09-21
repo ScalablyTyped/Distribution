@@ -15,8 +15,7 @@ trait SetBLEMTUOption extends StObject {
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[SetBLEMTUFailCallback] = js.undefined
   
-  /** 最大传输单元(22,512) 区间内，单位 bytes
-    * ``` */
+  /** 最大传输单元(22,512) 区间内，单位 bytes */
   var mtu: Double
   
   /** 接口调用成功的回调函数 */

@@ -12,7 +12,7 @@ trait AdminDeleteUserRequest extends StObject {
   var UserPoolId: UserPoolIdType
   
   /**
-    * The user name of the user you wish to delete.
+    * The user name of the user you want to delete.
     */
   var Username: UsernameType
 }

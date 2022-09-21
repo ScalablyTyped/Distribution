@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "Shape")
 @js.native
-class Shape protected ()
+open class Shape protected ()
   extends StObject
      with Geo {
   /*
     Defines a shape
     */
-  def this(`type`: String, coords: js.Array[js.Any]) = this()
+  def this(`type`: String, coords: js.Array[Any]) = this()
   
   /*
     The type of ejs object.  For internal use only.
@@ -24,7 +24,7 @@ class Shape protected ()
     are not validated in this api.  Please see GeoJSON and ElasticSearch
     documentation for correct coordinate definitions.
     */
-  def coordinates(c: js.Array[js.Any]): Shape = js.native
+  def coordinates(c: js.Array[Any]): Shape = js.native
   
   /*
     Sets the radius for parsing a circle Shape.
@@ -35,7 +35,7 @@ class Shape protected ()
     Retrieves the internal script object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets the shape type.  Can be set to one of:  point, linestring, polygon,

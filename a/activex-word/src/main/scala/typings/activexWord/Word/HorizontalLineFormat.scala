@@ -14,7 +14,7 @@ trait HorizontalLineFormat extends StObject {
   
   var NoShade: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PercentWidth: Double
   
@@ -30,7 +30,7 @@ object HorizontalLineFormat {
     Application: Application,
     Creator: Double,
     NoShade: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PercentWidth: Double,
     WidthType: WdHorizontalLineWidthType,
     WordDotHorizontalLineFormat_typekey: HorizontalLineFormat
@@ -50,7 +50,7 @@ object HorizontalLineFormat {
     
     inline def setNoShade(value: Boolean): Self = StObject.set(x, "NoShade", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPercentWidth(value: Double): Self = StObject.set(x, "PercentWidth", value.asInstanceOf[js.Any])
     

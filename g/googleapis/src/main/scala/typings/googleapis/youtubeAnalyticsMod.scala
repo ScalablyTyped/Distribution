@@ -2,16 +2,20 @@ package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
+import typings.googleAuthLibrary.authclientMod.AuthClient
+import typings.googleAuthLibrary.awsclientMod.AwsClientOptions
+import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClientOptions
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.googleapisStrings.v1beta1
 import typings.googleapis.googleapisStrings.v2
 import typings.googleapis.youtubeAnalyticsV1Mod.youtubeAnalyticsV1.Options
 import typings.googleapis.youtubeAnalyticsV1Mod.youtubeAnalyticsV1.Youtubeanalytics
+import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
-import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +26,13 @@ object youtubeAnalyticsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("googleapis/build/src/apis/youtubeAnalytics", "AuthPlus")
+  @js.native
+  open class AuthPlus ()
+    extends typings.googleapisCommon.mod.AuthPlus {
+    def this(opts: GoogleAuthOptions[JSONClient]) = this()
+  }
+  
   object VERSIONS {
     
     @JSImport("googleapis/build/src/apis/youtubeAnalytics", "VERSIONS")
@@ -31,7 +42,7 @@ object youtubeAnalyticsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/youtubeAnalytics", "VERSIONS.v1")
     @js.native
-    class v1 protected () extends Youtubeanalytics {
+    open class v1 protected () extends Youtubeanalytics {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
@@ -51,32 +62,9 @@ object youtubeAnalyticsMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "VERSIONS.v1beta1")
-    @js.native
-    class v1beta1 protected ()
-      extends typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics {
-      def this(options: GlobalOptions) = this()
-      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-    }
-    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "VERSIONS.v1beta1")
-    @js.native
-    def v1beta1: Instantiable2[
-        /* options */ GlobalOptions, 
-        /* google */ js.UndefOr[GoogleConfigurable], 
-        typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics
-      ] = js.native
-    inline def v1beta1_=(
-      x: Instantiable2[
-          /* options */ GlobalOptions, 
-          /* google */ js.UndefOr[GoogleConfigurable], 
-          typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta1")(x.asInstanceOf[js.Any])
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/youtubeAnalytics", "VERSIONS.v2")
     @js.native
-    class v2 protected ()
+    open class v2 protected ()
       extends typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -101,7 +89,25 @@ object youtubeAnalyticsMod {
     
     @JSImport("googleapis/build/src/apis/youtubeAnalytics", "auth")
     @js.native
-    val ^ : AuthPlus = js.native
+    val ^ : typings.googleapisCommon.mod.AuthPlus = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "auth.AwsClient")
+    @js.native
+    open class AwsClient protected ()
+      extends typings.googleAuthLibrary.mod.AwsClient {
+      /**
+        * Instantiates an AwsClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid AWS credential.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: AwsClientOptions) = this()
+    }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/youtubeAnalytics", "auth.Compute")
@@ -112,7 +118,7 @@ object youtubeAnalyticsMod {
       * Retrieve access token from the metadata server.
       * See: https://developers.google.com/compute/docs/authentication
       */
-    class Compute ()
+    open class Compute ()
       extends typings.googleAuthLibrary.mod.Compute
     
     /**
@@ -121,7 +127,7 @@ object youtubeAnalyticsMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/youtubeAnalytics", "auth.DefaultTransporter")
     @js.native
-    class DefaultTransporter ()
+    open class DefaultTransporter ()
       extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
     /* static members */
     object DefaultTransporter {
@@ -130,13 +136,45 @@ object youtubeAnalyticsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "auth.ExternalAccountClient")
+    @js.native
+    open class ExternalAccountClient ()
+      extends typings.googleAuthLibrary.mod.ExternalAccountClient
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "auth.GoogleAuth")
+    @js.native
+    open class GoogleAuth[T /* <: AuthClient */] ()
+      extends typings.googleAuthLibrary.mod.GoogleAuth[T]
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "auth.IdentityPoolClient")
+    @js.native
+    open class IdentityPoolClient protected ()
+      extends typings.googleAuthLibrary.mod.IdentityPoolClient {
+      /**
+        * Instantiate an IdentityPoolClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid file-sourced or
+        * url-sourced credential or a workforce pool user project is provided
+        * with a non workforce audience.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: IdentityPoolClientOptions) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/youtubeAnalytics", "auth.JWT")
     @js.native
-    class JWT protected ()
+    open class JWT protected ()
       extends typings.googleAuthLibrary.mod.JWT {
       /**
         * JWT service account credentials.
@@ -166,21 +204,72 @@ object youtubeAnalyticsMod {
       * @param opts optional options for overriding the given parameters.
       * @constructor
       */
-    class OAuth2 () extends OAuth2Client
+    open class OAuth2 () extends OAuth2Client
     
-    type _To = AuthPlus
+    type _To = typings.googleapisCommon.mod.AuthPlus
     
     /* This means you don't have to write `^`, but can instead just say `auth.foo` */
-    override def _to: AuthPlus = ^
+    override def _to: typings.googleapisCommon.mod.AuthPlus = ^
   }
   
   inline def youtubeAnalytics(options: Options): Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(options.asInstanceOf[js.Any]).asInstanceOf[Youtubeanalytics]
-  inline def youtubeAnalytics(options: typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Options): typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics]
   inline def youtubeAnalytics(options: typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Options): typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics]
   
-  inline def youtubeAnalytics_v1(version: v1): Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(version.asInstanceOf[js.Any]).asInstanceOf[Youtubeanalytics]
+  object youtubeAnalyticsV1 {
+    
+    /**
+      * YouTube Analytics API
+      *
+      * Retrieves your YouTube Analytics data.
+      *
+      * @example
+      * ```js
+      * const {google} = require('googleapis');
+      * const youtubeAnalytics = google.youtubeAnalytics('v1');
+      * ```
+      */
+    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics_v1.Youtubeanalytics")
+    @js.native
+    open class Youtubeanalytics protected ()
+      extends typings.googleapis.youtubeAnalyticsV1Mod.youtubeAnalyticsV1.Youtubeanalytics {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+  }
   
-  inline def youtubeAnalytics_v1beta1(version: v1beta1): typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1.Youtubeanalytics]
+  object youtubeAnalyticsV2 {
+    
+    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics_v2.Resource$Groupitems")
+    @js.native
+    open class ResourceGroupitems protected ()
+      extends typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.ResourceGroupitems {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics_v2.Resource$Groups")
+    @js.native
+    open class ResourceGroups protected ()
+      extends typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.ResourceGroups {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics_v2.Resource$Reports")
+    @js.native
+    open class ResourceReports protected ()
+      extends typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.ResourceReports {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/youtubeAnalytics", "youtubeAnalytics_v2.Youtubeanalytics")
+    @js.native
+    open class Youtubeanalytics protected ()
+      extends typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+  }
+  
+  inline def youtubeAnalytics_v1(version: v1): Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(version.asInstanceOf[js.Any]).asInstanceOf[Youtubeanalytics]
   
   inline def youtubeAnalytics_v2(version: v2): typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics = ^.asInstanceOf[js.Dynamic].applyDynamic("youtubeAnalytics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2.Youtubeanalytics]
 }

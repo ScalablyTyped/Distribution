@@ -32,7 +32,7 @@ object GoogleCloudVideointelligenceV1p3beta1TextSegment {
     
     inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1p3beta1TextFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1p3beta1TextFrame*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setSegment(value: GoogleCloudVideointelligenceV1p3beta1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     

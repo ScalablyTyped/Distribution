@@ -11,7 +11,7 @@ object lazyCellMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/LazyCell", "LazyCell")
   @js.native
-  class LazyCell[A] protected () extends Cell[A] {
+  open class LazyCell[A] protected () extends Cell[A] {
     def this(lazyInitValue: Lazy[A]) = this()
     def this(lazyInitValue: Lazy[A], str: Stream[A]) = this()
   }

@@ -12,12 +12,12 @@ trait BrokerInstanceOption extends StObject {
   var AvailabilityZones: js.UndefOr[listOfAvailabilityZone] = js.undefined
   
   /**
-    * The type of broker engine.
+    * The broker's engine type.
     */
   var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.undefined
   
   /**
-    * The type of broker instance.
+    * The broker's instance type.
     */
   var HostInstanceType: js.UndefOr[string] = js.undefined
   
@@ -49,7 +49,7 @@ object BrokerInstanceOption {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setEngineType(value: EngineType): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
     
@@ -67,12 +67,12 @@ object BrokerInstanceOption {
     
     inline def setSupportedDeploymentModesUndefined: Self = StObject.set(x, "SupportedDeploymentModes", js.undefined)
     
-    inline def setSupportedDeploymentModesVarargs(value: DeploymentMode*): Self = StObject.set(x, "SupportedDeploymentModes", js.Array(value :_*))
+    inline def setSupportedDeploymentModesVarargs(value: DeploymentMode*): Self = StObject.set(x, "SupportedDeploymentModes", js.Array(value*))
     
     inline def setSupportedEngineVersions(value: listOfString): Self = StObject.set(x, "SupportedEngineVersions", value.asInstanceOf[js.Any])
     
     inline def setSupportedEngineVersionsUndefined: Self = StObject.set(x, "SupportedEngineVersions", js.undefined)
     
-    inline def setSupportedEngineVersionsVarargs(value: string*): Self = StObject.set(x, "SupportedEngineVersions", js.Array(value :_*))
+    inline def setSupportedEngineVersionsVarargs(value: string*): Self = StObject.set(x, "SupportedEngineVersions", js.Array(value*))
   }
 }

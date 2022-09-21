@@ -8,5 +8,5 @@ object removePermissionMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/RemovePermission", "RemovePermission")
   @js.native
-  val RemovePermission: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val RemovePermission: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

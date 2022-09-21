@@ -21,7 +21,7 @@ trait DurandalActivator[T] extends StObject {
     * @returns {promise}
     */
   def activateItem(newItem: T): DurandalPromise[Boolean] = js.native
-  def activateItem(newItem: T, activationData: js.Any): DurandalPromise[Boolean] = js.native
+  def activateItem(newItem: T, activationData: Any): DurandalPromise[Boolean] = js.native
   
   /**
     * Determines whether or not the activator, in its current state, can be activated.
@@ -36,7 +36,7 @@ trait DurandalActivator[T] extends StObject {
     * @returns {promise}
     */
   def canActivateItem(newItem: T): DurandalPromise[Boolean] = js.native
-  def canActivateItem(newItem: T, activationData: js.Any): DurandalPromise[Boolean] = js.native
+  def canActivateItem(newItem: T, activationData: Any): DurandalPromise[Boolean] = js.native
   
   /**
     * Determines whether or not the activator, in its current state, can be deactivated.
@@ -69,18 +69,18 @@ trait DurandalActivator[T] extends StObject {
   /**
     * Sets up a collection representing a pool of objects which the activator will activate. See below for details. Activators without an item bool always close their values on deactivate. Activators with an items pool only deactivate, but do not close them.
     */
-  def forItems(items: js.Array[js.Any]): DurandalActivator[T] = js.native
+  def forItems(items: js.Array[Any]): DurandalActivator[T] = js.native
   
   /**
     * Adds canActivate, activate, canDeactivate and deactivate functions to the provided model which pass through to the corresponding functions on the activator.
     */
-  def includeIn(includeIn: js.Any): Unit = js.native
+  def includeIn(includeIn: Any): Unit = js.native
   
   /**
     * An observable which indicates whether or not the activator is currently in the process of activating an instance.
     * @returns {boolean}
     */
-  var isActivating: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var isActivating: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
   
   /**
     * The settings for this activator.

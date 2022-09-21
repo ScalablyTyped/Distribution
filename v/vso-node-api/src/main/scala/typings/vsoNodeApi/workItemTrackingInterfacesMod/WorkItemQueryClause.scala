@@ -60,7 +60,7 @@ object WorkItemQueryClause {
     
     inline def setClauses(value: js.Array[WorkItemQueryClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
-    inline def setClausesVarargs(value: WorkItemQueryClause*): Self = StObject.set(x, "clauses", js.Array(value :_*))
+    inline def setClausesVarargs(value: WorkItemQueryClause*): Self = StObject.set(x, "clauses", js.Array(value*))
     
     inline def setField(value: WorkItemFieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

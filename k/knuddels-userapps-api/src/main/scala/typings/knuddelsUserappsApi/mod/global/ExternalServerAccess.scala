@@ -8,43 +8,43 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-	 * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html
-	 */
+  * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html
+  */
 @JSGlobal("ExternalServerAccess")
 @js.native
-class ExternalServerAccess () extends StObject {
+open class ExternalServerAccess () extends StObject {
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_callURL
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_callURL
+    */
   def callURL(urlString: java.lang.String): Unit = js.native
   def callURL(urlString: java.lang.String, parameters: Method): Unit = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_canAccessURL
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_canAccessURL
+    */
   def canAccessURL(urlString: java.lang.String): Boolean = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_getAllAccessibleDomains
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_getAllAccessibleDomains
+    */
   def getAllAccessibleDomains(): js.Array[Domain] = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_getURL
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_getURL
+    */
   def getURL(urlString: java.lang.String): Unit = js.native
   def getURL(urlString: java.lang.String, parameters: OnFailure): Unit = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_postURL
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_postURL
+    */
   def postURL(urlString: java.lang.String): Unit = js.native
   def postURL(urlString: java.lang.String, parameters: OnSuccess): Unit = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_touchURL
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ExternalServerAccess.html#method_touchURL
+    */
   def touchURL(urlString: java.lang.String): Unit = js.native
   def touchURL(urlString: java.lang.String, parameters: OnFailure): Unit = js.native
 }

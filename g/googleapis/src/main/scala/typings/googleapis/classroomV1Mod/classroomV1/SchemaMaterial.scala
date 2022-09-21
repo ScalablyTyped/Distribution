@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Material attached to course work.  When creating attachments, setting the
-  * `form` field is not supported.
-  */
 trait SchemaMaterial extends StObject {
   
   /**
@@ -21,8 +17,7 @@ trait SchemaMaterial extends StObject {
   var form: js.UndefOr[SchemaForm] = js.undefined
   
   /**
-    * Link material. On creation, will be upgraded to a more appropriate type
-    * if possible, and this will be reflected in the response.
+    * Link material. On creation, this is upgraded to a more appropriate type if possible, and this is reflected in the response.
     */
   var link: js.UndefOr[SchemaLink] = js.undefined
   

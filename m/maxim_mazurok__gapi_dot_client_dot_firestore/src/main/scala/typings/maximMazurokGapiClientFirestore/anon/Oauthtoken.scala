@@ -28,11 +28,7 @@ trait Oauthtoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. The parent resource name. In the format: `projects/{project_id}/databases/{database_id}/documents` or
-    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`. For example: `projects/my-project/databases/my-database/documents` or
-    * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
-    */
+  /** Required. A parent name of the form `projects/{project_id}` */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

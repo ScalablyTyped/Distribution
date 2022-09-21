@@ -26,7 +26,7 @@ trait Name extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name of this connection profile resource in the form of projects/{project}/locations/{location}/instances/{instance}. */
+  /** The name of this connection profile resource in the form of projects/{project}/locations/{location}/connectionProfiles/{connectionProfile}. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

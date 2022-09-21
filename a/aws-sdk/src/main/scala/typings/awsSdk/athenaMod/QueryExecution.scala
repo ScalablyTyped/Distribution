@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryExecution extends StObject {
   
   /**
+    * The engine version that executed the query.
+    */
+  var EngineVersion: js.UndefOr[typings.awsSdk.athenaMod.EngineVersion] = js.undefined
+  
+  /**
+    * A list of values for the parameters in a query. The values are applied sequentially to the parameters in the query in the order in which the parameters occur.
+    */
+  var ExecutionParameters: js.UndefOr[typings.awsSdk.athenaMod.ExecutionParameters] = js.undefined
+  
+  /**
     * The SQL query statements which the query execution ran.
     */
   var Query: js.UndefOr[QueryString] = js.undefined
@@ -27,7 +37,7 @@ trait QueryExecution extends StObject {
   var ResultConfiguration: js.UndefOr[typings.awsSdk.athenaMod.ResultConfiguration] = js.undefined
   
   /**
-    * The type of query statement that was run. DDL indicates DDL query statements. DML indicates DML (Data Manipulation Language) query statements, such as CREATE TABLE AS SELECT. UTILITY indicates query statements other than DDL and DML, such as SHOW CREATE TABLE, or DESCRIBE &lt;table&gt;.
+    * The type of query statement that was run. DDL indicates DDL query statements. DML indicates DML (Data Manipulation Language) query statements, such as CREATE TABLE AS SELECT. UTILITY indicates query statements other than DDL and DML, such as SHOW CREATE TABLE, or DESCRIBE TABLE.
     */
   var StatementType: js.UndefOr[typings.awsSdk.athenaMod.StatementType] = js.undefined
   
@@ -54,6 +64,16 @@ object QueryExecution {
   }
   
   extension [Self <: QueryExecution](x: Self) {
+    
+    inline def setEngineVersion(value: EngineVersion): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
+    
+    inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    
+    inline def setExecutionParameters(value: ExecutionParameters): Self = StObject.set(x, "ExecutionParameters", value.asInstanceOf[js.Any])
+    
+    inline def setExecutionParametersUndefined: Self = StObject.set(x, "ExecutionParameters", js.undefined)
+    
+    inline def setExecutionParametersVarargs(value: ExecutionParameter*): Self = StObject.set(x, "ExecutionParameters", js.Array(value*))
     
     inline def setQuery(value: QueryString): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     

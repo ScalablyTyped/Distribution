@@ -50,7 +50,7 @@ object RequestedExtension {
     
     inline def setExtensionRequests(value: js.Array[ExtensionRequest]): Self = StObject.set(x, "extensionRequests", value.asInstanceOf[js.Any])
     
-    inline def setExtensionRequestsVarargs(value: ExtensionRequest*): Self = StObject.set(x, "extensionRequests", js.Array(value :_*))
+    inline def setExtensionRequestsVarargs(value: ExtensionRequest*): Self = StObject.set(x, "extensionRequests", js.Array(value*))
     
     inline def setPublisherDisplayName(value: String): Self = StObject.set(x, "publisherDisplayName", value.asInstanceOf[js.Any])
     

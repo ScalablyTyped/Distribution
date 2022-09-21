@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConfirmArgs
   extends StObject
-     with AsyncCallback[Unit] {
+     with AsyncCallback[ConfirmCallbackValue] {
   
   /**
     * OK button text, which is “Cancel” by default.

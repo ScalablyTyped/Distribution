@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTabControlTabCancelEventArgs")
 @js.native
-class ASPxClientTabControlTabCancelEventArgs protected ()
+open class ASPxClientTabControlTabCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTabControlTabCancelEventArgs {
   /**

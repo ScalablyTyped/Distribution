@@ -29,7 +29,7 @@ object Members {
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: Node*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: Node*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setName(value: typings.webgme.GmeCommon.Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

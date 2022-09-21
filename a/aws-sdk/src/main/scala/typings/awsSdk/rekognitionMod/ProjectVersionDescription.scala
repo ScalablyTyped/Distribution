@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProjectVersionDescription extends StObject {
   
   /**
-    * The duration, in seconds, that the model version has been billed for training. This value is only returned if the model version has been successfully trained.
+    * The duration, in seconds, that you were billed for a successful training of the model version. This value is only returned if the model version has been successfully trained.
     */
   var BillableTrainingTimeInSeconds: js.UndefOr[ULong] = js.undefined
   
   /**
     * The Unix datetime for the date and time that training started.
     */
-  var CreationTimestamp: js.UndefOr[DateTime] = js.undefined
+  var CreationTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The training results. EvaluationResult is only returned if training is successful.
@@ -22,9 +22,19 @@ trait ProjectVersionDescription extends StObject {
   var EvaluationResult: js.UndefOr[typings.awsSdk.rekognitionMod.EvaluationResult] = js.undefined
   
   /**
+    * The identifer for the AWS Key Management Service key (AWS KMS key) that was used to encrypt the model during training. 
+    */
+  var KmsKeyId: js.UndefOr[typings.awsSdk.rekognitionMod.KmsKeyId] = js.undefined
+  
+  /**
     * The location of the summary manifest. The summary manifest provides aggregate data validation results for the training and test datasets.
     */
   var ManifestSummary: js.UndefOr[GroundTruthManifest] = js.undefined
+  
+  /**
+    * The maximum number of inference units Amazon Rekognition Custom Labels uses to auto-scale the model. For more information, see StartProjectVersion.
+    */
+  var MaxInferenceUnits: js.UndefOr[InferenceUnits] = js.undefined
   
   /**
     * The minimum number of inference units used by the model. For more information, see StartProjectVersion.
@@ -40,6 +50,11 @@ trait ProjectVersionDescription extends StObject {
     * The Amazon Resource Name (ARN) of the model version. 
     */
   var ProjectVersionArn: js.UndefOr[typings.awsSdk.rekognitionMod.ProjectVersionArn] = js.undefined
+  
+  /**
+    * If the model version was copied from a different project, SourceProjectVersionArn contains the ARN of the source model version. 
+    */
+  var SourceProjectVersionArn: js.UndefOr[ProjectVersionArn] = js.undefined
   
   /**
     * The current status of the model version.
@@ -64,7 +79,7 @@ trait ProjectVersionDescription extends StObject {
   /**
     * The Unix date and time that training of the model ended.
     */
-  var TrainingEndTimestamp: js.UndefOr[DateTime] = js.undefined
+  var TrainingEndTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object ProjectVersionDescription {
   
@@ -79,7 +94,7 @@ object ProjectVersionDescription {
     
     inline def setBillableTrainingTimeInSecondsUndefined: Self = StObject.set(x, "BillableTrainingTimeInSeconds", js.undefined)
     
-    inline def setCreationTimestamp(value: DateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: js.Date): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
     
@@ -87,9 +102,17 @@ object ProjectVersionDescription {
     
     inline def setEvaluationResultUndefined: Self = StObject.set(x, "EvaluationResult", js.undefined)
     
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    
     inline def setManifestSummary(value: GroundTruthManifest): Self = StObject.set(x, "ManifestSummary", value.asInstanceOf[js.Any])
     
     inline def setManifestSummaryUndefined: Self = StObject.set(x, "ManifestSummary", js.undefined)
+    
+    inline def setMaxInferenceUnits(value: InferenceUnits): Self = StObject.set(x, "MaxInferenceUnits", value.asInstanceOf[js.Any])
+    
+    inline def setMaxInferenceUnitsUndefined: Self = StObject.set(x, "MaxInferenceUnits", js.undefined)
     
     inline def setMinInferenceUnits(value: InferenceUnits): Self = StObject.set(x, "MinInferenceUnits", value.asInstanceOf[js.Any])
     
@@ -102,6 +125,10 @@ object ProjectVersionDescription {
     inline def setProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "ProjectVersionArn", value.asInstanceOf[js.Any])
     
     inline def setProjectVersionArnUndefined: Self = StObject.set(x, "ProjectVersionArn", js.undefined)
+    
+    inline def setSourceProjectVersionArn(value: ProjectVersionArn): Self = StObject.set(x, "SourceProjectVersionArn", value.asInstanceOf[js.Any])
+    
+    inline def setSourceProjectVersionArnUndefined: Self = StObject.set(x, "SourceProjectVersionArn", js.undefined)
     
     inline def setStatus(value: ProjectVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
@@ -119,7 +146,7 @@ object ProjectVersionDescription {
     
     inline def setTrainingDataResultUndefined: Self = StObject.set(x, "TrainingDataResult", js.undefined)
     
-    inline def setTrainingEndTimestamp(value: DateTime): Self = StObject.set(x, "TrainingEndTimestamp", value.asInstanceOf[js.Any])
+    inline def setTrainingEndTimestamp(value: js.Date): Self = StObject.set(x, "TrainingEndTimestamp", value.asInstanceOf[js.Any])
     
     inline def setTrainingEndTimestampUndefined: Self = StObject.set(x, "TrainingEndTimestamp", js.undefined)
   }

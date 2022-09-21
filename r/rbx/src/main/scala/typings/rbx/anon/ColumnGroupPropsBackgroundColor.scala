@@ -146,7 +146,7 @@ trait ColumnGroupPropsBackgroundColor extends StObject {
   var tooltipResponsive: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-    */ typings.rbx.rbxStrings.ColumnGroupPropsBackgroundColor & TopLevel[js.Any]
+    */ typings.rbx.rbxStrings.ColumnGroupPropsBackgroundColor & TopLevel[Any]
   ] = js.undefined
   
   var touch: js.UndefOr[ColumnGroupBreakpointOptions] = js.undefined
@@ -335,7 +335,7 @@ object ColumnGroupPropsBackgroundColor {
     inline def setTooltipResponsive(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-      */ typings.rbx.rbxStrings.ColumnGroupPropsBackgroundColor & TopLevel[js.Any]
+      */ typings.rbx.rbxStrings.ColumnGroupPropsBackgroundColor & TopLevel[Any]
     ): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
     
     inline def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)

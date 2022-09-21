@@ -1,20 +1,19 @@
 package typings.rrule
 
 import typings.rrule.weekdayMod.Weekday
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @JSImport("rrule/dist/esm/src/types", JSImport.Namespace)
+  @JSImport("rrule/dist/esm/types", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   @js.native
   sealed trait Frequency extends StObject
-  @JSImport("rrule/dist/esm/src/types", "Frequency")
+  @JSImport("rrule/dist/esm/types", "Frequency")
   @js.native
   object Frequency extends StObject {
     
@@ -73,7 +72,7 @@ object typesMod {
   */
   type ByWeekday = _ByWeekday | Double
   
-  type IterResultType[M /* <: QueryMethodTypes */] = Date | Null | js.Array[Date]
+  type IterResultType[M /* <: QueryMethodTypes */] = js.Date | Null | js.Array[js.Date]
   
   trait Options extends StObject {
     
@@ -103,7 +102,7 @@ object typesMod {
     
     var count: Double | Null
     
-    var dtstart: Date | Null
+    var dtstart: js.Date | Null
     
     var freq: Frequency
     
@@ -111,7 +110,7 @@ object typesMod {
     
     var tzid: String | Null
     
-    var until: Date | Null
+    var until: js.Date | Null
     
     var wkst: Weekday | Double | Null
   }
@@ -132,73 +131,73 @@ object typesMod {
       
       inline def setByhourNull: Self = StObject.set(x, "byhour", null)
       
-      inline def setByhourVarargs(value: Double*): Self = StObject.set(x, "byhour", js.Array(value :_*))
+      inline def setByhourVarargs(value: Double*): Self = StObject.set(x, "byhour", js.Array(value*))
       
       inline def setByminute(value: Double | js.Array[Double]): Self = StObject.set(x, "byminute", value.asInstanceOf[js.Any])
       
       inline def setByminuteNull: Self = StObject.set(x, "byminute", null)
       
-      inline def setByminuteVarargs(value: Double*): Self = StObject.set(x, "byminute", js.Array(value :_*))
+      inline def setByminuteVarargs(value: Double*): Self = StObject.set(x, "byminute", js.Array(value*))
       
       inline def setBymonth(value: Double | js.Array[Double]): Self = StObject.set(x, "bymonth", value.asInstanceOf[js.Any])
       
       inline def setBymonthNull: Self = StObject.set(x, "bymonth", null)
       
-      inline def setBymonthVarargs(value: Double*): Self = StObject.set(x, "bymonth", js.Array(value :_*))
+      inline def setBymonthVarargs(value: Double*): Self = StObject.set(x, "bymonth", js.Array(value*))
       
       inline def setBymonthday(value: Double | js.Array[Double]): Self = StObject.set(x, "bymonthday", value.asInstanceOf[js.Any])
       
       inline def setBymonthdayNull: Self = StObject.set(x, "bymonthday", null)
       
-      inline def setBymonthdayVarargs(value: Double*): Self = StObject.set(x, "bymonthday", js.Array(value :_*))
+      inline def setBymonthdayVarargs(value: Double*): Self = StObject.set(x, "bymonthday", js.Array(value*))
       
       inline def setBynmonthday(value: js.Array[Double]): Self = StObject.set(x, "bynmonthday", value.asInstanceOf[js.Any])
       
       inline def setBynmonthdayNull: Self = StObject.set(x, "bynmonthday", null)
       
-      inline def setBynmonthdayVarargs(value: Double*): Self = StObject.set(x, "bynmonthday", js.Array(value :_*))
+      inline def setBynmonthdayVarargs(value: Double*): Self = StObject.set(x, "bynmonthday", js.Array(value*))
       
       inline def setBynweekday(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "bynweekday", value.asInstanceOf[js.Any])
       
       inline def setBynweekdayNull: Self = StObject.set(x, "bynweekday", null)
       
-      inline def setBynweekdayVarargs(value: js.Array[Double]*): Self = StObject.set(x, "bynweekday", js.Array(value :_*))
+      inline def setBynweekdayVarargs(value: js.Array[Double]*): Self = StObject.set(x, "bynweekday", js.Array(value*))
       
       inline def setBysecond(value: Double | js.Array[Double]): Self = StObject.set(x, "bysecond", value.asInstanceOf[js.Any])
       
       inline def setBysecondNull: Self = StObject.set(x, "bysecond", null)
       
-      inline def setBysecondVarargs(value: Double*): Self = StObject.set(x, "bysecond", js.Array(value :_*))
+      inline def setBysecondVarargs(value: Double*): Self = StObject.set(x, "bysecond", js.Array(value*))
       
       inline def setBysetpos(value: Double | js.Array[Double]): Self = StObject.set(x, "bysetpos", value.asInstanceOf[js.Any])
       
       inline def setBysetposNull: Self = StObject.set(x, "bysetpos", null)
       
-      inline def setBysetposVarargs(value: Double*): Self = StObject.set(x, "bysetpos", js.Array(value :_*))
+      inline def setBysetposVarargs(value: Double*): Self = StObject.set(x, "bysetpos", js.Array(value*))
       
       inline def setByweekday(value: ByWeekday | js.Array[ByWeekday]): Self = StObject.set(x, "byweekday", value.asInstanceOf[js.Any])
       
       inline def setByweekdayNull: Self = StObject.set(x, "byweekday", null)
       
-      inline def setByweekdayVarargs(value: ByWeekday*): Self = StObject.set(x, "byweekday", js.Array(value :_*))
+      inline def setByweekdayVarargs(value: ByWeekday*): Self = StObject.set(x, "byweekday", js.Array(value*))
       
       inline def setByweekno(value: Double | js.Array[Double]): Self = StObject.set(x, "byweekno", value.asInstanceOf[js.Any])
       
       inline def setByweeknoNull: Self = StObject.set(x, "byweekno", null)
       
-      inline def setByweeknoVarargs(value: Double*): Self = StObject.set(x, "byweekno", js.Array(value :_*))
+      inline def setByweeknoVarargs(value: Double*): Self = StObject.set(x, "byweekno", js.Array(value*))
       
       inline def setByyearday(value: Double | js.Array[Double]): Self = StObject.set(x, "byyearday", value.asInstanceOf[js.Any])
       
       inline def setByyeardayNull: Self = StObject.set(x, "byyearday", null)
       
-      inline def setByyeardayVarargs(value: Double*): Self = StObject.set(x, "byyearday", js.Array(value :_*))
+      inline def setByyeardayVarargs(value: Double*): Self = StObject.set(x, "byyearday", js.Array(value*))
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
       inline def setCountNull: Self = StObject.set(x, "count", null)
       
-      inline def setDtstart(value: Date): Self = StObject.set(x, "dtstart", value.asInstanceOf[js.Any])
+      inline def setDtstart(value: js.Date): Self = StObject.set(x, "dtstart", value.asInstanceOf[js.Any])
       
       inline def setDtstartNull: Self = StObject.set(x, "dtstart", null)
       
@@ -210,7 +209,7 @@ object typesMod {
       
       inline def setTzidNull: Self = StObject.set(x, "tzid", null)
       
-      inline def setUntil(value: Date): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
+      inline def setUntil(value: js.Date): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
       
       inline def setUntilNull: Self = StObject.set(x, "until", null)
       
@@ -255,7 +254,7 @@ object typesMod {
     var byyearday_ParsedOptions: js.Array[Double]
     
     @JSName("dtstart")
-    var dtstart_ParsedOptions: Date
+    var dtstart_ParsedOptions: js.Date
     
     @JSName("wkst")
     var wkst_ParsedOptions: Double
@@ -273,7 +272,7 @@ object typesMod {
       byweekday: js.Array[Double],
       byweekno: js.Array[Double],
       byyearday: js.Array[Double],
-      dtstart: Date,
+      dtstart: js.Date,
       freq: Frequency,
       interval: Double,
       wkst: Double
@@ -286,51 +285,51 @@ object typesMod {
       
       inline def setByhour(value: js.Array[Double]): Self = StObject.set(x, "byhour", value.asInstanceOf[js.Any])
       
-      inline def setByhourVarargs(value: Double*): Self = StObject.set(x, "byhour", js.Array(value :_*))
+      inline def setByhourVarargs(value: Double*): Self = StObject.set(x, "byhour", js.Array(value*))
       
       inline def setByminute(value: js.Array[Double]): Self = StObject.set(x, "byminute", value.asInstanceOf[js.Any])
       
-      inline def setByminuteVarargs(value: Double*): Self = StObject.set(x, "byminute", js.Array(value :_*))
+      inline def setByminuteVarargs(value: Double*): Self = StObject.set(x, "byminute", js.Array(value*))
       
       inline def setBymonth(value: js.Array[Double]): Self = StObject.set(x, "bymonth", value.asInstanceOf[js.Any])
       
-      inline def setBymonthVarargs(value: Double*): Self = StObject.set(x, "bymonth", js.Array(value :_*))
+      inline def setBymonthVarargs(value: Double*): Self = StObject.set(x, "bymonth", js.Array(value*))
       
       inline def setBymonthday(value: js.Array[Double]): Self = StObject.set(x, "bymonthday", value.asInstanceOf[js.Any])
       
-      inline def setBymonthdayVarargs(value: Double*): Self = StObject.set(x, "bymonthday", js.Array(value :_*))
+      inline def setBymonthdayVarargs(value: Double*): Self = StObject.set(x, "bymonthday", js.Array(value*))
       
       inline def setBynmonthday(value: js.Array[Double]): Self = StObject.set(x, "bynmonthday", value.asInstanceOf[js.Any])
       
-      inline def setBynmonthdayVarargs(value: Double*): Self = StObject.set(x, "bynmonthday", js.Array(value :_*))
+      inline def setBynmonthdayVarargs(value: Double*): Self = StObject.set(x, "bynmonthday", js.Array(value*))
       
       inline def setBysecond(value: js.Array[Double]): Self = StObject.set(x, "bysecond", value.asInstanceOf[js.Any])
       
-      inline def setBysecondVarargs(value: Double*): Self = StObject.set(x, "bysecond", js.Array(value :_*))
+      inline def setBysecondVarargs(value: Double*): Self = StObject.set(x, "bysecond", js.Array(value*))
       
       inline def setBysetpos(value: js.Array[Double]): Self = StObject.set(x, "bysetpos", value.asInstanceOf[js.Any])
       
-      inline def setBysetposVarargs(value: Double*): Self = StObject.set(x, "bysetpos", js.Array(value :_*))
+      inline def setBysetposVarargs(value: Double*): Self = StObject.set(x, "bysetpos", js.Array(value*))
       
       inline def setByweekday(value: js.Array[Double]): Self = StObject.set(x, "byweekday", value.asInstanceOf[js.Any])
       
-      inline def setByweekdayVarargs(value: Double*): Self = StObject.set(x, "byweekday", js.Array(value :_*))
+      inline def setByweekdayVarargs(value: Double*): Self = StObject.set(x, "byweekday", js.Array(value*))
       
       inline def setByweekno(value: js.Array[Double]): Self = StObject.set(x, "byweekno", value.asInstanceOf[js.Any])
       
-      inline def setByweeknoVarargs(value: Double*): Self = StObject.set(x, "byweekno", js.Array(value :_*))
+      inline def setByweeknoVarargs(value: Double*): Self = StObject.set(x, "byweekno", js.Array(value*))
       
       inline def setByyearday(value: js.Array[Double]): Self = StObject.set(x, "byyearday", value.asInstanceOf[js.Any])
       
-      inline def setByyeardayVarargs(value: Double*): Self = StObject.set(x, "byyearday", js.Array(value :_*))
+      inline def setByyeardayVarargs(value: Double*): Self = StObject.set(x, "byyearday", js.Array(value*))
       
-      inline def setDtstart(value: Date): Self = StObject.set(x, "dtstart", value.asInstanceOf[js.Any])
+      inline def setDtstart(value: js.Date): Self = StObject.set(x, "dtstart", value.asInstanceOf[js.Any])
       
       inline def setWkst(value: Double): Self = StObject.set(x, "wkst", value.asInstanceOf[js.Any])
     }
   }
   
-  /* keyof rrule.rrule/dist/esm/src/types.QueryMethods */ /* Rewritten from type alias, can be one of: 
+  /* keyof rrule.rrule/dist/esm/types.QueryMethods */ /* Rewritten from type alias, can be one of: 
     - typings.rrule.rruleStrings.all
     - typings.rrule.rruleStrings.between
     - typings.rrule.rruleStrings.before
@@ -340,21 +339,21 @@ object typesMod {
   
   trait QueryMethods extends StObject {
     
-    def after(date: Date, inc: Boolean): Date
+    def after(date: js.Date, inc: Boolean): js.Date
     
-    def all(): js.Array[Date]
+    def all(): js.Array[js.Date]
     
-    def before(date: Date, inc: Boolean): Date
+    def before(date: js.Date, inc: Boolean): js.Date
     
-    def between(after: Date, before: Date, inc: Boolean): js.Array[Date]
+    def between(after: js.Date, before: js.Date, inc: Boolean): js.Array[js.Date]
   }
   object QueryMethods {
     
     inline def apply(
-      after: (Date, Boolean) => Date,
-      all: () => js.Array[Date],
-      before: (Date, Boolean) => Date,
-      between: (Date, Date, Boolean) => js.Array[Date]
+      after: (js.Date, Boolean) => js.Date,
+      all: () => js.Array[js.Date],
+      before: (js.Date, Boolean) => js.Date,
+      between: (js.Date, js.Date, Boolean) => js.Array[js.Date]
     ): QueryMethods = {
       val __obj = js.Dynamic.literal(after = js.Any.fromFunction2(after), all = js.Any.fromFunction0(all), before = js.Any.fromFunction2(before), between = js.Any.fromFunction3(between))
       __obj.asInstanceOf[QueryMethods]
@@ -362,13 +361,13 @@ object typesMod {
     
     extension [Self <: QueryMethods](x: Self) {
       
-      inline def setAfter(value: (Date, Boolean) => Date): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
+      inline def setAfter(value: (js.Date, Boolean) => js.Date): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
       
-      inline def setAll(value: () => js.Array[Date]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
+      inline def setAll(value: () => js.Array[js.Date]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
       
-      inline def setBefore(value: (Date, Boolean) => Date): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+      inline def setBefore(value: (js.Date, Boolean) => js.Date): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
       
-      inline def setBetween(value: (Date, Date, Boolean) => js.Array[Date]): Self = StObject.set(x, "between", js.Any.fromFunction3(value))
+      inline def setBetween(value: (js.Date, js.Date, Boolean) => js.Array[js.Date]): Self = StObject.set(x, "between", js.Any.fromFunction3(value))
     }
   }
   

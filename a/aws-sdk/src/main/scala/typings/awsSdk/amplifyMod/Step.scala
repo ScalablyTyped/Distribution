@@ -19,7 +19,7 @@ trait Step extends StObject {
   /**
     *  The end date and time of the execution step. 
     */
-  var endTime: EndTime
+  var endTime: js.Date
   
   /**
     *  The URL to the logs for the execution step. 
@@ -34,7 +34,7 @@ trait Step extends StObject {
   /**
     *  The start date and time of the execution step. 
     */
-  var startTime: StartTime
+  var startTime: js.Date
   
   /**
     *  The status of the execution step. 
@@ -63,7 +63,7 @@ trait Step extends StObject {
 }
 object Step {
   
-  inline def apply(endTime: EndTime, startTime: StartTime, status: JobStatus, stepName: StepName): Step = {
+  inline def apply(endTime: js.Date, startTime: js.Date, status: JobStatus, stepName: StepName): Step = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stepName = stepName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
@@ -78,7 +78,7 @@ object Step {
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setLogUrl(value: LogUrl): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
     
@@ -88,7 +88,7 @@ object Step {
     
     inline def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

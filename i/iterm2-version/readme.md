@@ -1,7 +1,7 @@
 
 # Scala.js typings for iterm2-version
 
-Typings are for version 4.2.0
+Typings are for version 5.0.0
 
 ## Library description:
 Get the iTerm2 version
@@ -10,10 +10,10 @@ Get the iTerm2 version
 | ------------------ | :-------------: |
 | Full name          | iterm2-version |
 | Keywords           | iterm2, iterm, terminal, app, version |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 3803170 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 972229.6666666666 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/iterm2-version#readme)

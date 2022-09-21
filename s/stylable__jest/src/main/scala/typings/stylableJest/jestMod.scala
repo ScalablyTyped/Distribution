@@ -1,24 +1,44 @@
 package typings.stylableJest
 
-import typings.stylableJest.anon.Instrument
-import typings.stylableJest.anon.PartialOptions
-import typings.stylableJest.anon.PartialStylableConfig
+import typings.std.Partial
+import typings.stylableJest.anon.GetCacheKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestMod {
   
-  @JSImport("@stylable/jest/cjs/jest", JSImport.Namespace)
+  @JSImport("@stylable/jest/dist/jest", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getCacheKey(fileData: String, filename: String, configString: String, hasInstrument: Instrument): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getCacheKey")(fileData.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], configString.asInstanceOf[js.Any], hasInstrument.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createTransformer(): GetCacheKey = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")().asInstanceOf[GetCacheKey]
+  inline def createTransformer(options: StylableJestConfig): GetCacheKey = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(options.asInstanceOf[js.Any]).asInstanceOf[GetCacheKey]
   
-  inline def process(source: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(source.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def processFactory(): js.Function2[/* source */ String, /* path */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("processFactory")().asInstanceOf[js.Function2[/* source */ String, /* path */ String, String]]
-  inline def processFactory(stylableConfig: Unit, factoryOptions: PartialOptions): js.Function2[/* source */ String, /* path */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("processFactory")(stylableConfig.asInstanceOf[js.Any], factoryOptions.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* source */ String, /* path */ String, String]]
-  inline def processFactory(stylableConfig: PartialStylableConfig): js.Function2[/* source */ String, /* path */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("processFactory")(stylableConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* source */ String, /* path */ String, String]]
-  inline def processFactory(stylableConfig: PartialStylableConfig, factoryOptions: PartialOptions): js.Function2[/* source */ String, /* path */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("processFactory")(stylableConfig.asInstanceOf[js.Any], factoryOptions.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* source */ String, /* path */ String, String]]
+  trait StylableJestConfig extends StObject {
+    
+    var stylable: js.UndefOr[
+        Partial[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StylableConfig */ Any
+        ]
+      ] = js.undefined
+  }
+  object StylableJestConfig {
+    
+    inline def apply(): StylableJestConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[StylableJestConfig]
+    }
+    
+    extension [Self <: StylableJestConfig](x: Self) {
+      
+      inline def setStylable(
+        value: Partial[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StylableConfig */ Any
+            ]
+      ): Self = StObject.set(x, "stylable", value.asInstanceOf[js.Any])
+      
+      inline def setStylableUndefined: Self = StObject.set(x, "stylable", js.undefined)
+    }
+  }
 }

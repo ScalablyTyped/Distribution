@@ -3,10 +3,10 @@ package typings.semanticUiReact
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.HtmlLabelProps
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
@@ -20,12 +20,12 @@ object formFieldMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormField", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FormFieldProps] = js.native
+  val default: FC[FormFieldProps] = js.native
   
   trait FormFieldProps
     extends StObject
        with StrictFormFieldProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FormFieldProps {
     
     inline def apply(): FormFieldProps = {
@@ -37,7 +37,7 @@ object formFieldMod extends Shortcut {
   trait StrictFormFieldProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -53,7 +53,7 @@ object formFieldMod extends Shortcut {
       * Extra FormField props are passed to the control component.
       * Mutually exclusive with children.
       */
-    var control: js.UndefOr[js.Any] = js.undefined
+    var control: js.UndefOr[Any] = js.undefined
     
     /** Individual fields may be disabled. */
     var disabled: js.UndefOr[Boolean] = js.undefined
@@ -71,7 +71,7 @@ object formFieldMod extends Shortcut {
     var label: js.UndefOr[SemanticShorthandItem[HtmlLabelProps]] = js.undefined
     
     /** A field can show that input is mandatory.  Requires a label. */
-    var required: js.UndefOr[js.Any] = js.undefined
+    var required: js.UndefOr[Any] = js.undefined
     
     /** Passed to the control component (i.e. <input type='password' />) */
     var `type`: js.UndefOr[String] = js.undefined
@@ -88,7 +88,7 @@ object formFieldMod extends Shortcut {
     
     extension [Self <: StrictFormFieldProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -104,7 +104,7 @@ object formFieldMod extends Shortcut {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setControl(value: js.Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      inline def setControl(value: Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
       
       inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       
@@ -136,7 +136,7 @@ object formFieldMod extends Shortcut {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setRequired(value: js.Any): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Any): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
@@ -150,8 +150,8 @@ object formFieldMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[FormFieldProps]
+  type _To = FC[FormFieldProps]
   
   /* This means you don't have to write `default`, but can instead just say `formFieldMod.foo` */
-  override def _to: StatelessComponent[FormFieldProps] = default
+  override def _to: FC[FormFieldProps] = default
 }

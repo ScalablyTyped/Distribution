@@ -1,23 +1,38 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentRemove extends js.Object {
+trait DocumentRemove extends StObject {
+  
   var document: js.UndefOr[String] = js.undefined
+  
   var readTime: js.UndefOr[String] = js.undefined
+  
   var removedTargetIds: js.UndefOr[js.Array[Double]] = js.undefined
 }
-
 object DocumentRemove {
-  @scala.inline
-  def apply(document: String = null, readTime: String = null, removedTargetIds: js.Array[Double] = null): DocumentRemove = {
+  
+  inline def apply(): DocumentRemove = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (removedTargetIds != null) __obj.updateDynamic("removedTargetIds")(removedTargetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentRemove]
   }
+  
+  extension [Self <: DocumentRemove](x: Self) {
+    
+    inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    
+    inline def setRemovedTargetIds(value: js.Array[Double]): Self = StObject.set(x, "removedTargetIds", value.asInstanceOf[js.Any])
+    
+    inline def setRemovedTargetIdsUndefined: Self = StObject.set(x, "removedTargetIds", js.undefined)
+    
+    inline def setRemovedTargetIdsVarargs(value: Double*): Self = StObject.set(x, "removedTargetIds", js.Array(value*))
+  }
 }
-

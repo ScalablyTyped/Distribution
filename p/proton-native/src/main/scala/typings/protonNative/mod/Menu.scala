@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("proton-native", "Menu")
 @js.native
-class Menu protected ()
-  extends Component[MenuProps, js.Object, js.Any] {
+open class Menu protected ()
+  extends Component[MenuProps, js.Object, Any] {
   def this(props: MenuProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MenuProps, context: js.Any) = this()
+  def this(props: MenuProps, context: Any) = this()
 }
 /* static members */
 object Menu {

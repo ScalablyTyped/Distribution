@@ -10,15 +10,12 @@ Generate beautiful DMG-images for your OS X applications.
 | ------------------ | :-------------: |
 | Full name          | appdmg |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 503395 |
-| # stars            | 9 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 104759.66666666667 |
+| # stars            | 1493.0 |
 
 ## Links
-- [Homepage](https://github.com/LinusU/node-appdmg#readme)
-- [Bugs](https://github.com/LinusU/node-appdmg/issues)
-- [Repository](https://github.com/LinusU/node-appdmg)
 - [Npm](https://www.npmjs.com/package/appdmg)
     
 

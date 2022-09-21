@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_domainsrdap
 
-Typings are for version 1.0.20201119
+Typings are for version 1.0.20220811
 
 ## Library description:
 TypeScript typings for Domains RDAP API v1
@@ -10,10 +10,10 @@ TypeScript typings for Domains RDAP API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.domainsrdap |
 | Keywords           | - |
-| # releases         | 43 |
-| # dependents       | 1 |
-| # downloads        | 3028 |
-| # stars            | 0 |
+| # releases         | 278 |
+| # dependents       | 0.0 |
+| # downloads        | 2376.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

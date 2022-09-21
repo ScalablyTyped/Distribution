@@ -41,7 +41,7 @@ object DescribeDomainControllersRequest {
     
     inline def setDomainControllerIdsUndefined: Self = StObject.set(x, "DomainControllerIds", js.undefined)
     
-    inline def setDomainControllerIdsVarargs(value: DomainControllerId*): Self = StObject.set(x, "DomainControllerIds", js.Array(value :_*))
+    inline def setDomainControllerIdsVarargs(value: DomainControllerId*): Self = StObject.set(x, "DomainControllerIds", js.Array(value*))
     
     inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

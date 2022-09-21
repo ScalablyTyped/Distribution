@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CanvasUserInterface extends StObject {
   
+  /* standard dom */
   def drawFocusIfNeeded(element: Element): Unit = js.native
+  /* standard dom */
   def drawFocusIfNeeded(path: Path2D, element: Element): Unit = js.native
-  
-  def scrollPathIntoView(): Unit = js.native
-  def scrollPathIntoView(path: Path2D): Unit = js.native
 }

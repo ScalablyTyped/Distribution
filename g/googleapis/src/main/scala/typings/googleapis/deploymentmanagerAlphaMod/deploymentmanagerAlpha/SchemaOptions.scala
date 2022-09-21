@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options allows customized resource handling by Deployment Manager.
-  */
 trait SchemaOptions extends StObject {
   
   /**
@@ -20,11 +17,9 @@ trait SchemaOptions extends StObject {
   var inputMappings: js.UndefOr[js.Array[SchemaInputMapping]] = js.undefined
   
   /**
-    * The json path to the field in the resource JSON body into which the
-    * resource name should be mapped. Leaving this empty indicates that there
-    * should be no mapping performed.
+    * The json path to the field in the resource JSON body into which the resource name should be mapped. Leaving this empty indicates that there should be no mapping performed.
     */
-  var nameProperty: js.UndefOr[String] = js.undefined
+  var nameProperty: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Options for how to validate and process properties on a resource.
@@ -44,15 +39,17 @@ object SchemaOptions {
     
     inline def setAsyncOptionsUndefined: Self = StObject.set(x, "asyncOptions", js.undefined)
     
-    inline def setAsyncOptionsVarargs(value: SchemaAsyncOptions*): Self = StObject.set(x, "asyncOptions", js.Array(value :_*))
+    inline def setAsyncOptionsVarargs(value: SchemaAsyncOptions*): Self = StObject.set(x, "asyncOptions", js.Array(value*))
     
     inline def setInputMappings(value: js.Array[SchemaInputMapping]): Self = StObject.set(x, "inputMappings", value.asInstanceOf[js.Any])
     
     inline def setInputMappingsUndefined: Self = StObject.set(x, "inputMappings", js.undefined)
     
-    inline def setInputMappingsVarargs(value: SchemaInputMapping*): Self = StObject.set(x, "inputMappings", js.Array(value :_*))
+    inline def setInputMappingsVarargs(value: SchemaInputMapping*): Self = StObject.set(x, "inputMappings", js.Array(value*))
     
     inline def setNameProperty(value: String): Self = StObject.set(x, "nameProperty", value.asInstanceOf[js.Any])
+    
+    inline def setNamePropertyNull: Self = StObject.set(x, "nameProperty", null)
     
     inline def setNamePropertyUndefined: Self = StObject.set(x, "nameProperty", js.undefined)
     

@@ -17,7 +17,7 @@ trait UpdateGroupQueryInput extends StObject {
   var GroupName: js.UndefOr[typings.awsSdk.resourcegroupsMod.GroupName] = js.undefined
   
   /**
-    * The resource query to determine which AWS resources are members of this resource group.
+    * The resource query to determine which AWS resources are members of this resource group.  A resource group can contain either a Configuration or a ResourceQuery, but not both. 
     */
   var ResourceQuery: typings.awsSdk.resourcegroupsMod.ResourceQuery
 }

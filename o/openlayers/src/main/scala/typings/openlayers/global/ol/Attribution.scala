@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ol.Attribution")
 @js.native
-class Attribution protected ()
+open class Attribution protected ()
   extends typings.openlayers.mod.Attribution {
   /**
     * @classdesc

@@ -18,7 +18,7 @@ trait HintProps extends StObject {
   // default: {}
   var align: js.UndefOr[Vertical] = js.undefined
   
-  var format: js.UndefOr[js.Function1[/* x */ js.Any, js.Array[Title]]] = js.undefined
+  var format: js.UndefOr[js.Function1[/* x */ Any, js.Array[Title]]] = js.undefined
   
   // default: {'horizontal':'auto','vertical':'auto'}
   var getAlignStyle: js.UndefOr[RVGetAlignStyle] = js.undefined
@@ -33,11 +33,11 @@ trait HintProps extends StObject {
   
   var orientation: js.UndefOr[bottomleft | bottomright | topleft | topright] = js.undefined
   
-  var scales: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var scales: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var value: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var value: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object HintProps {
   
@@ -52,7 +52,7 @@ object HintProps {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setFormat(value: /* x */ js.Any => js.Array[Title]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormat(value: /* x */ Any => js.Array[Title]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
@@ -80,7 +80,7 @@ object HintProps {
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    inline def setScales(value: StringDictionary[js.Any]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+    inline def setScales(value: StringDictionary[Any]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
     
     inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
     
@@ -88,7 +88,7 @@ object HintProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setValue(value: StringDictionary[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: StringDictionary[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

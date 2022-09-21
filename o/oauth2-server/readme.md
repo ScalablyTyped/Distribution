@@ -10,15 +10,12 @@ Complete, framework-agnostic, compliant and well tested module for implementing 
 | ------------------ | :-------------: |
 | Full name          | oauth2-server |
 | Keywords           | oauth, oauth2 |
-| # releases         | 5 |
-| # dependents       | 74 |
-| # downloads        | 1594837 |
-| # stars            | 31 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 218245.0 |
+| # stars            | 3727.0 |
 
 ## Links
-- [Homepage](https://github.com/oauthjs/node-oauth2-server#readme)
-- [Bugs](https://github.com/oauthjs/node-oauth2-server/issues)
-- [Repository](https://github.com/oauthjs/node-oauth2-server)
 - [Npm](https://www.npmjs.com/package/oauth2-server)
     
 

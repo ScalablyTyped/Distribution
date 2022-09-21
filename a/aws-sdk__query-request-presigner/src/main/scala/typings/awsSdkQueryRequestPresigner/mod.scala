@@ -30,7 +30,7 @@ object mod {
       * @default request the same endpoint as in the request
       */
     var endpoint: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ Any
       ] = js.undefined
     
     /**
@@ -64,7 +64,7 @@ object mod {
       inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       inline def setEndpoint(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ Any
       ): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
       inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)

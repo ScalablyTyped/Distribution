@@ -8,13 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("GamepadHapticActuator")
 @js.native
-class GamepadHapticActuator ()
+/* standard dom */
+open class GamepadHapticActuator ()
   extends StObject
      with typings.std.GamepadHapticActuator {
   
-  /* CompleteClass */
-  override def pulse(value: Double, duration: Double): js.Promise[scala.Boolean] = js.native
-  
+  /* standard dom */
   /* CompleteClass */
   override val `type`: GamepadHapticActuatorType = js.native
 }

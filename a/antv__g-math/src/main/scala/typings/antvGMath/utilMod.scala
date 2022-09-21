@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object utilMod {
   
-  @JSImport("@antv/g-math/lib/util", JSImport.Namespace)
+  @JSImport("@antv/g-math/dist/util", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

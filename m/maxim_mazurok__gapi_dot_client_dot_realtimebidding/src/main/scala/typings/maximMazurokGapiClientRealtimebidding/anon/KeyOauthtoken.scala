@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientRealtimebidding.anon
 
-import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.UserList
+import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.BatchApprovePublisherConnectionsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,11 +29,7 @@ trait KeyOauthtoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. The name of the parent buyer of the user list to be retrieved that must follow the pattern `buyers/{buyerAccountId}`, where `{buyerAccountId}` represents the account
-    * ID of the buyer who owns user lists. For a bidder accessing user lists on behalf of a child seat buyer , `{buyerAccountId}` should represent the account ID of the child seat
-    * buyer.
-    */
+  /** Required. The bidder for whom publisher connections will be approved. Format: `bidders/{bidder}` where `{bidder}` is the account ID of the bidder. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -43,7 +39,7 @@ trait KeyOauthtoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: UserList
+  var resource: BatchApprovePublisherConnectionsRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -53,7 +49,7 @@ trait KeyOauthtoken extends StObject {
 }
 object KeyOauthtoken {
   
-  inline def apply(parent: String, resource: UserList): KeyOauthtoken = {
+  inline def apply(parent: String, resource: BatchApprovePublisherConnectionsRequest): KeyOauthtoken = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOauthtoken]
   }
@@ -98,7 +94,7 @@ object KeyOauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: UserList): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: BatchApprovePublisherConnectionsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

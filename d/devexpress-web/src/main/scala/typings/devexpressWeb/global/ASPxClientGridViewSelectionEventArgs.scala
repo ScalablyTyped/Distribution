@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewSelectionEventArgs")
 @js.native
-class ASPxClientGridViewSelectionEventArgs protected ()
+open class ASPxClientGridViewSelectionEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewSelectionEventArgs {
   /**

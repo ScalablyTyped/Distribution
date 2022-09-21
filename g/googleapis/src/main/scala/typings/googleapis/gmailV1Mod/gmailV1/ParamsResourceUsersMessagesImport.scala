@@ -1,9 +1,5 @@
 package typings.googleapis.gmailV1Mod.gmailV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,13 +10,7 @@ trait ParamsResourceUsersMessagesImport
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Mark the email as permanently deleted (not TRASH) and only visible in
-    * Google Vault to a Vault administrator. Only used for G Suite accounts.
+    * Mark the email as permanently deleted (not TRASH) and only visible in Google Vault to a Vault administrator. Only used for G Suite accounts.
     */
   var deleted: js.UndefOr[Boolean] = js.undefined
   
@@ -35,14 +25,12 @@ trait ParamsResourceUsersMessagesImport
   var media: js.UndefOr[Body] = js.undefined
   
   /**
-    * Ignore the Gmail spam classifier decision and never mark this email as
-    * SPAM in the mailbox.
+    * Ignore the Gmail spam classifier decision and never mark this email as SPAM in the mailbox.
     */
   var neverMarkSpam: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Process calendar invites in the email and add any extracted meetings to
-    * the Google Calendar for this user.
+    * Process calendar invites in the email and add any extracted meetings to the Google Calendar for this user.
     */
   var processForCalendar: js.UndefOr[Boolean] = js.undefined
   
@@ -52,8 +40,7 @@ trait ParamsResourceUsersMessagesImport
   var requestBody: js.UndefOr[SchemaMessage] = js.undefined
   
   /**
-    * The user's email address. The special value me can be used to indicate
-    * the authenticated user.
+    * The user's email address. The special value `me` can be used to indicate the authenticated user.
     */
   var userId: js.UndefOr[String] = js.undefined
 }
@@ -65,10 +52,6 @@ object ParamsResourceUsersMessagesImport {
   }
   
   extension [Self <: ParamsResourceUsersMessagesImport](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

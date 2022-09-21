@@ -24,6 +24,6 @@ object PutEvaluationsResponse {
     
     inline def setFailedEvaluationsUndefined: Self = StObject.set(x, "FailedEvaluations", js.undefined)
     
-    inline def setFailedEvaluationsVarargs(value: Evaluation*): Self = StObject.set(x, "FailedEvaluations", js.Array(value :_*))
+    inline def setFailedEvaluationsVarargs(value: Evaluation*): Self = StObject.set(x, "FailedEvaluations", js.Array(value*))
   }
 }

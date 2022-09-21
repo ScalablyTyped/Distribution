@@ -9,25 +9,25 @@ trait SceneOptimizer
   extends StObject
      with IDisposable {
   
-  /* private */ var _checkCurrentState: js.Any = js.native
+  /* private */ var _checkCurrentState: Any = js.native
   
-  /* private */ var _currentFrameRate: js.Any = js.native
+  /* private */ var _currentFrameRate: Any = js.native
   
-  /* private */ var _currentPriorityLevel: js.Any = js.native
+  /* private */ var _currentPriorityLevel: Any = js.native
   
-  /* private */ var _improvementMode: js.Any = js.native
+  /* private */ var _improvementMode: Any = js.native
   
-  /* private */ var _isRunning: js.Any = js.native
+  /* private */ var _isRunning: Any = js.native
   
-  /* private */ var _options: js.Any = js.native
+  /* private */ var _options: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _sceneDisposeObserver: js.Any = js.native
+  /* private */ var _sceneDisposeObserver: Any = js.native
   
-  /* private */ var _targetFrameRate: js.Any = js.native
+  /* private */ var _targetFrameRate: Any = js.native
   
-  /* private */ var _trackerDuration: js.Any = js.native
+  /* private */ var _trackerDuration: Any = js.native
   
   /**
     * Gets the current frame rate checked by the SceneOptimizer
@@ -40,9 +40,10 @@ trait SceneOptimizer
   def currentPriorityLevel: Double = js.native
   
   /**
-    * Gets a boolean indicating if the optimizer is in improvement mode
+    * Gets or sets a boolean indicating if the optimizer is in improvement mode
     */
   def isInImprovementMode: Boolean = js.native
+  def isInImprovementMode_=(value: Boolean): Unit = js.native
   
   /**
     * Defines an observable called when the optimizer is not able to reach the target frame rate
@@ -71,7 +72,7 @@ trait SceneOptimizer
   
   /**
     * Start the optimizer. By default it will try to reach a specific framerate
-    * but if the optimizer is set with improvementMode === true then it will run all optimiatiation while frame rate is above the target frame rate
+    * but if the optimizer is set with improvementMode === true then it will run all optimization while frame rate is above the target frame rate
     */
   def start(): Unit = js.native
   

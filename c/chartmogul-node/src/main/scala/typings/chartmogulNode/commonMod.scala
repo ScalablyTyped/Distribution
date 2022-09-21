@@ -92,7 +92,7 @@ object commonMod {
       
       inline def setEntries(value: js.Array[T]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      inline def setEntriesVarargs(value: T*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: T*): Self = StObject.set(x, "entries", js.Array(value*))
     }
   }
   
@@ -113,13 +113,13 @@ object commonMod {
       
       inline def setEntries(value: js.Array[T]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      inline def setEntriesVarargs(value: T*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: T*): Self = StObject.set(x, "entries", js.Array(value*))
       
       inline def setSummary(value: Summary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     }
   }
   
-  type Map = StringDictionary[js.Any]
+  type Map = StringDictionary[Any]
   
   type Strings = js.Array[String]
   

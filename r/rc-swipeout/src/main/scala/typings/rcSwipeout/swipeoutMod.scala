@@ -12,8 +12,8 @@ object swipeoutMod {
   
   @JSImport("rc-swipeout/lib/Swipeout", JSImport.Default)
   @js.native
-  class default protected () extends Swipeout {
-    def this(props: js.Any) = this()
+  open class default protected () extends Swipeout {
+    def this(props: Any) = this()
   }
   /* static members */
   object default {
@@ -29,12 +29,11 @@ object swipeoutMod {
   }
   
   @js.native
-  trait Swipeout
-    extends Component[IPropTypes, js.Any, js.Any] {
+  trait Swipeout extends Component[IPropTypes, Any, Any] {
     
-    def _getContentEasing(value: js.Any, limit: js.Any): js.Any = js.native
+    def _getContentEasing(value: Any, limit: Any): Any = js.native
     
-    def _setStyle(value: js.Any): Unit = js.native
+    def _setStyle(value: Any): Unit = js.native
     
     var btnsLeftWidth: Double = js.native
     
@@ -48,41 +47,41 @@ object swipeoutMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MSwipeout(): Unit = js.native
     
-    var content: js.Any = js.native
+    var content: Any = js.native
     
-    var cover: js.Any = js.native
+    var cover: Any = js.native
     
     def doOpenLeft(): Unit = js.native
     
     def doOpenRight(): Unit = js.native
     
-    var left: js.Any = js.native
+    var left: Any = js.native
     
     var needShowLeft: Boolean = js.native
     
     var needShowRight: Boolean = js.native
     
-    def onBtnClick(ev: js.Any, btn: js.Any): Unit = js.native
+    def onBtnClick(ev: Any, btn: Any): Unit = js.native
     
-    def onCloseSwipe(ev: js.Any): Unit = js.native
+    def onCloseSwipe(ev: Any): Unit = js.native
     
-    def onPanEnd(e: js.Any): Unit = js.native
+    def onPanEnd(e: Any): Unit = js.native
     
-    def onPanMove(e: js.Any): Unit = js.native
+    def onPanMove(e: Any): Unit = js.native
     
-    def onPanStart(e: js.Any): Unit = js.native
+    def onPanStart(e: Any): Unit = js.native
     
-    def onTouchMove(e: js.Any): Unit = js.native
+    def onTouchMove(e: Any): Unit = js.native
     
-    def open(value: js.Any, openedLeft: js.Any, openedRight: js.Any): Unit = js.native
+    def open(value: Any, openedLeft: Any, openedRight: Any): Unit = js.native
     
     var openedLeft: Boolean = js.native
     
     var openedRight: Boolean = js.native
     
-    def renderButtons(buttons: js.Any, ref: js.Any): Element | Null = js.native
+    def renderButtons(buttons: Any, ref: Any): Element | Null = js.native
     
-    var right: js.Any = js.native
+    var right: Any = js.native
     
     var swiping: Boolean = js.native
   }

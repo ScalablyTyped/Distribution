@@ -1,5 +1,6 @@
 package typings.styleValueTypes
 
+import typings.styleValueTypes.typesMod.Color
 import typings.styleValueTypes.typesMod.HSLA
 import typings.styleValueTypes.typesMod.RGBA
 import typings.styleValueTypes.typesMod.ValueType
@@ -23,18 +24,62 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createTransformer(prop: String): js.Function1[/* v */ js.Array[Double | RGBA | HSLA], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ js.Array[Double | RGBA | HSLA], String]]
+    @JSImport("style-value-types", "complex.createTransformer")
+    @js.native
+    def createTransformer: js.Function1[
+        /* v */ String | Double, 
+        js.Function1[/* v */ js.Array[Color | Double | String], String]
+      ] = js.native
+    inline def createTransformer(v: String): js.Function1[/* v */ js.Array[Color | Double | String], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(v.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ js.Array[Color | Double | String], String]]
+    inline def createTransformer(v: Double): js.Function1[/* v */ js.Array[Color | Double | String], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(v.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ js.Array[Color | Double | String], String]]
+    inline def createTransformer_=(
+      x: js.Function1[
+          /* v */ String | Double, 
+          js.Function1[/* v */ js.Array[Color | Double | String], String]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTransformer")(x.asInstanceOf[js.Any])
     
-    inline def getAnimatableNone(target: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimatableNone")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+    @JSImport("style-value-types", "complex.getAnimatableNone")
+    @js.native
+    def getAnimatableNone: js.Function1[/* v */ String | Double, String] = js.native
+    inline def getAnimatableNone(v: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimatableNone")(v.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getAnimatableNone(v: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimatableNone")(v.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getAnimatableNone_=(x: js.Function1[/* v */ String | Double, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAnimatableNone")(x.asInstanceOf[js.Any])
     
-    inline def parse(v: js.Any): js.Array[Double | RGBA | HSLA] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double | RGBA | HSLA]]
+    @JSImport("style-value-types", "complex.parse")
+    @js.native
+    def parse: js.Function1[/* v */ String | Double, js.Array[Double | RGBA | HSLA]] = js.native
+    inline def parse(v: String): js.Array[Double | RGBA | HSLA] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double | RGBA | HSLA]]
+    inline def parse(v: Double): js.Array[Double | RGBA | HSLA] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double | RGBA | HSLA]]
+    inline def parse_=(x: js.Function1[/* v */ String | Double, js.Array[Double | RGBA | HSLA]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
     
-    inline def test(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @JSImport("style-value-types", "complex.test")
+    @js.native
+    def test: js.Function1[/* v */ Any, Boolean] = js.native
+    inline def test(v: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test_=(x: js.Function1[/* v */ Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("test")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("style-value-types", "degrees")
   @js.native
   val degrees: ValueType = js.native
+  
+  object filter {
+    
+    @JSImport("style-value-types", "filter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def createTransformer(v: String): js.Function1[/* v */ js.Array[String | Double | RGBA | HSLA], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(v.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ js.Array[String | Double | RGBA | HSLA], String]]
+    inline def createTransformer(v: Double): js.Function1[/* v */ js.Array[String | Double | RGBA | HSLA], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(v.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ js.Array[String | Double | RGBA | HSLA], String]]
+    
+    inline def getAnimatableNone(v: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimatableNone")(v.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def parse(v: String): js.Array[Double | RGBA | HSLA] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double | RGBA | HSLA]]
+    inline def parse(v: Double): js.Array[Double | RGBA | HSLA] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double | RGBA | HSLA]]
+    
+    inline def test(v: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  }
   
   @JSImport("style-value-types", "hex")
   @js.native

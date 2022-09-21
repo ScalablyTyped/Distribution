@@ -10,10 +10,10 @@ object bluetoothMod {
   
   @JSImport("material-ui/svg-icons/device/bluetooth", JSImport.Default)
   @js.native
-  class default () extends DeviceBluetooth
+  open class default () extends DeviceBluetooth
   
   @JSImport("material-ui/svg-icons/device/bluetooth", "DeviceBluetooth")
   @js.native
-  class DeviceBluetooth ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceBluetooth ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

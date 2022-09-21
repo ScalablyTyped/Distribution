@@ -8,5 +8,5 @@ object restoreSummaryMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_RestoreSummary", "_RestoreSummary")
   @js.native
-  val RestoreSummary: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RestoreSummary: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

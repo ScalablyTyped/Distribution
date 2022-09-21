@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ng-packagr" : "14.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ng-packagr" : "14.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

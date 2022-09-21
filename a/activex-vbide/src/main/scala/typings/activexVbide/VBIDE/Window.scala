@@ -10,7 +10,7 @@ trait Window extends StObject {
   
   def Close(): Unit
   
-  def Collection(index: js.Any): Window
+  def Collection(index: Any): Window
   @JSName("Collection")
   val Collection_Original: Windows
   
@@ -22,7 +22,7 @@ trait Window extends StObject {
   
   val LinkedWindowFrame: Window
   
-  def LinkedWindows(index: js.Any): Window
+  def LinkedWindows(index: Any): Window
   @JSName("LinkedWindows")
   val LinkedWindows_Original: LinkedWindows
   

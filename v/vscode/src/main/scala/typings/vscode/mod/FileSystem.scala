@@ -1,6 +1,5 @@
 package typings.vscode.mod
 
-import typings.std.Uint8Array
 import typings.vscode.Thenable
 import typings.vscode.anon.UseTrash
 import typings.vscode.anon.`0`
@@ -15,7 +14,7 @@ trait FileSystem extends StObject {
     * Copy files or folders.
     *
     * @param source The existing file.
-    * @param destination The destination location.
+    * @param target The destination location.
     * @param options Defines if existing files should be overwritten.
     */
   def copy(source: Uri, target: Uri): Thenable[Unit] = js.native
@@ -41,7 +40,22 @@ trait FileSystem extends StObject {
   def delete(uri: Uri, options: UseTrash): Thenable[Unit] = js.native
   
   /**
-    * Retrieve all entries of a [directory](#FileType.Directory).
+    * Check if a given file system supports writing files.
+    *
+    * Keep in mind that just because a file system supports writing, that does
+    * not mean that writes will always succeed. There may be permissions issues
+    * or other errors that prevent writing a file.
+    *
+    * @param scheme The scheme of the filesystem, for example `file` or `git`.
+    *
+    * @return `true` if the file system supports writing, `false` if it does not
+    * support writing (i.e. it is readonly), and `undefined` if the editor does not
+    * know about the filesystem.
+    */
+  def isWritableFileSystem(scheme: String): js.UndefOr[Boolean] = js.native
+  
+  /**
+    * Retrieve all entries of a {@link FileType.Directory directory}.
     *
     * @param uri The uri of the folder.
     * @return An array of name/type-tuples or a thenable that resolves to such.
@@ -54,13 +68,13 @@ trait FileSystem extends StObject {
     * @param uri The uri of the file.
     * @return An array of bytes or a thenable that resolves to such.
     */
-  def readFile(uri: Uri): Thenable[Uint8Array] = js.native
+  def readFile(uri: Uri): Thenable[js.typedarray.Uint8Array] = js.native
   
   /**
     * Rename a file or folder.
     *
-    * @param oldUri The existing file.
-    * @param newUri The new location.
+    * @param source The existing file.
+    * @param target The new location.
     * @param options Defines if existing files should be overwritten.
     */
   def rename(source: Uri, target: Uri): Thenable[Unit] = js.native
@@ -80,5 +94,5 @@ trait FileSystem extends StObject {
     * @param uri The uri of the file.
     * @param content The new content of the file.
     */
-  def writeFile(uri: Uri, content: Uint8Array): Thenable[Unit] = js.native
+  def writeFile(uri: Uri, content: js.typedarray.Uint8Array): Thenable[Unit] = js.native
 }

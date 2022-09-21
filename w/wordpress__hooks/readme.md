@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__hooks
 
-Typings are for version 2.4
+Typings are for version 3.17.0
 
 ## Library description:
 WordPress hooks library.
@@ -10,10 +10,10 @@ WordPress hooks library.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/hooks |
 | Keywords           | wordpress, gutenberg, hooks |
-| # releases         | 14 |
-| # dependents       | 27 |
-| # downloads        | 1094632 |
-| # stars            | 1 |
+| # releases         | 47 |
+| # dependents       | 0.0 |
+| # downloads        | 244440.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/hooks/README.md)
@@ -24,7 +24,7 @@ WordPress hooks library.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

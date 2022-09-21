@@ -17,31 +17,31 @@ object coreObserverMod {
     def this(observer: IObserver) = this()
     def this(onNext: js.Function, onError: js.Function, onCompleted: js.Function) = this()
     
-    /* private */ var _disposable: js.Any = js.native
+    /* private */ var _disposable: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _isStop: js.Any = js.native
+    /* private */ var _isStop: Any = js.native
     
     /* CompleteClass */
-    override def completed(): js.Any = js.native
+    override def completed(): Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
     
     /* CompleteClass */
-    override def error(error: js.Any): js.Any = js.native
+    override def error(error: Any): Any = js.native
     
     var isDisposed: Boolean = js.native
     
     /* CompleteClass */
-    override def next(value: js.Any): js.Any = js.native
+    override def next(value: Any): Any = js.native
     
-    /* protected */ def onCompleted(): js.Any = js.native
+    /* protected */ def onCompleted(): Any = js.native
     
-    /* protected */ def onError(error: js.Any): js.Any = js.native
+    /* protected */ def onError(error: Any): Any = js.native
     
-    /* protected */ def onNext(value: js.Any): js.Any = js.native
+    /* protected */ def onNext(value: Any): Any = js.native
     
     /* protected */ var onUserCompleted: js.Function = js.native
     

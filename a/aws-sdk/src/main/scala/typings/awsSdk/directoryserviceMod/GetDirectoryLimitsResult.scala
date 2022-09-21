@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDirectoryLimitsResult extends StObject {
   
   /**
-    * A DirectoryLimits object that contains the directory limits for the current rRegion.
+    * A DirectoryLimits object that contains the directory limits for the current Region.
     */
   var DirectoryLimits: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryLimits] = js.undefined
 }

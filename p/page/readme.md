@@ -1,7 +1,7 @@
 
 # Scala.js typings for page
 
-Typings are for version v1.8.6
+Typings are for version 1.11
 
 ## Library description:
 Tiny client-side router
@@ -10,10 +10,10 @@ Tiny client-side router
 | ------------------ | :-------------: |
 | Full name          | page |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 120 |
-| # downloads        | 1287723 |
-| # stars            | 32 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 106009.0 |
+| # stars            | 7508.0 |
 
 ## Links
 - [Homepage](https://github.com/visionmedia/page.js#readme)

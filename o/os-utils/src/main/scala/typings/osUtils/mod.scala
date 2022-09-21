@@ -14,20 +14,20 @@ object mod {
   
   inline def cpuCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuCount")().asInstanceOf[Double]
   
-  inline def cpuFree(callback: js.Function1[/* percentage */ Double, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuFree")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cpuFree(callback: js.Function1[/* percentage */ Double, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuFree")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def cpuUsage(callback: js.Function1[/* percentage */ Double, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuUsage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cpuUsage(callback: js.Function1[/* percentage */ Double, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuUsage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def freeCommand(callback: js.Function1[/* used_mem */ Double, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeCommand")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def freeCommand(callback: js.Function1[/* used_mem */ Double, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeCommand")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def freemem(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("freemem")().asInstanceOf[Double]
   
   inline def freememPercentage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("freememPercentage")().asInstanceOf[Double]
   
-  inline def getProcesses(callback: js.Function1[/* result */ String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getProcesses")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def getProcesses(nProcess: Double, callback: js.Function1[/* result */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcesses")(nProcess.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getProcesses(callback: js.Function1[/* result */ String, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getProcesses")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getProcesses(nProcess: Double, callback: js.Function1[/* result */ String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProcesses")(nProcess.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def harddrive(callback: js.Function3[/* total */ Double, /* free */ Double, /* used */ Double, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("harddrive")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def harddrive(callback: js.Function3[/* total */ Double, /* free */ Double, /* used */ Double, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("harddrive")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def loadavg(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("loadavg")().asInstanceOf[Double]
   inline def loadavg(_time: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("loadavg")(_time.asInstanceOf[js.Any]).asInstanceOf[Double]

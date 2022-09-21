@@ -1,0 +1,79 @@
+package typings.stencilCore.stencilPublicRuntimeMod.JSXBase
+
+import typings.stencilCore.stencilCoreStrings.auto
+import typings.stencilCore.stencilCoreStrings.high
+import typings.stencilCore.stencilCoreStrings.low
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait LinkHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
+  
+  var as: js.UndefOr[String] = js.undefined
+  
+  var href: js.UndefOr[String] = js.undefined
+  
+  var hrefLang: js.UndefOr[String] = js.undefined
+  
+  var hreflang: js.UndefOr[String] = js.undefined
+  
+  var importance: js.UndefOr[low | auto | high] = js.undefined
+  
+  var integrity: js.UndefOr[String] = js.undefined
+  
+  var media: js.UndefOr[String] = js.undefined
+  
+  var rel: js.UndefOr[String] = js.undefined
+  
+  var sizes: js.UndefOr[String] = js.undefined
+  
+  var `type`: js.UndefOr[String] = js.undefined
+}
+object LinkHTMLAttributes {
+  
+  inline def apply[T](): LinkHTMLAttributes[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[LinkHTMLAttributes[T]]
+  }
+  
+  extension [Self <: LinkHTMLAttributes[?], T](x: Self & LinkHTMLAttributes[T]) {
+    
+    inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefLang(value: String): Self = StObject.set(x, "hrefLang", value.asInstanceOf[js.Any])
+    
+    inline def setHrefLangUndefined: Self = StObject.set(x, "hrefLang", js.undefined)
+    
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    
+    inline def setImportance(value: low | auto | high): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
+    
+    inline def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
+    
+    inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+    
+    inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+    
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
+    inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+    
+    inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
+}

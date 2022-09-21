@@ -1,7 +1,7 @@
 
 # Scala.js typings for akumina-core
 
-Typings are for version 4.5
+Typings are for version 5.0
 
 ## Library description:
 Adjusted Cache.Get return type Started SiteContext mapping
@@ -10,10 +10,10 @@ Adjusted Cache.Get return type Started SiteContext mapping
 | ------------------ | :-------------: |
 | Full name          | akumina-core |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6412 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 295.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/akumina-core)

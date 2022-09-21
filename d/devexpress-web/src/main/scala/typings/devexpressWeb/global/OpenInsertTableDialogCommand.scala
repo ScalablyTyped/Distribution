@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenInsertTableDialogCommand")
 @js.native
-class OpenInsertTableDialogCommand ()
+open class OpenInsertTableDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenInsertTableDialogCommand {
   

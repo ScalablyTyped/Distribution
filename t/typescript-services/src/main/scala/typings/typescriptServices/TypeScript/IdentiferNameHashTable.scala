@@ -13,14 +13,14 @@ object IdentiferNameHashTable {
     add: (String, T) => Boolean,
     addOrUpdate: (String, T) => Boolean,
     count: () => Double,
-    every: (js.Function3[/* k */ String, T, /* context */ js.Any, Unit], js.Any) => Boolean,
+    every: (js.Function3[/* k */ String, T, /* context */ Any, Unit], Any) => Boolean,
     getAllKeys: () => js.Array[String],
-    itemCount: js.Any,
+    itemCount: Any,
     lookup: String => T,
-    map: (js.Function3[/* k */ String, T, /* context */ js.Any, Unit], js.Any) => Unit,
+    map: (js.Function3[/* k */ String, T, /* context */ Any, Unit], Any) => Unit,
     remove: String => Unit,
-    some: (js.Function3[/* k */ String, T, /* context */ js.Any, Unit], js.Any) => Boolean,
-    table: js.Any
+    some: (js.Function3[/* k */ String, T, /* context */ Any, Unit], Any) => Boolean,
+    table: Any
   ): IdentiferNameHashTable[T] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), addOrUpdate = js.Any.fromFunction2(addOrUpdate), count = js.Any.fromFunction0(count), every = js.Any.fromFunction2(every), getAllKeys = js.Any.fromFunction0(getAllKeys), itemCount = itemCount.asInstanceOf[js.Any], lookup = js.Any.fromFunction1(lookup), map = js.Any.fromFunction2(map), remove = js.Any.fromFunction1(remove), some = js.Any.fromFunction2(some), table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentiferNameHashTable[T]]

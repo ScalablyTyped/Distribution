@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@azure/core-rest-pipeline" : "1.9.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@azure/core-rest-pipeline" : "1.9.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

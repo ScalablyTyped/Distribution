@@ -7,32 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateNFSFileShareInput extends StObject {
   
   /**
-    * Refresh cache information.
+    * The Amazon Resource Name (ARN) of the storage used for audit logs.
+    */
+  var AuditDestinationARN: js.UndefOr[typings.awsSdk.storagegatewayMod.AuditDestinationARN] = js.undefined
+  
+  /**
+    * Specifies the Region of the S3 bucket where the NFS file share stores files.  This parameter is required for NFS file shares that connect to Amazon S3 through a VPC endpoint, a VPC access point, or an access point alias that points to a VPC access point. 
+    */
+  var BucketRegion: js.UndefOr[RegionId] = js.undefined
+  
+  /**
+    * Specifies refresh cache information for the file share.
     */
   var CacheAttributes: js.UndefOr[typings.awsSdk.storagegatewayMod.CacheAttributes] = js.undefined
   
   /**
-    * The list of clients that are allowed to access the file gateway. The list must contain either valid IP addresses or valid CIDR blocks.
+    * The list of clients that are allowed to access the S3 File Gateway. The list must contain either valid IP addresses or valid CIDR blocks.
     */
   var ClientList: js.UndefOr[FileShareClientList] = js.undefined
   
   /**
-    * A unique string value that you supply that is used by file gateway to ensure idempotent file share creation.
+    * A unique string value that you supply that is used by S3 File Gateway to ensure idempotent file share creation.
     */
   var ClientToken: typings.awsSdk.storagegatewayMod.ClientToken
   
   /**
-    * The default storage class for objects put into an Amazon S3 bucket by the file gateway. The default value is S3_INTELLIGENT_TIERING. Optional. Valid Values: S3_STANDARD | S3_INTELLIGENT_TIERING | S3_STANDARD_IA | S3_ONEZONE_IA 
+    * The default storage class for objects put into an Amazon S3 bucket by the S3 File Gateway. The default value is S3_STANDARD. Optional. Valid Values: S3_STANDARD | S3_INTELLIGENT_TIERING | S3_STANDARD_IA | S3_ONEZONE_IA 
     */
   var DefaultStorageClass: js.UndefOr[StorageClass] = js.undefined
   
   /**
-    * The name of the file share. Optional.   FileShareName must be set if an S3 prefix name is set in LocationARN. 
+    * The name of the file share. Optional.   FileShareName must be set if an S3 prefix name is set in LocationARN, or if an access point or access point alias is used. 
     */
   var FileShareName: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareName] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the file gateway on which you want to create a file share.
+    * The Amazon Resource Name (ARN) of the S3 File Gateway on which you want to create a file share.
     */
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
@@ -42,7 +52,7 @@ trait CreateNFSFileShareInput extends StObject {
   var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Set to true to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false 
+    * Set to true to use Amazon S3 server-side encryption with your own KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false 
     */
   var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
   
@@ -52,7 +62,7 @@ trait CreateNFSFileShareInput extends StObject {
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.undefined
   
   /**
-    * The ARN of the backend storage used for storing file data. A prefix name can be added to the S3 bucket name. It must end with a "/".
+    * A custom ARN for the backend storage used for storing data for file shares. It includes a resource ARN with an optional prefix concatenation. The prefix must end with a forward slash (/).  You can specify LocationARN as a bucket ARN, access point ARN or access point alias, as shown in the following examples. Bucket ARN:  arn:aws:s3:::my-bucket/prefix/  Access point ARN:  arn:aws:s3:region:account-id:accesspoint/access-point-name/prefix/  If you specify an access point, the bucket policy must be configured to delegate access control to the access point. For information, see Delegating access control to access points in the Amazon S3 User Guide. Access point alias:  test-ap-ab123cdef4gehijklmn5opqrstuvuse1a-s3alias  
     */
   var LocationARN: typings.awsSdk.storagegatewayMod.LocationARN
   
@@ -62,12 +72,12 @@ trait CreateNFSFileShareInput extends StObject {
   var NFSFileShareDefaults: js.UndefOr[typings.awsSdk.storagegatewayMod.NFSFileShareDefaults] = js.undefined
   
   /**
-    * The notification policy of the file share.
+    * The notification policy of the file share. SettlingTimeInSeconds controls the number of seconds to wait after the last point in time a client wrote to a file before generating an ObjectUploaded notification. Because clients can make many small writes to files, it's best to set this parameter for as long as possible to avoid generating multiple notifications for the same file in a small time period.   SettlingTimeInSeconds has no effect on the timing of the object uploading to Amazon S3, only the timing of the notification.  The following example sets NotificationPolicy on with SettlingTimeInSeconds set to 60.  {\"Upload\": {\"SettlingTimeInSeconds\": 60}}  The following example sets NotificationPolicy off.  {} 
     */
   var NotificationPolicy: js.UndefOr[typings.awsSdk.storagegatewayMod.NotificationPolicy] = js.undefined
   
   /**
-    * A value that sets the access control list (ACL) permission for objects in the S3 bucket that a file gateway puts objects into. The default value is private.
+    * A value that sets the access control list (ACL) permission for objects in the S3 bucket that a S3 File Gateway puts objects into. The default value is private.
     */
   var ObjectACL: js.UndefOr[typings.awsSdk.storagegatewayMod.ObjectACL] = js.undefined
   
@@ -82,7 +92,7 @@ trait CreateNFSFileShareInput extends StObject {
   var RequesterPays: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ARN of the AWS Identity and Access Management (IAM) role that a file gateway assumes when it accesses the underlying storage.
+    * The ARN of the Identity and Access Management (IAM) role that an S3 File Gateway assumes when it accesses the underlying storage.
     */
   var Role: typings.awsSdk.storagegatewayMod.Role
   
@@ -95,6 +105,11 @@ trait CreateNFSFileShareInput extends StObject {
     * A list of up to 50 tags that can be assigned to the NFS file share. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
     */
   var Tags: js.UndefOr[typings.awsSdk.storagegatewayMod.Tags] = js.undefined
+  
+  /**
+    * Specifies the DNS name for the VPC endpoint that the NFS file share uses to connect to Amazon S3.  This parameter is required for NFS file shares that connect to Amazon S3 through a VPC endpoint, a VPC access point, or an access point alias that points to a VPC access point. 
+    */
+  var VPCEndpointDNSName: js.UndefOr[DNSHostName] = js.undefined
 }
 object CreateNFSFileShareInput {
   
@@ -105,6 +120,14 @@ object CreateNFSFileShareInput {
   
   extension [Self <: CreateNFSFileShareInput](x: Self) {
     
+    inline def setAuditDestinationARN(value: AuditDestinationARN): Self = StObject.set(x, "AuditDestinationARN", value.asInstanceOf[js.Any])
+    
+    inline def setAuditDestinationARNUndefined: Self = StObject.set(x, "AuditDestinationARN", js.undefined)
+    
+    inline def setBucketRegion(value: RegionId): Self = StObject.set(x, "BucketRegion", value.asInstanceOf[js.Any])
+    
+    inline def setBucketRegionUndefined: Self = StObject.set(x, "BucketRegion", js.undefined)
+    
     inline def setCacheAttributes(value: CacheAttributes): Self = StObject.set(x, "CacheAttributes", value.asInstanceOf[js.Any])
     
     inline def setCacheAttributesUndefined: Self = StObject.set(x, "CacheAttributes", js.undefined)
@@ -113,7 +136,7 @@ object CreateNFSFileShareInput {
     
     inline def setClientListUndefined: Self = StObject.set(x, "ClientList", js.undefined)
     
-    inline def setClientListVarargs(value: IPV4AddressCIDR*): Self = StObject.set(x, "ClientList", js.Array(value :_*))
+    inline def setClientListVarargs(value: IPV4AddressCIDR*): Self = StObject.set(x, "ClientList", js.Array(value*))
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
@@ -171,6 +194,10 @@ object CreateNFSFileShareInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setVPCEndpointDNSName(value: DNSHostName): Self = StObject.set(x, "VPCEndpointDNSName", value.asInstanceOf[js.Any])
+    
+    inline def setVPCEndpointDNSNameUndefined: Self = StObject.set(x, "VPCEndpointDNSName", js.undefined)
   }
 }

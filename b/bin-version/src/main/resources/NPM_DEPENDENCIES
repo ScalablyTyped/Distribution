@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bin-version" : "4.0.0"
+      "bin-version" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "bin-version" : "4.0.0"
+      "bin-version" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

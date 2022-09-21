@@ -16,7 +16,7 @@ trait FetchFeaturesOptions
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#FetchFeaturesOptions)
     */
-  var event: js.UndefOr[js.Any] = js.undefined
+  var event: js.UndefOr[Any] = js.undefined
   
   /**
     * The signal object that can be used to abort the asynchronous task.
@@ -38,7 +38,7 @@ object FetchFeaturesOptions {
   
   extension [Self <: FetchFeaturesOptions](x: Self) {
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     

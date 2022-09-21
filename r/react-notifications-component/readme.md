@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-notifications-component
 
-Typings are for version 2.4
+Typings are for version 3.1
 
 ## Library description:
 React component for creating notifications on the fly
@@ -10,10 +10,10 @@ React component for creating notifications on the fly
 | ------------------ | :-------------: |
 | Full name          | react-notifications-component |
 | Keywords           | react, react-component, react-notifications, notifications-component, toast-notifications, toast-component, notifications |
-| # releases         | 29 |
-| # dependents       | 12 |
-| # downloads        | 831455 |
-| # stars            | 0 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 123904.66666666667 |
+| # stars            | 1151.0 |
 
 ## Links
 - [Homepage](http://teodosii.github.io/react-notifications-component)

@@ -21,7 +21,7 @@ object mod {
   
   @JSImport("@jupyterlab/statedb", "RestorablePool")
   @js.native
-  class RestorablePool[T /* <: IObservableDisposable */] protected ()
+  open class RestorablePool[T /* <: IObservableDisposable */] protected ()
     extends typings.jupyterlabStatedb.restorablepoolMod.RestorablePool[T] {
     /**
       * Create a new restorable pool.
@@ -38,7 +38,7 @@ object mod {
     *
     * @param options - The instantiation options for a state database.
     */
-  class StateDB[T /* <: ReadonlyPartialJSONValue */] ()
+  open class StateDB[T /* <: ReadonlyPartialJSONValue */] ()
     extends typings.jupyterlabStatedb.statedbMod.StateDB[T] {
     def this(options: typings.jupyterlabStatedb.statedbMod.StateDB.IOptions[T]) = this()
   }
@@ -49,7 +49,7 @@ object mod {
       */
     @JSImport("@jupyterlab/statedb", "StateDB.Connector")
     @js.native
-    class Connector ()
+    open class Connector ()
       extends typings.jupyterlabStatedb.statedbMod.StateDB.Connector
   }
 }

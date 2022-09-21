@@ -31,7 +31,7 @@ object ListContactGroupsResponse {
     
     inline def setContactGroupsUndefined: Self = StObject.set(x, "contactGroups", js.undefined)
     
-    inline def setContactGroupsVarargs(value: ContactGroup*): Self = StObject.set(x, "contactGroups", js.Array(value :_*))
+    inline def setContactGroupsVarargs(value: ContactGroup*): Self = StObject.set(x, "contactGroups", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

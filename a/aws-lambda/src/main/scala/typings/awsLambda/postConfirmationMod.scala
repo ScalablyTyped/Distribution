@@ -45,5 +45,5 @@ object postConfirmationMod {
   
   type PostConfirmationTriggerEvent = PostConfirmationConfirmSignUpTriggerEvent | PostConfirmationConfirmForgotPassword
   
-  type PostConfirmationTriggerHandler = Handler[PostConfirmationTriggerEvent, js.Any]
+  type PostConfirmationTriggerHandler = Handler[PostConfirmationTriggerEvent, Any]
 }

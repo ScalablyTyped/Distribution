@@ -46,7 +46,8 @@ trait NavigatorOptions extends StObject {
   
   /**
     * (Highstock, Gantt) Whether the mask should be inside the range marking
-    * the zoomed range, or outside. In Highstock 1.x it was always `false`.
+    * the zoomed range, or outside. In Highcharts Stock 1.x it was always
+    * `false`.
     */
   var maskInside: js.UndefOr[Boolean] = js.undefined
   
@@ -81,6 +82,13 @@ trait NavigatorOptions extends StObject {
   var series: js.UndefOr[
     NavigatorSeriesOptions | SeriesOptionsType | (js.Array[NavigatorSeriesOptions | SeriesOptionsType])
   ] = js.undefined
+  
+  /**
+    * (Highstock, Gantt) Enable or disable navigator sticking to right, while
+    * adding new points. If `undefined`, the navigator sticks to the axis
+    * maximum only if it was already at the maximum prior to adding points.
+    */
+  var stickToMax: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) Options for the navigator X axis. Default series
@@ -151,18 +159,22 @@ object NavigatorOptions {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: (NavigatorSeriesOptions | SeriesOptionsType)*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: (NavigatorSeriesOptions | SeriesOptionsType)*): Self = StObject.set(x, "series", js.Array(value*))
+    
+    inline def setStickToMax(value: Boolean): Self = StObject.set(x, "stickToMax", value.asInstanceOf[js.Any])
+    
+    inline def setStickToMaxUndefined: Self = StObject.set(x, "stickToMax", js.undefined)
     
     inline def setXAxis(value: NavigatorXAxisOptions | js.Array[NavigatorXAxisOptions]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    inline def setXAxisVarargs(value: NavigatorXAxisOptions*): Self = StObject.set(x, "xAxis", js.Array(value :_*))
+    inline def setXAxisVarargs(value: NavigatorXAxisOptions*): Self = StObject.set(x, "xAxis", js.Array(value*))
     
     inline def setYAxis(value: NavigatorYAxisOptions | js.Array[NavigatorYAxisOptions]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     
-    inline def setYAxisVarargs(value: NavigatorYAxisOptions*): Self = StObject.set(x, "yAxis", js.Array(value :_*))
+    inline def setYAxisVarargs(value: NavigatorYAxisOptions*): Self = StObject.set(x, "yAxis", js.Array(value*))
   }
 }

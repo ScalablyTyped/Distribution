@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Create extends StObject {
   
-  var create: Boolean
+  val create: Boolean
   
-  var overwrite: Boolean
+  val overwrite: Boolean
 }
 object Create {
   

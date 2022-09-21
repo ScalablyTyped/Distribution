@@ -35,7 +35,7 @@ object XMapping2D {
     acquire: () => Unit,
     map: RealPoint2D => RealPoint2D,
     mapInverse: RealPoint2D => RealPoint2D,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XMapping2D = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), map = js.Any.fromFunction1(map), mapInverse = js.Any.fromFunction1(mapInverse), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

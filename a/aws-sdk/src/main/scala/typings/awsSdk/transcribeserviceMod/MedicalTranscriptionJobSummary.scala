@@ -7,52 +7,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MedicalTranscriptionJobSummary extends StObject {
   
   /**
-    * A timestamp that shows when the job was completed.
+    * The date and time the specified medical transcription job finished processing. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:33:13.922000-07:00 represents a transcription job that started processing at 12:33 PM UTC-7 on May 4, 2022.
     */
-  var CompletionTime: js.UndefOr[DateTime] = js.undefined
+  var CompletionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A timestamp that shows when the medical transcription job was created.
+    * Labels all personal health information (PHI) identified in your transcript. For more information, see Identifying personal health information (PHI) in a transcription.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.undefined
+  var ContentIdentificationType: js.UndefOr[MedicalContentIdentificationType] = js.undefined
   
   /**
-    * If the TranscriptionJobStatus field is FAILED, a description of the error.
+    * The date and time the specified medical transcription job request was made. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.761000-07:00 represents a transcription job that started processing at 12:32 PM UTC-7 on May 4, 2022.
+    */
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * If TranscriptionJobStatus is FAILED, FailureReason contains information about why the transcription job failed. See also: Common Errors.
     */
   var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.undefined
   
   /**
-    * The language of the transcript in the source audio file.
+    * The language code used to create your medical transcription. US English (en-US) is the only supported language for medical transcriptions.
     */
   var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
   /**
-    * The name of a medical transcription job.
+    * The name of the medical transcription job. Job names are case sensitive and must be unique within an Amazon Web Services account.
     */
   var MedicalTranscriptionJobName: js.UndefOr[TranscriptionJobName] = js.undefined
   
   /**
-    * Indicates the location of the transcription job's output. The CUSTOMER_BUCKET is the S3 location provided in the OutputBucketName field when the 
+    * Indicates where the specified medical transcription output is stored. If the value is CUSTOMER_BUCKET, the location is the Amazon S3 bucket you specified using the OutputBucketName parameter in your request. If you also included OutputKey in your request, your output is located in the path you specified in your request. If the value is SERVICE_BUCKET, the location is a service-managed Amazon S3 bucket. To access a transcript stored in a service-managed bucket, use the URI shown in the TranscriptFileUri field.
     */
   var OutputLocationType: js.UndefOr[typings.awsSdk.transcribeserviceMod.OutputLocationType] = js.undefined
   
   /**
-    * The medical specialty of the transcription job. Primary care is the only valid value.
+    * Provides the medical specialty represented in your media.
     */
   var Specialty: js.UndefOr[typings.awsSdk.transcribeserviceMod.Specialty] = js.undefined
   
   /**
-    * A timestamp that shows when the job began processing.
+    * The date and time your medical transcription job began processing. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.789000-07:00 represents a transcription job that started processing at 12:32 PM UTC-7 on May 4, 2022.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the medical transcription job.
+    * Provides the status of your medical transcription job. If the status is COMPLETED, the job is finished and you can find the results at the location specified in TranscriptFileUri. If the status is FAILED, FailureReason provides details on why your transcription job failed.
     */
   var TranscriptionJobStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobStatus] = js.undefined
   
   /**
-    * The speech of the clinician in the input audio.
+    * Indicates whether the input media is a dictation or a conversation, as specified in the StartMedicalTranscriptionJob request.
     */
   var Type: js.UndefOr[typings.awsSdk.transcribeserviceMod.Type] = js.undefined
 }
@@ -65,11 +70,15 @@ object MedicalTranscriptionJobSummary {
   
   extension [Self <: MedicalTranscriptionJobSummary](x: Self) {
     
-    inline def setCompletionTime(value: DateTime): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
+    inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
     
     inline def setCompletionTimeUndefined: Self = StObject.set(x, "CompletionTime", js.undefined)
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setContentIdentificationType(value: MedicalContentIdentificationType): Self = StObject.set(x, "ContentIdentificationType", value.asInstanceOf[js.Any])
+    
+    inline def setContentIdentificationTypeUndefined: Self = StObject.set(x, "ContentIdentificationType", js.undefined)
+    
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -93,7 +102,7 @@ object MedicalTranscriptionJobSummary {
     
     inline def setSpecialtyUndefined: Self = StObject.set(x, "Specialty", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

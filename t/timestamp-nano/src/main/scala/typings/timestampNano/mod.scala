@@ -1,7 +1,5 @@
 package typings.timestampNano
 
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +8,7 @@ object mod {
   
   @JSImport("timestamp-nano", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Timestamp {
     /**
@@ -27,14 +25,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromDate(date: Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
   /**
     * Creates a Timestamp instance from Date instance or milliseconds since epoch.
     *
     * @param date - Milliseconds since epoch
     */
   /* static member */
-  inline def fromDate(date: Date): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromDate(date: js.Date): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromDate(date: Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
   
   /* static member */
   inline def fromInt64BE(time: js.Array[Double]): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
@@ -46,8 +44,8 @@ object mod {
     * @param offset
     */
   /* static member */
-  inline def fromInt64BE(time: Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
-  inline def fromInt64BE(time: Uint8Array, offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+  inline def fromInt64BE(time: js.typedarray.Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromInt64BE(time: js.typedarray.Uint8Array, offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64BE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
   
   /* static member */
   inline def fromInt64LE(time: js.Array[Double]): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
@@ -59,8 +57,8 @@ object mod {
     * @param offset
     */
   /* static member */
-  inline def fromInt64LE(time: Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
-  inline def fromInt64LE(time: Uint8Array, offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+  inline def fromInt64LE(time: js.typedarray.Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+  inline def fromInt64LE(time: js.typedarray.Uint8Array, offset: Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt64LE")(time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
   
   /**
     * Creates a Timestamp instance from string like: "2017-11-26T11:27:58.737Z"
@@ -114,7 +112,7 @@ object mod {
       * Any properties other than those two are correct.
       * Instead, Call Timestamp#getYear to retrieve the year as Timestamp has year offset.
       */
-    def toDate(): Date = js.native
+    def toDate(): js.Date = js.native
     
     /**
       * Returns a JSON string representation like: "2017-11-26T11:27:58.737Z"
@@ -126,27 +124,27 @@ object mod {
     def writeInt64BE(): js.Array[Double] = js.native
     def writeInt64BE(buffer: js.Array[Double]): js.Array[Double] = js.native
     def writeInt64BE(buffer: js.Array[Double], offset: Double): js.Array[Double] = js.native
-    def writeInt64BE(buffer: Unit, offset: Double): js.Array[Double] = js.native
     /**
       * Writes big endian 64bit time_t of 8 bytes sequence.
       *
       * @param buffer - Buffer, Array, Uint8Array, etc.
       * @param offset
       */
-    def writeInt64BE(buffer: Uint8Array): Uint8Array = js.native
-    def writeInt64BE(buffer: Uint8Array, offset: Double): Uint8Array = js.native
+    def writeInt64BE(buffer: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
+    def writeInt64BE(buffer: js.typedarray.Uint8Array, offset: Double): js.typedarray.Uint8Array = js.native
+    def writeInt64BE(buffer: Unit, offset: Double): js.Array[Double] = js.native
     
     def writeInt64LE(): js.Array[Double] = js.native
     def writeInt64LE(buffer: js.Array[Double]): js.Array[Double] = js.native
     def writeInt64LE(buffer: js.Array[Double], offset: Double): js.Array[Double] = js.native
-    def writeInt64LE(buffer: Unit, offset: Double): js.Array[Double] = js.native
     /**
       * Writes little endian 64bit time_t of 8 bytes sequence.
       *
       * @param buffer - Buffer, Array, Uint8Array, etc.
       * @param offset
       */
-    def writeInt64LE(buffer: Uint8Array): Uint8Array = js.native
-    def writeInt64LE(buffer: Uint8Array, offset: Double): Uint8Array = js.native
+    def writeInt64LE(buffer: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
+    def writeInt64LE(buffer: js.typedarray.Uint8Array, offset: Double): js.typedarray.Uint8Array = js.native
+    def writeInt64LE(buffer: Unit, offset: Double): js.Array[Double] = js.native
   }
 }

@@ -33,6 +33,6 @@ object SnapshotGetRepositoryParams {
     
     inline def setRepository(value: NameList): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    inline def setRepositoryVarargs(value: String*): Self = StObject.set(x, "repository", js.Array(value :_*))
+    inline def setRepositoryVarargs(value: String*): Self = StObject.set(x, "repository", js.Array(value*))
   }
 }

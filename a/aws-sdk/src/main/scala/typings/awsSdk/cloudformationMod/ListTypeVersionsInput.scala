@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTypeVersionsInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the type for which you want version summary information. Conditional: You must specify either TypeName and Type, or Arn.
+    * The Amazon Resource Name (ARN) of the extension for which you want version summary information. Conditional: You must specify either TypeName and Type, or Arn.
     */
-  var Arn: js.UndefOr[PrivateTypeArn] = js.undefined
+  var Arn: js.UndefOr[TypeArn] = js.undefined
   
   /**
-    * The deprecation status of the type versions that you want to get summary information about. Valid values include:    LIVE: The type version is registered and can be used in CloudFormation operations, dependent on its provisioning behavior and visibility scope.    DEPRECATED: The type version has been deregistered and can no longer be used in CloudFormation operations.    The default is LIVE.
+    * The deprecation status of the extension versions that you want to get summary information about. Valid values include:    LIVE: The extension version is registered and can be used in CloudFormation operations, dependent on its provisioning behavior and visibility scope.    DEPRECATED: The extension version has been deregistered and can no longer be used in CloudFormation operations.   The default is LIVE.
     */
   var DeprecatedStatus: js.UndefOr[typings.awsSdk.cloudformationMod.DeprecatedStatus] = js.undefined
   
@@ -27,12 +27,17 @@ trait ListTypeVersionsInput extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
-    * The kind of the type. Currently the only valid value is RESOURCE. Conditional: You must specify either TypeName and Type, or Arn.
+    * The publisher ID of the extension publisher. Extensions published by Amazon aren't assigned a publisher ID.
+    */
+  var PublisherId: js.UndefOr[typings.awsSdk.cloudformationMod.PublisherId] = js.undefined
+  
+  /**
+    * The kind of the extension. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var Type: js.UndefOr[RegistryType] = js.undefined
   
   /**
-    * The name of the type for which you want version summary information. Conditional: You must specify either TypeName and Type, or Arn.
+    * The name of the extension for which you want version summary information. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.undefined
 }
@@ -45,7 +50,7 @@ object ListTypeVersionsInput {
   
   extension [Self <: ListTypeVersionsInput](x: Self) {
     
-    inline def setArn(value: PrivateTypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: TypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
@@ -60,6 +65,10 @@ object ListTypeVersionsInput {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setPublisherId(value: PublisherId): Self = StObject.set(x, "PublisherId", value.asInstanceOf[js.Any])
+    
+    inline def setPublisherIdUndefined: Self = StObject.set(x, "PublisherId", js.undefined)
     
     inline def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

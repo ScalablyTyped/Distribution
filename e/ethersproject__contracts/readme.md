@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__contracts
 
-Typings are for version 5.0.7
+Typings are for version 5.7.0
 
 ## Library description:
 Contract abstraction meta-class for ethers.
@@ -10,10 +10,10 @@ Contract abstraction meta-class for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/contracts |
 | Keywords           | Ethereum, ethers |
-| # releases         | 50 |
-| # dependents       | 56 |
-| # downloads        | 1352522 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 2514743.6666666665 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

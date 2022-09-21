@@ -1,15 +1,16 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountId = java.lang.String
+type AccountId = String
 
-type ActionHistories = js.Array[typings.awsSdk.budgetsMod.ActionHistory]
+type ActionHistories = js.Array[ActionHistory]
 
-type ActionId = java.lang.String
+type ActionId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDBY
@@ -24,14 +25,14 @@ type ActionId = java.lang.String
   - typings.awsSdk.awsSdkStrings.RESET_FAILURE
   - java.lang.String
 */
-type ActionStatus = typings.awsSdk.budgetsMod._ActionStatus | java.lang.String
+type ActionStatus = _ActionStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STOP_EC2_INSTANCES
   - typings.awsSdk.awsSdkStrings.STOP_RDS_INSTANCES
   - java.lang.String
 */
-type ActionSubType = typings.awsSdk.budgetsMod._ActionSubType | java.lang.String
+type ActionSubType = _ActionSubType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.APPLY_IAM_POLICY
@@ -39,18 +40,29 @@ type ActionSubType = typings.awsSdk.budgetsMod._ActionSubType | java.lang.String
   - typings.awsSdk.awsSdkStrings.RUN_SSM_DOCUMENTS
   - java.lang.String
 */
-type ActionType = typings.awsSdk.budgetsMod._ActionType | java.lang.String
+type ActionType = _ActionType | String
 
-type Actions = js.Array[typings.awsSdk.budgetsMod.Action]
+type Actions = js.Array[Action]
+
+type AdjustmentPeriod = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTOMATIC
   - typings.awsSdk.awsSdkStrings.MANUAL
   - java.lang.String
 */
-type ApprovalModel = typings.awsSdk.budgetsMod._ApprovalModel | java.lang.String
+type ApprovalModel = _ApprovalModel | String
 
-type BudgetName = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HISTORICAL
+  - typings.awsSdk.awsSdkStrings.FORECAST
+  - java.lang.String
+*/
+type AutoAdjustType = _AutoAdjustType | String
+
+type BudgetName = String
+
+type BudgetNotificationsForAccountList = js.Array[BudgetNotificationsForAccount]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USAGE
@@ -61,9 +73,9 @@ type BudgetName = java.lang.String
   - typings.awsSdk.awsSdkStrings.SAVINGS_PLANS_COVERAGE
   - java.lang.String
 */
-type BudgetType = typings.awsSdk.budgetsMod._BudgetType | java.lang.String
+type BudgetType = _BudgetType | String
 
-type BudgetedAndActualAmountsList = js.Array[typings.awsSdk.budgetsMod.BudgetedAndActualAmounts]
+type BudgetedAndActualAmountsList = js.Array[BudgetedAndActualAmounts]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GREATER_THAN
@@ -71,11 +83,13 @@ type BudgetedAndActualAmountsList = js.Array[typings.awsSdk.budgetsMod.BudgetedA
   - typings.awsSdk.awsSdkStrings.EQUAL_TO
   - java.lang.String
 */
-type ComparisonOperator = typings.awsSdk.budgetsMod._ComparisonOperator | java.lang.String
+type ComparisonOperator = _ComparisonOperator | String
 
-type CostFilters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.budgetsMod.DimensionValues]
+type CostFilters = StringDictionary[DimensionValues]
 
-type DimensionValues = js.Array[typings.awsSdk.budgetsMod.GenericString]
+type DimensionValue = String
+
+type DimensionValues = js.Array[DimensionValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SYSTEM
@@ -85,7 +99,7 @@ type DimensionValues = js.Array[typings.awsSdk.budgetsMod.GenericString]
   - typings.awsSdk.awsSdkStrings.EXECUTE_ACTION
   - java.lang.String
 */
-type EventType = typings.awsSdk.budgetsMod._EventType | java.lang.String
+type EventType = _EventType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.APPROVE_BUDGET_ACTION
@@ -94,81 +108,83 @@ type EventType = typings.awsSdk.budgetsMod._EventType | java.lang.String
   - typings.awsSdk.awsSdkStrings.RESET_BUDGET_ACTION
   - java.lang.String
 */
-type ExecutionType = typings.awsSdk.budgetsMod._ExecutionType | java.lang.String
+type ExecutionType = _ExecutionType | String
 
-type GenericString = java.lang.String
+type GenericString = String
 
-type GenericTimestamp = typings.std.Date
+type GenericTimestamp = js.Date
 
-type Group = java.lang.String
+type Group = String
 
-type Groups = js.Array[typings.awsSdk.budgetsMod.Group]
+type Groups = js.Array[Group]
 
-type InstanceId = java.lang.String
+type InstanceId = String
 
-type InstanceIds = js.Array[typings.awsSdk.budgetsMod.InstanceId]
+type InstanceIds = js.Array[InstanceId]
 
-type MaxResults = scala.Double
+type MaxResults = Double
+
+type MaxResultsBudgetNotifications = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OK
   - typings.awsSdk.awsSdkStrings.ALARM
   - java.lang.String
 */
-type NotificationState = typings.awsSdk.budgetsMod._NotificationState | java.lang.String
+type NotificationState = _NotificationState | String
 
-type NotificationThreshold = scala.Double
+type NotificationThreshold = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTUAL
   - typings.awsSdk.awsSdkStrings.FORECASTED
   - java.lang.String
 */
-type NotificationType = typings.awsSdk.budgetsMod._NotificationType | java.lang.String
+type NotificationType = _NotificationType | String
 
-type NotificationWithSubscribersList = js.Array[typings.awsSdk.budgetsMod.NotificationWithSubscribers]
+type NotificationWithSubscribersList = js.Array[NotificationWithSubscribers]
 
-type Notifications = js.Array[typings.awsSdk.budgetsMod.Notification]
+type Notifications = js.Array[Notification]
 
-type NullableBoolean = scala.Boolean
+type NullableBoolean = Boolean
 
-type NumericValue = java.lang.String
+type NumericValue = String
 
-type PlannedBudgetLimits = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.budgetsMod.Spend]
+type PlannedBudgetLimits = StringDictionary[Spend]
 
-type PolicyArn = java.lang.String
+type PolicyArn = String
 
-type PolicyId = java.lang.String
+type PolicyId = String
 
-type Region = java.lang.String
+type Region = String
 
-type Role = java.lang.String
+type Role = String
 
-type RoleArn = java.lang.String
+type RoleArn = String
 
-type Roles = js.Array[typings.awsSdk.budgetsMod.Role]
+type Roles = js.Array[Role]
 
-type SubscriberAddress = java.lang.String
+type SubscriberAddress = String
 
-type Subscribers = js.Array[typings.awsSdk.budgetsMod.Subscriber]
+type Subscribers = js.Array[Subscriber]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SNS
   - typings.awsSdk.awsSdkStrings.EMAIL
   - java.lang.String
 */
-type SubscriptionType = typings.awsSdk.budgetsMod._SubscriptionType | java.lang.String
+type SubscriptionType = _SubscriptionType | String
 
-type TargetId = java.lang.String
+type TargetId = String
 
-type TargetIds = js.Array[typings.awsSdk.budgetsMod.TargetId]
+type TargetIds = js.Array[TargetId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PERCENTAGE
   - typings.awsSdk.awsSdkStrings.ABSOLUTE_VALUE
   - java.lang.String
 */
-type ThresholdType = typings.awsSdk.budgetsMod._ThresholdType | java.lang.String
+type ThresholdType = _ThresholdType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DAILY
@@ -177,17 +193,17 @@ type ThresholdType = typings.awsSdk.budgetsMod._ThresholdType | java.lang.String
   - typings.awsSdk.awsSdkStrings.ANNUALLY
   - java.lang.String
 */
-type TimeUnit = typings.awsSdk.budgetsMod._TimeUnit | java.lang.String
+type TimeUnit = _TimeUnit | String
 
-type UnitValue = java.lang.String
+type UnitValue = String
 
-type User = java.lang.String
+type User = String
 
-type Users = js.Array[typings.awsSdk.budgetsMod.User]
+type Users = js.Array[User]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-10-20`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.budgetsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

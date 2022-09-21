@@ -17,7 +17,6 @@ import typings.awsSdkClientPinpointBrowser.typesEndpointLocationMod.EndpointLoca
 import typings.awsSdkClientPinpointBrowser.typesEndpointLocationMod.UnmarshalledEndpointLocation
 import typings.awsSdkClientPinpointBrowser.typesEndpointUserMod.EndpointUser
 import typings.awsSdkClientPinpointBrowser.typesEndpointUserMod.UnmarshalledEndpointUser
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +36,7 @@ object typesEndpointRequestMod {
       * The following characters are not recommended in attribute names: # : ? \ /. The Amazon Pinpoint console does not display attributes that include these characters in the name. This limitation does not apply to attribute values.
       */
     var Attributes: js.UndefOr[
-        (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ] = js.undefined
     
     /**
@@ -72,7 +71,7 @@ object typesEndpointRequestMod {
     /**
       * Custom metrics that your app reports to Amazon Pinpoint.
       */
-    var Metrics: js.UndefOr[StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])] = js.undefined
+    var Metrics: js.UndefOr[StringDictionary[Double] | (js.Iterable[js.Tuple2[String, Double]])] = js.undefined
     
     /**
       * Indicates whether a user has opted out of receiving messages with one of the following values:
@@ -107,7 +106,7 @@ object typesEndpointRequestMod {
       inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
       
       inline def setAttributes(
-        value: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        value: (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
@@ -134,7 +133,7 @@ object typesEndpointRequestMod {
       
       inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
       
-      inline def setMetrics(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: StringDictionary[Double] | (js.Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
       
       inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
       

@@ -26,6 +26,20 @@ trait Athena extends Service {
   ): Request[BatchGetNamedQueryOutput, AWSError] = js.native
   
   /**
+    * Returns the details of a single prepared statement or a list of up to 256 prepared statements for the array of prepared statement names that you provide. Requires you to have access to the workgroup to which the prepared statements belong. If a prepared statement cannot be retrieved for the name specified, the statement is listed in UnprocessedPreparedStatementNames.
+    */
+  def batchGetPreparedStatement(): Request[BatchGetPreparedStatementOutput, AWSError] = js.native
+  def batchGetPreparedStatement(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetPreparedStatementOutput, Unit]): Request[BatchGetPreparedStatementOutput, AWSError] = js.native
+  /**
+    * Returns the details of a single prepared statement or a list of up to 256 prepared statements for the array of prepared statement names that you provide. Requires you to have access to the workgroup to which the prepared statements belong. If a prepared statement cannot be retrieved for the name specified, the statement is listed in UnprocessedPreparedStatementNames.
+    */
+  def batchGetPreparedStatement(params: BatchGetPreparedStatementInput): Request[BatchGetPreparedStatementOutput, AWSError] = js.native
+  def batchGetPreparedStatement(
+    params: BatchGetPreparedStatementInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetPreparedStatementOutput, Unit]
+  ): Request[BatchGetPreparedStatementOutput, AWSError] = js.native
+  
+  /**
     * Returns the details of a single query execution or a list of up to 50 query executions, which you provide as an array of query execution ID strings. Requires you to have access to the workgroup in which the queries ran. To get a list of query execution IDs, use ListQueryExecutionsInput$WorkGroup. Query executions differ from named (saved) queries. Use BatchGetNamedQueryInput to get details about named queries.
     */
   def batchGetQueryExecution(): Request[BatchGetQueryExecutionOutput, AWSError] = js.native
@@ -43,12 +57,12 @@ trait Athena extends Service {
   var config_Athena: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates (registers) a data catalog with the specified name and properties. Catalogs created are visible to all users of the same AWS account.
+    * Creates (registers) a data catalog with the specified name and properties. Catalogs created are visible to all users of the same Amazon Web Services account.
     */
   def createDataCatalog(): Request[CreateDataCatalogOutput, AWSError] = js.native
   def createDataCatalog(callback: js.Function2[/* err */ AWSError, /* data */ CreateDataCatalogOutput, Unit]): Request[CreateDataCatalogOutput, AWSError] = js.native
   /**
-    * Creates (registers) a data catalog with the specified name and properties. Catalogs created are visible to all users of the same AWS account.
+    * Creates (registers) a data catalog with the specified name and properties. Catalogs created are visible to all users of the same Amazon Web Services account.
     */
   def createDataCatalog(params: CreateDataCatalogInput): Request[CreateDataCatalogOutput, AWSError] = js.native
   def createDataCatalog(
@@ -57,18 +71,32 @@ trait Athena extends Service {
   ): Request[CreateDataCatalogOutput, AWSError] = js.native
   
   /**
-    * Creates a named query in the specified workgroup. Requires that you have access to the workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Creates a named query in the specified workgroup. Requires that you have access to the workgroup. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def createNamedQuery(): Request[CreateNamedQueryOutput, AWSError] = js.native
   def createNamedQuery(callback: js.Function2[/* err */ AWSError, /* data */ CreateNamedQueryOutput, Unit]): Request[CreateNamedQueryOutput, AWSError] = js.native
   /**
-    * Creates a named query in the specified workgroup. Requires that you have access to the workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Creates a named query in the specified workgroup. Requires that you have access to the workgroup. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def createNamedQuery(params: CreateNamedQueryInput): Request[CreateNamedQueryOutput, AWSError] = js.native
   def createNamedQuery(
     params: CreateNamedQueryInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateNamedQueryOutput, Unit]
   ): Request[CreateNamedQueryOutput, AWSError] = js.native
+  
+  /**
+    * Creates a prepared statement for use with SQL queries in Athena.
+    */
+  def createPreparedStatement(): Request[CreatePreparedStatementOutput, AWSError] = js.native
+  def createPreparedStatement(callback: js.Function2[/* err */ AWSError, /* data */ CreatePreparedStatementOutput, Unit]): Request[CreatePreparedStatementOutput, AWSError] = js.native
+  /**
+    * Creates a prepared statement for use with SQL queries in Athena.
+    */
+  def createPreparedStatement(params: CreatePreparedStatementInput): Request[CreatePreparedStatementOutput, AWSError] = js.native
+  def createPreparedStatement(
+    params: CreatePreparedStatementInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePreparedStatementOutput, Unit]
+  ): Request[CreatePreparedStatementOutput, AWSError] = js.native
   
   /**
     * Creates a workgroup with the specified name.
@@ -99,18 +127,32 @@ trait Athena extends Service {
   ): Request[DeleteDataCatalogOutput, AWSError] = js.native
   
   /**
-    * Deletes the named query if you have access to the workgroup in which the query was saved. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Deletes the named query if you have access to the workgroup in which the query was saved. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def deleteNamedQuery(): Request[DeleteNamedQueryOutput, AWSError] = js.native
   def deleteNamedQuery(callback: js.Function2[/* err */ AWSError, /* data */ DeleteNamedQueryOutput, Unit]): Request[DeleteNamedQueryOutput, AWSError] = js.native
   /**
-    * Deletes the named query if you have access to the workgroup in which the query was saved. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Deletes the named query if you have access to the workgroup in which the query was saved. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def deleteNamedQuery(params: DeleteNamedQueryInput): Request[DeleteNamedQueryOutput, AWSError] = js.native
   def deleteNamedQuery(
     params: DeleteNamedQueryInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteNamedQueryOutput, Unit]
   ): Request[DeleteNamedQueryOutput, AWSError] = js.native
+  
+  /**
+    * Deletes the prepared statement with the specified name from the specified workgroup.
+    */
+  def deletePreparedStatement(): Request[DeletePreparedStatementOutput, AWSError] = js.native
+  def deletePreparedStatement(callback: js.Function2[/* err */ AWSError, /* data */ DeletePreparedStatementOutput, Unit]): Request[DeletePreparedStatementOutput, AWSError] = js.native
+  /**
+    * Deletes the prepared statement with the specified name from the specified workgroup.
+    */
+  def deletePreparedStatement(params: DeletePreparedStatementInput): Request[DeletePreparedStatementOutput, AWSError] = js.native
+  def deletePreparedStatement(
+    params: DeletePreparedStatementInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePreparedStatementOutput, Unit]
+  ): Request[DeletePreparedStatementOutput, AWSError] = js.native
   
   /**
     * Deletes the workgroup with the specified name. The primary workgroup cannot be deleted.
@@ -141,12 +183,12 @@ trait Athena extends Service {
   ): Request[GetDataCatalogOutput, AWSError] = js.native
   
   /**
-    * Returns a database object for the specfied database and data catalog.
+    * Returns a database object for the specified database and data catalog.
     */
   def getDatabase(): Request[GetDatabaseOutput, AWSError] = js.native
   def getDatabase(callback: js.Function2[/* err */ AWSError, /* data */ GetDatabaseOutput, Unit]): Request[GetDatabaseOutput, AWSError] = js.native
   /**
-    * Returns a database object for the specfied database and data catalog.
+    * Returns a database object for the specified database and data catalog.
     */
   def getDatabase(params: GetDatabaseInput): Request[GetDatabaseOutput, AWSError] = js.native
   def getDatabase(
@@ -167,6 +209,20 @@ trait Athena extends Service {
     params: GetNamedQueryInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetNamedQueryOutput, Unit]
   ): Request[GetNamedQueryOutput, AWSError] = js.native
+  
+  /**
+    * Retrieves the prepared statement with the specified name from the specified workgroup.
+    */
+  def getPreparedStatement(): Request[GetPreparedStatementOutput, AWSError] = js.native
+  def getPreparedStatement(callback: js.Function2[/* err */ AWSError, /* data */ GetPreparedStatementOutput, Unit]): Request[GetPreparedStatementOutput, AWSError] = js.native
+  /**
+    * Retrieves the prepared statement with the specified name from the specified workgroup.
+    */
+  def getPreparedStatement(params: GetPreparedStatementInput): Request[GetPreparedStatementOutput, AWSError] = js.native
+  def getPreparedStatement(
+    params: GetPreparedStatementInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPreparedStatementOutput, Unit]
+  ): Request[GetPreparedStatementOutput, AWSError] = js.native
   
   /**
     * Returns information about a single execution of a query if you have access to the workgroup in which the query ran. Each time a query executes, information about the query execution is saved with a unique ID.
@@ -197,6 +253,20 @@ trait Athena extends Service {
   ): Request[GetQueryResultsOutput, AWSError] = js.native
   
   /**
+    * Returns query execution runtime statistics related to a single execution of a query if you have access to the workgroup in which the query ran. The query execution runtime statistics is returned only when QueryExecutionStatus$State is in a SUCCEEDED or FAILED state.
+    */
+  def getQueryRuntimeStatistics(): Request[GetQueryRuntimeStatisticsOutput, AWSError] = js.native
+  def getQueryRuntimeStatistics(callback: js.Function2[/* err */ AWSError, /* data */ GetQueryRuntimeStatisticsOutput, Unit]): Request[GetQueryRuntimeStatisticsOutput, AWSError] = js.native
+  /**
+    * Returns query execution runtime statistics related to a single execution of a query if you have access to the workgroup in which the query ran. The query execution runtime statistics is returned only when QueryExecutionStatus$State is in a SUCCEEDED or FAILED state.
+    */
+  def getQueryRuntimeStatistics(params: GetQueryRuntimeStatisticsInput): Request[GetQueryRuntimeStatisticsOutput, AWSError] = js.native
+  def getQueryRuntimeStatistics(
+    params: GetQueryRuntimeStatisticsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetQueryRuntimeStatisticsOutput, Unit]
+  ): Request[GetQueryRuntimeStatisticsOutput, AWSError] = js.native
+  
+  /**
     * Returns table metadata for the specified catalog, database, and table.
     */
   def getTableMetadata(): Request[GetTableMetadataOutput, AWSError] = js.native
@@ -225,12 +295,12 @@ trait Athena extends Service {
   ): Request[GetWorkGroupOutput, AWSError] = js.native
   
   /**
-    * Lists the data catalogs in the current AWS account.
+    * Lists the data catalogs in the current Amazon Web Services account.
     */
   def listDataCatalogs(): Request[ListDataCatalogsOutput, AWSError] = js.native
   def listDataCatalogs(callback: js.Function2[/* err */ AWSError, /* data */ ListDataCatalogsOutput, Unit]): Request[ListDataCatalogsOutput, AWSError] = js.native
   /**
-    * Lists the data catalogs in the current AWS account.
+    * Lists the data catalogs in the current Amazon Web Services account.
     */
   def listDataCatalogs(params: ListDataCatalogsInput): Request[ListDataCatalogsOutput, AWSError] = js.native
   def listDataCatalogs(
@@ -253,12 +323,26 @@ trait Athena extends Service {
   ): Request[ListDatabasesOutput, AWSError] = js.native
   
   /**
-    * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that you have access to the specified workgroup. If a workgroup is not specified, lists the saved queries for the primary workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Returns a list of engine versions that are available to choose from, including the Auto option.
+    */
+  def listEngineVersions(): Request[ListEngineVersionsOutput, AWSError] = js.native
+  def listEngineVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListEngineVersionsOutput, Unit]): Request[ListEngineVersionsOutput, AWSError] = js.native
+  /**
+    * Returns a list of engine versions that are available to choose from, including the Auto option.
+    */
+  def listEngineVersions(params: ListEngineVersionsInput): Request[ListEngineVersionsOutput, AWSError] = js.native
+  def listEngineVersions(
+    params: ListEngineVersionsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEngineVersionsOutput, Unit]
+  ): Request[ListEngineVersionsOutput, AWSError] = js.native
+  
+  /**
+    * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that you have access to the specified workgroup. If a workgroup is not specified, lists the saved queries for the primary workgroup. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def listNamedQueries(): Request[ListNamedQueriesOutput, AWSError] = js.native
   def listNamedQueries(callback: js.Function2[/* err */ AWSError, /* data */ ListNamedQueriesOutput, Unit]): Request[ListNamedQueriesOutput, AWSError] = js.native
   /**
-    * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that you have access to the specified workgroup. If a workgroup is not specified, lists the saved queries for the primary workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that you have access to the specified workgroup. If a workgroup is not specified, lists the saved queries for the primary workgroup. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def listNamedQueries(params: ListNamedQueriesInput): Request[ListNamedQueriesOutput, AWSError] = js.native
   def listNamedQueries(
@@ -267,12 +351,26 @@ trait Athena extends Service {
   ): Request[ListNamedQueriesOutput, AWSError] = js.native
   
   /**
-    * Provides a list of available query execution IDs for the queries in the specified workgroup. If a workgroup is not specified, returns a list of query execution IDs for the primary workgroup. Requires you to have access to the workgroup in which the queries ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Lists the prepared statements in the specified workgroup.
+    */
+  def listPreparedStatements(): Request[ListPreparedStatementsOutput, AWSError] = js.native
+  def listPreparedStatements(callback: js.Function2[/* err */ AWSError, /* data */ ListPreparedStatementsOutput, Unit]): Request[ListPreparedStatementsOutput, AWSError] = js.native
+  /**
+    * Lists the prepared statements in the specified workgroup.
+    */
+  def listPreparedStatements(params: ListPreparedStatementsInput): Request[ListPreparedStatementsOutput, AWSError] = js.native
+  def listPreparedStatements(
+    params: ListPreparedStatementsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPreparedStatementsOutput, Unit]
+  ): Request[ListPreparedStatementsOutput, AWSError] = js.native
+  
+  /**
+    * Provides a list of available query execution IDs for the queries in the specified workgroup. If a workgroup is not specified, returns a list of query execution IDs for the primary workgroup. Requires you to have access to the workgroup in which the queries ran. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def listQueryExecutions(): Request[ListQueryExecutionsOutput, AWSError] = js.native
   def listQueryExecutions(callback: js.Function2[/* err */ AWSError, /* data */ ListQueryExecutionsOutput, Unit]): Request[ListQueryExecutionsOutput, AWSError] = js.native
   /**
-    * Provides a list of available query execution IDs for the queries in the specified workgroup. If a workgroup is not specified, returns a list of query execution IDs for the primary workgroup. Requires you to have access to the workgroup in which the queries ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Provides a list of available query execution IDs for the queries in the specified workgroup. If a workgroup is not specified, returns a list of query execution IDs for the primary workgroup. Requires you to have access to the workgroup in which the queries ran. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def listQueryExecutions(params: ListQueryExecutionsInput): Request[ListQueryExecutionsOutput, AWSError] = js.native
   def listQueryExecutions(
@@ -323,12 +421,12 @@ trait Athena extends Service {
   ): Request[ListWorkGroupsOutput, AWSError] = js.native
   
   /**
-    * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. Running queries against an external catalog requires GetDataCatalog permission to the catalog. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. Running queries against an external catalog requires GetDataCatalog permission to the catalog. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def startQueryExecution(): Request[StartQueryExecutionOutput, AWSError] = js.native
   def startQueryExecution(callback: js.Function2[/* err */ AWSError, /* data */ StartQueryExecutionOutput, Unit]): Request[StartQueryExecutionOutput, AWSError] = js.native
   /**
-    * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. Running queries against an external catalog requires GetDataCatalog permission to the catalog. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. Running queries against an external catalog requires GetDataCatalog permission to the catalog. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def startQueryExecution(params: StartQueryExecutionInput): Request[StartQueryExecutionOutput, AWSError] = js.native
   def startQueryExecution(
@@ -337,12 +435,12 @@ trait Athena extends Service {
   ): Request[StartQueryExecutionOutput, AWSError] = js.native
   
   /**
-    * Stops a query execution. Requires you to have access to the workgroup in which the query ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Stops a query execution. Requires you to have access to the workgroup in which the query ran. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def stopQueryExecution(): Request[StopQueryExecutionOutput, AWSError] = js.native
   def stopQueryExecution(callback: js.Function2[/* err */ AWSError, /* data */ StopQueryExecutionOutput, Unit]): Request[StopQueryExecutionOutput, AWSError] = js.native
   /**
-    * Stops a query execution. Requires you to have access to the workgroup in which the query ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+    * Stops a query execution. Requires you to have access to the workgroup in which the query ran. For code samples using the Amazon Web Services SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
     */
   def stopQueryExecution(params: StopQueryExecutionInput): Request[StopQueryExecutionOutput, AWSError] = js.native
   def stopQueryExecution(
@@ -391,6 +489,34 @@ trait Athena extends Service {
     params: UpdateDataCatalogInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDataCatalogOutput, Unit]
   ): Request[UpdateDataCatalogOutput, AWSError] = js.native
+  
+  /**
+    * Updates a NamedQuery object. The database or workgroup cannot be updated.
+    */
+  def updateNamedQuery(): Request[UpdateNamedQueryOutput, AWSError] = js.native
+  def updateNamedQuery(callback: js.Function2[/* err */ AWSError, /* data */ UpdateNamedQueryOutput, Unit]): Request[UpdateNamedQueryOutput, AWSError] = js.native
+  /**
+    * Updates a NamedQuery object. The database or workgroup cannot be updated.
+    */
+  def updateNamedQuery(params: UpdateNamedQueryInput): Request[UpdateNamedQueryOutput, AWSError] = js.native
+  def updateNamedQuery(
+    params: UpdateNamedQueryInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateNamedQueryOutput, Unit]
+  ): Request[UpdateNamedQueryOutput, AWSError] = js.native
+  
+  /**
+    * Updates a prepared statement.
+    */
+  def updatePreparedStatement(): Request[UpdatePreparedStatementOutput, AWSError] = js.native
+  def updatePreparedStatement(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePreparedStatementOutput, Unit]): Request[UpdatePreparedStatementOutput, AWSError] = js.native
+  /**
+    * Updates a prepared statement.
+    */
+  def updatePreparedStatement(params: UpdatePreparedStatementInput): Request[UpdatePreparedStatementOutput, AWSError] = js.native
+  def updatePreparedStatement(
+    params: UpdatePreparedStatementInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdatePreparedStatementOutput, Unit]
+  ): Request[UpdatePreparedStatementOutput, AWSError] = js.native
   
   /**
     * Updates the workgroup with the specified name. The workgroup's name cannot be changed.

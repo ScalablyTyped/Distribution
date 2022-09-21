@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SectionColumn")
 @js.native
-class SectionColumn ()
+open class SectionColumn ()
   extends StObject
      with typings.devexpressWeb.SectionColumn {
   

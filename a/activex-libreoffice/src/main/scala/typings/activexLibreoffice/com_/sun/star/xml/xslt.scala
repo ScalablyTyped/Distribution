@@ -23,7 +23,7 @@ object xslt {
     extends StObject
        with XXSLTTransformer {
     
-    def create(args: SeqEquiv[js.Any]): Unit
+    def create(args: SeqEquiv[Any]): Unit
   }
   object XSLT2Transformer {
     
@@ -32,11 +32,11 @@ object xslt {
       OutputStream: XOutputStream,
       acquire: () => Unit,
       addListener: XStreamListener => Unit,
-      create: SeqEquiv[js.Any] => Unit,
+      create: SeqEquiv[Any] => Unit,
       getInputStream: () => XInputStream,
       getOutputStream: () => XOutputStream,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeListener: XStreamListener => Unit,
       setInputStream: XInputStream => Unit,
@@ -50,7 +50,7 @@ object xslt {
     
     extension [Self <: XSLT2Transformer](x: Self) {
       
-      inline def setCreate(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: SeqEquiv[Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   
@@ -64,7 +64,7 @@ object xslt {
     extends StObject
        with XXSLTTransformer {
     
-    def create(args: SeqEquiv[js.Any]): Unit
+    def create(args: SeqEquiv[Any]): Unit
   }
   object XSLTTransformer {
     
@@ -73,11 +73,11 @@ object xslt {
       OutputStream: XOutputStream,
       acquire: () => Unit,
       addListener: XStreamListener => Unit,
-      create: SeqEquiv[js.Any] => Unit,
+      create: SeqEquiv[Any] => Unit,
       getInputStream: () => XInputStream,
       getOutputStream: () => XOutputStream,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeListener: XStreamListener => Unit,
       setInputStream: XInputStream => Unit,
@@ -91,7 +91,7 @@ object xslt {
     
     extension [Self <: XSLTTransformer](x: Self) {
       
-      inline def setCreate(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: SeqEquiv[Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   
@@ -114,8 +114,8 @@ object xslt {
       addListener: XStreamListener => Unit,
       getInputStream: () => XInputStream,
       getOutputStream: () => XOutputStream,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeListener: XStreamListener => Unit,
       setInputStream: XInputStream => Unit,

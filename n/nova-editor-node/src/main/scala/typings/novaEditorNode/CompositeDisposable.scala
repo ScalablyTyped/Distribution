@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/composite-disposable/
+/// https://docs.nova.app/api-reference/composite-disposable/
 trait CompositeDisposable
   extends StObject
      with Disposable {

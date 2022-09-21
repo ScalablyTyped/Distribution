@@ -9,11 +9,11 @@ object suggestionsControllerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsController", "SuggestionsController")
   @js.native
-  class SuggestionsController[T] () extends StObject {
+  open class SuggestionsController[T] () extends StObject {
     
-    /* private */ var _ensureSuggestionModel: js.Any = js.native
+    /* private */ var _ensureSuggestionModel: Any = js.native
     
-    /* private */ var _isSuggestionModel: js.Any = js.native
+    /* private */ var _isSuggestionModel: Any = js.native
     
     def convertSuggestionsToSuggestionItems(suggestions: js.Array[ISuggestionModel[T] | T]): js.Array[ISuggestionModel[T]] = js.native
     

@@ -19,7 +19,7 @@ trait GetReservedInstancesExchangeQuoteResult extends StObject {
   /**
     * The new end date of the reservation term.
     */
-  var OutputReservedInstancesWillExpireAt: js.UndefOr[DateTime] = js.undefined
+  var OutputReservedInstancesWillExpireAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The total true upfront charge for the exchange.
@@ -68,7 +68,7 @@ object GetReservedInstancesExchangeQuoteResult {
     
     inline def setIsValidExchangeUndefined: Self = StObject.set(x, "IsValidExchange", js.undefined)
     
-    inline def setOutputReservedInstancesWillExpireAt(value: DateTime): Self = StObject.set(x, "OutputReservedInstancesWillExpireAt", value.asInstanceOf[js.Any])
+    inline def setOutputReservedInstancesWillExpireAt(value: js.Date): Self = StObject.set(x, "OutputReservedInstancesWillExpireAt", value.asInstanceOf[js.Any])
     
     inline def setOutputReservedInstancesWillExpireAtUndefined: Self = StObject.set(x, "OutputReservedInstancesWillExpireAt", js.undefined)
     
@@ -84,7 +84,7 @@ object GetReservedInstancesExchangeQuoteResult {
     
     inline def setReservedInstanceValueSetUndefined: Self = StObject.set(x, "ReservedInstanceValueSet", js.undefined)
     
-    inline def setReservedInstanceValueSetVarargs(value: ReservedInstanceReservationValue*): Self = StObject.set(x, "ReservedInstanceValueSet", js.Array(value :_*))
+    inline def setReservedInstanceValueSetVarargs(value: ReservedInstanceReservationValue*): Self = StObject.set(x, "ReservedInstanceValueSet", js.Array(value*))
     
     inline def setTargetConfigurationValueRollup(value: ReservationValue): Self = StObject.set(x, "TargetConfigurationValueRollup", value.asInstanceOf[js.Any])
     
@@ -94,7 +94,7 @@ object GetReservedInstancesExchangeQuoteResult {
     
     inline def setTargetConfigurationValueSetUndefined: Self = StObject.set(x, "TargetConfigurationValueSet", js.undefined)
     
-    inline def setTargetConfigurationValueSetVarargs(value: TargetReservationValue*): Self = StObject.set(x, "TargetConfigurationValueSet", js.Array(value :_*))
+    inline def setTargetConfigurationValueSetVarargs(value: TargetReservationValue*): Self = StObject.set(x, "TargetConfigurationValueSet", js.Array(value*))
     
     inline def setValidationFailureReason(value: String): Self = StObject.set(x, "ValidationFailureReason", value.asInstanceOf[js.Any])
     

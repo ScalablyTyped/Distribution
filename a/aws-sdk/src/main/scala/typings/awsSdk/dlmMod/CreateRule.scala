@@ -22,6 +22,11 @@ trait CreateRule extends StObject {
   var IntervalUnit: js.UndefOr[IntervalUnitValues] = js.undefined
   
   /**
+    *  [Snapshot policies only] Specifies the destination for snapshots created by the policy. To create snapshots in the same Region as the source resource, specify CLOUD. To create snapshots on the same Outpost as the source resource, specify OUTPOST_LOCAL. If you omit this parameter, CLOUD is used by default. If the policy targets resources in an Amazon Web Services Region, then you must create snapshots in the same Region as the source resource. If the policy targets resources on an Outpost, then you can create snapshots on the same Outpost as the source resource, or in the Region of that Outpost.
+    */
+  var Location: js.UndefOr[LocationValues] = js.undefined
+  
+  /**
     * The time, in UTC, to start the operation. The supported format is hh:mm. The operation occurs within a one-hour window following the specified time. If you do not specify a time, Amazon DLM selects a time within the next 24 hours.
     */
   var Times: js.UndefOr[TimesList] = js.undefined
@@ -47,10 +52,14 @@ object CreateRule {
     
     inline def setIntervalUnitUndefined: Self = StObject.set(x, "IntervalUnit", js.undefined)
     
+    inline def setLocation(value: LocationValues): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    
     inline def setTimes(value: TimesList): Self = StObject.set(x, "Times", value.asInstanceOf[js.Any])
     
     inline def setTimesUndefined: Self = StObject.set(x, "Times", js.undefined)
     
-    inline def setTimesVarargs(value: Time*): Self = StObject.set(x, "Times", js.Array(value :_*))
+    inline def setTimesVarargs(value: Time*): Self = StObject.set(x, "Times", js.Array(value*))
   }
 }

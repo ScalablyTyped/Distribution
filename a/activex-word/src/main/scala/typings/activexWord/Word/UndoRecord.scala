@@ -19,7 +19,7 @@ trait UndoRecord extends StObject {
   
   val IsRecordingCustomRecord: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /** @param string [Name=''] */
   def StartCustomRecord(): Unit = js.native

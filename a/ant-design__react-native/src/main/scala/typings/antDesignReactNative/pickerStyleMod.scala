@@ -18,6 +18,8 @@ object pickerStyleMod {
     
     var actionText: TextStyle
     
+    var container: ViewStyle
+    
     var dismissText: TextStyle
     
     var header: ViewStyle
@@ -34,6 +36,7 @@ object pickerStyleMod {
     
     inline def apply(
       actionText: TextStyle,
+      container: ViewStyle,
       dismissText: TextStyle,
       header: ViewStyle,
       headerItem: ViewStyle,
@@ -41,13 +44,15 @@ object pickerStyleMod {
       okText: TextStyle,
       title: TextStyle
     ): PickerStyle = {
-      val __obj = js.Dynamic.literal(actionText = actionText.asInstanceOf[js.Any], dismissText = dismissText.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerItem = headerItem.asInstanceOf[js.Any], modal = modal.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(actionText = actionText.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], dismissText = dismissText.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerItem = headerItem.asInstanceOf[js.Any], modal = modal.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerStyle]
     }
     
     extension [Self <: PickerStyle](x: Self) {
       
       inline def setActionText(value: TextStyle): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
+      
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setDismissText(value: TextStyle): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
       

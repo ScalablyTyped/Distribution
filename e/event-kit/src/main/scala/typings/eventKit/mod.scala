@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("event-kit", "CompositeDisposable")
   @js.native
-  class CompositeDisposable protected ()
+  open class CompositeDisposable protected ()
     extends StObject
        with DisposableLike {
     /** Construct an instance, optionally with one or more disposables. */
@@ -42,7 +42,7 @@ object mod {
   @JSImport("event-kit", "Disposable")
   @js.native
   /** Construct a Disposable. */
-  class Disposable ()
+  open class Disposable ()
     extends StObject
        with DisposableLike {
     def this(disposableAction: js.Function0[Unit]) = this()
@@ -69,7 +69,7 @@ object mod {
   @JSImport("event-kit", "Emitter")
   @js.native
   /** Construct an emitter. */
-  class Emitter[OptionalEmissions, RequiredEmissions] ()
+  open class Emitter[OptionalEmissions, RequiredEmissions] ()
     extends StObject
        with DisposableLike {
     

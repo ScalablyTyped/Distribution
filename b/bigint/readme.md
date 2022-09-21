@@ -10,10 +10,10 @@ Arbitrary-precision integer arithmetic using libgmp
 | ------------------ | :-------------: |
 | Full name          | bigint |
 | Keywords           | gmp, libgmp, big, bignum, bigint, integer, arithmetic, precision |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 2317 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 236.66666666666666 |
+| # stars            | 264.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/node-bigint#readme)

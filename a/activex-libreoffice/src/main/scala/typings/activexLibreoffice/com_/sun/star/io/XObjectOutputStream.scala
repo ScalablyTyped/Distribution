@@ -29,7 +29,7 @@ object XObjectOutputStream {
     acquire: () => Unit,
     closeOutput: () => Unit,
     flush: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     writeBoolean: Boolean => Unit,
     writeByte: Double => Unit,

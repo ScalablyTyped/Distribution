@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Polyline")
 @js.native
-class Polyline protected ()
+open class Polyline protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Polyline {
   def this(points: js.Array[typings.bmapgl.BMapGL.Point]) = this()

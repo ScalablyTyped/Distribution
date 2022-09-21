@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParallelMachineConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */]
+trait ParallelMachineConfig[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */]
   extends StObject
-     with StateNodeConfig[TContext, TStateSchema, TEvent] {
+     with StateNodeConfig[TContext, TStateSchema, TEvent, BaseActionObject] {
   
   @JSName("initial")
   var initial_ParallelMachineConfig: Unit
@@ -17,12 +17,12 @@ trait ParallelMachineConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */,
 }
 object ParallelMachineConfig {
   
-  inline def apply[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](initial: Unit): ParallelMachineConfig[TContext, TStateSchema, TEvent] = {
+  inline def apply[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](initial: Unit): ParallelMachineConfig[TContext, TStateSchema, TEvent] = {
     val __obj = js.Dynamic.literal(initial = initial.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelMachineConfig[TContext, TStateSchema, TEvent]]
   }
   
-  extension [Self <: ParallelMachineConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](x: Self & (ParallelMachineConfig[TContext, TStateSchema, TEvent])) {
+  extension [Self <: ParallelMachineConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](x: Self & (ParallelMachineConfig[TContext, TStateSchema, TEvent])) {
     
     inline def setInitial(value: Unit): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     

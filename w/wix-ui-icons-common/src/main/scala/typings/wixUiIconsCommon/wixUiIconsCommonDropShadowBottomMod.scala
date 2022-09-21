@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.dropShadowBottomMod.DropShadowBottomProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonDropShadowBottomMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/DropShadowBottom", JSImport.Default)
   @js.native
-  val default: SFC[DropShadowBottomProps] = js.native
+  val default: FC[DropShadowBottomProps] = js.native
   
-  type _To = SFC[DropShadowBottomProps]
+  type _To = FC[DropShadowBottomProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonDropShadowBottomMod.foo` */
-  override def _to: SFC[DropShadowBottomProps] = default
+  override def _to: FC[DropShadowBottomProps] = default
 }

@@ -15,13 +15,13 @@ trait HTMLAttributes[T]
   
   var accessKey: js.UndefOr[String] = js.undefined
   
-  var autoCapitalize: js.UndefOr[js.Any] = js.undefined
+  var autoCapitalize: js.UndefOr[Any] = js.undefined
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
   var autoSave: js.UndefOr[String] = js.undefined
   
-  var autocapitalize: js.UndefOr[js.Any] = js.undefined
+  var autocapitalize: js.UndefOr[Any] = js.undefined
   
   var autocorrect: js.UndefOr[String] = js.undefined
   
@@ -53,7 +53,7 @@ trait HTMLAttributes[T]
   
   var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.undefined
+  var inlist: js.UndefOr[Any] = js.undefined
   
   var innerHTML: js.UndefOr[String] = js.undefined
   
@@ -101,7 +101,7 @@ trait HTMLAttributes[T]
   
   var security: js.UndefOr[String] = js.undefined
   
-  var spellcheck: js.UndefOr[`true` | `false` | js.Any] = js.undefined
+  var spellcheck: js.UndefOr[`true` | `false` | Any] = js.undefined
   
   var style: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
@@ -134,7 +134,7 @@ object HTMLAttributes {
     
     inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
     
-    inline def setAutoCapitalize(value: js.Any): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
+    inline def setAutoCapitalize(value: Any): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
     
     inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
     
@@ -186,7 +186,7 @@ object HTMLAttributes {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
@@ -254,7 +254,7 @@ object HTMLAttributes {
     
     inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
     
-    inline def setSpellcheck(value: `true` | `false` | js.Any): Self = StObject.set(x, "spellcheck", value.asInstanceOf[js.Any])
+    inline def setSpellcheck(value: `true` | `false` | Any): Self = StObject.set(x, "spellcheck", value.asInstanceOf[js.Any])
     
     inline def setSpellcheckUndefined: Self = StObject.set(x, "spellcheck", js.undefined)
     

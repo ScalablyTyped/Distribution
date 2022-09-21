@@ -12,12 +12,12 @@ trait UpdateAnalysisRequest extends StObject {
   var AnalysisId: RestrictiveResourceId
   
   /**
-    * The ID of the AWS account that contains the analysis that you're updating.
+    * The ID of the Amazon Web Services account that contains the analysis that you're updating.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
-    * A descriptive name for the analysis that you're updating. This name displays for the analysis in the QuickSight console.
+    * A descriptive name for the analysis that you're updating. This name displays for the analysis in the Amazon QuickSight console.
     */
   var Name: AnalysisName
   
@@ -32,7 +32,7 @@ trait UpdateAnalysisRequest extends StObject {
   var SourceEntity: AnalysisSourceEntity
   
   /**
-    * The Amazon Resource Name (ARN) for the theme to apply to the analysis that you're creating. To see the theme in the QuickSight console, make sure that you have access to it.
+    * The Amazon Resource Name (ARN) for the theme to apply to the analysis that you're creating. To see the theme in the Amazon QuickSight console, make sure that you have access to it.
     */
   var ThemeArn: js.UndefOr[Arn] = js.undefined
 }

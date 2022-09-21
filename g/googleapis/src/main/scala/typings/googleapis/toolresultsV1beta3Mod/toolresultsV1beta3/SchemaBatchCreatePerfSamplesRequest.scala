@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request must provide up to a maximum of 5000 samples to be created; a
-  * larger sample size will cause an INVALID_ARGUMENT error
-  */
 trait SchemaBatchCreatePerfSamplesRequest extends StObject {
   
   /**
@@ -28,6 +24,6 @@ object SchemaBatchCreatePerfSamplesRequest {
     
     inline def setPerfSamplesUndefined: Self = StObject.set(x, "perfSamples", js.undefined)
     
-    inline def setPerfSamplesVarargs(value: SchemaPerfSample*): Self = StObject.set(x, "perfSamples", js.Array(value :_*))
+    inline def setPerfSamplesVarargs(value: SchemaPerfSample*): Self = StObject.set(x, "perfSamples", js.Array(value*))
   }
 }

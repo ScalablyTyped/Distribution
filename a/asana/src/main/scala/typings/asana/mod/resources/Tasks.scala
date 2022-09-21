@@ -1,7 +1,11 @@
 package typings.asana.mod.resources
 
 import org.scalablytyped.runtime.Shortcut
-import typings.asana.anon.CreateParamsworkspacestriCompleted
+import org.scalablytyped.runtime.StringDictionary
+import typings.asana.anon.CreateParamsworkspacestriApprovalstatus
+import typings.asana.anon.Data
+import typings.asana.anon.Project
+import typings.asana.anon.User
 import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.Stories.Type
 import typings.asana.mod.resources.Tasks.AddProjectParams
@@ -11,6 +15,8 @@ import typings.asana.mod.resources.Tasks.FindAllParams
 import typings.asana.mod.resources.Tasks.FollowersParams
 import typings.asana.mod.resources.Tasks.RemoveProjectParams
 import typings.asana.mod.resources.Tasks.TagParams
+import typings.asana.mod.resources.Tasks.UpdateParams
+import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Tasks
   extends StObject
-     with Resource {
+     with TopLevelResource {
   
   /**
     * * Adds a comment to a task. The comment will be authored by the
@@ -44,10 +50,10 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def addComment(task: String, data: CommentParams): typings.bluebird.mod.^[Type] = js.native
-  def addComment(task: String, data: CommentParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def addComment(task: Double, data: CommentParams): typings.bluebird.mod.^[Type] = js.native
-  def addComment(task: Double, data: CommentParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def addComment(task: String, data: CommentParams): ^[Type] = js.native
+  def addComment(task: String, data: CommentParams, dispatchOptions: Any): ^[Type] = js.native
+  def addComment(task: Double, data: CommentParams): ^[Type] = js.native
+  def addComment(task: Double, data: CommentParams, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * Adds each of the specified followers to the task, if they are not already
@@ -62,10 +68,10 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def addFollowers(task: String, data: FollowersParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def addFollowers(task: String, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def addFollowers(task: Double, data: FollowersParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def addFollowers(task: Double, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def addFollowers(task: String, data: FollowersParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def addFollowers(task: String, data: FollowersParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def addFollowers(task: Double, data: FollowersParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def addFollowers(task: Double, data: FollowersParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
   
   /**
     * * Adds the task to the specified project, in the optional location
@@ -92,10 +98,10 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def addProject(task: String, data: AddProjectParams): typings.bluebird.mod.^[js.Object] = js.native
-  def addProject(task: String, data: AddProjectParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
-  def addProject(task: Double, data: AddProjectParams): typings.bluebird.mod.^[js.Object] = js.native
-  def addProject(task: Double, data: AddProjectParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
+  def addProject(task: String, data: AddProjectParams): ^[js.Object] = js.native
+  def addProject(task: String, data: AddProjectParams, dispatchOptions: Any): ^[js.Object] = js.native
+  def addProject(task: Double, data: AddProjectParams): ^[js.Object] = js.native
+  def addProject(task: Double, data: AddProjectParams, dispatchOptions: Any): ^[js.Object] = js.native
   
   /**
     * * Creates a new subtask and adds it to the parent task. Returns the full record
@@ -109,10 +115,10 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def addSubtask(task: String, data: CreateParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def addSubtask(task: String, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def addSubtask(task: Double, data: CreateParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def addSubtask(task: Double, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def addSubtask(task: String, data: CreateParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def addSubtask(task: String, data: CreateParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def addSubtask(task: Double, data: CreateParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def addSubtask(task: Double, data: CreateParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
   
   /**
     * * Adds a tag to a task. Returns an empty data block.
@@ -126,10 +132,10 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def addTag(task: String, data: TagParams): typings.bluebird.mod.^[js.Object] = js.native
-  def addTag(task: String, data: TagParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
-  def addTag(task: Double, data: TagParams): typings.bluebird.mod.^[js.Object] = js.native
-  def addTag(task: Double, data: TagParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
+  def addTag(task: String, data: TagParams): ^[js.Object] = js.native
+  def addTag(task: String, data: TagParams, dispatchOptions: Any): ^[js.Object] = js.native
+  def addTag(task: Double, data: TagParams): ^[js.Object] = js.native
+  def addTag(task: Double, data: TagParams, dispatchOptions: Any): ^[js.Object] = js.native
   
   /**
     * * Creating a new task is as easy as POSTing to the `/tasks` endpoint
@@ -147,11 +153,11 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def create(data: CreateParamsworkspacestriCompleted): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def create(data: CreateParamsworkspacestriCompleted, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def create(data: CreateParamsworkspacestriApprovalstatus): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def create(data: CreateParamsworkspacestriApprovalstatus, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
   
-  def createInWorkspace(workspace: String, data: CreateParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def createInWorkspace(workspace: String, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def createInWorkspace(workspace: String, data: CreateParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def createInWorkspace(workspace: String, data: CreateParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
   /**
     * * Creating a new task is as easy as POSTing to the `/tasks` endpoint
     * * with a data block containing the fields you'd like to set on the task.
@@ -169,8 +175,8 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def createInWorkspace(workspace: Double, data: CreateParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def createInWorkspace(workspace: Double, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def createInWorkspace(workspace: Double, data: CreateParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def createInWorkspace(workspace: Double, data: CreateParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
   
   /**
     * * A specific, existing task can be deleted by making a DELETE request on the
@@ -186,10 +192,10 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def delete(task: String): typings.bluebird.mod.^[Unit] = js.native
-  def delete(task: String, dispatchOptions: js.Any): typings.bluebird.mod.^[Unit] = js.native
-  def delete(task: Double): typings.bluebird.mod.^[Unit] = js.native
-  def delete(task: Double, dispatchOptions: js.Any): typings.bluebird.mod.^[Unit] = js.native
+  def delete(task: String): ^[Unit] = js.native
+  def delete(task: String, dispatchOptions: Any): ^[Unit] = js.native
+  def delete(task: Double): ^[Unit] = js.native
+  def delete(task: Double, dispatchOptions: Any): ^[Unit] = js.native
   
   /**
     * * Returns the compact task records for some filtered set of tasks. Use one
@@ -206,10 +212,10 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def findAll(): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findAll(params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findAll(params: FindAllParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findAll(params: FindAllParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findAll(): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findAll(params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findAll(params: FindAllParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findAll(params: FindAllParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   
   /**
     * * Returns the complete task record for a single task.
@@ -222,14 +228,14 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def findById(task: String): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def findById(task: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def findById(task: String, params: Params): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def findById(task: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def findById(task: Double): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def findById(task: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def findById(task: Double, params: Params): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def findById(task: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def findById(task: String): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def findById(task: String, params: Unit, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def findById(task: String, params: Params): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def findById(task: String, params: Params, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def findById(task: Double): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def findById(task: Double, params: Unit, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def findById(task: Double, params: Params): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def findById(task: Double, params: Params, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
   
   /**
     * * Returns the compact task records for all tasks within the given project,
@@ -243,14 +249,14 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def findByProject(projectId: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: String): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: String, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: String, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: String, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: Double): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: Double, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: Double, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   
   /**
     * * Returns the compact task records for all tasks with the given tag.
@@ -263,14 +269,32 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def findByTag(tag: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByTag(tag: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByTag(tag: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByTag(tag: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByTag(tag: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByTag(tag: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByTag(tag: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def findByTag(tag: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: String): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: String, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: String, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: String, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: Double): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: Double, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: Double, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  
+  // https://github.com/Asana/node-asana/blob/6bf00fb3257847744bf0ebe2dc0e95c445477282/lib/resources/gen/tasks.js#L245-L262
+  /**
+    * Get a task
+    * @param {String} taskGid: (required) The task to operate on.
+    * @param {Object} params: Parameters for the request
+    *  - optFields {[String]}:  Defines fields to return. Some requests return *compact* representations of objects in order to conserve resources and complete the request more
+    *    efficiently. Other times requests return more information than you may need. This option allows you to list the exact set of fields that the API should be sure to return for
+    *    the objects. The field names should be provided as paths, described below. The id of included objects will always be returned, regardless of the field options.
+    *  - optPretty {Boolean}:  Provides “pretty” output. Provides the response in a “pretty” format. In the case of JSON this means doing proper line breaking and indentation to
+    *    make it readable. This will take extra time and increase the response size so it is advisable only to use this during debugging.
+    * @param {Object} [dispatchOptions]: Options, if any, to pass the dispatcher for the request
+    * @return {Promise} The requested resource
+    */
+  def getTask(taskGid: String): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def getTask(taskGid: String, params: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def getTask(taskGid: String, params: Any, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def getTask(taskGid: String, params: Unit, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
   
   /**
     * * Returns a compact representation of all of the projects the task is in.
@@ -283,14 +307,14 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def projects(task: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
-  def projects(task: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
-  def projects(task: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
-  def projects(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
-  def projects(task: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
-  def projects(task: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
-  def projects(task: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
-  def projects(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
+  def projects(task: String): ^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
+  def projects(task: String, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
+  def projects(task: String, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
+  def projects(task: String, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
+  def projects(task: Double): ^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
+  def projects(task: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
+  def projects(task: Double, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
+  def projects(task: Double, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Projects.Type]] = js.native
   
   /**
     * * Removes each of the specified followers from the task if they are
@@ -305,10 +329,10 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def removeFollowers(task: String, data: FollowersParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def removeFollowers(task: String, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def removeFollowers(task: Double, data: FollowersParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def removeFollowers(task: Double, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def removeFollowers(task: String, data: FollowersParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def removeFollowers(task: String, data: FollowersParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def removeFollowers(task: Double, data: FollowersParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def removeFollowers(task: Double, data: FollowersParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
   
   /**
     * * Removes the task from the specified project. The task will still exist
@@ -325,10 +349,10 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def removeProject(task: String, data: RemoveProjectParams): typings.bluebird.mod.^[js.Object] = js.native
-  def removeProject(task: String, data: RemoveProjectParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
-  def removeProject(task: Double, data: RemoveProjectParams): typings.bluebird.mod.^[js.Object] = js.native
-  def removeProject(task: Double, data: RemoveProjectParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
+  def removeProject(task: String, data: RemoveProjectParams): ^[js.Object] = js.native
+  def removeProject(task: String, data: RemoveProjectParams, dispatchOptions: Any): ^[js.Object] = js.native
+  def removeProject(task: Double, data: RemoveProjectParams): ^[js.Object] = js.native
+  def removeProject(task: Double, data: RemoveProjectParams, dispatchOptions: Any): ^[js.Object] = js.native
   
   /**
     * * Removes a tag from the task. Returns an empty data block.
@@ -342,15 +366,15 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def removeTag(task: String, data: TagParams): typings.bluebird.mod.^[js.Object] = js.native
-  def removeTag(task: String, data: TagParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
-  def removeTag(task: Double, data: TagParams): typings.bluebird.mod.^[js.Object] = js.native
-  def removeTag(task: Double, data: TagParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
+  def removeTag(task: String, data: TagParams): ^[js.Object] = js.native
+  def removeTag(task: String, data: TagParams, dispatchOptions: Any): ^[js.Object] = js.native
+  def removeTag(task: Double, data: TagParams): ^[js.Object] = js.native
+  def removeTag(task: Double, data: TagParams, dispatchOptions: Any): ^[js.Object] = js.native
   
-  def searchInWorkspace(workspace: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def searchInWorkspace(workspace: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def searchInWorkspace(workspace: String, params: Params): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def searchInWorkspace(workspace: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: String): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: String, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: String, params: Params): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: String, params: Params, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   /**
     * * The search endpoint allows you to build complex queries to find and fetch exactly the data you need from Asana.
     * * For a more comprehensive description of all the query parameters and limitations of this endpoint, see our
@@ -364,10 +388,10 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def searchInWorkspace(workspace: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def searchInWorkspace(workspace: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def searchInWorkspace(workspace: Double, params: Params): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def searchInWorkspace(workspace: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: Double): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: Double, params: Params): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def searchInWorkspace(workspace: Double, params: Params, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   
   /**
     * * Returns a compact representation of all of the stories on the task.
@@ -380,14 +404,14 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def stories(task: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def stories(task: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def stories(task: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def stories(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def stories(task: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def stories(task: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def stories(task: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def stories(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def stories(task: String): ^[ResourceList[Type]] = js.native
+  def stories(task: String, params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def stories(task: String, params: PaginationParams): ^[ResourceList[Type]] = js.native
+  def stories(task: String, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def stories(task: Double): ^[ResourceList[Type]] = js.native
+  def stories(task: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def stories(task: Double, params: PaginationParams): ^[ResourceList[Type]] = js.native
+  def stories(task: Double, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
   
   /**
     * * Returns a compact representation of all of the subtasks of a task.
@@ -400,14 +424,14 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def subtasks(task: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def subtasks(task: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def subtasks(task: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def subtasks(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def subtasks(task: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def subtasks(task: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def subtasks(task: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def subtasks(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def subtasks(task: String): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def subtasks(task: String, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def subtasks(task: String, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def subtasks(task: String, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def subtasks(task: Double): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def subtasks(task: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def subtasks(task: Double, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def subtasks(task: Double, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   
   /**
     * * Returns a compact representation of all of the tags the task has.
@@ -420,14 +444,14 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def tags(task: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
-  def tags(task: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
-  def tags(task: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
-  def tags(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
-  def tags(task: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
-  def tags(task: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
-  def tags(task: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
-  def tags(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
+  def tags(task: String): ^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
+  def tags(task: String, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
+  def tags(task: String, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
+  def tags(task: String, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
+  def tags(task: Double): ^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
+  def tags(task: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
+  def tags(task: Double, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
+  def tags(task: Double, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tags.Type]] = js.native
   
   /**
     * * A specific, existing task can be updated by making a PUT request on the
@@ -448,17 +472,31 @@ trait Tasks
     * @param dispatchOptions?
     * @return
     */
-  def update(task: String, data: CreateParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def update(task: String, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def update(task: Double, data: CreateParams): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
-  def update(task: Double, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def update(task: String, data: UpdateParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def update(task: String, data: UpdateParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def update(task: Double, data: UpdateParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def update(task: Double, data: UpdateParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  
+  // https://developers.asana.com/docs/update-a-task
+  // https://github.com/Asana/node-asana/blob/6bf00fb3257847744bf0ebe2dc0e95c445477282/lib/resources/gen/tasks.js#L563-L578
+  /**
+    * Update a task
+    * @param {String} taskGid: (required) The task to operate on.
+    * @param {Object} data: Data for the request
+    * @param {Object} [dispatchOptions]: Options, if any, to pass the dispatcher for the request
+    * @return {Promise} The requested resource
+    */
+  def updateTask(taskGid: String): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def updateTask(taskGid: String, data: Unit, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def updateTask(taskGid: String, data: UpdateParams): ^[typings.asana.mod.resources.Tasks.Type] = js.native
+  def updateTask(taskGid: String, data: UpdateParams, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
 }
 object Tasks extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Tasks")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Tasks {
     /**
@@ -531,44 +569,163 @@ object Tasks extends Shortcut {
     }
   }
   
+  // https://developers.asana.com/docs/create-a-task
+  // https://forum.asana.com/t/add-task-to-a-section-upon-creation-via-api-request/51957/5
   trait CreateParams extends StObject {
     
+    var approval_status: js.UndefOr[String] = js.undefined
+    
+    var assignee: js.UndefOr[String] = js.undefined
+    
+    var assignee_section: js.UndefOr[String] = js.undefined
+    
+    // assignee_status: string; // deprecated - use assignee_section
     var completed: js.UndefOr[Boolean] = js.undefined
     
-    var custom_fields: js.UndefOr[js.Object] = js.undefined
+    // hearted?: boolean | undefined; // deprecated and removed from documentation
+    var custom_fields: js.UndefOr[StringDictionary[Double | String]] = js.undefined
     
-    var hearted: js.UndefOr[Boolean] = js.undefined
+    var due_at: js.UndefOr[String] = js.undefined
     
-    var name: String
+    var due_on: js.UndefOr[String | Null] = js.undefined
+    
+    var external: js.UndefOr[Data] = js.undefined
+    
+    var followers: js.UndefOr[js.Array[String]] = js.undefined
+    
+    // create-only
+    var html_notes: js.UndefOr[String] = js.undefined
+    
+    var liked: js.UndefOr[Boolean] = js.undefined
+    
+    var memberships: js.UndefOr[js.Array[Project]] = js.undefined
+    
+    var name: js.UndefOr[String] = js.undefined
     
     var notes: js.UndefOr[String] = js.undefined
+    
+    var parent: js.UndefOr[String] = js.undefined
+    
+    var projects: js.UndefOr[js.Array[String]] = js.undefined
+    
+    // create-only
+    var resource_subtype: js.UndefOr[String] = js.undefined
+    
+    var start_at: js.UndefOr[String | Null] = js.undefined
+    
+    var start_on: js.UndefOr[String | Null] = js.undefined
+    
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
+    
+    // create-only
+    var workspace: js.UndefOr[String] = js.undefined
   }
   object CreateParams {
     
-    inline def apply(name: String): CreateParams = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(): CreateParams = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateParams]
     }
     
     extension [Self <: CreateParams](x: Self) {
       
+      inline def setApproval_status(value: String): Self = StObject.set(x, "approval_status", value.asInstanceOf[js.Any])
+      
+      inline def setApproval_statusUndefined: Self = StObject.set(x, "approval_status", js.undefined)
+      
+      inline def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+      
+      inline def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
+      
+      inline def setAssignee_section(value: String): Self = StObject.set(x, "assignee_section", value.asInstanceOf[js.Any])
+      
+      inline def setAssignee_sectionUndefined: Self = StObject.set(x, "assignee_section", js.undefined)
+      
       inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
       inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
       
-      inline def setCustom_fields(value: js.Object): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
+      inline def setCustom_fields(value: StringDictionary[Double | String]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
       
       inline def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
       
-      inline def setHearted(value: Boolean): Self = StObject.set(x, "hearted", value.asInstanceOf[js.Any])
+      inline def setDue_at(value: String): Self = StObject.set(x, "due_at", value.asInstanceOf[js.Any])
       
-      inline def setHeartedUndefined: Self = StObject.set(x, "hearted", js.undefined)
+      inline def setDue_atUndefined: Self = StObject.set(x, "due_at", js.undefined)
+      
+      inline def setDue_on(value: String): Self = StObject.set(x, "due_on", value.asInstanceOf[js.Any])
+      
+      inline def setDue_onNull: Self = StObject.set(x, "due_on", null)
+      
+      inline def setDue_onUndefined: Self = StObject.set(x, "due_on", js.undefined)
+      
+      inline def setExternal(value: Data): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+      
+      inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+      
+      inline def setFollowers(value: js.Array[String]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+      
+      inline def setFollowersUndefined: Self = StObject.set(x, "followers", js.undefined)
+      
+      inline def setFollowersVarargs(value: String*): Self = StObject.set(x, "followers", js.Array(value*))
+      
+      inline def setHtml_notes(value: String): Self = StObject.set(x, "html_notes", value.asInstanceOf[js.Any])
+      
+      inline def setHtml_notesUndefined: Self = StObject.set(x, "html_notes", js.undefined)
+      
+      inline def setLiked(value: Boolean): Self = StObject.set(x, "liked", value.asInstanceOf[js.Any])
+      
+      inline def setLikedUndefined: Self = StObject.set(x, "liked", js.undefined)
+      
+      inline def setMemberships(value: js.Array[Project]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
+      
+      inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
+      
+      inline def setMembershipsVarargs(value: Project*): Self = StObject.set(x, "memberships", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
       inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+      
+      inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      
+      inline def setProjects(value: js.Array[String]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+      
+      inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
+      
+      inline def setProjectsVarargs(value: String*): Self = StObject.set(x, "projects", js.Array(value*))
+      
+      inline def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
+      
+      inline def setResource_subtypeUndefined: Self = StObject.set(x, "resource_subtype", js.undefined)
+      
+      inline def setStart_at(value: String): Self = StObject.set(x, "start_at", value.asInstanceOf[js.Any])
+      
+      inline def setStart_atNull: Self = StObject.set(x, "start_at", null)
+      
+      inline def setStart_atUndefined: Self = StObject.set(x, "start_at", js.undefined)
+      
+      inline def setStart_on(value: String): Self = StObject.set(x, "start_on", value.asInstanceOf[js.Any])
+      
+      inline def setStart_onNull: Self = StObject.set(x, "start_on", null)
+      
+      inline def setStart_onUndefined: Self = StObject.set(x, "start_on", js.undefined)
+      
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+      
+      inline def setWorkspace(value: String): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+      
+      inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
     }
   }
   
@@ -638,7 +795,7 @@ object Tasks extends Shortcut {
       
       inline def setFollowers(value: js.Array[Double | String]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
       
-      inline def setFollowersVarargs(value: (Double | String)*): Self = StObject.set(x, "followers", js.Array(value :_*))
+      inline def setFollowersVarargs(value: (Double | String)*): Self = StObject.set(x, "followers", js.Array(value*))
     }
   }
   
@@ -676,46 +833,343 @@ object Tasks extends Shortcut {
     }
   }
   
-  @js.native
+  // https://developers.asana.com/docs/task
   trait Type
     extends StObject
        with Resource {
     
-    var assignee: Assignee | Null = js.native
+    var approval_status: js.UndefOr[String] = js.undefined
     
-    var assignee_status: String = js.native
+    // deprecated
+    var assignee: Assignee | Null
     
-    var completed: Boolean = js.native
+    var assignee_section: Resource
     
-    var completed_at: String | Null = js.native
+    var assignee_status: String
     
-    var created_at: String = js.native
+    var completed: Boolean
     
-    var custom_fields: js.Array[CustomField] = js.native
+    var completed_at: String | Null
     
-    var due_at: String = js.native
+    var created_at: String
     
-    var due_on: String = js.native
+    var custom_fields: js.Array[CustomField]
     
-    var followers: js.Array[Resource] = js.native
+    var dependencies: js.Array[Resource]
     
-    var hearted: Boolean = js.native
+    // opt in
+    var dependents: js.Array[Resource]
     
-    var memberships: js.Array[Membership] = js.native
+    var due_at: String | Null
     
-    var modified_at: String = js.native
+    // opt in
+    var due_on: String | Null
     
-    var notes: String = js.native
+    var external: js.UndefOr[Data] = js.undefined
     
-    var num_hearts: Double = js.native
+    var followers: js.Array[Resource]
     
-    var parent: Resource = js.native
+    // deprecated
+    var hearted: Boolean
     
-    var projects: js.Array[Resource] = js.native
+    // deprecated
+    var hearts: js.Array[Resource]
     
-    var tags: js.Array[Resource] = js.native
+    var html_notes: js.UndefOr[String] = js.undefined
     
-    var workspace: Resource = js.native
+    // opt in
+    var is_rendered_as_separator: js.UndefOr[Boolean] = js.undefined
+    
+    // opt in
+    var liked: Boolean
+    
+    var likes: js.Array[User]
+    
+    var memberships: js.Array[Membership]
+    
+    var modified_at: String
+    
+    // opt in
+    var notes: String
+    
+    var num_hearts: Double
+    
+    var num_likes: Double
+    
+    var num_subtasks: Double
+    
+    // deprecated
+    var parent: Resource | Null
+    
+    var permalink_url: String
+    
+    var projects: js.Array[Resource]
+    
+    var start_at: String | Null
+    
+    var start_on: String | Null
+    
+    var tags: js.Array[Resource]
+    
+    var workspace: Resource
+  }
+  object Type {
+    
+    inline def apply(
+      assignee_section: Resource,
+      assignee_status: String,
+      completed: Boolean,
+      created_at: String,
+      custom_fields: js.Array[CustomField],
+      dependencies: js.Array[Resource],
+      dependents: js.Array[Resource],
+      followers: js.Array[Resource],
+      gid: String,
+      hearted: Boolean,
+      hearts: js.Array[Resource],
+      liked: Boolean,
+      likes: js.Array[User],
+      memberships: js.Array[Membership],
+      modified_at: String,
+      name: String,
+      notes: String,
+      num_hearts: Double,
+      num_likes: Double,
+      num_subtasks: Double,
+      permalink_url: String,
+      projects: js.Array[Resource],
+      resource_type: String,
+      tags: js.Array[Resource],
+      workspace: Resource
+    ): typings.asana.mod.resources.Tasks.Type = {
+      val __obj = js.Dynamic.literal(assignee_section = assignee_section.asInstanceOf[js.Any], assignee_status = assignee_status.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_fields = custom_fields.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], dependents = dependents.asInstanceOf[js.Any], followers = followers.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], hearted = hearted.asInstanceOf[js.Any], hearts = hearts.asInstanceOf[js.Any], liked = liked.asInstanceOf[js.Any], likes = likes.asInstanceOf[js.Any], memberships = memberships.asInstanceOf[js.Any], modified_at = modified_at.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], num_hearts = num_hearts.asInstanceOf[js.Any], num_likes = num_likes.asInstanceOf[js.Any], num_subtasks = num_subtasks.asInstanceOf[js.Any], permalink_url = permalink_url.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], workspace = workspace.asInstanceOf[js.Any], assignee = null, completed_at = null, due_at = null, due_on = null, parent = null, start_at = null, start_on = null)
+      __obj.asInstanceOf[typings.asana.mod.resources.Tasks.Type]
+    }
+    
+    extension [Self <: typings.asana.mod.resources.Tasks.Type](x: Self) {
+      
+      inline def setApproval_status(value: String): Self = StObject.set(x, "approval_status", value.asInstanceOf[js.Any])
+      
+      inline def setApproval_statusUndefined: Self = StObject.set(x, "approval_status", js.undefined)
+      
+      inline def setAssignee(value: Assignee): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+      
+      inline def setAssigneeNull: Self = StObject.set(x, "assignee", null)
+      
+      inline def setAssignee_section(value: Resource): Self = StObject.set(x, "assignee_section", value.asInstanceOf[js.Any])
+      
+      inline def setAssignee_status(value: String): Self = StObject.set(x, "assignee_status", value.asInstanceOf[js.Any])
+      
+      inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+      
+      inline def setCompleted_at(value: String): Self = StObject.set(x, "completed_at", value.asInstanceOf[js.Any])
+      
+      inline def setCompleted_atNull: Self = StObject.set(x, "completed_at", null)
+      
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      
+      inline def setCustom_fields(value: js.Array[CustomField]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
+      
+      inline def setCustom_fieldsVarargs(value: CustomField*): Self = StObject.set(x, "custom_fields", js.Array(value*))
+      
+      inline def setDependencies(value: js.Array[Resource]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      
+      inline def setDependenciesVarargs(value: Resource*): Self = StObject.set(x, "dependencies", js.Array(value*))
+      
+      inline def setDependents(value: js.Array[Resource]): Self = StObject.set(x, "dependents", value.asInstanceOf[js.Any])
+      
+      inline def setDependentsVarargs(value: Resource*): Self = StObject.set(x, "dependents", js.Array(value*))
+      
+      inline def setDue_at(value: String): Self = StObject.set(x, "due_at", value.asInstanceOf[js.Any])
+      
+      inline def setDue_atNull: Self = StObject.set(x, "due_at", null)
+      
+      inline def setDue_on(value: String): Self = StObject.set(x, "due_on", value.asInstanceOf[js.Any])
+      
+      inline def setDue_onNull: Self = StObject.set(x, "due_on", null)
+      
+      inline def setExternal(value: Data): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+      
+      inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+      
+      inline def setFollowers(value: js.Array[Resource]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+      
+      inline def setFollowersVarargs(value: Resource*): Self = StObject.set(x, "followers", js.Array(value*))
+      
+      inline def setHearted(value: Boolean): Self = StObject.set(x, "hearted", value.asInstanceOf[js.Any])
+      
+      inline def setHearts(value: js.Array[Resource]): Self = StObject.set(x, "hearts", value.asInstanceOf[js.Any])
+      
+      inline def setHeartsVarargs(value: Resource*): Self = StObject.set(x, "hearts", js.Array(value*))
+      
+      inline def setHtml_notes(value: String): Self = StObject.set(x, "html_notes", value.asInstanceOf[js.Any])
+      
+      inline def setHtml_notesUndefined: Self = StObject.set(x, "html_notes", js.undefined)
+      
+      inline def setIs_rendered_as_separator(value: Boolean): Self = StObject.set(x, "is_rendered_as_separator", value.asInstanceOf[js.Any])
+      
+      inline def setIs_rendered_as_separatorUndefined: Self = StObject.set(x, "is_rendered_as_separator", js.undefined)
+      
+      inline def setLiked(value: Boolean): Self = StObject.set(x, "liked", value.asInstanceOf[js.Any])
+      
+      inline def setLikes(value: js.Array[User]): Self = StObject.set(x, "likes", value.asInstanceOf[js.Any])
+      
+      inline def setLikesVarargs(value: User*): Self = StObject.set(x, "likes", js.Array(value*))
+      
+      inline def setMemberships(value: js.Array[Membership]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
+      
+      inline def setMembershipsVarargs(value: Membership*): Self = StObject.set(x, "memberships", js.Array(value*))
+      
+      inline def setModified_at(value: String): Self = StObject.set(x, "modified_at", value.asInstanceOf[js.Any])
+      
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      
+      inline def setNum_hearts(value: Double): Self = StObject.set(x, "num_hearts", value.asInstanceOf[js.Any])
+      
+      inline def setNum_likes(value: Double): Self = StObject.set(x, "num_likes", value.asInstanceOf[js.Any])
+      
+      inline def setNum_subtasks(value: Double): Self = StObject.set(x, "num_subtasks", value.asInstanceOf[js.Any])
+      
+      inline def setParent(value: Resource): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setParentNull: Self = StObject.set(x, "parent", null)
+      
+      inline def setPermalink_url(value: String): Self = StObject.set(x, "permalink_url", value.asInstanceOf[js.Any])
+      
+      inline def setProjects(value: js.Array[Resource]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+      
+      inline def setProjectsVarargs(value: Resource*): Self = StObject.set(x, "projects", js.Array(value*))
+      
+      inline def setStart_at(value: String): Self = StObject.set(x, "start_at", value.asInstanceOf[js.Any])
+      
+      inline def setStart_atNull: Self = StObject.set(x, "start_at", null)
+      
+      inline def setStart_on(value: String): Self = StObject.set(x, "start_on", value.asInstanceOf[js.Any])
+      
+      inline def setStart_onNull: Self = StObject.set(x, "start_on", null)
+      
+      inline def setTags(value: js.Array[Resource]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsVarargs(value: Resource*): Self = StObject.set(x, "tags", js.Array(value*))
+      
+      inline def setWorkspace(value: Resource): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  // https://developers.asana.com/docs/update-a-task
+  trait UpdateParams extends StObject {
+    
+    var approval_status: js.UndefOr[String] = js.undefined
+    
+    var assignee: js.UndefOr[String] = js.undefined
+    
+    var assignee_section: js.UndefOr[String] = js.undefined
+    
+    var completed: js.UndefOr[Boolean] = js.undefined
+    
+    var custom_fields: js.UndefOr[StringDictionary[Double | String]] = js.undefined
+    
+    var due_at: js.UndefOr[String] = js.undefined
+    
+    var due_on: js.UndefOr[String | Null] = js.undefined
+    
+    var external: js.UndefOr[Data] = js.undefined
+    
+    var html_notes: js.UndefOr[String] = js.undefined
+    
+    var liked: js.UndefOr[Boolean] = js.undefined
+    
+    var name: js.UndefOr[String] = js.undefined
+    
+    var notes: js.UndefOr[String] = js.undefined
+    
+    var parent: js.UndefOr[String] = js.undefined
+    
+    var start_at: js.UndefOr[String | Null] = js.undefined
+    
+    var start_on: js.UndefOr[String | Null] = js.undefined
+    
+    var workspace: js.UndefOr[String] = js.undefined
+  }
+  object UpdateParams {
+    
+    inline def apply(): UpdateParams = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UpdateParams]
+    }
+    
+    extension [Self <: UpdateParams](x: Self) {
+      
+      inline def setApproval_status(value: String): Self = StObject.set(x, "approval_status", value.asInstanceOf[js.Any])
+      
+      inline def setApproval_statusUndefined: Self = StObject.set(x, "approval_status", js.undefined)
+      
+      inline def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+      
+      inline def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
+      
+      inline def setAssignee_section(value: String): Self = StObject.set(x, "assignee_section", value.asInstanceOf[js.Any])
+      
+      inline def setAssignee_sectionUndefined: Self = StObject.set(x, "assignee_section", js.undefined)
+      
+      inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+      
+      inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
+      
+      inline def setCustom_fields(value: StringDictionary[Double | String]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
+      
+      inline def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
+      
+      inline def setDue_at(value: String): Self = StObject.set(x, "due_at", value.asInstanceOf[js.Any])
+      
+      inline def setDue_atUndefined: Self = StObject.set(x, "due_at", js.undefined)
+      
+      inline def setDue_on(value: String): Self = StObject.set(x, "due_on", value.asInstanceOf[js.Any])
+      
+      inline def setDue_onNull: Self = StObject.set(x, "due_on", null)
+      
+      inline def setDue_onUndefined: Self = StObject.set(x, "due_on", js.undefined)
+      
+      inline def setExternal(value: Data): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+      
+      inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+      
+      inline def setHtml_notes(value: String): Self = StObject.set(x, "html_notes", value.asInstanceOf[js.Any])
+      
+      inline def setHtml_notesUndefined: Self = StObject.set(x, "html_notes", js.undefined)
+      
+      inline def setLiked(value: Boolean): Self = StObject.set(x, "liked", value.asInstanceOf[js.Any])
+      
+      inline def setLikedUndefined: Self = StObject.set(x, "liked", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      
+      inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+      
+      inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      
+      inline def setStart_at(value: String): Self = StObject.set(x, "start_at", value.asInstanceOf[js.Any])
+      
+      inline def setStart_atNull: Self = StObject.set(x, "start_at", null)
+      
+      inline def setStart_atUndefined: Self = StObject.set(x, "start_at", js.undefined)
+      
+      inline def setStart_on(value: String): Self = StObject.set(x, "start_on", value.asInstanceOf[js.Any])
+      
+      inline def setStart_onNull: Self = StObject.set(x, "start_on", null)
+      
+      inline def setStart_onUndefined: Self = StObject.set(x, "start_on", js.undefined)
+      
+      inline def setWorkspace(value: String): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+      
+      inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
+    }
   }
   
   type _To = TasksStatic

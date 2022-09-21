@@ -14,7 +14,7 @@ trait DatabaseLogicCommand extends StObject {
   
   var fieldName: String | InternalSymbol
   
-  var operands: Array[js.Any]
+  var operands: Array[Any]
   
   var operator: LOGIC_COMMANDS_LITERAL | String
   
@@ -26,7 +26,7 @@ object DatabaseLogicCommand {
     _setFieldName: String => DatabaseLogicCommand,
     and: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand,
     fieldName: String | InternalSymbol,
-    operands: Array[js.Any],
+    operands: Array[Any],
     operator: LOGIC_COMMANDS_LITERAL | String,
     or: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand
   ): DatabaseLogicCommand = {
@@ -40,7 +40,7 @@ object DatabaseLogicCommand {
     
     inline def setFieldName(value: String | InternalSymbol): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    inline def setOperands(value: Array[js.Any]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
+    inline def setOperands(value: Array[Any]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     
     inline def setOperator(value: LOGIC_COMMANDS_LITERAL | String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

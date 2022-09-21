@@ -185,7 +185,7 @@ object TYPES {
   inline def SmallMoney_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallMoney")(x.asInstanceOf[js.Any])
   
   inline def TVP(): ISqlTypeWithTvpType = ^.asInstanceOf[js.Dynamic].applyDynamic("TVP")().asInstanceOf[ISqlTypeWithTvpType]
-  inline def TVP(tvpType: js.Any): ISqlTypeWithTvpType = ^.asInstanceOf[js.Dynamic].applyDynamic("TVP")(tvpType.asInstanceOf[js.Any]).asInstanceOf[ISqlTypeWithTvpType]
+  inline def TVP(tvpType: Any): ISqlTypeWithTvpType = ^.asInstanceOf[js.Dynamic].applyDynamic("TVP")(tvpType.asInstanceOf[js.Any]).asInstanceOf[ISqlTypeWithTvpType]
   @JSImport("mssql", "TYPES.TVP")
   @js.native
   def TVP_FTYPES: ISqlTypeFactoryWithTvpType = js.native

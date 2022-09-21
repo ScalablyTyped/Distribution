@@ -35,6 +35,11 @@ trait CreateConferenceProviderRequest extends StObject {
     * The information for PSTN conferencing.
     */
   var PSTNDialIn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.PSTNDialIn] = js.undefined
+  
+  /**
+    * The tags to be added to the specified resource. Do not provide system tags.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateConferenceProviderRequest {
   
@@ -66,5 +71,11 @@ object CreateConferenceProviderRequest {
     inline def setPSTNDialIn(value: PSTNDialIn): Self = StObject.set(x, "PSTNDialIn", value.asInstanceOf[js.Any])
     
     inline def setPSTNDialInUndefined: Self = StObject.set(x, "PSTNDialIn", js.undefined)
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

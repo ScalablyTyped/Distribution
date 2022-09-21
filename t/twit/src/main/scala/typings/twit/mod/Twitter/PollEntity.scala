@@ -27,6 +27,6 @@ object PollEntity {
     
     inline def setOptions(value: js.Array[PollOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: PollOptions*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: PollOptions*): Self = StObject.set(x, "options", js.Array(value*))
   }
 }

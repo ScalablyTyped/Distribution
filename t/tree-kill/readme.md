@@ -10,10 +10,10 @@ kill trees of processes
 | ------------------ | :-------------: |
 | Full name          | tree-kill |
 | Keywords           | tree, trees, process, processes, kill, signal |
-| # releases         | 2 |
-| # dependents       | 446 |
-| # downloads        | 188707107 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.8211013666666668E7 |
+| # stars            | 299.0 |
 
 ## Links
 - [Homepage](https://github.com/pkrumins/node-tree-kill)

@@ -1,131 +1,79 @@
 package typings.webpackMerge
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.webpackMerge.typesMod.CustomizeRule
+import typings.webpackMerge.typesMod.CustomizeRuleString
+import typings.webpackMerge.typesMod.ICustomizeOptions
+import typings.webpackMerge.typesMod.Key
+import typings.webpackMerge.webpackMergeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   @JSImport("webpack-merge", JSImport.Namespace)
   @js.native
-  val ^ : WebpackMerge = js.native
+  val ^ : js.Any = js.native
   
-  type ConfigurationMergeConfigFunction = js.Function1[/* customizeOptions */ CustomizeOptions, ConfigurationMergeFunction]
+  inline def default[Configuration /* <: js.Object */](firstConfiguration: Configuration, configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
+  inline def default[Configuration /* <: js.Object */](firstConfiguration: js.Array[Configuration], configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
   
+  @JSImport("webpack-merge", "CustomizeRule")
   @js.native
-  trait ConfigurationMergeFunction extends StObject {
+  object CustomizeRule extends StObject {
     
-    def apply(
-      configs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any)*
-    ): js.Any = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.webpackMerge.typesMod.CustomizeRule & String] = js.native
+    
+    /* "append" */ val Append: typings.webpackMerge.typesMod.CustomizeRule.Append & String = js.native
+    
+    /* "match" */ val Match: typings.webpackMerge.typesMod.CustomizeRule.Match & String = js.native
+    
+    /* "merge" */ val Merge: typings.webpackMerge.typesMod.CustomizeRule.Merge & String = js.native
+    
+    /* "prepend" */ val Prepend: typings.webpackMerge.typesMod.CustomizeRule.Prepend & String = js.native
+    
+    /* "replace" */ val Replace: typings.webpackMerge.typesMod.CustomizeRule.Replace & String = js.native
   }
   
-  type CustomizeArrayFunction = js.Function3[
-    /* a */ js.Array[js.Any], 
-    /* b */ js.Array[js.Any], 
-    /* key */ String, 
-    js.UndefOr[js.Array[js.Any] | Null]
-  ]
+  inline def customizeArray(rules: StringDictionary[CustomizeRule | CustomizeRuleString]): js.Function3[/* a */ Any, /* b */ Any, /* key */ Key, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customizeArray")(rules.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a */ Any, /* b */ Any, /* key */ Key, Any]]
   
-  type CustomizeObjectFunction = js.Function3[/* a */ js.Object, /* b */ js.Object, /* key */ String, js.UndefOr[js.Object | Null]]
+  inline def customizeObject(rules: StringDictionary[CustomizeRule | CustomizeRuleString]): js.Function3[/* a */ Any, /* b */ Any, /* key */ Key, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customizeObject")(rules.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a */ Any, /* b */ Any, /* key */ Key, Any]]
   
-  trait CustomizeOptions extends StObject {
+  inline def merge[Configuration /* <: js.Object */](firstConfiguration: Configuration, configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
+  inline def merge[Configuration /* <: js.Object */](firstConfiguration: js.Array[Configuration], configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
+  
+  inline def mergeWithCustomize[Configuration /* <: js.Object */](options: ICustomizeOptions): js.Function2[
+    /* firstConfiguration */ Configuration | js.Array[Configuration], 
+    /* repeated */ Configuration, 
+    Configuration
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeWithCustomize")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* firstConfiguration */ Configuration | js.Array[Configuration], 
+    /* repeated */ Configuration, 
+    Configuration
+  ]]
+  
+  inline def mergeWithRules(rules: Rules): js.Function2[
+    /* firstConfiguration */ js.Object | js.Array[js.Object], 
+    /* repeated */ js.Object, 
+    js.Object
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeWithRules")(rules.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* firstConfiguration */ js.Object | js.Array[js.Object], 
+    /* repeated */ js.Object, 
+    js.Object
+  ]]
+  
+  inline def unique(key: String, uniques: js.Array[String], getter: js.Function1[/* a */ js.Object, String]): js.Function3[/* a */ js.Array[Any], /* b */ js.Array[Any], /* k */ String, `false` | js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(key.asInstanceOf[js.Any], uniques.asInstanceOf[js.Any], getter.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* a */ js.Array[Any], /* b */ js.Array[Any], /* k */ String, `false` | js.Array[Any]]]
+  
+  trait Rules
+    extends StObject
+       with /* s */ StringDictionary[CustomizeRule | CustomizeRuleString | Rules]
+  object Rules {
     
-    var customizeArray: js.UndefOr[CustomizeArrayFunction | UniqueFunction] = js.undefined
-    
-    var customizeObject: js.UndefOr[CustomizeObjectFunction] = js.undefined
-  }
-  object CustomizeOptions {
-    
-    inline def apply(): CustomizeOptions = {
+    inline def apply(): Rules = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CustomizeOptions]
-    }
-    
-    extension [Self <: CustomizeOptions](x: Self) {
-      
-      inline def setCustomizeArray(
-        value: ((/* a */ js.Array[js.Any]) | (/* field */ String), /* b */ js.Array[js.Any | String], (/* keyFn */ js.Function1[/* field */ js.Any, String]) | (/* key */ String)) => js.UndefOr[js.Array[js.Any] | CustomizeArrayFunction | Null]
-      ): Self = StObject.set(x, "customizeArray", js.Any.fromFunction3(value))
-      
-      inline def setCustomizeArrayUndefined: Self = StObject.set(x, "customizeArray", js.undefined)
-      
-      inline def setCustomizeObject(value: (/* a */ js.Object, /* b */ js.Object, /* key */ String) => js.UndefOr[js.Object | Null]): Self = StObject.set(x, "customizeObject", js.Any.fromFunction3(value))
-      
-      inline def setCustomizeObjectUndefined: Self = StObject.set(x, "customizeObject", js.undefined)
+      __obj.asInstanceOf[Rules]
     }
   }
-  
-  type MergeFunction = ConfigurationMergeFunction | ConfigurationMergeConfigFunction
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.webpackMerge.webpackMergeStrings.prepend
-    - typings.webpackMerge.webpackMergeStrings.append
-    - typings.webpackMerge.webpackMergeStrings.replace
-  */
-  trait MergeStrategy extends StObject
-  object MergeStrategy {
-    
-    inline def append: typings.webpackMerge.webpackMergeStrings.append = "append".asInstanceOf[typings.webpackMerge.webpackMergeStrings.append]
-    
-    inline def prepend: typings.webpackMerge.webpackMergeStrings.prepend = "prepend".asInstanceOf[typings.webpackMerge.webpackMergeStrings.prepend]
-    
-    inline def replace: typings.webpackMerge.webpackMergeStrings.replace = "replace".asInstanceOf[typings.webpackMerge.webpackMergeStrings.replace]
-  }
-  
-  type MultipleConfiguration = StringDictionary[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-  ]
-  
-  @js.native
-  trait MultipleConfigurationMergeFunction extends StObject {
-    
-    def apply(configs: MultipleConfiguration*): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-      ] = js.native
-  }
-  
-  type UniqueFunction = js.Function3[
-    /* field */ String, 
-    /* fields */ js.Array[String], 
-    /* keyFn */ js.Function1[/* field */ js.Any, String], 
-    CustomizeArrayFunction
-  ]
-  
-  @js.native
-  trait WebpackMerge extends StObject {
-    
-    def apply(
-      configs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any)*
-    ): js.Any = js.native
-    def apply(customizeOptions: CustomizeOptions): ConfigurationMergeFunction = js.native
-    
-    def multiple(configs: MultipleConfiguration*): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-      ] = js.native
-    @JSName("multiple")
-    var multiple_Original: MultipleConfigurationMergeFunction = js.native
-    
-    def smart(
-      configs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any)*
-    ): js.Any = js.native
-    
-    def smartStrategy(options: StringDictionary[MergeStrategy]): ConfigurationMergeFunction = js.native
-    
-    @JSName("smart")
-    var smart_Original: ConfigurationMergeFunction = js.native
-    
-    def strategy(options: StringDictionary[MergeStrategy]): ConfigurationMergeFunction = js.native
-    
-    def unique(field: String, fields: js.Array[String], keyFn: js.Function1[/* field */ js.Any, String]): CustomizeArrayFunction = js.native
-    @JSName("unique")
-    var unique_Original: UniqueFunction = js.native
-  }
-  
-  type _To = WebpackMerge
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: WebpackMerge = ^
 }

@@ -13,7 +13,7 @@ trait ChartColorFormat extends StObject {
   /* private */ @JSName("Excel.ChartColorFormat_typekey")
   var ExcelDotChartColorFormat_typekey: ChartColorFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   val RGB: Double
   
@@ -29,7 +29,7 @@ object ChartColorFormat {
     Application: Application,
     Creator: XlCreator,
     ExcelDotChartColorFormat_typekey: ChartColorFormat,
-    Parent: js.Any,
+    Parent: Any,
     RGB: Double,
     SchemeColor: Double,
     Type: Double,
@@ -48,7 +48,7 @@ object ChartColorFormat {
     
     inline def setExcelDotChartColorFormat_typekey(value: ChartColorFormat): Self = StObject.set(x, "Excel.ChartColorFormat_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
     

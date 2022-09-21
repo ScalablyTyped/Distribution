@@ -31,7 +31,7 @@ trait DocumentEvent
     *
     * The semantics of this additional information needs to be specified by the broadcaster of the event.
     */
-  var Supplement: js.Any
+  var Supplement: Any
   
   /**
     * denotes the view respectively controller which the event applies to.
@@ -42,7 +42,7 @@ trait DocumentEvent
 }
 object DocumentEvent {
   
-  inline def apply(EventName: String, Source: XInterface, Supplement: js.Any, ViewController: XController2): DocumentEvent = {
+  inline def apply(EventName: String, Source: XInterface, Supplement: Any, ViewController: XController2): DocumentEvent = {
     val __obj = js.Dynamic.literal(EventName = EventName.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Supplement = Supplement.asInstanceOf[js.Any], ViewController = ViewController.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentEvent]
   }
@@ -51,7 +51,7 @@ object DocumentEvent {
     
     inline def setEventName(value: String): Self = StObject.set(x, "EventName", value.asInstanceOf[js.Any])
     
-    inline def setSupplement(value: js.Any): Self = StObject.set(x, "Supplement", value.asInstanceOf[js.Any])
+    inline def setSupplement(value: Any): Self = StObject.set(x, "Supplement", value.asInstanceOf[js.Any])
     
     inline def setViewController(value: XController2): Self = StObject.set(x, "ViewController", value.asInstanceOf[js.Any])
   }

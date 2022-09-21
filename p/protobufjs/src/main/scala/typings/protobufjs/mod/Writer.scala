@@ -1,6 +1,5 @@
 package typings.protobufjs.mod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("protobufjs", "Writer")
 @js.native
 /** Constructs a new writer instance. */
-class Writer () extends StObject {
+open class Writer () extends StObject {
   
   /**
     * Writes a boolish value as a varint.
@@ -23,7 +22,7 @@ class Writer () extends StObject {
     * @param value Buffer or base64 encoded string to write
     * @returns `this`
     */
-  def bytes(value: Uint8Array): Writer = js.native
+  def bytes(value: js.typedarray.Uint8Array): Writer = js.native
   
   /**
     * Writes a double (64 bit float).
@@ -36,7 +35,7 @@ class Writer () extends StObject {
     * Finishes the write operation.
     * @returns Finished buffer
     */
-  def finish(): Uint8Array = js.native
+  def finish(): js.typedarray.Uint8Array = js.native
   
   /**
     * Writes an unsigned 32 bit value as fixed 32 bits.
@@ -180,7 +179,7 @@ object Writer {
     * @param size Buffer size
     * @returns Buffer
     */
-  inline def alloc(size: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def alloc(size: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   /**
     * Creates a new writer.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "WebXRAnchorSystem")
 @js.native
-class WebXRAnchorSystem protected ()
+open class WebXRAnchorSystem protected ()
   extends typings.babylonjs.legacyMod.WebXRAnchorSystem {
   /**
     * constructs a new anchor system

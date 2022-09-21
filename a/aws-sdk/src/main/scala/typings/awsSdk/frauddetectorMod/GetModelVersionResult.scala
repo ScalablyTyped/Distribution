@@ -12,9 +12,14 @@ trait GetModelVersionResult extends StObject {
   var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
-    * The event details.
+    * The details of the external events data used for training the model version. This will be populated if the trainingDataSource is EXTERNAL_EVENTS 
     */
   var externalEventsDetail: js.UndefOr[ExternalEventsDetail] = js.undefined
+  
+  /**
+    * The details of the ingested events data used for training the model version. This will be populated if the trainingDataSource is INGESTED_EVENTS.
+    */
+  var ingestedEventsDetail: js.UndefOr[IngestedEventsDetail] = js.undefined
   
   /**
     * The model ID.
@@ -62,6 +67,10 @@ object GetModelVersionResult {
     inline def setExternalEventsDetail(value: ExternalEventsDetail): Self = StObject.set(x, "externalEventsDetail", value.asInstanceOf[js.Any])
     
     inline def setExternalEventsDetailUndefined: Self = StObject.set(x, "externalEventsDetail", js.undefined)
+    
+    inline def setIngestedEventsDetail(value: IngestedEventsDetail): Self = StObject.set(x, "ingestedEventsDetail", value.asInstanceOf[js.Any])
+    
+    inline def setIngestedEventsDetailUndefined: Self = StObject.set(x, "ingestedEventsDetail", js.undefined)
     
     inline def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
     

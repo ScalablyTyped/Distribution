@@ -12,14 +12,14 @@ trait UpdateDataSetResponse extends StObject {
   var Arn: js.UndefOr[typings.awsSdk.dataexchangeMod.Arn] = js.undefined
   
   /**
-    * The type of file your data is stored in. Currently, the supported asset type is S3_SNAPSHOT.
+    * The type of asset that is added to a data set.
     */
   var AssetType: js.UndefOr[typings.awsSdk.dataexchangeMod.AssetType] = js.undefined
   
   /**
     * The date and time that the data set was created, in ISO 8601 format.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description for the data set.
@@ -54,7 +54,7 @@ trait UpdateDataSetResponse extends StObject {
   /**
     * The date and time that the data set was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
+  var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object UpdateDataSetResponse {
   
@@ -73,7 +73,7 @@ object UpdateDataSetResponse {
     
     inline def setAssetTypeUndefined: Self = StObject.set(x, "AssetType", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -101,7 +101,7 @@ object UpdateDataSetResponse {
     
     inline def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }

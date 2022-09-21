@@ -1,11 +1,14 @@
 package typings.ftp
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.ftp.ftpStrings.close
+import typings.ftp.ftpStrings.end
+import typings.ftp.ftpStrings.error
+import typings.ftp.ftpStrings.greeting
+import typings.ftp.ftpStrings.ready
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.tlsMod.ConnectionOptions
-import typings.std.Date
-import typings.std.Error
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +31,7 @@ object mod {
   /**
     * Creates and returns a new FTP client instance.
     */
-  class ^ () extends Client
+  open class ^ () extends Client
   
   /**
     * FTP client.
@@ -47,23 +50,23 @@ object mod {
     /**
       * Aborts the current data transfer (e.g. from get(), put(), or list())
       */
-    def abort(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def abort(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
-    def append(input: String, destPath: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def append(input: String, destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     def append(
       input: String,
       destPath: String,
       useCompression: Boolean,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
-    def append(input: Buffer, destPath: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def append(input: Buffer, destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     def append(
       input: Buffer,
       destPath: String,
       useCompression: Boolean,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
-    def append(input: ReadableStream, destPath: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def append(input: ReadableStream[Any], destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     /**
       * Same as put(), except if destPath already exists, it will be appended to instead of overwritten.
       * @param input can be a ReadableStream, a Buffer, or a path to a local file.
@@ -71,27 +74,27 @@ object mod {
       * @param useCompression defaults to false.
       */
     def append(
-      input: ReadableStream,
+      input: ReadableStream[Any],
       destPath: String,
       useCompression: Boolean,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
     
     /**
       * Sets the transfer data type to ASCII.
       */
-    def ascii(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def ascii(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /**
       * Sets the transfer data type to binary (default at time of connection).
       */
-    def binary(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def binary(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /**
       * Optional "standard" commands (RFC 959)
       * Changes the working directory to the parent of the current directory
       */
-    def cdup(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def cdup(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /**
       * Connects to an FTP server.
@@ -103,12 +106,15 @@ object mod {
       * Changes the current working directory to path. callback has 2 parameters: < Error >err, < string >currentDir.
       * Note: currentDir is only given if the server replies with the path in the response text.
       */
-    def cwd(path: String, callback: js.Function2[/* error */ Error, /* currentDir */ js.UndefOr[String], Unit]): Unit = js.native
+    def cwd(
+      path: String,
+      callback: js.Function2[/* error */ js.Error, /* currentDir */ js.UndefOr[String], Unit]
+    ): Unit = js.native
     
     /**
       * Delete a file on the server
       */
-    def delete(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def delete(path: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /**
       * Closes the connection to the server immediately.
@@ -123,23 +129,23 @@ object mod {
     /**
       * Retrieves a file at path from the server. useCompression defaults to false
       */
-    def get(path: String, callback: js.Function2[/* error */ Error, /* stream */ ReadableStream, Unit]): Unit = js.native
+    def get(path: String, callback: js.Function2[/* error */ js.Error, /* stream */ ReadableStream[Any], Unit]): Unit = js.native
     def get(
       path: String,
       useCompression: Boolean,
-      callback: js.Function2[/* error */ Error, /* stream */ ReadableStream, Unit]
+      callback: js.Function2[/* error */ js.Error, /* stream */ ReadableStream[Any], Unit]
     ): Unit = js.native
     
     /**
       * Extended commands (RFC 3659)
       * Retrieves the last modified date and time for path
       */
-    def lastMod(path: String, callback: js.Function2[/* error */ Error, /* lastMod */ Date, Unit]): Unit = js.native
+    def lastMod(path: String, callback: js.Function2[/* error */ js.Error, /* lastMod */ js.Date, Unit]): Unit = js.native
     
-    def list(callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]): Unit = js.native
+    def list(callback: js.Function2[/* error */ js.Error, /* listing */ js.Array[ListingElement], Unit]): Unit = js.native
     def list(
       path: String,
-      callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]
+      callback: js.Function2[/* error */ js.Error, /* listing */ js.Array[ListingElement], Unit]
     ): Unit = js.native
     /**
       * Retrieves the directory listing of path.
@@ -149,17 +155,17 @@ object mod {
     def list(
       path: String,
       useCompression: Boolean,
-      callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]
+      callback: js.Function2[/* error */ js.Error, /* listing */ js.Array[ListingElement], Unit]
     ): Unit = js.native
     def list(
       useCompression: Boolean,
-      callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]
+      callback: js.Function2[/* error */ js.Error, /* listing */ js.Array[ListingElement], Unit]
     ): Unit = js.native
     
-    def listSafe(callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]): Unit = js.native
+    def listSafe(callback: js.Function2[/* error */ js.Error, /* listing */ js.Array[ListingElement], Unit]): Unit = js.native
     def listSafe(
       path: String,
-      callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]
+      callback: js.Function2[/* error */ js.Error, /* listing */ js.Array[ListingElement], Unit]
     ): Unit = js.native
     /**
       * Optional "standard" commands (RFC 959)
@@ -170,40 +176,52 @@ object mod {
     def listSafe(
       path: String,
       useCompression: Boolean,
-      callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]
+      callback: js.Function2[/* error */ js.Error, /* listing */ js.Array[ListingElement], Unit]
     ): Unit = js.native
     def listSafe(
       useCompression: Boolean,
-      callback: js.Function2[/* error */ Error, /* listing */ js.Array[ListingElement], Unit]
+      callback: js.Function2[/* error */ js.Error, /* listing */ js.Array[ListingElement], Unit]
     ): Unit = js.native
     
     /**
       * Logout the user from the server.
       */
-    def logout(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def logout(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
-    def mkdir(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def mkdir(path: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     /**
       * Optional "standard" commands (RFC 959)
       * Creates a new directory, path, on the server. recursive is for enabling a 'mkdir -p' algorithm and defaults to false
       */
-    def mkdir(path: String, recursive: Boolean, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def mkdir(path: String, recursive: Boolean, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
-    def put(input: String, destPath: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def on(event: String, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_close(event: close, listener: js.Function1[/* hadErr */ Boolean, Unit]): this.type = js.native
+    @JSName("on")
+    def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
+    @JSName("on")
+    def on_greeting(event: greeting, listener: js.Function1[/* msg */ String, Unit]): this.type = js.native
+    @JSName("on")
+    def on_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
+    
+    def put(input: String, destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     def put(
       input: String,
       destPath: String,
       useCompression: Boolean,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
-    def put(input: Buffer, destPath: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def put(input: Buffer, destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     def put(
       input: Buffer,
       destPath: String,
       useCompression: Boolean,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
-    def put(input: ReadableStream, destPath: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def put(input: ReadableStream[Any], destPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     /**
       * Sends data to the server to be stored as destPath.
       * @param input can be a ReadableStream, a Buffer, or a path to a local file.
@@ -211,35 +229,35 @@ object mod {
       * @param useCompression defaults to false.
       */
     def put(
-      input: ReadableStream,
+      input: ReadableStream[Any],
       destPath: String,
       useCompression: Boolean,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): Unit = js.native
     
     /**
       * Optional "standard" commands (RFC 959)
       * Retrieves the current working directory
       */
-    def pwd(callback: js.Function2[/* error */ Error, /* path */ String, Unit]): Unit = js.native
+    def pwd(callback: js.Function2[/* error */ js.Error, /* path */ String, Unit]): Unit = js.native
     
     /**
       * Renames oldPath to newPath on the server
       */
-    def rename(oldPath: String, newPath: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def rename(oldPath: String, newPath: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /**
       * Extended commands (RFC 3659)
       * Sets the file byte offset for the next file transfer action (get/put) to byteOffset
       */
-    def restart(byteOffset: Double, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def restart(byteOffset: Double, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
-    def rmdir(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def rmdir(path: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     /**
       * Optional "standard" commands (RFC 959)
       * Removes a directory, path, on the server. If recursive, this call will delete the contents of the directory if it is not empty
       */
-    def rmdir(path: String, recursive: Boolean, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def rmdir(path: String, recursive: Boolean, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /**
       * Sends command (e.g. 'CHMOD 755 foo', 'QUOTA') using SITE. callback has 3 parameters:
@@ -247,25 +265,25 @@ object mod {
       */
     def site(
       command: String,
-      callback: js.Function3[/* error */ Error, /* responseText */ String, /* responseCode */ Double, Unit]
+      callback: js.Function3[/* error */ js.Error, /* responseText */ String, /* responseCode */ Double, Unit]
     ): Unit = js.native
     
     /**
       * Extended commands (RFC 3659)
       * Retrieves the size of path
       */
-    def size(path: String, callback: js.Function2[/* error */ Error, /* size */ Double, Unit]): Unit = js.native
+    def size(path: String, callback: js.Function2[/* error */ js.Error, /* size */ Double, Unit]): Unit = js.native
     
     /**
       * Retrieves human-readable information about the server's status.
       */
-    def status(callback: js.Function2[/* error */ Error, /* status */ String, Unit]): Unit = js.native
+    def status(callback: js.Function2[/* error */ js.Error, /* status */ String, Unit]): Unit = js.native
     
     /**
       * Optional "standard" commands (RFC 959)
       * Retrieves the server's operating system.
       */
-    def system(callback: js.Function2[/* error */ Error, /* OS */ String, Unit]): Unit = js.native
+    def system(callback: js.Function2[/* error */ js.Error, /* OS */ String, Unit]): Unit = js.native
   }
   
   trait FilePermissions extends StObject {
@@ -307,7 +325,7 @@ object mod {
     /**
       * The last modified date of the entry
       */
-    var date: Date
+    var date: js.Date
     
     /**
       * The group name or ID that this entry belongs to **(*NIX only)**.
@@ -351,7 +369,7 @@ object mod {
   }
   object ListingElement {
     
-    inline def apply(date: Date, name: String, size: Double, `type`: String): ListingElement = {
+    inline def apply(date: js.Date, name: String, size: Double, `type`: String): ListingElement = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListingElement]
@@ -359,7 +377,7 @@ object mod {
     
     extension [Self <: ListingElement](x: Self) {
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       

@@ -6,7 +6,7 @@ import typings.html5ToPdf.html5ToPdfStrings.Legal
 import typings.html5ToPdf.html5ToPdfStrings.Tabloid
 import typings.html5ToPdf.html5ToPdfStrings.css
 import typings.html5ToPdf.html5ToPdfStrings.js_
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.puppeteer.mod.LaunchOptions
 import typings.puppeteer.mod.PDFOptions
 import typings.puppeteer.mod.Page
@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("html5-to-pdf", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with HTML5ToPDF {
     def this(options: Options) = this()
@@ -228,7 +228,7 @@ object mod {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: (String | FileDef)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | FileDef)*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setInputBody(value: String | Buffer): Self = StObject.set(x, "inputBody", value.asInstanceOf[js.Any])
       
@@ -305,7 +305,7 @@ object mod {
       
       inline def setInclude(value: js.Array[FileDef]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      inline def setIncludeVarargs(value: FileDef*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: FileDef*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setLaunchOptions(value: LaunchOptions): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
       

@@ -10,93 +10,93 @@ object anon {
   
   trait AlignX extends StObject {
     
-    var alignX: Requireable[js.Any]
+    var alignX: Requireable[Any]
     
-    var alignY: Requireable[js.Any]
+    var alignY: Requireable[Any]
     
-    var breakpoint: Validator[js.Any]
+    var breakpoint: Validator[Any]
     
-    var centerAlign: Requireable[js.Any]
+    var centerAlign: Requireable[Any]
     
-    var flexChild: Requireable[js.Any]
+    var flexChild: Requireable[Any]
     
-    var flexContainer: Requireable[js.Any]
+    var flexContainer: Requireable[Any]
     
-    var flexDirCol: Requireable[js.Any]
+    var flexDirCol: Requireable[Any]
     
-    var flexDirColRev: Requireable[js.Any]
+    var flexDirColRev: Requireable[Any]
     
-    var flexDirRow: Requireable[js.Any]
+    var flexDirRow: Requireable[Any]
     
-    var flexDirRowRev: Requireable[js.Any]
+    var flexDirRowRev: Requireable[Any]
     
-    var flexOrder: Requireable[js.Any]
+    var flexOrder: Requireable[Any]
     
-    var flexOrderLarge: Requireable[js.Any]
+    var flexOrderLarge: Requireable[Any]
     
-    var flexOrderMedium: Requireable[js.Any]
+    var flexOrderMedium: Requireable[Any]
     
-    var flexOrderSmall: Requireable[js.Any]
+    var flexOrderSmall: Requireable[Any]
     
-    var float: Requireable[js.Any]
+    var float: Requireable[Any]
     
-    var hideFor: Requireable[js.Any]
+    var hideFor: Requireable[Any]
     
-    var hideOnlyFor: Requireable[js.Any]
+    var hideOnlyFor: Requireable[Any]
     
-    var isClearfix: Requireable[js.Any]
+    var isClearfix: Requireable[Any]
     
-    var isHidden: Requireable[js.Any]
+    var isHidden: Requireable[Any]
     
-    var isInvisible: Requireable[js.Any]
+    var isInvisible: Requireable[Any]
     
-    var selfAlignX: Requireable[js.Any]
+    var selfAlignX: Requireable[Any]
     
-    var selfAlignY: Requireable[js.Any]
+    var selfAlignY: Requireable[Any]
     
-    var showFor: Requireable[js.Any]
+    var showFor: Requireable[Any]
     
-    var showForLandscape: Requireable[js.Any]
+    var showForLandscape: Requireable[Any]
     
-    var showForPortrait: Requireable[js.Any]
+    var showForPortrait: Requireable[Any]
     
-    var showForSr: Requireable[js.Any]
+    var showForSr: Requireable[Any]
     
-    var showOnFocus: Requireable[js.Any]
+    var showOnFocus: Requireable[Any]
     
-    var showOnlyFor: Requireable[js.Any]
+    var showOnlyFor: Requireable[Any]
   }
   object AlignX {
     
     inline def apply(
-      alignX: Requireable[js.Any],
-      alignY: Requireable[js.Any],
-      breakpoint: Validator[js.Any],
-      centerAlign: Requireable[js.Any],
-      flexChild: Requireable[js.Any],
-      flexContainer: Requireable[js.Any],
-      flexDirCol: Requireable[js.Any],
-      flexDirColRev: Requireable[js.Any],
-      flexDirRow: Requireable[js.Any],
-      flexDirRowRev: Requireable[js.Any],
-      flexOrder: Requireable[js.Any],
-      flexOrderLarge: Requireable[js.Any],
-      flexOrderMedium: Requireable[js.Any],
-      flexOrderSmall: Requireable[js.Any],
-      float: Requireable[js.Any],
-      hideFor: Requireable[js.Any],
-      hideOnlyFor: Requireable[js.Any],
-      isClearfix: Requireable[js.Any],
-      isHidden: Requireable[js.Any],
-      isInvisible: Requireable[js.Any],
-      selfAlignX: Requireable[js.Any],
-      selfAlignY: Requireable[js.Any],
-      showFor: Requireable[js.Any],
-      showForLandscape: Requireable[js.Any],
-      showForPortrait: Requireable[js.Any],
-      showForSr: Requireable[js.Any],
-      showOnFocus: Requireable[js.Any],
-      showOnlyFor: Requireable[js.Any]
+      alignX: Requireable[Any],
+      alignY: Requireable[Any],
+      breakpoint: Validator[Any],
+      centerAlign: Requireable[Any],
+      flexChild: Requireable[Any],
+      flexContainer: Requireable[Any],
+      flexDirCol: Requireable[Any],
+      flexDirColRev: Requireable[Any],
+      flexDirRow: Requireable[Any],
+      flexDirRowRev: Requireable[Any],
+      flexOrder: Requireable[Any],
+      flexOrderLarge: Requireable[Any],
+      flexOrderMedium: Requireable[Any],
+      flexOrderSmall: Requireable[Any],
+      float: Requireable[Any],
+      hideFor: Requireable[Any],
+      hideOnlyFor: Requireable[Any],
+      isClearfix: Requireable[Any],
+      isHidden: Requireable[Any],
+      isInvisible: Requireable[Any],
+      selfAlignX: Requireable[Any],
+      selfAlignY: Requireable[Any],
+      showFor: Requireable[Any],
+      showForLandscape: Requireable[Any],
+      showForPortrait: Requireable[Any],
+      showForSr: Requireable[Any],
+      showOnFocus: Requireable[Any],
+      showOnlyFor: Requireable[Any]
     ): AlignX = {
       val __obj = js.Dynamic.literal(alignX = alignX.asInstanceOf[js.Any], alignY = alignY.asInstanceOf[js.Any], breakpoint = breakpoint.asInstanceOf[js.Any], centerAlign = centerAlign.asInstanceOf[js.Any], flexChild = flexChild.asInstanceOf[js.Any], flexContainer = flexContainer.asInstanceOf[js.Any], flexDirCol = flexDirCol.asInstanceOf[js.Any], flexDirColRev = flexDirColRev.asInstanceOf[js.Any], flexDirRow = flexDirRow.asInstanceOf[js.Any], flexDirRowRev = flexDirRowRev.asInstanceOf[js.Any], flexOrder = flexOrder.asInstanceOf[js.Any], flexOrderLarge = flexOrderLarge.asInstanceOf[js.Any], flexOrderMedium = flexOrderMedium.asInstanceOf[js.Any], flexOrderSmall = flexOrderSmall.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], hideFor = hideFor.asInstanceOf[js.Any], hideOnlyFor = hideOnlyFor.asInstanceOf[js.Any], isClearfix = isClearfix.asInstanceOf[js.Any], isHidden = isHidden.asInstanceOf[js.Any], isInvisible = isInvisible.asInstanceOf[js.Any], selfAlignX = selfAlignX.asInstanceOf[js.Any], selfAlignY = selfAlignY.asInstanceOf[js.Any], showFor = showFor.asInstanceOf[js.Any], showForLandscape = showForLandscape.asInstanceOf[js.Any], showForPortrait = showForPortrait.asInstanceOf[js.Any], showForSr = showForSr.asInstanceOf[js.Any], showOnFocus = showOnFocus.asInstanceOf[js.Any], showOnlyFor = showOnlyFor.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlignX]
@@ -104,61 +104,61 @@ object anon {
     
     extension [Self <: AlignX](x: Self) {
       
-      inline def setAlignX(value: Requireable[js.Any]): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
+      inline def setAlignX(value: Requireable[Any]): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
       
-      inline def setAlignY(value: Requireable[js.Any]): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
+      inline def setAlignY(value: Requireable[Any]): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
       
-      inline def setBreakpoint(value: Validator[js.Any]): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: Validator[Any]): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
-      inline def setCenterAlign(value: Requireable[js.Any]): Self = StObject.set(x, "centerAlign", value.asInstanceOf[js.Any])
+      inline def setCenterAlign(value: Requireable[Any]): Self = StObject.set(x, "centerAlign", value.asInstanceOf[js.Any])
       
-      inline def setFlexChild(value: Requireable[js.Any]): Self = StObject.set(x, "flexChild", value.asInstanceOf[js.Any])
+      inline def setFlexChild(value: Requireable[Any]): Self = StObject.set(x, "flexChild", value.asInstanceOf[js.Any])
       
-      inline def setFlexContainer(value: Requireable[js.Any]): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
+      inline def setFlexContainer(value: Requireable[Any]): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
       
-      inline def setFlexDirCol(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirCol", value.asInstanceOf[js.Any])
+      inline def setFlexDirCol(value: Requireable[Any]): Self = StObject.set(x, "flexDirCol", value.asInstanceOf[js.Any])
       
-      inline def setFlexDirColRev(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirColRev", value.asInstanceOf[js.Any])
+      inline def setFlexDirColRev(value: Requireable[Any]): Self = StObject.set(x, "flexDirColRev", value.asInstanceOf[js.Any])
       
-      inline def setFlexDirRow(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirRow", value.asInstanceOf[js.Any])
+      inline def setFlexDirRow(value: Requireable[Any]): Self = StObject.set(x, "flexDirRow", value.asInstanceOf[js.Any])
       
-      inline def setFlexDirRowRev(value: Requireable[js.Any]): Self = StObject.set(x, "flexDirRowRev", value.asInstanceOf[js.Any])
+      inline def setFlexDirRowRev(value: Requireable[Any]): Self = StObject.set(x, "flexDirRowRev", value.asInstanceOf[js.Any])
       
-      inline def setFlexOrder(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrder", value.asInstanceOf[js.Any])
+      inline def setFlexOrder(value: Requireable[Any]): Self = StObject.set(x, "flexOrder", value.asInstanceOf[js.Any])
       
-      inline def setFlexOrderLarge(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderLarge", value.asInstanceOf[js.Any])
+      inline def setFlexOrderLarge(value: Requireable[Any]): Self = StObject.set(x, "flexOrderLarge", value.asInstanceOf[js.Any])
       
-      inline def setFlexOrderMedium(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderMedium", value.asInstanceOf[js.Any])
+      inline def setFlexOrderMedium(value: Requireable[Any]): Self = StObject.set(x, "flexOrderMedium", value.asInstanceOf[js.Any])
       
-      inline def setFlexOrderSmall(value: Requireable[js.Any]): Self = StObject.set(x, "flexOrderSmall", value.asInstanceOf[js.Any])
+      inline def setFlexOrderSmall(value: Requireable[Any]): Self = StObject.set(x, "flexOrderSmall", value.asInstanceOf[js.Any])
       
-      inline def setFloat(value: Requireable[js.Any]): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: Requireable[Any]): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
-      inline def setHideFor(value: Requireable[js.Any]): Self = StObject.set(x, "hideFor", value.asInstanceOf[js.Any])
+      inline def setHideFor(value: Requireable[Any]): Self = StObject.set(x, "hideFor", value.asInstanceOf[js.Any])
       
-      inline def setHideOnlyFor(value: Requireable[js.Any]): Self = StObject.set(x, "hideOnlyFor", value.asInstanceOf[js.Any])
+      inline def setHideOnlyFor(value: Requireable[Any]): Self = StObject.set(x, "hideOnlyFor", value.asInstanceOf[js.Any])
       
-      inline def setIsClearfix(value: Requireable[js.Any]): Self = StObject.set(x, "isClearfix", value.asInstanceOf[js.Any])
+      inline def setIsClearfix(value: Requireable[Any]): Self = StObject.set(x, "isClearfix", value.asInstanceOf[js.Any])
       
-      inline def setIsHidden(value: Requireable[js.Any]): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Requireable[Any]): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      inline def setIsInvisible(value: Requireable[js.Any]): Self = StObject.set(x, "isInvisible", value.asInstanceOf[js.Any])
+      inline def setIsInvisible(value: Requireable[Any]): Self = StObject.set(x, "isInvisible", value.asInstanceOf[js.Any])
       
-      inline def setSelfAlignX(value: Requireable[js.Any]): Self = StObject.set(x, "selfAlignX", value.asInstanceOf[js.Any])
+      inline def setSelfAlignX(value: Requireable[Any]): Self = StObject.set(x, "selfAlignX", value.asInstanceOf[js.Any])
       
-      inline def setSelfAlignY(value: Requireable[js.Any]): Self = StObject.set(x, "selfAlignY", value.asInstanceOf[js.Any])
+      inline def setSelfAlignY(value: Requireable[Any]): Self = StObject.set(x, "selfAlignY", value.asInstanceOf[js.Any])
       
-      inline def setShowFor(value: Requireable[js.Any]): Self = StObject.set(x, "showFor", value.asInstanceOf[js.Any])
+      inline def setShowFor(value: Requireable[Any]): Self = StObject.set(x, "showFor", value.asInstanceOf[js.Any])
       
-      inline def setShowForLandscape(value: Requireable[js.Any]): Self = StObject.set(x, "showForLandscape", value.asInstanceOf[js.Any])
+      inline def setShowForLandscape(value: Requireable[Any]): Self = StObject.set(x, "showForLandscape", value.asInstanceOf[js.Any])
       
-      inline def setShowForPortrait(value: Requireable[js.Any]): Self = StObject.set(x, "showForPortrait", value.asInstanceOf[js.Any])
+      inline def setShowForPortrait(value: Requireable[Any]): Self = StObject.set(x, "showForPortrait", value.asInstanceOf[js.Any])
       
-      inline def setShowForSr(value: Requireable[js.Any]): Self = StObject.set(x, "showForSr", value.asInstanceOf[js.Any])
+      inline def setShowForSr(value: Requireable[Any]): Self = StObject.set(x, "showForSr", value.asInstanceOf[js.Any])
       
-      inline def setShowOnFocus(value: Requireable[js.Any]): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
+      inline def setShowOnFocus(value: Requireable[Any]): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
       
-      inline def setShowOnlyFor(value: Requireable[js.Any]): Self = StObject.set(x, "showOnlyFor", value.asInstanceOf[js.Any])
+      inline def setShowOnlyFor(value: Requireable[Any]): Self = StObject.set(x, "showOnlyFor", value.asInstanceOf[js.Any])
     }
   }
   

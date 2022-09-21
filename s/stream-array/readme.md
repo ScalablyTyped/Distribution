@@ -11,9 +11,9 @@ Pipe an Array through Node.js streams
 | Full name          | stream-array |
 | Keywords           | array, readable, stream, pipe |
 | # releases         | 0 |
-| # dependents       | 72 |
-| # downloads        | 4964066 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 513275.6666666667 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/mimetnet/node-stream-array)

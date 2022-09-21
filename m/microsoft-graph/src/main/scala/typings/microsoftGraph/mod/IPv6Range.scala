@@ -8,10 +8,10 @@ trait IPv6Range
   extends StObject
      with IpRange {
   
-  // Lower address
+  // Lower address.
   var lowerAddress: js.UndefOr[String] = js.undefined
   
-  // Upper address
+  // Upper address.
   var upperAddress: js.UndefOr[String] = js.undefined
 }
 object IPv6Range {

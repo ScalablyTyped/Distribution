@@ -175,11 +175,11 @@ trait PlusBarcode extends StObject {
     */
   def create(): PlusBarcodeBarcode = js.native
   def create(id: String): PlusBarcodeBarcode = js.native
-  def create(id: String, filters: js.Array[js.Any]): PlusBarcodeBarcode = js.native
-  def create(id: String, filters: js.Array[js.Any], styles: PlusBarcodeBarcodeStyles): PlusBarcodeBarcode = js.native
+  def create(id: String, filters: js.Array[Any]): PlusBarcodeBarcode = js.native
+  def create(id: String, filters: js.Array[Any], styles: PlusBarcodeBarcodeStyles): PlusBarcodeBarcode = js.native
   def create(id: String, filters: Unit, styles: PlusBarcodeBarcodeStyles): PlusBarcodeBarcode = js.native
-  def create(id: Unit, filters: js.Array[js.Any]): PlusBarcodeBarcode = js.native
-  def create(id: Unit, filters: js.Array[js.Any], styles: PlusBarcodeBarcodeStyles): PlusBarcodeBarcode = js.native
+  def create(id: Unit, filters: js.Array[Any]): PlusBarcodeBarcode = js.native
+  def create(id: Unit, filters: js.Array[Any], styles: PlusBarcodeBarcodeStyles): PlusBarcodeBarcode = js.native
   def create(id: Unit, filters: Unit, styles: PlusBarcodeBarcodeStyles): PlusBarcodeBarcode = js.native
   
   /**
@@ -206,28 +206,28 @@ trait PlusBarcode extends StObject {
   def scan(
     path: String,
     successCB: js.Function3[/* result0 */ Double, /* result1 */ String, /* result2 */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def scan(
     path: String,
     successCB: js.Function3[/* result0 */ Double, /* result1 */ String, /* result2 */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
-    filters: js.Array[js.Any]
+    errorCB: js.Function1[/* result */ Any, Unit],
+    filters: js.Array[Any]
   ): Unit = js.native
   def scan(
     path: String,
     successCB: js.Function3[/* result0 */ Double, /* result1 */ String, /* result2 */ String, Unit],
     errorCB: Unit,
-    filters: js.Array[js.Any]
+    filters: js.Array[Any]
   ): Unit = js.native
-  def scan(path: String, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def scan(path: String, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def scan(
     path: String,
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit],
-    filters: js.Array[js.Any]
+    errorCB: js.Function1[/* result */ Any, Unit],
+    filters: js.Array[Any]
   ): Unit = js.native
-  def scan(path: String, successCB: Unit, errorCB: Unit, filters: js.Array[js.Any]): Unit = js.native
+  def scan(path: String, successCB: Unit, errorCB: Unit, filters: js.Array[Any]): Unit = js.native
   def scan(
     path: Unit,
     successCB: js.Function3[/* result0 */ Double, /* result1 */ String, /* result2 */ String, Unit]
@@ -235,26 +235,21 @@ trait PlusBarcode extends StObject {
   def scan(
     path: Unit,
     successCB: js.Function3[/* result0 */ Double, /* result1 */ String, /* result2 */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def scan(
     path: Unit,
     successCB: js.Function3[/* result0 */ Double, /* result1 */ String, /* result2 */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
-    filters: js.Array[js.Any]
+    errorCB: js.Function1[/* result */ Any, Unit],
+    filters: js.Array[Any]
   ): Unit = js.native
   def scan(
     path: Unit,
     successCB: js.Function3[/* result0 */ Double, /* result1 */ String, /* result2 */ String, Unit],
     errorCB: Unit,
-    filters: js.Array[js.Any]
+    filters: js.Array[Any]
   ): Unit = js.native
-  def scan(path: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def scan(
-    path: Unit,
-    successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit],
-    filters: js.Array[js.Any]
-  ): Unit = js.native
-  def scan(path: Unit, successCB: Unit, errorCB: Unit, filters: js.Array[js.Any]): Unit = js.native
+  def scan(path: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def scan(path: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit], filters: js.Array[Any]): Unit = js.native
+  def scan(path: Unit, successCB: Unit, errorCB: Unit, filters: js.Array[Any]): Unit = js.native
 }

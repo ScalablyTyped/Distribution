@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.MarginTop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MarginYProps[TLength] extends StObject {
   
-  val my: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val my: js.UndefOr[ResponsiveValue[MarginTop[TLength]]] = js.undefined
 }
 object MarginYProps {
   
@@ -21,16 +18,10 @@ object MarginYProps {
   
   extension [Self <: MarginYProps[?], TLength](x: Self & MarginYProps[TLength]) {
     
-    inline def setMy(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+    inline def setMy(value: ResponsiveValue[MarginTop[TLength]]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
-    inline def setMyVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "my", js.Array(value :_*))
+    inline def setMyVarargs(value: MarginTop[TLength]*): Self = StObject.set(x, "my", js.Array(value*))
   }
 }

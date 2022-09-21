@@ -1,5 +1,6 @@
 package typings.vegaTypings.scaleMod
 
+import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.scaleMod.RangeEnum
   - typings.vegaTypings.scaleMod.RangeRaw
+  - typings.vegaTypings.signalMod.SignalRef
   - typings.vegaTypings.anon.Step
 */
-type RangeBand = typings.vegaTypings.scaleMod._RangeBand | typings.vegaTypings.scaleMod.RangeRaw
+type RangeBand = _RangeBand | RangeRaw
 
-type RangeRaw = js.Array[
-scala.Null | scala.Boolean | java.lang.String | scala.Double | typings.vegaTypings.signalMod.SignalRef | typings.vegaTypings.scaleMod.RangeRawArray]
+type RangeRaw = js.Array[Null | Boolean | String | Double | SignalRef | RangeRawArray]
 
-type RangeRawArray = js.Array[scala.Double | typings.vegaTypings.signalMod.SignalRef]
+type RangeRawArray = js.Array[Double | SignalRef]
 
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.scaleMod.RangeEnum
@@ -23,29 +24,27 @@ type RangeRawArray = js.Array[scala.Double | typings.vegaTypings.signalMod.Signa
   - typings.vegaTypings.signalMod.SignalRef
   - typings.vegaTypings.anon.Extent
 */
-type RangeScheme = typings.vegaTypings.scaleMod._RangeScheme | typings.vegaTypings.scaleMod.RangeRaw
+type RangeScheme = _RangeScheme | RangeRaw
 
 /* Rewritten from type alias, can be one of: 
   - js.Array[scala.Double | typings.vegaTypings.signalMod.SignalRef]
   - typings.vegaTypings.signalMod.SignalRef
   - typings.vegaTypings.scaleMod.ScaleBinParams
 */
-type ScaleBins = typings.vegaTypings.scaleMod._ScaleBins | (js.Array[scala.Double | typings.vegaTypings.signalMod.SignalRef])
+type ScaleBins = _ScaleBins | (js.Array[Double | SignalRef])
 
-type ScaleData = (typings.vegaTypings.scaleMod.ScaleDataRef | typings.vegaTypings.scaleMod.ScaleMultiDataRef | typings.vegaTypings.scaleMod.ScaleMultiFieldsRef) & typings.vegaTypings.anon.Sort
-
-type ScaleField = java.lang.String | typings.vegaTypings.signalMod.SignalRef
+type ScaleField = String | SignalRef
 
 /* Rewritten from type alias, can be one of: 
   - scala.Boolean
   - typings.vegaTypings.anon.OrderSortOrder
   - typings.vegaTypings.anon.Op
 */
-type SortField = typings.vegaTypings.scaleMod._SortField | scala.Boolean
+type SortField = _SortField | Boolean
 
 /* Rewritten from type alias, can be one of: 
   - scala.Boolean
   - typings.vegaTypings.anon.OpOrder
   - typings.vegaTypings.anon.FieldOp
 */
-type UnionSortField = typings.vegaTypings.scaleMod._UnionSortField | scala.Boolean
+type UnionSortField = _UnionSortField | Boolean

@@ -17,7 +17,7 @@ trait AnimationBehaviors extends StObject {
   
   def Item(Index: Double): AnimationBehavior = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.AnimationBehaviors_typekey")
   var PowerPointDotAnimationBehaviors_typekey: AnimationBehaviors = js.native

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Excel.RequestContext")
 @js.native
-class RequestContext ()
+open class RequestContext ()
   extends StObject
      with typings.officeJsPreview.Excel.RequestContext {
   def this(url: String) = this()

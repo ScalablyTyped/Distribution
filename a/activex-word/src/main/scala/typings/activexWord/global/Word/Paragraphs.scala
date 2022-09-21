@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Paragraphs")
 @js.native
-/* private */ class Paragraphs ()
+/* private */ open class Paragraphs ()
   extends StObject
      with typings.activexWord.Word.Paragraphs

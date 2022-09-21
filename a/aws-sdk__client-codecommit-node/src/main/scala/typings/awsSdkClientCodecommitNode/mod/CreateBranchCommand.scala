@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-codecommit-node", "CreateBranchCommand")
 @js.native
-class CreateBranchCommand protected ()
+open class CreateBranchCommand protected ()
   extends typings.awsSdkClientCodecommitNode.createBranchCommandMod.CreateBranchCommand {
   def this(input: CreateBranchInput) = this()
 }

@@ -146,7 +146,7 @@ object Layer {
     
     inline def setScrollRectsUndefined: Self = StObject.set(x, "scrollRects", js.undefined)
     
-    inline def setScrollRectsVarargs(value: ScrollRect*): Self = StObject.set(x, "scrollRects", js.Array(value :_*))
+    inline def setScrollRectsVarargs(value: ScrollRect*): Self = StObject.set(x, "scrollRects", js.Array(value*))
     
     inline def setStickyPositionConstraint(value: StickyPositionConstraint): Self = StObject.set(x, "stickyPositionConstraint", value.asInstanceOf[js.Any])
     
@@ -156,7 +156,7 @@ object Layer {
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }

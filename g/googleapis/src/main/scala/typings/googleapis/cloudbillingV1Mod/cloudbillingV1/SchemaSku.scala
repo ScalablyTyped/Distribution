@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Encapsulates a single SKU in Google Cloud Platform
-  */
 trait SchemaSku extends StObject {
   
   /**
@@ -15,16 +12,19 @@ trait SchemaSku extends StObject {
   var category: js.UndefOr[SchemaCategory] = js.undefined
   
   /**
-    * A human readable description of the SKU, has a maximum length of 256
-    * characters.
+    * A human readable description of the SKU, has a maximum length of 256 characters.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The resource name for the SKU. Example:
-    * &quot;services/DA34-426B-A397/skus/AA95-CD31-42FE&quot;
+    * The geographic taxonomy for this sku.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var geoTaxonomy: js.UndefOr[SchemaGeoTaxonomy] = js.undefined
+  
+  /**
+    * The resource name for the SKU. Example: "services/DA34-426B-A397/skus/AA95-CD31-42FE"
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A timeline of pricing info for this SKU in chronological order.
@@ -32,22 +32,19 @@ trait SchemaSku extends StObject {
   var pricingInfo: js.UndefOr[js.Array[SchemaPricingInfo]] = js.undefined
   
   /**
-    * Identifies the service provider. This is &#39;Google&#39; for first party
-    * services in Google Cloud Platform.
+    * Identifies the service provider. This is 'Google' for first party services in Google Cloud Platform.
     */
-  var serviceProviderName: js.UndefOr[String] = js.undefined
+  var serviceProviderName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * List of service regions this SKU is offered at. Example:
-    * &quot;asia-east1&quot; Service regions can be found at
-    * https://cloud.google.com/about/locations/
+    * List of service regions this SKU is offered at. Example: "asia-east1" Service regions can be found at https://cloud.google.com/about/locations/
     */
-  var serviceRegions: js.UndefOr[js.Array[String]] = js.undefined
+  var serviceRegions: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The identifier for the SKU. Example: &quot;AA95-CD31-42FE&quot;
+    * The identifier for the SKU. Example: "AA95-CD31-42FE"
     */
-  var skuId: js.UndefOr[String] = js.undefined
+  var skuId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSku {
   
@@ -64,9 +61,17 @@ object SchemaSku {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setGeoTaxonomy(value: SchemaGeoTaxonomy): Self = StObject.set(x, "geoTaxonomy", value.asInstanceOf[js.Any])
+    
+    inline def setGeoTaxonomyUndefined: Self = StObject.set(x, "geoTaxonomy", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -74,19 +79,25 @@ object SchemaSku {
     
     inline def setPricingInfoUndefined: Self = StObject.set(x, "pricingInfo", js.undefined)
     
-    inline def setPricingInfoVarargs(value: SchemaPricingInfo*): Self = StObject.set(x, "pricingInfo", js.Array(value :_*))
+    inline def setPricingInfoVarargs(value: SchemaPricingInfo*): Self = StObject.set(x, "pricingInfo", js.Array(value*))
     
     inline def setServiceProviderName(value: String): Self = StObject.set(x, "serviceProviderName", value.asInstanceOf[js.Any])
+    
+    inline def setServiceProviderNameNull: Self = StObject.set(x, "serviceProviderName", null)
     
     inline def setServiceProviderNameUndefined: Self = StObject.set(x, "serviceProviderName", js.undefined)
     
     inline def setServiceRegions(value: js.Array[String]): Self = StObject.set(x, "serviceRegions", value.asInstanceOf[js.Any])
     
+    inline def setServiceRegionsNull: Self = StObject.set(x, "serviceRegions", null)
+    
     inline def setServiceRegionsUndefined: Self = StObject.set(x, "serviceRegions", js.undefined)
     
-    inline def setServiceRegionsVarargs(value: String*): Self = StObject.set(x, "serviceRegions", js.Array(value :_*))
+    inline def setServiceRegionsVarargs(value: String*): Self = StObject.set(x, "serviceRegions", js.Array(value*))
     
     inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+    
+    inline def setSkuIdNull: Self = StObject.set(x, "skuId", null)
     
     inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
   }

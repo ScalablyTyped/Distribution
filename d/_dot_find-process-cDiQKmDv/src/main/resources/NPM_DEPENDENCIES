@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".find-process-cDiQKmDv" : "1.4.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".find-process-cDiQKmDv" : "1.4.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

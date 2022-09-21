@@ -2,7 +2,6 @@ package typings.phaser.Phaser
 
 import typings.phaser.Phaser.Scenes.Systems
 import typings.phaser.Phaser.Types.Plugins.GlobalPlugin
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ object Plugins {
       * @param data A value specified by the user, if any, from the `data` property of the plugin's configuration object (if started at game boot) or passed in the PluginManager's `install` method (if started manually).
       */
     def init(): Unit = js.native
-    def init(data: js.Any): Unit = js.native
+    def init(data: Any): Unit = js.native
     
     /**
       * A handy reference to the Plugin Manager that is responsible for this plugin.
@@ -63,52 +62,12 @@ object Plugins {
     def stop(): Unit = js.native
   }
   
-  trait DefaultPlugins extends StObject {
-    
-    /**
-      * These are the core plugins that are installed into every Scene.Systems instance, no matter what.
-      */
-    var CoreScene: js.Array[js.Any]
-    
-    /**
-      * These plugins are created in Scene.Systems in addition to the CoreScenePlugins.
-      */
-    var DefaultScene: js.Array[js.Any]
-    
-    /**
-      * These are the Global Managers that are created by the Phaser.Game instance.
-      */
-    var Global: js.Array[js.Any]
-  }
-  object DefaultPlugins {
-    
-    inline def apply(CoreScene: js.Array[js.Any], DefaultScene: js.Array[js.Any], Global: js.Array[js.Any]): DefaultPlugins = {
-      val __obj = js.Dynamic.literal(CoreScene = CoreScene.asInstanceOf[js.Any], DefaultScene = DefaultScene.asInstanceOf[js.Any], Global = Global.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DefaultPlugins]
-    }
-    
-    extension [Self <: DefaultPlugins](x: Self) {
-      
-      inline def setCoreScene(value: js.Array[js.Any]): Self = StObject.set(x, "CoreScene", value.asInstanceOf[js.Any])
-      
-      inline def setCoreSceneVarargs(value: js.Any*): Self = StObject.set(x, "CoreScene", js.Array(value :_*))
-      
-      inline def setDefaultScene(value: js.Array[js.Any]): Self = StObject.set(x, "DefaultScene", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultSceneVarargs(value: js.Any*): Self = StObject.set(x, "DefaultScene", js.Array(value :_*))
-      
-      inline def setGlobal(value: js.Array[js.Any]): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
-      
-      inline def setGlobalVarargs(value: js.Any*): Self = StObject.set(x, "Global", js.Array(value :_*))
-    }
-  }
-  
   /**
     * The PluginManager is responsible for installing and adding plugins to Phaser.
     * 
     * It is a global system and therefore belongs to the Game instance, not a specific Scene.
     * 
-    * It works in conjunction with the PluginCache. Core internal plugins automatically register themselves 
+    * It works in conjunction with the PluginCache. Core internal plugins automatically register themselves
     * with the Cache, but it's the Plugin Manager that is responsible for injecting them into the Scenes.
     * 
     * There are two types of plugin:
@@ -149,7 +108,7 @@ object Plugins {
       * @param globalPlugins An array of global plugins to install.
       * @param scenePlugins An array of scene plugins to install.
       */
-    /* protected */ def addToScene(sys: Systems, globalPlugins: js.Array[js.Any], scenePlugins: js.Array[js.Any]): Unit = js.native
+    /* protected */ def addToScene(sys: Systems, globalPlugins: js.Array[Any], scenePlugins: js.Array[Any]): Unit = js.native
     
     /**
       * Run once the game has booted and installs all of the plugins configured in the Game Config.
@@ -202,7 +161,7 @@ object Plugins {
       * Gets an index of a global plugin based on the given key.
       * @param key The unique plugin key.
       */
-    /* protected */ def getIndex(key: String): integer = js.native
+    /* protected */ def getIndex(key: String): Double = js.native
     
     /**
       * Installs a new Global Plugin into the Plugin Manager and optionally starts it running.
@@ -232,11 +191,11 @@ object Plugins {
     def install(key: String, plugin: js.Function): BasePlugin = js.native
     def install(key: String, plugin: js.Function, start: Boolean): BasePlugin = js.native
     def install(key: String, plugin: js.Function, start: Boolean, mapping: String): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Boolean, mapping: String, data: js.Any): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Boolean, mapping: Unit, data: js.Any): BasePlugin = js.native
+    def install(key: String, plugin: js.Function, start: Boolean, mapping: String, data: Any): BasePlugin = js.native
+    def install(key: String, plugin: js.Function, start: Boolean, mapping: Unit, data: Any): BasePlugin = js.native
     def install(key: String, plugin: js.Function, start: Unit, mapping: String): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Unit, mapping: String, data: js.Any): BasePlugin = js.native
-    def install(key: String, plugin: js.Function, start: Unit, mapping: Unit, data: js.Any): BasePlugin = js.native
+    def install(key: String, plugin: js.Function, start: Unit, mapping: String, data: Any): BasePlugin = js.native
+    def install(key: String, plugin: js.Function, start: Unit, mapping: Unit, data: Any): BasePlugin = js.native
     
     /**
       * Installs a new Scene Plugin into the Plugin Manager and optionally adds it
@@ -458,6 +417,14 @@ object Plugins {
       * ```
       */
     def boot(): Unit = js.native
+    
+    /**
+      * The key under which this plugin was installed into the Scene Systems.
+      * 
+      * This property is only set when the plugin is instantiated and added to the Scene, not before.
+      * You can use it during the `boot` method.
+      */
+    val pluginKey: String = js.native
     
     /**
       * A reference to the Scene that has installed this plugin.

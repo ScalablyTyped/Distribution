@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("kd-tree-javascript", "kdTree")
   @js.native
-  class kdTree[T] protected () extends StObject {
+  open class kdTree[T] protected () extends StObject {
     // Create a new tree from a list of points, a distance function, and a
     // list of dimensions.
     def this(

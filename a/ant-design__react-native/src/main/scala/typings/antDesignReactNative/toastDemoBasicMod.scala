@@ -10,13 +10,10 @@ object toastDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/toast/demo/basic", JSImport.Default)
   @js.native
-  class default () extends ToastExample
+  open class default () extends ToastExample
   
   @js.native
-  trait ToastExample
-    extends Component[js.Any, js.Any, js.Any] {
-    
-    def alwaysShowToast(): Unit = js.native
+  trait ToastExample extends Component[Any, Any, Any] {
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MToastExample(): Unit = js.native
@@ -24,6 +21,6 @@ object toastDemoBasicMod {
     @JSName("state")
     var state_ToastExample: EnableMask = js.native
     
-    var timer: js.Any = js.native
+    var timer: Any = js.native
   }
 }

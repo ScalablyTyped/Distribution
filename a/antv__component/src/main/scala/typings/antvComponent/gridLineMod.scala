@@ -9,7 +9,7 @@ object gridLineMod {
   
   @JSImport("@antv/component/lib/grid/line", JSImport.Default)
   @js.native
-  class default () extends Line
+  open class default () extends Line
   
   @js.native
   trait Line

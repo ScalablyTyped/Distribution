@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaGooglePrivacyDlpV2InspectJobConfig extends StObject {
   
   /**
-    * Actions to execute at the completion of the job. Are executed in the
-    * order provided.
+    * Actions to execute at the completion of the job.
     */
   var actions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Action]] = js.undefined
   
@@ -18,11 +17,9 @@ trait SchemaGooglePrivacyDlpV2InspectJobConfig extends StObject {
   var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.undefined
   
   /**
-    * If provided, will be used as the default for all values in InspectConfig.
-    * `inspect_config` will be merged into the values persisted as part of the
-    * template.
+    * If provided, will be used as the default for all values in InspectConfig. `inspect_config` will be merged into the values persisted as part of the template.
     */
-  var inspectTemplateName: js.UndefOr[String] = js.undefined
+  var inspectTemplateName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The data to scan.
@@ -42,13 +39,15 @@ object SchemaGooglePrivacyDlpV2InspectJobConfig {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: SchemaGooglePrivacyDlpV2Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: SchemaGooglePrivacyDlpV2Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setInspectConfig(value: SchemaGooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
     
     inline def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
     
     inline def setInspectTemplateName(value: String): Self = StObject.set(x, "inspectTemplateName", value.asInstanceOf[js.Any])
+    
+    inline def setInspectTemplateNameNull: Self = StObject.set(x, "inspectTemplateName", null)
     
     inline def setInspectTemplateNameUndefined: Self = StObject.set(x, "inspectTemplateName", js.undefined)
     

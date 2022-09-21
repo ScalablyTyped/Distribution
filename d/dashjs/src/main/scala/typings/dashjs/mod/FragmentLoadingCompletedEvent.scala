@@ -1,7 +1,6 @@
 package typings.dashjs.mod
 
 import typings.dashjs.dashjsStrings.fragmentLoadingCompleted
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait FragmentLoadingCompletedEvent
   
   var request: FragmentRequest
   
-  var response: ArrayBuffer
+  var response: js.typedarray.ArrayBuffer
   
   var sender: js.Object
   
@@ -21,7 +20,7 @@ trait FragmentLoadingCompletedEvent
 }
 object FragmentLoadingCompletedEvent {
   
-  inline def apply(request: FragmentRequest, response: ArrayBuffer, sender: js.Object): FragmentLoadingCompletedEvent = {
+  inline def apply(request: FragmentRequest, response: js.typedarray.ArrayBuffer, sender: js.Object): FragmentLoadingCompletedEvent = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fragmentLoadingCompleted")
     __obj.asInstanceOf[FragmentLoadingCompletedEvent]
@@ -31,7 +30,7 @@ object FragmentLoadingCompletedEvent {
     
     inline def setRequest(value: FragmentRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    inline def setResponse(value: ArrayBuffer): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setSender(value: js.Object): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     

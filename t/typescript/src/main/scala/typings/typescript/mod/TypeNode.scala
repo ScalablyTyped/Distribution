@@ -9,5 +9,5 @@ trait TypeNode
   extends StObject
      with Node {
   
-  var _typeNodeBrand: js.Any = js.native
+  var _typeNodeBrand: Any = js.native
 }

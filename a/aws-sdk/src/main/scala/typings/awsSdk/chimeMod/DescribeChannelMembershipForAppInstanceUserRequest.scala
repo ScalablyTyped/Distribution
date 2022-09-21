@@ -15,6 +15,11 @@ trait DescribeChannelMembershipForAppInstanceUserRequest extends StObject {
     * The ARN of the channel to which the user belongs.
     */
   var ChannelArn: ChimeArn
+  
+  /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
 }
 object DescribeChannelMembershipForAppInstanceUserRequest {
   
@@ -28,5 +33,9 @@ object DescribeChannelMembershipForAppInstanceUserRequest {
     inline def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
   }
 }

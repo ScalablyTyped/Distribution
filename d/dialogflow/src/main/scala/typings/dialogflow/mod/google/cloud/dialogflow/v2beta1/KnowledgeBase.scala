@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new KnowledgeBase.
   * @param [properties] Properties to set
   */
-class KnowledgeBase ()
+open class KnowledgeBase ()
   extends StObject
      with IKnowledgeBase {
   def this(properties: IKnowledgeBase) = this()
@@ -37,7 +36,7 @@ class KnowledgeBase ()
     * Converts this KnowledgeBase to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object KnowledgeBase {
   
@@ -54,6 +53,8 @@ object KnowledgeBase {
   inline def create(): KnowledgeBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[KnowledgeBase]
   inline def create(properties: IKnowledgeBase): KnowledgeBase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBase]
   
+  inline def decode(reader: js.typedarray.Uint8Array): KnowledgeBase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBase]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): KnowledgeBase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBase]
   /**
     * Decodes a KnowledgeBase message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -65,9 +66,8 @@ object KnowledgeBase {
   /* static member */
   inline def decode(reader: Reader): KnowledgeBase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBase]
   inline def decode(reader: Reader, length: Double): KnowledgeBase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBase]
-  inline def decode(reader: Uint8Array): KnowledgeBase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBase]
-  inline def decode(reader: Uint8Array, length: Double): KnowledgeBase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBase]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): KnowledgeBase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBase]
   /**
     * Decodes a KnowledgeBase message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -77,7 +77,6 @@ object KnowledgeBase {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): KnowledgeBase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBase]
-  inline def decodeDelimited(reader: Uint8Array): KnowledgeBase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBase]
   
   /**
     * Encodes the specified KnowledgeBase message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeBase.verify|verify} messages.
@@ -105,7 +104,7 @@ object KnowledgeBase {
     * @returns KnowledgeBase
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): KnowledgeBase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBase]
+  inline def fromObject(`object`: StringDictionary[Any]): KnowledgeBase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBase]
   
   /**
     * Creates a plain object from a KnowledgeBase message. Also converts values to other types if specified.
@@ -114,8 +113,8 @@ object KnowledgeBase {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: KnowledgeBase): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: KnowledgeBase, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: KnowledgeBase): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: KnowledgeBase, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a KnowledgeBase message.
@@ -123,5 +122,5 @@ object KnowledgeBase {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

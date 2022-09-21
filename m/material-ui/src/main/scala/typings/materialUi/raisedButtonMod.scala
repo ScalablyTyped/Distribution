@@ -10,10 +10,10 @@ object raisedButtonMod {
   
   @JSImport("material-ui/RaisedButton", JSImport.Default)
   @js.native
-  class default () extends RaisedButton
+  open class default () extends RaisedButton
   
   @JSImport("material-ui/RaisedButton", "RaisedButton")
   @js.native
-  class RaisedButton ()
-    extends Component[RaisedButtonProps, js.Object, js.Any]
+  open class RaisedButton ()
+    extends Component[RaisedButtonProps, js.Object, Any]
 }

@@ -26,7 +26,7 @@ object kernelspecMod {
     *
     * @param options - The default options for kernel.
     */
-  class KernelSpecManager ()
+  open class KernelSpecManager ()
     extends typings.jupyterlabServices.managerMod.KernelSpecManager {
     def this(options: IOptions) = this()
   }

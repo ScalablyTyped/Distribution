@@ -20,7 +20,7 @@ trait nlobjField
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * add a select option to this field (valid for select/multiselect fields).
@@ -179,7 +179,7 @@ Instantiable0[js.Any] {
     * @param height
     * @return
     */
-  def setDisplaySize(width: js.Any, height: js.Any): js.Function0[Unit] = js.native
+  def setDisplaySize(width: Any, height: Any): js.Function0[Unit] = js.native
   
   /**
     * set the display type for this field.
@@ -278,7 +278,7 @@ Instantiable0[js.Any] {
     * @param maxlength
     * @return
     */
-  def setMaxLength(maxlength: js.Any): js.Function0[Unit] = js.native
+  def setMaxLength(maxlength: Any): js.Function0[Unit] = js.native
   
   /**
     * set the amount of emppty vertical space (rows) between this field and the previous field.
@@ -291,5 +291,5 @@ Instantiable0[js.Any] {
     * @param padding
     * @return
     */
-  def setPadding(padding: js.Any): js.Function0[Unit] = js.native
+  def setPadding(padding: Any): js.Function0[Unit] = js.native
 }

@@ -26,6 +26,6 @@ object IEquippableComponent {
     
     inline def setSlots(value: js.Array[Accepteditems]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
-    inline def setSlotsVarargs(value: Accepteditems*): Self = StObject.set(x, "slots", js.Array(value :_*))
+    inline def setSlotsVarargs(value: Accepteditems*): Self = StObject.set(x, "slots", js.Array(value*))
   }
 }

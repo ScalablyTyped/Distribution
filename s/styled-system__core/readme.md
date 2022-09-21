@@ -9,10 +9,10 @@ Typings are for version 5.1
 | ------------------ | :-------------: |
 | Full name          | @styled-system/core |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 32 |
-| # downloads        | 14184152 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2478169.6666666665 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40styled-system%2Fcore)

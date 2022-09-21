@@ -14,7 +14,7 @@ object rayHelperMod {
   
   @JSImport("babylonjs/Debug/rayHelper", "RayHelper")
   @js.native
-  class RayHelper protected () extends StObject {
+  open class RayHelper protected () extends StObject {
     /**
       * Instantiate a new ray helper.
       * As raycast might be hard to debug, the RayHelper can help rendering the different rays
@@ -24,27 +24,27 @@ object rayHelperMod {
       */
     def this(ray: Ray) = this()
     
-    /* private */ var _attachedToMesh: js.Any = js.native
+    /* private */ var _attachedToMesh: Any = js.native
     
-    /* private */ var _meshSpaceDirection: js.Any = js.native
+    /* private */ var _meshSpaceDirection: Any = js.native
     
-    /* private */ var _meshSpaceOrigin: js.Any = js.native
+    /* private */ var _meshSpaceOrigin: Any = js.native
     
-    /* private */ var _onAfterRenderObserver: js.Any = js.native
+    /* private */ var _onAfterRenderObserver: Any = js.native
     
-    /* private */ var _onAfterStepObserver: js.Any = js.native
+    /* private */ var _onAfterStepObserver: Any = js.native
     
-    /* private */ var _render: js.Any = js.native
+    /* private */ var _render: Any = js.native
     
-    /* private */ var _renderFunction: js.Any = js.native
+    /* private */ var _renderFunction: Any = js.native
     
-    /* private */ var _renderLine: js.Any = js.native
+    /* private */ var _renderLine: Any = js.native
     
-    /* private */ var _renderPoints: js.Any = js.native
+    /* private */ var _renderPoints: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _updateToMesh: js.Any = js.native
+    /* private */ var _updateToMesh: Any = js.native
     
     /**
       * Attach a ray helper to a mesh so that we can easily see its orientation for instance or information like its normals.

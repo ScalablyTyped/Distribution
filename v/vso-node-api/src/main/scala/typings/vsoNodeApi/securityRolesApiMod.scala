@@ -14,7 +14,7 @@ object securityRolesApiMod {
   
   @JSImport("vso-node-api/SecurityRolesApi", "SecurityRolesApi")
   @js.native
-  class SecurityRolesApi protected () extends ISecurityRolesApi {
+  open class SecurityRolesApi protected () extends ISecurityRolesApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }

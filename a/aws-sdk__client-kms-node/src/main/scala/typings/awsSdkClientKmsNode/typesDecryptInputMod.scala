@@ -3,9 +3,6 @@ package typings.awsSdkClientKmsNode
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientKmsNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +26,7 @@ object typesDecryptInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -41,21 +38,21 @@ object typesDecryptInputMod {
     /**
       * <p>Ciphertext to be decrypted. The blob includes metadata.</p>
       */
-    var CiphertextBlob: ArrayBuffer | ArrayBufferView | String
+    var CiphertextBlob: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String
     
     /**
       * <p>The encryption context. If this was specified in the <a>Encrypt</a> function, it must be specified here or the decryption operation will fail. For more information, see <a href="http://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html">Encryption Context</a>.</p>
       */
-    var EncryptionContext: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var EncryptionContext: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * <p>A list of grant tokens.</p> <p>For more information, see <a href="http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token">Grant Tokens</a> in the <i>AWS Key Management Service Developer Guide</i>.</p>
       */
-    var GrantTokens: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var GrantTokens: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
   }
   object DecryptInput {
     
-    inline def apply(CiphertextBlob: ArrayBuffer | ArrayBufferView | String): DecryptInput = {
+    inline def apply(CiphertextBlob: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): DecryptInput = {
       val __obj = js.Dynamic.literal(CiphertextBlob = CiphertextBlob.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecryptInput]
     }
@@ -67,7 +64,7 @@ object typesDecryptInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -76,17 +73,17 @@ object typesDecryptInputMod {
       
       inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      inline def setCiphertextBlob(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
+      inline def setCiphertextBlob(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
       
-      inline def setEncryptionContext(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "EncryptionContext", value.asInstanceOf[js.Any])
+      inline def setEncryptionContext(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "EncryptionContext", value.asInstanceOf[js.Any])
       
       inline def setEncryptionContextUndefined: Self = StObject.set(x, "EncryptionContext", js.undefined)
       
-      inline def setGrantTokens(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
+      inline def setGrantTokens(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
       
       inline def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
       
-      inline def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
+      inline def setGrantTokensVarargs(value: String*): Self = StObject.set(x, "GrantTokens", js.Array(value*))
     }
   }
 }

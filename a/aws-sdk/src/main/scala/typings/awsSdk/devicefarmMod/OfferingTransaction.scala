@@ -14,7 +14,7 @@ trait OfferingTransaction extends StObject {
   /**
     * The date on which an offering transaction was created.
     */
-  var createdOn: js.UndefOr[DateTime] = js.undefined
+  var createdOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID that corresponds to a device offering promotion.
@@ -44,7 +44,7 @@ object OfferingTransaction {
     
     inline def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
     
-    inline def setCreatedOn(value: DateTime): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setCreatedOnUndefined: Self = StObject.set(x, "createdOn", js.undefined)
     

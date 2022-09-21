@@ -13,7 +13,6 @@ import typings.koaJoiRouter.anon.TypeofJoi
 import typings.koaRouter.mod.IMiddleware
 import typings.koaRouter.mod.IParamMiddleware
 import typings.std.ReadonlyArray
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object mod extends Shortcut {
   
   trait Config extends StObject {
     
-    var meta: js.UndefOr[js.Any] = js.undefined
+    var meta: js.UndefOr[Any] = js.undefined
     
     var pre: js.UndefOr[Handler] = js.undefined
     
@@ -41,13 +40,13 @@ object mod extends Shortcut {
     
     extension [Self <: Config](x: Self) {
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
       inline def setPre(value: Handler): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
       
-      inline def setPreFunction2(value: (/* ctx */ Context, /* next */ Next) => js.Any): Self = StObject.set(x, "pre", js.Any.fromFunction2(value))
+      inline def setPreFunction2(value: (/* ctx */ Context, /* next */ Next) => Any): Self = StObject.set(x, "pre", js.Any.fromFunction2(value))
       
       inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
@@ -57,7 +56,7 @@ object mod extends Shortcut {
     }
   }
   
-  type FullHandler = js.Function2[/* ctx */ Context, /* next */ Next, js.Any]
+  type FullHandler = js.Function2[/* ctx */ Context, /* next */ Next, Any]
   
   type Handler = FullHandler | NestedHandler
   
@@ -66,8 +65,8 @@ object mod extends Shortcut {
     
     def apply(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
     def apply(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-    def apply(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
-    def apply(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+    def apply(path: js.RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
+    def apply(path: js.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   }
   
   @js.native
@@ -98,78 +97,78 @@ object mod extends Shortcut {
     
     def delete(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
     def delete(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-    def delete(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
-    def delete(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+    def delete(path: js.RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
+    def delete(path: js.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
     @JSName("delete")
     var delete_Original: Method = js.native
     
     def get(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
     def get(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-    def get(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
-    def get(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+    def get(path: js.RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
+    def get(path: js.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
     @JSName("get")
     var get_Original: Method = js.native
     
     def head(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
     def head(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-    def head(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
-    def head(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+    def head(path: js.RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
+    def head(path: js.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
     @JSName("head")
     var head_Original: Method = js.native
     
-    def middleware(): Middleware[DefaultState, DefaultContext] = js.native
+    def middleware(): Middleware[DefaultState, DefaultContext, Any] = js.native
     
     def options(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
     def options(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-    def options(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
-    def options(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+    def options(path: js.RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
+    def options(path: js.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
     @JSName("options")
     var options_Original: Method = js.native
     
-    def param(param: String, middleware: IParamMiddleware[js.Any, js.Object]): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
+    def param(param: String, middleware: IParamMiddleware[Any, js.Object]): typings.koaRouter.mod.Router[Any, js.Object] = js.native
     @JSName("param")
     var param_Original: js.Function2[
         /* param */ String, 
-        /* middleware */ IParamMiddleware[js.Any, js.Object], 
-        typings.koaRouter.mod.Router[js.Any, js.Object]
+        /* middleware */ IParamMiddleware[Any, js.Object], 
+        typings.koaRouter.mod.Router[Any, js.Object]
       ] = js.native
     
     def patch(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
     def patch(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-    def patch(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
-    def patch(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+    def patch(path: js.RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
+    def patch(path: js.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
     @JSName("patch")
     var patch_Original: Method = js.native
     
     def post(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
     def post(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-    def post(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
-    def post(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+    def post(path: js.RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
+    def post(path: js.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
     @JSName("post")
     var post_Original: Method = js.native
     
-    def prefix(prefix: String): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
+    def prefix(prefix: String): typings.koaRouter.mod.Router[Any, js.Object] = js.native
     @JSName("prefix")
-    var prefix_Original: js.Function1[/* prefix */ String, typings.koaRouter.mod.Router[js.Any, js.Object]] = js.native
+    var prefix_Original: js.Function1[/* prefix */ String, typings.koaRouter.mod.Router[Any, js.Object]] = js.native
     
     def put(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
     def put(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
-    def put(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
-    def put(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+    def put(path: js.RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
+    def put(path: js.RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
     @JSName("put")
     var put_Original: Method = js.native
     
     def route(spec: js.Array[Spec]): Router = js.native
     def route(spec: Spec): Router = js.native
     
-    var router: typings.koaRouter.mod.^[js.Any, js.Object] = js.native
+    var router: typings.koaRouter.mod.^[Any, js.Object] = js.native
     
     var routes: js.Array[Spec] = js.native
     
-    def use(middleware: (IMiddleware[js.Any, js.Object])*): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
-    def use(path: String, middleware: (IMiddleware[js.Any, js.Object])*): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
-    def use(path: js.Array[String], middleware: (IMiddleware[js.Any, js.Object])*): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
-    def use(path: RegExp, middleware: (IMiddleware[js.Any, js.Object])*): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
+    def use(middleware: (IMiddleware[Any, js.Object])*): typings.koaRouter.mod.Router[Any, js.Object] = js.native
+    def use(path: String, middleware: (IMiddleware[Any, js.Object])*): typings.koaRouter.mod.Router[Any, js.Object] = js.native
+    def use(path: js.Array[String], middleware: (IMiddleware[Any, js.Object])*): typings.koaRouter.mod.Router[Any, js.Object] = js.native
+    def use(path: js.RegExp, middleware: (IMiddleware[Any, js.Object])*): typings.koaRouter.mod.Router[Any, js.Object] = js.native
     @JSName("use")
     var use_Original: FnCall = js.native
   }
@@ -182,11 +181,11 @@ object mod extends Shortcut {
     
     var method: String | js.Array[String]
     
-    var path: String | RegExp
+    var path: String | js.RegExp
   }
   object Spec {
     
-    inline def apply(handler: Handler, method: String | js.Array[String], path: String | RegExp): Spec = {
+    inline def apply(handler: Handler, method: String | js.Array[String], path: String | js.RegExp): Spec = {
       val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Spec]
     }
@@ -195,13 +194,13 @@ object mod extends Shortcut {
       
       inline def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      inline def setHandlerFunction2(value: (/* ctx */ Context, /* next */ Next) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+      inline def setHandlerFunction2(value: (/* ctx */ Context, /* next */ Next) => Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
       
       inline def setMethod(value: String | js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value*))
       
-      inline def setPath(value: String | RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | js.RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,7 +222,7 @@ object mod extends Shortcut {
     
     trait Request extends StObject {
       
-      var body: js.UndefOr[js.Any] = js.undefined
+      var body: js.UndefOr[Any] = js.undefined
       
       var params: StringDictionary[String]
     }
@@ -236,7 +235,7 @@ object mod extends Shortcut {
       
       extension [Self <: Request](x: Self) {
         
-        inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
         inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
         

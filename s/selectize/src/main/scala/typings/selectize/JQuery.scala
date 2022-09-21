@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def selectize(): JQuery = js.native
-  def selectize(options: IOptions[js.Any, js.Any]): JQuery = js.native
+  def selectize(options: IOptions[Any, Any]): JQuery = js.native
 }

@@ -2,6 +2,7 @@ package typings.antDesignReactNative
 
 import typings.antDesignReactNative.anon.Uri
 import typings.react.mod.Component
+import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.GetPhotosParamType
 import typings.reactNative.mod.ViewStyle
@@ -13,7 +14,7 @@ object cameraRollPickerMod {
   
   @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", JSImport.Default)
   @js.native
-  class default protected () extends CameraRollPicker {
+  open class default protected () extends CameraRollPicker {
     def this(props: CameraRollPickerProps) = this()
   }
   object default {
@@ -35,7 +36,7 @@ object cameraRollPickerMod {
       def backgroundColor: String = js.native
       inline def backgroundColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgroundColor")(x.asInstanceOf[js.Any])
       
-      inline def callback(selectedImages: js.Any, currentImage: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callback")(selectedImages.asInstanceOf[js.Any], currentImage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def callback(selectedImages: Any, currentImage: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callback")(selectedImages.asInstanceOf[js.Any], currentImage.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.first")
       @js.native
@@ -75,24 +76,23 @@ object cameraRollPickerMod {
   }
   
   @js.native
-  trait CameraRollPicker
-    extends Component[CameraRollPickerProps, CameraRollPickerState, js.Any] {
+  trait CameraRollPicker extends Component[CameraRollPickerProps, CameraRollPickerState, Any] {
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MCameraRollPicker(nextProps: CameraRollPickerProps): Unit = js.native
     
-    def _arrayObjectIndexOf(array: js.Any, property: String, value: js.Any): js.Any = js.native
+    def _arrayObjectIndexOf(array: Any, property: String, value: Any): Any = js.native
     
-    def _nEveryRow(data: js.Any, n: Double): js.Array[js.Array[js.Any]] = js.native
+    def _nEveryRow(data: Any, n: Double): js.Array[js.Array[Any]] = js.native
     
-    def _renderImage(item: js.Any): Element = js.native
+    def _renderImage(item: Any): Element = js.native
     
     def _selectImage(image: Uri): Unit = js.native
     
     var after: js.UndefOr[String] = js.native
     
-    def onFetch(_underscore: Double, startFetch: js.Any, abortFetch: js.Function0[Unit]): js.Promise[Unit] = js.native
-    def onFetch(_underscore: Unit, startFetch: js.Any, abortFetch: js.Function0[Unit]): js.Promise[Unit] = js.native
+    def onFetch(_underscore: Double, startFetch: Any, abortFetch: js.Function0[Unit]): js.Promise[Unit] = js.native
+    def onFetch(_underscore: Unit, startFetch: Any, abortFetch: js.Function0[Unit]): js.Promise[Unit] = js.native
   }
   
   trait CameraRollPickerProps
@@ -101,7 +101,7 @@ object cameraRollPickerMod {
     
     var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var callback: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var containerWidth: js.UndefOr[Double] = js.undefined
     
@@ -113,9 +113,9 @@ object cameraRollPickerMod {
     
     var selectSingleItem: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selected: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var selectedMarker: js.UndefOr[Element] = js.undefined
+    var selectedMarker: js.UndefOr[ReactElement] = js.undefined
   }
   object CameraRollPickerProps {
     
@@ -130,7 +130,7 @@ object cameraRollPickerMod {
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      inline def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* repeated */ Any => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
@@ -148,38 +148,38 @@ object cameraRollPickerMod {
       
       inline def setSelectSingleItemUndefined: Self = StObject.set(x, "selectSingleItem", js.undefined)
       
-      inline def setSelected(value: js.Array[js.Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: js.Array[Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      inline def setSelectedMarker(value: Element): Self = StObject.set(x, "selectedMarker", value.asInstanceOf[js.Any])
+      inline def setSelectedMarker(value: ReactElement): Self = StObject.set(x, "selectedMarker", value.asInstanceOf[js.Any])
       
       inline def setSelectedMarkerUndefined: Self = StObject.set(x, "selectedMarker", js.undefined)
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      inline def setSelectedVarargs(value: js.Any*): Self = StObject.set(x, "selected", js.Array(value :_*))
+      inline def setSelectedVarargs(value: Any*): Self = StObject.set(x, "selected", js.Array(value*))
     }
   }
   
   trait CameraRollPickerState extends StObject {
     
-    var images: js.Array[js.Any]
+    var images: js.Array[Any]
     
-    var selected: js.Any
+    var selected: Any
   }
   object CameraRollPickerState {
     
-    inline def apply(images: js.Array[js.Any], selected: js.Any): CameraRollPickerState = {
+    inline def apply(images: js.Array[Any], selected: Any): CameraRollPickerState = {
       val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[CameraRollPickerState]
     }
     
     extension [Self <: CameraRollPickerState](x: Self) {
       
-      inline def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      inline def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: Any*): Self = StObject.set(x, "images", js.Array(value*))
       
-      inline def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,7 +1,6 @@
 package typings.reactJss
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.jss.mod.Classes
 import typings.jss.mod.CreateGenerateId_
 import typings.jss.mod.Jss
 import typings.jss.mod.StyleSheetFactoryOptions
@@ -10,11 +9,12 @@ import typings.react.mod.ComponentType
 import typings.react.mod.Context
 import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.reactJss.anon.Children
+import typings.reactJss.anon.Classes
 import typings.reactJss.anon.DisableStylesGeneration
-import typings.reactJss.anon.InnerRef
+import typings.reactJss.anon.`0`
+import typings.reactJss.mod.global.Jss.Theme
 import typings.reactJss.reactJssStrings.classes
 import typings.std.Omit
-import typings.std.Partial
 import typings.std.StyleSheet
 import typings.theming.mod.ThemeProviderFactory
 import typings.theming.mod.Theming
@@ -30,27 +30,36 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[ClassNames /* <: String | Double | js.Symbol */, S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */](styles: S): js.Function1[
-    /* comp */ js.Any, 
-    ComponentType[
-      LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
-    ]
+  inline def default[ClassNames /* <: String | Double | js.Symbol */, Props, Theme](styles: js.Function1[/* theme */ Theme, Styles[ClassNames, Props, Unit]]): js.Function1[
+    /* comp */ Any, 
+    ComponentType[LibraryManagedAttributes[Any, (Omit[GetProps[Any], classes]) & Classes]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* comp */ js.Any, 
-    ComponentType[
-      LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
-    ]
+    /* comp */ Any, 
+    ComponentType[LibraryManagedAttributes[Any, (Omit[GetProps[Any], classes]) & Classes]]
   ]]
-  inline def default[ClassNames /* <: String | Double | js.Symbol */, S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */](styles: S, options: WithStylesOptions): js.Function1[
-    /* comp */ js.Any, 
-    ComponentType[
-      LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
-    ]
+  inline def default[ClassNames /* <: String | Double | js.Symbol */, Props, Theme](
+    styles: js.Function1[/* theme */ Theme, Styles[ClassNames, Props, Unit]],
+    options: WithStylesOptions
+  ): js.Function1[
+    /* comp */ Any, 
+    ComponentType[LibraryManagedAttributes[Any, (Omit[GetProps[Any], classes]) & Classes]]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* comp */ js.Any, 
-    ComponentType[
-      LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
-    ]
+    /* comp */ Any, 
+    ComponentType[LibraryManagedAttributes[Any, (Omit[GetProps[Any], classes]) & Classes]]
+  ]]
+  inline def default[ClassNames /* <: String | Double | js.Symbol */, Props, Theme](styles: Styles[ClassNames, Props, Theme]): js.Function1[
+    /* comp */ Any, 
+    ComponentType[LibraryManagedAttributes[Any, (Omit[GetProps[Any], classes]) & Classes]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* comp */ Any, 
+    ComponentType[LibraryManagedAttributes[Any, (Omit[GetProps[Any], classes]) & Classes]]
+  ]]
+  inline def default[ClassNames /* <: String | Double | js.Symbol */, Props, Theme](styles: Styles[ClassNames, Props, Theme], options: WithStylesOptions): js.Function1[
+    /* comp */ Any, 
+    ComponentType[LibraryManagedAttributes[Any, (Omit[GetProps[Any], classes]) & Classes]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* comp */ Any, 
+    ComponentType[LibraryManagedAttributes[Any, (Omit[GetProps[Any], classes]) & Classes]]
   ]]
   
   @JSImport("react-jss", "JssContext")
@@ -63,7 +72,7 @@ object mod {
   
   @JSImport("react-jss", "SheetsRegistry")
   @js.native
-  class SheetsRegistry ()
+  open class SheetsRegistry ()
     extends typings.jss.mod.SheetsRegistry
   
   @JSImport("react-jss", "ThemeProvider")
@@ -76,10 +85,13 @@ object mod {
   
   inline def createTheming[Theme](context: Context[Theme]): Theming[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheming")(context.asInstanceOf[js.Any]).asInstanceOf[Theming[Theme]]
   
-  inline def createUseStyles[Theme, C /* <: String */](styles: js.Function1[/* theme */ Theme, Styles[C]]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
-  inline def createUseStyles[Theme, C /* <: String */](styles: js.Function1[/* theme */ Theme, Styles[C]], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
-  inline def createUseStyles[Theme, C /* <: String */](styles: Styles[C]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
-  inline def createUseStyles[Theme, C /* <: String */](styles: Styles[C], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
+  inline def createUseStyles[C /* <: String */, Props, Theme](styles: js.Function1[/* theme */ Theme, Styles[C, Props, Unit]]): js.Function1[/* data */ js.UndefOr[Props & `0`[Theme]], typings.jss.mod.Classes[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.UndefOr[Props & `0`[Theme]], typings.jss.mod.Classes[C]]]
+  inline def createUseStyles[C /* <: String */, Props, Theme](
+    styles: js.Function1[/* theme */ Theme, Styles[C, Props, Unit]],
+    options: CreateUseStylesOptions[Theme]
+  ): js.Function1[/* data */ js.UndefOr[Props & `0`[Theme]], typings.jss.mod.Classes[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ js.UndefOr[Props & `0`[Theme]], typings.jss.mod.Classes[C]]]
+  inline def createUseStyles[C /* <: String */, Props, Theme](styles: Styles[C, Props, Theme]): js.Function1[/* data */ js.UndefOr[Props & `0`[Theme]], typings.jss.mod.Classes[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.UndefOr[Props & `0`[Theme]], typings.jss.mod.Classes[C]]]
+  inline def createUseStyles[C /* <: String */, Props, Theme](styles: Styles[C, Props, Theme], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[Props & `0`[Theme]], typings.jss.mod.Classes[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ js.UndefOr[Props & `0`[Theme]], typings.jss.mod.Classes[C]]]
   
   @JSImport("react-jss", "jss")
   @js.native
@@ -114,6 +126,8 @@ object mod {
     }
   }
   
+  type ClassesForStyles[S /* <: (Styles[Any, Any, Any]) | (js.Function1[/* theme */ Any, Styles[Any, Any, Unit]]) */] = typings.jss.mod.Classes[/* keyof S */ String]
+  
   trait CreateUseStylesOptions[Theme]
     extends StObject
        with BaseOptions[Theme] {
@@ -135,16 +149,16 @@ object mod {
     }
   }
   
-  trait DefaultTheme extends StObject
+  type DefaultTheme = Theme
   
-  type GetProps[C] = js.Any
+  type GetProps[C] = Any
   
   type Managers = NumberDictionary[StyleSheet]
   
   /**
     * @deprecated Please use `WithStylesProps` instead
     */
-  type WithStyles[S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */] = WithStylesProps[S]
+  type WithStyles[S /* <: (Styles[Any, Any, Any]) | (js.Function1[/* theme */ Any, Styles[Any, Any, Unit]]) */] = WithStylesProps[S]
   
   trait WithStylesOptions
     extends StObject
@@ -173,20 +187,28 @@ object mod {
     }
   }
   
-  trait WithStylesProps[S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */] extends StObject {
+  trait WithStylesProps[S /* <: (Styles[Any, Any, Any]) | (js.Function1[/* theme */ Any, Styles[Any, Any, Unit]]) */] extends StObject {
     
-    var classes: Classes[/* keyof S */ String]
+    var classes: ClassesForStyles[S]
   }
   object WithStylesProps {
     
-    inline def apply[S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */](classes: Classes[/* keyof S */ String]): WithStylesProps[S] = {
+    inline def apply[S /* <: (Styles[Any, Any, Any]) | (js.Function1[/* theme */ Any, Styles[Any, Any, Unit]]) */](classes: ClassesForStyles[S]): WithStylesProps[S] = {
       val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithStylesProps[S]]
     }
     
-    extension [Self <: WithStylesProps[?], S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */](x: Self & WithStylesProps[S]) {
+    extension [Self <: WithStylesProps[?], S /* <: (Styles[Any, Any, Any]) | (js.Function1[/* theme */ Any, Styles[Any, Any, Unit]]) */](x: Self & WithStylesProps[S]) {
       
-      inline def setClasses(value: Classes[/* keyof S */ String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: ClassesForStyles[S]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  object global {
+    
+    object Jss {
+      
+      trait Theme extends StObject
     }
   }
 }

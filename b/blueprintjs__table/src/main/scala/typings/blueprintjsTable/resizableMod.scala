@@ -6,6 +6,7 @@ import typings.blueprintjsTable.anon.IsResizable
 import typings.blueprintjsTable.anon.Size
 import typings.blueprintjsTable.resizeHandleMod.ILockableLayout
 import typings.blueprintjsTable.resizeHandleMod.Orientation
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +15,10 @@ object resizableMod {
   
   @JSImport("@blueprintjs/table/lib/esm/interactions/resizable", "Resizable")
   @js.native
-  class Resizable protected ()
+  open class Resizable protected ()
     extends AbstractPureComponent2[IResizableProps, IResizeableState, js.Object] {
     def this(props: IResizableProps) = this()
-    def this(props: IResizableProps, context: js.Any) = this()
+    def this(props: IResizableProps, context: Any) = this()
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MResizable(prevProps: IResizableProps): Unit = js.native
@@ -26,15 +27,15 @@ object resizableMod {
       * Returns the CSS style to apply to the child element given the state's
       * size value.
       */
-    /* private */ var getStyle: js.Any = js.native
+    /* private */ var getStyle: Any = js.native
     
-    /* private */ var offsetSize: js.Any = js.native
+    /* private */ var offsetSize: Any = js.native
     
-    /* private */ var onResizeEnd: js.Any = js.native
+    /* private */ var onResizeEnd: Any = js.native
     
-    /* private */ var onResizeMove: js.Any = js.native
+    /* private */ var onResizeMove: Any = js.native
     
-    /* private */ var renderResizeHandle: js.Any = js.native
+    /* private */ var renderResizeHandle: Any = js.native
   }
   /* static members */
   object Resizable {
@@ -48,7 +49,8 @@ object resizableMod {
     def defaultProps: IsResizable = js.native
     inline def defaultProps_=(x: IsResizable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(hasSize: IResizableProps, prevState: IResizeableState): Size = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSize.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[Size]
+    inline def getDerivedStateFromProps(hasSize: IResizableProps): Size | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSize.asInstanceOf[js.Any]).asInstanceOf[Size | Null]
+    inline def getDerivedStateFromProps(hasSize: IResizableProps, prevState: IResizeableState): Size | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSize.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[Size | Null]
   }
   
   type IIndexedResizeCallback = js.Function2[/* index */ Double, /* size */ Double, Unit]
@@ -59,8 +61,12 @@ object resizableMod {
        with IProps
        with ILockableLayout {
     
+    /** Element to resize. */
+    var children: ReactNode = js.native
+    
     /**
       * Enables/disables the resize interaction for the column.
+      *
       * @default true
       */
     var isResizable: js.UndefOr[Boolean] = js.native
@@ -112,17 +118,17 @@ object resizableMod {
     /**
       * The dimensional size, respecting minimum and maximum constraints.
       */
-    var size: js.UndefOr[Double] = js.undefined
+    var size: Double
     
     /**
       * The dimensional size, ignoring minimum and maximum constraints.
       */
-    var unclampedSize: js.UndefOr[Double] = js.undefined
+    var unclampedSize: Double
   }
   object IResizeableState {
     
-    inline def apply(): IResizeableState = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(size: Double, unclampedSize: Double): IResizeableState = {
+      val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], unclampedSize = unclampedSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResizeableState]
     }
     
@@ -130,11 +136,9 @@ object resizableMod {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
       inline def setUnclampedSize(value: Double): Self = StObject.set(x, "unclampedSize", value.asInstanceOf[js.Any])
-      
-      inline def setUnclampedSizeUndefined: Self = StObject.set(x, "unclampedSize", js.undefined)
     }
   }
+  
+  type IndexedResizeCallback = IIndexedResizeCallback
 }

@@ -15,6 +15,9 @@ trait EvaluationMetrics extends StObject {
   /** Populated for clustering models. */
   var clusteringMetrics: js.UndefOr[ClusteringMetrics] = js.undefined
   
+  /** Evaluation metrics when the model is a dimensionality reduction model, which currently includes PCA. */
+  var dimensionalityReductionMetrics: js.UndefOr[DimensionalityReductionMetrics] = js.undefined
+  
   /** Populated for multi-class classification/classifier models. */
   var multiClassClassificationMetrics: js.UndefOr[MultiClassClassificationMetrics] = js.undefined
   
@@ -44,6 +47,10 @@ object EvaluationMetrics {
     inline def setClusteringMetrics(value: ClusteringMetrics): Self = StObject.set(x, "clusteringMetrics", value.asInstanceOf[js.Any])
     
     inline def setClusteringMetricsUndefined: Self = StObject.set(x, "clusteringMetrics", js.undefined)
+    
+    inline def setDimensionalityReductionMetrics(value: DimensionalityReductionMetrics): Self = StObject.set(x, "dimensionalityReductionMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setDimensionalityReductionMetricsUndefined: Self = StObject.set(x, "dimensionalityReductionMetrics", js.undefined)
     
     inline def setMultiClassClassificationMetrics(value: MultiClassClassificationMetrics): Self = StObject.set(x, "multiClassClassificationMetrics", value.asInstanceOf[js.Any])
     

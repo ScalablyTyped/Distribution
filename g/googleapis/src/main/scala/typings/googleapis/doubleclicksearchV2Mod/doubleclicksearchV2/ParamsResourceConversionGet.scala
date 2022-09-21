@@ -1,9 +1,5 @@
 package typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,11 +29,6 @@ trait ParamsResourceConversionGet
   var agencyId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Numeric ID of the campaign.
     */
   var campaignId: js.UndefOr[String] = js.undefined
@@ -48,8 +39,7 @@ trait ParamsResourceConversionGet
   var criterionId: js.UndefOr[String] = js.undefined
   
   /**
-    * Last date (inclusive) on which to retrieve conversions. Format is
-    * yyyymmdd.
+    * Last date (inclusive) on which to retrieve conversions. Format is yyyymmdd.
     */
   var endDate: js.UndefOr[Double] = js.undefined
   
@@ -64,8 +54,7 @@ trait ParamsResourceConversionGet
   var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * First date (inclusive) on which to retrieve conversions. Format is
-    * yyyymmdd.
+    * First date (inclusive) on which to retrieve conversions. Format is yyyymmdd.
     */
   var startDate: js.UndefOr[Double] = js.undefined
   
@@ -98,10 +87,6 @@ object ParamsResourceConversionGet {
     inline def setAgencyId(value: String): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
     
     inline def setAgencyIdUndefined: Self = StObject.set(x, "agencyId", js.undefined)
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     

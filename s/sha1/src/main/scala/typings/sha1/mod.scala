@@ -1,30 +1,22 @@
 package typings.sha1
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.sha1.sha1Booleans.`false`
 import typings.sha1.sha1Booleans.`true`
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-    * js function for hashing messages with SHA1
-    *
-    * @param message - a string or buffer to hash
-    * @param options - an options object
-    * @returns the resultant SHA1 hash of the given message
-    */
-  inline def apply(message: String): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(message: String, options: Sha1AsBytesOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def apply(message: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def apply(message: String, options: Sha1AsBytesOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def apply(message: String, options: Sha1AsStringOptions): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(message: String, options: Sha1Options): String | Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Uint8Array]
-  inline def apply(message: Buffer): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(message: Buffer, options: Sha1AsBytesOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def apply(message: String, options: Sha1Options): String | js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.Uint8Array]
+  inline def apply(message: Buffer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def apply(message: Buffer, options: Sha1AsBytesOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def apply(message: Buffer, options: Sha1AsStringOptions): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(message: Buffer, options: Sha1Options): String | Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Uint8Array]
+  inline def apply(message: Buffer, options: Sha1Options): String | js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.Uint8Array]
   
   @JSImport("sha1", JSImport.Namespace)
   @js.native

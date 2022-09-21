@@ -59,7 +59,7 @@ object mod extends Shortcut {
   - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @js.native
   trait Logger extends EventEmitter {
     
-    def apply(): js.Any = js.native
+    def apply(): Any = js.native
     
     def addLevel(level: String, n: Double): Unit = js.native
     def addLevel(level: String, n: Double, style: Unit, disp: String): Unit = js.native
@@ -78,25 +78,25 @@ object mod extends Shortcut {
     
     def enableUnicode(): Unit = js.native
     
-    def error(prefix: String, message: String, args: js.Any*): Unit = js.native
+    def error(prefix: String, message: String, args: Any*): Unit = js.native
     
     var heading: String = js.native
     
     var headingStyle: StyleObject = js.native
     
-    def http(prefix: String, message: String, args: js.Any*): Unit = js.native
+    def http(prefix: String, message: String, args: Any*): Unit = js.native
     
-    def info(prefix: String, message: String, args: js.Any*): Unit = js.native
+    def info(prefix: String, message: String, args: Any*): Unit = js.native
     
     var level: String = js.native
     
-    def log(level: String, prefix: String, message: String, args: js.Any*): Unit = js.native
+    def log(level: String, prefix: String, message: String, args: Any*): Unit = js.native
     // Defaults to process.stderr
-    def log(level: LogLevels, prefix: String, message: String, args: js.Any*): Unit = js.native
+    def log(level: LogLevels, prefix: String, message: String, args: Any*): Unit = js.native
     
     var maxRecordSize: Double = js.native
     
-    def notice(prefix: String, message: String, args: js.Any*): Unit = js.native
+    def notice(prefix: String, message: String, args: Any*): Unit = js.native
     
     def pause(): Unit = js.native
     
@@ -108,17 +108,17 @@ object mod extends Shortcut {
     
     def resume(): Unit = js.native
     
-    def silent(prefix: String, message: String, args: js.Any*): Unit = js.native
+    def silent(prefix: String, message: String, args: Any*): Unit = js.native
     
-    def silly(prefix: String, message: String, args: js.Any*): Unit = js.native
+    def silly(prefix: String, message: String, args: Any*): Unit = js.native
     
-    var stream: js.Any = js.native
+    var stream: Any = js.native
     
-    def timing(prefix: String, message: String, args: js.Any*): Unit = js.native
+    def timing(prefix: String, message: String, args: Any*): Unit = js.native
     
-    def verbose(prefix: String, message: String, args: js.Any*): Unit = js.native
+    def verbose(prefix: String, message: String, args: Any*): Unit = js.native
     
-    def warn(prefix: String, message: String, args: js.Any*): Unit = js.native
+    def warn(prefix: String, message: String, args: Any*): Unit = js.native
   }
   
   trait MessageObject extends StObject {

@@ -61,7 +61,7 @@ object Appsactivity {
         
         inline def setSingleEventsUndefined: Self = StObject.set(x, "singleEvents", js.undefined)
         
-        inline def setSingleEventsVarargs(value: Event*): Self = StObject.set(x, "singleEvents", js.Array(value :_*))
+        inline def setSingleEventsVarargs(value: Event*): Self = StObject.set(x, "singleEvents", js.Array(value*))
       }
     }
     
@@ -98,7 +98,7 @@ object Appsactivity {
         
         inline def setAdditionalEventTypesUndefined: Self = StObject.set(x, "additionalEventTypes", js.undefined)
         
-        inline def setAdditionalEventTypesVarargs(value: String*): Self = StObject.set(x, "additionalEventTypes", js.Array(value :_*))
+        inline def setAdditionalEventTypesVarargs(value: String*): Self = StObject.set(x, "additionalEventTypes", js.Array(value*))
         
         inline def setEventTimeMillis(value: String): Self = StObject.set(x, "eventTimeMillis", value.asInstanceOf[js.Any])
         
@@ -116,7 +116,7 @@ object Appsactivity {
         
         inline def setPermissionChangesUndefined: Self = StObject.set(x, "permissionChanges", js.undefined)
         
-        inline def setPermissionChangesVarargs(value: PermissionChange*): Self = StObject.set(x, "permissionChanges", js.Array(value :_*))
+        inline def setPermissionChangesVarargs(value: PermissionChange*): Self = StObject.set(x, "permissionChanges", js.Array(value*))
         
         inline def setPrimaryEventType(value: String): Self = StObject.set(x, "primaryEventType", value.asInstanceOf[js.Any])
         
@@ -155,7 +155,7 @@ object Appsactivity {
         
         inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
         
-        inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+        inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value*))
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -182,13 +182,13 @@ object Appsactivity {
         
         inline def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
         
-        inline def setAddedParentsVarargs(value: Parent*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
+        inline def setAddedParentsVarargs(value: Parent*): Self = StObject.set(x, "addedParents", js.Array(value*))
         
         inline def setRemovedParents(value: js.Array[Parent]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
         
         inline def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
         
-        inline def setRemovedParentsVarargs(value: Parent*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
+        inline def setRemovedParentsVarargs(value: Parent*): Self = StObject.set(x, "removedParents", js.Array(value*))
       }
     }
     
@@ -291,13 +291,13 @@ object Appsactivity {
         
         inline def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
         
-        inline def setAddedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
+        inline def setAddedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "addedPermissions", js.Array(value*))
         
         inline def setRemovedPermissions(value: js.Array[Permission]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
         
         inline def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
         
-        inline def setRemovedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
+        inline def setRemovedPermissionsVarargs(value: Permission*): Self = StObject.set(x, "removedPermissions", js.Array(value*))
       }
     }
     

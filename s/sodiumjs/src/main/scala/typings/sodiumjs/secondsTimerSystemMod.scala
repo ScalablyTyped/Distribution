@@ -9,5 +9,5 @@ object secondsTimerSystemMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/SecondsTimerSystem", "SecondsTimerSystem")
   @js.native
-  class SecondsTimerSystem () extends TimerSystem
+  open class SecondsTimerSystem () extends TimerSystem
 }

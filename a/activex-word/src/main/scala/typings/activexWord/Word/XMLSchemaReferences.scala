@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XMLSchemaReferences extends StObject {
   
   /** @param boolean [InstallForAllUsers=false] */
-  def Add(NamespaceURI: js.Any, Alias: js.Any, FileName: js.Any): XMLSchemaReference = js.native
-  def Add(NamespaceURI: js.Any, Alias: js.Any, FileName: js.Any, InstallForAllUsers: Boolean): XMLSchemaReference = js.native
+  def Add(NamespaceURI: Any, Alias: Any, FileName: Any): XMLSchemaReference = js.native
+  def Add(NamespaceURI: Any, Alias: Any, FileName: Any, InstallForAllUsers: Boolean): XMLSchemaReference = js.native
   
   var AllowSaveAsXMLWithoutValidation: Boolean = js.native
   
@@ -25,9 +25,9 @@ trait XMLSchemaReferences extends StObject {
   
   var IgnoreMixedContent: Boolean = js.native
   
-  def Item(Index: js.Any): XMLSchemaReference = js.native
+  def Item(Index: Any): XMLSchemaReference = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var ShowPlaceholderText: Boolean = js.native
   

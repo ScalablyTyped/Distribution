@@ -47,6 +47,26 @@ trait Observation extends StObject {
   var CodeDeployState: js.UndefOr[typings.awsSdk.applicationinsightsMod.CodeDeployState] = js.undefined
   
   /**
+    *  The cause of an EBS CloudWatch event. 
+    */
+  var EbsCause: js.UndefOr[typings.awsSdk.applicationinsightsMod.EbsCause] = js.undefined
+  
+  /**
+    *  The type of EBS CloudWatch event, such as createVolume, deleteVolume or attachVolume. 
+    */
+  var EbsEvent: js.UndefOr[typings.awsSdk.applicationinsightsMod.EbsEvent] = js.undefined
+  
+  /**
+    *  The request ID of an EBS CloudWatch event. 
+    */
+  var EbsRequestId: js.UndefOr[typings.awsSdk.applicationinsightsMod.EbsRequestId] = js.undefined
+  
+  /**
+    *  The result of an EBS CloudWatch event, such as failed or succeeded. 
+    */
+  var EbsResult: js.UndefOr[typings.awsSdk.applicationinsightsMod.EbsResult] = js.undefined
+  
+  /**
     *  The state of the instance, such as STOPPING or TERMINATING. 
     */
   var Ec2State: js.UndefOr[typings.awsSdk.applicationinsightsMod.Ec2State] = js.undefined
@@ -54,7 +74,7 @@ trait Observation extends StObject {
   /**
     * The time when the observation ended, in epoch seconds.
     */
-  var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the AWS Health Event-based observation.
@@ -89,7 +109,7 @@ trait Observation extends StObject {
   /**
     * The timestamp in the CloudWatch Logs that specifies when the matched line occurred.
     */
-  var LineTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.LineTime] = js.undefined
+  var LineTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The log filter of the observation.
@@ -117,6 +137,21 @@ trait Observation extends StObject {
   var MetricNamespace: js.UndefOr[typings.awsSdk.applicationinsightsMod.MetricNamespace] = js.undefined
   
   /**
+    *  The category of an RDS event. 
+    */
+  var RdsEventCategories: js.UndefOr[typings.awsSdk.applicationinsightsMod.RdsEventCategories] = js.undefined
+  
+  /**
+    *  The message of an RDS event. 
+    */
+  var RdsEventMessage: js.UndefOr[typings.awsSdk.applicationinsightsMod.RdsEventMessage] = js.undefined
+  
+  /**
+    *  The name of the S3 CloudWatch Event-based observation. 
+    */
+  var S3EventName: js.UndefOr[typings.awsSdk.applicationinsightsMod.S3EventName] = js.undefined
+  
+  /**
     * The source resource ARN of the observation.
     */
   var SourceARN: js.UndefOr[typings.awsSdk.applicationinsightsMod.SourceARN] = js.undefined
@@ -129,7 +164,27 @@ trait Observation extends StObject {
   /**
     * The time when the observation was first detected, in epoch seconds.
     */
-  var StartTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.StartTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    *  The Amazon Resource Name (ARN) of the step function-based observation. 
+    */
+  var StatesArn: js.UndefOr[typings.awsSdk.applicationinsightsMod.StatesArn] = js.undefined
+  
+  /**
+    *  The Amazon Resource Name (ARN) of the step function execution-based observation. 
+    */
+  var StatesExecutionArn: js.UndefOr[typings.awsSdk.applicationinsightsMod.StatesExecutionArn] = js.undefined
+  
+  /**
+    *  The input to the step function-based observation. 
+    */
+  var StatesInput: js.UndefOr[typings.awsSdk.applicationinsightsMod.StatesInput] = js.undefined
+  
+  /**
+    *  The status of the step function-related observation. 
+    */
+  var StatesStatus: js.UndefOr[typings.awsSdk.applicationinsightsMod.StatesStatus] = js.undefined
   
   /**
     * The unit of the source observation metric.
@@ -217,11 +272,27 @@ object Observation {
     
     inline def setCodeDeployStateUndefined: Self = StObject.set(x, "CodeDeployState", js.undefined)
     
+    inline def setEbsCause(value: EbsCause): Self = StObject.set(x, "EbsCause", value.asInstanceOf[js.Any])
+    
+    inline def setEbsCauseUndefined: Self = StObject.set(x, "EbsCause", js.undefined)
+    
+    inline def setEbsEvent(value: EbsEvent): Self = StObject.set(x, "EbsEvent", value.asInstanceOf[js.Any])
+    
+    inline def setEbsEventUndefined: Self = StObject.set(x, "EbsEvent", js.undefined)
+    
+    inline def setEbsRequestId(value: EbsRequestId): Self = StObject.set(x, "EbsRequestId", value.asInstanceOf[js.Any])
+    
+    inline def setEbsRequestIdUndefined: Self = StObject.set(x, "EbsRequestId", js.undefined)
+    
+    inline def setEbsResult(value: EbsResult): Self = StObject.set(x, "EbsResult", value.asInstanceOf[js.Any])
+    
+    inline def setEbsResultUndefined: Self = StObject.set(x, "EbsResult", js.undefined)
+    
     inline def setEc2State(value: Ec2State): Self = StObject.set(x, "Ec2State", value.asInstanceOf[js.Any])
     
     inline def setEc2StateUndefined: Self = StObject.set(x, "Ec2State", js.undefined)
     
-    inline def setEndTime(value: EndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -249,7 +320,7 @@ object Observation {
     
     inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    inline def setLineTime(value: LineTime): Self = StObject.set(x, "LineTime", value.asInstanceOf[js.Any])
+    inline def setLineTime(value: js.Date): Self = StObject.set(x, "LineTime", value.asInstanceOf[js.Any])
     
     inline def setLineTimeUndefined: Self = StObject.set(x, "LineTime", js.undefined)
     
@@ -273,6 +344,18 @@ object Observation {
     
     inline def setMetricNamespaceUndefined: Self = StObject.set(x, "MetricNamespace", js.undefined)
     
+    inline def setRdsEventCategories(value: RdsEventCategories): Self = StObject.set(x, "RdsEventCategories", value.asInstanceOf[js.Any])
+    
+    inline def setRdsEventCategoriesUndefined: Self = StObject.set(x, "RdsEventCategories", js.undefined)
+    
+    inline def setRdsEventMessage(value: RdsEventMessage): Self = StObject.set(x, "RdsEventMessage", value.asInstanceOf[js.Any])
+    
+    inline def setRdsEventMessageUndefined: Self = StObject.set(x, "RdsEventMessage", js.undefined)
+    
+    inline def setS3EventName(value: S3EventName): Self = StObject.set(x, "S3EventName", value.asInstanceOf[js.Any])
+    
+    inline def setS3EventNameUndefined: Self = StObject.set(x, "S3EventName", js.undefined)
+    
     inline def setSourceARN(value: SourceARN): Self = StObject.set(x, "SourceARN", value.asInstanceOf[js.Any])
     
     inline def setSourceARNUndefined: Self = StObject.set(x, "SourceARN", js.undefined)
@@ -281,9 +364,25 @@ object Observation {
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    
+    inline def setStatesArn(value: StatesArn): Self = StObject.set(x, "StatesArn", value.asInstanceOf[js.Any])
+    
+    inline def setStatesArnUndefined: Self = StObject.set(x, "StatesArn", js.undefined)
+    
+    inline def setStatesExecutionArn(value: StatesExecutionArn): Self = StObject.set(x, "StatesExecutionArn", value.asInstanceOf[js.Any])
+    
+    inline def setStatesExecutionArnUndefined: Self = StObject.set(x, "StatesExecutionArn", js.undefined)
+    
+    inline def setStatesInput(value: StatesInput): Self = StObject.set(x, "StatesInput", value.asInstanceOf[js.Any])
+    
+    inline def setStatesInputUndefined: Self = StObject.set(x, "StatesInput", js.undefined)
+    
+    inline def setStatesStatus(value: StatesStatus): Self = StObject.set(x, "StatesStatus", value.asInstanceOf[js.Any])
+    
+    inline def setStatesStatusUndefined: Self = StObject.set(x, "StatesStatus", js.undefined)
     
     inline def setUnit(value: Unit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     

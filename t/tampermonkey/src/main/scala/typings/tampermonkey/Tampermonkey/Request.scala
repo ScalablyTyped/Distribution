@@ -21,6 +21,9 @@ trait Request[TContext] extends StObject {
   /** Property which will be added to the response object */
   var context: js.UndefOr[TContext] = js.undefined
   
+  /** A cookie to be patched into the sent cookie set */
+  var cookie: js.UndefOr[String] = js.undefined
+  
   /** String to send via a POST request */
   var data: js.UndefOr[String] = js.undefined
   
@@ -38,6 +41,9 @@ trait Request[TContext] extends StObject {
   var headers: js.UndefOr[RequestHeaders] = js.undefined
   
   var method: js.UndefOr[GET | HEAD | POST] = js.undefined
+  
+  /** Don't cache the resource */
+  var nocache: js.UndefOr[Boolean] = js.undefined
   
   // Events
   /** Callback to be executed if the request was aborted */
@@ -68,6 +74,9 @@ trait Request[TContext] extends StObject {
   
   var responseType: js.UndefOr[arraybuffer | blob | json] = js.undefined
   
+  /** Revalidate maybe cached content */
+  var revalidate: js.UndefOr[Boolean] = js.undefined
+  
   /** Timeout in ms */
   var timeout: js.UndefOr[Double] = js.undefined
   
@@ -75,7 +84,7 @@ trait Request[TContext] extends StObject {
   var url: String
   
   /** Username for authentication */
-  var username: js.UndefOr[String] = js.undefined
+  var user: js.UndefOr[String] = js.undefined
 }
 object Request {
   
@@ -98,6 +107,10 @@ object Request {
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
+    inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    
+    inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+    
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -113,6 +126,10 @@ object Request {
     inline def setMethod(value: GET | HEAD | POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setNocache(value: Boolean): Self = StObject.set(x, "nocache", value.asInstanceOf[js.Any])
+    
+    inline def setNocacheUndefined: Self = StObject.set(x, "nocache", js.undefined)
     
     inline def setOnabort(value: () => Unit): Self = StObject.set(x, "onabort", js.Any.fromFunction0(value))
     
@@ -154,14 +171,18 @@ object Request {
     
     inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
+    inline def setRevalidate(value: Boolean): Self = StObject.set(x, "revalidate", value.asInstanceOf[js.Any])
+    
+    inline def setRevalidateUndefined: Self = StObject.set(x, "revalidate", js.undefined)
+    
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

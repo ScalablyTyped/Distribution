@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-sources
 
-Typings are for version 2.0
+Typings are for version 3.2
 
 ## Library description:
 Source code handling classes for webpack
@@ -11,9 +11,9 @@ Source code handling classes for webpack
 | Full name          | webpack-sources |
 | Keywords           | webpack, source-map |
 | # releases         | 21 |
-| # dependents       | 888 |
-| # downloads        | 489223803 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.03203467E8 |
+| # stars            | 228.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack/webpack-sources#readme)

@@ -30,118 +30,118 @@ object mod {
   
   @JSImport("xmlcreate", "XmlAttribute")
   @js.native
-  class XmlAttribute[Parent] protected () extends default[Parent] {
+  open class XmlAttribute[Parent] protected () extends default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlAttributeOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlAttributeText")
   @js.native
-  class XmlAttributeText[Parent] protected ()
+  open class XmlAttributeText[Parent] protected ()
     extends typings.xmlcreate.xmlAttributeTextMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlAttributeTextOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlCdata")
   @js.native
-  class XmlCdata[Parent] protected ()
+  open class XmlCdata[Parent] protected ()
     extends typings.xmlcreate.xmlCdataMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlCdataOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlCharData")
   @js.native
-  class XmlCharData[Parent] protected ()
+  open class XmlCharData[Parent] protected ()
     extends typings.xmlcreate.xmlCharDataMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlCharDataOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlCharRef")
   @js.native
-  class XmlCharRef[Parent] protected ()
+  open class XmlCharRef[Parent] protected ()
     extends typings.xmlcreate.xmlCharRefMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlCharRefOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlComment")
   @js.native
-  class XmlComment[Parent] protected ()
+  open class XmlComment[Parent] protected ()
     extends typings.xmlcreate.xmlCommentMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlCommentOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlDecl")
   @js.native
-  class XmlDecl[Parent] protected ()
+  open class XmlDecl[Parent] protected ()
     extends typings.xmlcreate.xmlDeclMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDeclOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlDocument")
   @js.native
-  class XmlDocument protected ()
+  open class XmlDocument protected ()
     extends typings.xmlcreate.xmlDocumentMod.default {
     def this(options: IXmlDocumentOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlDtd")
   @js.native
-  class XmlDtd[Parent] protected ()
+  open class XmlDtd[Parent] protected ()
     extends typings.xmlcreate.xmlDtdMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlDtdAttlist")
   @js.native
-  class XmlDtdAttlist[Parent] protected ()
+  open class XmlDtdAttlist[Parent] protected ()
     extends typings.xmlcreate.xmlDtdAttlistMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdAttlistOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlDtdElement")
   @js.native
-  class XmlDtdElement[Parent] protected ()
+  open class XmlDtdElement[Parent] protected ()
     extends typings.xmlcreate.xmlDtdElementMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdElementOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlDtdEntity")
   @js.native
-  class XmlDtdEntity[Parent] protected ()
+  open class XmlDtdEntity[Parent] protected ()
     extends typings.xmlcreate.xmlDtdEntityMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdEntityOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlDtdNotation")
   @js.native
-  class XmlDtdNotation[Parent] protected ()
+  open class XmlDtdNotation[Parent] protected ()
     extends typings.xmlcreate.xmlDtdNotationMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdNotationOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlDtdParamEntityRef")
   @js.native
-  class XmlDtdParamEntityRef[Parent] protected ()
+  open class XmlDtdParamEntityRef[Parent] protected ()
     extends typings.xmlcreate.xmlDtdParamEntityRefMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdParamEntityRefOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlElement")
   @js.native
-  class XmlElement[Parent] protected ()
+  open class XmlElement[Parent] protected ()
     extends typings.xmlcreate.xmlElementMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlElementOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlEntityRef")
   @js.native
-  class XmlEntityRef[Parent] protected ()
+  open class XmlEntityRef[Parent] protected ()
     extends typings.xmlcreate.xmlEntityRefMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlEntityRefOptions) = this()
   }
   
   @JSImport("xmlcreate", "XmlProcInst")
   @js.native
-  class XmlProcInst[Parent] protected ()
+  open class XmlProcInst[Parent] protected ()
     extends typings.xmlcreate.xmlProcInstMod.default[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlProcInstOptions) = this()
   }

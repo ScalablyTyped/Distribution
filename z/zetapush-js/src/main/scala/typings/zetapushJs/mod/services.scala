@@ -8,27 +8,27 @@ object services {
   
   @JSImport("zetapush-js", "services.Macro")
   @js.native
-  class Macro protected ()
+  open class Macro protected ()
     extends StObject
        with Service {
     def this($publish: AsyncMacroServicePublisher) = this()
     
     @JSName("$publish")
-    def $publish(method: String): js.Promise[js.Any] = js.native
+    def $publish(method: String): js.Promise[Any] = js.native
     @JSName("$publish")
-    def $publish(method: String, parameters: Unit, hardFail: Boolean): js.Promise[js.Any] = js.native
+    def $publish(method: String, parameters: Unit, hardFail: Boolean): js.Promise[Any] = js.native
     @JSName("$publish")
-    def $publish(method: String, parameters: Unit, hardFail: Boolean, debug: Double): js.Promise[js.Any] = js.native
+    def $publish(method: String, parameters: Unit, hardFail: Boolean, debug: Double): js.Promise[Any] = js.native
     @JSName("$publish")
-    def $publish(method: String, parameters: Unit, hardFail: Unit, debug: Double): js.Promise[js.Any] = js.native
+    def $publish(method: String, parameters: Unit, hardFail: Unit, debug: Double): js.Promise[Any] = js.native
     @JSName("$publish")
-    def $publish(method: String, parameters: PublishParameters): js.Promise[js.Any] = js.native
+    def $publish(method: String, parameters: PublishParameters): js.Promise[Any] = js.native
     @JSName("$publish")
-    def $publish(method: String, parameters: PublishParameters, hardFail: Boolean): js.Promise[js.Any] = js.native
+    def $publish(method: String, parameters: PublishParameters, hardFail: Boolean): js.Promise[Any] = js.native
     @JSName("$publish")
-    def $publish(method: String, parameters: PublishParameters, hardFail: Boolean, debug: Double): js.Promise[js.Any] = js.native
+    def $publish(method: String, parameters: PublishParameters, hardFail: Boolean, debug: Double): js.Promise[Any] = js.native
     @JSName("$publish")
-    def $publish(method: String, parameters: PublishParameters, hardFail: Unit, debug: Double): js.Promise[js.Any] = js.native
+    def $publish(method: String, parameters: PublishParameters, hardFail: Unit, debug: Double): js.Promise[Any] = js.native
     @JSName("$publish")
     var $publish_Original: AsyncMacroServicePublisher = js.native
     

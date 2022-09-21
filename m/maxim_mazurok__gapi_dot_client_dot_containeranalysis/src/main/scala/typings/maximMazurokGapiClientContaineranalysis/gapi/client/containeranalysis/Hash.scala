@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Hash extends StObject {
   
-  /** Required. The type of hash that was performed. */
+  /** Required. The type of hash that was performed, e.g. "SHA-256". */
   var `type`: js.UndefOr[String] = js.undefined
   
   /** Required. The hash value. */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetUserSettingsRequest extends StObject {
   
   /**
-    * The access token for the set user settings request.
+    * A valid access token that Amazon Cognito issued to the user whose user settings you want to configure.
     */
   var AccessToken: TokenModelType
   
@@ -29,6 +29,6 @@ object SetUserSettingsRequest {
     
     inline def setMFAOptions(value: MFAOptionListType): Self = StObject.set(x, "MFAOptions", value.asInstanceOf[js.Any])
     
-    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
+    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value*))
   }
 }

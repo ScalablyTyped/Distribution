@@ -1,7 +1,6 @@
 package typings.wol
 
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object mod {
   inline def wake(mac: String, options: WakeOptions): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("wake")(mac.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   inline def wake(mac: String, options: WakeOptions, callback: WakeCallback): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("wake")(mac.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  type WakeCallback = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[Boolean], Unit]
+  type WakeCallback = js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[Boolean], Unit]
   
   trait WakeOptions extends StObject {
     

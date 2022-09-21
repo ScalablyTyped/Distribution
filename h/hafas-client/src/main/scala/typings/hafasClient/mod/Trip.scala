@@ -27,7 +27,7 @@ trait Trip extends StObject {
   
   var departurePlatform: js.UndefOr[String] = js.undefined
   
-  var destination: Station | Stop
+  var destination: js.UndefOr[Station | Stop | Location] = js.undefined
   
   var direction: js.UndefOr[String] = js.undefined
   
@@ -41,7 +41,7 @@ trait Trip extends StObject {
   
   var operator: js.UndefOr[Double] = js.undefined
   
-  var origin: Station | Stop
+  var origin: js.UndefOr[Station | Stop | Location] = js.undefined
   
   var plannedArrival: js.UndefOr[String] = js.undefined
   
@@ -67,7 +67,7 @@ trait Trip extends StObject {
   
   var reachable: js.UndefOr[Boolean] = js.undefined
   
-  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.undefined
+  var remarks: js.UndefOr[js.Array[Hint | Status | Warning]] = js.undefined
   
   var schedule: js.UndefOr[Double] = js.undefined
   
@@ -79,8 +79,8 @@ trait Trip extends StObject {
 }
 object Trip {
   
-  inline def apply(destination: Station | Stop, id: String, origin: Station | Stop): Trip = {
-    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
+  inline def apply(id: String): Trip = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trip]
   }
   
@@ -90,7 +90,7 @@ object Trip {
     
     inline def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
-    inline def setAlternativesVarargs(value: Alternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: Alternative*): Self = StObject.set(x, "alternatives", js.Array(value*))
     
     inline def setArrival(value: String): Self = StObject.set(x, "arrival", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,9 @@ object Trip {
     
     inline def setDepartureUndefined: Self = StObject.set(x, "departure", js.undefined)
     
-    inline def setDestination(value: Station | Stop): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Station | Stop | Location): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
@@ -148,7 +150,9 @@ object Trip {
     
     inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    inline def setOrigin(value: Station | Stop): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Station | Stop | Location): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     inline def setPlannedArrival(value: String): Self = StObject.set(x, "plannedArrival", value.asInstanceOf[js.Any])
     
@@ -198,11 +202,11 @@ object Trip {
     
     inline def setReachableUndefined: Self = StObject.set(x, "reachable", js.undefined)
     
-    inline def setRemarks(value: js.Array[Hint | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
+    inline def setRemarks(value: js.Array[Hint | Status | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
     inline def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
     
-    inline def setRemarksVarargs(value: (Hint | Warning)*): Self = StObject.set(x, "remarks", js.Array(value :_*))
+    inline def setRemarksVarargs(value: (Hint | Status | Warning)*): Self = StObject.set(x, "remarks", js.Array(value*))
     
     inline def setSchedule(value: Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
@@ -212,7 +216,7 @@ object Trip {
     
     inline def setStopoversUndefined: Self = StObject.set(x, "stopovers", js.undefined)
     
-    inline def setStopoversVarargs(value: StopOver*): Self = StObject.set(x, "stopovers", js.Array(value :_*))
+    inline def setStopoversVarargs(value: StopOver*): Self = StObject.set(x, "stopovers", js.Array(value*))
     
     inline def setTransfer(value: Boolean): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
     

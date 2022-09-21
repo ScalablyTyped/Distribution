@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisJsApi.esri.ReshapeEventInfo
   - typings.arcgisJsApi.esri.RotateEventInfo
   - typings.arcgisJsApi.esri.ScaleEventInfo
+  - typings.arcgisJsApi.esri.SelectionChangeEventInfo
   - typings.arcgisJsApi.esri.VertexAddEventInfo
   - typings.arcgisJsApi.esri.VertexRemoveEventInfo
 */
@@ -78,8 +79,20 @@ object UpdateToolEventInfo {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ScaleEventInfo]
   }
   
-  inline def VertexAddEventInfo(
+  inline def SelectionChangeEventInfo(
     added: js.Array[Graphic],
+    constructor: js.Function,
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    removed: js.Array[Graphic]
+  ): typings.arcgisJsApi.esri.SelectionChangeEventInfo = {
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), removed = removed.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("selection-change")
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.SelectionChangeEventInfo]
+  }
+  
+  inline def VertexAddEventInfo(
+    added: js.Array[Double],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -94,7 +107,7 @@ object UpdateToolEventInfo {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    removed: js.Array[Graphic],
+    removed: js.Array[Double],
     vertices: js.Array[VertexRemoveEventInfoVertices]
   ): typings.arcgisJsApi.esri.VertexRemoveEventInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), removed = removed.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])

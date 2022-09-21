@@ -1,7 +1,7 @@
 
 # Scala.js typings for chart_dot_js
 
-Typings are for version 2.9
+Typings are for version 3.9.1
 
 ## Library description:
 Simple HTML5 charts using the canvas element.
@@ -10,10 +10,10 @@ Simple HTML5 charts using the canvas element.
 | ------------------ | :-------------: |
 | Full name          | chart.js |
 | Keywords           | canvas, charts, data, graphs, html5, responsive |
-| # releases         | 19 |
-| # dependents       | 1179 |
-| # downloads        | 57451629 |
-| # stars            | 60 |
+| # releases         | 45 |
+| # dependents       | 0.0 |
+| # downloads        | 8526906.666666666 |
+| # stars            | 57691.0 |
 
 ## Links
 - [Homepage](https://www.chartjs.org)
@@ -24,7 +24,7 @@ Simple HTML5 charts using the canvas element.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

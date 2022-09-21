@@ -15,6 +15,11 @@ trait RegistrationConfig extends StObject {
     * The template body.
     */
   var templateBody: js.UndefOr[TemplateBody] = js.undefined
+  
+  /**
+    * The name of the provisioning template.
+    */
+  var templateName: js.UndefOr[TemplateName] = js.undefined
 }
 object RegistrationConfig {
   
@@ -32,5 +37,9 @@ object RegistrationConfig {
     inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
     inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+    
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
   }
 }

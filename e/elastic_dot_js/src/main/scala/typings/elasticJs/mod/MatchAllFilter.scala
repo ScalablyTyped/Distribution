@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   A filter that matches on all documents
   */
-class MatchAllFilter ()
+open class MatchAllFilter ()
   extends StObject
      with Filter {
   

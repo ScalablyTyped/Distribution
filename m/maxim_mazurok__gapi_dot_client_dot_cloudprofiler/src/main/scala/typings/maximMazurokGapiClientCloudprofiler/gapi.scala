@@ -19,10 +19,10 @@ object gapi {
       
       trait CreateProfileRequest extends StObject {
         
-        /** Deployment details. */
+        /** Required. Deployment details. */
         var deployment: js.UndefOr[Deployment] = js.undefined
         
-        /** One or more profile types that the agent is capable of providing. */
+        /** Required. One or more profile types that the agent is capable of providing. */
         var profileType: js.UndefOr[js.Array[String]] = js.undefined
       }
       object CreateProfileRequest {
@@ -42,7 +42,7 @@ object gapi {
           
           inline def setProfileTypeUndefined: Self = StObject.set(x, "profileType", js.undefined)
           
-          inline def setProfileTypeVarargs(value: String*): Self = StObject.set(x, "profileType", js.Array(value :_*))
+          inline def setProfileTypeVarargs(value: String*): Self = StObject.set(x, "profileType", js.Array(value*))
         }
       }
       
@@ -57,15 +57,15 @@ object gapi {
         var labels: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment & TopLevel[Any]
               ] = js.undefined
         
         /** Project ID is the ID of a cloud project. Validation regex: `^a-z{4,61}[a-z0-9]$`. */
         var projectId: js.UndefOr[String] = js.undefined
         
         /**
-          * Target is the service name used to group related deployments: * Service name for GAE Flex / Standard. * Cluster and container name for GKE. * User-specified string for direct GCE
-          * profiling (e.g. Java). * Job name for Dataflow. Validation regex: `^[a-z]([-a-z0-9_.]{0,253}[a-z0-9])?$`.
+          * Target is the service name used to group related deployments: * Service name for App Engine Flex / Standard. * Cluster and container name for GKE. * User-specified string for direct
+          * Compute Engine profiling (e.g. Java). * Job name for Dataflow. Validation regex: `^[a-z0-9]([-a-z0-9_.]{0,253}[a-z0-9])?$`.
           */
         var target: js.UndefOr[String] = js.undefined
       }
@@ -81,7 +81,7 @@ object gapi {
           inline def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment & TopLevel[Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -115,7 +115,7 @@ object gapi {
         var labels: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile & TopLevel[Any]
               ] = js.undefined
         
         /** Output only. Opaque, server-assigned, unique ID for this profile. */
@@ -147,7 +147,7 @@ object gapi {
           inline def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile & TopLevel[Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

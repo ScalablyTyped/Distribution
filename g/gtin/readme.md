@@ -10,10 +10,10 @@ GTIN (UPC, EAN, ITF, etc.) utilities.
 | ------------------ | :-------------: |
 | Full name          | gtin |
 | Keywords           | gtin, upc, ean, ucc, itf, itf-14, itf14, ean-13, ean13, ucc-12, ucc12, upc-e, upce, upca, upc-a, validation, utilities, valid |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 56818 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 11320.333333333334 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/xbpf/gtin#readme)

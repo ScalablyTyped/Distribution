@@ -28,7 +28,7 @@ object JSON2SheetOpts {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
+    inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value*))
     
     inline def setSkipHeader(value: Boolean): Self = StObject.set(x, "skipHeader", value.asInstanceOf[js.Any])
     

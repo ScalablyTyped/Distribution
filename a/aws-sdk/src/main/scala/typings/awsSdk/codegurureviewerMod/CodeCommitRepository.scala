@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CodeCommitRepository extends StObject {
   
   /**
-    * The name of the AWS CodeCommit repository. For more information, see repositoryName in the AWS CodeCommit API Reference.
+    * The name of the Amazon Web Services CodeCommit repository. For more information, see repositoryName in the Amazon Web Services CodeCommit API Reference.
     */
   var Name: typings.awsSdk.codegurureviewerMod.Name
 }

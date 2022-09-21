@@ -25,7 +25,7 @@ object Footnote {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
     

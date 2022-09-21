@@ -12,16 +12,16 @@ object depthReducerMod {
   
   @JSImport("babylonjs/Misc/depthReducer", "DepthReducer")
   @js.native
-  class DepthReducer protected () extends MinMaxReducer {
+  open class DepthReducer protected () extends MinMaxReducer {
     /**
       * Creates a depth reducer
       * @param camera The camera used to render the depth texture
       */
     def this(camera: Camera) = this()
     
-    /* private */ var _depthRenderer: js.Any = js.native
+    /* private */ var _depthRenderer: Any = js.native
     
-    /* private */ var _depthRendererId: js.Any = js.native
+    /* private */ var _depthRendererId: Any = js.native
     
     /**
       * Gets the depth renderer used for the computation.

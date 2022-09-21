@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AddPermissionInput extends StObject {
   
   /**
-    * The AWS account IDs of the users (principals) who will be given access to the specified actions. The users must have AWS accounts, but do not need to be signed up for this service.
+    * The Amazon Web Services account IDs of the users (principals) who will be given access to the specified actions. The users must have Amazon Web Services account, but do not need to be signed up for this service.
     */
   var AWSAccountId: DelegatesList
   
@@ -37,11 +37,11 @@ object AddPermissionInput {
     
     inline def setAWSAccountId(value: DelegatesList): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     
-    inline def setAWSAccountIdVarargs(value: delegate*): Self = StObject.set(x, "AWSAccountId", js.Array(value :_*))
+    inline def setAWSAccountIdVarargs(value: delegate*): Self = StObject.set(x, "AWSAccountId", js.Array(value*))
     
     inline def setActionName(value: ActionsList): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     
-    inline def setActionNameVarargs(value: action*): Self = StObject.set(x, "ActionName", js.Array(value :_*))
+    inline def setActionNameVarargs(value: action*): Self = StObject.set(x, "ActionName", js.Array(value*))
     
     inline def setLabel(value: label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     

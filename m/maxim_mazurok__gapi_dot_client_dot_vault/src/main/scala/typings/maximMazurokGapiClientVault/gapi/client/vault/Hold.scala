@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Hold extends StObject {
   
-  /** If set, the hold applies to the enumerated accounts and org_unit must be empty. */
+  /** If set, the hold applies to the specified accounts and **orgUnit** must be empty. */
   var accounts: js.UndefOr[js.Array[HeldAccount]] = js.undefined
   
-  /** The corpus to be searched. */
+  /** The service to be searched. */
   var corpus: js.UndefOr[String] = js.undefined
   
   /** The unique immutable ID of the hold. Assigned during creation. */
@@ -18,10 +18,10 @@ trait Hold extends StObject {
   /** The name of the hold. */
   var name: js.UndefOr[String] = js.undefined
   
-  /** If set, the hold applies to all members of the organizational unit and accounts must be empty. This property is mutable. For groups holds, set the accounts field. */
+  /** If set, the hold applies to all members of the organizational unit and **accounts** must be empty. This property is mutable. For Groups holds, set **accounts**. */
   var orgUnit: js.UndefOr[HeldOrgUnit] = js.undefined
   
-  /** The corpus-specific query. If set, the corpusQuery must match corpus type. */
+  /** Service-specific options. If set, **CorpusQuery** must match **CorpusType**. */
   var query: js.UndefOr[CorpusQuery] = js.undefined
   
   /** The last time this hold was modified. */
@@ -40,7 +40,7 @@ object Hold {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: HeldAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: HeldAccount*): Self = StObject.set(x, "accounts", js.Array(value*))
     
     inline def setCorpus(value: String): Self = StObject.set(x, "corpus", value.asInstanceOf[js.Any])
     

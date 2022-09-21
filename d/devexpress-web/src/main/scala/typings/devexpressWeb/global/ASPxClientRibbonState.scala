@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRibbonState")
 @js.native
-class ASPxClientRibbonState ()
+open class ASPxClientRibbonState ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRibbonState
 object ASPxClientRibbonState {

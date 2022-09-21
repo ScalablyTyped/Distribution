@@ -6,23 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ClientOptions {
   
-  @JSImport("postmark/dist/client/models", "ClientOptions.Configuration")
+  @JSImport("postmark/dist/client/models", "ClientOptions.AuthHeaderNames")
   @js.native
-  class Configuration protected ()
-    extends typings.postmark.clientOptionsMod.ClientOptions.Configuration {
-    def this(useHttps: Boolean, requestHost: String, timeout: Double) = this()
-  }
-  
-  @JSImport("postmark/dist/client/models", "ClientOptions.DefaultHeaderNames")
-  @js.native
-  object DefaultHeaderNames extends StObject {
+  object AuthHeaderNames extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames & String] = js.native
+    def apply(value: String): js.UndefOr[typings.postmark.clientOptionsMod.ClientOptions.AuthHeaderNames & String] = js.native
     
-    /* "X-Postmark-Account-Token" */ val ACCOUNT_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames.ACCOUNT_TOKEN & String = js.native
+    /* "X-Postmark-Account-Token" */ val ACCOUNT_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.AuthHeaderNames.ACCOUNT_TOKEN & String = js.native
     
-    /* "X-Postmark-Server-Token" */ val SERVER_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames.SERVER_TOKEN & String = js.native
+    /* "X-Postmark-Server-Token" */ val SERVER_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.AuthHeaderNames.SERVER_TOKEN & String = js.native
+  }
+  
+  @JSImport("postmark/dist/client/models", "ClientOptions.Configuration")
+  @js.native
+  open class Configuration ()
+    extends typings.postmark.clientOptionsMod.ClientOptions.Configuration {
+    def this(useHttps: Boolean) = this()
+    def this(useHttps: Boolean, requestHost: String) = this()
+    def this(useHttps: Unit, requestHost: String) = this()
+    def this(useHttps: Boolean, requestHost: String, timeout: Double) = this()
+    def this(useHttps: Boolean, requestHost: Unit, timeout: Double) = this()
+    def this(useHttps: Unit, requestHost: String, timeout: Double) = this()
+    def this(useHttps: Unit, requestHost: Unit, timeout: Double) = this()
   }
   
   @JSImport("postmark/dist/client/models", "ClientOptions.HttpMethod")

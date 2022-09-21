@@ -10,10 +10,10 @@ A react native library for handling generating PDFs
 | ------------------ | :-------------: |
 | Full name          | react-native-pdf-lib |
 | Keywords           | react-native |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 10938 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1699.0 |
+| # stars            | 156.0 |
 
 ## Links
 - [Homepage](https://github.com/Hopding/react-native-pdf-lib#readme)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for python-shell
 
-Typings are for version 0.4
+Typings are for version 3.0.1
 
 ## Library description:
 Run Python scripts from Node.js with simple (but efficient) inter-process communication through stdio
@@ -10,10 +10,10 @@ Run Python scripts from Node.js with simple (but efficient) inter-process commun
 | ------------------ | :-------------: |
 | Full name          | python-shell |
 | Keywords           | python |
-| # releases         | 6 |
-| # dependents       | 124 |
-| # downloads        | 875037 |
-| # stars            | 30 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 134460.33333333334 |
+| # stars            | 1783.0 |
 
 ## Links
 - [Homepage](http://github.com/extrabacon/python-shell)
@@ -24,7 +24,7 @@ Run Python scripts from Node.js with simple (but efficient) inter-process commun
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

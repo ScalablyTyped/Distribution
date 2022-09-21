@@ -31,7 +31,7 @@ object XSubTotalDescriptor {
     acquire: () => Unit,
     addNew: (SeqEquiv[SubTotalColumn], Double) => Unit,
     clear: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSubTotalDescriptor = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addNew = js.Any.fromFunction2(addNew), clear = js.Any.fromFunction0(clear), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

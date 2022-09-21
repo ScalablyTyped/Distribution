@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TruncateLogContext extends StObject {
   
-  /** This is always *sql#truncateLogContext*. */
+  /** This is always `sql#truncateLogContext`. */
   var kind: js.UndefOr[String] = js.undefined
   
-  /** The type of log to truncate. Valid values are *MYSQL_GENERAL_TABLE* and *MYSQL_SLOW_TABLE*. */
+  /** The type of log to truncate. Valid values are `MYSQL_GENERAL_TABLE` and `MYSQL_SLOW_TABLE`. */
   var logType: js.UndefOr[String] = js.undefined
 }
 object TruncateLogContext {

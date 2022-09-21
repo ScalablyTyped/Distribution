@@ -12,6 +12,7 @@ import typings.c3.anon.Hide
 import typings.c3.anon.IsShown
 import typings.c3.anon.Labels
 import typings.c3.anon.Names
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,6 +68,8 @@ trait ChartAPI extends StObject {
     */
   // Not a typo - returns `null` not `void`
   def destroy(): Null = js.native
+  
+  var element: HTMLElement = js.native
   
   /**
     * Flow data to the chart. By this API, you can append new data points to the chart.

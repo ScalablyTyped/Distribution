@@ -12,15 +12,15 @@ object momentumOptimizerMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/optimizers/momentum_optimizer", "MomentumOptimizer")
   @js.native
-  class MomentumOptimizer protected () extends SGDOptimizer {
+  open class MomentumOptimizer protected () extends SGDOptimizer {
     def this(learningRate: Double, momentum: Double) = this()
     def this(learningRate: Double, momentum: Double, useNesterov: Boolean) = this()
     
-    /* private */ var accumulations: js.Any = js.native
+    /* private */ var accumulations: Any = js.native
     
-    /* private */ var m: js.Any = js.native
+    /* private */ var m: Any = js.native
     
-    /* private */ var momentum: js.Any = js.native
+    /* private */ var momentum: Any = js.native
     
     /**
       * Sets the momentum of the optimizer.
@@ -29,7 +29,7 @@ object momentumOptimizerMod {
       */
     def setMomentum(momentum: Double): Unit = js.native
     
-    /* private */ var useNesterov: js.Any = js.native
+    /* private */ var useNesterov: Any = js.native
   }
   /* static members */
   object MomentumOptimizer {

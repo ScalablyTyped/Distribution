@@ -33,6 +33,6 @@ object ListResourceInventoryResponse {
     
     inline def setResourceInventoryListUndefined: Self = StObject.set(x, "ResourceInventoryList", js.undefined)
     
-    inline def setResourceInventoryListVarargs(value: ResourceInventory*): Self = StObject.set(x, "ResourceInventoryList", js.Array(value :_*))
+    inline def setResourceInventoryListVarargs(value: ResourceInventory*): Self = StObject.set(x, "ResourceInventoryList", js.Array(value*))
   }
 }

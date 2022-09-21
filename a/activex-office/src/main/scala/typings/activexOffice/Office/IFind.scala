@@ -9,13 +9,13 @@ trait IFind extends StObject {
   
   var Author: String
   
-  var DateCreatedFrom: js.Any
+  var DateCreatedFrom: Any
   
-  var DateCreatedTo: js.Any
+  var DateCreatedTo: Any
   
-  var DateSavedFrom: js.Any
+  var DateSavedFrom: Any
   
-  var DateSavedTo: js.Any
+  var DateSavedTo: Any
   
   def Delete(bstrQueryName: String): Unit
   
@@ -70,10 +70,10 @@ object IFind {
   
   inline def apply(
     Author: String,
-    DateCreatedFrom: js.Any,
-    DateCreatedTo: js.Any,
-    DateSavedFrom: js.Any,
-    DateSavedTo: js.Any,
+    DateCreatedFrom: Any,
+    DateCreatedTo: Any,
+    DateSavedFrom: Any,
+    DateSavedTo: Any,
     Delete: String => Unit,
     Execute: () => Unit,
     FileType: Double,
@@ -107,13 +107,13 @@ object IFind {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
-    inline def setDateCreatedFrom(value: js.Any): Self = StObject.set(x, "DateCreatedFrom", value.asInstanceOf[js.Any])
+    inline def setDateCreatedFrom(value: Any): Self = StObject.set(x, "DateCreatedFrom", value.asInstanceOf[js.Any])
     
-    inline def setDateCreatedTo(value: js.Any): Self = StObject.set(x, "DateCreatedTo", value.asInstanceOf[js.Any])
+    inline def setDateCreatedTo(value: Any): Self = StObject.set(x, "DateCreatedTo", value.asInstanceOf[js.Any])
     
-    inline def setDateSavedFrom(value: js.Any): Self = StObject.set(x, "DateSavedFrom", value.asInstanceOf[js.Any])
+    inline def setDateSavedFrom(value: Any): Self = StObject.set(x, "DateSavedFrom", value.asInstanceOf[js.Any])
     
-    inline def setDateSavedTo(value: js.Any): Self = StObject.set(x, "DateSavedTo", value.asInstanceOf[js.Any])
+    inline def setDateSavedTo(value: Any): Self = StObject.set(x, "DateSavedTo", value.asInstanceOf[js.Any])
     
     inline def setDelete(value: String => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
     

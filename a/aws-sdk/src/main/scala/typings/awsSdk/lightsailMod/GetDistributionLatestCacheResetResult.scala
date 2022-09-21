@@ -9,7 +9,7 @@ trait GetDistributionLatestCacheResetResult extends StObject {
   /**
     * The timestamp of the last cache reset (e.g., 1479734909.17) in Unix time format.
     */
-  var createTime: js.UndefOr[IsoDate] = js.undefined
+  var createTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the last cache reset.
@@ -25,7 +25,7 @@ object GetDistributionLatestCacheResetResult {
   
   extension [Self <: GetDistributionLatestCacheResetResult](x: Self) {
     
-    inline def setCreateTime(value: IsoDate): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     

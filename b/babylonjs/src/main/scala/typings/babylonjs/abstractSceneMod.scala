@@ -50,6 +50,7 @@ object abstractSceneMod {
     
     /**
       * ActionManagers available on the scene.
+      * @deprecated
       */
     var actionManagers: js.Array[AbstractActionManager] = js.native
     
@@ -73,7 +74,7 @@ object abstractSceneMod {
     
     /**
       * All of the animation groups added to this scene
-      * @see https://doc.babylonjs.com/how_to/group
+      * @see https://doc.babylonjs.com/divingDeeper/animation/groupAnimations
       */
     var animationGroups: js.Array[AnimationGroup] = js.native
     
@@ -132,23 +133,31 @@ object abstractSceneMod {
     /**
       * Return a the first highlight layer of the scene with a given name.
       * @param name The name of the highlight layer to look for.
-      * @return The highlight layer if found otherwise null.
+      * @returns The highlight layer if found otherwise null.
       */
     def getGlowLayerByName(name: String): Nullable[GlowLayer] = js.native
     
     /**
       * Return a the first highlight layer of the scene with a given name.
       * @param name The name of the highlight layer to look for.
-      * @return The highlight layer if found otherwise null.
+      * @returns The highlight layer if found otherwise null.
       */
     def getHighlightLayerByName(name: String): Nullable[HighlightLayer] = js.native
     
     /**
-      * Gets a lens flare system using its id
-      * @param id defines the id to look for
+      * Gets a lens flare system using its Id
+      * @param id defines the Id to look for
       * @returns the lens flare system or null if not found
+      * @deprecated Please use getLensFlareSystemById instead
       */
     def getLensFlareSystemByID(id: String): Nullable[LensFlareSystem] = js.native
+    
+    /**
+      * Gets a lens flare system using its Id
+      * @param id defines the Id to look for
+      * @returns the lens flare system or null if not found
+      */
+    def getLensFlareSystemById(id: String): Nullable[LensFlareSystem] = js.native
     
     /**
       * Gets a lens flare system using its name
@@ -281,10 +290,10 @@ object abstractSceneMod {
     var textures: js.Array[BaseTexture] = js.native
     
     /**
-      * All of the tranform nodes added to this scene
+      * All of the transform nodes added to this scene
       * In the context of a Scene, it is not supposed to be modified manually.
       * Any addition or removal should be done using the addTransformNode and removeTransformNode Scene methods.
-      * Note also that the order of the TransformNode wihin the array is not significant and might change.
+      * Note also that the order of the TransformNode within the array is not significant and might change.
       * @see https://doc.babylonjs.com/how_to/transformnode
       */
     var transformNodes: js.Array[TransformNode] = js.native
@@ -311,14 +320,14 @@ object abstractSceneMod {
     inline def AddParser(name: String, parser: BabylonFileParser): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AddParser")(name.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * Gets an individual parser from the list of avaialble ones
+      * Gets an individual parser from the list of available ones
       * @param name Defines the name of the parser
       * @returns the requested parser or null
       */
     inline def GetIndividualParser(name: String): Nullable[IndividualBabylonFileParser] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetIndividualParser")(name.asInstanceOf[js.Any]).asInstanceOf[Nullable[IndividualBabylonFileParser]]
     
     /**
-      * Gets a general parser from the list of avaialble ones
+      * Gets a general parser from the list of available ones
       * @param name Defines the name of the parser
       * @returns the requested parser or null
       */
@@ -331,32 +340,32 @@ object abstractSceneMod {
       * @param container Defines the container attached to the parsing sequence
       * @param rootUrl Defines the root url of the data
       */
-    inline def Parse(jsonData: js.Any, scene: Scene, container: AssetContainer, rootUrl: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(jsonData.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], container.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Parse(jsonData: Any, scene: Scene, container: AssetContainer, rootUrl: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(jsonData.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], container.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Stores the list of available parsers in the application.
       */
     @JSImport("babylonjs/abstractScene", "AbstractScene._BabylonFileParsers")
     @js.native
-    def _BabylonFileParsers: js.Any = js.native
-    inline def _BabylonFileParsers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BabylonFileParsers")(x.asInstanceOf[js.Any])
+    def _BabylonFileParsers: Any = js.native
+    inline def _BabylonFileParsers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BabylonFileParsers")(x.asInstanceOf[js.Any])
     
     /**
       * Stores the list of available individual parsers in the application.
       */
     @JSImport("babylonjs/abstractScene", "AbstractScene._IndividualBabylonFileParsers")
     @js.native
-    def _IndividualBabylonFileParsers: js.Any = js.native
-    inline def _IndividualBabylonFileParsers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IndividualBabylonFileParsers")(x.asInstanceOf[js.Any])
+    def _IndividualBabylonFileParsers: Any = js.native
+    inline def _IndividualBabylonFileParsers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IndividualBabylonFileParsers")(x.asInstanceOf[js.Any])
   }
   
   type BabylonFileParser = js.Function4[
-    /* parsedData */ js.Any, 
+    /* parsedData */ Any, 
     /* scene */ Scene, 
     /* container */ AssetContainer, 
     /* rootUrl */ String, 
     Unit
   ]
   
-  type IndividualBabylonFileParser = js.Function3[/* parsedData */ js.Any, /* scene */ Scene, /* rootUrl */ String, js.Any]
+  type IndividualBabylonFileParser = js.Function3[/* parsedData */ Any, /* scene */ Scene, /* rootUrl */ String, Any]
 }

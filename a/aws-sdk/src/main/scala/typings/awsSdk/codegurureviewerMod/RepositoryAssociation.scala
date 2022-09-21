@@ -17,19 +17,24 @@ trait RepositoryAssociation extends StObject {
   var AssociationId: js.UndefOr[typings.awsSdk.codegurureviewerMod.AssociationId] = js.undefined
   
   /**
-    *  The Amazon Resource Name (ARN) of an AWS CodeStar Connections connection. Its format is arn:aws:codestar-connections:region-id:aws-account_id:connection/connection-id. For more information, see  Connection  in the AWS CodeStar Connections API Reference. 
+    * The Amazon Resource Name (ARN) of an Amazon Web Services CodeStar Connections connection. Its format is arn:aws:codestar-connections:region-id:aws-account_id:connection/connection-id. For more information, see Connection in the Amazon Web Services CodeStar Connections API Reference.
     */
   var ConnectionArn: js.UndefOr[typings.awsSdk.codegurureviewerMod.ConnectionArn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the repository association was created.
     */
-  var CreatedTimeStamp: js.UndefOr[TimeStamp] = js.undefined
+  var CreatedTimeStamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * A KMSKeyDetails object that contains:   The encryption option for this repository association. It is either owned by Amazon Web Services Key Management Service (KMS) (AWS_OWNED_CMK) or customer managed (CUSTOMER_MANAGED_CMK).   The ID of the Amazon Web Services KMS key that is associated with this repository association.  
+    */
+  var KMSKeyDetails: js.UndefOr[typings.awsSdk.codegurureviewerMod.KMSKeyDetails] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the repository association was last updated.
     */
-  var LastUpdatedTimeStamp: js.UndefOr[TimeStamp] = js.undefined
+  var LastUpdatedTimeStamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the repository.
@@ -37,7 +42,7 @@ trait RepositoryAssociation extends StObject {
   var Name: js.UndefOr[typings.awsSdk.codegurureviewerMod.Name] = js.undefined
   
   /**
-    * The owner of the repository. For an AWS CodeCommit repository, this is the AWS account ID of the account that owns the repository. For a GitHub, GitHub Enterprise Server, or Bitbucket repository, this is the username for the account that owns the repository.
+    * The owner of the repository. For an Amazon Web Services CodeCommit repository, this is the Amazon Web Services account ID of the account that owns the repository. For a GitHub, GitHub Enterprise Server, or Bitbucket repository, this is the username for the account that owns the repository. For an S3 repository, it can be the username or Amazon Web Services account ID.
     */
   var Owner: js.UndefOr[typings.awsSdk.codegurureviewerMod.Owner] = js.undefined
   
@@ -46,8 +51,10 @@ trait RepositoryAssociation extends StObject {
     */
   var ProviderType: js.UndefOr[typings.awsSdk.codegurureviewerMod.ProviderType] = js.undefined
   
+  var S3RepositoryDetails: js.UndefOr[typings.awsSdk.codegurureviewerMod.S3RepositoryDetails] = js.undefined
+  
   /**
-    * The state of the repository association. The valid repository association states are:    Associated: The repository association is complete.     Associating: CodeGuru Reviewer is:     Setting up pull request notifications. This is required for pull requests to trigger a CodeGuru Reviewer review.    If your repository ProviderType is GitHub, GitHub Enterprise Server, or Bitbucket, CodeGuru Reviewer creates webhooks in your repository to trigger CodeGuru Reviewer reviews. If you delete these webhooks, reviews of code in your repository cannot be triggered.      Setting up source code access. This is required for CodeGuru Reviewer to securely clone code in your repository.       Failed: The repository failed to associate or disassociate.     Disassociating: CodeGuru Reviewer is removing the repository's pull request notifications and source code access.     Disassociated: CodeGuru Reviewer successfully disassociated the repository. You can create a new association with this repository if you want to review source code in it later. You can control access to code reviews created in an associated repository with tags after it has been disassociated. For more information, see Using tags to control access to associated repositories in the Amazon CodeGuru Reviewer User Guide.   
+    * The state of the repository association. The valid repository association states are:    Associated: The repository association is complete.    Associating: CodeGuru Reviewer is:   Setting up pull request notifications. This is required for pull requests to trigger a CodeGuru Reviewer review.  If your repository ProviderType is GitHub, GitHub Enterprise Server, or Bitbucket, CodeGuru Reviewer creates webhooks in your repository to trigger CodeGuru Reviewer reviews. If you delete these webhooks, reviews of code in your repository cannot be triggered.    Setting up source code access. This is required for CodeGuru Reviewer to securely clone code in your repository.      Failed: The repository failed to associate or disassociate.    Disassociating: CodeGuru Reviewer is removing the repository's pull request notifications and source code access.    Disassociated: CodeGuru Reviewer successfully disassociated the repository. You can create a new association with this repository if you want to review source code in it later. You can control access to code reviews created in anassociated repository with tags after it has been disassociated. For more information, see Using tags to control access to associated repositories in the Amazon CodeGuru Reviewer User Guide.  
     */
   var State: js.UndefOr[RepositoryAssociationState] = js.undefined
   
@@ -77,11 +84,15 @@ object RepositoryAssociation {
     
     inline def setConnectionArnUndefined: Self = StObject.set(x, "ConnectionArn", js.undefined)
     
-    inline def setCreatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimeStamp(value: js.Date): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeStampUndefined: Self = StObject.set(x, "CreatedTimeStamp", js.undefined)
     
-    inline def setLastUpdatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
+    inline def setKMSKeyDetails(value: KMSKeyDetails): Self = StObject.set(x, "KMSKeyDetails", value.asInstanceOf[js.Any])
+    
+    inline def setKMSKeyDetailsUndefined: Self = StObject.set(x, "KMSKeyDetails", js.undefined)
+    
+    inline def setLastUpdatedTimeStamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeStampUndefined: Self = StObject.set(x, "LastUpdatedTimeStamp", js.undefined)
     
@@ -96,6 +107,10 @@ object RepositoryAssociation {
     inline def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
     inline def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
+    
+    inline def setS3RepositoryDetails(value: S3RepositoryDetails): Self = StObject.set(x, "S3RepositoryDetails", value.asInstanceOf[js.Any])
+    
+    inline def setS3RepositoryDetailsUndefined: Self = StObject.set(x, "S3RepositoryDetails", js.undefined)
     
     inline def setState(value: RepositoryAssociationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

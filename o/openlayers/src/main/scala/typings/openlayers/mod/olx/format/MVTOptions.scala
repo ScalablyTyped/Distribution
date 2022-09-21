@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MVTOptions extends StObject {
   
   var featureClass: js.UndefOr[
-    (js.Function1[/* geom */ Geometry | StringDictionary[js.Any], js.Any]) | (js.Function4[
+    (js.Function1[/* geom */ Geometry | StringDictionary[Any], Any]) | (js.Function4[
       /* geom */ GeometryType, 
       /* arg2 */ js.Array[Double], 
       /* arg3 */ js.Array[js.Array[Double] | Double], 
-      /* arg4 */ StringDictionary[js.Any], 
-      js.Any
+      /* arg4 */ StringDictionary[Any], 
+      Any
     ])
   ] = js.undefined
   
@@ -35,19 +35,19 @@ object MVTOptions {
   extension [Self <: MVTOptions](x: Self) {
     
     inline def setFeatureClass(
-      value: (js.Function1[/* geom */ Geometry | StringDictionary[js.Any], js.Any]) | (js.Function4[
+      value: (js.Function1[/* geom */ Geometry | StringDictionary[Any], Any]) | (js.Function4[
           /* geom */ GeometryType, 
           /* arg2 */ js.Array[Double], 
           /* arg3 */ js.Array[js.Array[Double] | Double], 
-          /* arg4 */ StringDictionary[js.Any], 
-          js.Any
+          /* arg4 */ StringDictionary[Any], 
+          Any
         ])
     ): Self = StObject.set(x, "featureClass", value.asInstanceOf[js.Any])
     
-    inline def setFeatureClassFunction1(value: /* geom */ Geometry | StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "featureClass", js.Any.fromFunction1(value))
+    inline def setFeatureClassFunction1(value: /* geom */ Geometry | StringDictionary[Any] => Any): Self = StObject.set(x, "featureClass", js.Any.fromFunction1(value))
     
     inline def setFeatureClassFunction4(
-      value: (/* geom */ GeometryType, /* arg2 */ js.Array[Double], /* arg3 */ js.Array[js.Array[Double] | Double], /* arg4 */ StringDictionary[js.Any]) => js.Any
+      value: (/* geom */ GeometryType, /* arg2 */ js.Array[Double], /* arg3 */ js.Array[js.Array[Double] | Double], /* arg4 */ StringDictionary[Any]) => Any
     ): Self = StObject.set(x, "featureClass", js.Any.fromFunction4(value))
     
     inline def setFeatureClassUndefined: Self = StObject.set(x, "featureClass", js.undefined)
@@ -64,6 +64,6 @@ object MVTOptions {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value*))
   }
 }

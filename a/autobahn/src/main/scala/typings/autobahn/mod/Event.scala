@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("autobahn", "Event")
 @js.native
-class Event ()
+open class Event[TName] ()
   extends StObject
-     with IEvent {
+     with IEvent[TName] {
   def this(publication: Double) = this()
   def this(publication: Double, publisher: String) = this()
   def this(publication: Unit, publisher: String) = this()
-  def this(publication: Double, publisher: String, topic: String) = this()
-  def this(publication: Double, publisher: Unit, topic: String) = this()
-  def this(publication: Unit, publisher: String, topic: String) = this()
-  def this(publication: Unit, publisher: Unit, topic: String) = this()
+  def this(publication: Double, publisher: String, topic: TName) = this()
+  def this(publication: Double, publisher: Unit, topic: TName) = this()
+  def this(publication: Unit, publisher: String, topic: TName) = this()
+  def this(publication: Unit, publisher: Unit, topic: TName) = this()
   
   /* CompleteClass */
   var publication: Double = js.native
   
   /* CompleteClass */
-  var topic: String = js.native
+  var topic: TName = js.native
 }

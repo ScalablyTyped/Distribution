@@ -10,10 +10,10 @@ object mailMod {
   
   @JSImport("material-ui/svg-icons/content/mail", JSImport.Default)
   @js.native
-  class default () extends ContentMail
+  open class default () extends ContentMail
   
   @JSImport("material-ui/svg-icons/content/mail", "ContentMail")
   @js.native
-  class ContentMail ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentMail ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for listing all reasons that bid requests were filtered
-  * and not sent to the buyer.
-  */
 trait SchemaListFilteredBidRequestsResponse extends StObject {
   
   /**
-    * List of rows, with counts of filtered bid requests aggregated by callout
-    * status.
+    * List of rows, with counts of filtered bid requests aggregated by callout status.
     */
   var calloutStatusRows: js.UndefOr[js.Array[SchemaCalloutStatusRow]] = js.undefined
   
   /**
-    * A token to retrieve the next page of results. Pass this value in the
-    * ListFilteredBidRequestsRequest.pageToken field in the subsequent call to
-    * the filteredBidRequests.list method to retrieve the next page of results.
+    * A token to retrieve the next page of results. Pass this value in the ListFilteredBidRequestsRequest.pageToken field in the subsequent call to the filteredBidRequests.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListFilteredBidRequestsResponse {
   
@@ -36,9 +29,11 @@ object SchemaListFilteredBidRequestsResponse {
     
     inline def setCalloutStatusRowsUndefined: Self = StObject.set(x, "calloutStatusRows", js.undefined)
     
-    inline def setCalloutStatusRowsVarargs(value: SchemaCalloutStatusRow*): Self = StObject.set(x, "calloutStatusRows", js.Array(value :_*))
+    inline def setCalloutStatusRowsVarargs(value: SchemaCalloutStatusRow*): Self = StObject.set(x, "calloutStatusRows", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

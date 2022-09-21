@@ -12,6 +12,7 @@ import typings.konva.typesMod.GetSet
 import typings.konva.typesMod.Vector2d
 import typings.std.CanvasGradient
 import typings.std.CanvasPattern
+import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object shapeMod {
   
-  @JSImport("konva/types/Shape", "Shape")
+  @JSImport("konva/lib/Shape", "Shape")
   @js.native
-  class Shape[Config /* <: ShapeConfig */] () extends Node[Config] {
+  open class Shape[Config /* <: ShapeConfig */] () extends Node[Config] {
     def this(config: Config) = this()
     
     def __getFillPattern(): CanvasPattern = js.native
@@ -36,11 +37,11 @@ object shapeMod {
     
     def _fillFuncHit(ctx: Context): Unit = js.native
     
-    def _getFillPattern(): js.Any = js.native
+    def _getFillPattern(): Any = js.native
     
-    def _getLinearGradient(): js.Any = js.native
+    def _getLinearGradient(): Any = js.native
     
-    def _getRadialGradient(): js.Any = js.native
+    def _getRadialGradient(): Any = js.native
     
     def _getShadowRGBA(): String = js.native
     
@@ -71,8 +72,12 @@ object shapeMod {
     @JSName("dash")
     var dash_Original: GetSet[js.Array[Double], this.type] = js.native
     
+    def drawHit(can: Unit, top: Unit, skipDragCheck: Boolean): this.type = js.native
+    def drawHit(can: Unit, top: Node[NodeConfig], skipDragCheck: Boolean): this.type = js.native
     def drawHit(can: HitCanvas): this.type = js.native
+    def drawHit(can: HitCanvas, top: Unit, skipDragCheck: Boolean): this.type = js.native
     def drawHit(can: HitCanvas, top: Node[NodeConfig]): this.type = js.native
+    def drawHit(can: HitCanvas, top: Node[NodeConfig], skipDragCheck: Boolean): this.type = js.native
     
     def drawHitFromCache(): this.type = js.native
     def drawHitFromCache(alphaThreshold: Double): this.type = js.native
@@ -82,6 +87,11 @@ object shapeMod {
     
     def fill(): String = js.native
     def fill(v: String): this.type = js.native
+    
+    def fillAfterStrokeEnabled(): Boolean = js.native
+    def fillAfterStrokeEnabled(v: Boolean): this.type = js.native
+    @JSName("fillAfterStrokeEnabled")
+    var fillAfterStrokeEnabled_Original: GetSet[Boolean, this.type] = js.native
     
     def fillEnabled(): Boolean = js.native
     def fillEnabled(v: Boolean): this.type = js.native
@@ -157,10 +167,11 @@ object shapeMod {
     @JSName("fillLinearRadialStartPoint")
     var fillLinearRadialStartPoint_Original: GetSet[Vector2d, this.type] = js.native
     
-    def fillPatternImage(): HTMLImageElement = js.native
+    def fillPatternImage(): HTMLImageElement | HTMLCanvasElement = js.native
+    def fillPatternImage(v: HTMLCanvasElement): this.type = js.native
     def fillPatternImage(v: HTMLImageElement): this.type = js.native
     @JSName("fillPatternImage")
-    var fillPatternImage_Original: GetSet[HTMLImageElement, this.type] = js.native
+    var fillPatternImage_Original: GetSet[HTMLImageElement | HTMLCanvasElement, this.type] = js.native
     
     def fillPatternOffset(): Vector2d = js.native
     def fillPatternOffset(v: Vector2d): this.type = js.native
@@ -271,29 +282,29 @@ object shapeMod {
     
     def getCanvas(): SceneCanvas = js.native
     
-    def getClientRect(config: ShapegGetClientRectConfig): Y = js.native
+    def getClientRect(config: ShapeGetClientRectConfig): Y = js.native
     
     def getContext(): Context = js.native
     
-    def getHitFunc(): js.Any = js.native
+    def getHitFunc(): Any = js.native
     
-    def getSceneFunc(): js.Any = js.native
+    def getSceneFunc(): Any = js.native
     
     def getSelfRect(): Width = js.native
     
-    def getShadowRGBA(): js.Any = js.native
+    def getShadowRGBA(): Any = js.native
     
     def getStrokeHitEnabled(): Boolean = js.native
     
-    def hasFill(): js.Any = js.native
+    def hasFill(): Any = js.native
     
-    def hasHitStroke(): js.Any = js.native
+    def hasHitStroke(): Any = js.native
     
     def hasPointerCapture(pointerId: Double): Boolean = js.native
     
-    def hasShadow(): js.Any = js.native
+    def hasShadow(): Any = js.native
     
-    def hasStroke(): js.Any = js.native
+    def hasStroke(): Any = js.native
     
     def hitFunc(): ShapeConfigHandler[this.type] = js.native
     def hitFunc(v: ShapeConfigHandler[this.type]): this.type = js.native
@@ -307,7 +318,7 @@ object shapeMod {
     @JSName("hitStrokeWidth")
     def hitStrokeWidth_auto(v: auto): this.type = js.native
     
-    def intersects(point: js.Any): Boolean = js.native
+    def intersects(point: Any): Boolean = js.native
     
     def lineCap(): LineCap = js.native
     def lineCap(v: LineCap): this.type = js.native
@@ -450,6 +461,8 @@ object shapeMod {
     
     var fill: js.UndefOr[String] = js.undefined
     
+    var fillAfterStrokeEnabled: js.UndefOr[Boolean] = js.undefined
+    
     var fillEnabled: js.UndefOr[Boolean] = js.undefined
     
     var fillLinearGradientColorStops: js.UndefOr[js.Array[Double | String]] = js.undefined
@@ -536,7 +549,7 @@ object shapeMod {
     
     var shadowOpacity: js.UndefOr[Double] = js.undefined
     
-    var stroke: js.UndefOr[String] = js.undefined
+    var stroke: js.UndefOr[String | CanvasGradient] = js.undefined
     
     var strokeEnabled: js.UndefOr[Boolean] = js.undefined
     
@@ -567,9 +580,13 @@ object shapeMod {
       
       inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
       
-      inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value :_*))
+      inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value*))
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      
+      inline def setFillAfterStrokeEnabled(value: Boolean): Self = StObject.set(x, "fillAfterStrokeEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setFillAfterStrokeEnabledUndefined: Self = StObject.set(x, "fillAfterStrokeEnabled", js.undefined)
       
       inline def setFillEnabled(value: Boolean): Self = StObject.set(x, "fillEnabled", value.asInstanceOf[js.Any])
       
@@ -579,7 +596,7 @@ object shapeMod {
       
       inline def setFillLinearGradientColorStopsUndefined: Self = StObject.set(x, "fillLinearGradientColorStops", js.undefined)
       
-      inline def setFillLinearGradientColorStopsVarargs(value: (Double | String)*): Self = StObject.set(x, "fillLinearGradientColorStops", js.Array(value :_*))
+      inline def setFillLinearGradientColorStopsVarargs(value: (Double | String)*): Self = StObject.set(x, "fillLinearGradientColorStops", js.Array(value*))
       
       inline def setFillLinearGradientEndPoint(value: Vector2d): Self = StObject.set(x, "fillLinearGradientEndPoint", value.asInstanceOf[js.Any])
       
@@ -657,7 +674,7 @@ object shapeMod {
       
       inline def setFillRadialGradientColorStopsUndefined: Self = StObject.set(x, "fillRadialGradientColorStops", js.undefined)
       
-      inline def setFillRadialGradientColorStopsVarargs(value: (Double | String)*): Self = StObject.set(x, "fillRadialGradientColorStops", js.Array(value :_*))
+      inline def setFillRadialGradientColorStopsVarargs(value: (Double | String)*): Self = StObject.set(x, "fillRadialGradientColorStops", js.Array(value*))
       
       inline def setFillRadialGradientEndPoint(value: Vector2d): Self = StObject.set(x, "fillRadialGradientEndPoint", value.asInstanceOf[js.Any])
       
@@ -749,7 +766,7 @@ object shapeMod {
       
       inline def setShadowOpacityUndefined: Self = StObject.set(x, "shadowOpacity", js.undefined)
       
-      inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: String | CanvasGradient): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
       inline def setStrokeEnabled(value: Boolean): Self = StObject.set(x, "strokeEnabled", value.asInstanceOf[js.Any])
       
@@ -773,7 +790,7 @@ object shapeMod {
   
   type ShapeConfigHandler[TTarget] = js.Function2[/* ctx */ Context, /* shape */ TTarget, Unit]
   
-  trait ShapegGetClientRectConfig extends StObject {
+  trait ShapeGetClientRectConfig extends StObject {
     
     var relativeTo: js.UndefOr[Node[NodeConfig]] = js.undefined
     
@@ -783,14 +800,14 @@ object shapeMod {
     
     var skipTransform: js.UndefOr[Boolean] = js.undefined
   }
-  object ShapegGetClientRectConfig {
+  object ShapeGetClientRectConfig {
     
-    inline def apply(): ShapegGetClientRectConfig = {
+    inline def apply(): ShapeGetClientRectConfig = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ShapegGetClientRectConfig]
+      __obj.asInstanceOf[ShapeGetClientRectConfig]
     }
     
-    extension [Self <: ShapegGetClientRectConfig](x: Self) {
+    extension [Self <: ShapeGetClientRectConfig](x: Self) {
       
       inline def setRelativeTo(value: Node[NodeConfig]): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
       

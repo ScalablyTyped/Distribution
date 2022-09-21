@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.std.Uint8Array
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ object renderTargetMod {
   
   @JSImport("ol/webgl/RenderTarget", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with WebGLRenderTarget {
     def this(helper: typings.ol.helperMod.default) = this()
@@ -42,7 +41,7 @@ object renderTargetMod {
       * in the 0-255 range (unsigned byte).
       */
     /* CompleteClass */
-    override def readAll(): Uint8Array = js.native
+    override def readAll(): js.typedarray.Uint8Array = js.native
     
     /**
       * Reads one pixel of the frame buffer as an array of r, g, b, a components
@@ -50,7 +49,7 @@ object renderTargetMod {
       * If x and/or y are outside of existing data, an array filled with 0 is returned.
       */
     /* CompleteClass */
-    override def readPixel(x: Double, y: Double): Uint8Array = js.native
+    override def readPixel(x: Double, y: Double): js.typedarray.Uint8Array = js.native
     
     /**
       * Changes the size of the render target texture. Note: will do nothing if the size
@@ -82,14 +81,14 @@ object renderTargetMod {
       * Returns the full content of the frame buffer as a series of r, g, b, a components
       * in the 0-255 range (unsigned byte).
       */
-    def readAll(): Uint8Array
+    def readAll(): js.typedarray.Uint8Array
     
     /**
       * Reads one pixel of the frame buffer as an array of r, g, b, a components
       * in the 0-255 range (unsigned byte).
       * If x and/or y are outside of existing data, an array filled with 0 is returned.
       */
-    def readPixel(x: Double, y: Double): Uint8Array
+    def readPixel(x: Double, y: Double): js.typedarray.Uint8Array
     
     /**
       * Changes the size of the render target texture. Note: will do nothing if the size
@@ -104,8 +103,8 @@ object renderTargetMod {
       getFramebuffer: () => WebGLFramebuffer,
       getSize: () => js.Array[Double],
       getTexture: () => WebGLTexture,
-      readAll: () => Uint8Array,
-      readPixel: (Double, Double) => Uint8Array,
+      readAll: () => js.typedarray.Uint8Array,
+      readPixel: (Double, Double) => js.typedarray.Uint8Array,
       setSize: js.Array[Double] => Unit
     ): WebGLRenderTarget = {
       val __obj = js.Dynamic.literal(clearCachedData = js.Any.fromFunction0(clearCachedData), getFramebuffer = js.Any.fromFunction0(getFramebuffer), getSize = js.Any.fromFunction0(getSize), getTexture = js.Any.fromFunction0(getTexture), readAll = js.Any.fromFunction0(readAll), readPixel = js.Any.fromFunction2(readPixel), setSize = js.Any.fromFunction1(setSize))
@@ -122,9 +121,9 @@ object renderTargetMod {
       
       inline def setGetTexture(value: () => WebGLTexture): Self = StObject.set(x, "getTexture", js.Any.fromFunction0(value))
       
-      inline def setReadAll(value: () => Uint8Array): Self = StObject.set(x, "readAll", js.Any.fromFunction0(value))
+      inline def setReadAll(value: () => js.typedarray.Uint8Array): Self = StObject.set(x, "readAll", js.Any.fromFunction0(value))
       
-      inline def setReadPixel(value: (Double, Double) => Uint8Array): Self = StObject.set(x, "readPixel", js.Any.fromFunction2(value))
+      inline def setReadPixel(value: (Double, Double) => js.typedarray.Uint8Array): Self = StObject.set(x, "readPixel", js.Any.fromFunction2(value))
       
       inline def setSetSize(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
     }

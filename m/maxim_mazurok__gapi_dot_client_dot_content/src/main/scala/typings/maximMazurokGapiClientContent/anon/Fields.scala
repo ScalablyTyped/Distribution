@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.AccountLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait Fields extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The id of the account this label belongs to. */
+  /** Required. The account id for whose labels are to be listed. */
   var accountId: String
   
   /** Data format for response. */
@@ -29,20 +28,26 @@ trait Fields extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The id of the label to update. */
-  var labelId: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The maximum number of labels to return. The service may return fewer than this value. If unspecified, at most 50 labels will be returned. The maximum value is 1000; values above
+    * 1000 will be coerced to 1000.
+    */
+  var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * A page token, received from a previous `ListAccountLabels` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
+    * `ListAccountLabels` must match the call that provided the page token.
+    */
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Request body */
-  var resource: AccountLabel
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +57,8 @@ trait Fields extends StObject {
 }
 object Fields {
   
-  inline def apply(accountId: String, labelId: String, resource: AccountLabel): Fields = {
-    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], labelId = labelId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(accountId: String): Fields = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
   
@@ -85,11 +90,17 @@ object Fields {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -98,8 +109,6 @@ object Fields {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: AccountLabel): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

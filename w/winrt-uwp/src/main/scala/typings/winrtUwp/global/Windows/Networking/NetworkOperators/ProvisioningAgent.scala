@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Networking.NetworkOperators.ProvisioningAgent")
 @js.native
 /** Creates a new instance of a ProvisioningAgent . */
-class ProvisioningAgent ()
+open class ProvisioningAgent ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.ProvisioningAgent {
   

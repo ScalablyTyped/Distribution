@@ -7,8 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofGeometryUtils extends StObject {
   
-  def center(geometry: js.Any): js.Any = js.native
+  /**
+    * @deprecated Use {@link Geometry#center geometry.center()} instead.
+    */
+  def center(geometry: Any): Any = js.native
   
-  def merge(geometry1: js.Any, geometry2: js.Any): js.Any = js.native
-  def merge(geometry1: js.Any, geometry2: js.Any, materialIndexOffset: js.Any): js.Any = js.native
+  /**
+    * @deprecated Use {@link Geometry#merge geometry.merge( geometry2, matrix, materialIndexOffset )} instead.
+    */
+  def merge(geometry1: Any, geometry2: Any): Any = js.native
+  def merge(geometry1: Any, geometry2: Any, materialIndexOffset: Any): Any = js.native
 }

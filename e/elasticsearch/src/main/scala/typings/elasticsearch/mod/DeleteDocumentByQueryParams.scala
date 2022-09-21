@@ -161,7 +161,7 @@ object DeleteDocumentByQueryParams {
     
     inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
     
-    inline def setRoutingVarargs(value: String*): Self = StObject.set(x, "routing", js.Array(value :_*))
+    inline def setRoutingVarargs(value: String*): Self = StObject.set(x, "routing", js.Array(value*))
     
     inline def setScroll(value: String): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
@@ -191,13 +191,13 @@ object DeleteDocumentByQueryParams {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def setStats(value: String | js.Array[String] | Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
-    inline def setStatsVarargs(value: String*): Self = StObject.set(x, "stats", js.Array(value :_*))
+    inline def setStatsVarargs(value: String*): Self = StObject.set(x, "stats", js.Array(value*))
     
     inline def setTerminateAfter(value: Double): Self = StObject.set(x, "terminateAfter", value.asInstanceOf[js.Any])
     
@@ -229,16 +229,16 @@ object DeleteDocumentByQueryParams {
     
     inline def set_sourceExcludeUndefined: Self = StObject.set(x, "_sourceExclude", js.undefined)
     
-    inline def set_sourceExcludeVarargs(value: String*): Self = StObject.set(x, "_sourceExclude", js.Array(value :_*))
+    inline def set_sourceExcludeVarargs(value: String*): Self = StObject.set(x, "_sourceExclude", js.Array(value*))
     
     inline def set_sourceInclude(value: NameList): Self = StObject.set(x, "_sourceInclude", value.asInstanceOf[js.Any])
     
     inline def set_sourceIncludeUndefined: Self = StObject.set(x, "_sourceInclude", js.undefined)
     
-    inline def set_sourceIncludeVarargs(value: String*): Self = StObject.set(x, "_sourceInclude", js.Array(value :_*))
+    inline def set_sourceIncludeVarargs(value: String*): Self = StObject.set(x, "_sourceInclude", js.Array(value*))
     
     inline def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
     
-    inline def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value :_*))
+    inline def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value*))
   }
 }

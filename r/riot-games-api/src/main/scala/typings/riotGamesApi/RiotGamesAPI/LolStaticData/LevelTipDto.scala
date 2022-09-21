@@ -21,10 +21,10 @@ object LevelTipDto {
     
     inline def setEffect(value: js.Array[String]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    inline def setEffectVarargs(value: String*): Self = StObject.set(x, "effect", js.Array(value :_*))
+    inline def setEffectVarargs(value: String*): Self = StObject.set(x, "effect", js.Array(value*))
     
     inline def setLabel(value: js.Array[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value :_*))
+    inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value*))
   }
 }

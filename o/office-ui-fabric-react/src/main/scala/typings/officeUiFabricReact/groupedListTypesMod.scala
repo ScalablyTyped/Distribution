@@ -75,7 +75,7 @@ object groupedListTypesMod {
     /**
       * Arbitrary data required to be preserved by the caller.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * Optional flag to indicate the group has more data to load than the current group count indicated.
@@ -141,11 +141,11 @@ object groupedListTypesMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: IGroup*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: IGroup*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -185,6 +185,18 @@ object groupedListTypesMod {
     
     /** Defines the number of columns a group header needs to span in the case of a grid or treegrid */
     var ariaColSpan: js.UndefOr[Double] = js.undefined
+    
+    /** Defines an element's number or position in the current set of listitems or treeitems */
+    var ariaPosInSet: js.UndefOr[Double] = js.undefined
+    
+    /** Defines the number of items in the current set of grid items */
+    var ariaRowCount: js.UndefOr[Double] = js.undefined
+    
+    /** Defines an element's number or position in the current set of grid items */
+    var ariaRowIndex: js.UndefOr[Double] = js.undefined
+    
+    /** Defines the number of items in the current set of listitems or treeitems */
+    var ariaSetSize: js.UndefOr[Double] = js.undefined
     
     /** Custom className */
     var className: js.UndefOr[String] = js.undefined
@@ -241,6 +253,9 @@ object groupedListTypesMod {
     /** Callback for when the "keyup" event is fired on the group header . */
     var onGroupHeaderKeyUp: js.UndefOr[js.Function2[/* ev */ KeyboardEvent[HTMLElement], /* group */ IGroup, Unit]] = js.undefined
     
+    /** Override which allows the caller to provide a custom renderer for just the name. */
+    var onRenderName: js.UndefOr[IRenderFunction[IGroupHeaderProps]] = js.undefined
+    
     /** Override which allows the caller to provider a custom renderer for the GroupHeader title. */
     var onRenderTitle: js.UndefOr[IRenderFunction[IGroupHeaderProps]] = js.undefined
     
@@ -281,6 +296,22 @@ object groupedListTypesMod {
       
       inline def setAriaColSpanUndefined: Self = StObject.set(x, "ariaColSpan", js.undefined)
       
+      inline def setAriaPosInSet(value: Double): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
+      
+      inline def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
+      
+      inline def setAriaRowCount(value: Double): Self = StObject.set(x, "ariaRowCount", value.asInstanceOf[js.Any])
+      
+      inline def setAriaRowCountUndefined: Self = StObject.set(x, "ariaRowCount", js.undefined)
+      
+      inline def setAriaRowIndex(value: Double): Self = StObject.set(x, "ariaRowIndex", value.asInstanceOf[js.Any])
+      
+      inline def setAriaRowIndexUndefined: Self = StObject.set(x, "ariaRowIndex", js.undefined)
+      
+      inline def setAriaSetSize(value: Double): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
+      
+      inline def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -319,7 +350,7 @@ object groupedListTypesMod {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
       
@@ -348,6 +379,12 @@ object groupedListTypesMod {
       inline def setOnGroupHeaderKeyUp(value: (/* ev */ KeyboardEvent[HTMLElement], /* group */ IGroup) => Unit): Self = StObject.set(x, "onGroupHeaderKeyUp", js.Any.fromFunction2(value))
       
       inline def setOnGroupHeaderKeyUpUndefined: Self = StObject.set(x, "onGroupHeaderKeyUp", js.undefined)
+      
+      inline def setOnRenderName(
+        value: (/* props */ js.UndefOr[IGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderProps], Element | Null]]) => Element | Null
+      ): Self = StObject.set(x, "onRenderName", js.Any.fromFunction2(value))
+      
+      inline def setOnRenderNameUndefined: Self = StObject.set(x, "onRenderName", js.undefined)
       
       inline def setOnRenderTitle(
         value: (/* props */ js.UndefOr[IGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderProps], Element | Null]]) => Element | Null
@@ -558,10 +595,10 @@ object groupedListTypesMod {
     var groups: js.UndefOr[js.Array[IGroup]] = js.native
     
     /** List of items to render. */
-    var items: js.Array[js.Any] = js.native
+    var items: js.Array[Any] = js.native
     
     /** Optional properties to pass through to the list components being rendered. */
-    var listProps: js.UndefOr[IListProps[js.Any]] = js.native
+    var listProps: js.UndefOr[IListProps[Any]] = js.native
     
     /** Optional callback when the group expand state changes between all collapsed and at least one group is expanded. */
     var onGroupExpandStateChanged: js.UndefOr[js.Function1[/* isSomeGroupExpanded */ Boolean, Unit]] = js.native
@@ -569,11 +606,11 @@ object groupedListTypesMod {
     /** Rendering callback to render the group items. */
     def onRenderCell(): ReactNode = js.native
     def onRenderCell(nestingDepth: Double): ReactNode = js.native
-    def onRenderCell(nestingDepth: Double, item: js.Any): ReactNode = js.native
-    def onRenderCell(nestingDepth: Double, item: js.Any, index: Double): ReactNode = js.native
+    def onRenderCell(nestingDepth: Double, item: Any): ReactNode = js.native
+    def onRenderCell(nestingDepth: Double, item: Any, index: Double): ReactNode = js.native
     def onRenderCell(nestingDepth: Double, item: Unit, index: Double): ReactNode = js.native
-    def onRenderCell(nestingDepth: Unit, item: js.Any): ReactNode = js.native
-    def onRenderCell(nestingDepth: Unit, item: js.Any, index: Double): ReactNode = js.native
+    def onRenderCell(nestingDepth: Unit, item: Any): ReactNode = js.native
+    def onRenderCell(nestingDepth: Unit, item: Any, index: Double): ReactNode = js.native
     def onRenderCell(nestingDepth: Unit, item: Unit, index: Double): ReactNode = js.native
     
     /**
@@ -583,10 +620,13 @@ object groupedListTypesMod {
       * smaller lists.
       * The default implementation will virtualize when this callback is not provided.
       */
-    var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[js.Any], Boolean]] = js.native
+    var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[Any], Boolean]] = js.native
     
     /** Override the default role for GroupedList.  */
     var role: js.UndefOr[String] = js.native
+    
+    /** Optional properties to pass through to the root list component being rendered. */
+    var rootListProps: js.UndefOr[IListProps[Any]] = js.native
     
     /** Optional selection model to track selection state.  */
     var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.native

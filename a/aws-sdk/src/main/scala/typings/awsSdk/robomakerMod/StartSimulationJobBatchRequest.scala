@@ -45,7 +45,7 @@ object StartSimulationJobBatchRequest {
     
     inline def setCreateSimulationJobRequests(value: CreateSimulationJobRequests): Self = StObject.set(x, "createSimulationJobRequests", value.asInstanceOf[js.Any])
     
-    inline def setCreateSimulationJobRequestsVarargs(value: SimulationJobRequest*): Self = StObject.set(x, "createSimulationJobRequests", js.Array(value :_*))
+    inline def setCreateSimulationJobRequestsVarargs(value: SimulationJobRequest*): Self = StObject.set(x, "createSimulationJobRequests", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

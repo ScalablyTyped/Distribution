@@ -1,23 +1,22 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactBootstrapTable.anon.GetElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TableHeaderColumnProps
-  extends StObject
-     with Props[TableHeaderColumn] {
+trait TableHeaderColumnProps extends StObject {
   
   /**
     * It only work for enabling insertRow and be assign on rowKey column. If true, the value of rowkey will be
     * generated automatically after a row insertion. If a function given, you can customize the value by yourself and
     * remember to return the value for the cell from the function.
     */
-  var autoValue: js.UndefOr[Boolean | js.Function0[js.Any]] = js.undefined
+  var autoValue: js.UndefOr[Boolean | js.Function0[Any]] = js.undefined
   
   /**
     * Allow user to render a custom sort caret. You should give a function and should return a JSX.
@@ -29,19 +28,15 @@ trait TableHeaderColumnProps
     js.Function2[/* direction */ SortOrder | Null, /* fieldName */ String, String | ReactElement]
   ] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   /**
     * Add custom css class on table header column, this attribute only accept String or Function.
     * If Function, it takes four arguments: cell, row, rowIndex, columnIndex.
     * In addition, this function should return a String which is the class name you want to add on.
     */
   var className: js.UndefOr[
-    String | (js.Function4[
-      /* cell */ js.Any, 
-      /* row */ js.Any, 
-      /* rowIndex */ Double, 
-      /* columnIndex */ Double, 
-      String
-    ])
+    String | (js.Function4[/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* columnIndex */ Double, String])
   ] = js.undefined
   
   /**
@@ -56,13 +51,7 @@ trait TableHeaderColumnProps
     * In addition, this function should return a String which is the class name you want to add on.
     */
   var columnClassName: js.UndefOr[
-    String | (js.Function4[
-      /* cell */ js.Any, 
-      /* row */ js.Any, 
-      /* rowIndex */ Double, 
-      /* columnIndex */ Double, 
-      String
-    ])
+    String | (js.Function4[/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* columnIndex */ Double, String])
   ] = js.undefined
   
   /**
@@ -70,13 +59,7 @@ trait TableHeaderColumnProps
     * @see https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/column/column-title-table.js
     */
   var columnTitle: js.UndefOr[
-    Boolean | String | (js.Function4[
-      /* cell */ js.Any, 
-      /* row */ js.Any, 
-      /* rowIndex */ Double, 
-      /* colIndex */ Double, 
-      String
-    ])
+    Boolean | String | (js.Function4[/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* colIndex */ Double, String])
   ] = js.undefined
   
   /**
@@ -88,13 +71,13 @@ trait TableHeaderColumnProps
   /**
     * Customize the cell content when exporting to a CSV file. This function takes two argument: cell, row.
     */
-  var csvFormat: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, String]] = js.undefined
+  var csvFormat: js.UndefOr[js.Function2[/* cell */ Any, /* row */ Any, String]] = js.undefined
   
   /**
     * It's usually used with csvFormat, and it's same as formatExtraData.
     * You can give any additional data you want to be passed to the csvFormat function.
     */
-  var csvFormatExtraData: js.UndefOr[js.Any] = js.undefined
+  var csvFormatExtraData: js.UndefOr[Any] = js.undefined
   
   /**
     * Customize the column header text for the column when exporting to a CSV file.
@@ -107,7 +90,7 @@ trait TableHeaderColumnProps
     *   getElement(REQUIRED): Accept a callback function and take two arguments: onUpdate and props.
     *   customEditorParameters: Additional data for custom cell edit component.
     */
-  var customEditor: js.UndefOr[CustomEditor[js.Any, js.Any]] = js.undefined
+  var customEditor: js.UndefOr[CustomEditor[Any, Any]] = js.undefined
   
   /**
     * Custom insert editor element. This is a function to generate a custom edit element to display in the InsertModal
@@ -140,9 +123,9 @@ trait TableHeaderColumnProps
     */
   var dataFormat: js.UndefOr[
     js.Function4[
-      /* cell */ js.Any, 
-      /* row */ js.Any, 
-      /* formatExtraData */ js.Any, 
+      /* cell */ Any, 
+      /* row */ Any, 
+      /* formatExtraData */ Any, 
       /* rowIndex */ Double, 
       String | ReactElement
     ]
@@ -161,7 +144,7 @@ trait TableHeaderColumnProps
   /**
     * Add custom css class on editing cell, if assign a callback function, you are supposed to return a String for class name
     */
-  var editColumnClassName: js.UndefOr[String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, String])] = js.undefined
+  var editColumnClassName: js.UndefOr[String | (js.Function2[/* cell */ Any, /* row */ Any, String])] = js.undefined
   
   /**
     * Specify custom tdAttrs to use for a cell that is being edited within this column.
@@ -176,9 +159,9 @@ trait TableHeaderColumnProps
     * object: @see Editable interface.
     */
   var editable: js.UndefOr[
-    Boolean | (Editable[js.Any, js.Any]) | (js.Function4[
-      /* cell */ js.Any, 
-      /* row */ js.Any, 
+    Boolean | (Editable[Any, Any]) | (js.Function4[
+      /* cell */ Any, 
+      /* row */ Any, 
       /* rowIndex */ Double, 
       /* columnIndex */ Double, 
       Boolean | String | EditValidatorObject
@@ -220,12 +203,12 @@ trait TableHeaderColumnProps
     * @example: (cell, row) => cell.fieldOne;
     * @see: https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/manipulation/search-format-table.js
     */
-  var filterValue: js.UndefOr[js.Function2[/* cell */ js.Any, /* row */ js.Any, js.Any]] = js.undefined
+  var filterValue: js.UndefOr[js.Function2[/* cell */ Any, /* row */ Any, Any]] = js.undefined
   
   /**
     * It's useful with dataFormat, you can give any data you want to be passed to the formatter.
     */
-  var formatExtraData: js.UndefOr[js.Any] = js.undefined
+  var formatExtraData: js.UndefOr[Any] = js.undefined
   
   /**
     * Alignment of text in the column header.
@@ -260,13 +243,15 @@ trait TableHeaderColumnProps
   /**
     * Add custom css class for invalid editing cell, if assign a callback function, you are supposed to return a String for class name
     */
-  var invalidEditColumnClassName: js.UndefOr[String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, String])] = js.undefined
+  var invalidEditColumnClassName: js.UndefOr[String | (js.Function2[/* cell */ Any, /* row */ Any, String])] = js.undefined
   
   /**
     * Use isKey to tell table which column is unique. This is same as the keyField in <BootstrapTable>
     * Tips: You need choose one configuration to set key field: isKey or the keyField in <BootstrapTable>
     */
   var isKey: js.UndefOr[Boolean] = js.undefined
+  
+  var ref: js.UndefOr[LegacyRef[TableHeaderColumn]] = js.undefined
   
   /**
     * This is always used together with rowSpan and colSpan, to create multi-row/multi-column headers.
@@ -296,7 +281,7 @@ trait TableHeaderColumnProps
       /* b */ js.Object, 
       /* order */ SortOrder, 
       /* keyof object */ /* sortField */ String, 
-      /* extraData */ js.Any, 
+      /* extraData */ Any, 
       Double
     ]
   ] = js.undefined
@@ -304,7 +289,7 @@ trait TableHeaderColumnProps
   /**
     * Extra data for the custom sort function. If defined, this data will be passed as fifth argument in sortFunc.
     */
-  var sortFuncExtraData: js.UndefOr[js.Any] = js.undefined
+  var sortFuncExtraData: js.UndefOr[Any] = js.undefined
   
   /**
     * Set the column class name for the actively filtered column. Can be either a string, or a function that takes two
@@ -333,8 +318,8 @@ trait TableHeaderColumnProps
     */
   var tdStyle: js.UndefOr[
     CSSProperties | (js.Function4[
-      /* cell */ js.Any, 
-      /* row */ js.Any, 
+      /* cell */ Any, 
+      /* row */ Any, 
       /* rowIndex */ Double, 
       /* columnIndex */ Double, 
       CSSProperties
@@ -360,9 +345,9 @@ object TableHeaderColumnProps {
   
   extension [Self <: TableHeaderColumnProps](x: Self) {
     
-    inline def setAutoValue(value: Boolean | js.Function0[js.Any]): Self = StObject.set(x, "autoValue", value.asInstanceOf[js.Any])
+    inline def setAutoValue(value: Boolean | js.Function0[Any]): Self = StObject.set(x, "autoValue", value.asInstanceOf[js.Any])
     
-    inline def setAutoValueFunction0(value: () => js.Any): Self = StObject.set(x, "autoValue", js.Any.fromFunction0(value))
+    inline def setAutoValueFunction0(value: () => Any): Self = StObject.set(x, "autoValue", js.Any.fromFunction0(value))
     
     inline def setAutoValueUndefined: Self = StObject.set(x, "autoValue", js.undefined)
     
@@ -370,19 +355,15 @@ object TableHeaderColumnProps {
     
     inline def setCaretRenderUndefined: Self = StObject.set(x, "caretRender", js.undefined)
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setClassName(
-      value: String | (js.Function4[
-          /* cell */ js.Any, 
-          /* row */ js.Any, 
-          /* rowIndex */ Double, 
-          /* columnIndex */ Double, 
-          String
-        ])
+      value: String | (js.Function4[/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* columnIndex */ Double, String])
     ): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setClassNameFunction4(
-      value: (/* cell */ js.Any, /* row */ js.Any, /* rowIndex */ Double, /* columnIndex */ Double) => String
-    ): Self = StObject.set(x, "className", js.Any.fromFunction4(value))
+    inline def setClassNameFunction4(value: (/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* columnIndex */ Double) => String): Self = StObject.set(x, "className", js.Any.fromFunction4(value))
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
@@ -391,34 +372,18 @@ object TableHeaderColumnProps {
     inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
     
     inline def setColumnClassName(
-      value: String | (js.Function4[
-          /* cell */ js.Any, 
-          /* row */ js.Any, 
-          /* rowIndex */ Double, 
-          /* columnIndex */ Double, 
-          String
-        ])
+      value: String | (js.Function4[/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* columnIndex */ Double, String])
     ): Self = StObject.set(x, "columnClassName", value.asInstanceOf[js.Any])
     
-    inline def setColumnClassNameFunction4(
-      value: (/* cell */ js.Any, /* row */ js.Any, /* rowIndex */ Double, /* columnIndex */ Double) => String
-    ): Self = StObject.set(x, "columnClassName", js.Any.fromFunction4(value))
+    inline def setColumnClassNameFunction4(value: (/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* columnIndex */ Double) => String): Self = StObject.set(x, "columnClassName", js.Any.fromFunction4(value))
     
     inline def setColumnClassNameUndefined: Self = StObject.set(x, "columnClassName", js.undefined)
     
     inline def setColumnTitle(
-      value: Boolean | String | (js.Function4[
-          /* cell */ js.Any, 
-          /* row */ js.Any, 
-          /* rowIndex */ Double, 
-          /* colIndex */ Double, 
-          String
-        ])
+      value: Boolean | String | (js.Function4[/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* colIndex */ Double, String])
     ): Self = StObject.set(x, "columnTitle", value.asInstanceOf[js.Any])
     
-    inline def setColumnTitleFunction4(
-      value: (/* cell */ js.Any, /* row */ js.Any, /* rowIndex */ Double, /* colIndex */ Double) => String
-    ): Self = StObject.set(x, "columnTitle", js.Any.fromFunction4(value))
+    inline def setColumnTitleFunction4(value: (/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* colIndex */ Double) => String): Self = StObject.set(x, "columnTitle", js.Any.fromFunction4(value))
     
     inline def setColumnTitleUndefined: Self = StObject.set(x, "columnTitle", js.undefined)
     
@@ -426,9 +391,9 @@ object TableHeaderColumnProps {
     
     inline def setCsvFieldTypeUndefined: Self = StObject.set(x, "csvFieldType", js.undefined)
     
-    inline def setCsvFormat(value: (/* cell */ js.Any, /* row */ js.Any) => String): Self = StObject.set(x, "csvFormat", js.Any.fromFunction2(value))
+    inline def setCsvFormat(value: (/* cell */ Any, /* row */ Any) => String): Self = StObject.set(x, "csvFormat", js.Any.fromFunction2(value))
     
-    inline def setCsvFormatExtraData(value: js.Any): Self = StObject.set(x, "csvFormatExtraData", value.asInstanceOf[js.Any])
+    inline def setCsvFormatExtraData(value: Any): Self = StObject.set(x, "csvFormatExtraData", value.asInstanceOf[js.Any])
     
     inline def setCsvFormatExtraDataUndefined: Self = StObject.set(x, "csvFormatExtraData", js.undefined)
     
@@ -438,7 +403,7 @@ object TableHeaderColumnProps {
     
     inline def setCsvHeaderUndefined: Self = StObject.set(x, "csvHeader", js.undefined)
     
-    inline def setCustomEditor(value: CustomEditor[js.Any, js.Any]): Self = StObject.set(x, "customEditor", value.asInstanceOf[js.Any])
+    inline def setCustomEditor(value: CustomEditor[Any, Any]): Self = StObject.set(x, "customEditor", value.asInstanceOf[js.Any])
     
     inline def setCustomEditorUndefined: Self = StObject.set(x, "customEditor", js.undefined)
     
@@ -455,7 +420,7 @@ object TableHeaderColumnProps {
     inline def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
     
     inline def setDataFormat(
-      value: (/* cell */ js.Any, /* row */ js.Any, /* formatExtraData */ js.Any, /* rowIndex */ Double) => String | ReactElement
+      value: (/* cell */ Any, /* row */ Any, /* formatExtraData */ Any, /* rowIndex */ Double) => String | ReactElement
     ): Self = StObject.set(x, "dataFormat", js.Any.fromFunction4(value))
     
     inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
@@ -468,9 +433,9 @@ object TableHeaderColumnProps {
     
     inline def setDefaultASCUndefined: Self = StObject.set(x, "defaultASC", js.undefined)
     
-    inline def setEditColumnClassName(value: String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, String])): Self = StObject.set(x, "editColumnClassName", value.asInstanceOf[js.Any])
+    inline def setEditColumnClassName(value: String | (js.Function2[/* cell */ Any, /* row */ Any, String])): Self = StObject.set(x, "editColumnClassName", value.asInstanceOf[js.Any])
     
-    inline def setEditColumnClassNameFunction2(value: (/* cell */ js.Any, /* row */ js.Any) => String): Self = StObject.set(x, "editColumnClassName", js.Any.fromFunction2(value))
+    inline def setEditColumnClassNameFunction2(value: (/* cell */ Any, /* row */ Any) => String): Self = StObject.set(x, "editColumnClassName", js.Any.fromFunction2(value))
     
     inline def setEditColumnClassNameUndefined: Self = StObject.set(x, "editColumnClassName", js.undefined)
     
@@ -479,9 +444,9 @@ object TableHeaderColumnProps {
     inline def setEditTdAttrUndefined: Self = StObject.set(x, "editTdAttr", js.undefined)
     
     inline def setEditable(
-      value: Boolean | (Editable[js.Any, js.Any]) | (js.Function4[
-          /* cell */ js.Any, 
-          /* row */ js.Any, 
+      value: Boolean | (Editable[Any, Any]) | (js.Function4[
+          /* cell */ Any, 
+          /* row */ Any, 
           /* rowIndex */ Double, 
           /* columnIndex */ Double, 
           Boolean | String | EditValidatorObject
@@ -489,7 +454,7 @@ object TableHeaderColumnProps {
     ): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     inline def setEditableFunction4(
-      value: (/* cell */ js.Any, /* row */ js.Any, /* rowIndex */ Double, /* columnIndex */ Double) => Boolean | String | EditValidatorObject
+      value: (/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* columnIndex */ Double) => Boolean | String | EditValidatorObject
     ): Self = StObject.set(x, "editable", js.Any.fromFunction4(value))
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
@@ -510,11 +475,11 @@ object TableHeaderColumnProps {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterValue(value: (/* cell */ js.Any, /* row */ js.Any) => js.Any): Self = StObject.set(x, "filterValue", js.Any.fromFunction2(value))
+    inline def setFilterValue(value: (/* cell */ Any, /* row */ Any) => Any): Self = StObject.set(x, "filterValue", js.Any.fromFunction2(value))
     
     inline def setFilterValueUndefined: Self = StObject.set(x, "filterValue", js.undefined)
     
-    inline def setFormatExtraData(value: js.Any): Self = StObject.set(x, "formatExtraData", value.asInstanceOf[js.Any])
+    inline def setFormatExtraData(value: Any): Self = StObject.set(x, "formatExtraData", value.asInstanceOf[js.Any])
     
     inline def setFormatExtraDataUndefined: Self = StObject.set(x, "formatExtraData", js.undefined)
     
@@ -538,15 +503,23 @@ object TableHeaderColumnProps {
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    inline def setInvalidEditColumnClassName(value: String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, String])): Self = StObject.set(x, "invalidEditColumnClassName", value.asInstanceOf[js.Any])
+    inline def setInvalidEditColumnClassName(value: String | (js.Function2[/* cell */ Any, /* row */ Any, String])): Self = StObject.set(x, "invalidEditColumnClassName", value.asInstanceOf[js.Any])
     
-    inline def setInvalidEditColumnClassNameFunction2(value: (/* cell */ js.Any, /* row */ js.Any) => String): Self = StObject.set(x, "invalidEditColumnClassName", js.Any.fromFunction2(value))
+    inline def setInvalidEditColumnClassNameFunction2(value: (/* cell */ Any, /* row */ Any) => String): Self = StObject.set(x, "invalidEditColumnClassName", js.Any.fromFunction2(value))
     
     inline def setInvalidEditColumnClassNameUndefined: Self = StObject.set(x, "invalidEditColumnClassName", js.undefined)
     
     inline def setIsKey(value: Boolean): Self = StObject.set(x, "isKey", value.asInstanceOf[js.Any])
     
     inline def setIsKeyUndefined: Self = StObject.set(x, "isKey", js.undefined)
+    
+    inline def setRef(value: LegacyRef[TableHeaderColumn]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: /* instance */ TableHeaderColumn | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
@@ -561,10 +534,10 @@ object TableHeaderColumnProps {
     inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
     
     inline def setSortFunc(
-      value: (/* a */ js.Object, /* b */ js.Object, /* order */ SortOrder, /* keyof object */ /* sortField */ String, /* extraData */ js.Any) => Double
+      value: (/* a */ js.Object, /* b */ js.Object, /* order */ SortOrder, /* keyof object */ /* sortField */ String, /* extraData */ Any) => Double
     ): Self = StObject.set(x, "sortFunc", js.Any.fromFunction5(value))
     
-    inline def setSortFuncExtraData(value: js.Any): Self = StObject.set(x, "sortFuncExtraData", value.asInstanceOf[js.Any])
+    inline def setSortFuncExtraData(value: Any): Self = StObject.set(x, "sortFuncExtraData", value.asInstanceOf[js.Any])
     
     inline def setSortFuncExtraDataUndefined: Self = StObject.set(x, "sortFuncExtraData", js.undefined)
     
@@ -582,8 +555,8 @@ object TableHeaderColumnProps {
     
     inline def setTdStyle(
       value: CSSProperties | (js.Function4[
-          /* cell */ js.Any, 
-          /* row */ js.Any, 
+          /* cell */ Any, 
+          /* row */ Any, 
           /* rowIndex */ Double, 
           /* columnIndex */ Double, 
           CSSProperties
@@ -591,7 +564,7 @@ object TableHeaderColumnProps {
     ): Self = StObject.set(x, "tdStyle", value.asInstanceOf[js.Any])
     
     inline def setTdStyleFunction4(
-      value: (/* cell */ js.Any, /* row */ js.Any, /* rowIndex */ Double, /* columnIndex */ Double) => CSSProperties
+      value: (/* cell */ Any, /* row */ Any, /* rowIndex */ Double, /* columnIndex */ Double) => CSSProperties
     ): Self = StObject.set(x, "tdStyle", js.Any.fromFunction4(value))
     
     inline def setTdStyleUndefined: Self = StObject.set(x, "tdStyle", js.undefined)

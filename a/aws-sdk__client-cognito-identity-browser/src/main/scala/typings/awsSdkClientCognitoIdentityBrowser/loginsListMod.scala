@@ -8,5 +8,5 @@ object loginsListMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/_LoginsList", "_LoginsList")
   @js.native
-  val LoginsList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val LoginsList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

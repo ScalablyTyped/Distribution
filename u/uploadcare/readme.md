@@ -10,10 +10,10 @@ Library for uploadcare.com.
 | ------------------ | :-------------: |
 | Full name          | uploadcare |
 | Keywords           | upload, uploadcare, api, wrapper |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 71718 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 5705.333333333333 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/rexmorgan/uploadcare-node)

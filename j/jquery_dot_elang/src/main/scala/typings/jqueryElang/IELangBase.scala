@@ -33,25 +33,25 @@ trait IELangBase extends StObject {
   
   var defaults: IELangBaseDefaults = js.native
   
-  var delegates: js.Any = js.native
+  var delegates: Any = js.native
   
   var description: String = js.native
   
   var element: JQuery[HTMLElement] = js.native
   
-  var events: js.Any = js.native
+  var events: Any = js.native
   
   def getLastChild(node: JQuery[HTMLElement]): JQuery[HTMLElement] = js.native
   
-  def initialize(target: HTMLElement, options: js.Any): Unit = js.native
+  def initialize(target: HTMLElement, options: Any): Unit = js.native
   
   def isRdoChecked(eSrc: HTMLElement, rdoId: String): Boolean = js.native
   
   var name: String = js.native
   
-  var options: js.Any = js.native
+  var options: Any = js.native
   
   def processCommand(command: String): JQuery[HTMLElement] = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
 }

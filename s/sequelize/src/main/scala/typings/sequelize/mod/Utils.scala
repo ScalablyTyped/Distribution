@@ -10,7 +10,6 @@ import typings.lodash.mod.Primitive
 import typings.lodash.mod.String
 import typings.sequelize.anon.FnCall
 import typings.sequelize.anon.TypeofPromise
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,10 +20,10 @@ trait Utils extends StObject {
   var Promise: TypeofPromise & (Instantiable1[
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
-        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
+        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any]], 
         Unit
       ], 
-      /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+      /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
       /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]], 
       Unit
     ], 
@@ -36,7 +35,7 @@ trait Utils extends StObject {
   @JSName("_")
   def _underscore(value: java.lang.String): String = js.native
   @JSName("_")
-  def _underscore[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
+  def _underscore[T /* <: js.Object */](value: T): Object[T] = js.native
   @JSName("_")
   def _underscore[T](value: List[T]): Collection[T] = js.native
   @JSName("_")
@@ -44,9 +43,9 @@ trait Utils extends StObject {
   @JSName("_")
   def _underscore_T_Collection[T](): Collection[T] = js.native
   @JSName("_")
-  def _underscore_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  def _underscore_T_Function1AnyAny_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
   @JSName("_")
-  def _underscore_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
+  def _underscore_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
   @JSName("_")
   def _underscore_T_Primitive[T](value: T): Primitive[T] = js.native
   @JSName("_")
@@ -120,23 +119,23 @@ trait Utils extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("_")
-  def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & String = js.native
+  def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String = js.native
   
   def addTicks(s: java.lang.String): java.lang.String = js.native
   def addTicks(s: java.lang.String, tickChar: java.lang.String): java.lang.String = js.native
   
   var and: andStatic = js.native
   
-  def argsArePrimaryKeys(args: js.Array[js.Any], primaryKeys: js.Object): Boolean = js.native
+  def argsArePrimaryKeys(args: js.Array[Any], primaryKeys: js.Object): Boolean = js.native
   
   def camelize(str: java.lang.String): java.lang.String = js.native
   
-  def canTreatArrayAsAnd(arr: js.Array[js.Any]): Boolean = js.native
+  def canTreatArrayAsAnd(arr: js.Array[Any]): Boolean = js.native
   
   var cast: castStatic = js.native
   
   def cloneDeep[T /* <: js.Object */](obj: T): T = js.native
-  def cloneDeep[T /* <: js.Object */](obj: T, fn: js.Function1[/* value */ T, js.Any]): T = js.native
+  def cloneDeep[T /* <: js.Object */](obj: T, fn: js.Function1[/* value */ T, Any]): T = js.native
   
   var col: colStatic = js.native
   
@@ -146,15 +145,15 @@ trait Utils extends StObject {
     * Determine if the default value provided exists and can be described
     * in a db schema using the DEFAULT directive.
     */
-  def defaultValueSchemable(value: js.Any): Boolean = js.native
+  def defaultValueSchemable(value: Any): Boolean = js.native
   
   var fn: fnStatic = js.native
   
-  def format(arr: js.Array[js.Any]): java.lang.String = js.native
-  def format(arr: js.Array[js.Any], dialect: java.lang.String): java.lang.String = js.native
+  def format(arr: js.Array[Any]): java.lang.String = js.native
+  def format(arr: js.Array[Any], dialect: java.lang.String): java.lang.String = js.native
   
-  def formatNamedParameters(sql: java.lang.String, parameters: js.Any): java.lang.String = js.native
-  def formatNamedParameters(sql: java.lang.String, parameters: js.Any, dialect: java.lang.String): java.lang.String = js.native
+  def formatNamedParameters(sql: java.lang.String, parameters: Any): java.lang.String = js.native
+  def formatNamedParameters(sql: java.lang.String, parameters: Any, dialect: java.lang.String): java.lang.String = js.native
   
   def formatReferences(obj: js.Object): js.Object = js.native
   
@@ -166,14 +165,14 @@ trait Utils extends StObject {
   
   def lowercaseFirst(str: java.lang.String): java.lang.String = js.native
   
-  def mapOptionFieldNames[T /* <: js.Object */](options: T, Model: Model[js.Any, js.Any, js.Any]): T = js.native
+  def mapOptionFieldNames[T /* <: js.Object */](options: T, Model: Model[Any, Any, Any]): T = js.native
   
-  def mapValueFieldNames(dataValues: js.Object, fields: js.Array[java.lang.String], Model: Model[js.Any, js.Any, js.Any]): js.Object = js.native
+  def mapValueFieldNames(dataValues: js.Object, fields: js.Array[java.lang.String], Model: Model[Any, Any, Any]): js.Object = js.native
   
   /**
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
-  def mergeDefaults(`object`: js.Any, otherArgs: js.Any*): js.Any = js.native
+  def mergeDefaults(`object`: Any, otherArgs: Any*): Any = js.native
   /**
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
@@ -196,7 +195,7 @@ trait Utils extends StObject {
   @JSName("mergeDefaults")
   var mergeDefaults_Original: FnCall = js.native
   
-  def now(dialect: java.lang.String): Date = js.native
+  def now(dialect: java.lang.String): js.Date = js.native
   
   var or: orStatic = js.native
   
@@ -204,18 +203,18 @@ trait Utils extends StObject {
   
   def removeCommentsFromFunctionString(s: java.lang.String): java.lang.String = js.native
   
-  def removeNullValuesFromHash(hash: js.Object): js.Any = js.native
-  def removeNullValuesFromHash(hash: js.Object, omitNull: Boolean): js.Any = js.native
-  def removeNullValuesFromHash(hash: js.Object, omitNull: Boolean, options: js.Object): js.Any = js.native
-  def removeNullValuesFromHash(hash: js.Object, omitNull: Unit, options: js.Object): js.Any = js.native
+  def removeNullValuesFromHash(hash: js.Object): Any = js.native
+  def removeNullValuesFromHash(hash: js.Object, omitNull: Boolean): Any = js.native
+  def removeNullValuesFromHash(hash: js.Object, omitNull: Boolean, options: js.Object): Any = js.native
+  def removeNullValuesFromHash(hash: js.Object, omitNull: Unit, options: js.Object): Any = js.native
   
   def removeTicks(s: java.lang.String): java.lang.String = js.native
   def removeTicks(s: java.lang.String, tickChar: java.lang.String): java.lang.String = js.native
   
   def singularize(s: java.lang.String): java.lang.String = js.native
   
-  def sliceArgs(args: js.Array[js.Any]): js.Array[js.Any] = js.native
-  def sliceArgs(args: js.Array[js.Any], begin: Double): js.Array[js.Any] = js.native
+  def sliceArgs(args: js.Array[Any]): js.Array[Any] = js.native
+  def sliceArgs(args: js.Array[Any], begin: Double): js.Array[Any] = js.native
   
   def spliceStr(str: java.lang.String, index: Double, count: Double, add: java.lang.String): java.lang.String = js.native
   
@@ -223,8 +222,8 @@ trait Utils extends StObject {
   
   def tick(f: js.Function): Unit = js.native
   
-  def toDefaultValue(value: js.Function0[DataTypeAbstract]): js.Any = js.native
-  def toDefaultValue(value: DataTypeAbstract): js.Any = js.native
+  def toDefaultValue(value: js.Function0[DataTypeAbstract]): Any = js.native
+  def toDefaultValue(value: DataTypeAbstract): Any = js.native
   
   def uppercaseFirst(str: java.lang.String): java.lang.String = js.native
   

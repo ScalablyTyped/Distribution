@@ -12,28 +12,28 @@ object observablemapMod {
   
   @JSImport("mobservable/lib/observablemap", "ObservableMap")
   @js.native
-  class ObservableMap[V] () extends StObject {
+  open class ObservableMap[V] () extends StObject {
     def this(initialData: Entries[V]) = this()
     def this(initialData: KeyValueMap[V]) = this()
     def this(initialData: Unit, valueModeFunc: js.Function) = this()
     def this(initialData: Entries[V], valueModeFunc: js.Function) = this()
     def this(initialData: KeyValueMap[V], valueModeFunc: js.Function) = this()
     
-    /* private */ var _data: js.Any = js.native
+    /* private */ var _data: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
     def _has(key: String): Boolean = js.native
     
-    /* private */ var _hasMap: js.Any = js.native
+    /* private */ var _hasMap: Any = js.native
     
-    /* private */ var _keys: js.Any = js.native
+    /* private */ var _keys: Any = js.native
     
     def _updateHasMapEntry(key: String, value: Boolean): ObservableValue[Boolean] = js.native
     
-    /* private */ var _valueMode: js.Any = js.native
+    /* private */ var _valueMode: Any = js.native
     
-    /* private */ def assertValidKey(key: js.Any): js.Any = js.native
+    /* private */ def assertValidKey(key: Any): Any = js.native
     
     def clear(): Unit = js.native
     
@@ -44,14 +44,14 @@ object observablemapMod {
     def forEach(callback: js.Function3[/* value */ V, /* key */ String, /* object */ KeyValueMap[V], Unit]): Unit = js.native
     def forEach(
       callback: js.Function3[/* value */ V, /* key */ String, /* object */ KeyValueMap[V], Unit],
-      thisArg: js.Any
+      thisArg: Any
     ): Unit = js.native
     
     def get(key: String): V = js.native
     
     def has(key: String): Boolean = js.native
     
-    /* private */ def isValidKey(key: js.Any): js.Any = js.native
+    /* private */ def isValidKey(key: Any): Any = js.native
     
     def keys(): js.Array[String] = js.native
     

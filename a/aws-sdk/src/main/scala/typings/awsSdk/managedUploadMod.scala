@@ -15,7 +15,7 @@ object managedUploadMod {
   
   @JSImport("aws-sdk/lib/s3/managed_upload", "ManagedUpload")
   @js.native
-  class ManagedUpload protected () extends StObject {
+  open class ManagedUpload protected () extends StObject {
     /**
       * Creates a managed upload object with a set of configuration options.
       */
@@ -33,7 +33,7 @@ object managedUploadMod {
       * @param {function} listener - Callback to run when the uploader has uploaded more data.
       */
     @JSName("on")
-    def on_httpUploadProgress(event: httpUploadProgress, listener: js.Function1[/* progress */ Progress, Unit]): js.Any = js.native
+    def on_httpUploadProgress(event: httpUploadProgress, listener: js.Function1[/* progress */ Progress, Unit]): Any = js.native
     
     /**
       * Returns a 'thenable' promise.
@@ -141,7 +141,7 @@ object managedUploadMod {
         
         inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
         
-        inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+        inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
       }
     }
     

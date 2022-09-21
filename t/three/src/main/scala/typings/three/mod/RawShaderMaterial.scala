@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "RawShaderMaterial")
 @js.native
-class RawShaderMaterial ()
-  extends typings.three.materialsMod.RawShaderMaterial {
+open class RawShaderMaterial ()
+  extends typings.three.threeMod.RawShaderMaterial {
   def this(parameters: ShaderMaterialParameters) = this()
 }

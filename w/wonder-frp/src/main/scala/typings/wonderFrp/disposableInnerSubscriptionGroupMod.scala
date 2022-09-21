@@ -9,11 +9,11 @@ object disposableInnerSubscriptionGroupMod {
   
   @JSImport("wonder-frp/dist/es2015/Disposable/InnerSubscriptionGroup", "InnerSubscriptionGroup")
   @js.native
-  class InnerSubscriptionGroup ()
+  open class InnerSubscriptionGroup ()
     extends StObject
        with IDisposable {
     
-    /* private */ var _container: js.Any = js.native
+    /* private */ var _container: Any = js.native
     
     def addChild(child: IDisposable): Unit = js.native
     

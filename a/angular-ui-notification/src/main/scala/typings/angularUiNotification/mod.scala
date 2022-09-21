@@ -20,7 +20,7 @@ object mod {
       
       var maxCount: js.UndefOr[Double] = js.undefined
       
-      var onClose: js.UndefOr[js.Function1[/* element */ js.Any, js.Any]] = js.undefined
+      var onClose: js.UndefOr[js.Function1[/* element */ Any, Any]] = js.undefined
       
       var positionX: js.UndefOr[XPosition] = js.undefined
       
@@ -61,7 +61,7 @@ object mod {
         
         inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
         
-        inline def setOnClose(value: /* element */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+        inline def setOnClose(value: /* element */ Any => Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
         
         inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
         

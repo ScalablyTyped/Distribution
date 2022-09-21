@@ -39,7 +39,7 @@ trait TestOrderLineItemProduct extends StObject {
     */
   var price: js.UndefOr[Price] = js.undefined
   
-  /** Required. The CLDR territory // code of the target country of the product. */
+  /** Required. The CLDR territory code of the target country of the product. */
   var targetCountry: js.UndefOr[String] = js.undefined
   
   /** Required. The title of the product. */
@@ -73,7 +73,7 @@ object TestOrderLineItemProduct {
     
     inline def setFeesUndefined: Self = StObject.set(x, "fees", js.undefined)
     
-    inline def setFeesVarargs(value: OrderLineItemProductFee*): Self = StObject.set(x, "fees", js.Array(value :_*))
+    inline def setFeesVarargs(value: OrderLineItemProductFee*): Self = StObject.set(x, "fees", js.Array(value*))
     
     inline def setGtin(value: String): Self = StObject.set(x, "gtin", value.asInstanceOf[js.Any])
     
@@ -111,6 +111,6 @@ object TestOrderLineItemProduct {
     
     inline def setVariantAttributesUndefined: Self = StObject.set(x, "variantAttributes", js.undefined)
     
-    inline def setVariantAttributesVarargs(value: OrderLineItemProductVariantAttribute*): Self = StObject.set(x, "variantAttributes", js.Array(value :_*))
+    inline def setVariantAttributesVarargs(value: OrderLineItemProductVariantAttribute*): Self = StObject.set(x, "variantAttributes", js.Array(value*))
   }
 }

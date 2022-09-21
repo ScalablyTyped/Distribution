@@ -10,7 +10,7 @@ object pmdFormatterMod {
   
   @JSImport("tslint/lib/formatters/pmdFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter
+  open class Formatter () extends AbstractFormatter
   /* static members */
   object Formatter {
     

@@ -14,7 +14,7 @@ trait ContainerServiceDeployment extends StObject {
   /**
     * The timestamp when the deployment was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An object that describes the endpoint of the deployment.
@@ -44,7 +44,7 @@ object ContainerServiceDeployment {
     
     inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

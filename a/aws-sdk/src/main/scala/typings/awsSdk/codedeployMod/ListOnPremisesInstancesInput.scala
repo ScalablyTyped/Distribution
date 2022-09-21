@@ -42,6 +42,6 @@ object ListOnPremisesInstancesInput {
     
     inline def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
     
-    inline def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
+    inline def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "tagFilters", js.Array(value*))
   }
 }

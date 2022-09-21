@@ -11,11 +11,11 @@ trait GroupObject extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
-  var ArrowHeadLength: js.Any = js.native
+  var ArrowHeadLength: Any = js.native
   
-  var ArrowHeadStyle: js.Any = js.native
+  var ArrowHeadStyle: Any = js.native
   
-  var ArrowHeadWidth: js.Any = js.native
+  var ArrowHeadWidth: Any = js.native
   
   var AutoSize: Boolean = js.native
   
@@ -27,43 +27,43 @@ trait GroupObject extends StObject {
   @JSName("BottomRightCell")
   val BottomRightCell_Original: Range = js.native
   
-  def BringToFront(): js.Any = js.native
+  def BringToFront(): Any = js.native
   
-  def CheckSpelling(): js.Any = js.native
-  def CheckSpelling(CustomDictionary: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any, SpellLang: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: Unit, SpellLang: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: Unit, AlwaysSuggest: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: Unit, AlwaysSuggest: js.Any, SpellLang: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any, SpellLang: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: js.Any, AlwaysSuggest: Unit, SpellLang: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: js.Any, SpellLang: js.Any): js.Any = js.native
-  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: js.Any): js.Any = js.native
+  def CheckSpelling(): Any = js.native
+  def CheckSpelling(CustomDictionary: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Any, AlwaysSuggest: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Any, AlwaysSuggest: Any, SpellLang: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Any, AlwaysSuggest: Unit, SpellLang: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Unit, AlwaysSuggest: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Unit, AlwaysSuggest: Any, SpellLang: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Any, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Any, AlwaysSuggest: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Any, AlwaysSuggest: Any, SpellLang: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Any, AlwaysSuggest: Unit, SpellLang: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Any, SpellLang: Any): Any = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: Any): Any = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   /**
     * @param Appearance [Appearance=2]
     * @param Format [Format=-4147]
     */
-  def CopyPicture(): js.Any = js.native
-  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): js.Any = js.native
-  def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
-  def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
+  def CopyPicture(): Any = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): Any = js.native
+  def CopyPicture(Appearance: XlPictureAppearance): Any = js.native
+  def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): Any = js.native
   
   val Creator: XlCreator = js.native
   
-  def Cut(): js.Any = js.native
+  def Cut(): Any = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
-  def Duplicate(): js.Any = js.native
+  def Duplicate(): Any = js.native
   
   var Enabled: Boolean = js.native
   
@@ -74,7 +74,7 @@ trait GroupObject extends StObject {
   
   var Height: Double = js.native
   
-  var HorizontalAlignment: js.Any = js.native
+  var HorizontalAlignment: Any = js.native
   
   val Index: Double = js.native
   
@@ -88,11 +88,11 @@ trait GroupObject extends StObject {
   
   var OnAction: String = js.native
   
-  var Orientation: js.Any = js.native
+  var Orientation: Any = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  var Placement: js.Any = js.native
+  var Placement: Any = js.native
   
   var PrintObject: Boolean = js.native
   
@@ -100,10 +100,10 @@ trait GroupObject extends StObject {
   
   var RoundedCorners: Boolean = js.native
   
-  def Select(): js.Any = js.native
-  def Select(Replace: js.Any): js.Any = js.native
+  def Select(): Any = js.native
+  def Select(Replace: Any): Any = js.native
   
-  def SendToBack(): js.Any = js.native
+  def SendToBack(): Any = js.native
   
   var Shadow: Boolean = js.native
   
@@ -120,9 +120,9 @@ trait GroupObject extends StObject {
   @JSName("TopLeftCell")
   val TopLeftCell_Original: Range = js.native
   
-  def Ungroup(): js.Any = js.native
+  def Ungroup(): Any = js.native
   
-  var VerticalAlignment: js.Any = js.native
+  var VerticalAlignment: Any = js.native
   
   var Visible: Boolean = js.native
   

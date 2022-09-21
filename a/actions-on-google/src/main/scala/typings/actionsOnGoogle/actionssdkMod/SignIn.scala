@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     "To check your account balance".
   * @public
   */
-class SignIn ()
+open class SignIn ()
   extends typings.actionsOnGoogle.conversationMod.SignIn {
   def this(context: String) = this()
 }

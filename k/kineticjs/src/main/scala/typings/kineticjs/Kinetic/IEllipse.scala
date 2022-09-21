@@ -11,5 +11,5 @@ trait IEllipse
   
   def getRadius(): Double = js.native
   
-  def setRadius(radius: Double): js.Any = js.native
+  def setRadius(radius: Double): Any = js.native
 }

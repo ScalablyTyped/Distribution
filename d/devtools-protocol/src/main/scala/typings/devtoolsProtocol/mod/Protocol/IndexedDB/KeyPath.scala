@@ -38,7 +38,7 @@ object KeyPath {
     
     inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    inline def setArrayVarargs(value: String*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: String*): Self = StObject.set(x, "array", js.Array(value*))
     
     inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     

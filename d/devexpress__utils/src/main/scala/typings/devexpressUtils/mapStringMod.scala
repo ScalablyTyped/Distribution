@@ -15,7 +15,7 @@ object mapStringMod {
   
   @JSImport("@devexpress/utils/lib/utils/map/string", "StringMapUtils")
   @js.native
-  class StringMapUtils () extends StObject
+  open class StringMapUtils () extends StObject
   /* static members */
   object StringMapUtils {
     

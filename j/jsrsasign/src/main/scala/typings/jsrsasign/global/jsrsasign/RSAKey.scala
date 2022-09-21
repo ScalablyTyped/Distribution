@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Tom Wu's RSA Key class and extension */
 @JSGlobal("jsrsasign.RSAKey")
 @js.native
-class RSAKey ()
+open class RSAKey ()
   extends typings.jsrsasign.mod.RSAKey
 object RSAKey {
   

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Arg extends StObject {
   
   /** Argument matches any value provided. */
-  var anyValue: js.UndefOr[js.Any] = js.undefined
+  var anyValue: js.UndefOr[Any] = js.undefined
   
   /** Argument exactly matches value provided. */
-  var exactValue: js.UndefOr[js.Any] = js.undefined
+  var exactValue: js.UndefOr[Any] = js.undefined
 }
 object Arg {
   
@@ -21,11 +21,11 @@ object Arg {
   
   extension [Self <: Arg](x: Self) {
     
-    inline def setAnyValue(value: js.Any): Self = StObject.set(x, "anyValue", value.asInstanceOf[js.Any])
+    inline def setAnyValue(value: Any): Self = StObject.set(x, "anyValue", value.asInstanceOf[js.Any])
     
     inline def setAnyValueUndefined: Self = StObject.set(x, "anyValue", js.undefined)
     
-    inline def setExactValue(value: js.Any): Self = StObject.set(x, "exactValue", value.asInstanceOf[js.Any])
+    inline def setExactValue(value: Any): Self = StObject.set(x, "exactValue", value.asInstanceOf[js.Any])
     
     inline def setExactValueUndefined: Self = StObject.set(x, "exactValue", js.undefined)
   }

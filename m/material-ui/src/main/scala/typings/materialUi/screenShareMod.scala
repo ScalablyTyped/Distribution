@@ -10,10 +10,10 @@ object screenShareMod {
   
   @JSImport("material-ui/svg-icons/communication/screen-share", JSImport.Default)
   @js.native
-  class default () extends CommunicationScreenShare
+  open class default () extends CommunicationScreenShare
   
   @JSImport("material-ui/svg-icons/communication/screen-share", "CommunicationScreenShare")
   @js.native
-  class CommunicationScreenShare ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationScreenShare ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

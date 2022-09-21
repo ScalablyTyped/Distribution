@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aframe", "THREE.Quaternion")
 @js.native
 /**
-	 * @param x x coordinate
-	 * @param y y coordinate
-	 * @param z z coordinate
-	 * @param w w coordinate
-	 */
-class Quaternion ()
+  * @param x x coordinate
+  * @param y y coordinate
+  * @param z z coordinate
+  * @param w w coordinate
+  */
+open class Quaternion ()
   extends typings.three.mod.Quaternion

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "SheenBlock")
 @js.native
-class SheenBlock protected ()
+open class SheenBlock protected ()
   extends typings.babylonjs.indexMod.SheenBlock {
   /**
     * Create a new SheenBlock

@@ -10,7 +10,7 @@ object slotMod {
   
   @JSImport("signals.js/lib/org/osflash/signals/Slot", "Slot")
   @js.native
-  class Slot protected ()
+  open class Slot protected ()
     extends StObject
        with ISlot {
     /**
@@ -35,7 +35,7 @@ object slotMod {
     
     /* protected */ var _once: Boolean = js.native
     
-    /* protected */ var _params: js.Array[js.Any] = js.native
+    /* protected */ var _params: js.Array[Any] = js.native
     
     /* protected */ var _priority: Double = js.native
     
@@ -54,7 +54,7 @@ object slotMod {
       * @param valueObjects The array of arguments to be applied to the listener.
       */
     /* CompleteClass */
-    override def execute(valueObjects: js.Array[js.Any]): Unit = js.native
+    override def execute(valueObjects: js.Array[Any]): Unit = js.native
     
     /**
       * Executes a listener without arguments.
@@ -93,7 +93,7 @@ object slotMod {
       * function handler(name:String, num:int):void{}
       */
     /* CompleteClass */
-    var params: js.Array[js.Any] = js.native
+    var params: js.Array[Any] = js.native
     
     /**
       * The priority of this slot should be given in the execution order.

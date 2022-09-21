@@ -14,7 +14,7 @@ trait Player extends StObject {
   
   def GoToPreviousBookmark(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Pause(): Unit
   
@@ -34,7 +34,7 @@ object Player {
     CurrentPosition: Double,
     GoToNextBookmark: () => Unit,
     GoToPreviousBookmark: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Pause: () => Unit,
     Play: () => Unit,
     PowerPointDotPlayer_typekey: Player,
@@ -56,7 +56,7 @@ object Player {
     
     inline def setGoToPreviousBookmark(value: () => Unit): Self = StObject.set(x, "GoToPreviousBookmark", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPause(value: () => Unit): Self = StObject.set(x, "Pause", js.Any.fromFunction0(value))
     

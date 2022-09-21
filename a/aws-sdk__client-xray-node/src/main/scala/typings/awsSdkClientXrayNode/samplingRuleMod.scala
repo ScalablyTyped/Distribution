@@ -8,5 +8,5 @@ object samplingRuleMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_SamplingRule", "_SamplingRule")
   @js.native
-  val SamplingRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SamplingRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

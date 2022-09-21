@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Select2Require extends StObject {
   
-  def apply(module: String): js.Any = js.native
+  def apply(module: String): Any = js.native
   def apply(modules: js.Array[String]): Unit = js.native
-  def apply(modules: js.Array[String], ready: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def apply(modules: js.Array[String], ready: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   def apply(
     modules: js.Array[String],
-    ready: js.Function1[/* repeated */ js.Any, Unit],
-    errback: js.Function1[/* err */ js.Any, Unit]
+    ready: js.Function1[/* repeated */ Any, Unit],
+    errback: js.Function1[/* err */ Any, Unit]
   ): Unit = js.native
   
   def config(config: Select2RequireConfig): Select2Require = js.native

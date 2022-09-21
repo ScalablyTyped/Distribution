@@ -1,12 +1,16 @@
 package typings.reactNativeElements.anon
 
 import typings.reactNative.mod.ModalProps
+import typings.reactNative.mod.StyleProp
+import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<react-native-elements.react-native-elements.BottomSheetProps> */
+/* Inlined std.Partial<react-native-elements.react-native-elements/dist/bottomSheet/BottomSheet.BottomSheetProps> */
 trait PartialBottomSheetProps extends StObject {
+  
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var isVisible: js.UndefOr[Boolean] = js.undefined
   
@@ -20,6 +24,12 @@ object PartialBottomSheetProps {
   }
   
   extension [Self <: PartialBottomSheetProps](x: Self) {
+    
+    inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+    
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     

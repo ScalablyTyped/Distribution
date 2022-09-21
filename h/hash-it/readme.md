@@ -1,7 +1,7 @@
 
 # Scala.js typings for hash-it
 
-Typings are for version 4.0
+Typings are for version 5.0.2
 
 ## Library description:
 Hash any object based on its value
@@ -11,9 +11,9 @@ Hash any object based on its value
 | Full name          | hash-it |
 | Keywords           | hash, hashcode, object-hash, unique |
 | # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 540671 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 330781.0 |
+| # stars            | 155.0 |
 
 ## Links
 - [Homepage](https://github.com/planttheidea/hash-it#readme)
@@ -24,7 +24,7 @@ Hash any object based on its value
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

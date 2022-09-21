@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HttpUrlDestinationConfiguration extends StObject {
   
   /**
-    * The URL AWS IoT uses to confirm ownership of or access to the topic rule destination URL.
+    * The URL IoT uses to confirm ownership of or access to the topic rule destination URL.
     */
   var confirmationUrl: Url
 }

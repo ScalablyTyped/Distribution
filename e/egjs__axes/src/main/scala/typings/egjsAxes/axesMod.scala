@@ -1,156 +1,190 @@
 package typings.egjsAxes
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.StringDictionary
+import typings.cfcsCore.reactiveSubscribeMod.ReactiveSubscribe
 import typings.egjsAxes.animationManagerMod.AnimationManager
-import typings.egjsAxes.anon.TypeofPanInput
 import typings.egjsAxes.axisManagerMod.Axis
 import typings.egjsAxes.axisManagerMod.AxisManager
 import typings.egjsAxes.axisManagerMod.AxisOption
-import typings.egjsAxes.constMod.DIRECTION
 import typings.egjsAxes.eventManagerMod.EventManager
 import typings.egjsAxes.inputObserverMod.InputObserver
-import typings.egjsAxes.inputTypeMod.IInputType
+import typings.egjsAxes.inputTypeMod.InputType
 import typings.egjsAxes.interruptManagerMod.InterruptManager
-import typings.egjsAxes.pinchInputMod.PinchInput
-import typings.egjsAxes.pinchInputMod.PinchInputOption
-import typings.egjsAxes.wheelInputMod.WheelInput
-import typings.egjsAxes.wheelInputMod.WheelInputOption
-import typings.egjsComponent.mod.^
+import typings.egjsAxes.typesMod.AxesEvents
+import typings.egjsAxes.typesMod.AxesReactiveState
+import typings.egjsAxes.typesMod.ObjectInterface
+import typings.egjsAxes.typesMod.UpdateAnimationOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object axesMod {
   
-  @JSImport("@egjs/axes/Axes", JSImport.Default)
+  @JSImport("@egjs/axes/declaration/Axes", JSImport.Default)
   @js.native
-  class default protected () extends Axes {
-    def this(axis: StringDictionary[AxisOption], options: AxesOption) = this()
-    def this(axis: StringDictionary[AxisOption], options: AxesOption, startPos: Axis) = this()
+  open class default () extends Axes {
+    def this(axis: ObjectInterface[AxisOption]) = this()
+    def this(axis: Unit, options: AxesOption) = this()
+    def this(axis: ObjectInterface[AxisOption], options: AxesOption) = this()
+    def this(axis: Unit, options: Unit, startPos: Axis) = this()
+    def this(axis: Unit, options: AxesOption, startPos: Axis) = this()
+    def this(axis: ObjectInterface[AxisOption], options: Unit, startPos: Axis) = this()
+    def this(axis: ObjectInterface[AxisOption], options: AxesOption, startPos: Axis) = this()
   }
-  /* static members */
   object default {
     
-    @JSImport("@egjs/axes/Axes", JSImport.Default)
+    @JSImport("@egjs/axes/declaration/Axes", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@egjs/axes/Axes", "default.DIRECTION_ALL")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.DIRECTION_ALL")
     @js.native
-    def DIRECTION_ALL: DIRECTION = js.native
-    inline def DIRECTION_ALL_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_ALL")(x.asInstanceOf[js.Any])
+    def DIRECTION_ALL: Double = js.native
+    inline def DIRECTION_ALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_ALL")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.DIRECTION_DOWN")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.DIRECTION_DOWN")
     @js.native
-    def DIRECTION_DOWN: DIRECTION = js.native
-    inline def DIRECTION_DOWN_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_DOWN")(x.asInstanceOf[js.Any])
+    def DIRECTION_DOWN: Double = js.native
+    inline def DIRECTION_DOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_DOWN")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.DIRECTION_HORIZONTAL")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.DIRECTION_HORIZONTAL")
     @js.native
-    def DIRECTION_HORIZONTAL: DIRECTION = js.native
-    inline def DIRECTION_HORIZONTAL_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_HORIZONTAL")(x.asInstanceOf[js.Any])
+    def DIRECTION_HORIZONTAL: Double = js.native
+    inline def DIRECTION_HORIZONTAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_HORIZONTAL")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.DIRECTION_LEFT")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.DIRECTION_LEFT")
     @js.native
-    def DIRECTION_LEFT: DIRECTION = js.native
-    inline def DIRECTION_LEFT_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_LEFT")(x.asInstanceOf[js.Any])
+    def DIRECTION_LEFT: Double = js.native
+    inline def DIRECTION_LEFT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_LEFT")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.DIRECTION_NONE")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.DIRECTION_NONE")
     @js.native
-    def DIRECTION_NONE: DIRECTION = js.native
-    inline def DIRECTION_NONE_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_NONE")(x.asInstanceOf[js.Any])
+    def DIRECTION_NONE: Double = js.native
+    inline def DIRECTION_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_NONE")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.DIRECTION_RIGHT")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.DIRECTION_RIGHT")
     @js.native
-    def DIRECTION_RIGHT: DIRECTION = js.native
-    inline def DIRECTION_RIGHT_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_RIGHT")(x.asInstanceOf[js.Any])
+    def DIRECTION_RIGHT: Double = js.native
+    inline def DIRECTION_RIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_RIGHT")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.DIRECTION_UP")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.DIRECTION_UP")
     @js.native
-    def DIRECTION_UP: DIRECTION = js.native
-    inline def DIRECTION_UP_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_UP")(x.asInstanceOf[js.Any])
+    def DIRECTION_UP: Double = js.native
+    inline def DIRECTION_UP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_UP")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.DIRECTION_VERTICAL")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.DIRECTION_VERTICAL")
     @js.native
-    def DIRECTION_VERTICAL: DIRECTION = js.native
-    inline def DIRECTION_VERTICAL_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_VERTICAL")(x.asInstanceOf[js.Any])
+    def DIRECTION_VERTICAL: Double = js.native
+    inline def DIRECTION_VERTICAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_VERTICAL")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.PanInput")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.MoveKeyInput")
     @js.native
-    def PanInput: TypeofPanInput = js.native
-    inline def PanInput_=(x: TypeofPanInput): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PanInput")(x.asInstanceOf[js.Any])
+    def MoveKeyInput: Any = js.native
+    inline def MoveKeyInput_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MoveKeyInput")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.PinchInput")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.PanInput")
     @js.native
-    def PinchInput: Instantiable2[
-        /* el */ js.Any, 
-        /* options */ js.UndefOr[PinchInputOption], 
-        typings.egjsAxes.pinchInputMod.PinchInput
-      ] = js.native
-    inline def PinchInput_=(x: Instantiable2[/* el */ js.Any, /* options */ js.UndefOr[PinchInputOption], PinchInput]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PinchInput")(x.asInstanceOf[js.Any])
+    def PanInput: Any = js.native
+    inline def PanInput_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PanInput")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.TRANSFORM")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.PinchInput")
+    @js.native
+    def PinchInput: Any = js.native
+    inline def PinchInput_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PinchInput")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.RotatePanInput")
+    @js.native
+    def RotatePanInput: Any = js.native
+    inline def RotatePanInput_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotatePanInput")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.TRANSFORM")
     @js.native
     def TRANSFORM: String = js.native
     inline def TRANSFORM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSFORM")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.VERSION")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.VERSION")
     @js.native
     def VERSION: String = js.native
     inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
-    @JSImport("@egjs/axes/Axes", "default.WheelInput")
+    /* static member */
+    @JSImport("@egjs/axes/declaration/Axes", "default.WheelInput")
     @js.native
-    def WheelInput: Instantiable2[
-        /* el */ js.Any, 
-        /* options */ js.UndefOr[WheelInputOption], 
-        typings.egjsAxes.wheelInputMod.WheelInput
-      ] = js.native
-    inline def WheelInput_=(x: Instantiable2[/* el */ js.Any, /* options */ js.UndefOr[WheelInputOption], WheelInput]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelInput")(x.asInstanceOf[js.Any])
+    def WheelInput: Any = js.native
+    inline def WheelInput_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelInput")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait Axes extends ^ {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - typings.egjsAxes.typesMod.AxesReactiveState because Inheritance from two classes. Inlined  */ @js.native
+  trait Axes
+    extends typings.egjsComponent.mod.default[AxesEvents]
+       with ReactiveSubscribe[AxesReactiveState] {
     
-    /* private */ var _am: AnimationManager = js.native
+    /* private */ var _inputs: Any = js.native
     
-    /* private */ var _axm: AxisManager = js.native
+    var animationManager: AnimationManager = js.native
     
-    /* private */ def _complementOptions(): js.Any = js.native
+    var axis: ObjectInterface[AxisOption] = js.native
     
-    /* private */ var _em: EventManager = js.native
+    var axisManager: AxisManager = js.native
     
-    /* private */ var _inputs: js.Array[IInputType] = js.native
-    
-    /* private */ var _io: InputObserver = js.native
-    
-    /* private */ var _itm: InterruptManager = js.native
-    
-    var axis: StringDictionary[AxisOption] = js.native
-    
-    def connect(axes: String, inputType: IInputType): this.type = js.native
-    def connect(axes: js.Array[String], inputType: IInputType): this.type = js.native
+    def connect(axes: String, inputType: InputType): this.type = js.native
+    def connect(axes: js.Array[String], inputType: InputType): this.type = js.native
     
     def destroy(): Unit = js.native
     
     def disconnect(): this.type = js.native
-    def disconnect(inputType: IInputType): this.type = js.native
+    def disconnect(inputType: InputType): this.type = js.native
+    
+    var eventManager: EventManager = js.native
     
     def get(): Axis = js.native
     def get(axes: js.Array[String]): Axis = js.native
     
+    var inputObserver: InputObserver = js.native
+    
+    var interruptManager: InterruptManager = js.native
+    
     def isBounceArea(): Boolean = js.native
     def isBounceArea(axes: js.Array[String]): Boolean = js.native
     
-    @JSName("options")
-    var options_Axes: AxesOption = js.native
+    var options: AxesOption = js.native
+    
+    def setAxis(axis: ObjectInterface[AxisOption]): this.type = js.native
     
     def setBy(pos: Axis): this.type = js.native
     def setBy(pos: Axis, duration: Double): this.type = js.native
     
+    def setOptions(options: AxesOption): this.type = js.native
+    
     def setTo(pos: Axis): this.type = js.native
     def setTo(pos: Axis, duration: Double): this.type = js.native
+    
+    def stopAnimation(): this.type = js.native
+    
+    def updateAnimation(options: UpdateAnimationOption): this.type = js.native
   }
   
   trait AxesOption extends StObject {
@@ -164,6 +198,10 @@ object axesMod {
     var maximumDuration: js.UndefOr[Double] = js.undefined
     
     var minimumDuration: js.UndefOr[Double] = js.undefined
+    
+    var nested: js.UndefOr[Boolean] = js.undefined
+    
+    var round: js.UndefOr[Double] = js.undefined
   }
   object AxesOption {
     
@@ -193,6 +231,14 @@ object axesMod {
       inline def setMinimumDuration(value: Double): Self = StObject.set(x, "minimumDuration", value.asInstanceOf[js.Any])
       
       inline def setMinimumDurationUndefined: Self = StObject.set(x, "minimumDuration", js.undefined)
+      
+      inline def setNested(value: Boolean): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
+      
+      inline def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
+      
+      inline def setRound(value: Double): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
     }
   }
 }

@@ -24,6 +24,6 @@ object DescribeClientPropertiesResult {
     
     inline def setClientPropertiesListUndefined: Self = StObject.set(x, "ClientPropertiesList", js.undefined)
     
-    inline def setClientPropertiesListVarargs(value: ClientPropertiesResult*): Self = StObject.set(x, "ClientPropertiesList", js.Array(value :_*))
+    inline def setClientPropertiesListVarargs(value: ClientPropertiesResult*): Self = StObject.set(x, "ClientPropertiesList", js.Array(value*))
   }
 }

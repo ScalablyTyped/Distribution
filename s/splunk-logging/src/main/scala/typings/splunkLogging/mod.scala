@@ -3,7 +3,6 @@ package typings.splunkLogging
 import typings.request.mod.CoreOptions
 import typings.splunkLogging.splunkLoggingStrings.http
 import typings.splunkLogging.splunkLoggingStrings.https
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +11,12 @@ object mod {
   
   @JSImport("splunk-logging", "Logger")
   @js.native
-  class Logger protected () extends StObject {
+  open class Logger protected () extends StObject {
     def this(config: Config) = this()
     
-    def error(error: Error, context: SendContext): Unit = js.native
+    def error(error: js.Error, context: SendContext): Unit = js.native
     
-    def eventFormatter(message: js.Any, severity: String): js.Any = js.native
+    def eventFormatter(message: Any, severity: String): Any = js.native
     @JSName("eventFormatter")
     var eventFormatter_Original: EventFormatter = js.native
     
@@ -29,10 +28,10 @@ object mod {
     def send(context: SendContext): Unit = js.native
     def send(context: SendContext, callback: Callback): Unit = js.native
     
-    val serializedEventQueue: js.Array[js.Any] = js.native
+    val serializedContextQueue: js.Array[Any] = js.native
   }
   
-  type Callback = js.Function3[/* error */ js.UndefOr[Error], /* req */ js.Any, /* res */ js.Any, Unit]
+  type Callback = js.Function3[/* error */ js.UndefOr[js.Error], /* req */ Any, /* res */ Any, Unit]
   
   trait Config extends StObject {
     
@@ -117,11 +116,11 @@ object mod {
     }
   }
   
-  type EventFormatter = js.Function2[/* message */ js.Any, /* severity */ String, js.Any]
+  type EventFormatter = js.Function2[/* message */ Any, /* severity */ String, Any]
   
   trait SendContext extends StObject {
     
-    var message: js.Any
+    var message: Any
     
     var metadata: js.UndefOr[SendContextMetadata] = js.undefined
     
@@ -129,14 +128,14 @@ object mod {
   }
   object SendContext {
     
-    inline def apply(message: js.Any): SendContext = {
+    inline def apply(message: Any): SendContext = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendContext]
     }
     
     extension [Self <: SendContext](x: Self) {
       
-      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMetadata(value: SendContextMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       

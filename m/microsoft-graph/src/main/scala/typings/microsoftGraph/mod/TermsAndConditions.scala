@@ -71,7 +71,7 @@ object TermsAndConditions {
     
     inline def setAcceptanceStatusesUndefined: Self = StObject.set(x, "acceptanceStatuses", js.undefined)
     
-    inline def setAcceptanceStatusesVarargs(value: TermsAndConditionsAcceptanceStatus*): Self = StObject.set(x, "acceptanceStatuses", js.Array(value :_*))
+    inline def setAcceptanceStatusesVarargs(value: TermsAndConditionsAcceptanceStatus*): Self = StObject.set(x, "acceptanceStatuses", js.Array(value*))
     
     inline def setAssignments(value: NullableOption[js.Array[TermsAndConditionsAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
@@ -79,7 +79,7 @@ object TermsAndConditions {
     
     inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    inline def setAssignmentsVarargs(value: TermsAndConditionsAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: TermsAndConditionsAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
     
     inline def setBodyText(value: NullableOption[String]): Self = StObject.set(x, "bodyText", value.asInstanceOf[js.Any])
     

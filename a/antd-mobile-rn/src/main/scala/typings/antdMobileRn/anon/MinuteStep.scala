@@ -12,7 +12,7 @@ trait MinuteStep extends StObject {
   
   var mode: String
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
   
   var triggerType: String
 }
@@ -21,7 +21,7 @@ object MinuteStep {
   inline def apply(
     minuteStep: Double,
     mode: String,
-    styles: StringDictionary[RegisteredStyle[js.Any]],
+    styles: StringDictionary[RegisteredStyle[Any]],
     triggerType: String
   ): MinuteStep = {
     val __obj = js.Dynamic.literal(minuteStep = minuteStep.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
@@ -34,7 +34,7 @@ object MinuteStep {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }

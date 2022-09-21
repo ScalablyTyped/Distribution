@@ -21,63 +21,89 @@ import typings.gestalt.gestaltNumbers.`7`
 import typings.gestalt.gestaltNumbers.`8`
 import typings.gestalt.gestaltStrings.absolute
 import typings.gestalt.gestaltStrings.around
+import typings.gestalt.gestaltStrings.article
+import typings.gestalt.gestaltStrings.aside
 import typings.gestalt.gestaltStrings.auto
 import typings.gestalt.gestaltStrings.baseline
 import typings.gestalt.gestaltStrings.between
 import typings.gestalt.gestaltStrings.block
-import typings.gestalt.gestaltStrings.blue
+import typings.gestalt.gestaltStrings.brand
 import typings.gestalt.gestaltStrings.center
 import typings.gestalt.gestaltStrings.circle
 import typings.gestalt.gestaltStrings.column
-import typings.gestalt.gestaltStrings.darkGray
+import typings.gestalt.gestaltStrings.dark
 import typings.gestalt.gestaltStrings.darkWash
-import typings.gestalt.gestaltStrings.eggplant
+import typings.gestalt.gestaltStrings.default
+import typings.gestalt.gestaltStrings.details
+import typings.gestalt.gestaltStrings.div
+import typings.gestalt.gestaltStrings.education
+import typings.gestalt.gestaltStrings.elevationAccent
+import typings.gestalt.gestaltStrings.elevationFloating
+import typings.gestalt.gestaltStrings.elevationRaised
 import typings.gestalt.gestaltStrings.end
+import typings.gestalt.gestaltStrings.errorBase
+import typings.gestalt.gestaltStrings.errorWeak
 import typings.gestalt.gestaltStrings.evenly
+import typings.gestalt.gestaltStrings.figcaption
+import typings.gestalt.gestaltStrings.figure
 import typings.gestalt.gestaltStrings.fixed
 import typings.gestalt.gestaltStrings.flex
-import typings.gestalt.gestaltStrings.gray
-import typings.gestalt.gestaltStrings.green
+import typings.gestalt.gestaltStrings.footer
 import typings.gestalt.gestaltStrings.grow
+import typings.gestalt.gestaltStrings.header
 import typings.gestalt.gestaltStrings.hidden
+import typings.gestalt.gestaltStrings.infoBase
+import typings.gestalt.gestaltStrings.infoWeak
 import typings.gestalt.gestaltStrings.inlineBlock
+import typings.gestalt.gestaltStrings.inverse
 import typings.gestalt.gestaltStrings.lg
-import typings.gestalt.gestaltStrings.lightGray
+import typings.gestalt.gestaltStrings.light
 import typings.gestalt.gestaltStrings.lightWash
-import typings.gestalt.gestaltStrings.maroon
-import typings.gestalt.gestaltStrings.midnight
-import typings.gestalt.gestaltStrings.navy
+import typings.gestalt.gestaltStrings.main
+import typings.gestalt.gestaltStrings.nav
 import typings.gestalt.gestaltStrings.none
-import typings.gestalt.gestaltStrings.olive
-import typings.gestalt.gestaltStrings.orange
-import typings.gestalt.gestaltStrings.orchid
 import typings.gestalt.gestaltStrings.pill
-import typings.gestalt.gestaltStrings.pine
-import typings.gestalt.gestaltStrings.purple
-import typings.gestalt.gestaltStrings.red
+import typings.gestalt.gestaltStrings.primary
+import typings.gestalt.gestaltStrings.raisedBottomShadow
+import typings.gestalt.gestaltStrings.raisedTopShadow
+import typings.gestalt.gestaltStrings.recommendationBase
+import typings.gestalt.gestaltStrings.recommendationWeak
 import typings.gestalt.gestaltStrings.relative
 import typings.gestalt.gestaltStrings.row
 import typings.gestalt.gestaltStrings.scroll
 import typings.gestalt.gestaltStrings.scrollX
 import typings.gestalt.gestaltStrings.scrollY
+import typings.gestalt.gestaltStrings.secondary
+import typings.gestalt.gestaltStrings.section
+import typings.gestalt.gestaltStrings.selected
 import typings.gestalt.gestaltStrings.shadow
+import typings.gestalt.gestaltStrings.shopping
 import typings.gestalt.gestaltStrings.shrink
 import typings.gestalt.gestaltStrings.sm
 import typings.gestalt.gestaltStrings.start
 import typings.gestalt.gestaltStrings.static
 import typings.gestalt.gestaltStrings.stretch
+import typings.gestalt.gestaltStrings.successBase
+import typings.gestalt.gestaltStrings.successWeak
+import typings.gestalt.gestaltStrings.summary
+import typings.gestalt.gestaltStrings.tertiary
 import typings.gestalt.gestaltStrings.transparent
 import typings.gestalt.gestaltStrings.transparentDarkGray
 import typings.gestalt.gestaltStrings.visible
 import typings.gestalt.gestaltStrings.visuallyHidden
-import typings.gestalt.gestaltStrings.watermelon
-import typings.gestalt.gestaltStrings.white
+import typings.gestalt.gestaltStrings.warningBase
+import typings.gestalt.gestaltStrings.warningWeak
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BoxProps extends StObject {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.ComponentProps<'div'>, 'onClick' | 'className' | 'style' | 'ref'> ]: react.react.ComponentProps<'div'>[P]} */ trait BoxProps
+  extends StObject
+     with RefAttributes[HTMLDivElement] {
   
   var alignContent: js.UndefOr[start | end | center | between | around | evenly | stretch] = js.undefined
   
@@ -85,14 +111,23 @@ trait BoxProps extends StObject {
   
   var alignSelf: js.UndefOr[auto | start | end | center | baseline | stretch] = js.undefined
   
-  var borderStyle: js.UndefOr[sm | lg | shadow | none] = js.undefined
+  /**
+    * Changes the underlying DOM element when needed for accessibility or SEO reasons. Note that currently only block-level elements are available.
+    *
+    * @default 'div'
+    */
+  var as: js.UndefOr[
+    article | aside | details | div | figcaption | figure | footer | header | main | nav | section | summary
+  ] = js.undefined
+  
+  var borderStyle: js.UndefOr[sm | lg | shadow | raisedTopShadow | raisedBottomShadow | none] = js.undefined
   
   var bottom: js.UndefOr[Boolean] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
   var color: js.UndefOr[
-    blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | transparentDarkGray | watermelon | white
+    darkWash | lightWash | transparent | transparentDarkGray | default | infoBase | infoWeak | errorBase | errorWeak | warningBase | warningWeak | successBase | successWeak | recommendationBase | recommendationWeak | shopping | primary | secondary | tertiary | selected | inverse | brand | education | elevationAccent | elevationFloating | elevationRaised | dark | light
   ] = js.undefined
   
   var column: js.UndefOr[UnsignedUpTo12] = js.undefined
@@ -125,10 +160,6 @@ trait BoxProps extends StObject {
   
   var lgMarginEnd: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var lgMarginLeft: js.UndefOr[SignedUpTo12 | auto] = js.undefined
-  
-  var lgMarginRight: js.UndefOr[SignedUpTo12 | auto] = js.undefined
-  
   var lgMarginStart: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
   var lgMarginTop: js.UndefOr[SignedUpTo12 | auto] = js.undefined
@@ -144,10 +175,6 @@ trait BoxProps extends StObject {
   var marginBottom: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
   var marginEnd: js.UndefOr[SignedUpTo12 | auto] = js.undefined
-  
-  var marginLeft: js.UndefOr[SignedUpTo12 | auto] = js.undefined
-  
-  var marginRight: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
   var marginStart: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
@@ -168,10 +195,6 @@ trait BoxProps extends StObject {
   var mdMarginBottom: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
   var mdMarginEnd: js.UndefOr[SignedUpTo12 | auto] = js.undefined
-  
-  var mdMarginLeft: js.UndefOr[SignedUpTo12 | auto] = js.undefined
-  
-  var mdMarginRight: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
   var mdMarginStart: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
@@ -219,10 +242,6 @@ trait BoxProps extends StObject {
   
   var smMarginEnd: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
-  var smMarginLeft: js.UndefOr[SignedUpTo12 | auto] = js.undefined
-  
-  var smMarginRight: js.UndefOr[SignedUpTo12 | auto] = js.undefined
-  
   var smMarginStart: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
   var smMarginTop: js.UndefOr[SignedUpTo12 | auto] = js.undefined
@@ -264,7 +283,13 @@ object BoxProps {
     
     inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
     
-    inline def setBorderStyle(value: sm | lg | shadow | none): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+    inline def setAs(
+      value: article | aside | details | div | figcaption | figure | footer | header | main | nav | section | summary
+    ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    
+    inline def setBorderStyle(value: sm | lg | shadow | raisedTopShadow | raisedBottomShadow | none): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
@@ -277,7 +302,7 @@ object BoxProps {
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setColor(
-      value: blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | transparentDarkGray | watermelon | white
+      value: darkWash | lightWash | transparent | transparentDarkGray | default | infoBase | infoWeak | errorBase | errorWeak | warningBase | warningWeak | successBase | successWeak | recommendationBase | recommendationWeak | shopping | primary | secondary | tertiary | selected | inverse | brand | education | elevationAccent | elevationFloating | elevationRaised | dark | light
     ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
@@ -340,14 +365,6 @@ object BoxProps {
     
     inline def setLgMarginEndUndefined: Self = StObject.set(x, "lgMarginEnd", js.undefined)
     
-    inline def setLgMarginLeft(value: SignedUpTo12 | auto): Self = StObject.set(x, "lgMarginLeft", value.asInstanceOf[js.Any])
-    
-    inline def setLgMarginLeftUndefined: Self = StObject.set(x, "lgMarginLeft", js.undefined)
-    
-    inline def setLgMarginRight(value: SignedUpTo12 | auto): Self = StObject.set(x, "lgMarginRight", value.asInstanceOf[js.Any])
-    
-    inline def setLgMarginRightUndefined: Self = StObject.set(x, "lgMarginRight", js.undefined)
-    
     inline def setLgMarginStart(value: SignedUpTo12 | auto): Self = StObject.set(x, "lgMarginStart", value.asInstanceOf[js.Any])
     
     inline def setLgMarginStartUndefined: Self = StObject.set(x, "lgMarginStart", js.undefined)
@@ -379,14 +396,6 @@ object BoxProps {
     inline def setMarginEnd(value: SignedUpTo12 | auto): Self = StObject.set(x, "marginEnd", value.asInstanceOf[js.Any])
     
     inline def setMarginEndUndefined: Self = StObject.set(x, "marginEnd", js.undefined)
-    
-    inline def setMarginLeft(value: SignedUpTo12 | auto): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
-    
-    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
-    
-    inline def setMarginRight(value: SignedUpTo12 | auto): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
-    
-    inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
     inline def setMarginStart(value: SignedUpTo12 | auto): Self = StObject.set(x, "marginStart", value.asInstanceOf[js.Any])
     
@@ -427,14 +436,6 @@ object BoxProps {
     inline def setMdMarginEnd(value: SignedUpTo12 | auto): Self = StObject.set(x, "mdMarginEnd", value.asInstanceOf[js.Any])
     
     inline def setMdMarginEndUndefined: Self = StObject.set(x, "mdMarginEnd", js.undefined)
-    
-    inline def setMdMarginLeft(value: SignedUpTo12 | auto): Self = StObject.set(x, "mdMarginLeft", value.asInstanceOf[js.Any])
-    
-    inline def setMdMarginLeftUndefined: Self = StObject.set(x, "mdMarginLeft", js.undefined)
-    
-    inline def setMdMarginRight(value: SignedUpTo12 | auto): Self = StObject.set(x, "mdMarginRight", value.asInstanceOf[js.Any])
-    
-    inline def setMdMarginRightUndefined: Self = StObject.set(x, "mdMarginRight", js.undefined)
     
     inline def setMdMarginStart(value: SignedUpTo12 | auto): Self = StObject.set(x, "mdMarginStart", value.asInstanceOf[js.Any])
     
@@ -523,14 +524,6 @@ object BoxProps {
     inline def setSmMarginEnd(value: SignedUpTo12 | auto): Self = StObject.set(x, "smMarginEnd", value.asInstanceOf[js.Any])
     
     inline def setSmMarginEndUndefined: Self = StObject.set(x, "smMarginEnd", js.undefined)
-    
-    inline def setSmMarginLeft(value: SignedUpTo12 | auto): Self = StObject.set(x, "smMarginLeft", value.asInstanceOf[js.Any])
-    
-    inline def setSmMarginLeftUndefined: Self = StObject.set(x, "smMarginLeft", js.undefined)
-    
-    inline def setSmMarginRight(value: SignedUpTo12 | auto): Self = StObject.set(x, "smMarginRight", value.asInstanceOf[js.Any])
-    
-    inline def setSmMarginRightUndefined: Self = StObject.set(x, "smMarginRight", js.undefined)
     
     inline def setSmMarginStart(value: SignedUpTo12 | auto): Self = StObject.set(x, "smMarginStart", value.asInstanceOf[js.Any])
     

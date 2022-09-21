@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "MapState")
 @js.native
-class MapState protected () extends StObject {
+open class MapState protected () extends StObject {
   def this(props: MapStateProps) = this()
   
   def getInteractiveState(): InteractiveState = js.native

@@ -1,21 +1,28 @@
 package typings.rxjs
 
-import typings.rxjs.internalObservableMod.Observable
-import typings.rxjs.typesMod.MonoTypeOperatorFunction
-import typings.rxjs.typesMod.OperatorFunction
+import org.scalablytyped.runtime.TopLevel
+import typings.rxjs.internalTypesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsRaceMod {
   
-  @JSImport("rxjs/internal/operators/race", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/operators/race", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def race[T](observables: (Observable[T] | js.Array[Observable[T]])*): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
-  inline def race[T](observables: js.Array[Observable[T]]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
-  
-  inline def race_TR_OperatorFunction[T, R](observables: (Observable[js.Any] | js.Array[Observable[js.Any]])*): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
-  inline def race_TR_OperatorFunction[T, R](observables: js.Array[Observable[T]]): OperatorFunction[T, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(observables.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, R]]
+  inline def race[T, A /* <: js.Array[Any] */](
+    otherSources: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}
+    */ typings.rxjs.rxjsStrings.race & TopLevel[A]
+    ]
+  ): OperatorFunction[
+    T, 
+    T | (/* import warning: importer.ImportType#apply Failed type conversion: A[number] */ js.Any)
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(otherSources.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[
+    T, 
+    T | (/* import warning: importer.ImportType#apply Failed type conversion: A[number] */ js.Any)
+  ]]
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFileManagerCallbackCommand")
 @js.native
-class ASPxClientFileManagerCallbackCommand ()
+open class ASPxClientFileManagerCallbackCommand ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFileManagerCallbackCommand
 object ASPxClientFileManagerCallbackCommand {

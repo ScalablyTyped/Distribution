@@ -8,15 +8,15 @@ trait ListDataSource
   extends StObject
      with ClientValueObject {
   
-  def get_properties(): js.Any
+  def get_properties(): Any
 }
 object ListDataSource {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
-    get_properties: () => js.Any,
+    fromJson: Any => Unit,
+    get_properties: () => Any,
     get_typeId: () => String,
     writeToXml: (XmlWriter, SerializationContext) => Unit
   ): ListDataSource = {
@@ -26,6 +26,6 @@ object ListDataSource {
   
   extension [Self <: ListDataSource](x: Self) {
     
-    inline def setGet_properties(value: () => js.Any): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
+    inline def setGet_properties(value: () => Any): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
   }
 }

@@ -30,29 +30,30 @@ object traceStateMod {
     def serialize(): String
     
     /**
-      * Adds or updates the TraceState that has the given `key` if it is
-      * present. The new State will always be added in the front of the
-      * list of states.
+      * Create a new TraceState which inherits from this TraceState and has the
+      * given key set.
+      * The new entry will always be added in the front of the list of states.
       *
       * @param key key of the TraceState entry.
       * @param value value of the TraceState entry.
       */
-    def set(key: String, value: String): Unit
+    def set(key: String, value: String): TraceState
     
     /**
-      * Removes the TraceState Entry that has the given `key` if it is present.
+      * Return a new TraceState which inherits from this TraceState but does not
+      * contain the given key.
       *
-      * @param key the key for the TraceState Entry to be removed.
+      * @param key the key for the TraceState entry to be removed.
       */
-    def unset(key: String): Unit
+    def unset(key: String): TraceState
   }
   object TraceState {
     
     inline def apply(
       get: String => js.UndefOr[String],
       serialize: () => String,
-      set: (String, String) => Unit,
-      unset: String => Unit
+      set: (String, String) => TraceState,
+      unset: String => TraceState
     ): TraceState = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), serialize = js.Any.fromFunction0(serialize), set = js.Any.fromFunction2(set), unset = js.Any.fromFunction1(unset))
       __obj.asInstanceOf[TraceState]
@@ -64,9 +65,9 @@ object traceStateMod {
       
       inline def setSerialize(value: () => String): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
       
-      inline def setSet(value: (String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, String) => TraceState): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      inline def setUnset(value: String => Unit): Self = StObject.set(x, "unset", js.Any.fromFunction1(value))
+      inline def setUnset(value: String => TraceState): Self = StObject.set(x, "unset", js.Any.fromFunction1(value))
     }
   }
 }

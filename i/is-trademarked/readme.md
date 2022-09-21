@@ -10,15 +10,12 @@ Check if a word is trademarked.
 | ------------------ | :-------------: |
 | Full name          | is-trademarked |
 | Keywords           | trademarked |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 604 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 66.0 |
+| # stars            | 36.0 |
 
 ## Links
-- [Homepage](https://github.com/egoist/is-trademarked#readme)
-- [Bugs](https://github.com/egoist/is-trademarked/issues)
-- [Repository](https://github.com/egoist/is-trademarked)
 - [Npm](https://www.npmjs.com/package/is-trademarked)
     
 

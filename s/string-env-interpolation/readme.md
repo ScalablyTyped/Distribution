@@ -10,10 +10,10 @@ Use Environment Variables in String
 | ------------------ | :-------------: |
 | Full name          | string-env-interpolation |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 3006024 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7932140.666666667 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/kamilkisiela/string-env-interpolation#readme)

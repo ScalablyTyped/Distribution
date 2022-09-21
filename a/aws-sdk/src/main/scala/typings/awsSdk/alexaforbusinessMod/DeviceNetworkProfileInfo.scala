@@ -14,7 +14,7 @@ trait DeviceNetworkProfileInfo extends StObject {
   /**
     * The time (in epoch) when the certificate expires.
     */
-  var CertificateExpirationTime: js.UndefOr[CertificateTime] = js.undefined
+  var CertificateExpirationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the network profile associated with a device.
@@ -34,7 +34,7 @@ object DeviceNetworkProfileInfo {
     
     inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    inline def setCertificateExpirationTime(value: CertificateTime): Self = StObject.set(x, "CertificateExpirationTime", value.asInstanceOf[js.Any])
+    inline def setCertificateExpirationTime(value: js.Date): Self = StObject.set(x, "CertificateExpirationTime", value.asInstanceOf[js.Any])
     
     inline def setCertificateExpirationTimeUndefined: Self = StObject.set(x, "CertificateExpirationTime", js.undefined)
     

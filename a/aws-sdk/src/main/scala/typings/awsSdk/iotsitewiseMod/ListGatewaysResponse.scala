@@ -27,7 +27,7 @@ object ListGatewaysResponse {
     
     inline def setGatewaySummaries(value: GatewaySummaries): Self = StObject.set(x, "gatewaySummaries", value.asInstanceOf[js.Any])
     
-    inline def setGatewaySummariesVarargs(value: GatewaySummary*): Self = StObject.set(x, "gatewaySummaries", js.Array(value :_*))
+    inline def setGatewaySummariesVarargs(value: GatewaySummary*): Self = StObject.set(x, "gatewaySummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

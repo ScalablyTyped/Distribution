@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BbSize extends StObject {
   
-  var bInfo: js.UndefOr[js.Any] = js.undefined
+  var bInfo: js.UndefOr[Any] = js.undefined
   
   var bbSize: js.UndefOr[Vector3] = js.undefined
   
   var depthSort: js.UndefOr[Boolean] = js.undefined
   
-  var depthSortedFacets: js.UndefOr[js.Any] = js.undefined
+  var depthSortedFacets: js.UndefOr[Any] = js.undefined
   
   var distanceTo: js.UndefOr[Vector3] = js.undefined
   
-  var facetNormals: js.UndefOr[js.Any] = js.undefined
+  var facetNormals: js.UndefOr[Any] = js.undefined
   
-  var facetPartitioning: js.UndefOr[js.Any] = js.undefined
+  var facetPartitioning: js.UndefOr[Any] = js.undefined
   
-  var facetPositions: js.UndefOr[js.Any] = js.undefined
+  var facetPositions: js.UndefOr[Any] = js.undefined
   
   var ratio: js.UndefOr[Double] = js.undefined
   
-  var subDiv: js.UndefOr[js.Any] = js.undefined
+  var subDiv: js.UndefOr[Any] = js.undefined
   
   var useRightHandedSystem: js.UndefOr[Boolean] = js.undefined
 }
@@ -38,7 +38,7 @@ object BbSize {
   
   extension [Self <: BbSize](x: Self) {
     
-    inline def setBInfo(value: js.Any): Self = StObject.set(x, "bInfo", value.asInstanceOf[js.Any])
+    inline def setBInfo(value: Any): Self = StObject.set(x, "bInfo", value.asInstanceOf[js.Any])
     
     inline def setBInfoUndefined: Self = StObject.set(x, "bInfo", js.undefined)
     
@@ -50,7 +50,7 @@ object BbSize {
     
     inline def setDepthSortUndefined: Self = StObject.set(x, "depthSort", js.undefined)
     
-    inline def setDepthSortedFacets(value: js.Any): Self = StObject.set(x, "depthSortedFacets", value.asInstanceOf[js.Any])
+    inline def setDepthSortedFacets(value: Any): Self = StObject.set(x, "depthSortedFacets", value.asInstanceOf[js.Any])
     
     inline def setDepthSortedFacetsUndefined: Self = StObject.set(x, "depthSortedFacets", js.undefined)
     
@@ -58,15 +58,15 @@ object BbSize {
     
     inline def setDistanceToUndefined: Self = StObject.set(x, "distanceTo", js.undefined)
     
-    inline def setFacetNormals(value: js.Any): Self = StObject.set(x, "facetNormals", value.asInstanceOf[js.Any])
+    inline def setFacetNormals(value: Any): Self = StObject.set(x, "facetNormals", value.asInstanceOf[js.Any])
     
     inline def setFacetNormalsUndefined: Self = StObject.set(x, "facetNormals", js.undefined)
     
-    inline def setFacetPartitioning(value: js.Any): Self = StObject.set(x, "facetPartitioning", value.asInstanceOf[js.Any])
+    inline def setFacetPartitioning(value: Any): Self = StObject.set(x, "facetPartitioning", value.asInstanceOf[js.Any])
     
     inline def setFacetPartitioningUndefined: Self = StObject.set(x, "facetPartitioning", js.undefined)
     
-    inline def setFacetPositions(value: js.Any): Self = StObject.set(x, "facetPositions", value.asInstanceOf[js.Any])
+    inline def setFacetPositions(value: Any): Self = StObject.set(x, "facetPositions", value.asInstanceOf[js.Any])
     
     inline def setFacetPositionsUndefined: Self = StObject.set(x, "facetPositions", js.undefined)
     
@@ -74,7 +74,7 @@ object BbSize {
     
     inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
-    inline def setSubDiv(value: js.Any): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
+    inline def setSubDiv(value: Any): Self = StObject.set(x, "subDiv", value.asInstanceOf[js.Any])
     
     inline def setSubDivUndefined: Self = StObject.set(x, "subDiv", js.undefined)
     

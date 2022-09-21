@@ -9,11 +9,11 @@ Utilities.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | belter |
-| Keywords           | template |
-| # releases         | 59 |
-| # dependents       | 32 |
-| # downloads        | 1771850 |
-| # stars            | 0 |
+| Keywords           | browser, utilities, tools |
+| # releases         | 65 |
+| # dependents       | 0.0 |
+| # downloads        | 202216.66666666666 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/krakenjs/belter#readme)

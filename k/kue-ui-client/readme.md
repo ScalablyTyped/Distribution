@@ -10,10 +10,10 @@ Small description for client goes here
 | ------------------ | :-------------: |
 | Full name          | kue-ui-client |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 39452 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61828.666666666664 |
+| # stars            | 343.0 |
 
 ## Links
 - [Homepage](https://github.com/stonecircle/kue-ui#readme)

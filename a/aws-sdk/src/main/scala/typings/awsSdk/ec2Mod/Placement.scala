@@ -19,7 +19,7 @@ trait Placement extends StObject {
   /**
     * The name of the placement group the instance is in.
     */
-  var GroupName: js.UndefOr[String] = js.undefined
+  var GroupName: js.UndefOr[PlacementGroupName] = js.undefined
   
   /**
     * The ID of the Dedicated Host on which the instance resides. This parameter is not supported for the ImportInstance command. This parameter is not supported by CreateFleet.
@@ -32,7 +32,7 @@ trait Placement extends StObject {
   var HostResourceGroupArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The number of the partition the instance is in. Valid only if the placement group strategy is set to partition. This parameter is not supported by CreateFleet.
+    * The number of the partition that the instance is in. Valid only if the placement group strategy is set to partition. This parameter is not supported by CreateFleet.
     */
   var PartitionNumber: js.UndefOr[Integer] = js.undefined
   
@@ -42,7 +42,7 @@ trait Placement extends StObject {
   var SpreadDomain: js.UndefOr[String] = js.undefined
   
   /**
-    * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. The host tenancy is not supported for the ImportInstance command. This parameter is not supported by CreateFleet.
+    * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. The host tenancy is not supported for the ImportInstance command. This parameter is not supported by CreateFleet. T3 instances that use the unlimited CPU credit option do not support host tenancy.
     */
   var Tenancy: js.UndefOr[typings.awsSdk.ec2Mod.Tenancy] = js.undefined
 }
@@ -63,7 +63,7 @@ object Placement {
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    inline def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     

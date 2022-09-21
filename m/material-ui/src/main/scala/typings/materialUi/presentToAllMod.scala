@@ -10,10 +10,10 @@ object presentToAllMod {
   
   @JSImport("material-ui/svg-icons/communication/present-to-all", JSImport.Default)
   @js.native
-  class default () extends CommunicationPresentToAll
+  open class default () extends CommunicationPresentToAll
   
   @JSImport("material-ui/svg-icons/communication/present-to-all", "CommunicationPresentToAll")
   @js.native
-  class CommunicationPresentToAll ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationPresentToAll ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

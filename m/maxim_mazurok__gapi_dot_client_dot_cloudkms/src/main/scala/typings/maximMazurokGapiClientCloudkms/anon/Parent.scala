@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientCloudkms.anon
 
+import typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms.CryptoKeyVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +20,6 @@ trait Parent extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Required. It must be unique within a KeyRing and match the regular expression `[a-zA-Z0-9_-]{1,63}` */
-  var cryptoKeyId: js.UndefOr[String] = js.undefined
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -31,7 +29,7 @@ trait Parent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the KeyRing associated with the CryptoKeys. */
+  /** Required. The name of the CryptoKey associated with the CryptoKeyVersions. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -40,11 +38,8 @@ trait Parent extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /**
-    * If set to true, the request will create a CryptoKey without any CryptoKeyVersions. You must manually call CreateCryptoKeyVersion or ImportCryptoKeyVersion before you can use
-    * this CryptoKey.
-    */
-  var skipInitialVersionCreation: js.UndefOr[Boolean] = js.undefined
+  /** Request body */
+  var resource: CryptoKeyVersion
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -54,8 +49,8 @@ trait Parent extends StObject {
 }
 object Parent {
   
-  inline def apply(parent: String): Parent = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(parent: String, resource: CryptoKeyVersion): Parent = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]
   }
   
@@ -76,10 +71,6 @@ object Parent {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
-    
-    inline def setCryptoKeyId(value: String): Self = StObject.set(x, "cryptoKeyId", value.asInstanceOf[js.Any])
-    
-    inline def setCryptoKeyIdUndefined: Self = StObject.set(x, "cryptoKeyId", js.undefined)
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -103,9 +94,7 @@ object Parent {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setSkipInitialVersionCreation(value: Boolean): Self = StObject.set(x, "skipInitialVersionCreation", value.asInstanceOf[js.Any])
-    
-    inline def setSkipInitialVersionCreationUndefined: Self = StObject.set(x, "skipInitialVersionCreation", js.undefined)
+    inline def setResource(value: CryptoKeyVersion): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

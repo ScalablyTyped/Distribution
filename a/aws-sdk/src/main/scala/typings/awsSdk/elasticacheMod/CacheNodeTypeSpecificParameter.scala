@@ -68,7 +68,7 @@ object CacheNodeTypeSpecificParameter {
     
     inline def setCacheNodeTypeSpecificValuesUndefined: Self = StObject.set(x, "CacheNodeTypeSpecificValues", js.undefined)
     
-    inline def setCacheNodeTypeSpecificValuesVarargs(value: CacheNodeTypeSpecificValue*): Self = StObject.set(x, "CacheNodeTypeSpecificValues", js.Array(value :_*))
+    inline def setCacheNodeTypeSpecificValuesVarargs(value: CacheNodeTypeSpecificValue*): Self = StObject.set(x, "CacheNodeTypeSpecificValues", js.Array(value*))
     
     inline def setChangeType(value: ChangeType): Self = StObject.set(x, "ChangeType", value.asInstanceOf[js.Any])
     

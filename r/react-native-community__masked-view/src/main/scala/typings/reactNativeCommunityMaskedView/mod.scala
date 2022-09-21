@@ -11,17 +11,17 @@ object mod {
   
   @JSImport("@react-native-community/masked-view", JSImport.Default)
   @js.native
-  class default () extends MaskedView
+  open class default () extends MaskedView
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @js.native
   trait MaskedView
-    extends Component[MaskedViewProps, js.Object, js.Any]
+    extends Component[MaskedViewProps, js.Object, Any]
   
   /**
     * @see https://github.com/react-native-community/react-native-masked-view
     */
-  type MaskedViewComponent = Component[MaskedViewProps, js.Object, js.Any]
+  type MaskedViewComponent = Component[MaskedViewProps, js.Object, Any]
   
   trait MaskedViewProps
     extends StObject

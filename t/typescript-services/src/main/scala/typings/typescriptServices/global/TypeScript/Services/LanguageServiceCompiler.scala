@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.LanguageServiceCompiler")
 @js.native
-class LanguageServiceCompiler protected ()
+open class LanguageServiceCompiler protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.LanguageServiceCompiler {
   def this(host: ILanguageServiceHost) = this()
@@ -32,7 +32,7 @@ class LanguageServiceCompiler protected ()
   override def compilationSettings(): ImmutableCompilationSettings = js.native
   
   /* private */ /* CompleteClass */
-  var compiler: js.Any = js.native
+  var compiler: Any = js.native
   
   /* CompleteClass */
   override def emit(fileName: String, resolvePath: js.Function1[/* path */ String, String]): EmitOutput = js.native
@@ -83,26 +83,26 @@ class LanguageServiceCompiler protected ()
   override def getVisibleMemberSymbolsFromAST(ast: AST, document: Document): PullVisibleSymbolsInfo = js.native
   
   /* private */ /* CompleteClass */
-  var host: js.Any = js.native
+  var host: Any = js.native
   
   /* private */ /* CompleteClass */
-  var hostCache: js.Any = js.native
+  var hostCache: Any = js.native
   
   /* private */ /* CompleteClass */
-  var logger: js.Any = js.native
+  var logger: Any = js.native
   
   /* CompleteClass */
   override def pullGetDeclInformation(decl: PullDecl, ast: AST, document: Document): PullSymbolInfo = js.native
   
   /* private */ /* CompleteClass */
-  override def synchronizeHostData(): js.Any = js.native
+  override def synchronizeHostData(): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def synchronizeHostDataWorker(): js.Any = js.native
+  override def synchronizeHostDataWorker(): Any = js.native
   
   /* CompleteClass */
   override def topLevelDeclaration(fileName: String): PullDecl = js.native
   
   /* private */ /* CompleteClass */
-  override def tryUpdateFile(compiler: js.Any, fileName: js.Any): js.Any = js.native
+  override def tryUpdateFile(compiler: Any, fileName: Any): Any = js.native
 }

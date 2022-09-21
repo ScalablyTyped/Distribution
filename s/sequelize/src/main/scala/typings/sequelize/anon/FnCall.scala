@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCall extends StObject {
   
-  def apply(`object`: js.Any, otherArgs: js.Any*): js.Any = js.native
+  def apply(`object`: Any, otherArgs: Any*): Any = js.native
   def apply[TObject, TSource](`object`: TObject, source: TSource): TObject & TSource = js.native
   def apply[TObject, TSource1, TSource2](`object`: TObject, source1: TSource1, source2: TSource2): TObject & TSource1 & TSource2 = js.native
   def apply[TObject, TSource1, TSource2, TSource3](`object`: TObject, source1: TSource1, source2: TSource2, source3: TSource3): TObject & TSource1 & TSource2 & TSource3 = js.native

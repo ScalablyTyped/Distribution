@@ -18,14 +18,14 @@ object mod {
   /**
     * Creates a new Boom object using the provided message
     */
-  class Boom[Data] ()
+  open class Boom[Data] ()
     extends StObject
        with Error {
     def this(message: String) = this()
-    def this(message: Error) = this()
+    def this(message: js.Error) = this()
     def this(message: String, options: Options[Data]) = this()
+    def this(message: js.Error, options: Options[Data]) = this()
     def this(message: Unit, options: Options[Data]) = this()
-    def this(message: Error, options: Options[Data]) = this()
     
     /**
       * Custom error data with additional information specific to the error type
@@ -42,9 +42,11 @@ object mod {
       */
     var isServer: Boolean = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -87,8 +89,8 @@ object mod {
   inline def badRequest[Data](message: String, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   inline def badRequest[Data](message: Unit, data: Data): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("badRequest")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  inline def boomify[Data, Decoration](err: Error): Boom[Data] & Decoration = ^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(err.asInstanceOf[js.Any]).asInstanceOf[Boom[Data] & Decoration]
-  inline def boomify[Data, Decoration](err: Error, options: Options[Data] & Decorate[Decoration]): Boom[Data] & Decoration = (^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(err.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boom[Data] & Decoration]
+  inline def boomify[Data, Decoration](err: js.Error): Boom[Data] & Decoration = ^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(err.asInstanceOf[js.Any]).asInstanceOf[Boom[Data] & Decoration]
+  inline def boomify[Data, Decoration](err: js.Error, options: Options[Data] & Decorate[Decoration]): Boom[Data] & Decoration = (^.asInstanceOf[js.Dynamic].applyDynamic("boomify")(err.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boom[Data] & Decoration]
   
   inline def clientTimeout[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")().asInstanceOf[Boom[Data]]
   inline def clientTimeout[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("clientTimeout")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
@@ -139,8 +141,8 @@ object mod {
   inline def internal[Data](message: Unit, data: Data, statusCode: Double): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   inline def internal[Data](message: Unit, data: Unit, statusCode: Double): Boom[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("internal")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[Boom[Data]]
   
-  inline def isBoom(err: Error): /* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoom")(err.asInstanceOf[js.Any]).asInstanceOf[/* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean]
-  inline def isBoom(err: Error, statusCode: Double): /* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoom")(err.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[/* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean]
+  inline def isBoom(obj: Any): /* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoom")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean]
+  inline def isBoom(obj: Any, statusCode: Double): /* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoom")(obj.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[/* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean]
   
   inline def lengthRequired[Data](): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")().asInstanceOf[Boom[Data]]
   inline def lengthRequired[Data](message: String): Boom[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("lengthRequired")(message.asInstanceOf[js.Any]).asInstanceOf[Boom[Data]]
@@ -374,7 +376,7 @@ object mod {
     /**
       * An object containing any HTTP headers where each key is a header name and value is the header content
       */
-    var headers: js.Object
+    var headers: StringDictionary[js.UndefOr[String | js.Array[String] | Double]]
     
     /**
       * The formatted object used as the response payload (stringified)
@@ -388,14 +390,18 @@ object mod {
   }
   object Output {
     
-    inline def apply(headers: js.Object, payload: Payload, statusCode: Double): Output = {
+    inline def apply(
+      headers: StringDictionary[js.UndefOr[String | js.Array[String] | Double]],
+      payload: Payload,
+      statusCode: Double
+    ): Output = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
     }
     
     extension [Self <: Output](x: Self) {
       
-      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.UndefOr[String | js.Array[String] | Double]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -403,7 +409,12 @@ object mod {
     }
   }
   
-  trait Payload extends StObject {
+  trait Payload
+    extends StObject
+       with /**
+    * Custom properties
+    */
+  /* key */ StringDictionary[Any] {
     
     /**
       * The HTTP status message derived from statusCode
@@ -411,7 +422,7 @@ object mod {
     var error: String
     
     /**
-      The error message derived from error.message
+      * The error message derived from error.message
       */
     var message: String
     

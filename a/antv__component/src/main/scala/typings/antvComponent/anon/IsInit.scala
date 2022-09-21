@@ -12,13 +12,13 @@ trait IsInit extends StObject {
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
   var defaultCfg: TextBackground
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -36,7 +36,7 @@ trait IsInit extends StObject {
   
   var offsetY: Double
   
-  var text: js.Any
+  var text: Any
   
   var `type`: String
   
@@ -50,10 +50,10 @@ object IsInit {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    container: js.Any,
+    container: Any,
     defaultCfg: TextBackground,
-    events: js.Any,
-    group: js.Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -62,7 +62,7 @@ object IsInit {
     name: String,
     offsetX: Double,
     offsetY: Double,
-    text: js.Any,
+    text: Any,
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean
@@ -80,13 +80,13 @@ object IsInit {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setDefaultCfg(value: TextBackground): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -104,7 +104,7 @@ object IsInit {
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

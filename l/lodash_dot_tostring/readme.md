@@ -10,10 +10,10 @@ The lodash method `_.toString` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.tostring |
 | Keywords           | lodash-modularized, tostring |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 1458112 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 136785.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

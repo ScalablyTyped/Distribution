@@ -25,20 +25,27 @@ trait PageToken extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name of the project associated with the service accounts, such as `projects/my-project-123`. */
-  var name: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Optional limit on the number of service accounts to include in the response. Further accounts can subsequently be obtained by including the
-    * ListServiceAccountsResponse.next_page_token in a subsequent request. The default is 20, and the maximum is 100.
-    */
+  /** Optional limit on the number of roles to include in the response. The default is 300, and the maximum is 1,000. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** Optional pagination token returned in an earlier ListServiceAccountsResponse.next_page_token. */
+  /** Optional pagination token returned in an earlier ListRolesResponse. */
   var pageToken: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The `parent` parameter's value depends on the target resource for the request, namely [`roles`](https://cloud.google.com/iam/reference/rest/v1/roles),
+    * [`projects`](https://cloud.google.com/iam/reference/rest/v1/projects.roles), or [`organizations`](https://cloud.google.com/iam/reference/rest/v1/organizations.roles). Each
+    * resource type's `parent` value format is described below: * [`roles.list()`](https://cloud.google.com/iam/reference/rest/v1/roles/list): An empty string. This method doesn't
+    * require a resource; it simply returns all [predefined roles](https://cloud.google.com/iam/docs/understanding-roles#predefined_roles) in Cloud IAM. Example request URL:
+    * `https://iam.googleapis.com/v1/roles` * [`projects.roles.list()`](https://cloud.google.com/iam/reference/rest/v1/projects.roles/list): `projects/{PROJECT_ID}`. This method lists
+    * all project-level [custom roles](https://cloud.google.com/iam/docs/understanding-custom-roles). Example request URL: `https://iam.googleapis.com/v1/projects/{PROJECT_ID}/roles`
+    * * [`organizations.roles.list()`](https://cloud.google.com/iam/reference/rest/v1/organizations.roles/list): `organizations/{ORGANIZATION_ID}`. This method lists all
+    * organization-level [custom roles](https://cloud.google.com/iam/docs/understanding-custom-roles). Example request URL:
+    * `https://iam.googleapis.com/v1/organizations/{ORGANIZATION_ID}/roles` Note: Wildcard (*) values are invalid; you must specify a complete project ID or organization ID.
+    */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -46,16 +53,25 @@ trait PageToken extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Include Roles that have been deleted. */
+  var showDeleted: js.UndefOr[Boolean] = js.undefined
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional view for the returned Role objects. When `FULL` is specified, the `includedPermissions` field is returned, which includes a list of all permissions in the role. The
+    * default value is `BASIC`, which does not return the `includedPermissions` field.
+    */
+  var view: js.UndefOr[String] = js.undefined
 }
 object PageToken {
   
-  inline def apply(name: String): PageToken = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(parent: String): PageToken = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageToken]
   }
   
@@ -85,8 +101,6 @@ object PageToken {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -99,6 +113,8 @@ object PageToken {
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -107,6 +123,10 @@ object PageToken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
+    inline def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
+    
+    inline def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
+    
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
     inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
@@ -114,5 +134,9 @@ object PageToken {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

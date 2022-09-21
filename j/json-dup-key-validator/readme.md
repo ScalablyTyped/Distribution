@@ -10,10 +10,10 @@ A json validator that has an option to check for duplicated keys
 | ------------------ | :-------------: |
 | Full name          | json-dup-key-validator |
 | Keywords           | jsonvalidator, json, validator, validation |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 1778623 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 359961.3333333333 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/jackyjieliu/json-dup-key-validator)

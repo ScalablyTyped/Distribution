@@ -16,7 +16,7 @@ object util {
     */
   @JSGlobal("H.util.Cache")
   @js.native
-  class Cache protected ()
+  open class Cache protected ()
     extends StObject
        with typings.heremaps.H.util.Cache {
     /**
@@ -26,16 +26,16 @@ object util {
       * @param opt_filter {(function(string, ?, number): boolean)=} - A function to filter data elements that are not to be cached
       */
     def this(maxSize: Double) = this()
-    def this(maxSize: Double, opt_onDrop: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit]) = this()
+    def this(maxSize: Double, opt_onDrop: js.Function3[/* s */ String, /* i */ Any, /* n */ Double, Unit]) = this()
     def this(
       maxSize: Double,
-      opt_onDrop: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit],
-      opt_filter: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Boolean]
+      opt_onDrop: js.Function3[/* s */ String, /* i */ Any, /* n */ Double, Unit],
+      opt_filter: js.Function3[/* s */ String, /* i */ Any, /* n */ Double, Boolean]
     ) = this()
     def this(
       maxSize: Double,
       opt_onDrop: Unit,
-      opt_filter: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Boolean]
+      opt_filter: js.Function3[/* s */ String, /* i */ Any, /* n */ Double, Boolean]
     ) = this()
   }
   
@@ -48,7 +48,7 @@ object util {
     */
   @JSGlobal("H.util.ChangeEvent")
   @js.native
-  class ChangeEvent protected ()
+  open class ChangeEvent protected ()
     extends StObject
        with typings.heremaps.H.util.ChangeEvent {
     /**
@@ -57,10 +57,10 @@ object util {
       * @param newValue {*} - The new value of the property
       * @param oldValue {*} - The previous value of the property
       */
-    def this(`type`: String, newValue: js.Any, oldValue: js.Any) = this()
+    def this(`type`: String, newValue: Any, oldValue: Any) = this()
     
     /* CompleteClass */
-    var currentTarget: js.Any = js.native
+    var currentTarget: Any = js.native
     
     /* CompleteClass */
     var defaultPrevented: Boolean = js.native
@@ -78,7 +78,7 @@ object util {
     override def stopPropagation(): Unit = js.native
     
     /* CompleteClass */
-    var target: js.Any = js.native
+    var target: Any = js.native
     
     /* CompleteClass */
     var `type`: String = js.native
@@ -94,7 +94,7 @@ object util {
     * Constructor
     * @param opt_options {H.util.ContextItem.Options=} - The values to initialize this context item
     */
-  class ContextItem ()
+  open class ContextItem ()
     extends StObject
        with typings.heremaps.H.util.ContextItem {
     def this(opt_options: Options) = this()
@@ -120,7 +120,7 @@ object util {
   /**
     * Constructor
     */
-  class Disposable ()
+  open class Disposable ()
     extends StObject
        with typings.heremaps.H.util.Disposable
   
@@ -133,7 +133,7 @@ object util {
     */
   @JSGlobal("H.util.Event")
   @js.native
-  class Event protected ()
+  open class Event protected ()
     extends StObject
        with typings.heremaps.H.util.Event {
     /**
@@ -142,10 +142,10 @@ object util {
       * @param opt_target {Object=} - Reference to the object that is the target of this event. It has to implement the {@link EventTargetInstance} interface.
       */
     def this(`type`: String) = this()
-    def this(`type`: String, opt_target: js.Any) = this()
+    def this(`type`: String, opt_target: Any) = this()
     
     /* CompleteClass */
-    var currentTarget: js.Any = js.native
+    var currentTarget: Any = js.native
     
     /* CompleteClass */
     var defaultPrevented: Boolean = js.native
@@ -163,7 +163,7 @@ object util {
     override def stopPropagation(): Unit = js.native
     
     /* CompleteClass */
-    var target: js.Any = js.native
+    var target: Any = js.native
     
     /* CompleteClass */
     var `type`: String = js.native
@@ -177,7 +177,7 @@ object util {
   /**
     * Constructor
     */
-  class EventTarget ()
+  open class EventTarget ()
     extends StObject
        with typings.heremaps.H.util.EventTarget
   
@@ -190,7 +190,7 @@ object util {
     */
   @JSGlobal("H.util.OList")
   @js.native
-  class OList ()
+  open class OList ()
     extends StObject
        with typings.heremaps.H.util.OList
   object OList {
@@ -204,7 +204,7 @@ object util {
       */
     @JSGlobal("H.util.OList.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends StObject
          with typings.heremaps.H.util.OList.Event {
       /**
@@ -220,13 +220,13 @@ object util {
         list: typings.heremaps.H.util.OList,
         `type`: String,
         idx: Double,
-        added: js.Any,
-        removed: js.Any,
-        moved: js.Any
+        added: Any,
+        removed: Any,
+        moved: Any
       ) = this()
       
       /* CompleteClass */
-      var currentTarget: js.Any = js.native
+      var currentTarget: Any = js.native
       
       /* CompleteClass */
       var defaultPrevented: Boolean = js.native
@@ -244,7 +244,7 @@ object util {
       override def stopPropagation(): Unit = js.native
       
       /* CompleteClass */
-      var target: js.Any = js.native
+      var target: Any = js.native
       
       /* CompleteClass */
       var `type`: String = js.native
@@ -261,7 +261,7 @@ object util {
     * @param opt_onprogress {function(H.util.Request)=} - A callback to invoke every time when the request's progress state changes
     * @param opt_total {number=} - The total number of processing steps to complete this request, default is 1
     */
-  class Request ()
+  open class Request ()
     extends StObject
        with typings.heremaps.H.util.Request {
     def this(opt_onprogress: js.Function1[/* req */ typings.heremaps.H.util.Request, Unit]) = this()
@@ -327,7 +327,7 @@ object util {
       */
     @JSGlobal("H.util.animation.ease")
     @js.native
-    class ease ()
+    open class ease ()
       extends StObject
          with typings.heremaps.H.util.animation.ease
     object ease {

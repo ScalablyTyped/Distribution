@@ -3,7 +3,6 @@ package typings.guacamoleClient
 import typings.guacamoleClient.outputStreamMod.OutputStream
 import typings.guacamoleClient.statusMod.Status
 import typings.std.Blob
-import typings.std.DOMError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object blobWriterMod {
   
   @JSImport("guacamole-client/lib/BlobWriter", "BlobWriter")
   @js.native
-  class BlobWriter protected () extends StObject {
+  open class BlobWriter protected () extends StObject {
     /**
       * @param stream The stream that data will be written to.
       */
@@ -40,7 +39,7 @@ object blobWriterMod {
       * @param offset The offset of the failed read attempt within the blob, in bytes.
       * @param error The error that occurred.
       */
-    var onerror: Null | (js.Function3[/* blob */ Blob, /* offset */ Double, /* error */ DOMError, Unit]) = js.native
+    var onerror: Null | (js.Function3[/* blob */ Blob, /* offset */ Double, /* error */ js.Error, Unit]) = js.native
     
     /**
       * Fired for each successfully-read chunk of data as a blob is being sent via sendBlob().

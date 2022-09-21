@@ -1,6 +1,6 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.IHandle
+import typings.arcgisJsApi.arcgisJsApiStrings.`3d`
 import typings.arcgisJsApi.arcgisJsApiStrings.global
 import typings.arcgisJsApi.arcgisJsApiStrings.high
 import typings.arcgisJsApi.arcgisJsApiStrings.local
@@ -20,9 +20,20 @@ trait SceneView
   /**
     * Allows the view to be partially or fully transparent when composited with the webpage elements behind it.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#alphaCompositingEnabled)
     */
   var alphaCompositingEnabled: Boolean = js.native
+  
+  /**
+    * Allows for adding analyses directly to the default analyses in the View.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#analyses)
+    */
+  var analyses: Collection[
+    DirectLineMeasurementAnalysis | AreaMeasurementAnalysis | SliceAnalysis | LineOfSightAnalysis
+  ] = js.native
   
   /**
     * The observation point from which the visible portion (or perspective) of the SceneView is determined.
@@ -62,17 +73,26 @@ trait SceneView
   /**
     * The extent represents the visible portion of a [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) within the view as an instance of [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html).
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#extent)
     */
   var extent: Extent = js.native
+  
+  /**
+    * Applies a display filter on the view for a specific set of floor levels.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#floors)
+    */
+  var floors: Collection[String] = js.native
   
   /**
     * Sets the view to a given target.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo)
     */
-  def goTo(target: GoToTarget3D): js.Promise[js.Any] = js.native
-  def goTo(target: GoToTarget3D, options: GoToOptions3D): js.Promise[js.Any] = js.native
+  def goTo(target: GoToTarget3D): js.Promise[Any] = js.native
+  def goTo(target: GoToTarget3D, options: GoToOptions3D): js.Promise[Any] = js.native
   
   /**
     * The view for the ground of the map.
@@ -89,7 +109,7 @@ trait SceneView
   var highlightOptions: SceneViewHighlightOptions = js.native
   
   /**
-    * Returns graphics that intersect the specified screen coordinate.
+    * Returns [hit test results](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult) from each layer that intersects the specified screen coordinates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#hitTest)
     */
@@ -97,11 +117,6 @@ trait SceneView
   def hitTest(screenPoint: SceneViewScreenPoint, options: SceneViewHitTestOptions): js.Promise[SceneViewHitTestResult] = js.native
   def hitTest(screenPoint: MouseEvent): js.Promise[SceneViewHitTestResult] = js.native
   def hitTest(screenPoint: MouseEvent, options: SceneViewHitTestOptions): js.Promise[SceneViewHitTestResult] = js.native
-  
-  def on(`type`: String, modifiersOrHandler: js.Array[String], handler: EventHandler): IHandle = js.native
-  def on(`type`: String, modifiersOrHandler: EventHandler, handler: EventHandler): IHandle = js.native
-  def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String], handler: EventHandler): IHandle = js.native
-  def on(`type`: js.Array[String], modifiersOrHandler: EventHandler, handler: EventHandler): IHandle = js.native
   
   /**
     * This property contains performance information in a SceneView like global memory usage and additional details for layers about memory consumption and number of features.
@@ -150,7 +165,17 @@ trait SceneView
   def toScreen(point: Point): SceneViewScreenPoint = js.native
   
   /**
+    * The type of the view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#type)
+    */
+  @JSName("type")
+  val type_SceneView: `3d` = js.native
+  
+  /**
     * The viewing mode (`local` or `global`).
+    *
+    * @default global
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewingMode)
     */
@@ -162,6 +187,31 @@ trait SceneView
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewpoint)
     */
   var viewpoint: Viewpoint = js.native
+  
+  /**
+    * Gets the analysis view created for the given analysis object.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#whenAnalysisView)
+    */
+  def whenAnalysisView(analysis: AreaMeasurementAnalysis): js.Promise[AreaMeasurementAnalysisView3D] = js.native
+  /**
+    * Gets the analysis view created for the given analysis object.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#whenAnalysisView)
+    */
+  def whenAnalysisView(analysis: DirectLineMeasurementAnalysis): js.Promise[DirectLineMeasurementAnalysisView3D] = js.native
+  /**
+    * Gets the analysis view created for the given analysis object.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#whenAnalysisView)
+    */
+  def whenAnalysisView(analysis: LineOfSightAnalysis): js.Promise[LineOfSightAnalysisView3D] = js.native
+  /**
+    * Gets the analysis view created for the given analysis object.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#whenAnalysisView)
+    */
+  def whenAnalysisView(analysis: SliceAnalysis): js.Promise[SliceAnalysisView3D] = js.native
   
   /**
     * Represents the level of detail (LOD) at the center of the view.

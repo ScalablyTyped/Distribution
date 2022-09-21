@@ -1,42 +1,46 @@
 package typings.slackMock.mod
 
+import typings.nock.mod.ReplyHeaders
+import typings.node.httpMod.IncomingHttpHeaders
+import typings.node.urlMod.Url
+import typings.slackMock.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply(): typings.slackMock.mod.Instance_ = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.slackMock.mod.Instance_]
-inline def apply(config: typings.slackMock.mod.ConfigOptions): typings.slackMock.mod.Instance_ = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.slackMock.mod.Instance_]
+inline def apply(): Instance_ = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance_]
+inline def apply(config: ConfigOptions): Instance_ = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Instance_]
 
-inline def instance: typings.slackMock.mod.Instance_ = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].selectDynamic("instance").asInstanceOf[typings.slackMock.mod.Instance_]
-inline def instance_=(x: typings.slackMock.mod.Instance_): scala.Unit = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+inline def instance: Instance_ = ^.asInstanceOf[js.Dynamic].selectDynamic("instance").asInstanceOf[Instance_]
+inline def instance_=(x: Instance_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
 
-type EventHttpHeaders = typings.node.httpMod.IncomingHttpHeaders
+type EventHttpHeaders = IncomingHttpHeaders
 
 // Events
-type EventUrl = java.lang.String | typings.node.urlMod.Url
+type EventUrl = String | Url
 
-type IncomingWebhookHttpHeaders = typings.nock.mod.ReplyHeaders
+type IncomingWebhookHttpHeaders = ReplyHeaders
 
 // Incoming Webhooks
-type IncomingWebhookUrl = java.lang.String
+type IncomingWebhookUrl = String
 
-type InteractiveButtonHttpHeaders = typings.nock.mod.ReplyHeaders
+type InteractiveButtonHttpHeaders = ReplyHeaders
 
 // Interactive Buttons
-type InteractiveButtonUrl = java.lang.String | typings.node.urlMod.Url
+type InteractiveButtonUrl = String | Url
 
-type OutgoingWebhookHttpHeaders = typings.node.httpMod.IncomingHttpHeaders
+type OutgoingWebhookHttpHeaders = IncomingHttpHeaders
 
 // Outgoing Webhooks
-type OutgoingWebhookUrl = java.lang.String | typings.node.urlMod.Url
+type OutgoingWebhookUrl = String | Url
 
-type SlashCommandHttpHeaders = typings.node.httpMod.IncomingHttpHeaders
+type SlashCommandHttpHeaders = IncomingHttpHeaders
 
 // Slash Commands
-type SlashCommandUrl = java.lang.String | typings.node.urlMod.Url
+type SlashCommandUrl = String | Url
 
-type WebHttpHeaders = typings.nock.mod.ReplyHeaders
+type WebHttpHeaders = ReplyHeaders
 
 // Web
-type WebUrl = java.lang.String
+type WebUrl = String

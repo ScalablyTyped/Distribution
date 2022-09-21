@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Foundation.Uri")
 @js.native
-class Uri protected ()
+open class Uri protected ()
   extends StObject
      with typings.winrt.Windows.Foundation.Uri {
   def this(uri: String) = this()

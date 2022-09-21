@@ -1,6 +1,7 @@
 package typings.tabris.anon
 
 import typings.tabris.mod.ImageValue
+import typings.tabris.mod.JSXDefaultChildren
 import typings.tabris.tabrisStrings.cancel
 import typings.tabris.tabrisStrings.default
 import typings.tabris.tabrisStrings.destructive
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Style extends StObject {
   
-  var children: js.UndefOr[String] = js.undefined
+  var children: js.UndefOr[JSXDefaultChildren] = js.undefined
   
   var image: js.UndefOr[ImageValue] = js.undefined
   
@@ -27,9 +28,11 @@ object Style {
   
   extension [Self <: Style](x: Self) {
     
-    inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: JSXDefaultChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (String | (Cid & js.Object))*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setImage(value: ImageValue): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

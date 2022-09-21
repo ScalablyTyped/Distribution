@@ -10,15 +10,12 @@ PhoneGap command-line interface and node.js library.
 | ------------------ | :-------------: |
 | Full name          | phonegap |
 | Keywords           | cli, cordova, phonegap, phonegap build, phonegap/build |
-| # releases         | 3 |
-| # dependents       | 13 |
-| # downloads        | 148285 |
-| # stars            | 46 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2590.3333333333335 |
+| # stars            | 487.0 |
 
 ## Links
-- [Homepage](http://github.com/phonegap/phonegap-cli)
-- [Bugs](https://github.com/phonegap/phonegap-cli/issues)
-- [Repository](https://github.com/phonegap/phonegap-cli)
 - [Npm](https://www.npmjs.com/package/phonegap)
     
 

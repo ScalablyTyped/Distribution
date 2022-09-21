@@ -10,7 +10,7 @@ object completionMod {
   
   @JSImport("ionic/commands/completion", "CompletionCommand")
   @js.native
-  class CompletionCommand protected () extends Command {
+  open class CompletionCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

@@ -60,7 +60,7 @@ object mod {
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      inline def setGroupVarargs(value: EmailAddress*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: EmailAddress*): Self = StObject.set(x, "group", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

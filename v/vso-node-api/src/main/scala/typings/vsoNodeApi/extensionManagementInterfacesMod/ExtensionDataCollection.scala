@@ -14,7 +14,7 @@ trait ExtensionDataCollection extends StObject {
   /**
     * A list of documents belonging to the collection
     */
-  var documents: js.Array[js.Any]
+  var documents: js.Array[Any]
   
   /**
     * The type of the collection's scope, such as Default or User
@@ -28,7 +28,7 @@ trait ExtensionDataCollection extends StObject {
 }
 object ExtensionDataCollection {
   
-  inline def apply(collectionName: String, documents: js.Array[js.Any], scopeType: String, scopeValue: String): ExtensionDataCollection = {
+  inline def apply(collectionName: String, documents: js.Array[Any], scopeType: String, scopeValue: String): ExtensionDataCollection = {
     val __obj = js.Dynamic.literal(collectionName = collectionName.asInstanceOf[js.Any], documents = documents.asInstanceOf[js.Any], scopeType = scopeType.asInstanceOf[js.Any], scopeValue = scopeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionDataCollection]
   }
@@ -37,9 +37,9 @@ object ExtensionDataCollection {
     
     inline def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
     
-    inline def setDocuments(value: js.Array[js.Any]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: js.Array[Any]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
-    inline def setDocumentsVarargs(value: js.Any*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: Any*): Self = StObject.set(x, "documents", js.Array(value*))
     
     inline def setScopeType(value: String): Self = StObject.set(x, "scopeType", value.asInstanceOf[js.Any])
     

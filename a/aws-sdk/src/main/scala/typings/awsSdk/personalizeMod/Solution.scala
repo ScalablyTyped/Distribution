@@ -14,7 +14,7 @@ trait Solution extends StObject {
   /**
     * The creation date and time (in Unix time) of the solution.
     */
-  var creationDateTime: js.UndefOr[Date] = js.undefined
+  var creationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group that provides the training data.
@@ -22,14 +22,14 @@ trait Solution extends StObject {
   var datasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The event type (for example, 'click' or 'like') that is used for training the model.
+    * The event type (for example, 'click' or 'like') that is used for training the model. If no eventType is provided, Amazon Personalize uses all interactions for training with equal weight regardless of type.
     */
   var eventType: js.UndefOr[EventType] = js.undefined
   
   /**
     * The date and time (in Unix time) that the solution was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
+  var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Describes the latest version of the solution, including the status and the ARN.
@@ -84,7 +84,7 @@ object Solution {
     
     inline def setAutoMLResultUndefined: Self = StObject.set(x, "autoMLResult", js.undefined)
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
@@ -96,7 +96,7 @@ object Solution {
     
     inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     

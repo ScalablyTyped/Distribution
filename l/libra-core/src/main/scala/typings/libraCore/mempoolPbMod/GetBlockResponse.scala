@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.transactionPbMod.SignedTransactionsBlock
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockResponse")
 @js.native
-class GetBlockResponse () extends Message {
+open class GetBlockResponse () extends Message {
   
   def clearBlock(): Unit = js.native
   
@@ -32,7 +31,7 @@ object GetBlockResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): GetBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetBlockResponse]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): GetBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetBlockResponse]
   
   inline def deserializeBinaryFromReader(message: GetBlockResponse, reader: BinaryReader): GetBlockResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetBlockResponse]
   

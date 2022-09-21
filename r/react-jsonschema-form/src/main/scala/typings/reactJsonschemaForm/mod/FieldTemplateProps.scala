@@ -22,7 +22,7 @@ trait FieldTemplateProps extends StObject {
   
   var fields: js.Array[Field]
   
-  var formContext: js.Any
+  var formContext: Any
   
   var help: ReactElement
   
@@ -56,7 +56,7 @@ object FieldTemplateProps {
     displayLabel: Boolean,
     errors: ReactElement,
     fields: js.Array[Field],
-    formContext: js.Any,
+    formContext: Any,
     help: ReactElement,
     hidden: Boolean,
     id: String,
@@ -89,9 +89,9 @@ object FieldTemplateProps {
     
     inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
     
-    inline def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+    inline def setFormContext(value: Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
     inline def setHelp(value: ReactElement): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object FieldTemplateProps {
     
     inline def setRawErrors(value: js.Array[String]): Self = StObject.set(x, "rawErrors", value.asInstanceOf[js.Any])
     
-    inline def setRawErrorsVarargs(value: String*): Self = StObject.set(x, "rawErrors", js.Array(value :_*))
+    inline def setRawErrorsVarargs(value: String*): Self = StObject.set(x, "rawErrors", js.Array(value*))
     
     inline def setRawHelp(value: String): Self = StObject.set(x, "rawHelp", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait TestMessageLogDetails extends StObject {
   /**
     * Date when the resource is created
     */
-  var dateCreated: Date
+  var dateCreated: js.Date
   
   /**
     * Id of the resource
@@ -24,14 +23,14 @@ trait TestMessageLogDetails extends StObject {
 }
 object TestMessageLogDetails {
   
-  inline def apply(dateCreated: Date, entryId: Double, message: String): TestMessageLogDetails = {
+  inline def apply(dateCreated: js.Date, entryId: Double, message: String): TestMessageLogDetails = {
     val __obj = js.Dynamic.literal(dateCreated = dateCreated.asInstanceOf[js.Any], entryId = entryId.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestMessageLogDetails]
   }
   
   extension [Self <: TestMessageLogDetails](x: Self) {
     
-    inline def setDateCreated(value: Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: js.Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
     inline def setEntryId(value: Double): Self = StObject.set(x, "entryId", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ trait BillingGroupMetadata extends StObject {
   /**
     * The date the billing group was created.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
 }
 object BillingGroupMetadata {
   
@@ -20,7 +20,7 @@ object BillingGroupMetadata {
   
   extension [Self <: BillingGroupMetadata](x: Self) {
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
   }

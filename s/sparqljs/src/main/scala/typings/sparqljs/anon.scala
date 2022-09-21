@@ -24,11 +24,11 @@ object anon {
       
       inline def setDefault(value: js.Array[IriTerm]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      inline def setDefaultVarargs(value: IriTerm*): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: IriTerm*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setNamed(value: js.Array[IriTerm]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
-      inline def setNamedVarargs(value: IriTerm*): Self = StObject.set(x, "named", js.Array(value :_*))
+      inline def setNamedVarargs(value: IriTerm*): Self = StObject.set(x, "named", js.Array(value*))
     }
   }
 }

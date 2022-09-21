@@ -10,10 +10,10 @@ object ignoreElementsStreamMod {
   
   @JSImport("wonder-frp/dist/commonjs/stream/IgnoreElementsStream", "IgnoreElementsStream")
   @js.native
-  class IgnoreElementsStream protected () extends BaseStream {
+  open class IgnoreElementsStream protected () extends BaseStream {
     def this(source: Stream) = this()
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
   }
   /* static members */
   object IgnoreElementsStream {

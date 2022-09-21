@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "unified-message-control" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "unified-message-control" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

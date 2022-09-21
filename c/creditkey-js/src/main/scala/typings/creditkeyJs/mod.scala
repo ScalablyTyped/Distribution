@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("creditkey-js", "Address")
   @js.native
-  class Address protected () extends StObject {
+  open class Address protected () extends StObject {
     def this(
       first_name: String,
       last_name: String,
@@ -43,7 +43,7 @@ object mod {
   
   @JSImport("creditkey-js", "CartItem")
   @js.native
-  class CartItem protected () extends StObject {
+  open class CartItem protected () extends StObject {
     def this(merchantProductId: String, name: String, price: Double, sku: String, quantity: Double) = this()
     def this(merchantProductId: String, name: String, price: Double, sku: Null, quantity: Double) = this()
     def this(
@@ -97,7 +97,7 @@ object mod {
   
   @JSImport("creditkey-js", "Charges")
   @js.native
-  class Charges protected () extends StObject {
+  open class Charges protected () extends StObject {
     def this(total: Double, shipping: Double, tax: Double, discount_amount: Double, grand_total: Double) = this()
     
     def is_valid_money_value(value: Double): Boolean = js.native
@@ -107,7 +107,7 @@ object mod {
   
   @JSImport("creditkey-js", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(key: String) = this()
     def this(key: String, platform: Platform) = this()
     
@@ -121,7 +121,7 @@ object mod {
       returnUrl: String,
       cancelUrl: String,
       mode: Mode,
-      merchantData: js.Any
+      merchantData: Any
     ): js.Promise[CheckoutResponse] = js.native
     
     def get_customer(email: String, customer_id: String): js.Promise[CustomerResponse] = js.native

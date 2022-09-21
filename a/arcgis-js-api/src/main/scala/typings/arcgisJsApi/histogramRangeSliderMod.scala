@@ -22,7 +22,7 @@ object histogramRangeSliderMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with HistogramRangeSlider {
     def this(properties: HistogramRangeSliderProperties) = this()

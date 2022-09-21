@@ -15,18 +15,18 @@ object privateMod {
   trait FirebaseApp
     extends typings.firebaseAppTypes.mod.FirebaseApp {
     
-    def _addComponent(
-      component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ js.Any
+    def _addComponent[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Name */ Any */](
+      component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<T> */ Any
     ): Unit = js.native
     
-    def _addOrOverwriteComponent(
-      component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component */ js.Any
+    def _addOrOverwriteComponent[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Name */ Any */](
+      component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<T> */ Any
     ): Unit = js.native
     
     def _removeServiceInstance(name: String): Unit = js.native
     def _removeServiceInstance(name: String, instanceIdentifier: String): Unit = js.native
     
-    var container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentContainer */ js.Any = js.native
+    var container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentContainer */ Any = js.native
   }
   
   @js.native
@@ -94,7 +94,7 @@ object privateMod {
   
   type FirebaseServiceFactory = js.Function3[
     /* app */ typings.firebaseAppTypes.mod.FirebaseApp, 
-    /* extendApp */ js.UndefOr[js.Function1[/* props */ StringDictionary[js.Any], Unit]], 
+    /* extendApp */ js.UndefOr[js.Function1[/* props */ StringDictionary[Any], Unit]], 
     /* instanceString */ js.UndefOr[String], 
     FirebaseService
   ]

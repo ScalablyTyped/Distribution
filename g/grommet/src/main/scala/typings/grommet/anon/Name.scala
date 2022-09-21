@@ -16,9 +16,9 @@ trait Name extends StObject {
   
   var name: Africa | Asia | Australia | Europe | (`North America`) | (`South America`)
   
-  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.undefined
   
-  var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var onHover: js.UndefOr[js.Function1[/* hovered */ Boolean, Unit]] = js.undefined
 }
 object Name {
   
@@ -35,11 +35,11 @@ object Name {
     
     inline def setName(value: Africa | Asia | Australia | Europe | (`North America`) | (`South America`)): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* name */ String => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnHover(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
+    inline def setOnHover(value: /* hovered */ Boolean => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
     
     inline def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
   }

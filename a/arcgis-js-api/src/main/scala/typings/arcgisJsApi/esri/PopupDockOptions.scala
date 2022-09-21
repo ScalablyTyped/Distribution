@@ -13,6 +13,8 @@ trait PopupDockOptions
   /**
     * Defines the dimensions of the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) at which to dock the popup.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
     */
   var breakpoint: js.UndefOr[Boolean | PopupDockOptionsBreakpoint] = js.undefined
@@ -26,6 +28,8 @@ trait PopupDockOptions
   
   /**
     * The position in the view at which to dock the popup.
+    *
+    * @default auto
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
     */

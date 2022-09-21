@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "Path3D")
 @js.native
-class Path3D protected ()
+open class Path3D protected ()
   extends typings.babylonjs.legacyMod.Path3D {
   /**
     * new Path3D(path, normal, raw)

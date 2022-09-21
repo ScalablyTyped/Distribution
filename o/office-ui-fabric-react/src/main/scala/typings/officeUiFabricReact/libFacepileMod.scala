@@ -14,7 +14,7 @@ object libFacepileMod {
   
   @JSImport("office-ui-fabric-react/lib/Facepile", "FacepileBase")
   @js.native
-  class FacepileBase protected ()
+  open class FacepileBase protected ()
     extends typings.officeUiFabricReact.facepileMod.FacepileBase {
     def this(props: IFacepileProps) = this()
   }

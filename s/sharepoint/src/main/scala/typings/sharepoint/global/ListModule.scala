@@ -16,7 +16,7 @@ object ListModule {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def clearSelectedItemsDict(context: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSelectedItemsDict")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearSelectedItemsDict(context: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSelectedItemsDict")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def createItemPropertiesTitle(renderCtx: RenderContext, listItem: ListItem): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createItemPropertiesTitle")(renderCtx.asInstanceOf[js.Any], listItem.asInstanceOf[js.Any])).asInstanceOf[String]
     
@@ -25,11 +25,11 @@ object ListModule {
     inline def createViewEditUrl(renderCtx: RenderContext, listItem: ListItem, useEditFormUrl: Boolean, appendSource: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createViewEditUrl")(renderCtx.asInstanceOf[js.Any], listItem.asInstanceOf[js.Any], useEditFormUrl.asInstanceOf[js.Any], appendSource.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def createViewEditUrl(renderCtx: RenderContext, listItem: ListItem, useEditFormUrl: Unit, appendSource: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createViewEditUrl")(renderCtx.asInstanceOf[js.Any], listItem.asInstanceOf[js.Any], useEditFormUrl.asInstanceOf[js.Any], appendSource.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def ctxInitItemState(context: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ctxInitItemState")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def ctxInitItemState(context: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ctxInitItemState")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def getAttributeFromItemTable(itemTableParam: HTMLElement, strAttributeName: String, strAttributeOldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeFromItemTable")(itemTableParam.asInstanceOf[js.Any], strAttributeName.asInstanceOf[js.Any], strAttributeOldName.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def getSelectedItemsDict(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedItemsDict")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getSelectedItemsDict(context: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedItemsDict")(context.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def removeOnlyPagingArgs(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOnlyPagingArgs")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     

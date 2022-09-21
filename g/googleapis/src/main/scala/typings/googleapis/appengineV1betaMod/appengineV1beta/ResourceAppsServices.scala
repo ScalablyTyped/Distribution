@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1beta", "appengine_v1beta.Resource$Apps$Services")
 @js.native
-class ResourceAppsServices protected () extends StObject {
+open class ResourceAppsServices protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * appengine.apps.services.delete
-    * @desc Deletes the specified service and all enclosed versions.
-    * @alias appengine.apps.services.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.appsId Part of `name`. Name of the resource requested. Example: apps/myapp/services/default.
-    * @param {string} params.servicesId Part of `name`. See documentation of `appsId`.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -35,8 +24,8 @@ class ResourceAppsServices protected () extends StObject {
   def delete(params: ParamsResourceAppsServicesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
     params: ParamsResourceAppsServicesDelete,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def delete(params: ParamsResourceAppsServicesDelete, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(
@@ -44,20 +33,69 @@ class ResourceAppsServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * appengine.apps.services.get
-    * @desc Gets the current configuration of the specified service.
-    * @alias appengine.apps.services.get
-    * @memberOf! ()
+    * Deletes the specified service and all enclosed versions.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/appengine.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.appsId Part of `name`. Name of the resource requested. Example: apps/myapp/services/default.
-    * @param {string} params.servicesId Part of `name`. See documentation of `appsId`.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const appengine = google.appengine('v1beta');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await appengine.apps.services.delete({
+    *     // Part of `name`. Name of the resource requested. Example: apps/myapp/services/default.
+    *     appsId: 'placeholder-value',
+    *     // Part of `name`. See documentation of `appsId`.
+    *     servicesId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceAppsServicesDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceAppsServicesDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaService] = js.native
   def get(callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaService] = js.native
@@ -65,8 +103,8 @@ class ResourceAppsServices protected () extends StObject {
   def get(params: ParamsResourceAppsServicesGet, callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def get(
     params: ParamsResourceAppsServicesGet,
-    options: BodyResponseCallback[SchemaService],
-    callback: BodyResponseCallback[SchemaService]
+    options: BodyResponseCallback[Readable | SchemaService],
+    callback: BodyResponseCallback[Readable | SchemaService]
   ): Unit = js.native
   def get(params: ParamsResourceAppsServicesGet, options: MethodOptions): GaxiosPromise[SchemaService] = js.native
   def get(
@@ -74,21 +112,73 @@ class ResourceAppsServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaService]
   ): Unit = js.native
-  
   /**
-    * appengine.apps.services.list
-    * @desc Lists all the services in the application.
-    * @alias appengine.apps.services.list
-    * @memberOf! ()
+    * Gets the current configuration of the specified service.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/appengine.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.appsId Part of `parent`. Name of the parent Application resource. Example: apps/myapp.
-    * @param {integer=} params.pageSize Maximum results to return per page.
-    * @param {string=} params.pageToken Continuation token for fetching the next page of results.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const appengine = google.appengine('v1beta');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/appengine.admin',
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await appengine.apps.services.get({
+    *     // Part of `name`. Name of the resource requested. Example: apps/myapp/services/default.
+    *     appsId: 'placeholder-value',
+    *     // Part of `name`. See documentation of `appsId`.
+    *     servicesId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "labels": {},
+    *   //   "name": "my_name",
+    *   //   "networkSettings": {},
+    *   //   "split": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceAppsServicesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceAppsServicesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListServicesResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListServicesResponse] = js.native
@@ -96,8 +186,8 @@ class ResourceAppsServices protected () extends StObject {
   def list(params: ParamsResourceAppsServicesList, callback: BodyResponseCallback[SchemaListServicesResponse]): Unit = js.native
   def list(
     params: ParamsResourceAppsServicesList,
-    options: BodyResponseCallback[SchemaListServicesResponse],
-    callback: BodyResponseCallback[SchemaListServicesResponse]
+    options: BodyResponseCallback[Readable | SchemaListServicesResponse],
+    callback: BodyResponseCallback[Readable | SchemaListServicesResponse]
   ): Unit = js.native
   def list(params: ParamsResourceAppsServicesList, options: MethodOptions): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(
@@ -105,23 +195,72 @@ class ResourceAppsServices protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListServicesResponse]
   ): Unit = js.native
-  
   /**
-    * appengine.apps.services.patch
-    * @desc Updates the configuration of the specified service.
-    * @alias appengine.apps.services.patch
-    * @memberOf! ()
+    * Lists all the services in the application.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/appengine.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.appsId Part of `name`. Name of the resource to update. Example: apps/myapp/services/default.
-    * @param {boolean=} params.migrateTraffic Set to true to gradually shift traffic to one or more versions that you specify. By default, traffic is shifted immediately. For gradual traffic migration, the target versions must be located within instances that are configured for both warmup requests (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services.versions#InboundServiceType) and automatic scaling (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services.versions#AutomaticScaling). You must specify the shardBy (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services#ShardBy) field in the Service resource. Gradual traffic migration is not supported in the App Engine flexible environment. For examples, see Migrating and Splitting Traffic (https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-traffic).
-    * @param {string} params.servicesId Part of `name`. See documentation of `appsId`.
-    * @param {string=} params.updateMask Standard field mask for the set of fields to be updated.
-    * @param {().Service} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const appengine = google.appengine('v1beta');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/appengine.admin',
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await appengine.apps.services.list({
+    *     // Part of `parent`. Name of the parent Application resource. Example: apps/myapp.
+    *     appsId: 'placeholder-value',
+    *     // Maximum results to return per page.
+    *     pageSize: 'placeholder-value',
+    *     // Continuation token for fetching the next page of results.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "services": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceAppsServicesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceAppsServicesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -129,14 +268,92 @@ class ResourceAppsServices protected () extends StObject {
   def patch(params: ParamsResourceAppsServicesPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
     params: ParamsResourceAppsServicesPatch,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def patch(params: ParamsResourceAppsServicesPatch, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(
     params: ParamsResourceAppsServicesPatch,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Updates the configuration of the specified service.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/appengine.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const appengine = google.appengine('v1beta');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await appengine.apps.services.patch({
+    *     // Part of `name`. Name of the resource to update. Example: apps/myapp/services/default.
+    *     appsId: 'placeholder-value',
+    *     // Set to true to gradually shift traffic to one or more versions that you specify. By default, traffic is shifted immediately. For gradual traffic migration, the target versions must be located within instances that are configured for both warmup requests (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services.versions#InboundServiceType) and automatic scaling (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services.versions#AutomaticScaling). You must specify the shardBy (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services#ShardBy) field in the Service resource. Gradual traffic migration is not supported in the App Engine flexible environment. For examples, see Migrating and Splitting Traffic (https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-traffic).
+    *     migrateTraffic: 'placeholder-value',
+    *     // Part of `name`. See documentation of `appsId`.
+    *     servicesId: 'placeholder-value',
+    *     // Required. Standard field mask for the set of fields to be updated.
+    *     updateMask: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "id": "my_id",
+    *       //   "labels": {},
+    *       //   "name": "my_name",
+    *       //   "networkSettings": {},
+    *       //   "split": {}
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def patch(params: ParamsResourceAppsServicesPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceAppsServicesPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var versions: ResourceAppsServicesVersions = js.native

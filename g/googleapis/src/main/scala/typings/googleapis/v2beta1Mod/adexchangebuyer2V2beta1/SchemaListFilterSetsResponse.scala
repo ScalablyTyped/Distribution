@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for listing filter sets.
-  */
 trait SchemaListFilterSetsResponse extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaListFilterSetsResponse extends StObject {
   var filterSets: js.UndefOr[js.Array[SchemaFilterSet]] = js.undefined
   
   /**
-    * A token to retrieve the next page of results. Pass this value in the
-    * ListFilterSetsRequest.pageToken field in the subsequent call to the
-    * accounts.filterSets.list method to retrieve the next page of results.
+    * A token to retrieve the next page of results. Pass this value in the ListFilterSetsRequest.pageToken field in the subsequent call to the accounts.filterSets.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListFilterSetsResponse {
   
@@ -34,9 +29,11 @@ object SchemaListFilterSetsResponse {
     
     inline def setFilterSetsUndefined: Self = StObject.set(x, "filterSets", js.undefined)
     
-    inline def setFilterSetsVarargs(value: SchemaFilterSet*): Self = StObject.set(x, "filterSets", js.Array(value :_*))
+    inline def setFilterSetsVarargs(value: SchemaFilterSet*): Self = StObject.set(x, "filterSets", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

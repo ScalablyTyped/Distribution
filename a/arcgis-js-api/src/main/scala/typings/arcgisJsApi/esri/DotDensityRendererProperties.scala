@@ -18,6 +18,8 @@ trait DotDensityRendererProperties
   /**
     * The color used to shade the polygon fill behind the dots.
     *
+    * @default [0, 0, 0, 0.25] - black, semitransparent
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#backgroundColor)
     */
   var backgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
@@ -25,9 +27,20 @@ trait DotDensityRendererProperties
   /**
     * Only applicable when two or more [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes) are specified.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotBlendingEnabled)
     */
   var dotBlendingEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Defines the size of the dots in points.
+    *
+    * @default 1
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotSize)
+    */
+  var dotSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the initial dot value used for visualizing density.
@@ -60,6 +73,8 @@ trait DotDensityRendererProperties
   /**
     * When set to a consistent value, dot placements will be preserved for the same scale given all parameters are the same in the renderer.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#seed)
     */
   var seed: js.UndefOr[Double] = js.undefined
@@ -84,17 +99,21 @@ object DotDensityRendererProperties {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: AttributeColorInfoProperties*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: AttributeColorInfoProperties*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setBackgroundColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+    inline def setBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
     inline def setDotBlendingEnabled(value: Boolean): Self = StObject.set(x, "dotBlendingEnabled", value.asInstanceOf[js.Any])
     
     inline def setDotBlendingEnabledUndefined: Self = StObject.set(x, "dotBlendingEnabled", js.undefined)
+    
+    inline def setDotSize(value: Double): Self = StObject.set(x, "dotSize", value.asInstanceOf[js.Any])
+    
+    inline def setDotSizeUndefined: Self = StObject.set(x, "dotSize", js.undefined)
     
     inline def setDotValue(value: Double): Self = StObject.set(x, "dotValue", value.asInstanceOf[js.Any])
     
@@ -120,6 +139,6 @@ object DotDensityRendererProperties {
     
     inline def setVisualVariablesUndefined: Self = StObject.set(x, "visualVariables", js.undefined)
     
-    inline def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
+    inline def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value*))
   }
 }

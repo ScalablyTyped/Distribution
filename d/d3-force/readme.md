@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-force
 
-Typings are for version 2.1
+Typings are for version 3.0
 
 ## Library description:
 Force-directed graph layout using velocity Verlet integration.
@@ -10,10 +10,10 @@ Force-directed graph layout using velocity Verlet integration.
 | ------------------ | :-------------: |
 | Full name          | d3-force |
 | Keywords           | d3, d3-module, layout, network, graph, force, verlet, infovis |
-| # releases         | 7 |
-| # dependents       | 183 |
-| # downloads        | 48833308 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 8194847.666666667 |
+| # stars            | 1364.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-force/)

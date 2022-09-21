@@ -5,28 +5,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Specified snapshot properties for scheduled snapshots created by this
-  * policy.
-  */
 trait SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties extends StObject {
   
   /**
-    * Indication to perform a ?guest aware? snapshot.
+    * Chain name that the snapshot is created in.
     */
-  var guestFlush: js.UndefOr[Boolean] = js.undefined
+  var chainName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Labels to apply to scheduled snapshots. These can be later modified by
-    * the setLabels method. Label values may be empty.
+    * Indication to perform a 'guest aware' snapshot.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var guestFlush: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * GCS bucket storage location of the auto snapshot (regional or
-    * multi-regional).
+    * Labels to apply to scheduled snapshots. These can be later modified by the setLabels method. Label values may be empty.
     */
-  var storageLocations: js.UndefOr[js.Array[String]] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+  
+  /**
+    * Cloud Storage bucket storage location of the auto snapshot (regional or multi-regional).
+    */
+  var storageLocations: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties {
   
@@ -37,18 +36,30 @@ object SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties {
   
   extension [Self <: SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties](x: Self) {
     
+    inline def setChainName(value: String): Self = StObject.set(x, "chainName", value.asInstanceOf[js.Any])
+    
+    inline def setChainNameNull: Self = StObject.set(x, "chainName", null)
+    
+    inline def setChainNameUndefined: Self = StObject.set(x, "chainName", js.undefined)
+    
     inline def setGuestFlush(value: Boolean): Self = StObject.set(x, "guestFlush", value.asInstanceOf[js.Any])
+    
+    inline def setGuestFlushNull: Self = StObject.set(x, "guestFlush", null)
     
     inline def setGuestFlushUndefined: Self = StObject.set(x, "guestFlush", js.undefined)
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
+    
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setStorageLocations(value: js.Array[String]): Self = StObject.set(x, "storageLocations", value.asInstanceOf[js.Any])
     
+    inline def setStorageLocationsNull: Self = StObject.set(x, "storageLocations", null)
+    
     inline def setStorageLocationsUndefined: Self = StObject.set(x, "storageLocations", js.undefined)
     
-    inline def setStorageLocationsVarargs(value: String*): Self = StObject.set(x, "storageLocations", js.Array(value :_*))
+    inline def setStorageLocationsVarargs(value: String*): Self = StObject.set(x, "storageLocations", js.Array(value*))
   }
 }

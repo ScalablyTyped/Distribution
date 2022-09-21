@@ -12,7 +12,7 @@ object customMod {
   
   @JSImport("ionic/lib/project/custom", "CustomProject")
   @js.native
-  class CustomProject protected () extends Project {
+  open class CustomProject protected () extends Project {
     def this(details: ProjectDetailsResult, e: ProjectDeps) = this()
     
     @JSName("type")

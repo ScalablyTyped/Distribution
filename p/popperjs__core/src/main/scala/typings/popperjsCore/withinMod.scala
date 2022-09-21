@@ -10,5 +10,7 @@ object withinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(min: Double, value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def within(min: Double, value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(min.asInstanceOf[js.Any], value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def withinMaxClamp(min: Double, value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("withinMaxClamp")(min.asInstanceOf[js.Any], value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

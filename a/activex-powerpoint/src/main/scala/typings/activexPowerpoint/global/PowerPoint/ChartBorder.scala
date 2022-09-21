@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartBorder")
 @js.native
-/* private */ class ChartBorder ()
+/* private */ open class ChartBorder ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartBorder {
   
@@ -14,24 +14,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
   /* CompleteClass */
-  var Color: js.Any = js.native
+  var Color: Any = js.native
   
   /* CompleteClass */
-  var ColorIndex: js.Any = js.native
+  var ColorIndex: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  var LineStyle: js.Any = js.native
+  var LineStyle: Any = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.ChartBorder_typekey")
   var PowerPointDotChartBorder_typekey: typings.activexPowerpoint.PowerPoint.ChartBorder = js.native
   
   /* CompleteClass */
-  var Weight: js.Any = js.native
+  var Weight: Any = js.native
 }

@@ -8,7 +8,7 @@ trait TypeScriptServicesFactory
   extends StObject
      with IShimFactory {
   
-  /* private */ var _shims: js.Any
+  /* private */ var _shims: Any
   
   def close(): Unit
   
@@ -27,7 +27,7 @@ trait TypeScriptServicesFactory
 object TypeScriptServicesFactory {
   
   inline def apply(
-    _shims: js.Any,
+    _shims: Any,
     close: () => Unit,
     createClassifier: IClassifierHost => Classifier,
     createClassifierShim: IClassifierHost => ClassifierShim,
@@ -58,6 +58,6 @@ object TypeScriptServicesFactory {
     
     inline def setCreatePullLanguageService(value: ILanguageServiceHost => ILanguageService): Self = StObject.set(x, "createPullLanguageService", js.Any.fromFunction1(value))
     
-    inline def set_shims(value: js.Any): Self = StObject.set(x, "_shims", value.asInstanceOf[js.Any])
+    inline def set_shims(value: Any): Self = StObject.set(x, "_shims", value.asInstanceOf[js.Any])
   }
 }

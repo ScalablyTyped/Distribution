@@ -21,7 +21,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.And")
   @js.native
-  class And_ protected () extends LogicalNary {
+  open class And_ protected () extends LogicalNary {
     /**
       * @classdesc
       * Represents a logical <And> operator between two or more filter conditions.
@@ -45,7 +45,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.Bbox")
   @js.native
-  class Bbox_ protected () extends Filter {
+  open class Bbox_ protected () extends Filter {
     /**
       * @classdesc
       * Represents a `<BBOX>` operator to test whether a geometry-valued property
@@ -74,7 +74,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.Comparison")
   @js.native
-  class Comparison protected () extends Filter {
+  open class Comparison protected () extends Filter {
     /**
       * @classdesc
       * Abstract class; normally only used for creating subclasses and not instantiated in apps.
@@ -104,7 +104,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.ComparisonBinary")
   @js.native
-  class ComparisonBinary protected () extends Comparison {
+  open class ComparisonBinary protected () extends Comparison {
     /**
       * @classdesc
       * Abstract class; normally only used for creating subclasses and not instantiated in apps.
@@ -135,7 +135,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.During")
   @js.native
-  class During_ protected () extends Comparison {
+  open class During_ protected () extends Comparison {
     /**
       * @classdesc
       * Represents a `<During>` comparison operator.
@@ -159,7 +159,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.EqualTo")
   @js.native
-  class EqualTo_ protected () extends ComparisonBinary {
+  open class EqualTo_ protected () extends ComparisonBinary {
     /**
       * @classdesc
       * Represents a `<PropertyIsEqualTo>` comparison operator.
@@ -186,7 +186,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.Filter")
   @js.native
-  class Filter protected () extends StObject {
+  open class Filter protected () extends StObject {
     /**
       * @classdesc
       * Abstract class; normally only used for creating subclasses and not instantiated in apps.
@@ -215,7 +215,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.GreaterThanOrEqualTo")
   @js.native
-  class GreaterThanOrEqualTo_ protected () extends ComparisonBinary {
+  open class GreaterThanOrEqualTo_ protected () extends ComparisonBinary {
     /**
       * @classdesc
       * Represents a `<PropertyIsGreaterThanOrEqualTo>` comparison operator.
@@ -237,7 +237,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.GreaterThan")
   @js.native
-  class GreaterThan_ protected () extends ComparisonBinary {
+  open class GreaterThan_ protected () extends ComparisonBinary {
     /**
       * @classdesc
       * Represents a `<PropertyIsGreaterThan>` comparison operator.
@@ -262,7 +262,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.Intersects")
   @js.native
-  class Intersects_ protected () extends Spatial {
+  open class Intersects_ protected () extends Spatial {
     /**
       * @classdesc
       * Represents a `<Intersects>` operator to test whether a geometry-valued property
@@ -289,7 +289,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.IsBetween")
   @js.native
-  class IsBetween protected () extends Comparison {
+  open class IsBetween protected () extends Comparison {
     /**
       * @classdesc
       * Represents a `<PropertyIsBetween>` comparison operator.
@@ -319,7 +319,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.IsLike")
   @js.native
-  class IsLike protected () extends Comparison {
+  open class IsLike protected () extends Comparison {
     /**
       * @classdesc
       * Represents a `<PropertyIsLike>` comparison operator.
@@ -442,7 +442,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.IsNull")
   @js.native
-  class IsNull_ protected () extends Comparison {
+  open class IsNull_ protected () extends Comparison {
     /**
       * @classdesc
       * Represents a `<PropertyIsNull>` comparison operator.
@@ -463,7 +463,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.LessThanOrEqualTo")
   @js.native
-  class LessThanOrEqualTo_ protected () extends ComparisonBinary {
+  open class LessThanOrEqualTo_ protected () extends ComparisonBinary {
     /**
       * @classdesc
       * Represents a `<PropertyIsLessThanOrEqualTo>` comparison operator.
@@ -485,7 +485,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.LessThan")
   @js.native
-  class LessThan_ protected () extends ComparisonBinary {
+  open class LessThan_ protected () extends ComparisonBinary {
     /**
       * @classdesc
       * Represents a `<PropertyIsLessThan>` comparison operator.
@@ -504,7 +504,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.LogicalNary")
   @js.native
-  class LogicalNary protected () extends Filter {
+  open class LogicalNary protected () extends Filter {
     /**
       * @classdesc
       * Abstract class; normally only used for creating subclasses and not instantiated in apps.
@@ -528,7 +528,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.NotEqualTo")
   @js.native
-  class NotEqualTo_ protected () extends ComparisonBinary {
+  open class NotEqualTo_ protected () extends ComparisonBinary {
     /**
       * @classdesc
       * Represents a `<PropertyIsNotEqualTo>` comparison operator.
@@ -553,7 +553,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.Not")
   @js.native
-  class Not_ protected () extends Filter {
+  open class Not_ protected () extends Filter {
     /**
       * @classdesc
       * Represents a logical `<Not>` operator for a filter condition.
@@ -573,7 +573,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.Or")
   @js.native
-  class Or_ protected () extends LogicalNary {
+  open class Or_ protected () extends LogicalNary {
     /**
       * @classdesc
       * Represents a logical <Or> operator between two or more filter conditions.
@@ -598,7 +598,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.Spatial")
   @js.native
-  class Spatial protected () extends Filter {
+  open class Spatial protected () extends Filter {
     /**
       * @classdesc
       * Represents a spatial operator to test whether a geometry-valued property
@@ -628,7 +628,7 @@ object filter {
     */
   @JSImport("openlayers", "format.filter.Within")
   @js.native
-  class Within_ protected () extends Spatial {
+  open class Within_ protected () extends Spatial {
     /**
       * @classdesc
       * Represents a `<Within>` operator to test whether a geometry-valued property
@@ -651,7 +651,7 @@ object filter {
     * @returns `<And>` operator.
     * @api
     */
-  inline def and(conditions: Filter*): And_ = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(conditions.asInstanceOf[js.Any]).asInstanceOf[And_]
+  inline def and(conditions: Filter*): And_ = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(conditions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[And_]
   
   /**
     * Create a `<BBOX>` operator to test whether a geometry-valued property
@@ -911,7 +911,7 @@ object filter {
     * @returns `<Or>` operator.
     * @api
     */
-  inline def or(conditions: Filter*): Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(conditions.asInstanceOf[js.Any]).asInstanceOf[Or_]
+  inline def or(conditions: Filter*): Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(conditions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Or_]
   
   /**
     * Create a `<Within>` operator to test whether a geometry-valued property

@@ -41,7 +41,7 @@ object ServerConfig {
     
     inline def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
     
-    inline def setServersVarargs(value: ServerConfig*): Self = StObject.set(x, "servers", js.Array(value :_*))
+    inline def setServersVarargs(value: ServerConfig*): Self = StObject.set(x, "servers", js.Array(value*))
     
     inline def setUseToken(value: Boolean): Self = StObject.set(x, "useToken", value.asInstanceOf[js.Any])
     

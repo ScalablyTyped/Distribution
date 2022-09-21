@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.AssetsManager")
 @js.native
-class AssetsManager protected ()
+/**
+  * Creates a new AssetsManager
+  * @param scene defines the scene to work on
+  */
+open class AssetsManager ()
   extends StObject
      with typings.babylonjs.BABYLON.AssetsManager {
-  /**
-    * Creates a new AssetsManager
-    * @param scene defines the scene to work on
-    */
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
 }

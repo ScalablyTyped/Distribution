@@ -22,6 +22,8 @@ trait Alert extends StObject {
     *
     * Adds a cancel action to the alert. When a cancel action is selected, the index provided by presentAlert() or presentSheet() will always be -1. Please note that when running on the
     * iPad and presenting using presentSheet(), the action will not be shown in the list of actions. The operation is cancelled by tapping outside the sheet.
+    *
+    * An alert can only contain a single cancel action. Attempting to add more cancel actions will remove any previously added cancel actions.
     * @param title - Title of the action.
     * @see https://docs.scriptable.app/alert/#-addcancelaction
     */
@@ -45,10 +47,10 @@ trait Alert extends StObject {
     * @param text - Optional default value for the text field.
     * @see https://docs.scriptable.app/alert/#-addsecuretextfield
     */
-  def addSecureTextField(): Unit = js.native
-  def addSecureTextField(placeholder: String): Unit = js.native
-  def addSecureTextField(placeholder: String, text: String): Unit = js.native
-  def addSecureTextField(placeholder: Unit, text: String): Unit = js.native
+  def addSecureTextField(): TextField = js.native
+  def addSecureTextField(placeholder: String): TextField = js.native
+  def addSecureTextField(placeholder: String, text: String): TextField = js.native
+  def addSecureTextField(placeholder: Unit, text: String): TextField = js.native
   
   /**
     * _Adds a text field prompting for user input._
@@ -61,10 +63,10 @@ trait Alert extends StObject {
     * @param text - Optional default value for the text field.
     * @see https://docs.scriptable.app/alert/#-addtextfield
     */
-  def addTextField(): Unit = js.native
-  def addTextField(placeholder: String): Unit = js.native
-  def addTextField(placeholder: String, text: String): Unit = js.native
-  def addTextField(placeholder: Unit, text: String): Unit = js.native
+  def addTextField(): TextField = js.native
+  def addTextField(placeholder: String): TextField = js.native
+  def addTextField(placeholder: String, text: String): TextField = js.native
+  def addTextField(placeholder: Unit, text: String): TextField = js.native
   
   /**
     * _Detailed message displayed in the alert._

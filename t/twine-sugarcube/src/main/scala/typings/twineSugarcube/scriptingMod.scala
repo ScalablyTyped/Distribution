@@ -11,27 +11,27 @@ object scriptingMod {
     /**
       * Evaluates the given JavaScript code and returns the result, throwing if there were errors.
       */
-    def evalJavaScript(code: String): js.Any
+    def evalJavaScript(code: String): Any
     
     /**
       * Evaluates the given TwineScript code and returns the result, throwing if there were errors.
       */
-    def evalTwineScript(code: String): js.Any
+    def evalTwineScript(code: String): Any
     
     def parse(rawCodeString: String): String
   }
   object ScriptingAPI {
     
-    inline def apply(evalJavaScript: String => js.Any, evalTwineScript: String => js.Any, parse: String => String): ScriptingAPI = {
+    inline def apply(evalJavaScript: String => Any, evalTwineScript: String => Any, parse: String => String): ScriptingAPI = {
       val __obj = js.Dynamic.literal(evalJavaScript = js.Any.fromFunction1(evalJavaScript), evalTwineScript = js.Any.fromFunction1(evalTwineScript), parse = js.Any.fromFunction1(parse))
       __obj.asInstanceOf[ScriptingAPI]
     }
     
     extension [Self <: ScriptingAPI](x: Self) {
       
-      inline def setEvalJavaScript(value: String => js.Any): Self = StObject.set(x, "evalJavaScript", js.Any.fromFunction1(value))
+      inline def setEvalJavaScript(value: String => Any): Self = StObject.set(x, "evalJavaScript", js.Any.fromFunction1(value))
       
-      inline def setEvalTwineScript(value: String => js.Any): Self = StObject.set(x, "evalTwineScript", js.Any.fromFunction1(value))
+      inline def setEvalTwineScript(value: String => Any): Self = StObject.set(x, "evalTwineScript", js.Any.fromFunction1(value))
       
       inline def setParse(value: String => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }

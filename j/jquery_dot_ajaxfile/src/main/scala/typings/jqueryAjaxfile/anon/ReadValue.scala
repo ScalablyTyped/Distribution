@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReadValue extends StObject {
   
-  def readValue(element: HTMLElement): js.Any
+  def readValue(element: HTMLElement): Any
   
-  def writeValue(element: HTMLElement, value: js.Any): Unit
+  def writeValue(element: HTMLElement, value: Any): Unit
 }
 object ReadValue {
   
-  inline def apply(readValue: HTMLElement => js.Any, writeValue: (HTMLElement, js.Any) => Unit): ReadValue = {
+  inline def apply(readValue: HTMLElement => Any, writeValue: (HTMLElement, Any) => Unit): ReadValue = {
     val __obj = js.Dynamic.literal(readValue = js.Any.fromFunction1(readValue), writeValue = js.Any.fromFunction2(writeValue))
     __obj.asInstanceOf[ReadValue]
   }
   
   extension [Self <: ReadValue](x: Self) {
     
-    inline def setReadValue(value: HTMLElement => js.Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
+    inline def setReadValue(value: HTMLElement => Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
     
-    inline def setWriteValue(value: (HTMLElement, js.Any) => Unit): Self = StObject.set(x, "writeValue", js.Any.fromFunction2(value))
+    inline def setWriteValue(value: (HTMLElement, Any) => Unit): Self = StObject.set(x, "writeValue", js.Any.fromFunction2(value))
   }
 }

@@ -22,7 +22,7 @@ object Extension {
     
     inline def setMethods(value: js.Array[Method]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
-    inline def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value :_*))
+    inline def setMethodsVarargs(value: Method*): Self = StObject.set(x, "methods", js.Array(value*))
     
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     

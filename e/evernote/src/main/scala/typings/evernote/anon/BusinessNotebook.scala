@@ -98,13 +98,13 @@ object BusinessNotebook {
     
     inline def setSharedNotebookIdsUndefined: Self = StObject.set(x, "sharedNotebookIds", js.undefined)
     
-    inline def setSharedNotebookIdsVarargs(value: Double*): Self = StObject.set(x, "sharedNotebookIds", js.Array(value :_*))
+    inline def setSharedNotebookIdsVarargs(value: Double*): Self = StObject.set(x, "sharedNotebookIds", js.Array(value*))
     
     inline def setSharedNotebooks(value: js.Array[SharedNotebook]): Self = StObject.set(x, "sharedNotebooks", value.asInstanceOf[js.Any])
     
     inline def setSharedNotebooksUndefined: Self = StObject.set(x, "sharedNotebooks", js.undefined)
     
-    inline def setSharedNotebooksVarargs(value: SharedNotebook*): Self = StObject.set(x, "sharedNotebooks", js.Array(value :_*))
+    inline def setSharedNotebooksVarargs(value: SharedNotebook*): Self = StObject.set(x, "sharedNotebooks", js.Array(value*))
     
     inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     

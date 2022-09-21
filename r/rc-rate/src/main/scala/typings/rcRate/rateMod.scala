@@ -22,7 +22,7 @@ object rateMod {
   
   @JSImport("rc-rate/es/Rate", JSImport.Default)
   @js.native
-  class default protected () extends Rate {
+  open class default protected () extends Rate {
     def this(props: RateProps) = this()
   }
   object default {
@@ -94,8 +94,7 @@ object rateMod {
   }
   
   @js.native
-  trait Rate
-    extends Component[RateProps, RateState, js.Any] {
+  trait Rate extends Component[RateProps, RateState, Any] {
     
     def blur(): Unit = js.native
     
@@ -132,6 +131,7 @@ object rateMod {
     var stars: Record[String, typings.rcRate.starMod.default] = js.native
   }
   
+  /* Inlined parent std.Pick<rc-rate.rc-rate/es/Star.StarProps, 'count' | 'character' | 'characterRender' | 'allowHalf' | 'disabled'> */
   trait RateProps extends StObject {
     
     var allowClear: js.UndefOr[Boolean] = js.undefined
@@ -140,7 +140,7 @@ object rateMod {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var character: js.UndefOr[ReactNode] = js.undefined
+    var character: js.UndefOr[ReactNode | (js.Function1[/* props */ StarProps, ReactNode])] = js.undefined
     
     var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ StarProps, ReactNode]] = js.undefined
     
@@ -193,7 +193,9 @@ object rateMod {
       
       inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      inline def setCharacter(value: ReactNode): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      inline def setCharacter(value: ReactNode | (js.Function1[/* props */ StarProps, ReactNode])): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      
+      inline def setCharacterFunction1(value: /* props */ StarProps => ReactNode): Self = StObject.set(x, "character", js.Any.fromFunction1(value))
       
       inline def setCharacterRender(value: (/* origin */ ReactElement, /* props */ StarProps) => ReactNode): Self = StObject.set(x, "characterRender", js.Any.fromFunction2(value))
       

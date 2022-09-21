@@ -4,16 +4,18 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.agentBase.agentBaseBooleans.`false`
 import typings.agentBase.agentBaseBooleans.`true`
 import typings.agentBase.anon.PickAgentaddRequest
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.dnsMod.LookupOneOptions
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.OutgoingHttpHeaders
+import typings.node.netMod.LookupFunction
 import typings.node.netMod.Socket
 import typings.node.streamMod.Duplex
 import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureVersion
-import typings.std.Error
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +40,7 @@ object mod {
     */
   @JSImport("agent-base", "Agent")
   @js.native
-  class Agent () extends EventEmitter {
+  open class Agent () extends EventEmitter {
     def this(callback: AgentCallback) = this()
     def this(callback: AgentOptions) = this()
     def this(callback: Unit, _opts: AgentOptions) = this()
@@ -61,9 +63,9 @@ object mod {
     
     def destroy(): Unit = js.native
     
-    /* private */ var explicitDefaultPort: js.Any = js.native
+    /* private */ var explicitDefaultPort: Any = js.native
     
-    /* private */ var explicitProtocol: js.Any = js.native
+    /* private */ var explicitProtocol: Any = js.native
     
     def freeSocket(socket: Socket, opts: AgentOptions): Unit = js.native
     
@@ -77,7 +79,7 @@ object mod {
     
     var options: typings.node.httpsMod.AgentOptions = js.native
     
-    /* private */ var promisifiedCallback: js.Any = js.native
+    /* private */ var promisifiedCallback: Any = js.native
     
     def protocol: String = js.native
     def protocol_=(v: String): Unit = js.native
@@ -97,7 +99,7 @@ object mod {
   }
   
   type AgentCallbackCallback = js.Function2[
-    /* err */ js.UndefOr[Error | Null], 
+    /* err */ js.UndefOr[js.Error | Null], 
     /* socket */ js.UndefOr[AgentCallbackReturn], 
     Unit
   ]
@@ -184,8 +186,8 @@ object mod {
     var createConnection: js.UndefOr[
         js.Function2[
           /* options */ this.type, 
-          /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
-          Socket
+          /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeNetMod.Socket, Unit], 
+          typings.node.nodeNetMod.Socket
         ]
       ] = js.undefined
     
@@ -201,6 +203,8 @@ object mod {
     
     var localAddress: js.UndefOr[String] = js.undefined
     
+    var lookup: js.UndefOr[LookupFunction] = js.undefined
+    
     var maxHeaderSize: js.UndefOr[Double] = js.undefined
     
     var method: js.UndefOr[String] = js.undefined
@@ -214,6 +218,8 @@ object mod {
     var secureEndpoint: `false`
     
     var setHost: js.UndefOr[Boolean] = js.undefined
+    
+    var signal: js.UndefOr[AbortSignal] = js.undefined
     
     var socketPath: js.UndefOr[String] = js.undefined
     
@@ -239,7 +245,7 @@ object mod {
       inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
       inline def setCreateConnection(
-        value: (HttpRequestOptions, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
+        value: (HttpRequestOptions, /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeNetMod.Socket, Unit]) => typings.node.nodeNetMod.Socket
       ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
       
       inline def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
@@ -270,6 +276,17 @@ object mod {
       
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
+      inline def setLookup(
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
+              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+              /* address */ String, 
+              /* family */ Double, 
+              Unit
+            ]) => Unit
+      ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
+      
+      inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
+      
       inline def setMaxHeaderSize(value: Double): Self = StObject.set(x, "maxHeaderSize", value.asInstanceOf[js.Any])
       
       inline def setMaxHeaderSizeUndefined: Self = StObject.set(x, "maxHeaderSize", js.undefined)
@@ -295,6 +312,10 @@ object mod {
       inline def setSetHost(value: Boolean): Self = StObject.set(x, "setHost", value.asInstanceOf[js.Any])
       
       inline def setSetHostUndefined: Self = StObject.set(x, "setHost", js.undefined)
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
       inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
       
@@ -333,8 +354,8 @@ object mod {
     var createConnection: js.UndefOr[
         js.Function2[
           /* options */ this.type, 
-          /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
-          Socket
+          /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeNetMod.Socket, Unit], 
+          typings.node.nodeNetMod.Socket
         ]
       ] = js.undefined
     
@@ -356,9 +377,11 @@ object mod {
     
     var hostname: js.UndefOr[String | Null] = js.undefined
     
-    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
+    var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer | KeyObject])] = js.undefined
     
     var localAddress: js.UndefOr[String] = js.undefined
+    
+    var lookup: js.UndefOr[LookupFunction] = js.undefined
     
     var maxHeaderSize: js.UndefOr[Double] = js.undefined
     
@@ -400,6 +423,8 @@ object mod {
     
     var sigalgs: js.UndefOr[String] = js.undefined
     
+    var signal: js.UndefOr[AbortSignal] = js.undefined
+    
     var socketPath: js.UndefOr[String] = js.undefined
     
     var ticketKeys: js.UndefOr[Buffer] = js.undefined
@@ -429,13 +454,13 @@ object mod {
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+      inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value*))
       
       inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
       
@@ -446,7 +471,7 @@ object mod {
       inline def setClientCertEngineUndefined: Self = StObject.set(x, "clientCertEngine", js.undefined)
       
       inline def setCreateConnection(
-        value: (HttpsRequestOptions, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
+        value: (HttpsRequestOptions, /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ typings.node.nodeNetMod.Socket, Unit]) => typings.node.nodeNetMod.Socket
       ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
       
       inline def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
@@ -455,7 +480,7 @@ object mod {
       
       inline def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
       
-      inline def setCrlVarargs(value: (String | Buffer)*): Self = StObject.set(x, "crl", js.Array(value :_*))
+      inline def setCrlVarargs(value: (String | Buffer)*): Self = StObject.set(x, "crl", js.Array(value*))
       
       inline def setDefaultPort(value: Double | String): Self = StObject.set(x, "defaultPort", value.asInstanceOf[js.Any])
       
@@ -491,15 +516,26 @@ object mod {
       
       inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      inline def setKey(value: String | Buffer | (js.Array[Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Buffer | (js.Array[String | Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setKeyVarargs(value: (Buffer | KeyObject)*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: (String | Buffer | KeyObject)*): Self = StObject.set(x, "key", js.Array(value*))
       
       inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      
+      inline def setLookup(
+        value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
+              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+              /* address */ String, 
+              /* family */ Double, 
+              Unit
+            ]) => Unit
+      ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
+      
+      inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
       
       inline def setMaxHeaderSize(value: Double): Self = StObject.set(x, "maxHeaderSize", value.asInstanceOf[js.Any])
       
@@ -529,7 +565,7 @@ object mod {
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
-      inline def setPfxVarargs(value: (String | Buffer | PxfObject)*): Self = StObject.set(x, "pfx", js.Array(value :_*))
+      inline def setPfxVarargs(value: (String | Buffer | PxfObject)*): Self = StObject.set(x, "pfx", js.Array(value*))
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -580,6 +616,10 @@ object mod {
       inline def setSigalgs(value: String): Self = StObject.set(x, "sigalgs", value.asInstanceOf[js.Any])
       
       inline def setSigalgsUndefined: Self = StObject.set(x, "sigalgs", js.undefined)
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
       inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
       

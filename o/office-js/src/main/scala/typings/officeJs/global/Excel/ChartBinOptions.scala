@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the bin options for histogram charts and pareto charts.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartBinOptions")
 @js.native
-class ChartBinOptions ()
+open class ChartBinOptions ()
   extends StObject
      with typings.officeJs.Excel.ChartBinOptions {
   

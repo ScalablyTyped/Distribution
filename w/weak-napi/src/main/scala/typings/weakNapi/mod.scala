@@ -25,18 +25,18 @@ object mod {
     * @param ref weak reference object
     * @param callback function to be called
     */
-  inline def addCallback(ref: WeakRef[js.Any], callback: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("addCallback")(ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def addCallback(ref: WeakRef[Any], callback: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("addCallback")(ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
   /**
     * Returns an Array that ref iterates through to invoke the GC callbacks. This utilizes node's EventEmitter#listeners() function and therefore returns a copy in node 0.10 and newer.
     * @param ref weak reference object
     */
-  inline def callbacks(ref: WeakRef[js.Any]): js.Array[js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbacks")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function0[Unit]]]
+  inline def callbacks(ref: WeakRef[Any]): js.Array[js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbacks")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function0[Unit]]]
   
   // export alias
   @JSImport("weak-napi", "create")
   @js.native
-  val create: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof weak */ js.Any = js.native
+  val create: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof weak */ Any = js.native
   
   /**
     * Returns the actual reference to the Object that this weak reference was created with. If this is called with a dead reference, undefined is returned.
@@ -48,32 +48,32 @@ object mod {
     * Checks to see if ref is a dead reference. Returns true if the original Object has already been GC'd, false otherwise
     * @param ref weak reference object
     */
-  inline def isDead(ref: WeakRef[js.Any]): /* is weak-napi.weak-napi.WeakRef<undefined> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDead")(ref.asInstanceOf[js.Any]).asInstanceOf[/* is weak-napi.weak-napi.WeakRef<undefined> */ Boolean]
+  inline def isDead(ref: WeakRef[Any]): /* is weak-napi.weak-napi.WeakRef<undefined> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDead")(ref.asInstanceOf[js.Any]).asInstanceOf[/* is weak-napi.weak-napi.WeakRef<undefined> */ Boolean]
   
   /**
     * Checks to see if ref is "near death". This will be true exactly during the weak reference callback function, and false any other time.
     * @param ref weak reference object
     */
-  inline def isNearDeath(ref: WeakRef[js.Any]): `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("isNearDeath")(ref.asInstanceOf[js.Any]).asInstanceOf[`false`]
+  inline def isNearDeath(ref: WeakRef[Any]): `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("isNearDeath")(ref.asInstanceOf[js.Any]).asInstanceOf[`false`]
   
   /**
     * Checks to see if obj is "weak reference" instance. Returns true if the passed in object is a "weak reference", false otherwise.
     * @param obj object to check
     */
-  inline def isWeakRef(obj: js.Any): /* is weak-napi.weak-napi.WeakRef<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeakRef")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is weak-napi.weak-napi.WeakRef<any> */ Boolean]
+  inline def isWeakRef(obj: Any): /* is weak-napi.weak-napi.WeakRef<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWeakRef")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is weak-napi.weak-napi.WeakRef<any> */ Boolean]
   
   /**
     * Removes callback from the Array of callback functions that will be invoked before the Object gets garbage collected.
     * @param ref weak reference object
     * @param callback function to be called
     */
-  inline def removeCallback(ref: WeakRef[js.Any], callback: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCallback")(ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def removeCallback(ref: WeakRef[Any], callback: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCallback")(ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
   /**
     * Empties the Array of callback functions that will be invoked before the Object gets garbage collected.
     * @param ref weak reference object
     */
-  inline def removeCallbacks(ref: WeakRef[js.Any]): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCallbacks")(ref.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  inline def removeCallbacks(ref: WeakRef[Any]): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCallbacks")(ref.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
   
   trait WeakRef[T] extends StObject
 }

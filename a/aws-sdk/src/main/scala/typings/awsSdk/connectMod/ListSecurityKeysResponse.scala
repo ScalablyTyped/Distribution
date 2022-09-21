@@ -33,6 +33,6 @@ object ListSecurityKeysResponse {
     
     inline def setSecurityKeysUndefined: Self = StObject.set(x, "SecurityKeys", js.undefined)
     
-    inline def setSecurityKeysVarargs(value: SecurityKey*): Self = StObject.set(x, "SecurityKeys", js.Array(value :_*))
+    inline def setSecurityKeysVarargs(value: SecurityKey*): Self = StObject.set(x, "SecurityKeys", js.Array(value*))
   }
 }

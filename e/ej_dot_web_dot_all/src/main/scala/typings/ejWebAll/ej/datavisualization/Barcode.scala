@@ -115,7 +115,7 @@ object Barcode {
     
     /** returns the barcode model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** return the barcode state
       */
@@ -138,7 +138,7 @@ object Barcode {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -165,7 +165,7 @@ object Barcode {
     
     /** Specifies the dark bar color of the Barcode. One dimensional barcode contains a series of dark and light bars which are usually colored as black and white respectively.
       */
-    var darkBarColor: js.UndefOr[js.Any] = js.undefined
+    var darkBarColor: js.UndefOr[Any] = js.undefined
     
     /** Specifies whether the text below the barcode is visible or hidden.
       */
@@ -182,7 +182,7 @@ object Barcode {
     
     /** Specifies the light bar color of the Barcode. One dimensional barcode contains a series of dark and light bars which are usually colored as black and white respectively.
       */
-    var lightBarColor: js.UndefOr[js.Any] = js.undefined
+    var lightBarColor: js.UndefOr[Any] = js.undefined
     
     /** Fires after Barcode control is loaded.
       */
@@ -208,7 +208,7 @@ object Barcode {
     
     /** Specifies the color of the text/data at the bottom of the barcode.
       */
-    var textColor: js.UndefOr[js.Any] = js.undefined
+    var textColor: js.UndefOr[Any] = js.undefined
     
     /** Specifies the width of the wide bars in the barcode. One dimensional barcode usually contains random narrow and wide bars based on the provided which can be customized during
       * initialization.
@@ -236,7 +236,7 @@ object Barcode {
       
       inline def setBarcodeToTextGapHeightUndefined: Self = StObject.set(x, "barcodeToTextGapHeight", js.undefined)
       
-      inline def setDarkBarColor(value: js.Any): Self = StObject.set(x, "darkBarColor", value.asInstanceOf[js.Any])
+      inline def setDarkBarColor(value: Any): Self = StObject.set(x, "darkBarColor", value.asInstanceOf[js.Any])
       
       inline def setDarkBarColorUndefined: Self = StObject.set(x, "darkBarColor", js.undefined)
       
@@ -252,7 +252,7 @@ object Barcode {
       
       inline def setEncodeStartStopSymbolUndefined: Self = StObject.set(x, "encodeStartStopSymbol", js.undefined)
       
-      inline def setLightBarColor(value: js.Any): Self = StObject.set(x, "lightBarColor", value.asInstanceOf[js.Any])
+      inline def setLightBarColor(value: Any): Self = StObject.set(x, "lightBarColor", value.asInstanceOf[js.Any])
       
       inline def setLightBarColorUndefined: Self = StObject.set(x, "lightBarColor", js.undefined)
       
@@ -274,7 +274,7 @@ object Barcode {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
       inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       

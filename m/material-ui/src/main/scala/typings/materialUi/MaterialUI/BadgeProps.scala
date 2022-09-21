@@ -12,6 +12,8 @@ trait BadgeProps extends StObject {
   
   var badgeStyle: js.UndefOr[CSSProperties] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
   
   var primary: js.UndefOr[Boolean] = js.undefined
@@ -36,6 +38,10 @@ object BadgeProps {
     inline def setBadgeStyle(value: CSSProperties): Self = StObject.set(x, "badgeStyle", value.asInstanceOf[js.Any])
     
     inline def setBadgeStyleUndefined: Self = StObject.set(x, "badgeStyle", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

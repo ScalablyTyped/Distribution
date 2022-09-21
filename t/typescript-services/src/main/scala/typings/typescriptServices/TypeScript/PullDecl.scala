@@ -22,13 +22,13 @@ trait PullDecl extends StObject {
   
   var childDeclValueCache: IIndexable[js.Array[PullDecl]]
   
-  /* private */ var childDecls: js.Any
+  /* private */ var childDecls: Any
   
-  /* private */ var containerDecl: js.Any
+  /* private */ var containerDecl: Any
   
-  /* private */ var declDisplayName: js.Any
+  /* private */ var declDisplayName: Any
   
-  /* private */ var declGroups: js.Any
+  /* private */ var declGroups: Any
   
   var declID: Double
   
@@ -38,7 +38,7 @@ trait PullDecl extends StObject {
   
   var flags: PullElementFlags
   
-  /* private */ def getChildDeclCache(declKind: js.Any): js.Any
+  /* private */ def getChildDeclCache(declKind: Any): Any
   
   def getChildDecls(): js.Array[PullDecl]
   
@@ -92,9 +92,9 @@ trait PullDecl extends StObject {
   
   def setValueDecl(valDecl: PullDecl): Unit
   
-  /* private */ var synthesizedValDecl: js.Any
+  /* private */ var synthesizedValDecl: Any
   
-  /* private */ var typeParameters: js.Any
+  /* private */ var typeParameters: Any
 }
 object PullDecl {
   
@@ -107,15 +107,15 @@ object PullDecl {
     childDeclTypeCache: IIndexable[js.Array[PullDecl]],
     childDeclTypeParameterCache: IIndexable[js.Array[PullDecl]],
     childDeclValueCache: IIndexable[js.Array[PullDecl]],
-    childDecls: js.Any,
-    containerDecl: js.Any,
-    declDisplayName: js.Any,
-    declGroups: js.Any,
+    childDecls: Any,
+    containerDecl: Any,
+    declDisplayName: Any,
+    declGroups: Any,
     declID: Double,
     ensureSymbolIsBound: () => Unit,
     fileName: () => String,
     flags: PullElementFlags,
-    getChildDeclCache: js.Any => js.Any,
+    getChildDeclCache: Any => Any,
     getChildDecls: () => js.Array[PullDecl],
     getContainerDecl: () => PullDecl,
     getDisplayName: () => String,
@@ -142,8 +142,8 @@ object PullDecl {
     setSignatureSymbol: PullSignatureSymbol => Unit,
     setSymbol: PullSymbol => Unit,
     setValueDecl: PullDecl => Unit,
-    synthesizedValDecl: js.Any,
-    typeParameters: js.Any
+    synthesizedValDecl: Any,
+    typeParameters: Any
   ): PullDecl = {
     val __obj = js.Dynamic.literal(_getEnclosingDeclFromParentDecl = js.Any.fromFunction0(_getEnclosingDeclFromParentDecl), addChildDecl = js.Any.fromFunction1(addChildDecl), addVariableDeclToGroup = js.Any.fromFunction1(addVariableDeclToGroup), ast = js.Any.fromFunction0(ast), childDeclNamespaceCache = childDeclNamespaceCache.asInstanceOf[js.Any], childDeclTypeCache = childDeclTypeCache.asInstanceOf[js.Any], childDeclTypeParameterCache = childDeclTypeParameterCache.asInstanceOf[js.Any], childDeclValueCache = childDeclValueCache.asInstanceOf[js.Any], childDecls = childDecls.asInstanceOf[js.Any], containerDecl = containerDecl.asInstanceOf[js.Any], declDisplayName = declDisplayName.asInstanceOf[js.Any], declGroups = declGroups.asInstanceOf[js.Any], declID = declID.asInstanceOf[js.Any], ensureSymbolIsBound = js.Any.fromFunction0(ensureSymbolIsBound), fileName = js.Any.fromFunction0(fileName), flags = flags.asInstanceOf[js.Any], getChildDeclCache = js.Any.fromFunction1(getChildDeclCache), getChildDecls = js.Any.fromFunction0(getChildDecls), getContainerDecl = js.Any.fromFunction0(getContainerDecl), getDisplayName = js.Any.fromFunction0(getDisplayName), getEnclosingDecl = js.Any.fromFunction0(getEnclosingDecl), getParentDecl = js.Any.fromFunction0(getParentDecl), getParentPath = js.Any.fromFunction0(getParentPath), getSignatureSymbol = js.Any.fromFunction0(getSignatureSymbol), getSymbol = js.Any.fromFunction0(getSymbol), getTypeParameters = js.Any.fromFunction0(getTypeParameters), getValueDecl = js.Any.fromFunction0(getValueDecl), getVariableDeclGroups = js.Any.fromFunction0(getVariableDeclGroups), hasBeenBound = js.Any.fromFunction0(hasBeenBound), hasSignatureSymbol = js.Any.fromFunction0(hasSignatureSymbol), hasSymbol = js.Any.fromFunction0(hasSymbol), isExternalModule = js.Any.fromFunction0(isExternalModule), isRootDecl = js.Any.fromFunction0(isRootDecl), isSynthesized = js.Any.fromFunction0(isSynthesized), kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], searchChildDecls = js.Any.fromFunction2(searchChildDecls), semanticInfoChain = semanticInfoChain.asInstanceOf[js.Any], setFlag = js.Any.fromFunction1(setFlag), setFlags = js.Any.fromFunction1(setFlags), setSignatureSymbol = js.Any.fromFunction1(setSignatureSymbol), setSymbol = js.Any.fromFunction1(setSymbol), setValueDecl = js.Any.fromFunction1(setValueDecl), synthesizedValDecl = synthesizedValDecl.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullDecl]
@@ -165,13 +165,13 @@ object PullDecl {
     
     inline def setChildDeclValueCache(value: IIndexable[js.Array[PullDecl]]): Self = StObject.set(x, "childDeclValueCache", value.asInstanceOf[js.Any])
     
-    inline def setChildDecls(value: js.Any): Self = StObject.set(x, "childDecls", value.asInstanceOf[js.Any])
+    inline def setChildDecls(value: Any): Self = StObject.set(x, "childDecls", value.asInstanceOf[js.Any])
     
-    inline def setContainerDecl(value: js.Any): Self = StObject.set(x, "containerDecl", value.asInstanceOf[js.Any])
+    inline def setContainerDecl(value: Any): Self = StObject.set(x, "containerDecl", value.asInstanceOf[js.Any])
     
-    inline def setDeclDisplayName(value: js.Any): Self = StObject.set(x, "declDisplayName", value.asInstanceOf[js.Any])
+    inline def setDeclDisplayName(value: Any): Self = StObject.set(x, "declDisplayName", value.asInstanceOf[js.Any])
     
-    inline def setDeclGroups(value: js.Any): Self = StObject.set(x, "declGroups", value.asInstanceOf[js.Any])
+    inline def setDeclGroups(value: Any): Self = StObject.set(x, "declGroups", value.asInstanceOf[js.Any])
     
     inline def setDeclID(value: Double): Self = StObject.set(x, "declID", value.asInstanceOf[js.Any])
     
@@ -181,7 +181,7 @@ object PullDecl {
     
     inline def setFlags(value: PullElementFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    inline def setGetChildDeclCache(value: js.Any => js.Any): Self = StObject.set(x, "getChildDeclCache", js.Any.fromFunction1(value))
+    inline def setGetChildDeclCache(value: Any => Any): Self = StObject.set(x, "getChildDeclCache", js.Any.fromFunction1(value))
     
     inline def setGetChildDecls(value: () => js.Array[PullDecl]): Self = StObject.set(x, "getChildDecls", js.Any.fromFunction0(value))
     
@@ -235,9 +235,9 @@ object PullDecl {
     
     inline def setSetValueDecl(value: PullDecl => Unit): Self = StObject.set(x, "setValueDecl", js.Any.fromFunction1(value))
     
-    inline def setSynthesizedValDecl(value: js.Any): Self = StObject.set(x, "synthesizedValDecl", value.asInstanceOf[js.Any])
+    inline def setSynthesizedValDecl(value: Any): Self = StObject.set(x, "synthesizedValDecl", value.asInstanceOf[js.Any])
     
-    inline def setTypeParameters(value: js.Any): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: Any): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     inline def set_getEnclosingDeclFromParentDecl(value: () => PullDecl): Self = StObject.set(x, "_getEnclosingDeclFromParentDecl", js.Any.fromFunction0(value))
   }

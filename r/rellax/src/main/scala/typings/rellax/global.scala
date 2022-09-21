@@ -21,7 +21,7 @@ object global {
       * @param el Single element or string with selector of elements
       * @param options Options
       */
-    class ^ ()
+    open class ^ ()
       extends StObject
          with RellaxInstance {
       def this(el: String) = this()

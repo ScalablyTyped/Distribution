@@ -12,12 +12,12 @@ trait CreateBasePathMappingRequest extends StObject {
   var basePath: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The domain name of the BasePathMapping resource to create.
+    * The domain name of the BasePathMapping resource to create.
     */
   var domainName: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
   

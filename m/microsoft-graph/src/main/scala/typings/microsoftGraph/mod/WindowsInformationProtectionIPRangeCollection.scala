@@ -9,7 +9,7 @@ trait WindowsInformationProtectionIPRangeCollection extends StObject {
   // Display name
   var displayName: js.UndefOr[String] = js.undefined
   
-  // Collection of Internet protocol address ranges
+  // Collection of ip ranges
   var ranges: js.UndefOr[js.Array[IpRange]] = js.undefined
 }
 object WindowsInformationProtectionIPRangeCollection {
@@ -29,6 +29,6 @@ object WindowsInformationProtectionIPRangeCollection {
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: IpRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: IpRange*): Self = StObject.set(x, "ranges", js.Array(value*))
   }
 }

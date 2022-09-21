@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait NotificationTracing
   /**
     * Trace until the specified end date.
     */
-  var endDate: Date
+  var endDate: js.Date
   
   /**
     * The maximum number of result details to trace.
@@ -22,7 +21,7 @@ trait NotificationTracing
   /**
     * The date and time tracing started.
     */
-  var startDate: Date
+  var startDate: js.Date
   
   /**
     * Trace until remaining count reaches 0.
@@ -31,18 +30,24 @@ trait NotificationTracing
 }
 object NotificationTracing {
   
-  inline def apply(enabled: Boolean, endDate: Date, maxTracedEntries: Double, startDate: Date, tracedEntries: Double): NotificationTracing = {
+  inline def apply(
+    enabled: Boolean,
+    endDate: js.Date,
+    maxTracedEntries: Double,
+    startDate: js.Date,
+    tracedEntries: Double
+  ): NotificationTracing = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], maxTracedEntries = maxTracedEntries.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], tracedEntries = tracedEntries.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationTracing]
   }
   
   extension [Self <: NotificationTracing](x: Self) {
     
-    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     inline def setMaxTracedEntries(value: Double): Self = StObject.set(x, "maxTracedEntries", value.asInstanceOf[js.Any])
     
-    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     inline def setTracedEntries(value: Double): Self = StObject.set(x, "tracedEntries", value.asInstanceOf[js.Any])
   }

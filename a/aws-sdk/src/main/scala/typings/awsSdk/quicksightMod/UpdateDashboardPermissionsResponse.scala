@@ -17,12 +17,17 @@ trait UpdateDashboardPermissionsResponse extends StObject {
   var DashboardId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
   /**
+    * Updates the permissions of a shared link to an Amazon QuickSight dashboard.
+    */
+  var LinkSharingConfiguration: js.UndefOr[typings.awsSdk.quicksightMod.LinkSharingConfiguration] = js.undefined
+  
+  /**
     * Information about the permissions on the dashboard.
     */
   var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -48,11 +53,15 @@ object UpdateDashboardPermissionsResponse {
     
     inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     
+    inline def setLinkSharingConfiguration(value: LinkSharingConfiguration): Self = StObject.set(x, "LinkSharingConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setLinkSharingConfigurationUndefined: Self = StObject.set(x, "LinkSharingConfiguration", js.undefined)
+    
     inline def setPermissions(value: ResourcePermissionList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value*))
     
     inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     

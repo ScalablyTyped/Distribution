@@ -4,14 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Available only in secure contexts. */
 trait NavigationPreloadManager extends StObject {
   
+  /* standard dom */
   def disable(): js.Promise[Unit]
   
+  /* standard dom */
   def enable(): js.Promise[Unit]
   
+  /* standard dom */
   def getState(): js.Promise[NavigationPreloadState]
   
+  /* standard dom */
   def setHeaderValue(value: java.lang.String): js.Promise[Unit]
 }
 object NavigationPreloadManager {

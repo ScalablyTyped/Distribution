@@ -24,6 +24,6 @@ object BatchPutScheduledUpdateGroupActionAnswer {
     
     inline def setFailedScheduledUpdateGroupActionsUndefined: Self = StObject.set(x, "FailedScheduledUpdateGroupActions", js.undefined)
     
-    inline def setFailedScheduledUpdateGroupActionsVarargs(value: FailedScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "FailedScheduledUpdateGroupActions", js.Array(value :_*))
+    inline def setFailedScheduledUpdateGroupActionsVarargs(value: FailedScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "FailedScheduledUpdateGroupActions", js.Array(value*))
   }
 }

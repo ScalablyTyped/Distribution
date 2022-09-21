@@ -29,7 +29,7 @@ object DescribeNodeAssociationStatusResponse {
     
     inline def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
     
-    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
+    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value*))
     
     inline def setNodeAssociationStatus(value: NodeAssociationStatus): Self = StObject.set(x, "NodeAssociationStatus", value.asInstanceOf[js.Any])
     

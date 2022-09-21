@@ -21,7 +21,7 @@ trait HTMLNavigator extends StObject {
   
   val connectionSpeed: Double
   
-  val constructor: js.Any
+  val constructor: Any
   
   val cookieEnabled: Boolean
   
@@ -63,7 +63,7 @@ object HTMLNavigator {
     appVersion: String,
     browserLanguage: String,
     connectionSpeed: Double,
-    constructor: js.Any,
+    constructor: Any,
     cookieEnabled: Boolean,
     cpuClass: String,
     geolocation: IWebGeolocation,
@@ -99,7 +99,7 @@ object HTMLNavigator {
     
     inline def setConnectionSpeed(value: Double): Self = StObject.set(x, "connectionSpeed", value.asInstanceOf[js.Any])
     
-    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     inline def setCookieEnabled(value: Boolean): Self = StObject.set(x, "cookieEnabled", value.asInstanceOf[js.Any])
     

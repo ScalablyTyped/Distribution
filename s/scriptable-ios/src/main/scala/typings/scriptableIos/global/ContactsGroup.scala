@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `Contact.persistChanges()` to persist the changes.
   * @see https://docs.scriptable.app/contactsgroup/#-new-contactsgroup
   */
-class ContactsGroup ()
+open class ContactsGroup ()
   extends StObject
      with typings.scriptableIos.ContactsGroup {
   

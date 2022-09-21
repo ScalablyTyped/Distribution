@@ -39,19 +39,19 @@ trait XBridgeSupplier
   
   /** creates a bridge to provide an object of one object model with another. */
   def createBridge(
-    modelDepObject: js.Any,
+    modelDepObject: Any,
     MachineId: Uik,
     ProcessId: Double,
     sourceModelType: Double,
     destModelType: Double
-  ): js.Any
+  ): Any
 }
 object XBridgeSupplier {
   
   inline def apply(
     acquire: () => Unit,
-    createBridge: (js.Any, Uik, Double, Double, Double) => js.Any,
-    queryInterface: `type` => js.Any,
+    createBridge: (Any, Uik, Double, Double, Double) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XBridgeSupplier = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createBridge = js.Any.fromFunction5(createBridge), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -60,6 +60,6 @@ object XBridgeSupplier {
   
   extension [Self <: XBridgeSupplier](x: Self) {
     
-    inline def setCreateBridge(value: (js.Any, Uik, Double, Double, Double) => js.Any): Self = StObject.set(x, "createBridge", js.Any.fromFunction5(value))
+    inline def setCreateBridge(value: (Any, Uik, Double, Double, Double) => Any): Self = StObject.set(x, "createBridge", js.Any.fromFunction5(value))
   }
 }

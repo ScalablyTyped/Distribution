@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.ContactStoreNotificationTrigger")
 @js.native
 /** Initializes a new instance of the ContactStoreNotificationTrigger class. */
-class ContactStoreNotificationTrigger ()
+open class ContactStoreNotificationTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.ContactStoreNotificationTrigger

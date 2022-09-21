@@ -19,6 +19,6 @@ object Userids {
     
     inline def setUser_ids(value: js.Array[String]): Self = StObject.set(x, "user_ids", value.asInstanceOf[js.Any])
     
-    inline def setUser_idsVarargs(value: String*): Self = StObject.set(x, "user_ids", js.Array(value :_*))
+    inline def setUser_idsVarargs(value: String*): Self = StObject.set(x, "user_ids", js.Array(value*))
   }
 }

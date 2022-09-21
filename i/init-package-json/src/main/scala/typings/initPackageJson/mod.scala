@@ -7,19 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(dir: String, input: String, cb: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(dir: String, input: String, cb: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     dir: String,
     input: String,
     config: js.Object,
-    cb: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]
+    cb: js.Function2[/* err */ Any, /* data */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(
-    dir: String,
-    input: String,
-    config: Config,
-    cb: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(dir: String, input: String, config: Config, cb: js.Function2[/* err */ Any, /* data */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("init-package-json", JSImport.Namespace)
   @js.native
@@ -29,20 +24,20 @@ object mod {
   
   trait Config
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    def get(k: String): js.Any
+    def get(k: String): Any
   }
   object Config {
     
-    inline def apply(get: String => js.Any): Config = {
+    inline def apply(get: String => Any): Config = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[Config]
     }
     
     extension [Self <: Config](x: Self) {
       
-      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
 }

@@ -10,7 +10,6 @@ import typings.loopback.loopbackStrings.DENY
 import typings.loopback.loopbackStrings.EXECUTE
 import typings.loopback.loopbackStrings.READ
 import typings.loopback.loopbackStrings.WRITE
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,8 +42,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "ACL")
 @js.native
-class ACL protected () extends PersistedModel {
-  def this(data: js.Any) = this()
+open class ACL protected () extends PersistedModel {
+  def this(data: Any) = this()
   
   /** accessType Type of access being granted: one of READ, WRITE, or EXECUTE. */
   var accesType: READ | WRITE | EXECUTE = js.native
@@ -114,9 +113,9 @@ object ACL {
   inline def checkAccessForToken(
     token: AccessToken,
     model: String,
-    modelId: js.Any,
+    modelId: Any,
     method: String,
-    callback: js.Function2[/* err */ String | Error, /* allowed */ Boolean, Unit]
+    callback: js.Function2[/* err */ String | js.Error, /* allowed */ Boolean, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccessForToken")(token.asInstanceOf[js.Any], model.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any], method.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -137,7 +136,7 @@ object ACL {
     model: String,
     property: String,
     accessType: String,
-    callback: js.Function2[/* err */ String | Error, /* result */ AccessRequest, Unit]
+    callback: js.Function2[/* err */ String | js.Error, /* result */ AccessRequest, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPermission")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], model.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -158,9 +157,9 @@ object ACL {
     */
   /* static member */
   inline def isMappedToRole(principalType: String, principalId: String, role: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def isMappedToRole(principalType: String, principalId: String, role: js.Any, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def isMappedToRole(principalType: String, principalId: js.Any, role: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def isMappedToRole(principalType: String, principalId: js.Any, role: js.Any, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def isMappedToRole(principalType: String, principalId: String, role: Any, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def isMappedToRole(principalType: String, principalId: Any, role: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def isMappedToRole(principalType: String, principalId: Any, role: Any, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Resolve a principal by type/id

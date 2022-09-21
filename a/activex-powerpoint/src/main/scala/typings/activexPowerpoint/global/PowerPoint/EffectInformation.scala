@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.EffectInformation")
 @js.native
-/* private */ class EffectInformation ()
+/* private */ open class EffectInformation ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.EffectInformation {
   
@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Dim: typings.activexPowerpoint.PowerPoint.ColorFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PlaySettings: typings.activexPowerpoint.PowerPoint.PlaySettings = js.native

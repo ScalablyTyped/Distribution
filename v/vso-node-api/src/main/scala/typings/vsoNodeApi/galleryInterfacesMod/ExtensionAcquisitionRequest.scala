@@ -29,7 +29,7 @@ trait ExtensionAcquisitionRequest extends StObject {
   /**
     * Additional properties which can be added to the request.
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * How many licenses should be purchased
@@ -48,7 +48,7 @@ object ExtensionAcquisitionRequest {
     billingId: String,
     itemId: String,
     operationType: AcquisitionOperationType,
-    properties: js.Any,
+    properties: Any,
     quantity: Double,
     targets: js.Array[String]
   ): ExtensionAcquisitionRequest = {
@@ -66,12 +66,12 @@ object ExtensionAcquisitionRequest {
     
     inline def setOperationType(value: AcquisitionOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
   }
 }

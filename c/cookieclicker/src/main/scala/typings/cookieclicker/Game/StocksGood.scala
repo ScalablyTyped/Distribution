@@ -174,7 +174,7 @@ object StocksGood {
     
     inline def setVals(value: js.Array[Double]): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
     
-    inline def setValsVarargs(value: Double*): Self = StObject.set(x, "vals", js.Array(value :_*))
+    inline def setValsVarargs(value: Double*): Self = StObject.set(x, "vals", js.Array(value*))
     
     inline def setViewHideL(value: HTMLDivElement): Self = StObject.set(x, "viewHideL", value.asInstanceOf[js.Any])
   }

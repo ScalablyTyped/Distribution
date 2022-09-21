@@ -16,6 +16,8 @@ trait PortalItemResourceUpdateOptions
   /**
     * Indicates the level of access to the resource.
     *
+    * @default "inherit"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html#update)
     */
   var access: js.UndefOr[inherit | `private`] = js.undefined

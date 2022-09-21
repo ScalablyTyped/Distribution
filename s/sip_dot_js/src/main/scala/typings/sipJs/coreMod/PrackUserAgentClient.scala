@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js/lib/core", "PrackUserAgentClient")
 @js.native
-class PrackUserAgentClient protected ()
+open class PrackUserAgentClient protected ()
   extends typings.sipJs.userAgentsMod.PrackUserAgentClient {
   def this(dialog: typings.sipJs.dialogsMod.SessionDialog) = this()
   def this(dialog: typings.sipJs.dialogsMod.SessionDialog, delegate: OutgoingRequestDelegate) = this()

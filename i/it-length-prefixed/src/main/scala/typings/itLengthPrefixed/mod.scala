@@ -1,92 +1,71 @@
 package typings.itLengthPrefixed
 
-import typings.bl.mod.^
-import typings.itLengthPrefixed.anon.PartialDecoderOptions
-import typings.itLengthPrefixed.anon.PartiallengthEncoderLengt
-import typings.node.Buffer
-import typings.std.AsyncGenerator
-import typings.std.AsyncIterator
+import typings.itLengthPrefixed.decodeMod.DecoderOptions
+import typings.itLengthPrefixed.encodeMod.EncoderOptions
+import typings.itReader.mod.Reader_
+import typings.itStreamTypes.mod.Source
+import typings.itStreamTypes.mod.Transform
+import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("it-length-prefixed", "decode")
-  @js.native
-  val decode: Decoder = js.native
-  
-  @JSImport("it-length-prefixed", "encode")
-  @js.native
-  val encode: Encoder = js.native
-  
-  @JSImport("it-length-prefixed", "int32BEDecode")
-  @js.native
-  val int32BEDecode: LengthDecoderFunction = js.native
-  
-  @JSImport("it-length-prefixed", "int32BEEncode")
-  @js.native
-  val int32BEEncode: LengthEncoderFunction = js.native
-  
-  @JSImport("it-length-prefixed", "varintDecode")
-  @js.native
-  val varintDecode: LengthDecoderFunction = js.native
-  
-  @JSImport("it-length-prefixed", "varintEncode")
-  @js.native
-  val varintEncode: LengthEncoderFunction = js.native
-  
-  @js.native
-  trait Decoder extends StObject {
+  object decode {
     
-    def apply(): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
-    def apply(options: PartialDecoderOptions): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
+    inline def apply(): Transform[Uint8ArrayList | js.typedarray.Uint8Array, Uint8ArrayList] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform[Uint8ArrayList | js.typedarray.Uint8Array, Uint8ArrayList]]
+    inline def apply(options: DecoderOptions): Transform[Uint8ArrayList | js.typedarray.Uint8Array, Uint8ArrayList] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform[Uint8ArrayList | js.typedarray.Uint8Array, Uint8ArrayList]]
     
-    var MAX_DATA_LENGTH: Double = js.native
+    @JSImport("it-length-prefixed", "decode")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var MAX_LENGTH_LENGTH: Double = js.native
-    
-    def fromReader(reader: AsyncIterator[Buffer, js.Any, Unit]): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
-    def fromReader(reader: AsyncIterator[Buffer, js.Any, Unit], options: PartialDecoderOptions): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
+    @JSImport("it-length-prefixed", "decode.fromReader")
+    @js.native
+    def fromReader: js.Function2[
+        /* reader */ Reader_, 
+        /* options */ js.UndefOr[DecoderOptions], 
+        Source[Uint8ArrayList]
+      ] = js.native
+    inline def fromReader_=(
+      x: js.Function2[
+          /* reader */ Reader_, 
+          /* options */ js.UndefOr[DecoderOptions], 
+          Source[Uint8ArrayList]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromReader")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait DecoderOptions[T] extends StObject {
+  object encode {
     
-    def lengthDecoder(data: ^): Double = js.native
-    def lengthDecoder(data: Buffer): Double = js.native
-    @JSName("lengthDecoder")
-    var lengthDecoder_Original: LengthDecoderFunction = js.native
+    inline def apply(): Transform[Uint8ArrayList | js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform[Uint8ArrayList | js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
+    inline def apply(options: EncoderOptions): Transform[Uint8ArrayList | js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform[Uint8ArrayList | js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
     
-    var maxDataLength: Double = js.native
+    @JSImport("it-length-prefixed", "encode")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var maxLengthLength: Double = js.native
-    
-    def onData(data: ^): T = js.native
-    def onData(data: Buffer): T = js.native
-  }
-  
-  @js.native
-  trait Encoder extends StObject {
-    
-    def apply(): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
-    def apply(options: PartiallengthEncoderLengt): AsyncGenerator[^ | Buffer, ^, js.Any] = js.native
-    
-    var DEFAULT_POOL_SIZE: Double = js.native
-    
-    var MIN_POOL_SIZE: Double = js.native
-    
-    def single(chunk: ^): ^ = js.native
-    def single(chunk: ^, options: PartiallengthEncoderLengt): ^ = js.native
-    def single(chunk: Buffer): ^ = js.native
-    def single(chunk: Buffer, options: PartiallengthEncoderLengt): ^ = js.native
+    @JSImport("it-length-prefixed", "encode.single")
+    @js.native
+    def single: js.Function2[
+        /* chunk */ js.typedarray.Uint8Array | Uint8ArrayList, 
+        /* options */ js.UndefOr[EncoderOptions], 
+        Uint8ArrayList
+      ] = js.native
+    inline def single_=(
+      x: js.Function2[
+          /* chunk */ js.typedarray.Uint8Array | Uint8ArrayList, 
+          /* options */ js.UndefOr[EncoderOptions], 
+          Uint8ArrayList
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("single")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait LengthDecoderFunction extends StObject {
     
-    def apply(data: ^): Double = js.native
-    def apply(data: Buffer): Double = js.native
+    def apply(data: Uint8ArrayList): Double = js.native
     
     var bytes: Double = js.native
   }
@@ -94,7 +73,7 @@ object mod {
   @js.native
   trait LengthEncoderFunction extends StObject {
     
-    def apply(value: Double, target: Buffer, offset: Double): Double | Buffer = js.native
+    def apply(value: Double): Uint8ArrayList | js.typedarray.Uint8Array = js.native
     
     var bytes: Double = js.native
   }

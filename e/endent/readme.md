@@ -1,7 +1,7 @@
 
 # Scala.js typings for endent
 
-Typings are for version 2.0.1
+Typings are for version 2.1.0
 
 ## Library description:
 ➡️ An ES6 string tag that makes indentation right
@@ -10,10 +10,10 @@ Typings are for version 2.0.1
 | ------------------ | :-------------: |
 | Full name          | endent |
 | Keywords           | dedent, tag, multi-line string |
-| # releases         | 6 |
-| # dependents       | 28 |
-| # downloads        | 7478364 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1501567E7 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/ZhouHansen/endent#readme)

@@ -60,7 +60,7 @@ object rectangleMod {
   
   @JSImport("@devexpress/utils/lib/geometry/rectangle", "Rectangle")
   @js.native
-  class Rectangle protected ()
+  open class Rectangle protected ()
     extends StObject
        with IRectangle
        with IEquatable[Rectangle]
@@ -76,9 +76,9 @@ object rectangleMod {
     
     def applyOffsetsOutside(offsets: IOffsets): this.type = js.native
     
-    val bottom: Double = js.native
+    def bottom: Double = js.native
     
-    val center: Point = js.native
+    def center: Point = js.native
     
     def containsPoint(point: IPoint): Boolean = js.native
     
@@ -120,7 +120,7 @@ object rectangleMod {
     
     def resize(deltaX: Double, deltaY: Double): this.type = js.native
     
-    val right: Double = js.native
+    def right: Double = js.native
     
     def setGeomerty(rect: IRectangle): this.type = js.native
     
@@ -177,7 +177,7 @@ object rectangleMod {
   
   @JSImport("@devexpress/utils/lib/geometry/rectangle", "RectangleDeviation")
   @js.native
-  class RectangleDeviation protected () extends StObject {
+  open class RectangleDeviation protected () extends StObject {
     def this(initRectangle: Rectangle, initPoint: Point) = this()
     
     def calcAdditionalParams(): this.type = js.native

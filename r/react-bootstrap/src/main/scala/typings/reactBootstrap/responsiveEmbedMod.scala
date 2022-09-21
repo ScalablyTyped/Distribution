@@ -10,12 +10,10 @@ object responsiveEmbedMod {
   
   @JSImport("react-bootstrap/lib/ResponsiveEmbed", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ResponsiveEmbedProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ResponsiveEmbedProps, js.Object, Any]
   
-  @js.native
-  trait ResponsiveEmbed
-    extends Component[ResponsiveEmbedProps, js.Object, js.Any]
+  type ResponsiveEmbed = Component[ResponsiveEmbedProps, js.Object, Any]
   
   trait ResponsiveEmbedProps
     extends StObject

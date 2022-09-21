@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AxisPlotLinePathOptionsObject extends StObject {
   
   /**
-    * Used in Highstock. When `true`, plot paths (crosshair, plotLines,
+    * Used in Highcharts Stock. When `true`, plot paths (crosshair, plotLines,
     * gridLines) will be rendered on all axes when defined on the first axis.
     */
   var acrossPanes: js.UndefOr[Boolean] = js.undefined

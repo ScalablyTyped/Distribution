@@ -26,6 +26,6 @@ object LocalBasemapsSourceProperties {
     
     inline def setBasemapsUndefined: Self = StObject.set(x, "basemaps", js.undefined)
     
-    inline def setBasemapsVarargs(value: BasemapProperties*): Self = StObject.set(x, "basemaps", js.Array(value :_*))
+    inline def setBasemapsVarargs(value: BasemapProperties*): Self = StObject.set(x, "basemaps", js.Array(value*))
   }
 }

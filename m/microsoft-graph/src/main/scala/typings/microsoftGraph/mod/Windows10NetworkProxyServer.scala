@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Windows10NetworkProxyServer extends StObject {
   
-  // Address to the proxy server. Specify an address in the format &amp;lt;server&amp;gt;[:&amp;lt;port&amp;gt;]
+  // Address to the proxy server. Specify an address in the format [':']
   var address: js.UndefOr[String] = js.undefined
   
   /**
@@ -37,7 +37,7 @@ object Windows10NetworkProxyServer {
     
     inline def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
     
-    inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
+    inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value*))
     
     inline def setUseForLocalAddresses(value: Boolean): Self = StObject.set(x, "useForLocalAddresses", value.asInstanceOf[js.Any])
     

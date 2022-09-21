@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelIngestionRequest extends StObject {
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID of the dataset used in the ingestion.
     */
-  var DataSetId: java.lang.String
+  var DataSetId: String
   
   /**
     * An ID for the ingestion.
@@ -23,7 +23,7 @@ trait CancelIngestionRequest extends StObject {
 }
 object CancelIngestionRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, DataSetId: java.lang.String, IngestionId: IngestionId): CancelIngestionRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DataSetId: String, IngestionId: IngestionId): CancelIngestionRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], IngestionId = IngestionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelIngestionRequest]
   }
@@ -32,7 +32,7 @@ object CancelIngestionRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setDataSetId(value: java.lang.String): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: String): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
     inline def setIngestionId(value: IngestionId): Self = StObject.set(x, "IngestionId", value.asInstanceOf[js.Any])
   }

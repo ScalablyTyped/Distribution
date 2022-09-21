@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains properties describing the look and feel of a list bullet at a
-  * given level of nesting.
-  */
 trait SchemaNestingLevel extends StObject {
   
   /**

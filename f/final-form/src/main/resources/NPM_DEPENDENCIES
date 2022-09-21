@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "final-form" : "4.20.1"
+      "final-form" : "4.20.7"
     }
   ],
   "test-dependencies" : [
     {
-      "final-form" : "4.20.1"
+      "final-form" : "4.20.7"
     }
   ],
   "compile-devDependencies" : [

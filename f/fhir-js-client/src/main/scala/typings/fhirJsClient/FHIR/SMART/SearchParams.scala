@@ -41,7 +41,7 @@ trait SearchParams
     * {'subject.name': {$exact: 'maud'}}
     * //=> subject.name:exact=maud
     */
-  var query: js.UndefOr[js.Any] = js.undefined
+  var query: js.UndefOr[Any] = js.undefined
   
   /**
     * The name of the resource type on which the query is performed
@@ -62,7 +62,7 @@ object SearchParams {
     
     inline def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
     
-    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     

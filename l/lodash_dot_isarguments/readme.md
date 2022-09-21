@@ -10,10 +10,10 @@ The lodash method `_.isArguments` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isarguments |
 | Keywords           | lodash-modularized, isarguments |
-| # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 154858200 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7348970333333332E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

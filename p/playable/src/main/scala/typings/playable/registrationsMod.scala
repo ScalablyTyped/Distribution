@@ -20,15 +20,15 @@ object registrationsMod {
     
     @JSImport("playable/dist/src/core/dependency-container/registrations", "default.asClass")
     @js.native
-    def asClass: js.Any = js.native
-    inline def asClass_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asClass")(x.asInstanceOf[js.Any])
+    def asClass: Any = js.native
+    inline def asClass_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asClass")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/core/dependency-container/registrations", "default.asFunction")
     @js.native
-    def asFunction: js.Any = js.native
-    inline def asFunction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asFunction")(x.asInstanceOf[js.Any])
+    def asFunction: Any = js.native
+    inline def asFunction_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asFunction")(x.asInstanceOf[js.Any])
     
-    inline def asValue(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def asValue(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asValue")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   @JSImport("playable/dist/src/core/dependency-container/registrations", "PROPERTY_FOR_DEPENDENCIES")
@@ -37,13 +37,13 @@ object registrationsMod {
   
   @JSImport("playable/dist/src/core/dependency-container/registrations", "asClass")
   @js.native
-  val asClass: js.Any = js.native
+  val asClass: Any = js.native
   
   @JSImport("playable/dist/src/core/dependency-container/registrations", "asFunction")
   @js.native
-  val asFunction: js.Any = js.native
+  val asFunction: Any = js.native
   
-  inline def asValue(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def asValue(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asValue")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def makeFluidInterface(obj: IOptions): Scoped = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFluidInterface")(obj.asInstanceOf[js.Any]).asInstanceOf[Scoped]
 }

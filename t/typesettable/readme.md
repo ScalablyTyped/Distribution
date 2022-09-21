@@ -11,9 +11,9 @@ A typesetting library for SVG and Canvas
 | Full name          | typesettable |
 | Keywords           | canvas, svg, text, wrap |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 103648 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 15263.0 |
+| # stars            | 143.0 |
 
 ## Links
 - [Homepage](https://github.com/palantir/typesettable#readme)

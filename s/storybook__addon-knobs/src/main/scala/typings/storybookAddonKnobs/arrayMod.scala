@@ -17,7 +17,7 @@ object arrayMod {
   
   @JSImport("@storybook/addon-knobs/dist/components/types/Array", JSImport.Default)
   @js.native
-  class default () extends ArrayType
+  open class default () extends ArrayType
   /* static members */
   object default {
     
@@ -43,7 +43,7 @@ object arrayMod {
   
   @js.native
   trait ArrayType
-    extends Component[ArrayTypeProps, js.Object, js.Any] {
+    extends Component[ArrayTypeProps, js.Object, Any] {
     
     def handleChange(e: ChangeEvent[HTMLTextAreaElement]): Unit = js.native
     

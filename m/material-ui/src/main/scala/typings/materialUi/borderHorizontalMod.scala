@@ -10,10 +10,10 @@ object borderHorizontalMod {
   
   @JSImport("material-ui/svg-icons/editor/border-horizontal", JSImport.Default)
   @js.native
-  class default () extends EditorBorderHorizontal
+  open class default () extends EditorBorderHorizontal
   
   @JSImport("material-ui/svg-icons/editor/border-horizontal", "EditorBorderHorizontal")
   @js.native
-  class EditorBorderHorizontal ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorBorderHorizontal ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

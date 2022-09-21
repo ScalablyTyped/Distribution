@@ -8,7 +8,7 @@ object particleIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Particle/index", "ParticleBlendMultiplyBlock")
   @js.native
-  class ParticleBlendMultiplyBlock protected ()
+  open class ParticleBlendMultiplyBlock protected ()
     extends typings.babylonjs.particleBlendMultiplyBlockMod.ParticleBlendMultiplyBlock {
     /**
       * Create a new ParticleBlendMultiplyBlock
@@ -19,7 +19,7 @@ object particleIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Particle/index", "ParticleRampGradientBlock")
   @js.native
-  class ParticleRampGradientBlock protected ()
+  open class ParticleRampGradientBlock protected ()
     extends typings.babylonjs.particleRampGradientBlockMod.ParticleRampGradientBlock {
     /**
       * Create a new ParticleRampGradientBlock
@@ -30,7 +30,7 @@ object particleIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Particle/index", "ParticleTextureBlock")
   @js.native
-  class ParticleTextureBlock protected ()
+  open class ParticleTextureBlock protected ()
     extends typings.babylonjs.particleTextureBlockMod.ParticleTextureBlock {
     /**
       * Create a new ParticleTextureBlock

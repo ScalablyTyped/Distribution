@@ -1,7 +1,7 @@
 package typings.friendlyErrorsWebpackPlugin
 
 import typings.friendlyErrorsWebpackPlugin.anon.Messages
-import typings.std.Plugin
+import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +10,14 @@ object mod {
   
   @JSImport("friendly-errors-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with FriendlyErrorsWebpackPlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
   @js.native
@@ -38,15 +42,23 @@ object mod {
     /* "warning" */ val Warning: typings.friendlyErrorsWebpackPlugin.mod.Severity.Warning & String = js.native
   }
   
-  @js.native
-  trait FriendlyErrorsWebpackPlugin
-    extends StObject
-       with Plugin {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ trait FriendlyErrorsWebpackPlugin extends StObject {
     
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    def apply(compiler: Compiler): Unit
+  }
+  object FriendlyErrorsWebpackPlugin {
+    
+    inline def apply(apply: Compiler => Unit): FriendlyErrorsWebpackPlugin = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
+      __obj.asInstanceOf[FriendlyErrorsWebpackPlugin]
+    }
+    
+    extension [Self <: FriendlyErrorsWebpackPlugin](x: Self) {
+      
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+    }
   }
   
   trait Options extends StObject {
@@ -57,7 +69,7 @@ object mod {
         ]
       ] = js.undefined
     
-    var additionalTransformers: js.UndefOr[js.Array[js.Function1[/* error */ js.Any, js.Any]]] = js.undefined
+    var additionalTransformers: js.UndefOr[js.Array[js.Function1[/* error */ Any, Any]]] = js.undefined
     
     var clearConsole: js.UndefOr[Boolean] = js.undefined
     
@@ -82,13 +94,13 @@ object mod {
       
       inline def setAdditionalFormattersUndefined: Self = StObject.set(x, "additionalFormatters", js.undefined)
       
-      inline def setAdditionalFormattersVarargs(value: (js.Function2[/* errors */ js.Array[WebpackError], /* type */ Severity, js.Array[String]])*): Self = StObject.set(x, "additionalFormatters", js.Array(value :_*))
+      inline def setAdditionalFormattersVarargs(value: (js.Function2[/* errors */ js.Array[WebpackError], /* type */ Severity, js.Array[String]])*): Self = StObject.set(x, "additionalFormatters", js.Array(value*))
       
-      inline def setAdditionalTransformers(value: js.Array[js.Function1[/* error */ js.Any, js.Any]]): Self = StObject.set(x, "additionalTransformers", value.asInstanceOf[js.Any])
+      inline def setAdditionalTransformers(value: js.Array[js.Function1[/* error */ Any, Any]]): Self = StObject.set(x, "additionalTransformers", value.asInstanceOf[js.Any])
       
       inline def setAdditionalTransformersUndefined: Self = StObject.set(x, "additionalTransformers", js.undefined)
       
-      inline def setAdditionalTransformersVarargs(value: (js.Function1[/* error */ js.Any, js.Any])*): Self = StObject.set(x, "additionalTransformers", js.Array(value :_*))
+      inline def setAdditionalTransformersVarargs(value: (js.Function1[/* error */ Any, Any])*): Self = StObject.set(x, "additionalTransformers", js.Array(value*))
       
       inline def setClearConsole(value: Boolean): Self = StObject.set(x, "clearConsole", value.asInstanceOf[js.Any])
       
@@ -116,18 +128,11 @@ object mod {
     
     var severity: Severity
     
-    var webpackError: js.Any
+    var webpackError: Any
   }
   object WebpackError {
     
-    inline def apply(
-      file: String,
-      message: String,
-      name: String,
-      origin: String,
-      severity: Severity,
-      webpackError: js.Any
-    ): WebpackError = {
+    inline def apply(file: String, message: String, name: String, origin: String, severity: Severity, webpackError: Any): WebpackError = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], webpackError = webpackError.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebpackError]
     }
@@ -144,7 +149,7 @@ object mod {
       
       inline def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      inline def setWebpackError(value: js.Any): Self = StObject.set(x, "webpackError", value.asInstanceOf[js.Any])
+      inline def setWebpackError(value: Any): Self = StObject.set(x, "webpackError", value.asInstanceOf[js.Any])
     }
   }
 }

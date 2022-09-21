@@ -58,7 +58,7 @@ object XTabControllerModel {
     getGroupByName: (String, js.Array[SeqEquiv[XControlModel]]) => Unit,
     getGroupControl: () => Boolean,
     getGroupCount: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setControlModels: SeqEquiv[XControlModel] => Unit,
     setGroup: (SeqEquiv[XControlModel], String) => Unit,

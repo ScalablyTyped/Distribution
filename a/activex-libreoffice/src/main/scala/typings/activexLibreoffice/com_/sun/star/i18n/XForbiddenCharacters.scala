@@ -34,7 +34,7 @@ object XForbiddenCharacters {
     acquire: () => Unit,
     getForbiddenCharacters: Locale => ForbiddenCharacters,
     hasForbiddenCharacters: Locale => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeForbiddenCharacters: Locale => Unit,
     setForbiddenCharacters: (Locale, ForbiddenCharacters) => Unit

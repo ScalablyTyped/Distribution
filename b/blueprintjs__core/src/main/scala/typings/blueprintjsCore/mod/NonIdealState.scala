@@ -1,16 +1,17 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.nonIdealStateMod.INonIdealStateProps
+import typings.blueprintjsCore.anon.PartialNonIdealStateProps
+import typings.blueprintjsCore.nonIdealStateMod.NonIdealStateProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "NonIdealState")
 @js.native
-class NonIdealState protected ()
+open class NonIdealState protected ()
   extends typings.blueprintjsCore.componentsMod.NonIdealState {
-  def this(props: INonIdealStateProps) = this()
-  def this(props: INonIdealStateProps, context: js.Any) = this()
+  def this(props: NonIdealStateProps) = this()
+  def this(props: NonIdealStateProps, context: Any) = this()
 }
 /* static members */
 object NonIdealState {
@@ -18,6 +19,11 @@ object NonIdealState {
   @JSImport("@blueprintjs/core", "NonIdealState")
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "NonIdealState.defaultProps")
+  @js.native
+  def defaultProps: PartialNonIdealStateProps = js.native
+  inline def defaultProps_=(x: PartialNonIdealStateProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "NonIdealState.displayName")
   @js.native

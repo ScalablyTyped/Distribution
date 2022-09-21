@@ -14,11 +14,11 @@ trait ChatSearchReader extends StObject {
     * Returns a batch of found items matching the search criteria.
     * @return A list of items matching the search criteria.
     */
-  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Returns a batch of found items matching the search criteria.
     * @param count The maximum number of items to return.
     * @return A list of items matching the search criteria.
     */
-  def readBatchAsync(count: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def readBatchAsync(count: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
 }

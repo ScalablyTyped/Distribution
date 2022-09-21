@@ -39,6 +39,6 @@ object TeamDriveList {
     
     inline def setTeamDrivesUndefined: Self = StObject.set(x, "teamDrives", js.undefined)
     
-    inline def setTeamDrivesVarargs(value: TeamDrive*): Self = StObject.set(x, "teamDrives", js.Array(value :_*))
+    inline def setTeamDrivesVarargs(value: TeamDrive*): Self = StObject.set(x, "teamDrives", js.Array(value*))
   }
 }

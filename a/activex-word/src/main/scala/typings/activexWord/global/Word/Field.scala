@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Field")
 @js.native
-/* private */ class Field ()
+/* private */ open class Field ()
   extends StObject
      with typings.activexWord.Word.Field {
   
@@ -58,7 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val OLEFormat: typings.activexWord.Word.OLEFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Previous: typings.activexWord.Word.Field = js.native

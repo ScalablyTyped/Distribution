@@ -27,7 +27,7 @@ object ListCompilationJobsResponse {
     
     inline def setCompilationJobSummaries(value: CompilationJobSummaries): Self = StObject.set(x, "CompilationJobSummaries", value.asInstanceOf[js.Any])
     
-    inline def setCompilationJobSummariesVarargs(value: CompilationJobSummary*): Self = StObject.set(x, "CompilationJobSummaries", js.Array(value :_*))
+    inline def setCompilationJobSummariesVarargs(value: CompilationJobSummary*): Self = StObject.set(x, "CompilationJobSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

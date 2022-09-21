@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap-typeahead", "Hint")
 @js.native
-class Hint protected ()
-  extends Component[HintProps, js.Object, js.Any] {
+open class Hint protected ()
+  extends Component[HintProps, js.Object, Any] {
   def this(props: HintProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HintProps, context: js.Any) = this()
+  def this(props: HintProps, context: Any) = this()
 }

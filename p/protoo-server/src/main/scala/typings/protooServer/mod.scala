@@ -1,14 +1,15 @@
 package typings.protooServer
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
-import typings.node.netMod.Socket
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.protooServer.protooServerBooleans.`true`
 import typings.protooServer.protooServerStrings.close
 import typings.protooServer.protooServerStrings.connectionrequest
 import typings.protooServer.protooServerStrings.notification
 import typings.protooServer.protooServerStrings.request
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ object mod {
   
   @JSImport("protoo-server", "Room")
   @js.native
-  class Room () extends StObject {
+  open class Room () extends StObject {
     
     def close(): Unit = js.native
     
@@ -37,11 +38,41 @@ object mod {
   
   @JSImport("protoo-server", "WebSocketServer")
   @js.native
-  class WebSocketServer protected () extends StObject {
-    def this(server: Server) = this()
-    def this(server: typings.node.httpsMod.Server) = this()
-    def this(server: Server, options: WebSocketServerOptions) = this()
-    def this(server: typings.node.httpsMod.Server, options: WebSocketServerOptions) = this()
+  open class WebSocketServer protected () extends StObject {
+    def this(server: Server[
+            Instantiable1[/* socket */ Socket, IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              ServerResponse[IncomingMessage]
+            ]
+          ]) = this()
+    def this(server: typings.node.httpsMod.Server[
+            Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            ]
+          ]) = this()
+    def this(
+      server: Server[
+            Instantiable1[/* socket */ Socket, IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              ServerResponse[IncomingMessage]
+            ]
+          ],
+      options: WebSocketServerOptions
+    ) = this()
+    def this(
+      server: typings.node.httpsMod.Server[
+            Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+            ]
+          ],
+      options: WebSocketServerOptions
+    ) = this()
     
     @JSName("on")
     def on_connectionrequest(eventType: connectionrequest, callback: ConnectionRequestCb): Unit = js.native
@@ -53,7 +84,7 @@ object mod {
   @js.native
   val version: String = js.native
   
-  type AcceptFn = js.Function1[/* data */ js.Any, Unit]
+  type AcceptFn = js.Function1[/* data */ Any, Unit]
   
   type ConnectionRequestAcceptFn = js.Function0[WebSocketTransport]
   
@@ -70,11 +101,11 @@ object mod {
     
     var request: IncomingMessage
     
-    var socket: Socket
+    var socket: typings.node.netMod.Socket
   }
   object ConnectionRequestInfo {
     
-    inline def apply(origin: String, request: IncomingMessage, socket: Socket): ConnectionRequestInfo = {
+    inline def apply(origin: String, request: IncomingMessage, socket: typings.node.netMod.Socket): ConnectionRequestInfo = {
       val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionRequestInfo]
     }
@@ -85,11 +116,11 @@ object mod {
       
       inline def setRequest(value: IncomingMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: typings.node.netMod.Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
   }
   
-  type ConnectionRequestRejectFn = (js.Function2[/* code */ Double, /* reason */ String, Unit]) & (js.Function1[/* error */ Error, Unit])
+  type ConnectionRequestRejectFn = (js.Function2[/* code */ Double, /* reason */ String, Unit]) & (js.Function1[/* error */ js.Error, Unit])
   
   type EmptyCb = js.Function0[Unit]
   
@@ -102,12 +133,12 @@ object mod {
     
     var closed: Boolean = js.native
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     val id: String = js.native
     
     def notify(method: String): js.Promise[Unit] = js.native
-    def notify(method: String, data: js.Any): js.Promise[Unit] = js.native
+    def notify(method: String, data: Any): js.Promise[Unit] = js.native
     
     @JSName("on")
     def on_close(eventType: close, callback: EmptyCb): Unit = js.native
@@ -117,12 +148,12 @@ object mod {
     def on_request(eventType: request, callback: RequestCb): Unit = js.native
     
     def request(method: String): js.Promise[ProotooResponse] = js.native
-    def request(method: String, data: js.Any): js.Promise[ProotooResponse] = js.native
+    def request(method: String, data: Any): js.Promise[ProotooResponse] = js.native
   }
   
   trait ProotooResponse extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var errorCode: js.UndefOr[Double] = js.undefined
     
@@ -143,7 +174,7 @@ object mod {
     
     extension [Self <: ProotooResponse](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -165,7 +196,7 @@ object mod {
   
   trait ProtooNotification extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var method: String
     
@@ -173,14 +204,14 @@ object mod {
   }
   object ProtooNotification {
     
-    inline def apply(data: js.Any, method: String): ProtooNotification = {
+    inline def apply(data: Any, method: String): ProtooNotification = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], notification = true)
       __obj.asInstanceOf[ProtooNotification]
     }
     
     extension [Self <: ProtooNotification](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -190,7 +221,7 @@ object mod {
   
   trait ProtooRequest extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var id: Double
     
@@ -200,14 +231,14 @@ object mod {
   }
   object ProtooRequest {
     
-    inline def apply(data: js.Any, id: Double, method: String): ProtooRequest = {
+    inline def apply(data: Any, id: Double, method: String): ProtooRequest = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = true)
       __obj.asInstanceOf[ProtooRequest]
     }
     
     extension [Self <: ProtooRequest](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -217,7 +248,7 @@ object mod {
     }
   }
   
-  type RejectFn = (js.Function1[/* errorCode */ js.UndefOr[Error], Unit]) & (js.Function2[/* errorCode */ Double, /* errorReason */ Error | String, Unit])
+  type RejectFn = (js.Function1[/* errorCode */ js.UndefOr[js.Error], Unit]) & (js.Function2[/* errorCode */ Double, /* errorReason */ js.Error | String, Unit])
   
   type RequestCb = js.Function3[/* request */ ProtooRequest, /* accept */ AcceptFn, /* reject */ RejectFn, Unit]
   
@@ -325,11 +356,11 @@ object mod {
     
     var closed: Boolean
     
-    def send(message: js.Any): js.Promise[Unit]
+    def send(message: Any): js.Promise[Unit]
   }
   object WebSocketTransport {
     
-    inline def apply(close: () => Unit, closed: Boolean, send: js.Any => js.Promise[Unit]): WebSocketTransport = {
+    inline def apply(close: () => Unit, closed: Boolean, send: Any => js.Promise[Unit]): WebSocketTransport = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), closed = closed.asInstanceOf[js.Any], send = js.Any.fromFunction1(send))
       __obj.asInstanceOf[WebSocketTransport]
     }
@@ -340,7 +371,7 @@ object mod {
       
       inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
-      inline def setSend(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: Any => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
 }

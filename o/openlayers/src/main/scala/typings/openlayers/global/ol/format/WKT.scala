@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class WKT ()
+open class WKT ()
   extends typings.openlayers.mod.format.WKT {
   def this(opt_options: WKTOptions) = this()
 }

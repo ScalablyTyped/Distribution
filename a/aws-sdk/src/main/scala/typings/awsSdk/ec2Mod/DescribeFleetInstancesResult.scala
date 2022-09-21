@@ -34,7 +34,7 @@ object DescribeFleetInstancesResult {
     
     inline def setActiveInstancesUndefined: Self = StObject.set(x, "ActiveInstances", js.undefined)
     
-    inline def setActiveInstancesVarargs(value: ActiveInstance*): Self = StObject.set(x, "ActiveInstances", js.Array(value :_*))
+    inline def setActiveInstancesVarargs(value: ActiveInstance*): Self = StObject.set(x, "ActiveInstances", js.Array(value*))
     
     inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     

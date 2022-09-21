@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait BuiltInTableStyle extends StObject
 /**
-  *
   * Represents a built-in table style.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
@@ -19,7 +19,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and dark.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark1
@@ -28,7 +30,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * Yellow with filled header, striped rows, light
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark10
@@ -37,7 +41,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * Green with filled header, striped rows, light
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark11
@@ -46,7 +52,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and dark.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark2
@@ -55,7 +63,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and dark.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark3
@@ -64,7 +74,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and dark.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark4
@@ -73,7 +85,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and dark.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark5
@@ -82,7 +96,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and dark.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark6
@@ -91,7 +107,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and dark.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark7
@@ -100,7 +118,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * Black with filled header, striped rows, light
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark8
@@ -109,7 +129,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * Orange with filled header, striped rows, light
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait dark9
@@ -118,7 +140,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with header borders and bottom border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light1
@@ -127,7 +151,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light10
@@ -136,7 +162,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light11
@@ -145,7 +173,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light12
@@ -154,7 +184,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light13
@@ -163,7 +195,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light14
@@ -172,7 +206,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light15
@@ -181,7 +217,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light16
@@ -190,7 +228,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light17
@@ -199,7 +239,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light18
@@ -208,7 +250,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light19
@@ -217,7 +261,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with header borders and bottom border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light2
@@ -226,7 +272,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light20
@@ -235,7 +283,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light21
@@ -244,7 +294,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with header borders and bottom border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light3
@@ -253,7 +305,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with header borders and bottom border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light4
@@ -262,7 +316,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with header borders and bottom border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light5
@@ -271,7 +327,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with header borders and bottom border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light6
@@ -280,7 +338,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with header borders and bottom border.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light7
@@ -289,7 +349,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light8
@@ -298,7 +360,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait light9
@@ -307,7 +371,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium1
@@ -316,7 +382,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium10
@@ -325,7 +393,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium11
@@ -334,7 +404,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium12
@@ -343,7 +415,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium13
@@ -352,7 +426,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium14
@@ -361,7 +437,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium15
@@ -370,7 +448,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium16
@@ -379,7 +459,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium17
@@ -388,7 +470,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium18
@@ -397,7 +481,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium19
@@ -406,7 +492,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium2
@@ -415,7 +503,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium20
@@ -424,7 +514,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium21
@@ -433,7 +525,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium22
@@ -442,7 +536,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium23
@@ -451,7 +547,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium24
@@ -460,7 +558,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium25
@@ -469,7 +569,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium26
@@ -478,7 +580,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium27
@@ -487,7 +591,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with striped rows, and cell borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium28
@@ -496,7 +602,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium3
@@ -505,7 +613,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium4
@@ -514,7 +624,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium5
@@ -523,7 +635,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium6
@@ -532,7 +646,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 6" (green in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium7
@@ -541,7 +657,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Dark 1" (black in the default "Office" theme) with filled header, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium8
@@ -550,7 +668,9 @@ object BuiltInTableStyle extends StObject {
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with filled header, and striped rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait medium9

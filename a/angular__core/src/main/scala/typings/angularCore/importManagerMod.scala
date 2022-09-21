@@ -12,7 +12,7 @@ object importManagerMod {
   
   @JSImport("@angular/core/schematics/utils/import_manager", "ImportManager")
   @js.native
-  class ImportManager protected () extends StObject {
+  open class ImportManager protected () extends StObject {
     def this(
       getUpdateRecorder: js.Function1[/* sf */ SourceFile, ImportManagerUpdateRecorder],
       printer: Printer
@@ -22,12 +22,12 @@ object importManagerMod {
       * Determines the full end of a given node. By default the end position of a node is
       * before all trailing comments. This could mean that generated imports shift comments.
       */
-    /* private */ var _getEndPositionOfNode: js.Any = js.native
+    /* private */ var _getEndPositionOfNode: Any = js.native
     
     /** Gets an unique identifier with a base name for the given source file. */
-    /* private */ var _getUniqueIdentifier: js.Any = js.native
+    /* private */ var _getUniqueIdentifier: Any = js.native
     
-    /* private */ var _recordUsedIdentifier: js.Any = js.native
+    /* private */ var _recordUsedIdentifier: Any = js.native
     
     /**
       * Adds an import to the given source-file and returns the TypeScript
@@ -38,21 +38,21 @@ object importManagerMod {
     def addImportToSourceFile(sourceFile: SourceFile, symbolName: Null, moduleName: String): Expression = js.native
     def addImportToSourceFile(sourceFile: SourceFile, symbolName: Null, moduleName: String, typeImport: Boolean): Expression = js.native
     
-    /* private */ var getUpdateRecorder: js.Any = js.native
+    /* private */ var getUpdateRecorder: Any = js.native
     
     /**
       * Array of previously resolved symbol imports. Cache can be re-used to return
       * the same identifier without checking the source-file again.
       */
-    /* private */ var importCache: js.Any = js.native
+    /* private */ var importCache: Any = js.native
     
     /**
       * Checks whether the specified identifier name is used within the given
       * source file.
       */
-    /* private */ var isUniqueIdentifierName: js.Any = js.native
+    /* private */ var isUniqueIdentifierName: Any = js.native
     
-    /* private */ var printer: js.Any = js.native
+    /* private */ var printer: Any = js.native
     
     /**
       * Stores the collected import changes within the appropriate update recorders. The
@@ -62,10 +62,10 @@ object importManagerMod {
     def recordChanges(): Unit = js.native
     
     /** Map of import declarations that need to be updated to include the given symbols. */
-    /* private */ var updatedImports: js.Any = js.native
+    /* private */ var updatedImports: Any = js.native
     
     /** Map of source-files and their previously used identifier names. */
-    /* private */ var usedIdentifierNames: js.Any = js.native
+    /* private */ var usedIdentifierNames: Any = js.native
   }
   
   trait ImportManagerUpdateRecorder extends StObject {

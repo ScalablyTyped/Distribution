@@ -2,7 +2,6 @@ package typings.logkitty
 
 import typings.logkitty.typesMod.Entry
 import typings.logkitty.typesMod.IParser
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object androidParserMod {
   
   @JSImport("logkitty/build/android/AndroidParser", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with AndroidParser {
     
@@ -30,13 +29,13 @@ object androidParserMod {
     
     @JSImport("logkitty/build/android/AndroidParser", "default.headerRegex")
     @js.native
-    def headerRegex: RegExp = js.native
-    inline def headerRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerRegex")(x.asInstanceOf[js.Any])
+    def headerRegex: js.RegExp = js.native
+    inline def headerRegex_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerRegex")(x.asInstanceOf[js.Any])
     
     @JSImport("logkitty/build/android/AndroidParser", "default.timeRegex")
     @js.native
-    def timeRegex: RegExp = js.native
-    inline def timeRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeRegex")(x.asInstanceOf[js.Any])
+    def timeRegex: js.RegExp = js.native
+    inline def timeRegex_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeRegex")(x.asInstanceOf[js.Any])
   }
   
   trait AndroidParser

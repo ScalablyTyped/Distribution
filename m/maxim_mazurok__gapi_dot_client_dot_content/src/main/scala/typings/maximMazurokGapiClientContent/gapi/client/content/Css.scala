@@ -57,6 +57,6 @@ object Css {
     
     inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
-    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value*))
   }
 }

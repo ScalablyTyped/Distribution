@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "EcomVisibility")
 @js.native
-class EcomVisibility () extends StObject
+open class EcomVisibility () extends StObject

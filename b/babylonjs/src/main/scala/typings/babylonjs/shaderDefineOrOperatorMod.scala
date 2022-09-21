@@ -9,7 +9,7 @@ object shaderDefineOrOperatorMod {
   
   @JSImport("babylonjs/Engines/Processors/Expressions/Operators/shaderDefineOrOperator", "ShaderDefineOrOperator")
   @js.native
-  class ShaderDefineOrOperator () extends ShaderDefineExpression {
+  open class ShaderDefineOrOperator () extends ShaderDefineExpression {
     
     var leftOperand: ShaderDefineExpression = js.native
     

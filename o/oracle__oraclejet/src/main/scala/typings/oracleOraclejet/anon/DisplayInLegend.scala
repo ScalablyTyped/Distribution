@@ -85,7 +85,7 @@ object DisplayInLegend {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object DisplayInLegend {
     
     inline def setItems(value: js.Array[High]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: High*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: High*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     

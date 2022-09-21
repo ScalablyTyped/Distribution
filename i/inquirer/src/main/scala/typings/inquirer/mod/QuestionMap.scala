@@ -4,56 +4,50 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides the available question-types.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait QuestionMap[T /* <: Answers */] extends StObject {
   
   /**
-    * The `CheckboxQuestion` type.
+    * The {@link CheckboxQuestion `CheckboxQuestion<T>`} type.
     */
   var checkbox: CheckboxQuestion[T]
   
   /**
-    * The `ConfirmQuestion` type.
+    * The {@link ConfirmQuestion `ConfirmQuestion<T>`} type.
     */
   var confirm: ConfirmQuestion[T]
   
   /**
-    * The `EditorQuestion` type.
+    * The {@link EditorQuestion `EditorQuestion<T>`} type.
     */
   var editor: EditorQuestion[T]
   
   /**
-    * The `ExpandQuestion` type.
+    * The {@link ExpandQuestion `ExpandQuestion<T>`} type.
     */
   var expand: ExpandQuestion[T]
   
   /**
-    * The `InputQuestion` type.
+    * The {@link InputQuestion `InputQuestion<T>`} type.
     */
   var input: InputQuestion[T]
   
   /**
-    * The `ListQuestion` type.
+    * The {@link ListQuestion `ListQuestion<T>`} type.
     */
   var list: ListQuestion[T]
   
   /**
-    * The `NumberQuestion` type.
+    * The {@link NumberQuestion `NumberQuestion<T>`} type.
     */
   var number: NumberQuestion[T]
   
   /**
-    * The `PasswordQuestion` type.
+    * The {@link PasswordQuestion `PasswordQuestion<T>`} type.
     */
   var password: PasswordQuestion[T]
   
   /**
-    * The `RawListQuestion` type.
+    * The {@link RawListQuestion `RawListQuestion<T>`} type.
     */
   var rawList: RawListQuestion[T]
 }

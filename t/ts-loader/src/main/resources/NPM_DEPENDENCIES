@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ts-loader" : "6.2.2"
+      "ts-loader" : "9.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ts-loader" : "6.2.2"
+      "ts-loader" : "9.4.1"
     }
   ],
   "compile-devDependencies" : [

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLTitleElement")
 @js.native
-/* private */ class HTMLTitleElement ()
+/* private */ open class HTMLTitleElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLTitleElement

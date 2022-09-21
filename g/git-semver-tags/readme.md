@@ -10,10 +10,10 @@ Get all git semver tags of your repository in reverse chronological order
 | ------------------ | :-------------: |
 | Full name          | git-semver-tags |
 | Keywords           | git-semver-tags, order, semver, tag, git-tag, git |
-| # releases         | 7 |
-| # dependents       | 62 |
-| # downloads        | 66084969 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8536186.333333334 |
+| # stars            | 6431.0 |
 
 ## Links
 - [Homepage](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/git-semver-tags#readme)

@@ -40,7 +40,7 @@ object CatIndicesParams {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setPri(value: Boolean): Self = StObject.set(x, "pri", value.asInstanceOf[js.Any])
     

@@ -12,5 +12,5 @@ trait ArcGISCachedServiceConstructor
      with Instantiable0[ArcGISCachedService]
      with Instantiable1[/* properties */ ArcGISCachedServiceProperties, ArcGISCachedService] {
   
-  def fromJSON(json: js.Any): ArcGISCachedService = js.native
+  def fromJSON(json: Any): ArcGISCachedService = js.native
 }

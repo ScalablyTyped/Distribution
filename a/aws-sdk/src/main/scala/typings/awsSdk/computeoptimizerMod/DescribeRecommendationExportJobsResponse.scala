@@ -33,6 +33,6 @@ object DescribeRecommendationExportJobsResponse {
     
     inline def setRecommendationExportJobsUndefined: Self = StObject.set(x, "recommendationExportJobs", js.undefined)
     
-    inline def setRecommendationExportJobsVarargs(value: RecommendationExportJob*): Self = StObject.set(x, "recommendationExportJobs", js.Array(value :_*))
+    inline def setRecommendationExportJobsVarargs(value: RecommendationExportJob*): Self = StObject.set(x, "recommendationExportJobs", js.Array(value*))
   }
 }

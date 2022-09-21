@@ -3,7 +3,7 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientYoutube.anon.Alt
 import typings.maximMazurokGapiClientYoutube.anon.ForChannelId
-import typings.maximMazurokGapiClientYoutube.anon.QuotaUserResource
+import typings.maximMazurokGapiClientYoutube.anon.ResourceUploadType
 import typings.maximMazurokGapiClientYoutube.anon.Uploadprotocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +18,7 @@ trait SubscriptionsResource extends StObject {
   
   def insert(request: Alt, body: Subscription): Request[Subscription] = js.native
   /** Inserts a new resource into this collection. */
-  def insert(request: QuotaUserResource): Request[Subscription] = js.native
+  def insert(request: ResourceUploadType): Request[Subscription] = js.native
   
   /** Retrieves a list of resources, possibly filtered. */
   def list(): Request[SubscriptionListResponse] = js.native

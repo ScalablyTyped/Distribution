@@ -18,11 +18,11 @@ object updateWorkflowMod extends Shortcut {
   @JSImport("esri/widgets/Editor/UpdateWorkflow", JSImport.Namespace)
   @js.native
   /**
-    * A read-only class containing the logic used when updating and/or deleting features using the [Editor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) widget's.
+    * A read-only class containing the logic used when updating and/or deleting features using the [Editor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflow.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with UpdateWorkflow {
     def this(properties: UpdateWorkflowProperties) = this()

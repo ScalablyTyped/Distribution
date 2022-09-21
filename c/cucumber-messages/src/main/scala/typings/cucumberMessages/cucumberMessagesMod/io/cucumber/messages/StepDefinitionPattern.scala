@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new StepDefinitionPattern.
   * @param [properties] Properties to set
   */
-class StepDefinitionPattern ()
+open class StepDefinitionPattern ()
   extends StObject
      with IStepDefinitionPattern {
   def this(properties: IStepDefinitionPattern) = this()
@@ -29,7 +28,7 @@ class StepDefinitionPattern ()
     * Converts this StepDefinitionPattern to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** StepDefinitionPattern type. */
   @JSName("type")
@@ -50,6 +49,8 @@ object StepDefinitionPattern {
   inline def create(): StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[StepDefinitionPattern]
   inline def create(properties: IStepDefinitionPattern): StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[StepDefinitionPattern]
   
+  inline def decode(reader: js.typedarray.Uint8Array): StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StepDefinitionPattern]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): StepDefinitionPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StepDefinitionPattern]
   /**
     * Decodes a StepDefinitionPattern message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object StepDefinitionPattern {
   /* static member */
   inline def decode(reader: Reader): StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StepDefinitionPattern]
   inline def decode(reader: Reader, length: Double): StepDefinitionPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StepDefinitionPattern]
-  inline def decode(reader: Uint8Array): StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StepDefinitionPattern]
-  inline def decode(reader: Uint8Array, length: Double): StepDefinitionPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StepDefinitionPattern]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StepDefinitionPattern]
   /**
     * Decodes a StepDefinitionPattern message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object StepDefinitionPattern {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StepDefinitionPattern]
-  inline def decodeDelimited(reader: Uint8Array): StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StepDefinitionPattern]
   
   /**
     * Encodes the specified StepDefinitionPattern message. Does not implicitly {@link io.cucumber.messages.StepDefinitionPattern.verify|verify} messages.
@@ -101,7 +100,7 @@ object StepDefinitionPattern {
     * @returns StepDefinitionPattern
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StepDefinitionPattern]
+  inline def fromObject(`object`: StringDictionary[Any]): StepDefinitionPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StepDefinitionPattern]
   
   /**
     * Creates a plain object from a StepDefinitionPattern message. Also converts values to other types if specified.
@@ -110,8 +109,8 @@ object StepDefinitionPattern {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: StepDefinitionPattern): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: StepDefinitionPattern, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: StepDefinitionPattern): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: StepDefinitionPattern, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a StepDefinitionPattern message.
@@ -119,5 +118,5 @@ object StepDefinitionPattern {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

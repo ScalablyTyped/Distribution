@@ -12,7 +12,7 @@ trait ColorPaletteOptions extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var palette: js.UndefOr[String | js.Any] = js.undefined
+  var palette: js.UndefOr[String | Any] = js.undefined
   
   var tileSize: js.UndefOr[ColorPaletteTileSize] = js.undefined
   
@@ -39,7 +39,7 @@ object ColorPaletteOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setPalette(value: String | js.Any): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: String | Any): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     

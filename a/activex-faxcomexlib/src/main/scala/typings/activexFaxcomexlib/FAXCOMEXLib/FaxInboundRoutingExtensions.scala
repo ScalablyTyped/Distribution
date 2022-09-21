@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FaxInboundRoutingExtensions extends StObject {
   
-  def apply(vIndex: js.Any): FaxInboundRoutingExtension = js.native
+  def apply(vIndex: Any): FaxInboundRoutingExtension = js.native
   
   val Count: Double = js.native
   
-  def Item(vIndex: js.Any): FaxInboundRoutingExtension = js.native
+  def Item(vIndex: Any): FaxInboundRoutingExtension = js.native
 }

@@ -6,8 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RegionResource extends StObject {
   
-  /** Data format for the response. */
+  /** V1 error format. */
+  @JSName("$.xgafv")
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
+  
+  /** OAuth access token. */
+  var access_token: js.UndefOr[String] = js.undefined
+  
+  /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
+  
+  /** JSONP */
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -18,13 +28,16 @@ trait RegionResource extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
+  /** Requested IAM Policy version. */
+  var optionsRequestedPolicyVersion: js.UndefOr[Double] = js.undefined
+  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Project ID for this request. */
   var project: String
   
-  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
+  /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** The name of the region for this request. */
@@ -33,7 +46,13 @@ trait RegionResource extends StObject {
   /** Name or id of the resource for this request. */
   var resource: String
   
-  /** Deprecated. Please use quotaUser instead. */
+  /** Legacy upload protocol for media (e.g. "media", "multipart"). */
+  var uploadType: js.UndefOr[String] = js.undefined
+  
+  /** Upload protocol for media (e.g. "raw", "multipart"). */
+  var upload_protocol: js.UndefOr[String] = js.undefined
+  
+  /** Legacy name for parameter that has been superseded by `quotaUser`. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 object RegionResource {
@@ -45,9 +64,21 @@ object RegionResource {
   
   extension [Self <: RegionResource](x: Self) {
     
+    inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+    
+    inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+    
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    
+    inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -60,6 +91,10 @@ object RegionResource {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setOptionsRequestedPolicyVersion(value: Double): Self = StObject.set(x, "optionsRequestedPolicyVersion", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsRequestedPolicyVersionUndefined: Self = StObject.set(x, "optionsRequestedPolicyVersion", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -74,6 +109,14 @@ object RegionResource {
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+    
+    inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+    
+    inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+    
+    inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
     
     inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     

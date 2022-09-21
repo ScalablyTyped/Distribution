@@ -15,7 +15,7 @@ trait WorkspaceSymbolProvider[T /* <: SymbolInformation */] extends StObject {
     * strict matching.
     *
     * To improve performance implementors can implement `resolveWorkspaceSymbol` and then provide symbols with partial
-    * [location](#SymbolInformation.location)-objects, without a `range` defined. The editor will then call
+    * {@link SymbolInformation.location location}-objects, without a `range` defined. The editor will then call
     * `resolveWorkspaceSymbol` for selected symbols only, e.g. when opening a workspace symbol.
     *
     * @param query A query string, can be the empty string in which case all symbols should be returned.
@@ -26,9 +26,9 @@ trait WorkspaceSymbolProvider[T /* <: SymbolInformation */] extends StObject {
   def provideWorkspaceSymbols(query: String, token: CancellationToken): ProviderResult[js.Array[T]]
   
   /**
-    * Given a symbol fill in its [location](#SymbolInformation.location). This method is called whenever a symbol
+    * Given a symbol fill in its {@link SymbolInformation.location location}. This method is called whenever a symbol
     * is selected in the UI. Providers can implement this method and return incomplete symbols from
-    * [`provideWorkspaceSymbols`](#WorkspaceSymbolProvider.provideWorkspaceSymbols) which often helps to improve
+    * {@linkcode WorkspaceSymbolProvider.provideWorkspaceSymbols provideWorkspaceSymbols} which often helps to improve
     * performance.
     *
     * @param symbol The symbol that is to be resolved. Guaranteed to be an instance of an object returned from an

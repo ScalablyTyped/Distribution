@@ -15,10 +15,10 @@ object infuraProviderMod {
   
   @JSImport("@ethersproject/providers/lib/infura-provider", "InfuraProvider")
   @js.native
-  class InfuraProvider () extends UrlJsonRpcProvider {
+  open class InfuraProvider () extends UrlJsonRpcProvider {
     def this(network: Networkish) = this()
-    def this(network: Unit, apiKey: js.Any) = this()
-    def this(network: Networkish, apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: Any) = this()
+    def this(network: Networkish, apiKey: Any) = this()
     
     val projectId: String = js.native
     
@@ -31,24 +31,24 @@ object infuraProviderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getApiKey(apiKey: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def getUrl(network: Network, apiKey: js.Any): ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[ConnectionInfo]
+    inline def getUrl(network: Network, apiKey: Any): ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[ConnectionInfo]
     
     inline def getWebSocketProvider(): InfuraWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")().asInstanceOf[InfuraWebSocketProvider]
-    inline def getWebSocketProvider(network: Unit, apiKey: js.Any): InfuraWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[InfuraWebSocketProvider]
+    inline def getWebSocketProvider(network: Unit, apiKey: Any): InfuraWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[InfuraWebSocketProvider]
     inline def getWebSocketProvider(network: Networkish): InfuraWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any]).asInstanceOf[InfuraWebSocketProvider]
-    inline def getWebSocketProvider(network: Networkish, apiKey: js.Any): InfuraWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[InfuraWebSocketProvider]
+    inline def getWebSocketProvider(network: Networkish, apiKey: Any): InfuraWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[InfuraWebSocketProvider]
   }
   
   @JSImport("@ethersproject/providers/lib/infura-provider", "InfuraWebSocketProvider")
   @js.native
-  class InfuraWebSocketProvider ()
+  open class InfuraWebSocketProvider ()
     extends WebSocketProvider
        with CommunityResourcable {
     def this(network: Networkish) = this()
-    def this(network: Unit, apiKey: js.Any) = this()
-    def this(network: Networkish, apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: Any) = this()
+    def this(network: Networkish, apiKey: Any) = this()
     
     val apiKey: String = js.native
     
@@ -56,7 +56,7 @@ object infuraProviderMod {
     override def isCommunityResource(): Boolean = js.native
     
     /* InferMemberOverrides */
-    override def lookupAddress(address: String): js.Promise[String] = js.native
+    override def lookupAddress(address: String): js.Promise[Null | String] = js.native
     
     /* InferMemberOverrides */
     @JSName("once")
@@ -67,6 +67,6 @@ object infuraProviderMod {
     val projectSecret: String = js.native
     
     /* InferMemberOverrides */
-    override def resolveName(name: String): js.Promise[String] = js.native
+    override def resolveName(name: String): js.Promise[Null | String] = js.native
   }
 }

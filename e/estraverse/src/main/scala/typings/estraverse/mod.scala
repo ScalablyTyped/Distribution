@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("estraverse", "Controller")
   @js.native
-  class Controller () extends StObject {
+  open class Controller () extends StObject {
     
     /**
       * Break the traversals.
@@ -528,291 +528,291 @@ object mod {
       
       inline def setArrayExpression(value: js.Array[String]): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       
-      inline def setArrayExpressionVarargs(value: String*): Self = StObject.set(x, "ArrayExpression", js.Array(value :_*))
+      inline def setArrayExpressionVarargs(value: String*): Self = StObject.set(x, "ArrayExpression", js.Array(value*))
       
       inline def setArrayPattern(value: js.Array[String]): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
       
-      inline def setArrayPatternVarargs(value: String*): Self = StObject.set(x, "ArrayPattern", js.Array(value :_*))
+      inline def setArrayPatternVarargs(value: String*): Self = StObject.set(x, "ArrayPattern", js.Array(value*))
       
       inline def setArrowFunctionExpression(value: js.Array[String]): Self = StObject.set(x, "ArrowFunctionExpression", value.asInstanceOf[js.Any])
       
-      inline def setArrowFunctionExpressionVarargs(value: String*): Self = StObject.set(x, "ArrowFunctionExpression", js.Array(value :_*))
+      inline def setArrowFunctionExpressionVarargs(value: String*): Self = StObject.set(x, "ArrowFunctionExpression", js.Array(value*))
       
       inline def setAssignmentExpression(value: js.Array[String]): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
       
-      inline def setAssignmentExpressionVarargs(value: String*): Self = StObject.set(x, "AssignmentExpression", js.Array(value :_*))
+      inline def setAssignmentExpressionVarargs(value: String*): Self = StObject.set(x, "AssignmentExpression", js.Array(value*))
       
       inline def setAssignmentPattern(value: js.Array[String]): Self = StObject.set(x, "AssignmentPattern", value.asInstanceOf[js.Any])
       
-      inline def setAssignmentPatternVarargs(value: String*): Self = StObject.set(x, "AssignmentPattern", js.Array(value :_*))
+      inline def setAssignmentPatternVarargs(value: String*): Self = StObject.set(x, "AssignmentPattern", js.Array(value*))
       
       inline def setAwaitExpression(value: js.Array[String]): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
       
-      inline def setAwaitExpressionVarargs(value: String*): Self = StObject.set(x, "AwaitExpression", js.Array(value :_*))
+      inline def setAwaitExpressionVarargs(value: String*): Self = StObject.set(x, "AwaitExpression", js.Array(value*))
       
       inline def setBinaryExpression(value: js.Array[String]): Self = StObject.set(x, "BinaryExpression", value.asInstanceOf[js.Any])
       
-      inline def setBinaryExpressionVarargs(value: String*): Self = StObject.set(x, "BinaryExpression", js.Array(value :_*))
+      inline def setBinaryExpressionVarargs(value: String*): Self = StObject.set(x, "BinaryExpression", js.Array(value*))
       
       inline def setBlockStatement(value: js.Array[String]): Self = StObject.set(x, "BlockStatement", value.asInstanceOf[js.Any])
       
-      inline def setBlockStatementVarargs(value: String*): Self = StObject.set(x, "BlockStatement", js.Array(value :_*))
+      inline def setBlockStatementVarargs(value: String*): Self = StObject.set(x, "BlockStatement", js.Array(value*))
       
       inline def setBreakStatement(value: js.Array[String]): Self = StObject.set(x, "BreakStatement", value.asInstanceOf[js.Any])
       
-      inline def setBreakStatementVarargs(value: String*): Self = StObject.set(x, "BreakStatement", js.Array(value :_*))
+      inline def setBreakStatementVarargs(value: String*): Self = StObject.set(x, "BreakStatement", js.Array(value*))
       
       inline def setCallExpression(value: js.Array[String]): Self = StObject.set(x, "CallExpression", value.asInstanceOf[js.Any])
       
-      inline def setCallExpressionVarargs(value: String*): Self = StObject.set(x, "CallExpression", js.Array(value :_*))
+      inline def setCallExpressionVarargs(value: String*): Self = StObject.set(x, "CallExpression", js.Array(value*))
       
       inline def setCatchClause(value: js.Array[String]): Self = StObject.set(x, "CatchClause", value.asInstanceOf[js.Any])
       
-      inline def setCatchClauseVarargs(value: String*): Self = StObject.set(x, "CatchClause", js.Array(value :_*))
+      inline def setCatchClauseVarargs(value: String*): Self = StObject.set(x, "CatchClause", js.Array(value*))
       
       inline def setClassBody(value: js.Array[String]): Self = StObject.set(x, "ClassBody", value.asInstanceOf[js.Any])
       
-      inline def setClassBodyVarargs(value: String*): Self = StObject.set(x, "ClassBody", js.Array(value :_*))
+      inline def setClassBodyVarargs(value: String*): Self = StObject.set(x, "ClassBody", js.Array(value*))
       
       inline def setClassDeclaration(value: js.Array[String]): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
       
-      inline def setClassDeclarationVarargs(value: String*): Self = StObject.set(x, "ClassDeclaration", js.Array(value :_*))
+      inline def setClassDeclarationVarargs(value: String*): Self = StObject.set(x, "ClassDeclaration", js.Array(value*))
       
       inline def setClassExpression(value: js.Array[String]): Self = StObject.set(x, "ClassExpression", value.asInstanceOf[js.Any])
       
-      inline def setClassExpressionVarargs(value: String*): Self = StObject.set(x, "ClassExpression", js.Array(value :_*))
+      inline def setClassExpressionVarargs(value: String*): Self = StObject.set(x, "ClassExpression", js.Array(value*))
       
       inline def setComprehensionBlock(value: js.Array[String]): Self = StObject.set(x, "ComprehensionBlock", value.asInstanceOf[js.Any])
       
-      inline def setComprehensionBlockVarargs(value: String*): Self = StObject.set(x, "ComprehensionBlock", js.Array(value :_*))
+      inline def setComprehensionBlockVarargs(value: String*): Self = StObject.set(x, "ComprehensionBlock", js.Array(value*))
       
       inline def setComprehensionExpression(value: js.Array[String]): Self = StObject.set(x, "ComprehensionExpression", value.asInstanceOf[js.Any])
       
-      inline def setComprehensionExpressionVarargs(value: String*): Self = StObject.set(x, "ComprehensionExpression", js.Array(value :_*))
+      inline def setComprehensionExpressionVarargs(value: String*): Self = StObject.set(x, "ComprehensionExpression", js.Array(value*))
       
       inline def setConditionalExpression(value: js.Array[String]): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
       
-      inline def setConditionalExpressionVarargs(value: String*): Self = StObject.set(x, "ConditionalExpression", js.Array(value :_*))
+      inline def setConditionalExpressionVarargs(value: String*): Self = StObject.set(x, "ConditionalExpression", js.Array(value*))
       
       inline def setContinueStatement(value: js.Array[String]): Self = StObject.set(x, "ContinueStatement", value.asInstanceOf[js.Any])
       
-      inline def setContinueStatementVarargs(value: String*): Self = StObject.set(x, "ContinueStatement", js.Array(value :_*))
+      inline def setContinueStatementVarargs(value: String*): Self = StObject.set(x, "ContinueStatement", js.Array(value*))
       
       inline def setDebuggerStatement(value: js.Array[String]): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
       
-      inline def setDebuggerStatementVarargs(value: String*): Self = StObject.set(x, "DebuggerStatement", js.Array(value :_*))
+      inline def setDebuggerStatementVarargs(value: String*): Self = StObject.set(x, "DebuggerStatement", js.Array(value*))
       
       inline def setDirectiveStatement(value: js.Array[String]): Self = StObject.set(x, "DirectiveStatement", value.asInstanceOf[js.Any])
       
-      inline def setDirectiveStatementVarargs(value: String*): Self = StObject.set(x, "DirectiveStatement", js.Array(value :_*))
+      inline def setDirectiveStatementVarargs(value: String*): Self = StObject.set(x, "DirectiveStatement", js.Array(value*))
       
       inline def setDoWhileStatement(value: js.Array[String]): Self = StObject.set(x, "DoWhileStatement", value.asInstanceOf[js.Any])
       
-      inline def setDoWhileStatementVarargs(value: String*): Self = StObject.set(x, "DoWhileStatement", js.Array(value :_*))
+      inline def setDoWhileStatementVarargs(value: String*): Self = StObject.set(x, "DoWhileStatement", js.Array(value*))
       
       inline def setEmptyStatement(value: js.Array[String]): Self = StObject.set(x, "EmptyStatement", value.asInstanceOf[js.Any])
       
-      inline def setEmptyStatementVarargs(value: String*): Self = StObject.set(x, "EmptyStatement", js.Array(value :_*))
+      inline def setEmptyStatementVarargs(value: String*): Self = StObject.set(x, "EmptyStatement", js.Array(value*))
       
       inline def setExportAllDeclaration(value: js.Array[String]): Self = StObject.set(x, "ExportAllDeclaration", value.asInstanceOf[js.Any])
       
-      inline def setExportAllDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportAllDeclaration", js.Array(value :_*))
+      inline def setExportAllDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportAllDeclaration", js.Array(value*))
       
       inline def setExportDefaultDeclaration(value: js.Array[String]): Self = StObject.set(x, "ExportDefaultDeclaration", value.asInstanceOf[js.Any])
       
-      inline def setExportDefaultDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportDefaultDeclaration", js.Array(value :_*))
+      inline def setExportDefaultDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportDefaultDeclaration", js.Array(value*))
       
       inline def setExportNamedDeclaration(value: js.Array[String]): Self = StObject.set(x, "ExportNamedDeclaration", value.asInstanceOf[js.Any])
       
-      inline def setExportNamedDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportNamedDeclaration", js.Array(value :_*))
+      inline def setExportNamedDeclarationVarargs(value: String*): Self = StObject.set(x, "ExportNamedDeclaration", js.Array(value*))
       
       inline def setExportSpecifier(value: js.Array[String]): Self = StObject.set(x, "ExportSpecifier", value.asInstanceOf[js.Any])
       
-      inline def setExportSpecifierVarargs(value: String*): Self = StObject.set(x, "ExportSpecifier", js.Array(value :_*))
+      inline def setExportSpecifierVarargs(value: String*): Self = StObject.set(x, "ExportSpecifier", js.Array(value*))
       
       inline def setExpressionStatement(value: js.Array[String]): Self = StObject.set(x, "ExpressionStatement", value.asInstanceOf[js.Any])
       
-      inline def setExpressionStatementVarargs(value: String*): Self = StObject.set(x, "ExpressionStatement", js.Array(value :_*))
+      inline def setExpressionStatementVarargs(value: String*): Self = StObject.set(x, "ExpressionStatement", js.Array(value*))
       
       inline def setForInStatement(value: js.Array[String]): Self = StObject.set(x, "ForInStatement", value.asInstanceOf[js.Any])
       
-      inline def setForInStatementVarargs(value: String*): Self = StObject.set(x, "ForInStatement", js.Array(value :_*))
+      inline def setForInStatementVarargs(value: String*): Self = StObject.set(x, "ForInStatement", js.Array(value*))
       
       inline def setForOfStatement(value: js.Array[String]): Self = StObject.set(x, "ForOfStatement", value.asInstanceOf[js.Any])
       
-      inline def setForOfStatementVarargs(value: String*): Self = StObject.set(x, "ForOfStatement", js.Array(value :_*))
+      inline def setForOfStatementVarargs(value: String*): Self = StObject.set(x, "ForOfStatement", js.Array(value*))
       
       inline def setForStatement(value: js.Array[String]): Self = StObject.set(x, "ForStatement", value.asInstanceOf[js.Any])
       
-      inline def setForStatementVarargs(value: String*): Self = StObject.set(x, "ForStatement", js.Array(value :_*))
+      inline def setForStatementVarargs(value: String*): Self = StObject.set(x, "ForStatement", js.Array(value*))
       
       inline def setFunctionDeclaration(value: js.Array[String]): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
       
-      inline def setFunctionDeclarationVarargs(value: String*): Self = StObject.set(x, "FunctionDeclaration", js.Array(value :_*))
+      inline def setFunctionDeclarationVarargs(value: String*): Self = StObject.set(x, "FunctionDeclaration", js.Array(value*))
       
       inline def setFunctionExpression(value: js.Array[String]): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
       
-      inline def setFunctionExpressionVarargs(value: String*): Self = StObject.set(x, "FunctionExpression", js.Array(value :_*))
+      inline def setFunctionExpressionVarargs(value: String*): Self = StObject.set(x, "FunctionExpression", js.Array(value*))
       
       inline def setGeneratorExpression(value: js.Array[String]): Self = StObject.set(x, "GeneratorExpression", value.asInstanceOf[js.Any])
       
-      inline def setGeneratorExpressionVarargs(value: String*): Self = StObject.set(x, "GeneratorExpression", js.Array(value :_*))
+      inline def setGeneratorExpressionVarargs(value: String*): Self = StObject.set(x, "GeneratorExpression", js.Array(value*))
       
       inline def setIdentifier(value: js.Array[String]): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
       
-      inline def setIdentifierVarargs(value: String*): Self = StObject.set(x, "Identifier", js.Array(value :_*))
+      inline def setIdentifierVarargs(value: String*): Self = StObject.set(x, "Identifier", js.Array(value*))
       
       inline def setIfStatement(value: js.Array[String]): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
       
-      inline def setIfStatementVarargs(value: String*): Self = StObject.set(x, "IfStatement", js.Array(value :_*))
+      inline def setIfStatementVarargs(value: String*): Self = StObject.set(x, "IfStatement", js.Array(value*))
       
       inline def setImportDeclaration(value: js.Array[String]): Self = StObject.set(x, "ImportDeclaration", value.asInstanceOf[js.Any])
       
-      inline def setImportDeclarationVarargs(value: String*): Self = StObject.set(x, "ImportDeclaration", js.Array(value :_*))
+      inline def setImportDeclarationVarargs(value: String*): Self = StObject.set(x, "ImportDeclaration", js.Array(value*))
       
       inline def setImportDefaultSpecifier(value: js.Array[String]): Self = StObject.set(x, "ImportDefaultSpecifier", value.asInstanceOf[js.Any])
       
-      inline def setImportDefaultSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportDefaultSpecifier", js.Array(value :_*))
+      inline def setImportDefaultSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportDefaultSpecifier", js.Array(value*))
       
       inline def setImportExpression(value: js.Array[String]): Self = StObject.set(x, "ImportExpression", value.asInstanceOf[js.Any])
       
-      inline def setImportExpressionVarargs(value: String*): Self = StObject.set(x, "ImportExpression", js.Array(value :_*))
+      inline def setImportExpressionVarargs(value: String*): Self = StObject.set(x, "ImportExpression", js.Array(value*))
       
       inline def setImportNamespaceSpecifier(value: js.Array[String]): Self = StObject.set(x, "ImportNamespaceSpecifier", value.asInstanceOf[js.Any])
       
-      inline def setImportNamespaceSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportNamespaceSpecifier", js.Array(value :_*))
+      inline def setImportNamespaceSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportNamespaceSpecifier", js.Array(value*))
       
       inline def setImportSpecifier(value: js.Array[String]): Self = StObject.set(x, "ImportSpecifier", value.asInstanceOf[js.Any])
       
-      inline def setImportSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportSpecifier", js.Array(value :_*))
+      inline def setImportSpecifierVarargs(value: String*): Self = StObject.set(x, "ImportSpecifier", js.Array(value*))
       
       inline def setLabeledStatement(value: js.Array[String]): Self = StObject.set(x, "LabeledStatement", value.asInstanceOf[js.Any])
       
-      inline def setLabeledStatementVarargs(value: String*): Self = StObject.set(x, "LabeledStatement", js.Array(value :_*))
+      inline def setLabeledStatementVarargs(value: String*): Self = StObject.set(x, "LabeledStatement", js.Array(value*))
       
       inline def setLiteral(value: js.Array[String]): Self = StObject.set(x, "Literal", value.asInstanceOf[js.Any])
       
-      inline def setLiteralVarargs(value: String*): Self = StObject.set(x, "Literal", js.Array(value :_*))
+      inline def setLiteralVarargs(value: String*): Self = StObject.set(x, "Literal", js.Array(value*))
       
       inline def setLogicalExpression(value: js.Array[String]): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
       
-      inline def setLogicalExpressionVarargs(value: String*): Self = StObject.set(x, "LogicalExpression", js.Array(value :_*))
+      inline def setLogicalExpressionVarargs(value: String*): Self = StObject.set(x, "LogicalExpression", js.Array(value*))
       
       inline def setMemberExpression(value: js.Array[String]): Self = StObject.set(x, "MemberExpression", value.asInstanceOf[js.Any])
       
-      inline def setMemberExpressionVarargs(value: String*): Self = StObject.set(x, "MemberExpression", js.Array(value :_*))
+      inline def setMemberExpressionVarargs(value: String*): Self = StObject.set(x, "MemberExpression", js.Array(value*))
       
       inline def setMetaProperty(value: js.Array[String]): Self = StObject.set(x, "MetaProperty", value.asInstanceOf[js.Any])
       
-      inline def setMetaPropertyVarargs(value: String*): Self = StObject.set(x, "MetaProperty", js.Array(value :_*))
+      inline def setMetaPropertyVarargs(value: String*): Self = StObject.set(x, "MetaProperty", js.Array(value*))
       
       inline def setMethodDefinition(value: js.Array[String]): Self = StObject.set(x, "MethodDefinition", value.asInstanceOf[js.Any])
       
-      inline def setMethodDefinitionVarargs(value: String*): Self = StObject.set(x, "MethodDefinition", js.Array(value :_*))
+      inline def setMethodDefinitionVarargs(value: String*): Self = StObject.set(x, "MethodDefinition", js.Array(value*))
       
       inline def setModuleSpecifier(value: js.Array[String]): Self = StObject.set(x, "ModuleSpecifier", value.asInstanceOf[js.Any])
       
-      inline def setModuleSpecifierVarargs(value: String*): Self = StObject.set(x, "ModuleSpecifier", js.Array(value :_*))
+      inline def setModuleSpecifierVarargs(value: String*): Self = StObject.set(x, "ModuleSpecifier", js.Array(value*))
       
       inline def setNewExpression(value: js.Array[String]): Self = StObject.set(x, "NewExpression", value.asInstanceOf[js.Any])
       
-      inline def setNewExpressionVarargs(value: String*): Self = StObject.set(x, "NewExpression", js.Array(value :_*))
+      inline def setNewExpressionVarargs(value: String*): Self = StObject.set(x, "NewExpression", js.Array(value*))
       
       inline def setObjectExpression(value: js.Array[String]): Self = StObject.set(x, "ObjectExpression", value.asInstanceOf[js.Any])
       
-      inline def setObjectExpressionVarargs(value: String*): Self = StObject.set(x, "ObjectExpression", js.Array(value :_*))
+      inline def setObjectExpressionVarargs(value: String*): Self = StObject.set(x, "ObjectExpression", js.Array(value*))
       
       inline def setObjectPattern(value: js.Array[String]): Self = StObject.set(x, "ObjectPattern", value.asInstanceOf[js.Any])
       
-      inline def setObjectPatternVarargs(value: String*): Self = StObject.set(x, "ObjectPattern", js.Array(value :_*))
+      inline def setObjectPatternVarargs(value: String*): Self = StObject.set(x, "ObjectPattern", js.Array(value*))
       
       inline def setProgram(value: js.Array[String]): Self = StObject.set(x, "Program", value.asInstanceOf[js.Any])
       
-      inline def setProgramVarargs(value: String*): Self = StObject.set(x, "Program", js.Array(value :_*))
+      inline def setProgramVarargs(value: String*): Self = StObject.set(x, "Program", js.Array(value*))
       
       inline def setProperty(value: js.Array[String]): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
       
-      inline def setPropertyVarargs(value: String*): Self = StObject.set(x, "Property", js.Array(value :_*))
+      inline def setPropertyVarargs(value: String*): Self = StObject.set(x, "Property", js.Array(value*))
       
       inline def setRestElement(value: js.Array[String]): Self = StObject.set(x, "RestElement", value.asInstanceOf[js.Any])
       
-      inline def setRestElementVarargs(value: String*): Self = StObject.set(x, "RestElement", js.Array(value :_*))
+      inline def setRestElementVarargs(value: String*): Self = StObject.set(x, "RestElement", js.Array(value*))
       
       inline def setReturnStatement(value: js.Array[String]): Self = StObject.set(x, "ReturnStatement", value.asInstanceOf[js.Any])
       
-      inline def setReturnStatementVarargs(value: String*): Self = StObject.set(x, "ReturnStatement", js.Array(value :_*))
+      inline def setReturnStatementVarargs(value: String*): Self = StObject.set(x, "ReturnStatement", js.Array(value*))
       
       inline def setSequenceExpression(value: js.Array[String]): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
       
-      inline def setSequenceExpressionVarargs(value: String*): Self = StObject.set(x, "SequenceExpression", js.Array(value :_*))
+      inline def setSequenceExpressionVarargs(value: String*): Self = StObject.set(x, "SequenceExpression", js.Array(value*))
       
       inline def setSpreadElement(value: js.Array[String]): Self = StObject.set(x, "SpreadElement", value.asInstanceOf[js.Any])
       
-      inline def setSpreadElementVarargs(value: String*): Self = StObject.set(x, "SpreadElement", js.Array(value :_*))
+      inline def setSpreadElementVarargs(value: String*): Self = StObject.set(x, "SpreadElement", js.Array(value*))
       
       inline def setSuper(value: js.Array[String]): Self = StObject.set(x, "Super", value.asInstanceOf[js.Any])
       
-      inline def setSuperVarargs(value: String*): Self = StObject.set(x, "Super", js.Array(value :_*))
+      inline def setSuperVarargs(value: String*): Self = StObject.set(x, "Super", js.Array(value*))
       
       inline def setSwitchCase(value: js.Array[String]): Self = StObject.set(x, "SwitchCase", value.asInstanceOf[js.Any])
       
-      inline def setSwitchCaseVarargs(value: String*): Self = StObject.set(x, "SwitchCase", js.Array(value :_*))
+      inline def setSwitchCaseVarargs(value: String*): Self = StObject.set(x, "SwitchCase", js.Array(value*))
       
       inline def setSwitchStatement(value: js.Array[String]): Self = StObject.set(x, "SwitchStatement", value.asInstanceOf[js.Any])
       
-      inline def setSwitchStatementVarargs(value: String*): Self = StObject.set(x, "SwitchStatement", js.Array(value :_*))
+      inline def setSwitchStatementVarargs(value: String*): Self = StObject.set(x, "SwitchStatement", js.Array(value*))
       
       inline def setTaggedTemplateExpression(value: js.Array[String]): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
       
-      inline def setTaggedTemplateExpressionVarargs(value: String*): Self = StObject.set(x, "TaggedTemplateExpression", js.Array(value :_*))
+      inline def setTaggedTemplateExpressionVarargs(value: String*): Self = StObject.set(x, "TaggedTemplateExpression", js.Array(value*))
       
       inline def setTemplateElement(value: js.Array[String]): Self = StObject.set(x, "TemplateElement", value.asInstanceOf[js.Any])
       
-      inline def setTemplateElementVarargs(value: String*): Self = StObject.set(x, "TemplateElement", js.Array(value :_*))
+      inline def setTemplateElementVarargs(value: String*): Self = StObject.set(x, "TemplateElement", js.Array(value*))
       
       inline def setTemplateLiteral(value: js.Array[String]): Self = StObject.set(x, "TemplateLiteral", value.asInstanceOf[js.Any])
       
-      inline def setTemplateLiteralVarargs(value: String*): Self = StObject.set(x, "TemplateLiteral", js.Array(value :_*))
+      inline def setTemplateLiteralVarargs(value: String*): Self = StObject.set(x, "TemplateLiteral", js.Array(value*))
       
       inline def setThisExpression(value: js.Array[String]): Self = StObject.set(x, "ThisExpression", value.asInstanceOf[js.Any])
       
-      inline def setThisExpressionVarargs(value: String*): Self = StObject.set(x, "ThisExpression", js.Array(value :_*))
+      inline def setThisExpressionVarargs(value: String*): Self = StObject.set(x, "ThisExpression", js.Array(value*))
       
       inline def setThrowStatement(value: js.Array[String]): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
       
-      inline def setThrowStatementVarargs(value: String*): Self = StObject.set(x, "ThrowStatement", js.Array(value :_*))
+      inline def setThrowStatementVarargs(value: String*): Self = StObject.set(x, "ThrowStatement", js.Array(value*))
       
       inline def setTryStatement(value: js.Array[String]): Self = StObject.set(x, "TryStatement", value.asInstanceOf[js.Any])
       
-      inline def setTryStatementVarargs(value: String*): Self = StObject.set(x, "TryStatement", js.Array(value :_*))
+      inline def setTryStatementVarargs(value: String*): Self = StObject.set(x, "TryStatement", js.Array(value*))
       
       inline def setUnaryExpression(value: js.Array[String]): Self = StObject.set(x, "UnaryExpression", value.asInstanceOf[js.Any])
       
-      inline def setUnaryExpressionVarargs(value: String*): Self = StObject.set(x, "UnaryExpression", js.Array(value :_*))
+      inline def setUnaryExpressionVarargs(value: String*): Self = StObject.set(x, "UnaryExpression", js.Array(value*))
       
       inline def setUpdateExpression(value: js.Array[String]): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
       
-      inline def setUpdateExpressionVarargs(value: String*): Self = StObject.set(x, "UpdateExpression", js.Array(value :_*))
+      inline def setUpdateExpressionVarargs(value: String*): Self = StObject.set(x, "UpdateExpression", js.Array(value*))
       
       inline def setVariableDeclaration(value: js.Array[String]): Self = StObject.set(x, "VariableDeclaration", value.asInstanceOf[js.Any])
       
-      inline def setVariableDeclarationVarargs(value: String*): Self = StObject.set(x, "VariableDeclaration", js.Array(value :_*))
+      inline def setVariableDeclarationVarargs(value: String*): Self = StObject.set(x, "VariableDeclaration", js.Array(value*))
       
       inline def setVariableDeclarator(value: js.Array[String]): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
       
-      inline def setVariableDeclaratorVarargs(value: String*): Self = StObject.set(x, "VariableDeclarator", js.Array(value :_*))
+      inline def setVariableDeclaratorVarargs(value: String*): Self = StObject.set(x, "VariableDeclarator", js.Array(value*))
       
       inline def setWhileStatement(value: js.Array[String]): Self = StObject.set(x, "WhileStatement", value.asInstanceOf[js.Any])
       
-      inline def setWhileStatementVarargs(value: String*): Self = StObject.set(x, "WhileStatement", js.Array(value :_*))
+      inline def setWhileStatementVarargs(value: String*): Self = StObject.set(x, "WhileStatement", js.Array(value*))
       
       inline def setWithStatement(value: js.Array[String]): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
       
-      inline def setWithStatementVarargs(value: String*): Self = StObject.set(x, "WithStatement", js.Array(value :_*))
+      inline def setWithStatementVarargs(value: String*): Self = StObject.set(x, "WithStatement", js.Array(value*))
       
       inline def setYieldExpression(value: js.Array[String]): Self = StObject.set(x, "YieldExpression", value.asInstanceOf[js.Any])
       
-      inline def setYieldExpressionVarargs(value: String*): Self = StObject.set(x, "YieldExpression", js.Array(value :_*))
+      inline def setYieldExpressionVarargs(value: String*): Self = StObject.set(x, "YieldExpression", js.Array(value*))
     }
   }
   
@@ -846,7 +846,7 @@ object mod {
   
   inline def attachComments(tree: Node, providedComments: js.Array[Comment], tokens: js.Array[Node]): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComments")(tree.asInstanceOf[js.Any], providedComments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  inline def cloneEnvironment(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneEnvironment")().asInstanceOf[js.Any]
+  inline def cloneEnvironment(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneEnvironment")().asInstanceOf[Any]
   
   inline def replace(root: Node, visitor: Visitor): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(root.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Node]
   

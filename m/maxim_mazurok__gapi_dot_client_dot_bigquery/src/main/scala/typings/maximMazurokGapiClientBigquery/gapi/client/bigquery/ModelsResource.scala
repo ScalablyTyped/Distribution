@@ -19,7 +19,10 @@ trait ModelsResource extends StObject {
   def get(): Request[Model] = js.native
   def get(request: ModelId): Request[Model] = js.native
   
-  /** Lists all models in the specified dataset. Requires the READER dataset role. */
+  /**
+    * Lists all models in the specified dataset. Requires the READER dataset role. After retrieving the list of models, you can get information about a particular model by calling the
+    * models.get method.
+    */
   def list(): Request[ListModelsResponse] = js.native
   def list(request: MaxResults): Request[ListModelsResponse] = js.native
   

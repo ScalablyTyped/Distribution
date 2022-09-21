@@ -19,31 +19,31 @@ trait DragControl extends StObject {
   def $dragOut(source: HTMLElement, target: HTMLElement, drop: HTMLElement, event: Event): Unit = js.native
   
   @JSName("$dragPos")
-  def $dragPos(args: js.Any*): js.Any = js.native
+  def $dragPos(args: Any*): Any = js.native
   @JSName("$dragPos")
   var $dragPos_Original: WebixCallback = js.native
   
   @JSName("$drop")
   def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit = js.native
   
-  def addDrag(node: String, ctrl: js.Any): Unit = js.native
-  def addDrag(node: Double, ctrl: js.Any): Unit = js.native
-  def addDrag(node: HTMLElement, ctrl: js.Any): Unit = js.native
+  def addDrag(node: String, ctrl: Any): Unit = js.native
+  def addDrag(node: Double, ctrl: Any): Unit = js.native
+  def addDrag(node: HTMLElement, ctrl: Any): Unit = js.native
   
-  def addDrop(node: String, ctrl: js.Any): Unit = js.native
-  def addDrop(node: String, ctrl: js.Any, master_mode: Boolean): Unit = js.native
-  def addDrop(node: Double, ctrl: js.Any): Unit = js.native
-  def addDrop(node: Double, ctrl: js.Any, master_mode: Boolean): Unit = js.native
-  def addDrop(node: HTMLElement, ctrl: js.Any): Unit = js.native
-  def addDrop(node: HTMLElement, ctrl: js.Any, master_mode: Boolean): Unit = js.native
+  def addDrop(node: String, ctrl: Any): Unit = js.native
+  def addDrop(node: String, ctrl: Any, master_mode: Boolean): Unit = js.native
+  def addDrop(node: Double, ctrl: Any): Unit = js.native
+  def addDrop(node: Double, ctrl: Any, master_mode: Boolean): Unit = js.native
+  def addDrop(node: HTMLElement, ctrl: Any): Unit = js.native
+  def addDrop(node: HTMLElement, ctrl: Any, master_mode: Boolean): Unit = js.native
   
   def createDrag(event: Event): Unit = js.native
   
   def destroyDrag(): Unit = js.native
   
-  def getContext(): js.Any = js.native
+  def getContext(): Any = js.native
   
-  def getMaster(target: js.Any): js.Any = js.native
+  def getMaster(target: Any): Any = js.native
   
   def getNode(): HTMLElement = js.native
   
@@ -52,4 +52,6 @@ trait DragControl extends StObject {
   def sendSignal(signal: String): Unit = js.native
   
   var top: Double = js.native
+  
+  def unlink(id: Any): Unit = js.native
 }

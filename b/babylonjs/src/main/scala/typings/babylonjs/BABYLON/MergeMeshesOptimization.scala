@@ -9,7 +9,7 @@ trait MergeMeshesOptimization
   extends StObject
      with SceneOptimization {
   
-  /* private */ var _canBeMerged: js.Any = js.native
+  /* private */ var _canBeMerged: Any = js.native
   
   @JSName("apply")
   def apply(scene: Scene, optimizer: SceneOptimizer, updateSelectionTree: Boolean): Boolean = js.native

@@ -2,6 +2,7 @@ package typings.reactNativeTabView
 
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
+import typings.reactNative.mod.Animated.AnimatedInterpolation
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
@@ -10,16 +11,15 @@ import typings.reactNativeTabView.anon.Focused
 import typings.reactNativeTabView.typesMod.NavigationState
 import typings.reactNativeTabView.typesMod.Route
 import typings.reactNativeTabView.typesMod.Scene
-import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarItemMod {
   
-  @JSImport("react-native-tab-view/lib/typescript/src/TabBarItem", JSImport.Default)
+  @JSImport("react-native-tab-view/lib/typescript/TabBarItem", JSImport.Default)
   @js.native
-  class default[T /* <: Route */] () extends TabBarItem[T]
+  open class default[T /* <: Route */] () extends TabBarItem[T]
   
   trait Props[T /* <: Route */] extends StObject {
     
@@ -45,7 +45,7 @@ object tabBarItemMod {
     
     def onPress(): Unit
     
-    var position: Node
+    var position: AnimatedInterpolation[Double | String]
     
     var pressColor: js.UndefOr[String] = js.undefined
     
@@ -71,7 +71,7 @@ object tabBarItemMod {
       navigationState: NavigationState[T],
       onLongPress: () => Unit,
       onPress: () => Unit,
-      position: Node,
+      position: AnimatedInterpolation[Double | String],
       route: T
     ): Props[T] = {
       val __obj = js.Dynamic.literal(getAccessibilityLabel = js.Any.fromFunction1(getAccessibilityLabel), getAccessible = js.Any.fromFunction1(getAccessible), getLabelText = js.Any.fromFunction1(getLabelText), getTestID = js.Any.fromFunction1(getTestID), navigationState = navigationState.asInstanceOf[js.Any], onLongPress = js.Any.fromFunction0(onLongPress), onPress = js.Any.fromFunction0(onPress), position = position.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
@@ -112,7 +112,7 @@ object tabBarItemMod {
       
       inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
-      inline def setPosition(value: Node): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPressColor(value: String): Self = StObject.set(x, "pressColor", value.asInstanceOf[js.Any])
       
@@ -146,10 +146,10 @@ object tabBarItemMod {
   
   @js.native
   trait TabBarItem[T /* <: Route */]
-    extends Component[Props[T], js.Object, js.Any] {
+    extends Component[Props[T], js.Object, Any] {
     
-    /* private */ var getActiveOpacity: js.Any = js.native
+    /* private */ var getActiveOpacity: Any = js.native
     
-    /* private */ var getInactiveOpacity: js.Any = js.native
+    /* private */ var getInactiveOpacity: Any = js.native
   }
 }

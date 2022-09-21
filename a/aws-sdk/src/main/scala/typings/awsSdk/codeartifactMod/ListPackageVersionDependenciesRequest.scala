@@ -13,22 +13,22 @@ trait ListPackageVersionDependenciesRequest extends StObject {
   var _package: PackageName
   
   /**
-    *  The domain that contains the repository that contains the requested package version dependencies. 
+    *  The name of the domain that contains the repository that contains the requested package version dependencies. 
     */
   var domain: DomainName
   
   /**
-    *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
+    *  The 12-digit account number of the Amazon Web Services account that owns the domain. It does not include dashes or spaces. 
     */
   var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
-    *  The format of the package with the requested dependencies. The valid package types are:     npm: A Node Package Manager (npm) package.     pypi: A Python Package Index (PyPI) package.     maven: A Maven package that contains compiled code in a distributable format, such as a JAR file.   
+    *  The format of the package with the requested dependencies. 
     */
   var format: PackageFormat
   
   /**
-    *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
+    * The namespace of the package version with the requested dependencies. The package version component that specifies its namespace depends on its type. For example:    The namespace of a Maven package version is its groupId.     The namespace of an npm package version is its scope.     Python and NuGet package versions do not contain a corresponding component, package versions of those formats do not have a namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   

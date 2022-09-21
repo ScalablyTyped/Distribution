@@ -31,7 +31,7 @@ trait Alt extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Parent resource of the API Config, of the form: `projects/∗/locations/global/apis/ *` */
+  /** Required. Parent resource of the API Config, of the form: `projects/ *‍/locations/global/apis/ *` */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

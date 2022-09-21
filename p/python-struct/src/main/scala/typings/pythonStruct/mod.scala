@@ -1,7 +1,6 @@
 package typings.pythonStruct
 
-import typings.long.mod.Long
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def pack(format: String, data: DataType*): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(format.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def pack(format: String, data: DataType*): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(List(format.asInstanceOf[js.Any]).`++`(data.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Buffer]
   inline def pack(format: String, data: js.Array[DataType]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(format.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   inline def sizeOf(format: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeOf")(format.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -23,5 +22,5 @@ object mod {
   inline def unpackFrom(format: String, data: Buffer, checkBounds: Boolean, position: Double): DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("unpackFrom")(format.asInstanceOf[js.Any], data.asInstanceOf[js.Any], checkBounds.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[DataType]
   inline def unpackFrom(format: String, data: Buffer, checkBounds: Unit, position: Double): DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("unpackFrom")(format.asInstanceOf[js.Any], data.asInstanceOf[js.Any], checkBounds.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[DataType]
   
-  type DataType = Double | Long | String | Boolean
+  type DataType = Double | typings.long.mod.^ | String | Boolean
 }

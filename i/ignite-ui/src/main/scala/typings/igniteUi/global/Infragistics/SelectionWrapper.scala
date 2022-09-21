@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.SelectionWrapper")
 @js.native
-class SelectionWrapper protected ()
+open class SelectionWrapper protected ()
   extends StObject
      with typings.igniteUi.Infragistics.SelectionWrapper {
-  def this(NODE: js.Any) = this()
+  def this(NODE: Any) = this()
   
   /* CompleteClass */
   override def execCommand(name: js.Object, args: js.Object): Unit = js.native

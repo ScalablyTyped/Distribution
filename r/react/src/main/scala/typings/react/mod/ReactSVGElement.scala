@@ -11,7 +11,7 @@ trait ReactSVGElement
      with DOMElement[SVGAttributes[SVGElement], SVGElement]
 object ReactSVGElement {
   
-  inline def apply(props: js.Any, `type`: js.Any): ReactSVGElement = {
+  inline def apply(props: Any, `type`: Any): ReactSVGElement = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null, ref = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactSVGElement]

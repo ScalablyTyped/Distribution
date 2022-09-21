@@ -8,7 +8,7 @@ object wmtscapabilitiesMod {
   
   @JSImport("ol/format/WMTSCapabilities", JSImport.Default)
   @js.native
-  class default () extends WMTSCapabilities
+  open class default () extends WMTSCapabilities
   
   @js.native
   trait WMTSCapabilities

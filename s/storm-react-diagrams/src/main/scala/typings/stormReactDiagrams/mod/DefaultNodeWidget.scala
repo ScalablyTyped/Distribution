@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "DefaultNodeWidget")
 @js.native
-class DefaultNodeWidget protected ()
+open class DefaultNodeWidget protected ()
   extends typings.stormReactDiagrams.defaultNodeWidgetMod.DefaultNodeWidget {
   def this(props: DefaultNodeProps) = this()
 }

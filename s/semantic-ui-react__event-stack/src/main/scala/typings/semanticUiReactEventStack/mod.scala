@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("@semantic-ui-react/event-stack", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.semanticUiReactEventStack.typesEventStackMod.default
   /* static members */
   object default {

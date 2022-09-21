@@ -2,6 +2,8 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typings.arcgisJsApi.arcgisJsApiStrings.`us-feet`
+import typings.arcgisJsApi.arcgisJsApiStrings.centimeters
+import typings.arcgisJsApi.arcgisJsApiStrings.decimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.feet_
 import typings.arcgisJsApi.arcgisJsApiStrings.imperial
 import typings.arcgisJsApi.arcgisJsApiStrings.inches
@@ -9,6 +11,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
+import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectLineMeasurement3DProperties
   extends StObject
      with WidgetProperties {
+  
+  /**
+    * The direct line measurement analysis object being created or modified by the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html#analysis)
+    */
+  var analysis: js.UndefOr[DirectLineMeasurementAnalysisProperties] = js.undefined
   
   /**
     * The widget's default CSS icon class.
@@ -31,7 +41,7 @@ trait DirectLineMeasurement3DProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html#unit)
     */
   var unit: js.UndefOr[
-    metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
+    imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined
   
   /**
@@ -41,7 +51,7 @@ trait DirectLineMeasurement3DProperties
     */
   var unitOptions: js.UndefOr[
     js.Array[
-      metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
+      imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
     ]
   ] = js.undefined
   
@@ -68,25 +78,29 @@ object DirectLineMeasurement3DProperties {
   
   extension [Self <: DirectLineMeasurement3DProperties](x: Self) {
     
+    inline def setAnalysis(value: DirectLineMeasurementAnalysisProperties): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
+    
+    inline def setAnalysisUndefined: Self = StObject.set(x, "analysis", js.undefined)
+    
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     inline def setUnit(
-      value: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
+      value: imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
     ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     inline def setUnitOptions(
       value: js.Array[
-          metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
+          imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
         ]
     ): Self = StObject.set(x, "unitOptions", value.asInstanceOf[js.Any])
     
     inline def setUnitOptionsUndefined: Self = StObject.set(x, "unitOptions", js.undefined)
     
     inline def setUnitOptionsVarargs(
-      value: (metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_)*
-    ): Self = StObject.set(x, "unitOptions", js.Array(value :_*))
+      value: (imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`)*
+    ): Self = StObject.set(x, "unitOptions", js.Array(value*))
     
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     

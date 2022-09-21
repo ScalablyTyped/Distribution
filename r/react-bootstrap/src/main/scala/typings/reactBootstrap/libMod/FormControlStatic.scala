@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "FormControlStatic")
 @js.native
-class FormControlStatic () extends ^
+open class FormControlStatic () extends ^

@@ -22,14 +22,14 @@ object mod {
   
   @JSImport("@google-cloud/datastore", JSImport.Namespace)
   @js.native
-  class ^ () extends Datastore {
+  open class ^ () extends Datastore {
     def this(options: InitOptions) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@google-cloud/datastore", "DatastoreRequest")
   @js.native
-  class DatastoreRequest ()
+  open class DatastoreRequest ()
     extends typings.googleCloudDatastore.requestMod.DatastoreRequest
   /* static member */
   @JSImport("@google-cloud/datastore", "DatastoreRequest")
@@ -59,7 +59,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@google-cloud/datastore", "Query")
   @js.native
-  class Query protected ()
+  open class Query protected ()
     extends typings.googleCloudDatastore.queryMod.Query {
     def this(scope: String, kinds: String, namespace: String) = this()
   }
@@ -76,7 +76,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@google-cloud/datastore", "Transaction")
   @js.native
-  class Transaction protected () extends DatastoreTransaction {
+  open class Transaction protected () extends DatastoreTransaction {
     def this(datastore: ^) = this()
   }
   /* static member */
@@ -88,7 +88,7 @@ object mod {
   trait Datastore
     extends typings.googleCloudDatastore.requestMod.DatastoreRequest {
     
-    val KEY: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Datastore.KEY */ js.Any = js.native
+    val KEY: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Datastore.KEY */ Any = js.native
     
     val MORE_RESULTS_AFTER_CURSOR: MoreResultsAfterCursor = js.native
     
@@ -111,13 +111,13 @@ object mod {
     def int(value: String): DatastoreInt = js.native
     def int(value: Double): DatastoreInt = js.native
     
-    def isDouble(value: js.Any): /* is @google-cloud/datastore.@google-cloud/datastore/entity.DatastoreDouble */ Boolean = js.native
+    def isDouble(value: Any): /* is @google-cloud/datastore.@google-cloud/datastore/entity.DatastoreDouble */ Boolean = js.native
     
-    def isGeoPoint(value: js.Any): /* is @google-cloud/datastore.@google-cloud/datastore/entity.DatastoreGeopoint */ Boolean = js.native
+    def isGeoPoint(value: Any): /* is @google-cloud/datastore.@google-cloud/datastore/entity.DatastoreGeopoint */ Boolean = js.native
     
-    def isInt(value: js.Any): /* is @google-cloud/datastore.@google-cloud/datastore/entity.DatastoreInt */ Boolean = js.native
+    def isInt(value: Any): /* is @google-cloud/datastore.@google-cloud/datastore/entity.DatastoreInt */ Boolean = js.native
     
-    def isKey(value: js.Any): /* is @google-cloud/datastore.@google-cloud/datastore/entity.DatastoreKey */ Boolean = js.native
+    def isKey(value: Any): /* is @google-cloud/datastore.@google-cloud/datastore/entity.DatastoreKey */ Boolean = js.native
     
     def key(pathOrOptions: DatastoreKeyOptions): DatastoreKey = js.native
     def key(pathOrOptions: DatastoreKeyPath): DatastoreKey = js.native

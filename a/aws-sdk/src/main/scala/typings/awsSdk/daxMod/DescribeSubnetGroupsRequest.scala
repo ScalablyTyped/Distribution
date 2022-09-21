@@ -42,6 +42,6 @@ object DescribeSubnetGroupsRequest {
     
     inline def setSubnetGroupNamesUndefined: Self = StObject.set(x, "SubnetGroupNames", js.undefined)
     
-    inline def setSubnetGroupNamesVarargs(value: String*): Self = StObject.set(x, "SubnetGroupNames", js.Array(value :_*))
+    inline def setSubnetGroupNamesVarargs(value: String*): Self = StObject.set(x, "SubnetGroupNames", js.Array(value*))
   }
 }

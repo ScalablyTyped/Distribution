@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.security
 
+import typings.activexLibreoffice.com_.sun.star.uno.SecurityException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,31 +13,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * inter-process communication.
   * @since OOo 1.1.2
   */
-type AccessController = typings.activexLibreoffice.com_.sun.star.security.XAccessController
+type AccessController = XAccessController
 
 /**
   * the service to be used for {@link XCertificateContainer} .
   * @since OOo 2.3.1
   */
-type CertificateContainer = typings.activexLibreoffice.com_.sun.star.security.XCertificateContainer
+type CertificateContainer = XCertificateContainer
 
-type CertificateException = typings.activexLibreoffice.com_.sun.star.uno.SecurityException
+type CertificateException = SecurityException
 
-type CryptographyException = typings.activexLibreoffice.com_.sun.star.uno.SecurityException
+type CryptographyException = SecurityException
 
-type EncryptionException = typings.activexLibreoffice.com_.sun.star.security.CryptographyException
+type EncryptionException = CryptographyException
 
-type KeyException = typings.activexLibreoffice.com_.sun.star.uno.SecurityException
+type KeyException = SecurityException
 
-type NoPasswordException = typings.activexLibreoffice.com_.sun.star.uno.SecurityException
+type NoPasswordException = SecurityException
 
 /**
   * Service for getting sets of permissions reading from some persistent storage.
   * @since OOo 1.1.2
   */
-type Policy = typings.activexLibreoffice.com_.sun.star.security.XPolicy
+type Policy = XPolicy
 
-type SecurityInfrastructureException = typings.activexLibreoffice.com_.sun.star.uno.SecurityException
+type SecurityInfrastructureException = SecurityException
 
 /**
   * provides conversion services for Serial Numbers.
@@ -44,6 +45,6 @@ type SecurityInfrastructureException = typings.activexLibreoffice.com_.sun.star.
   * An implementation of this service enables the conversion of certificate serial number to and from a string
   * @since OOo 3.1
   */
-type SerialNumberAdapter = typings.activexLibreoffice.com_.sun.star.security.XSerialNumberAdapter
+type SerialNumberAdapter = XSerialNumberAdapter
 
-type SignatureException = typings.activexLibreoffice.com_.sun.star.security.CryptographyException
+type SignatureException = CryptographyException

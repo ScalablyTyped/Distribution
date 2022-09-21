@@ -9,15 +9,12 @@ Allows making fluent OData queries from angular resources
 | ------------------ | :-------------: |
 | Full name          | angular-odata-resources |
 | Keywords           | OData, Angular, Resources |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 4349 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 351.3333333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/devnixs/ODataAngularResources)
-- [Bugs](https://github.com/devnixs/ODataAngularResources/issues)
-- [Repository](https://github.com/devnixs/ODataAngularResources)
 - [Npm](https://www.npmjs.com/package/angular-odata-resources)
     
 

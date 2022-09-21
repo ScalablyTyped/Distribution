@@ -17,7 +17,7 @@ trait LocalGateway extends StObject {
   var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account ID that owns the local gateway.
+    * The ID of the Amazon Web Services account that owns the local gateway.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -60,6 +60,6 @@ object LocalGateway {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -37,7 +37,7 @@ object Coords {
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
+    inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

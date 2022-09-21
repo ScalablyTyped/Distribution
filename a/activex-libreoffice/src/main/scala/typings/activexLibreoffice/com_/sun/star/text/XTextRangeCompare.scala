@@ -33,7 +33,7 @@ object XTextRangeCompare {
     acquire: () => Unit,
     compareRegionEnds: (XTextRange, XTextRange) => Double,
     compareRegionStarts: (XTextRange, XTextRange) => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextRangeCompare = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), compareRegionEnds = js.Any.fromFunction2(compareRegionEnds), compareRegionStarts = js.Any.fromFunction2(compareRegionStarts), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

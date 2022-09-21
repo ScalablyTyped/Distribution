@@ -14,11 +14,11 @@ trait VertexAddEventInfo
      with UpdateToolEventInfo {
   
   /**
-    * An array of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) with [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries representing the vertices that were added.
+    * An array of x,y coordinates representing the vertices added.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
     */
-  var added: js.Array[Graphic]
+  var added: js.Array[Double]
   
   /**
     * Type is always `vertex-add`.
@@ -37,7 +37,7 @@ trait VertexAddEventInfo
 object VertexAddEventInfo {
   
   inline def apply(
-    added: js.Array[Graphic],
+    added: js.Array[Double],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -50,14 +50,14 @@ object VertexAddEventInfo {
   
   extension [Self <: VertexAddEventInfo](x: Self) {
     
-    inline def setAdded(value: js.Array[Graphic]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: js.Array[Double]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    inline def setAddedVarargs(value: Graphic*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: Double*): Self = StObject.set(x, "added", js.Array(value*))
     
     inline def setType(value: `vertex-add`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setVertices(value: js.Array[VertexAddEventInfoVertices]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    inline def setVerticesVarargs(value: VertexAddEventInfoVertices*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: VertexAddEventInfoVertices*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

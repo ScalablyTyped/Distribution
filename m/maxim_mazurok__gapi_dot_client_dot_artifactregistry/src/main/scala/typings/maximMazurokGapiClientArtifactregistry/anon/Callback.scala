@@ -22,25 +22,13 @@ trait Callback extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /**
-    * An expression for filtering the results of the request. Filter rules are case insensitive. The fields eligible for filtering are: * `version` An example of using a filter: *
-    * `version="projects/p1/locations/us-central1/repositories/repo1/packages/pkg1/versions/1.0"` --> Tags that are applied to the version `1.0` in package `pkg1`.
-    */
-  var filter: js.UndefOr[String] = js.undefined
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of tags to return. Maximum page size is 10,000. */
-  var pageSize: js.UndefOr[Double] = js.undefined
-  
-  /** The next_page_token value returned from a previous list request, if any. */
-  var pageToken: js.UndefOr[String] = js.undefined
-  
-  /** The name of the parent resource whose tags will be listed. */
+  /** The name of the parent resource where the artifacts will be uploaded. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -84,10 +72,6 @@ object Callback {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
-    
-    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -95,14 +79,6 @@ object Callback {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
-    
-    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
-    
-    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
-    
-    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

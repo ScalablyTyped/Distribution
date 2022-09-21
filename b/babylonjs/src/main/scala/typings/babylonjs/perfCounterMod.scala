@@ -11,31 +11,31 @@ object perfCounterMod {
   /**
     * Creates a new counter
     */
-  class PerfCounter () extends StObject {
+  open class PerfCounter () extends StObject {
     
-    /* private */ var _average: js.Any = js.native
+    /* private */ var _average: Any = js.native
     
-    /* private */ var _current: js.Any = js.native
+    /* private */ var _current: Any = js.native
     
-    /* private */ var _fetchResult: js.Any = js.native
+    /* private */ var _fetchResult: Any = js.native
     
-    /* private */ var _lastSecAccumulated: js.Any = js.native
+    /* private */ var _lastSecAccumulated: Any = js.native
     
-    /* private */ var _lastSecAverage: js.Any = js.native
+    /* private */ var _lastSecAverage: Any = js.native
     
-    /* private */ var _lastSecTime: js.Any = js.native
+    /* private */ var _lastSecTime: Any = js.native
     
-    /* private */ var _lastSecValueCount: js.Any = js.native
+    /* private */ var _lastSecValueCount: Any = js.native
     
-    /* private */ var _max: js.Any = js.native
+    /* private */ var _max: Any = js.native
     
-    /* private */ var _min: js.Any = js.native
+    /* private */ var _min: Any = js.native
     
-    /* private */ var _startMonitoringTime: js.Any = js.native
+    /* private */ var _startMonitoringTime: Any = js.native
     
-    /* private */ var _totalAccumulated: js.Any = js.native
+    /* private */ var _totalAccumulated: Any = js.native
     
-    /* private */ var _totalValueCount: js.Any = js.native
+    /* private */ var _totalValueCount: Any = js.native
     
     /**
       * Call this method to monitor a count of something (e.g. mesh drawn in viewport count)

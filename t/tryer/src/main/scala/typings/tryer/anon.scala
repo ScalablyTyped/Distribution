@@ -1,6 +1,5 @@
 package typings.tryer
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +10,10 @@ object anon {
   trait ReadonlyOptions extends StObject {
     
     val action: js.UndefOr[
-        js.Function0[js.Promise[js.Any]] | (js.Function1[/* done */ js.Function0[Unit], js.Any])
+        js.Function0[js.Promise[Any]] | (js.Function1[/* done */ js.Function0[Unit], Any])
       ] = js.undefined
     
-    val fail: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    val fail: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
     
     val interval: js.UndefOr[Double] = js.undefined
     
@@ -35,15 +34,15 @@ object anon {
     
     extension [Self <: ReadonlyOptions](x: Self) {
       
-      inline def setAction(value: js.Function0[js.Promise[js.Any]] | (js.Function1[/* done */ js.Function0[Unit], js.Any])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: js.Function0[js.Promise[Any]] | (js.Function1[/* done */ js.Function0[Unit], Any])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      inline def setActionFunction0(value: () => js.Promise[js.Any]): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
+      inline def setActionFunction0(value: () => js.Promise[Any]): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
       
-      inline def setActionFunction1(value: /* done */ js.Function0[Unit] => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setActionFunction1(value: /* done */ js.Function0[Unit] => Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setFail(value: /* err */ Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+      inline def setFail(value: /* err */ js.Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
       
       inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
       

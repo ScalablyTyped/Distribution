@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Rating")
 @js.native
-class Rating protected ()
+open class Rating protected ()
   extends StObject
      with typings.ejWebAll.ej.Rating {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object Rating {
   /* static member */
   @JSGlobal("ej.Rating.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Rating.Precision")
   @js.native

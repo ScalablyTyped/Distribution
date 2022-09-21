@@ -9,16 +9,13 @@ Converts callback-based functions to ES6 Promises
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | es6-promisify |
-| Keywords           | promises, es6, promisify |
-| # releases         | 4 |
-| # dependents       | 568 |
-| # downloads        | 364787629 |
-| # stars            | 25 |
+| Keywords           | promise, promises, es6, promisify, es6-promisify |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.638631E7 |
+| # stars            | 494.0 |
 
 ## Links
-- [Homepage](https://github.com/digitaldesignlabs/es6-promisify#readme)
-- [Bugs](http://github.com/digitaldesignlabs/es6-promisify/issues)
-- [Repository](https://github.com/digitaldesignlabs/es6-promisify)
 - [Npm](https://www.npmjs.com/package/es6-promisify)
     
 

@@ -108,12 +108,20 @@ object mjmlReactStrings {
   inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
   sealed trait pinterest extends StObject
   inline def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
   
   @js.native
   sealed trait `pinterest-noshare` extends StObject
   inline def `pinterest-noshare`: `pinterest-noshare` = "pinterest-noshare".asInstanceOf[`pinterest-noshare`]
+  
+  @js.native
+  sealed trait presentation extends StObject
+  inline def presentation: presentation = "presentation".asInstanceOf[presentation]
   
   @js.native
   sealed trait right

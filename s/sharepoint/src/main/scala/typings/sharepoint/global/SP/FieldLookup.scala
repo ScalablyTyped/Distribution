@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.FieldLookup")
 @js.native
-class FieldLookup ()
+open class FieldLookup ()
   extends StObject
      with typings.sharepoint.SP.FieldLookup

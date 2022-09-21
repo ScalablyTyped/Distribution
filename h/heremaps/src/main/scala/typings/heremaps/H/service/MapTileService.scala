@@ -236,27 +236,27 @@ object MapTileService {
     */
   trait Info extends StObject {
     
-    var formats: StringDictionary[js.Any]
+    var formats: StringDictionary[Any]
     
-    var languages: StringDictionary[js.Any]
+    var languages: StringDictionary[Any]
     
-    var maps: StringDictionary[js.Any]
+    var maps: StringDictionary[Any]
     
-    var resolutions: StringDictionary[js.Any]
+    var resolutions: StringDictionary[Any]
     
-    var schemes: StringDictionary[js.Any]
+    var schemes: StringDictionary[Any]
     
-    var tiletypes: StringDictionary[js.Any]
+    var tiletypes: StringDictionary[Any]
   }
   object Info {
     
     inline def apply(
-      formats: StringDictionary[js.Any],
-      languages: StringDictionary[js.Any],
-      maps: StringDictionary[js.Any],
-      resolutions: StringDictionary[js.Any],
-      schemes: StringDictionary[js.Any],
-      tiletypes: StringDictionary[js.Any]
+      formats: StringDictionary[Any],
+      languages: StringDictionary[Any],
+      maps: StringDictionary[Any],
+      resolutions: StringDictionary[Any],
+      schemes: StringDictionary[Any],
+      tiletypes: StringDictionary[Any]
     ): Info = {
       val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], maps = maps.asInstanceOf[js.Any], resolutions = resolutions.asInstanceOf[js.Any], schemes = schemes.asInstanceOf[js.Any], tiletypes = tiletypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Info]
@@ -264,17 +264,17 @@ object MapTileService {
     
     extension [Self <: Info](x: Self) {
       
-      inline def setFormats(value: StringDictionary[js.Any]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: StringDictionary[Any]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      inline def setLanguages(value: StringDictionary[js.Any]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: StringDictionary[Any]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      inline def setMaps(value: StringDictionary[js.Any]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
+      inline def setMaps(value: StringDictionary[Any]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
       
-      inline def setResolutions(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+      inline def setResolutions(value: StringDictionary[Any]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
       
-      inline def setSchemes(value: StringDictionary[js.Any]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
+      inline def setSchemes(value: StringDictionary[Any]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
       
-      inline def setTiletypes(value: StringDictionary[js.Any]): Self = StObject.set(x, "tiletypes", value.asInstanceOf[js.Any])
+      inline def setTiletypes(value: StringDictionary[Any]): Self = StObject.set(x, "tiletypes", value.asInstanceOf[js.Any])
     }
   }
   

@@ -14,21 +14,21 @@ trait ObjectConstructor extends StObject {
   /**
     * Non-standard.
     */
-  def classof(value: js.Any): java.lang.String = js.native
+  def classof(value: Any): java.lang.String = js.native
   
   /**
     * Non-standard.
     */
-  def define[T](target: T, mixin: js.Any): T = js.native
+  def define[T](target: T, mixin: Any): T = js.native
   
   /**
     * Non-standard.
     */
-  def isObject(value: js.Any): Boolean = js.native
+  def isObject(value: Any): Boolean = js.native
   
   /**
     * Non-standard.
     */
   def make[T](proto: T): T = js.native
-  def make[T](proto: T, mixin: js.Any): T = js.native
+  def make[T](proto: T, mixin: Any): T = js.native
 }

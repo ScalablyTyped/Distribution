@@ -1,9 +1,5 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceMattersList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The number of matters to return in the response. Default and maximum are
-    * 100.
+    * The number of matters to return in the response. Default and maximum are 100.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
@@ -29,13 +19,12 @@ trait ParamsResourceMattersList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * If set, list only matters with that specific state. The default is
-    * listing matters of all states.
+    * If set, lists only matters with the specified state. The default lists matters of all states.
     */
   var state: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies which parts of the matter to return in response.
+    * Specifies how much information about the matter to return in response.
     */
   var view: js.UndefOr[String] = js.undefined
 }
@@ -47,10 +36,6 @@ object ParamsResourceMattersList {
   }
   
   extension [Self <: ParamsResourceMattersList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

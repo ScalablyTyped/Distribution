@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "AndFilter")
 @js.native
-class AndFilter protected ()
+open class AndFilter protected ()
   extends StObject
      with Filter {
   def this(f: js.Array[Filter]) = this()

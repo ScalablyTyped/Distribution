@@ -11,7 +11,7 @@ object matchDefaultExportNameRuleMod {
   
   @JSImport("tslint/lib/rules/matchDefaultExportNameRule", "Rule")
   @js.native
-  class Rule protected () extends TypedRule {
+  open class Rule protected () extends TypedRule {
     def this(options: IOptions) = this()
   }
   /* static members */

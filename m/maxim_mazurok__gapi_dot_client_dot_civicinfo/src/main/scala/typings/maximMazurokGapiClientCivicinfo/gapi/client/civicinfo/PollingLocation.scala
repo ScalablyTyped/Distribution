@@ -77,7 +77,7 @@ object PollingLocation {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     

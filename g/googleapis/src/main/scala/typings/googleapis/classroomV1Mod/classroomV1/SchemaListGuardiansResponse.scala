@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response when listing guardians.
-  */
 trait SchemaListGuardiansResponse extends StObject {
   
   /**
-    * Guardians on this page of results that met the criteria specified in the
-    * request.
+    * Guardians on this page of results that met the criteria specified in the request.
     */
   var guardians: js.UndefOr[js.Array[SchemaGuardian]] = js.undefined
   
   /**
-    * Token identifying the next page of results to return. If empty, no
-    * further results are available.
+    * Token identifying the next page of results to return. If empty, no further results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListGuardiansResponse {
   
@@ -34,9 +29,11 @@ object SchemaListGuardiansResponse {
     
     inline def setGuardiansUndefined: Self = StObject.set(x, "guardians", js.undefined)
     
-    inline def setGuardiansVarargs(value: SchemaGuardian*): Self = StObject.set(x, "guardians", js.Array(value :_*))
+    inline def setGuardiansVarargs(value: SchemaGuardian*): Self = StObject.set(x, "guardians", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

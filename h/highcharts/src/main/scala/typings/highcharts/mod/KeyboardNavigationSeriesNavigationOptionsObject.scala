@@ -29,6 +29,13 @@ trait KeyboardNavigationSeriesNavigationOptionsObject extends StObject {
   var pointNavigationEnabledThreshold: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Remember which point was focused
+    * even after navigating away from the series, so that when navigating back
+    * to the series you start at the last focused point.
+    */
+  var rememberPointFocus: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Skip null points when navigating
     * through points with the keyboard.
     */
@@ -50,6 +57,10 @@ object KeyboardNavigationSeriesNavigationOptionsObject {
     inline def setPointNavigationEnabledThreshold(value: Boolean | Double): Self = StObject.set(x, "pointNavigationEnabledThreshold", value.asInstanceOf[js.Any])
     
     inline def setPointNavigationEnabledThresholdUndefined: Self = StObject.set(x, "pointNavigationEnabledThreshold", js.undefined)
+    
+    inline def setRememberPointFocus(value: Boolean): Self = StObject.set(x, "rememberPointFocus", value.asInstanceOf[js.Any])
+    
+    inline def setRememberPointFocusUndefined: Self = StObject.set(x, "rememberPointFocus", js.undefined)
     
     inline def setSkipNullPoints(value: Boolean): Self = StObject.set(x, "skipNullPoints", value.asInstanceOf[js.Any])
     

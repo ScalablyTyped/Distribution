@@ -137,7 +137,7 @@ object AdId {
     
     inline def setEventTagTypesUndefined: Self = StObject.set(x, "eventTagTypes", js.undefined)
     
-    inline def setEventTagTypesVarargs(value: String*): Self = StObject.set(x, "eventTagTypes", js.Array(value :_*))
+    inline def setEventTagTypesVarargs(value: String*): Self = StObject.set(x, "eventTagTypes", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -147,7 +147,7 @@ object AdId {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

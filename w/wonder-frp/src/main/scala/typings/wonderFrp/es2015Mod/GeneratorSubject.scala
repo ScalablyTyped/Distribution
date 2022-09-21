@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "GeneratorSubject")
 @js.native
-class GeneratorSubject ()
+open class GeneratorSubject ()
   extends typings.wonderFrp.subjectGeneratorSubjectMod.GeneratorSubject
 /* static members */
 object GeneratorSubject {

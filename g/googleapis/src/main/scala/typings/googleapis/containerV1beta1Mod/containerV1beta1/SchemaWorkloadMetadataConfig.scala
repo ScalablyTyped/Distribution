@@ -4,17 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * WorkloadMetadataConfig defines the metadata configuration to expose to
-  * workloads on the node pool.
-  */
 trait SchemaWorkloadMetadataConfig extends StObject {
   
   /**
-    * NodeMetadata is the configuration for how to expose the node metadata to
-    * the workload running on the node.
+    * Mode is the configuration for how to expose metadata to workloads running on the node pool.
     */
-  var nodeMetadata: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * NodeMetadata is the configuration for how to expose metadata to the workloads running on the node.
+    */
+  var nodeMetadata: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaWorkloadMetadataConfig {
   
@@ -25,7 +25,15 @@ object SchemaWorkloadMetadataConfig {
   
   extension [Self <: SchemaWorkloadMetadataConfig](x: Self) {
     
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeNull: Self = StObject.set(x, "mode", null)
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
     inline def setNodeMetadata(value: String): Self = StObject.set(x, "nodeMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setNodeMetadataNull: Self = StObject.set(x, "nodeMetadata", null)
     
     inline def setNodeMetadataUndefined: Self = StObject.set(x, "nodeMetadata", js.undefined)
   }

@@ -17,7 +17,7 @@ trait ParameterBaseObject extends StObject {
   
   var description: js.UndefOr[String] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.undefined
+  var example: js.UndefOr[Any] = js.undefined
   
   var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.undefined
   
@@ -58,7 +58,7 @@ object ParameterBaseObject {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    inline def setExample(value: Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
     inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     

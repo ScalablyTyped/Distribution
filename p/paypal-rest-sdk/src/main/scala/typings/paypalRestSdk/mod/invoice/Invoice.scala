@@ -103,19 +103,19 @@ object Invoice {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: FileAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: FileAttachment*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setBilling_info(value: js.Array[BillingInfo]): Self = StObject.set(x, "billing_info", value.asInstanceOf[js.Any])
     
     inline def setBilling_infoUndefined: Self = StObject.set(x, "billing_info", js.undefined)
     
-    inline def setBilling_infoVarargs(value: BillingInfo*): Self = StObject.set(x, "billing_info", js.Array(value :_*))
+    inline def setBilling_infoVarargs(value: BillingInfo*): Self = StObject.set(x, "billing_info", js.Array(value*))
     
     inline def setCc_info(value: js.Array[Participant]): Self = StObject.set(x, "cc_info", value.asInstanceOf[js.Any])
     
     inline def setCc_infoUndefined: Self = StObject.set(x, "cc_info", js.undefined)
     
-    inline def setCc_infoVarargs(value: Participant*): Self = StObject.set(x, "cc_info", js.Array(value :_*))
+    inline def setCc_infoVarargs(value: Participant*): Self = StObject.set(x, "cc_info", js.Array(value*))
     
     inline def setCustom(value: CustomAmount): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
@@ -137,13 +137,13 @@ object Invoice {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: InvoiceItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: InvoiceItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setLogo_url(value: String): Self = StObject.set(x, "logo_url", value.asInstanceOf[js.Any])
     
@@ -189,7 +189,7 @@ object Invoice {
     
     inline def setPaymentsUndefined: Self = StObject.set(x, "payments", js.undefined)
     
-    inline def setPaymentsVarargs(value: PaymentDetail*): Self = StObject.set(x, "payments", js.Array(value :_*))
+    inline def setPaymentsVarargs(value: PaymentDetail*): Self = StObject.set(x, "payments", js.Array(value*))
     
     inline def setPhone(value: Phone): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
@@ -207,7 +207,7 @@ object Invoice {
     
     inline def setRefundsUndefined: Self = StObject.set(x, "refunds", js.undefined)
     
-    inline def setRefundsVarargs(value: Detail*): Self = StObject.set(x, "refunds", js.Array(value :_*))
+    inline def setRefundsVarargs(value: Detail*): Self = StObject.set(x, "refunds", js.Array(value*))
     
     inline def setShipping_cost(value: ShippingCost): Self = StObject.set(x, "shipping_cost", value.asInstanceOf[js.Any])
     

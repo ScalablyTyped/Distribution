@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTextAnnotation")
 @js.native
-class ASPxClientTextAnnotation ()
+open class ASPxClientTextAnnotation ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTextAnnotation {
   

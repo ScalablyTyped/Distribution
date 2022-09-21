@@ -6,27 +6,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Color extends StObject {
   
-  var color: js.Array[Double]
+  var color: js.UndefOr[typings.playcanvas.mod.Color] = js.undefined
   
-  var depth: Double
+  var fontName: js.UndefOr[String] = js.undefined
   
-  var flags: Double
+  var fontSize: js.UndefOr[Double] = js.undefined
+  
+  var fontWeight: js.UndefOr[String] = js.undefined
+  
+  var height: js.UndefOr[Double] = js.undefined
+  
+  var padding: js.UndefOr[Double] = js.undefined
+  
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Color {
   
-  inline def apply(color: js.Array[Double], depth: Double, flags: Double): Color = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any])
+  inline def apply(): Color = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Color]
   }
   
   extension [Self <: Color](x: Self) {
     
-    inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.playcanvas.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
-    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
+    
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -41,7 +41,7 @@ object JQueryTipsy {
       *
       * default: 'n'
       */
-    var gravity: js.UndefOr[js.Any] = js.undefined
+    var gravity: js.UndefOr[Any] = js.undefined
     
     // string or () => string
     /**
@@ -77,7 +77,7 @@ object JQueryTipsy {
       *
       * default: 'title'
       */
-    var title: js.UndefOr[js.Any] = js.undefined
+    var title: js.UndefOr[Any] = js.undefined
     
     // string or () => string
     /**
@@ -112,7 +112,7 @@ object JQueryTipsy {
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      inline def setGravity(value: js.Any): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+      inline def setGravity(value: Any): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
       inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
       
@@ -132,7 +132,7 @@ object JQueryTipsy {
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       

@@ -1,6 +1,7 @@
 
 # Scala.js typings for pvutils
 
+Typings are for version 1.1.3
 
 ## Library description:
 Common utilities for products from Peculiar Ventures
@@ -9,10 +10,10 @@ Common utilities for products from Peculiar Ventures
 | ------------------ | :-------------: |
 | Full name          | pvutils |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 2233838 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1446294.6666666667 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/PeculiarVentures/pvutils#readme)
@@ -23,7 +24,7 @@ Common utilities for products from Peculiar Ventures
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

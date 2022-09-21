@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BootboxButton extends StObject {
   
-  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -21,7 +21,7 @@ object BootboxButton {
   
   extension [Self <: BootboxButton](x: Self) {
     
-    inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     

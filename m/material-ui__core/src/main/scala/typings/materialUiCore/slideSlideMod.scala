@@ -1,50 +1,65 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
-import typings.materialUiCore.createMuiThemeMod.Theme
 import typings.materialUiCore.materialUiCoreStrings.down
 import typings.materialUiCore.materialUiCoreStrings.left
 import typings.materialUiCore.materialUiCoreStrings.right
 import typings.materialUiCore.materialUiCoreStrings.up
 import typings.materialUiCore.transitionMod.TransitionProps
-import typings.react.mod.ComponentType
+import typings.react.mod.ReactElement
+import typings.react.mod.Ref
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object slideSlideMod extends Shortcut {
+object slideSlideMod {
   
-  @JSImport("@material-ui/core/Slide/Slide", JSImport.Default)
+  @JSImport("@material-ui/core/Slide/Slide", JSImport.Namespace)
   @js.native
-  val default: ComponentType[SlideProps] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(props: SlideProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait SlideProps
     extends StObject
        with TransitionProps {
     
-    var direction: left | right | up | down
+    /**
+      * A single child content element.
+      */
+    var children: js.UndefOr[ReactElement] = js.undefined
     
-    var theme: js.UndefOr[Theme] = js.undefined
+    /**
+      * Direction the child node will enter from.
+      */
+    var direction: js.UndefOr[left | right | up | down] = js.undefined
+    
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
   }
   object SlideProps {
     
-    inline def apply(direction: left | right | up | down): SlideProps = {
-      val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
+    inline def apply(): SlideProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlideProps]
     }
     
     extension [Self <: SlideProps](x: Self) {
       
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDirection(value: left | right | up | down): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
-  
-  type _To = ComponentType[SlideProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `slideSlideMod.foo` */
-  override def _to: ComponentType[SlideProps] = default
 }

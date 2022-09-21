@@ -1,7 +1,7 @@
 
 # Scala.js typings for recurly__recurly-js
 
-Typings are for version 4.14
+Typings are for version 4.21
 
 
 

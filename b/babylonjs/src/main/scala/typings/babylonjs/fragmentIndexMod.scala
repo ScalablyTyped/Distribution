@@ -8,7 +8,7 @@ object fragmentIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "DerivativeBlock")
   @js.native
-  class DerivativeBlock protected ()
+  open class DerivativeBlock protected ()
     extends typings.babylonjs.derivativeBlockMod.DerivativeBlock {
     /**
       * Create a new DerivativeBlock
@@ -19,7 +19,7 @@ object fragmentIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "DiscardBlock")
   @js.native
-  class DiscardBlock protected ()
+  open class DiscardBlock protected ()
     extends typings.babylonjs.discardBlockMod.DiscardBlock {
     /**
       * Create a new DiscardBlock
@@ -30,7 +30,7 @@ object fragmentIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "FragCoordBlock")
   @js.native
-  class FragCoordBlock protected ()
+  open class FragCoordBlock protected ()
     extends typings.babylonjs.fragCoordBlockMod.FragCoordBlock {
     /**
       * Creates a new FragCoordBlock
@@ -41,7 +41,7 @@ object fragmentIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "FragmentOutputBlock")
   @js.native
-  class FragmentOutputBlock protected ()
+  open class FragmentOutputBlock protected ()
     extends typings.babylonjs.fragmentOutputBlockMod.FragmentOutputBlock {
     /**
       * Create a new FragmentOutputBlock
@@ -52,7 +52,7 @@ object fragmentIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "FrontFacingBlock")
   @js.native
-  class FrontFacingBlock protected ()
+  open class FrontFacingBlock protected ()
     extends typings.babylonjs.frontFacingBlockMod.FrontFacingBlock {
     /**
       * Creates a new FrontFacingBlock
@@ -61,9 +61,20 @@ object fragmentIndexMod {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "HeightToNormalBlock")
+  @js.native
+  open class HeightToNormalBlock protected ()
+    extends typings.babylonjs.heightToNormalBlockMod.HeightToNormalBlock {
+    /**
+      * Creates a new HeightToNormalBlock
+      * @param name defines the block name
+      */
+    def this(name: String) = this()
+  }
+  
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "ImageProcessingBlock")
   @js.native
-  class ImageProcessingBlock protected ()
+  open class ImageProcessingBlock protected ()
     extends typings.babylonjs.imageProcessingBlockMod.ImageProcessingBlock {
     /**
       * Create a new ImageProcessingBlock
@@ -74,7 +85,7 @@ object fragmentIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "PerturbNormalBlock")
   @js.native
-  class PerturbNormalBlock protected ()
+  open class PerturbNormalBlock protected ()
     extends typings.babylonjs.perturbNormalBlockMod.PerturbNormalBlock {
     /**
       * Create a new PerturbNormalBlock
@@ -85,10 +96,43 @@ object fragmentIndexMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "ScreenSizeBlock")
   @js.native
-  class ScreenSizeBlock protected ()
+  open class ScreenSizeBlock protected ()
     extends typings.babylonjs.screenSizeBlockMod.ScreenSizeBlock {
     /**
       * Creates a new ScreenSizeBlock
+      * @param name defines the block name
+      */
+    def this(name: String) = this()
+  }
+  
+  @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "ScreenSpaceBlock")
+  @js.native
+  open class ScreenSpaceBlock protected ()
+    extends typings.babylonjs.screenSpaceBlockMod.ScreenSpaceBlock {
+    /**
+      * Creates a new ScreenSpaceBlock
+      * @param name defines the block name
+      */
+    def this(name: String) = this()
+  }
+  
+  @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "TBNBlock")
+  @js.native
+  open class TBNBlock protected ()
+    extends typings.babylonjs.tbnblockMod.TBNBlock {
+    /**
+      * Create a new TBNBlock
+      * @param name defines the block name
+      */
+    def this(name: String) = this()
+  }
+  
+  @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "TwirlBlock")
+  @js.native
+  open class TwirlBlock protected ()
+    extends typings.babylonjs.twirlBlockMod.TwirlBlock {
+    /**
+      * Creates a new TwirlBlock
       * @param name defines the block name
       */
     def this(name: String) = this()

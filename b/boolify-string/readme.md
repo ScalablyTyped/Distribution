@@ -9,10 +9,10 @@ Check a string whether truthy or falsy.
 | ------------------ | :-------------: |
 | Full name          | boolify-string |
 | Keywords           | bool, boolean, environment, false, falsy, string, true, truthy |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 2909 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 827.3333333333334 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/sanemat/node-boolify-string)

@@ -10,10 +10,10 @@ Make a callback- or promise-based function support both promises and callbacks.
 | ------------------ | :-------------: |
 | Full name          | universalify |
 | Keywords           | callback, native, promise |
-| # releases         | 4 |
-| # dependents       | 139 |
-| # downloads        | 801071404 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8715928766666666E8 |
+| # stars            | 97.0 |
 
 ## Links
 - [Homepage](https://github.com/RyanZim/universalify#readme)

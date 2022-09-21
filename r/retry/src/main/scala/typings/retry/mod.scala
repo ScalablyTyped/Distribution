@@ -1,6 +1,5 @@
 package typings.retry
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,8 +22,8 @@ object mod {
   inline def wrap(`object`: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def wrap(`object`: js.Object, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def wrap(`object`: js.Object, options: Unit, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def wrap(`object`: js.Object, options: OperationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def wrap(`object`: js.Object, options: OperationOptions, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrap(`object`: js.Object, options: WrapOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrap(`object`: js.Object, options: WrapOptions, methods: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait AttemptTimeoutOptions extends StObject {
     
@@ -110,50 +109,7 @@ object mod {
     }
   }
   
-  trait OperationOptions
-    extends StObject
-       with TimeoutsOptions {
-    
-    /**
-      * Whether to retry forever.
-      * @default false
-      */
-    var forever: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The maximum time (in milliseconds) that the retried operation is allowed to run.
-      * @default Infinity
-      */
-    var maxRetryTime: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Whether to [unref](https://nodejs.org/api/timers.html#timers_unref) the setTimeout's.
-      * @default false
-      */
-    var unref: js.UndefOr[Boolean] = js.undefined
-  }
-  object OperationOptions {
-    
-    inline def apply(): OperationOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[OperationOptions]
-    }
-    
-    extension [Self <: OperationOptions](x: Self) {
-      
-      inline def setForever(value: Boolean): Self = StObject.set(x, "forever", value.asInstanceOf[js.Any])
-      
-      inline def setForeverUndefined: Self = StObject.set(x, "forever", js.undefined)
-      
-      inline def setMaxRetryTime(value: Double): Self = StObject.set(x, "maxRetryTime", value.asInstanceOf[js.Any])
-      
-      inline def setMaxRetryTimeUndefined: Self = StObject.set(x, "maxRetryTime", js.undefined)
-      
-      inline def setUnref(value: Boolean): Self = StObject.set(x, "unref", value.asInstanceOf[js.Any])
-      
-      inline def setUnrefUndefined: Self = StObject.set(x, "unref", js.undefined)
-    }
-  }
+  type OperationOptions = WrapOptions | js.Array[Double]
   
   @js.native
   trait RetryOperation extends StObject {
@@ -179,7 +135,7 @@ object mod {
       * The returning array has the errors ordered chronologically based on when they were passed to
       * `retryOperation.retry()`, which means the first passed error is at index zero and the last is at the last index.
       */
-    def errors(): js.Array[Error] = js.native
+    def errors(): js.Array[js.Error] = js.native
     
     /**
       * A reference to the error object that occured most frequently.
@@ -188,7 +144,7 @@ object mod {
       *
       * @return If no errors occured so far the value will be `null`.
       */
-    def mainError(): Error | Null = js.native
+    def mainError(): js.Error | Null = js.native
     
     /**
       * Resets the internal state of the operation object, so that you can call `attempt()` again as if
@@ -201,7 +157,7 @@ object mod {
       * Otherwise it returns `true`, and retries the operation after the timeout for the current attempt number.
       */
     def retry(): Boolean = js.native
-    def retry(err: Error): Boolean = js.native
+    def retry(err: js.Error): Boolean = js.native
     
     /**
       * Stops the operation being retried. Useful for aborting the operation on a fatal error etc.
@@ -231,6 +187,51 @@ object mod {
       inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
       inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+    }
+  }
+  
+  trait WrapOptions
+    extends StObject
+       with TimeoutsOptions {
+    
+    /**
+      * Whether to retry forever.
+      * @default false
+      */
+    var forever: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The maximum time (in milliseconds) that the retried operation is allowed to run.
+      * @default Infinity
+      */
+    var maxRetryTime: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Whether to [unref](https://nodejs.org/api/timers.html#timers_unref) the setTimeout's.
+      * @default false
+      */
+    var unref: js.UndefOr[Boolean] = js.undefined
+  }
+  object WrapOptions {
+    
+    inline def apply(): WrapOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WrapOptions]
+    }
+    
+    extension [Self <: WrapOptions](x: Self) {
+      
+      inline def setForever(value: Boolean): Self = StObject.set(x, "forever", value.asInstanceOf[js.Any])
+      
+      inline def setForeverUndefined: Self = StObject.set(x, "forever", js.undefined)
+      
+      inline def setMaxRetryTime(value: Double): Self = StObject.set(x, "maxRetryTime", value.asInstanceOf[js.Any])
+      
+      inline def setMaxRetryTimeUndefined: Self = StObject.set(x, "maxRetryTime", js.undefined)
+      
+      inline def setUnref(value: Boolean): Self = StObject.set(x, "unref", value.asInstanceOf[js.Any])
+      
+      inline def setUnrefUndefined: Self = StObject.set(x, "unref", js.undefined)
     }
   }
 }

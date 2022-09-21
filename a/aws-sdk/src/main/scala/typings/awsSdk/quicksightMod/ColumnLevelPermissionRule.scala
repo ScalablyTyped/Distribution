@@ -12,7 +12,7 @@ trait ColumnLevelPermissionRule extends StObject {
   var ColumnNames: js.UndefOr[ColumnNameList] = js.undefined
   
   /**
-    * An array of Amazon Resource Names (ARNs) for QuickSight users or groups.
+    * An array of Amazon Resource Names (ARNs) for Amazon QuickSight users or groups.
     */
   var Principals: js.UndefOr[PrincipalList] = js.undefined
 }
@@ -29,12 +29,12 @@ object ColumnLevelPermissionRule {
     
     inline def setColumnNamesUndefined: Self = StObject.set(x, "ColumnNames", js.undefined)
     
-    inline def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "ColumnNames", js.Array(value :_*))
+    inline def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "ColumnNames", js.Array(value*))
     
     inline def setPrincipals(value: PrincipalList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
     inline def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
     
-    inline def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "Principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "Principals", js.Array(value*))
   }
 }

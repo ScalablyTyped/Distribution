@@ -29,6 +29,6 @@ object GeometryFieldName {
     
     inline def setValueFieldNames(value: js.Array[String]): Self = StObject.set(x, "valueFieldNames", value.asInstanceOf[js.Any])
     
-    inline def setValueFieldNamesVarargs(value: String*): Self = StObject.set(x, "valueFieldNames", js.Array(value :_*))
+    inline def setValueFieldNamesVarargs(value: String*): Self = StObject.set(x, "valueFieldNames", js.Array(value*))
   }
 }

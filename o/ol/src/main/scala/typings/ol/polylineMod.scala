@@ -14,7 +14,7 @@ object polylineMod {
   
   @JSImport("ol/format/Polyline", JSImport.Default)
   @js.native
-  class default () extends Polyline {
+  open class default () extends Polyline {
     def this(opt_options: Options) = this()
   }
   

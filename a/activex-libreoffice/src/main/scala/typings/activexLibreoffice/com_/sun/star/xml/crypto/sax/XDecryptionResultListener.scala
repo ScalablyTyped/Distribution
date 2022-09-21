@@ -28,7 +28,7 @@ object XDecryptionResultListener {
   inline def apply(
     acquire: () => Unit,
     decrypted: (Double, SecurityOperationStatus) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDecryptionResultListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), decrypted = js.Any.fromFunction2(decrypted), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

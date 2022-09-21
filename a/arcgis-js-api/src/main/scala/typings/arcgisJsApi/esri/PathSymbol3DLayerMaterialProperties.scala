@@ -13,6 +13,8 @@ trait PathSymbol3DLayerMaterialProperties
   /**
     * The color of the path.
     *
+    * @default white
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#material)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
@@ -34,6 +36,6 @@ object PathSymbol3DLayerMaterialProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
   }
 }

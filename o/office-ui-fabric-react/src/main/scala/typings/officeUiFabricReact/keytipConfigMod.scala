@@ -32,7 +32,7 @@ object keytipConfigMod {
       
       inline def setKeytips(value: js.Array[IKeytipConfigItem]): Self = StObject.set(x, "keytips", value.asInstanceOf[js.Any])
       
-      inline def setKeytipsVarargs(value: IKeytipConfigItem*): Self = StObject.set(x, "keytips", js.Array(value :_*))
+      inline def setKeytipsVarargs(value: IKeytipConfigItem*): Self = StObject.set(x, "keytips", js.Array(value*))
     }
   }
   
@@ -77,7 +77,7 @@ object keytipConfigMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: IKeytipConfigItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: IKeytipConfigItem*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

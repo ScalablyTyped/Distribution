@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +12,12 @@ trait TfvcBranchRef
   /**
     * A collection of REST reference links.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Creation date of the branch.
     */
-  var createdDate: Date
+  var createdDate: js.Date
   
   /**
     * Description of the branch.
@@ -43,8 +42,8 @@ trait TfvcBranchRef
 object TfvcBranchRef {
   
   inline def apply(
-    _links: js.Any,
-    createdDate: Date,
+    _links: Any,
+    createdDate: js.Date,
     description: String,
     isDeleted: Boolean,
     owner: IdentityRef,
@@ -57,7 +56,7 @@ object TfvcBranchRef {
   
   extension [Self <: TfvcBranchRef](x: Self) {
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -67,6 +66,6 @@ object TfvcBranchRef {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

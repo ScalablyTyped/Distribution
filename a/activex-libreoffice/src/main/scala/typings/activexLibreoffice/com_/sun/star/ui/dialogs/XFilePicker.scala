@@ -87,7 +87,7 @@ object XFilePicker {
     execute: () => Double,
     getDisplayDirectory: () => String,
     getFiles: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDefaultName: String => Unit,
     setDisplayDirectory: String => Unit,

@@ -16,7 +16,7 @@ object stateBuilderMod {
   
   @JSImport("@uirouter/core/lib/state/stateBuilder", "StateBuilder")
   @js.native
-  class StateBuilder protected () extends StObject {
+  open class StateBuilder protected () extends StObject {
     def this(matcher: StateMatcher, urlMatcherFactory: UrlMatcherFactory) = this()
     
     /**
@@ -49,9 +49,9 @@ object stateBuilderMod {
     def builder(property: String, fn: BuilderFunction): js.Function = js.native
     
     /** An object that contains all the BuilderFunctions registered, key'd by the name of the State property they build */
-    /* private */ var builders: js.Any = js.native
+    /* private */ var builders: Any = js.native
     
-    /* private */ var matcher: js.Any = js.native
+    /* private */ var matcher: Any = js.native
     
     def name(state: StateObject): String = js.native
     
@@ -60,11 +60,10 @@ object stateBuilderMod {
   
   inline def resolvablesBuilder(state: StateObject): js.Array[Resolvable] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvablesBuilder")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[Resolvable]]
   
-  type BuilderFunction = js.Function2[
-    /* state */ StateObject, 
-    /* parent */ js.UndefOr[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @uirouter/core.@uirouter/core/lib/state/stateBuilder.BuilderFunction */ js.Object
-    ], 
-    js.Any
-  ]
+  @js.native
+  trait BuilderFunction extends StObject {
+    
+    def apply(state: StateObject): Any = js.native
+    def apply(state: StateObject, parent: BuilderFunction): Any = js.native
+  }
 }

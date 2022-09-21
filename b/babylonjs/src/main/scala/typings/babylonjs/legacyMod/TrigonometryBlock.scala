@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "TrigonometryBlock")
 @js.native
-class TrigonometryBlock protected ()
+open class TrigonometryBlock protected ()
   extends typings.babylonjs.indexMod.TrigonometryBlock {
   /**
     * Creates a new TrigonometryBlock

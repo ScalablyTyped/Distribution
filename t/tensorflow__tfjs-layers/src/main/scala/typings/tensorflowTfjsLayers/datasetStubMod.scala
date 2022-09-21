@@ -20,6 +20,6 @@ object datasetStubMod {
   @js.native
   abstract class LazyIterator[T] () extends StObject {
     
-    def next(): js.Promise[IteratorResult[T, js.Any]] = js.native
+    def next(): js.Promise[IteratorResult[T, Any]] = js.native
   }
 }

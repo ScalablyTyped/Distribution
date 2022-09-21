@@ -25,7 +25,7 @@ object rulerMod {
     */
   @JSImport("markdown-it/lib/ruler", JSImport.Namespace)
   @js.native
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with Ruler[T]
   
@@ -47,7 +47,7 @@ object rulerMod {
       
       inline def setAlt(value: js.Array[String]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      inline def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value :_*))
+      inline def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value*))
     }
   }
   

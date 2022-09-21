@@ -31,13 +31,13 @@ object ItemEffect {
     
     inline def setMove_changesUndefined: Self = StObject.set(x, "move_changes", js.undefined)
     
-    inline def setMove_changesVarargs(value: ItemMoveChange*): Self = StObject.set(x, "move_changes", js.Array(value :_*))
+    inline def setMove_changesVarargs(value: ItemMoveChange*): Self = StObject.set(x, "move_changes", js.Array(value*))
     
     inline def setPokemon_changes(value: js.Array[ItemPokemonChange]): Self = StObject.set(x, "pokemon_changes", value.asInstanceOf[js.Any])
     
     inline def setPokemon_changesUndefined: Self = StObject.set(x, "pokemon_changes", js.undefined)
     
-    inline def setPokemon_changesVarargs(value: ItemPokemonChange*): Self = StObject.set(x, "pokemon_changes", js.Array(value :_*))
+    inline def setPokemon_changesVarargs(value: ItemPokemonChange*): Self = StObject.set(x, "pokemon_changes", js.Array(value*))
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Automatically detect when a browser is offline
 | ------------------ | :-------------: |
 | Full name          | offline-js |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 10 |
-| # downloads        | 440629 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 66600.0 |
+| # stars            | 8671.0 |
 
 ## Links
 - [Homepage](https://github.com/HubSpot/offline#readme)

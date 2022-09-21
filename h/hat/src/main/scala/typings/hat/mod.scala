@@ -39,23 +39,23 @@ object mod extends Shortcut {
     var rack_Original: CreateRack = js.native
   }
   
-  type HatsList = StringDictionary[js.Any]
+  type HatsList = StringDictionary[Any]
   
   @js.native
   trait Rack extends StObject {
     
     def apply(): String = js.native
-    def apply(data: js.Any): String = js.native
+    def apply(data: Any): String = js.native
     
     var base: Double = js.native
     
     var bits: Double = js.native
     
-    def get(id: String): js.Any = js.native
+    def get(id: String): Any = js.native
     
     var hats: HatsList = js.native
     
-    def set(id: String, value: js.Any): Rack = js.native
+    def set(id: String, value: Any): Rack = js.native
   }
   
   type _To = Hat

@@ -9,11 +9,11 @@ trait SyntaxNode
   extends StObject
      with ISyntaxNodeOrToken {
   
-  /* private */ var _data: js.Any = js.native
+  /* private */ var _data: Any = js.native
   
-  /* private */ def computeData(): js.Any = js.native
+  /* private */ def computeData(): Any = js.native
   
-  /* private */ def data(): js.Any = js.native
+  /* private */ def data(): Any = js.native
   
   def findCompleteTokenOnLeft(position: Double): PositionedToken = js.native
   def findCompleteTokenOnLeft(position: Double, includeSkippedTokens: Boolean): PositionedToken = js.native
@@ -21,7 +21,7 @@ trait SyntaxNode
   def findToken(position: Double): PositionedToken = js.native
   def findToken(position: Double, includeSkippedTokens: Boolean): PositionedToken = js.native
   
-  /* private */ def findTokenInternal(parent: js.Any, position: js.Any, fullStart: js.Any): js.Any = js.native
+  /* private */ def findTokenInternal(parent: Any, position: Any, fullStart: Any): Any = js.native
   
   def findTokenOnLeft(position: Double): PositionedToken = js.native
   def findTokenOnLeft(position: Double, includeSkippedTokens: Boolean): PositionedToken = js.native
@@ -50,7 +50,7 @@ trait SyntaxNode
   
   def structuralEquals(node: SyntaxNode): Boolean = js.native
   
-  def toJSON(key: js.Any): js.Any = js.native
+  def toJSON(key: Any): Any = js.native
   
-  /* private */ def tryGetEndOfFileAt(position: js.Any): js.Any = js.native
+  /* private */ def tryGetEndOfFileAt(position: Any): Any = js.native
 }

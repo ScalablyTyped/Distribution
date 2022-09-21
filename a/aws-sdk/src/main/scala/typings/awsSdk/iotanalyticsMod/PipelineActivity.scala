@@ -22,12 +22,12 @@ trait PipelineActivity extends StObject {
   var datastore: js.UndefOr[DatastoreActivity] = js.undefined
   
   /**
-    * Adds data from the AWS IoT device registry to your message.
+    * Adds data from the IoT device registry to your message.
     */
   var deviceRegistryEnrich: js.UndefOr[DeviceRegistryEnrichActivity] = js.undefined
   
   /**
-    * Adds information from the AWS IoT Device Shadow service to a message.
+    * Adds information from the IoT Device Shadow service to a message.
     */
   var deviceShadowEnrich: js.UndefOr[DeviceShadowEnrichActivity] = js.undefined
   
@@ -52,7 +52,7 @@ trait PipelineActivity extends StObject {
   var removeAttributes: js.UndefOr[RemoveAttributesActivity] = js.undefined
   
   /**
-    * Creates a new message using only the specified attributes from the original message. 
+    * Used to create a new message using only the specified attributes from the original message. 
     */
   var selectAttributes: js.UndefOr[SelectAttributesActivity] = js.undefined
 }

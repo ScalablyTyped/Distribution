@@ -19,6 +19,6 @@ object USBDeviceRequestOptions {
     
     inline def setFilters(value: js.Array[USBDeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: USBDeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: USBDeviceFilter*): Self = StObject.set(x, "filters", js.Array(value*))
   }
 }

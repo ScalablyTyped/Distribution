@@ -9,7 +9,7 @@ trait Attribute extends StObject {
   /**
     * Extensions
     */
-  var extensions: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var extensions: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * e.g. challengePassword
@@ -29,7 +29,7 @@ trait Attribute extends StObject {
   /**
     * Attribute value
     */
-  var value: js.Any
+  var value: Any
   
   /**
     * Attribute value data type
@@ -38,7 +38,7 @@ trait Attribute extends StObject {
 }
 object Attribute {
   
-  inline def apply(name: String, `type`: String, value: js.Any, valueTagClass: Double): Attribute = {
+  inline def apply(name: String, `type`: String, value: Any, valueTagClass: Double): Attribute = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueTagClass = valueTagClass.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
@@ -46,11 +46,11 @@ object Attribute {
   
   extension [Self <: Attribute](x: Self) {
     
-    inline def setExtensions(value: js.Array[js.Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Any*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object Attribute {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueTagClass(value: Double): Self = StObject.set(x, "valueTagClass", value.asInstanceOf[js.Any])
   }

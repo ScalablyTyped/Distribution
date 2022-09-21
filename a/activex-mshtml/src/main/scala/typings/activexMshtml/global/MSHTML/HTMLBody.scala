@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLBody")
 @js.native
-/* private */ class HTMLBody ()
+/* private */ open class HTMLBody ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLBody

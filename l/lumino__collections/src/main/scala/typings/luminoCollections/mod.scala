@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("@lumino/collections", "BPlusTree")
   @js.native
-  class BPlusTree[T] protected ()
+  open class BPlusTree[T] protected ()
     extends typings.luminoCollections.bplustreeMod.BPlusTree[T] {
     /**
       * Construct a new B+ tree.
@@ -42,10 +42,7 @@ object mod {
   
   @JSImport("@lumino/collections", "LinkedList")
   @js.native
-  /**
-    * Construct a new linked list.
-    */
-  class LinkedList[T] ()
+  open class LinkedList[T] ()
     extends typings.luminoCollections.linkedlistMod.LinkedList[T]
   object LinkedList {
     
@@ -63,7 +60,7 @@ object mod {
       *
       * @param node - The first node in the list.
       */
-    class ForwardNodeIterator[T] ()
+    open class ForwardNodeIterator[T] ()
       extends typings.luminoCollections.linkedlistMod.LinkedList.ForwardNodeIterator[T] {
       def this(node: INode[T]) = this()
     }
@@ -78,7 +75,7 @@ object mod {
       *
       * @param node - The first node in the list.
       */
-    class ForwardValueIterator[T] ()
+    open class ForwardValueIterator[T] ()
       extends typings.luminoCollections.linkedlistMod.LinkedList.ForwardValueIterator[T] {
       def this(node: INode[T]) = this()
     }
@@ -93,7 +90,7 @@ object mod {
       *
       * @param node - The last node in the list.
       */
-    class RetroNodeIterator[T] ()
+    open class RetroNodeIterator[T] ()
       extends typings.luminoCollections.linkedlistMod.LinkedList.RetroNodeIterator[T] {
       def this(node: INode[T]) = this()
     }
@@ -108,7 +105,7 @@ object mod {
       *
       * @param node - The last node in the list.
       */
-    class RetroValueIterator[T] ()
+    open class RetroValueIterator[T] ()
       extends typings.luminoCollections.linkedlistMod.LinkedList.RetroValueIterator[T] {
       def this(node: INode[T]) = this()
     }

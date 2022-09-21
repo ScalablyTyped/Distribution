@@ -15,7 +15,7 @@ trait ReadonlyMap[K, V] extends StObject {
   def forEach(callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ ReadonlyMap[K, V], Unit]): Unit = js.native
   def forEach(
     callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ ReadonlyMap[K, V], Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
   
   def get(key: K): js.UndefOr[V] = js.native

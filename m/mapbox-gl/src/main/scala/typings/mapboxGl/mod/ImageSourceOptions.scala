@@ -23,7 +23,7 @@ object ImageSourceOptions {
     
     inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    inline def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,7 @@
 package typings.cuid
 
 import org.scalablytyped.runtime.Shortcut
+import typings.cuid.anon.IsCuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,18 +10,10 @@ object mod extends Shortcut {
   
   @JSImport("cuid", JSImport.Namespace)
   @js.native
-  val ^ : CUID = js.native
+  val ^ : js.Function0[String] & IsCuid = js.native
   
-  @js.native
-  trait CUID extends StObject {
-    
-    def apply(): String = js.native
-    
-    def slug(): String = js.native
-  }
-  
-  type _To = CUID
+  type _To = js.Function0[String] & IsCuid
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: CUID = ^
+  override def _to: js.Function0[String] & IsCuid = ^
 }

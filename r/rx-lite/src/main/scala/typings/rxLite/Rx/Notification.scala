@@ -10,20 +10,17 @@ trait Notification[T] extends StObject {
   
   def accept(observer: IObserver[T]): Unit = js.native
   def accept[TResult](onNext: js.Function1[/* value */ T, TResult]): TResult = js.native
+  def accept[TResult](onNext: js.Function1[/* value */ T, TResult], onError: js.Function1[/* exception */ Any, TResult]): TResult = js.native
   def accept[TResult](
     onNext: js.Function1[/* value */ T, TResult],
-    onError: js.Function1[/* exception */ js.Any, TResult]
-  ): TResult = js.native
-  def accept[TResult](
-    onNext: js.Function1[/* value */ T, TResult],
-    onError: js.Function1[/* exception */ js.Any, TResult],
+    onError: js.Function1[/* exception */ Any, TResult],
     onCompleted: js.Function0[TResult]
   ): TResult = js.native
   def accept[TResult](onNext: js.Function1[/* value */ T, TResult], onError: Unit, onCompleted: js.Function0[TResult]): TResult = js.native
   
   def equals(other: Notification[T]): Boolean = js.native
   
-  var exception: js.Any = js.native
+  var exception: Any = js.native
   
   var hasValue: Boolean = js.native
   

@@ -1,6 +1,12 @@
 package typings.naverWhale.whale
 
 import typings.chrome.chrome.events.Event
+import typings.naverWhale.naverWhaleStrings.cursive
+import typings.naverWhale.naverWhaleStrings.fantasy
+import typings.naverWhale.naverWhaleStrings.fixed
+import typings.naverWhale.naverWhaleStrings.sansserif
+import typings.naverWhale.naverWhaleStrings.serif
+import typings.naverWhale.naverWhaleStrings.standard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,21 +54,21 @@ object fontSettings {
   trait FontDetails extends StObject {
     
     /** The generic font family for the font. */
-    var genericFamily: String
+    var genericFamily: cursive | fantasy | fixed | sansserif | serif | standard
     
     /** Optional. The script for the font. If omitted, the global script font setting is affected.  */
     var script: js.UndefOr[String] = js.undefined
   }
   object FontDetails {
     
-    inline def apply(genericFamily: String): FontDetails = {
+    inline def apply(genericFamily: cursive | fantasy | fixed | sansserif | serif | standard): FontDetails = {
       val __obj = js.Dynamic.literal(genericFamily = genericFamily.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontDetails]
     }
     
     extension [Self <: FontDetails](x: Self) {
       
-      inline def setGenericFamily(value: String): Self = StObject.set(x, "genericFamily", value.asInstanceOf[js.Any])
+      inline def setGenericFamily(value: cursive | fantasy | fixed | sansserif | serif | standard): Self = StObject.set(x, "genericFamily", value.asInstanceOf[js.Any])
       
       inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
@@ -187,7 +193,10 @@ object fontSettings {
   }
   object SetFontDetails {
     
-    inline def apply(fontId: String, genericFamily: String): SetFontDetails = {
+    inline def apply(
+      fontId: String,
+      genericFamily: typings.chrome.chromeStrings.cursive | typings.chrome.chromeStrings.fantasy | typings.chrome.chromeStrings.fixed | typings.chrome.chromeStrings.sansserif | typings.chrome.chromeStrings.serif | typings.chrome.chromeStrings.standard
+    ): SetFontDetails = {
       val __obj = js.Dynamic.literal(fontId = fontId.asInstanceOf[js.Any], genericFamily = genericFamily.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetFontDetails]
     }

@@ -1,21 +1,21 @@
 package typings.rxjs
 
-import typings.rxjs.typesMod.ObservableInput
-import typings.rxjs.typesMod.ObservedValueOf
-import typings.rxjs.typesMod.OperatorFunction
+import typings.rxjs.internalTypesMod.ObservableInput
+import typings.rxjs.internalTypesMod.ObservedValueOf
+import typings.rxjs.internalTypesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object switchMapMod {
   
-  @JSImport("rxjs/internal/operators/switchMap", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/operators/switchMap", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def switchMap[T, O /* <: ObservableInput[js.Any] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchMap")(project.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
-  inline def switchMap[T, O /* <: ObservableInput[js.Any] */](project: js.Function2[/* value */ T, /* index */ Double, O], resultSelector: Unit): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchMap")(project.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
-  inline def switchMap[T, R, O /* <: ObservableInput[js.Any] */](
+  inline def switchMap[T, O /* <: ObservableInput[Any] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchMap")(project.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  inline def switchMap[T, O /* <: ObservableInput[Any] */](project: js.Function2[/* value */ T, /* index */ Double, O], resultSelector: Unit): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchMap")(project.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  inline def switchMap[T, R, O /* <: ObservableInput[Any] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
     resultSelector: js.Function4[
       /* outerValue */ T, 

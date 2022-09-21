@@ -30,6 +30,8 @@ trait Popup
   /**
     * Position of the popup in relation to the selected feature.
     *
+    * @default auto
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#alignment)
     */
   var alignment: auto | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right` | js.Function = js.native
@@ -37,12 +39,16 @@ trait Popup
   /**
     * This closes the popup when the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) camera or [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) changes.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#autoCloseEnabled)
     */
   var autoCloseEnabled: Boolean = js.native
   
   /**
     * This property indicates to the `Popup` that it needs to allow or disallow the click event propagation.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#autoOpenEnabled)
     */
@@ -53,24 +59,26 @@ trait Popup
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#blur)
     */
-  def blur(): Unit = js.native
+  def blur(): scala.Unit = js.native
   
   /**
     * Removes [promises](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#promises), [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#features), [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#content), [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#title) and [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#location) from the Popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#clear)
     */
-  def clear(): Unit = js.native
+  def clear(): scala.Unit = js.native
   
   /**
     * Closes the popup by setting its [visible](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#visible) property to `false`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#close)
     */
-  def close(): Unit = js.native
+  def close(): scala.Unit = js.native
   
   /**
     * Indicates whether to enable collapse functionality for the popup.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#collapseEnabled)
     */
@@ -78,6 +86,8 @@ trait Popup
   
   /**
     * Indicates whether the popup displays its content.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#collapsed)
     */
@@ -100,12 +110,16 @@ trait Popup
   /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled)
     */
   var defaultPopupTemplateEnabled: Boolean = js.native
   
   /**
     * Indicates whether the placement of the popup is docked to the side of the view.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockEnabled)
     */
@@ -121,16 +135,11 @@ trait Popup
   /**
     * The number of selected [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#features) available to the popup.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#featureCount)
     */
   val featureCount: Double = js.native
-  
-  /**
-    * Shows pagination for the popup if available.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#featureNavigationEnabled)
-    */
-  var featureNavigationEnabled: Boolean = js.native
   
   /**
     * An array of features associated with the popup.
@@ -152,10 +161,21 @@ trait Popup
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#focus)
     */
-  def focus(): Unit = js.native
+  def focus(): scala.Unit = js.native
+  
+  /**
+    * Indicates the heading level to use for the [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#title) of the popup.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
   
   /**
     * Highlight the selected popup feature using the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions) set on the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions) set on the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#highlightEnabled)
     */
@@ -171,9 +191,11 @@ trait Popup
   /**
     * Defines the maximum icons displayed at one time in the action area.
     *
+    * @default 3
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#maxInlineActions)
     */
-  var maxInlineActions: Double | js.Any = js.native
+  var maxInlineActions: Double | Any = js.native
   
   /**
     * Selects the feature at the next index in relation to the selected feature.
@@ -190,8 +212,8 @@ trait Popup
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  def open(): Unit = js.native
-  def open(options: PopupOpenOptions): Unit = js.native
+  def open(): scala.Unit = js.native
+  def open(options: PopupOpenOptions): scala.Unit = js.native
   
   /**
     * Selects the feature at the previous index in relation to the selected feature.
@@ -205,14 +227,14 @@ trait Popup
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#promises)
     */
-  var promises: js.Array[js.Promise[js.Any]] = js.native
+  var promises: js.Array[js.Promise[Any]] = js.native
   
   /**
     * Positions the popup on the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#reposition)
     */
-  def reposition(): Unit = js.native
+  def reposition(): scala.Unit = js.native
   
   /**
     * The selected feature accessed by the popup.
@@ -254,7 +276,7 @@ trait Popup
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#triggerAction)
     */
-  def triggerAction(actionIndex: Double): Unit = js.native
+  def triggerAction(actionIndex: Double): scala.Unit = js.native
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
@@ -269,13 +291,6 @@ trait Popup
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#viewModel)
     */
   var viewModel: PopupViewModel = js.native
-  
-  /**
-    * Indicates whether the popup is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#visible)
-    */
-  var visible: Boolean = js.native
   
   /**
     * The visible elements that are displayed within the widget.

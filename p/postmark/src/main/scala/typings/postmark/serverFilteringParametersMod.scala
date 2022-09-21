@@ -9,7 +9,7 @@ object serverFilteringParametersMod {
   
   @JSImport("postmark/dist/client/models/server/ServerFilteringParameters", "ServerFilteringParameters")
   @js.native
-  class ServerFilteringParameters () extends FilteringParameters {
+  open class ServerFilteringParameters () extends FilteringParameters {
     def this(count: Double) = this()
     def this(count: Double, offset: Double) = this()
     def this(count: Unit, offset: Double) = this()

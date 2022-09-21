@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Coordinates")
 @js.native
-class Coordinates () extends StObject {
+open class Coordinates () extends StObject {
   
   /**
     * The latitude of the coordinate expressed in degrees.

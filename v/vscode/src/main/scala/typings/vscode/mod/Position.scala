@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "Position")
 @js.native
-class Position protected () extends StObject {
+open class Position protected () extends StObject {
   /**
     * @param line A zero-based line value.
     * @param character A zero-based character value.
@@ -104,8 +104,8 @@ class Position protected () extends StObject {
   /**
     * Create a new position derived from this position.
     *
-    * @param line Value that should be used as line value, default is the [existing value](#Position.line)
-    * @param character Value that should be used as character value, default is the [existing value](#Position.character)
+    * @param line Value that should be used as line value, default is the {@link Position.line existing value}
+    * @param character Value that should be used as character value, default is the {@link Position.character existing value}
     * @return A position where line and character are replaced by the given values.
     */
   def `with`(): Position = js.native

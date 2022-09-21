@@ -29,5 +29,5 @@ abstract class EmailMailboxChangeReader ()
     * @return A batch of changes.
     */
   /* CompleteClass */
-  override def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  override def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
 }

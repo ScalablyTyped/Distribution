@@ -17,5 +17,5 @@ trait MosaicRuleConstructor
 Instantiable0[MosaicRule]
      with Instantiable1[/* properties */ MosaicRuleProperties, MosaicRule] {
   
-  def fromJSON(json: js.Any): MosaicRule = js.native
+  def fromJSON(json: Any): MosaicRule = js.native
 }

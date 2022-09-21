@@ -22,6 +22,11 @@ trait NetworkInterface extends StObject {
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
+    * Indicates whether a network interface with an IPv6 address is unreachable from the public internet. If the value is true, inbound traffic from the internet is dropped and you cannot assign an elastic IP address to the network interface. The network interface is reachable from peered VPCs and resources connected through a transit gateway, including on-premises networks.
+    */
+  var DenyAllIgwTraffic: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * A description.
     */
   var Description: js.UndefOr[String] = js.undefined
@@ -37,9 +42,29 @@ trait NetworkInterface extends StObject {
   var InterfaceType: js.UndefOr[NetworkInterfaceType] = js.undefined
   
   /**
+    * The IPv4 prefixes that are assigned to the network interface.
+    */
+  var Ipv4Prefixes: js.UndefOr[Ipv4PrefixesList] = js.undefined
+  
+  /**
+    * The IPv6 globally unique address associated with the network interface.
+    */
+  var Ipv6Address: js.UndefOr[String] = js.undefined
+  
+  /**
     * The IPv6 addresses associated with the network interface.
     */
   var Ipv6Addresses: js.UndefOr[NetworkInterfaceIpv6AddressesList] = js.undefined
+  
+  /**
+    * Indicates whether this is an IPv6 only network interface.
+    */
+  var Ipv6Native: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The IPv6 prefixes that are assigned to the network interface.
+    */
+  var Ipv6Prefixes: js.UndefOr[Ipv6PrefixesList] = js.undefined
   
   /**
     * The MAC address.
@@ -57,7 +82,7 @@ trait NetworkInterface extends StObject {
   var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account ID of the owner of the network interface.
+    * The Amazon Web Services account ID of the owner of the network interface.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -77,17 +102,17 @@ trait NetworkInterface extends StObject {
   var PrivateIpAddresses: js.UndefOr[NetworkInterfacePrivateIpAddressList] = js.undefined
   
   /**
-    * The ID of the entity that launched the instance on your behalf (for example, AWS Management Console or Auto Scaling).
+    * The alias or Amazon Web Services account ID of the principal or service that created the network interface.
     */
   var RequesterId: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the network interface is being managed by AWS.
+    * Indicates whether the network interface is being managed by Amazon Web Services.
     */
   var RequesterManaged: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether traffic to or from the instance is validated.
+    * Indicates whether source/destination checking is enabled.
     */
   var SourceDestCheck: js.UndefOr[Boolean] = js.undefined
   
@@ -132,6 +157,10 @@ object NetworkInterface {
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
+    inline def setDenyAllIgwTraffic(value: Boolean): Self = StObject.set(x, "DenyAllIgwTraffic", value.asInstanceOf[js.Any])
+    
+    inline def setDenyAllIgwTrafficUndefined: Self = StObject.set(x, "DenyAllIgwTraffic", js.undefined)
+    
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
@@ -140,17 +169,37 @@ object NetworkInterface {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setInterfaceType(value: NetworkInterfaceType): Self = StObject.set(x, "InterfaceType", value.asInstanceOf[js.Any])
     
     inline def setInterfaceTypeUndefined: Self = StObject.set(x, "InterfaceType", js.undefined)
     
+    inline def setIpv4Prefixes(value: Ipv4PrefixesList): Self = StObject.set(x, "Ipv4Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setIpv4PrefixesUndefined: Self = StObject.set(x, "Ipv4Prefixes", js.undefined)
+    
+    inline def setIpv4PrefixesVarargs(value: Ipv4PrefixSpecification*): Self = StObject.set(x, "Ipv4Prefixes", js.Array(value*))
+    
+    inline def setIpv6Address(value: String): Self = StObject.set(x, "Ipv6Address", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6AddressUndefined: Self = StObject.set(x, "Ipv6Address", js.undefined)
+    
     inline def setIpv6Addresses(value: NetworkInterfaceIpv6AddressesList): Self = StObject.set(x, "Ipv6Addresses", value.asInstanceOf[js.Any])
     
     inline def setIpv6AddressesUndefined: Self = StObject.set(x, "Ipv6Addresses", js.undefined)
     
-    inline def setIpv6AddressesVarargs(value: NetworkInterfaceIpv6Address*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value :_*))
+    inline def setIpv6AddressesVarargs(value: NetworkInterfaceIpv6Address*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value*))
+    
+    inline def setIpv6Native(value: Boolean): Self = StObject.set(x, "Ipv6Native", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6NativeUndefined: Self = StObject.set(x, "Ipv6Native", js.undefined)
+    
+    inline def setIpv6Prefixes(value: Ipv6PrefixesList): Self = StObject.set(x, "Ipv6Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6PrefixesUndefined: Self = StObject.set(x, "Ipv6Prefixes", js.undefined)
+    
+    inline def setIpv6PrefixesVarargs(value: Ipv6PrefixSpecification*): Self = StObject.set(x, "Ipv6Prefixes", js.Array(value*))
     
     inline def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
     
@@ -180,7 +229,7 @@ object NetworkInterface {
     
     inline def setPrivateIpAddressesUndefined: Self = StObject.set(x, "PrivateIpAddresses", js.undefined)
     
-    inline def setPrivateIpAddressesVarargs(value: NetworkInterfacePrivateIpAddress*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value :_*))
+    inline def setPrivateIpAddressesVarargs(value: NetworkInterfacePrivateIpAddress*): Self = StObject.set(x, "PrivateIpAddresses", js.Array(value*))
     
     inline def setRequesterId(value: String): Self = StObject.set(x, "RequesterId", value.asInstanceOf[js.Any])
     
@@ -206,7 +255,7 @@ object NetworkInterface {
     
     inline def setTagSetUndefined: Self = StObject.set(x, "TagSet", js.undefined)
     
-    inline def setTagSetVarargs(value: Tag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
+    inline def setTagSetVarargs(value: Tag*): Self = StObject.set(x, "TagSet", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

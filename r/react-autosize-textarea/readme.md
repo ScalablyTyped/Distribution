@@ -10,10 +10,10 @@ replacement for built-in textarea which auto resizes itself
 | ------------------ | :-------------: |
 | Full name          | react-autosize-textarea |
 | Keywords           | react, react-component, textarea, autosize, resize, height, growing, size |
-| # releases         | 3 |
-| # dependents       | 97 |
-| # downloads        | 4888424 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 813701.0 |
+| # stars            | 486.0 |
 
 ## Links
 - [Homepage](https://github.com/buildo/react-autosize-textarea)

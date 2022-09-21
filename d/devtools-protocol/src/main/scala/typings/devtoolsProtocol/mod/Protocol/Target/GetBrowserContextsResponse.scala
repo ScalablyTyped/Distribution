@@ -23,6 +23,6 @@ object GetBrowserContextsResponse {
     
     inline def setBrowserContextIds(value: js.Array[BrowserContextID]): Self = StObject.set(x, "browserContextIds", value.asInstanceOf[js.Any])
     
-    inline def setBrowserContextIdsVarargs(value: BrowserContextID*): Self = StObject.set(x, "browserContextIds", js.Array(value :_*))
+    inline def setBrowserContextIdsVarargs(value: BrowserContextID*): Self = StObject.set(x, "browserContextIds", js.Array(value*))
   }
 }

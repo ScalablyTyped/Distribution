@@ -183,13 +183,13 @@ object ICircleOptions {
     
     inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
-    inline def setStrokeColorVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "strokeColor", js.Array(value :_*))
+    inline def setStrokeColorVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "strokeColor", js.Array(value*))
     
     inline def setStrokeOpacity(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
-    inline def setStrokeOpacityVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "strokeOpacity", js.Array(value :_*))
+    inline def setStrokeOpacityVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "strokeOpacity", js.Array(value*))
     
     inline def setStrokeStyle(
       value: (js.Array[(js.Array[js.Array[String] | js.Object]) | js.Object | String]) | String | js.Object
@@ -197,13 +197,13 @@ object ICircleOptions {
     
     inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
     
-    inline def setStrokeStyleVarargs(value: ((js.Array[js.Array[String] | js.Object]) | js.Object | String)*): Self = StObject.set(x, "strokeStyle", js.Array(value :_*))
+    inline def setStrokeStyleVarargs(value: ((js.Array[js.Array[String] | js.Object]) | js.Object | String)*): Self = StObject.set(x, "strokeStyle", js.Array(value*))
     
     inline def setStrokeWidth(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
-    inline def setStrokeWidthVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "strokeWidth", js.Array(value :_*))
+    inline def setStrokeWidthVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "strokeWidth", js.Array(value*))
     
     inline def setSyncOverlayInit(value: Boolean): Self = StObject.set(x, "syncOverlayInit", value.asInstanceOf[js.Any])
     

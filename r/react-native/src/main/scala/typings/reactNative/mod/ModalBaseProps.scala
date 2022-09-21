@@ -24,15 +24,16 @@ trait ModalBaseProps extends StObject {
   var animationType: js.UndefOr[none | slide | fade] = js.undefined
   
   /**
-    * The `onRequestClose` prop allows passing a function that will be called once the modal has been dismissed.
-    * _On the Android platform, this is a required function._
+    * The `onRequestClose` callback is called when the user taps the hardware back button on Android or the menu button on Apple TV.
+    *
+    * This is required on Apple TV and Android.
     */
-  var onRequestClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onRequestClose: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]] = js.undefined
   
   /**
     * The `onShow` prop allows passing a function that will be called once the modal has been shown.
     */
-  var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[js.Any], Unit]] = js.undefined
+  var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]] = js.undefined
   
   /**
     * The `transparent` prop determines whether your modal will fill the entire view.
@@ -62,11 +63,11 @@ object ModalBaseProps {
     
     inline def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
     
-    inline def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
+    inline def setOnRequestClose(value: /* event */ NativeSyntheticEvent[Any] => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
     
     inline def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
     
-    inline def setOnShow(value: /* event */ NativeSyntheticEvent[js.Any] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    inline def setOnShow(value: /* event */ NativeSyntheticEvent[Any] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     

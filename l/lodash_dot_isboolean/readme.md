@@ -10,10 +10,10 @@ The lodash method `_.isBoolean` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isboolean |
 | Keywords           | lodash-modularized, isboolean |
-| # releases         | 0 |
-| # dependents       | 80 |
-| # downloads        | 161792508 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.7698289666666664E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

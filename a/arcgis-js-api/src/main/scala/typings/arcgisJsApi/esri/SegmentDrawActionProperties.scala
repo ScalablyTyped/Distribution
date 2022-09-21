@@ -13,6 +13,8 @@ trait SegmentDrawActionProperties
   /**
     * The drawing mode.
     *
+    * @default freehand
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#mode)
     */
   var mode: js.UndefOr[freehand | click] = js.undefined

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceInformationStringFilter extends StObject {
   
   /**
-    * The filter key name to describe your instances. For example: "InstanceIds"|"AgentVersion"|"PingStatus"|"PlatformTypes"|"ActivationIds"|"IamRole"|"ResourceType"|"AssociationStatus"|"Tag Key"
+    * The filter key name to describe your managed nodes. For example: "InstanceIds" | "AgentVersion" | "PingStatus" | "PlatformTypes" | "ActivationIds" | "IamRole" | "ResourceType" | "AssociationStatus" | "tag-key" | "tag:{keyname}    Tag Key isn't a valid filter. You must specify either tag-key or tag:{keyname} and a string. Here are some valid examples: tag-key, tag:123, tag:al!, tag:Windows. Here are some invalid examples: tag-keys, Tag Key, tag:, tagKey, abc:keyname. 
     */
   var Key: InstanceInformationStringFilterKey
   
@@ -29,6 +29,6 @@ object InstanceInformationStringFilter {
     
     inline def setValues(value: InstanceInformationFilterValueSet): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: InstanceInformationFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: InstanceInformationFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

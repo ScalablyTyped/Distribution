@@ -3,7 +3,6 @@ package typings.awsSdkClientCognitoIdentityBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientCognitoIdentityBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesGetOpenIdTokenInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -44,7 +43,7 @@ object typesGetOpenIdTokenInputMod {
     /**
       * <p>A set of optional name-value pairs that map provider names to provider tokens. When using graph.facebook.com and www.amazon.com, supply the access_token returned from the provider's authflow. For accounts.google.com, an Amazon Cognito Identity Provider, or any other OpenId Connect provider, always include the <code>id_token</code>.</p>
       */
-    var Logins: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Logins: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
   }
   object GetOpenIdTokenInput {
     
@@ -60,7 +59,7 @@ object typesGetOpenIdTokenInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -71,7 +70,7 @@ object typesGetOpenIdTokenInputMod {
       
       inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
       
-      inline def setLogins(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+      inline def setLogins(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
       
       inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
     }

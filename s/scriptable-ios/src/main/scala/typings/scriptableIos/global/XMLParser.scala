@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("XMLParser")
 @js.native
-class XMLParser protected ()
+open class XMLParser protected ()
   extends StObject
      with typings.scriptableIos.XMLParser {
   /**
@@ -41,7 +41,7 @@ class XMLParser protected ()
     * @see https://docs.scriptable.app/xmlparser/#didendelement
     */
   /* CompleteClass */
-  override def didEndElement(arg0: String): Unit = js.native
+  override def didEndElement(name: String): Unit = js.native
   
   /**
     * _Function called when the parser begins parsing a document._
@@ -70,7 +70,7 @@ class XMLParser protected ()
     * @see https://docs.scriptable.app/xmlparser/#foundcharacters
     */
   /* CompleteClass */
-  override def foundCharacters(arg0: String): Unit = js.native
+  override def foundCharacters(str: String): Unit = js.native
   
   /**
     * _Starts parsing._
@@ -88,7 +88,7 @@ class XMLParser protected ()
     * @see https://docs.scriptable.app/xmlparser/#parseerroroccurred
     */
   /* CompleteClass */
-  override def parseErrorOccurred(arg0: String): Unit = js.native
+  override def parseErrorOccurred(error: String): Unit = js.native
   
   /**
     * _XML string to be parsed._

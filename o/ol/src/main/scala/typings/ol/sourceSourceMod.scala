@@ -50,7 +50,7 @@ object sourceSourceMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       

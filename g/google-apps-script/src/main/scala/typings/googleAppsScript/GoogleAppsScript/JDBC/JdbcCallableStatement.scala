@@ -103,8 +103,8 @@ trait JdbcCallableStatement extends StObject {
   def getNString(parameterIndex: Integer): String = js.native
   def getNString(parameterName: String): String = js.native
   
-  def getObject(parameterIndex: Integer): js.Any = js.native
-  def getObject(parameterName: String): js.Any = js.native
+  def getObject(parameterIndex: Integer): Any = js.native
+  def getObject(parameterName: String): Any = js.native
   
   def getParameterMetaData(): JdbcParameterMetaData = js.native
   
@@ -221,12 +221,12 @@ trait JdbcCallableStatement extends StObject {
   def setNull(parameterName: String, sqlType: Integer): Unit = js.native
   def setNull(parameterName: String, sqlType: Integer, typeName: String): Unit = js.native
   
-  def setObject(index: Integer, x: js.Any): Unit = js.native
-  def setObject(parameterIndex: Integer, x: js.Any, targetSqlType: Integer): Unit = js.native
-  def setObject(parameterIndex: Integer, x: js.Any, targetSqlType: Integer, scaleOrLength: Integer): Unit = js.native
-  def setObject(parameterName: String, x: js.Any): Unit = js.native
-  def setObject(parameterName: String, x: js.Any, targetSqlType: Integer): Unit = js.native
-  def setObject(parameterName: String, x: js.Any, targetSqlType: Integer, scale: Integer): Unit = js.native
+  def setObject(index: Integer, x: Any): Unit = js.native
+  def setObject(parameterIndex: Integer, x: Any, targetSqlType: Integer): Unit = js.native
+  def setObject(parameterIndex: Integer, x: Any, targetSqlType: Integer, scaleOrLength: Integer): Unit = js.native
+  def setObject(parameterName: String, x: Any): Unit = js.native
+  def setObject(parameterName: String, x: Any, targetSqlType: Integer): Unit = js.native
+  def setObject(parameterName: String, x: Any, targetSqlType: Integer, scale: Integer): Unit = js.native
   
   def setPoolable(poolable: Boolean): Unit = js.native
   

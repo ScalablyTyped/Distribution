@@ -11,14 +11,11 @@ A pure JavaScript XML-RPC client and server.
 | Full name          | xmlrpc |
 | Keywords           | xml-rpc, xmlrpc, xml, rpc |
 | # releases         | 0 |
-| # dependents       | 150 |
-| # downloads        | 1198105 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 166226.66666666666 |
+| # stars            | 289.0 |
 
 ## Links
-- [Homepage](https://github.com/baalexander/node-xmlrpc)
-- [Bugs](https://github.com/baalexander/node-xmlrpc/issues)
-- [Repository](https://github.com/baalexander/node-xmlrpc)
 - [Npm](https://www.npmjs.com/package/xmlrpc)
     
 

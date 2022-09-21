@@ -10,10 +10,10 @@ Ethereum Style Identicons for React
 | ------------------ | :-------------: |
 | Full name          | react-blockies |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 92821 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 69900.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/stephensprinkle/react-blockies#readme)

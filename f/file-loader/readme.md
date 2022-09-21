@@ -1,7 +1,7 @@
 
 # Scala.js typings for file-loader
 
-Typings are for version 4.2
+Typings are for version 5.0
 
 ## Library description:
 A file loader module for webpack
@@ -10,10 +10,10 @@ A file loader module for webpack
 | ------------------ | :-------------: |
 | Full name          | file-loader |
 | Keywords           | webpack |
-| # releases         | 15 |
-| # dependents       | 8317 |
-| # downloads        | 455268028 |
-| # stars            | 64 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 5.8831103333333336E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack-contrib/file-loader)

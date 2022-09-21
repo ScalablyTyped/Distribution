@@ -57,7 +57,7 @@ object ListPartsResult {
     
     inline def setParts(value: js.Array[ObjectPart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    inline def setPartsVarargs(value: ObjectPart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: ObjectPart*): Self = StObject.set(x, "parts", js.Array(value*))
     
     inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     

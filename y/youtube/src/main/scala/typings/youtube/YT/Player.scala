@@ -15,24 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Player extends StObject {
   
-  @JSName("addEventListener")
-  def addEventListener_onApiChange[TEvent /* <: PlayerEvent */](eventName: onApiChange, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_onError[TEvent /* <: PlayerEvent */](eventName: onError, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_onPlaybackQualityChange[TEvent /* <: PlayerEvent */](eventName: onPlaybackQualityChange, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_onPlaybackRateChange[TEvent /* <: PlayerEvent */](eventName: onPlaybackRateChange, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
   /**
     * Adds an event listener for the specified event.
     *
     * @param eventName   Name of the event.
     * @param listener   Handler for the event.
     */
-  @JSName("addEventListener")
-  def addEventListener_onReady[TEvent /* <: PlayerEvent */](eventName: onReady, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_onStateChange[TEvent /* <: PlayerEvent */](eventName: onStateChange, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
+  def addEventListener[TEvent /* <: PlayerEvent */](
+    eventName: onReady | onStateChange | onPlaybackQualityChange | onPlaybackRateChange | onError | onApiChange,
+    listener: js.Function1[/* event */ TEvent, Unit]
+  ): Unit = js.native
   
   /**
     * Queues a playlist of videos.
@@ -175,6 +167,12 @@ trait Player extends StObject {
     * @returns Index of the playlist video that is currently playing.
     */
   def getPlaylistIndex(): Double = js.native
+  
+  /**
+    * @returns The spherical video config object, with information about the viewport
+    * headings and zoom level.
+    */
+  def getSphericalProperties(): SphericalProperties = js.native
   
   /**
     * @returns Embed code for the currently loaded/playing video.
@@ -320,24 +318,16 @@ trait Player extends StObject {
     */
   def previousVideo(): Unit = js.native
   
-  @JSName("removeEventListener")
-  def removeEventListener_onApiChange[TEvent /* <: PlayerEvent */](eventName: onApiChange, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_onError[TEvent /* <: PlayerEvent */](eventName: onError, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_onPlaybackQualityChange[TEvent /* <: PlayerEvent */](eventName: onPlaybackQualityChange, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_onPlaybackRateChange[TEvent /* <: PlayerEvent */](eventName: onPlaybackRateChange, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
   /**
     * Remove an event listener for the specified event.
     *
     * @param eventName   Name of the event.
     * @param listener   Handler for the event.
     */
-  @JSName("removeEventListener")
-  def removeEventListener_onReady[TEvent /* <: PlayerEvent */](eventName: onReady, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_onStateChange[TEvent /* <: PlayerEvent */](eventName: onStateChange, listener: js.Function1[/* event */ TEvent, Unit]): Unit = js.native
+  def removeEventListener[TEvent /* <: PlayerEvent */](
+    eventName: onReady | onStateChange | onPlaybackQualityChange | onPlaybackRateChange | onError | onApiChange,
+    listener: js.Function1[/* event */ TEvent, Unit]
+  ): Unit = js.native
   
   /**
     * Seeks to a specified time in the video.
@@ -382,6 +372,13 @@ trait Player extends StObject {
     * @param height   Height in pixels of the <iframe>.
     */
   def setSize(width: Double, height: Double): Unit = js.native
+  
+  /**
+    * Sets the spherical video config object. The call will be No-Op for non-360
+    * videos, and will change the view port according to the input for 360
+    * videos.
+    */
+  def setSphericalProperties(option: SphericalProperties): Unit = js.native
   
   /**
     * Sets the player volume.

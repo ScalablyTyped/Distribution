@@ -25,7 +25,7 @@ object devicesArrayBluetoothDevi {
     
     inline def setDevices(value: js.Array[BluetoothDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    inline def setDevicesVarargs(value: BluetoothDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: BluetoothDevice*): Self = StObject.set(x, "devices", js.Array(value*))
     
     inline def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

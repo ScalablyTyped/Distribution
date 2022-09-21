@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Model")
 @js.native
-class Model () extends Transformable {
+open class Model () extends Transformable {
   
   def add(args: (Shape | Model | Light)*): this.type = js.native
   
@@ -18,11 +18,11 @@ class Model () extends Transformable {
       /* item */ Shape | this.type, 
       /* lightModels */ js.UndefOr[js.Array[this.type]], 
       /* matrix */ js.UndefOr[Matrix], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   
-  def eachShape(f: js.Function1[/* shape */ Shape, js.Any]): Unit = js.native
+  def eachShape(f: js.Function1[/* shape */ Shape, Any]): Unit = js.native
   
   def remove(args: (Shape | Model | Light)*): Unit = js.native
 }

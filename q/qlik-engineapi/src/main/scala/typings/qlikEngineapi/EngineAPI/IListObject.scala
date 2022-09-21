@@ -61,7 +61,7 @@ object IListObject {
     
     inline def setQDataPages(value: js.Array[INxDataPage]): Self = StObject.set(x, "qDataPages", value.asInstanceOf[js.Any])
     
-    inline def setQDataPagesVarargs(value: INxDataPage*): Self = StObject.set(x, "qDataPages", js.Array(value :_*))
+    inline def setQDataPagesVarargs(value: INxDataPage*): Self = StObject.set(x, "qDataPages", js.Array(value*))
     
     inline def setQDimensionInfo(value: INxDimensionInfo): Self = StObject.set(x, "qDimensionInfo", value.asInstanceOf[js.Any])
     
@@ -71,7 +71,7 @@ object IListObject {
     
     inline def setQExpressions(value: js.Array[INxListObjectExpression]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
     
-    inline def setQExpressionsVarargs(value: INxListObjectExpression*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
+    inline def setQExpressionsVarargs(value: INxListObjectExpression*): Self = StObject.set(x, "qExpressions", js.Array(value*))
     
     inline def setQSize(value: ISize): Self = StObject.set(x, "qSize", value.asInstanceOf[js.Any])
     

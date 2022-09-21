@@ -109,7 +109,7 @@ object IDatabaseInfo {
     
     inline def setQKeywords(value: js.Array[String]): Self = StObject.set(x, "qKeywords", value.asInstanceOf[js.Any])
     
-    inline def setQKeywordsVarargs(value: String*): Self = StObject.set(x, "qKeywords", js.Array(value :_*))
+    inline def setQKeywordsVarargs(value: String*): Self = StObject.set(x, "qKeywords", js.Array(value*))
     
     inline def setQOwnerSeparator(value: String): Self = StObject.set(x, "qOwnerSeparator", value.asInstanceOf[js.Any])
     

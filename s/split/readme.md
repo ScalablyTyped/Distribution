@@ -11,9 +11,9 @@ split a Text Stream into a Line Stream
 | Full name          | split |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 899 |
-| # downloads        | 230928068 |
-| # stars            | 81 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0570728333333332E7 |
+| # stars            | 344.0 |
 
 ## Links
 - [Homepage](http://github.com/dominictarr/split)

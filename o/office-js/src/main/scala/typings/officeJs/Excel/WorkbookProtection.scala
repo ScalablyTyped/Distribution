@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the protection of a workbook object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @js.native
@@ -37,17 +37,18 @@ trait WorkbookProtection
   /**
     * Protects a workbook. Fails if the workbook has been protected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
-    * @param password workbook protection password.
+    * @param password Workbook protection password.
     */
   def protect(): Unit = js.native
   def protect(password: String): Unit = js.native
   
   /**
-    *
     * Specifies if the workbook is protected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   val `protected`: Boolean = js.native
@@ -61,9 +62,10 @@ trait WorkbookProtection
   /**
     * Unprotects a workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
-    * @param password workbook protection password.
+    * @param password Workbook protection password.
     */
   def unprotect(): Unit = js.native
   def unprotect(password: String): Unit = js.native

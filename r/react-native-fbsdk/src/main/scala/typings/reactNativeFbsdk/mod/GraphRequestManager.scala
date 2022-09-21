@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-fbsdk", "GraphRequestManager")
 @js.native
-class GraphRequestManager () extends StObject {
+open class GraphRequestManager () extends StObject {
   
   /**
     * Add call back to the GraphRequestManager. Only one callback can be added.

@@ -13,12 +13,16 @@ trait SlideUpdateFromOptionsScreenshot
   /**
     * The image format.
     *
+    * @default png
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#updateFrom)
     */
   var format: js.UndefOr[String] = js.undefined
   
   /**
     * The image height.
+    *
+    * @default 75
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#updateFrom)
     */
@@ -27,12 +31,16 @@ trait SlideUpdateFromOptionsScreenshot
   /**
     * The image quality (due to compression).
     *
+    * @default 80
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#updateFrom)
     */
   var quality: js.UndefOr[Double] = js.undefined
   
   /**
     * The image width.
+    *
+    * @default 120
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#updateFrom)
     */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for negative-array
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Negative array index support `array[-1]` using ES2015 Proxy
@@ -11,9 +11,9 @@ Negative array index support `array[-1]` using ES2015 Proxy
 | Full name          | negative-array |
 | Keywords           | array, negative, index, indice, reverse, proxy, proxies, es2015 |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 754 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 49.0 |
+| # stars            | 452.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/negative-array#readme)

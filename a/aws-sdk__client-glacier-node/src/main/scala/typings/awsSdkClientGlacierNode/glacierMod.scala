@@ -77,7 +77,7 @@ object glacierMod {
   
   @JSImport("@aws-sdk/client-glacier-node/Glacier", "Glacier")
   @js.native
-  class Glacier protected () extends GlacierClient {
+  open class Glacier protected () extends GlacierClient {
     def this(configuration: GlacierConfiguration) = this()
     
     /**
@@ -93,7 +93,7 @@ object glacierMod {
     def abortMultipartUpload(args: AbortMultipartUploadInput): js.Promise[AbortMultipartUploadOutput] = js.native
     def abortMultipartUpload(
       args: AbortMultipartUploadInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[AbortMultipartUploadOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[AbortMultipartUploadOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -109,7 +109,7 @@ object glacierMod {
     def abortVaultLock(args: AbortVaultLockInput): js.Promise[AbortVaultLockOutput] = js.native
     def abortVaultLock(
       args: AbortVaultLockInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[AbortVaultLockOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[AbortVaultLockOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -126,7 +126,7 @@ object glacierMod {
     def addTagsToVault(args: AddTagsToVaultInput): js.Promise[AddTagsToVaultOutput] = js.native
     def addTagsToVault(
       args: AddTagsToVaultInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[AddTagsToVaultOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[AddTagsToVaultOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -142,7 +142,7 @@ object glacierMod {
     def completeMultipartUpload(args: CompleteMultipartUploadInput): js.Promise[CompleteMultipartUploadOutput] = js.native
     def completeMultipartUpload(
       args: CompleteMultipartUploadInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CompleteMultipartUploadOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CompleteMultipartUploadOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -158,7 +158,7 @@ object glacierMod {
     def completeVaultLock(args: CompleteVaultLockInput): js.Promise[CompleteVaultLockOutput] = js.native
     def completeVaultLock(
       args: CompleteVaultLockInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CompleteVaultLockOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CompleteVaultLockOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -174,7 +174,7 @@ object glacierMod {
     def createVault(args: CreateVaultInput): js.Promise[CreateVaultOutput] = js.native
     def createVault(
       args: CreateVaultInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateVaultOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateVaultOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -190,7 +190,7 @@ object glacierMod {
     def deleteArchive(args: DeleteArchiveInput): js.Promise[DeleteArchiveOutput] = js.native
     def deleteArchive(
       args: DeleteArchiveInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteArchiveOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteArchiveOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -206,7 +206,7 @@ object glacierMod {
     def deleteVault(args: DeleteVaultInput): js.Promise[DeleteVaultOutput] = js.native
     def deleteVault(
       args: DeleteVaultInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteVaultOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteVaultOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -222,7 +222,7 @@ object glacierMod {
     def deleteVaultAccessPolicy(args: DeleteVaultAccessPolicyInput): js.Promise[DeleteVaultAccessPolicyOutput] = js.native
     def deleteVaultAccessPolicy(
       args: DeleteVaultAccessPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteVaultAccessPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteVaultAccessPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -238,7 +238,7 @@ object glacierMod {
     def deleteVaultNotifications(args: DeleteVaultNotificationsInput): js.Promise[DeleteVaultNotificationsOutput] = js.native
     def deleteVaultNotifications(
       args: DeleteVaultNotificationsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteVaultNotificationsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteVaultNotificationsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -254,7 +254,7 @@ object glacierMod {
     def describeJob(args: DescribeJobInput): js.Promise[DescribeJobOutput] = js.native
     def describeJob(
       args: DescribeJobInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeJobOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeJobOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -270,7 +270,7 @@ object glacierMod {
     def describeVault(args: DescribeVaultInput): js.Promise[DescribeVaultOutput] = js.native
     def describeVault(
       args: DescribeVaultInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeVaultOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeVaultOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -285,7 +285,7 @@ object glacierMod {
     def getDataRetrievalPolicy(args: GetDataRetrievalPolicyInput): js.Promise[GetDataRetrievalPolicyOutput] = js.native
     def getDataRetrievalPolicy(
       args: GetDataRetrievalPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetDataRetrievalPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetDataRetrievalPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -301,7 +301,7 @@ object glacierMod {
     def getJobOutput(args: GetJobOutputInput): js.Promise[GetJobOutputOutput[Readable]] = js.native
     def getJobOutput(
       args: GetJobOutputInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetJobOutputOutput[Readable]], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetJobOutputOutput[Readable]], Unit]
     ): Unit = js.native
     
     /**
@@ -317,7 +317,7 @@ object glacierMod {
     def getVaultAccessPolicy(args: GetVaultAccessPolicyInput): js.Promise[GetVaultAccessPolicyOutput] = js.native
     def getVaultAccessPolicy(
       args: GetVaultAccessPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetVaultAccessPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetVaultAccessPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -333,7 +333,7 @@ object glacierMod {
     def getVaultLock(args: GetVaultLockInput): js.Promise[GetVaultLockOutput] = js.native
     def getVaultLock(
       args: GetVaultLockInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetVaultLockOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetVaultLockOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -349,7 +349,7 @@ object glacierMod {
     def getVaultNotifications(args: GetVaultNotificationsInput): js.Promise[GetVaultNotificationsOutput] = js.native
     def getVaultNotifications(
       args: GetVaultNotificationsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetVaultNotificationsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetVaultNotificationsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -367,7 +367,7 @@ object glacierMod {
     def initiateJob(args: InitiateJobInput): js.Promise[InitiateJobOutput] = js.native
     def initiateJob(
       args: InitiateJobInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[InitiateJobOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[InitiateJobOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -383,7 +383,7 @@ object glacierMod {
     def initiateMultipartUpload(args: InitiateMultipartUploadInput): js.Promise[InitiateMultipartUploadOutput] = js.native
     def initiateMultipartUpload(
       args: InitiateMultipartUploadInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[InitiateMultipartUploadOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[InitiateMultipartUploadOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -399,7 +399,7 @@ object glacierMod {
     def initiateVaultLock(args: InitiateVaultLockInput): js.Promise[InitiateVaultLockOutput] = js.native
     def initiateVaultLock(
       args: InitiateVaultLockInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[InitiateVaultLockOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[InitiateVaultLockOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -413,10 +413,7 @@ object glacierMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def listJobs(args: ListJobsInput): js.Promise[ListJobsOutput] = js.native
-    def listJobs(
-      args: ListJobsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListJobsOutput], Unit]
-    ): Unit = js.native
+    def listJobs(args: ListJobsInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListJobsOutput], Unit]): Unit = js.native
     
     /**
       * <p>This operation lists in-progress multipart uploads for the specified vault. An in-progress multipart upload is a multipart upload that has been initiated by an <a>InitiateMultipartUpload</a> request, but has not yet been completed or aborted. The list returned in the List Multipart Upload response has no guaranteed order. </p> <p>The List Multipart Uploads operation supports pagination. By default, this operation returns up to 50 multipart uploads in the response. You should always check the response for a <code>marker</code> at which to continue the list; if there are no more items the <code>marker</code> is <code>null</code>. To return a list of multipart uploads that begins at a specific upload, set the <code>marker</code> request parameter to the value you obtained from a previous List Multipart Upload request. You can also limit the number of uploads returned in the response by specifying the <code>limit</code> parameter in the request.</p> <p>Note the difference between this operation and listing parts (<a>ListParts</a>). The List Multipart Uploads operation lists all multipart uploads for a vault and does not require a multipart upload ID. The List Parts operation requires a multipart upload ID since parts are associated with a single upload.</p> <p>An AWS account has full permission to perform all operations (actions). However, AWS Identity and Access Management (IAM) users don't have any permissions by default. You must grant them explicit permission to perform specific actions. For more information, see <a href="http://docs.aws.amazon.com/amazonglacier/latest/dev/using-iam-with-amazon-glacier.html">Access Control Using AWS Identity and Access Management (IAM)</a>.</p> <p>For conceptual information and the underlying REST API, see <a href="http://docs.aws.amazon.com/amazonglacier/latest/dev/working-with-archives.html">Working with Archives in Amazon Glacier</a> and <a href="http://docs.aws.amazon.com/amazonglacier/latest/dev/api-multipart-list-uploads.html">List Multipart Uploads </a> in the <i>Amazon Glacier Developer Guide</i>.</p>
@@ -431,7 +428,7 @@ object glacierMod {
     def listMultipartUploads(args: ListMultipartUploadsInput): js.Promise[ListMultipartUploadsOutput] = js.native
     def listMultipartUploads(
       args: ListMultipartUploadsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListMultipartUploadsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListMultipartUploadsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -447,7 +444,7 @@ object glacierMod {
     def listParts(args: ListPartsInput): js.Promise[ListPartsOutput] = js.native
     def listParts(
       args: ListPartsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListPartsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListPartsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -462,7 +459,7 @@ object glacierMod {
     def listProvisionedCapacity(args: ListProvisionedCapacityInput): js.Promise[ListProvisionedCapacityOutput] = js.native
     def listProvisionedCapacity(
       args: ListProvisionedCapacityInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListProvisionedCapacityOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListProvisionedCapacityOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -478,7 +475,7 @@ object glacierMod {
     def listTagsForVault(args: ListTagsForVaultInput): js.Promise[ListTagsForVaultOutput] = js.native
     def listTagsForVault(
       args: ListTagsForVaultInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListTagsForVaultOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListTagsForVaultOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -494,7 +491,7 @@ object glacierMod {
     def listVaults(args: ListVaultsInput): js.Promise[ListVaultsOutput] = js.native
     def listVaults(
       args: ListVaultsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListVaultsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListVaultsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -510,7 +507,7 @@ object glacierMod {
     def purchaseProvisionedCapacity(args: PurchaseProvisionedCapacityInput): js.Promise[PurchaseProvisionedCapacityOutput] = js.native
     def purchaseProvisionedCapacity(
       args: PurchaseProvisionedCapacityInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PurchaseProvisionedCapacityOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PurchaseProvisionedCapacityOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -526,7 +523,7 @@ object glacierMod {
     def removeTagsFromVault(args: RemoveTagsFromVaultInput): js.Promise[RemoveTagsFromVaultOutput] = js.native
     def removeTagsFromVault(
       args: RemoveTagsFromVaultInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RemoveTagsFromVaultOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RemoveTagsFromVaultOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -541,7 +538,7 @@ object glacierMod {
     def setDataRetrievalPolicy(args: SetDataRetrievalPolicyInput): js.Promise[SetDataRetrievalPolicyOutput] = js.native
     def setDataRetrievalPolicy(
       args: SetDataRetrievalPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SetDataRetrievalPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SetDataRetrievalPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -557,7 +554,7 @@ object glacierMod {
     def setVaultAccessPolicy(args: SetVaultAccessPolicyInput): js.Promise[SetVaultAccessPolicyOutput] = js.native
     def setVaultAccessPolicy(
       args: SetVaultAccessPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SetVaultAccessPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SetVaultAccessPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -573,7 +570,7 @@ object glacierMod {
     def setVaultNotifications(args: SetVaultNotificationsInput): js.Promise[SetVaultNotificationsOutput] = js.native
     def setVaultNotifications(
       args: SetVaultNotificationsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SetVaultNotificationsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SetVaultNotificationsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -590,7 +587,7 @@ object glacierMod {
     def uploadArchive(args: UploadArchiveInput[Readable]): js.Promise[UploadArchiveOutput] = js.native
     def uploadArchive(
       args: UploadArchiveInput[Readable],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UploadArchiveOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UploadArchiveOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -607,7 +604,7 @@ object glacierMod {
     def uploadMultipartPart(args: UploadMultipartPartInput[Readable]): js.Promise[UploadMultipartPartOutput] = js.native
     def uploadMultipartPart(
       args: UploadMultipartPartInput[Readable],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UploadMultipartPartOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UploadMultipartPartOutput], Unit]
     ): Unit = js.native
   }
 }

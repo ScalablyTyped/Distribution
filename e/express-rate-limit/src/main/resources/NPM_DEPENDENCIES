@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "express-rate-limit" : "6.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "express-rate-limit" : "6.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

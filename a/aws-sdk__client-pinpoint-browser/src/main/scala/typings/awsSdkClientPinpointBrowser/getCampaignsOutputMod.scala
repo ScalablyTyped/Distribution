@@ -8,5 +8,5 @@ object getCampaignsOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetCampaignsOutput", "GetCampaignsOutput")
   @js.native
-  val GetCampaignsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetCampaignsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

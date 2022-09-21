@@ -6,40 +6,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JsonWebKey extends StObject {
   
+  /* standard dom */
   var alg: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var crv: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var d: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var dp: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var dq: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var e: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var ext: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var k: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var key_ops: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
+  /* standard dom */
   var kty: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var n: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var oth: js.UndefOr[js.Array[RsaOtherPrimesInfo]] = js.undefined
   
+  /* standard dom */
   var p: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var q: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var qi: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var use: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var x: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var y: js.UndefOr[java.lang.String] = js.undefined
 }
 object JsonWebKey {
@@ -87,7 +105,7 @@ object JsonWebKey {
     
     inline def setKey_opsUndefined: Self = StObject.set(x, "key_ops", js.undefined)
     
-    inline def setKey_opsVarargs(value: java.lang.String*): Self = StObject.set(x, "key_ops", js.Array(value :_*))
+    inline def setKey_opsVarargs(value: java.lang.String*): Self = StObject.set(x, "key_ops", js.Array(value*))
     
     inline def setKty(value: java.lang.String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
     
@@ -101,7 +119,7 @@ object JsonWebKey {
     
     inline def setOthUndefined: Self = StObject.set(x, "oth", js.undefined)
     
-    inline def setOthVarargs(value: RsaOtherPrimesInfo*): Self = StObject.set(x, "oth", js.Array(value :_*))
+    inline def setOthVarargs(value: RsaOtherPrimesInfo*): Self = StObject.set(x, "oth", js.Array(value*))
     
     inline def setP(value: java.lang.String): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     

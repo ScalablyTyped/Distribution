@@ -31,8 +31,8 @@ object basePickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/BasePicker", "BasePicker")
   @js.native
-  class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
-    extends Component[P, IBasePickerState, js.Any]
+  open class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
+    extends Component[P, IBasePickerState, Any]
        with IBasePicker[T] {
     def this(basePickerProps: P) = this()
     
@@ -43,46 +43,46 @@ object basePickerMod {
     
     /* protected */ var _ariaMap: IPickerAriaIds = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _completeGenericSuggestion: js.Any = js.native
+    /* private */ var _completeGenericSuggestion: Any = js.native
     
     /**
       * Suggestions are normally shown after the user updates text and the text
       * is non-empty, but also when the user clicks on the input element.
       * @returns True if suggestions should be shown.
       */
-    /* private */ var _getShowSuggestions: js.Any = js.native
+    /* private */ var _getShowSuggestions: Any = js.native
     
-    /* private */ var _getTextFromItem: js.Any = js.native
+    /* private */ var _getTextFromItem: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _onResolveSuggestions: js.Any = js.native
+    /* private */ var _onResolveSuggestions: Any = js.native
     
-    /* private */ var _onSelectedItemsUpdated: js.Any = js.native
+    /* private */ var _onSelectedItemsUpdated: Any = js.native
     
     /* protected */ def _shouldFocusZoneEnterInnerZone(ev: KeyboardEvent[HTMLElement]): Boolean = js.native
     
-    /* private */ var _styledSuggestions: js.Any = js.native
+    /* private */ var _styledSuggestions: Any = js.native
     
     /**
       * Takes in the current updated value and either resolves it with the new suggestions
       * or if updated value is undefined then it clears out currently suggested items
       */
-    /* private */ var _updateAndResolveValue: js.Any = js.native
+    /* private */ var _updateAndResolveValue: Any = js.native
     
     /**
       * Controls what happens whenever there is an action that impacts the selected items.
       * If `selectedItems` is provided, this will act as a controlled component and it will not update its own state.
       */
-    /* private */ var _updateSelectedItems: js.Any = js.native
+    /* private */ var _updateSelectedItems: Any = js.native
     
     /**
       * This should be called when the user does something other than use text entry to trigger suggestions.
       *
       */
-    /* private */ var _userTriggeredSuggestions: js.Any = js.native
+    /* private */ var _userTriggeredSuggestions: Any = js.native
     
     /* protected */ def addItem(item: T): Unit = js.native
     
@@ -101,10 +101,10 @@ object basePickerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MBasePicker(): Unit = js.native
     
-    /* protected */ var currentPromise: js.UndefOr[js.Thenable[js.Any]] = js.native
+    /* protected */ var currentPromise: js.UndefOr[js.Thenable[Any]] = js.native
     
     def dismissSuggestions(): Unit = js.native
-    def dismissSuggestions(ev: js.Any): Unit = js.native
+    def dismissSuggestions(ev: Any): Unit = js.native
     
     /* protected */ var focusZone: RefObject[IFocusZone] = js.native
     
@@ -120,7 +120,7 @@ object basePickerMod {
     
     /* protected */ def onBackspace(ev: KeyboardEvent[HTMLElement]): Unit = js.native
     
-    /* protected */ def onBlur(ev: FocusEvent[HTMLElement | Autofill]): Unit = js.native
+    /* protected */ def onBlur(ev: FocusEvent[HTMLElement | Autofill, typings.std.Element]): Unit = js.native
     
     /* protected */ def onChange(): Unit = js.native
     /* protected */ def onChange(items: js.Array[T]): Unit = js.native
@@ -139,11 +139,11 @@ object basePickerMod {
     
     /* protected */ def onGetMoreResults(): Unit = js.native
     
-    /* protected */ def onInputBlur(ev: FocusEvent[HTMLInputElement | Autofill]): Unit = js.native
+    /* protected */ def onInputBlur(ev: FocusEvent[HTMLInputElement | Autofill, typings.std.Element]): Unit = js.native
     
     /* protected */ def onInputChange(value: String): Unit = js.native
     
-    /* protected */ def onInputFocus(ev: FocusEvent[HTMLInputElement | Autofill]): Unit = js.native
+    /* protected */ def onInputFocus(ev: FocusEvent[HTMLInputElement | Autofill, typings.std.Element]): Unit = js.native
     
     /* protected */ def onItemChange(changedItem: T, index: Double): Unit = js.native
     
@@ -151,7 +151,7 @@ object basePickerMod {
     
     /* protected */ def onSelectionChange(): Unit = js.native
     
-    /* protected */ def onSuggestionClick(ev: typings.react.mod.MouseEvent[HTMLElement, MouseEvent], item: js.Any, index: Double): Unit = js.native
+    /* protected */ def onSuggestionClick(ev: typings.react.mod.MouseEvent[HTMLElement, MouseEvent], item: Any, index: Double): Unit = js.native
     
     /* protected */ def onSuggestionRemove(ev: typings.react.mod.MouseEvent[HTMLElement, MouseEvent], item: T, index: Double): Unit = js.native
     
@@ -162,7 +162,7 @@ object basePickerMod {
     /* protected */ def removeItem(item: IPickerItemProps[T]): Unit = js.native
     /* protected */ def removeItem(item: IPickerItemProps[T], focusNextItem: Boolean): Unit = js.native
     
-    /* protected */ def removeItems(itemsToRemove: js.Array[js.Any]): Unit = js.native
+    /* protected */ def removeItems(itemsToRemove: js.Array[Any]): Unit = js.native
     
     /* protected */ def renderItems(): js.Array[Element] = js.native
     
@@ -181,7 +181,7 @@ object basePickerMod {
     
     /* protected */ var suggestionStore: SuggestionsController[T] = js.native
     
-    /* protected */ def updateSuggestions(suggestions: js.Array[js.Any]): Unit = js.native
+    /* protected */ def updateSuggestions(suggestions: js.Array[Any]): Unit = js.native
     
     /* protected */ def updateSuggestionsList(suggestions: js.Array[T]): Unit = js.native
     /* protected */ def updateSuggestionsList(suggestions: js.Array[T], updatedValue: String): Unit = js.native
@@ -197,12 +197,12 @@ object basePickerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getDerivedStateFromProps(newProps: IBasePickerProps[js.Any]): Items | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any]).asInstanceOf[Items | Null]
+    inline def getDerivedStateFromProps(newProps: IBasePickerProps[Any]): Items | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any]).asInstanceOf[Items | Null]
   }
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/BasePicker", "BasePickerListBelow")
   @js.native
-  class BasePickerListBelow[T, P /* <: IBasePickerProps[T] */] protected () extends BasePicker[T, P] {
+  open class BasePickerListBelow[T, P /* <: IBasePickerProps[T] */] protected () extends BasePicker[T, P] {
     def this(basePickerProps: P) = this()
   }
   
@@ -216,7 +216,7 @@ object basePickerMod {
     
     var isSearching: js.UndefOr[Boolean] = js.undefined
     
-    var items: js.UndefOr[js.Any] = js.undefined
+    var items: js.UndefOr[Any] = js.undefined
     
     var moreSuggestionsAvailable: js.UndefOr[Boolean] = js.undefined
     
@@ -253,7 +253,7 @@ object basePickerMod {
       
       inline def setIsSearchingUndefined: Self = StObject.set(x, "isSearching", js.undefined)
       
-      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
@@ -265,7 +265,7 @@ object basePickerMod {
       
       inline def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
       
-      inline def setSelectedIndicesVarargs(value: Double*): Self = StObject.set(x, "selectedIndices", js.Array(value :_*))
+      inline def setSelectedIndicesVarargs(value: Double*): Self = StObject.set(x, "selectedIndices", js.Array(value*))
       
       inline def setSuggestedDisplayValue(value: String): Self = StObject.set(x, "suggestedDisplayValue", value.asInstanceOf[js.Any])
       
@@ -284,6 +284,11 @@ object basePickerMod {
   trait IPickerAriaIds extends StObject {
     
     /**
+      * Aria id for the component that has role=combobox
+      */
+    var combobox: String
+    
+    /**
       * Aria id for selected items container component
       */
     var selectedItems: String
@@ -300,12 +305,14 @@ object basePickerMod {
   }
   object IPickerAriaIds {
     
-    inline def apply(selectedItems: String, selectedSuggestionAlert: String, suggestionList: String): IPickerAriaIds = {
-      val __obj = js.Dynamic.literal(selectedItems = selectedItems.asInstanceOf[js.Any], selectedSuggestionAlert = selectedSuggestionAlert.asInstanceOf[js.Any], suggestionList = suggestionList.asInstanceOf[js.Any])
+    inline def apply(combobox: String, selectedItems: String, selectedSuggestionAlert: String, suggestionList: String): IPickerAriaIds = {
+      val __obj = js.Dynamic.literal(combobox = combobox.asInstanceOf[js.Any], selectedItems = selectedItems.asInstanceOf[js.Any], selectedSuggestionAlert = selectedSuggestionAlert.asInstanceOf[js.Any], suggestionList = suggestionList.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPickerAriaIds]
     }
     
     extension [Self <: IPickerAriaIds](x: Self) {
+      
+      inline def setCombobox(value: String): Self = StObject.set(x, "combobox", value.asInstanceOf[js.Any])
       
       inline def setSelectedItems(value: String): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       

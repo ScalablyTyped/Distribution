@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-lazyload
 
-Typings are for version 3.0
+Typings are for version 3.2
 
 ## Library description:
 Lazyload your components, images or anything where performance matters.
@@ -10,10 +10,10 @@ Lazyload your components, images or anything where performance matters.
 | ------------------ | :-------------: |
 | Full name          | react-lazyload |
 | Keywords           | react-component, react, lazyload |
-| # releases         | 14 |
-| # dependents       | 136 |
-| # downloads        | 10601458 |
-| # stars            | 7 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1030178.0 |
+| # stars            | 5559.0 |
 
 ## Links
 - [Homepage](https://github.com/jasonslyvia/react-lazyload)

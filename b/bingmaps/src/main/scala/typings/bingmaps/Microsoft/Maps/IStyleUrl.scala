@@ -20,6 +20,6 @@ object IStyleUrl {
     
     inline def setStyleURLs(value: js.Array[String]): Self = StObject.set(x, "styleURLs", value.asInstanceOf[js.Any])
     
-    inline def setStyleURLsVarargs(value: String*): Self = StObject.set(x, "styleURLs", js.Array(value :_*))
+    inline def setStyleURLsVarargs(value: String*): Self = StObject.set(x, "styleURLs", js.Array(value*))
   }
 }

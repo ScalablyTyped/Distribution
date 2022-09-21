@@ -10,7 +10,7 @@ object weekPanelMod {
   
   @JSImport("rmc-calendar/lib/date/WeekPanel", JSImport.Default)
   @js.native
-  class default protected () extends WeekPanel {
+  open class default protected () extends WeekPanel {
     def this(props: PropsType) = this()
   }
   
@@ -33,5 +33,5 @@ object weekPanelMod {
   
   @js.native
   trait WeekPanel
-    extends PureComponent[PropsType, js.Object, js.Any]
+    extends PureComponent[PropsType, js.Object, Any]
 }

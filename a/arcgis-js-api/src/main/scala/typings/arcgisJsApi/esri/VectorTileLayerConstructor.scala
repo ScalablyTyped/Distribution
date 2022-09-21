@@ -17,5 +17,5 @@ trait VectorTileLayerConstructor
 Instantiable0[VectorTileLayer]
      with Instantiable1[/* properties */ VectorTileLayerProperties, VectorTileLayer] {
   
-  def fromJSON(json: js.Any): VectorTileLayer = js.native
+  def fromJSON(json: Any): VectorTileLayer = js.native
 }

@@ -14,7 +14,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.text
 import typings.arcgisJsApi.arcgisJsApiStrings.update
 import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import typings.std.Blob
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,8 +52,15 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#addResource)
     */
-  def addResource(resource: PortalItemResource, content: Blob): js.Promise[js.Any] = js.native
-  def addResource(resource: PortalItemResource, content: Blob, options: PortalItemAddResourceOptions): js.Promise[js.Any] = js.native
+  def addResource(resource: PortalItemResource, content: Blob): js.Promise[Any] = js.native
+  def addResource(resource: PortalItemResource, content: Blob, options: PortalItemAddResourceOptions): js.Promise[Any] = js.native
+  
+  /**
+    * An authorization string used to access the portal item.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#apiKey)
+    */
+  var apiKey: String = js.native
   
   /**
     * Contains an array of objects containing proxy information for premium platform services.
@@ -82,7 +88,7 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#created)
     */
-  var created: Date = js.native
+  var created: js.Date = js.native
   
   /**
     * The item's locale information (language and country).
@@ -96,7 +102,7 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#deleteRating)
     */
-  def deleteRating(): js.Promise[js.Any] = js.native
+  def deleteRating(): js.Promise[Any] = js.native
   
   /**
     * The detailed description of the item.
@@ -117,32 +123,13 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchData)
     */
-  def fetchData(): js.Promise[js.Any] = js.native
-  def fetchData(responseType: Unit, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_arraybuffer(responseType: `array-buffer`): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_arraybuffer(responseType: `array-buffer`, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_blob(responseType: blob): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_blob(responseType: blob, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_document(responseType: document): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_document(responseType: document, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_json(responseType: json): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_json(responseType: json, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_text(responseType: text): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_text(responseType: text, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_xml(responseType: xml): js.Promise[js.Any] = js.native
-  @JSName("fetchData")
-  def fetchData_xml(responseType: xml, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
+  def fetchData(): js.Promise[Any] = js.native
+  def fetchData(responseType: json | xml | text | blob | `array-buffer` | document): js.Promise[Any] = js.native
+  def fetchData(
+    responseType: json | xml | text | blob | `array-buffer` | document,
+    options: PortalItemFetchDataOptions
+  ): js.Promise[Any] = js.native
+  def fetchData(responseType: scala.Unit, options: PortalItemFetchDataOptions): js.Promise[Any] = js.native
   
   /**
     * Returns the rating (if any) given to the item.
@@ -165,10 +152,10 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchResources)
     */
-  def fetchResources(): FetchResourcesResult = js.native
-  def fetchResources(params: Unit, options: PortalItemFetchResourcesOptions): FetchResourcesResult = js.native
-  def fetchResources(params: FetchResourcesParams): FetchResourcesResult = js.native
-  def fetchResources(params: FetchResourcesParams, options: PortalItemFetchResourcesOptions): FetchResourcesResult = js.native
+  def fetchResources(): js.Promise[FetchResourcesResult] = js.native
+  def fetchResources(params: scala.Unit, options: PortalItemFetchResourcesOptions): js.Promise[FetchResourcesResult] = js.native
+  def fetchResources(params: FetchResourcesParams): js.Promise[FetchResourcesResult] = js.native
+  def fetchResources(params: FetchResourcesParams, options: PortalItemFetchResourcesOptions): js.Promise[FetchResourcesResult] = js.native
   
   /**
     * Get the URL to the thumbnail image for the item.
@@ -223,6 +210,8 @@ trait PortalItem
   /**
     * Indicates whether the item's resources have loaded from the portal.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#loaded)
     */
   val loaded: Boolean = js.native
@@ -232,7 +221,7 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#modified)
     */
-  var modified: Date = js.native
+  var modified: js.Date = js.native
   
   /**
     * The name of the item.
@@ -284,23 +273,32 @@ trait PortalItem
   var portal: Portal = js.native
   
   /**
+    * Reloads a loaded item's properties from the portal.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#reload)
+    */
+  def reload(): js.Promise[PortalItem] = js.native
+  
+  /**
     * Removes all the [resources](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html) from the portal item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#removeAllResources)
     */
-  def removeAllResources(): js.Promise[js.Any] = js.native
-  def removeAllResources(options: PortalItemRemoveAllResourcesOptions): js.Promise[js.Any] = js.native
+  def removeAllResources(): js.Promise[Any] = js.native
+  def removeAllResources(options: PortalItemRemoveAllResourcesOptions): js.Promise[Any] = js.native
   
   /**
     * Removes a [resource](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html) from the portal item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#removeResource)
     */
-  def removeResource(resource: PortalItemResource): js.Promise[js.Any] = js.native
-  def removeResource(resource: PortalItemResource, options: PortalItemRemoveResourceOptions): js.Promise[js.Any] = js.native
+  def removeResource(resource: PortalItemResource): js.Promise[Any] = js.native
+  def removeResource(resource: PortalItemResource, options: PortalItemRemoveResourceOptions): js.Promise[Any] = js.native
   
   /**
     * An array of string URLs.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#screenshots)
     */
@@ -325,7 +323,7 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#sourceJSON)
     */
-  var sourceJSON: js.Any = js.native
+  var sourceJSON: Any = js.native
   
   /**
     * User defined tags that describe the item.

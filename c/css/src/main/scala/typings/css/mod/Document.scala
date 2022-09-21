@@ -35,7 +35,7 @@ object Document {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value*))
     
     inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     

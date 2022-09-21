@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object argumentsMod {
   
-  type Arguments = StringDictionary[js.Any]
+  type Arguments = StringDictionary[Any]
 }

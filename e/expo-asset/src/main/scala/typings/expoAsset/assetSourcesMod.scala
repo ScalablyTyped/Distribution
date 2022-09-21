@@ -50,13 +50,13 @@ object assetSourcesMod {
       
       inline def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
       
-      inline def setFileHashesVarargs(value: String*): Self = StObject.set(x, "fileHashes", js.Array(value :_*))
+      inline def setFileHashesVarargs(value: String*): Self = StObject.set(x, "fileHashes", js.Array(value*))
       
       inline def setFileUris(value: js.Array[String]): Self = StObject.set(x, "fileUris", value.asInstanceOf[js.Any])
       
       inline def setFileUrisUndefined: Self = StObject.set(x, "fileUris", js.undefined)
       
-      inline def setFileUrisVarargs(value: String*): Self = StObject.set(x, "fileUris", js.Array(value :_*))
+      inline def setFileUrisVarargs(value: String*): Self = StObject.set(x, "fileUris", js.Array(value*))
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -70,7 +70,7 @@ object assetSourcesMod {
       
       inline def setScales(value: js.Array[Double]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
       
-      inline def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value :_*))
+      inline def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

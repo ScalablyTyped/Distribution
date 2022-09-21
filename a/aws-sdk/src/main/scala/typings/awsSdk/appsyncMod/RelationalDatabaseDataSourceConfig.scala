@@ -12,7 +12,7 @@ trait RelationalDatabaseDataSourceConfig extends StObject {
   var rdsHttpEndpointConfig: js.UndefOr[RdsHttpEndpointConfig] = js.undefined
   
   /**
-    * Source type for the relational database.    RDS_HTTP_ENDPOINT: The relational database source type is an Amazon RDS HTTP endpoint.  
+    * Source type for the relational database.    RDS_HTTP_ENDPOINT: The relational database source type is an Amazon Relational Database Service (Amazon RDS) HTTP endpoint.  
     */
   var relationalDatabaseSourceType: js.UndefOr[RelationalDatabaseSourceType] = js.undefined
 }

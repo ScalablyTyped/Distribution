@@ -52,7 +52,7 @@ object valdr {
   
   trait ValdrConstraintValidator
     extends StObject
-       with /* argumentName */ StringDictionary[js.Any] {
+       with /* argumentName */ StringDictionary[Any] {
     
     var message: String
   }
@@ -128,11 +128,11 @@ object valdr {
       
       inline def setValidationResults(value: js.Array[ValdrViolation]): Self = StObject.set(x, "validationResults", value.asInstanceOf[js.Any])
       
-      inline def setValidationResultsVarargs(value: ValdrViolation*): Self = StObject.set(x, "validationResults", js.Array(value :_*))
+      inline def setValidationResultsVarargs(value: ValdrViolation*): Self = StObject.set(x, "validationResults", js.Array(value*))
       
       inline def setViolations(value: js.Array[ValdrViolation]): Self = StObject.set(x, "violations", value.asInstanceOf[js.Any])
       
-      inline def setViolationsVarargs(value: ValdrViolation*): Self = StObject.set(x, "violations", js.Array(value :_*))
+      inline def setViolationsVarargs(value: ValdrViolation*): Self = StObject.set(x, "violations", js.Array(value*))
     }
   }
   
@@ -150,8 +150,8 @@ object valdr {
     /**
       * Method to be called to perform custom validation over given value.
       */
-    def validate(value: js.Any): Boolean = js.native
-    def validate(value: js.Any, validationArguments: StringDictionary[js.Any]): Boolean = js.native
+    def validate(value: Any): Boolean = js.native
+    def validate(value: Any, validationArguments: StringDictionary[Any]): Boolean = js.native
   }
   
   trait ValdrViolation

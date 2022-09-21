@@ -10,10 +10,10 @@ PreloadJS makes it easy to preload your assets: images, sounds, JavaScript, font
 | ------------------ | :-------------: |
 | Full name          | preloadjs |
 | Keywords           | createjs, preloadjs, gskinner, preload, preloading, progress, XHR, javascript, html5 |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 12578 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3058.6666666666665 |
+| # stars            | 2821.0 |
 
 ## Links
 - [Homepage](https://createjs.com/preloadjs/)

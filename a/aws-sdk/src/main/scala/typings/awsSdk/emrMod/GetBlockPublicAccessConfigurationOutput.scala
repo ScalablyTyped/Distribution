@@ -12,7 +12,7 @@ trait GetBlockPublicAccessConfigurationOutput extends StObject {
   var BlockPublicAccessConfiguration: typings.awsSdk.emrMod.BlockPublicAccessConfiguration
   
   /**
-    * Properties that describe the AWS principal that created the BlockPublicAccessConfiguration using the PutBlockPublicAccessConfiguration action as well as the date and time that the configuration was created. Each time a configuration for block public access is updated, Amazon EMR updates this metadata.
+    * Properties that describe the Amazon Web Services principal that created the BlockPublicAccessConfiguration using the PutBlockPublicAccessConfiguration action as well as the date and time that the configuration was created. Each time a configuration for block public access is updated, Amazon EMR updates this metadata.
     */
   var BlockPublicAccessConfigurationMetadata: typings.awsSdk.emrMod.BlockPublicAccessConfigurationMetadata
 }

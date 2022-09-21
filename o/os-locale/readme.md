@@ -1,7 +1,7 @@
 
 # Scala.js typings for os-locale
 
-Typings are for version 5.0.0
+Typings are for version 6.0.2
 
 ## Library description:
 Get the system locale
@@ -9,11 +9,11 @@ Get the system locale
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | os-locale |
-| Keywords           | locale, lang, language, system, os, string, str, user, country, id, identifier, region |
-| # releases         | 3 |
-| # dependents       | 274 |
-| # downloads        | 777439304 |
-| # stars            | 6 |
+| Keywords           | locale, language, system, os, string, user, country, id, identifier, region |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3.8814064333333336E7 |
+| # stars            | 207.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/os-locale#readme)

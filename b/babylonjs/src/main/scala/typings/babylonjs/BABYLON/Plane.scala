@@ -13,9 +13,9 @@ trait Plane extends StObject {
   
   /**
     * Updates the current Plane from the plane defined by the three given points.
-    * @param point1 one of the points used to contruct the plane
-    * @param point2 one of the points used to contruct the plane
-    * @param point3 one of the points used to contruct the plane
+    * @param point1 one of the points used to construct the plane
+    * @param point2 one of the points used to construct the plane
+    * @param point3 one of the points used to construct the plane
     * @returns the updated Plane.
     */
   def copyFromPoints(point1: DeepImmutable[Vector3], point2: DeepImmutable[Vector3], point3: DeepImmutable[Vector3]): Plane

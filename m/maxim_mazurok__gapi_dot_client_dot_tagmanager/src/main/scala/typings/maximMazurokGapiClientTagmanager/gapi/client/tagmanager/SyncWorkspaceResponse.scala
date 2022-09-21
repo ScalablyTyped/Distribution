@@ -25,7 +25,7 @@ object SyncWorkspaceResponse {
     
     inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
     
-    inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
+    inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value*))
     
     inline def setSyncStatus(value: SyncStatus): Self = StObject.set(x, "syncStatus", value.asInstanceOf[js.Any])
     

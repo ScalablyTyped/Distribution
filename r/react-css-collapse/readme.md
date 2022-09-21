@@ -10,10 +10,10 @@ Component-wrapper for collapse animation with css for elements with variable and
 | ------------------ | :-------------: |
 | Full name          | react-css-collapse |
 | Keywords           | react, component, react-component, react-collapse, collapse, expand, dropdown, accordion, slide-down, slide-up |
-| # releases         | 11 |
-| # dependents       | 4 |
-| # downloads        | 373107 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21832.666666666668 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/SparebankenVest/react-css-collapse#readme)

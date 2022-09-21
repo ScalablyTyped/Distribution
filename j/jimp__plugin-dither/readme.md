@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-dither
 
-Typings are for version 0.16.1
+Typings are for version 0.16.2
 
 ## Library description:
 Dither an image.
@@ -10,10 +10,10 @@ Dither an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-dither |
 | Keywords           | - |
-| # releases         | 102 |
-| # dependents       | 1 |
-| # downloads        | 42321295 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 5077307.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40jimp%2Fplugin-dither)

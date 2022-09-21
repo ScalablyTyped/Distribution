@@ -9,15 +9,12 @@ Parse ePub electronic book files with Node.JS
 | ------------------ | :-------------: |
 | Full name          | epub |
 | Keywords           | epub, books |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 12780 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1454.6666666666667 |
+| # stars            | 262.0 |
 
 ## Links
-- [Homepage](http://github.com/julien-c/epub)
-- [Bugs](https://github.com/julien-c/epub/issues)
-- [Repository](https://github.com/julien-c/epub)
 - [Npm](https://www.npmjs.com/package/epub)
     
 

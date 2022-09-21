@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLFrameBase")
 @js.native
-/* private */ class IHTMLFrameBase ()
+/* private */ open class IHTMLFrameBase ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLFrameBase {
   
@@ -15,19 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotIHTMLFrameBase_typekey: typings.activexMshtml.MSHTML.IHTMLFrameBase = js.native
   
   /* CompleteClass */
-  var border: js.Any = js.native
+  var border: Any = js.native
   
   /* CompleteClass */
   var frameBorder: String = js.native
   
   /* CompleteClass */
-  var frameSpacing: js.Any = js.native
+  var frameSpacing: Any = js.native
   
   /* CompleteClass */
-  var marginHeight: js.Any = js.native
+  var marginHeight: Any = js.native
   
   /* CompleteClass */
-  var marginWidth: js.Any = js.native
+  var marginWidth: Any = js.native
   
   /* CompleteClass */
   var name: String = js.native

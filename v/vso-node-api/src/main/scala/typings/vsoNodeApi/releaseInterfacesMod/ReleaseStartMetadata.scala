@@ -31,7 +31,7 @@ trait ReleaseStartMetadata extends StObject {
     */
   var manualEnvironments: js.Array[String]
   
-  var properties: js.Any
+  var properties: Any
   
   /**
     * Sets reason to create a release.
@@ -46,7 +46,7 @@ object ReleaseStartMetadata {
     description: String,
     isDraft: Boolean,
     manualEnvironments: js.Array[String],
-    properties: js.Any,
+    properties: Any,
     reason: ReleaseReason
   ): ReleaseStartMetadata = {
     val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], definitionId = definitionId.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], isDraft = isDraft.asInstanceOf[js.Any], manualEnvironments = manualEnvironments.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
@@ -57,7 +57,7 @@ object ReleaseStartMetadata {
     
     inline def setArtifacts(value: js.Array[ArtifactMetadata]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    inline def setArtifactsVarargs(value: ArtifactMetadata*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: ArtifactMetadata*): Self = StObject.set(x, "artifacts", js.Array(value*))
     
     inline def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
@@ -67,9 +67,9 @@ object ReleaseStartMetadata {
     
     inline def setManualEnvironments(value: js.Array[String]): Self = StObject.set(x, "manualEnvironments", value.asInstanceOf[js.Any])
     
-    inline def setManualEnvironmentsVarargs(value: String*): Self = StObject.set(x, "manualEnvironments", js.Array(value :_*))
+    inline def setManualEnvironmentsVarargs(value: String*): Self = StObject.set(x, "manualEnvironments", js.Array(value*))
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setReason(value: ReleaseReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

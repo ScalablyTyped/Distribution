@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExportedEnvironmentVariable extends StObject {
   
   /**
-    *  The name of this exported environment variable. 
+    * The name of the exported environment variable.
     */
   var name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  The value assigned to this exported environment variable.    During a build, the value of a variable is available starting with the install phase. It can be updated between the start of the install phase and the end of the post_build phase. After the post_build phase ends, the value of exported variables cannot change. 
+    * The value assigned to the exported environment variable.
     */
   var value: js.UndefOr[String] = js.undefined
 }

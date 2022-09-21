@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CheckSchemaVersionValidityInput extends StObject {
   
   /**
-    * The data format of the schema definition. Currently only AVRO is supported.
+    * The data format of the schema definition. Currently AVRO, JSON and PROTOBUF are supported.
     */
   var DataFormat: typings.awsSdk.glueMod.DataFormat
   

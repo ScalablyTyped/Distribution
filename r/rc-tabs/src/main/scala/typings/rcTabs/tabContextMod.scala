@@ -32,7 +32,7 @@ object tabContextMod extends Shortcut {
       
       inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
   

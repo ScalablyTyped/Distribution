@@ -30,7 +30,7 @@ object FunctionDeclaration {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value*))
     
     inline def setIdentifier(value: Identifier | MemberExpression): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -40,6 +40,6 @@ object FunctionDeclaration {
     
     inline def setParameters(value: js.Array[Identifier | VarargLiteral]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: (Identifier | VarargLiteral)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: (Identifier | VarargLiteral)*): Self = StObject.set(x, "parameters", js.Array(value*))
   }
 }

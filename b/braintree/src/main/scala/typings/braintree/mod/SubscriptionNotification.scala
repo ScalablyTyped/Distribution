@@ -1,6 +1,5 @@
 package typings.braintree.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait SubscriptionNotification
 }
 object SubscriptionNotification {
   
-  inline def apply(kind: SubscriptionNotificationKind, subscription: Subscription, timestamp: Date): SubscriptionNotification = {
+  inline def apply(kind: SubscriptionNotificationKind, subscription: Subscription, timestamp: js.Date): SubscriptionNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionNotification]
   }

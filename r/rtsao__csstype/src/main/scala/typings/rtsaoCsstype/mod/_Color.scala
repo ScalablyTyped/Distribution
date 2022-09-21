@@ -1,0 +1,65 @@
+package typings.rtsaoCsstype.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait _Color
+  extends StObject
+     with _BackgroundColorProperty
+     with _BorderBlockColorProperty
+     with _BorderBlockEndColorProperty
+     with _BorderBlockEndProperty[Any]
+     with _BorderBlockProperty[Any]
+     with _BorderBlockStartColorProperty
+     with _BorderBlockStartProperty[Any]
+     with _BorderBottomColorProperty
+     with _BorderBottomProperty[Any]
+     with _BorderColorProperty
+     with _BorderInlineColorProperty
+     with _BorderInlineEndColorProperty
+     with _BorderInlineEndProperty[Any]
+     with _BorderInlineProperty[Any]
+     with _BorderInlineStartColorProperty
+     with _BorderInlineStartProperty[Any]
+     with _BorderLeftColorProperty
+     with _BorderLeftProperty[Any]
+     with _BorderProperty[Any]
+     with _BorderRightColorProperty
+     with _BorderRightProperty[Any]
+     with _BorderTopColorProperty
+     with _BorderTopProperty[Any]
+     with _CaretColorProperty
+     with _ColorProperty
+     with _ColumnRuleColorProperty
+     with _ColumnRuleProperty[Any]
+     with _FinalBgLayer[Any]
+     with _FloodColorProperty
+     with _LightingColorProperty
+     with _MozBorderBottomColorsProperty
+     with _MozBorderLeftColorsProperty
+     with _MozBorderRightColorsProperty
+     with _MozBorderTopColorsProperty
+     with _MsScrollbar3dlightColorProperty
+     with _MsScrollbarArrowColorProperty
+     with _MsScrollbarBaseColorProperty
+     with _MsScrollbarDarkshadowColorProperty
+     with _MsScrollbarFaceColorProperty
+     with _MsScrollbarHighlightColorProperty
+     with _MsScrollbarShadowColorProperty
+     with _MsScrollbarTrackColorProperty
+     with _OutlineColorProperty
+     with _OutlineProperty[Any]
+     with _Paint
+     with _ScrollbarColorProperty
+     with _StopColorProperty
+     with _TextDecorationColorProperty
+     with _TextDecorationProperty
+     with _TextEmphasisColorProperty
+     with _TextEmphasisProperty
+     with _WebkitBorderBeforeColorProperty
+     with _WebkitBorderBeforeProperty[Any]
+     with _WebkitTapHighlightColorProperty
+     with _WebkitTextFillColorProperty
+     with _WebkitTextStrokeColorProperty
+     with _WebkitTextStrokeProperty[Any]

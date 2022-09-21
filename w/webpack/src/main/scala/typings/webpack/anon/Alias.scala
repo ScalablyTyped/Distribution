@@ -1,5 +1,6 @@
 package typings.webpack.anon
 
+import typings.webpack.webpackBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,36 +8,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Alias extends StObject {
   
   /**
-  				 * New request
+  				 * New request.
   				 */
-  var alias: js.UndefOr[String] = js.undefined
+  var alias: String | `false` | js.Array[String]
   
   /**
-  				 * Request to be redirected
+  				 * Request to be redirected.
   				 */
-  var name: js.UndefOr[String] = js.undefined
+  var name: String
   
   /**
-  				 * Redirect only exact matching request
+  				 * Redirect only exact matching request.
   				 */
   var onlyModule: js.UndefOr[Boolean] = js.undefined
 }
 object Alias {
   
-  inline def apply(): Alias = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(alias: String | `false` | js.Array[String], name: String): Alias = {
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alias]
   }
   
   extension [Self <: Alias](x: Self) {
     
-    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String | `false` | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOnlyModule(value: Boolean): Self = StObject.set(x, "onlyModule", value.asInstanceOf[js.Any])
     

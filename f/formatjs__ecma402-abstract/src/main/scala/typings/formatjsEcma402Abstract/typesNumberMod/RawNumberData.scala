@@ -39,7 +39,7 @@ object RawNumberData {
     
     inline def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
     
-    inline def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
+    inline def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value*))
     
     inline def setPercent(value: Record[NumberingSystem, String]): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     

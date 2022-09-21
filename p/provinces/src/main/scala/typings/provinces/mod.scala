@@ -35,6 +35,11 @@ object mod extends Shortcut {
       var country: String
       
       /**
+        * optional English name of a country (for example: "Beijing")
+        */
+      var english: js.UndefOr[String] = js.undefined
+      
+      /**
         * full name of the province or state
         */
       var name: String
@@ -62,9 +67,13 @@ object mod extends Shortcut {
         
         inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
         
-        inline def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value :_*))
+        inline def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value*))
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+        
+        inline def setEnglish(value: String): Self = StObject.set(x, "english", value.asInstanceOf[js.Any])
+        
+        inline def setEnglishUndefined: Self = StObject.set(x, "english", js.undefined)
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         

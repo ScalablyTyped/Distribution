@@ -9,12 +9,12 @@ trait IgSpreadsheetSelectionChangedEventUIParam extends StObject {
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Get the [pane](ig.spreadsheet.SpreadsheetPane) for which the selection has changed.
     */
-  var pane: js.UndefOr[js.Any] = js.undefined
+  var pane: js.UndefOr[Any] = js.undefined
 }
 object IgSpreadsheetSelectionChangedEventUIParam {
   
@@ -25,11 +25,11 @@ object IgSpreadsheetSelectionChangedEventUIParam {
   
   extension [Self <: IgSpreadsheetSelectionChangedEventUIParam](x: Self) {
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setPane(value: js.Any): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: Any): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
   }

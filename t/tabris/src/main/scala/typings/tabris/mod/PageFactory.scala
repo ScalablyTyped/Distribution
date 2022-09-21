@@ -10,5 +10,5 @@ trait PageFactory
   extends Factory[
       PageConstructor, 
       InstanceType[PageConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[PageConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

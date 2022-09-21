@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppInstanceUserMembershipSummary extends StObject {
   
   /**
-    * The time at which a summary was last read.
+    * The time at which a message was last read.
     */
-  var ReadMarkerTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var ReadMarkerTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The type of channel summary, 
+    * The type of ChannelMembership.
     */
   var Type: js.UndefOr[ChannelMembershipType] = js.undefined
 }
@@ -25,7 +25,7 @@ object AppInstanceUserMembershipSummary {
   
   extension [Self <: AppInstanceUserMembershipSummary](x: Self) {
     
-    inline def setReadMarkerTimestamp(value: Timestamp): Self = StObject.set(x, "ReadMarkerTimestamp", value.asInstanceOf[js.Any])
+    inline def setReadMarkerTimestamp(value: js.Date): Self = StObject.set(x, "ReadMarkerTimestamp", value.asInstanceOf[js.Any])
     
     inline def setReadMarkerTimestampUndefined: Self = StObject.set(x, "ReadMarkerTimestamp", js.undefined)
     

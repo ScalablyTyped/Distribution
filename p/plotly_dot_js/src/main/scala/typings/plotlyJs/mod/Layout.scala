@@ -9,6 +9,7 @@ import typings.plotlyJs.anon.PartialLayoutAxisAnchor
 import typings.plotlyJs.anon.PartialLegend
 import typings.plotlyJs.anon.PartialMapbox
 import typings.plotlyJs.anon.PartialMargin
+import typings.plotlyJs.anon.PartialModeBar
 import typings.plotlyJs.anon.PartialPolarLayout
 import typings.plotlyJs.anon.PartialScene
 import typings.plotlyJs.anon.PartialShape
@@ -22,10 +23,13 @@ import typings.plotlyJs.plotlyJsStrings.`y unified`
 import typings.plotlyJs.plotlyJsStrings.any
 import typings.plotlyJs.plotlyJsStrings.closest
 import typings.plotlyJs.plotlyJsStrings.d
+import typings.plotlyJs.plotlyJsStrings.event
+import typings.plotlyJs.plotlyJsStrings.eventPlussignselect
 import typings.plotlyJs.plotlyJsStrings.fraction
 import typings.plotlyJs.plotlyJsStrings.group
 import typings.plotlyJs.plotlyJsStrings.h
 import typings.plotlyJs.plotlyJsStrings.lasso
+import typings.plotlyJs.plotlyJsStrings.none
 import typings.plotlyJs.plotlyJsStrings.orbit
 import typings.plotlyJs.plotlyJsStrings.overlay
 import typings.plotlyJs.plotlyJsStrings.pan
@@ -56,12 +60,20 @@ trait Layout extends StObject {
   
   var barnorm: _empty | fraction | percent
   
+  var boxmode: group | overlay
+  
   var calendar: Calendar
+  
+  var clickmode: event | select | eventPlussignselect | none
   
   var colorway: js.Array[String]
   
+  var datarevision: Double | String
+  
   // TODO
   var dragmode: zoom | pan | select | lasso | orbit | turntable | `false`
+  
+  var editrevision: Double | String
   
   var font: PartialFont
   
@@ -87,6 +99,8 @@ trait Layout extends StObject {
   var mapbox: PartialMapbox
   
   var margin: PartialMargin
+  
+  var modebar: PartialModeBar
   
   var orientation: Double
   
@@ -118,6 +132,8 @@ trait Layout extends StObject {
   
   var selectdirection: h | v | d | any
   
+  var selectionrevision: Double | String
+  
   var separators: String
   
   var shapes: js.Array[PartialShape]
@@ -136,6 +152,8 @@ trait Layout extends StObject {
   var titlefont: PartialFont
   
   var transition: Transition
+  
+  var uirevision: Double | String
   
   var width: Double
   
@@ -220,9 +238,13 @@ object Layout {
     bargroupgap: Double,
     barmode: stack | group | overlay | relative,
     barnorm: _empty | fraction | percent,
+    boxmode: group | overlay,
     calendar: Calendar,
+    clickmode: event | select | eventPlussignselect | none,
     colorway: js.Array[String],
+    datarevision: Double | String,
     dragmode: zoom | pan | select | lasso | orbit | turntable | `false`,
+    editrevision: Double | String,
     font: PartialFont,
     grid: Partialrowsnumberroworder,
     height: Double,
@@ -235,6 +257,7 @@ object Layout {
     legend: PartialLegend,
     mapbox: PartialMapbox,
     margin: PartialMargin,
+    modebar: PartialModeBar,
     orientation: Double,
     paper_bgcolor: Color,
     plot_bgcolor: Color,
@@ -250,6 +273,7 @@ object Layout {
     radialaxis: PartialAxis,
     scene: PartialScene,
     selectdirection: h | v | d | any,
+    selectionrevision: Double | String,
     separators: String,
     shapes: js.Array[PartialShape],
     showlegend: Boolean,
@@ -259,6 +283,7 @@ object Layout {
     title: String | PartialtextstringfontPart,
     titlefont: PartialFont,
     transition: Transition,
+    uirevision: Double | String,
     width: Double,
     xaxis: PartialLayoutAxisAnchor,
     xaxis2: PartialLayoutAxisAnchor,
@@ -287,7 +312,7 @@ object Layout {
     yaxisDottitle: String,
     yaxisDottype: AxisType
   ): Layout = {
-    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], autosize = autosize.asInstanceOf[js.Any], bargap = bargap.asInstanceOf[js.Any], bargroupgap = bargroupgap.asInstanceOf[js.Any], barmode = barmode.asInstanceOf[js.Any], barnorm = barnorm.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], colorway = colorway.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], hiddenlabels = hiddenlabels.asInstanceOf[js.Any], hidesources = hidesources.asInstanceOf[js.Any], hoverdistance = hoverdistance.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], mapbox = mapbox.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], paper_bgcolor = paper_bgcolor.asInstanceOf[js.Any], plot_bgcolor = plot_bgcolor.asInstanceOf[js.Any], polar = polar.asInstanceOf[js.Any], polar2 = polar2.asInstanceOf[js.Any], polar3 = polar3.asInstanceOf[js.Any], polar4 = polar4.asInstanceOf[js.Any], polar5 = polar5.asInstanceOf[js.Any], polar6 = polar6.asInstanceOf[js.Any], polar7 = polar7.asInstanceOf[js.Any], polar8 = polar8.asInstanceOf[js.Any], polar9 = polar9.asInstanceOf[js.Any], radialaxis = radialaxis.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], selectdirection = selectdirection.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any], shapes = shapes.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], sliders = sliders.asInstanceOf[js.Any], subplot = subplot.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titlefont = titlefont.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xaxis2 = xaxis2.asInstanceOf[js.Any], xaxis3 = xaxis3.asInstanceOf[js.Any], xaxis4 = xaxis4.asInstanceOf[js.Any], xaxis5 = xaxis5.asInstanceOf[js.Any], xaxis6 = xaxis6.asInstanceOf[js.Any], xaxis7 = xaxis7.asInstanceOf[js.Any], xaxis8 = xaxis8.asInstanceOf[js.Any], xaxis9 = xaxis9.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], yaxis2 = yaxis2.asInstanceOf[js.Any], yaxis3 = yaxis3.asInstanceOf[js.Any], yaxis4 = yaxis4.asInstanceOf[js.Any], yaxis5 = yaxis5.asInstanceOf[js.Any], yaxis6 = yaxis6.asInstanceOf[js.Any], yaxis7 = yaxis7.asInstanceOf[js.Any], yaxis8 = yaxis8.asInstanceOf[js.Any], yaxis9 = yaxis9.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], autosize = autosize.asInstanceOf[js.Any], bargap = bargap.asInstanceOf[js.Any], bargroupgap = bargroupgap.asInstanceOf[js.Any], barmode = barmode.asInstanceOf[js.Any], barnorm = barnorm.asInstanceOf[js.Any], boxmode = boxmode.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], clickmode = clickmode.asInstanceOf[js.Any], colorway = colorway.asInstanceOf[js.Any], datarevision = datarevision.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], editrevision = editrevision.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], hiddenlabels = hiddenlabels.asInstanceOf[js.Any], hidesources = hidesources.asInstanceOf[js.Any], hoverdistance = hoverdistance.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], mapbox = mapbox.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], modebar = modebar.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], paper_bgcolor = paper_bgcolor.asInstanceOf[js.Any], plot_bgcolor = plot_bgcolor.asInstanceOf[js.Any], polar = polar.asInstanceOf[js.Any], polar2 = polar2.asInstanceOf[js.Any], polar3 = polar3.asInstanceOf[js.Any], polar4 = polar4.asInstanceOf[js.Any], polar5 = polar5.asInstanceOf[js.Any], polar6 = polar6.asInstanceOf[js.Any], polar7 = polar7.asInstanceOf[js.Any], polar8 = polar8.asInstanceOf[js.Any], polar9 = polar9.asInstanceOf[js.Any], radialaxis = radialaxis.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], selectdirection = selectdirection.asInstanceOf[js.Any], selectionrevision = selectionrevision.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any], shapes = shapes.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], sliders = sliders.asInstanceOf[js.Any], subplot = subplot.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titlefont = titlefont.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], uirevision = uirevision.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xaxis2 = xaxis2.asInstanceOf[js.Any], xaxis3 = xaxis3.asInstanceOf[js.Any], xaxis4 = xaxis4.asInstanceOf[js.Any], xaxis5 = xaxis5.asInstanceOf[js.Any], xaxis6 = xaxis6.asInstanceOf[js.Any], xaxis7 = xaxis7.asInstanceOf[js.Any], xaxis8 = xaxis8.asInstanceOf[js.Any], xaxis9 = xaxis9.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], yaxis2 = yaxis2.asInstanceOf[js.Any], yaxis3 = yaxis3.asInstanceOf[js.Any], yaxis4 = yaxis4.asInstanceOf[js.Any], yaxis5 = yaxis5.asInstanceOf[js.Any], yaxis6 = yaxis6.asInstanceOf[js.Any], yaxis7 = yaxis7.asInstanceOf[js.Any], yaxis8 = yaxis8.asInstanceOf[js.Any], yaxis9 = yaxis9.asInstanceOf[js.Any])
     __obj.updateDynamic("xaxis.autorange")(xaxisDotautorange.asInstanceOf[js.Any])
     __obj.updateDynamic("xaxis.range")(xaxisDotrange.asInstanceOf[js.Any])
     __obj.updateDynamic("xaxis.title")(xaxisDottitle.asInstanceOf[js.Any])
@@ -307,7 +332,7 @@ object Layout {
     
     inline def setAnnotations(value: js.Array[PartialAnnotationsAlign]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    inline def setAnnotationsVarargs(value: PartialAnnotationsAlign*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: PartialAnnotationsAlign*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setAutosize(value: Boolean): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     
@@ -319,13 +344,21 @@ object Layout {
     
     inline def setBarnorm(value: _empty | fraction | percent): Self = StObject.set(x, "barnorm", value.asInstanceOf[js.Any])
     
+    inline def setBoxmode(value: group | overlay): Self = StObject.set(x, "boxmode", value.asInstanceOf[js.Any])
+    
     inline def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    
+    inline def setClickmode(value: event | select | eventPlussignselect | none): Self = StObject.set(x, "clickmode", value.asInstanceOf[js.Any])
     
     inline def setColorway(value: js.Array[String]): Self = StObject.set(x, "colorway", value.asInstanceOf[js.Any])
     
-    inline def setColorwayVarargs(value: String*): Self = StObject.set(x, "colorway", js.Array(value :_*))
+    inline def setColorwayVarargs(value: String*): Self = StObject.set(x, "colorway", js.Array(value*))
+    
+    inline def setDatarevision(value: Double | String): Self = StObject.set(x, "datarevision", value.asInstanceOf[js.Any])
     
     inline def setDragmode(value: zoom | pan | select | lasso | orbit | turntable | `false`): Self = StObject.set(x, "dragmode", value.asInstanceOf[js.Any])
+    
+    inline def setEditrevision(value: Double | String): Self = StObject.set(x, "editrevision", value.asInstanceOf[js.Any])
     
     inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
@@ -335,7 +368,7 @@ object Layout {
     
     inline def setHiddenlabels(value: js.Array[String]): Self = StObject.set(x, "hiddenlabels", value.asInstanceOf[js.Any])
     
-    inline def setHiddenlabelsVarargs(value: String*): Self = StObject.set(x, "hiddenlabels", js.Array(value :_*))
+    inline def setHiddenlabelsVarargs(value: String*): Self = StObject.set(x, "hiddenlabels", js.Array(value*))
     
     inline def setHidesources(value: Boolean): Self = StObject.set(x, "hidesources", value.asInstanceOf[js.Any])
     
@@ -347,7 +380,7 @@ object Layout {
     
     inline def setImages(value: js.Array[PartialImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: PartialImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: PartialImage*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setLegend(value: PartialLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
@@ -355,15 +388,17 @@ object Layout {
     
     inline def setMargin(value: PartialMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
+    inline def setModebar(value: PartialModeBar): Self = StObject.set(x, "modebar", value.asInstanceOf[js.Any])
+    
     inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setPaper_bgcolor(value: Color): Self = StObject.set(x, "paper_bgcolor", value.asInstanceOf[js.Any])
     
-    inline def setPaper_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "paper_bgcolor", js.Array(value :_*))
+    inline def setPaper_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "paper_bgcolor", js.Array(value*))
     
     inline def setPlot_bgcolor(value: Color): Self = StObject.set(x, "plot_bgcolor", value.asInstanceOf[js.Any])
     
-    inline def setPlot_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "plot_bgcolor", js.Array(value :_*))
+    inline def setPlot_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "plot_bgcolor", js.Array(value*))
     
     inline def setPolar(value: PartialPolarLayout): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
     
@@ -389,17 +424,19 @@ object Layout {
     
     inline def setSelectdirection(value: h | v | d | any): Self = StObject.set(x, "selectdirection", value.asInstanceOf[js.Any])
     
+    inline def setSelectionrevision(value: Double | String): Self = StObject.set(x, "selectionrevision", value.asInstanceOf[js.Any])
+    
     inline def setSeparators(value: String): Self = StObject.set(x, "separators", value.asInstanceOf[js.Any])
     
     inline def setShapes(value: js.Array[PartialShape]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    inline def setShapesVarargs(value: PartialShape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: PartialShape*): Self = StObject.set(x, "shapes", js.Array(value*))
     
     inline def setShowlegend(value: Boolean): Self = StObject.set(x, "showlegend", value.asInstanceOf[js.Any])
     
     inline def setSliders(value: js.Array[PartialSlider]): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
     
-    inline def setSlidersVarargs(value: PartialSlider*): Self = StObject.set(x, "sliders", js.Array(value :_*))
+    inline def setSlidersVarargs(value: PartialSlider*): Self = StObject.set(x, "sliders", js.Array(value*))
     
     inline def setSubplot(value: String): Self = StObject.set(x, "subplot", value.asInstanceOf[js.Any])
     
@@ -410,6 +447,8 @@ object Layout {
     inline def setTitlefont(value: PartialFont): Self = StObject.set(x, "titlefont", value.asInstanceOf[js.Any])
     
     inline def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    
+    inline def setUirevision(value: Double | String): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

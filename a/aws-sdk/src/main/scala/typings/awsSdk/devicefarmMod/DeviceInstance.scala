@@ -61,7 +61,7 @@ object DeviceInstance {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setStatus(value: InstanceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

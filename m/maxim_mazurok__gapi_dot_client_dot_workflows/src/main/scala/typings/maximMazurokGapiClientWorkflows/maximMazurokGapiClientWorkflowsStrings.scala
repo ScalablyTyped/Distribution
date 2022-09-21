@@ -23,8 +23,8 @@ object maximMazurokGapiClientWorkflowsStrings {
   inline def Workflow: Workflow = "Workflow".asInstanceOf[Workflow]
   
   @js.native
-  sealed trait v1beta extends StObject
-  inline def v1beta: v1beta = "v1beta".asInstanceOf[v1beta]
+  sealed trait v1 extends StObject
+  inline def v1: v1 = "v1".asInstanceOf[v1]
   
   @js.native
   sealed trait workflows extends StObject

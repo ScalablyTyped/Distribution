@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Eac3AtmosSettings extends StObject {
   
   /**
-    * Specify the average bitrate in bits per second.
-  Valid values: 384k, 448k, 640k, 768k
+    * Specify the average bitrate for this output in bits per second. Valid values: 384k, 448k, 576k, 640k, 768k, 1024k Default value: 448k Note that MediaConvert supports 384k only with channel-based immersive (CBI) 7.1.4 and 5.1.4 inputs. For CBI 9.1.6 and other input types, MediaConvert automatically increases your output bitrate to 448k.
     */
-  var Bitrate: js.UndefOr[integerMin384000Max768000] = js.undefined
+  var Bitrate: js.UndefOr[integerMin384000Max1024000] = js.undefined
   
   /**
     * Specify the bitstream mode for the E-AC-3 stream that the encoder emits. For more information about the EAC3 bitstream mode, see ATSC A/52-2012 (Annex E).
@@ -18,7 +17,7 @@ trait Eac3AtmosSettings extends StObject {
   var BitstreamMode: js.UndefOr[Eac3AtmosBitstreamMode] = js.undefined
   
   /**
-    * The coding mode for Dolby Digital Plus JOC (Atmos) is always 9.1.6 (CODING_MODE_9_1_6).
+    * The coding mode for Dolby Digital Plus JOC (Atmos).
     */
   var CodingMode: js.UndefOr[Eac3AtmosCodingMode] = js.undefined
   
@@ -28,35 +27,42 @@ trait Eac3AtmosSettings extends StObject {
   var DialogueIntelligence: js.UndefOr[Eac3AtmosDialogueIntelligence] = js.undefined
   
   /**
-    * Specify the absolute peak level for a signal with dynamic range compression.
+    * Specify whether MediaConvert should use any downmix metadata from your input file. Keep the default value, Custom (SPECIFIED) to provide downmix values in your job settings. Choose Follow source (INITIALIZE_FROM_SOURCE) to use the metadata from your input. Related settings--Use these settings to specify your downmix values: Left only/Right only surround (LoRoSurroundMixLevel), Left total/Right total surround (LtRtSurroundMixLevel), Left total/Right total center (LtRtCenterMixLevel), Left only/Right only center (LoRoCenterMixLevel),  and Stereo downmix (StereoDownmix). When you keep Custom (SPECIFIED) for Downmix control (DownmixControl) and you don't specify values for the related settings, MediaConvert uses default values for those settings.
+    */
+  var DownmixControl: js.UndefOr[Eac3AtmosDownmixControl] = js.undefined
+  
+  /**
+    * Choose the Dolby dynamic range control (DRC) profile that MediaConvert uses when encoding the metadata in the Dolby stream for the line operating mode. Default value: Film light (ATMOS_STORAGE_DDP_COMPR_FILM_LIGHT) Related setting: To have MediaConvert use the value you specify here, keep the default value, Custom (SPECIFIED) for the setting Dynamic range control (DynamicRangeControl). Otherwise, MediaConvert ignores Dynamic range compression line (DynamicRangeCompressionLine). For information about the Dolby DRC operating modes and profiles, see the Dynamic Range Control chapter of the Dolby Metadata Guide at https://developer.dolby.com/globalassets/professional/documents/dolby-metadata-guide.pdf.
     */
   var DynamicRangeCompressionLine: js.UndefOr[Eac3AtmosDynamicRangeCompressionLine] = js.undefined
   
   /**
-    * Specify how the service limits the audio dynamic range when compressing the audio.
+    * Choose the Dolby dynamic range control (DRC) profile that MediaConvert uses when encoding the metadata in the Dolby stream for the RF operating mode. Default value: Film light (ATMOS_STORAGE_DDP_COMPR_FILM_LIGHT) Related setting: To have MediaConvert use the value you specify here, keep the default value, Custom (SPECIFIED) for the setting Dynamic range control (DynamicRangeControl). Otherwise, MediaConvert ignores Dynamic range compression RF (DynamicRangeCompressionRf). For information about the Dolby DRC operating modes and profiles, see the Dynamic Range Control chapter of the Dolby Metadata Guide at https://developer.dolby.com/globalassets/professional/documents/dolby-metadata-guide.pdf.
     */
   var DynamicRangeCompressionRf: js.UndefOr[Eac3AtmosDynamicRangeCompressionRf] = js.undefined
   
   /**
-    * Specify a value for the following Dolby Atmos setting: Left only/Right only center mix
-  (Lo/Ro center). MediaConvert uses this value for downmixing. How the service uses this
-  value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix).
-  Valid values: 3.0, 1.5, 0.0, -1.5, -3.0, -4.5, and -6.0.
+    * Specify whether MediaConvert should use any dynamic range control metadata from your input file. Keep the default value, Custom (SPECIFIED), to provide dynamic range control values in your job settings. Choose Follow source (INITIALIZE_FROM_SOURCE) to use the metadata from your input. Related settings--Use these settings to specify your dynamic range control values: Dynamic range compression line (DynamicRangeCompressionLine) and Dynamic range compression RF (DynamicRangeCompressionRf). When you keep the value Custom (SPECIFIED) for Dynamic range control (DynamicRangeControl) and you don't specify values for the related settings, MediaConvert uses default values for those settings.
+    */
+  var DynamicRangeControl: js.UndefOr[Eac3AtmosDynamicRangeControl] = js.undefined
+  
+  /**
+    * Specify a value for the following Dolby Atmos setting: Left only/Right only center mix (Lo/Ro center). MediaConvert uses this value for downmixing. Default value: -3 dB (ATMOS_STORAGE_DDP_MIXLEV_MINUS_3_DB). Valid values: 3.0, 1.5, 0.0, -1.5, -3.0, -4.5, and -6.0. Related setting: How the service uses this value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix). Related setting: To have MediaConvert use this value, keep the default value, Custom (SPECIFIED) for the setting Downmix control (DownmixControl). Otherwise, MediaConvert ignores Left only/Right only center (LoRoCenterMixLevel).
     */
   var LoRoCenterMixLevel: js.UndefOr[doubleMinNegative6Max3] = js.undefined
   
   /**
-    * Specify a value for the following Dolby Atmos setting: Left only/Right only (Lo/Ro surround). MediaConvert uses this value for downmixing. How the service uses this value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix). Valid values: -1.5, -3.0, -4.5, -6.0, and -60. The value -60 mutes the channel.
+    * Specify a value for the following Dolby Atmos setting: Left only/Right only (Lo/Ro surround). MediaConvert uses this value for downmixing. Default value: -3 dB (ATMOS_STORAGE_DDP_MIXLEV_MINUS_3_DB). Valid values: -1.5, -3.0, -4.5, -6.0, and -60. The value -60 mutes the channel. Related setting: How the service uses this value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix). Related setting: To have MediaConvert use this value, keep the default value, Custom (SPECIFIED) for the setting Downmix control (DownmixControl). Otherwise, MediaConvert ignores Left only/Right only surround (LoRoSurroundMixLevel).
     */
   var LoRoSurroundMixLevel: js.UndefOr[doubleMinNegative60MaxNegative1] = js.undefined
   
   /**
-    * Specify a value for the following Dolby Atmos setting: Left total/Right total center mix (Lt/Rt center). MediaConvert uses this value for downmixing. How the service uses this value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix). Valid values: 3.0, 1.5, 0.0, -1.5, -3.0, -4.5, and -6.0.
+    * Specify a value for the following Dolby Atmos setting: Left total/Right total center mix (Lt/Rt center). MediaConvert uses this value for downmixing. Default value: -3 dB (ATMOS_STORAGE_DDP_MIXLEV_MINUS_3_DB) Valid values: 3.0, 1.5, 0.0, -1.5, -3.0, -4.5, and -6.0. Related setting: How the service uses this value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix). Related setting: To have MediaConvert use this value, keep the default value, Custom (SPECIFIED) for the setting Downmix control (DownmixControl). Otherwise, MediaConvert ignores Left total/Right total center (LtRtCenterMixLevel).
     */
   var LtRtCenterMixLevel: js.UndefOr[doubleMinNegative6Max3] = js.undefined
   
   /**
-    * Specify a value for the following Dolby Atmos setting: Left total/Right total surround mix (Lt/Rt surround). MediaConvert uses this value for downmixing. How the service uses this value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix). Valid values: -1.5, -3.0, -4.5, -6.0, and -60. The value -60 mutes the channel.
+    * Specify a value for the following Dolby Atmos setting: Left total/Right total surround mix (Lt/Rt surround). MediaConvert uses this value for downmixing. Default value: -3 dB (ATMOS_STORAGE_DDP_MIXLEV_MINUS_3_DB) Valid values: -1.5, -3.0, -4.5, -6.0, and -60. The value -60 mutes the channel. Related setting: How the service uses this value depends on the value that you choose for Stereo downmix (Eac3AtmosStereoDownmix). Related setting: To have MediaConvert use this value, keep the default value, Custom (SPECIFIED) for the setting Downmix control (DownmixControl). Otherwise, the service ignores Left total/Right total surround (LtRtSurroundMixLevel).
     */
   var LtRtSurroundMixLevel: js.UndefOr[doubleMinNegative60MaxNegative1] = js.undefined
   
@@ -71,12 +77,12 @@ trait Eac3AtmosSettings extends StObject {
   var SampleRate: js.UndefOr[integerMin48000Max48000] = js.undefined
   
   /**
-    * Specify the percentage of audio content that must be speech before the encoder uses the measured speech loudness as the overall program loudness.
+    * Specify the percentage of audio content, from 0% to 100%, that must be speech in order for the encoder to use the measured speech loudness as the overall program loudness. Default value: 15%
     */
-  var SpeechThreshold: js.UndefOr[integerMin1Max100] = js.undefined
+  var SpeechThreshold: js.UndefOr[integerMin0Max100] = js.undefined
   
   /**
-    * Choose how the service does stereo downmixing.
+    * Choose how the service does stereo downmixing. Default value: Not indicated (ATMOS_STORAGE_DDP_DMIXMOD_NOT_INDICATED) Related setting: To have MediaConvert use this value, keep the default value, Custom (SPECIFIED) for the setting Downmix control (DownmixControl). Otherwise, MediaConvert ignores Stereo downmix (StereoDownmix).
     */
   var StereoDownmix: js.UndefOr[Eac3AtmosStereoDownmix] = js.undefined
   
@@ -94,7 +100,7 @@ object Eac3AtmosSettings {
   
   extension [Self <: Eac3AtmosSettings](x: Self) {
     
-    inline def setBitrate(value: integerMin384000Max768000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: integerMin384000Max1024000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
     inline def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
@@ -110,6 +116,10 @@ object Eac3AtmosSettings {
     
     inline def setDialogueIntelligenceUndefined: Self = StObject.set(x, "DialogueIntelligence", js.undefined)
     
+    inline def setDownmixControl(value: Eac3AtmosDownmixControl): Self = StObject.set(x, "DownmixControl", value.asInstanceOf[js.Any])
+    
+    inline def setDownmixControlUndefined: Self = StObject.set(x, "DownmixControl", js.undefined)
+    
     inline def setDynamicRangeCompressionLine(value: Eac3AtmosDynamicRangeCompressionLine): Self = StObject.set(x, "DynamicRangeCompressionLine", value.asInstanceOf[js.Any])
     
     inline def setDynamicRangeCompressionLineUndefined: Self = StObject.set(x, "DynamicRangeCompressionLine", js.undefined)
@@ -117,6 +127,10 @@ object Eac3AtmosSettings {
     inline def setDynamicRangeCompressionRf(value: Eac3AtmosDynamicRangeCompressionRf): Self = StObject.set(x, "DynamicRangeCompressionRf", value.asInstanceOf[js.Any])
     
     inline def setDynamicRangeCompressionRfUndefined: Self = StObject.set(x, "DynamicRangeCompressionRf", js.undefined)
+    
+    inline def setDynamicRangeControl(value: Eac3AtmosDynamicRangeControl): Self = StObject.set(x, "DynamicRangeControl", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicRangeControlUndefined: Self = StObject.set(x, "DynamicRangeControl", js.undefined)
     
     inline def setLoRoCenterMixLevel(value: doubleMinNegative6Max3): Self = StObject.set(x, "LoRoCenterMixLevel", value.asInstanceOf[js.Any])
     
@@ -142,7 +156,7 @@ object Eac3AtmosSettings {
     
     inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
     
-    inline def setSpeechThreshold(value: integerMin1Max100): Self = StObject.set(x, "SpeechThreshold", value.asInstanceOf[js.Any])
+    inline def setSpeechThreshold(value: integerMin0Max100): Self = StObject.set(x, "SpeechThreshold", value.asInstanceOf[js.Any])
     
     inline def setSpeechThresholdUndefined: Self = StObject.set(x, "SpeechThreshold", js.undefined)
     

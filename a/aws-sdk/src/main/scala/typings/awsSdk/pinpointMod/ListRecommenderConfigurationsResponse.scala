@@ -27,7 +27,7 @@ object ListRecommenderConfigurationsResponse {
     
     inline def setItem(value: ListOfRecommenderConfigurationResponse): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    inline def setItemVarargs(value: RecommenderConfigurationResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+    inline def setItemVarargs(value: RecommenderConfigurationResponse*): Self = StObject.set(x, "Item", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

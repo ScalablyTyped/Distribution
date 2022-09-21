@@ -25,7 +25,7 @@ object CAGExtrudeOptions {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
     
     inline def setTwistangle(value: Double): Self = StObject.set(x, "twistangle", value.asInstanceOf[js.Any])
     

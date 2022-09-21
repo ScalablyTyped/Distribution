@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EndValue extends StObject {
   
+  /**
+    * Specifies a color of a range.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies an end value of a range.
+    */
   var endValue: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies a start value of a range.
+    */
   var startValue: js.UndefOr[Double] = js.undefined
 }
 object EndValue {

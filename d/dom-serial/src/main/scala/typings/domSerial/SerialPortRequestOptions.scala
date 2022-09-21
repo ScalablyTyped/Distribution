@@ -19,6 +19,6 @@ object SerialPortRequestOptions {
     
     inline def setFilters(value: js.Array[SerialPortFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: SerialPortFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SerialPortFilter*): Self = StObject.set(x, "filters", js.Array(value*))
   }
 }

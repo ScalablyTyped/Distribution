@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object base64EncodeMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(stringToEncode: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(stringToEncode.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(stringToEncode: Any): Any = ^.asInstanceOf[js.Dynamic].apply(stringToEncode.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/url/base64_encode", JSImport.Namespace)
   @js.native

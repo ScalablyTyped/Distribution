@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RepositoryDescription extends StObject {
   
   /**
-    *  The 12-digit account number of the AWS account that manages the repository. 
+    *  The 12-digit account number of the Amazon Web Services account that manages the repository. 
     */
   var administratorAccount: js.UndefOr[AccountId] = js.undefined
   
@@ -27,7 +27,7 @@ trait RepositoryDescription extends StObject {
   var domainName: js.UndefOr[DomainName] = js.undefined
   
   /**
-    *  The 12-digit account number of the AWS account that owns the domain that contains the repository. It does not include dashes or spaces. 
+    *  The 12-digit account number of the Amazon Web Services account that owns the domain that contains the repository. It does not include dashes or spaces. 
     */
   var domainOwner: js.UndefOr[AccountId] = js.undefined
   
@@ -42,7 +42,7 @@ trait RepositoryDescription extends StObject {
   var name: js.UndefOr[RepositoryName] = js.undefined
   
   /**
-    *  A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when AWS CodeArtifact looks for a requested package version. For more information, see Working with upstream repositories. 
+    *  A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when CodeArtifact looks for a requested package version. For more information, see Working with upstream repositories. 
     */
   var upstreams: js.UndefOr[UpstreamRepositoryInfoList] = js.undefined
 }
@@ -79,7 +79,7 @@ object RepositoryDescription {
     
     inline def setExternalConnectionsUndefined: Self = StObject.set(x, "externalConnections", js.undefined)
     
-    inline def setExternalConnectionsVarargs(value: RepositoryExternalConnectionInfo*): Self = StObject.set(x, "externalConnections", js.Array(value :_*))
+    inline def setExternalConnectionsVarargs(value: RepositoryExternalConnectionInfo*): Self = StObject.set(x, "externalConnections", js.Array(value*))
     
     inline def setName(value: RepositoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -89,6 +89,6 @@ object RepositoryDescription {
     
     inline def setUpstreamsUndefined: Self = StObject.set(x, "upstreams", js.undefined)
     
-    inline def setUpstreamsVarargs(value: UpstreamRepositoryInfo*): Self = StObject.set(x, "upstreams", js.Array(value :_*))
+    inline def setUpstreamsVarargs(value: UpstreamRepositoryInfo*): Self = StObject.set(x, "upstreams", js.Array(value*))
   }
 }

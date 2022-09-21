@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "remove-file-safe" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "remove-file-safe" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

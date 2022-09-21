@@ -35,11 +35,11 @@ object anon {
     
     def refreshToken(): js.Promise[Unit]
     
-    def shouldRefreshToken(error: js.Any): Boolean
+    def shouldRefreshToken(error: Any): Boolean
   }
   object Fetch {
     
-    inline def apply[T](fetch: T, refreshToken: () => js.Promise[Unit], shouldRefreshToken: js.Any => Boolean): Fetch[T] = {
+    inline def apply[T](fetch: T, refreshToken: () => js.Promise[Unit], shouldRefreshToken: Any => Boolean): Fetch[T] = {
       val __obj = js.Dynamic.literal(fetch = fetch.asInstanceOf[js.Any], refreshToken = js.Any.fromFunction0(refreshToken), shouldRefreshToken = js.Any.fromFunction1(shouldRefreshToken))
       __obj.asInstanceOf[Fetch[T]]
     }
@@ -50,7 +50,7 @@ object anon {
       
       inline def setRefreshToken(value: () => js.Promise[Unit]): Self = StObject.set(x, "refreshToken", js.Any.fromFunction0(value))
       
-      inline def setShouldRefreshToken(value: js.Any => Boolean): Self = StObject.set(x, "shouldRefreshToken", js.Any.fromFunction1(value))
+      inline def setShouldRefreshToken(value: Any => Boolean): Self = StObject.set(x, "shouldRefreshToken", js.Any.fromFunction1(value))
     }
   }
 }

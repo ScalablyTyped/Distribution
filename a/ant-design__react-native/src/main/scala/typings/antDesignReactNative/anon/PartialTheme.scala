@@ -43,6 +43,14 @@ trait PartialTheme extends StObject {
   
   var button_height_sm: js.UndefOr[Double] = js.undefined
   
+  var checkbox_border: js.UndefOr[String] = js.undefined
+  
+  var checkbox_border_disabled: js.UndefOr[String] = js.undefined
+  
+  var checkbox_fill: js.UndefOr[String] = js.undefined
+  
+  var checkbox_fill_disabled: js.UndefOr[String] = js.undefined
+  
   var color_icon_base: js.UndefOr[String] = js.undefined
   
   var color_link: js.UndefOr[String] = js.undefined
@@ -175,7 +183,13 @@ trait PartialTheme extends StObject {
   
   var segmented_control_height: js.UndefOr[Double] = js.undefined
   
+  var switch_checked_disabled: js.UndefOr[String] = js.undefined
+  
   var switch_fill: js.UndefOr[String] = js.undefined
+  
+  var switch_unchecked: js.UndefOr[String] = js.undefined
+  
+  var switch_unchecked_disabled: js.UndefOr[String] = js.undefined
   
   var tab_bar_fill: js.UndefOr[String] = js.undefined
   
@@ -289,6 +303,22 @@ object PartialTheme {
     inline def setButton_height_sm(value: Double): Self = StObject.set(x, "button_height_sm", value.asInstanceOf[js.Any])
     
     inline def setButton_height_smUndefined: Self = StObject.set(x, "button_height_sm", js.undefined)
+    
+    inline def setCheckbox_border(value: String): Self = StObject.set(x, "checkbox_border", value.asInstanceOf[js.Any])
+    
+    inline def setCheckbox_borderUndefined: Self = StObject.set(x, "checkbox_border", js.undefined)
+    
+    inline def setCheckbox_border_disabled(value: String): Self = StObject.set(x, "checkbox_border_disabled", value.asInstanceOf[js.Any])
+    
+    inline def setCheckbox_border_disabledUndefined: Self = StObject.set(x, "checkbox_border_disabled", js.undefined)
+    
+    inline def setCheckbox_fill(value: String): Self = StObject.set(x, "checkbox_fill", value.asInstanceOf[js.Any])
+    
+    inline def setCheckbox_fillUndefined: Self = StObject.set(x, "checkbox_fill", js.undefined)
+    
+    inline def setCheckbox_fill_disabled(value: String): Self = StObject.set(x, "checkbox_fill_disabled", value.asInstanceOf[js.Any])
+    
+    inline def setCheckbox_fill_disabledUndefined: Self = StObject.set(x, "checkbox_fill_disabled", js.undefined)
     
     inline def setColor_icon_base(value: String): Self = StObject.set(x, "color_icon_base", value.asInstanceOf[js.Any])
     
@@ -554,9 +584,21 @@ object PartialTheme {
     
     inline def setSegmented_control_heightUndefined: Self = StObject.set(x, "segmented_control_height", js.undefined)
     
+    inline def setSwitch_checked_disabled(value: String): Self = StObject.set(x, "switch_checked_disabled", value.asInstanceOf[js.Any])
+    
+    inline def setSwitch_checked_disabledUndefined: Self = StObject.set(x, "switch_checked_disabled", js.undefined)
+    
     inline def setSwitch_fill(value: String): Self = StObject.set(x, "switch_fill", value.asInstanceOf[js.Any])
     
     inline def setSwitch_fillUndefined: Self = StObject.set(x, "switch_fill", js.undefined)
+    
+    inline def setSwitch_unchecked(value: String): Self = StObject.set(x, "switch_unchecked", value.asInstanceOf[js.Any])
+    
+    inline def setSwitch_uncheckedUndefined: Self = StObject.set(x, "switch_unchecked", js.undefined)
+    
+    inline def setSwitch_unchecked_disabled(value: String): Self = StObject.set(x, "switch_unchecked_disabled", value.asInstanceOf[js.Any])
+    
+    inline def setSwitch_unchecked_disabledUndefined: Self = StObject.set(x, "switch_unchecked_disabled", js.undefined)
     
     inline def setTab_bar_fill(value: String): Self = StObject.set(x, "tab_bar_fill", value.asInstanceOf[js.Any])
     

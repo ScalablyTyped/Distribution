@@ -13,7 +13,7 @@ object setupMod {
   
   @JSImport("ionic/commands/ssh/setup", "SSHSetupCommand")
   @js.native
-  class SSHSetupCommand protected () extends SSHBaseCommand {
+  open class SSHSetupCommand protected () extends SSHBaseCommand {
     def this(namespace: INamespace) = this()
     
     def preRun(): js.Promise[Unit] = js.native

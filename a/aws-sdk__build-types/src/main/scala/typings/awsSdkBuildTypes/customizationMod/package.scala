@@ -1,13 +1,12 @@
 package typings.awsSdkBuildTypes.customizationMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdkBuildTypes.treeModelMod.TreeModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ConfigurationDefinition = org.scalablytyped.runtime.StringDictionary[typings.awsSdkBuildTypes.customizationMod.ConfigurationPropertyDefinition]
+type ConfigurationDefinition = StringDictionary[ConfigurationPropertyDefinition]
 
-type CustomizationProvider = js.Function2[
-/* model */ typings.awsSdkBuildTypes.treeModelMod.TreeModel, 
-/* target */ typings.awsSdkBuildTypes.customizationMod.RuntimeTarget, 
-typings.awsSdkBuildTypes.customizationMod.ServiceCustomizationDefinition]
+type CustomizationProvider = js.Function2[/* model */ TreeModel, /* target */ RuntimeTarget, ServiceCustomizationDefinition]

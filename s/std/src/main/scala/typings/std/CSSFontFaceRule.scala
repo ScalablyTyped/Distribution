@@ -8,6 +8,7 @@ trait CSSFontFaceRule
   extends StObject
      with CSSRule {
   
+  /* standard dom */
   val style: CSSStyleDeclaration
 }
 object CSSFontFaceRule {

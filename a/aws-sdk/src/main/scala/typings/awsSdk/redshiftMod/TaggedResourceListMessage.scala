@@ -33,6 +33,6 @@ object TaggedResourceListMessage {
     
     inline def setTaggedResourcesUndefined: Self = StObject.set(x, "TaggedResources", js.undefined)
     
-    inline def setTaggedResourcesVarargs(value: TaggedResource*): Self = StObject.set(x, "TaggedResources", js.Array(value :_*))
+    inline def setTaggedResourcesVarargs(value: TaggedResource*): Self = StObject.set(x, "TaggedResources", js.Array(value*))
   }
 }

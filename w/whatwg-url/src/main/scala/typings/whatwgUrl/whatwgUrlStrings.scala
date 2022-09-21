@@ -8,16 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object whatwgUrlStrings {
   
   @js.native
+  sealed trait URL extends StObject
+  inline def URL: URL = "URL".asInstanceOf[URL]
+  
+  @js.native
+  sealed trait URLSearchParams extends StObject
+  inline def URLSearchParams: URLSearchParams = "URLSearchParams".asInstanceOf[URLSearchParams]
+  
+  @js.native
   sealed trait authority
     extends StObject
        with StateOverride
   inline def authority: authority = "authority".asInstanceOf[authority]
-  
-  @js.native
-  sealed trait `cannot-be-a-base-URL path`
-    extends StObject
-       with StateOverride
-  inline def `cannot-be-a-base-URL path`: `cannot-be-a-base-URL path` = ("cannot-be-a-base-URL path").asInstanceOf[`cannot-be-a-base-URL path`]
   
   @js.native
   sealed trait file
@@ -56,10 +58,24 @@ object whatwgUrlStrings {
   inline def hostname: hostname = "hostname".asInstanceOf[hostname]
   
   @js.native
+  sealed trait key extends StObject
+  inline def key: key = "key".asInstanceOf[key]
+  
+  @js.native
+  sealed trait keyPlussignvalue extends StObject
+  inline def keyPlussignvalue: keyPlussignvalue = "key+value".asInstanceOf[keyPlussignvalue]
+  
+  @js.native
   sealed trait `no scheme`
     extends StObject
        with StateOverride
   inline def `no scheme`: `no scheme` = ("no scheme").asInstanceOf[`no scheme`]
+  
+  @js.native
+  sealed trait `opaque path`
+    extends StObject
+       with StateOverride
+  inline def `opaque path`: `opaque path` = ("opaque path").asInstanceOf[`opaque path`]
   
   @js.native
   sealed trait path
@@ -132,4 +148,8 @@ object whatwgUrlStrings {
     extends StObject
        with StateOverride
   inline def `special relative or authority`: `special relative or authority` = ("special relative or authority").asInstanceOf[`special relative or authority`]
+  
+  @js.native
+  sealed trait value extends StObject
+  inline def value: value = "value".asInstanceOf[value]
 }

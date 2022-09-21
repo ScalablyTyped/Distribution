@@ -2,8 +2,6 @@ package typings.realmNetworkTransport
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.ArrayBuffer
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,19 +11,17 @@ object mod {
   
   @JSImport("realm-network-transport", "DefaultNetworkTransport")
   @js.native
-  class DefaultNetworkTransport ()
+  open class DefaultNetworkTransport ()
     extends StObject
        with NetworkTransport {
     
-    /* private */ var createTimeoutSignal: js.Any = js.native
-    
-    /* private */ var fetch: js.Any = js.native
+    /* private */ var createTimeoutSignal: Any = js.native
     
     /* CompleteClass */
-    override def fetchAndParse[RequestBody /* <: js.Any */, ResponseBody /* <: js.Any */](request: Request[RequestBody]): js.Promise[ResponseBody] = js.native
+    override def fetch[RequestBody](request: Request[RequestBody]): js.Promise[FetchResponse] = js.native
     
     /* CompleteClass */
-    override def fetchWithCallbacks[RequestBody /* <: js.Any */](request: Request[RequestBody], handler: ResponseHandler): Unit = js.native
+    override def fetchWithCallbacks[RequestBody](request: Request[RequestBody], handler: ResponseHandler): Unit = js.native
   }
   object DefaultNetworkTransport {
     
@@ -39,7 +35,7 @@ object mod {
     /**
       * Constructs an AbortController.
       */
-    class AbortController ()
+    open class AbortController ()
       extends StObject
          with typings.realmNetworkTransport.mod.AbortController
     /* static member */
@@ -55,11 +51,6 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @JSImport("realm-network-transport", "DefaultNetworkTransport.DEFAULT_HEADERS.Accept")
-      @js.native
-      def Accept: String = js.native
-      inline def Accept_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Accept")(x.asInstanceOf[js.Any])
-      
       @JSImport("realm-network-transport", "DefaultNetworkTransport.DEFAULT_HEADERS.Content-Type")
       @js.native
       def ContentType: String = js.native
@@ -68,39 +59,16 @@ object mod {
     }
     
     /* static member */
+    @JSImport("realm-network-transport", "DefaultNetworkTransport.extraFetchOptions")
+    @js.native
+    def extraFetchOptions: js.UndefOr[Record[String, Any]] = js.native
+    inline def extraFetchOptions_=(x: js.UndefOr[Record[String, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraFetchOptions")(x.asInstanceOf[js.Any])
+    
+    /* static member */
     @JSImport("realm-network-transport", "DefaultNetworkTransport.fetch")
     @js.native
     def fetch: Fetch = js.native
     inline def fetch_=(x: Fetch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fetch")(x.asInstanceOf[js.Any])
-  }
-  
-  /**
-    * TODO: Determine if the shape of an error response is specific to each service or widely used
-    */
-  @JSImport("realm-network-transport", "MongoDBRealmError")
-  @js.native
-  class MongoDBRealmError protected ()
-    extends StObject
-       with Error {
-    def this(method: Method, url: String, statusCode: Double, statusText: String, response: js.Any) = this()
-    
-    val errorCode: js.UndefOr[String] = js.native
-    
-    val link: js.UndefOr[String] = js.native
-    
-    /* CompleteClass */
-    var message: String = js.native
-    
-    val method: Method = js.native
-    
-    /* CompleteClass */
-    var name: String = js.native
-    
-    val statusCode: Double = js.native
-    
-    val statusText: String = js.native
-    
-    val url: String = js.native
   }
   
   /** A controller object that allows you to abort one or more DOM requests as and when desired. */
@@ -123,37 +91,62 @@ object mod {
     val signal: AbortSignal = js.native
   }
   
-  type AbortSignal = js.Any
+  type AbortSignal = Any
   
-  type ErrorCallback = js.Function1[/* err */ Error, Unit]
+  trait CallbackResponse extends StObject {
+    
+    var body: String
+    
+    var headers: Headers
+    
+    var statusCode: Double
+  }
+  object CallbackResponse {
+    
+    inline def apply(body: String, headers: Headers, statusCode: Double): CallbackResponse = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CallbackResponse]
+    }
+    
+    extension [Self <: CallbackResponse](x: Self) {
+      
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ErrorCallback = js.Function1[/* err */ js.Error, Unit]
   
   type Fetch = js.Function2[
     /* input */ FetchRequestInfo, 
-    /* init */ js.UndefOr[FetchRequestInit], 
+    /* init */ js.UndefOr[FetchRequestInit[Any]], 
     js.Promise[FetchResponse]
   ]
   
   trait FetchBody extends StObject {
     
-    def arrayBuffer(): js.Promise[ArrayBuffer]
+    def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer]
     
-    def blob(): js.Promise[js.Any]
+    def blob(): js.Promise[Any]
     
-    val body: js.Any | Null
+    val body: FetchReadableStream | Null
     
     val bodyUsed: Boolean
     
-    def json(): js.Promise[js.Any]
+    def json[ResponseBody](): js.Promise[ResponseBody]
     
     def text(): js.Promise[String]
   }
   object FetchBody {
     
     inline def apply(
-      arrayBuffer: () => js.Promise[ArrayBuffer],
-      blob: () => js.Promise[js.Any],
+      arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
+      blob: () => js.Promise[Any],
       bodyUsed: Boolean,
-      json: () => js.Promise[js.Any],
+      json: () => js.Promise[Any],
       text: () => js.Promise[String]
     ): FetchBody = {
       val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text), body = null)
@@ -162,23 +155,21 @@ object mod {
     
     extension [Self <: FetchBody](x: Self) {
       
-      inline def setArrayBuffer(value: () => js.Promise[ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
-      inline def setBlob(value: () => js.Promise[js.Any]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
+      inline def setBlob(value: () => js.Promise[Any]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: FetchReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyNull: Self = StObject.set(x, "body", null)
       
       inline def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
       
-      inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
       inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }
   }
-  
-  type FetchBodyInit = js.Any
   
   trait FetchHeaders extends StObject {
     
@@ -226,6 +217,8 @@ object mod {
   
   type FetchHeadersInit = FetchHeaders | js.Array[js.Array[String]] | (Record[String, String])
   
+  type FetchReadableStream = Any
+  
   /** This Fetch API interface represents a resource request. */
   trait FetchRequest
     extends StObject
@@ -259,11 +252,11 @@ object mod {
   object FetchRequest {
     
     inline def apply(
-      arrayBuffer: () => js.Promise[ArrayBuffer],
-      blob: () => js.Promise[js.Any],
+      arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
+      blob: () => js.Promise[Any],
       bodyUsed: Boolean,
       headers: FetchHeaders,
-      json: () => js.Promise[js.Any],
+      json: () => js.Promise[Any],
       keepalive: Boolean,
       method: String,
       signal: AbortSignal,
@@ -288,14 +281,34 @@ object mod {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.realmNetworkTransport.realmNetworkTransportStrings.include
+    - typings.realmNetworkTransport.realmNetworkTransportStrings.omit
+    - typings.realmNetworkTransport.realmNetworkTransportStrings.`same-origin`
+  */
+  trait FetchRequestCredentials extends StObject
+  object FetchRequestCredentials {
+    
+    inline def include: typings.realmNetworkTransport.realmNetworkTransportStrings.include = "include".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.include]
+    
+    inline def omit: typings.realmNetworkTransport.realmNetworkTransportStrings.omit = "omit".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.omit]
+    
+    inline def `same-origin`: typings.realmNetworkTransport.realmNetworkTransportStrings.`same-origin` = "same-origin".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.`same-origin`]
+  }
+  
   type FetchRequestInfo = FetchRequest | String
   
-  trait FetchRequestInit extends StObject {
+  trait FetchRequestInit[RequestBody] extends StObject {
     
     /**
       * A BodyInit object or null to set request's body.
       */
-    var body: js.UndefOr[FetchBodyInit | Null] = js.undefined
+    var body: js.UndefOr[RequestBody] = js.undefined
+    
+    /**
+      * A string indicating whether credentials will be sent with the request always, never, or only when sent to a same-origin URL. Sets request's credentials.
+      */
+    var credentials: js.UndefOr[FetchRequestCredentials] = js.undefined
     
     /**
       * A Headers object, an object literal, or an array of two-item arrays to set request's headers.
@@ -318,30 +331,37 @@ object mod {
     var method: js.UndefOr[String] = js.undefined
     
     /**
+      * A string to indicate whether the request will use CORS, or will be restricted to same-origin URLs. Sets request's mode.
+      */
+    var mode: js.UndefOr[FetchRequestMode] = js.undefined
+    
+    /**
       * An AbortSignal to set request's signal.
       */
     var signal: js.UndefOr[AbortSignal | Null] = js.undefined
   }
   object FetchRequestInit {
     
-    inline def apply(): FetchRequestInit = {
+    inline def apply[RequestBody](): FetchRequestInit[RequestBody] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FetchRequestInit]
+      __obj.asInstanceOf[FetchRequestInit[RequestBody]]
     }
     
-    extension [Self <: FetchRequestInit](x: Self) {
+    extension [Self <: FetchRequestInit[?], RequestBody](x: Self & FetchRequestInit[RequestBody]) {
       
-      inline def setBody(value: FetchBodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-      
-      inline def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      
+      inline def setCredentials(value: FetchRequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
       inline def setHeaders(value: FetchHeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
@@ -355,12 +375,34 @@ object mod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
+      inline def setMode(value: FetchRequestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
       inline def setSignalNull: Self = StObject.set(x, "signal", null)
       
       inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.realmNetworkTransport.realmNetworkTransportStrings.cors
+    - typings.realmNetworkTransport.realmNetworkTransportStrings.navigate
+    - typings.realmNetworkTransport.realmNetworkTransportStrings.`no-cors`
+    - typings.realmNetworkTransport.realmNetworkTransportStrings.`same-origin`
+  */
+  trait FetchRequestMode extends StObject
+  object FetchRequestMode {
+    
+    inline def cors: typings.realmNetworkTransport.realmNetworkTransportStrings.cors = "cors".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.cors]
+    
+    inline def navigate: typings.realmNetworkTransport.realmNetworkTransportStrings.navigate = "navigate".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.navigate]
+    
+    inline def `no-cors`: typings.realmNetworkTransport.realmNetworkTransportStrings.`no-cors` = "no-cors".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.`no-cors`]
+    
+    inline def `same-origin`: typings.realmNetworkTransport.realmNetworkTransportStrings.`same-origin` = "same-origin".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.`same-origin`]
   }
   
   trait FetchResponse
@@ -377,24 +419,24 @@ object mod {
     
     val statusText: String
     
-    val `type`: js.Any
+    val `type`: Any
     
     val url: String
   }
   object FetchResponse {
     
     inline def apply(
-      arrayBuffer: () => js.Promise[ArrayBuffer],
-      blob: () => js.Promise[js.Any],
+      arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
+      blob: () => js.Promise[Any],
       bodyUsed: Boolean,
       headers: FetchHeaders,
-      json: () => js.Promise[js.Any],
+      json: () => js.Promise[Any],
       ok: Boolean,
       redirected: Boolean,
       status: Double,
       statusText: String,
       text: () => js.Promise[String],
-      `type`: js.Any,
+      `type`: Any,
       url: String
     ): FetchResponse = {
       val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any], body = null)
@@ -414,7 +456,7 @@ object mod {
       
       inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -442,35 +484,34 @@ object mod {
   
   trait NetworkTransport extends StObject {
     
-    def fetchAndParse[RequestBody /* <: js.Any */, ResponseBody /* <: js.Any */](request: Request[RequestBody]): js.Promise[ResponseBody]
+    def fetch[RequestBody](request: Request[RequestBody]): js.Promise[FetchResponse]
     
-    def fetchWithCallbacks[RequestBody /* <: js.Any */](request: Request[RequestBody], handler: ResponseHandler): Unit
+    def fetchWithCallbacks[RequestBody](request: Request[RequestBody], handler: ResponseHandler): Unit
   }
   object NetworkTransport {
     
     inline def apply(
-      fetchAndParse: Request[js.Any] => js.Promise[js.Any],
-      fetchWithCallbacks: (Request[js.Any], ResponseHandler) => Unit
+      fetch: Request[Any] => js.Promise[FetchResponse],
+      fetchWithCallbacks: (Request[Any], ResponseHandler) => Unit
     ): NetworkTransport = {
-      val __obj = js.Dynamic.literal(fetchAndParse = js.Any.fromFunction1(fetchAndParse), fetchWithCallbacks = js.Any.fromFunction2(fetchWithCallbacks))
+      val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch), fetchWithCallbacks = js.Any.fromFunction2(fetchWithCallbacks))
       __obj.asInstanceOf[NetworkTransport]
     }
     
     extension [Self <: NetworkTransport](x: Self) {
       
-      inline def setFetchAndParse(value: Request[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "fetchAndParse", js.Any.fromFunction1(value))
+      inline def setFetch(value: Request[Any] => js.Promise[FetchResponse]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
       
-      inline def setFetchWithCallbacks(value: (Request[js.Any], ResponseHandler) => Unit): Self = StObject.set(x, "fetchWithCallbacks", js.Any.fromFunction2(value))
+      inline def setFetchWithCallbacks(value: (Request[Any], ResponseHandler) => Unit): Self = StObject.set(x, "fetchWithCallbacks", js.Any.fromFunction2(value))
     }
   }
   
-  trait Request[RequestBody] extends StObject {
+  trait Request[RequestBody]
+    extends StObject
+       with FetchRequestInit[RequestBody] {
     
-    var body: js.UndefOr[RequestBody | String] = js.undefined
-    
-    var headers: js.UndefOr[Headers] = js.undefined
-    
-    var method: Method
+    @JSName("method")
+    var method_Request: Method
     
     var timeoutMs: js.UndefOr[Double] = js.undefined
     
@@ -485,14 +526,6 @@ object mod {
     
     extension [Self <: Request[?], RequestBody](x: Self & Request[RequestBody]) {
       
-      inline def setBody(value: RequestBody | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-      
-      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
-      
-      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-      
-      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-      
       inline def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setTimeoutMs(value: Double): Self = StObject.set(x, "timeoutMs", value.asInstanceOf[js.Any])
@@ -503,55 +536,30 @@ object mod {
     }
   }
   
-  trait Response extends StObject {
-    
-    var body: String
-    
-    var headers: Headers
-    
-    var statusCode: Double
-  }
-  object Response {
-    
-    inline def apply(body: String, headers: Headers, statusCode: Double): Response = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Response]
-    }
-    
-    extension [Self <: Response](x: Self) {
-      
-      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-      
-      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-      
-      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait ResponseHandler extends StObject {
     
-    def onError(err: Error): Unit
+    def onError(err: js.Error): Unit
     @JSName("onError")
     var onError_Original: ErrorCallback
     
-    def onSuccess(response: Response): Unit
+    def onSuccess(response: CallbackResponse): Unit
     @JSName("onSuccess")
     var onSuccess_Original: SuccessCallback
   }
   object ResponseHandler {
     
-    inline def apply(onError: /* err */ Error => Unit, onSuccess: /* response */ Response => Unit): ResponseHandler = {
+    inline def apply(onError: /* err */ js.Error => Unit, onSuccess: /* response */ CallbackResponse => Unit): ResponseHandler = {
       val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), onSuccess = js.Any.fromFunction1(onSuccess))
       __obj.asInstanceOf[ResponseHandler]
     }
     
     extension [Self <: ResponseHandler](x: Self) {
       
-      inline def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      inline def setOnSuccess(value: /* response */ Response => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+      inline def setOnSuccess(value: /* response */ CallbackResponse => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     }
   }
   
-  type SuccessCallback = js.Function1[/* response */ Response, Unit]
+  type SuccessCallback = js.Function1[/* response */ CallbackResponse, Unit]
 }

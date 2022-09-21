@@ -10,10 +10,10 @@ Simple Checkstyle data formatter
 | ------------------ | :-------------: |
 | Full name          | checkstyle-formatter |
 | Keywords           | checkstyle, lint, format, formatter |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 818509 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 98863.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/jimf/checkstyle-formatter)

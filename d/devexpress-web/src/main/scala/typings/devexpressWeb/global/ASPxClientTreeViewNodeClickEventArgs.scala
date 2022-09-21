@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeViewNodeClickEventArgs")
 @js.native
-class ASPxClientTreeViewNodeClickEventArgs protected ()
+open class ASPxClientTreeViewNodeClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeViewNodeClickEventArgs {
   /**
@@ -22,21 +22,21 @@ class ASPxClientTreeViewNodeClickEventArgs protected ()
   def this(
     processOnServer: Boolean,
     node: typings.devexpressWeb.ASPxClientTreeViewNode,
-    htmlElement: js.Any,
-    htmlEvent: js.Any
+    htmlElement: Any,
+    htmlEvent: Any
   ) = this()
   
   /**
     * Gets the HTML object that contains the processed node.
     */
   /* CompleteClass */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any = js.native
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets a node object related to the event.

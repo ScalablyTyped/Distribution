@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object promisePgStrings {
   
   @js.native
+  sealed trait binary extends StObject
+  inline def binary: binary = "binary".asInstanceOf[binary]
+  
+  @js.native
   sealed trait drain extends StObject
   inline def drain: drain = "drain".asInstanceOf[drain]
   
@@ -21,4 +25,8 @@ object promisePgStrings {
   @js.native
   sealed trait notification extends StObject
   inline def notification: notification = "notification".asInstanceOf[notification]
+  
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
 }

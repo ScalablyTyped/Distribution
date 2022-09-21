@@ -1,7 +1,7 @@
 
 # Scala.js typings for send
 
-Typings are for version v0.14.1
+Typings are for version 0.17
 
 ## Library description:
 Better streaming static file server with Range and conditional-GET support
@@ -11,9 +11,9 @@ Better streaming static file server with Range and conditional-GET support
 | Full name          | send |
 | Keywords           | static, file, server |
 | # releases         | 3 |
-| # dependents       | 782 |
-| # downloads        | 745673053 |
-| # stars            | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1204974266666667E8 |
+| # stars            | 728.0 |
 
 ## Links
 - [Homepage](https://github.com/pillarjs/send#readme)

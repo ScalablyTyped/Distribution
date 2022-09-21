@@ -28,7 +28,7 @@ object DirectorySitesListResponse {
     
     inline def setDirectorySitesUndefined: Self = StObject.set(x, "directorySites", js.undefined)
     
-    inline def setDirectorySitesVarargs(value: DirectorySite*): Self = StObject.set(x, "directorySites", js.Array(value :_*))
+    inline def setDirectorySitesVarargs(value: DirectorySite*): Self = StObject.set(x, "directorySites", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

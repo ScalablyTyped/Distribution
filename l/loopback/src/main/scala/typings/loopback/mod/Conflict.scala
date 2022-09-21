@@ -1,6 +1,5 @@
 package typings.loopback.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Conflict")
 @js.native
-class Conflict protected () extends StObject {
-  def this(modelId: js.Any, SourceModel: PersistedModel, TargetModel: PersistedModel) = this()
+open class Conflict protected () extends StObject {
+  def this(modelId: Any, SourceModel: PersistedModel, TargetModel: PersistedModel) = this()
   
   /**
     * Get the conflicting changes
@@ -29,7 +28,7 @@ class Conflict protected () extends StObject {
     * @param {Change} targetChang
     */
   def changes(
-    callback: js.Function3[/* err */ Error, /* sourceChange */ Change, /* targetChange */ Change, Unit]
+    callback: js.Function3[/* err */ js.Error, /* sourceChange */ Change, /* targetChange */ Change, Unit]
   ): Unit = js.native
   
   /**
@@ -40,7 +39,7 @@ class Conflict protected () extends StObject {
     * @param {PersistedModel} targe
     */
   def models(
-    callback: js.Function3[/* err */ Error, /* source */ PersistedModel, /* target */ PersistedModel, Unit]
+    callback: js.Function3[/* err */ js.Error, /* source */ PersistedModel, /* target */ PersistedModel, Unit]
   ): Unit = js.native
   
   /**
@@ -53,7 +52,7 @@ class Conflict protected () extends StObject {
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolve(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def resolve(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Resolve the conflict using the supplied instance data
@@ -62,23 +61,23 @@ class Conflict protected () extends StObject {
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolveManually(data: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def resolveManually(data: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Resolve the conflict using the instance data in the source model
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolveUsingSource(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def resolveUsingSource(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Resolve the conflict using the instance data in the target model
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resolveUsingTarget(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def resolveUsingTarget(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
-  var source: js.Any = js.native
+  var source: Any = js.native
   
   /**
     * Return a new Conflict instance with swapped Source and Target models
@@ -92,7 +91,7 @@ class Conflict protected () extends StObject {
     */
   def swapParties(): Conflict = js.native
   
-  var target: js.Any = js.native
+  var target: Any = js.native
   
   /**
     * Determine the conflict type
@@ -106,5 +105,5 @@ class Conflict protected () extends StObject {
     * @param {Error} err
     * @param {string} type The conflict type
     */
-  def `type`(callback: js.Function2[/* err */ Error, /* type */ String, Unit]): Unit = js.native
+  def `type`(callback: js.Function2[/* err */ js.Error, /* type */ String, Unit]): Unit = js.native
 }

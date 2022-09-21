@@ -22,13 +22,13 @@ object viewViewMod {
   
   @JSImport("openfin/_v2/api/view/view", JSImport.Default)
   @js.native
-  class default protected () extends ViewModule {
+  open class default protected () extends ViewModule {
     def this(wire: typings.openfin.transportMod.default) = this()
   }
   
   @JSImport("openfin/_v2/api/view/view", "View")
   @js.native
-  class View protected () extends WebContents[ViewEvents] {
+  open class View protected () extends WebContents[ViewEvents] {
     def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
     
     /**
@@ -163,7 +163,7 @@ object viewViewMod {
       * @tutorial View.getBounds
       * @experimental
       */
-    def getBounds(): js.Promise[js.Any] = js.native
+    def getBounds(): js.Promise[Any] = js.native
     
     /**
       * Retrieves the window the view is currently attached to.
@@ -178,7 +178,7 @@ object viewViewMod {
       * @tutorial View.getInfo
       * @experimental
       */
-    def getInfo(): js.Promise[js.Any] = js.native
+    def getInfo(): js.Promise[Any] = js.native
     
     /**
       * Gets the View's options.
@@ -236,7 +236,7 @@ object viewViewMod {
       * @tutorial View.updateOptions
       * @experimental
       */
-    def updateOptions(options: PartialViewOptions): js.Promise[js.Any] = js.native
+    def updateOptions(options: PartialViewOptions): js.Promise[Any] = js.native
   }
   
   trait AutoResizeOptions extends StObject {
@@ -329,13 +329,13 @@ object viewViewMod {
       
       inline def setCustomRequestHeadersUndefined: Self = StObject.set(x, "customRequestHeaders", js.undefined)
       
-      inline def setCustomRequestHeadersVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "customRequestHeaders", js.Array(value :_*))
+      inline def setCustomRequestHeadersVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "customRequestHeaders", js.Array(value*))
       
       inline def setHotkeys(value: js.Array[Hotkey]): Self = StObject.set(x, "hotkeys", value.asInstanceOf[js.Any])
       
       inline def setHotkeysUndefined: Self = StObject.set(x, "hotkeys", js.undefined)
       
-      inline def setHotkeysVarargs(value: Hotkey*): Self = StObject.set(x, "hotkeys", js.Array(value :_*))
+      inline def setHotkeysVarargs(value: Hotkey*): Self = StObject.set(x, "hotkeys", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -343,7 +343,7 @@ object viewViewMod {
       
       inline def setPreloadScriptsUndefined: Self = StObject.set(x, "preloadScripts", js.undefined)
       
-      inline def setPreloadScriptsVarargs(value: PreloadScript*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
+      inline def setPreloadScriptsVarargs(value: PreloadScript*): Self = StObject.set(x, "preloadScripts", js.Array(value*))
       
       inline def setProcessAffinity(value: String): Self = StObject.set(x, "processAffinity", value.asInstanceOf[js.Any])
       
@@ -386,7 +386,7 @@ object viewViewMod {
       */
     def getCurrentSync(): View = js.native
     
-    /* private */ var onmessage: js.Any = js.native
+    /* private */ var onmessage: Any = js.native
     
     /**
       * Asynchronously returns a View object that represents an existing view.
@@ -421,11 +421,11 @@ object viewViewMod {
     
     var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
     
-    var customContext: js.UndefOr[js.Any] = js.undefined
+    var customContext: js.UndefOr[Any] = js.undefined
     
-    var customData: js.UndefOr[js.Any] = js.undefined
+    var customData: js.UndefOr[Any] = js.undefined
     
-    var experimental: js.UndefOr[js.Any] = js.undefined
+    var experimental: js.UndefOr[Any] = js.undefined
   }
   object ViewOptions {
     
@@ -456,15 +456,15 @@ object viewViewMod {
       
       inline def setContextMenuSettingsUndefined: Self = StObject.set(x, "contextMenuSettings", js.undefined)
       
-      inline def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
+      inline def setCustomContext(value: Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
       
       inline def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
-      inline def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+      inline def setExperimental(value: Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
       
       inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     }

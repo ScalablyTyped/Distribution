@@ -10,10 +10,10 @@ Write mocha test cases without using globals or `this`. Browserify compatible. M
 | ------------------ | :-------------: |
 | Full name          | mocha-sugar-free |
 | Keywords           | mocha, karma, browser, browserify, tdd, bdd, test, npm, require, commonjs |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 16885 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1948.3333333333333 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/Joris-van-der-Wel/mocha-sugar-free#readme)

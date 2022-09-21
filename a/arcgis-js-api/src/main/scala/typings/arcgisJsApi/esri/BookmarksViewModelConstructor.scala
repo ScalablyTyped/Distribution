@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BookmarksViewModelConstructor
   extends StObject
-     with Instantiable0[BookmarksViewModel]
+     with /**
+  * Provides the logic for the [Bookmarks](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html)
+  */
+Instantiable0[BookmarksViewModel]
      with Instantiable1[/* properties */ BookmarksViewModelProperties, BookmarksViewModel]

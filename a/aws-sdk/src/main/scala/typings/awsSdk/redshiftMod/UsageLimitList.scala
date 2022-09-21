@@ -33,6 +33,6 @@ object UsageLimitList {
     
     inline def setUsageLimitsUndefined: Self = StObject.set(x, "UsageLimits", js.undefined)
     
-    inline def setUsageLimitsVarargs(value: UsageLimit*): Self = StObject.set(x, "UsageLimits", js.Array(value :_*))
+    inline def setUsageLimitsVarargs(value: UsageLimit*): Self = StObject.set(x, "UsageLimits", js.Array(value*))
   }
 }

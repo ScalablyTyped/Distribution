@@ -99,7 +99,7 @@ object TransporterOptions {
     
     inline def setHostsCache(value: Cache): Self = StObject.set(x, "hostsCache", value.asInstanceOf[js.Any])
     
-    inline def setHostsVarargs(value: HostOptions*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+    inline def setHostsVarargs(value: HostOptions*): Self = StObject.set(x, "hosts", js.Array(value*))
     
     inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     

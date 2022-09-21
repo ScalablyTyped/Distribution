@@ -14,10 +14,9 @@ object mod {
   
   @JSImport("react-native-material-design-searchbar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SearchBarProps, js.Any, js.Any]
+  open class default () extends Component[SearchBarProps, Any, Any]
   
-  type SearchBar = Component[SearchBarProps, js.Any, js.Any]
+  type SearchBar = Component[SearchBarProps, Any, Any]
   
   trait SearchBarProps extends StObject {
     

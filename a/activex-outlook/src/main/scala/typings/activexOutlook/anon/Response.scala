@@ -8,11 +8,11 @@ trait Response extends StObject {
   
   var Cancel: Boolean
   
-  val Response: js.Any
+  val Response: Any
 }
 object Response {
   
-  inline def apply(Cancel: Boolean, Response: js.Any): Response = {
+  inline def apply(Cancel: Boolean, Response: Any): Response = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Response = Response.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
@@ -21,6 +21,6 @@ object Response {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    inline def setResponse(value: js.Any): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Any): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
   }
 }

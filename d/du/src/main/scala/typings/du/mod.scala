@@ -1,6 +1,5 @@
 package typings.du
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(dir: String): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
-  inline def apply(dir: String, callback: js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[Double], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(dir: String, callback: js.Function2[/* err */ js.Error | Null, /* data */ js.UndefOr[Double], Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(dir: String, options: Options): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   inline def apply(
     dir: String,
     options: Options,
-    callback: js.Function2[/* err */ Error | Null, /* data */ js.UndefOr[Double], js.Any]
+    callback: js.Function2[/* err */ js.Error | Null, /* data */ js.UndefOr[Double], Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("du", JSImport.Namespace)

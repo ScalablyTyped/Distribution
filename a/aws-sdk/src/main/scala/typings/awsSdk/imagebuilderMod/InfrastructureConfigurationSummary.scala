@@ -27,6 +27,16 @@ trait InfrastructureConfigurationSummary extends StObject {
   var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
+    * The instance profile of the infrastructure configuration.
+    */
+  var instanceProfileName: js.UndefOr[InstanceProfileNameType] = js.undefined
+  
+  /**
+    * The instance types of the infrastructure configuration.
+    */
+  var instanceTypes: js.UndefOr[InstanceTypeList] = js.undefined
+  
+  /**
     * The name of the infrastructure configuration.
     */
   var name: js.UndefOr[ResourceName] = js.undefined
@@ -65,6 +75,16 @@ object InfrastructureConfigurationSummary {
     inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setInstanceProfileName(value: InstanceProfileNameType): Self = StObject.set(x, "instanceProfileName", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceProfileNameUndefined: Self = StObject.set(x, "instanceProfileName", js.undefined)
+    
+    inline def setInstanceTypes(value: InstanceTypeList): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
+    
+    inline def setInstanceTypesVarargs(value: InstanceType*): Self = StObject.set(x, "instanceTypes", js.Array(value*))
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

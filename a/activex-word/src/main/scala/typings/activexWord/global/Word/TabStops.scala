@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TabStops")
 @js.native
-/* private */ class TabStops ()
+/* private */ open class TabStops ()
   extends StObject
      with typings.activexWord.Word.TabStops

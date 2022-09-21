@@ -1,6 +1,5 @@
 package typings.shelljs.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +21,8 @@ trait GrepFunction extends StObject {
     * @return Returns a string containing all lines of the file that match the given regex_filter.
     */
   def apply(options: String, regex_filter: String, files: js.Array[String]): ShellString = js.native
-  def apply(options: String, regex_filter: RegExp, files: String*): ShellString = js.native
-  def apply(options: String, regex_filter: RegExp, files: js.Array[String]): ShellString = js.native
+  def apply(options: String, regex_filter: js.RegExp, files: String*): ShellString = js.native
+  def apply(options: String, regex_filter: js.RegExp, files: js.Array[String]): ShellString = js.native
   def apply(regex_filter: String, files: String*): ShellString = js.native
   /**
     * Reads input string from given files and returns a string containing all lines
@@ -34,6 +33,6 @@ trait GrepFunction extends StObject {
     * @return             Returns a string containing all lines of the file that match the given `regex_filter`.
     */
   def apply(regex_filter: String, files: js.Array[String]): ShellString = js.native
-  def apply(regex_filter: RegExp, files: String*): ShellString = js.native
-  def apply(regex_filter: RegExp, files: js.Array[String]): ShellString = js.native
+  def apply(regex_filter: js.RegExp, files: String*): ShellString = js.native
+  def apply(regex_filter: js.RegExp, files: js.Array[String]): ShellString = js.native
 }

@@ -1,18 +1,18 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.all
-import typings.arcgisJsApi.arcgisJsApiStrings.bevel
-import typings.arcgisJsApi.arcgisJsApiStrings.bottom
-import typings.arcgisJsApi.arcgisJsApiStrings.butt
-import typings.arcgisJsApi.arcgisJsApiStrings.center
+import typings.arcgisJsApi.arcgisJsApiStrings.bevel_
+import typings.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typings.arcgisJsApi.arcgisJsApiStrings.butt_
+import typings.arcgisJsApi.arcgisJsApiStrings.center_
 import typings.arcgisJsApi.arcgisJsApiStrings.circle
 import typings.arcgisJsApi.arcgisJsApiStrings.heading
-import typings.arcgisJsApi.arcgisJsApiStrings.miter
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.miter_
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.quad
-import typings.arcgisJsApi.arcgisJsApiStrings.round
-import typings.arcgisJsApi.arcgisJsApiStrings.square
-import typings.arcgisJsApi.arcgisJsApiStrings.top
+import typings.arcgisJsApi.arcgisJsApiStrings.round_
+import typings.arcgisJsApi.arcgisJsApiStrings.square_
+import typings.arcgisJsApi.arcgisJsApiStrings.top_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,19 +24,25 @@ trait PathSymbol3DLayerProperties
   /**
     * Defines offset of the path cross section relative to the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry.
     *
+    * @default "center"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#anchor)
     */
-  var anchor: js.UndefOr[center | bottom | top] = js.undefined
+  var anchor: js.UndefOr[center_ | bottom_ | top_] = js.undefined
   
   /**
     * Controls the shape at the start and end point of the path.
     *
+    * @default "butt"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#cap)
     */
-  var cap: js.UndefOr[none | butt | square | round] = js.undefined
+  var cap: js.UndefOr[none_ | butt_ | square_ | round_] = js.undefined
   
   /**
     * Indicates whether the symbol layer geometry casts shadows in the scene.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#castShadows)
     */
@@ -52,9 +58,11 @@ trait PathSymbol3DLayerProperties
   /**
     * Controls the shape of the connection between two segments of the path.
     *
+    * @default "miter"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#join)
     */
-  var join: js.UndefOr[miter | bevel | round] = js.undefined
+  var join: js.UndefOr[miter_ | bevel_ | round_] = js.undefined
   
   /**
     * The material used to shade the path.
@@ -66,6 +74,8 @@ trait PathSymbol3DLayerProperties
   /**
     * Cross-section profile of the path geometry.
     *
+    * @default "circle"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile)
     */
   var profile: js.UndefOr[circle | quad] = js.undefined
@@ -73,16 +83,11 @@ trait PathSymbol3DLayerProperties
   /**
     * Defines how the [profile](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile) is rotated as it is extruded along the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry.
     *
+    * @default "all"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profileRotation)
     */
   var profileRotation: js.UndefOr[heading | all] = js.undefined
-  
-  /**
-    * Sets the width and height of the path in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#size)
-    */
-  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * The horizontal dimension of the cross-section of the path in meters.
@@ -100,11 +105,11 @@ object PathSymbol3DLayerProperties {
   
   extension [Self <: PathSymbol3DLayerProperties](x: Self) {
     
-    inline def setAnchor(value: center | bottom | top): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: center_ | bottom_ | top_): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    inline def setCap(value: none | butt | square | round): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    inline def setCap(value: none_ | butt_ | square_ | round_): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
     inline def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
     
@@ -116,7 +121,7 @@ object PathSymbol3DLayerProperties {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setJoin(value: miter | bevel | round): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+    inline def setJoin(value: miter_ | bevel_ | round_): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
     inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
@@ -131,10 +136,6 @@ object PathSymbol3DLayerProperties {
     inline def setProfileRotationUndefined: Self = StObject.set(x, "profileRotation", js.undefined)
     
     inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
-    
-    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

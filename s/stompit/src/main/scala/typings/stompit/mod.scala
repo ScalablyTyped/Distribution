@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("stompit", "Channel")
   @js.native
-  class Channel protected ()
+  open class Channel protected ()
     extends typings.stompit.channelMod.^ {
     def this(connectFailover: typings.stompit.connectFailoverMod.^) = this()
     def this(connectFailover: typings.stompit.connectFailoverMod.^, options: ChannelOptions) = this()
@@ -28,14 +28,14 @@ object mod {
   
   @JSImport("stompit", "ChannelFactory")
   @js.native
-  class ChannelFactory protected ()
+  open class ChannelFactory protected ()
     extends typings.stompit.channelFactoryMod.^ {
     def this(connectFailover: typings.stompit.connectFailoverMod.^) = this()
   }
   
   @JSImport("stompit", "ChannelPool")
   @js.native
-  class ChannelPool protected ()
+  open class ChannelPool protected ()
     extends typings.stompit.channelPoolMod.^ {
     def this(connectFailover: typings.stompit.connectFailoverMod.^) = this()
     def this(connectFailover: typings.stompit.connectFailoverMod.^, options: ChannelPoolOptions) = this()
@@ -43,7 +43,7 @@ object mod {
   
   @JSImport("stompit", "Client")
   @js.native
-  class Client protected ()
+  open class Client protected ()
     extends typings.stompit.clientMod.^ {
     def this(transportSocket: Duplex) = this()
     def this(transportSocket: Duplex, options: SocketOptions) = this()
@@ -51,7 +51,7 @@ object mod {
   
   @JSImport("stompit", "ConnectFailover")
   @js.native
-  class ConnectFailover ()
+  open class ConnectFailover ()
     extends typings.stompit.connectFailoverMod.^ {
     def this(servers: String) = this()
     def this(servers: js.Array[ConnectOptions]) = this()
@@ -62,14 +62,14 @@ object mod {
   
   @JSImport("stompit", "IncomingFrameStream")
   @js.native
-  class IncomingFrameStream ()
+  open class IncomingFrameStream ()
     extends typings.stompit.incomingFrameStreamMod.^ {
     def this(opts: TransformOptions) = this()
   }
   
   @JSImport("stompit", "OutgoingFrameStream")
   @js.native
-  class OutgoingFrameStream protected ()
+  open class OutgoingFrameStream protected ()
     extends typings.stompit.outgoingFrameStreamMod.^ {
     def this(destination: Duplex) = this()
   }

@@ -6,6 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OnScreenPositionAssignedTargetingOptionDetails extends StObject {
   
+  /**
+    * Output only. The ad type to target. Only applicable to insertion order targeting and new line items supporting the specified ad type will inherit this targeting option by default.
+    * Possible values are: * `AD_TYPE_DISPLAY`, the setting will be inherited by new line item when line_item_type is `LINE_ITEM_TYPE_DISPLAY_DEFAULT`. * `AD_TYPE_VIDEO`, the setting will
+    * be inherited by new line item when line_item_type is `LINE_ITEM_TYPE_VIDEO_DEFAULT`.
+    */
+  var adType: js.UndefOr[String] = js.undefined
+  
   /** Output only. The on screen position. */
   var onScreenPosition: js.UndefOr[String] = js.undefined
   
@@ -20,6 +27,10 @@ object OnScreenPositionAssignedTargetingOptionDetails {
   }
   
   extension [Self <: OnScreenPositionAssignedTargetingOptionDetails](x: Self) {
+    
+    inline def setAdType(value: String): Self = StObject.set(x, "adType", value.asInstanceOf[js.Any])
+    
+    inline def setAdTypeUndefined: Self = StObject.set(x, "adType", js.undefined)
     
     inline def setOnScreenPosition(value: String): Self = StObject.set(x, "onScreenPosition", value.asInstanceOf[js.Any])
     

@@ -3,6 +3,8 @@ package typings.recurlyRecurlyJs
 import typings.recurlyRecurlyJs.`3dSecureMod`.ThreeDSecureEvent
 import typings.recurlyRecurlyJs.adyenMod.AdyenEvent
 import typings.recurlyRecurlyJs.applePayMod.ApplePayEvent
+import typings.recurlyRecurlyJs.bankRedirectMod.BankRedirectEvent
+import typings.recurlyRecurlyJs.bankRedirectMod.PaymentMethodType
 import typings.recurlyRecurlyJs.elementsMod.ElementEvent
 import typings.recurlyRecurlyJs.paypalMod.PayPalEvent
 import typings.recurlyRecurlyJs.pricingMod.PricingEvent
@@ -22,6 +24,12 @@ object recurlyRecurlyJsStrings {
   @js.native
   sealed trait bacs extends StObject
   inline def bacs: bacs = "bacs".asInstanceOf[bacs]
+  
+  @js.native
+  sealed trait banks
+    extends StObject
+       with BankRedirectEvent
+  inline def banks: banks = "banks".asInstanceOf[banks]
   
   @js.native
   sealed trait becs extends StObject
@@ -49,10 +57,17 @@ object recurlyRecurlyJsStrings {
   inline def change: change = "change".asInstanceOf[change]
   
   @js.native
+  sealed trait countries
+    extends StObject
+       with BankRedirectEvent
+  inline def countries: countries = "countries".asInstanceOf[countries]
+  
+  @js.native
   sealed trait error
     extends StObject
        with AdyenEvent
        with ApplePayEvent
+       with BankRedirectEvent
        with PayPalEvent
        with RecurlyEvent
        with ThreeDSecureEvent
@@ -75,6 +90,12 @@ object recurlyRecurlyJsStrings {
     extends StObject
        with ElementEvent
   inline def focus: focus = "focus".asInstanceOf[focus]
+  
+  @js.native
+  sealed trait ideal
+    extends StObject
+       with PaymentMethodType
+  inline def ideal: ideal = "ideal".asInstanceOf[ideal]
   
   @js.native
   sealed trait paymentAuthorized
@@ -162,6 +183,12 @@ object recurlyRecurlyJsStrings {
   inline def shippingMethodSelected: shippingMethodSelected = "shippingMethodSelected".asInstanceOf[shippingMethodSelected]
   
   @js.native
+  sealed trait sofort
+    extends StObject
+       with PaymentMethodType
+  inline def sofort: sofort = "sofort".asInstanceOf[sofort]
+  
+  @js.native
   sealed trait submit
     extends StObject
        with ElementEvent
@@ -172,6 +199,7 @@ object recurlyRecurlyJsStrings {
     extends StObject
        with AdyenEvent
        with ApplePayEvent
+       with BankRedirectEvent
        with PayPalEvent
        with ThreeDSecureEvent
   inline def token: token = "token".asInstanceOf[token]

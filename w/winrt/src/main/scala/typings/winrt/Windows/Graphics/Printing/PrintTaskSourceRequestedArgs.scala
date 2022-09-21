@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Graphics.Printing
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait PrintTaskSourceRequestedArgs
 object PrintTaskSourceRequestedArgs {
   
   inline def apply(
-    deadline: Date,
+    deadline: js.Date,
     getDeferral: () => PrintTaskSourceRequestedDeferral,
     setSource: IPrintDocumentSource => Unit
   ): PrintTaskSourceRequestedArgs = {

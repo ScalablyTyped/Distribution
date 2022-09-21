@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LensFlare extends StObject {
   
-  /* private */ var _system: js.Any
+  /** @hidden */
+  var _drawWrapper: DrawWrapper
+  
+  /* private */ var _system: Any
   
   /**
     * Define the alpha mode to render this particular lens.
@@ -41,14 +44,15 @@ trait LensFlare extends StObject {
 object LensFlare {
   
   inline def apply(
-    _system: js.Any,
+    _drawWrapper: DrawWrapper,
+    _system: Any,
     alphaMode: Double,
     color: Color3,
     dispose: () => Unit,
     position: Double,
     size: Double
   ): LensFlare = {
-    val __obj = js.Dynamic.literal(_system = _system.asInstanceOf[js.Any], alphaMode = alphaMode.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], texture = null)
+    val __obj = js.Dynamic.literal(_drawWrapper = _drawWrapper.asInstanceOf[js.Any], _system = _system.asInstanceOf[js.Any], alphaMode = alphaMode.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], texture = null)
     __obj.asInstanceOf[LensFlare]
   }
   
@@ -68,6 +72,8 @@ object LensFlare {
     
     inline def setTextureNull: Self = StObject.set(x, "texture", null)
     
-    inline def set_system(value: js.Any): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
+    inline def set_drawWrapper(value: DrawWrapper): Self = StObject.set(x, "_drawWrapper", value.asInstanceOf[js.Any])
+    
+    inline def set_system(value: Any): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,7 @@ object localhostMod {
   
   @JSImport("keya/out/browser/localhost", JSImport.Default)
   @js.native
-  class default[T] () extends LocalStoreStore[T]
+  open class default[T] () extends LocalStoreStore[T]
   /* static members */
   object default {
     

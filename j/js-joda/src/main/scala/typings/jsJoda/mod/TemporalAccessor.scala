@@ -10,7 +10,7 @@ abstract class TemporalAccessor () extends StObject {
   
   def get(field: TemporalField): Double = js.native
   
-  def query(query: TemporalQuery): js.Any = js.native
+  def query(query: TemporalQuery): Any = js.native
   
   def range(field: TemporalField): ValueRange = js.native
 }

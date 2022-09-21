@@ -12,7 +12,7 @@ object rmspropOptimizerMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/optimizers/rmsprop_optimizer", "RMSPropOptimizer")
   @js.native
-  class RMSPropOptimizer protected () extends Optimizer {
+  open class RMSPropOptimizer protected () extends Optimizer {
     def this(learningRate: Double) = this()
     def this(learningRate: Double, decay: Double) = this()
     def this(learningRate: Double, decay: Double, momentum: Double) = this()
@@ -30,13 +30,13 @@ object rmspropOptimizerMod {
     def this(learningRate: Double, decay: Unit, momentum: Unit, epsilon: Double, centered: Boolean) = this()
     def this(learningRate: Double, decay: Unit, momentum: Unit, epsilon: Unit, centered: Boolean) = this()
     
-    /* private */ var accumulatedMeanGrads: js.Any = js.native
+    /* private */ var accumulatedMeanGrads: Any = js.native
     
-    /* private */ var accumulatedMeanSquares: js.Any = js.native
+    /* private */ var accumulatedMeanSquares: Any = js.native
     
-    /* private */ var accumulatedMoments: js.Any = js.native
+    /* private */ var accumulatedMoments: Any = js.native
     
-    /* private */ var centered: js.Any = js.native
+    /* private */ var centered: Any = js.native
     
     /* protected */ var decay: Double = js.native
     

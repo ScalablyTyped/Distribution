@@ -24,6 +24,6 @@ object DescribeRdsDbInstancesResult {
     
     inline def setRdsDbInstancesUndefined: Self = StObject.set(x, "RdsDbInstances", js.undefined)
     
-    inline def setRdsDbInstancesVarargs(value: RdsDbInstance*): Self = StObject.set(x, "RdsDbInstances", js.Array(value :_*))
+    inline def setRdsDbInstancesVarargs(value: RdsDbInstance*): Self = StObject.set(x, "RdsDbInstances", js.Array(value*))
   }
 }

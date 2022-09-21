@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "GetApnsSandboxChannelCommand")
 @js.native
-class GetApnsSandboxChannelCommand protected ()
+open class GetApnsSandboxChannelCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getApnsSandboxChannelCommandMod.GetApnsSandboxChannelCommand {
   def this(input: GetApnsSandboxChannelInput) = this()
 }

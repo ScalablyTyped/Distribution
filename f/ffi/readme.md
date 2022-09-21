@@ -10,10 +10,10 @@ A foreign function interface (FFI) for Node.js
 | ------------------ | :-------------: |
 | Full name          | ffi |
 | Keywords           | foreign, function, interface, ffi, libffi, binding, c |
-| # releases         | 2 |
-| # dependents       | 301 |
-| # downloads        | 693642 |
-| # stars            | 24 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40120.333333333336 |
+| # stars            | 3912.0 |
 
 ## Links
 - [Homepage](http://github.com/node-ffi/node-ffi)

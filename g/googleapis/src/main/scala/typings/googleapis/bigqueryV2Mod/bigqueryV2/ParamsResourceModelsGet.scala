@@ -1,9 +1,5 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,22 +9,17 @@ trait ParamsResourceModelsGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Dataset ID of the requested model.
+    * Required. Dataset ID of the requested model.
     */
   var datasetId: js.UndefOr[String] = js.undefined
   
   /**
-    * Model ID of the requested model.
+    * Required. Model ID of the requested model.
     */
   var modelId: js.UndefOr[String] = js.undefined
   
   /**
-    * Project ID of the requested model.
+    * Required. Project ID of the requested model.
     */
   var projectId: js.UndefOr[String] = js.undefined
 }
@@ -40,10 +31,6 @@ object ParamsResourceModelsGet {
   }
   
   extension [Self <: ParamsResourceModelsGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     

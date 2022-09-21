@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListConnectorEntitiesRequest extends StObject {
   
   /**
-    *  The name of the connector profile. The name is unique for each ConnectorProfile in the AWS account, and is used to query the downstream connector. 
+    * The version of the API that's used by the connector.
+    */
+  var apiVersion: js.UndefOr[ApiVersion_] = js.undefined
+  
+  /**
+    *  The name of the connector profile. The name is unique for each ConnectorProfile in the Amazon Web Services account, and is used to query the downstream connector. 
     */
   var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.undefined
   
@@ -29,6 +34,10 @@ object ListConnectorEntitiesRequest {
   }
   
   extension [Self <: ListConnectorEntitiesRequest](x: Self) {
+    
+    inline def setApiVersion(value: ApiVersion_): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     

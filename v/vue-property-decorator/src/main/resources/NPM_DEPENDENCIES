@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vue-property-decorator" : "9.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vue-property-decorator" : "9.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

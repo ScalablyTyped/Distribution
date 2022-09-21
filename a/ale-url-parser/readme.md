@@ -1,7 +1,7 @@
 
 # Scala.js typings for ale-url-parser
 
-Typings are for version 0.10
+Typings are for version 0.13
 
 ## Library description:
 Fast url parser
@@ -10,10 +10,10 @@ Fast url parser
 | ------------------ | :-------------: |
 | Full name          | ale-url-parser |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 1185 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 125.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/msn0/ale-url-parser#readme)

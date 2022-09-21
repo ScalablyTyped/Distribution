@@ -10,10 +10,10 @@ Compare semver version numbers
 | ------------------ | :-------------: |
 | Full name          | compare-version |
 | Keywords           | compare, number, semver, version |
-| # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 4669566 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1082953.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/compare-version)

@@ -11,7 +11,7 @@ trait DeviceMetadata extends StObject {
   var entries: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAndroiddeviceprovisioning.maximMazurokGapiClientAndroiddeviceprovisioningStrings.DeviceMetadata & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAndroiddeviceprovisioning.maximMazurokGapiClientAndroiddeviceprovisioningStrings.DeviceMetadata & TopLevel[Any]
   ] = js.undefined
 }
 object DeviceMetadata {
@@ -26,7 +26,7 @@ object DeviceMetadata {
     inline def setEntries(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAndroiddeviceprovisioning.maximMazurokGapiClientAndroiddeviceprovisioningStrings.DeviceMetadata & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroiddeviceprovisioning.maximMazurokGapiClientAndroiddeviceprovisioningStrings.DeviceMetadata & TopLevel[Any]
     ): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)

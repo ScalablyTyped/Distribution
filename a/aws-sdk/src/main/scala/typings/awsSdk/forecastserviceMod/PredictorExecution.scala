@@ -33,6 +33,6 @@ object PredictorExecution {
     
     inline def setTestWindowsUndefined: Self = StObject.set(x, "TestWindows", js.undefined)
     
-    inline def setTestWindowsVarargs(value: TestWindowSummary*): Self = StObject.set(x, "TestWindows", js.Array(value :_*))
+    inline def setTestWindowsVarargs(value: TestWindowSummary*): Self = StObject.set(x, "TestWindows", js.Array(value*))
   }
 }

@@ -4,46 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Instance Template resource. (== resource_for beta.instanceTemplates ==)
-  * (== resource_for v1.instanceTemplates ==)
-  */
 trait SchemaInstanceTemplate extends StObject {
   
   /**
-    * [Output Only] The creation timestamp for this instance template in
-    * RFC3339 text format.
+    * [Output Only] The creation timestamp for this instance template in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.undefined
+  var creationTimestamp: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An optional description of this resource. Provide this property when you
-    * create the resource.
+    * An optional description of this resource. Provide this property when you create the resource.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] A unique identifier for this instance template. The server
-    * defines this identifier.
+    * [Output Only] A unique identifier for this instance template. The server defines this identifier.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] The resource type, which is always compute#instanceTemplate
-    * for instance templates.
+    * [Output Only] The resource type, which is always compute#instanceTemplate for instance templates.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Name of the resource; provided by the client when the resource is
-    * created. The name must be 1-63 characters long, and comply with RFC1035.
-    * Specifically, the name must be 1-63 characters long and match the regular
-    * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
-    * must be a lowercase letter, and all following characters must be a dash,
-    * lowercase letter, or digit, except the last character, which cannot be a
-    * dash.
+    * Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The instance properties for this instance template.
@@ -51,19 +37,14 @@ trait SchemaInstanceTemplate extends StObject {
   var properties: js.UndefOr[SchemaInstanceProperties] = js.undefined
   
   /**
-    * [Output Only] The URL for this instance template. The server defines this
-    * URL.
+    * [Output Only] The URL for this instance template. The server defines this URL.
     */
-  var selfLink: js.UndefOr[String] = js.undefined
+  var selfLink: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The source instance used to create the template. You can provide this as
-    * a partial or full URL to the resource. For example, the following are
-    * valid values:   -
-    * https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/instance
-    * - projects/project/zones/zone/instances/instance
+    * The source instance used to create the template. You can provide this as a partial or full URL to the resource. For example, the following are valid values: - https://www.googleapis.com/compute/v1/projects/project/zones/zone /instances/instance - projects/project/zones/zone/instances/instance
     */
-  var sourceInstance: js.UndefOr[String] = js.undefined
+  var sourceInstance: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The source instance params to use to create this instance template.
@@ -81,21 +62,31 @@ object SchemaInstanceTemplate {
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
+    inline def setCreationTimestampNull: Self = StObject.set(x, "creationTimestamp", null)
+    
     inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -105,9 +96,13 @@ object SchemaInstanceTemplate {
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
+    inline def setSelfLinkNull: Self = StObject.set(x, "selfLink", null)
+    
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     inline def setSourceInstance(value: String): Self = StObject.set(x, "sourceInstance", value.asInstanceOf[js.Any])
+    
+    inline def setSourceInstanceNull: Self = StObject.set(x, "sourceInstance", null)
     
     inline def setSourceInstanceParams(value: SchemaSourceInstanceParams): Self = StObject.set(x, "sourceInstanceParams", value.asInstanceOf[js.Any])
     

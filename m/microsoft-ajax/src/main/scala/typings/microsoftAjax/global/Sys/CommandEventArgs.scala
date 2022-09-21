@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sys.CommandEventArgs")
 @js.native
-class CommandEventArgs protected ()
+open class CommandEventArgs protected ()
   extends StObject
      with typings.microsoftAjax.Sys.CommandEventArgs {
   //#region Constructors
-  def this(commandName: String, commandArgument: js.Any, commandSource: js.Any) = this()
+  def this(commandName: String, commandArgument: Any, commandSource: Any) = this()
   
   /**
     * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
@@ -27,7 +27,7 @@ class CommandEventArgs protected ()
     * Gets a value that represents the command argument.
     */
   /* CompleteClass */
-  override def get_commandArgument(): js.Any = js.native
+  override def get_commandArgument(): Any = js.native
   
   //#endregion
   //#region Properties
@@ -41,5 +41,5 @@ class CommandEventArgs protected ()
     * Gets a value that represents the command source.
     */
   /* CompleteClass */
-  override def get_commandSource(): js.Any = js.native
+  override def get_commandSource(): Any = js.native
 }

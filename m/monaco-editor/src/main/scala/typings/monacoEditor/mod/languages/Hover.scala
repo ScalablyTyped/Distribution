@@ -31,7 +31,7 @@ object Hover {
     
     inline def setContents(value: js.Array[IMarkdownString]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    inline def setContentsVarargs(value: IMarkdownString*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: IMarkdownString*): Self = StObject.set(x, "contents", js.Array(value*))
     
     inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

@@ -29,6 +29,6 @@ object PlacementTag {
     
     inline def setTagDatasUndefined: Self = StObject.set(x, "tagDatas", js.undefined)
     
-    inline def setTagDatasVarargs(value: TagData*): Self = StObject.set(x, "tagDatas", js.Array(value :_*))
+    inline def setTagDatasVarargs(value: TagData*): Self = StObject.set(x, "tagDatas", js.Array(value*))
   }
 }

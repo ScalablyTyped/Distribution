@@ -13,9 +13,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def compose(): js.UndefOr[AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")().asInstanceOf[js.UndefOr[AttributeMap]]
     inline def compose(a: Unit, b: Unit, keepNull: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    inline def compose(a: Unit, b: AttributeMap): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
     inline def compose(a: Unit, b: AttributeMap, keepNull: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    inline def compose(a: AttributeMap): js.UndefOr[AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[AttributeMap]]
     inline def compose(a: AttributeMap, b: Unit, keepNull: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    inline def compose(a: AttributeMap, b: AttributeMap): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
     inline def compose(a: AttributeMap, b: AttributeMap, keepNull: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
     
     inline def diff(): js.UndefOr[AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")().asInstanceOf[js.UndefOr[AttributeMap]]
@@ -38,5 +42,5 @@ object mod {
     inline def transform(a: AttributeMap, b: AttributeMap, priority: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
   }
   
-  type AttributeMap = StringDictionary[js.Any]
+  type AttributeMap = StringDictionary[Any]
 }

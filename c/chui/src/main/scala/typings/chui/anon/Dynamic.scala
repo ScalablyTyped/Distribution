@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dynamic extends StObject {
   
-  var callback: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var callback: js.UndefOr[js.Function1[/* args */ js.UndefOr[Any], Any]] = js.undefined
   
   var dynamic: js.UndefOr[Boolean] = js.undefined
 }
@@ -19,7 +19,7 @@ object Dynamic {
   
   extension [Self <: Dynamic](x: Self) {
     
-    inline def setCallback(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* args */ js.UndefOr[Any] => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     

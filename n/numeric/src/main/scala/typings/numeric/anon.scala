@@ -29,15 +29,15 @@ object anon {
       
       inline def setA(value: Matrix): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       
-      inline def setAVarargs(value: js.Array[Double]*): Self = StObject.set(x, "A", js.Array(value :_*))
+      inline def setAVarargs(value: js.Array[Double]*): Self = StObject.set(x, "A", js.Array(value*))
       
       inline def setI(value: Matrix): Self = StObject.set(x, "I", value.asInstanceOf[js.Any])
       
-      inline def setIVarargs(value: js.Array[Double]*): Self = StObject.set(x, "I", js.Array(value :_*))
+      inline def setIVarargs(value: js.Array[Double]*): Self = StObject.set(x, "I", js.Array(value*))
       
       inline def setP(value: Vector): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
       
-      inline def setPVarargs(value: Double*): Self = StObject.set(x, "P", js.Array(value :_*))
+      inline def setPVarargs(value: Double*): Self = StObject.set(x, "P", js.Array(value*))
     }
   }
   
@@ -58,11 +58,11 @@ object anon {
       
       inline def setB(value: Matrix): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       
-      inline def setBVarargs(value: js.Array[Double]*): Self = StObject.set(x, "B", js.Array(value :_*))
+      inline def setBVarargs(value: js.Array[Double]*): Self = StObject.set(x, "B", js.Array(value*))
       
       inline def setQ(value: Matrix): Self = StObject.set(x, "Q", value.asInstanceOf[js.Any])
       
-      inline def setQVarargs(value: js.Array[Double]*): Self = StObject.set(x, "Q", js.Array(value :_*))
+      inline def setQVarargs(value: js.Array[Double]*): Self = StObject.set(x, "Q", js.Array(value*))
     }
   }
   
@@ -121,11 +121,11 @@ object anon {
       
       inline def setGradient(value: Vector): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
-      inline def setGradientVarargs(value: Double*): Self = StObject.set(x, "gradient", js.Array(value :_*))
+      inline def setGradientVarargs(value: Double*): Self = StObject.set(x, "gradient", js.Array(value*))
       
       inline def setInvHessian(value: Matrix): Self = StObject.set(x, "invHessian", value.asInstanceOf[js.Any])
       
-      inline def setInvHessianVarargs(value: js.Array[Double]*): Self = StObject.set(x, "invHessian", js.Array(value :_*))
+      inline def setInvHessianVarargs(value: js.Array[Double]*): Self = StObject.set(x, "invHessian", js.Array(value*))
       
       inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
@@ -133,7 +133,7 @@ object anon {
       
       inline def setSolution(value: Vector): Self = StObject.set(x, "solution", value.asInstanceOf[js.Any])
       
-      inline def setSolutionVarargs(value: Double*): Self = StObject.set(x, "solution", js.Array(value :_*))
+      inline def setSolutionVarargs(value: Double*): Self = StObject.set(x, "solution", js.Array(value*))
     }
   }
   
@@ -154,11 +154,11 @@ object anon {
       
       inline def setH(value: Matrix): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
       
-      inline def setHVarargs(value: js.Array[Double]*): Self = StObject.set(x, "H", js.Array(value :_*))
+      inline def setHVarargs(value: js.Array[Double]*): Self = StObject.set(x, "H", js.Array(value*))
       
       inline def setQ(value: Matrix): Self = StObject.set(x, "Q", value.asInstanceOf[js.Any])
       
-      inline def setQVarargs(value: js.Array[Double]*): Self = StObject.set(x, "Q", js.Array(value :_*))
+      inline def setQVarargs(value: js.Array[Double]*): Self = StObject.set(x, "Q", js.Array(value*))
     }
   }
   
@@ -177,7 +177,7 @@ object anon {
       
       inline def setHinv(value: Matrix): Self = StObject.set(x, "Hinv", value.asInstanceOf[js.Any])
       
-      inline def setHinvVarargs(value: js.Array[Double]*): Self = StObject.set(x, "Hinv", js.Array(value :_*))
+      inline def setHinvVarargs(value: js.Array[Double]*): Self = StObject.set(x, "Hinv", js.Array(value*))
     }
   }
   
@@ -213,25 +213,25 @@ object anon {
       
       inline def setIact(value: Vector): Self = StObject.set(x, "iact", value.asInstanceOf[js.Any])
       
-      inline def setIactVarargs(value: Double*): Self = StObject.set(x, "iact", js.Array(value :_*))
+      inline def setIactVarargs(value: Double*): Self = StObject.set(x, "iact", js.Array(value*))
       
       inline def setIterations(value: Vector): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      inline def setIterationsVarargs(value: Double*): Self = StObject.set(x, "iterations", js.Array(value :_*))
+      inline def setIterationsVarargs(value: Double*): Self = StObject.set(x, "iterations", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setSolution(value: Vector): Self = StObject.set(x, "solution", value.asInstanceOf[js.Any])
       
-      inline def setSolutionVarargs(value: Double*): Self = StObject.set(x, "solution", js.Array(value :_*))
+      inline def setSolutionVarargs(value: Double*): Self = StObject.set(x, "solution", js.Array(value*))
       
       inline def setUnconstrained_solution(value: Vector): Self = StObject.set(x, "unconstrained_solution", value.asInstanceOf[js.Any])
       
-      inline def setUnconstrained_solutionVarargs(value: Double*): Self = StObject.set(x, "unconstrained_solution", js.Array(value :_*))
+      inline def setUnconstrained_solutionVarargs(value: Double*): Self = StObject.set(x, "unconstrained_solution", js.Array(value*))
       
       inline def setValue(value: Vector): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -258,7 +258,7 @@ object anon {
       
       inline def setSolution(value: Scalar | Vector): Self = StObject.set(x, "solution", value.asInstanceOf[js.Any])
       
-      inline def setSolutionVarargs(value: Double*): Self = StObject.set(x, "solution", js.Array(value :_*))
+      inline def setSolutionVarargs(value: Double*): Self = StObject.set(x, "solution", js.Array(value*))
     }
   }
   
@@ -279,11 +279,11 @@ object anon {
       
       inline def setLU(value: Matrix): Self = StObject.set(x, "LU", value.asInstanceOf[js.Any])
       
-      inline def setLUVarargs(value: js.Array[Double]*): Self = StObject.set(x, "LU", js.Array(value :_*))
+      inline def setLUVarargs(value: js.Array[Double]*): Self = StObject.set(x, "LU", js.Array(value*))
       
       inline def setP(value: Vector): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
       
-      inline def setPVarargs(value: Double*): Self = StObject.set(x, "P", js.Array(value :_*))
+      inline def setPVarargs(value: Double*): Self = StObject.set(x, "P", js.Array(value*))
     }
   }
   
@@ -317,15 +317,15 @@ object anon {
       
       inline def setS(value: Vector): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
       
-      inline def setSVarargs(value: Double*): Self = StObject.set(x, "S", js.Array(value :_*))
+      inline def setSVarargs(value: Double*): Self = StObject.set(x, "S", js.Array(value*))
       
       inline def setU(value: Matrix): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
       
-      inline def setUVarargs(value: js.Array[Double]*): Self = StObject.set(x, "U", js.Array(value :_*))
+      inline def setUVarargs(value: js.Array[Double]*): Self = StObject.set(x, "U", js.Array(value*))
       
       inline def setV(value: Matrix): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
       
-      inline def setVVarargs(value: js.Array[Double]*): Self = StObject.set(x, "V", js.Array(value :_*))
+      inline def setVVarargs(value: js.Array[Double]*): Self = StObject.set(x, "V", js.Array(value*))
     }
   }
 }

@@ -9,7 +9,7 @@ trait Filter extends StObject {
   /**
     * The time at which the filter was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.undefined
+  var creationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the dataset group to which the filter belongs.
@@ -27,14 +27,14 @@ trait Filter extends StObject {
   var filterArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * Specifies the type of item interactions to filter out of recommendation results. The filter expression must follow the following format:  EXCLUDE itemId WHERE INTERACTIONS.event_type in ("EVENT_TYPE")  Where "EVENT_TYPE" is the type of event to filter out. For more information, see Using Filters with Amazon Personalize.
+    * Specifies the type of item interactions to filter out of recommendation results. The filter expression must follow specific format rules. For information about filter expression structure and syntax, see Filter expressions.
     */
   var filterExpression: js.UndefOr[FilterExpression] = js.undefined
   
   /**
     * The time at which the filter was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
+  var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the filter.
@@ -55,7 +55,7 @@ object Filter {
   
   extension [Self <: Filter](x: Self) {
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
@@ -75,7 +75,7 @@ object Filter {
     
     inline def setFilterExpressionUndefined: Self = StObject.set(x, "filterExpression", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     

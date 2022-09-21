@@ -24,10 +24,10 @@ object grid {
     @JSName("render")
     var render_IHorizontalGrid: js.UndefOr[
         js.Function3[
-          /* surface */ js.UndefOr[js.Any], 
-          /* ctx */ js.UndefOr[js.Any], 
-          /* clipRegion */ js.UndefOr[js.Any], 
-          js.Any
+          /* surface */ js.UndefOr[Any], 
+          /* ctx */ js.UndefOr[Any], 
+          /* clipRegion */ js.UndefOr[Any], 
+          Any
         ]
       ] = js.undefined
   }
@@ -41,7 +41,7 @@ object grid {
     extension [Self <: IHorizontalGrid](x: Self) {
       
       inline def setRender(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
+        value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -56,14 +56,14 @@ object grid {
       * @returns * returns false to stop rendering in this frame. All the sprite haven't been rendered will have their dirty flag untouched.
       */
     @JSName("render")
-    var render_IRadialGrid: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var render_IRadialGrid: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Update the path
       * @param path Object
       * @param attr Object
       */
     @JSName("updatePath")
-    var updatePath_IRadialGrid: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var updatePath_IRadialGrid: js.UndefOr[js.Function2[/* path */ js.UndefOr[Any], /* attr */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IRadialGrid {
     
@@ -74,11 +74,11 @@ object grid {
     
     extension [Self <: IRadialGrid](x: Self) {
       
-      inline def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      inline def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
+      inline def setUpdatePath(value: (/* path */ js.UndefOr[Any], /* attr */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
       
       inline def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
     }
@@ -97,10 +97,10 @@ object grid {
     @JSName("render")
     var render_IVerticalGrid: js.UndefOr[
         js.Function3[
-          /* surface */ js.UndefOr[js.Any], 
-          /* ctx */ js.UndefOr[js.Any], 
-          /* clipRegion */ js.UndefOr[js.Any], 
-          js.Any
+          /* surface */ js.UndefOr[Any], 
+          /* ctx */ js.UndefOr[Any], 
+          /* clipRegion */ js.UndefOr[Any], 
+          Any
         ]
       ] = js.undefined
   }
@@ -114,7 +114,7 @@ object grid {
     extension [Self <: IVerticalGrid](x: Self) {
       
       inline def setRender(
-        value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
+        value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* clipRegion */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

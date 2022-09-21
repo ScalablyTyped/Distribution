@@ -12,7 +12,7 @@ trait WindowsInformationProtectionAppLockerFile
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // File as a byte array
-  var file: js.UndefOr[NullableOption[Double]] = js.undefined
+  var file: js.UndefOr[NullableOption[String]] = js.undefined
   
   // SHA256 hash of the file
   var fileHash: js.UndefOr[NullableOption[String]] = js.undefined
@@ -35,7 +35,7 @@ object WindowsInformationProtectionAppLockerFile {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    inline def setFile(value: NullableOption[Double]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: NullableOption[String]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     inline def setFileHash(value: NullableOption[String]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     

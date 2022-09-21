@@ -15,7 +15,7 @@ trait GoogleActionsOrdersV3VerticalsReservationReservationItemExtension extends 
   /**
     * Any extra fields exchanged between merchant and google.
     */
-  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var `extension`: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * Location of the service/event.
@@ -74,7 +74,7 @@ object GoogleActionsOrdersV3VerticalsReservationReservationItemExtension {
     
     inline def setConfirmationCodeUndefined: Self = StObject.set(x, "confirmationCode", js.undefined)
     
-    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
@@ -94,7 +94,7 @@ object GoogleActionsOrdersV3VerticalsReservationReservationItemExtension {
     
     inline def setStaffFacilitatorsUndefined: Self = StObject.set(x, "staffFacilitators", js.undefined)
     
-    inline def setStaffFacilitatorsVarargs(value: GoogleActionsOrdersV3VerticalsReservationStaffFacilitator*): Self = StObject.set(x, "staffFacilitators", js.Array(value :_*))
+    inline def setStaffFacilitatorsVarargs(value: GoogleActionsOrdersV3VerticalsReservationStaffFacilitator*): Self = StObject.set(x, "staffFacilitators", js.Array(value*))
     
     inline def setStatus(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

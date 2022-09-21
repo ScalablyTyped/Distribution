@@ -1,7 +1,7 @@
 
 # Scala.js typings for reveal
 
-Typings are for version 3.3.0
+Typings are for version 4.2.0
 
 ## Library description:
 The HTML presentation framework
@@ -11,9 +11,9 @@ The HTML presentation framework
 | Full name          | reveal |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 18551 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 774.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/ForbesLindesay/reveal)

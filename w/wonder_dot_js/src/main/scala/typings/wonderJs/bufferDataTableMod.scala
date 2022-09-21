@@ -9,7 +9,7 @@ object bufferDataTableMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/buffer/BufferDataTable", "BufferDataTable")
   @js.native
-  class BufferDataTable () extends StObject
+  open class BufferDataTable () extends StObject
   /* static members */
   object BufferDataTable {
     

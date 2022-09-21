@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A subscription to receive Google PubSub notifications.
-  */
 trait SchemaServiceAccount extends StObject {
   
   /**
     * The ID of the notification.
     */
-  var email_address: js.UndefOr[String] = js.undefined
+  var email_address: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The kind of item this is. For notifications, this is always
-    * storage#notification.
+    * The kind of item this is. For notifications, this is always storage#notification.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaServiceAccount {
   
@@ -31,9 +27,13 @@ object SchemaServiceAccount {
     
     inline def setEmail_address(value: String): Self = StObject.set(x, "email_address", value.asInstanceOf[js.Any])
     
+    inline def setEmail_addressNull: Self = StObject.set(x, "email_address", null)
+    
     inline def setEmail_addressUndefined: Self = StObject.set(x, "email_address", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

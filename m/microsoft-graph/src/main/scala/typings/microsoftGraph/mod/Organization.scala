@@ -11,8 +11,11 @@ trait Organization
   // The collection of service plans associated with the tenant. Not nullable.
   var assignedPlans: js.UndefOr[js.Array[AssignedPlan]] = js.undefined
   
+  // Branding for the organization. Nullable.
+  var branding: js.UndefOr[NullableOption[OrganizationalBranding]] = js.undefined
+  
   /**
-    * Telephone number for the organization. NOTE: Although this is a string collection, only one number can be set for this
+    * Telephone number for the organization. Although this is a string collection, only one number can be set for this
     * property.
     */
   var businessPhones: js.UndefOr[js.Array[String]] = js.undefined
@@ -29,13 +32,13 @@ trait Organization
   // Country/region name of the address for the organization.
   var country: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Country/region abbreviation for the organization.
+  // Country or region abbreviation for the organization in ISO 3166-2 format.
   var countryLetterCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the
     * organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in
-    * UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
+    * UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -52,23 +55,23 @@ trait Organization
   var mobileDeviceManagementAuthority: js.UndefOr[MdmAuthority] = js.undefined
   
   /**
-    * The time and date at which the tenant was last synced with the on-premise directory. The Timestamp type represents date
-    * and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would
-    * look like this: '2014-01-01T00:00:00Z'. Read-only.
+    * The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents
+    * date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is
+    * 2014-01-01T00:00:00Z. Read-only.
     */
   var onPremisesLastSyncDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * true if this object is synced from an on-premises directory; false if this object was originally synced from an
-    * on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory
-    * (default).
+    * on-premises directory but is no longer synced. Nullable. null if this object has never been synced from an on-premises
+    * directory (default).
     */
   var onPremisesSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Postal code of the address for the organization.
   var postalCode: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The preferred language for the organization. Should follow ISO 639-1 Code; for example 'en'.
+  // The preferred language for the organization. Should follow ISO 639-1 Code; for example, en.
   var preferredLanguage: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The privacy profile of an organization.
@@ -108,13 +111,19 @@ object Organization {
     
     inline def setAssignedPlansUndefined: Self = StObject.set(x, "assignedPlans", js.undefined)
     
-    inline def setAssignedPlansVarargs(value: AssignedPlan*): Self = StObject.set(x, "assignedPlans", js.Array(value :_*))
+    inline def setAssignedPlansVarargs(value: AssignedPlan*): Self = StObject.set(x, "assignedPlans", js.Array(value*))
+    
+    inline def setBranding(value: NullableOption[OrganizationalBranding]): Self = StObject.set(x, "branding", value.asInstanceOf[js.Any])
+    
+    inline def setBrandingNull: Self = StObject.set(x, "branding", null)
+    
+    inline def setBrandingUndefined: Self = StObject.set(x, "branding", js.undefined)
     
     inline def setBusinessPhones(value: js.Array[String]): Self = StObject.set(x, "businessPhones", value.asInstanceOf[js.Any])
     
     inline def setBusinessPhonesUndefined: Self = StObject.set(x, "businessPhones", js.undefined)
     
-    inline def setBusinessPhonesVarargs(value: String*): Self = StObject.set(x, "businessPhones", js.Array(value :_*))
+    inline def setBusinessPhonesVarargs(value: String*): Self = StObject.set(x, "businessPhones", js.Array(value*))
     
     inline def setCertificateBasedAuthConfiguration(value: NullableOption[js.Array[CertificateBasedAuthConfiguration]]): Self = StObject.set(x, "certificateBasedAuthConfiguration", value.asInstanceOf[js.Any])
     
@@ -122,7 +131,7 @@ object Organization {
     
     inline def setCertificateBasedAuthConfigurationUndefined: Self = StObject.set(x, "certificateBasedAuthConfiguration", js.undefined)
     
-    inline def setCertificateBasedAuthConfigurationVarargs(value: CertificateBasedAuthConfiguration*): Self = StObject.set(x, "certificateBasedAuthConfiguration", js.Array(value :_*))
+    inline def setCertificateBasedAuthConfigurationVarargs(value: CertificateBasedAuthConfiguration*): Self = StObject.set(x, "certificateBasedAuthConfiguration", js.Array(value*))
     
     inline def setCity(value: NullableOption[String]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
@@ -160,13 +169,13 @@ object Organization {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setMarketingNotificationEmails(value: js.Array[String]): Self = StObject.set(x, "marketingNotificationEmails", value.asInstanceOf[js.Any])
     
     inline def setMarketingNotificationEmailsUndefined: Self = StObject.set(x, "marketingNotificationEmails", js.undefined)
     
-    inline def setMarketingNotificationEmailsVarargs(value: String*): Self = StObject.set(x, "marketingNotificationEmails", js.Array(value :_*))
+    inline def setMarketingNotificationEmailsVarargs(value: String*): Self = StObject.set(x, "marketingNotificationEmails", js.Array(value*))
     
     inline def setMobileDeviceManagementAuthority(value: MdmAuthority): Self = StObject.set(x, "mobileDeviceManagementAuthority", value.asInstanceOf[js.Any])
     
@@ -206,19 +215,19 @@ object Organization {
     
     inline def setProvisionedPlansUndefined: Self = StObject.set(x, "provisionedPlans", js.undefined)
     
-    inline def setProvisionedPlansVarargs(value: ProvisionedPlan*): Self = StObject.set(x, "provisionedPlans", js.Array(value :_*))
+    inline def setProvisionedPlansVarargs(value: ProvisionedPlan*): Self = StObject.set(x, "provisionedPlans", js.Array(value*))
     
     inline def setSecurityComplianceNotificationMails(value: js.Array[String]): Self = StObject.set(x, "securityComplianceNotificationMails", value.asInstanceOf[js.Any])
     
     inline def setSecurityComplianceNotificationMailsUndefined: Self = StObject.set(x, "securityComplianceNotificationMails", js.undefined)
     
-    inline def setSecurityComplianceNotificationMailsVarargs(value: String*): Self = StObject.set(x, "securityComplianceNotificationMails", js.Array(value :_*))
+    inline def setSecurityComplianceNotificationMailsVarargs(value: String*): Self = StObject.set(x, "securityComplianceNotificationMails", js.Array(value*))
     
     inline def setSecurityComplianceNotificationPhones(value: js.Array[String]): Self = StObject.set(x, "securityComplianceNotificationPhones", value.asInstanceOf[js.Any])
     
     inline def setSecurityComplianceNotificationPhonesUndefined: Self = StObject.set(x, "securityComplianceNotificationPhones", js.undefined)
     
-    inline def setSecurityComplianceNotificationPhonesVarargs(value: String*): Self = StObject.set(x, "securityComplianceNotificationPhones", js.Array(value :_*))
+    inline def setSecurityComplianceNotificationPhonesVarargs(value: String*): Self = StObject.set(x, "securityComplianceNotificationPhones", js.Array(value*))
     
     inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
@@ -236,7 +245,7 @@ object Organization {
     
     inline def setTechnicalNotificationMailsUndefined: Self = StObject.set(x, "technicalNotificationMails", js.undefined)
     
-    inline def setTechnicalNotificationMailsVarargs(value: String*): Self = StObject.set(x, "technicalNotificationMails", js.Array(value :_*))
+    inline def setTechnicalNotificationMailsVarargs(value: String*): Self = StObject.set(x, "technicalNotificationMails", js.Array(value*))
     
     inline def setTenantType(value: NullableOption[String]): Self = StObject.set(x, "tenantType", value.asInstanceOf[js.Any])
     
@@ -248,6 +257,6 @@ object Organization {
     
     inline def setVerifiedDomainsUndefined: Self = StObject.set(x, "verifiedDomains", js.undefined)
     
-    inline def setVerifiedDomainsVarargs(value: VerifiedDomain*): Self = StObject.set(x, "verifiedDomains", js.Array(value :_*))
+    inline def setVerifiedDomainsVarargs(value: VerifiedDomain*): Self = StObject.set(x, "verifiedDomains", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.UserDefinedProperty")
 @js.native
-/* private */ class UserDefinedProperty ()
+/* private */ open class UserDefinedProperty ()
   extends StObject
      with typings.activexOutlook.Outlook.UserDefinedProperty {
   
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotUserDefinedProperty_typekey: typings.activexOutlook.Outlook.UserDefinedProperty = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

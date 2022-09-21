@@ -1,5 +1,6 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.plotlyJsStrings.`bottom center`
 import typings.plotlyJs.plotlyJsStrings.`bottom left`
 import typings.plotlyJs.plotlyJsStrings.`bottom right`
@@ -26,7 +27,7 @@ trait PartialMapboxSymbol extends StObject {
   
   var text: js.UndefOr[String] = js.undefined
   
-  var textfont: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
+  var textfont: js.UndefOr[Partial[Font]] = js.undefined
   
   var textposition: js.UndefOr[
     (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
@@ -57,7 +58,7 @@ object PartialMapboxSymbol {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTextfont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "textfont", value.asInstanceOf[js.Any])
+    inline def setTextfont(value: Partial[Font]): Self = StObject.set(x, "textfont", value.asInstanceOf[js.Any])
     
     inline def setTextfontUndefined: Self = StObject.set(x, "textfont", js.undefined)
     

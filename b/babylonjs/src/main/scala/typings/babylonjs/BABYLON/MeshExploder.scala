@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MeshExploder extends StObject {
   
-  /* private */ var _centerMesh: js.Any = js.native
+  /* private */ var _centerMesh: Any = js.native
   
-  /* private */ var _centerPosition: js.Any = js.native
+  /* private */ var _centerPosition: Any = js.native
   
-  /* private */ var _meshes: js.Any = js.native
+  /* private */ var _meshes: Any = js.native
   
-  /* private */ var _meshesOrigins: js.Any = js.native
+  /* private */ var _meshesOrigins: Any = js.native
   
-  /* private */ var _newPosition: js.Any = js.native
+  /* private */ var _newPosition: Any = js.native
   
-  /* private */ var _scaledDirection: js.Any = js.native
+  /* private */ var _scaledDirection: Any = js.native
   
-  /* private */ var _setCenterMesh: js.Any = js.native
+  /* private */ var _setCenterMesh: Any = js.native
   
-  /* private */ var _toCenterVectors: js.Any = js.native
+  /* private */ var _toCenterVectors: Any = js.native
   
   /**
     * Explodes meshes giving a specific direction

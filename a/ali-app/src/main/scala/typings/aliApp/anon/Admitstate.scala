@@ -13,7 +13,7 @@ trait Admitstate extends StObject {
     */
   var admit_state: Y | N | String
   
-  var callbackData: js.Any
+  var callbackData: Any
   
   /**
     * 商户发起借用服务时传入的参数，需要在借用结束后返回给商户的参数
@@ -47,7 +47,7 @@ object Admitstate {
   
   inline def apply(
     admit_state: Y | N | String,
-    callbackData: js.Any,
+    callbackData: Any,
     invoke_state: String,
     order_no: String,
     out_order_no: String,
@@ -61,7 +61,7 @@ object Admitstate {
     
     inline def setAdmit_state(value: Y | N | String): Self = StObject.set(x, "admit_state", value.asInstanceOf[js.Any])
     
-    inline def setCallbackData(value: js.Any): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
+    inline def setCallbackData(value: Any): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
     
     inline def setInvoke_state(value: String): Self = StObject.set(x, "invoke_state", value.asInstanceOf[js.Any])
     

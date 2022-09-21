@@ -3,8 +3,8 @@ package typings.rollup.mod
 import typings.rollup.anon.Custom
 import typings.rollup.anon.Line
 import typings.rollup.anon.Name
+import typings.rollup.anon.idstringresolveDependenci
 import typings.std.IterableIterator
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ trait PluginContext
   /** @deprecated Use `this.emitFile` instead */
   def emitAsset(name: String): String = js.native
   def emitAsset(name: String, source: String): String = js.native
-  def emitAsset(name: String, source: Uint8Array): String = js.native
+  def emitAsset(name: String, source: js.typedarray.Uint8Array): String = js.native
   /** @deprecated Use `this.emitFile` instead */
   @JSName("emitAsset")
   var emitAsset_Original: EmitAsset = js.native
@@ -67,11 +67,13 @@ trait PluginContext
   @JSName("isExternal")
   var isExternal_Original: IsExternal = js.native
   
+  def load(options: idstringresolveDependenci): js.Promise[ModuleInfo] = js.native
+  
   /** @deprecated Use `this.getModuleIds` instead */
   var moduleIds: IterableIterator[String] = js.native
   
   def parse(input: String): AcornNode = js.native
-  def parse(input: String, options: js.Any): AcornNode = js.native
+  def parse(input: String, options: Any): AcornNode = js.native
   
   def resolve(source: String): js.Promise[ResolvedId | Null] = js.native
   def resolve(source: String, importer: String): js.Promise[ResolvedId | Null] = js.native
@@ -83,7 +85,7 @@ trait PluginContext
   def resolveId(source: String, importer: String): js.Promise[String | Null] = js.native
   
   def setAssetSource(assetReferenceId: String, source: String): Unit = js.native
-  def setAssetSource(assetReferenceId: String, source: Uint8Array): Unit = js.native
+  def setAssetSource(assetReferenceId: String, source: js.typedarray.Uint8Array): Unit = js.native
   
   def warn(warning: String): Unit = js.native
   def warn(warning: String, pos: Double): Unit = js.native

@@ -50,14 +50,14 @@ trait XEngine
     *
     * The arguments given in **aArgs** can be ignored by the engine. The Script is executed synchronously.
     */
-  def run(aScript: String, xThis: XInterface, aArgs: SeqEquiv[js.Any]): js.Any
+  def run(aScript: String, xThis: XInterface, aArgs: SeqEquiv[Any]): Any
   
   /**
     * runs the script specified by a string and makes callbacks.
     *
     * The arguments given in **aArgs** can be ignored by the engine. The script is executed asynchronously.
     */
-  def runAsync(acript: String, xThis: XInterface, args: SeqEquiv[js.Any], xCallback: XEngineListener): Unit
+  def runAsync(acript: String, xThis: XInterface, args: SeqEquiv[Any], xCallback: XEngineListener): Unit
   
   /** sets an access object to get external functions. */
   def setLibraryAccess(Library: XLibraryAccess): Unit
@@ -78,11 +78,11 @@ object XEngine {
     cancel: () => Unit,
     compile: (String, String, Boolean) => Boolean,
     getRoot: () => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEngineListener: XEngineListener => Unit,
-    run: (String, XInterface, SeqEquiv[js.Any]) => js.Any,
-    runAsync: (String, XInterface, SeqEquiv[js.Any], XEngineListener) => Unit,
+    run: (String, XInterface, SeqEquiv[Any]) => Any,
+    runAsync: (String, XInterface, SeqEquiv[Any], XEngineListener) => Unit,
     setLibraryAccess: XLibraryAccess => Unit,
     setRoot: XInterface => Unit
   ): XEngine = {
@@ -104,9 +104,9 @@ object XEngine {
     
     inline def setRoot(value: XInterface): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
-    inline def setRun(value: (String, XInterface, SeqEquiv[js.Any]) => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
+    inline def setRun(value: (String, XInterface, SeqEquiv[Any]) => Any): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     
-    inline def setRunAsync(value: (String, XInterface, SeqEquiv[js.Any], XEngineListener) => Unit): Self = StObject.set(x, "runAsync", js.Any.fromFunction4(value))
+    inline def setRunAsync(value: (String, XInterface, SeqEquiv[Any], XEngineListener) => Unit): Self = StObject.set(x, "runAsync", js.Any.fromFunction4(value))
     
     inline def setSetLibraryAccess(value: XLibraryAccess => Unit): Self = StObject.set(x, "setLibraryAccess", js.Any.fromFunction1(value))
     

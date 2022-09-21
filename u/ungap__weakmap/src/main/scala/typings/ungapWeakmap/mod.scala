@@ -1,6 +1,5 @@
 package typings.ungapWeakmap
 
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +8,11 @@ object mod {
   
   @JSImport("@ungap/weakmap", JSImport.Namespace)
   @js.native
-  class ^[K /* <: js.Object */, V] ()
+  open class ^[K /* <: js.Object */, V] ()
     extends StObject
        with WeakMap[K, V] {
     def this(entries: js.Array[js.Tuple2[K, V]]) = this()
-    def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
+    def this(iterable: js.Iterable[js.Tuple2[K, V]]) = this()
     
     /* CompleteClass */
     override def delete(key: K): Boolean = js.native

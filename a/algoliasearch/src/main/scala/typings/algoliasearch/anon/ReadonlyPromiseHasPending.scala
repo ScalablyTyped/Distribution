@@ -17,9 +17,9 @@ trait ReadonlyPromiseHasPending extends StObject {
 object ReadonlyPromiseHasPending {
   
   inline def apply(
-    `catch`: () => js.Promise[HasPendingMappingsResponse | js.Any],
+    `catch`: () => js.Promise[HasPendingMappingsResponse | Any],
     `finally`: () => js.Promise[HasPendingMappingsResponse],
-    `then`: () => js.Promise[js.Any | js.Any]
+    `then`: () => js.Promise[Any | Any]
   ): ReadonlyPromiseHasPending = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -30,10 +30,10 @@ object ReadonlyPromiseHasPending {
   
   extension [Self <: ReadonlyPromiseHasPending](x: Self) {
     
-    inline def setCatch(value: () => js.Promise[HasPendingMappingsResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[HasPendingMappingsResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
     inline def setFinally(value: () => js.Promise[HasPendingMappingsResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

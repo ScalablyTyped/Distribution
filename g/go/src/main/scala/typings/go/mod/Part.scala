@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The constructor builds an empty Part.
   * @param {EnumValue=} type if not supplied, the default Panel type is Panel.Position.
   */
-class Part () extends Panel {
+open class Part () extends Panel {
   def this(`type`: EnumValue) = this()
   
   /**

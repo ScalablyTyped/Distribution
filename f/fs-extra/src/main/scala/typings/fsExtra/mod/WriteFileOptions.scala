@@ -1,12 +1,13 @@
 package typings.fsExtra.mod
 
+import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait WriteFileOptions extends StObject {
   
-  var encoding: js.UndefOr[String | Null] = js.undefined
+  var encoding: js.UndefOr[BufferEncoding | String | Null] = js.undefined
   
   var flag: js.UndefOr[String] = js.undefined
   
@@ -21,7 +22,7 @@ object WriteFileOptions {
   
   extension [Self <: WriteFileOptions](x: Self) {
     
-    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding | String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
     

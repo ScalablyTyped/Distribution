@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisKeySelectorFlushes extends StObject {
   
-  def apply[T, K](): js.Any = js.native
-  def apply[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = js.native
+  def apply[T, K](): Any = js.native
+  def apply[T, K](keySelector: js.Function1[/* value */ T, K]): Any = js.native
   def apply[T, K](
     keySelector: js.Function1[/* value */ T, K],
-    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-  ): js.Any = js.native
+    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+  ): Any = js.native
   def apply[T, K](
     keySelector: Unit,
-    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-  ): js.Any = js.native
+    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+  ): Any = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ListGallery")
 @js.native
-/* private */ class ListGallery ()
+/* private */ open class ListGallery ()
   extends StObject
      with typings.activexWord.Word.ListGallery {
   
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Modified(Index: Double): Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Reset(Index: Double): Unit = js.native

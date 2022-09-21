@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `18` extends StObject {
   
-  var weight: js.UndefOr[String] = js.undefined
+  var border: js.UndefOr[SideSize] = js.undefined
 }
 object `18` {
   
@@ -17,8 +17,8 @@ object `18` {
   
   extension [Self <: `18`](x: Self) {
     
-    inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setBorder(value: SideSize): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object groupByMod {
   
-  @JSImport("@antv/util/lib/group-by", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/group-by", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

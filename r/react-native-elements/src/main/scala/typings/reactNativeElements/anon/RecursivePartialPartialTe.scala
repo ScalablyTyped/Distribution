@@ -1,10 +1,10 @@
 package typings.reactNativeElements.anon
 
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
@@ -13,40 +13,35 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextLayoutEventData
 import typings.reactNative.mod.TextStyle
-import typings.reactNativeElements.mod.RecursivePartial
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.all
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
 import typings.reactNativeElements.reactNativeElementsStrings.auto
 import typings.reactNativeElements.reactNativeElementsStrings.balanced
-import typings.reactNativeElements.reactNativeElementsStrings.button
 import typings.reactNativeElements.reactNativeElementsStrings.clip
 import typings.reactNativeElements.reactNativeElementsStrings.email
+import typings.reactNativeElements.reactNativeElementsStrings.full
 import typings.reactNativeElements.reactNativeElementsStrings.head
 import typings.reactNativeElements.reactNativeElementsStrings.highQuality
 import typings.reactNativeElements.reactNativeElementsStrings.link
 import typings.reactNativeElements.reactNativeElementsStrings.middle
 import typings.reactNativeElements.reactNativeElementsStrings.no
 import typings.reactNativeElements.reactNativeElementsStrings.none
+import typings.reactNativeElements.reactNativeElementsStrings.normal
 import typings.reactNativeElements.reactNativeElementsStrings.phoneNumber
 import typings.reactNativeElements.reactNativeElementsStrings.polite
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_checked
-import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_unchecked
 import typings.reactNativeElements.reactNativeElementsStrings.simple
 import typings.reactNativeElements.reactNativeElementsStrings.tail
 import typings.reactNativeElements.reactNativeElementsStrings.yes
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.TextProps>> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<std.Partial<react-native-elements.react-native-elements/dist/text/Text.TextProps>> */
 trait RecursivePartialPartialTe extends StObject {
   
   var accessibilityActions: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]] = js.undefined
-  
-  var accessibilityComponentType: js.UndefOr[
-    RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]
-  ] = js.undefined
   
   var accessibilityElementsHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
@@ -56,13 +51,15 @@ trait RecursivePartialPartialTe extends StObject {
   
   var accessibilityLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
+  var accessibilityLabelledBy: js.UndefOr[RecursivePartial[js.UndefOr[String | js.Array[String]]]] = js.undefined
+  
+  var accessibilityLanguage: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
+  
   var accessibilityLiveRegion: js.UndefOr[RecursivePartial[js.UndefOr[none | polite | assertive]]] = js.undefined
   
   var accessibilityRole: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityRole]]] = js.undefined
   
   var accessibilityState: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityState]]] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]] = js.undefined
   
   var accessibilityValue: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityValue]]] = js.undefined
   
@@ -73,6 +70,10 @@ trait RecursivePartialPartialTe extends StObject {
   var adjustsFontSizeToFit: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
   var allowFontScaling: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
+  
+  var android_hyphenationFrequency: js.UndefOr[RecursivePartial[js.UndefOr[normal | none | full]]] = js.undefined
+  
+  var children: js.UndefOr[RecursivePartial[js.UndefOr[ReactNode]]] = js.undefined
   
   var dataDetectorType: js.UndefOr[RecursivePartial[js.UndefOr[Null | phoneNumber | link | email | none | all]]] = js.undefined
   
@@ -126,6 +127,14 @@ trait RecursivePartialPartialTe extends StObject {
     RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
   ] = js.undefined
   
+  var onPressIn: js.UndefOr[
+    RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
+  ] = js.undefined
+  
+  var onPressOut: js.UndefOr[
+    RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]
+  ] = js.undefined
+  
   var onTextLayout: js.UndefOr[
     RecursivePartial[
       js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]]
@@ -157,10 +166,6 @@ object RecursivePartialPartialTe {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityComponentType(value: RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
-    
     inline def setAccessibilityElementsHidden(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
@@ -177,6 +182,14 @@ object RecursivePartialPartialTe {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: RecursivePartial[js.UndefOr[String | js.Array[String]]]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLanguage(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: RecursivePartial[js.UndefOr[none | polite | assertive]]): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -188,10 +201,6 @@ object RecursivePartialPartialTe {
     inline def setAccessibilityState(value: RecursivePartial[js.UndefOr[AccessibilityState]]): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
     
     inline def setAccessibilityValue(value: RecursivePartial[js.UndefOr[AccessibilityValue]]): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -212,6 +221,14 @@ object RecursivePartialPartialTe {
     inline def setAllowFontScaling(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     
     inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
+    
+    inline def setAndroid_hyphenationFrequency(value: RecursivePartial[js.UndefOr[normal | none | full]]): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
+    
+    inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
+    
+    inline def setChildren(value: RecursivePartial[js.UndefOr[ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setDataDetectorType(value: RecursivePartial[js.UndefOr[Null | phoneNumber | link | email | none | all]]): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
     
@@ -302,6 +319,14 @@ object RecursivePartialPartialTe {
     inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
     
     inline def setOnPress(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
+    
+    inline def setOnPressIn(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onPressIn", value.asInstanceOf[js.Any])
+    
+    inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+    
+    inline def setOnPressOut(value: RecursivePartial[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]): Self = StObject.set(x, "onPressOut", value.asInstanceOf[js.Any])
+    
+    inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
     
     inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties for the chart series
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartSeriesFormat")
 @js.native
-class ChartSeriesFormat ()
+open class ChartSeriesFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartSeriesFormat {
   

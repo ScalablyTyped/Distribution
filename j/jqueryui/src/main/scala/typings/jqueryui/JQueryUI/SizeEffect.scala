@@ -10,7 +10,7 @@ trait SizeEffect extends StObject {
   
   var scale: js.UndefOr[String] = js.undefined
   
-  var to: js.UndefOr[js.Any] = js.undefined
+  var to: js.UndefOr[Any] = js.undefined
 }
 object SizeEffect {
   
@@ -25,13 +25,13 @@ object SizeEffect {
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value :_*))
+    inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value*))
     
     inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }

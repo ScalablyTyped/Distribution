@@ -2,7 +2,6 @@ package typings.jqueryAjaxfile
 
 import typings.jqueryAjaxfile.Mocha.IRunner
 import typings.jqueryAjaxfile.anon.Failures
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ trait Mocha extends StObject {
   def globals(values: js.Array[String]): Mocha = js.native
   
   def grep(value: String): Mocha = js.native
-  def grep(value: RegExp): Mocha = js.native
+  def grep(value: js.RegExp): Mocha = js.native
   
   /** Enables growl support. */
   def growl(): Mocha = js.native
@@ -39,7 +38,7 @@ trait Mocha extends StObject {
   /** Sets reporter by name, defaults to "spec". */
   def reporter(name: String): Mocha = js.native
   /** Sets reporter constructor, defaults to mocha.reporters.Spec. */
-  def reporter(reporter: js.Function2[/* runner */ IRunner, /* options */ js.Any, js.Any]): Mocha = js.native
+  def reporter(reporter: js.Function2[/* runner */ IRunner, /* options */ Any, Any]): Mocha = js.native
   
   /** Runs tests and invokes `onComplete()` when finished. */
   def run(): IRunner = js.native

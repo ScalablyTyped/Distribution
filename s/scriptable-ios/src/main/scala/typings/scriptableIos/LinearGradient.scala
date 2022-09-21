@@ -57,13 +57,13 @@ object LinearGradient {
     
     inline def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setEndPoint(value: Point): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     
     inline def setLocations(value: js.Array[Double]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    inline def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setStartPoint(value: Point): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
   }

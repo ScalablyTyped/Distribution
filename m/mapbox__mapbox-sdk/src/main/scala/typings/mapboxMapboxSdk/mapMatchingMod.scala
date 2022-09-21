@@ -1,15 +1,14 @@
 package typings.mapboxMapboxSdk
 
-import typings.mapboxGl.mod.LngLatLike
 import typings.mapboxMapboxSdk.directionsMod.DirectionsAnnotation
 import typings.mapboxMapboxSdk.directionsMod.DirectionsGeometry
 import typings.mapboxMapboxSdk.directionsMod.DirectionsOverview
-import typings.mapboxMapboxSdk.directionsMod.DirectionsProfile
 import typings.mapboxMapboxSdk.directionsMod.Leg
+import typings.mapboxMapboxSdk.mapiRequestMod.Coordinates
 import typings.mapboxMapboxSdk.mapiRequestMod.DirectionsApproach
+import typings.mapboxMapboxSdk.mapiRequestMod.MapboxProfile
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +39,7 @@ object mapMatchingMod {
     /**
       * Datetime corresponding to the coordinate.
       */
-    var timestamp: js.UndefOr[String | Double | Date] = js.undefined
+    var timestamp: js.UndefOr[String | Double | js.Date] = js.undefined
     
     /**
       * Custom name for the waypoint used for the arrival instruction in banners and voice instructions.
@@ -50,7 +49,7 @@ object mapMatchingMod {
   }
   object MapMatchingPoint {
     
-    inline def apply(coordinates: LngLatLike): MapMatchingPoint = {
+    inline def apply(coordinates: Coordinates): MapMatchingPoint = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapMatchingPoint]
     }
@@ -65,7 +64,7 @@ object mapMatchingMod {
       
       inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      inline def setTimestamp(value: String | Double | Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String | Double | js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
@@ -105,7 +104,7 @@ object mapMatchingMod {
     /**
       * A directions profile ID. (optional, default driving)
       */
-    var profile: js.UndefOr[DirectionsProfile] = js.undefined
+    var profile: js.UndefOr[MapboxProfile] = js.undefined
     
     /**
       * Whether to return steps and turn-by-turn instructions. (optional, default false)
@@ -144,9 +143,9 @@ object mapMatchingMod {
       
       inline def setPoints(value: js.Array[MapMatchingPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: MapMatchingPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: MapMatchingPoint*): Self = StObject.set(x, "points", js.Array(value*))
       
-      inline def setProfile(value: DirectionsProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: MapboxProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
       inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
@@ -192,28 +191,28 @@ object mapMatchingMod {
       
       inline def setMatchings(value: js.Array[Matching]): Self = StObject.set(x, "matchings", value.asInstanceOf[js.Any])
       
-      inline def setMatchingsVarargs(value: Matching*): Self = StObject.set(x, "matchings", js.Array(value :_*))
+      inline def setMatchingsVarargs(value: Matching*): Self = StObject.set(x, "matchings", js.Array(value*))
       
       inline def setTracepoints(value: js.Array[Tracepoint]): Self = StObject.set(x, "tracepoints", value.asInstanceOf[js.Any])
       
-      inline def setTracepointsVarargs(value: Tracepoint*): Self = StObject.set(x, "tracepoints", js.Array(value :_*))
+      inline def setTracepointsVarargs(value: Tracepoint*): Self = StObject.set(x, "tracepoints", js.Array(value*))
     }
   }
   
   trait MapMatchingService extends StObject {
     
-    def getMatch(request: MapMatchingRequest): MapiRequest
+    def getMatch(request: MapMatchingRequest): MapiRequest[MapMatchingResponse]
   }
   object MapMatchingService {
     
-    inline def apply(getMatch: MapMatchingRequest => MapiRequest): MapMatchingService = {
+    inline def apply(getMatch: MapMatchingRequest => MapiRequest[MapMatchingResponse]): MapMatchingService = {
       val __obj = js.Dynamic.literal(getMatch = js.Any.fromFunction1(getMatch))
       __obj.asInstanceOf[MapMatchingService]
     }
     
     extension [Self <: MapMatchingService](x: Self) {
       
-      inline def setGetMatch(value: MapMatchingRequest => MapiRequest): Self = StObject.set(x, "getMatch", js.Any.fromFunction1(value))
+      inline def setGetMatch(value: MapMatchingRequest => MapiRequest[MapMatchingResponse]): Self = StObject.set(x, "getMatch", js.Any.fromFunction1(value))
     }
   }
   
@@ -263,7 +262,7 @@ object mapMatchingMod {
       
       inline def setLegs(value: js.Array[Leg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
       
-      inline def setLegsVarargs(value: Leg*): Self = StObject.set(x, "legs", js.Array(value :_*))
+      inline def setLegsVarargs(value: Leg*): Self = StObject.set(x, "legs", js.Array(value*))
       
       inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
@@ -278,11 +277,11 @@ object mapMatchingMod {
       */
     var approach: js.UndefOr[DirectionsApproach] = js.undefined
     
-    var coordinates: LngLatLike
+    var coordinates: Coordinates
   }
   object Point {
     
-    inline def apply(coordinates: LngLatLike): Point = {
+    inline def apply(coordinates: Coordinates): Point = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point]
     }
@@ -293,7 +292,7 @@ object mapMatchingMod {
       
       inline def setApproachUndefined: Self = StObject.set(x, "approach", js.undefined)
       
-      inline def setCoordinates(value: LngLatLike): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: Coordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     }
   }
   
@@ -338,7 +337,7 @@ object mapMatchingMod {
       
       inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+      inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
       
       inline def setMatchings_index(value: Double): Self = StObject.set(x, "matchings_index", value.asInstanceOf[js.Any])
       

@@ -19,11 +19,11 @@ trait ASPxClientRichEditKeyDownEventArgs
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
 }
 object ASPxClientRichEditKeyDownEventArgs {
   
-  inline def apply(handled: Boolean, htmlEvent: js.Any): ASPxClientRichEditKeyDownEventArgs = {
+  inline def apply(handled: Boolean, htmlEvent: Any): ASPxClientRichEditKeyDownEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRichEditKeyDownEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientRichEditKeyDownEventArgs {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

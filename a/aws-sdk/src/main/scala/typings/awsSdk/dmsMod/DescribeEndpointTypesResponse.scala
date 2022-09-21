@@ -33,6 +33,6 @@ object DescribeEndpointTypesResponse {
     
     inline def setSupportedEndpointTypesUndefined: Self = StObject.set(x, "SupportedEndpointTypes", js.undefined)
     
-    inline def setSupportedEndpointTypesVarargs(value: SupportedEndpointType*): Self = StObject.set(x, "SupportedEndpointTypes", js.Array(value :_*))
+    inline def setSupportedEndpointTypesVarargs(value: SupportedEndpointType*): Self = StObject.set(x, "SupportedEndpointTypes", js.Array(value*))
   }
 }

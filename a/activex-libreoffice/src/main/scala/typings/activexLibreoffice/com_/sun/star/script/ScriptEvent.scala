@@ -29,8 +29,8 @@ trait ScriptEvent
 object ScriptEvent {
   
   inline def apply(
-    Arguments: SafeArray[js.Any],
-    Helper: js.Any,
+    Arguments: SafeArray[Any],
+    Helper: Any,
     ListenerType: `type`,
     MethodName: String,
     ScriptCode: String,

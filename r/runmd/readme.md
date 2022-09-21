@@ -10,10 +10,10 @@ Runnable README files
 | ------------------ | :-------------: |
 | Full name          | runmd |
 | Keywords           | markdown, readme |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 20760 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1574.3333333333333 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/broofa/runmd)

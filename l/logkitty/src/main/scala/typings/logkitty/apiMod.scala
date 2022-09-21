@@ -14,8 +14,6 @@ import typings.logkitty.typesMod.Entry
 import typings.logkitty.typesMod.IFilter
 import typings.logkitty.typesMod.Platform
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,21 +72,7 @@ object apiMod {
     
     inline def fromLetter(letter: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLetter")(letter.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def fromName_DEBUG(name: DEBUG): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    inline def fromName_ERROR(name: ERROR): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    inline def fromName_FATAL(name: FATAL): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    inline def fromName_INFO(name: INFO): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    inline def fromName_SILENT(name: SILENT): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    inline def fromName_UNKNOWN(name: UNKNOWN): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    inline def fromName_VERBOSE(name: VERBOSE): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    inline def fromName_WARN(name: WARN): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def fromName(name: UNKNOWN | VERBOSE | DEBUG | INFO | WARN | ERROR | FATAL | SILENT): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def toLetter(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLetter")(code.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -123,13 +107,7 @@ object apiMod {
     
     inline def fromLetter(letter: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLetter")(letter.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def fromName_DEBUG(name: DEBUG): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    inline def fromName_DEFAULT(name: DEFAULT): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    inline def fromName_ERROR(name: ERROR): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    inline def fromName_INFO(name: INFO): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def fromName(name: DEBUG | INFO | ERROR | DEFAULT): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def toLetter(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLetter")(code.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -138,18 +116,18 @@ object apiMod {
   
   inline def formatEntry(entry: Entry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def formatError(error: js.Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(error.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def formatError(error: CodeError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(error.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def formatError(error: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(error.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def logkitty(options: LogkittyOptions): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("logkitty")(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
   
   inline def makeAppFilter(appIdentifier: String): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAppFilter")(appIdentifier.asInstanceOf[js.Any]).asInstanceOf[FilterCreator]
   
-  inline def makeCustomFilter(patterns: String*): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCustomFilter")(patterns.asInstanceOf[js.Any]).asInstanceOf[FilterCreator]
+  inline def makeCustomFilter(patterns: String*): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCustomFilter")(patterns.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FilterCreator]
   
-  inline def makeMatchFilter(regexes: RegExp*): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMatchFilter")(regexes.asInstanceOf[js.Any]).asInstanceOf[FilterCreator]
+  inline def makeMatchFilter(regexes: js.RegExp*): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMatchFilter")(regexes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FilterCreator]
   
-  inline def makeTagsFilter(tags: String*): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTagsFilter")(tags.asInstanceOf[js.Any]).asInstanceOf[FilterCreator]
+  inline def makeTagsFilter(tags: String*): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTagsFilter")(tags.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FilterCreator]
   
   type FilterCreator = js.Function3[
     /* platform */ Platform, 

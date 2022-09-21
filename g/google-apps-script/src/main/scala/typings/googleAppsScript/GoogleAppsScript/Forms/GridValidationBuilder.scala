@@ -20,16 +20,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait GridValidationBuilder extends StObject {
   
+  def build(): GridValidation
+  
   def requireLimitOneResponsePerColumn(): GridValidationBuilder
 }
 object GridValidationBuilder {
   
-  inline def apply(requireLimitOneResponsePerColumn: () => GridValidationBuilder): GridValidationBuilder = {
-    val __obj = js.Dynamic.literal(requireLimitOneResponsePerColumn = js.Any.fromFunction0(requireLimitOneResponsePerColumn))
+  inline def apply(build: () => GridValidation, requireLimitOneResponsePerColumn: () => GridValidationBuilder): GridValidationBuilder = {
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireLimitOneResponsePerColumn = js.Any.fromFunction0(requireLimitOneResponsePerColumn))
     __obj.asInstanceOf[GridValidationBuilder]
   }
   
   extension [Self <: GridValidationBuilder](x: Self) {
+    
+    inline def setBuild(value: () => GridValidation): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     inline def setRequireLimitOneResponsePerColumn(value: () => GridValidationBuilder): Self = StObject.set(x, "requireLimitOneResponsePerColumn", js.Any.fromFunction0(value))
   }

@@ -275,7 +275,7 @@ object ToggleButton {
     /** It allows to define the characteristics of the ToggleButton control. It will helps to extend the capability of an HTML element.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the image position of the ToggleButton.
       * @Default {ej.ImagePosition.ImageLeft}
@@ -385,7 +385,7 @@ object ToggleButton {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       

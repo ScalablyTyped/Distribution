@@ -18,11 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Document extends StObject {
   
-  def createElement(tagName: String): Entity[ObjectMap[Component[js.Any, System[js.Any]]]] = js.native
+  def createElement(tagName: String): Entity[ObjectMap[Component[Any, System[Any]]]] = js.native
   
-  def querySelector(selectors: String): Entity[js.Any] = js.native
+  def querySelector(selectors: String): Entity[Any] = js.native
   
-  def querySelectorAll(selectors: String): NodeListOf[Entity[js.Any] | Element] = js.native
+  def querySelectorAll(selectors: String): NodeListOf[Entity[Any] | Element] = js.native
   
   @JSName("querySelector")
   def querySelector_ascene(selectors: `a-scene`): Scene = js.native

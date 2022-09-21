@@ -64,7 +64,7 @@ object ScheduleRunConfiguration {
     
     inline def setAuxiliaryAppsUndefined: Self = StObject.set(x, "auxiliaryApps", js.undefined)
     
-    inline def setAuxiliaryAppsVarargs(value: AmazonResourceName*): Self = StObject.set(x, "auxiliaryApps", js.Array(value :_*))
+    inline def setAuxiliaryAppsVarargs(value: AmazonResourceName*): Self = StObject.set(x, "auxiliaryApps", js.Array(value*))
     
     inline def setBillingMethod(value: BillingMethod): Self = StObject.set(x, "billingMethod", value.asInstanceOf[js.Any])
     
@@ -98,6 +98,6 @@ object ScheduleRunConfiguration {
     
     inline def setVpceConfigurationArnsUndefined: Self = StObject.set(x, "vpceConfigurationArns", js.undefined)
     
-    inline def setVpceConfigurationArnsVarargs(value: AmazonResourceName*): Self = StObject.set(x, "vpceConfigurationArns", js.Array(value :_*))
+    inline def setVpceConfigurationArnsVarargs(value: AmazonResourceName*): Self = StObject.set(x, "vpceConfigurationArns", js.Array(value*))
   }
 }

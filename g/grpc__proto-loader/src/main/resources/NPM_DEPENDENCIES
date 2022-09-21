@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@grpc/proto-loader" : "0.5.5"
+      "@grpc/proto-loader" : "0.7.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@grpc/proto-loader" : "0.5.5"
+      "@grpc/proto-loader" : "0.7.3"
     }
   ],
   "compile-devDependencies" : [

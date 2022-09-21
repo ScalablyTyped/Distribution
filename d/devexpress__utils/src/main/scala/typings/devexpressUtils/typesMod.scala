@@ -14,18 +14,18 @@ object typesMod {
   
   trait IDisposable extends StObject {
     
-    def dispose(): js.Any
+    def dispose(): Any
   }
   object IDisposable {
     
-    inline def apply(dispose: () => js.Any): IDisposable = {
+    inline def apply(dispose: () => Any): IDisposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[IDisposable]
     }
     
     extension [Self <: IDisposable](x: Self) {
       
-      inline def setDispose(value: () => js.Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Any): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   

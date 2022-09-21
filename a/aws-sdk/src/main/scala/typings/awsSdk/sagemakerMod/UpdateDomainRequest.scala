@@ -15,6 +15,11 @@ trait UpdateDomainRequest extends StObject {
     * The ID of the domain to be updated.
     */
   var DomainId: typings.awsSdk.sagemakerMod.DomainId
+  
+  /**
+    * A collection of DomainSettings configuration values to update.
+    */
+  var DomainSettingsForUpdate: js.UndefOr[typings.awsSdk.sagemakerMod.DomainSettingsForUpdate] = js.undefined
 }
 object UpdateDomainRequest {
   
@@ -30,5 +35,9 @@ object UpdateDomainRequest {
     inline def setDefaultUserSettingsUndefined: Self = StObject.set(x, "DefaultUserSettings", js.undefined)
     
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
+    
+    inline def setDomainSettingsForUpdate(value: DomainSettingsForUpdate): Self = StObject.set(x, "DomainSettingsForUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setDomainSettingsForUpdateUndefined: Self = StObject.set(x, "DomainSettingsForUpdate", js.undefined)
   }
 }

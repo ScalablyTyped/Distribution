@@ -60,16 +60,20 @@ import typings.rcPicker.rcPickerStrings.vertical
 import typings.rcPicker.timePanelMod.SharedTimeProps
 import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.AriaAttributes
+import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
+import typings.react.mod.InputHTMLAttributes
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.MutableRefObject
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
+import typings.std.Element
 import typings.std.Exclude
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -83,13 +87,13 @@ object pickerMod {
   
   @JSImport("rc-picker/es/Picker", JSImport.Default)
   @js.native
-  class default[DateType] () extends Picker[DateType]
+  open class default[DateType] () extends Picker[DateType]
   
   type OmitPanelProps[Props] = Omit[Props, onChange | hideHeader | pickerValue | onPickerValueChange]
   
   @js.native
   trait Picker[DateType]
-    extends Component[PickerProps[DateType], js.Object, js.Any] {
+    extends Component[PickerProps[DateType], js.Object, Any] {
     
     def blur(): Unit = js.native
     
@@ -98,8 +102,7 @@ object pickerMod {
     var pickerRef: RefObject[PickerRefConfig] = js.native
   }
   
-  /* Inlined parent rc-picker.rc-picker/es/Picker.PickerSharedProps<DateType> */
-  /* Inlined parent rc-picker.rc-picker/es/Picker.OmitPanelProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelBaseProps<DateType>> */
+  /* Inlined {} & rc-picker.rc-picker/es/Picker.PickerSharedProps<DateType> & rc-picker.rc-picker/es/Picker.OmitPanelProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelBaseProps<DateType>> */
   trait PickerBaseProps[DateType]
     extends StObject
        with PickerProps[DateType] {
@@ -110,7 +113,7 @@ object pickerMod {
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
     /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
@@ -119,7 +122,7 @@ object pickerMod {
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
     /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
@@ -170,7 +173,7 @@ object pickerMod {
       * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
       * @see aria-hidden @see aria-readonly.
       */
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates what functions can be performed when a dragged object is released on the drop target.
@@ -185,7 +188,7 @@ object pickerMod {
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
@@ -197,7 +200,7 @@ object pickerMod {
       * Indicates an element's "grabbed" state in a drag-and-drop operation.
       * @deprecated in ARIA 1.1
       */
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
@@ -206,7 +209,7 @@ object pickerMod {
       * Indicates whether the element is exposed to an accessibility API.
       * @see aria-disabled.
       */
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates the entered value does not conform to the format expected by the application.
@@ -236,13 +239,13 @@ object pickerMod {
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
     /** Indicates whether an element is modal when displayed. */
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether a text box accepts multiple lines of input or only a single line. */
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates that the user may select more than one item from the current selectable descendants. */
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
@@ -276,7 +279,7 @@ object pickerMod {
       * Indicates that the element is not editable, but is otherwise operable.
       * @see aria-disabled.
       */
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
@@ -287,7 +290,7 @@ object pickerMod {
       ] = js.undefined
     
     /** Indicates that user input is required on the element before a form may be submitted. */
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     /** Defines a human-readable, author-localized description for the role of an element. */
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
@@ -314,7 +317,7 @@ object pickerMod {
       * Indicates the current "selected" state of various widgets.
       * @see aria-checked @see aria-pressed.
       */
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
@@ -379,6 +382,8 @@ object pickerMod {
     /** Make input readOnly to avoid popup keyboard in mobile */
     var inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
+    var inputRender: js.UndefOr[js.Function1[/* props */ InputHTMLAttributes[HTMLInputElement], ReactNode]] = js.undefined
+    
     var locale: Locale
     
     var mode: js.UndefOr[PanelMode] = js.undefined
@@ -398,6 +403,14 @@ object pickerMod {
     var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
+    
+    var onKeyDown: js.UndefOr[
+        js.Function2[
+          /* event */ KeyboardEvent[HTMLInputElement], 
+          /* preventDefault */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.undefined
     
     var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -467,7 +480,7 @@ object pickerMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -475,7 +488,7 @@ object pickerMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -511,7 +524,7 @@ object pickerMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -523,7 +536,7 @@ object pickerMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -531,7 +544,7 @@ object pickerMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -539,7 +552,7 @@ object pickerMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -567,15 +580,15 @@ object pickerMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -599,7 +612,7 @@ object pickerMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -609,7 +622,7 @@ object pickerMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -629,7 +642,7 @@ object pickerMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -719,7 +732,7 @@ object pickerMod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setFormatVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "format", js.Array(value :_*))
+      inline def setFormatVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "format", js.Array(value*))
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
@@ -734,6 +747,10 @@ object pickerMod {
       inline def setInputReadOnly(value: Boolean): Self = StObject.set(x, "inputReadOnly", value.asInstanceOf[js.Any])
       
       inline def setInputReadOnlyUndefined: Self = StObject.set(x, "inputReadOnly", js.undefined)
+      
+      inline def setInputRender(value: /* props */ InputHTMLAttributes[HTMLInputElement] => ReactNode): Self = StObject.set(x, "inputRender", js.Any.fromFunction1(value))
+      
+      inline def setInputRenderUndefined: Self = StObject.set(x, "inputRender", js.undefined)
       
       inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -753,7 +770,7 @@ object pickerMod {
       
       inline def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -769,9 +786,15 @@ object pickerMod {
       
       inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      
+      inline def setOnKeyDown(
+        value: (/* event */ KeyboardEvent[HTMLInputElement], /* preventDefault */ js.Function0[Unit]) => Unit
+      ): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
+      
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       inline def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
@@ -875,8 +898,7 @@ object pickerMod {
     }
   }
   
-  /* Inlined parent rc-picker.rc-picker/es/Picker.PickerSharedProps<DateType> */
-  /* Inlined parent rc-picker.rc-picker/es/Picker.OmitPanelProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelDateProps<DateType>> */
+  /* Inlined {} & rc-picker.rc-picker/es/Picker.PickerSharedProps<DateType> & rc-picker.rc-picker/es/Picker.OmitPanelProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelDateProps<DateType>> */
   trait PickerDateProps[DateType]
     extends StObject
        with PickerProps[DateType] {
@@ -887,7 +909,7 @@ object pickerMod {
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
     /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
@@ -896,7 +918,7 @@ object pickerMod {
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
     /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
@@ -947,7 +969,7 @@ object pickerMod {
       * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
       * @see aria-hidden @see aria-readonly.
       */
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates what functions can be performed when a dragged object is released on the drop target.
@@ -962,7 +984,7 @@ object pickerMod {
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
@@ -974,7 +996,7 @@ object pickerMod {
       * Indicates an element's "grabbed" state in a drag-and-drop operation.
       * @deprecated in ARIA 1.1
       */
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
@@ -983,7 +1005,7 @@ object pickerMod {
       * Indicates whether the element is exposed to an accessibility API.
       * @see aria-disabled.
       */
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates the entered value does not conform to the format expected by the application.
@@ -1013,13 +1035,13 @@ object pickerMod {
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
     /** Indicates whether an element is modal when displayed. */
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether a text box accepts multiple lines of input or only a single line. */
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates that the user may select more than one item from the current selectable descendants. */
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
@@ -1053,7 +1075,7 @@ object pickerMod {
       * Indicates that the element is not editable, but is otherwise operable.
       * @see aria-disabled.
       */
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
@@ -1064,7 +1086,7 @@ object pickerMod {
       ] = js.undefined
     
     /** Indicates that user input is required on the element before a form may be submitted. */
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     /** Defines a human-readable, author-localized description for the role of an element. */
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
@@ -1091,7 +1113,7 @@ object pickerMod {
       * Indicates the current "selected" state of various widgets.
       * @see aria-checked @see aria-pressed.
       */
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
@@ -1158,6 +1180,8 @@ object pickerMod {
     /** Make input readOnly to avoid popup keyboard in mobile */
     var inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
+    var inputRender: js.UndefOr[js.Function1[/* props */ InputHTMLAttributes[HTMLInputElement], ReactNode]] = js.undefined
+    
     var locale: Locale
     
     var mode: js.UndefOr[PanelMode] = js.undefined
@@ -1177,6 +1201,14 @@ object pickerMod {
     var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
+    
+    var onKeyDown: js.UndefOr[
+        js.Function2[
+          /* event */ KeyboardEvent[HTMLInputElement], 
+          /* preventDefault */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.undefined
     
     var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -1252,7 +1284,7 @@ object pickerMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -1260,7 +1292,7 @@ object pickerMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -1296,7 +1328,7 @@ object pickerMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -1308,7 +1340,7 @@ object pickerMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -1316,7 +1348,7 @@ object pickerMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -1324,7 +1356,7 @@ object pickerMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -1352,15 +1384,15 @@ object pickerMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -1384,7 +1416,7 @@ object pickerMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -1394,7 +1426,7 @@ object pickerMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -1414,7 +1446,7 @@ object pickerMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -1508,7 +1540,7 @@ object pickerMod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setFormatVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "format", js.Array(value :_*))
+      inline def setFormatVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "format", js.Array(value*))
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
@@ -1523,6 +1555,10 @@ object pickerMod {
       inline def setInputReadOnly(value: Boolean): Self = StObject.set(x, "inputReadOnly", value.asInstanceOf[js.Any])
       
       inline def setInputReadOnlyUndefined: Self = StObject.set(x, "inputReadOnly", js.undefined)
+      
+      inline def setInputRender(value: /* props */ InputHTMLAttributes[HTMLInputElement] => ReactNode): Self = StObject.set(x, "inputRender", js.Any.fromFunction1(value))
+      
+      inline def setInputRenderUndefined: Self = StObject.set(x, "inputRender", js.undefined)
       
       inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -1542,7 +1578,7 @@ object pickerMod {
       
       inline def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1558,9 +1594,15 @@ object pickerMod {
       
       inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      
+      inline def setOnKeyDown(
+        value: (/* event */ KeyboardEvent[HTMLInputElement], /* preventDefault */ js.Function0[Unit]) => Unit
+      ): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
+      
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       inline def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
@@ -1754,6 +1796,8 @@ object pickerMod {
     /** Make input readOnly to avoid popup keyboard in mobile */
     var inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
+    var inputRender: js.UndefOr[js.Function1[/* props */ InputHTMLAttributes[HTMLInputElement], ReactNode]] = js.undefined
+    
     var name: js.UndefOr[String] = js.undefined
     
     var nextIcon: js.UndefOr[ReactNode] = js.undefined
@@ -1767,6 +1811,14 @@ object pickerMod {
     var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
+    
+    var onKeyDown: js.UndefOr[
+        js.Function2[
+          /* event */ KeyboardEvent[HTMLInputElement], 
+          /* preventDefault */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.undefined
     
     var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -1854,7 +1906,7 @@ object pickerMod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setFormatVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "format", js.Array(value :_*))
+      inline def setFormatVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "format", js.Array(value*))
       
       inline def setGetPopupContainer(value: /* node */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
@@ -1868,6 +1920,10 @@ object pickerMod {
       
       inline def setInputReadOnlyUndefined: Self = StObject.set(x, "inputReadOnly", js.undefined)
       
+      inline def setInputRender(value: /* props */ InputHTMLAttributes[HTMLInputElement] => ReactNode): Self = StObject.set(x, "inputRender", js.Any.fromFunction1(value))
+      
+      inline def setInputRenderUndefined: Self = StObject.set(x, "inputRender", js.undefined)
+      
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -1876,7 +1932,7 @@ object pickerMod {
       
       inline def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1892,9 +1948,15 @@ object pickerMod {
       
       inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      
+      inline def setOnKeyDown(
+        value: (/* event */ KeyboardEvent[HTMLInputElement], /* preventDefault */ js.Function0[Unit]) => Unit
+      ): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
+      
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       inline def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
@@ -1966,8 +2028,7 @@ object pickerMod {
     }
   }
   
-  /* Inlined parent rc-picker.rc-picker/es/Picker.PickerSharedProps<DateType> */
-  /* Inlined parent std.Omit<rc-picker.rc-picker/es/Picker.OmitPanelProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelTimeProps<DateType>>, 'format'> */
+  /* Inlined {  picker :'time',   defaultOpenValue :DateType | undefined} & rc-picker.rc-picker/es/Picker.PickerSharedProps<DateType> & std.Omit<rc-picker.rc-picker/es/Picker.OmitPanelProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelTimeProps<DateType>>, 'format'> */
   trait PickerTimeProps[DateType]
     extends StObject
        with PickerProps[DateType] {
@@ -1978,7 +2039,7 @@ object pickerMod {
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
     /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
@@ -1987,7 +2048,7 @@ object pickerMod {
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
     /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
@@ -2038,7 +2099,7 @@ object pickerMod {
       * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
       * @see aria-hidden @see aria-readonly.
       */
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates what functions can be performed when a dragged object is released on the drop target.
@@ -2053,7 +2114,7 @@ object pickerMod {
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
@@ -2065,7 +2126,7 @@ object pickerMod {
       * Indicates an element's "grabbed" state in a drag-and-drop operation.
       * @deprecated in ARIA 1.1
       */
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
@@ -2074,7 +2135,7 @@ object pickerMod {
       * Indicates whether the element is exposed to an accessibility API.
       * @see aria-disabled.
       */
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates the entered value does not conform to the format expected by the application.
@@ -2104,13 +2165,13 @@ object pickerMod {
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
     /** Indicates whether an element is modal when displayed. */
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether a text box accepts multiple lines of input or only a single line. */
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates that the user may select more than one item from the current selectable descendants. */
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
@@ -2144,7 +2205,7 @@ object pickerMod {
       * Indicates that the element is not editable, but is otherwise operable.
       * @see aria-disabled.
       */
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
@@ -2155,7 +2216,7 @@ object pickerMod {
       ] = js.undefined
     
     /** Indicates that user input is required on the element before a form may be submitted. */
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     /** Defines a human-readable, author-localized description for the role of an element. */
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
@@ -2182,7 +2243,7 @@ object pickerMod {
       * Indicates the current "selected" state of various widgets.
       * @see aria-checked @see aria-pressed.
       */
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
@@ -2244,6 +2305,8 @@ object pickerMod {
     
     var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
     
+    var disabledTime: js.UndefOr[js.Function1[/* date */ DateType, DisabledTimes]] = js.undefined
+    
     var dropdownAlign: js.UndefOr[AlignType] = js.undefined
     
     var dropdownClassName: js.UndefOr[String] = js.undefined
@@ -2262,6 +2325,8 @@ object pickerMod {
     
     /** Make input readOnly to avoid popup keyboard in mobile */
     var inputReadOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var inputRender: js.UndefOr[js.Function1[/* props */ InputHTMLAttributes[HTMLInputElement], ReactNode]] = js.undefined
     
     var locale: Locale
     
@@ -2284,6 +2349,14 @@ object pickerMod {
     var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
+    
+    var onKeyDown: js.UndefOr[
+        js.Function2[
+          /* event */ KeyboardEvent[HTMLInputElement], 
+          /* preventDefault */ js.Function0[Unit], 
+          Unit
+        ]
+      ] = js.undefined
     
     var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -2365,7 +2438,7 @@ object pickerMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -2373,7 +2446,7 @@ object pickerMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -2409,7 +2482,7 @@ object pickerMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -2421,7 +2494,7 @@ object pickerMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -2429,7 +2502,7 @@ object pickerMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -2437,7 +2510,7 @@ object pickerMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -2465,15 +2538,15 @@ object pickerMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -2497,7 +2570,7 @@ object pickerMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -2507,7 +2580,7 @@ object pickerMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -2527,7 +2600,7 @@ object pickerMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -2617,6 +2690,10 @@ object pickerMod {
       
       inline def setDisabledSecondsUndefined: Self = StObject.set(x, "disabledSeconds", js.undefined)
       
+      inline def setDisabledTime(value: /* date */ DateType => DisabledTimes): Self = StObject.set(x, "disabledTime", js.Any.fromFunction1(value))
+      
+      inline def setDisabledTimeUndefined: Self = StObject.set(x, "disabledTime", js.undefined)
+      
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setDropdownAlign(value: AlignType): Self = StObject.set(x, "dropdownAlign", value.asInstanceOf[js.Any])
@@ -2633,7 +2710,7 @@ object pickerMod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setFormatVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "format", js.Array(value :_*))
+      inline def setFormatVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "format", js.Array(value*))
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
@@ -2657,6 +2734,10 @@ object pickerMod {
       
       inline def setInputReadOnlyUndefined: Self = StObject.set(x, "inputReadOnly", js.undefined)
       
+      inline def setInputRender(value: /* props */ InputHTMLAttributes[HTMLInputElement] => ReactNode): Self = StObject.set(x, "inputRender", js.Any.fromFunction1(value))
+      
+      inline def setInputRenderUndefined: Self = StObject.set(x, "inputRender", js.undefined)
+      
       inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
@@ -2679,7 +2760,7 @@ object pickerMod {
       
       inline def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -2695,9 +2776,15 @@ object pickerMod {
       
       inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      
+      inline def setOnKeyDown(
+        value: (/* event */ KeyboardEvent[HTMLInputElement], /* preventDefault */ js.Function0[Unit]) => Unit
+      ): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
+      
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       inline def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("azure-arm-resource/lib/resource/models", "CloudError")
 @js.native
-class CloudError protected ()
+open class CloudError protected ()
   extends typings.msRestAzure.mod.CloudError {
   def this(parameters: CloudErrorParameters) = this()
 }

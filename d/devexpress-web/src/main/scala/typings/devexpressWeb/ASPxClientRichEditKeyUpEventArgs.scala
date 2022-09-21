@@ -14,17 +14,17 @@ trait ASPxClientRichEditKeyUpEventArgs
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
 }
 object ASPxClientRichEditKeyUpEventArgs {
   
-  inline def apply(htmlEvent: js.Any): ASPxClientRichEditKeyUpEventArgs = {
+  inline def apply(htmlEvent: Any): ASPxClientRichEditKeyUpEventArgs = {
     val __obj = js.Dynamic.literal(htmlEvent = htmlEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRichEditKeyUpEventArgs]
   }
   
   extension [Self <: ASPxClientRichEditKeyUpEventArgs](x: Self) {
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

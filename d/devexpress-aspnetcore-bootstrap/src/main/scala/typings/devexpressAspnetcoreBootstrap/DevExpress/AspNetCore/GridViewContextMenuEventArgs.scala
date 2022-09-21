@@ -8,11 +8,11 @@ trait GridViewContextMenuEventArgs
   extends StObject
      with EventArgs {
   
-  val htmlEvent: js.Any
+  val htmlEvent: Any
   
   val index: Double
   
-  val menu: js.Any
+  val menu: Any
   
   val objectType: String
   
@@ -21,9 +21,9 @@ trait GridViewContextMenuEventArgs
 object GridViewContextMenuEventArgs {
   
   inline def apply(
-    htmlEvent: js.Any,
+    htmlEvent: Any,
     index: Double,
-    menu: js.Any,
+    menu: Any,
     objectType: String,
     sender: Control,
     showBrowserMenu: Boolean
@@ -34,11 +34,11 @@ object GridViewContextMenuEventArgs {
   
   extension [Self <: GridViewContextMenuEventArgs](x: Self) {
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setMenu(value: js.Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     

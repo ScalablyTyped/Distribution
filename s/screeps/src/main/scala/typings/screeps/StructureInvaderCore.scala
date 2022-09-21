@@ -11,12 +11,17 @@ trait StructureInvaderCore
   extends StObject
      with OwnedStructure[STRUCTURE_INVADER_CORE]
      with AnyOwnedStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * The level of the stronghold. The amount and quality of the loot depends on the level.
     */
   var level: Double
+  
+  /**
+    * If the core is in process of spawning a new creep, this object will contain a `StructureSpawn.Spawning` object, or `null` otherwise.
+    */
+  var spawning: Spawning | Null
   
   /**
     * Shows the timer for a not yet deployed stronghold, undefined otherwise.
@@ -40,13 +45,17 @@ object StructureInvaderCore {
     structureType: STRUCTURE_INVADER_CORE,
     ticksToDeploy: Double
   ): StructureInvaderCore = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), level = level.asInstanceOf[js.Any], my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any], ticksToDeploy = ticksToDeploy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), level = level.asInstanceOf[js.Any], my = my.asInstanceOf[js.Any], notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any], ticksToDeploy = ticksToDeploy.asInstanceOf[js.Any], spawning = null)
     __obj.asInstanceOf[StructureInvaderCore]
   }
   
   extension [Self <: StructureInvaderCore](x: Self) {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setSpawning(value: Spawning): Self = StObject.set(x, "spawning", value.asInstanceOf[js.Any])
+    
+    inline def setSpawningNull: Self = StObject.set(x, "spawning", null)
     
     inline def setTicksToDeploy(value: Double): Self = StObject.set(x, "ticksToDeploy", value.asInstanceOf[js.Any])
   }

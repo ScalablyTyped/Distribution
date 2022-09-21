@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClicksLookbackWindow extends StObject {
   
   /**
-    * DFA checks to see if a click interaction occurred within the specified period of time before a conversion. By default the value is pulled from Floodlight or you can manually
-    * enter a custom value. Valid values: 1-90.
+    * CM360 checks to see if a click interaction occurred within the specified period of time before a conversion. By default the value is pulled from Floodlight or you can
+    * manually enter a custom value. Valid values: 1-90.
     */
   var clicksLookbackWindow: js.UndefOr[Double] = js.undefined
   
   /**
-    * DFA checks to see if an impression interaction occurred within the specified period of time before a conversion. By default the value is pulled from Floodlight or you can
+    * CM360 checks to see if an impression interaction occurred within the specified period of time before a conversion. By default the value is pulled from Floodlight or you can
     * manually enter a custom value. Valid values: 1-90.
     */
   var impressionsLookbackWindow: js.UndefOr[Double] = js.undefined

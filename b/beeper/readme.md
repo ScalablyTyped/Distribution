@@ -1,7 +1,7 @@
 
 # Scala.js typings for beeper
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Make your terminal beep
@@ -9,11 +9,11 @@ Make your terminal beep
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | beeper |
-| Keywords           | beep, beeper, boop, terminal, term, cli, console, ding, ping, alert, gulpfriendly |
-| # releases         | 2 |
-| # dependents       | 62 |
-| # downloads        | 52574999 |
-| # stars            | 15 |
+| Keywords           | beep, beeper, boop, terminal, cli, console, ding, ping, alert, gulpfriendly |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3579996.6666666665 |
+| # stars            | 130.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/beeper#readme)

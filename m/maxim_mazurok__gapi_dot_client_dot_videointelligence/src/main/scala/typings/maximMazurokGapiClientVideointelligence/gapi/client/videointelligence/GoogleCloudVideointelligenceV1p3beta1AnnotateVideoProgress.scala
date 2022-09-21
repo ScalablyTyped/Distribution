@@ -22,6 +22,6 @@ object GoogleCloudVideointelligenceV1p3beta1AnnotateVideoProgress {
     
     inline def setAnnotationProgressUndefined: Self = StObject.set(x, "annotationProgress", js.undefined)
     
-    inline def setAnnotationProgressVarargs(value: GoogleCloudVideointelligenceV1p3beta1VideoAnnotationProgress*): Self = StObject.set(x, "annotationProgress", js.Array(value :_*))
+    inline def setAnnotationProgressVarargs(value: GoogleCloudVideointelligenceV1p3beta1VideoAnnotationProgress*): Self = StObject.set(x, "annotationProgress", js.Array(value*))
   }
 }

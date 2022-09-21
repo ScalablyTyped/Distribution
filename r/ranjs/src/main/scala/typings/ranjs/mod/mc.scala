@@ -13,7 +13,7 @@ object mc {
   
   @JSImport("ranjs", "mc.RWM")
   @js.native
-  class RWM protected ()
+  open class RWM protected ()
     extends StObject
        with typings.ranjs.mod._mc.MCMC {
     def this(logDensity: js.Function1[/* x */ js.Array[Double], Double]) = this()

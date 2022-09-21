@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EventStreamSerdeContext extends StObject {
   
-  var eventStreamMarshaller: EventStreamMarshaller
+  var eventStreamMarshaller: EventStreamMarshaller[Any]
 }
 object EventStreamSerdeContext {
   
-  inline def apply(eventStreamMarshaller: EventStreamMarshaller): EventStreamSerdeContext = {
+  inline def apply(eventStreamMarshaller: EventStreamMarshaller[Any]): EventStreamSerdeContext = {
     val __obj = js.Dynamic.literal(eventStreamMarshaller = eventStreamMarshaller.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventStreamSerdeContext]
   }
   
   extension [Self <: EventStreamSerdeContext](x: Self) {
     
-    inline def setEventStreamMarshaller(value: EventStreamMarshaller): Self = StObject.set(x, "eventStreamMarshaller", value.asInstanceOf[js.Any])
+    inline def setEventStreamMarshaller(value: EventStreamMarshaller[Any]): Self = StObject.set(x, "eventStreamMarshaller", value.asInstanceOf[js.Any])
   }
 }

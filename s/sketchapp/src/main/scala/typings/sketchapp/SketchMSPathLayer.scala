@@ -66,7 +66,7 @@ object SketchMSPathLayer {
     
     inline def setPoints(value: js.Array[SketchMSPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: SketchMSPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: SketchMSPoint*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def set_class(value: path | shapePath | rectangle | oval | triangle): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }

@@ -10,5 +10,5 @@ object errorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getContext(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getContext(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }

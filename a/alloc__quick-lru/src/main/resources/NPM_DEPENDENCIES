@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@alloc/quick-lru" : "5.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@alloc/quick-lru" : "5.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

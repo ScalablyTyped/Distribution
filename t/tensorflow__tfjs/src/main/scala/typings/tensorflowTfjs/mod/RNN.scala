@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs", "RNN")
 @js.native
-class RNN protected ()
+open class RNN protected ()
   extends typings.tensorflowTfjsLayers.mod.RNN {
   def this(args: RNNLayerArgs) = this()
 }

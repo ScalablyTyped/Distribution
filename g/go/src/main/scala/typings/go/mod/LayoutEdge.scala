@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an edge that does not know about any Link.
   */
-class LayoutEdge () extends StObject {
+open class LayoutEdge () extends StObject {
   
   /**
     * Commits the route of this edge to the corresponding Link, if any.
@@ -18,7 +18,7 @@ class LayoutEdge () extends StObject {
   def commit(): Unit = js.native
   
   /**Gets or sets the model data, used only when virtualizing*/
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /**Gets or sets the LayoutVertex that this edge comes from.*/
   var fromVertex: LayoutVertex = js.native

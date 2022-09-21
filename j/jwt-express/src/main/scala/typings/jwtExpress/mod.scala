@@ -4,11 +4,10 @@ import typings.express.mod.CookieOptions
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.jsonwebtoken.mod.SignOptions
 import typings.jsonwebtoken.mod.VerifyOptions
 import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,32 +18,184 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def active(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("active")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def active(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("active")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def clear(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def clear(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def create(secret: String, payload: js.Any): JWT = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(secret.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[JWT]
-  inline def create(secret: js.Function1[/* payload */ js.Any, String], payload: js.Any): JWT = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(secret.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[JWT]
+  inline def create(secret: String, payload: Any): JWT = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(secret.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[JWT]
+  inline def create(secret: js.Function1[/* payload */ Any, String], payload: Any): JWT = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(secret.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[JWT]
   
-  inline def init(secret: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def init(secret: String, options: JWTExpressOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def init(secret: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def init(secret: String): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def init(secret: String, options: JWTExpressOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   inline def init(
-    secret: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String],
+    secret: js.Function1[
+      /* req */ Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ], 
+      String
+    ]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def init(
+    secret: js.Function1[
+      /* req */ Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ], 
+      String
+    ],
     options: JWTExpressOptions
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("jwt-express", "options")
   @js.native
   def options: JWTExpressOptions = js.native
   inline def options_=(x: JWTExpressOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   
-  inline def require(key: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def require(key: String, operator: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def require(key: String, operator: String, value: js.Any): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def require(key: String, operator: Unit, value: js.Any): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def require(key: String): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def require(key: String, operator: String): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def require(key: String, operator: String, value: Any): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def require(key: String, operator: Unit, value: Any): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
-  inline def valid(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def valid(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   trait JWT extends StObject {
     
@@ -61,7 +212,7 @@ object mod {
     /**
       * The payload of the JWT (must be an object). jwt-express will add a stales key-value pair to the payload for stale.
       */
-    var payload: js.Any
+    var payload: Any
     
     /**
       * Resigns this JWT Objects's payload.
@@ -88,7 +239,7 @@ object mod {
       * @param payload The payload of the JWT (must be an object).
       * @return this
       */
-    def sign(payload: js.Any): JWT
+    def sign(payload: Any): JWT
     
     /**
       * Indicates if the JWT is stale. The default timeout before a JWT is considered stale is 15 minutes.
@@ -101,7 +252,7 @@ object mod {
       * @param res The response in which to store the JWT.
       * @return this
       */
-    def store(res: Response_[js.Any]): JWT
+    def store(res: Response_[Any, Record[String, Any]]): JWT
     
     /**
       * This function is called when the jwt is passed through JSON.stringify.
@@ -109,7 +260,7 @@ object mod {
       *
       * @return The JSON form of the object.
       */
-    def toJSON(): js.Any
+    def toJSON(): Any
     
     /**
       * The signed token of the JWT.
@@ -134,14 +285,14 @@ object mod {
     inline def apply(
       expired: Boolean,
       options: JWTExpressOptions,
-      payload: js.Any,
+      payload: Any,
       resign: () => JWT,
       revoke: () => JWT,
       secret: String,
-      sign: js.Any => JWT,
+      sign: Any => JWT,
       stale: Boolean,
-      store: Response_[js.Any] => JWT,
-      toJSON: () => js.Any,
+      store: Response_[Any, Record[String, Any]] => JWT,
+      toJSON: () => Any,
       token: String,
       valid: Boolean,
       verify: String => JWT
@@ -156,7 +307,7 @@ object mod {
       
       inline def setOptions(value: JWTExpressOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setResign(value: () => JWT): Self = StObject.set(x, "resign", js.Any.fromFunction0(value))
       
@@ -164,13 +315,13 @@ object mod {
       
       inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      inline def setSign(value: js.Any => JWT): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      inline def setSign(value: Any => JWT): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
       
       inline def setStale(value: Boolean): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      inline def setStore(value: Response_[js.Any] => JWT): Self = StObject.set(x, "store", js.Any.fromFunction1(value))
+      inline def setStore(value: Response_[Any, Record[String, Any]] => JWT): Self = StObject.set(x, "store", js.Any.fromFunction1(value))
       
-      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
@@ -324,18 +475,18 @@ object mod {
           * @param payload The payload of the JWT
           * @return The newly created JWT
           */
-        def jwt(payload: js.Any): JWT
+        def jwt(payload: Any): JWT
       }
       object Response {
         
-        inline def apply(jwt: js.Any => JWT): Response = {
+        inline def apply(jwt: Any => JWT): Response = {
           val __obj = js.Dynamic.literal(jwt = js.Any.fromFunction1(jwt))
           __obj.asInstanceOf[Response]
         }
         
         extension [Self <: Response](x: Self) {
           
-          inline def setJwt(value: js.Any => JWT): Self = StObject.set(x, "jwt", js.Any.fromFunction1(value))
+          inline def setJwt(value: Any => JWT): Self = StObject.set(x, "jwt", js.Any.fromFunction1(value))
         }
       }
     }

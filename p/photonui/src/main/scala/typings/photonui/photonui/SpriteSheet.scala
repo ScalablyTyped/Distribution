@@ -36,7 +36,7 @@ object SpriteSheet {
     icons: StringDictionary[js.Array[Double]],
     imageUrl: String,
     name: String,
-    registerCallback: (String, String, js.Function, js.Any) => Unit,
+    registerCallback: (String, String, js.Function, Any) => Unit,
     removeCallback: String => Unit,
     removeIcon: String => Unit,
     size: String

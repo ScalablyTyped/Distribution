@@ -73,7 +73,7 @@ object SceneAxis {
     autorange: `true` | `false` | reversed,
     backgroundcolor: Color,
     calendar: Calendar,
-    categoryarray: js.Array[js.Any],
+    categoryarray: js.Array[Any],
     categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`),
     color: Color,
     dividercolor: Color,
@@ -88,7 +88,7 @@ object SceneAxis {
     linewidth: Double,
     mirror: `true` | ticks | `false` | all | allticks,
     nticks: Double,
-    range: js.Array[js.Any],
+    range: js.Array[Any],
     rangemode: normal | tozero | nonnegative,
     separatethousands: Boolean,
     showaxeslabels: Boolean,
@@ -108,7 +108,7 @@ object SceneAxis {
     spikesnap: data | cursor | (`hovered data`),
     spikethickness: Double,
     tick0: Double | String,
-    tickangle: Double,
+    tickangle: auto | Double,
     tickcolor: Color,
     tickfont: PartialFont,
     tickformat: String,
@@ -119,7 +119,7 @@ object SceneAxis {
     ticks: outside | inside | _empty,
     ticksuffix: String,
     ticktext: js.Array[String],
-    tickvals: js.Array[js.Any],
+    tickvals: js.Array[Any],
     tickwidth: Double,
     title: String | PartialDataTitleFont,
     titlefont: PartialFont,
@@ -138,7 +138,7 @@ object SceneAxis {
     
     inline def setBackgroundcolor(value: Color): Self = StObject.set(x, "backgroundcolor", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "backgroundcolor", js.Array(value :_*))
+    inline def setBackgroundcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "backgroundcolor", js.Array(value*))
     
     inline def setShowaxeslabels(value: Boolean): Self = StObject.set(x, "showaxeslabels", value.asInstanceOf[js.Any])
     

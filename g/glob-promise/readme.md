@@ -1,7 +1,7 @@
 
 # Scala.js typings for glob-promise
 
-Typings are for version 3.4.0
+Typings are for version 5.0.0
 
 ## Library description:
 Promise version of glob
@@ -10,10 +10,10 @@ Promise version of glob
 | ------------------ | :-------------: |
 | Full name          | glob-promise |
 | Keywords           | glob, promise |
-| # releases         | 0 |
-| # dependents       | 399 |
-| # downloads        | 21519407 |
-| # stars            | 4 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4403677333333334E7 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/ahmadnassri/node-glob-promise)

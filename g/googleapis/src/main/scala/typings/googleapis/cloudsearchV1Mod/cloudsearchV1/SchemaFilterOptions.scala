@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Filter options to be applied on query.
-  */
 trait SchemaFilterOptions extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaFilterOptions extends StObject {
   var filter: js.UndefOr[SchemaFilter] = js.undefined
   
   /**
-    * If object_type is set, only objects of that type are returned. This
-    * should correspond to the name of the object that was registered within
-    * the definition of schema. The maximum length is 256 characters.
+    * If object_type is set, only objects of that type are returned. This should correspond to the name of the object that was registered within the definition of schema. The maximum length is 256 characters.
     */
-  var objectType: js.UndefOr[String] = js.undefined
+  var objectType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFilterOptions {
   
@@ -35,6 +30,8 @@ object SchemaFilterOptions {
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    
+    inline def setObjectTypeNull: Self = StObject.set(x, "objectType", null)
     
     inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
   }

@@ -1,7 +1,6 @@
 package typings.rollupPluginNodeGlobals
 
 import typings.rollup.mod.Plugin
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,14 +22,14 @@ object mod {
     
     var dirname: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.undefined
+    var exclude: js.UndefOr[(js.Array[String | js.RegExp]) | String | js.RegExp | Null] = js.undefined
     
     var filename: js.UndefOr[Boolean] = js.undefined
     
     var global: js.UndefOr[Boolean] = js.undefined
     
     // Every files will be parsed by default, but you can specify which files to include or exclude
-    var include: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.undefined
+    var include: js.UndefOr[(js.Array[String | js.RegExp]) | String | js.RegExp | Null] = js.undefined
     
     // Plugin's options
     var process: js.UndefOr[Boolean] = js.undefined
@@ -59,13 +58,13 @@ object mod {
       
       inline def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
       
-      inline def setExclude(value: (js.Array[String | RegExp]) | String | RegExp): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: (js.Array[String | js.RegExp]) | String | js.RegExp): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeNull: Self = StObject.set(x, "exclude", null)
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFilename(value: Boolean): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -75,13 +74,13 @@ object mod {
       
       inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      inline def setInclude(value: (js.Array[String | RegExp]) | String | RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: (js.Array[String | js.RegExp]) | String | js.RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeNull: Self = StObject.set(x, "include", null)
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setProcess(value: Boolean): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
       

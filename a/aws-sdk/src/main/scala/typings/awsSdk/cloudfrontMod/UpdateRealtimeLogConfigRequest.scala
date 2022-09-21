@@ -48,13 +48,13 @@ object UpdateRealtimeLogConfigRequest {
     
     inline def setEndPointsUndefined: Self = StObject.set(x, "EndPoints", js.undefined)
     
-    inline def setEndPointsVarargs(value: EndPoint*): Self = StObject.set(x, "EndPoints", js.Array(value :_*))
+    inline def setEndPointsVarargs(value: EndPoint*): Self = StObject.set(x, "EndPoints", js.Array(value*))
     
     inline def setFields(value: FieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "Fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "Fields", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

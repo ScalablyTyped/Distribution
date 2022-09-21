@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("js-money", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Money {
     def this(amount: Double, currency: String) = this()

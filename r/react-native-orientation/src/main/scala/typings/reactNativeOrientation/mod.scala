@@ -1,6 +1,5 @@
 package typings.reactNativeOrientation
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +16,9 @@ object mod {
   
   inline def getInitialOrientation(): orientation = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialOrientation")().asInstanceOf[orientation]
   
-  inline def getOrientation(callback: js.Function2[/* err */ Error, /* orientation */ orientation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrientation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getOrientation(callback: js.Function2[/* err */ js.Error, /* orientation */ orientation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrientation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def getSpecificOrientation(callback: js.Function2[/* err */ Error, /* orientation */ specificOrientation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpecificOrientation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getSpecificOrientation(callback: js.Function2[/* err */ js.Error, /* orientation */ specificOrientation, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpecificOrientation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def lockToLandscape(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lockToLandscape")().asInstanceOf[Unit]
   

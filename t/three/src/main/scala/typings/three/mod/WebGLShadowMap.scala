@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "WebGLShadowMap")
 @js.native
-class WebGLShadowMap protected ()
-  extends typings.three.webGLShadowMapMod.WebGLShadowMap {
+open class WebGLShadowMap protected ()
+  extends typings.three.threeMod.WebGLShadowMap {
   def this(
     _renderer: typings.three.webGLRendererMod.WebGLRenderer,
     _objects: typings.three.webGLObjectsMod.WebGLObjects,
-    maxTextureSize: Double
+    _capabilities: typings.three.webGLCapabilitiesMod.WebGLCapabilities
   ) = this()
 }

@@ -2,7 +2,6 @@ package typings.jsonquery
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.node.NodeJS.ReadWriteStream
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[T](query: Query[T]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply[T](query: Query[T]): Any = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("jsonquery", JSImport.Namespace)
   @js.native
@@ -36,7 +35,7 @@ object mod {
       
       inline def set$and(value: js.Array[Query[T]]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
       
-      inline def set$andVarargs(value: Query[T]*): Self = StObject.set(x, "$and", js.Array(value :_*))
+      inline def set$andVarargs(value: Query[T]*): Self = StObject.set(x, "$and", js.Array(value*))
     }
   }
   
@@ -94,7 +93,7 @@ object mod {
       
       inline def set$all(value: js.Array[P]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
       
-      inline def set$allVarargs(value: P*): Self = StObject.set(x, "$all", js.Array(value :_*))
+      inline def set$allVarargs(value: P*): Self = StObject.set(x, "$all", js.Array(value*))
       
       inline def set$elemMatch(value: Partial[P]): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
       
@@ -104,7 +103,7 @@ object mod {
       
       inline def set$in(value: js.Array[P]): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
       
-      inline def set$inVarargs(value: P*): Self = StObject.set(x, "$in", js.Array(value :_*))
+      inline def set$inVarargs(value: P*): Self = StObject.set(x, "$in", js.Array(value*))
       
       inline def set$lt(value: P): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
       
@@ -116,7 +115,7 @@ object mod {
       
       inline def set$nin(value: js.Array[P]): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
       
-      inline def set$ninVarargs(value: P*): Self = StObject.set(x, "$nin", js.Array(value :_*))
+      inline def set$ninVarargs(value: P*): Self = StObject.set(x, "$nin", js.Array(value*))
     }
   }
   
@@ -156,15 +155,15 @@ object mod {
       
       inline def set$or(value: js.Array[Query[T]]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
       
-      inline def set$orVarargs(value: Query[T]*): Self = StObject.set(x, "$or", js.Array(value :_*))
+      inline def set$orVarargs(value: Query[T]*): Self = StObject.set(x, "$or", js.Array(value*))
     }
   }
   
-  type PathQuery = StringDictionary[js.Any]
+  type PathQuery = StringDictionary[Any]
   
   type Query[T] = BinaryQueryCondition[T] | QueryValue[T] | PathQuery
   
   type QueryValue[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] | jsonquery.jsonquery.BaseCondition<T[P]>}
-    */ typings.jsonquery.jsonqueryStrings.QueryValue & TopLevel[js.Any]
+    */ typings.jsonquery.jsonqueryStrings.QueryValue & TopLevel[Any]
 }

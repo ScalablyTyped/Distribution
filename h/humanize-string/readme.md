@@ -1,7 +1,7 @@
 
 # Scala.js typings for humanize-string
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Convert a camelized/dasherized/underscored string into a humanized one: `fooBar-Baz_Faz` → `Foo bar baz faz`
@@ -10,10 +10,10 @@ Convert a camelized/dasherized/underscored string into a humanized one: `fooBar-
 | ------------------ | :-------------: |
 | Full name          | humanize-string |
 | Keywords           | humanize, human, pretty, capitalize, uppercase, case, camelcase, dash, hyphen, underscore, string, text, convert |
-| # releases         | 3 |
-| # dependents       | 58 |
-| # downloads        | 7259732 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1009183.0 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/humanize-string#readme)

@@ -12,7 +12,7 @@ trait AllowConcurrentSaves extends StObject {
   
   var resourceName: js.UndefOr[String] = js.undefined
   
-  var tag: js.UndefOr[js.Any] = js.undefined
+  var tag: js.UndefOr[Any] = js.undefined
 }
 object AllowConcurrentSaves {
   
@@ -35,7 +35,7 @@ object AllowConcurrentSaves {
     
     inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }

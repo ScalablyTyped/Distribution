@@ -1,36 +1,78 @@
 package typings.devtoolsProtocol.protocolProxyApiMod.ProtocolProxyApi
 
+import typings.devtoolsProtocol.devtoolsProtocolStrings.loadComplete
+import typings.devtoolsProtocol.devtoolsProtocolStrings.nodesUpdated
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetAXNodeAndAncestorsRequest
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetAXNodeAndAncestorsResponse
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetChildAXNodesRequest
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetChildAXNodesResponse
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetFullAXTreeRequest
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetFullAXTreeResponse
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetPartialAXTreeRequest
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetPartialAXTreeResponse
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetRootAXNodeRequest
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetRootAXNodeResponse
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.LoadCompleteEvent
+import typings.devtoolsProtocol.mod.Protocol.Accessibility.NodesUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.QueryAXTreeRequest
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.QueryAXTreeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait AccessibilityApi extends StObject {
   
   /**
     * Disables the accessibility domain.
     */
-  def disable(): js.Promise[Unit]
+  def disable(): js.Promise[Unit] = js.native
   
   /**
     * Enables the accessibility domain which causes `AXNodeId`s to remain consistent between method calls.
     * This turns on accessibility for the page, which can impact performance until accessibility is disabled.
     */
-  def enable(): js.Promise[Unit]
+  def enable(): js.Promise[Unit] = js.native
   
   /**
-    * Fetches the entire accessibility tree
+    * Fetches a node and all ancestors up to and including the root.
+    * Requires `enable()` to have been called previously.
     */
-  def getFullAXTree(): js.Promise[GetFullAXTreeResponse]
+  def getAXNodeAndAncestors(params: GetAXNodeAndAncestorsRequest): js.Promise[GetAXNodeAndAncestorsResponse] = js.native
+  
+  /**
+    * Fetches a particular accessibility node by AXNodeId.
+    * Requires `enable()` to have been called previously.
+    */
+  def getChildAXNodes(params: GetChildAXNodesRequest): js.Promise[GetChildAXNodesResponse] = js.native
+  
+  /**
+    * Fetches the entire accessibility tree for the root Document
+    */
+  def getFullAXTree(params: GetFullAXTreeRequest): js.Promise[GetFullAXTreeResponse] = js.native
   
   /**
     * Fetches the accessibility node and partial accessibility tree for this DOM node, if it exists.
     */
-  def getPartialAXTree(params: GetPartialAXTreeRequest): js.Promise[GetPartialAXTreeResponse]
+  def getPartialAXTree(params: GetPartialAXTreeRequest): js.Promise[GetPartialAXTreeResponse] = js.native
+  
+  /**
+    * Fetches the root node.
+    * Requires `enable()` to have been called previously.
+    */
+  def getRootAXNode(params: GetRootAXNodeRequest): js.Promise[GetRootAXNodeResponse] = js.native
+  
+  /**
+    * The loadComplete event mirrors the load complete event sent by the browser to assistive
+    * technology when the web page has finished loading.
+    */
+  @JSName("on")
+  def on_loadComplete(event: loadComplete, listener: js.Function1[/* params */ LoadCompleteEvent, Unit]): Unit = js.native
+  /**
+    * The nodesUpdated event is sent every time a previously requested node has changed the in tree.
+    */
+  @JSName("on")
+  def on_nodesUpdated(event: nodesUpdated, listener: js.Function1[/* params */ NodesUpdatedEvent, Unit]): Unit = js.native
   
   /**
     * Query a DOM node's accessibility subtree for accessible name and role.
@@ -39,31 +81,5 @@ trait AccessibilityApi extends StObject {
     * node is specified, or the DOM node does not exist, the command returns an error. If neither
     * `accessibleName` or `role` is specified, it returns all the accessibility nodes in the subtree.
     */
-  def queryAXTree(params: QueryAXTreeRequest): js.Promise[QueryAXTreeResponse]
-}
-object AccessibilityApi {
-  
-  inline def apply(
-    disable: () => js.Promise[Unit],
-    enable: () => js.Promise[Unit],
-    getFullAXTree: () => js.Promise[GetFullAXTreeResponse],
-    getPartialAXTree: GetPartialAXTreeRequest => js.Promise[GetPartialAXTreeResponse],
-    queryAXTree: QueryAXTreeRequest => js.Promise[QueryAXTreeResponse]
-  ): AccessibilityApi = {
-    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), getFullAXTree = js.Any.fromFunction0(getFullAXTree), getPartialAXTree = js.Any.fromFunction1(getPartialAXTree), queryAXTree = js.Any.fromFunction1(queryAXTree))
-    __obj.asInstanceOf[AccessibilityApi]
-  }
-  
-  extension [Self <: AccessibilityApi](x: Self) {
-    
-    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
-    
-    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
-    
-    inline def setGetFullAXTree(value: () => js.Promise[GetFullAXTreeResponse]): Self = StObject.set(x, "getFullAXTree", js.Any.fromFunction0(value))
-    
-    inline def setGetPartialAXTree(value: GetPartialAXTreeRequest => js.Promise[GetPartialAXTreeResponse]): Self = StObject.set(x, "getPartialAXTree", js.Any.fromFunction1(value))
-    
-    inline def setQueryAXTree(value: QueryAXTreeRequest => js.Promise[QueryAXTreeResponse]): Self = StObject.set(x, "queryAXTree", js.Any.fromFunction1(value))
-  }
+  def queryAXTree(params: QueryAXTreeRequest): js.Promise[QueryAXTreeResponse] = js.native
 }

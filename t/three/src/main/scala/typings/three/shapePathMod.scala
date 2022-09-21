@@ -11,19 +11,19 @@ object shapePathMod {
   
   @JSImport("three/src/extras/core/ShapePath", "ShapePath")
   @js.native
-  class ShapePath () extends StObject {
+  open class ShapePath () extends StObject {
     
     def bezierCurveTo(aCP1x: Double, aCP1y: Double, aCP2x: Double, aCP2y: Double, aX: Double, aY: Double): this.type = js.native
     
     /**
-    	 * @default new THREE.Color()
-    	 */
+      * @default new THREE.Color()
+      */
     var color: Color = js.native
     
     /**
-    	 * @default null
-    	 */
-    var currentPath: js.Any = js.native
+      * @default null
+      */
+    var currentPath: Any = js.native
     
     def lineTo(x: Double, y: Double): this.type = js.native
     
@@ -34,16 +34,15 @@ object shapePathMod {
     def splineThru(pts: js.Array[Vector2]): this.type = js.native
     
     /**
-    	 * @default []
-    	 */
-    var subPaths: js.Array[js.Any] = js.native
+      * @default []
+      */
+    var subPaths: js.Array[Any] = js.native
     
     def toShapes(isCCW: Boolean): js.Array[Shape] = js.native
-    def toShapes(isCCW: Boolean, noHoles: Boolean): js.Array[Shape] = js.native
     
     /**
-    	 * @default 'ShapePath'
-    	 */
+      * @default 'ShapePath'
+      */
     var `type`: String = js.native
   }
 }

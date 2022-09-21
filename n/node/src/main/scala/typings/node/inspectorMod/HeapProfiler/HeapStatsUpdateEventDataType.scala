@@ -22,6 +22,6 @@ object HeapStatsUpdateEventDataType {
     
     inline def setStatsUpdate(value: js.Array[Double]): Self = StObject.set(x, "statsUpdate", value.asInstanceOf[js.Any])
     
-    inline def setStatsUpdateVarargs(value: Double*): Self = StObject.set(x, "statsUpdate", js.Array(value :_*))
+    inline def setStatsUpdateVarargs(value: Double*): Self = StObject.set(x, "statsUpdate", js.Array(value*))
   }
 }

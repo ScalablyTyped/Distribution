@@ -9,6 +9,8 @@ trait Face extends StObject {
   var face: js.UndefOr[Double] = js.undefined
   
   var level: js.UndefOr[Double] = js.undefined
+  
+  var mode: js.UndefOr[Double] = js.undefined
 }
 object Face {
   
@@ -26,5 +28,9 @@ object Face {
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

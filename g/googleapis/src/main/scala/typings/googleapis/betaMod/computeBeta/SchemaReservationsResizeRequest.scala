@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaReservationsResizeRequest extends StObject {
   
   /**
-    * Number of allocated resources can be resized with minimum = 1 and maximum
-    * = 1000.
+    * Number of allocated resources can be resized with minimum = 1 and maximum = 1000.
     */
-  var specificSkuCount: js.UndefOr[String] = js.undefined
+  var specificSkuCount: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaReservationsResizeRequest {
   
@@ -22,6 +21,8 @@ object SchemaReservationsResizeRequest {
   extension [Self <: SchemaReservationsResizeRequest](x: Self) {
     
     inline def setSpecificSkuCount(value: String): Self = StObject.set(x, "specificSkuCount", value.asInstanceOf[js.Any])
+    
+    inline def setSpecificSkuCountNull: Self = StObject.set(x, "specificSkuCount", null)
     
     inline def setSpecificSkuCountUndefined: Self = StObject.set(x, "specificSkuCount", js.undefined)
   }

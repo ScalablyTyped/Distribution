@@ -1,7 +1,9 @@
 package typings.ol
 
+import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.colorlikeMod.ColorLike
+import typings.ol.executorMod.ReplayImageOrLabelArgs
 import typings.ol.objectMod.default
 import typings.ol.olMod.Transform
 import typings.ol.sizeMod.Size
@@ -182,7 +184,7 @@ object canvasMod {
   
   @JSImport("ol/render/canvas", "labelCache")
   @js.native
-  val labelCache: js.Any = js.native
+  val labelCache: Any = js.native
   
   inline def measureAndCacheTextWidth(font: String, text: String, cache: StringDictionary[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndCacheTextWidth")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -196,9 +198,7 @@ object canvasMod {
   
   inline def rotateAtOffset(context: CanvasRenderingContext2D, rotation: Double, offsetX: Double, offsetY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateAtOffset")(context.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type DeclutterGroup = js.Array[js.Any]
-  
-  type DeclutterGroups = js.Array[DeclutterGroup]
+  type DeclutterImageWithText = NumberDictionary[ReplayImageOrLabelArgs]
   
   trait FillState extends StObject {
     
@@ -276,7 +276,7 @@ object canvasMod {
       
       inline def setCurrentLineDashOffsetUndefined: Self = StObject.set(x, "currentLineDashOffset", js.undefined)
       
-      inline def setCurrentLineDashVarargs(value: Double*): Self = StObject.set(x, "currentLineDash", js.Array(value :_*))
+      inline def setCurrentLineDashVarargs(value: Double*): Self = StObject.set(x, "currentLineDash", js.Array(value*))
       
       inline def setCurrentLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "currentLineJoin", value.asInstanceOf[js.Any])
       
@@ -312,7 +312,7 @@ object canvasMod {
       
       inline def setLineDashOffsetUndefined: Self = StObject.set(x, "lineDashOffset", js.undefined)
       
-      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value*))
       
       inline def setLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       
@@ -351,11 +351,64 @@ object canvasMod {
       
       inline def setContextInstructions(value: js.Array[String | Double]): Self = StObject.set(x, "contextInstructions", value.asInstanceOf[js.Any])
       
-      inline def setContextInstructionsVarargs(value: (String | Double)*): Self = StObject.set(x, "contextInstructions", js.Array(value :_*))
+      inline def setContextInstructionsVarargs(value: (String | Double)*): Self = StObject.set(x, "contextInstructions", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SerializableInstructions extends StObject {
+    
+    var coordinates: js.Array[Double]
+    
+    var fillStates: js.UndefOr[StringDictionary[FillState]] = js.undefined
+    
+    var hitDetectionInstructions: js.Array[Any]
+    
+    var instructions: js.Array[Any]
+    
+    var strokeStates: js.UndefOr[StringDictionary[StrokeState]] = js.undefined
+    
+    var textStates: js.UndefOr[StringDictionary[TextState]] = js.undefined
+  }
+  object SerializableInstructions {
+    
+    inline def apply(
+      coordinates: js.Array[Double],
+      hitDetectionInstructions: js.Array[Any],
+      instructions: js.Array[Any]
+    ): SerializableInstructions = {
+      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], hitDetectionInstructions = hitDetectionInstructions.asInstanceOf[js.Any], instructions = instructions.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SerializableInstructions]
+    }
+    
+    extension [Self <: SerializableInstructions](x: Self) {
+      
+      inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      
+      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value*))
+      
+      inline def setFillStates(value: StringDictionary[FillState]): Self = StObject.set(x, "fillStates", value.asInstanceOf[js.Any])
+      
+      inline def setFillStatesUndefined: Self = StObject.set(x, "fillStates", js.undefined)
+      
+      inline def setHitDetectionInstructions(value: js.Array[Any]): Self = StObject.set(x, "hitDetectionInstructions", value.asInstanceOf[js.Any])
+      
+      inline def setHitDetectionInstructionsVarargs(value: Any*): Self = StObject.set(x, "hitDetectionInstructions", js.Array(value*))
+      
+      inline def setInstructions(value: js.Array[Any]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+      
+      inline def setInstructionsVarargs(value: Any*): Self = StObject.set(x, "instructions", js.Array(value*))
+      
+      inline def setStrokeStates(value: StringDictionary[StrokeState]): Self = StObject.set(x, "strokeStates", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeStatesUndefined: Self = StObject.set(x, "strokeStates", js.undefined)
+      
+      inline def setTextStates(value: StringDictionary[TextState]): Self = StObject.set(x, "textStates", value.asInstanceOf[js.Any])
+      
+      inline def setTextStatesUndefined: Self = StObject.set(x, "textStates", js.undefined)
     }
   }
   
@@ -398,7 +451,7 @@ object canvasMod {
       
       inline def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
       
-      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value*))
       
       inline def setLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       
@@ -463,7 +516,7 @@ object canvasMod {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
       
       inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       

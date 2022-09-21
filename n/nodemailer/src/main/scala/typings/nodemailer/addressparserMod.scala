@@ -89,7 +89,7 @@ object addressparserMod {
       
       inline def setGroup(value: js.Array[AddressOrGroup]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      inline def setGroupVarargs(value: AddressOrGroup*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: AddressOrGroup*): Self = StObject.set(x, "group", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

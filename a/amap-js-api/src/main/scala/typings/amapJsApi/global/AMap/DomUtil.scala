@@ -5,14 +5,12 @@ import typings.amapJsApi.amapJsApiStrings.`var`
 import typings.amapJsApi.amapJsApiStrings.a
 import typings.amapJsApi.amapJsApiStrings.abbr
 import typings.amapJsApi.amapJsApiStrings.address
-import typings.amapJsApi.amapJsApiStrings.applet
 import typings.amapJsApi.amapJsApiStrings.area
 import typings.amapJsApi.amapJsApiStrings.article
 import typings.amapJsApi.amapJsApiStrings.aside
 import typings.amapJsApi.amapJsApiStrings.audio
 import typings.amapJsApi.amapJsApiStrings.b
 import typings.amapJsApi.amapJsApiStrings.base
-import typings.amapJsApi.amapJsApiStrings.basefont
 import typings.amapJsApi.amapJsApiStrings.bdi
 import typings.amapJsApi.amapJsApiStrings.bdo
 import typings.amapJsApi.amapJsApiStrings.blockquote
@@ -32,7 +30,6 @@ import typings.amapJsApi.amapJsApiStrings.del
 import typings.amapJsApi.amapJsApiStrings.details
 import typings.amapJsApi.amapJsApiStrings.dfn
 import typings.amapJsApi.amapJsApiStrings.dialog
-import typings.amapJsApi.amapJsApiStrings.dir
 import typings.amapJsApi.amapJsApiStrings.div
 import typings.amapJsApi.amapJsApiStrings.dl
 import typings.amapJsApi.amapJsApiStrings.dt
@@ -41,11 +38,8 @@ import typings.amapJsApi.amapJsApiStrings.embed
 import typings.amapJsApi.amapJsApiStrings.fieldset
 import typings.amapJsApi.amapJsApiStrings.figcaption
 import typings.amapJsApi.amapJsApiStrings.figure
-import typings.amapJsApi.amapJsApiStrings.font
 import typings.amapJsApi.amapJsApiStrings.footer
 import typings.amapJsApi.amapJsApiStrings.form
-import typings.amapJsApi.amapJsApiStrings.frame
-import typings.amapJsApi.amapJsApiStrings.frameset
 import typings.amapJsApi.amapJsApiStrings.h1
 import typings.amapJsApi.amapJsApiStrings.h2
 import typings.amapJsApi.amapJsApiStrings.h3
@@ -70,7 +64,6 @@ import typings.amapJsApi.amapJsApiStrings.link
 import typings.amapJsApi.amapJsApiStrings.main
 import typings.amapJsApi.amapJsApiStrings.map
 import typings.amapJsApi.amapJsApiStrings.mark
-import typings.amapJsApi.amapJsApiStrings.marquee
 import typings.amapJsApi.amapJsApiStrings.menu
 import typings.amapJsApi.amapJsApiStrings.meta
 import typings.amapJsApi.amapJsApiStrings.meter
@@ -81,7 +74,6 @@ import typings.amapJsApi.amapJsApiStrings.optgroup
 import typings.amapJsApi.amapJsApiStrings.option
 import typings.amapJsApi.amapJsApiStrings.output
 import typings.amapJsApi.amapJsApiStrings.p
-import typings.amapJsApi.amapJsApiStrings.param
 import typings.amapJsApi.amapJsApiStrings.picture
 import typings.amapJsApi.amapJsApiStrings.pre
 import typings.amapJsApi.amapJsApiStrings.progress
@@ -123,12 +115,10 @@ import typings.amapJsApi.anon.PartialCSSStyleDeclaratio
 import typings.amapJsApi.anon.TypeofDomUtil
 import typings.amapJsApi.anon.X
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
 import typings.std.HTMLBRElement
 import typings.std.HTMLBaseElement
-import typings.std.HTMLBaseFontElement
 import typings.std.HTMLBodyElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLCanvasElement
@@ -137,15 +127,11 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
-import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
-import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
-import typings.std.HTMLFrameElement
-import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -158,7 +144,6 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
-import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -169,7 +154,6 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
-import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -181,10 +165,9 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableColElement
-import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableElement
-import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
@@ -232,11 +215,6 @@ object DomUtil {
   inline def create_address(tagName: address, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   inline def create_address(tagName: address, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  inline def create_applet(tagName: applet): HTMLAppletElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLAppletElement]
-  inline def create_applet(tagName: applet, parent: Unit, className: String): HTMLAppletElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAppletElement]
-  inline def create_applet(tagName: applet, parent: HTMLElement): HTMLAppletElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLAppletElement]
-  inline def create_applet(tagName: applet, parent: HTMLElement, className: String): HTMLAppletElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAppletElement]
-  
   inline def create_area(tagName: area): HTMLAreaElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLAreaElement]
   inline def create_area(tagName: area, parent: Unit, className: String): HTMLAreaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLAreaElement]
   inline def create_area(tagName: area, parent: HTMLElement): HTMLAreaElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLAreaElement]
@@ -266,11 +244,6 @@ object DomUtil {
   inline def create_base(tagName: base, parent: Unit, className: String): HTMLBaseElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseElement]
   inline def create_base(tagName: base, parent: HTMLElement): HTMLBaseElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseElement]
   inline def create_base(tagName: base, parent: HTMLElement, className: String): HTMLBaseElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseElement]
-  
-  inline def create_basefont(tagName: basefont): HTMLBaseFontElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLBaseFontElement]
-  inline def create_basefont(tagName: basefont, parent: Unit, className: String): HTMLBaseFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseFontElement]
-  inline def create_basefont(tagName: basefont, parent: HTMLElement): HTMLBaseFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseFontElement]
-  inline def create_basefont(tagName: basefont, parent: HTMLElement, className: String): HTMLBaseFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLBaseFontElement]
   
   inline def create_bdi(tagName: bdi): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   inline def create_bdi(tagName: bdi, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
@@ -367,11 +340,6 @@ object DomUtil {
   inline def create_dialog(tagName: dialog, parent: HTMLElement): HTMLDialogElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDialogElement]
   inline def create_dialog(tagName: dialog, parent: HTMLElement, className: String): HTMLDialogElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDialogElement]
   
-  inline def create_dir(tagName: dir): HTMLDirectoryElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLDirectoryElement]
-  inline def create_dir(tagName: dir, parent: Unit, className: String): HTMLDirectoryElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDirectoryElement]
-  inline def create_dir(tagName: dir, parent: HTMLElement): HTMLDirectoryElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDirectoryElement]
-  inline def create_dir(tagName: dir, parent: HTMLElement, className: String): HTMLDirectoryElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDirectoryElement]
-  
   inline def create_div(tagName: div): HTMLDivElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLDivElement]
   inline def create_div(tagName: div, parent: Unit, className: String): HTMLDivElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLDivElement]
   inline def create_div(tagName: div, parent: HTMLElement): HTMLDivElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLDivElement]
@@ -412,11 +380,6 @@ object DomUtil {
   inline def create_figure(tagName: figure, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   inline def create_figure(tagName: figure, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  inline def create_font(tagName: font): HTMLFontElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLFontElement]
-  inline def create_font(tagName: font, parent: Unit, className: String): HTMLFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFontElement]
-  inline def create_font(tagName: font, parent: HTMLElement): HTMLFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLFontElement]
-  inline def create_font(tagName: font, parent: HTMLElement, className: String): HTMLFontElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFontElement]
-  
   inline def create_footer(tagName: footer): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   inline def create_footer(tagName: footer, parent: Unit, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   inline def create_footer(tagName: footer, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
@@ -426,16 +389,6 @@ object DomUtil {
   inline def create_form(tagName: form, parent: Unit, className: String): HTMLFormElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFormElement]
   inline def create_form(tagName: form, parent: HTMLElement): HTMLFormElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLFormElement]
   inline def create_form(tagName: form, parent: HTMLElement, className: String): HTMLFormElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFormElement]
-  
-  inline def create_frame(tagName: frame): HTMLFrameElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLFrameElement]
-  inline def create_frame(tagName: frame, parent: Unit, className: String): HTMLFrameElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameElement]
-  inline def create_frame(tagName: frame, parent: HTMLElement): HTMLFrameElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameElement]
-  inline def create_frame(tagName: frame, parent: HTMLElement, className: String): HTMLFrameElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameElement]
-  
-  inline def create_frameset(tagName: frameset): HTMLFrameSetElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLFrameSetElement]
-  inline def create_frameset(tagName: frameset, parent: Unit, className: String): HTMLFrameSetElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameSetElement]
-  inline def create_frameset(tagName: frameset, parent: HTMLElement): HTMLFrameSetElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameSetElement]
-  inline def create_frameset(tagName: frameset, parent: HTMLElement, className: String): HTMLFrameSetElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLFrameSetElement]
   
   inline def create_h1(tagName: h1): HTMLHeadingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLHeadingElement]
   inline def create_h1(tagName: h1, parent: Unit, className: String): HTMLHeadingElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLHeadingElement]
@@ -557,11 +510,6 @@ object DomUtil {
   inline def create_mark(tagName: mark, parent: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   inline def create_mark(tagName: mark, parent: HTMLElement, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  inline def create_marquee(tagName: marquee): HTMLMarqueeElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLMarqueeElement]
-  inline def create_marquee(tagName: marquee, parent: Unit, className: String): HTMLMarqueeElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMarqueeElement]
-  inline def create_marquee(tagName: marquee, parent: HTMLElement): HTMLMarqueeElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLMarqueeElement]
-  inline def create_marquee(tagName: marquee, parent: HTMLElement, className: String): HTMLMarqueeElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMarqueeElement]
-  
   inline def create_menu(tagName: menu): HTMLMenuElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLMenuElement]
   inline def create_menu(tagName: menu, parent: Unit, className: String): HTMLMenuElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLMenuElement]
   inline def create_menu(tagName: menu, parent: HTMLElement): HTMLMenuElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLMenuElement]
@@ -616,11 +564,6 @@ object DomUtil {
   inline def create_p(tagName: p, parent: Unit, className: String): HTMLParagraphElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLParagraphElement]
   inline def create_p(tagName: p, parent: HTMLElement): HTMLParagraphElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLParagraphElement]
   inline def create_p(tagName: p, parent: HTMLElement, className: String): HTMLParagraphElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLParagraphElement]
-  
-  inline def create_param(tagName: param): HTMLParamElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLParamElement]
-  inline def create_param(tagName: param, parent: Unit, className: String): HTMLParamElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLParamElement]
-  inline def create_param(tagName: param, parent: HTMLElement): HTMLParamElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLParamElement]
-  inline def create_param(tagName: param, parent: HTMLElement, className: String): HTMLParamElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLParamElement]
   
   inline def create_picture(tagName: picture): HTMLPictureElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLPictureElement]
   inline def create_picture(tagName: picture, parent: Unit, className: String): HTMLPictureElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLPictureElement]
@@ -737,10 +680,10 @@ object DomUtil {
   inline def create_tbody(tagName: tbody, parent: HTMLElement): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
   inline def create_tbody(tagName: tbody, parent: HTMLElement, className: String): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
   
-  inline def create_td(tagName: td): HTMLTableDataCellElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableDataCellElement]
-  inline def create_td(tagName: td, parent: Unit, className: String): HTMLTableDataCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableDataCellElement]
-  inline def create_td(tagName: td, parent: HTMLElement): HTMLTableDataCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableDataCellElement]
-  inline def create_td(tagName: td, parent: HTMLElement, className: String): HTMLTableDataCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableDataCellElement]
+  inline def create_td(tagName: td): HTMLTableCellElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableCellElement]
+  inline def create_td(tagName: td, parent: Unit, className: String): HTMLTableCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCellElement]
+  inline def create_td(tagName: td, parent: HTMLElement): HTMLTableCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCellElement]
+  inline def create_td(tagName: td, parent: HTMLElement, className: String): HTMLTableCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCellElement]
   
   inline def create_template(tagName: template): HTMLTemplateElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTemplateElement]
   inline def create_template(tagName: template, parent: Unit, className: String): HTMLTemplateElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTemplateElement]
@@ -757,10 +700,10 @@ object DomUtil {
   inline def create_tfoot(tagName: tfoot, parent: HTMLElement): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
   inline def create_tfoot(tagName: tfoot, parent: HTMLElement, className: String): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]
   
-  inline def create_th(tagName: th): HTMLTableHeaderCellElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableHeaderCellElement]
-  inline def create_th(tagName: th, parent: Unit, className: String): HTMLTableHeaderCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableHeaderCellElement]
-  inline def create_th(tagName: th, parent: HTMLElement): HTMLTableHeaderCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableHeaderCellElement]
-  inline def create_th(tagName: th, parent: HTMLElement, className: String): HTMLTableHeaderCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableHeaderCellElement]
+  inline def create_th(tagName: th): HTMLTableCellElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableCellElement]
+  inline def create_th(tagName: th, parent: Unit, className: String): HTMLTableCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCellElement]
+  inline def create_th(tagName: th, parent: HTMLElement): HTMLTableCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCellElement]
+  inline def create_th(tagName: th, parent: HTMLElement, className: String): HTMLTableCellElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableCellElement]
   
   inline def create_thead(tagName: thead): HTMLTableSectionElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLTableSectionElement]
   inline def create_thead(tagName: thead, parent: Unit, className: String): HTMLTableSectionElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLTableSectionElement]

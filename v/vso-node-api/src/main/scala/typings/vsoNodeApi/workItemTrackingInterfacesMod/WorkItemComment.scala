@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait WorkItemComment
   
   var revisedBy: IdentityReference
   
-  var revisedDate: Date
+  var revisedDate: js.Date
   
   var revision: Double
   
@@ -20,9 +19,9 @@ trait WorkItemComment
 object WorkItemComment {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     revisedBy: IdentityReference,
-    revisedDate: Date,
+    revisedDate: js.Date,
     revision: Double,
     text: String,
     url: String
@@ -35,7 +34,7 @@ object WorkItemComment {
     
     inline def setRevisedBy(value: IdentityReference): Self = StObject.set(x, "revisedBy", value.asInstanceOf[js.Any])
     
-    inline def setRevisedDate(value: Date): Self = StObject.set(x, "revisedDate", value.asInstanceOf[js.Any])
+    inline def setRevisedDate(value: js.Date): Self = StObject.set(x, "revisedDate", value.asInstanceOf[js.Any])
     
     inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     

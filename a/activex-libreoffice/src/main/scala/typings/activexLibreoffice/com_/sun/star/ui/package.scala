@@ -1,5 +1,8 @@
 package typings.activexLibreoffice.com_.sun.star.ui
 
+import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+import typings.activexLibreoffice.com_.sun.star.lang.XSingleComponentFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A typical listener for context changes is the sidebar.
   */
-type ContextChangeEventMultiplexer = typings.activexLibreoffice.com_.sun.star.ui.XContextChangeEventMultiplexer
+type ContextChangeEventMultiplexer = XContextChangeEventMultiplexer
 
 /**
   * provides access to the global accelerator (aka shortcut) configuration set.
   * @since OOo 2.0
   */
-type GlobalAcceleratorConfiguration = typings.activexLibreoffice.com_.sun.star.ui.XAcceleratorConfiguration
+type GlobalAcceleratorConfiguration = XAcceleratorConfiguration
 
 /** @since LibreOffice 4.1 */
-type ImageManager = typings.activexLibreoffice.com_.sun.star.ui.XImageManager
+type ImageManager = XImageManager
 
 /**
   * a service which provides information about the user interface command categories of a single module.
@@ -28,7 +31,7 @@ type ImageManager = typings.activexLibreoffice.com_.sun.star.ui.XImageManager
   * commands that are part of a single OpenOffice.org module, like Writer or Calc.
   * @since OOo 2.0
   */
-type ModuleUICategoryDescription = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+type ModuleUICategoryDescription = XNameAccess
 
 /**
   * a service which provides information about the user interface commands of a single module.
@@ -37,7 +40,7 @@ type ModuleUICategoryDescription = typings.activexLibreoffice.com_.sun.star.cont
   * commands that are part of a single OpenOffice.org module, like Writer or Calc.
   * @since OOo 2.0
   */
-type ModuleUICommandDescription = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+type ModuleUICommandDescription = XNameAccess
 
 /**
   * a service which provides window based information about user interface elements of a single application module.
@@ -47,20 +50,20 @@ type ModuleUICommandDescription = typings.activexLibreoffice.com_.sun.star.conta
   * Writer or Calc.
   * @since OOo 2.0
   */
-type ModuleWindowStateConfiguration = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+type ModuleWindowStateConfiguration = XNameContainer
 
 /**
   * A legacy (single-instance) service-variant of {@link theUICategoryDescription} singleton.
   * @deprecated DeprecatedUse theUICategoryDescription singleton instead.
   * @since OOo 2.0
   */
-type UICategoryDescription = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+type UICategoryDescription = XNameAccess
 
 /**
   * specifies a user interface configuration manager which controls all customizable user interface elements of an object.
   * @since OOo 2.0
   */
-type UIConfigurationManager = typings.activexLibreoffice.com_.sun.star.ui.XUIConfigurationManager2
+type UIConfigurationManager = XUIConfigurationManager2
 
 /**
   * specifies a user interface element factory that can create and initialize a user interface element type.
@@ -70,14 +73,14 @@ type UIConfigurationManager = typings.activexLibreoffice.com_.sun.star.ui.XUICon
   * provide access to itself.
   * @since OOo 2.0
   */
-type UIElementFactory = typings.activexLibreoffice.com_.sun.star.ui.XUIElementFactory
+type UIElementFactory = XUIElementFactory
 
 /**
   * A legacy (single-instance) service-variant of {@link theUIElementFactoryManager} singleton.
   * @deprecated DeprecatedUse theUIElementFactoryManager singleton instead.
   * @since OOo 2.0
   */
-type UIElementFactoryManager = typings.activexLibreoffice.com_.sun.star.ui.XUIElementFactoryManager
+type UIElementFactoryManager = XUIElementFactoryManager
 
 /**
   * specifies a factory which creates a window that is a container for user interface elements. Dependent on the provided arguments different window types
@@ -86,21 +89,21 @@ type UIElementFactoryManager = typings.activexLibreoffice.com_.sun.star.ui.XUIEl
   * The specific type of the created window depends on the provided arguments.
   * @since OOo 3.1
   */
-type WindowContentFactory = typings.activexLibreoffice.com_.sun.star.lang.XSingleComponentFactory
+type WindowContentFactory = XSingleComponentFactory
 
 /**
   * A legacy (single-instance) service-variant of {@link theWindowContentFactoryManager} singleton.
   * @deprecated DeprecatedUse theWindowContentFactoryManager singleton instead.
   * @since LibreOffice 4.1
   */
-type WindowContentFactoryManager = typings.activexLibreoffice.com_.sun.star.lang.XSingleComponentFactory
+type WindowContentFactoryManager = XSingleComponentFactory
 
 /**
   * A legacy (single-instance) service-variant of {@link theWindowStateConfiguration} singleton.
   * @deprecated DeprecatedUse theWindowStateConfiguration singleton instead.
   * @since OOo 2.0
   */
-type WindowStateConfiguration = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+type WindowStateConfiguration = XNameAccess
 
 /**
   * specifies a central user interface configuration provider which gives access to module based user interface configuration managers.
@@ -113,7 +116,7 @@ type WindowStateConfiguration = typings.activexLibreoffice.com_.sun.star.contain
   * @see XUIConfigurationManager  Prior to LibreOffice 4.3, this singleton was only available as a (single-instance) ModuleUIConfigurationManagerSupplier
   * @since LibreOffice 4.3
   */
-type theModuleUIConfigurationManagerSupplier = typings.activexLibreoffice.com_.sun.star.ui.XModuleUIConfigurationManagerSupplier
+type theModuleUIConfigurationManagerSupplier = XModuleUIConfigurationManagerSupplier
 
 /**
   * a singleton which provides information about user interface command categories.
@@ -130,7 +133,7 @@ type theModuleUIConfigurationManagerSupplier = typings.activexLibreoffice.com_.s
   * @see com.sun.star.frame.ModuleManager Prior to LibreOffice 4.3, this singleton was only available as a (single-instance) {@link UICategoryDescription}
   * @since LibreOffice 4.3
   */
-type theUICategoryDescription = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+type theUICategoryDescription = XNameAccess
 
 /**
   * specifies a user interface factory manager that controls all registered user interface element factories.
@@ -138,7 +141,7 @@ type theUICategoryDescription = typings.activexLibreoffice.com_.sun.star.contain
   * Prior to LibreOffice 4.3, this singleton was only available as a (single-instance) {@link UIElementFactoryManager} service.
   * @since LibreOffice 4.3
   */
-type theUIElementFactoryManager = typings.activexLibreoffice.com_.sun.star.ui.XUIElementFactoryManager
+type theUIElementFactoryManager = XUIElementFactoryManager
 
 /**
   * This interface could be incomplete since I derived it from its sole place of use.
@@ -146,7 +149,7 @@ type theUIElementFactoryManager = typings.activexLibreoffice.com_.sun.star.ui.XU
   * Prior to LibreOffice 4.3, this singleton was only available as a (single-instance) {@link WindowContentFactoryManager} service.
   * @since LibreOffice 4.3
   */
-type theWindowContentFactoryManager = typings.activexLibreoffice.com_.sun.star.lang.XSingleComponentFactory
+type theWindowContentFactoryManager = XSingleComponentFactory
 
 /**
   * a singleton which provides window based information about user interface elements.
@@ -164,4 +167,4 @@ type theWindowContentFactoryManager = typings.activexLibreoffice.com_.sun.star.l
   * @see com.sun.star.frame.ModuleManager
   * @since LibreOffice 4.3
   */
-type theWindowStateConfiguration = typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+type theWindowStateConfiguration = XNameAccess

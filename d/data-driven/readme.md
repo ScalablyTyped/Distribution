@@ -9,10 +9,10 @@ data driven testing for mocha
 | ------------------ | :-------------: |
 | Full name          | data-driven |
 | Keywords           | mocha, test, bdd, tdd, data, data driven |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 160425 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10468.0 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/fluentsoftware/data-driven#readme)

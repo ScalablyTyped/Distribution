@@ -3,10 +3,9 @@ package typings.ionicDiscover
 import typings.ionicDiscover.ionicDiscoverStrings.connect
 import typings.ionicDiscover.ionicDiscoverStrings.error
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import typings.std.Set
 import typings.ws.mod.Server
-import typings.ws.mod.^
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object commMod {
   
   @JSImport("@ionic/discover/dist/comm", "CommServer")
   @js.native
-  class CommServer protected () extends EventEmitter {
+  open class CommServer protected () extends EventEmitter {
     def this(
       namespace: String,
       /**
@@ -28,7 +27,7 @@ object commMod {
     port: Double
     ) = this()
     
-    def clients: Set[^] = js.native
+    def clients: Set[WebSocket] = js.native
     
     /**
       * Unique identifier of the publisher.
@@ -40,16 +39,16 @@ object commMod {
     @JSName("on")
     def on_connect(event: connect, listener: js.Function1[/* data */ CommServerConnectionPayload, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
-    /* private */ var parseData: js.Any = js.native
+    /* private */ var parseData: Any = js.native
     
     /**
       * Port of communication server.
       */
     var port: Double = js.native
     
-    /* protected */ var server: js.UndefOr[Server] = js.native
+    /* protected */ var server: js.UndefOr[Server[WebSocket]] = js.native
     
     def start(): js.Promise[Unit] = js.native
     

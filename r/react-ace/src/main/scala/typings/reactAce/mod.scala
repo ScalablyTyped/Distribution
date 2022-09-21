@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("react-ace", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.reactAce.aceMod.default {
     def this(props: IAceEditorProps) = this()
   }
@@ -41,7 +41,7 @@ object mod {
   
   @JSImport("react-ace", "diff")
   @js.native
-  class diff protected ()
+  open class diff protected ()
     extends typings.reactAce.diffMod.default {
     def this(props: IDiffEditorProps) = this()
   }
@@ -65,7 +65,7 @@ object mod {
   
   @JSImport("react-ace", "split")
   @js.native
-  class split protected ()
+  open class split protected ()
     extends typings.reactAce.splitMod.default {
     def this(props: ISplitEditorProps) = this()
   }

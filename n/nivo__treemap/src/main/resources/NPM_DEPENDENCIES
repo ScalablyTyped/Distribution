@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@nivo/treemap" : "0.80.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@nivo/treemap" : "0.80.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

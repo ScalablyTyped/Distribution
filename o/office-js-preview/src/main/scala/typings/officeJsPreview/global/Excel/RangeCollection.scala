@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.RangeCollection")
 @js.native
-class RangeCollection ()
+open class RangeCollection ()
   extends StObject
      with typings.officeJsPreview.Excel.RangeCollection {
   

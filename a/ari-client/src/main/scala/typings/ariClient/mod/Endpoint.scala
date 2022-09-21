@@ -2,7 +2,6 @@ package typings.ariClient.mod
 
 import typings.ariClient.anon.Body
 import typings.ariClient.anon.Variables
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait Endpoint
   /**
     * Details for an endpoint.
     */
-  def get(callback: js.Function2[/* err */ Error, /* endpoint */ this.type, Unit]): Unit = js.native
+  def get(callback: js.Function2[/* err */ js.Error, /* endpoint */ this.type, Unit]): Unit = js.native
   
   /**
     * List all endpoints.
@@ -33,7 +32,7 @@ trait Endpoint
   /**
     * List all endpoints.
     */
-  def list(callback: js.Function2[/* err */ Error, /* endpoints */ js.Array[this.type], Unit]): Unit = js.native
+  def list(callback: js.Function2[/* err */ js.Error, /* endpoints */ js.Array[this.type], Unit]): Unit = js.native
   
   /**
     * List available endoints for a given endpoint technology.
@@ -42,7 +41,7 @@ trait Endpoint
   /**
     * List available endoints for a given endpoint technology.
     */
-  def listByTech(callback: js.Function2[/* err */ Error, /* endpoints */ js.Array[this.type], Unit]): Unit = js.native
+  def listByTech(callback: js.Function2[/* err */ js.Error, /* endpoints */ js.Array[this.type], Unit]): Unit = js.native
   
   /**
     * Identifier of the endpoint, specific to the given technology.
@@ -68,7 +67,7 @@ trait Endpoint
     * @param [params.variables] - The "variables" key in the body object holds technology specific key/value pairs to append to the message. These can be interpreted and used by the various
     * resource types; for example, pjsip and sip resource types will add the key/value pairs as SIP headers.
     */
-  def sendMessage(params: Body, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def sendMessage(params: Body, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Send a message to some endpoint in a technology.
@@ -87,7 +86,7 @@ trait Endpoint
     * @param [params.variables] - The "variables" key in the body object holds technology specific key/value pairs to append to the message. These can be interpreted and used by the various
     * resource types; for example, pjsip and sip resource types will add the key/value pairs as SIP headers.
     */
-  def sendMessageToEndpoint(params: Variables, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def sendMessageToEndpoint(params: Variables, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Endpoints state.

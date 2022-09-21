@@ -10,7 +10,7 @@ trait IInvocation extends StObject {
   
   var procedure: String
   
-  var progress: js.UndefOr[js.Function2[/* args */ js.Array[js.Any], /* kwargs */ js.Any, Unit]] = js.undefined
+  var progress: js.UndefOr[js.Function2[/* args */ js.Array[Any], /* kwargs */ Any, Unit]] = js.undefined
 }
 object IInvocation {
   
@@ -27,7 +27,7 @@ object IInvocation {
     
     inline def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     
-    inline def setProgress(value: (/* args */ js.Array[js.Any], /* kwargs */ js.Any) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+    inline def setProgress(value: (/* args */ js.Array[Any], /* kwargs */ Any) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
     inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }

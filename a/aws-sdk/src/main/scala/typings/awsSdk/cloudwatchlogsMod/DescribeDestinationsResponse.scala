@@ -26,7 +26,7 @@ object DescribeDestinationsResponse {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: Destination*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: Destination*): Self = StObject.set(x, "destinations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

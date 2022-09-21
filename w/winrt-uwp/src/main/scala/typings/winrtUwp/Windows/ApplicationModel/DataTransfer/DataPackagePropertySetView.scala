@@ -40,7 +40,7 @@ trait DataPackagePropertySetView extends StObject {
     * Returns an iterator to enumerate the items in the property set.
     * @return The first item in the DataPackage object.
     */
-  def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
+  def first(): IIterator[IKeyValuePair[Any, Any]]
   
   /**
     * Indicates whether the DataPackagePropertySetView object contains a specific property.
@@ -57,7 +57,7 @@ trait DataPackagePropertySetView extends StObject {
     * @param key The key.
     * @return The value, if an item with the specified key exists. Otherwise, an error code.
     */
-  def lookup(key: String): js.Any
+  def lookup(key: String): Any
   
   /** Gets the package family name of the source app. */
   var packageFamilyName: String
@@ -89,10 +89,10 @@ object DataPackagePropertySetView {
     description: String,
     enterpriseId: String,
     fileTypes: IVectorView[String],
-    first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+    first: () => IIterator[IKeyValuePair[Any, Any]],
     hasKey: String => Boolean,
     logoBackgroundColor: Color,
-    lookup: String => js.Any,
+    lookup: String => Any,
     packageFamilyName: String,
     size: Double,
     split: () => Second,
@@ -120,13 +120,13 @@ object DataPackagePropertySetView {
     
     inline def setFileTypes(value: IVectorView[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
-    inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
     
     inline def setLogoBackgroundColor(value: Color): Self = StObject.set(x, "logoBackgroundColor", value.asInstanceOf[js.Any])
     
-    inline def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+    inline def setLookup(value: String => Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     
     inline def setPackageFamilyName(value: String): Self = StObject.set(x, "packageFamilyName", value.asInstanceOf[js.Any])
     

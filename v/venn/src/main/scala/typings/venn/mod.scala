@@ -70,7 +70,7 @@ object mod {
       
       inline def setSets(value: js.Array[String]): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
       
-      inline def setSetsVarargs(value: String*): Self = StObject.set(x, "sets", js.Array(value :_*))
+      inline def setSetsVarargs(value: String*): Self = StObject.set(x, "sets", js.Array(value*))
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
@@ -147,7 +147,7 @@ object mod {
       
       inline def setSets(value: js.Array[String]): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
       
-      inline def setSetsVarargs(value: String*): Self = StObject.set(x, "sets", js.Array(value :_*))
+      inline def setSetsVarargs(value: String*): Self = StObject.set(x, "sets", js.Array(value*))
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "GridList")
 @js.native
-class GridList ()
-  extends Component[GridListProps, js.Object, js.Any]
+open class GridList ()
+  extends Component[GridListProps, js.Object, Any]

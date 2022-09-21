@@ -1,6 +1,5 @@
 package typings.appleMapkitJsBrowser.mapkit
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ trait GeoJSONDelegate extends StObject {
     * @param error An Error instance related to the last blocking error.
     * @param geoJSON The original parsed GeoJSON object.
     */
-  var geoJSONDidError: js.UndefOr[js.Function2[/* error */ Error, /* geoJSON */ js.Object, Unit]] = js.undefined
+  var geoJSONDidError: js.UndefOr[js.Function2[/* error */ js.Error, /* geoJSON */ js.Object, Unit]] = js.undefined
   
   /**
     * Overrides a feature.
@@ -165,7 +164,7 @@ object GeoJSONDelegate {
     
     inline def setGeoJSONDidCompleteUndefined: Self = StObject.set(x, "geoJSONDidComplete", js.undefined)
     
-    inline def setGeoJSONDidError(value: (/* error */ Error, /* geoJSON */ js.Object) => Unit): Self = StObject.set(x, "geoJSONDidError", js.Any.fromFunction2(value))
+    inline def setGeoJSONDidError(value: (/* error */ js.Error, /* geoJSON */ js.Object) => Unit): Self = StObject.set(x, "geoJSONDidError", js.Any.fromFunction2(value))
     
     inline def setGeoJSONDidErrorUndefined: Self = StObject.set(x, "geoJSONDidError", js.undefined)
     

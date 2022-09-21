@@ -8,41 +8,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterPivotHierarchyData extends StObject {
   
   /**
-    *
     * Determines whether to allow multiple filter items.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var enableMultipleFilterItems: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Returns the PivotFields associated with the FilterPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var fields: js.UndefOr[js.Array[PivotFieldData]] = js.undefined
   
   /**
+    * ID of the FilterPivotHierarchy.
     *
-    * Id of the FilterPivotHierarchy.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Name of the FilterPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Position of the FilterPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[Double] = js.undefined
@@ -64,7 +64,7 @@ object FilterPivotHierarchyData {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: PivotFieldData*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: PivotFieldData*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

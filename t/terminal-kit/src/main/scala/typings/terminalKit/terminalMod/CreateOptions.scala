@@ -17,7 +17,7 @@ trait CreateOptions extends StObject {
   
   var isTTY: js.UndefOr[Boolean] = js.undefined
   
-  var pid: js.UndefOr[js.Any] = js.undefined
+  var pid: js.UndefOr[Any] = js.undefined
   
   var preferProcessSigwinch: js.UndefOr[Boolean] = js.undefined
   
@@ -54,7 +54,7 @@ object CreateOptions {
     
     inline def setIsTTYUndefined: Self = StObject.set(x, "isTTY", js.undefined)
     
-    inline def setPid(value: js.Any): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Any): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
     inline def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
     

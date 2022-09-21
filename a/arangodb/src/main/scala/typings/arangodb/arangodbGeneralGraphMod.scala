@@ -26,9 +26,9 @@ object arangodbGeneralGraphMod {
   inline def drop(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_drop")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def drop(name: String, dropCollections: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_drop")(name.asInstanceOf[js.Any], dropCollections.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def edgeDefinitions(relations: EdgeDefinition*): js.Array[EdgeDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("_edgeDefinitions")(relations.asInstanceOf[js.Any]).asInstanceOf[js.Array[EdgeDefinition]]
+  inline def edgeDefinitions(relations: EdgeDefinition*): js.Array[EdgeDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("_edgeDefinitions")(relations.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[EdgeDefinition]]
   
-  inline def extendEdgeDefinitions(edgeDefinitions: js.Array[EdgeDefinition], relations: EdgeDefinition*): js.Array[EdgeDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("_extendEdgeDefinitions")(edgeDefinitions.asInstanceOf[js.Any], relations.asInstanceOf[js.Any])).asInstanceOf[js.Array[EdgeDefinition]]
+  inline def extendEdgeDefinitions(edgeDefinitions: js.Array[EdgeDefinition], relations: EdgeDefinition*): js.Array[EdgeDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("_extendEdgeDefinitions")(List(edgeDefinitions.asInstanceOf[js.Any]).`++`(relations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[EdgeDefinition]]
   
   inline def list(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_list")().asInstanceOf[js.Array[String]]
   
@@ -95,7 +95,7 @@ object arangodbGeneralGraphMod {
       
       inline def setNeighbors(value: js.Array[String]): Self = StObject.set(x, "neighbors", value.asInstanceOf[js.Any])
       
-      inline def setNeighborsVarargs(value: String*): Self = StObject.set(x, "neighbors", js.Array(value :_*))
+      inline def setNeighborsVarargs(value: String*): Self = StObject.set(x, "neighbors", js.Array(value*))
       
       inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
@@ -124,19 +124,19 @@ object arangodbGeneralGraphMod {
       
       inline def setIgnoredPropertiesUndefined: Self = StObject.set(x, "ignoredProperties", js.undefined)
       
-      inline def setIgnoredPropertiesVarargs(value: String*): Self = StObject.set(x, "ignoredProperties", js.Array(value :_*))
+      inline def setIgnoredPropertiesVarargs(value: String*): Self = StObject.set(x, "ignoredProperties", js.Array(value*))
       
       inline def setVertex1CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex1CollectionRestriction", value.asInstanceOf[js.Any])
       
       inline def setVertex1CollectionRestrictionUndefined: Self = StObject.set(x, "vertex1CollectionRestriction", js.undefined)
       
-      inline def setVertex1CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex1CollectionRestriction", js.Array(value :_*))
+      inline def setVertex1CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex1CollectionRestriction", js.Array(value*))
       
       inline def setVertex2CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex2CollectionRestriction", value.asInstanceOf[js.Any])
       
       inline def setVertex2CollectionRestrictionUndefined: Self = StObject.set(x, "vertex2CollectionRestriction", js.undefined)
       
-      inline def setVertex2CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex2CollectionRestriction", js.Array(value :_*))
+      inline def setVertex2CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex2CollectionRestriction", js.Array(value*))
     }
   }
   
@@ -163,7 +163,7 @@ object arangodbGeneralGraphMod {
       
       inline def setEdgeCollectionRestrictionUndefined: Self = StObject.set(x, "edgeCollectionRestriction", js.undefined)
       
-      inline def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value :_*))
+      inline def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value*))
       
       inline def setEdgeExamples(value: Example): Self = StObject.set(x, "edgeExamples", value.asInstanceOf[js.Any])
       
@@ -171,19 +171,19 @@ object arangodbGeneralGraphMod {
       
       inline def setEdgeExamplesUndefined: Self = StObject.set(x, "edgeExamples", js.undefined)
       
-      inline def setEdgeExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "edgeExamples", js.Array(value :_*))
+      inline def setEdgeExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "edgeExamples", js.Array(value*))
       
       inline def setVertex1CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex1CollectionRestriction", value.asInstanceOf[js.Any])
       
       inline def setVertex1CollectionRestrictionUndefined: Self = StObject.set(x, "vertex1CollectionRestriction", js.undefined)
       
-      inline def setVertex1CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex1CollectionRestriction", js.Array(value :_*))
+      inline def setVertex1CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex1CollectionRestriction", js.Array(value*))
       
       inline def setVertex2CollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertex2CollectionRestriction", value.asInstanceOf[js.Any])
       
       inline def setVertex2CollectionRestrictionUndefined: Self = StObject.set(x, "vertex2CollectionRestriction", js.undefined)
       
-      inline def setVertex2CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex2CollectionRestriction", js.Array(value :_*))
+      inline def setVertex2CollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertex2CollectionRestriction", js.Array(value*))
     }
   }
   
@@ -243,11 +243,11 @@ object arangodbGeneralGraphMod {
       
       inline def setFrom(value: js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value :_*))
+      inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value*))
       
       inline def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value*))
     }
   }
   
@@ -326,17 +326,17 @@ object arangodbGeneralGraphMod {
     
     def _extendEdgeDefinitions(edgeDefinition: EdgeDefinition): Unit = js.native
     
-    def _fromVertex(edgeId: String): Document[js.Any] = js.native
+    def _fromVertex(edgeId: String): Document[Any] = js.native
     
-    def _getConnectingEdges(vertexExample1: Example, vertexExample2: Example, options: ConnectingEdgesOptions): Edge[js.Any] = js.native
+    def _getConnectingEdges(vertexExample1: Example, vertexExample2: Example, options: ConnectingEdgesOptions): Edge[Any] = js.native
     
     def _neighbors(vertexExample: Example): js.Array[String] = js.native
     def _neighbors(vertexExample: Example, options: NeighborsOptions): js.Array[String] = js.native
     
     def _orphanCollections(): js.Array[String] = js.native
     
-    def _paths(): js.Array[Path[js.Any, js.Any, js.Any, scala.Nothing]] = js.native
-    def _paths(options: PathsOptions): js.Array[Path[js.Any, js.Any, js.Any, scala.Nothing]] = js.native
+    def _paths(): js.Array[Path[Any, Any, Any, scala.Nothing]] = js.native
+    def _paths(options: PathsOptions): js.Array[Path[Any, Any, Any, scala.Nothing]] = js.native
     
     def _radius(vertexExample: Example): Double = js.native
     def _radius(vertexExample: Example, options: RadiusOptions): Double = js.native
@@ -344,10 +344,10 @@ object arangodbGeneralGraphMod {
     def _removeVertexCollection(orphanCollectionName: String): Unit = js.native
     def _removeVertexCollection(orphanCollectionName: String, dropCollection: Boolean): Unit = js.native
     
-    def _shortestPath(startVertexExample: Example, endVertexExample: Example): js.Array[ShortestPath[js.Any]] = js.native
-    def _shortestPath(startVertexExample: Example, endVertexExample: Example, options: ShortestPathOptions): js.Array[ShortestPath[js.Any]] = js.native
+    def _shortestPath(startVertexExample: Example, endVertexExample: Example): js.Array[ShortestPath[Any]] = js.native
+    def _shortestPath(startVertexExample: Example, endVertexExample: Example, options: ShortestPathOptions): js.Array[ShortestPath[Any]] = js.native
     
-    def _toVertex(edgeId: String): Document[js.Any] = js.native
+    def _toVertex(edgeId: String): Document[Any] = js.native
   }
   
   trait NeighborsOptions extends StObject {
@@ -383,7 +383,7 @@ object arangodbGeneralGraphMod {
       
       inline def setEdgeCollectionRestrictionUndefined: Self = StObject.set(x, "edgeCollectionRestriction", js.undefined)
       
-      inline def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value :_*))
+      inline def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value*))
       
       inline def setEdgeExamples(value: Example): Self = StObject.set(x, "edgeExamples", value.asInstanceOf[js.Any])
       
@@ -391,7 +391,7 @@ object arangodbGeneralGraphMod {
       
       inline def setEdgeExamplesUndefined: Self = StObject.set(x, "edgeExamples", js.undefined)
       
-      inline def setEdgeExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "edgeExamples", js.Array(value :_*))
+      inline def setEdgeExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "edgeExamples", js.Array(value*))
       
       inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
@@ -407,13 +407,13 @@ object arangodbGeneralGraphMod {
       
       inline def setNeighborExamplesUndefined: Self = StObject.set(x, "neighborExamples", js.undefined)
       
-      inline def setNeighborExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "neighborExamples", js.Array(value :_*))
+      inline def setNeighborExamplesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "neighborExamples", js.Array(value*))
       
       inline def setVertexCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "vertexCollectionRestriction", value.asInstanceOf[js.Any])
       
       inline def setVertexCollectionRestrictionUndefined: Self = StObject.set(x, "vertexCollectionRestriction", js.undefined)
       
-      inline def setVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertexCollectionRestriction", js.Array(value :_*))
+      inline def setVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "vertexCollectionRestriction", js.Array(value*))
     }
   }
   
@@ -445,13 +445,13 @@ object arangodbGeneralGraphMod {
       
       inline def setEdges(value: js.Array[Edge[E]]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      inline def setEdgesVarargs(value: Edge[E]*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Edge[E]*): Self = StObject.set(x, "edges", js.Array(value*))
       
       inline def setSource(value: Document[A]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setVertice(value: js.Array[Document[A | B | V]]): Self = StObject.set(x, "vertice", value.asInstanceOf[js.Any])
       
-      inline def setVerticeVarargs(value: (Document[A | B | V])*): Self = StObject.set(x, "vertice", js.Array(value :_*))
+      inline def setVerticeVarargs(value: (Document[A | B | V])*): Self = StObject.set(x, "vertice", js.Array(value*))
     }
   }
   
@@ -515,11 +515,11 @@ object arangodbGeneralGraphMod {
       
       inline def setEdges(value: js.Array[Edge[T]]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      inline def setEdgesVarargs(value: Edge[T]*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Edge[T]*): Self = StObject.set(x, "edges", js.Array(value*))
       
       inline def setVertices(value: js.Array[String]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      inline def setVerticesVarargs(value: String*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: String*): Self = StObject.set(x, "vertices", js.Array(value*))
     }
   }
   
@@ -558,19 +558,19 @@ object arangodbGeneralGraphMod {
       
       inline def setEdgeCollectionRestrictionUndefined: Self = StObject.set(x, "edgeCollectionRestriction", js.undefined)
       
-      inline def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value :_*))
+      inline def setEdgeCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "edgeCollectionRestriction", js.Array(value*))
       
       inline def setEndVertexCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "endVertexCollectionRestriction", value.asInstanceOf[js.Any])
       
       inline def setEndVertexCollectionRestrictionUndefined: Self = StObject.set(x, "endVertexCollectionRestriction", js.undefined)
       
-      inline def setEndVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "endVertexCollectionRestriction", js.Array(value :_*))
+      inline def setEndVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "endVertexCollectionRestriction", js.Array(value*))
       
       inline def setStartVertexCollectionRestriction(value: js.Array[String] | String): Self = StObject.set(x, "startVertexCollectionRestriction", value.asInstanceOf[js.Any])
       
       inline def setStartVertexCollectionRestrictionUndefined: Self = StObject.set(x, "startVertexCollectionRestriction", js.undefined)
       
-      inline def setStartVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "startVertexCollectionRestriction", js.Array(value :_*))
+      inline def setStartVertexCollectionRestrictionVarargs(value: String*): Self = StObject.set(x, "startVertexCollectionRestriction", js.Array(value*))
       
       inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       

@@ -4,23 +4,56 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hls.js", "Loader")
-@js.native
-class Loader protected () extends StObject {
-  def this(config: LoaderConfig) = this()
+trait Loader[T /* <: LoaderContext */] extends StObject {
+  
+  def abort(): Unit
+  
+  var context: T
+  
+  def destroy(): Unit
   
   /**
-    * Abort any loading in progress.
+    * `getCacheAge()` is called by hls.js to get the duration that a given object
+    * has been sitting in a cache proxy when playing live.  If implemented,
+    * this should return a value in seconds.
+    *
+    * For HTTP based loaders, this should return the contents of the "age" header.
+    *
+    * @returns time object being lodaded
     */
-  def abort(): Unit = js.native
+  var getCacheAge: js.UndefOr[js.Function0[Double | Null]] = js.undefined
   
-  /**
-    * Destroy loading context.
-    */
-  def destroy(): Unit = js.native
+  def load(context: LoaderContext, config: LoaderConfiguration, callbacks: LoaderCallbacks[T]): Unit
   
-  /**
-    * Start retrieving content located at given URL (HTTP GET).
-    */
-  def load(context: LoaderContext, config: LoaderConfig, callbacks: LoaderCallbacks): Unit = js.native
+  var stats: LoaderStats
+}
+object Loader {
+  
+  inline def apply[T /* <: LoaderContext */](
+    abort: () => Unit,
+    context: T,
+    destroy: () => Unit,
+    load: (LoaderContext, LoaderConfiguration, LoaderCallbacks[T]) => Unit,
+    stats: LoaderStats
+  ): Loader[T] = {
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), context = context.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), load = js.Any.fromFunction3(load), stats = stats.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Loader[T]]
+  }
+  
+  extension [Self <: Loader[?], T /* <: LoaderContext */](x: Self & Loader[T]) {
+    
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    
+    inline def setContext(value: T): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    
+    inline def setGetCacheAge(value: () => Double | Null): Self = StObject.set(x, "getCacheAge", js.Any.fromFunction0(value))
+    
+    inline def setGetCacheAgeUndefined: Self = StObject.set(x, "getCacheAge", js.undefined)
+    
+    inline def setLoad(value: (LoaderContext, LoaderConfiguration, LoaderCallbacks[T]) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction3(value))
+    
+    inline def setStats(value: LoaderStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+  }
 }

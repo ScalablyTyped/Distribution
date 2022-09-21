@@ -10,10 +10,10 @@ The lodash method `_.max` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.max |
 | Keywords           | lodash-modularized, max |
-| # releases         | 0 |
-| # dependents       | 41 |
-| # downloads        | 4091081 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 509463.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

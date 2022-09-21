@@ -3,7 +3,6 @@ package typings.diagnosticChannelPublishers
 import typings.diagnosticChannel.patchRequireMod.IModulePatcher
 import typings.diagnosticChannelPublishers.anon.Plan
 import typings.diagnosticChannelPublishers.anon.Port
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object tediousPubMod {
     
     var duration: Double
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var query: Plan
     
@@ -45,7 +44,7 @@ object tediousPubMod {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -61,11 +60,11 @@ object tediousPubMod {
     
     var rowCount: Double
     
-    var rows: js.Any
+    var rows: Any
   }
   object ITediousResult {
     
-    inline def apply(rowCount: Double, rows: js.Any): ITediousResult = {
+    inline def apply(rowCount: Double, rows: Any): ITediousResult = {
       val __obj = js.Dynamic.literal(rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITediousResult]
     }
@@ -74,7 +73,7 @@ object tediousPubMod {
       
       inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
-      inline def setRows(value: js.Any): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Any): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     }
   }
 }

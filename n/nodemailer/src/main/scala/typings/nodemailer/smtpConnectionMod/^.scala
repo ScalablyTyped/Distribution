@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodemailer/lib/smtp-connection", JSImport.Namespace)
 @js.native
-class ^ () extends SMTPConnection {
+open class ^ () extends SMTPConnection {
   def this(options: Options) = this()
 }

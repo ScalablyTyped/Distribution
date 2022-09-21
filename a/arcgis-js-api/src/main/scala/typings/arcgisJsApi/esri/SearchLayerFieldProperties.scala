@@ -11,7 +11,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.long
 import typings.arcgisJsApi.arcgisJsApiStrings.oid
 import typings.arcgisJsApi.arcgisJsApiStrings.raster
 import typings.arcgisJsApi.arcgisJsApiStrings.single
-import typings.arcgisJsApi.arcgisJsApiStrings.string
+import typings.arcgisJsApi.arcgisJsApiStrings.string_
 import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,7 +39,7 @@ trait SearchLayerFieldProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html#type)
     */
   var `type`: js.UndefOr[
-    `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
+    `small-integer` | integer | single | double | long | string_ | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
   ] = js.undefined
 }
 object SearchLayerFieldProperties {
@@ -60,7 +60,7 @@ object SearchLayerFieldProperties {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setType(
-      value: `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
+      value: `small-integer` | integer | single | double | long | string_ | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)

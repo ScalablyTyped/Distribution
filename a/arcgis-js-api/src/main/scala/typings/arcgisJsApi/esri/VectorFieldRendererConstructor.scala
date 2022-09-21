@@ -17,5 +17,5 @@ trait VectorFieldRendererConstructor
 Instantiable0[VectorFieldRenderer]
      with Instantiable1[/* properties */ VectorFieldRendererProperties, VectorFieldRenderer] {
   
-  def fromJSON(json: js.Any): VectorFieldRenderer = js.native
+  def fromJSON(json: Any): VectorFieldRenderer = js.native
 }

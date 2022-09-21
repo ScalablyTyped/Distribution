@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the DateTime Grouping condition.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */

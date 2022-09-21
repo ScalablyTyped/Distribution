@@ -15,14 +15,14 @@ object deviceOrientationMod {
   
   @JSImport("react-fns/dist/DeviceOrientation", "DeviceOrientation")
   @js.native
-  class DeviceOrientation protected ()
+  open class DeviceOrientation protected ()
     extends typings.reactFns.deviceOrientationDeviceOrientationMod.DeviceOrientation {
     def this(props: SharedRenderProps[DeviceOrientationProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[DeviceOrientationProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[DeviceOrientationProps], context: Any) = this()
   }
   
   inline def withDeviceOrientation[Props](Component: ComponentType[Props & DeviceOrientationProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDeviceOrientation")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ScrollablePaneBase")
 @js.native
-class ScrollablePaneBase protected ()
+open class ScrollablePaneBase protected ()
   extends typings.officeUiFabricReact.mod.ScrollablePaneBase {
   def this(props: IScrollablePaneProps) = this()
 }

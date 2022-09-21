@@ -29,6 +29,6 @@ object AddTagsToResourceRequest {
     
     inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
   }
 }

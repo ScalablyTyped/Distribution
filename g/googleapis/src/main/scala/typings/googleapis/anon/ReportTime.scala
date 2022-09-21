@@ -27,6 +27,6 @@ object ReportTime {
     
     inline def setSystemRamFreeInfoUndefined: Self = StObject.set(x, "systemRamFreeInfo", js.undefined)
     
-    inline def setSystemRamFreeInfoVarargs(value: String*): Self = StObject.set(x, "systemRamFreeInfo", js.Array(value :_*))
+    inline def setSystemRamFreeInfoVarargs(value: String*): Self = StObject.set(x, "systemRamFreeInfo", js.Array(value*))
   }
 }

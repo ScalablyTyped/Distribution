@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,11 +14,11 @@ trait ActivitySensorReading extends StObject {
   var confidence: ActivitySensorReadingConfidence
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object ActivitySensorReading {
   
-  inline def apply(activity: ActivityType, confidence: ActivitySensorReadingConfidence, timestamp: Date): ActivitySensorReading = {
+  inline def apply(activity: ActivityType, confidence: ActivitySensorReadingConfidence, timestamp: js.Date): ActivitySensorReading = {
     val __obj = js.Dynamic.literal(activity = activity.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivitySensorReading]
   }
@@ -30,6 +29,6 @@ object ActivitySensorReading {
     
     inline def setConfidence(value: ActivitySensorReadingConfidence): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

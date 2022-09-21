@@ -10,10 +10,10 @@ ETW logging native Node.js module for the TypeScript project
 | ------------------ | :-------------: |
 | Full name          | @microsoft/typescript-etw |
 | Keywords           | etw, napi, node |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 2328 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2512.3333333333335 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/typescript-etw)

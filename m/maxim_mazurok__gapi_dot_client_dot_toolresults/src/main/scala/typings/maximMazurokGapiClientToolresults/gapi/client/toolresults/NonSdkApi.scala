@@ -38,13 +38,13 @@ object NonSdkApi {
     
     inline def setExampleStackTracesUndefined: Self = StObject.set(x, "exampleStackTraces", js.undefined)
     
-    inline def setExampleStackTracesVarargs(value: String*): Self = StObject.set(x, "exampleStackTraces", js.Array(value :_*))
+    inline def setExampleStackTracesVarargs(value: String*): Self = StObject.set(x, "exampleStackTraces", js.Array(value*))
     
     inline def setInsights(value: js.Array[NonSdkApiInsight]): Self = StObject.set(x, "insights", value.asInstanceOf[js.Any])
     
     inline def setInsightsUndefined: Self = StObject.set(x, "insights", js.undefined)
     
-    inline def setInsightsVarargs(value: NonSdkApiInsight*): Self = StObject.set(x, "insights", js.Array(value :_*))
+    inline def setInsightsVarargs(value: NonSdkApiInsight*): Self = StObject.set(x, "insights", js.Array(value*))
     
     inline def setInvocationCount(value: Double): Self = StObject.set(x, "invocationCount", value.asInstanceOf[js.Any])
     

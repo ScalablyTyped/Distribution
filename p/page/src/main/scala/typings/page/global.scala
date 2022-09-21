@@ -22,7 +22,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("page.Context")
     @js.native
-    class Context protected ()
+    open class Context protected ()
       extends StObject
          with typings.page.PageJS.Context {
       /**
@@ -31,7 +31,7 @@ object global {
         * @param {any}    state state
         */
       def this(path: String) = this()
-      def this(path: String, state: js.Any) = this()
+      def this(path: String, state: Any) = this()
     }
     
     /**
@@ -41,7 +41,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("page.Route")
     @js.native
-    class Route protected ()
+    open class Route protected ()
       extends StObject
          with typings.page.PageJS.Route {
       /**

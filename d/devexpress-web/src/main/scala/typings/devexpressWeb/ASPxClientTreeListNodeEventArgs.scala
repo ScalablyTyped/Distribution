@@ -19,7 +19,7 @@ trait ASPxClientTreeListNodeEventArgs
   /**
     * Provides access to the parameters associated with the ASPxClientTreeList.NodeClick and ASPxClientTreeList.NodeDblClick events.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
   
   /**
     * Gets the processed node's key value.
@@ -28,7 +28,7 @@ trait ASPxClientTreeListNodeEventArgs
 }
 object ASPxClientTreeListNodeEventArgs {
   
-  inline def apply(cancel: Boolean, htmlEvent: js.Any, nodeKey: String): ASPxClientTreeListNodeEventArgs = {
+  inline def apply(cancel: Boolean, htmlEvent: Any, nodeKey: String): ASPxClientTreeListNodeEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListNodeEventArgs]
   }
@@ -37,7 +37,7 @@ object ASPxClientTreeListNodeEventArgs {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
     inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
   }

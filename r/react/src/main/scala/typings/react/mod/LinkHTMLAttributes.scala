@@ -18,6 +18,10 @@ trait LinkHTMLAttributes[T]
   
   var hrefLang: js.UndefOr[String] = js.undefined
   
+  var imageSizes: js.UndefOr[String] = js.undefined
+  
+  var imageSrcSet: js.UndefOr[String] = js.undefined
+  
   var integrity: js.UndefOr[String] = js.undefined
   
   var media: js.UndefOr[String] = js.undefined
@@ -58,6 +62,14 @@ object LinkHTMLAttributes {
     inline def setHrefLangUndefined: Self = StObject.set(x, "hrefLang", js.undefined)
     
     inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    
+    inline def setImageSizes(value: String): Self = StObject.set(x, "imageSizes", value.asInstanceOf[js.Any])
+    
+    inline def setImageSizesUndefined: Self = StObject.set(x, "imageSizes", js.undefined)
+    
+    inline def setImageSrcSet(value: String): Self = StObject.set(x, "imageSrcSet", value.asInstanceOf[js.Any])
+    
+    inline def setImageSrcSetUndefined: Self = StObject.set(x, "imageSrcSet", js.undefined)
     
     inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     

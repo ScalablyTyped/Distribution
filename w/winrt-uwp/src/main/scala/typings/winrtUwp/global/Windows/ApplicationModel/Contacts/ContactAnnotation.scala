@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactAnnotation")
 @js.native
 /** Initializes a new instance of the ContactAnnotation class. */
-class ContactAnnotation ()
+open class ContactAnnotation ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAnnotation {
   

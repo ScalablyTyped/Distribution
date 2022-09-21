@@ -62,7 +62,7 @@ trait b2Joint extends StObject {
     * Get the user data pointer.
     * @return User data.  Cast to your data type.
     **/
-  def GetUserData(): js.Any
+  def GetUserData(): Any
   
   /**
     * Short-cut function to determine if either body is inactive.
@@ -74,7 +74,7 @@ trait b2Joint extends StObject {
     * Set the user data pointer.
     * @param data Your custom data.
     **/
-  def SetUserData(data: js.Any): Unit
+  def SetUserData(data: Any): Unit
 }
 object b2Joint {
   
@@ -87,9 +87,9 @@ object b2Joint {
     GetReactionForce: Double => b2Vec2,
     GetReactionTorque: Double => Double,
     GetType: () => Double,
-    GetUserData: () => js.Any,
+    GetUserData: () => Any,
     IsActive: () => Boolean,
-    SetUserData: js.Any => Unit
+    SetUserData: Any => Unit
   ): b2Joint = {
     val __obj = js.Dynamic.literal(GetAnchorA = js.Any.fromFunction0(GetAnchorA), GetAnchorB = js.Any.fromFunction0(GetAnchorB), GetBodyA = js.Any.fromFunction0(GetBodyA), GetBodyB = js.Any.fromFunction0(GetBodyB), GetNext = js.Any.fromFunction0(GetNext), GetReactionForce = js.Any.fromFunction1(GetReactionForce), GetReactionTorque = js.Any.fromFunction1(GetReactionTorque), GetType = js.Any.fromFunction0(GetType), GetUserData = js.Any.fromFunction0(GetUserData), IsActive = js.Any.fromFunction0(IsActive), SetUserData = js.Any.fromFunction1(SetUserData))
     __obj.asInstanceOf[b2Joint]
@@ -113,10 +113,10 @@ object b2Joint {
     
     inline def setGetType(value: () => Double): Self = StObject.set(x, "GetType", js.Any.fromFunction0(value))
     
-    inline def setGetUserData(value: () => js.Any): Self = StObject.set(x, "GetUserData", js.Any.fromFunction0(value))
+    inline def setGetUserData(value: () => Any): Self = StObject.set(x, "GetUserData", js.Any.fromFunction0(value))
     
     inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "IsActive", js.Any.fromFunction0(value))
     
-    inline def setSetUserData(value: js.Any => Unit): Self = StObject.set(x, "SetUserData", js.Any.fromFunction1(value))
+    inline def setSetUserData(value: Any => Unit): Self = StObject.set(x, "SetUserData", js.Any.fromFunction1(value))
   }
 }

@@ -4,22 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventExpressionData
+trait EventExpressionData[Scope]
   extends StObject
-     with BaseExpressionData
-     with _ExpressionData {
+     with BaseExpressionData[Scope]
+     with _ExpressionData[Scope] {
   
   var name: String
 }
 object EventExpressionData {
   
-  inline def apply(evaluate: js.Any => js.Any, name: String, `type`: ExpressionType): EventExpressionData = {
+  inline def apply[Scope](evaluate: Scope => Any, name: String, `type`: ExpressionType): EventExpressionData[Scope] = {
     val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction1(evaluate), name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EventExpressionData]
+    __obj.asInstanceOf[EventExpressionData[Scope]]
   }
   
-  extension [Self <: EventExpressionData](x: Self) {
+  extension [Self <: EventExpressionData[?], Scope](x: Self & EventExpressionData[Scope]) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

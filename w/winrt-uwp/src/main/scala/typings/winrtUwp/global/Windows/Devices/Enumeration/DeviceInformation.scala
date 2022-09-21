@@ -58,7 +58,7 @@ abstract class DeviceInformation ()
   
   /** Property store containing well-known values as well as additional properties that can be specified during device enumeration. */
   /* CompleteClass */
-  var properties: IMapView[String, js.Any] = js.native
+  var properties: IMapView[String, Any] = js.native
   
   /**
     * Updates the properties of an existing DeviceInformation object.

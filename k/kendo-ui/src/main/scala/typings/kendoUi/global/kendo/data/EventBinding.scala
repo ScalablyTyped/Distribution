@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.EventBinding")
 @js.native
-class EventBinding ()
+open class EventBinding ()
   extends StObject
      with typings.kendoUi.kendo.data.EventBinding

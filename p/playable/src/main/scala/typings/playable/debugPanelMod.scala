@@ -14,25 +14,25 @@ object debugPanelMod {
   
   @JSImport("playable/dist/src/modules/ui/debug-panel/debug-panel", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with DebugPanel {
     def this(hasEngineRootContainerKeyboardControl: KeyboardControl) = this()
     
     /* private */ /* CompleteClass */
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _interval: js.Any = js.native
+    var _interval: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _keyControlCallback: js.Any = js.native
+    var _keyControlCallback: Any = js.native
     
     /* CompleteClass */
     override def clearUpdateInterval(): Unit = js.native
@@ -89,15 +89,15 @@ object debugPanelMod {
   
   trait DebugPanel extends StObject {
     
-    /* private */ var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: Any
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _interval: js.Any
+    /* private */ var _interval: Any
     
-    /* private */ var _keyControlCallback: js.Any
+    /* private */ var _keyControlCallback: Any
     
     def clearUpdateInterval(): Unit
     
@@ -122,11 +122,11 @@ object debugPanelMod {
   object DebugPanel {
     
     inline def apply(
-      _bindCallbacks: js.Any,
-      _engine: js.Any,
-      _initUI: js.Any,
-      _interval: js.Any,
-      _keyControlCallback: js.Any,
+      _bindCallbacks: Any,
+      _engine: Any,
+      _initUI: Any,
+      _interval: Any,
+      _keyControlCallback: Any,
       clearUpdateInterval: () => Unit,
       destroy: () => Unit,
       getDebugInfo: () => IEngineDebugInfo | CurrentBitrate,
@@ -164,15 +164,15 @@ object debugPanelMod {
       
       inline def setView(value: typings.playable.debugPanelViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_interval(value: js.Any): Self = StObject.set(x, "_interval", value.asInstanceOf[js.Any])
+      inline def set_interval(value: Any): Self = StObject.set(x, "_interval", value.asInstanceOf[js.Any])
       
-      inline def set_keyControlCallback(value: js.Any): Self = StObject.set(x, "_keyControlCallback", value.asInstanceOf[js.Any])
+      inline def set_keyControlCallback(value: Any): Self = StObject.set(x, "_keyControlCallback", value.asInstanceOf[js.Any])
     }
   }
 }

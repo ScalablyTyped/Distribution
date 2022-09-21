@@ -9,7 +9,7 @@ object methodCallToStringConverterMod {
   
   @JSImport("ts-mockito/lib/utils/MethodCallToStringConverter", "MethodCallToStringConverter")
   @js.native
-  class MethodCallToStringConverter () extends StObject {
+  open class MethodCallToStringConverter () extends StObject {
     
     def convert(method: MethodToStub): String = js.native
   }

@@ -12,7 +12,7 @@ trait StopMonitoringMembersRequest extends StObject {
   var AccountIds: typings.awsSdk.guarddutyMod.AccountIds
   
   /**
-    * The unique ID of the detector associated with the GuardDuty master account that is monitoring member accounts.
+    * The unique ID of the detector associated with the GuardDuty administrator account that is monitoring member accounts.
     */
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
@@ -27,7 +27,7 @@ object StopMonitoringMembersRequest {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }

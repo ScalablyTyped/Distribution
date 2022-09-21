@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Query extends StObject {
   
-  var data: js.Array[js.Any] = js.native
+  var data: js.Array[Any] = js.native
   
   def filter(filters: js.Array[DataSourceFilterItem]): Query = js.native
   def filter(filters: DataSourceFilterItem): Query = js.native
@@ -29,5 +29,5 @@ trait Query extends StObject {
   
   def take(count: Double): Query = js.native
   
-  def toArray(): js.Array[js.Any] = js.native
+  def toArray(): js.Array[Any] = js.native
 }

@@ -17,7 +17,7 @@ trait SoftwareConfig extends StObject {
   var airflowConfigOverrides: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -29,16 +29,18 @@ trait SoftwareConfig extends StObject {
   var envVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
   ] = js.undefined
   
   /**
     * The version of the software running in the environment. This encapsulates both the version of Cloud Composer functionality and the version of Apache Airflow. It must match the
-    * regular expression `composer-([0-9]+\.[0-9]+\.[0-9]+|latest)-airflow-[0-9]+\.[0-9]+(\.[0-9]+.*)?`. When used as input, the server also checks if the provided version is supported
-    * and denies the request for an unsupported version. The Cloud Composer portion of the version is a [semantic version](https://semver.org) or `latest`. When the patch version is
-    * omitted, the current Cloud Composer patch version is selected. When `latest` is provided instead of an explicit version number, the server replaces `latest` with the current Cloud
-    * Composer version and stores that version number in the same field. The portion of the image version that follows *airflow-* is an official Apache Airflow repository [release
-    * name](https://github.com/apache/incubator-airflow/releases). See also [Version List](/composer/docs/concepts/versioning/composer-versions).
+    * regular expression `composer-([0-9]+(\.[0-9]+\.[0-9]+(-preview\.[0-9]+)?)?|latest)-airflow-([0-9]+(\.[0-9]+(\.[0-9]+)?)?)`. When used as input, the server also checks if the
+    * provided version is supported and denies the request for an unsupported version. The Cloud Composer portion of the image version is a full [semantic version](https://semver.org), or
+    * an alias in the form of major version number or `latest`. When an alias is provided, the server replaces it with the current Cloud Composer version that satisfies the alias. The
+    * Apache Airflow portion of the image version is a full semantic version that points to one of the supported Apache Airflow versions, or an alias in the form of only major or
+    * major.minor versions specified. When an alias is provided, the server replaces it with the latest Apache Airflow version that satisfies the alias and is supported in the given Cloud
+    * Composer version. In all cases, the resolved image version is stored in the same field. See also [version list](/composer/docs/concepts/versioning/composer-versions) and [versioning
+    * overview](/composer/docs/concepts/versioning/composer-versioning-overview).
     */
   var imageVersion: js.UndefOr[String] = js.undefined
   
@@ -50,14 +52,18 @@ trait SoftwareConfig extends StObject {
   var pypiPackages: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
   ] = js.undefined
   
   /**
-    * Optional. The major version of Python used to run the Apache Airflow scheduler, worker, and webserver processes. Can be set to '2' or '3'. If not specified, the default is '2'.
-    * Cannot be updated.
+    * Optional. The major version of Python used to run the Apache Airflow scheduler, worker, and webserver processes. Can be set to '2' or '3'. If not specified, the default is '3'.
+    * Cannot be updated. This field is only supported for Cloud Composer environments in versions composer-1.*.*-airflow-*.*.*. Environments in newer versions always use Python major
+    * version 3.
     */
   var pythonVersion: js.UndefOr[String] = js.undefined
+  
+  /** Optional. The number of schedulers for Airflow. This field is supported for Cloud Composer environments in versions composer-1.*.*-airflow-2.*.*. */
+  var schedulerCount: js.UndefOr[Double] = js.undefined
 }
 object SoftwareConfig {
   
@@ -71,7 +77,7 @@ object SoftwareConfig {
     inline def setAirflowConfigOverrides(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
     ): Self = StObject.set(x, "airflowConfigOverrides", value.asInstanceOf[js.Any])
     
     inline def setAirflowConfigOverridesUndefined: Self = StObject.set(x, "airflowConfigOverrides", js.undefined)
@@ -79,7 +85,7 @@ object SoftwareConfig {
     inline def setEnvVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
     ): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
     
     inline def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)
@@ -91,7 +97,7 @@ object SoftwareConfig {
     inline def setPypiPackages(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig & TopLevel[Any]
     ): Self = StObject.set(x, "pypiPackages", value.asInstanceOf[js.Any])
     
     inline def setPypiPackagesUndefined: Self = StObject.set(x, "pypiPackages", js.undefined)
@@ -99,5 +105,9 @@ object SoftwareConfig {
     inline def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
     
     inline def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
+    
+    inline def setSchedulerCount(value: Double): Self = StObject.set(x, "schedulerCount", value.asInstanceOf[js.Any])
+    
+    inline def setSchedulerCountUndefined: Self = StObject.set(x, "schedulerCount", js.undefined)
   }
 }

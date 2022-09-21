@@ -113,7 +113,7 @@ object XRegressionCurveCalculator {
     getCurveValues: (Double, Double, Double, XScaling, XScaling, Boolean) => SafeArray[RealPoint2D],
     getFormattedRepresentation: (XNumberFormatsSupplier, Double, Double) => String,
     getRepresentation: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     recalculateRegression: (SeqEquiv[Double], SeqEquiv[Double]) => Unit,
     release: () => Unit,
     setRegressionProperties: (Double, Boolean, Double, Double) => Unit,

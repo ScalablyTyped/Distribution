@@ -17,19 +17,19 @@ trait UnlockRequirement extends StObject {
   var name: String
   
   /**
-    * The name of the cookie required to unlock the cookie
+    * The name of the upgrade or achievement required to unlock the cookie
     */
-  var require: String
+  var require: js.UndefOr[String] = js.undefined
   
   /**
     * The cookie required to unlock the cookie
     */
-  var season: String
+  var season: js.UndefOr[String] = js.undefined
 }
 object UnlockRequirement {
   
-  inline def apply(cookies: Double, name: String, require: String, season: String): UnlockRequirement = {
-    val __obj = js.Dynamic.literal(cookies = cookies.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], require = require.asInstanceOf[js.Any], season = season.asInstanceOf[js.Any])
+  inline def apply(cookies: Double, name: String): UnlockRequirement = {
+    val __obj = js.Dynamic.literal(cookies = cookies.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlockRequirement]
   }
   
@@ -41,6 +41,10 @@ object UnlockRequirement {
     
     inline def setRequire(value: String): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     
+    inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+    
     inline def setSeason(value: String): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+    
+    inline def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
   }
 }

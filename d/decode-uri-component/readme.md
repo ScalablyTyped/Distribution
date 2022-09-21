@@ -10,10 +10,10 @@ A better decodeURIComponent
 | ------------------ | :-------------: |
 | Full name          | decode-uri-component |
 | Keywords           | decode, uri, component, decodeuricomponent, components, decoder, url |
-| # releases         | 0 |
-| # dependents       | 172 |
-| # downloads        | 707795935 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8.804863233333333E7 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/samverschueren/decode-uri-component#readme)

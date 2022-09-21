@@ -75,7 +75,7 @@ trait CastSession extends StObject {
   
   def removeMessageListener(namespace: String, listener: js.Function2[/* namespace */ String, /* message */ String, Unit]): Unit = js.native
   
-  def sendMessage(namespace: String, data: js.Any): js.Promise[js.UndefOr[ErrorCode]] = js.native
+  def sendMessage(namespace: String, data: Any): js.Promise[js.UndefOr[ErrorCode]] = js.native
   
   def setMute(mute: Boolean): js.Promise[js.UndefOr[ErrorCode]] = js.native
   

@@ -2,7 +2,6 @@ package typings.awsSdkClientKinesisBrowser
 
 import typings.awsSdkClientKinesisBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object typesListStreamConsumersInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -53,7 +52,7 @@ object typesListStreamConsumersInputMod {
     /**
       * <p>Specify this input parameter to distinguish data streams that have the same name. For example, if you create a data stream and then delete it, and you later create another data stream with the same name, you can use this input parameter to specify which of the two streams you want to list the consumers for. </p> <p>You can't specify this parameter if you specify the NextToken parameter. </p>
       */
-    var StreamCreationTimestamp: js.UndefOr[Date | String | Double] = js.undefined
+    var StreamCreationTimestamp: js.UndefOr[js.Date | String | Double] = js.undefined
   }
   object ListStreamConsumersInput {
     
@@ -69,7 +68,7 @@ object typesListStreamConsumersInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -88,7 +87,7 @@ object typesListStreamConsumersInputMod {
       
       inline def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
       
-      inline def setStreamCreationTimestamp(value: Date | String | Double): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setStreamCreationTimestamp(value: js.Date | String | Double): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
       
       inline def setStreamCreationTimestampUndefined: Self = StObject.set(x, "StreamCreationTimestamp", js.undefined)
     }

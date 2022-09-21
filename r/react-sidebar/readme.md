@@ -11,9 +11,9 @@ A sidebar component for React.
 | Full name          | react-sidebar |
 | Keywords           | react, react-component, sidebar, drawer, navigation |
 | # releases         | 0 |
-| # dependents       | 50 |
-| # downloads        | 1263983 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 85887.33333333333 |
+| # stars            | 1474.0 |
 
 ## Links
 - [Homepage](https://github.com/balloob/react-sidebar#readme)

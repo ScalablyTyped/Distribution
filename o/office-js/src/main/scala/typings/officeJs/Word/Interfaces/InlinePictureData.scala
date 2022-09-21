@@ -8,49 +8,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InlinePictureData extends StObject {
   
   /**
-    *
     * Gets or sets a string that represents the alternative text associated with the inline image.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var altTextDescription: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets a string that contains the title for the inline image.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var altTextTitle: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets a number that describes the height of the inline image.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets a number that describes the width of the inline image.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var width: js.UndefOr[Double] = js.undefined

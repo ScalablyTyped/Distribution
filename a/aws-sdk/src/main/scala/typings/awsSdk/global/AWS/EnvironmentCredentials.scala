@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AWS.EnvironmentCredentials")
 @js.native
-class EnvironmentCredentials protected ()
+open class EnvironmentCredentials protected ()
   extends typings.awsSdk.mod.EnvironmentCredentials {
   /**
     * Creates a new EnvironmentCredentials class with a given variable prefix envPrefix.

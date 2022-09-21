@@ -23,7 +23,7 @@ object InsertTextFormat {
     * the end of the snippet. Placeholders with equal identifiers are linked,
     * that is typing in one will update others too.
     *
-    * See also: https://github.com/Microsoft/vscode/blob/master/src/vs/editor/contrib/snippet/common/snippet.md
+    * See also: https://microsoft.github.io/language-server-protocol/specifications/specification-current/#snippet_syntax
     */
   @JSImport("vscode-languageserver", "InsertTextFormat.Snippet")
   @js.native

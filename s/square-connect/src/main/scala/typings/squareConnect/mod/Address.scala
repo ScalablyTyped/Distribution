@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Address")
 @js.native
-class Address () extends StObject {
+open class Address () extends StObject {
   
   /**
     * The first line of the address. Fields that start with `address_line` provide the address's most specific

@@ -18,7 +18,7 @@ trait ASPxClientHtmlEditorTableColumnPropertiesCommandArguments
 }
 object ASPxClientHtmlEditorTableColumnPropertiesCommandArguments {
   
-  inline def apply(selectedElement: js.Any, styleSettings: ASPxClientHtmlEditorCommandStyleSettings): ASPxClientHtmlEditorTableColumnPropertiesCommandArguments = {
+  inline def apply(selectedElement: Any, styleSettings: ASPxClientHtmlEditorCommandStyleSettings): ASPxClientHtmlEditorTableColumnPropertiesCommandArguments = {
     val __obj = js.Dynamic.literal(selectedElement = selectedElement.asInstanceOf[js.Any], styleSettings = styleSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorTableColumnPropertiesCommandArguments]
   }

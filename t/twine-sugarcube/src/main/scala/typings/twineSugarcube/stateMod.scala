@@ -1,6 +1,6 @@
 package typings.twineSugarcube
 
-import typings.twineSugarcube.anon.Has
+import typings.twineSugarcube.anon.Entries
 import typings.twineSugarcube.anon.Init
 import typings.twineSugarcube.userdataMod.SugarCubeStoryVariables
 import typings.twineSugarcube.userdataMod.SugarCubeTemporaryVariables
@@ -41,7 +41,7 @@ object stateMod {
       * @param varName The name of the story or temporary variable, including its sigil—e.g. $charName.
       * @since 2.22.0
       */
-    def getVar(varName: String): js.Any = js.native
+    def getVar(varName: String): Any = js.native
     
     /**
       * Returns whether any moments with the given title exist within the past in-play history (past only).
@@ -106,7 +106,7 @@ object stateMod {
       */
     val length: Double = js.native
     
-    val metadata: Has = js.native
+    val metadata: Entries = js.native
     
     /**
       * Returns the title of the passage associated with the active (present) moment.
@@ -140,7 +140,7 @@ object stateMod {
       * @param value The value to assign.
       * @since 2.22.0
       */
-    def setVar(varName: String, value: js.Any): Boolean = js.native
+    def setVar(varName: String, value: Any): Boolean = js.native
     
     /**
       * Returns the number of moments within the full in-play history (past + future).

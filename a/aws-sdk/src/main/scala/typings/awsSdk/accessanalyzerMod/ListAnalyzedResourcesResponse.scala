@@ -27,7 +27,7 @@ object ListAnalyzedResourcesResponse {
     
     inline def setAnalyzedResources(value: AnalyzedResourcesList): Self = StObject.set(x, "analyzedResources", value.asInstanceOf[js.Any])
     
-    inline def setAnalyzedResourcesVarargs(value: AnalyzedResourceSummary*): Self = StObject.set(x, "analyzedResources", js.Array(value :_*))
+    inline def setAnalyzedResourcesVarargs(value: AnalyzedResourceSummary*): Self = StObject.set(x, "analyzedResources", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

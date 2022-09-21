@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AllBindings extends StObject {
   
-  def apply(): js.Any = js.native
+  def apply(): Any = js.native
   
-  def get(name: String): js.Any = js.native
+  def get(name: String): Any = js.native
   @JSName("get")
   def get_T_T[T](name: String): T = js.native
   

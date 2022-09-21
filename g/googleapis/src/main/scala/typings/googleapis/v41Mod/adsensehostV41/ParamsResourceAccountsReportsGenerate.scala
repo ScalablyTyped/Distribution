@@ -1,9 +1,5 @@
 package typings.googleapis.v41Mod.adsensehostV41
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +12,6 @@ trait ParamsResourceAccountsReportsGenerate
     * Hosted account upon which to report.
     */
   var accountId: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Dimensions to base the report on.
@@ -38,8 +29,7 @@ trait ParamsResourceAccountsReportsGenerate
   var filter: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Optional locale to use for translating report output to a local language.
-    * Defaults to "en_US" if not specified.
+    * Optional locale to use for translating report output to a local language. Defaults to "en_US" if not specified.
     */
   var locale: js.UndefOr[String] = js.undefined
   
@@ -54,9 +44,7 @@ trait ParamsResourceAccountsReportsGenerate
   var metric: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The name of a dimension or metric to sort the resulting report on,
-    * optionally prefixed with "+" to sort ascending or "-" to sort descending.
-    * If no prefix is specified, the column is sorted ascending.
+    * The name of a dimension or metric to sort the resulting report on, optionally prefixed with "+" to sort ascending or "-" to sort descending. If no prefix is specified, the column is sorted ascending.
     */
   var sort: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -83,15 +71,11 @@ object ParamsResourceAccountsReportsGenerate {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setDimension(value: js.Array[String]): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    inline def setDimensionVarargs(value: String*): Self = StObject.set(x, "dimension", js.Array(value :_*))
+    inline def setDimensionVarargs(value: String*): Self = StObject.set(x, "dimension", js.Array(value*))
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
@@ -101,7 +85,7 @@ object ParamsResourceAccountsReportsGenerate {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value*))
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
@@ -115,13 +99,13 @@ object ParamsResourceAccountsReportsGenerate {
     
     inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
+    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value*))
     
     inline def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ object Collation {
   @JSGlobal("Windows.Globalization.Collation.CharacterGroupings")
   @js.native
   /** Create a CharacterGroupings object for the default collation. */
-  class CharacterGroupings ()
+  open class CharacterGroupings ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.Collation.CharacterGroupings
 }

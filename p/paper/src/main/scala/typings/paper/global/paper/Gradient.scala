@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.Gradient")
 @js.native
-class Gradient ()
+open class Gradient ()
   extends StObject
      with typings.paper.paper.Gradient {
   

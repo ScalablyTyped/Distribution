@@ -8,6 +8,7 @@ import typings.spotifyApi.SpotifyApi.ArtistsRelatedArtistsResponse
 import typings.spotifyApi.SpotifyApi.ArtistsTopTracksResponse
 import typings.spotifyApi.SpotifyApi.AudioAnalysisResponse
 import typings.spotifyApi.SpotifyApi.AudioFeaturesResponse
+import typings.spotifyApi.SpotifyApi.AvailableGenreSeedsResponse
 import typings.spotifyApi.SpotifyApi.CategoryPlaylistsReponse
 import typings.spotifyApi.SpotifyApi.ChangePlaylistDetailsReponse
 import typings.spotifyApi.SpotifyApi.CheckUserSavedAlbumsResponse
@@ -24,6 +25,8 @@ import typings.spotifyApi.SpotifyApi.MultipleAlbumsResponse
 import typings.spotifyApi.SpotifyApi.MultipleArtistsResponse
 import typings.spotifyApi.SpotifyApi.MultipleAudioFeaturesResponse
 import typings.spotifyApi.SpotifyApi.MultipleCategoriesResponse
+import typings.spotifyApi.SpotifyApi.MultipleEpisodesResponse
+import typings.spotifyApi.SpotifyApi.MultipleShowsResponse
 import typings.spotifyApi.SpotifyApi.MultipleTracksResponse
 import typings.spotifyApi.SpotifyApi.PlaylistTrackResponse
 import typings.spotifyApi.SpotifyApi.RecommendationsFromSeedsResponse
@@ -35,10 +38,13 @@ import typings.spotifyApi.SpotifyApi.ReplacePlaylistTracksResponse
 import typings.spotifyApi.SpotifyApi.SaveAlbumsForUserResponse
 import typings.spotifyApi.SpotifyApi.SaveTracksForUserResponse
 import typings.spotifyApi.SpotifyApi.SearchResponse
+import typings.spotifyApi.SpotifyApi.ShowEpisodesResponse
 import typings.spotifyApi.SpotifyApi.SingleAlbumResponse
 import typings.spotifyApi.SpotifyApi.SingleArtistResponse
 import typings.spotifyApi.SpotifyApi.SingleCategoryResponse
+import typings.spotifyApi.SpotifyApi.SingleEpisodeResponse
 import typings.spotifyApi.SpotifyApi.SinglePlaylistResponse
+import typings.spotifyApi.SpotifyApi.SingleShowResponse
 import typings.spotifyApi.SpotifyApi.SingleTrackResponse
 import typings.spotifyApi.SpotifyApi.UnfollowPlaylistReponse
 import typings.spotifyApi.SpotifyApi.UploadCustomPlaylistCoverImageReponse
@@ -49,6 +55,7 @@ import typings.spotifyApi.SpotifyApi.UsersFollowPlaylistReponse
 import typings.spotifyApi.SpotifyApi.UsersFollowedArtistsResponse
 import typings.spotifyApi.SpotifyApi.UsersRecentlyPlayedTracksResponse
 import typings.spotifyApi.SpotifyApi.UsersSavedAlbumsResponse
+import typings.spotifyApi.SpotifyApi.UsersSavedShowsResponse
 import typings.spotifyApi.SpotifyApi.UsersSavedTracksResponse
 import typings.spotifyApi.SpotifyApi.UsersTopArtistsResponse
 import typings.spotifyApi.SpotifyApi.UsersTopTracksResponse
@@ -67,6 +74,15 @@ trait SpotifyWebApi extends StObject {
     * @returns A promise that if successful returns null, otherwise an error. Not returned if a callback is given.
     */
   def addToMySavedAlbums(albumIds: js.Array[String], callback: Callback[SaveAlbumsForUserResponse]): Unit = js.native
+  
+  def addToMySavedShows(showIds: js.Array[String]): js.Promise[Response[Unit]] = js.native
+  /**
+    * Add a show from the authenticated user's Your Music library.
+    * @param showIds The show IDs
+    * @param callback Optional callback method to be called instead of the promise.
+    * @returns A promise that if successful returns null, otherwise an error. Not returned if a callback is given.
+    */
+  def addToMySavedShows(showIds: js.Array[String], callback: Callback[Unit]): Unit = js.native
   
   def addToMySavedTracks(trackIds: js.Array[String]): js.Promise[Response[SaveTracksForUserResponse]] = js.native
   /**
@@ -94,7 +110,7 @@ trait SpotifyWebApi extends StObject {
     * @param tracks URIs of the tracks to add to the playlist.
     * @param options Options, position being the only one.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example addTracksToPlaylist(3EsfV6XzCHU8SPNdbnFogK', ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh", "spotify:track:1301WleyT98MSxVHPZCA6M"]).then(...)
+    * @example addTracksToPlaylist('3EsfV6XzCHU8SPNdbnFogK', ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh", "spotify:track:1301WleyT98MSxVHPZCA6M"]).then(...)
     * @returns A promise that if successful returns an object containing a snapshot_id. If rejected,
     * it contains an error object. Not returned if a callback is given.
     */
@@ -175,6 +191,18 @@ trait SpotifyWebApi extends StObject {
     */
   def containsMySavedAlbums(albumIds: js.Array[String], callback: Callback[CheckUserSavedAlbumsResponse]): Unit = js.native
   
+  def containsMySavedShows(showIds: js.Array[String]): js.Promise[Response[js.Array[Boolean]]] = js.native
+  /**
+    * Check if one or more shows is already saved in the current Spotify user’s “Your Music” library.
+    * @param showIds The show IDs
+    * @param callback Optional callback method to be called instead of the promise.
+    * @returns A promise that if successful, resolves into an array of booleans. The order
+    * of the returned array's elements correspond to the show ID in the request.
+    * The boolean value of true indicates that the show is part of the user's library, otherwise false.
+    * Not returned if a callback is given.
+    */
+  def containsMySavedShows(showIds: js.Array[String], callback: Callback[js.Array[Boolean]]): Unit = js.native
+  
   def containsMySavedTracks(trackIds: js.Array[String]): js.Promise[Response[CheckUsersSavedTracksResponse]] = js.native
   /**
     * Check if one or more tracks is already saved in the current Spotify user’s “Your Music” library.
@@ -197,24 +225,18 @@ trait SpotifyWebApi extends StObject {
   def createAuthorizeURL(scopes: js.Array[String], state: String): String = js.native
   def createAuthorizeURL(scopes: js.Array[String], state: String, showDialog: Boolean): String = js.native
   
-  def createPlaylist(userId: String, playlistName: String): js.Promise[Response[CreatePlaylistResponse]] = js.native
-  def createPlaylist(userId: String, playlistName: String, options: PlaylistDetailsOptions): js.Promise[Response[CreatePlaylistResponse]] = js.native
+  def createPlaylist(playlistName: String): js.Promise[Response[CreatePlaylistResponse]] = js.native
+  def createPlaylist(playlistName: String, options: PlaylistDetailsOptions): js.Promise[Response[CreatePlaylistResponse]] = js.native
   /**
     * Create a playlist.
-    * @param userId The playlist's owner's user ID.
-    * @param playlistName The name of the playlist.
-    * @param options The possible options, currently only public.
+    * @param name The name of the playlist.
+    * @param options The possible options, being description, collaborative and public.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example createPlaylist('thelinmichael', 'My cool playlist!', { public : false }).then(...)
+    * @example createPlaylist('My playlist', {''description': 'My description', 'collaborative' : false, 'public': true}).then(...)
     * @returns A promise that if successful, resolves to an object containing information about the
     *          created playlist. If rejected, it contains an error object. Not returned if a callback is given.
     */
-  def createPlaylist(
-    userId: String,
-    playlistName: String,
-    options: PlaylistDetailsOptions,
-    callback: Callback[CreatePlaylistResponse]
-  ): Unit = js.native
+  def createPlaylist(playlistName: String, options: PlaylistDetailsOptions, callback: Callback[CreatePlaylistResponse]): Unit = js.native
   
   def followArtists(artistIds: js.Array[String]): js.Promise[Response[Unit]] = js.native
   /**
@@ -286,7 +308,7 @@ trait SpotifyWebApi extends StObject {
     * @param albumIds The IDs of the albums.
     * @param options The possible options, currently only market.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example getAlbums(['0oSGxfWSnnOXhD2fKuz2Gy', '3dBVyJ7JuOMt4GE9607Qin']).then(...)
+    * @example getAlbums(['26TtzBrPdUkHMSTPSbctbl', '5kUSMNOHu33TTDtV8RGHLg']).then(...)
     * @returns A promise that if successful, returns an object containing information
     *          about the albums. Not returned if a callback is given.
     */
@@ -297,7 +319,7 @@ trait SpotifyWebApi extends StObject {
     * Look up an artist.
     * @param artistId The artist's ID.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example api.getArtist('1u7kkVrr14iBvrpYnZILJR').then(...)
+    * @example getArtist('1u7kkVrr14iBvrpYnZILJR').then(...)
     * @returns A promise that if successful, returns an object containing information
     *          about the artist. Not returned if a callback is given.
     */
@@ -388,6 +410,17 @@ trait SpotifyWebApi extends StObject {
     */
   def getAudioFeaturesForTracks(trackIds: js.Array[String], callback: Callback[MultipleAudioFeaturesResponse]): Unit = js.native
   
+  def getAvailableGenreSeeds(): js.Promise[Response[AvailableGenreSeedsResponse]] = js.native
+  /**
+    * Retrieve a list of available genres seed parameter values for recommendations.
+    * @param callback Optional callback method to be called instead of the promise.
+    * @example getAvailableGenreSeeds().then(...)
+    * @returns A promise that if successful, resolves to an object containing
+    *          a list of available genres to be used as seeds for recommendations.
+    *          If rejected, it contains an error object. Not returned if a callback is given.
+    */
+  def getAvailableGenreSeeds(callback: Callback[AvailableGenreSeedsResponse]): Unit = js.native
+  
   def getCategories(): js.Promise[Response[MultipleCategoriesResponse]] = js.native
   def getCategories(options: PaginationLocaleOptions): js.Promise[Response[MultipleCategoriesResponse]] = js.native
   /**
@@ -417,6 +450,32 @@ trait SpotifyWebApi extends StObject {
   
   def getCredentials(): Credentials = js.native
   
+  def getEpisode(episodeId: String): js.Promise[Response[SingleEpisodeResponse]] = js.native
+  def getEpisode(episodeId: String, options: MarketOptions): js.Promise[Response[SingleEpisodeResponse]] = js.native
+  /**
+    * Look up an episode.
+    * @param episodeId The episode's ID.
+    * @param options The possible options, currently only market.
+    * @param callback Optional callback method to be called instead of the promise.
+    * @example getEpisode('3Qm86XLflmIXVm1wcwkgDK').then(...)
+    * @returns A promise that if successful, returns an object containing information
+    *          about the episode. Not returned if a callback is given.
+    */
+  def getEpisode(episodeId: String, options: MarketOptions, callback: Callback[SingleEpisodeResponse]): Unit = js.native
+  
+  def getEpisodes(episodeIds: js.Array[String]): js.Promise[Response[MultipleEpisodesResponse]] = js.native
+  def getEpisodes(episodeIds: js.Array[String], options: MarketOptions): js.Promise[Response[MultipleEpisodesResponse]] = js.native
+  /**
+    * Look up several episodes.
+    * @param episodeIds The IDs of the episodes.
+    * @param options The possible options, currently only market.
+    * @param callback Optional callback method to be called instead of the promise.
+    * @example getEpisodes(['0oSGxfWSnnOXhD2fKuz2Gy', '3dBVyJ7JuOMt4GE9607Qin']).then(...)
+    * @returns A promise that if successful, returns an object containing information
+    *          about the episodes. Not returned if a callback is given.
+    */
+  def getEpisodes(episodeIds: js.Array[String], options: MarketOptions, callback: Callback[MultipleEpisodesResponse]): Unit = js.native
+  
   def getFeaturedPlaylists(): js.Promise[Response[ListOfFeaturedPlaylistsResponse]] = js.native
   def getFeaturedPlaylists(options: GetFeaturedPlaylistsOptions): js.Promise[Response[ListOfFeaturedPlaylistsResponse]] = js.native
   /**
@@ -429,7 +488,7 @@ trait SpotifyWebApi extends StObject {
   def getFeaturedPlaylists(options: GetFeaturedPlaylistsOptions, callback: Callback[ListOfFeaturedPlaylistsResponse]): Unit = js.native
   
   def getFollowedArtists(): js.Promise[Response[UsersFollowedArtistsResponse]] = js.native
-  def getFollowedArtists(options: AfterOptions): js.Promise[Response[UsersFollowedArtistsResponse]] = js.native
+  def getFollowedArtists(options: AfterOptions[String]): js.Promise[Response[UsersFollowedArtistsResponse]] = js.native
   /**
     * Get the current user's followed artists.
     * @param options Options, being after and limit.
@@ -437,7 +496,7 @@ trait SpotifyWebApi extends StObject {
     * @returns A promise that if successful, resolves to an object containing a paging object which contains
     * album objects. Not returned if a callback is given.
     */
-  def getFollowedArtists(options: AfterOptions, callback: Callback[UsersFollowedArtistsResponse]): Unit = js.native
+  def getFollowedArtists(options: AfterOptions[String], callback: Callback[UsersFollowedArtistsResponse]): Unit = js.native
   
   def getMe(): js.Promise[Response[CurrentUsersProfileResponse]] = js.native
   /**
@@ -454,7 +513,7 @@ trait SpotifyWebApi extends StObject {
   def getMyCurrentPlaybackState(): js.Promise[Response[CurrentPlaybackResponse]] = js.native
   def getMyCurrentPlaybackState(options: MarketOptions): js.Promise[Response[CurrentPlaybackResponse]] = js.native
   /**
-    * Get the Current User's Current Playback State
+    * Get Information About The User's Current Playback State
     * @param options Options, being market.
     * @param callback Optional callback method to be called instead of the promise.
     * @returns A promise that if successful, resolves into a paging object of tracks,
@@ -483,15 +542,16 @@ trait SpotifyWebApi extends StObject {
   def getMyDevices(callback: Callback[UserDevicesResponse]): Unit = js.native
   
   def getMyRecentlyPlayedTracks(): js.Promise[Response[UsersRecentlyPlayedTracksResponse]] = js.native
-  def getMyRecentlyPlayedTracks(options: AfterOptions): js.Promise[Response[UsersRecentlyPlayedTracksResponse]] = js.native
-  def getMyRecentlyPlayedTracks(options: AfterOptions, callback: Callback[UsersRecentlyPlayedTracksResponse]): Unit = js.native
+  def getMyRecentlyPlayedTracks(options: AfterOptions[Double]): js.Promise[Response[UsersRecentlyPlayedTracksResponse]] = js.native
+  def getMyRecentlyPlayedTracks(options: AfterOptions[Double], callback: Callback[UsersRecentlyPlayedTracksResponse]): Unit = js.native
   def getMyRecentlyPlayedTracks(options: BeforeOptions): js.Promise[Response[UsersRecentlyPlayedTracksResponse]] = js.native
   /**
     * Get the Current User's Recently Played Tracks
     * @param options Options, being type, after, limit, before.
     * @param callback Optional callback method to be called instead of the promise.
-    * @returns A promise that if successful, resolves into a paging object of tracks,
-    *          otherwise an error. Not returned if a callback is given.
+    * @returns A promise that if successful, resolves into a paging object of play history objects,
+    *          otherwise an error. Not returned if a callback is given. Note that the response will be empty
+    *          in case the user has enabled private session.
     */
   def getMyRecentlyPlayedTracks(options: BeforeOptions, callback: Callback[UsersRecentlyPlayedTracksResponse]): Unit = js.native
   
@@ -505,6 +565,17 @@ trait SpotifyWebApi extends StObject {
     *          playlist album objects. Not returned if a callback is given.
     */
   def getMySavedAlbums(options: PaginationMarketOptions, callback: Callback[UsersSavedAlbumsResponse]): Unit = js.native
+  
+  def getMySavedShows(): js.Promise[Response[UsersSavedShowsResponse]] = js.native
+  def getMySavedShows(options: PaginationMarketOptions): js.Promise[Response[UsersSavedShowsResponse]] = js.native
+  /**
+    * Retrieve the shows that are saved to the authenticated users Your Music library.
+    * @param options Options, being market, limit, and/or offset.
+    * @param callback Optional callback method to be called instead of the promise.
+    * @returns A promise that if successful, resolves to an object containing a paging object which in turn contains
+    *          playlist show objects. Not returned if a callback is given.
+    */
+  def getMySavedShows(options: PaginationMarketOptions, callback: Callback[UsersSavedShowsResponse]): Unit = js.native
   
   def getMySavedTracks(): js.Promise[Response[UsersSavedTracksResponse]] = js.native
   def getMySavedTracks(options: PaginationMarketOptions): js.Promise[Response[UsersSavedTracksResponse]] = js.native
@@ -608,6 +679,46 @@ trait SpotifyWebApi extends StObject {
   
   def getRefreshToken(): js.UndefOr[String] = js.native
   
+  def getShow(showId: String): js.Promise[Response[SingleShowResponse]] = js.native
+  def getShow(showId: String, options: MarketOptions): js.Promise[Response[SingleShowResponse]] = js.native
+  /**
+    * Get a show.
+    * @param showId The show's ID.
+    * @param options The possible options, currently only market.
+    * @param callback Optional callback method to be called instead of the promise.
+    * @example getShow('3Qm86XLflmIXVm1wcwkgDK').then(...)
+    * @returns A promise that if successful, returns an object containing information
+    *          about the show. Not returned if a callback is given.
+    */
+  def getShow(showId: String, options: MarketOptions, callback: Callback[SingleShowResponse]): Unit = js.native
+  
+  def getShowEpisodes(showId: String): js.Promise[Response[ShowEpisodesResponse]] = js.native
+  def getShowEpisodes(showId: String, options: PaginationMarketOptions): js.Promise[Response[ShowEpisodesResponse]] = js.native
+  /**
+    * Get the episodes of an show.
+    * @param showId the show's ID.
+    * @param options The possible options, being limit, offset, and market.
+    * @param callback Optional callback method to be called instead of the promise.
+    * @example getShowEpisodes('41MnTivkwTO3UUJ8DrqEJJ', { limit : 5, offset : 1 }).then(...)
+    * @returns A promise that if successful, returns an object containing the
+    *                    episodes in the album. The result is paginated. If the promise is rejected.
+    *                    it contains an error object. Not returned if a callback is given.
+    */
+  def getShowEpisodes(showId: String, options: PaginationMarketOptions, callback: Callback[ShowEpisodesResponse]): Unit = js.native
+  
+  def getShows(showIds: js.Array[String]): js.Promise[Response[MultipleShowsResponse]] = js.native
+  def getShows(showIds: js.Array[String], options: MarketOptions): js.Promise[Response[MultipleShowsResponse]] = js.native
+  /**
+    * Look up several shows.
+    * @param showIds The IDs of the shows.
+    * @param options The possible options, currently only market.
+    * @param callback Optional callback method to be called instead of the promise.
+    * @example getShows(['0oSGxfWSnnOXhD2fKuz2Gy', '3dBVyJ7JuOMt4GE9607Qin']).then(...)
+    * @returns A promise that if successful, returns an object containing information
+    *          about the shows. Not returned if a callback is given.
+    */
+  def getShows(showIds: js.Array[String], options: MarketOptions, callback: Callback[MultipleShowsResponse]): Unit = js.native
+  
   def getTrack(trackId: String): js.Promise[Response[SingleTrackResponse]] = js.native
   def getTrack(trackId: String, options: MarketOptions): js.Promise[Response[SingleTrackResponse]] = js.native
   /**
@@ -625,12 +736,12 @@ trait SpotifyWebApi extends StObject {
   def getTracks(trackIds: js.Array[String], options: MarketOptions): js.Promise[Response[MultipleTracksResponse]] = js.native
   /**
     * Look up several tracks.
-    * @param trackIds The IDs of the artists.
+    * @param trackIds The IDs of the tracks.
     * @param options The possible options, currently only market.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example getArtists(['0oSGxfWSnnOXhD2fKuz2Gy', '3dBVyJ7JuOMt4GE9607Qin']).then(...)
+    * @example getTracks(['3AyuigFWbuirWHvidbMz8O', '6bP4GyrKNbcKPMDqWJqpxI']).then(...)
     * @returns A promise that if successful, returns an object containing information
-    *          about the artists. Not returned if a callback is given.
+    *          about the tracks. Not returned if a callback is given.
     */
   def getTracks(trackIds: js.Array[String], options: MarketOptions, callback: Callback[MultipleTracksResponse]): Unit = js.native
   
@@ -694,10 +805,10 @@ trait SpotifyWebApi extends StObject {
   def pause(options: DeviceOptions): js.Promise[Response[Unit]] = js.native
   /**
     * Pauses the Current User's Playback
-    * @param options Options, for now device_id,
+    * @param options Options, being device_id. If left empty will target the user's currently active device.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example playbackPause().then(...)
-    * @returns A promise that if successful, resolves into a paging object of tracks,
+    * @example pause().then(...)
+    * @returns A promise that if successful, resolves into an empty response,
     *          otherwise an error. Not returned if a callback is given.
     */
   def pause(options: DeviceOptions, callback: Callback[Unit]): Unit = js.native
@@ -706,10 +817,10 @@ trait SpotifyWebApi extends StObject {
   def play(options: PlayOptions): js.Promise[Response[Unit]] = js.native
   /**
     * Starts or Resumes the Current User's Playback
-    * @param options Options, being device_id, context_uri, offset, uris.
+    * @param options Options, being device_id, context_uri, offset, uris, position_ms.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example playbackResume({context_uri: 'spotify:album:5ht7ItJgpBH7W6vJ5BqpPr'}).then(...)
-    * @returns A promise that if successful, resolves into a paging object of tracks,
+    * @example play({context_uri: 'spotify:album:5ht7ItJgpBH7W6vJ5BqpPr'}).then(...)
+    * @returns A promise that if successful, resolves into an empty response,
     *          otherwise an error. Not returned if a callback is given.
     */
   def play(options: PlayOptions, callback: Callback[Unit]): Unit = js.native
@@ -735,6 +846,16 @@ trait SpotifyWebApi extends StObject {
     */
   def removeFromMySavedAlbums(albumIds: js.Array[String], callback: Callback[RemoveAlbumsForUserResponse]): Unit = js.native
   
+  def removeFromMySavedShows(showIds: js.Array[String]): js.Promise[Response[Unit]] = js.native
+  /**
+    * Remove an show from the authenticated user's Your Music library.
+    * @param showIds The show IDs
+    * @param callback Optional callback method to be called instead of the promise.
+    * @returns A promise that if successful returns null, otherwise an error.
+    * Not returned if a callback is given.
+    */
+  def removeFromMySavedShows(showIds: js.Array[String], callback: Callback[Unit]): Unit = js.native
+  
   def removeFromMySavedTracks(trackIds: js.Array[String]): js.Promise[Response[RemoveUsersSavedTracksResponse]] = js.native
   /**
     * Remove a track from the authenticated user's Your Music library.
@@ -751,7 +872,7 @@ trait SpotifyWebApi extends StObject {
     * Remove tracks from a playlist.
     * @param playlistId The playlist's ID
     * @param tracks An array of objects containing a property called uri with the track URI (String), and
-    * a an optional property called positions (int[]), e.g. { uri : "spotify:track:491rM2JN8KvmV6p0oDDuJT", positions : [0, 15] }
+    * an optional property called positions (int[]), e.g. { uri : "spotify:track:491rM2JN8KvmV6p0oDDuJT", positions : [0, 15] }
     * @param options Options, snapshot_id being the only one.
     * @param callback Optional callback method to be called instead of the promise.
     * @returns A promise that if successful returns an object containing a snapshot_id. If rejected,
@@ -835,7 +956,7 @@ trait SpotifyWebApi extends StObject {
     * Search for music entities of certain types.
     * @param query The search query.
     * @param types An array of item types to search across.
-    * Valid types are: 'album', 'artist', 'playlist', and 'track'.
+    * Valid types are: 'album', 'artist', 'playlist', 'track', 'show', and 'episode'.
     * @param options The possible options, e.g. limit, offset.
     * @param callback Optional callback method to be called instead of the promise.
     * @example search('Abba', ['track', 'playlist'], { limit : 5, offset : 1 }).then(...)
@@ -878,6 +999,20 @@ trait SpotifyWebApi extends StObject {
     */
   def searchArtists(query: String, options: SearchOptions, callback: Callback[SearchResponse]): Unit = js.native
   
+  def searchEpisodes(query: String): js.Promise[Response[SearchResponse]] = js.native
+  def searchEpisodes(query: String, options: PaginationOptions): js.Promise[Response[SearchResponse]] = js.native
+  /**
+    * Search for an episode.
+    * @param query The search query.
+    * @param options The possible options, e.g. limit, offset.
+    * @param callback Optional callback method to be called instead of the promise.
+    * @example searchEpisodes('Space Oddity', { limit : 5, offset : 1 }).then(...)
+    * @returns A promise that if successful, returns an object containing the
+    *          search results. The result is paginated. If the promise is rejected,
+    *          it contains an error object. Not returned if a callback is given.
+    */
+  def searchEpisodes(query: String, options: PaginationOptions, callback: Callback[SearchResponse]): Unit = js.native
+  
   def searchPlaylists(query: String): js.Promise[Response[SearchResponse]] = js.native
   def searchPlaylists(query: String, options: SearchOptions): js.Promise[Response[SearchResponse]] = js.native
   /**
@@ -891,6 +1026,20 @@ trait SpotifyWebApi extends StObject {
     *          it contains an error object. Not returned if a callback is given.
     */
   def searchPlaylists(query: String, options: SearchOptions, callback: Callback[SearchResponse]): Unit = js.native
+  
+  def searchShows(query: String): js.Promise[Response[SearchResponse]] = js.native
+  def searchShows(query: String, options: PaginationOptions): js.Promise[Response[SearchResponse]] = js.native
+  /**
+    * Search for a show.
+    * @param query The search query.
+    * @param options The possible options, e.g. limit, offset.
+    * @param callback Optional callback method to be called instead of the promise.
+    * @example searchShows('Space Oddity', { limit : 5, offset : 1 }).then(...)
+    * @returns A promise that if successful, returns an object containing the
+    *          search results. The result is paginated. If the promise is rejected,
+    *          it contains an error object. Not returned if a callback is given.
+    */
+  def searchShows(query: String, options: PaginationOptions, callback: Callback[SearchResponse]): Unit = js.native
   
   def searchTracks(query: String): js.Promise[Response[SearchResponse]] = js.native
   def searchTracks(query: String, options: SearchOptions): js.Promise[Response[SearchResponse]] = js.native
@@ -912,7 +1061,7 @@ trait SpotifyWebApi extends StObject {
     * Seeks to the given position in the user’s currently playing track.
     *
     * @param positionMs The position in milliseconds to seek to. Must be a positive number.
-    * @param options A JSON object with options that can be passed.
+    * @param options Options, being device_id. If left empty will target the user's currently active device.
     * @param callback An optional callback that receives 2 parameters. The first
     * one is the error object (null if no error), and the second is the value if the request succeeded.
     * @returns Null if a callback is provided, a Promise otherwise
@@ -931,73 +1080,81 @@ trait SpotifyWebApi extends StObject {
   
   def setRefreshToken(refreshToken: String): Unit = js.native
   
-  def setRepeat(): js.Promise[Response[Unit]] = js.native
-  def setRepeat(options: RepeatOptions): js.Promise[Response[Unit]] = js.native
+  def setRepeat(state: RepeatState): js.Promise[Response[Unit]] = js.native
+  def setRepeat(state: RepeatState, options: DeviceOptions): js.Promise[Response[Unit]] = js.native
   /**
     * Set Repeat Mode On The Current User's Playback
-    * @param options Options, being state (track, context, off).
+    * @param state State (track, context, or off)
+    * @param options Options, being device_id. If left empty will target the user's currently active device.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example playbackRepeat({state: 'context'}).then(...)
-    * @returns A promise that if successful, resolves into a paging object of tracks,
+    * @example setRepeat('context', {}).then(...)
+    * @returns A promise that if successful, resolves into an empty response,
     *          otherwise an error. Not returned if a callback is given.
     */
-  def setRepeat(options: RepeatOptions, callback: Callback[Unit]): Unit = js.native
+  def setRepeat(state: RepeatState, options: DeviceOptions, callback: Callback[Unit]): Unit = js.native
   
-  def setShuffle(): js.Promise[Response[Unit]] = js.native
-  def setShuffle(options: ShuffleOptions): js.Promise[Response[Unit]] = js.native
+  def setShuffle(state: Boolean): js.Promise[Response[Unit]] = js.native
+  def setShuffle(state: Boolean, options: DeviceOptions): js.Promise[Response[Unit]] = js.native
   /**
     * Set Shuffle Mode On The Current User's Playback
-    * @param options Options, being state (true, false).
+    * @param state State
+    * @param options Options, being device_id. If left empty will target the user's currently active device.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example playbackShuffle({state: 'false'}).then(...)
-    * @returns A promise that if successful, resolves into a paging object of tracks,
+    * @example setShuffle('false').then(...)
+    * @returns A promise that if successful, resolves into an empty response,
     *          otherwise an error. Not returned if a callback is given.
     */
-  def setShuffle(options: ShuffleOptions, callback: Callback[Unit]): Unit = js.native
+  def setShuffle(state: Boolean, options: DeviceOptions, callback: Callback[Unit]): Unit = js.native
   
   def setVolume(volumePercent: Double): js.Promise[Response[Unit]] = js.native
   def setVolume(volumePercent: Double, options: DeviceOptions): js.Promise[Response[Unit]] = js.native
   /**
     * Set the volume for the user’s current playback device.
-    *
-    * @param volumePercent The volume to set. Must be a value from 0 to 100 inclusive.
-    * @param options A JSON object with options that can be passed.
+    * @param volumePercent The volume to set. Must be a value from 0 to 100.
+    * @param options Options, being device_id. If left empty will target the user's currently active device.
     * @param callback An optional callback that receives 2 parameters. The first
     * one is the error object (null if no error), and the second is the value if the request succeeded.
-    * @returns nothing if callback is provided, a Promise otherwise
+    * @returns A promise that if successful, resolves into an empty response,
+    *          otherwise an error. Not returned if a callback is given.
     */
   def setVolume(volumePercent: Double, options: DeviceOptions, callback: Callback[Unit]): Unit = js.native
   
   def skipToNext(): js.Promise[Response[Unit]] = js.native
+  def skipToNext(options: DeviceOptions): js.Promise[Response[Unit]] = js.native
   /**
     * Skip the Current User's Playback To Next Track
+    * @param options Options, being device_id. If left empty will target the user's currently active device.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example playbackNext().then(...)
-    * @returns A promise that if successful, resolves into a paging object of tracks,
+    * @example skipToNext().then(...)
+    * @returns A promise that if successful, resolves into an empty response,
     *          otherwise an error. Not returned if a callback is given.
     */
-  def skipToNext(callback: Callback[Unit]): Unit = js.native
+  def skipToNext(options: DeviceOptions, callback: Callback[Unit]): Unit = js.native
   
   def skipToPrevious(): js.Promise[Response[Unit]] = js.native
+  def skipToPrevious(options: DeviceOptions): js.Promise[Response[Unit]] = js.native
   /**
     * Skip the Current User's Playback To Previous Track
+    * @param options Options, being device_id. If left empty will target the user's currently active device.
     * @param callback Optional callback method to be called instead of the promise.
-    * @example playbackPrevious().then(...)
-    * @returns A promise that if successful, resolves into a paging object of tracks,
+    * @example skipToPrevious().then(...)
+    * @returns A promise that if successful, resolves into an empty response,
     *          otherwise an error. Not returned if a callback is given.
     */
-  def skipToPrevious(callback: Callback[Unit]): Unit = js.native
+  def skipToPrevious(options: DeviceOptions, callback: Callback[Unit]): Unit = js.native
   
-  def transferMyPlayback(): js.Promise[Response[Unit]] = js.native
-  def transferMyPlayback(options: TransferPlaybackOptions): js.Promise[Response[Unit]] = js.native
+  def transferMyPlayback(deviceIds: js.Array[String]): js.Promise[Response[Unit]] = js.native
+  def transferMyPlayback(deviceIds: js.Array[String], options: TransferPlaybackOptions): js.Promise[Response[Unit]] = js.native
   /**
     * Transfer a User's Playback
-    * @param options Options, being market.
+    * @param deviceIds An _array_ containing a device ID on which playback should be started/transferred.
+    * (NOTE: The API is currently only supporting a single device ID.)
+    * @param options Options, the only one being 'play'.
     * @param callback Optional callback method to be called instead of the promise.
-    * @returns A promise that if successful, resolves into a paging object of tracks,
+    * @returns A promise that if successful, resolves into an empty response,
     *          otherwise an error. Not returned if a callback is given.
     */
-  def transferMyPlayback(options: TransferPlaybackOptions, callback: Callback[Unit]): Unit = js.native
+  def transferMyPlayback(deviceIds: js.Array[String], options: TransferPlaybackOptions, callback: Callback[Unit]): Unit = js.native
   
   def unfollowArtists(artistIds: js.Array[String]): js.Promise[Response[Unit]] = js.native
   /**

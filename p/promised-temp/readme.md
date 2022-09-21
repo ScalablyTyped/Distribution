@@ -10,10 +10,10 @@ Tool for making temporary files asynchronously that return Promises. Wraps node-
 | ------------------ | :-------------: |
 | Full name          | promised-temp |
 | Keywords           | tmp, promises, temp, temporary |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 8314 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 386.3333333333333 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/mikaturunen/promised-temp)

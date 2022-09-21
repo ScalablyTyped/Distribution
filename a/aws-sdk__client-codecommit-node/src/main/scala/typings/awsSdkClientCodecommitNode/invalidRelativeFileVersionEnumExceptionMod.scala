@@ -8,5 +8,5 @@ object invalidRelativeFileVersionEnumExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidRelativeFileVersionEnumException", "InvalidRelativeFileVersionEnumException")
   @js.native
-  val InvalidRelativeFileVersionEnumException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidRelativeFileVersionEnumException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

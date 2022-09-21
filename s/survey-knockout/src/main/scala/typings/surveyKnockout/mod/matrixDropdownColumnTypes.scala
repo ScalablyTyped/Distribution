@@ -1,7 +1,6 @@
 package typings.surveyKnockout.mod
 
 import typings.surveyKnockout.anon.OnCellQuestionUpdate
-import typings.surveyKnockout.anon.Properties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,8 +23,8 @@ object matrixDropdownColumnTypes {
   
   @JSImport("survey-knockout", "matrixDropdownColumnTypes.comment")
   @js.native
-  def comment: OnCellQuestionUpdate = js.native
-  inline def comment_=(x: OnCellQuestionUpdate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("comment")(x.asInstanceOf[js.Any])
+  def comment: Any = js.native
+  inline def comment_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("comment")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "matrixDropdownColumnTypes.dropdown")
   @js.native
@@ -34,8 +33,8 @@ object matrixDropdownColumnTypes {
   
   @JSImport("survey-knockout", "matrixDropdownColumnTypes.expression")
   @js.native
-  def expression: OnCellQuestionUpdate = js.native
-  inline def expression_=(x: OnCellQuestionUpdate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expression")(x.asInstanceOf[js.Any])
+  def expression: Any = js.native
+  inline def expression_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expression")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "matrixDropdownColumnTypes.radiogroup")
   @js.native
@@ -44,11 +43,11 @@ object matrixDropdownColumnTypes {
   
   @JSImport("survey-knockout", "matrixDropdownColumnTypes.rating")
   @js.native
-  def rating: Properties = js.native
-  inline def rating_=(x: Properties): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rating")(x.asInstanceOf[js.Any])
+  def rating: Any = js.native
+  inline def rating_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rating")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "matrixDropdownColumnTypes.text")
   @js.native
-  def text: OnCellQuestionUpdate = js.native
-  inline def text_=(x: OnCellQuestionUpdate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
+  def text: Any = js.native
+  inline def text_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
 }

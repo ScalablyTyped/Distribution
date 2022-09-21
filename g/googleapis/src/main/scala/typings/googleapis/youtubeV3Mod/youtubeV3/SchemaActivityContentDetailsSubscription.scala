@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about a channel that a user subscribed to.
-  */
 trait SchemaActivityContentDetailsSubscription extends StObject {
   
   /**
-    * The resourceId object contains information that identifies the resource
-    * that the user subscribed to.
+    * The resourceId object contains information that identifies the resource that the user subscribed to.
     */
   var resourceId: js.UndefOr[SchemaResourceId] = js.undefined
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.AndOrNotEvaluator")
 @js.native
-class AndOrNotEvaluator ()
+open class AndOrNotEvaluator ()
   extends StObject
      with typings.babylonjs.BABYLON.AndOrNotEvaluator
 /* static members */
@@ -22,15 +22,15 @@ object AndOrNotEvaluator {
     * @param evaluateCallback defines the callback used to filter result
     * @returns true if the query matches
     */
-  inline def Eval(query: String, evaluateCallback: js.Function1[/* val */ js.Any, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Eval")(query.asInstanceOf[js.Any], evaluateCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def Eval(query: String, evaluateCallback: js.Function1[/* val */ Any, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Eval")(query.asInstanceOf[js.Any], evaluateCallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSGlobal("BABYLON.AndOrNotEvaluator._HandleParenthesisContent")
   @js.native
-  def _HandleParenthesisContent: js.Any = js.native
-  inline def _HandleParenthesisContent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_HandleParenthesisContent")(x.asInstanceOf[js.Any])
+  def _HandleParenthesisContent: Any = js.native
+  inline def _HandleParenthesisContent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_HandleParenthesisContent")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.AndOrNotEvaluator._SimplifyNegation")
   @js.native
-  def _SimplifyNegation: js.Any = js.native
-  inline def _SimplifyNegation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SimplifyNegation")(x.asInstanceOf[js.Any])
+  def _SimplifyNegation: Any = js.native
+  inline def _SimplifyNegation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SimplifyNegation")(x.asInstanceOf[js.Any])
 }

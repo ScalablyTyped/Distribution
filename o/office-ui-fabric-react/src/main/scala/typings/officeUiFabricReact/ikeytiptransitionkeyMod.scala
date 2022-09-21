@@ -35,7 +35,7 @@ object ikeytiptransitionkeyMod {
       
       inline def setModifierKeysUndefined: Self = StObject.set(x, "modifierKeys", js.undefined)
       
-      inline def setModifierKeysVarargs(value: KeytipTransitionModifier*): Self = StObject.set(x, "modifierKeys", js.Array(value :_*))
+      inline def setModifierKeysVarargs(value: KeytipTransitionModifier*): Self = StObject.set(x, "modifierKeys", js.Array(value*))
     }
   }
   

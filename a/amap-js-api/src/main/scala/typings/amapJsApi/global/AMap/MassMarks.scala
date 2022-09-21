@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AMap.MassMarks")
 @js.native
-class MassMarks[D /* <: Data */] protected ()
+open class MassMarks[D /* <: Data */] protected ()
   extends StObject
      with typings.amapJsApi.AMap.MassMarks[D] {
   def this(data: String, opts: Options) = this()

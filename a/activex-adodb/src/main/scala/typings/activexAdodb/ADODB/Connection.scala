@@ -33,7 +33,7 @@ trait Connection extends StObject {
   
   var DefaultDatabase: String = js.native
   
-  def Errors(Index: js.Any): Error = js.native
+  def Errors(Index: Any): Error = js.native
   @JSName("Errors")
   val Errors_Original: Errors = js.native
   

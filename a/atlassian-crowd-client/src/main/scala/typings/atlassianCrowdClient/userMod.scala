@@ -10,7 +10,7 @@ object userMod {
   
   @JSImport("atlassian-crowd-client/lib/models/user", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with User {
     def this(firstname: String, lastname: String, displayname: String, email: String, username: String) = this()
@@ -48,7 +48,7 @@ object userMod {
       username: String,
       password: String,
       active: Boolean,
-      attributes: js.Any
+      attributes: Any
     ) = this()
     def this(
       firstname: String,
@@ -58,7 +58,7 @@ object userMod {
       username: String,
       password: String,
       active: Unit,
-      attributes: js.Any
+      attributes: Any
     ) = this()
     def this(
       firstname: String,
@@ -68,7 +68,7 @@ object userMod {
       username: String,
       password: Unit,
       active: Boolean,
-      attributes: js.Any
+      attributes: Any
     ) = this()
     def this(
       firstname: String,
@@ -78,14 +78,14 @@ object userMod {
       username: String,
       password: Unit,
       active: Unit,
-      attributes: js.Any
+      attributes: Any
     ) = this()
     
     /* CompleteClass */
     override val active: Boolean = js.native
     
     /* CompleteClass */
-    override val attributes: StringDictionary[js.Any] = js.native
+    override val attributes: StringDictionary[Any] = js.native
     
     /* CompleteClass */
     override val displayname: String = js.native
@@ -116,7 +116,7 @@ object userMod {
     
     val active: Boolean
     
-    val attributes: StringDictionary[js.Any]
+    val attributes: StringDictionary[Any]
     
     val displayname: String
     
@@ -136,7 +136,7 @@ object userMod {
     
     inline def apply(
       active: Boolean,
-      attributes: StringDictionary[js.Any],
+      attributes: StringDictionary[Any],
       displayname: String,
       email: String,
       firstname: String,
@@ -152,7 +152,7 @@ object userMod {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      inline def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setDisplayname(value: String): Self = StObject.set(x, "displayname", value.asInstanceOf[js.Any])
       

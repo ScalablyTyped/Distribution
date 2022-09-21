@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("bootstrap-menu", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with BootstrapMenu {
     /**
@@ -215,9 +215,9 @@ object mod {
       
       inline def setActionsGroupsUndefined: Self = StObject.set(x, "actionsGroups", js.undefined)
       
-      inline def setActionsGroupsVarargs(value: js.Array[String]*): Self = StObject.set(x, "actionsGroups", js.Array(value :_*))
+      inline def setActionsGroupsVarargs(value: js.Array[String]*): Self = StObject.set(x, "actionsGroups", js.Array(value*))
       
-      inline def setActionsVarargs(value: BootstrapMenuActions*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: BootstrapMenuActions*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -267,7 +267,7 @@ object mod {
     inline def belowRight: typings.bootstrapMenu.bootstrapMenuStrings.belowRight = "belowRight".asInstanceOf[typings.bootstrapMenu.bootstrapMenuStrings.belowRight]
   }
   
-  type BootstrapMenuRowElement = js.Any
+  type BootstrapMenuRowElement = Any
   
   /* Rewritten from type alias, can be one of: 
     - typings.bootstrapMenu.bootstrapMenuStrings.mouse

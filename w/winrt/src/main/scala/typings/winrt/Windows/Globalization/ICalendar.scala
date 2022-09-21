@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Globalization
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +34,7 @@ trait ICalendar extends StObject {
   
   def compare(other: Calendar): Double = js.native
   
-  def compareDateTime(other: Date): Double = js.native
+  def compareDateTime(other: js.Date): Double = js.native
   
   def copyTo(other: Calendar): Unit = js.native
   
@@ -78,7 +77,7 @@ trait ICalendar extends StObject {
   
   def getClock(): String = js.native
   
-  def getDateTime(): Date = js.native
+  def getDateTime(): js.Date = js.native
   
   var hour: Double = js.native
   
@@ -161,7 +160,7 @@ trait ICalendar extends StObject {
   
   def secondAsString(): String = js.native
   
-  def setDateTime(value: Date): Unit = js.native
+  def setDateTime(value: js.Date): Unit = js.native
   
   def setToMax(): Unit = js.native
   

@@ -84,7 +84,7 @@ object KeyTypes {
     
     inline def setKeyTypesUndefined: Self = StObject.set(x, "keyTypes", js.undefined)
     
-    inline def setKeyTypesVarargs(value: String*): Self = StObject.set(x, "keyTypes", js.Array(value :_*))
+    inline def setKeyTypesVarargs(value: String*): Self = StObject.set(x, "keyTypes", js.Array(value*))
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     

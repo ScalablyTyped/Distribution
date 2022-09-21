@@ -1,7 +1,7 @@
 package typings.ddTrace
 
 import typings.ddTrace.ddTraceStrings.agent
-import typings.ddTrace.ddTraceStrings.browser
+import typings.ddTrace.ddTraceStrings.datadog
 import typings.ddTrace.ddTraceStrings.log
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,10 +18,10 @@ object exportersMod {
   def AGENT: agent = js.native
   inline def AGENT_=(x: agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AGENT")(x.asInstanceOf[js.Any])
   
-  @JSImport("dd-trace/ext/exporters", "BROWSER")
+  @JSImport("dd-trace/ext/exporters", "DATADOG")
   @js.native
-  def BROWSER: browser = js.native
-  inline def BROWSER_=(x: browser): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BROWSER")(x.asInstanceOf[js.Any])
+  def DATADOG: datadog = js.native
+  inline def DATADOG_=(x: datadog): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATADOG")(x.asInstanceOf[js.Any])
   
   @JSImport("dd-trace/ext/exporters", "LOG")
   @js.native

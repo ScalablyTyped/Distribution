@@ -765,11 +765,11 @@ object YoutubePartner {
       // Creates a reference in one of the following ways:
       // - If your request is uploading a reference file, YouTube creates the reference from the provided content. You can provide either a video/audio file or a pre-generated fingerprint. If you are providing a pre-generated fingerprint, set the reference resource's fpDirect property to true in the request body. In this flow, you can use either the multipart or resumable upload flows to provide the reference content.
       // - If you want to create a reference using a claimed video as the reference content, use the claimId parameter to identify the claim.
-      def insert(resource: Reference, mediaData: js.Any): Reference = js.native
+      def insert(resource: Reference, mediaData: Any): Reference = js.native
       // Creates a reference in one of the following ways:
       // - If your request is uploading a reference file, YouTube creates the reference from the provided content. You can provide either a video/audio file or a pre-generated fingerprint. If you are providing a pre-generated fingerprint, set the reference resource's fpDirect property to true in the request body. In this flow, you can use either the multipart or resumable upload flows to provide the reference content.
       // - If you want to create a reference using a claimed video as the reference content, use the claimId parameter to identify the claim.
-      def insert(resource: Reference, mediaData: js.Any, optionalArgs: js.Object): Reference = js.native
+      def insert(resource: Reference, mediaData: Any, optionalArgs: js.Object): Reference = js.native
       
       // Retrieves a list of references by ID or the list of references for the specified asset.
       def list(): ReferenceListResponse = js.native
@@ -904,7 +904,7 @@ object YoutubePartner {
         
         inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
         
-        inline def setSlotVarargs(value: AdSlot*): Self = StObject.set(x, "slot", js.Array(value :_*))
+        inline def setSlotVarargs(value: AdSlot*): Self = StObject.set(x, "slot", js.Array(value*))
       }
     }
     
@@ -964,13 +964,13 @@ object YoutubePartner {
         
         inline def setLicAdFormatsUndefined: Self = StObject.set(x, "licAdFormats", js.undefined)
         
-        inline def setLicAdFormatsVarargs(value: String*): Self = StObject.set(x, "licAdFormats", js.Array(value :_*))
+        inline def setLicAdFormatsVarargs(value: String*): Self = StObject.set(x, "licAdFormats", js.Array(value*))
         
         inline def setUgcAdFormats(value: js.Array[String]): Self = StObject.set(x, "ugcAdFormats", value.asInstanceOf[js.Any])
         
         inline def setUgcAdFormatsUndefined: Self = StObject.set(x, "ugcAdFormats", js.undefined)
         
-        inline def setUgcAdFormatsVarargs(value: String*): Self = StObject.set(x, "ugcAdFormats", js.Array(value :_*))
+        inline def setUgcAdFormatsVarargs(value: String*): Self = StObject.set(x, "ugcAdFormats", js.Array(value*))
       }
     }
     
@@ -1023,7 +1023,7 @@ object YoutubePartner {
         
         inline def setAliasIdUndefined: Self = StObject.set(x, "aliasId", js.undefined)
         
-        inline def setAliasIdVarargs(value: String*): Self = StObject.set(x, "aliasId", js.Array(value :_*))
+        inline def setAliasIdVarargs(value: String*): Self = StObject.set(x, "aliasId", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1037,7 +1037,7 @@ object YoutubePartner {
         
         inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value :_*))
+        inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value*))
         
         inline def setMatchPolicy(value: AssetMatchPolicy): Self = StObject.set(x, "matchPolicy", value.asInstanceOf[js.Any])
         
@@ -1137,7 +1137,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: AssetLabel*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: AssetLabel*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1164,7 +1164,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Asset*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Asset*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1201,7 +1201,7 @@ object YoutubePartner {
         
         inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
         
-        inline def setRulesVarargs(value: PolicyRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+        inline def setRulesVarargs(value: PolicyRule*): Self = StObject.set(x, "rules", js.Array(value*))
       }
     }
     
@@ -1265,7 +1265,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: AssetRelationship*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: AssetRelationship*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1304,7 +1304,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: AssetSnippet*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: AssetSnippet*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1374,7 +1374,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: AssetShare*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: AssetShare*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1537,7 +1537,7 @@ object YoutubePartner {
         
         inline def setPromotedContentUndefined: Self = StObject.set(x, "promotedContent", js.undefined)
         
-        inline def setPromotedContentVarargs(value: PromotedContent*): Self = StObject.set(x, "promotedContent", js.Array(value :_*))
+        inline def setPromotedContentVarargs(value: PromotedContent*): Self = StObject.set(x, "promotedContent", js.Array(value*))
         
         inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
         
@@ -1564,7 +1564,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Campaign*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Campaign*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1595,7 +1595,7 @@ object YoutubePartner {
         
         inline def setSourceValueUndefined: Self = StObject.set(x, "sourceValue", js.undefined)
         
-        inline def setSourceValueVarargs(value: String*): Self = StObject.set(x, "sourceValue", js.Array(value :_*))
+        inline def setSourceValueVarargs(value: String*): Self = StObject.set(x, "sourceValue", js.Array(value*))
       }
     }
     
@@ -1855,7 +1855,7 @@ object YoutubePartner {
         
         inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
         
-        inline def setEventVarargs(value: ClaimEvent*): Self = StObject.set(x, "event", js.Array(value :_*))
+        inline def setEventVarargs(value: ClaimEvent*): Self = StObject.set(x, "event", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1896,7 +1896,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Claim*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Claim*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1943,7 +1943,7 @@ object YoutubePartner {
         
         inline def setMatchSegmentsUndefined: Self = StObject.set(x, "matchSegments", js.undefined)
         
-        inline def setMatchSegmentsVarargs(value: MatchSegment*): Self = StObject.set(x, "matchSegments", js.Array(value :_*))
+        inline def setMatchSegmentsVarargs(value: MatchSegment*): Self = StObject.set(x, "matchSegments", js.Array(value*))
         
         inline def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
         
@@ -2055,7 +2055,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: ClaimSnippet*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ClaimSnippet*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2220,7 +2220,7 @@ object YoutubePartner {
         
         inline def setNewVideoDefaultsUndefined: Self = StObject.set(x, "newVideoDefaults", js.undefined)
         
-        inline def setNewVideoDefaultsVarargs(value: String*): Self = StObject.set(x, "newVideoDefaults", js.Array(value :_*))
+        inline def setNewVideoDefaultsVarargs(value: String*): Self = StObject.set(x, "newVideoDefaults", js.Array(value*))
       }
     }
     
@@ -2251,31 +2251,31 @@ object YoutubePartner {
         
         inline def setContentMatchTypeUndefined: Self = StObject.set(x, "contentMatchType", js.undefined)
         
-        inline def setContentMatchTypeVarargs(value: String*): Self = StObject.set(x, "contentMatchType", js.Array(value :_*))
+        inline def setContentMatchTypeVarargs(value: String*): Self = StObject.set(x, "contentMatchType", js.Array(value*))
         
         inline def setMatchDuration(value: js.Array[IntervalCondition]): Self = StObject.set(x, "matchDuration", value.asInstanceOf[js.Any])
         
         inline def setMatchDurationUndefined: Self = StObject.set(x, "matchDuration", js.undefined)
         
-        inline def setMatchDurationVarargs(value: IntervalCondition*): Self = StObject.set(x, "matchDuration", js.Array(value :_*))
+        inline def setMatchDurationVarargs(value: IntervalCondition*): Self = StObject.set(x, "matchDuration", js.Array(value*))
         
         inline def setMatchPercent(value: js.Array[IntervalCondition]): Self = StObject.set(x, "matchPercent", value.asInstanceOf[js.Any])
         
         inline def setMatchPercentUndefined: Self = StObject.set(x, "matchPercent", js.undefined)
         
-        inline def setMatchPercentVarargs(value: IntervalCondition*): Self = StObject.set(x, "matchPercent", js.Array(value :_*))
+        inline def setMatchPercentVarargs(value: IntervalCondition*): Self = StObject.set(x, "matchPercent", js.Array(value*))
         
         inline def setReferenceDuration(value: js.Array[IntervalCondition]): Self = StObject.set(x, "referenceDuration", value.asInstanceOf[js.Any])
         
         inline def setReferenceDurationUndefined: Self = StObject.set(x, "referenceDuration", js.undefined)
         
-        inline def setReferenceDurationVarargs(value: IntervalCondition*): Self = StObject.set(x, "referenceDuration", js.Array(value :_*))
+        inline def setReferenceDurationVarargs(value: IntervalCondition*): Self = StObject.set(x, "referenceDuration", js.Array(value*))
         
         inline def setReferencePercent(value: js.Array[IntervalCondition]): Self = StObject.set(x, "referencePercent", value.asInstanceOf[js.Any])
         
         inline def setReferencePercentUndefined: Self = StObject.set(x, "referencePercent", js.undefined)
         
-        inline def setReferencePercentVarargs(value: IntervalCondition*): Self = StObject.set(x, "referencePercent", js.Array(value :_*))
+        inline def setReferencePercentVarargs(value: IntervalCondition*): Self = StObject.set(x, "referencePercent", js.Array(value*))
         
         inline def setRequiredTerritories(value: TerritoryCondition): Self = StObject.set(x, "requiredTerritories", value.asInstanceOf[js.Any])
         
@@ -2345,13 +2345,13 @@ object YoutubePartner {
         
         inline def setDisputeNotificationEmailsUndefined: Self = StObject.set(x, "disputeNotificationEmails", js.undefined)
         
-        inline def setDisputeNotificationEmailsVarargs(value: String*): Self = StObject.set(x, "disputeNotificationEmails", js.Array(value :_*))
+        inline def setDisputeNotificationEmailsVarargs(value: String*): Self = StObject.set(x, "disputeNotificationEmails", js.Array(value*))
         
         inline def setFingerprintReportNotificationEmails(value: js.Array[String]): Self = StObject.set(x, "fingerprintReportNotificationEmails", value.asInstanceOf[js.Any])
         
         inline def setFingerprintReportNotificationEmailsUndefined: Self = StObject.set(x, "fingerprintReportNotificationEmails", js.undefined)
         
-        inline def setFingerprintReportNotificationEmailsVarargs(value: String*): Self = StObject.set(x, "fingerprintReportNotificationEmails", js.Array(value :_*))
+        inline def setFingerprintReportNotificationEmailsVarargs(value: String*): Self = StObject.set(x, "fingerprintReportNotificationEmails", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -2365,7 +2365,7 @@ object YoutubePartner {
         
         inline def setPrimaryNotificationEmailsUndefined: Self = StObject.set(x, "primaryNotificationEmails", js.undefined)
         
-        inline def setPrimaryNotificationEmailsVarargs(value: String*): Self = StObject.set(x, "primaryNotificationEmails", js.Array(value :_*))
+        inline def setPrimaryNotificationEmailsVarargs(value: String*): Self = StObject.set(x, "primaryNotificationEmails", js.Array(value*))
       }
     }
     
@@ -2425,7 +2425,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: ContentOwner*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ContentOwner*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2452,13 +2452,13 @@ object YoutubePartner {
         
         inline def setAdFormatsUndefined: Self = StObject.set(x, "adFormats", js.undefined)
         
-        inline def setAdFormatsVarargs(value: String*): Self = StObject.set(x, "adFormats", js.Array(value :_*))
+        inline def setAdFormatsVarargs(value: String*): Self = StObject.set(x, "adFormats", js.Array(value*))
         
         inline def setTerritories(value: js.Array[String]): Self = StObject.set(x, "territories", value.asInstanceOf[js.Any])
         
         inline def setTerritoriesUndefined: Self = StObject.set(x, "territories", js.undefined)
         
-        inline def setTerritoriesVarargs(value: String*): Self = StObject.set(x, "territories", js.Array(value :_*))
+        inline def setTerritoriesVarargs(value: String*): Self = StObject.set(x, "territories", js.Array(value*))
       }
     }
     
@@ -2784,7 +2784,7 @@ object YoutubePartner {
         
         inline def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
         
-        inline def setActorVarargs(value: String*): Self = StObject.set(x, "actor", js.Array(value :_*))
+        inline def setActorVarargs(value: String*): Self = StObject.set(x, "actor", js.Array(value*))
         
         inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
         
@@ -2794,13 +2794,13 @@ object YoutubePartner {
         
         inline def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
         
-        inline def setArtistVarargs(value: String*): Self = StObject.set(x, "artist", js.Array(value :_*))
+        inline def setArtistVarargs(value: String*): Self = StObject.set(x, "artist", js.Array(value*))
         
         inline def setBroadcaster(value: js.Array[String]): Self = StObject.set(x, "broadcaster", value.asInstanceOf[js.Any])
         
         inline def setBroadcasterUndefined: Self = StObject.set(x, "broadcaster", js.undefined)
         
-        inline def setBroadcasterVarargs(value: String*): Self = StObject.set(x, "broadcaster", js.Array(value :_*))
+        inline def setBroadcasterVarargs(value: String*): Self = StObject.set(x, "broadcaster", js.Array(value*))
         
         inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
@@ -2826,7 +2826,7 @@ object YoutubePartner {
         
         inline def setDirectorUndefined: Self = StObject.set(x, "director", js.undefined)
         
-        inline def setDirectorVarargs(value: String*): Self = StObject.set(x, "director", js.Array(value :_*))
+        inline def setDirectorVarargs(value: String*): Self = StObject.set(x, "director", js.Array(value*))
         
         inline def setEidr(value: String): Self = StObject.set(x, "eidr", value.asInstanceOf[js.Any])
         
@@ -2848,7 +2848,7 @@ object YoutubePartner {
         
         inline def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
         
-        inline def setGenreVarargs(value: String*): Self = StObject.set(x, "genre", js.Array(value :_*))
+        inline def setGenreVarargs(value: String*): Self = StObject.set(x, "genre", js.Array(value*))
         
         inline def setGrid(value: String): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
         
@@ -2878,7 +2878,7 @@ object YoutubePartner {
         
         inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
         
-        inline def setKeywordVarargs(value: String*): Self = StObject.set(x, "keyword", js.Array(value :_*))
+        inline def setKeywordVarargs(value: String*): Self = StObject.set(x, "keyword", js.Array(value*))
         
         inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
@@ -2896,13 +2896,13 @@ object YoutubePartner {
         
         inline def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
         
-        inline def setProducerVarargs(value: String*): Self = StObject.set(x, "producer", js.Array(value :_*))
+        inline def setProducerVarargs(value: String*): Self = StObject.set(x, "producer", js.Array(value*))
         
         inline def setRatings(value: js.Array[Rating]): Self = StObject.set(x, "ratings", value.asInstanceOf[js.Any])
         
         inline def setRatingsUndefined: Self = StObject.set(x, "ratings", js.undefined)
         
-        inline def setRatingsVarargs(value: Rating*): Self = StObject.set(x, "ratings", js.Array(value :_*))
+        inline def setRatingsVarargs(value: Rating*): Self = StObject.set(x, "ratings", js.Array(value*))
         
         inline def setReleaseDate(value: Date): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
         
@@ -2932,7 +2932,7 @@ object YoutubePartner {
         
         inline def setSubtitledLanguageUndefined: Self = StObject.set(x, "subtitledLanguage", js.undefined)
         
-        inline def setSubtitledLanguageVarargs(value: String*): Self = StObject.set(x, "subtitledLanguage", js.Array(value :_*))
+        inline def setSubtitledLanguageVarargs(value: String*): Self = StObject.set(x, "subtitledLanguage", js.Array(value*))
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -2954,7 +2954,7 @@ object YoutubePartner {
         
         inline def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
         
-        inline def setWriterVarargs(value: String*): Self = StObject.set(x, "writer", js.Array(value :_*))
+        inline def setWriterVarargs(value: String*): Self = StObject.set(x, "writer", js.Array(value*))
       }
     }
     
@@ -3014,7 +3014,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: MetadataHistory*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: MetadataHistory*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3105,7 +3105,7 @@ object YoutubePartner {
         
         inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
         
-        inline def setEventsVarargs(value: StateCompleted*): Self = StObject.set(x, "events", js.Array(value :_*))
+        inline def setEventsVarargs(value: StateCompleted*): Self = StObject.set(x, "events", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -3182,7 +3182,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Order*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Order*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3252,7 +3252,7 @@ object YoutubePartner {
         
         inline def setGeneralUndefined: Self = StObject.set(x, "general", js.undefined)
         
-        inline def setGeneralVarargs(value: TerritoryConflicts*): Self = StObject.set(x, "general", js.Array(value :_*))
+        inline def setGeneralVarargs(value: TerritoryConflicts*): Self = StObject.set(x, "general", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3262,19 +3262,19 @@ object YoutubePartner {
         
         inline def setMechanicalUndefined: Self = StObject.set(x, "mechanical", js.undefined)
         
-        inline def setMechanicalVarargs(value: TerritoryConflicts*): Self = StObject.set(x, "mechanical", js.Array(value :_*))
+        inline def setMechanicalVarargs(value: TerritoryConflicts*): Self = StObject.set(x, "mechanical", js.Array(value*))
         
         inline def setPerformance(value: js.Array[TerritoryConflicts]): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
         
         inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
         
-        inline def setPerformanceVarargs(value: TerritoryConflicts*): Self = StObject.set(x, "performance", js.Array(value :_*))
+        inline def setPerformanceVarargs(value: TerritoryConflicts*): Self = StObject.set(x, "performance", js.Array(value*))
         
         inline def setSynchronization(value: js.Array[TerritoryConflicts]): Self = StObject.set(x, "synchronization", value.asInstanceOf[js.Any])
         
         inline def setSynchronizationUndefined: Self = StObject.set(x, "synchronization", js.undefined)
         
-        inline def setSynchronizationVarargs(value: TerritoryConflicts*): Self = StObject.set(x, "synchronization", js.Array(value :_*))
+        inline def setSynchronizationVarargs(value: TerritoryConflicts*): Self = StObject.set(x, "synchronization", js.Array(value*))
       }
     }
     
@@ -3297,7 +3297,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: RightsOwnershipHistory*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: RightsOwnershipHistory*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3346,7 +3346,7 @@ object YoutubePartner {
         
         inline def setCustomIdsUndefined: Self = StObject.set(x, "customIds", js.undefined)
         
-        inline def setCustomIdsVarargs(value: String*): Self = StObject.set(x, "customIds", js.Array(value :_*))
+        inline def setCustomIdsVarargs(value: String*): Self = StObject.set(x, "customIds", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -3370,7 +3370,7 @@ object YoutubePartner {
         
         inline def setStatusReportsUndefined: Self = StObject.set(x, "statusReports", js.undefined)
         
-        inline def setStatusReportsVarargs(value: StatusReport*): Self = StObject.set(x, "statusReports", js.Array(value :_*))
+        inline def setStatusReportsVarargs(value: StatusReport*): Self = StObject.set(x, "statusReports", js.Array(value*))
         
         inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
         
@@ -3411,7 +3411,7 @@ object YoutubePartner {
         
         inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        inline def setErrorsVarargs(value: ValidateError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+        inline def setErrorsVarargs(value: ValidateError*): Self = StObject.set(x, "errors", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3501,7 +3501,7 @@ object YoutubePartner {
         
         inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
         
-        inline def setRulesVarargs(value: PolicyRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+        inline def setRulesVarargs(value: PolicyRule*): Self = StObject.set(x, "rules", js.Array(value*))
         
         inline def setTimeUpdated(value: String): Self = StObject.set(x, "timeUpdated", value.asInstanceOf[js.Any])
         
@@ -3528,7 +3528,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Policy*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Policy*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3565,7 +3565,7 @@ object YoutubePartner {
         
         inline def setSubactionUndefined: Self = StObject.set(x, "subaction", js.undefined)
         
-        inline def setSubactionVarargs(value: String*): Self = StObject.set(x, "subaction", js.Array(value :_*))
+        inline def setSubactionVarargs(value: String*): Self = StObject.set(x, "subaction", js.Array(value*))
       }
     }
     
@@ -3586,7 +3586,7 @@ object YoutubePartner {
         
         inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
         
-        inline def setLinkVarargs(value: CampaignTargetLink*): Self = StObject.set(x, "link", js.Array(value :_*))
+        inline def setLinkVarargs(value: CampaignTargetLink*): Self = StObject.set(x, "link", js.Array(value*))
       }
     }
     
@@ -3656,7 +3656,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Publisher*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Publisher*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3767,7 +3767,7 @@ object YoutubePartner {
         
         inline def setExcludedIntervalsUndefined: Self = StObject.set(x, "excludedIntervals", js.undefined)
         
-        inline def setExcludedIntervalsVarargs(value: ExcludedInterval*): Self = StObject.set(x, "excludedIntervals", js.Array(value :_*))
+        inline def setExcludedIntervalsVarargs(value: ExcludedInterval*): Self = StObject.set(x, "excludedIntervals", js.Array(value*))
         
         inline def setFpDirect(value: Boolean): Self = StObject.set(x, "fpDirect", value.asInstanceOf[js.Any])
         
@@ -3860,7 +3860,7 @@ object YoutubePartner {
         
         inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
         
-        inline def setMatchesVarargs(value: ReferenceConflictMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
+        inline def setMatchesVarargs(value: ReferenceConflictMatch*): Self = StObject.set(x, "matches", js.Array(value*))
         
         inline def setOriginalReferenceId(value: String): Self = StObject.set(x, "originalReferenceId", value.asInstanceOf[js.Any])
         
@@ -3895,7 +3895,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: ReferenceConflict*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ReferenceConflict*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3971,7 +3971,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Reference*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Reference*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4061,7 +4061,7 @@ object YoutubePartner {
         
         inline def setGeneralUndefined: Self = StObject.set(x, "general", js.undefined)
         
-        inline def setGeneralVarargs(value: TerritoryOwners*): Self = StObject.set(x, "general", js.Array(value :_*))
+        inline def setGeneralVarargs(value: TerritoryOwners*): Self = StObject.set(x, "general", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4071,19 +4071,19 @@ object YoutubePartner {
         
         inline def setMechanicalUndefined: Self = StObject.set(x, "mechanical", js.undefined)
         
-        inline def setMechanicalVarargs(value: TerritoryOwners*): Self = StObject.set(x, "mechanical", js.Array(value :_*))
+        inline def setMechanicalVarargs(value: TerritoryOwners*): Self = StObject.set(x, "mechanical", js.Array(value*))
         
         inline def setPerformance(value: js.Array[TerritoryOwners]): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
         
         inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
         
-        inline def setPerformanceVarargs(value: TerritoryOwners*): Self = StObject.set(x, "performance", js.Array(value :_*))
+        inline def setPerformanceVarargs(value: TerritoryOwners*): Self = StObject.set(x, "performance", js.Array(value*))
         
         inline def setSynchronization(value: js.Array[TerritoryOwners]): Self = StObject.set(x, "synchronization", value.asInstanceOf[js.Any])
         
         inline def setSynchronizationUndefined: Self = StObject.set(x, "synchronization", js.undefined)
         
-        inline def setSynchronizationVarargs(value: TerritoryOwners*): Self = StObject.set(x, "synchronization", js.Array(value :_*))
+        inline def setSynchronizationVarargs(value: TerritoryOwners*): Self = StObject.set(x, "synchronization", js.Array(value*))
       }
     }
     
@@ -4256,7 +4256,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: SpreadsheetTemplate*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: SpreadsheetTemplate*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4337,7 +4337,7 @@ object YoutubePartner {
         
         inline def setTerritoriesUndefined: Self = StObject.set(x, "territories", js.undefined)
         
-        inline def setTerritoriesVarargs(value: String*): Self = StObject.set(x, "territories", js.Array(value :_*))
+        inline def setTerritoriesVarargs(value: String*): Self = StObject.set(x, "territories", js.Array(value*))
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -4364,7 +4364,7 @@ object YoutubePartner {
         
         inline def setConflictingOwnershipUndefined: Self = StObject.set(x, "conflictingOwnership", js.undefined)
         
-        inline def setConflictingOwnershipVarargs(value: ConflictingOwnership*): Self = StObject.set(x, "conflictingOwnership", js.Array(value :_*))
+        inline def setConflictingOwnershipVarargs(value: ConflictingOwnership*): Self = StObject.set(x, "conflictingOwnership", js.Array(value*))
         
         inline def setTerritory(value: String): Self = StObject.set(x, "territory", value.asInstanceOf[js.Any])
         
@@ -4409,7 +4409,7 @@ object YoutubePartner {
         
         inline def setTerritoriesUndefined: Self = StObject.set(x, "territories", js.undefined)
         
-        inline def setTerritoriesVarargs(value: String*): Self = StObject.set(x, "territories", js.Array(value :_*))
+        inline def setTerritoriesVarargs(value: String*): Self = StObject.set(x, "territories", js.Array(value*))
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -4461,7 +4461,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Uploader*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Uploader*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4638,7 +4638,7 @@ object YoutubePartner {
         
         inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        inline def setErrorsVarargs(value: ValidateError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+        inline def setErrorsVarargs(value: ValidateError*): Self = StObject.set(x, "errors", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4704,7 +4704,7 @@ object YoutubePartner {
         
         inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        inline def setErrorsVarargs(value: ValidateError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+        inline def setErrorsVarargs(value: ValidateError*): Self = StObject.set(x, "errors", js.Array(value*))
         
         inline def setIsMetadataOnly(value: Boolean): Self = StObject.set(x, "isMetadataOnly", value.asInstanceOf[js.Any])
         
@@ -4753,13 +4753,13 @@ object YoutubePartner {
         
         inline def setAdBreaksUndefined: Self = StObject.set(x, "adBreaks", js.undefined)
         
-        inline def setAdBreaksVarargs(value: AdBreak*): Self = StObject.set(x, "adBreaks", js.Array(value :_*))
+        inline def setAdBreaksVarargs(value: AdBreak*): Self = StObject.set(x, "adBreaks", js.Array(value*))
         
         inline def setAdFormats(value: js.Array[String]): Self = StObject.set(x, "adFormats", value.asInstanceOf[js.Any])
         
         inline def setAdFormatsUndefined: Self = StObject.set(x, "adFormats", js.undefined)
         
-        inline def setAdFormatsVarargs(value: String*): Self = StObject.set(x, "adFormats", js.Array(value :_*))
+        inline def setAdFormatsVarargs(value: String*): Self = StObject.set(x, "adFormats", js.Array(value*))
         
         inline def setAutoGeneratedBreaks(value: Boolean): Self = StObject.set(x, "autoGeneratedBreaks", value.asInstanceOf[js.Any])
         
@@ -4769,7 +4769,7 @@ object YoutubePartner {
         
         inline def setBreakPositionUndefined: Self = StObject.set(x, "breakPosition", js.undefined)
         
-        inline def setBreakPositionVarargs(value: String*): Self = StObject.set(x, "breakPosition", js.Array(value :_*))
+        inline def setBreakPositionVarargs(value: String*): Self = StObject.set(x, "breakPosition", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -4818,7 +4818,7 @@ object YoutubePartner {
         
         inline def setAdBreaksUndefined: Self = StObject.set(x, "adBreaks", js.undefined)
         
-        inline def setAdBreaksVarargs(value: AdBreak*): Self = StObject.set(x, "adBreaks", js.Array(value :_*))
+        inline def setAdBreaksVarargs(value: AdBreak*): Self = StObject.set(x, "adBreaks", js.Array(value*))
         
         inline def setAdsOnEmbeds(value: Boolean): Self = StObject.set(x, "adsOnEmbeds", value.asInstanceOf[js.Any])
         
@@ -4828,7 +4828,7 @@ object YoutubePartner {
         
         inline def setCountriesRestrictionUndefined: Self = StObject.set(x, "countriesRestriction", js.undefined)
         
-        inline def setCountriesRestrictionVarargs(value: CountriesRestriction*): Self = StObject.set(x, "countriesRestriction", js.Array(value :_*))
+        inline def setCountriesRestrictionVarargs(value: CountriesRestriction*): Self = StObject.set(x, "countriesRestriction", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -4894,7 +4894,7 @@ object YoutubePartner {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Whitelist*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Whitelist*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         

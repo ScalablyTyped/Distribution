@@ -23,7 +23,7 @@ trait ButtonMenuConfig
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuConfig)
     */
-  var iconClass: js.UndefOr[Boolean] = js.undefined
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * An array of [ButtonMenuItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html).
@@ -63,7 +63,7 @@ object ButtonMenuConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setIconClass(value: Boolean): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
@@ -71,7 +71,7 @@ object ButtonMenuConfig {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ButtonMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ButtonMenuItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     

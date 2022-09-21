@@ -1,7 +1,7 @@
 
 # Scala.js typings for romans
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 A small, no-dependency lib for converting to and from roman numerals
@@ -10,10 +10,10 @@ A small, no-dependency lib for converting to and from roman numerals
 | ------------------ | :-------------: |
 | Full name          | romans |
 | Keywords           | roman, translation, numerals |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 544 |
-| # stars            | 1 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1243.6666666666667 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/qbunt/romanize#readme)

@@ -23,7 +23,7 @@ object AppView {
   @JSGlobal("AppView")
   @js.native
   /** Create a new AppView tag */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with typings.chromeApps.HTMLAppViewElement {
     

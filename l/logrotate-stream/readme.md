@@ -1,7 +1,7 @@
 
 # Scala.js typings for logrotate-stream
 
-Typings are for version 0.2.5
+Typings are for version 0.2.8
 
 ## Library description:
 Pipe log data to a stream, fuggetabout rotation
@@ -11,9 +11,9 @@ Pipe log data to a stream, fuggetabout rotation
 | Full name          | logrotate-stream |
 | Keywords           | log, rotate, pipe, stream |
 | # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 518632 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 55810.666666666664 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/dstokes/logrotate-stream#readme)

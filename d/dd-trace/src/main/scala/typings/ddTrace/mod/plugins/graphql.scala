@@ -68,12 +68,22 @@ trait graphql
   var signature: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Whether to include the source of the operation within the query as a tag
+    * on every span. This may contain sensitive information and sould only be
+    * enabled if sensitive data is always sent as variables and not in the
+    * query text.
+    *
+    * @default false
+    */
+  var source: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * An array of variable names to record. Can also be a callback that returns
     * the key/value pairs to record. For example, using
     * `variables => variables` would record all variables.
     */
   var variables: js.UndefOr[
-    js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[js.Any]])
+    js.Array[String] | (js.Function1[/* variables */ StringDictionary[Any], StringDictionary[Any]])
   ] = js.undefined
 }
 object graphql {
@@ -101,14 +111,18 @@ object graphql {
     
     inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
+    inline def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
     inline def setVariables(
-      value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[js.Any]])
+      value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[Any], StringDictionary[Any]])
     ): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    inline def setVariablesFunction1(value: /* variables */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "variables", js.Any.fromFunction1(value))
+    inline def setVariablesFunction1(value: /* variables */ StringDictionary[Any] => StringDictionary[Any]): Self = StObject.set(x, "variables", js.Any.fromFunction1(value))
     
     inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     
-    inline def setVariablesVarargs(value: String*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: String*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

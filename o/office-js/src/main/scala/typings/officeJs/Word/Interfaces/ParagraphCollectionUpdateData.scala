@@ -22,6 +22,6 @@ object ParagraphCollectionUpdateData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ParagraphData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ParagraphData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

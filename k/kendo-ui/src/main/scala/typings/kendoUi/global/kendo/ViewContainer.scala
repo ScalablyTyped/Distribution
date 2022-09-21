@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ViewContainer")
 @js.native
-class ViewContainer ()
+open class ViewContainer ()
   extends StObject
      with typings.kendoUi.kendo.ViewContainer

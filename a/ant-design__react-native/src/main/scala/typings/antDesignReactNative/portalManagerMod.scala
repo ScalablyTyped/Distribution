@@ -11,11 +11,11 @@ object portalManagerMod {
   
   @JSImport("@ant-design/react-native/lib/portal/portal-manager", JSImport.Default)
   @js.native
-  class default () extends PortalManager
+  open class default () extends PortalManager
   
   @js.native
   trait PortalManager
-    extends PureComponent[js.Object, PortalManagerState, js.Any] {
+    extends PureComponent[js.Object, PortalManagerState, Any] {
     
     def mount(key: Double, children: ReactNode): Unit = js.native
     
@@ -29,20 +29,20 @@ object portalManagerMod {
   
   trait PortalManagerState extends StObject {
     
-    var portals: js.Array[js.Any]
+    var portals: js.Array[Any]
   }
   object PortalManagerState {
     
-    inline def apply(portals: js.Array[js.Any]): PortalManagerState = {
+    inline def apply(portals: js.Array[Any]): PortalManagerState = {
       val __obj = js.Dynamic.literal(portals = portals.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortalManagerState]
     }
     
     extension [Self <: PortalManagerState](x: Self) {
       
-      inline def setPortals(value: js.Array[js.Any]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
+      inline def setPortals(value: js.Array[Any]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
       
-      inline def setPortalsVarargs(value: js.Any*): Self = StObject.set(x, "portals", js.Array(value :_*))
+      inline def setPortalsVarargs(value: Any*): Self = StObject.set(x, "portals", js.Array(value*))
     }
   }
   
@@ -61,7 +61,7 @@ object portalManagerMod {
       
       inline def setPortals(value: js.Array[ChildrenReactNode]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
       
-      inline def setPortalsVarargs(value: ChildrenReactNode*): Self = StObject.set(x, "portals", js.Array(value :_*))
+      inline def setPortalsVarargs(value: ChildrenReactNode*): Self = StObject.set(x, "portals", js.Array(value*))
     }
   }
 }

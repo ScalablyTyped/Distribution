@@ -23,12 +23,12 @@ object ConstrainStringParameters {
     
     inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
-    inline def setExactVarargs(value: String*): Self = StObject.set(x, "exact", js.Array(value :_*))
+    inline def setExactVarargs(value: String*): Self = StObject.set(x, "exact", js.Array(value*))
     
     inline def setIdeal(value: String | js.Array[String]): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
     
     inline def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
     
-    inline def setIdealVarargs(value: String*): Self = StObject.set(x, "ideal", js.Array(value :_*))
+    inline def setIdealVarargs(value: String*): Self = StObject.set(x, "ideal", js.Array(value*))
   }
 }

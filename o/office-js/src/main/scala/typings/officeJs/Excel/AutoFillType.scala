@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait AutoFillType extends StObject
 /**
-  *
   * The behavior types when AutoFill is used on a range in the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.AutoFillType")
@@ -17,8 +17,9 @@ sealed trait AutoFillType extends StObject
 object AutoFillType extends StObject {
   
   /**
-    * Populates the adjacent cells with data based on the selected data.
-    *
+    * Populates the adjacent cells with data based on the selected data.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait fillCopy
@@ -27,7 +28,8 @@ object AutoFillType extends StObject {
   
   /**
     * A version of "FillSeries" for dates that bases the pattern on either the day of the month or the day of the week, depending on the context.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait fillDays
@@ -36,7 +38,8 @@ object AutoFillType extends StObject {
   
   /**
     * Populates the adjacent cells based on the surrounding data (the standard AutoFill behavior).
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait fillDefault
@@ -44,8 +47,9 @@ object AutoFillType extends StObject {
        with AutoFillType
   
   /**
-    * Populates the adjacent cells with the selected formulas.
-    *
+    * Populates the adjacent cells with the selected formulas.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait fillFormats
@@ -54,7 +58,8 @@ object AutoFillType extends StObject {
   
   /**
     * A version of "FillSeries" for dates that bases the pattern on the month.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait fillMonths
@@ -63,7 +68,8 @@ object AutoFillType extends StObject {
   
   /**
     * Populates the adjacent cells with data that follows a pattern in the copied cells.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait fillSeries
@@ -71,8 +77,9 @@ object AutoFillType extends StObject {
        with AutoFillType
   
   /**
-    * Populates the adjacent cells with the selected values.
-    *
+    * Populates the adjacent cells with the selected values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait fillValues
@@ -81,7 +88,8 @@ object AutoFillType extends StObject {
   
   /**
     * A version of "FillSeries" for dates that bases the pattern on the day of the week and only includes weekdays.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait fillWeekdays
@@ -90,7 +98,8 @@ object AutoFillType extends StObject {
   
   /**
     * A version of "FillSeries" for dates that bases the pattern on the year.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait fillYears
@@ -98,8 +107,9 @@ object AutoFillType extends StObject {
        with AutoFillType
   
   /**
-    * Populates the adjacent cells by using Excel's FlashFill feature.
-    *
+    * Populates the adjacent cells by using Excel's Flash Fill feature.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait flashFill
@@ -107,8 +117,9 @@ object AutoFillType extends StObject {
        with AutoFillType
   
   /**
-    * A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a growth trend model.
-    *
+    * A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a growth trend model.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait growthTrend
@@ -116,8 +127,9 @@ object AutoFillType extends StObject {
        with AutoFillType
   
   /**
-    * A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a linear trend model.
-    *
+    * A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a linear trend model.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait linearTrend

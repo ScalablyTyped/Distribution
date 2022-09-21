@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "CanvasRenderer")
 @js.native
-class CanvasRenderer ()
+open class CanvasRenderer ()
   extends StObject
      with Renderer

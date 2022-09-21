@@ -99,14 +99,14 @@ trait CostExplorer extends Service {
   ): Request[DeleteCostCategoryDefinitionResponse, AWSError] = js.native
   
   /**
-    * Returns the name, ARN, rules, definition, and effective dates of a Cost Category that's defined in the account. You have the option to use EffectiveOn to return a Cost Category that is active on a specific date. If there is no EffectiveOn specified, you’ll see a Cost Category that is effective on the current date. If Cost Category is still effective, EffectiveEnd is omitted in the response. 
+    * Returns the name, Amazon Resource Name (ARN), rules, definition, and effective dates of a Cost Category that's defined in the account. You have the option to use EffectiveOn to return a Cost Category that's active on a specific date. If there's no EffectiveOn specified, you see a Cost Category that's effective on the current date. If Cost Category is still effective, EffectiveEnd is omitted in the response. 
     */
   def describeCostCategoryDefinition(): Request[DescribeCostCategoryDefinitionResponse, AWSError] = js.native
   def describeCostCategoryDefinition(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCostCategoryDefinitionResponse, Unit]
   ): Request[DescribeCostCategoryDefinitionResponse, AWSError] = js.native
   /**
-    * Returns the name, ARN, rules, definition, and effective dates of a Cost Category that's defined in the account. You have the option to use EffectiveOn to return a Cost Category that is active on a specific date. If there is no EffectiveOn specified, you’ll see a Cost Category that is effective on the current date. If Cost Category is still effective, EffectiveEnd is omitted in the response. 
+    * Returns the name, Amazon Resource Name (ARN), rules, definition, and effective dates of a Cost Category that's defined in the account. You have the option to use EffectiveOn to return a Cost Category that's active on a specific date. If there's no EffectiveOn specified, you see a Cost Category that's effective on the current date. If Cost Category is still effective, EffectiveEnd is omitted in the response. 
     */
   def describeCostCategoryDefinition(params: DescribeCostCategoryDefinitionRequest): Request[DescribeCostCategoryDefinitionResponse, AWSError] = js.native
   def describeCostCategoryDefinition(
@@ -115,12 +115,12 @@ trait CostExplorer extends Service {
   ): Request[DescribeCostCategoryDefinitionResponse, AWSError] = js.native
   
   /**
-    * Retrieves all of the cost anomalies detected on your account, during the time period specified by the DateInterval object. 
+    * Retrieves all of the cost anomalies detected on your account during the time period that's specified by the DateInterval object. 
     */
   def getAnomalies(): Request[GetAnomaliesResponse, AWSError] = js.native
   def getAnomalies(callback: js.Function2[/* err */ AWSError, /* data */ GetAnomaliesResponse, Unit]): Request[GetAnomaliesResponse, AWSError] = js.native
   /**
-    * Retrieves all of the cost anomalies detected on your account, during the time period specified by the DateInterval object. 
+    * Retrieves all of the cost anomalies detected on your account during the time period that's specified by the DateInterval object. 
     */
   def getAnomalies(params: GetAnomaliesRequest): Request[GetAnomaliesResponse, AWSError] = js.native
   def getAnomalies(
@@ -157,12 +157,12 @@ trait CostExplorer extends Service {
   ): Request[GetAnomalySubscriptionsResponse, AWSError] = js.native
   
   /**
-    * Retrieves cost and usage metrics for your account. You can specify which cost and usage-related metric, such as BlendedCosts or UsageQuantity, that you want the request to return. You can also filter and group your data by various dimensions, such as SERVICE or AZ, in a specific time range. For a complete list of valid dimensions, see the GetDimensionValues operation. Management account in an organization in AWS Organizations have access to all member accounts. For information about filter limitations, see Quotas and restrictions in the Billing and Cost Management User Guide.
+    * Retrieves cost and usage metrics for your account. You can specify which cost and usage-related metric that you want the request to return. For example, you can specify BlendedCosts or UsageQuantity. You can also filter and group your data by various dimensions, such as SERVICE or AZ, in a specific time range. For a complete list of valid dimensions, see the GetDimensionValues operation. Management account in an organization in Organizations have access to all member accounts. For information about filter limitations, see Quotas and restrictions in the Billing and Cost Management User Guide.
     */
   def getCostAndUsage(): Request[GetCostAndUsageResponse, AWSError] = js.native
   def getCostAndUsage(callback: js.Function2[/* err */ AWSError, /* data */ GetCostAndUsageResponse, Unit]): Request[GetCostAndUsageResponse, AWSError] = js.native
   /**
-    * Retrieves cost and usage metrics for your account. You can specify which cost and usage-related metric, such as BlendedCosts or UsageQuantity, that you want the request to return. You can also filter and group your data by various dimensions, such as SERVICE or AZ, in a specific time range. For a complete list of valid dimensions, see the GetDimensionValues operation. Management account in an organization in AWS Organizations have access to all member accounts. For information about filter limitations, see Quotas and restrictions in the Billing and Cost Management User Guide.
+    * Retrieves cost and usage metrics for your account. You can specify which cost and usage-related metric that you want the request to return. For example, you can specify BlendedCosts or UsageQuantity. You can also filter and group your data by various dimensions, such as SERVICE or AZ, in a specific time range. For a complete list of valid dimensions, see the GetDimensionValues operation. Management account in an organization in Organizations have access to all member accounts. For information about filter limitations, see Quotas and restrictions in the Billing and Cost Management User Guide.
     */
   def getCostAndUsage(params: GetCostAndUsageRequest): Request[GetCostAndUsageResponse, AWSError] = js.native
   def getCostAndUsage(
@@ -171,18 +171,32 @@ trait CostExplorer extends Service {
   ): Request[GetCostAndUsageResponse, AWSError] = js.native
   
   /**
-    * Retrieves cost and usage metrics with resources for your account. You can specify which cost and usage-related metric, such as BlendedCosts or UsageQuantity, that you want the request to return. You can also filter and group your data by various dimensions, such as SERVICE or AZ, in a specific time range. For a complete list of valid dimensions, see the GetDimensionValues operation. Management account in an organization in AWS Organizations have access to all member accounts. This API is currently available for the Amazon Elastic Compute Cloud – Compute service only.  This is an opt-in only feature. You can enable this feature from the Cost Explorer Settings page. For information on how to access the Settings page, see Controlling Access for Cost Explorer in the AWS Billing and Cost Management User Guide. 
+    * Retrieves cost and usage metrics with resources for your account. You can specify which cost and usage-related metric, such as BlendedCosts or UsageQuantity, that you want the request to return. You can also filter and group your data by various dimensions, such as SERVICE or AZ, in a specific time range. For a complete list of valid dimensions, see the GetDimensionValues operation. Management account in an organization in Organizations have access to all member accounts. This API is currently available for the Amazon Elastic Compute Cloud – Compute service only.  This is an opt-in only feature. You can enable this feature from the Cost Explorer Settings page. For information about how to access the Settings page, see Controlling Access for Cost Explorer in the Billing and Cost Management User Guide. 
     */
   def getCostAndUsageWithResources(): Request[GetCostAndUsageWithResourcesResponse, AWSError] = js.native
   def getCostAndUsageWithResources(callback: js.Function2[/* err */ AWSError, /* data */ GetCostAndUsageWithResourcesResponse, Unit]): Request[GetCostAndUsageWithResourcesResponse, AWSError] = js.native
   /**
-    * Retrieves cost and usage metrics with resources for your account. You can specify which cost and usage-related metric, such as BlendedCosts or UsageQuantity, that you want the request to return. You can also filter and group your data by various dimensions, such as SERVICE or AZ, in a specific time range. For a complete list of valid dimensions, see the GetDimensionValues operation. Management account in an organization in AWS Organizations have access to all member accounts. This API is currently available for the Amazon Elastic Compute Cloud – Compute service only.  This is an opt-in only feature. You can enable this feature from the Cost Explorer Settings page. For information on how to access the Settings page, see Controlling Access for Cost Explorer in the AWS Billing and Cost Management User Guide. 
+    * Retrieves cost and usage metrics with resources for your account. You can specify which cost and usage-related metric, such as BlendedCosts or UsageQuantity, that you want the request to return. You can also filter and group your data by various dimensions, such as SERVICE or AZ, in a specific time range. For a complete list of valid dimensions, see the GetDimensionValues operation. Management account in an organization in Organizations have access to all member accounts. This API is currently available for the Amazon Elastic Compute Cloud – Compute service only.  This is an opt-in only feature. You can enable this feature from the Cost Explorer Settings page. For information about how to access the Settings page, see Controlling Access for Cost Explorer in the Billing and Cost Management User Guide. 
     */
   def getCostAndUsageWithResources(params: GetCostAndUsageWithResourcesRequest): Request[GetCostAndUsageWithResourcesResponse, AWSError] = js.native
   def getCostAndUsageWithResources(
     params: GetCostAndUsageWithResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCostAndUsageWithResourcesResponse, Unit]
   ): Request[GetCostAndUsageWithResourcesResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves an array of Cost Category names and values incurred cost.  If some Cost Category names and values are not associated with any cost, they will not be returned by this API. 
+    */
+  def getCostCategories(): Request[GetCostCategoriesResponse, AWSError] = js.native
+  def getCostCategories(callback: js.Function2[/* err */ AWSError, /* data */ GetCostCategoriesResponse, Unit]): Request[GetCostCategoriesResponse, AWSError] = js.native
+  /**
+    * Retrieves an array of Cost Category names and values incurred cost.  If some Cost Category names and values are not associated with any cost, they will not be returned by this API. 
+    */
+  def getCostCategories(params: GetCostCategoriesRequest): Request[GetCostCategoriesResponse, AWSError] = js.native
+  def getCostCategories(
+    params: GetCostCategoriesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCostCategoriesResponse, Unit]
+  ): Request[GetCostCategoriesResponse, AWSError] = js.native
   
   /**
     * Retrieves a forecast for how much Amazon Web Services predicts that you will spend over the forecast time period that you select, based on your past costs. 
@@ -213,12 +227,12 @@ trait CostExplorer extends Service {
   ): Request[GetDimensionValuesResponse, AWSError] = js.native
   
   /**
-    * Retrieves the reservation coverage for your account. This enables you to see how much of your Amazon Elastic Compute Cloud, Amazon ElastiCache, Amazon Relational Database Service, or Amazon Redshift usage is covered by a reservation. An organization's management account can see the coverage of the associated member accounts. This supports dimensions, Cost Categories, and nested expressions. For any time period, you can filter data about reservation usage by the following dimensions:   AZ   CACHE_ENGINE   DATABASE_ENGINE   DEPLOYMENT_OPTION   INSTANCE_TYPE   LINKED_ACCOUNT   OPERATING_SYSTEM   PLATFORM   REGION   SERVICE   TAG   TENANCY   To determine valid values for a dimension, use the GetDimensionValues operation. 
+    * Retrieves the reservation coverage for your account, which you can use to see how much of your Amazon Elastic Compute Cloud, Amazon ElastiCache, Amazon Relational Database Service, or Amazon Redshift usage is covered by a reservation. An organization's management account can see the coverage of the associated member accounts. This supports dimensions, Cost Categories, and nested expressions. For any time period, you can filter data about reservation usage by the following dimensions:   AZ   CACHE_ENGINE   DATABASE_ENGINE   DEPLOYMENT_OPTION   INSTANCE_TYPE   LINKED_ACCOUNT   OPERATING_SYSTEM   PLATFORM   REGION   SERVICE   TAG   TENANCY   To determine valid values for a dimension, use the GetDimensionValues operation. 
     */
   def getReservationCoverage(): Request[GetReservationCoverageResponse, AWSError] = js.native
   def getReservationCoverage(callback: js.Function2[/* err */ AWSError, /* data */ GetReservationCoverageResponse, Unit]): Request[GetReservationCoverageResponse, AWSError] = js.native
   /**
-    * Retrieves the reservation coverage for your account. This enables you to see how much of your Amazon Elastic Compute Cloud, Amazon ElastiCache, Amazon Relational Database Service, or Amazon Redshift usage is covered by a reservation. An organization's management account can see the coverage of the associated member accounts. This supports dimensions, Cost Categories, and nested expressions. For any time period, you can filter data about reservation usage by the following dimensions:   AZ   CACHE_ENGINE   DATABASE_ENGINE   DEPLOYMENT_OPTION   INSTANCE_TYPE   LINKED_ACCOUNT   OPERATING_SYSTEM   PLATFORM   REGION   SERVICE   TAG   TENANCY   To determine valid values for a dimension, use the GetDimensionValues operation. 
+    * Retrieves the reservation coverage for your account, which you can use to see how much of your Amazon Elastic Compute Cloud, Amazon ElastiCache, Amazon Relational Database Service, or Amazon Redshift usage is covered by a reservation. An organization's management account can see the coverage of the associated member accounts. This supports dimensions, Cost Categories, and nested expressions. For any time period, you can filter data about reservation usage by the following dimensions:   AZ   CACHE_ENGINE   DATABASE_ENGINE   DEPLOYMENT_OPTION   INSTANCE_TYPE   LINKED_ACCOUNT   OPERATING_SYSTEM   PLATFORM   REGION   SERVICE   TAG   TENANCY   To determine valid values for a dimension, use the GetDimensionValues operation. 
     */
   def getReservationCoverage(params: GetReservationCoverageRequest): Request[GetReservationCoverageResponse, AWSError] = js.native
   def getReservationCoverage(
@@ -227,14 +241,14 @@ trait CostExplorer extends Service {
   ): Request[GetReservationCoverageResponse, AWSError] = js.native
   
   /**
-    * Gets recommendations for which reservations to purchase. These recommendations could help you reduce your costs. Reservations provide a discounted hourly rate (up to 75%) compared to On-Demand pricing. AWS generates your recommendations by identifying your On-Demand usage during a specific time period and collecting your usage into categories that are eligible for a reservation. After AWS has these categories, it simulates every combination of reservations in each category of usage to identify the best number of each type of RI to purchase to maximize your estimated savings.  For example, AWS automatically aggregates your Amazon EC2 Linux, shared tenancy, and c4 family usage in the US West (Oregon) Region and recommends that you buy size-flexible regional reservations to apply to the c4 family usage. AWS recommends the smallest size instance in an instance family. This makes it easier to purchase a size-flexible RI. AWS also shows the equal number of normalized units so that you can purchase any instance size that you want. For this example, your RI recommendation would be for c4.large because that is the smallest size instance in the c4 instance family.
+    * Gets recommendations for reservation purchases. These recommendations might help you to reduce your costs. Reservations provide a discounted hourly rate (up to 75%) compared to On-Demand pricing. Amazon Web Services generates your recommendations by identifying your On-Demand usage during a specific time period and collecting your usage into categories that are eligible for a reservation. After Amazon Web Services has these categories, it simulates every combination of reservations in each category of usage to identify the best number of each type of Reserved Instance (RI) to purchase to maximize your estimated savings.  For example, Amazon Web Services automatically aggregates your Amazon EC2 Linux, shared tenancy, and c4 family usage in the US West (Oregon) Region and recommends that you buy size-flexible regional reservations to apply to the c4 family usage. Amazon Web Services recommends the smallest size instance in an instance family. This makes it easier to purchase a size-flexible Reserved Instance (RI). Amazon Web Services also shows the equal number of normalized units. This way, you can purchase any instance size that you want. For this example, your RI recommendation is for c4.large because that is the smallest size instance in the c4 instance family.
     */
   def getReservationPurchaseRecommendation(): Request[GetReservationPurchaseRecommendationResponse, AWSError] = js.native
   def getReservationPurchaseRecommendation(
     callback: js.Function2[/* err */ AWSError, /* data */ GetReservationPurchaseRecommendationResponse, Unit]
   ): Request[GetReservationPurchaseRecommendationResponse, AWSError] = js.native
   /**
-    * Gets recommendations for which reservations to purchase. These recommendations could help you reduce your costs. Reservations provide a discounted hourly rate (up to 75%) compared to On-Demand pricing. AWS generates your recommendations by identifying your On-Demand usage during a specific time period and collecting your usage into categories that are eligible for a reservation. After AWS has these categories, it simulates every combination of reservations in each category of usage to identify the best number of each type of RI to purchase to maximize your estimated savings.  For example, AWS automatically aggregates your Amazon EC2 Linux, shared tenancy, and c4 family usage in the US West (Oregon) Region and recommends that you buy size-flexible regional reservations to apply to the c4 family usage. AWS recommends the smallest size instance in an instance family. This makes it easier to purchase a size-flexible RI. AWS also shows the equal number of normalized units so that you can purchase any instance size that you want. For this example, your RI recommendation would be for c4.large because that is the smallest size instance in the c4 instance family.
+    * Gets recommendations for reservation purchases. These recommendations might help you to reduce your costs. Reservations provide a discounted hourly rate (up to 75%) compared to On-Demand pricing. Amazon Web Services generates your recommendations by identifying your On-Demand usage during a specific time period and collecting your usage into categories that are eligible for a reservation. After Amazon Web Services has these categories, it simulates every combination of reservations in each category of usage to identify the best number of each type of Reserved Instance (RI) to purchase to maximize your estimated savings.  For example, Amazon Web Services automatically aggregates your Amazon EC2 Linux, shared tenancy, and c4 family usage in the US West (Oregon) Region and recommends that you buy size-flexible regional reservations to apply to the c4 family usage. Amazon Web Services recommends the smallest size instance in an instance family. This makes it easier to purchase a size-flexible Reserved Instance (RI). Amazon Web Services also shows the equal number of normalized units. This way, you can purchase any instance size that you want. For this example, your RI recommendation is for c4.large because that is the smallest size instance in the c4 instance family.
     */
   def getReservationPurchaseRecommendation(params: GetReservationPurchaseRecommendationRequest): Request[GetReservationPurchaseRecommendationResponse, AWSError] = js.native
   def getReservationPurchaseRecommendation(
@@ -257,12 +271,12 @@ trait CostExplorer extends Service {
   ): Request[GetReservationUtilizationResponse, AWSError] = js.native
   
   /**
-    * Creates recommendations that help you save cost by identifying idle and underutilized Amazon EC2 instances. Recommendations are generated to either downsize or terminate instances, along with providing savings detail and metrics. For details on calculation and function, see Optimizing Your Cost with Rightsizing Recommendations in the AWS Billing and Cost Management User Guide.
+    * Creates recommendations that help you save cost by identifying idle and underutilized Amazon EC2 instances. Recommendations are generated to either downsize or terminate instances, along with providing savings detail and metrics. For more information about calculation and function, see Optimizing Your Cost with Rightsizing Recommendations in the Billing and Cost Management User Guide.
     */
   def getRightsizingRecommendation(): Request[GetRightsizingRecommendationResponse, AWSError] = js.native
   def getRightsizingRecommendation(callback: js.Function2[/* err */ AWSError, /* data */ GetRightsizingRecommendationResponse, Unit]): Request[GetRightsizingRecommendationResponse, AWSError] = js.native
   /**
-    * Creates recommendations that help you save cost by identifying idle and underutilized Amazon EC2 instances. Recommendations are generated to either downsize or terminate instances, along with providing savings detail and metrics. For details on calculation and function, see Optimizing Your Cost with Rightsizing Recommendations in the AWS Billing and Cost Management User Guide.
+    * Creates recommendations that help you save cost by identifying idle and underutilized Amazon EC2 instances. Recommendations are generated to either downsize or terminate instances, along with providing savings detail and metrics. For more information about calculation and function, see Optimizing Your Cost with Rightsizing Recommendations in the Billing and Cost Management User Guide.
     */
   def getRightsizingRecommendation(params: GetRightsizingRecommendationRequest): Request[GetRightsizingRecommendationResponse, AWSError] = js.native
   def getRightsizingRecommendation(
@@ -301,12 +315,12 @@ trait CostExplorer extends Service {
   ): Request[GetSavingsPlansPurchaseRecommendationResponse, AWSError] = js.native
   
   /**
-    * Retrieves the Savings Plans utilization for your account across date ranges with daily or monthly granularity. Management account in an organization have access to member accounts. You can use GetDimensionValues in SAVINGS_PLANS to determine the possible dimension values.  You cannot group by any dimension values for GetSavingsPlansUtilization. 
+    * Retrieves the Savings Plans utilization for your account across date ranges with daily or monthly granularity. Management account in an organization have access to member accounts. You can use GetDimensionValues in SAVINGS_PLANS to determine the possible dimension values.  You can't group by any dimension values for GetSavingsPlansUtilization. 
     */
   def getSavingsPlansUtilization(): Request[GetSavingsPlansUtilizationResponse, AWSError] = js.native
   def getSavingsPlansUtilization(callback: js.Function2[/* err */ AWSError, /* data */ GetSavingsPlansUtilizationResponse, Unit]): Request[GetSavingsPlansUtilizationResponse, AWSError] = js.native
   /**
-    * Retrieves the Savings Plans utilization for your account across date ranges with daily or monthly granularity. Management account in an organization have access to member accounts. You can use GetDimensionValues in SAVINGS_PLANS to determine the possible dimension values.  You cannot group by any dimension values for GetSavingsPlansUtilization. 
+    * Retrieves the Savings Plans utilization for your account across date ranges with daily or monthly granularity. Management account in an organization have access to member accounts. You can use GetDimensionValues in SAVINGS_PLANS to determine the possible dimension values.  You can't group by any dimension values for GetSavingsPlansUtilization. 
     */
   def getSavingsPlansUtilization(params: GetSavingsPlansUtilizationRequest): Request[GetSavingsPlansUtilizationResponse, AWSError] = js.native
   def getSavingsPlansUtilization(
@@ -359,18 +373,46 @@ trait CostExplorer extends Service {
   ): Request[GetUsageForecastResponse, AWSError] = js.native
   
   /**
-    * Returns the name, ARN, NumberOfRules and effective dates of all Cost Categories defined in the account. You have the option to use EffectiveOn to return a list of Cost Categories that were active on a specific date. If there is no EffectiveOn specified, you’ll see Cost Categories that are effective on the current date. If Cost Category is still effective, EffectiveEnd is omitted in the response. ListCostCategoryDefinitions supports pagination. The request can have a MaxResults range up to 100.
+    * Get a list of cost allocation tags. All inputs in the API are optional and serve as filters. By default, all cost allocation tags are returned. 
+    */
+  def listCostAllocationTags(): Request[ListCostAllocationTagsResponse, AWSError] = js.native
+  def listCostAllocationTags(callback: js.Function2[/* err */ AWSError, /* data */ ListCostAllocationTagsResponse, Unit]): Request[ListCostAllocationTagsResponse, AWSError] = js.native
+  /**
+    * Get a list of cost allocation tags. All inputs in the API are optional and serve as filters. By default, all cost allocation tags are returned. 
+    */
+  def listCostAllocationTags(params: ListCostAllocationTagsRequest): Request[ListCostAllocationTagsResponse, AWSError] = js.native
+  def listCostAllocationTags(
+    params: ListCostAllocationTagsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCostAllocationTagsResponse, Unit]
+  ): Request[ListCostAllocationTagsResponse, AWSError] = js.native
+  
+  /**
+    * Returns the name, Amazon Resource Name (ARN), NumberOfRules and effective dates of all Cost Categories defined in the account. You have the option to use EffectiveOn to return a list of Cost Categories that were active on a specific date. If there is no EffectiveOn specified, you’ll see Cost Categories that are effective on the current date. If Cost Category is still effective, EffectiveEnd is omitted in the response. ListCostCategoryDefinitions supports pagination. The request can have a MaxResults range up to 100.
     */
   def listCostCategoryDefinitions(): Request[ListCostCategoryDefinitionsResponse, AWSError] = js.native
   def listCostCategoryDefinitions(callback: js.Function2[/* err */ AWSError, /* data */ ListCostCategoryDefinitionsResponse, Unit]): Request[ListCostCategoryDefinitionsResponse, AWSError] = js.native
   /**
-    * Returns the name, ARN, NumberOfRules and effective dates of all Cost Categories defined in the account. You have the option to use EffectiveOn to return a list of Cost Categories that were active on a specific date. If there is no EffectiveOn specified, you’ll see Cost Categories that are effective on the current date. If Cost Category is still effective, EffectiveEnd is omitted in the response. ListCostCategoryDefinitions supports pagination. The request can have a MaxResults range up to 100.
+    * Returns the name, Amazon Resource Name (ARN), NumberOfRules and effective dates of all Cost Categories defined in the account. You have the option to use EffectiveOn to return a list of Cost Categories that were active on a specific date. If there is no EffectiveOn specified, you’ll see Cost Categories that are effective on the current date. If Cost Category is still effective, EffectiveEnd is omitted in the response. ListCostCategoryDefinitions supports pagination. The request can have a MaxResults range up to 100.
     */
   def listCostCategoryDefinitions(params: ListCostCategoryDefinitionsRequest): Request[ListCostCategoryDefinitionsResponse, AWSError] = js.native
   def listCostCategoryDefinitions(
     params: ListCostCategoryDefinitionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCostCategoryDefinitionsResponse, Unit]
   ): Request[ListCostCategoryDefinitionsResponse, AWSError] = js.native
+  
+  /**
+    * Returns a list of resource tags associated with the resource specified by the Amazon Resource Name (ARN). 
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Returns a list of resource tags associated with the resource specified by the Amazon Resource Name (ARN). 
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
     * Modifies the feedback property of a given cost anomaly. 
@@ -387,12 +429,40 @@ trait CostExplorer extends Service {
   ): Request[ProvideAnomalyFeedbackResponse, AWSError] = js.native
   
   /**
-    * Updates an existing cost anomaly monitor. The changes made are applied going forward, and does not change anomalies detected in the past. 
+    * An API operation for adding one or more tags (key-value pairs) to a resource. You can use the TagResource operation with a resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the list of tags associated with the resource. If you specify a tag key that is already associated with the resource, the new tag value you specify replaces the previous value for that tag. Although the maximum number of array members is 200, user-tag maximum is 50. The remaining are reserved for Amazon Web Services use.
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * An API operation for adding one or more tags (key-value pairs) to a resource. You can use the TagResource operation with a resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the list of tags associated with the resource. If you specify a tag key that is already associated with the resource, the new tag value you specify replaces the previous value for that tag. Although the maximum number of array members is 200, user-tag maximum is 50. The remaining are reserved for Amazon Web Services use.
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  
+  /**
+    * Removes one or more tags from a resource. Specify only tag keys in your request. Don't specify the value. 
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Removes one or more tags from a resource. Specify only tag keys in your request. Don't specify the value. 
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
+  
+  /**
+    * Updates an existing cost anomaly monitor. The changes made are applied going forward, and doesn't change anomalies detected in the past. 
     */
   def updateAnomalyMonitor(): Request[UpdateAnomalyMonitorResponse, AWSError] = js.native
   def updateAnomalyMonitor(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAnomalyMonitorResponse, Unit]): Request[UpdateAnomalyMonitorResponse, AWSError] = js.native
   /**
-    * Updates an existing cost anomaly monitor. The changes made are applied going forward, and does not change anomalies detected in the past. 
+    * Updates an existing cost anomaly monitor. The changes made are applied going forward, and doesn't change anomalies detected in the past. 
     */
   def updateAnomalyMonitor(params: UpdateAnomalyMonitorRequest): Request[UpdateAnomalyMonitorResponse, AWSError] = js.native
   def updateAnomalyMonitor(
@@ -401,18 +471,34 @@ trait CostExplorer extends Service {
   ): Request[UpdateAnomalyMonitorResponse, AWSError] = js.native
   
   /**
-    *  Updates an existing cost anomaly monitor subscription. 
+    * Updates an existing cost anomaly monitor subscription. 
     */
   def updateAnomalySubscription(): Request[UpdateAnomalySubscriptionResponse, AWSError] = js.native
   def updateAnomalySubscription(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAnomalySubscriptionResponse, Unit]): Request[UpdateAnomalySubscriptionResponse, AWSError] = js.native
   /**
-    *  Updates an existing cost anomaly monitor subscription. 
+    * Updates an existing cost anomaly monitor subscription. 
     */
   def updateAnomalySubscription(params: UpdateAnomalySubscriptionRequest): Request[UpdateAnomalySubscriptionResponse, AWSError] = js.native
   def updateAnomalySubscription(
     params: UpdateAnomalySubscriptionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAnomalySubscriptionResponse, Unit]
   ): Request[UpdateAnomalySubscriptionResponse, AWSError] = js.native
+  
+  /**
+    * Updates status for cost allocation tags in bulk, with maximum batch size of 20. If the tag status that's updated is the same as the existing tag status, the request doesn't fail. Instead, it doesn't have any effect on the tag status (for example, activating the active tag). 
+    */
+  def updateCostAllocationTagsStatus(): Request[UpdateCostAllocationTagsStatusResponse, AWSError] = js.native
+  def updateCostAllocationTagsStatus(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateCostAllocationTagsStatusResponse, Unit]
+  ): Request[UpdateCostAllocationTagsStatusResponse, AWSError] = js.native
+  /**
+    * Updates status for cost allocation tags in bulk, with maximum batch size of 20. If the tag status that's updated is the same as the existing tag status, the request doesn't fail. Instead, it doesn't have any effect on the tag status (for example, activating the active tag). 
+    */
+  def updateCostAllocationTagsStatus(params: UpdateCostAllocationTagsStatusRequest): Request[UpdateCostAllocationTagsStatusResponse, AWSError] = js.native
+  def updateCostAllocationTagsStatus(
+    params: UpdateCostAllocationTagsStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateCostAllocationTagsStatusResponse, Unit]
+  ): Request[UpdateCostAllocationTagsStatusResponse, AWSError] = js.native
   
   /**
     * Updates an existing Cost Category. Changes made to the Cost Category rules will be used to categorize the current month’s expenses and future expenses. This won’t change categorization for the previous months.

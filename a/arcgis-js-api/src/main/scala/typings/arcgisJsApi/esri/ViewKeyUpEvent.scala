@@ -9,7 +9,7 @@ trait ViewKeyUpEvent extends StObject {
   
   var key: String
   
-  var native: js.Any
+  var native: Any
   
   var stopPropagation: js.Function
   
@@ -19,7 +19,7 @@ trait ViewKeyUpEvent extends StObject {
 }
 object ViewKeyUpEvent {
   
-  inline def apply(key: String, native: js.Any, stopPropagation: js.Function, timestamp: Double): ViewKeyUpEvent = {
+  inline def apply(key: String, native: Any, stopPropagation: js.Function, timestamp: Double): ViewKeyUpEvent = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("key-up")
     __obj.asInstanceOf[ViewKeyUpEvent]
@@ -29,7 +29,7 @@ object ViewKeyUpEvent {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     inline def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     

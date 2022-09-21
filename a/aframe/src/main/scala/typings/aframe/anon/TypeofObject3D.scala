@@ -1,6 +1,7 @@
 package typings.aframe.anon
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.three.eventDispatcherMod.BaseEvent
 import typings.three.mod.Object3D
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofObject3D
   extends StObject
-     with Instantiable0[Object3D] {
+     with Instantiable0[Object3D[BaseEvent]] {
   
   var DefaultMatrixAutoUpdate: Boolean = js.native
   

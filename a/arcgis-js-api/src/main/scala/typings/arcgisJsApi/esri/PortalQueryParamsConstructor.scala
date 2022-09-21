@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PortalQueryParamsConstructor
   extends StObject
-     with Instantiable0[PortalQueryParams]
+     with /**
+  * The parameters used to perform a query for Items, Groups, and Users within a [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html)
+  */
+Instantiable0[PortalQueryParams]
      with Instantiable1[/* properties */ PortalQueryParamsProperties, PortalQueryParams]

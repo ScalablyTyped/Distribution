@@ -18,7 +18,7 @@ trait IAction
     * @param fn Function The function to execute for each component
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the Component.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Enables all components configured by this Action  */
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -26,7 +26,7 @@ trait IAction
   /** [Method] Executes this Action manually using the handler function specified in the original config object or the handler funct
     * @param args Object... Variable number of arguments passed to the handler function
     */
-  var execute: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var execute: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   /** [Method] Gets the icon CSS class currently used by all components configured by this Action  */
   var getIconCls: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -35,7 +35,7 @@ trait IAction
   var getText: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var handler: js.UndefOr[js.Any] = js.undefined
+  var handler: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var hidden: js.UndefOr[Boolean] = js.undefined
@@ -56,7 +56,7 @@ trait IAction
   var itemId: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the disabled state of all components configured by this Action
     * @param disabled Boolean True to disable the component, false to enable it
@@ -67,7 +67,7 @@ trait IAction
     * @param fn Function The function that will be invoked by the action's components. The function will be called with no arguments.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the Component firing the event.
     */
-  var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the hidden state of all components configured by this Action
     * @param hidden Boolean True to hide the component, false to show it.
@@ -107,7 +107,7 @@ object IAction {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
@@ -115,7 +115,7 @@ object IAction {
     
     inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    inline def setExecute(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: /* repeated */ Any => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
     inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
     
@@ -127,7 +127,7 @@ object IAction {
     
     inline def setGetTextUndefined: Self = StObject.set(x, "getText", js.undefined)
     
-    inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
@@ -155,7 +155,7 @@ object IAction {
     
     inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -163,7 +163,7 @@ object IAction {
     
     inline def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
     
-    inline def setSetHandler(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction2(value))
+    inline def setSetHandler(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction2(value))
     
     inline def setSetHandlerUndefined: Self = StObject.set(x, "setHandler", js.undefined)
     

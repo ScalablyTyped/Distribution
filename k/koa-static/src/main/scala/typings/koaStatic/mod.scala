@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(root: String): Middleware[js.Object, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, DefaultContext]]
-  inline def apply(root: String, opts: Options): Middleware[js.Object, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, DefaultContext]]
+  inline def apply(root: String): Middleware[js.Object, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, DefaultContext, Any]]
+  inline def apply(root: String, opts: Options): Middleware[js.Object, DefaultContext, Any] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, DefaultContext, Any]]
   
   @JSImport("koa-static", JSImport.Namespace)
   @js.native

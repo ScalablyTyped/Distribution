@@ -1,7 +1,7 @@
 
 # Scala.js typings for logrocket
 
-Typings are for version 1.0.14
+Typings are for version 3.0.1
 
 ## Library description:
 JavaScript SDK for [LogRocket](https://logrocket.com/)
@@ -10,10 +10,10 @@ JavaScript SDK for [LogRocket](https://logrocket.com/)
 | ------------------ | :-------------: |
 | Full name          | logrocket |
 | Keywords           | redux, reducer, state, logging, exceptions, replay, record |
-| # releases         | 25 |
-| # dependents       | 29 |
-| # downloads        | 5969995 |
-| # stars            | 1 |
+| # releases         | 39 |
+| # dependents       | 0.0 |
+| # downloads        | 1466224.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/logrocket)

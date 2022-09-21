@@ -11,7 +11,7 @@ trait IgLayoutManager
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Options specific to a border layout
@@ -97,7 +97,7 @@ trait IgLayoutManager
     * "column"
     * "vertical"
     */
-  var layoutMode: js.UndefOr[js.Any] = js.undefined
+  var layoutMode: js.UndefOr[Any] = js.undefined
   
   /**
     * Event fired after all items are rendered.
@@ -157,9 +157,9 @@ object IgLayoutManager {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: IgLayoutManagerItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IgLayoutManagerItem*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setLayoutMode(value: js.Any): Self = StObject.set(x, "layoutMode", value.asInstanceOf[js.Any])
+    inline def setLayoutMode(value: Any): Self = StObject.set(x, "layoutMode", value.asInstanceOf[js.Any])
     
     inline def setLayoutModeUndefined: Self = StObject.set(x, "layoutMode", js.undefined)
     

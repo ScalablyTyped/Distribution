@@ -22,12 +22,12 @@ object capabilitiesMod {
     * @param {(Capabilities|Map<string, ?>|Object)=} other Another set of
     *     capabilities to initialize this instance from.
     */
-  class Capabilities ()
+  open class Capabilities ()
     extends StObject
        with CreateSessionCapabilities {
     def this(other: js.Object) = this()
     def this(other: Capabilities) = this()
-    def this(other: Map[String, js.Any]) = this()
+    def this(other: Map[String, Any]) = this()
     
     /**
       * Deletes an entry from this set of capabilities.
@@ -41,7 +41,7 @@ object capabilitiesMod {
       * @return {*} The capability with the given key, or {@code null} if it has
       *     not been set.
       */
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     /**
       * @return {boolean} whether the session is configured to accept insecure
@@ -105,7 +105,7 @@ object capabilitiesMod {
       * @return {!Capabilities} A self reference.
       */
     def merge(other: Capabilities): Capabilities = js.native
-    def merge(other: Map[String, js.Any]): Capabilities = js.native
+    def merge(other: Map[String, Any]): Capabilities = js.native
     
     /**
       * @param {string} key The capability key.
@@ -113,7 +113,7 @@ object capabilitiesMod {
       * @return {!Capabilities} A self reference.
       * @throws {TypeError} If the `key` is not a string.
       */
-    def set(key: String, value: js.Any): Capabilities = js.native
+    def set(key: String, value: Any): Capabilities = js.native
     
     /**
       * Sets whether a WebDriver session should implicitly accept self-signed, or

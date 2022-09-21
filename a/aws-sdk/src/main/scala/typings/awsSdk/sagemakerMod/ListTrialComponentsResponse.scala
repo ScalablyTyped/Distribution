@@ -33,6 +33,6 @@ object ListTrialComponentsResponse {
     
     inline def setTrialComponentSummariesUndefined: Self = StObject.set(x, "TrialComponentSummaries", js.undefined)
     
-    inline def setTrialComponentSummariesVarargs(value: TrialComponentSummary*): Self = StObject.set(x, "TrialComponentSummaries", js.Array(value :_*))
+    inline def setTrialComponentSummariesVarargs(value: TrialComponentSummary*): Self = StObject.set(x, "TrialComponentSummaries", js.Array(value*))
   }
 }

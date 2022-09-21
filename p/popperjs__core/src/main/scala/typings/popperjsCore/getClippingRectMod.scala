@@ -3,6 +3,7 @@ package typings.popperjsCore
 import typings.popperjsCore.enumsMod.Boundary
 import typings.popperjsCore.enumsMod.RootBoundary
 import typings.popperjsCore.typesMod.ClientRectObject
+import typings.popperjsCore.typesMod.PositioningStrategy
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,5 +15,5 @@ object getClippingRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(element: Element, boundary: Boundary, rootBoundary: RootBoundary): ClientRectObject = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any], rootBoundary.asInstanceOf[js.Any])).asInstanceOf[ClientRectObject]
+  inline def default(element: Element, boundary: Boundary, rootBoundary: RootBoundary, strategy: PositioningStrategy): ClientRectObject = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any], rootBoundary.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[ClientRectObject]
 }

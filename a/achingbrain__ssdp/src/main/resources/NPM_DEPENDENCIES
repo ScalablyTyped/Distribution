@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@achingbrain/ssdp" : "4.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@achingbrain/ssdp" : "4.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

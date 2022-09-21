@@ -28,7 +28,7 @@ object ListImportJobsResponse {
     
     inline def setImportJobsUndefined: Self = StObject.set(x, "importJobs", js.undefined)
     
-    inline def setImportJobsVarargs(value: ImportJob*): Self = StObject.set(x, "importJobs", js.Array(value :_*))
+    inline def setImportJobsVarargs(value: ImportJob*): Self = StObject.set(x, "importJobs", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

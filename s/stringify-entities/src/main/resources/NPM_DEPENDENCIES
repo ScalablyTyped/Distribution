@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stringify-entities" : "3.1.0"
+      "stringify-entities" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "stringify-entities" : "3.1.0"
+      "stringify-entities" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

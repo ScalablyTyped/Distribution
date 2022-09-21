@@ -33,6 +33,6 @@ object DBParameterGroupDetails {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value*))
   }
 }

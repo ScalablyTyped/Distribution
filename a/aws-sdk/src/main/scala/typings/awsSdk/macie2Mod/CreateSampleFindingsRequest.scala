@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateSampleFindingsRequest extends StObject {
   
   /**
-    * An array that lists one or more types of findings to include in the set of sample findings. Currently, the only supported value is Policy:IAMUser/S3BucketEncryptionDisabled. 
+    * An array of finding types, one for each type of sample finding to create. To create a sample of every type of finding that Amazon Macie supports, don't include this array in your request.
     */
   var findingTypes: js.UndefOr[listOfFindingType] = js.undefined
 }
@@ -24,6 +24,6 @@ object CreateSampleFindingsRequest {
     
     inline def setFindingTypesUndefined: Self = StObject.set(x, "findingTypes", js.undefined)
     
-    inline def setFindingTypesVarargs(value: FindingType*): Self = StObject.set(x, "findingTypes", js.Array(value :_*))
+    inline def setFindingTypesVarargs(value: FindingType*): Self = StObject.set(x, "findingTypes", js.Array(value*))
   }
 }

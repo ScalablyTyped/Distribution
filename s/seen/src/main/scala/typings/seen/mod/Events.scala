@@ -19,7 +19,7 @@ object Events {
     */
   @JSImport("seen", "Events.Dispatcher")
   @js.native
-  class Dispatcher () extends StObject {
+  open class Dispatcher () extends StObject {
     
     def on(`type`: String, listener: EventListener): Dispatcher = js.native
   }

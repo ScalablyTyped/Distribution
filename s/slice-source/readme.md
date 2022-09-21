@@ -11,9 +11,9 @@ A readable stream reader that reads a desired number of bytes.
 | Full name          | slice-source |
 | Keywords           | binary, stream, reader |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1360418 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 193835.0 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/mbostock/slice-source)

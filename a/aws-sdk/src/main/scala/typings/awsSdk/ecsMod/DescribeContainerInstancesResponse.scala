@@ -29,12 +29,12 @@ object DescribeContainerInstancesResponse {
     
     inline def setContainerInstancesUndefined: Self = StObject.set(x, "containerInstances", js.undefined)
     
-    inline def setContainerInstancesVarargs(value: ContainerInstance*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
+    inline def setContainerInstancesVarargs(value: ContainerInstance*): Self = StObject.set(x, "containerInstances", js.Array(value*))
     
     inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
     inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value*))
   }
 }

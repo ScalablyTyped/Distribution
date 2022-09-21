@@ -12,7 +12,7 @@ trait UpdateScriptInput extends StObject {
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * A unique identifier for a Realtime script to update. You can use either the script ID or ARN value.
+    * A unique identifier for the Realtime script to update. You can use either the script ID or ARN value.
     */
   var ScriptId: ScriptIdOrArn
   
@@ -22,12 +22,12 @@ trait UpdateScriptInput extends StObject {
   var StorageLocation: js.UndefOr[S3Location] = js.undefined
   
   /**
-    * The version that is associated with a build or script. Version strings do not need to be unique.
+    * Version information that is associated with a build or script. Version strings do not need to be unique.
     */
   var Version: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * A data object containing your Realtime scripts and dependencies as a zip file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB. When using the AWS CLI tool to create a script, this parameter is set to the zip file name. It must be prepended with the string "fileb://" to indicate that the file data is a binary object. For example: --zip-file fileb://myRealtimeScript.zip.
+    * A data object containing your Realtime scripts and dependencies as a zip file. The zip file can have one or multiple files. Maximum size of a zip file is 5 MB. When using the Amazon Web Services CLI tool to create a script, this parameter is set to the zip file name. It must be prepended with the string "fileb://" to indicate that the file data is a binary object. For example: --zip-file fileb://myRealtimeScript.zip.
     */
   var ZipFile: js.UndefOr[ZipBlob] = js.undefined
 }

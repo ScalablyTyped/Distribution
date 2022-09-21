@@ -6,14 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Account extends StObject {
   
+  /** Output only. How the account is managed. Acceptable values are: - "`manual`" - "`automatic`" */
+  var accountManagement: js.UndefOr[String] = js.undefined
+  
   /**
-    * List of linked Ads accounts that are active or pending approval. To create a new link request, add a new link with status `active` to the list. It will remain in a `pending` state
-    * until approved or rejected either in the Ads interface or through the AdWords API. To delete an active link, or to cancel a link request, remove it from the list.
+    * Linked Ads accounts that are active or pending approval. To create a new link request, add a new link with status `active` to the list. It will remain in a `pending` state until
+    * approved or rejected either in the Ads interface or through the AdWords API. To delete an active link, or to cancel a link request, remove it from the list.
     */
   var adsLinks: js.UndefOr[js.Array[AccountAdsLink]] = js.undefined
   
   /** Indicates whether the merchant sells adult content. */
   var adultContent: js.UndefOr[Boolean] = js.undefined
+  
+  /** The automatic improvements of the account can be used to automatically update items, improve images and shipping. Each section inside AutomaticImprovements is updated separately. */
+  var automaticImprovements: js.UndefOr[AccountAutomaticImprovements] = js.undefined
+  
+  /** Automatically created label IDs that are assigned to the account by CSS Center. */
+  var automaticLabelIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The business information of the account. */
   var businessInformation: js.UndefOr[AccountBusinessInformation] = js.undefined
@@ -21,16 +30,16 @@ trait Account extends StObject {
   /** ID of CSS the account belongs to. */
   var cssId: js.UndefOr[String] = js.undefined
   
-  /** The GMB account which is linked or in the process of being linked with the Merchant Center account. */
+  /** The Business Profile which is linked or in the process of being linked with the Merchant Center account. */
   var googleMyBusinessLink: js.UndefOr[AccountGoogleMyBusinessLink] = js.undefined
   
   /** Required for update. Merchant Center account ID. */
   var id: js.UndefOr[String] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "`content#account`" */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#account`". */
   var kind: js.UndefOr[String] = js.undefined
   
-  /** List of label IDs that are assigned to the account by CSS. */
+  /** Manually created label IDs that are assigned to the account by CSS. */
   var labelIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. Display name for the account. */
@@ -46,8 +55,8 @@ trait Account extends StObject {
   var websiteUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * List of linked YouTube channels that are active or pending approval. To create a new link request, add a new link with status `active` to the list. It will remain in a `pending`
-    * state until approved or rejected in the YT Creator Studio interface. To delete an active link, or to cancel a link request, remove it from the list.
+    * Linked YouTube channels that are active or pending approval. To create a new link request, add a new link with status `active` to the list. It will remain in a `pending` state until
+    * approved or rejected in the YT Creator Studio interface. To delete an active link, or to cancel a link request, remove it from the list.
     */
   var youtubeChannelLinks: js.UndefOr[js.Array[AccountYouTubeChannelLink]] = js.undefined
 }
@@ -60,15 +69,29 @@ object Account {
   
   extension [Self <: Account](x: Self) {
     
+    inline def setAccountManagement(value: String): Self = StObject.set(x, "accountManagement", value.asInstanceOf[js.Any])
+    
+    inline def setAccountManagementUndefined: Self = StObject.set(x, "accountManagement", js.undefined)
+    
     inline def setAdsLinks(value: js.Array[AccountAdsLink]): Self = StObject.set(x, "adsLinks", value.asInstanceOf[js.Any])
     
     inline def setAdsLinksUndefined: Self = StObject.set(x, "adsLinks", js.undefined)
     
-    inline def setAdsLinksVarargs(value: AccountAdsLink*): Self = StObject.set(x, "adsLinks", js.Array(value :_*))
+    inline def setAdsLinksVarargs(value: AccountAdsLink*): Self = StObject.set(x, "adsLinks", js.Array(value*))
     
     inline def setAdultContent(value: Boolean): Self = StObject.set(x, "adultContent", value.asInstanceOf[js.Any])
     
     inline def setAdultContentUndefined: Self = StObject.set(x, "adultContent", js.undefined)
+    
+    inline def setAutomaticImprovements(value: AccountAutomaticImprovements): Self = StObject.set(x, "automaticImprovements", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticImprovementsUndefined: Self = StObject.set(x, "automaticImprovements", js.undefined)
+    
+    inline def setAutomaticLabelIds(value: js.Array[String]): Self = StObject.set(x, "automaticLabelIds", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticLabelIdsUndefined: Self = StObject.set(x, "automaticLabelIds", js.undefined)
+    
+    inline def setAutomaticLabelIdsVarargs(value: String*): Self = StObject.set(x, "automaticLabelIds", js.Array(value*))
     
     inline def setBusinessInformation(value: AccountBusinessInformation): Self = StObject.set(x, "businessInformation", value.asInstanceOf[js.Any])
     
@@ -94,7 +117,7 @@ object Account {
     
     inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
-    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -108,7 +131,7 @@ object Account {
     
     inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    inline def setUsersVarargs(value: AccountUser*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: AccountUser*): Self = StObject.set(x, "users", js.Array(value*))
     
     inline def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
     
@@ -118,6 +141,6 @@ object Account {
     
     inline def setYoutubeChannelLinksUndefined: Self = StObject.set(x, "youtubeChannelLinks", js.undefined)
     
-    inline def setYoutubeChannelLinksVarargs(value: AccountYouTubeChannelLink*): Self = StObject.set(x, "youtubeChannelLinks", js.Array(value :_*))
+    inline def setYoutubeChannelLinksVarargs(value: AccountYouTubeChannelLink*): Self = StObject.set(x, "youtubeChannelLinks", js.Array(value*))
   }
 }

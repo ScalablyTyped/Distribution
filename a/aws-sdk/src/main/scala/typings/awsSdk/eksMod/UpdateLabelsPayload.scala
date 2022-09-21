@@ -33,6 +33,6 @@ object UpdateLabelsPayload {
     
     inline def setRemoveLabelsUndefined: Self = StObject.set(x, "removeLabels", js.undefined)
     
-    inline def setRemoveLabelsVarargs(value: String*): Self = StObject.set(x, "removeLabels", js.Array(value :_*))
+    inline def setRemoveLabelsVarargs(value: String*): Self = StObject.set(x, "removeLabels", js.Array(value*))
   }
 }

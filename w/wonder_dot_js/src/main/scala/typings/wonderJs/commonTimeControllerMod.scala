@@ -9,7 +9,7 @@ object commonTimeControllerMod {
   
   @JSImport("wonder.js/dist/es2015/utils/time/CommonTimeController", "CommonTimeController")
   @js.native
-  class CommonTimeController () extends TimeController
+  open class CommonTimeController () extends TimeController
   /* static members */
   object CommonTimeController {
     

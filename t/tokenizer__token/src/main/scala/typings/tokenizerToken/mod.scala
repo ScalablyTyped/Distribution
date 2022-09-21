@@ -1,21 +1,20 @@
 package typings.tokenizerToken
 
-import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  trait IGetToken[T] extends StObject {
+  trait IGetToken[Value, Array /* <: js.typedarray.Uint8Array */] extends StObject {
     
     /**
       * Decode value from buffer at offset
-      * @param buffer - Buffer to read the decoded value from
+      * @param array - Uint8Array to read the decoded value from
       * @param offset - Decode offset
-      * @return Decoded value
+      * @return decoded value
       */
-    def get(buffer: Buffer, offset: Double): T
+    def get(array: Array, offset: Double): Value
     
     /**
       * Length of encoded token in bytes
@@ -24,41 +23,42 @@ object mod {
   }
   object IGetToken {
     
-    inline def apply[T](get: (Buffer, Double) => T, len: Double): IGetToken[T] = {
+    inline def apply[Value, Array /* <: js.typedarray.Uint8Array */](get: (Array, Double) => Value, len: Double): IGetToken[Value, Array] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), len = len.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IGetToken[T]]
+      __obj.asInstanceOf[IGetToken[Value, Array]]
     }
     
-    extension [Self <: IGetToken[?], T](x: Self & IGetToken[T]) {
+    extension [Self <: IGetToken[?, ?], Value, Array /* <: js.typedarray.Uint8Array */](x: Self & (IGetToken[Value, Array])) {
       
-      inline def setGet(value: (Buffer, Double) => T): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (Array, Double) => Value): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
       inline def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     }
   }
   
-  trait IToken[T]
+  trait IToken[Value, Array /* <: js.typedarray.Uint8Array */]
     extends StObject
-       with IGetToken[T] {
+       with IGetToken[Value, Array] {
     
     /**
       * Encode value to buffer
-      * @param buffer - Buffer to write the encoded value to
+      * @param array - Uint8Array to write the encoded value to
       * @param offset - Buffer write offset
       * @param value - Value to decode of type T
+      * @return offset plus number of bytes written
       */
-    def put(buffer: Buffer, offset: Double, value: T): Double
+    def put(array: Array, offset: Double, value: Value): Double
   }
   object IToken {
     
-    inline def apply[T](get: (Buffer, Double) => T, len: Double, put: (Buffer, Double, T) => Double): IToken[T] = {
+    inline def apply[Value, Array /* <: js.typedarray.Uint8Array */](get: (Array, Double) => Value, len: Double, put: (Array, Double, Value) => Double): IToken[Value, Array] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), len = len.asInstanceOf[js.Any], put = js.Any.fromFunction3(put))
-      __obj.asInstanceOf[IToken[T]]
+      __obj.asInstanceOf[IToken[Value, Array]]
     }
     
-    extension [Self <: IToken[?], T](x: Self & IToken[T]) {
+    extension [Self <: IToken[?, ?], Value, Array /* <: js.typedarray.Uint8Array */](x: Self & (IToken[Value, Array])) {
       
-      inline def setPut(value: (Buffer, Double, T) => Double): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
+      inline def setPut(value: (Array, Double, Value) => Double): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
     }
   }
 }

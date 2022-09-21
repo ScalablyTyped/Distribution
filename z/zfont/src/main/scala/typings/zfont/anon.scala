@@ -55,7 +55,7 @@ object anon {
       * @see {@link https://github.com/jaames/zfont#zdogtext Zfont API}
       */
     var Text: Instantiable1[
-        /* options */ TextOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* options */ TextOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         typings.zfont.mod.zdogAugmentingMod.Text[MultilineText]
       ] = js.native
     
@@ -66,7 +66,7 @@ object anon {
       * @see {@link  Zfont API}
       */
     var TextGroup: Instantiable1[
-        /* options */ TextGroupOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+        /* options */ TextGroupOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
         typings.zfont.mod.zdogAugmentingMod.TextGroup[MultilineText]
       ] = js.native
     

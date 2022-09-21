@@ -2,13 +2,23 @@ package typings.kendoUi.anon
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.kendoUi.JQuery
+import typings.kendoUi.kendo.ui.ActionSheetOptions
 import typings.kendoUi.kendo.ui.AlertOptions
 import typings.kendoUi.kendo.ui.AppBarOptions
 import typings.kendoUi.kendo.ui.AutoCompleteOptions
+import typings.kendoUi.kendo.ui.AvatarOptions
+import typings.kendoUi.kendo.ui.BadgeOptions
+import typings.kendoUi.kendo.ui.BottomNavigationOptions
+import typings.kendoUi.kendo.ui.BreadcrumbOptions
 import typings.kendoUi.kendo.ui.ButtonGroupOptions
 import typings.kendoUi.kendo.ui.ButtonOptions
 import typings.kendoUi.kendo.ui.CalendarOptions
+import typings.kendoUi.kendo.ui.CaptchaOptions
 import typings.kendoUi.kendo.ui.ChatOptions
+import typings.kendoUi.kendo.ui.CheckBoxGroupOptions
+import typings.kendoUi.kendo.ui.CheckBoxOptions
+import typings.kendoUi.kendo.ui.CircularProgressBarOptions
+import typings.kendoUi.kendo.ui.ColorGradientOptions
 import typings.kendoUi.kendo.ui.ColorPaletteOptions
 import typings.kendoUi.kendo.ui.ColorPickerOptions
 import typings.kendoUi.kendo.ui.ComboBoxOptions
@@ -27,10 +37,13 @@ import typings.kendoUi.kendo.ui.DropTargetAreaOptions
 import typings.kendoUi.kendo.ui.DropTargetOptions
 import typings.kendoUi.kendo.ui.EditorOptions
 import typings.kendoUi.kendo.ui.Editor_
+import typings.kendoUi.kendo.ui.ExpansionPanelOptions
 import typings.kendoUi.kendo.ui.FileManagerOptions
+import typings.kendoUi.kendo.ui.FileManager_
 import typings.kendoUi.kendo.ui.FilterMenuOptions
 import typings.kendoUi.kendo.ui.FilterOptions
 import typings.kendoUi.kendo.ui.FlatColorPickerOptions
+import typings.kendoUi.kendo.ui.FloatingActionButtonOptions
 import typings.kendoUi.kendo.ui.FormOptions
 import typings.kendoUi.kendo.ui.GanttOptions
 import typings.kendoUi.kendo.ui.GridOptions
@@ -46,19 +59,28 @@ import typings.kendoUi.kendo.ui.MultiSelectOptions
 import typings.kendoUi.kendo.ui.MultiViewCalendarOptions
 import typings.kendoUi.kendo.ui.NotificationOptions
 import typings.kendoUi.kendo.ui.NumericTextBoxOptions
+import typings.kendoUi.kendo.ui.OrgChartOptions
 import typings.kendoUi.kendo.ui.PDFViewerOptions
 import typings.kendoUi.kendo.ui.PagerOptions
 import typings.kendoUi.kendo.ui.PanelBarOptions
+import typings.kendoUi.kendo.ui.PivotConfiguratorButtonOptions
 import typings.kendoUi.kendo.ui.PivotConfiguratorOptions
+import typings.kendoUi.kendo.ui.PivotConfiguratorV2Options
+import typings.kendoUi.kendo.ui.PivotContainerOptions
 import typings.kendoUi.kendo.ui.PivotGridOptions
+import typings.kendoUi.kendo.ui.PivotGridV2Options
+import typings.kendoUi.kendo.ui.PopoverOptions
 import typings.kendoUi.kendo.ui.PopupOptions
 import typings.kendoUi.kendo.ui.ProgressBarOptions
 import typings.kendoUi.kendo.ui.PromptOptions
+import typings.kendoUi.kendo.ui.RadioButtonOptions
+import typings.kendoUi.kendo.ui.RadioGroupOptions
 import typings.kendoUi.kendo.ui.RangeSliderOptions
 import typings.kendoUi.kendo.ui.RatingOptions
 import typings.kendoUi.kendo.ui.ResponsivePanelOptions
 import typings.kendoUi.kendo.ui.SchedulerOptions
 import typings.kendoUi.kendo.ui.ScrollViewOptions
+import typings.kendoUi.kendo.ui.SkeletonContainerOptions
 import typings.kendoUi.kendo.ui.SliderOptions
 import typings.kendoUi.kendo.ui.SortableOptions
 import typings.kendoUi.kendo.ui.SplitterOptions
@@ -66,6 +88,8 @@ import typings.kendoUi.kendo.ui.SpreadsheetOptions
 import typings.kendoUi.kendo.ui.StepperOptions
 import typings.kendoUi.kendo.ui.SwitchOptions
 import typings.kendoUi.kendo.ui.TabStripOptions
+import typings.kendoUi.kendo.ui.TaskBoardOptions
+import typings.kendoUi.kendo.ui.TaskBoard_
 import typings.kendoUi.kendo.ui.TextAreaOptions
 import typings.kendoUi.kendo.ui.TextBoxOptions
 import typings.kendoUi.kendo.ui.TileLayoutOptions
@@ -88,6 +112,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofui extends StObject {
   
+  var ActionSheet: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ActionSheetOptions], 
+    typings.kendoUi.kendo.ui.ActionSheet
+  ]) & TypeofActionSheet = js.native
+  
   var Alert: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[AlertOptions], 
@@ -105,6 +135,30 @@ trait Typeofui extends StObject {
     /* options */ js.UndefOr[AutoCompleteOptions], 
     typings.kendoUi.kendo.ui.AutoComplete
   ]) & TypeofAutoComplete = js.native
+  
+  var Avatar: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[AvatarOptions], 
+    typings.kendoUi.kendo.ui.Avatar
+  ]) & TypeofAvatar = js.native
+  
+  var Badge: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[BadgeOptions], 
+    typings.kendoUi.kendo.ui.Badge
+  ]) & TypeofBadge = js.native
+  
+  var BottomNavigation: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[BottomNavigationOptions], 
+    typings.kendoUi.kendo.ui.BottomNavigation
+  ]) & TypeofBottomNavigation = js.native
+  
+  var Breadcrumb: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[BreadcrumbOptions], 
+    typings.kendoUi.kendo.ui.Breadcrumb
+  ]) & TypeofBreadcrumb = js.native
   
   var Button: (Instantiable2[
     /* element */ Element, 
@@ -124,11 +178,41 @@ trait Typeofui extends StObject {
     typings.kendoUi.kendo.ui.Calendar
   ]) & TypeofCalendar = js.native
   
+  var Captcha: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[CaptchaOptions], 
+    typings.kendoUi.kendo.ui.Captcha
+  ]) & TypeofCaptcha = js.native
+  
   var Chat: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ChatOptions], 
     typings.kendoUi.kendo.ui.Chat
   ]) & TypeofChat = js.native
+  
+  var CheckBox: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[CheckBoxOptions], 
+    typings.kendoUi.kendo.ui.CheckBox
+  ]) & TypeofCheckBox = js.native
+  
+  var CheckBoxGroup: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[CheckBoxGroupOptions], 
+    typings.kendoUi.kendo.ui.CheckBoxGroup
+  ]) & TypeofCheckBoxGroup = js.native
+  
+  var CircularProgressBar: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[CircularProgressBarOptions], 
+    typings.kendoUi.kendo.ui.CircularProgressBar
+  ]) & TypeofCircularProgressBar = js.native
+  
+  var ColorGradient: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[ColorGradientOptions], 
+    typings.kendoUi.kendo.ui.ColorGradient
+  ]) & TypeofColorGradient = js.native
   
   var ColorPalette: (Instantiable2[
     /* element */ Element, 
@@ -228,11 +312,13 @@ trait Typeofui extends StObject {
   
   var Editor: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[EditorOptions], Editor_]) & TypeofEditor_ = js.native
   
-  var FileManager: (Instantiable2[
+  var ExpansionPanel: (Instantiable2[
     /* element */ Element, 
-    /* options */ js.UndefOr[FileManagerOptions], 
-    typings.kendoUi.kendo.ui.FileManager
-  ]) & TypeofFileManager = js.native
+    /* options */ js.UndefOr[ExpansionPanelOptions], 
+    typings.kendoUi.kendo.ui.ExpansionPanel
+  ]) & TypeofExpansionPanel = js.native
+  
+  var FileManager: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[FileManagerOptions], FileManager_]) & TypeofFileManager_ = js.native
   
   var Filter: (Instantiable2[
     /* element */ Element, 
@@ -251,6 +337,12 @@ trait Typeofui extends StObject {
     /* options */ js.UndefOr[FlatColorPickerOptions], 
     typings.kendoUi.kendo.ui.FlatColorPicker
   ]) & TypeofFlatColorPicker = js.native
+  
+  var FloatingActionButton: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[FloatingActionButtonOptions], 
+    typings.kendoUi.kendo.ui.FloatingActionButton
+  ]) & TypeofFloatingActionButto = js.native
   
   var Form: (Instantiable2[
     /* element */ Element, 
@@ -342,6 +434,12 @@ trait Typeofui extends StObject {
     typings.kendoUi.kendo.ui.NumericTextBox
   ]) & TypeofNumericTextBox = js.native
   
+  var OrgChart: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[OrgChartOptions], 
+    typings.kendoUi.kendo.ui.OrgChart
+  ]) & TypeofOrgChart = js.native
+  
   var PDFViewer: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PDFViewerOptions], 
@@ -366,11 +464,41 @@ trait Typeofui extends StObject {
     typings.kendoUi.kendo.ui.PivotConfigurator
   ]) & TypeofPivotConfigurator = js.native
   
+  var PivotConfiguratorButton: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[PivotConfiguratorButtonOptions], 
+    typings.kendoUi.kendo.ui.PivotConfiguratorButton
+  ]) & TypeofPivotConfiguratorBu = js.native
+  
+  var PivotConfiguratorV2: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[PivotConfiguratorV2Options], 
+    typings.kendoUi.kendo.ui.PivotConfiguratorV2
+  ]) & TypeofPivotConfiguratorV2 = js.native
+  
+  var PivotContainer: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[PivotContainerOptions], 
+    typings.kendoUi.kendo.ui.PivotContainer
+  ]) & TypeofPivotContainer = js.native
+  
   var PivotGrid: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[PivotGridOptions], 
     typings.kendoUi.kendo.ui.PivotGrid
   ]) & TypeofPivotGrid = js.native
+  
+  var PivotGridV2: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[PivotGridV2Options], 
+    typings.kendoUi.kendo.ui.PivotGridV2
+  ]) & TypeofPivotGridV2 = js.native
+  
+  var Popover: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[PopoverOptions], 
+    typings.kendoUi.kendo.ui.Popover
+  ]) & TypeofPopover = js.native
   
   var Popup: (Instantiable2[
     /* element */ Element, 
@@ -389,6 +517,18 @@ trait Typeofui extends StObject {
     /* options */ js.UndefOr[PromptOptions], 
     typings.kendoUi.kendo.ui.Prompt
   ]) & TypeofPrompt = js.native
+  
+  var RadioButton: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[RadioButtonOptions], 
+    typings.kendoUi.kendo.ui.RadioButton
+  ]) & TypeofRadioButton = js.native
+  
+  var RadioGroup: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[RadioGroupOptions], 
+    typings.kendoUi.kendo.ui.RadioGroup
+  ]) & TypeofRadioGroup = js.native
   
   var RangeSlider: (Instantiable2[
     /* element */ Element, 
@@ -419,6 +559,12 @@ trait Typeofui extends StObject {
     /* options */ js.UndefOr[ScrollViewOptions], 
     typings.kendoUi.kendo.ui.ScrollView
   ]) & TypeofScrollView = js.native
+  
+  var SkeletonContainer: (Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[SkeletonContainerOptions], 
+    typings.kendoUi.kendo.ui.SkeletonContainer
+  ]) & TypeofSkeletonContainer = js.native
   
   var Slider: (Instantiable2[
     /* element */ Element, 
@@ -461,6 +607,8 @@ trait Typeofui extends StObject {
     /* options */ js.UndefOr[TabStripOptions], 
     typings.kendoUi.kendo.ui.TabStrip
   ]) & TypeofTabStrip = js.native
+  
+  var TaskBoard: (Instantiable2[/* element */ Element, /* options */ js.UndefOr[TaskBoardOptions], TaskBoard_]) & TypeofTaskBoard_ = js.native
   
   var TextArea: (Instantiable2[
     /* element */ Element, 
@@ -554,6 +702,8 @@ trait Typeofui extends StObject {
   
   val editor: Typeofeditor = js.native
   
+  val filemanager: Typeoffilemanager = js.native
+  
   def plugin(
     widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any
   ): Unit = js.native
@@ -571,6 +721,19 @@ trait Typeofui extends StObject {
     register: Unit,
     prefix: String
   ): Unit = js.native
+  def plugin(widget: Any): Unit = js.native
+  def plugin(
+    widget: Any,
+    register: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui */ js.Any
+  ): Unit = js.native
+  def plugin(
+    widget: Any,
+    register: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui */ js.Any,
+    prefix: String
+  ): Unit = js.native
+  def plugin(widget: Any, register: Unit, prefix: String): Unit = js.native
   
   def progress(container: JQuery, toggle: Boolean): Unit = js.native
+  
+  val taskboard: Typeoftaskboard = js.native
 }

@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.ICrowd
 import typings.babylonjs.BABYLON.INavMeshParameters
-import typings.std.Uint8Array
+import typings.babylonjs.BABYLON.IObstacle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +13,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initializes the recastJS plugin
   * @param recastInjection can be used to inject your own recast reference
   */
-class RecastJSPlugin ()
+open class RecastJSPlugin ()
   extends StObject
      with typings.babylonjs.BABYLON.RecastJSPlugin {
-  def this(recastInjection: js.Any) = this()
+  def this(recastInjection: Any) = this()
+  
+  /**
+    * Creates an oriented box obstacle and add it to the navigation
+    * @param position world position
+    * @param extent box size
+    * @param angle angle in radians of the box orientation on Y axis
+    * @returns the obstacle freshly created
+    */
+  /* CompleteClass */
+  override def addBoxObstacle(
+    position: typings.babylonjs.BABYLON.Vector3,
+    extent: typings.babylonjs.BABYLON.Vector3,
+    angle: Double
+  ): IObstacle = js.native
+  
+  /**
+    * Creates a cylinder obstacle and add it to the navigation
+    * @param position world position
+    * @param radius cylinder radius
+    * @param height cylinder height
+    * @returns the obstacle freshly created
+    */
+  /* CompleteClass */
+  override def addCylinderObstacle(position: typings.babylonjs.BABYLON.Vector3, radius: Double, height: Double): IObstacle = js.native
   
   /**
     * build the navmesh from a previously saved state using getNavmeshData
     * @param data the Uint8Array returned by getNavmeshData
     */
   /* CompleteClass */
-  override def buildFromNavmeshData(data: Uint8Array): Unit = js.native
+  override def buildFromNavmeshData(data: js.typedarray.Uint8Array): Unit = js.native
   
   /**
     * Compute a navigation path from start to end. Returns an empty array if no path can be computed
@@ -54,7 +78,7 @@ class RecastJSPlugin ()
   
   /**
     * Creates a navigation mesh
-    * @param meshes array of all the geometry used to compute the navigatio mesh
+    * @param meshes array of all the geometry used to compute the navigation mesh
     * @param parameters bunch of parameters used to filter geometry
     */
   /* CompleteClass */
@@ -108,7 +132,7 @@ class RecastJSPlugin ()
     * @returns data the Uint8Array that can be saved and reused
     */
   /* CompleteClass */
-  override def getNavmeshData(): Uint8Array = js.native
+  override def getNavmeshData(): js.typedarray.Uint8Array = js.native
   
   /**
     * Get a navigation mesh constrained position, within a particular radius
@@ -173,6 +197,13 @@ class RecastJSPlugin ()
     */
   /* CompleteClass */
   var name: String = js.native
+  
+  /**
+    * Removes an obstacle created by addCylinderObstacle or addBoxObstacle
+    * @param obstacle obstacle to remove from the navigation
+    */
+  /* CompleteClass */
+  override def removeObstacle(obstacle: IObstacle): Unit = js.native
   
   /**
     * Set the Bounding box extent for doing spatial queries (getClosestPoint, getRandomPointAround, ...)

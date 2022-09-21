@@ -10,15 +10,12 @@ Resilient Postgres listen client
 | ------------------ | :-------------: |
 | Full name          | pg-ears |
 | Keywords           | pg, postgres, listen, subscribe, notify |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 798 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75.33333333333333 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/doesdev/pg-ears#readme)
-- [Bugs](https://github.com/doesdev/pg-ears/issues)
-- [Repository](https://github.com/doesdev/pg-ears)
 - [Npm](https://www.npmjs.com/package/pg-ears)
     
 

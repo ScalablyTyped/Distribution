@@ -10,7 +10,7 @@ object parserInlineMod {
   
   @JSImport("markdown-it/lib/parser_inline", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ParserInline {
     
@@ -18,7 +18,7 @@ object parserInlineMod {
     var State: Instantiable4[
         /* src */ String, 
         /* md */ MarkdownIt, 
-        /* env */ js.Any, 
+        /* env */ Any, 
         /* outTokens */ js.Array[typings.markdownIt.tokenMod.^], 
         typings.markdownIt.stateInlineMod.^
       ] = js.native
@@ -27,7 +27,7 @@ object parserInlineMod {
       * Process input string and push inline tokens into `outTokens`
       */
     /* CompleteClass */
-    override def parse(str: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit = js.native
+    override def parse(str: String, md: MarkdownIt, env: Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit = js.native
     
     /**
       * [[Ruler]] instance. Keep configuration of inline rules.
@@ -61,7 +61,7 @@ object parserInlineMod {
     var State: Instantiable4[
         /* src */ String, 
         /* md */ MarkdownIt, 
-        /* env */ js.Any, 
+        /* env */ Any, 
         /* outTokens */ js.Array[typings.markdownIt.tokenMod.^], 
         typings.markdownIt.stateInlineMod.^
       ]
@@ -69,7 +69,7 @@ object parserInlineMod {
     /**
       * Process input string and push inline tokens into `outTokens`
       */
-    def parse(str: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit
+    def parse(str: String, md: MarkdownIt, env: Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit
     
     /**
       * [[Ruler]] instance. Keep configuration of inline rules.
@@ -99,11 +99,11 @@ object parserInlineMod {
       State: Instantiable4[
           /* src */ String, 
           /* md */ MarkdownIt, 
-          /* env */ js.Any, 
+          /* env */ Any, 
           /* outTokens */ js.Array[typings.markdownIt.tokenMod.^], 
           typings.markdownIt.stateInlineMod.^
         ],
-      parse: (String, MarkdownIt, js.Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit,
+      parse: (String, MarkdownIt, Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit,
       ruler: typings.markdownIt.rulerMod.^[RuleInline],
       ruler2: typings.markdownIt.rulerMod.^[RuleInline2],
       skipToken: typings.markdownIt.stateInlineMod.^ => Unit,
@@ -115,7 +115,7 @@ object parserInlineMod {
     
     extension [Self <: ParserInline](x: Self) {
       
-      inline def setParse(value: (String, MarkdownIt, js.Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
+      inline def setParse(value: (String, MarkdownIt, Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
       
       inline def setRuler(value: typings.markdownIt.rulerMod.^[RuleInline]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
       
@@ -127,7 +127,7 @@ object parserInlineMod {
         value: Instantiable4[
               /* src */ String, 
               /* md */ MarkdownIt, 
-              /* env */ js.Any, 
+              /* env */ Any, 
               /* outTokens */ js.Array[typings.markdownIt.tokenMod.^], 
               typings.markdownIt.stateInlineMod.^
             ]

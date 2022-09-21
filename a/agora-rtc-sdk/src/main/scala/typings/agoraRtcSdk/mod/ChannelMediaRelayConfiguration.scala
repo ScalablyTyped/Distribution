@@ -44,10 +44,10 @@ trait ChannelMediaRelayConfiguration extends StObject {
     *  channelName: "destChannel",
     *  uid: 123,
     *  token: "yourDestToken",
-    * })
+    * });
     * ```
     */
-  def setDestChannelInfo(channelName: String, destInfo: js.Any): Unit
+  def setDestChannelInfo(channelName: String, destInfo: Any): Unit
   
   /**
     * Sets the information of the source channel.
@@ -65,17 +65,17 @@ trait ChannelMediaRelayConfiguration extends StObject {
     *  channelName: "srcChannel",
     *  uid: 123,
     *  token: "yourSrcToken",
-    * })
+    * });
     * ```
     */
-  def setSrcChannelInfo(srcInfo: js.Any): Unit
+  def setSrcChannelInfo(srcInfo: Any): Unit
 }
 object ChannelMediaRelayConfiguration {
   
   inline def apply(
     removeDestChannelInfo: String => Unit,
-    setDestChannelInfo: (String, js.Any) => Unit,
-    setSrcChannelInfo: js.Any => Unit
+    setDestChannelInfo: (String, Any) => Unit,
+    setSrcChannelInfo: Any => Unit
   ): ChannelMediaRelayConfiguration = {
     val __obj = js.Dynamic.literal(removeDestChannelInfo = js.Any.fromFunction1(removeDestChannelInfo), setDestChannelInfo = js.Any.fromFunction2(setDestChannelInfo), setSrcChannelInfo = js.Any.fromFunction1(setSrcChannelInfo))
     __obj.asInstanceOf[ChannelMediaRelayConfiguration]
@@ -85,8 +85,8 @@ object ChannelMediaRelayConfiguration {
     
     inline def setRemoveDestChannelInfo(value: String => Unit): Self = StObject.set(x, "removeDestChannelInfo", js.Any.fromFunction1(value))
     
-    inline def setSetDestChannelInfo(value: (String, js.Any) => Unit): Self = StObject.set(x, "setDestChannelInfo", js.Any.fromFunction2(value))
+    inline def setSetDestChannelInfo(value: (String, Any) => Unit): Self = StObject.set(x, "setDestChannelInfo", js.Any.fromFunction2(value))
     
-    inline def setSetSrcChannelInfo(value: js.Any => Unit): Self = StObject.set(x, "setSrcChannelInfo", js.Any.fromFunction1(value))
+    inline def setSetSrcChannelInfo(value: Any => Unit): Self = StObject.set(x, "setSrcChannelInfo", js.Any.fromFunction1(value))
   }
 }

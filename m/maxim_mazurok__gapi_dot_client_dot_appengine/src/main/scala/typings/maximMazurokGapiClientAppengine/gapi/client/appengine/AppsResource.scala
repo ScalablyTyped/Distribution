@@ -40,7 +40,7 @@ trait AppsResource extends StObject {
   
   /**
     * Updates the specified Application resource. You can update the following fields: auth_domain - Google authentication domain for controlling user access to the application.
-    * default_cookie_expiration - Cookie expiration policy for the application.
+    * default_cookie_expiration - Cookie expiration policy for the application. iap - Identity-Aware Proxy properties for the application.
     */
   def patch(request: OauthtokenPrettyPrint): Request[Operation] = js.native
   def patch(request: PrettyPrintQuotaUser, body: Application): Request[Operation] = js.native

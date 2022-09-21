@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-dependency-injection", "FactoryInvoker")
 @js.native
-class FactoryInvoker[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ()
+open class FactoryInvoker[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ()
   extends StObject
      with Invoker_[TBase, TImpl, TArgs] {
   
@@ -34,6 +34,6 @@ object FactoryInvoker {
   
   @JSImport("aurelia-dependency-injection", "FactoryInvoker.instance")
   @js.native
-  def instance: FactoryInvoker[js.Any, Impl[js.Any], Args[js.Any]] = js.native
-  inline def instance_=(x: FactoryInvoker[js.Any, Impl[js.Any], Args[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+  def instance: FactoryInvoker[Any, Impl[Any], Args[Any]] = js.native
+  inline def instance_=(x: FactoryInvoker[Any, Impl[Any], Args[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
 }

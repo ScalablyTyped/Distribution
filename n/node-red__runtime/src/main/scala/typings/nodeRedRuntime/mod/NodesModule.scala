@@ -1,6 +1,6 @@
 package typings.nodeRedRuntime.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeRedRuntime.anon.EnabledId
 import typings.nodeRedRuntime.anon.EnabledModule
 import typings.nodeRedRuntime.anon.IconModule

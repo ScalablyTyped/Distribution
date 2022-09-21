@@ -21,11 +21,11 @@ object mod extends Shortcut {
       
       var log: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
       
-      var modifyFixtureDataFn: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+      var modifyFixtureDataFn: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
       
       var transaction: js.UndefOr[Transaction] = js.undefined
       
-      var transformFixtureDataFn: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+      var transformFixtureDataFn: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
     }
     object Options {
       
@@ -44,7 +44,7 @@ object mod extends Shortcut {
         
         inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
         
-        inline def setModifyFixtureDataFn(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "modifyFixtureDataFn", js.Any.fromFunction1(value))
+        inline def setModifyFixtureDataFn(value: /* data */ Any => Any): Self = StObject.set(x, "modifyFixtureDataFn", js.Any.fromFunction1(value))
         
         inline def setModifyFixtureDataFnUndefined: Self = StObject.set(x, "modifyFixtureDataFn", js.undefined)
         
@@ -52,7 +52,7 @@ object mod extends Shortcut {
         
         inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
         
-        inline def setTransformFixtureDataFn(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "transformFixtureDataFn", js.Any.fromFunction1(value))
+        inline def setTransformFixtureDataFn(value: /* data */ Any => Any): Self = StObject.set(x, "transformFixtureDataFn", js.Any.fromFunction1(value))
         
         inline def setTransformFixtureDataFnUndefined: Self = StObject.set(x, "transformFixtureDataFn", js.undefined)
       }
@@ -61,17 +61,17 @@ object mod extends Shortcut {
     @js.native
     trait SequelizeFixturesStatic extends StObject {
       
-      def loadFile(file: String, models: js.Any): js.Promise[js.Any] = js.native
-      def loadFile(file: String, models: js.Any, options: Options): js.Promise[js.Any] = js.native
+      def loadFile(file: String, models: Any): js.Promise[Any] = js.native
+      def loadFile(file: String, models: Any, options: Options): js.Promise[Any] = js.native
       
-      def loadFiles(files: js.Array[String], models: js.Any): js.Promise[js.Any] = js.native
-      def loadFiles(files: js.Array[String], models: js.Any, options: Options): js.Promise[js.Any] = js.native
+      def loadFiles(files: js.Array[String], models: Any): js.Promise[Any] = js.native
+      def loadFiles(files: js.Array[String], models: Any, options: Options): js.Promise[Any] = js.native
       
-      def loadFixture(fixture: js.Any, models: js.Any): js.Promise[js.Any] = js.native
-      def loadFixture(fixture: js.Any, models: js.Any, options: Options): js.Promise[js.Any] = js.native
+      def loadFixture(fixture: Any, models: Any): js.Promise[Any] = js.native
+      def loadFixture(fixture: Any, models: Any, options: Options): js.Promise[Any] = js.native
       
-      def loadFixtures(fixtures: js.Array[js.Any], models: js.Any): js.Promise[js.Any] = js.native
-      def loadFixtures(fixtures: js.Array[js.Any], models: js.Any, options: Options): js.Promise[js.Any] = js.native
+      def loadFixtures(fixtures: js.Array[Any], models: Any): js.Promise[Any] = js.native
+      def loadFixtures(fixtures: js.Array[Any], models: Any, options: Options): js.Promise[Any] = js.native
     }
   }
   

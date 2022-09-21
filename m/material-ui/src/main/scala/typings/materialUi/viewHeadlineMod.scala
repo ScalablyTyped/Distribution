@@ -10,10 +10,10 @@ object viewHeadlineMod {
   
   @JSImport("material-ui/svg-icons/action/view-headline", JSImport.Default)
   @js.native
-  class default () extends ActionViewHeadline
+  open class default () extends ActionViewHeadline
   
   @JSImport("material-ui/svg-icons/action/view-headline", "ActionViewHeadline")
   @js.native
-  class ActionViewHeadline ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionViewHeadline ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

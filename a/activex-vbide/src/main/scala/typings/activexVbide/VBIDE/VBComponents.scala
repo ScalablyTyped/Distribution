@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VBComponents extends StObject {
   
-  def apply(index: js.Any): VBComponent = js.native
+  def apply(index: Any): VBComponent = js.native
   
   def Add(ComponentType: vbextComponentType): VBComponent = js.native
   
@@ -21,7 +21,7 @@ trait VBComponents extends StObject {
   
   def Import(FileName: String): VBComponent = js.native
   
-  def Item(index: js.Any): VBComponent = js.native
+  def Item(index: Any): VBComponent = js.native
   
   val Parent: VBProject = js.native
   

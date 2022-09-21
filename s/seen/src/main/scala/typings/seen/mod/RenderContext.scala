@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "RenderContext")
 @js.native
-class RenderContext () extends StObject {
+open class RenderContext () extends StObject {
   
   def animate(): RenderAnimator = js.native
   

@@ -14,7 +14,7 @@ trait Project extends StObject {
   /**
     * When the project was created.
     */
-  var created: js.UndefOr[DateTime] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The default number of minutes (at the project level) a test run executes before it times out. The default value is 150 minutes.
@@ -39,7 +39,7 @@ object Project {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     

@@ -34,7 +34,7 @@ trait Finding extends StObject {
   /**
     * The time when the finding was generated.
     */
-  var createdAt: Timestamp
+  var createdAt: js.Date
   
   /**
     * The description of the finding.
@@ -89,7 +89,7 @@ trait Finding extends StObject {
   /**
     * The time when AddAttributesToFindings is called.
     */
-  var updatedAt: Timestamp
+  var updatedAt: js.Date
   
   /**
     * The user-defined attributes that are assigned to the finding.
@@ -101,8 +101,8 @@ object Finding {
   inline def apply(
     arn: Arn,
     attributes: AttributeList,
-    createdAt: Timestamp,
-    updatedAt: Timestamp,
+    createdAt: js.Date,
+    updatedAt: js.Date,
     userAttributes: UserAttributeList
   ): Finding = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any], userAttributes = userAttributes.asInstanceOf[js.Any])
@@ -123,13 +123,13 @@ object Finding {
     
     inline def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setConfidence(value: IocConfidence): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: Text): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -171,10 +171,10 @@ object Finding {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     inline def setUserAttributes(value: UserAttributeList): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
-    inline def setUserAttributesVarargs(value: Attribute*): Self = StObject.set(x, "userAttributes", js.Array(value :_*))
+    inline def setUserAttributesVarargs(value: Attribute*): Self = StObject.set(x, "userAttributes", js.Array(value*))
   }
 }

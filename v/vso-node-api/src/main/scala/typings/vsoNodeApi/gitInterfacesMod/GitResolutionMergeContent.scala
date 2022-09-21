@@ -29,6 +29,6 @@ object GitResolutionMergeContent {
     
     inline def setUserMergedContent(value: js.Array[Double]): Self = StObject.set(x, "userMergedContent", value.asInstanceOf[js.Any])
     
-    inline def setUserMergedContentVarargs(value: Double*): Self = StObject.set(x, "userMergedContent", js.Array(value :_*))
+    inline def setUserMergedContentVarargs(value: Double*): Self = StObject.set(x, "userMergedContent", js.Array(value*))
   }
 }

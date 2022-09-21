@@ -17,7 +17,7 @@ trait GetTagsRequest extends StObject {
   var position: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The ARN of a resource that can be tagged.
+    * The ARN of a resource that can be tagged.
     */
   var resourceArn: String
 }

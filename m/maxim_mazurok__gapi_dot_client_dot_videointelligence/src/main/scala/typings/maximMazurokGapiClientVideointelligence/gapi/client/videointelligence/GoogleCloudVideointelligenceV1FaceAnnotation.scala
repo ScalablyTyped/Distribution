@@ -28,13 +28,13 @@ object GoogleCloudVideointelligenceV1FaceAnnotation {
     
     inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1FaceFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1FaceFrame*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setSegments(value: js.Array[GoogleCloudVideointelligenceV1FaceSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1FaceSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1FaceSegment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     

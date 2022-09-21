@@ -29,7 +29,7 @@ object EnvironmentDescriptionsMessage {
     
     inline def setEnvironmentsUndefined: Self = StObject.set(x, "Environments", js.undefined)
     
-    inline def setEnvironmentsVarargs(value: EnvironmentDescription*): Self = StObject.set(x, "Environments", js.Array(value :_*))
+    inline def setEnvironmentsVarargs(value: EnvironmentDescription*): Self = StObject.set(x, "Environments", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

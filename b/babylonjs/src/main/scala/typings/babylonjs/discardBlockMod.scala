@@ -10,7 +10,7 @@ object discardBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/discardBlock", "DiscardBlock")
   @js.native
-  class DiscardBlock protected () extends NodeMaterialBlock {
+  open class DiscardBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new DiscardBlock
       * @param name defines the block name

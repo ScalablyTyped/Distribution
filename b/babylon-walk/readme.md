@@ -11,9 +11,9 @@ Lightweight Babylon AST traversal
 | Full name          | babylon-walk |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 67 |
-| # downloads        | 9144706 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 487512.3333333333 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/pugjs/babylon-walk#readme)

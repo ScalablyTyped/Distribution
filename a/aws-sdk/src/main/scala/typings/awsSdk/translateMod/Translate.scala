@@ -15,6 +15,34 @@ trait Translate extends Service {
   var config_Translate: ConfigBase & ClientConfiguration = js.native
   
   /**
+    * Creates a parallel data resource in Amazon Translate by importing an input file from Amazon S3. Parallel data files contain examples that show how you want segments of text to be translated. By adding parallel data, you can influence the style, tone, and word choice in your translation output.
+    */
+  def createParallelData(): Request[CreateParallelDataResponse, AWSError] = js.native
+  def createParallelData(callback: js.Function2[/* err */ AWSError, /* data */ CreateParallelDataResponse, Unit]): Request[CreateParallelDataResponse, AWSError] = js.native
+  /**
+    * Creates a parallel data resource in Amazon Translate by importing an input file from Amazon S3. Parallel data files contain examples that show how you want segments of text to be translated. By adding parallel data, you can influence the style, tone, and word choice in your translation output.
+    */
+  def createParallelData(params: CreateParallelDataRequest): Request[CreateParallelDataResponse, AWSError] = js.native
+  def createParallelData(
+    params: CreateParallelDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateParallelDataResponse, Unit]
+  ): Request[CreateParallelDataResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a parallel data resource in Amazon Translate.
+    */
+  def deleteParallelData(): Request[DeleteParallelDataResponse, AWSError] = js.native
+  def deleteParallelData(callback: js.Function2[/* err */ AWSError, /* data */ DeleteParallelDataResponse, Unit]): Request[DeleteParallelDataResponse, AWSError] = js.native
+  /**
+    * Deletes a parallel data resource in Amazon Translate.
+    */
+  def deleteParallelData(params: DeleteParallelDataRequest): Request[DeleteParallelDataResponse, AWSError] = js.native
+  def deleteParallelData(
+    params: DeleteParallelDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteParallelDataResponse, Unit]
+  ): Request[DeleteParallelDataResponse, AWSError] = js.native
+  
+  /**
     * A synchronous action that deletes a custom terminology.
     */
   def deleteTerminology(): Request[js.Object, AWSError] = js.native
@@ -29,18 +57,32 @@ trait Translate extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Gets the properties associated with an asycnhronous batch translation job including name, ID, status, source and target languages, input/output S3 buckets, and so on.
+    * Gets the properties associated with an asynchronous batch translation job including name, ID, status, source and target languages, input/output S3 buckets, and so on.
     */
   def describeTextTranslationJob(): Request[DescribeTextTranslationJobResponse, AWSError] = js.native
   def describeTextTranslationJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTextTranslationJobResponse, Unit]): Request[DescribeTextTranslationJobResponse, AWSError] = js.native
   /**
-    * Gets the properties associated with an asycnhronous batch translation job including name, ID, status, source and target languages, input/output S3 buckets, and so on.
+    * Gets the properties associated with an asynchronous batch translation job including name, ID, status, source and target languages, input/output S3 buckets, and so on.
     */
   def describeTextTranslationJob(params: DescribeTextTranslationJobRequest): Request[DescribeTextTranslationJobResponse, AWSError] = js.native
   def describeTextTranslationJob(
     params: DescribeTextTranslationJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTextTranslationJobResponse, Unit]
   ): Request[DescribeTextTranslationJobResponse, AWSError] = js.native
+  
+  /**
+    * Provides information about a parallel data resource.
+    */
+  def getParallelData(): Request[GetParallelDataResponse, AWSError] = js.native
+  def getParallelData(callback: js.Function2[/* err */ AWSError, /* data */ GetParallelDataResponse, Unit]): Request[GetParallelDataResponse, AWSError] = js.native
+  /**
+    * Provides information about a parallel data resource.
+    */
+  def getParallelData(params: GetParallelDataRequest): Request[GetParallelDataResponse, AWSError] = js.native
+  def getParallelData(
+    params: GetParallelDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetParallelDataResponse, Unit]
+  ): Request[GetParallelDataResponse, AWSError] = js.native
   
   /**
     * Retrieves a custom terminology.
@@ -57,18 +99,46 @@ trait Translate extends Service {
   ): Request[GetTerminologyResponse, AWSError] = js.native
   
   /**
-    * Creates or updates a custom terminology, depending on whether or not one already exists for the given terminology name. Importing a terminology with the same name as an existing one will merge the terminologies based on the chosen merge strategy. Currently, the only supported merge strategy is OVERWRITE, and so the imported terminology will overwrite an existing terminology of the same name. If you import a terminology that overwrites an existing one, the new terminology take up to 10 minutes to fully propagate and be available for use in a translation due to cache policies with the DataPlane service that performs the translations.
+    * Creates or updates a custom terminology, depending on whether one already exists for the given terminology name. Importing a terminology with the same name as an existing one will merge the terminologies based on the chosen merge strategy. The only supported merge strategy is OVERWRITE, where the imported terminology overwrites the existing terminology of the same name. If you import a terminology that overwrites an existing one, the new terminology takes up to 10 minutes to fully propagate. After that, translations have access to the new terminology.
     */
   def importTerminology(): Request[ImportTerminologyResponse, AWSError] = js.native
   def importTerminology(callback: js.Function2[/* err */ AWSError, /* data */ ImportTerminologyResponse, Unit]): Request[ImportTerminologyResponse, AWSError] = js.native
   /**
-    * Creates or updates a custom terminology, depending on whether or not one already exists for the given terminology name. Importing a terminology with the same name as an existing one will merge the terminologies based on the chosen merge strategy. Currently, the only supported merge strategy is OVERWRITE, and so the imported terminology will overwrite an existing terminology of the same name. If you import a terminology that overwrites an existing one, the new terminology take up to 10 minutes to fully propagate and be available for use in a translation due to cache policies with the DataPlane service that performs the translations.
+    * Creates or updates a custom terminology, depending on whether one already exists for the given terminology name. Importing a terminology with the same name as an existing one will merge the terminologies based on the chosen merge strategy. The only supported merge strategy is OVERWRITE, where the imported terminology overwrites the existing terminology of the same name. If you import a terminology that overwrites an existing one, the new terminology takes up to 10 minutes to fully propagate. After that, translations have access to the new terminology.
     */
   def importTerminology(params: ImportTerminologyRequest): Request[ImportTerminologyResponse, AWSError] = js.native
   def importTerminology(
     params: ImportTerminologyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ImportTerminologyResponse, Unit]
   ): Request[ImportTerminologyResponse, AWSError] = js.native
+  
+  /**
+    * Provides a list of languages (RFC-5646 codes and names) that Amazon Translate supports.
+    */
+  def listLanguages(): Request[ListLanguagesResponse, AWSError] = js.native
+  def listLanguages(callback: js.Function2[/* err */ AWSError, /* data */ ListLanguagesResponse, Unit]): Request[ListLanguagesResponse, AWSError] = js.native
+  /**
+    * Provides a list of languages (RFC-5646 codes and names) that Amazon Translate supports.
+    */
+  def listLanguages(params: ListLanguagesRequest): Request[ListLanguagesResponse, AWSError] = js.native
+  def listLanguages(
+    params: ListLanguagesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListLanguagesResponse, Unit]
+  ): Request[ListLanguagesResponse, AWSError] = js.native
+  
+  /**
+    * Provides a list of your parallel data resources in Amazon Translate.
+    */
+  def listParallelData(): Request[ListParallelDataResponse, AWSError] = js.native
+  def listParallelData(callback: js.Function2[/* err */ AWSError, /* data */ ListParallelDataResponse, Unit]): Request[ListParallelDataResponse, AWSError] = js.native
+  /**
+    * Provides a list of your parallel data resources in Amazon Translate.
+    */
+  def listParallelData(params: ListParallelDataRequest): Request[ListParallelDataResponse, AWSError] = js.native
+  def listParallelData(
+    params: ListParallelDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListParallelDataResponse, Unit]
+  ): Request[ListParallelDataResponse, AWSError] = js.native
   
   /**
     * Provides a list of custom terminologies associated with your account.
@@ -139,4 +209,18 @@ trait Translate extends Service {
     params: TranslateTextRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TranslateTextResponse, Unit]
   ): Request[TranslateTextResponse, AWSError] = js.native
+  
+  /**
+    * Updates a previously created parallel data resource by importing a new input file from Amazon S3.
+    */
+  def updateParallelData(): Request[UpdateParallelDataResponse, AWSError] = js.native
+  def updateParallelData(callback: js.Function2[/* err */ AWSError, /* data */ UpdateParallelDataResponse, Unit]): Request[UpdateParallelDataResponse, AWSError] = js.native
+  /**
+    * Updates a previously created parallel data resource by importing a new input file from Amazon S3.
+    */
+  def updateParallelData(params: UpdateParallelDataRequest): Request[UpdateParallelDataResponse, AWSError] = js.native
+  def updateParallelData(
+    params: UpdateParallelDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateParallelDataResponse, Unit]
+  ): Request[UpdateParallelDataResponse, AWSError] = js.native
 }

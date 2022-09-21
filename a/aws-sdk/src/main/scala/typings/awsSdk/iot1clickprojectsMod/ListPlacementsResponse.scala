@@ -31,6 +31,6 @@ object ListPlacementsResponse {
     
     inline def setPlacements(value: PlacementSummaryList): Self = StObject.set(x, "placements", value.asInstanceOf[js.Any])
     
-    inline def setPlacementsVarargs(value: PlacementSummary*): Self = StObject.set(x, "placements", js.Array(value :_*))
+    inline def setPlacementsVarargs(value: PlacementSummary*): Self = StObject.set(x, "placements", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.ProgressEvent")
 @js.native
-class ProgressEvent protected ()
+open class ProgressEvent protected ()
   extends StObject
      with typings.preloadjs.createjs.ProgressEvent {
   def this(loaded: Double) = this()

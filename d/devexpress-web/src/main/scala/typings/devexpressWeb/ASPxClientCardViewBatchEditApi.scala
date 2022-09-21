@@ -25,7 +25,7 @@ trait ASPxClientCardViewBatchEditApi extends StObject {
     * Deletes a card with a specified key value when ASPxCardView is in Batch Edit mode.
     * @param key An object that uniquely identifies the card.
     */
-  def DeleteCardByKey(key: js.Any): Unit = js.native
+  def DeleteCardByKey(key: Any): Unit = js.native
   
   /**
     * Ends cell or card editing.
@@ -43,7 +43,7 @@ trait ASPxClientCardViewBatchEditApi extends StObject {
     * @param visibleIndex An integer value that is the visible index.
     * @param columnFieldNameOrId A string value that is the column's Field Name or ID.
     */
-  def GetCellTextContainer(visibleIndex: Double, columnFieldNameOrId: String): js.Any = js.native
+  def GetCellTextContainer(visibleIndex: Double, columnFieldNameOrId: String): Any = js.native
   
   /**
     * Gets the value of the specified cell. An object containing the specified cell's value.
@@ -51,15 +51,15 @@ trait ASPxClientCardViewBatchEditApi extends StObject {
     * @param columnFieldNameOrId A string value that specifies the field name or unique identifier (the column's WebColumnBase.Name property value) of a column containing the processed cell.
     * @param initial true, to return the initial (server) value; false, to return a value currently contained on the client side (modified value).
     */
-  def GetCellValue(visibleIndex: Double, columnFieldNameOrId: String): js.Any = js.native
-  def GetCellValue(visibleIndex: Double, columnFieldNameOrId: String, initial: Boolean): js.Any = js.native
+  def GetCellValue(visibleIndex: Double, columnFieldNameOrId: String): Any = js.native
+  def GetCellValue(visibleIndex: Double, columnFieldNameOrId: String, initial: Boolean): Any = js.native
   
   /**
     * Provides the text displayed within the cell according to the specified display format rule. A string value representing the cell's displayed text.
     * @param columnFieldNameOrId A string value representing the column's unique identifier or field name.
     * @param value An object representing a value.
     */
-  def GetColumnDisplayText(columnFieldNameOrId: String, value: js.Any): String = js.native
+  def GetColumnDisplayText(columnFieldNameOrId: String, value: Any): String = js.native
   
   /**
     * Returns an array of the deleted card visible indices.
@@ -94,7 +94,7 @@ trait ASPxClientCardViewBatchEditApi extends StObject {
   /**
     * Returns an object that stores unsaved changes.
     */
-  def GetUnsavedChanges(): js.Any = js.native
+  def GetUnsavedChanges(): Any = js.native
   
   /**
     * Returns an array of the updated cards' visible indices.
@@ -143,7 +143,7 @@ trait ASPxClientCardViewBatchEditApi extends StObject {
     * Recovers a card with a specified key value when ASPxCardView is in Batch Edit mode.
     * @param key An object that uniquely identifies the card.
     */
-  def RecoverCardByKey(key: js.Any): Unit = js.native
+  def RecoverCardByKey(key: Any): Unit = js.native
   
   /**
     * Resets changes in the specified cell.
@@ -161,19 +161,19 @@ trait ASPxClientCardViewBatchEditApi extends StObject {
     * @param displayText A string value that specifies the cell display text.
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
-  def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any): Unit = js.native
-  def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
+  def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: Any): Unit = js.native
+  def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: Any, displayText: String): Unit = js.native
   def SetCellValue(
     visibleIndex: Double,
     columnFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: String,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
   def SetCellValue(
     visibleIndex: Double,
     columnFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: Unit,
     cancelCellHighlighting: Boolean
   ): Unit = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  /* Inlined std.Partial<uuid-apikey.uuid-apikey.UUIDOptions> */
+  /* Inlined std.Partial<uuid-apikey.UUIDOptions> */
   trait PartialUUIDOptions extends StObject {
     
     var noDashes: js.UndefOr[Boolean] = js.undefined

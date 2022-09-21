@@ -32,6 +32,6 @@ object ListUsableSubnetworksResponse {
     
     inline def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
-    inline def setSubnetworksVarargs(value: UsableSubnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
+    inline def setSubnetworksVarargs(value: UsableSubnetwork*): Self = StObject.set(x, "subnetworks", js.Array(value*))
   }
 }

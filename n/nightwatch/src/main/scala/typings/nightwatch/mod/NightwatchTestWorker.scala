@@ -10,11 +10,11 @@ trait NightwatchTestWorker extends StObject {
   
   var node_options: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var workers: String
+  var workers: String | Double
 }
 object NightwatchTestWorker {
   
-  inline def apply(enabled: Boolean, workers: String): NightwatchTestWorker = {
+  inline def apply(enabled: Boolean, workers: String | Double): NightwatchTestWorker = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchTestWorker]
   }
@@ -27,8 +27,8 @@ object NightwatchTestWorker {
     
     inline def setNode_optionsUndefined: Self = StObject.set(x, "node_options", js.undefined)
     
-    inline def setNode_optionsVarargs(value: String*): Self = StObject.set(x, "node_options", js.Array(value :_*))
+    inline def setNode_optionsVarargs(value: String*): Self = StObject.set(x, "node_options", js.Array(value*))
     
-    inline def setWorkers(value: String): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+    inline def setWorkers(value: String | Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
   }
 }

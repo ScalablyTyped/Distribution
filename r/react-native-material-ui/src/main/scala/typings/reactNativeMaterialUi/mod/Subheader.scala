@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "Subheader")
 @js.native
-class Subheader protected ()
-  extends Component[SubheaderProps, js.Any, js.Any] {
+open class Subheader protected () extends Component[SubheaderProps, Any, Any] {
   def this(props: SubheaderProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SubheaderProps, context: js.Any) = this()
+  def this(props: SubheaderProps, context: Any) = this()
 }

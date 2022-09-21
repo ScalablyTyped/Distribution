@@ -38,7 +38,7 @@ object OperationDefinition {
     
     inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    inline def setDirectivesVarargs(value: Directive*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: Directive*): Self = StObject.set(x, "directives", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -58,6 +58,6 @@ object OperationDefinition {
     
     inline def setVariableDefinitionsUndefined: Self = StObject.set(x, "variableDefinitions", js.undefined)
     
-    inline def setVariableDefinitionsVarargs(value: VariableDefinition*): Self = StObject.set(x, "variableDefinitions", js.Array(value :_*))
+    inline def setVariableDefinitionsVarargs(value: VariableDefinition*): Self = StObject.set(x, "variableDefinitions", js.Array(value*))
   }
 }

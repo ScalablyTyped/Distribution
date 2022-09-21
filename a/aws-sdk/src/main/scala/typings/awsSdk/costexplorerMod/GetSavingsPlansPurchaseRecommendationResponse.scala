@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetSavingsPlansPurchaseRecommendationResponse extends StObject {
   
   /**
-    * Information regarding this specific recommendation set.
+    * Information that regards this specific recommendation set.
     */
   var Metadata: js.UndefOr[SavingsPlansPurchaseRecommendationMetadata] = js.undefined
   
   /**
-    * The token for the next set of retrievable results. AWS provides the token when the response from a previous call has more results than the maximum page size.
+    * The token for the next set of retrievable results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size.
     */
   var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   

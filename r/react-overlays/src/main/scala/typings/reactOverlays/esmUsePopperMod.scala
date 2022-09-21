@@ -1,9 +1,11 @@
 package typings.reactOverlays
 
+import typings.popperjsCore.anon.PartialModifieranyany
 import typings.popperjsCore.anon.PartialState
+import typings.popperjsCore.typesMod.Obj
 import typings.popperjsCore.typesMod.PositioningStrategy
 import typings.reactOverlays.anon.PartialCSSStyleDeclaratio
-import typings.reactOverlays.anon.PartialModifieranyany
+import typings.reactOverlays.anon.PartialModifieranyanyEffect
 import typings.reactOverlays.anon.Popper
 import typings.std.HTMLElement
 import typings.std.Record
@@ -86,9 +88,9 @@ object esmUsePopperMod {
   
   type Instance = typings.popperjsCore.typesMod.Instance
   
-  type Modifier[Name, Options] = typings.popperjsCore.typesMod.Modifier[Name, Options]
+  type Modifier[Name, Options /* <: js.UndefOr[Obj] */] = typings.popperjsCore.typesMod.Modifier[Name, OptionsWithUndefined[Options]]
   
-  type ModifierMap = Record[String, PartialModifieranyany]
+  type ModifierMap = Record[String, PartialModifieranyanyEffect]
   
   /* Inlined @popperjs/core.@popperjs/core.Options['modifiers'] | std.Record<string, std.Partial<react-overlays.react-overlays/esm/usePopper.Modifier<any, any>>> */
   /* Rewritten from type alias, can be one of: 
@@ -111,6 +113,7 @@ object esmUsePopperMod {
     - typings.reactOverlays.reactOverlaysStrings.flat
     - typings.reactOverlays.reactOverlaysStrings.splice
     - typings.reactOverlays.reactOverlaysStrings.some
+    - typings.reactOverlays.reactOverlaysStrings.at
     - typings.reactOverlays.reactOverlaysStrings.unshift
     - typings.reactOverlays.reactOverlaysStrings.filter
     - typings.reactOverlays.reactOverlaysStrings.toString
@@ -127,6 +130,8 @@ object esmUsePopperMod {
   */
   trait Modifiers extends StObject
   object Modifiers {
+    
+    inline def at: typings.reactOverlays.reactOverlaysStrings.at = "at".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.at]
     
     inline def concat: typings.reactOverlays.reactOverlaysStrings.concat = "concat".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.concat]
     
@@ -197,6 +202,8 @@ object esmUsePopperMod {
   
   type Options = typings.popperjsCore.typesMod.Options
   
+  type OptionsWithUndefined[T /* <: js.UndefOr[Obj] */] = Obj | T
+  
   type Placement = typings.popperjsCore.enumsMod.Placement
   
   type State = typings.popperjsCore.typesMod.State
@@ -206,7 +213,7 @@ object esmUsePopperMod {
     
     var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var modifiers: js.UndefOr[js.Array[typings.popperjsCore.anon.PartialModifieranyany]] = js.undefined
+    var modifiers: js.UndefOr[js.Array[PartialModifieranyany]] = js.undefined
     
     var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.undefined
     
@@ -227,11 +234,11 @@ object esmUsePopperMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setModifiers(value: js.Array[typings.popperjsCore.anon.PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: js.Array[PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
       inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
-      inline def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersVarargs(value: PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value*))
       
       inline def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
       
@@ -249,7 +256,7 @@ object esmUsePopperMod {
   
   trait UsePopperState extends StObject {
     
-    var attributes: Record[String, Record[String, js.Any]]
+    var attributes: Record[String, Record[String, Any]]
     
     def forceUpdate(): Unit
     
@@ -264,7 +271,7 @@ object esmUsePopperMod {
   object UsePopperState {
     
     inline def apply(
-      attributes: Record[String, Record[String, js.Any]],
+      attributes: Record[String, Record[String, Any]],
       forceUpdate: () => Unit,
       placement: Placement,
       styles: Record[String, PartialCSSStyleDeclaratio],
@@ -276,7 +283,7 @@ object esmUsePopperMod {
     
     extension [Self <: UsePopperState](x: Self) {
       
-      inline def setAttributes(value: Record[String, Record[String, js.Any]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, Record[String, Any]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
       

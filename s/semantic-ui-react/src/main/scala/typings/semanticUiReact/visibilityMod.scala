@@ -14,10 +14,9 @@ object visibilityMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/behaviors/Visibility", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[VisibilityProps, ComponentState, js.Any] {
+  open class default protected () extends Component[VisibilityProps, ComponentState, Any] {
     def this(props: VisibilityProps) = this()
-    def this(props: VisibilityProps, context: js.Any) = this()
+    def this(props: VisibilityProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/behaviors/Visibility", JSImport.Default)
   @js.native

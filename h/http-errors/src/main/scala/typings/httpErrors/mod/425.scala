@@ -7,23 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("http-errors", "425")
 @js.native
-class `425` ()
+open class `425` ()
   extends StObject
-     with HttpError {
+     with HttpError[typings.httpErrors.httpErrorsNumbers.`425`] {
   def this(msg: String) = this()
   
   /* CompleteClass */
   var expose: Boolean = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   
   /* CompleteClass */
-  var status: Double = js.native
+  var status: typings.httpErrors.httpErrorsNumbers.`425` = js.native
   
   /* CompleteClass */
-  var statusCode: Double = js.native
+  var statusCode: typings.httpErrors.httpErrorsNumbers.`425` = js.native
 }

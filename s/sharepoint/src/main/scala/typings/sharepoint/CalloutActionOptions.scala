@@ -21,7 +21,7 @@ trait CalloutActionOptions extends StObject {
   /** Callback that is executed when the action link is clicked.
     @param event Standard javascript event object
     @param action The action object */
-  def onClickCallback(event: Event, action: CalloutAction): js.Any
+  def onClickCallback(event: Event, action: CalloutAction): Any
   
   /** Text for the action link */
   var text: String
@@ -35,7 +35,7 @@ object CalloutActionOptions {
     isEnabledCallback: CalloutAction => Boolean,
     isVisibleCallback: CalloutAction => Boolean,
     menuEntries: js.Array[CalloutActionMenuEntry],
-    onClickCallback: (Event, CalloutAction) => js.Any,
+    onClickCallback: (Event, CalloutAction) => Any,
     text: String,
     tooltip: String
   ): CalloutActionOptions = {
@@ -53,9 +53,9 @@ object CalloutActionOptions {
     
     inline def setMenuEntries(value: js.Array[CalloutActionMenuEntry]): Self = StObject.set(x, "menuEntries", value.asInstanceOf[js.Any])
     
-    inline def setMenuEntriesVarargs(value: CalloutActionMenuEntry*): Self = StObject.set(x, "menuEntries", js.Array(value :_*))
+    inline def setMenuEntriesVarargs(value: CalloutActionMenuEntry*): Self = StObject.set(x, "menuEntries", js.Array(value*))
     
-    inline def setOnClickCallback(value: (Event, CalloutAction) => js.Any): Self = StObject.set(x, "onClickCallback", js.Any.fromFunction2(value))
+    inline def setOnClickCallback(value: (Event, CalloutAction) => Any): Self = StObject.set(x, "onClickCallback", js.Any.fromFunction2(value))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

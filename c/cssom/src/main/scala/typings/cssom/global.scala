@@ -14,37 +14,37 @@ object global {
     
     @JSGlobal("CSSOM.CSSDocumentRule")
     @js.native
-    class CSSDocumentRule ()
+    open class CSSDocumentRule ()
       extends typings.cssom.mod.CSSDocumentRule
     
     @JSGlobal("CSSOM.CSSFontFaceRule")
     @js.native
-    class CSSFontFaceRule ()
+    open class CSSFontFaceRule ()
       extends typings.cssom.mod.CSSFontFaceRule
     
     @JSGlobal("CSSOM.CSSHostRule")
     @js.native
-    class CSSHostRule ()
+    open class CSSHostRule ()
       extends typings.cssom.mod.CSSHostRule
     
     @JSGlobal("CSSOM.CSSImportRule")
     @js.native
-    class CSSImportRule ()
+    open class CSSImportRule ()
       extends typings.cssom.mod.CSSImportRule
     
     @JSGlobal("CSSOM.CSSKeyframeRule")
     @js.native
-    class CSSKeyframeRule ()
+    open class CSSKeyframeRule ()
       extends typings.cssom.mod.CSSKeyframeRule
     
     @JSGlobal("CSSOM.CSSKeyframesRule")
     @js.native
-    class CSSKeyframesRule ()
+    open class CSSKeyframesRule ()
       extends typings.cssom.mod.CSSKeyframesRule
     
     @JSGlobal("CSSOM.CSSMediaRule")
     @js.native
-    class CSSMediaRule ()
+    open class CSSMediaRule ()
       extends typings.cssom.mod.CSSMediaRule
     
     @JSGlobal("CSSOM.CSSRule")
@@ -126,12 +126,12 @@ object global {
     
     @JSGlobal("CSSOM.CSSStyleDeclaration")
     @js.native
-    class CSSStyleDeclaration ()
+    open class CSSStyleDeclaration ()
       extends typings.cssom.mod.CSSStyleDeclaration
     
     @JSGlobal("CSSOM.CSSStyleRule")
     @js.native
-    class CSSStyleRule ()
+    open class CSSStyleRule ()
       extends typings.cssom.mod.CSSStyleRule
     /* static members */
     object CSSStyleRule {
@@ -140,39 +140,39 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def parse(ruleText: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(ruleText.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def parse(ruleText: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(ruleText.asInstanceOf[js.Any]).asInstanceOf[Any]
     }
     
     @JSGlobal("CSSOM.CSSStyleSheet")
     @js.native
-    class CSSStyleSheet ()
+    open class CSSStyleSheet ()
       extends typings.cssom.mod.CSSStyleSheet
     
     @JSGlobal("CSSOM.CSSSupportsRule")
     @js.native
-    class CSSSupportsRule ()
+    open class CSSSupportsRule ()
       extends typings.cssom.mod.CSSSupportsRule
     
     @JSGlobal("CSSOM.CSSValue")
     @js.native
-    class CSSValue ()
+    open class CSSValue ()
       extends typings.cssom.mod.CSSValue
     
     @JSGlobal("CSSOM.CSSValueExpression")
     @js.native
-    class CSSValueExpression protected ()
+    open class CSSValueExpression protected ()
       extends typings.cssom.mod.CSSValueExpression {
       def this(token: String, idx: Double) = this()
     }
     
     @JSGlobal("CSSOM.MatcherList")
     @js.native
-    class MatcherList ()
+    open class MatcherList ()
       extends typings.cssom.mod.MatcherList
     
     @JSGlobal("CSSOM.MediaList")
     @js.native
-    class MediaList ()
+    open class MediaList ()
       extends typings.cssom.mod.MediaList
     
     @JSGlobal("CSSOM.StyleSheet")

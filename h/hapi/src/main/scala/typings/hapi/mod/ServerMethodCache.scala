@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ServerMethodCache
   extends StObject
-     with PolicyOptions[js.Any] {
+     with PolicyOptions[Any] {
   
   @JSName("generateTimeout")
   var generateTimeout_ServerMethodCache: Double | `false`

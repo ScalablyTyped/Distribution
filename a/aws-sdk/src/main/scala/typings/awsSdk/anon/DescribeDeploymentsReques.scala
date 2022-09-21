@@ -49,7 +49,7 @@ object DescribeDeploymentsReques {
     
     inline def setDeploymentIdsUndefined: Self = StObject.set(x, "DeploymentIds", js.undefined)
     
-    inline def setDeploymentIdsVarargs(value: String*): Self = StObject.set(x, "DeploymentIds", js.Array(value :_*))
+    inline def setDeploymentIdsVarargs(value: String*): Self = StObject.set(x, "DeploymentIds", js.Array(value*))
     
     inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     

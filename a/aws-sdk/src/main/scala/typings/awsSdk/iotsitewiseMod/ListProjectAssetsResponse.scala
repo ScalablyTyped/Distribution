@@ -27,7 +27,7 @@ object ListProjectAssetsResponse {
     
     inline def setAssetIds(value: AssetIDs): Self = StObject.set(x, "assetIds", value.asInstanceOf[js.Any])
     
-    inline def setAssetIdsVarargs(value: ID*): Self = StObject.set(x, "assetIds", js.Array(value :_*))
+    inline def setAssetIdsVarargs(value: ID*): Self = StObject.set(x, "assetIds", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

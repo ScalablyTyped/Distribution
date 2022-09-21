@@ -1,13 +1,12 @@
 package typings.rdfjsSerializerJsonldExt
 
 import typings.jsonld.jsonldSpecMod.Context
-import typings.jsonld.jsonldSpecMod.JsonLdObj
 import typings.node.eventsMod.EventEmitter
-import typings.rdfJs.mod.BaseQuad
-import typings.rdfJs.mod.Sink
-import typings.rdfJs.mod.Stream
 import typings.rdfjsSerializerJsonldExt.rdfjsSerializerJsonldExtStrings.`object`
 import typings.rdfjsSerializerJsonldExt.rdfjsSerializerJsonldExtStrings.string
+import typings.rdfjsTypes.dataModelMod.BaseQuad
+import typings.rdfjsTypes.streamMod.Sink
+import typings.rdfjsTypes.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("@rdfjs/serializer-jsonld-ext", JSImport.Namespace)
   @js.native
-  class ^[Q /* <: BaseQuad */] ()
+  open class ^[Q /* <: BaseQuad */] ()
     extends StObject
        with Serializer[Q] {
     def this(options: SerializerOptions) = this()
@@ -75,8 +74,6 @@ object mod {
       inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      inline def setContextVarargs(value: JsonLdObj*): Self = StObject.set(x, "context", js.Array(value :_*))
       
       inline def setEncoding(value: string | `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

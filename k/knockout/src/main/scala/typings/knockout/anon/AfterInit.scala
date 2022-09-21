@@ -13,7 +13,7 @@ trait AfterInit extends StObject {
   
   def init(
     element: HTMLElement,
-    valueAccessor: js.Function0[MaybeSubscribable[js.Any]],
+    valueAccessor: js.Function0[MaybeSubscribable[Any]],
     allBindings: AllBindings
   ): Unit
 }
@@ -21,7 +21,7 @@ object AfterInit {
   
   inline def apply(
     after: js.Array[String],
-    init: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit
+    init: (HTMLElement, js.Function0[MaybeSubscribable[Any]], AllBindings) => Unit
   ): AfterInit = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], init = js.Any.fromFunction3(init))
     __obj.asInstanceOf[AfterInit]
@@ -31,8 +31,8 @@ object AfterInit {
     
     inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value*))
     
-    inline def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[Any]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
   }
 }

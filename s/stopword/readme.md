@@ -1,19 +1,19 @@
 
 # Scala.js typings for stopword
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
-A module for node.js and the browser that takes in text and returns text that is stripped of stopwords. Has pre-defined stopword lists for 54 languages and also takes lists with custom stopwords as input.
+A module for node.js and the browser that takes in text and returns text that is stripped of stopwords. Has pre-defined stopword lists for 62 languages and also takes lists with custom stopwords as input.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | stopword |
-| Keywords           | stopword, stopwords, document, processing, search, norch, search-index, nlp |
-| # releases         | 24 |
-| # dependents       | 37 |
-| # downloads        | 395982 |
-| # stars            | 6 |
+| Keywords           | stopword, stopwords, document-processing, search, search-index, nlp |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 83311.66666666667 |
+| # stars            | 171.0 |
 
 ## Links
 - [Homepage](https://github.com/fergiemcdowall/stopword)

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.QATBuildContext")
 @js.native
-class QATBuildContext ()
+open class QATBuildContext ()
   extends StObject
      with typings.sharepoint.CUI.BuildContext

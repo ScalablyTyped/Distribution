@@ -9,18 +9,17 @@ object sliderDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/slider/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends BasicSliderExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends BasicSliderExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait BasicSliderExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicSliderExample extends Component[Any, Any, Any] {
     
-    def handleChange(value: js.Any): Unit = js.native
+    def handleChange(value: Any): Unit = js.native
     
-    def minMaxChange(value: js.Any): Unit = js.native
+    def minMaxChange(value: Any): Unit = js.native
     
-    def onAfterChange(value: js.Any): Unit = js.native
+    def onAfterChange(value: Any): Unit = js.native
   }
 }

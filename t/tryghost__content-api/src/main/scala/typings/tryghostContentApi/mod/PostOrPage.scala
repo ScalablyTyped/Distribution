@@ -29,6 +29,10 @@ trait PostOrPage
   // Image
   var feature_image: js.UndefOr[Nullable[String]] = js.undefined
   
+  var feature_image_alt: js.UndefOr[Nullable[String]] = js.undefined
+  
+  var feature_image_caption: js.UndefOr[Nullable[String]] = js.undefined
+  
   var featured: js.UndefOr[Boolean] = js.undefined
   
   var html: js.UndefOr[Nullable[String]] = js.undefined
@@ -73,7 +77,7 @@ object PostOrPage {
     
     inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
     
-    inline def setAuthorsVarargs(value: Author*): Self = StObject.set(x, "authors", js.Array(value :_*))
+    inline def setAuthorsVarargs(value: Author*): Self = StObject.set(x, "authors", js.Array(value*))
     
     inline def setCanonical_url(value: Nullable[String]): Self = StObject.set(x, "canonical_url", value.asInstanceOf[js.Any])
     
@@ -100,6 +104,18 @@ object PostOrPage {
     inline def setFeature_imageNull: Self = StObject.set(x, "feature_image", null)
     
     inline def setFeature_imageUndefined: Self = StObject.set(x, "feature_image", js.undefined)
+    
+    inline def setFeature_image_alt(value: Nullable[String]): Self = StObject.set(x, "feature_image_alt", value.asInstanceOf[js.Any])
+    
+    inline def setFeature_image_altNull: Self = StObject.set(x, "feature_image_alt", null)
+    
+    inline def setFeature_image_altUndefined: Self = StObject.set(x, "feature_image_alt", js.undefined)
+    
+    inline def setFeature_image_caption(value: Nullable[String]): Self = StObject.set(x, "feature_image_caption", value.asInstanceOf[js.Any])
+    
+    inline def setFeature_image_captionNull: Self = StObject.set(x, "feature_image_caption", null)
+    
+    inline def setFeature_image_captionUndefined: Self = StObject.set(x, "feature_image_caption", js.undefined)
     
     inline def setFeatured(value: Boolean): Self = StObject.set(x, "featured", value.asInstanceOf[js.Any])
     
@@ -147,7 +163,7 @@ object PostOrPage {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

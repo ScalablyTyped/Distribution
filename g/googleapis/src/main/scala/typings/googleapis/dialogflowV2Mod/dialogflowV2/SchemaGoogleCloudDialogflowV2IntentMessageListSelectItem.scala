@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An item in the list.
-  */
 trait SchemaGoogleCloudDialogflowV2IntentMessageListSelectItem extends StObject {
   
   /**
     * Optional. The main text describing the item.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Optional. The image to display.
@@ -27,7 +24,7 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageListSelectItem extends StObject 
   /**
     * Required. The title of the list item.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageListSelectItem {
   
@@ -40,6 +37,8 @@ object SchemaGoogleCloudDialogflowV2IntentMessageListSelectItem {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setImage(value: SchemaGoogleCloudDialogflowV2IntentMessageImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
@@ -51,6 +50,8 @@ object SchemaGoogleCloudDialogflowV2IntentMessageListSelectItem {
     inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

@@ -1,6 +1,6 @@
 package typings.ethereumjsVm
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,27 +9,27 @@ object cacheMod {
   
   @JSImport("ethereumjs-vm/dist/state/cache", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Cache {
-    def this(trie: js.Any) = this()
+    def this(trie: Any) = this()
   }
   
   @js.native
   trait Cache extends StObject {
     
-    var _cache: js.Any = js.native
+    var _cache: Any = js.native
     
-    var _checkpoints: js.Array[js.Any] = js.native
+    var _checkpoints: js.Array[Any] = js.native
     
     /**
       * Looks up address in underlying trie.
       * @param address - Address of account
       * @param cb - Callback with params (err, account)
       */
-    def _lookupAccount(address: Buffer, cb: js.Any): Unit = js.native
+    def _lookupAccount(address: Buffer, cb: Any): Unit = js.native
     
-    var _trie: js.Any = js.native
+    var _trie: Any = js.native
     
     def _update(key: Buffer, `val`: typings.ethereumjsAccount.mod.default, modified: Boolean, deleted: Boolean): Unit = js.native
     
@@ -60,7 +60,7 @@ object cacheMod {
       * and removing accounts that have been deleted.
       * @param cb - Callback
       */
-    def flush(cb: js.Any): Unit = js.native
+    def flush(cb: Any): Unit = js.native
     
     /**
       * Returns the queried account or an empty account.
@@ -74,7 +74,7 @@ object cacheMod {
       * @param key - Address of account
       * @param cb - Callback with params (err, account)
       */
-    def getOrLoad(key: Buffer, cb: js.Any): Unit = js.native
+    def getOrLoad(key: Buffer, cb: Any): Unit = js.native
     
     /**
       * Returns the queried account or undefined.
@@ -101,6 +101,6 @@ object cacheMod {
       * @param addresses - Array of addresses
       * @param cb - Callback
       */
-    def warm(addresses: js.Array[String], cb: js.Any): Unit = js.native
+    def warm(addresses: js.Array[String], cb: Any): Unit = js.native
   }
 }

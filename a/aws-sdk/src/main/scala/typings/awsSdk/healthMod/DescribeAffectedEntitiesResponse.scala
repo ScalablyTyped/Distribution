@@ -29,7 +29,7 @@ object DescribeAffectedEntitiesResponse {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: AffectedEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: AffectedEntity*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

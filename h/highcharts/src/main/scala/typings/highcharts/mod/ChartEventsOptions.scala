@@ -85,6 +85,20 @@ trait ChartEventsOptions extends StObject {
   var exportData: js.UndefOr[ExportDataCallbackFunction] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Fires when a fullscreen is
+    * closed through the context menu item, or a fullscreen is closed on the
+    * `Escape` button click, or the `Chart.fullscreen.close` method.
+    */
+  var fullscreenClose: js.UndefOr[FullScreenfullscreenCloseCallbackFunction] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Fires when a fullscreen is
+    * opened through the context menu item, or the `Chart.fullscreen.open`
+    * method.
+    */
+  var fullscreenOpen: js.UndefOr[FullScreenfullscreenOpenCallbackFunction] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when the chart is finished
     * loading. Since v4.2.2, it also waits for images to be loaded, for example
     * from point markers. One parameter, `event`, is passed to the function,
@@ -166,6 +180,14 @@ object ChartEventsOptions {
     inline def setExportData(value: ExportDataCallbackFunction): Self = StObject.set(x, "exportData", value.asInstanceOf[js.Any])
     
     inline def setExportDataUndefined: Self = StObject.set(x, "exportData", js.undefined)
+    
+    inline def setFullscreenClose(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = StObject.set(x, "fullscreenClose", js.Any.fromFunction2(value))
+    
+    inline def setFullscreenCloseUndefined: Self = StObject.set(x, "fullscreenClose", js.undefined)
+    
+    inline def setFullscreenOpen(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = StObject.set(x, "fullscreenOpen", js.Any.fromFunction2(value))
+    
+    inline def setFullscreenOpenUndefined: Self = StObject.set(x, "fullscreenOpen", js.undefined)
     
     inline def setLoad(value: ChartLoadCallbackFunction): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     

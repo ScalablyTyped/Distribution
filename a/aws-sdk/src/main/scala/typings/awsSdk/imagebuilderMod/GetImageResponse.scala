@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetImageResponse extends StObject {
   
   /**
-    * The image object. 
+    * The image object.
     */
   var image: js.UndefOr[Image] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }

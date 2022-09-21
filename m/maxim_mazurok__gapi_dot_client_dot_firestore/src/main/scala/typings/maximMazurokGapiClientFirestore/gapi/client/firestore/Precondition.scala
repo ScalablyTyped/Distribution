@@ -9,7 +9,7 @@ trait Precondition extends StObject {
   /** When set to `true`, the target document must exist. When set to `false`, the target document must not exist. */
   var exists: js.UndefOr[Boolean] = js.undefined
   
-  /** When set, the target document must exist and have been last updated at that time. */
+  /** When set, the target document must exist and have been last updated at that time. Timestamp must be microsecond aligned. */
   var updateTime: js.UndefOr[String] = js.undefined
 }
 object Precondition {

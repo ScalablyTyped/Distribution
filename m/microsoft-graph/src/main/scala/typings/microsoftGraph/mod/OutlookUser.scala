@@ -26,6 +26,6 @@ object OutlookUser {
     
     inline def setMasterCategoriesUndefined: Self = StObject.set(x, "masterCategories", js.undefined)
     
-    inline def setMasterCategoriesVarargs(value: OutlookCategory*): Self = StObject.set(x, "masterCategories", js.Array(value :_*))
+    inline def setMasterCategoriesVarargs(value: OutlookCategory*): Self = StObject.set(x, "masterCategories", js.Array(value*))
   }
 }

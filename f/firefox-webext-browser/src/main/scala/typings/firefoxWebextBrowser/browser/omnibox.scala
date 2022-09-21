@@ -48,11 +48,11 @@ object omnibox {
       
       inline def setDescriptionStylesRawUndefined: Self = StObject.set(x, "descriptionStylesRaw", js.undefined)
       
-      inline def setDescriptionStylesRawVarargs(value: DefaultSuggestResultDescriptionStylesRaw*): Self = StObject.set(x, "descriptionStylesRaw", js.Array(value :_*))
+      inline def setDescriptionStylesRawVarargs(value: DefaultSuggestResultDescriptionStylesRaw*): Self = StObject.set(x, "descriptionStylesRaw", js.Array(value*))
       
       inline def setDescriptionStylesUndefined: Self = StObject.set(x, "descriptionStyles", js.undefined)
       
-      inline def setDescriptionStylesVarargs(value: DefaultSuggestResultDescriptionStyles*): Self = StObject.set(x, "descriptionStyles", js.Array(value :_*))
+      inline def setDescriptionStylesVarargs(value: DefaultSuggestResultDescriptionStyles*): Self = StObject.set(x, "descriptionStyles", js.Array(value*))
     }
   }
   
@@ -188,11 +188,11 @@ object omnibox {
       
       inline def setDescriptionStylesRawUndefined: Self = StObject.set(x, "descriptionStylesRaw", js.undefined)
       
-      inline def setDescriptionStylesRawVarargs(value: SuggestResultDescriptionStylesRaw*): Self = StObject.set(x, "descriptionStylesRaw", js.Array(value :_*))
+      inline def setDescriptionStylesRawVarargs(value: SuggestResultDescriptionStylesRaw*): Self = StObject.set(x, "descriptionStylesRaw", js.Array(value*))
       
       inline def setDescriptionStylesUndefined: Self = StObject.set(x, "descriptionStyles", js.undefined)
       
-      inline def setDescriptionStylesVarargs(value: SuggestResultDescriptionStyles*): Self = StObject.set(x, "descriptionStyles", js.Array(value :_*))
+      inline def setDescriptionStylesVarargs(value: SuggestResultDescriptionStyles*): Self = StObject.set(x, "descriptionStyles", js.Array(value*))
     }
   }
   

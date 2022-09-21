@@ -23,7 +23,7 @@ trait NavigationFolder extends StObject {
   /* private */ @JSName("Outlook.NavigationFolder_typekey")
   var OutlookDotNavigationFolder_typekey: NavigationFolder
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -40,7 +40,7 @@ object NavigationFolder {
     IsSelected: Boolean,
     IsSideBySide: Boolean,
     OutlookDotNavigationFolder_typekey: NavigationFolder,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     Session: NameSpace
   ): NavigationFolder = {
@@ -67,7 +67,7 @@ object NavigationFolder {
     
     inline def setOutlookDotNavigationFolder_typekey(value: NavigationFolder): Self = StObject.set(x, "Outlook.NavigationFolder_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

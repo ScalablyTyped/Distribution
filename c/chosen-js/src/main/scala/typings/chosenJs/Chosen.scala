@@ -243,24 +243,25 @@ object Chosen {
     }
   }
   
-  trait SelectedData extends StObject {
-    
-    var deselected: String
-    
-    var selected: String
-  }
+  /**
+    * Arguments passed to the event handler of the `change` event when an
+    * option was selected or deselected.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - typings.chosenJs.anon.Selected
+    - typings.chosenJs.anon.Deselected
+  */
+  trait SelectedData extends StObject
   object SelectedData {
     
-    inline def apply(deselected: String, selected: String): SelectedData = {
-      val __obj = js.Dynamic.literal(deselected = deselected.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectedData]
+    inline def Deselected(deselected: String): typings.chosenJs.anon.Deselected = {
+      val __obj = js.Dynamic.literal(deselected = deselected.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.chosenJs.anon.Deselected]
     }
     
-    extension [Self <: SelectedData](x: Self) {
-      
-      inline def setDeselected(value: String): Self = StObject.set(x, "deselected", value.asInstanceOf[js.Any])
-      
-      inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def Selected(selected: String): typings.chosenJs.anon.Selected = {
+      val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.chosenJs.anon.Selected]
     }
   }
   

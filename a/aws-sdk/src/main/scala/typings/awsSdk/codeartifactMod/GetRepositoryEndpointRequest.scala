@@ -12,12 +12,12 @@ trait GetRepositoryEndpointRequest extends StObject {
   var domain: DomainName
   
   /**
-    *  The 12-digit account number of the AWS account that owns the domain that contains the repository. It does not include dashes or spaces. 
+    *  The 12-digit account number of the Amazon Web Services account that owns the domain that contains the repository. It does not include dashes or spaces. 
     */
   var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
-    *  Returns which endpoint of a repository to return. A repository has one endpoint for each package format:     npm     pypi     maven   
+    *  Returns which endpoint of a repository to return. A repository has one endpoint for each package format. 
     */
   var format: PackageFormat
   

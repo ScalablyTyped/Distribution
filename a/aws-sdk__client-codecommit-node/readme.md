@@ -10,10 +10,10 @@ Node SDK for AWS CodeCommit
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-codecommit-node |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 0 |
-| # downloads        | 644 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 109.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fclient-codecommit-node)

@@ -37,7 +37,7 @@ object GoogleCloudVideointelligenceV1beta2LabelAnnotation {
     
     inline def setCategoryEntitiesUndefined: Self = StObject.set(x, "categoryEntities", js.undefined)
     
-    inline def setCategoryEntitiesVarargs(value: GoogleCloudVideointelligenceV1beta2Entity*): Self = StObject.set(x, "categoryEntities", js.Array(value :_*))
+    inline def setCategoryEntitiesVarargs(value: GoogleCloudVideointelligenceV1beta2Entity*): Self = StObject.set(x, "categoryEntities", js.Array(value*))
     
     inline def setEntity(value: GoogleCloudVideointelligenceV1beta2Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
@@ -47,13 +47,13 @@ object GoogleCloudVideointelligenceV1beta2LabelAnnotation {
     
     inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1beta2LabelFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1beta2LabelFrame*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setSegments(value: js.Array[GoogleCloudVideointelligenceV1beta2LabelSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1beta2LabelSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1beta2LabelSegment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

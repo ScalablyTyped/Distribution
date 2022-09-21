@@ -21,18 +21,18 @@ trait Calendar
   var calendarView: js.UndefOr[NullableOption[js.Array[Event]]] = js.undefined
   
   /**
-    * True if the user can write to the calendar, false otherwise. This property is true for the user who created the
+    * true if the user can write to the calendar, false otherwise. This property is true for the user who created the
     * calendar. This property is also true for a user who has been shared a calendar and granted write access.
     */
   var canEdit: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
-    * True if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can
+    * true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can
     * share it.
     */
   var canShare: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // True if the user can read calendar items that have been marked private, false otherwise.
+  // true if the user can read calendar items that have been marked private, false otherwise.
   var canViewPrivateItems: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
@@ -42,9 +42,8 @@ trait Calendar
   var changeKey: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are:
-    * LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7,
-    * LightRed=8, MaxColor=9, Auto=-1
+    * Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: auto,
+    * lightBlue, lightGreen, lightOrange, lightGray, lightYellow, lightTeal, lightPink, lightBrown, lightRed, maxColor.
     */
   var color: js.UndefOr[NullableOption[CalendarColor]] = js.undefined
   
@@ -57,8 +56,14 @@ trait Calendar
   // The events in the calendar. Navigation property. Read-only.
   var events: js.UndefOr[NullableOption[js.Array[Event]]] = js.undefined
   
+  /**
+    * The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and
+    * representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly
+    * set a color for the calendar, this property is empty. Read-only.
+    */
   var hexColor: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // true if this is the default calendar where new events are created by default, false otherwise.
   var isDefaultCalendar: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether this user calendar can be deleted from the user mailbox.
@@ -101,7 +106,7 @@ object Calendar {
     
     inline def setAllowedOnlineMeetingProvidersUndefined: Self = StObject.set(x, "allowedOnlineMeetingProviders", js.undefined)
     
-    inline def setAllowedOnlineMeetingProvidersVarargs(value: OnlineMeetingProviderType*): Self = StObject.set(x, "allowedOnlineMeetingProviders", js.Array(value :_*))
+    inline def setAllowedOnlineMeetingProvidersVarargs(value: OnlineMeetingProviderType*): Self = StObject.set(x, "allowedOnlineMeetingProviders", js.Array(value*))
     
     inline def setCalendarPermissions(value: NullableOption[js.Array[CalendarPermission]]): Self = StObject.set(x, "calendarPermissions", value.asInstanceOf[js.Any])
     
@@ -109,7 +114,7 @@ object Calendar {
     
     inline def setCalendarPermissionsUndefined: Self = StObject.set(x, "calendarPermissions", js.undefined)
     
-    inline def setCalendarPermissionsVarargs(value: CalendarPermission*): Self = StObject.set(x, "calendarPermissions", js.Array(value :_*))
+    inline def setCalendarPermissionsVarargs(value: CalendarPermission*): Self = StObject.set(x, "calendarPermissions", js.Array(value*))
     
     inline def setCalendarView(value: NullableOption[js.Array[Event]]): Self = StObject.set(x, "calendarView", value.asInstanceOf[js.Any])
     
@@ -117,7 +122,7 @@ object Calendar {
     
     inline def setCalendarViewUndefined: Self = StObject.set(x, "calendarView", js.undefined)
     
-    inline def setCalendarViewVarargs(value: Event*): Self = StObject.set(x, "calendarView", js.Array(value :_*))
+    inline def setCalendarViewVarargs(value: Event*): Self = StObject.set(x, "calendarView", js.Array(value*))
     
     inline def setCanEdit(value: NullableOption[Boolean]): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
     
@@ -161,7 +166,7 @@ object Calendar {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setHexColor(value: NullableOption[String]): Self = StObject.set(x, "hexColor", value.asInstanceOf[js.Any])
     
@@ -193,7 +198,7 @@ object Calendar {
     
     inline def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
-    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
+    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value*))
     
     inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -213,6 +218,6 @@ object Calendar {
     
     inline def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
-    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
+    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value*))
   }
 }

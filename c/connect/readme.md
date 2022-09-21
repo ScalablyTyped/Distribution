@@ -10,10 +10,10 @@ High performance middleware framework
 | ------------------ | :-------------: |
 | Full name          | connect |
 | Keywords           | framework, web, middleware, connect, rack |
-| # releases         | 2 |
-| # dependents       | 2141 |
-| # downloads        | 192326848 |
-| # stars            | 247 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1334955666666668E7 |
+| # stars            | 9485.0 |
 
 ## Links
 - [Homepage](https://github.com/senchalabs/connect#readme)

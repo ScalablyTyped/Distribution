@@ -1,5 +1,6 @@
 package typings.grommet.anon
 
+import typings.grommet.diagramMod.DiagramAnimationType
 import typings.grommet.diagramMod.DiagramConnectionAnchor
 import typings.grommet.diagramMod.DiagramConnectionType
 import typings.grommet.grommetStrings.hair
@@ -16,6 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Anchor extends StObject {
   
   var anchor: js.UndefOr[DiagramConnectionAnchor] = js.undefined
+  
+  var animation: js.UndefOr[DiagramAnimationType] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
   
@@ -43,6 +46,10 @@ object Anchor {
     inline def setAnchor(value: DiagramConnectionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    
+    inline def setAnimation(value: DiagramAnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

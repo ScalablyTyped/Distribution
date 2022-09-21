@@ -1,8 +1,7 @@
 package typings.hapiPino
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.hapiPino.mod.Serializers
-import typings.pino.mod.Level
+import typings.pino.mod.pino.Level
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +10,9 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var level: js.UndefOr[Level | String] = js.undefined
-    
-    var serializers: js.UndefOr[Serializers] = js.undefined
   }
   object Dictkey {
     
@@ -29,14 +26,10 @@ object anon {
       inline def setLevel(value: Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
-      
-      inline def setSerializers(value: Serializers): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
-      
-      inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
     }
   }
   
-  /* Inlined {[ key in pino.pino.Level ]:? string} */
+  /* Inlined {[ key in pino.pino.pino.Level ]:? string} */
   trait keyinLevelstring extends StObject {
     
     var debug: js.UndefOr[String] = js.undefined

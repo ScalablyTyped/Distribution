@@ -10,10 +10,10 @@ BLiP SDK JavaScript
 | ------------------ | :-------------: |
 | Full name          | blip-sdk |
 | Keywords           | - |
-| # releases         | 40 |
-| # dependents       | 2 |
-| # downloads        | 10050 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3608.3333333333335 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/takenet/blip-sdk-js#readme)

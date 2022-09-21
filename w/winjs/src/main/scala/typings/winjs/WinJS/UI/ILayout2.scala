@@ -35,7 +35,7 @@ trait ILayout2 extends StObject {
     * @param pressedKey The key that was pressed.
     * @returns An object that describes the next item that should receive focus. It has these properties: index, type.
     **/
-  def getAdjacent(currentItem: js.Any, pressedKey: Key): js.Any
+  def getAdjacent(currentItem: Any, pressedKey: Key): Any
   
   /**
     * Gets the item at the specified hit-test coordinates. These coordinates are absolute coordinates (they are not relative to the layout's content area).
@@ -43,7 +43,7 @@ trait ILayout2 extends StObject {
     * @param y The y-coordinate to test for.
     * @returns An object that describes the item at the hit test coordinates. It has these properties: type, index.
     **/
-  def hitTest(x: Double, y: Double): js.Any
+  def hitTest(x: Double, y: Double): Any
   
   /**
     * Sets the rendering site and specifies whether the layout supports groups. This method is called by the ListView to initialize the layout.
@@ -67,14 +67,14 @@ trait ILayout2 extends StObject {
     * @param modifiedGroups An object that contains the old and new indexes of the group elements that have been modified in the tree.
     * @returns A Promise that executes after layout is complete, or an object that contains two Promise objects: realizedRangeComplete, layoutComplete.
     **/
-  def layout(tree: js.Any, changedRange: js.Any, modifiedItems: js.Any, modifiedGroups: js.Any): js.Any
+  def layout(tree: Any, changedRange: Any, modifiedItems: Any, modifiedGroups: Any): Any
   
   //#endregion Methods
   //#region Properties
   /**
     * Gets or sets the orientation of the layout.
     **/
-  var orientation: js.Any
+  var orientation: Any
   
   /**
     * Called when the ListView requests that the ILayout2 set up animations.
@@ -92,12 +92,12 @@ object ILayout2 {
     dragLeave: () => Unit,
     dragOver: (Double, Double, Double) => Unit,
     executeAnimations: () => Unit,
-    getAdjacent: (js.Any, Key) => js.Any,
-    hitTest: (Double, Double) => js.Any,
+    getAdjacent: (Any, Key) => Any,
+    hitTest: (Double, Double) => Any,
     initialize: (ILayoutSite2, Boolean) => Unit,
     itemsFromRange: (Double, Double) => Unit,
-    layout: (js.Any, js.Any, js.Any, js.Any) => js.Any,
-    orientation: js.Any,
+    layout: (Any, Any, Any, Any) => Any,
+    orientation: Any,
     setupAnimations: () => Unit,
     uninitialize: () => Unit
   ): ILayout2 = {
@@ -113,17 +113,17 @@ object ILayout2 {
     
     inline def setExecuteAnimations(value: () => Unit): Self = StObject.set(x, "executeAnimations", js.Any.fromFunction0(value))
     
-    inline def setGetAdjacent(value: (js.Any, Key) => js.Any): Self = StObject.set(x, "getAdjacent", js.Any.fromFunction2(value))
+    inline def setGetAdjacent(value: (Any, Key) => Any): Self = StObject.set(x, "getAdjacent", js.Any.fromFunction2(value))
     
-    inline def setHitTest(value: (Double, Double) => js.Any): Self = StObject.set(x, "hitTest", js.Any.fromFunction2(value))
+    inline def setHitTest(value: (Double, Double) => Any): Self = StObject.set(x, "hitTest", js.Any.fromFunction2(value))
     
     inline def setInitialize(value: (ILayoutSite2, Boolean) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
     inline def setItemsFromRange(value: (Double, Double) => Unit): Self = StObject.set(x, "itemsFromRange", js.Any.fromFunction2(value))
     
-    inline def setLayout(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "layout", js.Any.fromFunction4(value))
+    inline def setLayout(value: (Any, Any, Any, Any) => Any): Self = StObject.set(x, "layout", js.Any.fromFunction4(value))
     
-    inline def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setSetupAnimations(value: () => Unit): Self = StObject.set(x, "setupAnimations", js.Any.fromFunction0(value))
     

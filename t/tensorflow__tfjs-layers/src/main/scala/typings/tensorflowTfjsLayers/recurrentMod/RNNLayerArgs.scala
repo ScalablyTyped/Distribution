@@ -22,6 +22,6 @@ object RNNLayerArgs {
     
     inline def setCell(value: RNNCell | js.Array[RNNCell]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    inline def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value :_*))
+    inline def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value*))
   }
 }

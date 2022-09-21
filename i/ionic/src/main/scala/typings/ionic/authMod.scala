@@ -11,7 +11,7 @@ object authMod {
   
   @JSImport("ionic/lib/auth", "AuthClient")
   @js.native
-  class AuthClient protected () extends ResourceClient {
+  open class AuthClient protected () extends ResourceClient {
     def this(e: AuthClientDeps) = this()
     
     val connections: AuthConnectionClient = js.native
@@ -21,7 +21,7 @@ object authMod {
   
   @JSImport("ionic/lib/auth", "AuthConnectionClient")
   @js.native
-  class AuthConnectionClient protected ()
+  open class AuthConnectionClient protected ()
     extends ResourceClient
        with ResourceClientLoad[AuthConnection] {
     def this(e: AuthClientDeps) = this()

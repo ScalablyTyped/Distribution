@@ -4,7 +4,4 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Service-side response to WorkerMessage issuing shutdown notice.
-  */
 trait SchemaWorkerShutdownNoticeResponse extends StObject

@@ -39,7 +39,7 @@ object standardSettings {
     
     inline def setAM(value: js.Array[String]): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
     
-    inline def setAMVarargs(value: String*): Self = StObject.set(x, "AM", js.Array(value :_*))
+    inline def setAMVarargs(value: String*): Self = StObject.set(x, "AM", js.Array(value*))
     
     inline def setDays(value: daySettings): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object standardSettings {
     
     inline def setPM(value: js.Array[String]): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
     
-    inline def setPMVarargs(value: String*): Self = StObject.set(x, "PM", js.Array(value :_*))
+    inline def setPMVarargs(value: String*): Self = StObject.set(x, "PM", js.Array(value*))
     
     inline def setPatterns(value: patternSettings): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     

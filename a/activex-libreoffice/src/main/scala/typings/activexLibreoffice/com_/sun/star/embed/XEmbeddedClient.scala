@@ -31,7 +31,7 @@ object XEmbeddedClient {
     Component: XCloseable,
     acquire: () => Unit,
     getComponent: () => XCloseable,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     saveObject: () => Unit,
     visibilityChanged: Boolean => Unit

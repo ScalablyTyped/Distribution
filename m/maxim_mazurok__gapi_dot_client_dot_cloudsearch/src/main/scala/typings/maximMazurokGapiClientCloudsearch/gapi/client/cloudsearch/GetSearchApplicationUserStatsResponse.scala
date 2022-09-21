@@ -21,6 +21,6 @@ object GetSearchApplicationUserStatsResponse {
     
     inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
-    inline def setStatsVarargs(value: SearchApplicationUserStats*): Self = StObject.set(x, "stats", js.Array(value :_*))
+    inline def setStatsVarargs(value: SearchApplicationUserStats*): Self = StObject.set(x, "stats", js.Array(value*))
   }
 }

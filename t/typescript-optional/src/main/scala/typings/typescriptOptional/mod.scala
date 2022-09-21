@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("typescript-optional", "EmptyOptional")
+  @js.native
+  open class EmptyOptional[T] ()
+    extends typings.typescriptOptional.optionalMod.EmptyOptional[T]
+  
   @JSImport("typescript-optional", "Optional")
   @js.native
   abstract class Optional[T] ()
@@ -28,5 +33,12 @@ object mod {
     
     inline def ofNullable[T](): typings.typescriptOptional.optionalMod.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")().asInstanceOf[typings.typescriptOptional.optionalMod.Optional[T]]
     inline def ofNullable[T](nullable: T): typings.typescriptOptional.optionalMod.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")(nullable.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptOptional.optionalMod.Optional[T]]
+  }
+  
+  @JSImport("typescript-optional", "PresentOptional")
+  @js.native
+  open class PresentOptional[T] protected ()
+    extends typings.typescriptOptional.optionalMod.PresentOptional[T] {
+    def this(value: T) = this()
   }
 }

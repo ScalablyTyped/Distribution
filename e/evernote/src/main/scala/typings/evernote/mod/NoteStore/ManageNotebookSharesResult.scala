@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.ManageNotebookSharesResult")
 @js.native
-class ManageNotebookSharesResult () extends StObject {
+open class ManageNotebookSharesResult () extends StObject {
   def this(args: `0`) = this()
   
   var errors: js.UndefOr[js.Array[ManageNotebookSharesError]] = js.native

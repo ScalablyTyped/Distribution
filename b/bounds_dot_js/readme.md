@@ -10,10 +10,10 @@ Asynchronous boundary detection.
 | ------------------ | :-------------: |
 | Full name          | bounds.js |
 | Keywords           | boundary, asynchronous, infinite, scroll, lazy, load, images, bounds |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 7515 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 899.6666666666666 |
+| # stars            | 631.0 |
 
 ## Links
 - [Homepage](https://github.com/ChrisCavs/bounds.js#readme)

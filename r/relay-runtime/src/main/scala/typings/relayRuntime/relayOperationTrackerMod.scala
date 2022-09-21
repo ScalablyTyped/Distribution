@@ -1,5 +1,6 @@
 package typings.relayRuntime
 
+import typings.relayRuntime.anon.PendingOperations
 import typings.relayRuntime.relayStoreTypesMod.RequestDescriptor
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,7 @@ object relayOperationTrackerMod {
   
   @JSImport("relay-runtime/lib/store/RelayOperationTracker", "RelayOperationTracker")
   @js.native
-  class RelayOperationTracker () extends StObject {
+  open class RelayOperationTracker () extends StObject {
     
     def _resolveOwnerResolvers(owner: RequestDescriptor): Unit = js.native
     
@@ -20,7 +21,7 @@ object relayOperationTrackerMod {
       */
     def complete(pendingOperation: RequestDescriptor): Unit = js.native
     
-    def getPromiseForPendingOperationsAffectingOwner(owner: RequestDescriptor): js.Promise[Unit] | Null = js.native
+    def getPendingOperationsAffectingOwner(owner: RequestDescriptor): PendingOperations | Null = js.native
     
     /**
       * Update the map of current processing operations with the set of

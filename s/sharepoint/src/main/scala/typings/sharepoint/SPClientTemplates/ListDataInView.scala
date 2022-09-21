@@ -70,7 +70,7 @@ object ListDataInView {
     
     inline def setRow(value: js.Array[Item]): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
     
-    inline def setRowVarargs(value: Item*): Self = StObject.set(x, "Row", js.Array(value :_*))
+    inline def setRowVarargs(value: Item*): Self = StObject.set(x, "Row", js.Array(value*))
     
     inline def setSortDir(value: String): Self = StObject.set(x, "SortDir", value.asInstanceOf[js.Any])
     

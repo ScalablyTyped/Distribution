@@ -12,7 +12,7 @@ trait IgDialog
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event which is raised after the end of the animation when the dialog was closed or opened.
@@ -28,7 +28,7 @@ trait IgDialog
     * Gets/Sets the animation applied to the dialog when it is closed. That can be any object supported by the jquery hide(param) method.
     *
     */
-  var closeAnimation: js.UndefOr[js.Any] = js.undefined
+  var closeAnimation: js.UndefOr[Any] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
@@ -49,7 +49,7 @@ trait IgDialog
     * Note: If the "position" of the container is not set or it is "static", then the position is set to "relative".
     *
     */
-  var container: js.UndefOr[js.Any] = js.undefined
+  var container: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the name of the css class which is applied to the main DIV element of the dialog.
@@ -69,7 +69,7 @@ trait IgDialog
     * and dialog-state will be set to normal if it was maximized.
     *
     */
-  var enableDblclick: js.UndefOr[js.Any] = js.undefined
+  var enableDblclick: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the ability to adjust the state of the header depending on focused and not-focused states. Note: the "trackFocus" option should be enabled.
@@ -174,7 +174,7 @@ trait IgDialog
     * Gets/Sets the animation applied to the dialog when it is opened. That can be any object supported by the jquery show(param) method.
     *
     */
-  var openAnimation: js.UndefOr[js.Any] = js.undefined
+  var openAnimation: js.UndefOr[Any] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
@@ -204,7 +204,7 @@ trait IgDialog
     * supported by jquery.position(param) method. Examples: { left: 100, top: 200 }, { my: "left top", at: "left top", offset: "100 200" }
     *
     */
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[Any] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
@@ -341,7 +341,7 @@ object IgDialog {
     
     inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
-    inline def setCloseAnimation(value: js.Any): Self = StObject.set(x, "closeAnimation", value.asInstanceOf[js.Any])
+    inline def setCloseAnimation(value: Any): Self = StObject.set(x, "closeAnimation", value.asInstanceOf[js.Any])
     
     inline def setCloseAnimationUndefined: Self = StObject.set(x, "closeAnimation", js.undefined)
     
@@ -353,7 +353,7 @@ object IgDialog {
     
     inline def setCloseOnEscapeUndefined: Self = StObject.set(x, "closeOnEscape", js.undefined)
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -365,7 +365,7 @@ object IgDialog {
     
     inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    inline def setEnableDblclick(value: js.Any): Self = StObject.set(x, "enableDblclick", value.asInstanceOf[js.Any])
+    inline def setEnableDblclick(value: Any): Self = StObject.set(x, "enableDblclick", value.asInstanceOf[js.Any])
     
     inline def setEnableDblclickUndefined: Self = StObject.set(x, "enableDblclick", js.undefined)
     
@@ -433,7 +433,7 @@ object IgDialog {
     
     inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
-    inline def setOpenAnimation(value: js.Any): Self = StObject.set(x, "openAnimation", value.asInstanceOf[js.Any])
+    inline def setOpenAnimation(value: Any): Self = StObject.set(x, "openAnimation", value.asInstanceOf[js.Any])
     
     inline def setOpenAnimationUndefined: Self = StObject.set(x, "openAnimation", js.undefined)
     
@@ -449,7 +449,7 @@ object IgDialog {
     
     inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     

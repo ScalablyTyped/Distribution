@@ -1,7 +1,7 @@
 package typings.gulpTypescript
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
+import typings.std.ReadableStream
 import typings.typescript.mod.CustomTransformers
 import typings.typescript.mod.Program
 import org.scalablytyped.runtime.StObject
@@ -16,7 +16,7 @@ object typesMod {
   
   trait TsConfig extends StObject {
     
-    var compilerOptions: js.UndefOr[js.Any] = js.undefined
+    var compilerOptions: js.UndefOr[Any] = js.undefined
     
     var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -33,7 +33,7 @@ object typesMod {
     
     extension [Self <: TsConfig](x: Self) {
       
-      inline def setCompilerOptions(value: js.Any): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+      inline def setCompilerOptions(value: Any): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
       inline def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
       
@@ -41,19 +41,19 @@ object typesMod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
     }
   }
   
@@ -63,7 +63,7 @@ object typesMod {
     
     var basename: String
     
-    var contents: Buffer | ReadableStream | Null
+    var contents: Buffer | ReadableStream[Any] | Null
     
     var cwd: String
     
@@ -73,7 +73,7 @@ object typesMod {
     
     var path: String
     
-    var sourceMap: js.UndefOr[js.Any] = js.undefined
+    var sourceMap: js.UndefOr[Any] = js.undefined
     
     var stem: String
   }
@@ -98,7 +98,7 @@ object typesMod {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      inline def setContents(value: Buffer | ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Buffer | ReadableStream[Any]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setContentsNull: Self = StObject.set(x, "contents", null)
       
@@ -110,7 +110,7 @@ object typesMod {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setSourceMap(value: js.Any): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Any): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
       inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       

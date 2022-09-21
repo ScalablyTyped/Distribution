@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetJobTaggingRequest extends StObject {
   
   /**
-    * The AWS account ID associated with the S3 Batch Operations job.
+    * The Amazon Web Services account ID associated with the S3 Batch Operations job.
     */
   var AccountId: typings.awsSdk.s3controlMod.AccountId
   

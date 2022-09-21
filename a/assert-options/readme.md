@@ -1,7 +1,7 @@
 
 # Scala.js typings for assert-options
 
-Typings are for version 0.6.2
+Typings are for version 0.7.0
 
 ## Library description:
 Generic options parameter handling.
@@ -10,10 +10,10 @@ Generic options parameter handling.
 | ------------------ | :-------------: |
 | Full name          | assert-options |
 | Keywords           | assert, options |
-| # releases         | 22 |
-| # dependents       | 2 |
-| # downloads        | 4801652 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1152676.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/vitaly-t/assert-options)

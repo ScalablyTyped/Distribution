@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLocationFsxWindowsRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the FSx for Windows location to describe.
+    * The Amazon Resource Name (ARN) of the FSx for Windows File Server location to describe.
     */
   var LocationArn: typings.awsSdk.datasyncMod.LocationArn
 }

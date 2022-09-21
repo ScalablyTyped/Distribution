@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AstWalkerFactory extends StObject {
   
-  def simpleWalk(ast: AST, pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit]): Unit = js.native
+  def simpleWalk(ast: AST, pre: js.Function2[/* ast */ AST, /* state */ Any, Unit]): Unit = js.native
   def simpleWalk(
     ast: AST,
-    pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit],
-    post: js.Function2[/* ast */ AST, /* state */ js.Any, Unit]
+    pre: js.Function2[/* ast */ AST, /* state */ Any, Unit],
+    post: js.Function2[/* ast */ AST, /* state */ Any, Unit]
   ): Unit = js.native
   def simpleWalk(
     ast: AST,
-    pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit],
-    post: js.Function2[/* ast */ AST, /* state */ js.Any, Unit],
-    state: js.Any
+    pre: js.Function2[/* ast */ AST, /* state */ Any, Unit],
+    post: js.Function2[/* ast */ AST, /* state */ Any, Unit],
+    state: Any
   ): Unit = js.native
-  def simpleWalk(ast: AST, pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit], post: Unit, state: js.Any): Unit = js.native
+  def simpleWalk(ast: AST, pre: js.Function2[/* ast */ AST, /* state */ Any, Unit], post: Unit, state: Any): Unit = js.native
   
   def walk(ast: AST, pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit]): Unit = js.native
   def walk(
@@ -31,12 +31,7 @@ trait AstWalkerFactory extends StObject {
     ast: AST,
     pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit],
     post: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit],
-    state: js.Any
+    state: Any
   ): Unit = js.native
-  def walk(
-    ast: AST,
-    pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit],
-    post: Unit,
-    state: js.Any
-  ): Unit = js.native
+  def walk(ast: AST, pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit], post: Unit, state: Any): Unit = js.native
 }

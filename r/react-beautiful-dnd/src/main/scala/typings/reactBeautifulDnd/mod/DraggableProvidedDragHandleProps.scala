@@ -16,7 +16,7 @@ trait DraggableProvidedDragHandleProps extends StObject {
   
   var draggable: Boolean
   
-  var onDragStart: DragEventHandler[js.Any]
+  var onDragStart: DragEventHandler[Any]
   
   var role: String
   
@@ -29,7 +29,7 @@ object DraggableProvidedDragHandleProps {
     `data-rbd-drag-handle-context-id`: ContextId,
     `data-rbd-drag-handle-draggable-id`: DraggableId,
     draggable: Boolean,
-    onDragStart: DragEvent[js.Any] => Unit,
+    onDragStart: DragEvent[Any] => Unit,
     role: String,
     tabIndex: Double
   ): DraggableProvidedDragHandleProps = {
@@ -50,7 +50,7 @@ object DraggableProvidedDragHandleProps {
     
     inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
-    inline def setOnDragStart(value: DragEvent[js.Any] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    inline def setOnDragStart(value: DragEvent[Any] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

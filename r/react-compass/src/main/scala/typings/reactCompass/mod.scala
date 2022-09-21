@@ -13,25 +13,24 @@ object mod {
   
   @JSImport("react-compass", JSImport.Default)
   @js.native
-  class default protected () extends ReactCompass {
+  open class default protected () extends ReactCompass {
     def this(props: ReactCompassProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReactCompassProps, context: js.Any) = this()
+    def this(props: ReactCompassProps, context: Any) = this()
   }
   
   @JSImport("react-compass", "ReactCompass")
   @js.native
-  class ReactCompass protected ()
-    extends Component[ReactCompassProps, js.Any, js.Any] {
+  open class ReactCompass protected () extends Component[ReactCompassProps, Any, Any] {
     def this(props: ReactCompassProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ReactCompassProps, context: js.Any) = this()
+    def this(props: ReactCompassProps, context: Any) = this()
   }
   
   inline def directionName(dir: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("directionName")(dir.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -59,7 +58,7 @@ object mod {
       
       inline def setDirectionNamesUndefined: Self = StObject.set(x, "directionNames", js.undefined)
       
-      inline def setDirectionNamesVarargs(value: String*): Self = StObject.set(x, "directionNames", js.Array(value :_*))
+      inline def setDirectionNamesVarargs(value: String*): Self = StObject.set(x, "directionNames", js.Array(value*))
     }
   }
 }

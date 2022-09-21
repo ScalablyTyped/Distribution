@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteUsagePlanRequest extends StObject {
   
   /**
-    * [Required] The Id of the to-be-deleted usage plan.
+    * The Id of the to-be-deleted usage plan.
     */
   var usagePlanId: String
 }

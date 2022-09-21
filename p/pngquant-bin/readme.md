@@ -10,15 +10,12 @@ Typings are for version 4.0
 | ------------------ | :-------------: |
 | Full name          | pngquant-bin |
 | Keywords           | imagemin, compress, image, img, minify, optimize, png, pngquant |
-| # releases         | 4 |
-| # dependents       | 61 |
-| # downloads        | 29964765 |
-| # stars            | 5 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2692124.0 |
+| # stars            | 104.0 |
 
 ## Links
-- [Homepage](https://github.com/imagemin/pngquant-bin#readme)
-- [Bugs](https://github.com/imagemin/pngquant-bin/issues)
-- [Repository](https://github.com/imagemin/pngquant-bin)
 - [Npm](https://www.npmjs.com/package/pngquant-bin)
     
 

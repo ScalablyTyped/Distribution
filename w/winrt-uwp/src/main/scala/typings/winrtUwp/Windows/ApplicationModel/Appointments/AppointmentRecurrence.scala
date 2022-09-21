@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents when and how often an appointment occurs. */
 trait AppointmentRecurrence extends StObject {
   
-  var calendarIdentifier: js.Any
+  var calendarIdentifier: Any
   
   /* unmapped type */
   /** Gets or sets the day on which an appointment occurs. Day is of type UInt32 , has a default value of 1, and can be a value from 1 to 31. */
@@ -36,7 +35,7 @@ trait AppointmentRecurrence extends StObject {
   var unit: AppointmentRecurrenceUnit
   
   /** Gets or sets the date and time until which an appointment is valid. Until is of type IReference(DateTime) and is NULL by default. Until is mutually exclusive with Occurrences . */
-  var until: Date
+  var until: js.Date
   
   /** Gets or sets a AppointmentWeekOfMonth -typed value that indicates the week of the month for which the appointment occurs. The first week is the default. */
   var weekOfMonth: AppointmentWeekOfMonth
@@ -44,7 +43,7 @@ trait AppointmentRecurrence extends StObject {
 object AppointmentRecurrence {
   
   inline def apply(
-    calendarIdentifier: js.Any,
+    calendarIdentifier: Any,
     day: Double,
     daysOfWeek: AppointmentDaysOfWeek,
     interval: Double,
@@ -53,7 +52,7 @@ object AppointmentRecurrence {
     recurrenceType: RecurrenceType,
     timeZone: String,
     unit: AppointmentRecurrenceUnit,
-    until: Date,
+    until: js.Date,
     weekOfMonth: AppointmentWeekOfMonth
   ): AppointmentRecurrence = {
     val __obj = js.Dynamic.literal(calendarIdentifier = calendarIdentifier.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], daysOfWeek = daysOfWeek.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], occurrences = occurrences.asInstanceOf[js.Any], recurrenceType = recurrenceType.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any], until = until.asInstanceOf[js.Any], weekOfMonth = weekOfMonth.asInstanceOf[js.Any])
@@ -62,7 +61,7 @@ object AppointmentRecurrence {
   
   extension [Self <: AppointmentRecurrence](x: Self) {
     
-    inline def setCalendarIdentifier(value: js.Any): Self = StObject.set(x, "calendarIdentifier", value.asInstanceOf[js.Any])
+    inline def setCalendarIdentifier(value: Any): Self = StObject.set(x, "calendarIdentifier", value.asInstanceOf[js.Any])
     
     inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
@@ -80,7 +79,7 @@ object AppointmentRecurrence {
     
     inline def setUnit(value: AppointmentRecurrenceUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    inline def setUntil(value: Date): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
+    inline def setUntil(value: js.Date): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
     
     inline def setWeekOfMonth(value: AppointmentWeekOfMonth): Self = StObject.set(x, "weekOfMonth", value.asInstanceOf[js.Any])
   }

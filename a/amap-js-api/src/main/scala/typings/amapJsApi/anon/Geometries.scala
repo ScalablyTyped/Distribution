@@ -9,19 +9,13 @@ trait Geometries
   extends StObject
      with typings.amapJsApi.AMap.GeoJSON.Geometry {
   
-  var geometries: js.Array[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
-  ]
+  var geometries: js.Array[typings.amapJsApi.AMap.GeoJSON.Geometry]
   
   var `type`: GeometryCollection
 }
 object Geometries {
   
-  inline def apply(
-    geometries: js.Array[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
-    ]
-  ): Geometries = {
+  inline def apply(geometries: js.Array[typings.amapJsApi.AMap.GeoJSON.Geometry]): Geometries = {
     val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("GeometryCollection")
     __obj.asInstanceOf[Geometries]
@@ -29,15 +23,9 @@ object Geometries {
   
   extension [Self <: Geometries](x: Self) {
     
-    inline def setGeometries(
-      value: js.Array[
-          /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
-        ]
-    ): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setGeometries(value: js.Array[typings.amapJsApi.AMap.GeoJSON.Geometry]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    inline def setGeometriesVarargs(
-      value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object)*
-    ): Self = StObject.set(x, "geometries", js.Array(value :_*))
+    inline def setGeometriesVarargs(value: typings.amapJsApi.AMap.GeoJSON.Geometry*): Self = StObject.set(x, "geometries", js.Array(value*))
     
     inline def setType(value: GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

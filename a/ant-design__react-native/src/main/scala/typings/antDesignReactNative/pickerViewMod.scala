@@ -9,7 +9,7 @@ object pickerViewMod {
   
   @JSImport("@ant-design/react-native/lib/picker-view", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antDesignReactNative.pickerViewPickerViewMod.default
   /* static members */
   object default {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for re-reselect
 
-Typings are for version 4.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Enhance Reselect selectors with deeper memoization and cache management
@@ -10,10 +10,10 @@ Enhance Reselect selectors with deeper memoization and cache management
 | ------------------ | :-------------: |
 | Full name          | re-reselect |
 | Keywords           | react, redux, reselect, memoize, cache |
-| # releases         | 7 |
-| # dependents       | 44 |
-| # downloads        | 3234258 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 424207.6666666667 |
+| # stars            | 1008.0 |
 
 ## Links
 - [Homepage](https://github.com/toomuchdesign/re-reselect#readme)

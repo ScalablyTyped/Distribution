@@ -1,12 +1,12 @@
 package typings.maximMazurokGapiClientSasportal.gapi.client.sasportal
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientSasportal.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientSasportal.anon.Alt
-import typings.maximMazurokGapiClientSasportal.anon.Name
-import typings.maximMazurokGapiClientSasportal.anon.PageSize
-import typings.maximMazurokGapiClientSasportal.anon.Parent
-import typings.maximMazurokGapiClientSasportal.anon.QuotaUser
-import typings.maximMazurokGapiClientSasportal.anon.UpdateMask
+import typings.maximMazurokGapiClientSasportal.anon.Fields
+import typings.maximMazurokGapiClientSasportal.anon.Key
+import typings.maximMazurokGapiClientSasportal.anon.PrettyPrint
+import typings.maximMazurokGapiClientSasportal.anon.Uploadprotocol
 import typings.maximMazurokGapiClientSasportal.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ trait NodesResource extends StObject {
   
   def create(request: Alt, body: SasPortalNode): Request[SasPortalNode] = js.native
   /** Creates a new node. */
-  def create(request: Parent): Request[SasPortalNode] = js.native
+  def create(request: Uploadprotocol): Request[SasPortalNode] = js.native
   
   /** Deletes a node. */
   def delete(): Request[js.Object] = js.native
-  def delete(request: Name): Request[js.Object] = js.native
+  def delete(request: Key): Request[js.Object] = js.native
   
   var deployments: DeploymentsResource = js.native
   
@@ -29,19 +29,19 @@ trait NodesResource extends StObject {
   
   /** Returns a requested node. */
   def get(): Request[SasPortalNode] = js.native
-  def get(request: Name): Request[SasPortalNode] = js.native
+  def get(request: Key): Request[SasPortalNode] = js.native
   
   /** Lists nodes. */
   def list(): Request[SasPortalListNodesResponse] = js.native
-  def list(request: PageSize): Request[SasPortalListNodesResponse] = js.native
+  def list(request: Fields): Request[SasPortalListNodesResponse] = js.native
   
-  def move(request: Name, body: SasPortalMoveNodeRequest): Request[SasPortalOperation] = js.native
+  def move(request: Key, body: SasPortalMoveNodeRequest): Request[SasPortalOperation] = js.native
   /** Moves a node under another node or customer. */
   def move(request: Xgafv): Request[SasPortalOperation] = js.native
   
   var nodes: NodesResource = js.native
   
-  def patch(request: QuotaUser, body: SasPortalNode): Request[SasPortalNode] = js.native
   /** Updates an existing node. */
-  def patch(request: UpdateMask): Request[SasPortalNode] = js.native
+  def patch(request: AccesstokenAlt): Request[SasPortalNode] = js.native
+  def patch(request: PrettyPrint, body: SasPortalNode): Request[SasPortalNode] = js.native
 }

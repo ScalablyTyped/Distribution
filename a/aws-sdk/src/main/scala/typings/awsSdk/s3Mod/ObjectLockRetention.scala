@@ -14,7 +14,7 @@ trait ObjectLockRetention extends StObject {
   /**
     * The date on which this Object Lock Retention will expire.
     */
-  var RetainUntilDate: js.UndefOr[Date] = js.undefined
+  var RetainUntilDate: js.UndefOr[js.Date] = js.undefined
 }
 object ObjectLockRetention {
   
@@ -29,7 +29,7 @@ object ObjectLockRetention {
     
     inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    inline def setRetainUntilDate(value: Date): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
+    inline def setRetainUntilDate(value: js.Date): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
     
     inline def setRetainUntilDateUndefined: Self = StObject.set(x, "RetainUntilDate", js.undefined)
   }

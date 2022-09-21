@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AnnotationsTunnelTypeHeightControlPointOptions extends StObject {
   
-  var events: js.UndefOr[js.Any] = js.undefined
+  var events: js.UndefOr[Any] = js.undefined
 }
 object AnnotationsTunnelTypeHeightControlPointOptions {
   
@@ -17,7 +17,7 @@ object AnnotationsTunnelTypeHeightControlPointOptions {
   
   extension [Self <: AnnotationsTunnelTypeHeightControlPointOptions](x: Self) {
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
   }

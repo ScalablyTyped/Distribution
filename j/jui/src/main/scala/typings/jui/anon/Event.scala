@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Event extends StObject {
   
-  var event: js.UndefOr[js.Any] = js.undefined
+  var event: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {String/DOMElement} [target=null]
     * Designates a target selector when an autofill route is not a target
     */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var tpl: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {Array} words
@@ -31,15 +31,15 @@ object Event {
   
   extension [Self <: Event](x: Self) {
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     
@@ -47,6 +47,6 @@ object Event {
     
     inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value*))
   }
 }

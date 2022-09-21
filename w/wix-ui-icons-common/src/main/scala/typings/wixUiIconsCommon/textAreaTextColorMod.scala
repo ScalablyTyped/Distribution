@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object textAreaTextColorMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/TextAreaTextColor", JSImport.Default)
   @js.native
-  val default: SFC[TextAreaTextColorProps] = js.native
+  val default: FC[TextAreaTextColorProps] = js.native
   
   trait TextAreaTextColorProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object TextAreaTextColorProps {
     
@@ -29,14 +29,14 @@ object textAreaTextColorMod extends Shortcut {
     
     extension [Self <: TextAreaTextColorProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[TextAreaTextColorProps]
+  type _To = FC[TextAreaTextColorProps]
   
   /* This means you don't have to write `default`, but can instead just say `textAreaTextColorMod.foo` */
-  override def _to: SFC[TextAreaTextColorProps] = default
+  override def _to: FC[TextAreaTextColorProps] = default
 }

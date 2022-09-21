@@ -8,14 +8,14 @@ object mod {
   
   @JSImport("blocking-proxy", "BPClient")
   @js.native
-  class BPClient protected ()
+  open class BPClient protected ()
     extends typings.blockingProxy.clientMod.BPClient {
     def this(bpUrlValue: String) = this()
   }
   
   @JSImport("blocking-proxy", "BlockingProxy")
   @js.native
-  class BlockingProxy protected ()
+  open class BlockingProxy protected ()
     extends typings.blockingProxy.blockingproxyMod.BlockingProxy {
     def this(seleniumAddress: String) = this()
     def this(seleniumAddress: String, highlightDelay: Double) = this()

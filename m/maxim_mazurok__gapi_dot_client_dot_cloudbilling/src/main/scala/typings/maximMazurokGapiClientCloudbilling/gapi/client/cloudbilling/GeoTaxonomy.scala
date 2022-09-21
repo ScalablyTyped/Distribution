@@ -25,7 +25,7 @@ object GeoTaxonomy {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

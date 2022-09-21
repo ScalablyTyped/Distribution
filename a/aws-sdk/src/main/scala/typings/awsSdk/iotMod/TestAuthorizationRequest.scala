@@ -47,7 +47,7 @@ object TestAuthorizationRequest {
     
     inline def setAuthInfos(value: AuthInfos): Self = StObject.set(x, "authInfos", value.asInstanceOf[js.Any])
     
-    inline def setAuthInfosVarargs(value: AuthInfo*): Self = StObject.set(x, "authInfos", js.Array(value :_*))
+    inline def setAuthInfosVarargs(value: AuthInfo*): Self = StObject.set(x, "authInfos", js.Array(value*))
     
     inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
@@ -61,13 +61,13 @@ object TestAuthorizationRequest {
     
     inline def setPolicyNamesToAddUndefined: Self = StObject.set(x, "policyNamesToAdd", js.undefined)
     
-    inline def setPolicyNamesToAddVarargs(value: PolicyName*): Self = StObject.set(x, "policyNamesToAdd", js.Array(value :_*))
+    inline def setPolicyNamesToAddVarargs(value: PolicyName*): Self = StObject.set(x, "policyNamesToAdd", js.Array(value*))
     
     inline def setPolicyNamesToSkip(value: PolicyNames): Self = StObject.set(x, "policyNamesToSkip", value.asInstanceOf[js.Any])
     
     inline def setPolicyNamesToSkipUndefined: Self = StObject.set(x, "policyNamesToSkip", js.undefined)
     
-    inline def setPolicyNamesToSkipVarargs(value: PolicyName*): Self = StObject.set(x, "policyNamesToSkip", js.Array(value :_*))
+    inline def setPolicyNamesToSkipVarargs(value: PolicyName*): Self = StObject.set(x, "policyNamesToSkip", js.Array(value*))
     
     inline def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     

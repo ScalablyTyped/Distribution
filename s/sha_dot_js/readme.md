@@ -10,10 +10,10 @@ Streamable SHA hashes in pure javascript
 | ------------------ | :-------------: |
 | Full name          | sha.js |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 565 |
-| # downloads        | 535791945 |
-| # stars            | 11 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6.1009490333333336E7 |
+| # stars            | 269.0 |
 
 ## Links
 - [Homepage](https://github.com/crypto-browserify/sha.js)

@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Base64 = java.lang.String
+type Base64 = String
 
-type Byte = scala.Double
+type Byte = Double
 
-type Bytes = java.lang.String
+type Bytes = String
 
-type Hex = java.lang.String
+type Hex = String
 
-type OID = java.lang.String
+type OID = String
 
-type Utf8 = java.lang.String
+type Utf8 = String

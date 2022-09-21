@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents an image in the worksheet. To get the corresponding `Shape` object, use `Image.shape`.
   *
-  * Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait ImageLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait ImageLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Returns the format of the image.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the shape identifier for the image object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns the `Shape` object associated with the image.
     *
-    * Returns the Shape object associated with the image.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var shape: js.UndefOr[ShapeLoadOptions] = js.undefined

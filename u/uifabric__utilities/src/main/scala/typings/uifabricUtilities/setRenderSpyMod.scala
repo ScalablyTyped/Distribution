@@ -13,5 +13,5 @@ object setRenderSpyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def setRenderSpy(wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]): SinonSpy[js.Array[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setRenderSpy")(wrapper.asInstanceOf[js.Any]).asInstanceOf[SinonSpy[js.Array[js.Any], js.Any]]
+  inline def setRenderSpy(wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]): SinonSpy[js.Array[Any], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setRenderSpy")(wrapper.asInstanceOf[js.Any]).asInstanceOf[SinonSpy[js.Array[Any], Any]]
 }

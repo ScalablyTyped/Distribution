@@ -7,14 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaConferenceRequestStatus extends StObject {
   
   /**
-    * The current status of the conference create request. Read-only. The
-    * possible values are:   - &quot;pending&quot;: the conference create
-    * request is still being processed. - &quot;success&quot;: the conference
-    * create request succeeded, the entry points are populated. -
-    * &quot;failure&quot;: the conference create request failed, there are no
-    * entry points.
+    * The current status of the conference create request. Read-only.
+    * The possible values are:
+    * - "pending": the conference create request is still being processed.
+    * - "success": the conference create request succeeded, the entry points are populated.
+    * - "failure": the conference create request failed, there are no entry points.
     */
-  var statusCode: js.UndefOr[String] = js.undefined
+  var statusCode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaConferenceRequestStatus {
   
@@ -26,6 +25,8 @@ object SchemaConferenceRequestStatus {
   extension [Self <: SchemaConferenceRequestStatus](x: Self) {
     
     inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    
+    inline def setStatusCodeNull: Self = StObject.set(x, "statusCode", null)
     
     inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }

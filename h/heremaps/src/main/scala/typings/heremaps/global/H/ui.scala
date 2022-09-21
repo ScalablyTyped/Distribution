@@ -17,7 +17,7 @@ object ui {
     */
   @JSGlobal("H.ui.Control")
   @js.native
-  class Control ()
+  open class Control ()
     extends StObject
        with typings.heremaps.H.ui.Control
   
@@ -30,7 +30,7 @@ object ui {
     * Constructor
     * @param opt_options {H.ui.DistanceMeasurement.Options=} - optional parameters to be passed to this control
     */
-  class DistanceMeasurement ()
+  open class DistanceMeasurement ()
     extends StObject
        with typings.heremaps.H.ui.Control {
     def this(opt_options: Options) = this()
@@ -41,7 +41,7 @@ object ui {
     */
   @JSGlobal("H.ui.InfoBubble")
   @js.native
-  class InfoBubble protected ()
+  open class InfoBubble protected ()
     extends StObject
        with typings.heremaps.H.ui.InfoBubble {
     /**
@@ -114,7 +114,7 @@ object ui {
     * Constructor
     * @param opt_options {H.ui.MapSettingsControl.Options=} - optional parameters to be passed to this control
     */
-  class MapSettingsControl ()
+  open class MapSettingsControl ()
     extends StObject
        with typings.heremaps.H.ui.MapSettingsControl {
     def this(opt_options: typings.heremaps.H.ui.MapSettingsControl.Options) = this()
@@ -129,7 +129,7 @@ object ui {
     * Constructor
     * @param opt_options {H.ui.Pano.Options=} - optional parameters to be passed to the map.
     */
-  class Pano ()
+  open class Pano ()
     extends StObject
        with typings.heremaps.H.ui.Control {
     def this(opt_options: typings.heremaps.H.ui.Pano.Options) = this()
@@ -144,7 +144,7 @@ object ui {
     * Constructor
     * @param opt_options {H.ui.ScaleBar.Options=} - optional parameters to be passed to this scale bar.
     */
-  class ScaleBar ()
+  open class ScaleBar ()
     extends StObject
        with typings.heremaps.H.ui.ScaleBar {
     def this(opt_options: typings.heremaps.H.ui.ScaleBar.Options) = this()
@@ -155,7 +155,7 @@ object ui {
     */
   @JSGlobal("H.ui.UI")
   @js.native
-  class UI protected ()
+  open class UI protected ()
     extends StObject
        with typings.heremaps.H.ui.UI {
     /**
@@ -228,7 +228,7 @@ object ui {
     * Constructor
     * @param opt_options {H.ui.ZoomControl.Options=} - optional parameters to be passed to the map.
     */
-  class ZoomControl ()
+  open class ZoomControl ()
     extends StObject
        with typings.heremaps.H.ui.ZoomControl {
     def this(opt_options: typings.heremaps.H.ui.ZoomControl.Options) = this()
@@ -243,7 +243,7 @@ object ui {
     * Constructor
     * @param opt_options {H.ui.ZoomRectangle.Options=} - optional parameters to be passed to this control
     */
-  class ZoomRectangle ()
+  open class ZoomRectangle ()
     extends StObject
        with typings.heremaps.H.ui.Control {
     def this(opt_options: typings.heremaps.H.ui.ZoomRectangle.Options) = this()
@@ -262,7 +262,7 @@ object ui {
       * @param opt_className {string=} - an optional class name to be used on this element
       * @param opt_children {Array<H.ui.base.Element>=} - optional child elements to be added to this container
       */
-    class Container ()
+    open class Container ()
       extends StObject
          with typings.heremaps.H.ui.base.Container {
       def this(opt_elementType: String) = this()
@@ -297,7 +297,7 @@ object ui {
       * @param opt_elementType {string=} - the type of HTML element this UI element renders as, default is 'div'
       * @param opt_className {string=} - an optional class name to be used on this element
       */
-    class Element ()
+    open class Element ()
       extends StObject
          with typings.heremaps.H.ui.base.Element {
       def this(opt_elementType: String) = this()
@@ -316,11 +316,11 @@ object ui {
       */
     @JSGlobal("H.ui.i18n.Localization")
     @js.native
-    class Localization protected ()
+    open class Localization protected ()
       extends StObject
          with typings.heremaps.H.ui.i18n.Localization {
       def this(locale: String) = this()
-      def this(locale: String, opt_translationMap: js.Any) = this()
+      def this(locale: String, opt_translationMap: Any) = this()
       
       /**
         * This method returns translation keys for current locale. Keys from this set can be used to get translations via translate method.

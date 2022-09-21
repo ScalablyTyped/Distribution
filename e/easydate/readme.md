@@ -11,9 +11,9 @@ get date and/or time by pattern
 | Full name          | easydate |
 | Keywords           | datetime, dateformat, formatting, date, time |
 | # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 20683 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 693.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/easydate)

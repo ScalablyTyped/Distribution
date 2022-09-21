@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs-backend-webgl
 
-Typings are for version 2.7.0
+Typings are for version 3.20.0
 
 ## Library description:
 GPU accelerated WebGL backend for TensorFlow.js
@@ -10,10 +10,10 @@ GPU accelerated WebGL backend for TensorFlow.js
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-backend-webgl |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 9 |
-| # downloads        | 467827 |
-| # stars            | 0 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 405049.6666666667 |
+| # stars            | 16517.0 |
 
 ## Links
 - [Homepage](https://github.com/tensorflow/tfjs#readme)

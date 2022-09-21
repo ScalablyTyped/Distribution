@@ -22,6 +22,6 @@ object OwnershipControls {
     
     inline def setRules(value: OwnershipControlsRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: OwnershipControlsRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: OwnershipControlsRule*): Self = StObject.set(x, "Rules", js.Array(value*))
   }
 }

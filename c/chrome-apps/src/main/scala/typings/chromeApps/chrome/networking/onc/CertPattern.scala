@@ -41,7 +41,7 @@ object CertPattern {
     
     inline def setEnrollmentURIUndefined: Self = StObject.set(x, "EnrollmentURI", js.undefined)
     
-    inline def setEnrollmentURIVarargs(value: String*): Self = StObject.set(x, "EnrollmentURI", js.Array(value :_*))
+    inline def setEnrollmentURIVarargs(value: String*): Self = StObject.set(x, "EnrollmentURI", js.Array(value*))
     
     inline def setIssuer(value: IssuerSubjectPattern): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object CertPattern {
     
     inline def setIssuerCARefUndefined: Self = StObject.set(x, "IssuerCARef", js.undefined)
     
-    inline def setIssuerCARefVarargs(value: String*): Self = StObject.set(x, "IssuerCARef", js.Array(value :_*))
+    inline def setIssuerCARefVarargs(value: String*): Self = StObject.set(x, "IssuerCARef", js.Array(value*))
     
     inline def setIssuerSubjectPattern(value: IssuerSubjectPattern): Self = StObject.set(x, "IssuerSubjectPattern", value.asInstanceOf[js.Any])
     

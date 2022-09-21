@@ -14,29 +14,24 @@ trait BootstrapClientTreeViewNodeClickEventArgs
   /**
     * Gets an HTML object that contains the processed Tree View node.
     */
-  var htmlElement: js.Any
+  var htmlElement: Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
 }
 object BootstrapClientTreeViewNodeClickEventArgs {
   
-  inline def apply(
-    htmlElement: js.Any,
-    htmlEvent: js.Any,
-    node: BootstrapClientTreeViewNode,
-    processOnServer: Boolean
-  ): BootstrapClientTreeViewNodeClickEventArgs = {
+  inline def apply(htmlElement: Any, htmlEvent: Any, node: BootstrapClientTreeViewNode, processOnServer: Boolean): BootstrapClientTreeViewNodeClickEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapClientTreeViewNodeClickEventArgs]
   }
   
   extension [Self <: BootstrapClientTreeViewNodeClickEventArgs](x: Self) {
     
-    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

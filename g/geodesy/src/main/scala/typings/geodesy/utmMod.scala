@@ -12,7 +12,7 @@ object utmMod {
   
   @JSImport("geodesy/utm", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Utm {
     def this(zone: Double, hemisphere: Hemisphere, easting: Double, northing: Double) = this()
@@ -84,7 +84,7 @@ object utmMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("geodesy/utm", "Dms")
   @js.native
-  class Dms ()
+  open class Dms ()
     extends typings.geodesy.latlonEllipsoidalDatumMod.Dms
   object Dms {
     
@@ -139,7 +139,7 @@ object utmMod {
   
   @JSImport("geodesy/utm", "LatLon")
   @js.native
-  class LatLon () extends LatLonUtm
+  open class LatLon () extends LatLonUtm
   
   /* Rewritten from type alias, can be one of: 
     - typings.geodesy.geodesyStrings.N

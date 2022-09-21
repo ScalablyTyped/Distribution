@@ -68,15 +68,15 @@ object DataPilotSource {
     getDimensions: () => XNameAccess,
     getFilteredResults: SeqEquiv[DataPilotFieldFilter] => SafeArray[Double],
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     getResults: () => SafeArray[SafeArray[DataResult]],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeRefreshListener: XRefreshListener => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    setPropertyValue: (String, Any) => Unit
   ): DataPilotSource = {
     val __obj = js.Dynamic.literal(ColumnFieldCount = ColumnFieldCount.asInstanceOf[js.Any], ColumnGrand = ColumnGrand.asInstanceOf[js.Any], DataFieldCount = DataFieldCount.asInstanceOf[js.Any], Dimensions = Dimensions.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Results = Results.asInstanceOf[js.Any], RowFieldCount = RowFieldCount.asInstanceOf[js.Any], RowGrand = RowGrand.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addRefreshListener = js.Any.fromFunction1(addRefreshListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getDimensions = js.Any.fromFunction0(getDimensions), getFilteredResults = js.Any.fromFunction1(getFilteredResults), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getResults = js.Any.fromFunction0(getResults), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeRefreshListener = js.Any.fromFunction1(removeRefreshListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[DataPilotSource]

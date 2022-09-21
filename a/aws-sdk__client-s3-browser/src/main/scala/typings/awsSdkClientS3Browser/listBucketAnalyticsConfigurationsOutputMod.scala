@@ -8,5 +8,5 @@ object listBucketAnalyticsConfigurationsOutputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/ListBucketAnalyticsConfigurationsOutput", "ListBucketAnalyticsConfigurationsOutput")
   @js.native
-  val ListBucketAnalyticsConfigurationsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListBucketAnalyticsConfigurationsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* protected */ abstract class PubSub () extends StObject {
   /* protected */ def this(options: PubSubOptions) = this()
   
-  /* private */ def _createStream(channel: js.Any): Unit = js.native
+  /* private */ def _createStream(channel: Any): Unit = js.native
   
-  /* protected */ def _emit(channel: String, data: StringDictionary[js.Any]): Unit = js.native
+  /* protected */ def _emit(channel: String, data: StringDictionary[Any]): Unit = js.native
   
-  /* protected */ def _publish(channels: js.Array[String], data: js.Any, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  /* protected */ def _publish(channels: js.Array[String], data: Any, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   
-  /* private */ def _removeStream(channel: js.Any, stream: js.Any): Unit = js.native
+  /* private */ def _removeStream(channel: Any, stream: Any): Unit = js.native
   
   /* protected */ def _subscribe(channel: String, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def publish(
     channels: js.Array[String],
-    data: StringDictionary[js.Any],
+    data: StringDictionary[Any],
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   
@@ -53,5 +53,5 @@ object PubSub {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def shallowCopy(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def shallowCopy(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

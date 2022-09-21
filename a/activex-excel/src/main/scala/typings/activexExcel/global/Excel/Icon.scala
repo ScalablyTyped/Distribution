@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Icon")
 @js.native
-/* private */ class Icon ()
+/* private */ open class Icon ()
   extends StObject
      with typings.activexExcel.Excel.Icon {
   

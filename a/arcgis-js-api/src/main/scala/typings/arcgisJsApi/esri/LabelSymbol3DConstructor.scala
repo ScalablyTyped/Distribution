@@ -17,5 +17,5 @@ trait LabelSymbol3DConstructor
 Instantiable0[LabelSymbol3D]
      with Instantiable1[/* properties */ LabelSymbol3DProperties, LabelSymbol3D] {
   
-  def fromJSON(json: js.Any): LabelSymbol3D = js.native
+  def fromJSON(json: Any): LabelSymbol3D = js.native
 }

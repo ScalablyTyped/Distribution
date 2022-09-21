@@ -39,7 +39,7 @@ object AudioTrack {
     *        If this track is the one that is currently playing. If this track is part of
     *        an {@link AudioTrackList}, only one {@link AudioTrack} will be enabled.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Track {
     def this(options: AudioTrackOptions) = this()

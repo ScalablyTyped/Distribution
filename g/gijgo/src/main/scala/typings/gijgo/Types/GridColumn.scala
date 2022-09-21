@@ -14,13 +14,13 @@ trait GridColumn extends StObject {
   
   var editField: js.UndefOr[String] = js.undefined
   
-  var editor: js.UndefOr[js.Any] = js.undefined
+  var editor: js.UndefOr[Any] = js.undefined
   
-  var events: js.UndefOr[js.Any] = js.undefined
+  var events: js.UndefOr[Any] = js.undefined
   
   var field: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[js.Any] = js.undefined
+  var filter: js.UndefOr[Any] = js.undefined
   
   var filterable: js.UndefOr[Boolean] = js.undefined
   
@@ -38,7 +38,7 @@ trait GridColumn extends StObject {
   
   var priority: js.UndefOr[Double] = js.undefined
   
-  var renderer: js.UndefOr[js.Any] = js.undefined
+  var renderer: js.UndefOr[Any] = js.undefined
   
   var sortable: js.UndefOr[Boolean] = js.undefined
   
@@ -79,11 +79,11 @@ object GridColumn {
     
     inline def setEditFieldUndefined: Self = StObject.set(x, "editField", js.undefined)
     
-    inline def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
@@ -91,7 +91,7 @@ object GridColumn {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
@@ -127,7 +127,7 @@ object GridColumn {
     
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     

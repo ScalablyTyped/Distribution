@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonSpyCallApi[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StObject {
+trait SinonSpyCallApi[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObject {
   
   // Properties
   /**
@@ -19,16 +19,16 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StO
     * Useful if a function is called with more than one callback, and simply calling the first callback is not desired.
     * @param pos
     */
-  def callArg(pos: Double): Unit = js.native
+  def callArg(pos: Double): js.Array[Any] = js.native
   
-  def callArgOn(pos: Double, obj: js.Any, args: js.Any*): Unit = js.native
+  def callArgOn(pos: Double, obj: Any, args: Any*): js.Array[Any] = js.native
   
-  def callArgOnWith(pos: Double, obj: js.Any, args: js.Any*): Unit = js.native
+  def callArgOnWith(pos: Double, obj: Any, args: Any*): js.Array[Any] = js.native
   
   /**
     * Like callArg, but with arguments.
     */
-  def callArgWith(pos: Double, args: js.Any*): Unit = js.native
+  def callArgWith(pos: Double, args: Any*): js.Array[Any] = js.native
   
   // Methods
   /**
@@ -36,7 +36,7 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StO
     * calledOn also accepts a matcher spyCall.calledOn(sinon.match(fn)) (see matchers).
     * @param obj
     */
-  def calledOn(obj: js.Any): Boolean = js.native
+  def calledOn(obj: Any): Boolean = js.native
   
   /**
     * Returns true if spy was called at exactly once with the provided arguments.
@@ -73,7 +73,7 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StO
     * @param args
     */
   def calledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
   ): Boolean = js.native
   
   /**
@@ -97,7 +97,7 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StO
     * @param args
     */
   def notCalledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
   ): Boolean = js.native
   
   /**
@@ -115,7 +115,7 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StO
   /**
     * Returns true if spy threw the provided exception object at least once.
     */
-  def threw(obj: js.Any): Boolean = js.native
+  def threw(obj: Any): Boolean = js.native
   /**
     * Returns true if spy threw an exception of the provided type at least once.
     */
@@ -127,15 +127,15 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[js.Any] */, TReturnValue] extends StO
     * Returns an Array with all callbacks return values in the order they were called, if no error is thrown.
     * Also aliased as invokeCallback.
     */
-  def `yield`(args: js.Any*): Unit = js.native
+  def `yield`(args: Any*): js.Array[Any] = js.native
   
-  def yieldOn(obj: js.Any, args: js.Any*): Unit = js.native
+  def yieldOn(obj: Any, args: Any*): js.Array[Any] = js.native
   
   /**
     * Invokes callbacks passed as a property of an object to the stub.
     * Like yield, yieldTo grabs the first matching argument, finds the callback and calls it with the (optional) arguments.
     */
-  def yieldTo(property: String, args: js.Any*): Unit = js.native
+  def yieldTo(property: String, args: Any*): js.Array[Any] = js.native
   
-  def yieldToOn(property: String, obj: js.Any, args: js.Any*): Unit = js.native
+  def yieldToOn(property: String, obj: Any, args: Any*): js.Array[Any] = js.native
 }

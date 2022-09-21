@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientUploadControlValidationErrorOccurredEventArgs")
 @js.native
-class ASPxClientUploadControlValidationErrorOccurredEventArgs protected ()
+open class ASPxClientUploadControlValidationErrorOccurredEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientUploadControlValidationErrorOccurredEventArgs {
   /**

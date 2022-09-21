@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("ix", "Dictionary")
   @js.native
-  class Dictionary[TKey, TValue] ()
+  open class Dictionary[TKey, TValue] ()
     extends StObject
        with typings.ixJs.Ix.Dictionary[TKey, TValue] {
     def this(capacity: Double) = this()
@@ -63,7 +63,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ix", "Enumerable")
   @js.native
-  class EnumerableCls[T] protected ()
+  open class EnumerableCls[T] protected ()
     extends StObject
        with Enumerable[T] {
     def this(getEnumerator: js.Function0[Enumerator[T]]) = this()
@@ -78,7 +78,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("ix", "Enumerator")
   @js.native
-  class EnumeratorCls[T] protected ()
+  open class EnumeratorCls[T] protected ()
     extends StObject
        with Enumerator[T] {
     def this(moveNext: js.Function0[Boolean], getCurrent: js.Function0[T], dispose: js.Function0[Unit]) = this()

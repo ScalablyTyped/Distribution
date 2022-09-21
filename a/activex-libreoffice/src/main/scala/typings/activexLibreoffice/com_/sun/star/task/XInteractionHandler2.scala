@@ -29,7 +29,7 @@ object XInteractionHandler2 {
     acquire: () => Unit,
     handle: XInteractionRequest => Unit,
     handleInteractionRequest: XInteractionRequest => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XInteractionHandler2 = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), handle = js.Any.fromFunction1(handle), handleInteractionRequest = js.Any.fromFunction1(handleInteractionRequest), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

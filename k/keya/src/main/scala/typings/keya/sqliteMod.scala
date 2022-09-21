@@ -10,7 +10,7 @@ object sqliteMod {
   
   @JSImport("keya/out/node/sqlite", JSImport.Default)
   @js.native
-  class default[T] () extends SQLiteStore[T]
+  open class default[T] () extends SQLiteStore[T]
   /* static members */
   object default {
     
@@ -29,6 +29,6 @@ object sqliteMod {
     
     var file: String = js.native
     
-    /* private */ var statements: js.Any = js.native
+    /* private */ var statements: Any = js.native
   }
 }

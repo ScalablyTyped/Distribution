@@ -11,12 +11,10 @@ object buttonToolbarMod {
   
   @JSImport("react-bootstrap/lib/ButtonToolbar", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ButtonToolbarProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ButtonToolbarProps, js.Object, Any]
   
-  @js.native
-  trait ButtonToolbar
-    extends Component[ButtonToolbarProps, js.Object, js.Any]
+  type ButtonToolbar = Component[ButtonToolbarProps, js.Object, Any]
   
   trait ButtonToolbarProps
     extends StObject

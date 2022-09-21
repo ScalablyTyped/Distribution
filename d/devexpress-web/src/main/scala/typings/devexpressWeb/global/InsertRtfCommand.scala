@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertRtfCommand")
 @js.native
-class InsertRtfCommand ()
+open class InsertRtfCommand ()
   extends StObject
      with typings.devexpressWeb.InsertRtfCommand {
   

@@ -8,5 +8,5 @@ object putRepositoryTriggersOutputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/PutRepositoryTriggersOutput", "PutRepositoryTriggersOutput")
   @js.native
-  val PutRepositoryTriggersOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutRepositoryTriggersOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

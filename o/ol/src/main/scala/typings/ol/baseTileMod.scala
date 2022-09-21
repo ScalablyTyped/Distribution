@@ -13,7 +13,7 @@ object baseTileMod {
   
   @JSImport("ol/layer/BaseTile", JSImport.Default)
   @js.native
-  class default () extends BaseTileLayer {
+  open class default () extends BaseTileLayer {
     def this(opt_options: Options) = this()
   }
   

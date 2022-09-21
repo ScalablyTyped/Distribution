@@ -10,10 +10,10 @@ object trainMod {
   
   @JSImport("material-ui/svg-icons/maps/train", JSImport.Default)
   @js.native
-  class default () extends MapsTrain
+  open class default () extends MapsTrain
   
   @JSImport("material-ui/svg-icons/maps/train", "MapsTrain")
   @js.native
-  class MapsTrain ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsTrain ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

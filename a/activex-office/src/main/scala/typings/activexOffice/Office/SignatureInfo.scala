@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SignatureInfo extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val CertificateVerificationResults: typings.activexOffice.Office.CertificateVerificationResults
   
@@ -15,9 +15,9 @@ trait SignatureInfo extends StObject {
   
   val Creator: Double
   
-  def GetCertificateDetail(certdet: CertificateDetail): js.Any
+  def GetCertificateDetail(certdet: CertificateDetail): Any
   
-  def GetSignatureDetail(sigdet: SignatureDetail): js.Any
+  def GetSignatureDetail(sigdet: SignatureDetail): Any
   
   val IsCertificateExpired: Boolean
   
@@ -34,9 +34,9 @@ trait SignatureInfo extends StObject {
   
   def SelectCertificateDetailByThumbprint(bstrThumbprint: String): Unit
   
-  def SelectSignatureCertificate(ParentWindow: js.Any): Unit
+  def SelectSignatureCertificate(ParentWindow: Any): Unit
   
-  def ShowSignatureCertificate(ParentWindow: js.Any): Unit
+  def ShowSignatureCertificate(ParentWindow: Any): Unit
   
   var SignatureComment: String
   
@@ -49,12 +49,12 @@ trait SignatureInfo extends StObject {
 object SignatureInfo {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     CertificateVerificationResults: CertificateVerificationResults,
     ContentVerificationResults: ContentVerificationResults,
     Creator: Double,
-    GetCertificateDetail: CertificateDetail => js.Any,
-    GetSignatureDetail: SignatureDetail => js.Any,
+    GetCertificateDetail: CertificateDetail => Any,
+    GetSignatureDetail: SignatureDetail => Any,
     IsCertificateExpired: Boolean,
     IsCertificateRevoked: Boolean,
     IsCertificateUntrusted: Boolean,
@@ -62,8 +62,8 @@ object SignatureInfo {
     OfficeDotSignatureInfo_typekey: SignatureInfo,
     ReadOnly: Boolean,
     SelectCertificateDetailByThumbprint: String => Unit,
-    SelectSignatureCertificate: js.Any => Unit,
-    ShowSignatureCertificate: js.Any => Unit,
+    SelectSignatureCertificate: Any => Unit,
+    ShowSignatureCertificate: Any => Unit,
     SignatureComment: String,
     SignatureImage: IPictureDisp,
     SignatureProvider: String,
@@ -76,7 +76,7 @@ object SignatureInfo {
   
   extension [Self <: SignatureInfo](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCertificateVerificationResults(value: CertificateVerificationResults): Self = StObject.set(x, "CertificateVerificationResults", value.asInstanceOf[js.Any])
     
@@ -84,9 +84,9 @@ object SignatureInfo {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setGetCertificateDetail(value: CertificateDetail => js.Any): Self = StObject.set(x, "GetCertificateDetail", js.Any.fromFunction1(value))
+    inline def setGetCertificateDetail(value: CertificateDetail => Any): Self = StObject.set(x, "GetCertificateDetail", js.Any.fromFunction1(value))
     
-    inline def setGetSignatureDetail(value: SignatureDetail => js.Any): Self = StObject.set(x, "GetSignatureDetail", js.Any.fromFunction1(value))
+    inline def setGetSignatureDetail(value: SignatureDetail => Any): Self = StObject.set(x, "GetSignatureDetail", js.Any.fromFunction1(value))
     
     inline def setIsCertificateExpired(value: Boolean): Self = StObject.set(x, "IsCertificateExpired", value.asInstanceOf[js.Any])
     
@@ -102,9 +102,9 @@ object SignatureInfo {
     
     inline def setSelectCertificateDetailByThumbprint(value: String => Unit): Self = StObject.set(x, "SelectCertificateDetailByThumbprint", js.Any.fromFunction1(value))
     
-    inline def setSelectSignatureCertificate(value: js.Any => Unit): Self = StObject.set(x, "SelectSignatureCertificate", js.Any.fromFunction1(value))
+    inline def setSelectSignatureCertificate(value: Any => Unit): Self = StObject.set(x, "SelectSignatureCertificate", js.Any.fromFunction1(value))
     
-    inline def setShowSignatureCertificate(value: js.Any => Unit): Self = StObject.set(x, "ShowSignatureCertificate", js.Any.fromFunction1(value))
+    inline def setShowSignatureCertificate(value: Any => Unit): Self = StObject.set(x, "ShowSignatureCertificate", js.Any.fromFunction1(value))
     
     inline def setSignatureComment(value: String): Self = StObject.set(x, "SignatureComment", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ object ojlistdataproviderviewMod {
   
   @JSImport("@oracle/oraclejet/ojlistdataproviderview", JSImport.Namespace)
   @js.native
-  class ^[K, D, Kin, Din] protected ()
+  open class ^[K, D, Kin, Din] protected ()
     extends StObject
        with ListDataProviderView[K, D, Kin, Din] {
     def this(dataProvider: DataProvider[K, D]) = this()

@@ -33,7 +33,7 @@ object XCommandPreparation {
   inline def apply(
     acquire: () => Unit,
     prepareCommand: (String, Double) => XPreparedStatement,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCommandPreparation = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), prepareCommand = js.Any.fromFunction2(prepareCommand), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

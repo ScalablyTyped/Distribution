@@ -24,7 +24,10 @@ trait AltFields extends StObject {
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** REQUIRED: The resource for which the policy detail is being requested. See the operation documentation for the appropriate value for this field. */
+  /**
+    * REQUIRED: The resource for which the policy detail is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for
+    * this field.
+    */
   var resource: String
   
   /** Deprecated. Please use quotaUser instead. */

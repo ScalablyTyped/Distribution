@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofSunburstChartFn extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: SunburstChart
 }
 object TypeofSunburstChartFn {
   
-  inline def apply(Locale: js.Any, fn: SunburstChart): TypeofSunburstChartFn = {
+  inline def apply(Locale: Any, fn: SunburstChart): TypeofSunburstChartFn = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSunburstChartFn]
   }
@@ -24,6 +24,6 @@ object TypeofSunburstChartFn {
     
     inline def setFn(value: SunburstChart): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("gaugejs", "Gauge")
   @js.native
-  class Gauge protected ()
+  open class Gauge protected ()
     extends StObject
        with BaseGauge {
     /**
@@ -170,7 +170,7 @@ object mod {
       
       inline def setPercentColorsUndefined: Self = StObject.set(x, "percentColors", js.undefined)
       
-      inline def setPercentColorsVarargs(value: (js.Tuple2[Double, String])*): Self = StObject.set(x, "percentColors", js.Array(value :_*))
+      inline def setPercentColorsVarargs(value: (js.Tuple2[Double, String])*): Self = StObject.set(x, "percentColors", js.Array(value*))
       
       inline def setPointer(value: PointerOptionsiconPathstr): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
       
@@ -186,7 +186,7 @@ object mod {
       
       inline def setStaticZonesUndefined: Self = StObject.set(x, "staticZones", js.undefined)
       
-      inline def setStaticZonesVarargs(value: (StaticZoneOptions | StaticZoneOptionsheightnu)*): Self = StObject.set(x, "staticZones", js.Array(value :_*))
+      inline def setStaticZonesVarargs(value: (StaticZoneOptions | StaticZoneOptionsheightnu)*): Self = StObject.set(x, "staticZones", js.Array(value*))
     }
   }
   

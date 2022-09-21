@@ -2,7 +2,6 @@ package typings.voca
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,16 +44,16 @@ object mod extends Shortcut {
     def countSubstrings(substring: String): Double = js.native
     
     def countWhere(): Double = js.native
-    def countWhere(predicate: Unit, context: js.Any): Double = js.native
+    def countWhere(predicate: Unit, context: Any): Double = js.native
     def countWhere(predicate: CountPredicate): Double = js.native
-    def countWhere(predicate: CountPredicate, context: js.Any): Double = js.native
+    def countWhere(predicate: CountPredicate, context: Any): Double = js.native
     
     def countWords(): Double = js.native
     def countWords(pattern: String): Double = js.native
     def countWords(pattern: String, flags: String): Double = js.native
+    def countWords(pattern: js.RegExp): Double = js.native
+    def countWords(pattern: js.RegExp, flags: String): Double = js.native
     def countWords(pattern: Unit, flags: String): Double = js.native
-    def countWords(pattern: RegExp): Double = js.native
-    def countWords(pattern: RegExp, flags: String): Double = js.native
     
     def decapitalize(): Chain = js.native
     
@@ -129,9 +128,9 @@ object mod extends Shortcut {
     def matches(): Boolean = js.native
     def matches(pattern: String): Boolean = js.native
     def matches(pattern: String, flags: String): Boolean = js.native
+    def matches(pattern: js.RegExp): Boolean = js.native
+    def matches(pattern: js.RegExp, flags: String): Boolean = js.native
     def matches(pattern: Unit, flags: String): Boolean = js.native
-    def matches(pattern: RegExp): Boolean = js.native
-    def matches(pattern: RegExp, flags: String): Boolean = js.native
     
     def pad(): Chain = js.native
     def pad(length: Double): Chain = js.native
@@ -160,21 +159,21 @@ object mod extends Shortcut {
     def replace(pattern: String): Chain = js.native
     def replace(pattern: String, replacement: String): Chain = js.native
     def replace(pattern: String, replacement: ReplacementFunction): Chain = js.native
+    def replace(pattern: js.RegExp): Chain = js.native
+    def replace(pattern: js.RegExp, replacement: String): Chain = js.native
+    def replace(pattern: js.RegExp, replacement: ReplacementFunction): Chain = js.native
     def replace(pattern: Unit, replacement: String): Chain = js.native
     def replace(pattern: Unit, replacement: ReplacementFunction): Chain = js.native
-    def replace(pattern: RegExp): Chain = js.native
-    def replace(pattern: RegExp, replacement: String): Chain = js.native
-    def replace(pattern: RegExp, replacement: ReplacementFunction): Chain = js.native
     
     def replaceAll(): Chain = js.native
     def replaceAll(pattern: String): Chain = js.native
     def replaceAll(pattern: String, replacement: String): Chain = js.native
     def replaceAll(pattern: String, replacement: ReplacementFunction): Chain = js.native
+    def replaceAll(pattern: js.RegExp): Chain = js.native
+    def replaceAll(pattern: js.RegExp, replacement: String): Chain = js.native
+    def replaceAll(pattern: js.RegExp, replacement: ReplacementFunction): Chain = js.native
     def replaceAll(pattern: Unit, replacement: String): Chain = js.native
     def replaceAll(pattern: Unit, replacement: ReplacementFunction): Chain = js.native
-    def replaceAll(pattern: RegExp): Chain = js.native
-    def replaceAll(pattern: RegExp, replacement: String): Chain = js.native
-    def replaceAll(pattern: RegExp, replacement: ReplacementFunction): Chain = js.native
     
     def reverse(): Chain = js.native
     
@@ -183,9 +182,9 @@ object mod extends Shortcut {
     def search(): Double = js.native
     def search(pattern: String): Double = js.native
     def search(pattern: String, fromIndex: Double): Double = js.native
+    def search(pattern: js.RegExp): Double = js.native
+    def search(pattern: js.RegExp, fromIndex: Double): Double = js.native
     def search(pattern: Unit, fromIndex: Double): Double = js.native
-    def search(pattern: RegExp): Double = js.native
-    def search(pattern: RegExp, fromIndex: Double): Double = js.native
     
     def slice(): Chain = js.native
     def slice(start: Double): Chain = js.native
@@ -208,12 +207,12 @@ object mod extends Shortcut {
     def split(): js.Array[String] = js.native
     def split(separator: String): js.Array[String] = js.native
     def split(separator: String, limit: Double): js.Array[String] = js.native
+    def split(separator: js.RegExp): js.Array[String] = js.native
+    def split(separator: js.RegExp, limit: Double): js.Array[String] = js.native
     def split(separator: Unit, limit: Double): js.Array[String] = js.native
-    def split(separator: RegExp): js.Array[String] = js.native
-    def split(separator: RegExp, limit: Double): js.Array[String] = js.native
     
     // Format
-    def sprintf(replacements: js.Any*): Chain = js.native
+    def sprintf(replacements: Any*): Chain = js.native
     
     def startsWith(): Boolean = js.native
     def startsWith(start: String): Boolean = js.native
@@ -272,7 +271,7 @@ object mod extends Shortcut {
     // Chain
     def value(): String = js.native
     
-    def vprintf(replacements: js.Any*): Chain = js.native
+    def vprintf(replacements: Any*): Chain = js.native
     
     def wordWrap(): Chain = js.native
     def wordWrap(options: WordWrapOptions): Chain = js.native
@@ -280,9 +279,9 @@ object mod extends Shortcut {
     def words(): js.Array[String] = js.native
     def words(pattern: String): js.Array[String] = js.native
     def words(pattern: String, flag: String): js.Array[String] = js.native
+    def words(pattern: js.RegExp): js.Array[String] = js.native
+    def words(pattern: js.RegExp, flag: String): js.Array[String] = js.native
     def words(pattern: Unit, flag: String): js.Array[String] = js.native
-    def words(pattern: RegExp): js.Array[String] = js.native
-    def words(pattern: RegExp, flag: String): js.Array[String] = js.native
   }
   
   type CountPredicate = js.Function3[/* character */ String, /* index */ Double, /* str */ String, Boolean]
@@ -317,16 +316,16 @@ object mod extends Shortcut {
     def countSubstrings(substring: String): ExplicitChain[Double] = js.native
     
     def countWhere(): ExplicitChain[Double] = js.native
-    def countWhere(predicate: Unit, context: js.Any): ExplicitChain[Double] = js.native
+    def countWhere(predicate: Unit, context: Any): ExplicitChain[Double] = js.native
     def countWhere(predicate: CountPredicate): ExplicitChain[Double] = js.native
-    def countWhere(predicate: CountPredicate, context: js.Any): ExplicitChain[Double] = js.native
+    def countWhere(predicate: CountPredicate, context: Any): ExplicitChain[Double] = js.native
     
     def countWords(): ExplicitChain[Double] = js.native
     def countWords(pattern: String): ExplicitChain[Double] = js.native
     def countWords(pattern: String, flags: String): ExplicitChain[Double] = js.native
+    def countWords(pattern: js.RegExp): ExplicitChain[Double] = js.native
+    def countWords(pattern: js.RegExp, flags: String): ExplicitChain[Double] = js.native
     def countWords(pattern: Unit, flags: String): ExplicitChain[Double] = js.native
-    def countWords(pattern: RegExp): ExplicitChain[Double] = js.native
-    def countWords(pattern: RegExp, flags: String): ExplicitChain[Double] = js.native
     
     def decapitalize(): ExplicitChain[String] = js.native
     
@@ -401,9 +400,9 @@ object mod extends Shortcut {
     def matches(): ExplicitChain[Boolean] = js.native
     def matches(pattern: String): ExplicitChain[Boolean] = js.native
     def matches(pattern: String, flags: String): ExplicitChain[Boolean] = js.native
+    def matches(pattern: js.RegExp): ExplicitChain[Boolean] = js.native
+    def matches(pattern: js.RegExp, flags: String): ExplicitChain[Boolean] = js.native
     def matches(pattern: Unit, flags: String): ExplicitChain[Boolean] = js.native
-    def matches(pattern: RegExp): ExplicitChain[Boolean] = js.native
-    def matches(pattern: RegExp, flags: String): ExplicitChain[Boolean] = js.native
     
     def pad(): ExplicitChain[String] = js.native
     def pad(length: Double): ExplicitChain[String] = js.native
@@ -432,21 +431,21 @@ object mod extends Shortcut {
     def replace(pattern: String): ExplicitChain[String] = js.native
     def replace(pattern: String, replacement: String): ExplicitChain[String] = js.native
     def replace(pattern: String, replacement: ReplacementFunction): ExplicitChain[String] = js.native
+    def replace(pattern: js.RegExp): ExplicitChain[String] = js.native
+    def replace(pattern: js.RegExp, replacement: String): ExplicitChain[String] = js.native
+    def replace(pattern: js.RegExp, replacement: ReplacementFunction): ExplicitChain[String] = js.native
     def replace(pattern: Unit, replacement: String): ExplicitChain[String] = js.native
     def replace(pattern: Unit, replacement: ReplacementFunction): ExplicitChain[String] = js.native
-    def replace(pattern: RegExp): ExplicitChain[String] = js.native
-    def replace(pattern: RegExp, replacement: String): ExplicitChain[String] = js.native
-    def replace(pattern: RegExp, replacement: ReplacementFunction): ExplicitChain[String] = js.native
     
     def replaceAll(): ExplicitChain[String] = js.native
     def replaceAll(pattern: String): ExplicitChain[String] = js.native
     def replaceAll(pattern: String, replacement: String): ExplicitChain[String] = js.native
     def replaceAll(pattern: String, replacement: ReplacementFunction): ExplicitChain[String] = js.native
+    def replaceAll(pattern: js.RegExp): ExplicitChain[String] = js.native
+    def replaceAll(pattern: js.RegExp, replacement: String): ExplicitChain[String] = js.native
+    def replaceAll(pattern: js.RegExp, replacement: ReplacementFunction): ExplicitChain[String] = js.native
     def replaceAll(pattern: Unit, replacement: String): ExplicitChain[String] = js.native
     def replaceAll(pattern: Unit, replacement: ReplacementFunction): ExplicitChain[String] = js.native
-    def replaceAll(pattern: RegExp): ExplicitChain[String] = js.native
-    def replaceAll(pattern: RegExp, replacement: String): ExplicitChain[String] = js.native
-    def replaceAll(pattern: RegExp, replacement: ReplacementFunction): ExplicitChain[String] = js.native
     
     def reverse(): ExplicitChain[String] = js.native
     
@@ -455,9 +454,9 @@ object mod extends Shortcut {
     def search(): ExplicitChain[Double] = js.native
     def search(pattern: String): ExplicitChain[Double] = js.native
     def search(pattern: String, fromIndex: Double): ExplicitChain[Double] = js.native
+    def search(pattern: js.RegExp): ExplicitChain[Double] = js.native
+    def search(pattern: js.RegExp, fromIndex: Double): ExplicitChain[Double] = js.native
     def search(pattern: Unit, fromIndex: Double): ExplicitChain[Double] = js.native
-    def search(pattern: RegExp): ExplicitChain[Double] = js.native
-    def search(pattern: RegExp, fromIndex: Double): ExplicitChain[Double] = js.native
     
     def slice(): ExplicitChain[String] = js.native
     def slice(start: Double): ExplicitChain[String] = js.native
@@ -480,12 +479,12 @@ object mod extends Shortcut {
     def split(): ExplicitChain[js.Array[String]] = js.native
     def split(separator: String): ExplicitChain[js.Array[String]] = js.native
     def split(separator: String, limit: Double): ExplicitChain[js.Array[String]] = js.native
+    def split(separator: js.RegExp): ExplicitChain[js.Array[String]] = js.native
+    def split(separator: js.RegExp, limit: Double): ExplicitChain[js.Array[String]] = js.native
     def split(separator: Unit, limit: Double): ExplicitChain[js.Array[String]] = js.native
-    def split(separator: RegExp): ExplicitChain[js.Array[String]] = js.native
-    def split(separator: RegExp, limit: Double): ExplicitChain[js.Array[String]] = js.native
     
     // Format
-    def sprintf(replacements: js.Any*): ExplicitChain[String] = js.native
+    def sprintf(replacements: Any*): ExplicitChain[String] = js.native
     
     def startsWith(): ExplicitChain[Boolean] = js.native
     def startsWith(start: String): ExplicitChain[Boolean] = js.native
@@ -546,7 +545,7 @@ object mod extends Shortcut {
     // Chain
     def value(): T = js.native
     
-    def vprintf(replacements: js.Any*): ExplicitChain[String] = js.native
+    def vprintf(replacements: Any*): ExplicitChain[String] = js.native
     
     def wordWrap(): ExplicitChain[String] = js.native
     def wordWrap(options: WordWrapOptions): ExplicitChain[String] = js.native
@@ -554,9 +553,9 @@ object mod extends Shortcut {
     def words(): ExplicitChain[js.Array[String]] = js.native
     def words(pattern: String): ExplicitChain[js.Array[String]] = js.native
     def words(pattern: String, flag: String): ExplicitChain[js.Array[String]] = js.native
+    def words(pattern: js.RegExp): ExplicitChain[js.Array[String]] = js.native
+    def words(pattern: js.RegExp, flag: String): ExplicitChain[js.Array[String]] = js.native
     def words(pattern: Unit, flag: String): ExplicitChain[js.Array[String]] = js.native
-    def words(pattern: RegExp): ExplicitChain[js.Array[String]] = js.native
-    def words(pattern: RegExp, flag: String): ExplicitChain[js.Array[String]] = js.native
   }
   
   @js.native
@@ -570,7 +569,7 @@ object mod extends Shortcut {
   trait VocaStatic extends StObject {
     
     // Chain
-    def apply(subject: js.Any): Chain = js.native
+    def apply(subject: Any): Chain = js.native
     
     // Case
     def camelCase(): String = js.native
@@ -615,25 +614,25 @@ object mod extends Shortcut {
     
     def countWhere(): Double = js.native
     def countWhere(subject: String): Double = js.native
-    def countWhere(subject: String, predicate: Unit, context: js.Any): Double = js.native
+    def countWhere(subject: String, predicate: Unit, context: Any): Double = js.native
     def countWhere(subject: String, predicate: CountPredicate): Double = js.native
-    def countWhere(subject: String, predicate: CountPredicate, context: js.Any): Double = js.native
-    def countWhere(subject: Unit, predicate: Unit, context: js.Any): Double = js.native
+    def countWhere(subject: String, predicate: CountPredicate, context: Any): Double = js.native
+    def countWhere(subject: Unit, predicate: Unit, context: Any): Double = js.native
     def countWhere(subject: Unit, predicate: CountPredicate): Double = js.native
-    def countWhere(subject: Unit, predicate: CountPredicate, context: js.Any): Double = js.native
+    def countWhere(subject: Unit, predicate: CountPredicate, context: Any): Double = js.native
     
     def countWords(): Double = js.native
     def countWords(subject: String): Double = js.native
     def countWords(subject: String, pattern: String): Double = js.native
     def countWords(subject: String, pattern: String, flags: String): Double = js.native
+    def countWords(subject: String, pattern: js.RegExp): Double = js.native
+    def countWords(subject: String, pattern: js.RegExp, flags: String): Double = js.native
     def countWords(subject: String, pattern: Unit, flags: String): Double = js.native
-    def countWords(subject: String, pattern: RegExp): Double = js.native
-    def countWords(subject: String, pattern: RegExp, flags: String): Double = js.native
     def countWords(subject: Unit, pattern: String): Double = js.native
     def countWords(subject: Unit, pattern: String, flags: String): Double = js.native
+    def countWords(subject: Unit, pattern: js.RegExp): Double = js.native
+    def countWords(subject: Unit, pattern: js.RegExp, flags: String): Double = js.native
     def countWords(subject: Unit, pattern: Unit, flags: String): Double = js.native
-    def countWords(subject: Unit, pattern: RegExp): Double = js.native
-    def countWords(subject: Unit, pattern: RegExp, flags: String): Double = js.native
     
     def decapitalize(): String = js.native
     def decapitalize(subject: String): String = js.native
@@ -719,7 +718,7 @@ object mod extends Shortcut {
     def isNumeric(subject: String): Boolean = js.native
     
     def isString(): Boolean = js.native
-    def isString(subject: js.Any): Boolean = js.native
+    def isString(subject: Any): Boolean = js.native
     
     def isUpperCase(): Boolean = js.native
     def isUpperCase(subject: String): Boolean = js.native
@@ -751,14 +750,14 @@ object mod extends Shortcut {
     def matches(subject: String): Boolean = js.native
     def matches(subject: String, pattern: String): Boolean = js.native
     def matches(subject: String, pattern: String, flags: String): Boolean = js.native
+    def matches(subject: String, pattern: js.RegExp): Boolean = js.native
+    def matches(subject: String, pattern: js.RegExp, flags: String): Boolean = js.native
     def matches(subject: String, pattern: Unit, flags: String): Boolean = js.native
-    def matches(subject: String, pattern: RegExp): Boolean = js.native
-    def matches(subject: String, pattern: RegExp, flags: String): Boolean = js.native
     def matches(subject: Unit, pattern: String): Boolean = js.native
     def matches(subject: Unit, pattern: String, flags: String): Boolean = js.native
+    def matches(subject: Unit, pattern: js.RegExp): Boolean = js.native
+    def matches(subject: Unit, pattern: js.RegExp, flags: String): Boolean = js.native
     def matches(subject: Unit, pattern: Unit, flags: String): Boolean = js.native
-    def matches(subject: Unit, pattern: RegExp): Boolean = js.native
-    def matches(subject: Unit, pattern: RegExp, flags: String): Boolean = js.native
     
     // Util
     def noConflict(): VocaStatic = js.native
@@ -809,38 +808,38 @@ object mod extends Shortcut {
     def replace(subject: String, pattern: String): String = js.native
     def replace(subject: String, pattern: String, replacement: String): String = js.native
     def replace(subject: String, pattern: String, replacement: ReplacementFunction): String = js.native
+    def replace(subject: String, pattern: js.RegExp): String = js.native
+    def replace(subject: String, pattern: js.RegExp, replacement: String): String = js.native
+    def replace(subject: String, pattern: js.RegExp, replacement: ReplacementFunction): String = js.native
     def replace(subject: String, pattern: Unit, replacement: String): String = js.native
     def replace(subject: String, pattern: Unit, replacement: ReplacementFunction): String = js.native
-    def replace(subject: String, pattern: RegExp): String = js.native
-    def replace(subject: String, pattern: RegExp, replacement: String): String = js.native
-    def replace(subject: String, pattern: RegExp, replacement: ReplacementFunction): String = js.native
     def replace(subject: Unit, pattern: String): String = js.native
     def replace(subject: Unit, pattern: String, replacement: String): String = js.native
     def replace(subject: Unit, pattern: String, replacement: ReplacementFunction): String = js.native
+    def replace(subject: Unit, pattern: js.RegExp): String = js.native
+    def replace(subject: Unit, pattern: js.RegExp, replacement: String): String = js.native
+    def replace(subject: Unit, pattern: js.RegExp, replacement: ReplacementFunction): String = js.native
     def replace(subject: Unit, pattern: Unit, replacement: String): String = js.native
     def replace(subject: Unit, pattern: Unit, replacement: ReplacementFunction): String = js.native
-    def replace(subject: Unit, pattern: RegExp): String = js.native
-    def replace(subject: Unit, pattern: RegExp, replacement: String): String = js.native
-    def replace(subject: Unit, pattern: RegExp, replacement: ReplacementFunction): String = js.native
     
     def replaceAll(): String = js.native
     def replaceAll(subject: String): String = js.native
     def replaceAll(subject: String, pattern: String): String = js.native
     def replaceAll(subject: String, pattern: String, replacement: String): String = js.native
     def replaceAll(subject: String, pattern: String, replacement: ReplacementFunction): String = js.native
+    def replaceAll(subject: String, pattern: js.RegExp): String = js.native
+    def replaceAll(subject: String, pattern: js.RegExp, replacement: String): String = js.native
+    def replaceAll(subject: String, pattern: js.RegExp, replacement: ReplacementFunction): String = js.native
     def replaceAll(subject: String, pattern: Unit, replacement: String): String = js.native
     def replaceAll(subject: String, pattern: Unit, replacement: ReplacementFunction): String = js.native
-    def replaceAll(subject: String, pattern: RegExp): String = js.native
-    def replaceAll(subject: String, pattern: RegExp, replacement: String): String = js.native
-    def replaceAll(subject: String, pattern: RegExp, replacement: ReplacementFunction): String = js.native
     def replaceAll(subject: Unit, pattern: String): String = js.native
     def replaceAll(subject: Unit, pattern: String, replacement: String): String = js.native
     def replaceAll(subject: Unit, pattern: String, replacement: ReplacementFunction): String = js.native
+    def replaceAll(subject: Unit, pattern: js.RegExp): String = js.native
+    def replaceAll(subject: Unit, pattern: js.RegExp, replacement: String): String = js.native
+    def replaceAll(subject: Unit, pattern: js.RegExp, replacement: ReplacementFunction): String = js.native
     def replaceAll(subject: Unit, pattern: Unit, replacement: String): String = js.native
     def replaceAll(subject: Unit, pattern: Unit, replacement: ReplacementFunction): String = js.native
-    def replaceAll(subject: Unit, pattern: RegExp): String = js.native
-    def replaceAll(subject: Unit, pattern: RegExp, replacement: String): String = js.native
-    def replaceAll(subject: Unit, pattern: RegExp, replacement: ReplacementFunction): String = js.native
     
     def reverse(): String = js.native
     def reverse(subject: String): String = js.native
@@ -852,14 +851,14 @@ object mod extends Shortcut {
     def search(subject: String): Double = js.native
     def search(subject: String, pattern: String): Double = js.native
     def search(subject: String, pattern: String, fromIndex: Double): Double = js.native
+    def search(subject: String, pattern: js.RegExp): Double = js.native
+    def search(subject: String, pattern: js.RegExp, fromIndex: Double): Double = js.native
     def search(subject: String, pattern: Unit, fromIndex: Double): Double = js.native
-    def search(subject: String, pattern: RegExp): Double = js.native
-    def search(subject: String, pattern: RegExp, fromIndex: Double): Double = js.native
     def search(subject: Unit, pattern: String): Double = js.native
     def search(subject: Unit, pattern: String, fromIndex: Double): Double = js.native
+    def search(subject: Unit, pattern: js.RegExp): Double = js.native
+    def search(subject: Unit, pattern: js.RegExp, fromIndex: Double): Double = js.native
     def search(subject: Unit, pattern: Unit, fromIndex: Double): Double = js.native
-    def search(subject: Unit, pattern: RegExp): Double = js.native
-    def search(subject: Unit, pattern: RegExp, fromIndex: Double): Double = js.native
     
     def slice(): String = js.native
     def slice(subject: String): String = js.native
@@ -897,18 +896,18 @@ object mod extends Shortcut {
     def split(subject: String): js.Array[String] = js.native
     def split(subject: String, separator: String): js.Array[String] = js.native
     def split(subject: String, separator: String, limit: Double): js.Array[String] = js.native
+    def split(subject: String, separator: js.RegExp): js.Array[String] = js.native
+    def split(subject: String, separator: js.RegExp, limit: Double): js.Array[String] = js.native
     def split(subject: String, separator: Unit, limit: Double): js.Array[String] = js.native
-    def split(subject: String, separator: RegExp): js.Array[String] = js.native
-    def split(subject: String, separator: RegExp, limit: Double): js.Array[String] = js.native
     def split(subject: Unit, separator: String): js.Array[String] = js.native
     def split(subject: Unit, separator: String, limit: Double): js.Array[String] = js.native
+    def split(subject: Unit, separator: js.RegExp): js.Array[String] = js.native
+    def split(subject: Unit, separator: js.RegExp, limit: Double): js.Array[String] = js.native
     def split(subject: Unit, separator: Unit, limit: Double): js.Array[String] = js.native
-    def split(subject: Unit, separator: RegExp): js.Array[String] = js.native
-    def split(subject: Unit, separator: RegExp, limit: Double): js.Array[String] = js.native
     
     // Format
-    def sprintf(format: String, replacements: js.Any*): String = js.native
-    def sprintf(format: Unit, replacements: js.Any*): String = js.native
+    def sprintf(format: String, replacements: Any*): String = js.native
+    def sprintf(format: Unit, replacements: Any*): String = js.native
     
     def startsWith(): Boolean = js.native
     def startsWith(subject: String): Boolean = js.native
@@ -1005,8 +1004,8 @@ object mod extends Shortcut {
     
     var version: String = js.native
     
-    def vprintf(format: String, replacements: js.Any*): String = js.native
-    def vprintf(format: Unit, replacements: js.Any*): String = js.native
+    def vprintf(format: String, replacements: Any*): String = js.native
+    def vprintf(format: Unit, replacements: Any*): String = js.native
     
     def wordWrap(): String = js.native
     def wordWrap(subject: String): String = js.native
@@ -1017,14 +1016,14 @@ object mod extends Shortcut {
     def words(subject: String): js.Array[String] = js.native
     def words(subject: String, pattern: String): js.Array[String] = js.native
     def words(subject: String, pattern: String, flag: String): js.Array[String] = js.native
+    def words(subject: String, pattern: js.RegExp): js.Array[String] = js.native
+    def words(subject: String, pattern: js.RegExp, flag: String): js.Array[String] = js.native
     def words(subject: String, pattern: Unit, flag: String): js.Array[String] = js.native
-    def words(subject: String, pattern: RegExp): js.Array[String] = js.native
-    def words(subject: String, pattern: RegExp, flag: String): js.Array[String] = js.native
     def words(subject: Unit, pattern: String): js.Array[String] = js.native
     def words(subject: Unit, pattern: String, flag: String): js.Array[String] = js.native
+    def words(subject: Unit, pattern: js.RegExp): js.Array[String] = js.native
+    def words(subject: Unit, pattern: js.RegExp, flag: String): js.Array[String] = js.native
     def words(subject: Unit, pattern: Unit, flag: String): js.Array[String] = js.native
-    def words(subject: Unit, pattern: RegExp): js.Array[String] = js.native
-    def words(subject: Unit, pattern: RegExp, flag: String): js.Array[String] = js.native
   }
   
   trait WordWrapOptions extends StObject {

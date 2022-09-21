@@ -10,10 +10,10 @@ The lodash method `_.bindKey` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.bindkey |
 | Keywords           | lodash-modularized, bindkey |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 18911 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 973.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

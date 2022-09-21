@@ -25,7 +25,7 @@ trait Control extends StObject {
   
   def dispatchEvent(evt: Event): Boolean = js.native
   
-  def getDimensions(): js.Object = js.native
+  def getDimensions(): Any = js.native
   
   def getId(): String = js.native
   
@@ -48,7 +48,11 @@ trait Control extends StObject {
   def removeEventListener(`type`: String, listener: ViewerEvent, options: Boolean): Unit = js.native
   def removeEventListener(`type`: String, listener: ViewerEvent, options: EventListenerOptions): Unit = js.native
   
+  def removeFromParent(): Unit = js.native
+  
   def setCollapsed(collapsed: Boolean): Boolean = js.native
+  
+  def setDisplay(value: String): Unit = js.native
   
   def setToolTip(toolTipText: String): Boolean = js.native
   

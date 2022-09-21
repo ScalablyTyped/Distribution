@@ -15,7 +15,7 @@ trait Color
   
   var options: ColorOptions = js.native
   
-  def toBytes(): js.Any = js.native
+  def toBytes(): Any = js.native
   
   def toCss(): String = js.native
   
@@ -23,9 +23,9 @@ trait Color
   
   def toDisplay(): String = js.native
   
-  def toHSV(): js.Any = js.native
+  def toHSV(): Any = js.native
   
   def toHex(): String = js.native
   
-  def toRGB(): js.Any = js.native
+  def toRGB(): Any = js.native
 }

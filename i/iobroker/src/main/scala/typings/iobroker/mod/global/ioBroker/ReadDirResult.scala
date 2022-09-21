@@ -2,6 +2,7 @@ package typings.iobroker.mod.global.ioBroker
 
 import typings.iobroker.objectsMod.global.ioBroker.EvaluatedFileACL
 import typings.node.fsMod.Stats
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,11 +26,13 @@ trait ReadDirResult extends StObject {
   var modifiedAt: js.UndefOr[Double] = js.undefined
   
   /** File system stats */
-  var stats: Stats
+  // https://github.com/ioBroker/adapter-core/issues/455
+  // Sometimes the objects db just returns an empty object
+  var stats: Stats | (Record[String, scala.Nothing])
 }
 object ReadDirResult {
   
-  inline def apply(file: String, isDir: Boolean, stats: Stats): ReadDirResult = {
+  inline def apply(file: String, isDir: Boolean, stats: Stats | (Record[String, scala.Nothing])): ReadDirResult = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], isDir = isDir.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadDirResult]
   }
@@ -52,6 +55,6 @@ object ReadDirResult {
     
     inline def setModifiedAtUndefined: Self = StObject.set(x, "modifiedAt", js.undefined)
     
-    inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Stats | (Record[String, scala.Nothing])): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

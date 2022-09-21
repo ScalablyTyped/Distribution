@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KoLiteCommandOptions extends StObject {
   
-  var canExecute: js.UndefOr[js.Function1[/* isExecuting */ Boolean, js.Any]] = js.undefined
+  var canExecute: js.UndefOr[js.Function1[/* isExecuting */ Boolean, Any]] = js.undefined
   
-  def execute(args: js.Any*): js.Any
+  def execute(args: Any*): Any
 }
 object KoLiteCommandOptions {
   
-  inline def apply(execute: /* repeated */ js.Any => js.Any): KoLiteCommandOptions = {
+  inline def apply(execute: /* repeated */ Any => Any): KoLiteCommandOptions = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[KoLiteCommandOptions]
   }
   
   extension [Self <: KoLiteCommandOptions](x: Self) {
     
-    inline def setCanExecute(value: /* isExecuting */ Boolean => js.Any): Self = StObject.set(x, "canExecute", js.Any.fromFunction1(value))
+    inline def setCanExecute(value: /* isExecuting */ Boolean => Any): Self = StObject.set(x, "canExecute", js.Any.fromFunction1(value))
     
     inline def setCanExecuteUndefined: Self = StObject.set(x, "canExecute", js.undefined)
     
-    inline def setExecute(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: /* repeated */ Any => Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

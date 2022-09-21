@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateNetworkInterfacePermissionRequest extends StObject {
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var AwsAccountId: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS service. Currently not supported.
+    * The Amazon Web Service. Currently not supported.
     */
   var AwsService: js.UndefOr[String] = js.undefined
   

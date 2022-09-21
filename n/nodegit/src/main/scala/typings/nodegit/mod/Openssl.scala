@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Openssl")
 @js.native
-class Openssl ()
+open class Openssl ()
   extends typings.nodegit.openSslMod.Openssl
 /* static members */
 object Openssl {

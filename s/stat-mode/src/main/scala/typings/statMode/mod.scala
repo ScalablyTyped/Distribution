@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("stat-mode", "Group")
   @js.native
-  class Group protected () extends RWX {
+  open class Group protected () extends RWX {
     def this(stat: StatsMode) = this()
   }
   object Group {
@@ -46,11 +46,11 @@ object mod {
   
   @JSImport("stat-mode", "Mode")
   @js.native
-  class Mode () extends StObject {
+  open class Mode () extends StObject {
     def this(stat: Double) = this()
     def this(stat: StatsMode) = this()
     
-    /* private */ var checkModeProperty: js.Any = js.native
+    /* private */ var checkModeProperty: Any = js.native
     
     var group: Group = js.native
     
@@ -85,7 +85,7 @@ object mod {
     def setuid: Boolean = js.native
     def setuid_=(v: Boolean): Unit = js.native
     
-    /* private */ var stat: js.Any = js.native
+    /* private */ var stat: Any = js.native
     
     def sticky: Boolean = js.native
     def sticky_=(v: Boolean): Unit = js.native
@@ -103,7 +103,7 @@ object mod {
   
   @JSImport("stat-mode", "Others")
   @js.native
-  class Others protected () extends RWX {
+  open class Others protected () extends RWX {
     def this(stat: StatsMode) = this()
   }
   object Others {
@@ -133,7 +133,7 @@ object mod {
   
   @JSImport("stat-mode", "Owner")
   @js.native
-  class Owner protected () extends RWX {
+  open class Owner protected () extends RWX {
     def this(stat: StatsMode) = this()
   }
   object Owner {
@@ -163,7 +163,7 @@ object mod {
   
   @JSImport("stat-mode", "RWX")
   @js.native
-  class RWX protected () extends StObject {
+  open class RWX protected () extends StObject {
     def this(stat: StatsMode) = this()
     
     def execute: Boolean = js.native
@@ -172,7 +172,7 @@ object mod {
     def read: Boolean = js.native
     def read_=(v: Boolean): Unit = js.native
     
-    /* private */ var stat: js.Any = js.native
+    /* private */ var stat: Any = js.native
     
     def write: Boolean = js.native
     def write_=(v: Boolean): Unit = js.native
@@ -202,7 +202,7 @@ object mod {
     inline def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
   }
   
-  inline def isStatsMode(v: js.Any): /* is stat-mode.stat-mode.StatsMode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStatsMode")(v.asInstanceOf[js.Any]).asInstanceOf[/* is stat-mode.stat-mode.StatsMode */ Boolean]
+  inline def isStatsMode(v: Any): /* is stat-mode.stat-mode.StatsMode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStatsMode")(v.asInstanceOf[js.Any]).asInstanceOf[/* is stat-mode.stat-mode.StatsMode */ Boolean]
   
   /* Inlined std.Pick<node.fs.Stats, 'mode'> */
   trait StatsMode extends StObject {

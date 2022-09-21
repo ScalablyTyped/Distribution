@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Basis describes the base image portion (Note) of the DockerImage
-  * relationship. Linked occurrences are derived from this or an equivalent
-  * image via:   FROM &lt;Basis.resource_url&gt; Or an equivalent reference,
-  * e.g. a tag of the resource_url.
-  */
 trait SchemaBasis extends StObject {
   
   /**
@@ -18,10 +12,9 @@ trait SchemaBasis extends StObject {
   var fingerprint: js.UndefOr[SchemaFingerprint] = js.undefined
   
   /**
-    * Required. Immutable. The resource_url for the resource representing the
-    * basis of associated occurrence images.
+    * Required. Immutable. The resource_url for the resource representing the basis of associated occurrence images.
     */
-  var resourceUrl: js.UndefOr[String] = js.undefined
+  var resourceUrl: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBasis {
   
@@ -37,6 +30,8 @@ object SchemaBasis {
     inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     inline def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
+    
+    inline def setResourceUrlNull: Self = StObject.set(x, "resourceUrl", null)
     
     inline def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
   }

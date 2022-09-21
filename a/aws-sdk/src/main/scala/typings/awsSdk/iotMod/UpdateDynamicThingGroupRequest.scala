@@ -12,7 +12,7 @@ trait UpdateDynamicThingGroupRequest extends StObject {
   var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
   
   /**
-    * The dynamic thing group index to update.  Currently one index is supported: 'AWS_Things'. 
+    * The dynamic thing group index to update.  Currently one index is supported: AWS_Things. 
     */
   var indexName: js.UndefOr[IndexName] = js.undefined
   

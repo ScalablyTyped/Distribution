@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageParametersProperties extends StObject {
   
   /**
-    * Dots per inch setting for an module:esri/layersMapImageLayer.
+    * Dots per inch setting for an [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#dpi)
     */
@@ -78,6 +78,8 @@ trait ImageParametersProperties extends StObject {
   /**
     * Indicates whether or not the background of the dynamic image is transparent.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#transparent)
     */
   var transparent: js.UndefOr[Boolean] = js.undefined
@@ -122,13 +124,13 @@ object ImageParametersProperties {
     
     inline def setLayerDefinitionsUndefined: Self = StObject.set(x, "layerDefinitions", js.undefined)
     
-    inline def setLayerDefinitionsVarargs(value: String*): Self = StObject.set(x, "layerDefinitions", js.Array(value :_*))
+    inline def setLayerDefinitionsVarargs(value: String*): Self = StObject.set(x, "layerDefinitions", js.Array(value*))
     
     inline def setLayerIds(value: js.Array[Double]): Self = StObject.set(x, "layerIds", value.asInstanceOf[js.Any])
     
     inline def setLayerIdsUndefined: Self = StObject.set(x, "layerIds", js.undefined)
     
-    inline def setLayerIdsVarargs(value: Double*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: Double*): Self = StObject.set(x, "layerIds", js.Array(value*))
     
     inline def setLayerOption(value: show | hide | include | exclude): Self = StObject.set(x, "layerOption", value.asInstanceOf[js.Any])
     

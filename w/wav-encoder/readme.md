@@ -11,9 +11,9 @@ promise-based wav encoder
 | Full name          | wav-encoder |
 | Keywords           | encode, universal, wav |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 80189 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 15543.666666666666 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/mohayonao/wav-encoder/)

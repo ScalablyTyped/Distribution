@@ -1,7 +1,7 @@
 
 # Scala.js typings for emoji-js
 
-Typings are for version 3.4
+Typings are for version 3.5
 
 ## Library description:
 A JS Emoji conversion library
@@ -10,10 +10,10 @@ A JS Emoji conversion library
 | ------------------ | :-------------: |
 | Full name          | emoji-js |
 | Keywords           | emoji, emoticon, mobile, browser |
-| # releases         | 2 |
-| # dependents       | 88 |
-| # downloads        | 660847 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 80528.33333333333 |
+| # stars            | 1313.0 |
 
 ## Links
 - [Homepage](https://github.com/iamcal/js-emoji)

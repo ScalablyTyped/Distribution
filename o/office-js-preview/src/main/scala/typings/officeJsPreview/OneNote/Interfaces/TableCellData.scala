@@ -4,45 +4,45 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "tableCell.toJSON()". */
+/** An interface describing the data returned by calling `tableCell.toJSON()`. */
 trait TableCellData extends StObject {
   
   /**
-    *
     * Gets the index of the cell in its row. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var cellIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets the ID of the cell. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the collection of Paragraph objects in the TableCell. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
   
   /**
-    *
     * Gets the index of the cell's row in the table. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets and sets the shading color of the cell
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var shadingColor: js.UndefOr[String] = js.undefined
@@ -68,7 +68,7 @@ object TableCellData {
     
     inline def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
-    inline def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
+    inline def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value*))
     
     inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     

@@ -22,10 +22,10 @@ object Changed {
     
     inline def setChanged(value: js.Array[ViewToken]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     
-    inline def setChangedVarargs(value: ViewToken*): Self = StObject.set(x, "changed", js.Array(value :_*))
+    inline def setChangedVarargs(value: ViewToken*): Self = StObject.set(x, "changed", js.Array(value*))
     
     inline def setViewableItems(value: js.Array[ViewToken]): Self = StObject.set(x, "viewableItems", value.asInstanceOf[js.Any])
     
-    inline def setViewableItemsVarargs(value: ViewToken*): Self = StObject.set(x, "viewableItems", js.Array(value :_*))
+    inline def setViewableItemsVarargs(value: ViewToken*): Self = StObject.set(x, "viewableItems", js.Array(value*))
   }
 }

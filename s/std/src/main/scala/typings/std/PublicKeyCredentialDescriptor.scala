@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PublicKeyCredentialDescriptor extends StObject {
   
+  /* standard dom */
   var id: BufferSource
   
+  /* standard dom */
   var transports: js.UndefOr[js.Array[AuthenticatorTransport]] = js.undefined
   
+  /* standard dom */
   var `type`: PublicKeyCredentialType
 }
 object PublicKeyCredentialDescriptor {
@@ -28,7 +31,7 @@ object PublicKeyCredentialDescriptor {
     
     inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
     
-    inline def setTransportsVarargs(value: AuthenticatorTransport*): Self = StObject.set(x, "transports", js.Array(value :_*))
+    inline def setTransportsVarargs(value: AuthenticatorTransport*): Self = StObject.set(x, "transports", js.Array(value*))
     
     inline def setType(value: PublicKeyCredentialType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

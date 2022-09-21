@@ -1,19 +1,19 @@
 
 # Scala.js typings for ua-parser-js
 
-Typings are for version v0.7.10
+Typings are for version 0.7
 
 ## Library description:
-Lightweight JavaScript-based user-agent string parser
+Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent data. Supports browser & node.js environment
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ua-parser-js |
 | Keywords           | user-agent, parser, browser, engine, os, device, cpu, jquery-plugin, ecosystem:jquery |
-| # releases         | 4 |
-| # dependents       | 556 |
-| # downloads        | 284695381 |
-| # stars            | 51 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 3.8772835E7 |
+| # stars            | 6921.0 |
 
 ## Links
 - [Homepage](https://github.com/faisalman/ua-parser-js)

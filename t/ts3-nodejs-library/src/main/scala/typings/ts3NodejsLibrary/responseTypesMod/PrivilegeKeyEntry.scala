@@ -47,7 +47,7 @@ object PrivilegeKeyEntry {
     
     inline def setTokenCustomset(value: js.Array[TokenCustomSet]): Self = StObject.set(x, "tokenCustomset", value.asInstanceOf[js.Any])
     
-    inline def setTokenCustomsetVarargs(value: TokenCustomSet*): Self = StObject.set(x, "tokenCustomset", js.Array(value :_*))
+    inline def setTokenCustomsetVarargs(value: TokenCustomSet*): Self = StObject.set(x, "tokenCustomset", js.Array(value*))
     
     inline def setTokenDescription(value: String): Self = StObject.set(x, "tokenDescription", value.asInstanceOf[js.Any])
     

@@ -1,93 +1,49 @@
 package typings.classTransformer
 
-import typings.classTransformer.classTransformOptionsMod.ClassTransformOptions
-import typings.classTransformer.exposeExcludeOptionsMod.ExcludeOptions
-import typings.classTransformer.exposeExcludeOptionsMod.ExposeOptions
-import typings.classTransformer.exposeExcludeOptionsMod.TransformOptions
-import typings.classTransformer.exposeExcludeOptionsMod.TypeHelpOptions
-import typings.classTransformer.exposeExcludeOptionsMod.TypeOptions
-import typings.classTransformer.transformationTypeEnumMod.TransformationType
-import typings.std.Record
+import typings.classTransformer.classConstructorTypeMod.ClassConstructor
+import typings.classTransformer.classTransformerOptionsInterfaceMod.ClassTransformOptions
+import typings.classTransformer.excludeOptionsInterfaceMod.ExcludeOptions
+import typings.classTransformer.exposeOptionsInterfaceMod.ExposeOptions
+import typings.classTransformer.transformFnParamsInterfaceMod.TransformFnParams
+import typings.classTransformer.transformOptionsInterfaceMod.TransformOptions
+import typings.classTransformer.typeHelpOptionsInterfaceMod.TypeHelpOptions
+import typings.classTransformer.typeOptionsInterfaceMod.TypeOptions
+import typings.std.ClassDecorator
+import typings.std.MethodDecorator
+import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decoratorsMod {
   
-  @JSImport("class-transformer/decorators", JSImport.Namespace)
+  @JSImport("class-transformer/types/decorators", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Exclude(): js.Function2[
-    /* object */ (Record[String, js.Any]) | js.Function, 
-    /* propertyName */ js.UndefOr[String], 
-    Unit
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclude")().asInstanceOf[js.Function2[
-    /* object */ (Record[String, js.Any]) | js.Function, 
-    /* propertyName */ js.UndefOr[String], 
-    Unit
-  ]]
-  inline def Exclude(options: ExcludeOptions): js.Function2[
-    /* object */ (Record[String, js.Any]) | js.Function, 
-    /* propertyName */ js.UndefOr[String], 
-    Unit
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclude")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* object */ (Record[String, js.Any]) | js.Function, 
-    /* propertyName */ js.UndefOr[String], 
-    Unit
-  ]]
+  inline def Exclude(): PropertyDecorator & ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclude")().asInstanceOf[PropertyDecorator & ClassDecorator]
+  inline def Exclude(options: ExcludeOptions): PropertyDecorator & ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclude")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator & ClassDecorator]
   
-  inline def Expose(): js.Function2[
-    /* object */ (Record[String, js.Any]) | js.Function, 
-    /* propertyName */ js.UndefOr[String], 
-    Unit
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Expose")().asInstanceOf[js.Function2[
-    /* object */ (Record[String, js.Any]) | js.Function, 
-    /* propertyName */ js.UndefOr[String], 
-    Unit
-  ]]
-  inline def Expose(options: ExposeOptions): js.Function2[
-    /* object */ (Record[String, js.Any]) | js.Function, 
-    /* propertyName */ js.UndefOr[String], 
-    Unit
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Expose")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* object */ (Record[String, js.Any]) | js.Function, 
-    /* propertyName */ js.UndefOr[String], 
-    Unit
-  ]]
+  inline def Expose(): PropertyDecorator & ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Expose")().asInstanceOf[PropertyDecorator & ClassDecorator]
+  inline def Expose(options: ExposeOptions): PropertyDecorator & ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Expose")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator & ClassDecorator]
   
-  inline def Transform(
-    transformFn: js.Function3[
-      /* value */ js.Any, 
-      /* obj */ js.Any, 
-      /* transformationType */ TransformationType, 
-      js.Any
-    ]
-  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(transformFn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
-  inline def Transform(
-    transformFn: js.Function3[
-      /* value */ js.Any, 
-      /* obj */ js.Any, 
-      /* transformationType */ TransformationType, 
-      js.Any
-    ],
-    options: TransformOptions
-  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(transformFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  inline def Transform(transformFn: js.Function1[/* params */ TransformFnParams, Any]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(transformFn.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def Transform(transformFn: js.Function1[/* params */ TransformFnParams, Any], options: TransformOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(transformFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  inline def TransformClassToClass(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToClass")().asInstanceOf[js.Function]
-  inline def TransformClassToClass(params: ClassTransformOptions): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToClass")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def TransformInstanceToInstance(): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformInstanceToInstance")().asInstanceOf[MethodDecorator]
+  inline def TransformInstanceToInstance(params: ClassTransformOptions): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformInstanceToInstance")(params.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
   
-  inline def TransformClassToPlain(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToPlain")().asInstanceOf[js.Function]
-  inline def TransformClassToPlain(params: ClassTransformOptions): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformClassToPlain")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def TransformInstanceToPlain(): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformInstanceToPlain")().asInstanceOf[MethodDecorator]
+  inline def TransformInstanceToPlain(params: ClassTransformOptions): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformInstanceToPlain")(params.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
   
-  inline def TransformPlainToClass(classType: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToClass")(classType.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-  inline def TransformPlainToClass(classType: js.Any, params: ClassTransformOptions): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToClass")(classType.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def TransformPlainToInstance(classType: ClassConstructor[Any]): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToInstance")(classType.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
+  inline def TransformPlainToInstance(classType: ClassConstructor[Any], params: ClassTransformOptions): MethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToInstance")(classType.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[MethodDecorator]
   
-  inline def Type(): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")().asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
-  inline def Type(typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function]): js.Function2[/* target */ js.Any, /* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  inline def Type(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")().asInstanceOf[PropertyDecorator]
+  inline def Type(typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def Type(
     typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function],
     options: TypeOptions
-  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
-  inline def Type(typeFunction: Unit, options: TypeOptions): js.Function2[/* target */ js.Any, /* key */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* key */ String, Unit]]
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def Type(typeFunction: Unit, options: TypeOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
 }

@@ -11,7 +11,7 @@ trait Resource extends StObject {
   var data: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Resource & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Resource & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -57,7 +57,7 @@ object Resource {
     inline def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Resource & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudasset.maximMazurokGapiClientCloudassetStrings.Resource & TopLevel[Any]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

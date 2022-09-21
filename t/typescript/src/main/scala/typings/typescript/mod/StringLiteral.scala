@@ -9,7 +9,9 @@ trait StringLiteral
   extends StObject
      with LiteralExpression
      with Declaration
+     with AssertionKey
      with JsonObjectExpression
+     with JsxAttributeValue
      with LiteralToken
      with ModuleName
      with PropertyName

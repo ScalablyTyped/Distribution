@@ -10,7 +10,7 @@ object miscUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(props: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def getValue[T](values: js.Array[T | Null], index: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(values.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[T | Null]
   inline def getValue[T](values: Null, index: Double): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(values.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[T | Null]

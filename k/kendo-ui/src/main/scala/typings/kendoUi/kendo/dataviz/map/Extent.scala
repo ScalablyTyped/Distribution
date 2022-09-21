@@ -13,13 +13,13 @@ trait Extent
   
   def contains(location: Location): Boolean
   
-  def containsAny(locations: js.Any): Boolean
+  def containsAny(locations: Any): Boolean
   
-  def edges(): js.Any
+  def edges(): Any
   
   def include(location: Location): Unit
   
-  def includeAll(locations: js.Any): Unit
+  def includeAll(locations: Any): Unit
   
   var nw: Location
   
@@ -29,22 +29,22 @@ trait Extent
   
   var se: Location
   
-  def toArray(): js.Any
+  def toArray(): Any
 }
 object Extent {
   
   inline def apply(
     center: () => Location,
     contains: Location => Boolean,
-    containsAny: js.Any => Boolean,
-    edges: () => js.Any,
+    containsAny: Any => Boolean,
+    edges: () => Any,
     include: Location => Unit,
-    includeAll: js.Any => Unit,
+    includeAll: Any => Unit,
     nw: Location,
     options: ExtentOptions,
     overlaps: Extent => Boolean,
     se: Location,
-    toArray: () => js.Any
+    toArray: () => Any
   ): Extent = {
     val __obj = js.Dynamic.literal(center = js.Any.fromFunction0(center), contains = js.Any.fromFunction1(contains), containsAny = js.Any.fromFunction1(containsAny), edges = js.Any.fromFunction0(edges), include = js.Any.fromFunction1(include), includeAll = js.Any.fromFunction1(includeAll), nw = nw.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], overlaps = js.Any.fromFunction1(overlaps), se = se.asInstanceOf[js.Any], toArray = js.Any.fromFunction0(toArray))
     __obj.asInstanceOf[Extent]
@@ -56,13 +56,13 @@ object Extent {
     
     inline def setContains(value: Location => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    inline def setContainsAny(value: js.Any => Boolean): Self = StObject.set(x, "containsAny", js.Any.fromFunction1(value))
+    inline def setContainsAny(value: Any => Boolean): Self = StObject.set(x, "containsAny", js.Any.fromFunction1(value))
     
-    inline def setEdges(value: () => js.Any): Self = StObject.set(x, "edges", js.Any.fromFunction0(value))
+    inline def setEdges(value: () => Any): Self = StObject.set(x, "edges", js.Any.fromFunction0(value))
     
     inline def setInclude(value: Location => Unit): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
     
-    inline def setIncludeAll(value: js.Any => Unit): Self = StObject.set(x, "includeAll", js.Any.fromFunction1(value))
+    inline def setIncludeAll(value: Any => Unit): Self = StObject.set(x, "includeAll", js.Any.fromFunction1(value))
     
     inline def setNw(value: Location): Self = StObject.set(x, "nw", value.asInstanceOf[js.Any])
     
@@ -72,6 +72,6 @@ object Extent {
     
     inline def setSe(value: Location): Self = StObject.set(x, "se", value.asInstanceOf[js.Any])
     
-    inline def setToArray(value: () => js.Any): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => Any): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }
 }

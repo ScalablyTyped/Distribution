@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "CubeMapToSphericalPolynomialTools")
 @js.native
-class CubeMapToSphericalPolynomialTools ()
+open class CubeMapToSphericalPolynomialTools ()
   extends typings.babylonjs.miscIndexMod.CubeMapToSphericalPolynomialTools
 /* static members */
 object CubeMapToSphericalPolynomialTools {
@@ -22,21 +22,32 @@ object CubeMapToSphericalPolynomialTools {
     * This extracts the first 3 orders only as they are the only one used in the lighting.
     *
     * @param texture The texture to extract the information from.
-    * @return The Spherical Polynomial data.
+    * @returns The Spherical Polynomial data.
     */
-  inline def ConvertCubeMapTextureToSphericalPolynomial(texture: typings.babylonjs.baseTextureMod.BaseTexture): Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial] = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapTextureToSphericalPolynomial")(texture.asInstanceOf[js.Any]).asInstanceOf[Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]]
+  inline def ConvertCubeMapTextureToSphericalPolynomial(texture: typings.babylonjs.baseTextureMod.BaseTexture): Nullable[js.Promise[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapTextureToSphericalPolynomial")(texture.asInstanceOf[js.Any]).asInstanceOf[Nullable[js.Promise[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]]]
   
   /**
     * Converts a cubemap to the according Spherical Polynomial data.
     * This extracts the first 3 orders only as they are the only one used in the lighting.
     *
     * @param cubeInfo The Cube map to extract the information from.
-    * @return The Spherical Polynomial data.
+    * @returns The Spherical Polynomial data.
     */
   inline def ConvertCubeMapToSphericalPolynomial(cubeInfo: CubeMapInfo): typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapToSphericalPolynomial")(cubeInfo.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial]
   
-  @JSImport("babylonjs/index", "CubeMapToSphericalPolynomialTools.FileFaces")
+  /**
+    * Compute the area on the unit sphere of the rectangle defined by (x,y) and the origin
+    * See https://www.rorydriscoll.com/2012/01/15/cubemap-texel-solid-angle/
+    * @param x
+    * @param y
+    */
+  @JSImport("babylonjs/index", "CubeMapToSphericalPolynomialTools._AreaElement")
   @js.native
-  def FileFaces: js.Any = js.native
-  inline def FileFaces_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileFaces")(x.asInstanceOf[js.Any])
+  def _AreaElement: Any = js.native
+  inline def _AreaElement_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AreaElement")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs/index", "CubeMapToSphericalPolynomialTools._FileFaces")
+  @js.native
+  def _FileFaces: Any = js.native
+  inline def _FileFaces_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FileFaces")(x.asInstanceOf[js.Any])
 }

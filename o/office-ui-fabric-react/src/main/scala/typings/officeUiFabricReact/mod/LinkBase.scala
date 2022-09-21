@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "LinkBase")
 @js.native
-class LinkBase protected ()
+open class LinkBase protected ()
   extends typings.officeUiFabricReact.libLinkMod.LinkBase {
   def this(props: ILinkProps) = this()
 }

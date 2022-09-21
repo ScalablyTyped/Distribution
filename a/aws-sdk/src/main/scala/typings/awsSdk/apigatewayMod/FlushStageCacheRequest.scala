@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlushStageCacheRequest extends StObject {
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
   
   /**
-    * [Required] The name of the stage to flush its cache.
+    * The name of the stage to flush its cache.
     */
   var stageName: String
 }

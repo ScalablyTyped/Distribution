@@ -36,6 +36,6 @@ object VariableMultipliersServerExecutionOptions {
     
     inline def setMultipliers(value: js.Array[String]): Self = StObject.set(x, "multipliers", value.asInstanceOf[js.Any])
     
-    inline def setMultipliersVarargs(value: String*): Self = StObject.set(x, "multipliers", js.Array(value :_*))
+    inline def setMultipliersVarargs(value: String*): Self = StObject.set(x, "multipliers", js.Array(value*))
   }
 }

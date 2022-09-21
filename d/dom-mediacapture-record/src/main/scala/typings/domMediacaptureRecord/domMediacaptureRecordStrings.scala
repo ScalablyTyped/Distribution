@@ -21,9 +21,7 @@ object domMediacaptureRecordStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait inactive
-    extends StObject
-       with RecordingState
+  sealed trait inactive extends StObject
   inline def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
@@ -31,15 +29,11 @@ object domMediacaptureRecordStrings {
   inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait paused
-    extends StObject
-       with RecordingState
+  sealed trait paused extends StObject
   inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
-  sealed trait recording
-    extends StObject
-       with RecordingState
+  sealed trait recording extends StObject
   inline def recording: recording = "recording".asInstanceOf[recording]
   
   @js.native

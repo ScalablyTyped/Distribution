@@ -33,7 +33,7 @@ object utilMod {
   
   inline def getValueByPercent(min: Double, max: Double, percent: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueByPercent")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def hasClass(elements: js.Any, cName: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(elements.asInstanceOf[js.Any], cName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasClass(elements: Any, cName: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(elements.asInstanceOf[js.Any], cName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def intersectBBox(box1: BBox, box2: BBox): BBox = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectBBox")(box1.asInstanceOf[js.Any], box2.asInstanceOf[js.Any])).asInstanceOf[BBox]
   
@@ -46,7 +46,7 @@ object utilMod {
   
   inline def regionToBBox(region: Region): BBox = ^.asInstanceOf[js.Dynamic].applyDynamic("regionToBBox")(region.asInstanceOf[js.Any]).asInstanceOf[BBox]
   
-  inline def toPx(number: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toPx")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toPx(number: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toPx")(number.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def updateClip(element: IElement, newElement: IElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClip")(element.asInstanceOf[js.Any], newElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

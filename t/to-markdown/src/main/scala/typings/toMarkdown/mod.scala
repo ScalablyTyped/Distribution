@@ -51,7 +51,7 @@ object mod {
       
       inline def setFilterFunction1(value: /* node */ HTMLElement => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value*))
       
       inline def setReplacement(value: (String, HTMLElement) => String): Self = StObject.set(x, "replacement", js.Any.fromFunction2(value))
     }
@@ -78,7 +78,7 @@ object mod {
       
       inline def setConvertersUndefined: Self = StObject.set(x, "converters", js.undefined)
       
-      inline def setConvertersVarargs(value: Converter*): Self = StObject.set(x, "converters", js.Array(value :_*))
+      inline def setConvertersVarargs(value: Converter*): Self = StObject.set(x, "converters", js.Array(value*))
       
       inline def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
       

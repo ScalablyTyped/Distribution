@@ -14,7 +14,7 @@ trait PermissionSetProvisioningStatus extends StObject {
   /**
     * The date that the permission set was created.
     */
-  var CreatedDate: js.UndefOr[Date] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The message that contains an error or exception in case of an operation failure.
@@ -49,7 +49,7 @@ object PermissionSetProvisioningStatus {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     

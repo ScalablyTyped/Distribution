@@ -39,7 +39,7 @@ object UserGameData {
     
     inline def setKVDataList(value: js.Array[KVData]): Self = StObject.set(x, "KVDataList", value.asInstanceOf[js.Any])
     
-    inline def setKVDataListVarargs(value: KVData*): Self = StObject.set(x, "KVDataList", js.Array(value :_*))
+    inline def setKVDataListVarargs(value: KVData*): Self = StObject.set(x, "KVDataList", js.Array(value*))
     
     inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     

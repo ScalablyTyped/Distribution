@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object highlightToggleMod extends Shortcut {
   
-  @JSImport("@storybook/addon-a11y/dist/components/Report/HighlightToggle", JSImport.Default)
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/Report/HighlightToggle", JSImport.Default)
   @js.native
   val default: FC[ToggleProps] = js.native
   
@@ -30,7 +30,7 @@ object highlightToggleMod extends Shortcut {
       
       inline def setElementsToHighlight(value: js.Array[NodeResult]): Self = StObject.set(x, "elementsToHighlight", value.asInstanceOf[js.Any])
       
-      inline def setElementsToHighlightVarargs(value: NodeResult*): Self = StObject.set(x, "elementsToHighlight", js.Array(value :_*))
+      inline def setElementsToHighlightVarargs(value: NodeResult*): Self = StObject.set(x, "elementsToHighlight", js.Array(value*))
       
       inline def setToggleId(value: String): Self = StObject.set(x, "toggleId", value.asInstanceOf[js.Any])
       

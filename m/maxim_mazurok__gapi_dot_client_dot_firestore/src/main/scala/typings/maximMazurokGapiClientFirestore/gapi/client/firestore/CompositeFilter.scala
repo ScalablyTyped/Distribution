@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompositeFilter extends StObject {
   
-  /** The list of filters to combine. Must contain at least one filter. */
+  /** The list of filters to combine. Requires: * At least one filter is present. */
   var filters: js.UndefOr[js.Array[Filter]] = js.undefined
   
   /** The operator for combining multiple filters. */
@@ -25,7 +25,7 @@ object CompositeFilter {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     

@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A filter on a specific property.
-  */
 trait SchemaPropertyFilter extends StObject {
   
   /**
     * The operator to filter by.
     */
-  var op: js.UndefOr[String] = js.undefined
+  var op: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The property to filter by.
@@ -34,6 +31,8 @@ object SchemaPropertyFilter {
   extension [Self <: SchemaPropertyFilter](x: Self) {
     
     inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    
+    inline def setOpNull: Self = StObject.set(x, "op", null)
     
     inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     

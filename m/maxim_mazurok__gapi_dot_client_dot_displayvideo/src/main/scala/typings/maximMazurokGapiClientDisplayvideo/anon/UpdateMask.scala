@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.Channel
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.Campaign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait UpdateMask extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the created channel. */
+  /** Output only. The unique ID of the advertiser the campaign belongs to. */
   var advertiserId: String
   
   /** Data format for response. */
@@ -23,8 +23,8 @@ trait UpdateMask extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the channel. Assigned by the system. */
-  var channelId: String
+  /** Output only. The unique ID of the campaign. Assigned by the system. */
+  var campaignId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -35,9 +35,6 @@ trait UpdateMask extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the partner that owns the created channel. */
-  var partnerId: js.UndefOr[String] = js.undefined
-  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +42,7 @@ trait UpdateMask extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Channel
+  var resource: Campaign
   
   /** Required. The mask to control which fields to update. */
   var updateMask: js.UndefOr[String] = js.undefined
@@ -58,8 +55,8 @@ trait UpdateMask extends StObject {
 }
 object UpdateMask {
   
-  inline def apply(advertiserId: String, channelId: String, resource: Channel): UpdateMask = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, campaignId: String, resource: Campaign): UpdateMask = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], campaignId = campaignId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMask]
   }
   
@@ -83,7 +80,7 @@ object UpdateMask {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -97,10 +94,6 @@ object UpdateMask {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
-    
-    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
-    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -109,7 +102,7 @@ object UpdateMask {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Channel): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Campaign): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

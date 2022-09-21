@@ -9,14 +9,14 @@ trait WebXRFeaturePointSystem
   extends StObject
      with WebXRAbstractFeature {
   
-  /* private */ var _enabled: js.Any = js.native
+  /* private */ var _enabled: Any = js.native
   
-  /* private */ var _featurePointCloud: js.Any = js.native
+  /* private */ var _featurePointCloud: Any = js.native
   
   /**
     * Initializes the feature. If the feature point feature is not available for this environment do not mark the feature as enabled.
     */
-  /* private */ var _init: js.Any = js.native
+  /* private */ var _init: Any = js.native
   
   /**
     * The current feature point cloud maintained across frames.

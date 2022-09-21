@@ -29,13 +29,13 @@ object anon {
       
       inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      inline def setAfterVarargs(value: TGroup*): Self = StObject.set(x, "after", js.Array(value :_*))
+      inline def setAfterVarargs(value: TGroup*): Self = StObject.set(x, "after", js.Array(value*))
       
       inline def setBefore(value: TGroup | js.Array[TGroup]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      inline def setBeforeVarargs(value: TGroup*): Self = StObject.set(x, "before", js.Array(value :_*))
+      inline def setBeforeVarargs(value: TGroup*): Self = StObject.set(x, "before", js.Array(value*))
       
       inline def setGroup(value: TGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       

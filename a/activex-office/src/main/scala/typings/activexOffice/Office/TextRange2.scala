@@ -9,7 +9,7 @@ trait TextRange2 extends StObject {
   
   def AddPeriods(): Unit = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val BoundHeight: Double = js.native
   
@@ -117,7 +117,7 @@ trait TextRange2 extends StObject {
   def Paragraphs(Start: Double, Length: Double): TextRange2 = js.native
   def Paragraphs(Start: Unit, Length: Double): TextRange2 = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Paste(): TextRange2 = js.native
   

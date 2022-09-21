@@ -10,15 +10,12 @@ find all combinations from array
 | ------------------ | :-------------: |
 | Full name          | combinations |
 | Keywords           | combination, combo, array |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 34383 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6802.0 |
+| # stars            | 17.0 |
 
 ## Links
-- [Homepage](https://github.com/jgallen23/combinations#readme)
-- [Bugs](https://github.com/jgallen23/combinations/issues)
-- [Repository](https://github.com/jgallen23/combinations)
 - [Npm](https://www.npmjs.com/package/combinations)
     
 

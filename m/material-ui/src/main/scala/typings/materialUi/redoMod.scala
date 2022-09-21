@@ -10,10 +10,10 @@ object redoMod {
   
   @JSImport("material-ui/svg-icons/content/redo", JSImport.Default)
   @js.native
-  class default () extends ContentRedo
+  open class default () extends ContentRedo
   
   @JSImport("material-ui/svg-icons/content/redo", "ContentRedo")
   @js.native
-  class ContentRedo ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentRedo ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -23,7 +23,7 @@ object XPresentationSupplier {
     Presentation: XPresentation,
     acquire: () => Unit,
     getPresentation: () => XPresentation,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPresentationSupplier = {
     val __obj = js.Dynamic.literal(Presentation = Presentation.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getPresentation = js.Any.fromFunction0(getPresentation), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

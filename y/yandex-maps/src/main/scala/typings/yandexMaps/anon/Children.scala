@@ -28,7 +28,7 @@ object Children {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: IGeoObject[IGeometry]*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: IGeoObject[IGeometry]*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setGeometry(value: IGeometry | js.Object): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ object GetBlueprintsResult {
     
     inline def setBlueprintsUndefined: Self = StObject.set(x, "blueprints", js.undefined)
     
-    inline def setBlueprintsVarargs(value: Blueprint*): Self = StObject.set(x, "blueprints", js.Array(value :_*))
+    inline def setBlueprintsVarargs(value: Blueprint*): Self = StObject.set(x, "blueprints", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<ali-app.my.AppOptions & ali-app.my.App> */
 trait PartialAppOptionsApp extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var getCurrentPage: js.UndefOr[js.Function0[Page]] = js.undefined
   
@@ -35,7 +35,7 @@ object PartialAppOptionsApp {
   
   extension [Self <: PartialAppOptionsApp](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

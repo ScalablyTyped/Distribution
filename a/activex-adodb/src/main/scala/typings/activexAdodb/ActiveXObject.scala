@@ -60,21 +60,15 @@ trait ActiveXObject extends StObject {
   
   def on(
     obj: Connection,
+    event: CommitTransComplete | ConnectComplete | InfoMessage | RollbackTransComplete,
+    argNames: js.Tuple3[pError, adStatus, pConnection],
+    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ PConnection, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Connection,
     event: BeginTransComplete,
     argNames: js.Tuple4[TransactionLevel, pError, adStatus, pConnection],
     handler: js.ThisFunction1[/* this */ Connection, /* parameter */ AdStatus, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Connection,
-    event: CommitTransComplete,
-    argNames: js.Tuple3[pError, adStatus, pConnection],
-    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ PConnection, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Connection,
-    event: ConnectComplete,
-    argNames: js.Tuple3[pError, adStatus, pConnection],
-    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ PConnection, Unit]
   ): Unit = js.native
   def on(
     obj: Connection,
@@ -83,16 +77,16 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ Connection, /* parameter */ AdStatusPConnection, Unit]
   ): Unit = js.native
   def on(
-    obj: Connection,
-    event: InfoMessage,
-    argNames: js.Tuple3[pError, adStatus, pConnection],
-    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ PConnection, Unit]
+    obj: Recordset,
+    event: WillChangeRecordset | WillMove,
+    argNames: js.Tuple3[adReason, adStatus, pRecordset],
+    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AdReasonAdStatus, Unit]
   ): Unit = js.native
   def on(
-    obj: Connection,
-    event: RollbackTransComplete,
-    argNames: js.Tuple3[pError, adStatus, pConnection],
-    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ PConnection, Unit]
+    obj: Recordset,
+    event: MoveComplete | RecordsetChangeComplete,
+    argNames: js.Tuple4[adReason, pError, adStatus, pRecordset],
+    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AdReason, Unit]
   ): Unit = js.native
   def on(
     obj: Recordset,
@@ -120,21 +114,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Recordset,
-    event: MoveComplete,
-    argNames: js.Tuple4[adReason, pError, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AdReason, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Recordset,
     event: RecordChangeComplete,
     argNames: js.Tuple5[adReason, cRecords, pError, adStatus, pRecordset],
     handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ CRecords, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Recordset,
-    event: RecordsetChangeComplete,
-    argNames: js.Tuple4[adReason, pError, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AdReason, Unit]
   ): Unit = js.native
   def on(
     obj: Recordset,
@@ -147,18 +129,6 @@ trait ActiveXObject extends StObject {
     event: WillChangeRecord,
     argNames: js.Tuple4[adReason, cRecords, adStatus, pRecordset],
     handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ PRecordset, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Recordset,
-    event: WillChangeRecordset,
-    argNames: js.Tuple3[adReason, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AdReasonAdStatus, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Recordset,
-    event: WillMove,
-    argNames: js.Tuple3[adReason, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AdReasonAdStatus, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_ExecuteComplete(
@@ -183,5 +153,5 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   
   @JSName("set")
-  def set_Collect(obj: Recordset, propertyName: Collect, parameterTypes: js.Array[js.Any], newValue: js.Any): Unit = js.native
+  def set_Collect(obj: Recordset, propertyName: Collect, parameterTypes: js.Array[Any], newValue: Any): Unit = js.native
 }

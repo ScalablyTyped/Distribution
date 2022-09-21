@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagResourceRequest extends StObject {
   
   /**
-    * The ID specifying the EFS resource that you want to create a tag for. 
+    * The ID specifying the EFS resource that you want to create a tag for.
     */
   var ResourceId: typings.awsSdk.efsMod.ResourceId
   
   /**
-    * 
+    * An array of Tag objects to add. Each Tag object is a key-value pair.
     */
   var Tags: typings.awsSdk.efsMod.Tags
 }
@@ -29,6 +29,6 @@ object TagResourceRequest {
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

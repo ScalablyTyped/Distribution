@@ -3,7 +3,6 @@ package typings.awsSdkClientCognitoIdentityBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientCognitoIdentityBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesUnlinkIdentityInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -44,19 +43,19 @@ object typesUnlinkIdentityInputMod {
     /**
       * <p>A set of optional name-value pairs that map provider names to provider tokens.</p>
       */
-    var Logins: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])
+    var Logins: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])
     
     /**
       * <p>Provider names to unlink from this identity.</p>
       */
-    var LoginsToRemove: js.Array[String] | Iterable[String]
+    var LoginsToRemove: js.Array[String] | js.Iterable[String]
   }
   object UnlinkIdentityInput {
     
     inline def apply(
       IdentityId: String,
-      Logins: StringDictionary[String] | (Iterable[js.Tuple2[String, String]]),
-      LoginsToRemove: js.Array[String] | Iterable[String]
+      Logins: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]]),
+      LoginsToRemove: js.Array[String] | js.Iterable[String]
     ): UnlinkIdentityInput = {
       val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any], Logins = Logins.asInstanceOf[js.Any], LoginsToRemove = LoginsToRemove.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnlinkIdentityInput]
@@ -69,7 +68,7 @@ object typesUnlinkIdentityInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -80,11 +79,11 @@ object typesUnlinkIdentityInputMod {
       
       inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
       
-      inline def setLogins(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+      inline def setLogins(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
       
-      inline def setLoginsToRemove(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "LoginsToRemove", value.asInstanceOf[js.Any])
+      inline def setLoginsToRemove(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "LoginsToRemove", value.asInstanceOf[js.Any])
       
-      inline def setLoginsToRemoveVarargs(value: String*): Self = StObject.set(x, "LoginsToRemove", js.Array(value :_*))
+      inline def setLoginsToRemoveVarargs(value: String*): Self = StObject.set(x, "LoginsToRemove", js.Array(value*))
     }
   }
 }

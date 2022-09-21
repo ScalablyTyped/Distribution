@@ -31,6 +31,6 @@ object Cascade {
     
     inline def setValue(value: js.Array[scala.Nothing]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: scala.Nothing*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: scala.Nothing*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

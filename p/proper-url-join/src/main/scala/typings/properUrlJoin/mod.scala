@@ -2,6 +2,7 @@ package typings.properUrlJoin
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.properUrlJoin.properUrlJoinStrings.keep
 import typings.queryString.mod.StringifyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +21,7 @@ object mod extends Shortcut {
       *
       * **Default**: `true`
       */
-    var leadingSlash: js.UndefOr[Boolean] = js.undefined
+    var leadingSlash: js.UndefOr[Boolean | keep] = js.undefined
     
     /**
       * Protocol relative URLs.
@@ -45,7 +46,7 @@ object mod extends Shortcut {
       *
       * **Default**: `false`
       */
-    var trailingSlash: js.UndefOr[Boolean] = js.undefined
+    var trailingSlash: js.UndefOr[Boolean | keep] = js.undefined
   }
   object Options {
     
@@ -56,7 +57,7 @@ object mod extends Shortcut {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setLeadingSlash(value: Boolean): Self = StObject.set(x, "leadingSlash", value.asInstanceOf[js.Any])
+      inline def setLeadingSlash(value: Boolean | keep): Self = StObject.set(x, "leadingSlash", value.asInstanceOf[js.Any])
       
       inline def setLeadingSlashUndefined: Self = StObject.set(x, "leadingSlash", js.undefined)
       
@@ -72,7 +73,7 @@ object mod extends Shortcut {
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setTrailingSlash(value: Boolean): Self = StObject.set(x, "trailingSlash", value.asInstanceOf[js.Any])
+      inline def setTrailingSlash(value: Boolean | keep): Self = StObject.set(x, "trailingSlash", value.asInstanceOf[js.Any])
       
       inline def setTrailingSlashUndefined: Self = StObject.set(x, "trailingSlash", js.undefined)
     }

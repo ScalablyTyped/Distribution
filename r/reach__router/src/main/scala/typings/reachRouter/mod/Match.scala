@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@reach/router", "Match")
 @js.native
-class Match[TParams] protected ()
-  extends Component[MatchProps[TParams], js.Object, js.Any] {
+open class Match[TParams] protected ()
+  extends Component[MatchProps[TParams], js.Object, Any] {
   def this(props: MatchProps[TParams]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MatchProps[TParams], context: js.Any) = this()
+  def this(props: MatchProps[TParams], context: Any) = this()
 }

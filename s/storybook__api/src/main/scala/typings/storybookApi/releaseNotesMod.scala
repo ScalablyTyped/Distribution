@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object releaseNotesMod {
   
-  @JSImport("@storybook/api/dist/modules/release-notes", "init")
+  @JSImport("@storybook/api/dist/ts3.9/modules/release-notes", "init")
   @js.native
   val init: ModuleFn = js.native
   
@@ -86,7 +86,7 @@ object releaseNotesMod {
       
       inline def setReleaseNotesViewed(value: js.Array[String]): Self = StObject.set(x, "releaseNotesViewed", value.asInstanceOf[js.Any])
       
-      inline def setReleaseNotesViewedVarargs(value: String*): Self = StObject.set(x, "releaseNotesViewed", js.Array(value :_*))
+      inline def setReleaseNotesViewedVarargs(value: String*): Self = StObject.set(x, "releaseNotesViewed", js.Array(value*))
     }
   }
 }

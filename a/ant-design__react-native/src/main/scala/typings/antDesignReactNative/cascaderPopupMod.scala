@@ -12,7 +12,7 @@ object cascaderPopupMod {
   
   @JSImport("@ant-design/react-native/lib/picker/cascader/Popup", JSImport.Default)
   @js.native
-  class default () extends PopupCascader
+  open class default () extends PopupCascader
   object default {
     
     /* static member */
@@ -60,9 +60,8 @@ object cascaderPopupMod {
   }
   
   @js.native
-  trait PopupCascader
-    extends Component[IPopupCascaderProps, js.Any, js.Any] {
+  trait PopupCascader extends Component[IPopupCascaderProps, Any, Any] {
     
-    def onOk(v: js.Any): Unit = js.native
+    def onOk(v: Any): Unit = js.native
   }
 }

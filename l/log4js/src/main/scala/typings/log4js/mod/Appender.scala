@@ -1,105 +1,90 @@
 package typings.log4js.mod
 
-import typings.log4js.log4jsStrings.master
-import typings.log4js.log4jsStrings.worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined log4js.log4js.Appenders[keyof log4js.log4js.Appenders] */
 /* Rewritten from type alias, can be one of: 
-  - typings.log4js.mod.CategoryFilterAppender
-  - typings.log4js.mod.ConsoleAppender
-  - typings.log4js.mod.FileAppender
-  - typings.log4js.mod.SyncfileAppender
-  - typings.log4js.mod.DateFileAppender
-  - typings.log4js.mod.LogLevelFilterAppender
-  - typings.log4js.mod.NoLogFilterAppender
-  - typings.log4js.mod.MultiFileAppender
-  - typings.log4js.mod.MultiprocessAppender
-  - typings.log4js.mod.RecordingAppender
-  - typings.log4js.mod.StandardErrorAppender
-  - typings.log4js.mod.StandardOutputAppender
-  - typings.log4js.mod.CustomAppender
+  - typings.log4js.log4jsStrings.pattern
+  - typings.log4js.log4jsStrings.level
+  - typings.log4js.log4jsStrings.numBackups
+  - typings.log4js.log4jsStrings.maxLevel
+  - typings.log4js.log4jsStrings.endMsg
+  - typings.log4js.log4jsStrings.fileNameSep
+  - typings.log4js.log4jsStrings.port
+  - typings.log4js.log4jsStrings.keepFileExt
+  - typings.log4js.log4jsStrings.compress
+  - typings.log4js.log4jsStrings.layout
+  - typings.log4js.log4jsStrings.exclude
+  - typings.log4js.log4jsStrings.host
+  - typings.log4js.log4jsStrings.base
+  - typings.log4js.log4jsStrings.flags
+  - typings.log4js.log4jsStrings.backups
+  - typings.log4js.log4jsStrings.property
+  - typings.log4js.log4jsStrings.appender
+  - typings.log4js.log4jsStrings.loggerHost
+  - typings.log4js.log4jsStrings.filename
+  - typings.log4js.log4jsStrings.mode
+  - typings.log4js.log4jsStrings.`type`
+  - typings.log4js.log4jsStrings.alwaysIncludePattern
+  - typings.log4js.log4jsStrings.maxLogSize
+  - typings.log4js.log4jsStrings.`extension`
+  - typings.log4js.log4jsStrings.loggerPort
+  - typings.log4js.log4jsStrings.encoding
 */
 trait Appender extends StObject
 object Appender {
   
-  inline def CategoryFilterAppender(): typings.log4js.mod.CategoryFilterAppender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("categoryFilter")
-    __obj.asInstanceOf[typings.log4js.mod.CategoryFilterAppender]
-  }
+  inline def alwaysIncludePattern: typings.log4js.log4jsStrings.alwaysIncludePattern = "alwaysIncludePattern".asInstanceOf[typings.log4js.log4jsStrings.alwaysIncludePattern]
   
-  inline def ConsoleAppender(): typings.log4js.mod.ConsoleAppender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("console")
-    __obj.asInstanceOf[typings.log4js.mod.ConsoleAppender]
-  }
+  inline def appender: typings.log4js.log4jsStrings.appender = "appender".asInstanceOf[typings.log4js.log4jsStrings.appender]
   
-  inline def CustomAppender(`type`: String | AppenderModule): typings.log4js.mod.CustomAppender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.log4js.mod.CustomAppender]
-  }
+  inline def backups: typings.log4js.log4jsStrings.backups = "backups".asInstanceOf[typings.log4js.log4jsStrings.backups]
   
-  inline def DateFileAppender(filename: String): typings.log4js.mod.DateFileAppender = {
-    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("dateFile")
-    __obj.asInstanceOf[typings.log4js.mod.DateFileAppender]
-  }
+  inline def base: typings.log4js.log4jsStrings.base = "base".asInstanceOf[typings.log4js.log4jsStrings.base]
   
-  inline def FileAppender(filename: String): typings.log4js.mod.FileAppender = {
-    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("file")
-    __obj.asInstanceOf[typings.log4js.mod.FileAppender]
-  }
+  inline def compress: typings.log4js.log4jsStrings.compress = "compress".asInstanceOf[typings.log4js.log4jsStrings.compress]
   
-  inline def LogLevelFilterAppender(appender: String, level: String): typings.log4js.mod.LogLevelFilterAppender = {
-    val __obj = js.Dynamic.literal(appender = appender.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("logLevelFilter")
-    __obj.asInstanceOf[typings.log4js.mod.LogLevelFilterAppender]
-  }
+  inline def encoding: typings.log4js.log4jsStrings.encoding = "encoding".asInstanceOf[typings.log4js.log4jsStrings.encoding]
   
-  inline def MultiFileAppender(base: String, `extension`: String, property: String): typings.log4js.mod.MultiFileAppender = {
-    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
-    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("multiFile")
-    __obj.asInstanceOf[typings.log4js.mod.MultiFileAppender]
-  }
+  inline def endMsg: typings.log4js.log4jsStrings.endMsg = "endMsg".asInstanceOf[typings.log4js.log4jsStrings.endMsg]
   
-  inline def MultiprocessAppender(mode: master | worker): typings.log4js.mod.MultiprocessAppender = {
-    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("multiprocess")
-    __obj.asInstanceOf[typings.log4js.mod.MultiprocessAppender]
-  }
+  inline def exclude: typings.log4js.log4jsStrings.exclude = "exclude".asInstanceOf[typings.log4js.log4jsStrings.exclude]
   
-  inline def NoLogFilterAppender(appender: String, exclude: String | js.Array[String]): typings.log4js.mod.NoLogFilterAppender = {
-    val __obj = js.Dynamic.literal(appender = appender.asInstanceOf[js.Any], exclude = exclude.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("noLogFilter")
-    __obj.asInstanceOf[typings.log4js.mod.NoLogFilterAppender]
-  }
+  inline def `extension`: typings.log4js.log4jsStrings.`extension` = "extension".asInstanceOf[typings.log4js.log4jsStrings.`extension`]
   
-  inline def RecordingAppender(): typings.log4js.mod.RecordingAppender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("recording")
-    __obj.asInstanceOf[typings.log4js.mod.RecordingAppender]
-  }
+  inline def fileNameSep: typings.log4js.log4jsStrings.fileNameSep = "fileNameSep".asInstanceOf[typings.log4js.log4jsStrings.fileNameSep]
   
-  inline def StandardErrorAppender(): typings.log4js.mod.StandardErrorAppender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("stderr")
-    __obj.asInstanceOf[typings.log4js.mod.StandardErrorAppender]
-  }
+  inline def filename: typings.log4js.log4jsStrings.filename = "filename".asInstanceOf[typings.log4js.log4jsStrings.filename]
   
-  inline def StandardOutputAppender(): typings.log4js.mod.StandardOutputAppender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("stdout")
-    __obj.asInstanceOf[typings.log4js.mod.StandardOutputAppender]
-  }
+  inline def flags: typings.log4js.log4jsStrings.flags = "flags".asInstanceOf[typings.log4js.log4jsStrings.flags]
   
-  inline def SyncfileAppender(filename: String): typings.log4js.mod.SyncfileAppender = {
-    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("fileSync")
-    __obj.asInstanceOf[typings.log4js.mod.SyncfileAppender]
-  }
+  inline def host: typings.log4js.log4jsStrings.host = "host".asInstanceOf[typings.log4js.log4jsStrings.host]
+  
+  inline def keepFileExt: typings.log4js.log4jsStrings.keepFileExt = "keepFileExt".asInstanceOf[typings.log4js.log4jsStrings.keepFileExt]
+  
+  inline def layout: typings.log4js.log4jsStrings.layout = "layout".asInstanceOf[typings.log4js.log4jsStrings.layout]
+  
+  inline def level: typings.log4js.log4jsStrings.level = "level".asInstanceOf[typings.log4js.log4jsStrings.level]
+  
+  inline def loggerHost: typings.log4js.log4jsStrings.loggerHost = "loggerHost".asInstanceOf[typings.log4js.log4jsStrings.loggerHost]
+  
+  inline def loggerPort: typings.log4js.log4jsStrings.loggerPort = "loggerPort".asInstanceOf[typings.log4js.log4jsStrings.loggerPort]
+  
+  inline def maxLevel: typings.log4js.log4jsStrings.maxLevel = "maxLevel".asInstanceOf[typings.log4js.log4jsStrings.maxLevel]
+  
+  inline def maxLogSize: typings.log4js.log4jsStrings.maxLogSize = "maxLogSize".asInstanceOf[typings.log4js.log4jsStrings.maxLogSize]
+  
+  inline def mode: typings.log4js.log4jsStrings.mode = "mode".asInstanceOf[typings.log4js.log4jsStrings.mode]
+  
+  inline def numBackups: typings.log4js.log4jsStrings.numBackups = "numBackups".asInstanceOf[typings.log4js.log4jsStrings.numBackups]
+  
+  inline def pattern: typings.log4js.log4jsStrings.pattern = "pattern".asInstanceOf[typings.log4js.log4jsStrings.pattern]
+  
+  inline def port: typings.log4js.log4jsStrings.port = "port".asInstanceOf[typings.log4js.log4jsStrings.port]
+  
+  inline def property: typings.log4js.log4jsStrings.property = "property".asInstanceOf[typings.log4js.log4jsStrings.property]
+  
+  inline def `type`: typings.log4js.log4jsStrings.`type` = "type".asInstanceOf[typings.log4js.log4jsStrings.`type`]
 }

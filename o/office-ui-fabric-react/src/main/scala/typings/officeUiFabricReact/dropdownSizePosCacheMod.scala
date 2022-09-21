@@ -9,13 +9,13 @@ object dropdownSizePosCacheMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Dropdown/utilities/DropdownSizePosCache", "DropdownSizePosCache")
   @js.native
-  class DropdownSizePosCache () extends StObject {
+  open class DropdownSizePosCache () extends StObject {
     
-    /* private */ var _cachedOptions: js.Any = js.native
+    /* private */ var _cachedOptions: Any = js.native
     
-    /* private */ var _displayOnlyOptionsCache: js.Any = js.native
+    /* private */ var _displayOnlyOptionsCache: Any = js.native
     
-    /* private */ var _size: js.Any = js.native
+    /* private */ var _size: Any = js.native
     
     /**
       * The chached options array.

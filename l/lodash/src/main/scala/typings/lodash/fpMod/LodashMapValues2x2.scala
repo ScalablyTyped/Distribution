@@ -10,10 +10,10 @@ trait LodashMapValues2x2[T] extends StObject {
   
   def apply(iteratee: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.LodashMapValues2x2 & TopLevel[js.Any] = js.native
+    */ typings.lodash.lodashStrings.LodashMapValues2x2 & TopLevel[Any] = js.native
   def apply(iteratee: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.LodashMapValues2x2 & TopLevel[js.Any] = js.native
+    */ typings.lodash.lodashStrings.LodashMapValues2x2 & TopLevel[Any] = js.native
   def apply[TResult](
     callback: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
@@ -21,5 +21,5 @@ trait LodashMapValues2x2[T] extends StObject {
     ]
   ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: TResult}
-    */ typings.lodash.lodashStrings.LodashMapValues2x2 & TopLevel[js.Any] = js.native
+    */ typings.lodash.lodashStrings.LodashMapValues2x2 & TopLevel[Any] = js.native
 }

@@ -15,20 +15,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deleteIdentityPoolCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/DeleteIdentityPoolCommand", "DeleteIdentityPoolCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/DeleteIdentityPoolCommand", "DeleteIdentityPoolCommand")
   @js.native
-  class DeleteIdentityPoolCommand protected ()
-    extends Command[
+  open class DeleteIdentityPoolCommand protected () extends Command[
           DeleteIdentityPoolCommandInput, 
           DeleteIdentityPoolCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: DeleteIdentityPoolCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -39,7 +41,7 @@ object deleteIdentityPoolCommandMod {
       options: HttpHandlerOptions
     ): Handler[DeleteIdentityPoolCommandInput, DeleteIdentityPoolCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type DeleteIdentityPoolCommandInput = DeleteIdentityPoolInput

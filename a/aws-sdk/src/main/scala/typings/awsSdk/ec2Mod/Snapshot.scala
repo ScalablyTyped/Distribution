@@ -22,17 +22,22 @@ trait Snapshot extends StObject {
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the parent volume.
+    * The Amazon Resource Name (ARN) of the Key Management Service (KMS) KMS key that was used to protect the volume encryption key for the parent volume.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS owner alias, from an Amazon-maintained list (amazon). This is not the user-configured AWS account alias set using the IAM console.
+    * The ARN of the Outpost on which the snapshot is stored. For more information, see Amazon EBS local snapshots on Outposts in the Amazon Elastic Compute Cloud User Guide.
+    */
+  var OutpostArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Web Services owner alias, from an Amazon-maintained list (amazon). This is not the user-configured Amazon Web Services account alias set using the IAM console.
     */
   var OwnerAlias: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account ID of the EBS snapshot owner.
+    * The ID of the Amazon Web Services account that owns the EBS snapshot.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -42,6 +47,11 @@ trait Snapshot extends StObject {
   var Progress: js.UndefOr[String] = js.undefined
   
   /**
+    * Only for archived snapshots that are temporarily restored. Indicates the date and time when a temporarily restored snapshot will be automatically re-archived.
+    */
+  var RestoreExpiryTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * The ID of the snapshot. Each snapshot receives a unique identifier when it is created.
     */
   var SnapshotId: js.UndefOr[String] = js.undefined
@@ -49,7 +59,7 @@ trait Snapshot extends StObject {
   /**
     * The time stamp when the snapshot was initiated.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The snapshot state.
@@ -57,9 +67,14 @@ trait Snapshot extends StObject {
   var State: js.UndefOr[SnapshotState] = js.undefined
   
   /**
-    * Encrypted Amazon EBS snapshots are copied asynchronously. If a snapshot copy operation fails (for example, if the proper AWS Key Management Service (AWS KMS) permissions are not obtained) this field displays error state details to help you diagnose why the error occurred. This parameter is only returned by DescribeSnapshots.
+    * Encrypted Amazon EBS snapshots are copied asynchronously. If a snapshot copy operation fails (for example, if the proper Key Management Service (KMS) permissions are not obtained) this field displays error state details to help you diagnose why the error occurred. This parameter is only returned by DescribeSnapshots.
     */
   var StateMessage: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The storage tier in which the snapshot is stored. standard indicates that the snapshot is stored in the standard snapshot storage tier and that it is ready for use. archive indicates that the snapshot is currently archived and that it must be restored before it can be used.
+    */
+  var StorageTier: js.UndefOr[typings.awsSdk.ec2Mod.StorageTier] = js.undefined
   
   /**
     * Any tags assigned to the snapshot.
@@ -101,6 +116,10 @@ object Snapshot {
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
+    inline def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
+    
+    inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
+    
     inline def setOwnerAlias(value: String): Self = StObject.set(x, "OwnerAlias", value.asInstanceOf[js.Any])
     
     inline def setOwnerAliasUndefined: Self = StObject.set(x, "OwnerAlias", js.undefined)
@@ -113,11 +132,15 @@ object Snapshot {
     
     inline def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
+    inline def setRestoreExpiryTime(value: js.Date): Self = StObject.set(x, "RestoreExpiryTime", value.asInstanceOf[js.Any])
+    
+    inline def setRestoreExpiryTimeUndefined: Self = StObject.set(x, "RestoreExpiryTime", js.undefined)
+    
     inline def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
     inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -129,11 +152,15 @@ object Snapshot {
     
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
+    inline def setStorageTier(value: StorageTier): Self = StObject.set(x, "StorageTier", value.asInstanceOf[js.Any])
+    
+    inline def setStorageTierUndefined: Self = StObject.set(x, "StorageTier", js.undefined)
+    
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     

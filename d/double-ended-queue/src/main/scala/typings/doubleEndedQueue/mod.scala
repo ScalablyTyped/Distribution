@@ -14,7 +14,7 @@ object mod {
     * Creates an empty double-ended queue with initial capacity of 16.
     * If you know the optimal size before-hand, use `new Deque(capacity: number)`.
     */
-  class Class[Item] ()
+  open class Class[Item] ()
     extends StObject
        with Deque[Item] {
     /**

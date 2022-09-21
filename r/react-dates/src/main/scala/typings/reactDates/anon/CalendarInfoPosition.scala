@@ -3,14 +3,12 @@ package typings.reactDates.anon
 import typings.moment.mod.Moment
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.reactDates.mod.CalendarInfoPositionShape
 import typings.reactDates.mod.DayPickerPhrases
 import typings.reactDates.mod.NavPositionShape
 import typings.std.HTMLDivElement
-import typings.std.HTMLElement
+import typings.std.MouseEvent
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +19,7 @@ trait CalendarInfoPosition extends StObject {
   var calendarInfoPosition: js.UndefOr[CalendarInfoPositionShape] = js.undefined
   
   // navigation props
-  var dayPickerNavigationInlineStyles: js.UndefOr[(Record[String, js.Any]) | Null] = js.undefined
+  var dayPickerNavigationInlineStyles: js.UndefOr[(Record[String, Any]) | Null] = js.undefined
   
   var disableNext: js.UndefOr[Boolean] = js.undefined
   
@@ -61,7 +59,7 @@ trait CalendarInfoPosition extends StObject {
   
   var onNextMonthClick: js.UndefOr[js.Function1[/* newCurrentMonth */ Moment, Unit]] = js.undefined
   
-  var onOutsideClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
+  var onOutsideClick: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
   
   var onPrevMonthClick: js.UndefOr[js.Function1[/* newCurrentMonth */ Moment, Unit]] = js.undefined
   
@@ -108,7 +106,7 @@ object CalendarInfoPosition {
     
     inline def setCalendarInfoPositionUndefined: Self = StObject.set(x, "calendarInfoPosition", js.undefined)
     
-    inline def setDayPickerNavigationInlineStyles(value: Record[String, js.Any]): Self = StObject.set(x, "dayPickerNavigationInlineStyles", value.asInstanceOf[js.Any])
+    inline def setDayPickerNavigationInlineStyles(value: Record[String, Any]): Self = StObject.set(x, "dayPickerNavigationInlineStyles", value.asInstanceOf[js.Any])
     
     inline def setDayPickerNavigationInlineStylesNull: Self = StObject.set(x, "dayPickerNavigationInlineStyles", null)
     
@@ -188,7 +186,7 @@ object CalendarInfoPosition {
     
     inline def setOnNextMonthClickUndefined: Self = StObject.set(x, "onNextMonthClick", js.undefined)
     
-    inline def setOnOutsideClick(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onOutsideClick", js.Any.fromFunction1(value))
+    inline def setOnOutsideClick(value: /* e */ MouseEvent => Unit): Self = StObject.set(x, "onOutsideClick", js.Any.fromFunction1(value))
     
     inline def setOnOutsideClickUndefined: Self = StObject.set(x, "onOutsideClick", js.undefined)
     

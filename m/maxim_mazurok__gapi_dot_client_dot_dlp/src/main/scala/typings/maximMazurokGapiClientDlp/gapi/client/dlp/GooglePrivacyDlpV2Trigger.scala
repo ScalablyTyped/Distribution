@@ -6,11 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GooglePrivacyDlpV2Trigger extends StObject {
   
-  /**
-    * For use with hybrid jobs. Jobs must be manually created and finished. Early access feature is in a pre-release state and might change or have limited support. For more information,
-    * see https://cloud.google.com/products#product-launch-stages.
-    */
-  var manual: js.UndefOr[js.Any] = js.undefined
+  /** For use with hybrid jobs. Jobs must be manually created and finished. */
+  var manual: js.UndefOr[Any] = js.undefined
   
   /** Create a job on a repeating basis based on the elapse of time. */
   var schedule: js.UndefOr[GooglePrivacyDlpV2Schedule] = js.undefined
@@ -24,7 +21,7 @@ object GooglePrivacyDlpV2Trigger {
   
   extension [Self <: GooglePrivacyDlpV2Trigger](x: Self) {
     
-    inline def setManual(value: js.Any): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
+    inline def setManual(value: Any): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     
     inline def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
     

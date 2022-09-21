@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("signals.js", "DeluxeSignal")
   @js.native
-  class DeluxeSignal protected ()
+  open class DeluxeSignal protected ()
     extends typings.signalsJs.deluxeSignalMod.DeluxeSignal {
     /**
       * Creates a DeluxeSignal instance to dispatch events on behalf of a target object.
@@ -28,13 +28,13 @@ object mod {
       * NOTE: Subclasses cannot call super.apply(null, valueClasses),
       * but this constructor has logic to support super(valueClasses).
       */
-    def this(target: js.Object, valueClasses: js.Any*) = this()
-    def this(target: Unit, valueClasses: js.Any*) = this()
+    def this(target: js.Object, valueClasses: Any*) = this()
+    def this(target: Unit, valueClasses: Any*) = this()
   }
   
   @JSImport("signals.js", "GenericEvent")
   @js.native
-  class GenericEvent ()
+  open class GenericEvent ()
     extends typings.signalsJs.genericEventMod.GenericEvent {
     def this(bubbles: Boolean) = this()
   }
@@ -61,7 +61,7 @@ object mod {
   
   @JSImport("signals.js", "MonoSignal")
   @js.native
-  class MonoSignal protected ()
+  open class MonoSignal protected ()
     extends typings.signalsJs.monoSignalMod.MonoSignal {
     /**
       * Creates a MonoSignal instance to dispatch value objects.
@@ -74,12 +74,12 @@ object mod {
       * NOTE: Subclasses cannot call super.apply(null, valueClasses),
       * but this constructor has logic to support super(valueClasses).
       */
-    def this(valueClasses: js.Any*) = this()
+    def this(valueClasses: Any*) = this()
   }
   
   @JSImport("signals.js", "OnceSignal")
   @js.native
-  class OnceSignal protected ()
+  open class OnceSignal protected ()
     extends typings.signalsJs.onceSignalMod.OnceSignal {
     /**
       * Creates a Signal instance to dispatch value objects.
@@ -92,19 +92,19 @@ object mod {
       * NOTE: In AS3, subclasses cannot call super.apply(null, valueClasses),
       * but this constructor has logic to support super(valueClasses).
       */
-    def this(valueClasses: js.Any*) = this()
+    def this(valueClasses: Any*) = this()
   }
   
   @JSImport("signals.js", "PrioritySignal")
   @js.native
-  class PrioritySignal protected ()
+  open class PrioritySignal protected ()
     extends typings.signalsJs.prioritySignalMod.PrioritySignal {
-    def this(valueClasses: js.Any*) = this()
+    def this(valueClasses: Any*) = this()
   }
   
   @JSImport("signals.js", "Promise")
   @js.native
-  class Promise protected ()
+  open class Promise protected ()
     extends typings.signalsJs.promiseMod.Promise {
     /**
       * Creates a Signal instance to dispatch value objects.
@@ -117,12 +117,12 @@ object mod {
       * NOTE: In AS3, subclasses cannot call super.apply(null, valueClasses),
       * but this constructor has logic to support super(valueClasses).
       */
-    def this(valueClasses: js.Any*) = this()
+    def this(valueClasses: Any*) = this()
   }
   
   @JSImport("signals.js", "Signal")
   @js.native
-  class Signal protected ()
+  open class Signal protected ()
     extends typings.signalsJs.signalMod.Signal {
     /**
       * Creates a Signal instance to dispatch value objects.
@@ -135,12 +135,12 @@ object mod {
       * NOTE: In AS3, subclasses cannot call super.apply(null, valueClasses),
       * but this constructor has logic to support super(valueClasses).
       */
-    def this(valueClasses: js.Any*) = this()
+    def this(valueClasses: Any*) = this()
   }
   
   @JSImport("signals.js", "Slot")
   @js.native
-  class Slot protected ()
+  open class Slot protected ()
     extends typings.signalsJs.slotMod.Slot {
     /**
       * Creates and returns a new Slot object.
@@ -161,7 +161,7 @@ object mod {
   
   @JSImport("signals.js", "SlotList")
   @js.native
-  class SlotList protected ()
+  open class SlotList protected ()
     extends typings.signalsJs.slotListMod.SlotList {
     /**
       * Creates and returns a new SlotList object.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.PropertyMixer")
 @js.native
-class PropertyMixer protected ()
+open class PropertyMixer protected ()
   extends typings.three.mod.PropertyMixer {
-  def this(binding: js.Any, typeName: String, valueSize: Double) = this()
+  def this(binding: Any, typeName: String, valueSize: Double) = this()
 }

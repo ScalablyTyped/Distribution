@@ -1,6 +1,5 @@
 package typings.scriptableIos.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The date picker can be configured towards picking a date with or without time, just a time or picking hours and minutes for a timer.
   * @see https://docs.scriptable.app/datepicker/#-new-datepicker
   */
-class DatePicker ()
+open class DatePicker ()
   extends StObject
      with typings.scriptableIos.DatePicker {
   
@@ -48,7 +47,7 @@ class DatePicker ()
     * @see https://docs.scriptable.app/datepicker/#initialdate
     */
   /* CompleteClass */
-  var initialDate: Date = js.native
+  var initialDate: js.Date = js.native
   
   /**
     * _Maximum date that is selected in the picker._
@@ -58,7 +57,7 @@ class DatePicker ()
     * @see https://docs.scriptable.app/datepicker/#maximumdate
     */
   /* CompleteClass */
-  var maximumDate: Date = js.native
+  var maximumDate: js.Date = js.native
   
   /**
     * _Minimum date that is selected in the picker._
@@ -68,7 +67,7 @@ class DatePicker ()
     * @see https://docs.scriptable.app/datepicker/#minimumdate
     */
   /* CompleteClass */
-  var minimumDate: Date = js.native
+  var minimumDate: js.Date = js.native
   
   /**
     * _Interval at which the date picker displays minutes._
@@ -96,7 +95,7 @@ class DatePicker ()
     * @see https://docs.scriptable.app/datepicker/#-pickdate
     */
   /* CompleteClass */
-  override def pickDate(): js.Promise[Date] = js.native
+  override def pickDate(): js.Promise[js.Date] = js.native
   
   /**
     * _Presents the date picker displaying date and time._
@@ -106,7 +105,7 @@ class DatePicker ()
     * @see https://docs.scriptable.app/datepicker/#-pickdateandtime
     */
   /* CompleteClass */
-  override def pickDateAndTime(): js.Promise[Date] = js.native
+  override def pickDateAndTime(): js.Promise[js.Date] = js.native
   
   /**
     * _Presents the date picker displaying hours and minutes._
@@ -117,5 +116,5 @@ class DatePicker ()
     * @see https://docs.scriptable.app/datepicker/#-picktime
     */
   /* CompleteClass */
-  override def pickTime(): js.Promise[Date] = js.native
+  override def pickTime(): js.Promise[js.Date] = js.native
 }

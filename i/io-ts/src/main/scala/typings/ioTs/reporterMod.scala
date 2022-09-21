@@ -9,18 +9,18 @@ object reporterMod {
   
   trait Reporter[A] extends StObject {
     
-    def report(validation: Validation[js.Any]): A
+    def report(validation: Validation[Any]): A
   }
   object Reporter {
     
-    inline def apply[A](report: Validation[js.Any] => A): Reporter[A] = {
+    inline def apply[A](report: Validation[Any] => A): Reporter[A] = {
       val __obj = js.Dynamic.literal(report = js.Any.fromFunction1(report))
       __obj.asInstanceOf[Reporter[A]]
     }
     
     extension [Self <: Reporter[?], A](x: Self & Reporter[A]) {
       
-      inline def setReport(value: Validation[js.Any] => A): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
+      inline def setReport(value: Validation[Any] => A): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
     }
   }
 }

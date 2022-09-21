@@ -9,7 +9,7 @@ object positioningContainerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Coachmark/PositioningContainer", "PositioningContainer")
   @js.native
-  class PositioningContainer protected ()
+  open class PositioningContainer protected ()
     extends typings.officeUiFabricReact.positioningContainerPositioningContainerMod.PositioningContainer {
     def this(props: IPositioningContainerProps) = this()
   }

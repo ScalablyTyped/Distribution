@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "SignStyle")
 @js.native
-class SignStyle () extends StObject
+open class SignStyle () extends StObject
 object SignStyle {
   
   @JSImport("js-joda", "SignStyle")

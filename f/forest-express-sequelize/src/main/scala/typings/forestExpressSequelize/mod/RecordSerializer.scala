@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forest-express-sequelize", "RecordSerializer")
 @js.native
-class RecordSerializer protected () extends AbstractRecordTool {
+open class RecordSerializer protected () extends AbstractRecordTool {
   def this(model: js.Object) = this()
 }

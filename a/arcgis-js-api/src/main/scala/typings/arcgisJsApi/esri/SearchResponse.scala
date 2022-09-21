@@ -39,7 +39,7 @@ trait SearchResponse
   var results: js.Array[SearchResponseResults]
   
   /**
-    * The searched expression.
+    * The searched expression
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SearchResponse)
     */
@@ -67,13 +67,13 @@ object SearchResponse {
     
     inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setNumResults(value: Double): Self = StObject.set(x, "numResults", value.asInstanceOf[js.Any])
     
     inline def setResults(value: js.Array[SearchResponseResults]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: SearchResponseResults*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchResponseResults*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
   }

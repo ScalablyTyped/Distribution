@@ -31,15 +31,16 @@ trait RadioButtonProps extends StObject {
   
   var subtext: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.undefined
+  var value: String
 }
 object RadioButtonProps {
   
   inline def apply(
     id: String,
-    onChange: /* arg */ Checked & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+    onChange: /* arg */ Checked & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit,
+    value: String
   ): RadioButtonProps = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioButtonProps]
   }
   
@@ -80,7 +81,5 @@ object RadioButtonProps {
     inline def setSubtextUndefined: Self = StObject.set(x, "subtext", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

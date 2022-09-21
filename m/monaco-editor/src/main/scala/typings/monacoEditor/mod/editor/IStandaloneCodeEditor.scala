@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.TopLevel
 import typings.monacoEditor.mod.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,5 +16,13 @@ trait IStandaloneCodeEditor
   def addCommand(keybinding: Double, handler: ICommandHandler): String | Null = js.native
   def addCommand(keybinding: Double, handler: ICommandHandler, context: String): String | Null = js.native
   
-  def createContextKey[T](key: String, defaultValue: T): IContextKey[T] = js.native
+  def createContextKey(key: String, defaultValue: String): IContextKey[String] = js.native
+  def createContextKey(key: String, defaultValue: js.Array[js.UndefOr[Null | Boolean | Double | String]]): IContextKey[js.Array[js.UndefOr[Null | Boolean | Double | String]]] = js.native
+  def createContextKey(key: String, defaultValue: Boolean): IContextKey[Boolean] = js.native
+  def createContextKey(key: String, defaultValue: Double): IContextKey[Double] = js.native
+  def createContextKey(key: String, defaultValue: Null): IContextKey[Null] = js.native
+  def createContextKey(key: String, defaultValue: Unit): IContextKey[Unit] = js.native
+  def createContextKey[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: null | undefined | boolean | number | string}
+    */ typings.monacoEditor.monacoEditorStrings.IStandaloneCodeEditor & TopLevel[Any] */](key: String, defaultValue: T): IContextKey[T] = js.native
 }

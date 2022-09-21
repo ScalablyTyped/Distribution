@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLSelection")
 @js.native
-/* private */ class IHTMLSelection ()
+/* private */ open class IHTMLSelection ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLSelection {
   
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotIHTMLSelection_typekey: typings.activexMshtml.MSHTML.IHTMLSelection = js.native
   
   /* CompleteClass */
-  override def addRange(range: js.Any): Unit = js.native
+  override def addRange(range: Any): Unit = js.native
   
   /* CompleteClass */
   override val anchorNode: typings.activexMshtml.MSHTML.IHTMLDOMNode = js.native
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val anchorOffset: Double = js.native
   
   /* CompleteClass */
-  override def collapse(parentNode: js.Any, offfset: Double): Unit = js.native
+  override def collapse(parentNode: Any, offfset: Double): Unit = js.native
   
   /* CompleteClass */
   override def collapseToEnd(): Unit = js.native
@@ -54,8 +54,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def removeAllRanges(): Unit = js.native
   
   /* CompleteClass */
-  override def removeRange(range: js.Any): Unit = js.native
+  override def removeRange(range: Any): Unit = js.native
   
   /* CompleteClass */
-  override def selectAllChildren(parentNode: js.Any): Unit = js.native
+  override def selectAllChildren(parentNode: Any): Unit = js.native
 }

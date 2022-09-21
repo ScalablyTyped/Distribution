@@ -10,10 +10,10 @@ findAndReplaceDOMText: DOM find/replace utility
 | ------------------ | :-------------: |
 | Full name          | findandreplacedomtext |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 71644 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4797.0 |
+| # stars            | 742.0 |
 
 ## Links
 - [Homepage](https://github.com/padolsey/findAndReplaceDOMText)

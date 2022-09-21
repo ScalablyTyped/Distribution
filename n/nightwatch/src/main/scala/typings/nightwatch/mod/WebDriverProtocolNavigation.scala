@@ -72,31 +72,13 @@ trait WebDriverProtocolNavigation extends StObject {
   def url(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
-  /**
-    * Retrieve the URL of the current page or navigate to a new URL.
-    *
-    * @example
-    * module.exports = {
-    *  'demo Test' : function(browser) {
-    *     browser.url(function(result) {
-    *       // return the current url
-    *       console.log(result);
-    *     });
-    *     //
-    *     // navigate to new url:
-    *     browser.url('{URL}');
-    *     //
-    *     //
-    *     // navigate to new url:
-    *     browser.url('{URL}', function(result) {
-    *       console.log(result);
-    *     });
-    *   }
-    * }
-    */
   def url(url: String): this.type = js.native
   def url(
     url: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+  ): this.type = js.native
+  def url(
+    url: Unit,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
 }

@@ -1,13 +1,14 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.listMod.ListGridType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
-import typings.react.mod.FunctionComponent
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,8 +88,6 @@ object listItemMod extends Shortcut {
     
     var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var grid: js.UndefOr[ListGridType] = js.undefined
-    
     var prefixCls: js.UndefOr[String] = js.undefined
   }
   object ListItemProps {
@@ -104,7 +103,7 @@ object listItemMod extends Shortcut {
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setActionsVarargs(value: ReactNode*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: ReactNode*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setColStyle(value: CSSProperties): Self = StObject.set(x, "colStyle", value.asInstanceOf[js.Any])
       
@@ -113,10 +112,6 @@ object listItemMod extends Shortcut {
       inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
       inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
-      
-      inline def setGrid(value: ListGridType): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
-      
-      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
@@ -127,7 +122,7 @@ object listItemMod extends Shortcut {
   @js.native
   trait ListItemTypeProps
     extends StObject
-       with FunctionComponent[ListItemProps] {
+       with ForwardRefExoticComponent[ListItemProps & RefAttributes[HTMLElement]] {
     
     var Meta: FC[ListItemMetaProps] = js.native
   }

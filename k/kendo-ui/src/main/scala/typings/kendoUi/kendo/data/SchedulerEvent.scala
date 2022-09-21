@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.data
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,17 +9,17 @@ trait SchedulerEvent
   extends StObject
      with Model {
   
-  def clone(options: js.Any, updateUid: Boolean): SchedulerEvent = js.native
+  def clone(options: Any, updateUid: Boolean): SchedulerEvent = js.native
   
   var description: String = js.native
   
   def duration(): Double = js.native
   
-  var end: Date = js.native
+  var end: js.Date = js.native
   
   var endTimezone: String = js.native
   
-  def expand(start: Date, end: Date, zone: js.Any): js.Array[SchedulerEvent] = js.native
+  def expand(start: js.Date, end: js.Date, zone: Any): js.Array[SchedulerEvent] = js.native
   
   def init(data: SchedulerEventData): Unit = js.native
   
@@ -38,17 +37,17 @@ trait SchedulerEvent
   
   var recurrenceException: String = js.native
   
-  var recurrenceId: js.Any = js.native
+  var recurrenceId: Any = js.native
   
   var recurrenceRule: String = js.native
   
-  var start: Date = js.native
+  var start: js.Date = js.native
   
   var startTimezone: String = js.native
   
   var title: String = js.native
   
-  def toOccurrence(options: js.Any): SchedulerEvent = js.native
+  def toOccurrence(options: Any): SchedulerEvent = js.native
   
   def update(eventInfo: SchedulerEventData): Unit = js.native
 }

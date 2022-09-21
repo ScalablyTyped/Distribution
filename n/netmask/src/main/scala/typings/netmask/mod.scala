@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("netmask", "Netmask")
   @js.native
-  class Netmask protected () extends StObject {
+  open class Netmask protected () extends StObject {
     def this(netmask: String) = this()
     def this(net: String, mask: String) = this()
     

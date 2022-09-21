@@ -22,13 +22,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait CommunityConnector extends StObject {
   
-  var AggregationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ js.Any
+  var AggregationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ Any
   
-  var AuthType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ js.Any
+  var AuthType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ Any
   
-  var BigQueryParameterType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BigQueryParameterType */ js.Any
+  var BigQueryParameterType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BigQueryParameterType */ Any
   
-  var FieldType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ js.Any
+  var FieldType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ Any
   
   def getConfig(): Config
   
@@ -51,10 +51,10 @@ trait CommunityConnector extends StObject {
 object CommunityConnector {
   
   inline def apply(
-    AggregationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ js.Any,
-    AuthType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ js.Any,
-    BigQueryParameterType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BigQueryParameterType */ js.Any,
-    FieldType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ js.Any,
+    AggregationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ Any,
+    AuthType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ Any,
+    BigQueryParameterType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BigQueryParameterType */ Any,
+    FieldType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ Any,
     getConfig: () => Config,
     getFields: () => Fields,
     newAuthTypeResponse: () => GetAuthTypeResponse,
@@ -72,16 +72,16 @@ object CommunityConnector {
   extension [Self <: CommunityConnector](x: Self) {
     
     inline def setAggregationType(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ js.Any
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ Any
     ): Self = StObject.set(x, "AggregationType", value.asInstanceOf[js.Any])
     
-    inline def setAuthType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ js.Any): Self = StObject.set(x, "AuthType", value.asInstanceOf[js.Any])
+    inline def setAuthType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ Any): Self = StObject.set(x, "AuthType", value.asInstanceOf[js.Any])
     
     inline def setBigQueryParameterType(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BigQueryParameterType */ js.Any
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BigQueryParameterType */ Any
     ): Self = StObject.set(x, "BigQueryParameterType", value.asInstanceOf[js.Any])
     
-    inline def setFieldType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ js.Any): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
+    inline def setFieldType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FieldType */ Any): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
     
     inline def setGetConfig(value: () => Config): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
     

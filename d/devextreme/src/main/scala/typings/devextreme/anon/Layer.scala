@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Layer extends StObject {
   
+  /**
+    * Specifies the type of the legend grouping.
+    */
   var grouping: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies a layer to which the legend belongs.
+    */
   var layer: js.UndefOr[String] = js.undefined
 }
 object Layer {

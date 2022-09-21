@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSqladmin.anon
 
-import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.InstancesImportRequest
+import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.InstancesExportRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,14 +35,14 @@ trait Resource extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Project ID of the project that contains the instance. */
+  /** Project ID of the project that contains the instance to be exported. */
   var project: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: InstancesImportRequest
+  var resource: InstancesExportRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  inline def apply(instance: String, project: String, resource: InstancesImportRequest): Resource = {
+  inline def apply(instance: String, project: String, resource: InstancesExportRequest): Resource = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
@@ -99,7 +99,7 @@ object Resource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: InstancesImportRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: InstancesExportRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

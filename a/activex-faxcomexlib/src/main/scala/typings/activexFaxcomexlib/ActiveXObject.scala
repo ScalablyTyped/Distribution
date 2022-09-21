@@ -92,6 +92,27 @@ trait ActiveXObject extends StObject {
   
   def on(
     obj: FaxAccount,
+    event: OnIncomingJobAdded | OnIncomingJobRemoved | OnOutgoingJobAdded | OnOutgoingJobRemoved | OnOutgoingMessageAdded | OnOutgoingMessageRemoved,
+    argNames: js.Tuple2[pFaxAccount, bstrJobId | bstrMessageId],
+    handler: js.ThisFunction1[
+      /* this */ FaxAccount, 
+      (/* parameter */ BstrJobId) | (/* parameter */ BstrMessageIdPFaxAccount), 
+      Unit
+    ]
+  ): Unit = js.native
+  def on(
+    obj: FaxAccount,
+    event: OnIncomingJobChanged | OnOutgoingJobChanged,
+    argNames: js.Tuple3[pFaxAccount, bstrJobId, pJobStatus],
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ PFaxAccount, Unit]
+  ): Unit = js.native
+  def on(
+    obj: FaxAccount,
+    event: AddRef | Release,
+    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: FaxAccount,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
     handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ CNames, Unit]
@@ -110,24 +131,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: FaxAccount,
-    event: OnIncomingJobAdded,
-    argNames: js.Tuple2[pFaxAccount, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrJobId, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxAccount,
-    event: OnIncomingJobChanged,
-    argNames: js.Tuple3[pFaxAccount, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ PFaxAccount, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxAccount,
-    event: OnIncomingJobRemoved,
-    argNames: js.Tuple2[pFaxAccount, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrJobId, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxAccount,
     event: OnIncomingMessageAdded,
     argNames: js.Tuple3[pFaxAccount, bstrMessageId, fAddedToReceiveFolder],
     handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrMessageId, Unit]
@@ -140,36 +143,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: FaxAccount,
-    event: OnOutgoingJobAdded,
-    argNames: js.Tuple2[pFaxAccount, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrJobId, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxAccount,
-    event: OnOutgoingJobChanged,
-    argNames: js.Tuple3[pFaxAccount, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ PFaxAccount, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxAccount,
-    event: OnOutgoingJobRemoved,
-    argNames: js.Tuple2[pFaxAccount, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrJobId, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxAccount,
-    event: OnOutgoingMessageAdded,
-    argNames: js.Tuple2[pFaxAccount, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrMessageIdPFaxAccount, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxAccount,
-    event: OnOutgoingMessageRemoved,
-    argNames: js.Tuple2[pFaxAccount, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ BstrMessageIdPFaxAccount, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxAccount,
     event: OnServerShutDown,
     argNames: js.Array[pFaxServer],
     handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ PFaxServer, Unit]
@@ -179,6 +152,33 @@ trait ActiveXObject extends StObject {
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
     handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ PpvObj, Unit]
+  ): Unit = js.native
+  def on(
+    obj: FaxServer,
+    event: OnActivityLoggingConfigChange | OnDevicesConfigChange | OnEventLoggingConfigChange | OnGeneralServerConfigChanged | OnIncomingArchiveConfigChange | OnOutboundRoutingGroupsConfigChange | OnOutboundRoutingRulesConfigChange | OnOutgoingArchiveConfigChange | OnOutgoingQueueConfigChange | OnReceiptOptionsChange | OnSecurityConfigChange | OnServerShutDown,
+    argNames: js.Array[pFaxServer],
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
+  ): Unit = js.native
+  def on(
+    obj: FaxServer,
+    event: OnIncomingJobAdded | OnIncomingJobRemoved | OnIncomingMessageAdded | OnIncomingMessageRemoved | OnOutgoingJobAdded | OnOutgoingJobRemoved | OnOutgoingMessageAdded | OnOutgoingMessageRemoved,
+    argNames: js.Tuple2[pFaxServer, bstrJobId | bstrMessageId],
+    handler: js.ThisFunction1[
+      /* this */ FaxServer, 
+      (/* parameter */ BstrJobIdPFaxServer) | (/* parameter */ BstrMessageIdPFaxServer), 
+      Unit
+    ]
+  ): Unit = js.native
+  def on(
+    obj: FaxServer,
+    event: OnIncomingJobChanged | OnOutgoingJobChanged,
+    argNames: js.Tuple3[pFaxServer, bstrJobId, pJobStatus],
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PJobStatus, Unit]
+  ): Unit = js.native
+  def on(
+    obj: FaxServer,
+    event: AddRef | Release,
+    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
@@ -200,123 +200,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: FaxServer,
-    event: OnActivityLoggingConfigChange,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnDevicesConfigChange,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnEventLoggingConfigChange,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnGeneralServerConfigChanged,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnIncomingArchiveConfigChange,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnIncomingJobAdded,
-    argNames: js.Tuple2[pFaxServer, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrJobIdPFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnIncomingJobChanged,
-    argNames: js.Tuple3[pFaxServer, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PJobStatus, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnIncomingJobRemoved,
-    argNames: js.Tuple2[pFaxServer, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrJobIdPFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnIncomingMessageAdded,
-    argNames: js.Tuple2[pFaxServer, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrMessageIdPFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnIncomingMessageRemoved,
-    argNames: js.Tuple2[pFaxServer, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrMessageIdPFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
     event: OnNewCall,
     argNames: js.Tuple4[pFaxServer, lCallId, lDeviceId, bstrCallerId],
     handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrCallerId, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnOutboundRoutingGroupsConfigChange,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnOutboundRoutingRulesConfigChange,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnOutgoingArchiveConfigChange,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnOutgoingJobAdded,
-    argNames: js.Tuple2[pFaxServer, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrJobIdPFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnOutgoingJobChanged,
-    argNames: js.Tuple3[pFaxServer, bstrJobId, pJobStatus],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PJobStatus, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnOutgoingJobRemoved,
-    argNames: js.Tuple2[pFaxServer, bstrJobId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrJobIdPFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnOutgoingMessageAdded,
-    argNames: js.Tuple2[pFaxServer, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrMessageIdPFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnOutgoingMessageRemoved,
-    argNames: js.Tuple2[pFaxServer, bstrMessageId],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ BstrMessageIdPFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnOutgoingQueueConfigChange,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
@@ -326,45 +212,15 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: FaxServer,
-    event: OnReceiptOptionsChange,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
-    event: OnSecurityConfigChange,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
     event: OnServerActivityChange,
     argNames: js.Tuple5[pFaxServer, lIncomingMessages, lRoutingMessages, lOutgoingMessages, lQueuedMessages],
     handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ LIncomingMessages, Unit]
   ): Unit = js.native
   def on(
     obj: FaxServer,
-    event: OnServerShutDown,
-    argNames: js.Array[pFaxServer],
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PFaxServer, Unit]
-  ): Unit = js.native
-  def on(
-    obj: FaxServer,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
     handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ PpvObj, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: FaxAccount,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: FaxServer,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_Invoke(
@@ -386,17 +242,5 @@ trait ActiveXObject extends StObject {
     event: OnDeviceStatusChange,
     argNames: FaxServerOnDeviceStatusChangeArgNames,
     handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ FaxServerOnDeviceStatusChangeParameter, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: FaxAccount,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ FaxAccount, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: FaxServer,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ FaxServer, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }

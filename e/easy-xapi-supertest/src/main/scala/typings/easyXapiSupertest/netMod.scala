@@ -17,7 +17,7 @@ object netMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("net", "Socket")
   @js.native
-  class SocketCls () extends Socket {
+  open class SocketCls () extends Socket {
     def this(options: AllowHalfOpen) = this()
   }
   
@@ -59,8 +59,8 @@ object netMod {
     
     var connections: Double = js.native
     
-    def listen(handle: js.Any): Server = js.native
-    def listen(handle: js.Any, listeningListener: js.Function): Server = js.native
+    def listen(handle: Any): Server = js.native
+    def listen(handle: Any, listeningListener: js.Function): Server = js.native
     def listen(path: String): Server = js.native
     def listen(path: String, listeningListener: js.Function): Server = js.native
     def listen(port: Double): Server = js.native
@@ -95,8 +95,8 @@ object netMod {
     
     def destroy(): Unit = js.native
     
-    def end(data: js.Any): Unit = js.native
-    def end(data: js.Any, encoding: String): Unit = js.native
+    def end(data: Any): Unit = js.native
+    def end(data: Any, encoding: String): Unit = js.native
     def end(data: Unit, encoding: String): Unit = js.native
     
     var localAddress: String = js.native
@@ -126,10 +126,10 @@ object netMod {
     
     def unref(): Unit = js.native
     
-    def write(data: js.Any): Unit = js.native
-    def write(data: js.Any, encoding: String): Unit = js.native
-    def write(data: js.Any, encoding: String, callback: js.Function): Unit = js.native
-    def write(data: js.Any, encoding: Unit, callback: js.Function): Unit = js.native
+    def write(data: Any): Unit = js.native
+    def write(data: Any, encoding: String): Unit = js.native
+    def write(data: Any, encoding: String, callback: js.Function): Unit = js.native
+    def write(data: Any, encoding: Unit, callback: js.Function): Unit = js.native
     def write(str: String, encoding: String, fd: String): Boolean = js.native
     def write(str: String, encoding: Unit, fd: String): Boolean = js.native
   }

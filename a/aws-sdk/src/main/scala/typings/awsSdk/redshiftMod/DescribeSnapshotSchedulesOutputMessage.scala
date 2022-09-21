@@ -33,6 +33,6 @@ object DescribeSnapshotSchedulesOutputMessage {
     
     inline def setSnapshotSchedulesUndefined: Self = StObject.set(x, "SnapshotSchedules", js.undefined)
     
-    inline def setSnapshotSchedulesVarargs(value: SnapshotSchedule*): Self = StObject.set(x, "SnapshotSchedules", js.Array(value :_*))
+    inline def setSnapshotSchedulesVarargs(value: SnapshotSchedule*): Self = StObject.set(x, "SnapshotSchedules", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.MapType")
 @js.native
-class MapType protected ()
+open class MapType protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.MapType {
   def this(name: String, layers: js.Array[typings.baidumapWebSdk.BMap.TileLayer]) = this()

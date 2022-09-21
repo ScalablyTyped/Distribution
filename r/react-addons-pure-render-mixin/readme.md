@@ -10,15 +10,12 @@ Typings are for version 0.14
 | ------------------ | :-------------: |
 | Full name          | react-addons-pure-render-mixin |
 | Keywords           | react, react-addon |
-| # releases         | 2 |
-| # dependents       | 222 |
-| # downloads        | 4611295 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 183047.33333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/facebook/react#readme)
-- [Bugs](https://github.com/facebook/react/issues)
-- [Repository](https://github.com/facebook/react)
 - [Npm](https://www.npmjs.com/package/react-addons-pure-render-mixin)
     
 

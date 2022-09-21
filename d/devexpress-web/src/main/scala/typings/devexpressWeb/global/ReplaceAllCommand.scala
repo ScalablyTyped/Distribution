@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ReplaceAllCommand")
 @js.native
-class ReplaceAllCommand ()
+open class ReplaceAllCommand ()
   extends StObject
      with typings.devexpressWeb.ReplaceAllCommand {
   

@@ -24,10 +24,10 @@ object SmartHomeV1ExecuteRequestCommands {
     
     inline def setDevices(value: js.Array[SmartHomeV1QueryRequestDevices]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    inline def setDevicesVarargs(value: SmartHomeV1QueryRequestDevices*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: SmartHomeV1QueryRequestDevices*): Self = StObject.set(x, "devices", js.Array(value*))
     
     inline def setExecution(value: js.Array[SmartHomeV1ExecuteRequestExecution]): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
-    inline def setExecutionVarargs(value: SmartHomeV1ExecuteRequestExecution*): Self = StObject.set(x, "execution", js.Array(value :_*))
+    inline def setExecutionVarargs(value: SmartHomeV1ExecuteRequestExecution*): Self = StObject.set(x, "execution", js.Array(value*))
   }
 }

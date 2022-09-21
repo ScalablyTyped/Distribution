@@ -60,7 +60,7 @@ object AccessRootElement {
     getName: () => String,
     getParent: () => XInterface,
     getStateAsProperty: () => PropertyState,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChangesListener: XChangesListener => Unit,
     removeEventListener: XEventListener => Unit,

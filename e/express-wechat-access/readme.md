@@ -10,10 +10,10 @@ A wechat access middleware for expressjs
 | ------------------ | :-------------: |
 | Full name          | express-wechat-access |
 | Keywords           | express, expressjs, wechat, wechat-sdk, wechat-nodejs, middleware, wechat-sdk, typescript, javascript, weixin, weixin-sdk, weixin-node |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 1004 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 66.66666666666667 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/simmons8616/express-wechat-access#readme)

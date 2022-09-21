@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   * @param options The options to use when initializing the custom overlay.
   */
-class CustomOverlay ()
+open class CustomOverlay ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.CustomOverlay {
   def this(options: ICustomOverlayOptions) = this()

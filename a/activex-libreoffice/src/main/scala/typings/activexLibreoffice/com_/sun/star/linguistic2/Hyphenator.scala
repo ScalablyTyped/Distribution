@@ -34,9 +34,9 @@ object Hyphenator {
     getServiceDisplayName: Locale => String,
     hasLocale: Locale => Boolean,
     hyphenate: (String, Locale, Double, PropertyValues) => XHyphenatedWord,
-    initialize: SeqEquiv[js.Any] => Unit,
+    initialize: SeqEquiv[Any] => Unit,
     queryAlternativeSpelling: (String, Locale, Double, PropertyValues) => XHyphenatedWord,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removeLinguServiceEventListener: XLinguServiceEventListener => Boolean

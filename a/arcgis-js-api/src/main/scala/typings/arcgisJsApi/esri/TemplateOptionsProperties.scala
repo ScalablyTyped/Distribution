@@ -26,6 +26,8 @@ trait TemplateOptionsProperties extends StObject {
   /**
     * When `false`, the attribution is not displayed on the printout.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#attributionEnabled)
     */
   var attributionEnabled: js.UndefOr[Boolean] = js.undefined
@@ -45,7 +47,16 @@ trait TemplateOptionsProperties extends StObject {
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
+    * Use this prop to display text fields for custom text elements from the print service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#customTextElements)
+    */
+  var customTextElements: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  /**
     * Resolution in dots per inch.
+    *
+    * @default 96
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#dpi)
     */
@@ -61,12 +72,16 @@ trait TemplateOptionsProperties extends StObject {
   /**
     * When true, the feature's attributes are included in feature collection layers even when they are not needed for rendering.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#forceFeatureAttributes)
     */
   var forceFeatureAttributes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The output format for the printed map.
+    *
+    * @default pdf
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#format)
     */
@@ -82,6 +97,8 @@ trait TemplateOptionsProperties extends StObject {
   /**
     * The layout used for the print output.
     *
+    * @default letter-ansi-a-landscape
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout)
     */
   var layout: js.UndefOr[
@@ -91,9 +108,20 @@ trait TemplateOptionsProperties extends StObject {
   /**
     * When `false`, the legend is not displayed on the printout.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#legendEnabled)
     */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When `true`, the north arrow will be included on the printout.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#northArrowEnabled)
+    */
+  var northArrowEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The map scale of the printed map.
@@ -103,7 +131,9 @@ trait TemplateOptionsProperties extends StObject {
   var scale: js.UndefOr[Double] = js.undefined
   
   /**
-    * When `true`, [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#scale) is used in the printed map.
+    * Define whether the printed map should preserve map scale or map extent.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#scaleEnabled)
     */
@@ -144,6 +174,12 @@ object TemplateOptionsProperties {
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
+    inline def setCustomTextElements(value: js.Array[Any]): Self = StObject.set(x, "customTextElements", value.asInstanceOf[js.Any])
+    
+    inline def setCustomTextElementsUndefined: Self = StObject.set(x, "customTextElements", js.undefined)
+    
+    inline def setCustomTextElementsVarargs(value: Any*): Self = StObject.set(x, "customTextElements", js.Array(value*))
+    
     inline def setDpi(value: String): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
     inline def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
@@ -173,6 +209,10 @@ object TemplateOptionsProperties {
     inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
     inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    
+    inline def setNorthArrowEnabled(value: Boolean): Self = StObject.set(x, "northArrowEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setNorthArrowEnabledUndefined: Self = StObject.set(x, "northArrowEnabled", js.undefined)
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

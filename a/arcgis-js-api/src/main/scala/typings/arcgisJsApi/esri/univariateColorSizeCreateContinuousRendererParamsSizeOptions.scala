@@ -11,13 +11,6 @@ trait univariateColorSizeCreateContinuousRendererParamsSizeOptions
      with Object {
   
   /**
-    * Provides options for setting a title to a field when an expression is provided instead of a field name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
-    */
-  var legendOptions: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsSizeOptionsLegendOptions] = js.undefined
-  
-  /**
     * In authoring apps, the user may select a pre-defined size scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
@@ -36,10 +29,6 @@ object univariateColorSizeCreateContinuousRendererParamsSizeOptions {
   }
   
   extension [Self <: univariateColorSizeCreateContinuousRendererParamsSizeOptions](x: Self) {
-    
-    inline def setLegendOptions(value: univariateColorSizeCreateContinuousRendererParamsSizeOptionsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
-    
-    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
     inline def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
     

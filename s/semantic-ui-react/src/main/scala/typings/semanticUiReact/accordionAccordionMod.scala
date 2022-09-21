@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import typings.semanticUiReact.accordionAccordionAccordionMod.AccordionAccordionProps
 import typings.semanticUiReact.accordionAccordionAccordionMod.StrictAccordionAccordionProps
 import typings.semanticUiReact.accordionContentMod.AccordionContentProps
@@ -20,10 +20,9 @@ object accordionAccordionMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion/Accordion", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[AccordionProps, ComponentState, js.Any] {
+  open class default protected () extends Component[AccordionProps, ComponentState, Any] {
     def this(props: AccordionProps) = this()
-    def this(props: AccordionProps, context: js.Any) = this()
+    def this(props: AccordionProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -34,25 +33,23 @@ object accordionAccordionMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion/Accordion", "default.Accordion")
     @js.native
-    class Accordion protected ()
-      extends Component[AccordionAccordionProps, ComponentState, js.Any] {
+    open class Accordion protected () extends Component[AccordionAccordionProps, ComponentState, Any] {
       def this(props: AccordionAccordionProps) = this()
-      def this(props: AccordionAccordionProps, context: js.Any) = this()
+      def this(props: AccordionAccordionProps, context: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion/Accordion", "default.Panel")
     @js.native
-    class Panel ()
+    open class Panel ()
       extends typings.semanticUiReact.accordionPanelMod.default
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion/Accordion", "default.Title")
     @js.native
-    class Title protected ()
-      extends Component[AccordionTitleProps, ComponentState, js.Any] {
+    open class Title protected () extends Component[AccordionTitleProps, ComponentState, Any] {
       def this(props: AccordionTitleProps) = this()
-      def this(props: AccordionTitleProps, context: js.Any) = this()
+      def this(props: AccordionTitleProps, context: Any) = this()
     }
     
     type _To = AccordionComponent
@@ -68,7 +65,7 @@ object accordionAccordionMod {
     
     var Accordion: ComponentClass[AccordionAccordionProps, ComponentState] = js.native
     
-    var Content: StatelessComponent[AccordionContentProps] = js.native
+    var Content: FC[AccordionContentProps] = js.native
     
     var Panel: Instantiable0[typings.semanticUiReact.accordionPanelMod.default] = js.native
     
@@ -78,7 +75,7 @@ object accordionAccordionMod {
   trait AccordionProps
     extends StObject
        with StrictAccordionProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object AccordionProps {
     
     inline def apply(): AccordionProps = {

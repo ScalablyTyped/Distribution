@@ -27,7 +27,7 @@ trait ResourceDataSyncS3Destination extends StObject {
   var Prefix: js.UndefOr[ResourceDataSyncS3Prefix] = js.undefined
   
   /**
-    * The AWS Region with the S3 bucket targeted by the Resource Data Sync.
+    * The Amazon Web Services Region with the S3 bucket targeted by the resource data sync.
     */
   var Region: ResourceDataSyncS3Region
   

@@ -17,7 +17,12 @@ object zoomViewModelMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Zoom/ZoomViewModel", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides the logic for the [Zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html) widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html)
+    */
+  open class Class ()
     extends StObject
        with ZoomViewModel {
     def this(properties: ZoomViewModelProperties) = this()

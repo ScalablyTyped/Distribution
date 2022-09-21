@@ -35,11 +35,11 @@ object XShapes {
     ElementType: `type`,
     acquire: () => Unit,
     add: XShape => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     remove: XShape => Unit
   ): XShapes = {

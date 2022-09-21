@@ -5,28 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BootstrapCheckBoxListEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapListBoxEventMap
+type BootstrapCheckBoxListEventMap = BootstrapListBoxEventMap
 
-type BootstrapFormLayoutEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+type BootstrapFormLayoutEventMap = ControlEventMap
 
-type BootstrapPageControlEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapTabControlEventMap
+type BootstrapPageControlEventMap = BootstrapTabControlEventMap
 
-type BootstrapPopupMenuEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapMenuEventMap
+type BootstrapPopupMenuEventMap = BootstrapMenuEventMap
 
-type BootstrapProgressBarEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+type BootstrapProgressBarEventMap = ControlEventMap
 
-type BootstrapRadioButtonListEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapListBoxEventMap
+type BootstrapRadioButtonListEventMap = BootstrapListBoxEventMap
 
-type BootstrapToolbarEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapMenuEventMap
+type BootstrapToolbarEventMap = BootstrapMenuEventMap
 
-type BootstrapTreeViewNodeEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+type BootstrapTreeViewNodeEventMap = ControlEventMap
 
-type BootstrapUploadControlFileEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+type BootstrapUploadControlFileEventMap = ControlEventMap
 
-type BootstrapUploadControlInvalidFileInfoEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+type BootstrapUploadControlInvalidFileInfoEventMap = ControlEventMap
 
-type BootstrapUploadControlValidationSettingsEventMap = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+type BootstrapUploadControlValidationSettingsEventMap = ControlEventMap
 
-type EndCallbackEventArgs = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.EventArgs
+type EndCallbackEventArgs = EventArgs
 
-type MenuItemMouseEventArgs = typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.MenuItemEventArgs
+type MenuItemMouseEventArgs = MenuItemEventArgs

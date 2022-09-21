@@ -31,6 +31,6 @@ object ListRoutesOutput {
     
     inline def setRoutes(value: RouteList): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    inline def setRoutesVarargs(value: RouteRef*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: RouteRef*): Self = StObject.set(x, "routes", js.Array(value*))
   }
 }

@@ -20,22 +20,22 @@ object poseEnabledControllerMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/poseEnabledController", "PoseEnabledController")
   @js.native
-  class PoseEnabledController protected ()
+  open class PoseEnabledController protected ()
     extends typings.babylonjs.gamepadMod.Gamepad
        with PoseControlled {
     /**
       * Creates a new PoseEnabledController from a gamepad
       * @param browserGamepad the gamepad that the PoseEnabledController should be created from
       */
-    def this(browserGamepad: js.Any) = this()
+    def this(browserGamepad: Any) = this()
     
     /* protected */ var _calculatedPosition: Vector3 = js.native
     
-    /* private */ var _calculatedRotation: js.Any = js.native
+    /* private */ var _calculatedRotation: Any = js.native
     
-    /* private */ var _deviceRoomPosition: js.Any = js.native
+    /* private */ var _deviceRoomPosition: Any = js.native
     
-    /* private */ var _deviceRoomRotationQuaternion: js.Any = js.native
+    /* private */ var _deviceRoomRotationQuaternion: Any = js.native
     
     /**
       * Internal, matrix used to convert room space to babylon space
@@ -44,15 +44,16 @@ object poseEnabledControllerMod {
     var _deviceToWorld: Matrix = js.native
     
     /**
+      * @param fixedPosition
       * @hidden
       */
     def _disableTrackPosition(fixedPosition: Vector3): Unit = js.native
     
-    /* private */ var _draggedRoomRotation: js.Any = js.native
+    /* private */ var _draggedRoomRotation: Any = js.native
     
-    /* private */ var _leftHandSystemQuaternion: js.Any = js.native
+    /* private */ var _leftHandSystemQuaternion: Any = js.native
     
-    /* private */ var _maxRotationDistFromHeadset: js.Any = js.native
+    /* private */ var _maxRotationDistFromHeadset: Any = js.native
     
     /**
       * Internal, the mesh attached to the controller
@@ -71,16 +72,16 @@ object poseEnabledControllerMod {
       */
     var _pointingPoseNode: Nullable[TransformNode] = js.native
     
-    /* private */ var _poseControlledCamera: js.Any = js.native
+    /* private */ var _poseControlledCamera: Any = js.native
     
-    /* private */ var _trackPosition: js.Any = js.native
+    /* private */ var _trackPosition: Any = js.native
     
     /**
       * Updates only the pose device and mesh without doing any button event checking
       */
     /* protected */ def _updatePoseAndMesh(): Unit = js.native
     
-    /* private */ var _workingMatrix: js.Any = js.native
+    /* private */ var _workingMatrix: Any = js.native
     
     /**
       * Attaches a mesh to the controller
@@ -178,7 +179,7 @@ object poseEnabledControllerMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/poseEnabledController", "PoseEnabledControllerHelper")
   @js.native
-  class PoseEnabledControllerHelper () extends StObject
+  open class PoseEnabledControllerHelper () extends StObject
   /* static members */
   object PoseEnabledControllerHelper {
     
@@ -191,7 +192,7 @@ object poseEnabledControllerMod {
       * @param vrGamepad the gamepad to initialized
       * @returns a vr controller of the type the gamepad identified as
       */
-    inline def InitiateController(vrGamepad: js.Any): typings.babylonjs.gamepadMod.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.gamepadMod.Gamepad]
+    inline def InitiateController(vrGamepad: Any): typings.babylonjs.gamepadMod.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.gamepadMod.Gamepad]
     
     /** @hidden */
     @JSImport("babylonjs/Gamepads/Controllers/poseEnabledController", "PoseEnabledControllerHelper._ControllerFactories")
@@ -202,8 +203,8 @@ object poseEnabledControllerMod {
     /** @hidden */
     @JSImport("babylonjs/Gamepads/Controllers/poseEnabledController", "PoseEnabledControllerHelper._DefaultControllerFactory")
     @js.native
-    def _DefaultControllerFactory: Nullable[js.Function1[/* gamepadInfo */ js.Any, typings.babylonjs.gamepadMod.Gamepad]] = js.native
-    inline def _DefaultControllerFactory_=(x: Nullable[js.Function1[/* gamepadInfo */ js.Any, typings.babylonjs.gamepadMod.Gamepad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultControllerFactory")(x.asInstanceOf[js.Any])
+    def _DefaultControllerFactory: Nullable[js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadMod.Gamepad]] = js.native
+    inline def _DefaultControllerFactory_=(x: Nullable[js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadMod.Gamepad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultControllerFactory")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -288,27 +289,27 @@ object poseEnabledControllerMod {
       * @param gamepadInfo Defines the gamepad info as received from the controller APIs.
       * @returns true if it can be created, otherwise false
       */
-    def canCreate(gamepadInfo: js.Any): Boolean
+    def canCreate(gamepadInfo: Any): Boolean
     
     /**
       * Creates a new instance of the Gamepad.
       * @param gamepadInfo Defines the gamepad info as received from the controller APIs.
       * @returns the new gamepad instance
       */
-    def create(gamepadInfo: js.Any): typings.babylonjs.gamepadMod.Gamepad
+    def create(gamepadInfo: Any): typings.babylonjs.gamepadMod.Gamepad
   }
   object GamePadFactory {
     
-    inline def apply(canCreate: js.Any => Boolean, create: js.Any => typings.babylonjs.gamepadMod.Gamepad): GamePadFactory = {
+    inline def apply(canCreate: Any => Boolean, create: Any => typings.babylonjs.gamepadMod.Gamepad): GamePadFactory = {
       val __obj = js.Dynamic.literal(canCreate = js.Any.fromFunction1(canCreate), create = js.Any.fromFunction1(create))
       __obj.asInstanceOf[GamePadFactory]
     }
     
     extension [Self <: GamePadFactory](x: Self) {
       
-      inline def setCanCreate(value: js.Any => Boolean): Self = StObject.set(x, "canCreate", js.Any.fromFunction1(value))
+      inline def setCanCreate(value: Any => Boolean): Self = StObject.set(x, "canCreate", js.Any.fromFunction1(value))
       
-      inline def setCreate(value: js.Any => typings.babylonjs.gamepadMod.Gamepad): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: Any => typings.babylonjs.gamepadMod.Gamepad): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   

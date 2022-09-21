@@ -1,20 +1,10 @@
 package typings.puppeteerCore
 
-import typings.devtoolsProtocol.mod.Protocol.Fetch.AuthRequiredEvent
-import typings.devtoolsProtocol.mod.Protocol.Fetch.RequestPausedEvent
-import typings.devtoolsProtocol.mod.Protocol.Network.LoadingFailedEvent
-import typings.devtoolsProtocol.mod.Protocol.Network.LoadingFinishedEvent
-import typings.devtoolsProtocol.mod.Protocol.Network.RequestServedFromCacheEvent
-import typings.devtoolsProtocol.mod.Protocol.Network.RequestWillBeSentEvent
-import typings.devtoolsProtocol.mod.Protocol.Network.Response
-import typings.devtoolsProtocol.mod.Protocol.Network.ResponseReceivedEvent
-import typings.puppeteerCore.connectionMod.CDPSession
+import typings.devtoolsProtocol.mod.Protocol.Emulation.UserAgentMetadata
+import typings.puppeteerCore.commonConnectionMod.CDPSession
 import typings.puppeteerCore.eventEmitterMod.EventEmitter
-import typings.puppeteerCore.frameManagerMod.FrameManager
-import typings.puppeteerCore.httprequestMod.HTTPRequest
-import typings.std.Map
+import typings.puppeteerCore.frameMod.Frame
 import typings.std.Record
-import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,64 +13,26 @@ object networkManagerMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/NetworkManager", "NetworkManager")
   @js.native
-  class NetworkManager protected () extends EventEmitter {
+  open class NetworkManager protected () extends EventEmitter {
     def this(client: CDPSession, ignoreHTTPSErrors: Boolean, frameManager: FrameManager) = this()
-    
-    var _attemptedAuthentications: Set[String] = js.native
-    
-    var _client: CDPSession = js.native
-    
-    var _credentials: js.UndefOr[Credentials] = js.native
-    
-    var _extraHTTPHeaders: Record[String, String] = js.native
-    
-    var _frameManager: FrameManager = js.native
-    
-    def _handleRequestRedirect(request: HTTPRequest, responsePayload: Response): Unit = js.native
-    
-    var _ignoreHTTPSErrors: Boolean = js.native
-    
-    var _offline: Boolean = js.native
-    
-    def _onAuthRequired(event: AuthRequiredEvent): Unit = js.native
-    
-    def _onLoadingFailed(event: LoadingFailedEvent): Unit = js.native
-    
-    def _onLoadingFinished(event: LoadingFinishedEvent): Unit = js.native
-    
-    def _onRequest(event: RequestWillBeSentEvent): Unit = js.native
-    def _onRequest(event: RequestWillBeSentEvent, interceptionId: String): Unit = js.native
-    
-    def _onRequestPaused(event: RequestPausedEvent): Unit = js.native
-    
-    def _onRequestServedFromCache(event: RequestServedFromCacheEvent): Unit = js.native
-    
-    def _onRequestWillBeSent(event: RequestWillBeSentEvent): Unit = js.native
-    
-    def _onResponseReceived(event: ResponseReceivedEvent): Unit = js.native
-    
-    var _protocolRequestInterceptionEnabled: Boolean = js.native
-    
-    var _requestIdToInterceptionId: Map[String, String] = js.native
-    
-    var _requestIdToRequest: Map[String, HTTPRequest] = js.native
-    
-    var _requestIdToRequestWillBeSentEvent: Map[String, RequestWillBeSentEvent] = js.native
-    
-    def _updateProtocolCacheDisabled(): js.Promise[Unit] = js.native
-    
-    def _updateProtocolRequestInterception(): js.Promise[Unit] = js.native
-    
-    var _userCacheDisabled: Boolean = js.native
-    
-    var _userRequestInterceptionEnabled: Boolean = js.native
     
     def authenticate(): js.Promise[Unit] = js.native
     def authenticate(credentials: Credentials): js.Promise[Unit] = js.native
     
+    def emulateNetworkConditions(): js.Promise[Unit] = js.native
+    def emulateNetworkConditions(networkConditions: NetworkConditions): js.Promise[Unit] = js.native
+    
     def extraHTTPHeaders(): Record[String, String] = js.native
     
+    /**
+      * Initialize calls should avoid async dependencies between CDP calls as those
+      * might not resolve until after the target is resumed causing a deadlock.
+      */
     def initialize(): js.Promise[Unit] = js.native
+    
+    def numRequestsInProgress(): Double = js.native
+    
+    /* private */ var `private`: Any = js.native
     
     def setCacheEnabled(enabled: Boolean): js.Promise[Unit] = js.native
     
@@ -91,6 +43,7 @@ object networkManagerMod {
     def setRequestInterception(value: Boolean): js.Promise[Unit] = js.native
     
     def setUserAgent(userAgent: String): js.Promise[Unit] = js.native
+    def setUserAgent(userAgent: String, userAgentMetadata: UserAgentMetadata): js.Promise[Unit] = js.native
   }
   
   object NetworkManagerEmittedEvents {
@@ -106,6 +59,10 @@ object networkManagerMod {
     @JSImport("puppeteer-core/lib/cjs/puppeteer/common/NetworkManager", "NetworkManagerEmittedEvents.RequestFinished")
     @js.native
     val RequestFinished: js.Symbol = js.native
+    
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/NetworkManager", "NetworkManagerEmittedEvents.RequestServedFromCache")
+    @js.native
+    val RequestServedFromCache: js.Symbol = js.native
     
     @JSImport("puppeteer-core/lib/cjs/puppeteer/common/NetworkManager", "NetworkManagerEmittedEvents.Response")
     @js.native
@@ -130,6 +87,67 @@ object networkManagerMod {
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FrameManager extends StObject {
+    
+    def frame(frameId: String): Frame | Null
+  }
+  object FrameManager {
+    
+    inline def apply(frame: String => Frame | Null): FrameManager = {
+      val __obj = js.Dynamic.literal(frame = js.Any.fromFunction1(frame))
+      __obj.asInstanceOf[FrameManager]
+    }
+    
+    extension [Self <: FrameManager](x: Self) {
+      
+      inline def setFrame(value: String => Frame | Null): Self = StObject.set(x, "frame", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait InternalNetworkConditions
+    extends StObject
+       with NetworkConditions {
+    
+    var offline: Boolean
+  }
+  object InternalNetworkConditions {
+    
+    inline def apply(download: Double, latency: Double, offline: Boolean, upload: Double): InternalNetworkConditions = {
+      val __obj = js.Dynamic.literal(download = download.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], offline = offline.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InternalNetworkConditions]
+    }
+    
+    extension [Self <: InternalNetworkConditions](x: Self) {
+      
+      inline def setOffline(value: Boolean): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait NetworkConditions extends StObject {
+    
+    var download: Double
+    
+    var latency: Double
+    
+    var upload: Double
+  }
+  object NetworkConditions {
+    
+    inline def apply(download: Double, latency: Double, upload: Double): NetworkConditions = {
+      val __obj = js.Dynamic.literal(download = download.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NetworkConditions]
+    }
+    
+    extension [Self <: NetworkConditions](x: Self) {
+      
+      inline def setDownload(value: Double): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      
+      inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+      
+      inline def setUpload(value: Double): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     }
   }
 }

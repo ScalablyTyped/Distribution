@@ -12,7 +12,7 @@ trait IWrapperOptions extends StObject {
   var apiCheckFunction: js.UndefOr[String] = js.undefined
   
   //'throw' or 'warn
-  var apiCheckInstance: js.UndefOr[js.Any] = js.undefined
+  var apiCheckInstance: js.UndefOr[Any] = js.undefined
   
   var apiCheckOptions: js.UndefOr[js.Object] = js.undefined
   
@@ -43,7 +43,7 @@ object IWrapperOptions {
     
     inline def setApiCheckFunctionUndefined: Self = StObject.set(x, "apiCheckFunction", js.undefined)
     
-    inline def setApiCheckInstance(value: js.Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
+    inline def setApiCheckInstance(value: Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
     
     inline def setApiCheckInstanceUndefined: Self = StObject.set(x, "apiCheckInstance", js.undefined)
     
@@ -73,7 +73,7 @@ object IWrapperOptions {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setValidateOptions(value: js.Function): Self = StObject.set(x, "validateOptions", value.asInstanceOf[js.Any])
     

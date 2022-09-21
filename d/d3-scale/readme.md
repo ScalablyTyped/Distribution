@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-scale
 
-Typings are for version 3.2
+Typings are for version 4.0
 
 ## Library description:
 Encodings that map abstract data to visual representation.
@@ -10,10 +10,10 @@ Encodings that map abstract data to visual representation.
 | ------------------ | :-------------: |
 | Full name          | d3-scale |
 | Keywords           | d3, d3-module, scale, visualization |
-| # releases         | 12 |
-| # dependents       | 947 |
-| # downloads        | 77478840 |
-| # stars            | 5 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6609012666666666E7 |
+| # stars            | 1456.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-scale/)

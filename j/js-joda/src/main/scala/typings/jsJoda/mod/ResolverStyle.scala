@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ResolverStyle")
 @js.native
-/* private */ class ResolverStyle () extends StObject
+/* private */ open class ResolverStyle () extends StObject
 object ResolverStyle {
   
   @JSImport("js-joda", "ResolverStyle")

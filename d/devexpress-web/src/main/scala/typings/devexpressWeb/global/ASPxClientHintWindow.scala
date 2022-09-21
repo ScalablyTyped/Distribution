@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHintWindow")
 @js.native
-class ASPxClientHintWindow ()
+open class ASPxClientHintWindow ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHintWindow {
   
@@ -19,7 +19,7 @@ class ASPxClientHintWindow ()
     * @param options An  object that specifies the hint's options.
     */
   /* CompleteClass */
-  override def SetContent(html: js.Any, options: typings.devexpressWeb.ASPxClientHintOptions): Unit = js.native
+  override def SetContent(html: Any, options: typings.devexpressWeb.ASPxClientHintOptions): Unit = js.native
   
   /**
     * Set the hint's loading animation

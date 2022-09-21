@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProvideAnomalyFeedbackResponse extends StObject {
   
   /**
-    *  The ID of the modified cost anomaly. 
+    * The ID of the modified cost anomaly. 
     */
   var AnomalyId: GenericString
 }

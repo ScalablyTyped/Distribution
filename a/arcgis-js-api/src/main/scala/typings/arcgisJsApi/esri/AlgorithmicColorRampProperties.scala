@@ -14,21 +14,21 @@ trait AlgorithmicColorRampProperties
   /**
     * The algorithm used to generate the colors between the `fromColor` and `toColor`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#algorithm)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#algorithm)
     */
   var algorithm: js.UndefOr[`cie-lab` | `lab-lch` | hsv] = js.undefined
   
   /**
     * The first color in the color ramp.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#fromColor)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#fromColor)
     */
   var fromColor: js.UndefOr[Color_] = js.undefined
   
   /**
     * The last color in the color ramp.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#toColor)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#toColor)
     */
   var toColor: js.UndefOr[Color_] = js.undefined
 }

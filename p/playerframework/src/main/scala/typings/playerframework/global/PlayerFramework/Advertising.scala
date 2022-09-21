@@ -8,12 +8,12 @@ object Advertising {
   
   @JSGlobal("PlayerFramework.Advertising.MidrollAdvertisement")
   @js.native
-  class MidrollAdvertisement ()
+  open class MidrollAdvertisement ()
     extends StObject
        with typings.playerframework.PlayerFramework.Advertising.MidrollAdvertisement {
     
     /* CompleteClass */
-    var source: js.Any = js.native
+    var source: Any = js.native
     
     /* CompleteClass */
     var time: Double = js.native
@@ -24,11 +24,11 @@ object Advertising {
   
   @JSGlobal("PlayerFramework.Advertising.PrerollAdvertisement")
   @js.native
-  class PrerollAdvertisement ()
+  open class PrerollAdvertisement ()
     extends StObject
        with typings.playerframework.PlayerFramework.Advertising.PrerollAdvertisement {
     
     /* CompleteClass */
-    var source: js.Any = js.native
+    var source: Any = js.native
   }
 }

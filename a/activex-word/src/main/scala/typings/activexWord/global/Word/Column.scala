@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Column")
 @js.native
-/* private */ class Column ()
+/* private */ open class Column ()
   extends StObject
      with typings.activexWord.Word.Column

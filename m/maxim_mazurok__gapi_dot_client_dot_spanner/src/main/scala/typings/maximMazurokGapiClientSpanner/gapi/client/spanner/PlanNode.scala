@@ -20,7 +20,7 @@ trait PlanNode extends StObject {
   var executionStats: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PlanNode & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PlanNode & TopLevel[Any]
   ] = js.undefined
   
   /** The `PlanNode`'s index in node list. */
@@ -39,7 +39,7 @@ trait PlanNode extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PlanNode & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PlanNode & TopLevel[Any]
   ] = js.undefined
   
   /** Condensed representation for SCALAR nodes. */
@@ -58,7 +58,7 @@ object PlanNode {
     
     inline def setChildLinksUndefined: Self = StObject.set(x, "childLinks", js.undefined)
     
-    inline def setChildLinksVarargs(value: ChildLink*): Self = StObject.set(x, "childLinks", js.Array(value :_*))
+    inline def setChildLinksVarargs(value: ChildLink*): Self = StObject.set(x, "childLinks", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object PlanNode {
     inline def setExecutionStats(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PlanNode & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PlanNode & TopLevel[Any]
     ): Self = StObject.set(x, "executionStats", value.asInstanceOf[js.Any])
     
     inline def setExecutionStatsUndefined: Self = StObject.set(x, "executionStats", js.undefined)
@@ -83,7 +83,7 @@ object PlanNode {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PlanNode & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PlanNode & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

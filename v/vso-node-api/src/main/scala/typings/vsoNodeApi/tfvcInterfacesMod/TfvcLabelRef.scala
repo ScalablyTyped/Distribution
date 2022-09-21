@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TfvcLabelRef extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   var description: String
   
@@ -16,7 +15,7 @@ trait TfvcLabelRef extends StObject {
   
   var labelScope: String
   
-  var modifiedDate: Date
+  var modifiedDate: js.Date
   
   var name: String
   
@@ -27,11 +26,11 @@ trait TfvcLabelRef extends StObject {
 object TfvcLabelRef {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     description: String,
     id: Double,
     labelScope: String,
-    modifiedDate: Date,
+    modifiedDate: js.Date,
     name: String,
     owner: IdentityRef,
     url: String
@@ -48,7 +47,7 @@ object TfvcLabelRef {
     
     inline def setLabelScope(value: String): Self = StObject.set(x, "labelScope", value.asInstanceOf[js.Any])
     
-    inline def setModifiedDate(value: Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: js.Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -56,6 +55,6 @@ object TfvcLabelRef {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

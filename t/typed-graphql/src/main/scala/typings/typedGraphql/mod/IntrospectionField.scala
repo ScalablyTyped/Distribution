@@ -35,7 +35,7 @@ object IntrospectionField {
     
     inline def setArgs(value: js.Array[IntrospectionInputValue]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: IntrospectionInputValue*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: IntrospectionInputValue*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setDeprecationReason(value: String): Self = StObject.set(x, "deprecationReason", value.asInstanceOf[js.Any])
     

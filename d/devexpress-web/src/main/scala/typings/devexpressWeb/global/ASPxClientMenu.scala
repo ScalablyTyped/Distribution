@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientMenu")
 @js.native
-class ASPxClientMenu ()
+open class ASPxClientMenu ()
   extends StObject
      with typings.devexpressWeb.ASPxClientMenu {
   
@@ -66,7 +66,7 @@ class ASPxClientMenu ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Gets a value specifying the menu orientation.
@@ -78,7 +78,7 @@ class ASPxClientMenu ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a root menu item.
@@ -212,5 +212,5 @@ object ASPxClientMenu {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientMenu]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientMenu]
 }

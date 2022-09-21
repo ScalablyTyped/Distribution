@@ -21,25 +21,25 @@ object wrappersMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "Bidirectional")
   @js.native
-  class Bidirectional protected () extends Wrapper {
+  open class Bidirectional protected () extends Wrapper {
     def this(args: BidirectionalLayerArgs) = this()
     
-    /* private */ var _trainable: js.Any = js.native
+    /* private */ var _trainable: Any = js.native
     
-    /* private */ var backwardLayer: js.Any = js.native
+    /* private */ var backwardLayer: Any = js.native
     
-    /* private */ var forwardLayer: js.Any = js.native
+    /* private */ var forwardLayer: Any = js.native
     
     var mergeMode: BidirectionalMergeMode = js.native
     
-    /* private */ var numConstants: js.Any = js.native
+    /* private */ var numConstants: Any = js.native
     
     def resetStates(states: js.Array[Tensor[Rank]]): Unit = js.native
     def resetStates(states: Tensor[Rank]): Unit = js.native
     
-    /* private */ var returnSequences: js.Any = js.native
+    /* private */ var returnSequences: Any = js.native
     
-    /* private */ var returnState: js.Any = js.native
+    /* private */ var returnState: Any = js.native
   }
   /* static members */
   object Bidirectional {
@@ -60,7 +60,7 @@ object wrappersMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/wrappers", "TimeDistributed")
   @js.native
-  class TimeDistributed protected () extends Wrapper {
+  open class TimeDistributed protected () extends Wrapper {
     def this(args: WrapperLayerArgs) = this()
   }
   /* static members */

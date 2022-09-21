@@ -33,6 +33,6 @@ object SeparatorSheets {
     
     inline def `setSeparator-sheets-typeUndefined`: Self = StObject.set(x, "separator-sheets-type", js.undefined)
     
-    inline def `setSeparator-sheets-typeVarargs`(value: SeparatorSheetsType*): Self = StObject.set(x, "separator-sheets-type", js.Array(value :_*))
+    inline def `setSeparator-sheets-typeVarargs`(value: SeparatorSheetsType*): Self = StObject.set(x, "separator-sheets-type", js.Array(value*))
   }
 }

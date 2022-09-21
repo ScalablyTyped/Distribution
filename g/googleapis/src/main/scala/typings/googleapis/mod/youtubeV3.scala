@@ -9,207 +9,226 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object youtubeV3 {
   
+  @JSImport("googleapis", "youtube_v3.Resource$Abusereports")
+  @js.native
+  open class ResourceAbusereports protected ()
+    extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceAbusereports {
+    def this(context: APIRequestContext) = this()
+  }
+  
   @JSImport("googleapis", "youtube_v3.Resource$Activities")
   @js.native
-  class ResourceActivities protected ()
+  open class ResourceActivities protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceActivities {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Captions")
   @js.native
-  class ResourceCaptions protected ()
+  open class ResourceCaptions protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceCaptions {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Channelbanners")
   @js.native
-  class ResourceChannelbanners protected ()
+  open class ResourceChannelbanners protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceChannelbanners {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Channels")
   @js.native
-  class ResourceChannels protected ()
+  open class ResourceChannels protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceChannels {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Channelsections")
   @js.native
-  class ResourceChannelsections protected ()
+  open class ResourceChannelsections protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceChannelsections {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Comments")
   @js.native
-  class ResourceComments protected ()
+  open class ResourceComments protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceComments {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Commentthreads")
   @js.native
-  class ResourceCommentthreads protected ()
+  open class ResourceCommentthreads protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceCommentthreads {
-    def this(context: APIRequestContext) = this()
-  }
-  
-  @JSImport("googleapis", "youtube_v3.Resource$Guidecategories")
-  @js.native
-  class ResourceGuidecategories protected ()
-    extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceGuidecategories {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$I18nlanguages")
   @js.native
-  class ResourceI18nlanguages protected ()
+  open class ResourceI18nlanguages protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceI18nlanguages {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$I18nregions")
   @js.native
-  class ResourceI18nregions protected ()
+  open class ResourceI18nregions protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceI18nregions {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Livebroadcasts")
   @js.native
-  class ResourceLivebroadcasts protected ()
+  open class ResourceLivebroadcasts protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceLivebroadcasts {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Livechatbans")
   @js.native
-  class ResourceLivechatbans protected ()
+  open class ResourceLivechatbans protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceLivechatbans {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Livechatmessages")
   @js.native
-  class ResourceLivechatmessages protected ()
+  open class ResourceLivechatmessages protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceLivechatmessages {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Livechatmoderators")
   @js.native
-  class ResourceLivechatmoderators protected ()
+  open class ResourceLivechatmoderators protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceLivechatmoderators {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Livestreams")
   @js.native
-  class ResourceLivestreams protected ()
+  open class ResourceLivestreams protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceLivestreams {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "youtube_v3.Resource$Members")
+  @js.native
+  open class ResourceMembers protected ()
+    extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceMembers {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "youtube_v3.Resource$Membershipslevels")
+  @js.native
+  open class ResourceMembershipslevels protected ()
+    extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceMembershipslevels {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Playlistitems")
   @js.native
-  class ResourcePlaylistitems protected ()
+  open class ResourcePlaylistitems protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourcePlaylistitems {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Playlists")
   @js.native
-  class ResourcePlaylists protected ()
+  open class ResourcePlaylists protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourcePlaylists {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Search")
   @js.native
-  class ResourceSearch protected ()
+  open class ResourceSearch protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceSearch {
-    def this(context: APIRequestContext) = this()
-  }
-  
-  @JSImport("googleapis", "youtube_v3.Resource$Sponsors")
-  @js.native
-  class ResourceSponsors protected ()
-    extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceSponsors {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Subscriptions")
   @js.native
-  class ResourceSubscriptions protected ()
+  open class ResourceSubscriptions protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceSubscriptions {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Superchatevents")
   @js.native
-  class ResourceSuperchatevents protected ()
+  open class ResourceSuperchatevents protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceSuperchatevents {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "youtube_v3.Resource$Tests")
+  @js.native
+  open class ResourceTests protected ()
+    extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceTests {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "youtube_v3.Resource$Thirdpartylinks")
+  @js.native
+  open class ResourceThirdpartylinks protected ()
+    extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceThirdpartylinks {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Thumbnails")
   @js.native
-  class ResourceThumbnails protected ()
+  open class ResourceThumbnails protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceThumbnails {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Videoabusereportreasons")
   @js.native
-  class ResourceVideoabusereportreasons protected ()
+  open class ResourceVideoabusereportreasons protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceVideoabusereportreasons {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Videocategories")
   @js.native
-  class ResourceVideocategories protected ()
+  open class ResourceVideocategories protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceVideocategories {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Videos")
   @js.native
-  class ResourceVideos protected ()
+  open class ResourceVideos protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceVideos {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "youtube_v3.Resource$Watermarks")
   @js.native
-  class ResourceWatermarks protected ()
+  open class ResourceWatermarks protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceWatermarks {
     def this(context: APIRequestContext) = this()
   }
   
-  /**
-    * YouTube Data API
-    *
-    * Supports core YouTube features, such as uploading videos, creating and
-    * managing playlists, searching for content, and much more.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const youtube = google.youtube('v3');
-    *
-    * @namespace youtube
-    * @type {Function}
-    * @version v3
-    * @variation v3
-    * @param {object=} options Options for Youtube
-    */
+  @JSImport("googleapis", "youtube_v3.Resource$Youtube")
+  @js.native
+  open class ResourceYoutube protected ()
+    extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceYoutube {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "youtube_v3.Resource$Youtube$V3")
+  @js.native
+  open class ResourceYoutubeV3 protected ()
+    extends typings.googleapis.youtubeV3Mod.youtubeV3.ResourceYoutubeV3 {
+    def this(context: APIRequestContext) = this()
+  }
+  
   @JSImport("googleapis", "youtube_v3.Youtube")
   @js.native
-  class Youtube protected ()
+  open class Youtube protected ()
     extends typings.googleapis.youtubeV3Mod.youtubeV3.Youtube {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()

@@ -1,8 +1,8 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientAndroidpublisher.anon.CallbackFields
-import typings.maximMazurokGapiClientAndroidpublisher.anon.FieldsKey
+import typings.maximMazurokGapiClientAndroidpublisher.anon.QuotaUserReviewId
+import typings.maximMazurokGapiClientAndroidpublisher.anon.ResourceReviewId
 import typings.maximMazurokGapiClientAndroidpublisher.anon.ReviewId
 import typings.maximMazurokGapiClientAndroidpublisher.anon.StartIndex
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ trait ReviewsResource extends StObject {
   def list(): Request[ReviewsListResponse] = js.native
   def list(request: StartIndex): Request[ReviewsListResponse] = js.native
   
+  def reply(request: QuotaUserReviewId, body: ReviewsReplyRequest): Request[ReviewsReplyResponse] = js.native
   /** Replies to a single review, or updates an existing reply. */
-  def reply(request: CallbackFields): Request[ReviewsReplyResponse] = js.native
-  def reply(request: FieldsKey, body: ReviewsReplyRequest): Request[ReviewsReplyResponse] = js.native
+  def reply(request: ResourceReviewId): Request[ReviewsReplyResponse] = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "MultiplyBlock")
 @js.native
-class MultiplyBlock protected ()
+open class MultiplyBlock protected ()
   extends typings.babylonjs.materialsIndexMod.MultiplyBlock {
   /**
     * Creates a new MultiplyBlock

@@ -44,11 +44,11 @@ trait PointEventsOptionsObject extends StObject {
   var drop: js.UndefOr[PointDropCallbackFunction] = js.undefined
   
   /**
-    * (Highcharts) Fires when the legend item belonging to the pie point
-    * (slice) is clicked. The `this` keyword refers to the point itself. One
-    * parameter, `event`, is passed to the function, containing common event
-    * information. The default action is to toggle the visibility of the point.
-    * This can be prevented by calling `event.preventDefault()`.
+    * (Highcharts, Highmaps) Fires when the legend item belonging to the pie
+    * point (slice) is clicked. The `this` keyword refers to the point itself.
+    * One parameter, `event`, is passed to the function, containing common
+    * event information. The default action is to toggle the visibility of the
+    * point. This can be prevented by calling `event.preventDefault()`.
     */
   var legendItemClick: js.UndefOr[PointLegendItemClickCallbackFunction] = js.undefined
   
@@ -63,6 +63,9 @@ trait PointEventsOptionsObject extends StObject {
     * (Highcharts, Highstock, Gantt) Fires when the mouse enters the area close
     * to the point. One parameter, `event`, is passed to the function,
     * containing common event information.
+    *
+    * Returning `false` cancels the default behavior, which is to show a
+    * tooltip for the point.
     */
   var mouseOver: js.UndefOr[PointMouseOverCallbackFunction] = js.undefined
   

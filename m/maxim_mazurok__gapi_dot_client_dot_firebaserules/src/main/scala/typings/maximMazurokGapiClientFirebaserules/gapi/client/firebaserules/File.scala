@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait File extends StObject {
   
-  /** Textual Content. */
+  /** Required. Textual Content. */
   var content: js.UndefOr[String] = js.undefined
   
   /** Fingerprint (e.g. github sha) associated with the `File`. */
   var fingerprint: js.UndefOr[String] = js.undefined
   
-  /** File name. */
+  /** Required. File name. */
   var name: js.UndefOr[String] = js.undefined
 }
 object File {

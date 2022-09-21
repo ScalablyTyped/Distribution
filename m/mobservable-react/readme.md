@@ -10,10 +10,10 @@ React bindings for mobservable. Create fully reactive components.
 | ------------------ | :-------------: |
 | Full name          | mobservable-react |
 | Keywords           | mobservable, react-component, react, reactjs, reactive |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1806 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 313.0 |
+| # stars            | 4841.0 |
 
 ## Links
 - [Homepage](https://github.com/mweststrate/mobservable-react#readme)

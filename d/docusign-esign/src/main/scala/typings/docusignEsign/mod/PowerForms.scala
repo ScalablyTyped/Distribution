@@ -201,7 +201,7 @@ object PowerForms {
     
     inline def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
     
-    inline def setEnvelopesVarargs(value: Envelope*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
+    inline def setEnvelopesVarargs(value: Envelope*): Self = StObject.set(x, "envelopes", js.Array(value*))
     
     inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
@@ -261,7 +261,7 @@ object PowerForms {
     inline def setRecipientsVarargs(
       value: (/* **Note**: For a self-service PowerForm on a website, you can specify the intended recipients generically (for example, use `Member` as the `Name`),
       and omit personal details such as `email`. */ PowerFormRecipient)*
-    ): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    ): Self = StObject.set(x, "recipients", js.Array(value*))
     
     inline def setSenderName(value: String): Self = StObject.set(x, "senderName", value.asInstanceOf[js.Any])
     

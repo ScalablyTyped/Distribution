@@ -11,7 +11,7 @@ trait RequestMessage
   /**
     * The request id.
     */
-  var id: Double | String
+  var id: Double | String | Null
   
   /**
     * The method to be invoked.
@@ -21,12 +21,12 @@ trait RequestMessage
   /**
     * The method's params.
     */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[js.Array[Any] | js.Object] = js.undefined
 }
 object RequestMessage {
   
-  inline def apply(id: Double | String, jsonrpc: String, method: String): RequestMessage = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+  inline def apply(jsonrpc: String, method: String): RequestMessage = {
+    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], id = null)
     __obj.asInstanceOf[RequestMessage]
   }
   
@@ -34,10 +34,14 @@ object RequestMessage {
     
     inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Any] | js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
   }
 }

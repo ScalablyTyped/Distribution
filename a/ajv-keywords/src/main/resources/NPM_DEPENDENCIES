@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ajv-keywords" : "3.5.2"
+      "ajv-keywords" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ajv-keywords" : "3.5.2"
+      "ajv-keywords" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

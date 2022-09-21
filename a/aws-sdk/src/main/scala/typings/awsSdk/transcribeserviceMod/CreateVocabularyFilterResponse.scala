@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateVocabularyFilterResponse extends StObject {
   
   /**
-    * The language code of the words in the collection.
+    * The language code you selected for your vocabulary filter.
     */
   var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
   /**
-    * The date and time that the vocabulary filter was modified.
+    * The date and time you created your vocabulary filter. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.761000-07:00 represents 12:32 PM UTC-7 on May 4, 2022.
     */
-  var LastModifiedTime: js.UndefOr[DateTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the vocabulary filter.
+    * The name you chose for your custom vocabulary filter.
     */
   var VocabularyFilterName: js.UndefOr[typings.awsSdk.transcribeserviceMod.VocabularyFilterName] = js.undefined
 }
@@ -34,7 +34,7 @@ object CreateVocabularyFilterResponse {
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    inline def setLastModifiedTime(value: DateTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

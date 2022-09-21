@@ -14,7 +14,7 @@ trait ListNotebookExecutionsInput extends StObject {
   /**
     * The beginning of time range filter for listing notebook executions. The default is the timestamp of 30 days ago.
     */
-  var From: js.UndefOr[Date] = js.undefined
+  var From: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The pagination token, returned by a previous ListNotebookExecutions call, that indicates the start of the list for this ListNotebookExecutions call.
@@ -29,7 +29,7 @@ trait ListNotebookExecutionsInput extends StObject {
   /**
     * The end of time range filter for listing notebook executions. The default is the current timestamp.
     */
-  var To: js.UndefOr[Date] = js.undefined
+  var To: js.UndefOr[js.Date] = js.undefined
 }
 object ListNotebookExecutionsInput {
   
@@ -44,7 +44,7 @@ object ListNotebookExecutionsInput {
     
     inline def setEditorIdUndefined: Self = StObject.set(x, "EditorId", js.undefined)
     
-    inline def setFrom(value: Date): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: js.Date): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
     inline def setFromUndefined: Self = StObject.set(x, "From", js.undefined)
     
@@ -56,7 +56,7 @@ object ListNotebookExecutionsInput {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setTo(value: Date): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Date): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
     inline def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }

@@ -11,9 +11,9 @@ Typings are for version 2.1
 | Full name          | retinajs |
 | Keywords           | retina, images, @2x, @3x, retina.js |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 158176 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6164.666666666667 |
+| # stars            | 4467.0 |
 
 ## Links
 - [Homepage](https://github.com/strues/retinajs)

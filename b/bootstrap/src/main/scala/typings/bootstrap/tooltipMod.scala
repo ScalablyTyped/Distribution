@@ -1,7 +1,12 @@
 package typings.bootstrap
 
 import typings.bootstrap.anon.Hide
+import typings.bootstrap.anon.PartialOptionsBoundary
+import typings.bootstrap.anon.PartialOptionsModifiers
 import typings.bootstrap.anon.RecordkeyofHTMLElementTag
+import typings.bootstrap.baseComponentMod.ComponentOptions
+import typings.bootstrap.baseComponentMod.GetInstanceFactory
+import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
 import typings.bootstrap.bootstrapBooleans.`false`
 import typings.bootstrap.bootstrapStrings.`click focus`
 import typings.bootstrap.bootstrapStrings.`click hover focus`
@@ -10,19 +15,30 @@ import typings.bootstrap.bootstrapStrings.`hover focus`
 import typings.bootstrap.bootstrapStrings.auto
 import typings.bootstrap.bootstrapStrings.bottom
 import typings.bootstrap.bootstrapStrings.click
+import typings.bootstrap.bootstrapStrings.disable
+import typings.bootstrap.bootstrapStrings.dispose
+import typings.bootstrap.bootstrapStrings.enable
 import typings.bootstrap.bootstrapStrings.focus
+import typings.bootstrap.bootstrapStrings.hide
 import typings.bootstrap.bootstrapStrings.hover
 import typings.bootstrap.bootstrapStrings.left
 import typings.bootstrap.bootstrapStrings.manual
 import typings.bootstrap.bootstrapStrings.right
-import typings.bootstrap.bootstrapStrings.scrollParent
+import typings.bootstrap.bootstrapStrings.setContent
+import typings.bootstrap.bootstrapStrings.show
+import typings.bootstrap.bootstrapStrings.toggle
+import typings.bootstrap.bootstrapStrings.toggleEnabled
+import typings.bootstrap.bootstrapStrings.tooltip
 import typings.bootstrap.bootstrapStrings.top
-import typings.bootstrap.bootstrapStrings.viewport
-import typings.bootstrap.bootstrapStrings.window
-import typings.popperJs.mod.Behavior
-import typings.popperJs.mod.PopperOptions
-import typings.popperJs.mod.Position
-import typings.std.Element
+import typings.bootstrap.bootstrapStrings.update
+import typings.bootstrap.mod.global.Element
+import typings.bootstrap.mod.global.JQuery
+import typings.bootstrap.tooltipMod.Tooltip.Options
+import typings.bootstrap.tooltipMod.Tooltip.SetContentFunction
+import typings.bootstrap.tooltipMod.Tooltip.jQueryInterface
+import typings.popperjsCore.enumsMod.Boundary
+import typings.std.HTMLElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,76 +47,184 @@ object tooltipMod {
   
   @JSImport("bootstrap/js/dist/tooltip", JSImport.Default)
   @js.native
-  class default protected ()
-    extends StObject
-       with Tooltip {
+  open class default protected () extends Tooltip {
+    def this(element: String) = this()
     def this(element: Element) = this()
-    
-    /**
-      * Removes the ability for an element’s tooltip to be shown. The tooltip
-      * will only be able to be shown if it is re-enabled.
-      */
-    /* CompleteClass */
-    override def disable(): Unit = js.native
-    
-    /**
-      * Hides and destroys an element’s tooltip. Tooltips that use delegation
-      * (which are created using the selector option) cannot be individually
-      * destroyed on descendant trigger elements.
-      */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    
-    /**
-      * Gives an element’s tooltip the ability to be shown. Tooltips are
-      * enabled by default.
-      */
-    /* CompleteClass */
-    override def enable(): Unit = js.native
-    
-    /**
-      * Hides an element’s tooltip. Returns to the caller before the tooltip
-      * has actually been hidden (i.e. before the hidden.bs.tooltip event
-      * occurs). This is considered a “manual” triggering of the tooltip.
-      */
-    /* CompleteClass */
-    override def hide(): Unit = js.native
-    
-    /**
-      * Reveals an element’s tooltip. Returns to the caller before the
-      * tooltip has actually been shown (i.e. before the shown.bs.tooltip
-      * event occurs). This is considered a “manual” triggering of the
-      * tooltip. Tooltips with zero-length titles are never displayed.
-      */
-    /* CompleteClass */
-    override def show(): Unit = js.native
-    
-    /**
-      * Toggles an element’s tooltip. Returns to the caller before the
-      * tooltip has actually been shown or hidden (i.e. before the
-      * shown.bs.tooltip or hidden.bs.tooltip event occurs). This is
-      * considered a “manual” triggering of the tooltip.
-      */
-    /* CompleteClass */
-    override def toggle(): Unit = js.native
-    
-    /**
-      * Toggles the ability for an element’s tooltip to be shown or hidden.
-      */
-    /* CompleteClass */
-    override def toggleEnabled(): Unit = js.native
-    
-    /**
-      * Updates the position of an element’s tooltip.
-      */
-    /* CompleteClass */
-    override def update(): Unit = js.native
+    def this(element: String, options: PartialOptionsBoundary) = this()
+    def this(element: Element, options: PartialOptionsBoundary) = this()
   }
   object default {
     
     @JSImport("bootstrap/js/dist/tooltip", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Default settings of this plugin
+      *
+      * @link https://getbootstrap.com/docs/5.0/getting-started/javascript/#default-settings
+      */
+    /* static member */
+    @JSImport("bootstrap/js/dist/tooltip", "default.Default")
+    @js.native
+    def Default: Options = js.native
+    
+    /* static member */
+    /* Inlined std.Record<keyof bootstrap.bootstrap/js/dist/tooltip.Tooltip.Options, string> */
+    object DefaultType {
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.allowList")
+      @js.native
+      def allowList: String = js.native
+      inline def allowList_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowList")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.animation")
+      @js.native
+      def animation: String = js.native
+      inline def animation_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animation")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.boundary")
+      @js.native
+      def boundary: String = js.native
+      inline def boundary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("boundary")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.container")
+      @js.native
+      def container: String = js.native
+      inline def container_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("container")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.customClass")
+      @js.native
+      def customClass: js.UndefOr[String] = js.native
+      inline def customClass_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customClass")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.delay")
+      @js.native
+      def delay: String = js.native
+      inline def delay_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delay")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.fallbackPlacement")
+      @js.native
+      def fallbackPlacement: String = js.native
+      inline def fallbackPlacement_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbackPlacement")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.html")
+      @js.native
+      def html: String = js.native
+      inline def html_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.offset")
+      @js.native
+      def offset: String = js.native
+      inline def offset_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offset")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.placement")
+      @js.native
+      def placement: String = js.native
+      inline def placement_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placement")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.popperConfig")
+      @js.native
+      def popperConfig: js.UndefOr[String] = js.native
+      inline def popperConfig_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popperConfig")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.sanitize")
+      @js.native
+      def sanitize: String = js.native
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.sanitizeFn")
+      @js.native
+      def sanitizeFn: String = js.native
+      inline def sanitizeFn_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sanitizeFn")(x.asInstanceOf[js.Any])
+      
+      inline def sanitize_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sanitize")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.selector")
+      @js.native
+      def selector: String = js.native
+      inline def selector_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selector")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.template")
+      @js.native
+      def template: String = js.native
+      inline def template_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("template")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.title")
+      @js.native
+      def title: String = js.native
+      inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.DefaultType.trigger")
+      @js.native
+      def trigger: String = js.native
+      inline def trigger_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trigger")(x.asInstanceOf[js.Any])
+    }
+    
+    inline def Default_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    /* Inlined std.Record<'CLICK' | 'FOCUSIN' | 'FOCUSOUT' | 'HIDDEN' | 'HIDE' | 'INSERTED' | 'MOUSEENTER' | 'MOUSELEAVE' | 'SHOW' | 'SHOWN', string> */
+    object Event {
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event.CLICK")
+      @js.native
+      def CLICK: String = js.native
+      inline def CLICK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event.FOCUSIN")
+      @js.native
+      def FOCUSIN: String = js.native
+      inline def FOCUSIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUSIN")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event.FOCUSOUT")
+      @js.native
+      def FOCUSOUT: String = js.native
+      inline def FOCUSOUT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUSOUT")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event.HIDDEN")
+      @js.native
+      def HIDDEN: String = js.native
+      inline def HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDDEN")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event.HIDE")
+      @js.native
+      def HIDE: String = js.native
+      inline def HIDE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDE")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event.INSERTED")
+      @js.native
+      def INSERTED: String = js.native
+      inline def INSERTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSERTED")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event.MOUSEENTER")
+      @js.native
+      def MOUSEENTER: String = js.native
+      inline def MOUSEENTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSEENTER")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event.MOUSELEAVE")
+      @js.native
+      def MOUSELEAVE: String = js.native
+      inline def MOUSELEAVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSELEAVE")(x.asInstanceOf[js.Any])
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event.SHOW")
+      @js.native
+      def SHOW: String = js.native
+      
+      @JSImport("bootstrap/js/dist/tooltip", "default.Event.SHOWN")
+      @js.native
+      def SHOWN: String = js.native
+      inline def SHOWN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOWN")(x.asInstanceOf[js.Any])
+      
+      inline def SHOW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW")(x.asInstanceOf[js.Any])
+    }
     
     @JSImport("bootstrap/js/dist/tooltip", "default.Events")
     @js.native
@@ -120,41 +244,69 @@ object tooltipMod {
       /* "shown.bs.tooltip" */ val shown: typings.bootstrap.tooltipMod.Tooltip.Events.shown & String = js.native
     }
     
+    /* static member */
+    @JSImport("bootstrap/js/dist/tooltip", "default.NAME")
+    @js.native
+    def NAME: tooltip = js.native
+    inline def NAME_=(x: tooltip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/tooltip", "default.SetContentFunction")
+    @js.native
+    def SetContentFunction: typings.bootstrap.tooltipMod.Tooltip.SetContentFunction = js.native
+    inline def SetContentFunction_=(x: SetContentFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SetContentFunction")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/tooltip", "default.getInstance")
+    @js.native
+    def getInstance: GetInstanceFactory[Tooltip] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[Tooltip]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    
     /**
-      * Static method which allows you to get the scrollspy instance associated
-      * with a DOM element
+      * Static method which allows you to get the tooltip instance associated with
+      * a DOM element, or create a new one in case it wasn’t initialised
       */
     /* static member */
-    inline def getInstance(element: Element): Tooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Tooltip]
+    @JSImport("bootstrap/js/dist/tooltip", "default.getOrCreateInstance")
+    @js.native
+    def getOrCreateInstance: GetOrCreateInstanceFactory[Tooltip, ComponentOptions] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[Tooltip, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/tooltip", "default.jQueryInterface")
+    @js.native
+    def jQueryInterface: typings.bootstrap.tooltipMod.Tooltip.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
-  trait Tooltip extends StObject {
+  @js.native
+  trait Tooltip
+    extends typings.bootstrap.baseComponentMod.default {
     
     /**
       * Removes the ability for an element’s tooltip to be shown. The tooltip
       * will only be able to be shown if it is re-enabled.
       */
-    def disable(): Unit
-    
-    /**
-      * Hides and destroys an element’s tooltip. Tooltips that use delegation
-      * (which are created using the selector option) cannot be individually
-      * destroyed on descendant trigger elements.
-      */
-    def dispose(): Unit
+    def disable(): Unit = js.native
     
     /**
       * Gives an element’s tooltip the ability to be shown. Tooltips are
       * enabled by default.
       */
-    def enable(): Unit
+    def enable(): Unit = js.native
     
     /**
       * Hides an element’s tooltip. Returns to the caller before the tooltip
       * has actually been hidden (i.e. before the hidden.bs.tooltip event
       * occurs). This is considered a “manual” triggering of the tooltip.
       */
-    def hide(): Unit
+    def hide(): Unit = js.native
+    
+    /**
+      * Gives a way to change the tooltip’s content after its initialization.
+      */
+    def setContent(): Unit = js.native
+    def setContent(content: Record[String, String | Element | SetContentFunction | Null]): Unit = js.native
     
     /**
       * Reveals an element’s tooltip. Returns to the caller before the
@@ -162,7 +314,7 @@ object tooltipMod {
       * event occurs). This is considered a “manual” triggering of the
       * tooltip. Tooltips with zero-length titles are never displayed.
       */
-    def show(): Unit
+    def show(): Unit = js.native
     
     /**
       * Toggles an element’s tooltip. Returns to the caller before the
@@ -170,33 +322,20 @@ object tooltipMod {
       * shown.bs.tooltip or hidden.bs.tooltip event occurs). This is
       * considered a “manual” triggering of the tooltip.
       */
-    def toggle(): Unit
+    def toggle(): Unit = js.native
+    def toggle(event: Any): Unit = js.native
     
     /**
       * Toggles the ability for an element’s tooltip to be shown or hidden.
       */
-    def toggleEnabled(): Unit
+    def toggleEnabled(): Unit = js.native
     
     /**
       * Updates the position of an element’s tooltip.
       */
-    def update(): Unit
+    def update(): Unit = js.native
   }
   object Tooltip {
-    
-    inline def apply(
-      disable: () => Unit,
-      dispose: () => Unit,
-      enable: () => Unit,
-      hide: () => Unit,
-      show: () => Unit,
-      toggle: () => Unit,
-      toggleEnabled: () => Unit,
-      update: () => Unit
-    ): Tooltip = {
-      val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), dispose = js.Any.fromFunction0(dispose), enable = js.Any.fromFunction0(enable), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle), toggleEnabled = js.Any.fromFunction0(toggleEnabled), update = js.Any.fromFunction0(update))
-      __obj.asInstanceOf[Tooltip]
-    }
     
     @js.native
     sealed trait Events extends StObject
@@ -249,7 +388,18 @@ object tooltipMod {
            with Events
     }
     
+    type Offset = js.Tuple2[Double, Double]
+    
+    type OffsetFunction = js.Function0[Offset]
+    
     trait Options extends StObject {
+      
+      /**
+        * Object which contains allowed attributes and tags
+        *
+        * @see {@link https://v5.getbootstrap.com/docs/5.0/getting-started/javascript/#sanitizer}
+        */
+      var allowList: RecordkeyofHTMLElementTag
       
       /**
         * Apply a CSS fade transition to the tooltip
@@ -266,7 +416,7 @@ object tooltipMod {
         * @see {@link https://popper.js.org/docs/v1/#modifiers..preventOverflow.boundariesElement}
         * @default 'scrollParent'
         */
-      var boundary: viewport | window | scrollParent | Element
+      var boundary: Boundary
       
       /**
         * Appends the tooltip to a specific element. Example: container:
@@ -278,6 +428,19 @@ object tooltipMod {
         * @default false
         */
       var container: String | Element | `false`
+      
+      /**
+        * Add classes to the tooltip when it is shown. Note that these classes
+        * will be added in addition to any classes specified in the template.
+        * To add multiple classes, separate them with spaces: 'class-1
+        * class-2'.
+        *
+        * You can also pass a function that should return a single string
+        * containing additional class names.
+        *
+        * @default ''
+        */
+      var customClass: js.UndefOr[String | js.Function0[String]] = js.undefined
       
       /**
         * Delay showing and hiding the popover (ms) - does not apply to manual
@@ -292,10 +455,10 @@ object tooltipMod {
       /**
         * Allow to specify which position Popper will use on fallback.
         *
-        * @see {@link https://popper.js.org/docs/v1/#modifiers..flip.behavior}
-        * @default 'flip'
+        * @see {@link https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements}
+        * @default ['top', 'right', 'bottom', 'left']
         */
-      var fallbackPlacement: Behavior | js.Array[Position]
+      var fallbackPlacement: js.Array[String]
       
       /**
         * Allow HTML in the tooltip.
@@ -314,14 +477,15 @@ object tooltipMod {
         * Offset of the tooltip relative to its target.
         *
         * When a function is used to determine the offset, it is called with an
-        * object containing the offset data as its first argument. The function
-        * must return an object with the same structure. The triggering element
-        * DOM node is passed as the second argument.
+        * object containing the popper placement, the reference, and popper
+        * rects as its first argument. The triggering element DOM node is
+        * passed as the second argument. The function must return an array with
+        * two numbers: [skidding, distance].
         *
-        * @see {@link https://popper.js.org/docs/v1/#modifiers..offset.offset}
-        * @default 0
+        * @see {@link https://popper.js.org/docs/v2/modifiers/offset}
+        * @default [0, 0]
         */
-      var offset: Double | String | js.Function0[Unit]
+      var offset: Offset | String | OffsetFunction
       
       /**
         * How to position the popover - auto | top | bottom | left | right.
@@ -339,10 +503,16 @@ object tooltipMod {
       /**
         * To change Bootstrap's default Popper.js config
         *
-        * @see {@link https://popper.js.org/docs/v1/#Popper.Defaults}
+        * When a function is used to create the Popper configuration, it's
+        * called with an object that contains the Bootstrap's default Popper
+        * configuration. It helps you use and merge the default with your own
+        * configuration. The function must return a configuration object for
+        * Popper.
+        *
+        * @see {@link https://popper.js.org/docs/v2}
         * @default null
         */
-      var popperConfig: PopperOptions | Null
+      var popperConfig: PartialOptionsModifiers | PopperConfigFunction | Null
       
       /**
         * Enable or disable the sanitization. If activated 'template' and
@@ -391,7 +561,7 @@ object tooltipMod {
         *
         * @default ''
         */
-      var title: String | Element | js.Function0[Unit]
+      var title: String | Element | JQuery | (js.ThisFunction0[/* this */ HTMLElement, String | Element | JQuery])
       
       /**
         * How tooltip is triggered - click | hover | focus | manual. You may
@@ -409,62 +579,67 @@ object tooltipMod {
         * @default 'hover focus'
         */
       var trigger: click | hover | focus | manual | (`click hover`) | (`click focus`) | (`hover focus`) | (`click hover focus`)
-      
-      /**
-        * Object which contains allowed attributes and tags
-        *
-        * @see {@link https://v5.getbootstrap.com/docs/5.0/getting-started/javascript/#sanitizer}
-        */
-      var whiteList: RecordkeyofHTMLElementTag
     }
     object Options {
       
       inline def apply(
+        allowList: RecordkeyofHTMLElementTag,
         animation: Boolean,
-        boundary: viewport | window | scrollParent | Element,
+        boundary: Boundary,
         container: String | Element | `false`,
         delay: Double | Hide,
-        fallbackPlacement: Behavior | js.Array[Position],
+        fallbackPlacement: js.Array[String],
         html: Boolean,
-        offset: Double | String | js.Function0[Unit],
+        offset: Offset | String | OffsetFunction,
         placement: auto | top | bottom | left | right | js.Function0[Unit],
         sanitize: Boolean,
         sanitizeFn: () => Unit | Null,
         selector: String | `false`,
         template: String,
-        title: String | Element | js.Function0[Unit],
-        trigger: click | hover | focus | manual | (`click hover`) | (`click focus`) | (`hover focus`) | (`click hover focus`),
-        whiteList: RecordkeyofHTMLElementTag
+        title: String | Element | JQuery | (js.ThisFunction0[/* this */ HTMLElement, String | Element | JQuery]),
+        trigger: click | hover | focus | manual | (`click hover`) | (`click focus`) | (`hover focus`) | (`click hover focus`)
       ): Options = {
-        val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], fallbackPlacement = fallbackPlacement.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], sanitize = sanitize.asInstanceOf[js.Any], sanitizeFn = js.Any.fromFunction0(sanitizeFn), selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any], popperConfig = null)
+        val __obj = js.Dynamic.literal(allowList = allowList.asInstanceOf[js.Any], animation = animation.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], fallbackPlacement = fallbackPlacement.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], sanitize = sanitize.asInstanceOf[js.Any], sanitizeFn = js.Any.fromFunction0(sanitizeFn), selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], popperConfig = null)
         __obj.asInstanceOf[Options]
       }
       
       extension [Self <: Options](x: Self) {
         
+        inline def setAllowList(value: RecordkeyofHTMLElementTag): Self = StObject.set(x, "allowList", value.asInstanceOf[js.Any])
+        
         inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
         
-        inline def setBoundary(value: viewport | window | scrollParent | Element): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+        inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+        
+        inline def setBoundaryVarargs(value: typings.std.Element*): Self = StObject.set(x, "boundary", js.Array(value*))
         
         inline def setContainer(value: String | Element | `false`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
+        inline def setCustomClass(value: String | js.Function0[String]): Self = StObject.set(x, "customClass", value.asInstanceOf[js.Any])
+        
+        inline def setCustomClassFunction0(value: () => String): Self = StObject.set(x, "customClass", js.Any.fromFunction0(value))
+        
+        inline def setCustomClassUndefined: Self = StObject.set(x, "customClass", js.undefined)
+        
         inline def setDelay(value: Double | Hide): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
         
-        inline def setFallbackPlacement(value: Behavior | js.Array[Position]): Self = StObject.set(x, "fallbackPlacement", value.asInstanceOf[js.Any])
+        inline def setFallbackPlacement(value: js.Array[String]): Self = StObject.set(x, "fallbackPlacement", value.asInstanceOf[js.Any])
         
-        inline def setFallbackPlacementVarargs(value: Position*): Self = StObject.set(x, "fallbackPlacement", js.Array(value :_*))
+        inline def setFallbackPlacementVarargs(value: String*): Self = StObject.set(x, "fallbackPlacement", js.Array(value*))
         
         inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         
-        inline def setOffset(value: Double | String | js.Function0[Unit]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Offset | String | OffsetFunction): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        inline def setOffsetFunction0(value: () => Unit): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
+        inline def setOffsetFunction0(value: () => Offset): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
         
         inline def setPlacement(value: auto | top | bottom | left | right | js.Function0[Unit]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
         
         inline def setPlacementFunction0(value: () => Unit): Self = StObject.set(x, "placement", js.Any.fromFunction0(value))
         
-        inline def setPopperConfig(value: PopperOptions): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
+        inline def setPopperConfig(value: PartialOptionsModifiers | PopperConfigFunction): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
+        
+        inline def setPopperConfigFunction1(value: /* defaultBsPopperConfig */ Options => PartialOptionsModifiers): Self = StObject.set(x, "popperConfig", js.Any.fromFunction1(value))
         
         inline def setPopperConfigNull: Self = StObject.set(x, "popperConfig", null)
         
@@ -476,35 +651,25 @@ object tooltipMod {
         
         inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        inline def setTitle(value: String | Element | js.Function0[Unit]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-        
-        inline def setTitleFunction0(value: () => Unit): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
+        inline def setTitle(
+          value: String | Element | JQuery | (js.ThisFunction0[/* this */ HTMLElement, String | Element | JQuery])
+        ): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
         inline def setTrigger(
           value: click | hover | focus | manual | (`click hover`) | (`click focus`) | (`hover focus`) | (`click hover focus`)
         ): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
-        
-        inline def setWhiteList(value: RecordkeyofHTMLElementTag): Self = StObject.set(x, "whiteList", value.asInstanceOf[js.Any])
       }
     }
     
-    extension [Self <: Tooltip](x: Self) {
-      
-      inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
-      
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
-      
-      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
-      
-      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
-      
-      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
-      
-      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
-      
-      inline def setToggleEnabled(value: () => Unit): Self = StObject.set(x, "toggleEnabled", js.Any.fromFunction0(value))
-      
-      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
-    }
+    type PopperConfigFunction = js.Function1[/* defaultBsPopperConfig */ Options, PartialOptionsModifiers]
+    
+    type SetContentFunction = js.Function0[String | Element | (js.Function0[String | Element | Null]) | Null]
+    
+    type jQueryInterface = js.Function1[
+        /* config */ js.UndefOr[
+          PartialOptionsBoundary | show | hide | toggle | enable | disable | toggleEnabled | update | setContent | dispose
+        ], 
+        JQuery
+      ]
   }
 }

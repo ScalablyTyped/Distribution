@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientIam.anon
 
-import typings.maximMazurokGapiClientIam.gapi.client.iam.EnableServiceAccountRequest
+import typings.maximMazurokGapiClientIam.gapi.client.iam.QueryGrantableRolesRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,12 +26,6 @@ trait FieldsKey extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * The resource name of the service account in the following format: `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`. Using `-` as a wildcard for the `PROJECT_ID` will infer the
-    * project from the account. The `ACCOUNT` value can be the `email` address or the `unique_id` of the service account.
-    */
-  var name: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -42,7 +36,7 @@ trait FieldsKey extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: EnableServiceAccountRequest
+  var resource: QueryGrantableRolesRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +46,8 @@ trait FieldsKey extends StObject {
 }
 object FieldsKey {
   
-  inline def apply(name: String, resource: EnableServiceAccountRequest): FieldsKey = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(resource: QueryGrantableRolesRequest): FieldsKey = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsKey]
   }
   
@@ -83,8 +77,6 @@ object FieldsKey {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -97,7 +89,7 @@ object FieldsKey {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: EnableServiceAccountRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: QueryGrantableRolesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

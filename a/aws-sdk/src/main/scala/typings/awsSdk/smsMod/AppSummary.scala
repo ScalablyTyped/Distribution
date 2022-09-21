@@ -14,7 +14,7 @@ trait AppSummary extends StObject {
   /**
     * The creation time of the application.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the application.
@@ -29,12 +29,12 @@ trait AppSummary extends StObject {
   /**
     * The last modified time of the application.
     */
-  var lastModified: js.UndefOr[Timestamp] = js.undefined
+  var lastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The timestamp of the application's most recent successful replication.
     */
-  var latestReplicationTime: js.UndefOr[Timestamp] = js.undefined
+  var latestReplicationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Status of the launch configuration.
@@ -77,7 +77,7 @@ trait AppSummary extends StObject {
   var replicationStatusMessage: js.UndefOr[AppReplicationStatusMessage] = js.undefined
   
   /**
-    * The name of the service role in the customer's account used by AWS SMS.
+    * The name of the service role in the customer's account used by Server Migration Service.
     */
   var roleName: js.UndefOr[RoleName] = js.undefined
   
@@ -114,7 +114,7 @@ object AppSummary {
     
     inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
@@ -126,11 +126,11 @@ object AppSummary {
     
     inline def setImportedAppIdUndefined: Self = StObject.set(x, "importedAppId", js.undefined)
     
-    inline def setLastModified(value: Timestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
-    inline def setLatestReplicationTime(value: Timestamp): Self = StObject.set(x, "latestReplicationTime", value.asInstanceOf[js.Any])
+    inline def setLatestReplicationTime(value: js.Date): Self = StObject.set(x, "latestReplicationTime", value.asInstanceOf[js.Any])
     
     inline def setLatestReplicationTimeUndefined: Self = StObject.set(x, "latestReplicationTime", js.undefined)
     

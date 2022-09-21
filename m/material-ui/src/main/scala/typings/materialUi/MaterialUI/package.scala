@@ -1,40 +1,61 @@
 package typings.materialUi.MaterialUI
 
+import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AppBar = typings.react.mod.Component[typings.materialUi.MaterialUI.AppBarProps, js.Object, js.Any]
+type AppBar = Component[AppBarProps, js.Object, Any]
 
-type AppCanvas = typings.react.mod.Component[typings.materialUi.MaterialUI.AppCanvasProps, js.Object, js.Any]
+type AppCanvas = Component[AppCanvasProps, js.Object, Any]
 
-type AutoComplete = typings.react.mod.Component[typings.materialUi.MaterialUI.AutoCompleteProps[js.Any], js.Object, js.Any]
+type AutoComplete = Component[AutoCompleteProps[Any], js.Object, Any]
 
-type Avatar = typings.react.mod.Component[typings.materialUi.MaterialUI.AvatarProps, js.Object, js.Any]
+type Avatar = Component[AvatarProps, js.Object, Any]
 
-type Badge = typings.react.mod.Component[typings.materialUi.MaterialUI.BadgeProps, js.Object, js.Any]
+type Badge = Component[BadgeProps, js.Object, Any]
 
-type BeforeAfterWrapper = typings.react.mod.Component[typings.materialUi.MaterialUI.BeforeAfterWrapperProps, js.Object, js.Any]
+type BeforeAfterWrapper = Component[BeforeAfterWrapperProps, js.Object, Any]
 
-type Chip = typings.react.mod.Component[typings.materialUi.MaterialUI.ChipProps, js.Object, js.Any]
+type Chip = Component[ChipProps, js.Object, Any]
 
-type CircularProgress = typings.react.mod.Component[typings.materialUi.MaterialUI.CircularProgressProps, js.Object, js.Any]
+type CircularProgress = Component[CircularProgressProps, js.Object, Any]
 
-type Divider = typings.react.mod.Component[typings.materialUi.MaterialUI.DividerProps, js.Object, js.Any]
+type Dialog = Component[DialogProps, js.Object, Any]
 
-type Drawer = typings.react.mod.Component[typings.materialUi.MaterialUI.DrawerProps, js.Object, js.Any]
+type Divider = Component[DividerProps, js.Object, Any]
 
-type LinearProgress = typings.react.mod.Component[typings.materialUi.MaterialUI.LinearProgressProps, js.Object, js.Any]
+type Drawer = Component[DrawerProps, js.Object, Any]
 
-type RefreshIndicator = typings.react.mod.Component[typings.materialUi.MaterialUI.RefreshIndicatorProps, js.Object, js.Any]
+type EnhancedButton = Component[EnhancedButtonProps, js.Object, Any]
 
-type SelectField = typings.react.mod.Component[typings.materialUi.MaterialUI.SelectFieldProps, js.Object, js.Any]
+type FlatButton = Component[FlatButtonProps, js.Object, Any]
 
-type Slider = typings.react.mod.Component[typings.materialUi.MaterialUI.SliderProps, js.Object, js.Any]
+type FloatingActionButton = Component[FloatingActionButtonProps, js.Object, Any]
 
-type Snackbar = typings.react.mod.Component[typings.materialUi.MaterialUI.SnackbarProps, js.Object, js.Any]
+type FontIcon = Component[FontIconProps, js.Object, Any]
 
-type Subheader = typings.react.mod.Component[typings.materialUi.MaterialUI.SubheaderProps, js.Object, js.Any]
+type IconButton = Component[IconButtonProps, js.Object, Any]
 
-type ThemeWrapper = typings.react.mod.Component[typings.materialUi.MaterialUI.ThemeWrapperProps, js.Object, js.Any]
+type LinearProgress = Component[LinearProgressProps, js.Object, Any]
+
+type Overlay = Component[OverlayProps, js.Object, Any]
+
+type Paper = Component[PaperProps, js.Object, Any]
+
+type RaisedButton = Component[RaisedButtonProps, js.Object, Any]
+
+type RefreshIndicator = Component[RefreshIndicatorProps, js.Object, Any]
+
+type SelectField = Component[SelectFieldProps, js.Object, Any]
+
+type Slider = Component[SliderProps, js.Object, Any]
+
+type Snackbar = Component[SnackbarProps, js.Object, Any]
+
+type Subheader = Component[SubheaderProps, js.Object, Any]
+
+type SvgIcon = Component[SvgIconProps, js.Object, Any]
+
+type ThemeWrapper = Component[ThemeWrapperProps, js.Object, Any]

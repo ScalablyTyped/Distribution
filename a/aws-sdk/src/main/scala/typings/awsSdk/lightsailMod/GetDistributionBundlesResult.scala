@@ -24,6 +24,6 @@ object GetDistributionBundlesResult {
     
     inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    inline def setBundlesVarargs(value: DistributionBundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: DistributionBundle*): Self = StObject.set(x, "bundles", js.Array(value*))
   }
 }

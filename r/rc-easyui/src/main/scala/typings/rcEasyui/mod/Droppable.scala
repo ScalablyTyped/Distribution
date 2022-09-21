@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("rc-easyui", "Droppable")
 @js.native
-class Droppable protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(args: js.Any*) = this()
+open class Droppable protected ()
+  extends Component[Any, js.Object, Any] {
+  def this(args: Any*) = this()
   
   @JSName("componentDidMount")
   def componentDidMount_MDroppable(): Unit = js.native
@@ -26,7 +26,7 @@ object Droppable {
     
     object locale {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Droppable.contextTypes.locale")
       @js.native
@@ -35,12 +35,12 @@ object Droppable {
       // Circular reference from rc_easyui.Droppable.contextTypes.locale
       @JSImport("rc-easyui", "Droppable.contextTypes.locale.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object t {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Droppable.contextTypes.t")
       @js.native
@@ -49,7 +49,7 @@ object Droppable {
       // Circular reference from rc_easyui.Droppable.contextTypes.t
       @JSImport("rc-easyui", "Droppable.contextTypes.t.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
   }
   
@@ -63,20 +63,20 @@ object Droppable {
     @js.native
     val disabled: Boolean = js.native
     
-    inline def onDragEnter(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragEnter")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onDragEnter(e: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragEnter")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def onDragLeave(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragLeave")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onDragLeave(e: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragLeave")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def onDragOver(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragOver")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onDragOver(e: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDragOver")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def onDrop(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDrop")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onDrop(e: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDrop")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object propTypes {
     
     object disabled {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Droppable.propTypes.disabled")
       @js.native
@@ -85,12 +85,12 @@ object Droppable {
       // Circular reference from rc_easyui.Droppable.propTypes.disabled
       @JSImport("rc-easyui", "Droppable.propTypes.disabled.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
     
     object scope {
       
-      inline def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(e: Any, t: Any, n: Any, r: Any, i: Any, a: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("rc-easyui", "Droppable.propTypes.scope")
       @js.native
@@ -99,7 +99,7 @@ object Droppable {
       // Circular reference from rc_easyui.Droppable.propTypes.scope
       @JSImport("rc-easyui", "Droppable.propTypes.scope.isRequired")
       @js.native
-      val isRequired: js.Any = js.native
+      val isRequired: Any = js.native
     }
   }
 }

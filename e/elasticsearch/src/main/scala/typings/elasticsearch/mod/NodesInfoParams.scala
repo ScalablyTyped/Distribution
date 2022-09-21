@@ -39,11 +39,11 @@ object NodesInfoParams {
     
     inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
+    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value*))
     
     inline def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value*))
     
     inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

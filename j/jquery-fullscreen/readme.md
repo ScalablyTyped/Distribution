@@ -10,10 +10,10 @@ jQuery fullscreen plugin for all browsers
 | ------------------ | :-------------: |
 | Full name          | jquery-fullscreen |
 | Keywords           | jquery-plugin, ecosystem:jquery |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 594 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 73.33333333333333 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/blid/jquery-fullscreen#readme)

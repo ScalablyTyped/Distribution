@@ -36,7 +36,7 @@ object XUpdateBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addUpdateListener: XUpdateListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeUpdateListener: XUpdateListener => Unit
   ): XUpdateBroadcaster = {

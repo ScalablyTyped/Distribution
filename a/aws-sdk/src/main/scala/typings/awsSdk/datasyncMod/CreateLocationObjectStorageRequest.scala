@@ -7,47 +7,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLocationObjectStorageRequest extends StObject {
   
   /**
-    * Optional. The access key is used if credentials are required to access the self-managed object storage server. If your object storage requires a user name and password to authenticate, use AccessKey and SecretKey to provide the user name and password, respectively.
+    * Specifies the access key (for example, a user name) if credentials are required to authenticate with the object storage server.
     */
   var AccessKey: js.UndefOr[ObjectStorageAccessKey] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the agents associated with the self-managed object storage server location.
+    * Specifies the Amazon Resource Names (ARNs) of the DataSync agents that can securely connect with your location.
     */
   var AgentArns: AgentArnList
   
   /**
-    * The bucket on the self-managed object storage server that is used to read data from.
+    * Specifies the name of the object storage bucket involved in the transfer.
     */
   var BucketName: ObjectStorageBucketName
   
   /**
-    * Optional. The secret key is used if credentials are required to access the self-managed object storage server. If your object storage requires a user name and password to authenticate, use AccessKey and SecretKey to provide the user name and password, respectively.
+    * Specifies the secret key (for example, a password) if credentials are required to authenticate with the object storage server.
     */
   var SecretKey: js.UndefOr[ObjectStorageSecretKey] = js.undefined
   
   /**
-    * The name of the self-managed object storage server. This value is the IP address or Domain Name Service (DNS) name of the object storage server. An agent uses this host name to mount the object storage server in a network. 
+    * Specifies the domain name or IP address of the object storage server. A DataSync agent uses this hostname to mount the object storage server in a network.
     */
   var ServerHostname: typings.awsSdk.datasyncMod.ServerHostname
   
   /**
-    * The port that your self-managed object storage server accepts inbound network traffic on. The server port is set by default to TCP 80 (HTTP) or TCP 443 (HTTPS). You can specify a custom port if your self-managed object storage server requires one.
+    * Specifies the port that your object storage server accepts inbound network traffic on (for example, port 443).
     */
   var ServerPort: js.UndefOr[ObjectStorageServerPort] = js.undefined
   
   /**
-    * The protocol that the object storage server uses to communicate. Valid values are HTTP or HTTPS.
+    * Specifies the protocol that your object storage server uses to communicate.
     */
   var ServerProtocol: js.UndefOr[ObjectStorageServerProtocol] = js.undefined
   
   /**
-    * The subdirectory in the self-managed object storage server that is used to read data from.
+    * Specifies the object prefix for your object storage server. If this is a source location, DataSync only copies objects with this prefix. If this is a destination location, DataSync writes all objects with this prefix. 
     */
   var Subdirectory: js.UndefOr[S3Subdirectory] = js.undefined
   
   /**
-    * The key-value pair that represents the tag that you want to add to the location. The value can be an empty string. We recommend using tags to name your resources.
+    * Specifies the key-value pair that represents a tag that you want to add to the resource. Tags can help you manage, filter, and search for your resources. We recommend creating a name tag for your location.
     */
   var Tags: js.UndefOr[InputTagList] = js.undefined
 }
@@ -66,7 +66,7 @@ object CreateLocationObjectStorageRequest {
     
     inline def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
-    inline def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
+    inline def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value*))
     
     inline def setBucketName(value: ObjectStorageBucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
@@ -92,6 +92,6 @@ object CreateLocationObjectStorageRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

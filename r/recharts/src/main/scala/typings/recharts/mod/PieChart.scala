@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "PieChart")
 @js.native
-class PieChart protected ()
-  extends Component[PieChartProps, js.Object, js.Any] {
+open class PieChart protected ()
+  extends Component[PieChartProps, js.Object, Any] {
   def this(props: PieChartProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: PieChartProps, context: js.Any) = this()
+  def this(props: PieChartProps, context: Any) = this()
 }

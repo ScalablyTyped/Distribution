@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.Equation")
 @js.native
-class Equation protected ()
+open class Equation protected ()
   extends StObject
      with typings.cannon.CANNON.Equation {
   def this(bi: typings.cannon.CANNON.Body, bj: typings.cannon.CANNON.Body) = this()

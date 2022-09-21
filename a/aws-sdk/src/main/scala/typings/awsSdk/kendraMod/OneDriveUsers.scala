@@ -29,7 +29,7 @@ object OneDriveUsers {
     
     inline def setOneDriveUserListUndefined: Self = StObject.set(x, "OneDriveUserList", js.undefined)
     
-    inline def setOneDriveUserListVarargs(value: OneDriveUser*): Self = StObject.set(x, "OneDriveUserList", js.Array(value :_*))
+    inline def setOneDriveUserListVarargs(value: OneDriveUser*): Self = StObject.set(x, "OneDriveUserList", js.Array(value*))
     
     inline def setOneDriveUserS3Path(value: S3Path): Self = StObject.set(x, "OneDriveUserS3Path", value.asInstanceOf[js.Any])
     

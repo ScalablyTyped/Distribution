@@ -2,7 +2,6 @@ package typings.awsSdkClientKmsNode
 
 import typings.awsSdkClientKmsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object typesScheduleKeyDeletionOutputMod {
     /**
       * <p>The date and time after which AWS KMS deletes the customer master key (CMK).</p>
       */
-    var DeletionDate: js.UndefOr[Date] = js.undefined
+    var DeletionDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The unique identifier of the customer master key (CMK) for which deletion is scheduled.</p>
@@ -40,7 +39,7 @@ object typesScheduleKeyDeletionOutputMod {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      inline def setDeletionDate(value: Date): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
+      inline def setDeletionDate(value: js.Date): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
       
       inline def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
       

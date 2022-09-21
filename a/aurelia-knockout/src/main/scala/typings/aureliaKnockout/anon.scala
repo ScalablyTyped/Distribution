@@ -10,13 +10,13 @@ object anon {
     
     var container: typings.aureliaDependencyInjection.mod.Container
     
-    def globalResources(resources: String*): js.Any
+    def globalResources(resources: String*): Any
   }
   object Container {
     
     inline def apply(
       container: typings.aureliaDependencyInjection.mod.Container,
-      globalResources: /* repeated */ String => js.Any
+      globalResources: /* repeated */ String => Any
     ): Container = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], globalResources = js.Any.fromFunction1(globalResources))
       __obj.asInstanceOf[Container]
@@ -26,7 +26,7 @@ object anon {
       
       inline def setContainer(value: typings.aureliaDependencyInjection.mod.Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      inline def setGlobalResources(value: /* repeated */ String => js.Any): Self = StObject.set(x, "globalResources", js.Any.fromFunction1(value))
+      inline def setGlobalResources(value: /* repeated */ String => Any): Self = StObject.set(x, "globalResources", js.Any.fromFunction1(value))
     }
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionValueDefMixins[V /* <: Value[ExprRef | SignalRef] */] extends StObject {
   
   /**
-    * One or more value definition(s) with [a selection or a test predicate](https://vega.github.io/vega-lite/docs/condition.html).
+    * One or more value definition(s) with [a parameter or a test predicate](https://vega.github.io/vega-lite/docs/condition.html).
     *
     * __Note:__ A field definition's `condition` property can only contain [conditional value definitions](https://vega.github.io/vega-lite/docs/condition.html#value)
     * since Vega-Lite only allows at most one encoded field per encoding channel.
@@ -29,6 +29,6 @@ object ConditionValueDefMixins {
     
     inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    inline def setConditionVarargs(value: Conditional[ValueDef[V]]*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: Conditional[ValueDef[V]]*): Self = StObject.set(x, "condition", js.Array(value*))
   }
 }

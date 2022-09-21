@@ -1,7 +1,6 @@
 package typings.reactNativeBcrypt
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,12 +22,12 @@ object mod extends Shortcut {
       * @param progressCallback Callback successively called with the percentage of rounds completed
       *  (0.0 - 1.0), maximally once per `MAX_EXECUTION_TIME = 100` ms.
       */
-    def compare(s: String, hash: String, callback: js.Function2[/* error */ Error, /* boolean */ Boolean, js.Any]): Unit = js.native
+    def compare(s: String, hash: String, callback: js.Function2[/* error */ js.Error, /* boolean */ Boolean, Any]): Unit = js.native
     def compare(
       s: String,
       hash: String,
-      callback: js.Function2[/* error */ Error, /* boolean */ Boolean, js.Any],
-      progressCallback: js.Function1[/* number */ Double, js.Any]
+      callback: js.Function2[/* error */ js.Error, /* boolean */ Boolean, Any],
+      progressCallback: js.Function1[/* number */ Double, Any]
     ): Unit = js.native
     
     /**
@@ -60,70 +59,70 @@ object mod extends Shortcut {
       * @param callback Callback receiving the error, if any, and the resulting salt
       */
     def genSalt(): Unit = js.native
-    def genSalt(rounds: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]): Unit = js.native
+    def genSalt(rounds: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]): Unit = js.native
     def genSalt(
-      rounds: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any],
-      seed_length: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      rounds: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any],
+      seed_length: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(
-      rounds: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any],
-      seed_length: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any],
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      rounds: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any],
+      seed_length: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any],
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(
-      rounds: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any],
+      rounds: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any],
       seed_length: Double
     ): Unit = js.native
     def genSalt(
-      rounds: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any],
+      rounds: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any],
       seed_length: Double,
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(
-      rounds: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any],
+      rounds: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any],
       seed_length: Unit,
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(rounds: Double): Unit = js.native
     def genSalt(
       rounds: Double,
-      seed_length: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      seed_length: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(
       rounds: Double,
-      seed_length: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any],
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      seed_length: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any],
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(rounds: Double, seed_length: Double): Unit = js.native
     def genSalt(
       rounds: Double,
       seed_length: Double,
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(
       rounds: Double,
       seed_length: Unit,
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(
       rounds: Unit,
-      seed_length: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      seed_length: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(
       rounds: Unit,
-      seed_length: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any],
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      seed_length: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any],
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(rounds: Unit, seed_length: Double): Unit = js.native
     def genSalt(
       rounds: Unit,
       seed_length: Double,
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def genSalt(
       rounds: Unit,
       seed_length: Unit,
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     
     /**
@@ -155,12 +154,12 @@ object mod extends Shortcut {
     def hash(
       s: String,
       salt: String,
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def hash(
       s: String,
       salt: String,
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any],
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any],
       progressCallback: js.Function1[/* number */ Double, Unit]
     ): Unit = js.native
     /**
@@ -174,12 +173,12 @@ object mod extends Shortcut {
     def hash(
       s: String,
       salt: Double,
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any]
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any]
     ): Unit = js.native
     def hash(
       s: String,
       salt: Double,
-      callback: js.Function2[/* error */ Error, /* string */ js.UndefOr[String], js.Any],
+      callback: js.Function2[/* error */ js.Error, /* string */ js.UndefOr[String], Any],
       progressCallback: js.Function1[/* number */ Double, Unit]
     ): Unit = js.native
     
@@ -199,7 +198,7 @@ object mod extends Shortcut {
       *  is seeded properly!
       * @param random Function taking the number of bytes to generate as its
       *  sole argument, returning the corresponding array of cryptographically secure random byte values.
-      * @see http://nodejs.org/api/crypto.html
+      * @see https://nodejs.org/api/crypto.html
       * @see http://www.w3.org/TR/WebCryptoAPI/
       */
     def setRandomFallback(): Unit = js.native

@@ -10,15 +10,12 @@ Map a function over some Object's values to produce a new Object.
 | ------------------ | :-------------: |
 | Full name          | object-map |
 | Keywords           | object, map, functional |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 9656 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1018.6666666666666 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/xixixao/object-map)
-- [Bugs](https://github.com/xixixao/object-map/issues)
-- [Repository](https://github.com/xixixao/object-map)
 - [Npm](https://www.npmjs.com/package/object-map)
     
 

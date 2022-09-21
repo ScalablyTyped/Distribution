@@ -26,7 +26,7 @@ object DescribeMetricFiltersResponse {
     
     inline def setMetricFiltersUndefined: Self = StObject.set(x, "metricFilters", js.undefined)
     
-    inline def setMetricFiltersVarargs(value: MetricFilter*): Self = StObject.set(x, "metricFilters", js.Array(value :_*))
+    inline def setMetricFiltersVarargs(value: MetricFilter*): Self = StObject.set(x, "metricFilters", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

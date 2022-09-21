@@ -14,12 +14,10 @@ object swatchesMod {
   
   @JSImport("react-color/lib/components/swatches/Swatches", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SwatchesPickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SwatchesPickerProps, js.Object, Any]
   
-  @js.native
-  trait SwatchesPicker
-    extends Component[SwatchesPickerProps, js.Object, js.Any]
+  type SwatchesPicker = Component[SwatchesPickerProps, js.Object, Any]
   
   trait SwatchesPickerProps
     extends StObject
@@ -49,7 +47,7 @@ object swatchesMod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: js.Array[String]*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: js.Array[String]*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

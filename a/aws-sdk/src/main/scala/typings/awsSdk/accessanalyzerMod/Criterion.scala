@@ -40,13 +40,13 @@ object Criterion {
     
     inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    inline def setContainsVarargs(value: String*): Self = StObject.set(x, "contains", js.Array(value :_*))
+    inline def setContainsVarargs(value: String*): Self = StObject.set(x, "contains", js.Array(value*))
     
     inline def setEq_(value: ValueList): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
     inline def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
     
-    inline def setEq_Varargs(value: String*): Self = StObject.set(x, "eq", js.Array(value :_*))
+    inline def setEq_Varargs(value: String*): Self = StObject.set(x, "eq", js.Array(value*))
     
     inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
     
@@ -56,6 +56,6 @@ object Criterion {
     
     inline def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
     
-    inline def setNeqVarargs(value: String*): Self = StObject.set(x, "neq", js.Array(value :_*))
+    inline def setNeqVarargs(value: String*): Self = StObject.set(x, "neq", js.Array(value*))
   }
 }

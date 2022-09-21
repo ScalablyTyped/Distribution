@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("db-errors", "CheckViolationError")
   @js.native
-  class CheckViolationError () extends DBError {
+  open class CheckViolationError () extends DBError {
     
     var constraint: String = js.native
     
@@ -22,30 +22,32 @@ object mod {
   
   @JSImport("db-errors", "ConstraintViolationError")
   @js.native
-  class ConstraintViolationError () extends DBError
+  open class ConstraintViolationError () extends DBError
   
   @JSImport("db-errors", "DBError")
   @js.native
-  class DBError ()
+  open class DBError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
-    var nativeError: Error = js.native
+    var nativeError: js.Error = js.native
   }
   
   @JSImport("db-errors", "DataError")
   @js.native
-  class DataError () extends DBError
+  open class DataError () extends DBError
   
   @JSImport("db-errors", "ForeignKeyViolationError")
   @js.native
-  class ForeignKeyViolationError () extends ConstraintViolationError {
+  open class ForeignKeyViolationError () extends ConstraintViolationError {
     
     var constraint: String = js.native
     
@@ -56,7 +58,7 @@ object mod {
   
   @JSImport("db-errors", "NotNullViolationError")
   @js.native
-  class NotNullViolationError () extends ConstraintViolationError {
+  open class NotNullViolationError () extends ConstraintViolationError {
     
     var column: String = js.native
     
@@ -69,7 +71,7 @@ object mod {
   
   @JSImport("db-errors", "UniqueViolationError")
   @js.native
-  class UniqueViolationError () extends ConstraintViolationError {
+  open class UniqueViolationError () extends ConstraintViolationError {
     
     var columns: js.Array[String] = js.native
     
@@ -80,5 +82,5 @@ object mod {
     var table: String = js.native
   }
   
-  inline def wrapError(err: Error): DBError = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(err.asInstanceOf[js.Any]).asInstanceOf[DBError]
+  inline def wrapError(err: js.Error): DBError = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(err.asInstanceOf[js.Any]).asInstanceOf[DBError]
 }

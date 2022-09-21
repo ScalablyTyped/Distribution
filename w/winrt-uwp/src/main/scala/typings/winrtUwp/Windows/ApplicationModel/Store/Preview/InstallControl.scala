@@ -171,11 +171,11 @@ object InstallControl {
   @js.native
   trait AppInstallItem extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_completed(`type`: completed, listener: TypedEventHandler[AppInstallItem, js.Any]): Unit = js.native
+    def addEventListener_completed(`type`: completed, listener: TypedEventHandler[AppInstallItem, Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[AppInstallItem, js.Any]): Unit = js.native
+    def addEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[AppInstallItem, Any]): Unit = js.native
     
     /** Cancels the installation of the current app. */
     def cancel(): Unit = js.native
@@ -198,16 +198,16 @@ object InstallControl {
     var isUserInitiated: Boolean = js.native
     
     /** Occurs when the installation of the current app has finished. */
-    def oncompleted(ev: js.Any & WinRTEvent[AppInstallItem]): Unit = js.native
+    def oncompleted(ev: Any & WinRTEvent[AppInstallItem]): Unit = js.native
     /** Occurs when the installation of the current app has finished. */
     @JSName("oncompleted")
-    var oncompleted_Original: TypedEventHandler[AppInstallItem, js.Any] = js.native
+    var oncompleted_Original: TypedEventHandler[AppInstallItem, Any] = js.native
     
     /** Occurs when the installation status of the current app has changed. */
-    def onstatuschanged(ev: js.Any & WinRTEvent[AppInstallItem]): Unit = js.native
+    def onstatuschanged(ev: Any & WinRTEvent[AppInstallItem]): Unit = js.native
     /** Occurs when the installation status of the current app has changed. */
     @JSName("onstatuschanged")
-    var onstatuschanged_Original: TypedEventHandler[AppInstallItem, js.Any] = js.native
+    var onstatuschanged_Original: TypedEventHandler[AppInstallItem, Any] = js.native
     
     /** Gets the package family name for the current app. */
     var packageFamilyName: String = js.native
@@ -223,11 +223,11 @@ object InstallControl {
     /** Gets the product ID for the current app. */
     var productId: String = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_completed(`type`: completed, listener: TypedEventHandler[AppInstallItem, js.Any]): Unit = js.native
+    def removeEventListener_completed(`type`: completed, listener: TypedEventHandler[AppInstallItem, Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[AppInstallItem, js.Any]): Unit = js.native
+    def removeEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[AppInstallItem, Any]): Unit = js.native
     
     /** Restarts the installation of the current app. */
     def restart(): Unit = js.native
@@ -245,7 +245,7 @@ object InstallControl {
     /** Gets or sets the user identity associated with the app installs. */
     var acquisitionIdentity: String = js.native
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_itemcompleted(
       `type`: itemcompleted,
@@ -331,7 +331,7 @@ object InstallControl {
       */
     def pause(productId: String, correlationVector: String): Unit = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_itemcompleted(
       `type`: itemcompleted,
@@ -359,13 +359,13 @@ object InstallControl {
       * Searches for all available updates to apps installed on the current computer or device.
       * @return An asynchronous operation that, on successful completion, returns the collection of apps that have available updates. If you use Asynchronous programming, the result type is a read-only list/vector of AppInstallItem items. (You can use APIs of IVectorView<AppInstallItem> for C++ or JavaScript, APIs of IReadOnlyList<AppInstallItem> for .NET.)
       */
-    def searchForAllUpdatesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def searchForAllUpdatesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     /**
       * Searches for all available updates to apps installed on the current computer or device, with the option to generate telemetry data.
       * @param correlationVector A correlation vector string that can be used to generate telemetry data.
       * @return An asynchronous operation that, on successful completion, returns the collection of apps that have available updates. If you use Asynchronous programming, the result type is a read-only list/vector of AppInstallItem items. (You can use APIs of IVectorView<AppInstallItem> for C++ or JavaScript, APIs of IReadOnlyList<AppInstallItem> for .NET.)
       */
-    def searchForAllUpdatesAsync(correlationVector: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    def searchForAllUpdatesAsync(correlationVector: String): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Searches for updates for the specified app.

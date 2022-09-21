@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssignedPlan extends StObject {
   
   /**
-    * The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date
-    * and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would
-    * look like this: '2014-01-01T00:00:00Z'
+    * The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO
+    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     */
   var assignedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // For example, 'Enabled'.
+  /**
+    * Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut. See a
+    * detailed description of each value.
+    */
   var capabilityStatus: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The name of the service; for example, 'Exchange'.
+  // The name of the service; for example, exchange.
   var service: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // A GUID that identifies the service plan.
+  /**
+    * A GUID that identifies the service plan. For a complete list of GUIDs and their equivalent friendly service names, see
+    * Product names and service plan identifiers for licensing.
+    */
   var servicePlanId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AssignedPlan {

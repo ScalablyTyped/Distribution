@@ -35,7 +35,7 @@ object FrameMetric {
     
     inline def setThreadStates(value: ThreadStates): Self = StObject.set(x, "threadStates", value.asInstanceOf[js.Any])
     
-    inline def setThreadStatesVarargs(value: String*): Self = StObject.set(x, "threadStates", js.Array(value :_*))
+    inline def setThreadStatesVarargs(value: String*): Self = StObject.set(x, "threadStates", js.Array(value*))
     
     inline def setType(value: MetricType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

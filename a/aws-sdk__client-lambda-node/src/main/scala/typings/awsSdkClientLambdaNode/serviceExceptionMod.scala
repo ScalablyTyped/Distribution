@@ -8,5 +8,5 @@ object serviceExceptionMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/ServiceException", "ServiceException")
   @js.native
-  val ServiceException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ServiceException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

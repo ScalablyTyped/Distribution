@@ -11,21 +11,21 @@ object remoteBuilderMod {
   
   @JSImport("app-builder-lib/out/remoteBuilder/RemoteBuilder", "RemoteBuilder")
   @js.native
-  class RemoteBuilder protected () extends StObject {
-    def this(packager: PlatformPackager[js.Any]) = this()
+  open class RemoteBuilder protected () extends StObject {
+    def this(packager: PlatformPackager[Any]) = this()
     
-    /* private */ var _build: js.Any = js.native
+    /* private */ var _build: Any = js.native
     
-    /* private */ var artifactInfoToArtifactCreatedEvent: js.Any = js.native
+    /* private */ var artifactInfoToArtifactCreatedEvent: Any = js.native
     
-    def build(): js.Promise[js.Any] = js.native
+    def build(): js.Promise[Any] = js.native
     
-    /* private */ var buildStarted: js.Any = js.native
+    /* private */ var buildStarted: Any = js.native
     
-    val packager: PlatformPackager[js.Any] = js.native
+    val packager: PlatformPackager[Any] = js.native
     
     def scheduleBuild(target: Target, arch: Arch, unpackedDirectory: String): Unit = js.native
     
-    /* private */ val toBuild: js.Any = js.native
+    /* private */ val toBuild: Any = js.native
   }
 }

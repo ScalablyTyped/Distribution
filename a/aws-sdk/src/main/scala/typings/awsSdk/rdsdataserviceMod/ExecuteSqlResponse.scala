@@ -24,6 +24,6 @@ object ExecuteSqlResponse {
     
     inline def setSqlStatementResultsUndefined: Self = StObject.set(x, "sqlStatementResults", js.undefined)
     
-    inline def setSqlStatementResultsVarargs(value: SqlStatementResult*): Self = StObject.set(x, "sqlStatementResults", js.Array(value :_*))
+    inline def setSqlStatementResultsVarargs(value: SqlStatementResult*): Self = StObject.set(x, "sqlStatementResults", js.Array(value*))
   }
 }

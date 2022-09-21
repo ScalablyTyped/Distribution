@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "Glob")
 @js.native
-class Glob protected ()
+open class Glob protected ()
   extends typings.uirouterCore.mod.Glob {
   def this(text: String) = this()
 }

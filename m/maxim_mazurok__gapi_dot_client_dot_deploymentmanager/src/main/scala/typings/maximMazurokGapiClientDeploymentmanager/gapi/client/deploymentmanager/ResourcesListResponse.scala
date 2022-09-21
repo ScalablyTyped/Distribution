@@ -29,6 +29,6 @@ object ResourcesListResponse {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

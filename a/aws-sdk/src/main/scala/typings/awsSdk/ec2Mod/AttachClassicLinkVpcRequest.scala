@@ -41,7 +41,7 @@ object AttachClassicLinkVpcRequest {
     
     inline def setGroups(value: GroupIdStringList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ trait ShellOptions extends StObject {
   var env: js.UndefOr[ProcessEnv] = js.undefined
   
   /** Set either to `true` to use defaults, a number to specify a specific screen number, or an object containing x11 settings. */
-  var x11: js.UndefOr[Boolean | Double | X11Options] = js.undefined
+  var x11: js.UndefOr[X11Options | Double | Boolean] = js.undefined
 }
 object ShellOptions {
   
@@ -26,7 +26,7 @@ object ShellOptions {
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setX11(value: Boolean | Double | X11Options): Self = StObject.set(x, "x11", value.asInstanceOf[js.Any])
+    inline def setX11(value: X11Options | Double | Boolean): Self = StObject.set(x, "x11", value.asInstanceOf[js.Any])
     
     inline def setX11Undefined: Self = StObject.set(x, "x11", js.undefined)
   }

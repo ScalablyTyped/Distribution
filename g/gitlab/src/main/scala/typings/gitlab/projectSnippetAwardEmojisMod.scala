@@ -10,7 +10,7 @@ object projectSnippetAwardEmojisMod {
   
   @JSImport("gitlab/dist/types/core/services/ProjectSnippetAwardEmojis", "ProjectSnippetAwardEmojis")
   @js.native
-  class ProjectSnippetAwardEmojis protected () extends ResourceAwardEmojis {
+  open class ProjectSnippetAwardEmojis protected () extends ResourceAwardEmojis {
     def this(options: BaseServiceOptions) = this()
   }
 }

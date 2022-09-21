@@ -15,7 +15,7 @@ trait PosInventoryResponse extends StObject {
   /** Required. A unique identifier for the item. */
   var itemId: js.UndefOr[String] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#posInventoryResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#posInventoryResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Required. The current price of the item. */
@@ -24,7 +24,7 @@ trait PosInventoryResponse extends StObject {
   /** Required. The available quantity of the item. */
   var quantity: js.UndefOr[String] = js.undefined
   
-  /** Required. The identifier of the merchant's store. Either a `storeCode` inserted via the API or the code of the store in Google My Business. */
+  /** Required. The identifier of the merchant's store. Either a `storeCode` inserted through the API or the code of the store in a Business Profile. */
   var storeCode: js.UndefOr[String] = js.undefined
   
   /** Required. The CLDR territory code for the item. */

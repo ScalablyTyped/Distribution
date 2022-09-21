@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains the collection of worksheet-level custom property.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 trait WorksheetCustomPropertyCollectionLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait WorksheetCustomPropertyCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Gets the key of the custom property. Custom property keys are case-insensitive. The key is limited to 255 characters (larger values will cause an `InvalidArgument` error to be thrown.)
     *
-    * For EACH ITEM in the collection: Gets the key of the custom property. Custom property keys are case-insensitive. The key is limited to 255 characters (larger values will cause an "InvalidArgument" error to be thrown.)
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var key: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets or sets the value of the custom property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var value: js.UndefOr[Boolean] = js.undefined

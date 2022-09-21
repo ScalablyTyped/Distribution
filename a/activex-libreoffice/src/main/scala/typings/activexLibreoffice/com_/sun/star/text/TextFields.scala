@@ -23,7 +23,7 @@ object TextFields {
     createEnumeration: () => XEnumeration,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit,
     removeRefreshListener: XRefreshListener => Unit

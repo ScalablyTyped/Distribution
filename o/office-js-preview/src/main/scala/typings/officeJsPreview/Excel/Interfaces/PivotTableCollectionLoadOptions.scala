@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
   *
+  * @remarks
   * [Api set: ExcelApi 1.3]
   */
 trait PivotTableCollectionLoadOptions extends StObject {
@@ -19,66 +19,65 @@ trait PivotTableCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var enableDataValueEditing: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: ID of the PivotTable.
     *
-    * For EACH ITEM in the collection: Id of the PivotTable.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The PivotLayout describing the layout and visual structure of the PivotTable.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var layout: js.UndefOr[PivotLayoutLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Name of the PivotTable.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in the UI.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApi 1.13]
     */
   var refreshOnOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the PivotTable uses custom lists when sorting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var useCustomSortLists: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The worksheet containing the current PivotTable.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined

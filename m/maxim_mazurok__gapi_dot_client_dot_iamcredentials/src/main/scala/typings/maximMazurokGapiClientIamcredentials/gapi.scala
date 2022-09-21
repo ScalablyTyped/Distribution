@@ -19,10 +19,11 @@ object gapi {
       trait GenerateAccessTokenRequest extends StObject {
         
         /**
-          * The sequence of service accounts in a delegation chain. Each service account must be granted the `roles/iam.serviceAccountTokenCreator` role on its next service account in the
-          * chain. The last service account in the chain must be granted the `roles/iam.serviceAccountTokenCreator` role on the service account that is specified in the `name` field of the
-          * request. The delegates must have the following format: `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard character is required; replacing it with a project
-          * ID is invalid.
+          * The sequence of service accounts in a delegation chain. This field is required for [delegated requests](https://cloud.google.com/iam/help/credentials/delegated-request). For [direct
+          * requests](https://cloud.google.com/iam/help/credentials/direct-request), which are more common, do not specify this field. Each service account must be granted the
+          * `roles/iam.serviceAccountTokenCreator` role on its next service account in the chain. The last service account in the chain must be granted the
+          * `roles/iam.serviceAccountTokenCreator` role on the service account that is specified in the `name` field of the request. The delegates must have the following format:
+          * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard character is required; replacing it with a project ID is invalid.
           */
         var delegates: js.UndefOr[js.Array[String]] = js.undefined
         
@@ -52,7 +53,7 @@ object gapi {
           
           inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
           
-          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value*))
           
           inline def setLifetime(value: String): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
           
@@ -62,7 +63,7 @@ object gapi {
           
           inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
           
-          inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+          inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
         }
       }
       
@@ -126,7 +127,7 @@ object gapi {
           
           inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
           
-          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value*))
           
           inline def setIncludeEmail(value: Boolean): Self = StObject.set(x, "includeEmail", value.asInstanceOf[js.Any])
           
@@ -217,7 +218,7 @@ object gapi {
           
           inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
           
-          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value*))
           
           inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
           
@@ -289,7 +290,7 @@ object gapi {
           
           inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
           
-          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value*))
           
           inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
           

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor
   * @param opt_options {(H.map.ArrowStyle | H.map.ArrowStyle.Options)=}
   */
-class ArrowStyle ()
+open class ArrowStyle ()
   extends StObject
      with typings.heremaps.H.map.ArrowStyle {
   def this(opt_options: typings.heremaps.H.map.ArrowStyle) = this()

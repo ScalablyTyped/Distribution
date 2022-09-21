@@ -8,5 +8,5 @@ object listBranchesOutputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/ListBranchesOutput", "ListBranchesOutput")
   @js.native
-  val ListBranchesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListBranchesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

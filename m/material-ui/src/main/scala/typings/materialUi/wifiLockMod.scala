@@ -10,10 +10,10 @@ object wifiLockMod {
   
   @JSImport("material-ui/svg-icons/device/wifi-lock", JSImport.Default)
   @js.native
-  class default () extends DeviceWifiLock
+  open class default () extends DeviceWifiLock
   
   @JSImport("material-ui/svg-icons/device/wifi-lock", "DeviceWifiLock")
   @js.native
-  class DeviceWifiLock ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceWifiLock ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

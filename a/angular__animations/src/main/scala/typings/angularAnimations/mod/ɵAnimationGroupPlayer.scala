@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/animations", "\u0275AnimationGroupPlayer")
 @js.native
-class ɵAnimationGroupPlayer protected ()
+open class ɵAnimationGroupPlayer protected ()
   extends StObject
      with AnimationPlayer {
   def this(_players: js.Array[AnimationPlayer]) = this()
   
-  /* private */ var _destroyed: js.Any = js.native
+  /* private */ var _destroyed: Any = js.native
   
-  /* private */ var _finished: js.Any = js.native
+  /* private */ var _finished: Any = js.native
   
-  /* private */ var _onDestroy: js.Any = js.native
+  /* private */ var _onDestroy: Any = js.native
   
-  /* private */ var _onDestroyFns: js.Any = js.native
+  /* private */ var _onDestroyFns: Any = js.native
   
-  /* private */ var _onDoneFns: js.Any = js.native
+  /* private */ var _onDoneFns: Any = js.native
   
-  /* private */ var _onFinish: js.Any = js.native
+  /* private */ var _onFinish: Any = js.native
   
-  /* private */ var _onStart: js.Any = js.native
+  /* private */ var _onStart: Any = js.native
   
-  /* private */ var _onStartFns: js.Any = js.native
+  /* private */ var _onStartFns: Any = js.native
   
-  /* private */ var _started: js.Any = js.native
+  /* private */ var _started: Any = js.native
   
   @JSName("beforeDestroy")
   def beforeDestroy_MɵAnimationGroupPlayer(): Unit = js.native
@@ -127,7 +127,7 @@ class ɵAnimationGroupPlayer protected ()
     * @param position A 0-based offset into the duration, in milliseconds.
     */
   /* CompleteClass */
-  override def setPosition(position: js.Any): Unit = js.native
+  override def setPosition(position: Any): Unit = js.native
   def setPosition(p: Double): Unit = js.native
   
   /**

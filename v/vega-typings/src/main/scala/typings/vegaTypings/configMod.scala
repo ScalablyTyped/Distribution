@@ -67,325 +67,295 @@ object configMod {
   trait AxisConfig extends StObject {
     
     var aria: js.UndefOr[
-        (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ] = js.undefined
     
     var bandPosition: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var description: js.UndefOr[
-        (Exclude[js.UndefOr[String], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[String]]
+        (Exclude[js.UndefOr[String], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[String]]
       ] = js.undefined
     
     var domain: js.UndefOr[
-        (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ] = js.undefined
     
     var domainCap: js.UndefOr[
-        (Exclude[
-          js.UndefOr[StrokeCapValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[StrokeCapValue]]
+        (Exclude[js.UndefOr[StrokeCapValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StrokeCapValue]]
       ] = js.undefined
     
     var domainColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var domainDash: js.UndefOr[
-        (Exclude[
-          js.UndefOr[DashArrayValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[DashArrayValue]]
+        (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ] = js.undefined
     
     var domainDashOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var domainOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var domainWidth: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var grid: js.UndefOr[
-        (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ] = js.undefined
     
     var gridCap: js.UndefOr[
-        (Exclude[
-          js.UndefOr[StrokeCapValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[StrokeCapValue]]
+        (Exclude[js.UndefOr[StrokeCapValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StrokeCapValue]]
       ] = js.undefined
     
     var gridColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var gridDash: js.UndefOr[
-        (Exclude[
-          js.UndefOr[DashArrayValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[DashArrayValue]]
+        (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ] = js.undefined
     
     var gridDashOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var gridOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var gridWidth: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelAlign: js.UndefOr[
-        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ] = js.undefined
     
     var labelAngle: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelBaseline: js.UndefOr[
         (Exclude[
           js.UndefOr[TextBaselineValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ] = js.undefined
     
     var labelBound: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | Boolean | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | Boolean | SignalRef]])
       ] = js.undefined
     
     var labelColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var labelFlush: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | Boolean | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | Boolean | SignalRef]])
       ] = js.undefined
     
     var labelFlushOffset: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var labelFont: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ] = js.undefined
     
     var labelFontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelFontStyle: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontStyleValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ] = js.undefined
     
     var labelFontWeight: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontWeightValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ] = js.undefined
     
     var labelLimit: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelLineHeight: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelOverlap: js.UndefOr[
         (Exclude[
           js.UndefOr[LabelOverlap | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[LabelOverlap | SignalRef]])
       ] = js.undefined
     
     var labelPadding: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelSeparation: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var labels: js.UndefOr[
-        (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ] = js.undefined
     
     var maxExtent: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var minExtent: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var tickBand: js.UndefOr[
         (Exclude[
           js.UndefOr[center | extent | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[center | extent | SignalRef]])
       ] = js.undefined
     
     var tickCap: js.UndefOr[
-        (Exclude[
-          js.UndefOr[StrokeCapValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[StrokeCapValue]]
+        (Exclude[js.UndefOr[StrokeCapValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StrokeCapValue]]
       ] = js.undefined
     
     var tickColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var tickDash: js.UndefOr[
-        (Exclude[
-          js.UndefOr[DashArrayValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[DashArrayValue]]
+        (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ] = js.undefined
     
     var tickDashOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var tickExtra: js.UndefOr[
-        (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
+        (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
       ] = js.undefined
     
     var tickOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var tickOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var tickRound: js.UndefOr[
-        (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
+        (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
       ] = js.undefined
     
     var tickSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var tickWidth: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var ticks: js.UndefOr[
-        (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
+        (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
       ] = js.undefined
     
     var titleAlign: js.UndefOr[
-        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ] = js.undefined
     
     var titleAnchor: js.UndefOr[
-        (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
+        (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
       ] = js.undefined
     
     var titleAngle: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titleBaseline: js.UndefOr[
         (Exclude[
           js.UndefOr[TextBaselineValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ] = js.undefined
     
     var titleColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var titleFont: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ] = js.undefined
     
     var titleFontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titleFontStyle: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontStyleValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ] = js.undefined
     
     var titleFontWeight: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontWeightValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ] = js.undefined
     
     var titleLimit: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titleLineHeight: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titleOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titlePadding: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titleX: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titleY: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var translate: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var zindex: js.UndefOr[
-        (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
+        (Exclude[js.UndefOr[Double], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
       ] = js.undefined
   }
   object AxisConfig {
@@ -398,38 +368,35 @@ object configMod {
     extension [Self <: AxisConfig](x: Self) {
       
       inline def setAria(
-        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
       inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
       
       inline def setBandPosition(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
       
       inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
       
       inline def setDescription(
-        value: (Exclude[js.UndefOr[String], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[String]]
+        value: (Exclude[js.UndefOr[String], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[String]]
       ): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
       inline def setDomain(
-        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
       inline def setDomainCap(
-        value: (Exclude[
-              js.UndefOr[StrokeCapValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[StrokeCapValue]]
+        value: (Exclude[js.UndefOr[StrokeCapValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StrokeCapValue]]
       ): Self = StObject.set(x, "domainCap", value.asInstanceOf[js.Any])
       
       inline def setDomainCapUndefined: Self = StObject.set(x, "domainCap", js.undefined)
       
       inline def setDomainColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "domainColor", value.asInstanceOf[js.Any])
       
       inline def setDomainColorNull: Self = StObject.set(x, "domainColor", null)
@@ -437,24 +404,21 @@ object configMod {
       inline def setDomainColorUndefined: Self = StObject.set(x, "domainColor", js.undefined)
       
       inline def setDomainDash(
-        value: (Exclude[
-              js.UndefOr[DashArrayValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[DashArrayValue]]
+        value: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ): Self = StObject.set(x, "domainDash", value.asInstanceOf[js.Any])
       
       inline def setDomainDashOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "domainDashOffset", value.asInstanceOf[js.Any])
       
       inline def setDomainDashOffsetUndefined: Self = StObject.set(x, "domainDashOffset", js.undefined)
       
       inline def setDomainDashUndefined: Self = StObject.set(x, "domainDash", js.undefined)
       
-      inline def setDomainDashVarargs(value: Double*): Self = StObject.set(x, "domainDash", js.Array(value :_*))
+      inline def setDomainDashVarargs(value: Double*): Self = StObject.set(x, "domainDash", js.Array(value*))
       
       inline def setDomainOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "domainOpacity", value.asInstanceOf[js.Any])
       
       inline def setDomainOpacityUndefined: Self = StObject.set(x, "domainOpacity", js.undefined)
@@ -462,26 +426,23 @@ object configMod {
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
       inline def setDomainWidth(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "domainWidth", value.asInstanceOf[js.Any])
       
       inline def setDomainWidthUndefined: Self = StObject.set(x, "domainWidth", js.undefined)
       
       inline def setGrid(
-        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
       inline def setGridCap(
-        value: (Exclude[
-              js.UndefOr[StrokeCapValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[StrokeCapValue]]
+        value: (Exclude[js.UndefOr[StrokeCapValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StrokeCapValue]]
       ): Self = StObject.set(x, "gridCap", value.asInstanceOf[js.Any])
       
       inline def setGridCapUndefined: Self = StObject.set(x, "gridCap", js.undefined)
       
       inline def setGridColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
       
       inline def setGridColorNull: Self = StObject.set(x, "gridColor", null)
@@ -489,24 +450,21 @@ object configMod {
       inline def setGridColorUndefined: Self = StObject.set(x, "gridColor", js.undefined)
       
       inline def setGridDash(
-        value: (Exclude[
-              js.UndefOr[DashArrayValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[DashArrayValue]]
+        value: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ): Self = StObject.set(x, "gridDash", value.asInstanceOf[js.Any])
       
       inline def setGridDashOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "gridDashOffset", value.asInstanceOf[js.Any])
       
       inline def setGridDashOffsetUndefined: Self = StObject.set(x, "gridDashOffset", js.undefined)
       
       inline def setGridDashUndefined: Self = StObject.set(x, "gridDash", js.undefined)
       
-      inline def setGridDashVarargs(value: Double*): Self = StObject.set(x, "gridDash", js.Array(value :_*))
+      inline def setGridDashVarargs(value: Double*): Self = StObject.set(x, "gridDash", js.Array(value*))
       
       inline def setGridOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "gridOpacity", value.asInstanceOf[js.Any])
       
       inline def setGridOpacityUndefined: Self = StObject.set(x, "gridOpacity", js.undefined)
@@ -514,19 +472,19 @@ object configMod {
       inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
       inline def setGridWidth(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "gridWidth", value.asInstanceOf[js.Any])
       
       inline def setGridWidthUndefined: Self = StObject.set(x, "gridWidth", js.undefined)
       
       inline def setLabelAlign(
-        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
       
       inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
       
       inline def setLabelAngle(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelAngle", value.asInstanceOf[js.Any])
       
       inline def setLabelAngleUndefined: Self = StObject.set(x, "labelAngle", js.undefined)
@@ -534,7 +492,7 @@ object configMod {
       inline def setLabelBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
       
@@ -543,14 +501,14 @@ object configMod {
       inline def setLabelBound(
         value: (Exclude[
               js.UndefOr[Double | Boolean | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | Boolean | SignalRef]])
       ): Self = StObject.set(x, "labelBound", value.asInstanceOf[js.Any])
       
       inline def setLabelBoundUndefined: Self = StObject.set(x, "labelBound", js.undefined)
       
       inline def setLabelColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
       
       inline def setLabelColorNull: Self = StObject.set(x, "labelColor", null)
@@ -560,14 +518,14 @@ object configMod {
       inline def setLabelFlush(
         value: (Exclude[
               js.UndefOr[Double | Boolean | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | Boolean | SignalRef]])
       ): Self = StObject.set(x, "labelFlush", value.asInstanceOf[js.Any])
       
       inline def setLabelFlushOffset(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "labelFlushOffset", value.asInstanceOf[js.Any])
       
@@ -576,20 +534,17 @@ object configMod {
       inline def setLabelFlushUndefined: Self = StObject.set(x, "labelFlush", js.undefined)
       
       inline def setLabelFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
       
       inline def setLabelFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
       
       inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
       
       inline def setLabelFontStyle(
-        value: (Exclude[
-              js.UndefOr[FontStyleValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
       
       inline def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
@@ -597,34 +552,31 @@ object configMod {
       inline def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
       
       inline def setLabelFontWeight(
-        value: (Exclude[
-              js.UndefOr[FontWeightValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
       
       inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
       
       inline def setLabelLimit(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelLimit", value.asInstanceOf[js.Any])
       
       inline def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
       
       inline def setLabelLineHeight(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelLineHeight", value.asInstanceOf[js.Any])
       
       inline def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
       
       inline def setLabelOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
       
       inline def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
       
       inline def setLabelOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelOpacity", value.asInstanceOf[js.Any])
       
       inline def setLabelOpacityUndefined: Self = StObject.set(x, "labelOpacity", js.undefined)
@@ -632,14 +584,14 @@ object configMod {
       inline def setLabelOverlap(
         value: (Exclude[
               js.UndefOr[LabelOverlap | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[LabelOverlap | SignalRef]])
       ): Self = StObject.set(x, "labelOverlap", value.asInstanceOf[js.Any])
       
       inline def setLabelOverlapUndefined: Self = StObject.set(x, "labelOverlap", js.undefined)
       
       inline def setLabelPadding(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
       
       inline def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
@@ -647,26 +599,26 @@ object configMod {
       inline def setLabelSeparation(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "labelSeparation", value.asInstanceOf[js.Any])
       
       inline def setLabelSeparationUndefined: Self = StObject.set(x, "labelSeparation", js.undefined)
       
       inline def setLabels(
-        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
       inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
       inline def setMaxExtent(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "maxExtent", value.asInstanceOf[js.Any])
       
       inline def setMaxExtentUndefined: Self = StObject.set(x, "maxExtent", js.undefined)
       
       inline def setMinExtent(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "minExtent", value.asInstanceOf[js.Any])
       
       inline def setMinExtentUndefined: Self = StObject.set(x, "minExtent", js.undefined)
@@ -674,23 +626,20 @@ object configMod {
       inline def setTickBand(
         value: (Exclude[
               js.UndefOr[center | extent | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[center | extent | SignalRef]])
       ): Self = StObject.set(x, "tickBand", value.asInstanceOf[js.Any])
       
       inline def setTickBandUndefined: Self = StObject.set(x, "tickBand", js.undefined)
       
       inline def setTickCap(
-        value: (Exclude[
-              js.UndefOr[StrokeCapValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[StrokeCapValue]]
+        value: (Exclude[js.UndefOr[StrokeCapValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StrokeCapValue]]
       ): Self = StObject.set(x, "tickCap", value.asInstanceOf[js.Any])
       
       inline def setTickCapUndefined: Self = StObject.set(x, "tickCap", js.undefined)
       
       inline def setTickColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
       
       inline def setTickColorNull: Self = StObject.set(x, "tickColor", null)
@@ -698,72 +647,69 @@ object configMod {
       inline def setTickColorUndefined: Self = StObject.set(x, "tickColor", js.undefined)
       
       inline def setTickDash(
-        value: (Exclude[
-              js.UndefOr[DashArrayValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[DashArrayValue]]
+        value: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ): Self = StObject.set(x, "tickDash", value.asInstanceOf[js.Any])
       
       inline def setTickDashOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "tickDashOffset", value.asInstanceOf[js.Any])
       
       inline def setTickDashOffsetUndefined: Self = StObject.set(x, "tickDashOffset", js.undefined)
       
       inline def setTickDashUndefined: Self = StObject.set(x, "tickDash", js.undefined)
       
-      inline def setTickDashVarargs(value: Double*): Self = StObject.set(x, "tickDash", js.Array(value :_*))
+      inline def setTickDashVarargs(value: Double*): Self = StObject.set(x, "tickDash", js.Array(value*))
       
       inline def setTickExtra(
-        value: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
+        value: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
       ): Self = StObject.set(x, "tickExtra", value.asInstanceOf[js.Any])
       
       inline def setTickExtraUndefined: Self = StObject.set(x, "tickExtra", js.undefined)
       
       inline def setTickOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "tickOffset", value.asInstanceOf[js.Any])
       
       inline def setTickOffsetUndefined: Self = StObject.set(x, "tickOffset", js.undefined)
       
       inline def setTickOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "tickOpacity", value.asInstanceOf[js.Any])
       
       inline def setTickOpacityUndefined: Self = StObject.set(x, "tickOpacity", js.undefined)
       
       inline def setTickRound(
-        value: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
+        value: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
       ): Self = StObject.set(x, "tickRound", value.asInstanceOf[js.Any])
       
       inline def setTickRoundUndefined: Self = StObject.set(x, "tickRound", js.undefined)
       
       inline def setTickSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
       
       inline def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
       
       inline def setTickWidth(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "tickWidth", value.asInstanceOf[js.Any])
       
       inline def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
       
       inline def setTicks(
-        value: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
+        value: (Exclude[js.UndefOr[BooleanValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[BooleanValue]]
       ): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
       
       inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
       
       inline def setTitleAlign(
-        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
       
       inline def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
       
       inline def setTitleAnchor(
-        value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
+        value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
       ): Self = StObject.set(x, "titleAnchor", value.asInstanceOf[js.Any])
       
       inline def setTitleAnchorNull: Self = StObject.set(x, "titleAnchor", null)
@@ -771,7 +717,7 @@ object configMod {
       inline def setTitleAnchorUndefined: Self = StObject.set(x, "titleAnchor", js.undefined)
       
       inline def setTitleAngle(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleAngle", value.asInstanceOf[js.Any])
       
       inline def setTitleAngleUndefined: Self = StObject.set(x, "titleAngle", js.undefined)
@@ -779,14 +725,14 @@ object configMod {
       inline def setTitleBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ): Self = StObject.set(x, "titleBaseline", value.asInstanceOf[js.Any])
       
       inline def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
       
       inline def setTitleColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
       
       inline def setTitleColorNull: Self = StObject.set(x, "titleColor", null)
@@ -794,20 +740,17 @@ object configMod {
       inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
       
       inline def setTitleFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
       
       inline def setTitleFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
       
       inline def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
       
       inline def setTitleFontStyle(
-        value: (Exclude[
-              js.UndefOr[FontStyleValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
       
       inline def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
@@ -815,58 +758,55 @@ object configMod {
       inline def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
       
       inline def setTitleFontWeight(
-        value: (Exclude[
-              js.UndefOr[FontWeightValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "titleFontWeight", value.asInstanceOf[js.Any])
       
       inline def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
       
       inline def setTitleLimit(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleLimit", value.asInstanceOf[js.Any])
       
       inline def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
       
       inline def setTitleLineHeight(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleLineHeight", value.asInstanceOf[js.Any])
       
       inline def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
       
       inline def setTitleOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleOpacity", value.asInstanceOf[js.Any])
       
       inline def setTitleOpacityUndefined: Self = StObject.set(x, "titleOpacity", js.undefined)
       
       inline def setTitlePadding(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
       
       inline def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
       
       inline def setTitleX(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleX", value.asInstanceOf[js.Any])
       
       inline def setTitleXUndefined: Self = StObject.set(x, "titleX", js.undefined)
       
       inline def setTitleY(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleY", value.asInstanceOf[js.Any])
       
       inline def setTitleYUndefined: Self = StObject.set(x, "titleY", js.undefined)
       
       inline def setTranslate(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
       inline def setZindex(
-        value: (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
+        value: (Exclude[js.UndefOr[Double], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
       ): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
       inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
@@ -1003,7 +943,7 @@ object configMod {
     // TODO
     var events: js.UndefOr[Bind] = js.undefined
     
-    var group: js.UndefOr[js.Any] = js.undefined
+    var group: js.UndefOr[Any] = js.undefined
     
     var image: js.UndefOr[MarkConfig] = js.undefined
     
@@ -1109,7 +1049,7 @@ object configMod {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
@@ -1169,7 +1109,7 @@ object configMod {
       
       inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
       
-      inline def setSignalsVarargs(value: (InitSignal | NewSignal)*): Self = StObject.set(x, "signals", js.Array(value :_*))
+      inline def setSignalsVarargs(value: (InitSignal | NewSignal)*): Self = StObject.set(x, "signals", js.Array(value*))
       
       inline def setStyle(value: StringDictionary[MarkConfig]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -1325,7 +1265,7 @@ object configMod {
   
   type ExcludeMappedValueRef[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: std.Exclude<T[P], vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/config.KeepSignal<T[P]>}
-    */ typings.vegaTypings.vegaTypingsStrings.ExcludeMappedValueRef & TopLevel[js.Any]
+    */ typings.vegaTypings.vegaTypingsStrings.ExcludeMappedValueRef & TopLevel[Any]
   
   type KeepSignal[T] = SignalRef
   
@@ -1333,40 +1273,40 @@ object configMod {
   trait LegendConfig extends StObject {
     
     var aria: js.UndefOr[
-        (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ] = js.undefined
     
     var clipHeight: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var columnPadding: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var columns: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var cornerRadius: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var description: js.UndefOr[
-        (Exclude[js.UndefOr[String], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[String]]
+        (Exclude[js.UndefOr[String], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[String]]
       ] = js.undefined
     
     var fillColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     /**
@@ -1391,100 +1331,94 @@ object configMod {
     var gradientLength: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var gradientOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var gradientStrokeColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var gradientStrokeWidth: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var gradientThickness: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var gridAlign: js.UndefOr[
         (Exclude[
           js.UndefOr[LayoutAlign | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[LayoutAlign | SignalRef]])
       ] = js.undefined
     
     var labelAlign: js.UndefOr[
-        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ] = js.undefined
     
     var labelBaseline: js.UndefOr[
         (Exclude[
           js.UndefOr[TextBaselineValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ] = js.undefined
     
     var labelColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var labelFont: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ] = js.undefined
     
     var labelFontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelFontStyle: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontStyleValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ] = js.undefined
     
     var labelFontWeight: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontWeightValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ] = js.undefined
     
     var labelLimit: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelOverlap: js.UndefOr[
         (Exclude[
           js.UndefOr[LabelOverlap | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[LabelOverlap | SignalRef]])
       ] = js.undefined
     
     var labelPadding: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var labelSeparation: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
@@ -1494,37 +1428,37 @@ object configMod {
     var layout: js.UndefOr[LegendLayout] = js.undefined
     
     var legendX: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var legendY: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var offset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var orient: js.UndefOr[
         (Exclude[
           js.UndefOr[LegendOrient | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[LegendOrient | SignalRef]])
       ] = js.undefined
     
     var padding: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var rowPadding: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var strokeColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     /**
@@ -1552,14 +1486,11 @@ object configMod {
     var symbolBaseStrokeColor: js.UndefOr[Null | Color | SignalRef] = js.undefined
     
     var symbolDash: js.UndefOr[
-        (Exclude[
-          js.UndefOr[DashArrayValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[DashArrayValue]]
+        (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ] = js.undefined
     
     var symbolDashOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     /**
@@ -1570,107 +1501,101 @@ object configMod {
     var symbolDirection: js.UndefOr[Orientation] = js.undefined
     
     var symbolFillColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var symbolLimit: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var symbolOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var symbolOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var symbolSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var symbolStrokeColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var symbolStrokeWidth: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var symbolType: js.UndefOr[
         (Exclude[
           js.UndefOr[SymbolShapeValue | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[SymbolShapeValue | SignalRef]])
       ] = js.undefined
     
     var tickCount: js.UndefOr[
-        (Exclude[js.UndefOr[TickCount], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TickCount]]
+        (Exclude[js.UndefOr[TickCount], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TickCount]]
       ] = js.undefined
     
     var titleAlign: js.UndefOr[
-        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ] = js.undefined
     
     var titleAnchor: js.UndefOr[
-        (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
+        (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
       ] = js.undefined
     
     var titleBaseline: js.UndefOr[
         (Exclude[
           js.UndefOr[TextBaselineValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ] = js.undefined
     
     var titleColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var titleFont: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ] = js.undefined
     
     var titleFontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titleFontStyle: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontStyleValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ] = js.undefined
     
     var titleFontWeight: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontWeightValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ] = js.undefined
     
     var titleLimit: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titleLineHeight: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titleOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var titleOrient: js.UndefOr[
-        (Exclude[js.UndefOr[OrientValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[OrientValue]]
+        (Exclude[js.UndefOr[OrientValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[OrientValue]]
       ] = js.undefined
     
     var titlePadding: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var zindex: js.UndefOr[
-        (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
+        (Exclude[js.UndefOr[Double], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
       ] = js.undefined
   }
   object LegendConfig {
@@ -1683,7 +1608,7 @@ object configMod {
     extension [Self <: LegendConfig](x: Self) {
       
       inline def setAria(
-        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
       inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
@@ -1691,7 +1616,7 @@ object configMod {
       inline def setClipHeight(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "clipHeight", value.asInstanceOf[js.Any])
       
@@ -1700,7 +1625,7 @@ object configMod {
       inline def setColumnPadding(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "columnPadding", value.asInstanceOf[js.Any])
       
@@ -1709,26 +1634,26 @@ object configMod {
       inline def setColumns(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
       inline def setCornerRadius(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       
       inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
       
       inline def setDescription(
-        value: (Exclude[js.UndefOr[String], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[String]]
+        value: (Exclude[js.UndefOr[String], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[String]]
       ): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
       inline def setFillColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
       inline def setFillColorNull: Self = StObject.set(x, "fillColor", null)
@@ -1750,20 +1675,20 @@ object configMod {
       inline def setGradientLength(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "gradientLength", value.asInstanceOf[js.Any])
       
       inline def setGradientLengthUndefined: Self = StObject.set(x, "gradientLength", js.undefined)
       
       inline def setGradientOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "gradientOpacity", value.asInstanceOf[js.Any])
       
       inline def setGradientOpacityUndefined: Self = StObject.set(x, "gradientOpacity", js.undefined)
       
       inline def setGradientStrokeColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "gradientStrokeColor", value.asInstanceOf[js.Any])
       
       inline def setGradientStrokeColorNull: Self = StObject.set(x, "gradientStrokeColor", null)
@@ -1771,7 +1696,7 @@ object configMod {
       inline def setGradientStrokeColorUndefined: Self = StObject.set(x, "gradientStrokeColor", js.undefined)
       
       inline def setGradientStrokeWidth(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "gradientStrokeWidth", value.asInstanceOf[js.Any])
       
       inline def setGradientStrokeWidthUndefined: Self = StObject.set(x, "gradientStrokeWidth", js.undefined)
@@ -1779,7 +1704,7 @@ object configMod {
       inline def setGradientThickness(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "gradientThickness", value.asInstanceOf[js.Any])
       
@@ -1788,14 +1713,14 @@ object configMod {
       inline def setGridAlign(
         value: (Exclude[
               js.UndefOr[LayoutAlign | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[LayoutAlign | SignalRef]])
       ): Self = StObject.set(x, "gridAlign", value.asInstanceOf[js.Any])
       
       inline def setGridAlignUndefined: Self = StObject.set(x, "gridAlign", js.undefined)
       
       inline def setLabelAlign(
-        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
       
       inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
@@ -1803,14 +1728,14 @@ object configMod {
       inline def setLabelBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
       
       inline def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
       
       inline def setLabelColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
       
       inline def setLabelColorNull: Self = StObject.set(x, "labelColor", null)
@@ -1818,20 +1743,17 @@ object configMod {
       inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
       
       inline def setLabelFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
       
       inline def setLabelFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
       
       inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
       
       inline def setLabelFontStyle(
-        value: (Exclude[
-              js.UndefOr[FontStyleValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
       
       inline def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
@@ -1839,28 +1761,25 @@ object configMod {
       inline def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
       
       inline def setLabelFontWeight(
-        value: (Exclude[
-              js.UndefOr[FontWeightValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
       
       inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
       
       inline def setLabelLimit(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelLimit", value.asInstanceOf[js.Any])
       
       inline def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
       
       inline def setLabelOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
       
       inline def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
       
       inline def setLabelOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelOpacity", value.asInstanceOf[js.Any])
       
       inline def setLabelOpacityUndefined: Self = StObject.set(x, "labelOpacity", js.undefined)
@@ -1868,14 +1787,14 @@ object configMod {
       inline def setLabelOverlap(
         value: (Exclude[
               js.UndefOr[LabelOverlap | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[LabelOverlap | SignalRef]])
       ): Self = StObject.set(x, "labelOverlap", value.asInstanceOf[js.Any])
       
       inline def setLabelOverlapUndefined: Self = StObject.set(x, "labelOverlap", js.undefined)
       
       inline def setLabelPadding(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
       
       inline def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
@@ -1883,7 +1802,7 @@ object configMod {
       inline def setLabelSeparation(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "labelSeparation", value.asInstanceOf[js.Any])
       
@@ -1894,19 +1813,19 @@ object configMod {
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
       inline def setLegendX(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "legendX", value.asInstanceOf[js.Any])
       
       inline def setLegendXUndefined: Self = StObject.set(x, "legendX", js.undefined)
       
       inline def setLegendY(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "legendY", value.asInstanceOf[js.Any])
       
       inline def setLegendYUndefined: Self = StObject.set(x, "legendY", js.undefined)
       
       inline def setOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
@@ -1914,14 +1833,14 @@ object configMod {
       inline def setOrient(
         value: (Exclude[
               js.UndefOr[LegendOrient | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[LegendOrient | SignalRef]])
       ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
       inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
       inline def setPadding(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
@@ -1929,14 +1848,14 @@ object configMod {
       inline def setRowPadding(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "rowPadding", value.asInstanceOf[js.Any])
       
       inline def setRowPaddingUndefined: Self = StObject.set(x, "rowPadding", js.undefined)
       
       inline def setStrokeColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
       inline def setStrokeColorNull: Self = StObject.set(x, "strokeColor", null)
@@ -1947,7 +1866,7 @@ object configMod {
       
       inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
       
-      inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
+      inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value*))
       
       inline def setStrokeWidth(value: Double | SignalRef): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
@@ -1966,28 +1885,25 @@ object configMod {
       inline def setSymbolBaseStrokeColorUndefined: Self = StObject.set(x, "symbolBaseStrokeColor", js.undefined)
       
       inline def setSymbolDash(
-        value: (Exclude[
-              js.UndefOr[DashArrayValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[DashArrayValue]]
+        value: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[DashArrayValue]]
       ): Self = StObject.set(x, "symbolDash", value.asInstanceOf[js.Any])
       
       inline def setSymbolDashOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolDashOffset", value.asInstanceOf[js.Any])
       
       inline def setSymbolDashOffsetUndefined: Self = StObject.set(x, "symbolDashOffset", js.undefined)
       
       inline def setSymbolDashUndefined: Self = StObject.set(x, "symbolDash", js.undefined)
       
-      inline def setSymbolDashVarargs(value: Double*): Self = StObject.set(x, "symbolDash", js.Array(value :_*))
+      inline def setSymbolDashVarargs(value: Double*): Self = StObject.set(x, "symbolDash", js.Array(value*))
       
       inline def setSymbolDirection(value: Orientation): Self = StObject.set(x, "symbolDirection", value.asInstanceOf[js.Any])
       
       inline def setSymbolDirectionUndefined: Self = StObject.set(x, "symbolDirection", js.undefined)
       
       inline def setSymbolFillColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "symbolFillColor", value.asInstanceOf[js.Any])
       
       inline def setSymbolFillColorNull: Self = StObject.set(x, "symbolFillColor", null)
@@ -1995,31 +1911,31 @@ object configMod {
       inline def setSymbolFillColorUndefined: Self = StObject.set(x, "symbolFillColor", js.undefined)
       
       inline def setSymbolLimit(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolLimit", value.asInstanceOf[js.Any])
       
       inline def setSymbolLimitUndefined: Self = StObject.set(x, "symbolLimit", js.undefined)
       
       inline def setSymbolOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
       
       inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
       
       inline def setSymbolOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolOpacity", value.asInstanceOf[js.Any])
       
       inline def setSymbolOpacityUndefined: Self = StObject.set(x, "symbolOpacity", js.undefined)
       
       inline def setSymbolSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
       
       inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
       inline def setSymbolStrokeColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "symbolStrokeColor", value.asInstanceOf[js.Any])
       
       inline def setSymbolStrokeColorNull: Self = StObject.set(x, "symbolStrokeColor", null)
@@ -2027,7 +1943,7 @@ object configMod {
       inline def setSymbolStrokeColorUndefined: Self = StObject.set(x, "symbolStrokeColor", js.undefined)
       
       inline def setSymbolStrokeWidth(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "symbolStrokeWidth", value.asInstanceOf[js.Any])
       
       inline def setSymbolStrokeWidthUndefined: Self = StObject.set(x, "symbolStrokeWidth", js.undefined)
@@ -2035,26 +1951,26 @@ object configMod {
       inline def setSymbolType(
         value: (Exclude[
               js.UndefOr[SymbolShapeValue | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[SymbolShapeValue | SignalRef]])
       ): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
       
       inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
       
       inline def setTickCount(
-        value: (Exclude[js.UndefOr[TickCount], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TickCount]]
+        value: (Exclude[js.UndefOr[TickCount], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[TickCount]]
       ): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
       
       inline def setTickCountUndefined: Self = StObject.set(x, "tickCount", js.undefined)
       
       inline def setTitleAlign(
-        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
       
       inline def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
       
       inline def setTitleAnchor(
-        value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
+        value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
       ): Self = StObject.set(x, "titleAnchor", value.asInstanceOf[js.Any])
       
       inline def setTitleAnchorNull: Self = StObject.set(x, "titleAnchor", null)
@@ -2064,14 +1980,14 @@ object configMod {
       inline def setTitleBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ): Self = StObject.set(x, "titleBaseline", value.asInstanceOf[js.Any])
       
       inline def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
       
       inline def setTitleColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
       
       inline def setTitleColorNull: Self = StObject.set(x, "titleColor", null)
@@ -2079,20 +1995,17 @@ object configMod {
       inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
       
       inline def setTitleFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
       
       inline def setTitleFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
       
       inline def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
       
       inline def setTitleFontStyle(
-        value: (Exclude[
-              js.UndefOr[FontStyleValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
       
       inline def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
@@ -2100,46 +2013,43 @@ object configMod {
       inline def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
       
       inline def setTitleFontWeight(
-        value: (Exclude[
-              js.UndefOr[FontWeightValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "titleFontWeight", value.asInstanceOf[js.Any])
       
       inline def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
       
       inline def setTitleLimit(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleLimit", value.asInstanceOf[js.Any])
       
       inline def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
       
       inline def setTitleLineHeight(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleLineHeight", value.asInstanceOf[js.Any])
       
       inline def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
       
       inline def setTitleOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titleOpacity", value.asInstanceOf[js.Any])
       
       inline def setTitleOpacityUndefined: Self = StObject.set(x, "titleOpacity", js.undefined)
       
       inline def setTitleOrient(
-        value: (Exclude[js.UndefOr[OrientValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[OrientValue]]
+        value: (Exclude[js.UndefOr[OrientValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[OrientValue]]
       ): Self = StObject.set(x, "titleOrient", value.asInstanceOf[js.Any])
       
       inline def setTitleOrientUndefined: Self = StObject.set(x, "titleOrient", js.undefined)
       
       inline def setTitlePadding(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
       
       inline def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
       
       inline def setZindex(
-        value: (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
+        value: (Exclude[js.UndefOr[Double], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
       ): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
       inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
@@ -2398,8 +2308,8 @@ object configMod {
     /**
       * The inner radius in pixels of arc marks.
       *
-      * @minimum 0
       * __Default value:__ `0`
+      * @minimum 0
       */
     var innerRadius: js.UndefOr[Double | SignalRef] = js.undefined
     
@@ -2456,8 +2366,8 @@ object configMod {
     /**
       * The outer radius in pixels of arc marks.
       *
-      * @minimum 0
       * __Default value:__ `0`
+      * @minimum 0
       */
     var outerRadius: js.UndefOr[Double | SignalRef] = js.undefined
     
@@ -2791,7 +2701,7 @@ object configMod {
       
       inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
       
-      inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
+      inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value*))
       
       inline def setStrokeJoin(value: StrokeJoin | SignalRef): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
       
@@ -2825,7 +2735,7 @@ object configMod {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
       
       inline def setTheta(value: Double | SignalRef): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
       
@@ -2897,126 +2807,126 @@ object configMod {
     var center: js.UndefOr[
         (Exclude[
           js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
       ] = js.undefined
     
     var clipAngle: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var clipExtent: js.UndefOr[
         (Exclude[
           js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]])
       ] = js.undefined
     
     var coefficient: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var distance: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var extent: js.UndefOr[
         (Exclude[
           js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]])
       ] = js.undefined
     
     var fit: js.UndefOr[
         (Exclude[
           js.UndefOr[Fit | js.Array[Fit] | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Fit | js.Array[Fit] | SignalRef]])
       ] = js.undefined
     
     var fraction: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var lobes: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var parallel: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var parallels: js.UndefOr[
         (Exclude[
           js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef]])
       ] = js.undefined
     
     var pointRadius: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var precision: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var radius: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var ratio: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var reflectX: js.UndefOr[
         (Exclude[
           js.UndefOr[Boolean | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Boolean | SignalRef]])
       ] = js.undefined
     
     var reflectY: js.UndefOr[
         (Exclude[
           js.UndefOr[Boolean | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Boolean | SignalRef]])
       ] = js.undefined
     
     var rotate: js.UndefOr[
         (Exclude[
           js.UndefOr[(Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[
           js.UndefOr[(Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef]
         ])
@@ -3025,42 +2935,42 @@ object configMod {
     var scale: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var size: js.UndefOr[
         (Exclude[
           js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
       ] = js.undefined
     
     var spacing: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var tilt: js.UndefOr[
         (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ] = js.undefined
     
     var translate: js.UndefOr[
         (Exclude[
           js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
       ] = js.undefined
     
     var `type`: js.UndefOr[
         (Exclude[
           js.UndefOr[ProjectionType | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[ProjectionType | SignalRef]])
       ] = js.undefined
   }
@@ -3076,7 +2986,7 @@ object configMod {
       inline def setCenter(
         value: (Exclude[
               js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
       ): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -3085,7 +2995,7 @@ object configMod {
       inline def setClipAngle(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "clipAngle", value.asInstanceOf[js.Any])
       
@@ -3094,7 +3004,7 @@ object configMod {
       inline def setClipExtent(
         value: (Exclude[
               js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]])
       ): Self = StObject.set(x, "clipExtent", value.asInstanceOf[js.Any])
       
@@ -3103,7 +3013,7 @@ object configMod {
       inline def setCoefficient(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
       
@@ -3112,7 +3022,7 @@ object configMod {
       inline def setDistance(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -3121,7 +3031,7 @@ object configMod {
       inline def setExtent(
         value: (Exclude[
               js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(Vector2[Vector2[Double | SignalRef]]) | SignalRef]])
       ): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -3130,18 +3040,18 @@ object configMod {
       inline def setFit(
         value: (Exclude[
               js.UndefOr[Fit | js.Array[Fit] | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Fit | js.Array[Fit] | SignalRef]])
       ): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
       
       inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
       
-      inline def setFitVarargs(value: (Fit | GeoJsonFeature)*): Self = StObject.set(x, "fit", js.Array(value :_*))
+      inline def setFitVarargs(value: (Fit | GeoJsonFeature)*): Self = StObject.set(x, "fit", js.Array(value*))
       
       inline def setFraction(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
       
@@ -3150,7 +3060,7 @@ object configMod {
       inline def setLobes(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "lobes", value.asInstanceOf[js.Any])
       
@@ -3159,7 +3069,7 @@ object configMod {
       inline def setParallel(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
@@ -3168,18 +3078,18 @@ object configMod {
       inline def setParallels(
         value: (Exclude[
               js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef]])
       ): Self = StObject.set(x, "parallels", value.asInstanceOf[js.Any])
       
       inline def setParallelsUndefined: Self = StObject.set(x, "parallels", js.undefined)
       
-      inline def setParallelsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "parallels", js.Array(value :_*))
+      inline def setParallelsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "parallels", js.Array(value*))
       
       inline def setPointRadius(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "pointRadius", value.asInstanceOf[js.Any])
       
@@ -3188,7 +3098,7 @@ object configMod {
       inline def setPrecision(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
@@ -3197,7 +3107,7 @@ object configMod {
       inline def setRadius(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -3206,7 +3116,7 @@ object configMod {
       inline def setRatio(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       
@@ -3215,7 +3125,7 @@ object configMod {
       inline def setReflectX(
         value: (Exclude[
               js.UndefOr[Boolean | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Boolean | SignalRef]])
       ): Self = StObject.set(x, "reflectX", value.asInstanceOf[js.Any])
       
@@ -3224,7 +3134,7 @@ object configMod {
       inline def setReflectY(
         value: (Exclude[
               js.UndefOr[Boolean | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Boolean | SignalRef]])
       ): Self = StObject.set(x, "reflectY", value.asInstanceOf[js.Any])
       
@@ -3233,7 +3143,7 @@ object configMod {
       inline def setRotate(
         value: (Exclude[
               js.UndefOr[(Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[
               js.UndefOr[(Vector2[Double | SignalRef]) | (Vector3[Double | SignalRef]) | SignalRef]
             ])
@@ -3244,7 +3154,7 @@ object configMod {
       inline def setScale(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
@@ -3253,7 +3163,7 @@ object configMod {
       inline def setSize(
         value: (Exclude[
               js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
       ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -3262,7 +3172,7 @@ object configMod {
       inline def setSpacing(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
@@ -3271,7 +3181,7 @@ object configMod {
       inline def setTilt(
         value: (Exclude[
               js.UndefOr[Double | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[Double | SignalRef]])
       ): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
       
@@ -3280,7 +3190,7 @@ object configMod {
       inline def setTranslate(
         value: (Exclude[
               js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef]])
       ): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
@@ -3289,7 +3199,7 @@ object configMod {
       inline def setType(
         value: (Exclude[
               js.UndefOr[ProjectionType | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[ProjectionType | SignalRef]])
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -3344,37 +3254,37 @@ object configMod {
       
       inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      inline def setCategoryVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "category", js.Array(value :_*))
+      inline def setCategoryVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "category", js.Array(value*))
       
       inline def setDiverging(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "diverging", value.asInstanceOf[js.Any])
       
       inline def setDivergingUndefined: Self = StObject.set(x, "diverging", js.undefined)
       
-      inline def setDivergingVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "diverging", js.Array(value :_*))
+      inline def setDivergingVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "diverging", js.Array(value*))
       
       inline def setHeatmap(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "heatmap", value.asInstanceOf[js.Any])
       
       inline def setHeatmapUndefined: Self = StObject.set(x, "heatmap", js.undefined)
       
-      inline def setHeatmapVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "heatmap", js.Array(value :_*))
+      inline def setHeatmapVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "heatmap", js.Array(value*))
       
       inline def setOrdinal(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
       
       inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
       
-      inline def setOrdinalVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "ordinal", js.Array(value :_*))
+      inline def setOrdinalVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "ordinal", js.Array(value*))
       
       inline def setRamp(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "ramp", value.asInstanceOf[js.Any])
       
       inline def setRampUndefined: Self = StObject.set(x, "ramp", js.undefined)
       
-      inline def setRampVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "ramp", js.Array(value :_*))
+      inline def setRampVarargs(value: (Boolean | Color | Double | Null | RangeRawArray | SignalRef | String)*): Self = StObject.set(x, "ramp", js.Array(value*))
       
       inline def setSymbol(value: js.Array[SymbolShape]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      inline def setSymbolVarargs(value: SymbolShape*): Self = StObject.set(x, "symbol", js.Array(value :_*))
+      inline def setSymbolVarargs(value: SymbolShape*): Self = StObject.set(x, "symbol", js.Array(value*))
     }
   }
   
@@ -3412,124 +3322,112 @@ object configMod {
   trait TitleConfig extends StObject {
     
     var align: js.UndefOr[
-        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ] = js.undefined
     
     var anchor: js.UndefOr[
-        (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
+        (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
       ] = js.undefined
     
     var angle: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var aria: js.UndefOr[
-        (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ] = js.undefined
     
     var baseline: js.UndefOr[
         (Exclude[
           js.UndefOr[TextBaselineValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ] = js.undefined
     
     var color: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var dx: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var dy: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var font: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ] = js.undefined
     
     var fontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var fontStyle: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontStyleValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ] = js.undefined
     
     var fontWeight: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontWeightValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ] = js.undefined
     
     var frame: js.UndefOr[
         (Exclude[
           js.UndefOr[TitleFrame | StringValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[TitleFrame | StringValue]])
       ] = js.undefined
     
     var limit: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var lineHeight: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var offset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var orient: js.UndefOr[
         (Exclude[
           js.UndefOr[TitleOrient | SignalRef], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | (KeepSignal[js.UndefOr[TitleOrient | SignalRef]])
       ] = js.undefined
     
     var subtitleColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ] = js.undefined
     
     var subtitleFont: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ] = js.undefined
     
     var subtitleFontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var subtitleFontStyle: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontStyleValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ] = js.undefined
     
     var subtitleFontWeight: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontWeightValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ] = js.undefined
     
     var subtitleLineHeight: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var subtitlePadding: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ] = js.undefined
     
     var zindex: js.UndefOr[
-        (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
+        (Exclude[js.UndefOr[Double], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
       ] = js.undefined
   }
   object TitleConfig {
@@ -3542,13 +3440,13 @@ object configMod {
     extension [Self <: TitleConfig](x: Self) {
       
       inline def setAlign(
-        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
+        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]
       ): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
       inline def setAnchor(
-        value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
+        value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AnchorValue]]
       ): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
       inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
@@ -3556,13 +3454,13 @@ object configMod {
       inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
       inline def setAngle(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
       inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
       inline def setAria(
-        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
+        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
       ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
       inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
@@ -3570,14 +3468,14 @@ object configMod {
       inline def setBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | KeepSignal[js.UndefOr[TextBaselineValue]]
       ): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
       inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
       
       inline def setColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorNull: Self = StObject.set(x, "color", null)
@@ -3585,32 +3483,29 @@ object configMod {
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       inline def setDx(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
       inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
       
       inline def setDy(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
       inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
       
       inline def setFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       inline def setFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
       inline def setFontStyle(
-        value: (Exclude[
-              js.UndefOr[FontStyleValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
       inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
@@ -3618,10 +3513,7 @@ object configMod {
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
       inline def setFontWeight(
-        value: (Exclude[
-              js.UndefOr[FontWeightValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
@@ -3629,26 +3521,26 @@ object configMod {
       inline def setFrame(
         value: (Exclude[
               js.UndefOr[TitleFrame | StringValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[TitleFrame | StringValue]])
       ): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
       inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
       inline def setLimit(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
       inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
       inline def setLineHeight(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
       inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
       inline def setOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
@@ -3656,14 +3548,14 @@ object configMod {
       inline def setOrient(
         value: (Exclude[
               js.UndefOr[TitleOrient | SignalRef], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | (KeepSignal[js.UndefOr[TitleOrient | SignalRef]])
       ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
       inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
       inline def setSubtitleColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[ColorValue]]
       ): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
       
       inline def setSubtitleColorNull: Self = StObject.set(x, "subtitleColor", null)
@@ -3671,20 +3563,17 @@ object configMod {
       inline def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
       
       inline def setSubtitleFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[StringValue]]
       ): Self = StObject.set(x, "subtitleFont", value.asInstanceOf[js.Any])
       
       inline def setSubtitleFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "subtitleFontSize", value.asInstanceOf[js.Any])
       
       inline def setSubtitleFontSizeUndefined: Self = StObject.set(x, "subtitleFontSize", js.undefined)
       
       inline def setSubtitleFontStyle(
-        value: (Exclude[
-              js.UndefOr[FontStyleValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontStyleValue]]
+        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontStyleValue]]
       ): Self = StObject.set(x, "subtitleFontStyle", value.asInstanceOf[js.Any])
       
       inline def setSubtitleFontStyleUndefined: Self = StObject.set(x, "subtitleFontStyle", js.undefined)
@@ -3692,28 +3581,25 @@ object configMod {
       inline def setSubtitleFontUndefined: Self = StObject.set(x, "subtitleFont", js.undefined)
       
       inline def setSubtitleFontWeight(
-        value: (Exclude[
-              js.UndefOr[FontWeightValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | KeepSignal[js.UndefOr[FontWeightValue]]
+        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[FontWeightValue]]
       ): Self = StObject.set(x, "subtitleFontWeight", value.asInstanceOf[js.Any])
       
       inline def setSubtitleFontWeightUndefined: Self = StObject.set(x, "subtitleFontWeight", js.undefined)
       
       inline def setSubtitleLineHeight(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "subtitleLineHeight", value.asInstanceOf[js.Any])
       
       inline def setSubtitleLineHeightUndefined: Self = StObject.set(x, "subtitleLineHeight", js.undefined)
       
       inline def setSubtitlePadding(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[NumberValue]]
       ): Self = StObject.set(x, "subtitlePadding", value.asInstanceOf[js.Any])
       
       inline def setSubtitlePaddingUndefined: Self = StObject.set(x, "subtitlePadding", js.undefined)
       
       inline def setZindex(
-        value: (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
+        value: (Exclude[js.UndefOr[Double], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Double]]
       ): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
       inline def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)

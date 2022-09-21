@@ -10,10 +10,10 @@ The lodash method `_.memoize` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.memoize |
 | Keywords           | lodash-modularized, memoize |
-| # releases         | 0 |
-| # dependents       | 359 |
-| # downloads        | 443015795 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.2985220333333336E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

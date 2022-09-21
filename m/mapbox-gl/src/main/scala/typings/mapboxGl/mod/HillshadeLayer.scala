@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HillshadeLayer
   extends StObject
-     with LayerBase
-     with Layer {
+     with Layer
+     with AnyLayer {
   
-  var layout: js.UndefOr[HillshadeLayout] = js.undefined
+  @JSName("layout")
+  var layout_HillshadeLayer: js.UndefOr[HillshadeLayout] = js.undefined
   
-  var paint: js.UndefOr[HillshadePaint] = js.undefined
+  @JSName("paint")
+  var paint_HillshadeLayer: js.UndefOr[HillshadePaint] = js.undefined
   
-  var `type`: hillshade
+  @JSName("type")
+  var type_HillshadeLayer: hillshade
 }
 object HillshadeLayer {
   

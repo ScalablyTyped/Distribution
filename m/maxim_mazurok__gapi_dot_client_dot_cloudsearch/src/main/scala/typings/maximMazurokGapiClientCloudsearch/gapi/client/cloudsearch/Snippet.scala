@@ -25,7 +25,7 @@ object Snippet {
     
     inline def setMatchRangesUndefined: Self = StObject.set(x, "matchRanges", js.undefined)
     
-    inline def setMatchRangesVarargs(value: MatchRange*): Self = StObject.set(x, "matchRanges", js.Array(value :_*))
+    inline def setMatchRangesVarargs(value: MatchRange*): Self = StObject.set(x, "matchRanges", js.Array(value*))
     
     inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     

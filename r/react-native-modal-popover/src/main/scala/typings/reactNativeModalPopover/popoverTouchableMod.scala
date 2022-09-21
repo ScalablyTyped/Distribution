@@ -11,8 +11,7 @@ object popoverTouchableMod {
   
   @JSImport("react-native-modal-popover/lib/PopoverTouchable", "PopoverTouchable")
   @js.native
-  class PopoverTouchable protected ()
-    extends PureComponent[Props, State, js.Any] {
+  open class PopoverTouchable protected () extends PureComponent[Props, State, Any] {
     def this(props: Props) = this()
     
     @JSName("componentDidMount")
@@ -21,17 +20,17 @@ object popoverTouchableMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MPopoverTouchable(): Unit = js.native
     
-    /* private */ var onClosePopover: js.Any = js.native
+    /* private */ var onClosePopover: Any = js.native
     
-    /* private */ var onOrientationChange: js.Any = js.native
+    /* private */ var onOrientationChange: Any = js.native
     
-    /* private */ var onPress: js.Any = js.native
+    /* private */ var onPress: Any = js.native
     
-    /* private */ var onTouchableMeasured: js.Any = js.native
+    /* private */ var onTouchableMeasured: Any = js.native
     
-    /* private */ var setRef: js.Any = js.native
+    /* private */ var setRef: Any = js.native
     
-    /* private */ var touchable: js.Any = js.native
+    /* private */ var touchable: Any = js.native
   }
   /* static members */
   object PopoverTouchable {
@@ -48,7 +47,7 @@ object popoverTouchableMod {
   
   trait Props extends StObject {
     
-    var onPopoverDisplayed: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onPopoverDisplayed: js.UndefOr[js.Function0[Any]] = js.undefined
   }
   object Props {
     
@@ -59,7 +58,7 @@ object popoverTouchableMod {
     
     extension [Self <: Props](x: Self) {
       
-      inline def setOnPopoverDisplayed(value: () => js.Any): Self = StObject.set(x, "onPopoverDisplayed", js.Any.fromFunction0(value))
+      inline def setOnPopoverDisplayed(value: () => Any): Self = StObject.set(x, "onPopoverDisplayed", js.Any.fromFunction0(value))
       
       inline def setOnPopoverDisplayedUndefined: Self = StObject.set(x, "onPopoverDisplayed", js.undefined)
     }

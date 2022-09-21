@@ -67,10 +67,23 @@ trait NavigationBindingsOptions extends StObject {
   var elliott5: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
+    * (Highcharts, Highstock) A ellipse annotation bindings. Includes `start`
+    * and two events in `steps` array. First updates the second point,
+    * responsible for a rx width, and second updates the ry width.
+    */
+  var ellipseAnnotation: js.UndefOr[NavigationBindingsEllipseAnnotationOptions | NavigationBindingsOptionsObject] = js.undefined
+  
+  /**
     * (Highstock) A fibonacci annotation bindings. Includes `start` and two
     * events in `steps` array (updates second point, then height).
     */
   var fibonacci: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
+  /**
+    * (Highstock) The Fibonacci Time Zones annotation bindings. Includes
+    * `start` and one event in `steps` array.
+    */
+  var fibonacciTimeZones: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
@@ -104,7 +117,7 @@ trait NavigationBindingsOptions extends StObject {
     *
     * **Note**: Fullscreen is not supported on iPhone due to iOS limitations.
     */
-  var fullScreen: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  var fullScreen: js.UndefOr[NavigationBindingsFullScreenOptions | NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A horizontal line annotation. Includes `start` event.
@@ -184,7 +197,7 @@ trait NavigationBindingsOptions extends StObject {
     *
     * - flags
     */
-  var saveChart: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  var saveChart: js.UndefOr[NavigationBindingsOptionsObject | NavigationBindingsSaveChartOptions] = js.undefined
   
   /**
     * (Highstock) A segment annotation bindings. Includes `start` and one event
@@ -198,6 +211,21 @@ trait NavigationBindingsOptions extends StObject {
   var seriesTypeCandlestick: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
+    * (Highstock) Change main series to `'hlc'` type.
+    */
+  var seriesTypeHLC: js.UndefOr[NavigationBindingsOptionsObject | NavigationBindingsSeriesTypeHLCOptions] = js.undefined
+  
+  /**
+    * (Highstock) Changes main series to `'heikinashi'` type.
+    */
+  var seriesTypeHeikinAshi: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
+  /**
+    * (Highstock) Changes main series to `'hollowcandlestick'` type.
+    */
+  var seriesTypeHollowCandlestick: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
+  /**
     * (Highstock) Changes main series to `'line'` type.
     */
   var seriesTypeLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
@@ -208,14 +236,22 @@ trait NavigationBindingsOptions extends StObject {
   var seriesTypeOhlc: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
+    * (Highstock) A time cycles annotation bindings. Includes `start` event and
+    * 1 `step` event. first click marks the beginning of the circle, and the
+    * second one sets its diameter.
+    */
+  var timeCycles: js.UndefOr[NavigationBindingsOptionsObject | NavigationBindingsTimeCyclesOptions] = js.undefined
+  
+  /**
     * (Highstock) Hides/shows all annotations on a chart.
     */
   var toggleAnnotations: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A vertical arrow annotation bindings. Includes `start` event.
-    * On click, finds the closest point and marks it with an arrow. Green arrow
-    * when pointing from above, red when pointing from below the point.
+    * On click, finds the closest point and marks it with an arrow. `#06b535`
+    * is the color of the arrow when pointing from above and `#f21313` when
+    * pointing from below the point.
     */
   var verticalArrow: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
@@ -225,13 +261,6 @@ trait NavigationBindingsOptions extends StObject {
     * annotation - incrementing counter on each add.
     */
   var verticalCounter: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
-  
-  /**
-    * (Highstock) A vertical arrow annotation bindings. Includes `start` event.
-    * On click, finds the closest point and marks it with an arrow and a label
-    * with value.
-    */
-  var verticalLabel: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A vertical line annotation. Includes `start` event.
@@ -301,7 +330,15 @@ object NavigationBindingsOptions {
     
     inline def setElliott5Undefined: Self = StObject.set(x, "elliott5", js.undefined)
     
+    inline def setEllipseAnnotation(value: NavigationBindingsEllipseAnnotationOptions | NavigationBindingsOptionsObject): Self = StObject.set(x, "ellipseAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setEllipseAnnotationUndefined: Self = StObject.set(x, "ellipseAnnotation", js.undefined)
+    
     inline def setFibonacci(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZones(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "fibonacciTimeZones", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZonesUndefined: Self = StObject.set(x, "fibonacciTimeZones", js.undefined)
     
     inline def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
     
@@ -321,7 +358,7 @@ object NavigationBindingsOptions {
     
     inline def setFlagSquarepinUndefined: Self = StObject.set(x, "flagSquarepin", js.undefined)
     
-    inline def setFullScreen(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    inline def setFullScreen(value: NavigationBindingsFullScreenOptions | NavigationBindingsOptionsObject): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
     inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     
@@ -369,7 +406,7 @@ object NavigationBindingsOptions {
     
     inline def setRectangleAnnotationUndefined: Self = StObject.set(x, "rectangleAnnotation", js.undefined)
     
-    inline def setSaveChart(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "saveChart", value.asInstanceOf[js.Any])
+    inline def setSaveChart(value: NavigationBindingsOptionsObject | NavigationBindingsSaveChartOptions): Self = StObject.set(x, "saveChart", value.asInstanceOf[js.Any])
     
     inline def setSaveChartUndefined: Self = StObject.set(x, "saveChart", js.undefined)
     
@@ -381,6 +418,18 @@ object NavigationBindingsOptions {
     
     inline def setSeriesTypeCandlestickUndefined: Self = StObject.set(x, "seriesTypeCandlestick", js.undefined)
     
+    inline def setSeriesTypeHLC(value: NavigationBindingsOptionsObject | NavigationBindingsSeriesTypeHLCOptions): Self = StObject.set(x, "seriesTypeHLC", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesTypeHLCUndefined: Self = StObject.set(x, "seriesTypeHLC", js.undefined)
+    
+    inline def setSeriesTypeHeikinAshi(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeHeikinAshi", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesTypeHeikinAshiUndefined: Self = StObject.set(x, "seriesTypeHeikinAshi", js.undefined)
+    
+    inline def setSeriesTypeHollowCandlestick(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeHollowCandlestick", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesTypeHollowCandlestickUndefined: Self = StObject.set(x, "seriesTypeHollowCandlestick", js.undefined)
+    
     inline def setSeriesTypeLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeLine", value.asInstanceOf[js.Any])
     
     inline def setSeriesTypeLineUndefined: Self = StObject.set(x, "seriesTypeLine", js.undefined)
@@ -388,6 +437,10 @@ object NavigationBindingsOptions {
     inline def setSeriesTypeOhlc(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeOhlc", value.asInstanceOf[js.Any])
     
     inline def setSeriesTypeOhlcUndefined: Self = StObject.set(x, "seriesTypeOhlc", js.undefined)
+    
+    inline def setTimeCycles(value: NavigationBindingsOptionsObject | NavigationBindingsTimeCyclesOptions): Self = StObject.set(x, "timeCycles", value.asInstanceOf[js.Any])
+    
+    inline def setTimeCyclesUndefined: Self = StObject.set(x, "timeCycles", js.undefined)
     
     inline def setToggleAnnotations(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "toggleAnnotations", value.asInstanceOf[js.Any])
     
@@ -400,10 +453,6 @@ object NavigationBindingsOptions {
     inline def setVerticalCounter(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalCounter", value.asInstanceOf[js.Any])
     
     inline def setVerticalCounterUndefined: Self = StObject.set(x, "verticalCounter", js.undefined)
-    
-    inline def setVerticalLabel(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalLabel", value.asInstanceOf[js.Any])
-    
-    inline def setVerticalLabelUndefined: Self = StObject.set(x, "verticalLabel", js.undefined)
     
     inline def setVerticalLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
     

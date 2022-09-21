@@ -11,8 +11,6 @@ trait FitBoundsOptions
   var linear: js.UndefOr[Boolean] = js.undefined
   
   var maxZoom: js.UndefOr[Double] = js.undefined
-  
-  var padding: js.UndefOr[Double | PaddingOptions] = js.undefined
 }
 object FitBoundsOptions {
   
@@ -30,9 +28,5 @@ object FitBoundsOptions {
     inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
-    
-    inline def setPadding(value: Double | PaddingOptions): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
-    
-    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

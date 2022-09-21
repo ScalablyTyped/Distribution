@@ -12,8 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof Request` */
 @JSGlobal("tabris.Request")
 @js.native
-class Request protected ()
+open class Request protected ()
   extends typings.tabris.mod.Request {
+  /**
+    * Represents an HTTP Request as used by `fetch()`.
+    */
   def this(input: String) = this()
   def this(input: typings.tabris.Request) = this()
   def this(input: String, init: RequestInit) = this()

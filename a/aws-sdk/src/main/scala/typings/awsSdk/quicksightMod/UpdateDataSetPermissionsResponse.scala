@@ -12,12 +12,12 @@ trait UpdateDataSetPermissionsResponse extends StObject {
   var DataSetArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The ID for the dataset whose permissions you want to update. This ID is unique per AWS Region for each AWS account.
+    * The ID for the dataset whose permissions you want to update. This ID is unique per Amazon Web Services Region for each Amazon Web Services account.
     */
   var DataSetId: js.UndefOr[ResourceId] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   

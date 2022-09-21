@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a string reference of the form "SheetName!A1:B5", or a global or local named range.
   *
-  * Represents a string reference of the form SheetName!A1:B5, or a global or local named range.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 trait RangeReference extends StObject {
   
   /**
+    * The address of the range, for example "SheetName!A1:B5".
     *
-    * The address of the range; for example 'SheetName!A1:B5'.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var address: String

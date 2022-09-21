@@ -9,7 +9,7 @@ trait PutApprovalResultOutput extends StObject {
   /**
     * The timestamp showing when the approval or rejection was submitted.
     */
-  var approvedAt: js.UndefOr[Timestamp] = js.undefined
+  var approvedAt: js.UndefOr[js.Date] = js.undefined
 }
 object PutApprovalResultOutput {
   
@@ -20,7 +20,7 @@ object PutApprovalResultOutput {
   
   extension [Self <: PutApprovalResultOutput](x: Self) {
     
-    inline def setApprovedAt(value: Timestamp): Self = StObject.set(x, "approvedAt", value.asInstanceOf[js.Any])
+    inline def setApprovedAt(value: js.Date): Self = StObject.set(x, "approvedAt", value.asInstanceOf[js.Any])
     
     inline def setApprovedAtUndefined: Self = StObject.set(x, "approvedAt", js.undefined)
   }

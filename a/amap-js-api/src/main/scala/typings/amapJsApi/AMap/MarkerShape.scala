@@ -80,7 +80,7 @@ object MarkerShape {
       
       inline def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
+      inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value*))
       
       inline def setType(value: poly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

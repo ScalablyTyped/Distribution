@@ -34,7 +34,7 @@ object DescribeWorkspaceDirectoriesRequest {
     
     inline def setDirectoryIdsUndefined: Self = StObject.set(x, "DirectoryIds", js.undefined)
     
-    inline def setDirectoryIdsVarargs(value: DirectoryId*): Self = StObject.set(x, "DirectoryIds", js.Array(value :_*))
+    inline def setDirectoryIdsVarargs(value: DirectoryId*): Self = StObject.set(x, "DirectoryIds", js.Array(value*))
     
     inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

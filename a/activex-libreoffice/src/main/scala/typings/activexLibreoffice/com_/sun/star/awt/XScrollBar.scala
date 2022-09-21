@@ -91,7 +91,7 @@ object XScrollBar {
     getOrientation: () => Double,
     getValue: () => Double,
     getVisibleSize: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAdjustmentListener: XAdjustmentListener => Unit,
     setBlockIncrement: Double => Unit,

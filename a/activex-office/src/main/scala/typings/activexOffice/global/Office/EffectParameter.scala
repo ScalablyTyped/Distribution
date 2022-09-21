@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.EffectParameter")
 @js.native
-/* private */ class EffectParameter ()
+/* private */ open class EffectParameter ()
   extends StObject
      with typings.activexOffice.Office.EffectParameter {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -24,5 +24,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotEffectParameter_typekey: typings.activexOffice.Office.EffectParameter = js.native
   
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object childSetMod {
   
-  @JSImport("@firebase/database/dist/src/core/snap/childSet", JSImport.Namespace)
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/childSet", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

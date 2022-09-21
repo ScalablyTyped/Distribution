@@ -46,7 +46,7 @@ object ErrorContext {
     
     inline def setSourceReferencesUndefined: Self = StObject.set(x, "sourceReferences", js.undefined)
     
-    inline def setSourceReferencesVarargs(value: SourceReference*): Self = StObject.set(x, "sourceReferences", js.Array(value :_*))
+    inline def setSourceReferencesVarargs(value: SourceReference*): Self = StObject.set(x, "sourceReferences", js.Array(value*))
     
     inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     

@@ -155,7 +155,7 @@ object Retargeting {
       
       inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
       
-      inline def setProductsVarargs(value: Product*): Self = StObject.set(x, "products", js.Array(value :_*))
+      inline def setProductsVarargs(value: Product*): Self = StObject.set(x, "products", js.Array(value*))
       
       inline def setProducts_recommended_ids(value: String): Self = StObject.set(x, "products_recommended_ids", value.asInstanceOf[js.Any])
       

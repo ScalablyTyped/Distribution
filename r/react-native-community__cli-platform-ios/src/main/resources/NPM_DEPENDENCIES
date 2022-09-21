@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-native-community/cli-platform-ios" : "9.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-native-community/cli-platform-ios" : "9.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

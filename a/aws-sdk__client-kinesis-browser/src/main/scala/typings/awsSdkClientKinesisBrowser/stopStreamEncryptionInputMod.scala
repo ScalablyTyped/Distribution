@@ -8,5 +8,5 @@ object stopStreamEncryptionInputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/StopStreamEncryptionInput", "StopStreamEncryptionInput")
   @js.native
-  val StopStreamEncryptionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val StopStreamEncryptionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

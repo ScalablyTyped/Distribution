@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("Pikaday")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.pikadayTime.mod.^ {
       def this(options: PikadayOptions) = this()
     }

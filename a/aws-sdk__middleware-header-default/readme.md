@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__middleware-header-default
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.110.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-header-default/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-header-default) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-header-default.svg)](https:/
@@ -10,13 +10,13 @@ Typings are for version 1.0.0-rc.7
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-header-default |
 | Keywords           | - |
-| # releases         | 42 |
-| # dependents       | 3 |
-| # downloads        | 4854470 |
-| # stars            | 0 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 4196394.333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-header-default)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3#readme)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fmiddleware-header-default)

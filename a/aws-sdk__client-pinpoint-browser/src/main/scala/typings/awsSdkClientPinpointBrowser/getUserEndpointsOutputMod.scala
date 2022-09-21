@@ -8,5 +8,5 @@ object getUserEndpointsOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetUserEndpointsOutput", "GetUserEndpointsOutput")
   @js.native
-  val GetUserEndpointsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetUserEndpointsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

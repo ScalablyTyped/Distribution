@@ -7,13 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abortSignalMod {
   
-  @JSImport("@aws-sdk/abort-controller/dist/cjs/AbortSignal", "AbortSignal")
+  @JSImport("@aws-sdk/abort-controller/dist-types/AbortSignal", "AbortSignal")
   @js.native
-  class AbortSignal ()
+  open class AbortSignal ()
     extends StObject
        with typings.awsSdkTypes.abortMod.AbortSignal {
     
-    /* private */ var _aborted: js.Any = js.native
+    /* private */ var _aborted: Any = js.native
+    
+    /**
+      * @internal
+      */
+    def abort(): Unit = js.native
     
     /**
       * Whether the action represented by this signal has been cancelled.

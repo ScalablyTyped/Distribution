@@ -2,8 +2,8 @@ package typings.rcMentions
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.SFC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object optionMod extends Shortcut {
   
   @JSImport("rc-mentions/es/Option", JSImport.Default)
   @js.native
-  val default: SFC[OptionProps] = js.native
+  val default: FC[OptionProps] = js.native
   
   trait OptionProps extends StObject {
     
@@ -63,8 +63,8 @@ object optionMod extends Shortcut {
     }
   }
   
-  type _To = SFC[OptionProps]
+  type _To = FC[OptionProps]
   
   /* This means you don't have to write `default`, but can instead just say `optionMod.foo` */
-  override def _to: SFC[OptionProps] = default
+  override def _to: FC[OptionProps] = default
 }

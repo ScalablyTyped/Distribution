@@ -81,7 +81,7 @@ object mod {
       
       inline def setItems(value: js.Array[PackedItem[T]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: PackedItem[T]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: PackedItem[T]*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }

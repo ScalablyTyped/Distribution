@@ -25,7 +25,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("qlik", "Promise")
   @js.native
-  class Promise[T] protected ()
+  open class Promise[T] protected ()
     extends StObject
        with typings.std.Promise[T] {
     /**
@@ -34,9 +34,10 @@ object mod extends Shortcut {
       * a resolve callback used to resolve the promise with a value or the result of another promise,
       * and a reject callback used to reject the promise with a provided reason or error.
       */
+    /* standard es2015.promise */
     def this(executor: js.Function2[
             /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ]) = this()
   }

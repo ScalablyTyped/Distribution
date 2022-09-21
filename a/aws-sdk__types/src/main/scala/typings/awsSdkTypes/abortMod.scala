@@ -35,7 +35,7 @@ object abortMod {
     }
   }
   
-  type AbortHandler = js.ThisFunction1[/* this */ AbortSignal, /* ev */ js.Any, js.Any]
+  type AbortHandler = js.ThisFunction1[/* this */ AbortSignal, /* ev */ Any, Any]
   
   trait AbortSignal extends StObject {
     

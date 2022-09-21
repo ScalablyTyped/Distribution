@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Cred")
 @js.native
-class Cred ()
+open class Cred ()
   extends typings.nodegit.credMod.Cred
 /* static members */
 object Cred {

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AgentConfiguration extends StObject {
   
+  val agentPreferences: js.UndefOr[AgentPreferences] = js.undefined
+  
   /** See `agent.getAgentStates()` for more info. */
   val agentStates: js.Array[AgentStateDefinition]
   
@@ -53,13 +55,17 @@ object AgentConfiguration {
   
   extension [Self <: AgentConfiguration](x: Self) {
     
+    inline def setAgentPreferences(value: AgentPreferences): Self = StObject.set(x, "agentPreferences", value.asInstanceOf[js.Any])
+    
+    inline def setAgentPreferencesUndefined: Self = StObject.set(x, "agentPreferences", js.undefined)
+    
     inline def setAgentStates(value: js.Array[AgentStateDefinition]): Self = StObject.set(x, "agentStates", value.asInstanceOf[js.Any])
     
-    inline def setAgentStatesVarargs(value: AgentStateDefinition*): Self = StObject.set(x, "agentStates", js.Array(value :_*))
+    inline def setAgentStatesVarargs(value: AgentStateDefinition*): Self = StObject.set(x, "agentStates", js.Array(value*))
     
     inline def setDialableCountries(value: js.Array[String]): Self = StObject.set(x, "dialableCountries", value.asInstanceOf[js.Any])
     
-    inline def setDialableCountriesVarargs(value: String*): Self = StObject.set(x, "dialableCountries", js.Array(value :_*))
+    inline def setDialableCountriesVarargs(value: String*): Self = StObject.set(x, "dialableCountries", js.Array(value*))
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
@@ -67,7 +73,7 @@ object AgentConfiguration {
     
     inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setRoutingProfile(value: AgentRoutingProfile): Self = StObject.set(x, "routingProfile", value.asInstanceOf[js.Any])
     

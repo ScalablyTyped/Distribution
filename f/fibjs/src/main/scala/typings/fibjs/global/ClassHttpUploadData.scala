@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_HttpUploadData")
 @js.native
-class ClassHttpUploadData ()
+open class ClassHttpUploadData ()
   extends StObject
      with typings.fibjs.ClassHttpUploadData

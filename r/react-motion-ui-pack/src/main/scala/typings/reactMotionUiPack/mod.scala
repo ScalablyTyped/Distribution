@@ -5,6 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactMotion.mod.PlainStyle
 import typings.reactMotion.mod.Style
 import typings.reactMotionUiPack.mod.Transition.TransitionProps
@@ -19,10 +20,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("react-motion-ui-pack", JSImport.Default)
     @js.native
-    class ^ protected ()
-      extends Component[TransitionProps, ComponentState, js.Any] {
+    open class ^ protected () extends Component[TransitionProps, ComponentState, Any] {
       def this(props: TransitionProps) = this()
-      def this(props: TransitionProps, context: js.Any) = this()
+      def this(props: TransitionProps, context: Any) = this()
     }
     
     @JSImport("react-motion-ui-pack", JSImport.Default)
@@ -40,6 +40,8 @@ object mod {
     trait TransitionProps extends StObject {
       
       var appear: js.UndefOr[Style] = js.undefined
+      
+      var children: js.UndefOr[ReactNode] = js.undefined
       
       var component: js.UndefOr[String | Boolean | ReactElement] = js.undefined
       
@@ -65,6 +67,10 @@ object mod {
         inline def setAppear(value: Style): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
         
         inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
+        
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
         inline def setComponent(value: String | Boolean | ReactElement): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
         

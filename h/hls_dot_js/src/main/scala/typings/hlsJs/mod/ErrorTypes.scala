@@ -4,53 +4,42 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Hls error types
-  */
-/* static member */
-object ErrorTypes {
+@js.native
+sealed trait ErrorTypes extends StObject
+@JSImport("hls.js", "ErrorTypes")
+@js.native
+object ErrorTypes extends StObject {
   
-  @JSImport("hls.js", "ErrorTypes")
-  @js.native
-  val ^ : js.Any = js.native
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[ErrorTypes & String] = js.native
   
-  /**
-    * EME (encrypted media extensions) errors
-    */
-  @JSImport("hls.js", "ErrorTypes.KEY_SYSTEM_ERROR")
   @js.native
-  def KEY_SYSTEM_ERROR: K_KEY_SYSTEM_ERROR = js.native
-  inline def KEY_SYSTEM_ERROR_=(x: K_KEY_SYSTEM_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEY_SYSTEM_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait KEY_SYSTEM_ERROR
+    extends StObject
+       with ErrorTypes
+  /* "keySystemError" */ val KEY_SYSTEM_ERROR: typings.hlsJs.mod.ErrorTypes.KEY_SYSTEM_ERROR & String = js.native
   
-  /**
-    * Identifier for a media Error (video/parsing/mediasource error)
-    */
-  @JSImport("hls.js", "ErrorTypes.MEDIA_ERROR")
   @js.native
-  def MEDIA_ERROR: K_MEDIA_ERROR = js.native
-  inline def MEDIA_ERROR_=(x: K_MEDIA_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait MEDIA_ERROR
+    extends StObject
+       with ErrorTypes
+  /* "mediaError" */ val MEDIA_ERROR: typings.hlsJs.mod.ErrorTypes.MEDIA_ERROR & String = js.native
   
-  /**
-    * Identifier for a mux Error (demuxing/remuxing)
-    */
-  @JSImport("hls.js", "ErrorTypes.MUX_ERROR")
   @js.native
-  def MUX_ERROR: K_MUX_ERROR = js.native
-  inline def MUX_ERROR_=(x: K_MUX_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MUX_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait MUX_ERROR
+    extends StObject
+       with ErrorTypes
+  /* "muxError" */ val MUX_ERROR: typings.hlsJs.mod.ErrorTypes.MUX_ERROR & String = js.native
   
-  /**
-    * Identifier for a network error (loading error / timeout ...)
-    */
-  @JSImport("hls.js", "ErrorTypes.NETWORK_ERROR")
   @js.native
-  def NETWORK_ERROR: K_NETWORK_ERROR = js.native
-  inline def NETWORK_ERROR_=(x: K_NETWORK_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NETWORK_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait NETWORK_ERROR
+    extends StObject
+       with ErrorTypes
+  /* "networkError" */ val NETWORK_ERROR: typings.hlsJs.mod.ErrorTypes.NETWORK_ERROR & String = js.native
   
-  /**
-    * Identifier for all other errors
-    */
-  @JSImport("hls.js", "ErrorTypes.OTHER_ERROR")
   @js.native
-  def OTHER_ERROR: K_OTHER_ERROR = js.native
-  inline def OTHER_ERROR_=(x: K_OTHER_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OTHER_ERROR")(x.asInstanceOf[js.Any])
+  sealed trait OTHER_ERROR
+    extends StObject
+       with ErrorTypes
+  /* "otherError" */ val OTHER_ERROR: typings.hlsJs.mod.ErrorTypes.OTHER_ERROR & String = js.native
 }

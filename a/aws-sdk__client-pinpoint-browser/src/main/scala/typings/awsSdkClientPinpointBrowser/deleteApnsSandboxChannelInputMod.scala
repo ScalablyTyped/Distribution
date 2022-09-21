@@ -8,5 +8,5 @@ object deleteApnsSandboxChannelInputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteApnsSandboxChannelInput", "DeleteApnsSandboxChannelInput")
   @js.native
-  val DeleteApnsSandboxChannelInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteApnsSandboxChannelInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

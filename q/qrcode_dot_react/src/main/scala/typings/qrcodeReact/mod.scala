@@ -23,12 +23,11 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("qrcode.react", JSImport.Namespace)
   @js.native
-  class ^ protected ()
-    extends Component[CanvasQRCodeProps | SvgQRCodeProps, ComponentState, js.Any] {
+  open class ^ protected () extends Component[CanvasQRCodeProps | SvgQRCodeProps, ComponentState, Any] {
     def this(props: CanvasQRCodeProps) = this()
     def this(props: SvgQRCodeProps) = this()
-    def this(props: CanvasQRCodeProps, context: js.Any) = this()
-    def this(props: SvgQRCodeProps, context: js.Any) = this()
+    def this(props: CanvasQRCodeProps, context: Any) = this()
+    def this(props: SvgQRCodeProps, context: Any) = this()
   }
   @JSImport("qrcode.react", JSImport.Namespace)
   @js.native

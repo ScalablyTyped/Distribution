@@ -16,9 +16,9 @@ trait OLEFormat extends StObject {
   /* private */ @JSName("Excel.OLEFormat_typekey")
   var ExcelDotOLEFormat_typekey: OLEFormat = js.native
   
-  val Object: js.Any = js.native
+  val Object: Any = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Verb(): Unit = js.native
   def Verb(Verb: XlOLEVerb): Unit = js.native

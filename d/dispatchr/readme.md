@@ -10,10 +10,10 @@ A Flux dispatcher for applications that run on the server and the client.
 | ------------------ | :-------------: |
 | Full name          | dispatchr |
 | Keywords           | yahoo, flux, react, dispatcher |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 210050 |
-| # stars            | 8 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 10809.666666666666 |
+| # stars            | 1812.0 |
 
 ## Links
 - [Homepage](https://github.com/yahoo/fluxible#readme)

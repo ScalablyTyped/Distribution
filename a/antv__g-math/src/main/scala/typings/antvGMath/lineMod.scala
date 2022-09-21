@@ -10,7 +10,7 @@ object lineMod {
   
   object default {
     
-    @JSImport("@antv/g-math/lib/line", JSImport.Default)
+    @JSImport("@antv/g-math/dist/line", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

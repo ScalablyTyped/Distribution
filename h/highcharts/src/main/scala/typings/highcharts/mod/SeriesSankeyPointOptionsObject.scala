@@ -39,14 +39,16 @@ trait SeriesSankeyPointOptionsObject extends StObject {
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * (Highcharts) Individual data label for each point. The options are the
     * same as the ones for plotOptions.series.dataLabels.
     */
   var dataLabels: js.UndefOr[
-    DataLabelsOptions | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject | (js.Array[SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject])
+    DataLabelsOptions | SeriesArcDiagramDataLabelsOptionsObject | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject | (js.Array[
+      SeriesArcDiagramDataLabelsOptionsObject | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject
+    ])
   ] = js.undefined
   
   /**
@@ -131,17 +133,21 @@ object SeriesSankeyPointOptionsObject {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     inline def setDataLabels(
-      value: DataLabelsOptions | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject | (js.Array[SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject])
+      value: DataLabelsOptions | SeriesArcDiagramDataLabelsOptionsObject | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject | (js.Array[
+          SeriesArcDiagramDataLabelsOptionsObject | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject
+        ])
     ): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: (SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject)*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(
+      value: (SeriesArcDiagramDataLabelsOptionsObject | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject)*
+    ): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

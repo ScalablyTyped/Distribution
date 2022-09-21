@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapSparkline")
 @js.native
-class BootstrapSparkline ()
+open class BootstrapSparkline ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapSparkline

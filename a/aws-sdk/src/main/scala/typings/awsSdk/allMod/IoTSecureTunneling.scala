@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class IoTSecureTunneling () extends ^ {
+open class IoTSecureTunneling () extends ^ {
   def this(options: ClientConfiguration) = this()
 }

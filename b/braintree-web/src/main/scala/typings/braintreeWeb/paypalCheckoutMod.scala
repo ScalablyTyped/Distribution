@@ -1,7 +1,15 @@
 package typings.braintreeWeb
 
+import typings.braintreeWeb.anon.Cspnonce
 import typings.braintreeWeb.anon.MerchantAccountId
 import typings.braintreeWeb.anon.OptOutOfModalBackdrop
+import typings.braintreeWeb.braintreeWebStrings.authorize
+import typings.braintreeWeb.braintreeWebStrings.buttons
+import typings.braintreeWeb.braintreeWebStrings.buttonsCommamessages
+import typings.braintreeWeb.braintreeWebStrings.capture
+import typings.braintreeWeb.braintreeWebStrings.messages
+import typings.braintreeWeb.braintreeWebStrings.sale
+import typings.braintreeWeb.braintreeWebStrings.tokenize
 import typings.braintreeWeb.coreMod.callback
 import typings.paypalCheckoutComponents.callbackDataMod.Address
 import typings.paypalCheckoutComponents.callbackDataMod.AuthorizationResponse
@@ -24,7 +32,7 @@ object paypalCheckoutMod {
     var VERSION: String = js.native
     
     def create(options: MerchantAccountId): Unit = js.native
-    def create(options: MerchantAccountId, callback: callback[js.Any]): Unit = js.native
+    def create(options: MerchantAccountId, callback: callback[Any]): Unit = js.native
     
     /**
       * Creates a PayPal payment ID or billing token using the given options. This is meant to be passed to PayPal's checkout.js library.
@@ -142,7 +150,7 @@ object paypalCheckoutMod {
       *
       */
     def createPayment(options: PayPalCheckoutCreatePaymentOptions): js.Promise[String] = js.native
-    def createPayment(options: PayPalCheckoutCreatePaymentOptions, callback: callback[js.Any]): js.Promise[String] = js.native
+    def createPayment(options: PayPalCheckoutCreatePaymentOptions, callback: callback[Any]): js.Promise[String] = js.native
     
     /**
       * @description There are two ways to integrate the PayPal Checkout component.
@@ -179,6 +187,20 @@ object paypalCheckoutMod {
     def getClientId(): js.Promise[String] = js.native
     def getClientId(callback: js.Function1[/* id */ String, Unit]): Unit = js.native
     
+    def loadPayPalSDK(): Unit = js.native
+    def loadPayPalSDK(options: Unit, callback: callback[Any]): Unit = js.native
+    def loadPayPalSDK(options: PayPalCheckoutLoadPayPalSDKOptions): Unit = js.native
+    def loadPayPalSDK(options: PayPalCheckoutLoadPayPalSDKOptions, callback: callback[Any]): Unit = js.native
+    /**
+      * Resolves when the PayPal SDK has been succesfully loaded onto the page.
+      *
+      * @link https://braintree.github.io/braintree-web/current/PayPalCheckout.html#loadPayPalSDK
+      */
+    @JSName("loadPayPalSDK")
+    def loadPayPalSDK_Promise(): js.Promise[PayPalCheckout] = js.native
+    @JSName("loadPayPalSDK")
+    def loadPayPalSDK_Promise(options: PayPalCheckoutLoadPayPalSDKOptions): js.Promise[PayPalCheckout] = js.native
+    
     /**
       * Initializes the PayPal checkout flow with a payment method nonce that represents a vaulted PayPal account.
       * When a {@link callback} is defined, the function returns undefined and invokes the callback with the id to be used with the checkout.js library.
@@ -204,7 +226,7 @@ object paypalCheckoutMod {
       *
       */
     def startVaultInitiatedCheckout(options: OptOutOfModalBackdrop): js.Promise[Unit] = js.native
-    def startVaultInitiatedCheckout(options: OptOutOfModalBackdrop, callback: callback[js.Any]): Unit = js.native
+    def startVaultInitiatedCheckout(options: OptOutOfModalBackdrop, callback: callback[Any]): Unit = js.native
     
     def teardown(): js.Promise[Unit] = js.native
     /**
@@ -219,7 +241,7 @@ object paypalCheckoutMod {
     def teardown(callback: js.Function0[Unit]): Unit = js.native
     
     def tokenizePayment(tokenizeOptions: PayPalCheckoutTokenizationOptions): Unit = js.native
-    def tokenizePayment(tokenizeOptions: PayPalCheckoutTokenizationOptions, callback: callback[js.Any]): Unit = js.native
+    def tokenizePayment(tokenizeOptions: PayPalCheckoutTokenizationOptions, callback: callback[Any]): Unit = js.native
     /**
       * Tokenizes the authorize data from PayPal's checkout.js library when completing a buyer approval flow.
       * When a {@link callback} is defined, invokes the callback with {@link PayPalCheckout~tokenizePayload|tokenizePayload} and returns undefined.
@@ -269,6 +291,8 @@ object paypalCheckoutMod {
     var locale: js.UndefOr[String] = js.undefined
     
     var offerCredit: js.UndefOr[Boolean] = js.undefined
+    
+    var requestBillingAgreement: js.UndefOr[Boolean] = js.undefined
     
     var shippingAddressEditable: js.UndefOr[Boolean] = js.undefined
     
@@ -321,7 +345,7 @@ object paypalCheckoutMod {
       
       inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
       
-      inline def setLineItemsVarargs(value: LineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+      inline def setLineItemsVarargs(value: LineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -330,6 +354,10 @@ object paypalCheckoutMod {
       inline def setOfferCredit(value: Boolean): Self = StObject.set(x, "offerCredit", value.asInstanceOf[js.Any])
       
       inline def setOfferCreditUndefined: Self = StObject.set(x, "offerCredit", js.undefined)
+      
+      inline def setRequestBillingAgreement(value: Boolean): Self = StObject.set(x, "requestBillingAgreement", value.asInstanceOf[js.Any])
+      
+      inline def setRequestBillingAgreementUndefined: Self = StObject.set(x, "requestBillingAgreement", js.undefined)
       
       inline def setShippingAddressEditable(value: Boolean): Self = StObject.set(x, "shippingAddressEditable", value.asInstanceOf[js.Any])
       
@@ -343,11 +371,176 @@ object paypalCheckoutMod {
       
       inline def setShippingOptionsUndefined: Self = StObject.set(x, "shippingOptions", js.undefined)
       
-      inline def setShippingOptionsVarargs(value: ShippingOption*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
+      inline def setShippingOptionsVarargs(value: ShippingOption*): Self = StObject.set(x, "shippingOptions", js.Array(value*))
       
       inline def setVaultInitiatedCheckoutPaymentMethodToken(value: String): Self = StObject.set(x, "vaultInitiatedCheckoutPaymentMethodToken", value.asInstanceOf[js.Any])
       
       inline def setVaultInitiatedCheckoutPaymentMethodTokenUndefined: Self = StObject.set(x, "vaultInitiatedCheckoutPaymentMethodToken", js.undefined)
+    }
+  }
+  
+  trait PayPalCheckoutLoadPayPalSDKOptions extends StObject {
+    
+    /**
+      * The buyer country. Available in Sandbox for testing.
+      */
+    var `buyer-country`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * By default, this will be the client id associated with the authorization used to create the
+      * Braintree component. When used in conjunction with passing authorization when creating the
+      * PayPal Checkout component, you can speed up the loading of the PayPal SDK.
+      */
+    var `client-id`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Set to true if the transaction is completed on the PayPal review page or false if the amount
+      * captured changes after the buyer returns to your site. Not applicable for subscriptions.
+      * Important: If you're integrating with a PayPal API, make sure the commit value you pass
+      * in the API call matches the value you pass in the JavaScript call.
+      */
+    var commit: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * By default, the Braintree SDK will only load the PayPal smart buttons component. If you would
+      * like to load just the messages component, pass messages. If you would like to load both, pass
+      * buttons,messages
+      *
+      * @default 'buttons'
+      */
+    var components: js.UndefOr[buttons | messages | buttonsCommamessages] = js.undefined
+    
+    /**
+      * If a currency is passed in createPayment, it must match the currency passed here.
+      *
+      * @default 'USD'
+      */
+    var currency: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The data attributes to apply to the script. Any data attribute can be passed. A subset of the
+      * parameters are listed below. For a full list of data attributes, see the PayPal docs.
+      */
+    var dataAttributes: js.UndefOr[Cspnonce] = js.undefined
+    
+    /**
+      * Enable debug mode for ease of debugging. Do not enable for production traffic.
+      */
+    var debug: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Funding sources to disallow from showing in the checkout buttons.
+      * Do not use this query parameter to disable advanced credit and debit card payments.
+      * e.g. card, credit, bancontact
+      * The full list is available in the PayPal SDK docs.
+      */
+    var `disable-funding`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Funding sources to allow in the checkout buttons.
+      * e.g. venmo, paylater
+      * The full list is available in the PayPal SDK docs.
+      */
+    var `enable-funding`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The date of integration. Used to ensure backwards compatibility.
+      * Format: YYYY-MM-DD
+      */
+    var `integration-date`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * By default, the PayPal SDK defaults to an intent of capture. Since the default intent when
+      * calling createPayment is authorize, the PayPal SDK will be loaded with intent=authorize. If you
+      * wish to use a different intent when calling createPayment, make sure it matches here. If sale
+      * is used, it will be converted to capture for the PayPal SDK. If the vault: true param is used,
+      * no default intent will be passed.
+      *
+      * @default 'authorize'
+      */
+    var intent: js.UndefOr[authorize | capture | sale | tokenize] = js.undefined
+    
+    /**
+      * The locale used to localize any components.
+      * PayPal recommends not setting this parameter, as the buyer's locale is automatically set by PayPal.
+      * e.g. en_US, fr_FR, de_DE
+      */
+    var locale: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The merchant for whom you are facilitating a transaction.
+      */
+    var `merchant-id`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Must be true when using flow: vault in createPayment.
+      */
+    var vault: js.UndefOr[Boolean] = js.undefined
+  }
+  object PayPalCheckoutLoadPayPalSDKOptions {
+    
+    inline def apply(): PayPalCheckoutLoadPayPalSDKOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PayPalCheckoutLoadPayPalSDKOptions]
+    }
+    
+    extension [Self <: PayPalCheckoutLoadPayPalSDKOptions](x: Self) {
+      
+      inline def `setBuyer-country`(value: String): Self = StObject.set(x, "buyer-country", value.asInstanceOf[js.Any])
+      
+      inline def `setBuyer-countryUndefined`: Self = StObject.set(x, "buyer-country", js.undefined)
+      
+      inline def `setClient-id`(value: String): Self = StObject.set(x, "client-id", value.asInstanceOf[js.Any])
+      
+      inline def `setClient-idUndefined`: Self = StObject.set(x, "client-id", js.undefined)
+      
+      inline def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      
+      inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+      
+      inline def setComponents(value: buttons | messages | buttonsCommamessages): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      
+      inline def setDataAttributes(value: Cspnonce): Self = StObject.set(x, "dataAttributes", value.asInstanceOf[js.Any])
+      
+      inline def setDataAttributesUndefined: Self = StObject.set(x, "dataAttributes", js.undefined)
+      
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      
+      inline def `setDisable-funding`(value: String): Self = StObject.set(x, "disable-funding", value.asInstanceOf[js.Any])
+      
+      inline def `setDisable-fundingUndefined`: Self = StObject.set(x, "disable-funding", js.undefined)
+      
+      inline def `setEnable-funding`(value: String): Self = StObject.set(x, "enable-funding", value.asInstanceOf[js.Any])
+      
+      inline def `setEnable-fundingUndefined`: Self = StObject.set(x, "enable-funding", js.undefined)
+      
+      inline def `setIntegration-date`(value: String): Self = StObject.set(x, "integration-date", value.asInstanceOf[js.Any])
+      
+      inline def `setIntegration-dateUndefined`: Self = StObject.set(x, "integration-date", js.undefined)
+      
+      inline def setIntent(value: authorize | capture | sale | tokenize): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+      
+      inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+      
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      
+      inline def `setMerchant-id`(value: String): Self = StObject.set(x, "merchant-id", value.asInstanceOf[js.Any])
+      
+      inline def `setMerchant-idUndefined`: Self = StObject.set(x, "merchant-id", js.undefined)
+      
+      inline def setVault(value: Boolean): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
+      
+      inline def setVaultUndefined: Self = StObject.set(x, "vault", js.undefined)
     }
   }
   

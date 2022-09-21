@@ -15,8 +15,8 @@ trait CompletionItemProvider extends StObject {
   def provideCompletionItems(model: ITextModel, position: Position, context: CompletionContext, token: CancellationToken): ProviderResult[CompletionList]
   
   /**
-    * Given a completion item fill in more data, like [doc-comment](#CompletionItem.documentation)
-    * or [details](#CompletionItem.detail).
+    * Given a completion item fill in more data, like {@link CompletionItem.documentation doc-comment}
+    * or {@link CompletionItem.detail details}.
     *
     * The editor will only resolve a completion item once.
     */
@@ -55,6 +55,6 @@ object CompletionItemProvider {
     
     inline def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
     
-    inline def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
+    inline def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value*))
   }
 }

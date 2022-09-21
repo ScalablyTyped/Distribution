@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object iterinfoMod {
   
-  @JSImport("rrule/dist/esm/src/iterinfo", JSImport.Default)
+  @JSImport("rrule/dist/esm/iterinfo", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Iterinfo {
     def this(options: ParsedOptions) = this()
@@ -31,7 +31,7 @@ object iterinfoMod {
   @js.native
   trait Iterinfo extends StObject {
     
-    def ddayset(year: Double, month: Double, day: Double): js.Array[Double | (js.Array[Double | Null])] = js.native
+    def ddayset(year: Double, month: Double, day: Double): js.Array[Double | js.Array[Double]] = js.native
     
     var eastermask: js.Array[Double] | Null = js.native
     
@@ -43,13 +43,13 @@ object iterinfoMod {
     
     def htimeset(hour: Double, _underscore: Double, second: Double, millisecond: Double): js.Array[Time] = js.native
     
-    def lastmonth: Double | Null = js.native
+    def lastmonth: Double = js.native
     
-    def lastyear: Double | Null = js.native
+    def lastyear: Double = js.native
     
     def mdaymask: js.Array[Double] = js.native
     
-    def mdayset(_underscore: js.Any, month: Double, __ : js.Any): js.Array[Double | (js.Array[Double | (js.Array[Double | Null]) | Null])] = js.native
+    def mdayset(_underscore: Any, month: Double): js.Array[Double | (js.Array[Double | js.Array[Double]])] = js.native
     
     def mmask: js.Array[Double] = js.native
     
@@ -65,7 +65,7 @@ object iterinfoMod {
     
     def nwdaymask: js.Array[Double] = js.native
     
-    /* private */ var options: js.Any = js.native
+    /* private */ var options: Any = js.native
     
     def rebuild(year: Double, month: Double): Unit = js.native
     
@@ -73,9 +73,9 @@ object iterinfoMod {
     
     def wdaymask: js.Array[Double] = js.native
     
-    def wdayset(year: Double, month: Double, day: Double): js.Array[Double | (js.Array[Double | (js.Array[Double | Null]) | Null])] = js.native
+    def wdayset(year: Double, month: Double, day: Double): js.Array[Double | (js.Array[Double | js.Array[Double]])] = js.native
     
-    def wnomask: js.Array[Double] | Null = js.native
+    def wnomask: js.Array[Double] = js.native
     
     def ydayset(): js.Array[Double | js.Array[Double]] = js.native
     

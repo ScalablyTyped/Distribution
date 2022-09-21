@@ -1,6 +1,5 @@
 package typings.dhtmlxscheduler
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +14,12 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * sets the date to display events until
     */
-  var agenda_end: Date
+  var agenda_end: js.Date
   
   /**
     * sets the date to start displaying events from
     */
-  var agenda_start: Date
+  var agenda_start: js.Date
   
   /**
     * specifies how to display the default error notification in case the XML data loading failed
@@ -45,12 +44,12 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * stores a collection of buttons resided in the left bottom corner of the lightbox
     */
-  var buttons_left: js.Array[js.Any]
+  var buttons_left: js.Array[Any]
   
   /**
     * stores a collection of buttons resided in the right bottom corner of the lightbox
     */
-  var buttons_right: js.Array[js.Any]
+  var buttons_right: js.Array[Any]
   
   /**
     * sets the maximum number of events in a cascade
@@ -205,12 +204,12 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * stores a collection of icons visible in the side edit menu of the event's box
     */
-  var icons_edit: js.Array[js.Any]
+  var icons_edit: js.Array[Any]
   
   /**
     * stores a collection of icons visible in the side selection menu of the event's box
     */
-  var icons_select: js.Array[js.Any]
+  var icons_select: js.Array[Any]
   
   /**
     * defines whether the date specified in the 'End by' field should be exclusive or inclusive
@@ -235,7 +234,7 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * specifies the lightbox object
     */
-  var lightbox: js.Any
+  var lightbox: Any
   
   /**
     * defines the lightbox's behavior, when the user opens the lightbox to edit a recurring event
@@ -250,12 +249,12 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * sets the right border of the allowable date range
     */
-  var limit_end: Date
+  var limit_end: js.Date
   
   /**
     * sets the left border of the allowable date range
     */
-  var limit_start: Date
+  var limit_start: js.Date
   
   /**
     * sets the max and min values of the time selector in the lightbox to the values of the 'last_hour' and 'first_hour' options
@@ -275,12 +274,12 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * sets the date to display events until
     */
-  var map_end: Date
+  var map_end: js.Date
   
   /**
     * sets the position that will be displayed on the map in case the event's location can't be identified
     */
-  var map_error_position: js.Any
+  var map_error_position: Any
   
   /**
     * the maximum width of the Google Maps's popup marker in the Map view
@@ -290,7 +289,7 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * sets the initial position of the map
     */
-  var map_initial_position: js.Any
+  var map_initial_position: Any
   
   /**
     * sets the initial zoom of Google Maps in the Map view
@@ -310,12 +309,12 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * sets the date to start displaying events from
     */
-  var map_start: Date
+  var map_start: js.Date
   
   /**
     * sets the type of Google Maps
     */
-  var map_type: js.Any
+  var map_type: Any
   
   /**
     * sets the zoom that will be used to show the user's location, if the user agrees to the browser's offer to show it
@@ -335,7 +334,7 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * specifies the mini calendar object
     */
-  var minicalendar: js.Any
+  var minicalendar: Any
   
   /**
     * sets the format for the header of the Month view
@@ -375,7 +374,7 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * sets the date for the current-time marker in the Limit extension (enabled by the configuration - mark_now)
     */
-  var now_date: Date
+  var now_date: js.Date
   
   /**
     * allows working with recurring events independently of time zones
@@ -420,7 +419,7 @@ trait SchedulerConfigOptions extends StObject {
   /**
     * specifies working days that will affect the recurring event when the user selects the ""Every workday" option in the lightbox
     */
-  var recurring_workdays: js.Array[js.Any]
+  var recurring_workdays: js.Array[Any]
   
   /**
     * sets the date format of the 'End by' field in the 'recurring' lightbox
@@ -546,14 +545,14 @@ object SchedulerConfigOptions {
   
   inline def apply(
     active_link_view: String,
-    agenda_end: Date,
-    agenda_start: Date,
+    agenda_end: js.Date,
+    agenda_start: js.Date,
     ajax_error: String | Boolean,
     all_timed: Boolean | String,
     api_date: String,
     auto_end_date: Boolean,
-    buttons_left: js.Array[js.Any],
-    buttons_right: js.Array[js.Any],
+    buttons_left: js.Array[Any],
+    buttons_right: js.Array[Any],
     cascade_event_count: Double,
     cascade_event_display: Boolean,
     cascade_event_margin: Double,
@@ -584,33 +583,33 @@ object SchedulerConfigOptions {
     highlight_displayed_event: Boolean,
     hour_date: String,
     hour_size_px: Double,
-    icons_edit: js.Array[js.Any],
-    icons_select: js.Array[js.Any],
+    icons_edit: js.Array[Any],
+    icons_select: js.Array[Any],
     include_end_by: Boolean,
     key_nav: Boolean,
     last_hour: Double,
     left_border: Boolean,
-    lightbox: js.Any,
+    lightbox: Any,
     lightbox_recurring: String,
     limit_drag_out: Boolean,
-    limit_end: Date,
-    limit_start: Date,
+    limit_end: js.Date,
+    limit_start: js.Date,
     limit_time_select: Boolean,
     limit_view: Boolean,
     load_date: String,
-    map_end: Date,
-    map_error_position: js.Any,
+    map_end: js.Date,
+    map_error_position: Any,
     map_infowindow_max_width: Double,
-    map_initial_position: js.Any,
+    map_initial_position: Any,
     map_initial_zoom: Double,
     map_resolve_event_location: Boolean,
     map_resolve_user_location: Boolean,
-    map_start: Date,
-    map_type: js.Any,
+    map_start: js.Date,
+    map_type: Any,
     map_zoom_after_resolve: Double,
     mark_now: Boolean,
     max_month_events: Double,
-    minicalendar: js.Any,
+    minicalendar: Any,
     month_date: String,
     month_day: String,
     month_day_min_height: Double,
@@ -618,7 +617,7 @@ object SchedulerConfigOptions {
     multi_day_height_limit: Double | Boolean,
     multisection: Boolean,
     multisection_shift_all: Boolean,
-    now_date: Date,
+    now_date: js.Date,
     occurrence_timestamp_in_utc: Boolean,
     positive_closing: Boolean,
     preserve_length: Boolean,
@@ -627,7 +626,7 @@ object SchedulerConfigOptions {
     quick_info_detached: Boolean,
     readonly: Boolean,
     readonly_form: Boolean,
-    recurring_workdays: js.Array[js.Any],
+    recurring_workdays: js.Array[Any],
     repeat_date: String,
     repeat_precise: Boolean,
     resize_month_events: Boolean,
@@ -661,9 +660,9 @@ object SchedulerConfigOptions {
     
     inline def setActive_link_view(value: String): Self = StObject.set(x, "active_link_view", value.asInstanceOf[js.Any])
     
-    inline def setAgenda_end(value: Date): Self = StObject.set(x, "agenda_end", value.asInstanceOf[js.Any])
+    inline def setAgenda_end(value: js.Date): Self = StObject.set(x, "agenda_end", value.asInstanceOf[js.Any])
     
-    inline def setAgenda_start(value: Date): Self = StObject.set(x, "agenda_start", value.asInstanceOf[js.Any])
+    inline def setAgenda_start(value: js.Date): Self = StObject.set(x, "agenda_start", value.asInstanceOf[js.Any])
     
     inline def setAjax_error(value: String | Boolean): Self = StObject.set(x, "ajax_error", value.asInstanceOf[js.Any])
     
@@ -673,13 +672,13 @@ object SchedulerConfigOptions {
     
     inline def setAuto_end_date(value: Boolean): Self = StObject.set(x, "auto_end_date", value.asInstanceOf[js.Any])
     
-    inline def setButtons_left(value: js.Array[js.Any]): Self = StObject.set(x, "buttons_left", value.asInstanceOf[js.Any])
+    inline def setButtons_left(value: js.Array[Any]): Self = StObject.set(x, "buttons_left", value.asInstanceOf[js.Any])
     
-    inline def setButtons_leftVarargs(value: js.Any*): Self = StObject.set(x, "buttons_left", js.Array(value :_*))
+    inline def setButtons_leftVarargs(value: Any*): Self = StObject.set(x, "buttons_left", js.Array(value*))
     
-    inline def setButtons_right(value: js.Array[js.Any]): Self = StObject.set(x, "buttons_right", value.asInstanceOf[js.Any])
+    inline def setButtons_right(value: js.Array[Any]): Self = StObject.set(x, "buttons_right", value.asInstanceOf[js.Any])
     
-    inline def setButtons_rightVarargs(value: js.Any*): Self = StObject.set(x, "buttons_right", js.Array(value :_*))
+    inline def setButtons_rightVarargs(value: Any*): Self = StObject.set(x, "buttons_right", js.Array(value*))
     
     inline def setCascade_event_count(value: Double): Self = StObject.set(x, "cascade_event_count", value.asInstanceOf[js.Any])
     
@@ -741,13 +740,13 @@ object SchedulerConfigOptions {
     
     inline def setHour_size_px(value: Double): Self = StObject.set(x, "hour_size_px", value.asInstanceOf[js.Any])
     
-    inline def setIcons_edit(value: js.Array[js.Any]): Self = StObject.set(x, "icons_edit", value.asInstanceOf[js.Any])
+    inline def setIcons_edit(value: js.Array[Any]): Self = StObject.set(x, "icons_edit", value.asInstanceOf[js.Any])
     
-    inline def setIcons_editVarargs(value: js.Any*): Self = StObject.set(x, "icons_edit", js.Array(value :_*))
+    inline def setIcons_editVarargs(value: Any*): Self = StObject.set(x, "icons_edit", js.Array(value*))
     
-    inline def setIcons_select(value: js.Array[js.Any]): Self = StObject.set(x, "icons_select", value.asInstanceOf[js.Any])
+    inline def setIcons_select(value: js.Array[Any]): Self = StObject.set(x, "icons_select", value.asInstanceOf[js.Any])
     
-    inline def setIcons_selectVarargs(value: js.Any*): Self = StObject.set(x, "icons_select", js.Array(value :_*))
+    inline def setIcons_selectVarargs(value: Any*): Self = StObject.set(x, "icons_select", js.Array(value*))
     
     inline def setInclude_end_by(value: Boolean): Self = StObject.set(x, "include_end_by", value.asInstanceOf[js.Any])
     
@@ -757,15 +756,15 @@ object SchedulerConfigOptions {
     
     inline def setLeft_border(value: Boolean): Self = StObject.set(x, "left_border", value.asInstanceOf[js.Any])
     
-    inline def setLightbox(value: js.Any): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
+    inline def setLightbox(value: Any): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
     
     inline def setLightbox_recurring(value: String): Self = StObject.set(x, "lightbox_recurring", value.asInstanceOf[js.Any])
     
     inline def setLimit_drag_out(value: Boolean): Self = StObject.set(x, "limit_drag_out", value.asInstanceOf[js.Any])
     
-    inline def setLimit_end(value: Date): Self = StObject.set(x, "limit_end", value.asInstanceOf[js.Any])
+    inline def setLimit_end(value: js.Date): Self = StObject.set(x, "limit_end", value.asInstanceOf[js.Any])
     
-    inline def setLimit_start(value: Date): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
+    inline def setLimit_start(value: js.Date): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
     
     inline def setLimit_time_select(value: Boolean): Self = StObject.set(x, "limit_time_select", value.asInstanceOf[js.Any])
     
@@ -773,13 +772,13 @@ object SchedulerConfigOptions {
     
     inline def setLoad_date(value: String): Self = StObject.set(x, "load_date", value.asInstanceOf[js.Any])
     
-    inline def setMap_end(value: Date): Self = StObject.set(x, "map_end", value.asInstanceOf[js.Any])
+    inline def setMap_end(value: js.Date): Self = StObject.set(x, "map_end", value.asInstanceOf[js.Any])
     
-    inline def setMap_error_position(value: js.Any): Self = StObject.set(x, "map_error_position", value.asInstanceOf[js.Any])
+    inline def setMap_error_position(value: Any): Self = StObject.set(x, "map_error_position", value.asInstanceOf[js.Any])
     
     inline def setMap_infowindow_max_width(value: Double): Self = StObject.set(x, "map_infowindow_max_width", value.asInstanceOf[js.Any])
     
-    inline def setMap_initial_position(value: js.Any): Self = StObject.set(x, "map_initial_position", value.asInstanceOf[js.Any])
+    inline def setMap_initial_position(value: Any): Self = StObject.set(x, "map_initial_position", value.asInstanceOf[js.Any])
     
     inline def setMap_initial_zoom(value: Double): Self = StObject.set(x, "map_initial_zoom", value.asInstanceOf[js.Any])
     
@@ -787,9 +786,9 @@ object SchedulerConfigOptions {
     
     inline def setMap_resolve_user_location(value: Boolean): Self = StObject.set(x, "map_resolve_user_location", value.asInstanceOf[js.Any])
     
-    inline def setMap_start(value: Date): Self = StObject.set(x, "map_start", value.asInstanceOf[js.Any])
+    inline def setMap_start(value: js.Date): Self = StObject.set(x, "map_start", value.asInstanceOf[js.Any])
     
-    inline def setMap_type(value: js.Any): Self = StObject.set(x, "map_type", value.asInstanceOf[js.Any])
+    inline def setMap_type(value: Any): Self = StObject.set(x, "map_type", value.asInstanceOf[js.Any])
     
     inline def setMap_zoom_after_resolve(value: Double): Self = StObject.set(x, "map_zoom_after_resolve", value.asInstanceOf[js.Any])
     
@@ -797,7 +796,7 @@ object SchedulerConfigOptions {
     
     inline def setMax_month_events(value: Double): Self = StObject.set(x, "max_month_events", value.asInstanceOf[js.Any])
     
-    inline def setMinicalendar(value: js.Any): Self = StObject.set(x, "minicalendar", value.asInstanceOf[js.Any])
+    inline def setMinicalendar(value: Any): Self = StObject.set(x, "minicalendar", value.asInstanceOf[js.Any])
     
     inline def setMonth_date(value: String): Self = StObject.set(x, "month_date", value.asInstanceOf[js.Any])
     
@@ -813,7 +812,7 @@ object SchedulerConfigOptions {
     
     inline def setMultisection_shift_all(value: Boolean): Self = StObject.set(x, "multisection_shift_all", value.asInstanceOf[js.Any])
     
-    inline def setNow_date(value: Date): Self = StObject.set(x, "now_date", value.asInstanceOf[js.Any])
+    inline def setNow_date(value: js.Date): Self = StObject.set(x, "now_date", value.asInstanceOf[js.Any])
     
     inline def setOccurrence_timestamp_in_utc(value: Boolean): Self = StObject.set(x, "occurrence_timestamp_in_utc", value.asInstanceOf[js.Any])
     
@@ -831,9 +830,9 @@ object SchedulerConfigOptions {
     
     inline def setReadonly_form(value: Boolean): Self = StObject.set(x, "readonly_form", value.asInstanceOf[js.Any])
     
-    inline def setRecurring_workdays(value: js.Array[js.Any]): Self = StObject.set(x, "recurring_workdays", value.asInstanceOf[js.Any])
+    inline def setRecurring_workdays(value: js.Array[Any]): Self = StObject.set(x, "recurring_workdays", value.asInstanceOf[js.Any])
     
-    inline def setRecurring_workdaysVarargs(value: js.Any*): Self = StObject.set(x, "recurring_workdays", js.Array(value :_*))
+    inline def setRecurring_workdaysVarargs(value: Any*): Self = StObject.set(x, "recurring_workdays", js.Array(value*))
     
     inline def setRepeat_date(value: String): Self = StObject.set(x, "repeat_date", value.asInstanceOf[js.Any])
     

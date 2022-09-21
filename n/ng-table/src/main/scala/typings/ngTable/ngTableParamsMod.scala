@@ -24,16 +24,16 @@ object ngTableParamsMod {
   
   @JSImport("ng-table/src/core/ngTableParams", "NgTableParams")
   @js.native
-  class NgTableParams[T] () extends StObject {
+  open class NgTableParams[T] () extends StObject {
     def this(baseParameters: Boolean) = this()
     def this(baseParameters: IParamValues[T]) = this()
     def this(baseParameters: Boolean, baseSettings: ISettings[T]) = this()
     def this(baseParameters: Unit, baseSettings: ISettings[T]) = this()
     def this(baseParameters: IParamValues[T], baseSettings: ISettings[T]) = this()
     
-    /* private */ var _params: js.Any = js.native
+    /* private */ var _params: Any = js.native
     
-    /* private */ var _settings: js.Any = js.native
+    /* private */ var _settings: Any = js.native
     
     /**
       * Returns the number of data rows per page
@@ -45,16 +45,16 @@ object ngTableParamsMod {
       */
     def count(count: Double): this.type = js.native
     
-    /* private */ def createComparableParams(): js.Any = js.native
+    /* private */ def createComparableParams(): Any = js.native
     
     /**
       * The page of data rows currently being displayed in the table
       */
     var data: js.Array[T] = js.native
     
-    /* private */ var defaultSettings: js.Any = js.native
+    /* private */ var defaultSettings: Any = js.native
     
-    /* private */ var errParamsMemento: js.Any = js.native
+    /* private */ var errParamsMemento: Any = js.native
     
     /**
       * Returns the current filter values used to restrict the set of data rows.
@@ -137,7 +137,7 @@ object ngTableParamsMod {
       */
     def hasFilterChanges(): Boolean = js.native
     
-    /* private */ def hasGlobalSearchFieldChanges(): js.Any = js.native
+    /* private */ def hasGlobalSearchFieldChanges(): Any = js.native
     
     /**
       * Returns true when at least one group has been set
@@ -151,9 +151,9 @@ object ngTableParamsMod {
     def hasGroup(group: IGroupingFunc[T]): Boolean = js.native
     def hasGroup(group: IGroupingFunc[T], sortDirection: String): Boolean = js.native
     
-    /* private */ var initialEvents: js.Any = js.native
+    /* private */ var initialEvents: Any = js.native
     
-    /* private */ var isCommittedDataset: js.Any = js.native
+    /* private */ var isCommittedDataset: Any = js.native
     
     /**
       * Return true when a change to this instance should require the `reload` method
@@ -177,8 +177,8 @@ object ngTableParamsMod {
     def isSortBy(field: String, direction: String): Boolean = js.native
     
     /* private */ def log(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type <none> is not an array type */ args: js.Any
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type <none> is not an array type */ args: Any
+    ): Any = js.native
     
     /**
       * Returns sorting values in a format that can be consumed by the angular `$orderBy` filter service
@@ -207,9 +207,9 @@ object ngTableParamsMod {
     @JSName("parameters")
     def parameters_IParamValues(): IParamValues[T] = js.native
     
-    /* private */ def parseGroup(group: js.Any): js.Any = js.native
+    /* private */ def parseGroup(group: Any): Any = js.native
     
-    /* private */ var prevParamsMemento: js.Any = js.native
+    /* private */ var prevParamsMemento: Any = js.native
     
     /**
       * Trigger a reload of the data rows
@@ -218,7 +218,7 @@ object ngTableParamsMod {
     
     def reloadPages(): Unit = js.native
     
-    /* private */ def runInterceptorPipeline(fetchedData: js.Any): js.Any = js.native
+    /* private */ def runInterceptorPipeline(fetchedData: Any): Any = js.native
     
     /**
       * Returns the settings for the table.
@@ -283,13 +283,13 @@ object ngTableParamsMod {
     
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.$log")
     @js.native
-    def $log: js.Any = js.native
-    inline def $log_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
+    def $log: Any = js.native
+    inline def $log_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.$q")
     @js.native
-    def $q: js.Any = js.native
-    inline def $q_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
+    def $q: Any = js.native
+    inline def $q_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
     
     inline def init(
       $q: IQService,
@@ -301,18 +301,18 @@ object ngTableParamsMod {
     
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.ngTableDefaults")
     @js.native
-    def ngTableDefaults: js.Any = js.native
-    inline def ngTableDefaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
+    def ngTableDefaults: Any = js.native
+    inline def ngTableDefaults_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.ngTableEventsChannel")
     @js.native
-    def ngTableEventsChannel: js.Any = js.native
-    inline def ngTableEventsChannel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
+    def ngTableEventsChannel: Any = js.native
+    inline def ngTableEventsChannel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.ngTableSettings")
     @js.native
-    def ngTableSettings: js.Any = js.native
-    inline def ngTableSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
+    def ngTableSettings: Any = js.native
+    inline def ngTableSettings_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
   }
   
   trait IParamValues[T] extends StObject {

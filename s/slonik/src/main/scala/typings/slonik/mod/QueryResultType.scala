@@ -44,11 +44,11 @@ object QueryResultType {
     
     inline def setFields(value: js.Array[FieldType]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: FieldType*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldType*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setNotices(value: js.Array[NoticeType]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
     
-    inline def setNoticesVarargs(value: NoticeType*): Self = StObject.set(x, "notices", js.Array(value :_*))
+    inline def setNoticesVarargs(value: NoticeType*): Self = StObject.set(x, "notices", js.Array(value*))
     
     inline def setOid(value: Double): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
     
@@ -60,6 +60,6 @@ object QueryResultType {
     
     inline def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object DescribeCommentsResponse {
     
     inline def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
     
-    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "Comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "Comments", js.Array(value*))
     
     inline def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,7 @@ object XSpellChecker {
     getLocales: () => SafeArray[Locale],
     hasLocale: Locale => Boolean,
     isValid: (String, Locale, PropertyValues) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     spell: (String, Locale, PropertyValues) => XSpellAlternatives
   ): XSpellChecker = {

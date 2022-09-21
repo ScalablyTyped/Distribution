@@ -12,32 +12,31 @@ object popupPopupMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Popup/Popup", "Popup")
   @js.native
-  class Popup protected ()
-    extends Component[IPopupProps, IPopupState, js.Any] {
+  open class Popup protected () extends Component[IPopupProps, IPopupState, Any] {
     def this(props: IPopupProps) = this()
     
     @JSName("UNSAFE_componentWillMount")
     def UNSAFE_componentWillMount_MPopup(): Unit = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _containsFocus: js.Any = js.native
+    /* private */ var _containsFocus: Any = js.native
     
-    /* private */ var _disposables: js.Any = js.native
+    /* private */ var _disposables: Any = js.native
     
-    /* private */ var _getScrollBar: js.Any = js.native
+    /* private */ var _getScrollBar: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _originalFocusedElement: js.Any = js.native
+    /* private */ var _originalFocusedElement: Any = js.native
     
     var _root: RefObject[HTMLDivElement] = js.native
     
-    /* private */ var _updateScrollBarAsync: js.Any = js.native
+    /* private */ var _updateScrollBarAsync: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPopup(): Unit = js.native

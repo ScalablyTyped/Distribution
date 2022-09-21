@@ -28,7 +28,7 @@ object layerMod {
   
   @JSImport("guacamole-client/lib/Layer", "Layer")
   @js.native
-  class Layer protected () extends StObject {
+  open class Layer protected () extends StObject {
     /**
       * @param width The width of the Layer, in pixels. The canvas element
       * backing this Layer will be given this width.
@@ -62,7 +62,14 @@ object layerMod {
       * @param negative Whether the arc should be drawn in order of
       *                           decreasing angle.
       */
-    def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Boolean): Unit = js.native
+    def arc(
+      x: Double,
+      y: Double,
+      radius: Double,
+      startAngle: Double,
+      endAngle: Double,
+      counterclockwise: Boolean
+    ): Unit = js.native
     /**
       * Add the specified arc to the current path.
       * @param x The X coordinate of the center of the circle which
@@ -488,7 +495,7 @@ object layerMod {
     
     @JSImport("guacamole-client/lib/Layer", "Layer.Pixel")
     @js.native
-    class Pixel protected () extends StObject {
+    open class Pixel protected () extends StObject {
       /**
         * @param r The red component of this pixel.
         * @param g The green component of this pixel.

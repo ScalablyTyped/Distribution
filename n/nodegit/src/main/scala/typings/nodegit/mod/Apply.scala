@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Apply")
 @js.native
-class Apply ()
+open class Apply ()
   extends typings.nodegit.applyMod.Apply
 /* static members */
 object Apply {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutJobTaggingRequest extends StObject {
   
   /**
-    * The AWS account ID associated with the S3 Batch Operations job.
+    * The Amazon Web Services account ID associated with the S3 Batch Operations job.
     */
   var AccountId: typings.awsSdk.s3controlMod.AccountId
   
@@ -36,6 +36,6 @@ object PutJobTaggingRequest {
     
     inline def setTags(value: S3TagSet): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: S3Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: S3Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

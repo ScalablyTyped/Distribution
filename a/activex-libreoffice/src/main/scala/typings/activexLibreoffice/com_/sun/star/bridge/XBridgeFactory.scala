@@ -46,7 +46,7 @@ object XBridgeFactory {
     createBridge: (String, String, XConnection, XInstanceProvider) => XBridge,
     getBridge: String => XBridge,
     getExistingBridges: () => SafeArray[XBridge],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XBridgeFactory = {
     val __obj = js.Dynamic.literal(ExistingBridges = ExistingBridges.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createBridge = js.Any.fromFunction4(createBridge), getBridge = js.Any.fromFunction1(getBridge), getExistingBridges = js.Any.fromFunction0(getExistingBridges), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

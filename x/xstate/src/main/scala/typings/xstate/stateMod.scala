@@ -1,25 +1,35 @@
 package typings.xstate
 
-import typings.std.Exclude
-import typings.std.Pick
+import typings.std.Omit
 import typings.std.Record
-import typings.xstate.actorMod.Actor
-import typings.xstate.anon.Context
-import typings.xstate.anon.ContextTContext
+import typings.std.Set
+import typings.xstate.anon.Tags
+import typings.xstate.anon.Value
 import typings.xstate.stateNodeMod.StateNode
+import typings.xstate.typegenTypesMod.TypegenDisabled
 import typings.xstate.typesMod.ActionObject
 import typings.xstate.typesMod.ActivityMap
-import typings.xstate.typesMod.AnyEventObject
+import typings.xstate.typesMod.ActorRef
+import typings.xstate.typesMod.BaseActionObject
 import typings.xstate.typesMod.EventObject
-import typings.xstate.typesMod.EventType
 import typings.xstate.typesMod.HistoryValue
+import typings.xstate.typesMod.Prop
 import typings.xstate.typesMod.SCXML.Event
 import typings.xstate.typesMod.StateConfig
+import typings.xstate.typesMod.StateMachine
 import typings.xstate.typesMod.StateSchema
 import typings.xstate.typesMod.StateValue
 import typings.xstate.typesMod.TransitionDefinition
 import typings.xstate.typesMod.Typestate
+import typings.xstate.xstateStrings.can
 import typings.xstate.xstateStrings.configuration
+import typings.xstate.xstateStrings.hasTag
+import typings.xstate.xstateStrings.machine
+import typings.xstate.xstateStrings.matches
+import typings.xstate.xstateStrings.matchesStates
+import typings.xstate.xstateStrings.resolved
+import typings.xstate.xstateStrings.tags
+import typings.xstate.xstateStrings.toStrings
 import typings.xstate.xstateStrings.transitions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,7 +43,7 @@ object stateMod {
   
   @JSImport("xstate/lib/State", "State")
   @js.native
-  class State[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */] protected () extends StObject {
+  open class State[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */, TResolvedTypesMeta] protected () extends StObject {
     /**
       * Creates a new State instance.
       * @param value The state value
@@ -57,6 +67,20 @@ object stateMod {
     var activities: ActivityMap = js.native
     
     /**
+      * Determines whether sending the `event` will cause a non-forbidden transition
+      * to be selected, even if the transitions have no actions nor
+      * change the state value.
+      *
+      * @param event The event to test
+      * @returns Whether the event will cause a transition
+      */
+    def can(event: TEvent): Boolean = js.native
+    @JSName("can")
+    def can_type(
+      event: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/types.SimpleEventsOf<TEvent>['type'] */ js.Any
+    ): Boolean = js.native
+    
+    /**
       * Indicates whether the state has changed from the previous state. A state is considered "changed" if:
       *
       * - Its value is not equal to its previous value, or:
@@ -69,12 +93,12 @@ object stateMod {
     /**
       * An object mapping actor IDs to spawned actors/invoked services.
       */
-    var children: Record[String, Actor[js.Any, AnyEventObject]] = js.native
+    var children: Record[String, ActorRef[Any, Any]] = js.native
     
     /**
       * The enabled state nodes representative of the state value.
       */
-    var configuration: js.Array[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]] = js.native
+    var configuration: js.Array[StateNode[TContext, Any, TEvent, Any, Any, TypegenDisabled]] = js.native
     
     var context: TContext = js.native
     
@@ -87,24 +111,43 @@ object stateMod {
     
     var events: js.Array[TEvent] = js.native
     
-    var history: js.UndefOr[State[TContext, TEvent, TStateSchema, TTypestate]] = js.native
+    /**
+      * Whether the current state configuration has a state node with the specified `tag`.
+      * @param tag
+      */
+    def hasTag(tag: String | (Prop[Prop[TResolvedTypesMeta, resolved], tags])): Boolean = js.native
+    
+    var history: js.UndefOr[State[TContext, TEvent, TStateSchema, TTypestate, TResolvedTypesMeta]] = js.native
     
     var historyValue: js.UndefOr[HistoryValue] = js.native
     
+    var machine: js.UndefOr[
+        StateMachine[TContext, Any, TEvent, TTypestate, BaseActionObject, Any, TResolvedTypesMeta]
+      ] = js.native
+    
+    def matches[TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */](parentStateValue: TSV): Boolean = js.native
     /**
       * Whether the current state value is a subset of the given parent state value.
       * @param parentStateValue
       */
-    def matches[TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */](parentStateValue: TSV): Boolean = js.native
+    @JSName("matches")
+    def matches_TSV_PropPropTResolvedTypesMetaresolvedmatchesStates[TSV /* <: Prop[Prop[TResolvedTypesMeta, resolved], matchesStates] */](parentStateValue: TSV): Boolean = js.native
     
-    var meta: js.Any = js.native
+    var meta: Any = js.native
     
     /**
       * The next events that will cause a transition from the current state.
       */
-    var nextEvents: js.Array[EventType] = js.native
+    var nextEvents: js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
+      ] = js.native
     
-    def toJSON(): Pick[this.type, Exclude[/* keyof this */ String, configuration | transitions]] = js.native
+    var tags: Set[String] = js.native
+    
+    def toJSON(): (Omit[
+        this.type, 
+        machine | configuration | transitions | tags | toStrings | typings.xstate.xstateStrings.toJSON | matches | hasTag | can
+      ]) & Tags = js.native
     
     /**
       * Returns an array of all the string leaf state node paths.
@@ -134,31 +177,32 @@ object stateMod {
       * Creates a new State instance for the given `config`.
       * @param config The state config
       */
-    inline def create[TC, TE /* <: EventObject */](config: StateConfig[TC, TE]): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    inline def create[TC, TE /* <: EventObject */](config: StateConfig[TC, TE]): State[TC, TE, Any, Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, Any, Any, Any]]
     
     /**
       * Creates a new State instance for the given `stateValue` and `context`.
       * @param stateValue
       * @param context
       */
-    inline def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]]): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
-    inline def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]], context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
-    inline def from[TC, TE /* <: EventObject */](stateValue: StateValue): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
-    inline def from[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    inline def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, Any, Any, Any]): State[TC, TE, Any, Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, Any, Any, Any]]
+    inline def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, Any, Any, Any], context: TC): State[TC, TE, Any, Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, Any, Any, Any]]
+    inline def from[TC, TE /* <: EventObject */](stateValue: StateValue): State[TC, TE, Any, Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, Any, Any, Any]]
+    inline def from[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, Any, Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, Any, Any, Any]]
     
     /**
       * Creates a new `State` instance for the given `stateValue` and `context` with no actions (side-effects).
       * @param stateValue
       * @param context
       */
-    inline def inert[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]], context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
-    inline def inert[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    inline def inert[TC, TE /* <: EventObject */](stateValue: State[TC, TE, Any, Any, Any], context: TC): State[TC, TE, Any, Value[TC], TypegenDisabled] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, Any, Value[TC], TypegenDisabled]]
+    inline def inert[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, Any, Value[TC], TypegenDisabled] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, Any, Value[TC], TypegenDisabled]]
   }
   
-  inline def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, js.Any, Context[TC]]): ActionObject[TC, TE] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionToState")(action.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ActionObject[TC, TE]]
+  inline def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, Any, Any, Any]): ActionObject[TC, TE] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionToState")(action.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ActionObject[TC, TE]]
   
-  inline def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: String): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean]
-  inline def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: js.Object): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean]
+  inline def isState[TContext, TEvent /* <: EventObject */](state: Any): /* is xstate.xstate/lib/types.StateConfig<TContext, TEvent> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.StateConfig<TContext, TEvent> */ Boolean]
+  
+  inline def isStateConfig[TContext, TEvent /* <: EventObject */](state: Any): /* is xstate.xstate/lib/types.StateConfig<TContext, TEvent> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateConfig")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.StateConfig<TContext, TEvent> */ Boolean]
   
   inline def stateValuesEqual(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")().asInstanceOf[Boolean]
   inline def stateValuesEqual(a: Unit, b: StateValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]

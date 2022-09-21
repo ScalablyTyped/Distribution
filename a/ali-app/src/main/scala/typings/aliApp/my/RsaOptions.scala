@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region 数据安全 https://docs.alipay.com/mini/api/data-safe
 trait RsaOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /**
     * 使用rsa加密还是rsa解密，encrypt加密，decrypt解密

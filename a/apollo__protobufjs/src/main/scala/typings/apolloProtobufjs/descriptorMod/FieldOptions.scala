@@ -20,7 +20,6 @@ import typings.apolloProtobufjs.mod.Service
 import typings.apolloProtobufjs.mod.Type
 import typings.apolloProtobufjs.mod.TypeDecorator
 import typings.apolloProtobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +55,7 @@ object FieldOptions {
     * @param nestedJson Any nested object descriptors
     * @returns `this`
     */
-  inline def addJSON(nestedJson: StringDictionary[js.UndefOr[AnyNestedObject]]): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("addJSON")(nestedJson.asInstanceOf[js.Any]).asInstanceOf[Namespace]
+  inline def addJSON(nestedJson: StringDictionary[AnyNestedObject]): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("addJSON")(nestedJson.asInstanceOf[js.Any]).asInstanceOf[Namespace]
   
   /**
     * Adds a nested object to this type.
@@ -78,8 +77,8 @@ object FieldOptions {
     * @param name Message name
     * @param [options] Declared options
     */
-  inline def constructor(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def constructor(name: String, options: StringDictionary[js.UndefOr[js.Any]]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def constructor(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def constructor(name: String, options: StringDictionary[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Creates a new message of this type using the specified properties.
@@ -87,7 +86,7 @@ object FieldOptions {
     * @returns Message instance
     */
   inline def create(): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Message[js.Object]]
-  inline def create(properties: StringDictionary[js.UndefOr[js.Any]]): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
+  inline def create(properties: StringDictionary[Any]): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
   
   /**
     * The registered constructor, if any registered, otherwise a generic constructor.
@@ -106,6 +105,8 @@ object FieldOptions {
   inline def d[T /* <: Message[T] */](): TypeDecorator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("d")().asInstanceOf[TypeDecorator[T]]
   inline def d[T /* <: Message[T] */](typeName: String): TypeDecorator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(typeName.asInstanceOf[js.Any]).asInstanceOf[TypeDecorator[T]]
   
+  inline def decode(reader: js.typedarray.Uint8Array): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): Message[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message[js.Object]]
   /**
     * Decodes a message of this type.
     * @param reader Reader or buffer to decode from
@@ -116,9 +117,8 @@ object FieldOptions {
     */
   inline def decode(reader: Reader): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
   inline def decode(reader: Reader, length: Double): Message[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message[js.Object]]
-  inline def decode(reader: Uint8Array): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
-  inline def decode(reader: Uint8Array, length: Double): Message[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Message[js.Object]]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
   /**
     * Decodes a message of this type preceeded by its byte length as a varint.
     * @param reader Reader or buffer to decode from
@@ -127,7 +127,6 @@ object FieldOptions {
     * @throws {util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
-  inline def decodeDelimited(reader: Uint8Array): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
   
   /**
     * Defines additial namespaces within this one if not yet existing.
@@ -136,12 +135,12 @@ object FieldOptions {
     * @returns Pointer to the last namespace created or `this` if path is empty
     */
   inline def define(path: String): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(path.asInstanceOf[js.Any]).asInstanceOf[Namespace]
-  inline def define(path: String, json: js.Any): Namespace = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(path.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Namespace]
+  inline def define(path: String, json: Any): Namespace = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(path.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Namespace]
   inline def define(path: js.Array[String]): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(path.asInstanceOf[js.Any]).asInstanceOf[Namespace]
-  inline def define(path: js.Array[String], json: js.Any): Namespace = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(path.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Namespace]
+  inline def define(path: js.Array[String], json: Any): Namespace = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(path.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Namespace]
   
-  inline def encode(message: StringDictionary[js.UndefOr[js.Any]]): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  inline def encode(message: StringDictionary[js.UndefOr[js.Any]], writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: StringDictionary[Any]): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: StringDictionary[Any], writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   /**
     * Encodes a message of this type. Does not implicitly {@link Type#verify|verify} messages.
     * @param message Message instance or plain object
@@ -151,8 +150,8 @@ object FieldOptions {
   inline def encode(message: Message[js.Object]): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
   inline def encode(message: Message[js.Object], writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
-  inline def encodeDelimited(message: StringDictionary[js.UndefOr[js.Any]]): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  inline def encodeDelimited(message: StringDictionary[js.UndefOr[js.Any]], writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: StringDictionary[Any]): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: StringDictionary[Any], writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   /**
     * Encodes a message of this type preceeded by its byte length as a varint. Does not implicitly {@link Type#verify|verify} messages.
     * @param message Message instance or plain object
@@ -192,7 +191,7 @@ object FieldOptions {
     * @param object Plain object to convert
     * @returns Message instance
     */
-  inline def fromObject(`object`: StringDictionary[js.UndefOr[js.Any]]): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
+  inline def fromObject(`object`: StringDictionary[Any]): Message[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Message[js.Object]]
   
   /** Full name including leading dot. */
   @JSImport("@apollo/protobufjs/ext/descriptor", "FieldOptions.fullName")
@@ -220,14 +219,14 @@ object FieldOptions {
     * @returns Enum values
     * @throws {Error} If there is no such enum
     */
-  inline def getEnum(name: String): StringDictionary[js.UndefOr[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnum")(name.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[Double]]]
+  inline def getEnum(name: String): StringDictionary[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnum")(name.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Double]]
   
   /**
     * Gets an option value.
     * @param name Option name
     * @returns Option value or `undefined` if not set
     */
-  inline def getOption(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getOption(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Tests if the specified id is reserved.
@@ -250,6 +249,8 @@ object FieldOptions {
     * @returns Looked up object or `null` if none could be found
     */
   inline def lookup(path: String): ReflectionObject | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any]).asInstanceOf[ReflectionObject | Null]
+  inline def lookup(path: String, filterTypes: js.Array[Any]): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  inline def lookup(path: String, filterTypes: js.Array[Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
   /**
     * Recursively looks up the reflection object matching the specified path in the scope of this namespace.
     * @param path Path to look up
@@ -257,16 +258,14 @@ object FieldOptions {
     * @param [parentAlreadyChecked=false] If known, whether the parent has already been checked
     * @returns Looked up object or `null` if none could be found
     */
-  inline def lookup(path: String, filterTypes: js.Any): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
-  inline def lookup(path: String, filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
-  inline def lookup(path: String, filterTypes: js.Array[js.Any]): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
-  inline def lookup(path: String, filterTypes: js.Array[js.Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  inline def lookup(path: String, filterTypes: Any): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  inline def lookup(path: String, filterTypes: Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
   inline def lookup(path: String, parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
   inline def lookup(path: js.Array[String]): ReflectionObject | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any]).asInstanceOf[ReflectionObject | Null]
-  inline def lookup(path: js.Array[String], filterTypes: js.Any): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
-  inline def lookup(path: js.Array[String], filterTypes: js.Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
-  inline def lookup(path: js.Array[String], filterTypes: js.Array[js.Any]): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
-  inline def lookup(path: js.Array[String], filterTypes: js.Array[js.Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  inline def lookup(path: js.Array[String], filterTypes: js.Array[Any]): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  inline def lookup(path: js.Array[String], filterTypes: js.Array[Any], parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  inline def lookup(path: js.Array[String], filterTypes: Any): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
+  inline def lookup(path: js.Array[String], filterTypes: Any, parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], filterTypes.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
   inline def lookup(path: js.Array[String], parentAlreadyChecked: Boolean): ReflectionObject | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any], parentAlreadyChecked.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject | Null]
   
   /**
@@ -318,14 +317,14 @@ object FieldOptions {
   /** Nested objects by name. */
   @JSImport("@apollo/protobufjs/ext/descriptor", "FieldOptions.nested")
   @js.native
-  def nested: js.UndefOr[StringDictionary[js.UndefOr[ReflectionObject]]] = js.native
+  def nested: js.UndefOr[StringDictionary[ReflectionObject]] = js.native
   
   /** Nested objects of this namespace as an array for iteration. */
   @JSImport("@apollo/protobufjs/ext/descriptor", "FieldOptions.nestedArray")
   @js.native
   val nestedArray: js.Array[ReflectionObject] = js.native
   
-  inline def nested_=(x: js.UndefOr[StringDictionary[js.UndefOr[ReflectionObject]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nested")(x.asInstanceOf[js.Any])
+  inline def nested_=(x: js.UndefOr[StringDictionary[ReflectionObject]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nested")(x.asInstanceOf[js.Any])
   
   /**
     * Called when this object is added to a parent.
@@ -347,8 +346,8 @@ object FieldOptions {
   /** Options. */
   @JSImport("@apollo/protobufjs/ext/descriptor", "FieldOptions.options")
   @js.native
-  def options: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = js.native
-  inline def options_=(x: js.UndefOr[StringDictionary[js.UndefOr[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+  def options: js.UndefOr[StringDictionary[Any]] = js.native
+  inline def options_=(x: js.UndefOr[StringDictionary[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   
   /** Parent namespace. */
   @JSImport("@apollo/protobufjs/ext/descriptor", "FieldOptions.parent")
@@ -410,8 +409,8 @@ object FieldOptions {
     * @param [ifNotSet] Sets the option only if it isn't currently set
     * @returns `this`
     */
-  inline def setOption(name: String, value: js.Any): ReflectionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject]
-  inline def setOption(name: String, value: js.Any, ifNotSet: Boolean): ReflectionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ifNotSet.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject]
+  inline def setOption(name: String, value: Any): ReflectionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject]
+  inline def setOption(name: String, value: Any, ifNotSet: Boolean): ReflectionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ifNotSet.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject]
   
   /**
     * Sets multiple options.
@@ -419,8 +418,8 @@ object FieldOptions {
     * @param [ifNotSet] Sets an option only if it isn't currently set
     * @returns `this`
     */
-  inline def setOptions(options: StringDictionary[js.UndefOr[js.Any]]): ReflectionObject = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ReflectionObject]
-  inline def setOptions(options: StringDictionary[js.UndefOr[js.Any]], ifNotSet: Boolean): ReflectionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any], ifNotSet.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject]
+  inline def setOptions(options: StringDictionary[Any]): ReflectionObject = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ReflectionObject]
+  inline def setOptions(options: StringDictionary[Any], ifNotSet: Boolean): ReflectionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any], ifNotSet.asInstanceOf[js.Any])).asInstanceOf[ReflectionObject]
   
   /**
     * Sets up {@link Type#encode|encode}, {@link Type#decode|decode} and {@link Type#verify|verify}.
@@ -448,7 +447,7 @@ object FieldOptions {
     * Converts this reflection object to its descriptor representation.
     * @returns Descriptor
     */
-  inline def toJSON_StringDictionary(): StringDictionary[js.UndefOr[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[StringDictionary[js.UndefOr[js.Any]]]
+  inline def toJSON_StringDictionary(): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[StringDictionary[Any]]
   
   /**
     * Creates a plain object from a message of this type. Also converts values to other types if specified.
@@ -456,8 +455,8 @@ object FieldOptions {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: Message[js.Object]): StringDictionary[js.UndefOr[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[js.Any]]]
-  inline def toObject(message: Message[js.Object], options: IConversionOptions): StringDictionary[js.UndefOr[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.UndefOr[js.Any]]]
+  inline def toObject(message: Message[js.Object]): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: Message[js.Object], options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Converts this instance to its string representation.
@@ -470,5 +469,5 @@ object FieldOptions {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.UndefOr[js.Any]]): Null | String = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[Null | String]
+  inline def verify(message: StringDictionary[Any]): Null | String = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[Null | String]
 }

@@ -1,9 +1,8 @@
 package typings.tunnelSsh
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Server
-import typings.std.Error
+import typings.std.ReadableStream
 import typings.tunnelSsh.anon.Cipher
 import typings.tunnelSsh.tunnelSshStrings.force
 import org.scalablytyped.runtime.StObject
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(): Server = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Server]
-  inline def apply(config: Unit, cb: js.Function2[/* error */ Error, /* server */ Server, Unit]): Server = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Server]
+  inline def apply(config: Unit, cb: js.Function2[/* error */ js.Error, /* server */ Server, Unit]): Server = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Server]
   inline def apply(config: Config): Server = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Server]
-  inline def apply(config: Config, cb: js.Function2[/* error */ Error, /* server */ Server, Unit]): Server = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Server]
+  inline def apply(config: Config, cb: js.Function2[/* error */ js.Error, /* server */ Server, Unit]): Server = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Server]
   
   @JSImport("tunnel-ssh", JSImport.Namespace)
   @js.native
@@ -88,7 +87,7 @@ object mod {
     
     var readyTimeout: js.UndefOr[Double] = js.undefined
     
-    var sock: js.UndefOr[ReadableStream] = js.undefined
+    var sock: js.UndefOr[ReadableStream[Any]] = js.undefined
     
     var strictVendor: js.UndefOr[Boolean] = js.undefined
     
@@ -213,7 +212,7 @@ object mod {
       
       inline def setReadyTimeoutUndefined: Self = StObject.set(x, "readyTimeout", js.undefined)
       
-      inline def setSock(value: ReadableStream): Self = StObject.set(x, "sock", value.asInstanceOf[js.Any])
+      inline def setSock(value: ReadableStream[Any]): Self = StObject.set(x, "sock", value.asInstanceOf[js.Any])
       
       inline def setSockUndefined: Self = StObject.set(x, "sock", js.undefined)
       

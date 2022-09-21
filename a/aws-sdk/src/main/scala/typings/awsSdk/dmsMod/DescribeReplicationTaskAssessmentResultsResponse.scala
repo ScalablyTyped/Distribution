@@ -42,6 +42,6 @@ object DescribeReplicationTaskAssessmentResultsResponse {
     
     inline def setReplicationTaskAssessmentResultsUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentResults", js.undefined)
     
-    inline def setReplicationTaskAssessmentResultsVarargs(value: ReplicationTaskAssessmentResult*): Self = StObject.set(x, "ReplicationTaskAssessmentResults", js.Array(value :_*))
+    inline def setReplicationTaskAssessmentResultsVarargs(value: ReplicationTaskAssessmentResult*): Self = StObject.set(x, "ReplicationTaskAssessmentResults", js.Array(value*))
   }
 }

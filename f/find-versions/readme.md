@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-versions
 
-Typings are for version 3.2.0
+Typings are for version 5.1.0
 
 ## Library description:
 Find semver versions in a string: `unicorn v1.2.3` → `1.2.3`
@@ -11,9 +11,9 @@ Find semver versions in a string: `unicorn v1.2.3` → `1.2.3`
 | Full name          | find-versions |
 | Keywords           | semver, version, versions, regex, regexp, match, matching, semantic, find, extract, get |
 | # releases         | 4 |
-| # dependents       | 73 |
-| # downloads        | 134467070 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5925465E7 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/find-versions#readme)

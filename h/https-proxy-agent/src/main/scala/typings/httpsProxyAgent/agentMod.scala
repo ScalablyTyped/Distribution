@@ -10,7 +10,7 @@ object agentMod {
   
   @JSImport("https-proxy-agent/dist/agent", JSImport.Default)
   @js.native
-  class default protected () extends HttpsProxyAgent {
+  open class default protected () extends HttpsProxyAgent {
     def this(_opts: String) = this()
     def this(_opts: HttpsProxyAgentOptions) = this()
   }
@@ -18,8 +18,8 @@ object agentMod {
   @js.native
   trait HttpsProxyAgent extends Agent {
     
-    /* private */ var proxy: js.Any = js.native
+    /* private */ var proxy: Any = js.native
     
-    /* private */ var secureProxy: js.Any = js.native
+    /* private */ var secureProxy: Any = js.native
   }
 }

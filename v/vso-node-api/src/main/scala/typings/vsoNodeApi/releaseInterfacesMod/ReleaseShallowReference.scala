@@ -9,7 +9,7 @@ trait ReleaseShallowReference extends StObject {
   /**
     * Gets the links to related resources, APIs, and views for the release.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Gets the unique identifier of release.
@@ -28,7 +28,7 @@ trait ReleaseShallowReference extends StObject {
 }
 object ReleaseShallowReference {
   
-  inline def apply(_links: js.Any, id: Double, name: String, url: String): ReleaseShallowReference = {
+  inline def apply(_links: Any, id: Double, name: String, url: String): ReleaseShallowReference = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseShallowReference]
   }
@@ -41,6 +41,6 @@ object ReleaseShallowReference {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

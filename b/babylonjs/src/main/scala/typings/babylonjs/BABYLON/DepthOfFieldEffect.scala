@@ -9,16 +9,16 @@ trait DepthOfFieldEffect
   extends StObject
      with PostProcessRenderEffect {
   
-  /* private */ var _circleOfConfusion: js.Any = js.native
+  /* private */ var _circleOfConfusion: Any = js.native
   
   /**
     * @hidden Internal, blurs from high to low
     */
   var _depthOfFieldBlurX: js.Array[DepthOfFieldBlurPostProcess] = js.native
   
-  /* private */ var _depthOfFieldBlurY: js.Any = js.native
+  /* private */ var _depthOfFieldBlurY: Any = js.native
   
-  /* private */ var _dofMerge: js.Any = js.native
+  /* private */ var _dofMerge: Any = js.native
   
   /**
     * @hidden Internal post processes in depth of field effect
@@ -67,14 +67,14 @@ trait DepthOfFieldEffect
   def focusDistance_=(value: Double): Unit = js.native
   
   /**
-    * Get the current class name of the current effet
+    * Get the current class name of the current effect
     * @returns "DepthOfFieldEffect"
     */
   def getClassName(): String = js.native
   
   def lensSize: Double = js.native
   /**
-    * Max lens size in scene units/1000 (eg. millimeter). Standard cameras are 50mm. (default: 50) The diamater of the resulting aperture can be computed by lensSize/fStop.
+    * Max lens size in scene units/1000 (eg. millimeter). Standard cameras are 50mm. (default: 50) The diameter of the resulting aperture can be computed by lensSize/fStop.
     */
   def lensSize_=(value: Double): Unit = js.native
 }

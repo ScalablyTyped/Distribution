@@ -22,6 +22,11 @@ trait TunnelOption extends StObject {
   var IkeVersions: js.UndefOr[IKEVersionsList] = js.undefined
   
   /**
+    * Options for logging VPN tunnel activity.
+    */
+  var LogOptions: js.UndefOr[VpnTunnelLogOptions] = js.undefined
+  
+  /**
     * The external IP address of the VPN tunnel.
     */
   var OutsideIpAddress: js.UndefOr[String] = js.undefined
@@ -77,7 +82,7 @@ trait TunnelOption extends StObject {
   var RekeyFuzzPercentage: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the VPN connection performs an IKE rekey.
+    * The margin time, in seconds, before the phase 2 lifetime expires, during which the Amazon Web Services side of the VPN connection performs an IKE rekey.
     */
   var RekeyMarginTimeSeconds: js.UndefOr[Integer] = js.undefined
   
@@ -122,7 +127,11 @@ object TunnelOption {
     
     inline def setIkeVersionsUndefined: Self = StObject.set(x, "IkeVersions", js.undefined)
     
-    inline def setIkeVersionsVarargs(value: IKEVersionsListValue*): Self = StObject.set(x, "IkeVersions", js.Array(value :_*))
+    inline def setIkeVersionsVarargs(value: IKEVersionsListValue*): Self = StObject.set(x, "IkeVersions", js.Array(value*))
+    
+    inline def setLogOptions(value: VpnTunnelLogOptions): Self = StObject.set(x, "LogOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLogOptionsUndefined: Self = StObject.set(x, "LogOptions", js.undefined)
     
     inline def setOutsideIpAddress(value: String): Self = StObject.set(x, "OutsideIpAddress", value.asInstanceOf[js.Any])
     
@@ -132,19 +141,19 @@ object TunnelOption {
     
     inline def setPhase1DHGroupNumbersUndefined: Self = StObject.set(x, "Phase1DHGroupNumbers", js.undefined)
     
-    inline def setPhase1DHGroupNumbersVarargs(value: Phase1DHGroupNumbersListValue*): Self = StObject.set(x, "Phase1DHGroupNumbers", js.Array(value :_*))
+    inline def setPhase1DHGroupNumbersVarargs(value: Phase1DHGroupNumbersListValue*): Self = StObject.set(x, "Phase1DHGroupNumbers", js.Array(value*))
     
     inline def setPhase1EncryptionAlgorithms(value: Phase1EncryptionAlgorithmsList): Self = StObject.set(x, "Phase1EncryptionAlgorithms", value.asInstanceOf[js.Any])
     
     inline def setPhase1EncryptionAlgorithmsUndefined: Self = StObject.set(x, "Phase1EncryptionAlgorithms", js.undefined)
     
-    inline def setPhase1EncryptionAlgorithmsVarargs(value: Phase1EncryptionAlgorithmsListValue*): Self = StObject.set(x, "Phase1EncryptionAlgorithms", js.Array(value :_*))
+    inline def setPhase1EncryptionAlgorithmsVarargs(value: Phase1EncryptionAlgorithmsListValue*): Self = StObject.set(x, "Phase1EncryptionAlgorithms", js.Array(value*))
     
     inline def setPhase1IntegrityAlgorithms(value: Phase1IntegrityAlgorithmsList): Self = StObject.set(x, "Phase1IntegrityAlgorithms", value.asInstanceOf[js.Any])
     
     inline def setPhase1IntegrityAlgorithmsUndefined: Self = StObject.set(x, "Phase1IntegrityAlgorithms", js.undefined)
     
-    inline def setPhase1IntegrityAlgorithmsVarargs(value: Phase1IntegrityAlgorithmsListValue*): Self = StObject.set(x, "Phase1IntegrityAlgorithms", js.Array(value :_*))
+    inline def setPhase1IntegrityAlgorithmsVarargs(value: Phase1IntegrityAlgorithmsListValue*): Self = StObject.set(x, "Phase1IntegrityAlgorithms", js.Array(value*))
     
     inline def setPhase1LifetimeSeconds(value: Integer): Self = StObject.set(x, "Phase1LifetimeSeconds", value.asInstanceOf[js.Any])
     
@@ -154,19 +163,19 @@ object TunnelOption {
     
     inline def setPhase2DHGroupNumbersUndefined: Self = StObject.set(x, "Phase2DHGroupNumbers", js.undefined)
     
-    inline def setPhase2DHGroupNumbersVarargs(value: Phase2DHGroupNumbersListValue*): Self = StObject.set(x, "Phase2DHGroupNumbers", js.Array(value :_*))
+    inline def setPhase2DHGroupNumbersVarargs(value: Phase2DHGroupNumbersListValue*): Self = StObject.set(x, "Phase2DHGroupNumbers", js.Array(value*))
     
     inline def setPhase2EncryptionAlgorithms(value: Phase2EncryptionAlgorithmsList): Self = StObject.set(x, "Phase2EncryptionAlgorithms", value.asInstanceOf[js.Any])
     
     inline def setPhase2EncryptionAlgorithmsUndefined: Self = StObject.set(x, "Phase2EncryptionAlgorithms", js.undefined)
     
-    inline def setPhase2EncryptionAlgorithmsVarargs(value: Phase2EncryptionAlgorithmsListValue*): Self = StObject.set(x, "Phase2EncryptionAlgorithms", js.Array(value :_*))
+    inline def setPhase2EncryptionAlgorithmsVarargs(value: Phase2EncryptionAlgorithmsListValue*): Self = StObject.set(x, "Phase2EncryptionAlgorithms", js.Array(value*))
     
     inline def setPhase2IntegrityAlgorithms(value: Phase2IntegrityAlgorithmsList): Self = StObject.set(x, "Phase2IntegrityAlgorithms", value.asInstanceOf[js.Any])
     
     inline def setPhase2IntegrityAlgorithmsUndefined: Self = StObject.set(x, "Phase2IntegrityAlgorithms", js.undefined)
     
-    inline def setPhase2IntegrityAlgorithmsVarargs(value: Phase2IntegrityAlgorithmsListValue*): Self = StObject.set(x, "Phase2IntegrityAlgorithms", js.Array(value :_*))
+    inline def setPhase2IntegrityAlgorithmsVarargs(value: Phase2IntegrityAlgorithmsListValue*): Self = StObject.set(x, "Phase2IntegrityAlgorithms", js.Array(value*))
     
     inline def setPhase2LifetimeSeconds(value: Integer): Self = StObject.set(x, "Phase2LifetimeSeconds", value.asInstanceOf[js.Any])
     

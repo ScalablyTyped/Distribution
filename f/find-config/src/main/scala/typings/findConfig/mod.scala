@@ -26,10 +26,10 @@ object mod {
   inline def read(filename: String, options: ReadOptions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   inline def read(filename: Unit, options: ReadOptions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  inline def require(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")().asInstanceOf[js.Any]
-  inline def require(filename: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def require(filename: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def require(filename: Unit, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def require(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")().asInstanceOf[Any]
+  inline def require(filename: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(filename.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def require(filename: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def require(filename: Unit, options: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait Options extends StObject {
     

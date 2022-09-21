@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethereumjs/util" : "8.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethereumjs/util" : "8.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

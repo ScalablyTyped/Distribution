@@ -10,10 +10,10 @@ Get temperature from the DS18B20 sensor connected to RPI
 | ------------------ | :-------------: |
 | Full name          | ds18b20 |
 | Keywords           | raspberry, pi, sensor, iot, rpi, ds18b20, temperature |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 10026 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8283.0 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](http://chamerling.github.io)

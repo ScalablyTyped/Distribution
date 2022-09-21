@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BatchGetChannelResponse extends StObject {
   
+  /**
+    * 
+    */
   var channels: js.UndefOr[Channels] = js.undefined
   
   /**
@@ -26,12 +29,12 @@ object BatchGetChannelResponse {
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setErrors(value: BatchErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: BatchError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchError*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

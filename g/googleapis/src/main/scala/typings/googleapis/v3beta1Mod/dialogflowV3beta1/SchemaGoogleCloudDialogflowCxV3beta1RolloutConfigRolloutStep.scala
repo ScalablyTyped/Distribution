@@ -1,0 +1,51 @@
+package typings.googleapis.v3beta1Mod.dialogflowV3beta1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaGoogleCloudDialogflowCxV3beta1RolloutConfigRolloutStep extends StObject {
+  
+  /**
+    * The name of the rollout step;
+    */
+  var displayName: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The minimum time that this step should last. Should be longer than 1 hour. If not set, the default minimum duration for each step will be 1 hour.
+    */
+  var minDuration: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The percentage of traffic allocated to the flow version of this rollout step. (0%, 100%].
+    */
+  var trafficPercent: js.UndefOr[Double | Null] = js.undefined
+}
+object SchemaGoogleCloudDialogflowCxV3beta1RolloutConfigRolloutStep {
+  
+  inline def apply(): SchemaGoogleCloudDialogflowCxV3beta1RolloutConfigRolloutStep = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaGoogleCloudDialogflowCxV3beta1RolloutConfigRolloutStep]
+  }
+  
+  extension [Self <: SchemaGoogleCloudDialogflowCxV3beta1RolloutConfigRolloutStep](x: Self) {
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setMinDuration(value: String): Self = StObject.set(x, "minDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMinDurationNull: Self = StObject.set(x, "minDuration", null)
+    
+    inline def setMinDurationUndefined: Self = StObject.set(x, "minDuration", js.undefined)
+    
+    inline def setTrafficPercent(value: Double): Self = StObject.set(x, "trafficPercent", value.asInstanceOf[js.Any])
+    
+    inline def setTrafficPercentNull: Self = StObject.set(x, "trafficPercent", null)
+    
+    inline def setTrafficPercentUndefined: Self = StObject.set(x, "trafficPercent", js.undefined)
+  }
+}

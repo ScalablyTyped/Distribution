@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "MatrixDropdownTotalRowModel")
 @js.native
-class MatrixDropdownTotalRowModel protected () extends MatrixDropdownRowModelBase {
+open class MatrixDropdownTotalRowModel protected () extends MatrixDropdownRowModelBase {
   def this(data: IMatrixDropdownData) = this()
 }

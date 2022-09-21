@@ -13,7 +13,7 @@ trait PosDataProviderId extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account for which to retrieve accessible Google My Business accounts. */
+  /** The ID of the account for which to retrieve accessible Business Profiles. */
   var accountId: String
   
   /** Data format for response. */

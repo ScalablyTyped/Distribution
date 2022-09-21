@@ -39,12 +39,12 @@ object GooglePrivacyDlpV2CloudStorageRegexFileSet {
     
     inline def setExcludeRegexUndefined: Self = StObject.set(x, "excludeRegex", js.undefined)
     
-    inline def setExcludeRegexVarargs(value: String*): Self = StObject.set(x, "excludeRegex", js.Array(value :_*))
+    inline def setExcludeRegexVarargs(value: String*): Self = StObject.set(x, "excludeRegex", js.Array(value*))
     
     inline def setIncludeRegex(value: js.Array[String]): Self = StObject.set(x, "includeRegex", value.asInstanceOf[js.Any])
     
     inline def setIncludeRegexUndefined: Self = StObject.set(x, "includeRegex", js.undefined)
     
-    inline def setIncludeRegexVarargs(value: String*): Self = StObject.set(x, "includeRegex", js.Array(value :_*))
+    inline def setIncludeRegexVarargs(value: String*): Self = StObject.set(x, "includeRegex", js.Array(value*))
   }
 }

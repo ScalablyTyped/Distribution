@@ -1,11 +1,10 @@
 package typings.passportHttp
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passport.mod.Strategy
 import typings.passportHttp.passportHttpBooleans.`false`
 import typings.passportHttp.passportHttpBooleans.`true`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,14 +13,23 @@ object mod {
   
   @JSImport("passport-http", "BasicStrategy")
   @js.native
-  class BasicStrategy protected ()
+  open class BasicStrategy protected ()
     extends StObject
        with Strategy {
     def this(verify: BasicVerifyFunction) = this()
     def this(options: BasicStrategyOptions[`false`], verify: BasicVerifyFunction) = this()
     def this(options: BasicStrategyOptions[`true`], verify: BasicVerifyFunctionWithRequest) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
     
     @JSName("name")
     var name_BasicStrategy: String = js.native
@@ -29,7 +37,7 @@ object mod {
   
   @JSImport("passport-http", "DigestStrategy")
   @js.native
-  class DigestStrategy protected ()
+  open class DigestStrategy protected ()
     extends StObject
        with Strategy {
     def this(secret: DigestSecretFunction) = this()
@@ -37,7 +45,16 @@ object mod {
     def this(secret: DigestSecretFunction, validate: DigestValidateFunction) = this()
     def this(options: DigestStrategyOptions, secret: DigestSecretFunction, validate: DigestValidateFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
     
     @JSName("name")
     var name_DigestStrategy: String = js.native
@@ -71,27 +88,28 @@ object mod {
   type BasicVerifyFunction = js.Function3[
     /* username */ String, 
     /* password */ String, 
-    /* done */ js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], Unit], 
-    js.Any
+    /* done */ js.Function2[/* error */ Any, /* user */ js.UndefOr[Any], Unit], 
+    Any
   ]
   
   type BasicVerifyFunctionWithRequest = js.Function4[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* username */ String, 
     /* password */ String, 
-    /* done */ js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], Unit], 
-    js.Any
+    /* done */ js.Function2[/* error */ Any, /* user */ js.UndefOr[Any], Unit], 
+    Any
   ]
   
   type DigestSecretFunction = js.Function2[
     /* username */ String, 
-    /* done */ js.Function3[
-      /* error */ js.Any, 
-      /* user */ js.UndefOr[js.Any], 
-      /* password */ js.UndefOr[js.Any], 
-      Unit
-    ], 
-    js.Any
+    /* done */ js.Function3[/* error */ Any, /* user */ js.UndefOr[Any], /* password */ js.UndefOr[Any], Unit], 
+    Any
   ]
   
   trait DigestStrategyOptions extends StObject {
@@ -123,7 +141,7 @@ object mod {
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: String*): Self = StObject.set(x, "domain", js.Array(value*))
       
       inline def setOpaque(value: String): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
       
@@ -133,7 +151,7 @@ object mod {
       
       inline def setQopUndefined: Self = StObject.set(x, "qop", js.undefined)
       
-      inline def setQopVarargs(value: String*): Self = StObject.set(x, "qop", js.Array(value :_*))
+      inline def setQopVarargs(value: String*): Self = StObject.set(x, "qop", js.Array(value*))
       
       inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
       
@@ -143,8 +161,8 @@ object mod {
   
   type DigestValidateFunction = js.Function2[
     /* params */ DigestValidateOptions, 
-    /* done */ js.Function2[/* error */ js.Any, /* valid */ Boolean, Unit], 
-    js.Any
+    /* done */ js.Function2[/* error */ Any, /* valid */ Boolean, Unit], 
+    Any
   ]
   
   trait DigestValidateOptions extends StObject {

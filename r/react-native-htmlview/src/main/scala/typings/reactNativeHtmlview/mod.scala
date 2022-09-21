@@ -1,31 +1,32 @@
 package typings.reactNativeHtmlview
 
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.ImageStyle
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TextProperties
+import typings.reactNative.mod.TextProps
 import typings.reactNative.mod.TextStyle
-import typings.reactNative.mod.ViewProperties
+import typings.reactNative.mod.ViewProps
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
   @JSImport("react-native-htmlview", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[HTMLViewProps, js.Object, js.Any]
+  val default: ComponentType[HTMLViewProps] = js.native
   
-  type HTMLView = Component[HTMLViewProps, js.Object, js.Any]
+  type GenericAttribs = StringDictionary[String]
   
   trait HTMLViewNode extends StObject {
     
-    var attribs: StringDictionary[String]
+    var attribs: GenericAttribs & SpecificAttribs
+    
+    var children: js.Array[HTMLViewNode]
     
     var data: js.UndefOr[String] = js.undefined
     
@@ -35,14 +36,18 @@ object mod {
   }
   object HTMLViewNode {
     
-    inline def apply(attribs: StringDictionary[String]): HTMLViewNode = {
-      val __obj = js.Dynamic.literal(attribs = attribs.asInstanceOf[js.Any])
+    inline def apply(attribs: GenericAttribs & SpecificAttribs, children: js.Array[HTMLViewNode]): HTMLViewNode = {
+      val __obj = js.Dynamic.literal(attribs = attribs.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[HTMLViewNode]
     }
     
     extension [Self <: HTMLViewNode](x: Self) {
       
-      inline def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
+      inline def setAttribs(value: GenericAttribs & SpecificAttribs): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
+      
+      inline def setChildren(value: js.Array[HTMLViewNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenVarargs(value: HTMLViewNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -57,6 +62,8 @@ object mod {
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
+  
+  type HTMLViewNodeRenderer = js.Function2[/* node */ js.Array[HTMLViewNode], /* parent */ HTMLViewNode | Nullish, ReactNode]
   
   trait HTMLViewProps extends StObject {
     
@@ -93,7 +100,7 @@ object mod {
     /*
       * Properties for the NodeComponent, can be used independently from NodeComponent
       */
-    var nodeComponentProps: js.UndefOr[TextProperties] = js.undefined
+    var nodeComponentProps: js.UndefOr[TextProps] = js.undefined
     
     var onLinkLongPress: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.undefined
     
@@ -123,9 +130,9 @@ object mod {
         js.Function5[
           /* node */ HTMLViewNode, 
           /* index */ Double, 
-          /* siblings */ HTMLViewNode, 
+          /* siblings */ js.Array[HTMLViewNode], 
           /* parent */ HTMLViewNode, 
-          /* defaultRenderer */ js.Function2[/* node */ HTMLViewNode, /* parent */ HTMLViewNode, ReactNode], 
+          /* defaultRenderer */ HTMLViewNodeRenderer, 
           ReactNode
         ]
       ] = js.undefined
@@ -133,14 +140,14 @@ object mod {
     /*
       * Properties for the RootComponent, can be used independently from RootComponent
       */
-    var rootComponentProps: js.UndefOr[ViewProperties] = js.undefined
+    var rootComponentProps: js.UndefOr[ViewProps] = js.undefined
     
     var stylesheet: js.UndefOr[StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]]] = js.undefined
     
     /*
       * Properties for the TextComponent, can be used independently from TextComponent
       */
-    var textComponentProps: js.UndefOr[TextProperties] = js.undefined
+    var textComponentProps: js.UndefOr[TextProps] = js.undefined
     
     /**
       * a string of HTML content to render
@@ -170,7 +177,7 @@ object mod {
       
       inline def setNodeComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "NodeComponent", value.asInstanceOf[js.Any])
       
-      inline def setNodeComponentProps(value: TextProperties): Self = StObject.set(x, "nodeComponentProps", value.asInstanceOf[js.Any])
+      inline def setNodeComponentProps(value: TextProps): Self = StObject.set(x, "nodeComponentProps", value.asInstanceOf[js.Any])
       
       inline def setNodeComponentPropsUndefined: Self = StObject.set(x, "nodeComponentProps", js.undefined)
       
@@ -189,14 +196,14 @@ object mod {
       inline def setParagraphBreakUndefined: Self = StObject.set(x, "paragraphBreak", js.undefined)
       
       inline def setRenderNode(
-        value: (/* node */ HTMLViewNode, /* index */ Double, /* siblings */ HTMLViewNode, /* parent */ HTMLViewNode, /* defaultRenderer */ js.Function2[/* node */ HTMLViewNode, /* parent */ HTMLViewNode, ReactNode]) => ReactNode
+        value: (/* node */ HTMLViewNode, /* index */ Double, /* siblings */ js.Array[HTMLViewNode], /* parent */ HTMLViewNode, /* defaultRenderer */ HTMLViewNodeRenderer) => ReactNode
       ): Self = StObject.set(x, "renderNode", js.Any.fromFunction5(value))
       
       inline def setRenderNodeUndefined: Self = StObject.set(x, "renderNode", js.undefined)
       
       inline def setRootComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "RootComponent", value.asInstanceOf[js.Any])
       
-      inline def setRootComponentProps(value: ViewProperties): Self = StObject.set(x, "rootComponentProps", value.asInstanceOf[js.Any])
+      inline def setRootComponentProps(value: ViewProps): Self = StObject.set(x, "rootComponentProps", value.asInstanceOf[js.Any])
       
       inline def setRootComponentPropsUndefined: Self = StObject.set(x, "rootComponentProps", js.undefined)
       
@@ -208,7 +215,7 @@ object mod {
       
       inline def setTextComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "TextComponent", value.asInstanceOf[js.Any])
       
-      inline def setTextComponentProps(value: TextProperties): Self = StObject.set(x, "textComponentProps", value.asInstanceOf[js.Any])
+      inline def setTextComponentProps(value: TextProps): Self = StObject.set(x, "textComponentProps", value.asInstanceOf[js.Any])
       
       inline def setTextComponentPropsUndefined: Self = StObject.set(x, "textComponentProps", js.undefined)
       
@@ -217,4 +224,32 @@ object mod {
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
+  
+  type Nullish = js.UndefOr[Null]
+  
+  trait SpecificAttribs extends StObject {
+    
+    var style: StyleProp[ViewStyle | TextStyle | ImageStyle]
+  }
+  object SpecificAttribs {
+    
+    inline def apply(): SpecificAttribs = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SpecificAttribs]
+    }
+    
+    extension [Self <: SpecificAttribs](x: Self) {
+      
+      inline def setStyle(value: StyleProp[ViewStyle | TextStyle | ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    }
+  }
+  
+  type _To = ComponentType[HTMLViewProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: ComponentType[HTMLViewProps] = default
 }

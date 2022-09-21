@@ -38,6 +38,6 @@ object SqlInjectionMatchSet {
     
     inline def setSqlInjectionMatchTuples(value: SqlInjectionMatchTuples): Self = StObject.set(x, "SqlInjectionMatchTuples", value.asInstanceOf[js.Any])
     
-    inline def setSqlInjectionMatchTuplesVarargs(value: SqlInjectionMatchTuple*): Self = StObject.set(x, "SqlInjectionMatchTuples", js.Array(value :_*))
+    inline def setSqlInjectionMatchTuplesVarargs(value: SqlInjectionMatchTuple*): Self = StObject.set(x, "SqlInjectionMatchTuples", js.Array(value*))
   }
 }

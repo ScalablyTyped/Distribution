@@ -14,69 +14,69 @@ object controlMod {
   
   @JSImport("ol/control", "Attribution")
   @js.native
-  class Attribution () extends default {
+  open class Attribution () extends default {
     def this(opt_options: Options) = this()
   }
   
   @JSImport("ol/control", "Control")
   @js.native
-  class Control protected ()
+  open class Control protected ()
     extends typings.ol.controlControlMod.default {
     def this(options: typings.ol.controlControlMod.Options) = this()
   }
   
   @JSImport("ol/control", "FullScreen")
   @js.native
-  class FullScreen ()
+  open class FullScreen ()
     extends typings.ol.fullScreenMod.default {
     def this(opt_options: typings.ol.fullScreenMod.Options) = this()
   }
   
   @JSImport("ol/control", "MousePosition")
   @js.native
-  class MousePosition ()
+  open class MousePosition ()
     extends typings.ol.mousePositionMod.default {
     def this(opt_options: typings.ol.mousePositionMod.Options) = this()
   }
   
   @JSImport("ol/control", "OverviewMap")
   @js.native
-  class OverviewMap ()
+  open class OverviewMap ()
     extends typings.ol.overviewMapMod.default {
     def this(opt_options: typings.ol.overviewMapMod.Options) = this()
   }
   
   @JSImport("ol/control", "Rotate")
   @js.native
-  class Rotate ()
+  open class Rotate ()
     extends typings.ol.rotateMod.default {
     def this(opt_options: typings.ol.rotateMod.Options) = this()
   }
   
   @JSImport("ol/control", "ScaleLine")
   @js.native
-  class ScaleLine ()
+  open class ScaleLine ()
     extends typings.ol.scaleLineMod.default {
     def this(opt_options: typings.ol.scaleLineMod.Options) = this()
   }
   
   @JSImport("ol/control", "Zoom")
   @js.native
-  class Zoom ()
+  open class Zoom ()
     extends typings.ol.zoomMod.default {
     def this(opt_options: typings.ol.zoomMod.Options) = this()
   }
   
   @JSImport("ol/control", "ZoomSlider")
   @js.native
-  class ZoomSlider ()
+  open class ZoomSlider ()
     extends typings.ol.zoomSliderMod.default {
     def this(opt_options: typings.ol.zoomSliderMod.Options) = this()
   }
   
   @JSImport("ol/control", "ZoomToExtent")
   @js.native
-  class ZoomToExtent ()
+  open class ZoomToExtent ()
     extends typings.ol.zoomToExtentMod.default {
     def this(opt_options: typings.ol.zoomToExtentMod.Options) = this()
   }

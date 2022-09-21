@@ -1,6 +1,7 @@
 package typings.soap
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import typings.soap.elementsMod.Element
 import typings.soap.typesMod.IXmlAttribute
 import org.scalablytyped.runtime.StObject
@@ -9,24 +10,66 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Body extends StObject {
+    
+    var body: Buffer
+    
+    var headers: StringDictionary[String]
+  }
+  object Body {
+    
+    inline def apply(body: Buffer, headers: StringDictionary[String]): Body = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Body]
+    }
+    
+    extension [Self <: Body](x: Self) {
+      
+      inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Elements extends StObject {
+    
+    var elements: StringDictionary[Element]
+    
+    var types: StringDictionary[Element]
+  }
+  object Elements {
+    
+    inline def apply(elements: StringDictionary[Element], types: StringDictionary[Element]): Elements = {
+      val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Elements]
+    }
+    
+    extension [Self <: Elements](x: Self) {
+      
+      inline def setElements(value: StringDictionary[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      
+      inline def setTypes(value: StringDictionary[Element]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Input extends StObject {
     
-    var input: js.Any
+    var input: Any
     
-    var output: js.Any
+    var output: Any
   }
   object Input {
     
-    inline def apply(input: js.Any, output: js.Any): Input = {
+    inline def apply(input: Any, output: Any): Input = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[Input]
     }
     
     extension [Self <: Input](x: Self) {
       
-      inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,7 +115,7 @@ object anon {
       
       inline def setXmlnsAttributesUndefined: Self = StObject.set(x, "xmlnsAttributes", js.undefined)
       
-      inline def setXmlnsAttributesVarargs(value: IXmlAttribute*): Self = StObject.set(x, "xmlnsAttributes", js.Array(value :_*))
+      inline def setXmlnsAttributesVarargs(value: IXmlAttribute*): Self = StObject.set(x, "xmlnsAttributes", js.Array(value*))
     }
   }
   
@@ -95,7 +138,7 @@ object anon {
       
       inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
       
-      inline def setNamespacesVarargs(value: String*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
+      inline def setNamespacesVarargs(value: String*): Self = StObject.set(x, "namespaces", js.Array(value*))
       
       inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
@@ -164,37 +207,20 @@ object anon {
     }
   }
   
-  trait Types extends StObject {
-    
-    var types: StringDictionary[Element]
-  }
-  object Types {
-    
-    inline def apply(types: StringDictionary[Element]): Types = {
-      val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Types]
-    }
-    
-    extension [Self <: Types](x: Self) {
-      
-      inline def setTypes(value: StringDictionary[Element]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Value extends StObject {
     
-    var value: String
+    var Value: String
   }
   object Value {
     
-    inline def apply(value: String): Value = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    inline def apply(Value: String): Value = {
+      val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
     extension [Self <: Value](x: Self) {
       
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
 }

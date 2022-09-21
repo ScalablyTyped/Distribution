@@ -1,16 +1,21 @@
 package typings.googleapis
 
 import typings.gaxios.commonMod.GaxiosPromise
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleapis.googleapisStrings.v1
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.googleapisCommon.mod.BaseExternalAccountClient
+import typings.googleapisCommon.mod.Compute
+import typings.googleapisCommon.mod.GoogleAuth
+import typings.googleapisCommon.mod.JWT
+import typings.googleapisCommon.mod.OAuth2Client
+import typings.googleapisCommon.mod.UserRefreshClient
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +24,9 @@ object licensingV1Mod {
   
   object licensingV1 {
     
-    /**
-      * Enterprise License Manager API
-      *
-      * Views and manages licenses for your domain.
-      *
-      * @example
-      * const {google} = require('googleapis');
-      * const licensing = google.licensing('v1');
-      *
-      * @namespace licensing
-      * @type {Function}
-      * @version v1
-      * @variation v1
-      * @param {object=} options Options for Licensing
-      */
     @JSImport("googleapis/build/src/apis/licensing/v1", "licensing_v1.Licensing")
     @js.native
-    class Licensing protected () extends StObject {
+    open class Licensing protected () extends StObject {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
       
@@ -47,56 +37,86 @@ object licensingV1Mod {
     
     @JSImport("googleapis/build/src/apis/licensing/v1", "licensing_v1.Resource$Licenseassignments")
     @js.native
-    class ResourceLicenseassignments protected () extends StObject {
+    open class ResourceLicenseassignments protected () extends StObject {
       def this(context: APIRequestContext) = this()
       
       var context: APIRequestContext = js.native
       
-      /**
-        * licensing.licenseAssignments.delete
-        * @desc Revoke License.
-        * @alias licensing.licenseAssignments.delete
-        * @memberOf! ()
-        *
-        * @param {object} params Parameters for request
-        * @param {string} params.productId Name for product
-        * @param {string} params.skuId Name for sku
-        * @param {string} params.userId email id or unique Id of the user
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
-        */
-      def delete(): GaxiosPromise[Unit] = js.native
-      def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-      def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
-      def delete(params: ParamsResourceLicenseassignmentsDelete): GaxiosPromise[Unit] = js.native
-      def delete(params: ParamsResourceLicenseassignmentsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
+      def delete(): GaxiosPromise[SchemaEmpty] = js.native
+      def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+      def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+      def delete(params: ParamsResourceLicenseassignmentsDelete): GaxiosPromise[SchemaEmpty] = js.native
+      def delete(params: ParamsResourceLicenseassignmentsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
       def delete(
         params: ParamsResourceLicenseassignmentsDelete,
-        options: BodyResponseCallback[Unit],
-        callback: BodyResponseCallback[Unit]
+        options: BodyResponseCallback[Readable | SchemaEmpty],
+        callback: BodyResponseCallback[Readable | SchemaEmpty]
       ): Unit = js.native
-      def delete(params: ParamsResourceLicenseassignmentsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
+      def delete(params: ParamsResourceLicenseassignmentsDelete, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
       def delete(
         params: ParamsResourceLicenseassignmentsDelete,
         options: MethodOptions,
-        callback: BodyResponseCallback[Unit]
+        callback: BodyResponseCallback[SchemaEmpty]
+      ): Unit = js.native
+      /**
+        * Revoke a license.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/licensing.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
+        *
+        * const {google} = require('googleapis');
+        * const licensing = google.licensing('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/apps.licensing'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await licensing.licenseAssignments.delete({
+        *     // A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
+        *     productId: 'placeholder-value',
+        *     // A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
+        *     skuId: 'placeholder-value',
+        *     // The user's current primary email address. If the user's email address changes, use the new email address in your API requests. Since a `userId` is subject to change, do not use a `userId` value as a key for persistent data. This key could break if the current user's email address changes. If the `userId` is suspended, the license status changes.
+        *     userId: 'placeholder-value',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {}
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
+        */
+      def delete(params: ParamsResourceLicenseassignmentsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def delete(
+        params: ParamsResourceLicenseassignmentsDelete,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
       ): Unit = js.native
       
-      /**
-        * licensing.licenseAssignments.get
-        * @desc Get license assignment of a particular product and sku for a user
-        * @alias licensing.licenseAssignments.get
-        * @memberOf! ()
-        *
-        * @param {object} params Parameters for request
-        * @param {string} params.productId Name for product
-        * @param {string} params.skuId Name for sku
-        * @param {string} params.userId email id or unique Id of the user
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
-        */
       def get(): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def get(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
       def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
@@ -107,8 +127,8 @@ object licensingV1Mod {
       ): Unit = js.native
       def get(
         params: ParamsResourceLicenseassignmentsGet,
-        options: BodyResponseCallback[SchemaLicenseAssignment],
-        callback: BodyResponseCallback[SchemaLicenseAssignment]
+        options: BodyResponseCallback[Readable | SchemaLicenseAssignment],
+        callback: BodyResponseCallback[Readable | SchemaLicenseAssignment]
       ): Unit = js.native
       def get(params: ParamsResourceLicenseassignmentsGet, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def get(
@@ -116,21 +136,74 @@ object licensingV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaLicenseAssignment]
       ): Unit = js.native
-      
       /**
-        * licensing.licenseAssignments.insert
-        * @desc Assign License.
-        * @alias licensing.licenseAssignments.insert
-        * @memberOf! ()
+        * Get a specific user's license by product SKU.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/licensing.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
         *
-        * @param {object} params Parameters for request
-        * @param {string} params.productId Name for product
-        * @param {string} params.skuId Name for sku
-        * @param {().LicenseAssignmentInsert} params.resource Request body data
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
+        * const {google} = require('googleapis');
+        * const licensing = google.licensing('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/apps.licensing'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await licensing.licenseAssignments.get({
+        *     // A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
+        *     productId: 'placeholder-value',
+        *     // A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
+        *     skuId: 'placeholder-value',
+        *     // The user's current primary email address. If the user's email address changes, use the new email address in your API requests. Since a `userId` is subject to change, do not use a `userId` value as a key for persistent data. This key could break if the current user's email address changes. If the `userId` is suspended, the license status changes.
+        *     userId: 'placeholder-value',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "etags": "my_etags",
+        *   //   "kind": "my_kind",
+        *   //   "productId": "my_productId",
+        *   //   "productName": "my_productName",
+        *   //   "selfLink": "my_selfLink",
+        *   //   "skuId": "my_skuId",
+        *   //   "skuName": "my_skuName",
+        *   //   "userId": "my_userId"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
         */
+      def get(params: ParamsResourceLicenseassignmentsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def get(
+        params: ParamsResourceLicenseassignmentsGet,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
+      
       def insert(): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def insert(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
       def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
@@ -141,8 +214,8 @@ object licensingV1Mod {
       ): Unit = js.native
       def insert(
         params: ParamsResourceLicenseassignmentsInsert,
-        options: BodyResponseCallback[SchemaLicenseAssignment],
-        callback: BodyResponseCallback[SchemaLicenseAssignment]
+        options: BodyResponseCallback[Readable | SchemaLicenseAssignment],
+        callback: BodyResponseCallback[Readable | SchemaLicenseAssignment]
       ): Unit = js.native
       def insert(params: ParamsResourceLicenseassignmentsInsert, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def insert(
@@ -150,22 +223,80 @@ object licensingV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaLicenseAssignment]
       ): Unit = js.native
-      
       /**
-        * licensing.licenseAssignments.listForProduct
-        * @desc List license assignments for given product of the customer.
-        * @alias licensing.licenseAssignments.listForProduct
-        * @memberOf! ()
+        * Assign a license.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/licensing.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
         *
-        * @param {object} params Parameters for request
-        * @param {string} params.customerId CustomerId represents the customer for whom licenseassignments are queried
-        * @param {integer=} params.maxResults Maximum number of campaigns to return at one time. Must be positive. Optional. Default value is 100.
-        * @param {string=} params.pageToken Token to fetch the next page.Optional. By default server will return first page
-        * @param {string} params.productId Name for product
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
+        * const {google} = require('googleapis');
+        * const licensing = google.licensing('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/apps.licensing'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await licensing.licenseAssignments.insert({
+        *     // A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
+        *     productId: 'placeholder-value',
+        *     // A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
+        *     skuId: 'placeholder-value',
+        *
+        *     // Request body metadata
+        *     requestBody: {
+        *       // request body parameters
+        *       // {
+        *       //   "userId": "my_userId"
+        *       // }
+        *     },
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "etags": "my_etags",
+        *   //   "kind": "my_kind",
+        *   //   "productId": "my_productId",
+        *   //   "productName": "my_productName",
+        *   //   "selfLink": "my_selfLink",
+        *   //   "skuId": "my_skuId",
+        *   //   "skuName": "my_skuName",
+        *   //   "userId": "my_userId"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
         */
+      def insert(params: ParamsResourceLicenseassignmentsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def insert(
+        params: ParamsResourceLicenseassignmentsInsert,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
+      
       def listForProduct(): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
       def listForProduct(callback: BodyResponseCallback[SchemaLicenseAssignmentList]): Unit = js.native
       def listForProduct(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
@@ -176,8 +307,8 @@ object licensingV1Mod {
       ): Unit = js.native
       def listForProduct(
         params: ParamsResourceLicenseassignmentsListforproduct,
-        options: BodyResponseCallback[SchemaLicenseAssignmentList],
-        callback: BodyResponseCallback[SchemaLicenseAssignmentList]
+        options: BodyResponseCallback[Readable | SchemaLicenseAssignmentList],
+        callback: BodyResponseCallback[Readable | SchemaLicenseAssignmentList]
       ): Unit = js.native
       def listForProduct(params: ParamsResourceLicenseassignmentsListforproduct, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
       def listForProduct(
@@ -185,23 +316,72 @@ object licensingV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaLicenseAssignmentList]
       ): Unit = js.native
-      
       /**
-        * licensing.licenseAssignments.listForProductAndSku
-        * @desc List license assignments for given product and sku of the customer.
-        * @alias licensing.licenseAssignments.listForProductAndSku
-        * @memberOf! ()
+        * List all users assigned licenses for a specific product SKU.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/licensing.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
         *
-        * @param {object} params Parameters for request
-        * @param {string} params.customerId CustomerId represents the customer for whom licenseassignments are queried
-        * @param {integer=} params.maxResults Maximum number of campaigns to return at one time. Must be positive. Optional. Default value is 100.
-        * @param {string=} params.pageToken Token to fetch the next page.Optional. By default server will return first page
-        * @param {string} params.productId Name for product
-        * @param {string} params.skuId Name for sku
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
+        * const {google} = require('googleapis');
+        * const licensing = google.licensing('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/apps.licensing'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await licensing.licenseAssignments.listForProduct({
+        *     // The customer's unique ID as defined in the Admin console, such as `C00000000`. If the customer is suspended, the server returns an error.
+        *     customerId: 'placeholder-value',
+        *     // The `maxResults` query string determines how many entries are returned on each page of a large response. This is an optional parameter. The value must be a positive number.
+        *     maxResults: 'placeholder-value',
+        *     // Token to fetch the next page of data. The `maxResults` query string is related to the `pageToken` since `maxResults` determines how many entries are returned on each page. This is an optional query string. If not specified, the server returns the first page.
+        *     pageToken: 'placeholder-value',
+        *     // A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
+        *     productId: 'placeholder-value',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "etag": "my_etag",
+        *   //   "items": [],
+        *   //   "kind": "my_kind",
+        *   //   "nextPageToken": "my_nextPageToken"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
         */
+      def listForProduct(params: ParamsResourceLicenseassignmentsListforproduct, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def listForProduct(
+        params: ParamsResourceLicenseassignmentsListforproduct,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
+      
       def listForProductAndSku(): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
       def listForProductAndSku(callback: BodyResponseCallback[SchemaLicenseAssignmentList]): Unit = js.native
       def listForProductAndSku(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
@@ -212,8 +392,8 @@ object licensingV1Mod {
       ): Unit = js.native
       def listForProductAndSku(
         params: ParamsResourceLicenseassignmentsListforproductandsku,
-        options: BodyResponseCallback[SchemaLicenseAssignmentList],
-        callback: BodyResponseCallback[SchemaLicenseAssignmentList]
+        options: BodyResponseCallback[Readable | SchemaLicenseAssignmentList],
+        callback: BodyResponseCallback[Readable | SchemaLicenseAssignmentList]
       ): Unit = js.native
       def listForProductAndSku(params: ParamsResourceLicenseassignmentsListforproductandsku, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
       def listForProductAndSku(
@@ -221,22 +401,74 @@ object licensingV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaLicenseAssignmentList]
       ): Unit = js.native
-      
       /**
-        * licensing.licenseAssignments.patch
-        * @desc Assign License. This method supports patch semantics.
-        * @alias licensing.licenseAssignments.patch
-        * @memberOf! ()
+        * List all users assigned licenses for a specific product SKU.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/licensing.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
         *
-        * @param {object} params Parameters for request
-        * @param {string} params.productId Name for product
-        * @param {string} params.skuId Name for sku for which license would be revoked
-        * @param {string} params.userId email id or unique Id of the user
-        * @param {().LicenseAssignment} params.resource Request body data
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
+        * const {google} = require('googleapis');
+        * const licensing = google.licensing('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/apps.licensing'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await licensing.licenseAssignments.listForProductAndSku({
+        *     // The customer's unique ID as defined in the Admin console, such as `C00000000`. If the customer is suspended, the server returns an error.
+        *     customerId: 'placeholder-value',
+        *     // The `maxResults` query string determines how many entries are returned on each page of a large response. This is an optional parameter. The value must be a positive number.
+        *     maxResults: 'placeholder-value',
+        *     // Token to fetch the next page of data. The `maxResults` query string is related to the `pageToken` since `maxResults` determines how many entries are returned on each page. This is an optional query string. If not specified, the server returns the first page.
+        *     pageToken: 'placeholder-value',
+        *     // A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
+        *     productId: 'placeholder-value',
+        *     // A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
+        *     skuId: 'placeholder-value',
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "etag": "my_etag",
+        *   //   "items": [],
+        *   //   "kind": "my_kind",
+        *   //   "nextPageToken": "my_nextPageToken"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
         */
+      def listForProductAndSku(params: ParamsResourceLicenseassignmentsListforproductandsku, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def listForProductAndSku(
+        params: ParamsResourceLicenseassignmentsListforproductandsku,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
+      
       def patch(): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def patch(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
       def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
@@ -247,8 +479,8 @@ object licensingV1Mod {
       ): Unit = js.native
       def patch(
         params: ParamsResourceLicenseassignmentsPatch,
-        options: BodyResponseCallback[SchemaLicenseAssignment],
-        callback: BodyResponseCallback[SchemaLicenseAssignment]
+        options: BodyResponseCallback[Readable | SchemaLicenseAssignment],
+        callback: BodyResponseCallback[Readable | SchemaLicenseAssignment]
       ): Unit = js.native
       def patch(params: ParamsResourceLicenseassignmentsPatch, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def patch(
@@ -256,22 +488,89 @@ object licensingV1Mod {
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaLicenseAssignment]
       ): Unit = js.native
-      
       /**
-        * licensing.licenseAssignments.update
-        * @desc Assign License.
-        * @alias licensing.licenseAssignments.update
-        * @memberOf! ()
+        * Reassign a user's product SKU with a different SKU in the same product. This method supports patch semantics.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/licensing.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
         *
-        * @param {object} params Parameters for request
-        * @param {string} params.productId Name for product
-        * @param {string} params.skuId Name for sku for which license would be revoked
-        * @param {string} params.userId email id or unique Id of the user
-        * @param {().LicenseAssignment} params.resource Request body data
-        * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-        * @param {callback} callback The callback that handles the response.
-        * @return {object} Request object
+        * const {google} = require('googleapis');
+        * const licensing = google.licensing('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/apps.licensing'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await licensing.licenseAssignments.patch({
+        *     // A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
+        *     productId: 'placeholder-value',
+        *     // A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
+        *     skuId: 'placeholder-value',
+        *     // The user's current primary email address. If the user's email address changes, use the new email address in your API requests. Since a `userId` is subject to change, do not use a `userId` value as a key for persistent data. This key could break if the current user's email address changes. If the `userId` is suspended, the license status changes.
+        *     userId: 'placeholder-value',
+        *
+        *     // Request body metadata
+        *     requestBody: {
+        *       // request body parameters
+        *       // {
+        *       //   "etags": "my_etags",
+        *       //   "kind": "my_kind",
+        *       //   "productId": "my_productId",
+        *       //   "productName": "my_productName",
+        *       //   "selfLink": "my_selfLink",
+        *       //   "skuId": "my_skuId",
+        *       //   "skuName": "my_skuName",
+        *       //   "userId": "my_userId"
+        *       // }
+        *     },
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "etags": "my_etags",
+        *   //   "kind": "my_kind",
+        *   //   "productId": "my_productId",
+        *   //   "productName": "my_productName",
+        *   //   "selfLink": "my_selfLink",
+        *   //   "skuId": "my_skuId",
+        *   //   "skuName": "my_skuName",
+        *   //   "userId": "my_userId"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
         */
+      def patch(params: ParamsResourceLicenseassignmentsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def patch(
+        params: ParamsResourceLicenseassignmentsPatch,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
+      ): Unit = js.native
+      
       def update(): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def update(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
       def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
@@ -282,14 +581,96 @@ object licensingV1Mod {
       ): Unit = js.native
       def update(
         params: ParamsResourceLicenseassignmentsUpdate,
-        options: BodyResponseCallback[SchemaLicenseAssignment],
-        callback: BodyResponseCallback[SchemaLicenseAssignment]
+        options: BodyResponseCallback[Readable | SchemaLicenseAssignment],
+        callback: BodyResponseCallback[Readable | SchemaLicenseAssignment]
       ): Unit = js.native
       def update(params: ParamsResourceLicenseassignmentsUpdate, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def update(
         params: ParamsResourceLicenseassignmentsUpdate,
         options: MethodOptions,
         callback: BodyResponseCallback[SchemaLicenseAssignment]
+      ): Unit = js.native
+      /**
+        * Reassign a user's product SKU with a different SKU in the same product.
+        * @example
+        * ```js
+        * // Before running the sample:
+        * // - Enable the API at:
+        * //   https://console.developers.google.com/apis/api/licensing.googleapis.com
+        * // - Login into gcloud by running:
+        * //   `$ gcloud auth application-default login`
+        * // - Install the npm module by running:
+        * //   `$ npm install googleapis`
+        *
+        * const {google} = require('googleapis');
+        * const licensing = google.licensing('v1');
+        *
+        * async function main() {
+        *   const auth = new google.auth.GoogleAuth({
+        *     // Scopes can be specified either as an array or as a single, space-delimited string.
+        *     scopes: ['https://www.googleapis.com/auth/apps.licensing'],
+        *   });
+        *
+        *   // Acquire an auth client, and bind it to all future calls
+        *   const authClient = await auth.getClient();
+        *   google.options({auth: authClient});
+        *
+        *   // Do the magic
+        *   const res = await licensing.licenseAssignments.update({
+        *     // A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
+        *     productId: 'placeholder-value',
+        *     // A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
+        *     skuId: 'placeholder-value',
+        *     // The user's current primary email address. If the user's email address changes, use the new email address in your API requests. Since a `userId` is subject to change, do not use a `userId` value as a key for persistent data. This key could break if the current user's email address changes. If the `userId` is suspended, the license status changes.
+        *     userId: 'placeholder-value',
+        *
+        *     // Request body metadata
+        *     requestBody: {
+        *       // request body parameters
+        *       // {
+        *       //   "etags": "my_etags",
+        *       //   "kind": "my_kind",
+        *       //   "productId": "my_productId",
+        *       //   "productName": "my_productName",
+        *       //   "selfLink": "my_selfLink",
+        *       //   "skuId": "my_skuId",
+        *       //   "skuName": "my_skuName",
+        *       //   "userId": "my_userId"
+        *       // }
+        *     },
+        *   });
+        *   console.log(res.data);
+        *
+        *   // Example response
+        *   // {
+        *   //   "etags": "my_etags",
+        *   //   "kind": "my_kind",
+        *   //   "productId": "my_productId",
+        *   //   "productName": "my_productName",
+        *   //   "selfLink": "my_selfLink",
+        *   //   "skuId": "my_skuId",
+        *   //   "skuName": "my_skuName",
+        *   //   "userId": "my_userId"
+        *   // }
+        * }
+        *
+        * main().catch(e => {
+        *   console.error(e);
+        *   throw e;
+        * });
+        *
+        * ```
+        *
+        * @param params - Parameters for request
+        * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+        * @param callback - Optional callback that handles the response.
+        * @returns A promise if used with async/await, or void if used with a callback.
+        */
+      def update(params: ParamsResourceLicenseassignmentsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+      def update(
+        params: ParamsResourceLicenseassignmentsUpdate,
+        options: StreamMethodOptions,
+        callback: BodyResponseCallback[Readable]
       ): Unit = js.native
     }
     
@@ -317,22 +698,17 @@ object licensingV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * Name for product
+        * A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
         */
       var productId: js.UndefOr[String] = js.undefined
       
       /**
-        * Name for sku
+        * A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
         */
       var skuId: js.UndefOr[String] = js.undefined
       
       /**
-        * email id or unique Id of the user
+        * The user's current primary email address. If the user's email address changes, use the new email address in your API requests. Since a `userId` is subject to change, do not use a `userId` value as a key for persistent data. This key could break if the current user's email address changes. If the `userId` is suspended, the license status changes.
         */
       var userId: js.UndefOr[String] = js.undefined
     }
@@ -344,10 +720,6 @@ object licensingV1Mod {
       }
       
       extension [Self <: ParamsResourceLicenseassignmentsDelete](x: Self) {
-        
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
@@ -368,22 +740,17 @@ object licensingV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * Name for product
+        * A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
         */
       var productId: js.UndefOr[String] = js.undefined
       
       /**
-        * Name for sku
+        * A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
         */
       var skuId: js.UndefOr[String] = js.undefined
       
       /**
-        * email id or unique Id of the user
+        * The user's current primary email address. If the user's email address changes, use the new email address in your API requests. Since a `userId` is subject to change, do not use a `userId` value as a key for persistent data. This key could break if the current user's email address changes. If the `userId` is suspended, the license status changes.
         */
       var userId: js.UndefOr[String] = js.undefined
     }
@@ -395,10 +762,6 @@ object licensingV1Mod {
       }
       
       extension [Self <: ParamsResourceLicenseassignmentsGet](x: Self) {
-        
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
@@ -419,12 +782,7 @@ object licensingV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * Name for product
+        * A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
         */
       var productId: js.UndefOr[String] = js.undefined
       
@@ -434,7 +792,7 @@ object licensingV1Mod {
       var requestBody: js.UndefOr[SchemaLicenseAssignmentInsert] = js.undefined
       
       /**
-        * Name for sku
+        * A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
         */
       var skuId: js.UndefOr[String] = js.undefined
     }
@@ -446,10 +804,6 @@ object licensingV1Mod {
       }
       
       extension [Self <: ParamsResourceLicenseassignmentsInsert](x: Self) {
-        
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
@@ -470,30 +824,22 @@ object licensingV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * CustomerId represents the customer for whom licenseassignments are
-        * queried
+        * The customer's unique ID as defined in the Admin console, such as `C00000000`. If the customer is suspended, the server returns an error.
         */
       var customerId: js.UndefOr[String] = js.undefined
       
       /**
-        * Maximum number of campaigns to return at one time. Must be positive.
-        * Optional. Default value is 100.
+        * The `maxResults` query string determines how many entries are returned on each page of a large response. This is an optional parameter. The value must be a positive number.
         */
       var maxResults: js.UndefOr[Double] = js.undefined
       
       /**
-        * Token to fetch the next page.Optional. By default server will return
-        * first page
+        * Token to fetch the next page of data. The `maxResults` query string is related to the `pageToken` since `maxResults` determines how many entries are returned on each page. This is an optional query string. If not specified, the server returns the first page.
         */
       var pageToken: js.UndefOr[String] = js.undefined
       
       /**
-        * Name for product
+        * A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
         */
       var productId: js.UndefOr[String] = js.undefined
     }
@@ -505,10 +851,6 @@ object licensingV1Mod {
       }
       
       extension [Self <: ParamsResourceLicenseassignmentsListforproduct](x: Self) {
-        
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
         
@@ -533,35 +875,27 @@ object licensingV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * CustomerId represents the customer for whom licenseassignments are
-        * queried
+        * The customer's unique ID as defined in the Admin console, such as `C00000000`. If the customer is suspended, the server returns an error.
         */
       var customerId: js.UndefOr[String] = js.undefined
       
       /**
-        * Maximum number of campaigns to return at one time. Must be positive.
-        * Optional. Default value is 100.
+        * The `maxResults` query string determines how many entries are returned on each page of a large response. This is an optional parameter. The value must be a positive number.
         */
       var maxResults: js.UndefOr[Double] = js.undefined
       
       /**
-        * Token to fetch the next page.Optional. By default server will return
-        * first page
+        * Token to fetch the next page of data. The `maxResults` query string is related to the `pageToken` since `maxResults` determines how many entries are returned on each page. This is an optional query string. If not specified, the server returns the first page.
         */
       var pageToken: js.UndefOr[String] = js.undefined
       
       /**
-        * Name for product
+        * A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
         */
       var productId: js.UndefOr[String] = js.undefined
       
       /**
-        * Name for sku
+        * A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
         */
       var skuId: js.UndefOr[String] = js.undefined
     }
@@ -573,10 +907,6 @@ object licensingV1Mod {
       }
       
       extension [Self <: ParamsResourceLicenseassignmentsListforproductandsku](x: Self) {
-        
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
         
@@ -605,12 +935,7 @@ object licensingV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * Name for product
+        * A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
         */
       var productId: js.UndefOr[String] = js.undefined
       
@@ -620,12 +945,12 @@ object licensingV1Mod {
       var requestBody: js.UndefOr[SchemaLicenseAssignment] = js.undefined
       
       /**
-        * Name for sku for which license would be revoked
+        * A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
         */
       var skuId: js.UndefOr[String] = js.undefined
       
       /**
-        * email id or unique Id of the user
+        * The user's current primary email address. If the user's email address changes, use the new email address in your API requests. Since a `userId` is subject to change, do not use a `userId` value as a key for persistent data. This key could break if the current user's email address changes. If the `userId` is suspended, the license status changes.
         */
       var userId: js.UndefOr[String] = js.undefined
     }
@@ -637,10 +962,6 @@ object licensingV1Mod {
       }
       
       extension [Self <: ParamsResourceLicenseassignmentsPatch](x: Self) {
-        
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
@@ -665,12 +986,7 @@ object licensingV1Mod {
          with StandardParameters {
       
       /**
-        * Auth client or API Key for the request
-        */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-      
-      /**
-        * Name for product
+        * A product's unique identifier. For more information about products in this version of the API, see Products and SKUs.
         */
       var productId: js.UndefOr[String] = js.undefined
       
@@ -680,12 +996,12 @@ object licensingV1Mod {
       var requestBody: js.UndefOr[SchemaLicenseAssignment] = js.undefined
       
       /**
-        * Name for sku for which license would be revoked
+        * A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
         */
       var skuId: js.UndefOr[String] = js.undefined
       
       /**
-        * email id or unique Id of the user
+        * The user's current primary email address. If the user's email address changes, use the new email address in your API requests. Since a `userId` is subject to change, do not use a `userId` value as a key for persistent data. This key could break if the current user's email address changes. If the `userId` is suspended, the license status changes.
         */
       var userId: js.UndefOr[String] = js.undefined
     }
@@ -697,10 +1013,6 @@ object licensingV1Mod {
       }
       
       extension [Self <: ParamsResourceLicenseassignmentsUpdate](x: Self) {
-        
-        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-        
-        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
         inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
@@ -720,50 +1032,49 @@ object licensingV1Mod {
       }
     }
     
-    /**
-      * Template for LiscenseAssignment Resource
-      */
+    trait SchemaEmpty extends StObject
+    
     trait SchemaLicenseAssignment extends StObject {
       
       /**
         * ETag of the resource.
         */
-      var etags: js.UndefOr[String] = js.undefined
+      var etags: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * Identifies the resource as a LicenseAssignment.
+        * Identifies the resource as a LicenseAssignment, which is `licensing#licenseAssignment`.
         */
-      var kind: js.UndefOr[String] = js.undefined
+      var kind: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * Id of the product.
+        * A product's unique identifier. For more information about products in this version of the API, see Product and SKU IDs.
         */
-      var productId: js.UndefOr[String] = js.undefined
+      var productId: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Display Name of the product.
         */
-      var productName: js.UndefOr[String] = js.undefined
+      var productName: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Link to this page.
         */
-      var selfLink: js.UndefOr[String] = js.undefined
+      var selfLink: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * Id of the sku of the product.
+        * A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs.
         */
-      var skuId: js.UndefOr[String] = js.undefined
+      var skuId: js.UndefOr[String | Null] = js.undefined
       
       /**
         * Display Name of the sku of the product.
         */
-      var skuName: js.UndefOr[String] = js.undefined
+      var skuName: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * Email id of the user.
+        * The user's current primary email address. If the user's email address changes, use the new email address in your API requests. Since a `userId` is subject to change, do not use a `userId` value as a key for persistent data. This key could break if the current user's email address changes. If the `userId` is suspended, the license status changes.
         */
-      var userId: js.UndefOr[String] = js.undefined
+      var userId: js.UndefOr[String | Null] = js.undefined
     }
     object SchemaLicenseAssignment {
       
@@ -776,47 +1087,60 @@ object licensingV1Mod {
         
         inline def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
         
+        inline def setEtagsNull: Self = StObject.set(x, "etags", null)
+        
         inline def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        
+        inline def setKindNull: Self = StObject.set(x, "kind", null)
         
         inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
         inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
+        inline def setProductIdNull: Self = StObject.set(x, "productId", null)
+        
         inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
         
         inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+        
+        inline def setProductNameNull: Self = StObject.set(x, "productName", null)
         
         inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
         
         inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
+        inline def setSelfLinkNull: Self = StObject.set(x, "selfLink", null)
+        
         inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
         
         inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+        
+        inline def setSkuIdNull: Self = StObject.set(x, "skuId", null)
         
         inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
         
         inline def setSkuName(value: String): Self = StObject.set(x, "skuName", value.asInstanceOf[js.Any])
         
+        inline def setSkuNameNull: Self = StObject.set(x, "skuName", null)
+        
         inline def setSkuNameUndefined: Self = StObject.set(x, "skuName", js.undefined)
         
         inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        
+        inline def setUserIdNull: Self = StObject.set(x, "userId", null)
         
         inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
-    /**
-      * Template for LicenseAssignment Insert request
-      */
     trait SchemaLicenseAssignmentInsert extends StObject {
       
       /**
         * Email id of the user
         */
-      var userId: js.UndefOr[String] = js.undefined
+      var userId: js.UndefOr[String | Null] = js.undefined
     }
     object SchemaLicenseAssignmentInsert {
       
@@ -829,19 +1153,18 @@ object licensingV1Mod {
         
         inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         
+        inline def setUserIdNull: Self = StObject.set(x, "userId", null)
+        
         inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
-    /**
-      * LicesnseAssignment List for a given product/sku for a customer.
-      */
     trait SchemaLicenseAssignmentList extends StObject {
       
       /**
         * ETag of the resource.
         */
-      var etag: js.UndefOr[String] = js.undefined
+      var etag: js.UndefOr[String | Null] = js.undefined
       
       /**
         * The LicenseAssignments in this page of results.
@@ -851,13 +1174,12 @@ object licensingV1Mod {
       /**
         * Identifies the resource as a collection of LicenseAssignments.
         */
-      var kind: js.UndefOr[String] = js.undefined
+      var kind: js.UndefOr[String | Null] = js.undefined
       
       /**
-        * The continuation token, used to page through large result sets. Provide
-        * this value in a subsequent request to return the next page of results.
+        * The token that you must submit in a subsequent request to retrieve additional license results matching your query parameters. The `maxResults` query string is related to the `nextPageToken` since `maxResults` determines how many entries are returned on each next page.
         */
-      var nextPageToken: js.UndefOr[String] = js.undefined
+      var nextPageToken: js.UndefOr[String | Null] = js.undefined
     }
     object SchemaLicenseAssignmentList {
       
@@ -870,19 +1192,25 @@ object licensingV1Mod {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
+        inline def setEtagNull: Self = StObject.set(x, "etag", null)
+        
         inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
         inline def setItems(value: js.Array[SchemaLicenseAssignment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: SchemaLicenseAssignment*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: SchemaLicenseAssignment*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        
+        inline def setKindNull: Self = StObject.set(x, "kind", null)
         
         inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        
+        inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
         
         inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
@@ -891,9 +1219,32 @@ object licensingV1Mod {
     trait StandardParameters extends StObject {
       
       /**
-        * Data format for the response.
+        * V1 error format.
+        */
+      @JSName("$.xgafv")
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
+      
+      /**
+        * OAuth access token.
+        */
+      var access_token: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Data format for response.
         */
       var alt: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Auth client or API Key for the request
+        */
+      var auth: js.UndefOr[
+            String | OAuth2Client | JWT | Compute | UserRefreshClient | BaseExternalAccountClient | GoogleAuth[JSONClient]
+          ] = js.undefined
+      
+      /**
+        * JSONP
+        */
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
@@ -901,9 +1252,7 @@ object licensingV1Mod {
       var fields: js.UndefOr[String] = js.undefined
       
       /**
-        * API key. Your API key identifies your project and provides you with API
-        * access, quota, and reports. Required unless you provide an OAuth 2.0
-        * token.
+        * API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.
         */
       var key: js.UndefOr[String] = js.undefined
       
@@ -918,15 +1267,19 @@ object licensingV1Mod {
       var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * An opaque string that represents a user for quota purposes. Must not
-        * exceed 40 characters.
+        * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
         */
       var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
-        * Deprecated. Please use quotaUser instead.
+        * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var userIp: js.UndefOr[String] = js.undefined
+      var uploadType: js.UndefOr[String] = js.undefined
+      
+      /**
+        * Upload protocol for media (e.g. "raw", "multipart").
+        */
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       
@@ -937,9 +1290,27 @@ object licensingV1Mod {
       
       extension [Self <: StandardParameters](x: Self) {
         
+        inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+        
+        inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+        
+        inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+        
+        inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+        
         inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
         inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        
+        inline def setAuth(
+          value: String | OAuth2Client | JWT | Compute | UserRefreshClient | BaseExternalAccountClient | GoogleAuth[JSONClient]
+        ): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        
+        inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+        
+        inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -961,9 +1332,13 @@ object licensingV1Mod {
         
         inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
         
-        inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
+        inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
         
-        inline def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
+        inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+        
+        inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+        
+        inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
       }
     }
   }

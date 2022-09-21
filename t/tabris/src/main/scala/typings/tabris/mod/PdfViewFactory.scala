@@ -10,5 +10,5 @@ trait PdfViewFactory
   extends Factory[
       PdfViewConstructor, 
       InstanceType[PdfViewConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[PdfViewConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

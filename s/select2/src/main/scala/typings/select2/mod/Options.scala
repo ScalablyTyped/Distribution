@@ -4,6 +4,7 @@ import typings.select2.mod.global.JQuery
 import typings.select2.select2Strings.ltr
 import typings.select2.select2Strings.rtl
 import typings.std.HTMLElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,16 +21,18 @@ trait Options[Result, RemoteResult] extends StObject {
   
   var closeOnSelect: js.UndefOr[Boolean] = js.undefined
   
-  var containerCss: js.UndefOr[js.Any] = js.undefined
+  var containerCss: js.UndefOr[Any] = js.undefined
   
   var containerCssClass: js.UndefOr[String] = js.undefined
   
   // Not in https://select2.org/configuration/options-api
-  var createTag: js.UndefOr[js.Function1[/* params */ SearchOptions, IdTextPair | Null]] = js.undefined
+  var createTag: js.UndefOr[
+    js.Function1[/* params */ SearchOptions, (IdTextPair & (Record[String, Any])) | Null]
+  ] = js.undefined
   
   var data: js.UndefOr[js.Array[DataFormat | GroupedDataFormat]] = js.undefined
   
-  var dataAdapter: js.UndefOr[js.Any] = js.undefined
+  var dataAdapter: js.UndefOr[Any] = js.undefined
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
@@ -37,11 +40,11 @@ trait Options[Result, RemoteResult] extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var dropdownAdapter: js.UndefOr[js.Any] = js.undefined
+  var dropdownAdapter: js.UndefOr[Any] = js.undefined
   
   var dropdownAutoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var dropdownCss: js.UndefOr[js.Any] = js.undefined
+  var dropdownCss: js.UndefOr[Any] = js.undefined
   
   var dropdownCssClass: js.UndefOr[String] = js.undefined
   
@@ -52,7 +55,7 @@ trait Options[Result, RemoteResult] extends StObject {
   var initSelection: js.UndefOr[
     js.Function2[
       /* element */ JQuery[HTMLElement], 
-      /* callback */ js.Function1[/* data */ js.Any, Unit], 
+      /* callback */ js.Function1[/* data */ Any, Unit], 
       Unit
     ]
   ] = js.undefined
@@ -83,11 +86,11 @@ trait Options[Result, RemoteResult] extends StObject {
   
   var placeholder: js.UndefOr[String | IdTextPair] = js.undefined
   
-  var resultsAdapter: js.UndefOr[js.Any] = js.undefined
+  var resultsAdapter: js.UndefOr[Any] = js.undefined
   
   var selectOnClose: js.UndefOr[Boolean] = js.undefined
   
-  var selectionAdapter: js.UndefOr[js.Any] = js.undefined
+  var selectionAdapter: js.UndefOr[Any] = js.undefined
   
   var sorter: js.UndefOr[
     js.Function1[
@@ -103,7 +106,11 @@ trait Options[Result, RemoteResult] extends StObject {
   ] = js.undefined
   
   var templateSelection: js.UndefOr[
-    js.Function1[/* selection */ IdTextPair | LoadingData | Result, String | JQuery[HTMLElement]]
+    js.Function2[
+      /* selection */ IdTextPair | LoadingData | Result, 
+      /* container */ JQuery[HTMLElement], 
+      String | JQuery[HTMLElement]
+    ]
   ] = js.undefined
   
   var theme: js.UndefOr[String] = js.undefined
@@ -113,9 +120,9 @@ trait Options[Result, RemoteResult] extends StObject {
   var tokenizer: js.UndefOr[
     js.Function4[
       /* input */ String, 
-      /* selection */ js.Array[js.Any], 
+      /* selection */ js.Array[Any], 
       /* selectCallback */ js.Function0[Unit], 
-      /* options */ Options[DataFormat | GroupedDataFormat, js.Any], 
+      /* options */ Options[DataFormat | GroupedDataFormat, Any], 
       String
     ]
   ] = js.undefined
@@ -151,7 +158,7 @@ object Options {
     
     inline def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
     
-    inline def setContainerCss(value: js.Any): Self = StObject.set(x, "containerCss", value.asInstanceOf[js.Any])
+    inline def setContainerCss(value: Any): Self = StObject.set(x, "containerCss", value.asInstanceOf[js.Any])
     
     inline def setContainerCssClass(value: String): Self = StObject.set(x, "containerCssClass", value.asInstanceOf[js.Any])
     
@@ -159,19 +166,19 @@ object Options {
     
     inline def setContainerCssUndefined: Self = StObject.set(x, "containerCss", js.undefined)
     
-    inline def setCreateTag(value: /* params */ SearchOptions => IdTextPair | Null): Self = StObject.set(x, "createTag", js.Any.fromFunction1(value))
+    inline def setCreateTag(value: /* params */ SearchOptions => (IdTextPair & (Record[String, Any])) | Null): Self = StObject.set(x, "createTag", js.Any.fromFunction1(value))
     
     inline def setCreateTagUndefined: Self = StObject.set(x, "createTag", js.undefined)
     
     inline def setData(value: js.Array[DataFormat | GroupedDataFormat]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataAdapter(value: js.Any): Self = StObject.set(x, "dataAdapter", value.asInstanceOf[js.Any])
+    inline def setDataAdapter(value: Any): Self = StObject.set(x, "dataAdapter", value.asInstanceOf[js.Any])
     
     inline def setDataAdapterUndefined: Self = StObject.set(x, "dataAdapter", js.undefined)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: (DataFormat | GroupedDataFormat)*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: (DataFormat | GroupedDataFormat)*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
@@ -185,7 +192,7 @@ object Options {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setDropdownAdapter(value: js.Any): Self = StObject.set(x, "dropdownAdapter", value.asInstanceOf[js.Any])
+    inline def setDropdownAdapter(value: Any): Self = StObject.set(x, "dropdownAdapter", value.asInstanceOf[js.Any])
     
     inline def setDropdownAdapterUndefined: Self = StObject.set(x, "dropdownAdapter", js.undefined)
     
@@ -193,7 +200,7 @@ object Options {
     
     inline def setDropdownAutoWidthUndefined: Self = StObject.set(x, "dropdownAutoWidth", js.undefined)
     
-    inline def setDropdownCss(value: js.Any): Self = StObject.set(x, "dropdownCss", value.asInstanceOf[js.Any])
+    inline def setDropdownCss(value: Any): Self = StObject.set(x, "dropdownCss", value.asInstanceOf[js.Any])
     
     inline def setDropdownCssClass(value: String): Self = StObject.set(x, "dropdownCssClass", value.asInstanceOf[js.Any])
     
@@ -210,7 +217,7 @@ object Options {
     inline def setEscapeMarkupUndefined: Self = StObject.set(x, "escapeMarkup", js.undefined)
     
     inline def setInitSelection(
-      value: (/* element */ JQuery[HTMLElement], /* callback */ js.Function1[/* data */ js.Any, Unit]) => Unit
+      value: (/* element */ JQuery[HTMLElement], /* callback */ js.Function1[/* data */ Any, Unit]) => Unit
     ): Self = StObject.set(x, "initSelection", js.Any.fromFunction2(value))
     
     inline def setInitSelectionUndefined: Self = StObject.set(x, "initSelection", js.undefined)
@@ -253,7 +260,7 @@ object Options {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setResultsAdapter(value: js.Any): Self = StObject.set(x, "resultsAdapter", value.asInstanceOf[js.Any])
+    inline def setResultsAdapter(value: Any): Self = StObject.set(x, "resultsAdapter", value.asInstanceOf[js.Any])
     
     inline def setResultsAdapterUndefined: Self = StObject.set(x, "resultsAdapter", js.undefined)
     
@@ -261,7 +268,7 @@ object Options {
     
     inline def setSelectOnCloseUndefined: Self = StObject.set(x, "selectOnClose", js.undefined)
     
-    inline def setSelectionAdapter(value: js.Any): Self = StObject.set(x, "selectionAdapter", value.asInstanceOf[js.Any])
+    inline def setSelectionAdapter(value: Any): Self = StObject.set(x, "selectionAdapter", value.asInstanceOf[js.Any])
     
     inline def setSelectionAdapterUndefined: Self = StObject.set(x, "selectionAdapter", js.undefined)
     
@@ -279,7 +286,9 @@ object Options {
     
     inline def setTemplateResultUndefined: Self = StObject.set(x, "templateResult", js.undefined)
     
-    inline def setTemplateSelection(value: /* selection */ IdTextPair | LoadingData | Result => String | JQuery[HTMLElement]): Self = StObject.set(x, "templateSelection", js.Any.fromFunction1(value))
+    inline def setTemplateSelection(
+      value: (/* selection */ IdTextPair | LoadingData | Result, /* container */ JQuery[HTMLElement]) => String | JQuery[HTMLElement]
+    ): Self = StObject.set(x, "templateSelection", js.Any.fromFunction2(value))
     
     inline def setTemplateSelectionUndefined: Self = StObject.set(x, "templateSelection", js.undefined)
     
@@ -291,10 +300,10 @@ object Options {
     
     inline def setTokenSeparatorsUndefined: Self = StObject.set(x, "tokenSeparators", js.undefined)
     
-    inline def setTokenSeparatorsVarargs(value: String*): Self = StObject.set(x, "tokenSeparators", js.Array(value :_*))
+    inline def setTokenSeparatorsVarargs(value: String*): Self = StObject.set(x, "tokenSeparators", js.Array(value*))
     
     inline def setTokenizer(
-      value: (/* input */ String, /* selection */ js.Array[js.Any], /* selectCallback */ js.Function0[Unit], /* options */ Options[DataFormat | GroupedDataFormat, js.Any]) => String
+      value: (/* input */ String, /* selection */ js.Array[Any], /* selectCallback */ js.Function0[Unit], /* options */ Options[DataFormat | GroupedDataFormat, Any]) => String
     ): Self = StObject.set(x, "tokenizer", js.Any.fromFunction4(value))
     
     inline def setTokenizerUndefined: Self = StObject.set(x, "tokenizer", js.undefined)

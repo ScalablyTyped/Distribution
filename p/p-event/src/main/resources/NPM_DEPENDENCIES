@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-event" : "4.2.0"
+      "p-event" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "p-event" : "4.2.0"
+      "p-event" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

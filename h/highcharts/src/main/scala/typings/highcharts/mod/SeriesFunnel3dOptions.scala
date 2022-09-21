@@ -21,8 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var boostThreshold: Unit
   
   /**
-    * (Highcharts) The center of the series. By default, it is centered in the
-    * middle of the plot area, so it fills the plot area height.
+    * (Highcharts, Highmaps) The center of the series. By default, it is
+    * centered in the middle of the plot area, so it fills the plot area
+    * height.
     */
   var center: js.UndefOr[js.Array[Double | String]] = js.undefined
   
@@ -55,8 +56,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var connectNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) The end angle of the pie in degrees where 0 is top and 90 is
-    * right. Defaults to `startAngle` plus 360.
+    * (Highcharts, Highmaps) The end angle of the pie in degrees where 0 is top
+    * and 90 is right. Defaults to `startAngle` plus 360.
     */
   var endAngle: js.UndefOr[Double] = js.undefined
   
@@ -106,8 +107,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts) Equivalent to chart.ignoreHiddenSeries, this option tells
-    * whether the series shall be redrawn as if the hidden point were `null`.
+    * (Highcharts, Highmaps) Equivalent to chart.ignoreHiddenSeries, this
+    * option tells whether the series shall be redrawn as if the hidden point
+    * were `null`.
     *
     * The default value changed from `false` to `true` with Highcharts 3.0.
     */
@@ -138,11 +140,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
   
   /**
-    * (Highmaps) A map data object containing a `path` definition and
-    * optionally additional properties to join in the data as per the `joinBy`
-    * option.
+    * (Highmaps) An array of objects containing a `geometry` or `path`
+    * definition and optionally additional properties to join in the `data` as
+    * per the `joinBy` option. GeoJSON and TopoJSON structures can also be
+    * passed directly into `mapData`.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
+  var mapData: js.UndefOr[GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]] = js.undefined
   
   /**
     * (Highcharts) Options for the point markers of line-like series.
@@ -156,9 +159,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
-    * (Highcharts) The minimum size for a pie in response to auto margins. The
-    * pie will try to shrink to make room for data labels in side the plot
-    * area, but only to this size.
+    * (Highcharts, Highmaps) The minimum size for a pie in response to auto
+    * margins. The pie will try to shrink to make room for data labels in side
+    * the plot area, but only to this size.
     */
   var minSize: js.UndefOr[Double | String] = js.undefined
   
@@ -169,8 +172,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts) If a point is sliced, moved out from the center, how many
-    * pixels should it be moved?.
+    * (Highcharts, Highmaps) If a point is sliced, moved out from the center,
+    * how many pixels should it be moved?.
     */
   var slicedOffset: js.UndefOr[Double] = js.undefined
   
@@ -183,8 +186,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var stack: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * (Highcharts) The start angle of the pie slices in degrees where 0 is top
-    * and 90 right.
+    * (Highcharts, Highmaps) The start angle of the pie slices in degrees where
+    * 0 is top and 90 right.
     */
   var startAngle: js.UndefOr[Double] = js.undefined
   
@@ -193,6 +196,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * values are `left`, `center` and `right`.
     */
   var step: js.UndefOr[OptionsStepValue] = js.undefined
+  
+  /**
+    * (Highcharts) Thickness describing the ring size for a donut type chart,
+    * overriding innerSize.
+    */
+  var thickness: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
@@ -248,7 +257,7 @@ object SeriesFunnel3dOptions {
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    inline def setCenterVarargs(value: (Double | String)*): Self = StObject.set(x, "center", js.Array(value :_*))
+    inline def setCenterVarargs(value: (Double | String)*): Self = StObject.set(x, "center", js.Array(value*))
     
     inline def setColorAxis(value: Unit): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
     
@@ -304,11 +313,11 @@ object SeriesFunnel3dOptions {
     
     inline def setLinecapUndefined: Self = StObject.set(x, "linecap", js.undefined)
     
-    inline def setMapData(value: js.Array[SeriesMapDataOptions] | js.Any): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
+    inline def setMapData(value: GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
     
     inline def setMapDataUndefined: Self = StObject.set(x, "mapData", js.undefined)
     
-    inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value :_*))
+    inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value*))
     
     inline def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
@@ -337,6 +346,10 @@ object SeriesFunnel3dOptions {
     inline def setStep(value: OptionsStepValue): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
     inline def setType(value: String | funnel3d): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait MapControllerOptions extends StObject {
   
   var dragRotate: js.UndefOr[Boolean] = js.undefined
   
-  var eventManager: js.UndefOr[js.Any] = js.undefined
+  var eventManager: js.UndefOr[Any] = js.undefined
   
   var isInteractive: Boolean
   
@@ -49,7 +49,7 @@ object MapControllerOptions {
     
     inline def setDragRotateUndefined: Self = StObject.set(x, "dragRotate", js.undefined)
     
-    inline def setEventManager(value: js.Any): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
+    inline def setEventManager(value: Any): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
     inline def setEventManagerUndefined: Self = StObject.set(x, "eventManager", js.undefined)
     

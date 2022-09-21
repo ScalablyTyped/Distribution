@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("semantic-ui-react", "Portal")
 @js.native
-class Portal () extends default
+open class Portal () extends default
 object Portal {
   
   /* was `typeof PortalInner` */
   @JSImport("semantic-ui-react", "Portal.Inner")
   @js.native
-  class Inner ()
+  open class Inner ()
     extends typings.semanticUiReact.portalMod.default.Inner
 }

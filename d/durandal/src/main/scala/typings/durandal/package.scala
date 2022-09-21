@@ -1,11 +1,13 @@
 package typings.durandal
 
+import typings.jquery.JQueryDeferred
+import typings.jquery.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DurandalDeferred[T] = typings.jquery.JQueryDeferred[T]
+type DurandalDeferred[T] = JQueryDeferred[T]
 
 // By default, Durandal uses JQuery's Defer/Promise implementation, but durandal supports injecting/configuring
 // usage of different JavaScript Defer/Promise libraries (f.ex. Q or ES6 Promise polyfills).
@@ -14,4 +16,4 @@ type DurandalDeferred[T] = typings.jquery.JQueryDeferred[T]
 // <reference types="q" />
 // interface DurandalPromise<T> extends Q.Promise<T>
 // interface DurandalDeferred<T> extends Q.Deferred<T>
-type DurandalPromise[T] = typings.jquery.JQueryPromise[T]
+type DurandalPromise[T] = JQueryPromise[T]

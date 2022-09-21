@@ -13,7 +13,7 @@ trait SourceControlResourceGroup extends StObject {
   
   /**
     * Whether this source control resource group is hidden when it contains
-    * no [source control resource states](#SourceControlResourceState).
+    * no {@link SourceControlResourceState source control resource states}.
     */
   var hideWhenEmpty: js.UndefOr[Boolean] = js.undefined
   
@@ -29,7 +29,7 @@ trait SourceControlResourceGroup extends StObject {
   
   /**
     * This group's collection of
-    * [source control resource states](#SourceControlResourceState).
+    * {@link SourceControlResourceState source control resource states}.
     */
   var resourceStates: js.Array[SourceControlResourceState]
 }
@@ -59,6 +59,6 @@ object SourceControlResourceGroup {
     
     inline def setResourceStates(value: js.Array[SourceControlResourceState]): Self = StObject.set(x, "resourceStates", value.asInstanceOf[js.Any])
     
-    inline def setResourceStatesVarargs(value: SourceControlResourceState*): Self = StObject.set(x, "resourceStates", js.Array(value :_*))
+    inline def setResourceStatesVarargs(value: SourceControlResourceState*): Self = StObject.set(x, "resourceStates", js.Array(value*))
   }
 }

@@ -21,7 +21,7 @@ object Args {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }

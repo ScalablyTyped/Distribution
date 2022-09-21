@@ -56,7 +56,7 @@ object DeviceConfiguration {
     
     inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    inline def setAssignmentsVarargs(value: DeviceConfigurationAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: DeviceConfigurationAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
@@ -74,7 +74,7 @@ object DeviceConfiguration {
     
     inline def setDeviceSettingStateSummariesUndefined: Self = StObject.set(x, "deviceSettingStateSummaries", js.undefined)
     
-    inline def setDeviceSettingStateSummariesVarargs(value: SettingStateDeviceSummary*): Self = StObject.set(x, "deviceSettingStateSummaries", js.Array(value :_*))
+    inline def setDeviceSettingStateSummariesVarargs(value: SettingStateDeviceSummary*): Self = StObject.set(x, "deviceSettingStateSummaries", js.Array(value*))
     
     inline def setDeviceStatusOverview(value: NullableOption[DeviceConfigurationDeviceOverview]): Self = StObject.set(x, "deviceStatusOverview", value.asInstanceOf[js.Any])
     
@@ -88,7 +88,7 @@ object DeviceConfiguration {
     
     inline def setDeviceStatusesUndefined: Self = StObject.set(x, "deviceStatuses", js.undefined)
     
-    inline def setDeviceStatusesVarargs(value: DeviceConfigurationDeviceStatus*): Self = StObject.set(x, "deviceStatuses", js.Array(value :_*))
+    inline def setDeviceStatusesVarargs(value: DeviceConfigurationDeviceStatus*): Self = StObject.set(x, "deviceStatuses", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -110,7 +110,7 @@ object DeviceConfiguration {
     
     inline def setUserStatusesUndefined: Self = StObject.set(x, "userStatuses", js.undefined)
     
-    inline def setUserStatusesVarargs(value: DeviceConfigurationUserStatus*): Self = StObject.set(x, "userStatuses", js.Array(value :_*))
+    inline def setUserStatusesVarargs(value: DeviceConfigurationUserStatus*): Self = StObject.set(x, "userStatuses", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

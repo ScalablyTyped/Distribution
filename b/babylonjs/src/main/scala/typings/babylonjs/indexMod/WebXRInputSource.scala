@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WebXRInputSource")
 @js.native
-class WebXRInputSource protected ()
+open class WebXRInputSource protected ()
   extends typings.babylonjs.xRIndexMod.WebXRInputSource {
   /**
     * Creates the input source object

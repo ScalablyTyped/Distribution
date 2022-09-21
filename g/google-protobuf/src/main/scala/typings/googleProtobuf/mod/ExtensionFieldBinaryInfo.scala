@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-protobuf", "ExtensionFieldBinaryInfo")
 @js.native
-class ExtensionFieldBinaryInfo[T] protected () extends StObject {
+open class ExtensionFieldBinaryInfo[T] protected () extends StObject {
   def this(
     fieldInfo: ExtensionFieldInfo[T],
     binaryReaderFn: BinaryRead,
@@ -16,11 +16,11 @@ class ExtensionFieldBinaryInfo[T] protected () extends StObject {
     opt_isPacked: Boolean
   ) = this()
   
-  def binaryReaderFn(msg: js.Any, reader: BinaryReadReader): Unit = js.native
+  def binaryReaderFn(msg: Any, reader: BinaryReadReader): Any = js.native
   @JSName("binaryReaderFn")
   var binaryReaderFn_Original: BinaryRead = js.native
   
-  def binaryWriterFn(fieldNumber: Double, value: js.Any, writerCallback: BinaryWriteCallback): Unit = js.native
+  def binaryWriterFn(fieldNumber: Double, value: Any, writerCallback: BinaryWriteCallback): Unit = js.native
   @JSName("binaryWriterFn")
   var binaryWriterFn_Original: BinaryWrite = js.native
   

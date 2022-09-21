@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetMasterAccountResponse extends StObject {
   
   /**
-    * A list of details about the Security Hub master account for the current member account. 
+    * A list of details about the Security Hub administrator account for the current member account. 
     */
   var Master: js.UndefOr[Invitation] = js.undefined
 }

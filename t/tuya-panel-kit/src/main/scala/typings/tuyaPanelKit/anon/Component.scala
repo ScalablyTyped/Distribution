@@ -14,17 +14,17 @@ trait Component extends StObject {
   /**
     * Lazily get a React component to render for this screen.
     */
-  def getComponent(): ComponentType[js.Any]
+  def getComponent(): ComponentType[Any]
 }
 object Component {
   
-  inline def apply(getComponent: () => ComponentType[js.Any]): Component = {
+  inline def apply(getComponent: () => ComponentType[Any]): Component = {
     val __obj = js.Dynamic.literal(getComponent = js.Any.fromFunction0(getComponent))
     __obj.asInstanceOf[Component]
   }
   
   extension [Self <: Component](x: Self) {
     
-    inline def setGetComponent(value: () => ComponentType[js.Any]): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
+    inline def setGetComponent(value: () => ComponentType[Any]): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
   }
 }

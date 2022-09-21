@@ -27,6 +27,6 @@ object Date {
     
     inline def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
     
-    inline def setReasonsVarargs(value: FilteringCount*): Self = StObject.set(x, "reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: FilteringCount*): Self = StObject.set(x, "reasons", js.Array(value*))
   }
 }

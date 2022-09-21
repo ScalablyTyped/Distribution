@@ -10,7 +10,7 @@ object Playlists {
   
   @JSGlobal("Windows.Media.Playlists.Playlist")
   @js.native
-  class Playlist ()
+  open class Playlist ()
     extends StObject
        with typings.winrt.Windows.Media.Playlists.Playlist
   /* static members */

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Record<keyof Resources, tabris.tabris.Selectable<tabris.tabris.FontValue>> */
 trait FontResourceData[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof Resources ]: tabris.tabris.Font}
-  */ typings.tabris.tabrisStrings.FontResourceData & TopLevel[js.Any] */] extends StObject {
+  */ typings.tabris.tabrisStrings.FontResourceData & TopLevel[Any] */] extends StObject {
   
   var build: Selectable[FontValue]
   
@@ -18,14 +18,14 @@ object FontResourceData {
   
   inline def apply[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Resources ]: tabris.tabris.Font}
-    */ typings.tabris.tabrisStrings.FontResourceData & TopLevel[js.Any] */](): FontResourceData[Resources] = {
+    */ typings.tabris.tabrisStrings.FontResourceData & TopLevel[Any] */](): FontResourceData[Resources] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontResourceData[Resources]]
   }
   
   extension [Self <: FontResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Resources ]: tabris.tabris.Font}
-    */ typings.tabris.tabrisStrings.FontResourceData & TopLevel[js.Any] */](x: Self & FontResourceData[Resources]) {
+    */ typings.tabris.tabrisStrings.FontResourceData & TopLevel[Any] */](x: Self & FontResourceData[Resources]) {
     
     inline def setBuild(value: Selectable[FontValue]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

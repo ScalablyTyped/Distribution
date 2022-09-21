@@ -19,7 +19,7 @@ trait XMLMapping extends StObject {
   
   val IsMapped: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val PrefixMappings: String = js.native
   

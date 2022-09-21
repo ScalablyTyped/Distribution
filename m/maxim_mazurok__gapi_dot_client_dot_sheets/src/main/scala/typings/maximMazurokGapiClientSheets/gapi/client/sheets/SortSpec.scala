@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SortSpec extends StObject {
   
-  /** The background fill color to sort by; cells with this fill color are sorted to the top. Mutually exclusive with foreground_color. */
+  /** The background fill color to sort by; cells with this fill color are sorted to the top. Mutually exclusive with foreground_color. Deprecated: Use background_color_style. */
   var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /**
@@ -21,7 +21,7 @@ trait SortSpec extends StObject {
   /** The dimension the sort should be applied to. */
   var dimensionIndex: js.UndefOr[Double] = js.undefined
   
-  /** The foreground color to sort by; cells with this foreground color are sorted to the top. Mutually exclusive with background_color. */
+  /** The foreground color to sort by; cells with this foreground color are sorted to the top. Mutually exclusive with background_color. Deprecated: Use foreground_color_style. */
   var foregroundColor: js.UndefOr[Color] = js.undefined
   
   /**

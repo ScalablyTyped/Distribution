@@ -109,7 +109,7 @@ object XDesktop {
     getComponents: () => XEnumerationAccess,
     getCurrentComponent: () => XComponent,
     getCurrentFrame: () => XFrame,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTerminateListener: XTerminateListener => Unit,
     terminate: () => Boolean

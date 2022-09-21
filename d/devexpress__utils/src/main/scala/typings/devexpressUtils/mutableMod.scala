@@ -11,8 +11,14 @@ object mutableMod {
   @js.native
   abstract class MutableInterval () extends ConstInterval {
     
+    def end_=(`val`: Double): Unit = js.native
+    
     def expand(interval: ConstInterval): this.type = js.native
     
+    def length_=(`val`: Double): Unit = js.native
+    
     def normalizeLength(): this.type = js.native
+    
+    def start_=(`val`: Double): Unit = js.native
   }
 }

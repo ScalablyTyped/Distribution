@@ -29,13 +29,13 @@ object anon {
       
       inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
       
-      inline def setLanguagesVarargs(value: Language*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: Language*): Self = StObject.set(x, "languages", js.Array(value*))
       
       inline def setStyle(value: PrismThemeEntry): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
 }

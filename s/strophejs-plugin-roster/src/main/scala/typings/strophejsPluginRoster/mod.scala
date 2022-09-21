@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  type IqCallback = js.Function1[/* stanza */ Element, js.Any]
+  type IqCallback = js.Function1[/* stanza */ Element, Any]
   
   type IqID = String
   
-  type PresenceRequestCallback = js.Function1[/* from */ String, js.Any]
+  type PresenceRequestCallback = js.Function1[/* from */ String, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.strophejsPluginRoster.strophejsPluginRosterStrings.subscribe
@@ -67,7 +67,7 @@ object mod {
       
       inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setJid(value: String): Self = StObject.set(x, "jid", value.asInstanceOf[js.Any])
       
@@ -129,7 +129,7 @@ object mod {
     /* items */ js.Array[RosterItem], 
     /* item */ RosterItem, 
     /* previousItem */ RosterItem, 
-    js.Any
+    Any
   ]
   
   @js.native
@@ -178,6 +178,29 @@ object mod {
     def update(jid: String, name: Unit, groups: js.Array[String]): IqID = js.native
     def update(jid: String, name: Unit, groups: js.Array[String], call_back: IqCallback): IqID = js.native
     def update(jid: String, name: Unit, groups: Unit, call_back: IqCallback): IqID = js.native
+  }
+  
+  object global {
+    
+    object Strophe {
+      
+      trait Connection extends StObject {
+        
+        var roster: StropheRosterPlugin
+      }
+      object Connection {
+        
+        inline def apply(roster: StropheRosterPlugin): Connection = {
+          val __obj = js.Dynamic.literal(roster = roster.asInstanceOf[js.Any])
+          __obj.asInstanceOf[Connection]
+        }
+        
+        extension [Self <: Connection](x: Self) {
+          
+          inline def setRoster(value: StropheRosterPlugin): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
+        }
+      }
+    }
   }
   
   /*~ Here, declare the same module as the one you imported above */

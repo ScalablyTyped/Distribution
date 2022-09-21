@@ -1,5 +1,6 @@
 package typings.wryContext
 
+import typings.std.Generator
 import typings.std.ReturnType
 import typings.wryContext.anon.Instantiable
 import org.scalablytyped.runtime.StObject
@@ -16,11 +17,11 @@ object mod {
   @js.native
   val Slot: ReturnType[js.Function0[Instantiable]] = js.native
   
-  inline def asyncFromGen[TArgs /* <: js.Array[js.Any] */](genFn: js.Function1[/* args */ TArgs, js.Any]): js.Function1[/* args */ TArgs, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncFromGen")(genFn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ TArgs, js.Promise[js.Any]]]
+  inline def asyncFromGen[TArgs /* <: js.Array[Any] */, TYield, TReturn, TNext](genFn: js.Function1[/* args */ TArgs, Generator[TYield, TReturn, TNext]]): js.Function1[/* args */ TArgs, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncFromGen")(genFn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ TArgs, js.Promise[Any]]]
   
-  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(noContext) */ inline def bind[TArgs /* <: js.Array[js.Any] */, TResult](callback: js.Function1[/* args */ TArgs, TResult]): js.Function1[/* args */ TArgs, TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ TArgs, TResult]]
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(noContext) */ inline def bind[TArgs /* <: js.Array[Any] */, TResult, TThis](callback: js.ThisFunction1[/* this */ TThis, /* args */ TArgs, TResult]): js.ThisFunction1[/* this */ TThis, /* args */ TArgs, TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(callback.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction1[/* this */ TThis, /* args */ TArgs, TResult]]
   
-  inline def setTimeout(callback: js.Function0[js.Any], delay: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setTimeout(callback: js.Function0[Any], delay: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def wrapYieldingFiberMethods[F /* <: js.Function */](Fiber: F): F = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapYieldingFiberMethods")(Fiber.asInstanceOf[js.Any]).asInstanceOf[F]
 }

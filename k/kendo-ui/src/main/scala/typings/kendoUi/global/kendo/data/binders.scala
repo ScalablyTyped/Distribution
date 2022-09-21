@@ -13,13 +13,13 @@ object binders {
   
   @JSGlobal("kendo.data.binders.attr")
   @js.native
-  class attr ()
+  open class attr ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
   @JSGlobal("kendo.data.binders.css")
   @js.native
-  class css ()
+  open class css ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
@@ -27,25 +27,25 @@ object binders {
   
   @JSGlobal("kendo.data.binders.disabled")
   @js.native
-  class disabled ()
+  open class disabled ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
   @JSGlobal("kendo.data.binders.enabled")
   @js.native
-  class enabled ()
+  open class enabled ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
   @JSGlobal("kendo.data.binders.events")
   @js.native
-  class events ()
+  open class events ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
   @JSGlobal("kendo.data.binders.html")
   @js.native
-  class html ()
+  open class html ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
@@ -53,20 +53,20 @@ object binders {
     
     @JSGlobal("kendo.data.binders.input.checked")
     @js.native
-    class checked ()
+    open class checked ()
       extends StObject
          with typings.kendoUi.kendo.data.binders.input.checked
   }
   
   @JSGlobal("kendo.data.binders.invisible")
   @js.native
-  class invisible ()
+  open class invisible ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
   @JSGlobal("kendo.data.binders.readonly")
   @js.native
-  class readonly ()
+  open class readonly ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
@@ -74,44 +74,44 @@ object binders {
     
     @JSGlobal("kendo.data.binders.select.source")
     @js.native
-    class source ()
+    open class source ()
       extends StObject
          with typings.kendoUi.kendo.data.binders.source
     
     @JSGlobal("kendo.data.binders.select.value")
     @js.native
-    class value ()
+    open class value ()
       extends StObject
          with typings.kendoUi.kendo.data.binders.select.value
   }
   
   @JSGlobal("kendo.data.binders.source")
   @js.native
-  class source ()
+  open class source ()
     extends StObject
        with typings.kendoUi.kendo.data.binders.source
   
   @JSGlobal("kendo.data.binders.style")
   @js.native
-  class style ()
+  open class style ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
   @JSGlobal("kendo.data.binders.text")
   @js.native
-  class text ()
+  open class text ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
   @JSGlobal("kendo.data.binders.value")
   @js.native
-  class value ()
+  open class value ()
     extends StObject
        with typings.kendoUi.kendo.data.binders.value
   
   @JSGlobal("kendo.data.binders.visible")
   @js.native
-  class visible ()
+  open class visible ()
     extends StObject
        with typings.kendoUi.kendo.data.Binder
   
@@ -123,13 +123,13 @@ object binders {
     
     @JSGlobal("kendo.data.binders.widget.checked")
     @js.native
-    class checked ()
+    open class checked ()
       extends StObject
          with typings.kendoUi.kendo.data.binders.widget.checked
     
     @JSGlobal("kendo.data.binders.widget.disabled")
     @js.native
-    class disabled ()
+    open class disabled ()
       extends StObject
          with typings.kendoUi.kendo.data.Binder
     
@@ -137,26 +137,26 @@ object binders {
       
       @JSGlobal("kendo.data.binders.widget.dropdowntree.value")
       @js.native
-      class value ()
+      open class value ()
         extends StObject
            with typings.kendoUi.kendo.data.binders.widget.dropdowntree.value
     }
     
     @JSGlobal("kendo.data.binders.widget.enabled")
     @js.native
-    class enabled ()
+    open class enabled ()
       extends StObject
          with typings.kendoUi.kendo.data.Binder
     
     @JSGlobal("kendo.data.binders.widget.end")
     @js.native
-    class end ()
+    open class end ()
       extends StObject
          with typings.kendoUi.kendo.data.binders.widget.end
     
     @JSGlobal("kendo.data.binders.widget.events")
     @js.native
-    class events ()
+    open class events ()
       extends StObject
          with typings.kendoUi.kendo.data.Binder
     
@@ -180,7 +180,7 @@ object binders {
     
     @JSGlobal("kendo.data.binders.widget.invisible")
     @js.native
-    class invisible ()
+    open class invisible ()
       extends StObject
          with typings.kendoUi.kendo.data.Binder
     
@@ -188,7 +188,7 @@ object binders {
       
       @JSGlobal("kendo.data.binders.widget.multiselect.value")
       @js.native
-      class value ()
+      open class value ()
         extends StObject
            with typings.kendoUi.kendo.data.binders.widget.multiselect.value
     }
@@ -206,19 +206,19 @@ object binders {
     
     @JSGlobal("kendo.data.binders.widget.start")
     @js.native
-    class start ()
+    open class start ()
       extends StObject
          with typings.kendoUi.kendo.data.binders.widget.start
     
     @JSGlobal("kendo.data.binders.widget.value")
     @js.native
-    class value ()
+    open class value ()
       extends StObject
          with typings.kendoUi.kendo.data.binders.widget.value
     
     @JSGlobal("kendo.data.binders.widget.visible")
     @js.native
-    class visible ()
+    open class visible ()
       extends StObject
          with typings.kendoUi.kendo.data.Binder
   }

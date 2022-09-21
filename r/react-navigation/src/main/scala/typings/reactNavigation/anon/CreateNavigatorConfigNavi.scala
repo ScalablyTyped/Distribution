@@ -25,7 +25,7 @@ trait CreateNavigatorConfigNavi extends StObject {
     NavigationScreenConfig[
       js.Object, 
       NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -35,9 +35,9 @@ trait CreateNavigatorConfigNavi extends StObject {
   
   var navigationOptions: js.UndefOr[
     NavigationScreenConfig[
-      StringDictionary[js.Any], 
+      StringDictionary[Any], 
       NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -65,12 +65,12 @@ object CreateNavigatorConfigNavi {
       value: NavigationScreenConfig[
           js.Object, 
           NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], 
-          js.Any
+          Any
         ]
     ): Self = StObject.set(x, "defaultNavigationOptions", value.asInstanceOf[js.Any])
     
     inline def setDefaultNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], js.Any]) & NavigationOptionsOptions[js.Object] => js.Object
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], Any]) & NavigationOptionsOptions[js.Object] => js.Object
     ): Self = StObject.set(x, "defaultNavigationOptions", js.Any.fromFunction1(value))
     
     inline def setDefaultNavigationOptionsUndefined: Self = StObject.set(x, "defaultNavigationOptions", js.undefined)
@@ -85,14 +85,14 @@ object CreateNavigatorConfigNavi {
     
     inline def setNavigationOptions(
       value: NavigationScreenConfig[
-          StringDictionary[js.Any], 
+          StringDictionary[Any], 
           NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], 
-          js.Any
+          Any
         ]
     ): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
     inline def setNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], js.Any]) & NavigationOptionsOptions[StringDictionary[js.Any]] => StringDictionary[js.Any]
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], Any]) & NavigationOptionsOptions[StringDictionary[Any]] => StringDictionary[Any]
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
     inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
@@ -101,7 +101,7 @@ object CreateNavigatorConfigNavi {
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setPaths(value: NavigationPathsConfig): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     

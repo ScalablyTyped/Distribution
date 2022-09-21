@@ -14,14 +14,14 @@ object Chai {
   @js.native
   trait Assert extends StObject {
     
-    def oeq(act: js.Any, exp: js.Any): Equal = js.native
-    def oeq(act: js.Any, exp: js.Any, method: String): Equal = js.native
+    def oeq(act: Any, exp: Any): Equal = js.native
+    def oeq(act: Any, exp: Any, method: String): Equal = js.native
     
-    def oeql(act: js.Any, exp: js.Any): Equal = js.native
-    def oeql(act: js.Any, exp: js.Any, method: String): Equal = js.native
+    def oeql(act: Any, exp: Any): Equal = js.native
+    def oeql(act: Any, exp: Any, method: String): Equal = js.native
     
-    def oequal(act: js.Any, exp: js.Any): Equal = js.native
-    def oequal(act: js.Any, exp: js.Any, method: String): Equal = js.native
+    def oequal(act: Any, exp: Any): Equal = js.native
+    def oequal(act: Any, exp: Any, method: String): Equal = js.native
   }
   
   // For BDD APIs
@@ -32,13 +32,13 @@ object Chai {
        with NumericComparison
        with TypeComparison {
     
-    def oeq(result: js.Any): Equal = js.native
-    def oeq(result: js.Any, method: String): Equal = js.native
+    def oeq(result: Any): Equal = js.native
+    def oeq(result: Any, method: String): Equal = js.native
     
-    def oeql(result: js.Any): Equal = js.native
-    def oeql(result: js.Any, method: String): Equal = js.native
+    def oeql(result: Any): Equal = js.native
+    def oeql(result: Any, method: String): Equal = js.native
     
-    def oequal(result: js.Any): Equal = js.native
-    def oequal(result: js.Any, method: String): Equal = js.native
+    def oequal(result: Any): Equal = js.native
+    def oequal(result: Any, method: String): Equal = js.native
   }
 }

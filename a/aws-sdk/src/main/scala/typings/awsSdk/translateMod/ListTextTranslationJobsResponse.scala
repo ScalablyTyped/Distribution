@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTextTranslationJobsResponse extends StObject {
   
   /**
-    * The token to use to retreive the next page of results. This value is null when there are no more results to return.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
   var NextToken: js.UndefOr[typings.awsSdk.translateMod.NextToken] = js.undefined
   
@@ -33,6 +33,6 @@ object ListTextTranslationJobsResponse {
     
     inline def setTextTranslationJobPropertiesListUndefined: Self = StObject.set(x, "TextTranslationJobPropertiesList", js.undefined)
     
-    inline def setTextTranslationJobPropertiesListVarargs(value: TextTranslationJobProperties*): Self = StObject.set(x, "TextTranslationJobPropertiesList", js.Array(value :_*))
+    inline def setTextTranslationJobPropertiesListVarargs(value: TextTranslationJobProperties*): Self = StObject.set(x, "TextTranslationJobPropertiesList", js.Array(value*))
   }
 }

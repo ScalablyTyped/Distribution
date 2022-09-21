@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api
   */
-class WMSGetFeatureInfo () extends XMLFeature {
+open class WMSGetFeatureInfo () extends XMLFeature {
   def this(opt_options: WMSGetFeatureInfoOptions) = this()
   
   def readFeatures(source: String): js.Array[typings.openlayers.mod.Feature] = js.native

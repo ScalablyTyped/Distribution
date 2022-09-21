@@ -12,31 +12,31 @@ trait IZIndexManager
     * @param comp String/Object The id of the Component or a Ext.Component instance
     * @returns Boolean True if the dialog was brought to the front, else false if it was already in front
     */
-  var bringToFront: js.UndefOr[js.Function1[/* comp */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var bringToFront: js.UndefOr[js.Function1[/* comp */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Executes the specified function once for every Component in this ZIndexManager passing each Component as the only pa
     * @param fn Function The function to execute for each item
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Component in the iteration.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Executes the specified function once for every Component in this ZIndexManager passing each Component as the only pa
     * @param fn Function The function to execute for each item
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Component in the iteration.
     */
-  var eachBottomUp: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var eachBottomUp: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Executes the specified function once for every Component in this ZIndexManager passing each Component as the only pa
     * @param fn Function The function to execute for each item
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current Component in the iteration.
     */
-  var eachTopDown: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var eachTopDown: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Gets a registered Component by id
     * @param id String/Object The id of the Component or a Ext.Component instance
     * @returns Ext.Component
     */
-  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], IComponent]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[Any], IComponent]] = js.undefined
   
   /** [Method] Gets the currently active Component in this ZIndexManager
     * @returns Ext.Component The active Component
@@ -48,7 +48,7 @@ trait IZIndexManager
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the Component being tested. That gets passed to the function if not specified.
     * @returns Array An array of zero or more matching windows
     */
-  var getBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Array]] = js.undefined
+  var getBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Array]] = js.undefined
   
   /** [Method] Hides all Components managed by this ZIndexManager  */
   var hideAll: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -62,7 +62,7 @@ trait IZIndexManager
     * @param comp String/Object The id of the Component or a Ext.Component instance
     * @returns Ext.Component The Component
     */
-  var sendToBack: js.UndefOr[js.Function1[/* comp */ js.UndefOr[js.Any], IComponent]] = js.undefined
+  var sendToBack: js.UndefOr[js.Function1[/* comp */ js.UndefOr[Any], IComponent]] = js.undefined
   
   /** [Method] Unregisters a Ext Component from this ZIndexManager
     * @param comp Ext.Component The Component to unregister.
@@ -78,29 +78,29 @@ object IZIndexManager {
   
   extension [Self <: IZIndexManager](x: Self) {
     
-    inline def setBringToFront(value: /* comp */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "bringToFront", js.Any.fromFunction1(value))
+    inline def setBringToFront(value: /* comp */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "bringToFront", js.Any.fromFunction1(value))
     
     inline def setBringToFrontUndefined: Self = StObject.set(x, "bringToFront", js.undefined)
     
-    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
-    inline def setEachBottomUp(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachBottomUp", js.Any.fromFunction2(value))
+    inline def setEachBottomUp(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "eachBottomUp", js.Any.fromFunction2(value))
     
     inline def setEachBottomUpUndefined: Self = StObject.set(x, "eachBottomUp", js.undefined)
     
-    inline def setEachTopDown(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachTopDown", js.Any.fromFunction2(value))
+    inline def setEachTopDown(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "eachTopDown", js.Any.fromFunction2(value))
     
     inline def setEachTopDownUndefined: Self = StObject.set(x, "eachTopDown", js.undefined)
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    inline def setGet(value: /* id */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* id */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setGetActive(value: () => IComponent): Self = StObject.set(x, "getActive", js.Any.fromFunction0(value))
     
     inline def setGetActiveUndefined: Self = StObject.set(x, "getActive", js.undefined)
     
-    inline def setGetBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "getBy", js.Any.fromFunction2(value))
+    inline def setGetBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Array): Self = StObject.set(x, "getBy", js.Any.fromFunction2(value))
     
     inline def setGetByUndefined: Self = StObject.set(x, "getBy", js.undefined)
     
@@ -114,7 +114,7 @@ object IZIndexManager {
     
     inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     
-    inline def setSendToBack(value: /* comp */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "sendToBack", js.Any.fromFunction1(value))
+    inline def setSendToBack(value: /* comp */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "sendToBack", js.Any.fromFunction1(value))
     
     inline def setSendToBackUndefined: Self = StObject.set(x, "sendToBack", js.undefined)
     

@@ -21,15 +21,15 @@ object stepMod {
   
   @JSImport("rc-steps/lib/Step", JSImport.Default)
   @js.native
-  class default () extends Step
+  open class default () extends Step
   
   @js.native
   trait Step
-    extends Component[StepProps, js.Object, js.Any] {
+    extends Component[StepProps, js.Object, Any] {
     
     var onClick: MouseEventHandler[HTMLDivElement] = js.native
     
-    def renderIconNode(): js.Any = js.native
+    def renderIconNode(): Any = js.native
   }
   
   trait StepProps extends StObject {
@@ -125,7 +125,7 @@ object stepMod {
       
       inline def setProgressDot(value: ProgressDotRender | Boolean): Self = StObject.set(x, "progressDot", value.asInstanceOf[js.Any])
       
-      inline def setProgressDotFunction2(value: (/* iconDot */ js.Any, /* info */ Index) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
+      inline def setProgressDotFunction2(value: (/* iconDot */ Any, /* info */ Index) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
       
       inline def setProgressDotUndefined: Self = StObject.set(x, "progressDot", js.undefined)
       

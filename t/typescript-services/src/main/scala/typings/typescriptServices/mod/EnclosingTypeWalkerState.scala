@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "EnclosingTypeWalkerState")
 @js.native
-class EnclosingTypeWalkerState ()
+open class EnclosingTypeWalkerState ()
   extends StObject
      with typings.typescriptServices.TypeScript.EnclosingTypeWalkerState {
   

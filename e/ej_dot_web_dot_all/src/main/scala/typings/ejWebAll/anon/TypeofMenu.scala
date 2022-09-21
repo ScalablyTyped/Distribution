@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofMenu extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: Menu
 }
 object TypeofMenu {
   
-  inline def apply(Locale: js.Any, fn: Menu): TypeofMenu = {
+  inline def apply(Locale: Any, fn: Menu): TypeofMenu = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofMenu]
   }
@@ -24,6 +24,6 @@ object TypeofMenu {
     
     inline def setFn(value: Menu): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

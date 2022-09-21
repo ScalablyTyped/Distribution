@@ -40,9 +40,8 @@ trait Interconnect extends StObject {
   var interconnectAttachments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Type of interconnect, which can take one of the following values:
-    * - PARTNER: A partner-managed interconnection shared between customers though a partner.
-    * - DEDICATED: A dedicated physical interconnection with the customer. Note that a value IT_PRIVATE has been deprecated in favor of DEDICATED.
+    * Type of interconnect, which can take one of the following values: - PARTNER: A partner-managed interconnection shared between customers though a partner. - DEDICATED: A dedicated
+    * physical interconnection with the customer. Note that a value IT_PRIVATE has been deprecated in favor of DEDICATED.
     */
   var interconnectType: js.UndefOr[String] = js.undefined
   
@@ -50,9 +49,8 @@ trait Interconnect extends StObject {
   var kind: js.UndefOr[String] = js.undefined
   
   /**
-    * Type of link requested, which can take one of the following values:
-    * - LINK_TYPE_ETHERNET_10G_LR: A 10G Ethernet with LR optics
-    * - LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics. Note that this field indicates the speed of each of the links in the bundle, not the speed of the entire bundle.
+    * Type of link requested, which can take one of the following values: - LINK_TYPE_ETHERNET_10G_LR: A 10G Ethernet with LR optics - LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR
+    * optics. Note that this field indicates the speed of each of the links in the bundle, not the speed of the entire bundle.
     */
   var linkType: js.UndefOr[String] = js.undefined
   
@@ -73,10 +71,9 @@ trait Interconnect extends StObject {
   var nocContactEmail: js.UndefOr[String] = js.undefined
   
   /**
-    * [Output Only] The current status of this Interconnect's functionality, which can take one of the following values:
-    * - OS_ACTIVE: A valid Interconnect, which is turned up and is ready to use. Attachments may be provisioned on this Interconnect.
-    * - OS_UNPROVISIONED: An Interconnect that has not completed turnup. No attachments may be provisioned on this Interconnect.
-    * - OS_UNDER_MAINTENANCE: An Interconnect that is undergoing internal maintenance. No attachments may be provisioned or updated on this Interconnect.
+    * [Output Only] The current status of this Interconnect's functionality, which can take one of the following values: - OS_ACTIVE: A valid Interconnect, which is turned up and is ready
+    * to use. Attachments may be provisioned on this Interconnect. - OS_UNPROVISIONED: An Interconnect that has not completed turnup. No attachments may be provisioned on this
+    * Interconnect. - OS_UNDER_MAINTENANCE: An Interconnect that is undergoing internal maintenance. No attachments may be provisioned or updated on this Interconnect.
     */
   var operationalStatus: js.UndefOr[String] = js.undefined
   
@@ -96,10 +93,9 @@ trait Interconnect extends StObject {
   var selfLink: js.UndefOr[String] = js.undefined
   
   /**
-    * [Output Only] The current state of Interconnect functionality, which can take one of the following values:
-    * - ACTIVE: The Interconnect is valid, turned up and ready to use. Attachments may be provisioned on this Interconnect.
-    * - UNPROVISIONED: The Interconnect has not completed turnup. No attachments may be provisioned on this Interconnect.
-    * - UNDER_MAINTENANCE: The Interconnect is undergoing internal maintenance. No attachments may be provisioned or updated on this Interconnect.
+    * [Output Only] The current state of Interconnect functionality, which can take one of the following values: - ACTIVE: The Interconnect is valid, turned up and ready to use.
+    * Attachments may be provisioned on this Interconnect. - UNPROVISIONED: The Interconnect has not completed turnup. No attachments may be provisioned on this Interconnect. -
+    * UNDER_MAINTENANCE: The Interconnect is undergoing internal maintenance. No attachments may be provisioned or updated on this Interconnect.
     */
   var state: js.UndefOr[String] = js.undefined
 }
@@ -120,7 +116,7 @@ object Interconnect {
     
     inline def setCircuitInfosUndefined: Self = StObject.set(x, "circuitInfos", js.undefined)
     
-    inline def setCircuitInfosVarargs(value: InterconnectCircuitInfo*): Self = StObject.set(x, "circuitInfos", js.Array(value :_*))
+    inline def setCircuitInfosVarargs(value: InterconnectCircuitInfo*): Self = StObject.set(x, "circuitInfos", js.Array(value*))
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
@@ -138,7 +134,7 @@ object Interconnect {
     
     inline def setExpectedOutagesUndefined: Self = StObject.set(x, "expectedOutages", js.undefined)
     
-    inline def setExpectedOutagesVarargs(value: InterconnectOutageNotification*): Self = StObject.set(x, "expectedOutages", js.Array(value :_*))
+    inline def setExpectedOutagesVarargs(value: InterconnectOutageNotification*): Self = StObject.set(x, "expectedOutages", js.Array(value*))
     
     inline def setGoogleIpAddress(value: String): Self = StObject.set(x, "googleIpAddress", value.asInstanceOf[js.Any])
     
@@ -156,7 +152,7 @@ object Interconnect {
     
     inline def setInterconnectAttachmentsUndefined: Self = StObject.set(x, "interconnectAttachments", js.undefined)
     
-    inline def setInterconnectAttachmentsVarargs(value: String*): Self = StObject.set(x, "interconnectAttachments", js.Array(value :_*))
+    inline def setInterconnectAttachmentsVarargs(value: String*): Self = StObject.set(x, "interconnectAttachments", js.Array(value*))
     
     inline def setInterconnectType(value: String): Self = StObject.set(x, "interconnectType", value.asInstanceOf[js.Any])
     

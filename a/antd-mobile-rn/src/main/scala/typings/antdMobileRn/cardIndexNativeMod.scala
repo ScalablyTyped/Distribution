@@ -17,7 +17,7 @@ object cardIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/card/index.native", JSImport.Default)
   @js.native
-  class default () extends Card
+  open class default () extends Card
   /* static members */
   object default {
     
@@ -47,8 +47,7 @@ object cardIndexNativeMod {
   }
   
   @js.native
-  trait Card
-    extends Component[CardNativeProps, js.Any, js.Any]
+  trait Card extends Component[CardNativeProps, Any, Any]
   
   trait CardNativeProps
     extends StObject

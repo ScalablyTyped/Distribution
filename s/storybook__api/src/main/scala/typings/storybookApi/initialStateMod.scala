@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object initialStateMod {
   
-  @JSImport("@storybook/api/dist/initial-state", JSImport.Namespace)
+  @JSImport("@storybook/api/dist/ts3.9/initial-state", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -16,7 +16,7 @@ object initialStateMod {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param additions because its type Additions is not an array type */ additions: Additions
   ): State = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(additions.asInstanceOf[js.Any]).asInstanceOf[State]
   
-  type Addition = StringDictionary[js.Any]
+  type Addition = StringDictionary[Any]
   
   type Additions = js.Array[Addition]
 }

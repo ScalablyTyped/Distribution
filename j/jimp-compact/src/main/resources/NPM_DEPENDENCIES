@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jimp-compact" : "0.16.1-2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jimp-compact" : "0.16.1-2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

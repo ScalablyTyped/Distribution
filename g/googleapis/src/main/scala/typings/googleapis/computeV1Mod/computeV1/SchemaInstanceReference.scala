@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaInstanceReference extends StObject {
   
   /**
-    * The URL for a specific instance.
+    * The URL for a specific instance. @required compute.instancegroups.addInstances/removeInstances
     */
-  var instance: js.UndefOr[String] = js.undefined
+  var instance: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInstanceReference {
   
@@ -21,6 +21,8 @@ object SchemaInstanceReference {
   extension [Self <: SchemaInstanceReference](x: Self) {
     
     inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceNull: Self = StObject.set(x, "instance", null)
     
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
   }

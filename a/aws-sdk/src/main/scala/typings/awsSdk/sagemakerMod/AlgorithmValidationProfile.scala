@@ -12,12 +12,12 @@ trait AlgorithmValidationProfile extends StObject {
   var ProfileName: EntityName
   
   /**
-    * The TrainingJobDefinition object that describes the training job that Amazon SageMaker runs to validate your algorithm.
+    * The TrainingJobDefinition object that describes the training job that SageMaker runs to validate your algorithm.
     */
   var TrainingJobDefinition: typings.awsSdk.sagemakerMod.TrainingJobDefinition
   
   /**
-    * The TransformJobDefinition object that describes the transform job that Amazon SageMaker runs to validate your algorithm.
+    * The TransformJobDefinition object that describes the transform job that SageMaker runs to validate your algorithm.
     */
   var TransformJobDefinition: js.UndefOr[typings.awsSdk.sagemakerMod.TransformJobDefinition] = js.undefined
 }

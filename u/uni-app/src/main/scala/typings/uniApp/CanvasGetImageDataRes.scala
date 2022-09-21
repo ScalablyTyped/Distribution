@@ -9,7 +9,7 @@ trait CanvasGetImageDataRes extends StObject {
   /**
     * 图像像素点数据，一维数组，每四项表示一个像素点的rgba
     */
-  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 回调信息
@@ -35,11 +35,11 @@ object CanvasGetImageDataRes {
   
   extension [Self <: CanvasGetImageDataRes](x: Self) {
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

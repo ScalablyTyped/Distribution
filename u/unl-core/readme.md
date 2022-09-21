@@ -1,7 +1,7 @@
 
 # Scala.js typings for unl-core
 
-Typings are for version 2.1
+Typings are for version 3.0
 
 ## Library description:
 The core SDK for UNL Location Services
@@ -10,10 +10,10 @@ The core SDK for UNL Location Services
 | ------------------ | :-------------: |
 | Full name          | unl-core |
 | Keywords           | polyhash, cluster, locationId, geocode, geolocation, latitude, longitude, elevation, unl core, unl |
-| # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 3844 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1273.6666666666667 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://unl.global)

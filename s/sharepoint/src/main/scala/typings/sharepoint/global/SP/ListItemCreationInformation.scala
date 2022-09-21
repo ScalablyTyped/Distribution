@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the properties of the new list item. */
 @JSGlobal("SP.ListItemCreationInformation")
 @js.native
-class ListItemCreationInformation ()
+open class ListItemCreationInformation ()
   extends StObject
      with typings.sharepoint.SP.ListItemCreationInformation {
   
   /* CompleteClass */
-  override def customFromJson(obj: js.Any): Boolean = js.native
+  override def customFromJson(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   override def customWriteToXml(
@@ -21,7 +21,7 @@ class ListItemCreationInformation ()
   ): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(obj: js.Any): Unit = js.native
+  override def fromJson(obj: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_folderUrl(): String = js.native

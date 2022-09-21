@@ -46,7 +46,7 @@ object mod {
       * By default results are cached to speed up repeat invocations.
       * Set to true to disable this.
       */
-    var noCache: js.UndefOr[Boolean] = js.undefined
+    var `no-cache`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string containing source code to process.
@@ -69,11 +69,11 @@ object mod {
       
       inline def setFiles(value: String | js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
-      inline def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
+      inline def `setNo-cache`(value: Boolean): Self = StObject.set(x, "no-cache", value.asInstanceOf[js.Any])
       
-      inline def setNoCacheUndefined: Self = StObject.set(x, "noCache", js.undefined)
+      inline def `setNo-cacheUndefined`: Self = StObject.set(x, "no-cache", js.undefined)
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -121,30 +121,30 @@ object mod {
       * for any '@example' by specifying the @lang subtag,
       * e.g @example @lang hbs. Specifying @example @lang off will disable code blocks for that example.
       */
-    var exampleLang: js.UndefOr[String] = js.undefined
+    var `example-lang`: js.UndefOr[String] = js.undefined
     
-    var globalIndexFormat: js.UndefOr[StyleListFormat] = js.undefined
+    var `global-index-format`: js.UndefOr[StyleListFormat] = js.undefined
     
     /**
       * The initial heading depth.
       * For example, with a value of 2 the top-level markdown headings look like "## The heading".
       */
-    var headingDepth: js.UndefOr[Double] = js.undefined
+    var `heading-depth`: js.UndefOr[Double] = js.undefined
     
     /**
       * handlebars helper files to override or extend the default set.
       */
     var helper: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var memberIndexFormat: js.UndefOr[MemberIndexFormat] = js.undefined
+    var `member-index-format`: js.UndefOr[MemberIndexFormat] = js.undefined
     
-    var moduleIndexFormat: js.UndefOr[StyleListFormat] = js.undefined
+    var `module-index-format`: js.UndefOr[StyleListFormat] = js.undefined
     
     /**
       * Format identifier names in the code style,
       * (i.e. format using backticks or <code></code>).
       */
-    var nameFormat: js.UndefOr[String] = js.undefined
+    var `name-format`: js.UndefOr[String] = js.undefined
     
     /**
       * By default, dmd generates github-flavoured markdown.
@@ -152,13 +152,13 @@ object mod {
       * If your generated docs look incorrect on sites other than Github
       * (e.g. npmjs.org) try enabling this option to disable Github-specific syntax.
       */
-    var noGfm: js.UndefOr[Boolean] = js.undefined
+    var `no-gfm`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Two options to render parameter lists: 'list' or 'table' (default).
       * Table format works well in most cases but switch to list if things begin to look crowded / squashed.
       */
-    var paramListFormat: js.UndefOr[RenderListFormat] = js.undefined
+    var `param-list-format`: js.UndefOr[RenderListFormat] = js.undefined
     
     /**
       * handlebars partial files to override or extend the default set.
@@ -170,12 +170,12 @@ object mod {
       */
     var plugin: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var propertyListFormat: js.UndefOr[RenderListFormat] = js.undefined
+    var `property-list-format`: js.UndefOr[RenderListFormat] = js.undefined
     
     /**
       * Put <hr> breaks between identifiers. Improves readability on bulky docs.
       */
-    var seperators: js.UndefOr[Boolean] = js.undefined
+    var separators: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The template the supplied documentation will be rendered into.
@@ -196,65 +196,65 @@ object mod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setExampleLang(value: String): Self = StObject.set(x, "exampleLang", value.asInstanceOf[js.Any])
+      inline def `setExample-lang`(value: String): Self = StObject.set(x, "example-lang", value.asInstanceOf[js.Any])
       
-      inline def setExampleLangUndefined: Self = StObject.set(x, "exampleLang", js.undefined)
+      inline def `setExample-langUndefined`: Self = StObject.set(x, "example-lang", js.undefined)
       
-      inline def setGlobalIndexFormat(value: StyleListFormat): Self = StObject.set(x, "globalIndexFormat", value.asInstanceOf[js.Any])
+      inline def `setGlobal-index-format`(value: StyleListFormat): Self = StObject.set(x, "global-index-format", value.asInstanceOf[js.Any])
       
-      inline def setGlobalIndexFormatUndefined: Self = StObject.set(x, "globalIndexFormat", js.undefined)
+      inline def `setGlobal-index-formatUndefined`: Self = StObject.set(x, "global-index-format", js.undefined)
       
-      inline def setHeadingDepth(value: Double): Self = StObject.set(x, "headingDepth", value.asInstanceOf[js.Any])
+      inline def `setHeading-depth`(value: Double): Self = StObject.set(x, "heading-depth", value.asInstanceOf[js.Any])
       
-      inline def setHeadingDepthUndefined: Self = StObject.set(x, "headingDepth", js.undefined)
+      inline def `setHeading-depthUndefined`: Self = StObject.set(x, "heading-depth", js.undefined)
       
       inline def setHelper(value: String | js.Array[String]): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
       
       inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
       
-      inline def setHelperVarargs(value: String*): Self = StObject.set(x, "helper", js.Array(value :_*))
+      inline def setHelperVarargs(value: String*): Self = StObject.set(x, "helper", js.Array(value*))
       
-      inline def setMemberIndexFormat(value: MemberIndexFormat): Self = StObject.set(x, "memberIndexFormat", value.asInstanceOf[js.Any])
+      inline def `setMember-index-format`(value: MemberIndexFormat): Self = StObject.set(x, "member-index-format", value.asInstanceOf[js.Any])
       
-      inline def setMemberIndexFormatUndefined: Self = StObject.set(x, "memberIndexFormat", js.undefined)
+      inline def `setMember-index-formatUndefined`: Self = StObject.set(x, "member-index-format", js.undefined)
       
-      inline def setModuleIndexFormat(value: StyleListFormat): Self = StObject.set(x, "moduleIndexFormat", value.asInstanceOf[js.Any])
+      inline def `setModule-index-format`(value: StyleListFormat): Self = StObject.set(x, "module-index-format", value.asInstanceOf[js.Any])
       
-      inline def setModuleIndexFormatUndefined: Self = StObject.set(x, "moduleIndexFormat", js.undefined)
+      inline def `setModule-index-formatUndefined`: Self = StObject.set(x, "module-index-format", js.undefined)
       
-      inline def setNameFormat(value: String): Self = StObject.set(x, "nameFormat", value.asInstanceOf[js.Any])
+      inline def `setName-format`(value: String): Self = StObject.set(x, "name-format", value.asInstanceOf[js.Any])
       
-      inline def setNameFormatUndefined: Self = StObject.set(x, "nameFormat", js.undefined)
+      inline def `setName-formatUndefined`: Self = StObject.set(x, "name-format", js.undefined)
       
-      inline def setNoGfm(value: Boolean): Self = StObject.set(x, "noGfm", value.asInstanceOf[js.Any])
+      inline def `setNo-gfm`(value: Boolean): Self = StObject.set(x, "no-gfm", value.asInstanceOf[js.Any])
       
-      inline def setNoGfmUndefined: Self = StObject.set(x, "noGfm", js.undefined)
+      inline def `setNo-gfmUndefined`: Self = StObject.set(x, "no-gfm", js.undefined)
       
-      inline def setParamListFormat(value: RenderListFormat): Self = StObject.set(x, "paramListFormat", value.asInstanceOf[js.Any])
+      inline def `setParam-list-format`(value: RenderListFormat): Self = StObject.set(x, "param-list-format", value.asInstanceOf[js.Any])
       
-      inline def setParamListFormatUndefined: Self = StObject.set(x, "paramListFormat", js.undefined)
+      inline def `setParam-list-formatUndefined`: Self = StObject.set(x, "param-list-format", js.undefined)
       
       inline def setPartial(value: String | js.Array[String]): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
       
       inline def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
       
-      inline def setPartialVarargs(value: String*): Self = StObject.set(x, "partial", js.Array(value :_*))
+      inline def setPartialVarargs(value: String*): Self = StObject.set(x, "partial", js.Array(value*))
       
       inline def setPlugin(value: String | js.Array[String]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
       inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
-      inline def setPluginVarargs(value: String*): Self = StObject.set(x, "plugin", js.Array(value :_*))
+      inline def setPluginVarargs(value: String*): Self = StObject.set(x, "plugin", js.Array(value*))
       
-      inline def setPropertyListFormat(value: RenderListFormat): Self = StObject.set(x, "propertyListFormat", value.asInstanceOf[js.Any])
+      inline def `setProperty-list-format`(value: RenderListFormat): Self = StObject.set(x, "property-list-format", value.asInstanceOf[js.Any])
       
-      inline def setPropertyListFormatUndefined: Self = StObject.set(x, "propertyListFormat", js.undefined)
+      inline def `setProperty-list-formatUndefined`: Self = StObject.set(x, "property-list-format", js.undefined)
       
-      inline def setSeperators(value: Boolean): Self = StObject.set(x, "seperators", value.asInstanceOf[js.Any])
+      inline def setSeparators(value: Boolean): Self = StObject.set(x, "separators", value.asInstanceOf[js.Any])
       
-      inline def setSeperatorsUndefined: Self = StObject.set(x, "seperators", js.undefined)
+      inline def setSeparatorsUndefined: Self = StObject.set(x, "separators", js.undefined)
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       

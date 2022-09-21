@@ -48,7 +48,7 @@ object ThingGroupDocument {
     
     inline def setParentGroupNamesUndefined: Self = StObject.set(x, "parentGroupNames", js.undefined)
     
-    inline def setParentGroupNamesVarargs(value: ThingGroupName*): Self = StObject.set(x, "parentGroupNames", js.Array(value :_*))
+    inline def setParentGroupNamesVarargs(value: ThingGroupName*): Self = StObject.set(x, "parentGroupNames", js.Array(value*))
     
     inline def setThingGroupDescription(value: ThingGroupDescription): Self = StObject.set(x, "thingGroupDescription", value.asInstanceOf[js.Any])
     

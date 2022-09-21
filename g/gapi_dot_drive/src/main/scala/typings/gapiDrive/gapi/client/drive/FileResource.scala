@@ -8,7 +8,6 @@ import typings.gapiDrive.anon.Hidden
 import typings.gapiDrive.anon.Image
 import typings.gapiDrive.anon.Text
 import typings.gapiDrive.gapiDriveStrings.driveNumbersignfile
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ trait FileResource extends StObject {
   
   var copyable: Boolean
   
-  var createdDate: Date
+  var createdDate: js.Date
   
   // openWithLinks
   var defaultOpenWithLink: String
@@ -77,17 +76,17 @@ trait FileResource extends StObject {
   
   var lastModifyingUserName: String
   
-  var lastViewedByMeDate: Date
+  var lastViewedByMeDate: js.Date
   
-  var markedViewedByMeDate: Date
+  var markedViewedByMeDate: js.Date
   
   var md5Checksum: String
   
   var mimeType: String
   
-  var modifiedByMeDate: Date
+  var modifiedByMeDate: js.Date
   
-  var modifiedDate: Date
+  var modifiedDate: js.Date
   
   var originalFilename: String
   
@@ -111,7 +110,7 @@ trait FileResource extends StObject {
   
   var shared: Boolean
   
-  var sharedWithMeDate: Date
+  var sharedWithMeDate: js.Date
   
   var sharingUser: DisplayName
   
@@ -125,7 +124,7 @@ trait FileResource extends StObject {
   
   var title: String
   
-  var trashedDate: Date
+  var trashedDate: js.Date
   
   var trashingUser: DisplayName
   
@@ -150,7 +149,7 @@ object FileResource {
     canReadRevisions: Boolean,
     capabilities: CanAddChildren,
     copyable: Boolean,
-    createdDate: Date,
+    createdDate: js.Date,
     defaultOpenWithLink: String,
     description: String,
     downloadUrl: String,
@@ -173,12 +172,12 @@ object FileResource {
     labels: Hidden,
     lastModifyingUser: DisplayName,
     lastModifyingUserName: String,
-    lastViewedByMeDate: Date,
-    markedViewedByMeDate: Date,
+    lastViewedByMeDate: js.Date,
+    markedViewedByMeDate: js.Date,
     md5Checksum: String,
     mimeType: String,
-    modifiedByMeDate: Date,
-    modifiedDate: Date,
+    modifiedByMeDate: js.Date,
+    modifiedDate: js.Date,
     originalFilename: String,
     ownedByMe: Boolean,
     ownerNames: js.Array[String],
@@ -190,14 +189,14 @@ object FileResource {
     selfLink: String,
     shareable: Boolean,
     shared: Boolean,
-    sharedWithMeDate: Date,
+    sharedWithMeDate: js.Date,
     sharingUser: DisplayName,
     spaces: js.Array[String],
     teamDriveId: String,
     thumbnail: Image,
     thumbnailLink: String,
     title: String,
-    trashedDate: Date,
+    trashedDate: js.Date,
     trashingUser: DisplayName,
     userPermission: PermissionResource,
     version: Double,
@@ -224,7 +223,7 @@ object FileResource {
     
     inline def setCopyable(value: Boolean): Self = StObject.set(x, "copyable", value.asInstanceOf[js.Any])
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setDefaultOpenWithLink(value: String): Self = StObject.set(x, "defaultOpenWithLink", value.asInstanceOf[js.Any])
     
@@ -272,17 +271,17 @@ object FileResource {
     
     inline def setLastModifyingUserName(value: String): Self = StObject.set(x, "lastModifyingUserName", value.asInstanceOf[js.Any])
     
-    inline def setLastViewedByMeDate(value: Date): Self = StObject.set(x, "lastViewedByMeDate", value.asInstanceOf[js.Any])
+    inline def setLastViewedByMeDate(value: js.Date): Self = StObject.set(x, "lastViewedByMeDate", value.asInstanceOf[js.Any])
     
-    inline def setMarkedViewedByMeDate(value: Date): Self = StObject.set(x, "markedViewedByMeDate", value.asInstanceOf[js.Any])
+    inline def setMarkedViewedByMeDate(value: js.Date): Self = StObject.set(x, "markedViewedByMeDate", value.asInstanceOf[js.Any])
     
     inline def setMd5Checksum(value: String): Self = StObject.set(x, "md5Checksum", value.asInstanceOf[js.Any])
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    inline def setModifiedByMeDate(value: Date): Self = StObject.set(x, "modifiedByMeDate", value.asInstanceOf[js.Any])
+    inline def setModifiedByMeDate(value: js.Date): Self = StObject.set(x, "modifiedByMeDate", value.asInstanceOf[js.Any])
     
-    inline def setModifiedDate(value: Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: js.Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
     inline def setOriginalFilename(value: String): Self = StObject.set(x, "originalFilename", value.asInstanceOf[js.Any])
     
@@ -290,23 +289,23 @@ object FileResource {
     
     inline def setOwnerNames(value: js.Array[String]): Self = StObject.set(x, "ownerNames", value.asInstanceOf[js.Any])
     
-    inline def setOwnerNamesVarargs(value: String*): Self = StObject.set(x, "ownerNames", js.Array(value :_*))
+    inline def setOwnerNamesVarargs(value: String*): Self = StObject.set(x, "ownerNames", js.Array(value*))
     
     inline def setOwners(value: js.Array[DisplayName]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
-    inline def setOwnersVarargs(value: DisplayName*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: DisplayName*): Self = StObject.set(x, "owners", js.Array(value*))
     
     inline def setParents(value: js.Array[ParentResource]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
-    inline def setParentsVarargs(value: ParentResource*): Self = StObject.set(x, "parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: ParentResource*): Self = StObject.set(x, "parents", js.Array(value*))
     
     inline def setPermissions(value: js.Array[PermissionResource]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    inline def setPermissionsVarargs(value: PermissionResource*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: PermissionResource*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setProperties(value: js.Array[PropertiesResource]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: PropertiesResource*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: PropertiesResource*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setQuotaBytesUsed(value: Double): Self = StObject.set(x, "quotaBytesUsed", value.asInstanceOf[js.Any])
     
@@ -316,13 +315,13 @@ object FileResource {
     
     inline def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
-    inline def setSharedWithMeDate(value: Date): Self = StObject.set(x, "sharedWithMeDate", value.asInstanceOf[js.Any])
+    inline def setSharedWithMeDate(value: js.Date): Self = StObject.set(x, "sharedWithMeDate", value.asInstanceOf[js.Any])
     
     inline def setSharingUser(value: DisplayName): Self = StObject.set(x, "sharingUser", value.asInstanceOf[js.Any])
     
     inline def setSpaces(value: js.Array[String]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    inline def setSpacesVarargs(value: String*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+    inline def setSpacesVarargs(value: String*): Self = StObject.set(x, "spaces", js.Array(value*))
     
     inline def setTeamDriveId(value: String): Self = StObject.set(x, "teamDriveId", value.asInstanceOf[js.Any])
     
@@ -332,7 +331,7 @@ object FileResource {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setTrashedDate(value: Date): Self = StObject.set(x, "trashedDate", value.asInstanceOf[js.Any])
+    inline def setTrashedDate(value: js.Date): Self = StObject.set(x, "trashedDate", value.asInstanceOf[js.Any])
     
     inline def setTrashingUser(value: DisplayName): Self = StObject.set(x, "trashingUser", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("postcss-value-parser/lib", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ParsedValue {
     /**
@@ -66,7 +66,12 @@ object mod extends Shortcut {
   trait BaseNode extends StObject {
     
     /**
-      * The offset inside the CSS value at which the node starts
+      * The offset, exclusive, inside the CSS value at which the node ends.
+      */
+    var sourceEndIndex: Double
+    
+    /**
+      * The offset, inclusive, inside the CSS value at which the node starts.
       */
     var sourceIndex: Double
     
@@ -77,12 +82,14 @@ object mod extends Shortcut {
   }
   object BaseNode {
     
-    inline def apply(sourceIndex: Double, value: String): BaseNode = {
-      val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(sourceEndIndex: Double, sourceIndex: Double, value: String): BaseNode = {
+      val __obj = js.Dynamic.literal(sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseNode]
     }
     
     extension [Self <: BaseNode](x: Self) {
+      
+      inline def setSourceEndIndex(value: Double): Self = StObject.set(x, "sourceEndIndex", value.asInstanceOf[js.Any])
       
       inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
       
@@ -122,8 +129,8 @@ object mod extends Shortcut {
   }
   object CommentNode {
     
-    inline def apply(sourceIndex: Double, value: String): CommentNode = {
-      val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(sourceEndIndex: Double, sourceIndex: Double, value: String): CommentNode = {
+      val __obj = js.Dynamic.literal(sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("comment")
       __obj.asInstanceOf[CommentNode]
     }
@@ -170,8 +177,8 @@ object mod extends Shortcut {
   }
   object DivNode {
     
-    inline def apply(after: String, before: String, sourceIndex: Double, value: String): DivNode = {
-      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(after: String, before: String, sourceEndIndex: Double, sourceIndex: Double, value: String): DivNode = {
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("div")
       __obj.asInstanceOf[DivNode]
     }
@@ -198,8 +205,15 @@ object mod extends Shortcut {
   }
   object FunctionNode {
     
-    inline def apply(after: String, before: String, nodes: js.Array[Node], sourceIndex: Double, value: String): FunctionNode = {
-      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(
+      after: String,
+      before: String,
+      nodes: js.Array[Node],
+      sourceEndIndex: Double,
+      sourceIndex: Double,
+      value: String
+    ): FunctionNode = {
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("function")
       __obj.asInstanceOf[FunctionNode]
     }
@@ -208,7 +222,7 @@ object mod extends Shortcut {
       
       inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setType(value: function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -229,44 +243,51 @@ object mod extends Shortcut {
   trait Node extends StObject
   object Node {
     
-    inline def CommentNode(sourceIndex: Double, value: String): typings.postcssValueParser.mod.CommentNode = {
-      val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def CommentNode(sourceEndIndex: Double, sourceIndex: Double, value: String): typings.postcssValueParser.mod.CommentNode = {
+      val __obj = js.Dynamic.literal(sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("comment")
       __obj.asInstanceOf[typings.postcssValueParser.mod.CommentNode]
     }
     
-    inline def DivNode(after: String, before: String, sourceIndex: Double, value: String): typings.postcssValueParser.mod.DivNode = {
-      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def DivNode(after: String, before: String, sourceEndIndex: Double, sourceIndex: Double, value: String): typings.postcssValueParser.mod.DivNode = {
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("div")
       __obj.asInstanceOf[typings.postcssValueParser.mod.DivNode]
     }
     
-    inline def FunctionNode(after: String, before: String, nodes: js.Array[Node], sourceIndex: Double, value: String): typings.postcssValueParser.mod.FunctionNode = {
-      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def FunctionNode(
+      after: String,
+      before: String,
+      nodes: js.Array[Node],
+      sourceEndIndex: Double,
+      sourceIndex: Double,
+      value: String
+    ): typings.postcssValueParser.mod.FunctionNode = {
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("function")
       __obj.asInstanceOf[typings.postcssValueParser.mod.FunctionNode]
     }
     
-    inline def SpaceNode(sourceIndex: Double, value: String): typings.postcssValueParser.mod.SpaceNode = {
-      val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def SpaceNode(sourceEndIndex: Double, sourceIndex: Double, value: String): typings.postcssValueParser.mod.SpaceNode = {
+      val __obj = js.Dynamic.literal(sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("space")
       __obj.asInstanceOf[typings.postcssValueParser.mod.SpaceNode]
     }
     
-    inline def StringNode(quote: Quotationmark | Apostrophe, sourceIndex: Double, value: String): typings.postcssValueParser.mod.StringNode = {
-      val __obj = js.Dynamic.literal(quote = quote.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def StringNode(quote: Quotationmark | Apostrophe, sourceEndIndex: Double, sourceIndex: Double, value: String): typings.postcssValueParser.mod.StringNode = {
+      val __obj = js.Dynamic.literal(quote = quote.asInstanceOf[js.Any], sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[typings.postcssValueParser.mod.StringNode]
     }
     
-    inline def UnicodeRangeNode(sourceIndex: Double, value: String): typings.postcssValueParser.mod.UnicodeRangeNode = {
-      val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def UnicodeRangeNode(sourceEndIndex: Double, sourceIndex: Double, value: String): typings.postcssValueParser.mod.UnicodeRangeNode = {
+      val __obj = js.Dynamic.literal(sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("unicode-range")
       __obj.asInstanceOf[typings.postcssValueParser.mod.UnicodeRangeNode]
     }
     
-    inline def WordNode(sourceIndex: Double, value: String): typings.postcssValueParser.mod.WordNode = {
-      val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def WordNode(sourceEndIndex: Double, sourceIndex: Double, value: String): typings.postcssValueParser.mod.WordNode = {
+      val __obj = js.Dynamic.literal(sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("word")
       __obj.asInstanceOf[typings.postcssValueParser.mod.WordNode]
     }
@@ -302,8 +323,8 @@ object mod extends Shortcut {
   }
   object SpaceNode {
     
-    inline def apply(sourceIndex: Double, value: String): SpaceNode = {
-      val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(sourceEndIndex: Double, sourceIndex: Double, value: String): SpaceNode = {
+      val __obj = js.Dynamic.literal(sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("space")
       __obj.asInstanceOf[SpaceNode]
     }
@@ -329,8 +350,8 @@ object mod extends Shortcut {
   }
   object StringNode {
     
-    inline def apply(quote: Quotationmark | Apostrophe, sourceIndex: Double, value: String): StringNode = {
-      val __obj = js.Dynamic.literal(quote = quote.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(quote: Quotationmark | Apostrophe, sourceEndIndex: Double, sourceIndex: Double, value: String): StringNode = {
+      val __obj = js.Dynamic.literal(quote = quote.asInstanceOf[js.Any], sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[StringNode]
     }
@@ -352,8 +373,8 @@ object mod extends Shortcut {
   }
   object UnicodeRangeNode {
     
-    inline def apply(sourceIndex: Double, value: String): UnicodeRangeNode = {
-      val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(sourceEndIndex: Double, sourceIndex: Double, value: String): UnicodeRangeNode = {
+      val __obj = js.Dynamic.literal(sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("unicode-range")
       __obj.asInstanceOf[UnicodeRangeNode]
     }
@@ -423,8 +444,8 @@ object mod extends Shortcut {
   }
   object WordNode {
     
-    inline def apply(sourceIndex: Double, value: String): WordNode = {
-      val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(sourceEndIndex: Double, sourceIndex: Double, value: String): WordNode = {
+      val __obj = js.Dynamic.literal(sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("word")
       __obj.asInstanceOf[WordNode]
     }

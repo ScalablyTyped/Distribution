@@ -1,8 +1,7 @@
 package typings.reactMdUtils
 
 import typings.reactMdUtils.getCoordMod.YCoordConfig
-import typings.reactMdUtils.typesMod.VerticalPosition
-import typings.std.ClientRect
+import typings.reactMdUtils.positioningTypesMod.VerticalPosition
 import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +44,7 @@ object createVerticalPositionMod {
   object FixConfig {
     
     inline def apply(
-      containerRect: DOMRect | ClientRect,
+      containerRect: DOMRect,
       disableSwapping: Boolean,
       disableVHBounds: Boolean,
       elHeight: Double,
@@ -73,12 +72,12 @@ object createVerticalPositionMod {
   }
   
   /**
-    * @private
+    * @internal
     */
   /* Inlined parent std.Required<std.Pick<@react-md/utils.@react-md/utils/types/positioning/types.FixedPositionOptions, 'yMargin' | 'vhMargin' | 'preventOverlap' | 'disableSwapping' | 'disableVHBounds'>> */
   trait Options extends StObject {
     
-    var containerRect: DOMRect | ClientRect
+    var containerRect: DOMRect
     
     var disableSwapping: Boolean
     
@@ -101,7 +100,7 @@ object createVerticalPositionMod {
   object Options {
     
     inline def apply(
-      containerRect: DOMRect | ClientRect,
+      containerRect: DOMRect,
       disableSwapping: Boolean,
       disableVHBounds: Boolean,
       elHeight: Double,
@@ -117,7 +116,7 @@ object createVerticalPositionMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
+      inline def setContainerRect(value: DOMRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
       inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
       
@@ -142,7 +141,7 @@ object createVerticalPositionMod {
   }
   
   /**
-    * @private
+    * @internal
     */
   trait YPosition extends StObject {
     

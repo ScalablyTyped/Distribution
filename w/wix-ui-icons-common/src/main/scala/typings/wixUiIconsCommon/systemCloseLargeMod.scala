@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.closeLargeMod.CloseLargeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object systemCloseLargeMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/system/CloseLarge", JSImport.Default)
+  @JSImport("wix-ui-icons-common/on-stage/system/CloseLarge", JSImport.Default)
   @js.native
-  val default: SFC[CloseLargeProps] = js.native
+  val default: FC[CloseLargeProps] = js.native
   
-  type _To = SFC[CloseLargeProps]
+  type _To = FC[CloseLargeProps]
   
   /* This means you don't have to write `default`, but can instead just say `systemCloseLargeMod.foo` */
-  override def _to: SFC[CloseLargeProps] = default
+  override def _to: FC[CloseLargeProps] = default
 }

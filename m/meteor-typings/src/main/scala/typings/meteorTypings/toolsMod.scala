@@ -73,7 +73,7 @@ object toolsMod {
     
     inline def depends(dependencies: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("depends")(dependencies.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def require(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def require(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   object Package {
@@ -97,14 +97,14 @@ object toolsMod {
   def console: Console = js.native
   inline def console_=(x: Console): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("console")(x.asInstanceOf[js.Any])
   
-  inline def execFileAsync(command: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def execFileAsync(command: String, args: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def execFileAsync(command: String, args: js.Array[js.Any], options: Cwd): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def execFileAsync(command: String, args: Unit, options: Cwd): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def execFileAsync(command: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def execFileAsync(command: String, args: js.Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def execFileAsync(command: String, args: js.Array[Any], options: Cwd): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def execFileAsync(command: String, args: Unit, options: Cwd): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def execFileSync(command: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(command.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def execFileSync(command: String, args: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def execFileSync(command: String, args: js.Array[js.Any], options: Cwd): String = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def execFileSync(command: String, args: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def execFileSync(command: String, args: js.Array[Any], options: Cwd): String = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def execFileSync(command: String, args: Unit, options: Cwd): String = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native

@@ -1,12 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.AltFieldsInstanceGroupKey
-import typings.maximMazurokGapiClientCompute.anon.FieldsInstanceGroupKeyOauthtoken
+import typings.maximMazurokGapiClientCompute.anon.AltCallbackFieldsInstanceGroup
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.InstanceGroupKeyOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.OauthtokenOrderBy
 import typings.maximMazurokGapiClientCompute.anon.OrderByPageToken
+import typings.maximMazurokGapiClientCompute.anon.RequestIdUploadTypeUploadprotocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,6 +30,6 @@ trait RegionInstanceGroupsResource extends StObject {
   def listInstances(request: OrderByPageToken, body: RegionInstanceGroupsListInstancesRequest): Request[RegionInstanceGroupsListInstances] = js.native
   
   /** Sets the named ports for the specified regional instance group. */
-  def setNamedPorts(request: AltFieldsInstanceGroupKey): Request[Operation] = js.native
-  def setNamedPorts(request: FieldsInstanceGroupKeyOauthtoken, body: RegionInstanceGroupsSetNamedPortsRequest): Request[Operation] = js.native
+  def setNamedPorts(request: AltCallbackFieldsInstanceGroup): Request[Operation] = js.native
+  def setNamedPorts(request: RequestIdUploadTypeUploadprotocol, body: RegionInstanceGroupsSetNamedPortsRequest): Request[Operation] = js.native
 }

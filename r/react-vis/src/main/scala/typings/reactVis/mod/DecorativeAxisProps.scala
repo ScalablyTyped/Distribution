@@ -20,7 +20,7 @@ trait DecorativeAxisProps
   var tickSize: js.UndefOr[Double] = js.undefined
   
   // default: 10
-  var tickValue: js.UndefOr[js.Function1[/* x */ js.Any, String | Double]] = js.undefined
+  var tickValue: js.UndefOr[js.Function1[/* x */ Any, String | Double]] = js.undefined
 }
 object DecorativeAxisProps {
   
@@ -33,7 +33,7 @@ object DecorativeAxisProps {
     
     inline def setAxisDomain(value: js.Array[Double]): Self = StObject.set(x, "axisDomain", value.asInstanceOf[js.Any])
     
-    inline def setAxisDomainVarargs(value: Double*): Self = StObject.set(x, "axisDomain", js.Array(value :_*))
+    inline def setAxisDomainVarargs(value: Double*): Self = StObject.set(x, "axisDomain", js.Array(value*))
     
     inline def setAxisEnd(value: Y): Self = StObject.set(x, "axisEnd", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object DecorativeAxisProps {
     
     inline def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
     
-    inline def setTickValue(value: /* x */ js.Any => String | Double): Self = StObject.set(x, "tickValue", js.Any.fromFunction1(value))
+    inline def setTickValue(value: /* x */ Any => String | Double): Self = StObject.set(x, "tickValue", js.Any.fromFunction1(value))
     
     inline def setTickValueUndefined: Self = StObject.set(x, "tickValue", js.undefined)
   }

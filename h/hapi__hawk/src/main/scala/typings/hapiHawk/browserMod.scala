@@ -26,10 +26,9 @@ import typings.hapiHawk.clientMod.Header_
 import typings.hapiHawk.clientMod.MessageOptions
 import typings.hapiHawk.clientMod.Message_
 import typings.hapiHawk.cryptoMod.Artifacts
-import typings.node.Buffer
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.std.Record
-import typings.std.RegExp
 import typings.std.Response
 import typings.std.Storage
 import typings.std.XMLHttpRequest
@@ -417,6 +416,13 @@ object browserMod {
         val Base64: Encoder = js.native
         
         /**
+          * Base64url encoding strategy.
+          */
+        @JSImport("@hapi/hawk/lib/browser", "crypto.utils.enc.Base64url")
+        @js.native
+        val Base64url: Encoder = js.native
+        
+        /**
           * Hex encoding strategy.
           */
         @JSImport("@hapi/hawk/lib/browser", "crypto.utils.enc.Hex")
@@ -523,7 +529,7 @@ object browserMod {
             *
             *     var instance = MyType.create();
             */
-          inline def create(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+          inline def create(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
           
           /**
             * Creates a new object that inherits from this object.
@@ -541,7 +547,7 @@ object browserMod {
             *         }
             *     });
             */
-          inline def extend(overrides: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(overrides.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+          inline def extend(overrides: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(overrides.asInstanceOf[js.Any]).asInstanceOf[Any]
           
           /**
             * Copies properties into this object.
@@ -554,7 +560,7 @@ object browserMod {
             *         field: 'value'
             *     });
             */
-          inline def mixIn(properties: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixIn")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+          inline def mixIn(properties: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixIn")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
         }
         
         /**
@@ -562,11 +568,11 @@ object browserMod {
           */
         @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.BlockCipherMode")
         @js.native
-        val BlockCipherMode: js.Any = js.native
+        val BlockCipherMode: Any = js.native
         
         @JSImport("@hapi/hawk/lib/browser", "crypto.utils.lib.BufferedBlockAlgorithm")
         @js.native
-        val BufferedBlockAlgorithm: js.Any = js.native
+        val BufferedBlockAlgorithm: Any = js.native
         
         object Cipher {
           
@@ -1042,7 +1048,7 @@ object browserMod {
     /** `scheme://credentials@host:port/resource#fragment` */
     @JSImport("@hapi/hawk/lib/browser", "utils.uriRegex")
     @js.native
-    val uriRegex: RegExp = js.native
+    val uriRegex: js.RegExp = js.native
     
     trait ParsedUri extends StObject {
       

@@ -3,7 +3,7 @@ package typings.antd.anon
 import typings.antd.configProviderContextMod.CSPConfig
 import typings.antd.configProviderContextMod.DirectionType
 import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.renderEmptyMod.RenderEmptyHandler
+import typings.antd.defaultRenderEmptyMod.RenderEmptyHandler
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -17,6 +17,8 @@ trait PartialConfigProviderProp extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  var componentDisabled: js.UndefOr[Boolean] = js.undefined
+  
   var componentSize: js.UndefOr[SizeType] = js.undefined
   
   var csp: js.UndefOr[CSPConfig] = js.undefined
@@ -25,17 +27,21 @@ trait PartialConfigProviderProp extends StObject {
   
   var dropdownMatchSelectWidth: js.UndefOr[Boolean] = js.undefined
   
-  var form: js.UndefOr[ValidateMessages] = js.undefined
+  var form: js.UndefOr[RequiredMark] = js.undefined
   
-  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ js.UndefOr[HTMLElement], HTMLElement]] = js.undefined
   
   var getTargetContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
+  
+  var iconPrefixCls: js.UndefOr[String] = js.undefined
   
   var input: js.UndefOr[AutoComplete] = js.undefined
   
   var locale: js.UndefOr[typings.antd.localeProviderMod.Locale] = js.undefined
   
   var pageHeader: js.UndefOr[Ghost] = js.undefined
+  
+  var pagination: js.UndefOr[ShowSizeChanger] = js.undefined
   
   var prefixCls: js.UndefOr[String] = js.undefined
   
@@ -62,6 +68,10 @@ object PartialConfigProviderProp {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
+    inline def setComponentDisabled(value: Boolean): Self = StObject.set(x, "componentDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setComponentDisabledUndefined: Self = StObject.set(x, "componentDisabled", js.undefined)
+    
     inline def setComponentSize(value: SizeType): Self = StObject.set(x, "componentSize", value.asInstanceOf[js.Any])
     
     inline def setComponentSizeUndefined: Self = StObject.set(x, "componentSize", js.undefined)
@@ -78,17 +88,21 @@ object PartialConfigProviderProp {
     
     inline def setDropdownMatchSelectWidthUndefined: Self = StObject.set(x, "dropdownMatchSelectWidth", js.undefined)
     
-    inline def setForm(value: ValidateMessages): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: RequiredMark): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    inline def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+    inline def setGetPopupContainer(value: /* triggerNode */ js.UndefOr[HTMLElement] => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
     
     inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
     
     inline def setGetTargetContainer(value: () => HTMLElement): Self = StObject.set(x, "getTargetContainer", js.Any.fromFunction0(value))
     
     inline def setGetTargetContainerUndefined: Self = StObject.set(x, "getTargetContainer", js.undefined)
+    
+    inline def setIconPrefixCls(value: String): Self = StObject.set(x, "iconPrefixCls", value.asInstanceOf[js.Any])
+    
+    inline def setIconPrefixClsUndefined: Self = StObject.set(x, "iconPrefixCls", js.undefined)
     
     inline def setInput(value: AutoComplete): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
@@ -101,6 +115,10 @@ object PartialConfigProviderProp {
     inline def setPageHeader(value: Ghost): Self = StObject.set(x, "pageHeader", value.asInstanceOf[js.Any])
     
     inline def setPageHeaderUndefined: Self = StObject.set(x, "pageHeader", js.undefined)
+    
+    inline def setPagination(value: ShowSizeChanger): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
     inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     

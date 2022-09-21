@@ -9,7 +9,7 @@ trait WorkflowRun extends StObject {
   /**
     * The date and time when the workflow run completed.
     */
-  var CompletedOn: js.UndefOr[TimestampValue] = js.undefined
+  var CompletedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * This error message describes any error that may have occurred in starting the workflow run. Currently the only error message is "Concurrent runs exceeded for workflow: foo."
@@ -17,12 +17,12 @@ trait WorkflowRun extends StObject {
   var ErrorMessage: js.UndefOr[ErrorString] = js.undefined
   
   /**
-    * The graph representing all the AWS Glue components that belong to the workflow as nodes and directed connections between them as edges.
+    * The graph representing all the Glue components that belong to the workflow as nodes and directed connections between them as edges.
     */
   var Graph: js.UndefOr[WorkflowGraph] = js.undefined
   
   /**
-    * Name of the workflow that was executed.
+    * Name of the workflow that was run.
     */
   var Name: js.UndefOr[NameString] = js.undefined
   
@@ -34,7 +34,12 @@ trait WorkflowRun extends StObject {
   /**
     * The date and time when the workflow run was started.
     */
-  var StartedOn: js.UndefOr[TimestampValue] = js.undefined
+  var StartedOn: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The batch condition that started the workflow run.
+    */
+  var StartingEventBatchCondition: js.UndefOr[typings.awsSdk.glueMod.StartingEventBatchCondition] = js.undefined
   
   /**
     * The statistics of the run.
@@ -65,7 +70,7 @@ object WorkflowRun {
   
   extension [Self <: WorkflowRun](x: Self) {
     
-    inline def setCompletedOn(value: TimestampValue): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
+    inline def setCompletedOn(value: js.Date): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     
     inline def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
     
@@ -85,9 +90,13 @@ object WorkflowRun {
     
     inline def setPreviousRunIdUndefined: Self = StObject.set(x, "PreviousRunId", js.undefined)
     
-    inline def setStartedOn(value: TimestampValue): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
+    inline def setStartedOn(value: js.Date): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
     
     inline def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
+    
+    inline def setStartingEventBatchCondition(value: StartingEventBatchCondition): Self = StObject.set(x, "StartingEventBatchCondition", value.asInstanceOf[js.Any])
+    
+    inline def setStartingEventBatchConditionUndefined: Self = StObject.set(x, "StartingEventBatchCondition", js.undefined)
     
     inline def setStatistics(value: WorkflowRunStatistics): Self = StObject.set(x, "Statistics", value.asInstanceOf[js.Any])
     

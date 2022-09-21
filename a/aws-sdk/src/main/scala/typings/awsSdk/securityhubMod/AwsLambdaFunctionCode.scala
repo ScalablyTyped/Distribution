@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsLambdaFunctionCode extends StObject {
   
   /**
-    * An Amazon S3 bucket in the same AWS Region as your function. The bucket can be in a different AWS account.
+    * An Amazon S3 bucket in the same Amazon Web Services Region as your function. The bucket can be in a different Amazon Web Services account.
     */
   var S3Bucket: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -22,7 +22,7 @@ trait AwsLambdaFunctionCode extends StObject {
   var S3ObjectVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The base64-encoded contents of the deployment package. AWS SDK and AWS CLI clients handle the encoding for you.
+    * The base64-encoded contents of the deployment package. Amazon Web Services SDK and Amazon Web Services CLI clients handle the encoding for you.
     */
   var ZipFile: js.UndefOr[NonEmptyString] = js.undefined
 }

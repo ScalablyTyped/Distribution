@@ -2,12 +2,15 @@ package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.grpcGrpcJs.channelMod.ConnectivityState
+import typings.grpcGrpcJs.anon.PartialChannelControlHelp
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
-import typings.grpcGrpcJs.loadBalancingConfigMod.LoadBalancingConfig
+import typings.grpcGrpcJs.channelzMod.ChannelRef
+import typings.grpcGrpcJs.channelzMod.SubchannelRef
+import typings.grpcGrpcJs.connectivityStateMod.ConnectivityState
+import typings.grpcGrpcJs.grpcGrpcJsBooleans.`true`
 import typings.grpcGrpcJs.pickerMod.Picker
-import typings.grpcGrpcJs.subchannelMod.Subchannel
-import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
+import typings.grpcGrpcJs.subchannelAddressMod.SubchannelAddress
+import typings.grpcGrpcJs.subchannelInterfaceMod.SubchannelInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,29 +21,46 @@ object loadBalancerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createLoadBalancer(typeName: String, channelControlHelper: ChannelControlHelper): LoadBalancer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createLoadBalancer")(typeName.asInstanceOf[js.Any], channelControlHelper.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer | Null]
+  inline def createChildChannelControlHelper(parent: ChannelControlHelper, overrides: PartialChannelControlHelp): ChannelControlHelper = (^.asInstanceOf[js.Dynamic].applyDynamic("createChildChannelControlHelper")(parent.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[ChannelControlHelper]
   
-  inline def getFirstUsableConfig(configs: js.Array[LoadBalancingConfig]): LoadBalancingConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstUsableConfig")(configs.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingConfig | Null]
+  inline def createLoadBalancer(config: LoadBalancingConfig, channelControlHelper: ChannelControlHelper): LoadBalancer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createLoadBalancer")(config.asInstanceOf[js.Any], channelControlHelper.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer | Null]
+  
+  inline def getFirstUsableConfig(configs: js.Array[LoadBalancingConfig]): LoadBalancingConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstUsableConfig")(configs.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingConfig]
+  
+  inline def getFirstUsableConfig_true(configs: js.Array[LoadBalancingConfig], fallbackTodefault: `true`): LoadBalancingConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstUsableConfig")(configs.asInstanceOf[js.Any], fallbackTodefault.asInstanceOf[js.Any])).asInstanceOf[LoadBalancingConfig]
   
   inline def isLoadBalancerNameRegistered(typeName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoadBalancerNameRegistered")(typeName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def registerAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAll")().asInstanceOf[Unit]
+  inline def registerDefaultLoadBalancerType(typeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultLoadBalancerType")(typeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def registerLoadBalancerType(typeName: String, loadBalancerType: LoadBalancerConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadBalancerType")(typeName.asInstanceOf[js.Any], loadBalancerType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerLoadBalancerType(
+    typeName: String,
+    loadBalancerType: LoadBalancerConstructor,
+    loadBalancingConfigType: LoadBalancingConfigConstructor
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadBalancerType")(typeName.asInstanceOf[js.Any], loadBalancerType.asInstanceOf[js.Any], loadBalancingConfigType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def validateLoadBalancingConfig(obj: Any): LoadBalancingConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("validateLoadBalancingConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingConfig]
+  
+  @js.native
   trait ChannelControlHelper extends StObject {
+    
+    def addChannelzChild(child: ChannelRef): Unit = js.native
+    def addChannelzChild(child: SubchannelRef): Unit = js.native
     
     /**
       * Returns a subchannel connected to the specified address.
       * @param subchannelAddress The address to connect to
       * @param subchannelArgs Extra channel arguments specified by the load balancer
       */
-    def createSubchannel(subchannelAddress: SubchannelAddress, subchannelArgs: ChannelOptions): Subchannel
+    def createSubchannel(subchannelAddress: SubchannelAddress, subchannelArgs: ChannelOptions): SubchannelInterface = js.native
+    
+    def removeChannelzChild(child: ChannelRef): Unit = js.native
+    def removeChannelzChild(child: SubchannelRef): Unit = js.native
     
     /**
       * Request new data from the resolver.
       */
-    def requestReresolution(): Unit
+    def requestReresolution(): Unit = js.native
     
     /**
       * Passes a new subchannel picker up to the channel. This is called if either
@@ -49,27 +69,7 @@ object loadBalancerMod {
       * @param connectivityState New connectivity state
       * @param picker New picker
       */
-    def updateState(connectivityState: ConnectivityState, picker: Picker): Unit
-  }
-  object ChannelControlHelper {
-    
-    inline def apply(
-      createSubchannel: (SubchannelAddress, ChannelOptions) => Subchannel,
-      requestReresolution: () => Unit,
-      updateState: (ConnectivityState, Picker) => Unit
-    ): ChannelControlHelper = {
-      val __obj = js.Dynamic.literal(createSubchannel = js.Any.fromFunction2(createSubchannel), requestReresolution = js.Any.fromFunction0(requestReresolution), updateState = js.Any.fromFunction2(updateState))
-      __obj.asInstanceOf[ChannelControlHelper]
-    }
-    
-    extension [Self <: ChannelControlHelper](x: Self) {
-      
-      inline def setCreateSubchannel(value: (SubchannelAddress, ChannelOptions) => Subchannel): Self = StObject.set(x, "createSubchannel", js.Any.fromFunction2(value))
-      
-      inline def setRequestReresolution(value: () => Unit): Self = StObject.set(x, "requestReresolution", js.Any.fromFunction0(value))
-      
-      inline def setUpdateState(value: (ConnectivityState, Picker) => Unit): Self = StObject.set(x, "updateState", js.Any.fromFunction2(value))
-    }
+    def updateState(connectivityState: ConnectivityState, picker: Picker): Unit = js.native
   }
   
   trait LoadBalancer extends StObject {
@@ -111,7 +111,7 @@ object loadBalancerMod {
     def updateAddressList(
       addressList: js.Array[SubchannelAddress],
       lbConfig: LoadBalancingConfig,
-      attributes: StringDictionary[js.Any]
+      attributes: StringDictionary[Any]
     ): Unit
   }
   object LoadBalancer {
@@ -121,7 +121,7 @@ object loadBalancerMod {
       exitIdle: () => Unit,
       getTypeName: () => String,
       resetBackoff: () => Unit,
-      updateAddressList: (js.Array[SubchannelAddress], LoadBalancingConfig, StringDictionary[js.Any]) => Unit
+      updateAddressList: (js.Array[SubchannelAddress], LoadBalancingConfig, StringDictionary[Any]) => Unit
     ): LoadBalancer = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), exitIdle = js.Any.fromFunction0(exitIdle), getTypeName = js.Any.fromFunction0(getTypeName), resetBackoff = js.Any.fromFunction0(resetBackoff), updateAddressList = js.Any.fromFunction3(updateAddressList))
       __obj.asInstanceOf[LoadBalancer]
@@ -137,7 +137,7 @@ object loadBalancerMod {
       
       inline def setResetBackoff(value: () => Unit): Self = StObject.set(x, "resetBackoff", js.Any.fromFunction0(value))
       
-      inline def setUpdateAddressList(value: (js.Array[SubchannelAddress], LoadBalancingConfig, StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "updateAddressList", js.Any.fromFunction3(value))
+      inline def setUpdateAddressList(value: (js.Array[SubchannelAddress], LoadBalancingConfig, StringDictionary[Any]) => Unit): Self = StObject.set(x, "updateAddressList", js.Any.fromFunction3(value))
     }
   }
   
@@ -145,4 +145,33 @@ object loadBalancerMod {
   trait LoadBalancerConstructor
     extends StObject
        with Instantiable1[/* channelControlHelper */ ChannelControlHelper, LoadBalancer]
+  
+  trait LoadBalancingConfig extends StObject {
+    
+    def getLoadBalancerName(): String
+    
+    def toJsonObject(): js.Object
+  }
+  object LoadBalancingConfig {
+    
+    inline def apply(getLoadBalancerName: () => String, toJsonObject: () => js.Object): LoadBalancingConfig = {
+      val __obj = js.Dynamic.literal(getLoadBalancerName = js.Any.fromFunction0(getLoadBalancerName), toJsonObject = js.Any.fromFunction0(toJsonObject))
+      __obj.asInstanceOf[LoadBalancingConfig]
+    }
+    
+    extension [Self <: LoadBalancingConfig](x: Self) {
+      
+      inline def setGetLoadBalancerName(value: () => String): Self = StObject.set(x, "getLoadBalancerName", js.Any.fromFunction0(value))
+      
+      inline def setToJsonObject(value: () => js.Object): Self = StObject.set(x, "toJsonObject", js.Any.fromFunction0(value))
+    }
+  }
+  
+  @js.native
+  trait LoadBalancingConfigConstructor
+    extends StObject
+       with Instantiable1[/* args */ Any, LoadBalancingConfig] {
+    
+    def createFromJson(obj: Any): LoadBalancingConfig = js.native
+  }
 }

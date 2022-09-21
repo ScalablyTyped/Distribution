@@ -49,13 +49,13 @@ object BasePlaylistConstructorPrCurrentVariant {
     
     inline def setSessionDataListUndefined: Self = StObject.set(x, "sessionDataList", js.undefined)
     
-    inline def setSessionDataListVarargs(value: SessionData*): Self = StObject.set(x, "sessionDataList", js.Array(value :_*))
+    inline def setSessionDataListVarargs(value: SessionData*): Self = StObject.set(x, "sessionDataList", js.Array(value*))
     
     inline def setSessionKeyList(value: js.Array[Key]): Self = StObject.set(x, "sessionKeyList", value.asInstanceOf[js.Any])
     
     inline def setSessionKeyListUndefined: Self = StObject.set(x, "sessionKeyList", js.undefined)
     
-    inline def setSessionKeyListVarargs(value: Key*): Self = StObject.set(x, "sessionKeyList", js.Array(value :_*))
+    inline def setSessionKeyListVarargs(value: Key*): Self = StObject.set(x, "sessionKeyList", js.Array(value*))
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object BasePlaylistConstructorPrCurrentVariant {
     
     inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    inline def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
+    inline def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

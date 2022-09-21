@@ -8,14 +8,13 @@ import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.ledgerInfoPbMod.LedgerInfoWithSignatures
 import typings.libraCore.validatorChangePbMod.ValidatorChangeEventWithProof
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "UpdateToLatestLedgerResponse")
 @js.native
-class UpdateToLatestLedgerResponse () extends Message {
+open class UpdateToLatestLedgerResponse () extends Message {
   
   def addResponseItems(): ResponseItem = js.native
   def addResponseItems(value: Unit, index: Double): ResponseItem = js.native
@@ -55,7 +54,7 @@ object UpdateToLatestLedgerResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): UpdateToLatestLedgerResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[UpdateToLatestLedgerResponse]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): UpdateToLatestLedgerResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[UpdateToLatestLedgerResponse]
   
   inline def deserializeBinaryFromReader(message: UpdateToLatestLedgerResponse, reader: BinaryReader): UpdateToLatestLedgerResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[UpdateToLatestLedgerResponse]
   
@@ -100,11 +99,11 @@ object UpdateToLatestLedgerResponse {
       
       inline def setResponseItemsList(value: js.Array[typings.libraCore.getWithProofPbMod.ResponseItem.AsObject]): Self = StObject.set(x, "responseItemsList", value.asInstanceOf[js.Any])
       
-      inline def setResponseItemsListVarargs(value: typings.libraCore.getWithProofPbMod.ResponseItem.AsObject*): Self = StObject.set(x, "responseItemsList", js.Array(value :_*))
+      inline def setResponseItemsListVarargs(value: typings.libraCore.getWithProofPbMod.ResponseItem.AsObject*): Self = StObject.set(x, "responseItemsList", js.Array(value*))
       
       inline def setValidatorChangeEventsList(value: js.Array[typings.libraCore.validatorChangePbMod.ValidatorChangeEventWithProof.AsObject]): Self = StObject.set(x, "validatorChangeEventsList", value.asInstanceOf[js.Any])
       
-      inline def setValidatorChangeEventsListVarargs(value: typings.libraCore.validatorChangePbMod.ValidatorChangeEventWithProof.AsObject*): Self = StObject.set(x, "validatorChangeEventsList", js.Array(value :_*))
+      inline def setValidatorChangeEventsListVarargs(value: typings.libraCore.validatorChangePbMod.ValidatorChangeEventWithProof.AsObject*): Self = StObject.set(x, "validatorChangeEventsList", js.Array(value*))
     }
   }
 }

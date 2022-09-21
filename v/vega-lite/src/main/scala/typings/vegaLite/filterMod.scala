@@ -13,17 +13,17 @@ object filterMod {
   
   @JSImport("vega-lite/build/src/compile/data/filter", "FilterNode")
   @js.native
-  class FilterNode protected () extends DataFlowNode {
+  open class FilterNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, model: Model, filter: LogicalComposition[Predicate]) = this()
     
-    /* private */ var _dependentFields: js.Any = js.native
+    /* private */ var _dependentFields: Any = js.native
     
     def assemble(): FilterTransform = js.native
     
-    /* private */ var expr: js.Any = js.native
+    /* private */ var expr: Any = js.native
     
-    /* private */ val filter: js.Any = js.native
+    /* private */ val filter: Any = js.native
     
-    /* private */ val model: js.Any = js.native
+    /* private */ val model: Any = js.native
   }
 }

@@ -22,6 +22,6 @@ object SourceIpConfig {
     
     inline def setCidrs(value: Cidrs): Self = StObject.set(x, "Cidrs", value.asInstanceOf[js.Any])
     
-    inline def setCidrsVarargs(value: Cidr*): Self = StObject.set(x, "Cidrs", js.Array(value :_*))
+    inline def setCidrsVarargs(value: Cidr*): Self = StObject.set(x, "Cidrs", js.Array(value*))
   }
 }

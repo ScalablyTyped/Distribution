@@ -1,14 +1,14 @@
 package typings.firebase.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebase.mod.firebase.analytics.Item
+import typings.firebase.firebaseMod.firebase.analytics.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Checkoutoption
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var checkout_option: js.UndefOr[String] = js.undefined
   
@@ -51,7 +51,7 @@ object Checkoutoption {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

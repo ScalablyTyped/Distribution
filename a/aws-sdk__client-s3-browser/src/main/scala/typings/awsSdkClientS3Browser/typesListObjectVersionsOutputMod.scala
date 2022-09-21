@@ -96,13 +96,13 @@ object typesListObjectVersionsOutputMod {
       
       inline def setCommonPrefixesUndefined: Self = StObject.set(x, "CommonPrefixes", js.undefined)
       
-      inline def setCommonPrefixesVarargs(value: UnmarshalledCommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value :_*))
+      inline def setCommonPrefixesVarargs(value: UnmarshalledCommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value*))
       
       inline def setDeleteMarkers(value: js.Array[UnmarshalledDeleteMarkerEntry]): Self = StObject.set(x, "DeleteMarkers", value.asInstanceOf[js.Any])
       
       inline def setDeleteMarkersUndefined: Self = StObject.set(x, "DeleteMarkers", js.undefined)
       
-      inline def setDeleteMarkersVarargs(value: UnmarshalledDeleteMarkerEntry*): Self = StObject.set(x, "DeleteMarkers", js.Array(value :_*))
+      inline def setDeleteMarkersVarargs(value: UnmarshalledDeleteMarkerEntry*): Self = StObject.set(x, "DeleteMarkers", js.Array(value*))
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
       
@@ -148,7 +148,7 @@ object typesListObjectVersionsOutputMod {
       
       inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
       
-      inline def setVersionsVarargs(value: UnmarshalledObjectVersion*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+      inline def setVersionsVarargs(value: UnmarshalledObjectVersion*): Self = StObject.set(x, "Versions", js.Array(value*))
     }
   }
 }

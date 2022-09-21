@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-node", "SelectObjectContentCommand")
 @js.native
-class SelectObjectContentCommand protected ()
+open class SelectObjectContentCommand protected ()
   extends typings.awsSdkClientS3Node.selectObjectContentCommandMod.SelectObjectContentCommand {
   def this(input: SelectObjectContentInput) = this()
 }

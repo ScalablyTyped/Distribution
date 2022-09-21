@@ -10,10 +10,10 @@ object assignmentMod {
   
   @JSImport("material-ui/svg-icons/action/assignment", JSImport.Default)
   @js.native
-  class default () extends ActionAssignment
+  open class default () extends ActionAssignment
   
   @JSImport("material-ui/svg-icons/action/assignment", "ActionAssignment")
   @js.native
-  class ActionAssignment ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAssignment ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -8,7 +8,7 @@ object immediateMod {
   
   object Immediate {
     
-    @JSImport("rxjs/internal/util/Immediate", "Immediate")
+    @JSImport("rxjs/dist/types/internal/util/Immediate", "Immediate")
     @js.native
     val ^ : js.Any = js.native
     
@@ -19,7 +19,7 @@ object immediateMod {
   
   object TestTools {
     
-    @JSImport("rxjs/internal/util/Immediate", "TestTools")
+    @JSImport("rxjs/dist/types/internal/util/Immediate", "TestTools")
     @js.native
     val ^ : js.Any = js.native
     

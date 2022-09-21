@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@antv/g-plugin-dom-interaction" : "1.7.17"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@antv/g-plugin-dom-interaction" : "1.7.17"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

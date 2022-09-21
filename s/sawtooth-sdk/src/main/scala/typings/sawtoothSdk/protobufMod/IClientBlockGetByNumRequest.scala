@@ -8,7 +8,7 @@ trait IClientBlockGetByNumRequest extends StObject {
   
   /** ClientBlockGetByNumRequest blockNum */
   var blockNum: js.UndefOr[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any) | Null
   ] = js.undefined
 }
 object IClientBlockGetByNumRequest {
@@ -21,7 +21,7 @@ object IClientBlockGetByNumRequest {
   extension [Self <: IClientBlockGetByNumRequest](x: Self) {
     
     inline def setBlockNum(
-      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)
     ): Self = StObject.set(x, "blockNum", value.asInstanceOf[js.Any])
     
     inline def setBlockNumNull: Self = StObject.set(x, "blockNum", null)

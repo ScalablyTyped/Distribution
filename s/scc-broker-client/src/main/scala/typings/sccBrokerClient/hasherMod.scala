@@ -8,7 +8,7 @@ object hasherMod {
   
   @JSImport("scc-broker-client/hasher", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Hasher
   

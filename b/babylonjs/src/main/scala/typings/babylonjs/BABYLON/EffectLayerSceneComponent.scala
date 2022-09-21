@@ -9,25 +9,25 @@ trait EffectLayerSceneComponent
   extends StObject
      with ISceneSerializableComponent {
   
-  /* private */ var _draw: js.Any = js.native
+  /* private */ var _draw: Any = js.native
   
-  /* private */ var _drawCamera: js.Any = js.native
+  /* private */ var _drawCamera: Any = js.native
   
-  /* private */ var _drawRenderingGroup: js.Any = js.native
+  /* private */ var _drawRenderingGroup: Any = js.native
   
-  /* private */ var _engine: js.Any = js.native
+  /* private */ var _engine: Any = js.native
   
-  /* private */ var _isReadyForMesh: js.Any = js.native
+  /* private */ var _isReadyForMesh: Any = js.native
   
-  /* private */ var _needStencil: js.Any = js.native
+  /* private */ var _needStencil: Any = js.native
   
-  /* private */ var _previousStencilState: js.Any = js.native
+  /* private */ var _previousStencilState: Any = js.native
   
-  /* private */ var _renderEffects: js.Any = js.native
+  /* private */ var _renderEffects: Any = js.native
   
-  /* private */ var _renderMainTexture: js.Any = js.native
+  /* private */ var _renderMainTexture: Any = js.native
   
-  /* private */ var _setStencil: js.Any = js.native
+  /* private */ var _setStencil: Any = js.native
   
-  /* private */ var _setStencilBack: js.Any = js.native
+  /* private */ var _setStencilBack: Any = js.native
 }

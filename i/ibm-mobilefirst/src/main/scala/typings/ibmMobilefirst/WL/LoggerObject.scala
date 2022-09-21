@@ -57,7 +57,7 @@ trait LoggerObject extends StObject {
   /**
     * Attach additional metadata to the next logger instance call.
     */
-  def metadata(options: js.Any): LoggerObject = js.native
+  def metadata(options: Any): LoggerObject = js.native
   
   /**
     * @deprecated since version 6.2. WL.Logger.on is now a no-op. WL.Logger is always enabled. Use WL.Logger.config with {'level': 'FATAL'} to reduce verbosity.
@@ -67,12 +67,12 @@ trait LoggerObject extends StObject {
   /**
     * @deprecated since version 6.2. WL.Logger.on is now a no-op. WL.Logger is always enabled. Use WL.Logger.config with {'level': 'FATAL'} to reduce verbosity.
     */
-  def on(options: js.Any): LoggerObject = js.native
+  def on(options: Any): LoggerObject = js.native
   
   /**
     * Send any logs collected up to this point to the IBM® Worklight® server.
     */
-  def send(): JQueryDeferred[js.Any] = js.native
+  def send(): JQueryDeferred[Any] = js.native
   
   /**
     * @deprecated since version 6.2. Use WL.Logger.config instead. Sets options in native application layer (iOS and Android only)
@@ -83,7 +83,7 @@ trait LoggerObject extends StObject {
   /**
     * Shows the status (current configuration) of the logger.
     */
-  def status(): JQueryDeferred[js.Any] = js.native
+  def status(): JQueryDeferred[Any] = js.native
   
   /**
     * Prints arguments to the console.
@@ -93,7 +93,7 @@ trait LoggerObject extends StObject {
   /**
     * Retrieves and applies any matching configuration profile from the IBM® Worklight® Server.
     */
-  def updateConfigFromServer(): JQueryDeferred[js.Any] = js.native
+  def updateConfigFromServer(): JQueryDeferred[Any] = js.native
   
   /**
     * Prints arguments to the console.

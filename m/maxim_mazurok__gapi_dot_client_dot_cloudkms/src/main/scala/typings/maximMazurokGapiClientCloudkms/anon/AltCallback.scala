@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientCloudkms.anon
 
+import typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms.RestoreCryptoKeyVersionRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,23 +23,23 @@ trait AltCallback extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Required. It must be unique within a KeyRing and match the regular expression `[a-zA-Z0-9_-]{1,63}` */
-  var importJobId: js.UndefOr[String] = js.undefined
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /** Required. The resource name of the CryptoKeyVersion to restore. */
+  var name: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** Required. The name of the KeyRing associated with the ImportJobs. */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: RestoreCryptoKeyVersionRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -48,8 +49,8 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(parent: String): AltCallback = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: RestoreCryptoKeyVersionRequest): AltCallback = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
   
@@ -75,19 +76,15 @@ object AltCallback {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setImportJobId(value: String): Self = StObject.set(x, "importJobId", value.asInstanceOf[js.Any])
-    
-    inline def setImportJobIdUndefined: Self = StObject.set(x, "importJobId", js.undefined)
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -96,6 +93,8 @@ object AltCallback {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: RestoreCryptoKeyVersionRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

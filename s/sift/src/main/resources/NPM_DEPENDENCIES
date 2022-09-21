@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sift" : "5.1.0"
+      "sift" : "16.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "sift" : "5.1.0"
+      "sift" : "16.0.0"
     }
   ],
   "compile-devDependencies" : [

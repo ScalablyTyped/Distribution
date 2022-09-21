@@ -1,7 +1,7 @@
 
 # Scala.js typings for boolean
 
-Typings are for version 3.0.2
+Typings are for version 3.2.0
 
 ## Library description:
 boolean converts lots of things to boolean.
@@ -10,15 +10,12 @@ boolean converts lots of things to boolean.
 | ------------------ | :-------------: |
 | Full name          | boolean |
 | Keywords           | boolean, parser |
-| # releases         | 8 |
-| # dependents       | 91 |
-| # downloads        | 23184475 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 6615938.0 |
+| # stars            | 35.0 |
 
 ## Links
-- [Homepage](https://github.com/thenativeweb/boolean#readme)
-- [Bugs](https://github.com/thenativeweb/boolean/issues)
-- [Repository](https://github.com/thenativeweb/boolean)
 - [Npm](https://www.npmjs.com/package/boolean)
     
 

@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram
 
-import typings.std.ArrayBuffer
 import typings.wechatMiniprogram.DB.Database
 import typings.wechatMiniprogram.ICloud.CallFunctionParam
 import typings.wechatMiniprogram.ICloud.CallFunctionResult
@@ -33,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WxCloud extends StObject {
   
   def CDN(options: String): typings.wechatMiniprogram.ICloud.CDN = js.native
-  def CDN(options: ArrayBuffer): typings.wechatMiniprogram.ICloud.CDN = js.native
+  def CDN(options: js.typedarray.ArrayBuffer): typings.wechatMiniprogram.ICloud.CDN = js.native
   def CDN(options: ICDNFilePathSpec): typings.wechatMiniprogram.ICloud.CDN = js.native
   @JSName("CDN")
   var CDN_Original: ICDNConstructor = js.native

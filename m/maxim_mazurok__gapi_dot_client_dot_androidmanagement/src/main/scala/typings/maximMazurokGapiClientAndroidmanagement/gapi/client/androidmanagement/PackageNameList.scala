@@ -22,6 +22,6 @@ object PackageNameList {
     
     inline def setPackageNamesUndefined: Self = StObject.set(x, "packageNames", js.undefined)
     
-    inline def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value :_*))
+    inline def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value*))
   }
 }

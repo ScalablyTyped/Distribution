@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tabs
 
-Typings are for version 2.3
+Typings are for version 5.1.0
 
 ## Library description:
 An accessible and easy tab component for ReactJS
@@ -10,21 +10,18 @@ An accessible and easy tab component for ReactJS
 | ------------------ | :-------------: |
 | Full name          | react-tabs |
 | Keywords           | react, tabs, a11y, react-component |
-| # releases         | 4 |
-| # dependents       | 204 |
-| # downloads        | 13667390 |
-| # stars            | 10 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 2246084.6666666665 |
+| # stars            | 2744.0 |
 
 ## Links
-- [Homepage](https://github.com/reactjs/react-tabs)
-- [Bugs](https://github.com/reactjs/react-tabs/issues)
-- [Repository](https://github.com/reactjs/react-tabs)
 - [Npm](https://www.npmjs.com/package/react-tabs)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -19,7 +19,7 @@ object mod extends Shortcut {
       * @param eventName the event name
       * @param data passed to the callback function when the event is fired
       */
-    def send(targetObj: js.Object, eventName: String, data: js.Any): Unit
+    def send(targetObj: js.Object, eventName: String, data: Any): Unit
     
     /**
       * subscirpt event
@@ -27,7 +27,7 @@ object mod extends Shortcut {
       * @param eventName the event name
       * @param callback callback function executed when an event is fired
       */
-    def subscribe(targetObj: js.Object, eventName: String, callback: js.Any): Unit
+    def subscribe(targetObj: js.Object, eventName: String, callback: Any): Unit
     
     /* private */ var subscribers: js.Array[js.Object]
     
@@ -41,8 +41,8 @@ object mod extends Shortcut {
   object Observer {
     
     inline def apply(
-      send: (js.Object, String, js.Any) => Unit,
-      subscribe: (js.Object, String, js.Any) => Unit,
+      send: (js.Object, String, Any) => Unit,
+      subscribe: (js.Object, String, Any) => Unit,
       subscribers: js.Array[js.Object],
       unsubscribe: (js.Object, String) => Unit
     ): Observer = {
@@ -52,13 +52,13 @@ object mod extends Shortcut {
     
     extension [Self <: Observer](x: Self) {
       
-      inline def setSend(value: (js.Object, String, js.Any) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
+      inline def setSend(value: (js.Object, String, Any) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
       
-      inline def setSubscribe(value: (js.Object, String, js.Any) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction3(value))
+      inline def setSubscribe(value: (js.Object, String, Any) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction3(value))
       
       inline def setSubscribers(value: js.Array[js.Object]): Self = StObject.set(x, "subscribers", value.asInstanceOf[js.Any])
       
-      inline def setSubscribersVarargs(value: js.Object*): Self = StObject.set(x, "subscribers", js.Array(value :_*))
+      inline def setSubscribersVarargs(value: js.Object*): Self = StObject.set(x, "subscribers", js.Array(value*))
       
       inline def setUnsubscribe(value: (js.Object, String) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
     }

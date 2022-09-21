@@ -15,7 +15,7 @@ object mod extends Shortcut {
   trait Generate extends StObject {
     
     def apply(byteLength: Double): js.Promise[String] = js.native
-    def apply(byteLength: Double, callback: js.Function2[/* err */ js.Any, /* str */ String, js.Any]): Unit = js.native
+    def apply(byteLength: Double, callback: js.Function2[/* err */ Any, /* str */ String, Any]): Unit = js.native
     
     def sync(byteLength: Double): String = js.native
   }

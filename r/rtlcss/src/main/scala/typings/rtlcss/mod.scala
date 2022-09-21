@@ -1,10 +1,12 @@
 package typings.rtlcss
 
 import org.scalablytyped.runtime.Shortcut
-import typings.postcss.mod.LazyResult
-import typings.postcss.mod.Plugin_
-import typings.postcss.mod.Result
+import org.scalablytyped.runtime.StringDictionary
+import typings.postcss.mod.PluginCreator
+import typings.postcss.mod.Postcss
 import typings.postcss.mod.Root_
+import typings.postcss.processorMod.default
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,89 +15,150 @@ object mod extends Shortcut {
   
   @JSImport("rtlcss", JSImport.Namespace)
   @js.native
-  val ^ : RtlCss = js.native
+  val ^ : js.Object & RtlCss = js.native
   
   trait ConfigOptions extends StObject {
+    
+    /**
+      * An object map of property-name Aliases,
+      * where keys are variable names and values are property names.
+      * e.g. {"aliases": {"--small-padding": "padding"}}
+      */
+    var aliases: js.UndefOr[Record[String, String]] = js.undefined
     
     /**
       * Applies to CSS rules containing no directional properties,
       * it will update the selector by applying String Map.
       */
-    var autoRename: Boolean
+    var autoRename: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Ensures autoRename is applied only if pair exists.
       */
-    var autoRenameStrict: Boolean
+    var autoRenameStrict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An object map of disabled plugins directives,
       * where keys are plugin names and value are object
       * hash of disabled directives. e.g. {'rtlcss':{'config':true}}.
       */
-    var blacklist: js.Object
+    var blacklist: js.UndefOr[StringDictionary[Record[String, Any]]] = js.undefined
     
     /**
       * Removes directives comments from output CSS.
       */
-    var clean: Boolean
+    var clean: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Fallback value for String Map options.
       */
-    var greedy: Boolean
+    var greedy: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * When disabled, prevents flipping agent-defined environment variables
+      * safe-area-inset-left, safe-area-inset-right.
+      */
+    var processEnv: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Applies String Map to URLs. You can also target specific node types using an object literal.
       * e.g. {'atrule': true, 'decl': false}.
       */
-    var processUrls: Boolean | js.Object
+    var processUrls: js.UndefOr[Boolean | StringDictionary[Boolean]] = js.undefined
     
     /**
       * The default array of String Map.
       */
-    var stringMap: js.Array[StringMap]
+    var stringMap: js.UndefOr[js.Array[StringMap]] = js.undefined
     
     /**
       * When enabled, flips background-position expressed in length units using calc.
       */
-    var useCalc: Boolean
+    var useCalc: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigOptions {
     
-    inline def apply(
-      autoRename: Boolean,
-      autoRenameStrict: Boolean,
-      blacklist: js.Object,
-      clean: Boolean,
-      greedy: Boolean,
-      processUrls: Boolean | js.Object,
-      stringMap: js.Array[StringMap],
-      useCalc: Boolean
-    ): ConfigOptions = {
-      val __obj = js.Dynamic.literal(autoRename = autoRename.asInstanceOf[js.Any], autoRenameStrict = autoRenameStrict.asInstanceOf[js.Any], blacklist = blacklist.asInstanceOf[js.Any], clean = clean.asInstanceOf[js.Any], greedy = greedy.asInstanceOf[js.Any], processUrls = processUrls.asInstanceOf[js.Any], stringMap = stringMap.asInstanceOf[js.Any], useCalc = useCalc.asInstanceOf[js.Any])
+    inline def apply(): ConfigOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
     extension [Self <: ConfigOptions](x: Self) {
       
+      inline def setAliases(value: Record[String, String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      
       inline def setAutoRename(value: Boolean): Self = StObject.set(x, "autoRename", value.asInstanceOf[js.Any])
       
       inline def setAutoRenameStrict(value: Boolean): Self = StObject.set(x, "autoRenameStrict", value.asInstanceOf[js.Any])
       
-      inline def setBlacklist(value: js.Object): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setAutoRenameStrictUndefined: Self = StObject.set(x, "autoRenameStrict", js.undefined)
+      
+      inline def setAutoRenameUndefined: Self = StObject.set(x, "autoRename", js.undefined)
+      
+      inline def setBlacklist(value: StringDictionary[Record[String, Any]]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
       inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
+      inline def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
+      
       inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
       
-      inline def setProcessUrls(value: Boolean | js.Object): Self = StObject.set(x, "processUrls", value.asInstanceOf[js.Any])
+      inline def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
+      
+      inline def setProcessEnv(value: Boolean): Self = StObject.set(x, "processEnv", value.asInstanceOf[js.Any])
+      
+      inline def setProcessEnvUndefined: Self = StObject.set(x, "processEnv", js.undefined)
+      
+      inline def setProcessUrls(value: Boolean | StringDictionary[Boolean]): Self = StObject.set(x, "processUrls", value.asInstanceOf[js.Any])
+      
+      inline def setProcessUrlsUndefined: Self = StObject.set(x, "processUrls", js.undefined)
       
       inline def setStringMap(value: js.Array[StringMap]): Self = StObject.set(x, "stringMap", value.asInstanceOf[js.Any])
       
-      inline def setStringMapVarargs(value: StringMap*): Self = StObject.set(x, "stringMap", js.Array(value :_*))
+      inline def setStringMapUndefined: Self = StObject.set(x, "stringMap", js.undefined)
+      
+      inline def setStringMapVarargs(value: StringMap*): Self = StObject.set(x, "stringMap", js.Array(value*))
       
       inline def setUseCalc(value: Boolean): Self = StObject.set(x, "useCalc", value.asInstanceOf[js.Any])
+      
+      inline def setUseCalcUndefined: Self = StObject.set(x, "useCalc", js.undefined)
+    }
+  }
+  
+  trait ConfigureOptions extends StObject {
+    
+    var hooks: js.UndefOr[HookOptions] = js.undefined
+    
+    var options: js.UndefOr[ConfigOptions] = js.undefined
+    
+    var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
+  }
+  object ConfigureOptions {
+    
+    inline def apply(): ConfigureOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ConfigureOptions]
+    }
+    
+    extension [Self <: ConfigureOptions](x: Self) {
+      
+      inline def setHooks(value: HookOptions): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      
+      inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+      
+      inline def setOptions(value: ConfigOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      
+      inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      
+      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
   
@@ -103,51 +166,63 @@ object mod extends Shortcut {
   trait ExportedAPI extends StObject {
     
     /**
-      * Creates a new instance of RTLCSS using the passed configuration object.
+      * Creates a new instance of RTLCSS using the passed configuration object
+      * @param config  An object containing RTLCSS options, plugins and hooks.
+      * @returns A new RTLCSS instance.
       */
-    def configure(config: ConfigOptions): js.Object = js.native
+    def configure(config: ConfigureOptions): default = js.native
     
     /**
       * Creates a new RTLCSS instance, process the input and return its result.
+      * @param  css  A string containing input CSS.
+      * @param options  An object containing RTLCSS settings.
+      * @param plugins An array containing a list of RTLCSS plugins or a single RTLCSS plugin.
+      * @param hooks An object containing pre/post hooks.
+      * @returns A string containing the RTLed css.
       */
     def process(css: String): String = js.native
-    def process(css: String, options: js.Object): String = js.native
-    def process(css: String, options: js.Object, plugins: js.Array[String]): String = js.native
-    def process(css: String, options: js.Object, plugins: js.Array[String], hooks: HookOptions): String = js.native
-    def process(css: String, options: js.Object, plugins: js.Object): String = js.native
-    def process(css: String, options: js.Object, plugins: js.Object, hooks: HookOptions): String = js.native
-    def process(css: String, options: js.Object, plugins: Unit, hooks: HookOptions): String = js.native
-    def process(css: String, options: Unit, plugins: js.Array[String]): String = js.native
-    def process(css: String, options: Unit, plugins: js.Array[String], hooks: HookOptions): String = js.native
-    def process(css: String, options: Unit, plugins: js.Object): String = js.native
-    def process(css: String, options: Unit, plugins: js.Object, hooks: HookOptions): String = js.native
+    def process(css: String, options: Unit, plugins: js.Array[Plugin]): String = js.native
+    def process(css: String, options: Unit, plugins: js.Array[Plugin], hooks: HookOptions): String = js.native
     def process(css: String, options: Unit, plugins: Unit, hooks: HookOptions): String = js.native
+    def process(css: String, options: ConfigOptions): String = js.native
+    def process(css: String, options: ConfigOptions, plugins: js.Array[Plugin]): String = js.native
+    def process(css: String, options: ConfigOptions, plugins: js.Array[Plugin], hooks: HookOptions): String = js.native
+    def process(css: String, options: ConfigOptions, plugins: Unit, hooks: HookOptions): String = js.native
   }
+  
+  /**
+    * Hooks provides you with the ability to manipulate the css before/after it is processed,
+    */
+  type Hook = js.Function2[/* root */ Root_, /* postcss */ Postcss, Unit]
   
   trait HookOptions extends StObject {
     
     /**
       * The function to be called after processing the CSS.
       */
-    def post(): Unit
+    var post: js.UndefOr[Hook] = js.undefined
     
     /**
       * The function to be called before processing the CSS.
       */
-    def pre(): Unit
+    var pre: js.UndefOr[Hook] = js.undefined
   }
   object HookOptions {
     
-    inline def apply(post: () => Unit, pre: () => Unit): HookOptions = {
-      val __obj = js.Dynamic.literal(post = js.Any.fromFunction0(post), pre = js.Any.fromFunction0(pre))
+    inline def apply(): HookOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HookOptions]
     }
     
     extension [Self <: HookOptions](x: Self) {
       
-      inline def setPost(value: () => Unit): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
+      inline def setPost(value: (/* root */ Root_, /* postcss */ Postcss) => Unit): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
       
-      inline def setPre(value: () => Unit): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
+      inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+      
+      inline def setPre(value: (/* root */ Root_, /* postcss */ Postcss) => Unit): Self = StObject.set(x, "pre", js.Any.fromFunction2(value))
+      
+      inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     }
   }
   
@@ -178,20 +253,30 @@ object mod extends Shortcut {
     }
   }
   
+  trait Plugin
+    extends StObject
+       with /* key */ StringDictionary[Any] {
+    
+    var name: String
+  }
+  object Plugin {
+    
+    inline def apply(name: String): Plugin = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Plugin]
+    }
+    
+    extension [Self <: Plugin](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
   trait RtlCss
-    extends Plugin_[ConfigOptions]
-       with ExportedAPI {
-    
-    /* InferMemberOverrides */
-    override def apply(arg1: /* root */ Root_, arg2: /* result */ Result): js.Promise[js.Any] | js.Any = js.native
-    
-    /**
-      * Creates a new RTLCSS instance, process the input and return its result.
-      */
-    /* InferMemberOverrides */
-    override def process(css: String): String & LazyResult = js.native
-  }
+    extends StObject
+       with PluginCreator[ConfigOptions]
+       with ExportedAPI
   
   trait StringMap extends StObject {
     
@@ -234,16 +319,16 @@ object mod extends Shortcut {
       
       inline def setReplace(value: String | js.Array[String]): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      inline def setReplaceVarargs(value: String*): Self = StObject.set(x, "replace", js.Array(value :_*))
+      inline def setReplaceVarargs(value: String*): Self = StObject.set(x, "replace", js.Array(value*))
       
       inline def setSearch(value: String | js.Array[String]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      inline def setSearchVarargs(value: String*): Self = StObject.set(x, "search", js.Array(value :_*))
+      inline def setSearchVarargs(value: String*): Self = StObject.set(x, "search", js.Array(value*))
     }
   }
   
-  type _To = RtlCss
+  type _To = js.Object & RtlCss
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: RtlCss = ^
+  override def _to: js.Object & RtlCss = ^
 }

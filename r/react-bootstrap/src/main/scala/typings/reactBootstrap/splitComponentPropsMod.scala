@@ -10,5 +10,5 @@ object splitComponentPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: js.Any, Component: js.Any): js.Tuple2[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], Component.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Any, js.Any]]
+  inline def default(props: Any, Component: Any): js.Tuple2[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], Component.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Any, Any]]
 }

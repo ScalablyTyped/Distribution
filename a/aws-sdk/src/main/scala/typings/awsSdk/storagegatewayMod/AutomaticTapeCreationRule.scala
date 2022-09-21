@@ -12,7 +12,7 @@ trait AutomaticTapeCreationRule extends StObject {
   var MinimumNumTapes: typings.awsSdk.storagegatewayMod.MinimumNumTapes
   
   /**
-    * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the Amazon S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool. Valid Values: GLACIER | DEEP_ARCHIVE 
+    * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the Amazon S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool.
     */
   var PoolId: typings.awsSdk.storagegatewayMod.PoolId
   

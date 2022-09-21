@@ -42,6 +42,6 @@ object AddApplicationInputResponse {
     
     inline def setInputDescriptionsUndefined: Self = StObject.set(x, "InputDescriptions", js.undefined)
     
-    inline def setInputDescriptionsVarargs(value: InputDescription*): Self = StObject.set(x, "InputDescriptions", js.Array(value :_*))
+    inline def setInputDescriptionsVarargs(value: InputDescription*): Self = StObject.set(x, "InputDescriptions", js.Array(value*))
   }
 }

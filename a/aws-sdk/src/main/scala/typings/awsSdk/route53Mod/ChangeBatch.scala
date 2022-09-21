@@ -27,7 +27,7 @@ object ChangeBatch {
     
     inline def setChanges(value: Changes): Self = StObject.set(x, "Changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "Changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "Changes", js.Array(value*))
     
     inline def setComment(value: ResourceDescription): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

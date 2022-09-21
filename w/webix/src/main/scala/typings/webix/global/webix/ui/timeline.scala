@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.timeline because var conflicts: $height, $skin_Original, $view, $width, config, data, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original, `type`, types, waitData. Inlined  */ @JSGlobal("webix.ui.timeline")
+- typings.webix.webix.ui.timeline because var conflicts: $height, $setNode, $skin_Original, $view, $width, config, data, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original, `type`, types, waitData. Inlined  */ @JSGlobal("webix.ui.timeline")
 @js.native
-class timeline ()
+open class timeline ()
   extends typings.webix.mod.ui.timeline

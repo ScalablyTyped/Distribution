@@ -42,6 +42,6 @@ object UpdateTarget {
     
     inline def setSupportedOperationsUndefined: Self = StObject.set(x, "SupportedOperations", js.undefined)
     
-    inline def setSupportedOperationsVarargs(value: SupportedOperation*): Self = StObject.set(x, "SupportedOperations", js.Array(value :_*))
+    inline def setSupportedOperationsVarargs(value: SupportedOperation*): Self = StObject.set(x, "SupportedOperations", js.Array(value*))
   }
 }

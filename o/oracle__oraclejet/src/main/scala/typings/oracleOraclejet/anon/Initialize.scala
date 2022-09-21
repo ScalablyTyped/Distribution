@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Initialize
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var initialize: js.UndefOr[js.Function2[/* models */ js.Array[this.type], /* options */ js.Object, Unit]] = js.undefined
   
-  var parse: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+  var parse: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
   
-  var parseSave: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+  var parseSave: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
   
   var urlRoot: js.UndefOr[String] = js.undefined
   
@@ -34,9 +34,9 @@ object Initialize {
     
     inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     
-    inline def setParse(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: /* data */ Any => Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    inline def setParseSave(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "parseSave", js.Any.fromFunction1(value))
+    inline def setParseSave(value: /* data */ Any => Any): Self = StObject.set(x, "parseSave", js.Any.fromFunction1(value))
     
     inline def setParseSaveUndefined: Self = StObject.set(x, "parseSave", js.undefined)
     

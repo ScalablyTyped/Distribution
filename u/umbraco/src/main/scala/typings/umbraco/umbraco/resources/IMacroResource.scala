@@ -23,7 +23,7 @@ trait IMacroResource extends StObject {
     * @param {int} macroId The macro id to get parameters for
     *
     */
-  def getMacroParameters(macroId: Double): js.Any
+  def getMacroParameters(macroId: Double): Any
   
   /**
     * @ngdoc method
@@ -38,13 +38,13 @@ trait IMacroResource extends StObject {
     * @param {Array} macroParamDictionary A dictionary of macro parameters
     *
     */
-  def getMacroResultAsHtmlForEditor(macroId: Double, pageId: Double, macroParamDictionary: js.Array[js.Any]): js.Any
+  def getMacroResultAsHtmlForEditor(macroId: Double, pageId: Double, macroParamDictionary: js.Array[Any]): Any
 }
 object IMacroResource {
   
   inline def apply(
-    getMacroParameters: Double => js.Any,
-    getMacroResultAsHtmlForEditor: (Double, Double, js.Array[js.Any]) => js.Any
+    getMacroParameters: Double => Any,
+    getMacroResultAsHtmlForEditor: (Double, Double, js.Array[Any]) => Any
   ): IMacroResource = {
     val __obj = js.Dynamic.literal(getMacroParameters = js.Any.fromFunction1(getMacroParameters), getMacroResultAsHtmlForEditor = js.Any.fromFunction3(getMacroResultAsHtmlForEditor))
     __obj.asInstanceOf[IMacroResource]
@@ -52,8 +52,8 @@ object IMacroResource {
   
   extension [Self <: IMacroResource](x: Self) {
     
-    inline def setGetMacroParameters(value: Double => js.Any): Self = StObject.set(x, "getMacroParameters", js.Any.fromFunction1(value))
+    inline def setGetMacroParameters(value: Double => Any): Self = StObject.set(x, "getMacroParameters", js.Any.fromFunction1(value))
     
-    inline def setGetMacroResultAsHtmlForEditor(value: (Double, Double, js.Array[js.Any]) => js.Any): Self = StObject.set(x, "getMacroResultAsHtmlForEditor", js.Any.fromFunction3(value))
+    inline def setGetMacroResultAsHtmlForEditor(value: (Double, Double, js.Array[Any]) => Any): Self = StObject.set(x, "getMacroResultAsHtmlForEditor", js.Any.fromFunction3(value))
   }
 }

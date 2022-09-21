@@ -3,7 +3,6 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.JsonObjectResult
 import typings.sharepoint.anon.High
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,8 +49,8 @@ object Administration {
       contentSourceID: Double,
       errorLevel: Double,
       errorID: Double,
-      startDateTime: Date,
-      endDateTime: Date
+      startDateTime: js.Date,
+      endDateTime: js.Date
     ): JsonObjectResult = js.native
   }
   

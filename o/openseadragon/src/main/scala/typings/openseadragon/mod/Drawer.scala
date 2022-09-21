@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "Drawer")
 @js.native
-class Drawer protected () extends StObject {
+open class Drawer protected () extends StObject {
   // element : Element; // Deprecated
   def this(options: DebugGridColor) = this()
   
@@ -35,20 +35,20 @@ class Drawer protected () extends StObject {
   
   def drawTile(
     tile: Tile,
-    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ Any, /* rendered */ Any, Unit],
     // TODO: determine handler parameter types
   useSketch: Boolean
   ): Unit = js.native
   def drawTile(
     tile: Tile,
-    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ Any, /* rendered */ Any, Unit],
     // TODO: determine handler parameter types
   useSketch: Boolean,
     scale: Double
   ): Unit = js.native
   def drawTile(
     tile: Tile,
-    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ Any, /* rendered */ Any, Unit],
     // TODO: determine handler parameter types
   useSketch: Boolean,
     scale: Double,
@@ -56,7 +56,7 @@ class Drawer protected () extends StObject {
   ): Unit = js.native
   def drawTile(
     tile: Tile,
-    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ Any, /* rendered */ Any, Unit],
     // TODO: determine handler parameter types
   useSketch: Boolean,
     scale: Unit,

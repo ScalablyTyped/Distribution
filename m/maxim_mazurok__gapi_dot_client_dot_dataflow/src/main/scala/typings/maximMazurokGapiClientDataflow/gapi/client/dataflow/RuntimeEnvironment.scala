@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RuntimeEnvironment extends StObject {
   
-  /** Additional experiment flags for the job. */
+  /** Additional experiment flags for the job, specified with the `--experiments` option. */
   var additionalExperiments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
@@ -18,7 +18,7 @@ trait RuntimeEnvironment extends StObject {
   var additionalUserLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.RuntimeEnvironment & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.RuntimeEnvironment & TopLevel[Any]
   ] = js.undefined
   
   /** Whether to bypass the safety checks for the job's temporary directory. Use with caution. */
@@ -42,7 +42,7 @@ trait RuntimeEnvironment extends StObject {
   /** Network to which VMs will be assigned. If empty or unspecified, the service will use the network "default". */
   var network: js.UndefOr[String] = js.undefined
   
-  /** The initial number of Google Compute Engine instnaces for the job. */
+  /** The initial number of Google Compute Engine instances for the job. */
   var numWorkers: js.UndefOr[Double] = js.undefined
   
   /** The email address of the service account to run the job as. */
@@ -90,12 +90,12 @@ object RuntimeEnvironment {
     
     inline def setAdditionalExperimentsUndefined: Self = StObject.set(x, "additionalExperiments", js.undefined)
     
-    inline def setAdditionalExperimentsVarargs(value: String*): Self = StObject.set(x, "additionalExperiments", js.Array(value :_*))
+    inline def setAdditionalExperimentsVarargs(value: String*): Self = StObject.set(x, "additionalExperiments", js.Array(value*))
     
     inline def setAdditionalUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.RuntimeEnvironment & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.RuntimeEnvironment & TopLevel[Any]
     ): Self = StObject.set(x, "additionalUserLabels", value.asInstanceOf[js.Any])
     
     inline def setAdditionalUserLabelsUndefined: Self = StObject.set(x, "additionalUserLabels", js.undefined)

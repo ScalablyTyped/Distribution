@@ -12,6 +12,11 @@ trait TransitGatewayMulticastDomainAssociation extends StObject {
   var ResourceId: js.UndefOr[String] = js.undefined
   
   /**
+    *  The ID of the Amazon Web Services account that owns the transit gateway multicast domain association resource.
+    */
+  var ResourceOwnerId: js.UndefOr[String] = js.undefined
+  
+  /**
     * The type of resource, for example a VPC attachment.
     */
   var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
@@ -38,6 +43,10 @@ object TransitGatewayMulticastDomainAssociation {
     inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    
+    inline def setResourceOwnerId(value: String): Self = StObject.set(x, "ResourceOwnerId", value.asInstanceOf[js.Any])
+    
+    inline def setResourceOwnerIdUndefined: Self = StObject.set(x, "ResourceOwnerId", js.undefined)
     
     inline def setResourceType(value: TransitGatewayAttachmentResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     

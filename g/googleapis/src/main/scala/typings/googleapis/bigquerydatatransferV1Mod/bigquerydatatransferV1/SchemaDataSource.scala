@@ -4,77 +4,67 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents data source metadata. Metadata is sufficient to render UI and
-  * request proper OAuth tokens.
-  */
 trait SchemaDataSource extends StObject {
   
   /**
     * Indicates the type of authorization.
     */
-  var authorizationType: js.UndefOr[String] = js.undefined
+  var authorizationType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Data source client id which should be used to receive refresh token.
     */
-  var clientId: js.UndefOr[String] = js.undefined
+  var clientId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specifies whether the data source supports automatic data refresh for the
-    * past few days, and how it&#39;s supported. For some data sources, data
-    * might not be complete until a few days later, so it&#39;s useful to
-    * refresh data automatically.
+    * Specifies whether the data source supports automatic data refresh for the past few days, and how it's supported. For some data sources, data might not be complete until a few days later, so it's useful to refresh data automatically.
     */
-  var dataRefreshType: js.UndefOr[String] = js.undefined
+  var dataRefreshType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Data source id.
     */
-  var dataSourceId: js.UndefOr[String] = js.undefined
+  var dataSourceId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Default data refresh window on days. Only meaningful when
-    * `data_refresh_type` = `SLIDING_WINDOW`.
+    * Default data refresh window on days. Only meaningful when `data_refresh_type` = `SLIDING_WINDOW`.
     */
-  var defaultDataRefreshWindowDays: js.UndefOr[Double] = js.undefined
+  var defaultDataRefreshWindowDays: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Default data transfer schedule. Examples of valid schedules include:
-    * `1st,3rd monday of month 15:30`, `every wed,fri of jan,jun 13:15`, and
-    * `first sunday of quarter 00:00`.
+    * Default data transfer schedule. Examples of valid schedules include: `1st,3rd monday of month 15:30`, `every wed,fri of jan,jun 13:15`, and `first sunday of quarter 00:00`.
     */
-  var defaultSchedule: js.UndefOr[String] = js.undefined
+  var defaultSchedule: js.UndefOr[String | Null] = js.undefined
   
   /**
     * User friendly data source description string.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * User friendly data source name.
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Url for the help document for this data source.
     */
-  var helpUrl: js.UndefOr[String] = js.undefined
+  var helpUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Disables backfilling and manual run scheduling for the data source.
     */
-  var manualRunsDisabled: js.UndefOr[Boolean] = js.undefined
+  var manualRunsDisabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The minimum interval for scheduler to schedule runs.
     */
-  var minimumScheduleInterval: js.UndefOr[String] = js.undefined
+  var minimumScheduleInterval: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Output only. Data source resource name.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Data source parameters.
@@ -82,34 +72,29 @@ trait SchemaDataSource extends StObject {
   var parameters: js.UndefOr[js.Array[SchemaDataSourceParameter]] = js.undefined
   
   /**
-    * Api auth scopes for which refresh token needs to be obtained. These are
-    * scopes needed by a data source to prepare data and ingest them into
-    * BigQuery, e.g., https://www.googleapis.com/auth/bigquery
+    * Api auth scopes for which refresh token needs to be obtained. These are scopes needed by a data source to prepare data and ingest them into BigQuery, e.g., https://www.googleapis.com/auth/bigquery
     */
-  var scopes: js.UndefOr[js.Array[String]] = js.undefined
+  var scopes: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Specifies whether the data source supports a user defined schedule, or
-    * operates on the default schedule. When set to `true`, user can override
-    * default schedule.
+    * Specifies whether the data source supports a user defined schedule, or operates on the default schedule. When set to `true`, user can override default schedule.
     */
-  var supportsCustomSchedule: js.UndefOr[Boolean] = js.undefined
+  var supportsCustomSchedule: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Deprecated. This field has no effect.
     */
-  var supportsMultipleTransfers: js.UndefOr[Boolean] = js.undefined
+  var supportsMultipleTransfers: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Deprecated. This field has no effect.
     */
-  var transferType: js.UndefOr[String] = js.undefined
+  var transferType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The number of seconds to wait for an update from the data source before
-    * the Data Transfer Service marks the transfer as FAILED.
+    * The number of seconds to wait for an update from the data source before the Data Transfer Service marks the transfer as FAILED.
     */
-  var updateDeadlineSeconds: js.UndefOr[Double] = js.undefined
+  var updateDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaDataSource {
   
@@ -122,49 +107,73 @@ object SchemaDataSource {
     
     inline def setAuthorizationType(value: String): Self = StObject.set(x, "authorizationType", value.asInstanceOf[js.Any])
     
+    inline def setAuthorizationTypeNull: Self = StObject.set(x, "authorizationType", null)
+    
     inline def setAuthorizationTypeUndefined: Self = StObject.set(x, "authorizationType", js.undefined)
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    
+    inline def setClientIdNull: Self = StObject.set(x, "clientId", null)
     
     inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     inline def setDataRefreshType(value: String): Self = StObject.set(x, "dataRefreshType", value.asInstanceOf[js.Any])
     
+    inline def setDataRefreshTypeNull: Self = StObject.set(x, "dataRefreshType", null)
+    
     inline def setDataRefreshTypeUndefined: Self = StObject.set(x, "dataRefreshType", js.undefined)
     
     inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceIdNull: Self = StObject.set(x, "dataSourceId", null)
     
     inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
     inline def setDefaultDataRefreshWindowDays(value: Double): Self = StObject.set(x, "defaultDataRefreshWindowDays", value.asInstanceOf[js.Any])
     
+    inline def setDefaultDataRefreshWindowDaysNull: Self = StObject.set(x, "defaultDataRefreshWindowDays", null)
+    
     inline def setDefaultDataRefreshWindowDaysUndefined: Self = StObject.set(x, "defaultDataRefreshWindowDays", js.undefined)
     
     inline def setDefaultSchedule(value: String): Self = StObject.set(x, "defaultSchedule", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultScheduleNull: Self = StObject.set(x, "defaultSchedule", null)
     
     inline def setDefaultScheduleUndefined: Self = StObject.set(x, "defaultSchedule", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
     
+    inline def setHelpUrlNull: Self = StObject.set(x, "helpUrl", null)
+    
     inline def setHelpUrlUndefined: Self = StObject.set(x, "helpUrl", js.undefined)
     
     inline def setManualRunsDisabled(value: Boolean): Self = StObject.set(x, "manualRunsDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setManualRunsDisabledNull: Self = StObject.set(x, "manualRunsDisabled", null)
     
     inline def setManualRunsDisabledUndefined: Self = StObject.set(x, "manualRunsDisabled", js.undefined)
     
     inline def setMinimumScheduleInterval(value: String): Self = StObject.set(x, "minimumScheduleInterval", value.asInstanceOf[js.Any])
     
+    inline def setMinimumScheduleIntervalNull: Self = StObject.set(x, "minimumScheduleInterval", null)
+    
     inline def setMinimumScheduleIntervalUndefined: Self = StObject.set(x, "minimumScheduleInterval", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -172,27 +181,37 @@ object SchemaDataSource {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: SchemaDataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SchemaDataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
+    inline def setScopesNull: Self = StObject.set(x, "scopes", null)
+    
     inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     
     inline def setSupportsCustomSchedule(value: Boolean): Self = StObject.set(x, "supportsCustomSchedule", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsCustomScheduleNull: Self = StObject.set(x, "supportsCustomSchedule", null)
     
     inline def setSupportsCustomScheduleUndefined: Self = StObject.set(x, "supportsCustomSchedule", js.undefined)
     
     inline def setSupportsMultipleTransfers(value: Boolean): Self = StObject.set(x, "supportsMultipleTransfers", value.asInstanceOf[js.Any])
     
+    inline def setSupportsMultipleTransfersNull: Self = StObject.set(x, "supportsMultipleTransfers", null)
+    
     inline def setSupportsMultipleTransfersUndefined: Self = StObject.set(x, "supportsMultipleTransfers", js.undefined)
     
     inline def setTransferType(value: String): Self = StObject.set(x, "transferType", value.asInstanceOf[js.Any])
     
+    inline def setTransferTypeNull: Self = StObject.set(x, "transferType", null)
+    
     inline def setTransferTypeUndefined: Self = StObject.set(x, "transferType", js.undefined)
     
     inline def setUpdateDeadlineSeconds(value: Double): Self = StObject.set(x, "updateDeadlineSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateDeadlineSecondsNull: Self = StObject.set(x, "updateDeadlineSeconds", null)
     
     inline def setUpdateDeadlineSecondsUndefined: Self = StObject.set(x, "updateDeadlineSeconds", js.undefined)
   }

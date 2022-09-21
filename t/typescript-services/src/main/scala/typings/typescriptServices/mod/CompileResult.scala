@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "CompileResult")
 @js.native
-class CompileResult ()
+open class CompileResult ()
   extends StObject
      with typings.typescriptServices.TypeScript.CompileResult {
   

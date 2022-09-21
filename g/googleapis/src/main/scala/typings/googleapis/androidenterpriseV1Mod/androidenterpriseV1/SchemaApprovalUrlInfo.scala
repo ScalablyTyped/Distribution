@@ -4,22 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information on an approval URL.
-  */
 trait SchemaApprovalUrlInfo extends StObject {
   
   /**
-    * A URL that displays a product&#39;s permissions and that can also be used
-    * to approve the product with the Products.approve call.
+    * A URL that displays a product's permissions and that can also be used to approve the product with the Products.approve call.
     */
-  var approvalUrl: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#approvalUrlInfo&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
+  var approvalUrl: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaApprovalUrlInfo {
   
@@ -32,10 +22,8 @@ object SchemaApprovalUrlInfo {
     
     inline def setApprovalUrl(value: String): Self = StObject.set(x, "approvalUrl", value.asInstanceOf[js.Any])
     
+    inline def setApprovalUrlNull: Self = StObject.set(x, "approvalUrl", null)
+    
     inline def setApprovalUrlUndefined: Self = StObject.set(x, "approvalUrl", js.undefined)
-    
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

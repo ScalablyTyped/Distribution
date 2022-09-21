@@ -14,7 +14,7 @@ trait CheckBox extends StObject {
   
   var Default: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Size: Double
   
@@ -32,7 +32,7 @@ object CheckBox {
     AutoSize: Boolean,
     Creator: Double,
     Default: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Size: Double,
     Valid: Boolean,
     Value: Boolean,
@@ -53,7 +53,7 @@ object CheckBox {
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     

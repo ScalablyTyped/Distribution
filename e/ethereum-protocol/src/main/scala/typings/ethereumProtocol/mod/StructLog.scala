@@ -54,7 +54,7 @@ object StructLog {
     
     inline def setMemory(value: js.Array[String]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    inline def setMemoryVarargs(value: String*): Self = StObject.set(x, "memory", js.Array(value :_*))
+    inline def setMemoryVarargs(value: String*): Self = StObject.set(x, "memory", js.Array(value*))
     
     inline def setOp(value: OpCode): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object StructLog {
     
     inline def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
+    inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value*))
     
     inline def setStorage(value: StringDictionary[String]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }

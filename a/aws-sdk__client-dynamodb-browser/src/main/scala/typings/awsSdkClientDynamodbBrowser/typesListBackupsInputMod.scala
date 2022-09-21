@@ -5,7 +5,6 @@ import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.SY
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.USER
 import typings.awsSdkClientDynamodbBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object typesListBackupsInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -61,12 +60,12 @@ object typesListBackupsInputMod {
     /**
       * <p>Only backups created after this time are listed. <code>TimeRangeLowerBound</code> is inclusive.</p>
       */
-    var TimeRangeLowerBound: js.UndefOr[Date | String | Double] = js.undefined
+    var TimeRangeLowerBound: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Only backups created before this time are listed. <code>TimeRangeUpperBound</code> is exclusive. </p>
       */
-    var TimeRangeUpperBound: js.UndefOr[Date | String | Double] = js.undefined
+    var TimeRangeUpperBound: js.UndefOr[js.Date | String | Double] = js.undefined
   }
   object ListBackupsInput {
     
@@ -82,7 +81,7 @@ object typesListBackupsInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -107,11 +106,11 @@ object typesListBackupsInputMod {
       
       inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
       
-      inline def setTimeRangeLowerBound(value: Date | String | Double): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
+      inline def setTimeRangeLowerBound(value: js.Date | String | Double): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
       
       inline def setTimeRangeLowerBoundUndefined: Self = StObject.set(x, "TimeRangeLowerBound", js.undefined)
       
-      inline def setTimeRangeUpperBound(value: Date | String | Double): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
+      inline def setTimeRangeUpperBound(value: js.Date | String | Double): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
       
       inline def setTimeRangeUpperBoundUndefined: Self = StObject.set(x, "TimeRangeUpperBound", js.undefined)
     }

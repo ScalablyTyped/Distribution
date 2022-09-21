@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parsestringMod {
   
-  @JSImport("rrule/dist/esm/src/parsestring", JSImport.Namespace)
+  @JSImport("rrule/dist/esm/parsestring", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

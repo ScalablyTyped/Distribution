@@ -7,26 +7,25 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.HtmlHTMLAttributes
 import typings.react.mod.LinkHTMLAttributes
 import typings.react.mod.MetaHTMLAttributes
+import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.std.HTMLBodyElement
 import typings.std.HTMLHtmlElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLScriptElement
 import typings.std.HTMLStyleElement
+import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-helmet", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   /* was `typeof Helmet` */
   @JSImport("react-helmet", JSImport.Default)
   @js.native
-  class default () extends StObject
+  open class default () extends StObject
   /* was `typeof Helmet` */
   object default {
     
@@ -41,7 +40,7 @@ object mod {
     inline def canUseDOM_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canUseDOM")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def peek(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[HelmetData]
+    inline def peek(): HelmetPropsToState = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[HelmetPropsToState]
     
     /* static member */
     inline def renderStatic(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")().asInstanceOf[HelmetData]
@@ -53,8 +52,8 @@ object mod {
   /* was `typeof Helmet` */
   @JSImport("react-helmet", "Helmet")
   @js.native
-  class Helmet ()
-    extends Component[HelmetProps, js.Object, js.Any]
+  open class Helmet ()
+    extends Component[HelmetProps, js.Object, Any]
   /* was `typeof Helmet` */
   object Helmet {
     
@@ -69,7 +68,7 @@ object mod {
     inline def canUseDOM_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canUseDOM")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def peek(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[HelmetData]
+    inline def peek(): HelmetPropsToState = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[HelmetPropsToState]
     
     /* static member */
     inline def renderStatic(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")().asInstanceOf[HelmetData]
@@ -81,12 +80,6 @@ object mod {
   @JSImport("react-helmet", "canUseDOM")
   @js.native
   val canUseDOM: Boolean = js.native
-  
-  inline def peek(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[HelmetData]
-  
-  inline def renderStatic(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")().asInstanceOf[HelmetData]
-  
-  inline def rewind(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("rewind")().asInstanceOf[HelmetData]
   
   type BodyProps = (DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]) & OtherElementAttributes
   
@@ -156,24 +149,23 @@ object mod {
   
   trait HelmetDatum extends StObject {
     
-    def toComponent(): Component[js.Any, js.Object, js.Any]
+    def toComponent(): ReactElement
   }
   object HelmetDatum {
     
-    inline def apply(toComponent: () => Component[js.Any, js.Object, js.Any]): HelmetDatum = {
+    inline def apply(toComponent: () => ReactElement): HelmetDatum = {
       val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent))
       __obj.asInstanceOf[HelmetDatum]
     }
     
     extension [Self <: HelmetDatum](x: Self) {
       
-      inline def setToComponent(value: () => Component[js.Any, js.Object, js.Any]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
+      inline def setToComponent(value: () => ReactElement): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
     }
   }
   
   /* was `typeof Helmet` */
-  @js.native
-  trait HelmetExport extends StObject
+  type HelmetExport = Helmet
   
   trait HelmetHTMLBodyDatum extends StObject {
     
@@ -213,9 +205,11 @@ object mod {
     
     var async: js.UndefOr[Boolean] = js.undefined
     
-    var base: js.UndefOr[js.Any] = js.undefined
+    var base: js.UndefOr[Any] = js.undefined
     
     var bodyAttributes: js.UndefOr[BodyProps] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var defaultTitle: js.UndefOr[String] = js.undefined
     
@@ -229,15 +223,15 @@ object mod {
     
     var meta: js.UndefOr[js.Array[MetaProps]] = js.undefined
     
-    var noscript: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var noscript: js.UndefOr[js.Array[Any]] = js.undefined
     
     var onChangeClientState: js.UndefOr[
-        js.Function3[/* newState */ js.Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags, Unit]
+        js.Function3[/* newState */ Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags, Unit]
       ] = js.undefined
     
-    var script: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var script: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var style: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var style: js.UndefOr[js.Array[Any]] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
@@ -258,13 +252,17 @@ object mod {
       
       inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      inline def setBase(value: js.Any): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Any): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
       inline def setBodyAttributes(value: BodyProps): Self = StObject.set(x, "bodyAttributes", value.asInstanceOf[js.Any])
       
       inline def setBodyAttributesUndefined: Self = StObject.set(x, "bodyAttributes", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDefaultTitle(value: String): Self = StObject.set(x, "defaultTitle", value.asInstanceOf[js.Any])
       
@@ -286,35 +284,35 @@ object mod {
       
       inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      inline def setLinkVarargs(value: LinkProps*): Self = StObject.set(x, "link", js.Array(value :_*))
+      inline def setLinkVarargs(value: LinkProps*): Self = StObject.set(x, "link", js.Array(value*))
       
       inline def setMeta(value: js.Array[MetaProps]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      inline def setMetaVarargs(value: MetaProps*): Self = StObject.set(x, "meta", js.Array(value :_*))
+      inline def setMetaVarargs(value: MetaProps*): Self = StObject.set(x, "meta", js.Array(value*))
       
-      inline def setNoscript(value: js.Array[js.Any]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+      inline def setNoscript(value: js.Array[Any]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
       
       inline def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
       
-      inline def setNoscriptVarargs(value: js.Any*): Self = StObject.set(x, "noscript", js.Array(value :_*))
+      inline def setNoscriptVarargs(value: Any*): Self = StObject.set(x, "noscript", js.Array(value*))
       
-      inline def setOnChangeClientState(value: (/* newState */ js.Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags) => Unit): Self = StObject.set(x, "onChangeClientState", js.Any.fromFunction3(value))
+      inline def setOnChangeClientState(value: (/* newState */ Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags) => Unit): Self = StObject.set(x, "onChangeClientState", js.Any.fromFunction3(value))
       
       inline def setOnChangeClientStateUndefined: Self = StObject.set(x, "onChangeClientState", js.undefined)
       
-      inline def setScript(value: js.Array[js.Any]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: js.Array[Any]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
       inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
       
-      inline def setScriptVarargs(value: js.Any*): Self = StObject.set(x, "script", js.Array(value :_*))
+      inline def setScriptVarargs(value: Any*): Self = StObject.set(x, "script", js.Array(value*))
       
-      inline def setStyle(value: js.Array[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Array[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: js.Any*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Any*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -330,15 +328,115 @@ object mod {
     }
   }
   
-  trait HelmetTags extends StObject {
+  /* Inlined react-helmet.react-helmet.HelmetTags & std.Pick<react-helmet.react-helmet.HelmetProps, 'bodyAttributes' | 'defer' | 'htmlAttributes' | 'onChangeClientState' | 'title' | 'titleAttributes'> & {  encode :std.Required<react-helmet.react-helmet.HelmetProps['encodeSpecialCharacters']>} */
+  trait HelmetPropsToState extends StObject {
     
-    var baseTag: js.Array[js.Any]
+    var baseTag: js.Array[Any]
+    
+    var bodyAttributes: js.UndefOr[BodyProps] = js.undefined
+    
+    var defer: js.UndefOr[Boolean] = js.undefined
+    
+    var encode: Required[js.UndefOr[Boolean]]
+    
+    var htmlAttributes: js.UndefOr[HtmlProps] = js.undefined
     
     var linkTags: js.Array[HTMLLinkElement]
     
     var metaTags: js.Array[HTMLMetaElement]
     
-    var noscriptTags: js.Array[js.Any]
+    var noscriptTags: js.Array[Any]
+    
+    var onChangeClientState: js.UndefOr[
+        js.Function3[/* newState */ Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags, Unit]
+      ] = js.undefined
+    
+    var scriptTags: js.Array[HTMLScriptElement]
+    
+    var styleTags: js.Array[HTMLStyleElement]
+    
+    var title: js.UndefOr[String] = js.undefined
+    
+    var titleAttributes: js.UndefOr[js.Object] = js.undefined
+  }
+  object HelmetPropsToState {
+    
+    inline def apply(
+      baseTag: js.Array[Any],
+      encode: Required[js.UndefOr[Boolean]],
+      linkTags: js.Array[HTMLLinkElement],
+      metaTags: js.Array[HTMLMetaElement],
+      noscriptTags: js.Array[Any],
+      scriptTags: js.Array[HTMLScriptElement],
+      styleTags: js.Array[HTMLStyleElement]
+    ): HelmetPropsToState = {
+      val __obj = js.Dynamic.literal(baseTag = baseTag.asInstanceOf[js.Any], encode = encode.asInstanceOf[js.Any], linkTags = linkTags.asInstanceOf[js.Any], metaTags = metaTags.asInstanceOf[js.Any], noscriptTags = noscriptTags.asInstanceOf[js.Any], scriptTags = scriptTags.asInstanceOf[js.Any], styleTags = styleTags.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HelmetPropsToState]
+    }
+    
+    extension [Self <: HelmetPropsToState](x: Self) {
+      
+      inline def setBaseTag(value: js.Array[Any]): Self = StObject.set(x, "baseTag", value.asInstanceOf[js.Any])
+      
+      inline def setBaseTagVarargs(value: Any*): Self = StObject.set(x, "baseTag", js.Array(value*))
+      
+      inline def setBodyAttributes(value: BodyProps): Self = StObject.set(x, "bodyAttributes", value.asInstanceOf[js.Any])
+      
+      inline def setBodyAttributesUndefined: Self = StObject.set(x, "bodyAttributes", js.undefined)
+      
+      inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+      
+      inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+      
+      inline def setEncode(value: Required[js.UndefOr[Boolean]]): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      
+      inline def setHtmlAttributes(value: HtmlProps): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      
+      inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
+      
+      inline def setLinkTags(value: js.Array[HTMLLinkElement]): Self = StObject.set(x, "linkTags", value.asInstanceOf[js.Any])
+      
+      inline def setLinkTagsVarargs(value: HTMLLinkElement*): Self = StObject.set(x, "linkTags", js.Array(value*))
+      
+      inline def setMetaTags(value: js.Array[HTMLMetaElement]): Self = StObject.set(x, "metaTags", value.asInstanceOf[js.Any])
+      
+      inline def setMetaTagsVarargs(value: HTMLMetaElement*): Self = StObject.set(x, "metaTags", js.Array(value*))
+      
+      inline def setNoscriptTags(value: js.Array[Any]): Self = StObject.set(x, "noscriptTags", value.asInstanceOf[js.Any])
+      
+      inline def setNoscriptTagsVarargs(value: Any*): Self = StObject.set(x, "noscriptTags", js.Array(value*))
+      
+      inline def setOnChangeClientState(value: (/* newState */ Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags) => Unit): Self = StObject.set(x, "onChangeClientState", js.Any.fromFunction3(value))
+      
+      inline def setOnChangeClientStateUndefined: Self = StObject.set(x, "onChangeClientState", js.undefined)
+      
+      inline def setScriptTags(value: js.Array[HTMLScriptElement]): Self = StObject.set(x, "scriptTags", value.asInstanceOf[js.Any])
+      
+      inline def setScriptTagsVarargs(value: HTMLScriptElement*): Self = StObject.set(x, "scriptTags", js.Array(value*))
+      
+      inline def setStyleTags(value: js.Array[HTMLStyleElement]): Self = StObject.set(x, "styleTags", value.asInstanceOf[js.Any])
+      
+      inline def setStyleTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "styleTags", js.Array(value*))
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleAttributes(value: js.Object): Self = StObject.set(x, "titleAttributes", value.asInstanceOf[js.Any])
+      
+      inline def setTitleAttributesUndefined: Self = StObject.set(x, "titleAttributes", js.undefined)
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    }
+  }
+  
+  trait HelmetTags extends StObject {
+    
+    var baseTag: js.Array[Any]
+    
+    var linkTags: js.Array[HTMLLinkElement]
+    
+    var metaTags: js.Array[HTMLMetaElement]
+    
+    var noscriptTags: js.Array[Any]
     
     var scriptTags: js.Array[HTMLScriptElement]
     
@@ -347,10 +445,10 @@ object mod {
   object HelmetTags {
     
     inline def apply(
-      baseTag: js.Array[js.Any],
+      baseTag: js.Array[Any],
       linkTags: js.Array[HTMLLinkElement],
       metaTags: js.Array[HTMLMetaElement],
-      noscriptTags: js.Array[js.Any],
+      noscriptTags: js.Array[Any],
       scriptTags: js.Array[HTMLScriptElement],
       styleTags: js.Array[HTMLStyleElement]
     ): HelmetTags = {
@@ -360,29 +458,29 @@ object mod {
     
     extension [Self <: HelmetTags](x: Self) {
       
-      inline def setBaseTag(value: js.Array[js.Any]): Self = StObject.set(x, "baseTag", value.asInstanceOf[js.Any])
+      inline def setBaseTag(value: js.Array[Any]): Self = StObject.set(x, "baseTag", value.asInstanceOf[js.Any])
       
-      inline def setBaseTagVarargs(value: js.Any*): Self = StObject.set(x, "baseTag", js.Array(value :_*))
+      inline def setBaseTagVarargs(value: Any*): Self = StObject.set(x, "baseTag", js.Array(value*))
       
       inline def setLinkTags(value: js.Array[HTMLLinkElement]): Self = StObject.set(x, "linkTags", value.asInstanceOf[js.Any])
       
-      inline def setLinkTagsVarargs(value: HTMLLinkElement*): Self = StObject.set(x, "linkTags", js.Array(value :_*))
+      inline def setLinkTagsVarargs(value: HTMLLinkElement*): Self = StObject.set(x, "linkTags", js.Array(value*))
       
       inline def setMetaTags(value: js.Array[HTMLMetaElement]): Self = StObject.set(x, "metaTags", value.asInstanceOf[js.Any])
       
-      inline def setMetaTagsVarargs(value: HTMLMetaElement*): Self = StObject.set(x, "metaTags", js.Array(value :_*))
+      inline def setMetaTagsVarargs(value: HTMLMetaElement*): Self = StObject.set(x, "metaTags", js.Array(value*))
       
-      inline def setNoscriptTags(value: js.Array[js.Any]): Self = StObject.set(x, "noscriptTags", value.asInstanceOf[js.Any])
+      inline def setNoscriptTags(value: js.Array[Any]): Self = StObject.set(x, "noscriptTags", value.asInstanceOf[js.Any])
       
-      inline def setNoscriptTagsVarargs(value: js.Any*): Self = StObject.set(x, "noscriptTags", js.Array(value :_*))
+      inline def setNoscriptTagsVarargs(value: Any*): Self = StObject.set(x, "noscriptTags", js.Array(value*))
       
       inline def setScriptTags(value: js.Array[HTMLScriptElement]): Self = StObject.set(x, "scriptTags", value.asInstanceOf[js.Any])
       
-      inline def setScriptTagsVarargs(value: HTMLScriptElement*): Self = StObject.set(x, "scriptTags", js.Array(value :_*))
+      inline def setScriptTagsVarargs(value: HTMLScriptElement*): Self = StObject.set(x, "scriptTags", js.Array(value*))
       
       inline def setStyleTags(value: js.Array[HTMLStyleElement]): Self = StObject.set(x, "styleTags", value.asInstanceOf[js.Any])
       
-      inline def setStyleTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "styleTags", js.Array(value :_*))
+      inline def setStyleTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "styleTags", js.Array(value*))
     }
   }
   

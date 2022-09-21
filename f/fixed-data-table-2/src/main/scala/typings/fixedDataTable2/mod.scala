@@ -9,6 +9,7 @@ import typings.react.mod.ClassAttributes
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
@@ -19,50 +20,50 @@ object mod {
   
   @JSImport("fixed-data-table-2", "Cell")
   @js.native
-  class Cell protected ()
-    extends Component[CellProps, js.Object, js.Any] {
+  open class Cell protected ()
+    extends Component[CellProps, js.Object, Any] {
     def this(props: CellProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CellProps, context: js.Any) = this()
+    def this(props: CellProps, context: Any) = this()
   }
   
   @JSImport("fixed-data-table-2", "Column")
   @js.native
-  class Column protected ()
-    extends Component[ColumnProps, js.Object, js.Any] {
+  open class Column protected ()
+    extends Component[ColumnProps, js.Object, Any] {
     def this(props: ColumnProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ColumnProps, context: js.Any) = this()
+    def this(props: ColumnProps, context: Any) = this()
   }
   
   @JSImport("fixed-data-table-2", "ColumnGroup")
   @js.native
-  class ColumnGroup protected ()
-    extends Component[ColumnGroupProps, js.Object, js.Any] {
+  open class ColumnGroup protected ()
+    extends Component[ColumnGroupProps, js.Object, Any] {
     def this(props: ColumnGroupProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ColumnGroupProps, context: js.Any) = this()
+    def this(props: ColumnGroupProps, context: Any) = this()
   }
   
   @JSImport("fixed-data-table-2", "Table")
   @js.native
-  class Table protected ()
-    extends Component[TableProps, js.Object, js.Any] {
+  open class Table protected ()
+    extends Component[TableProps, js.Object, Any] {
     def this(props: TableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TableProps, context: js.Any) = this()
+    def this(props: TableProps, context: Any) = this()
   }
   
   trait CellProps
@@ -175,6 +176,13 @@ object mod {
     var align: js.UndefOr[left | center | right] = js.undefined
     
     /**
+      * Extra class for cells in column
+      */
+    var cellClassName: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    /**
       * Controls if the column group is fixed when scrolling in the X axis.
       *
       * defaultValue: false
@@ -216,6 +224,14 @@ object mod {
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      
+      inline def setCellClassName(value: String): Self = StObject.set(x, "cellClassName", value.asInstanceOf[js.Any])
+      
+      inline def setCellClassNameUndefined: Self = StObject.set(x, "cellClassName", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
@@ -306,6 +322,11 @@ object mod {
       * first argument.
       */
     var cell: js.UndefOr[ElementOrFunc[ColumnCellProps]] = js.undefined
+    
+    /**
+      * Extra class for cells in column
+      */
+    var cellClassName: js.UndefOr[String] = js.undefined
     
     /**
       * This is used to uniquely identify the column, and is not required unless
@@ -438,6 +459,10 @@ object mod {
       inline def setAllowCellsRecyclingUndefined: Self = StObject.set(x, "allowCellsRecycling", js.undefined)
       
       inline def setCell(value: ElementOrFunc[ColumnCellProps]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      
+      inline def setCellClassName(value: String): Self = StObject.set(x, "cellClassName", value.asInstanceOf[js.Any])
+      
+      inline def setCellClassNameUndefined: Self = StObject.set(x, "cellClassName", js.undefined)
       
       inline def setCellFunction1(value: ColumnCellProps => String | ReactElement): Self = StObject.set(x, "cell", js.Any.fromFunction1(value))
       
@@ -587,6 +612,8 @@ object mod {
       */
     var cellGroupWrapperHeight: js.UndefOr[Double] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Class name to be passed into parent container
       */
@@ -688,6 +715,11 @@ object mod {
       * Callback that is called when a row is clicked.
       */
     var onRowClick: js.UndefOr[TableRowEventHandler] = js.undefined
+    
+    /**
+      * Callback that is called when a contextual-menu event happens on a row.
+      */
+    var onRowContextMenu: js.UndefOr[TableRowEventHandler] = js.undefined
     
     /**
       * Callback that is called when a row is double clicked.
@@ -890,6 +922,10 @@ object mod {
       
       inline def setCellGroupWrapperHeightUndefined: Self = StObject.set(x, "cellGroupWrapperHeight", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -947,6 +983,10 @@ object mod {
       inline def setOnRowClick(value: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2(value))
       
       inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
+      
+      inline def setOnRowContextMenu(value: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onRowContextMenu", js.Any.fromFunction2(value))
+      
+      inline def setOnRowContextMenuUndefined: Self = StObject.set(x, "onRowContextMenu", js.undefined)
       
       inline def setOnRowDoubleClick(value: (/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction2(value))
       

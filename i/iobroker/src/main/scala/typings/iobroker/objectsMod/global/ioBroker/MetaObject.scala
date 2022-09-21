@@ -6,10 +6,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MetaObject
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.iobroker.objectsMod.global.ioBroker._ObjectIdToObjectType because Already inherited */ trait MetaObject
   extends StObject
      with BaseObject
-     with AnyObject {
+     with AnyObject
+     with _InferGetObjectViewItemType[Any, Any] {
   
   @JSName("common")
   var common_MetaObject: MetaCommon
@@ -19,7 +21,7 @@ trait MetaObject
 }
 object MetaObject {
   
-  inline def apply(_id: String, common: MetaCommon, native: Record[String, js.Any]): MetaObject = {
+  inline def apply(_id: String, common: MetaCommon, native: Record[String, Any]): MetaObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("meta")
     __obj.asInstanceOf[MetaObject]

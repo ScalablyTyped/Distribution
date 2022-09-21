@@ -25,7 +25,7 @@ object GooglePrivacyDlpV2ListInspectTemplatesResponse {
     
     inline def setInspectTemplatesUndefined: Self = StObject.set(x, "inspectTemplates", js.undefined)
     
-    inline def setInspectTemplatesVarargs(value: GooglePrivacyDlpV2InspectTemplate*): Self = StObject.set(x, "inspectTemplates", js.Array(value :_*))
+    inline def setInspectTemplatesVarargs(value: GooglePrivacyDlpV2InspectTemplate*): Self = StObject.set(x, "inspectTemplates", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

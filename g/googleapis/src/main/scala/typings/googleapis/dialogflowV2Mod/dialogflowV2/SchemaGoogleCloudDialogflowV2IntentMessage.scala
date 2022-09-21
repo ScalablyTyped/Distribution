@@ -5,15 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Corresponds to the `Response` field in the Dialogflow console.
-  */
 trait SchemaGoogleCloudDialogflowV2IntentMessage extends StObject {
   
   /**
     * The basic card response for Actions on Google.
     */
   var basicCard: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageBasicCard] = js.undefined
+  
+  /**
+    * Browse carousel card for Actions on Google.
+    */
+  var browseCarouselCard: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageBrowseCarouselCard] = js.undefined
   
   /**
     * The card response.
@@ -41,16 +43,19 @@ trait SchemaGoogleCloudDialogflowV2IntentMessage extends StObject {
   var listSelect: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageListSelect] = js.undefined
   
   /**
-    * Returns a response containing a custom, platform-specific payload. See
-    * the Intent.Message.Platform type for a description of the structure that
-    * may be required for your platform.
+    * The media content card for Actions on Google.
     */
-  var payload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var mediaContent: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageMediaContent] = js.undefined
+  
+  /**
+    * A custom platform-specific response.
+    */
+  var payload: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
   
   /**
     * Optional. The platform that this message is intended for.
     */
-  var platform: js.UndefOr[String] = js.undefined
+  var platform: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The quick replies response.
@@ -66,6 +71,11 @@ trait SchemaGoogleCloudDialogflowV2IntentMessage extends StObject {
     * The suggestion chips for Actions on Google.
     */
   var suggestions: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageSuggestions] = js.undefined
+  
+  /**
+    * Table card for Actions on Google.
+    */
+  var tableCard: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageTableCard] = js.undefined
   
   /**
     * The text response.
@@ -84,6 +94,10 @@ object SchemaGoogleCloudDialogflowV2IntentMessage {
     inline def setBasicCard(value: SchemaGoogleCloudDialogflowV2IntentMessageBasicCard): Self = StObject.set(x, "basicCard", value.asInstanceOf[js.Any])
     
     inline def setBasicCardUndefined: Self = StObject.set(x, "basicCard", js.undefined)
+    
+    inline def setBrowseCarouselCard(value: SchemaGoogleCloudDialogflowV2IntentMessageBrowseCarouselCard): Self = StObject.set(x, "browseCarouselCard", value.asInstanceOf[js.Any])
+    
+    inline def setBrowseCarouselCardUndefined: Self = StObject.set(x, "browseCarouselCard", js.undefined)
     
     inline def setCard(value: SchemaGoogleCloudDialogflowV2IntentMessageCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
@@ -105,11 +119,19 @@ object SchemaGoogleCloudDialogflowV2IntentMessage {
     
     inline def setListSelectUndefined: Self = StObject.set(x, "listSelect", js.undefined)
     
-    inline def setPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setMediaContent(value: SchemaGoogleCloudDialogflowV2IntentMessageMediaContent): Self = StObject.set(x, "mediaContent", value.asInstanceOf[js.Any])
+    
+    inline def setMediaContentUndefined: Self = StObject.set(x, "mediaContent", js.undefined)
+    
+    inline def setPayload(value: StringDictionary[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadNull: Self = StObject.set(x, "payload", null)
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformNull: Self = StObject.set(x, "platform", null)
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
@@ -124,6 +146,10 @@ object SchemaGoogleCloudDialogflowV2IntentMessage {
     inline def setSuggestions(value: SchemaGoogleCloudDialogflowV2IntentMessageSuggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+    
+    inline def setTableCard(value: SchemaGoogleCloudDialogflowV2IntentMessageTableCard): Self = StObject.set(x, "tableCard", value.asInstanceOf[js.Any])
+    
+    inline def setTableCardUndefined: Self = StObject.set(x, "tableCard", js.undefined)
     
     inline def setText(value: SchemaGoogleCloudDialogflowV2IntentMessageText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

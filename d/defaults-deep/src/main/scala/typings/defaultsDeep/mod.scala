@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(objs: Obj*): Obj = ^.asInstanceOf[js.Dynamic].apply(objs.asInstanceOf[js.Any]).asInstanceOf[Obj]
+  inline def apply(objs: Obj*): Obj = ^.asInstanceOf[js.Dynamic].apply(objs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Obj]
   
   @JSImport("defaults-deep", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  type Obj = StringDictionary[js.Any]
+  type Obj = StringDictionary[Any]
 }

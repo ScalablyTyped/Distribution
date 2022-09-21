@@ -10,7 +10,7 @@ trait Connector
   extends StObject
      with Observable {
   
-  var connections: js.Any = js.native
+  var connections: Any = js.native
   
   var options: ConnectorOptions = js.native
   

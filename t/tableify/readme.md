@@ -10,10 +10,10 @@ Create HTML tables from Javascript Objects
 | ------------------ | :-------------: |
 | Full name          | tableify |
 | Keywords           | object, html, table |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 207273 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19986.333333333332 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/wankdanker/node-tableify)

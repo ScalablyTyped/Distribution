@@ -1320,7 +1320,7 @@ trait XELib extends StObject {
     */
   def ResolveElements[P /* <: StringDictionary[String] */](id: Handle, paths: P): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: xelib.xelib.Zeroable<xelib.xelib.ElementHandle>}
-    */ typings.xelib.xelibStrings.XELib & TopLevel[js.Any] = js.native
+    */ typings.xelib.xelibStrings.XELib & TopLevel[Any] = js.native
   
   /**
     * Raises an exception if any element fails to resolve.
@@ -1329,7 +1329,7 @@ trait XELib extends StObject {
     */
   def ResolveElementsEx[P /* <: StringDictionary[String] */](id: Handle, paths: P): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: xelib.xelib.ElementHandle}
-    */ typings.xelib.xelibStrings.XELib & TopLevel[js.Any] = js.native
+    */ typings.xelib.xelibStrings.XELib & TopLevel[Any] = js.native
   
   /**
     * Rotates record id by vector degrees.
@@ -1550,12 +1550,12 @@ trait XELib extends StObject {
   /**
     * @see ArchiveType
     */
-  var archiveTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArchiveType */ js.Any = js.native
+  var archiveTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArchiveType */ Any = js.native
   
   /**
     * @see ConflictAll
     */
-  var conflictAll: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConflictAll */ js.Any = js.native
+  var conflictAll: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConflictAll */ Any = js.native
   
   /**
     * Record functions
@@ -1564,12 +1564,12 @@ trait XELib extends StObject {
   /**
     * @see ConflictThis
     */
-  var conflictThis: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConflictThis */ js.Any = js.native
+  var conflictThis: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConflictThis */ Any = js.native
   
   /**
     * @see DefType
     */
-  var defTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DefType */ js.Any = js.native
+  var defTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DefType */ Any = js.native
   
   /**
     * Element functions
@@ -1578,12 +1578,12 @@ trait XELib extends StObject {
   /**
     * @see ElementType
     */
-  var elementTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ js.Any = js.native
+  var elementTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ Any = js.native
   
   /**
     * @see GameMode
     */
-  var gameModes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GameMode */ js.Any = js.native
+  var gameModes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GameMode */ Any = js.native
   
   /**
     * Array of game objects corresponding to each supported game mode.
@@ -1597,12 +1597,12 @@ trait XELib extends StObject {
   /**
     * @see LoaderState
     */
-  var loaderStates: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LoaderState */ js.Any = js.native
+  var loaderStates: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LoaderState */ Any = js.native
   
   /**
     * @see SmashType
     */
-  var smashTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SmashType */ js.Any = js.native
+  var smashTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SmashType */ Any = js.native
   
   /**
     * Meta functions
@@ -1611,10 +1611,10 @@ trait XELib extends StObject {
   /**
     * @see SortMode
     */
-  var sortBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortMode */ js.Any = js.native
+  var sortBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortMode */ Any = js.native
   
   /**
     * @see ValueType
     */
-  var valueTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueType */ js.Any = js.native
+  var valueTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueType */ Any = js.native
 }

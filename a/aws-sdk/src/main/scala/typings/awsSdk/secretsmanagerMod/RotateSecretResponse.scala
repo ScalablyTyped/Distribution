@@ -12,12 +12,12 @@ trait RotateSecretResponse extends StObject {
   var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
-    * The friendly name of the secret.
+    * The name of the secret.
     */
   var Name: js.UndefOr[SecretNameType] = js.undefined
   
   /**
-    * The ID of the new version of the secret created by the rotation started by this request.
+    * The ID of the new version of the secret.
     */
   var VersionId: js.UndefOr[SecretVersionIdType] = js.undefined
 }

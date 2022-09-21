@@ -9,18 +9,18 @@ object mod {
   
   @JSImport("slack-winston", "Format")
   @js.native
-  class Format () extends StObject {
+  open class Format () extends StObject {
     def this(opts: js.Object) = this()
     
     var options: js.UndefOr[js.Object] = js.native
     
     def transform(info: TransformableInfo): TransformableInfo | Boolean = js.native
-    def transform(info: TransformableInfo, opts: js.Any): TransformableInfo | Boolean = js.native
+    def transform(info: TransformableInfo, opts: Any): TransformableInfo | Boolean = js.native
   }
   
   @JSImport("slack-winston", "Slack")
   @js.native
-  class Slack () extends StObject {
+  open class Slack () extends StObject {
     def this(options: SlackTransportOptions) = this()
     
     var close: js.UndefOr[js.Function0[Unit]] = js.native
@@ -31,9 +31,9 @@ object mod {
     
     var level: js.UndefOr[String] = js.native
     
-    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.native
+    var log: js.UndefOr[js.Function2[/* info */ Any, /* next */ js.Function0[Unit], Any]] = js.native
     
-    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.native
+    var logv: js.UndefOr[js.Function2[/* info */ Any, /* next */ js.Function0[Unit], Any]] = js.native
     
     var silent: js.UndefOr[Boolean] = js.native
   }
@@ -55,9 +55,9 @@ object mod {
     
     var level: js.UndefOr[String] = js.undefined
     
-    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.undefined
+    var log: js.UndefOr[js.Function2[/* info */ Any, /* next */ js.Function0[Unit], Any]] = js.undefined
     
-    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.undefined
+    var logv: js.UndefOr[js.Function2[/* info */ Any, /* next */ js.Function0[Unit], Any]] = js.undefined
     
     var message: js.UndefOr[String] = js.undefined
     
@@ -104,11 +104,11 @@ object mod {
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      inline def setLog(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (/* info */ Any, /* next */ js.Function0[Unit]) => Any): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      inline def setLogv(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "logv", js.Any.fromFunction2(value))
+      inline def setLogv(value: (/* info */ Any, /* next */ js.Function0[Unit]) => Any): Self = StObject.set(x, "logv", js.Any.fromFunction2(value))
       
       inline def setLogvUndefined: Self = StObject.set(x, "logv", js.undefined)
       
@@ -136,7 +136,7 @@ object mod {
   
   trait TransformableInfo
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var level: String
     

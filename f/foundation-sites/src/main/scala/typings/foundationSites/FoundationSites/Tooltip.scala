@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // https://get.foundation/sites/docs/tooltip.html#javascript-reference
 trait Tooltip extends StObject {
   
-  def destroy(): Unit
-  
   def hide(): Unit
   
   def show(): Unit
@@ -17,14 +15,12 @@ trait Tooltip extends StObject {
 }
 object Tooltip {
   
-  inline def apply(destroy: () => Unit, hide: () => Unit, show: () => Unit, toggle: () => Unit): Tooltip = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
+  inline def apply(hide: () => Unit, show: () => Unit, toggle: () => Unit): Tooltip = {
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[Tooltip]
   }
   
   extension [Self <: Tooltip](x: Self) {
-    
-    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

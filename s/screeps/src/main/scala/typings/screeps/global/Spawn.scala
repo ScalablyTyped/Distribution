@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Spawn")
 @js.native
-class Spawn protected ()
+open class Spawn protected ()
   extends StObject
      with typings.screeps.StructureSpawn {
   def this(id: Id[typings.screeps.StructureSpawn]) = this()
@@ -96,16 +96,16 @@ object Spawn extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Spawn.Spawning")
   @js.native
-  class Spawning protected ()
+  open class Spawning protected ()
     extends StObject
        with typings.screeps.Spawning {
-    def this(id: Id[typings.screeps.Spawning]) = this()
+    def this(id: Id[typings.screeps.StructureSpawn]) = this()
     
     /**
       * Cancel spawning immediately. Energy spent on spawning is not returned.
       */
     /* CompleteClass */
-    override def cancel(): ScreepsReturnCode & (typings.screeps.OK | typings.screeps.ERR_NOT_OWNER) = js.native
+    override def cancel(): (typings.screeps.OK & ScreepsReturnCode) | (typings.screeps.ERR_NOT_OWNER & ScreepsReturnCode) = js.native
     
     /**
       * An array with the spawn directions
@@ -137,7 +137,7 @@ object Spawn extends Shortcut {
       * @param directions An array with the spawn directions
       */
     /* CompleteClass */
-    override def setDirections(directions: js.Array[DirectionConstant]): ScreepsReturnCode & (typings.screeps.OK | typings.screeps.ERR_NOT_OWNER | typings.screeps.ERR_INVALID_ARGS) = js.native
+    override def setDirections(directions: js.Array[DirectionConstant]): (typings.screeps.OK & ScreepsReturnCode) | (typings.screeps.ERR_NOT_OWNER & ScreepsReturnCode) | (typings.screeps.ERR_INVALID_ARGS & ScreepsReturnCode) = js.native
     
     /**
       * A link to the spawn

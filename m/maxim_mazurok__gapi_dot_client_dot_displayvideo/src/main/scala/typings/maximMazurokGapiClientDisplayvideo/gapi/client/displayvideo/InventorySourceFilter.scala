@@ -25,6 +25,6 @@ object InventorySourceFilter {
     
     inline def setInventorySourceIdsUndefined: Self = StObject.set(x, "inventorySourceIds", js.undefined)
     
-    inline def setInventorySourceIdsVarargs(value: String*): Self = StObject.set(x, "inventorySourceIds", js.Array(value :_*))
+    inline def setInventorySourceIdsVarargs(value: String*): Self = StObject.set(x, "inventorySourceIds", js.Array(value*))
   }
 }

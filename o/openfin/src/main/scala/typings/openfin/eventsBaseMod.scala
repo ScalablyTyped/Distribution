@@ -11,7 +11,7 @@ object eventsBaseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getTopic(e: RuntimeEvent[js.Any, String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopic")(e.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTopic(e: RuntimeEvent[Any, String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopic")(e.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.openfin.eventsBaseMod.RuntimeEvent because Already inherited */ trait ApplicationEvent[Topic, Type]
@@ -64,7 +64,7 @@ object eventsBaseMod {
     * @hidden
     * Custom properties and metadata. This can be extended in specific context object.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     var listenerRemoved: String
     

@@ -42,6 +42,6 @@ object DkimAttributes {
     
     inline def setTokensUndefined: Self = StObject.set(x, "Tokens", js.undefined)
     
-    inline def setTokensVarargs(value: DnsToken*): Self = StObject.set(x, "Tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: DnsToken*): Self = StObject.set(x, "Tokens", js.Array(value*))
   }
 }

@@ -17,7 +17,12 @@ object smartMappingSliderViewModelMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/smartMapping/SmartMappingSliderViewModel", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides the shared base logic for the smart mapping slider view models.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html)
+    */
+  open class Class ()
     extends StObject
        with SmartMappingSliderViewModel {
     def this(properties: SmartMappingSliderViewModelProperties) = this()

@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Networking
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
@@ -17,7 +16,7 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.ConnectionCost")
   @js.native
-  class ConnectionCost ()
+  open class ConnectionCost ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.ConnectionCost {
     
@@ -36,13 +35,13 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.ConnectionProfile")
   @js.native
-  class ConnectionProfile ()
+  open class ConnectionProfile ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.ConnectionProfile
   
   @JSGlobal("Windows.Networking.Connectivity.DataPlanStatus")
   @js.native
-  class DataPlanStatus ()
+  open class DataPlanStatus ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.DataPlanStatus {
     
@@ -59,7 +58,7 @@ object Connectivity {
     var maxTransferSizeInMegabytes: Double = js.native
     
     /* CompleteClass */
-    var nextBillingCycle: Date = js.native
+    var nextBillingCycle: js.Date = js.native
     
     /* CompleteClass */
     var outboundBitsPerSecond: Double = js.native
@@ -67,12 +66,12 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.DataPlanUsage")
   @js.native
-  class DataPlanUsage ()
+  open class DataPlanUsage ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.DataPlanUsage {
     
     /* CompleteClass */
-    var lastSyncTime: Date = js.native
+    var lastSyncTime: js.Date = js.native
     
     /* CompleteClass */
     var megabytesUsed: Double = js.native
@@ -80,7 +79,7 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.DataUsage")
   @js.native
-  class DataUsage ()
+  open class DataUsage ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.DataUsage {
     
@@ -93,7 +92,7 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.IPInformation")
   @js.native
-  class IPInformation ()
+  open class IPInformation ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.IPInformation {
     
@@ -106,7 +105,7 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.LanIdentifier")
   @js.native
-  class LanIdentifier ()
+  open class LanIdentifier ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.LanIdentifier {
     
@@ -122,7 +121,7 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.LanIdentifierData")
   @js.native
-  class LanIdentifierData ()
+  open class LanIdentifierData ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.LanIdentifierData {
     
@@ -135,7 +134,7 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.NetworkAdapter")
   @js.native
-  class NetworkAdapter ()
+  open class NetworkAdapter ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.NetworkAdapter {
     
@@ -248,7 +247,7 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.NetworkInformation")
   @js.native
-  class NetworkInformation ()
+  open class NetworkInformation ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.NetworkInformation
   /* static members */
@@ -275,13 +274,13 @@ object Connectivity {
     
     @JSGlobal("Windows.Networking.Connectivity.NetworkInformation.onnetworkstatuschanged")
     @js.native
-    def onnetworkstatuschanged: js.Any = js.native
-    inline def onnetworkstatuschanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnetworkstatuschanged")(x.asInstanceOf[js.Any])
+    def onnetworkstatuschanged: Any = js.native
+    inline def onnetworkstatuschanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnetworkstatuschanged")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Networking.Connectivity.NetworkItem")
   @js.native
-  class NetworkItem ()
+  open class NetworkItem ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.NetworkItem {
     
@@ -294,7 +293,7 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.NetworkSecuritySettings")
   @js.native
-  class NetworkSecuritySettings ()
+  open class NetworkSecuritySettings ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.NetworkSecuritySettings {
     
@@ -321,7 +320,7 @@ object Connectivity {
   
   @JSGlobal("Windows.Networking.Connectivity.ProxyConfiguration")
   @js.native
-  class ProxyConfiguration ()
+  open class ProxyConfiguration ()
     extends StObject
        with typings.winrt.Windows.Networking.Connectivity.ProxyConfiguration {
     

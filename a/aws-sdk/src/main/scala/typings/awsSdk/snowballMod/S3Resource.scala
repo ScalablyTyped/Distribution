@@ -15,6 +15,11 @@ trait S3Resource extends StObject {
     * For export jobs, you can provide an optional KeyRange within a specific Amazon S3 bucket. The length of the range is defined at job creation, and has either an inclusive BeginMarker, an inclusive EndMarker, or both. Ranges are UTF-8 binary sorted.
     */
   var KeyRange: js.UndefOr[typings.awsSdk.snowballMod.KeyRange] = js.undefined
+  
+  /**
+    * Specifies the service or services on the Snow Family device that your transferred data will be exported from or imported into. Amazon Web Services Snow Family supports Amazon S3 and NFS (Network File System).
+    */
+  var TargetOnDeviceServices: js.UndefOr[TargetOnDeviceServiceList] = js.undefined
 }
 object S3Resource {
   
@@ -32,5 +37,11 @@ object S3Resource {
     inline def setKeyRange(value: KeyRange): Self = StObject.set(x, "KeyRange", value.asInstanceOf[js.Any])
     
     inline def setKeyRangeUndefined: Self = StObject.set(x, "KeyRange", js.undefined)
+    
+    inline def setTargetOnDeviceServices(value: TargetOnDeviceServiceList): Self = StObject.set(x, "TargetOnDeviceServices", value.asInstanceOf[js.Any])
+    
+    inline def setTargetOnDeviceServicesUndefined: Self = StObject.set(x, "TargetOnDeviceServices", js.undefined)
+    
+    inline def setTargetOnDeviceServicesVarargs(value: TargetOnDeviceService*): Self = StObject.set(x, "TargetOnDeviceServices", js.Array(value*))
   }
 }

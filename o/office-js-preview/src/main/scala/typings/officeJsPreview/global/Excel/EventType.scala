@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.EventType")
@@ -36,6 +37,10 @@ object EventType extends StObject {
   
   /* "LinkedDataTypeRefreshRequestCompleted" */ val linkedDataTypeRefreshRequestCompleted: typings.officeJsPreview.Excel.EventType.linkedDataTypeRefreshRequestCompleted & String = js.native
   
+  /* "LinkedWorkbookRefreshCompleted" */ val linkedWorkbookRefreshCompleted: typings.officeJsPreview.Excel.EventType.linkedWorkbookRefreshCompleted & String = js.native
+  
+  /* "LinkedWorkbookWorkbookLinksChanged" */ val linkedWorkbookWorkbookLinksChanged: typings.officeJsPreview.Excel.EventType.linkedWorkbookWorkbookLinksChanged & String = js.native
+  
   /* "RibbonCommandExecuted" */ val ribbonCommandExecuted: typings.officeJsPreview.Excel.EventType.ribbonCommandExecuted & String = js.native
   
   /* "ShapeActivated" */ val shapeActivated: typings.officeJsPreview.Excel.EventType.shapeActivated & String = js.native
@@ -56,7 +61,11 @@ object EventType extends StObject {
   
   /* "VisualSelectionChanged" */ val visualSelectionChanged: typings.officeJsPreview.Excel.EventType.visualSelectionChanged & String = js.native
   
+  /* "WorkbookActivated" */ val workbookActivated: typings.officeJsPreview.Excel.EventType.workbookActivated & String = js.native
+  
   /* "WorkbookAutoSaveSettingChanged" */ val workbookAutoSaveSettingChanged: typings.officeJsPreview.Excel.EventType.workbookAutoSaveSettingChanged & String = js.native
+  
+  /* "WorkbookNavigationObjectChanged" */ val workbookNavigationObjectChanged: typings.officeJsPreview.Excel.EventType.workbookNavigationObjectChanged & String = js.native
   
   /* "WorksheetActivated" */ val worksheetActivated: typings.officeJsPreview.Excel.EventType.worksheetActivated & String = js.native
   
@@ -78,6 +87,14 @@ object EventType extends StObject {
   
   /* "WorksheetFormulaChanged" */ val worksheetFormulaChanged: typings.officeJsPreview.Excel.EventType.worksheetFormulaChanged & String = js.native
   
+  /* "WorksheetMoved" */ val worksheetMoved: typings.officeJsPreview.Excel.EventType.worksheetMoved & String = js.native
+  
+  /* "WorksheetNameChanged" */ val worksheetNameChanged: typings.officeJsPreview.Excel.EventType.worksheetNameChanged & String = js.native
+  
+  /* "WorksheetProtectionChanged" */ val worksheetProtectionChanged: typings.officeJsPreview.Excel.EventType.worksheetProtectionChanged & String = js.native
+  
+  /* "WorksheetRowHeightChanged" */ val worksheetRowHeightChanged: typings.officeJsPreview.Excel.EventType.worksheetRowHeightChanged & String = js.native
+  
   /* "WorksheetRowHiddenChanged" */ val worksheetRowHiddenChanged: typings.officeJsPreview.Excel.EventType.worksheetRowHiddenChanged & String = js.native
   
   /* "WorksheetRowSorted" */ val worksheetRowSorted: typings.officeJsPreview.Excel.EventType.worksheetRowSorted & String = js.native
@@ -85,4 +102,6 @@ object EventType extends StObject {
   /* "WorksheetSelectionChanged" */ val worksheetSelectionChanged: typings.officeJsPreview.Excel.EventType.worksheetSelectionChanged & String = js.native
   
   /* "WorksheetSingleClicked" */ val worksheetSingleClicked: typings.officeJsPreview.Excel.EventType.worksheetSingleClicked & String = js.native
+  
+  /* "WorksheetVisibilityChanged" */ val worksheetVisibilityChanged: typings.officeJsPreview.Excel.EventType.worksheetVisibilityChanged & String = js.native
 }

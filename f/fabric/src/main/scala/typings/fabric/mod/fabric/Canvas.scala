@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element <canvas> element to initialize instance on
   * @param [options] Options object
   */
-class Canvas ()
+open class Canvas ()
   extends typings.fabric.fabricImplMod.Canvas {
   def this(element: String) = this()
   def this(element: HTMLCanvasElement) = this()
@@ -42,13 +42,7 @@ object Canvas {
     * (either those of HTMLCanvasElement itself, or rendering context)
     * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
     */
-  inline def supports_getImageData(methodName: getImageData): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def supports_setLineDash(methodName: setLineDash): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def supports_toDataURL(methodName: toDataURL): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def supports_toDataURLWithQuality(methodName: toDataURLWithQuality): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def supports(methodName: getImageData | toDataURL | toDataURLWithQuality | setLineDash): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns JSON representation of canvas

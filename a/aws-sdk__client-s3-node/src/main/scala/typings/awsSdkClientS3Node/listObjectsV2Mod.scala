@@ -8,5 +8,5 @@ object listObjectsV2Mod {
   
   @JSImport("@aws-sdk/client-s3-node/model/ListObjectsV2", "ListObjectsV2")
   @js.native
-  val ListObjectsV2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val ListObjectsV2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -11,7 +11,7 @@ trait IAbstractPlugin
   /** [Method] Creates clone of the plugin
     * @param overrideCfg Object Additional config for the derived plugin.
     */
-  var clonePlugin: js.UndefOr[js.Function1[/* overrideCfg */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var clonePlugin: js.UndefOr[js.Function1[/* overrideCfg */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] The destroy method is invoked by the owning Component at the time the Component is being destroyed  */
   var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -52,7 +52,7 @@ object IAbstractPlugin {
   
   extension [Self <: IAbstractPlugin](x: Self) {
     
-    inline def setClonePlugin(value: /* overrideCfg */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "clonePlugin", js.Any.fromFunction1(value))
+    inline def setClonePlugin(value: /* overrideCfg */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "clonePlugin", js.Any.fromFunction1(value))
     
     inline def setClonePluginUndefined: Self = StObject.set(x, "clonePlugin", js.undefined)
     

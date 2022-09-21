@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.ToolbarHelper")
 @js.native
-class ToolbarHelper ()
+open class ToolbarHelper ()
   extends StObject
      with typings.igniteUi.Infragistics.ToolbarHelper {
   

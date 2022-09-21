@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DetailsMap extends StObject {
   
   /**
-    * A share resource ARN for a catalog resource shared through AWS Resource Access Manager (AWS RAM).
+    * A resource share ARN for a catalog resource shared through RAM.
     */
   var ResourceShare: js.UndefOr[ResourceShareList] = js.undefined
 }
@@ -24,6 +24,6 @@ object DetailsMap {
     
     inline def setResourceShareUndefined: Self = StObject.set(x, "ResourceShare", js.undefined)
     
-    inline def setResourceShareVarargs(value: RAMResourceShareArn*): Self = StObject.set(x, "ResourceShare", js.Array(value :_*))
+    inline def setResourceShareVarargs(value: RAMResourceShareArn*): Self = StObject.set(x, "ResourceShare", js.Array(value*))
   }
 }

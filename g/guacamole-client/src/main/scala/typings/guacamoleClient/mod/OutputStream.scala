@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "OutputStream")
 @js.native
-class OutputStream protected ()
+open class OutputStream protected ()
   extends typings.guacamoleClient.outputStreamMod.OutputStream {
   /**
     * @param client The client owning this stream.

@@ -57,7 +57,7 @@ object NamedRange {
     getReferencePosition: () => CellAddress,
     getReferredCells: () => XCellRange,
     getType: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setContent: String => Unit,
     setName: String => Unit,

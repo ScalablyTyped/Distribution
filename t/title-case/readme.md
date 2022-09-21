@@ -1,7 +1,7 @@
 
 # Scala.js typings for title-case
 
-Typings are for version 3.0.2
+Typings are for version 3.0.3
 
 ## Library description:
 Transform a string into title case following English rules
@@ -10,10 +10,10 @@ Transform a string into title case following English rules
 | ------------------ | :-------------: |
 | Full name          | title-case |
 | Keywords           | title, case, english, capital, sentence, convert, transform |
-| # releases         | 5 |
-| # dependents       | 123 |
-| # downloads        | 72893865 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5165892666666666E7 |
+| # stars            | 1768.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/title-case#readme)

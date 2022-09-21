@@ -33,6 +33,6 @@ object ListNodegroupsResponse {
     
     inline def setNodegroupsUndefined: Self = StObject.set(x, "nodegroups", js.undefined)
     
-    inline def setNodegroupsVarargs(value: String*): Self = StObject.set(x, "nodegroups", js.Array(value :_*))
+    inline def setNodegroupsVarargs(value: String*): Self = StObject.set(x, "nodegroups", js.Array(value*))
   }
 }

@@ -28,7 +28,7 @@ object ListExclusionsResponse {
     
     inline def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
     
-    inline def setExclusionsVarargs(value: LogExclusion*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
+    inline def setExclusionsVarargs(value: LogExclusion*): Self = StObject.set(x, "exclusions", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

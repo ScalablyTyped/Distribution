@@ -17,7 +17,7 @@ object mod extends Shortcut {
   trait ChaiJestSnapshot extends ChaiPlugin {
     
     /** Add a serializer plugin */
-    def addSerializer(serializer: js.Any): Unit = js.native
+    def addSerializer(serializer: Any): Unit = js.native
     
     /** Configure snapshot name using mocha context */
     def configureUsingMochaContext(context: Context): Unit = js.native

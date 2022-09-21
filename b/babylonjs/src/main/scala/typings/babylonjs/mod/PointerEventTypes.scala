@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "PointerEventTypes")
 @js.native
-class PointerEventTypes ()
+open class PointerEventTypes ()
   extends typings.babylonjs.legacyMod.PointerEventTypes
 /* static members */
 object PointerEventTypes {

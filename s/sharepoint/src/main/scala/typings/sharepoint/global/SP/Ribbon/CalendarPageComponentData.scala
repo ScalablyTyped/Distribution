@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.CalendarPageComponentData")
 @js.native
-class CalendarPageComponentData ()
+open class CalendarPageComponentData ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.ToolbarRibbonAdapterData

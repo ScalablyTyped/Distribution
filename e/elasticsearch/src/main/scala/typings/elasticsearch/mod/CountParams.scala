@@ -79,7 +79,7 @@ object CountParams {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setLenient(value: Boolean): Self = StObject.set(x, "lenient", value.asInstanceOf[js.Any])
     
@@ -109,6 +109,6 @@ object CountParams {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

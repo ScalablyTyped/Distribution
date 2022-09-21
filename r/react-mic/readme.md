@@ -10,10 +10,10 @@ Record audio from your microphone and display as a sound oscillation
 | ------------------ | :-------------: |
 | Full name          | react-mic |
 | Keywords           | react, react-component, microphone, MediaRecorder, volume meter, audio recording, record audio, web audio api, html5 canvas, getUserMedia, voice recognition, voice activation, speech recognition, language |
-| # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 98384 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 10005.333333333334 |
+| # stars            | 366.0 |
 
 ## Links
 - [Homepage](https://hackingbeauty.github.io/react-mic)

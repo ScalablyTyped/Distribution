@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "FromEventPatternStream")
 @js.native
-class FromEventPatternStream protected ()
+open class FromEventPatternStream protected ()
   extends typings.wonderFrp.fromEventPatternStreamMod.FromEventPatternStream {
   def this(addHandler: js.Function, removeHandler: js.Function) = this()
 }

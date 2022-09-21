@@ -10,10 +10,10 @@ Comet and WebSocket library for web messaging
 | ------------------ | :-------------: |
 | Full name          | cometd |
 | Keywords           | comet, websocket, messaging, pubsub, publish, subscribe, rpc, p2p, peer-to-peer |
-| # releases         | 21 |
-| # dependents       | 19 |
-| # downloads        | 259205 |
-| # stars            | 2 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 50100.333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://cometd.org)

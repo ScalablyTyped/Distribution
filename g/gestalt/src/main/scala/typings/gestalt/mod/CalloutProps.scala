@@ -16,9 +16,9 @@ trait CalloutProps extends StObject {
   
   var message: String
   
-  var primaryLink: js.UndefOr[LinkData] = js.undefined
+  var primaryAction: js.UndefOr[ActionData] = js.undefined
   
-  var secondaryLink: js.UndefOr[LinkData] = js.undefined
+  var secondaryAction: js.UndefOr[ActionData] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -42,13 +42,13 @@ object CalloutProps {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setPrimaryLink(value: LinkData): Self = StObject.set(x, "primaryLink", value.asInstanceOf[js.Any])
+    inline def setPrimaryAction(value: ActionData): Self = StObject.set(x, "primaryAction", value.asInstanceOf[js.Any])
     
-    inline def setPrimaryLinkUndefined: Self = StObject.set(x, "primaryLink", js.undefined)
+    inline def setPrimaryActionUndefined: Self = StObject.set(x, "primaryAction", js.undefined)
     
-    inline def setSecondaryLink(value: LinkData): Self = StObject.set(x, "secondaryLink", value.asInstanceOf[js.Any])
+    inline def setSecondaryAction(value: ActionData): Self = StObject.set(x, "secondaryAction", value.asInstanceOf[js.Any])
     
-    inline def setSecondaryLinkUndefined: Self = StObject.set(x, "secondaryLink", js.undefined)
+    inline def setSecondaryActionUndefined: Self = StObject.set(x, "secondaryAction", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

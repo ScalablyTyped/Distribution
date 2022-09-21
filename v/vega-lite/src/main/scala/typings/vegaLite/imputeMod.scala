@@ -13,16 +13,16 @@ object imputeMod {
   
   @JSImport("vega-lite/build/src/compile/data/impute", "ImputeNode")
   @js.native
-  class ImputeNode protected () extends DataFlowNode {
+  open class ImputeNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: ImputeTransform) = this()
     
     def assemble(): js.Array[
         FormulaTransform | typings.vegaTypings.transformMod.ImputeTransform | WindowTransform
       ] = js.native
     
-    /* private */ var processSequence: js.Any = js.native
+    /* private */ var processSequence: Any = js.native
     
-    /* private */ val transform: js.Any = js.native
+    /* private */ val transform: Any = js.native
   }
   /* static members */
   object ImputeNode {

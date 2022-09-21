@@ -12,12 +12,12 @@ trait DataSourceSyncJob extends StObject {
   var DataSourceErrorCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The UNIX datetime that the synchronization job was completed.
+    * The UNIX datetime that the synchronization job completed.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * If the Status field is set to FAILED, the ErrorCode field contains a the reason that the synchronization failed.
+    * If the Status field is set to FAILED, the ErrorCode field indicates the reason the synchronization failed.
     */
   var ErrorCode: js.UndefOr[typings.awsSdk.kendraMod.ErrorCode] = js.undefined
   
@@ -37,9 +37,9 @@ trait DataSourceSyncJob extends StObject {
   var Metrics: js.UndefOr[DataSourceSyncJobMetrics] = js.undefined
   
   /**
-    * The UNIX datetime that the synchronization job was started.
+    * The UNIX datetime that the synchronization job started.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The execution status of the synchronization job. When the Status field is set to SUCCEEDED, the synchronization job is done. If the status code is set to FAILED, the ErrorCode and ErrorMessage fields give you the reason for the failure.
@@ -59,7 +59,7 @@ object DataSourceSyncJob {
     
     inline def setDataSourceErrorCodeUndefined: Self = StObject.set(x, "DataSourceErrorCode", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -79,7 +79,7 @@ object DataSourceSyncJob {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.InviteClientTransaction")
 @js.native
-class InviteClientTransaction protected ()
+open class InviteClientTransaction protected ()
   extends typings.sipJs.coreMod.InviteClientTransaction {
   /**
     * Constructor.

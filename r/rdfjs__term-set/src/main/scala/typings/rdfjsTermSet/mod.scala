@@ -1,6 +1,6 @@
 package typings.rdfjsTermSet
 
-import typings.rdfJs.mod.Term
+import typings.rdfjsTypes.dataModelMod.Term
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,15 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  // tslint:disable-next-line no-unnecessary-class
-  @JSImport("@rdfjs/term-set", JSImport.Namespace)
+  @JSImport("@rdfjs/term-set", JSImport.Default)
   @js.native
-  class ^[T /* <: Term */] ()
+  open class default[T /* <: Term */] ()
     extends StObject
-       with Set[T] {
-    def this(values: js.Array[T]) = this()
-  }
+       with Set[T]
   
-  // tslint:disable-next-line no-unnecessary-class
   type TermSet[T /* <: Term */] = Set[T]
 }

@@ -1,7 +1,5 @@
 package typings.valerieBrowser
 
-import typings.std.Date
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,22 +30,22 @@ object Valerie {
   @js.native
   trait IConverter extends StObject {
     
-    def format(value: js.Any): String = js.native
-    def format(value: js.Any, format: String): String = js.native
+    def format(value: Any): String = js.native
+    def format(value: Any, format: String): String = js.native
     
     // Formats the given value as a string.
-    def parse(value: String): js.Any = js.native
+    def parse(value: String): Any = js.native
   }
   
   trait IRule extends StObject {
     
     var defaultOptions: ValidationOptions
     
-    def test(value: js.Any): ValidationResult
+    def test(value: Any): ValidationResult
   }
   object IRule {
     
-    inline def apply(defaultOptions: ValidationOptions, test: js.Any => ValidationResult): IRule = {
+    inline def apply(defaultOptions: ValidationOptions, test: Any => ValidationResult): IRule = {
       val __obj = js.Dynamic.literal(defaultOptions = defaultOptions.asInstanceOf[js.Any], test = js.Any.fromFunction1(test))
       __obj.asInstanceOf[IRule]
     }
@@ -56,7 +54,7 @@ object Valerie {
       
       inline def setDefaultOptions(value: ValidationOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       
-      inline def setTest(value: js.Any => ValidationResult): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+      inline def setTest(value: Any => ValidationResult): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     }
   }
   
@@ -83,7 +81,7 @@ object Valerie {
   }
   
   // callback interface (see mapModel above)
-  type IncludePropertyCallback = js.Function3[/* value */ js.Any, /* sourceModel */ js.Any, /* index */ js.Any, Boolean]
+  type IncludePropertyCallback = js.Function3[/* value */ Any, /* sourceModel */ Any, /* index */ Any, Boolean]
   
   // Constructs the validation state for a model, which may comprise of simple properties and sub-models.
   @js.native
@@ -98,7 +96,7 @@ object Valerie {
       * @param {object|array.<valerie.IValidationState>} validationStateOrStates the validation states to add
       * @return {valerie.ModelValidationState}
       */
-    def addValidationStates(validationStateOrStates: js.Any): ModelValidationState = js.native
+    def addValidationStates(validationStateOrStates: Any): ModelValidationState = js.native
     
     /**
       * Sets the value or function used to determine if the model is applicable.<br/>
@@ -108,7 +106,7 @@ object Valerie {
       * @param {boolean|function} [valueOrFunction = true] the value or function to use
       * @return {valerie.ModelValidationState}
       */
-    def applicable(valueOrFunction: js.Any): ModelValidationState = js.native
+    def applicable(valueOrFunction: Any): ModelValidationState = js.native
     
     /**
       * Clears the static summary of validation states that are in a failure state.<br/>
@@ -118,13 +116,13 @@ object Valerie {
       * @param {boolean} [clearSubModelSummaries = false] whether to clear the static summaries for sub-models
       * @return {valerie.ModelValidationState}
       */
-    def clearSummary(valueOrFunction: js.Any): ModelValidationState = js.native
+    def clearSummary(valueOrFunction: Any): ModelValidationState = js.native
     
     /**
       * Ends a chain of fluent method calls on this model validation state.
       * @return {function} the model the validation state is for
       */
-    def end(): js.Any = js.native
+    def end(): Any = js.native
     
     /***
       * Gets whether the model has failed validation.
@@ -156,7 +154,7 @@ object Valerie {
     
     def message(): String = js.native
     
-    var model: js.Any = js.native
+    var model: Any = js.native
     
     /**
       * Sets the value or function used to determine the name of the model.<br/>
@@ -165,11 +163,11 @@ object Valerie {
       * @param {string|function} valueOrFunction the value or function to use
       * @return {valerie.ModelValidationState}
       */
-    def name(valueOrFunction: js.Any): ModelValidationState = js.native
+    def name(valueOrFunction: Any): ModelValidationState = js.native
     
     // ctor
-    def `new`(model: js.Any): ModelValidationState = js.native
-    def `new`(model: js.Any, options: ModelValidationStateOptions): ModelValidationState = js.native
+    def `new`(model: Any): ModelValidationState = js.native
+    def `new`(model: Any, options: ModelValidationStateOptions): ModelValidationState = js.native
     
     var options: js.UndefOr[ModelValidationStateOptions] = js.native
     
@@ -195,7 +193,7 @@ object Valerie {
       * @param {object|array.<valerie.IValidationState>} validationStateOrStates the validation states to remove
       * @return {valerie.ModelValidationState}
       */
-    def removeValidationStates(validationStateOrStates: js.Any): ModelValidationState = js.native
+    def removeValidationStates(validationStateOrStates: Any): ModelValidationState = js.native
     
     def result(): ValidationResult = js.native
     
@@ -204,14 +202,14 @@ object Valerie {
       * @param {*} validatableSubModel the sub - model to start validating
       * @return {valerie.ModelValidationState }
       */
-    def startValidatingSubModel(validatableSubModel: js.Any): ModelValidationState = js.native
+    def startValidatingSubModel(validatableSubModel: Any): ModelValidationState = js.native
     
     /**
       * Stops validating the given sub-model by removing the validation state that belongs to it.
       * @param {*} validatableSubModel the sub-model to stop validating
       * @return {valerie.ModelValidationState}
       */
-    def stopValidatingSubModel(validatableSubModel: js.Any): ModelValidationState = js.native
+    def stopValidatingSubModel(validatableSubModel: Any): ModelValidationState = js.native
     
     def summary(): js.Array[summaryItem] = js.native
     
@@ -405,24 +403,24 @@ object Valerie {
     
     def date(): PropertyValidationState[T] = js.native
     
-    // date + dateFN
-    def during(earliest: js.Function0[Date], latest: js.Function0[Date]): PropertyValidationState[T] = js.native
-    def during(earliest: js.Function0[Date], latest: js.Function0[Date], options: ValidationOptions): PropertyValidationState[T] = js.native
-    // date + date
-    def during(earliest: js.Function0[Date], latest: Date): PropertyValidationState[T] = js.native
-    def during(earliest: js.Function0[Date], latest: Date, options: ValidationOptions): PropertyValidationState[T] = js.native
+    def during(earliest: js.Date, latest: js.Date): PropertyValidationState[T] = js.native
+    def during(earliest: js.Date, latest: js.Date, options: ValidationOptions): PropertyValidationState[T] = js.native
     // dateFN + date
-    def during(earliest: Date, latest: js.Function0[Date]): PropertyValidationState[T] = js.native
-    def during(earliest: Date, latest: js.Function0[Date], options: ValidationOptions): PropertyValidationState[T] = js.native
-    def during(earliest: Date, latest: Date): PropertyValidationState[T] = js.native
-    def during(earliest: Date, latest: Date, options: ValidationOptions): PropertyValidationState[T] = js.native
+    def during(earliest: js.Date, latest: js.Function0[js.Date]): PropertyValidationState[T] = js.native
+    def during(earliest: js.Date, latest: js.Function0[js.Date], options: ValidationOptions): PropertyValidationState[T] = js.native
+    // date + date
+    def during(earliest: js.Function0[js.Date], latest: js.Date): PropertyValidationState[T] = js.native
+    def during(earliest: js.Function0[js.Date], latest: js.Date, options: ValidationOptions): PropertyValidationState[T] = js.native
+    // date + dateFN
+    def during(earliest: js.Function0[js.Date], latest: js.Function0[js.Date]): PropertyValidationState[T] = js.native
+    def during(earliest: js.Function0[js.Date], latest: js.Function0[js.Date], options: ValidationOptions): PropertyValidationState[T] = js.native
     
-    // date value
-    def earliest(earliest: js.Function0[Date]): PropertyValidationState[T] = js.native
-    def earliest(earliest: js.Function0[Date], options: ValidationOptions): PropertyValidationState[T] = js.native
     // dateFN + dateFN
-    def earliest(earliest: Date): PropertyValidationState[T] = js.native
-    def earliest(earliest: Date, options: ValidationOptions): PropertyValidationState[T] = js.native
+    def earliest(earliest: js.Date): PropertyValidationState[T] = js.native
+    def earliest(earliest: js.Date, options: ValidationOptions): PropertyValidationState[T] = js.native
+    // date value
+    def earliest(earliest: js.Function0[js.Date]): PropertyValidationState[T] = js.native
+    def earliest(earliest: js.Function0[js.Date], options: ValidationOptions): PropertyValidationState[T] = js.native
     
     // date function
     def email(): PropertyValidationState[T] = js.native
@@ -437,8 +435,8 @@ object Valerie {
     // regex
     def expression(regularExpressionString: String): PropertyValidationState[T] = js.native
     def expression(regularExpressionString: String, options: ValidationOptions): PropertyValidationState[T] = js.native
-    def expression(regularExpression: RegExp): PropertyValidationState[T] = js.native
-    def expression(regularExpression: RegExp, options: ValidationOptions): PropertyValidationState[T] = js.native
+    def expression(regularExpression: js.RegExp): PropertyValidationState[T] = js.native
+    def expression(regularExpression: js.RegExp, options: ValidationOptions): PropertyValidationState[T] = js.native
     
     // other methods: not returning PropertyValidationState<T>
     def failed(): Boolean = js.native
@@ -456,10 +454,10 @@ object Valerie {
     
     def isRequired(): Boolean = js.native
     
-    def latest(latestValueOrFunction: js.Function0[Date]): PropertyValidationState[T] = js.native
-    def latest(latestValueOrFunction: js.Function0[Date], options: ValidationOptions): PropertyValidationState[T] = js.native
-    def latest(latestValueOrFunction: Date): PropertyValidationState[T] = js.native
-    def latest(latestValueOrFunction: Date, options: ValidationOptions): PropertyValidationState[T] = js.native
+    def latest(latestValueOrFunction: js.Date): PropertyValidationState[T] = js.native
+    def latest(latestValueOrFunction: js.Date, options: ValidationOptions): PropertyValidationState[T] = js.native
+    def latest(latestValueOrFunction: js.Function0[js.Date]): PropertyValidationState[T] = js.native
+    def latest(latestValueOrFunction: js.Function0[js.Date], options: ValidationOptions): PropertyValidationState[T] = js.native
     
     def lengthBetween(shortest: js.Function0[Double], longest: js.Function0[Double]): PropertyValidationState[T] = js.native
     def lengthBetween(shortest: js.Function0[Double], longest: js.Function0[Double], options: ValidationOptions): PropertyValidationState[T] = js.native
@@ -470,15 +468,15 @@ object Valerie {
     def lengthBetween(shortest: Double, longest: Double): PropertyValidationState[T] = js.native
     def lengthBetween(shortest: Double, longest: Double, options: ValidationOptions): PropertyValidationState[T] = js.native
     
-    def matches(permitted: js.Any): PropertyValidationState[T] = js.native
-    def matches(permitted: js.Any, options: ValidationOptions): PropertyValidationState[T] = js.native
-    def matches(permitted: js.Function0[js.Any]): PropertyValidationState[T] = js.native
-    def matches(permitted: js.Function0[js.Any], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def matches(permitted: js.Function0[Any]): PropertyValidationState[T] = js.native
+    def matches(permitted: js.Function0[Any], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def matches(permitted: Any): PropertyValidationState[T] = js.native
+    def matches(permitted: Any, options: ValidationOptions): PropertyValidationState[T] = js.native
     
-    def maximum(maximum: js.Any): PropertyValidationState[T] = js.native
-    def maximum(maximum: js.Any, options: ValidationOptions): PropertyValidationState[T] = js.native
-    def maximum(maximum: js.Function0[js.Any]): PropertyValidationState[T] = js.native
-    def maximum(maximum: js.Function0[js.Any], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def maximum(maximum: js.Function0[Any]): PropertyValidationState[T] = js.native
+    def maximum(maximum: js.Function0[Any], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def maximum(maximum: Any): PropertyValidationState[T] = js.native
+    def maximum(maximum: Any, options: ValidationOptions): PropertyValidationState[T] = js.native
     
     def maximumLength(longest: js.Function0[Double]): PropertyValidationState[T] = js.native
     def maximumLength(longest: js.Function0[Double], options: ValidationOptions): PropertyValidationState[T] = js.native
@@ -492,8 +490,8 @@ object Valerie {
     
     def message(): String = js.native
     
-    def minimum(minimumValueOrFunction: js.Any): PropertyValidationState[T] = js.native
-    def minimum(minimumValueOrFunction: js.Any, options: ValidationOptions): PropertyValidationState[T] = js.native
+    def minimum(minimumValueOrFunction: Any): PropertyValidationState[T] = js.native
+    def minimum(minimumValueOrFunction: Any, options: ValidationOptions): PropertyValidationState[T] = js.native
     
     def minimumLength(shortest: js.Function0[Double]): PropertyValidationState[T] = js.native
     def minimumLength(shortest: js.Function0[Double], options: ValidationOptions): PropertyValidationState[T] = js.native
@@ -508,27 +506,27 @@ object Valerie {
     def name(value: String): PropertyValidationState[T] = js.native
     def name(value: js.Function0[String]): PropertyValidationState[T] = js.native
     
-    def noneOf(forbiddenValues: js.Array[js.Any]): PropertyValidationState[T] = js.native
-    def noneOf(forbiddenValues: js.Array[js.Any], options: ValidationOptions): PropertyValidationState[T] = js.native
-    def noneOf(forbiddenValues: js.Function0[js.Array[js.Any]]): PropertyValidationState[T] = js.native
-    def noneOf(forbiddenValues: js.Function0[js.Array[js.Any]], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def noneOf(forbiddenValues: js.Array[Any]): PropertyValidationState[T] = js.native
+    def noneOf(forbiddenValues: js.Array[Any], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def noneOf(forbiddenValues: js.Function0[js.Array[Any]]): PropertyValidationState[T] = js.native
+    def noneOf(forbiddenValues: js.Function0[js.Array[Any]], options: ValidationOptions): PropertyValidationState[T] = js.native
     
-    def not(forbiddenValueOrFunction: js.Any): PropertyValidationState[T] = js.native
-    def not(forbiddenValueOrFunction: js.Any, options: ValidationOptions): PropertyValidationState[T] = js.native
+    def not(forbiddenValueOrFunction: Any): PropertyValidationState[T] = js.native
+    def not(forbiddenValueOrFunction: Any, options: ValidationOptions): PropertyValidationState[T] = js.native
     
     def number(): PropertyValidationState[T] = js.native
     
-    def numberOfItems(minimumValueOrFunction: js.Any, maximumValueOrFunction: js.Any): PropertyValidationState[T] = js.native
-    def numberOfItems(minimumValueOrFunction: js.Any, maximumValueOrFunction: js.Any, options: ValidationOptions): PropertyValidationState[T] = js.native
+    def numberOfItems(minimumValueOrFunction: Any, maximumValueOrFunction: Any): PropertyValidationState[T] = js.native
+    def numberOfItems(minimumValueOrFunction: Any, maximumValueOrFunction: Any, options: ValidationOptions): PropertyValidationState[T] = js.native
     
     // properties:
     // the observable or computed the validation state is for
     var observableOrComputed: T = js.native
     
-    def oneOf(permittedValues: js.Array[js.Any]): PropertyValidationState[T] = js.native
-    def oneOf(permittedValues: js.Array[js.Any], options: ValidationOptions): PropertyValidationState[T] = js.native
-    def oneOf(permittedValues: js.Function0[js.Array[js.Any]]): PropertyValidationState[T] = js.native
-    def oneOf(permittedValues: js.Function0[js.Array[js.Any]], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def oneOf(permittedValues: js.Array[Any]): PropertyValidationState[T] = js.native
+    def oneOf(permittedValues: js.Array[Any], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def oneOf(permittedValues: js.Function0[js.Array[Any]]): PropertyValidationState[T] = js.native
+    def oneOf(permittedValues: js.Function0[js.Array[Any]], options: ValidationOptions): PropertyValidationState[T] = js.native
     
     // the options to use when creating the validation state
     var options: ValidationOptions = js.native
@@ -539,16 +537,16 @@ object Valerie {
     
     def postcode(): PropertyValidationState[T] = js.native
     
-    def range(minimumValueOrFunction: js.Any, maximumValueOrFunction: js.Any): PropertyValidationState[T] = js.native
-    def range(minimumValueOrFunction: js.Any, maximumValueOrFunction: js.Any, options: ValidationOptions): PropertyValidationState[T] = js.native
+    def range(minimumValueOrFunction: Any, maximumValueOrFunction: Any): PropertyValidationState[T] = js.native
+    def range(minimumValueOrFunction: Any, maximumValueOrFunction: Any, options: ValidationOptions): PropertyValidationState[T] = js.native
     
     def required(): PropertyValidationState[T] = js.native
-    def required(valueOrFunction: js.Any): PropertyValidationState[T] = js.native
+    def required(valueOrFunction: Any): PropertyValidationState[T] = js.native
     
     // set touched state
     def result(): ValidationResult = js.native
     
-    def rule(testFunction: js.Function0[js.Any]): PropertyValidationState[T] = js.native
+    def rule(testFunction: js.Function0[Any]): PropertyValidationState[T] = js.native
     
     def ruleMessage(failureMessageFormat: String): PropertyValidationState[T] = js.native
     
@@ -582,7 +580,7 @@ object Valerie {
       * @param {Object|Array} sourceModel the source model
       * @return {*} the destination model
       */
-    def mapApplicableModel(sourceModel: js.Any): js.Any = js.native
+    def mapApplicableModel(sourceModel: Any): Any = js.native
     
     /**
       * Maps a source model to a destination model.
@@ -593,18 +591,14 @@ object Valerie {
       * model property is unwrapped, the result of which determines if the property is included in the destination model
       * @return {*} the destination model
       */
-    def mapModel(sourceModel: js.Any): js.Any = js.native
+    def mapModel(sourceModel: Any): Any = js.native
+    def mapModel(sourceModel: Any, includeWrappedFunction: Unit, includeUnwrappedFunction: IncludePropertyCallback): Any = js.native
+    def mapModel(sourceModel: Any, includeWrappedFunction: IncludePropertyCallback): Any = js.native
     def mapModel(
-      sourceModel: js.Any,
-      includeWrappedFunction: Unit,
-      includeUnwrappedFunction: IncludePropertyCallback
-    ): js.Any = js.native
-    def mapModel(sourceModel: js.Any, includeWrappedFunction: IncludePropertyCallback): js.Any = js.native
-    def mapModel(
-      sourceModel: js.Any,
+      sourceModel: Any,
       includeWrappedFunction: IncludePropertyCallback,
       includeUnwrappedFunction: IncludePropertyCallback
-    ): js.Any = js.native
+    ): Any = js.native
     
     /*
       //TODO: additional namespaces/statics not yet used
@@ -624,8 +618,8 @@ object Valerie {
       * state
       * @return {valerie.ModelValidationState} the validation state belonging to the model
       */
-    def validatableModel(model: js.Any): ModelValidationState = js.native
-    def validatableModel(model: js.Any, options: ValidationOptions): ModelValidationState = js.native
+    def validatableModel(model: Any): ModelValidationState = js.native
+    def validatableModel(model: Any, options: ValidationOptions): ModelValidationState = js.native
     
     // Makes the passed-in property validatable. After invocation the property will have a validation state.
     // (value should be observable or computed)
@@ -639,35 +633,35 @@ object Valerie {
   trait UtilsStatic extends StObject {
     
     // Creates a function that returns the given value as an array of one item, or simply returns the given value if it is already an array.
-    def asArray[T](value: js.Any): js.Array[js.Any] = js.native
+    def asArray[T](value: Any): js.Array[Any] = js.native
     
     def asFunction[T](fn: js.Function0[T]): js.Function0[T] = js.native
     // Creates a function that returns the given value, or simply returns the given value if it is already a function
     def asFunction[T](value: T): js.Function0[T] = js.native
     
     // Tests whether the given value is an array
-    def isArray(value: js.Any): Boolean = js.native
+    def isArray(value: Any): Boolean = js.native
     
     // Tests whether the given value is an array or object.
-    def isArrayOrObject(value: js.Any): Boolean = js.native
+    def isArrayOrObject(value: Any): Boolean = js.native
     
     // Tests whether the given value is a function.
-    def isFunction(value: js.Any): Boolean = js.native
+    def isFunction(value: Any): Boolean = js.native
     
     // Tests whether the given value is "missing".undefined, null, an empty string or an empty array are considered to be "missing".
-    def isMissing(value: js.Any): Boolean = js.native
+    def isMissing(value: Any): Boolean = js.native
     
     // Tests whether the given value is an object.
-    def isObject(value: js.Any): Boolean = js.native
+    def isObject(value: Any): Boolean = js.native
     
     // Tests whether the give value is a string.
-    def isString(value: js.Any): Boolean = js.native
+    def isString(value: Any): Boolean = js.native
     
     //Merges the given default options with the given options.
     //  - either parameter can be omitted and a clone of the other parameter will be returned
     //  - the merge is shallow
     //  - array properties are shallow cloned
-    def mergeOptions(defaultOptions: ValidationOptions, options: js.Any): ValidationOptions = js.native
+    def mergeOptions(defaultOptions: ValidationOptions, options: Any): ValidationOptions = js.native
   }
   
   trait ValidatableModel[T] extends StObject {
@@ -694,7 +688,7 @@ object Valerie {
   
   trait ValidationOptions extends StObject {
     
-    var applicable: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var applicable: js.UndefOr[js.Function0[Any]] = js.undefined
     
     // the function used to determine if the property is applicable
     var converter: js.UndefOr[IConverter] = js.undefined
@@ -712,13 +706,13 @@ object Valerie {
     var missingFailureMessage: js.UndefOr[String] = js.undefined
     
     // the message shown when a value is required but is missing
-    var name: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var name: js.UndefOr[js.Function0[Any]] = js.undefined
     
     // the function used to determine the name of the property; used in failure messages
-    var required: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var required: js.UndefOr[js.Function0[Any]] = js.undefined
     
     // the function used to determine if a value is required
-    var rules: js.UndefOr[js.Any] = js.undefined
+    var rules: js.UndefOr[Any] = js.undefined
     
     //Valerie.array.<IRule>;  // the chain of rules used to validate the property's value
     var valueFormat: js.UndefOr[String] = js.undefined
@@ -732,7 +726,7 @@ object Valerie {
     
     extension [Self <: ValidationOptions](x: Self) {
       
-      inline def setApplicable(value: () => js.Any): Self = StObject.set(x, "applicable", js.Any.fromFunction0(value))
+      inline def setApplicable(value: () => Any): Self = StObject.set(x, "applicable", js.Any.fromFunction0(value))
       
       inline def setApplicableUndefined: Self = StObject.set(x, "applicable", js.undefined)
       
@@ -756,15 +750,15 @@ object Valerie {
       
       inline def setMissingFailureMessageUndefined: Self = StObject.set(x, "missingFailureMessage", js.undefined)
       
-      inline def setName(value: () => js.Any): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
+      inline def setName(value: () => Any): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setRequired(value: () => js.Any): Self = StObject.set(x, "required", js.Any.fromFunction0(value))
+      inline def setRequired(value: () => Any): Self = StObject.set(x, "required", js.Any.fromFunction0(value))
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      inline def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
@@ -784,8 +778,8 @@ object Valerie {
     var message: String = js.native
     
     //a message from the activity
-    def `new`(state: js.Any): ValidationResult = js.native
-    def `new`(state: js.Any, message: String): ValidationResult = js.native
+    def `new`(state: Any): ValidationResult = js.native
+    def `new`(state: Any, message: String): ValidationResult = js.native
     
     //true if the activity failed validation
     var passed: Boolean = js.native
@@ -793,7 +787,7 @@ object Valerie {
     //true if the activity passed validation
     var pending: Boolean = js.native
     
-    var state: js.Any = js.native
+    var state: Any = js.native
   }
   
   trait ValidationResultStatic extends StObject {
@@ -822,38 +816,28 @@ object Valerie {
   trait ValidationState extends StObject {
     
     // Finds and returns the validation states
-    def findIn(model: js.Any): js.Array[IValidationState] = js.native
-    def findIn(model: js.Any, includeSubModels: Boolean): js.Array[IValidationState] = js.native
-    def findIn(model: js.Any, includeSubModels: Boolean, recurse: Boolean): js.Array[IValidationState] = js.native
+    def findIn(model: Any): js.Array[IValidationState] = js.native
+    def findIn(model: Any, includeSubModels: Boolean): js.Array[IValidationState] = js.native
+    def findIn(model: Any, includeSubModels: Boolean, recurse: Boolean): js.Array[IValidationState] = js.native
     def findIn(
-      model: js.Any,
+      model: Any,
       includeSubModels: Boolean,
       recurse: Boolean,
       validationStates: js.Array[IValidationState]
     ): js.Array[IValidationState] = js.native
-    def findIn(
-      model: js.Any,
-      includeSubModels: Boolean,
-      recurse: Unit,
-      validationStates: js.Array[IValidationState]
-    ): js.Array[IValidationState] = js.native
-    def findIn(model: js.Any, includeSubModels: Unit, recurse: Boolean): js.Array[IValidationState] = js.native
-    def findIn(
-      model: js.Any,
-      includeSubModels: Unit,
-      recurse: Boolean,
-      validationStates: js.Array[IValidationState]
-    ): js.Array[IValidationState] = js.native
-    def findIn(model: js.Any, includeSubModels: Unit, recurse: Unit, validationStates: js.Array[IValidationState]): js.Array[IValidationState] = js.native
+    def findIn(model: Any, includeSubModels: Boolean, recurse: Unit, validationStates: js.Array[IValidationState]): js.Array[IValidationState] = js.native
+    def findIn(model: Any, includeSubModels: Unit, recurse: Boolean): js.Array[IValidationState] = js.native
+    def findIn(model: Any, includeSubModels: Unit, recurse: Boolean, validationStates: js.Array[IValidationState]): js.Array[IValidationState] = js.native
+    def findIn(model: Any, includeSubModels: Unit, recurse: Unit, validationStates: js.Array[IValidationState]): js.Array[IValidationState] = js.native
     
     // Gets the validation state for the given model, observable or computed.
-    def getFor(modelOrObservableOrComputed: js.Any): IValidationState = js.native
+    def getFor(modelOrObservableOrComputed: Any): IValidationState = js.native
     
     // nforms if the given model, observable or computed has a validation state.
-    def has(modelOrObservableOrComputed: js.Any): Boolean = js.native
+    def has(modelOrObservableOrComputed: Any): Boolean = js.native
     
     // Sets the validation state for the given model, observable or computed.
-    def setFor(modelOrObservableOrComputed: js.Any, state: IValidationState): Unit = js.native
+    def setFor(modelOrObservableOrComputed: Any, state: IValidationState): Unit = js.native
   }
   
   trait summaryItem extends StObject {

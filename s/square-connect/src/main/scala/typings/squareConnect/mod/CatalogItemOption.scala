@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogItemOption")
 @js.native
-class CatalogItemOption () extends StObject {
+open class CatalogItemOption () extends StObject {
   
   /**
     * TThe item option's human-readable description. Displayed in the Square Point of Sale app for the seller and in the

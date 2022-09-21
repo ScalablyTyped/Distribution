@@ -10,10 +10,10 @@ object forumMod {
   
   @JSImport("material-ui/svg-icons/communication/forum", JSImport.Default)
   @js.native
-  class default () extends CommunicationForum
+  open class default () extends CommunicationForum
   
   @JSImport("material-ui/svg-icons/communication/forum", "CommunicationForum")
   @js.native
-  class CommunicationForum ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationForum ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

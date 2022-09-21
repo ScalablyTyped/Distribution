@@ -11,9 +11,9 @@ A library to help you design your react-native app for the iPhone X
 | Full name          | react-native-iphone-x-helper |
 | Keywords           | react-native, ios, iphone-x, iphoneX, stylesheet |
 | # releases         | 3 |
-| # dependents       | 112 |
-| # downloads        | 9537624 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1659107.0 |
+| # stars            | 934.0 |
 
 ## Links
 - [Homepage](https://github.com/ptelad/react-native-iphone-x-helper#readme)

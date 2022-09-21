@@ -41,15 +41,15 @@ trait HTMLRuleStyle extends StObject {
   
   var backgroundAttachment: String = js.native
   
-  var backgroundColor: js.Any = js.native
+  var backgroundColor: Any = js.native
   
   var backgroundImage: String = js.native
   
   var backgroundPosition: String = js.native
   
-  var backgroundPositionX: js.Any = js.native
+  var backgroundPositionX: Any = js.native
   
-  var backgroundPositionY: js.Any = js.native
+  var backgroundPositionY: Any = js.native
   
   var backgroundRepeat: String = js.native
   
@@ -59,11 +59,11 @@ trait HTMLRuleStyle extends StObject {
   
   var borderBottom: String = js.native
   
-  var borderBottomColor: js.Any = js.native
+  var borderBottomColor: Any = js.native
   
   var borderBottomStyle: String = js.native
   
-  var borderBottomWidth: js.Any = js.native
+  var borderBottomWidth: Any = js.native
   
   var borderCollapse: String = js.native
   
@@ -83,19 +83,19 @@ trait HTMLRuleStyle extends StObject {
   
   var borderLeft: String = js.native
   
-  var borderLeftColor: js.Any = js.native
+  var borderLeftColor: Any = js.native
   
   var borderLeftStyle: String = js.native
   
-  var borderLeftWidth: js.Any = js.native
+  var borderLeftWidth: Any = js.native
   
   var borderRight: String = js.native
   
-  var borderRightColor: js.Any = js.native
+  var borderRightColor: Any = js.native
   
   var borderRightStyle: String = js.native
   
-  var borderRightWidth: js.Any = js.native
+  var borderRightWidth: Any = js.native
   
   var borderSpacing: String = js.native
   
@@ -103,15 +103,15 @@ trait HTMLRuleStyle extends StObject {
   
   var borderTop: String = js.native
   
-  var borderTopColor: js.Any = js.native
+  var borderTopColor: Any = js.native
   
   var borderTopStyle: String = js.native
   
-  var borderTopWidth: js.Any = js.native
+  var borderTopWidth: Any = js.native
   
   var borderWidth: String = js.native
   
-  var bottom: js.Any = js.native
+  var bottom: Any = js.native
   
   var boxSizing: String = js.native
   
@@ -127,31 +127,31 @@ trait HTMLRuleStyle extends StObject {
   
   var clip: String = js.native
   
-  var color: js.Any = js.native
+  var color: Any = js.native
   
   var colorInterpolationFilters: String = js.native
   
-  var columnCount: js.Any = js.native
+  var columnCount: Any = js.native
   
   var columnFill: String = js.native
   
-  var columnGap: js.Any = js.native
+  var columnGap: Any = js.native
   
   var columnRule: String = js.native
   
-  var columnRuleColor: js.Any = js.native
+  var columnRuleColor: Any = js.native
   
   var columnRuleStyle: String = js.native
   
-  var columnRuleWidth: js.Any = js.native
+  var columnRuleWidth: Any = js.native
   
   var columnSpan: String = js.native
   
-  var columnWidth: js.Any = js.native
+  var columnWidth: Any = js.native
   
   var columns: String = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
   var content: String = js.native
   
@@ -175,21 +175,21 @@ trait HTMLRuleStyle extends StObject {
   
   var flex: String = js.native
   
-  var flexBasis: js.Any = js.native
+  var flexBasis: Any = js.native
   
   var flexDirection: String = js.native
   
   var flexFlow: String = js.native
   
-  var flexGrow: js.Any = js.native
+  var flexGrow: Any = js.native
   
-  var flexShrink: js.Any = js.native
+  var flexShrink: Any = js.native
   
   var flexWrap: String = js.native
   
-  var floodColor: js.Any = js.native
+  var floodColor: Any = js.native
   
-  var floodOpacity: js.Any = js.native
+  var floodOpacity: Any = js.native
   
   var font: String = js.native
   
@@ -197,7 +197,7 @@ trait HTMLRuleStyle extends StObject {
   
   var fontFeatureSettings: String = js.native
   
-  var fontSize: js.Any = js.native
+  var fontSize: Any = js.native
   
   var fontStyle: String = js.native
   
@@ -206,14 +206,14 @@ trait HTMLRuleStyle extends StObject {
   var fontWeight: String = js.native
   
   /** @param lFlags [lFlags=0] */
-  def getAttribute(strAttributeName: String): js.Any = js.native
-  def getAttribute(strAttributeName: String, lFlags: Double): js.Any = js.native
+  def getAttribute(strAttributeName: String): Any = js.native
+  def getAttribute(strAttributeName: String, lFlags: Double): Any = js.native
   
   def getPropertyPriority(bstrPropertyName: String): String = js.native
   
   def getPropertyValue(bstrPropertyName: String): String = js.native
   
-  var height: js.Any = js.native
+  var height: Any = js.native
   
   var imeMode: String = js.native
   
@@ -225,25 +225,25 @@ trait HTMLRuleStyle extends StObject {
   
   var layoutGrid: String = js.native
   
-  var layoutGridChar: js.Any = js.native
+  var layoutGridChar: Any = js.native
   
-  var layoutGridLine: js.Any = js.native
+  var layoutGridLine: Any = js.native
   
   var layoutGridMode: String = js.native
   
   var layoutGridType: String = js.native
   
-  var left: js.Any = js.native
+  var left: Any = js.native
   
   val length: Double = js.native
   
-  var letterSpacing: js.Any = js.native
+  var letterSpacing: Any = js.native
   
-  var lightingColor: js.Any = js.native
+  var lightingColor: Any = js.native
   
   var lineBreak: String = js.native
   
-  var lineHeight: js.Any = js.native
+  var lineHeight: Any = js.native
   
   var listStyle: String = js.native
   
@@ -255,21 +255,21 @@ trait HTMLRuleStyle extends StObject {
   
   var margin: String = js.native
   
-  var marginBottom: js.Any = js.native
+  var marginBottom: Any = js.native
   
-  var marginLeft: js.Any = js.native
+  var marginLeft: Any = js.native
   
-  var marginRight: js.Any = js.native
+  var marginRight: Any = js.native
   
-  var marginTop: js.Any = js.native
+  var marginTop: Any = js.native
   
-  var maxHeight: js.Any = js.native
+  var maxHeight: Any = js.native
   
-  var maxWidth: js.Any = js.native
+  var maxWidth: Any = js.native
   
-  var minHeight: js.Any = js.native
+  var minHeight: Any = js.native
   
-  var minWidth: js.Any = js.native
+  var minWidth: Any = js.native
   
   var msAnimation: String = js.native
   
@@ -297,9 +297,9 @@ trait HTMLRuleStyle extends StObject {
   
   var msContentZoomLimit: String = js.native
   
-  var msContentZoomLimitMax: js.Any = js.native
+  var msContentZoomLimitMax: Any = js.native
   
-  var msContentZoomLimitMin: js.Any = js.native
+  var msContentZoomLimitMin: Any = js.native
   
   var msContentZoomSnap: String = js.native
   
@@ -321,15 +321,15 @@ trait HTMLRuleStyle extends StObject {
   
   var msFlexLinePack: String = js.native
   
-  var msFlexNegative: js.Any = js.native
+  var msFlexNegative: Any = js.native
   
-  var msFlexOrder: js.Any = js.native
+  var msFlexOrder: Any = js.native
   
   var msFlexPack: String = js.native
   
-  var msFlexPositive: js.Any = js.native
+  var msFlexPositive: Any = js.native
   
-  var msFlexPreferredSize: js.Any = js.native
+  var msFlexPreferredSize: Any = js.native
   
   var msFlexWrap: String = js.native
   
@@ -341,19 +341,19 @@ trait HTMLRuleStyle extends StObject {
   
   def msGetPropertyEnabled(name: String): Boolean = js.native
   
-  var msGridColumn: js.Any = js.native
+  var msGridColumn: Any = js.native
   
   var msGridColumnAlign: String = js.native
   
-  var msGridColumnSpan: js.Any = js.native
+  var msGridColumnSpan: Any = js.native
   
   var msGridColumns: String = js.native
   
-  var msGridRow: js.Any = js.native
+  var msGridRow: Any = js.native
   
   var msGridRowAlign: String = js.native
   
-  var msGridRowSpan: js.Any = js.native
+  var msGridRowSpan: Any = js.native
   
   var msGridRows: String = js.native
   
@@ -361,9 +361,9 @@ trait HTMLRuleStyle extends StObject {
   
   var msHyphenateLimitChars: String = js.native
   
-  var msHyphenateLimitLines: js.Any = js.native
+  var msHyphenateLimitLines: Any = js.native
   
-  var msHyphenateLimitZone: js.Any = js.native
+  var msHyphenateLimitZone: Any = js.native
   
   var msHyphens: String = js.native
   
@@ -373,7 +373,7 @@ trait HTMLRuleStyle extends StObject {
   
   var msOverflowStyle: String = js.native
   
-  var msPerspective: js.Any = js.native
+  var msPerspective: Any = js.native
   
   var msPerspectiveOrigin: String = js.native
   
@@ -383,13 +383,13 @@ trait HTMLRuleStyle extends StObject {
   
   var msScrollLimit: String = js.native
   
-  var msScrollLimitXMax: js.Any = js.native
+  var msScrollLimitXMax: Any = js.native
   
-  var msScrollLimitXMin: js.Any = js.native
+  var msScrollLimitXMin: Any = js.native
   
-  var msScrollLimitYMax: js.Any = js.native
+  var msScrollLimitYMax: Any = js.native
   
-  var msScrollLimitYMin: js.Any = js.native
+  var msScrollLimitYMin: Any = js.native
   
   var msScrollRails: String = js.native
   
@@ -407,7 +407,7 @@ trait HTMLRuleStyle extends StObject {
   
   var msTextCombineHorizontal: String = js.native
   
-  var msTextSizeAdjust: js.Any = js.native
+  var msTextSizeAdjust: Any = js.native
   
   var msTouchAction: String = js.native
   
@@ -429,19 +429,19 @@ trait HTMLRuleStyle extends StObject {
   
   var msWrapFlow: String = js.native
   
-  var msWrapMargin: js.Any = js.native
+  var msWrapMargin: Any = js.native
   
   var msWrapThrough: String = js.native
   
-  var orphans: js.Any = js.native
+  var orphans: Any = js.native
   
   var outline: String = js.native
   
-  var outlineColor: js.Any = js.native
+  var outlineColor: Any = js.native
   
   var outlineStyle: String = js.native
   
-  var outlineWidth: js.Any = js.native
+  var outlineWidth: Any = js.native
   
   var overflow: String = js.native
   
@@ -451,13 +451,13 @@ trait HTMLRuleStyle extends StObject {
   
   var padding: String = js.native
   
-  var paddingBottom: js.Any = js.native
+  var paddingBottom: Any = js.native
   
-  var paddingLeft: js.Any = js.native
+  var paddingLeft: Any = js.native
   
-  var paddingRight: js.Any = js.native
+  var paddingRight: Any = js.native
   
-  var paddingTop: js.Any = js.native
+  var paddingTop: Any = js.native
   
   var pageBreakAfter: String = js.native
   
@@ -465,9 +465,9 @@ trait HTMLRuleStyle extends StObject {
   
   var pageBreakInside: String = js.native
   
-  val parentRule: js.Any = js.native
+  val parentRule: Any = js.native
   
-  var perspective: js.Any = js.native
+  var perspective: Any = js.native
   
   var perspectiveOrigin: String = js.native
   
@@ -489,7 +489,7 @@ trait HTMLRuleStyle extends StObject {
   
   def removeProperty(bstrPropertyName: String): String = js.native
   
-  var right: js.Any = js.native
+  var right: Any = js.native
   
   var rubyAlign: String = js.native
   
@@ -497,29 +497,29 @@ trait HTMLRuleStyle extends StObject {
   
   var rubyPosition: String = js.native
   
-  var scrollbar3dLightColor: js.Any = js.native
+  var scrollbar3dLightColor: Any = js.native
   
-  var scrollbarArrowColor: js.Any = js.native
+  var scrollbarArrowColor: Any = js.native
   
-  var scrollbarBaseColor: js.Any = js.native
+  var scrollbarBaseColor: Any = js.native
   
-  var scrollbarDarkShadowColor: js.Any = js.native
+  var scrollbarDarkShadowColor: Any = js.native
   
-  var scrollbarFaceColor: js.Any = js.native
+  var scrollbarFaceColor: Any = js.native
   
-  var scrollbarHighlightColor: js.Any = js.native
+  var scrollbarHighlightColor: Any = js.native
   
-  var scrollbarShadowColor: js.Any = js.native
+  var scrollbarShadowColor: Any = js.native
   
-  var scrollbarTrackColor: js.Any = js.native
+  var scrollbarTrackColor: Any = js.native
   
   /** @param lFlags [lFlags=1] */
-  def setAttribute(strAttributeName: String, AttributeValue: js.Any): Unit = js.native
-  def setAttribute(strAttributeName: String, AttributeValue: js.Any, lFlags: Double): Unit = js.native
+  def setAttribute(strAttributeName: String, AttributeValue: Any): Unit = js.native
+  def setAttribute(strAttributeName: String, AttributeValue: Any, lFlags: Double): Unit = js.native
   
   /** @param pvarPropertyPriority [pvarPropertyPriority=''] */
-  def setProperty(bstrPropertyName: String, pvarPropertyValue: js.Any): Unit = js.native
-  def setProperty(bstrPropertyName: String, pvarPropertyValue: js.Any, pvarPropertyPriority: js.Any): Unit = js.native
+  def setProperty(bstrPropertyName: String, pvarPropertyValue: Any): Unit = js.native
+  def setProperty(bstrPropertyName: String, pvarPropertyValue: Any, pvarPropertyPriority: Any): Unit = js.native
   
   var styleFloat: String = js.native
   
@@ -543,15 +543,15 @@ trait HTMLRuleStyle extends StObject {
   
   var textDecorationUnderline: Boolean = js.native
   
-  var textIndent: js.Any = js.native
+  var textIndent: Any = js.native
   
   var textJustify: String = js.native
   
   var textJustifyTrim: String = js.native
   
-  var textKashida: js.Any = js.native
+  var textKashida: Any = js.native
   
-  var textKashidaSpace: js.Any = js.native
+  var textKashidaSpace: Any = js.native
   
   var textOverflow: String = js.native
   
@@ -561,7 +561,7 @@ trait HTMLRuleStyle extends StObject {
   
   var textUnderlinePosition: String = js.native
   
-  var top: js.Any = js.native
+  var top: Any = js.native
   
   var touchAction: String = js.native
   
@@ -583,7 +583,7 @@ trait HTMLRuleStyle extends StObject {
   
   var unicodeBidi: String = js.native
   
-  var verticalAlign: js.Any = js.native
+  var verticalAlign: Any = js.native
   
   var visibility: String = js.native
   
@@ -615,7 +615,7 @@ trait HTMLRuleStyle extends StObject {
   
   var webkitBackgroundClip: String = js.native
   
-  var webkitBackgroundColor: js.Any = js.native
+  var webkitBackgroundColor: Any = js.native
   
   var webkitBackgroundImage: String = js.native
   
@@ -623,9 +623,9 @@ trait HTMLRuleStyle extends StObject {
   
   var webkitBackgroundPosition: String = js.native
   
-  var webkitBackgroundPositionX: js.Any = js.native
+  var webkitBackgroundPositionX: Any = js.native
   
-  var webkitBackgroundPositionY: js.Any = js.native
+  var webkitBackgroundPositionY: Any = js.native
   
   var webkitBackgroundRepeat: String = js.native
   
@@ -647,9 +647,9 @@ trait HTMLRuleStyle extends StObject {
   
   var webkitBoxDirection: String = js.native
   
-  var webkitBoxFlex: js.Any = js.native
+  var webkitBoxFlex: Any = js.native
   
-  var webkitBoxOrdinalGroup: js.Any = js.native
+  var webkitBoxOrdinalGroup: Any = js.native
   
   var webkitBoxOrient: String = js.native
   
@@ -657,7 +657,7 @@ trait HTMLRuleStyle extends StObject {
   
   var webkitBoxSizing: String = js.native
   
-  var webkitTextSizeAdjust: js.Any = js.native
+  var webkitTextSizeAdjust: Any = js.native
   
   var webkitTransform: String = js.native
   
@@ -677,19 +677,19 @@ trait HTMLRuleStyle extends StObject {
   
   var whiteSpace: String = js.native
   
-  var widows: js.Any = js.native
+  var widows: Any = js.native
   
-  var width: js.Any = js.native
+  var width: Any = js.native
   
   var wordBreak: String = js.native
   
-  var wordSpacing: js.Any = js.native
+  var wordSpacing: Any = js.native
   
   var wordWrap: String = js.native
   
   var writingMode: String = js.native
   
-  var zIndex: js.Any = js.native
+  var zIndex: Any = js.native
   
-  var zoom: js.Any = js.native
+  var zoom: Any = js.native
 }

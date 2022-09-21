@@ -43,7 +43,7 @@ object EventDefinition {
     
     inline def setChildEventsUndefined: Self = StObject.set(x, "childEvents", js.undefined)
     
-    inline def setChildEventsVarargs(value: EventChild*): Self = StObject.set(x, "childEvents", js.Array(value :_*))
+    inline def setChildEventsVarargs(value: EventChild*): Self = StObject.set(x, "childEvents", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

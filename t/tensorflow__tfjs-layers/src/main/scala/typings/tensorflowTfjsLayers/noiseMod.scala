@@ -13,7 +13,7 @@ object noiseMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "AlphaDropout")
   @js.native
-  class AlphaDropout protected () extends Layer {
+  open class AlphaDropout protected () extends Layer {
     def this(args: AlphaDropoutArgs) = this()
     
     def _getNoiseShape(inputs: js.Array[Tensor[Rank]]): js.Array[Double] = js.native
@@ -39,7 +39,7 @@ object noiseMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "GaussianDropout")
   @js.native
-  class GaussianDropout protected () extends Layer {
+  open class GaussianDropout protected () extends Layer {
     def this(args: GaussianDropoutArgs) = this()
     
     val rate: Double = js.native
@@ -60,7 +60,7 @@ object noiseMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "GaussianNoise")
   @js.native
-  class GaussianNoise protected () extends Layer {
+  open class GaussianNoise protected () extends Layer {
     def this(args: GaussianNoiseArgs) = this()
     
     val stddev: Double = js.native
@@ -105,7 +105,7 @@ object noiseMod {
       
       inline def setNoiseShapeUndefined: Self = StObject.set(x, "noiseShape", js.undefined)
       
-      inline def setNoiseShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "noiseShape", js.Array(value :_*))
+      inline def setNoiseShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "noiseShape", js.Array(value*))
       
       inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     }

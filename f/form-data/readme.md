@@ -1,7 +1,7 @@
 
 # Scala.js typings for form-data
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 A library to create readable "multipart/form-data" streams. Can be used to submit forms and file uploads to other web applications.
@@ -10,10 +10,10 @@ A library to create readable "multipart/form-data" streams. Can be used to submi
 | ------------------ | :-------------: |
 | Full name          | form-data |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 2942 |
-| # downloads        | 1310618546 |
-| # stars            | 61 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1451745133333334E8 |
+| # stars            | 2054.0 |
 
 ## Links
 - [Homepage](https://github.com/form-data/form-data#readme)

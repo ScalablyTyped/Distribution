@@ -29,7 +29,7 @@ object XMailMergeListener {
   inline def apply(
     acquire: () => Unit,
     notifyMailMergeEvent: MailMergeEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XMailMergeListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), notifyMailMergeEvent = js.Any.fromFunction1(notifyMailMergeEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

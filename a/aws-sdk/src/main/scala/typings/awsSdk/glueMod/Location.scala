@@ -34,18 +34,18 @@ object Location {
     
     inline def setDynamoDBUndefined: Self = StObject.set(x, "DynamoDB", js.undefined)
     
-    inline def setDynamoDBVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "DynamoDB", js.Array(value :_*))
+    inline def setDynamoDBVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "DynamoDB", js.Array(value*))
     
     inline def setJdbc(value: CodeGenNodeArgs): Self = StObject.set(x, "Jdbc", value.asInstanceOf[js.Any])
     
     inline def setJdbcUndefined: Self = StObject.set(x, "Jdbc", js.undefined)
     
-    inline def setJdbcVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "Jdbc", js.Array(value :_*))
+    inline def setJdbcVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "Jdbc", js.Array(value*))
     
     inline def setS3(value: CodeGenNodeArgs): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
     inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
     
-    inline def setS3Varargs(value: CodeGenNodeArg*): Self = StObject.set(x, "S3", js.Array(value :_*))
+    inline def setS3Varargs(value: CodeGenNodeArg*): Self = StObject.set(x, "S3", js.Array(value*))
   }
 }

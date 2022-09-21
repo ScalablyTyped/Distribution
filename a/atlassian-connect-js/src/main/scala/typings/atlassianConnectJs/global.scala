@@ -1,5 +1,8 @@
 package typings.atlassianConnectJs
 
+import typings.atlassianConnectJs.AP.RequestOptions
+import typings.atlassianConnectJs.AP.confluence.ContentProperty
+import typings.atlassianConnectJs.AP.customContent.EditComponent
 import typings.atlassianConnectJs.AP.dialog.Dialog
 import typings.atlassianConnectJs.AP.dialog.DialogButton
 import typings.atlassianConnectJs.AP.dialog.DialogOptions
@@ -8,18 +11,23 @@ import typings.atlassianConnectJs.AP.jira.WorkflowConfiguration
 import typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence
 import typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira
 import typings.atlassianConnectJs.anon.AtlassianAccountId
+import typings.atlassianConnectJs.anon.BinaryAttachment
+import typings.atlassianConnectJs.anon.BinaryAttachmentUrl
 import typings.atlassianConnectJs.anon.Body
+import typings.atlassianConnectJs.anon.Error
 import typings.atlassianConnectJs.anon.Fields
 import typings.atlassianConnectJs.anon.FullName
 import typings.atlassianConnectJs.anon.Jql
 import typings.atlassianConnectJs.anon.PartialDatePickerOptions
 import typings.atlassianConnectJs.anon.PartialNavigatorContext
-import typings.atlassianConnectJs.anon.PartialRequestOptions
 import typings.atlassianConnectJs.anon.Partialjqlstringheaderstr
 import typings.atlassianConnectJs.anon.Partialtitlestringbodystr
-import typings.atlassianConnectJs.anon.urlstringPartialRequestOp
+import typings.atlassianConnectJs.anon.Property
+import typings.atlassianConnectJs.anon.Url
+import typings.atlassianConnectJs.anon.`0`
 import typings.atlassianConnectJs.atlassianConnectJsStrings.cancel
 import typings.atlassianConnectJs.atlassianConnectJsStrings.submit
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,6 +46,126 @@ object global {
     inline def addRequestMarshal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMarshal")().asInstanceOf[Unit]
     
     /**
+      * A Confluence specific JavaScript module which provides functions to interact with the macro editor.
+      */
+    object confluence {
+      
+      @JSGlobal("AP.confluence")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Closes the macro editor, if it is open.
+        *
+        * This call does not save any modified parameters to the macro, and saveMacro should be called first if necessary.
+        * @example
+        * AP.confluence.closeMacroEditor();
+        */
+      inline def closeMacroEditor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeMacroEditor")().asInstanceOf[Unit]
+      
+      /**
+        * Closes the macro property panel, if it is open.
+        * @example
+        * AP.confluence.closeMacroPropertyPanel();
+        */
+      inline def closeMacroPropertyPanel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeMacroPropertyPanel")().asInstanceOf[Unit]
+      
+      /**
+        * Provides the Content Property with the given key, on the current Content, to the callback.
+        * @param key the key of the property to retrieve
+        * @param callback callback to be passed the content property
+        * @example
+        * AP.confluence.getContentProperty('propertyKey', function(property) {
+        *   alert(property);
+        * });
+        */
+      inline def getContentProperty(key: String, callback: js.Function1[/* property */ ContentProperty, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getContentProperty")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      /**
+        * Get the body saved in the saveMacro method.
+        * @param callback callback to be passed the macro body.
+        * @example
+        * AP.confluence.getMacroBody(function(body){
+        *   alert(body);
+        * });
+        */
+      inline def getMacroBody(callback: js.Function1[/* body */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getMacroBody")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      /**
+        * Get the data saved in the saveMacro method.
+        * @param callback to be passed the macro data.
+        * @example
+        * AP.confluence.getMacroData(function(data){
+        *   alert(data);
+        * });
+        */
+      inline def getMacroData(callback: js.Function1[/* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getMacroData")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      /**
+        * Provide handlers for property panel control events
+        *
+        * Event name components:
+        *
+        * `control-key`: "key" property provided for the custom control declared in the JSON descriptor
+        * `event-type`: type of user interaction, as described below
+        * `macro-key`: "key" property provided for the macro declared in the JSON descriptor
+        *
+        * Event types:
+        *
+        * `click`: the property panel control was clicked by the user
+        * @param eventBindings An object which specifies property panel events as keys and handler functions as values. The handler does not take any arguments.
+        * @example
+        * AP.confluence.onMacroPropertyPanelEvent({
+        *   "{event-type}.{control-key}.{macro-key}.macro.property-panel": function() {
+        *     // handle button click
+        *     AP.confluence.closeMacroPropertyPanel();
+        *   }
+        * });
+        */
+      inline def onMacroPropertyPanelEvent(eventBindings: Record[String, js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMacroPropertyPanelEvent")(eventBindings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      /**
+        * Save a macro with data that can be accessed when viewing the confluence page.
+        * @param macroParameters data to be saved with the macro.
+        * @param macroBody the macro body to be saved with the macro. If omitted, the existing body will remain untouched.
+        * @example
+        * AP.confluence.saveMacro({foo: 'bar'});
+        * AP.confluence.saveMacro({foo: 'bar'}, "a new macro body");
+        */
+      inline def saveMacro(macroParameters: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveMacro")(macroParameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def saveMacro(macroParameters: js.Object, macroBody: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveMacro")(macroParameters.asInstanceOf[js.Any], macroBody.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      /**
+        * Sets the provided Content Property against the current Content, sending the result to the callback.
+        * @param contentProperty the content property to create or update
+        * @param callback callback to be passed the result
+        * @example
+        * AP.confluence.setContentProperty({
+        *   key: 'propertyKey',
+        *   value: 'propertyValue',
+        *   version: {
+        *     number: 2
+        *   }
+        * }, function(result) {
+        *    alert(result.property); // the updated property, if successful
+        *    alert(result.error);    // if unsuccessful, the reason for the failure
+        * });
+        */
+      inline def setContentProperty(contentProperty: ContentProperty, callback: js.Function1[/* result */ Property | Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setContentProperty")(contentProperty.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      /**
+        * Raise contentProperty.update event for the Content Property with the given key on the current Content. It also provide content property to the callback like getContentProperty does.
+        * @param key the key of the property to retrieve
+        * @param callback callback to be passed the content property
+        * @example
+        * AP.confluence.syncPropertyFromServer('propertyKey', function(property) {
+        *   alert(property);
+        * });
+        */
+      inline def syncPropertyFromServer(key: String, callback: js.Function1[/* property */ ContentProperty, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncPropertyFromServer")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    }
+    
+    /**
       * A JavaScript module which provides functions for the current product context.
       */
     object context {
@@ -46,12 +174,14 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
+      inline def getContext(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[js.Promise[Any]]
       /**
         * Retrieves the current user context containing details such as space key, issue id, etc.
         * @param callback the callback that handles the response
         */
-      inline def getContext(callback: js.Function1[/* context */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getContext(callback: js.Function1[/* context */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
+      inline def getToken(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[js.Promise[String]]
       /**
         * Retrieves the current user context as a JWT token containing details such as space key, issue id, etc. Throws an error if add-on does not support JWT authentication
         * @param callback the callback that handles the response
@@ -88,6 +218,24 @@ object global {
         * @param expires number of days before cookie expires
         */
       inline def save(name: String, value: String, expires: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], expires.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    }
+    
+    /**
+      * A Confluence specific JavaScript module which provides functions to interact with the custom content.
+      */
+    object customContent {
+      
+      @JSGlobal("AP.customContent")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Intercept edit component events of custom content.
+        * If the intercept function was invoked for an event then Confluence will wait for the data from the corresponding callback function up to 10 seconds.
+        * If add-on didn't return data, a timeout error message will be shown.
+        * @return EditComponent
+        */
+      inline def getEditComponent(): EditComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditComponent")().asInstanceOf[EditComponent]
     }
     
     inline def defineGlobal(module: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineGlobal")(module.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -133,13 +281,11 @@ object global {
       /**
         * Returns the button that was requested (either cancel or submit). If the requested button does not exist, an empty Object will be returned instead.
         */
-      inline def getButton_cancel(button: cancel): DialogButton | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getButton")(button.asInstanceOf[js.Any]).asInstanceOf[DialogButton | js.Object]
-      
-      inline def getButton_submit(button: submit): DialogButton | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getButton")(button.asInstanceOf[js.Any]).asInstanceOf[DialogButton | js.Object]
+      inline def getButton(button: cancel | submit): DialogButton | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getButton")(button.asInstanceOf[js.Any]).asInstanceOf[DialogButton | js.Object]
       
       /**
         * Passes the custom data Object to the specified callback function.
-        * @param customData Callback method to be executed with the custom data.
+        * @param callback Callback method to be executed with the custom data.
         */
       inline def getCustomData(callback: js.Function1[/* customData */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomData")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
@@ -207,13 +353,13 @@ object global {
         * Removes an `any` event listener.
         * @param listener A listener callback to unsubscribe from any event name
         */
-      inline def offAny(listener: js.Function1[/* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAny")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def offAny(listener: js.Function2[/* name */ String, /* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAny")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Removes an `anyPublic` event listener.
         * @param listener A listener callback to unsubscribe from any event name
         */
-      inline def offAnyPublic(listener: js.Function1[/* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAnyPublic")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def offAnyPublic(listener: js.Function2[/* name */ String, /* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAnyPublic")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Removes a particular listener for a public event.
@@ -237,7 +383,7 @@ object global {
         * Listener arguments begin with the event name, followed by any arguments passed to `events.emit`, followed by an object describing the complete event information.
         * @param listener A listener callback to subscribe for any event name
         */
-      inline def onAny(listener: js.Function1[/* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAny")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def onAny(listener: js.Function2[/* name */ String, /* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAny")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Adds a listener for all occurrences of any event, regardless of name.
@@ -249,8 +395,8 @@ object global {
         * @param filter A filter function to filter the events. Callback will always be called when a matching event occurs if the filter is unspecified
         */
       inline def onAnyPublic(
-        listener: js.Function1[/* data */ js.Object, Unit],
-        filter: js.Function1[/* toCompare */ js.Any, Boolean]
+        listener: js.Function2[/* name */ String, /* data */ js.Object, Unit],
+        filter: js.Function1[/* toCompare */ Any, Boolean]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAnyPublic")(listener.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
@@ -266,7 +412,7 @@ object global {
       inline def onPublic(
         name: String,
         listener: js.Function1[/* data */ js.Object, Unit],
-        filter: js.Function1[/* toCompare */ js.Any, Boolean]
+        filter: js.Function1[/* toCompare */ Any, Boolean]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onPublic")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
@@ -291,7 +437,7 @@ object global {
       inline def oncePublic(
         name: String,
         listener: js.Function1[/* data */ js.Object, Unit],
-        filter: js.Function1[/* toCompare */ js.Any, Boolean]
+        filter: js.Function1[/* toCompare */ Any, Boolean]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("oncePublic")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
@@ -381,6 +527,8 @@ object global {
       /**
         * Gets the selected text on the page.
         * @param callback method to be executed with the selected text.
+        * @deprecated This method has been deprecated by Atlassian for security reasons and will always return an empty string as of 2022-07-11.
+        * @see {@link https://community.developer.atlassian.com/t/deprecation-of-connect-js-getselectedtext-api-for-security-reasons/54968}
         */
       inline def getSelectedText(callback: js.Function1[/* selection */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedText")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
@@ -475,54 +623,6 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @JSGlobal("AP.navigator.NavigatorTargetConfluence")
-      @js.native
-      object NavigatorTargetConfluence extends StObject {
-        
-        @JSBracketAccess
-        def apply(value: String): js.UndefOr[typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence & String] = js.native
-        
-        /* "addonModule" */ val addonModule: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.addonModule & String = js.native
-        
-        /* "contentedit" */ val contentedit: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.contentedit & String = js.native
-        
-        /* "contentlist" */ val contentlist: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.contentlist & String = js.native
-        
-        /* "contentview" */ val contentview: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.contentview & String = js.native
-        
-        /* "dashboard" */ val dashboard: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.dashboard & String = js.native
-        
-        /* "site" */ val site: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.site & String = js.native
-        
-        /* "spacetools" */ val spacetools: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.spacetools & String = js.native
-        
-        /* "spaceview" */ val spaceview: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.spaceview & String = js.native
-        
-        /* "userProfile" */ val userProfile: typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence.userProfile & String = js.native
-      }
-      
-      @JSGlobal("AP.navigator.NavigatorTargetJira")
-      @js.native
-      object NavigatorTargetJira extends StObject {
-        
-        @JSBracketAccess
-        def apply(value: String): js.UndefOr[typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira & String] = js.native
-        
-        /* "addonModule" */ val addonModule: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.addonModule & String = js.native
-        
-        /* "dashboard" */ val dashboard: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.dashboard & String = js.native
-        
-        /* "issue" */ val issue: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.issue & String = js.native
-        
-        /* "projectAdminSummary" */ val projectAdminSummary: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.projectAdminSummary & String = js.native
-        
-        /* "projectAdminTabPanel" */ val projectAdminTabPanel: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.projectAdminTabPanel & String = js.native
-        
-        /* "site" */ val site: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.site & String = js.native
-        
-        /* "userProfile" */ val userProfile: typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira.userProfile & String = js.native
-      }
-      
       /**
         * Returns the context of the current page within the host application.
         *
@@ -555,14 +655,14 @@ object global {
       inline def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
     }
     
-    inline def request(options: urlstringPartialRequestOp): js.Promise[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Body]]
+    inline def request(options: Url & RequestOptions & BinaryAttachmentUrl): js.Promise[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Body]]
     /**
       * Execute an XMLHttpRequest as a Promise, or via callbacks, in the context of the host application. The format of the response (dataType) will always be set to "text" - even if specified.
       * @param url Either the URI to request or an options object (as below) containing at least a 'url' property; This value should be relative to the context path of the host application.
       * @param options The options of the request.
       */
     inline def request(url: String): js.Promise[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Body]]
-    inline def request(url: String, options: PartialRequestOptions): js.Promise[Body] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Body]]
+    inline def request(url: String, options: BinaryAttachment & RequestOptions & `0`): js.Promise[Body] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Body]]
     
     /**
       * Resize the iframe to a specified width and height.

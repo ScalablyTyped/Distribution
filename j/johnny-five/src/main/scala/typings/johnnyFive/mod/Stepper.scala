@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Stepper")
 @js.native
-class Stepper protected () extends StObject {
+open class Stepper protected () extends StObject {
   def this(option: String) = this()
   def this(option: Double) = this()
   def this(option: StepperOption) = this()
@@ -30,7 +30,7 @@ class Stepper protected () extends StObject {
   @JSName("on")
   def on_change(event: change, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_data(event: data, cb: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+  def on_data(event: data, cb: js.Function1[/* data */ Any, Unit]): this.type = js.native
   
   def rpm(): Stepper = js.native
   def rpm(value: Double): Stepper = js.native
@@ -38,7 +38,7 @@ class Stepper protected () extends StObject {
   def speed(): Stepper = js.native
   def speed(value: Double): Stepper = js.native
   
-  def step(stepsOrOpts: js.Any, cb: js.Function0[Unit]): Unit = js.native
+  def step(stepsOrOpts: Any, cb: js.Function0[Unit]): Unit = js.native
   
   def within(range: js.Array[Double], cb: js.Function0[Unit]): Unit = js.native
   def within(range: js.Array[Double], unit: String, cb: js.Function0[Unit]): Unit = js.native
@@ -47,7 +47,7 @@ object Stepper {
   
   @JSImport("johnny-five", "Stepper.TYPE")
   @js.native
-  class TYPE () extends StObject
+  open class TYPE () extends StObject
   /* static members */
   object TYPE {
     

@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON request template for renaming a feature.
-  */
 trait SchemaFeatureRename extends StObject {
   
   /**
     * New name of the feature.
     */
-  var newName: js.UndefOr[String] = js.undefined
+  var newName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFeatureRename {
   
@@ -24,6 +21,8 @@ object SchemaFeatureRename {
   extension [Self <: SchemaFeatureRename](x: Self) {
     
     inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
+    
+    inline def setNewNameNull: Self = StObject.set(x, "newName", null)
     
     inline def setNewNameUndefined: Self = StObject.set(x, "newName", js.undefined)
   }

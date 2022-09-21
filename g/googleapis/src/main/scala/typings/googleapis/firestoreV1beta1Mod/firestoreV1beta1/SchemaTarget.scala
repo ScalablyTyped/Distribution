@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A specification of a set of documents to listen to.
-  */
 trait SchemaTarget extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaTarget extends StObject {
   /**
     * If the target should be removed once it is current and consistent.
     */
-  var once: js.UndefOr[Boolean] = js.undefined
+  var once: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * A target specified by a query.
@@ -25,25 +22,19 @@ trait SchemaTarget extends StObject {
   var query: js.UndefOr[SchemaQueryTarget] = js.undefined
   
   /**
-    * Start listening after a specific `read_time`.  The client must know the
-    * state of matching documents at this time.
+    * Start listening after a specific `read_time`. The client must know the state of matching documents at this time.
     */
-  var readTime: js.UndefOr[String] = js.undefined
+  var readTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A resume token from a prior TargetChange for an identical target.  Using
-    * a resume token with a different target is unsupported and may fail.
+    * A resume token from a prior TargetChange for an identical target. Using a resume token with a different target is unsupported and may fail.
     */
-  var resumeToken: js.UndefOr[String] = js.undefined
+  var resumeToken: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A client provided target ID.  If not set, the server will assign an ID
-    * for the target.  Used for resuming a target without changing IDs. The IDs
-    * can either be client-assigned or be server-assigned in a previous stream.
-    * All targets with client provided IDs must be added before adding a target
-    * that needs a server-assigned id.
+    * The target ID that identifies the target on the stream. Must be a positive number and non-zero.
     */
-  var targetId: js.UndefOr[Double] = js.undefined
+  var targetId: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaTarget {
   
@@ -60,6 +51,8 @@ object SchemaTarget {
     
     inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
+    inline def setOnceNull: Self = StObject.set(x, "once", null)
+    
     inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     
     inline def setQuery(value: SchemaQueryTarget): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
@@ -68,13 +61,19 @@ object SchemaTarget {
     
     inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
+    inline def setReadTimeNull: Self = StObject.set(x, "readTime", null)
+    
     inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
     inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     
+    inline def setResumeTokenNull: Self = StObject.set(x, "resumeToken", null)
+    
     inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
     
     inline def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    
+    inline def setTargetIdNull: Self = StObject.set(x, "targetId", null)
     
     inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }

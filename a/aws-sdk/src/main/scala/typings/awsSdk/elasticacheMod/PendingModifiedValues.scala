@@ -27,7 +27,12 @@ trait PendingModifiedValues extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The new number of cache nodes for the cluster. For clusters running Redis, this value must be 1. For clusters running Memcached, this value must be between 1 and 20.
+    * The log delivery configurations being modified 
+    */
+  var LogDeliveryConfigurations: js.UndefOr[PendingLogDeliveryConfigurationList] = js.undefined
+  
+  /**
+    * The new number of cache nodes for the cluster. For clusters running Redis, this value must be 1. For clusters running Memcached, this value must be between 1 and 40.
     */
   var NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined
 }
@@ -48,7 +53,7 @@ object PendingModifiedValues {
     
     inline def setCacheNodeIdsToRemoveUndefined: Self = StObject.set(x, "CacheNodeIdsToRemove", js.undefined)
     
-    inline def setCacheNodeIdsToRemoveVarargs(value: String*): Self = StObject.set(x, "CacheNodeIdsToRemove", js.Array(value :_*))
+    inline def setCacheNodeIdsToRemoveVarargs(value: String*): Self = StObject.set(x, "CacheNodeIdsToRemove", js.Array(value*))
     
     inline def setCacheNodeType(value: String): Self = StObject.set(x, "CacheNodeType", value.asInstanceOf[js.Any])
     
@@ -57,6 +62,12 @@ object PendingModifiedValues {
     inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    
+    inline def setLogDeliveryConfigurations(value: PendingLogDeliveryConfigurationList): Self = StObject.set(x, "LogDeliveryConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setLogDeliveryConfigurationsUndefined: Self = StObject.set(x, "LogDeliveryConfigurations", js.undefined)
+    
+    inline def setLogDeliveryConfigurationsVarargs(value: PendingLogDeliveryConfiguration*): Self = StObject.set(x, "LogDeliveryConfigurations", js.Array(value*))
     
     inline def setNumCacheNodes(value: IntegerOptional): Self = StObject.set(x, "NumCacheNodes", value.asInstanceOf[js.Any])
     

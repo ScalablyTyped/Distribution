@@ -42,7 +42,7 @@ trait OverrideParams extends StObject {
   
   var signal: js.UndefOr[AbortSignal | Null] = js.undefined
   
-  var window: js.UndefOr[js.Any] = js.undefined
+  var window: js.UndefOr[Null] = js.undefined
 }
 object OverrideParams {
   
@@ -71,7 +71,7 @@ object OverrideParams {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     
@@ -110,9 +110,5 @@ object OverrideParams {
     inline def setSignalNull: Self = StObject.set(x, "signal", null)
     
     inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
-    
-    inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
-    
-    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

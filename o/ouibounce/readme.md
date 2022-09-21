@@ -10,10 +10,10 @@ Show some HTML before visitors leave your site.
 | ------------------ | :-------------: |
 | Full name          | ouibounce |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 187996 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17826.333333333332 |
+| # stars            | 2301.0 |
 
 ## Links
 - [Homepage](https://github.com/carlsednaoui/ouibounce)

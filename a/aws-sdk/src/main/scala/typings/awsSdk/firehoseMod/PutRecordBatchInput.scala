@@ -29,6 +29,6 @@ object PutRecordBatchInput {
     
     inline def setRecords(value: PutRecordBatchRequestEntryList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
-    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value*))
   }
 }

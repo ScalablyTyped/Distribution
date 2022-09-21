@@ -13,11 +13,11 @@ trait AxePlugin extends StObject {
   
   var id: String
   
-  def run(args: js.Any*): js.Any
+  def run(args: Any*): Any
 }
 object AxePlugin {
   
-  inline def apply(commands: js.Array[Callback], id: String, run: /* repeated */ js.Any => js.Any): AxePlugin = {
+  inline def apply(commands: js.Array[Callback], id: String, run: /* repeated */ Any => Any): AxePlugin = {
     val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], run = js.Any.fromFunction1(run))
     __obj.asInstanceOf[AxePlugin]
   }
@@ -30,10 +30,10 @@ object AxePlugin {
     
     inline def setCommands(value: js.Array[Callback]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    inline def setCommandsVarargs(value: Callback*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: Callback*): Self = StObject.set(x, "commands", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setRun(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    inline def setRun(value: /* repeated */ Any => Any): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }
 }

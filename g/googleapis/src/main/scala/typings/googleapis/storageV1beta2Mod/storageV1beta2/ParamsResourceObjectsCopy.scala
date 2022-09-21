@@ -1,9 +1,5 @@
 package typings.googleapis.storageV1beta2Mod.storageV1beta2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,73 +9,57 @@ trait ParamsResourceObjectsCopy
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Name of the bucket in which to store the new object. Overrides the
-    * provided object metadata's bucket value, if any.
+    * Name of the bucket in which to store the new object. Overrides the provided object metadata's bucket value, if any.
     */
   var destinationBucket: js.UndefOr[String] = js.undefined
   
   /**
-    * Name of the new object. Required when the object metadata is not
-    * otherwise provided. Overrides the object metadata's name value, if any.
+    * Name of the new object. Required when the object metadata is not otherwise provided. Overrides the object metadata's name value, if any.
     */
   var destinationObject: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the destination object's
-    * current generation matches the given value.
+    * Makes the operation conditional on whether the destination object's current generation matches the given value.
     */
   var ifGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the destination object's
-    * current generation does not match the given value.
+    * Makes the operation conditional on whether the destination object's current generation does not match the given value.
     */
   var ifGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the destination object's
-    * current metageneration matches the given value.
+    * Makes the operation conditional on whether the destination object's current metageneration matches the given value.
     */
   var ifMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the destination object's
-    * current metageneration does not match the given value.
+    * Makes the operation conditional on whether the destination object's current metageneration does not match the given value.
     */
   var ifMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the source object's generation
-    * matches the given value.
+    * Makes the operation conditional on whether the source object's generation matches the given value.
     */
   var ifSourceGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the source object's generation
-    * does not match the given value.
+    * Makes the operation conditional on whether the source object's generation does not match the given value.
     */
   var ifSourceGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the source object's current
-    * metageneration matches the given value.
+    * Makes the operation conditional on whether the source object's current metageneration matches the given value.
     */
   var ifSourceMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the source object's current
-    * metageneration does not match the given value.
+    * Makes the operation conditional on whether the source object's current metageneration does not match the given value.
     */
   var ifSourceMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Set of properties to return. Defaults to noAcl, unless the object
-    * resource specifies the acl property, when it defaults to full.
+    * Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.
     */
   var projection: js.UndefOr[String] = js.undefined
   
@@ -94,8 +74,7 @@ trait ParamsResourceObjectsCopy
   var sourceBucket: js.UndefOr[String] = js.undefined
   
   /**
-    * If present, selects a specific revision of the source object (as opposed
-    * to the latest version, the default).
+    * If present, selects a specific revision of the source object (as opposed to the latest version, the default).
     */
   var sourceGeneration: js.UndefOr[String] = js.undefined
   
@@ -112,10 +91,6 @@ object ParamsResourceObjectsCopy {
   }
   
   extension [Self <: ParamsResourceObjectsCopy](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDestinationBucket(value: String): Self = StObject.set(x, "destinationBucket", value.asInstanceOf[js.Any])
     

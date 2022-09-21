@@ -71,7 +71,7 @@ object mod {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

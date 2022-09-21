@@ -9,10 +9,10 @@ Chai Things adds support to [Chai](http://chaijs.com/) for assertions on array e
 | ------------------ | :-------------: |
 | Full name          | chai-things |
 | Keywords           | chai, chai-plugin, browser, array, things |
-| # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 2551528 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 296451.0 |
+| # stars            | 104.0 |
 
 ## Links
 - [Homepage](https://github.com/RubenVerborgh/Chai-Things#readme)

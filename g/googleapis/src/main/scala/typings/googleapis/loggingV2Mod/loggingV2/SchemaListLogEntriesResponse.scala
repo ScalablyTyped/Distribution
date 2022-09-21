@@ -4,30 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result returned from ListLogEntries.
-  */
 trait SchemaListLogEntriesResponse extends StObject {
   
   /**
-    * A list of log entries. If entries is empty, nextPageToken may still be
-    * returned, indicating that more entries may exist. See nextPageToken for
-    * more information.
+    * A list of log entries. If entries is empty, nextPageToken may still be returned, indicating that more entries may exist. See nextPageToken for more information.
     */
   var entries: js.UndefOr[js.Array[SchemaLogEntry]] = js.undefined
   
   /**
-    * If there might be more results than those appearing in this response,
-    * then nextPageToken is included. To get the next set of results, call this
-    * method again using the value of nextPageToken as pageToken.If a value for
-    * next_page_token appears and the entries field is empty, it means that the
-    * search found no log entries so far but it did not have time to search all
-    * the possible log entries. Retry the method with this value for page_token
-    * to continue the search. Alternatively, consider speeding up the search by
-    * changing your filter to specify a single log name or resource type, or to
-    * narrow the time range of the search.
+    * If there might be more results than those appearing in this response, then nextPageToken is included. To get the next set of results, call this method again using the value of nextPageToken as pageToken.If a value for next_page_token appears and the entries field is empty, it means that the search found no log entries so far but it did not have time to search all the possible log entries. Retry the method with this value for page_token to continue the search. Alternatively, consider speeding up the search by changing your filter to specify a single log name or resource type, or to narrow the time range of the search.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListLogEntriesResponse {
   
@@ -42,9 +29,11 @@ object SchemaListLogEntriesResponse {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: SchemaLogEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: SchemaLogEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

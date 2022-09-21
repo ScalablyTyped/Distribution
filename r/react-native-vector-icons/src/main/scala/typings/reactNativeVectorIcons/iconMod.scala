@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.reactNative.mod.BackgroundPropType
 import typings.reactNative.mod.ColorValue
-import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.NativeSyntheticEvent
+import typings.reactNative.mod.TVProps
 import typings.reactNative.mod.TabBarIOSItemProps
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextProps
@@ -22,14 +22,13 @@ object iconMod {
   
   @JSImport("react-native-vector-icons/Icon", "Icon")
   @js.native
-  class Icon protected ()
-    extends Component[IconProps, js.Any, js.Any] {
+  open class Icon protected () extends Component[IconProps, Any, Any] {
     def this(props: IconProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IconProps, context: js.Any) = this()
+    def this(props: IconProps, context: Any) = this()
   }
   /* static members */
   object Icon {
@@ -40,61 +39,52 @@ object iconMod {
     
     @JSImport("react-native-vector-icons/Icon", "Icon.Button")
     @js.native
-    class Button protected ()
-      extends Component[IconButtonProps, js.Any, js.Any] {
+    open class Button protected () extends Component[IconButtonProps, Any, Any] {
       def this(props: IconButtonProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: IconButtonProps, context: js.Any) = this()
+      def this(props: IconButtonProps, context: Any) = this()
     }
     
     @JSImport("react-native-vector-icons/Icon", "Icon.TabBarItem")
     @js.native
-    class TabBarItem protected ()
-      extends Component[TabBarItemIOSProps, js.Any, js.Any] {
+    open class TabBarItem protected () extends Component[TabBarItemIOSProps, Any, Any] {
       def this(props: TabBarItemIOSProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: TabBarItemIOSProps, context: js.Any) = this()
+      def this(props: TabBarItemIOSProps, context: Any) = this()
     }
     
     @JSImport("react-native-vector-icons/Icon", "Icon.TabBarItemIOS")
     @js.native
-    class TabBarItemIOS protected ()
-      extends Component[TabBarItemIOSProps, js.Any, js.Any] {
+    open class TabBarItemIOS protected () extends Component[TabBarItemIOSProps, Any, Any] {
       def this(props: TabBarItemIOSProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: TabBarItemIOSProps, context: js.Any) = this()
+      def this(props: TabBarItemIOSProps, context: Any) = this()
     }
     
-    @JSImport("react-native-vector-icons/Icon", "Icon.ToolbarAndroid")
-    @js.native
-    class ToolbarAndroid protected ()
-      extends Component[ToolbarAndroidProps, js.Any, js.Any] {
-      def this(props: ToolbarAndroidProps) = this()
-      /**
-        * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
-        */
-      def this(props: ToolbarAndroidProps, context: js.Any) = this()
-    }
+    inline def getFontFamily(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontFamily")().asInstanceOf[String]
     
     inline def getImageSource(name: String): js.Promise[ImageSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageSource]]
     inline def getImageSource(name: String, size: Double): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
-    inline def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
-    inline def getImageSource(name: String, size: Unit, color: String): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    inline def getImageSource(name: String, size: Double, color: Double): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    inline def getImageSource(name: String, size: Double, color: ColorValue): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    inline def getImageSource(name: String, size: Unit, color: Double): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    inline def getImageSource(name: String, size: Unit, color: ColorValue): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
     
     inline def getImageSourceSync(name: String): ImageSource = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any]).asInstanceOf[ImageSource]
     inline def getImageSourceSync(name: String, size: Double): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
-    inline def getImageSourceSync(name: String, size: Double, color: String): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
-    inline def getImageSourceSync(name: String, size: Unit, color: String): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    inline def getImageSourceSync(name: String, size: Double, color: Double): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    inline def getImageSourceSync(name: String, size: Double, color: ColorValue): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    inline def getImageSourceSync(name: String, size: Unit, color: Double): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    inline def getImageSourceSync(name: String, size: Unit, color: ColorValue): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
     
     inline def getRawGlyphMap(): StringDictionary[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawGlyphMap")().asInstanceOf[StringDictionary[Double]]
     
@@ -108,11 +98,12 @@ object iconMod {
   - typings.reactNative.mod.AccessibilityPropsIOS because Already inherited
   - typings.reactNative.mod.AccessibilityPropsAndroid because Already inherited
   - typings.reactNative.mod.AccessibilityProps because Already inherited
-  - typings.reactNative.mod.TouchableWithoutFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, style, testID. Inlined onPressOut, hitSlop, onFocus, delayLongPress, onBlur, delayPressOut, disabled, pressRetentionOffset, delayPressIn, onPressIn
-  - typings.reactNative.mod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, style, testID. Inlined useForeground, background
-  - typings.reactNative.mod.TouchableHighlightProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, style, testID. Inlined onShowUnderlay, onHideUnderlay, underlayColor, activeOpacity */ trait IconButtonProps
+  - typings.reactNative.mod.TouchableWithoutFeedbackProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, style, testID. Inlined hitSlop, onFocus, delayLongPress, onBlur, delayPressOut, disabled, pressRetentionOffset, delayPressIn
+  - typings.reactNative.mod.TouchableNativeFeedbackProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, style, testID. Inlined useForeground, background
+  - typings.reactNative.mod.TouchableHighlightProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, style, testID. Inlined onShowUnderlay, onHideUnderlay, underlayColor, activeOpacity */ trait IconButtonProps
     extends StObject
        with IconProps
+       with TVProps
        with TouchableWithoutFeedbackPropsIOS
        with TouchableWithoutFeedbackPropsAndroid {
     
@@ -142,7 +133,7 @@ object iconMod {
       *
       * @default '#007AFF'
       */
-    var backgroundColor: js.UndefOr[String] = js.undefined
+    var backgroundColor: js.UndefOr[ColorValue | Double] = js.undefined
     
     /**
       * Border radius of the button
@@ -209,10 +200,6 @@ object iconMod {
       */
     var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-    
-    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-    
     /**
       * Called immediately after the underlay is shown
       */
@@ -258,7 +245,7 @@ object iconMod {
       
       inline def setBackground(value: BackgroundPropType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ColorValue | Double): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
@@ -306,14 +293,6 @@ object iconMod {
       
       inline def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
       
-      inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
-      
-      inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
-      
-      inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
-      
-      inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
-      
       inline def setOnShowUnderlay(value: () => Unit): Self = StObject.set(x, "onShowUnderlay", js.Any.fromFunction0(value))
       
       inline def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
@@ -344,7 +323,7 @@ object iconMod {
       * Color of the icon
       *
       */
-    var color: js.UndefOr[String] = js.undefined
+    var color: js.UndefOr[ColorValue | Double] = js.undefined
     
     /**
       * Name of the icon to show
@@ -370,7 +349,7 @@ object iconMod {
     
     extension [Self <: IconProps](x: Self) {
       
-      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorValue | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -382,7 +361,7 @@ object iconMod {
     }
   }
   
-  type ImageSource = js.Any
+  type ImageSource = Any
   
   trait TabBarItemIOSProps
     extends StObject
@@ -392,7 +371,7 @@ object iconMod {
       * Color of the icon
       *
       */
-    var iconColor: js.UndefOr[String] = js.undefined
+    var iconColor: js.UndefOr[ColorValue | Double] = js.undefined
     
     /**
       * Name of the default icon (similar to TabBarIOS.Item icon)
@@ -432,7 +411,7 @@ object iconMod {
     
     extension [Self <: TabBarItemIOSProps](x: Self) {
       
-      inline def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
+      inline def setIconColor(value: ColorValue | Double): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
       
       inline def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
       
@@ -449,72 +428,6 @@ object iconMod {
       inline def setSelectedIconName(value: String): Self = StObject.set(x, "selectedIconName", value.asInstanceOf[js.Any])
       
       inline def setSelectedIconNameUndefined: Self = StObject.set(x, "selectedIconName", js.undefined)
-    }
-  }
-  
-  trait ToolbarAndroidProps
-    extends StObject
-       with typings.reactNative.mod.ToolbarAndroidProps {
-    
-    /**
-      * Color of the icons
-      *
-      * @default 'black'
-      */
-    var iconColor: String
-    
-    /**
-      * Size of the icons
-      *
-      * @default 24
-      */
-    var iconSize: Double
-    
-    /**
-      * Name of the navigation logo icon
-      * (similar to ToolbarAndroid logo)
-      *
-      */
-    var logoName: String
-    
-    /**
-      * Name of the navigation icon
-      * (similar to ToolbarAndroid navIcon)
-      *
-      */
-    var navIconName: String
-    
-    /**
-      * Name of the overflow icon
-      * (similar to ToolbarAndroid overflowIcon)
-      *
-      */
-    var overflowIconName: String
-  }
-  object ToolbarAndroidProps {
-    
-    inline def apply(
-      iconColor: String,
-      iconSize: Double,
-      logoName: String,
-      navIconName: String,
-      overflowIconName: String
-    ): ToolbarAndroidProps = {
-      val __obj = js.Dynamic.literal(iconColor = iconColor.asInstanceOf[js.Any], iconSize = iconSize.asInstanceOf[js.Any], logoName = logoName.asInstanceOf[js.Any], navIconName = navIconName.asInstanceOf[js.Any], overflowIconName = overflowIconName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ToolbarAndroidProps]
-    }
-    
-    extension [Self <: ToolbarAndroidProps](x: Self) {
-      
-      inline def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
-      
-      inline def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
-      
-      inline def setLogoName(value: String): Self = StObject.set(x, "logoName", value.asInstanceOf[js.Any])
-      
-      inline def setNavIconName(value: String): Self = StObject.set(x, "navIconName", value.asInstanceOf[js.Any])
-      
-      inline def setOverflowIconName(value: String): Self = StObject.set(x, "overflowIconName", value.asInstanceOf[js.Any])
     }
   }
 }

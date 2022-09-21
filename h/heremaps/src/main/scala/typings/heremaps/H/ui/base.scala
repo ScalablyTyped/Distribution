@@ -41,7 +41,7 @@ object base {
       * This method returns a previously stored arbitrary data from this element.
       * @returns {*} - the previously stored data object or null if not data was stored.
       */
-    def getData(): js.Any = js.native
+    def getData(): Any = js.native
     
     /**
       * This method returns the HTML element this UI element renders.
@@ -87,7 +87,7 @@ object base {
       * This method stores arbitrary data with this UI element.
       * @param data {*} - the data to be stored
       */
-    def setData(data: js.Any): Unit = js.native
+    def setData(data: Any): Unit = js.native
     
     /**
       * This method set's the disabled state of this UI element.
@@ -121,7 +121,7 @@ object base {
       * This method returns a previously stored arbitrary data from this element.
       * @returns {*} - the previously stored data object or null if not data was stored.
       */
-    def getData(): js.Any = js.native
+    def getData(): Any = js.native
     
     /**
       * This method returns the HTML element this UI element renders.
@@ -161,7 +161,7 @@ object base {
       * This method stores arbitrary data with this UI element.
       * @param data {*} - the data to be stored
       */
-    def setData(data: js.Any): Unit = js.native
+    def setData(data: Any): Unit = js.native
     
     /**
       * This method set's the disabled state of this UI element.

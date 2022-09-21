@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An event issued when a job seeker interacts with the application that
-  * implements Cloud Talent Solution.
-  */
 trait SchemaJobEvent extends StObject {
   
   /**
-    * Required.  The job name(s) associated with this event. For example, if
-    * this is an impression event, this field contains the identifiers of all
-    * jobs shown to the job seeker. If this was a view event, this field
-    * contains the identifier of the viewed job.
+    * Required. The job name(s) associated with this event. For example, if this is an impression event, this field contains the identifiers of all jobs shown to the job seeker. If this was a view event, this field contains the identifier of the viewed job.
     */
-  var jobs: js.UndefOr[js.Array[String]] = js.undefined
+  var jobs: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Required.  The type of the event (see JobEventType).
+    * Required. The type of the event (see JobEventType).
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaJobEvent {
   
@@ -34,11 +27,15 @@ object SchemaJobEvent {
     
     inline def setJobs(value: js.Array[String]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
+    inline def setJobsNull: Self = StObject.set(x, "jobs", null)
+    
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    inline def setJobsVarargs(value: String*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: String*): Self = StObject.set(x, "jobs", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

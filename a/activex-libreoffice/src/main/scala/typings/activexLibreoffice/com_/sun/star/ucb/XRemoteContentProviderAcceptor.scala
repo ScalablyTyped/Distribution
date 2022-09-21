@@ -44,7 +44,7 @@ object XRemoteContentProviderAcceptor {
   inline def apply(
     acquire: () => Unit,
     addRemoteContentProvider: (String, XMultiServiceFactory, SeqEquiv[String], XRemoteContentProviderDoneListener) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeRemoteContentProvider: String => Boolean
   ): XRemoteContentProviderAcceptor = {

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiGeoPoint")
 @js.native
-class KiiGeoPoint ()
+open class KiiGeoPoint ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiGeoPoint {
   

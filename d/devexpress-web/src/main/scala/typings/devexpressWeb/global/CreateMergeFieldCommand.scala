@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CreateMergeFieldCommand")
 @js.native
-class CreateMergeFieldCommand ()
+open class CreateMergeFieldCommand ()
   extends StObject
      with typings.devexpressWeb.CreateMergeFieldCommand {
   

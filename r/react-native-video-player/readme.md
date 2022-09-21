@@ -10,10 +10,10 @@ A video player for React Native with controls
 | ------------------ | :-------------: |
 | Full name          | react-native-video-player |
 | Keywords           | react-component, react-native, ios, android |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 78496 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30060.0 |
+| # stars            | 463.0 |
 
 ## Links
 - [Homepage](https://github.com/cornedor/react-native-video-player#readme)

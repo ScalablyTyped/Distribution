@@ -1,7 +1,7 @@
 
 # Scala.js typings for prom-client
 
-Typings are for version 12.0.0
+Typings are for version 14.1.0
 
 ## Library description:
 Client for prometheus
@@ -10,10 +10,10 @@ Client for prometheus
 | ------------------ | :-------------: |
 | Full name          | prom-client |
 | Keywords           | Prometheus, Metrics, Client |
-| # releases         | 8 |
-| # dependents       | 481 |
-| # downloads        | 25161186 |
-| # stars            | 9 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 5339366.333333333 |
+| # stars            | 2361.0 |
 
 ## Links
 - [Homepage](https://github.com/siimon/prom-client)

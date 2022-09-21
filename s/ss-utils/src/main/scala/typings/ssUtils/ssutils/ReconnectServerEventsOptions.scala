@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReconnectServerEventsOptions extends StObject {
   
-  var errorArgs: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var errorArgs: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var onerror: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var onerror: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
-  var onmessage: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var onmessage: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   var url: js.UndefOr[String] = js.undefined
 }
@@ -23,17 +23,17 @@ object ReconnectServerEventsOptions {
   
   extension [Self <: ReconnectServerEventsOptions](x: Self) {
     
-    inline def setErrorArgs(value: js.Array[js.Any]): Self = StObject.set(x, "errorArgs", value.asInstanceOf[js.Any])
+    inline def setErrorArgs(value: js.Array[Any]): Self = StObject.set(x, "errorArgs", value.asInstanceOf[js.Any])
     
     inline def setErrorArgsUndefined: Self = StObject.set(x, "errorArgs", js.undefined)
     
-    inline def setErrorArgsVarargs(value: js.Any*): Self = StObject.set(x, "errorArgs", js.Array(value :_*))
+    inline def setErrorArgsVarargs(value: Any*): Self = StObject.set(x, "errorArgs", js.Array(value*))
     
-    inline def setOnerror(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+    inline def setOnerror(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     
     inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
-    inline def setOnmessage(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
+    inline def setOnmessage(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
     
     inline def setOnmessageUndefined: Self = StObject.set(x, "onmessage", js.undefined)
     

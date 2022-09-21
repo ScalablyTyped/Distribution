@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A request corresponding to a single blob that the client wants to upload.
-  */
 trait SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest extends StObject {
   
   /**
     * The raw binary data.
     */
-  var data: js.UndefOr[String] = js.undefined
+  var data: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The digest of the blob. This MUST be the digest of `data`.
@@ -29,6 +26,8 @@ object SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest {
   extension [Self <: SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest](x: Self) {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

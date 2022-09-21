@@ -8,10 +8,10 @@ object objectInspectorMod {
   
   @JSImport("ts-mockito/lib/utils/ObjectInspector", "ObjectInspector")
   @js.native
-  class ObjectInspector () extends StObject {
+  open class ObjectInspector () extends StObject {
     
-    def getObjectOwnPropertyNames(`object`: js.Any): js.Array[String] = js.native
+    def getObjectOwnPropertyNames(`object`: Any): js.Array[String] = js.native
     
-    def getObjectPrototypes(prototype: js.Any): js.Array[js.Any] = js.native
+    def getObjectPrototypes(prototype: Any): js.Array[Any] = js.native
   }
 }

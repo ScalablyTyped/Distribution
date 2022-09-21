@@ -17,7 +17,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
@@ -57,8 +57,11 @@ trait IDetailsListProps
     */
   var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
   
-  /** Accessible label for the check button. */
+  /** Accessible label for the row check button, e.g. "select row" */
   var checkButtonAriaLabel: js.UndefOr[String] = js.undefined
+  
+  /** Accessible label for the group header check button, e.g. "select section". */
+  var checkButtonGroupAriaLabel: js.UndefOr[String] = js.undefined
   
   /** Class name to add to the cell of a checkbox. */
   var checkboxCellClassName: js.UndefOr[String] = js.undefined
@@ -99,13 +102,16 @@ trait IDetailsListProps
   /** Whether the selection zone should enter modal state on touch. */
   var enterModalSelectionOnTouch: js.UndefOr[Boolean] = js.undefined
   
+  /** An optional margin for proportional columns, to e.g. account for scrollbars when laying out width. */
+  var flexMargin: js.UndefOr[Double] = js.undefined
+  
   /**
     * If provided, will be the "default" item column cell value return.
     * A column's `getValueKey` can override `getCellValueKey`.
     */
   var getCellValueKey: js.UndefOr[
     js.Function3[
-      /* item */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
       /* index */ js.UndefOr[Double], 
       /* column */ js.UndefOr[IColumn], 
       String
@@ -119,13 +125,13 @@ trait IDetailsListProps
     * Callback to get the item key, to be used in the selection and on render.
     * Must be provided if sorting or filtering is enabled.
     */
-  var getKey: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]] = js.undefined
+  var getKey: js.UndefOr[js.Function2[/* item */ Any, /* index */ js.UndefOr[Double], String]] = js.undefined
   
   /** Callback to get the aria-describedby IDs (space-separated strings) of elements that describe the item. */
-  var getRowAriaDescribedBy: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
+  var getRowAriaDescribedBy: js.UndefOr[js.Function1[/* item */ Any, String]] = js.undefined
   
   /** Callback to get the aria-label string for a given item. */
-  var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
+  var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ Any, String]] = js.undefined
   
   /** Override properties to render groups. */
   var groupProps: js.UndefOr[IDetailsGroupRenderProps] = js.undefined
@@ -148,14 +154,21 @@ trait IDetailsListProps
   /** Set this to true to indicate that the items being displayed are placeholder data. */
   var isPlaceholderData: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Determines if an item is selected on focus.
+    *
+    * @defaultvalue true
+    */
+  var isSelectedOnFocus: js.UndefOr[Boolean] = js.undefined
+  
   /** The items to render. */
-  var items: js.Array[js.Any]
+  var items: js.Array[Any]
   
   /** Controls how the columns are adjusted. */
   var layoutMode: js.UndefOr[DetailsListLayoutMode] = js.undefined
   
   /** Properties to pass through to the List components being rendered. */
-  var listProps: js.UndefOr[IListProps[js.Any]] = js.undefined
+  var listProps: js.UndefOr[IListProps[Any]] = js.undefined
   
   /**
     * The minimum mouse move distance to interpret the action as drag event.
@@ -169,9 +182,9 @@ trait IDetailsListProps
     */
   var onActiveItemChanged: js.UndefOr[
     js.Function3[
-      /* item */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
       /* index */ js.UndefOr[Double], 
-      /* ev */ js.UndefOr[FocusEvent[HTMLElement]], 
+      /* ev */ js.UndefOr[FocusEvent[HTMLElement, Element]], 
       Unit
     ]
   ] = js.undefined
@@ -213,7 +226,7 @@ trait IDetailsListProps
     */
   var onItemContextMenu: js.UndefOr[
     js.Function3[
-      /* item */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
       /* index */ js.UndefOr[Double], 
       /* ev */ js.UndefOr[Event], 
       Unit | Boolean
@@ -223,7 +236,7 @@ trait IDetailsListProps
   /** Callback for when a given row has been invoked (by pressing enter while it is selected.) */
   var onItemInvoked: js.UndefOr[
     js.Function3[
-      /* item */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
       /* index */ js.UndefOr[Double], 
       /* ev */ js.UndefOr[Event], 
       Unit
@@ -246,7 +259,7 @@ trait IDetailsListProps
     */
   var onRenderItemColumn: js.UndefOr[
     js.Function3[
-      /* item */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
       /* index */ js.UndefOr[Double], 
       /* column */ js.UndefOr[IColumn], 
       ReactNode
@@ -270,17 +283,13 @@ trait IDetailsListProps
   /**
     * Callback for when a given row has been mounted. Useful for identifying when a row has been rendered on the page.
     */
-  var onRowDidMount: js.UndefOr[
-    js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], Unit]
-  ] = js.undefined
+  var onRowDidMount: js.UndefOr[js.Function2[/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], Unit]] = js.undefined
   
   /**
     * Callback for when a given row has been unmounted.
     * Useful for identifying when a row has been removed from the page.
     */
-  var onRowWillUnmount: js.UndefOr[
-    js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], Unit]
-  ] = js.undefined
+  var onRowWillUnmount: js.UndefOr[js.Function2[/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], Unit]] = js.undefined
   
   /**
     * Callback to determine whether the list should be rendered in full, or virtualized.
@@ -291,7 +300,10 @@ trait IDetailsListProps
     *
     * The default implementation will virtualize when this callback is not provided.
     */
-  var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[js.Any], Boolean]] = js.undefined
+  var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[Any], Boolean]] = js.undefined
+  
+  /** Role for the list. */
+  var role: js.UndefOr[String] = js.undefined
   
   /** Event names and corresponding callbacks that will be registered to rendered row elements. */
   var rowElementEventMap: js.UndefOr[js.Array[Callback]] = js.undefined
@@ -353,7 +365,7 @@ trait IDetailsListProps
 }
 object IDetailsListProps {
   
-  inline def apply(items: js.Array[js.Any]): IDetailsListProps = {
+  inline def apply(items: js.Array[Any]): IDetailsListProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsListProps]
   }
@@ -388,6 +400,10 @@ object IDetailsListProps {
     
     inline def setCheckButtonAriaLabelUndefined: Self = StObject.set(x, "checkButtonAriaLabel", js.undefined)
     
+    inline def setCheckButtonGroupAriaLabel(value: String): Self = StObject.set(x, "checkButtonGroupAriaLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCheckButtonGroupAriaLabelUndefined: Self = StObject.set(x, "checkButtonGroupAriaLabel", js.undefined)
+    
     inline def setCheckboxCellClassName(value: String): Self = StObject.set(x, "checkboxCellClassName", value.asInstanceOf[js.Any])
     
     inline def setCheckboxCellClassNameUndefined: Self = StObject.set(x, "checkboxCellClassName", js.undefined)
@@ -408,7 +424,7 @@ object IDetailsListProps {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
@@ -434,8 +450,12 @@ object IDetailsListProps {
     
     inline def setEnterModalSelectionOnTouchUndefined: Self = StObject.set(x, "enterModalSelectionOnTouch", js.undefined)
     
+    inline def setFlexMargin(value: Double): Self = StObject.set(x, "flexMargin", value.asInstanceOf[js.Any])
+    
+    inline def setFlexMarginUndefined: Self = StObject.set(x, "flexMargin", js.undefined)
+    
     inline def setGetCellValueKey(
-      value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String
+      value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String
     ): Self = StObject.set(x, "getCellValueKey", js.Any.fromFunction3(value))
     
     inline def setGetCellValueKeyUndefined: Self = StObject.set(x, "getCellValueKey", js.undefined)
@@ -444,15 +464,15 @@ object IDetailsListProps {
     
     inline def setGetGroupHeightUndefined: Self = StObject.set(x, "getGroupHeight", js.undefined)
     
-    inline def setGetKey(value: (/* item */ js.Any, /* index */ js.UndefOr[Double]) => String): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
+    inline def setGetKey(value: (/* item */ Any, /* index */ js.UndefOr[Double]) => String): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
     
     inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
     
-    inline def setGetRowAriaDescribedBy(value: /* item */ js.Any => String): Self = StObject.set(x, "getRowAriaDescribedBy", js.Any.fromFunction1(value))
+    inline def setGetRowAriaDescribedBy(value: /* item */ Any => String): Self = StObject.set(x, "getRowAriaDescribedBy", js.Any.fromFunction1(value))
     
     inline def setGetRowAriaDescribedByUndefined: Self = StObject.set(x, "getRowAriaDescribedBy", js.undefined)
     
-    inline def setGetRowAriaLabel(value: /* item */ js.Any => String): Self = StObject.set(x, "getRowAriaLabel", js.Any.fromFunction1(value))
+    inline def setGetRowAriaLabel(value: /* item */ Any => String): Self = StObject.set(x, "getRowAriaLabel", js.Any.fromFunction1(value))
     
     inline def setGetRowAriaLabelUndefined: Self = StObject.set(x, "getRowAriaLabel", js.undefined)
     
@@ -464,7 +484,7 @@ object IDetailsListProps {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
     
@@ -482,15 +502,19 @@ object IDetailsListProps {
     
     inline def setIsPlaceholderDataUndefined: Self = StObject.set(x, "isPlaceholderData", js.undefined)
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setIsSelectedOnFocus(value: Boolean): Self = StObject.set(x, "isSelectedOnFocus", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setIsSelectedOnFocusUndefined: Self = StObject.set(x, "isSelectedOnFocus", js.undefined)
+    
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLayoutMode(value: DetailsListLayoutMode): Self = StObject.set(x, "layoutMode", value.asInstanceOf[js.Any])
     
     inline def setLayoutModeUndefined: Self = StObject.set(x, "layoutMode", js.undefined)
     
-    inline def setListProps(value: IListProps[js.Any]): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
+    inline def setListProps(value: IListProps[Any]): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
     
     inline def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)
     
@@ -499,7 +523,7 @@ object IDetailsListProps {
     inline def setMinimumPixelsForDragUndefined: Self = StObject.set(x, "minimumPixelsForDrag", js.undefined)
     
     inline def setOnActiveItemChanged(
-      value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[FocusEvent[HTMLElement]]) => Unit
+      value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[FocusEvent[HTMLElement, Element]]) => Unit
     ): Self = StObject.set(x, "onActiveItemChanged", js.Any.fromFunction3(value))
     
     inline def setOnActiveItemChangedUndefined: Self = StObject.set(x, "onActiveItemChanged", js.undefined)
@@ -527,37 +551,52 @@ object IDetailsListProps {
     inline def setOnDidUpdateUndefined: Self = StObject.set(x, "onDidUpdate", js.undefined)
     
     inline def setOnItemContextMenu(
-      value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit | Boolean
+      value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit | Boolean
     ): Self = StObject.set(x, "onItemContextMenu", js.Any.fromFunction3(value))
     
     inline def setOnItemContextMenuUndefined: Self = StObject.set(x, "onItemContextMenu", js.undefined)
     
     inline def setOnItemInvoked(
-      value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit
+      value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit
     ): Self = StObject.set(x, "onItemInvoked", js.Any.fromFunction3(value))
     
     inline def setOnItemInvokedUndefined: Self = StObject.set(x, "onItemInvoked", js.undefined)
     
     inline def setOnRenderCheckbox(
-      value: (/* props */ js.UndefOr[IDetailsListCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsListCheckboxProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IDetailsListCheckboxProps], /* defaultRender */ js.UndefOr[
+          js.Function1[
+            /* props */ js.UndefOr[IDetailsListCheckboxProps], 
+            typings.react.mod.global.JSX.Element | Null
+          ]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderCheckbox", js.Any.fromFunction2(value))
     
     inline def setOnRenderCheckboxUndefined: Self = StObject.set(x, "onRenderCheckbox", js.undefined)
     
     inline def setOnRenderDetailsFooter(
-      value: (/* props */ js.UndefOr[IDetailsFooterProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsFooterProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IDetailsFooterProps], /* defaultRender */ js.UndefOr[
+          js.Function1[
+            /* props */ js.UndefOr[IDetailsFooterProps], 
+            typings.react.mod.global.JSX.Element | Null
+          ]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderDetailsFooter", js.Any.fromFunction2(value))
     
     inline def setOnRenderDetailsFooterUndefined: Self = StObject.set(x, "onRenderDetailsFooter", js.undefined)
     
     inline def setOnRenderDetailsHeader(
-      value: (/* props */ js.UndefOr[IDetailsHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsHeaderProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IDetailsHeaderProps], /* defaultRender */ js.UndefOr[
+          js.Function1[
+            /* props */ js.UndefOr[IDetailsHeaderProps], 
+            typings.react.mod.global.JSX.Element | Null
+          ]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderDetailsHeader", js.Any.fromFunction2(value))
     
     inline def setOnRenderDetailsHeaderUndefined: Self = StObject.set(x, "onRenderDetailsHeader", js.undefined)
     
     inline def setOnRenderItemColumn(
-      value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => ReactNode
+      value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => ReactNode
     ): Self = StObject.set(x, "onRenderItemColumn", js.Any.fromFunction3(value))
     
     inline def setOnRenderItemColumnUndefined: Self = StObject.set(x, "onRenderItemColumn", js.undefined)
@@ -567,28 +606,37 @@ object IDetailsListProps {
     inline def setOnRenderMissingItemUndefined: Self = StObject.set(x, "onRenderMissingItem", js.undefined)
     
     inline def setOnRenderRow(
-      value: (/* props */ js.UndefOr[IDetailsRowProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsRowProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IDetailsRowProps], /* defaultRender */ js.UndefOr[
+          js.Function1[
+            /* props */ js.UndefOr[IDetailsRowProps], 
+            typings.react.mod.global.JSX.Element | Null
+          ]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderRow", js.Any.fromFunction2(value))
     
     inline def setOnRenderRowUndefined: Self = StObject.set(x, "onRenderRow", js.undefined)
     
-    inline def setOnRowDidMount(value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onRowDidMount", js.Any.fromFunction2(value))
+    inline def setOnRowDidMount(value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onRowDidMount", js.Any.fromFunction2(value))
     
     inline def setOnRowDidMountUndefined: Self = StObject.set(x, "onRowDidMount", js.undefined)
     
-    inline def setOnRowWillUnmount(value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onRowWillUnmount", js.Any.fromFunction2(value))
+    inline def setOnRowWillUnmount(value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onRowWillUnmount", js.Any.fromFunction2(value))
     
     inline def setOnRowWillUnmountUndefined: Self = StObject.set(x, "onRowWillUnmount", js.undefined)
     
-    inline def setOnShouldVirtualize(value: /* props */ IListProps[js.Any] => Boolean): Self = StObject.set(x, "onShouldVirtualize", js.Any.fromFunction1(value))
+    inline def setOnShouldVirtualize(value: /* props */ IListProps[Any] => Boolean): Self = StObject.set(x, "onShouldVirtualize", js.Any.fromFunction1(value))
     
     inline def setOnShouldVirtualizeUndefined: Self = StObject.set(x, "onShouldVirtualize", js.undefined)
+    
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     inline def setRowElementEventMap(value: js.Array[Callback]): Self = StObject.set(x, "rowElementEventMap", value.asInstanceOf[js.Any])
     
     inline def setRowElementEventMapUndefined: Self = StObject.set(x, "rowElementEventMap", js.undefined)
     
-    inline def setRowElementEventMapVarargs(value: Callback*): Self = StObject.set(x, "rowElementEventMap", js.Array(value :_*))
+    inline def setRowElementEventMapVarargs(value: Callback*): Self = StObject.set(x, "rowElementEventMap", js.Array(value*))
     
     inline def setSelection(value: ISelection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     

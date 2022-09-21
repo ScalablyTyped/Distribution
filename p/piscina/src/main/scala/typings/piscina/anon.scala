@@ -35,14 +35,14 @@ object anon {
   trait PostMessage extends StObject {
     
     def postMessage(
-      value: js.Any,
+      value: Any,
       transferList: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
-    ): js.Any
+    ): Any
   }
   object PostMessage {
     
     inline def apply(
-      postMessage: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any) => js.Any
+      postMessage: (Any, /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any) => Any
     ): PostMessage = {
       val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction2(postMessage))
       __obj.asInstanceOf[PostMessage]
@@ -51,7 +51,7 @@ object anon {
     extension [Self <: PostMessage](x: Self) {
       
       inline def setPostMessage(
-        value: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any) => js.Any
+        value: (Any, /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any) => Any
       ): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
     }
   }

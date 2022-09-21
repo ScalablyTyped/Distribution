@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.AutoRecover")
 @js.native
-/* private */ class AutoRecover ()
+/* private */ open class AutoRecover ()
   extends StObject
      with typings.activexExcel.Excel.AutoRecover {
   
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ExcelDotAutoRecover_typekey: typings.activexExcel.Excel.AutoRecover = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Path: String = js.native

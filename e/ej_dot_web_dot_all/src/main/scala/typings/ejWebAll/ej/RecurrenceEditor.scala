@@ -24,14 +24,14 @@ trait RecurrenceEditor
     * @param {any} It refers the start date of the recurrence.
     * @returns {any}
     */
-  def recurrenceDateGenerator(recurrenceString: String, startDate: js.Any): js.Any = js.native
+  def recurrenceDateGenerator(recurrenceString: String, startDate: Any): Any = js.native
   
   /** It splits and returns the recurrence rule string into object collection.
     * @param {string} It refers the recurrence rule string.
     * @param {any} It refers the appointment dates (ExDate) to be excluded
     * @returns {any}
     */
-  def recurrenceRuleSplit(recurrenceRule: String, exDate: js.Any): js.Any = js.native
+  def recurrenceRuleSplit(recurrenceRule: String, exDate: Any): Any = js.native
 }
 object RecurrenceEditor {
   
@@ -112,7 +112,7 @@ object RecurrenceEditor {
     /** Defines the collection of recurrence frequencies within Recurrence Editor such as Never, Daily, Weekly, Monthly, Yearly and Every Weekday.
       * @Default {[never, daily, weekly, monthly, yearly, everyweekday]}
       */
-    var frequencies: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var frequencies: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the specific culture to the Recurrence Editor.
       * @Default {en-US}
@@ -123,13 +123,13 @@ object RecurrenceEditor {
       * Recurrence Editor to navigate beyond that date.
       * @Default {new Date(2099, 12, 31)}
       */
-    var maxDate: js.UndefOr[js.Any] = js.undefined
+    var maxDate: js.UndefOr[Any] = js.undefined
     
     /** Sets the minimum date limit to display on the datepickers defined within the Recurrence Editor. Setting minDate with specific date value disallows the datepickers within
       * Recurrence Editor to navigate beyond that date.
       * @Default {new Date(1900, 01, 01)}
       */
-    var minDate: js.UndefOr[js.Any] = js.undefined
+    var minDate: js.UndefOr[Any] = js.undefined
     
     /** Sets the active/current repeat type(frequency) on Recurrence Editor based on the index value provided. For example, setting the value 1 will initially set the repeat type as Daily
       * and display its related options.
@@ -140,7 +140,7 @@ object RecurrenceEditor {
     /** Sets the start date of the recurrence. The Recurrence Editor initially displays the current date as its start date.
       * @Default {new Date()}
       */
-    var startDate: js.UndefOr[js.Any] = js.undefined
+    var startDate: js.UndefOr[Any] = js.undefined
   }
   object Model {
     
@@ -175,21 +175,21 @@ object RecurrenceEditor {
       
       inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
       
-      inline def setFrequencies(value: js.Array[js.Any]): Self = StObject.set(x, "frequencies", value.asInstanceOf[js.Any])
+      inline def setFrequencies(value: js.Array[Any]): Self = StObject.set(x, "frequencies", value.asInstanceOf[js.Any])
       
       inline def setFrequenciesUndefined: Self = StObject.set(x, "frequencies", js.undefined)
       
-      inline def setFrequenciesVarargs(value: js.Any*): Self = StObject.set(x, "frequencies", js.Array(value :_*))
+      inline def setFrequenciesVarargs(value: Any*): Self = StObject.set(x, "frequencies", js.Array(value*))
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: js.Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: js.Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -197,7 +197,7 @@ object RecurrenceEditor {
       
       inline def setSelectedRecurrenceTypeUndefined: Self = StObject.set(x, "selectedRecurrenceType", js.undefined)
       
-      inline def setStartDate(value: js.Any): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: Any): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
       inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     }

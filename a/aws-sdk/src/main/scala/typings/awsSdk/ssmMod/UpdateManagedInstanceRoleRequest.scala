@@ -12,7 +12,7 @@ trait UpdateManagedInstanceRoleRequest extends StObject {
   var IamRole: typings.awsSdk.ssmMod.IamRole
   
   /**
-    * The ID of the managed instance where you want to update the role.
+    * The ID of the managed node where you want to update the role.
     */
   var InstanceId: ManagedInstanceId
 }

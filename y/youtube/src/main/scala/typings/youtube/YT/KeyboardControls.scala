@@ -1,25 +1,28 @@
 package typings.youtube.YT
 
-import typings.youtube.youtubeNumbers.`0`
-import typings.youtube.youtubeNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.youtube.youtubeNumbers.`0`
-  - typings.youtube.youtubeNumbers.`1`
-*/
-trait KeyboardControls extends StObject
-object KeyboardControls {
+@js.native
+sealed trait KeyboardControls extends StObject
+@JSGlobal("YT.KeyboardControls")
+@js.native
+object KeyboardControls extends StObject {
   
   /**
     * Keyboard controls are disabled.
     */
-  inline def Disable: `1` = 1.asInstanceOf[`1`]
+  @js.native
+  sealed trait Disable
+    extends StObject
+       with KeyboardControls
   
   /**
     * Keyboard controls are enabled.
     */
-  inline def Enable: `0` = 0.asInstanceOf[`0`]
+  @js.native
+  sealed trait Enable
+    extends StObject
+       with KeyboardControls
 }

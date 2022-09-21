@@ -10,26 +10,26 @@ trait Context extends StObject {
   
   var frame: FlashFrame
   
-  def goto(): js.Any
+  def goto(): Any
   
   var keyframes: js.Array[FlashFrame]
   
   var layer: FlashLayer
   
-  def setLayer(index: Double): js.Any
+  def setLayer(index: Double): Any
   
-  def update(): js.Any
+  def update(): Any
 }
 object Context {
   
   inline def apply(
     elements: js.Array[FlashElement],
     frame: FlashFrame,
-    goto: () => js.Any,
+    goto: () => Any,
     keyframes: js.Array[FlashFrame],
     layer: FlashLayer,
-    setLayer: Double => js.Any,
-    update: () => js.Any
+    setLayer: Double => Any,
+    update: () => Any
   ): Context = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], goto = js.Any.fromFunction0(goto), keyframes = keyframes.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], setLayer = js.Any.fromFunction1(setLayer), update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[Context]
@@ -39,20 +39,20 @@ object Context {
     
     inline def setElements(value: js.Array[FlashElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: FlashElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: FlashElement*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setFrame(value: FlashFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    inline def setGoto(value: () => js.Any): Self = StObject.set(x, "goto", js.Any.fromFunction0(value))
+    inline def setGoto(value: () => Any): Self = StObject.set(x, "goto", js.Any.fromFunction0(value))
     
     inline def setKeyframes(value: js.Array[FlashFrame]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
     
-    inline def setKeyframesVarargs(value: FlashFrame*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
+    inline def setKeyframesVarargs(value: FlashFrame*): Self = StObject.set(x, "keyframes", js.Array(value*))
     
     inline def setLayer(value: FlashLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    inline def setSetLayer(value: Double => js.Any): Self = StObject.set(x, "setLayer", js.Any.fromFunction1(value))
+    inline def setSetLayer(value: Double => Any): Self = StObject.set(x, "setLayer", js.Any.fromFunction1(value))
     
-    inline def setUpdate(value: () => js.Any): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Any): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

@@ -24,6 +24,6 @@ object ContactModRequest {
     
     inline def setContactListUndefined: Self = StObject.set(x, "contactList", js.undefined)
     
-    inline def setContactListVarargs(value: Contact*): Self = StObject.set(x, "contactList", js.Array(value :_*))
+    inline def setContactListVarargs(value: Contact*): Self = StObject.set(x, "contactList", js.Array(value*))
   }
 }

@@ -15,6 +15,9 @@ trait CameraOptions extends StObject {
   /** Map center */
   var center: js.UndefOr[LngLatLike] = js.undefined
   
+  /** Dimensions in pixels applied on each side of the viewport for shifting the vanishing point. */
+  var padding: js.UndefOr[Double | PaddingOptions] = js.undefined
+  
   /** Map angle in degrees at which the camera is looking at the ground */
   var pitch: js.UndefOr[Double] = js.undefined
   
@@ -41,6 +44,10 @@ object CameraOptions {
     inline def setCenter(value: LngLatLike): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setPadding(value: Double | PaddingOptions): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     

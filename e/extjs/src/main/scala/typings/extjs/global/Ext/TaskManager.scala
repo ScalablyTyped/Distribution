@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.TaskManager")
 @js.native
-class TaskManager ()
+open class TaskManager ()
   extends StObject
      with typings.extjs.Ext.TaskManager
 /* static members */
@@ -22,22 +22,22 @@ object TaskManager {
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-  inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+  inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-  inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+  inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-  inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+  inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Destroys this instance stopping all tasks that are currently running  */
   inline def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
@@ -46,21 +46,21 @@ object TaskManager {
     * @param name String Name of the config option to return.
     * @returns Object/Mixed The full config object or a single config value when name parameter specified.
     */
-  inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-  inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+  inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Initialize configuration for this class
     * @param config Object
     * @returns Ext.Base this
     */
   inline def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
-  inline def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
+  inline def initConfig(config: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
   
   /** [Method] Creates a new Task instance
     * @param config Object The config object. For details on the supported properties, see start.
     */
   inline def newTask(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("newTask")().asInstanceOf[Unit]
-  inline def newTask(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("newTask")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def newTask(config: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("newTask")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Property] (Ext.Class) */
   @JSGlobal("Ext.TaskManager.self")
@@ -72,8 +72,8 @@ object TaskManager {
     * @param task Object A config object that supports the following properties:
     * @returns Object The task
     */
-  inline def start(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Any]
-  inline def start(task: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(task.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def start(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Any]
+  inline def start(task: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(task.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Get the reference to the class from which this object was instantiated
     * @returns Ext.Class
@@ -84,8 +84,8 @@ object TaskManager {
     * @param task Object The task to stop
     * @returns Object The task
     */
-  inline def stop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[js.Any]
-  inline def stop(task: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(task.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def stop(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Any]
+  inline def stop(task: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(task.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Stops all tasks that are currently running  */
   inline def stopAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopAll")().asInstanceOf[Unit]

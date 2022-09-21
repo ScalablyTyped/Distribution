@@ -1,7 +1,7 @@
 
 # Scala.js typings for icon-gen
 
-Typings are for version 2.0
+Typings are for version 3.0.1
 
 ## Library description:
 Generate an icon files from the SVG or PNG files
@@ -10,10 +10,10 @@ Generate an icon files from the SVG or PNG files
 | ------------------ | :-------------: |
 | Full name          | icon-gen |
 | Keywords           | Icon, Generator, SVG, CLI |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 140440 |
-| # stars            | 3 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 97761.0 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](https://github.com/akabekobeko/npm-icon-gen#readme)
@@ -24,7 +24,7 @@ Generate an icon files from the SVG or PNG files
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

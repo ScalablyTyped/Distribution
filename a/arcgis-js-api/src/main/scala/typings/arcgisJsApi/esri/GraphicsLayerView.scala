@@ -24,5 +24,5 @@ trait GraphicsLayerView
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GraphicsLayerView.html#queryGraphics)
     */
-  def queryGraphics(): Collection[Graphic] = js.native
+  def queryGraphics(): js.Promise[Collection[Graphic]] = js.native
 }

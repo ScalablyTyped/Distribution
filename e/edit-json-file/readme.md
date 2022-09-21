@@ -1,7 +1,7 @@
 
 # Scala.js typings for edit-json-file
 
-Typings are for version 1.4
+Typings are for version 1.7
 
 ## Library description:
 Edit a json file with ease.
@@ -10,10 +10,10 @@ Edit a json file with ease.
 | ------------------ | :-------------: |
 | Full name          | edit-json-file |
 | Keywords           | edit, json, file, a, with, ease |
-| # releases         | 6 |
-| # dependents       | 148 |
-| # downloads        | 946939 |
-| # stars            | 3 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 128764.33333333333 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/IonicaBizau/edit-json-file#readme)

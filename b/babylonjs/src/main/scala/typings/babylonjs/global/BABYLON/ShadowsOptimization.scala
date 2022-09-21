@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ShadowsOptimization")
 @js.native
-class ShadowsOptimization ()
+open class ShadowsOptimization ()
   extends StObject
      with typings.babylonjs.BABYLON.ShadowsOptimization {
   

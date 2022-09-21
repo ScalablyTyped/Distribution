@@ -8,5 +8,5 @@ object consumedCapacityMultipleMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_ConsumedCapacityMultiple", "_ConsumedCapacityMultiple")
   @js.native
-  val ConsumedCapacityMultiple: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val ConsumedCapacityMultiple: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

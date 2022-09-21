@@ -1,22 +1,21 @@
 package typings.mime
 
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
   @JSImport("mime", JSImport.Namespace)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def define(mimes: TypeMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def define(mimes: TypeMap, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def getExtension(mime: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(mime.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  
-  inline def getType(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  val ^ : typings.mime.mimeMod.^ = js.native
   
   type TypeMap = StringDictionary[js.Array[String]]
+  
+  type _To = typings.mime.mimeMod.^
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: typings.mime.mimeMod.^ = ^
 }

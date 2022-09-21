@@ -5,15 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.application
   - typings.std.stdStrings.browser
   - typings.std.stdStrings.monitor
   - typings.std.stdStrings.window
 */
 trait DisplayCaptureSurfaceType extends StObject
 object DisplayCaptureSurfaceType {
-  
-  inline def application: typings.std.stdStrings.application = "application".asInstanceOf[typings.std.stdStrings.application]
   
   inline def browser: typings.std.stdStrings.browser = "browser".asInstanceOf[typings.std.stdStrings.browser]
   

@@ -19,9 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param callback Function
     * @param scope Object
     */
-  var afterHide: js.UndefOr[
-    js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var afterHide: js.UndefOr[js.Function2[/* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Allows addition of behavior after rendering is complete  */
   @JSName("afterRender")
@@ -32,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param ay Object
     */
   @JSName("afterSetPosition")
-  var afterSetPosition_IComponent: js.UndefOr[js.Function2[/* ax */ js.UndefOr[js.Any], /* ay */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var afterSetPosition_IComponent: js.UndefOr[js.Function2[/* ax */ js.UndefOr[Any], /* ay */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Invoked after the Component is shown after onShow is called
     * @param animateTarget String/Ext.Element
@@ -41,9 +39,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var afterShow: js.UndefOr[
     js.Function3[
-      /* animateTarget */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* animateTarget */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -62,8 +60,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var bubble: js.UndefOr[
     js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* args */ js.UndefOr[Array], 
       this.type
     ]
@@ -81,19 +79,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param overrides Object A new config containing any properties to override in the cloned version. An id property can be passed on this object, otherwise one will be generated to avoid duplicates.
     * @returns Ext.Component clone The cloned copy of this component
     */
-  var cloneConfig: js.UndefOr[js.Function1[/* overrides */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var cloneConfig: js.UndefOr[js.Function1[/* overrides */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var columnWidth: js.UndefOr[js.Any] = js.undefined
+  var columnWidth: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var constrain: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.util.Region/Ext.Element) */
-  var constrainTo: js.UndefOr[js.Any] = js.undefined
+  var constrainTo: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object/String) */
-  var constraintInsets: js.UndefOr[js.Any] = js.undefined
+  var constraintInsets: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var defaultAlign: js.UndefOr[java.lang.String] = js.undefined
@@ -101,22 +99,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Moves this floating Component into a constrain region
     * @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this floating Component was rendered.
     */
-  var doConstrain: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+  var doConstrain: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Find a container above this component at any level by a custom function
     * @param fn Function The custom function to call with the arguments (container, this component).
     * @returns Ext.container.Container The first Container for which the custom function returns true
     */
-  var findParentBy: js.UndefOr[
-    js.Function1[/* fn */ js.UndefOr[js.Any], typings.extjs.Ext.container.IContainer]
-  ] = js.undefined
+  var findParentBy: js.UndefOr[js.Function1[/* fn */ js.UndefOr[Any], typings.extjs.Ext.container.IContainer]] = js.undefined
   
   /** [Method] Find a container above this component at any level by xtype or class See also the up method
     * @param xtype String/Ext.Class The xtype string for a component, or the class of the component directly
     * @returns Ext.container.Container The first Container which matches the given xtype or class
     */
   var findParentByType: js.UndefOr[
-    js.Function1[/* xtype */ js.UndefOr[js.Any], typings.extjs.Ext.container.IContainer]
+    js.Function1[/* xtype */ js.UndefOr[Any], typings.extjs.Ext.container.IContainer]
   ] = js.undefined
   
   /** [Config Option] (Boolean) */
@@ -135,9 +131,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var focus: js.UndefOr[
     js.Function4[
       /* selectText */ js.UndefOr[Boolean], 
-      /* delay */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* delay */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -167,9 +163,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var hide: js.UndefOr[
     js.Function3[
-      /* animateTarget */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* animateTarget */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -191,9 +187,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var onHide: js.UndefOr[
     js.Function3[
-      /* animateTarget */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* animateTarget */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -205,9 +201,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var onShow: js.UndefOr[
     js.Function3[
-      /* animateTarget */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* animateTarget */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -216,9 +212,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param callback Function
     * @param scope Object
     */
-  var onShowComplete: js.UndefOr[
-    js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var onShowComplete: js.UndefOr[js.Function2[/* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var overflowX: js.UndefOr[java.lang.String] = js.undefined
@@ -227,10 +221,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var overflowY: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] ("north"/"south"/"east"/"west"/"center") */
-  var region: js.UndefOr[js.Any] = js.undefined
+  var region: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var resizable: js.UndefOr[js.Any] = js.undefined
+  var resizable: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var resizeHandles: js.UndefOr[java.lang.String] = js.undefined
@@ -242,15 +236,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var scrollBy: js.UndefOr[
     js.Function3[
-      /* deltaX */ js.UndefOr[js.Any], 
-      /* deltaY */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* deltaX */ js.UndefOr[Any], 
+      /* deltaY */ js.UndefOr[Any], 
+      /* animate */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
   
   /** [Property] (Object) */
-  var scrollFlags: js.UndefOr[js.Any] = js.undefined
+  var scrollFlags: js.UndefOr[Any] = js.undefined
   
   /** [Method] This method is called internally by Ext ZIndexManager to signal that a floating Component has either been moved to th
     * @param active Boolean True to activate the Component, false to deactivate it.
@@ -276,7 +270,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns Ext.LoadMask The LoadMask instance that has just been shown.
     */
   var setLoading: js.UndefOr[
-    js.Function2[/* load */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[Boolean], ILoadMask]
+    js.Function2[/* load */ js.UndefOr[Any], /* targetEl */ js.UndefOr[Boolean], ILoadMask]
   ] = js.undefined
   
   /** [Method] Sets the overflow x y on the content element of the component
@@ -300,9 +294,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var setPagePosition: js.UndefOr[
     js.Function3[
-      /* x */ js.UndefOr[js.Any], 
+      /* x */ js.UndefOr[Any], 
       /* y */ js.UndefOr[Double], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -315,9 +309,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var setPosition: js.UndefOr[
     js.Function3[
-      /* x */ js.UndefOr[js.Any], 
+      /* x */ js.UndefOr[Any], 
       /* y */ js.UndefOr[Double], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -329,7 +323,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var setRegionWeight: js.UndefOr[js.Function1[/* weight */ js.UndefOr[Double], Double]] = js.undefined
   
   /** [Config Option] (String/Boolean) */
-  var shadow: js.UndefOr[js.Any] = js.undefined
+  var shadow: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var shadowOffset: js.UndefOr[Double] = js.undefined
@@ -342,9 +336,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var show: js.UndefOr[
     js.Function3[
-      /* animateTarget */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* animateTarget */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -357,9 +351,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var showAt: js.UndefOr[
     js.Function3[
-      /* x */ js.UndefOr[js.Any], 
+      /* x */ js.UndefOr[Any], 
       /* y */ js.UndefOr[Double], 
-      /* animate */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -372,7 +366,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var showBy: js.UndefOr[
     js.Function3[
-      /* component */ js.UndefOr[js.Any], 
+      /* component */ js.UndefOr[Any], 
       /* position */ js.UndefOr[java.lang.String], 
       /* offsets */ js.UndefOr[Array], 
       this.type
@@ -397,7 +391,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param box Object An object in the format {x, y, width, height}
     * @returns Ext.Component this
     */
-  var updateBox: js.UndefOr[js.Function1[/* box */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var updateBox: js.UndefOr[js.Function1[/* box */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Property] (Ext.ZIndexManager) */
   var zIndexManager: js.UndefOr[IZIndexManager] = js.undefined
@@ -418,7 +412,7 @@ object IComponent {
     
     inline def setAfterComponentLayoutUndefined: Self = StObject.set(x, "afterComponentLayout", js.undefined)
     
-    inline def setAfterHide(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterHide", js.Any.fromFunction2(value))
+    inline def setAfterHide(value: (/* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "afterHide", js.Any.fromFunction2(value))
     
     inline def setAfterHideUndefined: Self = StObject.set(x, "afterHide", js.undefined)
     
@@ -426,12 +420,12 @@ object IComponent {
     
     inline def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
     
-    inline def setAfterSetPosition(value: (/* ax */ js.UndefOr[js.Any], /* ay */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterSetPosition", js.Any.fromFunction2(value))
+    inline def setAfterSetPosition(value: (/* ax */ js.UndefOr[Any], /* ay */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "afterSetPosition", js.Any.fromFunction2(value))
     
     inline def setAfterSetPositionUndefined: Self = StObject.set(x, "afterSetPosition", js.undefined)
     
     inline def setAfterShow(
-      value: (/* animateTarget */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* animateTarget */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "afterShow", js.Any.fromFunction3(value))
     
     inline def setAfterShowUndefined: Self = StObject.set(x, "afterShow", js.undefined)
@@ -445,7 +439,7 @@ object IComponent {
     inline def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
     
     inline def setBubble(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => IComponent
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* args */ js.UndefOr[Array]) => IComponent
     ): Self = StObject.set(x, "bubble", js.Any.fromFunction3(value))
     
     inline def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
@@ -458,23 +452,23 @@ object IComponent {
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    inline def setCloneConfig(value: /* overrides */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "cloneConfig", js.Any.fromFunction1(value))
+    inline def setCloneConfig(value: /* overrides */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "cloneConfig", js.Any.fromFunction1(value))
     
     inline def setCloneConfigUndefined: Self = StObject.set(x, "cloneConfig", js.undefined)
     
-    inline def setColumnWidth(value: js.Any): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: Any): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
     inline def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
     
-    inline def setConstrainTo(value: js.Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
+    inline def setConstrainTo(value: Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
     
     inline def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
     
     inline def setConstrainUndefined: Self = StObject.set(x, "constrain", js.undefined)
     
-    inline def setConstraintInsets(value: js.Any): Self = StObject.set(x, "constraintInsets", value.asInstanceOf[js.Any])
+    inline def setConstraintInsets(value: Any): Self = StObject.set(x, "constraintInsets", value.asInstanceOf[js.Any])
     
     inline def setConstraintInsetsUndefined: Self = StObject.set(x, "constraintInsets", js.undefined)
     
@@ -482,13 +476,13 @@ object IComponent {
     
     inline def setDefaultAlignUndefined: Self = StObject.set(x, "defaultAlign", js.undefined)
     
-    inline def setDoConstrain(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "doConstrain", js.Any.fromFunction1(value))
+    inline def setDoConstrain(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "doConstrain", js.Any.fromFunction1(value))
     
     inline def setDoConstrainUndefined: Self = StObject.set(x, "doConstrain", js.undefined)
     
-    inline def setFindParentBy(value: /* fn */ js.UndefOr[js.Any] => typings.extjs.Ext.container.IContainer): Self = StObject.set(x, "findParentBy", js.Any.fromFunction1(value))
+    inline def setFindParentBy(value: /* fn */ js.UndefOr[Any] => typings.extjs.Ext.container.IContainer): Self = StObject.set(x, "findParentBy", js.Any.fromFunction1(value))
     
-    inline def setFindParentByType(value: /* xtype */ js.UndefOr[js.Any] => typings.extjs.Ext.container.IContainer): Self = StObject.set(x, "findParentByType", js.Any.fromFunction1(value))
+    inline def setFindParentByType(value: /* xtype */ js.UndefOr[Any] => typings.extjs.Ext.container.IContainer): Self = StObject.set(x, "findParentByType", js.Any.fromFunction1(value))
     
     inline def setFindParentByTypeUndefined: Self = StObject.set(x, "findParentByType", js.undefined)
     
@@ -503,7 +497,7 @@ object IComponent {
     inline def setFloatParentUndefined: Self = StObject.set(x, "floatParent", js.undefined)
     
     inline def setFocus(
-      value: (/* selectText */ js.UndefOr[Boolean], /* delay */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IComponent
+      value: (/* selectText */ js.UndefOr[Boolean], /* delay */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IComponent
     ): Self = StObject.set(x, "focus", js.Any.fromFunction4(value))
     
     inline def setFocusOnToFront(value: Boolean): Self = StObject.set(x, "focusOnToFront", value.asInstanceOf[js.Any])
@@ -525,7 +519,7 @@ object IComponent {
     inline def setGetXTypeUndefined: Self = StObject.set(x, "getXType", js.undefined)
     
     inline def setHide(
-      value: (/* animateTarget */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IComponent
+      value: (/* animateTarget */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IComponent
     ): Self = StObject.set(x, "hide", js.Any.fromFunction3(value))
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
@@ -543,16 +537,16 @@ object IComponent {
     inline def setOnDestroyUndefined: Self = StObject.set(x, "onDestroy", js.undefined)
     
     inline def setOnHide(
-      value: (/* animateTarget */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* animateTarget */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "onHide", js.Any.fromFunction3(value))
     
     inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     inline def setOnShow(
-      value: (/* animateTarget */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* animateTarget */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "onShow", js.Any.fromFunction3(value))
     
-    inline def setOnShowComplete(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onShowComplete", js.Any.fromFunction2(value))
+    inline def setOnShowComplete(value: (/* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onShowComplete", js.Any.fromFunction2(value))
     
     inline def setOnShowCompleteUndefined: Self = StObject.set(x, "onShowComplete", js.undefined)
     
@@ -566,11 +560,11 @@ object IComponent {
     
     inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
     
-    inline def setRegion(value: js.Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    inline def setResizable(value: js.Any): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    inline def setResizable(value: Any): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
@@ -579,12 +573,12 @@ object IComponent {
     inline def setResizeHandlesUndefined: Self = StObject.set(x, "resizeHandles", js.undefined)
     
     inline def setScrollBy(
-      value: (/* deltaX */ js.UndefOr[js.Any], /* deltaY */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any]) => Unit
+      value: (/* deltaX */ js.UndefOr[Any], /* deltaY */ js.UndefOr[Any], /* animate */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "scrollBy", js.Any.fromFunction3(value))
     
     inline def setScrollByUndefined: Self = StObject.set(x, "scrollBy", js.undefined)
     
-    inline def setScrollFlags(value: js.Any): Self = StObject.set(x, "scrollFlags", value.asInstanceOf[js.Any])
+    inline def setScrollFlags(value: Any): Self = StObject.set(x, "scrollFlags", value.asInstanceOf[js.Any])
     
     inline def setScrollFlagsUndefined: Self = StObject.set(x, "scrollFlags", js.undefined)
     
@@ -600,7 +594,7 @@ object IComponent {
     
     inline def setSetBorderRegionUndefined: Self = StObject.set(x, "setBorderRegion", js.undefined)
     
-    inline def setSetLoading(value: (/* load */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[Boolean]) => ILoadMask): Self = StObject.set(x, "setLoading", js.Any.fromFunction2(value))
+    inline def setSetLoading(value: (/* load */ js.UndefOr[Any], /* targetEl */ js.UndefOr[Boolean]) => ILoadMask): Self = StObject.set(x, "setLoading", js.Any.fromFunction2(value))
     
     inline def setSetLoadingUndefined: Self = StObject.set(x, "setLoading", js.undefined)
     
@@ -611,13 +605,13 @@ object IComponent {
     inline def setSetOverflowXYUndefined: Self = StObject.set(x, "setOverflowXY", js.undefined)
     
     inline def setSetPagePosition(
-      value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IComponent
+      value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => IComponent
     ): Self = StObject.set(x, "setPagePosition", js.Any.fromFunction3(value))
     
     inline def setSetPagePositionUndefined: Self = StObject.set(x, "setPagePosition", js.undefined)
     
     inline def setSetPosition(
-      value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IComponent
+      value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => IComponent
     ): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
     
     inline def setSetPositionUndefined: Self = StObject.set(x, "setPosition", js.undefined)
@@ -626,7 +620,7 @@ object IComponent {
     
     inline def setSetRegionWeightUndefined: Self = StObject.set(x, "setRegionWeight", js.undefined)
     
-    inline def setShadow(value: js.Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     inline def setShadowOffset(value: Double): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
@@ -635,17 +629,17 @@ object IComponent {
     inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     inline def setShow(
-      value: (/* animateTarget */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IComponent
+      value: (/* animateTarget */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IComponent
     ): Self = StObject.set(x, "show", js.Any.fromFunction3(value))
     
     inline def setShowAt(
-      value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[js.Any]) => IComponent
+      value: (/* x */ js.UndefOr[Any], /* y */ js.UndefOr[Double], /* animate */ js.UndefOr[Any]) => IComponent
     ): Self = StObject.set(x, "showAt", js.Any.fromFunction3(value))
     
     inline def setShowAtUndefined: Self = StObject.set(x, "showAt", js.undefined)
     
     inline def setShowBy(
-      value: (/* component */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => IComponent
+      value: (/* component */ js.UndefOr[Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => IComponent
     ): Self = StObject.set(x, "showBy", js.Any.fromFunction3(value))
     
     inline def setShowByUndefined: Self = StObject.set(x, "showBy", js.undefined)
@@ -664,7 +658,7 @@ object IComponent {
     
     inline def setToFrontUndefined: Self = StObject.set(x, "toFront", js.undefined)
     
-    inline def setUpdateBox(value: /* box */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "updateBox", js.Any.fromFunction1(value))
+    inline def setUpdateBox(value: /* box */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "updateBox", js.Any.fromFunction1(value))
     
     inline def setUpdateBoxUndefined: Self = StObject.set(x, "updateBox", js.undefined)
     

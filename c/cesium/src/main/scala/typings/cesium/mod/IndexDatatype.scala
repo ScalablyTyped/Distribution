@@ -1,8 +1,5 @@
 package typings.cesium.mod
 
-import typings.std.ArrayBuffer
-import typings.std.Uint16Array
-import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,31 +11,35 @@ sealed trait IndexDatatype extends StObject
 object IndexDatatype extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[IndexDatatype & Double] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[IndexDatatype & scala.Nothing] = js.native
   
+  /**
+    * 8-bit unsigned byte corresponding to <code>UNSIGNED_BYTE</code> and the type
+    * of an element in <code>Uint8Array</code>.
+    */
   @js.native
   sealed trait UNSIGNED_BYTE
     extends StObject
        with IndexDatatype
-  /* 0 */ val UNSIGNED_BYTE: typings.cesium.mod.IndexDatatype.UNSIGNED_BYTE & Double = js.native
+  /* WebGLConstants.UNSIGNED_BYTE */ val UNSIGNED_BYTE: typings.cesium.mod.IndexDatatype.UNSIGNED_BYTE & scala.Nothing = js.native
   
+  /**
+    * 32-bit unsigned int corresponding to <code>UNSIGNED_INT</code> and the type
+    * of an element in <code>Uint32Array</code>.
+    */
   @js.native
   sealed trait UNSIGNED_INT
     extends StObject
        with IndexDatatype
-  /* 2 */ val UNSIGNED_INT: typings.cesium.mod.IndexDatatype.UNSIGNED_INT & Double = js.native
+  /* WebGLConstants.UNSIGNED_INT */ val UNSIGNED_INT: typings.cesium.mod.IndexDatatype.UNSIGNED_INT & scala.Nothing = js.native
   
+  /**
+    * 16-bit unsigned short corresponding to <code>UNSIGNED_SHORT</code> and the type
+    * of an element in <code>Uint16Array</code>.
+    */
   @js.native
   sealed trait UNSIGNED_SHORT
     extends StObject
        with IndexDatatype
-  /* 1 */ val UNSIGNED_SHORT: typings.cesium.mod.IndexDatatype.UNSIGNED_SHORT & Double = js.native
-  
-  def createTypedArray(numberOfVertices: Double, indicesLengthOrArray: js.Any): Uint16Array | Uint32Array = js.native
-  
-  def createTypedArrayFromArrayBuffer(numberOfVertices: Double, sourceArray: ArrayBuffer, byteOffset: Double, length: Double): Uint16Array | Uint32Array = js.native
-  
-  def getSizeInBytes(indexDatatype: IndexDatatype): Double = js.native
-  
-  def validate(indexDatatype: IndexDatatype): Boolean = js.native
+  /* WebGLConstants.UNSIGNED_SHORT */ val UNSIGNED_SHORT: typings.cesium.mod.IndexDatatype.UNSIGNED_SHORT & scala.Nothing = js.native
 }

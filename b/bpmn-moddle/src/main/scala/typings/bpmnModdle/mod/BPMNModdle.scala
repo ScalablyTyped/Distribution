@@ -15,10 +15,21 @@ trait BPMNModdle
     * @param xmlStr
     * XML string
     *
+    * @param options
+    * Options to pass to the underlying reader
+    */
+  def fromXML(xmlStr: String): js.Promise[Definitions] = js.native
+  /**
+    * Instantiates a BPMN model tree from a given xml string.
+    *
+    * @param xmlStr
+    * XML string
+    *
     * @param done
     * done callback
     */
   def fromXML(xmlStr: String, done: ImportFn): Unit = js.native
+  def fromXML(xmlStr: String, options: Option): js.Promise[Definitions] = js.native
   /**
     * Instantiates a BPMN model tree from a given xml string.
     *
@@ -32,6 +43,19 @@ trait BPMNModdle
     * done callback
     */
   def fromXML(xmlStr: String, options: Option, done: ImportFn): Unit = js.native
+  /**
+    * Instantiates a BPMN model tree from a given xml string.
+    *
+    * @param xmlStr
+    * XML string
+    *
+    * @param typeName
+    * Name of the root element
+    *
+    * @param options
+    * Options to pass to the underlying reader
+    */
+  def fromXML(xmlStr: String, typeName: String, options: Option): js.Promise[Definitions] = js.native
   /**
     * Instantiates a BPMN model tree from a given xml string.
     *

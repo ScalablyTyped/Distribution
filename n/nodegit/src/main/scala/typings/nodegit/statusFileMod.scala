@@ -10,7 +10,7 @@ object statusFileMod {
   
   @JSImport("nodegit/status-file", "StatusFile")
   @js.native
-  class StatusFile protected () extends StObject {
+  open class StatusFile protected () extends StObject {
     def this(args: StatusFileOptions) = this()
     
     def headToIndex(): DiffDelta = js.native

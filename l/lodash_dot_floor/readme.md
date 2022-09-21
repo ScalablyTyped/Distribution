@@ -10,10 +10,10 @@ The lodash method `_.floor` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.floor |
 | Keywords           | lodash-modularized, floor |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 33933 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5393.333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

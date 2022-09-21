@@ -42,10 +42,11 @@ trait ASPxClientFilterControl
   def GetAppliedFilterExpression(): String
   
   /**
-    * Returns the editor used to edit operand values for the specified filter column. An ASPxClientEditBase descendant that represents the editor used to edit operand values for the specified filter column.
-    * @param editorIndex An integer value that identifies the filter column by its index within the collection.
+    * Returns the editor used to edit the specified values. The editor.
+    * @param index The index of the filter condition.
+    * @param valueIndex The index of the value in the specified filter condition.
     */
-  def GetEditor(editorIndex: Double): ASPxClientEditBase
+  def GetEditor(index: Double, valueIndex: Double): ASPxClientEditBase
   
   /**
     * Returns the filter expression.
@@ -73,11 +74,11 @@ object ASPxClientFilterControl {
     EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]],
     GetAppliedFilterExpression: () => String,
     GetClientVisible: () => Boolean,
-    GetEditor: Double => ASPxClientEditBase,
+    GetEditor: (Double, Double) => ASPxClientEditBase,
     GetFilterExpression: () => String,
     GetHeight: () => Double,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     InCallback: () => Boolean,
@@ -91,7 +92,7 @@ object ASPxClientFilterControl {
     SetWidth: Double => Unit,
     name: String
   ): ASPxClientFilterControl = {
-    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), Applied = Applied.asInstanceOf[js.Any], Apply = js.Any.fromFunction0(Apply), BeginCallback = BeginCallback.asInstanceOf[js.Any], CallbackError = CallbackError.asInstanceOf[js.Any], EndCallback = EndCallback.asInstanceOf[js.Any], GetAppliedFilterExpression = js.Any.fromFunction0(GetAppliedFilterExpression), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetEditor = js.Any.fromFunction1(GetEditor), GetFilterExpression = js.Any.fromFunction0(GetFilterExpression), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init.asInstanceOf[js.Any], IsFilterExpressionValid = js.Any.fromFunction0(IsFilterExpressionValid), Reset = js.Any.fromFunction0(Reset), SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AdjustControl = js.Any.fromFunction0(AdjustControl), Applied = Applied.asInstanceOf[js.Any], Apply = js.Any.fromFunction0(Apply), BeginCallback = BeginCallback.asInstanceOf[js.Any], CallbackError = CallbackError.asInstanceOf[js.Any], EndCallback = EndCallback.asInstanceOf[js.Any], GetAppliedFilterExpression = js.Any.fromFunction0(GetAppliedFilterExpression), GetClientVisible = js.Any.fromFunction0(GetClientVisible), GetEditor = js.Any.fromFunction2(GetEditor), GetFilterExpression = js.Any.fromFunction0(GetFilterExpression), GetHeight = js.Any.fromFunction0(GetHeight), GetMainElement = js.Any.fromFunction0(GetMainElement), GetParentControl = js.Any.fromFunction0(GetParentControl), GetVisible = js.Any.fromFunction0(GetVisible), GetWidth = js.Any.fromFunction0(GetWidth), InCallback = js.Any.fromFunction0(InCallback), Init = Init.asInstanceOf[js.Any], IsFilterExpressionValid = js.Any.fromFunction0(IsFilterExpressionValid), Reset = js.Any.fromFunction0(Reset), SendMessageToAssistiveTechnology = js.Any.fromFunction1(SendMessageToAssistiveTechnology), SetClientVisible = js.Any.fromFunction1(SetClientVisible), SetHeight = js.Any.fromFunction1(SetHeight), SetVisible = js.Any.fromFunction1(SetVisible), SetWidth = js.Any.fromFunction1(SetWidth), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFilterControl]
   }
   
@@ -109,7 +110,7 @@ object ASPxClientFilterControl {
     
     inline def setGetAppliedFilterExpression(value: () => String): Self = StObject.set(x, "GetAppliedFilterExpression", js.Any.fromFunction0(value))
     
-    inline def setGetEditor(value: Double => ASPxClientEditBase): Self = StObject.set(x, "GetEditor", js.Any.fromFunction1(value))
+    inline def setGetEditor(value: (Double, Double) => ASPxClientEditBase): Self = StObject.set(x, "GetEditor", js.Any.fromFunction2(value))
     
     inline def setGetFilterExpression(value: () => String): Self = StObject.set(x, "GetFilterExpression", js.Any.fromFunction0(value))
     

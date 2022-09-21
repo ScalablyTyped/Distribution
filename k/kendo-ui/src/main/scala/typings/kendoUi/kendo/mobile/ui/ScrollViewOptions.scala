@@ -17,7 +17,7 @@ trait ScrollViewOptions extends StObject {
   
   var contentHeight: js.UndefOr[Double | String] = js.undefined
   
-  var dataSource: js.UndefOr[DataSource | js.Any] = js.undefined
+  var dataSource: js.UndefOr[DataSource | Any] = js.undefined
   
   var duration: js.UndefOr[Double] = js.undefined
   
@@ -68,7 +68,7 @@ object ScrollViewOptions {
     
     inline def setContentHeightUndefined: Self = StObject.set(x, "contentHeight", js.undefined)
     
-    inline def setDataSource(value: DataSource | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource | Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for justified-layout
 
-Typings are for version 4.0
+Typings are for version 4.1
 
 ## Library description:
 Pass in box sizes and get back sizes and coordinates for a justified layout
@@ -10,10 +10,10 @@ Pass in box sizes and get back sizes and coordinates for a justified layout
 | ------------------ | :-------------: |
 | Full name          | justified-layout |
 | Keywords           | justify, grid, photos, layout, boxes |
-| # releases         | 5 |
-| # dependents       | 12 |
-| # downloads        | 110772 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 12012.666666666666 |
+| # stars            | 1535.0 |
 
 ## Links
 - [Homepage](https://github.com/flickr/justified-layout#readme)

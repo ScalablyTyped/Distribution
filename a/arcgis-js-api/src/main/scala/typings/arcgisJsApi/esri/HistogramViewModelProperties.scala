@@ -58,7 +58,7 @@ object HistogramViewModelProperties {
     
     inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
-    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value*))
     
     inline def setLabelFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String

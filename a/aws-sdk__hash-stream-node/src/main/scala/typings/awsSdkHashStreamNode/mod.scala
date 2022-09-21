@@ -11,4 +11,8 @@ object mod {
   @JSImport("@aws-sdk/hash-stream-node", "fileStreamHasher")
   @js.native
   val fileStreamHasher: StreamHasher[Readable] = js.native
+  
+  @JSImport("@aws-sdk/hash-stream-node", "readableStreamHasher")
+  @js.native
+  val readableStreamHasher: StreamHasher[Readable] = js.native
 }

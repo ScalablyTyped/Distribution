@@ -5,22 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DERBoolean = typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+type DERBoolean = ASN1Object
 
 /**
   * class for ASN.1 DER IA5String
   * @param params associative array of parameters (ex. {'str': 'aaa'})
   */
-type DERIA5String = typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractString
+type DERIA5String = DERAbstractString
 
 /** class for ASN.1 DER Null */
-type DERNull = typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+type DERNull = ASN1Object
 
 /**
   * class for ASN.1 DER NumericString
   * @param params associative array of parameters (ex. {'str': 'aaa'})
   */
-type DERNumericString = typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractString
+type DERNumericString = DERAbstractString
 
 /**
   * class for ASN.1 DER OctetString
@@ -55,13 +55,13 @@ type DERNumericString = typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractString
   * //     }
   * //   }
   */
-type DEROctetString = typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractString
+type DEROctetString = DERAbstractString
 
 /**
   * class for ASN.1 DER PrintableString
   * @param params associative array of parameters (ex. {'str': 'aaa'})
   */
-type DERPrintableString = typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractString
+type DERPrintableString = DERAbstractString
 
 /**
   * class for ASN.1 DER Set
@@ -76,16 +76,16 @@ type DERPrintableString = typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractStrin
   * NOTE1: 'params' can be omitted.
   * NOTE2: sortflag is supported since 1.0.5.
   */
-type DERSet = typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractStructured
+type DERSet = DERAbstractStructured
 
 /**
   * class for ASN.1 DER TeletexString
   * @param params associative array of parameters (ex. {'str': 'aaa'})
   */
-type DERTeletexString = typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractString
+type DERTeletexString = DERAbstractString
 
 /**
   * class for ASN.1 DER UTF8String
   * @param params associative array of parameters (ex. {'str': 'aaa'})
   */
-type DERUTF8String = typings.jsrsasign.jsrsasign.KJUR.asn1.DERAbstractString
+type DERUTF8String = DERAbstractString

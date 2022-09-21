@@ -71,7 +71,7 @@ trait XUpdateHandler
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif there already wa
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addOrReplacePropertyWithValue(aName: String, aAttributes: Double, aValue: js.Any): Unit
+  def addOrReplacePropertyWithValue(aName: String, aAttributes: Double, aValue: Any): Unit
   
   /**
     * receives notification that a node modification is complete.
@@ -184,7 +184,7 @@ trait XUpdateHandler
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property modification in progress currentlyif there already was a
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def setPropertyValue(aValue: js.Any): Unit
+  def setPropertyValue(aValue: Any): Unit
   
   /**
     * receives notification about a change to the value of the current property for a specific locale.
@@ -194,7 +194,7 @@ trait XUpdateHandler
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property modification in progress currentlyif the property is not
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def setPropertyValueForLocale(aValue: js.Any, aLocale: String): Unit
+  def setPropertyValueForLocale(aValue: Any, aLocale: String): Unit
   
   /**
     * receives notification that a update or description is started.
@@ -211,21 +211,21 @@ object XUpdateHandler {
     addOrReplaceNode: (String, Double) => Unit,
     addOrReplaceNodeFromTemplate: (String, Double, TemplateIdentifier) => Unit,
     addOrReplaceProperty: (String, Double, `type`) => Unit,
-    addOrReplacePropertyWithValue: (String, Double, js.Any) => Unit,
+    addOrReplacePropertyWithValue: (String, Double, Any) => Unit,
     endNode: () => Unit,
     endProperty: () => Unit,
     endUpdate: () => Unit,
     modifyNode: (String, Double, Double, Boolean) => Unit,
     modifyProperty: (String, Double, Double, `type`) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeNode: String => Unit,
     removeProperty: String => Unit,
     resetProperty: String => Unit,
     resetPropertyValue: () => Unit,
     resetPropertyValueForLocale: String => Unit,
-    setPropertyValue: js.Any => Unit,
-    setPropertyValueForLocale: (js.Any, String) => Unit,
+    setPropertyValue: Any => Unit,
+    setPropertyValueForLocale: (Any, String) => Unit,
     startUpdate: () => Unit
   ): XUpdateHandler = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addOrReplaceNode = js.Any.fromFunction2(addOrReplaceNode), addOrReplaceNodeFromTemplate = js.Any.fromFunction3(addOrReplaceNodeFromTemplate), addOrReplaceProperty = js.Any.fromFunction3(addOrReplaceProperty), addOrReplacePropertyWithValue = js.Any.fromFunction3(addOrReplacePropertyWithValue), endNode = js.Any.fromFunction0(endNode), endProperty = js.Any.fromFunction0(endProperty), endUpdate = js.Any.fromFunction0(endUpdate), modifyNode = js.Any.fromFunction4(modifyNode), modifyProperty = js.Any.fromFunction4(modifyProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeNode = js.Any.fromFunction1(removeNode), removeProperty = js.Any.fromFunction1(removeProperty), resetProperty = js.Any.fromFunction1(resetProperty), resetPropertyValue = js.Any.fromFunction0(resetPropertyValue), resetPropertyValueForLocale = js.Any.fromFunction1(resetPropertyValueForLocale), setPropertyValue = js.Any.fromFunction1(setPropertyValue), setPropertyValueForLocale = js.Any.fromFunction2(setPropertyValueForLocale), startUpdate = js.Any.fromFunction0(startUpdate))
@@ -240,7 +240,7 @@ object XUpdateHandler {
     
     inline def setAddOrReplaceProperty(value: (String, Double, `type`) => Unit): Self = StObject.set(x, "addOrReplaceProperty", js.Any.fromFunction3(value))
     
-    inline def setAddOrReplacePropertyWithValue(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addOrReplacePropertyWithValue", js.Any.fromFunction3(value))
+    inline def setAddOrReplacePropertyWithValue(value: (String, Double, Any) => Unit): Self = StObject.set(x, "addOrReplacePropertyWithValue", js.Any.fromFunction3(value))
     
     inline def setEndNode(value: () => Unit): Self = StObject.set(x, "endNode", js.Any.fromFunction0(value))
     
@@ -262,9 +262,9 @@ object XUpdateHandler {
     
     inline def setResetPropertyValueForLocale(value: String => Unit): Self = StObject.set(x, "resetPropertyValueForLocale", js.Any.fromFunction1(value))
     
-    inline def setSetPropertyValue(value: js.Any => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction1(value))
+    inline def setSetPropertyValue(value: Any => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction1(value))
     
-    inline def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = StObject.set(x, "setPropertyValueForLocale", js.Any.fromFunction2(value))
+    inline def setSetPropertyValueForLocale(value: (Any, String) => Unit): Self = StObject.set(x, "setPropertyValueForLocale", js.Any.fromFunction2(value))
     
     inline def setStartUpdate(value: () => Unit): Self = StObject.set(x, "startUpdate", js.Any.fromFunction0(value))
   }

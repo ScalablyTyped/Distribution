@@ -44,7 +44,7 @@ object typesGetCommentsForComparedCommitOutputMod {
       
       inline def setCommentsForComparedCommitDataUndefined: Self = StObject.set(x, "commentsForComparedCommitData", js.undefined)
       
-      inline def setCommentsForComparedCommitDataVarargs(value: UnmarshalledCommentsForComparedCommit*): Self = StObject.set(x, "commentsForComparedCommitData", js.Array(value :_*))
+      inline def setCommentsForComparedCommitDataVarargs(value: UnmarshalledCommentsForComparedCommit*): Self = StObject.set(x, "commentsForComparedCommitData", js.Array(value*))
       
       inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       

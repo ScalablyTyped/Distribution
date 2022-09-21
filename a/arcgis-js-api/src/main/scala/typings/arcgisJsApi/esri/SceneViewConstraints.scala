@@ -25,13 +25,6 @@ trait SceneViewConstraints
   var clipDistance: js.UndefOr[SceneViewConstraintsClipDistance] = js.undefined
   
   /**
-    * When enabled, prevents the user from navigating below the surface in a local SceneView.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
-  var collision: js.UndefOr[SceneViewConstraintsCollision] = js.undefined
-  
-  /**
     * Specifies a constraint on the amount of allowed tilting of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
@@ -44,9 +37,7 @@ object SceneViewConstraints {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewConstraints]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], SceneViewConstraints]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, SceneViewConstraints]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SceneViewConstraints]])
   ): SceneViewConstraints = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewConstraints]
@@ -61,10 +52,6 @@ object SceneViewConstraints {
     inline def setClipDistance(value: SceneViewConstraintsClipDistance): Self = StObject.set(x, "clipDistance", value.asInstanceOf[js.Any])
     
     inline def setClipDistanceUndefined: Self = StObject.set(x, "clipDistance", js.undefined)
-    
-    inline def setCollision(value: SceneViewConstraintsCollision): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
-    
-    inline def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
     
     inline def setTilt(value: SceneViewConstraintsTilt): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
     

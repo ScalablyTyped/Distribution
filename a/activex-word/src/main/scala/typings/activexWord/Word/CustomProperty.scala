@@ -14,7 +14,7 @@ trait CustomProperty extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Value: String
   
@@ -28,7 +28,7 @@ object CustomProperty {
     Creator: Double,
     Delete: () => Unit,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Value: String,
     WordDotCustomProperty_typekey: CustomProperty
   ): CustomProperty = {
@@ -47,7 +47,7 @@ object CustomProperty {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

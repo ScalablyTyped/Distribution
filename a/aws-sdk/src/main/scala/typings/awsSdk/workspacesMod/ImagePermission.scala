@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImagePermission extends StObject {
   
   /**
-    * The identifier of the AWS account that an image has been shared with.
+    * The identifier of the Amazon Web Services account that an image has been shared with.
     */
   var SharedAccountId: js.UndefOr[AwsAccount] = js.undefined
 }

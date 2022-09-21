@@ -22,18 +22,18 @@ object global {
     
     @JSGlobal("Giraffe.App")
     @js.native
-    class App_ () extends App
+    open class App_ () extends App
     
     @JSGlobal("Giraffe.Collection")
     @js.native
-    class Collection[TModel /* <: typings.giraffe.Giraffe.Model */] ()
+    open class Collection[TModel /* <: typings.giraffe.Giraffe.Model */] ()
       extends typings.giraffe.Giraffe.Collection[TModel]
     
     object Contrib {
       
       @JSGlobal("Giraffe.Contrib.CollectionView")
       @js.native
-      class CollectionView[TModel /* <: typings.giraffe.Giraffe.Model */] ()
+      open class CollectionView[TModel /* <: typings.giraffe.Giraffe.Model */] ()
         extends typings.giraffe.Giraffe.Contrib.CollectionView[TModel]
       object CollectionView {
         
@@ -42,12 +42,12 @@ object global {
         val ^ : js.Any = js.native
         
         /* static member */
-        inline def getDefaults(ctx: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+        inline def getDefaults(ctx: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")(ctx.asInstanceOf[js.Any]).asInstanceOf[Any]
       }
       
       @JSGlobal("Giraffe.Contrib.Controller")
       @js.native
-      class Controller ()
+      open class Controller ()
         extends typings.giraffe.Giraffe.Contrib.Controller {
         
         /* CompleteClass */
@@ -56,7 +56,7 @@ object global {
       
       @JSGlobal("Giraffe.Contrib.FastCollectionView")
       @js.native
-      class FastCollectionView[TModel /* <: typings.giraffe.Giraffe.Model */] ()
+      open class FastCollectionView[TModel /* <: typings.giraffe.Giraffe.Model */] ()
         extends typings.giraffe.Giraffe.Contrib.FastCollectionView[TModel]
       object FastCollectionView {
         
@@ -65,23 +65,23 @@ object global {
         val ^ : js.Any = js.native
         
         /* static member */
-        inline def getDefaults(ctx: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")(ctx.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+        inline def getDefaults(ctx: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")(ctx.asInstanceOf[js.Any]).asInstanceOf[Any]
       }
     }
     
     @JSGlobal("Giraffe.Model")
     @js.native
-    class Model ()
+    open class Model ()
       extends typings.giraffe.Giraffe.Model
     
     @JSGlobal("Giraffe.Router")
     @js.native
-    class Router ()
+    open class Router ()
       extends typings.giraffe.Giraffe.Router
     
     @JSGlobal("Giraffe.View")
     @js.native
-    class View[TModel /* <: typings.giraffe.Giraffe.Model */] ()
+    open class View[TModel /* <: typings.giraffe.Giraffe.Model */] ()
       extends typings.giraffe.Giraffe.View[TModel]
     object View {
       
@@ -90,36 +90,36 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def detachByElement(el: js.Any): typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("detachByElement")(el.asInstanceOf[js.Any]).asInstanceOf[typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model]]
-      inline def detachByElement(el: js.Any, preserve: Boolean): typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model] = (^.asInstanceOf[js.Dynamic].applyDynamic("detachByElement")(el.asInstanceOf[js.Any], preserve.asInstanceOf[js.Any])).asInstanceOf[typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model]]
+      inline def detachByElement(el: Any): typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("detachByElement")(el.asInstanceOf[js.Any]).asInstanceOf[typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model]]
+      inline def detachByElement(el: Any, preserve: Boolean): typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model] = (^.asInstanceOf[js.Dynamic].applyDynamic("detachByElement")(el.asInstanceOf[js.Any], preserve.asInstanceOf[js.Any])).asInstanceOf[typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model]]
       
       /* static member */
       inline def getByCid(cid: String): typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByCid")(cid.asInstanceOf[js.Any]).asInstanceOf[typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model]]
       
       /* static member */
-      inline def getClosestView[TModel](el: js.Any): typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClosestView")(el.asInstanceOf[js.Any]).asInstanceOf[typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model]]
+      inline def getClosestView[TModel](el: Any): typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClosestView")(el.asInstanceOf[js.Any]).asInstanceOf[typings.giraffe.Giraffe.View[typings.giraffe.Giraffe.Model]]
       
       /* static member */
-      inline def removeDocumentEvents(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDocumentEvents")().asInstanceOf[js.Any]
-      inline def removeDocumentEvents(prefix: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDocumentEvents")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def removeDocumentEvents(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDocumentEvents")().asInstanceOf[Any]
+      inline def removeDocumentEvents(prefix: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDocumentEvents")(prefix.asInstanceOf[js.Any]).asInstanceOf[Any]
       
       /* static member */
-      inline def setDocumentEventPrefix(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocumentEventPrefix")().asInstanceOf[js.Any]
-      inline def setDocumentEventPrefix(prefix: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocumentEventPrefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def setDocumentEventPrefix(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocumentEventPrefix")().asInstanceOf[Any]
+      inline def setDocumentEventPrefix(prefix: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocumentEventPrefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[Any]
       
       /* static member */
       inline def setDocumentEvents(events: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setDocumentEvents")(events.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
       inline def setDocumentEvents(events: js.Array[String], prefix: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDocumentEvents")(events.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
       
       /* static member */
-      inline def setTemplateStrategy(strategy: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateStrategy")(strategy.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      inline def setTemplateStrategy(strategy: js.Any, instance: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateStrategy")(strategy.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def setTemplateStrategy(strategy: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateStrategy")(strategy.asInstanceOf[js.Any]).asInstanceOf[Any]
+      inline def setTemplateStrategy(strategy: Any, instance: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateStrategy")(strategy.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[Any]
       
       /* static member */
-      inline def toEl(el: js.Any): JQuery[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("to$El")(el.asInstanceOf[js.Any]).asInstanceOf[JQuery[HTMLElement]]
-      inline def toEl(el: js.Any, parent: js.Any): JQuery[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("to$El")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[JQuery[HTMLElement]]
-      inline def toEl(el: js.Any, parent: js.Any, allowParentMatch: Boolean): JQuery[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("to$El")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], allowParentMatch.asInstanceOf[js.Any])).asInstanceOf[JQuery[HTMLElement]]
-      inline def toEl(el: js.Any, parent: Unit, allowParentMatch: Boolean): JQuery[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("to$El")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], allowParentMatch.asInstanceOf[js.Any])).asInstanceOf[JQuery[HTMLElement]]
+      inline def toEl(el: Any): JQuery[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("to$El")(el.asInstanceOf[js.Any]).asInstanceOf[JQuery[HTMLElement]]
+      inline def toEl(el: Any, parent: Any): JQuery[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("to$El")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[JQuery[HTMLElement]]
+      inline def toEl(el: Any, parent: Any, allowParentMatch: Boolean): JQuery[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("to$El")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], allowParentMatch.asInstanceOf[js.Any])).asInstanceOf[JQuery[HTMLElement]]
+      inline def toEl(el: Any, parent: Unit, allowParentMatch: Boolean): JQuery[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("to$El")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], allowParentMatch.asInstanceOf[js.Any])).asInstanceOf[JQuery[HTMLElement]]
     }
     
     @JSGlobal("Giraffe.app")
@@ -136,25 +136,25 @@ object global {
     
     inline def bindDataEvents(instance: GiraffeObject): GiraffeObject = ^.asInstanceOf[js.Dynamic].applyDynamic("bindDataEvents")(instance.asInstanceOf[js.Any]).asInstanceOf[GiraffeObject]
     
-    inline def bindEvent(context: Events, target: Events, event: js.Any, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bindEvent")(context.asInstanceOf[js.Any], target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def bindEvent(context: Events, target: Events, event: Any, callback: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bindEvent")(context.asInstanceOf[js.Any], target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def bindEventMap(context: Events, target: Events, eventMap: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bindEventMap")(context.asInstanceOf[js.Any], target.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def bindEventMap(context: Events, target: Events, eventMap: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bindEventMap")(context.asInstanceOf[js.Any], target.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def configure(instance: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def configure(instance: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(instance.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def configure(instance: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(instance.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def configure(instance: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(instance.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSGlobal("Giraffe.defaultOptions")
     @js.native
     def defaultOptions: DefaultOptions = js.native
     inline def defaultOptions_=(x: DefaultOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
-    inline def dispose(instance: GiraffeObject, args: js.Any*): GiraffeObject = (^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(instance.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[GiraffeObject]
+    inline def dispose(instance: GiraffeObject, args: Any*): GiraffeObject = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(List(instance.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[GiraffeObject]
     
-    inline def disposeThis(args: js.Any*): GiraffeObject = ^.asInstanceOf[js.Dynamic].applyDynamic("disposeThis")(args.asInstanceOf[js.Any]).asInstanceOf[GiraffeObject]
+    inline def disposeThis(args: Any*): GiraffeObject = ^.asInstanceOf[js.Dynamic].applyDynamic("disposeThis")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[GiraffeObject]
     
-    inline def unbindEvent(context: Events, target: Events, event: js.Any, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbindEvent")(context.asInstanceOf[js.Any], target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def unbindEvent(context: Events, target: Events, event: Any, callback: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbindEvent")(context.asInstanceOf[js.Any], target.asInstanceOf[js.Any], event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def unbindEventMap(context: Events, target: Events, eventMap: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbindEventMap")(context.asInstanceOf[js.Any], target.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def unbindEventMap(context: Events, target: Events, eventMap: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbindEventMap")(context.asInstanceOf[js.Any], target.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSGlobal("Giraffe.version")
     @js.native
@@ -166,6 +166,6 @@ object global {
     def views: ViewMap[typings.giraffe.Giraffe.Model] = js.native
     inline def views_=(x: ViewMap[typings.giraffe.Giraffe.Model]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("views")(x.asInstanceOf[js.Any])
     
-    inline def wrapFn(obj: js.Any, name: String, before: js.Function, after: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapFn")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], before.asInstanceOf[js.Any], after.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def wrapFn(obj: Any, name: String, before: js.Function, after: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapFn")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], before.asInstanceOf[js.Any], after.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

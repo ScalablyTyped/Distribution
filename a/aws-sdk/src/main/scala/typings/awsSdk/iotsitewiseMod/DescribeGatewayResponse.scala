@@ -9,7 +9,7 @@ trait DescribeGatewayResponse extends StObject {
   /**
     * The date the gateway was created, in Unix epoch time.
     */
-  var creationDate: Timestamp
+  var creationDate: js.Date
   
   /**
     * The ARN of the gateway, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:gateway/${GatewayId} 
@@ -39,17 +39,17 @@ trait DescribeGatewayResponse extends StObject {
   /**
     * The date the gateway was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: Timestamp
+  var lastUpdateDate: js.Date
 }
 object DescribeGatewayResponse {
   
   inline def apply(
-    creationDate: Timestamp,
+    creationDate: js.Date,
     gatewayArn: ARN,
     gatewayCapabilitySummaries: GatewayCapabilitySummaries,
     gatewayId: ID,
     gatewayName: Name,
-    lastUpdateDate: Timestamp
+    lastUpdateDate: js.Date
   ): DescribeGatewayResponse = {
     val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any], gatewayCapabilitySummaries = gatewayCapabilitySummaries.asInstanceOf[js.Any], gatewayId = gatewayId.asInstanceOf[js.Any], gatewayName = gatewayName.asInstanceOf[js.Any], lastUpdateDate = lastUpdateDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGatewayResponse]
@@ -57,13 +57,13 @@ object DescribeGatewayResponse {
   
   extension [Self <: DescribeGatewayResponse](x: Self) {
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setGatewayArn(value: ARN): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
     
     inline def setGatewayCapabilitySummaries(value: GatewayCapabilitySummaries): Self = StObject.set(x, "gatewayCapabilitySummaries", value.asInstanceOf[js.Any])
     
-    inline def setGatewayCapabilitySummariesVarargs(value: GatewayCapabilitySummary*): Self = StObject.set(x, "gatewayCapabilitySummaries", js.Array(value :_*))
+    inline def setGatewayCapabilitySummariesVarargs(value: GatewayCapabilitySummary*): Self = StObject.set(x, "gatewayCapabilitySummaries", js.Array(value*))
     
     inline def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
     
@@ -73,6 +73,6 @@ object DescribeGatewayResponse {
     
     inline def setGatewayPlatformUndefined: Self = StObject.set(x, "gatewayPlatform", js.undefined)
     
-    inline def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDate(value: js.Date): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
   }
 }

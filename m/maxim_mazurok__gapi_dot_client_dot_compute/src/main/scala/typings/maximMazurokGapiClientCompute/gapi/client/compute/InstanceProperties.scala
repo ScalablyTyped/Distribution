@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InstanceProperties extends StObject {
   
+  /** Controls for advanced machine-related behavior features. */
+  var advancedMachineFeatures: js.UndefOr[AdvancedMachineFeatures] = js.undefined
+  
   /**
     * Enables instances created based on these properties to send packets with source IP addresses other than their own and receive packets with destination IP addresses other than their
     * own. If these instances will be used as an IP gateway or it will be set as the next-hop in a Route resource, specify true. If unsure, leave this set to false. See the Enable IP
@@ -30,7 +33,7 @@ trait InstanceProperties extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InstanceProperties & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InstanceProperties & TopLevel[Any]
   ] = js.undefined
   
   /** The machine type to use for instances that are created from these properties. */
@@ -51,7 +54,7 @@ trait InstanceProperties extends StObject {
   /** An array of network access configurations for this interface. */
   var networkInterfaces: js.UndefOr[js.Array[NetworkInterface]] = js.undefined
   
-  /** The private IPv6 google access type for VMs. If not specified, use  INHERIT_FROM_SUBNETWORK as default. */
+  /** The private IPv6 google access type for VMs. If not specified, use INHERIT_FROM_SUBNETWORK as default. */
   var privateIpv6GoogleAccess: js.UndefOr[String] = js.undefined
   
   /** Specifies the reservations that instances can consume from. */
@@ -86,6 +89,10 @@ object InstanceProperties {
   
   extension [Self <: InstanceProperties](x: Self) {
     
+    inline def setAdvancedMachineFeatures(value: AdvancedMachineFeatures): Self = StObject.set(x, "advancedMachineFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setAdvancedMachineFeaturesUndefined: Self = StObject.set(x, "advancedMachineFeatures", js.undefined)
+    
     inline def setCanIpForward(value: Boolean): Self = StObject.set(x, "canIpForward", value.asInstanceOf[js.Any])
     
     inline def setCanIpForwardUndefined: Self = StObject.set(x, "canIpForward", js.undefined)
@@ -102,18 +109,18 @@ object InstanceProperties {
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    inline def setDisksVarargs(value: AttachedDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: AttachedDisk*): Self = StObject.set(x, "disks", js.Array(value*))
     
     inline def setGuestAccelerators(value: js.Array[AcceleratorConfig]): Self = StObject.set(x, "guestAccelerators", value.asInstanceOf[js.Any])
     
     inline def setGuestAcceleratorsUndefined: Self = StObject.set(x, "guestAccelerators", js.undefined)
     
-    inline def setGuestAcceleratorsVarargs(value: AcceleratorConfig*): Self = StObject.set(x, "guestAccelerators", js.Array(value :_*))
+    inline def setGuestAcceleratorsVarargs(value: AcceleratorConfig*): Self = StObject.set(x, "guestAccelerators", js.Array(value*))
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InstanceProperties & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.InstanceProperties & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -134,7 +141,7 @@ object InstanceProperties {
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value*))
     
     inline def setPrivateIpv6GoogleAccess(value: String): Self = StObject.set(x, "privateIpv6GoogleAccess", value.asInstanceOf[js.Any])
     
@@ -148,7 +155,7 @@ object InstanceProperties {
     
     inline def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
-    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
+    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value*))
     
     inline def setScheduling(value: Scheduling): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
     
@@ -158,7 +165,7 @@ object InstanceProperties {
     
     inline def setServiceAccountsUndefined: Self = StObject.set(x, "serviceAccounts", js.undefined)
     
-    inline def setServiceAccountsVarargs(value: ServiceAccount*): Self = StObject.set(x, "serviceAccounts", js.Array(value :_*))
+    inline def setServiceAccountsVarargs(value: ServiceAccount*): Self = StObject.set(x, "serviceAccounts", js.Array(value*))
     
     inline def setShieldedInstanceConfig(value: ShieldedInstanceConfig): Self = StObject.set(x, "shieldedInstanceConfig", value.asInstanceOf[js.Any])
     

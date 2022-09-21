@@ -9,7 +9,7 @@ trait OrdersRejectReturnLineItemResponse extends StObject {
   /** The status of the execution. Acceptable values are: - "`duplicate`" - "`executed`" */
   var executionStatus: js.UndefOr[String] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#ordersRejectReturnLineItemResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#ordersRejectReturnLineItemResponse`". */
   var kind: js.UndefOr[String] = js.undefined
 }
 object OrdersRejectReturnLineItemResponse {

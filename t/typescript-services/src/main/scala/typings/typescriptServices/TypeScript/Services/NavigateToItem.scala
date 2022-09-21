@@ -48,7 +48,7 @@ object NavigateToItem {
     
     inline def setAdditionalSpans(value: js.Array[SpanInfo]): Self = StObject.set(x, "additionalSpans", value.asInstanceOf[js.Any])
     
-    inline def setAdditionalSpansVarargs(value: SpanInfo*): Self = StObject.set(x, "additionalSpans", js.Array(value :_*))
+    inline def setAdditionalSpansVarargs(value: SpanInfo*): Self = StObject.set(x, "additionalSpans", js.Array(value*))
     
     inline def setContainerKind(value: String): Self = StObject.set(x, "containerKind", value.asInstanceOf[js.Any])
     

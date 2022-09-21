@@ -10,6 +10,13 @@ trait WorkflowTemplate extends StObject {
   /** Output only. The time template was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional. Timeout duration for the DAG of jobs, expressed in seconds (see JSON representation of duration (https://developers.google.com/protocol-buffers/docs/proto3#json)). The
+    * timeout duration must be from 10 minutes ("600s") to 24 hours ("86400s"). The timer begins when the first job is submitted. If the workflow is running at the end of the timeout
+    * period, any remaining jobs are cancelled, the workflow is ended, and if the workflow was running on a managed cluster, the cluster is deleted.
+    */
+  var dagTimeout: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
   
   /** Required. The Directed Acyclic Graph of Jobs to submit. */
@@ -23,7 +30,7 @@ trait WorkflowTemplate extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowTemplate & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowTemplate & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -62,6 +69,10 @@ object WorkflowTemplate {
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
+    inline def setDagTimeout(value: String): Self = StObject.set(x, "dagTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setDagTimeoutUndefined: Self = StObject.set(x, "dagTimeout", js.undefined)
+    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -70,12 +81,12 @@ object WorkflowTemplate {
     
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    inline def setJobsVarargs(value: OrderedJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: OrderedJob*): Self = StObject.set(x, "jobs", js.Array(value*))
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowTemplate & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.WorkflowTemplate & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -88,7 +99,7 @@ object WorkflowTemplate {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: TemplateParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: TemplateParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setPlacement(value: WorkflowTemplatePlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     

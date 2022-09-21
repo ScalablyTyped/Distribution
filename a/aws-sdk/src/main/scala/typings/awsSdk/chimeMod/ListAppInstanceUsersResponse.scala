@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAppInstanceUsersResponse extends StObject {
   
   /**
-    * The ARN of the app instance.
+    * The ARN of the AppInstance.
     */
   var AppInstanceArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
-    * The information for each of the requested app instance users.
+    * The information for each requested AppInstanceUser.
     */
   var AppInstanceUsers: js.UndefOr[AppInstanceUserList] = js.undefined
   
@@ -38,7 +38,7 @@ object ListAppInstanceUsersResponse {
     
     inline def setAppInstanceUsersUndefined: Self = StObject.set(x, "AppInstanceUsers", js.undefined)
     
-    inline def setAppInstanceUsersVarargs(value: AppInstanceUserSummary*): Self = StObject.set(x, "AppInstanceUsers", js.Array(value :_*))
+    inline def setAppInstanceUsersVarargs(value: AppInstanceUserSummary*): Self = StObject.set(x, "AppInstanceUsers", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

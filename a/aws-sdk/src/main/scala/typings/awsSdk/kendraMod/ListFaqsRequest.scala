@@ -17,7 +17,7 @@ trait ListFaqsRequest extends StObject {
   var MaxResults: js.UndefOr[MaxResultsIntegerForListFaqsRequest] = js.undefined
   
   /**
-    * If the result of the previous request to ListFaqs was truncated, include the NextToken to fetch the next set of FAQs.
+    * If the previous response was incomplete (because there is more data to retrieve), Amazon Kendra returns a pagination token in the response. You can use this pagination token to retrieve the next set of FAQs.
     */
   var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.undefined
 }

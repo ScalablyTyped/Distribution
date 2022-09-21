@@ -19,4 +19,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @struct
   */
-class XML () extends StObject
+open class XML () extends StObject

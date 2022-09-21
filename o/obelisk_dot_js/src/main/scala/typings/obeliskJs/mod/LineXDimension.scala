@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "LineXDimension")
 @js.native
-class LineXDimension () extends AbstractDimension {
+open class LineXDimension () extends AbstractDimension {
   def this(axis: Double) = this()
 }

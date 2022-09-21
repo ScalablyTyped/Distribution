@@ -4,84 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1", "storage_v1.Resource$Notifications")
 @js.native
-class ResourceNotifications protected () extends StObject {
+open class ResourceNotifications protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * storage.notifications.delete
-    * @desc Permanently deletes a notification subscription.
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Storage JSON API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/storage
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var storage = google.storage('v1');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // The parent bucket of the notification.
-    *     bucket: 'my-bucket',  // TODO: Update placeholder value.
-    *
-    *     // ID of the notification to delete.
-    *     notification: 'my-notification',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   storage.notifications.delete(request, function(err) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *   });
-    * });
-    *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias storage.notifications.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket The parent bucket of the notification.
-    * @param {string} params.notification ID of the notification to delete.
-    * @param {string=} params.userProject The project to be billed for this request. Required for Requester Pays buckets.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -89,8 +24,8 @@ class ResourceNotifications protected () extends StObject {
   def delete(params: ParamsResourceNotificationsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceNotificationsDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceNotificationsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(
@@ -98,77 +33,66 @@ class ResourceNotifications protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
-  
   /**
-    * storage.notifications.get
-    * @desc View a notification configuration.
+    * Permanently deletes a notification subscription.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Storage JSON API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/storage
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var storage = google.storage('v1');
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // The parent bucket of the notification.
-    *     bucket: 'my-bucket',  // TODO: Update placeholder value.
-    *
-    *     // Notification ID
-    *     notification: 'my-notification',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   storage.notifications.get(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/devstorage.full_control',
+    *       'https://www.googleapis.com/auth/devstorage.read_write',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.notifications.delete({
+    *     // The parent bucket of the notification.
+    *     bucket: 'placeholder-value',
+    *     // ID of the notification to delete.
+    *     notification: 'placeholder-value',
+    *     // The project to be billed for this request. Required for Requester Pays buckets.
+    *     userProject: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias storage.notifications.get
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket The parent bucket of the notification.
-    * @param {string} params.notification Notification ID
-    * @param {string=} params.userProject The project to be billed for this request. Required for Requester Pays buckets.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceNotificationsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceNotificationsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaNotification] = js.native
   def get(callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
@@ -176,8 +100,8 @@ class ResourceNotifications protected () extends StObject {
   def get(params: ParamsResourceNotificationsGet, callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def get(
     params: ParamsResourceNotificationsGet,
-    options: BodyResponseCallback[SchemaNotification],
-    callback: BodyResponseCallback[SchemaNotification]
+    options: BodyResponseCallback[Readable | SchemaNotification],
+    callback: BodyResponseCallback[Readable | SchemaNotification]
   ): Unit = js.native
   def get(params: ParamsResourceNotificationsGet, options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
   def get(
@@ -185,78 +109,81 @@ class ResourceNotifications protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotification]
   ): Unit = js.native
-  
   /**
-    * storage.notifications.insert
-    * @desc Creates a notification subscription for a given bucket.
+    * View a notification configuration.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Storage JSON API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/storage
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var storage = google.storage('v1');
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // The parent bucket of the notification.
-    *     bucket: 'my-bucket',  // TODO: Update placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   storage.notifications.insert(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/devstorage.full_control',
+    *       'https://www.googleapis.com/auth/devstorage.read_only',
+    *       'https://www.googleapis.com/auth/devstorage.read_write',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.notifications.get({
+    *     // The parent bucket of the notification.
+    *     bucket: 'placeholder-value',
+    *     // Notification ID
+    *     notification: 'placeholder-value',
+    *     // The project to be billed for this request. Required for Requester Pays buckets.
+    *     userProject: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "custom_attributes": {},
+    *   //   "etag": "my_etag",
+    *   //   "event_types": [],
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "object_name_prefix": "my_object_name_prefix",
+    *   //   "payload_format": "my_payload_format",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "topic": "my_topic"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias storage.notifications.insert
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket The parent bucket of the notification.
-    * @param {string=} params.userProject The project to be billed for this request. Required for Requester Pays buckets.
-    * @param {().Notification} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceNotificationsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceNotificationsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaNotification] = js.native
   def insert(callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
@@ -264,8 +191,8 @@ class ResourceNotifications protected () extends StObject {
   def insert(params: ParamsResourceNotificationsInsert, callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def insert(
     params: ParamsResourceNotificationsInsert,
-    options: BodyResponseCallback[SchemaNotification],
-    callback: BodyResponseCallback[SchemaNotification]
+    options: BodyResponseCallback[Readable | SchemaNotification],
+    callback: BodyResponseCallback[Readable | SchemaNotification]
   ): Unit = js.native
   def insert(params: ParamsResourceNotificationsInsert, options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
   def insert(
@@ -273,73 +200,93 @@ class ResourceNotifications protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotification]
   ): Unit = js.native
-  
   /**
-    * storage.notifications.list
-    * @desc Retrieves a list of notification subscriptions for a given bucket.
+    * Creates a notification subscription for a given bucket.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Cloud Storage JSON API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/storage
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var storage = google.storage('v1');
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Name of a Google Cloud Storage bucket.
-    *     bucket: 'my-bucket',  // TODO: Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   storage.notifications.list(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/devstorage.full_control',
+    *       'https://www.googleapis.com/auth/devstorage.read_write',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.notifications.insert({
+    *     // The parent bucket of the notification.
+    *     bucket: 'placeholder-value',
+    *     // The project to be billed for this request. Required for Requester Pays buckets.
+    *     userProject: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "custom_attributes": {},
+    *       //   "etag": "my_etag",
+    *       //   "event_types": [],
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "object_name_prefix": "my_object_name_prefix",
+    *       //   "payload_format": "my_payload_format",
+    *       //   "selfLink": "my_selfLink",
+    *       //   "topic": "my_topic"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "custom_attributes": {},
+    *   //   "etag": "my_etag",
+    *   //   "event_types": [],
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "object_name_prefix": "my_object_name_prefix",
+    *   //   "payload_format": "my_payload_format",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "topic": "my_topic"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias storage.notifications.list
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.bucket Name of a Google Cloud Storage bucket.
-    * @param {string=} params.userProject The project to be billed for this request. Required for Requester Pays buckets.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceNotificationsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceNotificationsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaNotifications] = js.native
   def list(callback: BodyResponseCallback[SchemaNotifications]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNotifications] = js.native
@@ -347,13 +294,78 @@ class ResourceNotifications protected () extends StObject {
   def list(params: ParamsResourceNotificationsList, callback: BodyResponseCallback[SchemaNotifications]): Unit = js.native
   def list(
     params: ParamsResourceNotificationsList,
-    options: BodyResponseCallback[SchemaNotifications],
-    callback: BodyResponseCallback[SchemaNotifications]
+    options: BodyResponseCallback[Readable | SchemaNotifications],
+    callback: BodyResponseCallback[Readable | SchemaNotifications]
   ): Unit = js.native
   def list(params: ParamsResourceNotificationsList, options: MethodOptions): GaxiosPromise[SchemaNotifications] = js.native
   def list(
     params: ParamsResourceNotificationsList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaNotifications]
+  ): Unit = js.native
+  /**
+    * Retrieves a list of notification subscriptions for a given bucket.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/storage.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const storage = google.storage('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/devstorage.full_control',
+    *       'https://www.googleapis.com/auth/devstorage.read_only',
+    *       'https://www.googleapis.com/auth/devstorage.read_write',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await storage.notifications.list({
+    *     // Name of a Google Cloud Storage bucket.
+    *     bucket: 'placeholder-value',
+    *     // The project to be billed for this request. Required for Requester Pays buckets.
+    *     userProject: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "items": [],
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceNotificationsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceNotificationsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

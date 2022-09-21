@@ -12,7 +12,6 @@ import typings.actionsOnGoogle.convMod.ActionsSdkConversationOptions
 import typings.actionsOnGoogle.conversationConversationMod.ConversationOptions
 import typings.actionsOnGoogle.conversationConversationMod.Intent
 import typings.actionsOnGoogle.datetimeMod.DateTimeOptions
-import typings.actionsOnGoogle.deeplinkMod.DeepLinkOptions
 import typings.actionsOnGoogle.dialogflowConvMod.DialogflowConversationOptions
 import typings.actionsOnGoogle.dialogflowDialogflowMod.Dialogflow_
 import typings.actionsOnGoogle.helperHelperMod.HelperOptions
@@ -54,14 +53,14 @@ object mod {
   @JSImport("actions-on-google", "ActionsSdkConversation")
   @js.native
   /** @public */
-  class ActionsSdkConversation[TConvData, TUserStorage] ()
+  open class ActionsSdkConversation[TConvData, TUserStorage] ()
     extends typings.actionsOnGoogle.actionssdkMod.ActionsSdkConversation[TConvData, TUserStorage] {
     def this(options: ActionsSdkConversationOptions[TConvData, TUserStorage]) = this()
   }
   
   @JSImport("actions-on-google", "BasicCard")
   @js.native
-  class BasicCard protected ()
+  open class BasicCard protected ()
     extends typings.actionsOnGoogle.actionssdkMod.BasicCard {
     /** @public */
     def this(options: BasicCardOptions) = this()
@@ -69,7 +68,7 @@ object mod {
   
   @JSImport("actions-on-google", "BrowseCarousel")
   @js.native
-  class BrowseCarousel protected ()
+  open class BrowseCarousel protected ()
     extends typings.actionsOnGoogle.actionssdkMod.BrowseCarousel {
     /**
       * @param items BrowseCarousel items
@@ -90,7 +89,7 @@ object mod {
   
   @JSImport("actions-on-google", "BrowseCarouselItem")
   @js.native
-  class BrowseCarouselItem protected ()
+  open class BrowseCarouselItem protected ()
     extends typings.actionsOnGoogle.actionssdkMod.BrowseCarouselItem {
     /**
       * @param options BrowseCarouselItem options
@@ -101,7 +100,7 @@ object mod {
   
   @JSImport("actions-on-google", "Button")
   @js.native
-  class Button protected ()
+  open class Button protected ()
     extends typings.actionsOnGoogle.actionssdkMod.Button {
     /**
       * @param options Button options
@@ -112,7 +111,7 @@ object mod {
   
   @JSImport("actions-on-google", "Carousel")
   @js.native
-  class Carousel protected ()
+  open class Carousel protected ()
     extends typings.actionsOnGoogle.actionssdkMod.Carousel {
     /**
       * @param options Carousel option
@@ -127,14 +126,14 @@ object mod {
     * @param options The raw {@link GoogleActionsTransactionsV3CompletePurchaseValueSpec}
     * @public
     */
-  class CompletePurchase ()
+  open class CompletePurchase ()
     extends typings.actionsOnGoogle.actionssdkMod.CompletePurchase {
     def this(options: GoogleActionsTransactionsV3CompletePurchaseValueSpec) = this()
   }
   
   @JSImport("actions-on-google", "Confirmation")
   @js.native
-  class Confirmation protected ()
+  open class Confirmation protected ()
     extends typings.actionsOnGoogle.actionssdkMod.Confirmation {
     /**
       * @param text The confirmation prompt presented to the user to
@@ -147,14 +146,14 @@ object mod {
   @JSImport("actions-on-google", "Conversation")
   @js.native
   /** @hidden */
-  class Conversation[TUserStorage] ()
+  open class Conversation[TUserStorage] ()
     extends typings.actionsOnGoogle.actionssdkMod.Conversation[TUserStorage] {
     def this(options: ConversationOptions[TUserStorage]) = this()
   }
   
   @JSImport("actions-on-google", "DateTime")
   @js.native
-  class DateTime protected ()
+  open class DateTime protected ()
     extends typings.actionsOnGoogle.actionssdkMod.DateTime {
     /**
       * @param options DateTime options
@@ -163,25 +162,13 @@ object mod {
     def this(options: DateTimeOptions) = this()
   }
   
-  @JSImport("actions-on-google", "DeepLink")
-  @js.native
-  class DeepLink protected ()
-    extends typings.actionsOnGoogle.actionssdkMod.DeepLink {
-    /**
-      * @param options DeepLink options
-      * @deprecated
-      * @public
-      */
-    def this(options: DeepLinkOptions) = this()
-  }
-  
   @JSImport("actions-on-google", "DeliveryAddress")
   @js.native
   /**
     * @param options The raw {@link GoogleActionsV2DeliveryAddressValueSpec}
     * @public
     */
-  class DeliveryAddress ()
+  open class DeliveryAddress ()
     extends typings.actionsOnGoogle.actionssdkMod.DeliveryAddress {
     def this(options: GoogleActionsV2DeliveryAddressValueSpec) = this()
   }
@@ -189,7 +176,7 @@ object mod {
   @JSImport("actions-on-google", "DialogflowConversation")
   @js.native
   /** @public */
-  class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts */] ()
+  open class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts */] ()
     extends typings.actionsOnGoogle.dialogflowMod.DialogflowConversation[TConvData, TUserStorage, TContexts] {
     def this(options: DialogflowConversationOptions[TConvData, TUserStorage]) = this()
   }
@@ -200,14 +187,14 @@ object mod {
     * @param options The raw {@link GoogleActionsTransactionsV3DigitalPurchaseCheckSpec}
     * @public
     */
-  class DigitalPurchaseCheck ()
+  open class DigitalPurchaseCheck ()
     extends typings.actionsOnGoogle.actionssdkMod.DigitalPurchaseCheck {
     def this(options: GoogleActionsTransactionsV3DigitalPurchaseCheckSpec) = this()
   }
   
   @JSImport("actions-on-google", "Helper")
   @js.native
-  class Helper[TIntent /* <: Intent */, TValueSpec] protected ()
+  open class Helper[TIntent /* <: Intent */, TValueSpec] protected ()
     extends typings.actionsOnGoogle.actionssdkMod.Helper[TIntent, TValueSpec] {
     def this(options: HelperOptions[TIntent, TValueSpec]) = this()
   }
@@ -218,7 +205,7 @@ object mod {
     * @param options Canvas options
     * @public
     */
-  class HtmlResponse[TData /* <: JsonObject */] ()
+  open class HtmlResponse[TData /* <: JsonObject */] ()
     extends typings.actionsOnGoogle.actionssdkMod.HtmlResponse[TData] {
     def this(options: HtmlResponseOptions[TData]) = this()
     def this(options: GoogleActionsV2UiElementsHtmlResponse) = this()
@@ -226,7 +213,7 @@ object mod {
   
   @JSImport("actions-on-google", "Image")
   @js.native
-  class Image protected ()
+  open class Image protected ()
     extends typings.actionsOnGoogle.actionssdkMod.Image {
     /**
       * @param options Image options
@@ -237,7 +224,7 @@ object mod {
   
   @JSImport("actions-on-google", "LinkOutSuggestion")
   @js.native
-  class LinkOutSuggestion protected ()
+  open class LinkOutSuggestion protected ()
     extends typings.actionsOnGoogle.actionssdkMod.LinkOutSuggestion {
     /**
       * @param options LinkOutSuggestion options
@@ -248,7 +235,7 @@ object mod {
   
   @JSImport("actions-on-google", "List")
   @js.native
-  class List protected ()
+  open class List protected ()
     extends typings.actionsOnGoogle.actionssdkMod.List {
     /**
       * @param options List options
@@ -259,7 +246,7 @@ object mod {
   
   @JSImport("actions-on-google", "MediaObject")
   @js.native
-  class MediaObject protected ()
+  open class MediaObject protected ()
     extends typings.actionsOnGoogle.actionssdkMod.MediaObject {
     def this(options: String) = this()
     /**
@@ -271,7 +258,7 @@ object mod {
   
   @JSImport("actions-on-google", "MediaResponse")
   @js.native
-  class MediaResponse protected ()
+  open class MediaResponse protected ()
     extends typings.actionsOnGoogle.actionssdkMod.MediaResponse {
     /**
       * @param objects MediaObjects
@@ -292,7 +279,7 @@ object mod {
   
   @JSImport("actions-on-google", "NewSurface")
   @js.native
-  class NewSurface protected ()
+  open class NewSurface protected ()
     extends typings.actionsOnGoogle.actionssdkMod.NewSurface {
     /**
       * @param options NewSurface options
@@ -303,7 +290,7 @@ object mod {
   
   @JSImport("actions-on-google", "OpenUrlAction")
   @js.native
-  class OpenUrlAction protected ()
+  open class OpenUrlAction protected ()
     extends typings.actionsOnGoogle.actionssdkMod.OpenUrlAction {
     /** @public */
     def this(options: OpenUrlActionOptions) = this()
@@ -311,7 +298,7 @@ object mod {
   
   @JSImport("actions-on-google", "OrderUpdate")
   @js.native
-  class OrderUpdate protected ()
+  open class OrderUpdate protected ()
     extends typings.actionsOnGoogle.actionssdkMod.OrderUpdate {
     def this(options: GoogleActionsOrdersV3OrderUpdate) = this()
     /**
@@ -325,7 +312,7 @@ object mod {
   
   @JSImport("actions-on-google", "Permission")
   @js.native
-  class Permission protected ()
+  open class Permission protected ()
     extends typings.actionsOnGoogle.actionssdkMod.Permission {
     /**
       * @param options Permission options
@@ -336,7 +323,7 @@ object mod {
   
   @JSImport("actions-on-google", "Place")
   @js.native
-  class Place protected ()
+  open class Place protected ()
     extends typings.actionsOnGoogle.actionssdkMod.Place {
     /**
       * @param options Place options
@@ -347,7 +334,7 @@ object mod {
   
   @JSImport("actions-on-google", "RegisterUpdate")
   @js.native
-  class RegisterUpdate protected ()
+  open class RegisterUpdate protected ()
     extends typings.actionsOnGoogle.actionssdkMod.RegisterUpdate {
     /**
       * @param options RegisterUpdate options
@@ -358,7 +345,7 @@ object mod {
   
   @JSImport("actions-on-google", "RichResponse")
   @js.native
-  class RichResponse protected ()
+  open class RichResponse protected ()
     extends typings.actionsOnGoogle.actionssdkMod.RichResponse {
     /**
       * @param items RichResponse items
@@ -385,14 +372,14 @@ object mod {
     *     "To check your account balance".
     * @public
     */
-  class SignIn ()
+  open class SignIn ()
     extends typings.actionsOnGoogle.actionssdkMod.SignIn {
     def this(context: String) = this()
   }
   
   @JSImport("actions-on-google", "SimpleResponse")
   @js.native
-  class SimpleResponse protected ()
+  open class SimpleResponse protected ()
     extends typings.actionsOnGoogle.actionssdkMod.SimpleResponse {
     def this(options: String) = this()
     /**
@@ -404,14 +391,14 @@ object mod {
   
   @JSImport("actions-on-google", "SoloHelper")
   @js.native
-  class SoloHelper[TIntent /* <: Intent */, TValueSpec] protected ()
+  open class SoloHelper[TIntent /* <: Intent */, TValueSpec] protected ()
     extends typings.actionsOnGoogle.actionssdkMod.SoloHelper[TIntent, TValueSpec] {
     def this(options: HelperOptions[TIntent, TValueSpec]) = this()
   }
   
   @JSImport("actions-on-google", "Suggestions")
   @js.native
-  class Suggestions protected ()
+  open class Suggestions protected ()
     extends typings.actionsOnGoogle.actionssdkMod.Suggestions {
     /**
       * @param suggestions Texts of the suggestions.
@@ -422,7 +409,7 @@ object mod {
   
   @JSImport("actions-on-google", "Table")
   @js.native
-  class Table protected ()
+  open class Table protected ()
     extends typings.actionsOnGoogle.actionssdkMod.Table {
     /** @public */
     def this(options: TableOptions) = this()
@@ -436,7 +423,7 @@ object mod {
     *     if using ordersv3
     * @public
     */
-  class TransactionDecision ()
+  open class TransactionDecision ()
     extends typings.actionsOnGoogle.actionssdkMod.TransactionDecision {
     def this(options: GoogleActionsTransactionsV3TransactionDecisionValueSpec) = this()
     def this(options: GoogleActionsV2TransactionDecisionValueSpec) = this()
@@ -450,7 +437,7 @@ object mod {
     *     if using ordersv3
     * @public
     */
-  class TransactionRequirements ()
+  open class TransactionRequirements ()
     extends typings.actionsOnGoogle.actionssdkMod.TransactionRequirements {
     def this(options: GoogleActionsTransactionsV3TransactionRequirementsCheckSpec) = this()
     def this(options: GoogleActionsV2TransactionRequirementsCheckSpec) = this()
@@ -458,12 +445,12 @@ object mod {
   
   @JSImport("actions-on-google", "UnauthorizedError")
   @js.native
-  class UnauthorizedError ()
+  open class UnauthorizedError ()
     extends typings.actionsOnGoogle.actionssdkMod.UnauthorizedError
   
   @JSImport("actions-on-google", "UpdatePermission")
   @js.native
-  class UpdatePermission protected ()
+  open class UpdatePermission protected ()
     extends typings.actionsOnGoogle.actionssdkMod.UpdatePermission {
     /**
       * @param options UpdatePermission options

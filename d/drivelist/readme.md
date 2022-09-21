@@ -10,10 +10,10 @@ List all connected drives in your computer, in all major operating systems
 | ------------------ | :-------------: |
 | Full name          | drivelist |
 | Keywords           | disk, cross, platform, physical, drive, list |
-| # releases         | 75 |
-| # dependents       | 45 |
-| # downloads        | 486521 |
-| # stars            | 1 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 59163.333333333336 |
+| # stars            | 188.0 |
 
 ## Links
 - [Homepage](https://github.com/balena-io-modules/drivelist)

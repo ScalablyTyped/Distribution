@@ -19,7 +19,7 @@ trait StandardsControl extends StObject {
   /**
     * The date and time that the status of the security standard control was most recently updated.
     */
-  var ControlStatusUpdatedAt: js.UndefOr[Timestamp] = js.undefined
+  var ControlStatusUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The longer description of the security standard control. Provides information about what the control is checking for.
@@ -42,7 +42,7 @@ trait StandardsControl extends StObject {
   var RemediationUrl: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The severity of findings generated from this security standard control. The finding severity is based on an assessment of how easy it would be to compromise AWS resources if the issue is detected.
+    * The severity of findings generated from this security standard control. The finding severity is based on an assessment of how easy it would be to compromise Amazon Web Services resources if the issue is detected.
     */
   var SeverityRating: js.UndefOr[typings.awsSdk.securityhubMod.SeverityRating] = js.undefined
   
@@ -73,7 +73,7 @@ object StandardsControl {
     
     inline def setControlStatusUndefined: Self = StObject.set(x, "ControlStatus", js.undefined)
     
-    inline def setControlStatusUpdatedAt(value: Timestamp): Self = StObject.set(x, "ControlStatusUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setControlStatusUpdatedAt(value: js.Date): Self = StObject.set(x, "ControlStatusUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setControlStatusUpdatedAtUndefined: Self = StObject.set(x, "ControlStatusUpdatedAt", js.undefined)
     
@@ -89,7 +89,7 @@ object StandardsControl {
     
     inline def setRelatedRequirementsUndefined: Self = StObject.set(x, "RelatedRequirements", js.undefined)
     
-    inline def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = StObject.set(x, "RelatedRequirements", js.Array(value :_*))
+    inline def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = StObject.set(x, "RelatedRequirements", js.Array(value*))
     
     inline def setRemediationUrl(value: NonEmptyString): Self = StObject.set(x, "RemediationUrl", value.asInstanceOf[js.Any])
     

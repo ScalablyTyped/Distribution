@@ -29,12 +29,12 @@ object MapContextIncludePointsOptions {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setPoints(value: js.Array[LocationObject]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: LocationObject*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: LocationObject*): Self = StObject.set(x, "points", js.Array(value*))
   }
 }

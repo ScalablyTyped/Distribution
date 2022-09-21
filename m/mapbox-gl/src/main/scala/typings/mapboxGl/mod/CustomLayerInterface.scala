@@ -8,7 +8,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomLayerInterface extends StObject {
+trait CustomLayerInterface
+  extends StObject
+     with AnyLayer {
   
   /** A unique layer id. */
   var id: String

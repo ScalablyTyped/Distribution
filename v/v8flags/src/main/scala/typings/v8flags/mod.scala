@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(cb: js.Function2[/* err */ js.Any, /* flags */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(cb: js.Function2[/* err */ Any, /* flags */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("v8flags", JSImport.Namespace)
   @js.native

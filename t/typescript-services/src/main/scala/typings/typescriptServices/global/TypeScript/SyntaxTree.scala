@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.SyntaxTree")
 @js.native
-class SyntaxTree protected ()
+open class SyntaxTree protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.SyntaxTree {
   def this(
@@ -19,28 +19,28 @@ class SyntaxTree protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _allDiagnostics: js.Any = js.native
+  var _allDiagnostics: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _fileName: js.Any = js.native
+  var _fileName: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _isDeclaration: js.Any = js.native
+  var _isDeclaration: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _lineMap: js.Any = js.native
+  var _lineMap: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _parseOptions: js.Any = js.native
+  var _parseOptions: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _parserDiagnostics: js.Any = js.native
+  var _parserDiagnostics: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _sourceUnit: js.Any = js.native
+  var _sourceUnit: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def computeDiagnostics(): js.Any = js.native
+  override def computeDiagnostics(): Any = js.native
   
   /* CompleteClass */
   override def diagnostics(): js.Array[typings.typescriptServices.TypeScript.Diagnostic] = js.native
@@ -64,5 +64,5 @@ class SyntaxTree protected ()
   override def structuralEquals(tree: typings.typescriptServices.TypeScript.SyntaxTree): Boolean = js.native
   
   /* CompleteClass */
-  override def toJSON(key: js.Any): js.Any = js.native
+  override def toJSON(key: Any): Any = js.native
 }

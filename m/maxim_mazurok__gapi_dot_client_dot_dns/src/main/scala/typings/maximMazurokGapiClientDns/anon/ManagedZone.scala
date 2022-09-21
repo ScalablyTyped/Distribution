@@ -28,7 +28,7 @@ trait ManagedZone extends StObject {
   /** Identifies the managed zone addressed by this request. */
   var managedZone: String
   
-  /** Optional. Maximum number of results to be returned. If unspecified, the server will decide how many results to return. */
+  /** Optional. Maximum number of results to be returned. If unspecified, the server decides how many results to return. */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */

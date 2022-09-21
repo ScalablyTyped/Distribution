@@ -10,10 +10,10 @@ object brightness2Mod {
   
   @JSImport("material-ui/svg-icons/image/brightness-2", JSImport.Default)
   @js.native
-  class default () extends ImageBrightness2
+  open class default () extends ImageBrightness2
   
   @JSImport("material-ui/svg-icons/image/brightness-2", "ImageBrightness2")
   @js.native
-  class ImageBrightness2 ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageBrightness2 ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DEREnumerated")
 @js.native
-class DEREnumerated ()
+open class DEREnumerated ()
   extends typings.jsrsasign.mod.KJUR.asn1.DEREnumerated {
   def this(params: Double) = this()
   def this(params: HexParam) = this()

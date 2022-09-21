@@ -20,7 +20,7 @@ object mod {
   
   trait ParentPackage extends StObject {
     
-    def parse(): StringDictionary[js.Any]
+    def parse(): StringDictionary[Any]
     
     var path: String
     
@@ -28,14 +28,14 @@ object mod {
   }
   object ParentPackage {
     
-    inline def apply(parse: () => StringDictionary[js.Any], path: String, read: () => String): ParentPackage = {
+    inline def apply(parse: () => StringDictionary[Any], path: String, read: () => String): ParentPackage = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction0(parse), path = path.asInstanceOf[js.Any], read = js.Any.fromFunction0(read))
       __obj.asInstanceOf[ParentPackage]
     }
     
     extension [Self <: ParentPackage](x: Self) {
       
-      inline def setParse(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
+      inline def setParse(value: () => StringDictionary[Any]): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

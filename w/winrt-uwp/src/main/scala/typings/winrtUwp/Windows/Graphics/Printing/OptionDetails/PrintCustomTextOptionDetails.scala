@@ -30,10 +30,10 @@ trait PrintCustomTextOptionDetails extends StObject {
     * @param value Value for the custom print task.
     * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
     */
-  def trySetValue(value: js.Any): Boolean
+  def trySetValue(value: Any): Boolean
   
   /** Gets or sets the value of a custom print task option. */
-  var value: js.Any
+  var value: Any
 }
 object PrintCustomTextOptionDetails {
   
@@ -44,8 +44,8 @@ object PrintCustomTextOptionDetails {
     optionId: String,
     optionType: PrintOptionType,
     state: PrintOptionStates,
-    trySetValue: js.Any => Boolean,
-    value: js.Any
+    trySetValue: Any => Boolean,
+    value: Any
   ): PrintCustomTextOptionDetails = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], maxCharacters = maxCharacters.asInstanceOf[js.Any], optionId = optionId.asInstanceOf[js.Any], optionType = optionType.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], trySetValue = js.Any.fromFunction1(trySetValue), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintCustomTextOptionDetails]
@@ -65,8 +65,8 @@ object PrintCustomTextOptionDetails {
     
     inline def setState(value: PrintOptionStates): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setTrySetValue(value: js.Any => Boolean): Self = StObject.set(x, "trySetValue", js.Any.fromFunction1(value))
+    inline def setTrySetValue(value: Any => Boolean): Self = StObject.set(x, "trySetValue", js.Any.fromFunction1(value))
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for adler-32
 
-Typings are for version 1.2.0
+Typings are for version 1.3.1
 
 ## Library description:
 Pure-JS ADLER-32
@@ -10,10 +10,10 @@ Pure-JS ADLER-32
 | ------------------ | :-------------: |
 | Full name          | adler-32 |
 | Keywords           | adler32, checksum |
-| # releases         | 0 |
-| # dependents       | 167 |
-| # downloads        | 27837135 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8680102.333333334 |
+| # stars            | 129.0 |
 
 ## Links
 - [Homepage](http://sheetjs.com/opensource)

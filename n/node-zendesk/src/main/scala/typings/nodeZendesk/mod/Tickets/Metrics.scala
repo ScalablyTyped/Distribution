@@ -23,7 +23,7 @@ object Metrics {
       
       inline def setTicket_metrics(value: js.Array[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel]): Self = StObject.set(x, "ticket_metrics", value.asInstanceOf[js.Any])
       
-      inline def setTicket_metricsVarargs(value: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel*): Self = StObject.set(x, "ticket_metrics", js.Array(value :_*))
+      inline def setTicket_metricsVarargs(value: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel*): Self = StObject.set(x, "ticket_metrics", js.Array(value*))
     }
   }
   

@@ -2,6 +2,7 @@ package typings.asana.mod.resources
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.asana.mod.Dispatcher
+import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,10 +34,10 @@ Instantiable1[/* dispatcher */ Dispatcher, Resource] {
     * @param query?
     * @param dispatchOptions?
     */
-  def getCollection(dispatcher: js.Any, path: String): typings.bluebird.mod.^[js.Any] = js.native
-  def getCollection(dispatcher: js.Any, path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def getCollection(dispatcher: js.Any, path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-  def getCollection(dispatcher: js.Any, path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getCollection(dispatcher: Any, path: String): ^[Any] = js.native
+  def getCollection(dispatcher: Any, path: String, query: Any): ^[Any] = js.native
+  def getCollection(dispatcher: Any, path: String, query: Any, dispatchOptions: Any): ^[Any] = js.native
+  def getCollection(dispatcher: Any, path: String, query: Unit, dispatchOptions: Any): ^[Any] = js.native
   
   /**
     * Helper method for any request Promise from the Dispatcher, unwraps the `data`
@@ -46,5 +47,5 @@ Instantiable1[/* dispatcher */ Dispatcher, Resource] {
     * @param promise
     * @return
     */
-  def unwrap(promise: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def unwrap(promise: Any): ^[Any] = js.native
 }

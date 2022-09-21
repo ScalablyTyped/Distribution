@@ -1,17 +1,10 @@
 package typings.formatjsEcma402Abstract
 
 import typings.formatjsEcma402Abstract.coreMod.LocaleData
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`best fit`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.always
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.auto
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.long
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.lookup
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.narrow
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.short
 import typings.std.Intl.NumberFormat
-import typings.std.Intl.NumberFormatPart
-import typings.std.Intl.NumberFormatPartTypes
 import typings.std.Intl.PluralRules
+import typings.std.Intl.RelativeTimeFormatNumeric
+import typings.std.Intl.RelativeTimeFormatStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,57 +71,6 @@ object relativeTimeMod {
       inline def setFuture(value: RelativeTimeData): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
       
       inline def setPast(value: RelativeTimeData): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait IntlRelativeTimeFormatOptions extends StObject {
-    
-    /**
-      * The locale matching algorithm to use.
-      * Possible values are "lookup" and "best fit"; the default is "best fit".
-      * For information about this option, see
-      * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#Locale_negotiation.
-      */
-    var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.undefined
-    
-    /**
-      * The format of output message. Possible values are:
-      * - "always" (default, e.g., 1 day ago),
-      * - or "auto" (e.g., yesterday).
-      * The "auto" value allows to not always have to
-      * use numeric values in the output.
-      */
-    var numeric: js.UndefOr[always | auto] = js.undefined
-    
-    /**
-      * The length of the internationalized message. Possible values are:
-      * - "long" (default, e.g., in 1 month)
-      * - "short" (e.g., in 1 mo.),
-      * - or "narrow" (e.g., in 1 mo.).
-      * The narrow style could be similar to the short style for some locales.
-      */
-    var style: js.UndefOr[long | short | narrow] = js.undefined
-  }
-  object IntlRelativeTimeFormatOptions {
-    
-    inline def apply(): IntlRelativeTimeFormatOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IntlRelativeTimeFormatOptions]
-    }
-    
-    extension [Self <: IntlRelativeTimeFormatOptions](x: Self) {
-      
-      inline def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
-      
-      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
-      
-      inline def setNumeric(value: always | auto): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
-      
-      inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
-      
-      inline def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -246,7 +188,7 @@ object relativeTimeMod {
       
       inline def setNuUndefined: Self = StObject.set(x, "nu", js.undefined)
       
-      inline def setNuVarargs(value: (String | Null)*): Self = StObject.set(x, "nu", js.Array(value :_*))
+      inline def setNuVarargs(value: (String | Null)*): Self = StObject.set(x, "nu", js.Array(value*))
       
       inline def setQuarter(value: FieldData): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
       
@@ -426,35 +368,6 @@ object relativeTimeMod {
     inline def `year-short`: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`year-short` = "year-short".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`year-short`]
   }
   
-  trait RelativeTimeFormat extends StObject {
-    
-    def format(value: Double, unit: RelativeTimeFormattableUnit): String
-    
-    def formatToParts(value: Double, unit: RelativeTimeFormattableUnit): js.Array[RelativeTimePart]
-    
-    def resolvedOptions(): ResolvedIntlRelativeTimeFormatOptions
-  }
-  object RelativeTimeFormat {
-    
-    inline def apply(
-      format: (Double, RelativeTimeFormattableUnit) => String,
-      formatToParts: (Double, RelativeTimeFormattableUnit) => js.Array[RelativeTimePart],
-      resolvedOptions: () => ResolvedIntlRelativeTimeFormatOptions
-    ): RelativeTimeFormat = {
-      val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), formatToParts = js.Any.fromFunction2(formatToParts), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
-      __obj.asInstanceOf[RelativeTimeFormat]
-    }
-    
-    extension [Self <: RelativeTimeFormat](x: Self) {
-      
-      inline def setFormat(value: (Double, RelativeTimeFormattableUnit) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
-      
-      inline def setFormatToParts(value: (Double, RelativeTimeFormattableUnit) => js.Array[RelativeTimePart]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction2(value))
-      
-      inline def setResolvedOptions(value: () => ResolvedIntlRelativeTimeFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
-    }
-  }
-  
   trait RelativeTimeFormatInternal extends StObject {
     
     var fields: LocaleFieldsData
@@ -467,11 +380,11 @@ object relativeTimeMod {
     
     var numberingSystem: String
     
-    var numeric: js.UndefOr[always | auto] = js.undefined
+    var numeric: RelativeTimeFormatNumeric
     
     var pluralRules: PluralRules
     
-    var style: js.UndefOr[long | short | narrow] = js.undefined
+    var style: RelativeTimeFormatStyle
   }
   object RelativeTimeFormatInternal {
     
@@ -481,9 +394,11 @@ object relativeTimeMod {
       locale: String,
       numberFormat: NumberFormat,
       numberingSystem: String,
-      pluralRules: PluralRules
+      numeric: RelativeTimeFormatNumeric,
+      pluralRules: PluralRules,
+      style: RelativeTimeFormatStyle
     ): RelativeTimeFormatInternal = {
-      val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], initializedRelativeTimeFormat = initializedRelativeTimeFormat.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], numberFormat = numberFormat.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], pluralRules = pluralRules.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], initializedRelativeTimeFormat = initializedRelativeTimeFormat.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], numberFormat = numberFormat.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], numeric = numeric.asInstanceOf[js.Any], pluralRules = pluralRules.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelativeTimeFormatInternal]
     }
     
@@ -499,219 +414,46 @@ object relativeTimeMod {
       
       inline def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
       
-      inline def setNumeric(value: always | auto): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
-      
-      inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+      inline def setNumeric(value: RelativeTimeFormatNumeric): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
       
       inline def setPluralRules(value: PluralRules): Self = StObject.set(x, "pluralRules", value.asInstanceOf[js.Any])
       
-      inline def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyle(value: RelativeTimeFormatStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
-  trait RelativeTimeFormatNumberPart
-    extends StObject
-       with NumberFormatPart
-       with RelativeTimePart {
-    
-    var unit: RelativeTimeUnit
-  }
-  object RelativeTimeFormatNumberPart {
-    
-    inline def apply(`type`: NumberFormatPartTypes, unit: RelativeTimeUnit, value: String): RelativeTimeFormatNumberPart = {
-      val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RelativeTimeFormatNumberPart]
-    }
-    
-    extension [Self <: RelativeTimeFormatNumberPart](x: Self) {
-      
-      inline def setUnit(value: RelativeTimeUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
-    }
-  }
-  
+  /* Inlined std.Exclude<std.Intl.RelativeTimeFormatUnit, 'seconds' | 'minutes' | 'hours' | 'days' | 'weeks' | 'months' | 'quarters' | 'years'> */
   /* Rewritten from type alias, can be one of: 
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.week
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarter
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.week
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.seconds
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minutes
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hours
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.days
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weeks
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.months
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarters
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.years
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month
   */
-  trait RelativeTimeFormattableUnit extends StObject
-  object RelativeTimeFormattableUnit {
+  trait RelativeTimeFormatSingularUnit extends StObject
+  object RelativeTimeFormatSingularUnit {
     
     inline def day: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day = "day".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day]
     
-    inline def days: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.days = "days".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.days]
-    
     inline def hour: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour = "hour".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour]
-    
-    inline def hours: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hours = "hours".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hours]
     
     inline def minute: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute = "minute".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute]
     
-    inline def minutes: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minutes = "minutes".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minutes]
-    
     inline def month: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month = "month".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month]
-    
-    inline def months: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.months = "months".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.months]
     
     inline def quarter: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarter = "quarter".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarter]
     
-    inline def quarters: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarters = "quarters".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarters]
-    
     inline def second: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second = "second".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second]
-    
-    inline def seconds: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.seconds = "seconds".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.seconds]
     
     inline def week: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.week = "week".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.week]
     
-    inline def weeks: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weeks = "weeks".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weeks]
-    
     inline def year: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year = "year".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year]
-    
-    inline def years: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.years = "years".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.years]
   }
   
   type RelativeTimeLocaleData = LocaleData[LocaleFieldsData]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.formatjsEcma402Abstract.utilsMod.LiteralPart
-    - typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeFormatNumberPart
-  */
-  trait RelativeTimePart extends StObject
-  object RelativeTimePart {
-    
-    inline def LiteralPart(value: String): typings.formatjsEcma402Abstract.utilsMod.LiteralPart = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("literal")
-      __obj.asInstanceOf[typings.formatjsEcma402Abstract.utilsMod.LiteralPart]
-    }
-    
-    inline def RelativeTimeFormatNumberPart(`type`: NumberFormatPartTypes, unit: RelativeTimeUnit, value: String): typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeFormatNumberPart = {
-      val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeFormatNumberPart]
-    }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.week
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarter
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year
-  */
-  trait RelativeTimeUnit extends StObject
-  object RelativeTimeUnit {
-    
-    inline def day: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day = "day".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day]
-    
-    inline def hour: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour = "hour".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour]
-    
-    inline def minute: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute = "minute".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute]
-    
-    inline def month: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month = "month".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month]
-    
-    inline def quarter: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarter = "quarter".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarter]
-    
-    inline def second: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second = "second".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second]
-    
-    inline def week: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.week = "week".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.week]
-    
-    inline def year: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year = "year".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.seconds
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minutes
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hours
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.days
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weeks
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.months
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarters
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.years
-  */
-  trait RelativeTimeUnits extends StObject
-  object RelativeTimeUnits {
-    
-    inline def days: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.days = "days".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.days]
-    
-    inline def hours: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hours = "hours".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hours]
-    
-    inline def minutes: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minutes = "minutes".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minutes]
-    
-    inline def months: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.months = "months".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.months]
-    
-    inline def quarters: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarters = "quarters".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.quarters]
-    
-    inline def seconds: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.seconds = "seconds".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.seconds]
-    
-    inline def weeks: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weeks = "weeks".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weeks]
-    
-    inline def years: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.years = "years".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.years]
-  }
-  
-  /* Inlined parent std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/relative-time.IntlRelativeTimeFormatOptions, 'style' | 'numeric'> */
-  trait ResolvedIntlRelativeTimeFormatOptions extends StObject {
-    
-    /**
-      * The BCP 47 language tag for the locale actually used.
-      * If any Unicode extension values were requested in the
-      * input BCP 47 language tag that led to this locale,
-      * the key-value pairs that were requested and are
-      * supported for this locale are included in locale.
-      */
-    var locale: String
-    
-    /**
-      * The value requested using the Unicode
-      * extension key "nu" or filled in as a default.
-      */
-    var numberingSystem: String
-    
-    var numeric: js.UndefOr[always | auto] = js.undefined
-    
-    var style: js.UndefOr[long | short | narrow] = js.undefined
-  }
-  object ResolvedIntlRelativeTimeFormatOptions {
-    
-    inline def apply(locale: String, numberingSystem: String): ResolvedIntlRelativeTimeFormatOptions = {
-      val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ResolvedIntlRelativeTimeFormatOptions]
-    }
-    
-    extension [Self <: ResolvedIntlRelativeTimeFormatOptions](x: Self) {
-      
-      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
-      
-      inline def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
-      
-      inline def setNumeric(value: always | auto): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
-      
-      inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
-      
-      inline def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-    }
-  }
   
   /* Inlined {[ f in @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/relative-time.RelativeTimeField ]:? @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/relative-time.FieldData} & {  nu :std.Array<string | null>} */
   trait UnpackedLocaleFieldsData extends StObject {
@@ -825,7 +567,7 @@ object relativeTimeMod {
       
       inline def setNu(value: js.Array[String | Null]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
       
-      inline def setNuVarargs(value: (String | Null)*): Self = StObject.set(x, "nu", js.Array(value :_*))
+      inline def setNuVarargs(value: (String | Null)*): Self = StObject.set(x, "nu", js.Array(value*))
       
       inline def setQuarter(value: FieldData): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
       

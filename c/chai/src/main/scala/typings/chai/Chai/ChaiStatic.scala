@@ -11,7 +11,7 @@ trait ChaiStatic extends StObject {
   
   var AssertionError: Instantiable3[
     /* message */ String, 
-    /* _props */ js.UndefOr[js.Any], 
+    /* _props */ js.UndefOr[Any], 
     /* ssf */ js.UndefOr[js.Function], 
     typings.chai.Chai.AssertionError
   ]
@@ -20,15 +20,15 @@ trait ChaiStatic extends StObject {
     * @param expression    Expression to test for truthiness.
     * @param message    Message to display on error.
     */
-  def assert(expression: js.Any): Unit
-  def assert(expression: js.Any, message: String): Unit
+  def assert(expression: Any): /* asserts expression */ Boolean
+  def assert(expression: Any, message: String): /* asserts expression */ Boolean
   @JSName("assert")
   var assert_Original: AssertStatic
   
   var config: Config
   
-  def expect(`val`: js.Any): Assertion
-  def expect(`val`: js.Any, message: String): Assertion
+  def expect(`val`: Any): Assertion
+  def expect(`val`: Any, message: String): Assertion
   @JSName("expect")
   var expect_Original: ExpectStatic
   
@@ -49,7 +49,7 @@ object ChaiStatic {
     Assertion: AssertionStatic,
     AssertionError: Instantiable3[
       /* message */ String, 
-      /* _props */ js.UndefOr[js.Any], 
+      /* _props */ js.UndefOr[Any], 
       /* ssf */ js.UndefOr[js.Function], 
       AssertionError
     ],
@@ -74,7 +74,7 @@ object ChaiStatic {
     inline def setAssertionError(
       value: Instantiable3[
           /* message */ String, 
-          /* _props */ js.UndefOr[js.Any], 
+          /* _props */ js.UndefOr[Any], 
           /* ssf */ js.UndefOr[js.Function], 
           AssertionError
         ]

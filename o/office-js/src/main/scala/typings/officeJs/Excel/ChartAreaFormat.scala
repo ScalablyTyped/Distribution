@@ -28,9 +28,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties for the overall chart area.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -39,17 +39,17 @@ trait ChartAreaFormat
      with ClientObject {
   
   /**
-    *
     * Represents the border format of chart area, which includes color, linestyle, and weight.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   val border: ChartBorder = js.native
   
   /**
-    *
     * Specifies the color scheme of the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var colorScheme: ChartColorScheme | ColorfulPalette1 | ColorfulPalette2 | ColorfulPalette3 | ColorfulPalette4 | MonochromaticPalette1 | MonochromaticPalette2 | MonochromaticPalette3 | MonochromaticPalette4 | MonochromaticPalette5 | MonochromaticPalette6 | MonochromaticPalette7 | MonochromaticPalette8 | MonochromaticPalette9 | MonochromaticPalette10 | MonochromaticPalette11 | MonochromaticPalette12 | MonochromaticPalette13 = js.native
@@ -59,17 +59,17 @@ trait ChartAreaFormat
   var context_ChartAreaFormat: RequestContext = js.native
   
   /**
-    *
     * Represents the fill format of an object, which includes background formatting information.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val fill: ChartFill = js.native
   
   /**
-    *
     * Represents the font attributes (font name, font size, color, etc.) for the current object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val font: ChartFont = js.native
@@ -86,23 +86,17 @@ trait ChartAreaFormat
   def load(propertyNames: js.Array[String]): ChartAreaFormat = js.native
   
   /**
-    *
     * Specifies if the chart area of the chart has rounded corners.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var roundedCorners: Boolean = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartAreaFormat): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartAreaFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

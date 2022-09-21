@@ -1297,7 +1297,7 @@ object UserSettingsInformation {
     
     inline def setSealIdentifiersUndefined: Self = StObject.set(x, "sealIdentifiers", js.undefined)
     
-    inline def setSealIdentifiersVarargs(value: SealIdentifier*): Self = StObject.set(x, "sealIdentifiers", js.Array(value :_*))
+    inline def setSealIdentifiersVarargs(value: SealIdentifier*): Self = StObject.set(x, "sealIdentifiers", js.Array(value*))
     
     inline def setSelfSignedRecipientEmailDocument(value: String): Self = StObject.set(x, "selfSignedRecipientEmailDocument", value.asInstanceOf[js.Any])
     

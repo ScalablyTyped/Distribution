@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "ag-channel"
-version := "4.0-dt-20200205Z-0c1420"
-scalaVersion := "3.0.1"
+version := "5.0-dt-20220215Z-a8a40c"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "consumable-stream" % "1.0-dt-20200205Z-ac51ea",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "stream-demux" % "7.0-dt-20200902Z-769aed",
-  "org.scalablytyped" %%% "writable-consumable-stream" % "1.1-dt-20200205Z-84cce4")
+  "org.scalablytyped" %%% "consumable-stream" % "2.0-dt-20220215Z-192e95",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "stream-demux" % "8.0-dt-20220215Z-ae5686",
+  "org.scalablytyped" %%% "writable-consumable-stream" % "2.0-dt-20220215Z-ea95fb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

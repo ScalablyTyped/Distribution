@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("web3-net", "Network")
   @js.native
-  class Network () extends NetworkBase {
+  open class Network () extends NetworkBase {
     def this(provider: typings.web3Core.mod.provider) = this()
     def this(provider: typings.web3Core.mod.provider, net: Socket) = this()
   }

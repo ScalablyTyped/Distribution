@@ -10,7 +10,7 @@ trait IgGridGroupByLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the collapse groups button tooltip.

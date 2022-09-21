@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "BaseControl")
 @js.native
-class BaseControl[T /* <: BaseControlProps */, S /* <: Element */] protected ()
-  extends PureComponent[T, js.Object, js.Any] {
+open class BaseControl[T /* <: BaseControlProps */, S /* <: Element */] protected ()
+  extends PureComponent[T, js.Object, Any] {
   def this(props: T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: T, context: js.Any) = this()
+  def this(props: T, context: Any) = this()
   
   var _containerRef: RefObject[S] = js.native
   

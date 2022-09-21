@@ -10,10 +10,10 @@ The lodash method `_.forOwn` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.forown |
 | Keywords           | lodash-modularized, forown |
-| # releases         | 0 |
-| # dependents       | 75 |
-| # downloads        | 8009075 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1842462.3333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

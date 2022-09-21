@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BuildingGroupSublayerConstructor
   extends StObject
-     with Instantiable0[BuildingGroupSublayer]
+     with /**
+  * Hierarchical group of [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) sublayers.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html)
+  */
+Instantiable0[BuildingGroupSublayer]
      with Instantiable1[/* properties */ BuildingGroupSublayerProperties, BuildingGroupSublayer] {
   
-  def fromJSON(json: js.Any): BuildingGroupSublayer = js.native
+  def fromJSON(json: Any): BuildingGroupSublayer = js.native
 }

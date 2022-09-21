@@ -1,7 +1,7 @@
 
 # Scala.js typings for collections
 
-Typings are for version v5.0.6
+Typings are for version 5.1
 
 ## Library description:
 data structures with idiomatic JavaScript collection interfaces
@@ -10,10 +10,10 @@ data structures with idiomatic JavaScript collection interfaces
 | ------------------ | :-------------: |
 | Full name          | collections |
 | Keywords           | collections, data structures, observable, list, set, map, splay |
-| # releases         | 6 |
-| # dependents       | 131 |
-| # downloads        | 2036375 |
-| # stars            | 16 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 154822.33333333334 |
+| # stars            | 2025.0 |
 
 ## Links
 - [Homepage](http://www.collectionsjs.com)

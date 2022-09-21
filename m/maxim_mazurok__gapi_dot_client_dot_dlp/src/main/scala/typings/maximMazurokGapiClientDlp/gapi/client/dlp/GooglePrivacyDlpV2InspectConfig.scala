@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GooglePrivacyDlpV2InspectConfig extends StObject {
   
-  /** List of options defining data content to scan. If empty, text, images, and other content will be included. */
+  /** Deprecated and unused. */
   var contentOptions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** CustomInfoTypes provided by the user. See https://cloud.google.com/dlp/docs/creating-custom-infotypes to learn more. */
   var customInfoTypes: js.UndefOr[js.Array[GooglePrivacyDlpV2CustomInfoType]] = js.undefined
   
-  /** When true, excludes type information of the findings. */
+  /** When true, excludes type information of the findings. This is not used for data profiling. */
   var excludeInfoTypes: js.UndefOr[Boolean] = js.undefined
   
-  /** When true, a contextual quote from the data that triggered a finding is included in the response; see Finding.quote. */
+  /** When true, a contextual quote from the data that triggered a finding is included in the response; see Finding.quote. This is not used for data profiling. */
   var includeQuote: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -26,7 +26,10 @@ trait GooglePrivacyDlpV2InspectConfig extends StObject {
     */
   var infoTypes: js.UndefOr[js.Array[GooglePrivacyDlpV2InfoType]] = js.undefined
   
-  /** Configuration to control the number of findings returned. */
+  /**
+    * Configuration to control the number of findings returned. This is not used for data profiling. When redacting sensitive data from images, finding limits don't apply. They can cause
+    * unexpected or inconsistent results, where only some data is redacted. Don't include finding limits in RedactImage requests. Otherwise, Cloud DLP returns an error.
+    */
   var limits: js.UndefOr[GooglePrivacyDlpV2FindingLimits] = js.undefined
   
   /** Only returns findings equal or above this threshold. The default is POSSIBLE. See https://cloud.google.com/dlp/docs/likelihood to learn more. */
@@ -51,13 +54,13 @@ object GooglePrivacyDlpV2InspectConfig {
     
     inline def setContentOptionsUndefined: Self = StObject.set(x, "contentOptions", js.undefined)
     
-    inline def setContentOptionsVarargs(value: String*): Self = StObject.set(x, "contentOptions", js.Array(value :_*))
+    inline def setContentOptionsVarargs(value: String*): Self = StObject.set(x, "contentOptions", js.Array(value*))
     
     inline def setCustomInfoTypes(value: js.Array[GooglePrivacyDlpV2CustomInfoType]): Self = StObject.set(x, "customInfoTypes", value.asInstanceOf[js.Any])
     
     inline def setCustomInfoTypesUndefined: Self = StObject.set(x, "customInfoTypes", js.undefined)
     
-    inline def setCustomInfoTypesVarargs(value: GooglePrivacyDlpV2CustomInfoType*): Self = StObject.set(x, "customInfoTypes", js.Array(value :_*))
+    inline def setCustomInfoTypesVarargs(value: GooglePrivacyDlpV2CustomInfoType*): Self = StObject.set(x, "customInfoTypes", js.Array(value*))
     
     inline def setExcludeInfoTypes(value: Boolean): Self = StObject.set(x, "excludeInfoTypes", value.asInstanceOf[js.Any])
     
@@ -71,7 +74,7 @@ object GooglePrivacyDlpV2InspectConfig {
     
     inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    inline def setInfoTypesVarargs(value: GooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: GooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value*))
     
     inline def setLimits(value: GooglePrivacyDlpV2FindingLimits): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
@@ -85,6 +88,6 @@ object GooglePrivacyDlpV2InspectConfig {
     
     inline def setRuleSetUndefined: Self = StObject.set(x, "ruleSet", js.undefined)
     
-    inline def setRuleSetVarargs(value: GooglePrivacyDlpV2InspectionRuleSet*): Self = StObject.set(x, "ruleSet", js.Array(value :_*))
+    inline def setRuleSetVarargs(value: GooglePrivacyDlpV2InspectionRuleSet*): Self = StObject.set(x, "ruleSet", js.Array(value*))
   }
 }

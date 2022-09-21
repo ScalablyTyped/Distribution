@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("proton-native", "AreaCircle")
 @js.native
-class AreaCircle protected ()
-  extends Component[AreaCircleProps, js.Object, js.Any] {
+open class AreaCircle protected ()
+  extends Component[AreaCircleProps, js.Object, Any] {
   def this(props: AreaCircleProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: AreaCircleProps, context: js.Any) = this()
+  def this(props: AreaCircleProps, context: Any) = this()
 }

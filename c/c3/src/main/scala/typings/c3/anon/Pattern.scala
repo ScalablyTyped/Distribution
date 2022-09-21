@@ -29,7 +29,7 @@ object Pattern {
     
     inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+    inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value*))
     
     inline def setThreshold(value: Max): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     

@@ -25,14 +25,14 @@ trait Graph2dOptions extends StObject {
   
   var end: js.UndefOr[DateType] = js.undefined
   
-  var format: js.UndefOr[js.Any] = js.undefined
+  var format: js.UndefOr[Any] = js.undefined
   
   // TODO
   var graphHeight: js.UndefOr[HeightWidthType] = js.undefined
   
   var height: js.UndefOr[HeightWidthType] = js.undefined
   
-  var hiddenDates: js.UndefOr[js.Any] = js.undefined
+  var hiddenDates: js.UndefOr[Any] = js.undefined
   
   // TODO
   var legend: js.UndefOr[Graph2dLegendOption] = js.undefined
@@ -136,7 +136,7 @@ object Graph2dOptions {
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    inline def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
@@ -148,7 +148,7 @@ object Graph2dOptions {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHiddenDates(value: js.Any): Self = StObject.set(x, "hiddenDates", value.asInstanceOf[js.Any])
+    inline def setHiddenDates(value: Any): Self = StObject.set(x, "hiddenDates", value.asInstanceOf[js.Any])
     
     inline def setHiddenDatesUndefined: Self = StObject.set(x, "hiddenDates", js.undefined)
     

@@ -13,7 +13,7 @@ trait GmbEmail extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account for which GMB access is requested. */
+  /** The ID of the account for which Business Profile access is requested. */
   var accountId: String
   
   /** Data format for response. */
@@ -25,7 +25,7 @@ trait GmbEmail extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** The email of the Google My Business account. */
+  /** The email of the Business Profile. */
   var gmbEmail: String
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */

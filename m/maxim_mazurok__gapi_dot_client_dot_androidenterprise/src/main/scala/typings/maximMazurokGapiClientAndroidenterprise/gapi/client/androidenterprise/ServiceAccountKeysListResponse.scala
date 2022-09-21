@@ -22,6 +22,6 @@ object ServiceAccountKeysListResponse {
     
     inline def setServiceAccountKeyUndefined: Self = StObject.set(x, "serviceAccountKey", js.undefined)
     
-    inline def setServiceAccountKeyVarargs(value: ServiceAccountKey*): Self = StObject.set(x, "serviceAccountKey", js.Array(value :_*))
+    inline def setServiceAccountKeyVarargs(value: ServiceAccountKey*): Self = StObject.set(x, "serviceAccountKey", js.Array(value*))
   }
 }

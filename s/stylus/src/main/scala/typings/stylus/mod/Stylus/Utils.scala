@@ -1,6 +1,5 @@
 package typings.stylus.mod.Stylus
 
-import typings.std.Error
 import typings.stylus.mod.Stylus.Nodes.Expression
 import typings.stylus.mod.Stylus.Nodes.Node
 import org.scalablytyped.runtime.StObject
@@ -38,14 +37,14 @@ trait Utils extends StObject {
   /**
     * Coerce JavaScript values to their Stylus equivalents.
     */
-  def coerce(`val`: js.Any): Node = js.native
-  def coerce(`val`: js.Any, raw: Boolean): Node = js.native
+  def coerce(`val`: Any): Node = js.native
+  def coerce(`val`: Any, raw: Boolean): Node = js.native
   
   /**
     * Coerce a javascript `Array` to a Stylus `Expression`.
     */
-  def coerceArray(`val`: js.Any): Expression = js.native
-  def coerceArray(`val`: js.Any, raw: Boolean): Expression = js.native
+  def coerceArray(`val`: Any): Expression = js.native
+  def coerceArray(`val`: Any, raw: Boolean): Expression = js.native
   
   /**
     * Coerce a javascript object to a Stylus `Expression` or `Object`.
@@ -54,8 +53,8 @@ trait Utils extends StObject {
     * the expression `(foo 'bar') (bar 'baz')`. If `raw` is true
     * given `obj` would become a Stylus hash object.
     */
-  def coerceObject(obj: js.Any): Expression = js.native
-  def coerceObject(obj: js.Any, raw: Boolean): Expression = js.native
+  def coerceObject(obj: Any): Expression = js.native
+  def coerceObject(obj: Any, raw: Boolean): Expression = js.native
   
   /**
     * Compile selector strings in `arr` from the bottom-up
@@ -72,7 +71,7 @@ trait Utils extends StObject {
   /**
     * Format the given `err` with the given `options`.
     */
-  def formatException(err: Error, options: ExceptionOptions): Error = js.native
+  def formatException(err: js.Error, options: ExceptionOptions): js.Error = js.native
   
   /**
     * Attempt to lookup `path` within `paths` from tail to head.
@@ -89,17 +88,17 @@ trait Utils extends StObject {
   /**
     * Merge object `b` with `a`.
     */
-  def merge(a: js.Any, b: js.Any): js.Any = js.native
+  def merge(a: Any, b: Any): Any = js.native
   
   /**
     * Return param names for `fn`.
     */
-  def params(fn: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[String] = js.native
+  def params(fn: js.Function1[/* repeated */ Any, Any]): js.Array[String] = js.native
   
   /**
     * Returns an array with unique values.
     */
-  def uniq(arr: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def uniq(arr: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     * Unwrap `expr`.

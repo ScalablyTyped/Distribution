@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Calculate")
 @js.native
-class Calculate protected ()
+open class Calculate protected ()
   extends StObject
      with typings.ejWebAll.ej.Calculate {
   def this(element: JQuery) = this()
@@ -88,8 +88,8 @@ object Calculate {
   /* static member */
   @JSGlobal("ej.Calculate.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("ej.Calculate.fn")

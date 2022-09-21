@@ -42,7 +42,7 @@ object Breakdown {
     
     inline def setBreakdownUndefined: Self = StObject.set(x, "breakdown", js.undefined)
     
-    inline def setBreakdownVarargs(value: SortedDimension*): Self = StObject.set(x, "breakdown", js.Array(value :_*))
+    inline def setBreakdownVarargs(value: SortedDimension*): Self = StObject.set(x, "breakdown", js.Array(value*))
     
     inline def setDateRange(value: typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object Breakdown {
     
     inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    inline def setDimensionFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
     
     inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
@@ -62,13 +62,13 @@ object Breakdown {
     
     inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
-    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
     
     inline def setOverlapMetricNames(value: js.Array[String]): Self = StObject.set(x, "overlapMetricNames", value.asInstanceOf[js.Any])
     
     inline def setOverlapMetricNamesUndefined: Self = StObject.set(x, "overlapMetricNames", js.undefined)
     
-    inline def setOverlapMetricNamesVarargs(value: String*): Self = StObject.set(x, "overlapMetricNames", js.Array(value :_*))
+    inline def setOverlapMetricNamesVarargs(value: String*): Self = StObject.set(x, "overlapMetricNames", js.Array(value*))
     
     inline def setPivoted(value: Boolean): Self = StObject.set(x, "pivoted", value.asInstanceOf[js.Any])
     

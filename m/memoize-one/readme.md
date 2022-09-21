@@ -1,7 +1,7 @@
 
 # Scala.js typings for memoize-one
 
-Typings are for version 5.1.1
+Typings are for version 6.0.0
 
 ## Library description:
 A memoization library which only remembers the latest invocation
@@ -10,10 +10,10 @@ A memoization library which only remembers the latest invocation
 | ------------------ | :-------------: |
 | Full name          | memoize-one |
 | Keywords           | memoize, memoization, cache, performance |
-| # releases         | 14 |
-| # dependents       | 921 |
-| # downloads        | 175930498 |
-| # stars            | 2 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7546093333333332E7 |
+| # stars            | 2768.0 |
 
 ## Links
 - [Homepage](https://github.com/alexreardon/memoize-one#readme)

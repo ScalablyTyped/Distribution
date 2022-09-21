@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Resource extends StObject {
   
   /**
+    * Contains information about sensitive data that was detected on the resource.
+    */
+  var DataClassification: js.UndefOr[DataClassificationDetails] = js.undefined
+  
+  /**
     * Additional details about the resource related to a finding.
     */
   var Details: js.UndefOr[ResourceDetails] = js.undefined
@@ -17,22 +22,22 @@ trait Resource extends StObject {
   var Id: NonEmptyString
   
   /**
-    * The canonical AWS partition name that the Region is assigned to.
+    * The canonical Amazon Web Services partition name that the Region is assigned to.
     */
   var Partition: js.UndefOr[typings.awsSdk.securityhubMod.Partition] = js.undefined
   
   /**
-    * The canonical AWS external Region name where this resource is located.
+    * The canonical Amazon Web Services external Region name where this resource is located.
     */
   var Region: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * Identifies the role of the resource in the finding. A resource is either the actor or target of the finding activity,
     */
   var ResourceRole: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * A list of AWS tags associated with a resource at the time the finding was processed.
+    * A list of Amazon Web Services tags associated with a resource at the time the finding was processed.
     */
   var Tags: js.UndefOr[FieldMap] = js.undefined
   
@@ -49,6 +54,10 @@ object Resource {
   }
   
   extension [Self <: Resource](x: Self) {
+    
+    inline def setDataClassification(value: DataClassificationDetails): Self = StObject.set(x, "DataClassification", value.asInstanceOf[js.Any])
+    
+    inline def setDataClassificationUndefined: Self = StObject.set(x, "DataClassification", js.undefined)
     
     inline def setDetails(value: ResourceDetails): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     

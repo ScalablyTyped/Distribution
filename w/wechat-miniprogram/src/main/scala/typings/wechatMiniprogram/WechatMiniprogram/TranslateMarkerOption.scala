@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TranslateMarkerOption extends StObject {
   
   /** 动画结束回调函数 */
-  var animationEnd: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var animationEnd: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
   /** 移动过程中是否自动旋转 marker */
   var autoRotate: Boolean
@@ -47,7 +47,7 @@ object TranslateMarkerOption {
   
   extension [Self <: TranslateMarkerOption](x: Self) {
     
-    inline def setAnimationEnd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "animationEnd", js.Any.fromFunction1(value))
+    inline def setAnimationEnd(value: /* repeated */ Any => Any): Self = StObject.set(x, "animationEnd", js.Any.fromFunction1(value))
     
     inline def setAnimationEndUndefined: Self = StObject.set(x, "animationEnd", js.undefined)
     

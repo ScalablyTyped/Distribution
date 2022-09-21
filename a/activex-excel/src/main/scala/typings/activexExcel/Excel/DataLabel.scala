@@ -9,7 +9,7 @@ trait DataLabel extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   var AutoText: Boolean = js.native
   
@@ -24,7 +24,7 @@ trait DataLabel extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
   /* private */ @JSName("Excel.DataLabel_typekey")
   var ExcelDotDataLabel_typekey: DataLabel = js.native
@@ -61,13 +61,13 @@ trait DataLabel extends StObject {
   
   var Orientation: XlOrientation = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Position: XlDataLabelPosition = js.native
   
   var ReadingOrder: Double = js.native
   
-  def Select(): js.Any = js.native
+  def Select(): Any = js.native
   
   var Separator: String | XlDataLabelSeparator = js.native
   
@@ -89,7 +89,7 @@ trait DataLabel extends StObject {
   
   var Top: Double = js.native
   
-  var Type: js.Any = js.native
+  var Type: Any = js.native
   
   var VerticalAlignment: VerticalAlignments = js.native
   

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimelineStyleUpdateData extends StObject {
   
   /**
+    * Specifies the name of the timeline style.
     *
-    * Gets the name of the TimelineStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[String] = js.undefined

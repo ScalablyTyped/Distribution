@@ -12,37 +12,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gl-react", "Surface")
 @js.native
-class Surface[T] protected ()
-  extends Component[SurfaceProps, SurfaceState, js.Any] {
+open class Surface[T] protected () extends Component[SurfaceProps, SurfaceState, Any] {
   def this(props: SurfaceProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SurfaceProps, context: js.Any) = this()
+  def this(props: SurfaceProps, context: Any) = this()
   
   var buffer: WebGLBuffer = js.native
   
-  def capture(): js.Array[js.Any] = js.native
-  def capture(x: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Double, w: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Double, w: Double, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Double, w: Unit, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Unit, w: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Unit, w: Double, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Double, y: Unit, w: Unit, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Double, w: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Double, w: Double, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Double, w: Unit, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Unit, w: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Unit, w: Double, h: Double): js.Array[js.Any] = js.native
-  def capture(x: Unit, y: Unit, w: Unit, h: Double): js.Array[js.Any] = js.native
+  def capture(): js.Array[Any] = js.native
+  def capture(x: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Double, w: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Double, w: Double, h: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Double, w: Unit, h: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Unit, w: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Unit, w: Double, h: Double): js.Array[Any] = js.native
+  def capture(x: Double, y: Unit, w: Unit, h: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Double, w: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Double, w: Double, h: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Double, w: Unit, h: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Unit, w: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Unit, w: Double, h: Double): js.Array[Any] = js.native
+  def capture(x: Unit, y: Unit, w: Unit, h: Double): js.Array[Any] = js.native
   
-  def captureAsBlob(args: js.Any*): js.Promise[Blob] = js.native
+  def captureAsBlob(args: Any*): js.Promise[Blob] = js.native
   
-  def captureAsDataURL(args: js.Any*): String = js.native
+  def captureAsDataURL(args: Any*): String = js.native
   
   def flush(): Unit = js.native
   
@@ -64,9 +63,9 @@ class Surface[T] protected ()
   
   var id: Double = js.native
   
-  var loaderResolver: js.UndefOr[js.Any] = js.native
+  var loaderResolver: js.UndefOr[Any] = js.native
   
-  def mapRenderableContent(inst: js.Any): js.Any = js.native
+  def mapRenderableContent(inst: Any): Any = js.native
   
   def rebootForDebug(): Unit = js.native
   
@@ -74,5 +73,5 @@ class Surface[T] protected ()
   
   var root: Node = js.native
   
-  var shaders: StringDictionary[js.Any] = js.native
+  var shaders: StringDictionary[Any] = js.native
 }

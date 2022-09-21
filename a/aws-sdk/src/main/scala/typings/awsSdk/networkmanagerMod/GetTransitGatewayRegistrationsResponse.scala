@@ -9,7 +9,7 @@ trait GetTransitGatewayRegistrationsResponse extends StObject {
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[typings.awsSdk.networkmanagerMod.NextToken] = js.undefined
   
   /**
     * The transit gateway registrations.
@@ -25,7 +25,7 @@ object GetTransitGatewayRegistrationsResponse {
   
   extension [Self <: GetTransitGatewayRegistrationsResponse](x: Self) {
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
@@ -33,6 +33,6 @@ object GetTransitGatewayRegistrationsResponse {
     
     inline def setTransitGatewayRegistrationsUndefined: Self = StObject.set(x, "TransitGatewayRegistrations", js.undefined)
     
-    inline def setTransitGatewayRegistrationsVarargs(value: TransitGatewayRegistration*): Self = StObject.set(x, "TransitGatewayRegistrations", js.Array(value :_*))
+    inline def setTransitGatewayRegistrationsVarargs(value: TransitGatewayRegistration*): Self = StObject.set(x, "TransitGatewayRegistrations", js.Array(value*))
   }
 }

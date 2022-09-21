@@ -4,141 +4,97 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A Company resource represents a company in the service. A company is the
-  * entity that owns job listings, that is, the hiring entity responsible for
-  * employing applicants for the job position.
-  */
 trait SchemaCompany extends StObject {
   
   /**
-    * Optional.  The URL to employer&#39;s career site or careers page on the
-    * employer&#39;s web site.
+    * Optional. The URL to employer's career site or careers page on the employer's web site.
     */
-  var careerPageLink: js.UndefOr[String] = js.undefined
+  var careerPageLink: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional.  Identifiers external to the application that help to further
-    * identify the employer.
+    * Optional. Identifiers external to the application that help to further identify the employer.
     */
   var companyInfoSources: js.UndefOr[js.Array[SchemaCompanyInfoSource]] = js.undefined
   
   /**
-    * Optional.  The employer&#39;s company size.
+    * Optional. The employer's company size.
     */
-  var companySize: js.UndefOr[String] = js.undefined
+  var companySize: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Deprecated. Do not use this field.  Optional.  This field is no longer
-    * used. Any value set to it is ignored.
+    * Deprecated. Do not use this field. Optional. This field is no longer used. Any value set to it is ignored.
     */
-  var disableLocationOptimization: js.UndefOr[Boolean] = js.undefined
+  var disableLocationOptimization: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Required.  The name of the employer to be displayed with the job, for
-    * example, &quot;Google, LLC.&quot;.
+    * Required. The name of the employer to be displayed with the job, for example, "Google, LLC.".
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional.  The unique company identifier provided by the client to
-    * identify an employer for billing purposes. Recommended practice is to use
-    * the distributor_company_id.  Defaults to same value as
-    * distributor_company_id when a value is not provided.
+    * Optional. The unique company identifier provided by the client to identify an employer for billing purposes. Recommended practice is to use the distributor_company_id. Defaults to same value as distributor_company_id when a value is not provided.
     */
-  var distributorBillingCompanyId: js.UndefOr[String] = js.undefined
+  var distributorBillingCompanyId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required.  A client&#39;s company identifier, used to uniquely identify
-    * the company. If an employer has a subsidiary or sub-brand, such as
-    * &quot;Alphabet&quot; and &quot;Google&quot;, which the client wishes to
-    * use as the company displayed on the job. Best practice is to create a
-    * distinct company identifier for each distinct brand displayed.  The
-    * maximum number of allowed characters is 255.
+    * Required. A client's company identifier, used to uniquely identify the company. If an employer has a subsidiary or sub-brand, such as "Alphabet" and "Google", which the client wishes to use as the company displayed on the job. Best practice is to create a distinct company identifier for each distinct brand displayed. The maximum number of allowed characters is 255.
     */
-  var distributorCompanyId: js.UndefOr[String] = js.undefined
+  var distributorCompanyId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional.  Equal Employment Opportunity legal disclaimer text to be
-    * associated with all jobs, and typically to be displayed in all roles. The
-    * maximum number of allowed characters is 500.
+    * Optional. Equal Employment Opportunity legal disclaimer text to be associated with all jobs, and typically to be displayed in all roles. The maximum number of allowed characters is 500.
     */
-  var eeoText: js.UndefOr[String] = js.undefined
+  var eeoText: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional.  Set to true if it is the hiring agency that post jobs for
-    * other employers.  Defaults to false if not provided.
+    * Optional. Set to true if it is the hiring agency that post jobs for other employers. Defaults to false if not provided.
     */
-  var hiringAgency: js.UndefOr[Boolean] = js.undefined
+  var hiringAgency: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Optional.  The street address of the company&#39;s main headquarters,
-    * which may be different from the job location. The service attempts to
-    * geolocate the provided address, and populates a more specific location
-    * wherever possible in structured_company_hq_location.
+    * Optional. The street address of the company's main headquarters, which may be different from the job location. The service attempts to geolocate the provided address, and populates a more specific location wherever possible in structured_company_hq_location.
     */
-  var hqLocation: js.UndefOr[String] = js.undefined
+  var hqLocation: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional.  A URL that hosts the employer&#39;s company logo. If provided,
-    * the logo image should be squared at 80x80 pixels.  The url must be a
-    * Google Photos or Google Album url. Only images in these Google
-    * sub-domains are accepted.
+    * Optional. A URL that hosts the employer's company logo. If provided, the logo image should be squared at 80x80 pixels. The url must be a Google Photos or Google Album url. Only images in these Google sub-domains are accepted.
     */
-  var imageUrl: js.UndefOr[String] = js.undefined
+  var imageUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional.  A list of keys of filterable Job.custom_attributes, whose
-    * corresponding `string_values` are used in keyword search. Jobs with
-    * `string_values` under these specified field keys are returned if any of
-    * the values matches the search keyword. Custom field values with
-    * parenthesis, brackets and special symbols might not be properly
-    * searchable, and those keyword queries need to be surrounded by quotes.
+    * Optional. A list of keys of filterable Job.custom_attributes, whose corresponding `string_values` are used in keyword search. Jobs with `string_values` under these specified field keys are returned if any of the values matches the search keyword. Custom field values with parenthesis, brackets and special symbols might not be properly searchable, and those keyword queries need to be surrounded by quotes.
     */
-  var keywordSearchableCustomAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  var keywordSearchableCustomAttributes: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Deprecated. Use keyword_searchable_custom_attributes instead.  Optional.
-    * A list of filterable custom fields that should be used in keyword search.
-    * The jobs of this company are returned if any of these custom fields
-    * matches the search keyword. Custom field values with parenthesis,
-    * brackets and special symbols might not be properly searchable, and those
-    * keyword queries need to be surrounded by quotes.
+    * Deprecated. Use keyword_searchable_custom_attributes instead. Optional. A list of filterable custom fields that should be used in keyword search. The jobs of this company are returned if any of these custom fields matches the search keyword. Custom field values with parenthesis, brackets and special symbols might not be properly searchable, and those keyword queries need to be surrounded by quotes.
     */
-  var keywordSearchableCustomFields: js.UndefOr[js.Array[Double]] = js.undefined
+  var keywordSearchableCustomFields: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /**
-    * Required during company update.  The resource name for a company. This is
-    * generated by the service when a company is created, for example,
-    * &quot;companies/0000aaaa-1111-bbbb-2222-cccc3333dddd&quot;.
+    * Required during company update. The resource name for a company. This is generated by the service when a company is created, for example, "companies/0000aaaa-1111-bbbb-2222-cccc3333dddd".
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Output only.  A structured headquarters location of the company, resolved
-    * from hq_location if possible.
+    * Output only. A structured headquarters location of the company, resolved from hq_location if possible.
     */
   var structuredCompanyHqLocation: js.UndefOr[SchemaJobLocation] = js.undefined
   
   /**
-    * Output only.  Indicates whether a company is flagged to be suspended from
-    * public availability by the service when job content appears suspicious,
-    * abusive, or spammy.
+    * Output only. Indicates whether a company is flagged to be suspended from public availability by the service when job content appears suspicious, abusive, or spammy.
     */
-  var suspended: js.UndefOr[Boolean] = js.undefined
+  var suspended: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Deprecated. Use display_name instead.  Required.  The name of the
-    * employer to be displayed with the job, for example, &quot;Google,
-    * LLC.&quot;.
+    * Deprecated. Use display_name instead. Required. The name of the employer to be displayed with the job, for example, "Google, LLC.".
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional.  The URL representing the company&#39;s primary web site or
-    * home page, such as, &quot;www.google.com&quot;.
+    * Optional. The URL representing the company's primary web site or home page, such as, "www.google.com".
     */
-  var website: js.UndefOr[String] = js.undefined
+  var website: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCompany {
   
@@ -151,63 +107,89 @@ object SchemaCompany {
     
     inline def setCareerPageLink(value: String): Self = StObject.set(x, "careerPageLink", value.asInstanceOf[js.Any])
     
+    inline def setCareerPageLinkNull: Self = StObject.set(x, "careerPageLink", null)
+    
     inline def setCareerPageLinkUndefined: Self = StObject.set(x, "careerPageLink", js.undefined)
     
     inline def setCompanyInfoSources(value: js.Array[SchemaCompanyInfoSource]): Self = StObject.set(x, "companyInfoSources", value.asInstanceOf[js.Any])
     
     inline def setCompanyInfoSourcesUndefined: Self = StObject.set(x, "companyInfoSources", js.undefined)
     
-    inline def setCompanyInfoSourcesVarargs(value: SchemaCompanyInfoSource*): Self = StObject.set(x, "companyInfoSources", js.Array(value :_*))
+    inline def setCompanyInfoSourcesVarargs(value: SchemaCompanyInfoSource*): Self = StObject.set(x, "companyInfoSources", js.Array(value*))
     
     inline def setCompanySize(value: String): Self = StObject.set(x, "companySize", value.asInstanceOf[js.Any])
+    
+    inline def setCompanySizeNull: Self = StObject.set(x, "companySize", null)
     
     inline def setCompanySizeUndefined: Self = StObject.set(x, "companySize", js.undefined)
     
     inline def setDisableLocationOptimization(value: Boolean): Self = StObject.set(x, "disableLocationOptimization", value.asInstanceOf[js.Any])
     
+    inline def setDisableLocationOptimizationNull: Self = StObject.set(x, "disableLocationOptimization", null)
+    
     inline def setDisableLocationOptimizationUndefined: Self = StObject.set(x, "disableLocationOptimization", js.undefined)
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setDistributorBillingCompanyId(value: String): Self = StObject.set(x, "distributorBillingCompanyId", value.asInstanceOf[js.Any])
     
+    inline def setDistributorBillingCompanyIdNull: Self = StObject.set(x, "distributorBillingCompanyId", null)
+    
     inline def setDistributorBillingCompanyIdUndefined: Self = StObject.set(x, "distributorBillingCompanyId", js.undefined)
     
     inline def setDistributorCompanyId(value: String): Self = StObject.set(x, "distributorCompanyId", value.asInstanceOf[js.Any])
+    
+    inline def setDistributorCompanyIdNull: Self = StObject.set(x, "distributorCompanyId", null)
     
     inline def setDistributorCompanyIdUndefined: Self = StObject.set(x, "distributorCompanyId", js.undefined)
     
     inline def setEeoText(value: String): Self = StObject.set(x, "eeoText", value.asInstanceOf[js.Any])
     
+    inline def setEeoTextNull: Self = StObject.set(x, "eeoText", null)
+    
     inline def setEeoTextUndefined: Self = StObject.set(x, "eeoText", js.undefined)
     
     inline def setHiringAgency(value: Boolean): Self = StObject.set(x, "hiringAgency", value.asInstanceOf[js.Any])
+    
+    inline def setHiringAgencyNull: Self = StObject.set(x, "hiringAgency", null)
     
     inline def setHiringAgencyUndefined: Self = StObject.set(x, "hiringAgency", js.undefined)
     
     inline def setHqLocation(value: String): Self = StObject.set(x, "hqLocation", value.asInstanceOf[js.Any])
     
+    inline def setHqLocationNull: Self = StObject.set(x, "hqLocation", null)
+    
     inline def setHqLocationUndefined: Self = StObject.set(x, "hqLocation", js.undefined)
     
     inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    
+    inline def setImageUrlNull: Self = StObject.set(x, "imageUrl", null)
     
     inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     inline def setKeywordSearchableCustomAttributes(value: js.Array[String]): Self = StObject.set(x, "keywordSearchableCustomAttributes", value.asInstanceOf[js.Any])
     
+    inline def setKeywordSearchableCustomAttributesNull: Self = StObject.set(x, "keywordSearchableCustomAttributes", null)
+    
     inline def setKeywordSearchableCustomAttributesUndefined: Self = StObject.set(x, "keywordSearchableCustomAttributes", js.undefined)
     
-    inline def setKeywordSearchableCustomAttributesVarargs(value: String*): Self = StObject.set(x, "keywordSearchableCustomAttributes", js.Array(value :_*))
+    inline def setKeywordSearchableCustomAttributesVarargs(value: String*): Self = StObject.set(x, "keywordSearchableCustomAttributes", js.Array(value*))
     
     inline def setKeywordSearchableCustomFields(value: js.Array[Double]): Self = StObject.set(x, "keywordSearchableCustomFields", value.asInstanceOf[js.Any])
     
+    inline def setKeywordSearchableCustomFieldsNull: Self = StObject.set(x, "keywordSearchableCustomFields", null)
+    
     inline def setKeywordSearchableCustomFieldsUndefined: Self = StObject.set(x, "keywordSearchableCustomFields", js.undefined)
     
-    inline def setKeywordSearchableCustomFieldsVarargs(value: Double*): Self = StObject.set(x, "keywordSearchableCustomFields", js.Array(value :_*))
+    inline def setKeywordSearchableCustomFieldsVarargs(value: Double*): Self = StObject.set(x, "keywordSearchableCustomFields", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -217,13 +199,19 @@ object SchemaCompany {
     
     inline def setSuspended(value: Boolean): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
     
+    inline def setSuspendedNull: Self = StObject.set(x, "suspended", null)
+    
     inline def setSuspendedUndefined: Self = StObject.set(x, "suspended", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+    
+    inline def setWebsiteNull: Self = StObject.set(x, "website", null)
     
     inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }

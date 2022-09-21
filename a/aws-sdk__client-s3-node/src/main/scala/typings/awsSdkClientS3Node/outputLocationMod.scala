@@ -8,5 +8,5 @@ object outputLocationMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_OutputLocation", "_OutputLocation")
   @js.native
-  val OutputLocation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val OutputLocation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

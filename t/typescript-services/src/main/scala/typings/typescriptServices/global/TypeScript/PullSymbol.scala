@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.PullSymbol")
 @js.native
-class PullSymbol protected ()
+open class PullSymbol protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullSymbol {
   def this(name: String, declKind: typings.typescriptServices.TypeScript.PullElementKind) = this()
@@ -18,7 +18,7 @@ object PullSymbol {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def getDefaultConstructorSymbolForDocComments(classSymbol: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConstructorSymbolForDocComments")(classSymbol.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getDefaultConstructorSymbolForDocComments(classSymbol: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConstructorSymbolForDocComments")(classSymbol.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* static member */
   inline def getIsExternallyVisible(
@@ -89,5 +89,5 @@ object PullSymbol {
   inline def isExternalModuleReferenceAlias(aliasSymbol: typings.typescriptServices.TypeScript.PullTypeAliasSymbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isExternalModuleReferenceAlias")(aliasSymbol.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  inline def unqualifiedNameReferencesDifferentSymbolInScope(symbol: js.Any, scopePath: js.Any, endScopePathIndex: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unqualifiedNameReferencesDifferentSymbolInScope")(symbol.asInstanceOf[js.Any], scopePath.asInstanceOf[js.Any], endScopePathIndex.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def unqualifiedNameReferencesDifferentSymbolInScope(symbol: Any, scopePath: Any, endScopePathIndex: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unqualifiedNameReferencesDifferentSymbolInScope")(symbol.asInstanceOf[js.Any], scopePath.asInstanceOf[js.Any], endScopePathIndex.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

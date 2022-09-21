@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaReviewsReplyResponse extends StObject {
   
+  /**
+    * The result of replying/updating a reply to review.
+    */
   var result: js.UndefOr[SchemaReviewReplyResult] = js.undefined
 }
 object SchemaReviewsReplyResponse {

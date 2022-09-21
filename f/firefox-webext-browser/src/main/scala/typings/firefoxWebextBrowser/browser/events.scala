@@ -130,10 +130,10 @@ object events {
   trait Rule extends StObject {
     
     /** List of actions that are triggered if one of the condtions is fulfilled. */
-    var actions: js.Array[js.Any]
+    var actions: js.Array[Any]
     
     /** List of conditions that can trigger the actions. */
-    var conditions: js.Array[js.Any]
+    var conditions: js.Array[Any]
     
     /** Optional identifier that allows referencing this rule. */
     var id: js.UndefOr[String] = js.undefined
@@ -146,20 +146,20 @@ object events {
   }
   object Rule {
     
-    inline def apply(actions: js.Array[js.Any], conditions: js.Array[js.Any]): Rule = {
+    inline def apply(actions: js.Array[Any], conditions: js.Array[Any]): Rule = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rule]
     }
     
     extension [Self <: Rule](x: Self) {
       
-      inline def setActions(value: js.Array[js.Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: js.Any*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Any*): Self = StObject.set(x, "actions", js.Array(value*))
       
-      inline def setConditions(value: js.Array[js.Any]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      inline def setConditions(value: js.Array[Any]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      inline def setConditionsVarargs(value: js.Any*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+      inline def setConditionsVarargs(value: Any*): Self = StObject.set(x, "conditions", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -173,7 +173,7 @@ object events {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -305,7 +305,7 @@ object events {
       
       inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
       
-      inline def setPortsVarargs(value: (Double | (js.Tuple2[Double, Double]))*): Self = StObject.set(x, "ports", js.Array(value :_*))
+      inline def setPortsVarargs(value: (Double | (js.Tuple2[Double, Double]))*): Self = StObject.set(x, "ports", js.Array(value*))
       
       inline def setQueryContains(value: String): Self = StObject.set(x, "queryContains", value.asInstanceOf[js.Any])
       
@@ -327,7 +327,7 @@ object events {
       
       inline def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
       
-      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
       
       inline def setUrlContains(value: String): Self = StObject.set(x, "urlContains", value.asInstanceOf[js.Any])
       

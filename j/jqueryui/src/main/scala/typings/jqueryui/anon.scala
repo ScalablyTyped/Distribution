@@ -19,7 +19,6 @@ import typings.jqueryui.jqueryuiStrings.refresh
 import typings.jqueryui.jqueryuiStrings.select
 import typings.jqueryui.jqueryuiStrings.widget
 import typings.std.Element
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,9 +75,9 @@ object anon {
     def apply(methodName: select): Unit = js.native
     def apply(methodName: select, event: JQueryEventObject): Unit = js.native
     def apply(methodName: widget): JQuery = js.native
-    def apply(optionLiteral: String, optionName: String): js.Any = js.native
-    def apply(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-    def apply(optionLiteral: String, options: MenuOptions): js.Any = js.native
+    def apply(optionLiteral: String, optionName: String): Any = js.native
+    def apply(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+    def apply(optionLiteral: String, options: MenuOptions): Any = js.native
     def apply(options: MenuOptions): JQuery = js.native
     
     var active: Boolean = js.native
@@ -88,7 +87,7 @@ object anon {
     
     var attribute: js.UndefOr[String] = js.undefined
     
-    var expression: js.UndefOr[RegExp] = js.undefined
+    var expression: js.UndefOr[js.RegExp] = js.undefined
     
     var key: js.UndefOr[String] = js.undefined
   }
@@ -105,7 +104,7 @@ object anon {
       
       inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      inline def setExpression(value: RegExp): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: js.RegExp): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
       inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
       

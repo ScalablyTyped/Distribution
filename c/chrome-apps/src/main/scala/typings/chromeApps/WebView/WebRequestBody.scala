@@ -43,6 +43,6 @@ object WebRequestBody {
     
     inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    inline def setRawVarargs(value: UploadData*): Self = StObject.set(x, "raw", js.Array(value :_*))
+    inline def setRawVarargs(value: UploadData*): Self = StObject.set(x, "raw", js.Array(value*))
   }
 }

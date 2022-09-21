@@ -12,7 +12,7 @@ trait CreateNotificationRequest extends StObject {
   var AccountId: typings.awsSdk.budgetsMod.AccountId
   
   /**
-    * The name of the budget that you want AWS to notify you about. Budget names must be unique within an account.
+    * The name of the budget that you want Amazon Web Services to notify you about. Budget names must be unique within an account.
     */
   var BudgetName: typings.awsSdk.budgetsMod.BudgetName
   
@@ -43,6 +43,6 @@ object CreateNotificationRequest {
     
     inline def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
-    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
+    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value*))
   }
 }

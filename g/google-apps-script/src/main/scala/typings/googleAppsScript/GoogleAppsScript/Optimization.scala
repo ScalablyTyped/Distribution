@@ -255,17 +255,17 @@ object Optimization {
     */
   trait LinearOptimizationService extends StObject {
     
-    var Status: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ js.Any
+    var Status: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ Any
     
-    var VariableType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ js.Any
+    var VariableType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ Any
     
     def createEngine(): LinearOptimizationEngine
   }
   object LinearOptimizationService {
     
     inline def apply(
-      Status: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ js.Any,
-      VariableType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ js.Any,
+      Status: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ Any,
+      VariableType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ Any,
       createEngine: () => LinearOptimizationEngine
     ): LinearOptimizationService = {
       val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any], VariableType = VariableType.asInstanceOf[js.Any], createEngine = js.Any.fromFunction0(createEngine))
@@ -276,11 +276,9 @@ object Optimization {
       
       inline def setCreateEngine(value: () => LinearOptimizationEngine): Self = StObject.set(x, "createEngine", js.Any.fromFunction0(value))
       
-      inline def setStatus(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ js.Any): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ Any): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      inline def setVariableType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ js.Any
-      ): Self = StObject.set(x, "VariableType", value.asInstanceOf[js.Any])
+      inline def setVariableType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ Any): Self = StObject.set(x, "VariableType", value.asInstanceOf[js.Any])
     }
   }
   

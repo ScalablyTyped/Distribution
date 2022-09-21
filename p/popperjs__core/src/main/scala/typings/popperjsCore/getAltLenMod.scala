@@ -12,7 +12,5 @@ object getAltLenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default_height(len: height): width | height = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(len.asInstanceOf[js.Any]).asInstanceOf[width | height]
-  
-  inline def default_width(len: width): width | height = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(len.asInstanceOf[js.Any]).asInstanceOf[width | height]
+  inline def default(len: width | height): width | height = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(len.asInstanceOf[js.Any]).asInstanceOf[width | height]
 }

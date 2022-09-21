@@ -1,6 +1,6 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.ArrayBufferView
+import typings.babylonjs.anon.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,22 +11,115 @@ trait BaseTexture
      with ThinTexture
      with IAnimatable {
   
+  /* protected */ var _coordinatesIndex: Double = js.native
+  
   /* protected */ var _coordinatesMode: Double = js.native
   
-  /* private */ var _gammaSpace: js.Any = js.native
+  /* protected */ var _errorObject: js.UndefOr[Exception] = js.native
+  
+  /** @hidden */
+  var _forceSerialize: Boolean = js.native
+  
+  /* private */ var _gammaSpace: Any = js.native
+  
+  /* private */ var _getAlphaFromRGB: Any = js.native
   
   /** @hidden */
   /* protected */ def _getEngine(): Nullable[ThinEngine] = js.native
   
-  /** @hidden */
+  /**
+    * @param url
+    * @param noMipmap
+    * @param sampling
+    * @param invertY
+    * @param useSRGBBuffer
+    * @param isCube
+    * @hidden
+    */
   def _getFromCache(url: Nullable[String], noMipmap: Boolean): Nullable[InternalTexture] = js.native
   def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Double): Nullable[InternalTexture] = js.native
   def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Double, invertY: Boolean): Nullable[InternalTexture] = js.native
+  def _getFromCache(
+    url: Nullable[String],
+    noMipmap: Boolean,
+    sampling: Double,
+    invertY: Boolean,
+    useSRGBBuffer: Boolean
+  ): Nullable[InternalTexture] = js.native
+  def _getFromCache(
+    url: Nullable[String],
+    noMipmap: Boolean,
+    sampling: Double,
+    invertY: Boolean,
+    useSRGBBuffer: Boolean,
+    isCube: Boolean
+  ): Nullable[InternalTexture] = js.native
+  def _getFromCache(
+    url: Nullable[String],
+    noMipmap: Boolean,
+    sampling: Double,
+    invertY: Boolean,
+    useSRGBBuffer: Unit,
+    isCube: Boolean
+  ): Nullable[InternalTexture] = js.native
+  def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Double, invertY: Unit, useSRGBBuffer: Boolean): Nullable[InternalTexture] = js.native
+  def _getFromCache(
+    url: Nullable[String],
+    noMipmap: Boolean,
+    sampling: Double,
+    invertY: Unit,
+    useSRGBBuffer: Boolean,
+    isCube: Boolean
+  ): Nullable[InternalTexture] = js.native
+  def _getFromCache(
+    url: Nullable[String],
+    noMipmap: Boolean,
+    sampling: Double,
+    invertY: Unit,
+    useSRGBBuffer: Unit,
+    isCube: Boolean
+  ): Nullable[InternalTexture] = js.native
   def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Unit, invertY: Boolean): Nullable[InternalTexture] = js.native
+  def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Unit, invertY: Boolean, useSRGBBuffer: Boolean): Nullable[InternalTexture] = js.native
+  def _getFromCache(
+    url: Nullable[String],
+    noMipmap: Boolean,
+    sampling: Unit,
+    invertY: Boolean,
+    useSRGBBuffer: Boolean,
+    isCube: Boolean
+  ): Nullable[InternalTexture] = js.native
+  def _getFromCache(
+    url: Nullable[String],
+    noMipmap: Boolean,
+    sampling: Unit,
+    invertY: Boolean,
+    useSRGBBuffer: Unit,
+    isCube: Boolean
+  ): Nullable[InternalTexture] = js.native
+  def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Unit, invertY: Unit, useSRGBBuffer: Boolean): Nullable[InternalTexture] = js.native
+  def _getFromCache(
+    url: Nullable[String],
+    noMipmap: Boolean,
+    sampling: Unit,
+    invertY: Unit,
+    useSRGBBuffer: Boolean,
+    isCube: Boolean
+  ): Nullable[InternalTexture] = js.native
+  def _getFromCache(
+    url: Nullable[String],
+    noMipmap: Boolean,
+    sampling: Unit,
+    invertY: Unit,
+    useSRGBBuffer: Unit,
+    isCube: Boolean
+  ): Nullable[InternalTexture] = js.native
   
-  /* private */ var _hasAlpha: js.Any = js.native
+  /* private */ var _hasAlpha: Any = js.native
   
-  /* private */ var _isCube: js.Any = js.native
+  /* private */ var _isCube: Any = js.native
+  
+  /* protected */ var _loadingError: Boolean = js.native
   
   /** @hidden */
   def _lodTextureHigh: Nullable[BaseTexture] = js.native
@@ -42,17 +135,130 @@ trait BaseTexture
     */
   /* protected */ def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
   
-  /* private */ var _onDisposeObserver: js.Any = js.native
+  /* private */ var _onDisposeObserver: Any = js.native
+  
+  /** @hidden */
+  var _parentContainer: Nullable[AbstractScene] = js.native
   
   /** @hidden */
   var _prefiltered: Boolean = js.native
+  
+  /**
+    * @param faceIndex
+    * @param level
+    * @param buffer
+    * @param flushRenderer
+    * @param noDataConversion
+    * @hidden
+    */
+  def _readPixelsSync(): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Double): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Double, level: Double): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Double, level: Double, buffer: Unit, flushRenderer: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Double, level: Double, buffer: Unit, flushRenderer: Boolean, noDataConversion: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Double, level: Double, buffer: Unit, flushRenderer: Unit, noDataConversion: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Double, level: Double, buffer: Nullable[js.typedarray.ArrayBufferView]): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Double,
+    level: Double,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Double,
+    level: Double,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Boolean,
+    noDataConversion: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Double,
+    level: Double,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Unit,
+    noDataConversion: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Double, level: Unit, buffer: Unit, flushRenderer: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Double, level: Unit, buffer: Unit, flushRenderer: Boolean, noDataConversion: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Double, level: Unit, buffer: Unit, flushRenderer: Unit, noDataConversion: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Double, level: Unit, buffer: Nullable[js.typedarray.ArrayBufferView]): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Double,
+    level: Unit,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Double,
+    level: Unit,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Boolean,
+    noDataConversion: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Double,
+    level: Unit,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Unit,
+    noDataConversion: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Unit, level: Double): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Unit, level: Double, buffer: Unit, flushRenderer: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Unit, level: Double, buffer: Unit, flushRenderer: Boolean, noDataConversion: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Unit, level: Double, buffer: Unit, flushRenderer: Unit, noDataConversion: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Unit, level: Double, buffer: Nullable[js.typedarray.ArrayBufferView]): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Unit,
+    level: Double,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Unit,
+    level: Double,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Boolean,
+    noDataConversion: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Unit,
+    level: Double,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Unit,
+    noDataConversion: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Unit, level: Unit, buffer: Unit, flushRenderer: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Unit, level: Unit, buffer: Unit, flushRenderer: Boolean, noDataConversion: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Unit, level: Unit, buffer: Unit, flushRenderer: Unit, noDataConversion: Boolean): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(faceIndex: Unit, level: Unit, buffer: Nullable[js.typedarray.ArrayBufferView]): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Unit,
+    level: Unit,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Unit,
+    level: Unit,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Boolean,
+    noDataConversion: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
+  def _readPixelsSync(
+    faceIndex: Unit,
+    level: Unit,
+    buffer: Nullable[js.typedarray.ArrayBufferView],
+    flushRenderer: Unit,
+    noDataConversion: Boolean
+  ): Nullable[js.typedarray.ArrayBufferView] = js.native
   
   /** @hidden */
   def _rebuild(): Unit = js.native
   
   /* protected */ var _scene: Nullable[Scene] = js.native
   
-  /* private */ var _uid: js.Any = js.native
+  /** @hidden */
+  /* private */ var _uid: Any = js.native
   
   /**
     * Define the list of animation attached to the texture.
@@ -72,11 +278,12 @@ trait BaseTexture
     */
   def checkTransformsAreIdentical(texture: Nullable[BaseTexture]): Boolean = js.native
   
+  def coordinatesIndex: Double = js.native
   /**
-    * Define the UV chanel to use starting from 0 and defaulting to 0.
+    * Define the UV channel to use starting from 0 and defaulting to 0.
     * This is part of the texture as textures usually maps to one uv set.
     */
-  var coordinatesIndex: Double = js.native
+  def coordinatesIndex_=(value: Double): Unit = js.native
   
   /**
     * How a texture is mapped.
@@ -97,6 +304,17 @@ trait BaseTexture
   def coordinatesMode_=(value: Double): Unit = js.native
   
   /**
+    * If a loading error occurred this object will be populated with information about the error.
+    */
+  def errorObject: js.UndefOr[Exception] = js.native
+  
+  /**
+    * Force recomputation of spherical polynomials.
+    * Can be useful if you generate a cubemap multiple times (from a probe for eg) and you need the proper polynomials each time
+    */
+  def forceSphericalPolynomialsRecompute(): Unit = js.native
+  
+  /**
     * Define if the texture contains data in gamma space (most of the png/jpg aside bump).
     * HDR texture are usually stored in linear space.
     * This only impacts the PBR and Background materials
@@ -104,11 +322,12 @@ trait BaseTexture
   def gammaSpace: Boolean = js.native
   def gammaSpace_=(gamma: Boolean): Unit = js.native
   
+  def getAlphaFromRGB: Boolean = js.native
   /**
     * Defines if the alpha value should be determined via the rgb values.
     * If true the luminance of the pixel might be used to find the corresponding alpha value.
     */
-  var getAlphaFromRGB: Boolean = js.native
+  def getAlphaFromRGB_=(value: Boolean): Unit = js.native
   
   /**
     * Get the texture reflection matrix used to rotate/transform the reflection.
@@ -123,7 +342,7 @@ trait BaseTexture
   def getScene(): Nullable[Scene] = js.native
   
   /**
-    * Get the texture transform matrix used to offset tile the texture for istance.
+    * Get the texture transform matrix used to offset tile the texture for instance.
     * @returns the transformation matrix
     */
   def getTextureMatrix(): Matrix = js.native
@@ -148,7 +367,7 @@ trait BaseTexture
   def irradianceTexture_=(value: Nullable[BaseTexture]): Unit = js.native
   
   /**
-    * Define if the texture is preventinga material to render or not.
+    * Define if the texture is preventing a material to render or not.
     * If not and the texture is not ready, the engine will use a default black texture instead.
     */
   def isBlocking: Boolean = js.native
@@ -161,7 +380,7 @@ trait BaseTexture
   
   /**
     * Get if the texture is ready to be consumed (either it is ready or it is not blocking)
-    * @returns true if ready or not blocking
+    * @returns true if ready, not blocking or if there was an error loading the texture
     */
   def isReadyOrNotBlocking(): Boolean = js.native
   
@@ -185,6 +404,11 @@ trait BaseTexture
   def linearSpecularLOD_=(value: Boolean): Unit = js.native
   
   /**
+    * Was there any loading error?
+    */
+  def loadingError: Boolean = js.native
+  
+  /**
     * With prefiltered texture, defined the offset used during the prefiltering steps.
     */
   def lodGenerationOffset: Double = js.native
@@ -204,7 +428,7 @@ trait BaseTexture
   /**
     * Gets or sets an object used to store user defined information.
     */
-  var metadata: js.Any = js.native
+  var metadata: Any = js.native
   
   /**
     * Define the name of the texture.
@@ -234,21 +458,30 @@ trait BaseTexture
     * @param faceIndex defines the face of the texture to read (in case of cube texture)
     * @param level defines the LOD level of the texture to read (in case of Mip Maps)
     * @param buffer defines a user defined buffer to fill with data (can be null)
-    * @returns The Array buffer containing the pixels data.
+    * @param flushRenderer true to flush the renderer from the pending commands before reading the pixels
+    * @param noDataConversion false to convert the data to Uint8Array (if texture type is UNSIGNED_BYTE) or to Float32Array (if texture type is anything but UNSIGNED_BYTE). If true, the type of the generated buffer (if buffer==null) will depend on the type of the texture
+    * @param x defines the region x coordinates to start reading from (default to 0)
+    * @param y defines the region y coordinates to start reading from (default to 0)
+    * @param width defines the region width to read from (default to the texture size at level)
+    * @param height defines the region width to read from (default to the texture size at level)
+    * @returns The Array buffer promise containing the pixels data.
     */
-  def readPixels(): Nullable[ArrayBufferView] = js.native
-  def readPixels(faceIndex: Double): Nullable[ArrayBufferView] = js.native
-  def readPixels(faceIndex: Double, level: Double): Nullable[ArrayBufferView] = js.native
-  def readPixels(faceIndex: Double, level: Double, buffer: Nullable[ArrayBufferView]): Nullable[ArrayBufferView] = js.native
-  def readPixels(faceIndex: Double, level: Unit, buffer: Nullable[ArrayBufferView]): Nullable[ArrayBufferView] = js.native
-  def readPixels(faceIndex: Unit, level: Double): Nullable[ArrayBufferView] = js.native
-  def readPixels(faceIndex: Unit, level: Double, buffer: Nullable[ArrayBufferView]): Nullable[ArrayBufferView] = js.native
-  def readPixels(faceIndex: Unit, level: Unit, buffer: Nullable[ArrayBufferView]): Nullable[ArrayBufferView] = js.native
+  def readPixels(
+    faceIndex: js.UndefOr[Double],
+    level: js.UndefOr[Double],
+    buffer: js.UndefOr[Nullable[js.typedarray.ArrayBufferView]],
+    flushRenderer: js.UndefOr[Boolean],
+    noDataConversion: js.UndefOr[Boolean],
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double]
+  ): Nullable[js.Promise[js.typedarray.ArrayBufferView]] = js.native
   
   /**
     * For internal use only. Please do not use.
     */
-  var reservedDataStore: js.Any = js.native
+  var reservedDataStore: Any = js.native
   
   /**
     * Scales the texture if is `canRescale()`
@@ -260,7 +493,7 @@ trait BaseTexture
     * Serialize the texture into a JSON representation that can be parsed later on.
     * @returns the JSON representation of the texture
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Get the polynomial representation of the texture data.

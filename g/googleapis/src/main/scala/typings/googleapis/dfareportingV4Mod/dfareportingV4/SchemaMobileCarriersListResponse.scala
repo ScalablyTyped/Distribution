@@ -1,0 +1,40 @@
+package typings.googleapis.dfareportingV4Mod.dfareportingV4
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaMobileCarriersListResponse extends StObject {
+  
+  /**
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#mobileCarriersListResponse".
+    */
+  var kind: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Mobile carrier collection.
+    */
+  var mobileCarriers: js.UndefOr[js.Array[SchemaMobileCarrier]] = js.undefined
+}
+object SchemaMobileCarriersListResponse {
+  
+  inline def apply(): SchemaMobileCarriersListResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaMobileCarriersListResponse]
+  }
+  
+  extension [Self <: SchemaMobileCarriersListResponse](x: Self) {
+    
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setMobileCarriers(value: js.Array[SchemaMobileCarrier]): Self = StObject.set(x, "mobileCarriers", value.asInstanceOf[js.Any])
+    
+    inline def setMobileCarriersUndefined: Self = StObject.set(x, "mobileCarriers", js.undefined)
+    
+    inline def setMobileCarriersVarargs(value: SchemaMobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value*))
+  }
+}

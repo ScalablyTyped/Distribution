@@ -48,6 +48,6 @@ object PutMailboxPermissionsRequest {
     
     inline def setPermissionValues(value: PermissionValues): Self = StObject.set(x, "PermissionValues", value.asInstanceOf[js.Any])
     
-    inline def setPermissionValuesVarargs(value: PermissionType*): Self = StObject.set(x, "PermissionValues", js.Array(value :_*))
+    inline def setPermissionValuesVarargs(value: PermissionType*): Self = StObject.set(x, "PermissionValues", js.Array(value*))
   }
 }

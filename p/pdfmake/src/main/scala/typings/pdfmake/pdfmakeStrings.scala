@@ -1,8 +1,12 @@
 package typings.pdfmake
 
 import typings.pdfmake.interfacesMod.Alignment
+import typings.pdfmake.interfacesMod.CanvasLineCap
+import typings.pdfmake.interfacesMod.CanvasLineJoin
 import typings.pdfmake.interfacesMod.Decoration
 import typings.pdfmake.interfacesMod.DecorationStyle
+import typings.pdfmake.interfacesMod.ImageAlignment
+import typings.pdfmake.interfacesMod.ImageVerticalAlignment
 import typings.pdfmake.interfacesMod.OrderedListType
 import typings.pdfmake.interfacesMod.PDFVersion
 import typings.pdfmake.interfacesMod.PageBreak
@@ -282,6 +286,10 @@ object pdfmakeStrings {
   inline def FOLIO: FOLIO = "FOLIO".asInstanceOf[FOLIO]
   
   @js.native
+  sealed trait False extends StObject
+  inline def False: False = "False".asInstanceOf[False]
+  
+  @js.native
   sealed trait H extends StObject
   inline def H: H = "H".asInstanceOf[H]
   
@@ -364,10 +372,30 @@ object pdfmakeStrings {
   inline def TABLOID: TABLOID = "TABLOID".asInstanceOf[TABLOID]
   
   @js.native
+  sealed trait True extends StObject
+  inline def True: True = "True".asInstanceOf[True]
+  
+  @js.native
+  sealed trait Unknown extends StObject
+  inline def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
+  
+  @js.native
   sealed trait after
     extends StObject
        with PageBreak
   inline def after: after = "after".asInstanceOf[after]
+  
+  @js.native
+  sealed trait afterEven
+    extends StObject
+       with PageBreak
+  inline def afterEven: afterEven = "afterEven".asInstanceOf[afterEven]
+  
+  @js.native
+  sealed trait afterOdd
+    extends StObject
+       with PageBreak
+  inline def afterOdd: afterOdd = "afterOdd".asInstanceOf[afterOdd]
   
   @js.native
   sealed trait alphanumeric extends StObject
@@ -386,9 +414,45 @@ object pdfmakeStrings {
   inline def before: before = "before".asInstanceOf[before]
   
   @js.native
+  sealed trait beforeEven
+    extends StObject
+       with PageBreak
+  inline def beforeEven: beforeEven = "beforeEven".asInstanceOf[beforeEven]
+  
+  @js.native
+  sealed trait beforeOdd
+    extends StObject
+       with PageBreak
+  inline def beforeOdd: beforeOdd = "beforeOdd".asInstanceOf[beforeOdd]
+  
+  @js.native
+  sealed trait bevel
+    extends StObject
+       with CanvasLineJoin
+  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @js.native
+  sealed trait bottom
+    extends StObject
+       with ImageVerticalAlignment
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @js.native
+  sealed trait butt
+    extends StObject
+       with CanvasLineCap
+  inline def butt: butt = "butt".asInstanceOf[butt]
+  
+  @js.native
+  sealed trait canvas extends StObject
+  inline def canvas: canvas = "canvas".asInstanceOf[canvas]
+  
+  @js.native
   sealed trait center
     extends StObject
        with Alignment
+       with ImageAlignment
+       with ImageVerticalAlignment
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
@@ -398,10 +462,26 @@ object pdfmakeStrings {
   inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
+  sealed trait columns extends StObject
+  inline def columns: columns = "columns".asInstanceOf[columns]
+  
+  @js.native
   sealed trait dashed
     extends StObject
        with DecorationStyle
   inline def dashed: dashed = "dashed".asInstanceOf[dashed]
+  
+  @js.native
+  sealed trait decimal
+    extends StObject
+       with OrderedListType
+  inline def decimal: decimal = "decimal".asInstanceOf[decimal]
+  
+  @js.native
+  sealed trait disc
+    extends StObject
+       with UnorderedListType
+  inline def disc: disc = "disc".asInstanceOf[disc]
   
   @js.native
   sealed trait dotted
@@ -426,6 +506,10 @@ object pdfmakeStrings {
   inline def headerLineOnly: headerLineOnly = "headerLineOnly".asInstanceOf[headerLineOnly]
   
   @js.native
+  sealed trait image extends StObject
+  inline def image: image = "image".asInstanceOf[image]
+  
+  @js.native
   sealed trait justify
     extends StObject
        with Alignment
@@ -441,6 +525,7 @@ object pdfmakeStrings {
   sealed trait left
     extends StObject
        with Alignment
+       with ImageAlignment
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
@@ -472,6 +557,12 @@ object pdfmakeStrings {
   inline def `lower-roman`: `lower-roman` = "lower-roman".asInstanceOf[`lower-roman`]
   
   @js.native
+  sealed trait miter
+    extends StObject
+       with CanvasLineJoin
+  inline def miter: miter = "miter".asInstanceOf[miter]
+  
+  @js.native
   sealed trait noBorders
     extends StObject
        with PredefinedTableLayout
@@ -493,10 +584,18 @@ object pdfmakeStrings {
   inline def octet: octet = "octet".asInstanceOf[octet]
   
   @js.native
+  sealed trait ol extends StObject
+  inline def ol: ol = "ol".asInstanceOf[ol]
+  
+  @js.native
   sealed trait overline
     extends StObject
        with Decoration
   inline def overline: overline = "overline".asInstanceOf[overline]
+  
+  @js.native
+  sealed trait pageReference extends StObject
+  inline def pageReference: pageReference = "pageReference".asInstanceOf[pageReference]
   
   @js.native
   sealed trait polyline extends StObject
@@ -509,6 +608,10 @@ object pdfmakeStrings {
   inline def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
+  sealed trait qr extends StObject
+  inline def qr: qr = "qr".asInstanceOf[qr]
+  
+  @js.native
   sealed trait rect extends StObject
   inline def rect: rect = "rect".asInstanceOf[rect]
   
@@ -516,17 +619,62 @@ object pdfmakeStrings {
   sealed trait right
     extends StObject
        with Alignment
+       with ImageAlignment
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait round extends StObject
+  sealed trait round
+    extends StObject
+       with CanvasLineCap
+       with CanvasLineJoin
   inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait solid
+    extends StObject
+       with DecorationStyle
+  inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
   sealed trait square
     extends StObject
+       with CanvasLineCap
        with UnorderedListType
   inline def square: square = "square".asInstanceOf[square]
+  
+  @js.native
+  sealed trait stack extends StObject
+  inline def stack: stack = "stack".asInstanceOf[stack]
+  
+  @js.native
+  sealed trait svg extends StObject
+  inline def svg: svg = "svg".asInstanceOf[svg]
+  
+  @js.native
+  sealed trait table extends StObject
+  inline def table: table = "table".asInstanceOf[table]
+  
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait textReference extends StObject
+  inline def textReference: textReference = "textReference".asInstanceOf[textReference]
+  
+  @js.native
+  sealed trait toc extends StObject
+  inline def toc: toc = "toc".asInstanceOf[toc]
+  
+  @js.native
+  sealed trait top
+    extends StObject
+       with ImageVerticalAlignment
+  inline def top: top = "top".asInstanceOf[top]
+  
+  @js.native
+  sealed trait ul extends StObject
+  inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
   sealed trait underline

@@ -10,33 +10,35 @@ trait AudioEngine
   extends StObject
      with IAudioEngine {
   
-  /* private */ var _audioContext: js.Any = js.native
+  /* private */ var _audioContext: Any = js.native
   
-  /* private */ var _audioContextInitialized: js.Any = js.native
+  /* private */ var _audioContextInitialized: Any = js.native
   
-  /* private */ var _connectedAnalyser: js.Any = js.native
+  /* private */ var _audioDestination: Any = js.native
   
-  /* private */ var _displayMuteButton: js.Any = js.native
+  /* private */ var _connectedAnalyser: Any = js.native
   
-  /* private */ var _hideMuteButton: js.Any = js.native
+  /* private */ var _displayMuteButton: Any = js.native
   
-  /* private */ var _hostElement: js.Any = js.native
+  /* private */ var _hideMuteButton: Any = js.native
   
-  /* private */ var _initializeAudioContext: js.Any = js.native
+  /* private */ var _hostElement: Any = js.native
   
-  /* private */ var _moveButtonToTopLeft: js.Any = js.native
+  /* private */ var _initializeAudioContext: Any = js.native
   
-  /* private */ var _muteButton: js.Any = js.native
+  /* private */ var _moveButtonToTopLeft: Any = js.native
   
-  /* private */ var _onResize: js.Any = js.native
+  /* private */ var _muteButton: Any = js.native
   
-  /* private */ var _resumeAudioContext: js.Any = js.native
+  /* private */ var _onResize: Any = js.native
   
-  /* private */ var _triggerRunningState: js.Any = js.native
+  /* private */ var _resumeAudioContext: Any = js.native
   
-  /* private */ var _triggerSuspendedState: js.Any = js.native
+  /* private */ var _triggerRunningState: Any = js.native
   
-  /* private */ var _tryToRun: js.Any = js.native
+  /* private */ var _triggerSuspendedState: Any = js.native
+  
+  /* private */ var _tryToRun: Any = js.native
   
   /**
     * Gets the current AudioContext if available.

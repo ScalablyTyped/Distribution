@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "Axes")
 @js.native
-class Axes () extends StObject
+open class Axes () extends StObject
 /* static members */
 object Axes {
   
@@ -17,8 +17,8 @@ object Axes {
   /**
     * Creates a new set of axes from the given vertices.
     * @method fromVertices
-    * @param {vertices} vertices
-    * @return {axes} A new axes from the given vertices
+    * @param {Vertices} vertices
+    * @returns {axes} A new axes from the given vertices
     */
   inline def fromVertices(vertices: js.Array[Vector]): js.Array[Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector]]
   

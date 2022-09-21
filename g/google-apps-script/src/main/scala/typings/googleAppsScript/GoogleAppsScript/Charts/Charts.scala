@@ -39,19 +39,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Charts extends StObject {
   
-  var ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ js.Any
+  var ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ Any
   
-  var ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ js.Any
+  var ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ Any
   
-  var ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any
+  var ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ Any
   
-  var ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ js.Any
+  var ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ Any
   
-  var CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ js.Any
+  var CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ Any
   
-  var PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any
+  var PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ Any
   
-  var Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any
+  var Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ Any
   
   def newAreaChart(): AreaChartBuilder
   
@@ -76,13 +76,13 @@ trait Charts extends StObject {
 object Charts {
   
   inline def apply(
-    ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ js.Any,
-    ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ js.Any,
-    ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any,
-    ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ js.Any,
-    CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ js.Any,
-    PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any,
-    Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any,
+    ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ Any,
+    ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ Any,
+    ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ Any,
+    ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ Any,
+    CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ Any,
+    PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ Any,
+    Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ Any,
     newAreaChart: () => AreaChartBuilder,
     newBarChart: () => BarChartBuilder,
     newColumnChart: () => ColumnChartBuilder,
@@ -101,18 +101,18 @@ object Charts {
   extension [Self <: typings.googleAppsScript.GoogleAppsScript.Charts.Charts](x: Self) {
     
     inline def setChartHiddenDimensionStrategy(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ js.Any
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ Any
     ): Self = StObject.set(x, "ChartHiddenDimensionStrategy", value.asInstanceOf[js.Any])
     
     inline def setChartMergeStrategy(
-      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ js.Any
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ Any
     ): Self = StObject.set(x, "ChartMergeStrategy", value.asInstanceOf[js.Any])
     
-    inline def setChartType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any): Self = StObject.set(x, "ChartType", value.asInstanceOf[js.Any])
+    inline def setChartType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ Any): Self = StObject.set(x, "ChartType", value.asInstanceOf[js.Any])
     
-    inline def setColumnType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ js.Any): Self = StObject.set(x, "ColumnType", value.asInstanceOf[js.Any])
+    inline def setColumnType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ Any): Self = StObject.set(x, "ColumnType", value.asInstanceOf[js.Any])
     
-    inline def setCurveStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ js.Any): Self = StObject.set(x, "CurveStyle", value.asInstanceOf[js.Any])
+    inline def setCurveStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ Any): Self = StObject.set(x, "CurveStyle", value.asInstanceOf[js.Any])
     
     inline def setNewAreaChart(value: () => AreaChartBuilder): Self = StObject.set(x, "newAreaChart", js.Any.fromFunction0(value))
     
@@ -134,8 +134,8 @@ object Charts {
     
     inline def setNewTextStyle(value: () => TextStyleBuilder): Self = StObject.set(x, "newTextStyle", js.Any.fromFunction0(value))
     
-    inline def setPointStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any): Self = StObject.set(x, "PointStyle", value.asInstanceOf[js.Any])
+    inline def setPointStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ Any): Self = StObject.set(x, "PointStyle", value.asInstanceOf[js.Any])
     
-    inline def setPosition(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ Any): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }

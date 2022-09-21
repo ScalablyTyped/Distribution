@@ -21,7 +21,7 @@ trait RecentFile extends StObject {
   
   def Open(): Workbook
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Path: String
 }
@@ -35,7 +35,7 @@ object RecentFile {
     Index: Double,
     Name: String,
     Open: () => Workbook,
-    Parent: js.Any,
+    Parent: Any,
     Path: String
   ): RecentFile = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Open = js.Any.fromFunction0(Open), Parent = Parent.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object RecentFile {
     
     inline def setOpen(value: () => Workbook): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }

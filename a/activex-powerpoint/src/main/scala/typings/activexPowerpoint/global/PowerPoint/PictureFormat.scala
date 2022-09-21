@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PictureFormat")
 @js.native
-/* private */ class PictureFormat ()
+/* private */ open class PictureFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PictureFormat {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var Brightness: Double = js.native
@@ -50,7 +50,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def IncrementContrast(Increment: Double): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.PictureFormat_typekey")

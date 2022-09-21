@@ -18,8 +18,6 @@ import typings.jupyterlabServices.messagesMod.IIsCompleteReplyOther
 import typings.jupyterlabServices.messagesMod.MessageType
 import typings.jupyterlabServices.messagesMod.ReplyContent
 import typings.luminoCoreutils.jsonMod.JSONObject
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Readonly<@jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IMessage<@jupyterlab/services.@jupyterlab/services/lib/kernel/messages.MessageType>> */
 trait ReadonlyIMessageMessageTy extends StObject {
   
-  val buffers: js.UndefOr[js.Array[ArrayBuffer | ArrayBufferView]] = js.undefined
+  val buffers: js.UndefOr[js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView]] = js.undefined
   
   val channel: Channel
   
@@ -58,11 +56,11 @@ object ReadonlyIMessageMessageTy {
   
   extension [Self <: ReadonlyIMessageMessageTy](x: Self) {
     
-    inline def setBuffers(value: js.Array[ArrayBuffer | ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
+    inline def setBuffers(value: js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     
     inline def setBuffersUndefined: Self = StObject.set(x, "buffers", js.undefined)
     
-    inline def setBuffersVarargs(value: (ArrayBuffer | ArrayBufferView)*): Self = StObject.set(x, "buffers", js.Array(value :_*))
+    inline def setBuffersVarargs(value: (js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView)*): Self = StObject.set(x, "buffers", js.Array(value*))
     
     inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

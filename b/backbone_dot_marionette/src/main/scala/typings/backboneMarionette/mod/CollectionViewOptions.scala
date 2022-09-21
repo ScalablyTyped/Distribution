@@ -6,13 +6,15 @@ import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
 import typings.backbone.mod.ObjectHash
 import typings.backboneMarionette.anon.TypeofView
+import typings.std.Element
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CollectionViewOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */, TCollection /* <: Collection[TModel] */]
+trait CollectionViewOptions[TModel /* <: Model[Any, ModelSetOptions, Any] */, TCollection /* <: Collection[TModel] */]
   extends StObject
-     with typings.backbone.mod.ViewOptions[TModel]
+     with typings.backbone.mod.ViewOptions[TModel, HTMLElement]
      with ViewMixinOptions {
   
   /**
@@ -21,8 +23,8 @@ trait CollectionViewOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Objec
   var childView: js.UndefOr[
     (js.Function1[
       /* model */ TModel, 
-      TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
-    ]) | (TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]]))
+      TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]])
+    ]) | (TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]]))
   ] = js.undefined
   
   /**
@@ -35,8 +37,8 @@ trait CollectionViewOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Objec
     */
   var emptyView: js.UndefOr[
     (js.Function0[
-      TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
-    ]) | (TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]]))
+      TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]])
+    ]) | (TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]]))
   ] = js.undefined
   
   /**
@@ -90,32 +92,34 @@ trait CollectionViewOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Objec
   var viewFilter: js.UndefOr[
     (js.Function3[
       /* view */ js.UndefOr[
-        TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
+        TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]])
       ], 
       /* index */ js.UndefOr[Double], 
-      /* children */ js.UndefOr[js.Array[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]]], 
+      /* children */ js.UndefOr[
+        js.Array[typings.backbone.mod.View[Model[Any, ModelSetOptions, Any], HTMLElement]]
+      ], 
       Boolean
     ]) | ObjectHash | String
   ] = js.undefined
 }
 object CollectionViewOptions {
   
-  inline def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */, TCollection /* <: Collection[TModel] */](): CollectionViewOptions[TModel, TCollection] = {
+  inline def apply[TModel /* <: Model[Any, ModelSetOptions, Any] */, TCollection /* <: Collection[TModel] */](): CollectionViewOptions[TModel, TCollection] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionViewOptions[TModel, TCollection]]
   }
   
-  extension [Self <: CollectionViewOptions[?, ?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */, TCollection /* <: Collection[TModel] */](x: Self & (CollectionViewOptions[TModel, TCollection])) {
+  extension [Self <: CollectionViewOptions[?, ?], TModel /* <: Model[Any, ModelSetOptions, Any] */, TCollection /* <: Collection[TModel] */](x: Self & (CollectionViewOptions[TModel, TCollection])) {
     
     inline def setChildView(
       value: (js.Function1[
           /* model */ TModel, 
-          TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
-        ]) | (TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]]))
+          TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]])
+        ]) | (TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]]))
     ): Self = StObject.set(x, "childView", value.asInstanceOf[js.Any])
     
     inline def setChildViewFunction1(
-      value: /* model */ TModel => TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
+      value: /* model */ TModel => TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]])
     ): Self = StObject.set(x, "childView", js.Any.fromFunction1(value))
     
     inline def setChildViewOptions(value: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel]): Self = StObject.set(x, "childViewOptions", value.asInstanceOf[js.Any])
@@ -128,12 +132,12 @@ object CollectionViewOptions {
     
     inline def setEmptyView(
       value: (js.Function0[
-          TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
-        ]) | (TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]]))
+          TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]])
+        ]) | (TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]]))
     ): Self = StObject.set(x, "emptyView", value.asInstanceOf[js.Any])
     
     inline def setEmptyViewFunction0(
-      value: () => TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
+      value: () => TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]])
     ): Self = StObject.set(x, "emptyView", js.Any.fromFunction0(value))
     
     inline def setEmptyViewOptions(value: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel]): Self = StObject.set(x, "emptyViewOptions", value.asInstanceOf[js.Any])
@@ -175,18 +179,22 @@ object CollectionViewOptions {
     inline def setViewFilter(
       value: (js.Function3[
           /* view */ js.UndefOr[
-            TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
+            TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]])
           ], 
           /* index */ js.UndefOr[Double], 
-          /* children */ js.UndefOr[js.Array[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]]], 
+          /* children */ js.UndefOr[
+            js.Array[typings.backbone.mod.View[Model[Any, ModelSetOptions, Any], HTMLElement]]
+          ], 
           Boolean
         ]) | ObjectHash | String
     ): Self = StObject.set(x, "viewFilter", value.asInstanceOf[js.Any])
     
     inline def setViewFilterFunction3(
       value: (/* view */ js.UndefOr[
-          TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
-        ], /* index */ js.UndefOr[Double], /* children */ js.UndefOr[js.Array[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]]]) => Boolean
+          TypeofView & (Instantiable0[typings.backbone.mod.View[js.UndefOr[Model[Any, ModelSetOptions, Any]], Element]])
+        ], /* index */ js.UndefOr[Double], /* children */ js.UndefOr[
+          js.Array[typings.backbone.mod.View[Model[Any, ModelSetOptions, Any], HTMLElement]]
+        ]) => Boolean
     ): Self = StObject.set(x, "viewFilter", js.Any.fromFunction3(value))
     
     inline def setViewFilterUndefined: Self = StObject.set(x, "viewFilter", js.undefined)

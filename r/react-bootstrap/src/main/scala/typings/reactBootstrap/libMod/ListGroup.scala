@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "ListGroup")
 @js.native
-class ListGroup () extends ^
+open class ListGroup () extends ^

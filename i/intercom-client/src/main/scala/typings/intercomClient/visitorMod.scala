@@ -22,7 +22,7 @@ object visitorMod {
     val created_at: Double
     
     // A list of segments the Visitor
-    var custom_attributes: StringDictionary[js.Any]
+    var custom_attributes: StringDictionary[Any]
     
     // value is 'visitor'
     val id: String
@@ -61,7 +61,7 @@ object visitorMod {
     inline def apply(
       avatar: Avatar,
       created_at: Double,
-      custom_attributes: StringDictionary[js.Any],
+      custom_attributes: StringDictionary[Any],
       id: String,
       location_data: LocationData | js.Object,
       segments: js.Array[Segment],
@@ -81,7 +81,7 @@ object visitorMod {
       
       inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      inline def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
+      inline def setCustom_attributes(value: StringDictionary[Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -97,15 +97,15 @@ object visitorMod {
       
       inline def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value*))
       
       inline def setSocial_profiles(value: js.Array[SocialProfile]): Self = StObject.set(x, "social_profiles", value.asInstanceOf[js.Any])
       
-      inline def setSocial_profilesVarargs(value: SocialProfile*): Self = StObject.set(x, "social_profiles", js.Array(value :_*))
+      inline def setSocial_profilesVarargs(value: SocialProfile*): Self = StObject.set(x, "social_profiles", js.Array(value*))
       
       inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setType(value: visitor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-window", "FixedSizeGrid")
 @js.native
-class FixedSizeGrid protected ()
-  extends Component[FixedSizeGridProps, js.Object, js.Any] {
-  def this(props: FixedSizeGridProps) = this()
+open class FixedSizeGrid[T] protected ()
+  extends Component[FixedSizeGridProps[T], js.Object, Any] {
+  def this(props: FixedSizeGridProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: FixedSizeGridProps, context: js.Any) = this()
+  def this(props: FixedSizeGridProps[T], context: Any) = this()
   
   /**
     * Scroll to the specified offsets.

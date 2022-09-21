@@ -13,23 +13,26 @@ trait Oauthtoken extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the parent channel. */
+  /** Required. The ID of the advertiser the line item belongs to. */
   var advertiserId: String
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
+  /** Required. An identifier unique to the targeting type in this line item that identifies the assigned targeting option being requested. */
+  var assignedTargetingOptionId: String
+  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
-  
-  /** Required. The ID of the parent channel to which the sites belong. */
-  var channelId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
+  
+  /** Required. The ID of the line item the assigned targeting option belongs to. */
+  var lineItemId: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -40,6 +43,9 @@ trait Oauthtoken extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Required. Identifies the type of this assigned targeting option. */
+  var targetingType: String
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -48,8 +54,8 @@ trait Oauthtoken extends StObject {
 }
 object Oauthtoken {
   
-  inline def apply(advertiserId: String, channelId: String): Oauthtoken = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, assignedTargetingOptionId: String, lineItemId: String, targetingType: String): Oauthtoken = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], assignedTargetingOptionId = assignedTargetingOptionId.asInstanceOf[js.Any], lineItemId = lineItemId.asInstanceOf[js.Any], targetingType = targetingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Oauthtoken]
   }
   
@@ -69,11 +75,11 @@ object Oauthtoken {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
+    inline def setAssignedTargetingOptionId(value: String): Self = StObject.set(x, "assignedTargetingOptionId", value.asInstanceOf[js.Any])
+    
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
-    
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -82,6 +88,8 @@ object Oauthtoken {
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -94,6 +102,8 @@ object Oauthtoken {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

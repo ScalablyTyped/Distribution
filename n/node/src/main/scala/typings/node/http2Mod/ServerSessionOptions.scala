@@ -2,9 +2,9 @@ package typings.node.http2Mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable4
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
-import typings.node.netMod.Socket
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.node.streamMod.ReadableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,12 @@ trait ServerSessionOptions
   
   var Http1IncomingMessage: js.UndefOr[Instantiable1[/* socket */ Socket, IncomingMessage]] = js.undefined
   
-  var Http1ServerResponse: js.UndefOr[Instantiable1[/* req */ IncomingMessage, ServerResponse]] = js.undefined
+  var Http1ServerResponse: js.UndefOr[
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[typings.node.httpMod.IncomingMessage]
+    ]
+  ] = js.undefined
   
   var Http2ServerRequest: js.UndefOr[
     Instantiable4[
@@ -45,7 +50,12 @@ object ServerSessionOptions {
     
     inline def setHttp1IncomingMessageUndefined: Self = StObject.set(x, "Http1IncomingMessage", js.undefined)
     
-    inline def setHttp1ServerResponse(value: Instantiable1[/* req */ IncomingMessage, ServerResponse]): Self = StObject.set(x, "Http1ServerResponse", value.asInstanceOf[js.Any])
+    inline def setHttp1ServerResponse(
+      value: Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[typings.node.httpMod.IncomingMessage]
+        ]
+    ): Self = StObject.set(x, "Http1ServerResponse", value.asInstanceOf[js.Any])
     
     inline def setHttp1ServerResponseUndefined: Self = StObject.set(x, "Http1ServerResponse", js.undefined)
     

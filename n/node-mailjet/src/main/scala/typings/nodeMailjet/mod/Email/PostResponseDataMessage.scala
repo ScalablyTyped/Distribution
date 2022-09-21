@@ -33,11 +33,11 @@ object PostResponseDataMessage {
     
     inline def setBcc(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
     
-    inline def setBccVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "Bcc", js.Array(value :_*))
+    inline def setBccVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "Bcc", js.Array(value*))
     
     inline def setCc(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
     
-    inline def setCcVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "Cc", js.Array(value :_*))
+    inline def setCcVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "Cc", js.Array(value*))
     
     inline def setCustomID(value: String): Self = StObject.set(x, "CustomID", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object PostResponseDataMessage {
     
     inline def setTo(value: js.Array[PostResponseDataTo]): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    inline def setToVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "To", js.Array(value :_*))
+    inline def setToVarargs(value: PostResponseDataTo*): Self = StObject.set(x, "To", js.Array(value*))
   }
 }

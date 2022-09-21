@@ -19,7 +19,7 @@ trait ChangeSetSummary extends StObject {
   /**
     * The start time when the change set was created, in UTC.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.cloudformationMod.CreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Descriptive information about the change set.
@@ -27,7 +27,7 @@ trait ChangeSetSummary extends StObject {
   var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
-    * If the change set execution status is AVAILABLE, you can execute the change set. If you can’t execute the change set, the status indicates why. For example, a change set might be in an UNAVAILABLE state because AWS CloudFormation is still creating it or in an OBSOLETE state because the stack was already updated.
+    * If the change set execution status is AVAILABLE, you can execute the change set. If you can't execute the change set, the status indicates why. For example, a change set might be in an UNAVAILABLE state because CloudFormation is still creating it or in an OBSOLETE state because the stack was already updated.
     */
   var ExecutionStatus: js.UndefOr[typings.awsSdk.cloudformationMod.ExecutionStatus] = js.undefined
   
@@ -62,7 +62,7 @@ trait ChangeSetSummary extends StObject {
   var Status: js.UndefOr[ChangeSetStatus] = js.undefined
   
   /**
-    * A description of the change set's status. For example, if your change set is in the FAILED state, AWS CloudFormation shows the error message.
+    * A description of the change set's status. For example, if your change set is in the FAILED state, CloudFormation shows the error message.
     */
   var StatusReason: js.UndefOr[ChangeSetStatusReason] = js.undefined
 }
@@ -83,7 +83,7 @@ object ChangeSetSummary {
     
     inline def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

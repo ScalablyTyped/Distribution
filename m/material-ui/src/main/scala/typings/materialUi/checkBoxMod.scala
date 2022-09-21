@@ -10,10 +10,10 @@ object checkBoxMod {
   
   @JSImport("material-ui/svg-icons/toggle/check-box", JSImport.Default)
   @js.native
-  class default () extends ToggleCheckBox
+  open class default () extends ToggleCheckBox
   
   @JSImport("material-ui/svg-icons/toggle/check-box", "ToggleCheckBox")
   @js.native
-  class ToggleCheckBox ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ToggleCheckBox ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

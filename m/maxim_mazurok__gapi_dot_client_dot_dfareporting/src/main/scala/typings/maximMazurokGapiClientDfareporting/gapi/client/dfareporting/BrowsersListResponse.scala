@@ -25,7 +25,7 @@ object BrowsersListResponse {
     
     inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
     
-    inline def setBrowsersVarargs(value: Browser*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+    inline def setBrowsersVarargs(value: Browser*): Self = StObject.set(x, "browsers", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

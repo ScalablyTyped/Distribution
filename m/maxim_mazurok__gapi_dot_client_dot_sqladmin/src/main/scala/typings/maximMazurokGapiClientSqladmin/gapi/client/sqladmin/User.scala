@@ -6,29 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait User extends StObject {
   
+  /** Dual password status for the user. */
+  var dualPasswordType: js.UndefOr[String] = js.undefined
+  
   /** This field is deprecated and will be removed from a future version of the API. */
   var etag: js.UndefOr[String] = js.undefined
   
   /**
-    * The host name from which the user can connect. For *insert* operations, host defaults to an empty string. For *update* operations, host is specified as part of the request URL. The
-    * host name cannot be updated after insertion.
+    * Optional. The host from which the user can connect. For `insert` operations, host defaults to an empty string. For `update` operations, host is specified as part of the request URL.
+    * The host name cannot be updated after insertion. For a MySQL instance, it's required; for a PostgreSQL or SQL Server instance, it's optional.
     */
   var host: js.UndefOr[String] = js.undefined
   
-  /** The name of the Cloud SQL instance. This does not include the project ID. Can be omitted for *update* since it is already specified on the URL. */
+  /** The name of the Cloud SQL instance. This does not include the project ID. Can be omitted for `update` because it is already specified on the URL. */
   var instance: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#user*. */
+  /** This is always `sql#user`. */
   var kind: js.UndefOr[String] = js.undefined
   
-  /** The name of the user in the Cloud SQL instance. Can be omitted for *update* since it is already specified in the URL. */
+  /** The name of the user in the Cloud SQL instance. Can be omitted for `update` because it is already specified in the URL. */
   var name: js.UndefOr[String] = js.undefined
   
   /** The password for the user. */
   var password: js.UndefOr[String] = js.undefined
   
+  /** User level password validation policy. */
+  var passwordPolicy: js.UndefOr[UserPasswordValidationPolicy] = js.undefined
+  
   /**
-    * The project ID of the project containing the Cloud SQL database. The Google apps domain is prefixed if applicable. Can be omitted for *update* since it is already specified on the
+    * The project ID of the project containing the Cloud SQL database. The Google apps domain is prefixed if applicable. Can be omitted for `update` because it is already specified on the
     * URL.
     */
   var project: js.UndefOr[String] = js.undefined
@@ -46,6 +52,10 @@ object User {
   }
   
   extension [Self <: User](x: Self) {
+    
+    inline def setDualPasswordType(value: String): Self = StObject.set(x, "dualPasswordType", value.asInstanceOf[js.Any])
+    
+    inline def setDualPasswordTypeUndefined: Self = StObject.set(x, "dualPasswordType", js.undefined)
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
@@ -68,6 +78,10 @@ object User {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordPolicy(value: UserPasswordValidationPolicy): Self = StObject.set(x, "passwordPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordPolicyUndefined: Self = StObject.set(x, "passwordPolicy", js.undefined)
     
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     

@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SmartMappingSliderViewModelConstructor
   extends StObject
-     with Instantiable0[SmartMappingSliderViewModel]
+     with /**
+  * Provides the shared base logic for the smart mapping slider view models.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html)
+  */
+Instantiable0[SmartMappingSliderViewModel]
      with Instantiable1[
       /* properties */ SmartMappingSliderViewModelProperties, 
       SmartMappingSliderViewModel

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceUsage extends StObject {
   
   /**
-    * The ID of the AWS account that is making use of the Capacity Reservation.
+    * The ID of the Amazon Web Services account that is making use of the Capacity Reservation.
     */
   var AccountId: js.UndefOr[String] = js.undefined
   
   /**
-    * The number of instances the AWS account currently has in the Capacity Reservation.
+    * The number of instances the Amazon Web Services account currently has in the Capacity Reservation.
     */
   var UsedInstanceCount: js.UndefOr[Integer] = js.undefined
 }

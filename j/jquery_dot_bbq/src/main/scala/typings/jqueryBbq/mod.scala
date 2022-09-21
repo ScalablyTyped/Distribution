@@ -16,27 +16,27 @@ object mod {
     trait JQuery extends StObject {
       
       def fragment(): JQuery = js.native
-      def fragment(attr: js.Any): JQuery = js.native
-      def fragment(attr: js.Any, params: js.Any): JQuery = js.native
-      def fragment(attr: js.Any, params: js.Any, merge_mode: Double): JQuery = js.native
-      def fragment(attr: js.Any, params: Unit, merge_mode: Double): JQuery = js.native
-      def fragment(attr: Unit, params: js.Any): JQuery = js.native
-      def fragment(attr: Unit, params: js.Any, merge_mode: Double): JQuery = js.native
+      def fragment(attr: Any): JQuery = js.native
+      def fragment(attr: Any, params: Any): JQuery = js.native
+      def fragment(attr: Any, params: Any, merge_mode: Double): JQuery = js.native
+      def fragment(attr: Any, params: Unit, merge_mode: Double): JQuery = js.native
+      def fragment(attr: Unit, params: Any): JQuery = js.native
+      def fragment(attr: Unit, params: Any, merge_mode: Double): JQuery = js.native
       def fragment(attr: Unit, params: Unit, merge_mode: Double): JQuery = js.native
       
       def hashchange(): JQuery = js.native
-      def hashchange(eventData: js.Any): JQuery = js.native
-      def hashchange(eventData: js.Any, handler: js.Function1[/* eventObject */ EventObject, js.Any]): JQuery = js.native
-      def hashchange(eventData: Unit, handler: js.Function1[/* eventObject */ EventObject, js.Any]): JQuery = js.native
-      def hashchange(handler: js.Function1[/* eventObject */ EventObject, js.Any]): JQuery = js.native
+      def hashchange(eventData: Any): JQuery = js.native
+      def hashchange(eventData: Any, handler: js.Function1[/* eventObject */ EventObject, Any]): JQuery = js.native
+      def hashchange(eventData: Unit, handler: js.Function1[/* eventObject */ EventObject, Any]): JQuery = js.native
+      def hashchange(handler: js.Function1[/* eventObject */ EventObject, Any]): JQuery = js.native
       
       def querystring(): JQuery = js.native
-      def querystring(attr: js.Any): JQuery = js.native
-      def querystring(attr: js.Any, params: js.Any): JQuery = js.native
-      def querystring(attr: js.Any, params: js.Any, merge_mode: Double): JQuery = js.native
-      def querystring(attr: js.Any, params: Unit, merge_mode: Double): JQuery = js.native
-      def querystring(attr: Unit, params: js.Any): JQuery = js.native
-      def querystring(attr: Unit, params: js.Any, merge_mode: Double): JQuery = js.native
+      def querystring(attr: Any): JQuery = js.native
+      def querystring(attr: Any, params: Any): JQuery = js.native
+      def querystring(attr: Any, params: Any, merge_mode: Double): JQuery = js.native
+      def querystring(attr: Any, params: Unit, merge_mode: Double): JQuery = js.native
+      def querystring(attr: Unit, params: Any): JQuery = js.native
+      def querystring(attr: Unit, params: Any, merge_mode: Double): JQuery = js.native
       def querystring(attr: Unit, params: Unit, merge_mode: Double): JQuery = js.native
     }
     
@@ -49,10 +49,10 @@ object mod {
         
         var fragment: String = js.native
         
-        def getState(): js.Any = js.native
-        def getState(key: String): js.Any = js.native
-        def getState(key: String, coerce: Boolean): js.Any = js.native
-        def getState(key: Unit, coerce: Boolean): js.Any = js.native
+        def getState(): Any = js.native
+        def getState(key: String): Any = js.native
+        def getState(key: String, coerce: Boolean): Any = js.native
+        def getState(key: Unit, coerce: Boolean): Any = js.native
       }
       
       @js.native
@@ -67,11 +67,11 @@ object mod {
           * @name key An optional state key for which to return a value.
           * @name coerce If true, coerces any numbers or true, false, null, and undefined to their actual value. Defaults to false
           */
-        def getState(): js.Any = js.native
-        def getState(coerce: Boolean): js.Any = js.native
-        def getState(key: String): js.Any = js.native
-        def getState(key: String, coerce: Boolean): js.Any = js.native
-        def getState(key: Unit, coerce: Boolean): js.Any = js.native
+        def getState(): Any = js.native
+        def getState(coerce: Boolean): Any = js.native
+        def getState(key: String): Any = js.native
+        def getState(key: String, coerce: Boolean): Any = js.native
+        def getState(key: Unit, coerce: Boolean): Any = js.native
         
         /**
           * Adds a 'state' into the browser history at the current position, setting
@@ -84,8 +84,8 @@ object mod {
         def pushState(): Unit = js.native
         def pushState(params: String): Unit = js.native
         def pushState(params: String, merge_mode: Double): Unit = js.native
-        def pushState(params: js.Any): Unit = js.native
-        def pushState(params: js.Any, merge_mode: Double): Unit = js.native
+        def pushState(params: Any): Unit = js.native
+        def pushState(params: Any, merge_mode: Double): Unit = js.native
         def pushState(params: Unit, merge_mode: Double): Unit = js.native
         
         /**
@@ -96,7 +96,7 @@ object mod {
           *
           * @name key One or more key values to remove from the current state.
           */
-        def removeState(key: js.Any*): Unit = js.native
+        def removeState(key: Any*): Unit = js.native
       }
       
       @js.native
@@ -110,8 +110,8 @@ object mod {
           * @name params A params string to be parsed.
           * @name coerce If true, coerces any numbers or true, false, null, and undefined to their actual value. Defaults to false if omitted.
           */
-        def apply(params: String): js.Any = js.native
-        def apply(params: String, coerce: Boolean): js.Any = js.native
+        def apply(params: String): Any = js.native
+        def apply(params: String, coerce: Boolean): Any = js.native
         
         /**
           * Parse the fragment (hash) from a URL or the current window.location.href,
@@ -121,10 +121,10 @@ object mod {
           * @name url An optional params string or URL containing fragment (hash) params to be parsed. If url is omitted, the current window.location.href is used.
           * @name coerce If true, coerces any numbers or true, false, null, and undefined to their actual value. Defaults to false if omitted.
           */
-        def fragment(): js.Any = js.native
-        def fragment(url: String): js.Any = js.native
-        def fragment(url: String, coerce: Boolean): js.Any = js.native
-        def fragment(url: Unit, coerce: Boolean): js.Any = js.native
+        def fragment(): Any = js.native
+        def fragment(url: String): Any = js.native
+        def fragment(url: String, coerce: Boolean): Any = js.native
+        def fragment(url: Unit, coerce: Boolean): Any = js.native
         
         /**
           * Parse the query string from a URL or the current window.location.href,
@@ -134,10 +134,10 @@ object mod {
           * @name url An optional params string or URL containing query string params to be parsed. If url is omitted, the current window.location.href is used.
           * @name coerce If true, coerces any numbers or true, false, null, and undefined to their actual value. Defaults to false if omitted.
           */
-        def querystring(): js.Any = js.native
-        def querystring(url: String): js.Any = js.native
-        def querystring(url: String, coerce: Boolean): js.Any = js.native
-        def querystring(url: Unit, coerce: Boolean): js.Any = js.native
+        def querystring(): Any = js.native
+        def querystring(url: String): Any = js.native
+        def querystring(url: String, coerce: Boolean): Any = js.native
+        def querystring(url: Unit, coerce: Boolean): Any = js.native
       }
       
       @js.native
@@ -145,8 +145,8 @@ object mod {
         
         def apply(): String = js.native
         def apply(url: String): String = js.native
-        def apply(url: String, params: js.Any): String = js.native
-        def apply(url: String, params: js.Any, merge_mode: Double): String = js.native
+        def apply(url: String, params: Any): String = js.native
+        def apply(url: String, params: Any, merge_mode: Double): String = js.native
         
         /**
           * TODO: DESCRIBE
@@ -175,8 +175,8 @@ object mod {
       
       def fragment(): String = js.native
       def fragment(url: String): String = js.native
-      def fragment(url: String, params: js.Any): String = js.native
-      def fragment(url: String, params: js.Any, merge_mode: Double): String = js.native
+      def fragment(url: String, params: Any): String = js.native
+      def fragment(url: String, params: Any, merge_mode: Double): String = js.native
       @JSName("fragment")
       var fragment_Original: ParamFragment = js.native
       
@@ -191,13 +191,13 @@ object mod {
         */
       def querystring(): String = js.native
       def querystring(url: String): String = js.native
-      def querystring(url: String, coerce: js.Any): String = js.native
-      def querystring(url: String, coerce: js.Any, merge_mode: Double): String = js.native
+      def querystring(url: String, coerce: Any): String = js.native
+      def querystring(url: String, coerce: Any, merge_mode: Double): String = js.native
       def querystring(url: String, coerce: Boolean): String = js.native
       def querystring(url: String, coerce: Boolean, merge_mode: Double): String = js.native
       def querystring(url: String, coerce: Unit, merge_mode: Double): String = js.native
-      def querystring(url: Unit, coerce: js.Any): String = js.native
-      def querystring(url: Unit, coerce: js.Any, merge_mode: Double): String = js.native
+      def querystring(url: Unit, coerce: Any): String = js.native
+      def querystring(url: Unit, coerce: Any, merge_mode: Double): String = js.native
       def querystring(url: Unit, coerce: Boolean): String = js.native
       def querystring(url: Unit, coerce: Boolean, merge_mode: Double): String = js.native
       def querystring(url: Unit, coerce: Unit, merge_mode: Double): String = js.native
@@ -210,8 +210,8 @@ object mod {
         * @name obj An object to be serialized.
         * @name traditional Params deep/shallow serialization mode. See the documentation at http://api.jquery.com/jQuery.param/ for more detail.
         */
-      def sorted(obj: js.Any): String = js.native
-      def sorted(obj: js.Any, traditional: Boolean): String = js.native
+      def sorted(obj: Any): String = js.native
+      def sorted(obj: Any, traditional: Boolean): String = js.native
     }
     
     @js.native
@@ -227,8 +227,8 @@ object mod {
         * @name params A params string to be parsed.
         * @name coerce If true, coerces any numbers or true, false, null, and undefined to their actual value. Defaults to false if omitted.
         */
-      def deparam(params: String): js.Any = js.native
-      def deparam(params: String, coerce: Boolean): js.Any = js.native
+      def deparam(params: String): Any = js.native
+      def deparam(params: String, coerce: Boolean): Any = js.native
       @JSName("deparam")
       var deparam_Original: JQueryDeparam = js.native
       
@@ -238,8 +238,8 @@ object mod {
         *
         * @name tag_attr An object containing a list of tag names and their associated default attribute names in the format { tag: 'attr', ... } to be merged into the internal tag-attribute list.
         */
-      def elemUrlAttr(): js.Any = js.native
-      def elemUrlAttr(tag_attr: js.Any): js.Any = js.native
+      def elemUrlAttr(): Any = js.native
+      def elemUrlAttr(tag_attr: Any): Any = js.native
     }
   }
 }

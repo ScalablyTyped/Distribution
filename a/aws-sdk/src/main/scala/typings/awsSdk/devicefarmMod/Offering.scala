@@ -56,7 +56,7 @@ object Offering {
     
     inline def setRecurringChargesUndefined: Self = StObject.set(x, "recurringCharges", js.undefined)
     
-    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "recurringCharges", js.Array(value :_*))
+    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "recurringCharges", js.Array(value*))
     
     inline def setType(value: OfferingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

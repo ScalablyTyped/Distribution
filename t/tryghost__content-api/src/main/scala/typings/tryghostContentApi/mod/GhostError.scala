@@ -20,6 +20,6 @@ object GhostError {
     
     inline def setErrors(value: js.Array[ErrorType]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: ErrorType*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ErrorType*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

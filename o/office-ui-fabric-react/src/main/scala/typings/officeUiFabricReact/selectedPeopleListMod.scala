@@ -17,22 +17,22 @@ object selectedPeopleListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/SelectedPeopleList/SelectedPeopleList", "BasePeopleSelectedItemsList")
   @js.native
-  class BasePeopleSelectedItemsList protected () extends BaseSelectedItemsList[IExtendedPersonaProps, ISelectedPeopleProps] {
+  open class BasePeopleSelectedItemsList protected () extends BaseSelectedItemsList[IExtendedPersonaProps, ISelectedPeopleProps] {
     def this(basePickerProps: ISelectedPeopleProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/SelectedPeopleList/SelectedPeopleList", "SelectedPeopleList")
   @js.native
-  class SelectedPeopleList protected () extends BasePeopleSelectedItemsList {
+  open class SelectedPeopleList protected () extends BasePeopleSelectedItemsList {
     def this(basePickerProps: ISelectedPeopleProps) = this()
     
-    /* private */ var _beginEditing: js.Any = js.native
+    /* private */ var _beginEditing: Any = js.native
     
-    /* private */ var _completeEditing: js.Any = js.native
+    /* private */ var _completeEditing: Any = js.native
     
-    /* private */ var _createMenuItems: js.Any = js.native
+    /* private */ var _createMenuItems: Any = js.native
     
-    /* private */ var _renderItem: js.Any = js.native
+    /* private */ var _renderItem: Any = js.native
   }
   /* static members */
   object SelectedPeopleList {
@@ -43,8 +43,8 @@ object selectedPeopleListMod {
     
     @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/SelectedPeopleList/SelectedPeopleList", "SelectedPeopleList.defaultProps")
     @js.native
-    def defaultProps: js.Any = js.native
-    inline def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Any = js.native
+    inline def defaultProps_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IExtendedPersonaProps

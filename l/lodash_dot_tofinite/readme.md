@@ -10,10 +10,10 @@ The lodash method `_.toFinite` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.tofinite |
 | Keywords           | lodash-modularized, tofinite |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 11855 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 289.6666666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

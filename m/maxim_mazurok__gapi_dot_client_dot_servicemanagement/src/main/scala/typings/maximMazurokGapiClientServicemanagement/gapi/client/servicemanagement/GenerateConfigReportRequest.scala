@@ -14,7 +14,7 @@ trait GenerateConfigReportRequest extends StObject {
   var newConfig: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -24,7 +24,7 @@ trait GenerateConfigReportRequest extends StObject {
   var oldConfig: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[Any]
   ] = js.undefined
 }
 object GenerateConfigReportRequest {
@@ -39,7 +39,7 @@ object GenerateConfigReportRequest {
     inline def setNewConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[Any]
     ): Self = StObject.set(x, "newConfig", value.asInstanceOf[js.Any])
     
     inline def setNewConfigUndefined: Self = StObject.set(x, "newConfig", js.undefined)
@@ -47,7 +47,7 @@ object GenerateConfigReportRequest {
     inline def setOldConfig(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.GenerateConfigReportRequest & TopLevel[Any]
     ): Self = StObject.set(x, "oldConfig", value.asInstanceOf[js.Any])
     
     inline def setOldConfigUndefined: Self = StObject.set(x, "oldConfig", js.undefined)

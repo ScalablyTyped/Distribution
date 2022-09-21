@@ -11,7 +11,7 @@ object mouseMod {
   
   @JSImport("guacamole-client/lib/Mouse", "Mouse")
   @js.native
-  class Mouse protected () extends StObject {
+  open class Mouse protected () extends StObject {
     /**
       * @param element The Element to use to provide mouse events.
       */
@@ -64,7 +64,7 @@ object mouseMod {
     
     @JSImport("guacamole-client/lib/Mouse", "Mouse.GuacTouchDevice")
     @js.native
-    class GuacTouchDevice protected () extends StObject {
+    open class GuacTouchDevice protected () extends StObject {
       /**
         * @param element The Element to use to provide touch events.
         */
@@ -126,7 +126,7 @@ object mouseMod {
     
     @JSImport("guacamole-client/lib/Mouse", "Mouse.State")
     @js.native
-    class State protected () extends StObject {
+    open class State protected () extends StObject {
       /**
         * @param x The X position of the mouse pointer in pixels.
         * @param y The Y position of the mouse pointer in pixels.
@@ -193,7 +193,7 @@ object mouseMod {
     
     @JSImport("guacamole-client/lib/Mouse", "Mouse.Touchpad")
     @js.native
-    class Touchpad protected () extends GuacTouchDevice {
+    open class Touchpad protected () extends GuacTouchDevice {
       /**
         * @param element The Element to use to provide touch events.
         */
@@ -202,7 +202,7 @@ object mouseMod {
     
     @JSImport("guacamole-client/lib/Mouse", "Mouse.Touchscreen")
     @js.native
-    class Touchscreen protected () extends GuacTouchDevice {
+    open class Touchscreen protected () extends GuacTouchDevice {
       /**
         * @param element The Element to use to provide touch events.
         */

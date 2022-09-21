@@ -24,11 +24,11 @@ trait JsonPatchOperation extends StObject {
   /**
     * The value for the operation. This is either a primitive or a JToken.
     */
-  var value: js.Any
+  var value: Any
 }
 object JsonPatchOperation {
   
-  inline def apply(from: String, op: Operation, path: String, value: js.Any): JsonPatchOperation = {
+  inline def apply(from: String, op: Operation, path: String, value: Any): JsonPatchOperation = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonPatchOperation]
   }
@@ -41,6 +41,6 @@ object JsonPatchOperation {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

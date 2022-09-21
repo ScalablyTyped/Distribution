@@ -13,10 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Transition")
 @js.native
-class Transition protected ()
-  extends Component[TransitionProps, ComponentState, js.Any] {
+open class Transition protected () extends Component[TransitionProps, ComponentState, Any] {
   def this(props: TransitionProps) = this()
-  def this(props: TransitionProps, context: js.Any) = this()
+  def this(props: TransitionProps, context: Any) = this()
 }
 object Transition extends Shortcut {
   
@@ -27,10 +26,9 @@ object Transition extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react", "Transition.Group")
   @js.native
-  class Group protected ()
-    extends Component[TransitionGroupProps, ComponentState, js.Any] {
+  open class Group protected () extends Component[TransitionGroupProps, ComponentState, Any] {
     def this(props: TransitionGroupProps) = this()
-    def this(props: TransitionGroupProps, context: js.Any) = this()
+    def this(props: TransitionGroupProps, context: Any) = this()
   }
   
   type _To = TransitionComponent

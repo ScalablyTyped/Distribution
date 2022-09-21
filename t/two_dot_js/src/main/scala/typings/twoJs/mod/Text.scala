@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "Text")
 @js.native
-class Text protected ()
+open class Text protected ()
   extends StObject
      with Object {
   def this(message: String, x: Double, y: Double) = this()
-  def this(message: String, x: Double, y: Double, styles: js.Any) = this()
+  def this(message: String, x: Double, y: Double, styles: Any) = this()
   
   var alignment: String = js.native
   
@@ -60,5 +60,5 @@ object Text {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def MakeObservable(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def MakeObservable(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

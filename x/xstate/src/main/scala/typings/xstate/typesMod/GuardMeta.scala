@@ -1,6 +1,5 @@
 package typings.xstate.typesMod
 
-import typings.xstate.anon.ContextTContext
 import typings.xstate.stateMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +16,7 @@ object GuardMeta {
   inline def apply[TContext, TEvent /* <: EventObject */](
     _event: typings.xstate.typesMod.SCXML.Event[TEvent],
     cond: Guard[TContext, TEvent],
-    state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
+    state: State[TContext, TEvent, Any, Any, Any]
   ): GuardMeta[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any], cond = cond.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[GuardMeta[TContext, TEvent]]

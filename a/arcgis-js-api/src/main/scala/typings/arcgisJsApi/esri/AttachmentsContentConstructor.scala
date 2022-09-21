@@ -17,5 +17,5 @@ trait AttachmentsContentConstructor
 Instantiable0[AttachmentsContent]
      with Instantiable1[/* properties */ AttachmentsContentProperties, AttachmentsContent] {
   
-  def fromJSON(json: js.Any): AttachmentsContent = js.native
+  def fromJSON(json: Any): AttachmentsContent = js.native
 }

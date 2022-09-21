@@ -31,7 +31,7 @@ object ElevationResponse {
     
     inline def setResults(value: js.Array[ElevationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: ElevationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: ElevationResult*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setStatus(value: ElevationResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

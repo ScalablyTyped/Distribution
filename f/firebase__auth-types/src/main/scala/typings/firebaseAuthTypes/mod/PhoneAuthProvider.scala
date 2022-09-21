@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "PhoneAuthProvider")
 @js.native
-class PhoneAuthProvider () extends PhoneAuthProviderInstance {
+open class PhoneAuthProvider () extends PhoneAuthProviderInstance {
   def this(auth: FirebaseAuth) = this()
 }
 /* static members */

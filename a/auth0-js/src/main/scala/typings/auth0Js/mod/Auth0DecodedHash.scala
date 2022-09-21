@@ -8,13 +8,13 @@ trait Auth0DecodedHash extends StObject {
   
   var accessToken: js.UndefOr[String] = js.undefined
   
-  var appState: js.UndefOr[js.Any] = js.undefined
+  var appState: js.UndefOr[Any] = js.undefined
   
   var expiresIn: js.UndefOr[Double] = js.undefined
   
   var idToken: js.UndefOr[String] = js.undefined
   
-  var idTokenPayload: js.UndefOr[js.Any] = js.undefined
+  var idTokenPayload: js.UndefOr[Any] = js.undefined
   
   var refreshToken: js.UndefOr[String] = js.undefined
   
@@ -37,7 +37,7 @@ object Auth0DecodedHash {
     
     inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    inline def setAppState(value: js.Any): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
+    inline def setAppState(value: Any): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
     
     inline def setAppStateUndefined: Self = StObject.set(x, "appState", js.undefined)
     
@@ -47,7 +47,7 @@ object Auth0DecodedHash {
     
     inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    inline def setIdTokenPayload(value: js.Any): Self = StObject.set(x, "idTokenPayload", value.asInstanceOf[js.Any])
+    inline def setIdTokenPayload(value: Any): Self = StObject.set(x, "idTokenPayload", value.asInstanceOf[js.Any])
     
     inline def setIdTokenPayloadUndefined: Self = StObject.set(x, "idTokenPayload", js.undefined)
     

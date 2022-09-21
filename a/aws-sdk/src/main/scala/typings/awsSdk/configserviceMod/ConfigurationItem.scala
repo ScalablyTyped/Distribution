@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfigurationItem extends StObject {
   
   /**
-    * The 12-digit AWS account ID associated with the resource.
+    * The 12-digit Amazon Web Services account ID associated with the resource.
     */
   var accountId: js.UndefOr[AccountId] = js.undefined
   
   /**
-    * accoun
+    * Amazon Resource Name (ARN) associated with the resource.
     */
   var arn: js.UndefOr[ARN] = js.undefined
   
@@ -34,7 +34,7 @@ trait ConfigurationItem extends StObject {
   /**
     * The time when the configuration recording was initiated.
     */
-  var configurationItemCaptureTime: js.UndefOr[ConfigurationItemCaptureTime] = js.undefined
+  var configurationItemCaptureTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Unique MD5 hash that represents the configuration item's state. You can use MD5 hash to compare the states of two or more configuration items that are associated with the same resource.
@@ -52,19 +52,19 @@ trait ConfigurationItem extends StObject {
   var configurationStateId: js.UndefOr[ConfigurationStateId] = js.undefined
   
   /**
-    * A list of CloudTrail event IDs. A populated field indicates that the current configuration was initiated by the events recorded in the CloudTrail log. For more information about CloudTrail, see What Is AWS CloudTrail. An empty field indicates that the current configuration was not initiated by any event. As of Version 1.3, the relatedEvents field is empty. You can access the LookupEvents API in the AWS CloudTrail API Reference to retrieve the events for the resource.
+    * A list of CloudTrail event IDs. A populated field indicates that the current configuration was initiated by the events recorded in the CloudTrail log. For more information about CloudTrail, see What Is CloudTrail. An empty field indicates that the current configuration was not initiated by any event. As of Version 1.3, the relatedEvents field is empty. You can access the LookupEvents API in the CloudTrail API Reference to retrieve the events for the resource.
     */
   var relatedEvents: js.UndefOr[RelatedEventList] = js.undefined
   
   /**
-    * A list of related AWS resources.
+    * A list of related Amazon Web Services resources.
     */
   var relationships: js.UndefOr[RelationshipList] = js.undefined
   
   /**
     * The time stamp when the resource was created.
     */
-  var resourceCreationTime: js.UndefOr[ResourceCreationTime] = js.undefined
+  var resourceCreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the resource (for example, sg-xxxxxx).
@@ -77,12 +77,12 @@ trait ConfigurationItem extends StObject {
   var resourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * The type of AWS resource.
+    * The type of Amazon Web Services resource.
     */
   var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
-    * Configuration attributes that AWS Config returns for certain resource types to supplement the information returned for the configuration parameter.
+    * Configuration attributes that Config returns for certain resource types to supplement the information returned for the configuration parameter.
     */
   var supplementaryConfiguration: js.UndefOr[SupplementaryConfiguration] = js.undefined
   
@@ -123,7 +123,7 @@ object ConfigurationItem {
     
     inline def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    inline def setConfigurationItemCaptureTime(value: ConfigurationItemCaptureTime): Self = StObject.set(x, "configurationItemCaptureTime", value.asInstanceOf[js.Any])
+    inline def setConfigurationItemCaptureTime(value: js.Date): Self = StObject.set(x, "configurationItemCaptureTime", value.asInstanceOf[js.Any])
     
     inline def setConfigurationItemCaptureTimeUndefined: Self = StObject.set(x, "configurationItemCaptureTime", js.undefined)
     
@@ -145,15 +145,15 @@ object ConfigurationItem {
     
     inline def setRelatedEventsUndefined: Self = StObject.set(x, "relatedEvents", js.undefined)
     
-    inline def setRelatedEventsVarargs(value: RelatedEvent*): Self = StObject.set(x, "relatedEvents", js.Array(value :_*))
+    inline def setRelatedEventsVarargs(value: RelatedEvent*): Self = StObject.set(x, "relatedEvents", js.Array(value*))
     
     inline def setRelationships(value: RelationshipList): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
     inline def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
-    inline def setRelationshipsVarargs(value: Relationship*): Self = StObject.set(x, "relationships", js.Array(value :_*))
+    inline def setRelationshipsVarargs(value: Relationship*): Self = StObject.set(x, "relationships", js.Array(value*))
     
-    inline def setResourceCreationTime(value: ResourceCreationTime): Self = StObject.set(x, "resourceCreationTime", value.asInstanceOf[js.Any])
+    inline def setResourceCreationTime(value: js.Date): Self = StObject.set(x, "resourceCreationTime", value.asInstanceOf[js.Any])
     
     inline def setResourceCreationTimeUndefined: Self = StObject.set(x, "resourceCreationTime", js.undefined)
     

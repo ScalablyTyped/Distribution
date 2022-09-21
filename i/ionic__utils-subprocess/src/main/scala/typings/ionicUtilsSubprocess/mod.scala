@@ -6,7 +6,6 @@ import typings.ionicUtilsSubprocess.anon.ReadonlySpawnOptions
 import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.SpawnOptions
 import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ object mod {
   
   @JSImport("@ionic/utils-subprocess", "Subprocess")
   @js.native
-  class Subprocess protected () extends StObject {
+  open class Subprocess protected () extends StObject {
     def this(name: String, args: js.Array[String]) = this()
     def this(name: String, args: js.Array[String], options: SubprocessOptions) = this()
     
@@ -63,20 +62,22 @@ object mod {
   
   @JSImport("@ionic/utils-subprocess", "SubprocessError")
   @js.native
-  class SubprocessError protected ()
+  open class SubprocessError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
     var code: js.UndefOr[/* "ERR_SUBPROCESS_COMMAND_NOT_FOUND" */ String] = js.native
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[js.Error] = js.native
     
     var exitCode: js.UndefOr[Double] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -90,7 +91,7 @@ object mod {
   
   @JSImport("@ionic/utils-subprocess", "TILDE_PATH_REGEX")
   @js.native
-  val TILDE_PATH_REGEX: RegExp = js.native
+  val TILDE_PATH_REGEX: js.RegExp = js.native
   
   inline def convertPATH(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPATH")().asInstanceOf[String]
   inline def convertPATH(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPATH")(path.asInstanceOf[js.Any]).asInstanceOf[String]

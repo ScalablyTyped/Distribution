@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait TestAttachment extends StObject {
   
   var comment: String
   
-  var createdDate: Date
+  var createdDate: js.Date
   
   var fileName: String
   
@@ -24,7 +23,7 @@ object TestAttachment {
   inline def apply(
     attachmentType: AttachmentType,
     comment: String,
-    createdDate: Date,
+    createdDate: js.Date,
     fileName: String,
     id: Double,
     url: String
@@ -39,7 +38,7 @@ object TestAttachment {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

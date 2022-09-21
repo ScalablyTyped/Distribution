@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait IConsensusSendToRequest extends StObject {
   var message: js.UndefOr[IConsensusPeerMessage | Null] = js.undefined
   
   /** ConsensusSendToRequest peerId */
-  var peerId: js.UndefOr[Uint8Array | Null] = js.undefined
+  var peerId: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
 }
 object IConsensusSendToRequest {
   
@@ -28,7 +27,7 @@ object IConsensusSendToRequest {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setPeerId(value: Uint8Array): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+    inline def setPeerId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     
     inline def setPeerIdNull: Self = StObject.set(x, "peerId", null)
     

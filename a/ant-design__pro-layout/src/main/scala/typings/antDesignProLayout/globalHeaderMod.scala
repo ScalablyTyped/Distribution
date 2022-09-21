@@ -1,18 +1,20 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
-import typings.antDesignProLayout.anon.DefaultOpenAll
+import typings.antDesignProLayout.anon.AutoClose
+import typings.antDesignProLayout.anon.AvatarPropstitleReactNode
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
+import typings.antDesignProLayout.antDesignProLayoutStrings.group
+import typings.antDesignProLayout.antDesignProLayoutStrings.light
 import typings.antDesignProLayout.antDesignProLayoutStrings.mix
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.side
+import typings.antDesignProLayout.antDesignProLayoutStrings.sub
 import typings.antDesignProLayout.antDesignProLayoutStrings.top
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
 import typings.antDesignProLayout.headerMod.HeaderViewProps
 import typings.antDesignProLayout.siderMenuSiderMenuMod.PrivateSiderMenuProps
 import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.antDesignProLayout.typingsMod.WithFalse
-import typings.antd.menuContextMod.MenuTheme
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.MouseEvent
@@ -23,20 +25,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object globalHeaderMod extends Shortcut {
+object globalHeaderMod {
   
-  @JSImport("@ant-design/pro-layout/lib/GlobalHeader", JSImport.Default)
+  @JSImport("@ant-design/pro-layout/es/components/GlobalHeader", "GlobalHeader")
   @js.native
-  val default: FC[GlobalHeaderProps & PrivateSiderMenuProps] = js.native
+  val GlobalHeader: FC[GlobalHeaderProps & PrivateSiderMenuProps] = js.native
   
-  /* Inlined parent std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.PureSettings> */
+  /* Inlined {  collapsed :boolean | undefined,   onCollapse :(collapsed : boolean): void | undefined,   isMobile :boolean | undefined,   logo :react.react.ReactNode | undefined,   menuRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/Header.HeaderViewProps, defaultDom : react.react.ReactNode): react.react.ReactNode> | undefined,   rightContentRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/Header.HeaderViewProps): react.react.ReactNode> | undefined,   className :string | undefined,   prefixCls :string | undefined,   menuData :std.Array<@ant-design/pro-layout.@ant-design/pro-layout.MenuDataItem> | undefined,   onMenuHeaderClick :(e : react.react.MouseEvent<std.HTMLDivElement, react.react.NativeMouseEvent>): void | undefined,   style :react.react.CSSProperties | undefined,   menuHeaderRender :@ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.SiderMenuProps['menuHeaderRender'] | undefined,   headerContentRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/Header.HeaderViewProps, defaultDom : react.react.ReactNode): react.react.ReactNode> | undefined,   collapsedButtonRender :@ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.SiderMenuProps['collapsedButtonRender'] | undefined,   splitMenus :boolean | undefined,   actionsRender :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<(props : @ant-design/pro-layout.@ant-design/pro-layout/es/components/Header.HeaderViewProps): std.Array<react.react.ReactNode>> | undefined,   avatarProps :@ant-design/pro-layout.@ant-design/pro-layout/es/typings.WithFalse<antd.antd.AvatarProps & {  title :react.react.ReactNode | undefined}> | undefined,   children :react.react.ReactNode | undefined} & std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.PureSettings> */
   trait GlobalHeaderProps extends StObject {
+    
+    /** Layout的操作功能列表，不同的 layout 会放到不同的位置 */
+    var actionsRender: js.UndefOr[WithFalse[js.Function1[/* props */ HeaderViewProps, js.Array[ReactNode]]]] = js.undefined
+    
+    /** 头像的设置 */
+    var avatarProps: js.UndefOr[WithFalse[AvatarPropstitleReactNode]] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
+    var collapsedButtonRender: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.SiderMenuProps['collapsedButtonRender'] */ js.Any
+      ] = js.undefined
+    
+    var colorPrimary: js.UndefOr[String] = js.undefined
     
     var colorWeak: js.UndefOr[Boolean] = js.undefined
     
@@ -46,9 +60,14 @@ object globalHeaderMod extends Shortcut {
     
     var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
-    var headerHeight: js.UndefOr[Double] = js.undefined
-    
-    var headerTheme: js.UndefOr[MenuTheme] = js.undefined
+    /**
+      * @name 顶部区域的渲染，包含内部的 menu
+      *
+      * @example headerContentRender={(props) => <div>管理控制台 </div>}
+      */
+    var headerContentRender: js.UndefOr[
+        WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
+      ] = js.undefined
     
     var iconfontUrl: js.UndefOr[String] = js.undefined
     
@@ -58,26 +77,25 @@ object globalHeaderMod extends Shortcut {
     
     var logo: js.UndefOr[ReactNode] = js.undefined
     
-    var menu: js.UndefOr[DefaultOpenAll] = js.undefined
+    var menu: js.UndefOr[AutoClose] = js.undefined
     
     var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
     
     var menuHeaderRender: js.UndefOr[
-        WithFalse[
-          js.Function3[
-            /* logo */ ReactNode, 
-            /* title */ ReactNode, 
-            /* props */ js.UndefOr[this.type], 
-            ReactNode
-          ]
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.SiderMenuProps['menuHeaderRender'] */ js.Any
       ] = js.undefined
     
+    /**
+      * @name 虽然叫menuRender，但是其实是整个 SiderMenu 面板的渲染函数
+      *
+      * @example 收起时完成不展示菜单 menuRender={(props,defaultDom)=> props.collapsed ? null : defaultDom}
+      * @example 不展示菜单 menuRender={false}
+      */
     var menuRender: js.UndefOr[
         WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
       ] = js.undefined
     
-    var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
+    var navTheme: js.UndefOr[realDark | light] = js.undefined
     
     var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
     
@@ -85,9 +103,15 @@ object globalHeaderMod extends Shortcut {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var primaryColor: js.UndefOr[String] = js.undefined
-    
+    /**
+      * @name 右侧顶部操作区域的渲染逻辑,一般会展示一个头像和一些操作
+      *
+      * @example 展示一个头像: rightRender={(props) => <Avatar shape="square" size="small" icon={<UserOutlined />} />}
+      * @example 展示一些操作: rightRender={(props) => [<Button type="primary">操作</Button>,<Button type="primary">管理控制台</Button>]}
+      */
     var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ HeaderViewProps, ReactNode]]] = js.undefined
+    
+    var siderMenuType: js.UndefOr[sub | group] = js.undefined
     
     var splitMenus: js.UndefOr[Boolean] = js.undefined
     
@@ -104,19 +128,37 @@ object globalHeaderMod extends Shortcut {
     
     extension [Self <: GlobalHeaderProps](x: Self) {
       
+      inline def setActionsRender(value: WithFalse[js.Function1[/* props */ HeaderViewProps, js.Array[ReactNode]]]): Self = StObject.set(x, "actionsRender", value.asInstanceOf[js.Any])
+      
+      inline def setActionsRenderFunction1(value: /* props */ HeaderViewProps => js.Array[ReactNode]): Self = StObject.set(x, "actionsRender", js.Any.fromFunction1(value))
+      
+      inline def setActionsRenderUndefined: Self = StObject.set(x, "actionsRender", js.undefined)
+      
+      inline def setAvatarProps(value: WithFalse[AvatarPropstitleReactNode]): Self = StObject.set(x, "avatarProps", value.asInstanceOf[js.Any])
+      
+      inline def setAvatarPropsUndefined: Self = StObject.set(x, "avatarProps", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      inline def setCollapsedButtonRender(value: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]): Self = StObject.set(x, "collapsedButtonRender", value.asInstanceOf[js.Any])
-      
-      inline def setCollapsedButtonRenderFunction1(value: /* collapsed */ js.UndefOr[Boolean] => ReactNode): Self = StObject.set(x, "collapsedButtonRender", js.Any.fromFunction1(value))
+      inline def setCollapsedButtonRender(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.SiderMenuProps['collapsedButtonRender'] */ js.Any
+      ): Self = StObject.set(x, "collapsedButtonRender", value.asInstanceOf[js.Any])
       
       inline def setCollapsedButtonRenderUndefined: Self = StObject.set(x, "collapsedButtonRender", js.undefined)
       
       inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      
+      inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+      
+      inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
       
       inline def setColorWeak(value: Boolean): Self = StObject.set(x, "colorWeak", value.asInstanceOf[js.Any])
       
@@ -134,13 +176,11 @@ object globalHeaderMod extends Shortcut {
       
       inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
       
-      inline def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
+      inline def setHeaderContentRender(value: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]): Self = StObject.set(x, "headerContentRender", value.asInstanceOf[js.Any])
       
-      inline def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
+      inline def setHeaderContentRenderFunction2(value: (/* props */ HeaderViewProps, /* defaultDom */ ReactNode) => ReactNode): Self = StObject.set(x, "headerContentRender", js.Any.fromFunction2(value))
       
-      inline def setHeaderTheme(value: MenuTheme): Self = StObject.set(x, "headerTheme", value.asInstanceOf[js.Any])
-      
-      inline def setHeaderThemeUndefined: Self = StObject.set(x, "headerTheme", js.undefined)
+      inline def setHeaderContentRenderUndefined: Self = StObject.set(x, "headerContentRender", js.undefined)
       
       inline def setIconfontUrl(value: String): Self = StObject.set(x, "iconfontUrl", value.asInstanceOf[js.Any])
       
@@ -158,28 +198,17 @@ object globalHeaderMod extends Shortcut {
       
       inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
-      inline def setMenu(value: DefaultOpenAll): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: AutoClose): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
       inline def setMenuData(value: js.Array[MenuDataItem]): Self = StObject.set(x, "menuData", value.asInstanceOf[js.Any])
       
       inline def setMenuDataUndefined: Self = StObject.set(x, "menuData", js.undefined)
       
-      inline def setMenuDataVarargs(value: MenuDataItem*): Self = StObject.set(x, "menuData", js.Array(value :_*))
+      inline def setMenuDataVarargs(value: MenuDataItem*): Self = StObject.set(x, "menuData", js.Array(value*))
       
       inline def setMenuHeaderRender(
-        value: WithFalse[
-              js.Function3[
-                /* logo */ ReactNode, 
-                /* title */ ReactNode, 
-                /* props */ js.UndefOr[GlobalHeaderProps], 
-                ReactNode
-              ]
-            ]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.SiderMenuProps['menuHeaderRender'] */ js.Any
       ): Self = StObject.set(x, "menuHeaderRender", value.asInstanceOf[js.Any])
-      
-      inline def setMenuHeaderRenderFunction3(
-        value: (/* logo */ ReactNode, /* title */ ReactNode, /* props */ js.UndefOr[GlobalHeaderProps]) => ReactNode
-      ): Self = StObject.set(x, "menuHeaderRender", js.Any.fromFunction3(value))
       
       inline def setMenuHeaderRenderUndefined: Self = StObject.set(x, "menuHeaderRender", js.undefined)
       
@@ -191,7 +220,7 @@ object globalHeaderMod extends Shortcut {
       
       inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      inline def setNavTheme(value: MenuTheme | realDark): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
+      inline def setNavTheme(value: realDark | light): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
       
       inline def setNavThemeUndefined: Self = StObject.set(x, "navTheme", js.undefined)
       
@@ -207,15 +236,15 @@ object globalHeaderMod extends Shortcut {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
-      
-      inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
-      
       inline def setRightContentRender(value: WithFalse[js.Function1[/* props */ HeaderViewProps, ReactNode]]): Self = StObject.set(x, "rightContentRender", value.asInstanceOf[js.Any])
       
       inline def setRightContentRenderFunction1(value: /* props */ HeaderViewProps => ReactNode): Self = StObject.set(x, "rightContentRender", js.Any.fromFunction1(value))
       
       inline def setRightContentRenderUndefined: Self = StObject.set(x, "rightContentRender", js.undefined)
+      
+      inline def setSiderMenuType(value: sub | group): Self = StObject.set(x, "siderMenuType", value.asInstanceOf[js.Any])
+      
+      inline def setSiderMenuTypeUndefined: Self = StObject.set(x, "siderMenuType", js.undefined)
       
       inline def setSplitMenus(value: Boolean): Self = StObject.set(x, "splitMenus", value.asInstanceOf[js.Any])
       
@@ -230,9 +259,4 @@ object globalHeaderMod extends Shortcut {
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
-  
-  type _To = FC[GlobalHeaderProps & PrivateSiderMenuProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `globalHeaderMod.foo` */
-  override def _to: FC[GlobalHeaderProps & PrivateSiderMenuProps] = default
 }

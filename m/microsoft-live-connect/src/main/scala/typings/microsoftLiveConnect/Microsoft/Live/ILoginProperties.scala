@@ -32,7 +32,7 @@ trait ILoginProperties extends StObject {
     * Server-side scenarios.
     * http://msdn.microsoft.com/en-us/library/live/hh243649.aspx
     */
-  var scope: js.Any
+  var scope: Any
   
   /**
     * Windows Store apps using JavaScript: not applicable.
@@ -48,7 +48,7 @@ trait ILoginProperties extends StObject {
 }
 object ILoginProperties {
   
-  inline def apply(scope: js.Any): ILoginProperties = {
+  inline def apply(scope: Any): ILoginProperties = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoginProperties]
   }
@@ -59,7 +59,7 @@ object ILoginProperties {
     
     inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

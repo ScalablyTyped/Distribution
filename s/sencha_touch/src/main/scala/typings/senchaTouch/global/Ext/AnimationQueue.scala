@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.AnimationQueue")
 @js.native
-class AnimationQueue ()
+open class AnimationQueue ()
   extends StObject
      with typings.senchaTouch.Ext.AnimationQueue
 /* static members */
@@ -21,22 +21,22 @@ object AnimationQueue {
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  inline def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
-  inline def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callOverridden(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[Any]
+  inline def callOverridden(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  inline def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
-  inline def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Any]
+  inline def callParent(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  inline def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
-  inline def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def callSuper(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[Any]
+  inline def callSuper(args: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method]  */
   inline def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
@@ -45,15 +45,15 @@ object AnimationQueue {
     * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
     * @returns Object/Mixed
     */
-  inline def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
-  inline def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getInitialConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[Any]
+  inline def getInitialConfig(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Method] Initialize configuration for this class
     * @param instanceConfig Object
     * @returns Object mixins The mixin prototypes as key - value pairs
     */
-  inline def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
-  inline def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def initConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[Any]
+  inline def initConfig(instanceConfig: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [Property] (Ext.Class) */
   @JSGlobal("Ext.AnimationQueue.self")
@@ -67,13 +67,13 @@ object AnimationQueue {
     * @param args Object
     */
   inline def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
-  inline def start(fn: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def start(fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def start(fn: js.Any, scope: js.Any, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def start(fn: js.Any, scope: Unit, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def start(fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def start(fn: Unit, scope: js.Any, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def start(fn: Unit, scope: Unit, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def start(fn: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def start(fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def start(fn: Any, scope: Any, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def start(fn: Any, scope: Unit, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def start(fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def start(fn: Unit, scope: Any, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def start(fn: Unit, scope: Unit, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Get the reference to the class from which this object was instantiated
     * @returns Ext.Class
@@ -86,11 +86,11 @@ object AnimationQueue {
     * @param args Object
     */
   inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
-  inline def stop(fn: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def stop(fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def stop(fn: js.Any, scope: js.Any, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def stop(fn: js.Any, scope: Unit, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def stop(fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def stop(fn: Unit, scope: js.Any, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def stop(fn: Unit, scope: Unit, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stop(fn: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stop(fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stop(fn: Any, scope: Any, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stop(fn: Any, scope: Unit, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stop(fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stop(fn: Unit, scope: Any, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stop(fn: Unit, scope: Unit, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

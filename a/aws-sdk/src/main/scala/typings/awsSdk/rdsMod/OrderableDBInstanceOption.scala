@@ -77,7 +77,7 @@ trait OrderableDBInstanceOption extends StObject {
   var MultiAZCapable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether a DB instance supports RDS on Outposts. For more information about RDS on Outposts, see Amazon RDS on AWS Outposts in the Amazon RDS User Guide. 
+    * Whether a DB instance supports RDS on Outposts. For more information about RDS on Outposts, see Amazon RDS on Amazon Web Services Outposts in the Amazon RDS User Guide. 
     */
   var OutpostCapable: js.UndefOr[Boolean] = js.undefined
   
@@ -92,9 +92,24 @@ trait OrderableDBInstanceOption extends StObject {
   var StorageType: js.UndefOr[String] = js.undefined
   
   /**
+    * The list of supported modes for Database Activity Streams. Aurora PostgreSQL returns the value [sync, async]. Aurora MySQL and RDS for Oracle return [async] only. If Database Activity Streams isn't supported, the return value is an empty list.
+    */
+  var SupportedActivityStreamModes: js.UndefOr[ActivityStreamModeList] = js.undefined
+  
+  /**
     * A list of the supported DB engine modes.
     */
   var SupportedEngineModes: js.UndefOr[EngineModeList] = js.undefined
+  
+  /**
+    * The network types supported by the DB instance (IPV4 or DUAL). A DB instance can support only the IPv4 protocol or the IPv4 and the IPv6 protocols (DUAL). For more information, see  Working with a DB instance in a VPC in the Amazon RDS User Guide. 
+    */
+  var SupportedNetworkTypes: js.UndefOr[StringList] = js.undefined
+  
+  /**
+    * Whether DB instances can be configured as a Multi-AZ DB cluster. For more information on Multi-AZ DB clusters, see  Multi-AZ deployments with two readable standby DB instances in the Amazon RDS User Guide. 
+    */
+  var SupportsClusters: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether a DB instance supports Enhanced Monitoring at intervals from 1 to 60 seconds.
@@ -158,13 +173,13 @@ object OrderableDBInstanceOption {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setAvailableProcessorFeatures(value: AvailableProcessorFeatureList): Self = StObject.set(x, "AvailableProcessorFeatures", value.asInstanceOf[js.Any])
     
     inline def setAvailableProcessorFeaturesUndefined: Self = StObject.set(x, "AvailableProcessorFeatures", js.undefined)
     
-    inline def setAvailableProcessorFeaturesVarargs(value: AvailableProcessorFeature*): Self = StObject.set(x, "AvailableProcessorFeatures", js.Array(value :_*))
+    inline def setAvailableProcessorFeaturesVarargs(value: AvailableProcessorFeature*): Self = StObject.set(x, "AvailableProcessorFeatures", js.Array(value*))
     
     inline def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
     
@@ -222,11 +237,27 @@ object OrderableDBInstanceOption {
     
     inline def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
     
+    inline def setSupportedActivityStreamModes(value: ActivityStreamModeList): Self = StObject.set(x, "SupportedActivityStreamModes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedActivityStreamModesUndefined: Self = StObject.set(x, "SupportedActivityStreamModes", js.undefined)
+    
+    inline def setSupportedActivityStreamModesVarargs(value: String*): Self = StObject.set(x, "SupportedActivityStreamModes", js.Array(value*))
+    
     inline def setSupportedEngineModes(value: EngineModeList): Self = StObject.set(x, "SupportedEngineModes", value.asInstanceOf[js.Any])
     
     inline def setSupportedEngineModesUndefined: Self = StObject.set(x, "SupportedEngineModes", js.undefined)
     
-    inline def setSupportedEngineModesVarargs(value: String*): Self = StObject.set(x, "SupportedEngineModes", js.Array(value :_*))
+    inline def setSupportedEngineModesVarargs(value: String*): Self = StObject.set(x, "SupportedEngineModes", js.Array(value*))
+    
+    inline def setSupportedNetworkTypes(value: StringList): Self = StObject.set(x, "SupportedNetworkTypes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedNetworkTypesUndefined: Self = StObject.set(x, "SupportedNetworkTypes", js.undefined)
+    
+    inline def setSupportedNetworkTypesVarargs(value: String*): Self = StObject.set(x, "SupportedNetworkTypes", js.Array(value*))
+    
+    inline def setSupportsClusters(value: Boolean): Self = StObject.set(x, "SupportsClusters", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsClustersUndefined: Self = StObject.set(x, "SupportsClusters", js.undefined)
     
     inline def setSupportsEnhancedMonitoring(value: Boolean): Self = StObject.set(x, "SupportsEnhancedMonitoring", value.asInstanceOf[js.Any])
     

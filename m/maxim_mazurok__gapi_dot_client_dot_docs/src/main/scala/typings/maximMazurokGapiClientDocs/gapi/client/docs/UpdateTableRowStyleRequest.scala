@@ -38,7 +38,7 @@ object UpdateTableRowStyleRequest {
     
     inline def setRowIndicesUndefined: Self = StObject.set(x, "rowIndices", js.undefined)
     
-    inline def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value :_*))
+    inline def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value*))
     
     inline def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
     

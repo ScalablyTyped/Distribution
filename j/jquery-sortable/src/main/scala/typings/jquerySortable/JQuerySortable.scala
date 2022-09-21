@@ -54,11 +54,11 @@ object JQuerySortable {
       
       inline def setItemDimensions(value: js.Array[Dimensions]): Self = StObject.set(x, "itemDimensions", value.asInstanceOf[js.Any])
       
-      inline def setItemDimensionsVarargs(value: Dimensions*): Self = StObject.set(x, "itemDimensions", js.Array(value :_*))
+      inline def setItemDimensionsVarargs(value: Dimensions*): Self = StObject.set(x, "itemDimensions", js.Array(value*))
       
       inline def setItems(value: js.Array[HTMLElement]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: HTMLElement*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: HTMLElement*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -81,11 +81,11 @@ object JQuerySortable {
     
     var dragInitDone: Boolean
     
-    var dragProxy: js.Any
+    var dragProxy: Any
     
     var dragging: Boolean
     
-    var dropProxy: js.Any
+    var dropProxy: Any
     
     var item: JQuery
     
@@ -109,7 +109,7 @@ object JQuerySortable {
     
     var sameResultBox: Bottom
     
-    var scrollProxy: js.Any
+    var scrollProxy: Any
   }
   object ContainerGroup {
     
@@ -119,9 +119,9 @@ object JQuerySortable {
       containers: js.Array[Container],
       delayMet: Boolean,
       dragInitDone: Boolean,
-      dragProxy: js.Any,
+      dragProxy: Any,
       dragging: Boolean,
-      dropProxy: js.Any,
+      dropProxy: Any,
       item: JQuery,
       itemContainer: Container,
       lastAppendedItem: JQuery,
@@ -133,7 +133,7 @@ object JQuerySortable {
       pointer: Position,
       relativePointer: Position,
       sameResultBox: Bottom,
-      scrollProxy: js.Any
+      scrollProxy: Any
     ): ContainerGroup = {
       val __obj = js.Dynamic.literal($document = $document.asInstanceOf[js.Any], containerDimensions = containerDimensions.asInstanceOf[js.Any], containers = containers.asInstanceOf[js.Any], delayMet = delayMet.asInstanceOf[js.Any], dragInitDone = dragInitDone.asInstanceOf[js.Any], dragProxy = dragProxy.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], dropProxy = dropProxy.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemContainer = itemContainer.asInstanceOf[js.Any], lastAppendedItem = lastAppendedItem.asInstanceOf[js.Any], lastPointer = lastPointer.asInstanceOf[js.Any], lastRelativePointer = lastRelativePointer.asInstanceOf[js.Any], offsetParent = offsetParent.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any], relativePointer = relativePointer.asInstanceOf[js.Any], sameResultBox = sameResultBox.asInstanceOf[js.Any], scrollProxy = scrollProxy.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContainerGroup]
@@ -145,21 +145,21 @@ object JQuerySortable {
       
       inline def setContainerDimensions(value: js.Array[Dimensions]): Self = StObject.set(x, "containerDimensions", value.asInstanceOf[js.Any])
       
-      inline def setContainerDimensionsVarargs(value: Dimensions*): Self = StObject.set(x, "containerDimensions", js.Array(value :_*))
+      inline def setContainerDimensionsVarargs(value: Dimensions*): Self = StObject.set(x, "containerDimensions", js.Array(value*))
       
       inline def setContainers(value: js.Array[Container]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
       
-      inline def setContainersVarargs(value: Container*): Self = StObject.set(x, "containers", js.Array(value :_*))
+      inline def setContainersVarargs(value: Container*): Self = StObject.set(x, "containers", js.Array(value*))
       
       inline def setDelayMet(value: Boolean): Self = StObject.set(x, "delayMet", value.asInstanceOf[js.Any])
       
       inline def setDragInitDone(value: Boolean): Self = StObject.set(x, "dragInitDone", value.asInstanceOf[js.Any])
       
-      inline def setDragProxy(value: js.Any): Self = StObject.set(x, "dragProxy", value.asInstanceOf[js.Any])
+      inline def setDragProxy(value: Any): Self = StObject.set(x, "dragProxy", value.asInstanceOf[js.Any])
       
       inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
-      inline def setDropProxy(value: js.Any): Self = StObject.set(x, "dropProxy", value.asInstanceOf[js.Any])
+      inline def setDropProxy(value: Any): Self = StObject.set(x, "dropProxy", value.asInstanceOf[js.Any])
       
       inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -183,7 +183,7 @@ object JQuerySortable {
       
       inline def setSameResultBox(value: Bottom): Self = StObject.set(x, "sameResultBox", value.asInstanceOf[js.Any])
       
-      inline def setScrollProxy(value: js.Any): Self = StObject.set(x, "scrollProxy", value.asInstanceOf[js.Any])
+      inline def setScrollProxy(value: Any): Self = StObject.set(x, "scrollProxy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,15 +232,26 @@ object JQuerySortable {
   
   type Dimensions = js.Array[Double]
   
-  type GenericEventHandler = js.Function4[
-    /* $item */ js.UndefOr[JQuery], 
-    /* container */ js.UndefOr[Container], 
-    /* _super */ js.UndefOr[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.GenericEventHandler */ js.Object
-    ], 
-    /* event */ js.UndefOr[Event], 
-    Unit
-  ]
+  @js.native
+  trait GenericEventHandler extends StObject {
+    
+    def apply(): Unit = js.native
+    def apply($item: Unit, container: Unit, _super: Unit, event: Event): Unit = js.native
+    def apply($item: Unit, container: Unit, _super: GenericEventHandler): Unit = js.native
+    def apply($item: Unit, container: Unit, _super: GenericEventHandler, event: Event): Unit = js.native
+    def apply($item: Unit, container: Container): Unit = js.native
+    def apply($item: Unit, container: Container, _super: Unit, event: Event): Unit = js.native
+    def apply($item: Unit, container: Container, _super: GenericEventHandler): Unit = js.native
+    def apply($item: Unit, container: Container, _super: GenericEventHandler, event: Event): Unit = js.native
+    def apply($item: JQuery): Unit = js.native
+    def apply($item: JQuery, container: Unit, _super: Unit, event: Event): Unit = js.native
+    def apply($item: JQuery, container: Unit, _super: GenericEventHandler): Unit = js.native
+    def apply($item: JQuery, container: Unit, _super: GenericEventHandler, event: Event): Unit = js.native
+    def apply($item: JQuery, container: Container): Unit = js.native
+    def apply($item: JQuery, container: Container, _super: Unit, event: Event): Unit = js.native
+    def apply($item: JQuery, container: Container, _super: GenericEventHandler): Unit = js.native
+    def apply($item: JQuery, container: Container, _super: GenericEventHandler, event: Event): Unit = js.native
+  }
   
   trait GroupOptions extends StObject {
     
@@ -279,7 +290,7 @@ object JQuerySortable {
     
     var onMousedown: js.UndefOr[OnMousedownHandler] = js.undefined
     
-    var placeholder: js.UndefOr[JQuery | js.Array[js.Any] | Element | String] = js.undefined
+    var placeholder: js.UndefOr[JQuery | js.Array[Any] | Element | String] = js.undefined
     
     var pullPlaceholder: js.UndefOr[Boolean] = js.undefined
     
@@ -334,57 +345,37 @@ object JQuerySortable {
       
       inline def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
       
-      inline def setOnCancel(
-        value: (/* $item */ js.UndefOr[JQuery], /* container */ js.UndefOr[Container], /* _super */ js.UndefOr[
-              /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnCancelHandler */ js.Object
-            ], /* event */ js.UndefOr[Event]) => Unit
-      ): Self = StObject.set(x, "onCancel", js.Any.fromFunction4(value))
+      inline def setOnCancel(value: OnCancelHandler): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
       
       inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      inline def setOnDrag(
-        value: (/* $item */ js.UndefOr[JQuery], /* position */ js.UndefOr[Position], /* _super */ js.UndefOr[
-              /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnDragEventHandler */ js.Object
-            ], /* event */ js.UndefOr[Event]) => Unit
-      ): Self = StObject.set(x, "onDrag", js.Any.fromFunction4(value))
+      inline def setOnDrag(value: OnDragEventHandler): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
       
-      inline def setOnDragStart(
-        value: (/* $item */ js.UndefOr[JQuery], /* container */ js.UndefOr[Container], /* _super */ js.UndefOr[
-              /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.GenericEventHandler */ js.Object
-            ], /* event */ js.UndefOr[Event]) => Unit
-      ): Self = StObject.set(x, "onDragStart", js.Any.fromFunction4(value))
+      inline def setOnDragStart(value: GenericEventHandler): Self = StObject.set(x, "onDragStart", value.asInstanceOf[js.Any])
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
       inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      inline def setOnDrop(
-        value: (/* $item */ js.UndefOr[JQuery], /* container */ js.UndefOr[Container], /* _super */ js.UndefOr[
-              /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.GenericEventHandler */ js.Object
-            ], /* event */ js.UndefOr[Event]) => Unit
-      ): Self = StObject.set(x, "onDrop", js.Any.fromFunction4(value))
+      inline def setOnDrop(value: GenericEventHandler): Self = StObject.set(x, "onDrop", value.asInstanceOf[js.Any])
       
       inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      inline def setOnMousedown(
-        value: (/* $item */ js.UndefOr[JQuery], /* _super */ js.UndefOr[
-              /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnMousedownHandler */ js.Object
-            ], /* event */ js.UndefOr[Event]) => Unit
-      ): Self = StObject.set(x, "onMousedown", js.Any.fromFunction3(value))
+      inline def setOnMousedown(value: OnMousedownHandler): Self = StObject.set(x, "onMousedown", value.asInstanceOf[js.Any])
       
       inline def setOnMousedownUndefined: Self = StObject.set(x, "onMousedown", js.undefined)
       
-      inline def setPlaceholder(value: JQuery | js.Array[js.Any] | Element | String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: JQuery | js.Array[Any] | Element | String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPlaceholderVarargs(value: js.Any*): Self = StObject.set(x, "placeholder", js.Array(value :_*))
+      inline def setPlaceholderVarargs(value: Any*): Self = StObject.set(x, "placeholder", js.Array(value*))
       
       inline def setPullPlaceholder(value: Boolean): Self = StObject.set(x, "pullPlaceholder", value.asInstanceOf[js.Any])
       
       inline def setPullPlaceholderUndefined: Self = StObject.set(x, "pullPlaceholder", js.undefined)
       
-      inline def setSerialize(value: (/* $parent */ JQuery, /* $children */ js.Any, /* parentIsContainer */ Boolean) => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction3(value))
+      inline def setSerialize(value: (/* $parent */ JQuery, /* $children */ Any, /* parentIsContainer */ Boolean) => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction3(value))
       
       inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
       
@@ -394,34 +385,60 @@ object JQuerySortable {
     }
   }
   
-  type OnCancelHandler = js.Function4[
-    /* $item */ js.UndefOr[JQuery], 
-    /* container */ js.UndefOr[Container], 
-    /* _super */ js.UndefOr[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnCancelHandler */ js.Object
-    ], 
-    /* event */ js.UndefOr[Event], 
-    Unit
-  ]
+  @js.native
+  trait OnCancelHandler extends StObject {
+    
+    def apply(): Unit = js.native
+    def apply($item: Unit, container: Unit, _super: Unit, event: Event): Unit = js.native
+    def apply($item: Unit, container: Unit, _super: OnCancelHandler): Unit = js.native
+    def apply($item: Unit, container: Unit, _super: OnCancelHandler, event: Event): Unit = js.native
+    def apply($item: Unit, container: Container): Unit = js.native
+    def apply($item: Unit, container: Container, _super: Unit, event: Event): Unit = js.native
+    def apply($item: Unit, container: Container, _super: OnCancelHandler): Unit = js.native
+    def apply($item: Unit, container: Container, _super: OnCancelHandler, event: Event): Unit = js.native
+    def apply($item: JQuery): Unit = js.native
+    def apply($item: JQuery, container: Unit, _super: Unit, event: Event): Unit = js.native
+    def apply($item: JQuery, container: Unit, _super: OnCancelHandler): Unit = js.native
+    def apply($item: JQuery, container: Unit, _super: OnCancelHandler, event: Event): Unit = js.native
+    def apply($item: JQuery, container: Container): Unit = js.native
+    def apply($item: JQuery, container: Container, _super: Unit, event: Event): Unit = js.native
+    def apply($item: JQuery, container: Container, _super: OnCancelHandler): Unit = js.native
+    def apply($item: JQuery, container: Container, _super: OnCancelHandler, event: Event): Unit = js.native
+  }
   
-  type OnDragEventHandler = js.Function4[
-    /* $item */ js.UndefOr[JQuery], 
-    /* position */ js.UndefOr[Position], 
-    /* _super */ js.UndefOr[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnDragEventHandler */ js.Object
-    ], 
-    /* event */ js.UndefOr[Event], 
-    Unit
-  ]
+  @js.native
+  trait OnDragEventHandler extends StObject {
+    
+    def apply(): Unit = js.native
+    def apply($item: Unit, position: Unit, _super: Unit, event: Event): Unit = js.native
+    def apply($item: Unit, position: Unit, _super: OnDragEventHandler): Unit = js.native
+    def apply($item: Unit, position: Unit, _super: OnDragEventHandler, event: Event): Unit = js.native
+    def apply($item: Unit, position: Position): Unit = js.native
+    def apply($item: Unit, position: Position, _super: Unit, event: Event): Unit = js.native
+    def apply($item: Unit, position: Position, _super: OnDragEventHandler): Unit = js.native
+    def apply($item: Unit, position: Position, _super: OnDragEventHandler, event: Event): Unit = js.native
+    def apply($item: JQuery): Unit = js.native
+    def apply($item: JQuery, position: Unit, _super: Unit, event: Event): Unit = js.native
+    def apply($item: JQuery, position: Unit, _super: OnDragEventHandler): Unit = js.native
+    def apply($item: JQuery, position: Unit, _super: OnDragEventHandler, event: Event): Unit = js.native
+    def apply($item: JQuery, position: Position): Unit = js.native
+    def apply($item: JQuery, position: Position, _super: Unit, event: Event): Unit = js.native
+    def apply($item: JQuery, position: Position, _super: OnDragEventHandler): Unit = js.native
+    def apply($item: JQuery, position: Position, _super: OnDragEventHandler, event: Event): Unit = js.native
+  }
   
-  type OnMousedownHandler = js.Function3[
-    /* $item */ js.UndefOr[JQuery], 
-    /* _super */ js.UndefOr[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnMousedownHandler */ js.Object
-    ], 
-    /* event */ js.UndefOr[Event], 
-    Unit
-  ]
+  @js.native
+  trait OnMousedownHandler extends StObject {
+    
+    def apply(): Unit = js.native
+    def apply($item: Unit, _super: Unit, event: Event): Unit = js.native
+    def apply($item: Unit, _super: OnMousedownHandler): Unit = js.native
+    def apply($item: Unit, _super: OnMousedownHandler, event: Event): Unit = js.native
+    def apply($item: JQuery): Unit = js.native
+    def apply($item: JQuery, _super: Unit, event: Event): Unit = js.native
+    def apply($item: JQuery, _super: OnMousedownHandler): Unit = js.native
+    def apply($item: JQuery, _super: OnMousedownHandler, event: Event): Unit = js.native
+  }
   
   trait Options
     extends StObject
@@ -467,5 +484,5 @@ object JQuerySortable {
   }
   
   // Deliberately typing $children as an any here as it makes it much easier to use. Actual type is JQuery | any[]
-  type SerializeFunc = js.Function3[/* $parent */ JQuery, /* $children */ js.Any, /* parentIsContainer */ Boolean, Unit]
+  type SerializeFunc = js.Function3[/* $parent */ JQuery, /* $children */ Any, /* parentIsContainer */ Boolean, Unit]
 }

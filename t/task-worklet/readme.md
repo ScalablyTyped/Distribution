@@ -10,10 +10,10 @@ Streamlined processing of tasks in a shared threadpool.
 | ------------------ | :-------------: |
 | Full name          | task-worklet |
 | Keywords           | tasks, task worklet, TaskWorklet, threads, multithreading |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 356 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 56.666666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/task-worklet)

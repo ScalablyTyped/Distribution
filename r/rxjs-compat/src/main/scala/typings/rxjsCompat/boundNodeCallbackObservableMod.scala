@@ -9,7 +9,7 @@ object boundNodeCallbackObservableMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs-compat/observable/BoundNodeCallbackObservable", "BoundNodeCallbackObservable")
   @js.native
-  class BoundNodeCallbackObservable[T] () extends StObject
+  open class BoundNodeCallbackObservable[T] () extends StObject
   /* static members */
   object BoundNodeCallbackObservable {
     
@@ -18,224 +18,210 @@ object boundNodeCallbackObservableMod {
     val ^ : js.Any = js.native
     
     inline def create[T](callbackFunc: js.Function): js.Function1[
-        /* repeated */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+        /* repeated */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-        /* repeated */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+        /* repeated */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ]]
-    inline def create[R](
-      callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], js.Any]
-    ): js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+    inline def create[R](callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ Any, /* result */ R, Any], Any]): js.Function0[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[R](
-      callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], js.Any],
+      callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ Any, /* result */ R, Any], Any],
       selector: Unit
     ): js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[R](
-      callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], js.Any],
+      callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ Any, /* result */ R, Any], Any],
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
     ): js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
-    inline def create[T](callbackFunc: js.Function, selector: js.Function1[/* repeated */ js.Any, T]): js.Function1[
-        /* repeated */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+    inline def create[T](callbackFunc: js.Function, selector: js.Function1[/* repeated */ Any, T]): js.Function1[
+        /* repeated */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* repeated */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+        /* repeated */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ]]
     inline def create[T](
       callbackFunc: js.Function,
-      selector: js.Function1[/* repeated */ js.Any, T],
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+      selector: js.Function1[/* repeated */ Any, T],
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
     ): js.Function1[
-        /* repeated */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+        /* repeated */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* repeated */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+        /* repeated */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ]]
     inline def create[T](callbackFunc: js.Function, selector: Unit): js.Function1[
-        /* repeated */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+        /* repeated */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* repeated */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+        /* repeated */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ]]
     inline def create[T](
       callbackFunc: js.Function,
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
     ): js.Function1[
-        /* repeated */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+        /* repeated */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-        /* repeated */ js.Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+        /* repeated */ Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ Any
       ]]
     inline def create[T, R](
-      callbackFunc: js.Function2[
-          /* v1 */ T, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
-        ]
+      callbackFunc: js.Function2[/* v1 */ T, /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], Any]
     ): js.Function1[
         /* v1 */ T, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
         /* v1 */ T, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, R](
-      callbackFunc: js.Function2[
-          /* v1 */ T, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
-        ],
+      callbackFunc: js.Function2[/* v1 */ T, /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], Any],
       selector: Unit
     ): js.Function1[
         /* v1 */ T, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
         /* v1 */ T, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, R](
-      callbackFunc: js.Function2[
-          /* v1 */ T, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
-        ],
+      callbackFunc: js.Function2[/* v1 */ T, /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], Any],
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
     ): js.Function1[
         /* v1 */ T, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
         /* v1 */ T, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, R](
       callbackFunc: js.Function3[
           /* v1 */ T, 
           /* v2 */ T2, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ]
     ): js.Function2[
         /* v1 */ T, 
         /* v2 */ T2, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
         /* v1 */ T, 
         /* v2 */ T2, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, R](
       callbackFunc: js.Function3[
           /* v1 */ T, 
           /* v2 */ T2, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ],
       selector: Unit
     ): js.Function2[
         /* v1 */ T, 
         /* v2 */ T2, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
         /* v1 */ T, 
         /* v2 */ T2, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, R](
       callbackFunc: js.Function3[
           /* v1 */ T, 
           /* v2 */ T2, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ],
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
     ): js.Function2[
         /* v1 */ T, 
         /* v2 */ T2, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
         /* v1 */ T, 
         /* v2 */ T2, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, R](
       callbackFunc: js.Function4[
           /* v1 */ T, 
           /* v2 */ T2, 
           /* v3 */ T3, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ]
     ): js.Function3[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, R](
       callbackFunc: js.Function4[
           /* v1 */ T, 
           /* v2 */ T2, 
           /* v3 */ T3, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ],
       selector: Unit
     ): js.Function3[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, R](
       callbackFunc: js.Function4[
           /* v1 */ T, 
           /* v2 */ T2, 
           /* v3 */ T3, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ],
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
     ): js.Function3[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
@@ -243,21 +229,21 @@ object boundNodeCallbackObservableMod {
           /* v2 */ T2, 
           /* v3 */ T3, 
           /* v4 */ T4, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ]
     ): js.Function4[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
         /* v4 */ T4, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
         /* v4 */ T4, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
@@ -265,8 +251,8 @@ object boundNodeCallbackObservableMod {
           /* v2 */ T2, 
           /* v3 */ T3, 
           /* v4 */ T4, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ],
       selector: Unit
     ): js.Function4[
@@ -274,13 +260,13 @@ object boundNodeCallbackObservableMod {
         /* v2 */ T2, 
         /* v3 */ T3, 
         /* v4 */ T4, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
         /* v4 */ T4, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
@@ -288,23 +274,23 @@ object boundNodeCallbackObservableMod {
           /* v2 */ T2, 
           /* v3 */ T3, 
           /* v4 */ T4, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ],
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
     ): js.Function4[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
         /* v4 */ T4, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
         /* v4 */ T4, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
@@ -313,8 +299,8 @@ object boundNodeCallbackObservableMod {
           /* v3 */ T3, 
           /* v4 */ T4, 
           /* v5 */ T5, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ]
     ): js.Function5[
         /* v1 */ T, 
@@ -322,14 +308,14 @@ object boundNodeCallbackObservableMod {
         /* v3 */ T3, 
         /* v4 */ T4, 
         /* v5 */ T5, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function5[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
         /* v4 */ T4, 
         /* v5 */ T5, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
@@ -338,8 +324,8 @@ object boundNodeCallbackObservableMod {
           /* v3 */ T3, 
           /* v4 */ T4, 
           /* v5 */ T5, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ],
       selector: Unit
     ): js.Function5[
@@ -348,14 +334,14 @@ object boundNodeCallbackObservableMod {
         /* v3 */ T3, 
         /* v4 */ T4, 
         /* v5 */ T5, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
         /* v4 */ T4, 
         /* v5 */ T5, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
@@ -364,25 +350,25 @@ object boundNodeCallbackObservableMod {
           /* v3 */ T3, 
           /* v4 */ T4, 
           /* v5 */ T5, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ],
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
     ): js.Function5[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
         /* v4 */ T4, 
         /* v5 */ T5, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
         /* v1 */ T, 
         /* v2 */ T2, 
         /* v3 */ T3, 
         /* v4 */ T4, 
         /* v5 */ T5, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
@@ -392,8 +378,8 @@ object boundNodeCallbackObservableMod {
           /* v4 */ T4, 
           /* v5 */ T5, 
           /* v6 */ T6, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ]
     ): js.Function6[
         /* v1 */ T, 
@@ -402,7 +388,7 @@ object boundNodeCallbackObservableMod {
         /* v4 */ T4, 
         /* v5 */ T5, 
         /* v6 */ T6, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function6[
         /* v1 */ T, 
         /* v2 */ T2, 
@@ -410,7 +396,7 @@ object boundNodeCallbackObservableMod {
         /* v4 */ T4, 
         /* v5 */ T5, 
         /* v6 */ T6, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
@@ -420,8 +406,8 @@ object boundNodeCallbackObservableMod {
           /* v4 */ T4, 
           /* v5 */ T5, 
           /* v6 */ T6, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ],
       selector: Unit
     ): js.Function6[
@@ -431,7 +417,7 @@ object boundNodeCallbackObservableMod {
         /* v4 */ T4, 
         /* v5 */ T5, 
         /* v6 */ T6, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function6[
         /* v1 */ T, 
         /* v2 */ T2, 
@@ -439,7 +425,7 @@ object boundNodeCallbackObservableMod {
         /* v4 */ T4, 
         /* v5 */ T5, 
         /* v6 */ T6, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
     inline def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
@@ -449,11 +435,11 @@ object boundNodeCallbackObservableMod {
           /* v4 */ T4, 
           /* v5 */ T5, 
           /* v6 */ T6, 
-          /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
-          js.Any
+          /* callback */ js.Function2[/* err */ Any, /* result */ R, Any], 
+          Any
         ],
       selector: Unit,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
     ): js.Function6[
         /* v1 */ T, 
         /* v2 */ T2, 
@@ -461,7 +447,7 @@ object boundNodeCallbackObservableMod {
         /* v4 */ T4, 
         /* v5 */ T5, 
         /* v6 */ T6, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function6[
         /* v1 */ T, 
         /* v2 */ T2, 
@@ -469,7 +455,7 @@ object boundNodeCallbackObservableMod {
         /* v4 */ T4, 
         /* v5 */ T5, 
         /* v6 */ T6, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
       ]]
   }
 }

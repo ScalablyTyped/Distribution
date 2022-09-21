@@ -2,7 +2,6 @@ package typings.slimerjs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.slimerjs.anon.Format
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait WebPage extends StObject {
   
   var canGoForward: Boolean = js.native
   
-  var captureContent: js.Array[RegExp] = js.native
+  var captureContent: js.Array[js.RegExp] = js.native
   
   def childFramesCount(): Double = js.native
   
@@ -52,13 +51,13 @@ trait WebPage extends StObject {
   // evaluate<T1, T2, R>(callback: (arg1: T1, arg2: T2) => R, arg1: T1, arg2: T2): Promise<R>;
   // evaluate<T1, T2, T3, R>(callback: (arg1: T1, arg2: T2, arg3: T3) => R, arg1: T1, arg2: T2, arg3: T3): Promise<R>;
   // evaluate<R>(callback: (...args: any[]) => R, ...args: any[]): Promise<R>;
-  def evaluate[R](callback: js.Function1[/* repeated */ js.Any, R], args: js.Any*): R = js.native
+  def evaluate[R](callback: js.Function1[/* repeated */ Any, R], args: Any*): R = js.native
   
-  def evaluateAsync(fn: js.Function1[/* repeated */ js.Any, Unit], delayMilli: Double, args: js.Any*): Unit = js.native
+  def evaluateAsync(fn: js.Function1[/* repeated */ Any, Unit], delayMilli: Double, args: Any*): Unit = js.native
   
-  def evaluateJavaScript(str: String): js.Any = js.native
+  def evaluateJavaScript(str: String): Any = js.native
   
-  var event: js.Any = js.native
+  var event: Any = js.native
   
   // :TODO: elaborate this when documentation improves
   var focusedFrameName: String = js.native
@@ -75,7 +74,7 @@ trait WebPage extends StObject {
   
   var framesCount: Double = js.native
   
-  var framesName: js.Any = js.native
+  var framesName: Any = js.native
   
   // :TODO: elaborate this when documentation improves
   def getPage(windowName: String): WebPage = js.native
@@ -118,60 +117,60 @@ trait WebPage extends StObject {
   var offlineStorageQuota: Double = js.native
   
   // Callbacks
-  def onAlert(msg: String): js.Any = js.native
+  def onAlert(msg: String): Any = js.native
   
   def onCallback(): Unit = js.native
   
   // EXPERIMENTAL
-  def onClosing(closingPage: WebPage): js.Any = js.native
+  def onClosing(closingPage: WebPage): Any = js.native
   
   def onConfirm(msg: String): Boolean = js.native
   
-  def onConsoleMessage(msg: String): js.Any = js.native
-  def onConsoleMessage(msg: String, lineNum: Double): js.Any = js.native
-  def onConsoleMessage(msg: String, lineNum: Double, sourceId: String): js.Any = js.native
-  def onConsoleMessage(msg: String, lineNum: Unit, sourceId: String): js.Any = js.native
+  def onConsoleMessage(msg: String): Any = js.native
+  def onConsoleMessage(msg: String, lineNum: Double): Any = js.native
+  def onConsoleMessage(msg: String, lineNum: Double, sourceId: String): Any = js.native
+  def onConsoleMessage(msg: String, lineNum: Unit, sourceId: String): Any = js.native
   
-  def onError(msg: String, trace: js.Array[String]): js.Any = js.native
+  def onError(msg: String, trace: js.Array[String]): Any = js.native
   
   def onFilePicker(oldFile: String): String = js.native
   
-  def onInitialized(): js.Any = js.native
+  def onInitialized(): Any = js.native
   
-  def onLoadFinished(status: String): js.Any = js.native
+  def onLoadFinished(status: String): Any = js.native
   
-  def onLoadStarted(): js.Any = js.native
+  def onLoadStarted(): Any = js.native
   
-  def onNavigationRequested(url: String, `type`: String, willNavigate: Boolean, main: Boolean): js.Any = js.native
+  def onNavigationRequested(url: String, `type`: String, willNavigate: Boolean, main: Boolean): Any = js.native
   
-  def onPageCreated(newPage: WebPage): js.Any = js.native
+  def onPageCreated(newPage: WebPage): Any = js.native
   
   def onPrompt(msg: String, defaultVal: String): String = js.native
   
-  def onResourceError(resourceError: ResourceError): js.Any = js.native
+  def onResourceError(resourceError: ResourceError): Any = js.native
   
-  def onResourceReceived(response: ResourceResponse): js.Any = js.native
+  def onResourceReceived(response: ResourceResponse): Any = js.native
   
-  def onResourceRequested(requestData: ResourceRequest, networkRequest: NetworkRequest): js.Any = js.native
+  def onResourceRequested(requestData: ResourceRequest, networkRequest: NetworkRequest): Any = js.native
   
-  def onUrlChanged(targetUrl: String): js.Any = js.native
+  def onUrlChanged(targetUrl: String): Any = js.native
   
   // open(url: string): Promise<string>;
   def open(url: String): js.Promise[String] = js.native
-  def open(url: String, callback: js.Function1[/* status */ String, js.Any]): js.Promise[String] = js.native
-  def open(url: String, method: String, callback: js.Function1[/* status */ String, js.Any]): js.Promise[String] = js.native
+  def open(url: String, callback: js.Function1[/* status */ String, Any]): js.Promise[String] = js.native
+  def open(url: String, method: String, callback: js.Function1[/* status */ String, Any]): js.Promise[String] = js.native
   // maybe data is missing
-  def open(url: String, method: String, data: js.Any): js.Promise[String] = js.native
-  def open(url: String, method: String, data: js.Any, callback: js.Function1[/* status */ String, js.Any]): js.Promise[String] = js.native
+  def open(url: String, method: String, data: Any): js.Promise[String] = js.native
+  def open(url: String, method: String, data: Any, callback: js.Function1[/* status */ String, Any]): js.Promise[String] = js.native
   def open(
     url: String,
     method: String,
-    data: js.Any,
-    headers: js.Any,
-    callback: js.Function1[/* status */ String, js.Any]
+    data: Any,
+    headers: Any,
+    callback: js.Function1[/* status */ String, Any]
   ): js.Promise[String] = js.native
   
-  def openUrl(url: String, httpConf: HttpConf, settings: js.Any): js.Promise[String] = js.native
+  def openUrl(url: String, httpConf: HttpConf, settings: Any): js.Promise[String] = js.native
   
   var ownsPages: Boolean = js.native
   
@@ -208,14 +207,14 @@ trait WebPage extends StObject {
   
   var scrollPosition: TopLeft = js.native
   
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: js.Any): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: js.Any, modifier: Double): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: Unit, modifier: Double): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: Unit, bNull: js.Any): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: Unit, bNull: js.Any, modifier: Double): Unit = js.native
-  def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: Unit, bNull: Unit, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Any): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Any, bNull: Any): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Any, bNull: Any, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Any, bNull: Unit, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Unit, bNull: Any): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Unit, bNull: Any, modifier: Double): Unit = js.native
+  def sendEvent(keyboardEventType: String, keyOrKeys: Any, aNull: Unit, bNull: Unit, modifier: Double): Unit = js.native
   def sendEvent(keyboardEventType: String, key: String): js.Promise[Unit] = js.native
   def sendEvent(keyboardEventType: String, key: String, null1: Null, null2: Null, modifier: Double): js.Promise[Unit] = js.native
   def sendEvent(keyboardEventType: String, key: String, null1: Null, null2: Unit, modifier: Double): js.Promise[Unit] = js.native

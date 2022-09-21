@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object cliSpinnersStrings {
   
   @js.native
+  sealed trait aesthetic
+    extends StObject
+       with SpinnerName
+  inline def aesthetic: aesthetic = "aesthetic".asInstanceOf[aesthetic]
+  
+  @js.native
   sealed trait arc
     extends StObject
        with SpinnerName
@@ -48,6 +54,12 @@ object cliSpinnersStrings {
     extends StObject
        with SpinnerName
   inline def betaWave: betaWave = "betaWave".asInstanceOf[betaWave]
+  
+  @js.native
+  sealed trait bluePulse
+    extends StObject
+       with SpinnerName
+  inline def bluePulse: bluePulse = "bluePulse".asInstanceOf[bluePulse]
   
   @js.native
   sealed trait bounce
@@ -200,6 +212,18 @@ object cliSpinnersStrings {
   inline def earth: earth = "earth".asInstanceOf[earth]
   
   @js.native
+  sealed trait fingerDance
+    extends StObject
+       with SpinnerName
+  inline def fingerDance: fingerDance = "fingerDance".asInstanceOf[fingerDance]
+  
+  @js.native
+  sealed trait fistBump
+    extends StObject
+       with SpinnerName
+  inline def fistBump: fistBump = "fistBump".asInstanceOf[fistBump]
+  
+  @js.native
   sealed trait flip
     extends StObject
        with SpinnerName
@@ -260,6 +284,12 @@ object cliSpinnersStrings {
   inline def material: material = "material".asInstanceOf[material]
   
   @js.native
+  sealed trait mindblown
+    extends StObject
+       with SpinnerName
+  inline def mindblown: mindblown = "mindblown".asInstanceOf[mindblown]
+  
+  @js.native
   sealed trait monkey
     extends StObject
        with SpinnerName
@@ -276,6 +306,18 @@ object cliSpinnersStrings {
     extends StObject
        with SpinnerName
   inline def noise: noise = "noise".asInstanceOf[noise]
+  
+  @js.native
+  sealed trait orangeBluePulse
+    extends StObject
+       with SpinnerName
+  inline def orangeBluePulse: orangeBluePulse = "orangeBluePulse".asInstanceOf[orangeBluePulse]
+  
+  @js.native
+  sealed trait orangePulse
+    extends StObject
+       with SpinnerName
+  inline def orangePulse: orangePulse = "orangePulse".asInstanceOf[orangePulse]
   
   @js.native
   sealed trait pipe
@@ -326,6 +368,18 @@ object cliSpinnersStrings {
   inline def smiley: smiley = "smiley".asInstanceOf[smiley]
   
   @js.native
+  sealed trait soccerHeader
+    extends StObject
+       with SpinnerName
+  inline def soccerHeader: soccerHeader = "soccerHeader".asInstanceOf[soccerHeader]
+  
+  @js.native
+  sealed trait speaker
+    extends StObject
+       with SpinnerName
+  inline def speaker: speaker = "speaker".asInstanceOf[speaker]
+  
+  @js.native
   sealed trait squareCorners
     extends StObject
        with SpinnerName
@@ -348,6 +402,12 @@ object cliSpinnersStrings {
     extends StObject
        with SpinnerName
   inline def star2: star2 = "star2".asInstanceOf[star2]
+  
+  @js.native
+  sealed trait timeTravel
+    extends StObject
+       with SpinnerName
+  inline def timeTravel: timeTravel = "timeTravel".asInstanceOf[timeTravel]
   
   @js.native
   sealed trait toggle

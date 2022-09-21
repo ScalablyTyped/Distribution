@@ -110,7 +110,7 @@ object Bundle {
     
     inline def setSupportedPlatformsUndefined: Self = StObject.set(x, "supportedPlatforms", js.undefined)
     
-    inline def setSupportedPlatformsVarargs(value: InstancePlatform*): Self = StObject.set(x, "supportedPlatforms", js.Array(value :_*))
+    inline def setSupportedPlatformsVarargs(value: InstancePlatform*): Self = StObject.set(x, "supportedPlatforms", js.Array(value*))
     
     inline def setTransferPerMonthInGb(value: integer): Self = StObject.set(x, "transferPerMonthInGb", value.asInstanceOf[js.Any])
     

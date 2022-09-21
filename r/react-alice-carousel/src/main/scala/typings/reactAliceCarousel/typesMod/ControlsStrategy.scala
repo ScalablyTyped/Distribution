@@ -14,6 +14,12 @@ object ControlsStrategy extends StObject {
   def apply(value: String): js.UndefOr[ControlsStrategy & String] = js.native
   
   @js.native
+  sealed trait ALTERNATE
+    extends StObject
+       with ControlsStrategy
+  /* "alternate" */ val ALTERNATE: typings.reactAliceCarousel.typesMod.ControlsStrategy.ALTERNATE & String = js.native
+  
+  @js.native
   sealed trait DEFAULT
     extends StObject
        with ControlsStrategy

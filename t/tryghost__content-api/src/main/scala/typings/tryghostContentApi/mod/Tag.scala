@@ -9,7 +9,12 @@ trait Tag
   extends StObject
      with Identification
      with Metadata
+     with SocialMedia
      with GhostData {
+  
+  var accent_color: js.UndefOr[Nullable[String]] = js.undefined
+  
+  var canonical_url: js.UndefOr[Nullable[String]] = js.undefined
   
   var count: js.UndefOr[Posts] = js.undefined
   
@@ -31,6 +36,18 @@ object Tag {
   }
   
   extension [Self <: Tag](x: Self) {
+    
+    inline def setAccent_color(value: Nullable[String]): Self = StObject.set(x, "accent_color", value.asInstanceOf[js.Any])
+    
+    inline def setAccent_colorNull: Self = StObject.set(x, "accent_color", null)
+    
+    inline def setAccent_colorUndefined: Self = StObject.set(x, "accent_color", js.undefined)
+    
+    inline def setCanonical_url(value: Nullable[String]): Self = StObject.set(x, "canonical_url", value.asInstanceOf[js.Any])
+    
+    inline def setCanonical_urlNull: Self = StObject.set(x, "canonical_url", null)
+    
+    inline def setCanonical_urlUndefined: Self = StObject.set(x, "canonical_url", js.undefined)
     
     inline def setCount(value: Posts): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,7 @@ trait ArrayConstructor extends StObject {
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
-  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): Array[U] = js.native
+  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: Any): Array[U] = js.native
   /**
     * Creates an array from an iterable object.
     * @param iterable An iterable object to convert to an array.
@@ -33,7 +33,7 @@ trait ArrayConstructor extends StObject {
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from[T, U](iterable: IterableShim[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
-  def from[T, U](iterable: IterableShim[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): Array[U] = js.native
+  def from[T, U](iterable: IterableShim[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: Any): Array[U] = js.native
   
   /**
     * Returns a new array from a set of elements.

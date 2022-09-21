@@ -32,6 +32,11 @@ trait AssumeRoleWithWebIdentityResponse extends StObject {
   var Provider: js.UndefOr[Issuer] = js.undefined
   
   /**
+    * The value of the source identity that is returned in the JSON web token (JWT) from the identity provider. You can require users to set a source identity value when they assume a role. You do this by using the sts:SourceIdentity condition key in a role trust policy. That way, actions that are taken with the role are associated with that user. After the source identity is set, the value cannot be changed. It is present in the request for all actions that are taken by the role and persists across chained role sessions. You can configure your identity provider to use an attribute associated with your users, like user name or email, as the source identity when calling AssumeRoleWithWebIdentity. You do this by adding a claim to the JSON web token. To learn more about OIDC tokens and claims, see Using Tokens with User Pools in the Amazon Cognito Developer Guide. For more information about using source identity, see Monitor and control actions taken with assumed roles in the IAM User Guide. The regex used to validate this parameter is a string of characters consisting of upper- and lower-case alphanumeric characters with no spaces. You can also include underscores or any of the following characters: =,.@-
+    */
+  var SourceIdentity: js.UndefOr[sourceIdentityType] = js.undefined
+  
+  /**
     * The unique user identifier that is returned by the identity provider. This identifier is associated with the WebIdentityToken that was submitted with the AssumeRoleWithWebIdentity call. The identifier is typically unique to the user and the application that acquired the WebIdentityToken (pairwise identifier). For OpenID Connect ID tokens, this field contains the value returned by the identity provider as the token's sub (Subject) claim. 
     */
   var SubjectFromWebIdentityToken: js.UndefOr[webIdentitySubjectType] = js.undefined
@@ -64,6 +69,10 @@ object AssumeRoleWithWebIdentityResponse {
     inline def setProvider(value: Issuer): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     
     inline def setProviderUndefined: Self = StObject.set(x, "Provider", js.undefined)
+    
+    inline def setSourceIdentity(value: sourceIdentityType): Self = StObject.set(x, "SourceIdentity", value.asInstanceOf[js.Any])
+    
+    inline def setSourceIdentityUndefined: Self = StObject.set(x, "SourceIdentity", js.undefined)
     
     inline def setSubjectFromWebIdentityToken(value: webIdentitySubjectType): Self = StObject.set(x, "SubjectFromWebIdentityToken", value.asInstanceOf[js.Any])
     

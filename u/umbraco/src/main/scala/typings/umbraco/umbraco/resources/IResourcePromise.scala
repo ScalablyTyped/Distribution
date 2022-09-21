@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IResourcePromise extends StObject {
   
-  var data: js.Any
+  var data: Any
   
   var errorMsg: String
   
@@ -14,14 +14,14 @@ trait IResourcePromise extends StObject {
 }
 object IResourcePromise {
   
-  inline def apply(data: js.Any, errorMsg: String, status: Double): IResourcePromise = {
+  inline def apply(data: Any, errorMsg: String, status: Double): IResourcePromise = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errorMsg = errorMsg.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourcePromise]
   }
   
   extension [Self <: IResourcePromise](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
     

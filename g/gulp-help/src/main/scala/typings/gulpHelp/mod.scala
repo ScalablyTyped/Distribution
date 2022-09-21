@@ -58,6 +58,11 @@ object mod {
       * Hide all tasks with no help message defined. Useful when including 3rd party tasks
       */
     var hideEmpty: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Object documenting options which can be passed to your task
+      */
+    var options: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GulpHelpOptions {
     
@@ -76,7 +81,7 @@ object mod {
       
       inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -89,6 +94,10 @@ object mod {
       inline def setHideEmpty(value: Boolean): Self = StObject.set(x, "hideEmpty", value.asInstanceOf[js.Any])
       
       inline def setHideEmptyUndefined: Self = StObject.set(x, "hideEmpty", js.undefined)
+      
+      inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -104,7 +113,7 @@ object mod {
       * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
       * @param option task options
       */
-    def apply(name: String): js.Any = js.native
+    def apply(name: String): Any = js.native
     /**
       * Define a task.
       *
@@ -113,13 +122,13 @@ object mod {
       * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
       * @param option task options
       */
-    def apply(name: String, deps: js.Array[String]): js.Any = js.native
-    def apply(name: String, deps: js.Array[String], fn: Unit, option: TaskOptions): js.Any = js.native
-    def apply(name: String, deps: js.Array[String], fn: TaskCallback): js.Any = js.native
-    def apply(name: String, deps: js.Array[String], fn: TaskCallback, option: TaskOptions): js.Any = js.native
-    def apply(name: String, fn: Unit, option: TaskOptions): js.Any = js.native
-    def apply(name: String, fn: TaskCallback): js.Any = js.native
-    def apply(name: String, fn: TaskCallback, option: TaskOptions): js.Any = js.native
+    def apply(name: String, deps: js.Array[String]): Any = js.native
+    def apply(name: String, deps: js.Array[String], fn: Unit, option: TaskOptions): Any = js.native
+    def apply(name: String, deps: js.Array[String], fn: TaskCallback): Any = js.native
+    def apply(name: String, deps: js.Array[String], fn: TaskCallback, option: TaskOptions): Any = js.native
+    def apply(name: String, fn: Unit, option: TaskOptions): Any = js.native
+    def apply(name: String, fn: TaskCallback): Any = js.native
+    def apply(name: String, fn: TaskCallback, option: TaskOptions): Any = js.native
     /**
       * Define a task.
       *
@@ -128,7 +137,7 @@ object mod {
       * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
       * @param option task options
       */
-    def apply(name: String, help: HelpOption): js.Any = js.native
+    def apply(name: String, help: HelpOption): Any = js.native
     /**
       * Define a task.
       *
@@ -138,13 +147,13 @@ object mod {
       * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
       * @param option task options
       */
-    def apply(name: String, help: HelpOption, deps: js.Array[String]): js.Any = js.native
-    def apply(name: String, help: HelpOption, deps: js.Array[String], fn: Unit, option: TaskOptions): js.Any = js.native
-    def apply(name: String, help: HelpOption, deps: js.Array[String], fn: TaskCallback): js.Any = js.native
-    def apply(name: String, help: HelpOption, deps: js.Array[String], fn: TaskCallback, option: TaskOptions): js.Any = js.native
-    def apply(name: String, help: HelpOption, fn: Unit, option: TaskOptions): js.Any = js.native
-    def apply(name: String, help: HelpOption, fn: TaskCallback): js.Any = js.native
-    def apply(name: String, help: HelpOption, fn: TaskCallback, option: TaskOptions): js.Any = js.native
+    def apply(name: String, help: HelpOption, deps: js.Array[String]): Any = js.native
+    def apply(name: String, help: HelpOption, deps: js.Array[String], fn: Unit, option: TaskOptions): Any = js.native
+    def apply(name: String, help: HelpOption, deps: js.Array[String], fn: TaskCallback): Any = js.native
+    def apply(name: String, help: HelpOption, deps: js.Array[String], fn: TaskCallback, option: TaskOptions): Any = js.native
+    def apply(name: String, help: HelpOption, fn: Unit, option: TaskOptions): Any = js.native
+    def apply(name: String, help: HelpOption, fn: TaskCallback): Any = js.native
+    def apply(name: String, help: HelpOption, fn: TaskCallback, option: TaskOptions): Any = js.native
   }
   
   trait TaskOptions extends StObject {
@@ -172,7 +181,7 @@ object mod {
       
       inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
       
       inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,7 @@ object StartChangeSetRequest {
     
     inline def setChangeSetNameUndefined: Self = StObject.set(x, "ChangeSetName", js.undefined)
     
-    inline def setChangeSetVarargs(value: Change*): Self = StObject.set(x, "ChangeSet", js.Array(value :_*))
+    inline def setChangeSetVarargs(value: Change*): Self = StObject.set(x, "ChangeSet", js.Array(value*))
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

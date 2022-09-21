@@ -14,7 +14,7 @@ trait VirtualMFADevice extends StObject {
   /**
     * The date and time on which the virtual MFA device was enabled.
     */
-  var EnableDate: js.UndefOr[dateType] = js.undefined
+  var EnableDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  A QR code PNG image that encodes otpauth://totp/$virtualMFADeviceName@$AccountName?secret=$Base32String where $virtualMFADeviceName is one of the create call arguments. AccountName is the user name if set (otherwise, the account ID otherwise), and Base32String is the seed in base32 format. The Base32String value is base64-encoded. 
@@ -25,6 +25,11 @@ trait VirtualMFADevice extends StObject {
     * The serial number associated with VirtualMFADevice.
     */
   var SerialNumber: serialNumberType
+  
+  /**
+    * A list of tags that are attached to the virtual MFA device. For more information about tagging, see Tagging IAM resources in the IAM User Guide.
+    */
+  var Tags: js.UndefOr[tagListType] = js.undefined
   
   /**
     * The IAM user associated with this virtual MFA device.
@@ -44,7 +49,7 @@ object VirtualMFADevice {
     
     inline def setBase32StringSeedUndefined: Self = StObject.set(x, "Base32StringSeed", js.undefined)
     
-    inline def setEnableDate(value: dateType): Self = StObject.set(x, "EnableDate", value.asInstanceOf[js.Any])
+    inline def setEnableDate(value: js.Date): Self = StObject.set(x, "EnableDate", value.asInstanceOf[js.Any])
     
     inline def setEnableDateUndefined: Self = StObject.set(x, "EnableDate", js.undefined)
     
@@ -53,6 +58,12 @@ object VirtualMFADevice {
     inline def setQRCodePNGUndefined: Self = StObject.set(x, "QRCodePNG", js.undefined)
     
     inline def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setUser(value: User): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     

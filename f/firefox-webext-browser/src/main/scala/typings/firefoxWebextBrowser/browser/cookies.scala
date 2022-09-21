@@ -38,6 +38,9 @@ object cookies {
     /** The name of the cookie. */
     var name: String
     
+    /** The cookie's storage partition, if any. null if not partitioned. */
+    var partitionKey: js.UndefOr[PartitionKey] = js.undefined
+    
     /** The path of the cookie. */
     var path: String
     
@@ -93,6 +96,10 @@ object cookies {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
+      inline def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+      
+      inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
+      
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setSameSite(value: SameSiteStatus): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
@@ -136,7 +143,7 @@ object cookies {
       
       inline def setTabIds(value: js.Array[Double]): Self = StObject.set(x, "tabIds", value.asInstanceOf[js.Any])
       
-      inline def setTabIdsVarargs(value: Double*): Self = StObject.set(x, "tabIds", js.Array(value :_*))
+      inline def setTabIdsVarargs(value: Double*): Self = StObject.set(x, "tabIds", js.Array(value*))
     }
   }
   
@@ -153,6 +160,11 @@ object cookies {
     
     /** Filters the cookies by name. */
     var name: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Selects a specific storage partition to look up cookies. Defaults to null, in which case only non-partitioned cookies are retrieved. If an object iis passed, partitioned cookies are also included, and filtered based on the keys present in the given PartitionKey description. An empty object ({}) returns all cookies (partitioned + unpartitioned), a non-empty object (e.g. {topLevelSite: '...'}) only returns cookies whose partition match all given attributes.
+      */
+    var partitionKey: js.UndefOr[PartitionKey] = js.undefined
     
     /** Restricts the retrieved cookies to those whose path exactly matches this string. */
     var path: js.UndefOr[String] = js.undefined
@@ -192,6 +204,10 @@ object cookies {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
+      inline def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+      
+      inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
+      
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
@@ -226,6 +242,11 @@ object cookies {
     var name: String
     
     /**
+      * The storage partition, if the cookie is part of partitioned storage. By default, only non-partitioned cookies are returned.
+      */
+    var partitionKey: js.UndefOr[PartitionKey] = js.undefined
+    
+    /**
       * The ID of the cookie store in which to look for the cookie. By default, the current execution context's cookie store will be used.
       */
     var storeId: js.UndefOr[String] = js.undefined
@@ -249,6 +270,10 @@ object cookies {
       inline def setFirstPartyDomainUndefined: Self = StObject.set(x, "firstPartyDomain", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+      
+      inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
       
       inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
       
@@ -310,6 +335,29 @@ object cookies {
     }
   }
   
+  /**
+    * The description of the storage partition of a cookie. This object may be omitted (null) if a cookie is not partitioned.
+    */
+  trait PartitionKey extends StObject {
+    
+    /** The first-party URL of the cookie, if the cookie is in storage partitioned by the top-level site. */
+    var topLevelSite: js.UndefOr[String] = js.undefined
+  }
+  object PartitionKey {
+    
+    inline def apply(): PartitionKey = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartitionKey]
+    }
+    
+    extension [Self <: PartitionKey](x: Self) {
+      
+      inline def setTopLevelSite(value: String): Self = StObject.set(x, "topLevelSite", value.asInstanceOf[js.Any])
+      
+      inline def setTopLevelSiteUndefined: Self = StObject.set(x, "topLevelSite", js.undefined)
+    }
+  }
+  
   /** Information to identify the cookie to remove. */
   trait RemoveDetails extends StObject {
     
@@ -320,6 +368,11 @@ object cookies {
     
     /** The name of the cookie to remove. */
     var name: String
+    
+    /**
+      * The storage partition, if the cookie is part of partitioned storage. By default, non-partitioned storage is used.
+      */
+    var partitionKey: js.UndefOr[PartitionKey] = js.undefined
     
     /**
       * The ID of the cookie store to look in for the cookie. If unspecified, the cookie is looked for by default in the current execution context's cookie store.
@@ -346,6 +399,10 @@ object cookies {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
+      inline def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+      
+      inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
+      
       inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
       
       inline def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
@@ -365,6 +422,9 @@ object cookies {
     /** The name of the cookie that's been removed. */
     var name: String
     
+    /** The storage partition, if the cookie is part of partitioned storage. null if not partitioned. */
+    var partitionKey: js.UndefOr[PartitionKey] = js.undefined
+    
     /** The ID of the cookie store from which the cookie was removed. */
     var storeId: String
     
@@ -383,6 +443,10 @@ object cookies {
       inline def setFirstPartyDomain(value: String): Self = StObject.set(x, "firstPartyDomain", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+      
+      inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
       
       inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
       
@@ -430,6 +494,11 @@ object cookies {
     
     /** The name of the cookie. Empty by default if omitted. */
     var name: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The storage partition, if the cookie is part of partitioned storage. By default, non-partitioned storage is used.
+      */
+    var partitionKey: js.UndefOr[PartitionKey] = js.undefined
     
     /** The path of the cookie. Defaults to the path portion of the url parameter. */
     var path: js.UndefOr[String] = js.undefined
@@ -481,6 +550,10 @@ object cookies {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setPartitionKey(value: PartitionKey): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+      
+      inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

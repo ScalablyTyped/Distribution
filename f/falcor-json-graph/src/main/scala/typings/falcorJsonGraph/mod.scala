@@ -13,17 +13,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def atom(value: js.Any): Atom_ = ^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any]).asInstanceOf[Atom_]
-  inline def atom(value: js.Any, props: Sentinel): Atom_ = (^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Atom_]
+  inline def atom(value: Any): Atom_ = ^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any]).asInstanceOf[Atom_]
+  inline def atom(value: Any, props: Sentinel): Atom_ = (^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Atom_]
   
-  inline def error(errorValue: js.Any): Error_ = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any]).asInstanceOf[Error_]
-  inline def error(errorValue: js.Any, props: Sentinel): Error_ = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error_]
+  inline def error(errorValue: Any): Error_ = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any]).asInstanceOf[Error_]
+  inline def error(errorValue: Any, props: Sentinel): Error_ = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error_]
   
   inline def pathInvalidation(path: String): InvalidPath = ^.asInstanceOf[js.Dynamic].applyDynamic("pathInvalidation")(path.asInstanceOf[js.Any]).asInstanceOf[InvalidPath]
   inline def pathInvalidation(path: PathSet): InvalidPath = ^.asInstanceOf[js.Dynamic].applyDynamic("pathInvalidation")(path.asInstanceOf[js.Any]).asInstanceOf[InvalidPath]
   
-  inline def pathValue(path: String, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
-  inline def pathValue(path: PathSet, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
+  inline def pathValue(path: String, value: Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
+  inline def pathValue(path: PathSet, value: Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
   
   inline def ref(path: String): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
   inline def ref(path: String, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
@@ -41,11 +41,11 @@ object mod {
     @JSName("$type")
     var $type: atom
     
-    var value: js.Any
+    var value: Any
   }
   object Atom_ {
     
-    inline def apply(value: js.Any): Atom_ = {
+    inline def apply(value: Any): Atom_ = {
       val __obj = js.Dynamic.literal($type = "atom", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Atom_]
     }
@@ -54,7 +54,7 @@ object mod {
       
       inline def set$type(value: atom): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,11 +65,11 @@ object mod {
     @JSName("$type")
     var $type: error
     
-    var value: js.Any
+    var value: Any
   }
   object Error_ {
     
-    inline def apply(value: js.Any): Error_ = {
+    inline def apply(value: Any): Error_ = {
       val __obj = js.Dynamic.literal($type = "error", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error_]
     }
@@ -78,7 +78,7 @@ object mod {
       
       inline def set$type(value: error): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,7 +101,7 @@ object mod {
       
       inline def setPath(value: PathSet): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: KeySet*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: KeySet*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
@@ -128,7 +128,7 @@ object mod {
   /**
     * JavaScript Object Notation Graph (JSONGraph) is a notation for expressing graphs in JSON. For more information, see the [JSONGraph Guide]{@link http://netflix.github.io/falcor/documentation/jsongraph.html}.
     **/
-  type JSONGraph = js.Any
+  type JSONGraph = Any
   
   /**
     * An envelope that wraps a {@link JSONGraph} fragment.
@@ -154,7 +154,7 @@ object mod {
       
       inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
       
-      inline def setInvalidateVarargs(value: PathSet*): Self = StObject.set(x, "invalidate", js.Array(value :_*))
+      inline def setInvalidateVarargs(value: PathSet*): Self = StObject.set(x, "invalidate", js.Array(value*))
       
       inline def setJsonGraph(value: JSONGraph): Self = StObject.set(x, "jsonGraph", value.asInstanceOf[js.Any])
       
@@ -162,7 +162,7 @@ object mod {
       
       inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      inline def setPathsVarargs(value: PathSet*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: PathSet*): Self = StObject.set(x, "paths", js.Array(value*))
     }
   }
   
@@ -193,11 +193,11 @@ object mod {
     
     var path: String | PathSet
     
-    var value: js.Any
+    var value: Any
   }
   object PathValue_ {
     
-    inline def apply(path: String | PathSet, value: js.Any): PathValue_ = {
+    inline def apply(path: String | PathSet, value: Any): PathValue_ = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathValue_]
     }
@@ -206,9 +206,9 @@ object mod {
       
       inline def setPath(value: String | PathSet): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: KeySet*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: KeySet*): Self = StObject.set(x, "path", js.Array(value*))
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -268,7 +268,7 @@ object mod {
       
       inline def setValue(value: Path): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: Key*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Key*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   

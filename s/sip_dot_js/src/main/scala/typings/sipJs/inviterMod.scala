@@ -18,7 +18,7 @@ object inviterMod {
   
   @JSImport("sip.js/lib/api/inviter", "Inviter")
   @js.native
-  class Inviter protected () extends Session {
+  open class Inviter protected () extends Session {
     /**
       * Constructs a new instance of the `Inviter` class.
       * @param userAgent - User agent. See {@link UserAgent} for details.
@@ -56,30 +56,30 @@ object inviterMod {
     def cancel(): js.Promise[Unit] = js.native
     def cancel(options: InviterCancelOptions): js.Promise[Unit] = js.native
     
-    /* private */ var disposeEarlyMedia: js.Any = js.native
+    /* private */ var disposeEarlyMedia: Any = js.native
     
     /** True if dispose() has been called. */
-    /* private */ var disposed: js.Any = js.native
+    /* private */ var disposed: Any = js.native
     
     /** True if early media use is enabled. */
-    /* private */ var earlyMedia: js.Any = js.native
+    /* private */ var earlyMedia: Any = js.native
     
     /** The early media session. */
-    /* private */ var earlyMediaDialog: js.Any = js.native
+    /* private */ var earlyMediaDialog: Any = js.native
     
     /** The early media session description handlers. */
-    /* private */ var earlyMediaSessionDescriptionHandlers: js.Any = js.native
+    /* private */ var earlyMediaSessionDescriptionHandlers: Any = js.native
     
     /** Our From tag. */
-    /* private */ var fromTag: js.Any = js.native
+    /* private */ var fromTag: Any = js.native
     
     def invite(options: InviterInviteOptions): js.Promise[OutgoingInviteRequest] = js.native
     
     /** True if initial INVITE without SDP. */
-    /* private */ var inviteWithoutSdp: js.Any = js.native
+    /* private */ var inviteWithoutSdp: Any = js.native
     
     /** True if cancel() was called. */
-    /* private */ var isCanceled: js.Any = js.native
+    /* private */ var isCanceled: Any = js.native
     
     /**
       * The identity of the local user.
@@ -87,43 +87,43 @@ object inviterMod {
     @JSName("localIdentity")
     def localIdentity_MInviter: NameAddrHeader = js.native
     
-    /* private */ var notifyReferer: js.Any = js.native
+    /* private */ var notifyReferer: Any = js.native
     
     /**
       * Handle final response to initial INVITE.
       * @param inviteResponse - 2xx response.
       */
-    /* private */ var onAccept: js.Any = js.native
+    /* private */ var onAccept: Any = js.native
     
     /**
       * Handle provisional response to initial INVITE.
       * @param inviteResponse - 1xx response.
       */
-    /* private */ var onProgress: js.Any = js.native
+    /* private */ var onProgress: Any = js.native
     
     /**
       * Handle final response to initial INVITE.
       * @param inviteResponse - 3xx response.
       */
-    /* private */ var onRedirect: js.Any = js.native
+    /* private */ var onRedirect: Any = js.native
     
     /**
       * Handle final response to initial INVITE.
       * @param inviteResponse - 4xx, 5xx, or 6xx response.
       */
-    /* private */ var onReject: js.Any = js.native
+    /* private */ var onReject: Any = js.native
     
     /**
       * Handle final response to initial INVITE.
       * @param inviteResponse - 100 response.
       */
-    /* private */ var onTrying: js.Any = js.native
+    /* private */ var onTrying: Any = js.native
     
     /** Initial INVITE request sent by core. Undefined until sent. */
-    /* private */ var outgoingInviteRequest: js.Any = js.native
+    /* private */ var outgoingInviteRequest: Any = js.native
     
     /** Initial INVITE message provided to core to send. */
-    /* private */ var outgoingRequestMessage: js.Any = js.native
+    /* private */ var outgoingRequestMessage: Any = js.native
     
     /**
       * The identity of the remote user.
@@ -175,6 +175,6 @@ object inviterMod {
       *
       * https://tools.ietf.org/html/rfc3261#section-13.2.1
       */
-    /* private */ var sendInvite: js.Any = js.native
+    /* private */ var sendInvite: Any = js.native
   }
 }

@@ -12,6 +12,11 @@ trait ConnectorMetadata extends StObject {
   var Amplitude: js.UndefOr[AmplitudeMetadata] = js.undefined
   
   /**
+    *  The connector metadata specific to Amazon Connect Customer Profiles. 
+    */
+  var CustomerProfiles: js.UndefOr[CustomerProfilesMetadata] = js.undefined
+  
+  /**
     *  The connector metadata specific to Datadog. 
     */
   var Datadog: js.UndefOr[DatadogMetadata] = js.undefined
@@ -32,6 +37,11 @@ trait ConnectorMetadata extends StObject {
   var GoogleAnalytics: js.UndefOr[GoogleAnalyticsMetadata] = js.undefined
   
   /**
+    *  The connector metadata specific to Amazon Honeycode. 
+    */
+  var Honeycode: js.UndefOr[HoneycodeMetadata] = js.undefined
+  
+  /**
     *  The connector metadata specific to Infor Nexus. 
     */
   var InforNexus: js.UndefOr[InforNexusMetadata] = js.undefined
@@ -50,6 +60,8 @@ trait ConnectorMetadata extends StObject {
     *  The connector metadata specific to Amazon S3. 
     */
   var S3: js.UndefOr[S3Metadata] = js.undefined
+  
+  var SAPOData: js.UndefOr[SAPODataMetadata] = js.undefined
   
   /**
     *  The connector metadata specific to Salesforce. 
@@ -82,6 +94,11 @@ trait ConnectorMetadata extends StObject {
   var Trendmicro: js.UndefOr[TrendmicroMetadata] = js.undefined
   
   /**
+    *  The connector metadata specific to Upsolver. 
+    */
+  var Upsolver: js.UndefOr[UpsolverMetadata] = js.undefined
+  
+  /**
     *  The connector metadata specific to Veeva. 
     */
   var Veeva: js.UndefOr[VeevaMetadata] = js.undefined
@@ -104,6 +121,10 @@ object ConnectorMetadata {
     
     inline def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
     
+    inline def setCustomerProfiles(value: CustomerProfilesMetadata): Self = StObject.set(x, "CustomerProfiles", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerProfilesUndefined: Self = StObject.set(x, "CustomerProfiles", js.undefined)
+    
     inline def setDatadog(value: DatadogMetadata): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
     
     inline def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
@@ -120,6 +141,10 @@ object ConnectorMetadata {
     
     inline def setGoogleAnalyticsUndefined: Self = StObject.set(x, "GoogleAnalytics", js.undefined)
     
+    inline def setHoneycode(value: HoneycodeMetadata): Self = StObject.set(x, "Honeycode", value.asInstanceOf[js.Any])
+    
+    inline def setHoneycodeUndefined: Self = StObject.set(x, "Honeycode", js.undefined)
+    
     inline def setInforNexus(value: InforNexusMetadata): Self = StObject.set(x, "InforNexus", value.asInstanceOf[js.Any])
     
     inline def setInforNexusUndefined: Self = StObject.set(x, "InforNexus", js.undefined)
@@ -135,6 +160,10 @@ object ConnectorMetadata {
     inline def setS3(value: S3Metadata): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
     inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+    
+    inline def setSAPOData(value: SAPODataMetadata): Self = StObject.set(x, "SAPOData", value.asInstanceOf[js.Any])
+    
+    inline def setSAPODataUndefined: Self = StObject.set(x, "SAPOData", js.undefined)
     
     inline def setSalesforce(value: SalesforceMetadata): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     
@@ -159,6 +188,10 @@ object ConnectorMetadata {
     inline def setTrendmicro(value: TrendmicroMetadata): Self = StObject.set(x, "Trendmicro", value.asInstanceOf[js.Any])
     
     inline def setTrendmicroUndefined: Self = StObject.set(x, "Trendmicro", js.undefined)
+    
+    inline def setUpsolver(value: UpsolverMetadata): Self = StObject.set(x, "Upsolver", value.asInstanceOf[js.Any])
+    
+    inline def setUpsolverUndefined: Self = StObject.set(x, "Upsolver", js.undefined)
     
     inline def setVeeva(value: VeevaMetadata): Self = StObject.set(x, "Veeva", value.asInstanceOf[js.Any])
     

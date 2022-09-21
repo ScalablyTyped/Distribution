@@ -1,23 +1,30 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.breakWord
-import typings.devextreme.devextremeStrings.ellipsis
-import typings.devextreme.devextremeStrings.hide
-import typings.devextreme.devextremeStrings.none
-import typings.devextreme.devextremeStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait WordWrap extends StObject {
   
+  /**
+    * Specifies the font settings of the tile labels.
+    */
   var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
+  /**
+    * Specifies what to do with labels that overflow their tiles after applying wordWrap: hide, truncate them and display an ellipsis, or do nothing.
+    */
+  var textOverflow: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.TextOverflow] = js.undefined
   
+  /**
+    * Changes the visibility of the tile labels.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
   
-  var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
+  /**
+    * Specifies how to wrap texts that do not fit into a single line.
+    */
+  var wordWrap: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.WordWrap] = js.undefined
 }
 object WordWrap {
   
@@ -32,7 +39,7 @@ object WordWrap {
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setTextOverflow(value: ellipsis | hide | none): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+    inline def setTextOverflow(value: typings.devextreme.mod.DevExpress.common.charts.TextOverflow): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
     inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
     
@@ -40,7 +47,7 @@ object WordWrap {
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    inline def setWordWrap(value: normal | breakWord | none): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+    inline def setWordWrap(value: typings.devextreme.mod.DevExpress.common.charts.WordWrap): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     
     inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
   }

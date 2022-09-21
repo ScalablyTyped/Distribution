@@ -64,7 +64,7 @@ object ReleaseApprovalPendingEvent {
     
     inline def setCompletedApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "completedApprovals", value.asInstanceOf[js.Any])
     
-    inline def setCompletedApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "completedApprovals", js.Array(value :_*))
+    inline def setCompletedApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "completedApprovals", js.Array(value*))
     
     inline def setDefinitionName(value: String): Self = StObject.set(x, "definitionName", value.asInstanceOf[js.Any])
     
@@ -76,13 +76,13 @@ object ReleaseApprovalPendingEvent {
     
     inline def setEnvironments(value: js.Array[ReleaseEnvironment]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
-    inline def setEnvironmentsVarargs(value: ReleaseEnvironment*): Self = StObject.set(x, "environments", js.Array(value :_*))
+    inline def setEnvironmentsVarargs(value: ReleaseEnvironment*): Self = StObject.set(x, "environments", js.Array(value*))
     
     inline def setIsMultipleRankApproval(value: Boolean): Self = StObject.set(x, "isMultipleRankApproval", value.asInstanceOf[js.Any])
     
     inline def setPendingApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "pendingApprovals", value.asInstanceOf[js.Any])
     
-    inline def setPendingApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "pendingApprovals", js.Array(value :_*))
+    inline def setPendingApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "pendingApprovals", js.Array(value*))
     
     inline def setReleaseCreator(value: String): Self = StObject.set(x, "releaseCreator", value.asInstanceOf[js.Any])
     

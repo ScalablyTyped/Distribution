@@ -1,5 +1,7 @@
 package typings.zingchart.anon
 
+import typings.zingchart.es6Mod.zingchart.plotLabel
+import typings.zingchart.es6Mod.zingchart.scaleLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,13 +29,13 @@ trait Exact extends StObject {
     * Can be used to create custom dashed or dotted lines when used with line-segment-size. This will control the size of the gaps betwe
     * en each line segment. 4 | "6px" | ...
     */
-  var `line-gap-size`: js.UndefOr[js.Any] = js.undefined
+  var `line-gap-size`: js.UndefOr[Any] = js.undefined
   
   /**
     * Can be used to create custom dashed or dotted lines when used with line-gap-size. This will control the size of the visible segmen
     * t of line. 4 | "6px" | ...
     */
-  var `line-segment-size`: js.UndefOr[js.Any] = js.undefined
+  var `line-segment-size`: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets the style applied to lines and borders of the object. "solid" | "dotted" | "dashed"
@@ -43,18 +45,34 @@ trait Exact extends StObject {
   /**
     * Sets the line width of the object. 4 | "6px" | ...
     */
-  var `line-width`: js.UndefOr[js.Any] = js.undefined
+  var `line-width`: js.UndefOr[Any] = js.undefined
+  
+  var lineColor: js.UndefOr[String] = js.undefined
+  
+  var lineGapSize: js.UndefOr[Any] = js.undefined
+  
+  var lineSegmentSize: js.UndefOr[Any] = js.undefined
+  
+  var lineStyle: js.UndefOr[String] = js.undefined
+  
+  var lineWidth: js.UndefOr[Any] = js.undefined
   
   var marker: js.UndefOr[Backgroundcolor] = js.undefined
   
-  var `plot-label`: js.UndefOr[Backgroundcolor1] = js.undefined
+  var `plot-label`: js.UndefOr[plotLabel] = js.undefined
+  
+  var plotLabel: js.UndefOr[typings.zingchart.es6Mod.zingchart.plotLabel] = js.undefined
   
   /**
     * Reverses the order of items in plotLabel. Generally used with positive stacked charts.
     */
   var `reverse-series`: js.UndefOr[Boolean] = js.undefined
   
-  var `scale-label`: js.UndefOr[Backgroundcolor2] = js.undefined
+  var reverseSeries: js.UndefOr[Boolean] = js.undefined
+  
+  var `scale-label`: js.UndefOr[scaleLabel] = js.undefined
+  
+  var scaleLabel: js.UndefOr[typings.zingchart.es6Mod.zingchart.scaleLabel] = js.undefined
   
   /**
     * X-Axis Crosshairs Only: For graphsets with multiple chart objects, setting the attribute to true in "crosshair-x" will allow you t
@@ -101,11 +119,11 @@ object Exact {
     
     inline def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
     
-    inline def `setLine-gap-size`(value: js.Any): Self = StObject.set(x, "line-gap-size", value.asInstanceOf[js.Any])
+    inline def `setLine-gap-size`(value: Any): Self = StObject.set(x, "line-gap-size", value.asInstanceOf[js.Any])
     
     inline def `setLine-gap-sizeUndefined`: Self = StObject.set(x, "line-gap-size", js.undefined)
     
-    inline def `setLine-segment-size`(value: js.Any): Self = StObject.set(x, "line-segment-size", value.asInstanceOf[js.Any])
+    inline def `setLine-segment-size`(value: Any): Self = StObject.set(x, "line-segment-size", value.asInstanceOf[js.Any])
     
     inline def `setLine-segment-sizeUndefined`: Self = StObject.set(x, "line-segment-size", js.undefined)
     
@@ -113,25 +131,57 @@ object Exact {
     
     inline def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
     
-    inline def `setLine-width`(value: js.Any): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
+    inline def `setLine-width`(value: Any): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
     
     inline def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
+    
+    inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    
+    inline def setLineGapSize(value: Any): Self = StObject.set(x, "lineGapSize", value.asInstanceOf[js.Any])
+    
+    inline def setLineGapSizeUndefined: Self = StObject.set(x, "lineGapSize", js.undefined)
+    
+    inline def setLineSegmentSize(value: Any): Self = StObject.set(x, "lineSegmentSize", value.asInstanceOf[js.Any])
+    
+    inline def setLineSegmentSizeUndefined: Self = StObject.set(x, "lineSegmentSize", js.undefined)
+    
+    inline def setLineStyle(value: String): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    
+    inline def setLineWidth(value: Any): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     inline def setMarker(value: Backgroundcolor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    inline def `setPlot-label`(value: Backgroundcolor1): Self = StObject.set(x, "plot-label", value.asInstanceOf[js.Any])
+    inline def `setPlot-label`(value: plotLabel): Self = StObject.set(x, "plot-label", value.asInstanceOf[js.Any])
     
     inline def `setPlot-labelUndefined`: Self = StObject.set(x, "plot-label", js.undefined)
+    
+    inline def setPlotLabel(value: plotLabel): Self = StObject.set(x, "plotLabel", value.asInstanceOf[js.Any])
+    
+    inline def setPlotLabelUndefined: Self = StObject.set(x, "plotLabel", js.undefined)
     
     inline def `setReverse-series`(value: Boolean): Self = StObject.set(x, "reverse-series", value.asInstanceOf[js.Any])
     
     inline def `setReverse-seriesUndefined`: Self = StObject.set(x, "reverse-series", js.undefined)
     
-    inline def `setScale-label`(value: Backgroundcolor2): Self = StObject.set(x, "scale-label", value.asInstanceOf[js.Any])
+    inline def setReverseSeries(value: Boolean): Self = StObject.set(x, "reverseSeries", value.asInstanceOf[js.Any])
+    
+    inline def setReverseSeriesUndefined: Self = StObject.set(x, "reverseSeries", js.undefined)
+    
+    inline def `setScale-label`(value: scaleLabel): Self = StObject.set(x, "scale-label", value.asInstanceOf[js.Any])
     
     inline def `setScale-labelUndefined`: Self = StObject.set(x, "scale-label", js.undefined)
+    
+    inline def setScaleLabel(value: scaleLabel): Self = StObject.set(x, "scaleLabel", value.asInstanceOf[js.Any])
+    
+    inline def setScaleLabelUndefined: Self = StObject.set(x, "scaleLabel", js.undefined)
     
     inline def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     

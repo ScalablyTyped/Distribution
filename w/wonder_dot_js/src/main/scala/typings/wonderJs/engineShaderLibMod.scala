@@ -20,7 +20,7 @@ object engineShaderLibMod {
     
     /* protected */ def addUniformVariable(variableArr: js.Array[String]): Unit = js.native
     
-    var attributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderVariable> */ js.Any = js.native
+    var attributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderVariable> */ Any = js.native
     
     var fsChunk: GLSLChunk = js.native
     
@@ -30,9 +30,9 @@ object engineShaderLibMod {
     
     var fsSourceDefine: String = js.native
     
-    var fsSourceDefineList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ js.Any = js.native
+    var fsSourceDefineList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ Any = js.native
     
-    var fsSourceExtensionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<string> */ js.Any = js.native
+    var fsSourceExtensionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<string> */ Any = js.native
     
     var fsSourceFuncDeclare: String = js.native
     
@@ -42,15 +42,15 @@ object engineShaderLibMod {
     
     var fsSourceVarDeclare: String = js.native
     
-    /* protected */ def getFsChunk(): js.Any = js.native
-    /* protected */ def getFsChunk(chunk: GLSLChunk): js.Any = js.native
+    /* protected */ def getFsChunk(): Any = js.native
+    /* protected */ def getFsChunk(chunk: GLSLChunk): Any = js.native
     
-    /* protected */ def getVsChunk(): js.Any = js.native
-    /* protected */ def getVsChunk(chunk: GLSLChunk): js.Any = js.native
+    /* protected */ def getVsChunk(): Any = js.native
+    /* protected */ def getVsChunk(chunk: GLSLChunk): Any = js.native
     
-    /* protected */ def sendAttributeBuffer(program: Program, name: String, data: js.Any): Unit = js.native
+    /* protected */ def sendAttributeBuffer(program: Program, name: String, data: Any): Unit = js.native
     
-    /* protected */ def sendUniformData(program: Program, name: String, data: js.Any): Unit = js.native
+    /* protected */ def sendUniformData(program: Program, name: String, data: Any): Unit = js.native
     
     /* protected */ def setFsSource(fs: String): Unit = js.native
     /* protected */ def setFsSource(fs: String, operator: String): Unit = js.native
@@ -67,7 +67,7 @@ object engineShaderLibMod {
     @JSName("shader")
     var shader_EngineShaderLib: EngineShader = js.native
     
-    var uniforms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderVariable> */ js.Any = js.native
+    var uniforms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderVariable> */ Any = js.native
     
     var vsChunk: GLSLChunk = js.native
     
@@ -77,9 +77,9 @@ object engineShaderLibMod {
     
     var vsSourceDefine: String = js.native
     
-    var vsSourceDefineList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ js.Any = js.native
+    var vsSourceDefineList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ Any = js.native
     
-    var vsSourceExtensionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<string> */ js.Any = js.native
+    var vsSourceExtensionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<string> */ Any = js.native
     
     var vsSourceFuncDeclare: String = js.native
     

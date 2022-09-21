@@ -10,10 +10,10 @@ A drop-in replacement for JSON.parse that uses `jju` to give helpful errors
 | ------------------ | :-------------: |
 | Full name          | json-parse-helpfulerror |
 | Keywords           | json, parse, line, doublequote, error |
-| # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 26942518 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3604536.3333333335 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/smikes/json-parse-helpfulerror)

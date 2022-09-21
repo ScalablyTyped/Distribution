@@ -29,6 +29,6 @@ object GoogleCloudDatalabelingV1beta1Row {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry*): Self = StObject.set(x, "entries", js.Array(value*))
   }
 }

@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Timeago = js.Function0[typings.jqueryTimeago.JQuery]
+type Timeago = js.Function0[JQuery]

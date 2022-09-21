@@ -9,7 +9,7 @@ trait Transition extends StObject {
   /**
     * Indicates when objects are transitioned to the specified storage class. The date value must be in ISO 8601 format. The time is always midnight UTC.
     */
-  var Date: js.UndefOr[typings.awsSdk.s3controlMod.Date] = js.undefined
+  var Date: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates the number of days after creation when objects are transitioned to the specified storage class. The value must be a positive integer.
@@ -30,7 +30,7 @@ object Transition {
   
   extension [Self <: Transition](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     

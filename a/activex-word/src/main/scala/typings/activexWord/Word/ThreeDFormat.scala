@@ -56,7 +56,7 @@ trait ThreeDFormat extends StObject {
   
   var LightAngle: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Perspective: MsoTriState
   
@@ -120,7 +120,7 @@ object ThreeDFormat {
     IncrementRotationY: Double => Unit,
     IncrementRotationZ: Double => Unit,
     LightAngle: Double,
-    Parent: js.Any,
+    Parent: Any,
     Perspective: MsoTriState,
     PresetCamera: MsoPresetCamera,
     PresetExtrusionDirection: MsoPresetExtrusionDirection,
@@ -188,7 +188,7 @@ object ThreeDFormat {
     
     inline def setLightAngle(value: Double): Self = StObject.set(x, "LightAngle", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPerspective(value: MsoTriState): Self = StObject.set(x, "Perspective", value.asInstanceOf[js.Any])
     

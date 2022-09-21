@@ -25,7 +25,7 @@ object RuntimeMetadata {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: ParameterMetadata*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ParameterMetadata*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setSdkInfo(value: SDKInfo): Self = StObject.set(x, "sdkInfo", value.asInstanceOf[js.Any])
     

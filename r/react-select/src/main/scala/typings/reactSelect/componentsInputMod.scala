@@ -1,44 +1,39 @@
 package typings.reactSelect
 
-import typings.react.mod.CSSProperties
-import typings.react.mod.ComponentType
-import typings.react.mod.Ref
-import typings.reactSelect.typesMod.ClassNamesState
-import typings.reactSelect.typesMod.PropsWithStyles
+import typings.emotionReact.emotionReactMod.jsx.JSX.Element
+import typings.react.mod.InputHTMLAttributes
+import typings.reactSelect.typesMod.CSSObjectWithLabel
+import typings.reactSelect.typesMod.CommonProps
+import typings.reactSelect.typesMod.GroupBase
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsInputMod {
   
-  @JSImport("react-select/src/components/Input", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/components/Input", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-select/src/components/Input", JSImport.Default)
-  @js.native
-  val default: ComponentType[InputProps] = js.native
+  inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: InputProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-select/src/components/Input", "Input")
-  @js.native
-  val Input: ComponentType[InputProps] = js.native
+  inline def inputCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](hasIsDisabledValueHasSpacingColors: InputProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("inputCSS")(hasIsDisabledValueHasSpacingColors.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
-  inline def inputCSS(props: InputProps): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("inputCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  type InputProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] = InputSpecificProps[Option, IsMulti, Group]
   
-  inline def inputStyle(isHidden: Boolean): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("inputStyle")(isHidden.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
-  
-  @js.native
-  trait InputProps
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.reactSelect.typesMod.CommonPropsAndClassName because var conflicts: className. Inlined  */ @js.native
+  trait InputSpecificProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]
     extends StObject
-       with PropsWithStyles {
-    
-    var className: js.UndefOr[String] = js.native
-    
-    def cx(a: String, b: ClassNamesState, c: String): String | Unit = js.native
-    def cx(a: Null, b: ClassNamesState, c: String): String | Unit = js.native
+       with InputHTMLAttributes[HTMLInputElement]
+       with CommonProps[Option, IsMulti, Group] {
     
     /** Reference to the internal element */
-    def innerRef(element: Ref[js.Any]): Unit = js.native
+    var innerRef: js.UndefOr[js.Function1[/* instance */ HTMLInputElement | Null, Unit]] = js.native
+    
+    /** Set className for the input element */
+    var inputClassName: js.UndefOr[String] = js.native
     
     /** Whether the input is disabled */
     var isDisabled: js.UndefOr[Boolean] = js.native

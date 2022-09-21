@@ -11,7 +11,7 @@ trait TrialComponentSimpleSummary extends StObject {
   /**
     * When the component was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the trial component.
@@ -38,7 +38,7 @@ object TrialComponentSimpleSummary {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

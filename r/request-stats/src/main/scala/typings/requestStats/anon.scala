@@ -135,7 +135,7 @@ object anon {
     /**
       * The original `http.ServerResponse` object
       */
-    var raw: ServerResponse
+    var raw: ServerResponse[IncomingMessage]
     
     /**
       * The HTTP status code returned to the client
@@ -144,7 +144,7 @@ object anon {
   }
   object Headers {
     
-    inline def apply(bytes: Double, headers: OutgoingHttpHeaders, raw: ServerResponse, status: Double): Headers = {
+    inline def apply(bytes: Double, headers: OutgoingHttpHeaders, raw: ServerResponse[IncomingMessage], status: Double): Headers = {
       val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Headers]
     }
@@ -155,7 +155,7 @@ object anon {
       
       inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setRaw(value: ServerResponse): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: ServerResponse[IncomingMessage]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }

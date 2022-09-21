@@ -9,7 +9,7 @@ trait DocumentLibraryVersions extends StObject {
   
   def apply(lIndex: Double): DocumentLibraryVersion = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -19,5 +19,5 @@ trait DocumentLibraryVersions extends StObject {
   
   def Item(lIndex: Double): DocumentLibraryVersion = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

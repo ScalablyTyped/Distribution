@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "asn1js" : "3.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "asn1js" : "3.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

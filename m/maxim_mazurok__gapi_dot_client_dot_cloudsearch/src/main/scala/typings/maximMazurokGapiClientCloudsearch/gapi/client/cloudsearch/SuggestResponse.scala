@@ -22,6 +22,6 @@ object SuggestResponse {
     
     inline def setSuggestResultsUndefined: Self = StObject.set(x, "suggestResults", js.undefined)
     
-    inline def setSuggestResultsVarargs(value: SuggestResult*): Self = StObject.set(x, "suggestResults", js.Array(value :_*))
+    inline def setSuggestResultsVarargs(value: SuggestResult*): Self = StObject.set(x, "suggestResults", js.Array(value*))
   }
 }

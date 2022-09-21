@@ -1,26 +1,25 @@
 package typings.clearbladejsNode.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.clearbladejsNode.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def ClearBlade: typings.clearbladejsNode.mod.ClearBladeGlobal = typings.clearbladejsNode.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ClearBlade").asInstanceOf[typings.clearbladejsNode.mod.ClearBladeGlobal]
-inline def ClearBlade_=(x: typings.clearbladejsNode.mod.ClearBladeGlobal): scala.Unit = typings.clearbladejsNode.mod.^.asInstanceOf[js.Dynamic].updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
+inline def ClearBlade: ClearBladeGlobal = ^.asInstanceOf[js.Dynamic].selectDynamic("ClearBlade").asInstanceOf[ClearBladeGlobal]
+inline def ClearBlade_=(x: ClearBladeGlobal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
 
-type CbCallback = js.Function2[
-/* error */ scala.Boolean, 
-/* response */ typings.clearbladejsNode.mod.Resp, 
-scala.Unit]
+type CbCallback = js.Function2[/* error */ Boolean, /* response */ Resp, Unit]
 
-type ItemOptions = typings.clearbladejsNode.mod.CollectionOptionsWithID
+type ItemOptions = CollectionOptionsWithID
 
-type KeyValuePair = org.scalablytyped.runtime.StringDictionary[js.Any]
+type KeyValuePair = StringDictionary[Any]
 
-type MessageCallback = js.Function1[/* message */ java.lang.String, scala.Unit]
+type MessageCallback = js.Function1[/* message */ String, Unit]
 
-type QueryFilter = org.scalablytyped.runtime.StringDictionary[typings.clearbladejsNode.mod.QueryFilterValue]
+type QueryFilter = StringDictionary[QueryFilterValue]
 
-type QueryFilterValue = org.scalablytyped.runtime.StringDictionary[typings.clearbladejsNode.mod.QueryValue]
+type QueryFilterValue = StringDictionary[QueryValue]
 
-type QueryValue = java.lang.String | scala.Double | scala.Boolean
+type QueryValue = String | Double | Boolean

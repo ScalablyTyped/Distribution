@@ -76,15 +76,15 @@ object Intersection {
     
     inline def setBearings(value: js.Array[Double]): Self = StObject.set(x, "bearings", value.asInstanceOf[js.Any])
     
-    inline def setBearingsVarargs(value: Double*): Self = StObject.set(x, "bearings", js.Array(value :_*))
+    inline def setBearingsVarargs(value: Double*): Self = StObject.set(x, "bearings", js.Array(value*))
     
     inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
     
     inline def setEntry(value: js.Array[String]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value :_*))
+    inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value*))
     
     inline def setIn(value: Double): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object Intersection {
     
     inline def setLocation(value: Coordinate): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setOut(value: Double): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
   }

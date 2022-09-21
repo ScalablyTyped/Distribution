@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Activation")
 @js.native
-class Activation protected () extends Layer {
+open class Activation protected () extends Layer {
   def this(args: ActivationLayerArgs) = this()
   
   var activation: typings.tensorflowTfjsLayers.activationsMod.Activation = js.native

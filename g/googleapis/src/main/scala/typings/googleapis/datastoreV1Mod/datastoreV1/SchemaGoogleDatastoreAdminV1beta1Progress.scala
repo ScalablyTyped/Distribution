@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Measures the progress of a particular metric.
-  */
 trait SchemaGoogleDatastoreAdminV1beta1Progress extends StObject {
   
   /**
-    * The amount of work that has been completed. Note that this may be greater
-    * than work_estimated.
+    * The amount of work that has been completed. Note that this may be greater than work_estimated.
     */
-  var workCompleted: js.UndefOr[String] = js.undefined
+  var workCompleted: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An estimate of how much work needs to be performed. May be zero if the
-    * work estimate is unavailable.
+    * An estimate of how much work needs to be performed. May be zero if the work estimate is unavailable.
     */
-  var workEstimated: js.UndefOr[String] = js.undefined
+  var workEstimated: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1beta1Progress {
   
@@ -32,9 +27,13 @@ object SchemaGoogleDatastoreAdminV1beta1Progress {
     
     inline def setWorkCompleted(value: String): Self = StObject.set(x, "workCompleted", value.asInstanceOf[js.Any])
     
+    inline def setWorkCompletedNull: Self = StObject.set(x, "workCompleted", null)
+    
     inline def setWorkCompletedUndefined: Self = StObject.set(x, "workCompleted", js.undefined)
     
     inline def setWorkEstimated(value: String): Self = StObject.set(x, "workEstimated", value.asInstanceOf[js.Any])
+    
+    inline def setWorkEstimatedNull: Self = StObject.set(x, "workEstimated", null)
     
     inline def setWorkEstimatedUndefined: Self = StObject.set(x, "workEstimated", js.undefined)
   }

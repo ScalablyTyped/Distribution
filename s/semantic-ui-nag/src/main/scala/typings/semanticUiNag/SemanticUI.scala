@@ -5,72 +5,15 @@ import typings.semanticUiNag.SemanticUI.Nag.AnimationSettings.Param
 import typings.semanticUiNag.SemanticUI.Nag.ClassNameSettings
 import typings.semanticUiNag.SemanticUI.Nag.ErrorSettings
 import typings.semanticUiNag.SemanticUI.Nag.SelectorSettings
-import typings.semanticUiNag.anon.PartialPickImplkeyofImpl
-import typings.semanticUiNag.anon.PartialPickImplkeyofImplBottom
-import typings.semanticUiNag.anon.PartialPickImplkeyofImplHide
-import typings.semanticUiNag.anon.PartialPickImplkeyofImplMethod
-import typings.semanticUiNag.anon.PickImplanimation
-import typings.semanticUiNag.anon.PickImplbottom
-import typings.semanticUiNag.anon.PickImplclassName
-import typings.semanticUiNag.anon.PickImplcontext
-import typings.semanticUiNag.anon.PickImpldebug
-import typings.semanticUiNag.anon.PickImpldetachable
-import typings.semanticUiNag.anon.PickImpldisplayTime
-import typings.semanticUiNag.anon.PickImpldomain
-import typings.semanticUiNag.anon.PickImpleasing
-import typings.semanticUiNag.anon.PickImplerror
-import typings.semanticUiNag.anon.PickImplexpires
-import typings.semanticUiNag.anon.PickImplfixed
-import typings.semanticUiNag.anon.PickImplhide
-import typings.semanticUiNag.anon.PickImplkey
-import typings.semanticUiNag.anon.PickImplmethod
-import typings.semanticUiNag.anon.PickImplname
-import typings.semanticUiNag.anon.PickImplnamespace
-import typings.semanticUiNag.anon.PickImplnoCookieStorage
-import typings.semanticUiNag.anon.PickImplnoStorage
-import typings.semanticUiNag.anon.PickImplonHide
-import typings.semanticUiNag.anon.PickImplpath
-import typings.semanticUiNag.anon.PickImplperformance
-import typings.semanticUiNag.anon.PickImplpersist
-import typings.semanticUiNag.anon.PickImplselector
-import typings.semanticUiNag.anon.PickImplshow
-import typings.semanticUiNag.anon.PickImplsilent
-import typings.semanticUiNag.anon.PickImplspeed
-import typings.semanticUiNag.anon.PickImplstorageMethod
-import typings.semanticUiNag.anon.PickImplvalue
-import typings.semanticUiNag.anon.PickImplverbose
 import typings.semanticUiNag.semanticUiNagBooleans.`false`
-import typings.semanticUiNag.semanticUiNagStrings.animation
-import typings.semanticUiNag.semanticUiNagStrings.className
 import typings.semanticUiNag.semanticUiNagStrings.clear
-import typings.semanticUiNag.semanticUiNagStrings.context
 import typings.semanticUiNag.semanticUiNagStrings.cookie
-import typings.semanticUiNag.semanticUiNagStrings.debug
 import typings.semanticUiNag.semanticUiNagStrings.destroy
-import typings.semanticUiNag.semanticUiNagStrings.detachable
-import typings.semanticUiNag.semanticUiNagStrings.displayTime
-import typings.semanticUiNag.semanticUiNagStrings.domain
-import typings.semanticUiNag.semanticUiNagStrings.easing
-import typings.semanticUiNag.semanticUiNagStrings.error
-import typings.semanticUiNag.semanticUiNagStrings.expires
 import typings.semanticUiNag.semanticUiNagStrings.hide
-import typings.semanticUiNag.semanticUiNagStrings.key
 import typings.semanticUiNag.semanticUiNagStrings.localstorage
-import typings.semanticUiNag.semanticUiNagStrings.name
-import typings.semanticUiNag.semanticUiNagStrings.namespace
-import typings.semanticUiNag.semanticUiNagStrings.onHide
-import typings.semanticUiNag.semanticUiNagStrings.path
-import typings.semanticUiNag.semanticUiNagStrings.performance
-import typings.semanticUiNag.semanticUiNagStrings.persist
-import typings.semanticUiNag.semanticUiNagStrings.selector
 import typings.semanticUiNag.semanticUiNagStrings.sessionstorage
 import typings.semanticUiNag.semanticUiNagStrings.setting
 import typings.semanticUiNag.semanticUiNagStrings.show
-import typings.semanticUiNag.semanticUiNagStrings.silent
-import typings.semanticUiNag.semanticUiNagStrings.speed
-import typings.semanticUiNag.semanticUiNagStrings.storageMethod
-import typings.semanticUiNag.semanticUiNagStrings.value
-import typings.semanticUiNag.semanticUiNagStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,68 +30,15 @@ object SemanticUI {
     def apply(behavior: clear): JQuery = js.native
     def apply(behavior: destroy): JQuery = js.native
     def apply(behavior: hide): JQuery = js.native
-    def apply(behavior: setting, name: animation, value: Unit): AnimationSettings = js.native
-    def apply(behavior: setting, name: animation, value: AnimationSettings): JQuery = js.native
-    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
-    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: context, value: String): JQuery = js.native
-    def apply(behavior: setting, name: context, value: Unit): `false` | String | JQuery = js.native
-    def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: context, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: detachable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: detachable, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: displayTime, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: displayTime, value: Unit): Double = js.native
-    def apply(behavior: setting, name: domain, value: String): JQuery = js.native
-    def apply(behavior: setting, name: domain, value: Unit): `false` | String = js.native
-    def apply(behavior: setting, name: domain, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: easing, value: String): JQuery = js.native
-    def apply(behavior: setting, name: easing, value: Unit): String = js.native
-    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
-    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: expires, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: expires, value: Unit): Double = js.native
-    def apply(
-      behavior: setting,
-      name: key,
-      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['key'] */ js.Any
-    ): JQuery = js.native
-    def apply(behavior: setting, name: key, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['key'] */ js.Any = js.native
-    def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: Unit): String = js.native
-    def apply(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: path, value: String): JQuery = js.native
-    def apply(behavior: setting, name: path, value: Unit): String = js.native
-    def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: persist, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: persist, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
-    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: speed, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: speed, value: Unit): Double = js.native
-    def apply(behavior: setting, name: storageMethod, value: Unit): cookie | localstorage | sessionstorage = js.native
-    def apply(behavior: setting, name: storageMethod, value: cookie): JQuery = js.native
-    def apply(behavior: setting, name: storageMethod, value: localstorage): JQuery = js.native
-    def apply(behavior: setting, name: storageMethod, value: sessionstorage): JQuery = js.native
-    def apply(
-      behavior: setting,
-      name: value,
-      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['value'] */ js.Any
-    ): JQuery = js.native
-    def apply(behavior: setting, name: value, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['value'] */ js.Any = js.native
-    def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: NagSettings): JQuery = js.native
     def apply(behavior: show): JQuery = js.native
     def apply(settings: NagSettings): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-nag.SemanticUI.NagSettings */ String */](
+      behavior: setting,
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl[K] */ js.Any
+    ): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-nag.SemanticUI.NagSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl[K] */ js.Any = js.native
     
     var settings: NagSettings = js.native
   }
@@ -183,7 +73,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplshow | PickImplhide) & PartialPickImplkeyofImplHide
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiNag.anon.PickImplshowPartialPickIm
+        - typings.semanticUiNag.anon.PickImplhidePartialPickIm
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplhidePartialPickIm(hide: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImplhidePartialPickIm = {
+          val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplhidePartialPickIm]
+        }
+        
+        inline def PickImplshowPartialPickIm(show: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImplshowPartialPickIm = {
+          val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplshowPartialPickIm]
+        }
+      }
     }
     type AnimationSettings = Param
     
@@ -216,7 +122,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplbottom | PickImplfixed) & PartialPickImplkeyofImplBottom
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiNag.anon.PickImplbottomPartialPick
+        - typings.semanticUiNag.anon.PickImplfixedPartialPickI
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplbottomPartialPick(bottom: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImplbottomPartialPick = {
+          val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplbottomPartialPick]
+        }
+        
+        inline def PickImplfixedPartialPickI(fixed: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImplfixedPartialPickI = {
+          val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplfixedPartialPickI]
+        }
+      }
     }
     type ClassNameSettings = typings.semanticUiNag.SemanticUI.Nag.ClassNameSettings.Param
     
@@ -256,7 +178,29 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplnoCookieStorage | PickImplnoStorage | PickImplmethod) & PartialPickImplkeyofImplMethod
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiNag.anon.PickImplnoCookieStoragePa
+        - typings.semanticUiNag.anon.PickImplnoStoragePartialP
+        - typings.semanticUiNag.anon.PickImplmethodPartialPick
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplmethodPartialPick(method: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImplmethodPartialPick = {
+          val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplmethodPartialPick]
+        }
+        
+        inline def PickImplnoCookieStoragePa(noCookieStorage: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImplnoCookieStoragePa = {
+          val __obj = js.Dynamic.literal(noCookieStorage = noCookieStorage.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplnoCookieStoragePa]
+        }
+        
+        inline def PickImplnoStoragePartialP(noStorage: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImplnoStoragePartialP = {
+          val __obj = js.Dynamic.literal(noStorage = noStorage.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplnoStoragePartialP]
+        }
+      }
     }
     type ErrorSettings = typings.semanticUiNag.SemanticUI.Nag.ErrorSettings.Param
     
@@ -371,7 +315,7 @@ object SemanticUI {
       /**
         * @default 'nag'
         */
-      var key: js.Any
+      var key: Any
       
       // endregion
       // region Debug Settings
@@ -432,7 +376,7 @@ object SemanticUI {
       /**
         * @default 'dismiss'
         */
-      var value: js.Any
+      var value: Any
       
       /**
         * Debug output includes all internal behaviors
@@ -452,7 +396,7 @@ object SemanticUI {
         easing: String,
         error: ErrorSettings,
         expires: Double,
-        key: js.Any,
+        key: Any,
         name: String,
         namespace: String,
         onHide: () => Unit,
@@ -463,7 +407,7 @@ object SemanticUI {
         silent: Boolean,
         speed: Double,
         storageMethod: cookie | localstorage | sessionstorage,
-        value: js.Any,
+        value: Any,
         verbose: Boolean
       ): Impl = {
         val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], detachable = detachable.asInstanceOf[js.Any], displayTime = displayTime.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onHide = js.Any.fromFunction0(onHide), path = path.asInstanceOf[js.Any], performance = performance.asInstanceOf[js.Any], persist = persist.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], storageMethod = storageMethod.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
@@ -492,7 +436,7 @@ object SemanticUI {
         
         inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
-        inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -514,13 +458,159 @@ object SemanticUI {
         
         inline def setStorageMethod(value: cookie | localstorage | sessionstorage): Self = StObject.set(x, "storageMethod", value.asInstanceOf[js.Any])
         
-        inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       }
     }
     
-    type Param = (PickImplpersist | PickImpldisplayTime | PickImplanimation | PickImplcontext | PickImpldetachable | PickImplexpires | PickImpldomain | PickImplpath | PickImplstorageMethod | PickImplkey | PickImplvalue | PickImplspeed | PickImpleasing | PickImplonHide | PickImplclassName | PickImplselector | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiNag.anon.PickImplpersistPartialPic
+      - typings.semanticUiNag.anon.PickImpldisplayTimePartia
+      - typings.semanticUiNag.anon.PickImplanimationPartialP
+      - typings.semanticUiNag.anon.PickImplcontextPartialPic
+      - typings.semanticUiNag.anon.PickImpldetachablePartial
+      - typings.semanticUiNag.anon.PickImplexpiresPartialPic
+      - typings.semanticUiNag.anon.PickImpldomainPartialPick
+      - typings.semanticUiNag.anon.PickImplpathPartialPickIm
+      - typings.semanticUiNag.anon.PickImplstorageMethodPart
+      - typings.semanticUiNag.anon.PickImplkeyPartialPickImp
+      - typings.semanticUiNag.anon.PickImplvaluePartialPickI
+      - typings.semanticUiNag.anon.PickImplspeedPartialPickI
+      - typings.semanticUiNag.anon.PickImpleasingPartialPick
+      - typings.semanticUiNag.anon.PickImplonHidePartialPick
+      - typings.semanticUiNag.anon.PickImplclassNamePartialP
+      - typings.semanticUiNag.anon.PickImplselectorPartialPi
+      - typings.semanticUiNag.anon.PickImplerrorPartialPickI
+      - typings.semanticUiNag.anon.PickImplnamespacePartialP
+      - typings.semanticUiNag.anon.PickImplnamePartialPickIm
+      - typings.semanticUiNag.anon.PickImplsilentPartialPick
+      - typings.semanticUiNag.anon.PickImpldebugPartialPickI
+      - typings.semanticUiNag.anon.PickImplperformancePartia
+      - typings.semanticUiNag.anon.PickImplverbosePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplanimationPartialP(animation: AnimationSettings & js.UndefOr[AnimationSettings]): typings.semanticUiNag.anon.PickImplanimationPartialP = {
+        val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplanimationPartialP]
+      }
+      
+      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiNag.anon.PickImplclassNamePartialP = {
+        val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplclassNamePartialP]
+      }
+      
+      inline def PickImplcontextPartialPic(context: (`false` | String | JQuery) & (js.UndefOr[`false` | String | JQuery])): typings.semanticUiNag.anon.PickImplcontextPartialPic = {
+        val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplcontextPartialPic]
+      }
+      
+      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiNag.anon.PickImpldebugPartialPickI = {
+        val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImpldebugPartialPickI]
+      }
+      
+      inline def PickImpldetachablePartial(detachable: Boolean & js.UndefOr[Boolean]): typings.semanticUiNag.anon.PickImpldetachablePartial = {
+        val __obj = js.Dynamic.literal(detachable = detachable.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImpldetachablePartial]
+      }
+      
+      inline def PickImpldisplayTimePartia(displayTime: Double & js.UndefOr[Double]): typings.semanticUiNag.anon.PickImpldisplayTimePartia = {
+        val __obj = js.Dynamic.literal(displayTime = displayTime.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImpldisplayTimePartia]
+      }
+      
+      inline def PickImpldomainPartialPick(domain: (`false` | String) & (js.UndefOr[`false` | String])): typings.semanticUiNag.anon.PickImpldomainPartialPick = {
+        val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImpldomainPartialPick]
+      }
+      
+      inline def PickImpleasingPartialPick(easing: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImpleasingPartialPick = {
+        val __obj = js.Dynamic.literal(easing = easing.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImpleasingPartialPick]
+      }
+      
+      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiNag.anon.PickImplerrorPartialPickI = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplerrorPartialPickI]
+      }
+      
+      inline def PickImplexpiresPartialPic(expires: Double & js.UndefOr[Double]): typings.semanticUiNag.anon.PickImplexpiresPartialPic = {
+        val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplexpiresPartialPic]
+      }
+      
+      inline def PickImplkeyPartialPickImp(key: Any & js.UndefOr[Any]): typings.semanticUiNag.anon.PickImplkeyPartialPickImp = {
+        val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplkeyPartialPickImp]
+      }
+      
+      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImplnamePartialPickIm = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplnamePartialPickIm]
+      }
+      
+      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImplnamespacePartialP = {
+        val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplnamespacePartialP]
+      }
+      
+      inline def PickImplonHidePartialPick(
+        onHide: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiNag.anon.PickImplonHidePartialPick = {
+        val __obj = js.Dynamic.literal(onHide = onHide.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplonHidePartialPick]
+      }
+      
+      inline def PickImplpathPartialPickIm(path: String & js.UndefOr[String]): typings.semanticUiNag.anon.PickImplpathPartialPickIm = {
+        val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplpathPartialPickIm]
+      }
+      
+      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiNag.anon.PickImplperformancePartia = {
+        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplperformancePartia]
+      }
+      
+      inline def PickImplpersistPartialPic(persist: Boolean & js.UndefOr[Boolean]): typings.semanticUiNag.anon.PickImplpersistPartialPic = {
+        val __obj = js.Dynamic.literal(persist = persist.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplpersistPartialPic]
+      }
+      
+      inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiNag.anon.PickImplselectorPartialPi = {
+        val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplselectorPartialPi]
+      }
+      
+      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiNag.anon.PickImplsilentPartialPick = {
+        val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplsilentPartialPick]
+      }
+      
+      inline def PickImplspeedPartialPickI(speed: Double & js.UndefOr[Double]): typings.semanticUiNag.anon.PickImplspeedPartialPickI = {
+        val __obj = js.Dynamic.literal(speed = speed.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplspeedPartialPickI]
+      }
+      
+      inline def PickImplstorageMethodPart(
+        storageMethod: (cookie | localstorage | sessionstorage) & (js.UndefOr[cookie | localstorage | sessionstorage])
+      ): typings.semanticUiNag.anon.PickImplstorageMethodPart = {
+        val __obj = js.Dynamic.literal(storageMethod = storageMethod.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplstorageMethodPart]
+      }
+      
+      inline def PickImplvaluePartialPickI(value: Any & js.UndefOr[Any]): typings.semanticUiNag.anon.PickImplvaluePartialPickI = {
+        val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplvaluePartialPickI]
+      }
+      
+      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiNag.anon.PickImplverbosePartialPic = {
+        val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiNag.anon.PickImplverbosePartialPic]
+      }
+    }
   }
   /**
     * @see {@link http://semantic-ui.com/modules/nag.html}

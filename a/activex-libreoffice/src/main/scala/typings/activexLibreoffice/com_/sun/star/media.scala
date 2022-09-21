@@ -109,7 +109,7 @@ object media {
       * gets a new player window for this stream control
       * @param aArguments arguments passed to the window during its creation.
       */
-    def createPlayerWindow(aArguments: SeqEquiv[js.Any]): XPlayerWindow
+    def createPlayerWindow(aArguments: SeqEquiv[Any]): XPlayerWindow
     
     /**
       * gets the stream length
@@ -191,7 +191,7 @@ object media {
       PreferredPlayerWindowSize: Size,
       VolumeDB: Double,
       createFrameGrabber: () => XFrameGrabber,
-      createPlayerWindow: SeqEquiv[js.Any] => XPlayerWindow,
+      createPlayerWindow: SeqEquiv[Any] => XPlayerWindow,
       getDuration: () => Double,
       getMediaTime: () => Double,
       getPreferredPlayerWindowSize: () => Size,
@@ -214,7 +214,7 @@ object media {
       
       inline def setCreateFrameGrabber(value: () => XFrameGrabber): Self = StObject.set(x, "createFrameGrabber", js.Any.fromFunction0(value))
       
-      inline def setCreatePlayerWindow(value: SeqEquiv[js.Any] => XPlayerWindow): Self = StObject.set(x, "createPlayerWindow", js.Any.fromFunction1(value))
+      inline def setCreatePlayerWindow(value: SeqEquiv[Any] => XPlayerWindow): Self = StObject.set(x, "createPlayerWindow", js.Any.fromFunction1(value))
       
       inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
       
@@ -291,7 +291,7 @@ object media {
       dispose: () => Unit,
       getPosSize: () => Rectangle,
       getZoomLevel: () => ZoomLevel,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removeFocusListener: XFocusListener => Unit,

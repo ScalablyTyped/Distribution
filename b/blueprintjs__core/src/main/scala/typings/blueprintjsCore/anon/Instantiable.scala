@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Instantiable
   extends StObject
-     with Instantiable1[/* args (repeated) */ js.Any, ComponentDidCatch] {
+     with Instantiable1[/* args (repeated) */ Any, ComponentDidCatch] {
   
   var displayName: String = js.native
 }

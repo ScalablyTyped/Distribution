@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AnimationDisabled extends StObject {
   
-  var animation: js.UndefOr[`23`] = js.undefined
+  var animation: js.UndefOr[`28`] = js.undefined
   
-  var disabled: js.UndefOr[`24`] = js.undefined
+  var disabled: js.UndefOr[`29`] = js.undefined
   
   var icons: js.UndefOr[Current] = js.undefined
 }
@@ -21,11 +21,11 @@ object AnimationDisabled {
   
   extension [Self <: AnimationDisabled](x: Self) {
     
-    inline def setAnimation(value: `23`): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: `28`): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setDisabled(value: `24`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: `29`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     

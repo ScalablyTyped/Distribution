@@ -40,6 +40,12 @@ object constantsMod {
       extends StObject
          with LogVerbosity
     /* 1 */ val INFO: typings.grpcGrpcJs.constantsMod.LogVerbosity.INFO & Double = js.native
+    
+    @js.native
+    sealed trait NONE
+      extends StObject
+         with LogVerbosity
+    /* 3 */ val NONE: typings.grpcGrpcJs.constantsMod.LogVerbosity.NONE & Double = js.native
   }
   
   @js.native
@@ -79,7 +85,7 @@ object constantsMod {
     sealed trait DEFAULTS
       extends StObject
          with Propagate
-    /* 65536 */ val DEFAULTS: typings.grpcGrpcJs.constantsMod.Propagate.DEFAULTS & Double = js.native
+    /* 65535 */ val DEFAULTS: typings.grpcGrpcJs.constantsMod.Propagate.DEFAULTS & Double = js.native
   }
   
   @js.native

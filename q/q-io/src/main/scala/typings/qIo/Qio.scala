@@ -1,9 +1,9 @@
 package typings.qIo
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
+import typings.node.bufferMod.global.Buffer
 import typings.q.mod.Promise
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,8 +32,8 @@ object Qio {
   @js.native
   trait ForEachCallback extends StObject {
     
-    def apply(chunk: String): Promise[js.Any] = js.native
-    def apply(chunk: Buffer): Promise[js.Any] = js.native
+    def apply(chunk: String): Promise[Any] = js.native
+    def apply(chunk: Buffer): Promise[Any] = js.native
   }
   
   @js.native
@@ -43,7 +43,7 @@ object Qio {
     
     def close(): Unit = js.native
     
-    var node: ReadableStream = js.native
+    var node: ReadableStream[Any] = js.native
     
     def read(): Promise[Buffer] = js.native
     def read(charset: String): Promise[String] = js.native
@@ -58,7 +58,7 @@ object Qio {
     
     def flush(): Promise[Unit] = js.native
     
-    var node: js.Any = js.native
+    var node: Any = js.native
     
     def read(): Promise[Buffer] = js.native
     def read(charset: String): Promise[String] = js.native
@@ -76,7 +76,7 @@ object Qio {
     
     def flush(): Promise[Unit] = js.native
     
-    var node: WritableStream = js.native
+    var node: WritableStream[Any] = js.native
     
     def write(content: String): Unit = js.native
     def write(content: Buffer): Unit = js.native

@@ -10,10 +10,10 @@ object errorOutlineMod {
   
   @JSImport("material-ui/svg-icons/alert/error-outline", JSImport.Default)
   @js.native
-  class default () extends AlertErrorOutline
+  open class default () extends AlertErrorOutline
   
   @JSImport("material-ui/svg-icons/alert/error-outline", "AlertErrorOutline")
   @js.native
-  class AlertErrorOutline ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AlertErrorOutline ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

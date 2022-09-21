@@ -4,9 +4,9 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientTagmanager.anon.Alt
 import typings.maximMazurokGapiClientTagmanager.anon.Callback
 import typings.maximMazurokGapiClientTagmanager.anon.Fields
-import typings.maximMazurokGapiClientTagmanager.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
-import typings.maximMazurokGapiClientTagmanager.anon.OauthtokenPath
+import typings.maximMazurokGapiClientTagmanager.anon.OauthtokenParent
+import typings.maximMazurokGapiClientTagmanager.anon.PathPrettyPrint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait ZonesResource extends StObject {
   
   def create(request: Alt, body: Zone): Request[Zone] = js.native
   /** Creates a GTM Zone. */
-  def create(request: KeyOauthtoken): Request[Zone] = js.native
+  def create(request: OauthtokenParent): Request[Zone] = js.native
   
   /** Deletes a GTM Zone. */
   def delete(): Request[Unit] = js.native
@@ -34,7 +34,7 @@ trait ZonesResource extends StObject {
   def revert(): Request[RevertZoneResponse] = js.native
   def revert(request: Oauthtoken): Request[RevertZoneResponse] = js.native
   
-  /** Updates a GTM Zone. */
-  def update(request: OauthtokenPath): Request[Zone] = js.native
   def update(request: Oauthtoken, body: Zone): Request[Zone] = js.native
+  /** Updates a GTM Zone. */
+  def update(request: PathPrettyPrint): Request[Zone] = js.native
 }

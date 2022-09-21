@@ -1,19 +1,19 @@
 
 # Scala.js typings for react-daum-postcode
 
-Typings are for version 2.0.2
+Typings are for version 3.1.1
 
 ## Library description:
-React daum-postcode component
+Daum Postcode service for React
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-daum-postcode |
-| Keywords           | react, postcode, zipcode |
-| # releases         | 12 |
-| # dependents       | 3 |
-| # downloads        | 99173 |
-| # stars            | 0 |
+| Keywords           | react, daum, postcode, zipcode |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 31053.666666666668 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/kimminsik-bernard/react-daum-postcode#readme)

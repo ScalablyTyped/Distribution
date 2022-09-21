@@ -27,7 +27,7 @@ trait ImageRecipeSummary extends StObject {
   var owner: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The parent image of the image recipe.
+    * The base image of the image recipe.
     */
   var parentImage: js.UndefOr[NonEmptyString] = js.undefined
   

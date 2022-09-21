@@ -20,8 +20,8 @@ object implementationMod {
     *
     * @param depth The maximum recursion depth
     */
-  inline def apply(receiver: ReadonlyArray[js.Any]): Array[js.Any] = ^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
-  inline def apply(receiver: ReadonlyArray[js.Any], depth: Double): Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
+  inline def apply(receiver: ReadonlyArray[Any]): Array[Any] = ^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any]).asInstanceOf[Array[Any]]
+  inline def apply(receiver: ReadonlyArray[Any], depth: Double): Array[Any] = (^.asInstanceOf[js.Dynamic].apply(receiver.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Array[Any]]
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.

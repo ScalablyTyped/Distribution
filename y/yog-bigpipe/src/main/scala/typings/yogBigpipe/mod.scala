@@ -3,10 +3,9 @@ package typings.yogBigpipe
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
+import typings.std.Record
 import typings.yogBigpipe.anon.Default
 import typings.yogBigpipe.anon.Dictkey
 import typings.yogBigpipe.mod.Pagelet.mode
@@ -17,8 +16,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(option: BigPipeOption): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(option: BigPipeOption): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("yog-bigpipe", JSImport.Namespace)
   @js.native
@@ -26,7 +49,7 @@ object mod {
   
   @JSImport("yog-bigpipe", "BigPipe")
   @js.native
-  class BigPipe () extends Readable {
+  open class BigPipe () extends Readable {
     def this(option: BigPipeOption) = this()
     
     var Pagelet: PageletConstructor[typings.yogBigpipe.mod.Pagelet] = js.native
@@ -63,9 +86,9 @@ object mod {
     
     var pipelines: js.Array[Pagelet] = js.native
     
-    def prepareAllSources(): js.Promise[js.Any] = js.native
+    def prepareAllSources(): js.Promise[Any] = js.native
     
-    def preparePageOnly(): js.Promise[js.Any] = js.native
+    def preparePageOnly(): js.Promise[Any] = js.native
     
     def render(): Unit = js.native
     
@@ -78,7 +101,7 @@ object mod {
   
   @JSImport("yog-bigpipe", "Pagelet")
   @js.native
-  class Pagelet protected () extends EventEmitter {
+  open class Pagelet protected () extends EventEmitter {
     def this(obj: PageletOption) = this()
     
     def addCss(css: String): Unit = js.native
@@ -128,7 +151,7 @@ object mod {
     
     var skipAnalysis: Boolean = js.native
     
-    def start(provider: js.Promise[js.Any], sync: Boolean): Unit = js.native
+    def start(provider: js.Promise[Any], sync: Boolean): Unit = js.native
     
     var state: status = js.native
     
@@ -226,7 +249,7 @@ object mod {
     }
   }
   
-  type Callback = js.Function1[/* done */ js.Function2[/* err */ js.Any, /* data */ js.Any, js.Any], js.Any]
+  type Callback = js.Function1[/* done */ js.Function2[/* err */ Any, /* data */ Any, Any], Any]
   
   type PageletConstructor[T] = Instantiable1[/* obj */ PageletOption, T]
   
@@ -272,7 +295,7 @@ object mod {
       
       inline def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
+      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value*))
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -280,17 +303,17 @@ object mod {
       
       inline def setJs_(value: js.Array[String]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       
-      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value :_*))
+      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value*))
       
       inline def setReqID(value: String): Self = StObject.set(x, "reqID", value.asInstanceOf[js.Any])
       
       inline def setScripts(value: js.Array[String]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+      inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value*))
       
       inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
     }
   }
   

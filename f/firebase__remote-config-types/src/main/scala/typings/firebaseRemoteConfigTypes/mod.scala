@@ -275,18 +275,19 @@ object mod {
     
     trait NameServiceMapping extends StObject {
       
-      var remoteConfig: RemoteConfig
+      var `remoteConfig-compat`: RemoteConfig
     }
     object NameServiceMapping {
       
-      inline def apply(remoteConfig: RemoteConfig): NameServiceMapping = {
-        val __obj = js.Dynamic.literal(remoteConfig = remoteConfig.asInstanceOf[js.Any])
+      inline def apply(`remoteConfig-compat`: RemoteConfig): NameServiceMapping = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("remoteConfig-compat")(`remoteConfig-compat`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setRemoteConfig(value: RemoteConfig): Self = StObject.set(x, "remoteConfig", value.asInstanceOf[js.Any])
+        inline def `setRemoteConfig-compat`(value: RemoteConfig): Self = StObject.set(x, "remoteConfig-compat", value.asInstanceOf[js.Any])
       }
     }
   }

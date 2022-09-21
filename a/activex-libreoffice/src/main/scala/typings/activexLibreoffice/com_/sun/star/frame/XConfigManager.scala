@@ -54,7 +54,7 @@ object XConfigManager {
     acquire: () => Unit,
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     flush: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     substituteVariables: String => String

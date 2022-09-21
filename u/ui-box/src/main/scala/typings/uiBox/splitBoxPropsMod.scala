@@ -19,14 +19,14 @@ object splitBoxPropsMod {
     
     var matchedProps: Pick[
         P, 
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ Any
       ]
     
     var remainingProps: Pick[
         P, 
         Exclude[
           /* keyof P */ String, 
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ Any
         ]
       ]
   }
@@ -35,13 +35,13 @@ object splitBoxPropsMod {
     inline def apply[P /* <: EnhancerProps */](
       matchedProps: Pick[
           P, 
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ Any
         ],
       remainingProps: Pick[
           P, 
           Exclude[
             /* keyof P */ String, 
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ Any
           ]
         ]
     ): SplitBoxProps[P] = {
@@ -54,7 +54,7 @@ object splitBoxPropsMod {
       inline def setMatchedProps(
         value: Pick[
               P, 
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ Any
             ]
       ): Self = StObject.set(x, "matchedProps", value.asInstanceOf[js.Any])
       
@@ -63,7 +63,7 @@ object splitBoxPropsMod {
               P, 
               Exclude[
                 /* keyof P */ String, 
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ Any
               ]
             ]
       ): Self = StObject.set(x, "remainingProps", value.asInstanceOf[js.Any])

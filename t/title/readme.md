@@ -1,7 +1,7 @@
 
 # Scala.js typings for title
 
-Typings are for version v1.0.0
+Typings are for version 3.4
 
 ## Library description:
 Capitalize your titles properly
@@ -10,15 +10,15 @@ Capitalize your titles properly
 | ------------------ | :-------------: |
 | Full name          | title |
 | Keywords           | title, capitalize, chicago, manual, of, style |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 1278816 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 215919.33333333334 |
+| # stars            | 499.0 |
 
 ## Links
-- [Homepage](https://github.com/zeit/title#readme)
-- [Bugs](https://github.com/zeit/title/issues)
-- [Repository](https://github.com/zeit/title)
+- [Homepage](https://github.com/vercel/title#readme)
+- [Bugs](https://github.com/vercel/title/issues)
+- [Repository](https://github.com/vercel/title)
 - [Npm](https://www.npmjs.com/package/title)
     
 

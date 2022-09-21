@@ -12,7 +12,7 @@ object basicMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/card/basic", "BasicCard")
   @js.native
-  class BasicCard protected ()
+  open class BasicCard protected ()
     extends StObject
        with GoogleActionsV2UiElementsBasicCard {
     /** @public */
@@ -52,7 +52,7 @@ object basicMod {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: GoogleActionsV2UiElementsButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: GoogleActionsV2UiElementsButton*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setDisplay(value: GoogleActionsV2UiElementsBasicCardImageDisplayOptions): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

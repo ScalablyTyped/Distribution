@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PublishFileResponse extends StObject {
   
-  var timetoken: Double
+  var timetoken: String
 }
 object PublishFileResponse {
   
-  inline def apply(timetoken: Double): PublishFileResponse = {
+  inline def apply(timetoken: String): PublishFileResponse = {
     val __obj = js.Dynamic.literal(timetoken = timetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishFileResponse]
   }
   
   extension [Self <: PublishFileResponse](x: Self) {
     
-    inline def setTimetoken(value: Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
+    inline def setTimetoken(value: String): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
   }
 }

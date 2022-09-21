@@ -8,24 +8,24 @@ trait TextSnapshotLine
   extends StObject
      with ITextSnapshotLine {
   
-  /* private */ var _end: js.Any
+  /* private */ var _end: Any
   
-  /* private */ var _lineBreak: js.Any
+  /* private */ var _lineBreak: Any
   
-  /* private */ var _lineNumber: js.Any
+  /* private */ var _lineNumber: Any
   
-  /* private */ var _snapshot: js.Any
+  /* private */ var _snapshot: Any
   
-  /* private */ var _start: js.Any
+  /* private */ var _start: Any
 }
 object TextSnapshotLine {
   
   inline def apply(
-    _end: js.Any,
-    _lineBreak: js.Any,
-    _lineNumber: js.Any,
-    _snapshot: js.Any,
-    _start: js.Any,
+    _end: Any,
+    _lineBreak: Any,
+    _lineNumber: Any,
+    _snapshot: Any,
+    _start: Any,
     end: () => SnapshotPoint,
     endIncludingLineBreak: () => SnapshotPoint,
     endIncludingLineBreakPosition: () => Double,
@@ -43,14 +43,14 @@ object TextSnapshotLine {
   
   extension [Self <: TextSnapshotLine](x: Self) {
     
-    inline def set_end(value: js.Any): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
+    inline def set_end(value: Any): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
-    inline def set_lineBreak(value: js.Any): Self = StObject.set(x, "_lineBreak", value.asInstanceOf[js.Any])
+    inline def set_lineBreak(value: Any): Self = StObject.set(x, "_lineBreak", value.asInstanceOf[js.Any])
     
-    inline def set_lineNumber(value: js.Any): Self = StObject.set(x, "_lineNumber", value.asInstanceOf[js.Any])
+    inline def set_lineNumber(value: Any): Self = StObject.set(x, "_lineNumber", value.asInstanceOf[js.Any])
     
-    inline def set_snapshot(value: js.Any): Self = StObject.set(x, "_snapshot", value.asInstanceOf[js.Any])
+    inline def set_snapshot(value: Any): Self = StObject.set(x, "_snapshot", value.asInstanceOf[js.Any])
     
-    inline def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
   }
 }

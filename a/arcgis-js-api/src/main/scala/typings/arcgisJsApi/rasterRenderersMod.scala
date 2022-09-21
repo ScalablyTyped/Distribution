@@ -2,6 +2,8 @@ package typings.arcgisJsApi
 
 import typings.arcgisJsApi.esri.ClassBreaksRendererConstructor
 import typings.arcgisJsApi.esri.ClassBreaksRendererProperties
+import typings.arcgisJsApi.esri.FlowRendererConstructor
+import typings.arcgisJsApi.esri.FlowRendererProperties
 import typings.arcgisJsApi.esri.RasterColormapRendererConstructor
 import typings.arcgisJsApi.esri.RasterColormapRendererProperties
 import typings.arcgisJsApi.esri.RasterShadedReliefRendererConstructor
@@ -31,18 +33,18 @@ object rasterRenderersMod {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html)
     */
-  class ClassBreaksRendererCls ()
+  open class ClassBreaksRendererCls ()
     extends StObject
        with typings.arcgisJsApi.esri.ClassBreaksRenderer {
     def this(properties: ClassBreaksRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
     
     /**
       * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
@@ -51,6 +53,32 @@ object rasterRenderersMod {
       */
     /* CompleteClass */
     var visualVariables: js.Array[VisualVariable] = js.native
+  }
+  
+  @JSImport("esri/rasterRenderers", "FlowRenderer")
+  @js.native
+  val FlowRenderer: FlowRendererConstructor = js.native
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("esri/rasterRenderers", "FlowRenderer")
+  @js.native
+  /**
+    * The FlowRenderer allows you to visualize your raster data with animated streamlines.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html)
+    */
+  open class FlowRendererCls ()
+    extends StObject
+       with typings.arcgisJsApi.esri.FlowRenderer {
+    def this(properties: FlowRendererProperties) = this()
+    
+    /**
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): Any = js.native
   }
   
   @JSImport("esri/rasterRenderers", "RasterColormapRenderer")
@@ -65,18 +93,18 @@ object rasterRenderersMod {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html)
     */
-  class RasterColormapRendererCls ()
+  open class RasterColormapRendererCls ()
     extends StObject
        with typings.arcgisJsApi.esri.RasterColormapRenderer {
     def this(properties: RasterColormapRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
   
   @JSImport("esri/rasterRenderers", "RasterShadedReliefRenderer")
@@ -91,18 +119,18 @@ object rasterRenderersMod {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html)
     */
-  class RasterShadedReliefRendererCls ()
+  open class RasterShadedReliefRendererCls ()
     extends StObject
        with typings.arcgisJsApi.esri.RasterShadedReliefRenderer {
     def this(properties: RasterShadedReliefRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
   
   @JSImport("esri/rasterRenderers", "RasterStretchRenderer")
@@ -113,22 +141,22 @@ object rasterRenderersMod {
   @JSImport("esri/rasterRenderers", "RasterStretchRenderer")
   @js.native
   /**
-    * RasterStretchRenderer defines the symbology with a gradual ramp of colors for each pixel in a [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html) based on the pixel value.
+    * RasterStretchRenderer defines the symbology with a gradual ramp of colors for each pixel in a [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html), [ImageryTileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html), and [WCSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html) based on the pixel value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html)
     */
-  class RasterStretchRendererCls ()
+  open class RasterStretchRendererCls ()
     extends StObject
        with typings.arcgisJsApi.esri.RasterStretchRenderer {
     def this(properties: RasterStretchRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
   
   @JSImport("esri/rasterRenderers", "UniqueValueRenderer")
@@ -143,18 +171,18 @@ object rasterRenderersMod {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html)
     */
-  class UniqueValueRendererCls ()
+  open class UniqueValueRendererCls ()
     extends StObject
        with typings.arcgisJsApi.esri.UniqueValueRenderer {
     def this(properties: UniqueValueRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
     
     /**
       * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
@@ -177,17 +205,17 @@ object rasterRenderersMod {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html)
     */
-  class VectorFieldRendererCls ()
+  open class VectorFieldRendererCls ()
     extends StObject
        with typings.arcgisJsApi.esri.VectorFieldRenderer {
     def this(properties: VectorFieldRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
 }

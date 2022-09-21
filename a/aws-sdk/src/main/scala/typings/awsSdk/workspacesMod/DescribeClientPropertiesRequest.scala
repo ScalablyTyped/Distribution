@@ -22,6 +22,6 @@ object DescribeClientPropertiesRequest {
     
     inline def setResourceIds(value: ResourceIdList): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
     
-    inline def setResourceIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ResourceIds", js.Array(value*))
   }
 }

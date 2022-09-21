@@ -61,7 +61,7 @@ object ReprojectImageOptions {
     
     inline def setDstBandsUndefined: Self = StObject.set(x, "dstBands", js.undefined)
     
-    inline def setDstBandsVarargs(value: Double*): Self = StObject.set(x, "dstBands", js.Array(value :_*))
+    inline def setDstBandsVarargs(value: Double*): Self = StObject.set(x, "dstBands", js.Array(value*))
     
     inline def setDstNodata(value: Double): Self = StObject.set(x, "dstNodata", value.asInstanceOf[js.Any])
     
@@ -83,7 +83,7 @@ object ReprojectImageOptions {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setResampling(value: String): Self = StObject.set(x, "resampling", value.asInstanceOf[js.Any])
     
@@ -101,7 +101,7 @@ object ReprojectImageOptions {
     
     inline def setSrcBandsUndefined: Self = StObject.set(x, "srcBands", js.undefined)
     
-    inline def setSrcBandsVarargs(value: Double*): Self = StObject.set(x, "srcBands", js.Array(value :_*))
+    inline def setSrcBandsVarargs(value: Double*): Self = StObject.set(x, "srcBands", js.Array(value*))
     
     inline def setSrcNodata(value: Double): Self = StObject.set(x, "srcNodata", value.asInstanceOf[js.Any])
     

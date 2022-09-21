@@ -9,17 +9,17 @@ trait CancelAuditMitigationActionsTaskRequest extends StObject {
   /**
     * The unique identifier for the task that you want to cancel. 
     */
-  var taskId: AuditMitigationActionsTaskId
+  var taskId: MitigationActionsTaskId
 }
 object CancelAuditMitigationActionsTaskRequest {
   
-  inline def apply(taskId: AuditMitigationActionsTaskId): CancelAuditMitigationActionsTaskRequest = {
+  inline def apply(taskId: MitigationActionsTaskId): CancelAuditMitigationActionsTaskRequest = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelAuditMitigationActionsTaskRequest]
   }
   
   extension [Self <: CancelAuditMitigationActionsTaskRequest](x: Self) {
     
-    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: MitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

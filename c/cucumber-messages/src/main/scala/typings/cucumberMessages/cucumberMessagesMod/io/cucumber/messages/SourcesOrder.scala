@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,20 +15,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SourcesOrder.
   * @param [properties] Properties to set
   */
-class SourcesOrder ()
+open class SourcesOrder ()
   extends StObject
      with ISourcesOrder {
   def this(properties: ISourcesOrder) = this()
   
   /** SourcesOrder seed. */
   @JSName("seed")
-  var seed_SourcesOrder: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  var seed_SourcesOrder: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any) = js.native
   
   /**
     * Converts this SourcesOrder to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** SourcesOrder type. */
   @JSName("type")
@@ -50,6 +49,8 @@ object SourcesOrder {
   inline def create(): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SourcesOrder]
   inline def create(properties: ISourcesOrder): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
   
+  inline def decode(reader: js.typedarray.Uint8Array): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): SourcesOrder = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourcesOrder]
   /**
     * Decodes a SourcesOrder message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object SourcesOrder {
   /* static member */
   inline def decode(reader: Reader): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
   inline def decode(reader: Reader, length: Double): SourcesOrder = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourcesOrder]
-  inline def decode(reader: Uint8Array): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
-  inline def decode(reader: Uint8Array, length: Double): SourcesOrder = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourcesOrder]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
   /**
     * Decodes a SourcesOrder message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object SourcesOrder {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
-  inline def decodeDelimited(reader: Uint8Array): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
   
   /**
     * Encodes the specified SourcesOrder message. Does not implicitly {@link io.cucumber.messages.SourcesOrder.verify|verify} messages.
@@ -101,7 +100,7 @@ object SourcesOrder {
     * @returns SourcesOrder
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
+  inline def fromObject(`object`: StringDictionary[Any]): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
   
   /**
     * Creates a plain object from a SourcesOrder message. Also converts values to other types if specified.
@@ -110,8 +109,8 @@ object SourcesOrder {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: SourcesOrder): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: SourcesOrder, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SourcesOrder): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: SourcesOrder, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a SourcesOrder message.
@@ -119,5 +118,5 @@ object SourcesOrder {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

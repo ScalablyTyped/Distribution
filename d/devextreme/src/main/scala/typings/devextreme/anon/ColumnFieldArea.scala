@@ -6,12 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnFieldArea extends StObject {
   
+  /**
+    * Specifies the placeholder of the column field area.
+    */
   var columnFieldArea: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the placeholder of the data field area.
+    */
   var dataFieldArea: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the placeholder of the filter field area.
+    */
   var filterFieldArea: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the placeholder of the row field area.
+    */
   var rowFieldArea: js.UndefOr[String] = js.undefined
 }
 object ColumnFieldArea {

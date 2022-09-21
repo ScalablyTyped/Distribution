@@ -24,6 +24,6 @@ object BatchGetApplicationsOutput {
     
     inline def setApplicationsInfoUndefined: Self = StObject.set(x, "applicationsInfo", js.undefined)
     
-    inline def setApplicationsInfoVarargs(value: ApplicationInfo*): Self = StObject.set(x, "applicationsInfo", js.Array(value :_*))
+    inline def setApplicationsInfoVarargs(value: ApplicationInfo*): Self = StObject.set(x, "applicationsInfo", js.Array(value*))
   }
 }

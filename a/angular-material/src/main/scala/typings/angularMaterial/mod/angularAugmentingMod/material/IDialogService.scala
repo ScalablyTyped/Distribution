@@ -18,17 +18,17 @@ trait IDialogService
   def alert(): IAlertDialog = js.native
   
   def cancel(): Unit = js.native
-  def cancel(response: js.Any): Unit = js.native
+  def cancel(response: Any): Unit = js.native
   
   def confirm(): IConfirmDialog = js.native
   
-  def hide(): IPromise[js.Any] = js.native
-  def hide(response: js.Any): IPromise[js.Any] = js.native
+  def hide(): IPromise[Any] = js.native
+  def hide(response: Any): IPromise[Any] = js.native
   
   def prompt(): IPromptDialog = js.native
   
-  def show(dialog: IAlertDialog): IPromise[js.Any] = js.native
-  def show(dialog: IConfirmDialog): IPromise[js.Any] = js.native
-  def show(dialog: IDialogOptions): IPromise[js.Any] = js.native
-  def show(dialog: IPromptDialog): IPromise[js.Any] = js.native
+  def show(dialog: IAlertDialog): IPromise[Any] = js.native
+  def show(dialog: IConfirmDialog): IPromise[Any] = js.native
+  def show(dialog: IDialogOptions): IPromise[Any] = js.native
+  def show(dialog: IPromptDialog): IPromise[Any] = js.native
 }

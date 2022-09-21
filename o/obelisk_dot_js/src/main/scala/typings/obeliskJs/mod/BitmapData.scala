@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "BitmapData")
 @js.native
-class BitmapData protected () extends StObject {
+open class BitmapData protected () extends StObject {
   def this(w: Double, h: Double) = this()
   def this(w: Double, h: Double, useDefaultCanvas: Boolean) = this()
   

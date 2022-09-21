@@ -16,19 +16,23 @@ trait CompassViewModel
   /**
     * The orientation axes (x, y, z).
     *
+    * @default { x: 0, y: 0, z: 0 }
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass-CompassViewModel.html#orientation)
     */
-  var orientation: js.Any = js.native
+  var orientation: Any = js.native
   
   /**
     * If working in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html), sets the view's [rotation](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#rotation) is to `0`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass-CompassViewModel.html#reset)
     */
-  def reset(): Unit = js.native
+  def reset(): scala.Unit = js.native
   
   /**
     * The view model's state.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass-CompassViewModel.html#state)
     */

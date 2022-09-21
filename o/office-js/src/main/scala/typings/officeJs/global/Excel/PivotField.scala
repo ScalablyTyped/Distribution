@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel PivotField.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.PivotField")
 @js.native
-class PivotField ()
+open class PivotField ()
   extends StObject
      with typings.officeJs.Excel.PivotField {
   

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fastLayerMod {
   
-  @JSImport("konva/types/FastLayer", "FastLayer")
+  @JSImport("konva/lib/FastLayer", "FastLayer")
   @js.native
-  class FastLayer protected () extends Layer {
-    def this(attrs: js.Any) = this()
+  open class FastLayer protected () extends Layer {
+    def this(attrs: Any) = this()
   }
 }

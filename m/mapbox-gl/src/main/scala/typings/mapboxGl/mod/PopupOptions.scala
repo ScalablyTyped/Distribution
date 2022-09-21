@@ -1,6 +1,5 @@
 package typings.mapboxGl.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +19,15 @@ trait PopupOptions extends StObject {
     */
   var closeOnMove: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @param {boolean} [options.focusAfterOpen=true] If `true`, the popup will try to focus the
+    *   first focusable element inside the popup.
+    */
+  var focusAfterOpen: js.UndefOr[Boolean | Null] = js.undefined
+  
   var maxWidth: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Double | PointLike | StringDictionary[PointLike]] = js.undefined
+  var offset: js.UndefOr[Offset | Null] = js.undefined
 }
 object PopupOptions {
   
@@ -53,11 +58,19 @@ object PopupOptions {
     
     inline def setCloseOnMoveUndefined: Self = StObject.set(x, "closeOnMove", js.undefined)
     
+    inline def setFocusAfterOpen(value: Boolean): Self = StObject.set(x, "focusAfterOpen", value.asInstanceOf[js.Any])
+    
+    inline def setFocusAfterOpenNull: Self = StObject.set(x, "focusAfterOpen", null)
+    
+    inline def setFocusAfterOpenUndefined: Self = StObject.set(x, "focusAfterOpen", js.undefined)
+    
     inline def setMaxWidth(value: String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    inline def setOffset(value: Double | PointLike | StringDictionary[PointLike]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetNull: Self = StObject.set(x, "offset", null)
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }

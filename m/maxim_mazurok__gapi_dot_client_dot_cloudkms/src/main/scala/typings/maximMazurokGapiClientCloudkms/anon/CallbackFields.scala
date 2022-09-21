@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientCloudkms.anon
 
+import typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms.DecryptRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,20 +26,20 @@ trait CallbackFields extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. It must be unique within a location and match the regular expression `[a-zA-Z0-9_-]{1,63}` */
-  var keyRingId: js.UndefOr[String] = js.undefined
+  /** Required. The resource name of the CryptoKey to use for decryption. The server will choose the appropriate version. */
+  var name: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** Required. The resource name of the location associated with the KeyRings, in the format `projects/∗/locations/ *`. */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: DecryptRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -48,8 +49,8 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(parent: String): CallbackFields = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: DecryptRequest): CallbackFields = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
   
@@ -77,17 +78,13 @@ object CallbackFields {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setKeyRingId(value: String): Self = StObject.set(x, "keyRingId", value.asInstanceOf[js.Any])
-    
-    inline def setKeyRingIdUndefined: Self = StObject.set(x, "keyRingId", js.undefined)
-    
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -96,6 +93,8 @@ object CallbackFields {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: DecryptRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ForgetDeviceRequest extends StObject {
   
   /**
-    * The access token for the forgotten device request.
+    * A valid access token that Amazon Cognito issued to the user whose registered device you want to forget.
     */
   var AccessToken: js.UndefOr[TokenModelType] = js.undefined
   

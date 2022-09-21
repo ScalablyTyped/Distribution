@@ -12,7 +12,7 @@ trait HTMLLocation extends StObject {
   
   def assign(bstr: String): Unit = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
   var hash: String = js.native
   

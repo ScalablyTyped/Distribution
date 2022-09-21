@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object chainMod {
   
-  @JSImport("@aws-sdk/property-provider/dist/cjs/chain", JSImport.Namespace)
+  @JSImport("@aws-sdk/property-provider/dist-types/chain", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def chain[T](providers: Provider[T]*): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(providers.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
+  inline def chain[T](providers: Provider[T]*): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(providers.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Provider[T]]
 }

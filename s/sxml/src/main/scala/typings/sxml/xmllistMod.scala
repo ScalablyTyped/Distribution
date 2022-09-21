@@ -9,7 +9,7 @@ object xmllistMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vector<XML> * / any */ @JSImport("sxml/lib/module/XMLList", "XMLList")
   @js.native
-  class XMLList () extends StObject {
+  open class XMLList () extends StObject {
     
     def getTag(): String = js.native
     
@@ -17,9 +17,9 @@ object xmllistMod {
   }
   object XMLList {
     
-    type Iterator_ = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vector.Iterator<XML> */ js.Any
+    type Iterator_ = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vector.Iterator<XML> */ Any
     
-    type ReverseIterator_ = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vector.ReverseIterator<XML> */ js.Any
+    type ReverseIterator_ = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vector.ReverseIterator<XML> */ Any
     
     type iterator = Iterator_
     

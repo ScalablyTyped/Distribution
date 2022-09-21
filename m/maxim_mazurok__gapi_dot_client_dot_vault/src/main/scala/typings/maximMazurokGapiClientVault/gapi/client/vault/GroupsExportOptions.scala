@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GroupsExportOptions extends StObject {
   
-  /** The export format for groups export. */
+  /** The file format for exported messages. */
   var exportFormat: js.UndefOr[String] = js.undefined
 }
 object GroupsExportOptions {

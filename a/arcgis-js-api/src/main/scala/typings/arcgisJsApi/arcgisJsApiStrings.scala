@@ -1,8 +1,17 @@
 package typings.arcgisJsApi
 
-import typings.arcgisJsApi.esri.ArealUnits
-import typings.arcgisJsApi.esri.LinearUnits
 import typings.arcgisJsApi.esri.SupportedRegion
+import typings.arcgisJsApi.esri.SupportedRendererType
+import typings.arcgisJsApi.esri._ArealUnits
+import typings.arcgisJsApi.esri._LinearUnits
+import typings.arcgisJsApi.esri.units.AngleUnit
+import typings.arcgisJsApi.esri.units.AreaUnit
+import typings.arcgisJsApi.esri.units.LengthUnit
+import typings.arcgisJsApi.esri.units.MeasurementSystem
+import typings.arcgisJsApi.esri.units.SystemOrAreaUnit
+import typings.arcgisJsApi.esri.units.SystemOrLengthUnit
+import typings.arcgisJsApi.esri.units.Unit
+import typings.arcgisJsApi.esri.units.VolumeUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object arcgisJsApiStrings {
   
   @js.native
-  sealed trait default extends StObject
-  inline def default: default = "default".asInstanceOf[default]
+  sealed trait `-_` extends StObject
+  inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
   sealed trait `150-kilometers` extends StObject
@@ -20,6 +29,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait `2d` extends StObject
   inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
+  
+  @js.native
+  sealed trait `3d` extends StObject
+  inline def `3d`: `3d` = "3d".asInstanceOf[`3d`]
   
   @js.native
   sealed trait `3d-flat` extends StObject
@@ -44,6 +57,10 @@ object arcgisJsApiStrings {
   inline def AE: AE = "AE".asInstanceOf[AE]
   
   @js.native
+  sealed trait AND extends StObject
+  inline def AND: AND = "AND".asInstanceOf[AND]
+  
+  @js.native
   sealed trait AR
     extends StObject
        with SupportedRegion
@@ -66,10 +83,26 @@ object arcgisJsApiStrings {
   inline def AU: AU = "AU".asInstanceOf[AU]
   
   @js.native
+  sealed trait Absolute extends StObject
+  inline def Absolute: Absolute = "Absolute".asInstanceOf[Absolute]
+  
+  @js.native
+  sealed trait Accurate extends StObject
+  inline def Accurate: Accurate = "Accurate".asInstanceOf[Accurate]
+  
+  @js.native
+  sealed trait Asterisk extends StObject
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  
+  @js.native
   sealed trait BE
     extends StObject
        with SupportedRegion
   inline def BE: BE = "BE".asInstanceOf[BE]
+  
+  @js.native
+  sealed trait BETWEEN extends StObject
+  inline def BETWEEN: BETWEEN = "BETWEEN".asInstanceOf[BETWEEN]
   
   @js.native
   sealed trait BG
@@ -88,6 +121,42 @@ object arcgisJsApiStrings {
     extends StObject
        with SupportedRegion
   inline def BR: BR = "BR".asInstanceOf[BR]
+  
+  @js.native
+  sealed trait Baseline extends StObject
+  inline def Baseline: Baseline = "Baseline".asInstanceOf[Baseline]
+  
+  @js.native
+  sealed trait Bevel extends StObject
+  inline def Bevel: Bevel = "Bevel".asInstanceOf[Bevel]
+  
+  @js.native
+  sealed trait Bevelled extends StObject
+  inline def Bevelled: Bevelled = "Bevelled".asInstanceOf[Bevelled]
+  
+  @js.native
+  sealed trait Block extends StObject
+  inline def Block: Block = "Block".asInstanceOf[Block]
+  
+  @js.native
+  sealed trait Bold extends StObject
+  inline def Bold: Bold = "Bold".asInstanceOf[Bold]
+  
+  @js.native
+  sealed trait Both extends StObject
+  inline def Both: Both = "Both".asInstanceOf[Both]
+  
+  @js.native
+  sealed trait Bottom extends StObject
+  inline def Bottom: Bottom = "Bottom".asInstanceOf[Bottom]
+  
+  @js.native
+  sealed trait BoundingBoxCenter extends StObject
+  inline def BoundingBoxCenter: BoundingBoxCenter = "BoundingBoxCenter".asInstanceOf[BoundingBoxCenter]
+  
+  @js.native
+  sealed trait Butt extends StObject
+  inline def Butt: Butt = "Butt".asInstanceOf[Butt]
   
   @js.native
   sealed trait CA
@@ -142,6 +211,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait CIMGeometricEffectBuffer extends StObject
   inline def CIMGeometricEffectBuffer: CIMGeometricEffectBuffer = "CIMGeometricEffectBuffer".asInstanceOf[CIMGeometricEffectBuffer]
+  
+  @js.native
+  sealed trait CIMGeometricEffectControlMeasureLine extends StObject
+  inline def CIMGeometricEffectControlMeasureLine: CIMGeometricEffectControlMeasureLine = "CIMGeometricEffectControlMeasureLine".asInstanceOf[CIMGeometricEffectControlMeasureLine]
   
   @js.native
   sealed trait CIMGeometricEffectCut extends StObject
@@ -382,6 +455,26 @@ object arcgisJsApiStrings {
   inline def CZ: CZ = "CZ".asInstanceOf[CZ]
   
   @js.native
+  sealed trait Center extends StObject
+  inline def Center: Center = "Center".asInstanceOf[Center]
+  
+  @js.native
+  sealed trait CenterOfMass extends StObject
+  inline def CenterOfMass: CenterOfMass = "CenterOfMass".asInstanceOf[CenterOfMass]
+  
+  @js.native
+  sealed trait ClipAtBoundary extends StObject
+  inline def ClipAtBoundary: ClipAtBoundary = "ClipAtBoundary".asInstanceOf[ClipAtBoundary]
+  
+  @js.native
+  sealed trait Crossed extends StObject
+  inline def Crossed: Crossed = "Crossed".asInstanceOf[Crossed]
+  
+  @js.native
+  sealed trait Custom extends StObject
+  inline def Custom: Custom = "Custom".asInstanceOf[Custom]
+  
+  @js.native
   sealed trait DE
     extends StObject
        with SupportedRegion
@@ -396,6 +489,14 @@ object arcgisJsApiStrings {
     extends StObject
        with SupportedRegion
   inline def DK: DK = "DK".asInstanceOf[DK]
+  
+  @js.native
+  sealed trait Default extends StObject
+  inline def Default: Default = "Default".asInstanceOf[Default]
+  
+  @js.native
+  sealed trait Display extends StObject
+  inline def Display: Display = "Display".asInstanceOf[Display]
   
   @js.native
   sealed trait EE
@@ -416,6 +517,10 @@ object arcgisJsApiStrings {
   inline def ES: ES = "ES".asInstanceOf[ES]
   
   @js.native
+  sealed trait Equalssign extends StObject
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  
+  @js.native
   sealed trait FI
     extends StObject
        with SupportedRegion
@@ -428,8 +533,28 @@ object arcgisJsApiStrings {
   inline def FR: FR = "FR".asInstanceOf[FR]
   
   @js.native
+  sealed trait Fast extends StObject
+  inline def Fast: Fast = "Fast".asInstanceOf[Fast]
+  
+  @js.native
   sealed trait Feet extends StObject
   inline def Feet: Feet = "Feet".asInstanceOf[Feet]
+  
+  @js.native
+  sealed trait Fixed extends StObject
+  inline def Fixed: Fixed = "Fixed".asInstanceOf[Fixed]
+  
+  @js.native
+  sealed trait Float32 extends StObject
+  inline def Float32: Float32 = "Float32".asInstanceOf[Float32]
+  
+  @js.native
+  sealed trait FullGap extends StObject
+  inline def FullGap: FullGap = "FullGap".asInstanceOf[FullGap]
+  
+  @js.native
+  sealed trait FullPattern extends StObject
+  inline def FullPattern: FullPattern = "FullPattern".asInstanceOf[FullPattern]
   
   @js.native
   sealed trait GB
@@ -456,10 +581,26 @@ object arcgisJsApiStrings {
   inline def GT: GT = "GT".asInstanceOf[GT]
   
   @js.native
+  sealed trait Greaterthansign extends StObject
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  
+  @js.native
+  sealed trait GreaterthansignEqualssign extends StObject
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  
+  @js.native
   sealed trait HK
     extends StObject
        with SupportedRegion
   inline def HK: HK = "HK".asInstanceOf[HK]
+  
+  @js.native
+  sealed trait HalfGap extends StObject
+  inline def HalfGap: HalfGap = "HalfGap".asInstanceOf[HalfGap]
+  
+  @js.native
+  sealed trait HalfPattern extends StObject
+  inline def HalfPattern: HalfPattern = "HalfPattern".asInstanceOf[HalfPattern]
   
   @js.native
   sealed trait ID
@@ -498,16 +639,48 @@ object arcgisJsApiStrings {
   inline def IS: IS = "IS".asInstanceOf[IS]
   
   @js.native
+  sealed trait ISNOT extends StObject
+  inline def ISNOT: ISNOT = "ISNOT".asInstanceOf[ISNOT]
+  
+  @js.native
+  sealed trait ISO8601 extends StObject
+  inline def ISO8601: ISO8601 = "ISO8601".asInstanceOf[ISO8601]
+  
+  @js.native
   sealed trait IT
     extends StObject
        with SupportedRegion
   inline def IT: IT = "IT".asInstanceOf[IT]
   
   @js.native
+  sealed trait Int16 extends StObject
+  inline def Int16: Int16 = "Int16".asInstanceOf[Int16]
+  
+  @js.native
+  sealed trait Int32 extends StObject
+  inline def Int32: Int32 = "Int32".asInstanceOf[Int32]
+  
+  @js.native
+  sealed trait Int8 extends StObject
+  inline def Int8: Int8 = "Int8".asInstanceOf[Int8]
+  
+  @js.native
+  sealed trait Italic extends StObject
+  inline def Italic: Italic = "Italic".asInstanceOf[Italic]
+  
+  @js.native
   sealed trait JP
     extends StObject
        with SupportedRegion
   inline def JP: JP = "JP".asInstanceOf[JP]
+  
+  @js.native
+  sealed trait JustBegin extends StObject
+  inline def JustBegin: JustBegin = "JustBegin".asInstanceOf[JustBegin]
+  
+  @js.native
+  sealed trait JustEnd extends StObject
+  inline def JustEnd: JustEnd = "JustEnd".asInstanceOf[JustEnd]
   
   @js.native
   sealed trait KE
@@ -542,6 +715,10 @@ object arcgisJsApiStrings {
   inline def LI: LI = "LI".asInstanceOf[LI]
   
   @js.native
+  sealed trait LIKE extends StObject
+  inline def LIKE: LIKE = "LIKE".asInstanceOf[LIKE]
+  
+  @js.native
   sealed trait LT
     extends StObject
        with SupportedRegion
@@ -558,6 +735,38 @@ object arcgisJsApiStrings {
     extends StObject
        with SupportedRegion
   inline def LV: LV = "LV".asInstanceOf[LV]
+  
+  @js.native
+  sealed trait Left extends StObject
+  inline def Left: Left = "Left".asInstanceOf[Left]
+  
+  @js.native
+  sealed trait Lessthansign extends StObject
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  
+  @js.native
+  sealed trait LessthansignEqualssign extends StObject
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  
+  @js.native
+  sealed trait LessthansignGreaterthansign extends StObject
+  inline def LessthansignGreaterthansign: LessthansignGreaterthansign = "<>".asInstanceOf[LessthansignGreaterthansign]
+  
+  @js.native
+  sealed trait LineBeginning extends StObject
+  inline def LineBeginning: LineBeginning = "LineBeginning".asInstanceOf[LineBeginning]
+  
+  @js.native
+  sealed trait LineEnd extends StObject
+  inline def LineEnd: LineEnd = "LineEnd".asInstanceOf[LineEnd]
+  
+  @js.native
+  sealed trait LineMiddle extends StObject
+  inline def LineMiddle: LineMiddle = "LineMiddle".asInstanceOf[LineMiddle]
+  
+  @js.native
+  sealed trait Loop extends StObject
+  inline def Loop: Loop = "Loop".asInstanceOf[Loop]
   
   @js.native
   sealed trait MA
@@ -600,12 +809,24 @@ object arcgisJsApiStrings {
   inline def Magnitude: Magnitude = "Magnitude".asInstanceOf[Magnitude]
   
   @js.native
+  sealed trait Map extends StObject
+  inline def Map: Map = "Map".asInstanceOf[Map]
+  
+  @js.native
   sealed trait Meters extends StObject
   inline def Meters: Meters = "Meters".asInstanceOf[Meters]
   
   @js.native
   sealed trait Miles extends StObject
   inline def Miles: Miles = "Miles".asInstanceOf[Miles]
+  
+  @js.native
+  sealed trait Miter extends StObject
+  inline def Miter: Miter = "Miter".asInstanceOf[Miter]
+  
+  @js.native
+  sealed trait Mitered extends StObject
+  inline def Mitered: Mitered = "Mitered".asInstanceOf[Mitered]
   
   @js.native
   sealed trait NI
@@ -626,10 +847,50 @@ object arcgisJsApiStrings {
   inline def NO: NO = "NO".asInstanceOf[NO]
   
   @js.native
+  sealed trait `NOT IN` extends StObject
+  inline def `NOT IN`: `NOT IN` = ("NOT IN").asInstanceOf[`NOT IN`]
+  
+  @js.native
+  sealed trait `NOT LIKE` extends StObject
+  inline def `NOT LIKE`: `NOT LIKE` = ("NOT LIKE").asInstanceOf[`NOT LIKE`]
+  
+  @js.native
+  sealed trait NOTBETWEEN extends StObject
+  inline def NOTBETWEEN: NOTBETWEEN = "NOTBETWEEN".asInstanceOf[NOTBETWEEN]
+  
+  @js.native
   sealed trait NZ
     extends StObject
        with SupportedRegion
   inline def NZ: NZ = "NZ".asInstanceOf[NZ]
+  
+  @js.native
+  sealed trait NoConstraint extends StObject
+  inline def NoConstraint: NoConstraint = "NoConstraint".asInstanceOf[NoConstraint]
+  
+  @js.native
+  sealed trait None extends StObject
+  inline def None: None = "None".asInstanceOf[None]
+  
+  @js.native
+  sealed trait Numeric extends StObject
+  inline def Numeric: Numeric = "Numeric".asInstanceOf[Numeric]
+  
+  @js.native
+  sealed trait OR extends StObject
+  inline def OR: OR = "OR".asInstanceOf[OR]
+  
+  @js.native
+  sealed trait OnPolygon extends StObject
+  inline def OnPolygon: OnPolygon = "OnPolygon".asInstanceOf[OnPolygon]
+  
+  @js.native
+  sealed trait OpenEnded extends StObject
+  inline def OpenEnded: OpenEnded = "OpenEnded".asInstanceOf[OpenEnded]
+  
+  @js.native
+  sealed trait Oscillate extends StObject
+  inline def Oscillate: Oscillate = "Oscillate".asInstanceOf[Oscillate]
   
   @js.native
   sealed trait PE
@@ -656,6 +917,10 @@ object arcgisJsApiStrings {
   inline def PT: PT = "PT".asInstanceOf[PT]
   
   @js.native
+  sealed trait Plussign extends StObject
+  inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
+  
+  @js.native
   sealed trait RESTful extends StObject
   inline def RESTful: RESTful = "RESTful".asInstanceOf[RESTful]
   
@@ -676,6 +941,30 @@ object arcgisJsApiStrings {
     extends StObject
        with SupportedRegion
   inline def RW: RW = "RW".asInstanceOf[RW]
+  
+  @js.native
+  sealed trait Random extends StObject
+  inline def Random: Random = "Random".asInstanceOf[Random]
+  
+  @js.native
+  sealed trait Regular extends StObject
+  inline def Regular: Regular = "Regular".asInstanceOf[Regular]
+  
+  @js.native
+  sealed trait Relative extends StObject
+  inline def Relative: Relative = "Relative".asInstanceOf[Relative]
+  
+  @js.native
+  sealed trait Right extends StObject
+  inline def Right: Right = "Right".asInstanceOf[Right]
+  
+  @js.native
+  sealed trait Round extends StObject
+  inline def Round: Round = "Round".asInstanceOf[Round]
+  
+  @js.native
+  sealed trait Rounded extends StObject
+  inline def Rounded: Rounded = "Rounded".asInstanceOf[Rounded]
   
   @js.native
   sealed trait SE
@@ -708,6 +997,26 @@ object arcgisJsApiStrings {
   inline def SV: SV = "SV".asInstanceOf[SV]
   
   @js.native
+  sealed trait SegmentMidpoint extends StObject
+  inline def SegmentMidpoint: SegmentMidpoint = "SegmentMidpoint".asInstanceOf[SegmentMidpoint]
+  
+  @js.native
+  sealed trait Sinus extends StObject
+  inline def Sinus: Sinus = "Sinus".asInstanceOf[Sinus]
+  
+  @js.native
+  sealed trait Slash extends StObject
+  inline def Slash: Slash = "/".asInstanceOf[Slash]
+  
+  @js.native
+  sealed trait Square extends StObject
+  inline def Square: Square = "Square".asInstanceOf[Square]
+  
+  @js.native
+  sealed trait String extends StObject
+  inline def String: String = "String".asInstanceOf[String]
+  
+  @js.native
   sealed trait TH
     extends StObject
        with SupportedRegion
@@ -724,6 +1033,26 @@ object arcgisJsApiStrings {
     extends StObject
        with SupportedRegion
   inline def TW: TW = "TW".asInstanceOf[TW]
+  
+  @js.native
+  sealed trait Top extends StObject
+  inline def Top: Top = "Top".asInstanceOf[Top]
+  
+  @js.native
+  sealed trait Triangle extends StObject
+  inline def Triangle: Triangle = "Triangle".asInstanceOf[Triangle]
+  
+  @js.native
+  sealed trait UInt16 extends StObject
+  inline def UInt16: UInt16 = "UInt16".asInstanceOf[UInt16]
+  
+  @js.native
+  sealed trait UInt32 extends StObject
+  inline def UInt32: UInt32 = "UInt32".asInstanceOf[UInt32]
+  
+  @js.native
+  sealed trait UInt8 extends StObject
+  inline def UInt8: UInt8 = "UInt8".asInstanceOf[UInt8]
   
   @js.native
   sealed trait US
@@ -744,10 +1073,26 @@ object arcgisJsApiStrings {
   inline def VI: VI = "VI".asInstanceOf[VI]
   
   @js.native
+  sealed trait WithFullGap extends StObject
+  inline def WithFullGap: WithFullGap = "WithFullGap".asInstanceOf[WithFullGap]
+  
+  @js.native
+  sealed trait WithHalfGap extends StObject
+  inline def WithHalfGap: WithHalfGap = "WithHalfGap".asInstanceOf[WithHalfGap]
+  
+  @js.native
+  sealed trait WithMarkers extends StObject
+  inline def WithMarkers: WithMarkers = "WithMarkers".asInstanceOf[WithMarkers]
+  
+  @js.native
   sealed trait ZA
     extends StObject
        with SupportedRegion
   inline def ZA: ZA = "ZA".asInstanceOf[ZA]
+  
+  @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait `a3-landscape` extends StObject
@@ -768,6 +1113,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait abort extends StObject
   inline def abort: abort = "abort".asInstanceOf[abort]
+  
+  @js.native
+  sealed trait above extends StObject
+  inline def above: above = "above".asInstanceOf[above]
   
   @js.native
   sealed trait `above-after` extends StObject
@@ -816,7 +1165,13 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait acres
     extends StObject
-       with ArealUnits
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _ArealUnits
   inline def acres: acres = "acres".asInstanceOf[acres]
   
   @js.native
@@ -828,8 +1183,28 @@ object arcgisJsApiStrings {
   inline def add: add = "add".asInstanceOf[add]
   
   @js.native
+  sealed trait `add-flag` extends StObject
+  inline def `add-flag`: `add-flag` = "add-flag".asInstanceOf[`add-flag`]
+  
+  @js.native
+  sealed trait `add-flag-complete` extends StObject
+  inline def `add-flag-complete`: `add-flag-complete` = "add-flag-complete".asInstanceOf[`add-flag-complete`]
+  
+  @js.native
+  sealed trait `add-flag-error` extends StObject
+  inline def `add-flag-error`: `add-flag-error` = "add-flag-error".asInstanceOf[`add-flag-error`]
+  
+  @js.native
   sealed trait added extends StObject
   inline def added: added = "added".asInstanceOf[added]
+  
+  @js.native
+  sealed trait `added-cost` extends StObject
+  inline def `added-cost`: `added-cost` = "added-cost".asInstanceOf[`added-cost`]
+  
+  @js.native
+  sealed trait `adding-attachment` extends StObject
+  inline def `adding-attachment`: `adding-attachment` = "adding-attachment".asInstanceOf[`adding-attachment`]
   
   @js.native
   sealed trait adjusted extends StObject
@@ -872,6 +1247,10 @@ object arcgisJsApiStrings {
   inline def `always-horizontal`: `always-horizontal` = "always-horizontal".asInstanceOf[`always-horizontal`]
   
   @js.native
+  sealed trait angle extends StObject
+  inline def angle: angle = "angle".asInstanceOf[angle]
+  
+  @js.native
   sealed trait anonymous extends StObject
   inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
@@ -880,13 +1259,27 @@ object arcgisJsApiStrings {
   inline def any: any = "any".asInstanceOf[any]
   
   @js.native
+  sealed trait `any-hazmat-prohibited` extends StObject
+  inline def `any-hazmat-prohibited`: `any-hazmat-prohibited` = "any-hazmat-prohibited".asInstanceOf[`any-hazmat-prohibited`]
+  
+  @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
   
   @js.native
+  sealed trait `area-measurement-view-3d` extends StObject
+  inline def `area-measurement-view-3d`: `area-measurement-view-3d` = "area-measurement-view-3d".asInstanceOf[`area-measurement-view-3d`]
+  
+  @js.native
   sealed trait ares
     extends StObject
-       with ArealUnits
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _ArealUnits
   inline def ares: ares = "ares".asInstanceOf[ares]
   
   @js.native
@@ -894,8 +1287,16 @@ object arcgisJsApiStrings {
   inline def arithmetic: arithmetic = "arithmetic".asInstanceOf[arithmetic]
   
   @js.native
+  sealed trait array extends StObject
+  inline def array: array = "array".asInstanceOf[array]
+  
+  @js.native
   sealed trait `array-buffer` extends StObject
   inline def `array-buffer`: `array-buffer` = "array-buffer".asInstanceOf[`array-buffer`]
+  
+  @js.native
+  sealed trait arrive extends StObject
+  inline def arrive: arrive = "arrive".asInstanceOf[arrive]
   
   @js.native
   sealed trait arrow extends StObject
@@ -906,8 +1307,8 @@ object arcgisJsApiStrings {
   inline def asc_ : asc_ = "asc".asInstanceOf[asc_]
   
   @js.native
-  sealed trait async extends StObject
-  inline def async: async = "async".asInstanceOf[async]
+  sealed trait ascending extends StObject
+  inline def ascending: ascending = "ascending".asInstanceOf[ascending]
   
   @js.native
   sealed trait `at-dead-ends-and-intersections` extends StObject
@@ -926,12 +1327,20 @@ object arcgisJsApiStrings {
   inline def `at-most`: `at-most` = "at-most".asInstanceOf[`at-most`]
   
   @js.native
+  sealed trait attachment extends StObject
+  inline def attachment: attachment = "attachment".asInstanceOf[attachment]
+  
+  @js.native
   sealed trait attachments extends StObject
   inline def attachments: attachments = "attachments".asInstanceOf[attachments]
   
   @js.native
   sealed trait attribute extends StObject
   inline def attribute: attribute = "attribute".asInstanceOf[attribute]
+  
+  @js.native
+  sealed trait `authorization-code` extends StObject
+  inline def `authorization-code`: `authorization-code` = "authorization-code".asInstanceOf[`authorization-code`]
   
   @js.native
   sealed trait auto extends StObject
@@ -946,6 +1355,10 @@ object arcgisJsApiStrings {
   inline def automatic: automatic = "automatic".asInstanceOf[automatic]
   
   @js.native
+  sealed trait automobile extends StObject
+  inline def automobile: automobile = "automobile".asInstanceOf[automobile]
+  
+  @js.native
   sealed trait average extends StObject
   inline def average: average = "average".asInstanceOf[average]
   
@@ -956,6 +1369,54 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait `avg-rating` extends StObject
   inline def `avg-rating`: `avg-rating` = "avg-rating".asInstanceOf[`avg-rating`]
+  
+  @js.native
+  sealed trait `avoid-carpool-roads` extends StObject
+  inline def `avoid-carpool-roads`: `avoid-carpool-roads` = "avoid-carpool-roads".asInstanceOf[`avoid-carpool-roads`]
+  
+  @js.native
+  sealed trait `avoid-express-lanes` extends StObject
+  inline def `avoid-express-lanes`: `avoid-express-lanes` = "avoid-express-lanes".asInstanceOf[`avoid-express-lanes`]
+  
+  @js.native
+  sealed trait `avoid-ferries` extends StObject
+  inline def `avoid-ferries`: `avoid-ferries` = "avoid-ferries".asInstanceOf[`avoid-ferries`]
+  
+  @js.native
+  sealed trait `avoid-gates` extends StObject
+  inline def `avoid-gates`: `avoid-gates` = "avoid-gates".asInstanceOf[`avoid-gates`]
+  
+  @js.native
+  sealed trait `avoid-limited-access-roads` extends StObject
+  inline def `avoid-limited-access-roads`: `avoid-limited-access-roads` = "avoid-limited-access-roads".asInstanceOf[`avoid-limited-access-roads`]
+  
+  @js.native
+  sealed trait `avoid-private-roads` extends StObject
+  inline def `avoid-private-roads`: `avoid-private-roads` = "avoid-private-roads".asInstanceOf[`avoid-private-roads`]
+  
+  @js.native
+  sealed trait `avoid-roads-unsuitable-for-pedestrians` extends StObject
+  inline def `avoid-roads-unsuitable-for-pedestrians`: `avoid-roads-unsuitable-for-pedestrians` = "avoid-roads-unsuitable-for-pedestrians".asInstanceOf[`avoid-roads-unsuitable-for-pedestrians`]
+  
+  @js.native
+  sealed trait `avoid-stairways` extends StObject
+  inline def `avoid-stairways`: `avoid-stairways` = "avoid-stairways".asInstanceOf[`avoid-stairways`]
+  
+  @js.native
+  sealed trait `avoid-toll-roads` extends StObject
+  inline def `avoid-toll-roads`: `avoid-toll-roads` = "avoid-toll-roads".asInstanceOf[`avoid-toll-roads`]
+  
+  @js.native
+  sealed trait `avoid-toll-roads-for-trucks` extends StObject
+  inline def `avoid-toll-roads-for-trucks`: `avoid-toll-roads-for-trucks` = "avoid-toll-roads-for-trucks".asInstanceOf[`avoid-toll-roads-for-trucks`]
+  
+  @js.native
+  sealed trait `avoid-truck-restricted-roads` extends StObject
+  inline def `avoid-truck-restricted-roads`: `avoid-truck-restricted-roads` = "avoid-truck-restricted-roads".asInstanceOf[`avoid-truck-restricted-roads`]
+  
+  @js.native
+  sealed trait `avoid-unpaved-roads` extends StObject
+  inline def `avoid-unpaved-roads`: `avoid-unpaved-roads` = "avoid-unpaved-roads".asInstanceOf[`avoid-unpaved-roads`]
   
   @js.native
   sealed trait `awaiting-feature-creation-info` extends StObject
@@ -974,8 +1435,32 @@ object arcgisJsApiStrings {
   inline def `awaiting-update-feature-candidate`: `awaiting-update-feature-candidate` = "awaiting-update-feature-candidate".asInstanceOf[`awaiting-update-feature-candidate`]
   
   @js.native
+  sealed trait `axle-count-restriction` extends StObject
+  inline def `axle-count-restriction`: `axle-count-restriction` = "axle-count-restriction".asInstanceOf[`axle-count-restriction`]
+  
+  @js.native
   sealed trait `backward-diagonal` extends StObject
   inline def `backward-diagonal`: `backward-diagonal` = "backward-diagonal".asInstanceOf[`backward-diagonal`]
+  
+  @js.native
+  sealed trait `barcode-scanner` extends StObject
+  inline def `barcode-scanner`: `barcode-scanner` = "barcode-scanner".asInstanceOf[`barcode-scanner`]
+  
+  @js.native
+  sealed trait barrier extends StObject
+  inline def barrier: barrier = "barrier".asInstanceOf[barrier]
+  
+  @js.native
+  sealed trait `barrier-area` extends StObject
+  inline def `barrier-area`: `barrier-area` = "barrier-area".asInstanceOf[`barrier-area`]
+  
+  @js.native
+  sealed trait `barrier-line` extends StObject
+  inline def `barrier-line`: `barrier-line` = "barrier-line".asInstanceOf[`barrier-line`]
+  
+  @js.native
+  sealed trait `barrier-point` extends StObject
+  inline def `barrier-point`: `barrier-point` = "barrier-point".asInstanceOf[`barrier-point`]
   
   @js.native
   sealed trait `base-dynamic` extends StObject
@@ -990,8 +1475,16 @@ object arcgisJsApiStrings {
   inline def `base-tile`: `base-tile` = "base-tile".asInstanceOf[`base-tile`]
   
   @js.native
-  sealed trait baseline extends StObject
-  inline def baseline: baseline = "baseline".asInstanceOf[baseline]
+  sealed trait baseline_ extends StObject
+  inline def baseline_ : baseline_ = "baseline".asInstanceOf[baseline_]
+  
+  @js.native
+  sealed trait `bear-left` extends StObject
+  inline def `bear-left`: `bear-left` = "bear-left".asInstanceOf[`bear-left`]
+  
+  @js.native
+  sealed trait `bear-right` extends StObject
+  inline def `bear-right`: `bear-right` = "bear-right".asInstanceOf[`bear-right`]
   
   @js.native
   sealed trait `beaufort-ft` extends StObject
@@ -1034,6 +1527,10 @@ object arcgisJsApiStrings {
   inline def `begin-end`: `begin-end` = "begin-end".asInstanceOf[`begin-end`]
   
   @js.native
+  sealed trait below extends StObject
+  inline def below: below = "below".asInstanceOf[below]
+  
+  @js.native
   sealed trait `below-after` extends StObject
   inline def `below-after`: `below-after` = "below-after".asInstanceOf[`below-after`]
   
@@ -1070,16 +1567,20 @@ object arcgisJsApiStrings {
   inline def `benoit-1895-b-chains`: `benoit-1895-b-chains` = "benoit-1895-b-chains".asInstanceOf[`benoit-1895-b-chains`]
   
   @js.native
-  sealed trait between extends StObject
-  inline def between: between = "between".asInstanceOf[between]
+  sealed trait between_ extends StObject
+  inline def between_ : between_ = "between".asInstanceOf[between_]
   
   @js.native
-  sealed trait bevel extends StObject
-  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
+  sealed trait bevel_ extends StObject
+  inline def bevel_ : bevel_ = "bevel".asInstanceOf[bevel_]
   
   @js.native
-  sealed trait bevelled extends StObject
-  inline def bevelled: bevelled = "bevelled".asInstanceOf[bevelled]
+  sealed trait bevelled_ extends StObject
+  inline def bevelled_ : bevelled_ = "bevelled".asInstanceOf[bevelled_]
+  
+  @js.native
+  sealed trait bidirectional extends StObject
+  inline def bidirectional: bidirectional = "bidirectional".asInstanceOf[bidirectional]
   
   @js.native
   sealed trait bilinear extends StObject
@@ -1090,8 +1591,16 @@ object arcgisJsApiStrings {
   inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
+  sealed trait `binary-expression` extends StObject
+  inline def `binary-expression`: `binary-expression` = "binary-expression".asInstanceOf[`binary-expression`]
+  
+  @js.native
   sealed trait `bing-maps` extends StObject
   inline def `bing-maps`: `bing-maps` = "bing-maps".asInstanceOf[`bing-maps`]
+  
+  @js.native
+  sealed trait binning extends StObject
+  inline def binning: binning = "binning".asInstanceOf[binning]
   
   @js.native
   sealed trait bitfield extends StObject
@@ -1114,8 +1623,8 @@ object arcgisJsApiStrings {
   inline def bmp: bmp = "bmp".asInstanceOf[bmp]
   
   @js.native
-  sealed trait bold extends StObject
-  inline def bold: bold = "bold".asInstanceOf[bold]
+  sealed trait bold_ extends StObject
+  inline def bold_ : bold_ = "bold".asInstanceOf[bold_]
   
   @js.native
   sealed trait bolder extends StObject
@@ -1132,10 +1641,6 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait boolean extends StObject
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
-  
-  @js.native
-  sealed trait bottom extends StObject
-  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait `bottom-center` extends StObject
@@ -1158,6 +1663,18 @@ object arcgisJsApiStrings {
   inline def `bottom-trailing`: `bottom-trailing` = "bottom-trailing".asInstanceOf[`bottom-trailing`]
   
   @js.native
+  sealed trait bottom_ extends StObject
+  inline def bottom_ : bottom_ = "bottom".asInstanceOf[bottom_]
+  
+  @js.native
+  sealed trait `boundary-crossing` extends StObject
+  inline def `boundary-crossing`: `boundary-crossing` = "boundary-crossing".asInstanceOf[`boundary-crossing`]
+  
+  @js.native
+  sealed trait break extends StObject
+  inline def break: break = "break".asInstanceOf[break]
+  
+  @js.native
   sealed trait `building-component` extends StObject
   inline def `building-component`: `building-component` = "building-component".asInstanceOf[`building-component`]
   
@@ -1170,8 +1687,8 @@ object arcgisJsApiStrings {
   inline def `building-scene`: `building-scene` = "building-scene".asInstanceOf[`building-scene`]
   
   @js.native
-  sealed trait butt extends StObject
-  inline def butt: butt = "butt".asInstanceOf[butt]
+  sealed trait butt_ extends StObject
+  inline def butt_ : butt_ = "butt".asInstanceOf[butt_]
   
   @js.native
   sealed trait button extends StObject
@@ -1190,6 +1707,10 @@ object arcgisJsApiStrings {
   inline def calm: calm = "calm".asInstanceOf[calm]
   
   @js.native
+  sealed trait campus extends StObject
+  inline def campus: campus = "campus".asInstanceOf[campus]
+  
+  @js.native
   sealed trait cancel extends StObject
   inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
@@ -1202,8 +1723,16 @@ object arcgisJsApiStrings {
   inline def card: card = "card".asInstanceOf[card]
   
   @js.native
-  sealed trait center extends StObject
-  inline def center: center = "center".asInstanceOf[center]
+  sealed trait caret extends StObject
+  inline def caret: caret = "caret".asInstanceOf[caret]
+  
+  @js.native
+  sealed trait `case-expression` extends StObject
+  inline def `case-expression`: `case-expression` = "case-expression".asInstanceOf[`case-expression`]
+  
+  @js.native
+  sealed trait case_expression extends StObject
+  inline def case_expression: case_expression = "case_expression".asInstanceOf[case_expression]
   
   @js.native
   sealed trait `center-after` extends StObject
@@ -1238,12 +1767,31 @@ object arcgisJsApiStrings {
   inline def `center-start`: `center-start` = "center-start".asInstanceOf[`center-start`]
   
   @js.native
+  sealed trait center_ extends StObject
+  inline def center_ : center_ = "center".asInstanceOf[center_]
+  
+  @js.native
   sealed trait `centered-on` extends StObject
   inline def `centered-on`: `centered-on` = "centered-on".asInstanceOf[`centered-on`]
   
   @js.native
-  sealed trait centimeters extends StObject
+  sealed trait centimeters
+    extends StObject
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
   inline def centimeters: centimeters = "centimeters".asInstanceOf[centimeters]
+  
+  @js.native
+  sealed trait `central-fork` extends StObject
+  inline def `central-fork`: `central-fork` = "central-fork".asInstanceOf[`central-fork`]
+  
+  @js.native
+  sealed trait `centroid-aggregate` extends StObject
+  inline def `centroid-aggregate`: `centroid-aggregate` = "centroid-aggregate".asInstanceOf[`centroid-aggregate`]
   
   @js.native
   sealed trait centuries extends StObject
@@ -1268,6 +1816,18 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait circle extends StObject
   inline def circle: circle = "circle".asInstanceOf[circle]
+  
+  @js.native
+  sealed trait `circle-arrow` extends StObject
+  inline def `circle-arrow`: `circle-arrow` = "circle-arrow".asInstanceOf[`circle-arrow`]
+  
+  @js.native
+  sealed trait `circle-caret` extends StObject
+  inline def `circle-caret`: `circle-caret` = "circle-caret".asInstanceOf[`circle-caret`]
+  
+  @js.native
+  sealed trait `circle-plus-minus` extends StObject
+  inline def `circle-plus-minus`: `circle-plus-minus` = "circle-plus-minus".asInstanceOf[`circle-plus-minus`]
   
   @js.native
   sealed trait clamp extends StObject
@@ -1322,6 +1882,14 @@ object arcgisJsApiStrings {
   inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
+  sealed trait `clockwise-roundabout` extends StObject
+  inline def `clockwise-roundabout`: `clockwise-roundabout` = "clockwise-roundabout".asInstanceOf[`clockwise-roundabout`]
+  
+  @js.native
+  sealed trait cloudy extends StObject
+  inline def cloudy: cloudy = "cloudy".asInstanceOf[cloudy]
+  
+  @js.native
   sealed trait cluster extends StObject
   inline def cluster: cluster = "cluster".asInstanceOf[cluster]
   
@@ -1346,6 +1914,18 @@ object arcgisJsApiStrings {
   inline def `color-dodge`: `color-dodge` = "color-dodge".asInstanceOf[`color-dodge`]
   
   @js.native
+  sealed trait column extends StObject
+  inline def column: column = "column".asInstanceOf[column]
+  
+  @js.native
+  sealed trait `column-reference` extends StObject
+  inline def `column-reference`: `column-reference` = "column-reference".asInstanceOf[`column-reference`]
+  
+  @js.native
+  sealed trait `combo-box` extends StObject
+  inline def `combo-box`: `combo-box` = "combo-box".asInstanceOf[`combo-box`]
+  
+  @js.native
   sealed trait compact extends StObject
   inline def compact: compact = "compact".asInstanceOf[compact]
   
@@ -1366,6 +1946,14 @@ object arcgisJsApiStrings {
   inline def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
+  sealed trait connectivity extends StObject
+  inline def connectivity: connectivity = "connectivity".asInstanceOf[connectivity]
+  
+  @js.native
+  sealed trait containment extends StObject
+  inline def containment: containment = "containment".asInstanceOf[containment]
+  
+  @js.native
   sealed trait contains extends StObject
   inline def contains: contains = "contains".asInstanceOf[contains]
   
@@ -1374,8 +1962,16 @@ object arcgisJsApiStrings {
   inline def continuous: continuous = "continuous".asInstanceOf[continuous]
   
   @js.native
+  sealed trait `convex-hull-aggregate` extends StObject
+  inline def `convex-hull-aggregate`: `convex-hull-aggregate` = "convex-hull-aggregate".asInstanceOf[`convex-hull-aggregate`]
+  
+  @js.native
   sealed trait coordinate extends StObject
   inline def coordinate: coordinate = "coordinate".asInstanceOf[coordinate]
+  
+  @js.native
+  sealed trait corners extends StObject
+  inline def corners: corners = "corners".asInstanceOf[corners]
   
   @js.native
   sealed trait count extends StObject
@@ -1386,8 +1982,20 @@ object arcgisJsApiStrings {
   inline def `count-or-amount`: `count-or-amount` = "count-or-amount".asInstanceOf[`count-or-amount`]
   
   @js.native
+  sealed trait `counter-clockwise-roundabout` extends StObject
+  inline def `counter-clockwise-roundabout`: `counter-clockwise-roundabout` = "counter-clockwise-roundabout".asInstanceOf[`counter-clockwise-roundabout`]
+  
+  @js.native
   sealed trait create extends StObject
   inline def create: create = "create".asInstanceOf[create]
+  
+  @js.native
+  sealed trait `create-features` extends StObject
+  inline def `create-features`: `create-features` = "create-features".asInstanceOf[`create-features`]
+  
+  @js.native
+  sealed trait `create-new` extends StObject
+  inline def `create-new`: `create-new` = "create-new".asInstanceOf[`create-new`]
   
   @js.native
   sealed trait created extends StObject
@@ -1396,6 +2004,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait creating extends StObject
   inline def creating: creating = "creating".asInstanceOf[creating]
+  
+  @js.native
+  sealed trait `creating-features` extends StObject
+  inline def `creating-features`: `creating-features` = "creating-features".asInstanceOf[`creating-features`]
   
   @js.native
   sealed trait `credential-create` extends StObject
@@ -1418,6 +2030,87 @@ object arcgisJsApiStrings {
   inline def cubic: cubic = "cubic".asInstanceOf[cubic]
   
   @js.native
+  sealed trait `cubic-centimeters`
+    extends StObject
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with VolumeUnit
+       with typings.arcgisJsApi.esri.VolumeUnit
+  inline def `cubic-centimeters`: `cubic-centimeters` = "cubic-centimeters".asInstanceOf[`cubic-centimeters`]
+  
+  @js.native
+  sealed trait `cubic-decimeters`
+    extends StObject
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with VolumeUnit
+       with typings.arcgisJsApi.esri.VolumeUnit
+  inline def `cubic-decimeters`: `cubic-decimeters` = "cubic-decimeters".asInstanceOf[`cubic-decimeters`]
+  
+  @js.native
+  sealed trait `cubic-feet`
+    extends StObject
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with VolumeUnit
+       with typings.arcgisJsApi.esri.VolumeUnit
+  inline def `cubic-feet`: `cubic-feet` = "cubic-feet".asInstanceOf[`cubic-feet`]
+  
+  @js.native
+  sealed trait `cubic-inches`
+    extends StObject
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with VolumeUnit
+       with typings.arcgisJsApi.esri.VolumeUnit
+  inline def `cubic-inches`: `cubic-inches` = "cubic-inches".asInstanceOf[`cubic-inches`]
+  
+  @js.native
+  sealed trait `cubic-kilometers`
+    extends StObject
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with VolumeUnit
+       with typings.arcgisJsApi.esri.VolumeUnit
+  inline def `cubic-kilometers`: `cubic-kilometers` = "cubic-kilometers".asInstanceOf[`cubic-kilometers`]
+  
+  @js.native
+  sealed trait `cubic-meters`
+    extends StObject
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with VolumeUnit
+       with typings.arcgisJsApi.esri.VolumeUnit
+  inline def `cubic-meters`: `cubic-meters` = "cubic-meters".asInstanceOf[`cubic-meters`]
+  
+  @js.native
+  sealed trait `cubic-miles`
+    extends StObject
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with VolumeUnit
+       with typings.arcgisJsApi.esri.VolumeUnit
+  inline def `cubic-miles`: `cubic-miles` = "cubic-miles".asInstanceOf[`cubic-miles`]
+  
+  @js.native
+  sealed trait `cubic-millimeters`
+    extends StObject
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with VolumeUnit
+       with typings.arcgisJsApi.esri.VolumeUnit
+  inline def `cubic-millimeters`: `cubic-millimeters` = "cubic-millimeters".asInstanceOf[`cubic-millimeters`]
+  
+  @js.native
+  sealed trait `cubic-yards`
+    extends StObject
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with VolumeUnit
+       with typings.arcgisJsApi.esri.VolumeUnit
+  inline def `cubic-yards`: `cubic-yards` = "cubic-yards".asInstanceOf[`cubic-yards`]
+  
+  @js.native
   sealed trait `cumulative-from-end` extends StObject
   inline def `cumulative-from-end`: `cumulative-from-end` = "cumulative-from-end".asInstanceOf[`cumulative-from-end`]
   
@@ -1426,12 +2119,20 @@ object arcgisJsApiStrings {
   inline def `cumulative-from-start`: `cumulative-from-start` = "cumulative-from-start".asInstanceOf[`cumulative-from-start`]
   
   @js.native
+  sealed trait `current-time` extends StObject
+  inline def `current-time`: `current-time` = "current-time".asInstanceOf[`current-time`]
+  
+  @js.native
   sealed trait `cursor-update` extends StObject
   inline def `cursor-update`: `cursor-update` = "cursor-update".asInstanceOf[`cursor-update`]
   
   @js.native
-  sealed trait custom extends StObject
-  inline def custom: custom = "custom".asInstanceOf[custom]
+  sealed trait curved extends StObject
+  inline def curved: curved = "curved".asInstanceOf[curved]
+  
+  @js.native
+  sealed trait custom_ extends StObject
+  inline def custom_ : custom_ = "custom".asInstanceOf[custom_]
   
   @js.native
   sealed trait dark extends StObject
@@ -1474,6 +2175,10 @@ object arcgisJsApiStrings {
   inline def `datetime-picker`: `datetime-picker` = "datetime-picker".asInstanceOf[`datetime-picker`]
   
   @js.native
+  sealed trait day extends StObject
+  inline def day: day = "day".asInstanceOf[day]
+  
+  @js.native
   sealed trait `day-short-month-year` extends StObject
   inline def `day-short-month-year`: `day-short-month-year` = "day-short-month-year".asInstanceOf[`day-short-month-year`]
   
@@ -1514,7 +2219,14 @@ object arcgisJsApiStrings {
   inline def `decimal-degrees`: `decimal-degrees` = "decimal-degrees".asInstanceOf[`decimal-degrees`]
   
   @js.native
-  sealed trait decimeters extends StObject
+  sealed trait decimeters
+    extends StObject
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
   inline def decimeters: decimeters = "decimeters".asInstanceOf[decimeters]
   
   @js.native
@@ -1526,8 +2238,29 @@ object arcgisJsApiStrings {
   inline def `default-curve-extension`: `default-curve-extension` = "default-curve-extension".asInstanceOf[`default-curve-extension`]
   
   @js.native
+  sealed trait default_ extends StObject
+  inline def default_ : default_ = "default".asInstanceOf[default_]
+  
+  @js.native
+  sealed trait `defined-interval` extends StObject
+  inline def `defined-interval`: `defined-interval` = "defined-interval".asInstanceOf[`defined-interval`]
+  
+  @js.native
+  sealed trait degrees
+    extends StObject
+       with AngleUnit
+       with typings.arcgisJsApi.esri.AngleUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+  inline def degrees: degrees = "degrees".asInstanceOf[degrees]
+  
+  @js.native
   sealed trait delete extends StObject
   inline def delete: delete = "delete".asInstanceOf[delete]
+  
+  @js.native
+  sealed trait depart extends StObject
+  inline def depart: depart = "depart".asInstanceOf[depart]
   
   @js.native
   sealed trait depth extends StObject
@@ -1538,8 +2271,16 @@ object arcgisJsApiStrings {
   inline def desc_ : desc_ = "desc".asInstanceOf[desc_]
   
   @js.native
+  sealed trait descending extends StObject
+  inline def descending: descending = "descending".asInstanceOf[descending]
+  
+  @js.native
   sealed trait description extends StObject
   inline def description: description = "description".asInstanceOf[description]
+  
+  @js.native
+  sealed trait desktop extends StObject
+  inline def desktop: desktop = "desktop".asInstanceOf[desktop]
   
   @js.native
   sealed trait destination extends StObject
@@ -1568,6 +2309,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait detailed extends StObject
   inline def detailed: detailed = "detailed".asInstanceOf[detailed]
+  
+  @js.native
+  sealed trait `device-location` extends StObject
+  inline def `device-location`: `device-location` = "device-location".asInstanceOf[`device-location`]
   
   @js.native
   sealed trait `diagonal-cross` extends StObject
@@ -1602,12 +2347,32 @@ object arcgisJsApiStrings {
   inline def `direct-line`: `direct-line` = "direct-line".asInstanceOf[`direct-line`]
   
   @js.native
+  sealed trait `direct-line-measurement-view-3d` extends StObject
+  inline def `direct-line-measurement-view-3d`: `direct-line-measurement-view-3d` = "direct-line-measurement-view-3d".asInstanceOf[`direct-line-measurement-view-3d`]
+  
+  @js.native
+  sealed trait `direction-line` extends StObject
+  inline def `direction-line`: `direction-line` = "direction-line".asInstanceOf[`direction-line`]
+  
+  @js.native
+  sealed trait `direction-point` extends StObject
+  inline def `direction-point`: `direction-point` = "direction-point".asInstanceOf[`direction-point`]
+  
+  @js.native
+  sealed trait directional extends StObject
+  inline def directional: directional = "directional".asInstanceOf[directional]
+  
+  @js.native
   sealed trait disabled extends StObject
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
   sealed trait disconnected extends StObject
   inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @js.native
+  sealed trait discrete extends StObject
+  inline def discrete: discrete = "discrete".asInstanceOf[discrete]
   
   @js.native
   sealed trait disjoint extends StObject
@@ -1628,6 +2393,14 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait document extends StObject
   inline def document: document = "document".asInstanceOf[document]
+  
+  @js.native
+  sealed trait donut extends StObject
+  inline def donut: donut = "donut".asInstanceOf[donut]
+  
+  @js.native
+  sealed trait door extends StObject
+  inline def door: door = "door".asInstanceOf[door]
   
   @js.native
   sealed trait dot extends StObject
@@ -1654,6 +2427,22 @@ object arcgisJsApiStrings {
   inline def `down-arrow`: `down-arrow` = "down-arrow".asInstanceOf[`down-arrow`]
   
   @js.native
+  sealed trait `down-elevator` extends StObject
+  inline def `down-elevator`: `down-elevator` = "down-elevator".asInstanceOf[`down-elevator`]
+  
+  @js.native
+  sealed trait `down-escalator` extends StObject
+  inline def `down-escalator`: `down-escalator` = "down-escalator".asInstanceOf[`down-escalator`]
+  
+  @js.native
+  sealed trait `down-stairs` extends StObject
+  inline def `down-stairs`: `down-stairs` = "down-stairs".asInstanceOf[`down-stairs`]
+  
+  @js.native
+  sealed trait downstream extends StObject
+  inline def downstream: downstream = "downstream".asInstanceOf[downstream]
+  
+  @js.native
   sealed trait drag extends StObject
   inline def drag: drag = "drag".asInstanceOf[drag]
   
@@ -1670,8 +2459,32 @@ object arcgisJsApiStrings {
   inline def drawer: drawer = "drawer".asInstanceOf[drawer]
   
   @js.native
+  sealed trait `driving-a-bus` extends StObject
+  inline def `driving-a-bus`: `driving-a-bus` = "driving-a-bus".asInstanceOf[`driving-a-bus`]
+  
+  @js.native
+  sealed trait `driving-a-taxi` extends StObject
+  inline def `driving-a-taxi`: `driving-a-taxi` = "driving-a-taxi".asInstanceOf[`driving-a-taxi`]
+  
+  @js.native
+  sealed trait `driving-a-truck` extends StObject
+  inline def `driving-a-truck`: `driving-a-truck` = "driving-a-truck".asInstanceOf[`driving-a-truck`]
+  
+  @js.native
+  sealed trait `driving-an-automobile` extends StObject
+  inline def `driving-an-automobile`: `driving-an-automobile` = "driving-an-automobile".asInstanceOf[`driving-an-automobile`]
+  
+  @js.native
+  sealed trait `driving-an-emergency-vehicle` extends StObject
+  inline def `driving-an-emergency-vehicle`: `driving-an-emergency-vehicle` = "driving-an-emergency-vehicle".asInstanceOf[`driving-an-emergency-vehicle`]
+  
+  @js.native
   sealed trait dual extends StObject
   inline def dual: dual = "dual".asInstanceOf[dual]
+  
+  @js.native
+  sealed trait duration extends StObject
+  inline def duration: duration = "duration".asInstanceOf[duration]
   
   @js.native
   sealed trait ease extends StObject
@@ -1694,12 +2507,20 @@ object arcgisJsApiStrings {
   inline def east: east = "east".asInstanceOf[east]
   
   @js.native
+  sealed trait edges extends StObject
+  inline def edges: edges = "edges".asInstanceOf[edges]
+  
+  @js.native
   sealed trait edit extends StObject
   inline def edit: edit = "edit".asInstanceOf[edit]
   
   @js.native
   sealed trait editing extends StObject
   inline def editing: editing = "editing".asInstanceOf[editing]
+  
+  @js.native
+  sealed trait `editing-attachment` extends StObject
+  inline def `editing-attachment`: `editing-attachment` = "editing-attachment".asInstanceOf[`editing-attachment`]
   
   @js.native
   sealed trait `editing-existing-feature` extends StObject
@@ -1714,8 +2535,20 @@ object arcgisJsApiStrings {
   inline def edits: edits = "edits".asInstanceOf[edits]
   
   @js.native
+  sealed trait `either-side-of-vehicle` extends StObject
+  inline def `either-side-of-vehicle`: `either-side-of-vehicle` = "either-side-of-vehicle".asInstanceOf[`either-side-of-vehicle`]
+  
+  @js.native
+  sealed trait `element-not-traversable` extends StObject
+  inline def `element-not-traversable`: `element-not-traversable` = "element-not-traversable".asInstanceOf[`element-not-traversable`]
+  
+  @js.native
   sealed trait elevation extends StObject
   inline def elevation: elevation = "elevation".asInstanceOf[elevation]
+  
+  @js.native
+  sealed trait elevator extends StObject
+  inline def elevator: elevator = "elevator".asInstanceOf[elevator]
   
   @js.native
   sealed trait ellipse extends StObject
@@ -1734,6 +2567,10 @@ object arcgisJsApiStrings {
   inline def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
+  sealed trait enabled extends StObject
+  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
+  
+  @js.native
   sealed trait end extends StObject
   inline def end: end = "end".asInstanceOf[end]
   
@@ -1744,6 +2581,30 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait enter extends StObject
   inline def enter: enter = "enter".asInstanceOf[enter]
+  
+  @js.native
+  sealed trait `enter-contains-and-exit-does-not-contain` extends StObject
+  inline def `enter-contains-and-exit-does-not-contain`: `enter-contains-and-exit-does-not-contain` = "enter-contains-and-exit-does-not-contain".asInstanceOf[`enter-contains-and-exit-does-not-contain`]
+  
+  @js.native
+  sealed trait `enter-contains-and-exit-does-not-intersect` extends StObject
+  inline def `enter-contains-and-exit-does-not-intersect`: `enter-contains-and-exit-does-not-intersect` = "enter-contains-and-exit-does-not-intersect".asInstanceOf[`enter-contains-and-exit-does-not-intersect`]
+  
+  @js.native
+  sealed trait `enter-intersects-and-exit-does-not-intersect` extends StObject
+  inline def `enter-intersects-and-exit-does-not-intersect`: `enter-intersects-and-exit-does-not-intersect` = "enter-intersects-and-exit-does-not-intersect".asInstanceOf[`enter-intersects-and-exit-does-not-intersect`]
+  
+  @js.native
+  sealed trait `enter-or-exit` extends StObject
+  inline def `enter-or-exit`: `enter-or-exit` = "enter-or-exit".asInstanceOf[`enter-or-exit`]
+  
+  @js.native
+  sealed trait envelope extends StObject
+  inline def envelope: envelope = "envelope".asInstanceOf[envelope]
+  
+  @js.native
+  sealed trait `envelope-aggregate` extends StObject
+  inline def `envelope-aggregate`: `envelope-aggregate` = "envelope-aggregate".asInstanceOf[`envelope-aggregate`]
   
   @js.native
   sealed trait `envelope-intersects` extends StObject
@@ -1764,6 +2625,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait escalator extends StObject
+  inline def escalator: escalator = "escalator".asInstanceOf[escalator]
   
   @js.native
   sealed trait euclidean extends StObject
@@ -1798,8 +2663,20 @@ object arcgisJsApiStrings {
   inline def expanded: expanded = "expanded".asInstanceOf[expanded]
   
   @js.native
+  sealed trait expression extends StObject
+  inline def expression: expression = "expression".asInstanceOf[expression]
+  
+  @js.native
+  sealed trait `expression-list` extends StObject
+  inline def `expression-list`: `expression-list` = "expression-list".asInstanceOf[`expression-list`]
+  
+  @js.native
   sealed trait extent extends StObject
   inline def extent: extent = "extent".asInstanceOf[extent]
+  
+  @js.native
+  sealed trait `extent-and-rotation` extends StObject
+  inline def `extent-and-rotation`: `extent-and-rotation` = "extent-and-rotation".asInstanceOf[`extent-and-rotation`]
   
   @js.native
   sealed trait extremes extends StObject
@@ -1830,6 +2707,10 @@ object arcgisJsApiStrings {
   inline def feature: feature = "feature".asInstanceOf[feature]
   
   @js.native
+  sealed trait `feature-layer` extends StObject
+  inline def `feature-layer`: `feature-layer` = "feature-layer".asInstanceOf[`feature-layer`]
+  
+  @js.native
   sealed trait `feature-record-set-layer` extends StObject
   inline def `feature-record-set-layer`: `feature-record-set-layer` = "feature-record-set-layer".asInstanceOf[`feature-record-set-layer`]
   
@@ -1838,10 +2719,36 @@ object arcgisJsApiStrings {
   inline def `feature-unsupported`: `feature-unsupported` = "feature-unsupported".asInstanceOf[`feature-unsupported`]
   
   @js.native
+  sealed trait featureSet extends StObject
+  inline def featureSet: featureSet = "featureSet".asInstanceOf[featureSet]
+  
+  @js.native
+  sealed trait featureSetCollection extends StObject
+  inline def featureSetCollection: featureSetCollection = "featureSetCollection".asInstanceOf[featureSetCollection]
+  
+  @js.native
+  sealed trait features extends StObject
+  inline def features: features = "features".asInstanceOf[features]
+  
+  @js.native
+  sealed trait featuresets extends StObject
+  inline def featuresets: featuresets = "featuresets".asInstanceOf[featuresets]
+  
+  @js.native
   sealed trait feet_
     extends StObject
-       with LinearUnits
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _LinearUnits
   inline def feet_ : feet_ = "feet".asInstanceOf[feet_]
+  
+  @js.native
+  sealed trait fence extends StObject
+  inline def fence: fence = "fence".asInstanceOf[fence]
   
   @js.native
   sealed trait field extends StObject
@@ -1854,6 +2761,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait fill extends StObject
   inline def fill: fill = "fill".asInstanceOf[fill]
+  
+  @js.native
+  sealed trait `fill-and-outline` extends StObject
+  inline def `fill-and-outline`: `fill-and-outline` = "fill-and-outline".asInstanceOf[`fill-and-outline`]
   
   @js.native
   sealed trait finished extends StObject
@@ -1880,8 +2791,16 @@ object arcgisJsApiStrings {
   inline def floating: floating = "floating".asInstanceOf[floating]
   
   @js.native
+  sealed trait flow extends StObject
+  inline def flow: flow = "flow".asInstanceOf[flow]
+  
+  @js.native
   sealed trait `flow-from` extends StObject
   inline def `flow-from`: `flow-from` = "flow-from".asInstanceOf[`flow-from`]
+  
+  @js.native
+  sealed trait `flow-line` extends StObject
+  inline def `flow-line`: `flow-line` = "flow-line".asInstanceOf[`flow-line`]
   
   @js.native
   sealed trait `flow-to` extends StObject
@@ -1890,6 +2809,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait focus extends StObject
   inline def focus: focus = "focus".asInstanceOf[focus]
+  
+  @js.native
+  sealed trait foggy extends StObject
+  inline def foggy: foggy = "foggy".asInstanceOf[foggy]
   
   @js.native
   sealed trait forward extends StObject
@@ -1916,8 +2839,16 @@ object arcgisJsApiStrings {
   inline def `from-facility`: `from-facility` = "from-facility".asInstanceOf[`from-facility`]
   
   @js.native
+  sealed trait function extends StObject
+  inline def function: function = "function".asInstanceOf[function]
+  
+  @js.native
   sealed trait gars extends StObject
   inline def gars: gars = "gars".asInstanceOf[gars]
+  
+  @js.native
+  sealed trait `general-event` extends StObject
+  inline def `general-event`: `general-event` = "general-event".asInstanceOf[`general-event`]
   
   @js.native
   sealed trait generic extends StObject
@@ -1948,6 +2879,10 @@ object arcgisJsApiStrings {
   inline def geometry: geometry = "geometry".asInstanceOf[geometry]
   
   @js.native
+  sealed trait `georeferenced-image` extends StObject
+  inline def `georeferenced-image`: `georeferenced-image` = "georeferenced-image".asInstanceOf[`georeferenced-image`]
+  
+  @js.native
   sealed trait gif extends StObject
   inline def gif: gif = "gif".asInstanceOf[gif]
   
@@ -1972,6 +2907,10 @@ object arcgisJsApiStrings {
   inline def `gold-coast-feet`: `gold-coast-feet` = "gold-coast-feet".asInstanceOf[`gold-coast-feet`]
   
   @js.native
+  sealed trait graphic extends StObject
+  inline def graphic: graphic = "graphic".asInstanceOf[graphic]
+  
+  @js.native
   sealed trait graphics extends StObject
   inline def graphics: graphics = "graphics".asInstanceOf[graphics]
   
@@ -1984,6 +2923,10 @@ object arcgisJsApiStrings {
   inline def `greater-than`: `greater-than` = "greater-than".asInstanceOf[`greater-than`]
   
   @js.native
+  sealed trait ground extends StObject
+  inline def ground: ground = "ground".asInstanceOf[ground]
+  
+  @js.native
   sealed trait group extends StObject
   inline def group: group = "group".asInstanceOf[group]
   
@@ -1992,8 +2935,20 @@ object arcgisJsApiStrings {
   inline def guid: guid = "guid".asInstanceOf[guid]
   
   @js.native
+  sealed trait `happy-sad` extends StObject
+  inline def `happy-sad`: `happy-sad` = "happy-sad".asInstanceOf[`happy-sad`]
+  
+  @js.native
   sealed trait `hard-light` extends StObject
   inline def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
+  
+  @js.native
+  sealed trait head extends StObject
+  inline def head: head = "head".asInstanceOf[head]
+  
+  @js.native
+  sealed trait header extends StObject
+  inline def header: header = "header".asInstanceOf[header]
   
   @js.native
   sealed trait heading extends StObject
@@ -2004,14 +2959,28 @@ object arcgisJsApiStrings {
   inline def heatmap: heatmap = "heatmap".asInstanceOf[heatmap]
   
   @js.native
+  sealed trait `heavy-traffic` extends StObject
+  inline def `heavy-traffic`: `heavy-traffic` = "heavy-traffic".asInstanceOf[`heavy-traffic`]
+  
+  @js.native
   sealed trait hectares
     extends StObject
-       with ArealUnits
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _ArealUnits
   inline def hectares: hectares = "hectares".asInstanceOf[hectares]
   
   @js.native
   sealed trait height extends StObject
   inline def height: height = "height".asInstanceOf[height]
+  
+  @js.native
+  sealed trait `height-restriction` extends StObject
+  inline def `height-restriction`: `height-restriction` = "height-restriction".asInstanceOf[`height-restriction`]
   
   @js.native
   sealed trait hide extends StObject
@@ -2048,6 +3017,14 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait `horizontal-reversed` extends StObject
   inline def `horizontal-reversed`: `horizontal-reversed` = "horizontal-reversed".asInstanceOf[`horizontal-reversed`]
+  
+  @js.native
+  sealed trait hour extends StObject
+  inline def hour: hour = "hour".asInstanceOf[hour]
+  
+  @js.native
+  sealed trait hourly extends StObject
+  inline def hourly: hourly = "hourly".asInstanceOf[hourly]
   
   @js.native
   sealed trait hours extends StObject
@@ -2094,8 +3071,19 @@ object arcgisJsApiStrings {
   inline def `immediate-double-click`: `immediate-double-click` = "immediate-double-click".asInstanceOf[`immediate-double-click`]
   
   @js.native
-  sealed trait imperial extends StObject
+  sealed trait imperial
+    extends StObject
+       with MeasurementSystem
+       with typings.arcgisJsApi.esri.MeasurementSystem
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
   inline def imperial: imperial = "imperial".asInstanceOf[imperial]
+  
+  @js.native
+  sealed trait `implicit` extends StObject
+  inline def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
   @js.native
   sealed trait `in-cubic` extends StObject
@@ -2122,7 +3110,14 @@ object arcgisJsApiStrings {
   inline def in_ : in_ = "in".asInstanceOf[in_]
   
   @js.native
-  sealed trait inches extends StObject
+  sealed trait inches
+    extends StObject
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
   inline def inches: inches = "inches".asInstanceOf[inches]
   
   @js.native
@@ -2166,6 +3161,10 @@ object arcgisJsApiStrings {
   inline def initializing: initializing = "initializing".asInstanceOf[initializing]
   
   @js.native
+  sealed trait input extends StObject
+  inline def input: input = "input".asInstanceOf[input]
+  
+  @js.native
   sealed trait instant extends StObject
   inline def instant: instant = "instant".asInstanceOf[instant]
   
@@ -2194,12 +3193,32 @@ object arcgisJsApiStrings {
   inline def intersects: intersects = "intersects".asInstanceOf[intersects]
   
   @js.native
+  sealed trait interval extends StObject
+  inline def interval: interval = "interval".asInstanceOf[interval]
+  
+  @js.native
+  sealed trait `interval-period` extends StObject
+  inline def `interval-period`: `interval-period` = "interval-period".asInstanceOf[`interval-period`]
+  
+  @js.native
+  sealed trait `interval-qualifier` extends StObject
+  inline def `interval-qualifier`: `interval-qualifier` = "interval-qualifier".asInstanceOf[`interval-qualifier`]
+  
+  @js.native
+  sealed trait `invalid-field-values` extends StObject
+  inline def `invalid-field-values`: `invalid-field-values` = "invalid-field-values".asInstanceOf[`invalid-field-values`]
+  
+  @js.native
   sealed trait invert extends StObject
   inline def invert: invert = "invert".asInstanceOf[invert]
   
   @js.native
-  sealed trait italic extends StObject
-  inline def italic: italic = "italic".asInstanceOf[italic]
+  sealed trait isolation extends StObject
+  inline def isolation: isolation = "isolation".asInstanceOf[isolation]
+  
+  @js.native
+  sealed trait italic_ extends StObject
+  inline def italic_ : italic_ = "italic".asInstanceOf[italic_]
   
   @js.native
   sealed trait `job-cancelled` extends StObject
@@ -2266,8 +3285,12 @@ object arcgisJsApiStrings {
   inline def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait justify extends StObject
-  inline def justify: justify = "justify".asInstanceOf[justify]
+  sealed trait junctions extends StObject
+  inline def junctions: junctions = "junctions".asInstanceOf[junctions]
+  
+  @js.native
+  sealed trait junctionsAndEdges extends StObject
+  inline def junctionsAndEdges: junctionsAndEdges = "junctionsAndEdges".asInstanceOf[junctionsAndEdges]
   
   @js.native
   sealed trait `keep-end-attributes` extends StObject
@@ -2284,8 +3307,18 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait kilometers_
     extends StObject
-       with LinearUnits
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _LinearUnits
   inline def kilometers_ : kilometers_ = "kilometers".asInstanceOf[kilometers_]
+  
+  @js.native
+  sealed trait `kingpin-to-rear-axle-length-restriction` extends StObject
+  inline def `kingpin-to-rear-axle-length-restriction`: `kingpin-to-rear-axle-length-restriction` = "kingpin-to-rear-axle-length-restriction".asInstanceOf[`kingpin-to-rear-axle-length-restriction`]
   
   @js.native
   sealed trait kml extends StObject
@@ -2300,12 +3333,20 @@ object arcgisJsApiStrings {
   inline def `label-3d`: `label-3d` = "label-3d".asInstanceOf[`label-3d`]
   
   @js.native
+  sealed trait landmark extends StObject
+  inline def landmark: landmark = "landmark".asInstanceOf[landmark]
+  
+  @js.native
   sealed trait landscape extends StObject
   inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
   sealed trait large extends StObject
   inline def large: large = "large".asInstanceOf[large]
+  
+  @js.native
+  sealed trait `lasso-selection` extends StObject
+  inline def `lasso-selection`: `lasso-selection` = "lasso-selection".asInstanceOf[`lasso-selection`]
   
   @js.native
   sealed trait last extends StObject
@@ -2336,12 +3377,16 @@ object arcgisJsApiStrings {
   inline def `layerview-destroy`: `layerview-destroy` = "layerview-destroy".asInstanceOf[`layerview-destroy`]
   
   @js.native
-  sealed trait left extends StObject
-  inline def left: left = "left".asInstanceOf[left]
-  
-  @js.native
   sealed trait `left-arrow` extends StObject
   inline def `left-arrow`: `left-arrow` = "left-arrow".asInstanceOf[`left-arrow`]
+  
+  @js.native
+  sealed trait `left-fork` extends StObject
+  inline def `left-fork`: `left-fork` = "left-fork".asInstanceOf[`left-fork`]
+  
+  @js.native
+  sealed trait `left-handed-u-turn` extends StObject
+  inline def `left-handed-u-turn`: `left-handed-u-turn` = "left-handed-u-turn".asInstanceOf[`left-handed-u-turn`]
   
   @js.native
   sealed trait `left-inner-join` extends StObject
@@ -2350,6 +3395,38 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait `left-outer-join` extends StObject
   inline def `left-outer-join`: `left-outer-join` = "left-outer-join".asInstanceOf[`left-outer-join`]
+  
+  @js.native
+  sealed trait `left-ramp` extends StObject
+  inline def `left-ramp`: `left-ramp` = "left-ramp".asInstanceOf[`left-ramp`]
+  
+  @js.native
+  sealed trait `left-side-of-vehicle` extends StObject
+  inline def `left-side-of-vehicle`: `left-side-of-vehicle` = "left-side-of-vehicle".asInstanceOf[`left-side-of-vehicle`]
+  
+  @js.native
+  sealed trait `left-turn` extends StObject
+  inline def `left-turn`: `left-turn` = "left-turn".asInstanceOf[`left-turn`]
+  
+  @js.native
+  sealed trait `left-turn-and-immediate-left-turn` extends StObject
+  inline def `left-turn-and-immediate-left-turn`: `left-turn-and-immediate-left-turn` = "left-turn-and-immediate-left-turn".asInstanceOf[`left-turn-and-immediate-left-turn`]
+  
+  @js.native
+  sealed trait `left-turn-and-immediate-right-turn` extends StObject
+  inline def `left-turn-and-immediate-right-turn`: `left-turn-and-immediate-right-turn` = "left-turn-and-immediate-right-turn".asInstanceOf[`left-turn-and-immediate-right-turn`]
+  
+  @js.native
+  sealed trait left_ extends StObject
+  inline def left_ : left_ = "left".asInstanceOf[left_]
+  
+  @js.native
+  sealed trait length extends StObject
+  inline def length: length = "length".asInstanceOf[length]
+  
+  @js.native
+  sealed trait `length-restriction` extends StObject
+  inline def `length-restriction`: `length-restriction` = "length-restriction".asInstanceOf[`length-restriction`]
   
   @js.native
   sealed trait lerc extends StObject
@@ -2396,6 +3473,14 @@ object arcgisJsApiStrings {
   inline def `line-marker`: `line-marker` = "line-marker".asInstanceOf[`line-marker`]
   
   @js.native
+  sealed trait `line-of-sight` extends StObject
+  inline def `line-of-sight`: `line-of-sight` = "line-of-sight".asInstanceOf[`line-of-sight`]
+  
+  @js.native
+  sealed trait `line-of-sight-view-3d` extends StObject
+  inline def `line-of-sight-view-3d`: `line-of-sight-view-3d` = "line-of-sight-view-3d".asInstanceOf[`line-of-sight-view-3d`]
+  
+  @js.native
   sealed trait `line-through` extends StObject
   inline def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
   
@@ -2414,6 +3499,15 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait list extends StObject
   inline def list: list = "list".asInstanceOf[list]
+  
+  @js.native
+  sealed trait liters
+    extends StObject
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with VolumeUnit
+       with typings.arcgisJsApi.esri.VolumeUnit
+  inline def liters: liters = "liters".asInstanceOf[liters]
   
   @js.native
   sealed trait live extends StObject
@@ -2520,6 +3614,10 @@ object arcgisJsApiStrings {
   inline def `long-time`: `long-time` = "long-time".asInstanceOf[`long-time`]
   
   @js.native
+  sealed trait loops extends StObject
+  inline def loops: loops = "loops".asInstanceOf[loops]
+  
+  @js.native
   sealed trait low extends StObject
   inline def low: low = "low".asInstanceOf[low]
   
@@ -2540,8 +3638,16 @@ object arcgisJsApiStrings {
   inline def majority: majority = "majority".asInstanceOf[majority]
   
   @js.native
+  sealed trait `maneuver-segment` extends StObject
+  inline def `maneuver-segment`: `maneuver-segment` = "maneuver-segment".asInstanceOf[`maneuver-segment`]
+  
+  @js.native
   sealed trait manual extends StObject
   inline def manual: manual = "manual".asInstanceOf[manual]
+  
+  @js.native
+  sealed trait many extends StObject
+  inline def many: many = "many".asInstanceOf[many]
   
   @js.native
   sealed trait `many-to-many` extends StObject
@@ -2574,6 +3680,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait `max-change` extends StObject
   inline def `max-change`: `max-change` = "max-change".asInstanceOf[`max-change`]
+  
+  @js.native
+  sealed trait `max-click` extends StObject
+  inline def `max-click`: `max-click` = "max-click".asInstanceOf[`max-click`]
   
   @js.native
   sealed trait mean extends StObject
@@ -2610,11 +3720,24 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait meters_
     extends StObject
-       with LinearUnits
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _LinearUnits
   inline def meters_ : meters_ = "meters".asInstanceOf[meters_]
   
   @js.native
-  sealed trait metric extends StObject
+  sealed trait metric
+    extends StObject
+       with MeasurementSystem
+       with typings.arcgisJsApi.esri.MeasurementSystem
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
   inline def metric: metric = "metric".asInstanceOf[metric]
   
   @js.native
@@ -2628,11 +3751,24 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait miles_
     extends StObject
-       with LinearUnits
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _LinearUnits
   inline def miles_ : miles_ = "miles".asInstanceOf[miles_]
   
   @js.native
-  sealed trait millimeters extends StObject
+  sealed trait millimeters
+    extends StObject
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
   inline def millimeters: millimeters = "millimeters".asInstanceOf[millimeters]
   
   @js.native
@@ -2648,12 +3784,20 @@ object arcgisJsApiStrings {
   inline def `min-change`: `min-change` = "min-change".asInstanceOf[`min-change`]
   
   @js.native
+  sealed trait `min-click` extends StObject
+  inline def `min-click`: `min-click` = "min-click".asInstanceOf[`min-click`]
+  
+  @js.native
   sealed trait `min-max` extends StObject
   inline def `min-max`: `min-max` = "min-max".asInstanceOf[`min-max`]
   
   @js.native
   sealed trait minus extends StObject
   inline def minus: minus = "minus".asInstanceOf[minus]
+  
+  @js.native
+  sealed trait minute extends StObject
+  inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
   sealed trait minutes extends StObject
@@ -2664,12 +3808,12 @@ object arcgisJsApiStrings {
   inline def mirror: mirror = "mirror".asInstanceOf[mirror]
   
   @js.native
-  sealed trait miter extends StObject
-  inline def miter: miter = "miter".asInstanceOf[miter]
+  sealed trait miter_ extends StObject
+  inline def miter_ : miter_ = "miter".asInstanceOf[miter_]
   
   @js.native
-  sealed trait mitered extends StObject
-  inline def mitered: mitered = "mitered".asInstanceOf[mitered]
+  sealed trait mitered_ extends StObject
+  inline def mitered_ : mitered_ = "mitered".asInstanceOf[mitered_]
   
   @js.native
   sealed trait mixed extends StObject
@@ -2680,12 +3824,20 @@ object arcgisJsApiStrings {
   inline def moderate: moderate = "moderate".asInstanceOf[moderate]
   
   @js.native
+  sealed trait `moderate-traffic` extends StObject
+  inline def `moderate-traffic`: `moderate-traffic` = "moderate-traffic".asInstanceOf[`moderate-traffic`]
+  
+  @js.native
   sealed trait modified extends StObject
   inline def modified: modified = "modified".asInstanceOf[modified]
   
   @js.native
   sealed trait `modulo-ten` extends StObject
   inline def `modulo-ten`: `modulo-ten` = "modulo-ten".asInstanceOf[`modulo-ten`]
+  
+  @js.native
+  sealed trait month extends StObject
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
   sealed trait months extends StObject
@@ -2710,6 +3862,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait `move-stop` extends StObject
   inline def `move-stop`: `move-stop` = "move-stop".asInstanceOf[`move-stop`]
+  
+  @js.native
+  sealed trait `move-xy` extends StObject
+  inline def `move-xy`: `move-xy` = "move-xy".asInstanceOf[`move-xy`]
   
   @js.native
   sealed trait mrgs extends StObject
@@ -2760,14 +3916,32 @@ object arcgisJsApiStrings {
   inline def `natural-breaks`: `natural-breaks` = "natural-breaks".asInstanceOf[`natural-breaks`]
   
   @js.native
+  sealed trait `natural-log` extends StObject
+  inline def `natural-log`: `natural-log` = "natural-log".asInstanceOf[`natural-log`]
+  
+  @js.native
   sealed trait `nautical-miles`
     extends StObject
-       with LinearUnits
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _LinearUnits
   inline def `nautical-miles`: `nautical-miles` = "nautical-miles".asInstanceOf[`nautical-miles`]
+  
+  @js.native
+  sealed trait navigation extends StObject
+  inline def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
   sealed trait nearest extends StObject
   inline def nearest: nearest = "nearest".asInstanceOf[nearest]
+  
+  @js.native
+  sealed trait `network-element-not-located` extends StObject
+  inline def `network-element-not-located`: `network-element-not-located` = "network-element-not-located".asInstanceOf[`network-element-not-located`]
   
   @js.native
   sealed trait `new-180-in-zone-01` extends StObject
@@ -2798,12 +3972,16 @@ object arcgisJsApiStrings {
   inline def `no-prompt`: `no-prompt` = "no-prompt".asInstanceOf[`no-prompt`]
   
   @js.native
+  sealed trait `no-u-turn` extends StObject
+  inline def `no-u-turn`: `no-u-turn` = "no-u-turn".asInstanceOf[`no-u-turn`]
+  
+  @js.native
   sealed trait `non-metric` extends StObject
   inline def `non-metric`: `non-metric` = "non-metric".asInstanceOf[`non-metric`]
   
   @js.native
-  sealed trait none extends StObject
-  inline def none: none = "none".asInstanceOf[none]
+  sealed trait none_ extends StObject
+  inline def none_ : none_ = "none".asInstanceOf[none_]
   
   @js.native
   sealed trait normal extends StObject
@@ -2832,6 +4010,22 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait `not-loaded` extends StObject
   inline def `not-loaded`: `not-loaded` = "not-loaded".asInstanceOf[`not-loaded`]
+  
+  @js.native
+  sealed trait `not-located` extends StObject
+  inline def `not-located`: `not-located` = "not-located".asInstanceOf[`not-located`]
+  
+  @js.native
+  sealed trait `not-located-on-closest` extends StObject
+  inline def `not-located-on-closest`: `not-located-on-closest` = "not-located-on-closest".asInstanceOf[`not-located-on-closest`]
+  
+  @js.native
+  sealed trait `not-reached` extends StObject
+  inline def `not-reached`: `not-reached` = "not-reached".asInstanceOf[`not-reached`]
+  
+  @js.native
+  sealed trait now extends StObject
+  inline def now: now = "now".asInstanceOf[now]
   
   @js.native
   sealed trait `null` extends StObject
@@ -2870,12 +4064,24 @@ object arcgisJsApiStrings {
   inline def `ocean-current-m`: `ocean-current-m` = "ocean-current-m".asInstanceOf[`ocean-current-m`]
   
   @js.native
+  sealed trait `off-ferry` extends StObject
+  inline def `off-ferry`: `off-ferry` = "off-ferry".asInstanceOf[`off-ferry`]
+  
+  @js.native
+  sealed trait offset extends StObject
+  inline def offset: offset = "offset".asInstanceOf[offset]
+  
+  @js.native
   sealed trait `ogc-feature` extends StObject
   inline def `ogc-feature`: `ogc-feature` = "ogc-feature".asInstanceOf[`ogc-feature`]
   
   @js.native
   sealed trait oid extends StObject
   inline def oid: oid = "oid".asInstanceOf[oid]
+  
+  @js.native
+  sealed trait ok extends StObject
+  inline def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
   sealed trait `old-180-in-zone-01` extends StObject
@@ -2886,8 +4092,16 @@ object arcgisJsApiStrings {
   inline def `old-180-in-zone-60`: `old-180-in-zone-60` = "old-180-in-zone-60".asInstanceOf[`old-180-in-zone-60`]
   
   @js.native
+  sealed trait `on-ferry` extends StObject
+  inline def `on-ferry`: `on-ferry` = "on-ferry".asInstanceOf[`on-ferry`]
+  
+  @js.native
   sealed trait `on-the-ground` extends StObject
   inline def `on-the-ground`: `on-the-ground` = "on-the-ground".asInstanceOf[`on-the-ground`]
+  
+  @js.native
+  sealed trait one extends StObject
+  inline def one: one = "one".asInstanceOf[one]
   
   @js.native
   sealed trait `one-to-many` extends StObject
@@ -2934,12 +4148,24 @@ object arcgisJsApiStrings {
   inline def origin: origin = "origin".asInstanceOf[origin]
   
   @js.native
+  sealed trait `original-and-current-features` extends StObject
+  inline def `original-and-current-features`: `original-and-current-features` = "original-and-current-features".asInstanceOf[`original-and-current-features`]
+  
+  @js.native
+  sealed trait other extends StObject
+  inline def other: other = "other".asInstanceOf[other]
+  
+  @js.native
   sealed trait `out-cubic` extends StObject
   inline def `out-cubic`: `out-cubic` = "out-cubic".asInstanceOf[`out-cubic`]
   
   @js.native
   sealed trait `out-expo` extends StObject
   inline def `out-expo`: `out-expo` = "out-expo".asInstanceOf[`out-expo`]
+  
+  @js.native
+  sealed trait outline extends StObject
+  inline def outline: outline = "outline".asInstanceOf[outline]
   
   @js.native
   sealed trait overlap extends StObject
@@ -2962,12 +4188,24 @@ object arcgisJsApiStrings {
   inline def pan: pan = "pan".asInstanceOf[pan]
   
   @js.native
+  sealed trait parallel extends StObject
+  inline def parallel: parallel = "parallel".asInstanceOf[parallel]
+  
+  @js.native
   sealed trait path extends StObject
   inline def path: path = "path".asInstanceOf[path]
   
   @js.native
+  sealed trait pbf extends StObject
+  inline def pbf: pbf = "pbf".asInstanceOf[pbf]
+  
+  @js.native
   sealed trait pdf extends StObject
   inline def pdf: pdf = "pdf".asInstanceOf[pdf]
+  
+  @js.native
+  sealed trait `pedestrian-ramp` extends StObject
+  inline def `pedestrian-ramp`: `pedestrian-ramp` = "pedestrian-ramp".asInstanceOf[`pedestrian-ramp`]
   
   @js.native
   sealed trait percent extends StObject
@@ -2994,12 +4232,24 @@ object arcgisJsApiStrings {
   inline def `percentile-discrete`: `percentile-discrete` = "percentile-discrete".asInstanceOf[`percentile-discrete`]
   
   @js.native
+  sealed trait permit extends StObject
+  inline def permit: permit = "permit".asInstanceOf[permit]
+  
+  @js.native
   sealed trait `picture-fill` extends StObject
   inline def `picture-fill`: `picture-fill` = "picture-fill".asInstanceOf[`picture-fill`]
   
   @js.native
   sealed trait `picture-marker` extends StObject
   inline def `picture-marker`: `picture-marker` = "picture-marker".asInstanceOf[`picture-marker`]
+  
+  @js.native
+  sealed trait pie extends StObject
+  inline def pie: pie = "pie".asInstanceOf[pie]
+  
+  @js.native
+  sealed trait `pie-chart` extends StObject
+  inline def `pie-chart`: `pie-chart` = "pie-chart".asInstanceOf[`pie-chart`]
   
   @js.native
   sealed trait planar extends StObject
@@ -3016,6 +4266,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait plus extends StObject
   inline def plus: plus = "plus".asInstanceOf[plus]
+  
+  @js.native
+  sealed trait `plus-minus` extends StObject
+  inline def `plus-minus`: `plus-minus` = "plus-minus".asInstanceOf[`plus-minus`]
   
   @js.native
   sealed trait png extends StObject
@@ -3110,6 +4364,10 @@ object arcgisJsApiStrings {
   inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
+  sealed trait popup extends StObject
+  inline def popup: popup = "popup".asInstanceOf[popup]
+  
+  @js.native
   sealed trait portrait extends StObject
   inline def portrait: portrait = "portrait".asInstanceOf[portrait]
   
@@ -3124,6 +4382,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait predominance extends StObject
   inline def predominance: predominance = "predominance".asInstanceOf[predominance]
+  
+  @js.native
+  sealed trait `preferred-for-pedestrians` extends StObject
+  inline def `preferred-for-pedestrians`: `preferred-for-pedestrians` = "preferred-for-pedestrians".asInstanceOf[`preferred-for-pedestrians`]
   
   @js.native
   sealed trait `preserve-shape` extends StObject
@@ -3162,6 +4424,10 @@ object arcgisJsApiStrings {
   inline def public: public = "public".asInstanceOf[public]
   
   @js.native
+  sealed trait put extends StObject
+  inline def put: put = "put".asInstanceOf[put]
+  
+  @js.native
   sealed trait quad extends StObject
   inline def quad: quad = "quad".asInstanceOf[quad]
   
@@ -3170,12 +4436,33 @@ object arcgisJsApiStrings {
   inline def quantile: quantile = "quantile".asInstanceOf[quantile]
   
   @js.native
+  sealed trait query extends StObject
+  inline def query: query = "query".asInstanceOf[query]
+  
+  @js.native
   sealed trait `query-table` extends StObject
   inline def `query-table`: `query-table` = "query-table".asInstanceOf[`query-table`]
   
   @js.native
+  sealed trait radians
+    extends StObject
+       with AngleUnit
+       with typings.arcgisJsApi.esri.AngleUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+  inline def radians: radians = "radians".asInstanceOf[radians]
+  
+  @js.native
+  sealed trait `radio-buttons` extends StObject
+  inline def `radio-buttons`: `radio-buttons` = "radio-buttons".asInstanceOf[`radio-buttons`]
+  
+  @js.native
   sealed trait radius extends StObject
   inline def radius: radius = "radius".asInstanceOf[radius]
+  
+  @js.native
+  sealed trait rainy extends StObject
+  inline def rainy: rainy = "rainy".asInstanceOf[rainy]
   
   @js.native
   sealed trait range extends StObject
@@ -3186,7 +4473,15 @@ object arcgisJsApiStrings {
   inline def raster: raster = "raster".asInstanceOf[raster]
   
   @js.native
-  sealed trait `raster-colormap` extends StObject
+  sealed trait `raster-class-breaks`
+    extends StObject
+       with SupportedRendererType
+  inline def `raster-class-breaks`: `raster-class-breaks` = "raster-class-breaks".asInstanceOf[`raster-class-breaks`]
+  
+  @js.native
+  sealed trait `raster-colormap`
+    extends StObject
+       with SupportedRendererType
   inline def `raster-colormap`: `raster-colormap` = "raster-colormap".asInstanceOf[`raster-colormap`]
   
   @js.native
@@ -3198,12 +4493,40 @@ object arcgisJsApiStrings {
   inline def `raster-data-layer`: `raster-data-layer` = "raster-data-layer".asInstanceOf[`raster-data-layer`]
   
   @js.native
-  sealed trait `raster-shaded-relief` extends StObject
+  sealed trait `raster-flow`
+    extends StObject
+       with SupportedRendererType
+  inline def `raster-flow`: `raster-flow` = "raster-flow".asInstanceOf[`raster-flow`]
+  
+  @js.native
+  sealed trait `raster-rgb`
+    extends StObject
+       with SupportedRendererType
+  inline def `raster-rgb`: `raster-rgb` = "raster-rgb".asInstanceOf[`raster-rgb`]
+  
+  @js.native
+  sealed trait `raster-shaded-relief`
+    extends StObject
+       with SupportedRendererType
   inline def `raster-shaded-relief`: `raster-shaded-relief` = "raster-shaded-relief".asInstanceOf[`raster-shaded-relief`]
   
   @js.native
-  sealed trait `raster-stretch` extends StObject
+  sealed trait `raster-stretch`
+    extends StObject
+       with SupportedRendererType
   inline def `raster-stretch`: `raster-stretch` = "raster-stretch".asInstanceOf[`raster-stretch`]
+  
+  @js.native
+  sealed trait `raster-unique-value`
+    extends StObject
+       with SupportedRendererType
+  inline def `raster-unique-value`: `raster-unique-value` = "raster-unique-value".asInstanceOf[`raster-unique-value`]
+  
+  @js.native
+  sealed trait `raster-vector-field`
+    extends StObject
+       with SupportedRendererType
+  inline def `raster-vector-field`: `raster-vector-field` = "raster-vector-field".asInstanceOf[`raster-vector-field`]
   
   @js.native
   sealed trait ratio extends StObject
@@ -3222,12 +4545,20 @@ object arcgisJsApiStrings {
   inline def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   
   @js.native
+  sealed trait `rectangle-selection` extends StObject
+  inline def `rectangle-selection`: `rectangle-selection` = "rectangle-selection".asInstanceOf[`rectangle-selection`]
+  
+  @js.native
   sealed trait redo extends StObject
   inline def redo: redo = "redo".asInstanceOf[redo]
   
   @js.native
   sealed trait reflect extends StObject
   inline def reflect: reflect = "reflect".asInstanceOf[reflect]
+  
+  @js.native
+  sealed trait refresh extends StObject
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
   sealed trait relation extends StObject
@@ -3238,16 +4569,16 @@ object arcgisJsApiStrings {
   inline def relationship: relationship = "relationship".asInstanceOf[relationship]
   
   @js.native
-  sealed trait relative extends StObject
-  inline def relative: relative = "relative".asInstanceOf[relative]
-  
-  @js.native
   sealed trait `relative-to-ground` extends StObject
   inline def `relative-to-ground`: `relative-to-ground` = "relative-to-ground".asInstanceOf[`relative-to-ground`]
   
   @js.native
   sealed trait `relative-to-scene` extends StObject
   inline def `relative-to-scene`: `relative-to-scene` = "relative-to-scene".asInstanceOf[`relative-to-scene`]
+  
+  @js.native
+  sealed trait relative_ extends StObject
+  inline def relative_ : relative_ = "relative".asInstanceOf[relative_]
   
   @js.native
   sealed trait `relocate-ends` extends StObject
@@ -3282,6 +4613,18 @@ object arcgisJsApiStrings {
   inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
+  sealed trait restrict extends StObject
+  inline def restrict: restrict = "restrict".asInstanceOf[restrict]
+  
+  @js.native
+  sealed trait restriction extends StObject
+  inline def restriction: restriction = "restriction".asInstanceOf[restriction]
+  
+  @js.native
+  sealed trait `restriction-violation` extends StObject
+  inline def `restriction-violation`: `restriction-violation` = "restriction-violation".asInstanceOf[`restriction-violation`]
+  
+  @js.native
   sealed trait `return` extends StObject
   inline def `return`: `return` = "return".asInstanceOf[`return`]
   
@@ -3294,12 +4637,44 @@ object arcgisJsApiStrings {
   inline def `rich-text`: `rich-text` = "rich-text".asInstanceOf[`rich-text`]
   
   @js.native
-  sealed trait right extends StObject
-  inline def right: right = "right".asInstanceOf[right]
+  sealed trait `riding-a-motorcycle` extends StObject
+  inline def `riding-a-motorcycle`: `riding-a-motorcycle` = "riding-a-motorcycle".asInstanceOf[`riding-a-motorcycle`]
   
   @js.native
   sealed trait `right-arrow` extends StObject
   inline def `right-arrow`: `right-arrow` = "right-arrow".asInstanceOf[`right-arrow`]
+  
+  @js.native
+  sealed trait `right-fork` extends StObject
+  inline def `right-fork`: `right-fork` = "right-fork".asInstanceOf[`right-fork`]
+  
+  @js.native
+  sealed trait `right-handed-u-turn` extends StObject
+  inline def `right-handed-u-turn`: `right-handed-u-turn` = "right-handed-u-turn".asInstanceOf[`right-handed-u-turn`]
+  
+  @js.native
+  sealed trait `right-ramp` extends StObject
+  inline def `right-ramp`: `right-ramp` = "right-ramp".asInstanceOf[`right-ramp`]
+  
+  @js.native
+  sealed trait `right-side-of-vehicle` extends StObject
+  inline def `right-side-of-vehicle`: `right-side-of-vehicle` = "right-side-of-vehicle".asInstanceOf[`right-side-of-vehicle`]
+  
+  @js.native
+  sealed trait `right-turn` extends StObject
+  inline def `right-turn`: `right-turn` = "right-turn".asInstanceOf[`right-turn`]
+  
+  @js.native
+  sealed trait `right-turn-and-immediate-left-turn` extends StObject
+  inline def `right-turn-and-immediate-left-turn`: `right-turn-and-immediate-left-turn` = "right-turn-and-immediate-left-turn".asInstanceOf[`right-turn-and-immediate-left-turn`]
+  
+  @js.native
+  sealed trait `right-turn-and-immediate-right-turn` extends StObject
+  inline def `right-turn-and-immediate-right-turn`: `right-turn-and-immediate-right-turn` = "right-turn-and-immediate-right-turn".asInstanceOf[`right-turn-and-immediate-right-turn`]
+  
+  @js.native
+  sealed trait right_ extends StObject
+  inline def right_ : right_ = "right".asInstanceOf[right_]
   
   @js.native
   sealed trait rippled extends StObject
@@ -3308,6 +4683,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait road extends StObject
   inline def road: road = "road".asInstanceOf[road]
+  
+  @js.native
+  sealed trait `roads-under-construction-prohibited` extends StObject
+  inline def `roads-under-construction-prohibited`: `roads-under-construction-prohibited` = "roads-under-construction-prohibited".asInstanceOf[`roads-under-construction-prohibited`]
   
   @js.native
   sealed trait roll extends StObject
@@ -3334,16 +4713,24 @@ object arcgisJsApiStrings {
   inline def rotation: rotation = "rotation".asInstanceOf[rotation]
   
   @js.native
-  sealed trait round extends StObject
-  inline def round: round = "round".asInstanceOf[round]
+  sealed trait round_ extends StObject
+  inline def round_ : round_ = "round".asInstanceOf[round_]
   
   @js.native
-  sealed trait rounded extends StObject
-  inline def rounded: rounded = "rounded".asInstanceOf[rounded]
+  sealed trait roundabout extends StObject
+  inline def roundabout: roundabout = "roundabout".asInstanceOf[roundabout]
+  
+  @js.native
+  sealed trait rounded_ extends StObject
+  inline def rounded_ : rounded_ = "rounded".asInstanceOf[rounded_]
   
   @js.native
   sealed trait route extends StObject
   inline def route: route = "route".asInstanceOf[route]
+  
+  @js.native
+  sealed trait `route-info` extends StObject
+  inline def `route-info`: `route-info` = "route-info".asInstanceOf[`route-info`]
   
   @js.native
   sealed trait ruler extends StObject
@@ -3382,6 +4769,14 @@ object arcgisJsApiStrings {
   inline def `scale-stop`: `scale-stop` = "scale-stop".asInstanceOf[`scale-stop`]
   
   @js.native
+  sealed trait `scaled-cost-barrier` extends StObject
+  inline def `scaled-cost-barrier`: `scaled-cost-barrier` = "scaled-cost-barrier".asInstanceOf[`scaled-cost-barrier`]
+  
+  @js.native
+  sealed trait `scaled-cost-barrier-event` extends StObject
+  inline def `scaled-cost-barrier-event`: `scaled-cost-barrier-event` = "scaled-cost-barrier-event".asInstanceOf[`scaled-cost-barrier-event`]
+  
+  @js.native
   sealed trait scene extends StObject
   inline def scene: scene = "scene".asInstanceOf[scene]
   
@@ -3418,6 +4813,10 @@ object arcgisJsApiStrings {
   inline def `search-start`: `search-start` = "search-start".asInstanceOf[`search-start`]
   
   @js.native
+  sealed trait searched extends StObject
+  inline def searched: searched = "searched".asInstanceOf[searched]
+  
+  @js.native
   sealed trait searching extends StObject
   inline def searching: searching = "searching".asInstanceOf[searching]
   
@@ -3442,8 +4841,20 @@ object arcgisJsApiStrings {
   inline def season: season = "season".asInstanceOf[season]
   
   @js.native
+  sealed trait second extends StObject
+  inline def second: second = "second".asInstanceOf[second]
+  
+  @js.native
   sealed trait seconds extends StObject
   inline def seconds: seconds = "seconds".asInstanceOf[seconds]
+  
+  @js.native
+  sealed trait segment extends StObject
+  inline def segment: segment = "segment".asInstanceOf[segment]
+  
+  @js.native
+  sealed trait `segment-click` extends StObject
+  inline def `segment-click`: `segment-click` = "segment-click".asInstanceOf[`segment-click`]
   
   @js.native
   sealed trait `segment-drag` extends StObject
@@ -3454,12 +4865,16 @@ object arcgisJsApiStrings {
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait `select-bookmark` extends StObject
-  inline def `select-bookmark`: `select-bookmark` = "select-bookmark".asInstanceOf[`select-bookmark`]
-  
-  @js.native
   sealed trait `select-result` extends StObject
   inline def `select-result`: `select-result` = "select-result".asInstanceOf[`select-result`]
+  
+  @js.native
+  sealed trait selected extends StObject
+  inline def selected: selected = "selected".asInstanceOf[selected]
+  
+  @js.native
+  sealed trait selecting extends StObject
+  inline def selecting: selecting = "selecting".asInstanceOf[selecting]
   
   @js.native
   sealed trait selection extends StObject
@@ -3470,12 +4885,28 @@ object arcgisJsApiStrings {
   inline def `selection-change`: `selection-change` = "selection-change".asInstanceOf[`selection-change`]
   
   @js.native
+  sealed trait `semi-or-tractor-with-one-or-more-trailers-prohibited` extends StObject
+  inline def `semi-or-tractor-with-one-or-more-trailers-prohibited`: `semi-or-tractor-with-one-or-more-trailers-prohibited` = "semi-or-tractor-with-one-or-more-trailers-prohibited".asInstanceOf[`semi-or-tractor-with-one-or-more-trailers-prohibited`]
+  
+  @js.native
   sealed trait sequential extends StObject
   inline def sequential: sequential = "sequential".asInstanceOf[sequential]
   
   @js.native
+  sealed trait session extends StObject
+  inline def session: session = "session".asInstanceOf[session]
+  
+  @js.native
   sealed trait shared extends StObject
   inline def shared: shared = "shared".asInstanceOf[shared]
+  
+  @js.native
+  sealed trait `sharp-left` extends StObject
+  inline def `sharp-left`: `sharp-left` = "sharp-left".asInstanceOf[`sharp-left`]
+  
+  @js.native
+  sealed trait `sharp-right` extends StObject
+  inline def `sharp-right`: `sharp-right` = "sharp-right".asInstanceOf[`sharp-right`]
   
   @js.native
   sealed trait `shield-label-symbol` extends StObject
@@ -3526,6 +4957,10 @@ object arcgisJsApiStrings {
   inline def `short-time`: `short-time` = "short-time".asInstanceOf[`short-time`]
   
   @js.native
+  sealed trait `shortest-path` extends StObject
+  inline def `shortest-path`: `shortest-path` = "shortest-path".asInstanceOf[`shortest-path`]
+  
+  @js.native
   sealed trait show extends StObject
   inline def show: show = "show".asInstanceOf[show]
   
@@ -3570,6 +5005,10 @@ object arcgisJsApiStrings {
   inline def `single-arrow`: `single-arrow` = "single-arrow".asInstanceOf[`single-arrow`]
   
   @js.native
+  sealed trait `single-axle-vehicles-prohibited` extends StObject
+  inline def `single-axle-vehicles-prohibited`: `single-axle-vehicles-prohibited` = "single-axle-vehicles-prohibited".asInstanceOf[`single-axle-vehicles-prohibited`]
+  
+  @js.native
   sealed trait singletenant extends StObject
   inline def singletenant: singletenant = "singletenant".asInstanceOf[singletenant]
   
@@ -3580,6 +5019,14 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait sketch extends StObject
   inline def sketch: sketch = "sketch".asInstanceOf[sketch]
+  
+  @js.native
+  sealed trait slice extends StObject
+  inline def slice: slice = "slice".asInstanceOf[slice]
+  
+  @js.native
+  sealed trait `slice-view-3d` extends StObject
+  inline def `slice-view-3d`: `slice-view-3d` = "slice-view-3d".asInstanceOf[`slice-view-3d`]
   
   @js.native
   sealed trait sliced extends StObject
@@ -3598,6 +5045,10 @@ object arcgisJsApiStrings {
   inline def slight: slight = "slight".asInstanceOf[slight]
   
   @js.native
+  sealed trait `slow-traffic` extends StObject
+  inline def `slow-traffic`: `slow-traffic` = "slow-traffic".asInstanceOf[`slow-traffic`]
+  
+  @js.native
   sealed trait small extends StObject
   inline def small: small = "small".asInstanceOf[small]
   
@@ -3608,6 +5059,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait smooth extends StObject
   inline def smooth: smooth = "smooth".asInstanceOf[smooth]
+  
+  @js.native
+  sealed trait snowy extends StObject
+  inline def snowy: snowy = "snowy".asInstanceOf[snowy]
   
   @js.native
   sealed trait `soft-light` extends StObject
@@ -3642,66 +5097,143 @@ object arcgisJsApiStrings {
   inline def splat: splat = "splat".asInstanceOf[splat]
   
   @js.native
+  sealed trait split extends StObject
+  inline def split: split = "split".asInstanceOf[split]
+  
+  @js.native
   sealed trait spring extends StObject
   inline def spring: spring = "spring".asInstanceOf[spring]
   
   @js.native
-  sealed trait square extends StObject
-  inline def square: square = "square".asInstanceOf[square]
-  
-  @js.native
-  sealed trait `square-centimeters` extends StObject
+  sealed trait `square-centimeters`
+    extends StObject
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
   inline def `square-centimeters`: `square-centimeters` = "square-centimeters".asInstanceOf[`square-centimeters`]
   
   @js.native
-  sealed trait `square-decimeters` extends StObject
+  sealed trait `square-decimeters`
+    extends StObject
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
   inline def `square-decimeters`: `square-decimeters` = "square-decimeters".asInstanceOf[`square-decimeters`]
   
   @js.native
   sealed trait `square-feet`
     extends StObject
-       with ArealUnits
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _ArealUnits
   inline def `square-feet`: `square-feet` = "square-feet".asInstanceOf[`square-feet`]
   
   @js.native
-  sealed trait `square-inches` extends StObject
+  sealed trait `square-inches`
+    extends StObject
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
   inline def `square-inches`: `square-inches` = "square-inches".asInstanceOf[`square-inches`]
   
   @js.native
   sealed trait `square-kilometers`
     extends StObject
-       with ArealUnits
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _ArealUnits
   inline def `square-kilometers`: `square-kilometers` = "square-kilometers".asInstanceOf[`square-kilometers`]
   
   @js.native
   sealed trait `square-meters`
     extends StObject
-       with ArealUnits
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _ArealUnits
   inline def `square-meters`: `square-meters` = "square-meters".asInstanceOf[`square-meters`]
   
   @js.native
   sealed trait `square-miles`
     extends StObject
-       with ArealUnits
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _ArealUnits
   inline def `square-miles`: `square-miles` = "square-miles".asInstanceOf[`square-miles`]
   
   @js.native
-  sealed trait `square-millimeters` extends StObject
+  sealed trait `square-millimeters`
+    extends StObject
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
   inline def `square-millimeters`: `square-millimeters` = "square-millimeters".asInstanceOf[`square-millimeters`]
   
   @js.native
-  sealed trait `square-us-feet` extends StObject
+  sealed trait `square-root` extends StObject
+  inline def `square-root`: `square-root` = "square-root".asInstanceOf[`square-root`]
+  
+  @js.native
+  sealed trait `square-us-feet`
+    extends StObject
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
   inline def `square-us-feet`: `square-us-feet` = "square-us-feet".asInstanceOf[`square-us-feet`]
   
   @js.native
   sealed trait `square-yards`
     extends StObject
-       with ArealUnits
+       with AreaUnit
+       with typings.arcgisJsApi.esri.AreaUnit
+       with SystemOrAreaUnit
+       with typings.arcgisJsApi.esri.SystemOrAreaUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _ArealUnits
   inline def `square-yards`: `square-yards` = "square-yards".asInstanceOf[`square-yards`]
+  
+  @js.native
+  sealed trait square_ extends StObject
+  inline def square_ : square_ = "square".asInstanceOf[square_]
   
   @js.native
   sealed trait stack extends StObject
   inline def stack: stack = "stack".asInstanceOf[stack]
+  
+  @js.native
+  sealed trait stairs extends StObject
+  inline def stairs: stairs = "stairs".asInstanceOf[stairs]
   
   @js.native
   sealed trait standard extends StObject
@@ -3712,8 +5244,16 @@ object arcgisJsApiStrings {
   inline def `standard-deviation`: `standard-deviation` = "standard-deviation".asInstanceOf[`standard-deviation`]
   
   @js.native
+  sealed trait `standard-time` extends StObject
+  inline def `standard-time`: `standard-time` = "standard-time".asInstanceOf[`standard-time`]
+  
+  @js.native
   sealed trait start extends StObject
   inline def start: start = "start".asInstanceOf[start]
+  
+  @js.native
+  sealed trait `starting-point` extends StObject
+  inline def `starting-point`: `starting-point` = "starting-point".asInstanceOf[`starting-point`]
   
   @js.native
   sealed trait static extends StObject
@@ -3748,8 +5288,8 @@ object arcgisJsApiStrings {
   inline def street: street = "street".asInstanceOf[street]
   
   @js.native
-  sealed trait string extends StObject
-  inline def string: string = "string".asInstanceOf[string]
+  sealed trait string_ extends StObject
+  inline def string_ : string_ = "string".asInstanceOf[string_]
   
   @js.native
   sealed trait style extends StObject
@@ -3758,6 +5298,26 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait submit extends StObject
   inline def submit: submit = "submit".asInstanceOf[submit]
+  
+  @js.native
+  sealed trait subnetwork extends StObject
+  inline def subnetwork: subnetwork = "subnetwork".asInstanceOf[subnetwork]
+  
+  @js.native
+  sealed trait `subnetwork-controllers` extends StObject
+  inline def `subnetwork-controllers`: `subnetwork-controllers` = "subnetwork-controllers".asInstanceOf[`subnetwork-controllers`]
+  
+  @js.native
+  sealed trait subtract extends StObject
+  inline def subtract: subtract = "subtract".asInstanceOf[subtract]
+  
+  @js.native
+  sealed trait `subtype-group` extends StObject
+  inline def `subtype-group`: `subtype-group` = "subtype-group".asInstanceOf[`subtype-group`]
+  
+  @js.native
+  sealed trait `subtype-sublayer` extends StObject
+  inline def `subtype-sublayer`: `subtype-sublayer` = "subtype-sublayer".asInstanceOf[`subtype-sublayer`]
   
   @js.native
   sealed trait `suggest-complete` extends StObject
@@ -3784,6 +5344,18 @@ object arcgisJsApiStrings {
   inline def summer: summer = "summer".asInstanceOf[summer]
   
   @js.native
+  sealed trait sun extends StObject
+  inline def sun: sun = "sun".asInstanceOf[sun]
+  
+  @js.native
+  sealed trait sunny extends StObject
+  inline def sunny: sunny = "sunny".asInstanceOf[sunny]
+  
+  @js.native
+  sealed trait surfaces extends StObject
+  inline def surfaces: surfaces = "surfaces".asInstanceOf[surfaces]
+  
+  @js.native
   sealed trait svg extends StObject
   inline def svg: svg = "svg".asInstanceOf[svg]
   
@@ -3792,8 +5364,8 @@ object arcgisJsApiStrings {
   inline def svgz: svgz = "svgz".asInstanceOf[svgz]
   
   @js.native
-  sealed trait sync extends StObject
-  inline def sync: sync = "sync".asInstanceOf[sync]
+  sealed trait switch extends StObject
+  inline def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
   sealed trait `tabloid-ansi-b-landscape` extends StObject
@@ -3802,6 +5374,14 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait `tabloid-ansi-b-portrait` extends StObject
   inline def `tabloid-ansi-b-portrait`: `tabloid-ansi-b-portrait` = "tabloid-ansi-b-portrait".asInstanceOf[`tabloid-ansi-b-portrait`]
+  
+  @js.native
+  sealed trait tall extends StObject
+  inline def tall: tall = "tall".asInstanceOf[tall]
+  
+  @js.native
+  sealed trait `tandem-axle-vehicles-prohibited` extends StObject
+  inline def `tandem-axle-vehicles-prohibited`: `tandem-axle-vehicles-prohibited` = "tandem-axle-vehicles-prohibited".asInstanceOf[`tandem-axle-vehicles-prohibited`]
   
   @js.native
   sealed trait text extends StObject
@@ -3820,6 +5400,14 @@ object arcgisJsApiStrings {
   inline def thematic: thematic = "thematic".asInstanceOf[thematic]
   
   @js.native
+  sealed trait threshold extends StObject
+  inline def threshold: threshold = "threshold".asInstanceOf[threshold]
+  
+  @js.native
+  sealed trait `through-traffic-prohibited` extends StObject
+  inline def `through-traffic-prohibited`: `through-traffic-prohibited` = "through-traffic-prohibited".asInstanceOf[`through-traffic-prohibited`]
+  
+  @js.native
   sealed trait thumb extends StObject
   inline def thumb: thumb = "thumb".asInstanceOf[thumb]
   
@@ -3828,12 +5416,20 @@ object arcgisJsApiStrings {
   inline def `thumb-change`: `thumb-change` = "thumb-change".asInstanceOf[`thumb-change`]
   
   @js.native
+  sealed trait `thumb-click` extends StObject
+  inline def `thumb-click`: `thumb-click` = "thumb-click".asInstanceOf[`thumb-click`]
+  
+  @js.native
   sealed trait `thumb-drag` extends StObject
   inline def `thumb-drag`: `thumb-drag` = "thumb-drag".asInstanceOf[`thumb-drag`]
   
   @js.native
   sealed trait tick extends StObject
   inline def tick: tick = "tick".asInstanceOf[tick]
+  
+  @js.native
+  sealed trait `tick-click` extends StObject
+  inline def `tick-click`: `tick-click` = "tick-click".asInstanceOf[`tick-click`]
   
   @js.native
   sealed trait tiff extends StObject
@@ -3848,8 +5444,24 @@ object arcgisJsApiStrings {
   inline def tilt: tilt = "tilt".asInstanceOf[tilt]
   
   @js.native
+  sealed trait time extends StObject
+  inline def time: time = "time".asInstanceOf[time]
+  
+  @js.native
   sealed trait `time-window` extends StObject
   inline def `time-window`: `time-window` = "time-window".asInstanceOf[`time-window`]
+  
+  @js.native
+  sealed trait `time-window-violation` extends StObject
+  inline def `time-window-violation`: `time-window-violation` = "time-window-violation".asInstanceOf[`time-window-violation`]
+  
+  @js.native
+  sealed trait `time-zone-change` extends StObject
+  inline def `time-zone-change`: `time-zone-change` = "time-zone-change".asInstanceOf[`time-zone-change`]
+  
+  @js.native
+  sealed trait timestamp extends StObject
+  inline def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   
   @js.native
   sealed trait tint extends StObject
@@ -3872,10 +5484,6 @@ object arcgisJsApiStrings {
   inline def `token-change`: `token-change` = "token-change".asInstanceOf[`token-change`]
   
   @js.native
-  sealed trait top extends StObject
-  inline def top: top = "top".asInstanceOf[top]
-  
-  @js.native
   sealed trait `top-center` extends StObject
   inline def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
   
@@ -3896,6 +5504,10 @@ object arcgisJsApiStrings {
   inline def `top-trailing`: `top-trailing` = "top-trailing".asInstanceOf[`top-trailing`]
   
   @js.native
+  sealed trait top_ extends StObject
+  inline def top_ : top_ = "top".asInstanceOf[top_]
+  
+  @js.native
   sealed trait touch extends StObject
   inline def touch: touch = "touch".asInstanceOf[touch]
   
@@ -3904,8 +5516,16 @@ object arcgisJsApiStrings {
   inline def touches: touches = "touches".asInstanceOf[touches]
   
   @js.native
+  sealed trait trace extends StObject
+  inline def trace: trace = "trace".asInstanceOf[trace]
+  
+  @js.native
   sealed trait track extends StObject
   inline def track: track = "track".asInstanceOf[track]
+  
+  @js.native
+  sealed trait `track-click` extends StObject
+  inline def `track-click`: `track-click` = "track-click".asInstanceOf[`track-click`]
   
   @js.native
   sealed trait `track-error` extends StObject
@@ -3920,16 +5540,44 @@ object arcgisJsApiStrings {
   inline def traditional: traditional = "traditional".asInstanceOf[traditional]
   
   @js.native
+  sealed trait `traffic-event` extends StObject
+  inline def `traffic-event`: `traffic-event` = "traffic-event".asInstanceOf[`traffic-event`]
+  
+  @js.native
   sealed trait transform extends StObject
   inline def transform: transform = "transform".asInstanceOf[transform]
   
   @js.native
-  sealed trait triangle extends StObject
-  inline def triangle: triangle = "triangle".asInstanceOf[triangle]
+  sealed trait `travel-time` extends StObject
+  inline def `travel-time`: `travel-time` = "travel-time".asInstanceOf[`travel-time`]
+  
+  @js.native
+  sealed trait triangle_ extends StObject
+  inline def triangle_ : triangle_ = "triangle".asInstanceOf[triangle_]
   
   @js.native
   sealed trait `trigger-action` extends StObject
   inline def `trigger-action`: `trigger-action` = "trigger-action".asInstanceOf[`trigger-action`]
+  
+  @js.native
+  sealed trait truck extends StObject
+  inline def truck: truck = "truck".asInstanceOf[truck]
+  
+  @js.native
+  sealed trait `truck-minutes` extends StObject
+  inline def `truck-minutes`: `truck-minutes` = "truck-minutes".asInstanceOf[`truck-minutes`]
+  
+  @js.native
+  sealed trait `truck-time` extends StObject
+  inline def `truck-time`: `truck-time` = "truck-time".asInstanceOf[`truck-time`]
+  
+  @js.native
+  sealed trait `truck-travel-time` extends StObject
+  inline def `truck-travel-time`: `truck-travel-time` = "truck-travel-time".asInstanceOf[`truck-travel-time`]
+  
+  @js.native
+  sealed trait `truck-with-trailers-restriction` extends StObject
+  inline def `truck-with-trailers-restriction`: `truck-with-trailers-restriction` = "truck-with-trailers-restriction".asInstanceOf[`truck-with-trailers-restriction`]
   
   @js.native
   sealed trait `true-shape` extends StObject
@@ -3946,6 +5594,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait `type-or-category` extends StObject
   inline def `type-or-category`: `type-or-category` = "type-or-category".asInstanceOf[`type-or-category`]
+  
+  @js.native
+  sealed trait `u-turn` extends StObject
+  inline def `u-turn`: `u-turn` = "u-turn".asInstanceOf[`u-turn`]
   
   @js.native
   sealed trait u1 extends StObject
@@ -3970,6 +5622,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait u8 extends StObject
   inline def u8: u8 = "u8".asInstanceOf[u8]
+  
+  @js.native
+  sealed trait `unary-expression` extends StObject
+  inline def `unary-expression`: `unary-expression` = "unary-expression".asInstanceOf[`unary-expression`]
   
   @js.native
   sealed trait underline extends StObject
@@ -4008,8 +5664,24 @@ object arcgisJsApiStrings {
   inline def `up-arrow`: `up-arrow` = "up-arrow".asInstanceOf[`up-arrow`]
   
   @js.native
+  sealed trait `up-elevator` extends StObject
+  inline def `up-elevator`: `up-elevator` = "up-elevator".asInstanceOf[`up-elevator`]
+  
+  @js.native
+  sealed trait `up-escalator` extends StObject
+  inline def `up-escalator`: `up-escalator` = "up-escalator".asInstanceOf[`up-escalator`]
+  
+  @js.native
+  sealed trait `up-stairs` extends StObject
+  inline def `up-stairs`: `up-stairs` = "up-stairs".asInstanceOf[`up-stairs`]
+  
+  @js.native
   sealed trait update extends StObject
   inline def update: update = "update".asInstanceOf[update]
+  
+  @js.native
+  sealed trait `update-pending` extends StObject
+  inline def `update-pending`: `update-pending` = "update-pending".asInstanceOf[`update-pending`]
   
   @js.native
   sealed trait `update-rate` extends StObject
@@ -4024,12 +5696,39 @@ object arcgisJsApiStrings {
   inline def `upper-left`: `upper-left` = "upper-left".asInstanceOf[`upper-left`]
   
   @js.native
-  sealed trait `us-feet` extends StObject
+  sealed trait upstream extends StObject
+  inline def upstream: upstream = "upstream".asInstanceOf[upstream]
+  
+  @js.native
+  sealed trait `us-feet`
+    extends StObject
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
   inline def `us-feet`: `us-feet` = "us-feet".asInstanceOf[`us-feet`]
   
   @js.native
   sealed trait `us-nautical-miles` extends StObject
   inline def `us-nautical-miles`: `us-nautical-miles` = "us-nautical-miles".asInstanceOf[`us-nautical-miles`]
+  
+  @js.native
+  sealed trait `use-geometry` extends StObject
+  inline def `use-geometry`: `use-geometry` = "use-geometry".asInstanceOf[`use-geometry`]
+  
+  @js.native
+  sealed trait `use-geometry-with-accuracy` extends StObject
+  inline def `use-geometry-with-accuracy`: `use-geometry-with-accuracy` = "use-geometry-with-accuracy".asInstanceOf[`use-geometry-with-accuracy`]
+  
+  @js.native
+  sealed trait `use-preferred-hazmat-routes` extends StObject
+  inline def `use-preferred-hazmat-routes`: `use-preferred-hazmat-routes` = "use-preferred-hazmat-routes".asInstanceOf[`use-preferred-hazmat-routes`]
+  
+  @js.native
+  sealed trait `use-preferred-truck-routes` extends StObject
+  inline def `use-preferred-truck-routes`: `use-preferred-truck-routes` = "use-preferred-truck-routes".asInstanceOf[`use-preferred-truck-routes`]
   
   @js.native
   sealed trait username extends StObject
@@ -4038,6 +5737,10 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait usng extends StObject
   inline def usng: usng = "usng".asInstanceOf[usng]
+  
+  @js.native
+  sealed trait utility extends StObject
+  inline def utility: utility = "utility".asInstanceOf[utility]
   
   @js.native
   sealed trait utm extends StObject
@@ -4060,6 +5763,10 @@ object arcgisJsApiStrings {
   inline def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
+  sealed trait `vector-direction` extends StObject
+  inline def `vector-direction`: `vector-direction` = "vector-direction".asInstanceOf[`vector-direction`]
+  
+  @js.native
   sealed trait `vector-field` extends StObject
   inline def `vector-field`: `vector-field` = "vector-field".asInstanceOf[`vector-field`]
   
@@ -4068,12 +5775,24 @@ object arcgisJsApiStrings {
   inline def `vector-magdir`: `vector-magdir` = "vector-magdir".asInstanceOf[`vector-magdir`]
   
   @js.native
+  sealed trait `vector-magnitude` extends StObject
+  inline def `vector-magnitude`: `vector-magnitude` = "vector-magnitude".asInstanceOf[`vector-magnitude`]
+  
+  @js.native
   sealed trait `vector-tile` extends StObject
   inline def `vector-tile`: `vector-tile` = "vector-tile".asInstanceOf[`vector-tile`]
   
   @js.native
+  sealed trait `vector-u` extends StObject
+  inline def `vector-u`: `vector-u` = "vector-u".asInstanceOf[`vector-u`]
+  
+  @js.native
   sealed trait `vector-uv` extends StObject
   inline def `vector-uv`: `vector-uv` = "vector-uv".asInstanceOf[`vector-uv`]
+  
+  @js.native
+  sealed trait `vector-v` extends StObject
+  inline def `vector-v`: `vector-v` = "vector-v".asInstanceOf[`vector-v`]
   
   @js.native
   sealed trait `vertex-add` extends StObject
@@ -4092,12 +5811,20 @@ object arcgisJsApiStrings {
   inline def `vertical-reversed`: `vertical-reversed` = "vertical-reversed".asInstanceOf[`vertical-reversed`]
   
   @js.native
+  sealed trait video extends StObject
+  inline def video: video = "video".asInstanceOf[video]
+  
+  @js.native
   sealed trait view extends StObject
   inline def view: view = "view".asInstanceOf[view]
   
   @js.native
   sealed trait viewpoint extends StObject
   inline def viewpoint: viewpoint = "viewpoint".asInstanceOf[viewpoint]
+  
+  @js.native
+  sealed trait virtual extends StObject
+  inline def virtual: virtual = "virtual".asInstanceOf[virtual]
   
   @js.native
   sealed trait visible extends StObject
@@ -4108,12 +5835,32 @@ object arcgisJsApiStrings {
   inline def `vivid-light`: `vivid-light` = "vivid-light".asInstanceOf[`vivid-light`]
   
   @js.native
+  sealed trait volume extends StObject
+  inline def volume: volume = "volume".asInstanceOf[volume]
+  
+  @js.native
+  sealed trait voxel extends StObject
+  inline def voxel: voxel = "voxel".asInstanceOf[voxel]
+  
+  @js.native
   sealed trait waiting extends StObject
   inline def waiting: waiting = "waiting".asInstanceOf[waiting]
   
   @js.native
   sealed trait `waiting-for-target` extends StObject
   inline def `waiting-for-target`: `waiting-for-target` = "waiting-for-target".asInstanceOf[`waiting-for-target`]
+  
+  @js.native
+  sealed trait walk extends StObject
+  inline def walk: walk = "walk".asInstanceOf[walk]
+  
+  @js.native
+  sealed trait `walk-time` extends StObject
+  inline def `walk-time`: `walk-time` = "walk-time".asInstanceOf[`walk-time`]
+  
+  @js.native
+  sealed trait walking extends StObject
+  inline def walking: walking = "walking".asInstanceOf[walking]
   
   @js.native
   sealed trait warn extends StObject
@@ -4126,6 +5873,14 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait water extends StObject
   inline def water: water = "water".asInstanceOf[water]
+  
+  @js.native
+  sealed trait `wave-front` extends StObject
+  inline def `wave-front`: `wave-front` = "wave-front".asInstanceOf[`wave-front`]
+  
+  @js.native
+  sealed trait waypoint extends StObject
+  inline def waypoint: waypoint = "waypoint".asInstanceOf[waypoint]
   
   @js.native
   sealed trait wcs extends StObject
@@ -4144,8 +5899,20 @@ object arcgisJsApiStrings {
   inline def weeks: weeks = "weeks".asInstanceOf[weeks]
   
   @js.native
+  sealed trait `weight-restriction` extends StObject
+  inline def `weight-restriction`: `weight-restriction` = "weight-restriction".asInstanceOf[`weight-restriction`]
+  
+  @js.native
   sealed trait west extends StObject
   inline def west: west = "west".asInstanceOf[west]
+  
+  @js.native
+  sealed trait wfs extends StObject
+  inline def wfs: wfs = "wfs".asInstanceOf[wfs]
+  
+  @js.native
+  sealed trait `when-clause` extends StObject
+  inline def `when-clause`: `when-clause` = "when-clause".asInstanceOf[`when-clause`]
   
   @js.native
   sealed trait wide extends StObject
@@ -4160,8 +5927,8 @@ object arcgisJsApiStrings {
   inline def `width-and-depth`: `width-and-depth` = "width-and-depth".asInstanceOf[`width-and-depth`]
   
   @js.native
-  sealed trait `wind-speed` extends StObject
-  inline def `wind-speed`: `wind-speed` = "wind-speed".asInstanceOf[`wind-speed`]
+  sealed trait `wind-barb` extends StObject
+  inline def `wind-barb`: `wind-barb` = "wind-barb".asInstanceOf[`wind-barb`]
   
   @js.native
   sealed trait winter extends StObject
@@ -4210,7 +5977,13 @@ object arcgisJsApiStrings {
   @js.native
   sealed trait yards
     extends StObject
-       with LinearUnits
+       with LengthUnit
+       with typings.arcgisJsApi.esri.LengthUnit
+       with SystemOrLengthUnit
+       with typings.arcgisJsApi.esri.SystemOrLengthUnit
+       with Unit
+       with typings.arcgisJsApi.esri.Unit
+       with _LinearUnits
   inline def yards: yards = "yards".asInstanceOf[yards]
   
   @js.native

@@ -1,18 +1,14 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod.DevExpress.ui.dxLookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `6` extends StObject {
   
-  var component: js.UndefOr[dxLookup] = js.undefined
+  var value: js.UndefOr[js.Date | Double] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.undefined
-  
-  var model: js.UndefOr[js.Any] = js.undefined
+  var valueText: js.UndefOr[String] = js.undefined
 }
 object `6` {
   
@@ -23,16 +19,12 @@ object `6` {
   
   extension [Self <: `6`](x: Self) {
     
-    inline def setComponent(value: dxLookup): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Date | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
     
-    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
     
-    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
-    
-    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
-    
-    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

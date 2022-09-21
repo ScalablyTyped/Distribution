@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PrintRanges")
 @js.native
-/* private */ class PrintRanges ()
+/* private */ open class PrintRanges ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PrintRanges {
   
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Item(Index: Double): typings.activexPowerpoint.PowerPoint.PrintRange = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.PrintRanges_typekey")

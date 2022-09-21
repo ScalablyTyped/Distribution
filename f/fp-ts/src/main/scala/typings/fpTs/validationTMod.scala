@@ -20,8 +20,8 @@ object validationTMod {
   val ^ : js.Any = js.native
   
   inline def getValidationM[E, M](S: Semigroup[E], M: Monad[M]): ValidationM[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM[M, E]]
-  inline def getValidationM[E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](S: Semigroup[E], M: Monad1[M]): ValidationM1[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM1[M, E]]
-  inline def getValidationM[E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](S: Semigroup[E], M: Monad2[M]): ValidationM2[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM2[M, E]]
+  inline def getValidationM[E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](S: Semigroup[E], M: Monad1[M]): ValidationM1[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM1[M, E]]
+  inline def getValidationM[E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](S: Semigroup[E], M: Monad2[M]): ValidationM2[M, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationM")(S.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[ValidationM2[M, E]]
   
   trait ValidationM[M, E]
     extends StObject
@@ -34,11 +34,11 @@ object validationTMod {
   object ValidationM {
     
     inline def apply[M, E](
-      alt: (ValidationT[M, E, js.Any], Lazy[ValidationT[M, E, js.Any]]) => ValidationT[M, E, js.Any],
-      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ js.Any) => js.Any,
-      chain: (ValidationT[M, E, js.Any], js.Function1[js.Any, ValidationT[M, E, js.Any]]) => ValidationT[M, E, js.Any],
-      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
-      of: js.Any => js.Any
+      alt: (ValidationT[M, E, Any], Lazy[ValidationT[M, E, Any]]) => ValidationT[M, E, Any],
+      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ Any) => Any,
+      chain: (ValidationT[M, E, Any], js.Function1[Any, ValidationT[M, E, Any]]) => ValidationT[M, E, Any],
+      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ Any, js.Function1[Any, Any]) => Any,
+      of: Any => Any
     ): ValidationM[M, E] = {
       val __obj = js.Dynamic.literal(alt = js.Any.fromFunction2(alt), ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
       __obj.asInstanceOf[ValidationM[M, E]]
@@ -46,15 +46,15 @@ object validationTMod {
     
     extension [Self <: ValidationM[?, ?], M, E](x: Self & (ValidationM[M, E])) {
       
-      inline def setAlt(value: (ValidationT[M, E, js.Any], Lazy[ValidationT[M, E, js.Any]]) => ValidationT[M, E, js.Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (ValidationT[M, E, Any], Lazy[ValidationT[M, E, Any]]) => ValidationT[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setChain(
-        value: (ValidationT[M, E, js.Any], js.Function1[js.Any, ValidationT[M, E, js.Any]]) => ValidationT[M, E, js.Any]
+        value: (ValidationT[M, E, Any], js.Function1[Any, ValidationT[M, E, Any]]) => ValidationT[M, E, Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     }
   }
   
-  trait ValidationM1[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E]
+  trait ValidationM1[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E]
     extends StObject
        with ApplicativeComposition12C[M, URI, E] {
     
@@ -64,30 +64,28 @@ object validationTMod {
   }
   object ValidationM1 {
     
-    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E](
-      alt: (ValidationT1[M, E, js.Any], Lazy[ValidationT1[M, E, js.Any]]) => ValidationT1[M, E, js.Any],
-      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, A>> */ js.Any) => js.Any,
-      chain: (ValidationT1[M, E, js.Any], js.Function1[js.Any, ValidationT1[M, E, js.Any]]) => ValidationT1[M, E, js.Any],
-      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
-      of: js.Any => js.Any
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E](
+      alt: (ValidationT1[M, E, Any], Lazy[ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any],
+      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, A>> */ Any) => Any,
+      chain: (ValidationT1[M, E, Any], js.Function1[Any, ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any],
+      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, A>> */ Any, js.Function1[Any, Any]) => Any,
+      of: Any => Any
     ): ValidationM1[M, E] = {
       val __obj = js.Dynamic.literal(alt = js.Any.fromFunction2(alt), ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
       __obj.asInstanceOf[ValidationM1[M, E]]
     }
     
-    extension [Self <: ValidationM1[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E](x: Self & (ValidationM1[M, E])) {
+    extension [Self <: ValidationM1[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E](x: Self & (ValidationM1[M, E])) {
       
-      inline def setAlt(
-        value: (ValidationT1[M, E, js.Any], Lazy[ValidationT1[M, E, js.Any]]) => ValidationT1[M, E, js.Any]
-      ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (ValidationT1[M, E, Any], Lazy[ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setChain(
-        value: (ValidationT1[M, E, js.Any], js.Function1[js.Any, ValidationT1[M, E, js.Any]]) => ValidationT1[M, E, js.Any]
+        value: (ValidationT1[M, E, Any], js.Function1[Any, ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     }
   }
   
-  trait ValidationM2[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E]
+  trait ValidationM2[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E]
     extends StObject
        with ApplicativeComposition22C[M, URI, E] {
     
@@ -97,32 +95,32 @@ object validationTMod {
   }
   object ValidationM2 {
     
-    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
-      alt: (ValidationT2[M, js.Any, E, js.Any], Lazy[ValidationT2[M, js.Any, E, js.Any]]) => ValidationT2[M, js.Any, E, js.Any],
-      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, A>> */ js.Any) => js.Any,
-      chain: (ValidationT2[M, js.Any, E, js.Any], js.Function1[js.Any, ValidationT2[M, js.Any, E, js.Any]]) => ValidationT2[M, js.Any, E, js.Any],
-      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
-      of: js.Any => js.Any
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](
+      alt: (ValidationT2[M, Any, E, Any], Lazy[ValidationT2[M, Any, E, Any]]) => ValidationT2[M, Any, E, Any],
+      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, A>> */ Any) => Any,
+      chain: (ValidationT2[M, Any, E, Any], js.Function1[Any, ValidationT2[M, Any, E, Any]]) => ValidationT2[M, Any, E, Any],
+      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, A>> */ Any, js.Function1[Any, Any]) => Any,
+      of: Any => Any
     ): ValidationM2[M, E] = {
       val __obj = js.Dynamic.literal(alt = js.Any.fromFunction2(alt), ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
       __obj.asInstanceOf[ValidationM2[M, E]]
     }
     
-    extension [Self <: ValidationM2[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (ValidationM2[M, E])) {
+    extension [Self <: ValidationM2[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (ValidationM2[M, E])) {
       
       inline def setAlt(
-        value: (ValidationT2[M, js.Any, E, js.Any], Lazy[ValidationT2[M, js.Any, E, js.Any]]) => ValidationT2[M, js.Any, E, js.Any]
+        value: (ValidationT2[M, Any, E, Any], Lazy[ValidationT2[M, Any, E, Any]]) => ValidationT2[M, Any, E, Any]
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setChain(
-        value: (ValidationT2[M, js.Any, E, js.Any], js.Function1[js.Any, ValidationT2[M, js.Any, E, js.Any]]) => ValidationT2[M, js.Any, E, js.Any]
+        value: (ValidationT2[M, Any, E, Any], js.Function1[Any, ValidationT2[M, Any, E, Any]]) => ValidationT2[M, Any, E, Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     }
   }
   
-  type ValidationT[M, E, A] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Either<E, A>> */ js.Any
+  type ValidationT[M, E, A] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, Either<E, A>> */ Any
   
-  type ValidationT1[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E, A] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Either<E, A>> */ js.Any
+  type ValidationT1[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E, A] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, Either<E, A>> */ Any
   
-  type ValidationT2[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, R, E, A] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, R, Either<E, A>> */ js.Any
+  type ValidationT2[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, R, E, A] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, R, Either<E, A>> */ Any
 }

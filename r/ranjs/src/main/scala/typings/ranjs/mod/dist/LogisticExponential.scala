@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.LogisticExponential")
 @js.native
-class LogisticExponential ()
+open class LogisticExponential ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.LogisticExponential] {
   def this(lambda: Double) = this()

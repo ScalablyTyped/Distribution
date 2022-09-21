@@ -17,6 +17,9 @@ trait GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata extends 
   
   /** Optional. The parent of the workload. */
   var parent: js.UndefOr[String] = js.undefined
+  
+  /** Optional. Resource properties in the input that are used for creating/customizing workload resources. */
+  var resourceSettings: js.UndefOr[js.Array[GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings]] = js.undefined
 }
 object GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata {
   
@@ -42,5 +45,11 @@ object GoogleCloudAssuredworkloadsV1beta1CreateWorkloadOperationMetadata {
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setResourceSettings(value: js.Array[GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings]): Self = StObject.set(x, "resourceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setResourceSettingsUndefined: Self = StObject.set(x, "resourceSettings", js.undefined)
+    
+    inline def setResourceSettingsVarargs(value: GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings*): Self = StObject.set(x, "resourceSettings", js.Array(value*))
   }
 }

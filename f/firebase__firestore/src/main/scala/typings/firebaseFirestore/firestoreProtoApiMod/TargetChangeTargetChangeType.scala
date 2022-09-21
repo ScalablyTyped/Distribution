@@ -1,8 +1,8 @@
 package typings.firebaseFirestore.firestoreProtoApiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.firebaseFirestore.firebaseFirestoreStrings.NO_CHANGE
@@ -11,18 +11,16 @@ import scala.scalajs.js.annotation._
   - typings.firebaseFirestore.firebaseFirestoreStrings.CURRENT
   - typings.firebaseFirestore.firebaseFirestoreStrings.RESET
 */
-trait TargetChangeTargetChangeType extends js.Object
-
+trait TargetChangeTargetChangeType extends StObject
 object TargetChangeTargetChangeType {
-  @scala.inline
-  def ADD: typings.firebaseFirestore.firebaseFirestoreStrings.ADD = "ADD".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.ADD]
-  @scala.inline
-  def CURRENT: typings.firebaseFirestore.firebaseFirestoreStrings.CURRENT = "CURRENT".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.CURRENT]
-  @scala.inline
-  def NO_CHANGE: typings.firebaseFirestore.firebaseFirestoreStrings.NO_CHANGE = "NO_CHANGE".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.NO_CHANGE]
-  @scala.inline
-  def REMOVE: typings.firebaseFirestore.firebaseFirestoreStrings.REMOVE = "REMOVE".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.REMOVE]
-  @scala.inline
-  def RESET: typings.firebaseFirestore.firebaseFirestoreStrings.RESET = "RESET".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.RESET]
+  
+  inline def ADD: typings.firebaseFirestore.firebaseFirestoreStrings.ADD = "ADD".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.ADD]
+  
+  inline def CURRENT: typings.firebaseFirestore.firebaseFirestoreStrings.CURRENT = "CURRENT".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.CURRENT]
+  
+  inline def NO_CHANGE: typings.firebaseFirestore.firebaseFirestoreStrings.NO_CHANGE = "NO_CHANGE".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.NO_CHANGE]
+  
+  inline def REMOVE: typings.firebaseFirestore.firebaseFirestoreStrings.REMOVE = "REMOVE".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.REMOVE]
+  
+  inline def RESET: typings.firebaseFirestore.firebaseFirestoreStrings.RESET = "RESET".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.RESET]
 }
-

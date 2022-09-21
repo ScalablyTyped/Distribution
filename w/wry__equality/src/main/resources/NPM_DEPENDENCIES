@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wry/equality" : "0.1.11"
+      "@wry/equality" : "0.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@wry/equality" : "0.1.11"
+      "@wry/equality" : "0.5.3"
     }
   ],
   "compile-devDependencies" : [

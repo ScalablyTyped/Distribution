@@ -1,0 +1,44 @@
+package typings.typescriptNn5FuAjk
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait AnalyserOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  var fftSize: js.UndefOr[Double] = js.undefined
+  
+  var maxDecibels: js.UndefOr[Double] = js.undefined
+  
+  var minDecibels: js.UndefOr[Double] = js.undefined
+  
+  var smoothingTimeConstant: js.UndefOr[Double] = js.undefined
+}
+object AnalyserOptions {
+  
+  inline def apply(): AnalyserOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[AnalyserOptions]
+  }
+  
+  extension [Self <: AnalyserOptions](x: Self) {
+    
+    inline def setFftSize(value: Double): Self = StObject.set(x, "fftSize", value.asInstanceOf[js.Any])
+    
+    inline def setFftSizeUndefined: Self = StObject.set(x, "fftSize", js.undefined)
+    
+    inline def setMaxDecibels(value: Double): Self = StObject.set(x, "maxDecibels", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDecibelsUndefined: Self = StObject.set(x, "maxDecibels", js.undefined)
+    
+    inline def setMinDecibels(value: Double): Self = StObject.set(x, "minDecibels", value.asInstanceOf[js.Any])
+    
+    inline def setMinDecibelsUndefined: Self = StObject.set(x, "minDecibels", js.undefined)
+    
+    inline def setSmoothingTimeConstant(value: Double): Self = StObject.set(x, "smoothingTimeConstant", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothingTimeConstantUndefined: Self = StObject.set(x, "smoothingTimeConstant", js.undefined)
+  }
+}

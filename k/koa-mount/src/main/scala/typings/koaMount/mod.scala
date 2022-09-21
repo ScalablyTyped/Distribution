@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply[StateT, CustomT](app: Middleware[StateT, CustomT]): Middleware[StateT, CustomT] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Middleware[StateT, CustomT]]
-  inline def apply[StateT, CustomT](app: typings.koa.mod.^[StateT, CustomT]): Middleware[StateT, CustomT] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Middleware[StateT, CustomT]]
-  inline def apply[StateT, CustomT](prefix: String, app: Middleware[StateT, CustomT]): Middleware[StateT, CustomT] = (^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Middleware[StateT, CustomT]]
-  inline def apply[StateT, CustomT](prefix: String, app: typings.koa.mod.^[StateT, CustomT]): Middleware[StateT, CustomT] = (^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Middleware[StateT, CustomT]]
+  inline def apply[StateT, ContextT](app: Middleware[StateT, ContextT, Any]): Middleware[StateT, ContextT, Any] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Middleware[StateT, ContextT, Any]]
+  inline def apply[StateT, ContextT](app: typings.koa.mod.^[StateT, ContextT]): Middleware[StateT, ContextT, Any] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Middleware[StateT, ContextT, Any]]
+  inline def apply[StateT, ContextT](prefix: String, app: Middleware[StateT, ContextT, Any]): Middleware[StateT, ContextT, Any] = (^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Middleware[StateT, ContextT, Any]]
+  inline def apply[StateT, ContextT](prefix: String, app: typings.koa.mod.^[StateT, ContextT]): Middleware[StateT, ContextT, Any] = (^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Middleware[StateT, ContextT, Any]]
   
   @JSImport("koa-mount", JSImport.Namespace)
   @js.native

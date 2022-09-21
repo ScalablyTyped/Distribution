@@ -19,7 +19,7 @@ object Components {
     */
   @JSGlobal("Phaser.GameObjects.Components.TransformMatrix")
   @js.native
-  class TransformMatrix protected ()
+  open class TransformMatrix protected ()
     extends StObject
        with typings.phaser.Phaser.GameObjects.Components.TransformMatrix {
     /**

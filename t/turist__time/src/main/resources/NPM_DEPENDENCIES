@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@turist/time" : "0.0.1"
+      "@turist/time" : "0.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@turist/time" : "0.0.1"
+      "@turist/time" : "0.0.2"
     }
   ],
   "compile-devDependencies" : [

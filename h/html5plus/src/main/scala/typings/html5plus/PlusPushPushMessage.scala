@@ -16,7 +16,7 @@ trait PlusPushPushMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var aps: js.UndefOr[js.Any] = js.undefined
+  var aps: js.UndefOr[Any] = js.undefined
   
   /**
     * 推送消息显示的内容
@@ -31,7 +31,7 @@ trait PlusPushPushMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/push.html](http://www.html5plus.org/doc/zh_cn/push.html)
     */
-  var payload: js.UndefOr[js.Any] = js.undefined
+  var payload: js.UndefOr[Any] = js.undefined
   
   /**
     * 推送消息显示的标题
@@ -49,7 +49,7 @@ object PlusPushPushMessage {
   
   extension [Self <: PlusPushPushMessage](x: Self) {
     
-    inline def setAps(value: js.Any): Self = StObject.set(x, "aps", value.asInstanceOf[js.Any])
+    inline def setAps(value: Any): Self = StObject.set(x, "aps", value.asInstanceOf[js.Any])
     
     inline def setApsUndefined: Self = StObject.set(x, "aps", js.undefined)
     
@@ -57,7 +57,7 @@ object PlusPushPushMessage {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     

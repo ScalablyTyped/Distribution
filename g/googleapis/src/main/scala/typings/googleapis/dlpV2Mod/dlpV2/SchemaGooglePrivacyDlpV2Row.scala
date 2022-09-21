@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaGooglePrivacyDlpV2Row extends StObject {
   
+  /**
+    * Individual cells.
+    */
   var values: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Row {
@@ -21,6 +24,6 @@ object SchemaGooglePrivacyDlpV2Row {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

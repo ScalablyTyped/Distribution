@@ -33,7 +33,7 @@ object svg {
       acquire: () => Unit,
       endJob: () => Unit,
       printPage: SeqEquiv[Double] => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       startJob: (XDocumentHandler, SeqEquiv[Double], String, Double, Boolean) => Boolean
     ): XSVGPrinter = {
@@ -62,7 +62,7 @@ object svg {
     
     inline def apply(
       acquire: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       write: (XDocumentHandler, SeqEquiv[Double]) => Unit
     ): XSVGWriter = {

@@ -17,7 +17,7 @@ trait Filters extends StObject {
   
   def Item(Index: Double): Filter = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: Double): Filter = js.native
 }

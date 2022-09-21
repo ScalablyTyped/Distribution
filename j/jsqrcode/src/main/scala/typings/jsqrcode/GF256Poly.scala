@@ -56,7 +56,7 @@ object GF256Poly {
     
     inline def setCoefficients(value: js.Array[Double]): Self = StObject.set(x, "Coefficients", value.asInstanceOf[js.Any])
     
-    inline def setCoefficientsVarargs(value: Double*): Self = StObject.set(x, "Coefficients", js.Array(value :_*))
+    inline def setCoefficientsVarargs(value: Double*): Self = StObject.set(x, "Coefficients", js.Array(value*))
     
     inline def setDegree(value: Double): Self = StObject.set(x, "Degree", value.asInstanceOf[js.Any])
     

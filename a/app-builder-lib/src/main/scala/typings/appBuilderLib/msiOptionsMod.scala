@@ -14,6 +14,11 @@ object msiOptionsMod {
        with TargetSpecificOptions {
     
     /**
+      * Any additional arguments to be passed to the WiX installer compiler, such as `["-ext", "WixUtilExtension"]`
+      */
+    val additionalWixArgs: js.UndefOr[js.Array[String] | Null] = js.undefined
+    
+    /**
       * The [upgrade code](https://msdn.microsoft.com/en-us/library/windows/desktop/aa372375(v=vs.85).aspx). Optional, by default generated using app id.
       */
     val upgradeCode: js.UndefOr[String | Null] = js.undefined
@@ -32,6 +37,14 @@ object msiOptionsMod {
     }
     
     extension [Self <: MsiOptions](x: Self) {
+      
+      inline def setAdditionalWixArgs(value: js.Array[String]): Self = StObject.set(x, "additionalWixArgs", value.asInstanceOf[js.Any])
+      
+      inline def setAdditionalWixArgsNull: Self = StObject.set(x, "additionalWixArgs", null)
+      
+      inline def setAdditionalWixArgsUndefined: Self = StObject.set(x, "additionalWixArgs", js.undefined)
+      
+      inline def setAdditionalWixArgsVarargs(value: String*): Self = StObject.set(x, "additionalWixArgs", js.Array(value*))
       
       inline def setUpgradeCode(value: String): Self = StObject.set(x, "upgradeCode", value.asInstanceOf[js.Any])
       

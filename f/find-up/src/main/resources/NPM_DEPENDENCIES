@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "find-up" : "5.0.0"
+      "find-up" : "6.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "find-up" : "5.0.0"
+      "find-up" : "6.3.0"
     }
   ],
   "compile-devDependencies" : [

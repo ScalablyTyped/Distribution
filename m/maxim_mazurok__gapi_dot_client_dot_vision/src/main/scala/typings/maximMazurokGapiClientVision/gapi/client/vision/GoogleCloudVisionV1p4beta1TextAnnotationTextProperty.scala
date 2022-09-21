@@ -29,6 +29,6 @@ object GoogleCloudVisionV1p4beta1TextAnnotationTextProperty {
     
     inline def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
     
-    inline def setDetectedLanguagesVarargs(value: GoogleCloudVisionV1p4beta1TextAnnotationDetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
+    inline def setDetectedLanguagesVarargs(value: GoogleCloudVisionV1p4beta1TextAnnotationDetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value*))
   }
 }

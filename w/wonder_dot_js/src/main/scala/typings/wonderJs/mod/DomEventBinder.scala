@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "DomEventBinder")
 @js.native
-class DomEventBinder ()
+open class DomEventBinder ()
   extends typings.wonderJs.domEventBinderMod.DomEventBinder
 /* static members */
 object DomEventBinder {
@@ -15,5 +15,5 @@ object DomEventBinder {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+  inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
 }

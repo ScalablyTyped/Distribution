@@ -1,23 +1,35 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.gradient
-import typings.devextreme.devextremeStrings.none
-import typings.devextreme.devextremeStrings.source
-import typings.devextreme.devextremeStrings.target
+import typings.devextreme.mod.DevExpress.viz.dxSankey.SankeyColorMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ColorMode extends StObject {
   
+  /**
+    * Configures the links&apos; borders.
+    */
   var border: js.UndefOr[ColorVisible] = js.undefined
   
+  /**
+    * Colors the sankey links. Applies only if colorMode is &apos;none&apos;.
+    */
   var color: js.UndefOr[String] = js.undefined
   
-  var colorMode: js.UndefOr[none | source | target | gradient] = js.undefined
+  /**
+    * Specifies how to color links.
+    */
+  var colorMode: js.UndefOr[SankeyColorMode] = js.undefined
   
+  /**
+    * Configures the appearance a link changes to when it is hovered over or pressed.
+    */
   var hoverStyle: js.UndefOr[ColorHatching] = js.undefined
   
+  /**
+    * Specifies the links&apos; transparency.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
 }
 object ColorMode {
@@ -35,7 +47,7 @@ object ColorMode {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColorMode(value: none | source | target | gradient): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
+    inline def setColorMode(value: SankeyColorMode): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
     
     inline def setColorModeUndefined: Self = StObject.set(x, "colorMode", js.undefined)
     

@@ -24,6 +24,6 @@ object CreateLoadBalancerOutput {
     
     inline def setLoadBalancersUndefined: Self = StObject.set(x, "LoadBalancers", js.undefined)
     
-    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "LoadBalancers", js.Array(value :_*))
+    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "LoadBalancers", js.Array(value*))
   }
 }

@@ -22,7 +22,7 @@ object currencyMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize/currency", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with Shared {
     /**

@@ -22,7 +22,7 @@ object AnyCompareFactory {
     acquire: () => Unit,
     createAnyCompareByName: String => XAnyCompare,
     createWithLocale: Locale => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): AnyCompareFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createAnyCompareByName = js.Any.fromFunction1(createAnyCompareByName), createWithLocale = js.Any.fromFunction1(createWithLocale), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

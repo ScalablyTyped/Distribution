@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RightsizingRecommendationSummary extends StObject {
   
   /**
-    *  Estimated total savings resulting from modifications, on a monthly basis.
+    * The estimated total savings resulting from modifications, on a monthly basis.
     */
   var EstimatedTotalMonthlySavingsAmount: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The currency code that AWS used to calculate the savings.
+    * The currency code that Amazon Web Services used to calculate the savings.
     */
   var SavingsCurrencyCode: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Savings percentage based on the recommended modifications, relative to the total On-Demand costs associated with these instances.
+    *  The savings percentage based on the recommended modifications. It's relative to the total On-Demand costs that are associated with these instances.
     */
   var SavingsPercentage: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Total number of instance recommendations.
+    * The total number of instance recommendations.
     */
   var TotalRecommendationCount: js.UndefOr[GenericString] = js.undefined
 }

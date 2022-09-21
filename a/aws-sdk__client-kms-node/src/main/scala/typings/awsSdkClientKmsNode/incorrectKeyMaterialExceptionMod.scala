@@ -8,5 +8,5 @@ object incorrectKeyMaterialExceptionMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/IncorrectKeyMaterialException", "IncorrectKeyMaterialException")
   @js.native
-  val IncorrectKeyMaterialException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val IncorrectKeyMaterialException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

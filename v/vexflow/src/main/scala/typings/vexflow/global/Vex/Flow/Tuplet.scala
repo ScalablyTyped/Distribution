@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.Tuplet")
 @js.native
-class Tuplet protected ()
+open class Tuplet protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Tuplet {
   def this(notes: js.Array[typings.vexflow.Vex.Flow.StaveNote]) = this()

@@ -24,6 +24,6 @@ object JobNodeDetails {
     
     inline def setJobRunsUndefined: Self = StObject.set(x, "JobRuns", js.undefined)
     
-    inline def setJobRunsVarargs(value: JobRun*): Self = StObject.set(x, "JobRuns", js.Array(value :_*))
+    inline def setJobRunsVarargs(value: JobRun*): Self = StObject.set(x, "JobRuns", js.Array(value*))
   }
 }

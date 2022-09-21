@@ -1,5 +1,11 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
+import typings.activexLibreoffice.LibreOffice.SeqEquiv
+import typings.activexLibreoffice.com_.sun.star.awt.Point
+import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
+import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+import typings.activexLibreoffice.com_.sun.star.frame.XDispatchProvider
+import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * this service provides the properties to describe a background filling for a drawing page. It can be obtained by the {@link
   * com.sun.star.lang.XMultiServiceFactory} of a document and be set on draw pages that support a filled background.
   */
-type Background = typings.activexLibreoffice.com_.sun.star.drawing.FillProperties
+type Background = FillProperties
 
 /**
   * this is a container for URLs to bitmaps.
@@ -18,14 +24,14 @@ type Background = typings.activexLibreoffice.com_.sun.star.drawing.FillPropertie
   * @see DrawingDocumentFactory
   * @see FillStyle.FillBitmapURL
   */
-type BitmapTable = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+type BitmapTable = XNameContainer
 
 /** @since LibreOffice 4.1 */
-type ColorTable = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+type ColorTable = XNameContainer
 
-type CoordinateSequence = typings.activexLibreoffice.LibreOffice.SeqEquiv[scala.Double]
+type CoordinateSequence = SeqEquiv[Double]
 
-type CoordinateSequenceSequence = typings.activexLibreoffice.LibreOffice.SeqEquiv[typings.activexLibreoffice.com_.sun.star.drawing.CoordinateSequence]
+type CoordinateSequenceSequence = SeqEquiv[CoordinateSequence]
 
 /**
   * this is a container for LineDashs
@@ -34,21 +40,21 @@ type CoordinateSequenceSequence = typings.activexLibreoffice.LibreOffice.SeqEqui
   * @see DrawingDocumentFactory
   * @see LineDash
   */
-type DashTable = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+type DashTable = XNameContainer
 
-type DoubleSequence = typings.activexLibreoffice.LibreOffice.SeqEquiv[scala.Double]
+type DoubleSequence = SeqEquiv[Double]
 
-type DoubleSequenceSequence = typings.activexLibreoffice.LibreOffice.SeqEquiv[typings.activexLibreoffice.com_.sun.star.drawing.DoubleSequence]
+type DoubleSequenceSequence = SeqEquiv[DoubleSequence]
 
 /** specifies a document which consists of multiple pages with drawings. */
-type DrawingDocument = typings.activexLibreoffice.com_.sun.star.drawing.GenericDrawingDocument
+type DrawingDocument = GenericDrawingDocument
 
 /** @deprecated DeprecatedPleas use the factory interface of the service GenericDrawingDocument. */
-type DrawingDocumentFactory = typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
+type DrawingDocumentFactory = XMultiServiceFactory
 
-type FlagSequence = typings.activexLibreoffice.LibreOffice.SeqEquiv[typings.activexLibreoffice.com_.sun.star.drawing.PolygonFlags]
+type FlagSequence = SeqEquiv[PolygonFlags]
 
-type FlagSequenceSequence = typings.activexLibreoffice.LibreOffice.SeqEquiv[typings.activexLibreoffice.com_.sun.star.drawing.FlagSequence]
+type FlagSequenceSequence = SeqEquiv[FlagSequence]
 
 /**
   * this is a container for com::sun::star::awt::Gradients
@@ -57,13 +63,13 @@ type FlagSequenceSequence = typings.activexLibreoffice.LibreOffice.SeqEquiv[typi
   * @see DrawingDocumentFactory
   * @see com.sun.star.awt.Gradient
   */
-type GradientTable = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+type GradientTable = XNameContainer
 
 /**
   * a component that supports this service lets you export pages, shapes, or groups of shapes from a {@link DrawingDocument} to a file in one of the file
   * formats supported by the component.
   */
-type GraphicExportFilter = typings.activexLibreoffice.com_.sun.star.drawing.XGraphicExportFilter
+type GraphicExportFilter = XGraphicExportFilter
 
 /**
   * this is a container for Hatchs
@@ -72,7 +78,7 @@ type GraphicExportFilter = typings.activexLibreoffice.com_.sun.star.drawing.XGra
   * @see DrawingDocumentFactory
   * @see Hatch
   */
-type HatchTable = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+type HatchTable = XNameContainer
 
 /**
   * this is a container for PointSequences
@@ -81,7 +87,7 @@ type HatchTable = typings.activexLibreoffice.com_.sun.star.container.XNameContai
   * @see DrawingDocumentFactory
   * @see PointSequence
   */
-type MarkerTable = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+type MarkerTable = XNameContainer
 
 /**
   * This service is a single master page inside a drawing document.
@@ -92,21 +98,21 @@ type MarkerTable = typings.activexLibreoffice.com_.sun.star.container.XNameConta
   *  1. It is not linked to any other {@link MasterPage} . 2. It cannot be removed from a document as long as one or more instances of {@link DrawPage}
   * are linked to it. 3. Modifications to a {@link MasterPage} are instantly visible on every {@link DrawPage} that is linked to it.
   */
-type MasterPage = typings.activexLibreoffice.com_.sun.star.drawing.GenericDrawPage
+type MasterPage = GenericDrawPage
 
 /**
   * provides access to a container of {@link MasterPages} and makes it possible for them to be manipulated.
   * @see XMasterPagesSupplier
   * @see DrawingDocument
   */
-type MasterPages = typings.activexLibreoffice.com_.sun.star.drawing.XDrawPages
+type MasterPages = XDrawPages
 
 /** @since LibreOffice 4.1 */
-type ModuleDispatcher = typings.activexLibreoffice.com_.sun.star.frame.XDispatchProvider
+type ModuleDispatcher = XDispatchProvider
 
-type PointSequence = typings.activexLibreoffice.LibreOffice.SeqEquiv[typings.activexLibreoffice.com_.sun.star.awt.Point]
+type PointSequence = SeqEquiv[Point]
 
-type PointSequenceSequence = typings.activexLibreoffice.LibreOffice.SeqEquiv[typings.activexLibreoffice.com_.sun.star.drawing.PointSequence]
+type PointSequenceSequence = SeqEquiv[PointSequence]
 
 /**
   * This service describes a generic container to manage collections of {@link Shape} . The {@link Shape} that are added to this collection are not owned
@@ -114,10 +120,10 @@ type PointSequenceSequence = typings.activexLibreoffice.LibreOffice.SeqEquiv[typ
   *
   * This service is used by the view f.e. to return a collection of {@link Shape} that are selected at the ui.
   */
-type ShapeCollection = typings.activexLibreoffice.com_.sun.star.drawing.XShapes
+type ShapeCollection = XShapes
 
 /** This service is for a generic collection of shapes. */
-type Shapes = typings.activexLibreoffice.com_.sun.star.drawing.XShapes
+type Shapes = XShapes
 
 /**
   * this is a container for com::sun::star::awt::Gradients
@@ -126,10 +132,10 @@ type Shapes = typings.activexLibreoffice.com_.sun.star.drawing.XShapes
   * @see DrawingDocumentFactory
   * @see com.sun.star.awt.Gradient
   */
-type TransparencyGradientTable = typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+type TransparencyGradientTable = XNameContainer
 
 /** identifies an {@link XShapes} as a {@link DrawPage} . */
-type XDrawPage = typings.activexLibreoffice.com_.sun.star.drawing.XShapes
+type XDrawPage = XShapes
 
 /** identifies the object as a {@link Layer} . */
-type XLayer = typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
+type XLayer = XPropertySet

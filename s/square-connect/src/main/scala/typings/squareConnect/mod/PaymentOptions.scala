@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "PaymentOptions")
 @js.native
-class PaymentOptions () extends StObject {
+open class PaymentOptions () extends StObject {
   
   /**
     * Indicates whether the Payment objects created from this `TerminalCheckout` will automatically be `COMPLETED`

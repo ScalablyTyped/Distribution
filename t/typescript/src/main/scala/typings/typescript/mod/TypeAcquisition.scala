@@ -48,12 +48,12 @@ object TypeAcquisition {
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: java.lang.String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: java.lang.String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setInclude(value: js.Array[java.lang.String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: java.lang.String*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: java.lang.String*): Self = StObject.set(x, "include", js.Array(value*))
   }
 }

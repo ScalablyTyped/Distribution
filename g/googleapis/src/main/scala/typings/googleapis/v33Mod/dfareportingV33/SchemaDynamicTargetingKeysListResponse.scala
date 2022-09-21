@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Dynamic Targeting Key List Response
-  */
 trait SchemaDynamicTargetingKeysListResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaDynamicTargetingKeysListResponse extends StObject {
   var dynamicTargetingKeys: js.UndefOr[js.Array[SchemaDynamicTargetingKey]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#dynamicTargetingKeysListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#dynamicTargetingKeysListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDynamicTargetingKeysListResponse {
   
@@ -33,9 +29,11 @@ object SchemaDynamicTargetingKeysListResponse {
     
     inline def setDynamicTargetingKeysUndefined: Self = StObject.set(x, "dynamicTargetingKeys", js.undefined)
     
-    inline def setDynamicTargetingKeysVarargs(value: SchemaDynamicTargetingKey*): Self = StObject.set(x, "dynamicTargetingKeys", js.Array(value :_*))
+    inline def setDynamicTargetingKeysVarargs(value: SchemaDynamicTargetingKey*): Self = StObject.set(x, "dynamicTargetingKeys", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

@@ -28,7 +28,7 @@ trait OauthtokenParent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Resource name of the parent Service. The format is: projects/[PROJECT_ID_OR_NUMBER]/services/[SERVICE_ID] */
+  /** Required. Resource name (https://cloud.google.com/monitoring/api/v3#project_name) of the parent Metrics Scope. The format is: projects/[PROJECT_ID_OR_NUMBER] */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -37,8 +37,8 @@ trait OauthtokenParent extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Optional. The ServiceLevelObjective id to use for this ServiceLevelObjective. If omitted, an id will be generated instead. Must match the pattern [a-z0-9\-]+ */
-  var serviceLevelObjectiveId: js.UndefOr[String] = js.undefined
+  /** Optional. The Service id to use for this Service. If omitted, an id will be generated instead. Must match the pattern [a-z0-9\-]+ */
+  var serviceId: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -93,9 +93,9 @@ object OauthtokenParent {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setServiceLevelObjectiveId(value: String): Self = StObject.set(x, "serviceLevelObjectiveId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    inline def setServiceLevelObjectiveIdUndefined: Self = StObject.set(x, "serviceLevelObjectiveId", js.undefined)
+    inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

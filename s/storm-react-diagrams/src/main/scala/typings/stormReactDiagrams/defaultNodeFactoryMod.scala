@@ -10,5 +10,5 @@ object defaultNodeFactoryMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/factories/DefaultNodeFactory", "DefaultNodeFactory")
   @js.native
-  class DefaultNodeFactory () extends AbstractNodeFactory[DefaultNodeModel]
+  open class DefaultNodeFactory () extends AbstractNodeFactory[DefaultNodeModel]
 }

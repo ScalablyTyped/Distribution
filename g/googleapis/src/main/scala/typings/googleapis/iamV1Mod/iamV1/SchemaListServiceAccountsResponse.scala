@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The service account list response.
-  */
 trait SchemaListServiceAccountsResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaListServiceAccountsResponse extends StObject {
   var accounts: js.UndefOr[js.Array[SchemaServiceAccount]] = js.undefined
   
   /**
-    * To retrieve the next page of results, set
-    * ListServiceAccountsRequest.page_token to this value.
+    * To retrieve the next page of results, set ListServiceAccountsRequest.page_token to this value.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListServiceAccountsResponse {
   
@@ -33,9 +29,11 @@ object SchemaListServiceAccountsResponse {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: SchemaServiceAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: SchemaServiceAccount*): Self = StObject.set(x, "accounts", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

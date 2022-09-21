@@ -10,10 +10,10 @@ Wraps FS methods using Promise
 | ------------------ | :-------------: |
 | Full name          | promise-fs |
 | Keywords           | promise, promisify, fs |
-| # releases         | 3 |
-| # dependents       | 36 |
-| # downloads        | 3164268 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 319001.6666666667 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/octet-stream/promise-fs#readme)

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("synaptic", "Trainer")
 @js.native
-class Trainer protected () extends StObject {
+open class Trainer protected () extends StObject {
   /**
     * The Trainer makes it easier to train any set to any network, no matter its architecture. The trainer also contains built-in tasks to test the performance of your network.
     * @param network
@@ -51,7 +51,7 @@ class Trainer protected () extends StObject {
     * This test challenges the network to complete a timing task.
     */
   def timingTask(): Test = js.native
-  def timingTask(options: js.Any): Test = js.native
+  def timingTask(options: Any): Test = js.native
   
   /**
     * This method allows you to train any training set to a Network.
@@ -125,7 +125,7 @@ object Trainer {
       
       inline def setDistractorsUndefined: Self = StObject.set(x, "distractors", js.undefined)
       
-      inline def setDistractorsVarargs(value: Double*): Self = StObject.set(x, "distractors", js.Array(value :_*))
+      inline def setDistractorsVarargs(value: Double*): Self = StObject.set(x, "distractors", js.Array(value*))
       
       inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
@@ -143,7 +143,7 @@ object Trainer {
       
       inline def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
       
-      inline def setPromptsVarargs(value: Double*): Self = StObject.set(x, "prompts", js.Array(value :_*))
+      inline def setPromptsVarargs(value: Double*): Self = StObject.set(x, "prompts", js.Array(value*))
       
       inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
@@ -161,7 +161,7 @@ object Trainer {
       
       inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      inline def setTargetsVarargs(value: Double*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Double*): Self = StObject.set(x, "targets", js.Array(value*))
     }
   }
   
@@ -171,13 +171,13 @@ object Trainer {
     
     var iterations: Double
     
-    var success: js.Any
+    var success: Any
     
     var time: Double
   }
   object DSRTrainingResult {
     
-    inline def apply(error: Double, iterations: Double, success: js.Any, time: Double): DSRTrainingResult = {
+    inline def apply(error: Double, iterations: Double, success: Any, time: Double): DSRTrainingResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[DSRTrainingResult]
     }
@@ -188,7 +188,7 @@ object Trainer {
       
       inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      inline def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
@@ -241,17 +241,17 @@ object Trainer {
     
     var error: Double
     
-    var generate: js.Any
+    var generate: Any
     
     var iterations: Double
     
-    var test: js.Any
+    var test: Any
     
     var time: Double
   }
   object ERGTrainingResult {
     
-    inline def apply(error: Double, generate: js.Any, iterations: Double, test: js.Any, time: Double): ERGTrainingResult = {
+    inline def apply(error: Double, generate: Any, iterations: Double, test: Any, time: Double): ERGTrainingResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], generate = generate.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[ERGTrainingResult]
     }
@@ -260,11 +260,11 @@ object Trainer {
       
       inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setGenerate(value: js.Any): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
+      inline def setGenerate(value: Any): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
       
       inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      inline def setTest(value: js.Any): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Any): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
@@ -342,7 +342,7 @@ object Trainer {
       
       inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      inline def setRateVarargs(value: Double*): Self = StObject.set(x, "rate", js.Array(value :_*))
+      inline def setRateVarargs(value: Double*): Self = StObject.set(x, "rate", js.Array(value*))
       
       inline def setSchedule(value: TrainingScheduleOptions): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
@@ -371,11 +371,11 @@ object Trainer {
       
       inline def setInput(value: js.Array[Double]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      inline def setInputVarargs(value: Double*): Self = StObject.set(x, "input", js.Array(value :_*))
+      inline def setInputVarargs(value: Double*): Self = StObject.set(x, "input", js.Array(value*))
       
       inline def setOutput(value: js.Array[Double]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      inline def setOutputVarargs(value: Double*): Self = StObject.set(x, "output", js.Array(value :_*))
+      inline def setOutputVarargs(value: Double*): Self = StObject.set(x, "output", js.Array(value*))
     }
   }
   
@@ -406,29 +406,29 @@ object Trainer {
   
   trait TrainingScheduleDoData extends StObject {
     
-    var error: js.Any
+    var error: Any
     
-    var iterations: js.Any
+    var iterations: Any
     
     /**
       * The current learning rate.
       */
-    var rate: js.Any
+    var rate: Any
   }
   object TrainingScheduleDoData {
     
-    inline def apply(error: js.Any, iterations: js.Any, rate: js.Any): TrainingScheduleDoData = {
+    inline def apply(error: Any, iterations: Any, rate: Any): TrainingScheduleDoData = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], rate = rate.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrainingScheduleDoData]
     }
     
     extension [Self <: TrainingScheduleDoData](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setIterations(value: js.Any): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Any): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      inline def setRate(value: js.Any): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Any): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     }
   }
   

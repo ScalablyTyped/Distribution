@@ -8,8 +8,22 @@ trait EducationClass
   extends StObject
      with Entity {
   
+  // All categories associated with this class. Nullable.
+  var assignmentCategories: js.UndefOr[NullableOption[js.Array[EducationCategory]]] = js.undefined
+  
+  // Specifies class-level defaults respected by new assignments created in the class.
+  var assignmentDefaults: js.UndefOr[NullableOption[EducationAssignmentDefaults]] = js.undefined
+  
+  // Specifies class-level assignments settings.
+  var assignmentSettings: js.UndefOr[NullableOption[EducationAssignmentSettings]] = js.undefined
+  
+  // All assignments associated with this class. Nullable.
+  var assignments: js.UndefOr[NullableOption[js.Array[EducationAssignment]]] = js.undefined
+  
   // Class code used by the school to identify the class.
   var classCode: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var course: js.UndefOr[NullableOption[EducationCourse]] = js.undefined
   
   // Entity who created the class
   var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
@@ -26,10 +40,16 @@ trait EducationClass
   // Name of the class in the syncing system.
   var externalName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // How this class was created. The possible values are: sis, manual, unknownFutureValue.
+  // How this class was created. Possible values are: sis, manual.
   var externalSource: js.UndefOr[NullableOption[EducationExternalSource]] = js.undefined
   
-  // The directory group corresponding to this class.
+  // The name of the external source this resources was generated from.
+  var externalSourceDetail: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // Grade level of the class.
+  var grade: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The underlying Microsoft 365 group object.
   var group: js.UndefOr[NullableOption[Group]] = js.undefined
   
   // Mail name for sending email to all members, if this is enabled.
@@ -56,11 +76,45 @@ object EducationClass {
   
   extension [Self <: EducationClass](x: Self) {
     
+    inline def setAssignmentCategories(value: NullableOption[js.Array[EducationCategory]]): Self = StObject.set(x, "assignmentCategories", value.asInstanceOf[js.Any])
+    
+    inline def setAssignmentCategoriesNull: Self = StObject.set(x, "assignmentCategories", null)
+    
+    inline def setAssignmentCategoriesUndefined: Self = StObject.set(x, "assignmentCategories", js.undefined)
+    
+    inline def setAssignmentCategoriesVarargs(value: EducationCategory*): Self = StObject.set(x, "assignmentCategories", js.Array(value*))
+    
+    inline def setAssignmentDefaults(value: NullableOption[EducationAssignmentDefaults]): Self = StObject.set(x, "assignmentDefaults", value.asInstanceOf[js.Any])
+    
+    inline def setAssignmentDefaultsNull: Self = StObject.set(x, "assignmentDefaults", null)
+    
+    inline def setAssignmentDefaultsUndefined: Self = StObject.set(x, "assignmentDefaults", js.undefined)
+    
+    inline def setAssignmentSettings(value: NullableOption[EducationAssignmentSettings]): Self = StObject.set(x, "assignmentSettings", value.asInstanceOf[js.Any])
+    
+    inline def setAssignmentSettingsNull: Self = StObject.set(x, "assignmentSettings", null)
+    
+    inline def setAssignmentSettingsUndefined: Self = StObject.set(x, "assignmentSettings", js.undefined)
+    
+    inline def setAssignments(value: NullableOption[js.Array[EducationAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    
+    inline def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
+    
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    
+    inline def setAssignmentsVarargs(value: EducationAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
+    
     inline def setClassCode(value: NullableOption[String]): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
     
     inline def setClassCodeNull: Self = StObject.set(x, "classCode", null)
     
     inline def setClassCodeUndefined: Self = StObject.set(x, "classCode", js.undefined)
+    
+    inline def setCourse(value: NullableOption[EducationCourse]): Self = StObject.set(x, "course", value.asInstanceOf[js.Any])
+    
+    inline def setCourseNull: Self = StObject.set(x, "course", null)
+    
+    inline def setCourseUndefined: Self = StObject.set(x, "course", js.undefined)
     
     inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
@@ -92,9 +146,21 @@ object EducationClass {
     
     inline def setExternalSource(value: NullableOption[EducationExternalSource]): Self = StObject.set(x, "externalSource", value.asInstanceOf[js.Any])
     
+    inline def setExternalSourceDetail(value: NullableOption[String]): Self = StObject.set(x, "externalSourceDetail", value.asInstanceOf[js.Any])
+    
+    inline def setExternalSourceDetailNull: Self = StObject.set(x, "externalSourceDetail", null)
+    
+    inline def setExternalSourceDetailUndefined: Self = StObject.set(x, "externalSourceDetail", js.undefined)
+    
     inline def setExternalSourceNull: Self = StObject.set(x, "externalSource", null)
     
     inline def setExternalSourceUndefined: Self = StObject.set(x, "externalSource", js.undefined)
+    
+    inline def setGrade(value: NullableOption[String]): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
+    
+    inline def setGradeNull: Self = StObject.set(x, "grade", null)
+    
+    inline def setGradeUndefined: Self = StObject.set(x, "grade", js.undefined)
     
     inline def setGroup(value: NullableOption[Group]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
@@ -112,7 +178,7 @@ object EducationClass {
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: EducationUser*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: EducationUser*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setSchools(value: NullableOption[js.Array[EducationSchool]]): Self = StObject.set(x, "schools", value.asInstanceOf[js.Any])
     
@@ -120,7 +186,7 @@ object EducationClass {
     
     inline def setSchoolsUndefined: Self = StObject.set(x, "schools", js.undefined)
     
-    inline def setSchoolsVarargs(value: EducationSchool*): Self = StObject.set(x, "schools", js.Array(value :_*))
+    inline def setSchoolsVarargs(value: EducationSchool*): Self = StObject.set(x, "schools", js.Array(value*))
     
     inline def setTeachers(value: NullableOption[js.Array[EducationUser]]): Self = StObject.set(x, "teachers", value.asInstanceOf[js.Any])
     
@@ -128,7 +194,7 @@ object EducationClass {
     
     inline def setTeachersUndefined: Self = StObject.set(x, "teachers", js.undefined)
     
-    inline def setTeachersVarargs(value: EducationUser*): Self = StObject.set(x, "teachers", js.Array(value :_*))
+    inline def setTeachersVarargs(value: EducationUser*): Self = StObject.set(x, "teachers", js.Array(value*))
     
     inline def setTerm(value: NullableOption[EducationTerm]): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     

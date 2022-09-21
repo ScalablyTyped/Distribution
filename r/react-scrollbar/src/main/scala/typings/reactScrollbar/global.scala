@@ -8,6 +8,6 @@ object global {
   
   @JSGlobal("ScrollArea")
   @js.native
-  class ScrollArea ()
+  open class ScrollArea ()
     extends typings.reactScrollbar.ScrollArea
 }

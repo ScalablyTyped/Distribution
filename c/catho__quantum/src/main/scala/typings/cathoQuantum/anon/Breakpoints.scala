@@ -12,7 +12,7 @@ trait Breakpoints extends StObject {
   
   var colors: js.UndefOr[js.Object] = js.undefined
   
-  var components: js.UndefOr[ButtonObject] = js.undefined
+  var components: js.UndefOr[`0`] = js.undefined
   
   var spacing: js.UndefOr[js.Object] = js.undefined
 }
@@ -37,7 +37,7 @@ object Breakpoints {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setComponents(value: ButtonObject): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: `0`): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     

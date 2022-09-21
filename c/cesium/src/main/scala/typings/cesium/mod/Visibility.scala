@@ -13,21 +13,30 @@ object Visibility extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Visibility & Double] = js.native
   
+  /**
+    * Represents that an object is visible in its entirety.
+    */
   @js.native
   sealed trait FULL
     extends StObject
        with Visibility
-  /* 2 */ val FULL: typings.cesium.mod.Visibility.FULL & Double = js.native
+  /* 1 */ val FULL: typings.cesium.mod.Visibility.FULL & Double = js.native
   
+  /**
+    * Represents that no part of an object is visible.
+    */
   @js.native
   sealed trait NONE
     extends StObject
        with Visibility
-  /* 0 */ val NONE: typings.cesium.mod.Visibility.NONE & Double = js.native
+  /* -1 */ val NONE: typings.cesium.mod.Visibility.NONE & Double = js.native
   
+  /**
+    * Represents that part, but not all, of an object is visible
+    */
   @js.native
   sealed trait PARTIAL
     extends StObject
        with Visibility
-  /* 1 */ val PARTIAL: typings.cesium.mod.Visibility.PARTIAL & Double = js.native
+  /* 0 */ val PARTIAL: typings.cesium.mod.Visibility.PARTIAL & Double = js.native
 }

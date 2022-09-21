@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-weui", "TabBody")
 @js.native
-class TabBody protected () extends StObject {
-  def this(args: js.Any*) = this()
+open class TabBody protected () extends StObject {
+  def this(args: Any*) = this()
   
-  def render(): js.Any = js.native
+  def render(): Any = js.native
 }

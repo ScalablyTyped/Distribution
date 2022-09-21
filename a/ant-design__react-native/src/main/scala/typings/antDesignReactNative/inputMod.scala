@@ -10,13 +10,12 @@ object inputMod {
   
   @JSImport("@ant-design/react-native/lib/input-item/Input", JSImport.Default)
   @js.native
-  class default protected () extends Input {
+  open class default protected () extends Input {
     def this(props: TextInputProps) = this()
   }
   
   @js.native
-  trait Input
-    extends Component[TextInputProps, js.Any, js.Any] {
+  trait Input extends Component[TextInputProps, Any, Any] {
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MInput(nextProps: TextInputProps): Unit = js.native

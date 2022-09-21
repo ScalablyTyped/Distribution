@@ -8,7 +8,7 @@ object labelMod {
   
   @JSImport("amcharts/Label", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Label {
     

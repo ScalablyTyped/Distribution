@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ErrorObject extends StObject {
   
-  val ConditionName: js.Any
+  val ConditionName: Any
   
   var DetailedErrorMessage: String
   
@@ -25,7 +25,7 @@ trait ErrorObject extends StObject {
 object ErrorObject {
   
   inline def apply(
-    ConditionName: js.Any,
+    ConditionName: Any,
     DetailedErrorMessage: String,
     ErrorCode: Double,
     InfoPathDotErrorObject_typekey: ErrorObject,
@@ -40,7 +40,7 @@ object ErrorObject {
   
   extension [Self <: ErrorObject](x: Self) {
     
-    inline def setConditionName(value: js.Any): Self = StObject.set(x, "ConditionName", value.asInstanceOf[js.Any])
+    inline def setConditionName(value: Any): Self = StObject.set(x, "ConditionName", value.asInstanceOf[js.Any])
     
     inline def setDetailedErrorMessage(value: String): Self = StObject.set(x, "DetailedErrorMessage", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,9 @@ object InternalTextureSource extends StObject {
   
   /* 13 */ val CubeRawRGBD: typings.babylonjs.internalTextureMod.InternalTextureSource.CubeRawRGBD & Double = js.native
   
-  /* 12 */ val Depth: typings.babylonjs.internalTextureMod.InternalTextureSource.Depth & Double = js.native
+  /* 14 */ val Depth: typings.babylonjs.internalTextureMod.InternalTextureSource.Depth & Double = js.native
+  
+  /* 12 */ val DepthStencil: typings.babylonjs.internalTextureMod.InternalTextureSource.DepthStencil & Double = js.native
   
   /* 4 */ val Dynamic: typings.babylonjs.internalTextureMod.InternalTextureSource.Dynamic & Double = js.native
   

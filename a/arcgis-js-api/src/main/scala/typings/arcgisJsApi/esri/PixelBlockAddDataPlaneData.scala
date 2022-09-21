@@ -22,7 +22,7 @@ trait PixelBlockAddDataPlaneData
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#addData)
     */
-  var statistics: js.Array[js.Any]
+  var statistics: js.Array[Any]
 }
 object PixelBlockAddDataPlaneData {
   
@@ -31,7 +31,7 @@ object PixelBlockAddDataPlaneData {
     hasOwnProperty: PropertyKey => Boolean,
     pixels: js.Array[js.Array[Double]],
     propertyIsEnumerable: PropertyKey => Boolean,
-    statistics: js.Array[js.Any]
+    statistics: js.Array[Any]
   ): PixelBlockAddDataPlaneData = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pixels = pixels.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), statistics = statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[PixelBlockAddDataPlaneData]
@@ -41,10 +41,10 @@ object PixelBlockAddDataPlaneData {
     
     inline def setPixels(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
     
-    inline def setPixelsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "pixels", js.Array(value :_*))
+    inline def setPixelsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "pixels", js.Array(value*))
     
-    inline def setStatistics(value: js.Array[js.Any]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: js.Array[Any]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    inline def setStatisticsVarargs(value: js.Any*): Self = StObject.set(x, "statistics", js.Array(value :_*))
+    inline def setStatisticsVarargs(value: Any*): Self = StObject.set(x, "statistics", js.Array(value*))
   }
 }

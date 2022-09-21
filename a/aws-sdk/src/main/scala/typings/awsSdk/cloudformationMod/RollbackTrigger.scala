@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RollbackTrigger extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the rollback trigger. If a specified trigger is missing, the entire stack operation fails and is rolled back. 
+    * The Amazon Resource Name (ARN) of the rollback trigger. If a specified trigger is missing, the entire stack operation fails and is rolled back.
     */
   var Arn: typings.awsSdk.cloudformationMod.Arn
   
   /**
-    * The resource type of the rollback trigger. Currently, AWS::CloudWatch::Alarm is the only supported resource type.
+    * The resource type of the rollback trigger. Specify either AWS::CloudWatch::Alarm or AWS::CloudWatch::CompositeAlarm resource types.
     */
   var Type: typings.awsSdk.cloudformationMod.Type
 }

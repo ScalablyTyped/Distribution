@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__table
 
-Typings are for version 2.4.3
+Typings are for version 5.1.4
 
 ## Library description:
 Create responsive data tables and accessible fixed tables
@@ -10,10 +10,10 @@ Create responsive data tables and accessible fixed tables
 | ------------------ | :-------------: |
 | Full name          | @react-md/table |
 | Keywords           | accessibility, a11y, react-md, material design, react, table, component, components |
-| # releases         | 42 |
-| # dependents       | 1 |
-| # downloads        | 17615 |
-| # stars            | 0 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 4764.333333333333 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/table/demos)

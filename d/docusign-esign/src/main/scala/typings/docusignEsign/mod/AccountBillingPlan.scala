@@ -152,7 +152,7 @@ object AccountBillingPlan {
     
     inline def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
-    inline def setAddOnsVarargs(value: AddOn*): Self = StObject.set(x, "addOns", js.Array(value :_*))
+    inline def setAddOnsVarargs(value: AddOn*): Self = StObject.set(x, "addOns", js.Array(value*))
     
     inline def setCanCancelRenewal(value: String): Self = StObject.set(x, "canCancelRenewal", value.asInstanceOf[js.Any])
     
@@ -210,7 +210,7 @@ object AccountBillingPlan {
     
     inline def setPlanFeatureSetsUndefined: Self = StObject.set(x, "planFeatureSets", js.undefined)
     
-    inline def setPlanFeatureSetsVarargs(value: FeatureSet*): Self = StObject.set(x, "planFeatureSets", js.Array(value :_*))
+    inline def setPlanFeatureSetsVarargs(value: FeatureSet*): Self = StObject.set(x, "planFeatureSets", js.Array(value*))
     
     inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
@@ -228,7 +228,7 @@ object AccountBillingPlan {
     
     inline def setSeatDiscountsUndefined: Self = StObject.set(x, "seatDiscounts", js.undefined)
     
-    inline def setSeatDiscountsVarargs(value: SeatDiscount*): Self = StObject.set(x, "seatDiscounts", js.Array(value :_*))
+    inline def setSeatDiscountsVarargs(value: SeatDiscount*): Self = StObject.set(x, "seatDiscounts", js.Array(value*))
     
     inline def setSupportIncidentFee(value: String): Self = StObject.set(x, "supportIncidentFee", value.asInstanceOf[js.Any])
     

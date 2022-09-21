@@ -1,7 +1,6 @@
 package typings.reactNativeFetchBlob.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactNativeFetchBlob.anon.Free
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ trait FS extends StObject {
   
   def createFile(path: String, data: String, encoding: Encoding): js.Promise[Unit] = js.native
   
-  def df(): js.Promise[Free] = js.native
+  def df(): js.Promise[RNFetchBlobDf] = js.native
   
   var dirs: Dirs = js.native
   
@@ -51,8 +50,8 @@ trait FS extends StObject {
     * @param  path Path of the file.
     * @param  encoding Encoding of read stream.
     */
-  def readFile(path: String, encoding: Encoding): js.Promise[js.Any] = js.native
-  def readFile(path: String, encoding: Encoding, bufferSize: Double): js.Promise[js.Any] = js.native
+  def readFile(path: String, encoding: Encoding): js.Promise[Any] = js.native
+  def readFile(path: String, encoding: Encoding, bufferSize: Double): js.Promise[Any] = js.native
   
   /**
     * Create file stream from file at `path`.

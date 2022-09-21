@@ -10,7 +10,7 @@ trait IHttpProxy
      with IServer {
   
   /** [Property] (Object) */
-  var actionMethods: js.UndefOr[js.Any] = js.undefined
+  var actionMethods: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var binary: js.UndefOr[Boolean] = js.undefined
@@ -22,7 +22,7 @@ trait IHttpProxy
   var getMethod: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.undefined
   
   /** [Config Option] (Object) */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
 }
 object IHttpProxy {
   
@@ -33,7 +33,7 @@ object IHttpProxy {
   
   extension [Self <: IHttpProxy](x: Self) {
     
-    inline def setActionMethods(value: js.Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
+    inline def setActionMethods(value: Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
     
     inline def setActionMethodsUndefined: Self = StObject.set(x, "actionMethods", js.undefined)
     
@@ -45,7 +45,7 @@ object IHttpProxy {
     
     inline def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
   }

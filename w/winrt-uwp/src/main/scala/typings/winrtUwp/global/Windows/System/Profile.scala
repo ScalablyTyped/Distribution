@@ -269,25 +269,25 @@ object Profile {
     /* unmapped type */
     @JSGlobal("Windows.System.Profile.PlatformDataCollectionLevel.basic")
     @js.native
-    def basic: js.Any = js.native
-    inline def basic_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("basic")(x.asInstanceOf[js.Any])
+    def basic: Any = js.native
+    inline def basic_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("basic")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.System.Profile.PlatformDataCollectionLevel.enhanced")
     @js.native
-    def enhanced: js.Any = js.native
-    inline def enhanced_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enhanced")(x.asInstanceOf[js.Any])
+    def enhanced: Any = js.native
+    inline def enhanced_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enhanced")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.System.Profile.PlatformDataCollectionLevel.full")
     @js.native
-    def full: js.Any = js.native
-    inline def full_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("full")(x.asInstanceOf[js.Any])
+    def full: Any = js.native
+    inline def full_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("full")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.System.Profile.PlatformDataCollectionLevel.security")
     @js.native
-    def security: js.Any = js.native
-    inline def security_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("security")(x.asInstanceOf[js.Any])
+    def security: Any = js.native
+    inline def security_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("security")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings")
@@ -304,36 +304,36 @@ object Profile {
     /* static member */
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings.addEventListener")
     @js.native
-    def addEventListener: js.Any = js.native
-    inline def addEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
+    def addEventListener: Any = js.native
+    inline def addEventListener_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addEventListener")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings.canCollectDiagnostics")
     @js.native
-    def canCollectDiagnostics: js.Any = js.native
-    inline def canCollectDiagnostics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canCollectDiagnostics")(x.asInstanceOf[js.Any])
+    def canCollectDiagnostics: Any = js.native
+    inline def canCollectDiagnostics_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canCollectDiagnostics")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings.collectionLevel")
     @js.native
-    def collectionLevel: js.Any = js.native
-    inline def collectionLevel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectionLevel")(x.asInstanceOf[js.Any])
+    def collectionLevel: Any = js.native
+    inline def collectionLevel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectionLevel")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings.oncollectionlevelchanged")
     @js.native
-    def oncollectionlevelchanged: js.Any = js.native
-    inline def oncollectionlevelchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncollectionlevelchanged")(x.asInstanceOf[js.Any])
+    def oncollectionlevelchanged: Any = js.native
+    inline def oncollectionlevelchanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncollectionlevelchanged")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings.removeEventListener")
     @js.native
-    def removeEventListener: js.Any = js.native
-    inline def removeEventListener_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
+    def removeEventListener: Any = js.native
+    inline def removeEventListener_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeEventListener")(x.asInstanceOf[js.Any])
   }
   
   /** A utility class that supports one method, IsDemoModeEnabled , and one property, Properties . Call IsDemoModeEnabled to determine whether the device where the app is running has specifically enabled its retail demo mode. */
@@ -359,8 +359,8 @@ object Profile {
     /* static member */
     @JSGlobal("Windows.System.Profile.RetailInfo.properties")
     @js.native
-    def properties: IMapView[String, js.Any] = js.native
-    inline def properties_=(x: IMapView[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("properties")(x.asInstanceOf[js.Any])
+    def properties: IMapView[String, Any] = js.native
+    inline def properties_=(x: IMapView[String, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("properties")(x.asInstanceOf[js.Any])
   }
   
   /** Provides info for hardware developers and OEMs. */

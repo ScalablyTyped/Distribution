@@ -17,7 +17,7 @@ trait EvaluationResult extends StObject {
   var EvalDecision: PolicyEvaluationDecisionType
   
   /**
-    * Additional details about the results of the cross-account evaluation decision. This parameter is populated for only cross-account simulations. It contains a brief summary of how each policy type contributes to the final evaluation decision. If the simulation evaluates policies within the same account and includes a resource ARN, then the parameter is present but the response is empty. If the simulation evaluates policies within the same account and specifies all resources (*), then the parameter is not returned. When you make a cross-account request, AWS evaluates the request in the trusting account and the trusted account. The request is allowed only if both evaluations return true. For more information about how policies are evaluated, see Evaluating Policies Within a Single Account. If an AWS Organizations SCP included in the evaluation denies access, the simulation ends. In this case, policy evaluation does not proceed any further and this parameter is not returned.
+    * Additional details about the results of the cross-account evaluation decision. This parameter is populated for only cross-account simulations. It contains a brief summary of how each policy type contributes to the final evaluation decision. If the simulation evaluates policies within the same account and includes a resource ARN, then the parameter is present but the response is empty. If the simulation evaluates policies within the same account and specifies all resources (*), then the parameter is not returned. When you make a cross-account request, Amazon Web Services evaluates the request in the trusting account and the trusted account. The request is allowed only if both evaluations return true. For more information about how policies are evaluated, see Evaluating policies within a single account. If an Organizations SCP included in the evaluation denies access, the simulation ends. In this case, policy evaluation does not proceed any further and this parameter is not returned.
     */
   var EvalDecisionDetails: js.UndefOr[EvalDecisionDetailsType] = js.undefined
   
@@ -76,13 +76,13 @@ object EvaluationResult {
     
     inline def setMatchedStatementsUndefined: Self = StObject.set(x, "MatchedStatements", js.undefined)
     
-    inline def setMatchedStatementsVarargs(value: Statement*): Self = StObject.set(x, "MatchedStatements", js.Array(value :_*))
+    inline def setMatchedStatementsVarargs(value: Statement*): Self = StObject.set(x, "MatchedStatements", js.Array(value*))
     
     inline def setMissingContextValues(value: ContextKeyNamesResultListType): Self = StObject.set(x, "MissingContextValues", value.asInstanceOf[js.Any])
     
     inline def setMissingContextValuesUndefined: Self = StObject.set(x, "MissingContextValues", js.undefined)
     
-    inline def setMissingContextValuesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "MissingContextValues", js.Array(value :_*))
+    inline def setMissingContextValuesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "MissingContextValues", js.Array(value*))
     
     inline def setOrganizationsDecisionDetail(value: OrganizationsDecisionDetail): Self = StObject.set(x, "OrganizationsDecisionDetail", value.asInstanceOf[js.Any])
     
@@ -96,6 +96,6 @@ object EvaluationResult {
     
     inline def setResourceSpecificResultsUndefined: Self = StObject.set(x, "ResourceSpecificResults", js.undefined)
     
-    inline def setResourceSpecificResultsVarargs(value: ResourceSpecificResult*): Self = StObject.set(x, "ResourceSpecificResults", js.Array(value :_*))
+    inline def setResourceSpecificResultsVarargs(value: ResourceSpecificResult*): Self = StObject.set(x, "ResourceSpecificResults", js.Array(value*))
   }
 }

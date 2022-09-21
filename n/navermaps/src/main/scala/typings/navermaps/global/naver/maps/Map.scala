@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Map
 @JSGlobal("naver.maps.Map")
 @js.native
-class Map protected ()
+open class Map protected ()
   extends StObject
      with typings.navermaps.naver.maps.Map {
   def this(mapDiv: String) = this()

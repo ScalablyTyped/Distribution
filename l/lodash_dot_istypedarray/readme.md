@@ -10,10 +10,10 @@ The lodash method `_.isTypedArray` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.istypedarray |
 | Keywords           | lodash-modularized, istypedarray |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 28757169 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2300642.6666666665 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -4,24 +4,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("puppeteer", "EventEmitter")
 @js.native
-trait EventEmitter extends StObject {
+open class EventEmitter ()
+  extends StObject
+     with CommonEventEmitter {
   
-  def addListener(event: EventType, handler: Handler[js.Any]): EventEmitter = js.native
+  /* private */ var emitter: Any = js.native
   
-  def emit(event: EventType): Boolean = js.native
-  def emit(event: EventType, eventData: js.Any): Boolean = js.native
+  /* private */ var eventListenersCount: Any = js.native
   
-  def listenerCount(event: String): Double = js.native
+  /* private */ var eventsMap: Any = js.native
   
-  def off(event: EventType, handler: Handler[js.Any]): EventEmitter = js.native
-  
-  def on(event: EventType, handler: Handler[js.Any]): EventEmitter = js.native
-  
-  def once(event: EventType, handler: Handler[js.Any]): EventEmitter = js.native
-  
-  def removeAllListeners(): EventEmitter = js.native
-  def removeAllListeners(event: EventType): EventEmitter = js.native
-  
-  def removeListener(event: EventType, handler: Handler[js.Any]): EventEmitter = js.native
+  /**
+    * Gets the number of listeners for a given event.
+    *
+    * @param event - the event to get the listener count for
+    * @returns the number of listeners bound to the given event
+    */
+  def listenerCount(event: EventType): Double = js.native
 }

@@ -32,7 +32,7 @@ object IPSet {
     
     inline def setIPSetDescriptors(value: IPSetDescriptors): Self = StObject.set(x, "IPSetDescriptors", value.asInstanceOf[js.Any])
     
-    inline def setIPSetDescriptorsVarargs(value: IPSetDescriptor*): Self = StObject.set(x, "IPSetDescriptors", js.Array(value :_*))
+    inline def setIPSetDescriptorsVarargs(value: IPSetDescriptor*): Self = StObject.set(x, "IPSetDescriptors", js.Array(value*))
     
     inline def setIPSetId(value: ResourceId): Self = StObject.set(x, "IPSetId", value.asInstanceOf[js.Any])
     

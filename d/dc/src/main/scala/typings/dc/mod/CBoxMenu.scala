@@ -29,8 +29,8 @@ trait CBoxMenu
   @JSName("promptText")
   var promptText_Original: IGetSet[String, CBoxMenu] = js.native
   
-  def promptValue(): js.Any = js.native
-  def promptValue(t: js.Any): CBoxMenu = js.native
+  def promptValue(): Any = js.native
+  def promptValue(t: Any): CBoxMenu = js.native
   @JSName("promptValue")
-  var promptValue_Original: IGetSet[js.Any, CBoxMenu] = js.native
+  var promptValue_Original: IGetSet[Any, CBoxMenu] = js.native
 }

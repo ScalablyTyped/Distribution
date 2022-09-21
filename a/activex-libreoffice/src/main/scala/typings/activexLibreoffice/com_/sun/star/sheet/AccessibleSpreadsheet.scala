@@ -103,7 +103,7 @@ object AccessibleSpreadsheet {
     isAccessibleColumnSelected: Double => Boolean,
     isAccessibleRowSelected: Double => Boolean,
     isAccessibleSelected: (Double, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAccessibleEventListener: XAccessibleEventListener => Unit,
     selectAccessibleChild: Double => Unit,

@@ -10,10 +10,10 @@ This library permits to retrieve weather data from the device
 | ------------------ | :-------------: |
 | Full name          | fitbit-weather |
 | Keywords           | fitbitdev |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 543 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 63.333333333333336 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/gregoiresage/fitbit-weather#readme)

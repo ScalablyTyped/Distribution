@@ -18,46 +18,61 @@ object mod {
   
   @JSImport("fluxible-router", "NavLink")
   @js.native
-  class NavLink protected ()
-    extends Component[NavLinkProps, js.Any, js.Any] {
+  open class NavLink protected () extends Component[NavLinkProps, Any, Any] {
     def this(props: NavLinkProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: NavLinkProps, context: js.Any) = this()
+    def this(props: NavLinkProps, context: Any) = this()
   }
   
   @JSImport("fluxible-router", "NavLinkProps")
   @js.native
-  class NavLinkProps () extends StObject {
+  open class NavLinkProps () extends StObject {
+    
+    var activeClass: js.UndefOr[String] = js.native
+    
+    var activeElement: js.UndefOr[String] = js.native
     
     var activeStyle: js.UndefOr[js.Object] = js.native
     
     var className: js.UndefOr[String] = js.native
     
+    var followLink: js.UndefOr[Boolean] = js.native
+    
     var href: js.UndefOr[String] = js.native
+    
+    var navParams: js.UndefOr[js.Object] = js.native
     
     var preserveScrollPosition: js.UndefOr[Boolean] = js.native
     
+    var queryParams: js.UndefOr[js.Object] = js.native
+    
+    var replaceState: js.UndefOr[Boolean] = js.native
+    
     var routeName: js.UndefOr[String] = js.native
     
+    var stopPropagation: js.UndefOr[Boolean] = js.native
+    
     var `type`: js.UndefOr[String] = js.native
+    
+    var validate: js.UndefOr[Boolean] = js.native
   }
   
   @JSImport("fluxible-router", "RouteStore")
   @js.native
-  class RouteStore protected ()
+  open class RouteStore protected ()
     extends typings.fluxible.baseStoreMod.^[js.Object] {
     def this(dispatcher: DispatcherInterface) = this()
     
     @JSName("dehydrate")
-    def dehydrate_MRouteStore(): js.Any = js.native
+    def dehydrate_MRouteStore(): Any = js.native
     @JSName("dehydrate")
-    def dehydrate_MRouteStore(context: FluxibleContext): js.Any = js.native
+    def dehydrate_MRouteStore(context: FluxibleContext): Any = js.native
     
     @JSName("rehydrate")
-    def rehydrate_MRouteStore(state: js.Any): Unit = js.native
+    def rehydrate_MRouteStore(state: Any): Unit = js.native
   }
   /* static members */
   object RouteStore {
@@ -71,27 +86,27 @@ object mod {
   
   inline def handleHistory(
     Component: TypeofComponent & (Instantiable1[
-      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
+      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
       Component[js.Object, js.Object, js.Object]
     ])
   ): TypeofComponent & (Instantiable1[
-    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
     Component[js.Object, js.Object, js.Object]
   ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("handleHistory")(Component.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent & (Instantiable1[
-    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
     Component[js.Object, js.Object, js.Object]
   ])]
   inline def handleHistory(
     Component: TypeofComponent & (Instantiable1[
-      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
+      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
       Component[js.Object, js.Object, js.Object]
     ]),
     opts: js.Object
   ): TypeofComponent & (Instantiable1[
-    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
     Component[js.Object, js.Object, js.Object]
   ]) = (^.asInstanceOf[js.Dynamic].applyDynamic("handleHistory")(Component.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TypeofComponent & (Instantiable1[
-    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
     Component[js.Object, js.Object, js.Object]
   ])]
   

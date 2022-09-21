@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FloatingObjectAbsoluteSizeSettings")
 @js.native
-class FloatingObjectAbsoluteSizeSettings ()
+open class FloatingObjectAbsoluteSizeSettings ()
   extends StObject
      with typings.devexpressWeb.FloatingObjectAbsoluteSizeSettings {
   

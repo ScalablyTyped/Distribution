@@ -10,5 +10,15 @@ object browserUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * Returns a promise that resolve when a requestAnimationFrame has completed.
+    *
+    * On Node.js this uses setImmediate instead of requestAnimationFrame.
+    *
+    * This is simply a sugar method so that users can do the following:
+    * `await tf.nextFrame();`
+    *
+    * @doc {heading: 'Performance', subheading: 'Timing'}
+    */
   inline def nextFrame(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextFrame")().asInstanceOf[js.Promise[Unit]]
 }

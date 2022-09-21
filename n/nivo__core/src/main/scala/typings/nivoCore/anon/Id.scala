@@ -2,41 +2,31 @@ package typings.nivoCore.anon
 
 import typings.nivoCore.mod.SvgFillMatcher
 import typings.nivoCore.nivoCoreStrings.Asterisk
+import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Id[T] extends js.Object {
-  var id: String = js.native
-  var `match`: js.Object | SvgFillMatcher[T] | Asterisk = js.native
+trait Id[T] extends StObject {
+  
+  var id: String
+  
+  var `match`: (Record[String, Any]) | SvgFillMatcher[T] | Asterisk
 }
-
 object Id {
-  @scala.inline
-  def apply[T](id: String, `match`: js.Object | SvgFillMatcher[T] | Asterisk): Id[T] = {
+  
+  inline def apply[T](id: String, `match`: (Record[String, Any]) | SvgFillMatcher[T] | Asterisk): Id[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id[T]]
   }
-  @scala.inline
-  implicit class IdOps[Self <: Id[_], T] (val x: Self with Id[T]) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setMatchFunction1(value: T => Boolean): Self = this.set("match", js.Any.fromFunction1(value))
-    @scala.inline
-    def setMatch(value: js.Object | SvgFillMatcher[T] | Asterisk): Self = this.set("match", value.asInstanceOf[js.Any])
-  }
   
+  extension [Self <: Id[?], T](x: Self & Id[T]) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setMatch(value: (Record[String, Any]) | SvgFillMatcher[T] | Asterisk): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    
+    inline def setMatchFunction1(value: T => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+  }
 }
-

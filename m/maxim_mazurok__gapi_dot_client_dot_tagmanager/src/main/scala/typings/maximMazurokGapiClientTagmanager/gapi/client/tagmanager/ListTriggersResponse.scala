@@ -29,6 +29,6 @@ object ListTriggersResponse {
     
     inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
-    inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+    inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value*))
   }
 }

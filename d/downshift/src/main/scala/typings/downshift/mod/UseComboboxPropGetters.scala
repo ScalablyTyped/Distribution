@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UseComboboxPropGetters[Item] extends StObject {
   
-  def getComboboxProps(): js.Any = js.native
-  def getComboboxProps(options: Unit, otherOptions: GetPropsCommonOptions): js.Any = js.native
-  def getComboboxProps(options: UseComboboxGetComboboxPropsOptions): js.Any = js.native
-  def getComboboxProps(options: UseComboboxGetComboboxPropsOptions, otherOptions: GetPropsCommonOptions): js.Any = js.native
+  def getComboboxProps(): Any = js.native
+  def getComboboxProps(options: Unit, otherOptions: GetPropsCommonOptions): Any = js.native
+  def getComboboxProps(options: UseComboboxGetComboboxPropsOptions): Any = js.native
+  def getComboboxProps(options: UseComboboxGetComboboxPropsOptions, otherOptions: GetPropsCommonOptions): Any = js.native
   
-  def getInputProps(): js.Any = js.native
-  def getInputProps(options: Unit, otherOptions: GetPropsCommonOptions): js.Any = js.native
-  def getInputProps(options: UseComboboxGetInputPropsOptions): js.Any = js.native
-  def getInputProps(options: UseComboboxGetInputPropsOptions, otherOptions: GetPropsCommonOptions): js.Any = js.native
+  def getInputProps(): Any = js.native
+  def getInputProps(options: Unit, otherOptions: GetPropsCommonOptions): Any = js.native
+  def getInputProps(options: UseComboboxGetInputPropsOptions): Any = js.native
+  def getInputProps(options: UseComboboxGetInputPropsOptions, otherOptions: GetPropsCommonOptions): Any = js.native
   
-  def getItemProps(options: UseComboboxGetItemPropsOptions[Item]): js.Any = js.native
+  def getItemProps(options: UseComboboxGetItemPropsOptions[Item]): Any = js.native
   
-  def getLabelProps(): js.Any = js.native
-  def getLabelProps(options: UseComboboxGetLabelPropsOptions): js.Any = js.native
+  def getLabelProps(): Any = js.native
+  def getLabelProps(options: UseComboboxGetLabelPropsOptions): Any = js.native
   
-  def getMenuProps(): js.Any = js.native
-  def getMenuProps(options: Unit, otherOptions: GetPropsCommonOptions): js.Any = js.native
-  def getMenuProps(options: UseComboboxGetMenuPropsOptions): js.Any = js.native
-  def getMenuProps(options: UseComboboxGetMenuPropsOptions, otherOptions: GetPropsCommonOptions): js.Any = js.native
+  def getMenuProps(): Any = js.native
+  def getMenuProps(options: Unit, otherOptions: GetPropsCommonOptions): Any = js.native
+  def getMenuProps(options: UseComboboxGetMenuPropsOptions): Any = js.native
+  def getMenuProps(options: UseComboboxGetMenuPropsOptions, otherOptions: GetPropsCommonOptions): Any = js.native
   
-  def getToggleButtonProps(): js.Any = js.native
-  def getToggleButtonProps(options: UseComboboxGetToggleButtonPropsOptions): js.Any = js.native
+  def getToggleButtonProps(): Any = js.native
+  def getToggleButtonProps(options: UseComboboxGetToggleButtonPropsOptions): Any = js.native
 }

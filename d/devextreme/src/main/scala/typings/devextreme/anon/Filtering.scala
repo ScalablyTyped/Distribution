@@ -6,16 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Filtering extends StObject {
   
+  /**
+    * Specifies whether or not filtering must be performed on the server side.
+    */
   var filtering: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether paging by groups should be performed on the server side.
+    */
   var groupPaging: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether or not grouping must be performed on the server side.
+    */
   var grouping: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether or not paging must be performed on the server side.
+    */
   var paging: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether or not sorting must be performed on the server side.
+    */
   var sorting: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies whether or not summaries summaries are calculated on the server-side.
+    */
   var summary: js.UndefOr[Boolean] = js.undefined
 }
 object Filtering {

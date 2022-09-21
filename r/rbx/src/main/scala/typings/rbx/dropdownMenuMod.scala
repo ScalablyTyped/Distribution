@@ -54,7 +54,7 @@ object dropdownMenuMod {
   
   @JSImport("rbx/components/dropdown/dropdown-menu", "DropdownMenu")
   @js.native
-  val DropdownMenu: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val DropdownMenu: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait DropdownMenuProps extends StObject {

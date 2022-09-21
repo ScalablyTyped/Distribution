@@ -75,6 +75,6 @@ object externalSystemRoleMod {
     /**
       * @hidden
       */
-    /* private */ var system: js.Any = js.native
+    /* private */ var system: Any = js.native
   }
 }

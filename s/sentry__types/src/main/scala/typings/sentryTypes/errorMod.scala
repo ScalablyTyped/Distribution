@@ -11,7 +11,7 @@ object errorMod {
   trait ExtendedError
     extends StObject
        with Error
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ExtendedError {
     
     inline def apply(message: String, name: String): ExtendedError = {

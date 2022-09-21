@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagListMessage extends StObject {
   
   /**
-    * A list of cost allocation tags as key-value pairs.
+    * A list of tags as key-value pairs.
     */
   var TagList: js.UndefOr[typings.awsSdk.elasticacheMod.TagList] = js.undefined
 }
@@ -24,6 +24,6 @@ object TagListMessage {
     
     inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
   }
 }

@@ -15,47 +15,35 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def test(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ CustomTestResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def test(proxy: Proxy, cb: js.Function2[/* error */ Any, /* result */ CustomTestResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def test(
     proxy: Proxy,
     options: TestOptions,
-    cb: js.Function2[/* error */ js.Any, /* result */ CustomTestResult, Unit]
+    cb: js.Function2[/* error */ Any, /* result */ CustomTestResult, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def testAll(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ AllResults, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAll")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testAll(proxy: Proxy, cb: js.Function2[/* error */ Any, /* result */ AllResults, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAll")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def testAll(
     proxy: Proxy,
     options: CoreOptions,
-    cb: js.Function2[/* error */ js.Any, /* result */ AllResults, Unit]
+    cb: js.Function2[/* error */ Any, /* result */ AllResults, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAll")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def testAnonymityLevel(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAnonymityLevel")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def testAnonymityLevel(
-    proxy: Proxy,
-    options: CoreOptions,
-    cb: js.Function2[/* error */ js.Any, /* result */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAnonymityLevel")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testAnonymityLevel(proxy: Proxy, cb: js.Function2[/* error */ Any, /* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAnonymityLevel")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testAnonymityLevel(proxy: Proxy, options: CoreOptions, cb: js.Function2[/* error */ Any, /* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAnonymityLevel")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def testProtocol(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocol")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def testProtocol(
-    proxy: Proxy,
-    options: CoreOptions,
-    cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocol")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testProtocol(proxy: Proxy, cb: js.Function2[/* error */ Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocol")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testProtocol(proxy: Proxy, options: CoreOptions, cb: js.Function2[/* error */ Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocol")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def testProtocols(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ ProtocolResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocols")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testProtocols(proxy: Proxy, cb: js.Function2[/* error */ Any, /* result */ ProtocolResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocols")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def testProtocols(
     proxy: Proxy,
     options: CoreOptions,
-    cb: js.Function2[/* error */ js.Any, /* result */ ProtocolResult, Unit]
+    cb: js.Function2[/* error */ Any, /* result */ ProtocolResult, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocols")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def testTunnel(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testTunnel")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def testTunnel(
-    proxy: Proxy,
-    options: CoreOptions,
-    cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testTunnel")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testTunnel(proxy: Proxy, cb: js.Function2[/* error */ Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testTunnel")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testTunnel(proxy: Proxy, options: CoreOptions, cb: js.Function2[/* error */ Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testTunnel")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait AllResults extends StObject {
     
@@ -275,7 +263,7 @@ object mod {
       
       inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value*))
     }
   }
   

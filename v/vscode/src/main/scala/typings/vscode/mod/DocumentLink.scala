@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "DocumentLink")
 @js.native
-class DocumentLink protected () extends StObject {
+open class DocumentLink protected () extends StObject {
   /**
     * Creates a new document link.
     *

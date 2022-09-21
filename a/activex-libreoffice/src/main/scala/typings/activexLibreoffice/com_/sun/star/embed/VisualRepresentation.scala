@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisualRepresentation extends StObject {
   
   /** The data in the format specified by {@link Flavor} . */
-  var Data: js.Any
+  var Data: Any
   
   /** The format of the visual representation. */
   var Flavor: DataFlavor
 }
 object VisualRepresentation {
   
-  inline def apply(Data: js.Any, Flavor: DataFlavor): VisualRepresentation = {
+  inline def apply(Data: Any, Flavor: DataFlavor): VisualRepresentation = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Flavor = Flavor.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualRepresentation]
   }
   
   extension [Self <: VisualRepresentation](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     inline def setFlavor(value: DataFlavor): Self = StObject.set(x, "Flavor", value.asInstanceOf[js.Any])
   }

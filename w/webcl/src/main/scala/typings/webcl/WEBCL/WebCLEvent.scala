@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 3.10
 trait WebCLEvent extends StObject {
   
-  def getInfo(name: EventInfo): js.Any
+  def getInfo(name: EventInfo): Any
   
   def getProfilingInfo(name: ProfilingInfo): Double
   
@@ -18,7 +18,7 @@ trait WebCLEvent extends StObject {
 object WebCLEvent {
   
   inline def apply(
-    getInfo: EventInfo => js.Any,
+    getInfo: EventInfo => Any,
     getProfilingInfo: ProfilingInfo => Double,
     release: () => Unit,
     setCallback: (CommandExecutionStatus, WebCLCallback) => Unit
@@ -29,7 +29,7 @@ object WebCLEvent {
   
   extension [Self <: WebCLEvent](x: Self) {
     
-    inline def setGetInfo(value: EventInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    inline def setGetInfo(value: EventInfo => Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
     inline def setGetProfilingInfo(value: ProfilingInfo => Double): Self = StObject.set(x, "getProfilingInfo", js.Any.fromFunction1(value))
     

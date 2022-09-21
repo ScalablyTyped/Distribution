@@ -1,6 +1,6 @@
 package typings.angularCore.mod
 
-import typings.angularCore.anon.Parent
+import typings.angularCore.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,28 +10,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 abstract class Injector () extends StObject {
   
   /**
-    * @deprecated from v4.0.0 use Type<T> or InjectionToken<T>
+    * @deprecated from v4.0.0 use ProviderToken<T>
     * @suppress {duplicate}
     */
-  def get(token: js.Any): js.Any = js.native
-  def get(token: js.Any, notFoundValue: js.Any): js.Any = js.native
-  def get[T](token: AbstractType[T]): T = js.native
-  def get[T](token: AbstractType[T], notFoundValue: T): T = js.native
-  def get[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = js.native
-  def get[T](token: AbstractType[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
-  def get[T](token: InjectionToken[T]): T = js.native
-  def get[T](token: InjectionToken[T], notFoundValue: T): T = js.native
-  def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
-  def get[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
+  def get(token: Any): Any = js.native
+  def get(token: Any, notFoundValue: Any): Any = js.native
   /**
     * Retrieves an instance from the injector based on the provided token.
     * @returns The instance from the injector if defined, otherwise the `notFoundValue`.
     * @throws When the `notFoundValue` is `undefined` or `Injector.THROW_IF_NOT_FOUND`.
     */
-  def get[T](token: Type[T]): T = js.native
-  def get[T](token: Type[T], notFoundValue: T): T = js.native
-  def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
-  def get[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
+  def get[T](token: ProviderToken[T]): T = js.native
+  def get[T](token: ProviderToken[T], notFoundValue: T): T = js.native
+  def get[T](token: ProviderToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
+  def get[T](token: ProviderToken[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
 }
 /* static members */
 object Injector {
@@ -62,10 +54,16 @@ object Injector {
     * @returns The new injector instance.
     *
     */
-  inline def create(options: Parent): Injector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Injector]
+  inline def create(options: Name): Injector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Injector]
   /**
     * @deprecated from v5 use the new signature Injector.create(options)
     */
   inline def create(providers: js.Array[StaticProvider]): Injector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(providers.asInstanceOf[js.Any]).asInstanceOf[Injector]
   inline def create(providers: js.Array[StaticProvider], parent: Injector): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Injector]
+  
+  /** @nocollapse */
+  @JSImport("@angular/core", "Injector.\u0275prov")
+  @js.native
+  def ɵprov: Any = js.native
+  inline def ɵprov_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fakesTokenDetailsMod {
   
-  @JSImport("@firebase/messaging/dist/testing/fakes/token-details", JSImport.Namespace)
+  @JSImport("@firebase/messaging/dist/esm/src/testing/fakes/token-details", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

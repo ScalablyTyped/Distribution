@@ -1,10 +1,12 @@
 package typings.extjs.Ext.grid
 
+import typings.extjs.Ext.grid.header.IContainer
+import typings.extjs.Ext.view.IDropZone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type IPropertyColumnModel = typings.extjs.Ext.grid.header.IContainer
+type IPropertyColumnModel = IContainer
 
-type IViewDropZone = typings.extjs.Ext.view.IDropZone
+type IViewDropZone = IDropZone

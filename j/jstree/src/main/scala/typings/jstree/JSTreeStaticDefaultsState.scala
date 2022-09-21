@@ -18,7 +18,7 @@ trait JSTreeStaticDefaultsState extends StObject {
     * @name $.jstree.defaults.state.filter
     * @plugin state
     */
-  var filter: js.Any
+  var filter: Any
   
   /**
     * A string for the key to use when saving the current tree (change if using multiple trees in your project). Defaults to `jstree`.
@@ -39,11 +39,11 @@ trait JSTreeStaticDefaultsState extends StObject {
     * @name $.jstree.defaults.state.ttl
     * @plugin state
     */
-  var ttl: js.Any
+  var ttl: Any
 }
 object JSTreeStaticDefaultsState {
   
-  inline def apply(events: String, filter: js.Any, key: String, preserve_loaded: Boolean, ttl: js.Any): JSTreeStaticDefaultsState = {
+  inline def apply(events: String, filter: Any, key: String, preserve_loaded: Boolean, ttl: Any): JSTreeStaticDefaultsState = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], preserve_loaded = preserve_loaded.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsState]
   }
@@ -52,12 +52,12 @@ object JSTreeStaticDefaultsState {
     
     inline def setEvents(value: String): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setPreserve_loaded(value: Boolean): Self = StObject.set(x, "preserve_loaded", value.asInstanceOf[js.Any])
     
-    inline def setTtl(value: js.Any): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Any): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }
 }

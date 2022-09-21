@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mangopay2-nodejs-sdk" : "1.31.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mangopay2-nodejs-sdk" : "1.31.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

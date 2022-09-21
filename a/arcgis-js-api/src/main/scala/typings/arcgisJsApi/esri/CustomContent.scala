@@ -1,6 +1,6 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.custom
+import typings.arcgisJsApi.arcgisJsApiStrings.custom_
 import typings.arcgisJsApi.esri.content.Content
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -19,7 +19,7 @@ trait CustomContent
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#creator)
     */
-  def creator(graphic: Graphic): String | HTMLElement | Widget_ | js.Promise[js.Any] = js.native
+  def creator(graphic: Graphic): String | HTMLElement | Widget_ | js.Promise[Any] = js.native
   /**
     * The function that is called to create the custom content element.
     *
@@ -33,7 +33,7 @@ trait CustomContent
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#destroyer)
     */
-  def destroyer(graphic: Graphic): Unit = js.native
+  def destroyer(graphic: Graphic): scala.Unit = js.native
   /**
     * The called function to cleanup custom content when it is no longer necessary.
     *
@@ -52,8 +52,10 @@ trait CustomContent
   /**
     * The type of popup element displayed.
     *
+    * @default custom
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#type)
     */
   @JSName("type")
-  val type_CustomContent: custom = js.native
+  val type_CustomContent: custom_ = js.native
 }

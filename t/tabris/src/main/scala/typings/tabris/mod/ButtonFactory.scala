@@ -10,5 +10,5 @@ trait ButtonFactory
   extends Factory[
       ButtonConstructor, 
       InstanceType[ButtonConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[ButtonConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

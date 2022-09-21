@@ -14,7 +14,7 @@ object precacheControllerMod {
   
   @JSImport("workbox-precaching/PrecacheController", "PrecacheController")
   @js.native
-  class PrecacheController () extends StObject {
+  open class PrecacheController () extends StObject {
     def this(cacheName: String) = this()
     
     def activate(): js.Promise[CleanupResult] = js.native
@@ -35,7 +35,7 @@ object precacheControllerMod {
     trait InstallOptions extends StObject {
       
       var event: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ Any
           ] = js.undefined
       
       var plugins: js.UndefOr[js.Array[WorkboxPlugin]] = js.undefined
@@ -50,7 +50,7 @@ object precacheControllerMod {
       extension [Self <: InstallOptions](x: Self) {
         
         inline def setEvent(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ Any
         ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
         
         inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
@@ -59,7 +59,7 @@ object precacheControllerMod {
         
         inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
         
-        inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+        inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
       }
     }
   }

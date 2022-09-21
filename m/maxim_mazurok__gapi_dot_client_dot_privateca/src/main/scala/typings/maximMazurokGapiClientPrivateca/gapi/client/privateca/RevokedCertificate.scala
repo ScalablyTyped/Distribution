@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RevokedCertificate extends StObject {
   
-  /** The resource path for the Certificate in the format `projects/∗/locations/∗/certificateAuthorities/∗/certificates/ *`. */
+  /** The resource name for the Certificate in the format `projects/ *‍/locations/ *‍/caPools/ *‍/certificates/ *`. */
   var certificate: js.UndefOr[String] = js.undefined
   
   /** The serial number of the Certificate. */

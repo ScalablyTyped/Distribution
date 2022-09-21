@@ -6,56 +6,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Query extends StObject {
   
-  /** When 'ACCOUNT' is chosen as search method, account_info needs to be specified. */
+  /** Required when **SearchMethod** is **ACCOUNT**. */
   var accountInfo: js.UndefOr[AccountInfo] = js.undefined
   
-  /** The corpus to search. */
+  /** The Google Workspace service to search. */
   var corpus: js.UndefOr[String] = js.undefined
   
-  /** The data source to search from. */
+  /** The data source to search. */
   var dataScope: js.UndefOr[String] = js.undefined
   
-  /** For Drive search, specify more options in this field. */
+  /** Set Drive search-specific options. */
   var driveOptions: js.UndefOr[DriveOptions] = js.undefined
   
-  /** The end time range for the search query. These timestamps are in GMT and rounded down to the start of the given date. */
+  /** The end time for the search query. Specify in GMT. The value is rounded to 12 AM on the specified date. */
   var endTime: js.UndefOr[String] = js.undefined
   
-  /** When 'ROOM' is chosen as search method, hangout_chats_info needs to be specified. (read-only) */
+  /** Required when **SearchMethod** is **ROOM**. (read-only) */
   var hangoutsChatInfo: js.UndefOr[HangoutsChatInfo] = js.undefined
   
-  /** For hangouts chat search, specify more options in this field. (read-only) */
+  /** Set Chat search-specific options. (read-only) */
   var hangoutsChatOptions: js.UndefOr[HangoutsChatOptions] = js.undefined
   
-  /** For mail search, specify more options in this field. */
+  /** Set Gmail search-specific options. */
   var mailOptions: js.UndefOr[MailOptions] = js.undefined
   
-  /**
-    * The search method to use. This field is similar to the search_method field but is introduced to support shared drives. It supports all search method types. In case the search_method
-    * is TEAM_DRIVE the response of this field will be SHARED_DRIVE only.
-    */
+  /** The entity to search. This field replaces **searchMethod** to support shared drives. When **searchMethod** is **TEAM_DRIVE**, the response of this field is **SHARED_DRIVE**. */
   var method: js.UndefOr[String] = js.undefined
   
-  /** When 'ORG_UNIT' is chosen as as search method, org_unit_info needs to be specified. */
+  /** Required when **SearchMethod** is **ORG_UNIT**. */
   var orgUnitInfo: js.UndefOr[OrgUnitInfo] = js.undefined
   
   /** The search method to use. */
   var searchMethod: js.UndefOr[String] = js.undefined
   
-  /** When 'SHARED_DRIVE' is chosen as search method, shared_drive_info needs to be specified. */
+  /** Required when **SearchMethod** is **SHARED_DRIVE**. */
   var sharedDriveInfo: js.UndefOr[SharedDriveInfo] = js.undefined
   
-  /** The start time range for the search query. These timestamps are in GMT and rounded down to the start of the given date. */
+  /** Required when **SearchMethod** is **SITES_URL**. */
+  var sitesUrlInfo: js.UndefOr[SitesUrlInfo] = js.undefined
+  
+  /** The start time for the search query. Specify in GMT. The value is rounded to 12 AM on the specified date. */
   var startTime: js.UndefOr[String] = js.undefined
   
-  /** When 'TEAM_DRIVE' is chosen as search method, team_drive_info needs to be specified. */
+  /** Required when **SearchMethod** is **TEAM_DRIVE**. */
   var teamDriveInfo: js.UndefOr[TeamDriveInfo] = js.undefined
   
-  /** The corpus-specific search operators used to generate search results. */
+  /** Service-specific [search operators](https://support.google.com/vault/answer/2474474) to filter search results. */
   var terms: js.UndefOr[String] = js.undefined
   
-  /** The time zone name. It should be an IANA TZ name, such as "America/Los_Angeles". For more information, see Time Zone. */
+  /**
+    * The time zone name. It should be an IANA TZ name, such as "America/Los_Angeles". For a list of time zone names, see [Time
+    * Zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For more information about how Vault uses time zones, see [the Vault help
+    * center](https://support.google.com/vault/answer/6092995#time).
+    */
   var timeZone: js.UndefOr[String] = js.undefined
+  
+  /** Set Voice search-specific options. */
+  var voiceOptions: js.UndefOr[VoiceOptions] = js.undefined
 }
 object Query {
   
@@ -114,6 +121,10 @@ object Query {
     
     inline def setSharedDriveInfoUndefined: Self = StObject.set(x, "sharedDriveInfo", js.undefined)
     
+    inline def setSitesUrlInfo(value: SitesUrlInfo): Self = StObject.set(x, "sitesUrlInfo", value.asInstanceOf[js.Any])
+    
+    inline def setSitesUrlInfoUndefined: Self = StObject.set(x, "sitesUrlInfo", js.undefined)
+    
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
@@ -129,5 +140,9 @@ object Query {
     inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    
+    inline def setVoiceOptions(value: VoiceOptions): Self = StObject.set(x, "voiceOptions", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceOptionsUndefined: Self = StObject.set(x, "voiceOptions", js.undefined)
   }
 }

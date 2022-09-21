@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlertTarget extends StObject {
   
   /**
-    * The ARN of the notification target to which alerts are sent.
+    * The Amazon Resource Name (ARN) of the notification target to which alerts are sent.
     */
   var alertTargetArn: AlertTargetArn
   

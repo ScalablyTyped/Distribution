@@ -17,7 +17,7 @@ trait ListPoliciesGrantingServiceAccessRequest extends StObject {
   var Marker: js.UndefOr[markerType] = js.undefined
   
   /**
-    * The service namespace for the AWS services whose policies you want to list. To learn the service namespace for a service, go to Actions, Resources, and Condition Keys for AWS Services in the IAM User Guide. Choose the name of the service to view details for that service. In the first paragraph, find the service prefix. For example, (service prefix: a4b). For more information about service namespaces, see AWS Service Namespaces in the AWS General Reference.
+    * The service namespace for the Amazon Web Services services whose policies you want to list. To learn the service namespace for a service, see Actions, resources, and condition keys for Amazon Web Services services in the IAM User Guide. Choose the name of the service to view details for that service. In the first paragraph, find the service prefix. For example, (service prefix: a4b). For more information about service namespaces, see Amazon Web Services service namespaces in the Amazon Web Services General Reference.
     */
   var ServiceNamespaces: serviceNamespaceListType
 }
@@ -38,6 +38,6 @@ object ListPoliciesGrantingServiceAccessRequest {
     
     inline def setServiceNamespaces(value: serviceNamespaceListType): Self = StObject.set(x, "ServiceNamespaces", value.asInstanceOf[js.Any])
     
-    inline def setServiceNamespacesVarargs(value: serviceNamespaceType*): Self = StObject.set(x, "ServiceNamespaces", js.Array(value :_*))
+    inline def setServiceNamespacesVarargs(value: serviceNamespaceType*): Self = StObject.set(x, "ServiceNamespaces", js.Array(value*))
   }
 }

@@ -15,61 +15,61 @@ trait IAsyncAction
   
   var done: js.UndefOr[
     js.Function3[
-      /* success */ js.UndefOr[js.Function0[js.Any]], 
-      /* error */ js.UndefOr[js.Function1[/* error */ js.Any, js.Any]], 
-      /* progress */ js.UndefOr[js.Function1[/* progress */ js.Any, Unit]], 
+      /* success */ js.UndefOr[js.Function0[Any]], 
+      /* error */ js.UndefOr[js.Function1[/* error */ Any, Any]], 
+      /* progress */ js.UndefOr[js.Function1[/* progress */ Any, Unit]], 
       Unit
     ]
   ] = js.native
   
   def getResults(): Unit = js.native
   
-  def `then`[U](): js.Any = js.native
+  def `then`[U](): Any = js.native
   def `then`[U](
     success: js.Function0[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ js.Any) | U
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ Any) | U
     ]
-  ): js.Any = js.native
+  ): Any = js.native
   def `then`[U](
     success: js.Function0[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ js.Any) | U
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ Any) | U
     ],
     error: js.Function1[
-      /* error */ js.Any, 
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ js.Any) | U
+      /* error */ Any, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ Any) | U
     ]
-  ): js.Any = js.native
+  ): Any = js.native
   def `then`[U](
     success: js.Function0[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ js.Any) | U
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ Any) | U
     ],
     error: js.Function1[
-      /* error */ js.Any, 
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ js.Any) | U
+      /* error */ Any, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ Any) | U
     ],
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): js.Any = js.native
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): Any = js.native
   def `then`[U](
     success: js.Function0[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ js.Any) | U
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ Any) | U
     ],
     error: Unit,
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): js.Any = js.native
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): Any = js.native
   def `then`[U](
     success: Unit,
     error: js.Function1[
-      /* error */ js.Any, 
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ js.Any) | U
+      /* error */ Any, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ Any) | U
     ]
-  ): js.Any = js.native
+  ): Any = js.native
   def `then`[U](
     success: Unit,
     error: js.Function1[
-      /* error */ js.Any, 
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ js.Any) | U
+      /* error */ Any, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<U> */ Any) | U
     ],
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): js.Any = js.native
-  def `then`[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): js.Any = js.native
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): Any = js.native
+  def `then`[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ Any, Unit]): Any = js.native
 }

@@ -20,9 +20,8 @@ trait OrderBy extends StObject {
   var callback: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. [Resource name](https://cloud.google.com/apis/design/resource_names) of the customer in the format: `customers/{customer_id}`, where customer_id is the customer to
-    * whom the device belongs. If you're using this API for your own organization, use `customers/my_customer`. If you're using this API to manage another organization, use
-    * `customers/{customer_id}`, where customer_id is the customer to whom the device belongs.
+    * Optional. [Resource name](https://cloud.google.com/apis/design/resource_names) of the customer. If you're using this API for your own organization, use `customers/my_customer`
+    * If you're using this API to manage another organization, use `customers/{customer}`, where customer is the customer to whom the device belongs.
     */
   var customer: js.UndefOr[String] = js.undefined
   
@@ -41,20 +40,20 @@ trait OrderBy extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Optional. Order specification for devices in the response. Only one of the following field names may be used to specify the order: `create_time`, `last_sync_time`, `model`,
-    * `os_version`, `device_type` and `serial_number`. `desc` may be specified optionally at the end to specify results to be sorted in descending order. Default order is ascending.
-    */
+  /** Optional. Order specification for devices in the response. */
   var orderBy: js.UndefOr[String] = js.undefined
   
-  /** Optional. The maximum number of Devices to return. If unspecified, at most 20 Devices will be returned. The maximum value is 100; values above 100 will be coerced to 100. */
+  /** Optional. The maximum number of DeviceUsers to return. If unspecified, at most 5 DeviceUsers will be returned. The maximum value is 20; values above 20 will be coerced to 20. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional. A page token, received from a previous `ListDevices` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
-    * `ListDevices` must match the call that provided the page token.
+    * Optional. A page token, received from a previous `ListDeviceUsers` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
+    * `ListBooks` must match the call that provided the page token.
     */
   var pageToken: js.UndefOr[String] = js.undefined
+  
+  /** Required. To list all DeviceUsers, set this to "devices/-". To list all DeviceUsers owned by a device, set this to the resource name of the device. Format: devices/{device} */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -67,14 +66,11 @@ trait OrderBy extends StObject {
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /** Optional. The view to use for the List request. */
-  var view: js.UndefOr[String] = js.undefined
 }
 object OrderBy {
   
-  inline def apply(): OrderBy = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(parent: String): OrderBy = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderBy]
   }
   
@@ -128,6 +124,8 @@ object OrderBy {
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -143,9 +141,5 @@ object OrderBy {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
-    
-    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

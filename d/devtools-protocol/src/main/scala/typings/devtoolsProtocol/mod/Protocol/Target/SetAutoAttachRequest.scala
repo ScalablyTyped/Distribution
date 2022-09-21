@@ -12,6 +12,11 @@ trait SetAutoAttachRequest extends StObject {
   var autoAttach: Boolean
   
   /**
+    * Only targets matching filter will be attached.
+    */
+  var filter: js.UndefOr[TargetFilter] = js.undefined
+  
+  /**
     * Enables "flat" access to the session via specifying sessionId attribute in the commands.
     * We plan to make this the default, deprecate non-flattened mode,
     * and eventually retire it. See crbug.com/991325.
@@ -34,6 +39,12 @@ object SetAutoAttachRequest {
   extension [Self <: SetAutoAttachRequest](x: Self) {
     
     inline def setAutoAttach(value: Boolean): Self = StObject.set(x, "autoAttach", value.asInstanceOf[js.Any])
+    
+    inline def setFilter(value: TargetFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFilterVarargs(value: FilterEntry*): Self = StObject.set(x, "filter", js.Array(value*))
     
     inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSingleLevelIndicator")
 @js.native
-class ASPxClientSingleLevelIndicator ()
+open class ASPxClientSingleLevelIndicator ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSingleLevelIndicator {
   

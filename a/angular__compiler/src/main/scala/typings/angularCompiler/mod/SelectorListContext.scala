@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "SelectorListContext")
 @js.native
-class SelectorListContext protected ()
-  extends typings.angularCompiler.compilerMod.SelectorListContext {
-  def this(selectors: js.Array[typings.angularCompiler.selectorMod.CssSelector]) = this()
+open class SelectorListContext protected () extends StObject {
+  def this(selectors: js.Array[CssSelector]) = this()
+  
+  var alreadyMatched: Boolean = js.native
+  
+  var selectors: js.Array[CssSelector] = js.native
 }

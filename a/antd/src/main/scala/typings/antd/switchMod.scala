@@ -3,10 +3,12 @@ package typings.antd
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
+import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
-import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +27,11 @@ object switchMod extends Shortcut {
     var __ANT_SWITCH: Boolean = js.native
   }
   
-  type SwitchChangeEventHandler = js.Function2[/* checked */ Boolean, /* event */ MouseEvent, Unit]
+  type SwitchChangeEventHandler = js.Function2[
+    /* checked */ Boolean, 
+    /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], 
+    Unit
+  ]
   
   type SwitchClickEventHandler = SwitchChangeEventHandler
   
@@ -43,6 +49,8 @@ object switchMod extends Shortcut {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    var id: js.UndefOr[String] = js.undefined
+    
     var loading: js.UndefOr[Boolean] = js.undefined
     
     var onChange: js.UndefOr[SwitchChangeEventHandler] = js.undefined
@@ -54,6 +62,8 @@ object switchMod extends Shortcut {
     var size: js.UndefOr[SwitchSize] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
@@ -92,15 +102,23 @@ object switchMod extends Shortcut {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setOnChange(value: (/* checked */ Boolean, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(
+        value: (/* checked */ Boolean, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnClick(value: (/* checked */ Boolean, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(
+        value: (/* checked */ Boolean, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit
+      ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
@@ -115,6 +133,10 @@ object switchMod extends Shortcut {
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

@@ -8,5 +8,5 @@ object noCssMod {
   
   @JSImport("react-scrollbar/dist/no-css", JSImport.Namespace)
   @js.native
-  class ^ () extends ScrollArea
+  open class ^ () extends ScrollArea
 }

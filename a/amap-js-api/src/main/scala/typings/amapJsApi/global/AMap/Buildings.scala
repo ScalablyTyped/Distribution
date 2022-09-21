@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 楼块图层，单独展示矢量化的楼块图层
   * @param opts 图层选项
   */
-class Buildings ()
+open class Buildings ()
   extends StObject
      with typings.amapJsApi.AMap.Buildings {
   def this(opts: Options) = this()

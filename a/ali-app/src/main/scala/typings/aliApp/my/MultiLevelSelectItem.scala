@@ -27,6 +27,6 @@ object MultiLevelSelectItem {
     
     inline def setSubListUndefined: Self = StObject.set(x, "subList", js.undefined)
     
-    inline def setSubListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "subList", js.Array(value :_*))
+    inline def setSubListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "subList", js.Array(value*))
   }
 }

@@ -13,7 +13,7 @@ trait ITableLayout
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_ITableLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var calculate_ITableLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
   var columns: js.UndefOr[Double] = js.undefined
@@ -31,22 +31,22 @@ trait ITableLayout
   @JSName("isValidParent")
   var isValidParent_ITableLayout: js.UndefOr[
     js.Function4[
-      /* item */ js.UndefOr[js.Any], 
-      /* target */ js.UndefOr[js.Any], 
-      /* rowIdx */ js.UndefOr[js.Any], 
-      /* cellIdx */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
+      /* target */ js.UndefOr[Any], 
+      /* rowIdx */ js.UndefOr[Any], 
+      /* cellIdx */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
   
   /** [Config Option] (Object) */
-  var tableAttrs: js.UndefOr[js.Any] = js.undefined
+  var tableAttrs: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var tdAttrs: js.UndefOr[js.Any] = js.undefined
+  var tdAttrs: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var trAttrs: js.UndefOr[js.Any] = js.undefined
+  var trAttrs: js.UndefOr[Any] = js.undefined
 }
 object ITableLayout {
   
@@ -57,7 +57,7 @@ object ITableLayout {
   
   extension [Self <: ITableLayout](x: Self) {
     
-    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
@@ -70,20 +70,20 @@ object ITableLayout {
     inline def setFinalizeLayoutUndefined: Self = StObject.set(x, "finalizeLayout", js.undefined)
     
     inline def setIsValidParent(
-      value: (/* item */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], /* rowIdx */ js.UndefOr[js.Any], /* cellIdx */ js.UndefOr[js.Any]) => Unit
+      value: (/* item */ js.UndefOr[Any], /* target */ js.UndefOr[Any], /* rowIdx */ js.UndefOr[Any], /* cellIdx */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "isValidParent", js.Any.fromFunction4(value))
     
     inline def setIsValidParentUndefined: Self = StObject.set(x, "isValidParent", js.undefined)
     
-    inline def setTableAttrs(value: js.Any): Self = StObject.set(x, "tableAttrs", value.asInstanceOf[js.Any])
+    inline def setTableAttrs(value: Any): Self = StObject.set(x, "tableAttrs", value.asInstanceOf[js.Any])
     
     inline def setTableAttrsUndefined: Self = StObject.set(x, "tableAttrs", js.undefined)
     
-    inline def setTdAttrs(value: js.Any): Self = StObject.set(x, "tdAttrs", value.asInstanceOf[js.Any])
+    inline def setTdAttrs(value: Any): Self = StObject.set(x, "tdAttrs", value.asInstanceOf[js.Any])
     
     inline def setTdAttrsUndefined: Self = StObject.set(x, "tdAttrs", js.undefined)
     
-    inline def setTrAttrs(value: js.Any): Self = StObject.set(x, "trAttrs", value.asInstanceOf[js.Any])
+    inline def setTrAttrs(value: Any): Self = StObject.set(x, "trAttrs", value.asInstanceOf[js.Any])
     
     inline def setTrAttrsUndefined: Self = StObject.set(x, "trAttrs", js.undefined)
   }

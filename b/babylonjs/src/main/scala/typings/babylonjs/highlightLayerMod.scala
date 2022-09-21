@@ -17,34 +17,37 @@ object highlightLayerMod {
   
   @JSImport("babylonjs/Layers/highlightLayer", "HighlightLayer")
   @js.native
-  class HighlightLayer protected () extends EffectLayer {
+  open class HighlightLayer protected () extends EffectLayer {
     /**
       * Instantiates a new highlight Layer and references it to the scene..
       * @param name The name of the layer
       * @param scene The scene to use the layer in
       * @param options Sets of none mandatory options to use with the layer (see IHighlightLayerOptions for more information)
       */
+    def this(name: String) = this()
     def this(name: String, scene: Scene) = this()
+    def this(name: String, scene: Unit, options: PartialIHighlightLayerOpt) = this()
     def this(name: String, scene: Scene, options: PartialIHighlightLayerOpt) = this()
     
-    /* private */ var _blurTexture: js.Any = js.native
+    /* private */ var _blurTexture: Any = js.native
     
     /**
       * Force the stencil to the normal expected value for none glowing parts
+      * @param mesh
       */
-    /* private */ var _defaultStencilReference: js.Any = js.native
+    /* private */ var _defaultStencilReference: Any = js.native
     
-    /* private */ var _downSamplePostprocess: js.Any = js.native
+    /* private */ var _downSamplePostprocess: Any = js.native
     
-    /* private */ var _excludedMeshes: js.Any = js.native
+    /* private */ var _excludedMeshes: Any = js.native
     
-    /* private */ var _horizontalBlurPostprocess: js.Any = js.native
+    /* private */ var _horizontalBlurPostprocess: Any = js.native
     
-    /* private */ var _instanceGlowingMeshStencilReference: js.Any = js.native
+    /* private */ var _instanceGlowingMeshStencilReference: Any = js.native
     
-    /* private */ var _meshes: js.Any = js.native
+    /* private */ var _meshes: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
     /**
       * Returns true if the mesh should render, otherwise false.
@@ -53,7 +56,7 @@ object highlightLayerMod {
       */
     /* protected */ def _shouldRenderMesh(mesh: Mesh): Boolean = js.native
     
-    /* private */ var _verticalBlurPostprocess: js.Any = js.native
+    /* private */ var _verticalBlurPostprocess: Any = js.native
     
     /**
       * Add a mesh in the exclusion list to prevent it to impact or being impacted by the highlight layer.
@@ -130,7 +133,7 @@ object highlightLayerMod {
       * @returns a serialized Highlight layer object
       */
     @JSName("serialize")
-    def serialize_MHighlightLayer(): js.Any = js.native
+    def serialize_MHighlightLayer(): Any = js.native
   }
   /* static members */
   object HighlightLayer {
@@ -178,7 +181,7 @@ object highlightLayerMod {
       * @param rootUrl defines the root URL containing the Highlight layer information
       * @returns a parsed Highlight layer
       */
-    inline def Parse(parsedHightlightLayer: js.Any, scene: Scene, rootUrl: String): HighlightLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedHightlightLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[HighlightLayer]
+    inline def Parse(parsedHightlightLayer: Any, scene: Scene, rootUrl: String): HighlightLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedHightlightLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[HighlightLayer]
   }
   
   trait IHighlightLayerOptions extends StObject {
@@ -215,7 +218,7 @@ object highlightLayerMod {
     var isStroke: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Enforces a fixed size texture to ensure resize independant blur.
+      * Enforces a fixed size texture to ensure resize independent blur.
       */
     var mainTextureFixedSize: js.UndefOr[Double] = js.undefined
     
@@ -280,7 +283,7 @@ object highlightLayerMod {
       /**
         * Return a the first highlight layer of the scene with a given name.
         * @param name The name of the highlight layer to look for.
-        * @return The highlight layer if found otherwise null.
+        * @returns The highlight layer if found otherwise null.
         */
       def getHighlightLayerByName(name: String): Nullable[HighlightLayer]
     }

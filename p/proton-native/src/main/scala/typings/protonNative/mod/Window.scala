@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("proton-native", "Window")
 @js.native
-class Window protected ()
-  extends Component[WindowProps, js.Object, js.Any] {
+open class Window protected ()
+  extends Component[WindowProps, js.Object, Any] {
   def this(props: WindowProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: WindowProps, context: js.Any) = this()
+  def this(props: WindowProps, context: Any) = this()
 }

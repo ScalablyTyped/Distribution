@@ -21,7 +21,7 @@ object ItemDescription {
     
     inline def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
-    inline def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value :_*))
+    inline def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value*))
     
     inline def setTranslations(value: Translations): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
   }

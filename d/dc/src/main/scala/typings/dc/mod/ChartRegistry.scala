@@ -10,14 +10,14 @@ trait ChartRegistry extends StObject {
   def clear(): Unit = js.native
   def clear(group: String): Unit = js.native
   
-  def deregister(chart: BaseMixin[js.Any]): Unit = js.native
-  def deregister(chart: BaseMixin[js.Any], group: String): Unit = js.native
+  def deregister(chart: BaseMixin[Any]): Unit = js.native
+  def deregister(chart: BaseMixin[Any], group: String): Unit = js.native
   
-  def has(chart: BaseMixin[js.Any]): Boolean = js.native
+  def has(chart: BaseMixin[Any]): Boolean = js.native
   
-  def list(): js.Array[BaseMixin[js.Any]] = js.native
-  def list(group: String): js.Array[BaseMixin[js.Any]] = js.native
+  def list(): js.Array[BaseMixin[Any]] = js.native
+  def list(group: String): js.Array[BaseMixin[Any]] = js.native
   
-  def register(chart: BaseMixin[js.Any]): Unit = js.native
-  def register(chart: BaseMixin[js.Any], group: String): Unit = js.native
+  def register(chart: BaseMixin[Any]): Unit = js.native
+  def register(chart: BaseMixin[Any], group: String): Unit = js.native
 }

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains a set of requested error events.
-  */
 trait SchemaListEventsResponse extends StObject {
   
   /**
@@ -15,17 +12,14 @@ trait SchemaListEventsResponse extends StObject {
   var errorEvents: js.UndefOr[js.Array[SchemaErrorEvent]] = js.undefined
   
   /**
-    * If non-empty, more results are available. Pass this token, along with the
-    * same query parameters as the first request, to view the next page of
-    * results.
+    * If non-empty, more results are available. Pass this token, along with the same query parameters as the first request, to view the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The timestamp specifies the start time to which the request was
-    * restricted.
+    * The timestamp specifies the start time to which the request was restricted.
     */
-  var timeRangeBegin: js.UndefOr[String] = js.undefined
+  var timeRangeBegin: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListEventsResponse {
   
@@ -40,13 +34,17 @@ object SchemaListEventsResponse {
     
     inline def setErrorEventsUndefined: Self = StObject.set(x, "errorEvents", js.undefined)
     
-    inline def setErrorEventsVarargs(value: SchemaErrorEvent*): Self = StObject.set(x, "errorEvents", js.Array(value :_*))
+    inline def setErrorEventsVarargs(value: SchemaErrorEvent*): Self = StObject.set(x, "errorEvents", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setTimeRangeBegin(value: String): Self = StObject.set(x, "timeRangeBegin", value.asInstanceOf[js.Any])
+    
+    inline def setTimeRangeBeginNull: Self = StObject.set(x, "timeRangeBegin", null)
     
     inline def setTimeRangeBeginUndefined: Self = StObject.set(x, "timeRangeBegin", js.undefined)
   }

@@ -8,14 +8,13 @@ import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.languageStoragePbMod.ModuleId
 import typings.libraCore.vmErrorsPbMod.VMVerificationStatus.StatusKind
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMVerificationStatus")
 @js.native
-class VMVerificationStatus () extends Message {
+open class VMVerificationStatus () extends Message {
   
   def clearDependencyId(): Unit = js.native
   
@@ -77,7 +76,7 @@ object VMVerificationStatus {
     /* 0 */ val SCRIPT: typings.libraCore.vmErrorsPbMod.VMVerificationStatus.StatusKind.SCRIPT & Double = js.native
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): VMVerificationStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[VMVerificationStatus]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): VMVerificationStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[VMVerificationStatus]
   
   inline def deserializeBinaryFromReader(message: VMVerificationStatus, reader: BinaryReader): VMVerificationStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[VMVerificationStatus]
   

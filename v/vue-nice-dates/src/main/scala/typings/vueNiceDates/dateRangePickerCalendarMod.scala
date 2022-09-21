@@ -1,8 +1,6 @@
 package typings.vueNiceDates
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
 import typings.vueNiceDates.anon.DisplayedEndDate
 import typings.vueNiceDates.anon.HandleMouseEnterDate
 import typings.vueNiceDates.anon.HoveredDate
@@ -13,22 +11,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dateRangePickerCalendarMod {
   
-  @js.native
-  trait DateRangePickerCalendar
-    extends StObject
-       with VueConstructor[Vue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any */ trait DateRangePickerCalendar extends StObject {
     
-    var computed: DisplayedEndDate = js.native
+    var computed: DisplayedEndDate
     
-    def date(): HoveredDate = js.native
+    def date(): HoveredDate
     
-    var methods: HandleMouseEnterDate = js.native
+    var methods: HandleMouseEnterDate
     
-    var props: OmitDateRangePickerPropsi = js.native
+    var props: OmitDateRangePickerPropsi
     
-    var watch: StringDictionary[js.Function1[/* date */ String, Unit]] = js.native
+    var watch: StringDictionary[js.Function1[/* date */ String, Unit]]
   }
-  @JSImport("vue-nice-dates/DateRangePickerCalendar", "DateRangePickerCalendar")
-  @js.native
-  val DateRangePickerCalendar: typings.vueNiceDates.dateRangePickerCalendarMod.DateRangePickerCalendar = js.native
+  object DateRangePickerCalendar {
+    
+    @JSImport("vue-nice-dates/DateRangePickerCalendar", "DateRangePickerCalendar")
+    @js.native
+    val ^ : DateRangePickerCalendar = js.native
+    
+    extension [Self <: DateRangePickerCalendar](x: Self) {
+      
+      inline def setComputed(value: DisplayedEndDate): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+      
+      inline def setDate(value: () => HoveredDate): Self = StObject.set(x, "date", js.Any.fromFunction0(value))
+      
+      inline def setMethods(value: HandleMouseEnterDate): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: OmitDateRangePickerPropsi): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setWatch(value: StringDictionary[js.Function1[/* date */ String, Unit]]): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    }
+  }
 }

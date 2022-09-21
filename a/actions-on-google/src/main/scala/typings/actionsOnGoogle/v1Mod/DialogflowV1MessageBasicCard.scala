@@ -33,7 +33,7 @@ object DialogflowV1MessageBasicCard {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: DialogflowV1MessageBasicCardButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: DialogflowV1MessageBasicCardButton*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setFormattedText(value: String): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
     

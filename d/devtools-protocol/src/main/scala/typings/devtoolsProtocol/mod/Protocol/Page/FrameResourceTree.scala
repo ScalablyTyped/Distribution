@@ -34,12 +34,12 @@ object FrameResourceTree {
     
     inline def setChildFramesUndefined: Self = StObject.set(x, "childFrames", js.undefined)
     
-    inline def setChildFramesVarargs(value: FrameResourceTree*): Self = StObject.set(x, "childFrames", js.Array(value :_*))
+    inline def setChildFramesVarargs(value: FrameResourceTree*): Self = StObject.set(x, "childFrames", js.Array(value*))
     
     inline def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     inline def setResources(value: js.Array[FrameResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: FrameResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: FrameResource*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

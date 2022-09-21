@@ -14,7 +14,7 @@ object retroMod {
   
   @JSImport("@lumino/algorithm/types/retro", "RetroArrayIterator")
   @js.native
-  class RetroArrayIterator[T] protected ()
+  open class RetroArrayIterator[T] protected ()
     extends StObject
        with IIterator[T] {
     /**
@@ -24,9 +24,9 @@ object retroMod {
       */
     def this(source: ArrayLike[T]) = this()
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.

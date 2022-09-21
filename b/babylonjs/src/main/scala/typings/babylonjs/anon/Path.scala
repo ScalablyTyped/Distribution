@@ -1,98 +1,26 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.mathVectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Path extends StObject {
   
-  var backUVs: js.UndefOr[Vector4] = js.undefined
+  var filename: String
   
-  var cap: js.UndefOr[Double] = js.undefined
-  
-  var frontUVs: js.UndefOr[Vector4] = js.undefined
-  
-  var instance: js.UndefOr[typings.babylonjs.meshMod.Mesh] = js.undefined
-  
-  var invertUV: js.UndefOr[Boolean] = js.undefined
-  
-  var path: js.Array[Vector3]
-  
-  var ribbonCloseArray: js.UndefOr[Boolean] = js.undefined
-  
-  var ribbonClosePath: js.UndefOr[Boolean] = js.undefined
-  
-  var rotationFunction: js.UndefOr[js.Any] = js.undefined
-  
-  var scaleFunction: js.UndefOr[js.Any] = js.undefined
-  
-  var shape: js.Array[Vector3]
-  
-  var sideOrientation: js.UndefOr[Double] = js.undefined
-  
-  var updatable: js.UndefOr[Boolean] = js.undefined
+  var path: String
 }
 object Path {
   
-  inline def apply(path: js.Array[Vector3], shape: js.Array[Vector3]): Path = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
+  inline def apply(filename: String, path: String): Path = {
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Path]
   }
   
   extension [Self <: Path](x: Self) {
     
-    inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
-    
-    inline def setCap(value: Double): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
-    
-    inline def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
-    
-    inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
-    
-    inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
-    
-    inline def setInstance(value: typings.babylonjs.meshMod.Mesh): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
-    
-    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
-    
-    inline def setInvertUV(value: Boolean): Self = StObject.set(x, "invertUV", value.asInstanceOf[js.Any])
-    
-    inline def setInvertUVUndefined: Self = StObject.set(x, "invertUV", js.undefined)
-    
-    inline def setPath(value: js.Array[Vector3]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-    
-    inline def setPathVarargs(value: Vector3*): Self = StObject.set(x, "path", js.Array(value :_*))
-    
-    inline def setRibbonCloseArray(value: Boolean): Self = StObject.set(x, "ribbonCloseArray", value.asInstanceOf[js.Any])
-    
-    inline def setRibbonCloseArrayUndefined: Self = StObject.set(x, "ribbonCloseArray", js.undefined)
-    
-    inline def setRibbonClosePath(value: Boolean): Self = StObject.set(x, "ribbonClosePath", value.asInstanceOf[js.Any])
-    
-    inline def setRibbonClosePathUndefined: Self = StObject.set(x, "ribbonClosePath", js.undefined)
-    
-    inline def setRotationFunction(value: js.Any): Self = StObject.set(x, "rotationFunction", value.asInstanceOf[js.Any])
-    
-    inline def setRotationFunctionUndefined: Self = StObject.set(x, "rotationFunction", js.undefined)
-    
-    inline def setScaleFunction(value: js.Any): Self = StObject.set(x, "scaleFunction", value.asInstanceOf[js.Any])
-    
-    inline def setScaleFunctionUndefined: Self = StObject.set(x, "scaleFunction", js.undefined)
-    
-    inline def setShape(value: js.Array[Vector3]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
-    
-    inline def setShapeVarargs(value: Vector3*): Self = StObject.set(x, "shape", js.Array(value :_*))
-    
-    inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
-    
-    inline def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

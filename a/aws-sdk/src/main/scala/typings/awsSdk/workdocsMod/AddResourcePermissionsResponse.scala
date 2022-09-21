@@ -24,6 +24,6 @@ object AddResourcePermissionsResponse {
     
     inline def setShareResultsUndefined: Self = StObject.set(x, "ShareResults", js.undefined)
     
-    inline def setShareResultsVarargs(value: ShareResult*): Self = StObject.set(x, "ShareResults", js.Array(value :_*))
+    inline def setShareResultsVarargs(value: ShareResult*): Self = StObject.set(x, "ShareResults", js.Array(value*))
   }
 }

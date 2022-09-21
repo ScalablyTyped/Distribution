@@ -20,7 +20,7 @@ trait Option extends StObject {
   var value: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.Option & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.Option & TopLevel[Any]
   ] = js.undefined
 }
 object Option {
@@ -39,7 +39,7 @@ object Option {
     inline def setValue(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.Option & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.Option & TopLevel[Any]
     ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

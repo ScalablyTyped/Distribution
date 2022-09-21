@@ -8,12 +8,12 @@ trait Label extends StObject {
   
   var label: String
   
-  var value: String | Double
+  var url: String
 }
 object Label {
   
-  inline def apply(label: String, value: String | Double): Label = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(label: String, url: String): Label = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Label]
   }
   
@@ -21,6 +21,6 @@ object Label {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

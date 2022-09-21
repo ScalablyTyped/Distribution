@@ -10,10 +10,10 @@ Bitcoin Cash cashaddr address format support for Node.js and web browsers.
 | ------------------ | :-------------: |
 | Full name          | cashaddrjs |
 | Keywords           | bitcoin, cash, cashaddr, address, format, node, browser |
-| # releases         | 16 |
-| # dependents       | 24 |
-| # downloads        | 499278 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 82268.33333333333 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/ealmansi/cashaddrjs#readme)

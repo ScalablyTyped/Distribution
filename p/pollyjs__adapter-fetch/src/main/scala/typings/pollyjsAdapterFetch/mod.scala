@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("@pollyjs/adapter-fetch", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.pollyjsAdapter.mod.default
   
   type FetchAdapter = typings.pollyjsAdapter.mod.default

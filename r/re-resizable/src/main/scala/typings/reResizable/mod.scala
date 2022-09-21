@@ -35,8 +35,7 @@ object mod {
   
   @JSImport("re-resizable", "Resizable")
   @js.native
-  class Resizable protected ()
-    extends PureComponent[ResizableProps, State, js.Any] {
+  open class Resizable protected () extends PureComponent[ResizableProps, State, Any] {
     def this(props: ResizableProps) = this()
     
     def appendBase(): HTMLDivElement | Null = js.native
@@ -58,14 +57,8 @@ object mod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MResizable(): Unit = js.native
     
-    @JSName("createSizeForCssProperty")
-    def createSizeForCssProperty_height(newSize: String, kind: height): Double | String = js.native
-    @JSName("createSizeForCssProperty")
-    def createSizeForCssProperty_height(newSize: Double, kind: height): Double | String = js.native
-    @JSName("createSizeForCssProperty")
-    def createSizeForCssProperty_width(newSize: String, kind: width): Double | String = js.native
-    @JSName("createSizeForCssProperty")
-    def createSizeForCssProperty_width(newSize: Double, kind: width): Double | String = js.native
+    def createSizeForCssProperty(newSize: String, kind: width | height): Double | String = js.native
+    def createSizeForCssProperty(newSize: Double, kind: width | height): Double | String = js.native
     
     var flexDir: js.UndefOr[row | column] = js.native
     
@@ -99,7 +92,11 @@ object mod {
     
     var resizable: HTMLElement | Null = js.native
     
+    var resizableBottom: Double = js.native
+    
     var resizableLeft: Double = js.native
+    
+    var resizableRight: Double = js.native
     
     var resizableTop: Double = js.native
     
@@ -399,9 +396,11 @@ object mod {
   
   trait ResizableProps extends StObject {
     
-    var as: js.UndefOr[String | ComponentType[js.Any]] = js.undefined
+    var as: js.UndefOr[String | ComponentType[Any]] = js.undefined
     
     var bounds: js.UndefOr[parent | window | HTMLElement] = js.undefined
+    
+    var boundsByDirection: js.UndefOr[Boolean] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -464,11 +463,15 @@ object mod {
     
     extension [Self <: ResizableProps](x: Self) {
       
-      inline def setAs(value: String | ComponentType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String | ComponentType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
       inline def setBounds(value: parent | window | HTMLElement): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      
+      inline def setBoundsByDirection(value: Boolean): Self = StObject.set(x, "boundsByDirection", value.asInstanceOf[js.Any])
+      
+      inline def setBoundsByDirectionUndefined: Self = StObject.set(x, "boundsByDirection", js.undefined)
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
@@ -676,15 +679,15 @@ object mod {
     
     trait Window extends StObject {
       
-      var MouseEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MouseEvent */ js.Any
+      var MouseEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MouseEvent */ Any
       
-      var TouchEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TouchEvent */ js.Any
+      var TouchEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TouchEvent */ Any
     }
     object Window {
       
       inline def apply(
-        MouseEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MouseEvent */ js.Any,
-        TouchEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TouchEvent */ js.Any
+        MouseEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MouseEvent */ Any,
+        TouchEvent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TouchEvent */ Any
       ): Window = {
         val __obj = js.Dynamic.literal(MouseEvent = MouseEvent.asInstanceOf[js.Any], TouchEvent = TouchEvent.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
@@ -692,9 +695,9 @@ object mod {
       
       extension [Self <: Window](x: Self) {
         
-        inline def setMouseEvent(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MouseEvent */ js.Any): Self = StObject.set(x, "MouseEvent", value.asInstanceOf[js.Any])
+        inline def setMouseEvent(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MouseEvent */ Any): Self = StObject.set(x, "MouseEvent", value.asInstanceOf[js.Any])
         
-        inline def setTouchEvent(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TouchEvent */ js.Any): Self = StObject.set(x, "TouchEvent", value.asInstanceOf[js.Any])
+        inline def setTouchEvent(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TouchEvent */ Any): Self = StObject.set(x, "TouchEvent", value.asInstanceOf[js.Any])
       }
     }
   }

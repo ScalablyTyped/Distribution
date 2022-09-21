@@ -8,13 +8,13 @@ trait TickLabels extends StObject {
   
   var Alignment: Double
   
-  val Application: js.Any
+  val Application: Any
   
-  var AutoScaleFont: js.Any
+  var AutoScaleFont: Any
   
   val Creator: Double
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   val Depth: Double
   
@@ -30,17 +30,17 @@ trait TickLabels extends StObject {
   
   var NumberFormatLinked: Boolean
   
-  var NumberFormatLocal: js.Any
+  var NumberFormatLocal: Any
   
   var Offset: Double
   
   var Orientation: XlTickLabelOrientation
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ReadingOrder: Double
   
-  def Select(): js.Any
+  def Select(): Any
   
   /* private */ @JSName("Word.TickLabels_typekey")
   var WordDotTickLabels_typekey: TickLabels
@@ -49,10 +49,10 @@ object TickLabels {
   
   inline def apply(
     Alignment: Double,
-    Application: js.Any,
-    AutoScaleFont: js.Any,
+    Application: Any,
+    AutoScaleFont: Any,
     Creator: Double,
-    Delete: () => js.Any,
+    Delete: () => Any,
     Depth: Double,
     Font: ChartFont,
     Format: ChartFormat,
@@ -60,12 +60,12 @@ object TickLabels {
     Name: String,
     NumberFormat: String,
     NumberFormatLinked: Boolean,
-    NumberFormatLocal: js.Any,
+    NumberFormatLocal: Any,
     Offset: Double,
     Orientation: XlTickLabelOrientation,
-    Parent: js.Any,
+    Parent: Any,
     ReadingOrder: Double,
-    Select: () => js.Any,
+    Select: () => Any,
     WordDotTickLabels_typekey: TickLabels
   ): TickLabels = {
     val __obj = js.Dynamic.literal(Alignment = Alignment.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], AutoScaleFont = AutoScaleFont.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Depth = Depth.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], MultiLevel = MultiLevel.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NumberFormat = NumberFormat.asInstanceOf[js.Any], NumberFormatLinked = NumberFormatLinked.asInstanceOf[js.Any], NumberFormatLocal = NumberFormatLocal.asInstanceOf[js.Any], Offset = Offset.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ReadingOrder = ReadingOrder.asInstanceOf[js.Any], Select = js.Any.fromFunction0(Select))
@@ -77,13 +77,13 @@ object TickLabels {
     
     inline def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setAutoScaleFont(value: js.Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
+    inline def setAutoScaleFont(value: Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setDepth(value: Double): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     
@@ -99,17 +99,17 @@ object TickLabels {
     
     inline def setNumberFormatLinked(value: Boolean): Self = StObject.set(x, "NumberFormatLinked", value.asInstanceOf[js.Any])
     
-    inline def setNumberFormatLocal(value: js.Any): Self = StObject.set(x, "NumberFormatLocal", value.asInstanceOf[js.Any])
+    inline def setNumberFormatLocal(value: Any): Self = StObject.set(x, "NumberFormatLocal", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
     inline def setOrientation(value: XlTickLabelOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReadingOrder(value: Double): Self = StObject.set(x, "ReadingOrder", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setWordDotTickLabels_typekey(value: TickLabels): Self = StObject.set(x, "Word.TickLabels_typekey", value.asInstanceOf[js.Any])
   }

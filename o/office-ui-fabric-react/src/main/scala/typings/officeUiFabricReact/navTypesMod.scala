@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
 import typings.officeUiFabricReact.iconTypesMod.IIconProps
@@ -76,7 +77,7 @@ object navTypesMod {
        with /**
     * (Optional) Any additional properties to apply to the rendered links.
     */
-  /* propertyName */ StringDictionary[js.Any] {
+  /* propertyName */ StringDictionary[Any] {
     
     /**
       * Aria-current token for active nav links. Must be a valid token value, and defaults to 'page'.
@@ -240,7 +241,7 @@ object navTypesMod {
       
       inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      inline def setLinksVarargs(value: INavLink*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: INavLink*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -287,7 +288,7 @@ object navTypesMod {
     /**
       * (Optional) Any additional properties to apply to a group.
       */
-    var groupData: js.UndefOr[js.Any] = js.undefined
+    var groupData: js.UndefOr[Any] = js.undefined
     
     /**
       * Links to render within this group
@@ -335,13 +336,13 @@ object navTypesMod {
       
       inline def setExpandAriaLabelUndefined: Self = StObject.set(x, "expandAriaLabel", js.undefined)
       
-      inline def setGroupData(value: js.Any): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
+      inline def setGroupData(value: Any): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
       
       inline def setGroupDataUndefined: Self = StObject.set(x, "groupData", js.undefined)
       
       inline def setLinks(value: js.Array[INavLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      inline def setLinksVarargs(value: INavLink*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: INavLink*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -381,6 +382,11 @@ object navTypesMod {
       * @deprecated - Use expandAriaLabel and collapseAriaLabel on groups instead
       */
     var expandButtonAriaLabel: js.UndefOr[String] = js.undefined
+    
+    /**
+      * (Optional) Used to define the props of the FocusZone wrapper.
+      */
+    var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.undefined
     
     /**
       * A collection of link groups to display in the navigation bar
@@ -485,11 +491,15 @@ object navTypesMod {
       
       inline def setExpandButtonAriaLabelUndefined: Self = StObject.set(x, "expandButtonAriaLabel", js.undefined)
       
+      inline def setFocusZoneProps(value: IFocusZoneProps): Self = StObject.set(x, "focusZoneProps", value.asInstanceOf[js.Any])
+      
+      inline def setFocusZonePropsUndefined: Self = StObject.set(x, "focusZoneProps", js.undefined)
+      
       inline def setGroups(value: js.Array[INavLinkGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
       inline def setGroupsNull: Self = StObject.set(x, "groups", null)
       
-      inline def setGroupsVarargs(value: INavLinkGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: INavLinkGroup*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setInitialSelectedKey(value: String): Self = StObject.set(x, "initialSelectedKey", value.asInstanceOf[js.Any])
       
@@ -642,7 +652,7 @@ object navTypesMod {
       
       inline def setGroupsNull: Self = StObject.set(x, "groups", null)
       
-      inline def setGroupsVarargs(value: INavLinkGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: INavLinkGroup*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setIsButtonEntry(value: Boolean): Self = StObject.set(x, "isButtonEntry", value.asInstanceOf[js.Any])
       

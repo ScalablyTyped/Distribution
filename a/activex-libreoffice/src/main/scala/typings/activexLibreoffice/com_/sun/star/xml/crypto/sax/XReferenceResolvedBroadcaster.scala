@@ -38,7 +38,7 @@ object XReferenceResolvedBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addReferenceResolvedListener: (Double, XReferenceResolvedListener) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeReferenceResolvedListener: (Double, XReferenceResolvedListener) => Unit
   ): XReferenceResolvedBroadcaster = {

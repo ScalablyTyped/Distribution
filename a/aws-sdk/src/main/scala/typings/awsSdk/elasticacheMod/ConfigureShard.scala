@@ -43,12 +43,12 @@ object ConfigureShard {
     
     inline def setPreferredAvailabilityZonesUndefined: Self = StObject.set(x, "PreferredAvailabilityZones", js.undefined)
     
-    inline def setPreferredAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "PreferredAvailabilityZones", js.Array(value :_*))
+    inline def setPreferredAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "PreferredAvailabilityZones", js.Array(value*))
     
     inline def setPreferredOutpostArns(value: PreferredOutpostArnList): Self = StObject.set(x, "PreferredOutpostArns", value.asInstanceOf[js.Any])
     
     inline def setPreferredOutpostArnsUndefined: Self = StObject.set(x, "PreferredOutpostArns", js.undefined)
     
-    inline def setPreferredOutpostArnsVarargs(value: String*): Self = StObject.set(x, "PreferredOutpostArns", js.Array(value :_*))
+    inline def setPreferredOutpostArnsVarargs(value: String*): Self = StObject.set(x, "PreferredOutpostArns", js.Array(value*))
   }
 }

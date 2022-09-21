@@ -1,114 +1,154 @@
 package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Instantiable4
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Matchers[T]
-  extends StObject
-     with Instantiable3[/* env */ Env, /* actual */ T, /* spec */ Env, js.Any]
-     with Instantiable4[/* env */ Env, /* actual */ T, /* spec */ Env, /* isNot */ Boolean, js.Any] {
-  
-  var actual: T = js.native
-  
-  var env: Env = js.native
-  
-  var isNot: js.UndefOr[Boolean] = js.native
-  
-  def message(): js.Any = js.native
+trait Matchers[T] extends StObject {
   
   /**
     * Invert the matcher following this expect.
     */
   var not: Matchers[T] = js.native
   
-  var spec: Env = js.native
-  
   /**
     * Expect the actual value to be `===` to the expected value.
     *
     * @param expected The expected value to compare against.
-    * @param expectationFailOutput
     * @example
     * expect(thing).toBe(realThing);
     */
-  def toBe(expected: Expected[T]): Boolean = js.native
-  def toBe(expected: Expected[T], expectationFailOutput: js.Any): Boolean = js.native
+  def toBe(expected: Expected[T]): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBe(expected: Expected[T], expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeCloseTo(expected: Double): Boolean = js.native
-  def toBeCloseTo(expected: Double, precision: js.Any): Boolean = js.native
-  def toBeCloseTo(expected: Double, precision: js.Any, expectationFailOutput: js.Any): Boolean = js.native
-  def toBeCloseTo(expected: Double, precision: Unit, expectationFailOutput: js.Any): Boolean = js.native
+  def toBeCloseTo(expected: Double): Unit = js.native
+  def toBeCloseTo(expected: Double, precision: scala.Any): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeCloseTo(expected: Double, precision: scala.Any, expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeDefined(): Boolean = js.native
-  def toBeDefined(expectationFailOutput: js.Any): Boolean = js.native
+  def toBeDefined(): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeDefined(expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeFalse(): Boolean = js.native
+  def toBeFalse(): Unit = js.native
   
-  def toBeFalsy(): Boolean = js.native
-  def toBeFalsy(expectationFailOutput: js.Any): Boolean = js.native
+  def toBeFalsy(): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeFalsy(expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeGreaterThan(expected: Double): Boolean = js.native
-  def toBeGreaterThan(expected: Double, expectationFailOutput: js.Any): Boolean = js.native
+  def toBeGreaterThan(expected: Double): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeGreaterThan(expected: Double, expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeGreaterThanOrEqual(expected: Double): Boolean = js.native
-  def toBeGreaterThanOrEqual(expected: Double, expectationFailOutput: js.Any): Boolean = js.native
+  def toBeGreaterThanOrEqual(expected: Double): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeGreaterThanOrEqual(expected: Double, expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeInstanceOf(expected: Constructor): Boolean = js.native
+  def toBeInstanceOf(expected: Constructor): Unit = js.native
   
-  def toBeLessThan(expected: Double): Boolean = js.native
-  def toBeLessThan(expected: Double, expectationFailOutput: js.Any): Boolean = js.native
+  def toBeLessThan(expected: Double): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeLessThan(expected: Double, expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeLessThanOrEqual(expected: Double): Boolean = js.native
-  def toBeLessThanOrEqual(expected: Double, expectationFailOutput: js.Any): Boolean = js.native
+  def toBeLessThanOrEqual(expected: Double): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeLessThanOrEqual(expected: Double, expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeNaN(): Boolean = js.native
+  def toBeNaN(): Unit = js.native
   
-  def toBeNegativeInfinity(): Boolean = js.native
-  def toBeNegativeInfinity(expectationFailOutput: js.Any): Boolean = js.native
+  def toBeNegativeInfinity(): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeNegativeInfinity(expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeNull(): Boolean = js.native
-  def toBeNull(expectationFailOutput: js.Any): Boolean = js.native
+  def toBeNull(): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeNull(expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBePositiveInfinity(): Boolean = js.native
-  def toBePositiveInfinity(expectationFailOutput: js.Any): Boolean = js.native
+  def toBePositiveInfinity(): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBePositiveInfinity(expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeTrue(): Boolean = js.native
+  def toBeTrue(): Unit = js.native
   
-  def toBeTruthy(): Boolean = js.native
-  def toBeTruthy(expectationFailOutput: js.Any): Boolean = js.native
+  def toBeTruthy(): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeTruthy(expectationFailOutput: scala.Any): Unit = js.native
   
-  def toBeUndefined(): Boolean = js.native
-  def toBeUndefined(expectationFailOutput: js.Any): Boolean = js.native
+  def toBeUndefined(): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toBeUndefined(expectationFailOutput: scala.Any): Unit = js.native
   
-  def toContain(expected: js.Any): Boolean = js.native
-  def toContain(expected: js.Any, expectationFailOutput: js.Any): Boolean = js.native
+  def toContain(expected: scala.Any): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toContain(expected: scala.Any, expectationFailOutput: scala.Any): Unit = js.native
   
   /**
     * Expect the actual value to be equal to the expected, using deep equality comparison.
     * @param expected Expected value.
-    * @param expectationFailOutput
     * @example
     * expect(bigObject).toEqual({ "foo": ['bar', 'baz'] });
     */
-  def toEqual(expected: Expected[T]): Boolean = js.native
-  def toEqual(expected: Expected[T], expectationFailOutput: js.Any): Boolean = js.native
+  def toEqual(expected: Expected[T]): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toEqual(expected: Expected[T], expectationFailOutput: scala.Any): Unit = js.native
   
-  def toHaveBeenCalled(): Boolean = js.native
+  def toHaveBeenCalled(): Unit = js.native
   
-  def toHaveBeenCalledBefore(expected: Func): Boolean = js.native
+  def toHaveBeenCalledBefore(expected: Func): Unit = js.native
   
-  def toHaveBeenCalledOnceWith(params: js.Any*): Boolean = js.native
+  def toHaveBeenCalledOnceWith(params: scala.Any*): Unit = js.native
   
-  def toHaveBeenCalledTimes(expected: Double): Boolean = js.native
+  def toHaveBeenCalledTimes(expected: Double): Unit = js.native
   
-  def toHaveBeenCalledWith(params: js.Any*): Boolean = js.native
+  def toHaveBeenCalledWith(params: scala.Any*): Unit = js.native
   
   /**
     * Expect the actual value to be a DOM element that has the expected class.
@@ -119,8 +159,12 @@ trait Matchers[T]
     * el.className = 'foo bar baz';
     * expect(el).toHaveClass('bar');
     */
-  def toHaveClass(expected: String): Boolean = js.native
-  def toHaveClass(expected: String, expectationFailOutput: js.Any): Boolean = js.native
+  def toHaveClass(expected: String): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toHaveClass(expected: String, expectationFailOutput: scala.Any): Unit = js.native
   
   /**
     * Expect the actual size to be equal to the expected, using array-like
@@ -131,7 +175,16 @@ trait Matchers[T]
     * array = [1,2];
     * expect(array).toHaveSize(2);
     */
-  def toHaveSize(expected: Double): Boolean = js.native
+  def toHaveSize(expected: Double): Unit = js.native
+  
+  /**
+    * {@link expect} the actual (a {@link SpyObj}) spies to have been called.
+    * @since 4.1.0
+    * @example
+    * expect(mySpyObj).toHaveSpyInteractions();
+    * expect(mySpyObj).not.toHaveSpyInteractions();
+    */
+  def toHaveSpyInteractions(): Unit = js.native
   
   /**
     * Expect the actual value to match a regular expression.
@@ -140,28 +193,33 @@ trait Matchers[T]
     * expect("my string").toMatch(/string$/);
     * expect("other string").toMatch("her");
     */
-  def toMatch(expected: String): Boolean = js.native
-  def toMatch(expected: String, expectationFailOutput: js.Any): Boolean = js.native
-  def toMatch(expected: RegExp): Boolean = js.native
-  def toMatch(expected: RegExp, expectationFailOutput: js.Any): Boolean = js.native
+  def toMatch(expected: String): Unit = js.native
+  /**
+    * @deprecated expectationFailOutput is deprecated. Use withContext instead.
+    */
+  // tslint:disable-next-line unified-signatures
+  def toMatch(expected: String, expectationFailOutput: scala.Any): Unit = js.native
+  def toMatch(expected: js.RegExp): Unit = js.native
+  def toMatch(expected: js.RegExp, expectationFailOutput: scala.Any): Unit = js.native
   
-  def toThrow(): Boolean = js.native
-  def toThrow(expected: js.Any): Boolean = js.native
+  def toThrow(): Unit = js.native
+  def toThrow(expected: scala.Any): Unit = js.native
   
-  def toThrowError(): Boolean = js.native
-  def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error]): Boolean = js.native
-  def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error], message: String): Boolean = js.native
-  def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error], message: RegExp): Boolean = js.native
-  def toThrowError(expected: Unit, message: String): Boolean = js.native
-  def toThrowError(expected: Unit, message: RegExp): Boolean = js.native
-  def toThrowError(message: String): Boolean = js.native
-  def toThrowError(message: RegExp): Boolean = js.native
+  def toThrowError(): Unit = js.native
+  def toThrowError(expected: Instantiable1[/* args (repeated) */ scala.Any, js.Error]): Unit = js.native
+  def toThrowError(expected: Instantiable1[/* args (repeated) */ scala.Any, js.Error], message: String): Unit = js.native
+  def toThrowError(expected: Instantiable1[/* args (repeated) */ scala.Any, js.Error], message: js.RegExp): Unit = js.native
+  def toThrowError(expected: Unit, message: String): Unit = js.native
+  def toThrowError(expected: Unit, message: js.RegExp): Unit = js.native
+  def toThrowError(message: String): Unit = js.native
+  def toThrowError(message: js.RegExp): Unit = js.native
   
-  def toThrowMatching(predicate: js.Function1[/* thrown */ js.Any, Boolean]): Boolean = js.native
+  def toThrowMatching(predicate: js.Function1[/* thrown */ scala.Any, Boolean]): Unit = js.native
   
   /**
     * Add some context for an expect.
     * @param message Additional context to show when the matcher fails
+    * @checkReturnValue see https://tsetse.info/check-return-value
     */
   def withContext(message: String): Matchers[T] = js.native
 }

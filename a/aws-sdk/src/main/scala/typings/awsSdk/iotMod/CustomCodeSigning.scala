@@ -12,7 +12,7 @@ trait CustomCodeSigning extends StObject {
   var certificateChain: js.UndefOr[CodeSigningCertificateChain] = js.undefined
   
   /**
-    * The hash algorithm used to code sign the file.
+    * The hash algorithm used to code sign the file. You can use a string as the algorithm name if the target over-the-air (OTA) update devices are able to verify the signature that was generated using the same signature algorithm. For example, FreeRTOS uses SHA256 or SHA1, so you can pass either of them based on which was used for generating the signature.
     */
   var hashAlgorithm: js.UndefOr[HashAlgorithm] = js.undefined
   
@@ -22,7 +22,7 @@ trait CustomCodeSigning extends StObject {
   var signature: js.UndefOr[CodeSigningSignature] = js.undefined
   
   /**
-    * The signature algorithm used to code sign the file.
+    * The signature algorithm used to code sign the file. You can use a string as the algorithm name if the target over-the-air (OTA) update devices are able to verify the signature that was generated using the same signature algorithm. For example, FreeRTOS uses ECDSA or RSA, so you can pass either of them based on which was used for generating the signature.
     */
   var signatureAlgorithm: js.UndefOr[SignatureAlgorithm] = js.undefined
 }

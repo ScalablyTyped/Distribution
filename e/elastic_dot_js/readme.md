@@ -10,10 +10,10 @@ Javascript API for ElasticSearch DSL
 | ------------------ | :-------------: |
 | Full name          | elastic.js |
 | Keywords           | elasticsearch, search, elasticjs, elastic, elastic search, es, ejs |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 23933 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7145.666666666667 |
+| # stars            | 657.0 |
 
 ## Links
 - [Homepage](https://github.com/fullscale/elastic.js)

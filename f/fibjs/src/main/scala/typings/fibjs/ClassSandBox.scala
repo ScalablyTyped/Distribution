@@ -23,7 +23,7 @@ trait ClassSandBox
     * 
     * 
     */
-  def add(id: String, mod: js.Any): Unit = js.native
+  def add(id: String, mod: Any): Unit = js.native
   /**
     * 
     * @brief 向沙箱中添加一组基础模块
@@ -44,7 +44,7 @@ trait ClassSandBox
     * 
     * 
     */
-  def addScript(srcname: String, script: ClassBuffer): js.Any = js.native
+  def addScript(srcname: String, script: ClassBuffer): Any = js.native
   
   /**
     * 
@@ -116,7 +116,7 @@ trait ClassSandBox
     * 
     * 
     */
-  def require(id: String, base: String): js.Any = js.native
+  def require(id: String, base: String): Any = js.native
   
   /**
     * 
@@ -140,7 +140,7 @@ trait ClassSandBox
     * 
     */
   def run(fname: String): Unit = js.native
-  def run(fname: String, argv: js.Array[js.Any]): Unit = js.native
+  def run(fname: String, argv: js.Array[Any]): Unit = js.native
   
   /**
     * 

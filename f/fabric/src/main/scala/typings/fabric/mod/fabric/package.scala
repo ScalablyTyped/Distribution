@@ -1,143 +1,108 @@
 package typings.fabric.mod.fabric
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.fabric.anon.CrossOrigin
+import typings.fabric.fabricImplMod.FilterBackend_
+import typings.fabric.fabricImplMod.IUtil
+import typings.fabric.mod.fabric.^
+import typings.std.HTMLElement
+import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def copiedText: java.lang.String = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].selectDynamic("copiedText").asInstanceOf[java.lang.String]
+inline def copiedText: String = ^.asInstanceOf[js.Dynamic].selectDynamic("copiedText").asInstanceOf[String]
 
-inline def copiedTextStyle: js.Array[js.Any] = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].selectDynamic("copiedTextStyle").asInstanceOf[js.Array[js.Any]]
-inline def copiedTextStyle_=(x: js.Array[js.Any]): scala.Unit = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].updateDynamic("copiedTextStyle")(x.asInstanceOf[js.Any])
+inline def copiedTextStyle: js.Array[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("copiedTextStyle").asInstanceOf[js.Array[Any]]
+inline def copiedTextStyle_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("copiedTextStyle")(x.asInstanceOf[js.Any])
 
-inline def copiedText_=(x: java.lang.String): scala.Unit = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].updateDynamic("copiedText")(x.asInstanceOf[js.Any])
+inline def copiedText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("copiedText")(x.asInstanceOf[js.Any])
 
-inline def createCanvasForNode(width: scala.Double, height: scala.Double): typings.fabric.fabricImplMod.Canvas = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("createCanvasForNode")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Canvas]
+inline def createCanvasForNode(width: Double, height: Double): typings.fabric.fabricImplMod.Canvas = (^.asInstanceOf[js.Dynamic].applyDynamic("createCanvasForNode")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Canvas]
 
-inline def createSVGFontFacesMarkup(objects: js.Array[typings.fabric.fabricImplMod.Object]): java.lang.String = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("createSVGFontFacesMarkup")(objects.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def createSVGFontFacesMarkup(objects: js.Array[typings.fabric.fabricImplMod.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGFontFacesMarkup")(objects.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def createSVGRefElementsMarkup(canvas: typings.fabric.fabricImplMod.StaticCanvas): java.lang.String = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("createSVGRefElementsMarkup")(canvas.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def createSVGRefElementsMarkup(canvas: typings.fabric.fabricImplMod.StaticCanvas): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGRefElementsMarkup")(canvas.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def filterBackend: js.UndefOr[typings.fabric.fabricImplMod.FilterBackend_] = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].selectDynamic("filterBackend").asInstanceOf[js.UndefOr[typings.fabric.fabricImplMod.FilterBackend_]]
-inline def filterBackend_=(x: js.UndefOr[typings.fabric.fabricImplMod.FilterBackend_]): scala.Unit = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].updateDynamic("filterBackend")(x.asInstanceOf[js.Any])
+inline def filterBackend: js.UndefOr[FilterBackend_] = ^.asInstanceOf[js.Dynamic].selectDynamic("filterBackend").asInstanceOf[js.UndefOr[FilterBackend_]]
+inline def filterBackend_=(x: js.UndefOr[FilterBackend_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filterBackend")(x.asInstanceOf[js.Any])
 
-inline def getCSSRules(doc: typings.std.SVGElement): js.Any = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("getCSSRules")(doc.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def getCSSRules(doc: SVGElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCSSRules")(doc.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def getGradientDefs(doc: typings.std.SVGElement): org.scalablytyped.runtime.StringDictionary[js.Any] = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("getGradientDefs")(doc.asInstanceOf[js.Any]).asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.Any]]
+inline def getGradientDefs(doc: SVGElement): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGradientDefs")(doc.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
 
-inline def iMatrix: js.Array[scala.Double] = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].selectDynamic("iMatrix").asInstanceOf[js.Array[scala.Double]]
+inline def iMatrix: js.Array[Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("iMatrix").asInstanceOf[js.Array[Double]]
 
-inline def isLikelyNode: scala.Boolean = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].selectDynamic("isLikelyNode").asInstanceOf[scala.Boolean]
+inline def isLikelyNode: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("isLikelyNode").asInstanceOf[Boolean]
 
-inline def isTouchSupported: scala.Boolean = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].selectDynamic("isTouchSupported").asInstanceOf[scala.Boolean]
+inline def isTouchSupported: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("isTouchSupported").asInstanceOf[Boolean]
 
 inline def loadSVGFromString(
-  string: java.lang.String,
-  callback: js.Function2[
-  /* results */ js.Array[typings.fabric.fabricImplMod.Object], 
-  /* options */ js.Any, 
-  scala.Unit
-]
-): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromString")(string.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  string: String,
+  callback: js.Function2[/* results */ js.Array[typings.fabric.fabricImplMod.Object], /* options */ Any, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromString")(string.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def loadSVGFromString(
-  string: java.lang.String,
-  callback: js.Function2[
-  /* results */ js.Array[typings.fabric.fabricImplMod.Object], 
-  /* options */ js.Any, 
-  scala.Unit
-],
+  string: String,
+  callback: js.Function2[/* results */ js.Array[typings.fabric.fabricImplMod.Object], /* options */ Any, Unit],
   reviver: js.Function
-): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromString")(string.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromString")(string.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def loadSVGFromURL(
-  url: java.lang.String,
-  callback: js.Function2[
-  /* results */ js.Array[typings.fabric.fabricImplMod.Object], 
-  /* options */ js.Any, 
-  scala.Unit
-]
-): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  url: String,
+  callback: js.Function2[/* results */ js.Array[typings.fabric.fabricImplMod.Object], /* options */ Any, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def loadSVGFromURL(
-  url: java.lang.String,
-  callback: js.Function2[
-  /* results */ js.Array[typings.fabric.fabricImplMod.Object], 
-  /* options */ js.Any, 
-  scala.Unit
-],
+  url: String,
+  callback: js.Function2[/* results */ js.Array[typings.fabric.fabricImplMod.Object], /* options */ Any, Unit],
   reviver: js.Function
-): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def loadSVGFromURL(
-  url: java.lang.String,
-  callback: js.Function2[
-  /* results */ js.Array[typings.fabric.fabricImplMod.Object], 
-  /* options */ js.Any, 
-  scala.Unit
-],
+  url: String,
+  callback: js.Function2[/* results */ js.Array[typings.fabric.fabricImplMod.Object], /* options */ Any, Unit],
   reviver: js.Function,
-  options: typings.fabric.anon.CrossOrigin
-): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  options: CrossOrigin
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def loadSVGFromURL(
-  url: java.lang.String,
-  callback: js.Function2[
-  /* results */ js.Array[typings.fabric.fabricImplMod.Object], 
-  /* options */ js.Any, 
-  scala.Unit
-],
-  reviver: scala.Unit,
-  options: typings.fabric.anon.CrossOrigin
-): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  url: String,
+  callback: js.Function2[/* results */ js.Array[typings.fabric.fabricImplMod.Object], /* options */ Any, Unit],
+  reviver: Unit,
+  options: CrossOrigin
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSVGFromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def log(values: js.Any*): scala.Unit = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("log")(values.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def log(values: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
 
-inline def parseAttributes(element: typings.std.HTMLElement, attributes: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[java.lang.String] = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseAttributes")(element.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
-inline def parseAttributes(element: typings.std.HTMLElement, attributes: js.Array[java.lang.String], svgUid: java.lang.String): org.scalablytyped.runtime.StringDictionary[java.lang.String] = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseAttributes")(element.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], svgUid.asInstanceOf[js.Any])).asInstanceOf[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
+inline def parseAttributes(element: HTMLElement, attributes: js.Array[String]): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAttributes")(element.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
+inline def parseAttributes(element: HTMLElement, attributes: js.Array[String], svgUid: String): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAttributes")(element.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], svgUid.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
 
-inline def parseElements(elements: js.Array[typings.std.SVGElement], callback: js.Function): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseElements")(elements.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def parseElements(elements: js.Array[js.Any | typings.std.SVGElement], callback: js.Function, options: js.Any): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseElements")(elements.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def parseElements(
-  elements: js.Array[js.Any | typings.std.SVGElement],
-  callback: js.Function,
-  options: js.Any,
-  reviver: js.Function
-): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseElements")(elements.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def parseElements(
-  elements: js.Array[typings.std.SVGElement],
-  callback: js.Function,
-  options: scala.Unit,
-  reviver: js.Function
-): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseElements")(elements.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def parseElements(elements: js.Array[SVGElement], callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseElements")(elements.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parseElements(elements: js.Array[Any | SVGElement], callback: js.Function, options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseElements")(elements.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parseElements(elements: js.Array[Any | SVGElement], callback: js.Function, options: Any, reviver: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseElements")(elements.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parseElements(elements: js.Array[SVGElement], callback: js.Function, options: Unit, reviver: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseElements")(elements.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def parseFontDeclaration(value: java.lang.String, oStyle: js.Any): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseFontDeclaration")(value.asInstanceOf[js.Any], oStyle.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def parseFontDeclaration(value: String, oStyle: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFontDeclaration")(value.asInstanceOf[js.Any], oStyle.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def parsePointsAttribute(points: java.lang.String): js.Array[js.Any] = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parsePointsAttribute")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+inline def parsePointsAttribute(points: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePointsAttribute")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
 
 inline def parseSVGDocument(
-  doc: typings.std.SVGElement,
-  callback: js.Function2[
-  /* results */ js.Array[typings.fabric.fabricImplMod.Object], 
-  /* options */ js.Any, 
-  scala.Unit
-]
-): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseSVGDocument")(doc.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  doc: SVGElement,
+  callback: js.Function2[/* results */ js.Array[typings.fabric.fabricImplMod.Object], /* options */ Any, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSVGDocument")(doc.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def parseSVGDocument(
-  doc: typings.std.SVGElement,
-  callback: js.Function2[
-  /* results */ js.Array[typings.fabric.fabricImplMod.Object], 
-  /* options */ js.Any, 
-  scala.Unit
-],
+  doc: SVGElement,
+  callback: js.Function2[/* results */ js.Array[typings.fabric.fabricImplMod.Object], /* options */ Any, Unit],
   reviver: js.Function
-): scala.Unit = (typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseSVGDocument")(doc.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSVGDocument")(doc.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def parseStyleAttribute(element: typings.std.SVGElement): js.Any = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseStyleAttribute")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def parseStyleAttribute(element: SVGElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStyleAttribute")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def parseTransformAttribute(attributeValue: java.lang.String): js.Array[scala.Double] = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformAttribute")(attributeValue.asInstanceOf[js.Any]).asInstanceOf[js.Array[scala.Double]]
+inline def parseTransformAttribute(attributeValue: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformAttribute")(attributeValue.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
 
-inline def textureSize: scala.Double = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].selectDynamic("textureSize").asInstanceOf[scala.Double]
-inline def textureSize_=(x: scala.Double): scala.Unit = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].updateDynamic("textureSize")(x.asInstanceOf[js.Any])
+inline def textureSize: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("textureSize").asInstanceOf[Double]
+inline def textureSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textureSize")(x.asInstanceOf[js.Any])
 
-inline def util: typings.fabric.fabricImplMod.IUtil = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].selectDynamic("util").asInstanceOf[typings.fabric.fabricImplMod.IUtil]
+inline def util: IUtil = ^.asInstanceOf[js.Dynamic].selectDynamic("util").asInstanceOf[IUtil]
 
-inline def version: java.lang.String = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-inline def warn(values: js.Any*): scala.Unit = typings.fabric.mod.fabric.^.asInstanceOf[js.Dynamic].applyDynamic("warn")(values.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def warn(values: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]

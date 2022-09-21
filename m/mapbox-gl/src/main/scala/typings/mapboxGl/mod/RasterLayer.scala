@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RasterLayer
   extends StObject
-     with LayerBase
-     with Layer {
+     with Layer
+     with AnyLayer {
   
-  var layout: js.UndefOr[RasterLayout] = js.undefined
+  @JSName("layout")
+  var layout_RasterLayer: js.UndefOr[RasterLayout] = js.undefined
   
-  var paint: js.UndefOr[RasterPaint] = js.undefined
+  @JSName("paint")
+  var paint_RasterLayer: js.UndefOr[RasterPaint] = js.undefined
   
-  var `type`: raster
+  @JSName("type")
+  var type_RasterLayer: raster
 }
 object RasterLayer {
   

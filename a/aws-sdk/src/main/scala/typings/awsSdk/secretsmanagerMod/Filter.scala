@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Filter extends StObject {
   
   /**
-    * Filters your list of secrets by a specific key.
+    * The following are keys you can use:    description: Prefix match, not case-sensitive.    name: Prefix match, case-sensitive.    tag-key: Prefix match, case-sensitive.    tag-value: Prefix match, case-sensitive.    primary-region: Prefix match, case-sensitive.    all: Breaks the filter value string into words and then searches all attributes for matches. Not case-sensitive.  
     */
   var Key: js.UndefOr[FilterNameStringType] = js.undefined
   
   /**
-    * Filters your list of secrets by a specific value.
+    * The keyword to filter for. You can prefix your search value with an exclamation mark (!) in order to perform negation filters. 
     */
   var Values: js.UndefOr[FilterValuesStringList] = js.undefined
 }
@@ -33,6 +33,6 @@ object Filter {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: FilterValueStringType*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterValueStringType*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

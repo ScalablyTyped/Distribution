@@ -10,35 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listenCompleteMod {
   
-  @JSImport("@firebase/database/dist/src/core/operation/ListenComplete", "ListenComplete")
+  @JSImport("@firebase/database/dist/node-esm/src/core/operation/ListenComplete", "ListenComplete")
   @js.native
-  class ListenComplete protected ()
+  open class ListenComplete protected ()
     extends StObject
        with Operation {
     def this(source: OperationSource, path: Path) = this()
     
-    /**
-      * @param {string} childName
-      * @return {?Operation}
-      */
     /* CompleteClass */
     override def operationForChild(childName: String): Operation | Null = js.native
     
-    /**
-      * @type {!Path}
-      */
     /* CompleteClass */
     var path: Path = js.native
     
-    /**
-      * @type {!OperationSource}
-      */
     /* CompleteClass */
     var source: OperationSource = js.native
     
-    /**
-      * @type {!OperationType}
-      */
     /* CompleteClass */
     var `type`: OperationType = js.native
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Polygon")
 @js.native
-class Polygon protected ()
+open class Polygon protected ()
   extends typings.yandexMaps.mod.Polygon {
   def this(geometry: js.Array[js.Array[js.Array[Double]]]) = this()
   def this(geometry: js.Object) = this()

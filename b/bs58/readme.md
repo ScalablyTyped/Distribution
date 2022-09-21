@@ -1,7 +1,7 @@
 
 # Scala.js typings for bs58
 
-Typings are for version 4.0
+Typings are for version 5.0.0
 
 ## Library description:
 Base 58 encoding / decoding
@@ -10,10 +10,10 @@ Base 58 encoding / decoding
 | ------------------ | :-------------: |
 | Full name          | bs58 |
 | Keywords           | base58, bitcoin, crypto, crytography, decode, decoding, encode, encoding, litecoin |
-| # releases         | 1 |
-| # dependents       | 1192 |
-| # downloads        | 10296719 |
-| # stars            | 7 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3522478.3333333335 |
+| # stars            | 171.0 |
 
 ## Links
 - [Homepage](https://github.com/cryptocoinjs/bs58#readme)
@@ -24,7 +24,7 @@ Base 58 encoding / decoding
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

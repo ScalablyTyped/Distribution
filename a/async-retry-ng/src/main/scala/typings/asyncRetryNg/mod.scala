@@ -1,6 +1,5 @@
 package typings.asyncRetryNg
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object mod {
     
     var minTimeout: js.UndefOr[Double] = js.undefined
     
-    var onRetry: js.UndefOr[js.Function1[/* e */ Error, js.Any]] = js.undefined
+    var onRetry: js.UndefOr[js.Function1[/* e */ js.Error, Any]] = js.undefined
     
     var randomize: js.UndefOr[Boolean] = js.undefined
     
@@ -49,7 +48,7 @@ object mod {
       
       inline def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
       
-      inline def setOnRetry(value: /* e */ Error => js.Any): Self = StObject.set(x, "onRetry", js.Any.fromFunction1(value))
+      inline def setOnRetry(value: /* e */ js.Error => Any): Self = StObject.set(x, "onRetry", js.Any.fromFunction1(value))
       
       inline def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
       
@@ -64,7 +63,7 @@ object mod {
   }
   
   type RetryFunction[A] = js.Function2[
-    /* bail */ js.Function1[/* e */ Error, Unit], 
+    /* bail */ js.Function1[/* e */ js.Error, Unit], 
     /* attempt */ Double, 
     A | js.Promise[A]
   ]

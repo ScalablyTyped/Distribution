@@ -16,28 +16,30 @@ trait AlgorithmicColorRamp
   /**
     * The algorithm used to generate the colors between the `fromColor` and `toColor`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#algorithm)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#algorithm)
     */
   var algorithm: `cie-lab` | `lab-lch` | hsv = js.native
   
   /**
     * The first color in the color ramp.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#fromColor)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#fromColor)
     */
   var fromColor: Color_ = js.native
   
   /**
     * The last color in the color ramp.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#toColor)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#toColor)
     */
   var toColor: Color_ = js.native
   
   /**
     * A string value representing the color ramp type.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#type)
+    * @default algorithmic
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#type)
     */
   @JSName("type")
   val type_AlgorithmicColorRamp: algorithmic = js.native

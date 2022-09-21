@@ -4,7 +4,7 @@ import typings.ethereumjsTx.typesMod.BufferLike
 import typings.ethereumjsTx.typesMod.FakeTxData
 import typings.ethereumjsTx.typesMod.PrefixedHexString
 import typings.ethereumjsTx.typesMod.TransactionOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object fakeMod {
   
   @JSImport("ethereumjs-tx/dist/fake", JSImport.Default)
   @js.native
-  class default () extends FakeTransaction {
+  open class default () extends FakeTransaction {
     def this(data: js.Array[BufferLike]) = this()
     def this(data: FakeTxData) = this()
     def this(data: PrefixedHexString) = this()

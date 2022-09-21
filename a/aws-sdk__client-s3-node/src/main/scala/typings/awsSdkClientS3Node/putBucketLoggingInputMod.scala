@@ -8,5 +8,5 @@ object putBucketLoggingInputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/PutBucketLoggingInput", "PutBucketLoggingInput")
   @js.native
-  val PutBucketLoggingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutBucketLoggingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

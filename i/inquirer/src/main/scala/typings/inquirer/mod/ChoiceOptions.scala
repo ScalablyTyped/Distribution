@@ -5,20 +5,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a choice.
-  *
-  * @template T
-  * The type of the answers.
-  */
-trait ChoiceOptions[T /* <: Answers */]
+trait ChoiceOptions
   extends StObject
      with ChoiceBase {
   
   /**
     * The extra properties of the choice.
     */
-  var extra: js.UndefOr[js.Any] = js.undefined
+  var extra: js.UndefOr[Any] = js.undefined
   
   /**
     * The name of the choice to show to the user.
@@ -39,18 +33,18 @@ trait ChoiceOptions[T /* <: Answers */]
   /**
     * The value of the choice.
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object ChoiceOptions {
   
-  inline def apply[T /* <: Answers */](): ChoiceOptions[T] = {
+  inline def apply(): ChoiceOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ChoiceOptions[T]]
+    __obj.asInstanceOf[ChoiceOptions]
   }
   
-  extension [Self <: ChoiceOptions[?], T /* <: Answers */](x: Self & ChoiceOptions[T]) {
+  extension [Self <: ChoiceOptions](x: Self) {
     
-    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
@@ -66,7 +60,7 @@ object ChoiceOptions {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

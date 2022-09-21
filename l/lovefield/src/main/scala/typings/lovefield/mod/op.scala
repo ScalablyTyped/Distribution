@@ -11,9 +11,9 @@ object op {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def and(args: Predicate*): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[js.Any]).asInstanceOf[Predicate]
+  inline def and(args: Predicate*): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Predicate]
   
   inline def not(operand: Predicate): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(operand.asInstanceOf[js.Any]).asInstanceOf[Predicate]
   
-  inline def or(args: Predicate*): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(args.asInstanceOf[js.Any]).asInstanceOf[Predicate]
+  inline def or(args: Predicate*): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Predicate]
 }

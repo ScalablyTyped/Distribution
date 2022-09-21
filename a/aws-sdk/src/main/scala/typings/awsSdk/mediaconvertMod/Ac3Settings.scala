@@ -27,9 +27,19 @@ trait Ac3Settings extends StObject {
   var Dialnorm: js.UndefOr[integerMin1Max31] = js.undefined
   
   /**
-    * If set to FILM_STANDARD, adds dynamic range compression signaling to the output bitstream as defined in the Dolby Digital specification.
+    * Choose the Dolby Digital dynamic range control (DRC) profile that MediaConvert uses when encoding the metadata in the Dolby Digital stream for the line operating mode. Related setting: When you use this setting, MediaConvert ignores any value you provide for Dynamic range compression profile (DynamicRangeCompressionProfile). For information about the Dolby Digital DRC operating modes and profiles, see the Dynamic Range Control chapter of the Dolby Metadata Guide at https://developer.dolby.com/globalassets/professional/documents/dolby-metadata-guide.pdf.
+    */
+  var DynamicRangeCompressionLine: js.UndefOr[Ac3DynamicRangeCompressionLine] = js.undefined
+  
+  /**
+    * When you want to add Dolby dynamic range compression (DRC) signaling to your output stream, we recommend that you use the mode-specific settings instead of Dynamic range compression profile (DynamicRangeCompressionProfile). The mode-specific settings are Dynamic range compression profile, line mode (dynamicRangeCompressionLine) and Dynamic range compression profile, RF mode (dynamicRangeCompressionRf). Note that when you specify values for all three settings, MediaConvert ignores the value of this setting in favor of the mode-specific settings. If you do use this setting instead of the mode-specific settings, choose None (NONE) to leave out DRC signaling. Keep the default Film standard (FILM_STANDARD) to set the profile to Dolby's film standard profile for all operating modes.
     */
   var DynamicRangeCompressionProfile: js.UndefOr[Ac3DynamicRangeCompressionProfile] = js.undefined
+  
+  /**
+    * Choose the Dolby Digital dynamic range control (DRC) profile that MediaConvert uses when encoding the metadata in the Dolby Digital stream for the RF operating mode. Related setting: When you use this setting, MediaConvert ignores any value you provide for Dynamic range compression profile (DynamicRangeCompressionProfile). For information about the Dolby Digital DRC operating modes and profiles, see the Dynamic Range Control chapter of the Dolby Metadata Guide at https://developer.dolby.com/globalassets/professional/documents/dolby-metadata-guide.pdf.
+    */
+  var DynamicRangeCompressionRf: js.UndefOr[Ac3DynamicRangeCompressionRf] = js.undefined
   
   /**
     * Applies a 120Hz lowpass filter to the LFE channel prior to encoding. Only valid with 3_2_LFE coding mode.
@@ -71,9 +81,17 @@ object Ac3Settings {
     
     inline def setDialnormUndefined: Self = StObject.set(x, "Dialnorm", js.undefined)
     
+    inline def setDynamicRangeCompressionLine(value: Ac3DynamicRangeCompressionLine): Self = StObject.set(x, "DynamicRangeCompressionLine", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicRangeCompressionLineUndefined: Self = StObject.set(x, "DynamicRangeCompressionLine", js.undefined)
+    
     inline def setDynamicRangeCompressionProfile(value: Ac3DynamicRangeCompressionProfile): Self = StObject.set(x, "DynamicRangeCompressionProfile", value.asInstanceOf[js.Any])
     
     inline def setDynamicRangeCompressionProfileUndefined: Self = StObject.set(x, "DynamicRangeCompressionProfile", js.undefined)
+    
+    inline def setDynamicRangeCompressionRf(value: Ac3DynamicRangeCompressionRf): Self = StObject.set(x, "DynamicRangeCompressionRf", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicRangeCompressionRfUndefined: Self = StObject.set(x, "DynamicRangeCompressionRf", js.undefined)
     
     inline def setLfeFilter(value: Ac3LfeFilter): Self = StObject.set(x, "LfeFilter", value.asInstanceOf[js.Any])
     

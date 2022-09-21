@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WebXRGenericTriggerMotionController")
 @js.native
-class WebXRGenericTriggerMotionController protected ()
+open class WebXRGenericTriggerMotionController protected ()
   extends typings.babylonjs.xRIndexMod.WebXRGenericTriggerMotionController {
   def this(
     scene: typings.babylonjs.sceneMod.Scene,

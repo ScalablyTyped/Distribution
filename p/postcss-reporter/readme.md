@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-reporter
 
-Typings are for version 6.0
+Typings are for version 7.0
 
 ## Library description:
 Log PostCSS messages in the console
@@ -10,10 +10,10 @@ Log PostCSS messages in the console
 | ------------------ | :-------------: |
 | Full name          | postcss-reporter |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 244 |
-| # downloads        | 85181900 |
-| # stars            | 4 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 5515559.666666667 |
+| # stars            | 153.0 |
 
 ## Links
 - [Homepage](https://github.com/postcss/postcss-reporter#readme)

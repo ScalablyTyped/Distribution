@@ -23,7 +23,7 @@ object mod {
         var promise: js.Promise[T] = js.native
         
         def reject(): Unit = js.native
-        def reject(reason: js.Any): Unit = js.native
+        def reject(reason: Any): Unit = js.native
         
         def resolve(): Unit = js.native
         def resolve(value: T): Unit = js.native

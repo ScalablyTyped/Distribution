@@ -38,13 +38,13 @@ object LoadBalancerBackend {
     
     inline def setHealthCheckAllowingFirewallRulesUndefined: Self = StObject.set(x, "healthCheckAllowingFirewallRules", js.undefined)
     
-    inline def setHealthCheckAllowingFirewallRulesVarargs(value: String*): Self = StObject.set(x, "healthCheckAllowingFirewallRules", js.Array(value :_*))
+    inline def setHealthCheckAllowingFirewallRulesVarargs(value: String*): Self = StObject.set(x, "healthCheckAllowingFirewallRules", js.Array(value*))
     
     inline def setHealthCheckBlockingFirewallRules(value: js.Array[String]): Self = StObject.set(x, "healthCheckBlockingFirewallRules", value.asInstanceOf[js.Any])
     
     inline def setHealthCheckBlockingFirewallRulesUndefined: Self = StObject.set(x, "healthCheckBlockingFirewallRules", js.undefined)
     
-    inline def setHealthCheckBlockingFirewallRulesVarargs(value: String*): Self = StObject.set(x, "healthCheckBlockingFirewallRules", js.Array(value :_*))
+    inline def setHealthCheckBlockingFirewallRulesVarargs(value: String*): Self = StObject.set(x, "healthCheckBlockingFirewallRules", js.Array(value*))
     
     inline def setHealthCheckFirewallState(value: String): Self = StObject.set(x, "healthCheckFirewallState", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.vexflow.mod.Flow
 
+import typings.vexflow.anon.FillStyle_
 import typings.vexflow.anon.GetContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.Repetition")
 @js.native
-class Repetition protected ()
+open class Repetition protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Repetition {
   def this(`type`: typings.vexflow.Vex.Flow.Repetition.`type`, x: Double, y_shift: Double) = this()
@@ -47,6 +48,9 @@ class Repetition protected ()
   override def getPosition(): Double = js.native
   
   /* CompleteClass */
+  override def getStyle(): FillStyle_ = js.native
+  
+  /* CompleteClass */
   override def getWidth(): Double = js.native
   
   /* CompleteClass */
@@ -63,6 +67,10 @@ class Repetition protected ()
   
   /* CompleteClass */
   override def setShiftY(y: Double): typings.vexflow.Vex.Flow.Repetition = js.native
+  
+  // (StaveModifier extends Element in vexflow, but not in these definitions, probably because of a typing problem)
+  /* CompleteClass */
+  override def setStyle(style: FillStyle_): typings.vexflow.Vex.Flow.StaveModifier = js.native
 }
 object Repetition {
   

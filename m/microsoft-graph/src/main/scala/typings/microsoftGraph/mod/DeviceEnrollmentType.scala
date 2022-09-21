@@ -16,6 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.windowsAutoEnrollment
   - typings.microsoftGraph.microsoftGraphStrings.windowsBulkAzureDomainJoin
   - typings.microsoftGraph.microsoftGraphStrings.windowsCoManagement
+  - typings.microsoftGraph.microsoftGraphStrings.windowsAzureADJoinUsingDeviceAuth
+  - typings.microsoftGraph.microsoftGraphStrings.appleUserEnrollment
+  - typings.microsoftGraph.microsoftGraphStrings.appleUserEnrollmentWithServiceAccount
 */
 trait DeviceEnrollmentType extends StObject
 object DeviceEnrollmentType {
@@ -23,6 +26,10 @@ object DeviceEnrollmentType {
   inline def appleBulkWithUser: typings.microsoftGraph.microsoftGraphStrings.appleBulkWithUser = "appleBulkWithUser".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.appleBulkWithUser]
   
   inline def appleBulkWithoutUser: typings.microsoftGraph.microsoftGraphStrings.appleBulkWithoutUser = "appleBulkWithoutUser".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.appleBulkWithoutUser]
+  
+  inline def appleUserEnrollment: typings.microsoftGraph.microsoftGraphStrings.appleUserEnrollment = "appleUserEnrollment".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.appleUserEnrollment]
+  
+  inline def appleUserEnrollmentWithServiceAccount: typings.microsoftGraph.microsoftGraphStrings.appleUserEnrollmentWithServiceAccount = "appleUserEnrollmentWithServiceAccount".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.appleUserEnrollmentWithServiceAccount]
   
   inline def deviceEnrollmentManager: typings.microsoftGraph.microsoftGraphStrings.deviceEnrollmentManager = "deviceEnrollmentManager".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceEnrollmentManager]
   
@@ -33,6 +40,8 @@ object DeviceEnrollmentType {
   inline def windowsAutoEnrollment: typings.microsoftGraph.microsoftGraphStrings.windowsAutoEnrollment = "windowsAutoEnrollment".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsAutoEnrollment]
   
   inline def windowsAzureADJoin: typings.microsoftGraph.microsoftGraphStrings.windowsAzureADJoin = "windowsAzureADJoin".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsAzureADJoin]
+  
+  inline def windowsAzureADJoinUsingDeviceAuth: typings.microsoftGraph.microsoftGraphStrings.windowsAzureADJoinUsingDeviceAuth = "windowsAzureADJoinUsingDeviceAuth".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsAzureADJoinUsingDeviceAuth]
   
   inline def windowsBulkAzureDomainJoin: typings.microsoftGraph.microsoftGraphStrings.windowsBulkAzureDomainJoin = "windowsBulkAzureDomainJoin".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsBulkAzureDomainJoin]
   

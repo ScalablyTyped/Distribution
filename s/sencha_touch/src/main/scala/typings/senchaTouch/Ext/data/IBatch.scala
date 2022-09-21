@@ -13,7 +13,7 @@ trait IBatch
   /** [Method] Adds a new operation to this batch
     * @param operation Object The Operation object.
     */
-  var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var add: js.UndefOr[js.Function1[/* operation */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var autoStart: js.UndefOr[Boolean] = js.undefined
@@ -64,7 +64,7 @@ trait IBatch
     */
   @JSName("relayEvents")
   var relayEvents_IBatch: js.UndefOr[
-    js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+    js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
   ] = js.undefined
   
   /** [Method] Executes a operation by its numeric index
@@ -102,7 +102,7 @@ object IBatch {
   
   extension [Self <: IBatch](x: Self) {
     
-    inline def setAdd(value: /* operation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* operation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
@@ -154,7 +154,7 @@ object IBatch {
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     

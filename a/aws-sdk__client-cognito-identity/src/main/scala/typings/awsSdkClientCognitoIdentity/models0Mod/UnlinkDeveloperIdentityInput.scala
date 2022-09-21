@@ -33,12 +33,6 @@ object UnlinkDeveloperIdentityInput {
     __obj.asInstanceOf[UnlinkDeveloperIdentityInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "UnlinkDeveloperIdentityInput")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: UnlinkDeveloperIdentityInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: UnlinkDeveloperIdentityInput](x: Self) {
     
     inline def setDeveloperProviderName(value: String): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])

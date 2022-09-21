@@ -55,14 +55,14 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("kefir", "default.Observable")
     @js.native
-    class ObservableCls[T, S] () extends Observable[T, S]
+    open class ObservableCls[T, S] () extends Observable[T, S]
     
     inline def Observable_=(x: Instantiable0[Observable[js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Observable")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("kefir", "default.Pool")
     @js.native
-    class PoolCls[T, S] () extends Pool_[T, S]
+    open class PoolCls[T, S] () extends Pool_[T, S]
     
     @JSImport("kefir", "default.Pool")
     @js.native
@@ -77,14 +77,14 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("kefir", "default.Property")
     @js.native
-    class PropertyCls[T, S] () extends Property[T, S]
+    open class PropertyCls[T, S] () extends Property[T, S]
     
     inline def Property_=(x: Instantiable0[Property[js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Property")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("kefir", "default.Stream")
     @js.native
-    class StreamCls[T, S] () extends Stream_[T, S]
+    open class StreamCls[T, S] () extends Stream_[T, S]
     
     @JSImport("kefir", "default.Stream")
     @js.native
@@ -95,52 +95,28 @@ object mod {
     @JSImport("kefir", "default.combine")
     @js.native
     def combine: FnCallObssObssPCombinator = js.native
-    inline def combine[T /* <: js.Tuple5[
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any]
-      ] */](obss: T): Stream_[
-        js.Tuple5[
+    inline def combine[T /* <: js.Tuple2[Observable[Any, Any], Observable[Any, Any]] */](obss: T): Stream_[
+        js.Tuple2[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
           ], 
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-          ], 
-          ValueOfAnObservable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
-          ], 
-          ValueOfAnObservable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
-          ], 
-          ValueOfAnObservable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
-        js.Tuple5[
+        js.Tuple2[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
           ], 
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-          ], 
-          ValueOfAnObservable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
-          ], 
-          ValueOfAnObservable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
-          ], 
-          ValueOfAnObservable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ]]
-    inline def combine[T /* <: StringDictionary[Observable[js.Any, js.Any]] */, K /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any]]
+    inline def combine[T /* <: StringDictionary[Observable[Any, Any]] */, K /* <: StringDictionary[Observable[Any, Any]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], Any]]
     inline def combine[T, S, U](obss: js.Array[Observable[T, S]], combinator: js.Function1[/* repeated */ T, U]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
     inline def combine[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
     inline def combine[T, S, U](
@@ -149,7 +125,7 @@ object mod {
       combinator: js.Function1[/* repeated */ T, U]
     ): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
     
-    inline def combine_0[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: js.Array[Observable[js.Any, js.Any]] */, K](
+    inline def combine_0[T /* <: js.Array[Observable[Any, Any]] */, P /* <: js.Array[Observable[Any, Any]] */, K](
       obss: T,
       obssP: P,
       combinator: js.Function2[
@@ -157,79 +133,57 @@ object mod {
           /* import warning: importer.ImportType#apply Failed type conversion: P[0][''] */ /* b */ js.Any, 
           K
         ]
-    ): Observable[K, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], obssP.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[K, js.Any]]
+    ): Observable[K, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], obssP.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[K, Any]]
     
     inline def combine_=(x: FnCallObssObssPCombinator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combine")(x.asInstanceOf[js.Any])
     
     inline def combine_T_ArrayNothing[T /* <: js.Array[scala.Nothing] */](obss: T): Stream_[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[scala.Nothing, scala.Nothing]]
     
-    inline def combine_T_ArrayObservableAnyAny[T /* <: js.Array[Observable[js.Any, js.Any]] */](obss: T): Stream_[
+    inline def combine_T_ArrayObservableAnyAny[T /* <: js.Array[Observable[Any, Any]] */](obss: T): Stream_[
         js.Array[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
         js.Array[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ]]
     
-    inline def combine_T_ArrayObservableAnyAnyP_String[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: /* keyof T */ String */](obss: T): Stream_[
+    inline def combine_T_ArrayObservableAnyAnyP_String[T /* <: js.Array[Observable[Any, Any]] */, P /* <: /* keyof T */ String */](obss: T): Stream_[
         js.Array[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
         js.Array[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ]]
     
-    inline def combine_T_StringDictionaryObservableAnyAny[T /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T): Stream_[
+    inline def combine_T_StringDictionaryObservableAnyAny[T /* <: StringDictionary[Observable[Any, Any]] */](obss: T): Stream_[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>}
       */ combine & TopLevel[T], 
-        js.Any
+        Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>}
       */ combine & TopLevel[T], 
-        js.Any
+        Any
       ]]
     
-    inline def combine_T_Tuple2ObservableAnyAnyObservableAnyAny[T /* <: js.Tuple2[Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
-        js.Tuple2[
-          ValueOfAnObservable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-          ], 
-          ValueOfAnObservable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-          ]
-        ], 
-        js.Any
-      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
-        js.Tuple2[
-          ValueOfAnObservable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-          ], 
-          ValueOfAnObservable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-          ]
-        ], 
-        js.Any
-      ]]
-    
-    inline def combine_T_Tuple3ObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple3[Observable[js.Any, js.Any], Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
+    inline def combine_T_Tuple3ObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple3[Observable[Any, Any], Observable[Any, Any], Observable[Any, Any]] */](obss: T): Stream_[
         js.Tuple3[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -241,7 +195,7 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
         js.Tuple3[
           ValueOfAnObservable[
@@ -254,16 +208,51 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ]]
     
-    inline def combine_T_Tuple4ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple4[
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any]
+    inline def combine_T_Tuple4ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple4[Observable[Any, Any], Observable[Any, Any], Observable[Any, Any], Observable[Any, Any]] */](obss: T): Stream_[
+        js.Tuple4[
+          ValueOfAnObservable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+          ], 
+          ValueOfAnObservable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+          ], 
+          ValueOfAnObservable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+          ], 
+          ValueOfAnObservable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+          ]
+        ], 
+        Any
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
+        js.Tuple4[
+          ValueOfAnObservable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+          ], 
+          ValueOfAnObservable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+          ], 
+          ValueOfAnObservable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+          ], 
+          ValueOfAnObservable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+          ]
+        ], 
+        Any
+      ]]
+    
+    inline def combine_T_Tuple5ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple5[
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any]
       ] */](obss: T): Stream_[
-        js.Tuple4[
+        js.Tuple5[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
           ], 
@@ -275,11 +264,14 @@ object mod {
           ], 
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+          ], 
+          ValueOfAnObservable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
-        js.Tuple4[
+        js.Tuple5[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
           ], 
@@ -291,18 +283,21 @@ object mod {
           ], 
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+          ], 
+          ValueOfAnObservable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ]]
     
     inline def combine_T_Tuple6ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple6[
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any]
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any]
       ] */](obss: T): Stream_[
         js.Tuple6[
           ValueOfAnObservable[
@@ -324,7 +319,7 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
         js.Tuple6[
           ValueOfAnObservable[
@@ -346,17 +341,17 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ]]
     
     inline def combine_T_Tuple7ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple7[
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any]
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any]
       ] */](obss: T): Stream_[
         js.Tuple7[
           ValueOfAnObservable[
@@ -381,7 +376,7 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
         js.Tuple7[
           ValueOfAnObservable[
@@ -406,18 +401,18 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ]]
     
     inline def combine_T_Tuple8ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple8[
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any], 
-        Observable[js.Any, js.Any]
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any], 
+        Observable[Any, Any]
       ] */](obss: T): Stream_[
         js.Tuple8[
           ValueOfAnObservable[
@@ -445,7 +440,7 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
         js.Tuple8[
           ValueOfAnObservable[
@@ -473,7 +468,7 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any
           ]
         ], 
-        js.Any
+        Any
       ]]
     
     @JSImport("kefir", "default.concat")
@@ -504,7 +499,7 @@ object mod {
     @JSImport("kefir", "default.fromESObservable")
     @js.native
     def fromESObservable: FnCallObservable = js.native
-    inline def fromESObservable[T, S](observable: js.Any): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(observable.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
+    inline def fromESObservable[T, S](observable: Any): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(observable.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
     inline def fromESObservable_=(x: FnCallObservable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromESObservable")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.fromEvents")
@@ -606,7 +601,7 @@ object mod {
   
   @JSImport("kefir", "Observable")
   @js.native
-  class Observable[T, S] () extends StObject {
+  open class Observable[T, S] () extends StObject {
     
     @JSName("")
     var _empty: T = js.native
@@ -664,20 +659,20 @@ object mod {
     @JSName("filter")
     def filter_U_T[U /* <: T */](fn: js.Function1[/* value */ T, /* is U */ Boolean]): Observable[U, S] = js.native
     
-    def flatMap[X /* <: T & (Property[T, js.Any]) */](): Observable[ValueOfAnObservable[X], js.Any] = js.native
+    def flatMap[X /* <: T & (Property[T, Any]) */](): Observable[ValueOfAnObservable[X], Any] = js.native
     def flatMap[U, V](transform: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V | S] = js.native
     
-    def flatMapConcat[X /* <: T & (Property[T, js.Any]) */](): Observable[ValueOfAnObservable[X], js.Any] = js.native
+    def flatMapConcat[X /* <: T & (Property[T, Any]) */](): Observable[ValueOfAnObservable[X], Any] = js.native
     def flatMapConcat[U, V](fn: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V | S] = js.native
     
     def flatMapConcurLimit[U, V](fn: js.Function1[/* value */ T, Observable[U, V]], limit: Double): Observable[U, V | S] = js.native
     
     def flatMapErrors[U, V](transform: js.Function1[/* error */ S, Observable[U, V]]): Observable[U | T, V] = js.native
     
-    def flatMapFirst[X /* <: T & (Property[T, js.Any]) */](): Observable[ValueOfAnObservable[X], js.Any] = js.native
+    def flatMapFirst[X /* <: T & (Property[T, Any]) */](): Observable[ValueOfAnObservable[X], Any] = js.native
     def flatMapFirst[U, V](fn: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V | S] = js.native
     
-    def flatMapLatest[X /* <: T & (Property[T, js.Any]) */](): Observable[ValueOfAnObservable[X], js.Any] = js.native
+    def flatMapLatest[X /* <: T & (Property[T, Any]) */](): Observable[ValueOfAnObservable[X], Any] = js.native
     def flatMapLatest[U, V](fn: js.Function1[/* value */ T, Observable[U, V]]): Observable[U, V | S] = js.native
     
     def flatten[U](): Stream_[U, S] = js.native
@@ -739,14 +734,14 @@ object mod {
     // Subscribe / add side effects
     def onValue(callback: js.Function1[/* value */ T, Unit]): this.type = js.native
     
-    def sampledBy(otherObs: Observable[js.Any, js.Any]): Observable[T, S] = js.native
-    def sampledBy[U, W](otherObs: Observable[U, js.Any], combinator: js.Function2[/* a */ T, /* b */ U, W]): Observable[W, S] = js.native
+    def sampledBy(otherObs: Observable[Any, Any]): Observable[T, S] = js.native
+    def sampledBy[U, W](otherObs: Observable[U, Any], combinator: js.Function2[/* a */ T, /* b */ U, W]): Observable[W, S] = js.native
     
     def scan[W](fn: js.Function2[/* prev */ T | W, /* next */ T, W]): Observable[W, S] = js.native
     def scan[W](fn: js.Function2[/* prev */ W, /* next */ T, W], seed: W): Observable[W, S] = js.native
     
     def setName(selfName: String): this.type = js.native
-    def setName(source: Observable[js.Any, js.Any], selfName: String): this.type = js.native
+    def setName(source: Observable[Any, Any], selfName: String): this.type = js.native
     
     def skip(n: Double): Observable[T, S] = js.native
     
@@ -789,12 +784,12 @@ object mod {
     @JSName("toProperty")
     def toProperty_T2[T2](): Property[T | T2, S] = js.native
     
-    def transduce[U](transducer: js.Any): Observable[U, S] = js.native
+    def transduce[U](transducer: Any): Observable[U, S] = js.native
     
     def valuesToErrors(): Observable[scala.Nothing, S | T] = js.native
     def valuesToErrors[U](handler: js.Function1[/* value */ T, Convert[U]]): Observable[scala.Nothing, S | U] = js.native
     
-    def withHandler[U, V](handler: js.Function2[/* emitter */ Emitter[U, S], /* event */ Event[T, S], Unit]): Observable[U, S] = js.native
+    def withHandler[U, V](handler: js.Function2[/* emitter */ Emitter[U, V], /* event */ Event[T, S], Unit]): Observable[U, V] = js.native
     
     def zip[U, V, W](otherObs: Observable[U, V]): Observable[W, S | V] = js.native
     def zip[U, V, W](otherObs: Observable[U, V], combinator: js.Function2[/* value */ T, /* repeated */ U, W]): Observable[W, S | V] = js.native
@@ -802,7 +797,7 @@ object mod {
   
   @JSImport("kefir", "Pool")
   @js.native
-  class Pool_[T, S] () extends Observable[T, S] {
+  open class Pool_[T, S] () extends Observable[T, S] {
     
     def plug(obs: Observable[T, S]): this.type = js.native
     
@@ -811,58 +806,34 @@ object mod {
   
   @JSImport("kefir", "Property")
   @js.native
-  class Property[T, S] () extends Observable[T, S]
+  open class Property[T, S] () extends Observable[T, S]
   
   @JSImport("kefir", "Stream")
   @js.native
-  class Stream_[T, S] () extends Observable[T, S]
+  open class Stream_[T, S] () extends Observable[T, S]
   
-  inline def combine[T /* <: js.Tuple5[
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any]
-  ] */](obss: T): Stream_[
-    js.Tuple5[
+  inline def combine[T /* <: js.Tuple2[Observable[Any, Any], Observable[Any, Any]] */](obss: T): Stream_[
+    js.Tuple2[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ], 
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
-    js.Tuple5[
+    js.Tuple2[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ], 
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ]]
-  inline def combine[T /* <: StringDictionary[Observable[js.Any, js.Any]] */, K /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any]]
+  inline def combine[T /* <: StringDictionary[Observable[Any, Any]] */, K /* <: StringDictionary[Observable[Any, Any]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], Any]]
   inline def combine[T, S, U](obss: js.Array[Observable[T, S]], combinator: js.Function1[/* repeated */ T, U]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
   inline def combine[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
   inline def combine[T, S, U](
@@ -871,7 +842,7 @@ object mod {
     combinator: js.Function1[/* repeated */ T, U]
   ): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
   
-  inline def combine_0[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: js.Array[Observable[js.Any, js.Any]] */, K](
+  inline def combine_0[T /* <: js.Array[Observable[Any, Any]] */, P /* <: js.Array[Observable[Any, Any]] */, K](
     obss: T,
     obssP: P,
     combinator: js.Function2[
@@ -879,77 +850,55 @@ object mod {
       /* import warning: importer.ImportType#apply Failed type conversion: P[0][''] */ /* b */ js.Any, 
       K
     ]
-  ): Observable[K, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], obssP.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[K, js.Any]]
+  ): Observable[K, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], obssP.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[K, Any]]
   
   inline def combine_T_ArrayNothing[T /* <: js.Array[scala.Nothing] */](obss: T): Stream_[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[scala.Nothing, scala.Nothing]]
   
-  inline def combine_T_ArrayObservableAnyAny[T /* <: js.Array[Observable[js.Any, js.Any]] */](obss: T): Stream_[
+  inline def combine_T_ArrayObservableAnyAny[T /* <: js.Array[Observable[Any, Any]] */](obss: T): Stream_[
     js.Array[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
     js.Array[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ]]
   
-  inline def combine_T_ArrayObservableAnyAnyP_String[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: /* keyof T */ String */](obss: T): Stream_[
+  inline def combine_T_ArrayObservableAnyAnyP_String[T /* <: js.Array[Observable[Any, Any]] */, P /* <: /* keyof T */ String */](obss: T): Stream_[
     js.Array[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
     js.Array[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ]]
   
-  inline def combine_T_StringDictionaryObservableAnyAny[T /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T): Stream_[
+  inline def combine_T_StringDictionaryObservableAnyAny[T /* <: StringDictionary[Observable[Any, Any]] */](obss: T): Stream_[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>}
     */ combine & TopLevel[T], 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>}
     */ combine & TopLevel[T], 
-    js.Any
+    Any
   ]]
   
-  inline def combine_T_Tuple2ObservableAnyAnyObservableAnyAny[T /* <: js.Tuple2[Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
-    js.Tuple2[
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-      ]
-    ], 
-    js.Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
-    js.Tuple2[
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-      ]
-    ], 
-    js.Any
-  ]]
-  
-  inline def combine_T_Tuple3ObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple3[Observable[js.Any, js.Any], Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
+  inline def combine_T_Tuple3ObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple3[Observable[Any, Any], Observable[Any, Any], Observable[Any, Any]] */](obss: T): Stream_[
     js.Tuple3[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -961,7 +910,7 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
     js.Tuple3[
       ValueOfAnObservable[
@@ -974,16 +923,51 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ]]
   
-  inline def combine_T_Tuple4ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple4[
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any]
+  inline def combine_T_Tuple4ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple4[Observable[Any, Any], Observable[Any, Any], Observable[Any, Any], Observable[Any, Any]] */](obss: T): Stream_[
+    js.Tuple4[
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ]
+    ], 
+    Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
+    js.Tuple4[
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ]
+    ], 
+    Any
+  ]]
+  
+  inline def combine_T_Tuple5ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple5[
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any]
   ] */](obss: T): Stream_[
-    js.Tuple4[
+    js.Tuple5[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ], 
@@ -995,11 +979,14 @@ object mod {
       ], 
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
-    js.Tuple4[
+    js.Tuple5[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
       ], 
@@ -1011,18 +998,21 @@ object mod {
       ], 
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ]]
   
   inline def combine_T_Tuple6ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple6[
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any]
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any]
   ] */](obss: T): Stream_[
     js.Tuple6[
       ValueOfAnObservable[
@@ -1044,7 +1034,7 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
     js.Tuple6[
       ValueOfAnObservable[
@@ -1066,17 +1056,17 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ]]
   
   inline def combine_T_Tuple7ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple7[
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any]
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any]
   ] */](obss: T): Stream_[
     js.Tuple7[
       ValueOfAnObservable[
@@ -1101,7 +1091,7 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
     js.Tuple7[
       ValueOfAnObservable[
@@ -1126,18 +1116,18 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ]]
   
   inline def combine_T_Tuple8ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple8[
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any], 
-    Observable[js.Any, js.Any]
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any], 
+    Observable[Any, Any]
   ] */](obss: T): Stream_[
     js.Tuple8[
       ValueOfAnObservable[
@@ -1165,7 +1155,7 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[
     js.Tuple8[
       ValueOfAnObservable[
@@ -1193,7 +1183,7 @@ object mod {
         /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any
       ]
     ], 
-    js.Any
+    Any
   ]]
   
   inline def concat[T, S](obss: js.Array[Observable[T, S]]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
@@ -1204,7 +1194,7 @@ object mod {
   
   inline def fromCallback[T](fn: js.Function1[/* callback */ js.Function1[/* value */ T, Unit], Unit]): Stream_[T, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, scala.Nothing]]
   
-  inline def fromESObservable[T, S](observable: js.Any): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(observable.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
+  inline def fromESObservable[T, S](observable: Any): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(observable.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
   
   inline def fromEvents[T, S](target: Off, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
   inline def fromEvents[T, S](target: Off, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
@@ -1277,11 +1267,11 @@ object mod {
   
   trait ESObserver[T, S] extends StObject {
     
-    var complete: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var complete: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* error */ S, js.Any]] = js.undefined
+    var error: js.UndefOr[js.Function1[/* error */ S, Any]] = js.undefined
     
-    var next: js.UndefOr[js.Function1[/* value */ T, js.Any]] = js.undefined
+    var next: js.UndefOr[js.Function1[/* value */ T, Any]] = js.undefined
     
     var start: js.UndefOr[js.Function] = js.undefined
   }
@@ -1294,15 +1284,15 @@ object mod {
     
     extension [Self <: ESObserver[?, ?], T, S](x: Self & (ESObserver[T, S])) {
       
-      inline def setComplete(value: () => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      inline def setError(value: /* error */ S => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* error */ S => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setNext(value: /* value */ T => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: /* value */ T => Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
       inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
@@ -1436,5 +1426,5 @@ object mod {
     }
   }
   
-  type ValueOfAnObservable[T /* <: Observable[js.Any, js.Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: T[''] */ js.Any
+  type ValueOfAnObservable[T /* <: Observable[Any, Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: T[''] */ js.Any
 }

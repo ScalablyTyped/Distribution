@@ -11,16 +11,18 @@ trait HTMLDataListElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** Returns an HTMLCollection of the option elements of the datalist element. */
+  /* standard dom */
   val options: HTMLCollectionOf[HTMLOptionElement] = js.native
   
   /* InferMemberOverrides */

@@ -10,10 +10,10 @@ Returns true if an object was created by the `Object` constructor, or Object.cre
 | ------------------ | :-------------: |
 | Full name          | is-plain-object |
 | Keywords           | check, is, is-object, isobject, javascript, kind, kind-of, object, plain, type, typeof, value |
-| # releases         | 7 |
-| # dependents       | 824 |
-| # downloads        | 877045841 |
-| # stars            | 5 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.34257922E8 |
+| # stars            | 124.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/is-plain-object)

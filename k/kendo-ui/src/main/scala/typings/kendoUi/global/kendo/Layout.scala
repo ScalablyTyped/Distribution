@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.Layout")
 @js.native
-class Layout ()
+open class Layout ()
   extends StObject
      with typings.kendoUi.kendo.Layout

@@ -8,5 +8,5 @@ object describeStreamSummaryMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/DescribeStreamSummary", "DescribeStreamSummary")
   @js.native
-  val DescribeStreamSummary: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DescribeStreamSummary: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

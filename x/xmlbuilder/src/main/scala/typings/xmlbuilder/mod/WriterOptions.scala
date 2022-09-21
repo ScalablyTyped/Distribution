@@ -52,7 +52,7 @@ trait WriterOptions extends StObject {
   /**
     * User state object that is saved between writer functions
     */
-  var user: js.UndefOr[js.Any] = js.undefined
+  var user: js.UndefOr[Any] = js.undefined
   
   /**
     * Maximum column width
@@ -105,7 +105,7 @@ object WriterOptions {
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     

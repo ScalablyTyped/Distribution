@@ -12,7 +12,7 @@ trait LocationFilter extends StObject {
   var Name: LocationFilterName
   
   /**
-    * The operator that is used to compare filter values (for example, Equals or Contains). For more about API filtering operators, see query-resources.
+    * The operator that is used to compare filter values (for example, Equals or Contains).
     */
   var Operator: typings.awsSdk.datasyncMod.Operator
   
@@ -36,6 +36,6 @@ object LocationFilter {
     
     inline def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: FilterAttributeValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterAttributeValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

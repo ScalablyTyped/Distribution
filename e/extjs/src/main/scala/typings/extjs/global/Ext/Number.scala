@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.Number")
 @js.native
-class Number ()
+open class Number ()
   extends StObject
      with typings.extjs.Ext.Number
 /* static members */
@@ -44,8 +44,8 @@ object Number {
     * @returns Number value, if numeric, defaultValue otherwise
     */
   inline def from(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[Double]
-  inline def from(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def from(value: js.Any, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def from(value: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def from(value: Any, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def from(value: Unit, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /** [Method] Returns a random integer between the specified range inclusive

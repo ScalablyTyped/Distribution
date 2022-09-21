@@ -10,15 +10,12 @@ Truncate text for React.js
 | ------------------ | :-------------: |
 | Full name          | react-text-truncate |
 | Keywords           | react, react-component, text, truncate |
-| # releases         | 5 |
-| # dependents       | 28 |
-| # downloads        | 1335236 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 219912.33333333334 |
+| # stars            | 295.0 |
 
 ## Links
-- [Homepage](https://github.com/ShinyChang/react-text-truncate)
-- [Bugs](https://github.com/ShinyChang/react-text-truncate/issues)
-- [Repository](https://github.com/ShinyChang/react-text-truncate)
 - [Npm](https://www.npmjs.com/package/react-text-truncate)
     
 

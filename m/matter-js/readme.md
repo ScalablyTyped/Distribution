@@ -1,7 +1,7 @@
 
 # Scala.js typings for matter-js
 
-Typings are for version 0.14.2
+Typings are for version 0.18
 
 ## Library description:
 a 2D rigid body physics engine for the web
@@ -10,10 +10,10 @@ a 2D rigid body physics engine for the web
 | ------------------ | :-------------: |
 | Full name          | matter-js |
 | Keywords           | javascript, canvas, html5, physics, physics engine, game engine, rigid body physics |
-| # releases         | 2 |
-| # dependents       | 48 |
-| # downloads        | 194462 |
-| # stars            | 6 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 39835.666666666664 |
+| # stars            | 13398.0 |
 
 ## Links
 - [Homepage](http://brm.io/matter-js/)

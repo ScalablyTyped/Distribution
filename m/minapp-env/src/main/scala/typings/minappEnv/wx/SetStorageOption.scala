@@ -10,7 +10,7 @@ trait SetStorageOption extends StObject {
   var complete: js.UndefOr[SetStorageCompleteCallback] = js.undefined
   
   /** 需要存储的内容。只支持原生类型、Date、及能够通过`JSON.stringify`序列化的对象。 */
-  var data: js.Any
+  var data: Any
   
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[SetStorageFailCallback] = js.undefined
@@ -23,7 +23,7 @@ trait SetStorageOption extends StObject {
 }
 object SetStorageOption {
   
-  inline def apply(data: js.Any, key: String): SetStorageOption = {
+  inline def apply(data: Any, key: String): SetStorageOption = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStorageOption]
   }
@@ -34,7 +34,7 @@ object SetStorageOption {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ProtectedViewWindows")
 @js.native
-/* private */ class ProtectedViewWindows ()
+/* private */ open class ProtectedViewWindows ()
   extends StObject
      with typings.activexWord.Word.ProtectedViewWindows

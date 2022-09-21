@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("chartmogul-node", "ConfigurationError")
 @js.native
-class ConfigurationError () extends ChartMogulError
+open class ConfigurationError () extends ChartMogulError

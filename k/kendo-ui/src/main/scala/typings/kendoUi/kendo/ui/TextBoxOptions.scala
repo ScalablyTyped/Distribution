@@ -10,6 +10,8 @@ trait TextBoxOptions extends StObject {
   
   var enable: js.UndefOr[Boolean] = js.undefined
   
+  var fillMode: js.UndefOr[String] = js.undefined
+  
   var label: js.UndefOr[String | js.Function | TextBoxLabel] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
@@ -17,6 +19,10 @@ trait TextBoxOptions extends StObject {
   var placeholder: js.UndefOr[String] = js.undefined
   
   var readonly: js.UndefOr[Boolean] = js.undefined
+  
+  var rounded: js.UndefOr[String] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var value: js.UndefOr[String] = js.undefined
 }
@@ -37,6 +43,10 @@ object TextBoxOptions {
     
     inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
+    
     inline def setLabel(value: String | js.Function | TextBoxLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
@@ -52,6 +62,14 @@ object TextBoxOptions {
     inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

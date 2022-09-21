@@ -38,7 +38,7 @@ trait XSlideShow
     * This method adds a listener to the slide show, which will get notified when a mouse click is performed on the given shape. This can be used by clients
     * of the slide show to trigger external actions, such as jumps to different slides.
     * @param xListener Listener to add.
-    * @param xShape {@link Shape} to register a listener for.
+    * @param xShape The {@link Shape} to register a listener for.
     */
   def addShapeEventListener(xListener: XShapeEventListener, xShape: XShape): Unit
   
@@ -124,7 +124,7 @@ trait XSlideShow
   /**
     * Revoke a previously registered shape event listener.
     * @param xListener Listener interface to revoke from being called.
-    * @param xShape {@link Shape} for which the listener should be revoked.
+    * @param xShape for which the listener should be revoked.
     */
   def removeShapeEventListener(xListener: XShapeEventListener, xShape: XShape): Unit
   
@@ -153,7 +153,7 @@ trait XSlideShow
     * Set a special mouse cursor for a shape.
     *
     * This method requests the slide show to display a special cursor, whenever the mouse is hovering over the given shape.
-    * @param xShape {@link Shape} to display a special mouse cursor.
+    * @param xShape The {@link Shape} to display a special mouse cursor.
     * @param nPointerShape Type of mouse cursor to display. Must be one of the {@link com.sun.star.awt.SystemPointer} values.
     */
   def setShapeCursor(xShape: XShape, nPointerShape: Double): Unit
@@ -200,7 +200,7 @@ object XSlideShow {
     nextEffect: () => Boolean,
     pause: Boolean => Boolean,
     previousEffect: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerUserPaintPolygons: XMultiServiceFactory => Unit,
     release: () => Unit,
     removeShapeEventListener: (XShapeEventListener, XShape) => Unit,

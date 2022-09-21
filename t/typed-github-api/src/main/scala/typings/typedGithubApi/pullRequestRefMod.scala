@@ -13,7 +13,7 @@ object pullRequestRefMod {
   
   @JSImport("typed-github-api/dist/pull-request-ref", "PullRequestRefClass")
   @js.native
-  class PullRequestRefClass protected ()
+  open class PullRequestRefClass protected ()
     extends GitHubRef
        with PullRequestRef {
     def this(repository: RepositoryRefClass, pullRequestNumber: Double) = this()

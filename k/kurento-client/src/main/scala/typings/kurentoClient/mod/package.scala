@@ -5,17 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Callback[T] = js.Function2[/* error */ typings.kurentoClient.mod.Error, /* result */ T, scala.Unit]
+type Callback[T] = js.Function2[/* error */ Error, /* result */ T, Unit]
+
+// tslint:disable-next-line
+type Composite = Hub
 
 // interface Endpoint extends MediaElement {}
-type Endpoint = typings.kurentoClient.mod.MediaElement
+type Endpoint = MediaElement
 
-type Event[T /* <: java.lang.String */, E /* <: js.Object */] = typings.kurentoClient.mod.BaseEvent[T] & E
+type Event[T /* <: String */, E /* <: js.Object */] = BaseEvent[T] & E
 
-type MediaServer = typings.kurentoClient.mod.ServerManager
+// tslint:disable-next-line
+type HubPort = MediaElement
 
-// interface SdpEndpoint extends SessionEndpoint {}
-type SdpEndpoint = typings.kurentoClient.mod.SessionEndpoint
+type MediaServer = ServerManager
 
 // interface SessionEndpoint extends Endpoint {}
-type SessionEndpoint = typings.kurentoClient.mod.Endpoint
+type SessionEndpoint = Endpoint

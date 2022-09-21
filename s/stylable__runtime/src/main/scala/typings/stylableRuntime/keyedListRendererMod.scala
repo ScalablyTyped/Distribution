@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object keyedListRendererMod {
   
-  @JSImport("@stylable/runtime/cjs/keyed-list-renderer", JSImport.Namespace)
+  @JSImport("@stylable/runtime/dist/keyed-list-renderer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

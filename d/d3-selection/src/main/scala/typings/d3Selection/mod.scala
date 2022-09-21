@@ -6,8 +6,6 @@ import typings.d3Selection.d3SelectionStrings.important
 import typings.std.Document
 import typings.std.Element
 import typings.std.HTMLElement
-import typings.std.Iterable
-import typings.std.Iterator
 import typings.std.Node
 import typings.std.NodeListOf
 import typings.std.SVGGElement
@@ -23,7 +21,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](name: K): Selection_[
+  inline def create[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](name: K): Selection_[
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
     Unit, 
     Null, 
@@ -36,7 +34,7 @@ object mod {
   ]]
   inline def create[NewGElement /* <: Element */](name: String): Selection_[NewGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[NewGElement, Unit, Null, Unit]]
   
-  inline def creator[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](name: K): js.ThisFunction0[
+  inline def creator[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](name: K): js.ThisFunction0[
     /* this */ BaseType, 
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[
@@ -55,26 +53,24 @@ object mod {
   @js.native
   val namespaces: NamespaceMap = js.native
   
-  inline def pointer(event: js.Any): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
-  inline def pointer(event: js.Any, target: js.Any): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def pointer(event: Any): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def pointer(event: Any, target: Any): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  inline def pointers(event: js.Any): js.Array[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
-  inline def pointers(event: js.Any, target: js.Any): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
+  inline def pointers(event: Any): js.Array[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
+  inline def pointers(event: Any, target: Any): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
   
   inline def select[OldDatum](node: Null): Selection_[Null, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, OldDatum, Null, Unit]]
   inline def select[OldDatum](node: EnterElement): Selection_[EnterElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[EnterElement, OldDatum, Null, Unit]]
   inline def select[OldDatum](node: Document): Selection_[Document, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Document, OldDatum, Null, Unit]]
   inline def select[OldDatum](node: Element): Selection_[Element, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Element, OldDatum, Null, Unit]]
   inline def select[OldDatum](node: Window): Selection_[Window, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Window, OldDatum, Null, Unit]]
-  inline def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
+  inline def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, Any]]
   
   inline def selectAll(): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")().asInstanceOf[Selection_[Null, Unit, Null, Unit]]
-  inline def selectAll(selector: Null): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
-  inline def selectAll(selector: Unit): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
   inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Array[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+  inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Iterable[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
   inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: ArrayLike[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
-  inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: Iterable[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
-  inline def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
+  inline def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, Any]]
   
   @JSImport("d3-selection", "selection")
   @js.native
@@ -153,11 +149,11 @@ object mod {
     /**
       * Any custom data associated with the event
       */
-    var detail: js.Any
+    var detail: Any
   }
   object CustomEventParameters {
     
-    inline def apply(bubbles: Boolean, cancelable: Boolean, detail: js.Any): CustomEventParameters = {
+    inline def apply(bubbles: Boolean, cancelable: Boolean, detail: Any): CustomEventParameters = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomEventParameters]
     }
@@ -168,7 +164,7 @@ object mod {
       
       inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      inline def setDetail(value: js.Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     }
   }
   
@@ -242,11 +238,11 @@ object mod {
       * @param node A node element.
       * @param value Value to store locally
       */
-    def set(node: Element, value: T): Element
+    def set(node: Element, value: T): T
   }
   object Local_ {
     
-    inline def apply[T](get: Element => js.UndefOr[T], remove: Element => Boolean, set: (Element, T) => Element): Local_[T] = {
+    inline def apply[T](get: Element => js.UndefOr[T], remove: Element => Boolean, set: (Element, T) => T): Local_[T] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Local_[T]]
     }
@@ -257,7 +253,7 @@ object mod {
       
       inline def setRemove(value: Element => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      inline def setSet(value: (Element, T) => Element): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (Element, T) => T): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -290,7 +286,7 @@ object mod {
   
   type NamespaceMap = StringDictionary[String]
   
-  type SelectionFn = js.Function0[Selection_[HTMLElement, js.Any, Null, Unit]]
+  type SelectionFn = js.Function0[Selection_[HTMLElement, Any, Null, Unit]]
   
   @js.native
   trait Selection_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PDatum] extends StObject {
@@ -307,7 +303,7 @@ object mod {
       *
       * @param type A string representing the tag name.
       */
-    def append[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K): Selection_[
+    def append[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](`type`: K): Selection_[
         /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
         Datum, 
         PElement, 
@@ -330,6 +326,7 @@ object mod {
       * from the parent element; or, if the name is one of the known prefixes, the corresponding namespace will be used
       * (for example, svg implies svg:svg)
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     def append[ChildElement /* <: BaseType */](`type`: String): Selection_[ChildElement, Datum, PElement, PDatum] = js.native
     /**
       * Appends a new element of the type provided by the element creator function as the last child of each selected element,
@@ -349,6 +346,23 @@ object mod {
       */
     def append[ChildElement /* <: BaseType */](`type`: ValueFn[GElement, Datum, ChildElement]): Selection_[ChildElement, Datum, PElement, PDatum] = js.native
     
+    /**
+      * Sets the attribute with the specified name to the specified value on the selected elements and returns this selection.
+      * If the value is a constant, all elements are given the same attribute value;
+      * otherwise, if the value is a function, it is evaluated for each selected element, in order, being passed the current datum (d),
+      * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]).
+      * The function’s return value is then used to set each element’s attribute.
+      * A null value will remove the specified attribute.
+      */
+    def attr(name: String): this.type = js.native
+    def attr(name: String, value: String): this.type = js.native
+    def attr(name: String, value: js.Array[String | Double]): this.type = js.native
+    def attr(name: String, value: Boolean): this.type = js.native
+    def attr(name: String, value: Double): this.type = js.native
+    def attr(
+      name: String,
+      value: ValueFn[GElement, Datum, Null | String | Double | Boolean | (js.Array[String | Double])]
+    ): this.type = js.native
     // Modifying -------------------------------
     /**
       * Return the current value of the specified attribute for the first (non-null) element in the selection.
@@ -356,33 +370,8 @@ object mod {
       *
       * @param name Name of the attribute
       */
-    def attr(name: String): String = js.native
-    /**
-      * Sets the value of the attribute with the specified name for the selected elements and returns this selection.
-      * All elements are given the same attribute value.
-      *
-      * @param name Name of the attribute
-      * @param value Constant value for the attribute
-      */
-    def attr(name: String, value: String): this.type = js.native
-    def attr(name: String, value: Boolean): this.type = js.native
-    def attr(name: String, value: Double): this.type = js.native
-    /**
-      * Clear the attribute with the specified name for the selected elements and returns this selection.
-      *
-      * @param name Name of the attribute
-      * @param value null,to clear the attribute
-      */
-    def attr(name: String, value: Null): this.type = js.native
-    /**
-      * Sets the value of the attribute with the specified name for the selected elements and returns this selection.
-      * The value for the individual selected elements is determined by the value function.
-      *
-      * @param name Name of the attribute
-      * @param value A value function which is evaluated for each selected element, in order, being passed the current datum (d),
-      * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]).  A null value will clear the attribute.
-      */
-    def attr(name: String, value: ValueFn[GElement, Datum, String | Double | Boolean | Null]): this.type = js.native
+    @JSName("attr")
+    def attr_String(name: String): String = js.native
     
     /**
       * Invoke the specified function exactly once, passing in this selection along with any optional arguments.
@@ -394,10 +383,10 @@ object mod {
     def call(
       func: js.Function2[
           /* selection */ Selection_[GElement, Datum, PElement, PDatum], 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
-      args: js.Any*
+      args: Any*
     ): this.type = js.native
     
     /**
@@ -459,39 +448,8 @@ object mod {
       *
       * The generic refers to the type of the new datum to be used for the selected elements.
       *
-      * @param data The specified data is an array or iterable of arbitrary values (e.g., numbers or objects).
-      * @param key An optional key function which is evaluated for each selected element, in order, being passed the
-      * current datum (d), the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]); the returned string is the element’s key.
-      * The key function is then also evaluated for each new datum in data, being passed the current datum (d),
-      * the current index (i), and the group’s new data, with this as the group’s parent DOM element (nodes[i]); the returned string is the datum’s key.
-      * The datum for a given key is assigned to the element with the matching key. If multiple elements have the same key,
-      * the duplicate elements are put into the exit selection; if multiple data have the same key, the duplicate data are put into the enter selection.
-      */
-    def data[NewDatum](data: js.Array[NewDatum]): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
-    def data[NewDatum](data: js.Array[NewDatum], key: ValueFn[GElement | PElement, Datum | NewDatum, KeyType]): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
-    /**
-      * Joins the data returned by the specified value function with the selected elements, returning a new selection that it represents
-      * the update selection: the elements successfully bound to data. Also defines the enter and exit selections on
-      * the returned selection, which can be used to add or remove elements to correspond to the new data.
-      *
-      * The data is specified for each group in the selection.
-      *
-      * If a key function is not specified, then the first datum in data is assigned to the first selected element,
-      * the second datum to the second selected element, and so on.
-      * A key function may be specified to control which datum is assigned to which element, replacing the default join-by-index,
-      * by computing a string identifier for each datum and element.
-      *
-      * The update and enter selections are returned in data order, while the exit selection preserves the selection
-      * order prior to the join. If a key function is specified, the order of elements in the selection may not match
-      * their order in the document; use selection.order or selection.sort as needed.
-      *
-      * This method cannot be used to clear bound data; use selection.datum instead.
-      *
-      * For details see: {@link https://github.com/d3/d3-selection#joining-data }
-      *
-      * The generic refers to the type of the new datum to be used for the selected elements.
-      *
-      * @param data A value function which will be evaluated for each group in order, being passed the group’s parent datum
+      * @param data The specified data is an array or iterable of arbitrary values (e.g., numbers or objects)
+      * or a value function which will be evaluated for each group in order, being passed the group’s parent datum
       * (d, which may be undefined), the group index (i), and the selection’s parent nodes (nodes),
       * with this as the group’s parent element. The function returns an array or iterable of values for each group.
       * @param key An optional key function which is evaluated for each selected element, in order, being passed the
@@ -501,13 +459,15 @@ object mod {
       * The datum for a given key is assigned to the element with the matching key. If multiple elements have the same key,
       * the duplicate elements are put into the exit selection; if multiple data have the same key, the duplicate data are put into the enter selection.
       */
-    def data[NewDatum](data: ValueFn[PElement, PDatum, js.Array[NewDatum] | Iterable[NewDatum]]): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
+    def data[NewDatum](data: js.Array[NewDatum]): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
+    def data[NewDatum](data: js.Array[NewDatum], key: ValueFn[GElement | PElement, Datum | NewDatum, KeyType]): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
+    def data[NewDatum](data: js.Iterable[NewDatum]): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
+    def data[NewDatum](data: js.Iterable[NewDatum], key: ValueFn[GElement | PElement, Datum | NewDatum, KeyType]): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
+    def data[NewDatum](data: ValueFn[PElement, PDatum, js.Array[NewDatum] | js.Iterable[NewDatum]]): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
     def data[NewDatum](
-      data: ValueFn[PElement, PDatum, js.Array[NewDatum] | Iterable[NewDatum]],
+      data: ValueFn[PElement, PDatum, js.Array[NewDatum] | js.Iterable[NewDatum]],
       key: ValueFn[GElement | PElement, Datum | NewDatum, KeyType]
     ): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
-    def data[NewDatum](data: Iterable[NewDatum]): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
-    def data[NewDatum](data: Iterable[NewDatum], key: ValueFn[GElement | PElement, Datum | NewDatum, KeyType]): Selection_[GElement, NewDatum, PElement, PDatum] = js.native
     
     /**
       * Returns the bound datum for the first (non-null) element in the selection.
@@ -583,6 +543,7 @@ object mod {
       * Ensure you set the generic to the correct type, if you need to access the data on the exit selection in
       * follow-up steps, e.g. to set styles as part of an exit transition before removing them.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     def exit[OldDatum](): Selection_[GElement, OldDatum, PElement, PDatum] = js.native
     
     /**
@@ -619,6 +580,7 @@ object mod {
       *
       * @param selector A CSS selector string to match when filtering.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     @JSName("filter")
     def filter_FilteredElement_BaseType[FilteredElement /* <: BaseType */](selector: String): Selection_[FilteredElement, Datum, PElement, PDatum] = js.native
     /**
@@ -632,34 +594,27 @@ object mod {
       * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). This function should return true
       * for an element to be included, and false otherwise.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     @JSName("filter")
     def filter_FilteredElement_BaseType[FilteredElement /* <: BaseType */](selector: ValueFn[GElement, Datum, Boolean]): Selection_[FilteredElement, Datum, PElement, PDatum] = js.native
     
     /**
+      * Sets the inner HTML to the specified value on all selected elements, replacing any existing child elements.
+      * If the value is a constant, then all elements are given the same inner HTML;
+      * otherwise, if the value is a function, it is evaluated for each selected element, in order, being passed the current datum (d),
+      * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]).
+      * The function’s return value is then used to set each element’s inner HTML.
+      * A null value will clear the content.
+      */
+    def html(): this.type = js.native
+    def html(value: String): this.type = js.native
+    def html(value: ValueFn[GElement, Datum, String | Null]): this.type = js.native
+    /**
       * Returns a string representation of the inner HTML for the first (non-null) element in the selection.
       * This is generally useful only if you know the selection contains exactly one element.
       */
-    def html(): String = js.native
-    /**
-      * Sets the inner HTML to the specified value on all selected elements, replacing any existing child elements.
-      * All elements are given the same inner HTML
-      *
-      * @param value String representation of inner HTML.
-      */
-    def html(value: String): this.type = js.native
-    /**
-      * Clear the html content of the selected elements and return the selection.
-      */
-    def html(value: Null): this.type = js.native
-    /**
-      * Sets the inner HTML to the specified value on all selected elements, replacing any existing child elements.
-      * The inner HTML is determined for each individual element using a value function.
-      *
-      * @param value A value function which is evaluated for each selected element, in order, being passed the current
-      * datum (d), the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]).
-      * The function’s return value is then used to set each element’s inner HTML. A null value will clear the content.
-      */
-    def html(value: ValueFn[GElement, Datum, String | Null]): this.type = js.native
+    @JSName("html")
+    def html_String(): String = js.native
     
     /**
       * Inserts a new element of the specified type (tag name) before the first element matching the specified
@@ -678,19 +633,19 @@ object mod {
       *     the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). This function should return the child element
       *     before which the element should be inserted.
       */
-    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K): Selection_[
+    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](`type`: K): Selection_[
         /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
         Datum, 
         PElement, 
         PDatum
       ] = js.native
-    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K, before: String): Selection_[
+    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](`type`: K, before: String): Selection_[
         /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
         Datum, 
         PElement, 
         PDatum
       ] = js.native
-    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](`type`: K, before: ValueFn[GElement, Datum, BaseType]): Selection_[
+    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](`type`: K, before: ValueFn[GElement, Datum, BaseType]): Selection_[
         /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
         Datum, 
         PElement, 
@@ -731,7 +686,7 @@ object mod {
       * Returns an iterator over the selected (non-null) elements.
       */
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[GElement, js.Any, Unit]] = js.native
+    var iterator: js.Function0[js.Iterator[GElement]] = js.native
     
     /**
       * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
@@ -739,17 +694,19 @@ object mod {
       *
       * The "matching" logic is determined by the key function passed to `selection.data`.
       */
-    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](enter: K): Selection_[
+    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, OldDatum](enter: K): Selection_[
         GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
         Datum, 
         PElement, 
         PDatum
       ] = js.native
-    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
+    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, OldDatum](
       enter: K,
       update: js.Function1[
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
-          js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
+          js.UndefOr[
+            (Selection_[GElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
+          ]
         ]
     ): Selection_[
         GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
@@ -757,23 +714,27 @@ object mod {
         PElement, 
         PDatum
       ] = js.native
-    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
+    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, OldDatum](
       enter: K,
       update: js.Function1[
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
-          js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
+          js.UndefOr[
+            (Selection_[GElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
+          ]
         ],
-      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
+      // tslint:disable-next-line:no-unnecessary-generics
+    exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[
         GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
         Datum, 
         PElement, 
         PDatum
       ] = js.native
-    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
+    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, OldDatum](
       enter: K,
       update: Unit,
-      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
+      // tslint:disable-next-line:no-unnecessary-generics
+    exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[
         GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
         Datum, 
@@ -791,62 +752,68 @@ object mod {
       enter: String,
       update: js.Function1[
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
-          js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
+          js.UndefOr[
+            (Selection_[GElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
+          ]
         ]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     def join[ChildElement /* <: BaseType */, OldDatum](
       enter: String,
       update: js.Function1[
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
-          js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
+          js.UndefOr[
+            (Selection_[GElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
+          ]
         ],
-      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
+      // tslint:disable-next-line:no-unnecessary-generics
+    exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     def join[ChildElement /* <: BaseType */, OldDatum](
       enter: String,
       update: Unit,
-      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
+      // tslint:disable-next-line:no-unnecessary-generics
+    exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
-    /**
-      * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
-      * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
-      *
-      * The "matching" logic is determined by the key function passed to `selection.data`.
-      */
     def join[ChildElement /* <: BaseType */, OldDatum](
       enter: js.Function1[
           /* elem */ Selection_[EnterElement, Datum, PElement, PDatum], 
-          Selection_[ChildElement, Datum, PElement, PDatum]
+          (Selection_[ChildElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
         ]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     def join[ChildElement /* <: BaseType */, OldDatum](
       enter: js.Function1[
           /* elem */ Selection_[EnterElement, Datum, PElement, PDatum], 
-          Selection_[ChildElement, Datum, PElement, PDatum]
+          (Selection_[ChildElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
         ],
       update: js.Function1[
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
-          js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
+          js.UndefOr[
+            (Selection_[GElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
+          ]
         ]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     def join[ChildElement /* <: BaseType */, OldDatum](
       enter: js.Function1[
           /* elem */ Selection_[EnterElement, Datum, PElement, PDatum], 
-          Selection_[ChildElement, Datum, PElement, PDatum]
+          (Selection_[ChildElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
         ],
       update: js.Function1[
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
-          js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
+          js.UndefOr[
+            (Selection_[GElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
+          ]
         ],
-      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
+      // tslint:disable-next-line:no-unnecessary-generics
+    exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     def join[ChildElement /* <: BaseType */, OldDatum](
       enter: js.Function1[
           /* elem */ Selection_[EnterElement, Datum, PElement, PDatum], 
-          Selection_[ChildElement, Datum, PElement, PDatum]
+          (Selection_[ChildElement, Datum, PElement, PDatum]) | (TransitionLike[GElement, Datum])
         ],
       update: Unit,
-      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
+      // tslint:disable-next-line:no-unnecessary-generics
+    exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     
     /**
@@ -855,7 +822,7 @@ object mod {
     def lower(): this.type = js.native
     
     /**
-      * Returns a new selection merging this selection with the specified other selection.
+      * Returns a new selection merging this selection with the specified other selection or transition.
       * The returned selection has the same number of groups and the same parents as this selection.
       * Any missing (null) elements in this selection are filled with the corresponding element,
       * if present (not null), from the specified selection. (If the other selection has additional groups or parents,
@@ -872,6 +839,7 @@ object mod {
       * @param other Selection to be merged.
       */
     def merge(other: Selection_[GElement, Datum, PElement, PDatum]): Selection_[GElement, Datum, PElement, PDatum] = js.native
+    def merge(other: TransitionLike[GElement, Datum]): Selection_[GElement, Datum, PElement, PDatum] = js.native
     
     /**
       * Return the first (non-null) element in this selection. If the selection is empty, returns null.
@@ -893,7 +861,7 @@ object mod {
       * to receive events of the same type, such as click.foo and click.bar. To specify multiple typenames, separate typenames with spaces,
       * such as "input change"" or "click.foo click.bar".
       */
-    def on(typenames: String): js.UndefOr[js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Unit]] = js.native
+    def on(typenames: String): js.UndefOr[js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Unit]] = js.native
     /**
       * Add an event listener for the specified event type names. If an event listener was previously registered for the same typename
       * on a selected element, the old listener is removed before the new listener is added.
@@ -913,12 +881,12 @@ object mod {
       */
     def on(
       typenames: String,
-      listener: js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Unit]
+      listener: js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Unit]
     ): this.type = js.native
     def on(
       typenames: String,
-      listener: js.ThisFunction2[/* this */ GElement, /* event */ js.Any, /* d */ Datum, Unit],
-      options: js.Any
+      listener: js.ThisFunction2[/* this */ GElement, /* event */ Any, /* d */ Datum, Unit],
+      options: Any
     ): this.type = js.native
     /**
       * Remove a listener for the specified event type names. To remove all listeners for a given name,
@@ -939,12 +907,13 @@ object mod {
     def order(): this.type = js.native
     
     /**
-      * Return the current value of the specified property for the first (non-null) element in the selection.
-      * This is generally useful only if you know that the selection contains exactly one element.
-      *
-      * @param name Name of the property
+      * Sets the property with the specified name to the specified value on selected elements.
+      * If the value is a constant, then all elements are given the same property value;
+      * otherwise, if the value is a function, it is evaluated for each selected element, in order, being passed the current datum (d),
+      * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]).
+      * The function’s return value is then used to set each element’s property. A null value will delete the specified property.
       */
-    def property(name: String): js.Any = js.native
+    def property(name: String): this.type = js.native
     /**
       * Sets the value of the property with the specified name for the selected elements and returns this selection.
       * All elements are given the same property value.
@@ -952,26 +921,8 @@ object mod {
       * @param name Name of the property
       * @param value Constant value for the property
       */
-    def property(name: String, value: js.Any): this.type = js.native
-    /**
-      * Clears the property with the specified name for the selected elements and returns this selection.
-      *
-      * @param name Name of the property
-      * @param value null,to clear the property
-      */
-    def property(name: String, value: Null): this.type = js.native
-    /**
-      * Sets the value of the property with the specified name for the selected elements and returns this selection.
-      * The value for the individual selected elements is determined by the value function.
-      *
-      * Some HTML elements have special properties that are not addressable using attributes or styles,
-      * such as a form field’s text value and a checkbox’s checked boolean. Use this method to get or set these properties.
-      *
-      * @param name Name of the property
-      * @param value A value function which is evaluated for each selected element, in order, being passed the current datum (d),
-      * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]).  A null value will clear the property.
-      */
-    def property(name: String, value: ValueFn[GElement, Datum, js.Any]): this.type = js.native
+    def property(name: String, value: Any): this.type = js.native
+    def property(name: String, value: ValueFn[GElement, Datum, Any]): this.type = js.native
     /**
       * Look up a local variable on the first node of this selection. Note that this is not equivalent to `local.get(selection.node())` in that it will not look up locals set on the parent node(s).
       *
@@ -994,6 +945,14 @@ object mod {
       * @param value A callback that returns the value to store
       */
     def property[T](name: Local_[T], value: ValueFn[GElement, Datum, T]): this.type = js.native
+    /**
+      * Return the current value of the specified property for the first (non-null) element in the selection.
+      * This is generally useful only if you know that the selection contains exactly one element.
+      *
+      * @param name Name of the property
+      */
+    @JSName("property")
+    def property_Any(name: String): Any = js.native
     
     /**
       * Re-insert each selected element, in order, as the last child of its parent.
@@ -1021,11 +980,13 @@ object mod {
       *
       * @param selector CSS selector string
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     def select[DescElement /* <: BaseType */](selector: String): Selection_[DescElement, Datum, PElement, PDatum] = js.native
     /**
       * Create an empty sub-selection. Selection.select does not affect grouping: it preserves the existing group
       * structure and indexes.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     def select[DescElement /* <: BaseType */](selector: Null): Selection_[Null, Unit, PElement, PDatum] = js.native
     /**
       * For each selected element, select the descendant element returned by the selector function.
@@ -1050,16 +1011,6 @@ object mod {
       */
     def selectAll(): Selection_[Null, Unit, GElement, Datum] = js.native
     /**
-      * Create an empty sub-selection. Selection.selectAll does affect grouping: The elements in the returned
-      * selection are grouped by their corresponding parent node in this selection, the group at the current index will be empty.
-      */
-    def selectAll(selector: Null): Selection_[Null, Unit, GElement, Datum] = js.native
-    /**
-      * Create an empty sub-selection. Selection.selectAll does affect grouping: The elements in the returned
-      * selection are grouped by their corresponding parent node in this selection, the group at the current index will be empty.
-      */
-    def selectAll(selector: Unit): Selection_[Null, Unit, GElement, Datum] = js.native
-    /**
       * For each selected element, selects the descendant elements that match the specified selector string. The elements in the returned
       * selection are grouped by their corresponding parent node in this selection. If no element matches the specified selector
       * for the current element, the group at the current index will be empty. Selection.selectAll does affect grouping: each selected descendant
@@ -1072,6 +1023,7 @@ object mod {
       *
       * @param selector CSS selector string
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     def selectAll[DescElement /* <: BaseType */, OldDatum](selector: String): Selection_[DescElement, OldDatum, GElement, Datum] = js.native
     /**
       * For each selected element, selects the descendant elements returned by the selector function. The elements in the returned
@@ -1092,17 +1044,10 @@ object mod {
       selector: ValueFn[
           GElement, 
           Datum, 
-          js.Array[DescElement] | ArrayLike[DescElement] | Iterable[DescElement]
+          js.Array[DescElement] | ArrayLike[DescElement] | js.Iterable[DescElement]
         ]
     ): Selection_[DescElement, OldDatum, GElement, Datum] = js.native
     
-    /**
-      * Returns a new selection with the (first) child of each element of the current selection matching the selector.
-      * Selects the first child (if any).
-      *
-      * The generic represents the type of the descendant element to be selected.
-      */
-    def selectChild[DescElement /* <: BaseType */](): Selection_[DescElement, Datum, PElement, PDatum] = js.native
     /**
       * Returns a new selection with the (first) child of each element of the current selection matching the selector.
       * Selects the first child that matches (if any).
@@ -1111,6 +1056,8 @@ object mod {
       *
       * @param selector CSS selector string
       */
+    // tslint:disable-next-line:no-unnecessary-generics
+    def selectChild[DescElement /* <: BaseType */](): Selection_[DescElement, Datum, PElement, PDatum] = js.native
     def selectChild[DescElement /* <: BaseType */](selector: String): Selection_[DescElement, Datum, PElement, PDatum] = js.native
     /**
       * Returns a new selection with the (first) child of each element of the current selection matching the selector.
@@ -1132,14 +1079,6 @@ object mod {
     
     /**
       * Returns a new selection with the children of each element of the current selection matching the selector.
-      * Selects all the children
-      *
-      * The first generic represents the type of the descendant element to be selected.
-      * The second generic refers to the type of the datum of the element to be selected.
-      */
-    def selectChildren[DescElement /* <: BaseType */, OldDatum](): Selection_[DescElement, OldDatum, GElement, Datum] = js.native
-    /**
-      * Returns a new selection with the children of each element of the current selection matching the selector.
       * Selects the children that match (if any)
       *
       * The first generic represents the type of the descendant element to be selected.
@@ -1147,6 +1086,7 @@ object mod {
       *
       * @param selector CSS selector string
       */
+    def selectChildren[DescElement /* <: BaseType */, OldDatum](): Selection_[DescElement, OldDatum, GElement, Datum] = js.native
     def selectChildren[DescElement /* <: BaseType */, OldDatum](selector: String): Selection_[DescElement, OldDatum, GElement, Datum] = js.native
     /**
       * Returns a new selection with the children of each element of the current selection matching the selector.
@@ -1242,32 +1182,24 @@ object mod {
     ): this.type = js.native
     
     /**
-      * Returns the text content for the first (non-null) element in the selection.
-      * This is generally useful only if you know the selection contains exactly one element.
-      */
-    def text(): String = js.native
-    /**
       * Sets the text content to the specified value on all selected elements, replacing any existing child elements.
-      * All elements are given the same text content.
-      *
-      * @param value Text content value for the elements.
+      * If the value is a constant, then all elements are given the same text content;
+      * otherwise, if the value is a function, it is evaluated for each selected element, in order, being passed the current datum (d),
+      * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]).
+      * The function’s return value is then used to set each element’s text content.
+      * A null value will clear the content.
       */
+    def text(): this.type = js.native
     def text(value: String): this.type = js.native
     def text(value: Boolean): this.type = js.native
     def text(value: Double): this.type = js.native
-    /**
-      * Clear the text content of the selected elements and return the selection.
-      */
-    def text(value: Null): this.type = js.native
-    /**
-      * Sets the text content to the specified value on all selected elements, replacing any existing child elements.
-      * All elements are given the same text content.
-      *
-      * @param value A value unction which is evaluated for each selected element, in order, being passed the current datum (d),
-      * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]).
-      * The function’s return value is then used to set each element’s text content. A null value will clear the content.
-      */
     def text(value: ValueFn[GElement, Datum, String | Double | Boolean | Null]): this.type = js.native
+    /**
+      * Returns the text content for the first (non-null) element in the selection.
+      * This is generally useful only if you know the selection contains exactly one element.
+      */
+    @JSName("text")
+    def text_String(): String = js.native
   }
   
   @js.native
@@ -1276,7 +1208,7 @@ object mod {
     def on(`type`: String, listener: Null): TransitionLike[GElement, Datum] = js.native
     def on(`type`: String, listener: ValueFn[GElement, Datum, Unit]): TransitionLike[GElement, Datum] = js.native
     
-    def selection(): Selection_[GElement, Datum, js.Any, js.Any] = js.native
+    def selection(): Selection_[GElement, Datum, Any, Any] = js.native
     
     def tween(name: String, tweenFn: Null): TransitionLike[GElement, Datum] = js.native
     def tween(name: String, tweenFn: ValueFn[GElement, Datum, js.Function1[/* t */ Double, Unit]]): TransitionLike[GElement, Datum] = js.native

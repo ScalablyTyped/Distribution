@@ -27,7 +27,7 @@ trait QueryOptions
   /**
     * A sequelize instance used to build the return instance
     */
-  var instance: js.UndefOr[Instance[js.Any]] = js.undefined
+  var instance: js.UndefOr[Instance[Any]] = js.undefined
   
   /**
     * A function that gets executed while running the query to log the sql.
@@ -43,7 +43,7 @@ trait QueryOptions
   /**
     * A sequelize model used to build the returned model instances (used to be called callee)
     */
-  var model: js.UndefOr[Model[js.Any, js.Any, js.Any]] = js.undefined
+  var model: js.UndefOr[Model[Any, Any, Any]] = js.undefined
   
   /**
     * If true, transforms objects with `.` separated property names into nested objects using
@@ -108,13 +108,13 @@ object QueryOptions {
     
     inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
-    inline def setBindVarargs(value: String*): Self = StObject.set(x, "bind", js.Array(value :_*))
+    inline def setBindVarargs(value: String*): Self = StObject.set(x, "bind", js.Array(value*))
     
     inline def setFieldMap(value: StringDictionary[String]): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
     
     inline def setFieldMapUndefined: Self = StObject.set(x, "fieldMap", js.undefined)
     
-    inline def setInstance(value: Instance[js.Any]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Instance[Any]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
@@ -126,7 +126,7 @@ object QueryOptions {
     
     inline def setMapToModelUndefined: Self = StObject.set(x, "mapToModel", js.undefined)
     
-    inline def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model[Any, Any, Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
@@ -146,7 +146,7 @@ object QueryOptions {
     
     inline def setReplacementsUndefined: Self = StObject.set(x, "replacements", js.undefined)
     
-    inline def setReplacementsVarargs(value: String*): Self = StObject.set(x, "replacements", js.Array(value :_*))
+    inline def setReplacementsVarargs(value: String*): Self = StObject.set(x, "replacements", js.Array(value*))
     
     inline def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     

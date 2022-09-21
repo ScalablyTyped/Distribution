@@ -45,13 +45,13 @@ object typesDeleteObjectsOutputMod {
       
       inline def setDeletedUndefined: Self = StObject.set(x, "Deleted", js.undefined)
       
-      inline def setDeletedVarargs(value: UnmarshalledDeletedObject*): Self = StObject.set(x, "Deleted", js.Array(value :_*))
+      inline def setDeletedVarargs(value: UnmarshalledDeletedObject*): Self = StObject.set(x, "Deleted", js.Array(value*))
       
       inline def setErrors(value: js.Array[UnmarshalledError]): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
       
       inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
       
-      inline def setErrorsVarargs(value: UnmarshalledError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: UnmarshalledError*): Self = StObject.set(x, "Errors", js.Array(value*))
       
       inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
       

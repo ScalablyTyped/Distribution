@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strtokMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, tokens: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, tokens: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(str: Any): Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(str: Any, tokens: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, tokens: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/strtok", JSImport.Namespace)
   @js.native

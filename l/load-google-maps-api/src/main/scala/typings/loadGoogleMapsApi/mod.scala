@@ -110,7 +110,7 @@ object mod {
       
       inline def setLibrariesUndefined: Self = StObject.set(x, "libraries", js.undefined)
       
-      inline def setLibrariesVarargs(value: String*): Self = StObject.set(x, "libraries", js.Array(value :_*))
+      inline def setLibrariesVarargs(value: String*): Self = StObject.set(x, "libraries", js.Array(value*))
       
       inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       

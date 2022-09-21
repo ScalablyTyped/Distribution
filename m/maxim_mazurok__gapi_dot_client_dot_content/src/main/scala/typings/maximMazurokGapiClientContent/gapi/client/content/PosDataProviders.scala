@@ -29,6 +29,6 @@ object PosDataProviders {
     
     inline def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
     
-    inline def setPosDataProvidersVarargs(value: PosDataProvidersPosDataProvider*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
+    inline def setPosDataProvidersVarargs(value: PosDataProvidersPosDataProvider*): Self = StObject.set(x, "posDataProviders", js.Array(value*))
   }
 }

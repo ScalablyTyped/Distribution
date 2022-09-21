@@ -1,39 +1,17 @@
 package typings.direction
 
+import typings.direction.directionStrings.ltr
+import typings.direction.directionStrings.neutral
+import typings.direction.directionStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-    * Detect direction: left-to-right, right-to-left, or neutral.
-    *
-    * @example
-    * ```
-    * direction('anglais') // => 'ltr'
-    * direction('بسيطة') // => 'rtl'
-    * direction('?') // => 'neutral'
-    * ```
-    */
-  inline def apply(value: String): Direction = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Direction]
-  
   @JSImport("direction", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.direction.directionStrings.ltr
-    - typings.direction.directionStrings.rtl
-    - typings.direction.directionStrings.neutral
-  */
-  trait Direction extends StObject
-  object Direction {
-    
-    inline def ltr: typings.direction.directionStrings.ltr = "ltr".asInstanceOf[typings.direction.directionStrings.ltr]
-    
-    inline def neutral: typings.direction.directionStrings.neutral = "neutral".asInstanceOf[typings.direction.directionStrings.neutral]
-    
-    inline def rtl: typings.direction.directionStrings.rtl = "rtl".asInstanceOf[typings.direction.directionStrings.rtl]
-  }
+  inline def direction(value: String): rtl | ltr | neutral = ^.asInstanceOf[js.Dynamic].applyDynamic("direction")(value.asInstanceOf[js.Any]).asInstanceOf[rtl | ltr | neutral]
 }

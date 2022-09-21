@@ -5,21 +5,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FocusEvent[T]
+trait FocusEvent[Target, RelatedTarget]
   extends StObject
-     with BaseSyntheticEvent[NativeFocusEvent, EventTarget & T, EventTarget] {
+     with BaseSyntheticEvent[NativeFocusEvent, EventTarget & Target, EventTarget] {
   
-  var relatedTarget: EventTarget | Null
+  var relatedTarget: (EventTarget & RelatedTarget) | Null
   
   @JSName("target")
-  var target_FocusEvent: EventTarget & T
+  var target_FocusEvent: EventTarget & Target
 }
 object FocusEvent {
   
-  inline def apply[T](
+  inline def apply[Target, RelatedTarget](
     bubbles: Boolean,
     cancelable: Boolean,
-    currentTarget: EventTarget & T,
+    currentTarget: EventTarget & Target,
     defaultPrevented: Boolean,
     eventPhase: Double,
     isDefaultPrevented: () => Boolean,
@@ -29,21 +29,21 @@ object FocusEvent {
     persist: () => Unit,
     preventDefault: () => Unit,
     stopPropagation: () => Unit,
-    target: EventTarget & T,
+    target: EventTarget & Target,
     timeStamp: Double,
     `type`: String
-  ): FocusEvent[T] = {
+  ): FocusEvent[Target, RelatedTarget] = {
     val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], relatedTarget = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FocusEvent[T]]
+    __obj.asInstanceOf[FocusEvent[Target, RelatedTarget]]
   }
   
-  extension [Self <: FocusEvent[?], T](x: Self & FocusEvent[T]) {
+  extension [Self <: FocusEvent[?, ?], Target, RelatedTarget](x: Self & (FocusEvent[Target, RelatedTarget])) {
     
-    inline def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+    inline def setRelatedTarget(value: EventTarget & RelatedTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
     
     inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
     
-    inline def setTarget(value: EventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: EventTarget & Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

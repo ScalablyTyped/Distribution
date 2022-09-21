@@ -10,9 +10,9 @@ A micro front-end router
 | Full name          | satnav |
 | Keywords           | routing, front-end |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 630 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 42.666666666666664 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/f5io/satnav-js#readme)

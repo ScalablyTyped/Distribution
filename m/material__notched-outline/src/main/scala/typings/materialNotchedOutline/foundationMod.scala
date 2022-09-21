@@ -11,13 +11,13 @@ object foundationMod {
   
   @JSImport("@material/notched-outline/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCNotchedOutlineFoundation {
+  open class default () extends MDCNotchedOutlineFoundation {
     def this(adapter: PartialMDCNotchedOutlineA) = this()
   }
   
   @JSImport("@material/notched-outline/foundation", "MDCNotchedOutlineFoundation")
   @js.native
-  class MDCNotchedOutlineFoundation () extends MDCFoundation[MDCNotchedOutlineAdapter] {
+  open class MDCNotchedOutlineFoundation () extends MDCFoundation[MDCNotchedOutlineAdapter] {
     def this(adapter: PartialMDCNotchedOutlineA) = this()
     
     /**

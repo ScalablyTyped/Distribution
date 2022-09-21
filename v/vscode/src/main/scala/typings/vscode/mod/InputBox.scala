@@ -17,35 +17,31 @@ trait InputBox
   /**
     * An event signaling when the user indicated acceptance of the input value.
     */
-  def onDidAccept(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
-  def onDidAccept(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidAccept(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def onDidAccept(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidAccept(listener: js.Function1[/* e */ Unit, Any]): Disposable = js.native
+  def onDidAccept(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable = js.native
+  def onDidAccept(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidAccept(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * An event signaling when the value has changed.
     */
-  def onDidChangeValue(listener: js.Function1[/* e */ String, js.Any]): Disposable = js.native
-  def onDidChangeValue(listener: js.Function1[/* e */ String, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidChangeValue(
-    listener: js.Function1[/* e */ String, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onDidChangeValue(listener: js.Function1[/* e */ String, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidChangeValue(listener: js.Function1[/* e */ String, Any]): Disposable = js.native
+  def onDidChangeValue(listener: js.Function1[/* e */ String, Any], thisArgs: Any): Disposable = js.native
+  def onDidChangeValue(listener: js.Function1[/* e */ String, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidChangeValue(listener: js.Function1[/* e */ String, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * An event signaling when a button was triggered.
     */
-  def onDidTriggerButton(listener: js.Function1[/* e */ QuickInputButton, js.Any]): Disposable = js.native
-  def onDidTriggerButton(listener: js.Function1[/* e */ QuickInputButton, js.Any], thisArgs: js.Any): Disposable = js.native
+  def onDidTriggerButton(listener: js.Function1[/* e */ QuickInputButton, Any]): Disposable = js.native
+  def onDidTriggerButton(listener: js.Function1[/* e */ QuickInputButton, Any], thisArgs: Any): Disposable = js.native
   def onDidTriggerButton(
-    listener: js.Function1[/* e */ QuickInputButton, js.Any],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ QuickInputButton, Any],
+    thisArgs: Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
   def onDidTriggerButton(
-    listener: js.Function1[/* e */ QuickInputButton, js.Any],
+    listener: js.Function1[/* e */ QuickInputButton, Any],
     thisArgs: Unit,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
@@ -67,8 +63,10 @@ trait InputBox
   
   /**
     * An optional validation message indicating a problem with the current input value.
+    * By returning a string, the InputBox will use a default {@link InputBoxValidationSeverity} of Error.
+    * Returning undefined clears the validation message.
     */
-  var validationMessage: js.UndefOr[String] = js.native
+  var validationMessage: js.UndefOr[String | InputBoxValidationMessage] = js.native
   
   /**
     * Current input value.

@@ -34,7 +34,7 @@ object BulkSend {
     
     inline def setBulkCopiesUndefined: Self = StObject.set(x, "bulkCopies", js.undefined)
     
-    inline def setBulkCopiesVarargs(value: BulkSendingCopy*): Self = StObject.set(x, "bulkCopies", js.Array(value :_*))
+    inline def setBulkCopiesVarargs(value: BulkSendingCopy*): Self = StObject.set(x, "bulkCopies", js.Array(value*))
     
     inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     

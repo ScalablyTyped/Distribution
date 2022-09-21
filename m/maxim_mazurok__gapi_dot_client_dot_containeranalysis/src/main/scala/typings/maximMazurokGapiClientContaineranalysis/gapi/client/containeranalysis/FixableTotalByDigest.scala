@@ -10,7 +10,7 @@ trait FixableTotalByDigest extends StObject {
   var fixableCount: js.UndefOr[String] = js.undefined
   
   /** The affected resource. */
-  var resource: js.UndefOr[Resource] = js.undefined
+  var resourceUri: js.UndefOr[String] = js.undefined
   
   /** The severity for this count. SEVERITY_UNSPECIFIED indicates total across all severities. */
   var severity: js.UndefOr[String] = js.undefined
@@ -31,9 +31,9 @@ object FixableTotalByDigest {
     
     inline def setFixableCountUndefined: Self = StObject.set(x, "fixableCount", js.undefined)
     
-    inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
-    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
     
     inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     

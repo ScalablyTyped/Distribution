@@ -1,17 +1,16 @@
 package typings.node.fsMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait StatsBase[T] extends StObject {
   
-  var atime: Date
+  var atime: js.Date
   
   var atimeMs: T
   
-  var birthtime: Date
+  var birthtime: js.Date
   
   var birthtimeMs: T
   
@@ -19,7 +18,7 @@ trait StatsBase[T] extends StObject {
   
   var blocks: T
   
-  var ctime: Date
+  var ctime: js.Date
   
   var ctimeMs: T
   
@@ -45,7 +44,7 @@ trait StatsBase[T] extends StObject {
   
   var mode: T
   
-  var mtime: Date
+  var mtime: js.Date
   
   var mtimeMs: T
   
@@ -60,13 +59,13 @@ trait StatsBase[T] extends StObject {
 object StatsBase {
   
   inline def apply[T](
-    atime: Date,
+    atime: js.Date,
     atimeMs: T,
-    birthtime: Date,
+    birthtime: js.Date,
     birthtimeMs: T,
     blksize: T,
     blocks: T,
-    ctime: Date,
+    ctime: js.Date,
     ctimeMs: T,
     dev: T,
     gid: T,
@@ -79,7 +78,7 @@ object StatsBase {
     isSocket: () => Boolean,
     isSymbolicLink: () => Boolean,
     mode: T,
-    mtime: Date,
+    mtime: js.Date,
     mtimeMs: T,
     nlink: T,
     rdev: T,
@@ -92,11 +91,11 @@ object StatsBase {
   
   extension [Self <: StatsBase[?], T](x: Self & StatsBase[T]) {
     
-    inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+    inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     
     inline def setAtimeMs(value: T): Self = StObject.set(x, "atimeMs", value.asInstanceOf[js.Any])
     
-    inline def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
+    inline def setBirthtime(value: js.Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
     
     inline def setBirthtimeMs(value: T): Self = StObject.set(x, "birthtimeMs", value.asInstanceOf[js.Any])
     
@@ -104,7 +103,7 @@ object StatsBase {
     
     inline def setBlocks(value: T): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+    inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
     inline def setCtimeMs(value: T): Self = StObject.set(x, "ctimeMs", value.asInstanceOf[js.Any])
     
@@ -130,7 +129,7 @@ object StatsBase {
     
     inline def setMode(value: T): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
     inline def setMtimeMs(value: T): Self = StObject.set(x, "mtimeMs", value.asInstanceOf[js.Any])
     

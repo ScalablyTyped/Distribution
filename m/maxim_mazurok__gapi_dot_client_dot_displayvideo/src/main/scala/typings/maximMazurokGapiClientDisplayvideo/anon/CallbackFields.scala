@@ -15,7 +15,7 @@ trait CallbackFields extends StObject {
   var access_token: js.UndefOr[String] = js.undefined
   
   /** The ID of the advertiser that owns the created channel. */
-  var advertiserId: js.UndefOr[String] = js.undefined
+  var advertiserId: String
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
@@ -33,7 +33,7 @@ trait CallbackFields extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /** The ID of the partner that owns the created channel. */
-  var partnerId: String
+  var partnerId: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -52,8 +52,8 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(partnerId: String, resource: Channel): CallbackFields = {
-    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, resource: Channel): CallbackFields = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
   
@@ -68,8 +68,6 @@ object CallbackFields {
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
-    
-    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -92,6 +90,8 @@ object CallbackFields {
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

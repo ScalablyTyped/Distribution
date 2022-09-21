@@ -10,10 +10,10 @@ simple date math util
 | ------------------ | :-------------: |
 | Full name          | date-arithmetic |
 | Keywords           | moment, date, math |
-| # releases         | 4 |
-| # dependents       | 191 |
-| # downloads        | 7326644 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 894638.6666666666 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/jquense/date-math)

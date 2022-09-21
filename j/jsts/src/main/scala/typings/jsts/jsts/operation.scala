@@ -1,5 +1,6 @@
 package typings.jsts.jsts
 
+import typings.jsts.jsts.geom.Coordinate
 import typings.jsts.jsts.geom.Geometry
 import typings.jsts.jsts.geom.IntersectionMatrix
 import typings.jsts.jsts.geom.PrecisionModel
@@ -251,6 +252,106 @@ object operation {
         inline def setSetQuadrantSegments(value: Double => Unit): Self = StObject.set(x, "setQuadrantSegments", js.Any.fromFunction1(value))
         
         inline def setSetSingleSided(value: Boolean => Unit): Self = StObject.set(x, "setSingleSided", js.Any.fromFunction1(value))
+      }
+    }
+  }
+  
+  object distance {
+    
+    trait DistanceOp extends StObject {
+      
+      /**
+        * Report the distance between the nearest points on the input geometries.
+        *
+        * @returns {double} the distance between the geometries or 0 if either input geometry is empty
+        *
+        * @throws {IllegalArgumentException} if either input geometry is null
+        */
+      def distance(): Double
+      
+      /**
+        * Report the locations of the nearest points in the input geometries.
+        * The locations are presented in the same order as the input Geometries.
+        *
+        * @returns a pair of GeometryLocations for the nearest points
+        */
+      def nearestLocations(): js.Tuple2[GeometryLocation, GeometryLocation]
+      
+      /**
+        * Report the coordinates of the nearest points in the input geometries.
+        * The points are presented in the same order as the input Geometries.
+        *
+        * @returns a pair of Coordinates of the nearest points
+        */
+      def nearestPoints(): js.Tuple2[Coordinate, Coordinate]
+    }
+    object DistanceOp {
+      
+      inline def apply(
+        distance: () => Double,
+        nearestLocations: () => js.Tuple2[GeometryLocation, GeometryLocation],
+        nearestPoints: () => js.Tuple2[Coordinate, Coordinate]
+      ): DistanceOp = {
+        val __obj = js.Dynamic.literal(distance = js.Any.fromFunction0(distance), nearestLocations = js.Any.fromFunction0(nearestLocations), nearestPoints = js.Any.fromFunction0(nearestPoints))
+        __obj.asInstanceOf[DistanceOp]
+      }
+      
+      extension [Self <: DistanceOp](x: Self) {
+        
+        inline def setDistance(value: () => Double): Self = StObject.set(x, "distance", js.Any.fromFunction0(value))
+        
+        inline def setNearestLocations(value: () => js.Tuple2[GeometryLocation, GeometryLocation]): Self = StObject.set(x, "nearestLocations", js.Any.fromFunction0(value))
+        
+        inline def setNearestPoints(value: () => js.Tuple2[Coordinate, Coordinate]): Self = StObject.set(x, "nearestPoints", js.Any.fromFunction0(value))
+      }
+    }
+    
+    trait GeometryLocation extends StObject {
+      
+      /**
+        * Returns the Coordinate of this location.
+        */
+      def getCoordinate(): Coordinate
+      
+      /**
+        * Returns the geometry component on (or in) which this location occurs.
+        */
+      def getGeometryComponent(): Geometry
+      
+      /**
+        * Returns the segment index for this location.
+        * If the location is inside an area, the index will have the value INSIDE_AREA;
+        *
+        * @returns {int} the segment index for the location, or INSIDE_AREA
+        */
+      def getSegmentIndex(): Double
+      
+      /**
+        * Tests whether this location represents a point inside an area geometry.
+        */
+      def isInsideArea(): Boolean
+    }
+    object GeometryLocation {
+      
+      inline def apply(
+        getCoordinate: () => Coordinate,
+        getGeometryComponent: () => Geometry,
+        getSegmentIndex: () => Double,
+        isInsideArea: () => Boolean
+      ): GeometryLocation = {
+        val __obj = js.Dynamic.literal(getCoordinate = js.Any.fromFunction0(getCoordinate), getGeometryComponent = js.Any.fromFunction0(getGeometryComponent), getSegmentIndex = js.Any.fromFunction0(getSegmentIndex), isInsideArea = js.Any.fromFunction0(isInsideArea))
+        __obj.asInstanceOf[GeometryLocation]
+      }
+      
+      extension [Self <: GeometryLocation](x: Self) {
+        
+        inline def setGetCoordinate(value: () => Coordinate): Self = StObject.set(x, "getCoordinate", js.Any.fromFunction0(value))
+        
+        inline def setGetGeometryComponent(value: () => Geometry): Self = StObject.set(x, "getGeometryComponent", js.Any.fromFunction0(value))
+        
+        inline def setGetSegmentIndex(value: () => Double): Self = StObject.set(x, "getSegmentIndex", js.Any.fromFunction0(value))
+        
+        inline def setIsInsideArea(value: () => Boolean): Self = StObject.set(x, "isInsideArea", js.Any.fromFunction0(value))
       }
     }
   }

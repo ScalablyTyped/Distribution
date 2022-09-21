@@ -10,10 +10,10 @@ object lowPriorityMod {
   
   @JSImport("material-ui/svg-icons/content/low-priority", JSImport.Default)
   @js.native
-  class default () extends ContentLowPriority
+  open class default () extends ContentLowPriority
   
   @JSImport("material-ui/svg-icons/content/low-priority", "ContentLowPriority")
   @js.native
-  class ContentLowPriority ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentLowPriority ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLHRElement")
 @js.native
-/* private */ class HTMLHRElement ()
+/* private */ open class HTMLHRElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLHRElement

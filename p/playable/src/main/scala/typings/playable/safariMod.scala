@@ -11,7 +11,7 @@ object safariMod {
   
   @JSImport("playable/dist/src/modules/picture-in-picture/safari", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with SafariPictureInPicture {
     def this(elem: HTMLVideoElement, callback: EventListener) = this()
@@ -46,15 +46,15 @@ object safariMod {
        with IPictureInPictureHelper {
     
     /* private */ @JSName("_$elem")
-    var _$elem: js.Any = js.native
+    var _$elem: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callback: js.Any = js.native
+    /* private */ var _callback: Any = js.native
     
-    /* private */ var _enterWhenHasMetaData: js.Any = js.native
+    /* private */ var _enterWhenHasMetaData: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def isAPIExist: Boolean = js.native
     

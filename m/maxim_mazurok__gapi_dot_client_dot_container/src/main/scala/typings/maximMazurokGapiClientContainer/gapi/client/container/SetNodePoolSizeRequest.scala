@@ -9,7 +9,7 @@ trait SetNodePoolSizeRequest extends StObject {
   /** Deprecated. The name of the cluster to update. This field has been deprecated and replaced by the name field. */
   var clusterId: js.UndefOr[String] = js.undefined
   
-  /** The name (project, location, cluster, node pool id) of the node pool to set size. Specified in the format `projects/∗/locations/∗/clusters/∗/nodePools/ *`. */
+  /** The name (project, location, cluster, node pool id) of the node pool to set size. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *‍/nodePools/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Required. The desired node count for the pool. */
@@ -19,8 +19,8 @@ trait SetNodePoolSizeRequest extends StObject {
   var nodePoolId: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name
-    * field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated
+    * and replaced by the name field.
     */
   var projectId: js.UndefOr[String] = js.undefined
   

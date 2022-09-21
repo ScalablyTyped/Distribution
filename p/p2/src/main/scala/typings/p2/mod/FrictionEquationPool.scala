@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "FrictionEquationPool")
 @js.native
-class FrictionEquationPool () extends Pool {
+open class FrictionEquationPool () extends Pool {
   def this(options: PoolOptions) = this()
   
   def create(): FrictionEquation = js.native

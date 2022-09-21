@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Panes")
 @js.native
-/* private */ class Panes ()
+/* private */ open class Panes ()
   extends StObject
      with typings.activexWord.Word.Panes

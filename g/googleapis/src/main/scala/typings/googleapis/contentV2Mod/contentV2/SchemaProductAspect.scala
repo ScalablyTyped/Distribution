@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaProductAspect extends StObject {
   
   /**
-    * The name of the aspect.
+    * Deprecated.
     */
-  var aspectName: js.UndefOr[String] = js.undefined
+  var aspectName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The name of the destination. Leave out to apply to all destinations.
+    * Deprecated.
     */
-  var destinationName: js.UndefOr[String] = js.undefined
+  var destinationName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Whether the aspect is required, excluded or should be validated.
+    * Deprecated.
     */
-  var intention: js.UndefOr[String] = js.undefined
+  var intention: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaProductAspect {
   
@@ -32,13 +32,19 @@ object SchemaProductAspect {
     
     inline def setAspectName(value: String): Self = StObject.set(x, "aspectName", value.asInstanceOf[js.Any])
     
+    inline def setAspectNameNull: Self = StObject.set(x, "aspectName", null)
+    
     inline def setAspectNameUndefined: Self = StObject.set(x, "aspectName", js.undefined)
     
     inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
+    inline def setDestinationNameNull: Self = StObject.set(x, "destinationName", null)
+    
     inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     
     inline def setIntention(value: String): Self = StObject.set(x, "intention", value.asInstanceOf[js.Any])
+    
+    inline def setIntentionNull: Self = StObject.set(x, "intention", null)
     
     inline def setIntentionUndefined: Self = StObject.set(x, "intention", js.undefined)
   }

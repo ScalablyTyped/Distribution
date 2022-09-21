@@ -12,11 +12,11 @@ object Object extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("parse", "Object")
   @js.native
-  class ^[T /* <: Attributes */] protected ()
+  open class ^[T /* <: Attributes */] protected ()
     extends StObject
        with typings.parse.mod.global.Parse.Object[T] {
     def this(className: String, attributes: T) = this()
-    def this(className: String, attributes: T, options: js.Any) = this()
+    def this(className: String, attributes: T, options: Any) = this()
   }
   
   @JSImport("parse", "Object")

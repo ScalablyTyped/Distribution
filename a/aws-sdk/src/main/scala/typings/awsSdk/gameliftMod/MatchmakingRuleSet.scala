@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MatchmakingRuleSet extends StObject {
   
   /**
-    * The time stamp indicating when this data object was created. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * A time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Amazon Resource Name (ARN) that is assigned to a GameLift matchmaking rule set resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift rule set ARN, the resource ID matches the RuleSetName value.
+    * The Amazon Resource Name (ARN) that is assigned to a GameLift matchmaking rule set resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::matchmakingruleset/&lt;ruleset name&gt;. In a GameLift rule set ARN, the resource ID matches the RuleSetName value.
     */
   var RuleSetArn: js.UndefOr[MatchmakingRuleSetArn] = js.undefined
   
@@ -22,7 +22,7 @@ trait MatchmakingRuleSet extends StObject {
   var RuleSetBody: typings.awsSdk.gameliftMod.RuleSetBody
   
   /**
-    * A unique identifier for a matchmaking rule set
+    * A unique identifier for the matchmaking rule set
     */
   var RuleSetName: js.UndefOr[MatchmakingIdStringModel] = js.undefined
 }
@@ -35,7 +35,7 @@ object MatchmakingRuleSet {
   
   extension [Self <: MatchmakingRuleSet](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

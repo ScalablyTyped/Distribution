@@ -6,17 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Label extends StObject {
   
-  var label: js.UndefOr[CustomizeTextFormat] = js.undefined
+  /**
+    * Specifies the color of the vertical crosshair line.
+    */
+  var color: js.UndefOr[String] = js.undefined
   
-  var separatorHeight: js.UndefOr[Double] = js.undefined
+  /**
+    * Specifies the dash style of the vertical crosshair line.
+    */
+  var dashStyle: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.DashStyle] = js.undefined
   
-  var textLeftIndent: js.UndefOr[Double] = js.undefined
+  /**
+    * Configures the label that belongs to the vertical crosshair line.
+    */
+  var label: js.UndefOr[BackgroundColorCustomizeText] = js.undefined
   
-  var textTopIndent: js.UndefOr[Double] = js.undefined
+  /**
+    * Specifies how transparent the vertical crosshair line should be.
+    */
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var topIndent: js.UndefOr[Double] = js.undefined
-  
+  /**
+    * Specifies whether to show the vertical crosshair line or not.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies the width of the vertical crosshair line in pixels.
+    */
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Label {
   
@@ -27,28 +45,28 @@ object Label {
   
   extension [Self <: Label](x: Self) {
     
-    inline def setLabel(value: CustomizeTextFormat): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDashStyle(value: typings.devextreme.mod.DevExpress.common.charts.DashStyle): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setLabel(value: BackgroundColorCustomizeText): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setSeparatorHeight(value: Double): Self = StObject.set(x, "separatorHeight", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    inline def setSeparatorHeightUndefined: Self = StObject.set(x, "separatorHeight", js.undefined)
-    
-    inline def setTextLeftIndent(value: Double): Self = StObject.set(x, "textLeftIndent", value.asInstanceOf[js.Any])
-    
-    inline def setTextLeftIndentUndefined: Self = StObject.set(x, "textLeftIndent", js.undefined)
-    
-    inline def setTextTopIndent(value: Double): Self = StObject.set(x, "textTopIndent", value.asInstanceOf[js.Any])
-    
-    inline def setTextTopIndentUndefined: Self = StObject.set(x, "textTopIndent", js.undefined)
-    
-    inline def setTopIndent(value: Double): Self = StObject.set(x, "topIndent", value.asInstanceOf[js.Any])
-    
-    inline def setTopIndentUndefined: Self = StObject.set(x, "topIndent", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

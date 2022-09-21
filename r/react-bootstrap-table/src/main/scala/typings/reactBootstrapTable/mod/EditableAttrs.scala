@@ -24,7 +24,7 @@ trait EditableAttrs extends StObject {
   /**
     * Function to pass a reference to the input editor field.
     */
-  var ref: js.UndefOr[js.Function1[/* ref */ js.Any, js.Any]] = js.undefined
+  var ref: js.UndefOr[js.Function1[/* ref */ Any, Any]] = js.undefined
 }
 object EditableAttrs {
   
@@ -47,7 +47,7 @@ object EditableAttrs {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setRef(value: /* ref */ js.Any => js.Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRef(value: /* ref */ Any => Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }

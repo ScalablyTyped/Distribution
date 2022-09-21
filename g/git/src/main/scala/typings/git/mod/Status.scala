@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "Status")
 @js.native
-class Status protected () extends StObject {
-  def this(repo: js.Any, callback: js.Function) = this()
+open class Status protected () extends StObject {
+  def this(repo: Any, callback: js.Function) = this()
   
-  var files: js.Array[js.Any] = js.native
+  var files: js.Array[Any] = js.native
   
-  def index(file: js.Any): js.Any = js.native
+  def index(file: Any): Any = js.native
   
-  var repo: js.Any = js.native
+  var repo: Any = js.native
 }

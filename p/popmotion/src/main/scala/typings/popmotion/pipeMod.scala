@@ -10,5 +10,5 @@ object pipeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def pipe(transformers: js.Function*): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(transformers.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def pipe(transformers: js.Function*): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(transformers.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function]
 }

@@ -126,7 +126,7 @@ object EventTag {
     
     inline def setSiteIdsUndefined: Self = StObject.set(x, "siteIds", js.undefined)
     
-    inline def setSiteIdsVarargs(value: String*): Self = StObject.set(x, "siteIds", js.Array(value :_*))
+    inline def setSiteIdsVarargs(value: String*): Self = StObject.set(x, "siteIds", js.Array(value*))
     
     inline def setSslCompliant(value: Boolean): Self = StObject.set(x, "sslCompliant", value.asInstanceOf[js.Any])
     

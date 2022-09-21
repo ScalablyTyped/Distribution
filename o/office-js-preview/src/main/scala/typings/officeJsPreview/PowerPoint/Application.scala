@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: PowerPointApi 1.0]
   */
 trait Application

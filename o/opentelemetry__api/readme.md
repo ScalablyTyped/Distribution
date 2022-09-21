@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentelemetry__api
 
-Typings are for version 0.11.0
+Typings are for version 1.2.0
 
 ## Library description:
 Public API for OpenTelemetry
@@ -10,15 +10,15 @@ Public API for OpenTelemetry
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/api |
 | Keywords           | opentelemetry, nodejs, browser, tracing, profiling, stats, monitoring |
-| # releases         | 37 |
-| # dependents       | 173 |
-| # downloads        | 20287972 |
-| # stars            | 0 |
+| # releases         | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7314006E7 |
+| # stars            | 75.0 |
 
 ## Links
-- [Homepage](https://github.com/open-telemetry/opentelemetry-js#readme)
-- [Bugs](https://github.com/open-telemetry/opentelemetry-js/issues)
-- [Repository](https://github.com/open-telemetry/opentelemetry-js)
+- [Homepage](https://github.com/open-telemetry/opentelemetry-js-api#readme)
+- [Bugs](https://github.com/open-telemetry/opentelemetry-js-api/issues)
+- [Repository](https://github.com/open-telemetry/opentelemetry-js-api)
 - [Npm](https://www.npmjs.com/package/%40opentelemetry%2Fapi)
     
 

@@ -28,7 +28,7 @@ object XPrintableBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addPrintableListener: XPrintableListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePrintableListener: XPrintableListener => Unit
   ): XPrintableBroadcaster = {

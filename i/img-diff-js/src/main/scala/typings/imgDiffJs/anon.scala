@@ -6,30 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait IncludeAA extends StObject {
+  trait DataList extends StObject {
     
-    /** {default:false} */
-    var includeAA: js.UndefOr[Boolean] = js.undefined
+    var dataList: js.Array[js.typedarray.Uint8Array]
     
-    /** {default: 0.1} */
-    var threshold: js.UndefOr[Double] = js.undefined
+    var height: Double
+    
+    var width: Double
   }
-  object IncludeAA {
+  object DataList {
     
-    inline def apply(): IncludeAA = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IncludeAA]
+    inline def apply(dataList: js.Array[js.typedarray.Uint8Array], height: Double, width: Double): DataList = {
+      val __obj = js.Dynamic.literal(dataList = dataList.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DataList]
     }
     
-    extension [Self <: IncludeAA](x: Self) {
+    extension [Self <: DataList](x: Self) {
       
-      inline def setIncludeAA(value: Boolean): Self = StObject.set(x, "includeAA", value.asInstanceOf[js.Any])
+      inline def setDataList(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "dataList", value.asInstanceOf[js.Any])
       
-      inline def setIncludeAAUndefined: Self = StObject.set(x, "includeAA", js.undefined)
+      inline def setDataListVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "dataList", js.Array(value*))
       
-      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

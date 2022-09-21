@@ -1,7 +1,7 @@
 
 # Scala.js typings for generic-names
 
-Typings are for version 2.0.1
+Typings are for version 4.0.0
 
 ## Library description:
 Helper for building generic names, similar to webpack
@@ -10,10 +10,10 @@ Helper for building generic names, similar to webpack
 | ------------------ | :-------------: |
 | Full name          | generic-names |
 | Keywords           | css-modules, postcss-modules-scope, webpack |
-| # releases         | 0 |
-| # dependents       | 66 |
-| # downloads        | 21782533 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5992069.333333333 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/css-modules/generic-names#readme)

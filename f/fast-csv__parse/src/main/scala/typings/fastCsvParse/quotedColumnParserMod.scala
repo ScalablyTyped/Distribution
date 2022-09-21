@@ -10,17 +10,17 @@ object quotedColumnParserMod {
   
   @JSImport("@fast-csv/parse/build/src/parser/column/QuotedColumnParser", "QuotedColumnParser")
   @js.native
-  class QuotedColumnParser protected () extends StObject {
+  open class QuotedColumnParser protected () extends StObject {
     def this(parserOptions: ParserOptions) = this()
     
-    /* private */ var checkForMalformedColumn: js.Any = js.native
+    /* private */ var checkForMalformedColumn: Any = js.native
     
-    /* private */ val columnFormatter: js.Any = js.native
+    /* private */ val columnFormatter: Any = js.native
     
-    /* private */ var gatherDataBetweenQuotes: js.Any = js.native
+    /* private */ var gatherDataBetweenQuotes: Any = js.native
     
     def parse(scanner: Scanner): String | Null = js.native
     
-    /* private */ val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: Any = js.native
   }
 }

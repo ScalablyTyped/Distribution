@@ -8,5 +8,5 @@ object postCommentReplyInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/PostCommentReplyInput", "PostCommentReplyInput")
   @js.native
-  val PostCommentReplyInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PostCommentReplyInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

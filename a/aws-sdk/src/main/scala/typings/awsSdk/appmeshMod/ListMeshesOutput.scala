@@ -27,7 +27,7 @@ object ListMeshesOutput {
     
     inline def setMeshes(value: MeshList): Self = StObject.set(x, "meshes", value.asInstanceOf[js.Any])
     
-    inline def setMeshesVarargs(value: MeshRef*): Self = StObject.set(x, "meshes", js.Array(value :_*))
+    inline def setMeshesVarargs(value: MeshRef*): Self = StObject.set(x, "meshes", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

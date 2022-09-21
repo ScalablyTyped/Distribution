@@ -28,7 +28,7 @@ object NewPermissionsEvent {
     
     inline def setApprovedPermissionsUndefined: Self = StObject.set(x, "approvedPermissions", js.undefined)
     
-    inline def setApprovedPermissionsVarargs(value: String*): Self = StObject.set(x, "approvedPermissions", js.Array(value :_*))
+    inline def setApprovedPermissionsVarargs(value: String*): Self = StObject.set(x, "approvedPermissions", js.Array(value*))
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object NewPermissionsEvent {
     
     inline def setRequestedPermissionsUndefined: Self = StObject.set(x, "requestedPermissions", js.undefined)
     
-    inline def setRequestedPermissionsVarargs(value: String*): Self = StObject.set(x, "requestedPermissions", js.Array(value :_*))
+    inline def setRequestedPermissionsVarargs(value: String*): Self = StObject.set(x, "requestedPermissions", js.Array(value*))
   }
 }

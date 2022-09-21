@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Label")
 @js.native
-class Label protected ()
-  extends Component[LabelProps, ComponentState, js.Any] {
+open class Label protected () extends Component[LabelProps, ComponentState, Any] {
   def this(props: LabelProps) = this()
-  def this(props: LabelProps, context: js.Any) = this()
+  def this(props: LabelProps, context: Any) = this()
 }
 object Label {
   

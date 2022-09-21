@@ -38,7 +38,7 @@ object ReactionForComment {
     
     inline def setReactionUsersUndefined: Self = StObject.set(x, "reactionUsers", js.undefined)
     
-    inline def setReactionUsersVarargs(value: Arn*): Self = StObject.set(x, "reactionUsers", js.Array(value :_*))
+    inline def setReactionUsersVarargs(value: Arn*): Self = StObject.set(x, "reactionUsers", js.Array(value*))
     
     inline def setReactionsFromDeletedUsersCount(value: Count): Self = StObject.set(x, "reactionsFromDeletedUsersCount", value.asInstanceOf[js.Any])
     

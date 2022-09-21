@@ -24,6 +24,8 @@ trait NodeMaterialDefines
   
   var MORPHTARGETS_TANGENT: Boolean = js.native
   
+  var MORPHTARGETS_TEXTURE: Boolean = js.native
+  
   var MORPHTARGETS_UV: Boolean = js.native
   
   var NORMAL: Boolean = js.native
@@ -37,6 +39,16 @@ trait NodeMaterialDefines
   
   var UV1: Boolean = js.native
   
-  def setValue(name: String, value: js.Any): Unit = js.native
-  def setValue(name: String, value: js.Any, markAsUnprocessedIfDirty: Boolean): Unit = js.native
+  var UV2: Boolean = js.native
+  
+  var UV3: Boolean = js.native
+  
+  var UV4: Boolean = js.native
+  
+  var UV5: Boolean = js.native
+  
+  var UV6: Boolean = js.native
+  
+  def setValue(name: String, value: Any): Unit = js.native
+  def setValue(name: String, value: Any, markAsUnprocessedIfDirty: Boolean): Unit = js.native
 }

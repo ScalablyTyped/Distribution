@@ -103,7 +103,7 @@ object MergeField {
     
     inline def setPathExtendedUndefined: Self = StObject.set(x, "pathExtended", js.undefined)
     
-    inline def setPathExtendedVarargs(value: PathExtendedElement*): Self = StObject.set(x, "pathExtended", js.Array(value :_*))
+    inline def setPathExtendedVarargs(value: PathExtendedElement*): Self = StObject.set(x, "pathExtended", js.Array(value*))
     
     inline def setPathMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "pathMetadata", value.asInstanceOf[js.Any])
     

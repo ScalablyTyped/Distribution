@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "SubstringFilter")
 @js.native
-class SubstringFilter protected ()
+open class SubstringFilter protected ()
   extends StObject
      with Filter {
   def this(options: Any) = this()
   
   /* CompleteClass */
-  override def matches(obj: js.Any): Boolean = js.native
+  override def matches(obj: scala.Any): Boolean = js.native
   
   /* CompleteClass */
   var `type`: String = js.native

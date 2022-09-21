@@ -6,7 +6,6 @@ import typings.jupyterlabServices.managerMod.KernelSpecManager.IOptions
 import typings.jupyterlabServices.restapiMod.ISpecModels
 import typings.luminoPolling.pollMod.Poll.Standby
 import typings.luminoSignaling.mod.ISignal
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,26 +23,26 @@ object managerMod {
     *
     * @param options - The default options for kernel.
     */
-  class KernelSpecManager () extends BaseManager {
+  open class KernelSpecManager () extends BaseManager {
     def this(options: IOptions) = this()
     
-    /* private */ var _connectionFailure: js.Any = js.native
+    /* private */ var _connectionFailure: Any = js.native
     
-    /* private */ var _isReady: js.Any = js.native
+    /* private */ var _isReady: Any = js.native
     
-    /* private */ var _pollSpecs: js.Any = js.native
+    /* private */ var _pollSpecs: Any = js.native
     
-    /* private */ var _ready: js.Any = js.native
+    /* private */ var _ready: Any = js.native
     
-    /* private */ var _specs: js.Any = js.native
+    /* private */ var _specs: Any = js.native
     
-    /* private */ var _specsChanged: js.Any = js.native
+    /* private */ var _specsChanged: Any = js.native
     
     /**
       * A signal emitted when there is a connection failure.
       */
     @JSName("connectionFailure")
-    def connectionFailure_MKernelSpecManager: ISignal[this.type, Error] = js.native
+    def connectionFailure_MKernelSpecManager: ISignal[this.type, js.Error] = js.native
     
     /**
       * Test whether the manager is ready.

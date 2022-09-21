@@ -12,7 +12,7 @@ trait IClient extends StObject {
 }
 object IClient {
   
-  inline def apply(log: String => Unit, registerSystem: (Double, Double) => js.Any): IClient = {
+  inline def apply(log: String => Unit, registerSystem: (Double, Double) => Any): IClient = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log), registerSystem = js.Any.fromFunction2(registerSystem))
     __obj.asInstanceOf[IClient]
   }
@@ -21,6 +21,6 @@ object IClient {
     
     inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
-    inline def setRegisterSystem(value: (Double, Double) => js.Any): Self = StObject.set(x, "registerSystem", js.Any.fromFunction2(value))
+    inline def setRegisterSystem(value: (Double, Double) => Any): Self = StObject.set(x, "registerSystem", js.Any.fromFunction2(value))
   }
 }

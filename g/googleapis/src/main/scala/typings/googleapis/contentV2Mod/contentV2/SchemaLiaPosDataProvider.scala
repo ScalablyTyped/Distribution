@@ -9,12 +9,12 @@ trait SchemaLiaPosDataProvider extends StObject {
   /**
     * The ID of the POS data provider.
     */
-  var posDataProviderId: js.UndefOr[String] = js.undefined
+  var posDataProviderId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The account ID by which this merchant is known to the POS data provider.
     */
-  var posExternalAccountId: js.UndefOr[String] = js.undefined
+  var posExternalAccountId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLiaPosDataProvider {
   
@@ -27,9 +27,13 @@ object SchemaLiaPosDataProvider {
     
     inline def setPosDataProviderId(value: String): Self = StObject.set(x, "posDataProviderId", value.asInstanceOf[js.Any])
     
+    inline def setPosDataProviderIdNull: Self = StObject.set(x, "posDataProviderId", null)
+    
     inline def setPosDataProviderIdUndefined: Self = StObject.set(x, "posDataProviderId", js.undefined)
     
     inline def setPosExternalAccountId(value: String): Self = StObject.set(x, "posExternalAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setPosExternalAccountIdNull: Self = StObject.set(x, "posExternalAccountId", null)
     
     inline def setPosExternalAccountIdUndefined: Self = StObject.set(x, "posExternalAccountId", js.undefined)
   }

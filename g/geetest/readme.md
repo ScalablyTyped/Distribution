@@ -10,10 +10,10 @@ Node SDK for Geetest captcha
 | ------------------ | :-------------: |
 | Full name          | geetest |
 | Keywords           | Geetest, Captcha |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 2987 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2404.3333333333335 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/GeeTeam/gt-node-sdk#readme)

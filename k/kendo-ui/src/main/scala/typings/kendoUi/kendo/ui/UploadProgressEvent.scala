@@ -8,7 +8,7 @@ trait UploadProgressEvent
   extends StObject
      with UploadEvent {
   
-  var files: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var files: js.UndefOr[js.Array[Any]] = js.undefined
   
   var percentComplete: js.UndefOr[Double] = js.undefined
 }
@@ -21,11 +21,11 @@ object UploadProgressEvent {
   
   extension [Self <: UploadProgressEvent](x: Self) {
     
-    inline def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: Any*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     

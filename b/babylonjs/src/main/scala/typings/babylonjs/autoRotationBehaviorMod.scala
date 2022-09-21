@@ -2,6 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.arcRotateCameraMod.ArcRotateCamera
 import typings.babylonjs.behaviorMod.Behavior
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,48 +11,54 @@ object autoRotationBehaviorMod {
   
   @JSImport("babylonjs/Behaviors/Cameras/autoRotationBehavior", "AutoRotationBehavior")
   @js.native
-  class AutoRotationBehavior ()
+  open class AutoRotationBehavior ()
     extends StObject
        with Behavior[ArcRotateCamera] {
     
     /**
       *  Applies any current user interaction to the camera. Takes into account maximum alpha rotation.
       */
-    /* private */ var _applyUserInteraction: js.Any = js.native
+    /* private */ var _applyUserInteraction: Any = js.native
     
-    /* private */ var _attachedCamera: js.Any = js.native
+    /* private */ var _attachedCamera: Any = js.native
     
-    /* private */ var _cameraRotationSpeed: js.Any = js.native
+    /* private */ var _cameraRotationSpeed: Any = js.native
     
-    /* private */ var _idleRotationSpeed: js.Any = js.native
+    /* private */ var _idleRotationSpeed: Any = js.native
     
-    /* private */ var _idleRotationSpinupTime: js.Any = js.native
+    /* private */ var _idleRotationSpinupTime: Any = js.native
     
-    /* private */ var _idleRotationWaitTime: js.Any = js.native
+    /* private */ var _idleRotationWaitTime: Any = js.native
     
-    /* private */ var _isPointerDown: js.Any = js.native
+    /* private */ var _isPointerDown: Any = js.native
     
-    /* private */ var _lastFrameRadius: js.Any = js.native
+    /* private */ var _lastFrameRadius: Any = js.native
     
-    /* private */ var _lastFrameTime: js.Any = js.native
+    /* private */ var _lastFrameTime: Any = js.native
     
-    /* private */ var _lastInteractionTime: js.Any = js.native
+    /* private */ var _lastInteractionTime: Any = js.native
     
-    /* private */ var _onAfterCheckInputsObserver: js.Any = js.native
+    /* private */ var _onAfterCheckInputsObserver: Any = js.native
     
-    /* private */ var _onPrePointerObservableObserver: js.Any = js.native
+    /* private */ var _onPrePointerObservableObserver: Any = js.native
     
-    /* private */ var _shouldAnimationStopForInteraction: js.Any = js.native
+    /**
+      * Returns true if camera alpha reaches the target alpha
+      * @returns true if camera alpha reaches the target alpha
+      */
+    /* private */ var _reachTargetAlpha: Any = js.native
     
-    /* private */ var _userIsMoving: js.Any = js.native
+    /* private */ var _shouldAnimationStopForInteraction: Any = js.native
+    
+    /* private */ var _userIsMoving: Any = js.native
     
     /**
       * Returns true if user is scrolling.
-      * @return true if user is scrolling.
+      * @returns true if user is scrolling.
       */
-    /* private */ var _userIsZooming: js.Any = js.native
+    /* private */ var _userIsZooming: Any = js.native
     
-    /* private */ var _zoomStopsAnimation: js.Any = js.native
+    /* private */ var _zoomStopsAnimation: Any = js.native
     
     /**
       * Called when the behavior is attached to a target
@@ -109,9 +116,18 @@ object autoRotationBehaviorMod {
     def name_MAutoRotationBehavior: String = js.native
     
     /**
+      * Force-reset the last interaction time
+      * @param customTime an optional time that will be used instead of the current last interaction time. For example `Date.now()`
+      */
+    def resetLastInteractionTime(): Unit = js.native
+    def resetLastInteractionTime(customTime: Double): Unit = js.native
+    
+    /**
       * Gets a value indicating if the camera is currently rotating because of this behavior
       */
     def rotationInProgress: Boolean = js.native
+    
+    var targetAlpha: Nullable[Double] = js.native
     
     /**
       * Gets the flag that indicates if user zooming should stop animation.

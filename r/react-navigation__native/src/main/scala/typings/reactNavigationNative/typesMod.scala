@@ -1,6 +1,7 @@
 package typings.reactNavigationNative
 
 import typings.reactNavigationNative.anon.Background
+import typings.reactNavigationNative.anon.Fn0
 import typings.reactNavigationNative.anon.FnCall
 import typings.reactNavigationNative.anon.FnCallStateOptions
 import typings.reactNavigationNative.anon.InitialRouteName
@@ -18,7 +19,7 @@ object typesMod {
     
     var formatter: js.UndefOr[
         js.Function2[
-          /* options */ js.UndefOr[Record[String, js.Any]], 
+          /* options */ js.UndefOr[Record[String, Any]], 
           /* route */ js.UndefOr[Route[String, js.UndefOr[js.Object]]], 
           String
         ]
@@ -38,14 +39,14 @@ object typesMod {
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
       inline def setFormatter(
-        value: (/* options */ js.UndefOr[Record[String, js.Any]], /* route */ js.UndefOr[Route[String, js.UndefOr[js.Object]]]) => String
+        value: (/* options */ js.UndefOr[Record[String, Any]], /* route */ js.UndefOr[Route[String, js.UndefOr[js.Object]]]) => String
       ): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     }
   }
   
-  trait LinkingOptions extends StObject {
+  trait LinkingOptions[ParamList /* <: js.Object */] extends StObject {
     
     /**
       * Config to fine-tune how to parse the path.
@@ -60,7 +61,7 @@ object typesMod {
       * }
       * ```
       */
-    var config: js.UndefOr[InitialRouteName] = js.undefined
+    var config: js.UndefOr[InitialRouteName[ParamList]] = js.undefined
     
     /**
       * Whether deep link handling should be enabled.
@@ -69,9 +70,34 @@ object typesMod {
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Optional function which takes an incoming URL returns a boolean
+      * indicating whether React Navigation should handle it.
+      *
+      * This can be used to disable deep linking for specific URLs.
+      * e.g. URLs used for authentication, and not for deep linking to screens.
+      *
+      * This is not supported on Web.
+      *
+      * @example
+      * ```js
+      * {
+      *   // Filter out URLs used by expo-auth-session
+      *   filter: (url) => !url.includes('+expo-auth-session')
+      * }
+      * ```
+      */
+    var filter: js.UndefOr[js.Function1[/* url */ String, Boolean]] = js.undefined
+    
+    /**
+      * Custom function to convert the state object to a valid action (advanced).
+      */
+    var getActionFromState: js.UndefOr[Fn0] = js.undefined
+    
+    /**
       * Custom function to get the initial URL used for linking.
       * Uses `Linking.getInitialURL()` by default.
-      * Not supported on Web.
+      *
+      * This is not supported on Web.
       *
       * @example
       * ```js
@@ -80,7 +106,9 @@ object typesMod {
       * }
       * ```
       */
-    var getInitialURL: js.UndefOr[js.Function0[js.Promise[js.UndefOr[String | Null]]]] = js.undefined
+    var getInitialURL: js.UndefOr[
+        js.Function0[js.UndefOr[String | Null | (js.Promise[js.UndefOr[String | Null]])]]
+      ] = js.undefined
     
     /**
       * Custom function to convert the state object to a valid URL (advanced).
@@ -96,7 +124,8 @@ object typesMod {
     /**
       * The prefixes are stripped from the URL before parsing them.
       * Usually they are the `scheme` + `host` (e.g. `myapp://chat?user=jane`)
-      * Only applicable on Android and iOS.
+      *
+      * This is not supported on Web.
       *
       * @example
       * ```js
@@ -114,7 +143,8 @@ object typesMod {
     /**
       * Custom function to get subscribe to URL updates.
       * Uses `Linking.addEventListener('url', callback)` by default.
-      * Not supported on Web.
+      *
+      * This is not supported on Web.
       *
       * @example
       * ```js
@@ -138,14 +168,14 @@ object typesMod {
   }
   object LinkingOptions {
     
-    inline def apply(prefixes: js.Array[String]): LinkingOptions = {
+    inline def apply[ParamList /* <: js.Object */](prefixes: js.Array[String]): LinkingOptions[ParamList] = {
       val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LinkingOptions]
+      __obj.asInstanceOf[LinkingOptions[ParamList]]
     }
     
-    extension [Self <: LinkingOptions](x: Self) {
+    extension [Self <: LinkingOptions[?], ParamList /* <: js.Object */](x: Self & LinkingOptions[ParamList]) {
       
-      inline def setConfig(value: InitialRouteName): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: InitialRouteName[ParamList]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
@@ -153,7 +183,15 @@ object typesMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setGetInitialURL(value: () => js.Promise[js.UndefOr[String | Null]]): Self = StObject.set(x, "getInitialURL", js.Any.fromFunction0(value))
+      inline def setFilter(value: /* url */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      inline def setGetActionFromState(value: Fn0): Self = StObject.set(x, "getActionFromState", value.asInstanceOf[js.Any])
+      
+      inline def setGetActionFromStateUndefined: Self = StObject.set(x, "getActionFromState", js.undefined)
+      
+      inline def setGetInitialURL(value: () => js.UndefOr[String | Null | (js.Promise[js.UndefOr[String | Null]])]): Self = StObject.set(x, "getInitialURL", js.Any.fromFunction0(value))
       
       inline def setGetInitialURLUndefined: Self = StObject.set(x, "getInitialURL", js.undefined)
       
@@ -167,7 +205,7 @@ object typesMod {
       
       inline def setPrefixes(value: js.Array[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
       
-      inline def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
+      inline def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value*))
       
       inline def setSubscribe(
         value: /* listener */ js.Function1[/* url */ String, Unit] => js.UndefOr[Unit | js.Function0[Unit]]
@@ -179,18 +217,18 @@ object typesMod {
   
   trait ServerContainerRef extends StObject {
     
-    def getCurrentOptions(): js.UndefOr[Record[String, js.Any]]
+    def getCurrentOptions(): js.UndefOr[Record[String, Any]]
   }
   object ServerContainerRef {
     
-    inline def apply(getCurrentOptions: () => js.UndefOr[Record[String, js.Any]]): ServerContainerRef = {
+    inline def apply(getCurrentOptions: () => js.UndefOr[Record[String, Any]]): ServerContainerRef = {
       val __obj = js.Dynamic.literal(getCurrentOptions = js.Any.fromFunction0(getCurrentOptions))
       __obj.asInstanceOf[ServerContainerRef]
     }
     
     extension [Self <: ServerContainerRef](x: Self) {
       
-      inline def setGetCurrentOptions(value: () => js.UndefOr[Record[String, js.Any]]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
+      inline def setGetCurrentOptions(value: () => js.UndefOr[Record[String, Any]]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
     }
   }
   

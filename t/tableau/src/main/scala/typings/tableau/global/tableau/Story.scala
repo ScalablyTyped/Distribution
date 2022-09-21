@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.Story")
 @js.native
-class Story ()
+open class Story ()
   extends StObject
      with typings.tableau.tableau.Story {
   

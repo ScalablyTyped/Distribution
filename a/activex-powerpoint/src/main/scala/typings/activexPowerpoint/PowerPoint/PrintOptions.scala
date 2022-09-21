@@ -25,7 +25,7 @@ trait PrintOptions extends StObject {
   
   var OutputType: PpPrintOutputType
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.PrintOptions_typekey")
   var PowerPointDotPrintOptions_typekey: PrintOptions
@@ -60,7 +60,7 @@ object PrintOptions {
     HighQuality: MsoTriState,
     NumberOfCopies: Double,
     OutputType: PpPrintOutputType,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotPrintOptions_typekey: PrintOptions,
     PrintColorType: PpPrintColorType,
     PrintComments: MsoTriState,
@@ -97,7 +97,7 @@ object PrintOptions {
     
     inline def setOutputType(value: PpPrintOutputType): Self = StObject.set(x, "OutputType", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotPrintOptions_typekey(value: PrintOptions): Self = StObject.set(x, "PowerPoint.PrintOptions_typekey", value.asInstanceOf[js.Any])
     

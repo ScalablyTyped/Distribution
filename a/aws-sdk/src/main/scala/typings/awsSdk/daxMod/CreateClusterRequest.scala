@@ -12,6 +12,11 @@ trait CreateClusterRequest extends StObject {
   var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.undefined
   
   /**
+    * The type of encryption the cluster's endpoint should support. Values are:    NONE for no encryption    TLS for Transport Layer Security  
+    */
+  var ClusterEndpointEncryptionType: js.UndefOr[typings.awsSdk.daxMod.ClusterEndpointEncryptionType] = js.undefined
+  
+  /**
     * The cluster identifier. This parameter is stored as a lowercase string.  Constraints:    A name must contain from 1 to 20 alphanumeric characters or hyphens.   The first character must be a letter.   A name cannot end with a hyphen or contain two consecutive hyphens.  
     */
   var ClusterName: String
@@ -84,7 +89,11 @@ object CreateClusterRequest {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
+    
+    inline def setClusterEndpointEncryptionType(value: ClusterEndpointEncryptionType): Self = StObject.set(x, "ClusterEndpointEncryptionType", value.asInstanceOf[js.Any])
+    
+    inline def setClusterEndpointEncryptionTypeUndefined: Self = StObject.set(x, "ClusterEndpointEncryptionType", js.undefined)
     
     inline def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
     
@@ -118,7 +127,7 @@ object CreateClusterRequest {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSubnetGroupName(value: String): Self = StObject.set(x, "SubnetGroupName", value.asInstanceOf[js.Any])
     
@@ -128,6 +137,6 @@ object CreateClusterRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

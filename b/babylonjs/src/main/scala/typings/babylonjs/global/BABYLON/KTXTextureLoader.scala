@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON._KTXTextureLoader")
 @js.native
-class KTXTextureLoader ()
+open class KTXTextureLoader ()
   extends StObject
      with typings.babylonjs.BABYLON.KTXTextureLoader

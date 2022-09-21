@@ -38,7 +38,7 @@ object InstanceHardware {
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value*))
     
     inline def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
     

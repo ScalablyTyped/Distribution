@@ -1,14 +1,14 @@
 package typings.escpos.mod
 
 import typings.escpos.escposBooleans.`false`
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("escpos", "USB")
 @js.native
-class USB ()
+open class USB ()
   extends StObject
      with Adapter {
   def this(vid: String) = this()
@@ -16,15 +16,15 @@ class USB ()
   def this(vid: Unit, pid: String) = this()
   
   def close(): USB = js.native
-  def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): USB = js.native
+  def close(callback: js.Function1[/* error */ js.UndefOr[Any], Unit]): USB = js.native
   
   def open(): USB = js.native
   /* CompleteClass */
-  override def open(args: js.Any*): Adapter = js.native
-  def open(callback: js.Function2[/* error */ js.Any, /* device */ js.UndefOr[this.type], Unit]): USB = js.native
+  override def open(args: Any*): Adapter = js.native
+  def open(callback: js.Function2[/* error */ Any, /* device */ js.UndefOr[this.type], Unit]): USB = js.native
   
   /* CompleteClass */
-  override def write(data: Buffer, callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Adapter = js.native
+  override def write(data: Buffer, callback: js.Function1[/* error */ js.UndefOr[Any], Unit]): Adapter = js.native
 }
 /* static members */
 object USB {

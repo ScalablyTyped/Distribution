@@ -11,7 +11,7 @@ trait LayerInfo
      with Object {
   
   /**
-    * Indicates whether to enable `Add feature` functionality.
+    * Indicates whether to enable the ability to create new features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
     */
@@ -39,11 +39,11 @@ trait LayerInfo
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The configuration options for displaying an array of fields within the widget.
+    * A template that defines the feature's form content.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
     */
-  var fieldConfig: js.UndefOr[js.Array[FieldConfig]] = js.undefined
+  var formTemplate: js.UndefOr[FormTemplate] = js.undefined
   
   /**
     * The associated feature layer containing the editable fields.
@@ -53,7 +53,7 @@ trait LayerInfo
   var layer: FeatureLayer
   
   /**
-    * Indicates whether to enable `Update feature` functionality.
+    * Indicates whether to enable the ability to update existing features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
     */
@@ -89,11 +89,9 @@ object LayerInfo {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setFieldConfig(value: js.Array[FieldConfig]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
+    inline def setFormTemplate(value: FormTemplate): Self = StObject.set(x, "formTemplate", value.asInstanceOf[js.Any])
     
-    inline def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
-    
-    inline def setFieldConfigVarargs(value: FieldConfig*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
+    inline def setFormTemplateUndefined: Self = StObject.set(x, "formTemplate", js.undefined)
     
     inline def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

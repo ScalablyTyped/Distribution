@@ -26,7 +26,11 @@ object pageHeaderMod extends Shortcut {
     
     var backIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var breadcrumb: js.UndefOr[BreadcrumbProps] = js.undefined
+    var breadcrumb: js.UndefOr[BreadcrumbProps | ReactElement] = js.undefined
+    
+    var breadcrumbRender: js.UndefOr[js.Function2[/* props */ this.type, /* defaultDom */ ReactNode, ReactNode]] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -36,7 +40,9 @@ object pageHeaderMod extends Shortcut {
     
     var ghost: js.UndefOr[Boolean] = js.undefined
     
-    var onBack: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
+    var onBack: js.UndefOr[
+        js.Function1[/* e */ js.UndefOr[MouseEvent[HTMLDivElement, NativeMouseEvent]], Unit]
+      ] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -46,7 +52,7 @@ object pageHeaderMod extends Shortcut {
     
     var tags: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.undefined
     
-    var title: ReactNode
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object PageHeaderProps {
     
@@ -65,9 +71,17 @@ object pageHeaderMod extends Shortcut {
       
       inline def setBackIconUndefined: Self = StObject.set(x, "backIcon", js.undefined)
       
-      inline def setBreadcrumb(value: BreadcrumbProps): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
+      inline def setBreadcrumb(value: BreadcrumbProps | ReactElement): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
+      
+      inline def setBreadcrumbRender(value: (PageHeaderProps, /* defaultDom */ ReactNode) => ReactNode): Self = StObject.set(x, "breadcrumbRender", js.Any.fromFunction2(value))
+      
+      inline def setBreadcrumbRenderUndefined: Self = StObject.set(x, "breadcrumbRender", js.undefined)
       
       inline def setBreadcrumbUndefined: Self = StObject.set(x, "breadcrumb", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -85,7 +99,7 @@ object pageHeaderMod extends Shortcut {
       
       inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
       
-      inline def setOnBack(value: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
+      inline def setOnBack(value: /* e */ js.UndefOr[MouseEvent[HTMLDivElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onBack", js.Any.fromFunction1(value))
       
       inline def setOnBackUndefined: Self = StObject.set(x, "onBack", js.undefined)
       
@@ -105,7 +119,7 @@ object pageHeaderMod extends Shortcut {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: ReactElement*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: ReactElement*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

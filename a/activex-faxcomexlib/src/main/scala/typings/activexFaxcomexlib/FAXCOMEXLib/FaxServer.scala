@@ -40,7 +40,7 @@ object FaxServer {
     Folders: FaxFolders,
     GetDeviceProviders: () => FaxDeviceProviders,
     GetDevices: () => FaxDevices,
-    GetExtensionProperty: String => js.Any,
+    GetExtensionProperty: String => Any,
     InboundRouting: FaxInboundRouting,
     ListenToServerEvents: FAX_SERVER_EVENTS_TYPE_ENUM => Unit,
     LoggingOptions: FaxLoggingOptions,
@@ -51,12 +51,12 @@ object FaxServer {
     OutboundRouting: FaxOutboundRouting,
     ReceiptOptions: FaxReceiptOptions,
     RegisterDeviceProvider: (String, String, String, String, Double) => Unit,
-    RegisterInboundRoutingExtension: (String, String, String, js.Any) => Unit,
+    RegisterInboundRoutingExtension: (String, String, String, Any) => Unit,
     RegisteredEvents: FAX_SERVER_EVENTS_TYPE_ENUM,
     Security: FaxSecurity,
     Security2: FaxSecurity2,
     ServerName: String,
-    SetExtensionProperty: (String, SafeArray[js.Any]) => Unit,
+    SetExtensionProperty: (String, SafeArray[Any]) => Unit,
     UnregisterDeviceProvider: String => Unit,
     UnregisterInboundRoutingExtension: String => Unit
   ): FaxServer = {

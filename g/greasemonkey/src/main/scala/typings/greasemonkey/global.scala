@@ -57,8 +57,8 @@ object global {
       * // For structured data used `JSON.stringify()` to place an object into storage and then `JSON.parse()` to convert it back
       * const storedObject = JSON.parse(await GM.getValue('foo', '{}'));
       */
-    inline def getValue[TValue](name: String): js.Promise[js.UndefOr[TValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[TValue]]]
-    inline def getValue[TValue](name: String, defaultValue: TValue): js.Promise[js.UndefOr[TValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[TValue]]]
+    inline def getValue(name: String): js.Promise[js.UndefOr[Value]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Value]]]
+    inline def getValue[TValue](name: String, defaultValue: TValue): js.Promise[TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TValue]]
     
     // Headers
     /**
@@ -106,6 +106,17 @@ object global {
     inline def openInTab(url: String, openInBackground: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openInTab")(url.asInstanceOf[js.Any], openInBackground.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
+      * Adds an item to the User Script Commands menu.
+      * @param caption The caption to display on the menu item.
+      * @param commandFunc The function to call when the menu item is selected.
+      * @param accessKey A single character that can be used to select the
+      * item when the menu is open. It should be a letter in the caption.
+      * @see {@link https://wiki.greasespot.net/GM.registerMenuCommand}
+      */
+    inline def registerMenuCommand(caption: String, commandFunc: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMenuCommand")(caption.asInstanceOf[js.Any], commandFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerMenuCommand(caption: String, commandFunc: js.Function0[Unit], accessKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMenuCommand")(caption.asInstanceOf[js.Any], commandFunc.asInstanceOf[js.Any], accessKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
       * Sets the current contents of the operating system's clipboard
       * @see {@link https://wiki.greasespot.net/GM.setClipboard}
       */
@@ -131,7 +142,7 @@ object global {
       * allows these requests to cross the [same origin policy]{@link https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy} boundaries.
       * @see {@link https://wiki.greasespot.net/GM.xmlHttpRequest}
       */
-    inline def xmlHttpRequest(details: Request[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlHttpRequest")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def xmlHttpRequest(details: Request[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlHttpRequest")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**

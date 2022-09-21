@@ -9,10 +9,10 @@ A parser and formatter for DSV (CSV and TSV) files.
 | ------------------ | :-------------: |
 | Full name          | dsv |
 | Keywords           | dsv, csv, tsv |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 22657 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10578.333333333334 |
+| # stars            | 370.0 |
 
 ## Links
 - [Homepage](https://github.com/mbostock/dsv)

@@ -99,7 +99,7 @@ object TypeofSkeletonBinary {
     
     inline def setAttachmentTypeValues(value: js.Array[Double]): Self = StObject.set(x, "AttachmentTypeValues", value.asInstanceOf[js.Any])
     
-    inline def setAttachmentTypeValuesVarargs(value: Double*): Self = StObject.set(x, "AttachmentTypeValues", js.Array(value :_*))
+    inline def setAttachmentTypeValuesVarargs(value: Double*): Self = StObject.set(x, "AttachmentTypeValues", js.Array(value*))
     
     inline def setBONE_ROTATE(value: Double): Self = StObject.set(x, "BONE_ROTATE", value.asInstanceOf[js.Any])
     
@@ -111,7 +111,7 @@ object TypeofSkeletonBinary {
     
     inline def setBlendModeValues(value: js.Array[BlendMode]): Self = StObject.set(x, "BlendModeValues", value.asInstanceOf[js.Any])
     
-    inline def setBlendModeValuesVarargs(value: BlendMode*): Self = StObject.set(x, "BlendModeValues", js.Array(value :_*))
+    inline def setBlendModeValuesVarargs(value: BlendMode*): Self = StObject.set(x, "BlendModeValues", js.Array(value*))
     
     inline def setCURVE_BEZIER(value: Double): Self = StObject.set(x, "CURVE_BEZIER", value.asInstanceOf[js.Any])
     
@@ -127,11 +127,11 @@ object TypeofSkeletonBinary {
     
     inline def setPositionModeValues(value: js.Array[PositionMode]): Self = StObject.set(x, "PositionModeValues", value.asInstanceOf[js.Any])
     
-    inline def setPositionModeValuesVarargs(value: PositionMode*): Self = StObject.set(x, "PositionModeValues", js.Array(value :_*))
+    inline def setPositionModeValuesVarargs(value: PositionMode*): Self = StObject.set(x, "PositionModeValues", js.Array(value*))
     
     inline def setRotateModeValues(value: js.Array[RotateMode]): Self = StObject.set(x, "RotateModeValues", value.asInstanceOf[js.Any])
     
-    inline def setRotateModeValuesVarargs(value: RotateMode*): Self = StObject.set(x, "RotateModeValues", js.Array(value :_*))
+    inline def setRotateModeValuesVarargs(value: RotateMode*): Self = StObject.set(x, "RotateModeValues", js.Array(value*))
     
     inline def setSLOT_ATTACHMENT(value: Double): Self = StObject.set(x, "SLOT_ATTACHMENT", value.asInstanceOf[js.Any])
     
@@ -141,10 +141,10 @@ object TypeofSkeletonBinary {
     
     inline def setSpacingModeValues(value: js.Array[SpacingMode]): Self = StObject.set(x, "SpacingModeValues", value.asInstanceOf[js.Any])
     
-    inline def setSpacingModeValuesVarargs(value: SpacingMode*): Self = StObject.set(x, "SpacingModeValues", js.Array(value :_*))
+    inline def setSpacingModeValuesVarargs(value: SpacingMode*): Self = StObject.set(x, "SpacingModeValues", js.Array(value*))
     
     inline def setTransformModeValues(value: js.Array[TransformMode]): Self = StObject.set(x, "TransformModeValues", value.asInstanceOf[js.Any])
     
-    inline def setTransformModeValuesVarargs(value: TransformMode*): Self = StObject.set(x, "TransformModeValues", js.Array(value :_*))
+    inline def setTransformModeValuesVarargs(value: TransformMode*): Self = StObject.set(x, "TransformModeValues", js.Array(value*))
   }
 }

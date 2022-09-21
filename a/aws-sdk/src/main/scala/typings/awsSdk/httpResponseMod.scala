@@ -1,9 +1,8 @@
 package typings.awsSdk
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +11,12 @@ object httpResponseMod {
   
   @JSImport("aws-sdk/lib/http_response", "HttpResponse")
   @js.native
-  class HttpResponse () extends StObject {
+  open class HttpResponse () extends StObject {
     
     /**
       * The response body payload.
       */
-    var body: String | Buffer | Uint8Array = js.native
+    var body: String | Buffer | js.typedarray.Uint8Array = js.native
     
     /**
       * Disables buffering on the HTTP response and returns the stream for reading.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sideway__address
 
-Typings are for version 4.1.0
+Typings are for version 5.0.0
 
 ## Library description:
 Email address and domain validation
@@ -10,15 +10,12 @@ Email address and domain validation
 | ------------------ | :-------------: |
 | Full name          | @sideway/address |
 | Keywords           | email, domain, address, validation |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 9716238 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9529076333333332E7 |
+| # stars            | 27.0 |
 
 ## Links
-- [Homepage](https://github.com/sideway/address#readme)
-- [Bugs](https://github.com/sideway/address/issues)
-- [Repository](https://github.com/sideway/address)
 - [Npm](https://www.npmjs.com/package/%40sideway%2Faddress)
     
 

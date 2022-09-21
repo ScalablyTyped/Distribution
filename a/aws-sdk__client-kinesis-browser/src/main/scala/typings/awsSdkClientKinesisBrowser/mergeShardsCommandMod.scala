@@ -16,7 +16,7 @@ object mergeShardsCommandMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/commands/MergeShardsCommand", "MergeShardsCommand")
   @js.native
-  class MergeShardsCommand protected ()
+  open class MergeShardsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object mergeShardsCommandMod {
     override val middlewareStack: MiddlewareStack[MergeShardsInput, MergeShardsOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KinesisResolvedConfiguration
     ): Handler[MergeShardsInput, MergeShardsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KinesisResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[MergeShardsInput, MergeShardsOutput] = js.native
   }
 }

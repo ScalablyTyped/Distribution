@@ -18,12 +18,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def AddFavorite(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddFavorite(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddFavorite(
@@ -35,12 +35,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def AddFavorite(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddFavorite(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddFavorite(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -53,12 +53,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def AddFavorites(
     ObjIDs: IObjIDs,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddFavorites(
     ObjIDs: IObjIDs,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddFavorites(
@@ -70,12 +70,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def AddFavorites(
     ObjIDs: IObjIDs,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddFavorites(
     ObjIDs: IObjIDs,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddFavorites(ObjIDs: IObjIDs, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -92,14 +92,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     AccessControlList: IAccessControlList,
     ChangeAllVersions: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ChangePermissionsToACL(
     ObjVer: IObjVer,
     AccessControlList: IAccessControlList,
     ChangeAllVersions: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ChangePermissionsToACL(
@@ -115,14 +115,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     AccessControlList: IAccessControlList,
     ChangeAllVersions: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ChangePermissionsToACL(
     ObjVer: IObjVer,
     AccessControlList: IAccessControlList,
     ChangeAllVersions: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ChangePermissionsToACL(
@@ -146,14 +146,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     NamedACL: Double,
     ChangeAllVersions: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ChangePermissionsToNamedACL(
     ObjVer: IObjVer,
     NamedACL: Double,
     ChangeAllVersions: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ChangePermissionsToNamedACL(
@@ -169,14 +169,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     NamedACL: Double,
     ChangeAllVersions: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ChangePermissionsToNamedACL(
     ObjVer: IObjVer,
     NamedACL: Double,
     ChangeAllVersions: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ChangePermissionsToNamedACL(
@@ -193,12 +193,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def CheckIn(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CheckIn(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CheckIn(
@@ -210,12 +210,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def CheckIn(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CheckIn(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CheckIn(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -225,12 +225,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def CheckInMultipleObjects(
     ObjVers: IObjVers,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CheckInMultipleObjects(
     ObjVers: IObjVers,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CheckInMultipleObjects(
@@ -242,12 +242,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def CheckInMultipleObjects(
     ObjVers: IObjVers,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CheckInMultipleObjects(
     ObjVers: IObjVers,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CheckInMultipleObjects(ObjVers: IObjVers, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -257,12 +257,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def CheckOut(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CheckOut(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CheckOut(
@@ -274,12 +274,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def CheckOut(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CheckOut(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CheckOut(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -289,12 +289,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def CheckOutMultipleObjects(
     ObjIDs: IObjIDs,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CheckOutMultipleObjects(
     ObjIDs: IObjIDs,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CheckOutMultipleObjects(
@@ -306,12 +306,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def CheckOutMultipleObjects(
     ObjIDs: IObjIDs,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CheckOutMultipleObjects(
     ObjIDs: IObjIDs,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CheckOutMultipleObjects(ObjIDs: IObjIDs, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -338,7 +338,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Deadline: ITypedValue,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewAssignment(
     AssignmentName: String,
@@ -347,7 +347,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Deadline: ITypedValue,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewAssignment(
@@ -367,7 +367,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Deadline: ITypedValue,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewAssignment(
     AssignmentName: String,
@@ -376,7 +376,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Deadline: ITypedValue,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewAssignment(
@@ -409,7 +409,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Extension: String,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewEmptySingleFileDocument(
     PropertyValues: IPropertyValues,
@@ -417,7 +417,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Extension: String,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewEmptySingleFileDocument(
@@ -435,7 +435,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Extension: String,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewEmptySingleFileDocument(
     PropertyValues: IPropertyValues,
@@ -443,7 +443,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Extension: String,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewEmptySingleFileDocument(
@@ -475,7 +475,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SourceObjectFiles: ISourceObjectFiles,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObject(
     ObjectType: Double,
@@ -483,7 +483,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SourceObjectFiles: ISourceObjectFiles,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObject(
@@ -501,7 +501,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SourceObjectFiles: ISourceObjectFiles,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObject(
     ObjectType: Double,
@@ -509,7 +509,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SourceObjectFiles: ISourceObjectFiles,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObject(
@@ -540,7 +540,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SourceObjectFiles: ISourceObjectFiles,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObject(
     ObjectType: MFBuiltInObjectType,
@@ -548,7 +548,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SourceObjectFiles: ISourceObjectFiles,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObject(
@@ -566,7 +566,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SourceObjectFiles: ISourceObjectFiles,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObject(
     ObjectType: MFBuiltInObjectType,
@@ -574,7 +574,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SourceObjectFiles: ISourceObjectFiles,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObject(
@@ -612,7 +612,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObjectEx(
     ObjectType: Double,
@@ -622,7 +622,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObjectEx(
@@ -644,7 +644,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObjectEx(
     ObjectType: Double,
@@ -654,7 +654,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObjectEx(
@@ -693,7 +693,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObjectEx(
     ObjectType: MFBuiltInObjectType,
@@ -703,7 +703,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObjectEx(
@@ -725,7 +725,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObjectEx(
     ObjectType: MFBuiltInObjectType,
@@ -735,7 +735,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObjectEx(
@@ -775,7 +775,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObjectExQuick(
     ObjectType: Double,
@@ -785,7 +785,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObjectExQuick(
@@ -807,7 +807,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObjectExQuick(
     ObjectType: Double,
@@ -817,7 +817,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObjectExQuick(
@@ -856,7 +856,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObjectExQuick(
     ObjectType: MFBuiltInObjectType,
@@ -866,7 +866,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObjectExQuick(
@@ -888,7 +888,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewObjectExQuick(
     ObjectType: MFBuiltInObjectType,
@@ -898,7 +898,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewObjectExQuick(
@@ -935,7 +935,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewSFDObject(
     ObjectType: Double,
@@ -944,7 +944,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewSFDObject(
@@ -964,7 +964,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewSFDObject(
     ObjectType: Double,
@@ -973,7 +973,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewSFDObject(
@@ -1008,7 +1008,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewSFDObject(
     ObjectType: MFBuiltInObjectType,
@@ -1017,7 +1017,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewSFDObject(
@@ -1037,7 +1037,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewSFDObject(
     ObjectType: MFBuiltInObjectType,
@@ -1046,7 +1046,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewSFDObject(
@@ -1082,7 +1082,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewSFDObjectQuick(
     ObjectType: Double,
@@ -1091,7 +1091,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewSFDObjectQuick(
@@ -1111,7 +1111,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewSFDObjectQuick(
     ObjectType: Double,
@@ -1120,7 +1120,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewSFDObjectQuick(
@@ -1155,7 +1155,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewSFDObjectQuick(
     ObjectType: MFBuiltInObjectType,
@@ -1164,7 +1164,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewSFDObjectQuick(
@@ -1184,7 +1184,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreateNewSFDObjectQuick(
     ObjectType: MFBuiltInObjectType,
@@ -1193,7 +1193,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     CheckIn: Boolean,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def CreateNewSFDObjectQuick(
@@ -1212,12 +1212,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def DelayedCheckIn(
     ObjVer: IObjVer,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DelayedCheckIn(
     ObjVer: IObjVer,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DelayedCheckIn(
@@ -1229,12 +1229,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def DelayedCheckIn(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DelayedCheckIn(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DelayedCheckIn(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -1244,12 +1244,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def DeleteObject(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DeleteObject(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DeleteObject(
@@ -1261,12 +1261,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def DeleteObject(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DeleteObject(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DeleteObject(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -1283,14 +1283,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     DestroyAllVersions: Boolean,
     ObjectVersion: Double,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DestroyObject(
     ObjID: IObjID,
     DestroyAllVersions: Boolean,
     ObjectVersion: Double,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DestroyObject(
@@ -1306,14 +1306,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     DestroyAllVersions: Boolean,
     ObjectVersion: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DestroyObject(
     ObjID: IObjID,
     DestroyAllVersions: Boolean,
     ObjectVersion: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DestroyObject(
@@ -1330,12 +1330,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def DestroyObjects(
     ObjIDs: IObjIDs,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DestroyObjects(
     ObjIDs: IObjIDs,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DestroyObjects(
@@ -1347,12 +1347,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def DestroyObjects(
     ObjIDs: IObjIDs,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def DestroyObjects(
     ObjIDs: IObjIDs,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def DestroyObjects(ObjIDs: IObjIDs, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -1363,13 +1363,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     Follow: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def FollowObject(
     ObjID: IObjID,
     Follow: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def FollowObject(
@@ -1383,13 +1383,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     Follow: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def FollowObject(
     ObjID: IObjID,
     Follow: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def FollowObject(
@@ -1405,12 +1405,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def ForceUndoCheckout(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ForceUndoCheckout(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ForceUndoCheckout(
@@ -1422,12 +1422,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def ForceUndoCheckout(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ForceUndoCheckout(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ForceUndoCheckout(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -1437,12 +1437,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetCollectionMembers(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetCollectionMembers(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetCollectionMembers(
@@ -1454,12 +1454,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetCollectionMembers(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetCollectionMembers(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetCollectionMembers(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -1469,12 +1469,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetHistory(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetHistory(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetHistory(
@@ -1486,12 +1486,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetHistory(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetHistory(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetHistory(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -1508,14 +1508,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     AllowCheckedOut: Boolean,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjVer, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetLatestObjVer(
     ObjID: IObjID,
     AllowCheckedOut: Boolean,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjVer, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetLatestObjVer(
@@ -1531,14 +1531,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     AllowCheckedOut: Boolean,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetLatestObjVer(
     ObjID: IObjID,
     AllowCheckedOut: Boolean,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetLatestObjVer(
@@ -1564,7 +1564,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     NotifyViews: Boolean,
     successCallback: js.Function1[/* result */ IObjVer, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetLatestObjVerEx(
     ObjID: IObjID,
@@ -1572,7 +1572,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     NotifyViews: Boolean,
     successCallback: js.Function1[/* result */ IObjVer, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetLatestObjVerEx(
@@ -1590,7 +1590,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     NotifyViews: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetLatestObjVerEx(
     ObjID: IObjID,
@@ -1598,7 +1598,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     NotifyViews: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetLatestObjVerEx(
@@ -1623,14 +1623,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     AllowCheckedOut: Boolean,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetLatestObjectVersionAndProperties(
     ObjID: IObjID,
     AllowCheckedOut: Boolean,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetLatestObjectVersionAndProperties(
@@ -1646,14 +1646,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     AllowCheckedOut: Boolean,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetLatestObjectVersionAndProperties(
     ObjID: IObjID,
     AllowCheckedOut: Boolean,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetLatestObjectVersionAndProperties(
@@ -1679,7 +1679,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SpecificVersion: Boolean,
     URLType: MFilesURLType,
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetMFilesURLForObject(
     ObjID: IObjID,
@@ -1687,7 +1687,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SpecificVersion: Boolean,
     URLType: MFilesURLType,
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetMFilesURLForObject(
@@ -1705,7 +1705,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SpecificVersion: Boolean,
     URLType: MFilesURLType,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetMFilesURLForObject(
     ObjID: IObjID,
@@ -1713,7 +1713,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     SpecificVersion: Boolean,
     URLType: MFilesURLType,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetMFilesURLForObject(
@@ -1748,7 +1748,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     File: Double,
     URLType: MFilesURLType,
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetMFilesURLForObjectOrFile(
     ObjID: IObjID,
@@ -1757,7 +1757,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     File: Double,
     URLType: MFilesURLType,
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetMFilesURLForObjectOrFile(
@@ -1777,7 +1777,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     File: Double,
     URLType: MFilesURLType,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetMFilesURLForObjectOrFile(
     ObjID: IObjID,
@@ -1786,7 +1786,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     File: Double,
     URLType: MFilesURLType,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetMFilesURLForObjectOrFile(
@@ -1805,12 +1805,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetObjIDByGUID(
     ObjectGUID: String,
     successCallback: js.Function1[/* result */ IObjID, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjIDByGUID(
     ObjectGUID: String,
     successCallback: js.Function1[/* result */ IObjID, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjIDByGUID(
@@ -1822,12 +1822,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetObjIDByGUID(
     ObjectGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjIDByGUID(
     ObjectGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjIDByGUID(
@@ -1847,13 +1847,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     OriginalVaultGUID: String,
     OriginalObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjID, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjIDByOriginalObjID(
     OriginalVaultGUID: String,
     OriginalObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjID, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjIDByOriginalObjID(
@@ -1867,13 +1867,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     OriginalVaultGUID: String,
     OriginalObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjIDByOriginalObjID(
     OriginalVaultGUID: String,
     OriginalObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjIDByOriginalObjID(
@@ -1889,12 +1889,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetObjectGUID(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectGUID(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectGUID(
@@ -1906,12 +1906,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetObjectGUID(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectGUID(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectGUID(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -1928,14 +1928,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     LatestVersion: Boolean,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectInfo(
     ObjVer: IObjVer,
     LatestVersion: Boolean,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectInfo(
@@ -1951,14 +1951,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     LatestVersion: Boolean,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectInfo(
     ObjVer: IObjVer,
     LatestVersion: Boolean,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectInfo(
@@ -1984,7 +1984,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     NotifyViews: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectInfoEx(
     ObjVer: IObjVer,
@@ -1992,7 +1992,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     NotifyViews: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectInfoEx(
@@ -2010,7 +2010,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     NotifyViews: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectInfoEx(
     ObjVer: IObjVer,
@@ -2018,7 +2018,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     UpdateFromServer: Boolean,
     NotifyViews: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectInfoEx(
@@ -2043,14 +2043,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     LatestSpecificBehavior: MFLatestSpecificBehavior,
     ObjectVersion: IObjVer,
     successCallback: js.Function1[/* result */ IStrings, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectLocationsInView(
     View: Double,
     LatestSpecificBehavior: MFLatestSpecificBehavior,
     ObjectVersion: IObjVer,
     successCallback: js.Function1[/* result */ IStrings, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectLocationsInView(
@@ -2066,14 +2066,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     LatestSpecificBehavior: MFLatestSpecificBehavior,
     ObjectVersion: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectLocationsInView(
     View: Double,
     LatestSpecificBehavior: MFLatestSpecificBehavior,
     ObjectVersion: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectLocationsInView(
@@ -2096,14 +2096,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     LatestSpecificBehavior: MFLatestSpecificBehavior,
     ObjectVersion: IObjVer,
     successCallback: js.Function1[/* result */ IStrings, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectLocationsInView(
     View: MFBuiltInView,
     LatestSpecificBehavior: MFLatestSpecificBehavior,
     ObjectVersion: IObjVer,
     successCallback: js.Function1[/* result */ IStrings, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectLocationsInView(
@@ -2119,14 +2119,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     LatestSpecificBehavior: MFLatestSpecificBehavior,
     ObjectVersion: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectLocationsInView(
     View: MFBuiltInView,
     LatestSpecificBehavior: MFLatestSpecificBehavior,
     ObjectVersion: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectLocationsInView(
@@ -2143,12 +2143,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetObjectPermissions(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersionPermissions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectPermissions(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersionPermissions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectPermissions(
@@ -2160,12 +2160,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetObjectPermissions(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectPermissions(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectPermissions(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -2180,13 +2180,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectVersionAndProperties(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectVersionAndProperties(
@@ -2200,13 +2200,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectVersionAndProperties(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectVersionAndProperties(
@@ -2239,7 +2239,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     AllowMissingObjectVersions: Boolean,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectVersionAndPropertiesOfMultipleObjects(
     ObjVers: IObjVers,
@@ -2248,7 +2248,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     AllowMissingObjectVersions: Boolean,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectVersionAndPropertiesOfMultipleObjects(
@@ -2268,7 +2268,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     AllowMissingObjectVersions: Boolean,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectVersionAndPropertiesOfMultipleObjects(
     ObjVers: IObjVers,
@@ -2277,7 +2277,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     AllowMissingObjectVersions: Boolean,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectVersionAndPropertiesOfMultipleObjects(
@@ -2296,12 +2296,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetOfflineAvailability(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetOfflineAvailability(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetOfflineAvailability(
@@ -2313,12 +2313,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetOfflineAvailability(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetOfflineAvailability(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetOfflineAvailability(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -2327,11 +2327,11 @@ trait IVaultObjectOperationsAsync extends StObject {
   def GetOfflineObjIDs(successCallback: js.Function1[/* result */ IObjIDs, Unit]): Unit = js.native
   def GetOfflineObjIDs(
     successCallback: js.Function1[/* result */ IObjIDs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetOfflineObjIDs(
     successCallback: js.Function1[/* result */ IObjIDs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetOfflineObjIDs(
@@ -2341,11 +2341,11 @@ trait IVaultObjectOperationsAsync extends StObject {
   ): Unit = js.native
   def GetOfflineObjIDs(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetOfflineObjIDs(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetOfflineObjIDs(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -2360,13 +2360,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVer: IObjVer,
     Mode: MFRelationshipsMode,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetRelationships(
     ObjVer: IObjVer,
     Mode: MFRelationshipsMode,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetRelationships(
@@ -2380,13 +2380,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVer: IObjVer,
     Mode: MFRelationshipsMode,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetRelationships(
     ObjVer: IObjVer,
     Mode: MFRelationshipsMode,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetRelationships(
@@ -2419,7 +2419,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Height: Double,
     GetFileIconThumbnailIfRealThumbnailNotAvailable: Boolean,
     successCallback: js.Function1[/* result */ js.Array[Double], Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetThumbnailAsBytes(
     ObjVer: IObjVer,
@@ -2428,7 +2428,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Height: Double,
     GetFileIconThumbnailIfRealThumbnailNotAvailable: Boolean,
     successCallback: js.Function1[/* result */ js.Array[Double], Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetThumbnailAsBytes(
@@ -2448,7 +2448,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Height: Double,
     GetFileIconThumbnailIfRealThumbnailNotAvailable: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetThumbnailAsBytes(
     ObjVer: IObjVer,
@@ -2457,7 +2457,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     Height: Double,
     GetFileIconThumbnailIfRealThumbnailNotAvailable: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetThumbnailAsBytes(
@@ -2481,13 +2481,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsObjectCheckedOut(
     ObjID: IObjID,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsObjectCheckedOut(
@@ -2501,13 +2501,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsObjectCheckedOut(
     ObjID: IObjID,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsObjectCheckedOut(
@@ -2528,13 +2528,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsObjectCheckedOutToThisUserOnThisComputer(
     ObjID: IObjID,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsObjectCheckedOutToThisUserOnThisComputer(
@@ -2548,13 +2548,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsObjectCheckedOutToThisUserOnThisComputer(
     ObjID: IObjID,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsObjectCheckedOutToThisUserOnThisComputer(
@@ -2570,12 +2570,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def IsObjectFollowed(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsObjectFollowed(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsObjectFollowed(
@@ -2587,12 +2587,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def IsObjectFollowed(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsObjectFollowed(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsObjectFollowed(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -2602,12 +2602,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def IsSingleFileObject(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsSingleFileObject(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsSingleFileObject(
@@ -2619,12 +2619,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def IsSingleFileObject(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsSingleFileObject(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsSingleFileObject(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -2639,13 +2639,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     pIObjVer: IObjVer,
     pISearchConditions: ISearchConditions,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def MatchesSearchConditions(
     pIObjVer: IObjVer,
     pISearchConditions: ISearchConditions,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def MatchesSearchConditions(
@@ -2659,13 +2659,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     pIObjVer: IObjVer,
     pISearchConditions: ISearchConditions,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def MatchesSearchConditions(
     pIObjVer: IObjVer,
     pISearchConditions: ISearchConditions,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def MatchesSearchConditions(
@@ -2695,7 +2695,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     pIPropertyValues: IPropertyValues,
     pIObjectVersionAndPropertiesOfMultipleObjects: IObjectVersionAndPropertiesOfMultipleObjects,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def MatchesSearchConditionsEx(
     pIObjectVersion: IObjectVersion,
@@ -2703,7 +2703,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     pIPropertyValues: IPropertyValues,
     pIObjectVersionAndPropertiesOfMultipleObjects: IObjectVersionAndPropertiesOfMultipleObjects,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def MatchesSearchConditionsEx(
@@ -2721,7 +2721,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     pIPropertyValues: IPropertyValues,
     pIObjectVersionAndPropertiesOfMultipleObjects: IObjectVersionAndPropertiesOfMultipleObjects,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def MatchesSearchConditionsEx(
     pIObjectVersion: IObjectVersion,
@@ -2729,7 +2729,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     pIPropertyValues: IPropertyValues,
     pIObjectVersionAndPropertiesOfMultipleObjects: IObjectVersionAndPropertiesOfMultipleObjects,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def MatchesSearchConditionsEx(
@@ -2747,12 +2747,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def NotifyObjectAccess(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def NotifyObjectAccess(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def NotifyObjectAccess(
@@ -2764,12 +2764,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def NotifyObjectAccess(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def NotifyObjectAccess(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def NotifyObjectAccess(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -2786,14 +2786,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVersionFile: IObjectFileAndVersion,
     CanCancel: Boolean,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ProposeCheckOutForFile(
     ParentWindow: Double,
     ObjVersionFile: IObjectFileAndVersion,
     CanCancel: Boolean,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ProposeCheckOutForFile(
@@ -2809,14 +2809,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVersionFile: IObjectFileAndVersion,
     CanCancel: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ProposeCheckOutForFile(
     ParentWindow: Double,
     ObjVersionFile: IObjectFileAndVersion,
     CanCancel: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ProposeCheckOutForFile(
@@ -2833,12 +2833,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def RejectCheckInReminder(
     ObjVer: IObjVer,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RejectCheckInReminder(
     ObjVer: IObjVer,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RejectCheckInReminder(
@@ -2850,12 +2850,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def RejectCheckInReminder(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RejectCheckInReminder(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RejectCheckInReminder(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -2865,12 +2865,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def RemoveFavorite(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveFavorite(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveFavorite(
@@ -2882,12 +2882,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def RemoveFavorite(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveFavorite(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveFavorite(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -2900,12 +2900,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def RemoveFavorites(
     ObjIDs: IObjIDs,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveFavorites(
     ObjIDs: IObjIDs,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveFavorites(
@@ -2917,12 +2917,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def RemoveFavorites(
     ObjIDs: IObjIDs,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveFavorites(
     ObjIDs: IObjIDs,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveFavorites(ObjIDs: IObjIDs, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -2937,13 +2937,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParticipantObjID: IObjID,
     KeepThis: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ResolveConflict(
     ParticipantObjID: IObjID,
     KeepThis: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ResolveConflict(
@@ -2957,13 +2957,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParticipantObjID: IObjID,
     KeepThis: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ResolveConflict(
     ParticipantObjID: IObjID,
     KeepThis: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ResolveConflict(
@@ -2984,13 +2984,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     RollbackToVersion: Double,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def Rollback(
     ObjID: IObjID,
     RollbackToVersion: Double,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def Rollback(
@@ -3004,13 +3004,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     RollbackToVersion: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def Rollback(
     ObjID: IObjID,
     RollbackToVersion: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def Rollback(
@@ -3027,13 +3027,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     ExtID: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetExternalID(
     ObjID: IObjID,
     ExtID: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetExternalID(
@@ -3047,13 +3047,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     ExtID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetExternalID(
     ObjID: IObjID,
     ExtID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetExternalID(
@@ -3070,13 +3070,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     ObjectGUID: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetObjectGUID(
     ObjID: IObjID,
     ObjectGUID: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetObjectGUID(
@@ -3090,13 +3090,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     ObjectGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetObjectGUID(
     ObjID: IObjID,
     ObjectGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetObjectGUID(
@@ -3113,13 +3113,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     AvailableInOfflineMode: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetOfflineAvailability(
     ObjID: IObjID,
     AvailableInOfflineMode: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetOfflineAvailability(
@@ -3133,13 +3133,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjID: IObjID,
     AvailableInOfflineMode: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetOfflineAvailability(
     ObjID: IObjID,
     AvailableInOfflineMode: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetOfflineAvailability(
@@ -3156,13 +3156,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVer: IObjVer,
     SingleFile: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetSingleFileObject(
     ObjVer: IObjVer,
     SingleFile: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetSingleFileObject(
@@ -3176,13 +3176,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVer: IObjVer,
     SingleFile: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetSingleFileObject(
     ObjVer: IObjVer,
     SingleFile: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SetSingleFileObject(
@@ -3203,13 +3203,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectWindowResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowBasicEditObjectWindow(
     ParentWindow: Double,
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectWindowResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowBasicEditObjectWindow(
@@ -3223,13 +3223,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowBasicEditObjectWindow(
     ParentWindow: Double,
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowBasicEditObjectWindow(
@@ -3250,13 +3250,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjectType: IObjectType,
     successCallback: js.Function1[/* result */ IObjectWindowResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowBasicNewObjectWindow(
     ParentWindow: Double,
     ObjectType: IObjectType,
     successCallback: js.Function1[/* result */ IObjectWindowResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowBasicNewObjectWindow(
@@ -3270,13 +3270,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjectType: IObjectType,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowBasicNewObjectWindow(
     ParentWindow: Double,
     ObjectType: IObjectType,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowBasicNewObjectWindow(
@@ -3293,13 +3293,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowChangeStateDialogModal(
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowChangeStateDialogModal(
@@ -3313,13 +3313,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowChangeStateDialogModal(
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowChangeStateDialogModal(
@@ -3342,14 +3342,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVer: IObjVer,
     Asynchronous: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowCheckInReminder(
     ParentWindow: Double,
     ObjVer: IObjVer,
     Asynchronous: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowCheckInReminder(
@@ -3365,14 +3365,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVer: IObjVer,
     Asynchronous: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowCheckInReminder(
     ParentWindow: Double,
     ObjVer: IObjVer,
     Asynchronous: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowCheckInReminder(
@@ -3396,14 +3396,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVer: IObjVer,
     ApplyEnvironmentConditions: Boolean,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowCheckInReminderDialogModal(
     ParentWindow: Double,
     ObjVer: IObjVer,
     ApplyEnvironmentConditions: Boolean,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowCheckInReminderDialogModal(
@@ -3419,14 +3419,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjVer: IObjVer,
     ApplyEnvironmentConditions: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowCheckInReminderDialogModal(
     ParentWindow: Double,
     ObjVer: IObjVer,
     ApplyEnvironmentConditions: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowCheckInReminderDialogModal(
@@ -3460,7 +3460,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     ShowCancel: Boolean,
     AutoRejectConsequentPrompts: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowCheckoutPrompt(
     ParentWindow: Double,
@@ -3469,7 +3469,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     ShowCancel: Boolean,
     AutoRejectConsequentPrompts: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowCheckoutPrompt(
@@ -3489,7 +3489,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     ShowCancel: Boolean,
     AutoRejectConsequentPrompts: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowCheckoutPrompt(
     ParentWindow: Double,
@@ -3498,7 +3498,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     ShowCancel: Boolean,
     AutoRejectConsequentPrompts: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowCheckoutPrompt(
@@ -3524,14 +3524,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjectVersion: IObjVer,
     Modeless: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowCollectionMembersDialog(
     ParentWindow: Double,
     ObjectVersion: IObjVer,
     Modeless: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowCollectionMembersDialog(
@@ -3547,14 +3547,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjectVersion: IObjVer,
     Modeless: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowCollectionMembersDialog(
     ParentWindow: Double,
     ObjectVersion: IObjVer,
     Modeless: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowCollectionMembersDialog(
@@ -3572,13 +3572,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowCommentsDialogModal(
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowCommentsDialogModal(
@@ -3592,13 +3592,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowCommentsDialogModal(
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowCommentsDialogModal(
@@ -3621,14 +3621,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     Mode: MFObjectWindowMode,
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectWindowResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowEditObjectWindow(
     ParentWindow: Double,
     Mode: MFObjectWindowMode,
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectWindowResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowEditObjectWindow(
@@ -3644,14 +3644,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     Mode: MFObjectWindowMode,
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowEditObjectWindow(
     ParentWindow: Double,
     Mode: MFObjectWindowMode,
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowEditObjectWindow(
@@ -3669,13 +3669,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowHistoryDialogModal(
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowHistoryDialogModal(
@@ -3689,13 +3689,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowHistoryDialogModal(
     ParentWindow: Double,
     ObjectID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowHistoryDialogModal(
@@ -3718,14 +3718,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     Mode: MFObjectWindowMode,
     ObjectCreationInfo: IObjectCreationInfo,
     successCallback: js.Function1[/* result */ IObjectWindowResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowNewObjectWindow(
     ParentWindow: Double,
     Mode: MFObjectWindowMode,
     ObjectCreationInfo: IObjectCreationInfo,
     successCallback: js.Function1[/* result */ IObjectWindowResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowNewObjectWindow(
@@ -3741,14 +3741,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     Mode: MFObjectWindowMode,
     ObjectCreationInfo: IObjectCreationInfo,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowNewObjectWindow(
     ParentWindow: Double,
     Mode: MFObjectWindowMode,
     ObjectCreationInfo: IObjectCreationInfo,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowNewObjectWindow(
@@ -3782,7 +3782,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     PrefilledPropertyValues: IPropertyValues,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectWindowResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowPrefilledNewObjectWindow(
     ParentWindow: Double,
@@ -3791,7 +3791,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     PrefilledPropertyValues: IPropertyValues,
     AccessControlList: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectWindowResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowPrefilledNewObjectWindow(
@@ -3811,7 +3811,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     PrefilledPropertyValues: IPropertyValues,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowPrefilledNewObjectWindow(
     ParentWindow: Double,
@@ -3820,7 +3820,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     PrefilledPropertyValues: IPropertyValues,
     AccessControlList: IAccessControlList,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowPrefilledNewObjectWindow(
@@ -3853,7 +3853,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjectTypeTargetForBrowsing: IObjectTypeTargetForBrowsing,
     ViewSelectionDialogInfoText: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowRelatedObjects(
     ParentWindow: Double,
@@ -3861,7 +3861,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjectTypeTargetForBrowsing: IObjectTypeTargetForBrowsing,
     ViewSelectionDialogInfoText: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowRelatedObjects(
@@ -3879,7 +3879,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjectTypeTargetForBrowsing: IObjectTypeTargetForBrowsing,
     ViewSelectionDialogInfoText: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowRelatedObjects(
     ParentWindow: Double,
@@ -3887,7 +3887,7 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjectTypeTargetForBrowsing: IObjectTypeTargetForBrowsing,
     ViewSelectionDialogInfoText: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowRelatedObjects(
@@ -3912,14 +3912,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjectVersion: IObjVer,
     Modeless: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowRelationshipsDialog(
     ParentWindow: Double,
     ObjectVersion: IObjVer,
     Modeless: Boolean,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowRelationshipsDialog(
@@ -3935,14 +3935,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjectVersion: IObjVer,
     Modeless: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowRelationshipsDialog(
     ParentWindow: Double,
     ObjectVersion: IObjVer,
     Modeless: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowRelationshipsDialog(
@@ -3966,14 +3966,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjectID: IObjID,
     WindowTitle: String,
     successCallback: js.Function1[/* result */ IObjOrFileVer, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowSelectObjectHistoryDialogModal(
     ParentWindow: Double,
     ObjectID: IObjID,
     WindowTitle: String,
     successCallback: js.Function1[/* result */ IObjOrFileVer, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowSelectObjectHistoryDialogModal(
@@ -3989,14 +3989,14 @@ trait IVaultObjectOperationsAsync extends StObject {
     ObjectID: IObjID,
     WindowTitle: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowSelectObjectHistoryDialogModal(
     ParentWindow: Double,
     ObjectID: IObjID,
     WindowTitle: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowSelectObjectHistoryDialogModal(
@@ -4014,13 +4014,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjectVersion: IObjVer,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowSubObjectsDialogModal(
     ParentWindow: Double,
     ObjectVersion: IObjVer,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowSubObjectsDialogModal(
@@ -4034,13 +4034,13 @@ trait IVaultObjectOperationsAsync extends StObject {
     ParentWindow: Double,
     ObjectVersion: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ShowSubObjectsDialogModal(
     ParentWindow: Double,
     ObjectVersion: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ShowSubObjectsDialogModal(
@@ -4056,12 +4056,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def UndeleteObject(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UndeleteObject(
     ObjID: IObjID,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UndeleteObject(
@@ -4073,12 +4073,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def UndeleteObject(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UndeleteObject(
     ObjID: IObjID,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UndeleteObject(ObjID: IObjID, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -4088,12 +4088,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def UndoCheckout(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UndoCheckout(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UndoCheckout(
@@ -4105,12 +4105,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def UndoCheckout(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UndoCheckout(
     ObjVer: IObjVer,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UndoCheckout(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -4120,12 +4120,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def UndoCheckoutMultipleObjects(
     ObjVers: IObjVers,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UndoCheckoutMultipleObjects(
     ObjVers: IObjVers,
     successCallback: js.Function1[/* result */ IObjectVersions, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UndoCheckoutMultipleObjects(
@@ -4137,12 +4137,12 @@ trait IVaultObjectOperationsAsync extends StObject {
   def UndoCheckoutMultipleObjects(
     ObjVers: IObjVers,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def UndoCheckoutMultipleObjects(
     ObjVers: IObjVers,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def UndoCheckoutMultipleObjects(ObjVers: IObjVers, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native

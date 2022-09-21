@@ -8,5 +8,5 @@ object putObjectAclInputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/PutObjectAclInput", "PutObjectAclInput")
   @js.native
-  val PutObjectAclInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutObjectAclInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

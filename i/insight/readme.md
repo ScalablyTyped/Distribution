@@ -11,14 +11,11 @@ Understand how your tool is being used by anonymously reporting usage metrics to
 | Full name          | insight |
 | Keywords           | package, stats, google, analytics, track, metrics, yandex, metrica |
 | # releases         | 3 |
-| # dependents       | 153 |
-| # downloads        | 11293971 |
-| # stars            | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 1371930.0 |
+| # stars            | 549.0 |
 
 ## Links
-- [Homepage](https://github.com/yeoman/insight#readme)
-- [Bugs](https://github.com/yeoman/insight/issues)
-- [Repository](https://github.com/yeoman/insight)
 - [Npm](https://www.npmjs.com/package/insight)
     
 

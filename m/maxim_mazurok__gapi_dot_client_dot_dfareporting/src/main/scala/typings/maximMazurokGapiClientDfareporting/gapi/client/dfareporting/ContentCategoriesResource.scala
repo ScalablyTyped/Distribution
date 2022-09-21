@@ -3,8 +3,8 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDfareporting.anon.Alt
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
-import typings.maximMazurokGapiClientDfareporting.anon.FieldsKey
 import typings.maximMazurokGapiClientDfareporting.anon.IdKey
+import typings.maximMazurokGapiClientDfareporting.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientDfareporting.anon.MaxResults
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait ContentCategoriesResource extends StObject {
   
   def insert(request: Callback, body: ContentCategory): Request[ContentCategory] = js.native
   /** Inserts a new content category. */
-  def insert(request: FieldsKey): Request[ContentCategory] = js.native
+  def insert(request: KeyOauthtoken): Request[ContentCategory] = js.native
   
   /** Retrieves a list of content categories, possibly filtered. This method supports paging. */
   def list(): Request[ContentCategoriesListResponse] = js.native
@@ -35,5 +35,5 @@ trait ContentCategoriesResource extends StObject {
   
   def update(request: Callback, body: ContentCategory): Request[ContentCategory] = js.native
   /** Updates an existing content category. */
-  def update(request: FieldsKey): Request[ContentCategory] = js.native
+  def update(request: KeyOauthtoken): Request[ContentCategory] = js.native
 }

@@ -149,17 +149,17 @@ trait IMedia
   /** [Method] Updates the controls of the video element
     * @param enableControls Object
     */
-  var updateEnableControls: js.UndefOr[js.Function1[/* enableControls */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updateEnableControls: js.UndefOr[js.Function1[/* enableControls */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Updates the loop setting of the media element
     * @param loop Object
     */
-  var updateLoop: js.UndefOr[js.Function1[/* loop */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updateLoop: js.UndefOr[js.Function1[/* loop */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the URL of the media element
     * @param newUrl Object
     */
-  var updateUrl: js.UndefOr[js.Function1[/* newUrl */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updateUrl: js.UndefOr[js.Function1[/* newUrl */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var url: js.UndefOr[java.lang.String] = js.undefined
@@ -304,15 +304,15 @@ object IMedia {
     
     inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
-    inline def setUpdateEnableControls(value: /* enableControls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateEnableControls", js.Any.fromFunction1(value))
+    inline def setUpdateEnableControls(value: /* enableControls */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updateEnableControls", js.Any.fromFunction1(value))
     
     inline def setUpdateEnableControlsUndefined: Self = StObject.set(x, "updateEnableControls", js.undefined)
     
-    inline def setUpdateLoop(value: /* loop */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateLoop", js.Any.fromFunction1(value))
+    inline def setUpdateLoop(value: /* loop */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updateLoop", js.Any.fromFunction1(value))
     
     inline def setUpdateLoopUndefined: Self = StObject.set(x, "updateLoop", js.undefined)
     
-    inline def setUpdateUrl(value: /* newUrl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateUrl", js.Any.fromFunction1(value))
+    inline def setUpdateUrl(value: /* newUrl */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updateUrl", js.Any.fromFunction1(value))
     
     inline def setUpdateUrlUndefined: Self = StObject.set(x, "updateUrl", js.undefined)
     

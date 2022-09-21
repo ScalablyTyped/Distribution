@@ -80,13 +80,13 @@ object Invoice {
       
       inline def setLine_itemsUndefined: Self = StObject.set(x, "line_items", js.undefined)
       
-      inline def setLine_itemsVarargs(value: LineItem*): Self = StObject.set(x, "line_items", js.Array(value :_*))
+      inline def setLine_itemsVarargs(value: LineItem*): Self = StObject.set(x, "line_items", js.Array(value*))
       
       inline def setTransactions(value: js.Array[typings.chartmogulNode.mod.Invoice.Transaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
       inline def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
       
-      inline def setTransactionsVarargs(value: typings.chartmogulNode.mod.Invoice.Transaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: typings.chartmogulNode.mod.Invoice.Transaction*): Self = StObject.set(x, "transactions", js.Array(value*))
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
@@ -117,7 +117,7 @@ object Invoice {
       
       inline def setInvoices(value: js.Array[typings.chartmogulNode.mod.Invoice.Invoice]): Self = StObject.set(x, "invoices", value.asInstanceOf[js.Any])
       
-      inline def setInvoicesVarargs(value: typings.chartmogulNode.mod.Invoice.Invoice*): Self = StObject.set(x, "invoices", js.Array(value :_*))
+      inline def setInvoicesVarargs(value: typings.chartmogulNode.mod.Invoice.Invoice*): Self = StObject.set(x, "invoices", js.Array(value*))
     }
   }
   

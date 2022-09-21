@@ -4,7 +4,7 @@ import typings.awsSdkNodeConfigProvider.fromEnvMod.GetterFromEnv
 import typings.awsSdkNodeConfigProvider.fromSharedConfigFilesMod.GetterFromConfig
 import typings.awsSdkNodeConfigProvider.fromSharedConfigFilesMod.SharedConfigInit
 import typings.awsSdkNodeConfigProvider.fromStaticMod.FromStaticConfig
-import typings.awsSdkSharedIniFileLoader.mod.Profile
+import typings.awsSdkTypes.profileMod.Profile
 import typings.awsSdkTypes.utilMod.Provider
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object configLoaderMod {
   
-  @JSImport("@aws-sdk/node-config-provider/dist/cjs/configLoader", JSImport.Namespace)
+  @JSImport("@aws-sdk/node-config-provider/dist-types/configLoader", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -71,7 +71,7 @@ object configLoaderMod {
       
       inline def setDefault(value: FromStaticConfig[T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      inline def setDefaultFunction0(value: () => T): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
+      inline def setDefaultFunction0(value: () => js.Promise[T] | T): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
       
       inline def setEnvironmentVariableSelector(value: /* env */ ProcessEnv => js.UndefOr[T]): Self = StObject.set(x, "environmentVariableSelector", js.Any.fromFunction1(value))
     }

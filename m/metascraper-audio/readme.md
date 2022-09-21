@@ -10,15 +10,15 @@ Get audio property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-audio |
 | Keywords           | author, metascraper |
-| # releases         | 105 |
-| # dependents       | 4 |
-| # downloads        | 41335 |
-| # stars            | 0 |
+| # releases         | 92 |
+| # dependents       | 0.0 |
+| # downloads        | 2898.0 |
+| # stars            | 1802.0 |
 
 ## Links
-- [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-audio)
+- [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)
 - [Bugs](https://github.com/microlinkhq/metascraper/issues)
-- [Repository](https://github.com/microlinkhq/metascraper)
+- [Repository](https://github.com/microlinkhq/metascraper/tree/master)
 - [Npm](https://www.npmjs.com/package/metascraper-audio)
     
 

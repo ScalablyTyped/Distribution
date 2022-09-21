@@ -45,7 +45,7 @@ object UseRowSelectHooks {
         ]
     ): Self = StObject.set(x, "getToggleAllPageRowsSelectedProps", value.asInstanceOf[js.Any])
     
-    inline def setGetToggleAllPageRowsSelectedPropsVarargs(value: (PropGetter[D, TableToggleAllRowsSelectedProps, scala.Nothing, PartialTableToggleAllRows])*): Self = StObject.set(x, "getToggleAllPageRowsSelectedProps", js.Array(value :_*))
+    inline def setGetToggleAllPageRowsSelectedPropsVarargs(value: (PropGetter[D, TableToggleAllRowsSelectedProps, scala.Nothing, PartialTableToggleAllRows])*): Self = StObject.set(x, "getToggleAllPageRowsSelectedProps", js.Array(value*))
     
     inline def setGetToggleAllRowsSelectedProps(
       value: js.Array[
@@ -53,7 +53,7 @@ object UseRowSelectHooks {
         ]
     ): Self = StObject.set(x, "getToggleAllRowsSelectedProps", value.asInstanceOf[js.Any])
     
-    inline def setGetToggleAllRowsSelectedPropsVarargs(value: (PropGetter[D, TableToggleAllRowsSelectedProps, scala.Nothing, PartialTableToggleAllRows])*): Self = StObject.set(x, "getToggleAllRowsSelectedProps", js.Array(value :_*))
+    inline def setGetToggleAllRowsSelectedPropsVarargs(value: (PropGetter[D, TableToggleAllRowsSelectedProps, scala.Nothing, PartialTableToggleAllRows])*): Self = StObject.set(x, "getToggleAllRowsSelectedProps", js.Array(value*))
     
     inline def setGetToggleRowSelectedProps(
       value: js.Array[
@@ -61,6 +61,6 @@ object UseRowSelectHooks {
         ]
     ): Self = StObject.set(x, "getToggleRowSelectedProps", value.asInstanceOf[js.Any])
     
-    inline def setGetToggleRowSelectedPropsVarargs(value: (PropGetter[D, TableToggleRowsSelectedProps, scala.Nothing, PartialTableToggleRowsSel])*): Self = StObject.set(x, "getToggleRowSelectedProps", js.Array(value :_*))
+    inline def setGetToggleRowSelectedPropsVarargs(value: (PropGetter[D, TableToggleRowsSelectedProps, scala.Nothing, PartialTableToggleRowsSel])*): Self = StObject.set(x, "getToggleRowSelectedProps", js.Array(value*))
   }
 }

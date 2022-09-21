@@ -10,10 +10,10 @@ Highlight keywords using JavaScript. Intended for every use case. Can e.g. be us
 | ------------------ | :-------------: |
 | Full name          | mark.js |
 | Keywords           | mark.js, markjs, mark, jquery.mark, jmHighlight, highlight, search, jquery, javascript, text, keyword |
-| # releases         | 0 |
-| # dependents       | 50 |
-| # downloads        | 6136180 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1140202.3333333333 |
+| # stars            | 2098.0 |
 
 ## Links
 - [Homepage](https://markjs.io/)

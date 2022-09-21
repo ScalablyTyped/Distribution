@@ -5,77 +5,77 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type GEEventPhaseEnum = js.Any
+type GEEventPhaseEnum = Any
 
-type GEFeatureBalloon = typings.googleEarth.google.earth.GEAbstractBalloon
+type GEFeatureBalloon = GEAbstractBalloon
 
-type GEFeatureContainer = typings.googleEarth.google.earth.GESchemaObjectContainer[typings.googleEarth.google.earth.KmlFeature]
+type GEFeatureContainer = GESchemaObjectContainer[KmlFeature]
 
-type GEGeometryContainer = typings.googleEarth.google.earth.GESchemaObjectContainer[typings.googleEarth.google.earth.KmlGeometry]
+type GEGeometryContainer = GESchemaObjectContainer[KmlGeometry]
 
 /**
   * Specifies what to sample when performing a hit test.
   */
-type GEHitTestModeEnum = js.Any
+type GEHitTestModeEnum = Any
 
-type GELinearRingContainer = typings.googleEarth.google.earth.GESchemaObjectContainer[typings.googleEarth.google.earth.KmlLinearRing]
+type GELinearRingContainer = GESchemaObjectContainer[KmlLinearRing]
 
 /**
   * Specifies if the map type is Earth or sky mode.
   */
-type GEMapTypeEnum = js.Any
+type GEMapTypeEnum = Any
 
 /**
   * Specifies the size of the navigation control.
   */
-type GENavigationControlEnum = js.Any
+type GENavigationControlEnum = Any
 
-type GEStyleSelectorContainer = typings.googleEarth.google.earth.GESchemaObjectContainer[typings.googleEarth.google.earth.KmlStyleSelector]
+type GEStyleSelectorContainer = GESchemaObjectContainer[KmlStyleSelector]
 
 /*
   * Specifies the viewer option types.
   */
-type GEViewerOptionsTypeEnum = js.Any
+type GEViewerOptionsTypeEnum = Any
 
 /**
   * Specifies the state of viewer options, including sunlight,
   * Street View, and historical imagery.
   */
-type GEViewerOptionsValueEnum = js.Any
+type GEViewerOptionsValueEnum = Any
 
 /**
   * Specifies if a control is always visible, always hidden,
   * or visible only when the user intends to use the control.
   */
-type GEVisibilityEnum = js.Any
+type GEVisibilityEnum = Any
 
-type KmlAltitudeModeEnum = js.Any
+type KmlAltitudeModeEnum = Any
 
-type KmlColorModeEnum = js.Any
+type KmlColorModeEnum = Any
 
-type KmlFolder = typings.googleEarth.google.earth.KmlContainer
+type KmlFolder = KmlContainer
 
-type KmlGeometry = typings.googleEarth.google.earth.KmlObject
+type KmlGeometry = KmlObject
 
-type KmlLayer = typings.googleEarth.google.earth.KmlFolder
+type KmlLayer = KmlFolder
 
-type KmlLinearRing = typings.googleEarth.google.earth.KmlLineString
+type KmlLinearRing = KmlLineString
 
-type KmlListItemTypeEnum = js.Any
+type KmlListItemTypeEnum = Any
 
-type KmlPhotoOverlay = typings.googleEarth.google.earth.KmlOverlay
+type KmlPhotoOverlay = KmlOverlay
 
-type KmlRefreshModeEnum = js.Any
+type KmlRefreshModeEnum = Any
 
-type KmlStyleSelector = typings.googleEarth.google.earth.KmlObject
+type KmlStyleSelector = KmlObject
 
-type KmlTimePrimitive = typings.googleEarth.google.earth.KmlObject
+type KmlTimePrimitive = KmlObject
 
-type KmlTour = typings.googleEarth.google.earth.KmlFeature
+type KmlTour = KmlFeature
 
 /**
   * Specifies which units a value is specified in.
   */
-type KmlUnitsEnum = js.Any
+type KmlUnitsEnum = Any
 
-type KmlViewRefreshModeEnum = js.Any
+type KmlViewRefreshModeEnum = Any

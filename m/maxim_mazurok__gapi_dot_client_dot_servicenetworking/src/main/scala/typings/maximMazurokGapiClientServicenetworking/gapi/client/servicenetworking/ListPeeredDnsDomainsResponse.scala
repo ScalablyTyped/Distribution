@@ -22,6 +22,6 @@ object ListPeeredDnsDomainsResponse {
     
     inline def setPeeredDnsDomainsUndefined: Self = StObject.set(x, "peeredDnsDomains", js.undefined)
     
-    inline def setPeeredDnsDomainsVarargs(value: PeeredDnsDomain*): Self = StObject.set(x, "peeredDnsDomains", js.Array(value :_*))
+    inline def setPeeredDnsDomainsVarargs(value: PeeredDnsDomain*): Self = StObject.set(x, "peeredDnsDomains", js.Array(value*))
   }
 }

@@ -1,15 +1,14 @@
 package typings.mfiles
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IObjectFile extends StObject {
   
-  val ChangeTimeUtc: Date
+  val ChangeTimeUtc: js.Date
   
-  val CreationTimeUtc: Date
+  val CreationTimeUtc: js.Date
   
   val Extension: String
   
@@ -21,9 +20,9 @@ trait IObjectFile extends StObject {
   
   val ID: Double
   
-  val LastAccessTimeUtc: Date
+  val LastAccessTimeUtc: js.Date
   
-  val LastWriteTimeUtc: Date
+  val LastWriteTimeUtc: js.Date
   
   val LogicalSize: Double
   
@@ -38,15 +37,15 @@ trait IObjectFile extends StObject {
 object IObjectFile {
   
   inline def apply(
-    ChangeTimeUtc: Date,
-    CreationTimeUtc: Date,
+    ChangeTimeUtc: js.Date,
+    CreationTimeUtc: js.Date,
     Extension: String,
     FileGUID: String,
     FileVer: IFileVer,
     GetNameForFileSystem: () => String,
     ID: Double,
-    LastAccessTimeUtc: Date,
-    LastWriteTimeUtc: Date,
+    LastAccessTimeUtc: js.Date,
+    LastWriteTimeUtc: js.Date,
     LogicalSize: Double,
     LogicalSize_32bit: Double,
     Title: String,
@@ -59,9 +58,9 @@ object IObjectFile {
   
   extension [Self <: IObjectFile](x: Self) {
     
-    inline def setChangeTimeUtc(value: Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
+    inline def setChangeTimeUtc(value: js.Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
     
-    inline def setCreationTimeUtc(value: Date): Self = StObject.set(x, "CreationTimeUtc", value.asInstanceOf[js.Any])
+    inline def setCreationTimeUtc(value: js.Date): Self = StObject.set(x, "CreationTimeUtc", value.asInstanceOf[js.Any])
     
     inline def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
@@ -73,9 +72,9 @@ object IObjectFile {
     
     inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    inline def setLastAccessTimeUtc(value: Date): Self = StObject.set(x, "LastAccessTimeUtc", value.asInstanceOf[js.Any])
+    inline def setLastAccessTimeUtc(value: js.Date): Self = StObject.set(x, "LastAccessTimeUtc", value.asInstanceOf[js.Any])
     
-    inline def setLastWriteTimeUtc(value: Date): Self = StObject.set(x, "LastWriteTimeUtc", value.asInstanceOf[js.Any])
+    inline def setLastWriteTimeUtc(value: js.Date): Self = StObject.set(x, "LastWriteTimeUtc", value.asInstanceOf[js.Any])
     
     inline def setLogicalSize(value: Double): Self = StObject.set(x, "LogicalSize", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "park-miller" : "1.1.0"
+      "park-miller" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "park-miller" : "1.1.0"
+      "park-miller" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

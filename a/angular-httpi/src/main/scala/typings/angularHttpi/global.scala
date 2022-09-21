@@ -13,7 +13,7 @@ object global {
     
     @JSGlobal("Httpi.HttpiResource")
     @js.native
-    class HttpiResource protected ()
+    open class HttpiResource protected ()
       extends StObject
          with typings.angularHttpi.Httpi.HttpiResource {
       def this(http: IHttpService, url: String) = this()

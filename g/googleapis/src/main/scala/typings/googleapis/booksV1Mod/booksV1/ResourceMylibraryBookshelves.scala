@@ -4,93 +4,172 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Mylibrary$Bookshelves")
 @js.native
-class ResourceMylibraryBookshelves protected () extends StObject {
+open class ResourceMylibraryBookshelves protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  /**
-    * books.mylibrary.bookshelves.addVolume
-    * @desc Adds a volume to a bookshelf.
-    * @alias books.mylibrary.bookshelves.addVolume
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.reason The reason for which the book is added to the library.
-    * @param {string} params.shelf ID of bookshelf to which to add a volume.
-    * @param {string=} params.source String to identify the originator of this request.
-    * @param {string} params.volumeId ID of volume to add.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
-  def addVolume(): GaxiosPromise[Unit] = js.native
-  def addVolume(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def addVolume(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
-  def addVolume(params: ParamsResourceMylibraryBookshelvesAddvolume): GaxiosPromise[Unit] = js.native
-  def addVolume(params: ParamsResourceMylibraryBookshelvesAddvolume, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def addVolume(): GaxiosPromise[SchemaEmpty] = js.native
+  def addVolume(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def addVolume(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def addVolume(params: ParamsResourceMylibraryBookshelvesAddvolume): GaxiosPromise[SchemaEmpty] = js.native
+  def addVolume(params: ParamsResourceMylibraryBookshelvesAddvolume, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def addVolume(
     params: ParamsResourceMylibraryBookshelvesAddvolume,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
-  def addVolume(params: ParamsResourceMylibraryBookshelvesAddvolume, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def addVolume(params: ParamsResourceMylibraryBookshelvesAddvolume, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def addVolume(
     params: ParamsResourceMylibraryBookshelvesAddvolume,
     options: MethodOptions,
-    callback: BodyResponseCallback[Unit]
+    callback: BodyResponseCallback[SchemaEmpty]
+  ): Unit = js.native
+  /**
+    * Adds a volume to a bookshelf.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/books.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const books = google.books('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/books'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await books.mylibrary.bookshelves.addVolume({
+    *     // The reason for which the book is added to the library.
+    *     reason: 'placeholder-value',
+    *     // ID of bookshelf to which to add a volume.
+    *     shelf: 'placeholder-value',
+    *     // String to identify the originator of this request.
+    *     source: 'placeholder-value',
+    *     // ID of volume to add.
+    *     volumeId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def addVolume(params: ParamsResourceMylibraryBookshelvesAddvolume, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def addVolume(
+    params: ParamsResourceMylibraryBookshelvesAddvolume,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
-  /**
-    * books.mylibrary.bookshelves.clearVolumes
-    * @desc Clears all volumes from a bookshelf.
-    * @alias books.mylibrary.bookshelves.clearVolumes
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.shelf ID of bookshelf from which to remove a volume.
-    * @param {string=} params.source String to identify the originator of this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
-  def clearVolumes(): GaxiosPromise[Unit] = js.native
-  def clearVolumes(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def clearVolumes(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
-  def clearVolumes(params: ParamsResourceMylibraryBookshelvesClearvolumes): GaxiosPromise[Unit] = js.native
-  def clearVolumes(params: ParamsResourceMylibraryBookshelvesClearvolumes, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def clearVolumes(): GaxiosPromise[SchemaEmpty] = js.native
+  def clearVolumes(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def clearVolumes(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def clearVolumes(params: ParamsResourceMylibraryBookshelvesClearvolumes): GaxiosPromise[SchemaEmpty] = js.native
   def clearVolumes(
     params: ParamsResourceMylibraryBookshelvesClearvolumes,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  def clearVolumes(params: ParamsResourceMylibraryBookshelvesClearvolumes, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def clearVolumes(
+    params: ParamsResourceMylibraryBookshelvesClearvolumes,
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
+  ): Unit = js.native
+  def clearVolumes(params: ParamsResourceMylibraryBookshelvesClearvolumes, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def clearVolumes(
     params: ParamsResourceMylibraryBookshelvesClearvolumes,
     options: MethodOptions,
-    callback: BodyResponseCallback[Unit]
+    callback: BodyResponseCallback[SchemaEmpty]
+  ): Unit = js.native
+  /**
+    * Clears all volumes from a bookshelf.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/books.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const books = google.books('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/books'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await books.mylibrary.bookshelves.clearVolumes({
+    *     // ID of bookshelf from which to remove a volume.
+    *     shelf: 'placeholder-value',
+    *     // String to identify the originator of this request.
+    *     source: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def clearVolumes(params: ParamsResourceMylibraryBookshelvesClearvolumes, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def clearVolumes(
+    params: ParamsResourceMylibraryBookshelvesClearvolumes,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * books.mylibrary.bookshelves.get
-    * @desc Retrieves metadata for a specific bookshelf belonging to the
-    * authenticated user.
-    * @alias books.mylibrary.bookshelves.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.shelf ID of bookshelf to retrieve.
-    * @param {string=} params.source String to identify the originator of this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaBookshelf] = js.native
   def get(callback: BodyResponseCallback[SchemaBookshelf]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBookshelf] = js.native
@@ -98,8 +177,8 @@ class ResourceMylibraryBookshelves protected () extends StObject {
   def get(params: ParamsResourceMylibraryBookshelvesGet, callback: BodyResponseCallback[SchemaBookshelf]): Unit = js.native
   def get(
     params: ParamsResourceMylibraryBookshelvesGet,
-    options: BodyResponseCallback[SchemaBookshelf],
-    callback: BodyResponseCallback[SchemaBookshelf]
+    options: BodyResponseCallback[Readable | SchemaBookshelf],
+    callback: BodyResponseCallback[Readable | SchemaBookshelf]
   ): Unit = js.native
   def get(params: ParamsResourceMylibraryBookshelvesGet, options: MethodOptions): GaxiosPromise[SchemaBookshelf] = js.native
   def get(
@@ -107,20 +186,74 @@ class ResourceMylibraryBookshelves protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBookshelf]
   ): Unit = js.native
-  
   /**
-    * books.mylibrary.bookshelves.list
-    * @desc Retrieves a list of bookshelves belonging to the authenticated
-    * user.
-    * @alias books.mylibrary.bookshelves.list
-    * @memberOf! ()
+    * Retrieves metadata for a specific bookshelf belonging to the authenticated user.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/books.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object=} params Parameters for request
-    * @param {string=} params.source String to identify the originator of this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const books = google.books('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/books'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await books.mylibrary.bookshelves.get({
+    *     // ID of bookshelf to retrieve.
+    *     shelf: 'placeholder-value',
+    *     // String to identify the originator of this request.
+    *     source: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "access": "my_access",
+    *   //   "created": "my_created",
+    *   //   "description": "my_description",
+    *   //   "id": 0,
+    *   //   "kind": "my_kind",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "title": "my_title",
+    *   //   "updated": "my_updated",
+    *   //   "volumeCount": 0,
+    *   //   "volumesLastUpdated": "my_volumesLastUpdated"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceMylibraryBookshelvesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceMylibraryBookshelvesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaBookshelves] = js.native
   def list(callback: BodyResponseCallback[SchemaBookshelves]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBookshelves] = js.native
@@ -128,8 +261,8 @@ class ResourceMylibraryBookshelves protected () extends StObject {
   def list(params: ParamsResourceMylibraryBookshelvesList, callback: BodyResponseCallback[SchemaBookshelves]): Unit = js.native
   def list(
     params: ParamsResourceMylibraryBookshelvesList,
-    options: BodyResponseCallback[SchemaBookshelves],
-    callback: BodyResponseCallback[SchemaBookshelves]
+    options: BodyResponseCallback[Readable | SchemaBookshelves],
+    callback: BodyResponseCallback[Readable | SchemaBookshelves]
   ): Unit = js.native
   def list(params: ParamsResourceMylibraryBookshelvesList, options: MethodOptions): GaxiosPromise[SchemaBookshelves] = js.native
   def list(
@@ -137,69 +270,219 @@ class ResourceMylibraryBookshelves protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaBookshelves]
   ): Unit = js.native
-  
   /**
-    * books.mylibrary.bookshelves.moveVolume
-    * @desc Moves a volume within a bookshelf.
-    * @alias books.mylibrary.bookshelves.moveVolume
-    * @memberOf! ()
+    * Retrieves a list of bookshelves belonging to the authenticated user.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/books.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.shelf ID of bookshelf with the volume.
-    * @param {string=} params.source String to identify the originator of this request.
-    * @param {string} params.volumeId ID of volume to move.
-    * @param {integer} params.volumePosition Position on shelf to move the item (0 puts the item before the current first item, 1 puts it between the first and the second and so on.)
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const books = google.books('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/books'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await books.mylibrary.bookshelves.list({
+    *     // String to identify the originator of this request.
+    *     source: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "items": [],
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
-  def moveVolume(): GaxiosPromise[Unit] = js.native
-  def moveVolume(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def moveVolume(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
-  def moveVolume(params: ParamsResourceMylibraryBookshelvesMovevolume): GaxiosPromise[Unit] = js.native
-  def moveVolume(params: ParamsResourceMylibraryBookshelvesMovevolume, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def list(params: ParamsResourceMylibraryBookshelvesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceMylibraryBookshelvesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
+  def moveVolume(): GaxiosPromise[SchemaEmpty] = js.native
+  def moveVolume(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def moveVolume(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def moveVolume(params: ParamsResourceMylibraryBookshelvesMovevolume): GaxiosPromise[SchemaEmpty] = js.native
+  def moveVolume(params: ParamsResourceMylibraryBookshelvesMovevolume, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def moveVolume(
     params: ParamsResourceMylibraryBookshelvesMovevolume,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
-  def moveVolume(params: ParamsResourceMylibraryBookshelvesMovevolume, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def moveVolume(params: ParamsResourceMylibraryBookshelvesMovevolume, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def moveVolume(
     params: ParamsResourceMylibraryBookshelvesMovevolume,
     options: MethodOptions,
-    callback: BodyResponseCallback[Unit]
+    callback: BodyResponseCallback[SchemaEmpty]
+  ): Unit = js.native
+  /**
+    * Moves a volume within a bookshelf.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/books.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const books = google.books('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/books'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await books.mylibrary.bookshelves.moveVolume({
+    *     // ID of bookshelf with the volume.
+    *     shelf: 'placeholder-value',
+    *     // String to identify the originator of this request.
+    *     source: 'placeholder-value',
+    *     // ID of volume to move.
+    *     volumeId: 'placeholder-value',
+    *     // Position on shelf to move the item (0 puts the item before the current first item, 1 puts it between the first and the second and so on.)
+    *     volumePosition: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def moveVolume(params: ParamsResourceMylibraryBookshelvesMovevolume, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def moveVolume(
+    params: ParamsResourceMylibraryBookshelvesMovevolume,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
-  /**
-    * books.mylibrary.bookshelves.removeVolume
-    * @desc Removes a volume from a bookshelf.
-    * @alias books.mylibrary.bookshelves.removeVolume
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.reason The reason for which the book is removed from the library.
-    * @param {string} params.shelf ID of bookshelf from which to remove a volume.
-    * @param {string=} params.source String to identify the originator of this request.
-    * @param {string} params.volumeId ID of volume to remove.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
-  def removeVolume(): GaxiosPromise[Unit] = js.native
-  def removeVolume(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def removeVolume(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
-  def removeVolume(params: ParamsResourceMylibraryBookshelvesRemovevolume): GaxiosPromise[Unit] = js.native
-  def removeVolume(params: ParamsResourceMylibraryBookshelvesRemovevolume, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def removeVolume(): GaxiosPromise[SchemaEmpty] = js.native
+  def removeVolume(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def removeVolume(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def removeVolume(params: ParamsResourceMylibraryBookshelvesRemovevolume): GaxiosPromise[SchemaEmpty] = js.native
   def removeVolume(
     params: ParamsResourceMylibraryBookshelvesRemovevolume,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  def removeVolume(params: ParamsResourceMylibraryBookshelvesRemovevolume, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def removeVolume(
+    params: ParamsResourceMylibraryBookshelvesRemovevolume,
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
+  ): Unit = js.native
+  def removeVolume(params: ParamsResourceMylibraryBookshelvesRemovevolume, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def removeVolume(
     params: ParamsResourceMylibraryBookshelvesRemovevolume,
     options: MethodOptions,
-    callback: BodyResponseCallback[Unit]
+    callback: BodyResponseCallback[SchemaEmpty]
+  ): Unit = js.native
+  /**
+    * Removes a volume from a bookshelf.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/books.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const books = google.books('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/books'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await books.mylibrary.bookshelves.removeVolume({
+    *     // The reason for which the book is removed from the library.
+    *     reason: 'placeholder-value',
+    *     // ID of bookshelf from which to remove a volume.
+    *     shelf: 'placeholder-value',
+    *     // String to identify the originator of this request.
+    *     source: 'placeholder-value',
+    *     // ID of volume to remove.
+    *     volumeId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def removeVolume(params: ParamsResourceMylibraryBookshelvesRemovevolume, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def removeVolume(
+    params: ParamsResourceMylibraryBookshelvesRemovevolume,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var volumes: ResourceMylibraryBookshelvesVolumes = js.native

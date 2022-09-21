@@ -57,7 +57,7 @@ object anon {
       
       inline def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value*))
     }
   }
   

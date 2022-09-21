@@ -1,10 +1,13 @@
 package typings.subscribeUiEvent
 
 import typings.std.AddEventListenerOptions
+import typings.std.Document
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.EventTarget
+import typings.std.HTMLElement
 import typings.std.TouchEvent
 import typings.std.UIEvent
+import typings.std.Window
 import typings.subscribeUiEvent.anon.AxisIntention
 import typings.subscribeUiEvent.anon.Delta
 import typings.subscribeUiEvent.anon.Height
@@ -119,7 +122,7 @@ object mod {
   
   trait SubscribeOptions extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var enableResizeInfo: js.UndefOr[Boolean] = js.undefined
     
@@ -128,6 +131,8 @@ object mod {
     var enableTouchInfo: js.UndefOr[Boolean] = js.undefined
     
     var eventOptions: js.UndefOr[AddEventListenerOptions] = js.undefined
+    
+    var target: js.UndefOr[HTMLElement | Window | Document | Null] = js.undefined
     
     var throttleRate: js.UndefOr[Double] = js.undefined
     
@@ -142,7 +147,7 @@ object mod {
     
     extension [Self <: SubscribeOptions](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -161,6 +166,12 @@ object mod {
       inline def setEventOptions(value: AddEventListenerOptions): Self = StObject.set(x, "eventOptions", value.asInstanceOf[js.Any])
       
       inline def setEventOptionsUndefined: Self = StObject.set(x, "eventOptions", js.undefined)
+      
+      inline def setTarget(value: HTMLElement | Window | Document): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
       inline def setThrottleRate(value: Double): Self = StObject.set(x, "throttleRate", value.asInstanceOf[js.Any])
       
@@ -189,7 +200,7 @@ object mod {
     }
   }
   
-  type TouchEventCallback[T /* <: TouchEventType */] = js.Function2[/* event */ TouchEvent, /* payload */ ArgmentedEvent[T], js.Any]
+  type TouchEventCallback[T /* <: TouchEventType */] = js.Function2[/* event */ TouchEvent, /* payload */ ArgmentedEvent[T], Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.subscribeUiEvent.subscribeUiEventStrings.touchend
@@ -212,7 +223,7 @@ object mod {
     inline def touchstart: typings.subscribeUiEvent.subscribeUiEventStrings.touchstart = "touchstart".asInstanceOf[typings.subscribeUiEvent.subscribeUiEventStrings.touchstart]
   }
   
-  type UIEventCallback[T /* <: UIEventType */] = js.Function2[/* event */ UIEvent, /* payload */ ArgmentedEvent[T], js.Any]
+  type UIEventCallback[T /* <: UIEventType */] = js.Function2[/* event */ UIEvent, /* payload */ ArgmentedEvent[T], Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.subscribeUiEvent.subscribeUiEventStrings.resize

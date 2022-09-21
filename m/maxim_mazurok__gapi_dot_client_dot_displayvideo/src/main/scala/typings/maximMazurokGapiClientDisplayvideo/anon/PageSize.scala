@@ -13,9 +13,6 @@ trait PageSize extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the channels. */
-  var advertiserId: String
-  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
@@ -26,9 +23,9 @@ trait PageSize extends StObject {
   var fields: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows filtering by channel fields. Supported syntax: * Filter expressions for channel currently can only contain at most one * restriction. * A restriction has the form of
-    * `{field} {operator} {value}`. * The operator must be `CONTAINS (:)`. * Supported fields: - `displayName` Examples: * All channels for which the display name contains "google":
-    * `displayName : "google"`. The length of this field should be no more than 500 characters.
+    * Allows filtering by assigned targeting option properties. Supported syntax: * Filter expressions are made up of one or more restrictions. * Restrictions can be combined by the
+    * logical operator `OR`. * A restriction has the form of `{field} {operator} {value}`. * The operator must be `EQUALS (=)`. * Supported fields: - `assignedTargetingOptionId`
+    * Examples: * AssignedTargetingOption with ID 123456 `assignedTargetingOptionId="123456"` The length of this field should be no more than 500 characters.
     */
   var filter: js.UndefOr[String] = js.undefined
   
@@ -39,8 +36,8 @@ trait PageSize extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Field by which to sort the list. Acceptable values are: * `displayName` (default) * `channelId` The default sorting order is ascending. To specify descending order for a field,
-    * a suffix " desc" should be added to the field name. Example: `displayName desc`.
+    * Field by which to sort the list. Acceptable values are: * `assignedTargetingOptionId` (default) The default sorting order is ascending. To specify descending order for a field,
+    * a suffix "desc" should be added to the field name. Example: `assignedTargetingOptionId desc`.
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
@@ -48,19 +45,22 @@ trait PageSize extends StObject {
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A token identifying a page of results the server should return. Typically, this is the value of next_page_token returned from the previous call to `ListChannels` method. If not
-    * specified, the first page of results will be returned.
+    * A token identifying a page of results the server should return. Typically, this is the value of next_page_token returned from the previous call to
+    * `ListPartnerAssignedTargetingOptions` method. If not specified, the first page of results will be returned.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** The ID of the partner that owns the channels. */
-  var partnerId: js.UndefOr[String] = js.undefined
+  /** Required. The ID of the partner. */
+  var partnerId: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Required. Identifies the type of assigned targeting options to list. Supported targeting types: * `TARGETING_TYPE_CHANNEL` */
+  var targetingType: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -70,8 +70,8 @@ trait PageSize extends StObject {
 }
 object PageSize {
   
-  inline def apply(advertiserId: String): PageSize = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any])
+  inline def apply(partnerId: String, targetingType: String): PageSize = {
+    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any], targetingType = targetingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSize]
   }
   
@@ -84,8 +84,6 @@ object PageSize {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
-    
-    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -125,8 +123,6 @@ object PageSize {
     
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
-    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
-    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -134,6 +130,8 @@ object PageSize {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

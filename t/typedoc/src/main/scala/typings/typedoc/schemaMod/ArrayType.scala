@@ -6,20 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.ArrayType, 'type' | 'elementType'> */
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait ArrayType
-  extends StObject
-     with SomeType {
+trait ArrayType extends StObject {
   
-  var elementType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type
+  var elementType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]
   
-  var `type`: (ModelToObject[/* "array" */ String]) | (/* "array" */ String)
+  var `type`: ToSerialized[/* "array" */ String]
 }
 object ArrayType {
   
   inline def apply(
-    elementType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
-    `type`: (ModelToObject[/* "array" */ String]) | (/* "array" */ String)
+    elementType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType],
+    `type`: ToSerialized[/* "array" */ String]
   ): ArrayType = {
     val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -28,12 +25,12 @@ object ArrayType {
   
   extension [Self <: ArrayType](x: Self) {
     
-    inline def setElementType(value: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
-    inline def setElementTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "elementType", js.Array(value :_*))
+    inline def setElementTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "elementType", js.Array(value*))
     
-    inline def setType(value: (ModelToObject[/* "array" */ String]) | (/* "array" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ToSerialized[/* "array" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

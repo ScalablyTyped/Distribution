@@ -10,10 +10,10 @@ A handy command line interface for gulp
 | ------------------ | :-------------: |
 | Full name          | gulp-shell |
 | Keywords           | gulpplugin, gulp, shell, command |
-| # releases         | 4 |
-| # dependents       | 390 |
-| # downloads        | 4844092 |
-| # stars            | 83 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 314870.0 |
+| # stars            | 478.0 |
 
 ## Links
 - [Homepage](https://github.com/sun-zheng-an/gulp-shell)

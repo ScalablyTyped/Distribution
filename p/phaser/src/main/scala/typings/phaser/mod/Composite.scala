@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("matter", "Composite")
 @js.native
-class Composite ()
+open class Composite ()
   extends StObject
      with typings.phaser.MatterJS.Composite
 object Composite {

@@ -17,7 +17,7 @@ trait Slice extends StObject {
     * 
     * Files in the "compressed" format will return a byte array that can be transformed to a base64-encoded string if required.
     */
-  var data: js.Any
+  var data: Any
   
   /**
     * Gets the zero-based index of the file slice.
@@ -31,14 +31,14 @@ trait Slice extends StObject {
 }
 object Slice {
   
-  inline def apply(data: js.Any, index: Double, size: Double): Slice = {
+  inline def apply(data: Any, index: Double, size: Double): Slice = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Slice]
   }
   
   extension [Self <: Slice](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

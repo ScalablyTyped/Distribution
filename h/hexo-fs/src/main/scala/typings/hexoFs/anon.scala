@@ -1,9 +1,7 @@
 package typings.hexoFs
 
 import typings.hexoFs.hexoFsStrings.buffer
-import typings.node.BufferEncoding
-import typings.std.RegExp
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,20 +118,20 @@ object anon {
   
   trait Buffer extends StObject {
     
-    var buffer: typings.node.Buffer
+    var buffer: typings.node.bufferMod.global.Buffer
     
     var bytesRead: Double
   }
   object Buffer {
     
-    inline def apply(buffer: typings.node.Buffer, bytesRead: Double): Buffer = {
+    inline def apply(buffer: typings.node.bufferMod.global.Buffer, bytesRead: Double): Buffer = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buffer]
     }
     
     extension [Self <: Buffer](x: Self) {
       
-      inline def setBuffer(value: typings.node.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: typings.node.bufferMod.global.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
       inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
     }
@@ -162,26 +160,26 @@ object anon {
   
   trait BytesRead extends StObject {
     
-    var buffer: Uint8Array
+    var buffer: js.typedarray.Uint8Array
     
     var bytesRead: Double
   }
   object BytesRead {
     
-    inline def apply(buffer: Uint8Array, bytesRead: Double): BytesRead = {
+    inline def apply(buffer: js.typedarray.Uint8Array, bytesRead: Double): BytesRead = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
       __obj.asInstanceOf[BytesRead]
     }
     
     extension [Self <: BytesRead](x: Self) {
       
-      inline def setBuffer(value: Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
       inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
     }
   }
   
-  trait BytesWritten[TBuffer /* <: typings.node.Buffer | Uint8Array */] extends StObject {
+  trait BytesWritten[TBuffer /* <: typings.node.bufferMod.global.Buffer | js.typedarray.Uint8Array */] extends StObject {
     
     var buffer: TBuffer
     
@@ -189,12 +187,12 @@ object anon {
   }
   object BytesWritten {
     
-    inline def apply[TBuffer /* <: typings.node.Buffer | Uint8Array */](buffer: TBuffer, bytesWritten: Double): BytesWritten[TBuffer] = {
+    inline def apply[TBuffer /* <: typings.node.bufferMod.global.Buffer | js.typedarray.Uint8Array */](buffer: TBuffer, bytesWritten: Double): BytesWritten[TBuffer] = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
       __obj.asInstanceOf[BytesWritten[TBuffer]]
     }
     
-    extension [Self <: BytesWritten[?], TBuffer /* <: typings.node.Buffer | Uint8Array */](x: Self & BytesWritten[TBuffer]) {
+    extension [Self <: BytesWritten[?], TBuffer /* <: typings.node.bufferMod.global.Buffer | js.typedarray.Uint8Array */](x: Self & BytesWritten[TBuffer]) {
       
       inline def setBuffer(value: TBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -209,7 +207,7 @@ object anon {
     
     var ignoreHidden: js.UndefOr[Boolean] = js.undefined
     
-    var ignorePattern: js.UndefOr[RegExp] = js.undefined
+    var ignorePattern: js.UndefOr[js.RegExp] = js.undefined
   }
   object DirectoryOptionsexcludeAr {
     
@@ -224,13 +222,13 @@ object anon {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setIgnoreHidden(value: Boolean): Self = StObject.set(x, "ignoreHidden", value.asInstanceOf[js.Any])
       
       inline def setIgnoreHiddenUndefined: Self = StObject.set(x, "ignoreHidden", js.undefined)
       
-      inline def setIgnorePattern(value: RegExp): Self = StObject.set(x, "ignorePattern", value.asInstanceOf[js.Any])
+      inline def setIgnorePattern(value: js.RegExp): Self = StObject.set(x, "ignorePattern", value.asInstanceOf[js.Any])
       
       inline def setIgnorePatternUndefined: Self = StObject.set(x, "ignorePattern", js.undefined)
     }

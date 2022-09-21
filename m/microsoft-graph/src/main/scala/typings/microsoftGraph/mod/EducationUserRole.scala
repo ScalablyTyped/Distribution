@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.none_
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.student
   - typings.microsoftGraph.microsoftGraphStrings.teacher
   - typings.microsoftGraph.microsoftGraphStrings.none_
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait EducationUserRole extends StObject
 object EducationUserRole {
@@ -20,5 +21,5 @@ object EducationUserRole {
   
   inline def teacher: typings.microsoftGraph.microsoftGraphStrings.teacher = "teacher".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.teacher]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

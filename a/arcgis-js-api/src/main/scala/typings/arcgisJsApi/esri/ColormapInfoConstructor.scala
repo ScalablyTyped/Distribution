@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColormapInfoConstructor
   extends StObject
-     with Instantiable0[ColormapInfo]
+     with /**
+  * The ColormapInfo describes pixel value, RGB colors and labels to color the raster.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ColormapInfo.html)
+  */
+Instantiable0[ColormapInfo]
      with Instantiable1[/* properties */ ColormapInfoProperties, ColormapInfo] {
   
-  def fromJSON(json: js.Any): ColormapInfo = js.native
+  def fromJSON(json: Any): ColormapInfo = js.native
 }

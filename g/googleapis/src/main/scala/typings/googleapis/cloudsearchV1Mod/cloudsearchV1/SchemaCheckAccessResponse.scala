@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaCheckAccessResponse extends StObject {
   
   /**
-    * Returns true if principal has access.  Returns false otherwise.
+    * Returns true if principal has access. Returns false otherwise.
     */
-  var hasAccess: js.UndefOr[Boolean] = js.undefined
+  var hasAccess: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaCheckAccessResponse {
   
@@ -21,6 +21,8 @@ object SchemaCheckAccessResponse {
   extension [Self <: SchemaCheckAccessResponse](x: Self) {
     
     inline def setHasAccess(value: Boolean): Self = StObject.set(x, "hasAccess", value.asInstanceOf[js.Any])
+    
+    inline def setHasAccessNull: Self = StObject.set(x, "hasAccess", null)
     
     inline def setHasAccessUndefined: Self = StObject.set(x, "hasAccess", js.undefined)
   }

@@ -110,7 +110,7 @@ object ConfigurationOptionDescription {
     
     inline def setValueOptionsUndefined: Self = StObject.set(x, "ValueOptions", js.undefined)
     
-    inline def setValueOptionsVarargs(value: ConfigurationOptionPossibleValue*): Self = StObject.set(x, "ValueOptions", js.Array(value :_*))
+    inline def setValueOptionsVarargs(value: ConfigurationOptionPossibleValue*): Self = StObject.set(x, "ValueOptions", js.Array(value*))
     
     inline def setValueType(value: ConfigurationOptionValueType): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
     

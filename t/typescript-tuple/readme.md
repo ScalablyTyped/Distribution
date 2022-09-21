@@ -1,7 +1,7 @@
 
 # Scala.js typings for typescript-tuple
 
-Typings are for version 2.2.1
+Typings are for version 5.0.1
 
 ## Library description:
 Generics to work with tuples in TypeScript
@@ -10,15 +10,12 @@ Generics to work with tuples in TypeScript
 | ------------------ | :-------------: |
 | Full name          | typescript-tuple |
 | Keywords           | generic, tuple, typescript |
-| # releases         | 13 |
-| # dependents       | 11 |
-| # downloads        | 23448673 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 3329376.6666666665 |
+| # stars            | 138.0 |
 
 ## Links
-- [Homepage](https://github.com/ksxnodemodules/typescript-tuple#readme)
-- [Bugs](https://github.com/ksxnodemodules/typescript-tuple/issues)
-- [Repository](https://github.com/ksxnodemodules/typescript-tuple)
 - [Npm](https://www.npmjs.com/package/typescript-tuple)
     
 

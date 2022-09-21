@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object antvG2Numbers {
   
   @js.native
-  sealed trait `0.5` extends StObject
-  inline def `0.5`: `0.5` = 0.5.asInstanceOf[`0.5`]
+  sealed trait `0` extends StObject
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
 }

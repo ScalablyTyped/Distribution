@@ -1,14 +1,18 @@
 package typings.firebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/platform/browser/base64", JSImport.Namespace)
-@js.native
-object browserBase64Mod extends js.Object {
-  def decodeBase64(encoded: String): String = js.native
-  def encodeBase64(raw: String): String = js.native
-  def isBase64Available(): Boolean = js.native
+object browserBase64Mod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/platform/browser/base64", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def decodeBase64(encoded: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeBase64")(encoded.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def encodeBase64(raw: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeBase64")(raw.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def isBase64Available(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64Available")().asInstanceOf[Boolean]
 }
-

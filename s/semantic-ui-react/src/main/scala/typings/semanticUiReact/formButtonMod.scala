@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
-import typings.react.mod.AriaAttributes
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -15,6 +14,7 @@ import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
@@ -31,7 +31,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -41,40 +40,78 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.react.reactStrings.decimal
-import typings.react.reactStrings.email
-import typings.react.reactStrings.inherit
-import typings.react.reactStrings.no
-import typings.react.reactStrings.none
-import typings.react.reactStrings.numeric
-import typings.react.reactStrings.off
-import typings.react.reactStrings.on
-import typings.react.reactStrings.search
-import typings.react.reactStrings.tel
-import typings.react.reactStrings.text
-import typings.react.reactStrings.url
-import typings.react.reactStrings.yes
 import typings.semanticUiReact.buttonButtonMod.ButtonProps
-import typings.semanticUiReact.formFieldMod.StrictFormFieldProps
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticFLOATS
 import typings.semanticUiReact.genericMod.SemanticSIZES
+import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
+import typings.semanticUiReact.genericMod.SemanticWIDTHS
 import typings.semanticUiReact.iconIconMod.IconProps
 import typings.semanticUiReact.labelLabelMod.LabelProps
+import typings.semanticUiReact.semanticUiReactStrings.`additions removals`
+import typings.semanticUiReact.semanticUiReactStrings.`additions text`
 import typings.semanticUiReact.semanticUiReactStrings.`google plus`
+import typings.semanticUiReact.semanticUiReactStrings.`inline`
+import typings.semanticUiReact.semanticUiReactStrings.`removals additions`
+import typings.semanticUiReact.semanticUiReactStrings.`removals text`
+import typings.semanticUiReact.semanticUiReactStrings.`text additions`
+import typings.semanticUiReact.semanticUiReactStrings.`text removals`
+import typings.semanticUiReact.semanticUiReactStrings.additions
+import typings.semanticUiReact.semanticUiReactStrings.all
+import typings.semanticUiReact.semanticUiReactStrings.ascending
+import typings.semanticUiReact.semanticUiReactStrings.assertive
+import typings.semanticUiReact.semanticUiReactStrings.both
 import typings.semanticUiReact.semanticUiReactStrings.bottom
+import typings.semanticUiReact.semanticUiReactStrings.copy
+import typings.semanticUiReact.semanticUiReactStrings.date
+import typings.semanticUiReact.semanticUiReactStrings.decimal
+import typings.semanticUiReact.semanticUiReactStrings.descending
+import typings.semanticUiReact.semanticUiReactStrings.dialog
+import typings.semanticUiReact.semanticUiReactStrings.email
+import typings.semanticUiReact.semanticUiReactStrings.execute
 import typings.semanticUiReact.semanticUiReactStrings.facebook
 import typings.semanticUiReact.semanticUiReactStrings.fade
+import typings.semanticUiReact.semanticUiReactStrings.grammar
+import typings.semanticUiReact.semanticUiReactStrings.grid
+import typings.semanticUiReact.semanticUiReactStrings.horizontal
+import typings.semanticUiReact.semanticUiReactStrings.inherit
 import typings.semanticUiReact.semanticUiReactStrings.instagram
 import typings.semanticUiReact.semanticUiReactStrings.left
+import typings.semanticUiReact.semanticUiReactStrings.link
 import typings.semanticUiReact.semanticUiReactStrings.linkedin
+import typings.semanticUiReact.semanticUiReactStrings.list
+import typings.semanticUiReact.semanticUiReactStrings.listbox
+import typings.semanticUiReact.semanticUiReactStrings.location
+import typings.semanticUiReact.semanticUiReactStrings.menu
+import typings.semanticUiReact.semanticUiReactStrings.mixed
+import typings.semanticUiReact.semanticUiReactStrings.move
+import typings.semanticUiReact.semanticUiReactStrings.no
+import typings.semanticUiReact.semanticUiReactStrings.none
+import typings.semanticUiReact.semanticUiReactStrings.numeric
+import typings.semanticUiReact.semanticUiReactStrings.off
+import typings.semanticUiReact.semanticUiReactStrings.on
+import typings.semanticUiReact.semanticUiReactStrings.other
+import typings.semanticUiReact.semanticUiReactStrings.page
+import typings.semanticUiReact.semanticUiReactStrings.polite
+import typings.semanticUiReact.semanticUiReactStrings.popup
+import typings.semanticUiReact.semanticUiReactStrings.removals
 import typings.semanticUiReact.semanticUiReactStrings.right
+import typings.semanticUiReact.semanticUiReactStrings.search
+import typings.semanticUiReact.semanticUiReactStrings.spelling
+import typings.semanticUiReact.semanticUiReactStrings.step
+import typings.semanticUiReact.semanticUiReactStrings.tel
+import typings.semanticUiReact.semanticUiReactStrings.text
+import typings.semanticUiReact.semanticUiReactStrings.time
 import typings.semanticUiReact.semanticUiReactStrings.top
+import typings.semanticUiReact.semanticUiReactStrings.tree
 import typings.semanticUiReact.semanticUiReactStrings.twitter
+import typings.semanticUiReact.semanticUiReactStrings.url
 import typings.semanticUiReact.semanticUiReactStrings.vertical
 import typings.semanticUiReact.semanticUiReactStrings.vk
+import typings.semanticUiReact.semanticUiReactStrings.yes
 import typings.semanticUiReact.semanticUiReactStrings.youtube
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
@@ -85,49 +122,135 @@ object formButtonMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormButton", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FormButtonProps] = js.native
+  val default: FC[FormButtonProps] = js.native
   
   trait FormButtonProps
     extends StObject
        with StrictFormButtonProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FormButtonProps {
     
-    inline def apply(): FormButtonProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(id: (js.UndefOr[Double | String]) & js.UndefOr[String]): FormButtonProps = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormButtonProps]
     }
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
-  - scala.AnyRef because Inheritance from two classes. Inlined 
-  - typings.react.mod.DOMAttributes because var conflicts: children, onClick. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onMouseUp, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onMouseDown, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, onCanPlayThrough, onLoad, onLoadedMetadata, onSeeked, onChange, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
-  - js.Any because Inheritance from two classes. Inlined 
-  - typings.react.mod.HTMLAttributes because var conflicts: children, className, color, id, onClick, role, tabIndex. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, slot, autoCapitalize, placeholder, radioGroup, lang, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, datatype, itemProp, title, autoCorrect, results
-  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-  - typings.react.mod.ButtonHTMLAttributes because Inheritance from two classes. Inlined formAction, formEncType, form, value, name, formMethod, formTarget, autoFocus, formNoValidate
-  - typings.semanticUiReact.buttonButtonMod.StrictButtonProps because Inheritance from two classes. Inlined active, animated, attached, basic, circular, color, compact, floated, fluid, icon, inverted, labelPosition, loading, negative, onClick, positive, primary, role, secondary, size, tabIndex, toggle */ trait StrictFormButtonProps
-    extends StObject
-       with StrictFormFieldProps
-       with AriaAttributes {
+  /* Inlined parent std.Omit<semantic-ui-react.semantic-ui-react/dist/commonjs/collections/Form/FormField.StrictFormFieldProps, 'label'> */
+  /* Inlined parent std.Omit<semantic-ui-react.semantic-ui-react/dist/commonjs/elements/Button.StrictButtonProps, 'type'> */
+  trait StrictFormButtonProps extends StObject {
     
-    // RDFa Attributes
     var about: js.UndefOr[String] = js.undefined
     
-    // Standard HTML Attributes
     var accessKey: js.UndefOr[String] = js.undefined
     
-    /** A button can show it is currently the active user selection. */
     var active: js.UndefOr[Boolean] = js.undefined
     
-    /** A button can animate to show hidden content. */
     var animated: js.UndefOr[Boolean | fade | vertical] = js.undefined
     
-    /** A button can be attached to other content. */
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
+    
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-controls`: js.UndefOr[String] = js.undefined
+    
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
+    
+    var `aria-details`: js.UndefOr[String] = js.undefined
+    
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
+    
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
+    
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
+    
+    var `aria-label`: js.UndefOr[String] = js.undefined
+    
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
+    
+    var `aria-level`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    
+    var `aria-owns`: js.UndefOr[String] = js.undefined
+    
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
+    
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-relevant`: js.UndefOr[
+        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      ] = js.undefined
+    
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
+    
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
+    
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
+    
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
+    
+    /** An element type to render as (string or function). */
+    var as: js.UndefOr[Any] = js.undefined
+    
     var attached: js.UndefOr[Boolean | left | right | top | bottom] = js.undefined
     
-    // Non-standard Attributes
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
     var autoCorrect: js.UndefOr[String] = js.undefined
@@ -136,41 +259,47 @@ object formButtonMod extends Shortcut {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    /** A basic button is less pronounced. */
     var basic: js.UndefOr[Boolean] = js.undefined
     
-    /** A button can be circular. */
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var circular: js.UndefOr[Boolean] = js.undefined
     
-    /** A button can have different colors. */
+    var className: js.UndefOr[String] = js.undefined
+    
     var color: js.UndefOr[
         SemanticCOLORS | facebook | (`google plus`) | vk | twitter | linkedin | instagram | youtube
       ] = js.undefined
     
-    /** A button can reduce its padding to fit into tighter spaces. */
     var compact: js.UndefOr[Boolean] = js.undefined
+    
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
+    /** A FormField control prop. */
+    var control: js.UndefOr[Any] = js.undefined
+    
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
     
-    // React-specific Attributes
     var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
     var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
     var dir: js.UndefOr[String] = js.undefined
     
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    /** A button can be aligned to the left or right of its container. */
+    var error: js.UndefOr[Boolean | SemanticShorthandItem[LabelProps]] = js.undefined
+    
     var floated: js.UndefOr[SemanticFLOATS] = js.undefined
     
-    /** A button can take the width of its container. */
     var fluid: js.UndefOr[Boolean] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
@@ -187,25 +316,18 @@ object formButtonMod extends Shortcut {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
-    /** Add an Icon by name, props object, or pass an <Icon />. */
     var icon: js.UndefOr[Boolean | SemanticShorthandItem[IconProps]] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var id: (js.UndefOr[Double | String]) & js.UndefOr[String]
     
-    // Living Standard
-    /**
-      * Hints at the type of data that might be entered by the user while editing the element or its contents
-      * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
-      */
+    var `inline`: js.UndefOr[Boolean] = js.undefined
+    
+    var inlist: js.UndefOr[Any] = js.undefined
+    
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
-    /** A button can be formatted to appear on dark backgrounds. */
     var inverted: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Specify that a standard HTML element should behave like a defined custom built-in element
-      * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
-      */
     var is: js.UndefOr[String] = js.undefined
     
     var itemID: js.UndefOr[String] = js.undefined
@@ -218,34 +340,27 @@ object formButtonMod extends Shortcut {
     
     var itemType: js.UndefOr[String] = js.undefined
     
-    /** A labeled button can format a Label or Icon to appear on the left or right. */
-    var labelPosition: js.UndefOr[right | left] = js.undefined
-    
     /** Shorthand for a Label. */
-    @JSName("label")
-    var label_StrictFormButtonProps: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.undefined
+    var label: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.undefined
+    
+    var labelPosition: js.UndefOr[right | left] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
     
-    /** A button can show a loading indicator. */
     var loading: js.UndefOr[Boolean] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
-    /** A button can hint towards a negative consequence. */
     var negative: js.UndefOr[Boolean] = js.undefined
     
-    // Media Events
     var onAbort: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLButtonElement]] = js.undefined
     
     var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLButtonElement]] = js.undefined
     
-    // Animation Events
     var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLButtonElement]] = js.undefined
     
-    // MouseEvents
     var onAuxClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLButtonElement]] = js.undefined
@@ -256,14 +371,8 @@ object formButtonMod extends Shortcut {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
-    // Form Events
     var onChange: js.UndefOr[FormEventHandler[HTMLButtonElement]] = js.undefined
     
-    /**
-      * Called after user's click.
-      * @param {SyntheticEvent} event - React's original SyntheticEvent.
-      * @param {object} data - All props.
-      */
     var onClick: js.UndefOr[
         js.Function2[
           /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], 
@@ -272,7 +381,6 @@ object formButtonMod extends Shortcut {
         ]
       ] = js.undefined
     
-    // Composition Events
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLButtonElement]] = js.undefined
     
     var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLButtonElement]] = js.undefined
@@ -281,7 +389,6 @@ object formButtonMod extends Shortcut {
     
     var onContextMenu: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
-    // Clipboard Events
     var onCopy: js.UndefOr[ClipboardEventHandler[HTMLButtonElement]] = js.undefined
     
     var onCut: js.UndefOr[ClipboardEventHandler[HTMLButtonElement]] = js.undefined
@@ -314,22 +421,18 @@ object formButtonMod extends Shortcut {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
-    // Focus Events
     var onFocus: js.UndefOr[FocusEventHandler[HTMLButtonElement]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLButtonElement]] = js.undefined
     
     var onInvalid: js.UndefOr[FormEventHandler[HTMLButtonElement]] = js.undefined
     
-    // also a Media Event
-    // Keyboard Events
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLButtonElement]] = js.undefined
     
     var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLButtonElement]] = js.undefined
     
     var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLButtonElement]] = js.undefined
     
-    // Image Events
     var onLoad: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
     var onLoadStart: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
@@ -362,7 +465,6 @@ object formButtonMod extends Shortcut {
     
     var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLButtonElement]] = js.undefined
     
-    // Pointer Events
     var onPointerDown: js.UndefOr[PointerEventHandler[HTMLButtonElement]] = js.undefined
     
     var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLButtonElement]] = js.undefined
@@ -383,14 +485,12 @@ object formButtonMod extends Shortcut {
     
     var onReset: js.UndefOr[FormEventHandler[HTMLButtonElement]] = js.undefined
     
-    // UI Events
     var onScroll: js.UndefOr[UIEventHandler[HTMLButtonElement]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
     var onSeeking: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
-    // Selection Events
     var onSelect: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
@@ -401,7 +501,6 @@ object formButtonMod extends Shortcut {
     
     var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
-    // Touch Events
     var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLButtonElement]] = js.undefined
     
     var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLButtonElement]] = js.undefined
@@ -410,44 +509,38 @@ object formButtonMod extends Shortcut {
     
     var onTouchStart: js.UndefOr[TouchEventHandler[HTMLButtonElement]] = js.undefined
     
-    // Transition Events
     var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLButtonElement]] = js.undefined
     
     var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
     var onWaiting: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.undefined
     
-    // Wheel Events
     var onWheel: js.UndefOr[WheelEventHandler[HTMLButtonElement]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
-    /** A button can hint towards a positive consequence. */
     var positive: js.UndefOr[Boolean] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
-    /** A button can be formatted to show different levels of emphasis. */
     var primary: js.UndefOr[Boolean] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
-    // Unknown
     var radioGroup: js.UndefOr[String] = js.undefined
+    
+    var required: js.UndefOr[Any] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    /** The role of the HTML element. */
     var role: js.UndefOr[String] = js.undefined
     
-    /** A button can be formatted to show different levels of emphasis. */
     var secondary: js.UndefOr[Boolean] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    /** A button can have different sizes. */
     var size: js.UndefOr[SemanticSIZES] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
@@ -460,15 +553,15 @@ object formButtonMod extends Shortcut {
     
     var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    /** A button can receive focus. */
     var tabIndex: js.UndefOr[Double | String] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
-    /** A button can be formatted to toggle on and off. */
     var toggle: js.UndefOr[Boolean] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
+    
+    var `type`: js.UndefOr[String] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
@@ -477,11 +570,13 @@ object formButtonMod extends Shortcut {
     var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
+    
+    var width: js.UndefOr[SemanticWIDTHS] = js.undefined
   }
   object StrictFormButtonProps {
     
-    inline def apply(): StrictFormButtonProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(id: (js.UndefOr[Double | String]) & js.UndefOr[String]): StrictFormButtonProps = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrictFormButtonProps]
     }
     
@@ -502,6 +597,204 @@ object formButtonMod extends Shortcut {
       inline def setAnimated(value: Boolean | fade | vertical): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
       inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      
+      inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
+      
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
+      
+      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
+      
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
+      
+      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
+      
+      inline def `setAria-colcount`(value: Double): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
+      
+      inline def `setAria-colindex`(value: Double): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
+      
+      inline def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
+      
+      inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
+      
+      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
+      
+      inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+      
+      inline def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
+      
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
+      
+      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
+      
+      inline def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
+      
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
+      
+      inline def `setAria-flowto`(value: String): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
+      
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
+      
+      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
+      
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
+      
+      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
+      
+      inline def `setAria-keyshortcuts`(value: String): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
+      
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      
+      inline def `setAria-level`(value: Double): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
+      
+      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
+      
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
+      
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
+      
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
+      
+      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
+      
+      inline def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
+      
+      inline def `setAria-placeholder`(value: String): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
+      
+      inline def `setAria-posinset`(value: Double): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
+      
+      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
+      
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
+      
+      inline def `setAria-relevant`(
+        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
+      
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
+      
+      inline def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
+      
+      inline def `setAria-rowcount`(value: Double): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
+      
+      inline def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+      
+      inline def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
+      
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
+      
+      inline def `setAria-setsize`(value: Double): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
+      
+      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
+      
+      inline def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
+      
+      inline def `setAria-valuemin`(value: Double): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
+      
+      inline def `setAria-valuenow`(value: Double): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
+      
+      inline def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
+      
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
       inline def setAttached(value: Boolean | left | right | top | bottom): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
@@ -527,9 +820,17 @@ object formButtonMod extends Shortcut {
       
       inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
       
       inline def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setColor(value: SemanticCOLORS | facebook | (`google plus`) | vk | twitter | linkedin | instagram | youtube): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -539,13 +840,21 @@ object formButtonMod extends Shortcut {
       
       inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+      
+      inline def setControl(value: Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      
+      inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       
       inline def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
       
@@ -563,15 +872,27 @@ object formButtonMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      
+      inline def setError(value: Boolean | SemanticShorthandItem[LabelProps]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setErrorFunction3(
+        value: (/* component */ ElementType[LabelProps], LabelProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+      ): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+      
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setFloated(value: SemanticFLOATS): Self = StObject.set(x, "floated", value.asInstanceOf[js.Any])
       
@@ -617,7 +938,13 @@ object formButtonMod extends Shortcut {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setId(value: (js.UndefOr[Double | String]) & js.UndefOr[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -705,7 +1032,7 @@ object formButtonMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLButtonElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -807,7 +1134,7 @@ object formButtonMod extends Shortcut {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLButtonElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1023,6 +1350,10 @@ object formButtonMod extends Shortcut {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRequired(value: Any): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1083,6 +1414,10 @@ object formButtonMod extends Shortcut {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
       inline def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
@@ -1095,16 +1430,20 @@ object formButtonMod extends Shortcut {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+      
+      inline def setWidth(value: SemanticWIDTHS): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
-  type _To = StatelessComponent[FormButtonProps]
+  type _To = FC[FormButtonProps]
   
   /* This means you don't have to write `default`, but can instead just say `formButtonMod.foo` */
-  override def _to: StatelessComponent[FormButtonProps] = default
+  override def _to: FC[FormButtonProps] = default
 }

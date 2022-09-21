@@ -17,7 +17,7 @@ object dom {
   
   @JSImport("tinymce", "dom.DOMUtils")
   @js.native
-  class DOMUtils protected () extends StObject {
+  open class DOMUtils protected () extends StObject {
     def this(doc: Document) = this()
     def this(doc: Document, settings: js.Object) = this()
     
@@ -72,8 +72,8 @@ object dom {
     
     def getOuterHTML(elm: String): String = js.native
     
-    def getParent(node: Node, selector: js.Any): Node = js.native
-    def getParent(node: Node, selector: js.Any, root: Node): Node = js.native
+    def getParent(node: Node, selector: Any): Node = js.native
+    def getParent(node: Node, selector: Any, root: Node): Node = js.native
     
     def getParents[T](node: Node, selector: js.Function0[Unit]): js.Array[T] = js.native
     def getParents[T](node: Node, selector: js.Function0[Unit], root: Node): js.Array[T] = js.native
@@ -169,7 +169,7 @@ object dom {
   
   @JSImport("tinymce", "dom.DomQuery")
   @js.native
-  class DomQuery () extends StObject {
+  open class DomQuery () extends StObject {
     def this(selector: String) = this()
     def this(selector: String, context: Document) = this()
     def this(selector: Unit, context: Document) = this()
@@ -306,7 +306,7 @@ object dom {
   
   @JSImport("tinymce", "dom.Selection")
   @js.native
-  class Selection protected () extends StObject {
+  open class Selection protected () extends StObject {
     def this(dom: DOMUtils, win: Window, editor: Editor, serializer: Serializer) = this()
     
     def collapse(): Unit = js.native
@@ -325,7 +325,7 @@ object dom {
     
     def getNode(): Element = js.native
     
-    def getRng(w3c: Boolean): Range = js.native
+    def getRng(): Range = js.native
     
     def getSel(): Selection = js.native
     
@@ -357,7 +357,7 @@ object dom {
   
   @JSImport("tinymce", "dom.Serializer")
   @js.native
-  class Serializer protected () extends StObject {
+  open class Serializer protected () extends StObject {
     def this(settings: js.Object) = this()
     def this(settings: js.Object, editor: Editor) = this()
     
@@ -372,6 +372,18 @@ object dom {
     def serialize(node: HTMLElement, args: js.Object): Unit = js.native
     
     def setRules(rules: String): Unit = js.native
+  }
+  
+  @JSImport("tinymce", "dom.TreeWalker")
+  @js.native
+  open class TreeWalker protected () extends StObject {
+    def this(startNode: typings.tinymce.mod.html.Node, rootNode: typings.tinymce.mod.html.Node) = this()
+    
+    def current(): typings.tinymce.mod.html.Node = js.native
+    
+    def next(): typings.tinymce.mod.html.Node = js.native
+    
+    def prev(): typings.tinymce.mod.html.Node = js.native
   }
   
   @js.native
@@ -475,34 +487,5 @@ object dom {
     def loadScripts(scripts: js.Array[String], callback1: Unit, scope: Unit, callback2: js.Function0[Unit]): Unit = js.native
     
     def markDone(url: String): Unit = js.native
-  }
-  
-  trait TreeWalker extends StObject {
-    
-    def current(): typings.tinymce.mod.html.Node
-    
-    def next(): typings.tinymce.mod.html.Node
-    
-    def prev(): typings.tinymce.mod.html.Node
-  }
-  object TreeWalker {
-    
-    inline def apply(
-      current: () => typings.tinymce.mod.html.Node,
-      next: () => typings.tinymce.mod.html.Node,
-      prev: () => typings.tinymce.mod.html.Node
-    ): typings.tinymce.mod.dom.TreeWalker = {
-      val __obj = js.Dynamic.literal(current = js.Any.fromFunction0(current), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev))
-      __obj.asInstanceOf[typings.tinymce.mod.dom.TreeWalker]
-    }
-    
-    extension [Self <: typings.tinymce.mod.dom.TreeWalker](x: Self) {
-      
-      inline def setCurrent(value: () => typings.tinymce.mod.html.Node): Self = StObject.set(x, "current", js.Any.fromFunction0(value))
-      
-      inline def setNext(value: () => typings.tinymce.mod.html.Node): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
-      
-      inline def setPrev(value: () => typings.tinymce.mod.html.Node): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
-    }
   }
 }

@@ -27,7 +27,7 @@ object anon {
       
       inline def setLoadedEnvFiles(value: LoadedEnvFiles): Self = StObject.set(x, "loadedEnvFiles", value.asInstanceOf[js.Any])
       
-      inline def setLoadedEnvFilesVarargs(value: Contents*): Self = StObject.set(x, "loadedEnvFiles", js.Array(value :_*))
+      inline def setLoadedEnvFilesVarargs(value: Contents*): Self = StObject.set(x, "loadedEnvFiles", js.Array(value*))
     }
   }
   

@@ -103,7 +103,7 @@ object Step {
     
     inline def setBannerInstructions(value: js.Array[BannerInstruction]): Self = StObject.set(x, "bannerInstructions", value.asInstanceOf[js.Any])
     
-    inline def setBannerInstructionsVarargs(value: BannerInstruction*): Self = StObject.set(x, "bannerInstructions", js.Array(value :_*))
+    inline def setBannerInstructionsVarargs(value: BannerInstruction*): Self = StObject.set(x, "bannerInstructions", js.Array(value*))
     
     inline def setDestinations(value: String): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
@@ -123,7 +123,7 @@ object Step {
     
     inline def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
     
-    inline def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
+    inline def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value*))
     
     inline def setManeuver(value: Maneuver): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     
@@ -141,7 +141,7 @@ object Step {
     
     inline def setVoiceInstructions(value: js.Array[VoiceInstruction]): Self = StObject.set(x, "voiceInstructions", value.asInstanceOf[js.Any])
     
-    inline def setVoiceInstructionsVarargs(value: VoiceInstruction*): Self = StObject.set(x, "voiceInstructions", js.Array(value :_*))
+    inline def setVoiceInstructionsVarargs(value: VoiceInstruction*): Self = StObject.set(x, "voiceInstructions", js.Array(value*))
     
     inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }

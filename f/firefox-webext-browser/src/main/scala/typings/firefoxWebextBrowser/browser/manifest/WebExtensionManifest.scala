@@ -1,7 +1,8 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firefoxWebextBrowser.anon.Contentscripts
+import typings.firefoxWebextBrowser.anon.Extensionpages
+import typings.firefoxWebextBrowser.anon.Matches
 import typings.firefoxWebextBrowser.anon.Page
 import typings.firefoxWebextBrowser.anon.Persistent
 import typings.firefoxWebextBrowser.anon.Serviceworker
@@ -13,13 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a WebExtension manifest.json file */
 trait WebExtensionManifest extends StObject {
   
+  /** Needs at least manifest version 3. */
+  var action: js.UndefOr[ActionManifest] = js.undefined
+  
   var applications: js.UndefOr[WebExtensionManifestApplications] = js.undefined
   
   var author: js.UndefOr[String] = js.undefined
   
   var background: js.UndefOr[Page | Persistent | Serviceworker] = js.undefined
   
-  var browser_action: js.UndefOr[WebExtensionManifestBrowserAction] = js.undefined
+  /** Not supported on manifest versions above 2. */
+  var browser_action: js.UndefOr[ActionManifest] = js.undefined
   
   var browser_specific_settings: js.UndefOr[WebExtensionManifestBrowserSpecificSettings] = js.undefined
   
@@ -31,7 +36,7 @@ trait WebExtensionManifest extends StObject {
   
   var content_scripts: js.UndefOr[js.Array[ContentScript]] = js.undefined
   
-  var content_security_policy: js.UndefOr[String | Contentscripts] = js.undefined
+  var content_security_policy: js.UndefOr[String | Extensionpages] = js.undefined
   
   var default_locale: js.UndefOr[String] = js.undefined
   
@@ -46,6 +51,9 @@ trait WebExtensionManifest extends StObject {
   var hidden: js.UndefOr[Boolean] = js.undefined
   
   var homepage_url: js.UndefOr[String] = js.undefined
+  
+  /** Needs at least manifest version 3. */
+  var host_permissions: js.UndefOr[js.Array[MatchPattern]] = js.undefined
   
   var icons: js.UndefOr[WebExtensionManifestIcons] = js.undefined
   
@@ -69,7 +77,7 @@ trait WebExtensionManifest extends StObject {
   
   var page_action: js.UndefOr[WebExtensionManifestPageAction] = js.undefined
   
-  var permissions: js.UndefOr[js.Array[PermissionOrOrigin]] = js.undefined
+  var permissions: js.UndefOr[js.Array[Permission | PermissionOrOrigin]] = js.undefined
   
   /** A list of protocol handler definitions. */
   var protocol_handlers: js.UndefOr[js.Array[ProtocolHandler]] = js.undefined
@@ -86,7 +94,7 @@ trait WebExtensionManifest extends StObject {
   
   var version: String
   
-  var web_accessible_resources: js.UndefOr[js.Array[String]] = js.undefined
+  var web_accessible_resources: js.UndefOr[js.Array[Matches | String]] = js.undefined
 }
 object WebExtensionManifest {
   
@@ -96,6 +104,10 @@ object WebExtensionManifest {
   }
   
   extension [Self <: WebExtensionManifest](x: Self) {
+    
+    inline def setAction(value: ActionManifest): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     inline def setApplications(value: WebExtensionManifestApplications): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
@@ -109,7 +121,7 @@ object WebExtensionManifest {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBrowser_action(value: WebExtensionManifestBrowserAction): Self = StObject.set(x, "browser_action", value.asInstanceOf[js.Any])
+    inline def setBrowser_action(value: ActionManifest): Self = StObject.set(x, "browser_action", value.asInstanceOf[js.Any])
     
     inline def setBrowser_actionUndefined: Self = StObject.set(x, "browser_action", js.undefined)
     
@@ -133,9 +145,9 @@ object WebExtensionManifest {
     
     inline def setContent_scriptsUndefined: Self = StObject.set(x, "content_scripts", js.undefined)
     
-    inline def setContent_scriptsVarargs(value: ContentScript*): Self = StObject.set(x, "content_scripts", js.Array(value :_*))
+    inline def setContent_scriptsVarargs(value: ContentScript*): Self = StObject.set(x, "content_scripts", js.Array(value*))
     
-    inline def setContent_security_policy(value: String | Contentscripts): Self = StObject.set(x, "content_security_policy", value.asInstanceOf[js.Any])
+    inline def setContent_security_policy(value: String | Extensionpages): Self = StObject.set(x, "content_security_policy", value.asInstanceOf[js.Any])
     
     inline def setContent_security_policyUndefined: Self = StObject.set(x, "content_security_policy", js.undefined)
     
@@ -167,6 +179,12 @@ object WebExtensionManifest {
     
     inline def setHomepage_urlUndefined: Self = StObject.set(x, "homepage_url", js.undefined)
     
+    inline def setHost_permissions(value: js.Array[MatchPattern]): Self = StObject.set(x, "host_permissions", value.asInstanceOf[js.Any])
+    
+    inline def setHost_permissionsUndefined: Self = StObject.set(x, "host_permissions", js.undefined)
+    
+    inline def setHost_permissionsVarargs(value: MatchPattern*): Self = StObject.set(x, "host_permissions", js.Array(value*))
+    
     inline def setIcons(value: WebExtensionManifestIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
@@ -179,7 +197,7 @@ object WebExtensionManifest {
     
     inline def setL10n_resourcesUndefined: Self = StObject.set(x, "l10n_resources", js.undefined)
     
-    inline def setL10n_resourcesVarargs(value: String*): Self = StObject.set(x, "l10n_resources", js.Array(value :_*))
+    inline def setL10n_resourcesVarargs(value: String*): Self = StObject.set(x, "l10n_resources", js.Array(value*))
     
     inline def setManifest_version(value: Double): Self = StObject.set(x, "manifest_version", value.asInstanceOf[js.Any])
     
@@ -201,7 +219,7 @@ object WebExtensionManifest {
     
     inline def setOptional_permissionsUndefined: Self = StObject.set(x, "optional_permissions", js.undefined)
     
-    inline def setOptional_permissionsVarargs(value: OptionalPermissionOrOrigin*): Self = StObject.set(x, "optional_permissions", js.Array(value :_*))
+    inline def setOptional_permissionsVarargs(value: OptionalPermissionOrOrigin*): Self = StObject.set(x, "optional_permissions", js.Array(value*))
     
     inline def setOptions_ui(value: WebExtensionManifestOptionsUi): Self = StObject.set(x, "options_ui", value.asInstanceOf[js.Any])
     
@@ -211,17 +229,17 @@ object WebExtensionManifest {
     
     inline def setPage_actionUndefined: Self = StObject.set(x, "page_action", js.undefined)
     
-    inline def setPermissions(value: js.Array[PermissionOrOrigin]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[Permission | PermissionOrOrigin]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: PermissionOrOrigin*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: (Permission | PermissionOrOrigin)*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setProtocol_handlers(value: js.Array[ProtocolHandler]): Self = StObject.set(x, "protocol_handlers", value.asInstanceOf[js.Any])
     
     inline def setProtocol_handlersUndefined: Self = StObject.set(x, "protocol_handlers", js.undefined)
     
-    inline def setProtocol_handlersVarargs(value: ProtocolHandler*): Self = StObject.set(x, "protocol_handlers", js.Array(value :_*))
+    inline def setProtocol_handlersVarargs(value: ProtocolHandler*): Self = StObject.set(x, "protocol_handlers", js.Array(value*))
     
     inline def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     
@@ -245,10 +263,10 @@ object WebExtensionManifest {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    inline def setWeb_accessible_resources(value: js.Array[String]): Self = StObject.set(x, "web_accessible_resources", value.asInstanceOf[js.Any])
+    inline def setWeb_accessible_resources(value: js.Array[Matches | String]): Self = StObject.set(x, "web_accessible_resources", value.asInstanceOf[js.Any])
     
     inline def setWeb_accessible_resourcesUndefined: Self = StObject.set(x, "web_accessible_resources", js.undefined)
     
-    inline def setWeb_accessible_resourcesVarargs(value: String*): Self = StObject.set(x, "web_accessible_resources", js.Array(value :_*))
+    inline def setWeb_accessible_resourcesVarargs(value: (Matches | String)*): Self = StObject.set(x, "web_accessible_resources", js.Array(value*))
   }
 }

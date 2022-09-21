@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("Tracker")
   @js.native
-  class Tracker ()
+  open class Tracker ()
     extends StObject
        with typings.googleAnalytics.Tracker
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/tooltip" : "0.65.1"
+      "@nivo/tooltip" : "0.80.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/tooltip" : "0.65.1"
+      "@nivo/tooltip" : "0.80.0"
     }
   ],
   "compile-devDependencies" : [

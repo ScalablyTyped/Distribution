@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Creates an BoundingBoxGizmo
-  * @param gizmoLayer The utility layer the gizmo will be added to
   * @param color The color of the gizmo
+  * @param gizmoLayer The utility layer the gizmo will be added to
   */
-class BoundingBoxGizmo ()
+open class BoundingBoxGizmo ()
   extends typings.babylonjs.indexMod.BoundingBoxGizmo {
   def this(color: typings.babylonjs.mathColorMod.Color3) = this()
   def this(color: Unit, gizmoLayer: typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer) = this()

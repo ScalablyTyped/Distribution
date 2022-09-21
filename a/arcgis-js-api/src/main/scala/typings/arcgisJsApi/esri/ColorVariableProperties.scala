@@ -39,6 +39,6 @@ object ColorVariableProperties {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: ColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: ColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value*))
   }
 }

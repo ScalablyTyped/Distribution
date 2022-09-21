@@ -10,10 +10,10 @@ A Redis store for express-brute
 | ------------------ | :-------------: |
 | Full name          | express-brute-redis |
 | Keywords           | express, brute, redis |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 220320 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14563.333333333334 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/AdamPflug/express-brute-redis)

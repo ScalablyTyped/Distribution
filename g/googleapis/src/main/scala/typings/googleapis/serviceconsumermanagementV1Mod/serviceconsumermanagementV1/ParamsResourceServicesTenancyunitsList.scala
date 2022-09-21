@@ -1,9 +1,5 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,34 +9,22 @@ trait ParamsResourceServicesTenancyunitsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Filter expression over tenancy resources field. Optional.
+    * Optional. Filter expression over tenancy resources field. Optional.
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of results returned by this request.
+    * Optional. The maximum number of results returned by this request.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The continuation token, which is used to page through large result sets.
-    * To get the next page of results, set this parameter to the value of
-    * `nextPageToken` from the previous response.
+    * Optional. The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of `nextPageToken` from the previous response.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Managed service and service consumer. Required.
-    * services/{service}/{collection id}/{resource id} {collection id} is the
-    * cloud resource collection type representing the service consumer, for
-    * example 'projects', or 'organizations'. {resource id} is the consumer
-    * numeric id, such as project number: '123456'. {service} the name of a
-    * service, such as 'service.googleapis.com'.
+    * Required. Managed service and service consumer. Required. services/{service\}/{collection id\}/{resource id\} {collection id\} is the cloud resource collection type representing the service consumer, for example 'projects', or 'organizations'. {resource id\} is the consumer numeric id, such as project number: '123456'. {service\} the name of a service, such as 'service.googleapis.com'.
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -52,10 +36,6 @@ object ParamsResourceServicesTenancyunitsList {
   }
   
   extension [Self <: ParamsResourceServicesTenancyunitsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SubSurfaceConfiguration")
 @js.native
-class SubSurfaceConfiguration protected ()
+open class SubSurfaceConfiguration protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SubSurfaceConfiguration {
   /**
@@ -40,6 +40,9 @@ object SubSurfaceConfiguration {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param _
+    * @hidden
+    */
   inline def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

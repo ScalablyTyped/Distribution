@@ -1,7 +1,7 @@
 
 # Scala.js typings for diff2html
 
-Typings are for version 3.1.15
+Typings are for version 3.4.19
 
 ## Library description:
 Fast Diff to colorized HTML
@@ -10,10 +10,10 @@ Fast Diff to colorized HTML
 | ------------------ | :-------------: |
 | Full name          | diff2html |
 | Keywords           | git, diff, pretty, side, line, side-by-side, line-by-line, character, highlight, pretty, color, html, diff2html, difftohtml, colorized |
-| # releases         | 64 |
-| # dependents       | 70 |
-| # downloads        | 3364959 |
-| # stars            | 6 |
+| # releases         | 32 |
+| # dependents       | 0.0 |
+| # downloads        | 572650.6666666666 |
+| # stars            | 2187.0 |
 
 ## Links
 - [Homepage](https://diff2html.xyz/)

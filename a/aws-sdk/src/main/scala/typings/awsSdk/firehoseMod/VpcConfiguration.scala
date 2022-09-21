@@ -34,10 +34,10 @@ object VpcConfiguration {
     
     inline def setSecurityGroupIds(value: SecurityGroupIdList): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
-    inline def setSecurityGroupIdsVarargs(value: NonEmptyStringWithoutWhitespace*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: NonEmptyStringWithoutWhitespace*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSubnetIds(value: SubnetIdList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    inline def setSubnetIdsVarargs(value: NonEmptyStringWithoutWhitespace*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: NonEmptyStringWithoutWhitespace*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
   }
 }

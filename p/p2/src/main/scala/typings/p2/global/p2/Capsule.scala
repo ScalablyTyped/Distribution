@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Capsule")
 @js.native
-class Capsule ()
+open class Capsule ()
   extends typings.p2.mod.Capsule {
   def this(options: CapsuleOptions) = this()
 }

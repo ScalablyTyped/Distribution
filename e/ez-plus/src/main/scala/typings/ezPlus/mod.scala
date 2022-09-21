@@ -137,7 +137,7 @@ object mod {
     
     var preloading: js.UndefOr[`0` | `1`] = js.undefined
     
-    var respond: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var respond: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Activate responsivenes
@@ -383,11 +383,11 @@ object mod {
       
       inline def setPreloadingUndefined: Self = StObject.set(x, "preloading", js.undefined)
       
-      inline def setRespond(value: js.Array[js.Any]): Self = StObject.set(x, "respond", value.asInstanceOf[js.Any])
+      inline def setRespond(value: js.Array[Any]): Self = StObject.set(x, "respond", value.asInstanceOf[js.Any])
       
       inline def setRespondUndefined: Self = StObject.set(x, "respond", js.undefined)
       
-      inline def setRespondVarargs(value: js.Any*): Self = StObject.set(x, "respond", js.Array(value :_*))
+      inline def setRespondVarargs(value: Any*): Self = StObject.set(x, "respond", js.Array(value*))
       
       inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       

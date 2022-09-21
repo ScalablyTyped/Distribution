@@ -1,7 +1,6 @@
 package typings.gulpLoadPlugins
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ object mod {
     var rename: js.UndefOr[IPluginNameMappings] = js.undefined
     
     /** what to remove from the name of the module when adding it to the context, default /^gulp(-|\.)/ */
-    var replaceString: js.UndefOr[RegExp] = js.undefined
+    var replaceString: js.UndefOr[js.RegExp] = js.undefined
     
     /** which keys in the config to look within, default ['dependencies', 'devDependencies', 'peerDependencies'] */
     var scope: js.UndefOr[js.Array[String]] = js.undefined
@@ -65,13 +64,13 @@ object mod {
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+      inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value*))
       
       inline def setRename(value: IPluginNameMappings): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
       
       inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
       
-      inline def setReplaceString(value: RegExp): Self = StObject.set(x, "replaceString", value.asInstanceOf[js.Any])
+      inline def setReplaceString(value: js.RegExp): Self = StObject.set(x, "replaceString", value.asInstanceOf[js.Any])
       
       inline def setReplaceStringUndefined: Self = StObject.set(x, "replaceString", js.undefined)
       
@@ -79,7 +78,7 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     }
   }
   

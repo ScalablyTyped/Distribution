@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "get-uri" : "3.0.2"
+      "get-uri" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "get-uri" : "3.0.2"
+      "get-uri" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -76,7 +76,7 @@ object windowsCodeSignMod {
   type CustomWindowsSign = js.Function2[
     /* configuration */ CustomWindowsSignTaskConfiguration, 
     /* packager */ js.UndefOr[WinPackager], 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ]
   
   trait CustomWindowsSignTaskConfiguration

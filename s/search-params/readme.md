@@ -1,7 +1,7 @@
 
 # Scala.js typings for search-params
 
-Typings are for version 3.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 A module to manipulate search part of URLs (querystring)
@@ -10,10 +10,10 @@ A module to manipulate search part of URLs (querystring)
 | ------------------ | :-------------: |
 | Full name          | search-params |
 | Keywords           | querystring, query, query params, search params, search, location, url |
-| # releases         | 1 |
-| # dependents       | 7 |
-| # downloads        | 2951939 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 405831.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/troch/search-params#readme)

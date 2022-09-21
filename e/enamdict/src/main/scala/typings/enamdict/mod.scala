@@ -118,15 +118,15 @@ object mod {
       
       inline def setKana(value: String | js.Array[String]): Self = StObject.set(x, "kana", value.asInstanceOf[js.Any])
       
-      inline def setKanaVarargs(value: String*): Self = StObject.set(x, "kana", js.Array(value :_*))
+      inline def setKanaVarargs(value: String*): Self = StObject.set(x, "kana", js.Array(value*))
       
       inline def setKanji(value: String | js.Array[String]): Self = StObject.set(x, "kanji", value.asInstanceOf[js.Any])
       
-      inline def setKanjiVarargs(value: String*): Self = StObject.set(x, "kanji", js.Array(value :_*))
+      inline def setKanjiVarargs(value: String*): Self = StObject.set(x, "kanji", js.Array(value*))
       
       inline def setRomaji(value: String | js.Array[String]): Self = StObject.set(x, "romaji", value.asInstanceOf[js.Any])
       
-      inline def setRomajiVarargs(value: String*): Self = StObject.set(x, "romaji", js.Array(value :_*))
+      inline def setRomajiVarargs(value: String*): Self = StObject.set(x, "romaji", js.Array(value*))
       
       inline def setType(value: NameType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

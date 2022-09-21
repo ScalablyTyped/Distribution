@@ -24,7 +24,7 @@ trait BuildSummary extends StObject {
   /**
     * When the build was started, expressed in Unix time format.
     */
-  var requestedOn: js.UndefOr[Timestamp] = js.undefined
+  var requestedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An array of ResolvedArtifact objects that represents the secondary build artifacts for the build group.
@@ -52,7 +52,7 @@ object BuildSummary {
     
     inline def setPrimaryArtifactUndefined: Self = StObject.set(x, "primaryArtifact", js.undefined)
     
-    inline def setRequestedOn(value: Timestamp): Self = StObject.set(x, "requestedOn", value.asInstanceOf[js.Any])
+    inline def setRequestedOn(value: js.Date): Self = StObject.set(x, "requestedOn", value.asInstanceOf[js.Any])
     
     inline def setRequestedOnUndefined: Self = StObject.set(x, "requestedOn", js.undefined)
     
@@ -60,6 +60,6 @@ object BuildSummary {
     
     inline def setSecondaryArtifactsUndefined: Self = StObject.set(x, "secondaryArtifacts", js.undefined)
     
-    inline def setSecondaryArtifactsVarargs(value: ResolvedArtifact*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value :_*))
+    inline def setSecondaryArtifactsVarargs(value: ResolvedArtifact*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value*))
   }
 }

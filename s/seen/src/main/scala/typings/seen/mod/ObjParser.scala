@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "ObjParser")
 @js.native
-class ObjParser () extends StObject {
+open class ObjParser () extends StObject {
   
   var commands: F = js.native
   
   var faces: js.Array[js.Array[Double]] = js.native
   
-  def mapFacePoints(faceMap: js.Function1[/* points */ js.Array[Point], js.Any]): Unit = js.native
+  def mapFacePoints(faceMap: js.Function1[/* points */ js.Array[Point], Any]): Unit = js.native
   
   def parse(contents: String): Unit = js.native
   

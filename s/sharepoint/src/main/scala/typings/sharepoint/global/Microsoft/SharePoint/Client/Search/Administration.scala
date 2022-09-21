@@ -12,7 +12,7 @@ object Administration {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Administration.DocumentCrawlLog")
   @js.native
-  class DocumentCrawlLog protected ()
+  open class DocumentCrawlLog protected ()
     extends StObject
        with typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.DocumentCrawlLog {
     def this(context: ClientContext, site: Site) = this()
@@ -38,7 +38,7 @@ object Administration {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Administration.SearchObjectOwner")
   @js.native
-  class SearchObjectOwner protected ()
+  open class SearchObjectOwner protected ()
     extends StObject
        with ClientObject {
     def this(context: ClientContext, lowestCurrentLevelToUse: SearchObjectLevel) = this()

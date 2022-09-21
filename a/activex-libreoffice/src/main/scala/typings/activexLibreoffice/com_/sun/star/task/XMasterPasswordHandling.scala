@@ -54,7 +54,7 @@ object XMasterPasswordHandling {
     changeMasterPassword: XInteractionHandler => Boolean,
     hasMasterPassword: () => Boolean,
     isPersistentStoringAllowed: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeMasterPassword: () => Unit
   ): XMasterPasswordHandling = {

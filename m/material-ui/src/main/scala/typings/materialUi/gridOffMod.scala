@@ -10,10 +10,10 @@ object gridOffMod {
   
   @JSImport("material-ui/svg-icons/image/grid-off", JSImport.Default)
   @js.native
-  class default () extends ImageGridOff
+  open class default () extends ImageGridOff
   
   @JSImport("material-ui/svg-icons/image/grid-off", "ImageGridOff")
   @js.native
-  class ImageGridOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageGridOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

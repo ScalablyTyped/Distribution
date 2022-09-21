@@ -73,7 +73,7 @@ object FormController {
     hasElements: () => Boolean,
     queryDispatch: (URL, String, Double) => XDispatch,
     queryDispatches: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeActivateListener: XFormControllerListener => Unit,
     removeConfirmDeleteListener: XConfirmDeleteListener => Unit,

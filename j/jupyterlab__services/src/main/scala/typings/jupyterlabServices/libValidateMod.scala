@@ -10,8 +10,8 @@ object libValidateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def validateProperty(`object`: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateProperty")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def validateProperty(`object`: js.Any, name: String, typeName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateProperty")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def validateProperty(`object`: js.Any, name: String, typeName: String, values: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateProperty")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def validateProperty(`object`: js.Any, name: String, typeName: Unit, values: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateProperty")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateProperty(`object`: Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateProperty")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateProperty(`object`: Any, name: String, typeName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateProperty")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateProperty(`object`: Any, name: String, typeName: String, values: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateProperty")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateProperty(`object`: Any, name: String, typeName: Unit, values: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateProperty")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], typeName.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

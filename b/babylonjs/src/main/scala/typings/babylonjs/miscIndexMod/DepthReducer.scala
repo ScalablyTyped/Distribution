@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Misc/index", "DepthReducer")
 @js.native
-class DepthReducer protected ()
+open class DepthReducer protected ()
   extends typings.babylonjs.depthReducerMod.DepthReducer {
   /**
     * Creates a depth reducer

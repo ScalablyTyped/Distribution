@@ -27,7 +27,7 @@ trait NativeMMLOutputProcessor extends StObject {
     * jax/output/NativeMML/config.js for some examples of what are defined by default. See CSS Style Objects for
     * details on how to specify CSS style in a JavaScript object.
     */
-  var styles: js.UndefOr[js.Any] = js.undefined
+  var styles: js.UndefOr[Any] = js.undefined
 }
 object NativeMMLOutputProcessor {
   
@@ -50,7 +50,7 @@ object NativeMMLOutputProcessor {
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }

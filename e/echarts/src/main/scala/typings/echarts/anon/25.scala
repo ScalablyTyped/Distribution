@@ -7,14 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `25` extends StObject {
   
   /**
-    * The color of a node. It use global palette
-    * [option.color](https://echarts.apache.org/en/option.html#color)
-    * by default.
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.itemStyle.color
+    * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.itemStyle
     */
-  var color: js.UndefOr[String] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.undefined
+  
+  /**
+    * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.label
+    */
+  var label: js.UndefOr[BorderRadius] = js.undefined
+  
+  /**
+    * @see https://echarts.apache.org/en/option.html#series-tree.emphasis.lineStyle
+    */
+  var lineStyle: js.UndefOr[CurvenessShadowBlur] = js.undefined
 }
 object `25` {
   
@@ -25,8 +30,16 @@ object `25` {
   
   extension [Self <: `25`](x: Self) {
     
-    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    
+    inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLineStyle(value: CurvenessShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
   }
 }

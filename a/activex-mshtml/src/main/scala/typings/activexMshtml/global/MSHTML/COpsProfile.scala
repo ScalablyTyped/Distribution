@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.COpsProfile")
 @js.native
-/* private */ class COpsProfile ()
+/* private */ open class COpsProfile ()
   extends StObject
      with typings.activexMshtml.MSHTML.COpsProfile

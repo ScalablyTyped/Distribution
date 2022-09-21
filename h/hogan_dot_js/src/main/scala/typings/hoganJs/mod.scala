@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("hogan.js", "Template")
   @js.native
-  class Template_ ()
+  open class Template_ ()
     extends StObject
        with HoganTemplate
   
@@ -36,11 +36,11 @@ object mod {
   
   @JSImport("hogan.js", "template")
   @js.native
-  class template ()
+  open class template ()
     extends StObject
        with HoganTemplate
   
-  type Context = StringDictionary[js.Any]
+  type Context = StringDictionary[Any]
   
   trait HoganOptions extends StObject {
     
@@ -77,7 +77,7 @@ object mod {
       
       inline def setSectionTagsUndefined: Self = StObject.set(x, "sectionTags", js.undefined)
       
-      inline def setSectionTagsVarargs(value: SectionTags*): Self = StObject.set(x, "sectionTags", js.Array(value :_*))
+      inline def setSectionTagsVarargs(value: SectionTags*): Self = StObject.set(x, "sectionTags", js.Array(value*))
     }
   }
   
@@ -119,7 +119,7 @@ object mod {
       
       inline def setNodes(value: js.Array[Token]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: Token*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Token*): Self = StObject.set(x, "nodes", js.Array(value*))
     }
   }
   

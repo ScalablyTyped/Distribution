@@ -10,10 +10,10 @@ object streamMergeAllStreamMod {
   
   @JSImport("wonder-frp/dist/es2015/stream/MergeAllStream", "MergeAllStream")
   @js.native
-  class MergeAllStream protected () extends BaseStream {
+  open class MergeAllStream protected () extends BaseStream {
     def this(source: Stream) = this()
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
   }
   /* static members */
   object MergeAllStream {

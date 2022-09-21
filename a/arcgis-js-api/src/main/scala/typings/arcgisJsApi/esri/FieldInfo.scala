@@ -21,7 +21,7 @@ trait FieldInfo
      with JSONSupport {
   
   /**
-    * The field name as defined by  the service or the `name` of an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression.
+    * The field name as defined by the service or the name of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#fieldName)
     */
@@ -36,6 +36,8 @@ trait FieldInfo
   
   /**
     * A Boolean determining whether users can edit this field.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#isEditable)
     */
@@ -58,6 +60,8 @@ trait FieldInfo
   /**
     * A string determining what type of input box editors see when editing the field.
     *
+    * @default text-box
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#stringFieldOption)
     */
   var stringFieldOption: `rich-text` | `text-area` | `text-box` = js.native
@@ -71,6 +75,8 @@ trait FieldInfo
   
   /**
     * Indicates whether the field is visible in the popup window.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#visible)
     */

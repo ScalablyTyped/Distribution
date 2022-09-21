@@ -29,7 +29,7 @@ object CacheSecurityGroupMessage {
     
     inline def setCacheSecurityGroupsUndefined: Self = StObject.set(x, "CacheSecurityGroups", js.undefined)
     
-    inline def setCacheSecurityGroupsVarargs(value: CacheSecurityGroup*): Self = StObject.set(x, "CacheSecurityGroups", js.Array(value :_*))
+    inline def setCacheSecurityGroupsVarargs(value: CacheSecurityGroup*): Self = StObject.set(x, "CacheSecurityGroups", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

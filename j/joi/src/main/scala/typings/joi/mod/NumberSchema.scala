@@ -6,11 +6,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.joi.mod._Schema because Already inherited */ @js.native
+@js.native
 trait NumberSchema
   extends StObject
-     with AnySchema {
+     with AnySchema[Any]
+     with _ObjectPropertiesSchema[Any]
+     with _Schema[Any] {
   
   /**
     * Specifies that the value must be greater than limit.
@@ -72,17 +73,14 @@ trait NumberSchema
     */
   def precision(limit: Double): this.type = js.native
   
-  @JSName("sign")
-  def sign_negative(sign: negative): this.type = js.native
   /**
     * Requires the number to be negative or positive.
     */
-  @JSName("sign")
-  def sign_positive(sign: positive): this.type = js.native
+  def sign(sign: positive | negative): this.type = js.native
   
   /**
     * Allows the number to be outside of JavaScript's safety range (Number.MIN_SAFE_INTEGER & Number.MAX_SAFE_INTEGER).
     */
   def unsafe(): this.type = js.native
-  def unsafe(enabled: js.Any): this.type = js.native
+  def unsafe(enabled: Any): this.type = js.native
 }

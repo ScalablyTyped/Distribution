@@ -10,7 +10,7 @@ object fileCacheMod {
   
   @JSImport("http-basic/lib/FileCache", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with FileCache {
     def this(location: String) = this()
@@ -21,7 +21,7 @@ object fileCacheMod {
     extends StObject
        with ICache {
     
-    /* private */ val _location: js.Any = js.native
+    /* private */ val _location: Any = js.native
     
     @JSName("updateResponseHeaders")
     def updateResponseHeaders_MFileCache(url: String, response: PickCachedResponseheaders): Unit = js.native

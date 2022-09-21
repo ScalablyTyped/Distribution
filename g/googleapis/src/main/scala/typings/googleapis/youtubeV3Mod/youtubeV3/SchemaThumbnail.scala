@@ -4,25 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A thumbnail is an image representing a YouTube resource.
-  */
 trait SchemaThumbnail extends StObject {
   
   /**
     * (Optional) Height of the thumbnail image.
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The thumbnail image&#39;s URL.
+    * The thumbnail image's URL.
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String | Null] = js.undefined
   
   /**
     * (Optional) Width of the thumbnail image.
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaThumbnail {
   
@@ -35,13 +32,19 @@ object SchemaThumbnail {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
+    
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
+    
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

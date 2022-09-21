@@ -2,23 +2,25 @@ package typings.mnemonist.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mnemonist.multiSetMod.default
-import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mnemonist", "MultiSet")
 @js.native
-class MultiSet[K] () extends default[K]
-
+open class MultiSet[K] () extends default[K]
 /* static members */
-@JSImport("mnemonist", "MultiSet")
-@js.native
-object MultiSet extends js.Object {
-  def from[I](iterable: StringDictionary[I]): typings.mnemonist.multiSetMod.MultiSet[I] = js.native
+object MultiSet {
+  
+  @JSImport("mnemonist", "MultiSet")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // Statics
-  def from[I](iterable: Iterable[I]): typings.mnemonist.multiSetMod.MultiSet[I] = js.native
-  def isSubset[T](a: typings.mnemonist.multiSetMod.MultiSet[T], b: typings.mnemonist.multiSetMod.MultiSet[T]): Boolean = js.native
-  def isSuperset[T](a: typings.mnemonist.multiSetMod.MultiSet[T], b: typings.mnemonist.multiSetMod.MultiSet[T]): Boolean = js.native
+  inline def from[I](iterable: js.Iterable[I]): typings.mnemonist.multiSetMod.MultiSet[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.mnemonist.multiSetMod.MultiSet[I]]
+  inline def from[I](iterable: StringDictionary[I]): typings.mnemonist.multiSetMod.MultiSet[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.mnemonist.multiSetMod.MultiSet[I]]
+  
+  inline def isSubset[T](a: typings.mnemonist.multiSetMod.MultiSet[T], b: typings.mnemonist.multiSetMod.MultiSet[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSubset")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isSuperset[T](a: typings.mnemonist.multiSetMod.MultiSet[T], b: typings.mnemonist.multiSetMod.MultiSet[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSuperset")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }
-

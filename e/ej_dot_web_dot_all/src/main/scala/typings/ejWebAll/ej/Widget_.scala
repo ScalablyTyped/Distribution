@@ -12,7 +12,7 @@ trait Widget_
   
   def destroyAll(elements: Element): Unit = js.native
   
-  var model: js.Any = js.native
+  var model: Any = js.native
   
-  def register(pluginName: String, className: String, prototype: js.Any): Unit = js.native
+  def register(pluginName: String, className: String, prototype: Any): Unit = js.native
 }

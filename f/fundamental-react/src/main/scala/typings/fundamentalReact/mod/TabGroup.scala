@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "TabGroup")
 @js.native
-class TabGroup () extends default
+open class TabGroup () extends default
 object TabGroup {
   
   @JSImport("fundamental-react", "TabGroup")

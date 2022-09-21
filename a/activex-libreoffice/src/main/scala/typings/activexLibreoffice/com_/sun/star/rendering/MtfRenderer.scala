@@ -18,7 +18,7 @@ object MtfRenderer {
     acquire: () => Unit,
     createWithBitmapCanvas: XBitmapCanvas => Unit,
     draw: (Double, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setMetafile: SeqEquiv[Double] => Unit
   ): MtfRenderer = {

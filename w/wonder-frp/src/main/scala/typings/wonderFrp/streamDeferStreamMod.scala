@@ -9,10 +9,10 @@ object streamDeferStreamMod {
   
   @JSImport("wonder-frp/dist/es2015/stream/DeferStream", "DeferStream")
   @js.native
-  class DeferStream protected () extends BaseStream {
+  open class DeferStream protected () extends BaseStream {
     def this(buildStreamFunc: js.Function) = this()
     
-    /* private */ var _buildStreamFunc: js.Any = js.native
+    /* private */ var _buildStreamFunc: Any = js.native
   }
   /* static members */
   object DeferStream {

@@ -92,7 +92,7 @@ object Declaration {
   }
   
   inline def DeclareOpaqueType_(id: Identifier_): typings.babelTypes.mod.DeclareOpaqueType_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, impltype = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("DeclareOpaqueType")
     __obj.asInstanceOf[typings.babelTypes.mod.DeclareOpaqueType_]
   }
@@ -116,13 +116,13 @@ object Declaration {
   }
   
   inline def ExportAllDeclaration_(source: StringLiteral_): typings.babelTypes.mod.ExportAllDeclaration_ = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.ExportAllDeclaration_]
   }
   
-  inline def ExportDefaultDeclaration_(declaration: FunctionDeclaration_ | TSDeclareFunction_ | ClassDeclaration_ | Expression): typings.babelTypes.mod.ExportDefaultDeclaration_ = {
-    val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def ExportDefaultDeclaration_(declaration: TSDeclareFunction_ | FunctionDeclaration_ | ClassDeclaration_ | Expression): typings.babelTypes.mod.ExportDefaultDeclaration_ = {
+    val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportDefaultDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.ExportDefaultDeclaration_]
   }
@@ -137,9 +137,9 @@ object Declaration {
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): typings.babelTypes.mod.FunctionDeclaration_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, predicate = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionDeclaration_]
   }
@@ -166,11 +166,7 @@ object Declaration {
     __obj.asInstanceOf[typings.babelTypes.mod.OpaqueType_]
   }
   
-  inline def TSDeclareFunction_(
-    async: Boolean,
-    generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-  ): typings.babelTypes.mod.TSDeclareFunction_ = {
+  inline def TSDeclareFunction_(async: Boolean, generator: Boolean, params: js.Array[Identifier_ | Pattern | RestElement_]): typings.babelTypes.mod.TSDeclareFunction_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("TSDeclareFunction")
     __obj.asInstanceOf[typings.babelTypes.mod.TSDeclareFunction_]

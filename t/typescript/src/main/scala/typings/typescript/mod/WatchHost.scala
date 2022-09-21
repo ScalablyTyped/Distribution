@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WatchHost extends StObject {
   
   /** If provided, will be used to reset existing delayed compilation */
-  var clearTimeout: js.UndefOr[js.Function1[/* timeoutId */ js.Any, Unit]] = js.native
+  var clearTimeout: js.UndefOr[js.Function1[/* timeoutId */ Any, Unit]] = js.native
   
   /** If provided, called with Diagnostic message that informs about change in watch status */
   var onWatchStatusChange: js.UndefOr[
@@ -25,10 +25,10 @@ trait WatchHost extends StObject {
   /** If provided, will be used to set delayed compilation, so that multiple changes in short span are compiled together */
   var setTimeout: js.UndefOr[
     js.Function3[
-      /* callback */ js.Function1[/* repeated */ js.Any, Unit], 
+      /* callback */ js.Function1[/* repeated */ Any, Unit], 
       /* ms */ Double, 
-      /* repeated */ js.Any, 
-      js.Any
+      /* repeated */ Any, 
+      Any
     ]
   ] = js.native
   

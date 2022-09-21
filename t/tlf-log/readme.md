@@ -10,10 +10,10 @@ A small logging library
 | ------------------ | :-------------: |
 | Full name          | tlf-log |
 | Keywords           | logging |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 608 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 56.333333333333336 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/thislooksfun/tlf-log#readme)

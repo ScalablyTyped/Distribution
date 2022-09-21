@@ -76,7 +76,7 @@ object WorkflowServices {
       correlationId: Guid,
       listId: Guid,
       itemGuid: Guid,
-      workflowParameters: js.Any
+      workflowParameters: Any
     ): GuidResult = js.native
   }
   
@@ -104,7 +104,7 @@ object WorkflowServices {
     def get_initiationUrl(): String = js.native
     
     /** Gets custom properties of the workflow definition */
-    def get_properties(): StringDictionary[js.Any] = js.native
+    def get_properties(): StringDictionary[Any] = js.native
     
     /** true if the workflow definition has been published to the external workflow host; false if the workflow definition is only saved on the site  */
     def get_published(): Boolean = js.native
@@ -177,7 +177,7 @@ object WorkflowServices {
        with ClientObjectCollection[WorkflowDefinition] {
     
     /** returns SP.WorkflowDefinition class */
-    def get_childItemType(): js.Any = js.native
+    def get_childItemType(): Any = js.native
     
     def get_item(index: Double): WorkflowDefinition = js.native
     
@@ -206,7 +206,7 @@ object WorkflowServices {
     
     /** Returns an XML representation of a collection of XAML class signatures for workflow definitions.
       @param lastChanges Date time value representing the latest changes; class signatures older than this time are excluded from the result set.  */
-    def getActivitySignatures(lastChanged: String): ClientResult[js.Any] = js.native
+    def getActivitySignatures(lastChanged: String): ClientResult[Any] = js.native
     
     /** Retrieves the URL of the collateral file of the workflow definition.
       @param workflowDefinitionId The guid identifier of the workflow definition.
@@ -291,7 +291,7 @@ object WorkflowServices {
        with ClientObjectCollection[WorkflowInstance] {
     
     /** returns SP.WorkflowInstance class */
-    def get_childItemType(): js.Any = js.native
+    def get_childItemType(): Any = js.native
     
     def get_item(index: Double): WorkflowInstance = js.native
     
@@ -344,14 +344,14 @@ object WorkflowServices {
     /** Starts a Workflow Manager Client 1.0 instance specified by the subscription and passes the supplied parameters.
       Returns GUID of the instance object.
       @param payload Object that contains name-value pairs of parameter names and values to pass into the workflow instance. */
-    def startWorkflow(subscription: WorkflowSubscription, payload: StringDictionary[js.Any]): GuidResult = js.native
+    def startWorkflow(subscription: WorkflowSubscription, payload: StringDictionary[Any]): GuidResult = js.native
     
     /** Starts a Workflow Manager Client 1.0 instance specified by the subscription and passes the supplied parameters.
       Returns GUID of the instance object.
       @param subscription The subscription associated with the workflow instance.
       @param itemId The integer id of the list item on which to start the workflow instance.
       @param payload Object that contains name-value pairs of parameter names and values to pass into the workflow instance. */
-    def startWorkflowOnListItem(subscription: WorkflowSubscription, itemId: Double, payload: StringDictionary[js.Any]): GuidResult = js.native
+    def startWorkflowOnListItem(subscription: WorkflowSubscription, itemId: Double, payload: StringDictionary[Any]): GuidResult = js.native
     
     def suspendWorkflow(instance: WorkflowInstance): Unit = js.native
     
@@ -413,7 +413,7 @@ object WorkflowServices {
     def get_name(): String = js.native
     
     /** Gets the properties and values to pass to the workflow definition when the subscription is matched. */
-    def get_propertyDefinitions(): js.Any = js.native
+    def get_propertyDefinitions(): Any = js.native
     
     /** Gets the name of the workflow status field on the specified list.  */
     def get_statusFieldName(): String = js.native
@@ -455,7 +455,7 @@ object WorkflowServices {
        with ClientObjectCollection[WorkflowSubscription] {
     
     /** returns SP.WorkflowInstance class */
-    def get_childItemType(): js.Any = js.native
+    def get_childItemType(): Any = js.native
     
     def get_item(index: Double): WorkflowSubscription = js.native
     

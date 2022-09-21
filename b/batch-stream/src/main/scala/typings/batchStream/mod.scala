@@ -9,14 +9,14 @@ object mod {
   
   @JSImport("batch-stream", JSImport.Namespace)
   @js.native
-  class ^ protected () extends BatchStream {
+  open class ^ protected () extends BatchStream {
     def this(options: Options) = this()
   }
   
   @js.native
   trait BatchStream extends Transform {
     
-    var batch: js.Array[js.Any] = js.native
+    var batch: js.Array[Any] = js.native
     
     var size: Double = js.native
   }

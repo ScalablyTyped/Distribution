@@ -28,7 +28,7 @@ object Histogram {
     
     inline def setBucketCountsUndefined: Self = StObject.set(x, "bucketCounts", js.undefined)
     
-    inline def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value :_*))
+    inline def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value*))
     
     inline def setFirstBucketOffset(value: Double): Self = StObject.set(x, "firstBucketOffset", value.asInstanceOf[js.Any])
     

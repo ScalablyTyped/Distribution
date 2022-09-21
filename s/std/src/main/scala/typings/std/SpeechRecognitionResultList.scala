@@ -8,12 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SpeechRecognitionResultList
   extends StObject
-     with /* index */ NumberDictionary[SpeechRecognitionResult] {
+     with /* standard dom */
+/* index */ NumberDictionary[SpeechRecognitionResult] {
   
+  /* standard dom */
   def item(index: Double): SpeechRecognitionResult = js.native
   
+  /* standard dom.iterable */
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[SpeechRecognitionResult]] = js.native
   
+  /* standard dom */
   val length: Double = js.native
 }

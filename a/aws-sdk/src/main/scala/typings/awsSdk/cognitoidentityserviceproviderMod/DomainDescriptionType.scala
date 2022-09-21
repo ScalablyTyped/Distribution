@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainDescriptionType extends StObject {
   
   /**
-    * The AWS account ID for the user pool owner.
+    * The Amazon Web Services ID for the user pool owner.
     */
   var AWSAccountId: js.UndefOr[AWSAccountIdType] = js.undefined
   
   /**
-    * The ARN of the CloudFront distribution.
+    * The Amazon Resource Name (ARN) of the Amazon CloudFront distribution.
     */
   var CloudFrontDistribution: js.UndefOr[StringType] = js.undefined
   
@@ -22,12 +22,12 @@ trait DomainDescriptionType extends StObject {
   var CustomDomainConfig: js.UndefOr[CustomDomainConfigType] = js.undefined
   
   /**
-    * The domain string.
+    * The domain string. For custom domains, this is the fully-qualified domain name, such as auth.example.com. For Amazon Cognito prefix domains, this is the prefix alone, such as auth.
     */
   var Domain: js.UndefOr[DomainType] = js.undefined
   
   /**
-    * The S3 bucket where the static files for this domain are stored.
+    * The Amazon S3 bucket where the static files for this domain are stored.
     */
   var S3Bucket: js.UndefOr[S3BucketType] = js.undefined
   

@@ -1,7 +1,6 @@
 package typings.tsmonad
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.std.Partial
 import typings.tsmonad.monadMod.Eq
 import typings.tsmonad.monadMod.Functor
@@ -40,7 +39,7 @@ object maybeMod {
   
   @JSImport("tsmonad/lib/src/maybe", "Maybe")
   @js.native
-  class Maybe_[T] protected ()
+  open class Maybe_[T] protected ()
     extends StObject
        with Monad[T]
        with Functor[T]
@@ -73,19 +72,19 @@ object maybeMod {
     /* CompleteClass */
     override def of[U](t: U): Monad[U] = js.native
     
-    /* private */ var `type`: js.Any = js.native
+    /* private */ var `type`: Any = js.native
     
     /* CompleteClass */
     override def unit[U](t: U): Monad[U] = js.native
     
-    /* private */ var value: js.Any = js.native
+    /* private */ var value: Any = js.native
     
     def valueOr[U /* <: T */](defaultValue: U): T | U = js.native
     
     def valueOrCompute[U /* <: T */](defaultValueFunction: js.Function0[U]): T | U = js.native
     
     def valueOrThrow(): T = js.native
-    def valueOrThrow(error: Error): T = js.native
+    def valueOrThrow(error: js.Error): T = js.native
   }
   /* static members */
   object Maybe_ {
@@ -94,7 +93,7 @@ object maybeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def all(t: StringDictionary[Maybe_[js.Any]]): Maybe_[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[StringDictionary[js.Any]]]
+    inline def all(t: StringDictionary[Maybe_[Any]]): Maybe_[StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[StringDictionary[Any]]]
     
     inline def isJust[T](t: Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJust")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     

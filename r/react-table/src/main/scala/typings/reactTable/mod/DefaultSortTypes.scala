@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactTable.reactTableStrings.alphanumeric
   - typings.reactTable.reactTableStrings.datetime
   - typings.reactTable.reactTableStrings.basic
+  - typings.reactTable.reactTableStrings.string
+  - typings.reactTable.reactTableStrings.number
 */
 trait DefaultSortTypes extends StObject
 object DefaultSortTypes {
@@ -17,4 +19,8 @@ object DefaultSortTypes {
   inline def basic: typings.reactTable.reactTableStrings.basic = "basic".asInstanceOf[typings.reactTable.reactTableStrings.basic]
   
   inline def datetime: typings.reactTable.reactTableStrings.datetime = "datetime".asInstanceOf[typings.reactTable.reactTableStrings.datetime]
+  
+  inline def number: typings.reactTable.reactTableStrings.number = "number".asInstanceOf[typings.reactTable.reactTableStrings.number]
+  
+  inline def string: typings.reactTable.reactTableStrings.string = "string".asInstanceOf[typings.reactTable.reactTableStrings.string]
 }

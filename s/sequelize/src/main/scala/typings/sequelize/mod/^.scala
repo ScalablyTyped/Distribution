@@ -1,6 +1,7 @@
 package typings.sequelize.mod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.std.ErrorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("sequelize", JSImport.Namespace)
 @js.native
-class ^ protected ()
+open class ^ protected ()
   extends StObject
      with Sequelize {
   /**
@@ -63,127 +64,207 @@ class ^ protected ()
   def this(database: String, username: String, password: String) = this()
   def this(database: String, username: String, password: String, options: Options) = this()
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def AccessDeniedError(): typings.std.Error = js.native
+  override def AccessDeniedError(): js.Error = js.native
   /* CompleteClass */
-  override def AccessDeniedError(message: String): typings.std.Error = js.native
+  override def AccessDeniedError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def AccessDeniedError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def AccessDeniedError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("AccessDeniedError")
   var AccessDeniedError_Original: AccessDeniedError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def ConnectionError(): typings.std.Error = js.native
+  override def ConnectionError(): js.Error = js.native
   /* CompleteClass */
-  override def ConnectionError(message: String): typings.std.Error = js.native
+  override def ConnectionError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def ConnectionError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def ConnectionError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("ConnectionError")
   var ConnectionError_Original: ConnectionError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def ConnectionRefusedError(): typings.std.Error = js.native
+  override def ConnectionRefusedError(): js.Error = js.native
   /* CompleteClass */
-  override def ConnectionRefusedError(message: String): typings.std.Error = js.native
+  override def ConnectionRefusedError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def ConnectionRefusedError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def ConnectionRefusedError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("ConnectionRefusedError")
   var ConnectionRefusedError_Original: ConnectionRefusedError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def ConnectionTimedOutError(): typings.std.Error = js.native
+  override def ConnectionTimedOutError(): js.Error = js.native
   /* CompleteClass */
-  override def ConnectionTimedOutError(message: String): typings.std.Error = js.native
+  override def ConnectionTimedOutError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def ConnectionTimedOutError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def ConnectionTimedOutError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("ConnectionTimedOutError")
   var ConnectionTimedOutError_Original: ConnectionTimedOutError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def DatabaseError(): typings.std.Error = js.native
+  override def DatabaseError(): js.Error = js.native
   /* CompleteClass */
-  override def DatabaseError(message: String): typings.std.Error = js.native
+  override def DatabaseError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def DatabaseError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def DatabaseError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("DatabaseError")
   var DatabaseError_Original: DatabaseError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def EmptyResultError(): typings.std.Error = js.native
+  override def EmptyResultError(): js.Error = js.native
   /* CompleteClass */
-  override def EmptyResultError(message: String): typings.std.Error = js.native
+  override def EmptyResultError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def EmptyResultError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def EmptyResultError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("EmptyResultError")
   var EmptyResultError_Original: EmptyResultError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def Error(): typings.std.Error = js.native
+  override def Error(): js.Error = js.native
   /* CompleteClass */
-  override def Error(message: String): typings.std.Error = js.native
+  override def Error(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def Error(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def Error(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("Error")
   var Error_Original: BaseError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def ExclusionConstraintError(): typings.std.Error = js.native
+  override def ExclusionConstraintError(): js.Error = js.native
   /* CompleteClass */
-  override def ExclusionConstraintError(message: String): typings.std.Error = js.native
+  override def ExclusionConstraintError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def ExclusionConstraintError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def ExclusionConstraintError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("ExclusionConstraintError")
   var ExclusionConstraintError_Original: ExclusionConstraintError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def ForeignKeyConstraintError(): typings.std.Error = js.native
+  override def ForeignKeyConstraintError(): js.Error = js.native
   /* CompleteClass */
-  override def ForeignKeyConstraintError(message: String): typings.std.Error = js.native
+  override def ForeignKeyConstraintError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def ForeignKeyConstraintError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def ForeignKeyConstraintError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("ForeignKeyConstraintError")
   var ForeignKeyConstraintError_Original: ForeignKeyConstraintError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def HostNotFoundError(): typings.std.Error = js.native
+  override def HostNotFoundError(): js.Error = js.native
   /* CompleteClass */
-  override def HostNotFoundError(message: String): typings.std.Error = js.native
+  override def HostNotFoundError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def HostNotFoundError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def HostNotFoundError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("HostNotFoundError")
   var HostNotFoundError_Original: HostNotFoundError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def HostNotReachableError(): typings.std.Error = js.native
+  override def HostNotReachableError(): js.Error = js.native
   /* CompleteClass */
-  override def HostNotReachableError(message: String): typings.std.Error = js.native
+  override def HostNotReachableError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def HostNotReachableError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def HostNotReachableError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("HostNotReachableError")
   var HostNotReachableError_Original: HostNotReachableError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def InvalidConnectionError(): typings.std.Error = js.native
+  override def InvalidConnectionError(): js.Error = js.native
   /* CompleteClass */
-  override def InvalidConnectionError(message: String): typings.std.Error = js.native
+  override def InvalidConnectionError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def InvalidConnectionError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def InvalidConnectionError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("InvalidConnectionError")
   var InvalidConnectionError_Original: InvalidConnectionError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def TimeoutError(): typings.std.Error = js.native
+  override def TimeoutError(): js.Error = js.native
   /* CompleteClass */
-  override def TimeoutError(message: String): typings.std.Error = js.native
+  override def TimeoutError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def TimeoutError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def TimeoutError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("TimeoutError")
   var TimeoutError_Original: TimeoutError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def UniqueConstraintError(): typings.std.Error = js.native
+  override def UniqueConstraintError(): js.Error = js.native
   /* CompleteClass */
-  override def UniqueConstraintError(message: String): typings.std.Error = js.native
+  override def UniqueConstraintError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def UniqueConstraintError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def UniqueConstraintError(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("UniqueConstraintError")
   var UniqueConstraintError_Original: UniqueConstraintError = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def ValidationError(): typings.std.Error = js.native
+  override def ValidationError(): js.Error = js.native
   /* CompleteClass */
-  override def ValidationError(message: String): typings.std.Error = js.native
+  override def ValidationError(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def ValidationError(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def ValidationError(message: Unit, options: ErrorOptions): js.Error = js.native
   
+  /* standard es2022.error */
   /* CompleteClass */
-  override def ValidationErrorItem(): typings.std.Error = js.native
+  override def ValidationErrorItem(): js.Error = js.native
   /* CompleteClass */
-  override def ValidationErrorItem(message: String): typings.std.Error = js.native
+  override def ValidationErrorItem(message: String): js.Error = js.native
+  /* CompleteClass */
+  override def ValidationErrorItem(message: String, options: ErrorOptions): js.Error = js.native
+  /* CompleteClass */
+  override def ValidationErrorItem(message: Unit, options: ErrorOptions): js.Error = js.native
   /* CompleteClass */
   @JSName("ValidationErrorItem")
   var ValidationErrorItem_Original: ValidationErrorItem = js.native

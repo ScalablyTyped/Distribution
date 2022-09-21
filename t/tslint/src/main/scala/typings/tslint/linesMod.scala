@@ -12,7 +12,7 @@ object linesMod {
   
   @JSImport("tslint/lib/verify/lines", "CodeLine")
   @js.native
-  class CodeLine protected () extends Line {
+  open class CodeLine protected () extends Line {
     def this(contents: String) = this()
     
     var contents: String = js.native
@@ -20,7 +20,7 @@ object linesMod {
   
   @JSImport("tslint/lib/verify/lines", "EndErrorLine")
   @js.native
-  class EndErrorLine protected () extends ErrorLine {
+  open class EndErrorLine protected () extends ErrorLine {
     def this(startCol: Double, endCol: Double, message: String) = this()
     
     var endCol: Double = js.native
@@ -30,7 +30,7 @@ object linesMod {
   
   @JSImport("tslint/lib/verify/lines", "ErrorLine")
   @js.native
-  class ErrorLine protected () extends Line {
+  open class ErrorLine protected () extends Line {
     def this(startCol: Double) = this()
     
     var startCol: Double = js.native
@@ -38,11 +38,11 @@ object linesMod {
   
   @JSImport("tslint/lib/verify/lines", "Line")
   @js.native
-  class Line () extends StObject
+  open class Line () extends StObject
   
   @JSImport("tslint/lib/verify/lines", "MessageSubstitutionLine")
   @js.native
-  class MessageSubstitutionLine protected () extends Line {
+  open class MessageSubstitutionLine protected () extends Line {
     def this(key: String, message: String) = this()
     
     var key: String = js.native
@@ -52,7 +52,7 @@ object linesMod {
   
   @JSImport("tslint/lib/verify/lines", "MultilineErrorLine")
   @js.native
-  class MultilineErrorLine protected () extends ErrorLine {
+  open class MultilineErrorLine protected () extends ErrorLine {
     def this(startCol: Double) = this()
   }
   

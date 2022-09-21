@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MVCxClientBeginCallbackEventArgs")
 @js.native
-class MVCxClientBeginCallbackEventArgs protected ()
+open class MVCxClientBeginCallbackEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.MVCxClientBeginCallbackEventArgs {
   /**
@@ -28,5 +28,5 @@ class MVCxClientBeginCallbackEventArgs protected ()
     * Gets an object containing specific information (if any, as name/value pairs) that should be passed as a request parameter from the client to the server side for further processing.
     */
   /* CompleteClass */
-  var customArgs: js.Any = js.native
+  var customArgs: Any = js.native
 }

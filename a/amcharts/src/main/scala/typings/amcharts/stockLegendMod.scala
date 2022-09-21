@@ -8,7 +8,7 @@ object stockLegendMod {
   
   @JSImport("amcharts/StockLegend", JSImport.Default)
   @js.native
-  class default () extends StockLegend
+  open class default () extends StockLegend
   
   @js.native
   trait StockLegend

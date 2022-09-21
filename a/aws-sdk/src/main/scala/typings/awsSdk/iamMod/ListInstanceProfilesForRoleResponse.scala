@@ -32,7 +32,7 @@ object ListInstanceProfilesForRoleResponse {
     
     inline def setInstanceProfiles(value: instanceProfileListType): Self = StObject.set(x, "InstanceProfiles", value.asInstanceOf[js.Any])
     
-    inline def setInstanceProfilesVarargs(value: InstanceProfile*): Self = StObject.set(x, "InstanceProfiles", js.Array(value :_*))
+    inline def setInstanceProfilesVarargs(value: InstanceProfile*): Self = StObject.set(x, "InstanceProfiles", js.Array(value*))
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

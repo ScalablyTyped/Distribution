@@ -20,7 +20,7 @@ object contextsMod {
   
   @JSImport("typesettable/build/src/contexts", "CanvasContext")
   @js.native
-  class CanvasContext protected ()
+  open class CanvasContext protected ()
     extends typings.typesettable.canvasMod.CanvasContext {
     def this(ctx: CanvasRenderingContext2D) = this()
     def this(ctx: CanvasRenderingContext2D, lineHeight: Double) = this()
@@ -30,7 +30,7 @@ object contextsMod {
   
   @JSImport("typesettable/build/src/contexts", "HtmlContext")
   @js.native
-  class HtmlContext protected ()
+  open class HtmlContext protected ()
     extends typings.typesettable.htmlMod.HtmlContext {
     /**
       * @param element - The CSS font styles applied to `element` will determine the
@@ -46,7 +46,7 @@ object contextsMod {
   
   @JSImport("typesettable/build/src/contexts", "HtmlUtils")
   @js.native
-  class HtmlUtils ()
+  open class HtmlUtils ()
     extends typings.typesettable.htmlMod.HtmlUtils
   /* static members */
   object HtmlUtils {
@@ -58,7 +58,7 @@ object contextsMod {
     /**
       * Adds the variadic classnames to the Element
       */
-    inline def addClasses(element: Element, classNames: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(element.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addClasses(element: Element, classNames: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(List(element.asInstanceOf[js.Any]).`++`(classNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     /**
       * Appends an HTML element with the specified tag name to the provided element.
@@ -66,12 +66,12 @@ object contextsMod {
       *
       * Returns the new element.
       */
-    inline def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")((List(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).`++`(classNames.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[HTMLElement]
     
     /**
       * Creates and returns a new HTMLElement with the attached classnames.
       */
-    inline def create(tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def create(tagName: String, classNames: String*): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(List(tagName.asInstanceOf[js.Any]).`++`(classNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HTMLElement]
     
     /**
       * Returns the width/height of HTMLElement's bounding box
@@ -81,7 +81,7 @@ object contextsMod {
   
   @JSImport("typesettable/build/src/contexts", "SvgContext")
   @js.native
-  class SvgContext protected ()
+  open class SvgContext protected ()
     extends typings.typesettable.svgMod.SvgContext {
     def this(element: SVGElement) = this()
     def this(element: SVGElement, className: String) = this()
@@ -97,13 +97,13 @@ object contextsMod {
     
     @JSImport("typesettable/build/src/contexts", "SvgContext.AnchorMap")
     @js.native
-    def AnchorMap: js.Any = js.native
-    inline def AnchorMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnchorMap")(x.asInstanceOf[js.Any])
+    def AnchorMap: Any = js.native
+    inline def AnchorMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnchorMap")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typesettable/build/src/contexts", "SvgUtils")
   @js.native
-  class SvgUtils ()
+  open class SvgUtils ()
     extends typings.typesettable.svgMod.SvgUtils
   /* static members */
   object SvgUtils {
@@ -123,12 +123,12 @@ object contextsMod {
       *
       * Returns the new element.
       */
-    inline def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+    inline def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")((List(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).`++`(classNames.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SVGElement]
     
     /**
       * Creates and returns a new SVGElement with the attached classnames.
       */
-    inline def create(tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+    inline def create(tagName: String, classNames: String*): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(List(tagName.asInstanceOf[js.Any]).`++`(classNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SVGElement]
     
     /**
       * Returns the width/height of svg element's bounding box

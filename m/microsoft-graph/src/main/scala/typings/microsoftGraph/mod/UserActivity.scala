@@ -34,7 +34,7 @@ trait UserActivity
   var appDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Optional. A custom piece of data - JSON-LD extensible description of content according to schema.org syntax.
-  var contentInfo: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var contentInfo: js.UndefOr[NullableOption[Any]] = js.undefined
   
   /**
     * Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a
@@ -96,7 +96,7 @@ object UserActivity {
     
     inline def setAppDisplayNameUndefined: Self = StObject.set(x, "appDisplayName", js.undefined)
     
-    inline def setContentInfo(value: NullableOption[js.Any]): Self = StObject.set(x, "contentInfo", value.asInstanceOf[js.Any])
+    inline def setContentInfo(value: NullableOption[Any]): Self = StObject.set(x, "contentInfo", value.asInstanceOf[js.Any])
     
     inline def setContentInfoNull: Self = StObject.set(x, "contentInfo", null)
     
@@ -132,7 +132,7 @@ object UserActivity {
     
     inline def setHistoryItemsUndefined: Self = StObject.set(x, "historyItems", js.undefined)
     
-    inline def setHistoryItemsVarargs(value: ActivityHistoryItem*): Self = StObject.set(x, "historyItems", js.Array(value :_*))
+    inline def setHistoryItemsVarargs(value: ActivityHistoryItem*): Self = StObject.set(x, "historyItems", js.Array(value*))
     
     inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     

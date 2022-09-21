@@ -16,16 +16,20 @@ trait AutoprovisioningNodePoolDefaults extends StObject {
   /** Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. If unspecified, the default disk size is 100GB. */
   var diskSizeGb: js.UndefOr[Double] = js.undefined
   
-  /** Type of the disk attached to each node (e.g. 'pd-standard' or 'pd-ssd') If unspecified, the default disk type is 'pd-standard' */
+  /** Type of the disk attached to each node (e.g. 'pd-standard', 'pd-ssd' or 'pd-balanced') If unspecified, the default disk type is 'pd-standard' */
   var diskType: js.UndefOr[String] = js.undefined
+  
+  /** The image type to use for NAP created node. */
+  var imageType: js.UndefOr[String] = js.undefined
   
   /** Specifies the node management options for NAP created node-pools. */
   var management: js.UndefOr[NodeManagement] = js.undefined
   
   /**
-    * Minimum CPU platform to be used for NAP created node pools. The instance may be scheduled on the specified or newer CPU platform. Applicable values are the friendly names of CPU
-    * platforms, such as minCpuPlatform: Intel Haswell or minCpuPlatform: Intel Sandy Bridge. For more information, read [how to specify min CPU
-    * platform](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform) To unset the min cpu platform field pass "automatic" as field value.
+    * Deprecated. Minimum CPU platform to be used for NAP created node pools. The instance may be scheduled on the specified or newer CPU platform. Applicable values are the friendly
+    * names of CPU platforms, such as minCpuPlatform: Intel Haswell or minCpuPlatform: Intel Sandy Bridge. For more information, read [how to specify min CPU
+    * platform](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform) This field is deprecated, min_cpu_platform should be specified using
+    * https://cloud.google.com/requested-min-cpu-platform label selector on the pod. To unset the min cpu platform field pass "automatic" as field value.
     */
   var minCpuPlatform: js.UndefOr[String] = js.undefined
   
@@ -62,6 +66,10 @@ object AutoprovisioningNodePoolDefaults {
     
     inline def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
+    inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
+    
+    inline def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
+    
     inline def setManagement(value: NodeManagement): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
     
     inline def setManagementUndefined: Self = StObject.set(x, "management", js.undefined)
@@ -74,7 +82,7 @@ object AutoprovisioningNodePoolDefaults {
     
     inline def setOauthScopesUndefined: Self = StObject.set(x, "oauthScopes", js.undefined)
     
-    inline def setOauthScopesVarargs(value: String*): Self = StObject.set(x, "oauthScopes", js.Array(value :_*))
+    inline def setOauthScopesVarargs(value: String*): Self = StObject.set(x, "oauthScopes", js.Array(value*))
     
     inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     

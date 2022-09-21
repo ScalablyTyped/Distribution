@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("couchbase", "N1qlStringQuery")
 @js.native
-class N1qlStringQuery () extends N1qlQuery {
+open class N1qlStringQuery () extends N1qlQuery {
   
   /**
     * Specifies whether this query is adhoc or should be prepared.
@@ -27,5 +27,5 @@ class N1qlStringQuery () extends N1qlQuery {
   /**
     * Returns the fully prepared object representation of this query.
     */
-  def toObject(): js.Any = js.native
+  def toObject(): Any = js.native
 }

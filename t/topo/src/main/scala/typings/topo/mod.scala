@@ -12,7 +12,7 @@ object mod {
     */
   @JSImport("topo", JSImport.Namespace)
   @js.native
-  class ^[TNode, TGroup] ()
+  open class ^[TNode, TGroup] ()
     extends StObject
        with Topo[TNode, TGroup]
   

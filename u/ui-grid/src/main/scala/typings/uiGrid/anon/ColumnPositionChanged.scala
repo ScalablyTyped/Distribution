@@ -10,8 +10,8 @@ trait ColumnPositionChanged extends StObject {
   
   /**
     * Raised when a column is moved
-    * @param {ng.IScope} scope Grid Scope
-    * @param {columnPositionChangedHandler} handler Callback Function
+    * @param scope Grid Scope
+    * @param handler Callback Function
     */
   var columnPositionChanged: js.UndefOr[
     js.Function2[/* scope */ IScope, /* handler */ columnPositionChangedHandler, Unit]

@@ -1,6 +1,6 @@
 package typings.prex
 
-import typings.esfxCancelable.distMod.Cancelable
+import typings.esfxCancelable.mod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,12 +15,12 @@ object manualreseteventMod {
     *
     * @param initialState A value indicating whether to set the initial state to signaled.
     */
-  class ManualResetEvent () extends StObject {
+  open class ManualResetEvent () extends StObject {
     def this(initialState: Boolean) = this()
     
-    /* private */ var _signaled: js.Any = js.native
+    /* private */ var _signaled: Any = js.native
     
-    /* private */ var _waiters: js.Any = js.native
+    /* private */ var _waiters: Any = js.native
     
     /**
       * Gets a value indicating whether the event is signaled.

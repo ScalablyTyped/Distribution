@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cassandra-driver" : "4.6.0"
+      "cassandra-driver" : "4.6.4"
     }
   ],
   "test-dependencies" : [
     {
-      "cassandra-driver" : "4.6.0"
+      "cassandra-driver" : "4.6.4"
     }
   ],
   "compile-devDependencies" : [

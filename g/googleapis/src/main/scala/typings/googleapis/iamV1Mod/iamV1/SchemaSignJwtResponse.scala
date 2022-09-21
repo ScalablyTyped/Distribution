@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The service account sign JWT response.
-  */
 trait SchemaSignJwtResponse extends StObject {
   
   /**
-    * The id of the key used to sign the JWT.
+    * Deprecated. [Migrate to Service Account Credentials API](https://cloud.google.com/iam/help/credentials/migrate-api). The id of the key used to sign the JWT.
     */
-  var keyId: js.UndefOr[String] = js.undefined
+  var keyId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The signed JWT.
+    * Deprecated. [Migrate to Service Account Credentials API](https://cloud.google.com/iam/help/credentials/migrate-api). The signed JWT.
     */
-  var signedJwt: js.UndefOr[String] = js.undefined
+  var signedJwt: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSignJwtResponse {
   
@@ -30,9 +27,13 @@ object SchemaSignJwtResponse {
     
     inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
+    inline def setKeyIdNull: Self = StObject.set(x, "keyId", null)
+    
     inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
     inline def setSignedJwt(value: String): Self = StObject.set(x, "signedJwt", value.asInstanceOf[js.Any])
+    
+    inline def setSignedJwtNull: Self = StObject.set(x, "signedJwt", null)
     
     inline def setSignedJwtUndefined: Self = StObject.set(x, "signedJwt", js.undefined)
   }

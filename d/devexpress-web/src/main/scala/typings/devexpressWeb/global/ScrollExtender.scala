@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ScrollExtender")
 @js.native
-class ScrollExtender ()
+open class ScrollExtender ()
   extends StObject
      with typings.devexpressWeb.ScrollExtender

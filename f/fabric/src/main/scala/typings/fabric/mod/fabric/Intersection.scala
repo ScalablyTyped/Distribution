@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Intersection")
 @js.native
-class Intersection ()
+open class Intersection ()
   extends typings.fabric.fabricImplMod.Intersection {
   def this(status: String) = this()
 }

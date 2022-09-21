@@ -22,14 +22,14 @@ trait MoveAlongOption extends StObject {
   var markerId: Double
   
   /** 移动路径的坐标串，坐标点格式 `{longitude, latitude}` */
-  var path: js.Array[js.Any]
+  var path: js.Array[Any]
   
   /** 接口调用成功的回调函数 */
   var success: js.UndefOr[MoveAlongSuccessCallback] = js.undefined
 }
 object MoveAlongOption {
   
-  inline def apply(duration: Double, markerId: Double, path: js.Array[js.Any]): MoveAlongOption = {
+  inline def apply(duration: Double, markerId: Double, path: js.Array[Any]): MoveAlongOption = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], markerId = markerId.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveAlongOption]
   }
@@ -52,9 +52,9 @@ object MoveAlongOption {
     
     inline def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
     
-    inline def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: js.Any*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: Any*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "IconBase")
 @js.native
-class IconBase protected ()
+open class IconBase protected ()
   extends typings.officeUiFabricReact.libIconMod.IconBase {
   def this(props: IIconProps) = this()
 }

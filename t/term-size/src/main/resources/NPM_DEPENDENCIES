@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "term-size" : "2.2.1"
+      "term-size" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "term-size" : "2.2.1"
+      "term-size" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

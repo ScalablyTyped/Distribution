@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_HttpMessage")
 @js.native
-class ClassHttpMessage ()
+open class ClassHttpMessage ()
   extends StObject
      with typings.fibjs.ClassHttpMessage

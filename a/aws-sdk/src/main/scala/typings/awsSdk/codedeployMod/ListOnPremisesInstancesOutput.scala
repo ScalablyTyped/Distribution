@@ -29,7 +29,7 @@ object ListOnPremisesInstancesOutput {
     
     inline def setInstanceNamesUndefined: Self = StObject.set(x, "instanceNames", js.undefined)
     
-    inline def setInstanceNamesVarargs(value: InstanceName*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
+    inline def setInstanceNamesVarargs(value: InstanceName*): Self = StObject.set(x, "instanceNames", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

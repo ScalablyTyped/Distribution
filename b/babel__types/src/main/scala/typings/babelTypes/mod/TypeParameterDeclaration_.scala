@@ -28,7 +28,7 @@ object TypeParameterDeclaration_ {
     
     inline def setParams(value: js.Array[TypeParameter_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: TypeParameter_ *): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: TypeParameter_ *): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setType(value: TypeParameterDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

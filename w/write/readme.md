@@ -10,10 +10,10 @@ Write data to a file, replacing the file if it already exists and creating any i
 | ------------------ | :-------------: |
 | Full name          | write |
 | Keywords           | async, file path, file system, file, filepath, files, filesystem, folder, fs, fs.writeFile, fs.writeFileSync, path, promise, streams, write file, write-file, writefile, write |
-| # releases         | 2 |
-| # dependents       | 251 |
-| # downloads        | 533339260 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9344165666666668E7 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/write)

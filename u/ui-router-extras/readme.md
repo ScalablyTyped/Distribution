@@ -11,9 +11,9 @@ UI-Router Extras: Sticky states, Future States, Deep State Redirect, Transition 
 | Full name          | ui-router-extras |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 250739 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 13114.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://christopherthielen.github.io/ui-router-extras/)

@@ -11,9 +11,9 @@ A utility to generate signed Firebase Authentication Tokens
 | Full name          | firebase-token-generator |
 | Keywords           | Firebase, JWT |
 | # releases         | 1 |
-| # dependents       | 40 |
-| # downloads        | 726792 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 69004.66666666667 |
+| # stars            | 184.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-token-generator-node)

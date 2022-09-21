@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_EventInfo")
 @js.native
-class ClassEventInfo ()
+open class ClassEventInfo ()
   extends StObject
      with typings.fibjs.ClassEventInfo

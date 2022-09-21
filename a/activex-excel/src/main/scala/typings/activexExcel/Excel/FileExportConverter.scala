@@ -19,7 +19,7 @@ trait FileExportConverter extends StObject {
   
   val FileFormat: Double
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object FileExportConverter {
   
@@ -30,7 +30,7 @@ object FileExportConverter {
     ExcelDotFileExportConverter_typekey: FileExportConverter,
     Extensions: String,
     FileFormat: Double,
-    Parent: js.Any
+    Parent: Any
   ): FileExportConverter = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Extensions = Extensions.asInstanceOf[js.Any], FileFormat = FileFormat.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.FileExportConverter_typekey")(ExcelDotFileExportConverter_typekey.asInstanceOf[js.Any])
@@ -51,6 +51,6 @@ object FileExportConverter {
     
     inline def setFileFormat(value: Double): Self = StObject.set(x, "FileFormat", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ Multiple file upload plugin with progress-bar, drag-and-drop, direct-to-S3 & Azu
 | ------------------ | :-------------: |
 | Full name          | fine-uploader |
 | Keywords           | amazon, api, aws, azure, chunk, chunking, cross-domain, cross-site, drag, drop, file, file-input, file-uploader, input, jquery, jquery-plugin, multiple, preview, progress, resume, s3, selection, upload, widget |
-| # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 1180822 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 114315.33333333333 |
+| # stars            | 8181.0 |
 
 ## Links
 - [Homepage](https://github.com/FineUploader/fine-uploader#readme)

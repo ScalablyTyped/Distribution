@@ -24,7 +24,7 @@ object fieldColumnMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with FieldColumn {
     def this(properties: FieldColumnProperties) = this()
@@ -47,6 +47,8 @@ object fieldColumnMod extends Shortcut {
     
     /**
       * Indicates whether the column is resizable.
+      *
+      * @default true
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#resizable)
       */

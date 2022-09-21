@@ -9,15 +9,12 @@ Forget Function.bind and func.apply(context, arguments), performance matters! Fo
 | ------------------ | :-------------: |
 | Full name          | better-curry |
 | Keywords           | curry, function, bind, currying, partial function, functional, delegate |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 126226 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9050.666666666666 |
+| # stars            | 8.0 |
 
 ## Links
-- [Homepage](https://github.com/pocesar/js-bettercurry)
-- [Bugs](https://github.com/pocesar/js-bettercurry/issues)
-- [Repository](https://github.com/pocesar/js-bettercurry)
 - [Npm](https://www.npmjs.com/package/better-curry)
     
 

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Metadata extends StObject {
   
   /**
-    * Reserved.
+    * The key name.
     */
   var Name: js.UndefOr[String] = js.undefined
   
   /**
-    * Reserved.
+    * The value.
     */
   var Value: js.UndefOr[String] = js.undefined
 }

@@ -10,15 +10,12 @@ Intelligently converting strings to title case (an enhanced fork of David Gouch'
 | ------------------ | :-------------: |
 | Full name          | titlecase |
 | Keywords           | title-case, title, case, gouch, to-title-case |
-| # releases         | 2 |
-| # dependents       | 46 |
-| # downloads        | 1400172 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 114985.66666666667 |
+| # stars            | 31.0 |
 
 ## Links
-- [Homepage](https://github.com/rvagg/titlecase#readme)
-- [Bugs](https://github.com/rvagg/titlecase/issues)
-- [Repository](https://github.com/rvagg/titlecase)
 - [Npm](https://www.npmjs.com/package/titlecase)
     
 

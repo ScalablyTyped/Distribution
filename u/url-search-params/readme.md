@@ -10,10 +10,10 @@ Simple polyfill for URLSearchParams standard
 | ------------------ | :-------------: |
 | Full name          | url-search-params |
 | Keywords           | DOM, URLSearchParams, polyfill, shim |
-| # releases         | 1 |
-| # dependents       | 127 |
-| # downloads        | 4416173 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 528474.0 |
+| # stars            | 764.0 |
 
 ## Links
 - [Homepage](https://github.com/WebReflection/url-search-params)

@@ -15,7 +15,16 @@ trait ImageryLayerProperties
      with BlendLayerProperties {
   
   /**
+    * A list of custom parameters appended to the URL of all resources fetched by the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#customParameters)
+    */
+  var customParameters: js.UndefOr[Any] = js.undefined
+  
+  /**
     * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#legendEnabled)
     */
@@ -23,6 +32,8 @@ trait ImageryLayerProperties
   
   /**
     * Indicates whether to display popups when features in the layer are clicked.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#popupEnabled)
     */
@@ -43,6 +54,10 @@ object ImageryLayerProperties {
   }
   
   extension [Self <: ImageryLayerProperties](x: Self) {
+    
+    inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
+    
+    inline def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
     
     inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     

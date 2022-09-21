@@ -9,23 +9,23 @@ trait ImageConfig
      with DrawOptionsConfig
      with ObjectOptionsConfig {
   
-  var crop: js.UndefOr[js.Any] = js.undefined
+  var crop: js.UndefOr[Any] = js.undefined
   
-  var image: js.Any
+  var image: Any
 }
 object ImageConfig {
   
-  inline def apply(image: js.Any): ImageConfig = {
+  inline def apply(image: Any): ImageConfig = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageConfig]
   }
   
   extension [Self <: ImageConfig](x: Self) {
     
-    inline def setCrop(value: js.Any): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    inline def setCrop(value: Any): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     
     inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
   }
 }

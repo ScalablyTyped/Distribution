@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Result")
 @js.native
-class Result () extends default
+open class Result () extends default
 /* static members */
 object Result {
   

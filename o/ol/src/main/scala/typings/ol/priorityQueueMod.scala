@@ -8,7 +8,7 @@ object priorityQueueMod {
   
   @JSImport("ol/structs/PriorityQueue", JSImport.Default)
   @js.native
-  class default[T] protected ()
+  open class default[T] protected ()
     extends StObject
        with PriorityQueue[T] {
     def this(priorityFunction: js.Function1[/* p0 */ T, Double], keyFunction: js.Function1[/* p0 */ T, String]) = this()

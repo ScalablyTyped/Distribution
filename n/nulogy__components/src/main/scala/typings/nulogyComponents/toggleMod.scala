@@ -8,5 +8,5 @@ object toggleMod {
   
   @JSImport("@nulogy/components/src/Toggle", "Toggle")
   @js.native
-  val Toggle: js.Any = js.native
+  val Toggle: Any = js.native
 }

@@ -64,7 +64,7 @@ trait PartialSceneAxisBackgroundcolor extends StObject {
   
   var calendar: js.UndefOr[Calendar] = js.undefined
   
-  var categoryarray: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var categoryarray: js.UndefOr[js.Array[Any]] = js.undefined
   
   var categoryorder: js.UndefOr[
     trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`)
@@ -96,7 +96,7 @@ trait PartialSceneAxisBackgroundcolor extends StObject {
   
   var nticks: js.UndefOr[Double] = js.undefined
   
-  var range: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var range: js.UndefOr[js.Array[Any]] = js.undefined
   
   var rangemode: js.UndefOr[normal | tozero | nonnegative] = js.undefined
   
@@ -138,7 +138,7 @@ trait PartialSceneAxisBackgroundcolor extends StObject {
   
   var tick0: js.UndefOr[Double | String] = js.undefined
   
-  var tickangle: js.UndefOr[Double] = js.undefined
+  var tickangle: js.UndefOr[auto | Double] = js.undefined
   
   var tickcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
@@ -160,7 +160,7 @@ trait PartialSceneAxisBackgroundcolor extends StObject {
   
   var ticktext: js.UndefOr[js.Array[String]] = js.undefined
   
-  var tickvals: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var tickvals: js.UndefOr[js.Array[Any]] = js.undefined
   
   var tickwidth: js.UndefOr[Double] = js.undefined
   
@@ -195,17 +195,17 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setBackgroundcolorUndefined: Self = StObject.set(x, "backgroundcolor", js.undefined)
     
-    inline def setBackgroundcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "backgroundcolor", js.Array(value :_*))
+    inline def setBackgroundcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "backgroundcolor", js.Array(value*))
     
     inline def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
-    inline def setCategoryarray(value: js.Array[js.Any]): Self = StObject.set(x, "categoryarray", value.asInstanceOf[js.Any])
+    inline def setCategoryarray(value: js.Array[Any]): Self = StObject.set(x, "categoryarray", value.asInstanceOf[js.Any])
     
     inline def setCategoryarrayUndefined: Self = StObject.set(x, "categoryarray", js.undefined)
     
-    inline def setCategoryarrayVarargs(value: js.Any*): Self = StObject.set(x, "categoryarray", js.Array(value :_*))
+    inline def setCategoryarrayVarargs(value: Any*): Self = StObject.set(x, "categoryarray", js.Array(value*))
     
     inline def setCategoryorder(
       value: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`)
@@ -217,13 +217,13 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setDividercolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "dividercolor", value.asInstanceOf[js.Any])
     
     inline def setDividercolorUndefined: Self = StObject.set(x, "dividercolor", js.undefined)
     
-    inline def setDividercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "dividercolor", js.Array(value :_*))
+    inline def setDividercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "dividercolor", js.Array(value*))
     
     inline def setDividerwidth(value: Double): Self = StObject.set(x, "dividerwidth", value.asInstanceOf[js.Any])
     
@@ -245,7 +245,7 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setGridcolorUndefined: Self = StObject.set(x, "gridcolor", js.undefined)
     
-    inline def setGridcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "gridcolor", js.Array(value :_*))
+    inline def setGridcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "gridcolor", js.Array(value*))
     
     inline def setGridwidth(value: Double): Self = StObject.set(x, "gridwidth", value.asInstanceOf[js.Any])
     
@@ -259,7 +259,7 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setLinecolorUndefined: Self = StObject.set(x, "linecolor", js.undefined)
     
-    inline def setLinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "linecolor", js.Array(value :_*))
+    inline def setLinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "linecolor", js.Array(value*))
     
     inline def setLinewidth(value: Double): Self = StObject.set(x, "linewidth", value.asInstanceOf[js.Any])
     
@@ -273,11 +273,11 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setNticksUndefined: Self = StObject.set(x, "nticks", js.undefined)
     
-    inline def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: js.Array[Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setRangeVarargs(value: js.Any*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: Any*): Self = StObject.set(x, "range", js.Array(value*))
     
     inline def setRangemode(value: normal | tozero | nonnegative): Self = StObject.set(x, "rangemode", value.asInstanceOf[js.Any])
     
@@ -331,7 +331,7 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setSpikecolorUndefined: Self = StObject.set(x, "spikecolor", js.undefined)
     
-    inline def setSpikecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "spikecolor", js.Array(value :_*))
+    inline def setSpikecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "spikecolor", js.Array(value*))
     
     inline def setSpikedash(value: String): Self = StObject.set(x, "spikedash", value.asInstanceOf[js.Any])
     
@@ -359,7 +359,7 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setTick0Undefined: Self = StObject.set(x, "tick0", js.undefined)
     
-    inline def setTickangle(value: Double): Self = StObject.set(x, "tickangle", value.asInstanceOf[js.Any])
+    inline def setTickangle(value: auto | Double): Self = StObject.set(x, "tickangle", value.asInstanceOf[js.Any])
     
     inline def setTickangleUndefined: Self = StObject.set(x, "tickangle", js.undefined)
     
@@ -367,7 +367,7 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setTickcolorUndefined: Self = StObject.set(x, "tickcolor", js.undefined)
     
-    inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value :_*))
+    inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value*))
     
     inline def setTickfont(value: PartialFont): Self = StObject.set(x, "tickfont", value.asInstanceOf[js.Any])
     
@@ -381,7 +381,7 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setTickformatstopsUndefined: Self = StObject.set(x, "tickformatstops", js.undefined)
     
-    inline def setTickformatstopsVarargs(value: PartialTickFormatStop*): Self = StObject.set(x, "tickformatstops", js.Array(value :_*))
+    inline def setTickformatstopsVarargs(value: PartialTickFormatStop*): Self = StObject.set(x, "tickformatstops", js.Array(value*))
     
     inline def setTicklen(value: Double): Self = StObject.set(x, "ticklen", value.asInstanceOf[js.Any])
     
@@ -407,13 +407,13 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setTicktextUndefined: Self = StObject.set(x, "ticktext", js.undefined)
     
-    inline def setTicktextVarargs(value: String*): Self = StObject.set(x, "ticktext", js.Array(value :_*))
+    inline def setTicktextVarargs(value: String*): Self = StObject.set(x, "ticktext", js.Array(value*))
     
-    inline def setTickvals(value: js.Array[js.Any]): Self = StObject.set(x, "tickvals", value.asInstanceOf[js.Any])
+    inline def setTickvals(value: js.Array[Any]): Self = StObject.set(x, "tickvals", value.asInstanceOf[js.Any])
     
     inline def setTickvalsUndefined: Self = StObject.set(x, "tickvals", js.undefined)
     
-    inline def setTickvalsVarargs(value: js.Any*): Self = StObject.set(x, "tickvals", js.Array(value :_*))
+    inline def setTickvalsVarargs(value: Any*): Self = StObject.set(x, "tickvals", js.Array(value*))
     
     inline def setTickwidth(value: Double): Self = StObject.set(x, "tickwidth", value.asInstanceOf[js.Any])
     
@@ -443,7 +443,7 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setZerolinecolorUndefined: Self = StObject.set(x, "zerolinecolor", js.undefined)
     
-    inline def setZerolinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "zerolinecolor", js.Array(value :_*))
+    inline def setZerolinecolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "zerolinecolor", js.Array(value*))
     
     inline def setZerolinewidth(value: Double): Self = StObject.set(x, "zerolinewidth", value.asInstanceOf[js.Any])
     

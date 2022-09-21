@@ -28,7 +28,7 @@ object AccessCache {
   
   @JSGlobal("Windows.Storage.AccessCache.AccessListEntryView")
   @js.native
-  class AccessListEntryView ()
+  open class AccessListEntryView ()
     extends StObject
        with typings.winrt.Windows.Storage.AccessCache.AccessListEntryView {
     
@@ -38,7 +38,7 @@ object AccessCache {
   
   @JSGlobal("Windows.Storage.AccessCache.ItemRemovedEventArgs")
   @js.native
-  class ItemRemovedEventArgs ()
+  open class ItemRemovedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Storage.AccessCache.ItemRemovedEventArgs {
     
@@ -48,7 +48,7 @@ object AccessCache {
   
   @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions")
   @js.native
-  class StorageApplicationPermissions ()
+  open class StorageApplicationPermissions ()
     extends StObject
        with typings.winrt.Windows.Storage.AccessCache.StorageApplicationPermissions
   /* static members */
@@ -71,13 +71,13 @@ object AccessCache {
   
   @JSGlobal("Windows.Storage.AccessCache.StorageItemAccessList")
   @js.native
-  class StorageItemAccessList ()
+  open class StorageItemAccessList ()
     extends StObject
        with typings.winrt.Windows.Storage.AccessCache.StorageItemAccessList
   
   @JSGlobal("Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList")
   @js.native
-  class StorageItemMostRecentlyUsedList ()
+  open class StorageItemMostRecentlyUsedList ()
     extends StObject
        with typings.winrt.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList
 }

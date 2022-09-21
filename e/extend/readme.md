@@ -10,10 +10,10 @@ Port of jQuery.extend for node.js and the browser
 | ------------------ | :-------------: |
 | Full name          | extend |
 | Keywords           | extend, clone, merge |
-| # releases         | 0 |
-| # dependents       | 3760 |
-| # downloads        | 894212321 |
-| # stars            | 52 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.811633E7 |
+| # stars            | 336.0 |
 
 ## Links
 - [Homepage](https://github.com/justmoon/node-extend#readme)

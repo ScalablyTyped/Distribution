@@ -1,18 +1,16 @@
 organization := "org.scalablytyped"
 name := "slate-html-serializer"
-version := "0.6-dt-20181217Z-8ed711"
-scalaVersion := "2.13.1"
+version := "0.6-dt-20211202Z-b0afb5"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
-  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-e04543",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-ece683",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200402Z-6f4338",
-  "org.scalablytyped" %%% "slate" % "0.47-dt-20191204Z-4e22fb",
-  "org.scalablytyped" %%% "std" % "3.8-a0108c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "csstype" % "3.1.1-7b6cf2",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-737217",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220913Z-bad9e4",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fce63f",
+  "org.scalablytyped" %%% "slate" % "0.82.1-dc5262",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

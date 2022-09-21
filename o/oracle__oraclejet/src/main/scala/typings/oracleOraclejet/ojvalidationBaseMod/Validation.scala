@@ -19,38 +19,15 @@ object Validation {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def converterFactory[CF /* <: ConverterFactory[js.Any] */](`type`: String): CF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CF | Null]
-  inline def converterFactory[CF /* <: ConverterFactory[js.Any] */](`type`: String, instance: CF): CF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[CF | Null]
+  inline def converterFactory[CF /* <: ConverterFactory[Any] */](`type`: number | color | datetime): CF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CF | Null]
+  inline def converterFactory[CF /* <: ConverterFactory[Any] */](`type`: number | color | datetime, instance: CF): CF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[CF | Null]
+  inline def converterFactory[CF /* <: ConverterFactory[Any] */](`type`: String): CF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CF | Null]
+  inline def converterFactory[CF /* <: ConverterFactory[Any] */](`type`: String, instance: CF): CF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[CF | Null]
   
-  inline def converterFactory_color[CF /* <: ConverterFactory[js.Any] */](`type`: color): CF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CF | Null]
-  inline def converterFactory_color[CF /* <: ConverterFactory[js.Any] */](`type`: color, instance: CF): CF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[CF | Null]
-  
-  inline def converterFactory_datetime[CF /* <: ConverterFactory[js.Any] */](`type`: datetime): CF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CF | Null]
-  inline def converterFactory_datetime[CF /* <: ConverterFactory[js.Any] */](`type`: datetime, instance: CF): CF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[CF | Null]
-  
-  inline def converterFactory_number[CF /* <: ConverterFactory[js.Any] */](`type`: number): CF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CF | Null]
-  inline def converterFactory_number[CF /* <: ConverterFactory[js.Any] */](`type`: number, instance: CF): CF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("converterFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[CF | Null]
-  
-  inline def validatorFactory[VF /* <: ValidatorFactory[js.Any] */](`type`: String): VF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[VF | Null]
-  inline def validatorFactory[VF /* <: ValidatorFactory[js.Any] */](`type`: String, instance: VF): VF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[VF | Null]
-  
-  inline def validatorFactory_dateRestriction[VF /* <: ValidatorFactory[js.Any] */](`type`: dateRestriction): VF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[VF | Null]
-  inline def validatorFactory_dateRestriction[VF /* <: ValidatorFactory[js.Any] */](`type`: dateRestriction, instance: VF): VF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[VF | Null]
-  
-  inline def validatorFactory_dateTimeRange[VF /* <: ValidatorFactory[js.Any] */](`type`: dateTimeRange): VF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[VF | Null]
-  inline def validatorFactory_dateTimeRange[VF /* <: ValidatorFactory[js.Any] */](`type`: dateTimeRange, instance: VF): VF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[VF | Null]
-  
-  inline def validatorFactory_length[VF /* <: ValidatorFactory[js.Any] */](`type`: length): VF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[VF | Null]
-  inline def validatorFactory_length[VF /* <: ValidatorFactory[js.Any] */](`type`: length, instance: VF): VF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[VF | Null]
-  
-  inline def validatorFactory_numberRange[VF /* <: ValidatorFactory[js.Any] */](`type`: numberRange): VF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[VF | Null]
-  inline def validatorFactory_numberRange[VF /* <: ValidatorFactory[js.Any] */](`type`: numberRange, instance: VF): VF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[VF | Null]
-  
-  inline def validatorFactory_regexp[VF /* <: ValidatorFactory[js.Any] */](`type`: regexp): VF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[VF | Null]
-  inline def validatorFactory_regexp[VF /* <: ValidatorFactory[js.Any] */](`type`: regexp, instance: VF): VF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[VF | Null]
-  
-  inline def validatorFactory_required[VF /* <: ValidatorFactory[js.Any] */](`type`: required): VF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[VF | Null]
-  inline def validatorFactory_required[VF /* <: ValidatorFactory[js.Any] */](`type`: required, instance: VF): VF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[VF | Null]
+  inline def validatorFactory[VF /* <: ValidatorFactory[Any] */](`type`: required | regexp | numberRange | length | dateTimeRange | dateRestriction): VF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[VF | Null]
+  inline def validatorFactory[VF /* <: ValidatorFactory[Any] */](`type`: required | regexp | numberRange | length | dateTimeRange | dateRestriction, instance: VF): VF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[VF | Null]
+  inline def validatorFactory[VF /* <: ValidatorFactory[Any] */](`type`: String): VF | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[VF | Null]
+  inline def validatorFactory[VF /* <: ValidatorFactory[Any] */](`type`: String, instance: VF): VF | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validatorFactory")(`type`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[VF | Null]
   
   // tslint:disable-next-line interface-over-type-literal
   trait RegisteredConverter extends StObject {

@@ -4,29 +4,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "inkWord.toJSON()". */
+/** An interface describing the data returned by calling `inkWord.toJSON()`. */
 trait InkWordData extends StObject {
   
   /**
-    *
     * Gets the ID of the InkWord object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The id of the recognized language in this ink word. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var languageId: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The words that were recognized in this ink word, in order of likelihood. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var wordAlternates: js.UndefOr[js.Array[String]] = js.undefined
@@ -52,6 +52,6 @@ object InkWordData {
     
     inline def setWordAlternatesUndefined: Self = StObject.set(x, "wordAlternates", js.undefined)
     
-    inline def setWordAlternatesVarargs(value: String*): Self = StObject.set(x, "wordAlternates", js.Array(value :_*))
+    inline def setWordAlternatesVarargs(value: String*): Self = StObject.set(x, "wordAlternates", js.Array(value*))
   }
 }

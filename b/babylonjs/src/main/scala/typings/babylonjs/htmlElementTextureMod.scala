@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.baseTextureMod.BaseTexture
+import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
@@ -12,7 +13,7 @@ object htmlElementTextureMod {
   
   @JSImport("babylonjs/Materials/Textures/htmlElementTexture", "HtmlElementTexture")
   @js.native
-  class HtmlElementTexture protected () extends BaseTexture {
+  open class HtmlElementTexture protected () extends BaseTexture {
     def this(name: String, element: HTMLCanvasElement, options: IHtmlElementTextureOptions) = this()
     /**
       * Instantiates a HtmlElementTexture from the following parameters.
@@ -23,15 +24,15 @@ object htmlElementTextureMod {
       */
     def this(name: String, element: HTMLVideoElement, options: IHtmlElementTextureOptions) = this()
     
-    /* private */ var _createInternalTexture: js.Any = js.native
+    /* private */ var _createInternalTexture: Any = js.native
     
-    /* private */ var _generateMipMaps: js.Any = js.native
+    /* private */ var _generateMipMaps: Any = js.native
     
-    /* private */ var _isVideo: js.Any = js.native
+    /* private */ var _isVideo: Any = js.native
     
-    /* private */ var _samplingMode: js.Any = js.native
+    /* private */ var _samplingMode: Any = js.native
     
-    /* private */ var _textureMatrix: js.Any = js.native
+    /* private */ var _textureMatrix: Any = js.native
     
     /**
       * The texture URL.
@@ -39,8 +40,13 @@ object htmlElementTextureMod {
     var element: HTMLVideoElement | HTMLCanvasElement = js.native
     
     /**
+      * Observable triggered once the texture has been loaded.
+      */
+    var onLoadObservable: Observable[HtmlElementTexture] = js.native
+    
+    /**
       * Updates the content of the texture.
-      * @param invertY Defines wether the texture should be inverted on Y (false by default on video and true on canvas)
+      * @param invertY Defines whether the texture should be inverted on Y (false by default on video and true on canvas)
       */
     def update(): Unit = js.native
     def update(invertY: Nullable[Boolean]): Unit = js.native
@@ -48,9 +54,9 @@ object htmlElementTextureMod {
   /* static members */
   object HtmlElementTexture {
     
-    @JSImport("babylonjs/Materials/Textures/htmlElementTexture", "HtmlElementTexture.DefaultOptions")
+    @JSImport("babylonjs/Materials/Textures/htmlElementTexture", "HtmlElementTexture._DefaultOptions")
     @js.native
-    val DefaultOptions: js.Any = js.native
+    val _DefaultOptions: Any = js.native
   }
   
   trait IHtmlElementTextureOptions extends StObject {
@@ -61,7 +67,7 @@ object htmlElementTextureMod {
     var engine: Nullable[ThinEngine]
     
     /**
-      * Defines wether mip maps should be created or not.
+      * Defines whether mip maps should be created or not.
       */
     var generateMipMaps: js.UndefOr[Boolean] = js.undefined
     

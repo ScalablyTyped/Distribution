@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object versionCompareMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(v1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(v1: js.Any, v2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(v1: js.Any, v2: js.Any, operator: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(v1: js.Any, v2: Unit, operator: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(v1: Unit, v2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(v1: Unit, v2: js.Any, operator: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(v1: Unit, v2: Unit, operator: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(v1: Any): Any = ^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(v1: Any, v2: Any): Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(v1: Any, v2: Any, operator: Any): Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(v1: Any, v2: Unit, operator: Any): Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(v1: Unit, v2: Any): Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(v1: Unit, v2: Any, operator: Any): Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(v1: Unit, v2: Unit, operator: Any): Any = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/info/version_compare", JSImport.Namespace)
   @js.native

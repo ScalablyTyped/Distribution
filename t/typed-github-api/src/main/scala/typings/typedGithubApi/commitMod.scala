@@ -1,6 +1,5 @@
 package typings.typedGithubApi
 
-import typings.std.Date
 import typings.typedGithubApi.anon.Additions
 import typings.typedGithubApi.anon.Bloburl
 import typings.typedGithubApi.anon.Payload
@@ -41,7 +40,7 @@ object commitMod {
       
       inline def setFiles(value: js.Array[Bloburl]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: Bloburl*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: Bloburl*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setStats(value: Additions): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
@@ -114,7 +113,7 @@ object commitMod {
       
       inline def setParents(value: js.Array[CommitRef]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      inline def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value*))
       
       inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
       
@@ -124,7 +123,7 @@ object commitMod {
   
   trait GitActor extends StObject {
     
-    var date: Date
+    var date: js.Date
     
     var email: String
     
@@ -132,14 +131,14 @@ object commitMod {
   }
   object GitActor {
     
-    inline def apply(date: Date, email: String, name: String): GitActor = {
+    inline def apply(date: js.Date, email: String, name: String): GitActor = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GitActor]
     }
     
     extension [Self <: GitActor](x: Self) {
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -180,7 +179,7 @@ object commitMod {
       
       inline def setParents(value: js.Array[CommitRef]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      inline def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value*))
       
       inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     }

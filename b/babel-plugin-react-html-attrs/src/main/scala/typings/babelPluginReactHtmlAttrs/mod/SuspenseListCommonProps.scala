@@ -1,6 +1,5 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +13,12 @@ trait SuspenseListCommonProps extends StObject {
     * It does, however, allow those children to be wrapped inside a single
     * level of `<React.Fragment>`.
     */
-  var children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
+  var children: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]])
 }
 object SuspenseListCommonProps {
   
   inline def apply(
-    children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
+    children: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]])
   ): SuspenseListCommonProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspenseListCommonProps]
@@ -28,7 +27,7 @@ object SuspenseListCommonProps {
   extension [Self <: SuspenseListCommonProps](x: Self) {
     
     inline def setChildren(
-      value: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
+      value: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]])
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

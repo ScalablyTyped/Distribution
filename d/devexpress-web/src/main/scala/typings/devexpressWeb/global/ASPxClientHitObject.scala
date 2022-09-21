@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHitObject")
 @js.native
-class ASPxClientHitObject ()
+open class ASPxClientHitObject ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHitObject {
   

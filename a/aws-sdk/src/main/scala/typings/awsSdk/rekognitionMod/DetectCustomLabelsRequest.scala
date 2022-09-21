@@ -14,7 +14,7 @@ trait DetectCustomLabelsRequest extends StObject {
   var MaxResults: js.UndefOr[UInteger] = js.undefined
   
   /**
-    * Specifies the minimum confidence level for the labels to return. Amazon Rekognition doesn't return any labels with a confidence lower than this specified value. If you specify a value of 0, all labels are return, regardless of the default thresholds that the model version applies.
+    * Specifies the minimum confidence level for the labels to return. DetectCustomLabels doesn't return any labels with a confidence value that's lower than this specified value. If you specify a value of 0, DetectCustomLabels returns all labels, regardless of the assumed threshold applied to each label. If you don't specify a value for MinConfidence, DetectCustomLabels returns labels based on the assumed threshold of each label.
     */
   var MinConfidence: js.UndefOr[Percent] = js.undefined
   

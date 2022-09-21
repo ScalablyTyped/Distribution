@@ -15,8 +15,8 @@ trait Extension[T] extends StObject {
   def activate(): Thenable[T]
   
   /**
-    * The public API exported by this extension. It is an invalid action
-    * to access this field before this extension has been activated.
+    * The public API exported by this extension (return value of `activate`).
+    * It is an invalid action to access this field before this extension has been activated.
     */
   val exports: T
   
@@ -25,13 +25,13 @@ trait Extension[T] extends StObject {
     * or if an extension runs where the remote extension host runs. The extension kind
     * is defined in the `package.json`-file of extensions but can also be refined
     * via the `remote.extensionKind`-setting. When no remote extension host exists,
-    * the value is [`ExtensionKind.UI`](#ExtensionKind.UI).
+    * the value is {@linkcode ExtensionKind.UI}.
     */
   var extensionKind: ExtensionKind
   
   /**
     * The absolute file path of the directory containing this extension. Shorthand
-    * notation for [Extension.extensionUri.fsPath](#Extension.extensionUri) (independent of the uri scheme).
+    * notation for {@link Extension.extensionUri Extension.extensionUri.fsPath} (independent of the uri scheme).
     */
   val extensionPath: String
   
@@ -53,7 +53,7 @@ trait Extension[T] extends StObject {
   /**
     * The parsed contents of the extension's package.json.
     */
-  val packageJSON: js.Any
+  val packageJSON: Any
 }
 object Extension {
   
@@ -65,7 +65,7 @@ object Extension {
     extensionUri: Uri,
     id: String,
     isActive: Boolean,
-    packageJSON: js.Any
+    packageJSON: Any
   ): Extension[T] = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction0(activate), exports = exports.asInstanceOf[js.Any], extensionKind = extensionKind.asInstanceOf[js.Any], extensionPath = extensionPath.asInstanceOf[js.Any], extensionUri = extensionUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], packageJSON = packageJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extension[T]]
@@ -87,6 +87,6 @@ object Extension {
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    inline def setPackageJSON(value: js.Any): Self = StObject.set(x, "packageJSON", value.asInstanceOf[js.Any])
+    inline def setPackageJSON(value: Any): Self = StObject.set(x, "packageJSON", value.asInstanceOf[js.Any])
   }
 }

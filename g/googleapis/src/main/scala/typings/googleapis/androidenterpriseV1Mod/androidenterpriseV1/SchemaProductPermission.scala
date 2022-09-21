@@ -4,23 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A product permissions resource represents the set of permissions required
-  * by a specific app and whether or not they have been accepted by an
-  * enterprise admin.  The API can be used to read the set of permissions, and
-  * also to update the set to indicate that permissions have been accepted.
-  */
 trait SchemaProductPermission extends StObject {
   
   /**
     * An opaque string uniquely identifying the permission.
     */
-  var permissionId: js.UndefOr[String] = js.undefined
+  var permissionId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Whether the permission has been accepted or not.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaProductPermission {
   
@@ -33,9 +27,13 @@ object SchemaProductPermission {
     
     inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
+    inline def setPermissionIdNull: Self = StObject.set(x, "permissionId", null)
+    
     inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

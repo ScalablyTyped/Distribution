@@ -24,7 +24,7 @@ object Socialprofiles {
     
     inline def setSocial_profiles(value: js.Array[SocialProfile]): Self = StObject.set(x, "social_profiles", value.asInstanceOf[js.Any])
     
-    inline def setSocial_profilesVarargs(value: SocialProfile*): Self = StObject.set(x, "social_profiles", js.Array(value :_*))
+    inline def setSocial_profilesVarargs(value: SocialProfile*): Self = StObject.set(x, "social_profiles", js.Array(value*))
     
     inline def setType(value: social_profileDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

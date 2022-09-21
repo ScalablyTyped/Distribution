@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FileSystem extends StObject {
   
-  var name: String
+  val name: String
   
-  var root: DirectoryEntry
+  val root: FileSystemDirectoryEntry
 }
 object FileSystem {
   
-  inline def apply(name: String, root: DirectoryEntry): FileSystem = {
+  inline def apply(name: String, root: FileSystemDirectoryEntry): FileSystem = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystem]
   }
@@ -21,6 +21,6 @@ object FileSystem {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setRoot(value: DirectoryEntry): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: FileSystemDirectoryEntry): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

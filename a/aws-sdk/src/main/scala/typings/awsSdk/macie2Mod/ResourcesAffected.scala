@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourcesAffected extends StObject {
   
   /**
-    * An array of objects, one for each S3 bucket that the finding applies to. Each object provides a set of metadata about an affected S3 bucket.
+    * The details of the S3 bucket that the finding applies to.
     */
   var s3Bucket: js.UndefOr[S3Bucket] = js.undefined
   
   /**
-    * An array of objects, one for each S3 object that the finding applies to. Each object provides a set of metadata about an affected S3 object.
+    * The details of the S3 object that the finding applies to.
     */
   var s3Object: js.UndefOr[S3Object] = js.undefined
 }

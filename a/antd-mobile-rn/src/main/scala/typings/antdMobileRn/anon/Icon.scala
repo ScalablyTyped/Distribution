@@ -15,16 +15,11 @@ trait Icon extends StObject {
   
   def onClick(): Unit
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
 }
 object Icon {
   
-  inline def apply(
-    icon: Element,
-    mode: String,
-    onClick: () => Unit,
-    styles: StringDictionary[RegisteredStyle[js.Any]]
-  ): Icon = {
+  inline def apply(icon: Element, mode: String, onClick: () => Unit, styles: StringDictionary[RegisteredStyle[Any]]): Icon = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Icon]
   }
@@ -37,6 +32,6 @@ object Icon {
     
     inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

@@ -43,12 +43,12 @@ object dataview {
       * @param records Number/Array/Ext.data.Model The record(s) to deselect. Can also be a number to reference by index.
       * @param suppressEvent Boolean If true the deselect event will not be fired.
       */
-    var deselect: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[Boolean], Unit]] = js.undefined
+    var deselect: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Deselects all records
       * @param supress Object
       */
-    var deselectAll: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+    var deselectAll: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var deselectOnContainerClick: js.UndefOr[Boolean] = js.undefined
@@ -60,14 +60,14 @@ object dataview {
       * @param records Ext.data.Model/Number An array of records or an index.
       * @param suppressEvent Boolean Set to false to not fire a deselect event.
       */
-    var doDeselect: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[Boolean], Unit]] = js.undefined
+    var doDeselect: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Selects a record instance by record instance or index
       * @param records Ext.data.Model/Number An array of records or an index.
       * @param keepExisting Boolean
       * @param suppressEvent Boolean Set to false to not fire a select event.
       */
-    var doSelect: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]] = js.undefined
+    var doSelect: js.UndefOr[js.Function3[js.UndefOr[Any], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Config Option] (String) */
     var emptyText: js.UndefOr[java.lang.String] = js.undefined
@@ -117,13 +117,13 @@ object dataview {
     /** [Method] Returns the value of inline
       * @returns Boolean/Object
       */
-    var getInline: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getInline: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns an item at the specified index
       * @param index Number Index of the item.
       * @returns Ext.dom.Element/Ext.dataview.component.DataItem item Item at the specified index.
       */
-    var getItemAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+    var getItemAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
     
     /** [Method] Returns the value of itemCls
       * @returns String
@@ -133,7 +133,7 @@ object dataview {
     /** [Method] Returns the value of itemConfig
       * @returns Object
       */
-    var getItemConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getItemConfig: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns an index for the specified item
       * @param item Number The item to locate.
@@ -144,7 +144,7 @@ object dataview {
     /** [Method] Returns the value of itemTpl
       * @returns String/String[]/Ext.XTemplate
       */
-    var getItemTpl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getItemTpl: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the array of previously selected items
       * @returns Array The previous selection.
@@ -154,7 +154,7 @@ object dataview {
     /** [Method] Returns the value of loadingText
       * @returns String/Boolean
       */
-    var getLoadingText: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getLoadingText: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of maxItemCache
       * @returns Number
@@ -219,7 +219,7 @@ object dataview {
     /** [Method] Returns the value of store
       * @returns Ext.data.Store/Object
       */
-    var getStore: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getStore: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of triggerCtEvent
       * @returns String
@@ -239,7 +239,7 @@ object dataview {
     /** [Method] Returns an array of the current items in the DataView
       * @returns Ext.dom.Element[]/Ext.dataview.component.DataItem[] Array of Items.
       */
-    var getViewItems: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getViewItems: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Method called when the Store s Reader throws an exception */
     var handleException: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -253,7 +253,7 @@ object dataview {
     var indexOf: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var `inline`: js.UndefOr[js.Any] = js.undefined
+    var `inline`: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns true if the Selectable is currently locked
       * @returns Boolean True if currently locked
@@ -264,22 +264,22 @@ object dataview {
       * @param record Ext.data.Model/Number The record or index of the record to check.
       * @returns Boolean
       */
-    var isSelected: js.UndefOr[js.Function1[js.UndefOr[js.Any], Boolean]] = js.undefined
+    var isSelected: js.UndefOr[js.Function1[js.UndefOr[Any], Boolean]] = js.undefined
     
     /** [Config Option] (String) */
     var itemCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var itemConfig: js.UndefOr[js.Any] = js.undefined
+    var itemConfig: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var itemSelector: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/String[]/Ext.XTemplate) */
-    var itemTpl: js.UndefOr[js.Any] = js.undefined
+    var itemTpl: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String/Boolean) */
-    var loadingText: js.UndefOr[js.Any] = js.undefined
+    var loadingText: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var locked: js.UndefOr[Boolean] = js.undefined
@@ -304,10 +304,10 @@ object dataview {
       */
     var prepareData: js.UndefOr[
         js.Function3[
-          /* data */ js.UndefOr[js.Any], 
+          /* data */ js.UndefOr[Any], 
           /* index */ js.UndefOr[Double], 
           /* record */ js.UndefOr[IModel], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -331,7 +331,7 @@ object dataview {
       * @param keepExisting Boolean If true, the existing selection will be added to (if not, the old selection is replaced).
       * @param suppressEvent Boolean If true, the select event will not be fired.
       */
-    var select: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]] = js.undefined
+    var select: js.UndefOr[js.Function3[js.UndefOr[Any], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Selects all records
       * @param silent Boolean true to suppress all select events.
@@ -385,7 +385,7 @@ object dataview {
     /** [Method] Sets the value of inline
       * @param inline Boolean/Object The new value.
       */
-    var setInline: js.UndefOr[js.Function1[/* inline */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setInline: js.UndefOr[js.Function1[/* inline */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of itemCls
       * @param itemCls String The new value.
@@ -395,12 +395,12 @@ object dataview {
     /** [Method] Sets the value of itemConfig
       * @param itemConfig Object The new value.
       */
-    var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of itemTpl
       * @param itemTpl String/String[]/Ext.XTemplate The new value.
       */
-    var setItemTpl: js.UndefOr[js.Function1[/* itemTpl */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setItemTpl: js.UndefOr[js.Function1[/* itemTpl */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] This was an internal function accidentally exposed in 1 x and now deprecated  */
     var setLastFocused: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -408,7 +408,7 @@ object dataview {
     /** [Method] Sets the value of loadingText
       * @param loadingText String/Boolean The new value.
       */
-    var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxItemCache
       * @param maxItemCache Number The new value.
@@ -443,7 +443,7 @@ object dataview {
     /** [Method] Sets the value of store
       * @param store Ext.data.Store/Object The new value.
       */
-    var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of triggerCtEvent
       * @param triggerCtEvent String The new value.
@@ -467,7 +467,7 @@ object dataview {
     var singleSelect: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.data.Store/Object) */
-    var store: js.UndefOr[js.Any] = js.undefined
+    var store: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var trackOver: js.UndefOr[Boolean] = js.undefined
@@ -524,9 +524,9 @@ object dataview {
       
       inline def setDeferEmptyTextUndefined: Self = StObject.set(x, "deferEmptyText", js.undefined)
       
-      inline def setDeselect(value: (js.UndefOr[js.Any], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
+      inline def setDeselect(value: (js.UndefOr[Any], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
       
-      inline def setDeselectAll(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction1(value))
+      inline def setDeselectAll(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "deselectAll", js.Any.fromFunction1(value))
       
       inline def setDeselectAllUndefined: Self = StObject.set(x, "deselectAll", js.undefined)
       
@@ -540,11 +540,11 @@ object dataview {
       
       inline def setDisableSelectionUndefined: Self = StObject.set(x, "disableSelection", js.undefined)
       
-      inline def setDoDeselect(value: (js.UndefOr[js.Any], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "doDeselect", js.Any.fromFunction2(value))
+      inline def setDoDeselect(value: (js.UndefOr[Any], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "doDeselect", js.Any.fromFunction2(value))
       
       inline def setDoDeselectUndefined: Self = StObject.set(x, "doDeselect", js.undefined)
       
-      inline def setDoSelect(value: (js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "doSelect", js.Any.fromFunction3(value))
+      inline def setDoSelect(value: (js.UndefOr[Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "doSelect", js.Any.fromFunction3(value))
       
       inline def setDoSelectUndefined: Self = StObject.set(x, "doSelect", js.undefined)
       
@@ -588,11 +588,11 @@ object dataview {
       
       inline def setGetEmptyTextUndefined: Self = StObject.set(x, "getEmptyText", js.undefined)
       
-      inline def setGetInline(value: () => js.Any): Self = StObject.set(x, "getInline", js.Any.fromFunction0(value))
+      inline def setGetInline(value: () => Any): Self = StObject.set(x, "getInline", js.Any.fromFunction0(value))
       
       inline def setGetInlineUndefined: Self = StObject.set(x, "getInline", js.undefined)
       
-      inline def setGetItemAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getItemAt", js.Any.fromFunction1(value))
+      inline def setGetItemAt(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "getItemAt", js.Any.fromFunction1(value))
       
       inline def setGetItemAtUndefined: Self = StObject.set(x, "getItemAt", js.undefined)
       
@@ -600,7 +600,7 @@ object dataview {
       
       inline def setGetItemClsUndefined: Self = StObject.set(x, "getItemCls", js.undefined)
       
-      inline def setGetItemConfig(value: () => js.Any): Self = StObject.set(x, "getItemConfig", js.Any.fromFunction0(value))
+      inline def setGetItemConfig(value: () => Any): Self = StObject.set(x, "getItemConfig", js.Any.fromFunction0(value))
       
       inline def setGetItemConfigUndefined: Self = StObject.set(x, "getItemConfig", js.undefined)
       
@@ -608,7 +608,7 @@ object dataview {
       
       inline def setGetItemIndexUndefined: Self = StObject.set(x, "getItemIndex", js.undefined)
       
-      inline def setGetItemTpl(value: () => js.Any): Self = StObject.set(x, "getItemTpl", js.Any.fromFunction0(value))
+      inline def setGetItemTpl(value: () => Any): Self = StObject.set(x, "getItemTpl", js.Any.fromFunction0(value))
       
       inline def setGetItemTplUndefined: Self = StObject.set(x, "getItemTpl", js.undefined)
       
@@ -616,7 +616,7 @@ object dataview {
       
       inline def setGetLastSelectedUndefined: Self = StObject.set(x, "getLastSelected", js.undefined)
       
-      inline def setGetLoadingText(value: () => js.Any): Self = StObject.set(x, "getLoadingText", js.Any.fromFunction0(value))
+      inline def setGetLoadingText(value: () => Any): Self = StObject.set(x, "getLoadingText", js.Any.fromFunction0(value))
       
       inline def setGetLoadingTextUndefined: Self = StObject.set(x, "getLoadingText", js.undefined)
       
@@ -676,7 +676,7 @@ object dataview {
       
       inline def setGetSelectionUndefined: Self = StObject.set(x, "getSelection", js.undefined)
       
-      inline def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+      inline def setGetStore(value: () => Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
       
       inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
       
@@ -692,7 +692,7 @@ object dataview {
       
       inline def setGetUseComponentsUndefined: Self = StObject.set(x, "getUseComponents", js.undefined)
       
-      inline def setGetViewItems(value: () => js.Any): Self = StObject.set(x, "getViewItems", js.Any.fromFunction0(value))
+      inline def setGetViewItems(value: () => Any): Self = StObject.set(x, "getViewItems", js.Any.fromFunction0(value))
       
       inline def setGetViewItemsUndefined: Self = StObject.set(x, "getViewItems", js.undefined)
       
@@ -708,7 +708,7 @@ object dataview {
       
       inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
       
-      inline def setInline(value: js.Any): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Any): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
@@ -716,7 +716,7 @@ object dataview {
       
       inline def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
       
-      inline def setIsSelected(value: js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
+      inline def setIsSelected(value: js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
       
       inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
@@ -724,7 +724,7 @@ object dataview {
       
       inline def setItemClsUndefined: Self = StObject.set(x, "itemCls", js.undefined)
       
-      inline def setItemConfig(value: js.Any): Self = StObject.set(x, "itemConfig", value.asInstanceOf[js.Any])
+      inline def setItemConfig(value: Any): Self = StObject.set(x, "itemConfig", value.asInstanceOf[js.Any])
       
       inline def setItemConfigUndefined: Self = StObject.set(x, "itemConfig", js.undefined)
       
@@ -732,11 +732,11 @@ object dataview {
       
       inline def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
       
-      inline def setItemTpl(value: js.Any): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
+      inline def setItemTpl(value: Any): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
       
       inline def setItemTplUndefined: Self = StObject.set(x, "itemTpl", js.undefined)
       
-      inline def setLoadingText(value: js.Any): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
+      inline def setLoadingText(value: Any): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
       
       inline def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
       
@@ -761,7 +761,7 @@ object dataview {
       inline def setOverItemClsUndefined: Self = StObject.set(x, "overItemCls", js.undefined)
       
       inline def setPrepareData(
-        value: (/* data */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* record */ js.UndefOr[IModel]) => js.Any
+        value: (/* data */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* record */ js.UndefOr[IModel]) => Any
       ): Self = StObject.set(x, "prepareData", js.Any.fromFunction3(value))
       
       inline def setPrepareDataUndefined: Self = StObject.set(x, "prepareData", js.undefined)
@@ -786,7 +786,7 @@ object dataview {
       
       inline def setScrollToTopOnRefreshUndefined: Self = StObject.set(x, "scrollToTopOnRefresh", js.undefined)
       
-      inline def setSelect(value: (js.UndefOr[js.Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
+      inline def setSelect(value: (js.UndefOr[Any], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
       
       inline def setSelectAll(value: js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "selectAll", js.Any.fromFunction1(value))
       
@@ -830,7 +830,7 @@ object dataview {
       
       inline def setSetEmptyTextUndefined: Self = StObject.set(x, "setEmptyText", js.undefined)
       
-      inline def setSetInline(value: /* inline */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInline", js.Any.fromFunction1(value))
+      inline def setSetInline(value: /* inline */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInline", js.Any.fromFunction1(value))
       
       inline def setSetInlineUndefined: Self = StObject.set(x, "setInline", js.undefined)
       
@@ -838,11 +838,11 @@ object dataview {
       
       inline def setSetItemClsUndefined: Self = StObject.set(x, "setItemCls", js.undefined)
       
-      inline def setSetItemConfig(value: /* itemConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemConfig", js.Any.fromFunction1(value))
+      inline def setSetItemConfig(value: /* itemConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setItemConfig", js.Any.fromFunction1(value))
       
       inline def setSetItemConfigUndefined: Self = StObject.set(x, "setItemConfig", js.undefined)
       
-      inline def setSetItemTpl(value: /* itemTpl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemTpl", js.Any.fromFunction1(value))
+      inline def setSetItemTpl(value: /* itemTpl */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setItemTpl", js.Any.fromFunction1(value))
       
       inline def setSetItemTplUndefined: Self = StObject.set(x, "setItemTpl", js.undefined)
       
@@ -850,7 +850,7 @@ object dataview {
       
       inline def setSetLastFocusedUndefined: Self = StObject.set(x, "setLastFocused", js.undefined)
       
-      inline def setSetLoadingText(value: /* loadingText */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLoadingText", js.Any.fromFunction1(value))
+      inline def setSetLoadingText(value: /* loadingText */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLoadingText", js.Any.fromFunction1(value))
       
       inline def setSetLoadingTextUndefined: Self = StObject.set(x, "setLoadingText", js.undefined)
       
@@ -878,7 +878,7 @@ object dataview {
       
       inline def setSetSelectedClsUndefined: Self = StObject.set(x, "setSelectedCls", js.undefined)
       
-      inline def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
+      inline def setSetStore(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
       
       inline def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
       
@@ -902,7 +902,7 @@ object dataview {
       
       inline def setSingleSelectUndefined: Self = StObject.set(x, "singleSelect", js.undefined)
       
-      inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
       inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
@@ -1083,12 +1083,12 @@ object dataview {
     /** [Method] Returns the value of icon
       * @returns Object
       */
-    var getIcon: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getIcon: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of indexBar
       * @returns Boolean/Object
       */
-    var getIndexBar: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getIndexBar: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of infinite
       * @returns Boolean
@@ -1108,7 +1108,7 @@ object dataview {
     /** [Method] Returns the value of onItemDisclosure
       * @returns Boolean/Function/Object
       */
-    var getOnItemDisclosure: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getOnItemDisclosure: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of pinHeaders
       * @returns Boolean
@@ -1154,7 +1154,7 @@ object dataview {
     var grouped: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var indexBar: js.UndefOr[js.Any] = js.undefined
+    var indexBar: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var infinite: js.UndefOr[Boolean] = js.undefined
@@ -1163,7 +1163,7 @@ object dataview {
     var itemHeight: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean/Function/Object) */
-    var onItemDisclosure: js.UndefOr[js.Any] = js.undefined
+    var onItemDisclosure: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var pinHeaders: js.UndefOr[Boolean] = js.undefined
@@ -1181,9 +1181,9 @@ object dataview {
       */
     var scrollToRecord: js.UndefOr[
         js.Function3[
-          /* record */ js.UndefOr[js.Any], 
-          /* animate */ js.UndefOr[js.Any], 
-          /* overscroll */ js.UndefOr[js.Any], 
+          /* record */ js.UndefOr[Any], 
+          /* animate */ js.UndefOr[Any], 
+          /* overscroll */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -1201,12 +1201,12 @@ object dataview {
     /** [Method] Sets the value of icon
       * @param icon Object The new value.
       */
-    var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of indexBar
       * @param indexBar Boolean/Object The new value.
       */
-    var setIndexBar: js.UndefOr[js.Function1[/* indexBar */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setIndexBar: js.UndefOr[js.Function1[/* indexBar */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of infinite
       * @param infinite Boolean The new value.
@@ -1226,7 +1226,7 @@ object dataview {
     /** [Method] Sets the value of onItemDisclosure
       * @param onItemDisclosure Boolean/Function/Object The new value.
       */
-    var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of pinHeaders
       * @param pinHeaders Boolean The new value.
@@ -1297,11 +1297,11 @@ object dataview {
       
       inline def setGetGroupedUndefined: Self = StObject.set(x, "getGrouped", js.undefined)
       
-      inline def setGetIcon(value: () => js.Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
+      inline def setGetIcon(value: () => Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
       
       inline def setGetIconUndefined: Self = StObject.set(x, "getIcon", js.undefined)
       
-      inline def setGetIndexBar(value: () => js.Any): Self = StObject.set(x, "getIndexBar", js.Any.fromFunction0(value))
+      inline def setGetIndexBar(value: () => Any): Self = StObject.set(x, "getIndexBar", js.Any.fromFunction0(value))
       
       inline def setGetIndexBarUndefined: Self = StObject.set(x, "getIndexBar", js.undefined)
       
@@ -1317,7 +1317,7 @@ object dataview {
       
       inline def setGetMinimumBufferDistanceUndefined: Self = StObject.set(x, "getMinimumBufferDistance", js.undefined)
       
-      inline def setGetOnItemDisclosure(value: () => js.Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
+      inline def setGetOnItemDisclosure(value: () => Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
       
       inline def setGetOnItemDisclosureUndefined: Self = StObject.set(x, "getOnItemDisclosure", js.undefined)
       
@@ -1357,7 +1357,7 @@ object dataview {
       
       inline def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
       
-      inline def setIndexBar(value: js.Any): Self = StObject.set(x, "indexBar", value.asInstanceOf[js.Any])
+      inline def setIndexBar(value: Any): Self = StObject.set(x, "indexBar", value.asInstanceOf[js.Any])
       
       inline def setIndexBarUndefined: Self = StObject.set(x, "indexBar", js.undefined)
       
@@ -1369,7 +1369,7 @@ object dataview {
       
       inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
       
-      inline def setOnItemDisclosure(value: js.Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
+      inline def setOnItemDisclosure(value: Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
       
       inline def setOnItemDisclosureUndefined: Self = StObject.set(x, "onItemDisclosure", js.undefined)
       
@@ -1386,7 +1386,7 @@ object dataview {
       inline def setRefreshHeightOnUpdateUndefined: Self = StObject.set(x, "refreshHeightOnUpdate", js.undefined)
       
       inline def setScrollToRecord(
-        value: (/* record */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], /* overscroll */ js.UndefOr[js.Any]) => Unit
+        value: (/* record */ js.UndefOr[Any], /* animate */ js.UndefOr[Any], /* overscroll */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "scrollToRecord", js.Any.fromFunction3(value))
       
       inline def setScrollToRecordUndefined: Self = StObject.set(x, "scrollToRecord", js.undefined)
@@ -1399,11 +1399,11 @@ object dataview {
       
       inline def setSetGroupedUndefined: Self = StObject.set(x, "setGrouped", js.undefined)
       
-      inline def setSetIcon(value: /* icon */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
+      inline def setSetIcon(value: /* icon */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
       
       inline def setSetIconUndefined: Self = StObject.set(x, "setIcon", js.undefined)
       
-      inline def setSetIndexBar(value: /* indexBar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIndexBar", js.Any.fromFunction1(value))
+      inline def setSetIndexBar(value: /* indexBar */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setIndexBar", js.Any.fromFunction1(value))
       
       inline def setSetIndexBarUndefined: Self = StObject.set(x, "setIndexBar", js.undefined)
       
@@ -1419,7 +1419,7 @@ object dataview {
       
       inline def setSetMinimumBufferDistanceUndefined: Self = StObject.set(x, "setMinimumBufferDistance", js.undefined)
       
-      inline def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
+      inline def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
       
       inline def setSetOnItemDisclosureUndefined: Self = StObject.set(x, "setOnItemDisclosure", js.undefined)
       
@@ -1484,7 +1484,7 @@ object dataview {
     var allowDeselect: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var backButton: js.UndefOr[js.Any] = js.undefined
+    var backButton: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var backText: js.UndefOr[java.lang.String] = js.undefined
@@ -1512,7 +1512,7 @@ object dataview {
     /** [Method] Returns the value of backButton
       * @returns Object
       */
-    var getBackButton: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getBackButton: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of backText
       * @returns String
@@ -1558,7 +1558,7 @@ object dataview {
     /** [Method] Returns the value of listConfig
       * @returns Object
       */
-    var getListConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getListConfig: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of loadingText
       * @returns String
@@ -1568,12 +1568,12 @@ object dataview {
     /** [Method] Returns the value of onItemDisclosure
       * @returns Boolean/Function
       */
-    var getOnItemDisclosure: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getOnItemDisclosure: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of store
       * @returns Ext.data.TreeStore/String
       */
-    var getStore: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getStore: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the subList for a specified node  */
     var getSubList: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -1592,7 +1592,7 @@ object dataview {
     /** [Method] Returns the value of toolbar
       * @returns Ext.Toolbar/Object/Boolean
       */
-    var getToolbar: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getToolbar: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of updateTitleText
       * @returns Boolean
@@ -1633,7 +1633,7 @@ object dataview {
     var itemHeight: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var listConfig: js.UndefOr[js.Any] = js.undefined
+    var listConfig: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var loadingText: js.UndefOr[java.lang.String] = js.undefined
@@ -1642,7 +1642,7 @@ object dataview {
     var onBackTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean/Function) */
-    var onItemDisclosure: js.UndefOr[js.Any] = js.undefined
+    var onItemDisclosure: js.UndefOr[Any] = js.undefined
     
     /** [Method] Called when an list item has been tapped
       * @param list Ext.List The subList the item is on.
@@ -1670,7 +1670,7 @@ object dataview {
     /** [Method] Sets the value of backButton
       * @param backButton Object The new value.
       */
-    var setBackButton: js.UndefOr[js.Function1[/* backButton */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setBackButton: js.UndefOr[js.Function1[/* backButton */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of backText
       * @param backText String The new value.
@@ -1710,7 +1710,7 @@ object dataview {
     /** [Method] Sets the value of listConfig
       * @param listConfig Object The new value.
       */
-    var setListConfig: js.UndefOr[js.Function1[/* listConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setListConfig: js.UndefOr[js.Function1[/* listConfig */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of loadingText
       * @param loadingText String The new value.
@@ -1720,12 +1720,12 @@ object dataview {
     /** [Method] Sets the value of onItemDisclosure
       * @param onItemDisclosure Boolean/Function The new value.
       */
-    var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setOnItemDisclosure: js.UndefOr[js.Function1[/* onItemDisclosure */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of store
       * @param store Ext.data.TreeStore/String The new value.
       */
-    var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of title
       * @param title String The new value.
@@ -1735,13 +1735,13 @@ object dataview {
     /** [Method] Sets the value of toolbar
       * @param toolbar Ext.Toolbar/Object/Boolean The new value.
       */
-    var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setToolbar: js.UndefOr[js.Function1[/* toolbar */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of ui
       * @param ui Object The new value.
       */
     @JSName("setUi")
-    var setUi_INestedList: js.UndefOr[js.Function1[/* ui */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setUi_INestedList: js.UndefOr[js.Function1[/* ui */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of updateTitleText
       * @param updateTitleText Boolean The new value.
@@ -1769,13 +1769,13 @@ object dataview {
     var setVariableHeights: js.UndefOr[js.Function1[/* variableHeights */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Config Option] (Ext.data.TreeStore/String) */
-    var store: js.UndefOr[js.Any] = js.undefined
+    var store: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var title: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Ext.Toolbar/Object/Boolean) */
-    var toolbar: js.UndefOr[js.Any] = js.undefined
+    var toolbar: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var updateTitleText: js.UndefOr[Boolean] = js.undefined
@@ -1805,7 +1805,7 @@ object dataview {
       
       inline def setAllowDeselectUndefined: Self = StObject.set(x, "allowDeselect", js.undefined)
       
-      inline def setBackButton(value: js.Any): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
+      inline def setBackButton(value: Any): Self = StObject.set(x, "backButton", value.asInstanceOf[js.Any])
       
       inline def setBackButtonUndefined: Self = StObject.set(x, "backButton", js.undefined)
       
@@ -1837,7 +1837,7 @@ object dataview {
       
       inline def setGetAllowDeselectUndefined: Self = StObject.set(x, "getAllowDeselect", js.undefined)
       
-      inline def setGetBackButton(value: () => js.Any): Self = StObject.set(x, "getBackButton", js.Any.fromFunction0(value))
+      inline def setGetBackButton(value: () => Any): Self = StObject.set(x, "getBackButton", js.Any.fromFunction0(value))
       
       inline def setGetBackButtonUndefined: Self = StObject.set(x, "getBackButton", js.undefined)
       
@@ -1873,7 +1873,7 @@ object dataview {
       
       inline def setGetItemTextTplUndefined: Self = StObject.set(x, "getItemTextTpl", js.undefined)
       
-      inline def setGetListConfig(value: () => js.Any): Self = StObject.set(x, "getListConfig", js.Any.fromFunction0(value))
+      inline def setGetListConfig(value: () => Any): Self = StObject.set(x, "getListConfig", js.Any.fromFunction0(value))
       
       inline def setGetListConfigUndefined: Self = StObject.set(x, "getListConfig", js.undefined)
       
@@ -1881,11 +1881,11 @@ object dataview {
       
       inline def setGetLoadingTextUndefined: Self = StObject.set(x, "getLoadingText", js.undefined)
       
-      inline def setGetOnItemDisclosure(value: () => js.Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
+      inline def setGetOnItemDisclosure(value: () => Any): Self = StObject.set(x, "getOnItemDisclosure", js.Any.fromFunction0(value))
       
       inline def setGetOnItemDisclosureUndefined: Self = StObject.set(x, "getOnItemDisclosure", js.undefined)
       
-      inline def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+      inline def setGetStore(value: () => Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
       
       inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
       
@@ -1901,7 +1901,7 @@ object dataview {
       
       inline def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
       
-      inline def setGetToolbar(value: () => js.Any): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
+      inline def setGetToolbar(value: () => Any): Self = StObject.set(x, "getToolbar", js.Any.fromFunction0(value))
       
       inline def setGetToolbarUndefined: Self = StObject.set(x, "getToolbar", js.undefined)
       
@@ -1937,7 +1937,7 @@ object dataview {
       
       inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
       
-      inline def setListConfig(value: js.Any): Self = StObject.set(x, "listConfig", value.asInstanceOf[js.Any])
+      inline def setListConfig(value: Any): Self = StObject.set(x, "listConfig", value.asInstanceOf[js.Any])
       
       inline def setListConfigUndefined: Self = StObject.set(x, "listConfig", js.undefined)
       
@@ -1949,7 +1949,7 @@ object dataview {
       
       inline def setOnBackTapUndefined: Self = StObject.set(x, "onBackTap", js.undefined)
       
-      inline def setOnItemDisclosure(value: js.Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
+      inline def setOnItemDisclosure(value: Any): Self = StObject.set(x, "onItemDisclosure", value.asInstanceOf[js.Any])
       
       inline def setOnItemDisclosureUndefined: Self = StObject.set(x, "onItemDisclosure", js.undefined)
       
@@ -1963,7 +1963,7 @@ object dataview {
       
       inline def setSetAllowDeselectUndefined: Self = StObject.set(x, "setAllowDeselect", js.undefined)
       
-      inline def setSetBackButton(value: /* backButton */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackButton", js.Any.fromFunction1(value))
+      inline def setSetBackButton(value: /* backButton */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBackButton", js.Any.fromFunction1(value))
       
       inline def setSetBackButtonUndefined: Self = StObject.set(x, "setBackButton", js.undefined)
       
@@ -1995,7 +1995,7 @@ object dataview {
       
       inline def setSetItemHeightUndefined: Self = StObject.set(x, "setItemHeight", js.undefined)
       
-      inline def setSetListConfig(value: /* listConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setListConfig", js.Any.fromFunction1(value))
+      inline def setSetListConfig(value: /* listConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setListConfig", js.Any.fromFunction1(value))
       
       inline def setSetListConfigUndefined: Self = StObject.set(x, "setListConfig", js.undefined)
       
@@ -2003,11 +2003,11 @@ object dataview {
       
       inline def setSetLoadingTextUndefined: Self = StObject.set(x, "setLoadingText", js.undefined)
       
-      inline def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
+      inline def setSetOnItemDisclosure(value: /* onItemDisclosure */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setOnItemDisclosure", js.Any.fromFunction1(value))
       
       inline def setSetOnItemDisclosureUndefined: Self = StObject.set(x, "setOnItemDisclosure", js.undefined)
       
-      inline def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
+      inline def setSetStore(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
       
       inline def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
       
@@ -2015,11 +2015,11 @@ object dataview {
       
       inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
       
-      inline def setSetToolbar(value: /* toolbar */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setToolbar", js.Any.fromFunction1(value))
+      inline def setSetToolbar(value: /* toolbar */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setToolbar", js.Any.fromFunction1(value))
       
       inline def setSetToolbarUndefined: Self = StObject.set(x, "setToolbar", js.undefined)
       
-      inline def setSetUi(value: /* ui */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUi", js.Any.fromFunction1(value))
+      inline def setSetUi(value: /* ui */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setUi", js.Any.fromFunction1(value))
       
       inline def setSetUiUndefined: Self = StObject.set(x, "setUi", js.undefined)
       
@@ -2043,7 +2043,7 @@ object dataview {
       
       inline def setSetVariableHeightsUndefined: Self = StObject.set(x, "setVariableHeights", js.undefined)
       
-      inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
       inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
@@ -2051,7 +2051,7 @@ object dataview {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setToolbar(value: js.Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+      inline def setToolbar(value: Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       
       inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
       
@@ -2095,12 +2095,12 @@ object dataview {
          with typings.senchaTouch.Ext.IContainer {
       
       /** [Config Option] (Object) */
-      var dataMap: js.UndefOr[js.Any] = js.undefined
+      var dataMap: js.UndefOr[Any] = js.undefined
       
       /** [Method] Returns the value of dataMap
         * @returns Object
         */
-      var getDataMap: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getDataMap: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of itemCls
         * @returns String
@@ -2119,7 +2119,7 @@ object dataview {
       /** [Method] Sets the value of dataMap
         * @param dataMap Object The new value.
         */
-      var setDataMap: js.UndefOr[js.Function1[/* dataMap */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setDataMap: js.UndefOr[js.Function1[/* dataMap */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of itemCls
         * @param itemCls String The new value.
@@ -2147,11 +2147,11 @@ object dataview {
       
       extension [Self <: IDataItem](x: Self) {
         
-        inline def setDataMap(value: js.Any): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
+        inline def setDataMap(value: Any): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
         
         inline def setDataMapUndefined: Self = StObject.set(x, "dataMap", js.undefined)
         
-        inline def setGetDataMap(value: () => js.Any): Self = StObject.set(x, "getDataMap", js.Any.fromFunction0(value))
+        inline def setGetDataMap(value: () => Any): Self = StObject.set(x, "getDataMap", js.Any.fromFunction0(value))
         
         inline def setGetDataMapUndefined: Self = StObject.set(x, "getDataMap", js.undefined)
         
@@ -2167,7 +2167,7 @@ object dataview {
         
         inline def setItemClsUndefined: Self = StObject.set(x, "itemCls", js.undefined)
         
-        inline def setSetDataMap(value: /* dataMap */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDataMap", js.Any.fromFunction1(value))
+        inline def setSetDataMap(value: /* dataMap */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDataMap", js.Any.fromFunction1(value))
         
         inline def setSetDataMapUndefined: Self = StObject.set(x, "setDataMap", js.undefined)
         
@@ -2192,32 +2192,32 @@ object dataview {
       /** [Method] Returns the value of body
         * @returns Object
         */
-      var getBody: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getBody: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of disclosure
         * @returns Object
         */
-      var getDisclosure: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getDisclosure: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of header
         * @returns Object
         */
-      var getHeader: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getHeader: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Sets the value of body
         * @param body Object The new value.
         */
-      var setBody: js.UndefOr[js.Function1[/* body */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setBody: js.UndefOr[js.Function1[/* body */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of disclosure
         * @param disclosure Object The new value.
         */
-      var setDisclosure: js.UndefOr[js.Function1[/* disclosure */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setDisclosure: js.UndefOr[js.Function1[/* disclosure */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of header
         * @param header Object The new value.
         */
-      var setHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[Any], Unit]] = js.undefined
     }
     object IListItem {
       
@@ -2228,27 +2228,27 @@ object dataview {
       
       extension [Self <: IListItem](x: Self) {
         
-        inline def setGetBody(value: () => js.Any): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
+        inline def setGetBody(value: () => Any): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
         
         inline def setGetBodyUndefined: Self = StObject.set(x, "getBody", js.undefined)
         
-        inline def setGetDisclosure(value: () => js.Any): Self = StObject.set(x, "getDisclosure", js.Any.fromFunction0(value))
+        inline def setGetDisclosure(value: () => Any): Self = StObject.set(x, "getDisclosure", js.Any.fromFunction0(value))
         
         inline def setGetDisclosureUndefined: Self = StObject.set(x, "getDisclosure", js.undefined)
         
-        inline def setGetHeader(value: () => js.Any): Self = StObject.set(x, "getHeader", js.Any.fromFunction0(value))
+        inline def setGetHeader(value: () => Any): Self = StObject.set(x, "getHeader", js.Any.fromFunction0(value))
         
         inline def setGetHeaderUndefined: Self = StObject.set(x, "getHeader", js.undefined)
         
-        inline def setSetBody(value: /* body */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
+        inline def setSetBody(value: /* body */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
         
         inline def setSetBodyUndefined: Self = StObject.set(x, "setBody", js.undefined)
         
-        inline def setSetDisclosure(value: /* disclosure */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDisclosure", js.Any.fromFunction1(value))
+        inline def setSetDisclosure(value: /* disclosure */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDisclosure", js.Any.fromFunction1(value))
         
         inline def setSetDisclosureUndefined: Self = StObject.set(x, "setDisclosure", js.undefined)
         
-        inline def setSetHeader(value: /* header */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
+        inline def setSetHeader(value: /* header */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
         
         inline def setSetHeaderUndefined: Self = StObject.set(x, "setHeader", js.undefined)
       }
@@ -2261,22 +2261,22 @@ object dataview {
       /** [Method] Returns the value of disclosure
         * @returns Object
         */
-      var getDisclosure: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getDisclosure: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of header
         * @returns Object
         */
-      var getHeader: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getHeader: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Sets the value of disclosure
         * @param disclosure Object The new value.
         */
-      var setDisclosure: js.UndefOr[js.Function1[/* disclosure */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setDisclosure: js.UndefOr[js.Function1[/* disclosure */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of header
         * @param header Object The new value.
         */
-      var setHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[Any], Unit]] = js.undefined
     }
     object ISimpleListItem {
       
@@ -2287,19 +2287,19 @@ object dataview {
       
       extension [Self <: ISimpleListItem](x: Self) {
         
-        inline def setGetDisclosure(value: () => js.Any): Self = StObject.set(x, "getDisclosure", js.Any.fromFunction0(value))
+        inline def setGetDisclosure(value: () => Any): Self = StObject.set(x, "getDisclosure", js.Any.fromFunction0(value))
         
         inline def setGetDisclosureUndefined: Self = StObject.set(x, "getDisclosure", js.undefined)
         
-        inline def setGetHeader(value: () => js.Any): Self = StObject.set(x, "getHeader", js.Any.fromFunction0(value))
+        inline def setGetHeader(value: () => Any): Self = StObject.set(x, "getHeader", js.Any.fromFunction0(value))
         
         inline def setGetHeaderUndefined: Self = StObject.set(x, "getHeader", js.undefined)
         
-        inline def setSetDisclosure(value: /* disclosure */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDisclosure", js.Any.fromFunction1(value))
+        inline def setSetDisclosure(value: /* disclosure */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDisclosure", js.Any.fromFunction1(value))
         
         inline def setSetDisclosureUndefined: Self = StObject.set(x, "setDisclosure", js.undefined)
         
-        inline def setSetHeader(value: /* header */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
+        inline def setSetHeader(value: /* header */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
         
         inline def setSetHeaderUndefined: Self = StObject.set(x, "setHeader", js.undefined)
       }

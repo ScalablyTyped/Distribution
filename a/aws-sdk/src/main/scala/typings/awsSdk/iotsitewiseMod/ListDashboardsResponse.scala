@@ -27,7 +27,7 @@ object ListDashboardsResponse {
     
     inline def setDashboardSummaries(value: DashboardSummaries): Self = StObject.set(x, "dashboardSummaries", value.asInstanceOf[js.Any])
     
-    inline def setDashboardSummariesVarargs(value: DashboardSummary*): Self = StObject.set(x, "dashboardSummaries", js.Array(value :_*))
+    inline def setDashboardSummariesVarargs(value: DashboardSummary*): Self = StObject.set(x, "dashboardSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

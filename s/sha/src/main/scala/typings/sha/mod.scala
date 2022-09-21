@@ -1,7 +1,6 @@
 package typings.sha
 
 import typings.node.streamMod.Transform
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +26,9 @@ object mod {
   inline def stream(expected: String): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(expected.asInstanceOf[js.Any]).asInstanceOf[Transform]
   inline def stream(expected: String, options: ShaOptions): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
-  type CheckCallback[R] = js.Function1[/* err */ Error | Null, R]
+  type CheckCallback[R] = js.Function1[/* err */ js.Error | Null, R]
   
-  type GetCallback = js.Function2[/* err */ Error | Null, /* actual */ String, Unit]
+  type GetCallback = js.Function2[/* err */ js.Error | Null, /* actual */ String, Unit]
   
   trait ShaOptions extends StObject {
     

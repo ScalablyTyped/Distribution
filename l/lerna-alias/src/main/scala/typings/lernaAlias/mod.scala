@@ -67,7 +67,7 @@ object mod {
       
       inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
       
-      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value*))
       
       inline def setSourceDirectory(value: String | `false`): Self = StObject.set(x, "sourceDirectory", value.asInstanceOf[js.Any])
       

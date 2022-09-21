@@ -15,6 +15,8 @@ trait IfBranchNode
   
   var condition: js.UndefOr[ExpressionNode] = js.undefined
   
+  var isTemplateIf: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("type")
   var type_IfBranchNode: `10`
   
@@ -32,11 +34,15 @@ object IfBranchNode {
     
     inline def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setCondition(value: ExpressionNode): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    
+    inline def setIsTemplateIf(value: Boolean): Self = StObject.set(x, "isTemplateIf", value.asInstanceOf[js.Any])
+    
+    inline def setIsTemplateIfUndefined: Self = StObject.set(x, "isTemplateIf", js.undefined)
     
     inline def setType(value: `10`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

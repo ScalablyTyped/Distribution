@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "process-warning" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "process-warning" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

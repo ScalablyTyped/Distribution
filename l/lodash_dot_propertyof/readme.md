@@ -10,10 +10,10 @@ The lodash method `_.propertyOf` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.propertyof |
 | Keywords           | lodash-modularized, propertyof |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 18707 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1650.3333333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

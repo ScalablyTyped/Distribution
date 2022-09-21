@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UniformOptions
   extends StObject
      with UniformCoreOptions
-     with /* option */ StringDictionary[js.Any]
+     with /* option */ StringDictionary[Any]
 object UniformOptions {
   
   inline def apply(): UniformOptions = {

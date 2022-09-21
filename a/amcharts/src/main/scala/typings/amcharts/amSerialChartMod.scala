@@ -1,6 +1,5 @@
 package typings.amcharts
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object amSerialChartMod {
   
   @JSImport("amcharts/AmSerialChart", JSImport.Default)
   @js.native
-  class default () extends AmSerialChart
+  open class default () extends AmSerialChart
   
   @js.native
   trait AmSerialChart
@@ -55,7 +54,7 @@ object amSerialChartMod {
     /**
       * Read-only. If category axis parses dates endDate indicates date to which the chart is currently displayed.
       */
-    var endDate: Date = js.native
+    var endDate: js.Date = js.native
     
     /**
       * Read-only. Category index to which the chart is currently displayed.
@@ -106,7 +105,7 @@ object amSerialChartMod {
       * Read-only.
       * If category axis parses dates startDate indicates date from which the chart is currently displayed.
       */
-    var startDate: Date = js.native
+    var startDate: js.Date = js.native
     
     /**
       * Read-only. Category index from which the chart is currently displayed.
@@ -127,16 +126,16 @@ object amSerialChartMod {
     /**
       * Zooms the chart by the value of the category axis.
       */
-    def zoomToCategoryValues(start: Date, end: Date): Unit = js.native
+    def zoomToCategoryValues(start: js.Date, end: js.Date): Unit = js.native
     
     /**
       * Zooms the chart from one date to another.
       */
-    def zoomToDates(start: Date, end: Date): Unit = js.native
+    def zoomToDates(start: js.Date, end: js.Date): Unit = js.native
     
     /**
       * Zooms the chart by the index of the category.
       */
-    def zoomToIndexes(start: Date, end: Date): Unit = js.native
+    def zoomToIndexes(start: js.Date, end: js.Date): Unit = js.native
   }
 }

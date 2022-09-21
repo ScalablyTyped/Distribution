@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRatingControlItemMouseEventArgs")
 @js.native
-class ASPxClientRatingControlItemMouseEventArgs protected ()
+open class ASPxClientRatingControlItemMouseEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRatingControlItemMouseEventArgs {
   /**

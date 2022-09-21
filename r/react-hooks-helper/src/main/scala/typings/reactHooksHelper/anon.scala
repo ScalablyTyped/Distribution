@@ -15,11 +15,11 @@ object anon {
     var `type`: js.UndefOr[String] = js.undefined
     
     // object property name or Dot separated when hierarchical
-    var value: js.Any
+    var value: Any
   }
   object Checked {
     
-    inline def apply(name: String, value: js.Any): Checked = {
+    inline def apply(name: String, value: Any): Checked = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Checked]
     }
@@ -36,7 +36,7 @@ object anon {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

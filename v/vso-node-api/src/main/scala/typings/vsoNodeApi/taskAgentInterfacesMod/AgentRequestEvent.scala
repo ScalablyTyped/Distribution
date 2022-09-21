@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait AgentRequestEvent extends StObject {
   
   var result: TaskResult
   
-  var timeStamp: Date
+  var timeStamp: js.Date
 }
 object AgentRequestEvent {
   
@@ -27,7 +26,7 @@ object AgentRequestEvent {
     poolId: Double,
     reservedAgentId: Double,
     result: TaskResult,
-    timeStamp: Date
+    timeStamp: js.Date
   ): AgentRequestEvent = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], planId = planId.asInstanceOf[js.Any], poolId = poolId.asInstanceOf[js.Any], reservedAgentId = reservedAgentId.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentRequestEvent]
@@ -45,6 +44,6 @@ object AgentRequestEvent {
     
     inline def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: js.Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

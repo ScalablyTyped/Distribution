@@ -22,7 +22,7 @@ object NavigationParam {
     
     inline def setRouter(value: js.Array[NavigationRoute]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     
-    inline def setRouterVarargs(value: NavigationRoute*): Self = StObject.set(x, "router", js.Array(value :_*))
+    inline def setRouterVarargs(value: NavigationRoute*): Self = StObject.set(x, "router", js.Array(value*))
     
     inline def setScreenOptions(value: ScreenOptions): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
     

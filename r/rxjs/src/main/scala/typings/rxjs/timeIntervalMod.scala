@@ -1,20 +1,23 @@
 package typings.rxjs
 
-import typings.rxjs.typesMod.OperatorFunction
-import typings.rxjs.typesMod.SchedulerLike
+import typings.rxjs.internalTypesMod.OperatorFunction
+import typings.rxjs.internalTypesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeIntervalMod {
   
-  @JSImport("rxjs/internal/operators/timeInterval", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/operators/timeInterval", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("rxjs/internal/operators/timeInterval", "TimeInterval")
+  @JSImport("rxjs/dist/types/internal/operators/timeInterval", "TimeInterval")
   @js.native
-  class TimeInterval_[T] protected () extends StObject {
+  open class TimeInterval_[T] protected () extends StObject {
+    /**
+      * @deprecated Internal implementation detail, do not construct directly. Will be made an interface in v8.
+      */
     def this(value: T, interval: Double) = this()
     
     var interval: Double = js.native

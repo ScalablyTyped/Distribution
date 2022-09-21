@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "OConnection")
 @js.native
-class OConnection () extends StObject
+open class OConnection () extends StObject

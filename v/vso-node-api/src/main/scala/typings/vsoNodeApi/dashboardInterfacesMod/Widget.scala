@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Widget extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Refers to the allowed sizes for the widget. This gets populated when user wants to configure the widget
@@ -63,7 +63,7 @@ trait Widget extends StObject {
 object Widget {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     allowedSizes: js.Array[WidgetSize],
     artifactId: String,
     configurationContributionId: String,
@@ -93,7 +93,7 @@ object Widget {
     
     inline def setAllowedSizes(value: js.Array[WidgetSize]): Self = StObject.set(x, "allowedSizes", value.asInstanceOf[js.Any])
     
-    inline def setAllowedSizesVarargs(value: WidgetSize*): Self = StObject.set(x, "allowedSizes", js.Array(value :_*))
+    inline def setAllowedSizesVarargs(value: WidgetSize*): Self = StObject.set(x, "allowedSizes", js.Array(value*))
     
     inline def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
     
@@ -133,6 +133,6 @@ object Widget {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

@@ -21,10 +21,10 @@ object GetEndpointsResult {
     
     inline def setAddresses(value: js.Array[Endpoint]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    inline def setAddressesVarargs(value: Endpoint*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: Endpoint*): Self = StObject.set(x, "addresses", js.Array(value*))
     
     inline def setEndpoints(value: js.Array[Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
   }
 }

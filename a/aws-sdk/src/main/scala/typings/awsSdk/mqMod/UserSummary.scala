@@ -14,12 +14,12 @@ trait UserSummary extends StObject {
   /**
     * Required. The username of the broker user. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Username: js.UndefOr[string] = js.undefined
+  var Username: string
 }
 object UserSummary {
   
-  inline def apply(): UserSummary = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(Username: string): UserSummary = {
+    val __obj = js.Dynamic.literal(Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserSummary]
   }
   
@@ -30,7 +30,5 @@ object UserSummary {
     inline def setPendingChangeUndefined: Self = StObject.set(x, "PendingChange", js.undefined)
     
     inline def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
-    
-    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

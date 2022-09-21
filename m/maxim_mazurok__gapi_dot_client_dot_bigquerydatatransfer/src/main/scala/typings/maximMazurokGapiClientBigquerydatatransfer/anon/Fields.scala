@@ -95,7 +95,7 @@ object Fields {
     
     inline def setMessageTypesUndefined: Self = StObject.set(x, "messageTypes", js.undefined)
     
-    inline def setMessageTypesVarargs(value: String*): Self = StObject.set(x, "messageTypes", js.Array(value :_*))
+    inline def setMessageTypesVarargs(value: String*): Self = StObject.set(x, "messageTypes", js.Array(value*))
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     

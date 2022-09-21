@@ -17,11 +17,11 @@ trait Annotation extends StObject {
   
   var community: Boolean
   
-  var cosigned_by: js.Array[js.Any]
+  var cosigned_by: js.Array[Any]
   
   var current_user_metadata: Interactions
   
-  var custom_preview: js.UndefOr[js.Any] = js.undefined
+  var custom_preview: js.UndefOr[Any] = js.undefined
   
   var has_voters: Boolean
   
@@ -29,11 +29,11 @@ trait Annotation extends StObject {
   
   var pinned: Boolean
   
-  var rejection_comment: js.UndefOr[js.Any] = js.undefined
+  var rejection_comment: js.UndefOr[Any] = js.undefined
   
   var share_url: String
   
-  var source: js.UndefOr[js.Any] = js.undefined
+  var source: js.UndefOr[Any] = js.undefined
   
   var state: String
   
@@ -41,7 +41,7 @@ trait Annotation extends StObject {
   
   var verified: Boolean
   
-  var verified_by: js.UndefOr[js.Any] = js.undefined
+  var verified_by: js.UndefOr[Any] = js.undefined
   
   var votes_total: Double
 }
@@ -53,7 +53,7 @@ object Annotation {
     body: Description,
     comment_count: Double,
     community: Boolean,
-    cosigned_by: js.Array[js.Any],
+    cosigned_by: js.Array[Any],
     current_user_metadata: Interactions,
     has_voters: Boolean,
     id: Double,
@@ -74,7 +74,7 @@ object Annotation {
     
     inline def setAuthors(value: js.Array[Author]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     
-    inline def setAuthorsVarargs(value: Author*): Self = StObject.set(x, "authors", js.Array(value :_*))
+    inline def setAuthorsVarargs(value: Author*): Self = StObject.set(x, "authors", js.Array(value*))
     
     inline def setBody(value: Description): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
@@ -82,13 +82,13 @@ object Annotation {
     
     inline def setCommunity(value: Boolean): Self = StObject.set(x, "community", value.asInstanceOf[js.Any])
     
-    inline def setCosigned_by(value: js.Array[js.Any]): Self = StObject.set(x, "cosigned_by", value.asInstanceOf[js.Any])
+    inline def setCosigned_by(value: js.Array[Any]): Self = StObject.set(x, "cosigned_by", value.asInstanceOf[js.Any])
     
-    inline def setCosigned_byVarargs(value: js.Any*): Self = StObject.set(x, "cosigned_by", js.Array(value :_*))
+    inline def setCosigned_byVarargs(value: Any*): Self = StObject.set(x, "cosigned_by", js.Array(value*))
     
     inline def setCurrent_user_metadata(value: Interactions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
     
-    inline def setCustom_preview(value: js.Any): Self = StObject.set(x, "custom_preview", value.asInstanceOf[js.Any])
+    inline def setCustom_preview(value: Any): Self = StObject.set(x, "custom_preview", value.asInstanceOf[js.Any])
     
     inline def setCustom_previewUndefined: Self = StObject.set(x, "custom_preview", js.undefined)
     
@@ -98,13 +98,13 @@ object Annotation {
     
     inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
-    inline def setRejection_comment(value: js.Any): Self = StObject.set(x, "rejection_comment", value.asInstanceOf[js.Any])
+    inline def setRejection_comment(value: Any): Self = StObject.set(x, "rejection_comment", value.asInstanceOf[js.Any])
     
     inline def setRejection_commentUndefined: Self = StObject.set(x, "rejection_comment", js.undefined)
     
     inline def setShare_url(value: String): Self = StObject.set(x, "share_url", value.asInstanceOf[js.Any])
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
@@ -114,7 +114,7 @@ object Annotation {
     
     inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     
-    inline def setVerified_by(value: js.Any): Self = StObject.set(x, "verified_by", value.asInstanceOf[js.Any])
+    inline def setVerified_by(value: Any): Self = StObject.set(x, "verified_by", value.asInstanceOf[js.Any])
     
     inline def setVerified_byUndefined: Self = StObject.set(x, "verified_by", js.undefined)
     

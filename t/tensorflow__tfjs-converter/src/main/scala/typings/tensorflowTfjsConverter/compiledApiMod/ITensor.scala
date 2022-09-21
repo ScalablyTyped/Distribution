@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +28,10 @@ trait ITensor extends StObject {
   var scomplexVal: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** Tensor stringVal */
-  var stringVal: js.UndefOr[js.Array[Uint8Array] | Null] = js.undefined
+  var stringVal: js.UndefOr[js.Array[js.typedarray.Uint8Array] | Null] = js.undefined
   
   /** Tensor tensorContent */
-  var tensorContent: js.UndefOr[Uint8Array | Null] = js.undefined
+  var tensorContent: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   
   /** Tensor tensorShape */
   var tensorShape: js.UndefOr[ITensorShape | Null] = js.undefined
@@ -61,7 +60,7 @@ object ITensor {
     
     inline def setBoolValUndefined: Self = StObject.set(x, "boolVal", js.undefined)
     
-    inline def setBoolValVarargs(value: Boolean*): Self = StObject.set(x, "boolVal", js.Array(value :_*))
+    inline def setBoolValVarargs(value: Boolean*): Self = StObject.set(x, "boolVal", js.Array(value*))
     
     inline def setDoubleVal(value: js.Array[Double]): Self = StObject.set(x, "doubleVal", value.asInstanceOf[js.Any])
     
@@ -69,7 +68,7 @@ object ITensor {
     
     inline def setDoubleValUndefined: Self = StObject.set(x, "doubleVal", js.undefined)
     
-    inline def setDoubleValVarargs(value: Double*): Self = StObject.set(x, "doubleVal", js.Array(value :_*))
+    inline def setDoubleValVarargs(value: Double*): Self = StObject.set(x, "doubleVal", js.Array(value*))
     
     inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
@@ -83,7 +82,7 @@ object ITensor {
     
     inline def setFloatValUndefined: Self = StObject.set(x, "floatVal", js.undefined)
     
-    inline def setFloatValVarargs(value: Double*): Self = StObject.set(x, "floatVal", js.Array(value :_*))
+    inline def setFloatValVarargs(value: Double*): Self = StObject.set(x, "floatVal", js.Array(value*))
     
     inline def setInt64Val(value: js.Array[Double | String]): Self = StObject.set(x, "int64Val", value.asInstanceOf[js.Any])
     
@@ -91,7 +90,7 @@ object ITensor {
     
     inline def setInt64ValUndefined: Self = StObject.set(x, "int64Val", js.undefined)
     
-    inline def setInt64ValVarargs(value: (Double | String)*): Self = StObject.set(x, "int64Val", js.Array(value :_*))
+    inline def setInt64ValVarargs(value: (Double | String)*): Self = StObject.set(x, "int64Val", js.Array(value*))
     
     inline def setIntVal(value: js.Array[Double]): Self = StObject.set(x, "intVal", value.asInstanceOf[js.Any])
     
@@ -99,7 +98,7 @@ object ITensor {
     
     inline def setIntValUndefined: Self = StObject.set(x, "intVal", js.undefined)
     
-    inline def setIntValVarargs(value: Double*): Self = StObject.set(x, "intVal", js.Array(value :_*))
+    inline def setIntValVarargs(value: Double*): Self = StObject.set(x, "intVal", js.Array(value*))
     
     inline def setScomplexVal(value: js.Array[Double]): Self = StObject.set(x, "scomplexVal", value.asInstanceOf[js.Any])
     
@@ -107,17 +106,17 @@ object ITensor {
     
     inline def setScomplexValUndefined: Self = StObject.set(x, "scomplexVal", js.undefined)
     
-    inline def setScomplexValVarargs(value: Double*): Self = StObject.set(x, "scomplexVal", js.Array(value :_*))
+    inline def setScomplexValVarargs(value: Double*): Self = StObject.set(x, "scomplexVal", js.Array(value*))
     
-    inline def setStringVal(value: js.Array[Uint8Array]): Self = StObject.set(x, "stringVal", value.asInstanceOf[js.Any])
+    inline def setStringVal(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "stringVal", value.asInstanceOf[js.Any])
     
     inline def setStringValNull: Self = StObject.set(x, "stringVal", null)
     
     inline def setStringValUndefined: Self = StObject.set(x, "stringVal", js.undefined)
     
-    inline def setStringValVarargs(value: Uint8Array*): Self = StObject.set(x, "stringVal", js.Array(value :_*))
+    inline def setStringValVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "stringVal", js.Array(value*))
     
-    inline def setTensorContent(value: Uint8Array): Self = StObject.set(x, "tensorContent", value.asInstanceOf[js.Any])
+    inline def setTensorContent(value: js.typedarray.Uint8Array): Self = StObject.set(x, "tensorContent", value.asInstanceOf[js.Any])
     
     inline def setTensorContentNull: Self = StObject.set(x, "tensorContent", null)
     
@@ -135,7 +134,7 @@ object ITensor {
     
     inline def setUint32ValUndefined: Self = StObject.set(x, "uint32Val", js.undefined)
     
-    inline def setUint32ValVarargs(value: Double*): Self = StObject.set(x, "uint32Val", js.Array(value :_*))
+    inline def setUint32ValVarargs(value: Double*): Self = StObject.set(x, "uint32Val", js.Array(value*))
     
     inline def setUint64Val(value: js.Array[Double | String]): Self = StObject.set(x, "uint64Val", value.asInstanceOf[js.Any])
     
@@ -143,7 +142,7 @@ object ITensor {
     
     inline def setUint64ValUndefined: Self = StObject.set(x, "uint64Val", js.undefined)
     
-    inline def setUint64ValVarargs(value: (Double | String)*): Self = StObject.set(x, "uint64Val", js.Array(value :_*))
+    inline def setUint64ValVarargs(value: (Double | String)*): Self = StObject.set(x, "uint64Val", js.Array(value*))
     
     inline def setVersionNumber(value: Double): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
     

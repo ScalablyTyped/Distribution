@@ -12,7 +12,7 @@ trait Assistant extends StObject {
   
   var Animation: MsoAnimationType = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   var AssistWithAlerts: Boolean = js.native
   
@@ -68,7 +68,7 @@ trait Assistant extends StObject {
   
   var On: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Reduced: Boolean = js.native
   
@@ -83,7 +83,7 @@ trait Assistant extends StObject {
     Callback: String,
     PrivateX: Double,
     Animation: js.UndefOr[MsoAnimationType],
-    CustomTeaser: js.UndefOr[js.Any],
+    CustomTeaser: js.UndefOr[Any],
     Top: js.UndefOr[Double],
     Left: js.UndefOr[Double],
     Bottom: js.UndefOr[Double],

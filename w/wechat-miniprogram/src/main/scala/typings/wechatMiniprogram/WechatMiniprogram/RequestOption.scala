@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import typings.wechatMiniprogram.wechatMiniprogramStrings.CONNECT
 import typings.wechatMiniprogram.wechatMiniprogramStrings.DELETE
 import typings.wechatMiniprogram.wechatMiniprogramStrings.GET
@@ -17,13 +16,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestOption extends StObject {
+trait RequestOption[T /* <: String | IAnyObject | js.typedarray.ArrayBuffer */] extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[RequestCompleteCallback] = js.undefined
   
   /** 请求的参数 */
-  var data: js.UndefOr[String | IAnyObject | ArrayBuffer] = js.undefined
+  var data: js.UndefOr[String | IAnyObject | js.typedarray.ArrayBuffer] = js.undefined
   
   /** 返回的数据格式
     *
@@ -78,7 +77,7 @@ trait RequestOption extends StObject {
   var responseType: js.UndefOr[text | arraybuffer] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[RequestSuccessCallback] = js.undefined
+  var success: js.UndefOr[RequestSuccessCallback[T]] = js.undefined
   
   /** 超时时间，单位为毫秒
     *
@@ -90,18 +89,18 @@ trait RequestOption extends StObject {
 }
 object RequestOption {
   
-  inline def apply(url: String): RequestOption = {
+  inline def apply[T /* <: String | IAnyObject | js.typedarray.ArrayBuffer */](url: String): RequestOption[T] = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RequestOption]
+    __obj.asInstanceOf[RequestOption[T]]
   }
   
-  extension [Self <: RequestOption](x: Self) {
+  extension [Self <: RequestOption[?], T /* <: String | IAnyObject | js.typedarray.ArrayBuffer */](x: Self & RequestOption[T]) {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: String | IAnyObject | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | IAnyObject | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: json | 其他): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
@@ -137,7 +136,7 @@ object RequestOption {
     
     inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    inline def setSuccess(value: /* result */ RequestSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* result */ RequestSuccessCallbackResult[T] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     

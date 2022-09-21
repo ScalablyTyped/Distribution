@@ -17,12 +17,14 @@ object mod {
     
     var methods: js.Array[String]
     
+    var middlewares: js.Array[String]
+    
     var path: String
   }
   object Endpoint {
     
-    inline def apply(methods: js.Array[String], path: String): Endpoint = {
-      val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    inline def apply(methods: js.Array[String], middlewares: js.Array[String], path: String): Endpoint = {
+      val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any], middlewares = middlewares.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Endpoint]
     }
     
@@ -30,7 +32,11 @@ object mod {
       
       inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value*))
+      
+      inline def setMiddlewares(value: js.Array[String]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
+      
+      inline def setMiddlewaresVarargs(value: String*): Self = StObject.set(x, "middlewares", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }

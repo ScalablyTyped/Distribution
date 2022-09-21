@@ -1,7 +1,7 @@
 
 # Scala.js typings for dockerode
 
-Typings are for version 3.2
+Typings are for version 3.3
 
 ## Library description:
 Docker Remote API module.
@@ -10,10 +10,10 @@ Docker Remote API module.
 | ------------------ | :-------------: |
 | Full name          | dockerode |
 | Keywords           | docker, docker.io |
-| # releases         | 7 |
-| # dependents       | 525 |
-| # downloads        | 5006208 |
-| # stars            | 44 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1047760.3333333334 |
+| # stars            | 3611.0 |
 
 ## Links
 - [Homepage](https://github.com/apocas/dockerode#readme)

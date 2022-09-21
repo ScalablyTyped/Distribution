@@ -38,7 +38,7 @@ object typesListQueuesOutputMod {
       
       inline def setQueueUrlsUndefined: Self = StObject.set(x, "QueueUrls", js.undefined)
       
-      inline def setQueueUrlsVarargs(value: String*): Self = StObject.set(x, "QueueUrls", js.Array(value :_*))
+      inline def setQueueUrlsVarargs(value: String*): Self = StObject.set(x, "QueueUrls", js.Array(value*))
     }
   }
 }

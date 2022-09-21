@@ -27,9 +27,14 @@ trait UpdateResolverRequest extends StObject {
   var fieldName: ResourceName
   
   /**
-    * The resolver type.    UNIT: A UNIT resolver type. A UNIT resolver is the default resolver type. A UNIT resolver enables you to execute a GraphQL query against a single data source.    PIPELINE: A PIPELINE resolver type. A PIPELINE resolver enables you to execute a series of Function in a serial manner. You can use a pipeline resolver to execute a GraphQL query against multiple data sources.  
+    * The resolver type.    UNIT: A UNIT resolver type. A UNIT resolver is the default resolver type. You can use a UNIT resolver to run a GraphQL query against a single data source.    PIPELINE: A PIPELINE resolver type. You can use a PIPELINE resolver to invoke a series of Function objects in a serial manner. You can use a pipeline resolver to run a GraphQL query against multiple data sources.  
     */
   var kind: js.UndefOr[ResolverKind] = js.undefined
+  
+  /**
+    * The maximum batching size for a resolver.
+    */
+  var maxBatchSize: js.UndefOr[MaxBatchSize] = js.undefined
   
   /**
     * The PipelineConfig.
@@ -37,7 +42,7 @@ trait UpdateResolverRequest extends StObject {
   var pipelineConfig: js.UndefOr[PipelineConfig] = js.undefined
   
   /**
-    * The new request mapping template. A resolver uses a request mapping template to convert a GraphQL expression into a format that a data source can understand. Mapping templates are written in Apache Velocity Template Language (VTL). VTL request mapping templates are optional when using a Lambda data source. For all other data sources, VTL request and response mapping templates are required.
+    * The new request mapping template. A resolver uses a request mapping template to convert a GraphQL expression into a format that a data source can understand. Mapping templates are written in Apache Velocity Template Language (VTL). VTL request mapping templates are optional when using an Lambda data source. For all other data sources, VTL request and response mapping templates are required.
     */
   var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
@@ -47,7 +52,7 @@ trait UpdateResolverRequest extends StObject {
   var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
   /**
-    * The SyncConfig for a resolver attached to a versioned datasource.
+    * The SyncConfig for a resolver attached to a versioned data source.
     */
   var syncConfig: js.UndefOr[SyncConfig] = js.undefined
   
@@ -80,6 +85,10 @@ object UpdateResolverRequest {
     inline def setKind(value: ResolverKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setMaxBatchSize(value: MaxBatchSize): Self = StObject.set(x, "maxBatchSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxBatchSizeUndefined: Self = StObject.set(x, "maxBatchSize", js.undefined)
     
     inline def setPipelineConfig(value: PipelineConfig): Self = StObject.set(x, "pipelineConfig", value.asInstanceOf[js.Any])
     

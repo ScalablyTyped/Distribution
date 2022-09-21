@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object formFieldErrorFilledMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/FormFieldErrorFilled", JSImport.Default)
   @js.native
-  val default: SFC[FormFieldErrorFilledProps] = js.native
+  val default: FC[FormFieldErrorFilledProps] = js.native
   
   trait FormFieldErrorFilledProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object FormFieldErrorFilledProps {
     
@@ -29,14 +29,14 @@ object formFieldErrorFilledMod extends Shortcut {
     
     extension [Self <: FormFieldErrorFilledProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[FormFieldErrorFilledProps]
+  type _To = FC[FormFieldErrorFilledProps]
   
   /* This means you don't have to write `default`, but can instead just say `formFieldErrorFilledMod.foo` */
-  override def _to: SFC[FormFieldErrorFilledProps] = default
+  override def _to: FC[FormFieldErrorFilledProps] = default
 }

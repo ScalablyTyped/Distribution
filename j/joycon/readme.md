@@ -10,10 +10,10 @@ Load config with ease.
 | ------------------ | :-------------: |
 | Full name          | joycon |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 72 |
-| # downloads        | 12510790 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 8676181.333333334 |
+| # stars            | 113.0 |
 
 ## Links
 - [Homepage](https://github.com/egoist/joycon#readme)

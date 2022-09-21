@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.detailsListTypesMod
 
+import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnFilterIconProps
 import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnProps
 import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnStyleProps
 import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnStyles
@@ -42,7 +43,7 @@ trait IColumn extends StObject {
   var currentWidth: js.UndefOr[Double] = js.undefined
   
   /** Arbitrary data passthrough which can be used by the caller. */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * The field to pull the text value from for the column.
@@ -53,10 +54,18 @@ trait IColumn extends StObject {
   /** Accessible label for the status of this column when filtered. */
   var filterAriaLabel: js.UndefOr[String] = js.undefined
   
+  /**
+    * If specified, the width of the column is a portion of the available space equal to this value divided by the sum
+    * of all proportional column widths in the list. For example, if there is a list with two proportional columns that
+    * have widths of 1 and 3, they will respectively occupy (1/4) = 25% and (3/4) = 75% of the remaining space. Note that
+    * this relies on viewport measures and will not work well with skipViewportMeasures.
+    */
+  var flexGrow: js.UndefOr[Double] = js.undefined
+  
   /** Custom override for the parent list's `getCellValueKey`. */
   var getValueKey: js.UndefOr[
     js.Function3[
-      /* item */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
       /* index */ js.UndefOr[Double], 
       /* column */ js.UndefOr[this.type], 
       String
@@ -154,15 +163,21 @@ trait IColumn extends StObject {
   /** Custom renderer for cell content, instead of the default text rendering. */
   var onRender: js.UndefOr[
     js.Function3[
-      /* item */ js.UndefOr[js.Any], 
+      /* item */ js.UndefOr[Any], 
       /* index */ js.UndefOr[Double], 
       /* column */ js.UndefOr[this.type], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
   /** Custom renderer for column header divider. */
   var onRenderDivider: js.UndefOr[IRenderFunction[IDetailsColumnProps]] = js.undefined
+  
+  /** Custom renderer for filter icon. */
+  var onRenderFilterIcon: js.UndefOr[IRenderFunction[IDetailsColumnFilterIconProps]] = js.undefined
+  
+  /** Custom renderer for column header content, instead of the default text rendering. */
+  var onRenderHeader: js.UndefOr[IRenderFunction[IDetailsColumnProps]] = js.undefined
   
   /**
     * Accessible label for indicating that the list is sorted by this column in ascending order.
@@ -178,6 +193,14 @@ trait IColumn extends StObject {
   
   /** Custom overrides to the themed or default styles. */
   var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsColumnStyleProps, IDetailsColumnStyles]] = js.undefined
+  
+  /**
+    * If specified, the width of the column is a portion of the available space equal to this value divided by the sum
+    * of all proportional column widths in the list. For example, if there is a list with two proportional columns that
+    * have widths of 1 and 3, they will respectively occupy (1/4) = 25% and (2/4) = 75% of the remaining space. Note that
+    * this relies on viewport measures and will not work well with skipViewportMeasures.
+    */
+  var targetWidthProportion: js.UndefOr[Double] = js.undefined
 }
 object IColumn {
   
@@ -208,7 +231,7 @@ object IColumn {
     
     inline def setCurrentWidthUndefined: Self = StObject.set(x, "currentWidth", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -220,8 +243,12 @@ object IColumn {
     
     inline def setFilterAriaLabelUndefined: Self = StObject.set(x, "filterAriaLabel", js.undefined)
     
+    inline def setFlexGrow(value: Double): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
+    
+    inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
+    
     inline def setGetValueKey(
-      value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String
+      value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String
     ): Self = StObject.set(x, "getValueKey", js.Any.fromFunction3(value))
     
     inline def setGetValueKeyUndefined: Self = StObject.set(x, "getValueKey", js.undefined)
@@ -315,7 +342,7 @@ object IColumn {
     inline def setOnColumnResizeUndefined: Self = StObject.set(x, "onColumnResize", js.undefined)
     
     inline def setOnRender(
-      value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => js.Any
+      value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => Any
     ): Self = StObject.set(x, "onRender", js.Any.fromFunction3(value))
     
     inline def setOnRenderDivider(
@@ -323,6 +350,20 @@ object IColumn {
     ): Self = StObject.set(x, "onRenderDivider", js.Any.fromFunction2(value))
     
     inline def setOnRenderDividerUndefined: Self = StObject.set(x, "onRenderDivider", js.undefined)
+    
+    inline def setOnRenderFilterIcon(
+      value: (/* props */ js.UndefOr[IDetailsColumnFilterIconProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IDetailsColumnFilterIconProps], Element | Null]
+        ]) => Element | Null
+    ): Self = StObject.set(x, "onRenderFilterIcon", js.Any.fromFunction2(value))
+    
+    inline def setOnRenderFilterIconUndefined: Self = StObject.set(x, "onRenderFilterIcon", js.undefined)
+    
+    inline def setOnRenderHeader(
+      value: (/* props */ js.UndefOr[IDetailsColumnProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsColumnProps], Element | Null]]) => Element | Null
+    ): Self = StObject.set(x, "onRenderHeader", js.Any.fromFunction2(value))
+    
+    inline def setOnRenderHeaderUndefined: Self = StObject.set(x, "onRenderHeader", js.undefined)
     
     inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
@@ -339,5 +380,9 @@ object IColumn {
     inline def setStylesFunction1(value: IDetailsColumnStyleProps => DeepPartial[IDetailsColumnStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    
+    inline def setTargetWidthProportion(value: Double): Self = StObject.set(x, "targetWidthProportion", value.asInstanceOf[js.Any])
+    
+    inline def setTargetWidthProportionUndefined: Self = StObject.set(x, "targetWidthProportion", js.undefined)
   }
 }

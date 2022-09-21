@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DefsOptions extends StObject {
   
-  var arrow: js.UndefOr[DefsArrowOptions | SVGDefinitionObject] = js.undefined
+  var arrow: js.UndefOr[ASTNode | DefsArrowOptions] = js.undefined
   
-  var `reverse-arrow`: js.UndefOr[DefsReverseArrowOptions | SVGDefinitionObject] = js.undefined
+  var `reverse-arrow`: js.UndefOr[ASTNode | DefsReverseArrowOptions] = js.undefined
 }
 object DefsOptions {
   
@@ -19,11 +19,11 @@ object DefsOptions {
   
   extension [Self <: DefsOptions](x: Self) {
     
-    inline def setArrow(value: DefsArrowOptions | SVGDefinitionObject): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+    inline def setArrow(value: ASTNode | DefsArrowOptions): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
     inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
     
-    inline def `setReverse-arrow`(value: DefsReverseArrowOptions | SVGDefinitionObject): Self = StObject.set(x, "reverse-arrow", value.asInstanceOf[js.Any])
+    inline def `setReverse-arrow`(value: ASTNode | DefsReverseArrowOptions): Self = StObject.set(x, "reverse-arrow", value.asInstanceOf[js.Any])
     
     inline def `setReverse-arrowUndefined`: Self = StObject.set(x, "reverse-arrow", js.undefined)
   }

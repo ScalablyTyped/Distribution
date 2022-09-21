@@ -40,7 +40,7 @@ object anon {
   
   trait `1` extends StObject {
     
-    var ref: js.UndefOr[Exclude[js.Any, String]] = js.undefined
+    var ref: js.UndefOr[Exclude[Any, String]] = js.undefined
   }
   object `1` {
     
@@ -51,7 +51,7 @@ object anon {
     
     extension [Self <: `1`](x: Self) {
       
-      inline def setRef(value: Exclude[js.Any, String]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Exclude[Any, String]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
@@ -78,18 +78,18 @@ object anon {
     }
   }
   
-  trait Default[T /* <: ComponentType[js.Any] */] extends StObject {
+  trait Default[T /* <: ComponentType[Any] */] extends StObject {
     
     var default: T
   }
   object Default {
     
-    inline def apply[T /* <: ComponentType[js.Any] */](default: T): Default[T] = {
+    inline def apply[T /* <: ComponentType[Any] */](default: T): Default[T] = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default[T]]
     }
     
-    extension [Self <: Default[?], T /* <: ComponentType[js.Any] */](x: Self & Default[T]) {
+    extension [Self <: Default[?], T /* <: ComponentType[Any] */](x: Self & Default[T]) {
       
       inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
@@ -122,7 +122,7 @@ object anon {
   @js.native
   trait Fn0 extends StObject {
     
-    def apply[T /* <: Validator[js.Any] */](types: js.Array[T]): Requireable[NonNullable[InferType[T]]] = js.native
+    def apply[T /* <: Validator[Any] */](types: js.Array[T]): Requireable[NonNullable[InferType[T]]] = js.native
   }
   
   @js.native
@@ -131,26 +131,26 @@ object anon {
     def apply[T](`type`: Validator[T]): Requireable[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: T}
-      */ typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.Fn1 & TopLevel[js.Any]
+      */ typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.Fn1 & TopLevel[Any]
       ] = js.native
   }
   
   @js.native
   trait Fn2 extends StObject {
     
-    def apply[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[InferProps[P]] = js.native
+    def apply[P /* <: ValidationMap[Any] */](`type`: P): Requireable[InferProps[P]] = js.native
   }
   
   @js.native
   trait Fn3 extends StObject {
     
-    def apply[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[Required[InferProps[P]]] = js.native
+    def apply[P /* <: ValidationMap[Any] */](`type`: P): Requireable[Required[InferProps[P]]] = js.native
   }
   
   @js.native
   trait FnCall extends StObject {
     
-    def apply[T](expectedClass: Instantiable1[/* args (repeated) */ js.Any, T]): Requireable[T] = js.native
+    def apply[T](expectedClass: Instantiable1[/* args (repeated) */ Any, T]): Requireable[T] = js.native
   }
   
   @js.native
@@ -185,7 +185,7 @@ object anon {
   @js.native
   trait Instantiable
     extends StObject
-       with Instantiable1[/* props */ js.Any, Component[js.Any, js.Object, js.Any]]
+       with Instantiable1[/* props */ Any, Component[Any, js.Object, Any]]
   
   trait PropTypes extends StObject {
     

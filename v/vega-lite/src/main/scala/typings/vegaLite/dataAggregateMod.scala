@@ -14,7 +14,7 @@ object dataAggregateMod {
   
   @JSImport("vega-lite/build/src/compile/data/aggregate", "AggregateNode")
   @js.native
-  class AggregateNode protected () extends DataFlowNode {
+  open class AggregateNode protected () extends DataFlowNode {
     /**
       * @param dimensions string set for dimensions
       * @param measures dictionary mapping field name => dict of aggregation functions and names to use
@@ -25,11 +25,11 @@ object dataAggregateMod {
     
     def assemble(): AggregateTransform = js.native
     
-    /* private */ var dimensions: js.Any = js.native
+    /* private */ var dimensions: Any = js.native
     
     def groupBy: Set[String] = js.native
     
-    /* private */ var measures: js.Any = js.native
+    /* private */ var measures: Any = js.native
     
     def merge(other: AggregateNode): Boolean = js.native
   }

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudDatalabelingV1p1alpha1ExportDataOperationResponse extends StObject {
   
-  /** Output only. The name of annotated dataset in format "projects/∗/datasets/∗/annotatedDatasets/ *". */
+  /** Output only. The name of annotated dataset in format "projects/ *‍/datasets/ *‍/annotatedDatasets/ *". */
   var annotatedDataset: js.UndefOr[String] = js.undefined
   
-  /** Ouptut only. The name of dataset. "projects/∗/datasets/ *" */
+  /** Ouptut only. The name of dataset. "projects/ *‍/datasets/ *" */
   var dataset: js.UndefOr[String] = js.undefined
   
   /** Output only. Number of examples exported successfully. */

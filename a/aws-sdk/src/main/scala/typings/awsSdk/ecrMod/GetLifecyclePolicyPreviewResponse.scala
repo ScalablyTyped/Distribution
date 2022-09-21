@@ -62,7 +62,7 @@ object GetLifecyclePolicyPreviewResponse {
     
     inline def setPreviewResultsUndefined: Self = StObject.set(x, "previewResults", js.undefined)
     
-    inline def setPreviewResultsVarargs(value: LifecyclePolicyPreviewResult*): Self = StObject.set(x, "previewResults", js.Array(value :_*))
+    inline def setPreviewResultsVarargs(value: LifecyclePolicyPreviewResult*): Self = StObject.set(x, "previewResults", js.Array(value*))
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

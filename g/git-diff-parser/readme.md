@@ -10,15 +10,12 @@ A simple parser for Git diffs
 | ------------------ | :-------------: |
 | Full name          | git-diff-parser |
 | Keywords           | git, diff, patch, parse |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 12235 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3438.0 |
+| # stars            | 23.0 |
 
 ## Links
-- [Homepage](https://github.com/spookd/git-diff-parser)
-- [Bugs](https://github.com/spookd/git-diff-parser/issues)
-- [Repository](https://github.com/spookd/git-diff-parser)
 - [Npm](https://www.npmjs.com/package/git-diff-parser)
     
 

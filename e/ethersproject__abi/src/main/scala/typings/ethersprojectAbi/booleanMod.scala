@@ -10,7 +10,7 @@ object booleanMod {
   
   @JSImport("@ethersproject/abi/lib/coders/boolean", "BooleanCoder")
   @js.native
-  class BooleanCoder protected () extends Coder {
+  open class BooleanCoder protected () extends Coder {
     def this(localName: String) = this()
     
     def encode(writer: Writer, value: Boolean): Double = js.native

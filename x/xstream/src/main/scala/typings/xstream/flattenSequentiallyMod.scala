@@ -18,7 +18,7 @@ object flattenSequentiallyMod {
   
   @JSImport("xstream/extra/flattenSequentially", "FlattenSeqOperator")
   @js.native
-  class FlattenSeqOperator[T] protected ()
+  open class FlattenSeqOperator[T] protected ()
     extends StObject
        with Operator[Stream[T], T] {
     def this(ins: Stream[Stream[T]]) = this()
@@ -27,7 +27,7 @@ object flattenSequentiallyMod {
     override def _c(): Unit = js.native
     
     /* CompleteClass */
-    override def _e(err: js.Any): Unit = js.native
+    override def _e(err: Any): Unit = js.native
     
     /* CompleteClass */
     override def _n(v: Stream[T]): Unit = js.native
@@ -40,21 +40,21 @@ object flattenSequentiallyMod {
     /* CompleteClass */
     override def _stop(): Unit = js.native
     
-    /* private */ var active: js.Any = js.native
+    /* private */ var active: Any = js.native
     
-    /* private */ var activeIL: js.Any = js.native
+    /* private */ var activeIL: Any = js.native
     
     /* CompleteClass */
     var ins: Stream[Stream[T]] = js.native
     
     def less(): Unit = js.native
     
-    /* private */ var open: js.Any = js.native
+    /* private */ var open: Any = js.native
     
     /* CompleteClass */
     var out: Stream[T] = js.native
     
-    /* private */ var seq: js.Any = js.native
+    /* private */ var seq: Any = js.native
     
     /* CompleteClass */
     var `type`: String = js.native

@@ -19,8 +19,8 @@ trait AltCallback extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** The ID of the FHIR store that is being created. The string must match the following regex: `[\p{L}\p{N}_\-\.]{1,256}`. */
-  var fhirStoreId: js.UndefOr[String] = js.undefined
+  /** Required. Name of the consent store to retrieve User data mappings from. */
+  var consentStore: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -30,9 +30,6 @@ trait AltCallback extends StObject {
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** The name of the dataset this FHIR store belongs to. */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -48,8 +45,8 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(parent: String): AltCallback = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(consentStore: String): AltCallback = {
+    val __obj = js.Dynamic.literal(consentStore = consentStore.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
   
@@ -71,9 +68,7 @@ object AltCallback {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setFhirStoreId(value: String): Self = StObject.set(x, "fhirStoreId", value.asInstanceOf[js.Any])
-    
-    inline def setFhirStoreIdUndefined: Self = StObject.set(x, "fhirStoreId", js.undefined)
+    inline def setConsentStore(value: String): Self = StObject.set(x, "consentStore", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -86,8 +81,6 @@ object AltCallback {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

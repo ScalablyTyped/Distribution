@@ -39,7 +39,7 @@ trait IModule extends StObject {
     *
     * @param inlineAnnotatedFunction Execute this function on module load. Useful for service configuration.
     */
-  def config(inlineAnnotatedFunction: js.Array[js.Any]): IModule = js.native
+  def config(inlineAnnotatedFunction: js.Array[Any]): IModule = js.native
   def config(`object`: js.Object): IModule = js.native
   
   def constant(`object`: js.Object): IModule = js.native
@@ -98,7 +98,7 @@ trait IModule extends StObject {
   // Properties
   var name: String = js.native
   
-  def provider(name: String, inlineAnnotatedConstructor: js.Array[js.Any]): IModule = js.native
+  def provider(name: String, inlineAnnotatedConstructor: js.Array[Any]): IModule = js.native
   def provider(name: String, providerObject: IServiceProvider): IModule = js.native
   def provider(name: String, serviceProviderConstructor: IServiceProviderClass): IModule = js.native
   def provider(name: String, serviceProviderFactory: IServiceProviderFactory): IModule = js.native

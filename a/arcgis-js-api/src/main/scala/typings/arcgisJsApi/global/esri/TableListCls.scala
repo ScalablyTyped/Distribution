@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html)
   */
-class TableListCls ()
+open class TableListCls ()
   extends StObject
      with typings.arcgisJsApi.esri.TableList {
   def this(properties: TableListProperties) = this()

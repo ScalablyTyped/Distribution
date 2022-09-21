@@ -44,7 +44,7 @@ object mod {
       
       inline def setAst(value: js.Array[Index]): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       
-      inline def setAstVarargs(value: Index*): Self = StObject.set(x, "ast", js.Array(value :_*))
+      inline def setAstVarargs(value: Index*): Self = StObject.set(x, "ast", js.Array(value*))
       
       inline def setDictionary(value: Floats): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
       

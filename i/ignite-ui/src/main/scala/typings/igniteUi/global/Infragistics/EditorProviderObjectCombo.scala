@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.EditorProviderObjectCombo")
 @js.native
-class EditorProviderObjectCombo ()
+open class EditorProviderObjectCombo ()
   extends StObject
      with typings.igniteUi.Infragistics.EditorProviderObjectCombo {
   

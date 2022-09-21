@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.SerializationContext")
 @js.native
-class SerializationContext ()
+open class SerializationContext ()
   extends StObject
      with typings.sharepoint.SP.SerializationContext {
   

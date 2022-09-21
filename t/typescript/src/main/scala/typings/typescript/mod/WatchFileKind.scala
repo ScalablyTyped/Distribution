@@ -20,6 +20,12 @@ object WatchFileKind extends StObject {
   /* 2 */ val DynamicPriorityPolling: typings.typescript.mod.WatchFileKind.DynamicPriorityPolling & Double = js.native
   
   @js.native
+  sealed trait FixedChunkSizePolling
+    extends StObject
+       with WatchFileKind
+  /* 3 */ val FixedChunkSizePolling: typings.typescript.mod.WatchFileKind.FixedChunkSizePolling & Double = js.native
+  
+  @js.native
   sealed trait FixedPollingInterval
     extends StObject
        with WatchFileKind
@@ -35,11 +41,11 @@ object WatchFileKind extends StObject {
   sealed trait UseFsEvents
     extends StObject
        with WatchFileKind
-  /* 3 */ val UseFsEvents: typings.typescript.mod.WatchFileKind.UseFsEvents & Double = js.native
+  /* 4 */ val UseFsEvents: typings.typescript.mod.WatchFileKind.UseFsEvents & Double = js.native
   
   @js.native
   sealed trait UseFsEventsOnParentDirectory
     extends StObject
        with WatchFileKind
-  /* 4 */ val UseFsEventsOnParentDirectory: typings.typescript.mod.WatchFileKind.UseFsEventsOnParentDirectory & Double = js.native
+  /* 5 */ val UseFsEventsOnParentDirectory: typings.typescript.mod.WatchFileKind.UseFsEventsOnParentDirectory & Double = js.native
 }

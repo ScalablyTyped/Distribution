@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientButton")
 @js.native
-class BootstrapClientButton ()
+open class BootstrapClientButton ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientButton {
   
@@ -93,13 +93,13 @@ class BootstrapClientButton ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns the text displayed within the button.

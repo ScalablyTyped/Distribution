@@ -1,7 +1,7 @@
 
 # Scala.js typings for websequencediagrams
 
-Typings are for version 0.1
+Typings are for version 1.0
 
 ## Library description:
 Interface to websequencediagrams.com
@@ -11,9 +11,9 @@ Interface to websequencediagrams.com
 | Full name          | websequencediagrams |
 | Keywords           | uml, sequence diagram, sequence, diagram, websequencediagrams, websequencediagrams.com |
 | # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 6619 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 265.3333333333333 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/hildjj/node-websequencediagrams)

@@ -36,12 +36,12 @@ object GetReservedInstancesExchangeQuoteRequest {
     
     inline def setReservedInstanceIds(value: ReservedInstanceIdSet): Self = StObject.set(x, "ReservedInstanceIds", value.asInstanceOf[js.Any])
     
-    inline def setReservedInstanceIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstanceIds", js.Array(value :_*))
+    inline def setReservedInstanceIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstanceIds", js.Array(value*))
     
     inline def setTargetConfigurations(value: TargetConfigurationRequestSet): Self = StObject.set(x, "TargetConfigurations", value.asInstanceOf[js.Any])
     
     inline def setTargetConfigurationsUndefined: Self = StObject.set(x, "TargetConfigurations", js.undefined)
     
-    inline def setTargetConfigurationsVarargs(value: TargetConfigurationRequest*): Self = StObject.set(x, "TargetConfigurations", js.Array(value :_*))
+    inline def setTargetConfigurationsVarargs(value: TargetConfigurationRequest*): Self = StObject.set(x, "TargetConfigurations", js.Array(value*))
   }
 }

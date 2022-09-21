@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("consola", "WinstonReporter")
 @js.native
-class WinstonReporter ()
+open class WinstonReporter ()
   extends StObject
      with ConsolaReporter {
   def this(logger: Winston) = this()

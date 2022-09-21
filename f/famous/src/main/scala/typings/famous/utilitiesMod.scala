@@ -8,10 +8,10 @@ object utilitiesMod {
   
   @JSImport("famous/utilities", "CallbackStore")
   @js.native
-  class CallbackStore () extends StObject {
+  open class CallbackStore () extends StObject {
     
-    def on(event: String, callback: js.Function1[/* payload */ js.Any, Unit]): Unit = js.native
+    def on(event: String, callback: js.Function1[/* payload */ Any, Unit]): Unit = js.native
     
-    def trigger(event: String, payload: js.Any): Unit = js.native
+    def trigger(event: String, payload: Any): Unit = js.native
   }
 }

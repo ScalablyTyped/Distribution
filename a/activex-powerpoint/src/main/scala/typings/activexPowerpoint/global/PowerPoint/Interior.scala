@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Interior")
 @js.native
-/* private */ class Interior ()
+/* private */ open class Interior ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Interior {
   
@@ -14,28 +14,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
   /* CompleteClass */
-  var Color: js.Any = js.native
+  var Color: Any = js.native
   
   /* CompleteClass */
-  var ColorIndex: js.Any = js.native
+  var ColorIndex: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  var InvertIfNegative: js.Any = js.native
+  var InvertIfNegative: Any = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  var Pattern: js.Any = js.native
+  var Pattern: Any = js.native
   
   /* CompleteClass */
-  var PatternColor: js.Any = js.native
+  var PatternColor: Any = js.native
   
   /* CompleteClass */
-  var PatternColorIndex: js.Any = js.native
+  var PatternColorIndex: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.Interior_typekey")

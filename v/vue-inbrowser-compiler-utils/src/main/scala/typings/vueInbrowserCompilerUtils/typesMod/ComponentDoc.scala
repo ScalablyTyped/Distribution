@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ComponentDoc
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var description: js.UndefOr[String] = js.undefined
   
@@ -46,13 +46,13 @@ object ComponentDoc {
     
     inline def setDocsBlocksUndefined: Self = StObject.set(x, "docsBlocks", js.undefined)
     
-    inline def setDocsBlocksVarargs(value: String*): Self = StObject.set(x, "docsBlocks", js.Array(value :_*))
+    inline def setDocsBlocksVarargs(value: String*): Self = StObject.set(x, "docsBlocks", js.Array(value*))
     
     inline def setEvents(value: js.Array[EventDescriptor]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: EventDescriptor*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: EventDescriptor*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
     
@@ -60,19 +60,19 @@ object ComponentDoc {
     
     inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
-    inline def setMethodsVarargs(value: MethodDescriptor*): Self = StObject.set(x, "methods", js.Array(value :_*))
+    inline def setMethodsVarargs(value: MethodDescriptor*): Self = StObject.set(x, "methods", js.Array(value*))
     
     inline def setProps(value: js.Array[PropDescriptor]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     
-    inline def setPropsVarargs(value: PropDescriptor*): Self = StObject.set(x, "props", js.Array(value :_*))
+    inline def setPropsVarargs(value: PropDescriptor*): Self = StObject.set(x, "props", js.Array(value*))
     
     inline def setSlots(value: js.Array[SlotDescriptor]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
-    inline def setSlotsVarargs(value: SlotDescriptor*): Self = StObject.set(x, "slots", js.Array(value :_*))
+    inline def setSlotsVarargs(value: SlotDescriptor*): Self = StObject.set(x, "slots", js.Array(value*))
     
     inline def setTags(value: StringDictionary[js.Array[BlockTag]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "CanvasCirclePainter")
 @js.native
-class CanvasCirclePainter protected () extends CanvasStyler {
+open class CanvasCirclePainter protected () extends CanvasStyler {
   def this(ctx: CanvasRenderingContext2D) = this()
   
   def circle(center: X, radius: Double): CanvasCirclePainter = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "MeshRenderer")
 @js.native
-class MeshRenderer ()
+open class MeshRenderer ()
   extends typings.wonderJs.meshRendererMod.MeshRenderer
 /* static members */
 object MeshRenderer {

@@ -24,7 +24,7 @@ object XTextGraphicObjectsSupplier {
     GraphicObjects: XNameAccess,
     acquire: () => Unit,
     getGraphicObjects: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextGraphicObjectsSupplier = {
     val __obj = js.Dynamic.literal(GraphicObjects = GraphicObjects.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getGraphicObjects = js.Any.fromFunction0(getGraphicObjects), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

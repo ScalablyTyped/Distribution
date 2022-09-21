@@ -14,36 +14,36 @@ object graphqlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  type GraphQLFormatErrorFunction = js.Function1[/* error */ js.Any, js.Any]
+  type GraphQLFormatErrorFunction = js.Function1[/* error */ Any, Any]
   
   trait GraphQLModule extends StObject {
     
-    var Source: js.Any
+    var Source: Any
     
-    var execute: js.Any
+    var execute: Any
     
-    def formatError(error: js.Any): js.Any
+    def formatError(error: Any): Any
     @JSName("formatError")
     var formatError_Original: GraphQLFormatErrorFunction
     
-    var getOperationAST: js.Any
+    var getOperationAST: Any
     
-    var parse: js.Any
+    var parse: Any
     
-    var specifiedRules: js.Any
+    var specifiedRules: Any
     
-    var validate: js.Any
+    var validate: Any
   }
   object GraphQLModule {
     
     inline def apply(
-      Source: js.Any,
-      execute: js.Any,
-      formatError: /* error */ js.Any => js.Any,
-      getOperationAST: js.Any,
-      parse: js.Any,
-      specifiedRules: js.Any,
-      validate: js.Any
+      Source: Any,
+      execute: Any,
+      formatError: /* error */ Any => Any,
+      getOperationAST: Any,
+      parse: Any,
+      specifiedRules: Any,
+      validate: Any
     ): GraphQLModule = {
       val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], execute = execute.asInstanceOf[js.Any], formatError = js.Any.fromFunction1(formatError), getOperationAST = getOperationAST.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], specifiedRules = specifiedRules.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLModule]
@@ -51,25 +51,25 @@ object graphqlMod {
     
     extension [Self <: GraphQLModule](x: Self) {
       
-      inline def setExecute(value: js.Any): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+      inline def setExecute(value: Any): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
       
-      inline def setFormatError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "formatError", js.Any.fromFunction1(value))
+      inline def setFormatError(value: /* error */ Any => Any): Self = StObject.set(x, "formatError", js.Any.fromFunction1(value))
       
-      inline def setGetOperationAST(value: js.Any): Self = StObject.set(x, "getOperationAST", value.asInstanceOf[js.Any])
+      inline def setGetOperationAST(value: Any): Self = StObject.set(x, "getOperationAST", value.asInstanceOf[js.Any])
       
-      inline def setParse(value: js.Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      inline def setSource(value: js.Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
       
-      inline def setSpecifiedRules(value: js.Any): Self = StObject.set(x, "specifiedRules", value.asInstanceOf[js.Any])
+      inline def setSpecifiedRules(value: Any): Self = StObject.set(x, "specifiedRules", value.asInstanceOf[js.Any])
       
-      inline def setValidate(value: js.Any): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Any): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     }
   }
   
   trait GraphQLOptions extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var formatError: js.UndefOr[GraphQLFormatErrorFunction] = js.undefined
     
@@ -83,7 +83,7 @@ object graphqlMod {
     
     var schema: GraphQLSchema
     
-    var validationRules: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var validationRules: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object GraphQLOptions {
     
@@ -94,11 +94,11 @@ object graphqlMod {
     
     extension [Self <: GraphQLOptions](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setFormatError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "formatError", js.Any.fromFunction1(value))
+      inline def setFormatError(value: /* error */ Any => Any): Self = StObject.set(x, "formatError", js.Any.fromFunction1(value))
       
       inline def setFormatErrorUndefined: Self = StObject.set(x, "formatError", js.undefined)
       
@@ -120,11 +120,11 @@ object graphqlMod {
       
       inline def setSchema(value: GraphQLSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      inline def setValidationRules(value: js.Array[js.Any]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: js.Array[Any]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
-      inline def setValidationRulesVarargs(value: js.Any*): Self = StObject.set(x, "validationRules", js.Array(value :_*))
+      inline def setValidationRulesVarargs(value: Any*): Self = StObject.set(x, "validationRules", js.Array(value*))
     }
   }
   

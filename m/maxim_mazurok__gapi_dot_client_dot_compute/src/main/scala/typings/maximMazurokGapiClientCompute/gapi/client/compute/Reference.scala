@@ -9,10 +9,7 @@ trait Reference extends StObject {
   /** [Output Only] Type of the resource. Always compute#reference for references. */
   var kind: js.UndefOr[String] = js.undefined
   
-  /**
-    * A description of the reference type with no implied semantics. Possible values include:
-    * - MEMBER_OF
-    */
+  /** A description of the reference type with no implied semantics. Possible values include: 1. MEMBER_OF */
   var referenceType: js.UndefOr[String] = js.undefined
   
   /** URL of the resource which refers to the target. */

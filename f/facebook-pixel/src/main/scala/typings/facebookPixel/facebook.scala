@@ -1,5 +1,7 @@
 package typings.facebookPixel
 
+import typings.facebookPixel.anon.Id
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +37,7 @@ object facebook {
         
         inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value*))
         
         inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
@@ -72,7 +74,7 @@ object facebook {
         
         inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value*))
         
         inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
@@ -121,7 +123,7 @@ object facebook {
         
         inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value*))
         
         inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
@@ -143,7 +145,7 @@ object facebook {
       
       var currency: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.undefined
+      var status: js.UndefOr[Boolean] = js.undefined
       
       var value: js.UndefOr[Double] = js.undefined
     }
@@ -164,7 +166,7 @@ object facebook {
         
         inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
         inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
         
@@ -173,6 +175,8 @@ object facebook {
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
+    
+    type CustomParameters = Record[String, Any]
     
     // For Facebook Tag API using Dynamic Product Ads
     object DPA {
@@ -233,6 +237,7 @@ object facebook {
       def apply(eventType: String, eventName: String, parameters: AddToCartParameters): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: AddToWishlistParameters): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: CompleteRegistrationParameters): Unit = js.native
+      def apply(eventType: String, eventName: String, parameters: CustomParameters): Unit = js.native
       def apply(
         eventType: String,
         eventName: String,
@@ -286,7 +291,7 @@ object facebook {
         
         inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value*))
         
         inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
@@ -372,7 +377,7 @@ object facebook {
         
         inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value*))
         
         inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
@@ -425,7 +430,7 @@ object facebook {
         
         inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value*))
         
         inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
@@ -451,6 +456,8 @@ object facebook {
       
       var content_type: js.UndefOr[String] = js.undefined
       
+      var contents: js.UndefOr[js.Array[Id]] = js.undefined
+      
       var currency: js.UndefOr[String] = js.undefined
       
       var value: js.UndefOr[Double] = js.undefined
@@ -472,7 +479,7 @@ object facebook {
         
         inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value*))
         
         inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
@@ -481,6 +488,12 @@ object facebook {
         inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
         
         inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+        
+        inline def setContents(value: js.Array[Id]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+        
+        inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+        
+        inline def setContentsVarargs(value: Id*): Self = StObject.set(x, "contents", js.Array(value*))
         
         inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         

@@ -4,42 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * CreateNodePoolRequest creates a node pool for a cluster.
-  */
 trait SchemaCreateNodePoolRequest extends StObject {
   
   /**
-    * Deprecated. The name of the cluster. This field has been deprecated and
-    * replaced by the parent field.
+    * Required. Deprecated. The name of the cluster. This field has been deprecated and replaced by the parent field.
     */
-  var clusterId: js.UndefOr[String] = js.undefined
+  var clusterId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The node pool to create.
+    * Required. The node pool to create.
     */
   var nodePool: js.UndefOr[SchemaNodePool] = js.undefined
   
   /**
-    * The parent (project, location, cluster id) where the node pool will be
-    * created. Specified in the format
-    * &#39;projects/x/locations/x/clusters/ *&#39;.
+    * The parent (project, location, cluster name) where the node pool will be created. Specified in the format `projects/x/locations/x/clusters/x`.
     */
-  var parent: js.UndefOr[String] = js.undefined
+  var parent: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project
-    * number](https://developers.google.com/console/help/new/#projectnumber).
-    * This field has been deprecated and replaced by the parent field.
+    * Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the parent field.
     */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Deprecated. The name of the Google Compute Engine
-    * [zone](/compute/docs/zones#available) in which the cluster resides. This
-    * field has been deprecated and replaced by the parent field.
+    * Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the parent field.
     */
-  var zone: js.UndefOr[String] = js.undefined
+  var zone: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCreateNodePoolRequest {
   
@@ -52,6 +42,8 @@ object SchemaCreateNodePoolRequest {
     
     inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
+    inline def setClusterIdNull: Self = StObject.set(x, "clusterId", null)
+    
     inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
     inline def setNodePool(value: SchemaNodePool): Self = StObject.set(x, "nodePool", value.asInstanceOf[js.Any])
@@ -60,13 +52,19 @@ object SchemaCreateNodePoolRequest {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
+    
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
+    inline def setProjectIdNull: Self = StObject.set(x, "projectId", null)
+    
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    
+    inline def setZoneNull: Self = StObject.set(x, "zone", null)
     
     inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }

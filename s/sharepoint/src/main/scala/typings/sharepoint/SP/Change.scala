@@ -1,6 +1,5 @@
 package typings.sharepoint.SP
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,5 +15,5 @@ trait Change
   
   def get_siteId(): Guid = js.native
   
-  def get_time(): Date = js.native
+  def get_time(): js.Date = js.native
 }

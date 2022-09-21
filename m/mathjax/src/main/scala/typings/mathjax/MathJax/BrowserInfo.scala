@@ -17,7 +17,7 @@ trait BrowserInfo extends StObject {
     *        ... do general Firefox stuff
     *    }
     *});*/
-  def Select(choices: js.Any): Unit
+  def Select(choices: Any): Unit
   
   var isChrome: js.UndefOr[Boolean] = js.undefined
   
@@ -52,7 +52,7 @@ trait BrowserInfo extends StObject {
 }
 object BrowserInfo {
   
-  inline def apply(Select: js.Any => Unit, version: String, versionAtLeast: String => Unit): BrowserInfo = {
+  inline def apply(Select: Any => Unit, version: String, versionAtLeast: String => Unit): BrowserInfo = {
     val __obj = js.Dynamic.literal(Select = js.Any.fromFunction1(Select), version = version.asInstanceOf[js.Any], versionAtLeast = js.Any.fromFunction1(versionAtLeast))
     __obj.asInstanceOf[BrowserInfo]
   }
@@ -95,7 +95,7 @@ object BrowserInfo {
     
     inline def setIsSafariUndefined: Self = StObject.set(x, "isSafari", js.undefined)
     
-    inline def setSelect(value: js.Any => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction1(value))
+    inline def setSelect(value: Any => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction1(value))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

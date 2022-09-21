@@ -1,7 +1,7 @@
 
 # Scala.js typings for fastq
 
-Typings are for version 1.9.0
+Typings are for version 1.13.0
 
 ## Library description:
 Fast, in memory work queue
@@ -10,10 +10,10 @@ Fast, in memory work queue
 | ------------------ | :-------------: |
 | Full name          | fastq |
 | Keywords           | fast, queue, async, worker |
-| # releases         | 6 |
-| # dependents       | 65 |
-| # downloads        | 315012077 |
-| # stars            | 3 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 8.963053166666667E7 |
+| # stars            | 558.0 |
 
 ## Links
 - [Homepage](https://github.com/mcollina/fastq#readme)

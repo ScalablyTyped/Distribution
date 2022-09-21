@@ -11,7 +11,7 @@ trait MouseWrapper
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var cancel: js.UndefOr[String] = js.undefined
   

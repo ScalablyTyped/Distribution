@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Properties that apply to a section&#39;s column.
-  */
 trait SchemaSectionColumnProperties extends StObject {
   
   /**
@@ -15,7 +12,7 @@ trait SchemaSectionColumnProperties extends StObject {
   var paddingEnd: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
-    * The width of the column.
+    * Output only. The width of the column.
     */
   var width: js.UndefOr[SchemaDimension] = js.undefined
 }

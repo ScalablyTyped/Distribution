@@ -1,8 +1,8 @@
 package typings.antd.anon
 
+import typings.antd.formInterfaceMod.FormLabelAlign
 import typings.antd.formItemLabelMod.LabelTooltipType
 import typings.antd.gridColMod.ColProps
-import typings.antd.interfaceMod.FormLabelAlign
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AdClient extends StObject {
   
-  /** Whether this ad client is opted in to ARC. */
-  var arcOptIn: js.UndefOr[Boolean] = js.undefined
+  /** Output only. Resource name of the ad client. Format: accounts/{account}/adclients/{adclient} */
+  var name: js.UndefOr[String] = js.undefined
   
-  /** Unique identifier of this ad client. */
-  var id: js.UndefOr[String] = js.undefined
-  
-  /** Kind of resource this is, in this case adsense#adClient. */
-  var kind: js.UndefOr[String] = js.undefined
-  
-  /** This ad client's product code, which corresponds to the PRODUCT_CODE report dimension. */
+  /**
+    * Output only. Reporting product code of the ad client. For example, "AFC" for AdSense for Content. Corresponds to the `PRODUCT_CODE` dimension, and present only if the ad client
+    * supports reporting.
+    */
   var productCode: js.UndefOr[String] = js.undefined
   
-  /** Whether this ad client supports being reported on. */
-  var supportsReporting: js.UndefOr[Boolean] = js.undefined
+  /** Output only. Unique ID of the ad client as used in the `AD_CLIENT_ID` reporting dimension. Present only if the ad client supports reporting. */
+  var reportingDimensionId: js.UndefOr[String] = js.undefined
+  
+  /** Output only. State of the ad client. */
+  var state: js.UndefOr[String] = js.undefined
 }
 object AdClient {
   
@@ -30,24 +30,20 @@ object AdClient {
   
   extension [Self <: AdClient](x: Self) {
     
-    inline def setArcOptIn(value: Boolean): Self = StObject.set(x, "arcOptIn", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setArcOptInUndefined: Self = StObject.set(x, "arcOptIn", js.undefined)
-    
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setProductCode(value: String): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
     inline def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
-    inline def setSupportsReporting(value: Boolean): Self = StObject.set(x, "supportsReporting", value.asInstanceOf[js.Any])
+    inline def setReportingDimensionId(value: String): Self = StObject.set(x, "reportingDimensionId", value.asInstanceOf[js.Any])
     
-    inline def setSupportsReportingUndefined: Self = StObject.set(x, "supportsReporting", js.undefined)
+    inline def setReportingDimensionIdUndefined: Self = StObject.set(x, "reportingDimensionId", js.undefined)
+    
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

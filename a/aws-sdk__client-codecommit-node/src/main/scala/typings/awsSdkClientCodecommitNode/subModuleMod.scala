@@ -8,5 +8,5 @@ object subModuleMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_SubModule", "_SubModule")
   @js.native
-  val SubModule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SubModule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

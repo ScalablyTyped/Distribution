@@ -11,7 +11,6 @@ import typings.relayRuntime.relayRuntimeTypesMod.Disposable
 import typings.relayRuntime.relayStoreTypesMod.Environment
 import typings.relayRuntime.relayStoreTypesMod.RecordSourceSelectorProxy
 import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,12 +43,16 @@ object commitMutationMod {
         ]) | Null
       ] = js.undefined
     
-    var onError: js.UndefOr[(js.Function1[/* error */ Error, Unit]) | Null] = js.undefined
+    var onError: js.UndefOr[(js.Function1[/* error */ js.Error, Unit]) | Null] = js.undefined
     
     var onUnsubscribe: js.UndefOr[js.Function0[js.UndefOr[Unit | Null]]] = js.undefined
     
+    /**
+      * An object whose type matches the raw response type of the mutation. Make sure you decorate
+      * your mutation with `@raw_response_type` if you are using this field.
+      */
     var optimisticResponse: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TOperation['rawResponse'] */ js.Any
       ] = js.undefined
     
     var optimisticUpdater: js.UndefOr[
@@ -88,7 +91,7 @@ object commitMutationMod {
       
       inline def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
       
-      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value :_*))
+      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value*))
       
       inline def setMutation(value: GraphQLTaggedNode): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,7 @@ object commitMutationMod {
       
       inline def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
       
-      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorNull: Self = StObject.set(x, "onError", null)
       
@@ -113,7 +116,7 @@ object commitMutationMod {
       inline def setOnUnsubscribeUndefined: Self = StObject.set(x, "onUnsubscribe", js.undefined)
       
       inline def setOptimisticResponse(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['rawResponse'] */ js.Any
       ): Self = StObject.set(x, "optimisticResponse", value.asInstanceOf[js.Any])
       
       inline def setOptimisticResponseUndefined: Self = StObject.set(x, "optimisticResponse", js.undefined)

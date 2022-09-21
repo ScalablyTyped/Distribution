@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDialogflow.anon
 
-import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowV2DetectIntentRequest
+import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3DetectIntentRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,13 +36,14 @@ trait Session extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleCloudDialogflowV2DetectIntentRequest
+  var resource: GoogleCloudDialogflowCxV3DetectIntentRequest
   
   /**
-    * Required. The name of the session this query is sent to. Format: `projects//agent/sessions/`, or `projects//agent/environments//users//sessions/`. If `Environment ID` is not
-    * specified, we assume default 'draft' environment. If `User ID` is not specified, we are using "-". It's up to the API caller to choose an appropriate `Session ID` and `User Id`.
-    * They can be a random number or some type of user and session identifiers (preferably hashed). The length of the `Session ID` and `User ID` must not exceed 36 characters. For
-    * more information, see the [API interactions guide](https://cloud.google.com/dialogflow/docs/api-overview).
+    * Required. The name of the session this query is sent to. Format: `projects//locations//agents//sessions/` or `projects//locations//agents//environments//sessions/`. If
+    * `Environment ID` is not specified, we assume default 'draft' environment. It's up to the API caller to choose an appropriate `Session ID`. It can be a random number or some type
+    * of session identifiers (preferably hashed). The length of the `Session ID` must not exceed 36 characters. For more information, see the [sessions
+    * guide](https://cloud.google.com/dialogflow/cx/docs/concept/session). Note: Always use agent versions for production traffic. See [Versions and
+    * environments](https://cloud.google.com/dialogflow/cx/docs/concept/version).
     */
   var session: String
   
@@ -54,7 +55,7 @@ trait Session extends StObject {
 }
 object Session {
   
-  inline def apply(resource: GoogleCloudDialogflowV2DetectIntentRequest, session: String): Session = {
+  inline def apply(resource: GoogleCloudDialogflowCxV3DetectIntentRequest, session: String): Session = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]
   }
@@ -97,7 +98,7 @@ object Session {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleCloudDialogflowV2DetectIntentRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleCloudDialogflowCxV3DetectIntentRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     

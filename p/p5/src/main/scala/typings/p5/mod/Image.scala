@@ -156,10 +156,62 @@ trait Image extends StObject {
   def copy(sx: Double, sy: Double, sw: Double, sh: Double, dx: Double, dy: Double, dw: Double, dh: Double): Unit = js.native
   
   /**
-    *   Applies an image filter to a p5.Image
+    *   Changes the delay between frames in an animated
+    *   GIF. There is an optional second parameter that
+    *   indicates an index for a specific frame that
+    *   should have its delay modified. If no index is
+    *   given, all frames will have the new delay.
+    *   @param d the amount in milliseconds to delay
+    *   between switching frames
+    *   @param [index] the index of the frame that should
+    *   have the new delay value {optional}
+    */
+  def delay(d: Double): Unit = js.native
+  def delay(d: Double, index: Double): Unit = js.native
+  
+  /**
+    *   Applies an image filter to a p5.Image THRESHOLD
+    *   Converts the image to black and white pixels
+    *   depending if they are above or below the threshold
+    *   defined by the level parameter. The parameter must
+    *   be between 0.0 (black) and 1.0 (white). If no
+    *   level is specified, 0.5 is used.
+    *
+    *   GRAY Converts any colors in the image to grayscale
+    *   equivalents. No parameter is used.
+    *
+    *   OPAQUE Sets the alpha channel to entirely opaque.
+    *   No parameter is used.
+    *
+    *   INVERT Sets each pixel to its inverse value. No
+    *   parameter is used.
+    *
+    *   POSTERIZE Limits each channel of the image to the
+    *   number of colors specified as the parameter. The
+    *   parameter can be set to values between 2 and 255,
+    *   but results are most noticeable in the lower
+    *   ranges.
+    *
+    *   BLUR Executes a Gaussian blur with the level
+    *   parameter specifying the extent of the blurring.
+    *   If no parameter is used, the blur is equivalent to
+    *   Gaussian blur of radius 1. Larger values increase
+    *   the blur.
+    *
+    *   ERODE Reduces the light areas. No parameter is
+    *   used.
+    *
+    *   DILATE Increases the light areas. No parameter is
+    *   used.
+    *
+    *   filter() does not work in WEBGL mode. A similar
+    *   effect can be achieved in WEBGL mode using custom
+    *   shaders. Adam Ferriss has written a selection of
+    *   shader examples that contains many of the effects
+    *   present in the filter examples.
     *   @param filterType either THRESHOLD, GRAY, OPAQUE,
-    *   INVERT, POSTERIZE, BLUR, ERODE, DILATE or BLUR.
-    *   See Filters.js for docs on each available filter
+    *   INVERT, POSTERIZE, ERODE, DILATE or BLUR. See
+    *   Filters.js for docs on each available filter
     *   @param [filterParam] an optional parameter unique
     *   to each filter, see above
     */
@@ -202,6 +254,14 @@ trait Image extends StObject {
   def get(x: Double, y: Double, w: Double, h: Double): Image = js.native
   
   /**
+    *   Gets the index for the frame that is currently
+    *   visible in an animated GIF.
+    *   @return The index for the currently displaying
+    *   frame in animated GIF
+    */
+  def getCurrentFrame(): Double = js.native
+  
+  /**
     *   Image height.
     */
   var height: Double = js.native
@@ -214,11 +274,23 @@ trait Image extends StObject {
   
   /**
     *   Masks part of an image from displaying by loading
-    *   another image and using it's alpha channel as an
-    *   alpha channel for this image.
+    *   another image and using its alpha channel as an
+    *   alpha channel for this image. Masks are
+    *   cumulative, one applied to an image object, they
+    *   cannot be removed.
     *   @param srcImage source image
     */
   def mask(srcImage: Image): Unit = js.native
+  
+  /**
+    *   Returns the number of frames in an animated GIF
+    */
+  def numFrames(): Double = js.native
+  
+  /**
+    *   Pauses an animated GIF.
+    */
+  def pause(): Unit = js.native
   
   /**
     *   Array containing the values for all the pixels in
@@ -228,9 +300,9 @@ trait Image extends StObject {
     *   representing the R, G, B, A values in order for
     *   each pixel, moving from left to right across each
     *   row, then down each column. Retina and other high
-    *   denisty displays may have more pixels (by a factor
+    *   density displays may have more pixels (by a factor
     *   of pixelDensity^2). For example, if the image is
-    *   100x100 pixels, there will be 40,000. With
+    *   100×100 pixels, there will be 40,000. With
     *   pixelDensity = 2, there will be 160,000. The first
     *   four values (indices 0-3) in the array will be the
     *   R, G, B, A values of the pixel at (0, 0). The
@@ -243,15 +315,23 @@ trait Image extends StObject {
     *   i)); pixels[index] = r; pixels[index+1] = g;
     *   pixels[index+2] = b; pixels[index+3] = a; } }
     *
-    *
-    *
-    *
     *   Before accessing this array, the data must loaded
     *   with the loadPixels() function. After the array
     *   data has been modified, the updatePixels()
     *   function must be run to update the changes.
     */
   var pixels: js.Array[Double] = js.native
+  
+  /**
+    *   Plays an animated GIF that was paused with pause()
+    */
+  def play(): Unit = js.native
+  
+  /**
+    *   Starts an animated GIF over at the beginning
+    *   state.
+    */
+  def reset(): Unit = js.native
   
   /**
     *   Resize the image to a new width and height. To
@@ -268,7 +348,10 @@ trait Image extends StObject {
   /**
     *   Saves the image to a file and force the browser to
     *   download it. Accepts two strings for filename and
-    *   file extension Supports png (default) and jpg.
+    *   file extension Supports png (default), jpg, and
+    *   gif  Note that the file will only be downloaded as
+    *   an animated GIF if the p5.Image was loaded from a
+    *   GIF file.
     *   @param filename give your file a name
     *   @param extension 'png' or 'jpg'
     */
@@ -290,13 +373,25 @@ trait Image extends StObject {
   def set(x: Double, y: Double, a: Double): Unit = js.native
   
   /**
+    *   Sets the index of the frame that is currently
+    *   visible in an animated GIF
+    *   @param index the index for the frame that should
+    *   be displayed
+    */
+  def setFrame(index: Double): Unit = js.native
+  
+  /**
     *   Updates the backing canvas for this image with the
-    *   contents of the [pixels] array.
+    *   contents of the [pixels] array. If this image is
+    *   an animated GIF then the pixels will be updated in
+    *   the frame that is currently displayed.
     */
   def updatePixels(): Unit = js.native
   /**
     *   Updates the backing canvas for this image with the
-    *   contents of the [pixels] array.
+    *   contents of the [pixels] array. If this image is
+    *   an animated GIF then the pixels will be updated in
+    *   the frame that is currently displayed.
     *   @param x x-offset of the target update area for
     *   the underlying canvas
     *   @param y y-offset of the target update area for

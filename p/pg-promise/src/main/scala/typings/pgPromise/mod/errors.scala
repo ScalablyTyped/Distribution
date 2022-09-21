@@ -15,16 +15,18 @@ object errors {
   // API: http://vitaly-t.github.io/pg-promise/errors.ParameterizedQueryError.html
   @JSImport("pg-promise", "errors.ParameterizedQueryError")
   @js.native
-  class ParameterizedQueryError ()
+  open class ParameterizedQueryError ()
     extends StObject
        with Error {
     
     // extended properties:
     var error: QueryFileError = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -38,16 +40,18 @@ object errors {
   // API: http://vitaly-t.github.io/pg-promise/errors.PreparedStatementError.html
   @JSImport("pg-promise", "errors.PreparedStatementError")
   @js.native
-  class PreparedStatementError ()
+  open class PreparedStatementError ()
     extends StObject
        with Error {
     
     // extended properties:
     var error: QueryFileError = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -61,7 +65,7 @@ object errors {
   // API: http://vitaly-t.github.io/pg-promise/errors.QueryFileError.html
   @JSImport("pg-promise", "errors.QueryFileError")
   @js.native
-  class QueryFileError ()
+  open class QueryFileError ()
     extends StObject
        with Error {
     
@@ -70,9 +74,11 @@ object errors {
     // extended properties:
     var file: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -88,15 +94,17 @@ object errors {
   // API: http://vitaly-t.github.io/pg-promise/errors.QueryResultError.html
   @JSImport("pg-promise", "errors.QueryResultError")
   @js.native
-  class QueryResultError ()
+  open class QueryResultError ()
     extends StObject
        with Error {
     
     var code: queryResultErrorCode = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -110,7 +118,7 @@ object errors {
     @JSName("stack")
     var stack_QueryResultError: String = js.native
     
-    var values: js.Any = js.native
+    var values: Any = js.native
   }
   
   @js.native

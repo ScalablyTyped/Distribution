@@ -17,14 +17,14 @@ object scrollMod {
   
   @JSImport("react-fns/dist/Scroll", "Scroll")
   @js.native
-  class Scroll protected ()
+  open class Scroll protected ()
     extends typings.reactFns.scrollScrollMod.Scroll {
     def this(props: ScrollConfig & SharedRenderProps[ScrollProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollConfig & SharedRenderProps[ScrollProps], context: js.Any) = this()
+    def this(props: ScrollConfig & SharedRenderProps[ScrollProps], context: Any) = this()
   }
   /* static members */
   object Scroll {

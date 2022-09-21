@@ -12,19 +12,19 @@ trait Colorsrc extends StObject {
   
   var color: typings.plotlyJs.mod.Color
   
-  var colorsrc: js.Any
+  var colorsrc: Any
   
   var `type`: radial | horizontal | vertical | none
   
-  var typesrc: js.Any
+  var typesrc: Any
 }
 object Colorsrc {
   
   inline def apply(
     color: typings.plotlyJs.mod.Color,
-    colorsrc: js.Any,
+    colorsrc: Any,
     `type`: radial | horizontal | vertical | none,
-    typesrc: js.Any
+    typesrc: Any
   ): Colorsrc = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], colorsrc = colorsrc.asInstanceOf[js.Any], typesrc = typesrc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -35,12 +35,12 @@ object Colorsrc {
     
     inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value*))
     
-    inline def setColorsrc(value: js.Any): Self = StObject.set(x, "colorsrc", value.asInstanceOf[js.Any])
+    inline def setColorsrc(value: Any): Self = StObject.set(x, "colorsrc", value.asInstanceOf[js.Any])
     
     inline def setType(value: radial | horizontal | vertical | none): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypesrc(value: js.Any): Self = StObject.set(x, "typesrc", value.asInstanceOf[js.Any])
+    inline def setTypesrc(value: Any): Self = StObject.set(x, "typesrc", value.asInstanceOf[js.Any])
   }
 }

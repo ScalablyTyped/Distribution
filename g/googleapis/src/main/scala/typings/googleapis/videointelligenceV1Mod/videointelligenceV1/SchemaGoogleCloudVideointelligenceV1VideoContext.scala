@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video context and/or feature-specific parameters.
-  */
 trait SchemaGoogleCloudVideointelligenceV1VideoContext extends StObject {
   
   /**
@@ -15,14 +12,27 @@ trait SchemaGoogleCloudVideointelligenceV1VideoContext extends StObject {
   var explicitContentDetectionConfig: js.UndefOr[SchemaGoogleCloudVideointelligenceV1ExplicitContentDetectionConfig] = js.undefined
   
   /**
+    * Config for FACE_DETECTION.
+    */
+  var faceDetectionConfig: js.UndefOr[SchemaGoogleCloudVideointelligenceV1FaceDetectionConfig] = js.undefined
+  
+  /**
     * Config for LABEL_DETECTION.
     */
   var labelDetectionConfig: js.UndefOr[SchemaGoogleCloudVideointelligenceV1LabelDetectionConfig] = js.undefined
   
   /**
-    * Video segments to annotate. The segments may overlap and are not required
-    * to be contiguous or span the whole video. If unspecified, each video is
-    * treated as a single segment.
+    * Config for OBJECT_TRACKING.
+    */
+  var objectTrackingConfig: js.UndefOr[SchemaGoogleCloudVideointelligenceV1ObjectTrackingConfig] = js.undefined
+  
+  /**
+    * Config for PERSON_DETECTION.
+    */
+  var personDetectionConfig: js.UndefOr[SchemaGoogleCloudVideointelligenceV1PersonDetectionConfig] = js.undefined
+  
+  /**
+    * Video segments to annotate. The segments may overlap and are not required to be contiguous or span the whole video. If unspecified, each video is treated as a single segment.
     */
   var segments: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1VideoSegment]] = js.undefined
   
@@ -54,15 +64,27 @@ object SchemaGoogleCloudVideointelligenceV1VideoContext {
     
     inline def setExplicitContentDetectionConfigUndefined: Self = StObject.set(x, "explicitContentDetectionConfig", js.undefined)
     
+    inline def setFaceDetectionConfig(value: SchemaGoogleCloudVideointelligenceV1FaceDetectionConfig): Self = StObject.set(x, "faceDetectionConfig", value.asInstanceOf[js.Any])
+    
+    inline def setFaceDetectionConfigUndefined: Self = StObject.set(x, "faceDetectionConfig", js.undefined)
+    
     inline def setLabelDetectionConfig(value: SchemaGoogleCloudVideointelligenceV1LabelDetectionConfig): Self = StObject.set(x, "labelDetectionConfig", value.asInstanceOf[js.Any])
     
     inline def setLabelDetectionConfigUndefined: Self = StObject.set(x, "labelDetectionConfig", js.undefined)
+    
+    inline def setObjectTrackingConfig(value: SchemaGoogleCloudVideointelligenceV1ObjectTrackingConfig): Self = StObject.set(x, "objectTrackingConfig", value.asInstanceOf[js.Any])
+    
+    inline def setObjectTrackingConfigUndefined: Self = StObject.set(x, "objectTrackingConfig", js.undefined)
+    
+    inline def setPersonDetectionConfig(value: SchemaGoogleCloudVideointelligenceV1PersonDetectionConfig): Self = StObject.set(x, "personDetectionConfig", value.asInstanceOf[js.Any])
+    
+    inline def setPersonDetectionConfigUndefined: Self = StObject.set(x, "personDetectionConfig", js.undefined)
     
     inline def setSegments(value: js.Array[SchemaGoogleCloudVideointelligenceV1VideoSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: SchemaGoogleCloudVideointelligenceV1VideoSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: SchemaGoogleCloudVideointelligenceV1VideoSegment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setShotChangeDetectionConfig(value: SchemaGoogleCloudVideointelligenceV1ShotChangeDetectionConfig): Self = StObject.set(x, "shotChangeDetectionConfig", value.asInstanceOf[js.Any])
     

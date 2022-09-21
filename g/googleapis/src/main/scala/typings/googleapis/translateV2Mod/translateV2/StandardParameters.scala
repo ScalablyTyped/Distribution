@@ -1,5 +1,12 @@
 package typings.googleapis.translateV2Mod.translateV2
 
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleapisCommon.mod.BaseExternalAccountClient
+import typings.googleapisCommon.mod.Compute
+import typings.googleapisCommon.mod.GoogleAuth
+import typings.googleapisCommon.mod.JWT
+import typings.googleapisCommon.mod.OAuth2Client
+import typings.googleapisCommon.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +30,13 @@ trait StandardParameters extends StObject {
   var alt: js.UndefOr[String] = js.undefined
   
   /**
+    * Auth client or API Key for the request
+    */
+  var auth: js.UndefOr[
+    String | OAuth2Client | JWT | Compute | UserRefreshClient | BaseExternalAccountClient | GoogleAuth[JSONClient]
+  ] = js.undefined
+  
+  /**
     * OAuth bearer token.
     */
   var bearer_token: js.UndefOr[String] = js.undefined
@@ -38,9 +52,7 @@ trait StandardParameters extends StObject {
   var fields: js.UndefOr[String] = js.undefined
   
   /**
-    * API key. Your API key identifies your project and provides you with API
-    * access, quota, and reports. Required unless you provide an OAuth 2.0
-    * token.
+    * API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.
     */
   var key: js.UndefOr[String] = js.undefined
   
@@ -60,9 +72,7 @@ trait StandardParameters extends StObject {
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Available to use for quota purposes for server-side applications. Can be
-    * any arbitrary string assigned to a user, but should not exceed 40
-    * characters. Overrides userIp if both are provided.
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.
     */
   var quotaUser: js.UndefOr[String] = js.undefined
   
@@ -96,6 +106,12 @@ object StandardParameters {
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setAuth(
+      value: String | OAuth2Client | JWT | Compute | UserRefreshClient | BaseExternalAccountClient | GoogleAuth[JSONClient]
+    ): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setBearer_token(value: String): Self = StObject.set(x, "bearer_token", value.asInstanceOf[js.Any])
     

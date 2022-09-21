@@ -12,7 +12,7 @@ object labelModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/models/LabelModel", "LabelModel")
   @js.native
-  class LabelModel () extends BaseModel[LinkModel[LinkModelListener], BaseModelListener] {
+  open class LabelModel () extends BaseModel[LinkModel[LinkModelListener], BaseModelListener] {
     def this(`type`: String) = this()
     def this(`type`: String, id: String) = this()
     def this(`type`: Unit, id: String) = this()

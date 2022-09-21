@@ -49,7 +49,7 @@ object mod {
       
       inline def setSplitOnCharsUndefined: Self = StObject.set(x, "splitOnChars", js.undefined)
       
-      inline def setSplitOnCharsVarargs(value: String*): Self = StObject.set(x, "splitOnChars", js.Array(value :_*))
+      inline def setSplitOnCharsVarargs(value: String*): Self = StObject.set(x, "splitOnChars", js.Array(value*))
       
       inline def setTruncationChar(value: String): Self = StObject.set(x, "truncationChar", value.asInstanceOf[js.Any])
       

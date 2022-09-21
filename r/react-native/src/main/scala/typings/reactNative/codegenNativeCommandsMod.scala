@@ -1,0 +1,33 @@
+package typings.reactNative
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object codegenNativeCommandsMod {
+  
+  @JSImport("react-native/Libraries/Utilities/codegenNativeCommands", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T /* <: js.Object */](options: Options[/* keyof T */ String]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  trait Options[T /* <: String */] extends StObject {
+    
+    val supportedCommands: js.Array[T]
+  }
+  object Options {
+    
+    inline def apply[T /* <: String */](supportedCommands: js.Array[T]): Options[T] = {
+      val __obj = js.Dynamic.literal(supportedCommands = supportedCommands.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Options[T]]
+    }
+    
+    extension [Self <: Options[?], T /* <: String */](x: Self & Options[T]) {
+      
+      inline def setSupportedCommands(value: js.Array[T]): Self = StObject.set(x, "supportedCommands", value.asInstanceOf[js.Any])
+      
+      inline def setSupportedCommandsVarargs(value: T*): Self = StObject.set(x, "supportedCommands", js.Array(value*))
+    }
+  }
+}

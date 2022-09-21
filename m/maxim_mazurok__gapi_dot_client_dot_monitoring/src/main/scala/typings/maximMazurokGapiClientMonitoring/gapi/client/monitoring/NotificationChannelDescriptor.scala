@@ -24,6 +24,9 @@ trait NotificationChannelDescriptor extends StObject {
     */
   var name: js.UndefOr[String] = js.undefined
   
+  /** The tiers that support this notification channel; the project service tier must be one of the supported_tiers. */
+  var supportedTiers: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * The type of notification channel, such as "email" and "sms". To view the full list of channels, see Channel descriptors
     * (https://cloud.google.com/monitoring/alerts/using-channels-api#ncd). Notification channel types are globally unique.
@@ -51,7 +54,7 @@ object NotificationChannelDescriptor {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLaunchStage(value: String): Self = StObject.set(x, "launchStage", value.asInstanceOf[js.Any])
     
@@ -60,6 +63,12 @@ object NotificationChannelDescriptor {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSupportedTiers(value: js.Array[String]): Self = StObject.set(x, "supportedTiers", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedTiersUndefined: Self = StObject.set(x, "supportedTiers", js.undefined)
+    
+    inline def setSupportedTiersVarargs(value: String*): Self = StObject.set(x, "supportedTiers", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -1,8 +1,8 @@
 package typings.tar
 
-import typings.node.Buffer
-import typings.node.NodeJS.WritableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.zlibMod.ZlibOptions
+import typings.std.WritableStream
 import typings.tar.mod.FileStat
 import typings.tar.mod.ReadEntry
 import typings.tar.tarBooleans.`false`
@@ -299,6 +299,14 @@ object anon {
     var `no-mtime`: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Set to true to omit calling `fs.chmod()` to ensure that the extracted file
+      * matches the entry mode. This also suppresses the call to `process.umask()`
+      * to determine the default umask value, since tar will extract with whatever
+      * mode is provided, and let the process `umask` apply normally.
+      */
+    var noChmod: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Set to true to omit writing mtime value for extracted entries.
       * [Alias: m, no-mtime]
       */
@@ -365,7 +373,9 @@ object anon {
       * falsey value is provided, then the entry is written to disk as normal.
       * (To exclude items from extraction, use the filter option described above.)
       */
-    var transform: js.UndefOr[js.Function1[/* entry */ ReadEntry, js.UndefOr[WritableStream | `false` | Null]]] = js.undefined
+    var transform: js.UndefOr[
+        js.Function1[/* entry */ ReadEntry, js.UndefOr[WritableStream[Any] | `false` | Null]]
+      ] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
     
@@ -462,6 +472,10 @@ object anon {
       
       inline def `setNo-mtimeUndefined`: Self = StObject.set(x, "no-mtime", js.undefined)
       
+      inline def setNoChmod(value: Boolean): Self = StObject.set(x, "noChmod", value.asInstanceOf[js.Any])
+      
+      inline def setNoChmodUndefined: Self = StObject.set(x, "noChmod", js.undefined)
+      
       inline def setNoMtime(value: Boolean): Self = StObject.set(x, "noMtime", value.asInstanceOf[js.Any])
       
       inline def setNoMtimeUndefined: Self = StObject.set(x, "noMtime", js.undefined)
@@ -504,7 +518,7 @@ object anon {
       
       inline def setSync(value: `true`): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      inline def setTransform(value: /* entry */ ReadEntry => js.UndefOr[WritableStream | `false` | Null]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* entry */ ReadEntry => js.UndefOr[WritableStream[Any] | `false` | Null]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       

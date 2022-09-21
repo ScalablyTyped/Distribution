@@ -57,7 +57,7 @@ object ReadonlyLegendClickEvent {
     
     inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
@@ -65,11 +65,11 @@ object ReadonlyLegendClickEvent {
     
     inline def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setFullData(value: js.Array[Data]): Self = StObject.set(x, "fullData", value.asInstanceOf[js.Any])
     
-    inline def setFullDataVarargs(value: Data*): Self = StObject.set(x, "fullData", js.Array(value :_*))
+    inline def setFullDataVarargs(value: Data*): Self = StObject.set(x, "fullData", js.Array(value*))
     
     inline def setFullLayout(value: typings.plotlyJs.anon.PartialLayout): Self = StObject.set(x, "fullLayout", value.asInstanceOf[js.Any])
     

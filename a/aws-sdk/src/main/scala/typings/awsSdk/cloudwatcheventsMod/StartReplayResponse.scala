@@ -14,7 +14,7 @@ trait StartReplayResponse extends StObject {
   /**
     * The time at which the replay started.
     */
-  var ReplayStartTime: js.UndefOr[Timestamp] = js.undefined
+  var ReplayStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the replay.
@@ -39,7 +39,7 @@ object StartReplayResponse {
     
     inline def setReplayArnUndefined: Self = StObject.set(x, "ReplayArn", js.undefined)
     
-    inline def setReplayStartTime(value: Timestamp): Self = StObject.set(x, "ReplayStartTime", value.asInstanceOf[js.Any])
+    inline def setReplayStartTime(value: js.Date): Self = StObject.set(x, "ReplayStartTime", value.asInstanceOf[js.Any])
     
     inline def setReplayStartTimeUndefined: Self = StObject.set(x, "ReplayStartTime", js.undefined)
     

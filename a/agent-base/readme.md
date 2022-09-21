@@ -10,10 +10,10 @@ Turn a function into an `http.Agent` instance
 | ------------------ | :-------------: |
 | Full name          | agent-base |
 | Keywords           | http, agent, base, barebones, https |
-| # releases         | 7 |
-| # dependents       | 47 |
-| # downloads        | 638630598 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2811834333333333E8 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/node-agent-base#readme)

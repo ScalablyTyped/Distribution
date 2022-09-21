@@ -45,7 +45,7 @@ object CreatePullRequestInput {
     
     inline def setTargets(value: TargetList): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value*))
     
     inline def setTitle(value: Title): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

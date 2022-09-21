@@ -1,21 +1,20 @@
 package typings.rcTabs
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.RefAttributes
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object tabPaneMod {
+object tabPaneMod extends Shortcut {
   
-  @JSImport("rc-tabs/es/TabPanelList/TabPane", JSImport.Namespace)
+  @JSImport("rc-tabs/es/TabPanelList/TabPane", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(
-    hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren: TabPaneProps
-  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  val default: ForwardRefExoticComponent[TabPaneProps & RefAttributes[HTMLDivElement]] = js.native
   
   trait TabPaneProps extends StObject {
     
@@ -113,4 +112,9 @@ object tabPaneMod {
       inline def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
     }
   }
+  
+  type _To = ForwardRefExoticComponent[TabPaneProps & RefAttributes[HTMLDivElement]]
+  
+  /* This means you don't have to write `default`, but can instead just say `tabPaneMod.foo` */
+  override def _to: ForwardRefExoticComponent[TabPaneProps & RefAttributes[HTMLDivElement]] = default
 }

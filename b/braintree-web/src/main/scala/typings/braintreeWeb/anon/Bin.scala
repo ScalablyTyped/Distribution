@@ -8,18 +8,12 @@ trait Bin extends StObject {
   
   var bin: String
   
-  var cardType: String
-  
-  var isNetworkTokenized: Boolean
-  
-  var lastFour: String
-  
-  var lastTow: String
+  var nonce: String
 }
 object Bin {
   
-  inline def apply(bin: String, cardType: String, isNetworkTokenized: Boolean, lastFour: String, lastTow: String): Bin = {
-    val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any], cardType = cardType.asInstanceOf[js.Any], isNetworkTokenized = isNetworkTokenized.asInstanceOf[js.Any], lastFour = lastFour.asInstanceOf[js.Any], lastTow = lastTow.asInstanceOf[js.Any])
+  inline def apply(bin: String, nonce: String): Bin = {
+    val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bin]
   }
   
@@ -27,12 +21,6 @@ object Bin {
     
     inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     
-    inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
-    
-    inline def setIsNetworkTokenized(value: Boolean): Self = StObject.set(x, "isNetworkTokenized", value.asInstanceOf[js.Any])
-    
-    inline def setLastFour(value: String): Self = StObject.set(x, "lastFour", value.asInstanceOf[js.Any])
-    
-    inline def setLastTow(value: String): Self = StObject.set(x, "lastTow", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
   }
 }

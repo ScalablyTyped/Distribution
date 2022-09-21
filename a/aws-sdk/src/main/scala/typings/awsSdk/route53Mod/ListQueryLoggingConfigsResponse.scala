@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListQueryLoggingConfigsResponse extends StObject {
   
   /**
-    * If a response includes the last of the query logging configurations that are associated with the current AWS account, NextToken doesn't appear in the response. If a response doesn't include the last of the configurations, you can get more configurations by submitting another ListQueryLoggingConfigs request. Get the value of NextToken that Amazon Route 53 returned in the previous response and include it in NextToken in the next request.
+    * If a response includes the last of the query logging configurations that are associated with the current Amazon Web Services account, NextToken doesn't appear in the response. If a response doesn't include the last of the configurations, you can get more configurations by submitting another ListQueryLoggingConfigs request. Get the value of NextToken that Amazon Route 53 returned in the previous response and include it in NextToken in the next request.
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * An array that contains one QueryLoggingConfig element for each configuration for DNS query logging that is associated with the current AWS account.
+    * An array that contains one QueryLoggingConfig element for each configuration for DNS query logging that is associated with the current Amazon Web Services account.
     */
   var QueryLoggingConfigs: typings.awsSdk.route53Mod.QueryLoggingConfigs
 }
@@ -31,6 +31,6 @@ object ListQueryLoggingConfigsResponse {
     
     inline def setQueryLoggingConfigs(value: QueryLoggingConfigs): Self = StObject.set(x, "QueryLoggingConfigs", value.asInstanceOf[js.Any])
     
-    inline def setQueryLoggingConfigsVarargs(value: QueryLoggingConfig*): Self = StObject.set(x, "QueryLoggingConfigs", js.Array(value :_*))
+    inline def setQueryLoggingConfigsVarargs(value: QueryLoggingConfig*): Self = StObject.set(x, "QueryLoggingConfigs", js.Array(value*))
   }
 }

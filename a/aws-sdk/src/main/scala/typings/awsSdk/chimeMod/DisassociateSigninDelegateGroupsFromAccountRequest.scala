@@ -29,6 +29,6 @@ object DisassociateSigninDelegateGroupsFromAccountRequest {
     
     inline def setGroupNames(value: NonEmptyStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
     
-    inline def setGroupNamesVarargs(value: String*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
+    inline def setGroupNamesVarargs(value: String*): Self = StObject.set(x, "GroupNames", js.Array(value*))
   }
 }

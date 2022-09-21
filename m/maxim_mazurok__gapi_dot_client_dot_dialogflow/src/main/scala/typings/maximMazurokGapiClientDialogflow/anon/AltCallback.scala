@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDialogflow.anon
 
+import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3FulfillIntentRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,11 +35,14 @@ trait AltCallback extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: GoogleCloudDialogflowCxV3FulfillIntentRequest
+  
   /**
-    * Required. The name of the session this query is sent to. Format: `projects//agent/sessions/`, or `projects//agent/environments//users//sessions/`. If `Environment ID` is not
-    * specified, we assume default 'draft' environment. If `User ID` is not specified, we are using "-". It's up to the API caller to choose an appropriate `Session ID` and `User Id`.
-    * They can be a random number or some type of user and session identifiers (preferably hashed). The length of the `Session ID` and `User ID` must not exceed 36 characters. For
-    * more information, see the [API interactions guide](https://cloud.google.com/dialogflow/docs/api-overview).
+    * Required. The name of the session this query is sent to. Format: `projects//locations//agents//sessions/` or `projects//locations//agents//environments//sessions/`. If
+    * `Environment ID` is not specified, we assume default 'draft' environment. It's up to the API caller to choose an appropriate `Session ID`. It can be a random number or some type
+    * of session identifiers (preferably hashed). The length of the `Session ID` must not exceed 36 characters. For more information, see the [sessions
+    * guide](https://cloud.google.com/dialogflow/cx/docs/concept/session).
     */
   var session: String
   
@@ -50,8 +54,8 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(session: String): AltCallback = {
-    val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
+  inline def apply(resource: GoogleCloudDialogflowCxV3FulfillIntentRequest, session: String): AltCallback = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
   
@@ -92,6 +96,8 @@ object AltCallback {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: GoogleCloudDialogflowCxV3FulfillIntentRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     

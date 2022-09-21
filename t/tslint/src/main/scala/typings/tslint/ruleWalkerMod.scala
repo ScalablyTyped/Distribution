@@ -17,7 +17,7 @@ object ruleWalkerMod {
   
   @JSImport("tslint/lib/language/walker/ruleWalker", "RuleWalker")
   @js.native
-  class RuleWalker protected ()
+  open class RuleWalker protected ()
     extends SyntaxWalker
        with IWalker {
     def this(sourceFile: SourceFile, options: IOptions) = this()
@@ -49,7 +49,7 @@ object ruleWalkerMod {
     
     def deleteText(start: Double, length: Double): Replacement = js.native
     
-    /* private */ val failures: js.Any = js.native
+    /* private */ val failures: Any = js.native
     
     /* CompleteClass */
     override def getFailures(): js.Array[RuleFailure] = js.native
@@ -58,7 +58,7 @@ object ruleWalkerMod {
     
     def getLineAndCharacterOfPosition(position: Double): LineAndCharacter = js.native
     
-    def getOptions(): js.Any = js.native
+    def getOptions(): Any = js.native
     
     def getRuleName(): String = js.native
     
@@ -67,13 +67,13 @@ object ruleWalkerMod {
     
     def hasOption(option: String): Boolean = js.native
     
-    /* private */ val limit: js.Any = js.native
+    /* private */ val limit: Any = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ val options: Any = js.native
     
-    /* private */ val ruleName: js.Any = js.native
+    /* private */ val ruleName: Any = js.native
     
-    /* private */ val sourceFile: js.Any = js.native
+    /* private */ val sourceFile: Any = js.native
     
     /* CompleteClass */
     override def walk(sourceFile: SourceFile): Unit = js.native

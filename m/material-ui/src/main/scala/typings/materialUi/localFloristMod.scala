@@ -10,10 +10,10 @@ object localFloristMod {
   
   @JSImport("material-ui/svg-icons/maps/local-florist", JSImport.Default)
   @js.native
-  class default () extends MapsLocalFlorist
+  open class default () extends MapsLocalFlorist
   
   @JSImport("material-ui/svg-icons/maps/local-florist", "MapsLocalFlorist")
   @js.native
-  class MapsLocalFlorist ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalFlorist ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

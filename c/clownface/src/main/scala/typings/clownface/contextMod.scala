@@ -1,9 +1,9 @@
 package typings.clownface
 
-import typings.rdfJs.mod.DatasetCore
-import typings.rdfJs.mod.Quad
-import typings.rdfJs.mod.QuadGraph
-import typings.rdfJs.mod.Term
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.dataModelMod.QuadGraph
+import typings.rdfjsTypes.dataModelMod.Term
+import typings.rdfjsTypes.datasetMod.DatasetCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +13,11 @@ object contextMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("clownface/lib/Context", JSImport.Namespace)
   @js.native
-  class ^[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] protected ()
+  open class ^[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] protected ()
     extends StObject
        with Context[D, T] {
-    def this(dataset: D, graph: Unit, value: js.Any) = this()
-    def this(dataset: D, graph: QuadGraph, value: js.Any) = this()
+    def this(dataset: D, graph: Unit, value: Any) = this()
+    def this(dataset: D, graph: QuadGraph, value: Any) = this()
     
     /* CompleteClass */
     var dataset: D = js.native

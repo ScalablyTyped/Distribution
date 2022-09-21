@@ -1,5 +1,11 @@
 package typings.userIdleObserver
 
+import typings.userIdleObserver.userIdleObserverStrings.DOMContentLoaded
+import typings.userIdleObserver.userIdleObserverStrings.devicemotion
+import typings.userIdleObserver.userIdleObserverStrings.deviceorientation
+import typings.userIdleObserver.userIdleObserverStrings.gamepadconnected
+import typings.userIdleObserver.userIdleObserverStrings.gamepaddisconnected
+import typings.userIdleObserver.userIdleObserverStrings.orientationchange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +46,7 @@ object mod {
       */
     var listeners: js.UndefOr[
         js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 97 */ js.Any
+          DOMContentLoaded | devicemotion | deviceorientation | gamepadconnected | gamepaddisconnected | orientationchange
         ]
       ] = js.undefined
   }
@@ -63,13 +69,15 @@ object mod {
       
       inline def setListeners(
         value: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 97 */ js.Any
+              DOMContentLoaded | devicemotion | deviceorientation | gamepadconnected | gamepaddisconnected | orientationchange
             ]
       ): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
       inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
-      inline def setListenersVarargs(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 97 */ js.Any)*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+      inline def setListenersVarargs(
+        value: (DOMContentLoaded | devicemotion | deviceorientation | gamepadconnected | gamepaddisconnected | orientationchange)*
+      ): Self = StObject.set(x, "listeners", js.Array(value*))
     }
   }
   

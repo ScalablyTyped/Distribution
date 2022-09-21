@@ -16,6 +16,8 @@ trait IStickyOptions extends StObject {
   
   var containerClass: js.UndefOr[String] = js.undefined
   
+  var dynamicHeight: js.UndefOr[Boolean] = js.undefined
+  
   var marginBottom: js.UndefOr[Double] = js.undefined
   
   var marginTop: js.UndefOr[Double] = js.undefined
@@ -56,6 +58,10 @@ object IStickyOptions {
     inline def setContainerClassUndefined: Self = StObject.set(x, "containerClass", js.undefined)
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setDynamicHeight(value: Boolean): Self = StObject.set(x, "dynamicHeight", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicHeightUndefined: Self = StObject.set(x, "dynamicHeight", js.undefined)
     
     inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     

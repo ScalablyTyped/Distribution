@@ -10,15 +10,12 @@ AngularJS module that adds support for specifying default child views for abstra
 | ------------------ | :-------------: |
 | Full name          | angular-ui-router-default |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 33134 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1546.3333333333333 |
+| # stars            | 29.0 |
 
 ## Links
-- [Homepage](https://github.com/nonplus/angular-ui-router-default)
-- [Bugs](https://github.com/nonplus/angular-ui-router-default/issues)
-- [Repository](https://github.com/nonplus/angular-ui-router-default)
 - [Npm](https://www.npmjs.com/package/angular-ui-router-default)
     
 

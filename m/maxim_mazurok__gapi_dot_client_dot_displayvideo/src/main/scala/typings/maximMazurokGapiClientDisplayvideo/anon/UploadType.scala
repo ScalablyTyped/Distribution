@@ -19,9 +19,6 @@ trait UploadType extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Required. The ID of the parent channel to which the sites belong. */
-  var channelId: String
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -31,7 +28,7 @@ trait UploadType extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the partner that owns the parent channel. */
+  /** Required. The ID of the partner. */
   var partnerId: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,6 +36,9 @@ trait UploadType extends StObject {
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Required. Identifies the type of this assigned targeting option. Supported targeting types: * `TARGETING_TYPE_CHANNEL` */
+  var targetingType: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -48,8 +48,8 @@ trait UploadType extends StObject {
 }
 object UploadType {
   
-  inline def apply(channelId: String, partnerId: String): UploadType = {
-    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], partnerId = partnerId.asInstanceOf[js.Any])
+  inline def apply(partnerId: String, targetingType: String): UploadType = {
+    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any], targetingType = targetingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadType]
   }
   
@@ -70,8 +70,6 @@ object UploadType {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
-    
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -94,6 +92,8 @@ object UploadType {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

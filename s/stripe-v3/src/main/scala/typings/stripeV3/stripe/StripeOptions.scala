@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StripeOptions extends StObject {
   
+  var apiVersion: js.UndefOr[String] = js.undefined
+  
   var betas: js.UndefOr[js.Array[String]] = js.undefined
   
   var locale: js.UndefOr[String] = js.undefined
@@ -21,11 +23,15 @@ object StripeOptions {
   
   extension [Self <: StripeOptions](x: Self) {
     
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    
     inline def setBetas(value: js.Array[String]): Self = StObject.set(x, "betas", value.asInstanceOf[js.Any])
     
     inline def setBetasUndefined: Self = StObject.set(x, "betas", js.undefined)
     
-    inline def setBetasVarargs(value: String*): Self = StObject.set(x, "betas", js.Array(value :_*))
+    inline def setBetasVarargs(value: String*): Self = StObject.set(x, "betas", js.Array(value*))
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

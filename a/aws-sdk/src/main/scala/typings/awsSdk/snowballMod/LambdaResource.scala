@@ -12,7 +12,7 @@ trait LambdaResource extends StObject {
   var EventTriggers: js.UndefOr[EventTriggerDefinitionList] = js.undefined
   
   /**
-    * An Amazon Resource Name (ARN) that represents an AWS Lambda function to be triggered by PUT object actions on the associated local Amazon S3 resource.
+    * An Amazon Resource Name (ARN) that represents an Lambda function to be triggered by PUT object actions on the associated local Amazon S3 resource.
     */
   var LambdaArn: js.UndefOr[ResourceARN] = js.undefined
 }
@@ -29,7 +29,7 @@ object LambdaResource {
     
     inline def setEventTriggersUndefined: Self = StObject.set(x, "EventTriggers", js.undefined)
     
-    inline def setEventTriggersVarargs(value: EventTriggerDefinition*): Self = StObject.set(x, "EventTriggers", js.Array(value :_*))
+    inline def setEventTriggersVarargs(value: EventTriggerDefinition*): Self = StObject.set(x, "EventTriggers", js.Array(value*))
     
     inline def setLambdaArn(value: ResourceARN): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
     

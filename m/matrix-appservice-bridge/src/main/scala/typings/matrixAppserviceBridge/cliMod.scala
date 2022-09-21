@@ -11,39 +11,20 @@ object cliMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/cli", "Cli")
   @js.native
-  class Cli[ConfigType /* <: Record[String, js.Any] */] protected () extends StObject {
+  open class Cli[ConfigType /* <: Record[String, Any] */] protected () extends StObject {
     /**
       * @constructor
       * @param opts CLI options
-      * @param opts.run The function called when you should run the bridge.
-      * @param opts.generateRegistration The function
-      * called when you should generate a registration.
-      * @param opts.bridgeConfig Bridge-specific config info. If null, no
-      * --config option will be present in the CLI. Default: null.
-      * @param opts.bridgeConfig.affectsRegistration True to make the
-      * --config option required when generating the registration. The parsed config
-      * can be accessed via <code>Cli.getConfig()</code>.
-      * @param opts.bridgeConfig.schema Path to a schema YAML file
-      * (string) or the parsed schema file (Object).
-      * @param opts.bridgeConfig.defaults The default options for the
-      * config file.
-      * @param opts.noUrl Don't ask user for appservice url when generating
-      * registration.
-      * @param opts.enableRegistration Enable '--generate-registration'.
-      * Default True.
-      * @param opts.registrationPath The path to write the registration
-      * file to. Users can overwrite this with -f.
-      * @param opts.enableLocalpart Enable '--localpart [-l]'. Default: false.
       */
     def this(opts: CliOpts[ConfigType]) = this()
     
-    /* private */ var args: js.Any = js.native
+    /* private */ var args: Any = js.native
     
-    /* private */ var assignConfigFile: js.Any = js.native
+    /* private */ var assignConfigFile: Any = js.native
     
-    /* private */ var bridgeConfig: js.Any = js.native
+    /* private */ var bridgeConfig: Any = js.native
     
-    /* private */ var generateRegistration: js.Any = js.native
+    /* private */ var generateRegistration: Any = js.native
     
     /**
       * Get the parsed arguments. Only set after run is called and arguments parsed.
@@ -64,13 +45,13 @@ object cliMod {
       */
     def getRegistrationFilePath(): String = js.native
     
-    /* private */ var loadConfig: js.Any = js.native
+    /* private */ var loadConfig: Any = js.native
     
-    /* private */ var loadYaml: js.Any = js.native
+    /* private */ var loadYaml: Any = js.native
     
-    /* private */ var opts: js.Any = js.native
+    /* private */ var opts: Any = js.native
     
-    /* private */ var printHelp: js.Any = js.native
+    /* private */ var printHelp: Any = js.native
     
     /**
       * Run the app from the command line. Will parse sys args.
@@ -78,7 +59,7 @@ object cliMod {
     def run(): Unit = js.native
     def run(args: CliArgs): Unit = js.native
     
-    /* private */ var startWithConfig: js.Any = js.native
+    /* private */ var startWithConfig: Any = js.native
   }
   /* static members */
   object Cli {
@@ -92,11 +73,6 @@ object cliMod {
     def DEFAULT_FILENAME: String = js.native
     inline def DEFAULT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_FILENAME")(x.asInstanceOf[js.Any])
     
-    @JSImport("matrix-appservice-bridge/lib/components/cli", "Cli.DEFAULT_PORT")
-    @js.native
-    def DEFAULT_PORT: Double = js.native
-    inline def DEFAULT_PORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_PORT")(x.asInstanceOf[js.Any])
-    
     @JSImport("matrix-appservice-bridge/lib/components/cli", "Cli.DEFAULT_WATCH_INTERVAL")
     @js.native
     def DEFAULT_WATCH_INTERVAL: Double = js.native
@@ -105,32 +81,24 @@ object cliMod {
   
   trait CliArgs extends StObject {
     
-    var config: String
+    var config: js.UndefOr[String] = js.undefined
     
-    var file: String
+    var file: js.UndefOr[String] = js.undefined
     
-    var `generate-registration`: Boolean
+    var `generate-registration`: js.UndefOr[Boolean] = js.undefined
     
-    var help: Boolean
+    var help: js.UndefOr[Boolean] = js.undefined
     
-    var localpart: String
+    var localpart: js.UndefOr[String] = js.undefined
     
-    var port: Double
+    var port: js.UndefOr[Double] = js.undefined
     
     var url: js.UndefOr[String] = js.undefined
   }
   object CliArgs {
     
-    inline def apply(
-      config: String,
-      file: String,
-      `generate-registration`: Boolean,
-      help: Boolean,
-      localpart: String,
-      port: Double
-    ): CliArgs = {
-      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], localpart = localpart.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-      __obj.updateDynamic("generate-registration")(`generate-registration`.asInstanceOf[js.Any])
+    inline def apply(): CliArgs = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CliArgs]
     }
     
@@ -138,15 +106,27 @@ object cliMod {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
       inline def `setGenerate-registration`(value: Boolean): Self = StObject.set(x, "generate-registration", value.asInstanceOf[js.Any])
       
+      inline def `setGenerate-registrationUndefined`: Self = StObject.set(x, "generate-registration", js.undefined)
+      
       inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      
+      inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
       
       inline def setLocalpart(value: String): Self = StObject.set(x, "localpart", value.asInstanceOf[js.Any])
       
+      inline def setLocalpartUndefined: Self = StObject.set(x, "localpart", js.undefined)
+      
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -155,14 +135,29 @@ object cliMod {
   }
   
   @js.native
-  trait CliOpts[ConfigType /* <: Record[String, js.Any] */] extends StObject {
+  trait CliOpts[ConfigType /* <: Record[String, Any] */] extends StObject {
     
+    /**
+      * Bridge-specific config info. If not defined, --config option will not be present in the CLI
+      */
     var bridgeConfig: js.UndefOr[AffectsRegistration] = js.native
     
+    /**
+      * Enable '--localpart [-l]' to allow users to configure the bot localpart.
+      * @default true
+      */
     var enableLocalpart: js.UndefOr[Boolean] = js.native
     
+    /**
+      * Enable '--generate-registration' to allow users to generate a registration file.
+      * @default true
+      */
     var enableRegistration: js.UndefOr[Boolean] = js.native
     
+    /**
+      * The function called when you should generate a registration.
+      * Must be defined unless `enableRegistration` is `false`.
+      */
     var generateRegistration: js.UndefOr[
         js.Function2[
           /* reg */ AppServiceRegistration, 
@@ -171,17 +166,35 @@ object cliMod {
         ]
       ] = js.native
     
+    /**
+      * Don't ask user for appservice url when generating registration.
+      * @default false
+      */
     var noUrl: js.UndefOr[Boolean] = js.native
     
+    /**
+      * This function is when the config is hot-reloaded. If not defined, hot-reloading is disabled.
+      *
+      * You can hot-reload the bridge by sending a SIGHUP signal to the bridge.
+      */
     var onConfigChanged: js.UndefOr[js.Function1[/* config */ ConfigType, Unit]] = js.native
     
-    var port: js.UndefOr[Double] = js.native
-    
+    /**
+      * The path to write the registration file to. Users can overwrite this with -f.
+      * @default "registration.yaml"
+      */
     var registrationPath: js.UndefOr[String] = js.native
     
+    /**
+      * This function called when you should run the bridge.
+      */
+    def run(): Unit = js.native
     def run(port: Double): Unit = js.native
     def run(port: Double, config: ConfigType): Unit = js.native
     def run(port: Double, config: ConfigType, registration: AppServiceRegistration): Unit = js.native
     def run(port: Double, config: Null, registration: AppServiceRegistration): Unit = js.native
+    def run(port: Null, config: ConfigType): Unit = js.native
+    def run(port: Null, config: ConfigType, registration: AppServiceRegistration): Unit = js.native
+    def run(port: Null, config: Null, registration: AppServiceRegistration): Unit = js.native
   }
 }

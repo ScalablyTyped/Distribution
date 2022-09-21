@@ -10,10 +10,10 @@ object findReplaceMod {
   
   @JSImport("material-ui/svg-icons/action/find-replace", JSImport.Default)
   @js.native
-  class default () extends ActionFindReplace
+  open class default () extends ActionFindReplace
   
   @JSImport("material-ui/svg-icons/action/find-replace", "ActionFindReplace")
   @js.native
-  class ActionFindReplace ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionFindReplace ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

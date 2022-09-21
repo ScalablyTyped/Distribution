@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientRequest")
 @js.native
-class ClientRequest ()
+open class ClientRequest ()
   extends StObject
      with typings.sharepoint.SP.ClientRequest {
   
   /* CompleteClass */
   override def add_requestFailed(
     value: js.Function2[
-      /* sender */ js.Any, 
+      /* sender */ Any, 
       /* args */ typings.sharepoint.SP.ClientRequestFailedEventArgs, 
       Unit
     ]
@@ -23,7 +23,7 @@ class ClientRequest ()
   /* CompleteClass */
   override def add_requestSucceeded(
     value: js.Function2[
-      /* sender */ js.Any, 
+      /* sender */ Any, 
       /* args */ typings.sharepoint.SP.ClientRequestSucceededEventArgs, 
       Unit
     ]
@@ -38,7 +38,7 @@ class ClientRequest ()
   /* CompleteClass */
   override def remove_requestFailed(
     value: js.Function2[
-      /* sender */ js.Any, 
+      /* sender */ Any, 
       /* args */ typings.sharepoint.SP.ClientRequestFailedEventArgs, 
       Unit
     ]
@@ -47,7 +47,7 @@ class ClientRequest ()
   /* CompleteClass */
   override def remove_requestSucceeded(
     value: js.Function2[
-      /* sender */ js.Any, 
+      /* sender */ Any, 
       /* args */ typings.sharepoint.SP.ClientRequestSucceededEventArgs, 
       Unit
     ]

@@ -22,6 +22,6 @@ object PutEventsRequest {
     
     inline def setEntries(value: PutEventsRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: PutEventsRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: PutEventsRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
   }
 }

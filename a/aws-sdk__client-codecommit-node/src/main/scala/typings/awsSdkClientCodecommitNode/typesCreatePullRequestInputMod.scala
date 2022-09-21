@@ -3,7 +3,6 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientCodecommitNode.typesTargetMod.Target
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesCreatePullRequestInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -49,7 +48,7 @@ object typesCreatePullRequestInputMod {
     /**
       * <p>The targets for the pull request, including the source of the code to be reviewed (the source branch), and the destination where the creator of the pull request intends the code to be merged after the pull request is closed (the destination branch).</p>
       */
-    var targets: js.Array[Target] | Iterable[Target]
+    var targets: js.Array[Target] | js.Iterable[Target]
     
     /**
       * <p>The title of the pull request. This title will be used to identify the pull request to other users in the repository.</p>
@@ -58,7 +57,7 @@ object typesCreatePullRequestInputMod {
   }
   object CreatePullRequestInput {
     
-    inline def apply(targets: js.Array[Target] | Iterable[Target], title: String): CreatePullRequestInput = {
+    inline def apply(targets: js.Array[Target] | js.Iterable[Target], title: String): CreatePullRequestInput = {
       val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreatePullRequestInput]
     }
@@ -70,7 +69,7 @@ object typesCreatePullRequestInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -87,9 +86,9 @@ object typesCreatePullRequestInputMod {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setTargets(value: js.Array[Target] | Iterable[Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: js.Array[Target] | js.Iterable[Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

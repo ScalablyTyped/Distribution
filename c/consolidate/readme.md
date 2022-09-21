@@ -11,9 +11,9 @@ Template engine consolidation library
 | Full name          | consolidate |
 | Keywords           | engine, template, view |
 | # releases         | 2 |
-| # dependents       | 1215 |
-| # downloads        | 99069890 |
-| # stars            | 98 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1920967E7 |
+| # stars            | 3436.0 |
 
 ## Links
 - [Homepage](https://github.com/tj/consolidate.js)

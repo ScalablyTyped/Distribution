@@ -27,6 +27,6 @@ object TableSortInfo {
     
     inline def setSortedIndexes(value: js.Array[Double]): Self = StObject.set(x, "sortedIndexes", value.asInstanceOf[js.Any])
     
-    inline def setSortedIndexesVarargs(value: Double*): Self = StObject.set(x, "sortedIndexes", js.Array(value :_*))
+    inline def setSortedIndexesVarargs(value: Double*): Self = StObject.set(x, "sortedIndexes", js.Array(value*))
   }
 }

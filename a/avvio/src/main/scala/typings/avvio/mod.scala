@@ -4,7 +4,6 @@ import typings.avvio.avvioStrings.close
 import typings.avvio.avvioStrings.preReady
 import typings.avvio.avvioStrings.start
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +25,9 @@ object mod {
   @js.native
   trait After[I, C] extends StObject {
     
-    def apply(fn: js.Function1[/* err */ Error, Unit]): C = js.native
-    def apply(fn: js.Function2[/* err */ Error, /* done */ js.Function, Unit]): C = js.native
-    def apply(fn: js.Function3[/* err */ Error, /* context */ C, /* done */ js.Function, Unit]): C = js.native
+    def apply(fn: js.Function1[/* err */ js.Error, Unit]): C = js.native
+    def apply(fn: js.Function2[/* err */ js.Error, /* done */ js.Function, Unit]): C = js.native
+    def apply(fn: js.Function3[/* err */ js.Error, /* context */ C, /* done */ js.Function, Unit]): C = js.native
   }
   
   @js.native
@@ -45,7 +44,7 @@ object mod {
     @JSName("on")
     def on_start(event: start, listener: js.Function0[Unit]): this.type = js.native
     
-    def `override`(server: context[I], fn: Plugin[js.Any, I], options: js.Any): context[I] = js.native
+    def `override`(server: context[I], fn: Plugin[Any, I], options: Any): context[I] = js.native
     
     def prettyPrint(): String = js.native
     
@@ -59,9 +58,9 @@ object mod {
   @js.native
   trait Close[I, C] extends StObject {
     
-    def apply(fn: js.Function1[/* err */ Error, Unit]): Unit = js.native
-    def apply(fn: js.Function2[/* err */ Error, /* done */ js.Function, Unit]): Unit = js.native
-    def apply(fn: js.Function3[/* err */ Error, /* context */ C, /* done */ js.Function, Unit]): Unit = js.native
+    def apply(fn: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    def apply(fn: js.Function2[/* err */ js.Error, /* done */ js.Function, Unit]): Unit = js.native
+    def apply(fn: js.Function3[/* err */ js.Error, /* context */ C, /* done */ js.Function, Unit]): Unit = js.native
   }
   
   type OnClose[I, C] = js.Function1[/* fn */ js.Function2[/* context */ C, /* done */ js.Function, Unit], C]
@@ -94,30 +93,30 @@ object mod {
   type Plugin[O, I] = js.Function3[
     /* server */ context[I], 
     /* options */ O, 
-    /* done */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
-    Unit
+    /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+    Any
   ]
   
   @js.native
   trait Ready[I, C] extends StObject {
     
     def apply(): js.Promise[C] = js.native
-    def apply(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def apply(callback: js.Function2[/* err */ Error, /* done */ js.Function, Unit]): Unit = js.native
-    def apply(callback: js.Function3[/* err */ Error, /* context */ C, /* done */ js.Function, Unit]): Unit = js.native
+    def apply(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    def apply(callback: js.Function2[/* err */ js.Error, /* done */ js.Function, Unit]): Unit = js.native
+    def apply(callback: js.Function3[/* err */ js.Error, /* context */ C, /* done */ js.Function, Unit]): Unit = js.native
   }
   
   trait Server[I] extends StObject {
     
-    def after(fn: js.Function1[/* err */ Error, Unit]): context[I]
-    def after(fn: js.Function2[/* err */ Error, /* done */ js.Function, Unit]): context[I]
-    def after(fn: js.Function3[/* err */ Error, /* context */ context[I], /* done */ js.Function, Unit]): context[I]
+    def after(fn: js.Function1[/* err */ js.Error, Unit]): context[I]
+    def after(fn: js.Function2[/* err */ js.Error, /* done */ js.Function, Unit]): context[I]
+    def after(fn: js.Function3[/* err */ js.Error, /* context */ context[I], /* done */ js.Function, Unit]): context[I]
     @JSName("after")
     var after_Original: After[I, context[I]]
     
-    def close(fn: js.Function1[/* err */ Error, Unit]): Unit
-    def close(fn: js.Function2[/* err */ Error, /* done */ js.Function, Unit]): Unit
-    def close(fn: js.Function3[/* err */ Error, /* context */ context[I], /* done */ js.Function, Unit]): Unit
+    def close(fn: js.Function1[/* err */ js.Error, Unit]): Unit
+    def close(fn: js.Function2[/* err */ js.Error, /* done */ js.Function, Unit]): Unit
+    def close(fn: js.Function3[/* err */ js.Error, /* context */ context[I], /* done */ js.Function, Unit]): Unit
     @JSName("close")
     var close_Original: Close[I, context[I]]
     
@@ -126,9 +125,9 @@ object mod {
     var onClose_Original: OnClose[I, context[I]]
     
     def ready(): js.Promise[context[I]]
-    def ready(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit
-    def ready(callback: js.Function2[/* err */ Error, /* done */ js.Function, Unit]): Unit
-    def ready(callback: js.Function3[/* err */ Error, /* context */ context[I], /* done */ js.Function, Unit]): Unit
+    def ready(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit
+    def ready(callback: js.Function2[/* err */ js.Error, /* done */ js.Function, Unit]): Unit
+    def ready(callback: js.Function3[/* err */ js.Error, /* context */ context[I], /* done */ js.Function, Unit]): Unit
     @JSName("ready")
     var ready_Original: Ready[I, context[I]]
     
@@ -144,7 +143,7 @@ object mod {
       close: Close[I, context[I]],
       onClose: /* fn */ js.Function2[context[I], /* done */ js.Function, Unit] => context[I],
       ready: Ready[I, context[I]],
-      use: (/* fn */ Plugin[js.Any, I], /* options */ js.UndefOr[js.Any]) => context[I]
+      use: (/* fn */ Plugin[Any, I], /* options */ js.UndefOr[Any]) => context[I]
     ): Server[I] = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], onClose = js.Any.fromFunction1(onClose), ready = ready.asInstanceOf[js.Any], use = js.Any.fromFunction2(use))
       __obj.asInstanceOf[Server[I]]
@@ -160,11 +159,11 @@ object mod {
       
       inline def setReady(value: Ready[I, context[I]]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      inline def setUse(value: (/* fn */ Plugin[js.Any, I], /* options */ js.UndefOr[js.Any]) => context[I]): Self = StObject.set(x, "use", js.Any.fromFunction2(value))
+      inline def setUse(value: (/* fn */ Plugin[Any, I], /* options */ js.UndefOr[Any]) => context[I]): Self = StObject.set(x, "use", js.Any.fromFunction2(value))
     }
   }
   
-  type Use[I, C] = js.Function2[/* fn */ Plugin[js.Any, I], /* options */ js.UndefOr[js.Any], C]
+  type Use[I, C] = js.Function2[/* fn */ Plugin[Any, I], /* options */ js.UndefOr[Any], C]
   
   type context[I] = mixedInstance[I] | Avvio[I]
   

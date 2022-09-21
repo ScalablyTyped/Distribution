@@ -8,5 +8,5 @@ object consumerListMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/_ConsumerList", "_ConsumerList")
   @js.native
-  val ConsumerList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val ConsumerList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

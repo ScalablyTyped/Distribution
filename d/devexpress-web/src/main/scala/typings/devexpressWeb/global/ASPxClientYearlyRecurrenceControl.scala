@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientYearlyRecurrenceControl")
 @js.native
-class ASPxClientYearlyRecurrenceControl ()
+open class ASPxClientYearlyRecurrenceControl ()
   extends StObject
      with typings.devexpressWeb.ASPxClientYearlyRecurrenceControl {
   
@@ -43,13 +43,13 @@ class ASPxClientYearlyRecurrenceControl ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.

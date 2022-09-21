@@ -15,7 +15,7 @@ object contextmenuMod {
   
   @JSImport("@lumino/widgets/types/contextmenu", "ContextMenu")
   @js.native
-  class ContextMenu protected () extends StObject {
+  open class ContextMenu protected () extends StObject {
     /**
       * Construct a new context menu.
       *
@@ -23,9 +23,13 @@ object contextmenuMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _idTick: js.Any = js.native
+    /* private */ var _groupByTarget: Any = js.native
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _idTick: Any = js.native
+    
+    /* private */ var _items: Any = js.native
+    
+    /* private */ var _sortBySelector: Any = js.native
     
     /**
       * Add an item to the context menu.
@@ -119,9 +123,27 @@ object contextmenuMod {
       var commands: CommandRegistry
       
       /**
+        * Whether to group items following the DOM hierarchy.
+        *
+        * Default true.
+        *
+        * #### Note
+        * If true, when the mouse event occurs on element `span` within `div.top`,
+        * the items matching `div.top` will be shown before the ones matching `body`.
+        */
+      var groupByTarget: js.UndefOr[Boolean] = js.undefined
+      
+      /**
         * A custom renderer for use with the context menu.
         */
       var renderer: js.UndefOr[IRenderer] = js.undefined
+      
+      /**
+        * Whether to sort by selector and rank or only rank.
+        *
+        * Default true.
+        */
+      var sortBySelector: js.UndefOr[Boolean] = js.undefined
     }
     object IOptions {
       
@@ -134,9 +156,17 @@ object contextmenuMod {
         
         inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
+        inline def setGroupByTarget(value: Boolean): Self = StObject.set(x, "groupByTarget", value.asInstanceOf[js.Any])
+        
+        inline def setGroupByTargetUndefined: Self = StObject.set(x, "groupByTarget", js.undefined)
+        
         inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
         inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        
+        inline def setSortBySelector(value: Boolean): Self = StObject.set(x, "sortBySelector", value.asInstanceOf[js.Any])
+        
+        inline def setSortBySelectorUndefined: Self = StObject.set(x, "sortBySelector", js.undefined)
       }
     }
   }

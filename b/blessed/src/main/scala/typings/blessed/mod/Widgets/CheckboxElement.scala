@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.CheckboxElement")
 @js.native
-class CheckboxElement () extends InputElement {
+open class CheckboxElement () extends InputElement {
   def this(options: CheckboxOptions) = this()
   
   /**

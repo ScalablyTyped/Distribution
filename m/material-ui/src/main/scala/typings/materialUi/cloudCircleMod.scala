@@ -10,10 +10,10 @@ object cloudCircleMod {
   
   @JSImport("material-ui/svg-icons/file/cloud-circle", JSImport.Default)
   @js.native
-  class default () extends FileCloudCircle
+  open class default () extends FileCloudCircle
   
   @JSImport("material-ui/svg-icons/file/cloud-circle", "FileCloudCircle")
   @js.native
-  class FileCloudCircle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class FileCloudCircle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

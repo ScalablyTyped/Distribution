@@ -31,14 +31,14 @@ object AgentNotebookHistoryResult {
     
     inline def setHistories(value: js.Array[AgentNotebookHistoryInfo]): Self = StObject.set(x, "histories", value.asInstanceOf[js.Any])
     
-    inline def setHistoriesVarargs(value: AgentNotebookHistoryInfo*): Self = StObject.set(x, "histories", js.Array(value :_*))
+    inline def setHistoriesVarargs(value: AgentNotebookHistoryInfo*): Self = StObject.set(x, "histories", js.Array(value*))
     
     inline def setSchedules(value: js.Array[AgentJobScheduleInfo]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     
-    inline def setSchedulesVarargs(value: AgentJobScheduleInfo*): Self = StObject.set(x, "schedules", js.Array(value :_*))
+    inline def setSchedulesVarargs(value: AgentJobScheduleInfo*): Self = StObject.set(x, "schedules", js.Array(value*))
     
     inline def setSteps(value: js.Array[AgentJobStepInfo]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: AgentJobStepInfo*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: AgentJobStepInfo*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

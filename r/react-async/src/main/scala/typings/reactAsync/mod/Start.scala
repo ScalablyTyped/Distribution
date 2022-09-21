@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Start
   extends StObject
      with AbstractAction
-     with AsyncAction[js.Any] {
+     with AsyncAction[Any] {
   
   def payload(): js.Promise[Unit]
   

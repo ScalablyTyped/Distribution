@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListProblemsRequest extends StObject {
   
   /**
+    *  The name of the component. 
+    */
+  var ComponentName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ComponentName] = js.undefined
+  
+  /**
     * The time when the problem ended, in epoch seconds. If not specified, problems within the past seven days are returned.
     */
-  var EndTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.EndTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.
@@ -29,7 +34,7 @@ trait ListProblemsRequest extends StObject {
   /**
     * The time when the problem was detected, in epoch seconds. If you don't specify a time frame for the request, problems within the past seven days are returned.
     */
-  var StartTime: js.UndefOr[typings.awsSdk.applicationinsightsMod.StartTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object ListProblemsRequest {
   
@@ -40,7 +45,11 @@ object ListProblemsRequest {
   
   extension [Self <: ListProblemsRequest](x: Self) {
     
-    inline def setEndTime(value: EndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
+    
+    inline def setComponentNameUndefined: Self = StObject.set(x, "ComponentName", js.undefined)
+    
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -56,7 +65,7 @@ object ListProblemsRequest {
     
     inline def setResourceGroupNameUndefined: Self = StObject.set(x, "ResourceGroupName", js.undefined)
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

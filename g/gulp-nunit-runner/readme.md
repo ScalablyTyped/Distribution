@@ -10,10 +10,10 @@ A Gulp.js plugin to facilitate the running of NUnit unit tests on .Net assemblie
 | ------------------ | :-------------: |
 | Full name          | gulp-nunit-runner |
 | Keywords           | gulp, nunit, .net, gulpplugin |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 25165 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2023.3333333333333 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/keithmorris/gulp-nunit-runner)

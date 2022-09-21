@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ParentalStatusAssignedTargetingOptionDetails extends StObject {
   
-  /** Output only. The parental status of the audience. */
+  /** The parental status of the audience. Output only in v1. Required in v2. */
   var parentalStatus: js.UndefOr[String] = js.undefined
   
   /** Required. The targeting_option_id of a TargetingOption of type `TARGETING_TYPE_PARENTAL_STATUS`. */

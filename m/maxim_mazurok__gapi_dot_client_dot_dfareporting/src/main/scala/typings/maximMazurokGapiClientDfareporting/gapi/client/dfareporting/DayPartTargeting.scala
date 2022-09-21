@@ -32,13 +32,13 @@ object DayPartTargeting {
     
     inline def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
     
-    inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+    inline def setDaysOfWeekVarargs(value: String*): Self = StObject.set(x, "daysOfWeek", js.Array(value*))
     
     inline def setHoursOfDay(value: js.Array[Double]): Self = StObject.set(x, "hoursOfDay", value.asInstanceOf[js.Any])
     
     inline def setHoursOfDayUndefined: Self = StObject.set(x, "hoursOfDay", js.undefined)
     
-    inline def setHoursOfDayVarargs(value: Double*): Self = StObject.set(x, "hoursOfDay", js.Array(value :_*))
+    inline def setHoursOfDayVarargs(value: Double*): Self = StObject.set(x, "hoursOfDay", js.Array(value*))
     
     inline def setUserLocalTime(value: Boolean): Self = StObject.set(x, "userLocalTime", value.asInstanceOf[js.Any])
     

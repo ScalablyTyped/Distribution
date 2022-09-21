@@ -26,10 +26,10 @@ object CloudwatchEventType {
     
     inline def `setDetail-type`(value: js.Array[String]): Self = StObject.set(x, "detail-type", value.asInstanceOf[js.Any])
     
-    inline def `setDetail-typeVarargs`(value: String*): Self = StObject.set(x, "detail-type", js.Array(value :_*))
+    inline def `setDetail-typeVarargs`(value: String*): Self = StObject.set(x, "detail-type", js.Array(value*))
     
     inline def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value*))
   }
 }

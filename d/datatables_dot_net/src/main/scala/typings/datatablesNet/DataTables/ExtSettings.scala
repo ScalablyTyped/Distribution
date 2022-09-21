@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region "ext internal"
 trait ExtSettings extends StObject {
   
-  var aTypes: js.Array[js.Any]
+  var aTypes: js.Array[Any]
   
-  var afnFiltering: js.Array[js.Any]
+  var afnFiltering: js.Array[Any]
   
   var afnSortData: js.Object
   
-  var aoFeatures: js.Array[js.Any]
+  var aoFeatures: js.Array[Any]
   
   var builder: String
   
@@ -22,7 +22,7 @@ trait ExtSettings extends StObject {
   
   var errMode: String
   
-  var feature: js.Array[js.Any]
+  var feature: js.Array[Any]
   
   def fnVersionCheck(version: String): String
   
@@ -52,7 +52,7 @@ trait ExtSettings extends StObject {
   
   var sVersion: String
   
-  var search: js.Array[js.Any]
+  var search: js.Array[Any]
   
   var selector: js.Object
   
@@ -64,14 +64,14 @@ trait ExtSettings extends StObject {
 object ExtSettings {
   
   inline def apply(
-    aTypes: js.Array[js.Any],
-    afnFiltering: js.Array[js.Any],
+    aTypes: js.Array[Any],
+    afnFiltering: js.Array[Any],
     afnSortData: js.Object,
-    aoFeatures: js.Array[js.Any],
+    aoFeatures: js.Array[Any],
     builder: String,
     classes: ExtClassesSettings,
     errMode: String,
-    feature: js.Array[js.Any],
+    feature: js.Array[Any],
     fnVersionCheck: String => String,
     iApiIndex: Double,
     internal: js.Object,
@@ -86,7 +86,7 @@ object ExtSettings {
     pager: js.Object,
     renderer: js.Object,
     sVersion: String,
-    search: js.Array[js.Any],
+    search: js.Array[Any],
     selector: js.Object,
     `type`: ExtTypeSettings
   ): ExtSettings = {
@@ -97,19 +97,19 @@ object ExtSettings {
   
   extension [Self <: ExtSettings](x: Self) {
     
-    inline def setATypes(value: js.Array[js.Any]): Self = StObject.set(x, "aTypes", value.asInstanceOf[js.Any])
+    inline def setATypes(value: js.Array[Any]): Self = StObject.set(x, "aTypes", value.asInstanceOf[js.Any])
     
-    inline def setATypesVarargs(value: js.Any*): Self = StObject.set(x, "aTypes", js.Array(value :_*))
+    inline def setATypesVarargs(value: Any*): Self = StObject.set(x, "aTypes", js.Array(value*))
     
-    inline def setAfnFiltering(value: js.Array[js.Any]): Self = StObject.set(x, "afnFiltering", value.asInstanceOf[js.Any])
+    inline def setAfnFiltering(value: js.Array[Any]): Self = StObject.set(x, "afnFiltering", value.asInstanceOf[js.Any])
     
-    inline def setAfnFilteringVarargs(value: js.Any*): Self = StObject.set(x, "afnFiltering", js.Array(value :_*))
+    inline def setAfnFilteringVarargs(value: Any*): Self = StObject.set(x, "afnFiltering", js.Array(value*))
     
     inline def setAfnSortData(value: js.Object): Self = StObject.set(x, "afnSortData", value.asInstanceOf[js.Any])
     
-    inline def setAoFeatures(value: js.Array[js.Any]): Self = StObject.set(x, "aoFeatures", value.asInstanceOf[js.Any])
+    inline def setAoFeatures(value: js.Array[Any]): Self = StObject.set(x, "aoFeatures", value.asInstanceOf[js.Any])
     
-    inline def setAoFeaturesVarargs(value: js.Any*): Self = StObject.set(x, "aoFeatures", js.Array(value :_*))
+    inline def setAoFeaturesVarargs(value: Any*): Self = StObject.set(x, "aoFeatures", js.Array(value*))
     
     inline def setBuilder(value: String): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
     
@@ -117,9 +117,9 @@ object ExtSettings {
     
     inline def setErrMode(value: String): Self = StObject.set(x, "errMode", value.asInstanceOf[js.Any])
     
-    inline def setFeature(value: js.Array[js.Any]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: js.Array[Any]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    inline def setFeatureVarargs(value: js.Any*): Self = StObject.set(x, "feature", js.Array(value :_*))
+    inline def setFeatureVarargs(value: Any*): Self = StObject.set(x, "feature", js.Array(value*))
     
     inline def setFnVersionCheck(value: String => String): Self = StObject.set(x, "fnVersionCheck", js.Any.fromFunction1(value))
     
@@ -149,9 +149,9 @@ object ExtSettings {
     
     inline def setSVersion(value: String): Self = StObject.set(x, "sVersion", value.asInstanceOf[js.Any])
     
-    inline def setSearch(value: js.Array[js.Any]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: js.Array[Any]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    inline def setSearchVarargs(value: js.Any*): Self = StObject.set(x, "search", js.Array(value :_*))
+    inline def setSearchVarargs(value: Any*): Self = StObject.set(x, "search", js.Array(value*))
     
     inline def setSelector(value: js.Object): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

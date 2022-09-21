@@ -79,7 +79,7 @@ object ChartBase {
     
     inline def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
     
-    inline def setHighlightsVarargs(value: DataIndex*): Self = StObject.set(x, "highlights", js.Array(value :_*))
+    inline def setHighlightsVarargs(value: DataIndex*): Self = StObject.set(x, "highlights", js.Array(value*))
     
     inline def setLegend(value: ChartLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     

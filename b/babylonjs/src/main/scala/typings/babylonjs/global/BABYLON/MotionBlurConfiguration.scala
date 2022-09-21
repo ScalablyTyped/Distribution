@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.MotionBlurConfiguration")
 @js.native
-class MotionBlurConfiguration ()
+open class MotionBlurConfiguration ()
   extends StObject
      with typings.babylonjs.BABYLON.MotionBlurConfiguration {
   

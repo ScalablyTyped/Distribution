@@ -3,7 +3,6 @@ package typings.freedom.freedom
 import typings.freedom.freedomStrings.onConnection
 import typings.freedom.freedomStrings.onData
 import typings.freedom.freedomStrings.onDisconnect
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,18 +57,18 @@ object TcpSocket {
   
   trait ReadInfo extends StObject {
     
-    var data: ArrayBuffer
+    var data: js.typedarray.ArrayBuffer
   }
   object ReadInfo {
     
-    inline def apply(data: ArrayBuffer): ReadInfo = {
+    inline def apply(data: js.typedarray.ArrayBuffer): ReadInfo = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadInfo]
     }
     
     extension [Self <: ReadInfo](x: Self) {
       
-      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,9 +107,9 @@ object TcpSocket {
     
     def secure(): js.Promise[Unit] = js.native
     
-    def write(a: ArrayBuffer): js.Promise[WriteInfo] = js.native
+    def write(a: js.typedarray.ArrayBuffer): js.Promise[WriteInfo] = js.native
     @JSName("write")
-    var write_Original: Method1[ArrayBuffer, WriteInfo] = js.native
+    var write_Original: Method1[js.typedarray.ArrayBuffer, WriteInfo] = js.native
   }
   
   trait SocketInfo extends StObject {

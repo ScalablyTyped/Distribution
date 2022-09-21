@@ -17,7 +17,7 @@ trait DeleteTagsRequest extends StObject {
   var Resources: ResourceIdList
   
   /**
-    * The tags to delete. Specify a tag key and an optional tag value to delete specific tags. If you specify a tag key without a tag value, we delete any tag with this key regardless of its value. If you specify a tag key with an empty string as the tag value, we delete the tag only if its value is an empty string. If you omit this parameter, we delete all user-defined tags for the specified resources. We do not delete AWS-generated tags (tags that have the aws: prefix).
+    * The tags to delete. Specify a tag key and an optional tag value to delete specific tags. If you specify a tag key without a tag value, we delete any tag with this key regardless of its value. If you specify a tag key with an empty string as the tag value, we delete the tag only if its value is an empty string. If you omit this parameter, we delete all user-defined tags for the specified resources. We do not delete Amazon Web Services-generated tags (tags that have the aws: prefix). Constraints: Up to 1000 tags.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
@@ -36,12 +36,12 @@ object DeleteTagsRequest {
     
     inline def setResources(value: ResourceIdList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: TaggableResourceId*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: TaggableResourceId*): Self = StObject.set(x, "Resources", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

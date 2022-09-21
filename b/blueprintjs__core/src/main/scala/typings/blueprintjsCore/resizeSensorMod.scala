@@ -1,7 +1,8 @@
 package typings.blueprintjsCore
 
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
-import typings.blueprintjsCore.resizeObserverTypesMod.IResizeEntry
+import typings.juggleResizeObserver.mod.ResizeObserverEntry
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,32 +11,32 @@ object resizeSensorMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/resize-sensor/resizeSensor", "ResizeSensor")
   @js.native
-  class ResizeSensor protected ()
-    extends AbstractPureComponent2[IResizeSensorProps, js.Object, js.Object] {
-    def this(props: IResizeSensorProps) = this()
-    def this(props: IResizeSensorProps, context: js.Any) = this()
+  open class ResizeSensor protected ()
+    extends AbstractPureComponent2[ResizeSensorProps, js.Object, js.Object] {
+    def this(props: ResizeSensorProps) = this()
+    def this(props: ResizeSensorProps, context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MResizeSensor(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MResizeSensor(prevProps: IResizeSensorProps): Unit = js.native
+    def componentDidUpdate_MResizeSensor(prevProps: ResizeSensorProps): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MResizeSensor(): Unit = js.native
     
-    /* private */ var element: js.Any = js.native
+    /* private */ var element: Any = js.native
     
-    /* private */ var getElement: js.Any = js.native
+    /* private */ var getElement: Any = js.native
     
     /**
       * Observe the DOM element, if defined and different from the currently
       * observed element. Pass `force` argument to skip element checks and always
       * re-observe.
       */
-    /* private */ var observeElement: js.Any = js.native
+    /* private */ var observeElement: Any = js.native
     
-    /* private */ var observer: js.Any = js.native
+    /* private */ var observer: Any = js.native
   }
   /* static members */
   object ResizeSensor {
@@ -52,6 +53,9 @@ object resizeSensorMod {
   
   trait IResizeSensorProps extends StObject {
     
+    /** Contents to observe for size changes. */
+    var children: ReactNode
+    
     /**
       * If `true`, all parent DOM elements of the container will also be
       * observed for size changes. The array of entries passed to `onResize`
@@ -60,6 +64,7 @@ object resizeSensorMod {
       *
       * Only enable this prop if a parent element resizes in a way that does
       * not also cause the child element to resize.
+      *
       * @default false
       */
     var observeParents: js.UndefOr[Boolean] = js.undefined
@@ -74,22 +79,28 @@ object resizeSensorMod {
       * Note that this method is called _asynchronously_ after a resize is
       * detected and typically it will be called no more than once per frame.
       */
-    def onResize(entries: js.Array[IResizeEntry]): Unit
+    def onResize(entries: js.Array[ResizeObserverEntry]): Unit
   }
   object IResizeSensorProps {
     
-    inline def apply(onResize: js.Array[IResizeEntry] => Unit): IResizeSensorProps = {
+    inline def apply(onResize: js.Array[ResizeObserverEntry] => Unit): IResizeSensorProps = {
       val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
       __obj.asInstanceOf[IResizeSensorProps]
     }
     
     extension [Self <: IResizeSensorProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setObserveParents(value: Boolean): Self = StObject.set(x, "observeParents", value.asInstanceOf[js.Any])
       
       inline def setObserveParentsUndefined: Self = StObject.set(x, "observeParents", js.undefined)
       
-      inline def setOnResize(value: js.Array[IResizeEntry] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: js.Array[ResizeObserverEntry] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
     }
   }
+  
+  type ResizeSensorProps = IResizeSensorProps
 }

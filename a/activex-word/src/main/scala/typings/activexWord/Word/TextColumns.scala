@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextColumns extends StObject {
   
   def Add(): TextColumn = js.native
-  def Add(Width: js.Any): TextColumn = js.native
-  def Add(Width: js.Any, Spacing: js.Any): TextColumn = js.native
-  def Add(Width: js.Any, Spacing: js.Any, EvenlySpaced: js.Any): TextColumn = js.native
-  def Add(Width: js.Any, Spacing: Unit, EvenlySpaced: js.Any): TextColumn = js.native
-  def Add(Width: Unit, Spacing: js.Any): TextColumn = js.native
-  def Add(Width: Unit, Spacing: js.Any, EvenlySpaced: js.Any): TextColumn = js.native
-  def Add(Width: Unit, Spacing: Unit, EvenlySpaced: js.Any): TextColumn = js.native
+  def Add(Width: Any): TextColumn = js.native
+  def Add(Width: Any, Spacing: Any): TextColumn = js.native
+  def Add(Width: Any, Spacing: Any, EvenlySpaced: Any): TextColumn = js.native
+  def Add(Width: Any, Spacing: Unit, EvenlySpaced: Any): TextColumn = js.native
+  def Add(Width: Unit, Spacing: Any): TextColumn = js.native
+  def Add(Width: Unit, Spacing: Any, EvenlySpaced: Any): TextColumn = js.native
+  def Add(Width: Unit, Spacing: Unit, EvenlySpaced: Any): TextColumn = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -30,7 +30,7 @@ trait TextColumns extends StObject {
   
   var LineBetween: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def SetCount(NumColumns: Double): Unit = js.native
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Macintosh only */
 @JSGlobal("Excel.Mailer")
 @js.native
-/* private */ class Mailer ()
+/* private */ open class Mailer ()
   extends StObject
      with typings.activexExcel.Excel.Mailer {
   
@@ -17,23 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexExcel.Excel.Application = js.native
   
   /* CompleteClass */
-  var BCCRecipients: js.Any = js.native
+  var BCCRecipients: Any = js.native
   
   /* CompleteClass */
-  var CCRecipients: js.Any = js.native
+  var CCRecipients: Any = js.native
   
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
   /* CompleteClass */
-  var Enclosures: js.Any = js.native
+  var Enclosures: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Excel.Mailer_typekey")
   var ExcelDotMailer_typekey: typings.activexExcel.Excel.Mailer = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Received: Boolean = js.native
@@ -48,8 +48,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Subject: String = js.native
   
   /* CompleteClass */
-  var ToRecipients: js.Any = js.native
+  var ToRecipients: Any = js.native
   
   /* CompleteClass */
-  var WhichAddress: js.Any = js.native
+  var WhichAddress: Any = js.native
 }

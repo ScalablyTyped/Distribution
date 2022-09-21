@@ -242,11 +242,11 @@ object ConferenceData {
     */
   trait ConferenceDataService extends StObject {
     
-    var ConferenceErrorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ js.Any
+    var ConferenceErrorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ Any
     
-    var EntryPointFeature: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointFeature */ js.Any
+    var EntryPointFeature: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointFeature */ Any
     
-    var EntryPointType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointType */ js.Any
+    var EntryPointType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointType */ Any
     
     /**
       * Returns a new, empty ConferenceDataBuilder.
@@ -275,9 +275,9 @@ object ConferenceData {
   object ConferenceDataService {
     
     inline def apply(
-      ConferenceErrorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ js.Any,
-      EntryPointFeature: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointFeature */ js.Any,
-      EntryPointType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointType */ js.Any,
+      ConferenceErrorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ Any,
+      EntryPointFeature: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointFeature */ Any,
+      EntryPointType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointType */ Any,
       newConferenceDataBuilder: () => ConferenceDataBuilder,
       newConferenceError: () => ConferenceError,
       newConferenceParameter: () => ConferenceParameter,
@@ -290,16 +290,14 @@ object ConferenceData {
     extension [Self <: ConferenceDataService](x: Self) {
       
       inline def setConferenceErrorType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ Any
       ): Self = StObject.set(x, "ConferenceErrorType", value.asInstanceOf[js.Any])
       
       inline def setEntryPointFeature(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointFeature */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointFeature */ Any
       ): Self = StObject.set(x, "EntryPointFeature", value.asInstanceOf[js.Any])
       
-      inline def setEntryPointType(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointType */ js.Any
-      ): Self = StObject.set(x, "EntryPointType", value.asInstanceOf[js.Any])
+      inline def setEntryPointType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointType */ Any): Self = StObject.set(x, "EntryPointType", value.asInstanceOf[js.Any])
       
       inline def setNewConferenceDataBuilder(value: () => ConferenceDataBuilder): Self = StObject.set(x, "newConferenceDataBuilder", js.Any.fromFunction0(value))
       

@@ -13,7 +13,7 @@ object taglibLookupMod {
   
   @JSImport("marko/src/compiler/taglib-lookup", "TaglibLookup")
   @js.native
-  class TaglibLookup () extends default
+  open class TaglibLookup () extends default
   
   inline def buildLookup(dirname: String): TaglibLookup = ^.asInstanceOf[js.Dynamic].applyDynamic("buildLookup")(dirname.asInstanceOf[js.Any]).asInstanceOf[TaglibLookup]
   

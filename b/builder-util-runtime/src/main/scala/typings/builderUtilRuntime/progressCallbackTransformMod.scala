@@ -10,30 +10,30 @@ object progressCallbackTransformMod {
   
   @JSImport("builder-util-runtime/out/ProgressCallbackTransform", "ProgressCallbackTransform")
   @js.native
-  class ProgressCallbackTransform protected () extends Transform {
+  open class ProgressCallbackTransform protected () extends Transform {
     def this(
       total: Double,
       cancellationToken: CancellationToken,
-      onProgress: js.Function1[/* info */ ProgressInfo, js.Any]
+      onProgress: js.Function1[/* info */ ProgressInfo, Any]
     ) = this()
     
-    def _flush(callback: js.Any): Unit = js.native
+    def _flush(callback: Any): Unit = js.native
     
-    def _transform(chunk: js.Any, encoding: String, callback: js.Any): Unit = js.native
+    def _transform(chunk: Any, encoding: String, callback: Any): Unit = js.native
     
-    /* private */ val cancellationToken: js.Any = js.native
+    /* private */ val cancellationToken: Any = js.native
     
-    /* private */ var delta: js.Any = js.native
+    /* private */ var delta: Any = js.native
     
-    /* private */ var nextUpdate: js.Any = js.native
+    /* private */ var nextUpdate: Any = js.native
     
-    /* private */ val onProgress: js.Any = js.native
+    /* private */ val onProgress: Any = js.native
     
-    /* private */ var start: js.Any = js.native
+    /* private */ var start: Any = js.native
     
-    /* private */ val total: js.Any = js.native
+    /* private */ val total: Any = js.native
     
-    /* private */ var transferred: js.Any = js.native
+    /* private */ var transferred: Any = js.native
   }
   
   trait ProgressInfo extends StObject {

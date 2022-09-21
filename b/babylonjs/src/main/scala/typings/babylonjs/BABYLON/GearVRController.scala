@@ -9,5 +9,12 @@ trait GearVRController
   extends StObject
      with WebVRController {
   
-  /* private */ val _buttonIndexToObservableNameMap: js.Any = js.native
+  /* private */ val _buttonIndexToObservableNameMap: Any = js.native
+  
+  /**
+    * Called once for each button that changed state since the last frame
+    * @param buttonIdx Which button index changed
+    * @param state New state of the button
+    */
+  /* protected */ def _handleButtonChange(buttonIdx: Double, state: ExtendedGamepadButton): Unit = js.native
 }

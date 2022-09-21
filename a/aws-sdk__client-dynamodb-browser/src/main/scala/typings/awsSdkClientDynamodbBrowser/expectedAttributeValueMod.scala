@@ -8,5 +8,5 @@ object expectedAttributeValueMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_ExpectedAttributeValue", "_ExpectedAttributeValue")
   @js.native
-  val ExpectedAttributeValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ExpectedAttributeValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

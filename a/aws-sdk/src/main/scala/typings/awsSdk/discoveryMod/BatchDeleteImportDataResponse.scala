@@ -24,6 +24,6 @@ object BatchDeleteImportDataResponse {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: BatchDeleteImportDataError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: BatchDeleteImportDataError*): Self = StObject.set(x, "errors", js.Array(value*))
   }
 }

@@ -16,7 +16,7 @@ object deleteSegmentCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteSegmentCommand", "DeleteSegmentCommand")
   @js.native
-  class DeleteSegmentCommand protected ()
+  open class DeleteSegmentCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteSegmentCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteSegmentInput, DeleteSegmentOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[DeleteSegmentInput, DeleteSegmentOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteSegmentInput, DeleteSegmentOutput] = js.native
   }
 }

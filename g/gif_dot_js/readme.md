@@ -10,10 +10,10 @@ JavaScript GIF encoding library
 | ------------------ | :-------------: |
 | Full name          | gif.js |
 | Keywords           | gif, animation, encoder |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 43147 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6204.666666666667 |
+| # stars            | 4314.0 |
 
 ## Links
 - [Homepage](https://github.com/jnordberg/gif.js#readme)

@@ -12,6 +12,8 @@ object anon {
     
     var autoFit: js.UndefOr[Boolean] = js.undefined
     
+    var closeOnExit: js.UndefOr[Boolean] = js.undefined
+    
     var cursorBlink: js.UndefOr[Boolean] = js.undefined
     
     var fontFamily: js.UndefOr[String] = js.undefined
@@ -46,6 +48,10 @@ object anon {
       inline def setAutoFit(value: Boolean): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
       
       inline def setAutoFitUndefined: Self = StObject.set(x, "autoFit", js.undefined)
+      
+      inline def setCloseOnExit(value: Boolean): Self = StObject.set(x, "closeOnExit", value.asInstanceOf[js.Any])
+      
+      inline def setCloseOnExitUndefined: Self = StObject.set(x, "closeOnExit", js.undefined)
       
       inline def setCursorBlink(value: Boolean): Self = StObject.set(x, "cursorBlink", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for simple-peer
 
-Typings are for version 9.6
+Typings are for version 9.11
 
 ## Library description:
 Simple one-to-one WebRTC video/voice and data channels
@@ -10,10 +10,10 @@ Simple one-to-one WebRTC video/voice and data channels
 | ------------------ | :-------------: |
 | Full name          | simple-peer |
 | Keywords           | data, data channel, data channel stream, data channels, p2p, peer, peer, peer-to-peer, stream, video, voice, webrtc, webrtc stream |
-| # releases         | 16 |
-| # dependents       | 180 |
-| # downloads        | 1078536 |
-| # stars            | 31 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 119950.66666666667 |
+| # stars            | 6315.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/simple-peer#readme)

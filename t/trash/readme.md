@@ -1,7 +1,7 @@
 
 # Scala.js typings for trash
 
-Typings are for version 6.1.1
+Typings are for version 8.1.0
 
 ## Library description:
 Move files and folders to the trash
@@ -11,9 +11,9 @@ Move files and folders to the trash
 | Full name          | trash |
 | Keywords           | trash, recycle, bin, rm, rmrf, rimraf, remove, delete, del, file, files, directory, directories, folder, folders, xdg |
 | # releases         | 7 |
-| # dependents       | 109 |
-| # downloads        | 2375254 |
-| # stars            | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 295138.0 |
+| # stars            | 2345.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/trash#readme)

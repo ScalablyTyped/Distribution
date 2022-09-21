@@ -25,7 +25,7 @@ object Header {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
     

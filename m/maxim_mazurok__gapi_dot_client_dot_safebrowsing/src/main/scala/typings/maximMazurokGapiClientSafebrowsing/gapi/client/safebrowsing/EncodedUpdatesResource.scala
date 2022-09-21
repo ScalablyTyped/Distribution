@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EncodedUpdatesResource extends StObject {
   
-  def get(): Request[FetchThreatListUpdatesResponse] = js.native
-  def get(request: Accesstoken): Request[FetchThreatListUpdatesResponse] = js.native
+  def get(): Request[GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse] = js.native
+  def get(request: Accesstoken): Request[GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse] = js.native
 }

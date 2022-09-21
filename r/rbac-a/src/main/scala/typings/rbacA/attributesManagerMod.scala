@@ -9,5 +9,5 @@ object attributesManagerMod {
   
   @JSImport("rbac-a/lib/attributes-manager", JSImport.Namespace)
   @js.native
-  class ^ () extends AttributesManager
+  open class ^ () extends AttributesManager
 }

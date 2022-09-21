@@ -12,7 +12,7 @@ object placeMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/place", "Place")
   @js.native
-  class Place protected () extends SoloHelper[actionsDotintentDotPLACE, GoogleActionsV2PlaceValueSpec] {
+  open class Place protected () extends SoloHelper[actionsDotintentDotPLACE, GoogleActionsV2PlaceValueSpec] {
     /**
       * @param options Place options
       * @public

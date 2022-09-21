@@ -13,13 +13,13 @@ object mod {
   
   @JSImport("koa-pug", JSImport.Default)
   @js.native
-  class default () extends KoaPug {
+  open class default () extends KoaPug {
     def this(options: PugOptions) = this()
   }
   
   @JSImport("koa-pug", "KoaPug")
   @js.native
-  class KoaPug () extends StObject {
+  open class KoaPug () extends StObject {
     def this(options: PugOptions) = this()
     
     /**
@@ -28,21 +28,21 @@ object mod {
       * @param locals Variables and helpers that passed to Pug compiler
       * @param compileOptions
       */
-    /* private */ var compileFile: js.Any = js.native
+    /* private */ var compileFile: Any = js.native
     
     /**
       * Compile a Pug template string
       * @param tpl Template string or the path of template file
       */
-    /* private */ var compileString: js.Any = js.native
+    /* private */ var compileString: Any = js.native
     
-    /* private */ var defaultLocals: js.Any = js.native
+    /* private */ var defaultLocals: Any = js.native
     
-    /* private */ var defaultOptions: js.Any = js.native
+    /* private */ var defaultOptions: Any = js.native
     
-    var helpers: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+    var helpers: StringDictionary[js.Function1[/* repeated */ Any, Any]] = js.native
     
-    var locals: StringDictionary[js.Any] = js.native
+    var locals: StringDictionary[Any] = js.native
     
     var noCache: Boolean = js.native
     
@@ -55,8 +55,8 @@ object mod {
       * @param options
       */
     def render(tpl: String): js.Promise[String] = js.native
-    def render(tpl: String, locals: js.Any): js.Promise[String] = js.native
-    def render(tpl: String, locals: js.Any, options: RenderOptions): js.Promise[String] = js.native
+    def render(tpl: String, locals: Any): js.Promise[String] = js.native
+    def render(tpl: String, locals: Any, options: RenderOptions): js.Promise[String] = js.native
     def render(tpl: String, locals: Unit, options: RenderOptions): js.Promise[String] = js.native
     
     /**
@@ -71,7 +71,7 @@ object mod {
   trait PugOptions
     extends StObject
        with Options
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * Koa instance
@@ -81,12 +81,12 @@ object mod {
     /**
       * Paths of helpers.
       */
-    var helperPath: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var helperPath: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Add a list of variables to make accessible in templates
       */
-    var locals: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var locals: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * The root directory of all Pug templates
@@ -106,13 +106,13 @@ object mod {
       
       inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      inline def setHelperPath(value: js.Array[js.Any]): Self = StObject.set(x, "helperPath", value.asInstanceOf[js.Any])
+      inline def setHelperPath(value: js.Array[Any]): Self = StObject.set(x, "helperPath", value.asInstanceOf[js.Any])
       
       inline def setHelperPathUndefined: Self = StObject.set(x, "helperPath", js.undefined)
       
-      inline def setHelperPathVarargs(value: js.Any*): Self = StObject.set(x, "helperPath", js.Array(value :_*))
+      inline def setHelperPathVarargs(value: Any*): Self = StObject.set(x, "helperPath", js.Array(value*))
       
-      inline def setLocals(value: StringDictionary[js.Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: StringDictionary[Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
       inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
@@ -153,10 +153,10 @@ object mod {
     trait BaseContext extends StObject {
       
       def render(tpl: String): js.Promise[Unit] = js.native
-      def render(tpl: String, locals: js.Any): js.Promise[Unit] = js.native
-      def render(tpl: String, locals: js.Any, options: Unit, noCache: Boolean): js.Promise[Unit] = js.native
-      def render(tpl: String, locals: js.Any, options: RenderOptions): js.Promise[Unit] = js.native
-      def render(tpl: String, locals: js.Any, options: RenderOptions, noCache: Boolean): js.Promise[Unit] = js.native
+      def render(tpl: String, locals: Any): js.Promise[Unit] = js.native
+      def render(tpl: String, locals: Any, options: Unit, noCache: Boolean): js.Promise[Unit] = js.native
+      def render(tpl: String, locals: Any, options: RenderOptions): js.Promise[Unit] = js.native
+      def render(tpl: String, locals: Any, options: RenderOptions, noCache: Boolean): js.Promise[Unit] = js.native
       def render(tpl: String, locals: Unit, options: Unit, noCache: Boolean): js.Promise[Unit] = js.native
       def render(tpl: String, locals: Unit, options: RenderOptions): js.Promise[Unit] = js.native
       def render(tpl: String, locals: Unit, options: RenderOptions, noCache: Boolean): js.Promise[Unit] = js.native

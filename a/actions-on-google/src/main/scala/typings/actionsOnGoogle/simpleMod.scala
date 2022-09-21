@@ -10,7 +10,7 @@ object simpleMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/simple", "SimpleResponse")
   @js.native
-  class SimpleResponse protected ()
+  open class SimpleResponse protected ()
     extends StObject
        with GoogleActionsV2SimpleResponse
        with _RichResponseItem {

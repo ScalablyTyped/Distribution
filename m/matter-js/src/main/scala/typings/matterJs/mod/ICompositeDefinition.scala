@@ -43,7 +43,7 @@ trait ICompositeDefinition extends StObject {
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
     *
     * @property id
-    * @type number
+    * @type {number}
     */
   var id: js.UndefOr[Double] = js.undefined
   
@@ -53,7 +53,7 @@ trait ICompositeDefinition extends StObject {
     * If you need to change it manually, you should use the `Composite.setModified` method.
     *
     * @property isModified
-    * @type boolean
+    * @type {boolean}
     * @default false
     */
   var isModified: js.UndefOr[Boolean] = js.undefined
@@ -62,7 +62,7 @@ trait ICompositeDefinition extends StObject {
     * An arbitrary `String` name to help the user identify and manage composites.
     *
     * @property label
-    * @type string
+    * @type {string}
     * @default "Composite"
     */
   var label: js.UndefOr[String] = js.undefined
@@ -80,7 +80,7 @@ trait ICompositeDefinition extends StObject {
     * A `String` denoting the type of object.
     *
     * @property type
-    * @type string
+    * @type {string}
     * @default "composite"
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -98,19 +98,19 @@ object ICompositeDefinition {
     
     inline def setBodiesUndefined: Self = StObject.set(x, "bodies", js.undefined)
     
-    inline def setBodiesVarargs(value: Body*): Self = StObject.set(x, "bodies", js.Array(value :_*))
+    inline def setBodiesVarargs(value: Body*): Self = StObject.set(x, "bodies", js.Array(value*))
     
     inline def setComposites(value: js.Array[Composite]): Self = StObject.set(x, "composites", value.asInstanceOf[js.Any])
     
     inline def setCompositesUndefined: Self = StObject.set(x, "composites", js.undefined)
     
-    inline def setCompositesVarargs(value: Composite*): Self = StObject.set(x, "composites", js.Array(value :_*))
+    inline def setCompositesVarargs(value: Composite*): Self = StObject.set(x, "composites", js.Array(value*))
     
     inline def setConstraints(value: js.Array[Constraint]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
-    inline def setConstraintsVarargs(value: Constraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: Constraint*): Self = StObject.set(x, "constraints", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

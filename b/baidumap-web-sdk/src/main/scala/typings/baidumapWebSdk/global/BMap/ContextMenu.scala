@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.ContextMenu")
 @js.native
-class ContextMenu ()
+open class ContextMenu ()
   extends StObject
      with typings.baidumapWebSdk.BMap.ContextMenu {
   

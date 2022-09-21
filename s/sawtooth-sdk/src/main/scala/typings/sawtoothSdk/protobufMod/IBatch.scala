@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IBatch extends StObject {
   
   /** Batch header */
-  var header: js.UndefOr[Uint8Array | Null] = js.undefined
+  var header: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   
   /** Batch headerSignature */
   var headerSignature: js.UndefOr[String | Null] = js.undefined
@@ -28,7 +27,7 @@ object IBatch {
   
   extension [Self <: IBatch](x: Self) {
     
-    inline def setHeader(value: Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: js.typedarray.Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderNull: Self = StObject.set(x, "header", null)
     
@@ -52,6 +51,6 @@ object IBatch {
     
     inline def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
     
-    inline def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+    inline def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value*))
   }
 }

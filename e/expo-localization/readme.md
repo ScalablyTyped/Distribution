@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-localization
 
-Typings are for version 9.0.0
+Typings are for version 13.1.0
 
 ## Library description:
 Provides an interface for native user localization information.
@@ -10,13 +10,13 @@ Provides an interface for native user localization information.
 | ------------------ | :-------------: |
 | Full name          | expo-localization |
 | Keywords           | react-native, expo, localization, locales, l10n |
-| # releases         | 11 |
-| # dependents       | 4 |
-| # downloads        | 786799 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 209487.33333333334 |
+| # stars            | 16865.0 |
 
 ## Links
-- [Homepage](https://docs.expo.io/versions/latest/sdk/localization/)
+- [Homepage](https://docs.expo.dev/versions/latest/sdk/localization/)
 - [Bugs](https://github.com/expo/expo/issues)
 - [Repository](https://github.com/expo/expo)
 - [Npm](https://www.npmjs.com/package/expo-localization)

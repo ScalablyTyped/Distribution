@@ -58,13 +58,13 @@ object HammerOptions {
     
     inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     
-    inline def setPresetVarargs(value: RecognizerTuple*): Self = StObject.set(x, "preset", js.Array(value :_*))
+    inline def setPresetVarargs(value: RecognizerTuple*): Self = StObject.set(x, "preset", js.Array(value*))
     
     inline def setRecognizers(value: js.Array[RecognizerTuple]): Self = StObject.set(x, "recognizers", value.asInstanceOf[js.Any])
     
     inline def setRecognizersUndefined: Self = StObject.set(x, "recognizers", js.undefined)
     
-    inline def setRecognizersVarargs(value: RecognizerTuple*): Self = StObject.set(x, "recognizers", js.Array(value :_*))
+    inline def setRecognizersVarargs(value: RecognizerTuple*): Self = StObject.set(x, "recognizers", js.Array(value*))
     
     inline def setTouchAction(value: String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
     

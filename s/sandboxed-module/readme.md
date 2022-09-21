@@ -10,10 +10,10 @@ A sandboxed Node.js module loader that lets you inject dependencies into your mo
 | ------------------ | :-------------: |
 | Full name          | sandboxed-module |
 | Keywords           | require, mocking, mocks, stubs, dependency injection, testing |
-| # releases         | 2 |
-| # dependents       | 16 |
-| # downloads        | 95564 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 14848.333333333334 |
+| # stars            | 341.0 |
 
 ## Links
 - [Homepage](https://github.com/felixge/node-sandboxed-module#readme)

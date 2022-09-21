@@ -10,10 +10,10 @@ A simple JavaScript implementation of `du -sb`
 | ------------------ | :-------------: |
 | Full name          | du |
 | Keywords           | du, size |
-| # releases         | 3 |
-| # dependents       | 37 |
-| # downloads        | 265778 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19317.0 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/rvagg/node-du#readme)

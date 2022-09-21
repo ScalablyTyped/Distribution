@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrustedAdvisorResourceDetail extends StObject {
   
   /**
-    * Specifies whether the AWS resource was ignored by Trusted Advisor because it was marked as suppressed by the user.
+    * Specifies whether the Amazon Web Services resource was ignored by Trusted Advisor because it was marked as suppressed by the user.
     */
   var isSuppressed: js.UndefOr[Boolean] = js.undefined
   
@@ -17,7 +17,7 @@ trait TrustedAdvisorResourceDetail extends StObject {
   var metadata: StringList
   
   /**
-    * The AWS region in which the identified resource is located.
+    * The Amazon Web Services Region in which the identified resource is located.
     */
   var region: js.UndefOr[String] = js.undefined
   
@@ -46,7 +46,7 @@ object TrustedAdvisorResourceDetail {
     
     inline def setMetadata(value: StringList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    inline def setMetadataVarargs(value: String*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: String*): Self = StObject.set(x, "metadata", js.Array(value*))
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     

@@ -1,22 +1,35 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object noSsrNoSsrMod extends Shortcut {
+object noSsrNoSsrMod {
   
-  @JSImport("@material-ui/core/NoSsr/NoSsr", JSImport.Default)
+  @JSImport("@material-ui/core/NoSsr/NoSsr", JSImport.Namespace)
   @js.native
-  val default: ComponentType[NoSsrProps] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(props: NoSsrProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait NoSsrProps extends StObject {
     
-    var children: ReactNode
+    /**
+      * You can wrap a node.
+      */
+    var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * If `true`, the component will not only prevent server-side rendering.
+      * It will also defer the rendering of the children into a different screen frame.
+      */
+    var defer: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The fallback content to display.
+      */
     var fallback: js.UndefOr[ReactNode] = js.undefined
   }
   object NoSsrProps {
@@ -32,14 +45,13 @@ object noSsrNoSsrMod extends Shortcut {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
+      inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+      
+      inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+      
       inline def setFallback(value: ReactNode): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     }
   }
-  
-  type _To = ComponentType[NoSsrProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `noSsrNoSsrMod.foo` */
-  override def _to: ComponentType[NoSsrProps] = default
 }

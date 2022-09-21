@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogQueryItemVariationsForItemOptionValues")
 @js.native
-class CatalogQueryItemVariationsForItemOptionValues () extends StObject {
+open class CatalogQueryItemVariationsForItemOptionValues () extends StObject {
   
   /**
     * A set of `CatalogItemOptionValue` IDs to be used to find associated `CatalogItemVariation`s.

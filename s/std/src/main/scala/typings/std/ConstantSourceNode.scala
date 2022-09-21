@@ -9,5 +9,6 @@ trait ConstantSourceNode
   extends StObject
      with AudioScheduledSourceNode {
   
+  /* standard dom */
   val offset: AudioParam = js.native
 }

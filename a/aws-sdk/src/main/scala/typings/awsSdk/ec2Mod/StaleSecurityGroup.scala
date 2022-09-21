@@ -63,11 +63,11 @@ object StaleSecurityGroup {
     
     inline def setStaleIpPermissionsEgressUndefined: Self = StObject.set(x, "StaleIpPermissionsEgress", js.undefined)
     
-    inline def setStaleIpPermissionsEgressVarargs(value: StaleIpPermission*): Self = StObject.set(x, "StaleIpPermissionsEgress", js.Array(value :_*))
+    inline def setStaleIpPermissionsEgressVarargs(value: StaleIpPermission*): Self = StObject.set(x, "StaleIpPermissionsEgress", js.Array(value*))
     
     inline def setStaleIpPermissionsUndefined: Self = StObject.set(x, "StaleIpPermissions", js.undefined)
     
-    inline def setStaleIpPermissionsVarargs(value: StaleIpPermission*): Self = StObject.set(x, "StaleIpPermissions", js.Array(value :_*))
+    inline def setStaleIpPermissionsVarargs(value: StaleIpPermission*): Self = StObject.set(x, "StaleIpPermissions", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

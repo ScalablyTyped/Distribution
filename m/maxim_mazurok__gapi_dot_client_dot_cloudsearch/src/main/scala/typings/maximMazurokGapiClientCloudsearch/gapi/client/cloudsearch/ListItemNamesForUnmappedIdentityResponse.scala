@@ -24,7 +24,7 @@ object ListItemNamesForUnmappedIdentityResponse {
     
     inline def setItemNamesUndefined: Self = StObject.set(x, "itemNames", js.undefined)
     
-    inline def setItemNamesVarargs(value: String*): Self = StObject.set(x, "itemNames", js.Array(value :_*))
+    inline def setItemNamesVarargs(value: String*): Self = StObject.set(x, "itemNames", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

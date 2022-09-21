@@ -33,6 +33,6 @@ object InboxPlacementTrackingOption {
     
     inline def setTrackedIspsUndefined: Self = StObject.set(x, "TrackedIsps", js.undefined)
     
-    inline def setTrackedIspsVarargs(value: IspName*): Self = StObject.set(x, "TrackedIsps", js.Array(value :_*))
+    inline def setTrackedIspsVarargs(value: IspName*): Self = StObject.set(x, "TrackedIsps", js.Array(value*))
   }
 }

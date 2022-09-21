@@ -17,7 +17,7 @@ object mod {
     */
   @JSImport("accessibility", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Accessibility {
     def this(options: Options) = this()
@@ -62,7 +62,7 @@ object mod {
     override def read(): Unit = js.native
     
     /* CompleteClass */
-    override def resetIfDefined(src: js.Any, dest: js.Any, prop: String): Unit = js.native
+    override def resetIfDefined(src: Any, dest: Any, prop: String): Unit = js.native
     
     /* CompleteClass */
     override def runHotkey(name: String): Unit = js.native
@@ -122,7 +122,7 @@ object mod {
     
     def read(): Unit
     
-    def resetIfDefined(src: js.Any, dest: js.Any, prop: String): Unit
+    def resetIfDefined(src: Any, dest: Any, prop: String): Unit
     
     def runHotkey(name: String): Unit
     
@@ -152,7 +152,7 @@ object mod {
       menuInterface: MenuInterface,
       onChange: Boolean => Unit,
       read: () => Unit,
-      resetIfDefined: (js.Any, js.Any, String) => Unit,
+      resetIfDefined: (Any, Any, String) => Unit,
       runHotkey: String => Unit,
       saveSession: () => Unit,
       setSessionFromCache: () => Unit,
@@ -192,7 +192,7 @@ object mod {
       
       inline def setRead(value: () => Unit): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      inline def setResetIfDefined(value: (js.Any, js.Any, String) => Unit): Self = StObject.set(x, "resetIfDefined", js.Any.fromFunction3(value))
+      inline def setResetIfDefined(value: (Any, Any, String) => Unit): Self = StObject.set(x, "resetIfDefined", js.Any.fromFunction3(value))
       
       inline def setRunHotkey(value: String => Unit): Self = StObject.set(x, "runHotkey", js.Any.fromFunction1(value))
       
@@ -341,7 +341,7 @@ object mod {
       
       inline def setFontFaceSrcUndefined: Self = StObject.set(x, "fontFaceSrc", js.undefined)
       
-      inline def setFontFaceSrcVarargs(value: String*): Self = StObject.set(x, "fontFaceSrc", js.Array(value :_*))
+      inline def setFontFaceSrcVarargs(value: String*): Self = StObject.set(x, "fontFaceSrc", js.Array(value*))
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       

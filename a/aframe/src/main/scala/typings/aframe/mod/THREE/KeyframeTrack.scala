@@ -1,5 +1,6 @@
 package typings.aframe.mod.THREE
 
+import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.KeyframeTrack")
 @js.native
-class KeyframeTrack protected ()
+open class KeyframeTrack protected ()
   extends typings.three.mod.KeyframeTrack {
   /**
-  	 * @param name
-  	 * @param times
-  	 * @param values
-  	 * @param [interpolation=THREE.InterpolateLinear]
-  	 */
-  def this(name: String, times: js.Array[js.Any], values: js.Array[js.Any]) = this()
+    * @param name
+    * @param times
+    * @param values
+    * @param [interpolation=THREE.InterpolateLinear]
+    */
+  def this(name: String, times: ArrayLike[Any], values: ArrayLike[Any]) = this()
 }

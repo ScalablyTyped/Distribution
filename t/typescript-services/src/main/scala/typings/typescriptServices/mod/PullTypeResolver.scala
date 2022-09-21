@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "PullTypeResolver")
 @js.native
-class PullTypeResolver protected ()
+open class PullTypeResolver protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullTypeResolver {
   def this(

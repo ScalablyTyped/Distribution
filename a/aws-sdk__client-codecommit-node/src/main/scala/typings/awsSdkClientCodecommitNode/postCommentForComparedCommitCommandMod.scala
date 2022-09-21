@@ -16,7 +16,7 @@ object postCommentForComparedCommitCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/PostCommentForComparedCommitCommand", "PostCommentForComparedCommitCommand")
   @js.native
-  class PostCommentForComparedCommitCommand protected ()
+  open class PostCommentForComparedCommitCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object postCommentForComparedCommitCommandMod {
     override val middlewareStack: MiddlewareStack[PostCommentForComparedCommitInput, PostCommentForComparedCommitOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: CodeCommitResolvedConfiguration
     ): Handler[PostCommentForComparedCommitInput, PostCommentForComparedCommitOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CodeCommitResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[PostCommentForComparedCommitInput, PostCommentForComparedCommitOutput] = js.native
   }
 }

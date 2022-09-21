@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientRealtimebidding.anon
 
-import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.SuspendPretargetingConfigRequest
+import typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding.RemoveTargetedSitesRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,11 +26,11 @@ trait CallbackFields extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the pretargeting configuration. Format: bidders/{bidderAccountId}/pretargetingConfig/{configId} */
-  var name: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
+  
+  /** Required. The name of the pretargeting configuration. Format: bidders/{bidderAccountId}/pretargetingConfig/{configId} */
+  var pretargetingConfig: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -39,7 +39,7 @@ trait CallbackFields extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SuspendPretargetingConfigRequest
+  var resource: RemoveTargetedSitesRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +49,8 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(name: String, resource: SuspendPretargetingConfigRequest): CallbackFields = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(pretargetingConfig: String, resource: RemoveTargetedSitesRequest): CallbackFields = {
+    val __obj = js.Dynamic.literal(pretargetingConfig = pretargetingConfig.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
   
@@ -80,11 +80,11 @@ object CallbackFields {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setPretargetingConfig(value: String): Self = StObject.set(x, "pretargetingConfig", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -94,7 +94,7 @@ object CallbackFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SuspendPretargetingConfigRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: RemoveTargetedSitesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

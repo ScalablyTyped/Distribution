@@ -22,10 +22,10 @@ object LeftDataSource {
     
     inline def setLeftDataSource(value: js.Array[RecordType]): Self = StObject.set(x, "leftDataSource", value.asInstanceOf[js.Any])
     
-    inline def setLeftDataSourceVarargs(value: RecordType*): Self = StObject.set(x, "leftDataSource", js.Array(value :_*))
+    inline def setLeftDataSourceVarargs(value: RecordType*): Self = StObject.set(x, "leftDataSource", js.Array(value*))
     
     inline def setRightDataSource(value: js.Array[RecordType]): Self = StObject.set(x, "rightDataSource", value.asInstanceOf[js.Any])
     
-    inline def setRightDataSourceVarargs(value: RecordType*): Self = StObject.set(x, "rightDataSource", js.Array(value :_*))
+    inline def setRightDataSourceVarargs(value: RecordType*): Self = StObject.set(x, "rightDataSource", js.Array(value*))
   }
 }

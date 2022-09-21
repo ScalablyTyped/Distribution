@@ -10,7 +10,7 @@ object packageMod {
   
   @JSImport("ionic/commands/package", "PackageNamespace")
   @js.native
-  class PackageNamespace () extends Namespace {
+  open class PackageNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

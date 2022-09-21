@@ -8,5 +8,5 @@ object unlinkDeveloperIdentityOutputMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/UnlinkDeveloperIdentityOutput", "UnlinkDeveloperIdentityOutput")
   @js.native
-  val UnlinkDeveloperIdentityOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UnlinkDeveloperIdentityOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

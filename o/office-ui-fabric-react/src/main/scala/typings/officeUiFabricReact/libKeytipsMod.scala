@@ -56,14 +56,14 @@ object libKeytipsMod {
   
   @JSImport("office-ui-fabric-react/lib/Keytips", "Keytip")
   @js.native
-  class Keytip protected ()
+  open class Keytip protected ()
     extends typings.officeUiFabricReact.keytipMod.Keytip {
     def this(props: IKeytipProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IKeytipProps, context: js.Any) = this()
+    def this(props: IKeytipProps, context: Any) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/Keytips", "KeytipData")
@@ -111,9 +111,9 @@ object libKeytipsMod {
   
   @JSImport("office-ui-fabric-react/lib/Keytips", "KeytipLayerBase")
   @js.native
-  class KeytipLayerBase protected ()
+  open class KeytipLayerBase protected ()
     extends typings.officeUiFabricReact.keytipLayerMod.KeytipLayerBase {
-    def this(props: IKeytipLayerProps, context: js.Any) = this()
+    def this(props: IKeytipLayerProps, context: Any) = this()
   }
   /* static members */
   object KeytipLayerBase {
@@ -130,7 +130,7 @@ object libKeytipsMod {
   
   @JSImport("office-ui-fabric-react/lib/Keytips", "KeytipManager")
   @js.native
-  class KeytipManager ()
+  open class KeytipManager ()
     extends typings.officeUiFabricReact.keytipsMod.KeytipManager
   /* static members */
   object KeytipManager {
@@ -141,8 +141,8 @@ object libKeytipsMod {
     
     @JSImport("office-ui-fabric-react/lib/Keytips", "KeytipManager._instance")
     @js.native
-    def _instance: js.Any = js.native
-    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    def _instance: Any = js.native
+    inline def _instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /**
       * Static function to get singleton KeytipManager instance

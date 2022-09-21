@@ -14,7 +14,7 @@ trait PartialStateNavigationSta
   extends StObject
      with _ResetState {
   
-  var history: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var history: js.UndefOr[js.Array[Any]] = js.undefined
   
   var index: js.UndefOr[Double] = js.undefined
   
@@ -60,11 +60,11 @@ object PartialStateNavigationSta {
   
   extension [Self <: PartialStateNavigationSta](x: Self) {
     
-    inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: Any*): Self = StObject.set(x, "history", js.Array(value*))
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -90,7 +90,7 @@ object PartialStateNavigationSta {
           /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String, 
           String
         ])*
-    ): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+    ): Self = StObject.set(x, "routeNames", js.Array(value*))
     
     inline def setRoutes(
       value: js.Array[
@@ -110,7 +110,7 @@ object PartialStateNavigationSta {
             js.UndefOr[js.Object]
           ]
         ])*
-    ): Self = StObject.set(x, "routes", js.Array(value :_*))
+    ): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     

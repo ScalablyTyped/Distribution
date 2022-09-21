@@ -1,24 +1,24 @@
 
 # Scala.js typings for remark
 
-Typings are for version 13.0.0
+Typings are for version 14.0.2
 
 ## Library description:
-Markdown processor powered by plugins part of the unified collective
+unified processor with support for parsing markdown input and serializing markdown as output
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | remark |
 | Keywords           | unified, remark, markdown, mdast, abstract, syntax, tree, ast, parse, stringify, serialize, compile, process |
-| # releases         | 9 |
-| # dependents       | 487 |
-| # downloads        | 110464531 |
-| # stars            | 11 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1587671333333334E7 |
+| # stars            | 5294.0 |
 
 ## Links
 - [Homepage](https://remark.js.org)
 - [Bugs](https://github.com/remarkjs/remark/issues)
-- [Repository](https://github.com/remarkjs/remark)
+- [Repository](https://github.com/remarkjs/remark/tree/main)
 - [Npm](https://www.npmjs.com/package/remark)
     
 

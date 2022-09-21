@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRibbon")
 @js.native
-class ASPxClientRibbon ()
+open class ASPxClientRibbon ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRibbon {
   
@@ -89,13 +89,13 @@ class ASPxClientRibbon ()
     * @param name A string value specifying the name of the item.
     */
   /* CompleteClass */
-  override def GetItemValueByName(name: String): js.Any = js.native
+  override def GetItemValueByName(name: String): Any = js.native
   
   /**
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Gets a value specifying whether the ribbon is minimized.
@@ -107,7 +107,7 @@ class ASPxClientRibbon ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a tab specified by its index. An ASPxClientRibbonTab object that is the tab located at the specified index within the control's ASPxRibbon.Tabs collection.
@@ -223,7 +223,7 @@ class ASPxClientRibbon ()
     * @param value An object that is the new item value.
     */
   /* CompleteClass */
-  override def SetItemValueByName(name: String, value: js.Any): Unit = js.native
+  override def SetItemValueByName(name: String, value: Any): Unit = js.native
   
   /**
     * Specifies whether the ribbon is minimized.
@@ -269,5 +269,5 @@ object ASPxClientRibbon {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientRibbon = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientRibbon]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientRibbon = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientRibbon]
 }

@@ -10,10 +10,10 @@ sybase-promised
 | ------------------ | :-------------: |
 | Full name          | sybase-promised |
 | Keywords           | database, sybase, jconnect, sql, java |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 763 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 486.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/mscamargo/sybase-promised#readme)

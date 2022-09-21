@@ -10,9 +10,9 @@ object verboseFormatterMod {
   
   @JSImport("tslint/lib/formatters/verboseFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter {
+  open class Formatter () extends AbstractFormatter {
     
-    /* private */ var mapToMessages: js.Any = js.native
+    /* private */ var mapToMessages: Any = js.native
   }
   /* static members */
   object Formatter {

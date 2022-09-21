@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait TaskOrchestrationPlan
   
   var environment: PlanEnvironment
   
-  var finishTime: Date
+  var finishTime: js.Date
   
   var implementation: TaskOrchestrationContainer
   
@@ -25,7 +24,7 @@ trait TaskOrchestrationPlan
   
   var resultCode: String
   
-  var startTime: Date
+  var startTime: js.Date
   
   var state: TaskOrchestrationPlanState
   
@@ -38,7 +37,7 @@ object TaskOrchestrationPlan {
     artifactUri: String,
     definition: TaskOrchestrationOwner,
     environment: PlanEnvironment,
-    finishTime: Date,
+    finishTime: js.Date,
     implementation: TaskOrchestrationContainer,
     owner: TaskOrchestrationOwner,
     planGroup: String,
@@ -49,7 +48,7 @@ object TaskOrchestrationPlan {
     result: TaskResult,
     resultCode: String,
     scopeIdentifier: String,
-    startTime: Date,
+    startTime: js.Date,
     state: TaskOrchestrationPlanState,
     timeline: TimelineReference,
     version: Double
@@ -62,7 +61,7 @@ object TaskOrchestrationPlan {
     
     inline def setEnvironment(value: PlanEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: js.Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     inline def setImplementation(value: TaskOrchestrationContainer): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
@@ -76,7 +75,7 @@ object TaskOrchestrationPlan {
     
     inline def setResultCode(value: String): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setState(value: TaskOrchestrationPlanState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

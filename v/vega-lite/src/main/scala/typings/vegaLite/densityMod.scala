@@ -11,11 +11,11 @@ object densityMod {
   
   @JSImport("vega-lite/build/src/compile/data/density", "DensityTransformNode")
   @js.native
-  class DensityTransformNode protected () extends DataFlowNode {
+  open class DensityTransformNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: DensityTransform) = this()
     
     def assemble(): KDETransform = js.native
     
-    /* private */ var transform: js.Any = js.native
+    /* private */ var transform: Any = js.native
   }
 }

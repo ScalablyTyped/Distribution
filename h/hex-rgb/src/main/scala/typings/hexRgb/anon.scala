@@ -13,10 +13,17 @@ object anon {
   trait Optionsformatarray extends StObject {
     
     /**
-    		The RGB output format.
-    		Note that when using the `css` format, the value of the alpha channel is rounded to two decimal places.
-    		@default 'object'
-    		*/
+    	Set the alpha of the color.
+    	This overrides any existing alpha component in the Hex color string. For example, the `99` in `#22222299`.
+    	The number must be in the range 0 to 1.
+    	*/
+    val alpha: js.UndefOr[Double] = js.undefined
+    
+    /**
+    	The RGB output format.
+    	Note that when using the `css` format, the value of the alpha channel is rounded to two decimal places.
+    	@default 'object'
+    	*/
     val format: (js.UndefOr[`object` | array | css]) & array
   }
   object Optionsformatarray {
@@ -28,6 +35,10 @@ object anon {
     
     extension [Self <: Optionsformatarray](x: Self) {
       
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      
       inline def setFormat(value: (js.UndefOr[`object` | array | css]) & array): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
@@ -36,10 +47,17 @@ object anon {
   trait Optionsformatcss extends StObject {
     
     /**
-    		The RGB output format.
-    		Note that when using the `css` format, the value of the alpha channel is rounded to two decimal places.
-    		@default 'object'
-    		*/
+    	Set the alpha of the color.
+    	This overrides any existing alpha component in the Hex color string. For example, the `99` in `#22222299`.
+    	The number must be in the range 0 to 1.
+    	*/
+    val alpha: js.UndefOr[Double] = js.undefined
+    
+    /**
+    	The RGB output format.
+    	Note that when using the `css` format, the value of the alpha channel is rounded to two decimal places.
+    	@default 'object'
+    	*/
     val format: (js.UndefOr[`object` | array | css]) & css
   }
   object Optionsformatcss {
@@ -51,6 +69,10 @@ object anon {
     
     extension [Self <: Optionsformatcss](x: Self) {
       
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      
       inline def setFormat(value: (js.UndefOr[`object` | array | css]) & css): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
@@ -59,10 +81,17 @@ object anon {
   trait Optionsformatobject extends StObject {
     
     /**
-    		The RGB output format.
-    		Note that when using the `css` format, the value of the alpha channel is rounded to two decimal places.
-    		@default 'object'
-    		*/
+    	Set the alpha of the color.
+    	This overrides any existing alpha component in the Hex color string. For example, the `99` in `#22222299`.
+    	The number must be in the range 0 to 1.
+    	*/
+    val alpha: js.UndefOr[Double] = js.undefined
+    
+    /**
+    	The RGB output format.
+    	Note that when using the `css` format, the value of the alpha channel is rounded to two decimal places.
+    	@default 'object'
+    	*/
     val format: (js.UndefOr[`object` | array | css]) & `object`
   }
   object Optionsformatobject {
@@ -73,6 +102,10 @@ object anon {
     }
     
     extension [Self <: Optionsformatobject](x: Self) {
+      
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
       inline def setFormat(value: (js.UndefOr[`object` | array | css]) & `object`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }

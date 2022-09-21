@@ -20,7 +20,7 @@ object httpClientMod {
   
   @JSImport("typed-rest-client/HttpClient", "HttpClient")
   @js.native
-  class HttpClient ()
+  open class HttpClient ()
     extends StObject
        with IHttpClient {
     def this(userAgent: String) = this()
@@ -34,53 +34,53 @@ object httpClientMod {
     def this(userAgent: Unit, handlers: js.Array[IRequestHandler], requestOptions: IRequestOptions) = this()
     def this(userAgent: Unit, handlers: Unit, requestOptions: IRequestOptions) = this()
     
-    /* private */ var _agent: js.Any = js.native
+    /* private */ var _agent: Any = js.native
     
-    /* private */ var _allowRedirectDowngrade: js.Any = js.native
+    /* private */ var _allowRedirectDowngrade: Any = js.native
     
-    /* private */ var _allowRedirects: js.Any = js.native
+    /* private */ var _allowRedirects: Any = js.native
     
-    /* private */ var _allowRetries: js.Any = js.native
+    /* private */ var _allowRetries: Any = js.native
     
-    /* private */ var _ca: js.Any = js.native
+    /* private */ var _ca: Any = js.native
     
-    /* private */ var _cert: js.Any = js.native
+    /* private */ var _cert: Any = js.native
     
-    /* private */ var _certConfig: js.Any = js.native
+    /* private */ var _certConfig: Any = js.native
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
-    /* private */ var _getAgent: js.Any = js.native
+    /* private */ var _getAgent: Any = js.native
     
-    /* private */ var _getProxy: js.Any = js.native
+    /* private */ var _getProxy: Any = js.native
     
-    /* private */ var _httpProxy: js.Any = js.native
+    /* private */ var _httpProxy: Any = js.native
     
-    /* private */ var _httpProxyBypassHosts: js.Any = js.native
+    /* private */ var _httpProxyBypassHosts: Any = js.native
     
-    /* private */ var _ignoreSslError: js.Any = js.native
+    /* private */ var _ignoreSslError: Any = js.native
     
-    /* private */ var _isMatchInBypassProxyList: js.Any = js.native
+    /* private */ var _isMatchInBypassProxyList: Any = js.native
     
-    /* private */ var _isPresigned: js.Any = js.native
+    /* private */ var _isPresigned: Any = js.native
     
-    /* private */ var _keepAlive: js.Any = js.native
+    /* private */ var _keepAlive: Any = js.native
     
-    /* private */ var _key: js.Any = js.native
+    /* private */ var _key: Any = js.native
     
-    /* private */ var _maxRedirects: js.Any = js.native
+    /* private */ var _maxRedirects: Any = js.native
     
-    /* private */ var _maxRetries: js.Any = js.native
+    /* private */ var _maxRetries: Any = js.native
     
-    /* private */ var _mergeHeaders: js.Any = js.native
+    /* private */ var _mergeHeaders: Any = js.native
     
-    /* private */ var _performExponentialBackoff: js.Any = js.native
+    /* private */ var _performExponentialBackoff: Any = js.native
     
-    /* private */ var _prepareRequest: js.Any = js.native
+    /* private */ var _prepareRequest: Any = js.native
     
-    /* private */ var _proxyAgent: js.Any = js.native
+    /* private */ var _proxyAgent: Any = js.native
     
-    /* private */ var _socketTimeout: js.Any = js.native
+    /* private */ var _socketTimeout: Any = js.native
     
     /**
       * Needs to be called if keepAlive is set to true in request options.
@@ -99,7 +99,7 @@ object httpClientMod {
   
   @JSImport("typed-rest-client/HttpClient", "HttpClientResponse")
   @js.native
-  class HttpClientResponse protected ()
+  open class HttpClientResponse protected ()
     extends StObject
        with IHttpClientResponse {
     def this(message: IncomingMessage) = this()
@@ -287,7 +287,7 @@ object httpClientMod {
   
   trait RequestInfo extends StObject {
     
-    var httpModule: js.Any
+    var httpModule: Any
     
     var options: RequestOptions
     
@@ -295,14 +295,14 @@ object httpClientMod {
   }
   object RequestInfo {
     
-    inline def apply(httpModule: js.Any, options: RequestOptions, parsedUrl: Url): RequestInfo = {
+    inline def apply(httpModule: Any, options: RequestOptions, parsedUrl: Url): RequestInfo = {
       val __obj = js.Dynamic.literal(httpModule = httpModule.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parsedUrl = parsedUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestInfo]
     }
     
     extension [Self <: RequestInfo](x: Self) {
       
-      inline def setHttpModule(value: js.Any): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
+      inline def setHttpModule(value: Any): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: RequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,7 @@ object TraceUser {
     
     inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
     
-    inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+    inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value*))
     
     inline def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     

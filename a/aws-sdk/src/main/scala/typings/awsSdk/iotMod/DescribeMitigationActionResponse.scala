@@ -32,14 +32,14 @@ trait DescribeMitigationActionResponse extends StObject {
   var actionType: js.UndefOr[MitigationActionType] = js.undefined
   
   /**
-    * The date and time when the mitigation action was added to your AWS account.
+    * The date and time when the mitigation action was added to your Amazon Web Services accounts.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time when the mitigation action was last changed.
     */
-  var lastModifiedDate: js.UndefOr[Timestamp] = js.undefined
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the IAM role used to apply this action.
@@ -75,11 +75,11 @@ object DescribeMitigationActionResponse {
     
     inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    inline def setLastModifiedDate(value: Timestamp): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     

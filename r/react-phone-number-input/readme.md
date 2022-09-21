@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-phone-number-input
 
-Typings are for version 3.0
+Typings are for version 3.2.11
 
 ## Library description:
 Telephone number input React component
@@ -10,10 +10,10 @@ Telephone number input React component
 | ------------------ | :-------------: |
 | Full name          | react-phone-number-input |
 | Keywords           | react, phone, number, input, telephone, international |
-| # releases         | 72 |
-| # dependents       | 57 |
-| # downloads        | 4451263 |
-| # stars            | 3 |
+| # releases         | 67 |
+| # dependents       | 0.0 |
+| # downloads        | 1218453.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://gitlab.com/catamphetamine/react-phone-number-input#readme)
@@ -24,7 +24,7 @@ Telephone number input React component
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

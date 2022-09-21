@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mssql", "Table")
 @js.native
-class Table () extends StObject {
+open class Table () extends StObject {
   def this(tableName: String) = this()
   
   var columns: typings.mssql.mod.columns = js.native

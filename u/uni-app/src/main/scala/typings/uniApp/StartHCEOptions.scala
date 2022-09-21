@@ -9,7 +9,7 @@ trait StartHCEOptions extends StObject {
   /**
     * 需要注册到系统的 AID 列表，每个 AID 为 String 类型
     */
-  var aid_list: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var aid_list: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
@@ -35,11 +35,11 @@ object StartHCEOptions {
   
   extension [Self <: StartHCEOptions](x: Self) {
     
-    inline def setAid_list(value: js.Array[js.Any]): Self = StObject.set(x, "aid_list", value.asInstanceOf[js.Any])
+    inline def setAid_list(value: js.Array[Any]): Self = StObject.set(x, "aid_list", value.asInstanceOf[js.Any])
     
     inline def setAid_listUndefined: Self = StObject.set(x, "aid_list", js.undefined)
     
-    inline def setAid_listVarargs(value: js.Any*): Self = StObject.set(x, "aid_list", js.Array(value :_*))
+    inline def setAid_listVarargs(value: Any*): Self = StObject.set(x, "aid_list", js.Array(value*))
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

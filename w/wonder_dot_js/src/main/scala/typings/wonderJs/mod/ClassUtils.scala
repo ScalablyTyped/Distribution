@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "ClassUtils")
 @js.native
-class ClassUtils ()
+open class ClassUtils ()
   extends typings.wonderJs.classUtilsMod.ClassUtils
 /* static members */
 object ClassUtils {
@@ -15,11 +15,11 @@ object ClassUtils {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addClass(className: String, _class: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(className.asInstanceOf[js.Any], _class.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addClass(className: String, _class: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(className.asInstanceOf[js.Any], _class.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def addClassNameAttributeToClass(className: String, _class: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassNameAttributeToClass")(className.asInstanceOf[js.Any], _class.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addClassNameAttributeToClass(className: String, _class: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassNameAttributeToClass")(className.asInstanceOf[js.Any], _class.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def getClass(className: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(className.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getClass(className: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(className.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getClassNameByInstance(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNameByInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getClassNameByInstance(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNameByInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

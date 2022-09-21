@@ -21,7 +21,7 @@ object ExchangeActiveSyncProvisioning {
   @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation")
   @js.native
   /** Creates an instance of an object that allows the caller app to retrieve device information from the local device. */
-  class EasClientDeviceInformation ()
+  open class EasClientDeviceInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation {
     
@@ -62,7 +62,7 @@ object ExchangeActiveSyncProvisioning {
   @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy")
   @js.native
   /** Creates an instance of an object that allows the caller app to set policies received from the Exchange server for evaluation or application. */
-  class EasClientSecurityPolicy ()
+  open class EasClientSecurityPolicy ()
     extends StObject
        with typings.winrtUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy {
     

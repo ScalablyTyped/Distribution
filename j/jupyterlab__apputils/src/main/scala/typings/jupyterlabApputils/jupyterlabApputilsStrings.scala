@@ -1,5 +1,6 @@
 package typings.jupyterlabApputils
 
+import typings.jupyterlabApputils.hoverboxMod.OutOfViewDisplay
 import typings.jupyterlabApputils.iframeMod.IFrame.ReferrerPolicy
 import typings.jupyterlabApputils.iframeMod.IFrame.SandboxExceptions
 import typings.jupyterlabApputils.sessioncontextMod.ISessionContext._KernelDisplayStatus
@@ -22,6 +23,12 @@ object jupyterlabApputilsStrings {
   @js.native
   sealed trait above extends StObject
   inline def above: above = "above".asInstanceOf[above]
+  
+  @js.native
+  sealed trait `allow-downloads`
+    extends StObject
+       with SandboxExceptions
+  inline def `allow-downloads`: `allow-downloads` = "allow-downloads".asInstanceOf[`allow-downloads`]
   
   @js.native
   sealed trait `allow-forms`
@@ -110,6 +117,18 @@ object jupyterlabApputilsStrings {
   inline def forceBelow: forceBelow = "forceBelow".asInstanceOf[forceBelow]
   
   @js.native
+  sealed trait `hidden-inside`
+    extends StObject
+       with OutOfViewDisplay
+  inline def `hidden-inside`: `hidden-inside` = "hidden-inside".asInstanceOf[`hidden-inside`]
+  
+  @js.native
+  sealed trait `hidden-outside`
+    extends StObject
+       with OutOfViewDisplay
+  inline def `hidden-outside`: `hidden-outside` = "hidden-outside".asInstanceOf[`hidden-outside`]
+  
+  @js.native
   sealed trait initializing
     extends StObject
        with _KernelDisplayStatus
@@ -166,6 +185,18 @@ object jupyterlabApputilsStrings {
   @js.native
   sealed trait session extends StObject
   inline def session: session = "session".asInstanceOf[session]
+  
+  @js.native
+  sealed trait `stick-inside`
+    extends StObject
+       with OutOfViewDisplay
+  inline def `stick-inside`: `stick-inside` = "stick-inside".asInstanceOf[`stick-inside`]
+  
+  @js.native
+  sealed trait `stick-outside`
+    extends StObject
+       with OutOfViewDisplay
+  inline def `stick-outside`: `stick-outside` = "stick-outside".asInstanceOf[`stick-outside`]
   
   @js.native
   sealed trait `strict-origin`

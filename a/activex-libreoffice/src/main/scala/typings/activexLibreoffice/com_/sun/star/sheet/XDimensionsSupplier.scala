@@ -33,7 +33,7 @@ object XDimensionsSupplier {
     Dimensions: XNameAccess,
     acquire: () => Unit,
     getDimensions: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDimensionsSupplier = {
     val __obj = js.Dynamic.literal(Dimensions = Dimensions.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDimensions = js.Any.fromFunction0(getDimensions), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -19,6 +19,6 @@ object GetCertificateResponse {
     
     inline def setTableNames(value: js.Array[String]): Self = StObject.set(x, "tableNames", value.asInstanceOf[js.Any])
     
-    inline def setTableNamesVarargs(value: String*): Self = StObject.set(x, "tableNames", js.Array(value :_*))
+    inline def setTableNamesVarargs(value: String*): Self = StObject.set(x, "tableNames", js.Array(value*))
   }
 }

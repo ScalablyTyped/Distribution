@@ -38,12 +38,12 @@ object GetBuiltinIntentResponse {
     
     inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
-    inline def setSlotsVarargs(value: BuiltinIntentSlot*): Self = StObject.set(x, "slots", js.Array(value :_*))
+    inline def setSlotsVarargs(value: BuiltinIntentSlot*): Self = StObject.set(x, "slots", js.Array(value*))
     
     inline def setSupportedLocales(value: LocaleList): Self = StObject.set(x, "supportedLocales", value.asInstanceOf[js.Any])
     
     inline def setSupportedLocalesUndefined: Self = StObject.set(x, "supportedLocales", js.undefined)
     
-    inline def setSupportedLocalesVarargs(value: Locale*): Self = StObject.set(x, "supportedLocales", js.Array(value :_*))
+    inline def setSupportedLocalesVarargs(value: Locale*): Self = StObject.set(x, "supportedLocales", js.Array(value*))
   }
 }

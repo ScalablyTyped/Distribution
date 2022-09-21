@@ -111,6 +111,9 @@ object browsingData {
   /** Options that determine exactly what data will be removed. */
   trait RemovalOptions extends StObject {
     
+    /** Only remove data associated with this specific cookieStoreId. */
+    var cookieStoreId: js.UndefOr[String] = js.undefined
+    
     /** Only remove data associated with these hostnames (only applies to cookies and localStorage). */
     var hostnames: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -133,11 +136,15 @@ object browsingData {
     
     extension [Self <: RemovalOptions](x: Self) {
       
+      inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+      
+      inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+      
       inline def setHostnames(value: js.Array[String]): Self = StObject.set(x, "hostnames", value.asInstanceOf[js.Any])
       
       inline def setHostnamesUndefined: Self = StObject.set(x, "hostnames", js.undefined)
       
-      inline def setHostnamesVarargs(value: String*): Self = StObject.set(x, "hostnames", js.Array(value :_*))
+      inline def setHostnamesVarargs(value: String*): Self = StObject.set(x, "hostnames", js.Array(value*))
       
       inline def setOriginTypes(value: RemovalOptionsOriginTypes): Self = StObject.set(x, "originTypes", value.asInstanceOf[js.Any])
       

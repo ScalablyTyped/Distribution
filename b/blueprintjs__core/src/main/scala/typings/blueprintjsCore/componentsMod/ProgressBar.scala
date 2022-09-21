@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.progressBarMod.IProgressBarProps
+import typings.blueprintjsCore.progressBarMod.ProgressBarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "ProgressBar")
 @js.native
-class ProgressBar protected ()
+open class ProgressBar protected ()
   extends typings.blueprintjsCore.progressBarMod.ProgressBar {
-  def this(props: IProgressBarProps) = this()
-  def this(props: IProgressBarProps, context: js.Any) = this()
+  def this(props: ProgressBarProps) = this()
+  def this(props: ProgressBarProps, context: Any) = this()
 }
 /* static members */
 object ProgressBar {

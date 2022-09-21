@@ -36,7 +36,7 @@ object PosixUser {
     
     inline def setSecondaryGidsUndefined: Self = StObject.set(x, "SecondaryGids", js.undefined)
     
-    inline def setSecondaryGidsVarargs(value: Gid*): Self = StObject.set(x, "SecondaryGids", js.Array(value :_*))
+    inline def setSecondaryGidsVarargs(value: Gid*): Self = StObject.set(x, "SecondaryGids", js.Array(value*))
     
     inline def setUid(value: Uid): Self = StObject.set(x, "Uid", value.asInstanceOf[js.Any])
   }

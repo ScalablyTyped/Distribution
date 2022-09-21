@@ -8,25 +8,25 @@ trait SpriteSceneComponent
   extends StObject
      with ISceneComponent {
   
-  /* private */ var _pickSpriteButKeepRay: js.Any
+  /* private */ var _pickSpriteButKeepRay: Any
   
-  /* private */ var _pointerDown: js.Any
+  /* private */ var _pointerDown: Any
   
-  /* private */ var _pointerMove: js.Any
+  /* private */ var _pointerMove: Any
   
-  /* private */ var _pointerUp: js.Any
+  /* private */ var _pointerUp: Any
   
   /** @hidden */
-  /* private */ var _spritePredicate: js.Any
+  /* private */ var _spritePredicate: Any
 }
 object SpriteSceneComponent {
   
   inline def apply(
-    _pickSpriteButKeepRay: js.Any,
-    _pointerDown: js.Any,
-    _pointerMove: js.Any,
-    _pointerUp: js.Any,
-    _spritePredicate: js.Any,
+    _pickSpriteButKeepRay: Any,
+    _pointerDown: Any,
+    _pointerMove: Any,
+    _pointerUp: Any,
+    _spritePredicate: Any,
     dispose: () => Unit,
     name: String,
     rebuild: () => Unit,
@@ -39,14 +39,14 @@ object SpriteSceneComponent {
   
   extension [Self <: SpriteSceneComponent](x: Self) {
     
-    inline def set_pickSpriteButKeepRay(value: js.Any): Self = StObject.set(x, "_pickSpriteButKeepRay", value.asInstanceOf[js.Any])
+    inline def set_pickSpriteButKeepRay(value: Any): Self = StObject.set(x, "_pickSpriteButKeepRay", value.asInstanceOf[js.Any])
     
-    inline def set_pointerDown(value: js.Any): Self = StObject.set(x, "_pointerDown", value.asInstanceOf[js.Any])
+    inline def set_pointerDown(value: Any): Self = StObject.set(x, "_pointerDown", value.asInstanceOf[js.Any])
     
-    inline def set_pointerMove(value: js.Any): Self = StObject.set(x, "_pointerMove", value.asInstanceOf[js.Any])
+    inline def set_pointerMove(value: Any): Self = StObject.set(x, "_pointerMove", value.asInstanceOf[js.Any])
     
-    inline def set_pointerUp(value: js.Any): Self = StObject.set(x, "_pointerUp", value.asInstanceOf[js.Any])
+    inline def set_pointerUp(value: Any): Self = StObject.set(x, "_pointerUp", value.asInstanceOf[js.Any])
     
-    inline def set_spritePredicate(value: js.Any): Self = StObject.set(x, "_spritePredicate", value.asInstanceOf[js.Any])
+    inline def set_spritePredicate(value: Any): Self = StObject.set(x, "_spritePredicate", value.asInstanceOf[js.Any])
   }
 }

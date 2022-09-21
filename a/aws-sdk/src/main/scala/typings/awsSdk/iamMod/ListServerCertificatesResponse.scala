@@ -40,6 +40,6 @@ object ListServerCertificatesResponse {
     
     inline def setServerCertificateMetadataList(value: serverCertificateMetadataListType): Self = StObject.set(x, "ServerCertificateMetadataList", value.asInstanceOf[js.Any])
     
-    inline def setServerCertificateMetadataListVarargs(value: ServerCertificateMetadata*): Self = StObject.set(x, "ServerCertificateMetadataList", js.Array(value :_*))
+    inline def setServerCertificateMetadataListVarargs(value: ServerCertificateMetadata*): Self = StObject.set(x, "ServerCertificateMetadataList", js.Array(value*))
   }
 }

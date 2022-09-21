@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the Diagram.toolManager, which you can modify.
   */
-class ToolManager () extends Tool {
+open class ToolManager () extends Tool {
   
   /**Gets or sets the mode-less ActionTool, normally one of the .mouseDownTools.*/
   var actionTool: ActionTool = js.native

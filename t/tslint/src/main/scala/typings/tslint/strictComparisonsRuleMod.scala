@@ -19,10 +19,10 @@ object strictComparisonsRuleMod {
   
   @JSImport("tslint/lib/rules/strictComparisonsRule", "Rule")
   @js.native
-  class Rule protected () extends TypedRule {
+  open class Rule protected () extends TypedRule {
     def this(options: IOptions) = this()
     
-    /* private */ var getRuleOptions: js.Any = js.native
+    /* private */ var getRuleOptions: Any = js.native
   }
   /* static members */
   object Rule {

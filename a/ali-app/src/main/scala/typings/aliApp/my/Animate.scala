@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Animate extends StObject {
   
-  var args: js.Array[js.Any]
+  var args: js.Array[Any]
   
   var `type`: String
 }
 object Animate {
   
-  inline def apply(args: js.Array[js.Any], `type`: String): Animate = {
+  inline def apply(args: js.Array[Any], `type`: String): Animate = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animate]
@@ -20,9 +20,9 @@ object Animate {
   
   extension [Self <: Animate](x: Self) {
     
-    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,7 @@ object groupComponentMod {
       * @param {IElement} newElement  新的图形元素
       * @param {object} animateCfg 动画的配置项
       */
-    /* protected */ def addAnimation(elmentName: js.Any, newElement: js.Any, animateCfg: js.Any): Unit = js.native
+    /* protected */ def addAnimation(elmentName: Any, newElement: Any, animateCfg: Any): Unit = js.native
     
     /**
       * 在组件上添加子组件
@@ -50,7 +50,7 @@ object groupComponentMod {
       * @param {IGroup} parent 父元素
       * @param {object} cfg    分组的配置项
       */
-    /* protected */ def addGroup(parent: IGroup, cfg: js.Any): IGroup = js.native
+    /* protected */ def addGroup(parent: IGroup, cfg: Any): IGroup = js.native
     
     /**
       * @protected
@@ -58,41 +58,41 @@ object groupComponentMod {
       * @param {IGroup} parent 父元素
       * @param {object} cfg    分组的配置项
       */
-    /* protected */ def addShape(parent: IGroup, cfg: js.Any): IShape = js.native
+    /* protected */ def addShape(parent: IGroup, cfg: Any): IShape = js.native
     
-    /* private */ var appendDelegateObject: js.Any = js.native
+    /* private */ var appendDelegateObject: Any = js.native
     
     /* protected */ def applyOffset(): Unit = js.native
     
-    /* private */ var clearOffScreenCache: js.Any = js.native
+    /* private */ var clearOffScreenCache: Any = js.native
     
     /* protected */ def clearUpdateStatus(group: IGroup): Unit = js.native
     
-    /* protected */ def createOffScreenGroup(): js.Any = js.native
+    /* protected */ def createOffScreenGroup(): Any = js.native
     
     /* protected */ def delegateEmit(eventName: String, eventObject: LooseObject): Unit = js.native
     
-    /* private */ var deleteElements: js.Any = js.native
+    /* private */ var deleteElements: Any = js.native
     
     def emit(eventName: String, eventObject: LooseObject): Unit = js.native
     
-    def getChildComponentById(id: String): js.Any = js.native
+    def getChildComponentById(id: String): Any = js.native
     
     def getContainer(): IGroup = js.native
     
-    /* private */ var getDelegateObject: js.Any = js.native
+    /* private */ var getDelegateObject: Any = js.native
     
-    def getElementById(id: String): js.Any = js.native
+    def getElementById(id: String): Any = js.native
     
-    def getElementByLocalId(localId: js.Any): js.Any = js.native
+    def getElementByLocalId(localId: Any): Any = js.native
     
     /* protected */ def getElementId(localId: String): String = js.native
     
-    def getElementsByName(name: String): js.Array[js.Any] = js.native
+    def getElementsByName(name: String): js.Array[Any] = js.native
     
-    /* protected */ def getInnerLayoutBBox(): js.Any = js.native
+    /* protected */ def getInnerLayoutBBox(): Any = js.native
     
-    /* private */ var getReplaceAttrs: js.Any = js.native
+    /* private */ var getReplaceAttrs: Any = js.native
     
     /* protected */ def initEvent(): Unit = js.native
     
@@ -103,14 +103,14 @@ object groupComponentMod {
     def off(evt: String, callback: Callback): this.type = js.native
     def off(evt: Unit, callback: Callback): this.type = js.native
     
-    /* protected */ def offScreenRender(): js.Any = js.native
+    /* protected */ def offScreenRender(): Any = js.native
     
     def on(evt: String, callback: Callback): this.type = js.native
     def on(evt: String, callback: Callback, once: Boolean): this.type = js.native
     
-    /* protected */ def registerElement(element: js.Any): Unit = js.native
+    /* protected */ def registerElement(element: Any): Unit = js.native
     
-    /* private */ var registerNewGroup: js.Any = js.native
+    /* private */ var registerNewGroup: Any = js.native
     
     def remove(): Unit = js.native
     
@@ -121,9 +121,9 @@ object groupComponentMod {
       * @param {IElement} originElement 要删除的图形元素
       * @param {object} animateCfg 动画的配置项
       */
-    /* protected */ def removeAnimation(elementName: js.Any, originElement: js.Any, animateCfg: js.Any): Unit = js.native
+    /* protected */ def removeAnimation(elementName: Any, originElement: Any, animateCfg: Any): Unit = js.native
     
-    /* private */ var removeElement: js.Any = js.native
+    /* private */ var removeElement: Any = js.native
     
     /* protected */ def removeEvent(): Unit = js.native
     
@@ -131,11 +131,11 @@ object groupComponentMod {
       * 内部的渲染
       * @param {IGroup} group 图形分组
       */
-    /* protected */ def renderInner(group: IGroup): js.Any = js.native
+    /* protected */ def renderInner(group: IGroup): Any = js.native
     
-    def setCapture(capture: js.Any): Unit = js.native
+    def setCapture(capture: Any): Unit = js.native
     
-    /* protected */ def unregisterElement(element: js.Any): Unit = js.native
+    /* protected */ def unregisterElement(element: Any): Unit = js.native
     
     /**
       * 图形元素的更新动画
@@ -144,9 +144,9 @@ object groupComponentMod {
       * @param {object} newAttrs  新的图形元素
       * @param {object} animateCfg 动画的配置项
       */
-    /* protected */ def updateAnimation(elementName: js.Any, originElement: js.Any, newAttrs: js.Any, animateCfg: js.Any): Unit = js.native
+    /* protected */ def updateAnimation(elementName: Any, originElement: Any, newAttrs: Any, animateCfg: Any): Unit = js.native
     
-    /* protected */ def updateElements(newGroup: js.Any, originGroup: js.Any): Unit = js.native
+    /* protected */ def updateElements(newGroup: Any, originGroup: Any): Unit = js.native
   }
   
   type GroupComponentCtor[C /* <: GroupComponentCfg */, T /* <: GroupComponent[GroupComponentCfg] */] = Instantiable1[/* cfg */ C, T]

@@ -44,7 +44,7 @@ trait IListBinding[T] extends StObject {
     * @returns An IItemPromise that contains the requested IItem. If they item couldn't be found, the promise completes with a value of null.
     **/
   def fromKey(key: String): IItemPromise[IItem[T]] = js.native
-  def fromKey(key: String, hints: js.Any): IItemPromise[IItem[T]] = js.native
+  def fromKey(key: String, hints: Any): IItemPromise[IItem[T]] = js.native
   
   /**
     * Makes the specified IItem or IItemPromise the current item.

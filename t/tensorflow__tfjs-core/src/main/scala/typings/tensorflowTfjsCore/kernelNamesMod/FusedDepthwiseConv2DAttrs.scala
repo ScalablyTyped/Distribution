@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
 import typings.tensorflowTfjsCore.fusedTypesMod.Activation
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NHWC
@@ -22,7 +23,9 @@ trait FusedDepthwiseConv2DAttrs extends StObject {
   
   var dimRoundingMode: floor | round | ceil
   
-  var pad: valid_ | same_ | Double
+  var leakyreluAlpha: js.UndefOr[Double] = js.undefined
+  
+  var pad: valid_ | same_ | Double | ExplicitPadding
   
   var strides: (js.Tuple2[Double, Double]) | Double
 }
@@ -33,7 +36,7 @@ object FusedDepthwiseConv2DAttrs {
     dataFormat: NHWC | NCHW,
     dilations: (js.Tuple2[Double, Double]) | Double,
     dimRoundingMode: floor | round | ceil,
-    pad: valid_ | same_ | Double,
+    pad: valid_ | same_ | Double | ExplicitPadding,
     strides: (js.Tuple2[Double, Double]) | Double
   ): FusedDepthwiseConv2DAttrs = {
     val __obj = js.Dynamic.literal(activation = activation.asInstanceOf[js.Any], dataFormat = dataFormat.asInstanceOf[js.Any], dilations = dilations.asInstanceOf[js.Any], dimRoundingMode = dimRoundingMode.asInstanceOf[js.Any], pad = pad.asInstanceOf[js.Any], strides = strides.asInstanceOf[js.Any])
@@ -50,7 +53,11 @@ object FusedDepthwiseConv2DAttrs {
     
     inline def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     
-    inline def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setLeakyreluAlpha(value: Double): Self = StObject.set(x, "leakyreluAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setLeakyreluAlphaUndefined: Self = StObject.set(x, "leakyreluAlpha", js.undefined)
+    
+    inline def setPad(value: valid_ | same_ | Double | ExplicitPadding): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     inline def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }

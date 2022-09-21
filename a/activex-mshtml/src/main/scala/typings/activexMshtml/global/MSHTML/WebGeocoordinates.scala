@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.WebGeocoordinates")
 @js.native
-/* private */ class WebGeocoordinates ()
+/* private */ open class WebGeocoordinates ()
   extends StObject
      with typings.activexMshtml.MSHTML.WebGeocoordinates {
   
@@ -18,13 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val accuracy: Double = js.native
   
   /* CompleteClass */
-  override val altitude: js.Any = js.native
+  override val altitude: Any = js.native
   
   /* CompleteClass */
-  override val altitudeAccuracy: js.Any = js.native
+  override val altitudeAccuracy: Any = js.native
   
   /* CompleteClass */
-  override val heading: js.Any = js.native
+  override val heading: Any = js.native
   
   /* CompleteClass */
   override val latitude: Double = js.native
@@ -33,5 +33,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val longitude: Double = js.native
   
   /* CompleteClass */
-  override val speed: js.Any = js.native
+  override val speed: Any = js.native
 }

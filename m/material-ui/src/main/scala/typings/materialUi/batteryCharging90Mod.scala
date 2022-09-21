@@ -10,10 +10,10 @@ object batteryCharging90Mod {
   
   @JSImport("material-ui/svg-icons/device/battery-charging-90", JSImport.Default)
   @js.native
-  class default () extends DeviceBatteryCharging90
+  open class default () extends DeviceBatteryCharging90
   
   @JSImport("material-ui/svg-icons/device/battery-charging-90", "DeviceBatteryCharging90")
   @js.native
-  class DeviceBatteryCharging90 ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceBatteryCharging90 ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

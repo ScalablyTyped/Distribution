@@ -10,10 +10,10 @@ Converts human readable expression to a cron string
 | ------------------ | :-------------: |
 | Full name          | human-to-cron |
 | Keywords           | cron, human, crontab |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 47334 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1874.0 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](https://github.com/rainder/human-to-cron#readme)

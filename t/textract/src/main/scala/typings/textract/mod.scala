@@ -1,10 +1,9 @@
 package typings.textract
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.ExecException
 import typings.node.urlMod.URL_
-import typings.std.Error
 import typings.textract.anon.Cmd
 import typings.textract.anon.Crop
 import typings.textract.anon.Lang
@@ -21,46 +20,58 @@ object mod {
   inline def fromBufferWithMime(
     mimeType: String,
     buffer: Buffer,
-    callback: js.Function2[/* error */ Error, /* text */ String, Unit]
+    callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithMime")(mimeType.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fromBufferWithMime(
     mimeType: String,
     buffer: Buffer,
     config: Config,
-    callback: js.Function2[/* error */ Error, /* text */ String, Unit]
+    callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithMime")(mimeType.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def fromBufferWithName(name: String, buffer: Buffer, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithName")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromBufferWithName(
+    name: String,
+    buffer: Buffer,
+    callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithName")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fromBufferWithName(
     name: String,
     buffer: Buffer,
     config: Config,
-    callback: js.Function2[/* error */ Error, /* text */ String, Unit]
+    callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBufferWithName")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def fromFileWithMimeAndPath(
     mimeType: String,
     filePath: String,
-    callback: js.Function2[/* error */ Error, /* text */ String, Unit]
+    callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithMimeAndPath")(mimeType.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fromFileWithMimeAndPath(
     mimeType: String,
     filePath: String,
     config: Config,
-    callback: js.Function2[/* error */ Error, /* text */ String, Unit]
+    callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithMimeAndPath")(mimeType.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def fromFileWithPath(filePath: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithPath")(filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromFileWithPath(filePath: String, callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithPath")(filePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fromFileWithPath(
     filePath: String,
     config: Config,
-    callback: js.Function2[/* error */ Error, /* text */ String, Unit]
+    callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileWithPath")(filePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def fromUrl(url: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fromUrl(url: String, config: URLConfig, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fromUrl(url: URL_, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fromUrl(url: URL_, config: URLConfig, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromUrl(url: String, callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromUrl(
+    url: String,
+    config: URLConfig,
+    callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromUrl(url: URL_, callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromUrl(
+    url: URL_,
+    config: URLConfig,
+    callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Config extends StObject {
     

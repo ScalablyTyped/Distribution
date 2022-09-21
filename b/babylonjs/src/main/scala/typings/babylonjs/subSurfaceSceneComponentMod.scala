@@ -12,7 +12,7 @@ object subSurfaceSceneComponentMod {
   
   @JSImport("babylonjs/Rendering/subSurfaceSceneComponent", "SubSurfaceSceneComponent")
   @js.native
-  class SubSurfaceSceneComponent protected ()
+  open class SubSurfaceSceneComponent protected ()
     extends StObject
        with ISceneSerializableComponent {
     /**
@@ -20,6 +20,11 @@ object subSurfaceSceneComponentMod {
       * @param scene Defines the scene to register the component in
       */
     def this(scene: Scene) = this()
+    
+    /**
+      * Adds all the elements from the container to the scene
+      */
+    def addFromContainer(): Unit = js.native
     
     /**
       * Disposes the component and the associated ressources.
@@ -45,6 +50,11 @@ object subSurfaceSceneComponentMod {
       */
     /* CompleteClass */
     override def register(): Unit = js.native
+    
+    /**
+      * Removes all the elements in the container from the scene
+      */
+    def removeFromContainer(): Unit = js.native
     
     /**
       * The scene the component belongs to.

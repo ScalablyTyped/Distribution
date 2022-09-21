@@ -8,5 +8,5 @@ object branchInfoMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_BranchInfo", "_BranchInfo")
   @js.native
-  val BranchInfo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val BranchInfo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -5,14 +5,15 @@ import typings.cropperjs.Cropper.CropEndEvent
 import typings.cropperjs.Cropper.CropEvent
 import typings.cropperjs.Cropper.CropMoveEvent
 import typings.cropperjs.Cropper.CropStartEvent
-import typings.cropperjs.Cropper.Data
 import typings.cropperjs.Cropper.DragMode
 import typings.cropperjs.Cropper.ReadyEvent
+import typings.cropperjs.Cropper.SetDataOptions
 import typings.cropperjs.Cropper.ViewMode
 import typings.cropperjs.Cropper.ZoomEvent
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -65,6 +66,7 @@ import typings.reactCropper.reactCropperStrings.decimal
 import typings.reactCropper.reactCropperStrings.descending
 import typings.reactCropper.reactCropperStrings.dialog
 import typings.reactCropper.reactCropperStrings.email
+import typings.reactCropper.reactCropperStrings.environment
 import typings.reactCropper.reactCropperStrings.execute
 import typings.reactCropper.reactCropperStrings.grammar
 import typings.reactCropper.reactCropperStrings.grid
@@ -95,13 +97,16 @@ import typings.reactCropper.reactCropperStrings.text
 import typings.reactCropper.reactCropperStrings.time
 import typings.reactCropper.reactCropperStrings.tree
 import typings.reactCropper.reactCropperStrings.url
+import typings.reactCropper.reactCropperStrings.user
 import typings.reactCropper.reactCropperStrings.vertical
 import typings.reactCropper.reactCropperStrings.yes
 import typings.std.Element
 import typings.std.Event
+import typings.std.EventTarget
 import typings.std.Exclude
+import typings.std.HTMLElement
 import typings.std.HTMLImageElement
-import typings.std.NodeList
+import typings.std.NodeListOf
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -112,7 +117,7 @@ object mod {
   // tslint:disable-line no-empty-interface
   @JSImport("react-cropper", JSImport.Default)
   @js.native
-  class default () extends ReactCropper
+  open class default () extends ReactCropper
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
@@ -120,13 +125,13 @@ object mod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.cropperjs.mod.default because Inheritance from two classes. Inlined  */ @js.native
   trait ReactCropper
-    extends Component[ReactCropperProps, js.Object, js.Any]
+    extends Component[ReactCropperProps, js.Object, Any]
        with Cropper {
     
     def on(eventname: String, callback: js.Function0[Unit]): Unit = js.native
   }
   
-  /* Inlined parent cropperjs.cropperjs.default.Options */
+  /* Inlined parent cropperjs.cropperjs.default.Options<std.EventTarget> */
   /* Inlined parent react-cropper.react-cropper.Omit<react.react.HTMLProps<std.HTMLImageElement>, 'data' | 'ref'> */
   trait ReactCropperProps extends StObject {
     
@@ -150,11 +155,11 @@ object mod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -172,21 +177,21 @@ object mod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -200,11 +205,11 @@ object mod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -216,13 +221,13 @@ object mod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -232,7 +237,7 @@ object mod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -270,7 +275,7 @@ object mod {
     
     var background: js.UndefOr[Boolean] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var cellPadding: js.UndefOr[Double | String] = js.undefined
     
@@ -312,23 +317,23 @@ object mod {
     
     var coords: js.UndefOr[String] = js.undefined
     
-    var crop: js.UndefOr[js.Function1[/* event */ CropEvent, Unit]] = js.undefined
+    var crop: js.UndefOr[js.Function1[/* event */ CropEvent[EventTarget], Unit]] = js.undefined
     
     var cropBoxMovable: js.UndefOr[Boolean] = js.undefined
     
     var cropBoxResizable: js.UndefOr[Boolean] = js.undefined
     
-    var cropend: js.UndefOr[js.Function1[/* event */ CropEndEvent, Unit]] = js.undefined
+    var cropend: js.UndefOr[js.Function1[/* event */ CropEndEvent[EventTarget], Unit]] = js.undefined
     
-    var cropmove: js.UndefOr[js.Function1[/* event */ CropMoveEvent, Unit]] = js.undefined
+    var cropmove: js.UndefOr[js.Function1[/* event */ CropMoveEvent[EventTarget], Unit]] = js.undefined
     
-    var cropstart: js.UndefOr[js.Function1[/* event */ CropStartEvent, Unit]] = js.undefined
+    var cropstart: js.UndefOr[js.Function1[/* event */ CropStartEvent[EventTarget], Unit]] = js.undefined
     
     var crossOrigin: js.UndefOr[String] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
-    var data: js.UndefOr[Data] = js.undefined
+    var data: js.UndefOr[SetDataOptions] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
     
@@ -344,7 +349,7 @@ object mod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var download: js.UndefOr[js.Any] = js.undefined
+    var download: js.UndefOr[Any] = js.undefined
     
     var dragMode: js.UndefOr[DragMode] = js.undefined
     
@@ -390,7 +395,7 @@ object mod {
     
     var initialAspectRatio: js.UndefOr[Double] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -646,7 +651,7 @@ object mod {
     
     var preload: js.UndefOr[String] = js.undefined
     
-    var preview: js.UndefOr[Element | js.Array[Element] | NodeList | String] = js.undefined
+    var preview: js.UndefOr[HTMLElement | js.Array[HTMLElement] | NodeListOf[HTMLElement] | String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
@@ -654,7 +659,7 @@ object mod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var ready: js.UndefOr[js.Function1[/* event */ ReadyEvent, Unit]] = js.undefined
+    var ready: js.UndefOr[js.Function1[/* event */ ReadyEvent[EventTarget], Unit]] = js.undefined
     
     var ref: js.UndefOr[LegacyRef[ReactCropper]] = js.undefined
     
@@ -672,7 +677,7 @@ object mod {
     
     var reversed: js.UndefOr[Boolean] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rotatable: js.UndefOr[Boolean] = js.undefined
     
@@ -760,7 +765,7 @@ object mod {
     
     var wrap: js.UndefOr[String] = js.undefined
     
-    var zoom: js.UndefOr[js.Function1[/* event */ ZoomEvent, Unit]] = js.undefined
+    var zoom: js.UndefOr[js.Function1[/* event */ ZoomEvent[EventTarget], Unit]] = js.undefined
     
     var zoomOnTouch: js.UndefOr[Boolean] = js.undefined
     
@@ -813,7 +818,7 @@ object mod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -821,7 +826,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -857,7 +862,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -869,7 +874,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -877,7 +882,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -885,7 +890,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -913,15 +918,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -945,7 +950,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -955,7 +960,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -975,7 +980,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -1051,7 +1056,7 @@ object mod {
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -1135,7 +1140,7 @@ object mod {
       
       inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
       
-      inline def setCrop(value: /* event */ CropEvent => Unit): Self = StObject.set(x, "crop", js.Any.fromFunction1(value))
+      inline def setCrop(value: /* event */ CropEvent[EventTarget] => Unit): Self = StObject.set(x, "crop", js.Any.fromFunction1(value))
       
       inline def setCropBoxMovable(value: Boolean): Self = StObject.set(x, "cropBoxMovable", value.asInstanceOf[js.Any])
       
@@ -1147,15 +1152,15 @@ object mod {
       
       inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
       
-      inline def setCropend(value: /* event */ CropEndEvent => Unit): Self = StObject.set(x, "cropend", js.Any.fromFunction1(value))
+      inline def setCropend(value: /* event */ CropEndEvent[EventTarget] => Unit): Self = StObject.set(x, "cropend", js.Any.fromFunction1(value))
       
       inline def setCropendUndefined: Self = StObject.set(x, "cropend", js.undefined)
       
-      inline def setCropmove(value: /* event */ CropMoveEvent => Unit): Self = StObject.set(x, "cropmove", js.Any.fromFunction1(value))
+      inline def setCropmove(value: /* event */ CropMoveEvent[EventTarget] => Unit): Self = StObject.set(x, "cropmove", js.Any.fromFunction1(value))
       
       inline def setCropmoveUndefined: Self = StObject.set(x, "cropmove", js.undefined)
       
-      inline def setCropstart(value: /* event */ CropStartEvent => Unit): Self = StObject.set(x, "cropstart", js.Any.fromFunction1(value))
+      inline def setCropstart(value: /* event */ CropStartEvent[EventTarget] => Unit): Self = StObject.set(x, "cropstart", js.Any.fromFunction1(value))
       
       inline def setCropstartUndefined: Self = StObject.set(x, "cropstart", js.undefined)
       
@@ -1167,7 +1172,7 @@ object mod {
       
       inline def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
       
-      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: SetDataOptions): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1191,7 +1196,7 @@ object mod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
       
@@ -1205,7 +1210,7 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
       inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
@@ -1297,7 +1302,7 @@ object mod {
       
       inline def setInitialAspectRatioUndefined: Self = StObject.set(x, "initialAspectRatio", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -1487,7 +1492,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLImageElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLImageElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1587,7 +1592,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLImageElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLImageElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1811,11 +1816,11 @@ object mod {
       
       inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
-      inline def setPreview(value: Element | js.Array[Element] | NodeList | String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+      inline def setPreview(value: HTMLElement | js.Array[HTMLElement] | NodeListOf[HTMLElement] | String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
       inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       
-      inline def setPreviewVarargs(value: Element*): Self = StObject.set(x, "preview", js.Array(value :_*))
+      inline def setPreviewVarargs(value: HTMLElement*): Self = StObject.set(x, "preview", js.Array(value*))
       
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
@@ -1829,7 +1834,7 @@ object mod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setReady(value: /* event */ ReadyEvent => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+      inline def setReady(value: /* event */ ReadyEvent[EventTarget] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
       
       inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
       
@@ -1869,7 +1874,7 @@ object mod {
       
       inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -2021,7 +2026,7 @@ object mod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
@@ -2047,7 +2052,7 @@ object mod {
       
       inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
       
-      inline def setZoom(value: /* event */ ZoomEvent => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
+      inline def setZoom(value: /* event */ ZoomEvent[EventTarget] => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction1(value))
       
       inline def setZoomOnTouch(value: Boolean): Self = StObject.set(x, "zoomOnTouch", value.asInstanceOf[js.Any])
       

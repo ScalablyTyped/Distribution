@@ -1,6 +1,5 @@
 package typings.seleniumWebdriver.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ trait IWebDriverOptionsCookie extends StObject {
     *
     * @type {(!Date|number|undefined)}
     */
-  var expiry: js.UndefOr[Double | Date] = js.undefined
+  var expiry: js.UndefOr[Double | js.Date] = js.undefined
   
   /**
     * Whether the cookie is an HTTP only cookie. Defaults to false when adding a
@@ -67,7 +66,7 @@ object IWebDriverOptionsCookie {
     
     inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    inline def setExpiry(value: Double | Date): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: Double | js.Date): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
     inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
     

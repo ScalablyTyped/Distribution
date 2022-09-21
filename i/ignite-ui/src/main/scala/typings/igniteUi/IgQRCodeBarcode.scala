@@ -11,7 +11,7 @@ trait IgQRCodeBarcode
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.
@@ -147,7 +147,7 @@ trait IgQRCodeBarcode
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
@@ -321,7 +321,7 @@ object IgQRCodeBarcode {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

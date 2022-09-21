@@ -3,7 +3,11 @@ package typings.reactAudioPlayer
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.react.mod.SyntheticEvent
+import typings.react.mod.RefObject
+import typings.reactAudioPlayer.reactAudioPlayerStrings._empty
+import typings.reactAudioPlayer.reactAudioPlayerStrings.auto
+import typings.reactAudioPlayer.reactAudioPlayerStrings.metadata
+import typings.reactAudioPlayer.reactAudioPlayerStrings.none
 import typings.std.Event
 import typings.std.HTMLAudioElement
 import org.scalablytyped.runtime.StObject
@@ -14,36 +18,77 @@ object mod {
   
   @JSImport("react-audio-player", JSImport.Default)
   @js.native
-  class default () extends ReactAudioPlayer
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactAudioPlayer.reactAudioPlayerStrings._empty
-    - typings.reactAudioPlayer.reactAudioPlayerStrings.none
-    - typings.reactAudioPlayer.reactAudioPlayerStrings.metadata
-    - typings.reactAudioPlayer.reactAudioPlayerStrings.auto
-  */
-  trait Preload extends StObject
-  object Preload {
+  open class default () extends ReactAudioPlayer
+  object default {
     
-    inline def _empty: typings.reactAudioPlayer.reactAudioPlayerStrings._empty = "".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings._empty]
+    @JSImport("react-audio-player", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    inline def auto: typings.reactAudioPlayer.reactAudioPlayerStrings.auto = "auto".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.auto]
+    /* static member */
+    @JSImport("react-audio-player", "default.defaultProps")
+    @js.native
+    def defaultProps: ReactAudioPlayerProps = js.native
+    inline def defaultProps_=(x: ReactAudioPlayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    inline def metadata: typings.reactAudioPlayer.reactAudioPlayerStrings.metadata = "metadata".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.metadata]
-    
-    inline def none: typings.reactAudioPlayer.reactAudioPlayerStrings.none = "none".asInstanceOf[typings.reactAudioPlayer.reactAudioPlayerStrings.none]
+    /* static member */
+    @JSImport("react-audio-player", "default.propTypes")
+    @js.native
+    def propTypes: js.Object = js.native
+    inline def propTypes_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait ReactAudioPlayer
-    extends Component[ReactAudioPlayerProps, js.Any, js.Any] {
+    extends Component[ReactAudioPlayerProps, js.Object, Any] {
     
-    var audioEl: HTMLAudioElement = js.native
+    var audioEl: RefObject[HTMLAudioElement] = js.native
     
+    /**
+      * Clear the onListen interval
+      */
     def clearListenTrack(): Unit = js.native
     
+    @JSName("componentDidMount")
+    def componentDidMount_MReactAudioPlayer(): Unit = js.native
+    
+    @JSName("componentDidUpdate")
+    def componentDidUpdate_MReactAudioPlayer(prevProps: ReactAudioPlayerProps): Unit = js.native
+    
+    @JSName("componentWillUnmount")
+    def componentWillUnmount_MReactAudioPlayer(): Unit = js.native
+    
+    var listenTracker: js.UndefOr[Double] = js.native
+    
+    def onAbort(e: Event): Unit = js.native
+    
+    def onCanPlay(e: Event): js.UndefOr[Unit] = js.native
+    
+    def onCanPlayThrough(e: Event): js.UndefOr[Unit] = js.native
+    
+    def onEnded(e: Event): Unit = js.native
+    
+    def onError(e: Event): js.UndefOr[Unit] = js.native
+    
+    def onLoadedMetadata(e: Event): Unit = js.native
+    
+    def onPause(e: Event): Unit = js.native
+    
+    def onPlay(e: Event): Unit = js.native
+    
+    def onSeeked(e: Event): Unit = js.native
+    
+    def onVolumeChanged(e: Event): Unit = js.native
+    
+    /**
+      * Set an interval to call props.onListen every props.listenInterval time period
+      */
     def setListenTrack(): Unit = js.native
     
+    /**
+      * Set the volume on the audio element from props
+      * @param {Number} volume
+      */
     def updateVolume(volume: Double): Unit = js.native
   }
   
@@ -69,29 +114,29 @@ object mod {
     
     var muted: js.UndefOr[Boolean] = js.undefined
     
-    var onAbort: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onAbort: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onCanPlay: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onCanPlay: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onCanPlayThrough: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onEnded: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onEnded: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onListen: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onListen: js.UndefOr[js.Function1[/* time */ Double, Unit]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onLoadedMetadata: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onPause: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onPause: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onPlay: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onPlay: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onSeeked: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onSeeked: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onVolumeChanged: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLAudioElement, Event], Unit]] = js.undefined
+    var onVolumeChanged: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var preload: js.UndefOr[Preload] = js.undefined
+    var preload: js.UndefOr[_empty | none | metadata | auto] = js.undefined
     
     var src: js.UndefOr[String] = js.undefined
     
@@ -99,12 +144,12 @@ object mod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var volume: js.UndefOr[Double] = js.undefined
+    var volume: Double
   }
   object ReactAudioPlayerProps {
     
-    inline def apply(): ReactAudioPlayerProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(volume: Double): ReactAudioPlayerProps = {
+      val __obj = js.Dynamic.literal(volume = volume.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactAudioPlayerProps]
     }
     
@@ -150,51 +195,51 @@ object mod {
       
       inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
       
-      inline def setOnAbort(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: /* e */ Event => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
       inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      inline def setOnCanPlay(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+      inline def setOnCanPlay(value: /* e */ Event => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
       
-      inline def setOnCanPlayThrough(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+      inline def setOnCanPlayThrough(value: /* e */ Event => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
       
       inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnEnded(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+      inline def setOnEnded(value: /* e */ Event => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
       
       inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      inline def setOnError(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* e */ Event => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnListen(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onListen", js.Any.fromFunction1(value))
+      inline def setOnListen(value: /* time */ Double => Unit): Self = StObject.set(x, "onListen", js.Any.fromFunction1(value))
       
       inline def setOnListenUndefined: Self = StObject.set(x, "onListen", js.undefined)
       
-      inline def setOnLoadedMetadata(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+      inline def setOnLoadedMetadata(value: /* e */ Event => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
       
       inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
       
-      inline def setOnPause(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+      inline def setOnPause(value: /* e */ Event => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
       
       inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      inline def setOnPlay(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: /* e */ Event => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
       
       inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      inline def setOnSeeked(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+      inline def setOnSeeked(value: /* e */ Event => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
       
       inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
       
-      inline def setOnVolumeChanged(value: /* event */ SyntheticEvent[HTMLAudioElement, Event] => Unit): Self = StObject.set(x, "onVolumeChanged", js.Any.fromFunction1(value))
+      inline def setOnVolumeChanged(value: /* e */ Event => Unit): Self = StObject.set(x, "onVolumeChanged", js.Any.fromFunction1(value))
       
       inline def setOnVolumeChangedUndefined: Self = StObject.set(x, "onVolumeChanged", js.undefined)
       
-      inline def setPreload(value: Preload): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+      inline def setPreload(value: _empty | none | metadata | auto): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
       inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
@@ -211,8 +256,6 @@ object mod {
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
-      
-      inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     }
   }
 }

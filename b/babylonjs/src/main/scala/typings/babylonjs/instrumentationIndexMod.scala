@@ -10,7 +10,7 @@ object instrumentationIndexMod {
   
   @JSImport("babylonjs/Instrumentation/index", "EngineInstrumentation")
   @js.native
-  class EngineInstrumentation protected ()
+  open class EngineInstrumentation protected ()
     extends typings.babylonjs.engineInstrumentationMod.EngineInstrumentation {
     /**
       * Instantiates a new engine instrumentation.
@@ -26,7 +26,7 @@ object instrumentationIndexMod {
   
   @JSImport("babylonjs/Instrumentation/index", "SceneInstrumentation")
   @js.native
-  class SceneInstrumentation protected ()
+  open class SceneInstrumentation protected ()
     extends typings.babylonjs.sceneInstrumentationMod.SceneInstrumentation {
     /**
       * Instantiates a new scene instrumentation.
@@ -42,6 +42,6 @@ object instrumentationIndexMod {
   
   @JSImport("babylonjs/Instrumentation/index", "_TimeToken")
   @js.native
-  class TimeToken ()
+  open class TimeToken ()
     extends typings.babylonjs.timeTokenMod.TimeToken
 }

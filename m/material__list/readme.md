@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__list
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web list component
@@ -10,10 +10,10 @@ The Material Components for the web list component
 | ------------------ | :-------------: |
 | Full name          | @material/list |
 | Keywords           | material components, material design, list |
-| # releases         | 617 |
-| # dependents       | 80 |
-| # downloads        | 2647809 |
-| # stars            | 0 |
+| # releases         | 714 |
+| # dependents       | 0.0 |
+| # downloads        | 350319.0 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientContainer.anon.NameOauthtokenPrettyPrint
+import typings.maximMazurokGapiClientContainer.anon.ProjectIdQuotaUserUploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait LocationsResource extends StObject {
   
   /** Returns configuration info about the Google Kubernetes Engine service. */
   def getServerConfig(): Request[ServerConfig] = js.native
-  def getServerConfig(request: NameOauthtokenPrettyPrint): Request[ServerConfig] = js.native
+  def getServerConfig(request: ProjectIdQuotaUserUploadType): Request[ServerConfig] = js.native
   
   var operations: OperationsResource = js.native
 }

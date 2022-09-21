@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/router", "UrlSegment")
 @js.native
-class UrlSegment protected () extends StObject {
+open class UrlSegment protected () extends StObject {
   def this(
     /** The path part of a URL segment */
   path: String,

@@ -86,7 +86,7 @@ object XChartDataArray {
     getNotANumber: () => Double,
     getRowDescriptions: () => SafeArray[String],
     isNotANumber: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChartDataChangeEventListener: XChartDataChangeEventListener => Unit,
     setColumnDescriptions: SeqEquiv[String] => Unit,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_artifactregistry
 
-Typings are for version 1.0.20201113
+Typings are for version 1.0.20220809
 
 ## Library description:
 TypeScript typings for Artifact Registry API v1
@@ -10,10 +10,10 @@ TypeScript typings for Artifact Registry API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.artifactregistry |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 893 |
-| # stars            | 0 |
+| # releases         | 70 |
+| # dependents       | 0.0 |
+| # downloads        | 910.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

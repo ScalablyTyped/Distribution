@@ -10,10 +10,10 @@ Simple, robust YouTube Iframe Player API
 | ------------------ | :-------------: |
 | Full name          | yt-player |
 | Keywords           | youtube, youtube player, player, iframe, api, youtube api, youtube iframe api, iframe api, yt player, yt-player, youtube embed |
-| # releases         | 9 |
-| # dependents       | 4 |
-| # downloads        | 115724 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10150.333333333334 |
+| # stars            | 634.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/yt-player)

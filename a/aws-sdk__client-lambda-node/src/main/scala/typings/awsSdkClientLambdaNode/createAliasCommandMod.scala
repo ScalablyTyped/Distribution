@@ -16,7 +16,7 @@ object createAliasCommandMod {
   
   @JSImport("@aws-sdk/client-lambda-node/commands/CreateAliasCommand", "CreateAliasCommand")
   @js.native
-  class CreateAliasCommand protected ()
+  open class CreateAliasCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object createAliasCommandMod {
     override val middlewareStack: MiddlewareStack[CreateAliasInput, CreateAliasOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: LambdaResolvedConfiguration
     ): Handler[CreateAliasInput, CreateAliasOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: LambdaResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[CreateAliasInput, CreateAliasOutput] = js.native
   }
 }

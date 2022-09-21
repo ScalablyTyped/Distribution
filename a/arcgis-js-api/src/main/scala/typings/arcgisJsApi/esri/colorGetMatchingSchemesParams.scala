@@ -24,7 +24,7 @@ trait colorGetMatchingSchemesParams
   /**
     * The geometry type of the layer for which the color scheme will be applied.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
+    * [Read more...](global.html#geometryType)
     */
   var geometryType: String
   
@@ -67,7 +67,7 @@ object colorGetMatchingSchemesParams {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setGeometryType(value: String): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     

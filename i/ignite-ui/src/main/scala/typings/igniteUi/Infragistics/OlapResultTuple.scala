@@ -9,17 +9,17 @@ trait OlapResultTuple extends StObject {
   /**
     * Returns an array of $.ig.OlapResultTuple objects which form the axis.
     */
-  def members(): js.Array[js.Any]
+  def members(): js.Array[Any]
 }
 object OlapResultTuple {
   
-  inline def apply(members: () => js.Array[js.Any]): OlapResultTuple = {
+  inline def apply(members: () => js.Array[Any]): OlapResultTuple = {
     val __obj = js.Dynamic.literal(members = js.Any.fromFunction0(members))
     __obj.asInstanceOf[OlapResultTuple]
   }
   
   extension [Self <: OlapResultTuple](x: Self) {
     
-    inline def setMembers(value: () => js.Array[js.Any]): Self = StObject.set(x, "members", js.Any.fromFunction0(value))
+    inline def setMembers(value: () => js.Array[Any]): Self = StObject.set(x, "members", js.Any.fromFunction0(value))
   }
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotCell")
 @js.native
-/* private */ class PivotCell ()
+/* private */ open class PivotCell ()
   extends StObject
      with typings.activexExcel.Excel.PivotCell {
   
@@ -43,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val DataField: typings.activexExcel.Excel.PivotField = js.native
   
   /* CompleteClass */
-  override val DataSourceValue: js.Any = js.native
+  override val DataSourceValue: Any = js.native
   
   /* CompleteClass */
   override def DiscardChange(): Unit = js.native
@@ -59,7 +59,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val MDX: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PivotCellType: XlPivotCellType = js.native

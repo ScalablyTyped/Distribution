@@ -6,17 +6,23 @@ import typings.react.mod.Context
 import typings.react.mod.IframeHTMLAttributes
 import typings.react.mod.Provider
 import typings.react.mod.ReactNode
+import typings.std.HTMLDocument
 import typings.std.HTMLIFrameElement
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("react-frame-component", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("react-frame-component", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FrameComponentProps, js.Object, js.Any]
+  open class default ()
+    extends Component[FrameComponentProps, js.Object, Any]
   
   @JSImport("react-frame-component", "FrameContext")
   @js.native
@@ -30,7 +36,9 @@ object mod {
   @js.native
   val FrameContextProvider: Provider[FrameContextProps] = js.native
   
-  type FrameComponent = Component[FrameComponentProps, js.Object, js.Any]
+  inline def useFrame(): FrameContextProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useFrame")().asInstanceOf[FrameContextProps]
+  
+  type FrameComponent = Component[FrameComponentProps, js.Object, Any]
   
   trait FrameComponentProps
     extends StObject
@@ -86,9 +94,9 @@ object mod {
   
   trait FrameContextProps extends StObject {
     
-    var document: js.UndefOr[js.Any] = js.undefined
+    var document: js.UndefOr[HTMLDocument] = js.undefined
     
-    var window: js.UndefOr[js.Any] = js.undefined
+    var window: js.UndefOr[Window] = js.undefined
   }
   object FrameContextProps {
     
@@ -99,11 +107,11 @@ object mod {
     
     extension [Self <: FrameContextProps](x: Self) {
       
-      inline def setDocument(value: js.Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: HTMLDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
       inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
       
-      inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
       inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }

@@ -1,7 +1,7 @@
 package typings.mapboxMapboxSdk
 
-import typings.mapboxMapboxSdk.anon.MapId
 import typings.mapboxMapboxSdk.anon.Reverse
+import typings.mapboxMapboxSdk.anon.Tileset
 import typings.mapboxMapboxSdk.anon.UploadId
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
@@ -68,7 +68,7 @@ object uploadsMod {
     
     var created: String
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     var id: String
     
@@ -104,7 +104,7 @@ object uploadsMod {
       
       inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -122,63 +122,39 @@ object uploadsMod {
     }
   }
   
+  @js.native
   trait UploadsService extends StObject {
     
     /**
       * Create an upload.
       * @param config
       */
-    def createUpload(config: MapId): MapiRequest
+    def createUpload(config: Tileset): MapiRequest[Any] = js.native
     
     /**
       * Create S3 credentials.
       */
-    def createUploadCredentials(): MapiRequest
+    def createUploadCredentials(): MapiRequest[Any] = js.native
     
     /**
       * Delete an upload.
       * @param config
       */
     // implicit any
-    def deleteUpload(config: UploadId): js.Any
+    def deleteUpload(config: UploadId): Any = js.native
     
     /**
       * Get an upload's status.
       * @param config
       */
     // implicit any
-    def getUpload(config: UploadId): js.Any
+    def getUpload(config: UploadId): Any = js.native
     
     /**
       * List the statuses of all recent uploads.
       * @param config
       */
-    def listUploads(config: Reverse): MapiRequest
-  }
-  object UploadsService {
-    
-    inline def apply(
-      createUpload: MapId => MapiRequest,
-      createUploadCredentials: () => MapiRequest,
-      deleteUpload: UploadId => js.Any,
-      getUpload: UploadId => js.Any,
-      listUploads: Reverse => MapiRequest
-    ): UploadsService = {
-      val __obj = js.Dynamic.literal(createUpload = js.Any.fromFunction1(createUpload), createUploadCredentials = js.Any.fromFunction0(createUploadCredentials), deleteUpload = js.Any.fromFunction1(deleteUpload), getUpload = js.Any.fromFunction1(getUpload), listUploads = js.Any.fromFunction1(listUploads))
-      __obj.asInstanceOf[UploadsService]
-    }
-    
-    extension [Self <: UploadsService](x: Self) {
-      
-      inline def setCreateUpload(value: MapId => MapiRequest): Self = StObject.set(x, "createUpload", js.Any.fromFunction1(value))
-      
-      inline def setCreateUploadCredentials(value: () => MapiRequest): Self = StObject.set(x, "createUploadCredentials", js.Any.fromFunction0(value))
-      
-      inline def setDeleteUpload(value: UploadId => js.Any): Self = StObject.set(x, "deleteUpload", js.Any.fromFunction1(value))
-      
-      inline def setGetUpload(value: UploadId => js.Any): Self = StObject.set(x, "getUpload", js.Any.fromFunction1(value))
-      
-      inline def setListUploads(value: Reverse => MapiRequest): Self = StObject.set(x, "listUploads", js.Any.fromFunction1(value))
-    }
+    def listUploads(): MapiRequest[Any] = js.native
+    def listUploads(config: Reverse): MapiRequest[Any] = js.native
   }
 }

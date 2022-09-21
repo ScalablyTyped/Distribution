@@ -89,13 +89,13 @@ object EnvelopeTransferRuleRequest {
     
     inline def setFromGroupsUndefined: Self = StObject.set(x, "fromGroups", js.undefined)
     
-    inline def setFromGroupsVarargs(value: (/* This object contains information about a group. */ Group)*): Self = StObject.set(x, "fromGroups", js.Array(value :_*))
+    inline def setFromGroupsVarargs(value: (/* This object contains information about a group. */ Group)*): Self = StObject.set(x, "fromGroups", js.Array(value*))
     
     inline def setFromUsers(value: js.Array[UserInformation]): Self = StObject.set(x, "fromUsers", value.asInstanceOf[js.Any])
     
     inline def setFromUsersUndefined: Self = StObject.set(x, "fromUsers", js.undefined)
     
-    inline def setFromUsersVarargs(value: UserInformation*): Self = StObject.set(x, "fromUsers", js.Array(value :_*))
+    inline def setFromUsersVarargs(value: UserInformation*): Self = StObject.set(x, "fromUsers", js.Array(value*))
     
     inline def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     

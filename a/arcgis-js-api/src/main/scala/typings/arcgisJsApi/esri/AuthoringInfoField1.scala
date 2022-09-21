@@ -56,7 +56,7 @@ object AuthoringInfoField1 {
     
     inline def setClassBreakInfosUndefined: Self = StObject.set(x, "classBreakInfos", js.undefined)
     
-    inline def setClassBreakInfosVarargs(value: AuthoringInfoField1ClassBreakInfos*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
+    inline def setClassBreakInfosVarargs(value: AuthoringInfoField1ClassBreakInfos*): Self = StObject.set(x, "classBreakInfos", js.Array(value*))
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ object thinMaterialHelperMod {
   
   @JSImport("babylonjs/Materials/thinMaterialHelper", "ThinMaterialHelper")
   @js.native
-  class ThinMaterialHelper () extends StObject
+  open class ThinMaterialHelper () extends StObject
   /* static members */
   object ThinMaterialHelper {
     

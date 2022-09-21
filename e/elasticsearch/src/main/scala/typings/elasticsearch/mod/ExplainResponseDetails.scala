@@ -25,7 +25,7 @@ object ExplainResponseDetails {
     
     inline def setDetails(value: js.Array[ExplainResponseDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    inline def setDetailsVarargs(value: ExplainResponseDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: ExplainResponseDetails*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

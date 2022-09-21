@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ioredis/commands" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ioredis/commands" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

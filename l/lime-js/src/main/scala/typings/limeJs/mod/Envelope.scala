@@ -10,7 +10,7 @@ trait Envelope extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[Any] = js.undefined
   
   var pp: js.UndefOr[String] = js.undefined
   
@@ -33,7 +33,7 @@ object Envelope {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     

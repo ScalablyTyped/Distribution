@@ -1,84 +1,62 @@
 package typings.grommet.anon
 
-import typings.grommet.textMod.TextProps
-import typings.grommet.utilsMod.BorderType
-import typings.grommet.utilsMod.MarginType
-import typings.grommet.utilsMod.RoundType
+import typings.grommet.dropMod.DropProps
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Content extends StObject {
   
-  var border: js.UndefOr[BorderType] = js.undefined
+  var color: js.UndefOr[String | Dark] = js.undefined
   
-  var content: js.UndefOr[Margin] = js.undefined
+  var content: js.UndefOr[ReactNode] = js.undefined
   
-  var disabled: js.UndefOr[BackgroundBorder] = js.undefined
+  var dropProps: js.UndefOr[DropProps] = js.undefined
   
-  var error: js.UndefOr[Icon] = js.undefined
+  var location: js.Array[Double]
   
-  var focus: js.UndefOr[`6`] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   
-  var help: js.UndefOr[ColorMargin] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.undefined
   
-  var info: js.UndefOr[ColorContainer] = js.undefined
-  
-  var label: js.UndefOr[TextProps] = js.undefined
-  
-  var margin: js.UndefOr[MarginType] = js.undefined
-  
-  var round: js.UndefOr[RoundType] = js.undefined
+  var onHover: js.UndefOr[js.Function1[/* hovered */ Boolean, Unit]] = js.undefined
 }
 object Content {
   
-  inline def apply(): Content = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(location: js.Array[Double]): Content = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
   
   extension [Self <: Content](x: Self) {
     
-    inline def setBorder(value: BorderType): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setColor(value: String | Dark): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setBorderVarargs(value: Error*): Self = StObject.set(x, "border", js.Array(value :_*))
-    
-    inline def setContent(value: Margin): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setDisabled(value: BackgroundBorder): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDropProps(value: DropProps): Self = StObject.set(x, "dropProps", value.asInstanceOf[js.Any])
     
-    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDropPropsUndefined: Self = StObject.set(x, "dropProps", js.undefined)
     
-    inline def setError(value: Icon): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
     
-    inline def setFocus(value: `6`): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setHelp(value: ColorMargin): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: /* name */ String => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setInfo(value: ColorContainer): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setOnHover(value: /* hovered */ Boolean => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
     
-    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
-    
-    inline def setLabel(value: TextProps): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    
-    inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
-    
-    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
-    
-    inline def setRound(value: RoundType): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
-    
-    inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+    inline def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
   }
 }

@@ -3,7 +3,6 @@ package typings.awsSdkClientPinpointBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientPinpointBrowser.typesItemResponseMod.ItemResponse
 import typings.awsSdkClientPinpointBrowser.typesItemResponseMod.UnmarshalledItemResponse
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object typesEventsResponseMod {
       *
       * If no item response exists, the value can also be one of the following: 202 (if the request was processed successfully) or 400 (if the payload was invalid, or required fields were missing).
       */
-    var Results: js.UndefOr[StringDictionary[ItemResponse] | (Iterable[js.Tuple2[String, ItemResponse]])] = js.undefined
+    var Results: js.UndefOr[StringDictionary[ItemResponse] | (js.Iterable[js.Tuple2[String, ItemResponse]])] = js.undefined
   }
   object EventsResponse {
     
@@ -28,7 +27,7 @@ object typesEventsResponseMod {
     
     extension [Self <: EventsResponse](x: Self) {
       
-      inline def setResults(value: StringDictionary[ItemResponse] | (Iterable[js.Tuple2[String, ItemResponse]])): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+      inline def setResults(value: StringDictionary[ItemResponse] | (js.Iterable[js.Tuple2[String, ItemResponse]])): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     }

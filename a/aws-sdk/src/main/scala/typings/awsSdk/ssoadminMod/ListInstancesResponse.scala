@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListInstancesResponse extends StObject {
   
   /**
-    * Lists the SSO instances that the caller has access to.
+    * Lists the IAM Identity Center instances that the caller has access to.
     */
   var Instances: js.UndefOr[InstanceList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListInstancesResponse {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: InstanceMetadata*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: InstanceMetadata*): Self = StObject.set(x, "Instances", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

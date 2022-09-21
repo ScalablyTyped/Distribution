@@ -10,10 +10,10 @@ Library for generating, parsing, and evaluating LDAP filters
 | ------------------ | :-------------: |
 | Full name          | ldap-filters |
 | Keywords           | ldap, filter, parser, generate, evaluate, match |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3508 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 106.0 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/tapmodo/node-ldap-filters)

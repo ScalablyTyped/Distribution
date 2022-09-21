@@ -13,5 +13,5 @@ object unpackPayloadMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def unpackPayload(e: MessageEvent[js.Any]): FramebusPayload | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("unpackPayload")(e.asInstanceOf[js.Any]).asInstanceOf[FramebusPayload | `false`]
+  inline def unpackPayload(e: MessageEvent[Any]): FramebusPayload | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("unpackPayload")(e.asInstanceOf[js.Any]).asInstanceOf[FramebusPayload | `false`]
 }

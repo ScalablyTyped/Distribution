@@ -21,7 +21,7 @@ object Buffer {
     
     inline def setBuffer(value: js.Array[Double]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    inline def setBufferVarargs(value: Double*): Self = StObject.set(x, "buffer", js.Array(value :_*))
+    inline def setBufferVarargs(value: Double*): Self = StObject.set(x, "buffer", js.Array(value*))
     
     inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
   }

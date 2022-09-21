@@ -26,35 +26,21 @@ object global {
     
     inline def add(a: String, b: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
     
+    inline def amountToCents(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("amountToCents")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def centsToAmount(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centsToAmount")().asInstanceOf[Unit]
+    inline def centsToAmount(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("centsToAmount")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    
     inline def cmp(a: String, b: String): `0` | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`0` | Double]
     
     inline def div(a: String, b: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def floatToAmount(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("floatToAmount")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
+    inline def format(currency: CHF | CNY | EUR | GBP | JPY | LTL | PLN | SEK | SKK | UAH | USD, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def format(currency: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def format_CHF(currency: CHF, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def format_CNY(currency: CNY, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def format_EUR(currency: EUR, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def format_GBP(currency: GBP, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def format_JPY(currency: JPY, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def format_LTL(currency: LTL, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def format_PLN(currency: PLN, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def format_SEK(currency: SEK, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def format_SKK(currency: SKK, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def format_UAH(currency: UAH, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def format_USD(currency: USD, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(currency.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def integralPart(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("integralPart")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def isEqual(a: String, b: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     

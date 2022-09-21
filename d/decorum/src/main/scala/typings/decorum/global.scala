@@ -5,7 +5,6 @@ import typings.decorum.mod.IValidationResult
 import typings.decorum.mod.MessageHandler
 import typings.decorum.mod.ValidationDefinitions
 import typings.std.PropertyDecorator
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,16 +37,16 @@ object global {
         *     enable customizing error messages.
         */
       def this(validatorKey: String, message: String) = this()
-      def this(validatorKey: String, message: MessageHandler[js.Any]) = this()
+      def this(validatorKey: String, message: MessageHandler[Any]) = this()
     }
     
     @JSGlobal("decorum.CustomValidator")
     @js.native
-    class CustomValidator[TModel] protected ()
+    open class CustomValidator[TModel] protected ()
       extends typings.decorum.mod.CustomValidator[TModel] {
-      def this(predicate: js.Function2[/* value */ js.Any, /* model */ TModel, Boolean], message: String) = this()
+      def this(predicate: js.Function2[/* value */ Any, /* model */ TModel, Boolean], message: String) = this()
       def this(
-        predicate: js.Function2[/* value */ js.Any, /* model */ TModel, Boolean],
+        predicate: js.Function2[/* value */ Any, /* model */ TModel, Boolean],
         message: MessageHandler[typings.decorum.mod.CustomValidator[TModel]]
       ) = this()
     }
@@ -58,7 +57,7 @@ object global {
     
     @JSGlobal("decorum.EmailValidator")
     @js.native
-    class EmailValidator ()
+    open class EmailValidator ()
       extends typings.decorum.mod.EmailValidator {
       def this(message: String) = this()
       def this(message: MessageHandler[typings.decorum.mod.EmailValidator]) = this()
@@ -72,15 +71,15 @@ object global {
       
       @JSGlobal("decorum.EmailValidator.EmailRegex")
       @js.native
-      def EmailRegex: RegExp = js.native
-      inline def EmailRegex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EmailRegex")(x.asInstanceOf[js.Any])
+      def EmailRegex: js.RegExp = js.native
+      inline def EmailRegex_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EmailRegex")(x.asInstanceOf[js.Any])
     }
     
     inline def FieldName(name: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("FieldName")(name.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
     
     @JSGlobal("decorum.FieldOptions")
     @js.native
-    class FieldOptions protected ()
+    open class FieldOptions protected ()
       extends typings.decorum.mod.FieldOptions {
       def this(property: String) = this()
     }
@@ -91,7 +90,7 @@ object global {
     
     @JSGlobal("decorum.LengthValidator")
     @js.native
-    class LengthValidator protected ()
+    open class LengthValidator protected ()
       extends typings.decorum.mod.LengthValidator {
       def this(length: Double) = this()
       def this(length: Double, message: String) = this()
@@ -104,7 +103,7 @@ object global {
     
     @JSGlobal("decorum.MaxLengthValidator")
     @js.native
-    class MaxLengthValidator protected ()
+    open class MaxLengthValidator protected ()
       extends typings.decorum.mod.MaxLengthValidator {
       def this(maxLength: Double) = this()
       def this(maxLength: Double, message: String) = this()
@@ -122,7 +121,7 @@ object global {
     
     @JSGlobal("decorum.MinLengthValidator")
     @js.native
-    class MinLengthValidator protected ()
+    open class MinLengthValidator protected ()
       extends typings.decorum.mod.MinLengthValidator {
       def this(minLength: Double) = this()
       def this(minLength: Double, message: String) = this()
@@ -131,26 +130,26 @@ object global {
     
     @JSGlobal("decorum.ModelValidator")
     @js.native
-    class ModelValidator protected ()
+    open class ModelValidator protected ()
       extends typings.decorum.mod.ModelValidator {
       /**
         * Creates a new model validator.
         * @param model The model to validate. Should be a class that has a valid constructor function and prototype.
         */
-      def this(model: js.Any) = this()
+      def this(model: Any) = this()
     }
     
-    inline def Pattern(regex: RegExp): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Pattern")(regex.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
-    inline def Pattern(regex: RegExp, message: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Pattern")(regex.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
-    inline def Pattern(regex: RegExp, message: MessageHandler[typings.decorum.mod.PatternValidator]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Pattern")(regex.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+    inline def Pattern(regex: js.RegExp): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Pattern")(regex.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+    inline def Pattern(regex: js.RegExp, message: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Pattern")(regex.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+    inline def Pattern(regex: js.RegExp, message: MessageHandler[typings.decorum.mod.PatternValidator]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Pattern")(regex.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
     
     @JSGlobal("decorum.PatternValidator")
     @js.native
-    class PatternValidator protected ()
+    open class PatternValidator protected ()
       extends typings.decorum.mod.PatternValidator {
-      def this(pattern: RegExp) = this()
-      def this(pattern: RegExp, message: String) = this()
-      def this(pattern: RegExp, message: MessageHandler[typings.decorum.mod.PatternValidator]) = this()
+      def this(pattern: js.RegExp) = this()
+      def this(pattern: js.RegExp, message: String) = this()
+      def this(pattern: js.RegExp, message: MessageHandler[typings.decorum.mod.PatternValidator]) = this()
     }
     
     inline def Required(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Required")().asInstanceOf[PropertyDecorator]
@@ -159,21 +158,21 @@ object global {
     
     @JSGlobal("decorum.RequiredFieldValidator")
     @js.native
-    class RequiredFieldValidator ()
+    open class RequiredFieldValidator ()
       extends typings.decorum.mod.RequiredFieldValidator {
       def this(message: String) = this()
       def this(message: MessageHandler[typings.decorum.mod.RequiredFieldValidator]) = this()
     }
     
-    inline def Validation[TModel](message: String, predicate: js.Function2[/* value */ js.Any, /* model */ TModel, Boolean]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Validation")(message.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+    inline def Validation[TModel](message: String, predicate: js.Function2[/* value */ Any, /* model */ TModel, Boolean]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Validation")(message.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
     inline def Validation[TModel](
       message: MessageHandler[typings.decorum.mod.CustomValidator[TModel]],
-      predicate: js.Function2[/* value */ js.Any, /* model */ TModel, Boolean]
+      predicate: js.Function2[/* value */ Any, /* model */ TModel, Boolean]
     ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Validation")(message.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
     
     @JSGlobal("decorum.Validator")
     @js.native
-    class Validator ()
+    open class Validator ()
       extends typings.decorum.mod.Validator
     /* static members */
     object Validator {
@@ -197,7 +196,7 @@ object global {
         * @param objectType The class to decorate.
         * @param definitions One or more field validation definitions of the form { "fieldName": [ decorators ] }.
         */
-      inline def decorate(objectType: js.Any, definitions: ValidationDefinitions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(objectType.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def decorate(objectType: Any, definitions: ValidationDefinitions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(objectType.asInstanceOf[js.Any], definitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Creates a new model validator for the given model. Model should be a valid class that has a valid constructor
@@ -205,14 +204,14 @@ object global {
         * @param model The model to create the validator for.
         * @returns {ModelValidator} An instance of {ModelValidator}
         */
-      inline def `new`(model: js.Any): typings.decorum.mod.ModelValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("new")(model.asInstanceOf[js.Any]).asInstanceOf[typings.decorum.mod.ModelValidator]
+      inline def `new`(model: Any): typings.decorum.mod.ModelValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("new")(model.asInstanceOf[js.Any]).asInstanceOf[typings.decorum.mod.ModelValidator]
       
       /**
         * Creates an anonymous validator, immediately validates the model, and returns any validation errors on the
         * model as a result.
         * @param model The model to validate.
         */
-      inline def validate(model: js.Any): IValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(model.asInstanceOf[js.Any]).asInstanceOf[IValidationResult]
+      inline def validate(model: Any): IValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(model.asInstanceOf[js.Any]).asInstanceOf[IValidationResult]
     }
   }
 }

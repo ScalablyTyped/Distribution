@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Statement[T] extends StObject {
   
-  def bind(name: String, value: js.Any): Unit
+  def bind(name: String, value: Any): Unit
   
   def execute(): Cursor[T]
   
@@ -17,7 +17,7 @@ trait Statement[T] extends StObject {
 object Statement {
   
   inline def apply[T](
-    bind: (String, js.Any) => Unit,
+    bind: (String, Any) => Unit,
     execute: () => Cursor[T],
     getBatchSize: () => Double,
     setBatchSize: Double => Unit
@@ -28,7 +28,7 @@ object Statement {
   
   extension [Self <: Statement[?], T](x: Self & Statement[T]) {
     
-    inline def setBind(value: (String, js.Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
+    inline def setBind(value: (String, Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
     
     inline def setExecute(value: () => Cursor[T]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     

@@ -13,7 +13,7 @@ trait DeploymentApprovalPendingEvent extends StObject {
   
   var completedApprovals: js.Array[ReleaseApproval]
   
-  var data: StringDictionary[js.Any]
+  var data: StringDictionary[Any]
   
   var deployment: Deployment
   
@@ -31,7 +31,7 @@ object DeploymentApprovalPendingEvent {
     approval: ReleaseApproval,
     approvalOptions: ApprovalOptions,
     completedApprovals: js.Array[ReleaseApproval],
-    data: StringDictionary[js.Any],
+    data: StringDictionary[Any],
     deployment: Deployment,
     isMultipleRankApproval: Boolean,
     pendingApprovals: js.Array[ReleaseApproval],
@@ -50,9 +50,9 @@ object DeploymentApprovalPendingEvent {
     
     inline def setCompletedApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "completedApprovals", value.asInstanceOf[js.Any])
     
-    inline def setCompletedApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "completedApprovals", js.Array(value :_*))
+    inline def setCompletedApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "completedApprovals", js.Array(value*))
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
@@ -60,7 +60,7 @@ object DeploymentApprovalPendingEvent {
     
     inline def setPendingApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "pendingApprovals", value.asInstanceOf[js.Any])
     
-    inline def setPendingApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "pendingApprovals", js.Array(value :_*))
+    inline def setPendingApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "pendingApprovals", js.Array(value*))
     
     inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

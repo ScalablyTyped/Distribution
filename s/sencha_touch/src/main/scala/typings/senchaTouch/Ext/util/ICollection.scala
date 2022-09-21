@@ -17,25 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param item Object The item to add.
     * @returns Object The item added.
     */
-  var add: js.UndefOr[
-    js.Function2[/* key */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var add: js.UndefOr[js.Function2[/* key */ js.UndefOr[String], /* item */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Adds all elements of an Array or an Object to the collection
     * @param addItems Object/Array An Object containing properties which will be added to the collection, or an Array of values, each of which are added to the collection. Functions references will be added to the collection if {@link} Ext.util.MixedCollection.allowFunctions allowFunctions} has been set to true.
     */
-  var addAll: js.UndefOr[js.Function1[/* addItems */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addAll: js.UndefOr[js.Function1[/* addItems */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method adds a filter
     * @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
     */
-  var addFilter: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+  var addFilter: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method adds all the filters in a passed array
     * @param filters Object
     * @returns Object
     */
-  var addFilters: js.UndefOr[js.Function1[js.UndefOr[js.Any | Array], js.Any]] = js.undefined
+  var addFilters: js.UndefOr[js.Function1[js.UndefOr[Any | Array], Any]] = js.undefined
   
   /** [Property] (Array) */
   var all: js.UndefOr[Array] = js.undefined
@@ -53,7 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param item Object The Object to look for in the collection.
     * @returns Boolean true if the collection contains the Object as an item.
     */
-  var contains: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var contains: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Returns true if the collection contains the passed Object as a key
     * @param key String The key to look for in the collection.
@@ -68,13 +66,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param fn Function The function to execute for each item.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Executes the specified function once for every key in the collection passing each key and its associated item as th
     * @param fn Function The function to execute for each item.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     */
-  var eachKey: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var eachKey: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method will sort a collection based on the currently configured sorters
     * @param property Object
@@ -85,10 +83,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var filter: js.UndefOr[
     (js.Function1[/* data */ js.UndefOr[Array], Array]) | (js.Function4[
-      /* property */ js.UndefOr[js.Any], 
-      /* value */ js.UndefOr[js.Any], 
-      /* anyMatch */ js.UndefOr[js.Any], 
-      /* caseSensitive */ js.UndefOr[js.Any], 
+      /* property */ js.UndefOr[Any], 
+      /* value */ js.UndefOr[Any], 
+      /* anyMatch */ js.UndefOr[Any], 
+      /* caseSensitive */ js.UndefOr[Any], 
       Array
     ])
   ] = js.undefined
@@ -99,7 +97,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns Ext.util.MixedCollection The new filtered collection
     */
   var filterBy: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IMixedCollection]
+    js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], IMixedCollection]
   ] = js.undefined
   
   /** [Config Option] (String) */
@@ -116,9 +114,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
     * @returns Object The first item in the collection which returned true from the selection function.
     */
-  var findBy: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var findBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Find the index of the first matching object in this collection by a function
     * @param fn Function The function to be called.
@@ -128,8 +124,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var findIndexBy: js.UndefOr[
     js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* start */ js.UndefOr[Double], 
       Double
     ]
@@ -138,19 +134,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the first item in the collection
     * @returns Object the first item in the collection.
     */
-  var first: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var first: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the item associated with the passed key OR index
     * @param key String/Number The key or index of the item.
     * @returns Object If the item is found, returns the item. If the item was not found, returns undefined. If an item was found, but is a Class, returns null.
     */
-  var get: js.UndefOr[js.Function1[/* key */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* key */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the item at the specified index
     * @param index Number The index of the item.
     * @returns Object The item at the specified index.
     */
-  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+  var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
   
   /** [Method] Returns the value of autoFilter
     * @returns Boolean
@@ -166,7 +162,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param key String/Number The key of the item.
     * @returns Object The item associated with the passed key.
     */
-  var getByKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getByKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the number of items in the collection
     * @returns Number the number of items in the collection.
@@ -176,7 +172,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns an up to date sort function
     * @returns Function sortFn The sort function.
     */
-  var getFilterFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getFilterFn: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of filterRoot
     * @returns String
@@ -192,7 +188,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param item Object The item for which to find the key.
     * @returns Object The key for the passed item.
     */
-  var getKey: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getKey: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns a range of items in this collection
     * @param start Number The starting index.
@@ -207,7 +203,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param item Object The item to find the index of.
     * @returns Number Index of the item. Returns -1 if not found.
     */
-  var indexOf: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Double]] = js.undefined
+  var indexOf: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Double]] = js.undefined
   
   /** [Method] Returns index within the collection of the passed key
     * @param key String The key to find the index of.
@@ -216,7 +212,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var indexOfKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Double]] = js.undefined
   
   /** [Property] (Object) */
-  var indices: js.UndefOr[js.Any] = js.undefined
+  var indices: js.UndefOr[Any] = js.undefined
   
   /** [Method] Inserts an item at the specified index in the collection
     * @param index Number The index to insert the item at.
@@ -228,8 +224,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     js.Function3[
       /* index */ js.UndefOr[Double], 
       /* key */ js.UndefOr[String], 
-      /* item */ js.UndefOr[js.Any], 
-      js.Any
+      /* item */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
@@ -238,7 +234,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
     * @returns Object
     */
-  var insertFilter: js.UndefOr[js.Function2[js.UndefOr[Double], js.UndefOr[js.Any], js.Any]] = js.undefined
+  var insertFilter: js.UndefOr[js.Function2[js.UndefOr[Double], js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] This method inserts all the filters in the passed array at the given index
     * @param index Number The index at which to insert the filters.
@@ -262,19 +258,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Returns the last item in the collection
     * @returns Object the last item in the collection.
     */
-  var last: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var last: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Property] (Number) */
   var length: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Object) */
-  var map: js.UndefOr[js.Any] = js.undefined
+  var map: js.UndefOr[Any] = js.undefined
   
   /** [Method] Remove an item from the collection
     * @param item Object The item to remove.
     * @returns Object The item removed or false if no item was removed.
     */
-  var remove: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var remove: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Remove all items in the passed array from the collection
     * @param items Array An array of items to be removed.
@@ -286,35 +282,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param index Number The index within the collection of the item to remove.
     * @returns Object The item removed or false if no item was removed.
     */
-  var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+  var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
   
   /** [Method] Removed an item associated with the passed key from the collection
     * @param key String The key of the item to remove.
     * @returns Object/Boolean The item removed or false if no item was removed.
     */
-  var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], js.Any]] = js.undefined
+  var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[String], Any]] = js.undefined
   
   /** [Method] This method removes all the filters in a passed array
     * @param filters Object
     * @returns Ext.util.Collection this
     */
-  var removeFilters: js.UndefOr[js.Function1[js.UndefOr[js.Any | Array], this.type | Unit]] = js.undefined
+  var removeFilters: js.UndefOr[js.Function1[js.UndefOr[Any | Array], this.type | Unit]] = js.undefined
   
   /** [Method] This method removes all the sorters in a passed array
     * @param sorters Object
     * @returns Ext.util.Collection this
     */
   @JSName("removeSorters")
-  var removeSorters_ICollection: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var removeSorters_ICollection: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Replaces an item in the collection
     * @param oldKey String The key associated with the item to replace, or the replacement item. If you supplied a getKey implementation for this MixedCollection, or if the key of your stored items is in a property called id, then the MixedCollection will be able to derive the key of the replacement item. If you want to replace an item with one having the same key value, then just pass the replacement item in this parameter.
     * @param item Object {Object} item (optional) If the first parameter passed was a key, the item to associate with that key.
     * @returns Object The new item.
     */
-  var replace: js.UndefOr[
-    js.Function2[/* oldKey */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var replace: js.UndefOr[js.Function2[/* oldKey */ js.UndefOr[String], /* item */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Sets the value of autoFilter
     * @param autoFilter Boolean The new value.
@@ -343,7 +337,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   @JSName("sort")
   var sort_ICollection: js.UndefOr[
-    js.Function2[/* sorters */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[js.Any], Array]
+    js.Function2[/* sorters */ js.UndefOr[Any], /* defaultDirection */ js.UndefOr[Any], Array]
   ] = js.undefined
 }
 object ICollection {
@@ -355,17 +349,17 @@ object ICollection {
   
   extension [Self <: ICollection](x: Self) {
     
-    inline def setAdd(value: (/* key */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (/* key */ js.UndefOr[String], /* item */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    inline def setAddAll(value: /* addItems */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
+    inline def setAddAll(value: /* addItems */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
     inline def setAddAllUndefined: Self = StObject.set(x, "addAll", js.undefined)
     
-    inline def setAddFilter(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addFilter", js.Any.fromFunction1(value))
+    inline def setAddFilter(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "addFilter", js.Any.fromFunction1(value))
     
     inline def setAddFilterUndefined: Self = StObject.set(x, "addFilter", js.undefined)
     
-    inline def setAddFilters(value: js.UndefOr[js.Any | Array] => js.Any): Self = StObject.set(x, "addFilters", js.Any.fromFunction1(value))
+    inline def setAddFilters(value: js.UndefOr[Any | Array] => Any): Self = StObject.set(x, "addFilters", js.Any.fromFunction1(value))
     
     inline def setAddFiltersUndefined: Self = StObject.set(x, "addFilters", js.undefined)
     
@@ -383,7 +377,7 @@ object ICollection {
     
     inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
-    inline def setContains(value: /* item */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: /* item */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     inline def setContainsKey(value: /* key */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
     
@@ -395,9 +389,9 @@ object ICollection {
     
     inline def setDirtyFilterFnUndefined: Self = StObject.set(x, "dirtyFilterFn", js.undefined)
     
-    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
-    inline def setEachKey(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachKey", js.Any.fromFunction2(value))
+    inline def setEachKey(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "eachKey", js.Any.fromFunction2(value))
     
     inline def setEachKeyUndefined: Self = StObject.set(x, "eachKey", js.undefined)
     
@@ -405,22 +399,22 @@ object ICollection {
     
     inline def setFilter(
       value: (js.Function1[/* data */ js.UndefOr[Array], Array]) | (js.Function4[
-          /* property */ js.UndefOr[js.Any], 
-          /* value */ js.UndefOr[js.Any], 
-          /* anyMatch */ js.UndefOr[js.Any], 
-          /* caseSensitive */ js.UndefOr[js.Any], 
+          /* property */ js.UndefOr[Any], 
+          /* value */ js.UndefOr[Any], 
+          /* anyMatch */ js.UndefOr[Any], 
+          /* caseSensitive */ js.UndefOr[Any], 
           Array
         ])
     ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setFilterBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection): Self = StObject.set(x, "filterBy", js.Any.fromFunction2(value))
+    inline def setFilterBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IMixedCollection): Self = StObject.set(x, "filterBy", js.Any.fromFunction2(value))
     
     inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
     
     inline def setFilterFunction1(value: /* data */ js.UndefOr[Array] => Array): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFilterFunction4(
-      value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[js.Any], /* caseSensitive */ js.UndefOr[js.Any]) => Array
+      value: (/* property */ js.UndefOr[Any], /* value */ js.UndefOr[Any], /* anyMatch */ js.UndefOr[Any], /* caseSensitive */ js.UndefOr[Any]) => Array
     ): Self = StObject.set(x, "filter", js.Any.fromFunction4(value))
     
     inline def setFilterRoot(value: String): Self = StObject.set(x, "filterRoot", value.asInstanceOf[js.Any])
@@ -437,23 +431,23 @@ object ICollection {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFindBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
+    inline def setFindBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
     
     inline def setFindByUndefined: Self = StObject.set(x, "findBy", js.undefined)
     
     inline def setFindIndexBy(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double]) => Double
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* start */ js.UndefOr[Double]) => Double
     ): Self = StObject.set(x, "findIndexBy", js.Any.fromFunction3(value))
     
     inline def setFindIndexByUndefined: Self = StObject.set(x, "findIndexBy", js.undefined)
     
-    inline def setFirst(value: () => js.Any): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => Any): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    inline def setGet(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* key */ js.UndefOr[Any] => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    inline def setGetAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+    inline def setGetAt(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
     
     inline def setGetAtUndefined: Self = StObject.set(x, "getAt", js.undefined)
     
@@ -465,7 +459,7 @@ object ICollection {
     
     inline def setGetAutoSortUndefined: Self = StObject.set(x, "getAutoSort", js.undefined)
     
-    inline def setGetByKey(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
+    inline def setGetByKey(value: /* key */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
     
     inline def setGetByKeyUndefined: Self = StObject.set(x, "getByKey", js.undefined)
     
@@ -473,7 +467,7 @@ object ICollection {
     
     inline def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
-    inline def setGetFilterFn(value: () => js.Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
+    inline def setGetFilterFn(value: () => Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
     
     inline def setGetFilterFnUndefined: Self = StObject.set(x, "getFilterFn", js.undefined)
     
@@ -485,7 +479,7 @@ object ICollection {
     
     inline def setGetFiltersUndefined: Self = StObject.set(x, "getFilters", js.undefined)
     
-    inline def setGetKey(value: /* item */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    inline def setGetKey(value: /* item */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
     inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
     
@@ -495,7 +489,7 @@ object ICollection {
     
     inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    inline def setIndexOf(value: /* item */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: /* item */ js.UndefOr[Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
     inline def setIndexOfKey(value: /* key */ js.UndefOr[String] => Double): Self = StObject.set(x, "indexOfKey", js.Any.fromFunction1(value))
     
@@ -503,15 +497,15 @@ object ICollection {
     
     inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
-    inline def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
     inline def setInsert(
-      value: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => js.Any
+      value: (/* index */ js.UndefOr[Double], /* key */ js.UndefOr[String], /* item */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "insert", js.Any.fromFunction3(value))
     
-    inline def setInsertFilter(value: (js.UndefOr[Double], js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "insertFilter", js.Any.fromFunction2(value))
+    inline def setInsertFilter(value: (js.UndefOr[Double], js.UndefOr[Any]) => Any): Self = StObject.set(x, "insertFilter", js.Any.fromFunction2(value))
     
     inline def setInsertFilterUndefined: Self = StObject.set(x, "insertFilter", js.undefined)
     
@@ -533,7 +527,7 @@ object ICollection {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setLast(value: () => js.Any): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+    inline def setLast(value: () => Any): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
     inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
@@ -541,35 +535,35 @@ object ICollection {
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setRemove(value: /* item */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* item */ js.UndefOr[Any] => Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     inline def setRemoveAll(value: /* items */ js.UndefOr[Array] => IMixedCollection): Self = StObject.set(x, "removeAll", js.Any.fromFunction1(value))
     
     inline def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
     
-    inline def setRemoveAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
+    inline def setRemoveAt(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
     
-    inline def setRemoveAtKey(value: /* key */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "removeAtKey", js.Any.fromFunction1(value))
+    inline def setRemoveAtKey(value: /* key */ js.UndefOr[String] => Any): Self = StObject.set(x, "removeAtKey", js.Any.fromFunction1(value))
     
     inline def setRemoveAtKeyUndefined: Self = StObject.set(x, "removeAtKey", js.undefined)
     
     inline def setRemoveAtUndefined: Self = StObject.set(x, "removeAt", js.undefined)
     
-    inline def setRemoveFilters(value: js.UndefOr[js.Any | Array] => ICollection | Unit): Self = StObject.set(x, "removeFilters", js.Any.fromFunction1(value))
+    inline def setRemoveFilters(value: js.UndefOr[Any | Array] => ICollection | Unit): Self = StObject.set(x, "removeFilters", js.Any.fromFunction1(value))
     
     inline def setRemoveFiltersUndefined: Self = StObject.set(x, "removeFilters", js.undefined)
     
-    inline def setRemoveSorters(value: /* sorters */ js.UndefOr[js.Any] => ICollection): Self = StObject.set(x, "removeSorters", js.Any.fromFunction1(value))
+    inline def setRemoveSorters(value: /* sorters */ js.UndefOr[Any] => ICollection): Self = StObject.set(x, "removeSorters", js.Any.fromFunction1(value))
     
     inline def setRemoveSortersUndefined: Self = StObject.set(x, "removeSorters", js.undefined)
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setReplace(value: (/* oldKey */ js.UndefOr[String], /* item */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+    inline def setReplace(value: (/* oldKey */ js.UndefOr[String], /* item */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     
     inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
@@ -589,7 +583,7 @@ object ICollection {
     
     inline def setSetFiltersUndefined: Self = StObject.set(x, "setFilters", js.undefined)
     
-    inline def setSort(value: (/* sorters */ js.UndefOr[js.Any], /* defaultDirection */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+    inline def setSort(value: (/* sorters */ js.UndefOr[Any], /* defaultDirection */ js.UndefOr[Any]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }

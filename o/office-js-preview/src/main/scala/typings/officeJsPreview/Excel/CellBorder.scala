@@ -17,25 +17,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the properties of a single border returned by `getCellProperties`, `getRowProperties`, and `getColumnProperties`, or the border property input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
   *
-  * Represents the properties of a single border returned by `getCellProperties`, `getRowProperties`, and `getColumnProperties` or the border property input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait CellBorder extends StObject {
   
   /**
-    *
     * Represents the `color` property of a single border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents the `style` property of a single border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var style: js.UndefOr[
@@ -43,17 +43,17 @@ trait CellBorder extends StObject {
   ] = js.undefined
   
   /**
-    *
     * Represents the `tintAndShade` property of a single border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[scala.Double] = js.undefined
   
   /**
-    *
     * Represents the `weight` property of a single border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var weight: js.UndefOr[BorderWeight | Hairline | Thin | Medium | Thick] = js.undefined

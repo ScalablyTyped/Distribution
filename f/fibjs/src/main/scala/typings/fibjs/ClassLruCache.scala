@@ -26,7 +26,7 @@ trait ClassLruCache
     * 
     * 
     */
-  def get(name: String): js.Any = js.native
+  def get(name: String): Any = js.native
   /**
     * 
     * @brief 查询指定键值的值，若不存在或过期，则调用回调函数更新数据
@@ -37,7 +37,7 @@ trait ClassLruCache
     * 
     * 
     */
-  def get(name: String, updater: js.Function): js.Any = js.native
+  def get(name: String, updater: js.Function): Any = js.native
   
   /**
     * 
@@ -99,7 +99,7 @@ trait ClassLruCache
     * 
     * 
     */
-  def set(name: String, value: js.Any): Unit = js.native
+  def set(name: String, value: Any): Unit = js.native
   
   /**
     * class prop 

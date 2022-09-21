@@ -38,7 +38,7 @@ object IdentitytoolkitRelyingpartyGetAccountInfoRequest {
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    inline def setEmailVarargs(value: String*): Self = StObject.set(x, "email", js.Array(value :_*))
+    inline def setEmailVarargs(value: String*): Self = StObject.set(x, "email", js.Array(value*))
     
     inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
@@ -48,12 +48,12 @@ object IdentitytoolkitRelyingpartyGetAccountInfoRequest {
     
     inline def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
     
-    inline def setLocalIdVarargs(value: String*): Self = StObject.set(x, "localId", js.Array(value :_*))
+    inline def setLocalIdVarargs(value: String*): Self = StObject.set(x, "localId", js.Array(value*))
     
     inline def setPhoneNumber(value: js.Array[String]): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
-    inline def setPhoneNumberVarargs(value: String*): Self = StObject.set(x, "phoneNumber", js.Array(value :_*))
+    inline def setPhoneNumberVarargs(value: String*): Self = StObject.set(x, "phoneNumber", js.Array(value*))
   }
 }

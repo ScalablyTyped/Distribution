@@ -13,12 +13,12 @@ trait GetPackageVersionReadmeResult extends StObject {
   var _package: js.UndefOr[PackageName] = js.undefined
   
   /**
-    *  The format of the package with the requested readme file. Valid format types are:     npm     pypi     maven   
+    *  The format of the package with the requested readme file. 
     */
   var format: js.UndefOr[PackageFormat] = js.undefined
   
   /**
-    *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
+    * The namespace of the package version with the requested readme file. The package version component that specifies its namespace depends on its type. For example:    The namespace of a Maven package version is its groupId.     The namespace of an npm package version is its scope.     Python and NuGet package versions do not contain a corresponding component, package versions of those formats do not have a namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   

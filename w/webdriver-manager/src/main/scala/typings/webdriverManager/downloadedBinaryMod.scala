@@ -9,7 +9,7 @@ object downloadedBinaryMod {
   
   @JSImport("webdriver-manager/built/lib/files/downloaded_binary", "DownloadedBinary")
   @js.native
-  class DownloadedBinary protected () extends Binary {
+  open class DownloadedBinary protected () extends Binary {
     def this(binary: Binary) = this()
     
     var binary: Binary = js.native

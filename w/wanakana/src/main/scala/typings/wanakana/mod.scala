@@ -1,7 +1,9 @@
 package typings.wanakana
 
-import typings.std.HTMLElement
+import typings.std.HTMLInputElement
+import typings.std.HTMLTextAreaElement
 import typings.std.Record
+import typings.wanakana.anon.PassKanji
 import typings.wanakana.wanakanaStrings.hepburn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,8 +15,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bind(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def bind(el: HTMLElement, options: WanakanaOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("wanakana", "ROMANIZATIONS")
+  @js.native
+  val ROMANIZATIONS: Record[String, String] = js.native
+  
+  @JSImport("wanakana", "TO_KANA_METHODS")
+  @js.native
+  val TO_KANA_METHODS: Record[String, String] = js.native
+  
+  @JSImport("wanakana", "VERSION")
+  @js.native
+  val VERSION: String = js.native
+  
+  inline def bind(el: HTMLInputElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def bind(el: HTMLInputElement, options: WanakanaOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bind(el: HTMLTextAreaElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def bind(el: HTMLTextAreaElement, options: WanakanaOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def isHiragana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHiragana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -25,6 +41,9 @@ object mod {
   inline def isKanji(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKanji")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isKatakana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKatakana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isMixed(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMixed")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMixed(input: String, options: PassKanji): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMixed")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isRomaji(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRomaji")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -46,7 +65,8 @@ object mod {
   inline def tokenize(input: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def tokenize(input: String, options: TokenizeOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def unbind(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unbind(el: HTMLInputElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unbind(el: HTMLTextAreaElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.wanakana.wanakanaBooleans.`true`

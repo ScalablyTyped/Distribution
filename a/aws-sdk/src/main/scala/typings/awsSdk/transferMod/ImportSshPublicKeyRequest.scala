@@ -12,7 +12,7 @@ trait ImportSshPublicKeyRequest extends StObject {
   var ServerId: typings.awsSdk.transferMod.ServerId
   
   /**
-    * The public key portion of an SSH key pair.
+    * The public key portion of an SSH key pair. Transfer Family accepts RSA, ECDSA, and ED25519 keys.
     */
   var SshPublicKeyBody: typings.awsSdk.transferMod.SshPublicKeyBody
   

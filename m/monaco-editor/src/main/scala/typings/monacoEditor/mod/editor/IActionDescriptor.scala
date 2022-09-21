@@ -51,11 +51,11 @@ trait IActionDescriptor extends StObject {
     * Method that will be executed when the action is triggered.
     * @param editor The editor instance is passed in as a convenience
     */
-  def run(editor: ICodeEditor, args: js.Any*): Unit | js.Promise[Unit]
+  def run(editor: ICodeEditor, args: Any*): Unit | js.Promise[Unit]
 }
 object IActionDescriptor {
   
-  inline def apply(id: String, label: String, run: (ICodeEditor, /* repeated */ js.Any) => Unit | js.Promise[Unit]): IActionDescriptor = {
+  inline def apply(id: String, label: String, run: (ICodeEditor, /* repeated */ Any) => Unit | js.Promise[Unit]): IActionDescriptor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], run = js.Any.fromFunction2(run))
     __obj.asInstanceOf[IActionDescriptor]
   }
@@ -80,7 +80,7 @@ object IActionDescriptor {
     
     inline def setKeybindingsUndefined: Self = StObject.set(x, "keybindings", js.undefined)
     
-    inline def setKeybindingsVarargs(value: Double*): Self = StObject.set(x, "keybindings", js.Array(value :_*))
+    inline def setKeybindingsVarargs(value: Double*): Self = StObject.set(x, "keybindings", js.Array(value*))
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -88,6 +88,6 @@ object IActionDescriptor {
     
     inline def setPreconditionUndefined: Self = StObject.set(x, "precondition", js.undefined)
     
-    inline def setRun(value: (ICodeEditor, /* repeated */ js.Any) => Unit | js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
+    inline def setRun(value: (ICodeEditor, /* repeated */ Any) => Unit | js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
   }
 }

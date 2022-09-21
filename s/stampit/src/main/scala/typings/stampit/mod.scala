@@ -24,7 +24,7 @@ object mod {
       * @template Obj The type of the object instance being created by the `Stamp` or the type of the `Stamp` being created (when extending a `Stamp`.)
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def apply[Obj](composables: Composable*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].apply(composables.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def apply[Obj](composables: Composable*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].apply(composables.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     @JSImport("stampit", JSImport.Default)
     @js.native
@@ -42,7 +42,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param functions Composer functions that will run in sequence while creating a new stamp from a list of composables.  The resulting stamp and the composables get passed to composers.
       */
-    inline def composers[Obj](functions: Composer[StampType[Obj]]*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("composers")(functions.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def composers[Obj](functions: Composer[StampType[Obj]]*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("composers")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     inline def composers[Obj](functions: js.Array[Composer[StampType[Obj]]]): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("composers")(functions.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
     
     /**
@@ -53,7 +53,7 @@ object mod {
       * @param confs The object(s) containing metadata properties
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def conf[Obj](confs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("conf")(confs.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def conf[Obj](confs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("conf")(confs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().configuration()
@@ -63,7 +63,7 @@ object mod {
       * @param confs The object(s) containing metadata properties
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def configuration[Obj](confs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("configuration")(confs.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def configuration[Obj](confs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("configuration")(confs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().deepConf()
@@ -73,7 +73,7 @@ object mod {
       * @param deepConfs The object(s) containing metadata properties
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def deepConf[Obj](deepConfs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepConf")(deepConfs.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def deepConf[Obj](deepConfs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepConf")(deepConfs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().deepConfiguration()
@@ -83,7 +83,7 @@ object mod {
       * @param deepConfs The object(s) containing metadata properties
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def deepConfiguration[Obj](deepConfs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepConfiguration")(deepConfs.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def deepConfiguration[Obj](deepConfs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepConfiguration")(deepConfs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().deepProperties()
@@ -93,7 +93,7 @@ object mod {
       * @param deepObjects The object(s) to deeply merge for each new object
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def deepProperties[Obj](deepObjects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepProperties")(deepObjects.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def deepProperties[Obj](deepObjects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepProperties")(deepObjects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().deepProps()
@@ -103,7 +103,7 @@ object mod {
       * @param deepObjects The object(s) to deeply merge for each new object
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def deepProps[Obj](deepObjects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepProps")(deepObjects.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def deepProps[Obj](deepObjects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepProps")(deepObjects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().deepStatics()
@@ -113,7 +113,7 @@ object mod {
       * @param deepStatics The object(s) containing static properties to be merged
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def deepStatics[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepStatics")(deepStatics.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def deepStatics[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepStatics")(deepStatics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().init()
@@ -125,7 +125,7 @@ object mod {
     inline def init[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
       // tslint:disable-next-line: no-unnecessary-generics
     functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
-    ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(functions.asInstanceOf[js.Any]).asInstanceOf[S̤t̤a̤m̤p̤]
+    ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[S̤t̤a̤m̤p̤]
     inline def init[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
       // tslint:disable-next-line: no-unnecessary-generics
     functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
@@ -141,7 +141,7 @@ object mod {
     inline def initializers[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
       // tslint:disable-next-line: no-unnecessary-generics
     functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
-    ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("initializers")(functions.asInstanceOf[js.Any]).asInstanceOf[S̤t̤a̤m̤p̤]
+    ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("initializers")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[S̤t̤a̤m̤p̤]
     inline def initializers[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
       // tslint:disable-next-line: no-unnecessary-generics
     functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
@@ -155,7 +155,7 @@ object mod {
       * @template This The type to use for `this` within methods.
       * @param methods Object(s) containing map of method names and bodies for delegation.
       */
-    inline def methods[Obj](methods: MethodMap[Obj]*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("methods")(methods.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def methods[Obj](methods: MethodMap[Obj]*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("methods")(methods.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().properties()
@@ -165,7 +165,7 @@ object mod {
       * @param objects Object(s) to shallow assign for each new object.
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def properties[Obj](objects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("properties")(objects.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def properties[Obj](objects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("properties")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().propertyDescriptors()
@@ -175,7 +175,7 @@ object mod {
       * @param descriptors
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def propertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("propertyDescriptors")(descriptors.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def propertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("propertyDescriptors")(descriptors.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().props()
@@ -185,7 +185,7 @@ object mod {
       * @param objects Object(s) to shallow assign for each new object.
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def props[Obj](objects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(objects.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def props[Obj](objects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().staticDeepProperties()
@@ -195,7 +195,7 @@ object mod {
       * @param deepStatics The object(s) containing static properties to be merged
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def staticDeepProperties[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticDeepProperties")(deepStatics.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def staticDeepProperties[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticDeepProperties")(deepStatics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().statics()
@@ -205,7 +205,7 @@ object mod {
       * @param statics Object(s) containing map of property names and values to mixin into each new stamp.
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def staticProperties[Obj](statics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticProperties")(statics.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def staticProperties[Obj](statics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticProperties")(statics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().staticPropertyDescriptors()
@@ -215,7 +215,7 @@ object mod {
       * @param descriptors
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def staticPropertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticPropertyDescriptors")(descriptors.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def staticPropertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticPropertyDescriptors")(descriptors.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
       * A shortcut method for stampit().staticProperties()
@@ -225,7 +225,7 @@ object mod {
       * @param statics Object(s) containing map of property names and values to mixin into each new stamp.
       */
     // tslint:disable-next-line: no-unnecessary-generics
-    inline def statics[Obj](statics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")(statics.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+    inline def statics[Obj](statics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")(statics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /** the version of the NPM `stampit` package. */
     @JSImport("stampit", "default.version")
@@ -237,27 +237,27 @@ object mod {
   @js.native
   val compose: ComposeMethod = js.native
   
-  inline def composers[Obj](functions: Composer[StampType[Obj]]*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("composers")(functions.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def composers[Obj](functions: Composer[StampType[Obj]]*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("composers")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   inline def composers[Obj](functions: js.Array[Composer[StampType[Obj]]]): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("composers")(functions.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
   
-  inline def conf[Obj](confs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("conf")(confs.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def conf[Obj](confs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("conf")(confs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def configuration[Obj](confs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("configuration")(confs.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def configuration[Obj](confs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("configuration")(confs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def deepConf[Obj](deepConfs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepConf")(deepConfs.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def deepConf[Obj](deepConfs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepConf")(deepConfs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def deepConfiguration[Obj](deepConfs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepConfiguration")(deepConfs.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def deepConfiguration[Obj](deepConfs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepConfiguration")(deepConfs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def deepProperties[Obj](deepObjects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepProperties")(deepObjects.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def deepProperties[Obj](deepObjects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepProperties")(deepObjects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def deepProps[Obj](deepObjects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepProps")(deepObjects.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def deepProps[Obj](deepObjects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepProps")(deepObjects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def deepStatics[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepStatics")(deepStatics.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def deepStatics[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepStatics")(deepStatics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
   inline def init[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
     // tslint:disable-next-line: no-unnecessary-generics
   functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
-  ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(functions.asInstanceOf[js.Any]).asInstanceOf[S̤t̤a̤m̤p̤]
+  ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[S̤t̤a̤m̤p̤]
   inline def init[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
     // tslint:disable-next-line: no-unnecessary-generics
   functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
@@ -266,25 +266,25 @@ object mod {
   inline def initializers[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
     // tslint:disable-next-line: no-unnecessary-generics
   functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
-  ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("initializers")(functions.asInstanceOf[js.Any]).asInstanceOf[S̤t̤a̤m̤p̤]
+  ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("initializers")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[S̤t̤a̤m̤p̤]
   inline def initializers[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
     // tslint:disable-next-line: no-unnecessary-generics
   functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
   ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("initializers")(functions.asInstanceOf[js.Any]).asInstanceOf[S̤t̤a̤m̤p̤]
   
-  inline def methods[Obj](methods: MethodMap[Obj]*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("methods")(methods.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def methods[Obj](methods: MethodMap[Obj]*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("methods")(methods.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def properties[Obj](objects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("properties")(objects.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def properties[Obj](objects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("properties")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def propertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("propertyDescriptors")(descriptors.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def propertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("propertyDescriptors")(descriptors.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def props[Obj](objects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(objects.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def props[Obj](objects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def staticDeepProperties[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticDeepProperties")(deepStatics.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def staticDeepProperties[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticDeepProperties")(deepStatics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def staticProperties[Obj](statics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticProperties")(statics.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def staticProperties[Obj](statics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticProperties")(statics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
-  inline def staticPropertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticPropertyDescriptors")(descriptors.asInstanceOf[js.Any]).asInstanceOf[StampType[Obj]]
+  inline def staticPropertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticPropertyDescriptors")(descriptors.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
   @JSImport("stampit", "version")
   @js.native
@@ -629,14 +629,9 @@ object mod {
     * A factory function to create plain object instances.
     * @template Obj The object type that the `Stamp` will create.
     */
-  @js.native
-  trait FactoryFunction[Obj] extends StObject {
-    
-    def apply(options: Unit, args: js.Any*): StampObjectType[Obj] = js.native
-    def apply(options: PropertyMap, args: js.Any*): StampObjectType[Obj] = js.native
-  }
+  type FactoryFunction[Obj] = js.Function2[/* options */ js.UndefOr[PropertyMap], /* repeated */ Any, StampObjectType[Obj]]
   
-  type MethodMap[This] = StringDictionary[(js.ThisFunction1[/* this */ This, /* repeated */ js.Any, js.Any]) | js.Object]
+  type MethodMap[This] = StringDictionary[(js.ThisFunction1[/* this */ This, /* repeated */ Any, Any]) | js.Object]
   
   /** @internal A plain old JavaScript object created by a `Stamp`. */
   type Pojo = js.Object
@@ -656,29 +651,29 @@ object mod {
     * @internal The type of the object produced by the `Stamp`.
     * @template Original The type (either a `Stamp` or a `ExtendedDescriptor`) to get the object type from.
     */
-  type StampObjectType[Original] = Original | js.Any
+  type StampObjectType[Original] = Original | Any
   
   // { [s: string]: any; }
   /** @internal Signature common to every `Stamp`s. */
   @js.native
   trait StampSignature extends StObject {
     
-    def apply(options: Unit, args: js.Any*): js.Any = js.native
-    def apply(options: PropertyMap, args: js.Any*): js.Any = js.native
+    def apply(options: Unit, args: Any*): Any = js.native
+    def apply(options: PropertyMap, args: Any*): Any = js.native
     
-    var compose: ComposeMethod & (Descriptor[js.Any, js.Any]) = js.native
+    var compose: ComposeMethod & (Descriptor[Any, Any]) = js.native
   }
   
   /**
     * @internal Extracts the `Stamp` type.
     * @template Original The type to extract the `Stamp` type from.
     */
-  type StampType[Original] = (Stamp[js.Any | Original]) | Original | js.Any
+  type StampType[Original] = (Stamp[Any | Original]) | Original | Any
   
   object stampit {
     
     /** A composable object (either a `Stamp` or a `ExtendedDescriptor`.) */
-    type Composable = StampSignature | (ExtendedDescriptor[js.Any, js.Any])
+    type Composable = StampSignature | (ExtendedDescriptor[Any, Any])
     
     /**
       * A function used as `.composers` argument.
@@ -709,7 +704,7 @@ object mod {
         
         inline def setComposables(value: js.Array[Composable]): Self = StObject.set(x, "composables", value.asInstanceOf[js.Any])
         
-        inline def setComposablesVarargs(value: Composable*): Self = StObject.set(x, "composables", js.Array(value :_*))
+        inline def setComposablesVarargs(value: Composable*): Self = StObject.set(x, "composables", js.Array(value*))
         
         inline def setStamp(value: S̤t̤a̤m̤p̤): Self = StObject.set(x, "stamp", value.asInstanceOf[js.Any])
       }
@@ -768,7 +763,7 @@ object mod {
         
         inline def setComposersUndefined: Self = StObject.set(x, "composers", js.undefined)
         
-        inline def setComposersVarargs(value: Composer[S̤t̤a̤m̤p̤]*): Self = StObject.set(x, "composers", js.Array(value :_*))
+        inline def setComposersVarargs(value: Composer[S̤t̤a̤m̤p̤]*): Self = StObject.set(x, "composers", js.Array(value*))
         
         inline def setConfiguration(value: PropertyMap): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
         
@@ -786,7 +781,7 @@ object mod {
         
         inline def setInitializersUndefined: Self = StObject.set(x, "initializers", js.undefined)
         
-        inline def setInitializersVarargs(value: (Initializer[Obj, S̤t̤a̤m̤p̤])*): Self = StObject.set(x, "initializers", js.Array(value :_*))
+        inline def setInitializersVarargs(value: (Initializer[Obj, S̤t̤a̤m̤p̤])*): Self = StObject.set(x, "initializers", js.Array(value*))
         
         inline def setMethods(value: MethodMap[Obj]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
         
@@ -876,7 +871,7 @@ object mod {
         
         inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
         
-        inline def setInitVarargs(value: (Initializer[Obj, S̤t̤a̤m̤p̤])*): Self = StObject.set(x, "init", js.Array(value :_*))
+        inline def setInitVarargs(value: (Initializer[Obj, S̤t̤a̤m̤p̤])*): Self = StObject.set(x, "init", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -899,7 +894,7 @@ object mod {
       */
     type Initializer[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */] = js.ThisFunction2[
         /* this */ Obj, 
-        /*_propertyMap*/ /* options */ js.Any, 
+        /*_propertyMap*/ /* options */ Any, 
         /* context */ InitializerContext[Obj, S̤t̤a̤m̤p̤], 
         Unit | Obj
       ]
@@ -913,7 +908,7 @@ object mod {
       
       /** An array of the arguments passed into the `Stamp`, including the options argument. */
       // ! above description from the specification is obscure
-      var args: js.Array[js.Any]
+      var args: js.Array[Any]
       
       /** The object instance being produced by the `Stamp`. If the initializer returns a value other than `undefined`, it replaces the instance. */
       var instance: Obj
@@ -923,16 +918,16 @@ object mod {
     }
     object InitializerContext {
       
-      inline def apply[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](args: js.Array[js.Any], instance: Obj, stamp: S̤t̤a̤m̤p̤): InitializerContext[Obj, S̤t̤a̤m̤p̤] = {
+      inline def apply[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](args: js.Array[Any], instance: Obj, stamp: S̤t̤a̤m̤p̤): InitializerContext[Obj, S̤t̤a̤m̤p̤] = {
         val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], stamp = stamp.asInstanceOf[js.Any])
         __obj.asInstanceOf[InitializerContext[Obj, S̤t̤a̤m̤p̤]]
       }
       
       extension [Self <: InitializerContext[?, ?], Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](x: Self & (InitializerContext[Obj, S̤t̤a̤m̤p̤])) {
         
-        inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+        inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
         
         inline def setInstance(value: Obj): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
         
@@ -959,15 +954,12 @@ object mod {
       */
     @js.native
     trait Stamp[Obj]
-      extends StObject
-         with FactoryFunction[Obj]
+      extends FactoryFunction[Obj]
          with Chainables[StampObjectType[Obj], StampType[Obj]]
          with StampSignature {
       
       /* InferMemberOverrides */
-      override def apply(options: Unit, args: js.Any*): StampObjectType[Obj] & js.Any = js.native
-      /* InferMemberOverrides */
-      override def apply(options: PropertyMap, args: js.Any*): StampObjectType[Obj] & js.Any = js.native
+      override def apply(arg1: /* options */ js.UndefOr[PropertyMap], arg2: /* repeated */ Any): StampObjectType[Obj] = js.native
       
       /**
         * A function which creates a new `Stamp`s from a list of `Composable`s.
@@ -976,9 +968,9 @@ object mod {
       @JSName("compose")
       var compose_Stamp: ComposeMethod & (Descriptor[StampObjectType[Obj], Stamp[StampObjectType[Obj]]]) = js.native
       
-      def create(options: Unit, args: js.Any*): StampObjectType[Obj] = js.native
+      def create(options: Unit, args: Any*): StampObjectType[Obj] = js.native
       /** Just like calling stamp(), stamp.create() invokes the stamp and returns a new instance. */
-      def create(options: PropertyMap, args: js.Any*): StampObjectType[Obj] = js.native
+      def create(options: PropertyMap, args: Any*): StampObjectType[Obj] = js.native
       /** Just like calling stamp(), stamp.create() invokes the stamp and returns a new instance. */
       @JSName("create")
       var create_Original: FactoryFunction[Obj] = js.native

@@ -10,7 +10,7 @@ object popupPickerTypesMod {
   
   trait PopupPickerProps extends StObject {
     
-    var WrapComponent: js.UndefOr[js.Any] = js.undefined
+    var WrapComponent: js.UndefOr[Any] = js.undefined
     
     var actionTextActiveOpacity: js.UndefOr[Double] = js.undefined
     
@@ -28,11 +28,11 @@ object popupPickerTypesMod {
     
     var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var picker: js.UndefOr[js.Any] = js.undefined
+    var picker: js.UndefOr[Any] = js.undefined
     
     var pickerValueChangeProp: js.UndefOr[String] = js.undefined
     
@@ -40,9 +40,9 @@ object popupPickerTypesMod {
     
     var popupTransitionName: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
     var title: js.UndefOr[String | ReactElement] = js.undefined
     
@@ -50,7 +50,7 @@ object popupPickerTypesMod {
     
     var triggerType: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
     
     var visible: js.UndefOr[Boolean] = js.undefined
     
@@ -97,7 +97,7 @@ object popupPickerTypesMod {
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      inline def setOnOk(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
+      inline def setOnOk(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
       
       inline def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
       
@@ -105,7 +105,7 @@ object popupPickerTypesMod {
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
-      inline def setPicker(value: js.Any): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: Any): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
       inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
       
@@ -121,11 +121,11 @@ object popupPickerTypesMod {
       
       inline def setPopupTransitionNameUndefined: Self = StObject.set(x, "popupTransitionName", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
@@ -141,7 +141,7 @@ object popupPickerTypesMod {
       
       inline def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
@@ -149,7 +149,7 @@ object popupPickerTypesMod {
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      inline def setWrapComponent(value: js.Any): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
+      inline def setWrapComponent(value: Any): Self = StObject.set(x, "WrapComponent", value.asInstanceOf[js.Any])
       
       inline def setWrapComponentUndefined: Self = StObject.set(x, "WrapComponent", js.undefined)
       

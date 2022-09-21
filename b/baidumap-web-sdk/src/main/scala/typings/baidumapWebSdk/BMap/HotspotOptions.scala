@@ -14,7 +14,7 @@ trait HotspotOptions extends StObject {
   
   var text: js.UndefOr[String] = js.undefined
   
-  var userData: js.UndefOr[js.Any] = js.undefined
+  var userData: js.UndefOr[Any] = js.undefined
 }
 object HotspotOptions {
   
@@ -37,13 +37,13 @@ object HotspotOptions {
     
     inline def setOffsetsUndefined: Self = StObject.set(x, "offsets", js.undefined)
     
-    inline def setOffsetsVarargs(value: Double*): Self = StObject.set(x, "offsets", js.Array(value :_*))
+    inline def setOffsetsVarargs(value: Double*): Self = StObject.set(x, "offsets", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }

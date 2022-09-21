@@ -74,7 +74,7 @@ object Commit {
     
     inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
     
-    inline def setParentsVarargs(value: ObjectId*): Self = StObject.set(x, "parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: ObjectId*): Self = StObject.set(x, "parents", js.Array(value*))
     
     inline def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DownAction extends StObject {
   
-  var downAction: js.UndefOr[js.Function1[/* downPoint */ point, js.Any]] = js.undefined
+  var downAction: js.UndefOr[js.Function1[/* downPoint */ point, Any]] = js.undefined
   
   var dragEnabled: Boolean
   
@@ -28,7 +28,7 @@ object DownAction {
   
   extension [Self <: DownAction](x: Self) {
     
-    inline def setDownAction(value: /* downPoint */ point => js.Any): Self = StObject.set(x, "downAction", js.Any.fromFunction1(value))
+    inline def setDownAction(value: /* downPoint */ point => Any): Self = StObject.set(x, "downAction", js.Any.fromFunction1(value))
     
     inline def setDownActionUndefined: Self = StObject.set(x, "downAction", js.undefined)
     

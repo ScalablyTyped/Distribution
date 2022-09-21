@@ -1,0 +1,36 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait GetResponses200Content336 extends StObject {
+  
+  /** This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](https://docs.github.com/rest/reference/activity#set-a-repository-subscription). */
+  var delete: Parameters144Responses
+  
+  var get: Responses200Content336
+  
+  /** If you would like to watch a repository, set `subscribed` to `true`. If you would like to ignore notifications made within a repository, set `ignored` to `true`. If you would like to stop watching a repository, [delete the repository's subscription](https://docs.github.com/rest/reference/activity#delete-a-repository-subscription) completely. */
+  var put: RequestBodyContentApplicationjsonSubscribed
+}
+object GetResponses200Content336 {
+  
+  inline def apply(
+    delete: Parameters144Responses,
+    get: Responses200Content336,
+    put: RequestBodyContentApplicationjsonSubscribed
+  ): GetResponses200Content336 = {
+    val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetResponses200Content336]
+  }
+  
+  extension [Self <: GetResponses200Content336](x: Self) {
+    
+    inline def setDelete(value: Parameters144Responses): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    
+    inline def setGet(value: Responses200Content336): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    
+    inline def setPut(value: RequestBodyContentApplicationjsonSubscribed): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+  }
+}

@@ -19,12 +19,12 @@ object d3v4adaptorMod {
   
   @JSImport("webcola/dist/src/d3v4adaptor", "D3StyleLayoutAdaptor")
   @js.native
-  class D3StyleLayoutAdaptor protected ()
+  open class D3StyleLayoutAdaptor protected ()
     extends Layout
        with ID3StyleLayoutAdaptor {
     def this(d3Context: D3Context) = this()
     
-    /* private */ var d3Context: js.Any = js.native
+    /* private */ var d3Context: Any = js.native
     
     /* protected */ /* InferMemberOverrides */
     override def kick(): Unit = js.native
@@ -45,7 +45,7 @@ object d3v4adaptorMod {
     @JSName("drag")
     var drag_Original: Fn0
     
-    var event: js.Any
+    var event: Any
     
     def timer(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_
     def timer(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_
@@ -56,7 +56,7 @@ object d3v4adaptorMod {
   }
   object D3Context {
     
-    inline def apply(dispatch: FnCallTypes, drag: Fn0, event: js.Any, timer: FnCall): D3Context = {
+    inline def apply(dispatch: FnCallTypes, drag: Fn0, event: Any, timer: FnCall): D3Context = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], timer = timer.asInstanceOf[js.Any])
       __obj.asInstanceOf[D3Context]
     }
@@ -67,7 +67,7 @@ object d3v4adaptorMod {
       
       inline def setDrag(value: Fn0): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setTimer(value: FnCall): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
     }

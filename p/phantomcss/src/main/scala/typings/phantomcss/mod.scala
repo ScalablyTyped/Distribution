@@ -3,7 +3,6 @@ package typings.phantomcss
 import typings.casperjs.mod.Casper
 import typings.phantomjs.ClipRect
 import typings.resemblejs.mod.OutputSettings_
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,13 +27,13 @@ object mod {
         def compareFiles(baseFile: String, diffFiles: String): PhantomCSSTest = js.native
         
         def compareMatched(`match`: String, exclude: String): Unit = js.native
-        def compareMatched(`match`: RegExp, exclude: RegExp): Unit = js.native
+        def compareMatched(`match`: js.RegExp, exclude: js.RegExp): Unit = js.native
         
         /**
           * Compare image diffs generated in this test run only
           */
         def compareSession(): Unit = js.native
-        def compareSession(list: js.Array[js.Any]): Unit = js.native
+        def compareSession(list: js.Array[Any]): Unit = js.native
         
         def done(): Unit = js.native
         
@@ -167,7 +166,7 @@ object mod {
           images without manually deleting the files
           casperjs demo/test.js --rebase
           */
-        var rebase: js.UndefOr[js.Any] = js.undefined
+        var rebase: js.UndefOr[Any] = js.undefined
         
         var screenshotRoot: js.UndefOr[String] = js.undefined
       }
@@ -248,7 +247,7 @@ object mod {
           
           inline def setPrefixCountUndefined: Self = StObject.set(x, "prefixCount", js.undefined)
           
-          inline def setRebase(value: js.Any): Self = StObject.set(x, "rebase", value.asInstanceOf[js.Any])
+          inline def setRebase(value: Any): Self = StObject.set(x, "rebase", value.asInstanceOf[js.Any])
           
           inline def setRebaseUndefined: Self = StObject.set(x, "rebase", js.undefined)
           
@@ -268,7 +267,7 @@ object mod {
         
         var filename: js.UndefOr[String] = js.undefined
         
-        var mismatch: js.UndefOr[js.Any] = js.undefined
+        var mismatch: js.UndefOr[Any] = js.undefined
         
         var success: js.UndefOr[Boolean] = js.undefined
       }
@@ -297,7 +296,7 @@ object mod {
           
           inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
           
-          inline def setMismatch(value: js.Any): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
+          inline def setMismatch(value: Any): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
           
           inline def setMismatchUndefined: Self = StObject.set(x, "mismatch", js.undefined)
           

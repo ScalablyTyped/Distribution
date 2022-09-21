@@ -13,7 +13,7 @@ trait DirectLineMeasurement3DViewModelMeasurement
      with Object {
   
   /**
-    * The direct distance between the two points.
+    * The direct distance between the two points, only available in `euclidean` mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#measurement)
     */

@@ -2,6 +2,7 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.vscode.Thenable
+import typings.vscode.mod.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object connection {
   
   @JSImport("azdata", "connection.ConnectionProfile")
   @js.native
-  class ConnectionProfile () extends StObject {
+  open class ConnectionProfile () extends StObject {
     
     var authenticationType: String = js.native
     
@@ -30,7 +31,7 @@ object connection {
     
     var groupId: String = js.native
     
-    var options: StringDictionary[js.Any] = js.native
+    var options: StringDictionary[Any] = js.native
     
     var password: String = js.native
     
@@ -51,7 +52,7 @@ object connection {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createFrom(options: StringDictionary[js.Any]): ConnectionProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createFrom")(options.asInstanceOf[js.Any]).asInstanceOf[ConnectionProfile]
+    inline def createFrom(options: StringDictionary[Any]): ConnectionProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createFrom")(options.asInstanceOf[js.Any]).asInstanceOf[ConnectionProfile]
   }
   
   inline def connect(connectionProfile: IConnectionProfile): Thenable[ConnectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any]).asInstanceOf[Thenable[ConnectionResult]]
@@ -60,6 +61,8 @@ object connection {
   inline def connect(connectionProfile: IConnectionProfile, saveConnection: Unit, showDashboard: Boolean): Thenable[ConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectionProfile.asInstanceOf[js.Any], saveConnection.asInstanceOf[js.Any], showDashboard.asInstanceOf[js.Any])).asInstanceOf[Thenable[ConnectionResult]]
   
   inline def getActiveConnections(): Thenable[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveConnections")().asInstanceOf[Thenable[js.Array[Connection]]]
+  
+  inline def getConnection(ownerUri: String): Thenable[ConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnection")(ownerUri.asInstanceOf[js.Any]).asInstanceOf[Thenable[ConnectionProfile]]
   
   inline def getConnectionString(connectionId: String, includePassword: Boolean): Thenable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionString")(connectionId.asInstanceOf[js.Any], includePassword.asInstanceOf[js.Any])).asInstanceOf[Thenable[String]]
   
@@ -101,6 +104,8 @@ object connection {
     connectionCompletionOptions: IConnectionCompletionOptions
   ): Thenable[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("openConnectionDialog")(providers.asInstanceOf[js.Any], initialConnectionProfile.asInstanceOf[js.Any], connectionCompletionOptions.asInstanceOf[js.Any])).asInstanceOf[Thenable[Connection]]
   
+  inline def registerConnectionEventListener(listener: ConnectionEventListener): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerConnectionEventListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Disposable]
+  
   trait Connection
     extends StObject
        with ConnectionInfo {
@@ -117,7 +122,7 @@ object connection {
   }
   object Connection {
     
-    inline def apply(connectionId: String, options: StringDictionary[js.Any], providerName: String): Connection = {
+    inline def apply(connectionId: String, options: StringDictionary[Any], providerName: String): Connection = {
       val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], providerName = providerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Connection]
     }
@@ -128,5 +133,43 @@ object connection {
       
       inline def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     }
+  }
+  
+  trait ConnectionEventListener extends StObject {
+    
+    /**
+      * Connection event handler
+      * @param type Connection event type
+      * @param ownerUri Connection's owner uri
+      * @param args Connection profile
+      */
+    def onConnectionEvent(`type`: ConnectionEventType, ownerUri: String, args: IConnectionProfile): Unit
+  }
+  object ConnectionEventListener {
+    
+    inline def apply(onConnectionEvent: (ConnectionEventType, String, IConnectionProfile) => Unit): ConnectionEventListener = {
+      val __obj = js.Dynamic.literal(onConnectionEvent = js.Any.fromFunction3(onConnectionEvent))
+      __obj.asInstanceOf[ConnectionEventListener]
+    }
+    
+    extension [Self <: ConnectionEventListener](x: Self) {
+      
+      inline def setOnConnectionEvent(value: (ConnectionEventType, String, IConnectionProfile) => Unit): Self = StObject.set(x, "onConnectionEvent", js.Any.fromFunction3(value))
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.azdata.azdataStrings.onConnect
+    - typings.azdata.azdataStrings.onDisconnect
+    - typings.azdata.azdataStrings.onConnectionChanged
+  */
+  trait ConnectionEventType extends StObject
+  object ConnectionEventType {
+    
+    inline def onConnect: typings.azdata.azdataStrings.onConnect = "onConnect".asInstanceOf[typings.azdata.azdataStrings.onConnect]
+    
+    inline def onConnectionChanged: typings.azdata.azdataStrings.onConnectionChanged = "onConnectionChanged".asInstanceOf[typings.azdata.azdataStrings.onConnectionChanged]
+    
+    inline def onDisconnect: typings.azdata.azdataStrings.onDisconnect = "onDisconnect".asInstanceOf[typings.azdata.azdataStrings.onDisconnect]
   }
 }

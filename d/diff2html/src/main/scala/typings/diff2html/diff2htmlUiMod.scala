@@ -14,7 +14,7 @@ object diff2htmlUiMod {
   
   @JSImport("diff2html/lib/ui/js/diff2html-ui", "Diff2HtmlUI")
   @js.native
-  class Diff2HtmlUI protected ()
+  open class Diff2HtmlUI protected ()
     extends typings.diff2html.diff2htmlUiBaseMod.Diff2HtmlUI {
     def this(target: HTMLElement) = this()
     def this(target: HTMLElement, diffInput: String) = this()
@@ -39,6 +39,11 @@ object diff2htmlUiMod {
     @js.native
     def drawFileList: Boolean = js.native
     inline def drawFileList_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drawFileList")(x.asInstanceOf[js.Any])
+    
+    @JSImport("diff2html/lib/ui/js/diff2html-ui", "defaultDiff2HtmlUIConfig.fileContentToggle")
+    @js.native
+    def fileContentToggle: Boolean = js.native
+    inline def fileContentToggle_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fileContentToggle")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui", "defaultDiff2HtmlUIConfig.fileListStartVisible")
     @js.native

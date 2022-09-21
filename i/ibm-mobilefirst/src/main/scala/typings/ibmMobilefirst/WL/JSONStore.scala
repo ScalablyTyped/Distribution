@@ -11,7 +11,7 @@ object JSONStore {
     extends StObject
        with Options {
     
-    var additionalSearchFields: js.UndefOr[js.Any] = js.undefined
+    var additionalSearchFields: js.UndefOr[Any] = js.undefined
     
     var markDirty: js.UndefOr[Boolean] = js.undefined
     
@@ -29,7 +29,7 @@ object JSONStore {
     
     extension [Self <: AddOptions](x: Self) {
       
-      inline def setAdditionalSearchFields(value: js.Any): Self = StObject.set(x, "additionalSearchFields", value.asInstanceOf[js.Any])
+      inline def setAdditionalSearchFields(value: Any): Self = StObject.set(x, "additionalSearchFields", value.asInstanceOf[js.Any])
       
       inline def setAdditionalSearchFieldsUndefined: Self = StObject.set(x, "additionalSearchFields", js.undefined)
       
@@ -91,13 +91,13 @@ object JSONStore {
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value*))
       
       inline def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+      inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
     }
   }
   
@@ -132,7 +132,7 @@ object JSONStore {
       
       inline def setReplaceCriteriaUndefined: Self = StObject.set(x, "replaceCriteria", js.undefined)
       
-      inline def setReplaceCriteriaVarargs(value: String*): Self = StObject.set(x, "replaceCriteria", js.Array(value :_*))
+      inline def setReplaceCriteriaVarargs(value: String*): Self = StObject.set(x, "replaceCriteria", js.Array(value*))
     }
   }
   
@@ -236,88 +236,88 @@ object JSONStore {
   @js.native
   trait JSONStoreInstance extends StObject {
     
-    def add(data: js.Any): JQueryDeferred[js.Any] = js.native
-    def add(data: js.Any, options: AddOptions): JQueryDeferred[js.Any] = js.native
+    def add(data: Any): JQueryDeferred[Any] = js.native
+    def add(data: Any, options: AddOptions): JQueryDeferred[Any] = js.native
     
-    def advancedFind(query: js.Array[js.Any]): JQueryDeferred[js.Any] = js.native
-    def advancedFind(query: js.Array[js.Any], options: AdvancedFindOptions): JQueryDeferred[js.Any] = js.native
+    def advancedFind(query: js.Array[Any]): JQueryDeferred[Any] = js.native
+    def advancedFind(query: js.Array[Any], options: AdvancedFindOptions): JQueryDeferred[Any] = js.native
     
-    def change(data: js.Any): JQueryDeferred[js.Any] = js.native
-    def change(data: js.Any, options: ChangeOptions): JQueryDeferred[js.Any] = js.native
+    def change(data: Any): JQueryDeferred[Any] = js.native
+    def change(data: Any, options: ChangeOptions): JQueryDeferred[Any] = js.native
     
-    def clear(): JQueryDeferred[js.Any] = js.native
-    def clear(options: Options): JQueryDeferred[js.Any] = js.native
+    def clear(): JQueryDeferred[Any] = js.native
+    def clear(options: Options): JQueryDeferred[Any] = js.native
     
-    def count(): JQueryDeferred[js.Any] = js.native
-    def count(query: js.Any): JQueryDeferred[js.Any] = js.native
-    def count(query: js.Any, options: Options): JQueryDeferred[js.Any] = js.native
-    def count(query: Unit, options: Options): JQueryDeferred[js.Any] = js.native
+    def count(): JQueryDeferred[Any] = js.native
+    def count(query: Any): JQueryDeferred[Any] = js.native
+    def count(query: Any, options: Options): JQueryDeferred[Any] = js.native
+    def count(query: Unit, options: Options): JQueryDeferred[Any] = js.native
     
-    def countAllDirty(): JQueryDeferred[js.Any] = js.native
-    def countAllDirty(options: Options): JQueryDeferred[js.Any] = js.native
+    def countAllDirty(): JQueryDeferred[Any] = js.native
+    def countAllDirty(options: Options): JQueryDeferred[Any] = js.native
     
     def enhance(name: String, fn: js.Function): Double = js.native
     
     /**
       * @deprecated since version 5.0.6, it is no longer needed if you use WL.JSONStore.JSONStoreInstance.remove with {push: false}.
       */
-    def erase(doc: js.Any): Unit = js.native
-    def erase(doc: js.Any, options: EraseOptions): Unit = js.native
+    def erase(doc: Any): Unit = js.native
+    def erase(doc: Any, options: EraseOptions): Unit = js.native
     
-    def find(query: js.Array[js.Object]): JQueryDeferred[js.Any] = js.native
-    def find(query: js.Array[js.Object], options: FindOptions): JQueryDeferred[js.Any] = js.native
-    def find(query: js.Object): JQueryDeferred[js.Any] = js.native
-    def find(query: js.Object, options: FindOptions): JQueryDeferred[js.Any] = js.native
+    def find(query: js.Array[js.Object]): JQueryDeferred[Any] = js.native
+    def find(query: js.Array[js.Object], options: FindOptions): JQueryDeferred[Any] = js.native
+    def find(query: js.Object): JQueryDeferred[Any] = js.native
+    def find(query: js.Object, options: FindOptions): JQueryDeferred[Any] = js.native
     
-    def findAll(): JQueryDeferred[js.Any] = js.native
-    def findAll(options: BasicFindOptions): JQueryDeferred[js.Any] = js.native
+    def findAll(): JQueryDeferred[Any] = js.native
+    def findAll(options: BasicFindOptions): JQueryDeferred[Any] = js.native
     
-    def findById(): JQueryDeferred[js.Any] = js.native
-    def findById(options: Options): JQueryDeferred[js.Any] = js.native
+    def findById(): JQueryDeferred[Any] = js.native
+    def findById(options: Options): JQueryDeferred[Any] = js.native
     
-    def isDirty(doc: js.Any): JQueryDeferred[Boolean] = js.native
-    def isDirty(doc: js.Any, options: Options): JQueryDeferred[Boolean] = js.native
-    
-    /**
-      * @deprecated since version 6.2.0.
-      */
-    def load(): JQueryDeferred[js.Any] = js.native
-    def load(options: Options): JQueryDeferred[js.Any] = js.native
-    
-    def markClean(docs: js.Array[js.Any]): JQueryDeferred[js.Any] = js.native
-    def markClean(docs: js.Array[js.Any], options: Options): JQueryDeferred[js.Any] = js.native
+    def isDirty(doc: Any): JQueryDeferred[Boolean] = js.native
+    def isDirty(doc: Any, options: Options): JQueryDeferred[Boolean] = js.native
     
     /**
       * @deprecated since version 6.2.0.
       */
-    def push(): JQueryDeferred[js.Any] = js.native
-    def push(options: js.Any): JQueryDeferred[js.Any] = js.native
+    def load(): JQueryDeferred[Any] = js.native
+    def load(options: Options): JQueryDeferred[Any] = js.native
+    
+    def markClean(docs: js.Array[Any]): JQueryDeferred[Any] = js.native
+    def markClean(docs: js.Array[Any], options: Options): JQueryDeferred[Any] = js.native
+    
+    /**
+      * @deprecated since version 6.2.0.
+      */
+    def push(): JQueryDeferred[Any] = js.native
+    def push(options: Any): JQueryDeferred[Any] = js.native
     
     /**
       * @deprecated since version 5.0.6, it is no longer needed if you use WL.JSONStore.JSONStoreInstance.push.
       */
-    def pushSelected(doc: js.Any): JQueryDeferred[js.Any] = js.native
-    def pushSelected(doc: js.Any, options: Options): JQueryDeferred[js.Any] = js.native
+    def pushSelected(doc: Any): JQueryDeferred[Any] = js.native
+    def pushSelected(doc: Any, options: Options): JQueryDeferred[Any] = js.native
     
     /**
       * @deprecated since version 5.0.6. It is no longer needed if you use WL.JSONStore.JSONStoreInstance.replace with {push: false}.
       */
-    def refresh(doc: js.Any): JQueryDeferred[js.Any] = js.native
-    def refresh(doc: js.Any, options: RefreshOptions): JQueryDeferred[js.Any] = js.native
+    def refresh(doc: Any): JQueryDeferred[Any] = js.native
+    def refresh(doc: Any, options: RefreshOptions): JQueryDeferred[Any] = js.native
     
-    def remove(doc: js.Any): JQueryDeferred[js.Any] = js.native
-    def remove(doc: js.Any, options: RemoveOptions): JQueryDeferred[js.Any] = js.native
+    def remove(doc: Any): JQueryDeferred[Any] = js.native
+    def remove(doc: Any, options: RemoveOptions): JQueryDeferred[Any] = js.native
     
     /**
       * Deletes all the documents that are stored inside a collection.
       */
-    def removeCollection(): JQueryDeferred[js.Any] = js.native
-    def removeCollection(options: Options): JQueryDeferred[js.Any] = js.native
+    def removeCollection(): JQueryDeferred[Any] = js.native
+    def removeCollection(options: Options): JQueryDeferred[Any] = js.native
     
-    def replace(doc: js.Array[js.Object]): JQueryDeferred[js.Any] = js.native
-    def replace(doc: js.Array[js.Object], options: ReplaceOptions): JQueryDeferred[js.Any] = js.native
-    def replace(doc: js.Object): JQueryDeferred[js.Any] = js.native
-    def replace(doc: js.Object, options: ReplaceOptions): JQueryDeferred[js.Any] = js.native
+    def replace(doc: js.Array[js.Object]): JQueryDeferred[Any] = js.native
+    def replace(doc: js.Array[js.Object], options: ReplaceOptions): JQueryDeferred[Any] = js.native
+    def replace(doc: js.Object): JQueryDeferred[Any] = js.native
+    def replace(doc: js.Object, options: ReplaceOptions): JQueryDeferred[Any] = js.native
     
     def store(data: js.Array[js.Object]): Unit = js.native
     def store(data: js.Array[js.Object], options: StoreOptions): Unit = js.native
@@ -338,102 +338,102 @@ object JSONStore {
     /**
       * Add a between clause to a query for advanced find.
       */
-    def between(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def between(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add an equal to clause to a query for advanced find.
       */
-    def equal(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def equal(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a greater or equal thanclause to a query for advanced find.
       */
-    def greaterOrEqualThan(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def greaterOrEqualThan(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a greater than clause to a query for advanced find.
       */
-    def greaterThan(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def greaterThan(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add an in clause to a query for advanced find.
       */
-    def inside(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def inside(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a left clause to a query for advanced find.
       */
-    def leftLike(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def leftLike(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a less or equal than clause to a query for advanced find.
       */
-    def lessOrEqualThan(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def lessOrEqualThan(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a less than clause to a query for advanced find.
       */
-    def lessThan(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def lessThan(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a like clause to a query for advanced find.
       */
-    def like(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def like(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a not between clause to a query for advanced find.
       */
-    def notBetween(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def notBetween(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a not equal to clause to a query for advanced find.
       */
-    def notEqual(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def notEqual(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a not in clause to a query for advanced find.
       */
-    def notInside(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def notInside(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a not left clause to a query for advanced find.
       */
-    def notLeftLike(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def notLeftLike(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a not like clause to a query for advanced find.
       */
-    def notLike(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def notLike(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a not right clause to a query for advanced find.
       */
-    def notRightLike(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def notRightLike(searchField: Any, value: Any): js.Array[Any]
     
     /**
       * Add a right clause to a query for advanced find.
       */
-    def rightLike(searchField: js.Any, value: js.Any): js.Array[js.Any]
+    def rightLike(searchField: Any, value: Any): js.Array[Any]
   }
   object QueryPartObj {
     
     inline def apply(
-      between: (js.Any, js.Any) => js.Array[js.Any],
-      equal: (js.Any, js.Any) => js.Array[js.Any],
-      greaterOrEqualThan: (js.Any, js.Any) => js.Array[js.Any],
-      greaterThan: (js.Any, js.Any) => js.Array[js.Any],
-      inside: (js.Any, js.Any) => js.Array[js.Any],
-      leftLike: (js.Any, js.Any) => js.Array[js.Any],
-      lessOrEqualThan: (js.Any, js.Any) => js.Array[js.Any],
-      lessThan: (js.Any, js.Any) => js.Array[js.Any],
-      like: (js.Any, js.Any) => js.Array[js.Any],
-      notBetween: (js.Any, js.Any) => js.Array[js.Any],
-      notEqual: (js.Any, js.Any) => js.Array[js.Any],
-      notInside: (js.Any, js.Any) => js.Array[js.Any],
-      notLeftLike: (js.Any, js.Any) => js.Array[js.Any],
-      notLike: (js.Any, js.Any) => js.Array[js.Any],
-      notRightLike: (js.Any, js.Any) => js.Array[js.Any],
-      rightLike: (js.Any, js.Any) => js.Array[js.Any]
+      between: (Any, Any) => js.Array[Any],
+      equal: (Any, Any) => js.Array[Any],
+      greaterOrEqualThan: (Any, Any) => js.Array[Any],
+      greaterThan: (Any, Any) => js.Array[Any],
+      inside: (Any, Any) => js.Array[Any],
+      leftLike: (Any, Any) => js.Array[Any],
+      lessOrEqualThan: (Any, Any) => js.Array[Any],
+      lessThan: (Any, Any) => js.Array[Any],
+      like: (Any, Any) => js.Array[Any],
+      notBetween: (Any, Any) => js.Array[Any],
+      notEqual: (Any, Any) => js.Array[Any],
+      notInside: (Any, Any) => js.Array[Any],
+      notLeftLike: (Any, Any) => js.Array[Any],
+      notLike: (Any, Any) => js.Array[Any],
+      notRightLike: (Any, Any) => js.Array[Any],
+      rightLike: (Any, Any) => js.Array[Any]
     ): QueryPartObj = {
       val __obj = js.Dynamic.literal(between = js.Any.fromFunction2(between), equal = js.Any.fromFunction2(equal), greaterOrEqualThan = js.Any.fromFunction2(greaterOrEqualThan), greaterThan = js.Any.fromFunction2(greaterThan), inside = js.Any.fromFunction2(inside), leftLike = js.Any.fromFunction2(leftLike), lessOrEqualThan = js.Any.fromFunction2(lessOrEqualThan), lessThan = js.Any.fromFunction2(lessThan), like = js.Any.fromFunction2(like), notBetween = js.Any.fromFunction2(notBetween), notEqual = js.Any.fromFunction2(notEqual), notInside = js.Any.fromFunction2(notInside), notLeftLike = js.Any.fromFunction2(notLeftLike), notLike = js.Any.fromFunction2(notLike), notRightLike = js.Any.fromFunction2(notRightLike), rightLike = js.Any.fromFunction2(rightLike))
       __obj.asInstanceOf[QueryPartObj]
@@ -441,37 +441,37 @@ object JSONStore {
     
     extension [Self <: QueryPartObj](x: Self) {
       
-      inline def setBetween(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
+      inline def setBetween(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
       
-      inline def setEqual(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
+      inline def setEqual(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
       
-      inline def setGreaterOrEqualThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "greaterOrEqualThan", js.Any.fromFunction2(value))
+      inline def setGreaterOrEqualThan(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "greaterOrEqualThan", js.Any.fromFunction2(value))
       
-      inline def setGreaterThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "greaterThan", js.Any.fromFunction2(value))
+      inline def setGreaterThan(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "greaterThan", js.Any.fromFunction2(value))
       
-      inline def setInside(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "inside", js.Any.fromFunction2(value))
+      inline def setInside(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "inside", js.Any.fromFunction2(value))
       
-      inline def setLeftLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "leftLike", js.Any.fromFunction2(value))
+      inline def setLeftLike(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "leftLike", js.Any.fromFunction2(value))
       
-      inline def setLessOrEqualThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "lessOrEqualThan", js.Any.fromFunction2(value))
+      inline def setLessOrEqualThan(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "lessOrEqualThan", js.Any.fromFunction2(value))
       
-      inline def setLessThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "lessThan", js.Any.fromFunction2(value))
+      inline def setLessThan(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "lessThan", js.Any.fromFunction2(value))
       
-      inline def setLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "like", js.Any.fromFunction2(value))
+      inline def setLike(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "like", js.Any.fromFunction2(value))
       
-      inline def setNotBetween(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notBetween", js.Any.fromFunction2(value))
+      inline def setNotBetween(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "notBetween", js.Any.fromFunction2(value))
       
-      inline def setNotEqual(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notEqual", js.Any.fromFunction2(value))
+      inline def setNotEqual(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "notEqual", js.Any.fromFunction2(value))
       
-      inline def setNotInside(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notInside", js.Any.fromFunction2(value))
+      inline def setNotInside(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "notInside", js.Any.fromFunction2(value))
       
-      inline def setNotLeftLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notLeftLike", js.Any.fromFunction2(value))
+      inline def setNotLeftLike(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "notLeftLike", js.Any.fromFunction2(value))
       
-      inline def setNotLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notLike", js.Any.fromFunction2(value))
+      inline def setNotLike(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "notLike", js.Any.fromFunction2(value))
       
-      inline def setNotRightLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notRightLike", js.Any.fromFunction2(value))
+      inline def setNotRightLike(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "notRightLike", js.Any.fromFunction2(value))
       
-      inline def setRightLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "rightLike", js.Any.fromFunction2(value))
+      inline def setRightLike(value: (Any, Any) => js.Array[Any]): Self = StObject.set(x, "rightLike", js.Any.fromFunction2(value))
     }
   }
   

@@ -1,47 +1,41 @@
 package typings.gm.mod
 
+import typings.gm.mod.^
+import typings.node.bufferMod.global.Buffer
+import typings.node.streamMod.Readable
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply(stream: java.lang.String): typings.gm.mod.State = typings.gm.mod.^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[typings.gm.mod.State]
-inline def apply(stream: java.lang.String, image: java.lang.String): typings.gm.mod.State = (typings.gm.mod.^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[typings.gm.mod.State]
-inline def apply(stream: typings.node.Buffer): typings.gm.mod.State = typings.gm.mod.^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[typings.gm.mod.State]
-inline def apply(stream: typings.node.Buffer, image: java.lang.String): typings.gm.mod.State = (typings.gm.mod.^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[typings.gm.mod.State]
-inline def apply(stream: typings.node.NodeJS.ReadableStream): typings.gm.mod.State = typings.gm.mod.^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[typings.gm.mod.State]
-inline def apply(stream: typings.node.NodeJS.ReadableStream, image: java.lang.String): typings.gm.mod.State = (typings.gm.mod.^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[typings.gm.mod.State]
-inline def apply(width: scala.Double, height: scala.Double): typings.gm.mod.State = (typings.gm.mod.^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.gm.mod.State]
-inline def apply(width: scala.Double, height: scala.Double, color: java.lang.String): typings.gm.mod.State = (typings.gm.mod.^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.gm.mod.State]
+inline def apply(stream: String): State = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[State]
+inline def apply(stream: String, image: String): State = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[State]
+inline def apply(stream: Buffer): State = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[State]
+inline def apply(stream: Buffer, image: String): State = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[State]
+inline def apply(stream: ReadableStream[Any]): State = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[State]
+inline def apply(stream: ReadableStream[Any], image: String): State = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[State]
+inline def apply(width: Double, height: Double): State = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[State]
+inline def apply(width: Double, height: Double, color: String): State = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[State]
 
-inline def compare(filename1: java.lang.String, filename2: java.lang.String, callback: typings.gm.mod.CompareCallback): scala.Unit = (typings.gm.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compare")(filename1.asInstanceOf[js.Any], filename2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def compare(
-  filename1: java.lang.String,
-  filename2: java.lang.String,
-  options: scala.Double,
-  callback: typings.gm.mod.CompareCallback
-): scala.Unit = (typings.gm.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compare")(filename1.asInstanceOf[js.Any], filename2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def compare(
-  filename1: java.lang.String,
-  filename2: java.lang.String,
-  options: typings.gm.mod.CompareOptions,
-  callback: typings.gm.mod.CompareCallback
-): scala.Unit = (typings.gm.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compare")(filename1.asInstanceOf[js.Any], filename2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def compare(filename1: String, filename2: String, callback: CompareCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(filename1.asInstanceOf[js.Any], filename2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def compare(filename1: String, filename2: String, options: Double, callback: CompareCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(filename1.asInstanceOf[js.Any], filename2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def compare(filename1: String, filename2: String, options: CompareOptions, callback: CompareCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(filename1.asInstanceOf[js.Any], filename2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def subClass(options: typings.gm.mod.ClassOptions): typings.gm.mod.SubClass_ = typings.gm.mod.^.asInstanceOf[js.Dynamic].applyDynamic("subClass")(options.asInstanceOf[js.Any]).asInstanceOf[typings.gm.mod.SubClass_]
+inline def subClass(options: ClassOptions): SubClass_ = ^.asInstanceOf[js.Dynamic].applyDynamic("subClass")(options.asInstanceOf[js.Any]).asInstanceOf[SubClass_]
 
 type CompareCallback = js.Function4[
-/* err */ typings.std.Error | scala.Null, 
-/* isEqual */ scala.Boolean, 
-/* equality */ scala.Double, 
-/* raw */ scala.Double, 
-js.Any]
+/* err */ js.Error | Null, 
+/* isEqual */ Boolean, 
+/* equality */ Double, 
+/* raw */ Double, 
+Any]
 
-type GetterCallback[T] = js.Function2[/* err */ typings.std.Error | scala.Null, /* value */ T, js.Any]
+type GetterCallback[T] = js.Function2[/* err */ js.Error | Null, /* value */ T, Any]
 
 type WriteCallback = js.Function4[
-/* err */ typings.std.Error | scala.Null, 
-/* stdout */ typings.node.streamMod.Readable, 
-/* stderr */ typings.node.streamMod.Readable, 
-/* cmd */ java.lang.String, 
-js.Any]
+/* err */ js.Error | Null, 
+/* stdout */ Readable, 
+/* stderr */ Readable, 
+/* cmd */ String, 
+Any]

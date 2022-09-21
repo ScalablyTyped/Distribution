@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
@@ -19,12 +19,12 @@ object statisticGroupMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Statistic/StatisticGroup", JSImport.Default)
   @js.native
-  val default: StatelessComponent[StatisticGroupProps] = js.native
+  val default: FC[StatisticGroupProps] = js.native
   
   trait StatisticGroupProps
     extends StObject
        with StrictStatisticGroupProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object StatisticGroupProps {
     
     inline def apply(): StatisticGroupProps = {
@@ -36,7 +36,7 @@ object statisticGroupMod extends Shortcut {
   trait StrictStatisticGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -74,7 +74,7 @@ object statisticGroupMod extends Shortcut {
     
     extension [Self <: StrictStatisticGroupProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -106,7 +106,7 @@ object statisticGroupMod extends Shortcut {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: SemanticShorthandItem[StatisticProps]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SemanticShorthandItem[StatisticProps]*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setSize(value: StatisticSizeProp): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -118,8 +118,8 @@ object statisticGroupMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[StatisticGroupProps]
+  type _To = FC[StatisticGroupProps]
   
   /* This means you don't have to write `default`, but can instead just say `statisticGroupMod.foo` */
-  override def _to: StatelessComponent[StatisticGroupProps] = default
+  override def _to: FC[StatisticGroupProps] = default
 }

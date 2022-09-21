@@ -14,7 +14,7 @@ trait SimulationJobBatchSummary extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the simulation job batch was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of created simulation job requests.
@@ -29,7 +29,7 @@ trait SimulationJobBatchSummary extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the simulation job batch was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of pending simulation job requests.
@@ -54,7 +54,7 @@ object SimulationJobBatchSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -66,7 +66,7 @@ object SimulationJobBatchSummary {
     
     inline def setFailedRequestCountUndefined: Self = StObject.set(x, "failedRequestCount", js.undefined)
     
-    inline def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     

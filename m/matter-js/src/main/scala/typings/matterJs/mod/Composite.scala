@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "Composite")
 @js.native
-class Composite () extends StObject {
+open class Composite () extends StObject {
   
   /**
     * An array of `Body` that are _direct_ children of this composite.
@@ -14,7 +14,7 @@ class Composite () extends StObject {
     * If you wish to recursively find all descendants, you should use the `Composite.allBodies` method.
     *
     * @property bodies
-    * @type body[]
+    * @type {Body[]}
     * @default []
     */
   var bodies: js.Array[Body] = js.native
@@ -25,7 +25,7 @@ class Composite () extends StObject {
     * If you wish to recursively find all descendants, you should use the `Composite.allComposites` method.
     *
     * @property composites
-    * @type composite[]
+    * @type {Composite[]}
     * @default []
     */
   var composites: js.Array[Composite] = js.native
@@ -36,7 +36,7 @@ class Composite () extends StObject {
     * If you wish to recursively find all descendants, you should use the `Composite.allConstraints` method.
     *
     * @property constraints
-    * @type constraint[]
+    * @type {Constraint[]}
     * @default []
     */
   var constraints: js.Array[Constraint] = js.native
@@ -45,17 +45,16 @@ class Composite () extends StObject {
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
     *
     * @property id
-    * @type number
+    * @type {number}
     */
   var id: Double = js.native
   
   /**
     * A flag that specifies whether the composite has been modified during the current step.
-    * Most `Matter.Composite` methods will automatically set this flag to `true` to inform the engine of changes to be handled.
-    * If you need to change it manually, you should use the `Composite.setModified` method.
+    * This is automatically managed when bodies, constraints or composites are added or removed.
     *
     * @property isModified
-    * @type boolean
+    * @type {boolean}
     * @default false
     */
   var isModified: Boolean = js.native
@@ -64,7 +63,7 @@ class Composite () extends StObject {
     * An arbitrary `String` name to help the user identify and manage composites.
     *
     * @property label
-    * @type string
+    * @type {string}
     * @default "Composite"
     */
   var label: String = js.native
@@ -73,19 +72,28 @@ class Composite () extends StObject {
     * The `Composite` that is the parent of this composite. It is automatically managed by the `Matter.Composite` methods.
     *
     * @property parent
-    * @type composite
+    * @type {Composite|null}
     * @default null
     */
-  var parent: Composite = js.native
+  var parent: Composite | Null = js.native
+  
+  /**
+    * An object reserved for storing plugin-specific properties.
+    *
+    * @property plugin
+    * @type {Plugin}
+    */
+  var plugin: Plugin = js.native
   
   /**
     * A `String` denoting the type of object.
     *
     * @property type
-    * @type string
+    * @type {string}
     * @default "composite"
+    * @readOnly
     */
-  var `type`: String = js.native
+  val `type`: String = js.native
 }
 /* static members */
 object Composite {
@@ -94,47 +102,49 @@ object Composite {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def add(composite: Composite, `object`: js.Array[Body | Composite | Constraint | MouseConstraint]): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Composite]
   /**
     * Generic add function. Adds one or many body(s), constraint(s) or a composite(s) to the given composite.
     * Triggers `beforeAdd` and `afterAdd` events on the `composite`.
     * @method add
-    * @param {composite} composite
-    * @param {} object
-    * @return {composite} The original composite with the objects added
+    * @param {Composite} composite
+    * @param {any} object
+    * @returns {Composite} The original composite with the objects added
     */
   inline def add(composite: Composite, `object`: Body): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Composite]
   inline def add(composite: Composite, `object`: Composite): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Composite]
   inline def add(composite: Composite, `object`: Constraint): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Composite]
+  inline def add(composite: Composite, `object`: MouseConstraint): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Composite]
   
   /**
     * Returns all bodies in the given composite, including all bodies in its children, recursively.
     * @method allBodies
-    * @param {composite} composite
-    * @return {body[]} All the bodies
+    * @param {Composite} composite
+    * @returns {Body[]} All the bodies
     */
   inline def allBodies(composite: Composite): js.Array[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("allBodies")(composite.asInstanceOf[js.Any]).asInstanceOf[js.Array[Body]]
   
   /**
     * Returns all composites in the given composite, including all composites in its children, recursively.
     * @method allComposites
-    * @param {composite} composite
-    * @return {composite[]} All the composites
+    * @param {Composite} composite
+    * @returns {Composite[]} All the composites
     */
   inline def allComposites(composite: Composite): js.Array[Composite] = ^.asInstanceOf[js.Dynamic].applyDynamic("allComposites")(composite.asInstanceOf[js.Any]).asInstanceOf[js.Array[Composite]]
   
   /**
     * Returns all constraints in the given composite, including all constraints in its children, recursively.
     * @method allConstraints
-    * @param {composite} composite
-    * @return {constraint[]} All the constraints
+    * @param {Composite} composite
+    * @returns {Constraint[]} All the constraints
     */
-  inline def allConstraints(composite: Composite): js.Array[Composite] = ^.asInstanceOf[js.Dynamic].applyDynamic("allConstraints")(composite.asInstanceOf[js.Any]).asInstanceOf[js.Array[Composite]]
+  inline def allConstraints(composite: Composite): js.Array[Constraint] = ^.asInstanceOf[js.Dynamic].applyDynamic("allConstraints")(composite.asInstanceOf[js.Any]).asInstanceOf[js.Array[Constraint]]
   
   /**
     * Removes all bodies, constraints and composites from the given composite.
     * Optionally clearing its children recursively.
     * @method clear
-    * @param {composite} composite
+    * @param {Composite} composite
     * @param {boolean} keepStatic
     * @param {boolean} [deep=false]
     */
@@ -146,7 +156,7 @@ object Composite {
     * See the properites section below for detailed information on what you can pass via the `options` object.
     * @method create
     * @param {} [options]
-    * @return {composite} A new composite
+    * @returns {Composite} A new composite
     */
   inline def create(): Composite = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Composite]
   inline def create(options: ICompositeDefinition): Composite = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Composite]
@@ -154,10 +164,10 @@ object Composite {
   /**
     * Searches the composite recursively for an object matching the type and id supplied, null if not found.
     * @method get
-    * @param {composite} composite
+    * @param {Composite} composite
     * @param {number} id
     * @param {string} type
-    * @return {object} The requested object, if found
+    * @returns {any} The requested object, if found
     */
   inline def get(composite: Composite, id: Double, `type`: String): Body | Composite | Constraint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(composite.asInstanceOf[js.Any], id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Body | Composite | Constraint]
   
@@ -165,17 +175,17 @@ object Composite {
     * Moves the given object(s) from compositeA to compositeB (equal to a remove followed by an add).
     * @method move
     * @param {compositeA} compositeA
-    * @param {object[]} objects
+    * @param {(Body | Composite | Constraint)[]} objects
     * @param {compositeB} compositeB
-    * @return {composite} Returns compositeA
+    * @returns {Composite} Returns compositeA
     */
   inline def move(compositeA: Composite, objects: js.Array[Body | Composite | Constraint], compositeB: Composite): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(compositeA.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], compositeB.asInstanceOf[js.Any])).asInstanceOf[Composite]
   
   /**
     * Assigns new ids for all objects in the composite, recursively.
     * @method rebase
-    * @param {composite} composite
-    * @return {composite} Returns composite
+    * @param {Composite} composite
+    * @returns {Composite} Returns composite
     */
   inline def rebase(composite: Composite): Composite = ^.asInstanceOf[js.Dynamic].applyDynamic("rebase")(composite.asInstanceOf[js.Any]).asInstanceOf[Composite]
   
@@ -184,10 +194,10 @@ object Composite {
     * Optionally searching its children recursively.
     * Triggers `beforeRemove` and `afterRemove` events on the `composite`.
     * @method remove
-    * @param {composite} composite
-    * @param {} object
+    * @param {Composite} composite
+    * @param {any} object
     * @param {boolean} [deep=false]
-    * @return {composite} The original composite with the objects removed
+    * @returns {Composite} The original composite with the objects removed
     */
   inline def remove(composite: Composite, `object`: Body): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Composite]
   inline def remove(composite: Composite, `object`: Body, deep: Boolean): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[Composite]
@@ -199,10 +209,10 @@ object Composite {
   /**
     * Rotates all children in the composite by a given angle about the given point, without imparting any angular velocity.
     * @method rotate
-    * @param {composite} composite
+    * @param {Composite} composite
     * @param {number} rotation
-    * @param {vector} point
-    * @param {bool} [recursive=true]
+    * @param {Vector} point
+    * @param {boolean} [recursive=true]
     */
   inline def rotate(composite: Composite, rotation: Double, point: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(composite.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def rotate(composite: Composite, rotation: Double, point: Vector, recursive: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(composite.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], point.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -210,37 +220,22 @@ object Composite {
   /**
     * Scales all children in the composite, including updating physical properties (mass, area, axes, inertia), from a world-space point.
     * @method scale
-    * @param {composite} composite
+    * @param {Composite} composite
     * @param {number} scaleX
     * @param {number} scaleY
-    * @param {vector} point
-    * @param {bool} [recursive=true]
+    * @param {Vector} point
+    * @param {boolean} [recursive=true]
     */
   inline def scale(composite: Composite, scaleX: Double, scaleY: Double, point: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(composite.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def scale(composite: Composite, scaleX: Double, scaleY: Double, point: Vector, recursive: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(composite.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * Sets the composite's `isModified` flag.
-    * If `updateParents` is true, all parents will be set (default: false).
-    * If `updateChildren` is true, all children will be set (default: false).
-    * @method setModified
-    * @param {composite} composite
-    * @param {boolean} isModified
-    * @param {boolean} [updateParents=false]
-    * @param {boolean} [updateChildren=false]
-    */
-  inline def setModified(composite: Composite, isModified: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModified")(composite.asInstanceOf[js.Any], isModified.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setModified(composite: Composite, isModified: Boolean, updateParents: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModified")(composite.asInstanceOf[js.Any], isModified.asInstanceOf[js.Any], updateParents.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setModified(composite: Composite, isModified: Boolean, updateParents: Boolean, updateChildren: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModified")(composite.asInstanceOf[js.Any], isModified.asInstanceOf[js.Any], updateParents.asInstanceOf[js.Any], updateChildren.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setModified(composite: Composite, isModified: Boolean, updateParents: Unit, updateChildren: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModified")(composite.asInstanceOf[js.Any], isModified.asInstanceOf[js.Any], updateParents.asInstanceOf[js.Any], updateChildren.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  /**
     * Translates all children in the composite by a given vector relative to their current positions,
     * without imparting any velocity.
     * @method translate
-    * @param {composite} composite
-    * @param {vector} translation
-    * @param {bool} [recursive=true]
+    * @param {Composite} composite
+    * @param {Vector} translation
+    * @param {boolean} [recursive=true]
     */
   inline def translate(composite: Composite, translation: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(composite.asInstanceOf[js.Any], translation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def translate(composite: Composite, translation: Vector, recursive: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(composite.asInstanceOf[js.Any], translation.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[Unit]

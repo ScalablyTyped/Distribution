@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arrayCountMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(mixedVar: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(mixedVar: js.Any, mode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(mixedVar: Unit, mode: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(mixedVar: Any): Any = ^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(mixedVar: Any, mode: Any): Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(mixedVar: Unit, mode: Any): Any = (^.asInstanceOf[js.Dynamic].apply(mixedVar.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/array/count", JSImport.Namespace)
   @js.native

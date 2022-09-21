@@ -12,7 +12,7 @@ object apiGlobalHotkeyMod {
   
   @JSImport("openfin/_v2/api/global-hotkey", JSImport.Default)
   @js.native
-  class default protected () extends GlobalHotkey {
+  open class default protected () extends GlobalHotkey {
     def this(wire: typings.openfin.transportMod.default) = this()
   }
   
@@ -34,7 +34,7 @@ object apiGlobalHotkeyMod {
       * @return {Promise.<void>}
       * @tutorial GlobalHotkey.register
       */
-    def register(hotkey: String, listener: js.Function1[/* repeated */ js.Any, Unit]): js.Promise[Unit] = js.native
+    def register(hotkey: String, listener: js.Function1[/* repeated */ Any, Unit]): js.Promise[Unit] = js.native
     
     /**
       * Unregisters a global hotkey with the operating system.

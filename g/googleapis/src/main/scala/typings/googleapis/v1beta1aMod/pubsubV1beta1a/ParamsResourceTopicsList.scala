@@ -1,9 +1,5 @@
 package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,18 +9,12 @@ trait ParamsResourceTopicsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Maximum number of topics to return.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * The value obtained in the last <code>ListTopicsResponse</code> for
-    * continuation.
+    * The value obtained in the last ListTopicsResponse for continuation.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -41,10 +31,6 @@ object ParamsResourceTopicsList {
   }
   
   extension [Self <: ParamsResourceTopicsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,7 @@ trait SourceProvenance extends StObject {
   var fileHashes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.FileHashes}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance & TopLevel[Any]
   ] = js.undefined
   
   /** A copy of the build's `source.repo_source`, if exists, with any revisions resolved. */
@@ -23,6 +23,9 @@ trait SourceProvenance extends StObject {
   
   /** A copy of the build's `source.storage_source`, if exists, with any generations resolved. */
   var resolvedStorageSource: js.UndefOr[StorageSource] = js.undefined
+  
+  /** A copy of the build's `source.storage_source_manifest`, if exists, with any revisions resolved. This feature is in Preview. */
+  var resolvedStorageSourceManifest: js.UndefOr[StorageSourceManifest] = js.undefined
 }
 object SourceProvenance {
   
@@ -36,7 +39,7 @@ object SourceProvenance {
     inline def setFileHashes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.FileHashes}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.SourceProvenance & TopLevel[Any]
     ): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
     inline def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
@@ -46,6 +49,10 @@ object SourceProvenance {
     inline def setResolvedRepoSourceUndefined: Self = StObject.set(x, "resolvedRepoSource", js.undefined)
     
     inline def setResolvedStorageSource(value: StorageSource): Self = StObject.set(x, "resolvedStorageSource", value.asInstanceOf[js.Any])
+    
+    inline def setResolvedStorageSourceManifest(value: StorageSourceManifest): Self = StObject.set(x, "resolvedStorageSourceManifest", value.asInstanceOf[js.Any])
+    
+    inline def setResolvedStorageSourceManifestUndefined: Self = StObject.set(x, "resolvedStorageSourceManifest", js.undefined)
     
     inline def setResolvedStorageSourceUndefined: Self = StObject.set(x, "resolvedStorageSource", js.undefined)
   }

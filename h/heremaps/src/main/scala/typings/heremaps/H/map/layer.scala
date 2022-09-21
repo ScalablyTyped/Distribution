@@ -163,7 +163,7 @@ object layer {
         
         inline def setMarkers(value: js.Array[AbstractMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
         
-        inline def setMarkersVarargs(value: AbstractMarker*): Self = StObject.set(x, "markers", js.Array(value :_*))
+        inline def setMarkersVarargs(value: AbstractMarker*): Self = StObject.set(x, "markers", js.Array(value*))
         
         inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       }
@@ -196,7 +196,7 @@ object layer {
         
         inline def setObjects(value: js.Array[AbstractMarker]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
         
-        inline def setObjectsVarargs(value: AbstractMarker*): Self = StObject.set(x, "objects", js.Array(value :_*))
+        inline def setObjectsVarargs(value: AbstractMarker*): Self = StObject.set(x, "objects", js.Array(value*))
         
         inline def setRequested(value: Double): Self = StObject.set(x, "requested", value.asInstanceOf[js.Any])
       }
@@ -314,7 +314,7 @@ object layer {
         
         inline def setTiles(value: js.Array[Tile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
         
-        inline def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+        inline def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value*))
         
         inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       }
@@ -548,7 +548,7 @@ object layer {
         
         inline def setOverlays(value: js.Array[Overlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
         
-        inline def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+        inline def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value*))
         
         inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       }

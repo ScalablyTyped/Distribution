@@ -10,10 +10,10 @@ This script finds all points where the polygons intersect each other.
 | ------------------ | :-------------: |
 | Full name          | polygons-intersect |
 | Keywords           | 2d, polygon, intersect |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 83949 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9735.333333333334 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/DudaGod/polygons-intersect#readme)

@@ -39,7 +39,7 @@ object List {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
     

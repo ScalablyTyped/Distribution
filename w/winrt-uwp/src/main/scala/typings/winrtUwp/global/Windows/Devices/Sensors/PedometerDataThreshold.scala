@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** A threshold for the Pedometer sensor. When the threshold conditions are met, the sensor trigger will activate. */
 @JSGlobal("Windows.Devices.Sensors.PedometerDataThreshold")
 @js.native
-class PedometerDataThreshold protected ()
+open class PedometerDataThreshold protected ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.PedometerDataThreshold {
   /**

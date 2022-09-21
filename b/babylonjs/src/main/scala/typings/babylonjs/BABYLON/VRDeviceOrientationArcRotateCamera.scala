@@ -7,4 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VRDeviceOrientationArcRotateCamera
   extends StObject
-     with ArcRotateCamera
+     with ArcRotateCamera {
+  
+  /* protected */ var _setRigMode: Any = js.native
+}

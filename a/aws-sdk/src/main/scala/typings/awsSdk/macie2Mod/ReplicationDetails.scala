@@ -12,12 +12,12 @@ trait ReplicationDetails extends StObject {
   var replicated: js.UndefOr[boolean] = js.undefined
   
   /**
-    * Specifies whether the bucket is configured to replicate one or more objects to an AWS account that isn't part of the same Amazon Macie organization.
+    * Specifies whether the bucket is configured to replicate one or more objects to an Amazon Web Services account that isn't part of the same Amazon Macie organization.
     */
   var replicatedExternally: js.UndefOr[boolean] = js.undefined
   
   /**
-    * An array of AWS account IDs, one for each AWS account that the bucket is configured to replicate one or more objects to.
+    * An array of Amazon Web Services account IDs, one for each Amazon Web Services account that the bucket is configured to replicate one or more objects to.
     */
   var replicationAccounts: js.UndefOr[listOfString] = js.undefined
 }
@@ -42,6 +42,6 @@ object ReplicationDetails {
     
     inline def setReplicationAccountsUndefined: Self = StObject.set(x, "replicationAccounts", js.undefined)
     
-    inline def setReplicationAccountsVarargs(value: string*): Self = StObject.set(x, "replicationAccounts", js.Array(value :_*))
+    inline def setReplicationAccountsVarargs(value: string*): Self = StObject.set(x, "replicationAccounts", js.Array(value*))
   }
 }

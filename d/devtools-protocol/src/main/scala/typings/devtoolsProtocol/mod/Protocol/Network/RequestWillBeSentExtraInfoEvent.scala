@@ -13,6 +13,16 @@ trait RequestWillBeSentExtraInfoEvent extends StObject {
   var associatedCookies: js.Array[BlockedCookieWithReason]
   
   /**
+    * The client security state set for the request.
+    */
+  var clientSecurityState: js.UndefOr[ClientSecurityState] = js.undefined
+  
+  /**
+    * Connection timing information for the request.
+    */
+  var connectTiming: ConnectTiming
+  
+  /**
     * Raw request headers as they will be sent over the wire.
     */
   var headers: Headers
@@ -24,8 +34,13 @@ trait RequestWillBeSentExtraInfoEvent extends StObject {
 }
 object RequestWillBeSentExtraInfoEvent {
   
-  inline def apply(associatedCookies: js.Array[BlockedCookieWithReason], headers: Headers, requestId: RequestId): RequestWillBeSentExtraInfoEvent = {
-    val __obj = js.Dynamic.literal(associatedCookies = associatedCookies.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+  inline def apply(
+    associatedCookies: js.Array[BlockedCookieWithReason],
+    connectTiming: ConnectTiming,
+    headers: Headers,
+    requestId: RequestId
+  ): RequestWillBeSentExtraInfoEvent = {
+    val __obj = js.Dynamic.literal(associatedCookies = associatedCookies.asInstanceOf[js.Any], connectTiming = connectTiming.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestWillBeSentExtraInfoEvent]
   }
   
@@ -33,7 +48,13 @@ object RequestWillBeSentExtraInfoEvent {
     
     inline def setAssociatedCookies(value: js.Array[BlockedCookieWithReason]): Self = StObject.set(x, "associatedCookies", value.asInstanceOf[js.Any])
     
-    inline def setAssociatedCookiesVarargs(value: BlockedCookieWithReason*): Self = StObject.set(x, "associatedCookies", js.Array(value :_*))
+    inline def setAssociatedCookiesVarargs(value: BlockedCookieWithReason*): Self = StObject.set(x, "associatedCookies", js.Array(value*))
+    
+    inline def setClientSecurityState(value: ClientSecurityState): Self = StObject.set(x, "clientSecurityState", value.asInstanceOf[js.Any])
+    
+    inline def setClientSecurityStateUndefined: Self = StObject.set(x, "clientSecurityState", js.undefined)
+    
+    inline def setConnectTiming(value: ConnectTiming): Self = StObject.set(x, "connectTiming", value.asInstanceOf[js.Any])
     
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.IHandle
+import typings.arcgisJsApi.arcgisJsApiStrings.refresh
 import typings.arcgisJsApi.arcgisJsApiStrings.wms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +17,7 @@ trait WMSLayer
      with RefreshableLayer {
   
   /**
-    * A flattened collection of all [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)s.
+    * A flattened collection of all [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)s based on the [`sublayers`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#sublayers) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#allSublayers)
     */
@@ -33,14 +35,14 @@ trait WMSLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#customLayerParameters)
     */
-  var customLayerParameters: js.Any = js.native
+  var customLayerParameters: Any = js.native
   
   /**
     * Use this to append custom parameters to all WMS requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#customParameters)
     */
-  var customParameters: js.Any = js.native
+  var customParameters: Any = js.native
   
   /**
     * Description for the WMS layer.
@@ -48,6 +50,13 @@ trait WMSLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#description)
     */
   var description: String = js.native
+  
+  /**
+    * An array of time, elevation and other dimensions for the root layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#dimensions)
+    */
+  val dimensions: js.Array[TimeDimension | ElevationDimension | GenericDimension] = js.native
   
   /**
     * Return format of feature information (MIME type).
@@ -68,8 +77,8 @@ trait WMSLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchImage)
     */
-  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[js.Any] = js.native
-  def fetchImage(extent: Extent, width: Double, height: Double, options: WMSLayerFetchImageOptions): js.Promise[js.Any] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[Any] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double, options: WMSLayerFetchImageOptions): js.Promise[Any] = js.native
   
   /**
     * Returns a [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html) based on the given sublayer id.
@@ -102,12 +111,16 @@ trait WMSLayer
   /**
     * Indicates the maximum height of the image exported by the service.
     *
+    * @default 2048
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageMaxHeight)
     */
   var imageMaxHeight: Double = js.native
   
   /**
     * Indicates the maximum width of the image exported by the service.
+    *
+    * @default 2048
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageMaxWidth)
     */
@@ -116,6 +129,8 @@ trait WMSLayer
   /**
     * Indicates whether the background of the image exported by the service is transparent.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageTransparency)
     */
   var imageTransparency: Boolean = js.native
@@ -123,9 +138,14 @@ trait WMSLayer
   /**
     * Indicates whether the layer will be included in the legend.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#legendEnabled)
     */
   var legendEnabled: Boolean = js.native
+  
+  @JSName("on")
+  def on_refresh(name: refresh, eventHandler: WMSLayerRefreshEventHandler): IHandle = js.native
   
   /**
     * The spatial reference of the layer.
@@ -142,7 +162,7 @@ trait WMSLayer
   var spatialReferences: js.Array[Double] = js.native
   
   /**
-    * A collection of [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)s.
+    * A subset of the layer's [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)s that will be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#sublayers)
     */
@@ -158,12 +178,16 @@ trait WMSLayer
   /**
     * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#timeInfo)
     */
   var timeInfo: TimeInfo = js.native
   
   /**
     * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#timeOffset)
     */
@@ -181,6 +205,8 @@ trait WMSLayer
   
   /**
     * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#useViewTime)
     */

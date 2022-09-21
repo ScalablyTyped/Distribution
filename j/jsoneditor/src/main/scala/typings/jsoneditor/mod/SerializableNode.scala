@@ -8,11 +8,11 @@ trait SerializableNode extends StObject {
   
   var path: JSONPath
   
-  var value: js.Any
+  var value: Any
 }
 object SerializableNode {
   
-  inline def apply(path: JSONPath, value: js.Any): SerializableNode = {
+  inline def apply(path: JSONPath, value: Any): SerializableNode = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializableNode]
   }
@@ -21,8 +21,8 @@ object SerializableNode {
     
     inline def setPath(value: JSONPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value*))
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

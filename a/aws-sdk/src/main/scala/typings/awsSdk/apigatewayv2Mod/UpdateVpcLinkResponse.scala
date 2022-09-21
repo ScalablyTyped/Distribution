@@ -9,7 +9,7 @@ trait UpdateVpcLinkResponse extends StObject {
   /**
     * The timestamp when the VPC link was created.
     */
-  var CreatedDate: js.UndefOr[timestampIso8601] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the VPC link.
@@ -60,7 +60,7 @@ object UpdateVpcLinkResponse {
   
   extension [Self <: UpdateVpcLinkResponse](x: Self) {
     
-    inline def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
@@ -72,13 +72,13 @@ object UpdateVpcLinkResponse {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: string*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: string*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSubnetIds(value: SubnetIdList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: string*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: string*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

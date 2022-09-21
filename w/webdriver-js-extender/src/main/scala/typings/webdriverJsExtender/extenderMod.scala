@@ -11,7 +11,7 @@ object extenderMod {
   
   @JSImport("webdriver-js-extender/built/lib/extender", "Extender")
   @js.native
-  class Extender protected () extends StObject {
+  open class Extender protected () extends StObject {
     def this(driver: WebDriver) = this()
     
     /**
@@ -40,7 +40,7 @@ object extenderMod {
       * @return {webdriver.promise.Promise<*>} A promise that will be resolved with
       *     the command result
       */
-    def execCommand[T](name: String, method: String, params: js.Array[js.Any]): js.Promise[T] = js.native
+    def execCommand[T](name: String, method: String, params: js.Array[Any]): js.Promise[T] = js.native
     
     var executor_ : DefineCommand = js.native
     

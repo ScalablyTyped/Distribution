@@ -1,8 +1,7 @@
 package typings.babelTypes.mod
 
-import typings.babelTypes.babelTypesStrings.constructor
 import typings.babelTypes.babelTypesStrings.get
-import typings.babelTypes.babelTypesStrings.method
+import typings.babelTypes.babelTypesStrings.method_
 import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,18 +23,20 @@ object Private {
     computed: Boolean,
     generator: Boolean,
     key: PrivateName_,
-    kind: get | set | method | constructor,
+    kind: get | set | method_,
+    `override`: Boolean,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     static: Boolean
   ): typings.babelTypes.mod.ClassPrivateMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], access = null, accessibility = null, decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassPrivateMethod")
     __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.ClassPrivateMethod_]
   }
   
-  inline def ClassPrivateProperty_(key: PrivateName_, static: js.Any): typings.babelTypes.mod.ClassPrivateProperty_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, value = null)
+  inline def ClassPrivateProperty_(key: PrivateName_, static: Boolean): typings.babelTypes.mod.ClassPrivateProperty_ = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], decorators = null, definite = null, end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null, value = null, variance = null)
     __obj.updateDynamic("type")("ClassPrivateProperty")
     __obj.asInstanceOf[typings.babelTypes.mod.ClassPrivateProperty_]
   }

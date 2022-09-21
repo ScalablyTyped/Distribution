@@ -18,8 +18,11 @@ import typings.babylonjs.boundingBoxRendererMod.BoundingBoxRenderer
 import typings.babylonjs.cameraMod.Camera
 import typings.babylonjs.colliderMod.Collider
 import typings.babylonjs.collisionCoordinatorMod.ICollisionCoordinator
+import typings.babylonjs.computePressureMod.IComputePressureData
 import typings.babylonjs.debugLayerMod.DebugLayer
+import typings.babylonjs.depthPeelingRendererMod.DepthPeelingRenderer
 import typings.babylonjs.depthRendererMod.DepthRenderer
+import typings.babylonjs.deviceInputEventsMod.IPointerEvent
 import typings.babylonjs.effectMod.Effect
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.environmentHelperMod.EnvironmentHelper
@@ -47,6 +50,7 @@ import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Quaternion
 import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.mathVectorMod.Vector4
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.meshSimplificationMod.SimplificationQueue
 import typings.babylonjs.morphTargetManagerMod.MorphTargetManager
@@ -57,6 +61,7 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.octreeMod.Octree
 import typings.babylonjs.outlineRendererMod.OutlineRenderer
 import typings.babylonjs.perfCounterMod.PerfCounter
+import typings.babylonjs.performanceViewerCollectorMod.PerformanceViewerCollector
 import typings.babylonjs.pickingInfoMod.PickingInfo
 import typings.babylonjs.pointerEventsMod.PointerEventTypes
 import typings.babylonjs.pointerEventsMod.PointerInfo
@@ -104,13 +109,10 @@ import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelperOptions
 import typings.babylonjs.webRequestMod.WebRequest
 import typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience
 import typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperienceOptions
-import typings.std.ArrayBuffer
 import typings.std.EventTarget
 import typings.std.File
-import typings.std.PointerEvent
 import typings.std.PointerEventInit
 import typings.std.ProgressEvent
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,7 +122,7 @@ object sceneMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.animatableInterfaceMod.IAnimatable because var conflicts: animations. Inlined  */ @JSImport("babylonjs/scene", "Scene")
   @js.native
-  class Scene protected ()
+  open class Scene protected ()
     extends AbstractScene
        with IClipPlanesHolder {
     /**
@@ -140,15 +142,19 @@ object sceneMod {
     /** @hidden */
     var _activeCamera: Nullable[Camera] = js.native
     
+    /* private */ var _activeCameras: Any = js.native
+    
     /** @hidden */
     var _activeIndices: PerfCounter = js.native
     
-    /* private */ var _activeMesh: js.Any = js.native
+    /* private */ var _activeMesh: Any = js.native
     
-    /* private */ var _activeMeshes: js.Any = js.native
+    /* private */ var _activeMeshes: Any = js.native
     
     /** @hidden */
     var _activeMeshesFrozen: Boolean = js.native
+    
+    var _activeMeshesFrozenButKeepClipping: Boolean = js.native
     
     /** @hidden */
     var _activeParticleSystems: SmartArray[IParticleSystem] = js.native
@@ -156,9 +162,9 @@ object sceneMod {
     /** @hidden */
     var _activeParticles: PerfCounter = js.native
     
-    /* private */ var _activeRequests: js.Any = js.native
+    /* private */ var _activeRequests: Any = js.native
     
-    /* private */ var _activeSkeletons: js.Any = js.native
+    /* private */ var _activeSkeletons: Any = js.native
     
     /**
       * @hidden
@@ -169,10 +175,10 @@ object sceneMod {
       */
     def _addComponent(component: ISceneComponent): Unit = js.native
     
-    /** @hidden */
-    def _addPendingData(data: js.Any): Unit = js.native
-    
-    /** @hidden */
+    /**
+      * @param step
+      * @hidden
+      */
     def _advancePhysicsEngineStep(step: Double): Unit = js.native
     
     /**
@@ -211,9 +217,9 @@ object sceneMod {
     /** @hidden */
     def _animate(): Unit = js.native
     
-    /* private */ var _animationPropertiesOverride: js.Any = js.native
+    /* private */ var _animationPropertiesOverride: Any = js.native
     
-    /* private */ var _animationRatio: js.Any = js.native
+    /* private */ var _animationRatio: Any = js.native
     
     /** @hidden */
     var _animationTime: Double = js.native
@@ -247,6 +253,12 @@ object sceneMod {
     
     /**
       * @hidden
+      * Defines the actions happening before clear the canvas.
+      */
+    var _beforeRenderTargetClearStage: Stage[RenderTargetStageAction] = js.native
+    
+    /**
+      * @hidden
       * Defines the actions happening just before a render target is drawing.
       */
     var _beforeRenderTargetDrawStage: Stage[RenderTargetStageAction] = js.native
@@ -263,12 +275,12 @@ object sceneMod {
       */
     var _beforeRenderingMeshStage: Stage[RenderingMeshStageAction] = js.native
     
-    /* private */ var _bindFrameBuffer: js.Any = js.native
+    /* private */ var _bindFrameBuffer: Any = js.native
     
     /** @hidden */
     var _blockEntityCollection: Boolean = js.native
     
-    /* private */ var _blockMaterialDirtyMechanism: js.Any = js.native
+    /* private */ var _blockMaterialDirtyMechanism: Any = js.native
     
     /** @hidden (Backing field) */
     var _boundingBoxRenderer: BoundingBoxRenderer = js.native
@@ -291,12 +303,22 @@ object sceneMod {
       */
     var _cameraDrawRenderTargetStage: Stage[CameraStageFrameBufferAction] = js.native
     
-    /* private */ var _checkIntersections: js.Any = js.native
+    /* private */ var _checkCameraRenderTarget: Any = js.native
     
-    /** @hidden */
+    /* private */ var _checkIntersections: Any = js.native
+    
+    /**
+      * @param checkRenderTargets
+      * @hidden
+      */
     def _checkIsReady(): Unit = js.native
+    def _checkIsReady(checkRenderTargets: Boolean): Unit = js.native
     
-    /* private */ var _collisionCoordinator: js.Any = js.native
+    /* private */ var _clear: Any = js.native
+    
+    /* private */ var _clearFrameBuffer: Any = js.native
+    
+    /* private */ var _collisionCoordinator: Any = js.native
     
     /**
       * @hidden
@@ -304,14 +326,16 @@ object sceneMod {
       */
     var _components: js.Array[ISceneComponent] = js.native
     
+    /* private */ var _computePressureObserver: Any = js.native
+    
     /** @hidden */
     def _createMultiviewUbo(): Unit = js.native
     
-    /* private */ var _createUbo: js.Any = js.native
+    /* private */ var _createUbo: Any = js.native
     
-    /* private */ var _currentInternalStep: js.Any = js.native
+    /* private */ var _currentInternalStep: Any = js.native
     
-    /* private */ var _currentStepId: js.Any = js.native
+    /* private */ var _currentStepId: Any = js.native
     
     /**
       * @hidden
@@ -319,26 +343,30 @@ object sceneMod {
       */
     var _debugLayer: DebugLayer = js.native
     
-    /* private */ var _defaultMaterial: js.Any = js.native
+    /* private */ var _defaultFrameBufferCleared: Any = js.native
     
-    /* private */ var _defaultMeshCandidates: js.Any = js.native
+    /* private */ var _defaultMaterial: Any = js.native
     
-    /* private */ var _defaultSubMeshCandidates: js.Any = js.native
+    /* private */ var _defaultMeshCandidates: Any = js.native
+    
+    /* private */ var _defaultSubMeshCandidates: Any = js.native
+    
+    /** @hidden (Backing field) */
+    var _depthPeelingRenderer: Nullable[DepthPeelingRenderer] = js.native
     
     /** @hidden (Backing field) */
     var _depthRenderer: StringDictionary[DepthRenderer] = js.native
     
+    /* private */ var _disposeList: Any = js.native
+    
     /** @hidden */
     var _edgeRenderLineShader: Nullable[ShaderMaterial] = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /** @hidden */
-    /* protected */ var _environmentIntensity: Double = js.native
+    /* private */ var _evaluateActiveMeshes: Any = js.native
     
-    /* private */ var _evaluateActiveMeshes: js.Any = js.native
-    
-    /* private */ var _evaluateSubMesh: js.Any = js.native
+    /* private */ var _evaluateSubMesh: Any = js.native
     
     /**
       * @hidden
@@ -346,27 +374,29 @@ object sceneMod {
       */
     var _evaluateSubMeshStage: Stage[EvaluateSubMeshStageAction] = js.native
     
-    /* private */ var _executeOnceBeforeRender: js.Any = js.native
+    /* private */ var _executeActiveContainerCleanup: Any = js.native
     
-    /* private */ var _executeWhenReadyTimeoutId: js.Any = js.native
+    /* private */ var _executeOnceBeforeRender: Any = js.native
     
-    /* private */ var _externalData: js.Any = js.native
+    /* private */ var _executeWhenReadyTimeoutId: Any = js.native
     
-    /* private */ var _fogEnabled: js.Any = js.native
+    /* private */ var _externalData: Any = js.native
     
-    /* private */ var _fogMode: js.Any = js.native
+    /* private */ var _fogEnabled: Any = js.native
     
-    /* private */ var _forcePointsCloud: js.Any = js.native
+    /* private */ var _fogMode: Any = js.native
+    
+    /* private */ var _forcePointsCloud: Any = js.native
     
     /** @hidden (Backing field) */
     var _forceShowBoundingBoxes: Boolean = js.native
     
-    /* private */ var _forceWireframe: js.Any = js.native
+    /* private */ var _forceWireframe: Any = js.native
     
     /** @hidden */
     var _forcedViewPosition: Nullable[Vector3] = js.native
     
-    /* private */ var _frameId: js.Any = js.native
+    /* private */ var _frameId: Any = js.native
     
     /** @hidden */
     var _frustumPlanes: js.Array[Plane] = js.native
@@ -386,10 +416,15 @@ object sceneMod {
       */
     var _gatherRenderTargetsStage: Stage[RenderTargetsStageAction] = js.native
     
+    /**
+      * an optional map from Geometry Id to Geometry index in the 'geometries' array
+      */
+    /* private */ var _geometriesByUniqueId: Any = js.native
+    
     /** @hidden (Backing field) */
     var _geometryBufferRenderer: Nullable[GeometryBufferRenderer] = js.native
     
-    /* private */ var _getByTags: js.Any = js.native
+    /* private */ var _getByTags: Any = js.native
     
     /**
       * @hidden
@@ -405,11 +440,12 @@ object sceneMod {
     def _getDefaultMeshCandidates(): ISmartArrayLike[AbstractMesh] = js.native
     
     /**
+      * @param mesh
       * @hidden
       */
     def _getDefaultSubMeshCandidates(mesh: AbstractMesh): ISmartArrayLike[SubMesh] = js.native
     
-    /* private */ var _getGeometryByUniqueID: js.Any = js.native
+    /* private */ var _getGeometryByUniqueId: Any = js.native
     
     /** @hidden */
     /* protected */ var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
@@ -417,21 +453,21 @@ object sceneMod {
     /** @hidden */
     var _inputManager: InputManager = js.native
     
-    /* private */ var _intermediateRendering: js.Any = js.native
+    /* private */ var _intermediateRendering: Any = js.native
     
     /** @hidden */
-    def _internalMultiPick(rayFunction: js.Function1[/* world */ Matrix, Ray]): Nullable[js.Array[PickingInfo]] = js.native
+    def _internalMultiPick(rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray]): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]
     ): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[js.Array[PickingInfo]] = js.native
@@ -443,92 +479,96 @@ object sceneMod {
     def _internalMultiPickSprites(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
     
     /** @hidden */
-    def _internalPick(rayFunction: js.Function1[/* world */ Matrix, Ray]): Nullable[PickingInfo] = js.native
+    def _internalPick(rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray]): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Unit,
       onlyBoundingInfo: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
-    def _internalPick(rayFunction: js.Function1[/* world */ Matrix, Ray], predicate: Unit, fastCheck: Boolean): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
+      predicate: Unit,
+      fastCheck: Boolean
+    ): Nullable[PickingInfo] = js.native
+    def _internalPick(
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
     def _internalPick(
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       predicate: Unit,
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
@@ -538,20 +578,20 @@ object sceneMod {
     /** @hidden */
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Boolean
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Boolean,
@@ -559,7 +599,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Boolean,
@@ -569,7 +609,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Boolean,
@@ -578,7 +618,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Boolean,
@@ -588,7 +628,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Boolean,
@@ -598,7 +638,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Boolean,
@@ -607,7 +647,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Boolean,
@@ -617,7 +657,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Unit,
@@ -625,7 +665,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Unit,
@@ -635,7 +675,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Unit,
@@ -644,7 +684,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Unit,
@@ -654,7 +694,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Unit,
@@ -664,7 +704,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Unit,
@@ -673,7 +713,7 @@ object sceneMod {
     ): Nullable[PickingInfo] = js.native
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
-      rayFunction: js.Function1[/* world */ Matrix, Ray],
+      rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
       mesh: AbstractMesh,
       world: Matrix,
       fastCheck: Unit,
@@ -697,7 +737,7 @@ object sceneMod {
     def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
     def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     /** @hidden */
     def _isInIntermediateRendering(): Boolean = js.native
@@ -711,174 +751,194 @@ object sceneMod {
     /** @hidden */
     val _isScene: Boolean = js.native
     
-    /* private */ var _lightsEnabled: js.Any = js.native
+    /* private */ var _lightsEnabled: Any = js.native
     
-    /** @hidden */
+    /**
+      * @param fileOrUrl
+      * @param onSuccess
+      * @param onProgress
+      * @param useOfflineSupport
+      * @param useArrayBuffer
+      * @param onError
+      * @param onOpened
+      * @hidden
+      */
     def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
+      fileOrUrl: File | String,
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* responseURL */ js.UndefOr[String], 
           Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Unit,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Unit,
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Unit,
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
-      useOfflineSupport: Unit,
-      useArrayBuffer: Unit,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: Unit,
-      useOfflineSupport: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: Unit,
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: Unit,
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: Unit,
-      useOfflineSupport: Boolean,
-      useArrayBuffer: Unit,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: Unit,
-      useOfflineSupport: Unit,
-      useArrayBuffer: Boolean
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: Unit,
-      useOfflineSupport: Unit,
-      useArrayBuffer: Boolean,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
-    ): IFileRequest = js.native
-    def _loadFile(
-      url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-      onProgress: Unit,
-      useOfflineSupport: Unit,
-      useArrayBuffer: Unit,
-      onError: js.Function2[
-          /* request */ js.UndefOr[WebRequest], 
-          /* exception */ js.UndefOr[LoadFileError], 
-          Unit
-        ]
+        ],
+      onProgress: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]],
+      useOfflineSupport: js.UndefOr[Boolean],
+      useArrayBuffer: js.UndefOr[Boolean],
+      onError: js.UndefOr[
+          js.Function2[
+            /* request */ js.UndefOr[WebRequest], 
+            /* exception */ js.UndefOr[LoadFileError], 
+            Unit
+          ]
+        ],
+      onOpened: js.UndefOr[js.Function1[/* request */ WebRequest, Unit]]
     ): IFileRequest = js.native
     
-    /** @hidden */
-    def _loadFileAsync(url: String): js.Promise[String | ArrayBuffer] = js.native
-    def _loadFileAsync(url: String, onProgress: js.Function1[/* data */ js.Any, Unit]): js.Promise[String | ArrayBuffer] = js.native
-    def _loadFileAsync(url: String, onProgress: js.Function1[/* data */ js.Any, Unit], useOfflineSupport: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: String): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: String, onProgress: js.Function1[/* data */ Any, Unit]): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: String, onProgress: js.Function1[/* data */ Any, Unit], useOfflineSupport: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _loadFileAsync(
-      url: String,
-      onProgress: js.Function1[/* data */ js.Any, Unit],
+      fileOrUrl: String,
+      onProgress: js.Function1[/* data */ Any, Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _loadFileAsync(
-      url: String,
-      onProgress: js.Function1[/* data */ js.Any, Unit],
+      fileOrUrl: String,
+      onProgress: js.Function1[/* data */ Any, Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: String,
+      onProgress: js.Function1[/* data */ Any, Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: String,
+      onProgress: js.Function1[/* data */ Any, Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _loadFileAsync(url: String, onProgress: Unit, useOfflineSupport: Boolean): js.Promise[String | ArrayBuffer] = js.native
-    def _loadFileAsync(url: String, onProgress: Unit, useOfflineSupport: Boolean, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
-    def _loadFileAsync(url: String, onProgress: Unit, useOfflineSupport: Unit, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: String,
+      onProgress: js.Function1[/* data */ Any, Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: String,
+      onProgress: js.Function1[/* data */ Any, Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: String, onProgress: Unit, useOfflineSupport: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: String, onProgress: Unit, useOfflineSupport: Boolean, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: String,
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: String,
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: String, onProgress: Unit, useOfflineSupport: Unit, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: String,
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: String,
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    /**
+      * @param fileOrUrl
+      * @param onProgress
+      * @param useOfflineSupport
+      * @param useArrayBuffer
+      * @param onOpened
+      * @hidden
+      */
+    def _loadFileAsync(fileOrUrl: File): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: File, onProgress: js.Function1[/* data */ Any, Unit]): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: File, onProgress: js.Function1[/* data */ Any, Unit], useOfflineSupport: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: File,
+      onProgress: js.Function1[/* data */ Any, Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: File,
+      onProgress: js.Function1[/* data */ Any, Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: File,
+      onProgress: js.Function1[/* data */ Any, Unit],
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: File,
+      onProgress: js.Function1[/* data */ Any, Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: File,
+      onProgress: js.Function1[/* data */ Any, Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: File,
+      onProgress: js.Function1[/* data */ Any, Unit],
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: File, onProgress: Unit, useOfflineSupport: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: File, onProgress: Unit, useOfflineSupport: Boolean, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: File,
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: File,
+      onProgress: Unit,
+      useOfflineSupport: Boolean,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(fileOrUrl: File, onProgress: Unit, useOfflineSupport: Unit, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: File,
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Boolean,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _loadFileAsync(
+      fileOrUrl: File,
+      onProgress: Unit,
+      useOfflineSupport: Unit,
+      useArrayBuffer: Unit,
+      onOpened: js.Function1[/* request */ WebRequest, Unit]
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     
     /**
       * @hidden
@@ -886,7 +946,9 @@ object sceneMod {
       */
     var _mainSoundTrack: SoundTrack = js.native
     
-    /* private */ var _meshesForIntersections: js.Any = js.native
+    /* private */ var _materialsRenderTargets: Any = js.native
+    
+    /* private */ var _meshesForIntersections: Any = js.native
     
     /** @hidden */
     var _mirroredCameraPosition: Nullable[Vector3] = js.native
@@ -894,21 +956,29 @@ object sceneMod {
     /** @hidden */
     var _multiviewSceneUbo: Nullable[UniformBuffer] = js.native
     
-    /* private */ var _onAfterCameraRenderObserver: js.Any = js.native
+    /* private */ var _onAfterCameraRenderObserver: Any = js.native
     
-    /* private */ var _onAfterRenderObserver: js.Any = js.native
+    /* private */ var _onAfterRenderObserver: Any = js.native
     
-    /* private */ var _onBeforeCameraRenderObserver: js.Any = js.native
+    /* private */ var _onBeforeCameraRenderObserver: Any = js.native
     
-    /* private */ var _onBeforeRenderObserver: js.Any = js.native
+    /* private */ var _onBeforeRenderObserver: Any = js.native
     
-    /* private */ var _onDisposeObserver: js.Any = js.native
+    /* private */ var _onDisposeObserver: Any = js.native
     
     /** @hidden */
     var _outlineRenderer: OutlineRenderer = js.native
     
     /** @hidden */
-    var _pendingData: js.Array[js.Any] = js.native
+    var _pendingData: js.Array[Any] = js.native
+    
+    /**
+      * Internal perfCollector instance used for sharing between inspector and playground.
+      * Marked as protected to allow sharing between prototype extensions, but disallow access at toplevel.
+      */
+    /* protected */ var _perfCollector: Nullable[PerformanceViewerCollector] = js.native
+    
+    /* private */ var _performancePriority: Any = js.native
     
     /** @hidden (Backing field) */
     var _physicsEngine: Nullable[IPhysicsEngine] = js.native
@@ -952,82 +1022,95 @@ object sceneMod {
       */
     var _preActiveMeshStage: Stage[PreActiveMeshStageAction] = js.native
     
-    /* private */ var _preventFreeActiveMeshesAndRenderingGroups: js.Any = js.native
+    /* private */ var _preventFreeActiveMeshesAndRenderingGroups: Any = js.native
     
     /** @hidden */
     def _processLateAnimationBindings(): Unit = js.native
     
     /** @hidden */
-    def _processLateAnimationBindingsForMatrices(holder: AdditiveAnimations): js.Any = js.native
+    def _processLateAnimationBindingsForMatrices(holder: AdditiveAnimations): Any = js.native
     
     /** @hidden */
     def _processLateAnimationBindingsForQuaternions(holder: Animations, refQuaternion: Quaternion): Quaternion = js.native
     
-    /* private */ var _processSubCameras: js.Any = js.native
+    /* private */ var _processSubCameras: Any = js.native
     
-    /* private */ var _processedMaterials: js.Any = js.native
-    
-    /* private */ var _projectionMatrix: js.Any = js.native
-    
-    /* private */ var _projectionUpdateFlag: js.Any = js.native
+    /* private */ var _processedMaterials: Any = js.native
     
     /** @hidden */
-    def _readFile(file: File, onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit]): IFileRequest = js.native
+    var _projectionMatrix: Matrix = js.native
+    
+    /* private */ var _projectionUpdateFlag: Any = js.native
+    
+    /**
+      * @param file
+      * @param onSuccess
+      * @param onProgress
+      * @param useArrayBuffer
+      * @param onError
+      * @hidden
+      */
+    def _readFile(file: File, onSuccess: js.Function1[/* data */ String | js.typedarray.ArrayBuffer, Unit]): IFileRequest = js.native
     def _readFile(
       file: File,
-      onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any]
+      onSuccess: js.Function1[/* data */ String | js.typedarray.ArrayBuffer, Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any]
     ): IFileRequest = js.native
     def _readFile(
       file: File,
-      onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
+      onSuccess: js.Function1[/* data */ String | js.typedarray.ArrayBuffer, Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _readFile(
       file: File,
-      onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
+      onSuccess: js.Function1[/* data */ String | js.typedarray.ArrayBuffer, Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
       useArrayBuffer: Boolean,
       onError: js.Function1[/* error */ ReadFileError, Unit]
     ): IFileRequest = js.native
     def _readFile(
       file: File,
-      onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
+      onSuccess: js.Function1[/* data */ String | js.typedarray.ArrayBuffer, Unit],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
       useArrayBuffer: Unit,
       onError: js.Function1[/* error */ ReadFileError, Unit]
     ): IFileRequest = js.native
     def _readFile(
       file: File,
-      onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
+      onSuccess: js.Function1[/* data */ String | js.typedarray.ArrayBuffer, Unit],
       onProgress: Unit,
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _readFile(
       file: File,
-      onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
+      onSuccess: js.Function1[/* data */ String | js.typedarray.ArrayBuffer, Unit],
       onProgress: Unit,
       useArrayBuffer: Boolean,
       onError: js.Function1[/* error */ ReadFileError, Unit]
     ): IFileRequest = js.native
     def _readFile(
       file: File,
-      onSuccess: js.Function1[/* data */ String | ArrayBuffer, Unit],
+      onSuccess: js.Function1[/* data */ String | js.typedarray.ArrayBuffer, Unit],
       onProgress: Unit,
       useArrayBuffer: Unit,
       onError: js.Function1[/* error */ ReadFileError, Unit]
     ): IFileRequest = js.native
     
-    /** @hidden */
-    def _readFileAsync(file: File): js.Promise[String | ArrayBuffer] = js.native
-    def _readFileAsync(file: File, onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any]): js.Promise[String | ArrayBuffer] = js.native
+    /**
+      * @param file
+      * @param onProgress
+      * @param useArrayBuffer
+      * @hidden
+      */
+    def _readFileAsync(file: File): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _readFileAsync(file: File, onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any]): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _readFileAsync(
       file: File,
-      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
+      onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
       useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _readFileAsync(file: File, onProgress: Unit, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _readFileAsync(file: File, onProgress: Unit, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     
     /** @hidden */
     def _rebuildGeometries(): Unit = js.native
@@ -1036,58 +1119,91 @@ object sceneMod {
     def _rebuildTextures(): Unit = js.native
     
     /** @hidden */
-    def _registerTargetForLateAnimationBinding(runtimeAnimation: RuntimeAnimation, originalValue: js.Any): Unit = js.native
+    def _registerTargetForLateAnimationBinding(runtimeAnimation: RuntimeAnimation, originalValue: Any): Unit = js.native
     
     /**
       * Registers the transient components if needed.
       */
-    /* private */ var _registerTransientComponents: js.Any = js.native
+    /* private */ var _registerTransientComponents: Any = js.native
     
     /** @hidden */
-    var _registeredForLateAnimationBindings: SmartArrayNoDuplicate[js.Any] = js.native
+    var _registeredForLateAnimationBindings: SmartArrayNoDuplicate[Any] = js.native
     
-    /** @hidden */
-    def _removePendingData(data: js.Any): Unit = js.native
-    
-    /** @hidden */
+    /**
+      * @param camera
+      * @param rigParent
+      * @param bindFrameBuffer
+      * @hidden
+      */
     def _renderForCamera(camera: Camera): Unit = js.native
+    def _renderForCamera(camera: Camera, rigParent: Unit, bindFrameBuffer: Boolean): Unit = js.native
     def _renderForCamera(camera: Camera, rigParent: Camera): Unit = js.native
+    def _renderForCamera(camera: Camera, rigParent: Camera, bindFrameBuffer: Boolean): Unit = js.native
     
-    /* private */ var _renderId: js.Any = js.native
+    /* private */ var _renderId: Any = js.native
     
     /** @hidden */
     def _renderMultiviewToSingleView(camera: Camera): Unit = js.native
     
-    /* private */ var _renderTargets: js.Any = js.native
+    /* private */ var _renderTargets: Any = js.native
     
-    /* private */ var _renderingManager: js.Any = js.native
+    /* private */ var _renderingManager: Any = js.native
     
-    /** @hidden */
+    /**
+      * @param url
+      * @param onSuccess
+      * @param onProgress
+      * @param useOfflineSupport
+      * @param useArrayBuffer
+      * @param onError
+      * @param onOpened
+      * @hidden
+      */
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit]
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ]
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
@@ -1095,7 +1211,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
@@ -1104,7 +1224,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
@@ -1113,7 +1237,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Unit,
@@ -1121,7 +1249,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Unit,
@@ -1130,7 +1262,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Unit,
@@ -1139,14 +1275,22 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean,
@@ -1154,7 +1298,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean,
@@ -1163,7 +1311,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean,
@@ -1172,7 +1324,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Unit,
@@ -1180,7 +1336,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Unit,
@@ -1189,7 +1349,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Unit,
@@ -1198,20 +1362,32 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Boolean
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
@@ -1219,7 +1395,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
@@ -1228,7 +1408,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
@@ -1237,7 +1421,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Boolean,
       useArrayBuffer: Unit,
@@ -1245,7 +1433,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Boolean,
       useArrayBuffer: Unit,
@@ -1254,7 +1446,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Boolean,
       useArrayBuffer: Unit,
@@ -1263,14 +1459,22 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean,
@@ -1278,7 +1482,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean,
@@ -1287,7 +1495,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean,
@@ -1296,7 +1508,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Unit,
       useArrayBuffer: Unit,
@@ -1304,7 +1520,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Unit,
       useArrayBuffer: Unit,
@@ -1313,7 +1533,11 @@ object sceneMod {
     ): IFileRequest = js.native
     def _requestFile(
       url: String,
-      onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* request */ js.UndefOr[WebRequest], Unit],
+      onSuccess: js.Function2[
+          /* data */ String | js.typedarray.ArrayBuffer, 
+          /* request */ js.UndefOr[WebRequest], 
+          Unit
+        ],
       onProgress: Unit,
       useOfflineSupport: Unit,
       useArrayBuffer: Unit,
@@ -1321,87 +1545,94 @@ object sceneMod {
       onOpened: js.Function1[/* request */ WebRequest, Unit]
     ): IFileRequest = js.native
     
-    /** @hidden */
-    def _requestFileAsync(url: String): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(url: String, onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]): js.Promise[String | ArrayBuffer] = js.native
+    /**
+      * @param url
+      * @param onProgress
+      * @param useOfflineSupport
+      * @param useArrayBuffer
+      * @param onOpened
+      * @hidden
+      */
+    def _requestFileAsync(url: String): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _requestFileAsync(url: String, onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
       onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Boolean,
       useArrayBuffer: Unit,
       onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean
-    ): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean,
       onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit],
       useOfflineSupport: Unit,
       useArrayBuffer: Unit,
       onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(url: String, onProgress: Unit, useOfflineSupport: Boolean): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(url: String, onProgress: Unit, useOfflineSupport: Boolean, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _requestFileAsync(url: String, onProgress: Unit, useOfflineSupport: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _requestFileAsync(url: String, onProgress: Unit, useOfflineSupport: Boolean, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: Unit,
       useOfflineSupport: Boolean,
       useArrayBuffer: Boolean,
       onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: Unit,
       useOfflineSupport: Boolean,
       useArrayBuffer: Unit,
       onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
-    def _requestFileAsync(url: String, onProgress: Unit, useOfflineSupport: Unit, useArrayBuffer: Boolean): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
+    def _requestFileAsync(url: String, onProgress: Unit, useOfflineSupport: Unit, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: Unit,
       useOfflineSupport: Unit,
       useArrayBuffer: Boolean,
       onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(
       url: String,
       onProgress: Unit,
       useOfflineSupport: Unit,
       useArrayBuffer: Unit,
       onOpened: js.Function1[/* request */ WebRequest, Unit]
-    ): js.Promise[String | ArrayBuffer] = js.native
+    ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     
-    /* private */ var _sceneUbo: js.Any = js.native
+    /* private */ var _sceneUbo: Any = js.native
     
     /**
       * @hidden
@@ -1415,18 +1646,18 @@ object sceneMod {
       */
     var _serializableComponents: js.Array[ISceneSerializableComponent] = js.native
     
-    /* private */ var _shadowsEnabled: js.Any = js.native
+    /* private */ var _shadowsEnabled: Any = js.native
     
     /** @hidden (Backing field) */
     var _simplificationQueue: SimplificationQueue = js.native
     
-    /* private */ var _skeletonsEnabled: js.Any = js.native
+    /* private */ var _skeletonsEnabled: Any = js.native
     
-    /* private */ var _skipEvaluateActiveMeshesCompletely: js.Any = js.native
+    /* private */ var _skipEvaluateActiveMeshesCompletely: Any = js.native
     
-    /* private */ var _skipFrustumClipping: js.Any = js.native
+    /* private */ var _skipFrustumClipping: Any = js.native
     
-    /* private */ var _softwareSkinnedMeshes: js.Any = js.native
+    /* private */ var _softwareSkinnedMeshes: Any = js.native
     
     /** @hidden */
     var _tempPickingRay: Nullable[Ray] = js.native
@@ -1434,16 +1665,16 @@ object sceneMod {
     /** @hidden */
     var _tempSpritePickingRay: Nullable[Ray] = js.native
     
-    /* private */ var _texturesEnabled: js.Any = js.native
+    /* private */ var _texturesEnabled: Any = js.native
     
-    /* private */ var _timeAccumulator: js.Any = js.native
+    /* private */ var _timeAccumulator: Any = js.native
     
     /** @hidden */
     var _toBeDisposed: js.Array[Nullable[IDisposable]] = js.native
     
-    /* private */ var _totalVertices: js.Any = js.native
+    /* private */ var _totalVertices: Any = js.native
     
-    /* private */ var _transformMatrix: js.Any = js.native
+    /* private */ var _transformMatrix: Any = js.native
     
     /** @hidden */
     var _transformMatrixR: Matrix = js.native
@@ -1451,9 +1682,11 @@ object sceneMod {
     /**
       * List of components to register on the next registration step.
       */
-    /* private */ var _transientComponents: js.Any = js.native
+    /* private */ var _transientComponents: Any = js.native
     
-    /* private */ var _uid: js.Any = js.native
+    /* private */ var _uid: Any = js.native
+    
+    /* private */ var _unObserveActiveCameras: Any = js.native
     
     /** @hidden */
     def _updateMultiviewUbo(): Unit = js.native
@@ -1461,12 +1694,15 @@ object sceneMod {
     def _updateMultiviewUbo(viewR: Matrix): Unit = js.native
     def _updateMultiviewUbo(viewR: Matrix, projectionR: Matrix): Unit = js.native
     
-    /* private */ var _useRightHandedSystem: js.Any = js.native
+    /** @hidden */
+    var _useOrderIndependentTransparency: Boolean = js.native
+    
+    /* private */ var _useRightHandedSystem: Any = js.native
     
     /** @hidden */
     var _viewMatrix: Matrix = js.native
     
-    /* private */ var _viewUpdateFlag: js.Any = js.native
+    /* private */ var _viewUpdateFlag: Any = js.native
     
     /**
       * Gets or sets the action manager associated with the scene
@@ -1485,7 +1721,8 @@ object sceneMod {
     def activeCamera_=(value: Nullable[Camera]): Unit = js.native
     
     /** All of the active cameras added to this scene. */
-    var activeCameras: Nullable[js.Array[Camera]] = js.native
+    def activeCameras: Nullable[js.Array[Camera]] = js.native
+    def activeCameras_=(cameras: Nullable[js.Array[Camera]]): Unit = js.native
     
     /**
       * Gets the performance counter for active particles
@@ -1495,6 +1732,7 @@ object sceneMod {
     
     /**
       * Adds the given action manager to this scene
+      * @deprecated
       * @param newActionManager The action manager to add
       */
     def addActionManager(newActionManager: AbstractActionManager): Unit = js.native
@@ -1518,14 +1756,14 @@ object sceneMod {
     def addCamera(newCamera: Camera): Unit = js.native
     
     /**
-      * Add an externaly attached data from its key.
+      * Add an externally attached data from its key.
       * This method call will fail and return false, if such key already exists.
       * If you don't care and just want to get the data no matter what, use the more convenient getOrAddExternalDataWithFactory() method.
       * @param key the unique key that identifies the data
       * @param data the data object to associate to the key for this Engine instance
-      * @return true if no such key were already present and the data was added successfully, false otherwise
+      * @returns true if no such key were already present and the data was added successfully, false otherwise
       */
-    def addExternalData[T](key: String, data: T): Boolean = js.native
+    def addExternalData[T /* <: js.Object */](key: String, data: T): Boolean = js.native
     
     /**
       * Adds the given geometry to this scene
@@ -1570,6 +1808,12 @@ object sceneMod {
       * @param newParticleSystem The particle system to add
       */
     def addParticleSystem(newParticleSystem: IParticleSystem): Unit = js.native
+    
+    /**
+      * This function can help adding any object to the list of data awaited to be ready in order to check for a complete scene loading.
+      * @param data defines the object to wait for
+      */
+    def addPendingData(data: Any): Unit = js.native
     
     /**
       * Adds the given skeleton to this scene
@@ -1689,7 +1933,7 @@ object sceneMod {
       * @returns the animatable object created for this animation
       */
     def beginAnimation(
-      target: js.Any,
+      target: Any,
       from: Double,
       to: Double,
       loop: js.UndefOr[Boolean],
@@ -1697,7 +1941,7 @@ object sceneMod {
       onAnimationEnd: js.UndefOr[js.Function0[Unit]],
       animatable: js.UndefOr[Animatable],
       stopCurrent: js.UndefOr[Boolean],
-      targetMask: js.UndefOr[js.Function1[/* target */ js.Any, Boolean]],
+      targetMask: js.UndefOr[js.Function1[/* target */ Any, Boolean]],
       onAnimationLoop: js.UndefOr[js.Function0[Unit]],
       isAdditive: js.UndefOr[Boolean]
     ): Animatable = js.native
@@ -1715,10 +1959,10 @@ object sceneMod {
       * @param isAdditive defines whether the animation should be evaluated additively (false by default)
       * @returns the list of created animatables
       */
-    def beginDirectAnimation(target: js.Any, animations: js.Array[Animation], from: Double, to: Double): Animatable = js.native
-    def beginDirectAnimation(target: js.Any, animations: js.Array[Animation], from: Double, to: Double, loop: Boolean): Animatable = js.native
+    def beginDirectAnimation(target: Any, animations: js.Array[Animation], from: Double, to: Double): Animatable = js.native
+    def beginDirectAnimation(target: Any, animations: js.Array[Animation], from: Double, to: Double, loop: Boolean): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1726,7 +1970,7 @@ object sceneMod {
       speedRatio: Double
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1735,7 +1979,7 @@ object sceneMod {
       onAnimationEnd: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1745,7 +1989,7 @@ object sceneMod {
       onAnimationLoop: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1756,7 +2000,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1767,7 +2011,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1777,7 +2021,7 @@ object sceneMod {
       onAnimationLoop: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1788,7 +2032,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1799,7 +2043,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1808,7 +2052,7 @@ object sceneMod {
       onAnimationEnd: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1818,7 +2062,7 @@ object sceneMod {
       onAnimationLoop: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1829,7 +2073,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1840,7 +2084,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1850,7 +2094,7 @@ object sceneMod {
       onAnimationLoop: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1861,7 +2105,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1872,7 +2116,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1880,7 +2124,7 @@ object sceneMod {
       speedRatio: Double
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1889,7 +2133,7 @@ object sceneMod {
       onAnimationEnd: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1899,7 +2143,7 @@ object sceneMod {
       onAnimationLoop: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1910,7 +2154,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1921,7 +2165,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1931,7 +2175,7 @@ object sceneMod {
       onAnimationLoop: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1942,7 +2186,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1953,7 +2197,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1962,7 +2206,7 @@ object sceneMod {
       onAnimationEnd: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1972,7 +2216,7 @@ object sceneMod {
       onAnimationLoop: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1983,7 +2227,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -1994,7 +2238,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -2004,7 +2248,7 @@ object sceneMod {
       onAnimationLoop: js.Function0[Unit]
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -2015,7 +2259,7 @@ object sceneMod {
       isAdditive: Boolean
     ): Animatable = js.native
     def beginDirectAnimation(
-      target: js.Any,
+      target: Any,
       animations: js.Array[Animation],
       from: Double,
       to: Double,
@@ -2411,7 +2655,7 @@ object sceneMod {
       * @returns the list of created animatables
       */
     def beginHierarchyAnimation(
-      target: js.Any,
+      target: Any,
       directDescendantsOnly: Boolean,
       from: Double,
       to: Double,
@@ -2420,7 +2664,7 @@ object sceneMod {
       onAnimationEnd: js.UndefOr[js.Function0[Unit]],
       animatable: js.UndefOr[Animatable],
       stopCurrent: js.UndefOr[Boolean],
-      targetMask: js.UndefOr[js.Function1[/* target */ js.Any, Boolean]],
+      targetMask: js.UndefOr[js.Function1[/* target */ Any, Boolean]],
       onAnimationLoop: js.UndefOr[js.Function0[Unit]],
       isAdditive: js.UndefOr[Boolean]
     ): js.Array[Animatable] = js.native
@@ -2441,7 +2685,7 @@ object sceneMod {
       * @returns the animatable object created for this animation
       */
     def beginWeightedAnimation(
-      target: js.Any,
+      target: Any,
       from: Double,
       to: Double,
       weight: Double,
@@ -2449,10 +2693,22 @@ object sceneMod {
       speedRatio: js.UndefOr[Double],
       onAnimationEnd: js.UndefOr[js.Function0[Unit]],
       animatable: js.UndefOr[Animatable],
-      targetMask: js.UndefOr[js.Function1[/* target */ js.Any, Boolean]],
+      targetMask: js.UndefOr[js.Function1[/* target */ Any, Boolean]],
       onAnimationLoop: js.UndefOr[js.Function0[Unit]],
       isAdditive: js.UndefOr[Boolean]
     ): Animatable = js.native
+    
+    /**
+      * Bind the current view position to an effect.
+      * @param effect The effect to be bound
+      * @param variableName name of the shader variable that will hold the eye position
+      * @param isVector3 true to indicates that variableName is a Vector3 and not a Vector4
+      * @returns the computed eye position
+      */
+    def bindEyePosition(effect: Nullable[Effect]): Vector4 = js.native
+    def bindEyePosition(effect: Nullable[Effect], variableName: String): Vector4 = js.native
+    def bindEyePosition(effect: Nullable[Effect], variableName: String, isVector3: Boolean): Vector4 = js.native
+    def bindEyePosition(effect: Nullable[Effect], variableName: Unit, isVector3: Boolean): Vector4 = js.native
     
     /** Gets or sets a boolean blocking all the calls to markAllMaterialsAsDirty (ie. the materials won't be updated if they are out of sync) */
     def blockMaterialDirtyMechanism: Boolean = js.native
@@ -2461,7 +2717,7 @@ object sceneMod {
     /** Gets or sets a boolean blocking all the calls to freeActiveMeshes and freeRenderingGroups
       * It can be used in order to prevent going through methods freeRenderingGroups and freeActiveMeshes several times to improve performance
       * when disposing several meshes in a row or a hierarchy of meshes.
-      * When used, it is the responsability of the user to blockfreeActiveMeshesAndRenderingGroups back to false.
+      * When used, it is the responsibility of the user to blockfreeActiveMeshesAndRenderingGroups back to false.
       */
     def blockfreeActiveMeshesAndRenderingGroups: Boolean = js.native
     def blockfreeActiveMeshesAndRenderingGroups_=(value: Boolean): Unit = js.native
@@ -2586,7 +2842,7 @@ object sceneMod {
     
     /**
       * Creates a default camera and a default light.
-      * @see https://doc.babylonjs.com/how_to/Fast_Build#create-default-camera-or-light
+      * @see https://doc.babylonjs.com/divingDeeper/scene/fastBuildWorld#create-default-camera-or-light
       * @param createArcRotateCamera has the default false which creates a free camera, when true creates an arc rotate camera
       * @param replace has the default false, when true replaces the active camera/light in the scene
       * @param attachCameraControls has the default false, when true attaches camera controls to the canvas.
@@ -2619,7 +2875,7 @@ object sceneMod {
     
     /**
       * Creates a new sky box
-      * @see https://doc.babylonjs.com/how_to/Fast_Build#create-default-skybox
+      * @see https://doc.babylonjs.com/divingDeeper/scene/fastBuildWorld#create-default-skybox
       * @param environmentTexture defines the texture to use as environment texture
       * @param pbr has default false which requires the StandardMaterial to be used, when true PBRMaterial must be used
       * @param scale defines the overall scale of the skybox
@@ -2704,8 +2960,9 @@ object sceneMod {
     
     /**
       * Creates a new VREXperienceHelper
-      * @see https://doc.babylonjs.com/how_to/webvr_helper
+      * @see https://doc.babylonjs.com/divingDeeper/cameras/webVRHelper
       * @param webVROptions defines the options used to create the new VREXperienceHelper
+      * @deprecated Please use createDefaultXRExperienceAsync instead
       * @returns a new VREXperienceHelper
       */
     def createDefaultVRExperience(): VRExperienceHelper = js.native
@@ -2717,6 +2974,7 @@ object sceneMod {
       * @param options experience options
       * @returns a promise for a new WebXRDefaultExperience
       */
+    def createDefaultXRExperienceAsync(): js.Promise[WebXRDefaultExperience] = js.native
     def createDefaultXRExperienceAsync(options: WebXRDefaultExperienceOptions): js.Promise[WebXRDefaultExperience] = js.native
     
     /**
@@ -2740,8 +2998,8 @@ object sceneMod {
       * @param cameraViewSpace defines if picking will be done in view space (false by default)
       * @returns a Ray
       */
-    def createPickingRay(x: Double, y: Double, world: Matrix, camera: Nullable[Camera]): Ray = js.native
-    def createPickingRay(x: Double, y: Double, world: Matrix, camera: Nullable[Camera], cameraViewSpace: Boolean): Ray = js.native
+    def createPickingRay(x: Double, y: Double, world: Nullable[Matrix], camera: Nullable[Camera]): Ray = js.native
+    def createPickingRay(x: Double, y: Double, world: Nullable[Matrix], camera: Nullable[Camera], cameraViewSpace: Boolean): Ray = js.native
     
     /**
       * Creates a ray that can be used to pick in the scene
@@ -2772,17 +3030,44 @@ object sceneMod {
       * @param result defines the ray where to store the picking ray
       * @param camera defines the camera to use for the picking
       * @param cameraViewSpace defines if picking will be done in view space (false by default)
+      * @param enableDistantPicking defines if picking should handle large values for mesh position/scaling (false by default)
       * @returns the current scene
       */
-    def createPickingRayToRef(x: Double, y: Double, world: Matrix, result: Ray, camera: Nullable[Camera]): Scene = js.native
+    def createPickingRayToRef(x: Double, y: Double, world: Nullable[Matrix], result: Ray, camera: Nullable[Camera]): Scene = js.native
     def createPickingRayToRef(
       x: Double,
       y: Double,
-      world: Matrix,
+      world: Nullable[Matrix],
       result: Ray,
       camera: Nullable[Camera],
       cameraViewSpace: Boolean
     ): Scene = js.native
+    def createPickingRayToRef(
+      x: Double,
+      y: Double,
+      world: Nullable[Matrix],
+      result: Ray,
+      camera: Nullable[Camera],
+      cameraViewSpace: Boolean,
+      enableDistantPicking: Boolean
+    ): Scene = js.native
+    def createPickingRayToRef(
+      x: Double,
+      y: Double,
+      world: Nullable[Matrix],
+      result: Ray,
+      camera: Nullable[Camera],
+      cameraViewSpace: Unit,
+      enableDistantPicking: Boolean
+    ): Scene = js.native
+    
+    /**
+      * Creates a scene UBO
+      * @param name name of the uniform buffer (optional, for debugging purpose only)
+      * @returns a new ubo
+      */
+    def createSceneUniformBuffer(): UniformBuffer = js.native
+    def createSceneUniformBuffer(name: String): UniformBuffer = js.native
     
     /**
       * Gets or sets a user defined funtion to select LOD from a mesh and a camera.
@@ -2815,12 +3100,17 @@ object sceneMod {
       * Deletes a physics compound impostor
       * @param compound defines the compound to delete
       */
-    def deleteCompoundImpostor(compound: js.Any): Unit = js.native
+    def deleteCompoundImpostor(compound: Any): Unit = js.native
     
     /**
       * Gets the current delta time used by animation engine
       */
     var deltaTime: Double = js.native
+    
+    /**
+      * The depth peeling renderer
+      */
+    var depthPeelingRenderer: Nullable[DepthPeelingRenderer] = js.native
     
     /** Detaches all event handlers*/
     def detachControl(): Unit = js.native
@@ -2840,7 +3130,7 @@ object sceneMod {
     /**
       * Use this array to add regular expressions used to disable offline support for specific urls
       */
-    var disableOfflineSupportExceptionRules: js.Array[RegExp] = js.native
+    var disableOfflineSupportExceptionRules: js.Array[js.RegExp] = js.native
     
     /**
       * Disables and disposes the physics engine associated with the scene
@@ -2854,7 +3144,7 @@ object sceneMod {
     var dispatchAllSubMeshesOfActiveMeshes: Boolean = js.native
     
     /**
-      * Releases all held ressources
+      * Releases all held resources
       */
     def dispose(): Unit = js.native
     
@@ -2888,17 +3178,22 @@ object sceneMod {
     /**
       * Enables a GeometryBufferRender and associates it with the scene
       * @param ratio defines the scaling ratio to apply to the renderer (1 by default which means same resolution)
+      * @param depthFormat Format of the depth texture (default: Constants.TEXTUREFORMAT_DEPTH16)
       * @returns the GeometryBufferRenderer
       */
     def enableGeometryBufferRenderer(): Nullable[GeometryBufferRenderer] = js.native
     def enableGeometryBufferRenderer(ratio: Double): Nullable[GeometryBufferRenderer] = js.native
+    def enableGeometryBufferRenderer(ratio: Double, depthFormat: Double): Nullable[GeometryBufferRenderer] = js.native
+    def enableGeometryBufferRenderer(ratio: Unit, depthFormat: Double): Nullable[GeometryBufferRenderer] = js.native
     
     /**
       * Enables physics to the current scene
-      * @param gravity defines the scene's gravity for the physics engine
-      * @param plugin defines the physics engine to be used. defaults to OimoJS.
-      * @return a boolean indicating if the physics engine was initialized
+      * @param gravity defines the scene's gravity for the physics engine. defaults to real earth gravity : (0, -9.81, 0)
+      * @param plugin defines the physics engine to be used. defaults to CannonJS.
+      * @returns a boolean indicating if the physics engine was initialized
       */
+    def enablePhysics(): Boolean = js.native
+    def enablePhysics(gravity: Unit, plugin: IPhysicsEnginePlugin): Boolean = js.native
     def enablePhysics(gravity: Nullable[Vector3]): Boolean = js.native
     def enablePhysics(gravity: Nullable[Vector3], plugin: IPhysicsEnginePlugin): Boolean = js.native
     
@@ -2918,14 +3213,7 @@ object sceneMod {
       * As in the majority of the scene they are the same (exception for multi room and so on),
       * this is easier to reference from here than from all the materials.
       */
-    def environmentIntensity: Double = js.native
-    /**
-      * Intensity of the environment in all pbr material.
-      * This dims or reinforces the IBL lighting overall (reflection and diffuse).
-      * As in the majority of the scene they are the same (exception for multi room and so on),
-      * this is easier to set here than in all the materials.
-      */
-    def environmentIntensity_=(value: Double): Unit = js.native
+    var environmentIntensity: Double = js.native
     
     /**
       * The provided function will run before render once and will be disposed afterwards.
@@ -2940,8 +3228,16 @@ object sceneMod {
     /**
       * Registers a function to be executed when the scene is ready
       * @param {Function} func - the function to be executed
+      * @param checkRenderTargets true to also check that the meshes rendered as part of a render target are ready (default: false)
       */
     def executeWhenReady(func: js.Function0[Unit]): Unit = js.native
+    def executeWhenReady(func: js.Function0[Unit], checkRenderTargets: Boolean): Unit = js.native
+    
+    /**
+      * Update the scene ubo before it can be used in rendering processing
+      * @returns the scene UniformBuffer
+      */
+    def finalizeSceneUbo(): UniformBuffer = js.native
     
     /**
       * Gets or sets the fog color to use
@@ -3029,6 +3325,8 @@ object sceneMod {
       * @param skipEvaluateActiveMeshes defines an optional boolean indicating that the evaluate active meshes step must be completely skipped
       * @param onSuccess optional success callback
       * @param onError optional error callback
+      * @param freezeMeshes defines if meshes should be frozen (true by default)
+      * @param keepFrustumCulling defines if you want to keep running the frustum clipping (false by default)
       * @returns the current scene
       */
     def freezeActiveMeshes(): Scene = js.native
@@ -3041,8 +3339,83 @@ object sceneMod {
     ): Scene = js.native
     def freezeActiveMeshes(
       skipEvaluateActiveMeshes: Boolean,
+      onSuccess: js.Function0[Unit],
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: js.Function0[Unit],
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Boolean,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: js.Function0[Unit],
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Unit,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: js.Function0[Unit],
+      onError: Unit,
+      freezeMeshes: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: js.Function0[Unit],
+      onError: Unit,
+      freezeMeshes: Boolean,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: js.Function0[Unit],
+      onError: Unit,
+      freezeMeshes: Unit,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
       onSuccess: Unit,
       onError: js.Function1[/* message */ String, Unit]
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: Unit,
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: Unit,
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Boolean,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: Unit,
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Unit,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(skipEvaluateActiveMeshes: Boolean, onSuccess: Unit, onError: Unit, freezeMeshes: Boolean): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: Unit,
+      onError: Unit,
+      freezeMeshes: Boolean,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Boolean,
+      onSuccess: Unit,
+      onError: Unit,
+      freezeMeshes: Unit,
+      keepFrustumCulling: Boolean
     ): Scene = js.native
     def freezeActiveMeshes(skipEvaluateActiveMeshes: Unit, onSuccess: js.Function0[Unit]): Scene = js.native
     def freezeActiveMeshes(
@@ -3050,7 +3423,82 @@ object sceneMod {
       onSuccess: js.Function0[Unit],
       onError: js.Function1[/* message */ String, Unit]
     ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: js.Function0[Unit],
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: js.Function0[Unit],
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Boolean,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: js.Function0[Unit],
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Unit,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: js.Function0[Unit],
+      onError: Unit,
+      freezeMeshes: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: js.Function0[Unit],
+      onError: Unit,
+      freezeMeshes: Boolean,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: js.Function0[Unit],
+      onError: Unit,
+      freezeMeshes: Unit,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
     def freezeActiveMeshes(skipEvaluateActiveMeshes: Unit, onSuccess: Unit, onError: js.Function1[/* message */ String, Unit]): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: Unit,
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: Unit,
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Boolean,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: Unit,
+      onError: js.Function1[/* message */ String, Unit],
+      freezeMeshes: Unit,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(skipEvaluateActiveMeshes: Unit, onSuccess: Unit, onError: Unit, freezeMeshes: Boolean): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: Unit,
+      onError: Unit,
+      freezeMeshes: Boolean,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
+    def freezeActiveMeshes(
+      skipEvaluateActiveMeshes: Unit,
+      onSuccess: Unit,
+      onError: Unit,
+      freezeMeshes: Unit,
+      keepFrustumCulling: Boolean
+    ): Scene = js.native
     
     /**
       * Freeze all materials
@@ -3068,11 +3516,6 @@ object sceneMod {
       * @see https://doc.babylonjs.com/how_to/how_to_use_gamepads
       */
     var gamepadManager: GamepadManager = js.native
-    
-    /**
-      * an optional map from Geometry Id to Geometry index in the 'geometries' array
-      */
-    /* private */ var geometriesByUniqueId: js.Any = js.native
     
     /**
       * Gets or Sets the current geometry buffer associated to the scene.
@@ -3118,19 +3561,19 @@ object sceneMod {
       * @param target defines the target to look animatables for
       * @returns an array of Animatables
       */
-    def getAllAnimatablesByTarget(target: js.Any): js.Array[Animatable] = js.native
+    def getAllAnimatablesByTarget(target: Any): js.Array[Animatable] = js.native
     
     /**
       * Gets the animatable associated with a specific target
       * @param target defines the target of the animatable
       * @returns the required animatable if found
       */
-    def getAnimatableByTarget(target: js.Any): Nullable[Animatable] = js.native
+    def getAnimatableByTarget(target: Any): Nullable[Animatable] = js.native
     
     /**
       * get an animation group using its name
       * @param name defines the material's name
-      * @return the animation group or null if none found.
+      * @returns the animation group or null if none found.
       */
     def getAnimationGroupByName(name: String): Nullable[AnimationGroup] = js.native
     
@@ -3149,16 +3592,24 @@ object sceneMod {
     def getAutoClearDepthStencilSetup(index: Double): IRenderingManagerAutoClearSetup = js.native
     
     /**
-      * Gets a bone using its id
-      * @param id defines the bone's id
-      * @return the bone or null if not found
+      * Gets a bone using its Id
+      * @param id defines the bone's Id
+      * @returns the bone or null if not found
+      * @deprecated Please use getBoneById instead
       */
     def getBoneByID(id: String): Nullable[Bone] = js.native
     
     /**
+      * Gets a bone using its Id
+      * @param id defines the bone's Id
+      * @returns the bone or null if not found
+      */
+    def getBoneById(id: String): Nullable[Bone] = js.native
+    
+    /**
       * Gets a bone using its id
       * @param name defines the bone's name
-      * @return the bone or null if not found
+      * @returns the bone or null if not found
       */
     def getBoneByName(name: String): Nullable[Bone] = js.native
     
@@ -3187,25 +3638,41 @@ object sceneMod {
     def getCachedVisibility(): Nullable[Double] = js.native
     
     /**
-      * Gets a camera using its id
-      * @param id defines the id to look for
+      * Gets a camera using its Id
+      * @param id defines the Id to look for
       * @returns the camera or null if not found
+      * @deprecated Please use getCameraById instead
       */
     def getCameraByID(id: String): Nullable[Camera] = js.native
     
     /**
+      * Gets a camera using its Id
+      * @param id defines the Id to look for
+      * @returns the camera or null if not found
+      */
+    def getCameraById(id: String): Nullable[Camera] = js.native
+    
+    /**
       * Gets a camera using its name
       * @param name defines the camera's name
-      * @return the camera or null if none found.
+      * @returns the camera or null if none found.
       */
     def getCameraByName(name: String): Nullable[Camera] = js.native
     
     /**
-      * Gets a camera using its unique id
-      * @param uniqueId defines the unique id to look for
+      * Gets a camera using its unique Id
+      * @param uniqueId defines the unique Id to look for
       * @returns the camera or null if not found
+      * @deprecated Please use getCameraByUniqueId instead
       */
     def getCameraByUniqueID(uniqueId: Double): Nullable[Camera] = js.native
+    
+    /**
+      * Gets a camera using its unique Id
+      * @param uniqueId defines the unique Id to look for
+      * @returns the camera or null if not found
+      */
+    def getCameraByUniqueId(uniqueId: Double): Nullable[Camera] = js.native
     
     /**
       * Get a list of cameras by tags
@@ -3239,9 +3706,9 @@ object sceneMod {
     def getEngine(): Engine = js.native
     
     /**
-      * Get an externaly attached data from its key
+      * Get an externally attached data from its key
       * @param key the unique key that identifies the data
-      * @return the associated data, if present (can be null), or undefined if not present
+      * @returns the associated data, if present (can be null), or undefined if not present
       */
     def getExternalData[T](key: String): Nullable[T] = js.native
     
@@ -3258,11 +3725,19 @@ object sceneMod {
     def getGeometries(): js.Array[Geometry] = js.native
     
     /**
-      * Gets a geometry using its ID
-      * @param id defines the geometry's id
-      * @return the geometry or null if none found.
+      * Gets a geometry using its Id
+      * @param id defines the geometry's Id
+      * @returns the geometry or null if none found.
+      * @deprecated Please use getGeometryById instead
       */
     def getGeometryByID(id: String): Nullable[Geometry] = js.native
+    
+    /**
+      * Gets a geometry using its Id
+      * @param id defines the geometry's Id
+      * @returns the geometry or null if none found.
+      */
+    def getGeometryById(id: String): Nullable[Geometry] = js.native
     
     /**
       * Gets the internal step used by deterministic lock step
@@ -3277,53 +3752,103 @@ object sceneMod {
     def getIntersectingSubMeshCandidates(mesh: AbstractMesh, localRay: Ray): ISmartArrayLike[SubMesh] = js.native
     
     /**
-      * Gets a the last added node (Mesh, Camera, Light) using a given id
-      * @param id defines the id to search for
-      * @return the found node or null if not found at all
+      * Gets a the last added node (Mesh, Camera, Light) using a given Id
+      * @param id defines the Id to search for
+      * @returns the found node or null if not found at all
+      * @deprecated Please use getLastEntryById instead
       */
     def getLastEntryByID(id: String): Nullable[Node] = js.native
     
     /**
+      * Gets a the last added node (Mesh, Camera, Light) using a given Id
+      * @param id defines the Id to search for
+      * @returns the found node or null if not found at all
+      */
+    def getLastEntryById(id: String): Nullable[Node] = js.native
+    
+    /**
       * Gets a the last added material using a given id
-      * @param id defines the material's ID
-      * @return the last material with the given id or null if none found.
+      * @param id defines the material's Id
+      * @returns the last material with the given id or null if none found.
+      * @deprecated Please use getLastMaterialById instead
       */
     def getLastMaterialByID(id: String): Nullable[Material] = js.native
     
     /**
-      * Gets a the last added mesh using a given id
-      * @param id defines the id to search for
-      * @return the found mesh or null if not found at all.
+      * Gets a the last added material using a given id
+      * @param id defines the material's Id
+      * @param allowMultiMaterials determines whether multimaterials should be considered
+      * @returns the last material with the given id or null if none found.
+      */
+    def getLastMaterialById(id: String): Nullable[Material] = js.native
+    def getLastMaterialById(id: String, allowMultiMaterials: Boolean): Nullable[Material] = js.native
+    
+    /**
+      * Gets a the last added mesh using a given Id
+      * @param id defines the Id to search for
+      * @returns the found mesh or null if not found at all.
+      * @deprecated Please use getLastMeshById instead
       */
     def getLastMeshByID(id: String): Nullable[AbstractMesh] = js.native
     
     /**
-      * Gets a skeleton using a given id (if many are found, this function will pick the last one)
-      * @param id defines the id to search for
-      * @return the found skeleton or null if not found at all.
+      * Gets a the last added mesh using a given Id
+      * @param id defines the Id to search for
+      * @returns the found mesh or null if not found at all.
+      */
+    def getLastMeshById(id: String): Nullable[AbstractMesh] = js.native
+    
+    /**
+      * Gets a skeleton using a given Id (if many are found, this function will pick the last one)
+      * @param id defines the Id to search for
+      * @returns the found skeleton or null if not found at all.
+      * @deprecated Please use getLastSkeletonById instead
       */
     def getLastSkeletonByID(id: String): Nullable[Skeleton] = js.native
     
     /**
-      * Gets a light node using its id
-      * @param id defines the light's id
-      * @return the light or null if none found.
+      * Gets a skeleton using a given Id (if many are found, this function will pick the last one)
+      * @param id defines the Id to search for
+      * @returns the found skeleton or null if not found at all.
+      */
+    def getLastSkeletonById(id: String): Nullable[Skeleton] = js.native
+    
+    /**
+      * Gets a light node using its Id
+      * @param id defines the light's Id
+      * @returns the light or null if none found.
+      * @deprecated Please use getLightById instead
       */
     def getLightByID(id: String): Nullable[Light] = js.native
     
     /**
+      * Gets a light node using its Id
+      * @param id defines the light's Id
+      * @returns the light or null if none found.
+      */
+    def getLightById(id: String): Nullable[Light] = js.native
+    
+    /**
       * Gets a light node using its name
       * @param name defines the the light's name
-      * @return the light or null if none found.
+      * @returns the light or null if none found.
       */
     def getLightByName(name: String): Nullable[Light] = js.native
     
     /**
-      * Gets a light node using its scene-generated unique ID
-      * @param uniqueId defines the light's unique id
-      * @return the light or null if none found.
+      * Gets a light node using its scene-generated unique Id
+      * @param uniqueId defines the light's unique Id
+      * @returns the light or null if none found.
+      * @deprecated Please use getLightByUniqueId instead
       */
     def getLightByUniqueID(uniqueId: Double): Nullable[Light] = js.native
+    
+    /**
+      * Gets a light node using its scene-generated unique Id
+      * @param uniqueId defines the light's unique Id
+      * @returns the light or null if none found.
+      */
+    def getLightByUniqueId(uniqueId: Double): Nullable[Light] = js.native
     
     /**
       * Get a list of lights by tags
@@ -3335,16 +3860,24 @@ object sceneMod {
     def getLightsByTags(tagsQuery: String, forEach: js.Function1[/* light */ Light, Unit]): js.Array[Light] = js.native
     
     /**
-      * get a material using its id
-      * @param id defines the material's ID
-      * @return the material or null if none found.
+      * Get a material using its id
+      * @param id defines the material's Id
+      * @returns the material or null if none found.
+      * @deprecated Please use getMaterialById instead
       */
     def getMaterialByID(id: String): Nullable[Material] = js.native
     
     /**
+      * get a material using its id
+      * @param id defines the material's Id
+      * @returns the material or null if none found.
+      */
+    def getMaterialById(id: String): Nullable[Material] = js.native
+    
+    /**
       * Gets a material using its name
       * @param name defines the material's name
-      * @return the material or null if none found.
+      * @returns the material or null if none found.
       */
     def getMaterialByName(name: String): Nullable[Material] = js.native
     
@@ -3360,37 +3893,61 @@ object sceneMod {
     /**
       * Get a material using its unique id
       * @param uniqueId defines the material's unique id
-      * @return the material or null if none found.
+      * @returns the material or null if none found.
       */
     def getMaterialByUniqueID(uniqueId: Double): Nullable[Material] = js.native
     
     /**
-      * Gets the first added mesh found of a given ID
-      * @param id defines the id to search for
-      * @return the mesh found or null if not found at all
+      * Gets the first added mesh found of a given Id
+      * @param id defines the Id to search for
+      * @returns the mesh found or null if not found at all
+      * @deprecated Please use getMeshById instead
       */
     def getMeshByID(id: String): Nullable[AbstractMesh] = js.native
     
     /**
+      * Gets the first added mesh found of a given Id
+      * @param id defines the Id to search for
+      * @returns the mesh found or null if not found at all
+      */
+    def getMeshById(id: String): Nullable[AbstractMesh] = js.native
+    
+    /**
       * Gets a mesh using a given name
       * @param name defines the name to search for
-      * @return the found mesh or null if not found at all.
+      * @returns the found mesh or null if not found at all.
       */
     def getMeshByName(name: String): Nullable[AbstractMesh] = js.native
     
     /**
-      * Gets a mesh with its auto-generated unique id
-      * @param uniqueId defines the unique id to search for
-      * @return the found mesh or null if not found at all.
+      * Gets a mesh with its auto-generated unique Id
+      * @param uniqueId defines the unique Id to search for
+      * @returns the found mesh or null if not found at all.
+      * @deprecated Please use getMeshByUniqueId instead
       */
     def getMeshByUniqueID(uniqueId: Double): Nullable[AbstractMesh] = js.native
     
     /**
-      * Gets a list of meshes using their id
-      * @param id defines the id to search for
+      * Gets a mesh with its auto-generated unique Id
+      * @param uniqueId defines the unique Id to search for
+      * @returns the found mesh or null if not found at all.
+      */
+    def getMeshByUniqueId(uniqueId: Double): Nullable[AbstractMesh] = js.native
+    
+    /**
+      * Gets a list of meshes using their Id
+      * @param id defines the Id to search for
       * @returns a list of meshes
+      * @deprecated Please use getMeshesById instead
       */
     def getMeshesByID(id: String): js.Array[AbstractMesh] = js.native
+    
+    /**
+      * Gets a list of meshes using their Id
+      * @param id defines the Id to search for
+      * @returns a list of meshes
+      */
+    def getMeshesById(id: String): js.Array[AbstractMesh] = js.native
     
     /**
       * Get a list of meshes by tags
@@ -3404,45 +3961,53 @@ object sceneMod {
     /**
       * Gets a morph target using a given id (if many are found, this function will pick the first one)
       * @param id defines the id to search for
-      * @return the found morph target or null if not found at all.
+      * @returns the found morph target or null if not found at all.
       */
     def getMorphTargetById(id: String): Nullable[MorphTarget] = js.native
     
     /**
       * Gets a morph target using a given name (if many are found, this function will pick the first one)
       * @param name defines the name to search for
-      * @return the found morph target or null if not found at all.
+      * @returns the found morph target or null if not found at all.
       */
     def getMorphTargetByName(name: String): Nullable[MorphTarget] = js.native
     
     /**
       * Gets a morph target manager  using a given id (if many are found, this function will pick the last one)
       * @param id defines the id to search for
-      * @return the found morph target manager or null if not found at all.
+      * @returns the found morph target manager or null if not found at all.
       */
     def getMorphTargetManagerById(id: Double): Nullable[MorphTargetManager] = js.native
     
     /**
-      * Gets a node (Mesh, Camera, Light) using a given id
-      * @param id defines the id to search for
-      * @return the found node or null if not found at all
+      * Gets a node (Mesh, Camera, Light) using a given Id
+      * @param id defines the Id to search for
+      * @returns the found node or null if not found at all
+      * @deprecated Please use getNodeById instead
       */
     def getNodeByID(id: String): Nullable[Node] = js.native
     
     /**
+      * Gets a node (Mesh, Camera, Light) using a given Id
+      * @param id defines the Id to search for
+      * @returns the found node or null if not found at all
+      */
+    def getNodeById(id: String): Nullable[Node] = js.native
+    
+    /**
       * Gets a node (Mesh, Camera, Light) using a given name
       * @param name defines the name to search for
-      * @return the found node or null if not found at all.
+      * @returns the found node or null if not found at all.
       */
     def getNodeByName(name: String): Nullable[Node] = js.native
     
     /**
-      * Get an externaly attached data from its key, create it using a factory if it's not already present
+      * Get an externally attached data from its key, create it using a factory if it's not already present
       * @param key the unique key that identifies the data
       * @param factory the factory that will be called to create the instance if and only if it doesn't exists
-      * @return the associated data, can be null if the factory returned null.
+      * @returns the associated data, can be null if the factory returned null.
       */
-    def getOrAddExternalDataWithFactory[T](key: String, factory: js.Function1[/* k */ String, T]): T = js.native
+    def getOrAddExternalDataWithFactory[T /* <: js.Object */](key: String, factory: js.Function1[/* k */ String, T]): T = js.native
     
     /**
       * Gets the outline renderer associated with the scene
@@ -3451,11 +4016,25 @@ object sceneMod {
     def getOutlineRenderer(): OutlineRenderer = js.native
     
     /**
-      * Gets a particle system by id
-      * @param id defines the particle system id
-      * @return the corresponding system or null if none found
+      * Gets a particle system by Id
+      * @param id defines the particle system Id
+      * @returns the corresponding system or null if none found
+      * @deprecated Please use getParticleSystemById instead
       */
     def getParticleSystemByID(id: String): Nullable[IParticleSystem] = js.native
+    
+    /**
+      * Gets a particle system by Id
+      * @param id defines the particle system Id
+      * @returns the corresponding system or null if none found
+      */
+    def getParticleSystemById(id: String): Nullable[IParticleSystem] = js.native
+    
+    /**
+      * This method gets the performance collector belonging to the scene, which is generally shared with the inspector.
+      * @returns the perf collector belonging to the scene.
+      */
+    def getPerfCollector(): PerformanceViewerCollector = js.native
     
     /**
       * Gets the current physics engine
@@ -3478,7 +4057,7 @@ object sceneMod {
     /**
       * Gets a post process using a given name (if many are found, this function will pick the first one)
       * @param name defines the name to search for
-      * @return the found post process or null if not found at all.
+      * @returns the found post process or null if not found at all.
       */
     def getPostProcessByName(name: String): Nullable[PostProcess] = js.native
     
@@ -3503,28 +4082,28 @@ object sceneMod {
     /**
       * Gets a skeleton using a given id (if many are found, this function will pick the first one)
       * @param id defines the id to search for
-      * @return the found skeleton or null if not found at all.
+      * @returns the found skeleton or null if not found at all.
       */
     def getSkeletonById(id: String): Nullable[Skeleton] = js.native
     
     /**
       * Gets a skeleton using a given name
       * @param name defines the name to search for
-      * @return the found skeleton or null if not found at all.
+      * @returns the found skeleton or null if not found at all.
       */
     def getSkeletonByName(name: String): Nullable[Skeleton] = js.native
     
     /**
       * Gets a skeleton using a given auto generated unique id
       * @param  uniqueId defines the unique id to search for
-      * @return the found skeleton or null if not found at all.
+      * @returns the found skeleton or null if not found at all.
       */
     def getSkeletonByUniqueId(uniqueId: Double): Nullable[Skeleton] = js.native
     
     /**
       * Gets a sound using a given name
       * @param name defines the name to search for
-      * @return the found sound or null if not found at all.
+      * @returns the found sound or null if not found at all.
       */
     def getSoundByName(name: String): Nullable[Sound] = js.native
     
@@ -3536,11 +4115,26 @@ object sceneMod {
     def getStepId(): Double = js.native
     
     /**
+      * Gets a texture using its name
+      * @param name defines the texture's name
+      * @returns the texture or null if none found.
+      */
+    def getTextureByName(name: String): Nullable[BaseTexture] = js.native
+    
+    /**
       * Get a texture using its unique id
       * @param uniqueId defines the texture's unique id
-      * @return the texture or null if none found.
+      * @returns the texture or null if none found.
+      * @deprecated Please use getTextureByUniqueId instead
       */
     def getTextureByUniqueID(uniqueId: Double): Nullable[BaseTexture] = js.native
+    
+    /**
+      * Get a texture using its unique id
+      * @param uniqueId defines the texture's unique id
+      * @returns the texture or null if none found.
+      */
+    def getTextureByUniqueId(uniqueId: Double): Nullable[BaseTexture] = js.native
     
     /**
       * Gets the total number of vertices rendered per frame
@@ -3555,32 +4149,56 @@ object sceneMod {
     def getTransformMatrix(): Matrix = js.native
     
     /**
-      * Gets the first added transform node found of a given ID
-      * @param id defines the id to search for
-      * @return the found transform node or null if not found at all.
+      * Gets the first added transform node found of a given Id
+      * @param id defines the Id to search for
+      * @returns the found transform node or null if not found at all.
+      * @deprecated Please use getTransformNodeById instead
       */
     def getTransformNodeByID(id: String): Nullable[TransformNode] = js.native
     
     /**
+      * Gets the first added transform node found of a given Id
+      * @param id defines the Id to search for
+      * @returns the found transform node or null if not found at all.
+      */
+    def getTransformNodeById(id: String): Nullable[TransformNode] = js.native
+    
+    /**
       * Gets a transform node using a given name
       * @param name defines the name to search for
-      * @return the found transform node or null if not found at all.
+      * @returns the found transform node or null if not found at all.
       */
     def getTransformNodeByName(name: String): Nullable[TransformNode] = js.native
     
     /**
-      * Gets a transform node with its auto-generated unique id
-      * @param uniqueId efines the unique id to search for
-      * @return the found transform node or null if not found at all.
+      * Gets a transform node with its auto-generated unique Id
+      * @param uniqueId defines the unique Id to search for
+      * @returns the found transform node or null if not found at all.
+      * @deprecated Please use getTransformNodeByUniqueId instead
       */
     def getTransformNodeByUniqueID(uniqueId: Double): Nullable[TransformNode] = js.native
     
     /**
-      * Gets a list of transform nodes using their id
-      * @param id defines the id to search for
+      * Gets a transform node with its auto-generated unique Id
+      * @param uniqueId defines the unique Id to search for
+      * @returns the found transform node or null if not found at all.
+      */
+    def getTransformNodeByUniqueId(uniqueId: Double): Nullable[TransformNode] = js.native
+    
+    /**
+      * Gets a list of transform nodes using their Id
+      * @param id defines the Id to search for
       * @returns a list of transform nodes
+      * @deprecated Please use getTransformNodesById instead
       */
     def getTransformNodesByID(id: String): js.Array[TransformNode] = js.native
+    
+    /**
+      * Gets a list of transform nodes using their Id
+      * @param id defines the Id to search for
+      * @returns a list of transform nodes
+      */
+    def getTransformNodesById(id: String): js.Array[TransformNode] = js.native
     
     /**
       * Get a list of transform nodes by tags
@@ -3697,9 +4315,11 @@ object sceneMod {
     /**
       * This function will check if the scene can be rendered (textures are loaded, shaders are compiled)
       * Delay loaded resources are not taking in account
-      * @return true if all required resources are ready
+      * @param checkRenderTargets true to also check that the meshes rendered as part of a render target are ready (default: true)
+      * @returns true if all required resources are ready
       */
     def isReady(): Boolean = js.native
+    def isReady(checkRenderTargets: Boolean): Boolean = js.native
     
     /**
       * Gets or sets a boolean indicating if lens flares are enabled on this scene
@@ -3719,14 +4339,14 @@ object sceneMod {
     
     /**
       * The main sound track played by the scene.
-      * It cotains your primary collection of sounds.
+      * It contains your primary collection of sounds.
       */
     var mainSoundTrack: SoundTrack = js.native
     
     /**
       * Will flag all materials as dirty to trigger new shader compilation
       * @param flag defines the flag used to specify which material part must be marked as dirty
-      * @param predicate If not null, it will be used to specifiy if a material has to be marked as dirty
+      * @param predicate If not null, it will be used to specify if a material has to be marked as dirty
       */
     def markAllMaterialsAsDirty(flag: Double): Unit = js.native
     def markAllMaterialsAsDirty(flag: Double, predicate: js.Function1[/* mat */ Material, Boolean]): Unit = js.native
@@ -3739,7 +4359,7 @@ object sceneMod {
     /**
       * Gets or sets user defined metadata
       */
-    var metadata: js.Any = js.native
+    var metadata: Any = js.native
     
     /**
       * Launch a ray to try to pick a mesh in the scene
@@ -3801,12 +4421,19 @@ object sceneMod {
       * @param trianglePredicate defines an optional predicate used to select faces when a mesh intersection is detected
       * @returns an array of PickingInfo
       */
+    def multiPickWithRay(ray: Ray): Nullable[js.Array[PickingInfo]] = js.native
     def multiPickWithRay(ray: Ray, predicate: js.Function1[/* mesh */ AbstractMesh, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
     def multiPickWithRay(
       ray: Ray,
       predicate: js.Function1[/* mesh */ AbstractMesh, Boolean],
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[js.Array[PickingInfo]] = js.native
+    def multiPickWithRay(ray: Ray, predicate: Unit, trianglePredicate: TrianglePickingPredicate): Nullable[js.Array[PickingInfo]] = js.native
+    
+    /**
+      * Flag indicating if we need to store previous matrices when rendering
+      */
+    var needsPreviousWorldMatrices: Boolean = js.native
     
     /**
       * Gets or sets the current offline provider to use to store scene data
@@ -3820,6 +4447,11 @@ object sceneMod {
     var onActiveCameraChanged: Observable[Scene] = js.native
     
     /**
+      * An event triggered when the activeCameras property is updated
+      */
+    var onActiveCamerasChanged: Observable[Scene] = js.native
+    
+    /**
       * An event triggered when active meshes evaluation is done
       */
     var onAfterActiveMeshesEvaluationObservable: Observable[Scene] = js.native
@@ -3831,6 +4463,7 @@ object sceneMod {
     
     /**
       * An event triggered after rendering a camera
+      * This is triggered for the full rig Camera only unlike onAfterRenderCameraObservable
       */
     var onAfterCameraRenderObservable: Observable[Camera] = js.native
     
@@ -3852,6 +4485,7 @@ object sceneMod {
     
     /**
       * An event triggered after rendering the scene for an active camera (When scene.render is called this will be called after each camera)
+      * This is triggered for each "sub" camera in a Camera Rig unlike onAfterCameraRenderObservable
       */
     var onAfterRenderCameraObservable: Observable[Camera] = js.native
     
@@ -3868,7 +4502,7 @@ object sceneMod {
     
     /**
       * This Observable will be triggered after rendering each renderingGroup of each rendered camera.
-      * The RenderinGroupInfo class contains all the information about the context in which the observable is called
+      * The RenderingGroupInfo class contains all the information about the context in which the observable is called
       * If you wish to register an Observer only for a given set of renderingGroup, use the mask with a combination of the renderingGroup index elevated to the power of two (1 for renderingGroup 0, 2 for renderingrOup1, 4 for 2 and 8 for 3)
       */
     var onAfterRenderingGroupObservable: Observable[RenderingGroupInfo] = js.native
@@ -3933,7 +4567,7 @@ object sceneMod {
     
     /**
       * This Observable will be triggered before rendering each renderingGroup of each rendered camera.
-      * The RenderinGroupInfo class contains all the information about the context in which the observable is called
+      * The RenderingGroupInfo class contains all the information about the context in which the observable is called
       * If you wish to register an Observer only for a given set of renderingGroup, use the mask with a combination of the renderingGroup index elevated to the power of two (1 for renderingGroup 0, 2 for renderingrOup1, 4 for 2 and 8 for 3)
       */
     var onBeforeRenderingGroupObservable: Observable[RenderingGroupInfo] = js.native
@@ -3953,6 +4587,12 @@ object sceneMod {
       * An event triggered when a camera is removed
       */
     var onCameraRemovedObservable: Observable[Camera] = js.native
+    
+    /**
+      * An event triggered when the cpu usage/speed meets certain thresholds.
+      * Note: Compute pressure is an experimental API.
+      */
+    var onComputePressureChanged: Observable[IComputePressureData] = js.native
     
     /**
       * An event triggered when SceneLoader.Append or SceneLoader.Load or SceneLoader.ImportMesh were successfully executed
@@ -4048,10 +4688,10 @@ object sceneMod {
     var onNewTransformNodeAddedObservable: Observable[TransformNode] = js.native
     
     /** Callback called when a pointer down is detected  */
-    def onPointerDown(evt: PointerEvent, pickInfo: PickingInfo, `type`: PointerEventTypes): Unit = js.native
+    def onPointerDown(evt: IPointerEvent, pickInfo: PickingInfo, `type`: PointerEventTypes): Unit = js.native
     
     /** Callback called when a pointer move is detected */
-    def onPointerMove(evt: PointerEvent, pickInfo: PickingInfo, `type`: PointerEventTypes): Unit = js.native
+    def onPointerMove(evt: IPointerEvent, pickInfo: PickingInfo, `type`: PointerEventTypes): Unit = js.native
     
     /**
       * Observable event triggered each time an input event is received from the rendering canvas
@@ -4059,10 +4699,10 @@ object sceneMod {
     var onPointerObservable: Observable[PointerInfo] = js.native
     
     /** Callback called when a pointer pick is detected */
-    def onPointerPick(evt: PointerEvent, pickInfo: PickingInfo): Unit = js.native
+    def onPointerPick(evt: IPointerEvent, pickInfo: PickingInfo): Unit = js.native
     
     /** Callback called when a pointer up is detected  */
-    def onPointerUp(evt: PointerEvent, pickInfo: Nullable[PickingInfo], `type`: PointerEventTypes): Unit = js.native
+    def onPointerUp(evt: IPointerEvent, pickInfo: Nullable[PickingInfo], `type`: PointerEventTypes): Unit = js.native
     
     /**
       * This observable event is triggered when any keyboard event si raised and registered during Scene.attachControl()
@@ -4100,6 +4740,12 @@ object sceneMod {
       * Gets or sets a boolean indicating if particles are enabled on this scene
       */
     var particlesEnabled: Boolean = js.native
+    
+    /**
+      * Gets or sets a value indicating how to treat performance relatively to ease of use and backward compatibility
+      */
+    def performancePriority: ScenePerformancePriority = js.native
+    def performancePriority_=(value: ScenePerformancePriority): Unit = js.native
     
     /**
       * Gets or sets a boolean indicating if physic engines are enabled on this scene
@@ -4326,6 +4972,13 @@ object sceneMod {
     def pointerMovePredicate(Mesh: AbstractMesh): Boolean = js.native
     
     /**
+      * Gets or sets a predicate used to select candidate faces for a pointer move event
+      */
+    var pointerMoveTrianglePredicate: js.UndefOr[
+        js.Function4[/* p0 */ Vector3, /* p1 */ Vector3, /* p2 */ Vector3, /* ray */ Ray, Boolean]
+      ] = js.native
+    
+    /**
       * Gets or sets a predicate used to select candidate meshes for a pointer up event
       */
     def pointerUpPredicate(Mesh: AbstractMesh): Boolean = js.native
@@ -4362,7 +5015,7 @@ object sceneMod {
     /**
       * Flag indicating that the frame buffer binding is handled by another component
       */
-    var prePass: Boolean = js.native
+    def prePass: Boolean = js.native
     
     /**
       * This is used to call preventDefault() on pointer down
@@ -4390,7 +5043,7 @@ object sceneMod {
       * Add a new geometry to this scene
       * @param geometry defines the geometry to be added to the scene.
       * @param force defines if the geometry must be pushed even if a geometry with this id already exists
-      * @return a boolean defining if the geometry was added or not
+      * @returns a boolean defining if the geometry was added or not
       */
     def pushGeometry(geometry: Geometry): Boolean = js.native
     def pushGeometry(geometry: Geometry, force: Boolean): Boolean = js.native
@@ -4409,6 +5062,7 @@ object sceneMod {
     
     /**
       * Removes the given action manager from this scene.
+      * @deprecated
       * @param toRemove The action manager to remove
       * @returns The index of the removed action manager
       */
@@ -4436,16 +5090,16 @@ object sceneMod {
     def removeCamera(toRemove: Camera): Double = js.native
     
     /**
-      * Remove an externaly attached data from the Engine instance
+      * Remove an externally attached data from the Engine instance
       * @param key the unique key that identifies the data
-      * @return true if the data was successfully removed, false if it doesn't exist
+      * @returns true if the data was successfully removed, false if it doesn't exist
       */
     def removeExternalData(key: String): Boolean = js.native
     
     /**
       * Removes an existing geometry
       * @param geometry defines the geometry to be removed from the scene
-      * @return a boolean defining if the geometry was removed or not
+      * @returns a boolean defining if the geometry was removed or not
       */
     def removeGeometry(geometry: Geometry): Boolean = js.native
     
@@ -4494,6 +5148,12 @@ object sceneMod {
     def removeParticleSystem(toRemove: IParticleSystem): Double = js.native
     
     /**
+      * Remove a pending data from the loading list which has previously been added with addPendingData.
+      * @param data defines the object to remove from the pending list
+      */
+    def removePendingData(data: Any): Unit = js.native
+    
+    /**
       * Remove a skeleton for the list of scene's skeletons
       * @param toRemove defines the skeleton to remove
       * @returns the index where the skeleton was in the skeleton list
@@ -4538,10 +5198,17 @@ object sceneMod {
     /**
       * For internal use only. Please do not use.
       */
-    var reservedDataStore: js.Any = js.native
+    var reservedDataStore: Any = js.native
     
     /** Resets all cached information relative to material (including effect and visibility) */
     def resetCachedMaterial(): Unit = js.native
+    
+    /**
+      * Resets the draw wrappers cache of all meshes
+      * @param passId If provided, releases only the draw wrapper corresponding to this render pass id
+      */
+    def resetDrawCache(): Unit = js.native
+    def resetDrawCache(passId: Double): Unit = js.native
     
     /**
       * Resets the last animation time frame.
@@ -4556,11 +5223,19 @@ object sceneMod {
     var selectionOctree: Octree[AbstractMesh] = js.native
     
     /**
-      * sets the active camera of the scene using its ID
-      * @param id defines the camera's ID
-      * @return the new active camera or null if none found.
+      * Sets the active camera of the scene using its Id
+      * @param id defines the camera's Id
+      * @returns the new active camera or null if none found.
+      * @deprecated Please use setActiveCameraById instead
       */
     def setActiveCameraByID(id: String): Nullable[Camera] = js.native
+    
+    /**
+      * sets the active camera of the scene using its Id
+      * @param id defines the camera's Id
+      * @returns the new active camera or null if none found.
+      */
+    def setActiveCameraById(id: String): Nullable[Camera] = js.native
     
     /**
       * sets the active camera of the scene using its name
@@ -4580,9 +5255,12 @@ object sceneMod {
       * Force the value of meshUnderPointer
       * @param mesh defines the mesh to use
       * @param pointerId optional pointer id when using more than one pointer
+      * @param pickResult optional pickingInfo data used to find mesh
       */
     def setPointerOverMesh(mesh: Nullable[AbstractMesh]): Unit = js.native
     def setPointerOverMesh(mesh: Nullable[AbstractMesh], pointerId: Double): Unit = js.native
+    def setPointerOverMesh(mesh: Nullable[AbstractMesh], pointerId: Double, pickResult: Nullable[PickingInfo]): Unit = js.native
+    def setPointerOverMesh(mesh: Nullable[AbstractMesh], pointerId: Unit, pickResult: Nullable[PickingInfo]): Unit = js.native
     
     /**
       * Force the sprite under the pointer
@@ -4604,7 +5282,7 @@ object sceneMod {
     def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Unit, stencil: Boolean): Unit = js.native
     
     /**
-      * Overrides the default sort function applied in the renderging group to prepare the meshes.
+      * Overrides the default sort function applied in the rendering group to prepare the meshes.
       * This allowed control for front to back rendering or reversly depending of the special needs.
       *
       * @param renderingGroupId The rendering group id corresponding to its index
@@ -4651,6 +5329,12 @@ object sceneMod {
       alphaTestSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]],
       transparentSortCompareFn: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]
     ): Unit = js.native
+    
+    /**
+      * Sets the scene ubo
+      * @param ubo the ubo to set for the scene
+      */
+    def setSceneUniformBuffer(ubo: UniformBuffer): Unit = js.native
     
     /**
       * Sets the step Id used by deterministic lock step
@@ -4729,6 +5413,21 @@ object sceneMod {
     def skipFrustumClipping_=(value: Boolean): Unit = js.native
     
     /**
+      * Gets or sets a boolean indicating if the user want to entirely skip the picking phase when a pointer down event occurs.
+      */
+    var skipPointerDownPicking: Boolean = js.native
+    
+    /**
+      * Gets or sets a boolean indicating if the user want to entirely skip the picking phase when a pointer move event occurs.
+      */
+    var skipPointerMovePicking: Boolean = js.native
+    
+    /**
+      * Gets or sets a boolean indicating if the user want to entirely skip the picking phase when a pointer up event occurs.  Off by default.
+      */
+    var skipPointerUpPicking: Boolean = js.native
+    
+    /**
       * Sorts the list list based on light priorities
       */
     def sortLightsByPriority(): Unit = js.native
@@ -4761,10 +5460,10 @@ object sceneMod {
       * @param animationName - the name of the animation to stop (all animations will be stopped if both this and targetMask are empty)
       * @param targetMask - a function that determines if the animation should be stopped based on its target (all animations will be stopped if both this and animationName are empty)
       */
-    def stopAnimation(target: js.Any): Unit = js.native
-    def stopAnimation(target: js.Any, animationName: String): Unit = js.native
-    def stopAnimation(target: js.Any, animationName: String, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
-    def stopAnimation(target: js.Any, animationName: Unit, targetMask: js.Function1[/* target */ js.Any, Boolean]): Unit = js.native
+    def stopAnimation(target: Any): Unit = js.native
+    def stopAnimation(target: Any, animationName: String): Unit = js.native
+    def stopAnimation(target: Any, animationName: String, targetMask: js.Function1[/* target */ Any, Boolean]): Unit = js.native
+    def stopAnimation(target: Any, animationName: Unit, targetMask: js.Function1[/* target */ Any, Boolean]): Unit = js.native
     
     /**
       * Switch active camera
@@ -4851,6 +5550,11 @@ object sceneMod {
     /** @hidden */
     val useMaterialMeshMap: Boolean = js.native
     
+    /**
+      * Flag to indicate if we want to use order independent transparency, despite the performance hit
+      */
+    var useOrderIndependentTransparency: Boolean = js.native
+    
     def useRightHandedSystem: Boolean = js.native
     /**
       * Gets or sets a boolean indicating if the scene must use right-handed coordinates system
@@ -4859,9 +5563,11 @@ object sceneMod {
     
     /**
       * Returns a promise that resolves when the scene is ready
+      * @param checkRenderTargets true to also check that the meshes rendered as part of a render target are ready (default: false)
       * @returns A promise that resolves when the scene is ready
       */
     def whenReadyAsync(): js.Promise[Unit] = js.native
+    def whenReadyAsync(checkRenderTargets: Boolean): js.Promise[Unit] = js.native
   }
   /* static members */
   object Scene {
@@ -4878,7 +5584,6 @@ object sceneMod {
     
     /**
       * Factory used to create the default material.
-      * @param name The name of the material to create
       * @param scene The scene to create the material for
       * @returns The default material
       */
@@ -4923,6 +5628,37 @@ object sceneMod {
     inline def MinDeltaTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MinDeltaTime")(x.asInstanceOf[js.Any])
   }
   
+  @js.native
+  sealed trait ScenePerformancePriority extends StObject
+  @JSImport("babylonjs/scene", "ScenePerformancePriority")
+  @js.native
+  object ScenePerformancePriority extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[ScenePerformancePriority & Double] = js.native
+    
+    /** Performance will be top priority */
+    @js.native
+    sealed trait Aggressive
+      extends StObject
+         with ScenePerformancePriority
+    /* 2 */ val Aggressive: typings.babylonjs.sceneMod.ScenePerformancePriority.Aggressive & Double = js.native
+    
+    /** Default mode. No change. Performance will be treated as less important than backward compatibility */
+    @js.native
+    sealed trait BackwardCompatible
+      extends StObject
+         with ScenePerformancePriority
+    /* 0 */ val BackwardCompatible: typings.babylonjs.sceneMod.ScenePerformancePriority.BackwardCompatible & Double = js.native
+    
+    /** Some performance options will be turned on trying to strike a balance between perf and ease of use */
+    @js.native
+    sealed trait Intermediate
+      extends StObject
+         with ScenePerformancePriority
+    /* 1 */ val Intermediate: typings.babylonjs.sceneMod.ScenePerformancePriority.Intermediate & Double = js.native
+  }
+  
   trait IDisposable extends StObject {
     
     /**
@@ -4946,7 +5682,7 @@ object sceneMod {
   trait SceneOptions extends StObject {
     
     /**
-      * Defines that each mesh of the scene should keep up-to-date a map of referencing cloned meshes for fast diposing
+      * Defines that each mesh of the scene should keep up-to-date a map of referencing cloned meshes for fast disposing
       * It will improve performance when the number of mesh becomes important, but might consume a bit more memory
       */
     var useClonedMeshMap: js.UndefOr[Boolean] = js.undefined
@@ -4958,7 +5694,7 @@ object sceneMod {
     var useGeometryUniqueIdsMap: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Defines that each material of the scene should keep up-to-date a map of referencing meshes for fast diposing
+      * Defines that each material of the scene should keep up-to-date a map of referencing meshes for fast disposing
       * It will improve performance when the number of mesh becomes important, but might consume a bit more memory
       */
     var useMaterialMeshMap: js.UndefOr[Boolean] = js.undefined
@@ -4990,6 +5726,255 @@ object sceneMod {
       inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
       
       inline def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
+    }
+  }
+  
+  /* augmented module */
+  object babylonjsSceneAugmentingMod {
+    
+    trait Scene extends StObject {
+      
+      /**
+        * Gets a bone using its Id
+        * @param id defines the bone's Id
+        * @returns the bone or null if not found
+        * @deprecated Please use getBoneById instead
+        */
+      def getBoneByID(id: String): Nullable[Bone]
+      
+      /**
+        * Gets a camera using its Id
+        * @param id defines the Id to look for
+        * @returns the camera or null if not found
+        * @deprecated Please use getCameraById instead
+        */
+      def getCameraByID(id: String): Nullable[Camera]
+      
+      /**
+        * Gets a camera using its unique Id
+        * @param uniqueId defines the unique Id to look for
+        * @returns the camera or null if not found
+        * @deprecated Please use getCameraByUniqueId instead
+        */
+      def getCameraByUniqueID(uniqueId: Double): Nullable[Camera]
+      
+      /**
+        * Gets a geometry using its Id
+        * @param id defines the geometry's Id
+        * @returns the geometry or null if none found.
+        * @deprecated Please use getGeometryById instead
+        */
+      def getGeometryByID(id: String): Nullable[Geometry]
+      
+      /**
+        * Gets a the last added node (Mesh, Camera, Light) using a given Id
+        * @param id defines the Id to search for
+        * @returns the found node or null if not found at all
+        * @deprecated Please use getLastEntryById instead
+        */
+      def getLastEntryByID(id: String): Nullable[Node]
+      
+      /**
+        * Gets a the last added material using a given id
+        * @param id defines the material's Id
+        * @returns the last material with the given id or null if none found.
+        * @deprecated Please use getLastMaterialById instead
+        */
+      def getLastMaterialByID(id: String): Nullable[Material]
+      
+      /**
+        * Gets a the last added mesh using a given Id
+        * @param id defines the Id to search for
+        * @returns the found mesh or null if not found at all.
+        * @deprecated Please use getLastMeshById instead
+        */
+      def getLastMeshByID(id: String): Nullable[AbstractMesh]
+      
+      /**
+        * Gets a skeleton using a given Id (if many are found, this function will pick the last one)
+        * @param id defines the Id to search for
+        * @returns the found skeleton or null if not found at all.
+        * @deprecated Please use getLastSkeletonById instead
+        */
+      def getLastSkeletonByID(id: String): Nullable[Skeleton]
+      
+      /**
+        * Gets a light node using its Id
+        * @param id defines the light's Id
+        * @returns the light or null if none found.
+        * @deprecated Please use getLightById instead
+        */
+      def getLightByID(id: String): Nullable[Light]
+      
+      /**
+        * Gets a light node using its scene-generated unique Id
+        * @param uniqueId defines the light's unique Id
+        * @returns the light or null if none found.
+        * @deprecated Please use getLightByUniqueId instead
+        */
+      def getLightByUniqueID(uniqueId: Double): Nullable[Light]
+      
+      /**
+        * Get a material using its id
+        * @param id defines the material's Id
+        * @returns the material or null if none found.
+        * @deprecated Please use getMaterialById instead
+        */
+      def getMaterialByID(id: String): Nullable[Material]
+      
+      /**
+        * Gets the first added mesh found of a given Id
+        * @param id defines the Id to search for
+        * @returns the mesh found or null if not found at all
+        * @deprecated Please use getMeshById instead
+        */
+      def getMeshByID(id: String): Nullable[AbstractMesh]
+      
+      /**
+        * Gets a mesh with its auto-generated unique Id
+        * @param uniqueId defines the unique Id to search for
+        * @returns the found mesh or null if not found at all.
+        * @deprecated Please use getMeshByUniqueId instead
+        */
+      def getMeshByUniqueID(uniqueId: Double): Nullable[AbstractMesh]
+      
+      /**
+        * Gets a list of meshes using their Id
+        * @param id defines the Id to search for
+        * @returns a list of meshes
+        * @deprecated Please use getMeshesById instead
+        */
+      def getMeshesByID(id: String): js.Array[AbstractMesh]
+      
+      /**
+        * Gets a node (Mesh, Camera, Light) using a given Id
+        * @param id defines the Id to search for
+        * @returns the found node or null if not found at all
+        * @deprecated Please use getNodeById instead
+        */
+      def getNodeByID(id: String): Nullable[Node]
+      
+      /**
+        * Gets a particle system by Id
+        * @param id defines the particle system Id
+        * @returns the corresponding system or null if none found
+        * @deprecated Please use getParticleSystemById instead
+        */
+      def getParticleSystemByID(id: String): Nullable[IParticleSystem]
+      
+      /**
+        * Get a texture using its unique id
+        * @param uniqueId defines the texture's unique id
+        * @returns the texture or null if none found.
+        * @deprecated Please use getTextureByUniqueId instead
+        */
+      def getTextureByUniqueID(uniqueId: Double): Nullable[BaseTexture]
+      
+      /**
+        * Gets the first added transform node found of a given Id
+        * @param id defines the Id to search for
+        * @returns the found transform node or null if not found at all.
+        * @deprecated Please use getTransformNodeById instead
+        */
+      def getTransformNodeByID(id: String): Nullable[TransformNode]
+      
+      /**
+        * Gets a transform node with its auto-generated unique Id
+        * @param uniqueId defines the unique Id to search for
+        * @returns the found transform node or null if not found at all.
+        * @deprecated Please use getTransformNodeByUniqueId instead
+        */
+      def getTransformNodeByUniqueID(uniqueId: Double): Nullable[TransformNode]
+      
+      /**
+        * Gets a list of transform nodes using their Id
+        * @param id defines the Id to search for
+        * @returns a list of transform nodes
+        * @deprecated Please use getTransformNodesById instead
+        */
+      def getTransformNodesByID(id: String): js.Array[TransformNode]
+      
+      /**
+        * Sets the active camera of the scene using its Id
+        * @param id defines the camera's Id
+        * @returns the new active camera or null if none found.
+        * @deprecated Please use setActiveCameraById instead
+        */
+      def setActiveCameraByID(id: String): Nullable[Camera]
+    }
+    object Scene {
+      
+      inline def apply(
+        getBoneByID: String => Nullable[Bone],
+        getCameraByID: String => Nullable[Camera],
+        getCameraByUniqueID: Double => Nullable[Camera],
+        getGeometryByID: String => Nullable[Geometry],
+        getLastEntryByID: String => Nullable[Node],
+        getLastMaterialByID: String => Nullable[Material],
+        getLastMeshByID: String => Nullable[AbstractMesh],
+        getLastSkeletonByID: String => Nullable[Skeleton],
+        getLightByID: String => Nullable[Light],
+        getLightByUniqueID: Double => Nullable[Light],
+        getMaterialByID: String => Nullable[Material],
+        getMeshByID: String => Nullable[AbstractMesh],
+        getMeshByUniqueID: Double => Nullable[AbstractMesh],
+        getMeshesByID: String => js.Array[AbstractMesh],
+        getNodeByID: String => Nullable[Node],
+        getParticleSystemByID: String => Nullable[IParticleSystem],
+        getTextureByUniqueID: Double => Nullable[BaseTexture],
+        getTransformNodeByID: String => Nullable[TransformNode],
+        getTransformNodeByUniqueID: Double => Nullable[TransformNode],
+        getTransformNodesByID: String => js.Array[TransformNode],
+        setActiveCameraByID: String => Nullable[Camera]
+      ): typings.babylonjs.sceneMod.babylonjsSceneAugmentingMod.Scene = {
+        val __obj = js.Dynamic.literal(getBoneByID = js.Any.fromFunction1(getBoneByID), getCameraByID = js.Any.fromFunction1(getCameraByID), getCameraByUniqueID = js.Any.fromFunction1(getCameraByUniqueID), getGeometryByID = js.Any.fromFunction1(getGeometryByID), getLastEntryByID = js.Any.fromFunction1(getLastEntryByID), getLastMaterialByID = js.Any.fromFunction1(getLastMaterialByID), getLastMeshByID = js.Any.fromFunction1(getLastMeshByID), getLastSkeletonByID = js.Any.fromFunction1(getLastSkeletonByID), getLightByID = js.Any.fromFunction1(getLightByID), getLightByUniqueID = js.Any.fromFunction1(getLightByUniqueID), getMaterialByID = js.Any.fromFunction1(getMaterialByID), getMeshByID = js.Any.fromFunction1(getMeshByID), getMeshByUniqueID = js.Any.fromFunction1(getMeshByUniqueID), getMeshesByID = js.Any.fromFunction1(getMeshesByID), getNodeByID = js.Any.fromFunction1(getNodeByID), getParticleSystemByID = js.Any.fromFunction1(getParticleSystemByID), getTextureByUniqueID = js.Any.fromFunction1(getTextureByUniqueID), getTransformNodeByID = js.Any.fromFunction1(getTransformNodeByID), getTransformNodeByUniqueID = js.Any.fromFunction1(getTransformNodeByUniqueID), getTransformNodesByID = js.Any.fromFunction1(getTransformNodesByID), setActiveCameraByID = js.Any.fromFunction1(setActiveCameraByID))
+        __obj.asInstanceOf[typings.babylonjs.sceneMod.babylonjsSceneAugmentingMod.Scene]
+      }
+      
+      extension [Self <: typings.babylonjs.sceneMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+        
+        inline def setGetBoneByID(value: String => Nullable[Bone]): Self = StObject.set(x, "getBoneByID", js.Any.fromFunction1(value))
+        
+        inline def setGetCameraByID(value: String => Nullable[Camera]): Self = StObject.set(x, "getCameraByID", js.Any.fromFunction1(value))
+        
+        inline def setGetCameraByUniqueID(value: Double => Nullable[Camera]): Self = StObject.set(x, "getCameraByUniqueID", js.Any.fromFunction1(value))
+        
+        inline def setGetGeometryByID(value: String => Nullable[Geometry]): Self = StObject.set(x, "getGeometryByID", js.Any.fromFunction1(value))
+        
+        inline def setGetLastEntryByID(value: String => Nullable[Node]): Self = StObject.set(x, "getLastEntryByID", js.Any.fromFunction1(value))
+        
+        inline def setGetLastMaterialByID(value: String => Nullable[Material]): Self = StObject.set(x, "getLastMaterialByID", js.Any.fromFunction1(value))
+        
+        inline def setGetLastMeshByID(value: String => Nullable[AbstractMesh]): Self = StObject.set(x, "getLastMeshByID", js.Any.fromFunction1(value))
+        
+        inline def setGetLastSkeletonByID(value: String => Nullable[Skeleton]): Self = StObject.set(x, "getLastSkeletonByID", js.Any.fromFunction1(value))
+        
+        inline def setGetLightByID(value: String => Nullable[Light]): Self = StObject.set(x, "getLightByID", js.Any.fromFunction1(value))
+        
+        inline def setGetLightByUniqueID(value: Double => Nullable[Light]): Self = StObject.set(x, "getLightByUniqueID", js.Any.fromFunction1(value))
+        
+        inline def setGetMaterialByID(value: String => Nullable[Material]): Self = StObject.set(x, "getMaterialByID", js.Any.fromFunction1(value))
+        
+        inline def setGetMeshByID(value: String => Nullable[AbstractMesh]): Self = StObject.set(x, "getMeshByID", js.Any.fromFunction1(value))
+        
+        inline def setGetMeshByUniqueID(value: Double => Nullable[AbstractMesh]): Self = StObject.set(x, "getMeshByUniqueID", js.Any.fromFunction1(value))
+        
+        inline def setGetMeshesByID(value: String => js.Array[AbstractMesh]): Self = StObject.set(x, "getMeshesByID", js.Any.fromFunction1(value))
+        
+        inline def setGetNodeByID(value: String => Nullable[Node]): Self = StObject.set(x, "getNodeByID", js.Any.fromFunction1(value))
+        
+        inline def setGetParticleSystemByID(value: String => Nullable[IParticleSystem]): Self = StObject.set(x, "getParticleSystemByID", js.Any.fromFunction1(value))
+        
+        inline def setGetTextureByUniqueID(value: Double => Nullable[BaseTexture]): Self = StObject.set(x, "getTextureByUniqueID", js.Any.fromFunction1(value))
+        
+        inline def setGetTransformNodeByID(value: String => Nullable[TransformNode]): Self = StObject.set(x, "getTransformNodeByID", js.Any.fromFunction1(value))
+        
+        inline def setGetTransformNodeByUniqueID(value: Double => Nullable[TransformNode]): Self = StObject.set(x, "getTransformNodeByUniqueID", js.Any.fromFunction1(value))
+        
+        inline def setGetTransformNodesByID(value: String => js.Array[TransformNode]): Self = StObject.set(x, "getTransformNodesByID", js.Any.fromFunction1(value))
+        
+        inline def setSetActiveCameraByID(value: String => Nullable[Camera]): Self = StObject.set(x, "setActiveCameraByID", js.Any.fromFunction1(value))
+      }
     }
   }
 }

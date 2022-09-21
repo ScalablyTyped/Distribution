@@ -8,7 +8,7 @@ object global {
   
   object htmlescape {
     
-    inline def apply(o: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(o: Any): String = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSGlobal("htmlescape")
     @js.native

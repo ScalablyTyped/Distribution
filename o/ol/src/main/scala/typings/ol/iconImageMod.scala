@@ -17,7 +17,7 @@ object iconImageMod {
   
   @JSImport("ol/style/IconImage", JSImport.Default)
   @js.native
-  class default protected () extends IconImage {
+  open class default protected () extends IconImage {
     def this(
       image: HTMLCanvasElement,
       src: String,

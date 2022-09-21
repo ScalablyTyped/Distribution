@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Alert")
 @js.native
-class Alert protected ()
+open class Alert protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Alert {
   def this(element: Element) = this()

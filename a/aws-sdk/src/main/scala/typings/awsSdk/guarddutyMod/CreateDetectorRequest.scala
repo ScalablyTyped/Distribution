@@ -12,7 +12,7 @@ trait CreateDetectorRequest extends StObject {
   var ClientToken: js.UndefOr[typings.awsSdk.guarddutyMod.ClientToken] = js.undefined
   
   /**
-    * An object that describes which data sources will be enabled for the detector.
+    * Describes which data sources will be enabled for the detector.
     */
   var DataSources: js.UndefOr[DataSourceConfigurations] = js.undefined
   
@@ -22,7 +22,7 @@ trait CreateDetectorRequest extends StObject {
   var Enable: Boolean
   
   /**
-    * An enum value that specifies how frequently updated findings are exported.
+    * A value that specifies how frequently updated findings are exported.
     */
   var FindingPublishingFrequency: js.UndefOr[typings.awsSdk.guarddutyMod.FindingPublishingFrequency] = js.undefined
   

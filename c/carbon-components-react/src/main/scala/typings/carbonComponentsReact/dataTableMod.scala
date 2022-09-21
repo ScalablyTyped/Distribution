@@ -205,8 +205,8 @@ import typings.carbonComponentsReact.tableToolbarMod.TableToolbarProps
 import typings.carbonComponentsReact.tableToolbarSearchMod.TableToolbarSearchProps
 import typings.carbonComponentsReact.typingsSharedMod.FCReturn
 import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
+import typings.carbonComponentsReact.typingsSharedMod.ReactComponentConstructor
 import typings.react.mod.FC
-import typings.react.mod.JSXElementConstructor
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
@@ -222,7 +222,7 @@ object dataTableMod {
   
   @JSImport("carbon-components-react/lib/components/DataTable", JSImport.Default)
   @js.native
-  class default[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] ()
+  open class default[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] ()
     extends typings.carbonComponentsReact.dataTableDataTableMod.default[R, H]
   object default {
     
@@ -262,7 +262,7 @@ object dataTableMod {
     
     /* static member */
     /* was `typeof TableBatchAction` */
-    inline def TableBatchAction_T_JSXElementConstructorAnyR[T /* <: JSXElementConstructor[js.Any] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    inline def TableBatchAction_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     /* static member */
     /* was `typeof TableBatchActions` */
@@ -400,7 +400,7 @@ object dataTableMod {
     ]
   ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def TableBatchAction_T_JSXElementConstructorAnyR[T /* <: JSXElementConstructor[js.Any] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def TableBatchAction_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def TableBatchAction_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

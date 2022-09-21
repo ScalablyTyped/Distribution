@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
@@ -15,13 +14,13 @@ trait EmailConversation extends StObject {
     * Asynchronously gets a batch of messages in the conversation.
     * @return The batch of messages.
     */
-  def findMessagesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findMessagesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Asynchronously gets a batch of messages in the conversation.
     * @param count The size of the batch of messages to retrieve.
     * @return The batch of messages.
     */
-  def findMessagesAsync(count: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findMessagesAsync(count: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /** Gets the EmailFlagState for the conversation. */
   var flagState: EmailFlagState = js.native
@@ -51,7 +50,7 @@ trait EmailConversation extends StObject {
   var mostRecentMessageId: String = js.native
   
   /** Gets the time of the most recent message in the conversation. */
-  var mostRecentMessageTime: Date = js.native
+  var mostRecentMessageTime: js.Date = js.native
   
   /** Gets a preview of the latest message in the conversation. */
   var preview: String = js.native

@@ -15,8 +15,8 @@ object mod {
   
   inline def getClientIp(req: Request): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientIp")(req.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def mw(): js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mw")().asInstanceOf[js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any]]
-  inline def mw(options: Options): js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mw")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ Request, /* res */ js.Any, /* next */ js.Any, js.Any]]
+  inline def mw(): js.Function3[/* req */ Request, /* res */ Any, /* next */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mw")().asInstanceOf[js.Function3[/* req */ Request, /* res */ Any, /* next */ Any, Any]]
+  inline def mw(options: Options): js.Function3[/* req */ Request, /* res */ Any, /* next */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mw")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ Request, /* res */ Any, /* next */ Any, Any]]
   
   trait Options extends StObject {
     
@@ -37,7 +37,7 @@ object mod {
   
   trait Request extends StObject {
     
-    var connection: Socket
+    var connection: js.UndefOr[Socket] = js.undefined
     
     var headers: RequestHeaders
     
@@ -47,14 +47,16 @@ object mod {
   }
   object Request {
     
-    inline def apply(connection: Socket, headers: RequestHeaders): Request = {
-      val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
+    inline def apply(headers: RequestHeaders): Request = {
+      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
     extension [Self <: Request](x: Self) {
       
       inline def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
       
       inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

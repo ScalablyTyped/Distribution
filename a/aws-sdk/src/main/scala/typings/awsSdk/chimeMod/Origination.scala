@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Origination extends StObject {
   
   /**
-    * When origination settings are disabled, inbound calls are not enabled for your Amazon Chime Voice Connector.
+    * When origination settings are disabled, inbound calls are not enabled for your Amazon Chime Voice Connector. This parameter is not required, but you must specify this parameter or Routes.
     */
   var Disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The call distribution properties defined for your SIP hosts. Valid range: Minimum value of 1. Maximum value of 20.
+    * The call distribution properties defined for your SIP hosts. Valid range: Minimum value of 1. Maximum value of 20. This parameter is not required, but you must specify this parameter or Disabled.
     */
   var Routes: js.UndefOr[OriginationRouteList] = js.undefined
 }
@@ -33,6 +33,6 @@ object Origination {
     
     inline def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
     
-    inline def setRoutesVarargs(value: OriginationRoute*): Self = StObject.set(x, "Routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: OriginationRoute*): Self = StObject.set(x, "Routes", js.Array(value*))
   }
 }

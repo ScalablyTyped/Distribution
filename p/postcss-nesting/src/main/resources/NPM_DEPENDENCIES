@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-nesting" : "10.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-nesting" : "10.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

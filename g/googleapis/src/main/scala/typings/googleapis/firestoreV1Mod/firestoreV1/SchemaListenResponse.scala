@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response for Firestore.Listen.
-  */
 trait SchemaListenResponse extends StObject {
   
   /**
@@ -20,15 +17,12 @@ trait SchemaListenResponse extends StObject {
   var documentDelete: js.UndefOr[SchemaDocumentDelete] = js.undefined
   
   /**
-    * A Document has been removed from a target (because it is no longer
-    * relevant to that target).
+    * A Document has been removed from a target (because it is no longer relevant to that target).
     */
   var documentRemove: js.UndefOr[SchemaDocumentRemove] = js.undefined
   
   /**
-    * A filter to apply to the set of documents previously returned for the
-    * given target.  Returned when documents may have been removed from the
-    * given target, but the exact documents are unknown.
+    * A filter to apply to the set of documents previously returned for the given target. Returned when documents may have been removed from the given target, but the exact documents are unknown.
     */
   var filter: js.UndefOr[SchemaExistenceFilter] = js.undefined
   

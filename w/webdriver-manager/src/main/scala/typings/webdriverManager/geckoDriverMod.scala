@@ -10,7 +10,7 @@ object geckoDriverMod {
   
   @JSImport("webdriver-manager/built/lib/binaries/gecko_driver", "GeckoDriver")
   @js.native
-  class GeckoDriver () extends Binary {
+  open class GeckoDriver () extends Binary {
     def this(opt_alternativeCdn: String) = this()
   }
   /* static members */
@@ -37,8 +37,8 @@ object geckoDriverMod {
     
     @JSImport("webdriver-manager/built/lib/binaries/gecko_driver", "GeckoDriver.suffixes")
     @js.native
-    def suffixes: js.Any = js.native
-    inline def suffixes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suffixes")(x.asInstanceOf[js.Any])
+    def suffixes: Any = js.native
+    inline def suffixes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suffixes")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/binaries/gecko_driver", "GeckoDriver.versionDefault")
     @js.native

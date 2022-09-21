@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.babylonjs.istencilstateMod.IStencilState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,38 +9,36 @@ object stencilStateMod {
   
   @JSImport("babylonjs/States/stencilState", "StencilState")
   @js.native
-  class StencilState () extends StObject {
+  open class StencilState ()
+    extends StObject
+       with IStencilState {
     
-    /* private */ var _isStencilFuncDirty: js.Any = js.native
+    /* CompleteClass */
+    var enabled: Boolean = js.native
     
-    /* private */ var _isStencilMaskDirty: js.Any = js.native
+    /* CompleteClass */
+    var func: Double = js.native
     
-    /* private */ var _isStencilOpDirty: js.Any = js.native
+    /* CompleteClass */
+    var funcMask: Double = js.native
     
-    /* private */ var _isStencilTestDirty: js.Any = js.native
+    /* CompleteClass */
+    var funcRef: Double = js.native
     
-    /* private */ var _stencilFunc: js.Any = js.native
+    /* CompleteClass */
+    var mask: Double = js.native
     
-    /* private */ var _stencilFuncMask: js.Any = js.native
+    /* CompleteClass */
+    var opDepthFail: Double = js.native
     
-    /* private */ var _stencilFuncRef: js.Any = js.native
+    /* CompleteClass */
+    var opStencilDepthPass: Double = js.native
     
-    /* private */ var _stencilMask: js.Any = js.native
+    /* CompleteClass */
+    var opStencilFail: Double = js.native
     
-    /* private */ var _stencilOpDepthFail: js.Any = js.native
-    
-    /* private */ var _stencilOpStencilDepthPass: js.Any = js.native
-    
-    /* private */ var _stencilOpStencilFail: js.Any = js.native
-    
-    /* private */ var _stencilTest: js.Any = js.native
-    
-    @JSName("apply")
-    def apply(gl: WebGLRenderingContext): Unit = js.native
-    
-    def isDirty: Boolean = js.native
-    
-    def reset(): Unit = js.native
+    /* CompleteClass */
+    override def reset(): Unit = js.native
     
     def stencilFunc: Double = js.native
     

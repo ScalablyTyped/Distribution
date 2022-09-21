@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__color-util
 
-Typings are for version 2.0.5
+Typings are for version 2.0.6
 
 ## Library description:
 A common util collection for antv projects
@@ -10,10 +10,10 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/color-util |
 | Keywords           | util, antv, g |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 678596 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 271867.6666666667 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/util#readme)

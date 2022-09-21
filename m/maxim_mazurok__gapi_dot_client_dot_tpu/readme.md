@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_tpu
 
-Typings are for version 1.0.20201023
+Typings are for version 1.0.20220725
 
 ## Library description:
 TypeScript typings for Cloud TPU API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud TPU API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.tpu |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 572 |
-| # stars            | 0 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 633.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

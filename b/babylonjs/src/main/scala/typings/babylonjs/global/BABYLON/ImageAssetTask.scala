@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ImageAssetTask")
 @js.native
-class ImageAssetTask protected ()
+open class ImageAssetTask protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ImageAssetTask {
   /**

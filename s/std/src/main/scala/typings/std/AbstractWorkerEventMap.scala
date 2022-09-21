@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AbstractWorkerEventMap extends StObject {
   
+  /* standard dom */
   var error: ErrorEvent
 }
 object AbstractWorkerEventMap {

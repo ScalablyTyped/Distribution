@@ -3,11 +3,11 @@ package typings.appBuilderLib
 import typings.appBuilderLib.appInfoMod.AppInfo
 import typings.appBuilderLib.configurationMod.AfterPackContext
 import typings.appBuilderLib.configurationMod.Configuration
+import typings.appBuilderLib.coreMod.Platform
 import typings.appBuilderLib.coreMod.SourceRepositoryInfo
+import typings.appBuilderLib.coreMod.Target
 import typings.appBuilderLib.frameworkMod.Framework
 import typings.appBuilderLib.metadataMod.Metadata
-import typings.appBuilderLib.mod.Platform
-import typings.appBuilderLib.mod.Target
 import typings.appBuilderLib.packageDependenciesMod.NodeModuleDirInfo
 import typings.appBuilderLib.packagerApiMod.ArtifactBuildStarted
 import typings.appBuilderLib.packagerApiMod.ArtifactCreated
@@ -28,11 +28,11 @@ object packagerMod {
   
   @JSImport("app-builder-lib/out/packager", "Packager")
   @js.native
-  class Packager protected () extends StObject {
+  open class Packager protected () extends StObject {
     def this(options: PackagerOptions) = this()
     def this(options: PackagerOptions, cancellationToken: CancellationToken) = this()
     
-    /* private */ var _appDir: js.Any = js.native
+    /* private */ var _appDir: Any = js.native
     
     var _appInfo: AppInfo | Null = js.native
     
@@ -51,27 +51,27 @@ object packagerMod {
       repositoryInfo: SourceRepositoryInfo
     ): js.Promise[BuildResult] = js.native
     
-    /* private */ var _buildResourcesDir: js.Any = js.native
+    /* private */ var _buildResourcesDir: Any = js.native
     
-    /* private */ var _configuration: js.Any = js.native
+    /* private */ var _configuration: Any = js.native
     
-    /* private */ var _devMetadata: js.Any = js.native
+    /* private */ var _devMetadata: Any = js.native
     
-    /* private */ var _framework: js.Any = js.native
+    /* private */ var _framework: Any = js.native
     
-    /* private */ var _isPrepackedAppAsar: js.Any = js.native
+    /* private */ var _isPrepackedAppAsar: Any = js.native
     
-    /* private */ var _metadata: js.Any = js.native
+    /* private */ var _metadata: Any = js.native
     
-    /* private */ var _nodeModulesHandledExternally: js.Any = js.native
+    /* private */ var _nodeModulesHandledExternally: Any = js.native
     
-    /* private */ var _repositoryInfo: js.Any = js.native
+    /* private */ var _repositoryInfo: Any = js.native
     
-    def addAfterPackHandler(handler: js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | Null]): Unit = js.native
+    def addAfterPackHandler(handler: js.Function1[/* context */ AfterPackContext, js.Promise[Any] | Null]): Unit = js.native
     
-    def afterPack(context: AfterPackContext): js.Promise[js.Any] = js.native
+    def afterPack(context: AfterPackContext): js.Promise[Any] = js.native
     
-    /* private */ val afterPackHandlers: js.Any = js.native
+    /* private */ val afterPackHandlers: Any = js.native
     
     def appDir: String = js.native
     
@@ -90,13 +90,15 @@ object packagerMod {
     def callArtifactBuildCompleted(event: ArtifactCreated): js.Promise[Unit] = js.native
     
     def callArtifactBuildStarted(event: ArtifactBuildStarted): js.Promise[Unit] = js.native
-    def callArtifactBuildStarted(event: ArtifactBuildStarted, logFields: js.Any): js.Promise[Unit] = js.native
+    def callArtifactBuildStarted(event: ArtifactBuildStarted, logFields: Any): js.Promise[Unit] = js.native
+    
+    def callMsiProjectCreated(path: String): js.Promise[Unit] = js.native
     
     val cancellationToken: CancellationToken = js.native
     
     def config: Configuration = js.native
     
-    /* private */ var createHelper: js.Any = js.native
+    /* private */ var createHelper: Any = js.native
     
     val debugLogger: DebugLogger = js.native
     
@@ -109,7 +111,7 @@ object packagerMod {
     
     def disposeOnBuildFinish(disposer: js.Function0[js.Promise[Unit]]): Unit = js.native
     
-    /* private */ var doBuild: js.Any = js.native
+    /* private */ var doBuild: Any = js.native
     
     val eventEmitter: EventEmitter = js.native
     
@@ -118,7 +120,7 @@ object packagerMod {
     def getNodeDependencyInfo(): Lazy[js.Array[NodeModuleDirInfo]] = js.native
     def getNodeDependencyInfo(platform: Platform): Lazy[js.Array[NodeModuleDirInfo]] = js.native
     
-    /* private */ var installAppDependencies: js.Any = js.native
+    def installAppDependencies(platform: Platform, arch: Arch): js.Promise[Any] = js.native
     
     def isPrepackedAppAsar: Boolean = js.native
     
@@ -126,23 +128,23 @@ object packagerMod {
     
     def metadata: Metadata = js.native
     
-    /* private */ var nodeDependencyInfo: js.Any = js.native
+    /* private */ var nodeDependencyInfo: Any = js.native
     
     val options: PackagerOptions = js.native
     
     val projectDir: String = js.native
     
-    /* private */ var readProjectMetadataIfTwoPackageStructureOrPrepacked: js.Any = js.native
+    /* private */ var readProjectMetadataIfTwoPackageStructureOrPrepacked: Any = js.native
     
     def relativeBuildResourcesDirname: String = js.native
     
     def repositoryInfo: js.Promise[SourceRepositoryInfo | Null] = js.native
     
-    def stageDirPathCustomizer(target: Target, packager: PlatformPackager[js.Any], arch: Arch): String = js.native
+    def stageDirPathCustomizer(target: Target, packager: PlatformPackager[Any], arch: Arch): String = js.native
     
     val tempDirManager: TmpDir = js.native
     
-    /* private */ val toDispose: js.Any = js.native
+    /* private */ val toDispose: Any = js.native
   }
   
   trait BuildResult extends StObject {
@@ -171,7 +173,7 @@ object packagerMod {
       
       inline def setArtifactPaths(value: js.Array[String]): Self = StObject.set(x, "artifactPaths", value.asInstanceOf[js.Any])
       
-      inline def setArtifactPathsVarargs(value: String*): Self = StObject.set(x, "artifactPaths", js.Array(value :_*))
+      inline def setArtifactPathsVarargs(value: String*): Self = StObject.set(x, "artifactPaths", js.Array(value*))
       
       inline def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       

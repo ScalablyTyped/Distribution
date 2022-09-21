@@ -71,7 +71,7 @@ object LocalResultPoi {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

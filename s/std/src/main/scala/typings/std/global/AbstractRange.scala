@@ -7,37 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AbstractRange")
 @js.native
-class AbstractRange ()
+/* standard dom */
+open class AbstractRange ()
   extends StObject
      with typings.std.AbstractRange {
   
-  /**
-    * Returns true if range is collapsed, and false otherwise.
-    */
+  /** Returns true if range is collapsed, and false otherwise. */
+  /* standard dom */
   /* CompleteClass */
   override val collapsed: scala.Boolean = js.native
   
-  /**
-    * Returns range's end node.
-    */
+  /** Returns range's end node. */
+  /* standard dom */
   /* CompleteClass */
   override val endContainer: typings.std.Node = js.native
   
-  /**
-    * Returns range's end offset.
-    */
+  /** Returns range's end offset. */
+  /* standard dom */
   /* CompleteClass */
   override val endOffset: Double = js.native
   
-  /**
-    * Returns range's start node.
-    */
+  /** Returns range's start node. */
+  /* standard dom */
   /* CompleteClass */
   override val startContainer: typings.std.Node = js.native
   
-  /**
-    * Returns range's start offset.
-    */
+  /** Returns range's start offset. */
+  /* standard dom */
   /* CompleteClass */
   override val startOffset: Double = js.native
 }

@@ -10,10 +10,10 @@ object borderColorMod {
   
   @JSImport("material-ui/svg-icons/editor/border-color", JSImport.Default)
   @js.native
-  class default () extends EditorBorderColor
+  open class default () extends EditorBorderColor
   
   @JSImport("material-ui/svg-icons/editor/border-color", "EditorBorderColor")
   @js.native
-  class EditorBorderColor ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorBorderColor ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

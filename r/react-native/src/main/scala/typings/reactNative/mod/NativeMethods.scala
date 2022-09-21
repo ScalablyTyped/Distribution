@@ -68,12 +68,12 @@ trait NativeMethods extends StObject {
     * _Can also be called with a relativeNativeNodeHandle but is deprecated._
     */
   def measureLayout(
-    relativeToNativeComponentRef: HostComponent[js.Any],
+    relativeToNativeComponentRef: HostComponent[Any],
     onSuccess: MeasureLayoutOnSuccessCallback,
     onFail: js.Function0[Unit]
   ): Unit = js.native
   
-  var refs: StringDictionary[Component[js.Any, js.Any, js.Any]] = js.native
+  var refs: StringDictionary[Component[Any, Any, Any]] = js.native
   
   /**
     * This function sends props straight to native. They will not participate in

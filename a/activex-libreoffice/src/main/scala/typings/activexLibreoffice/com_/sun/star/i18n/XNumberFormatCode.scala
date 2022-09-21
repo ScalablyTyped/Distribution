@@ -49,7 +49,7 @@ object XNumberFormatCode {
     getAllFormatCodes: Locale => SafeArray[NumberFormatCode],
     getDefault: (Double, Double, Locale) => NumberFormatCode,
     getFormatCode: (Double, Locale) => NumberFormatCode,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XNumberFormatCode = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAllFormatCode = js.Any.fromFunction2(getAllFormatCode), getAllFormatCodes = js.Any.fromFunction1(getAllFormatCodes), getDefault = js.Any.fromFunction3(getDefault), getFormatCode = js.Any.fromFunction2(getFormatCode), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

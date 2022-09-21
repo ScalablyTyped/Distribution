@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   3. In conjunction with Any & All clauses
   */
 /* static member */
-inline def Expression(): typings.camljs.mod.IFieldExpression = typings.camljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Expression")().asInstanceOf[typings.camljs.mod.IFieldExpression]
+inline def Expression(): IFieldExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("Expression")().asInstanceOf[IFieldExpression]
 
 /* static member */
-inline def FromXml(xml: java.lang.String): typings.camljs.mod.IRawQuery = typings.camljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("FromXml")(xml.asInstanceOf[js.Any]).asInstanceOf[typings.camljs.mod.IRawQuery]
+inline def FromXml(xml: String): IRawQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("FromXml")(xml.asInstanceOf[js.Any]).asInstanceOf[IRawQuery]
 
-type IGroupedQuery = typings.camljs.mod.ISortable
+type IGroupedQuery = ISortable
 
-type ViewField = java.lang.String | typings.camljs.mod.Aggregation
+type ViewField = String | Aggregation

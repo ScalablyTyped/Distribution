@@ -13,15 +13,21 @@ object MapMode2D extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MapMode2D & Double] = js.native
   
+  /**
+    * The 2D map can be scrolled infinitely in the horizontal direction.
+    */
   @js.native
   sealed trait INFINITE_SCROLL
     extends StObject
        with MapMode2D
-  /* 0 */ val INFINITE_SCROLL: typings.cesium.mod.MapMode2D.INFINITE_SCROLL & Double = js.native
+  /* 1 */ val INFINITE_SCROLL: typings.cesium.mod.MapMode2D.INFINITE_SCROLL & Double = js.native
   
+  /**
+    * The 2D map can be rotated about the z axis.
+    */
   @js.native
   sealed trait ROTATE
     extends StObject
        with MapMode2D
-  /* 1 */ val ROTATE: typings.cesium.mod.MapMode2D.ROTATE & Double = js.native
+  /* 0 */ val ROTATE: typings.cesium.mod.MapMode2D.ROTATE & Double = js.native
 }

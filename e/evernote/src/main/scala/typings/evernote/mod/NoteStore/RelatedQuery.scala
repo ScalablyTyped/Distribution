@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.RelatedQuery")
 @js.native
-class RelatedQuery () extends StObject {
+open class RelatedQuery () extends StObject {
   def this(args: CacheKey) = this()
   
   var cacheKey: js.UndefOr[String] = js.native

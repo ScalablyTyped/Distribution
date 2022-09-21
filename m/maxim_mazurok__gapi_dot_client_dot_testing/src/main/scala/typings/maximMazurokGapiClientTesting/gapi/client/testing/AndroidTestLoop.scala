@@ -50,12 +50,12 @@ object AndroidTestLoop {
     
     inline def setScenarioLabelsUndefined: Self = StObject.set(x, "scenarioLabels", js.undefined)
     
-    inline def setScenarioLabelsVarargs(value: String*): Self = StObject.set(x, "scenarioLabels", js.Array(value :_*))
+    inline def setScenarioLabelsVarargs(value: String*): Self = StObject.set(x, "scenarioLabels", js.Array(value*))
     
     inline def setScenarios(value: js.Array[Double]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
     
     inline def setScenariosUndefined: Self = StObject.set(x, "scenarios", js.undefined)
     
-    inline def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+    inline def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value*))
   }
 }

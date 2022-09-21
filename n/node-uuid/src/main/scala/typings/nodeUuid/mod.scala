@@ -1,7 +1,6 @@
 package typings.nodeUuid
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,13 +118,13 @@ object mod {
       * (Number | Date) Time in milliseconds since unix Epoch.
       * Default: The current time is used.
       */
-    var msecs: js.UndefOr[Double | Date] = js.undefined
+    var msecs: js.UndefOr[Double | js.Date] = js.undefined
     
     /**
       * Node id as Array of 6 bytes (per 4.1.6).
       * Default: Randomly generated ID. See note 1.
       */
-    var node: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var node: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * (Number between 0-9999) additional time, in 100-nanosecond units. Ignored if msecs is unspecified.
@@ -146,15 +145,15 @@ object mod {
       
       inline def setClockseqUndefined: Self = StObject.set(x, "clockseq", js.undefined)
       
-      inline def setMsecs(value: Double | Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
+      inline def setMsecs(value: Double | js.Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
       
       inline def setMsecsUndefined: Self = StObject.set(x, "msecs", js.undefined)
       
-      inline def setNode(value: js.Array[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: js.Array[Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      inline def setNodeVarargs(value: js.Any*): Self = StObject.set(x, "node", js.Array(value :_*))
+      inline def setNodeVarargs(value: Any*): Self = StObject.set(x, "node", js.Array(value*))
       
       inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
       

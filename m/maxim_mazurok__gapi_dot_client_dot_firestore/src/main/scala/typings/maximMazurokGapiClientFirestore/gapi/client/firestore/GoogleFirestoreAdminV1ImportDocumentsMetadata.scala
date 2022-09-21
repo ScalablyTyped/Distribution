@@ -40,7 +40,7 @@ object GoogleFirestoreAdminV1ImportDocumentsMetadata {
     
     inline def setCollectionIdsUndefined: Self = StObject.set(x, "collectionIds", js.undefined)
     
-    inline def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value :_*))
+    inline def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value*))
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

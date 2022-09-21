@@ -1,7 +1,7 @@
 
 # Scala.js typings for rxjs-compat
 
-Typings are for version 6.6.3
+Typings are for version 6.6.7
 
 ## Library description:
 [![CircleCI](https://circleci.com/gh/ReactiveX/rxjs/tree/6.x.svg?style=svg)](https://circleci.com/gh/ReactiveX/rxjs/tree/6.x) [![npm version](https://badge.fury.io/js/%40reactivex%2Frxjs.svg)](http://badge.fury.io/js/%40reactivex%2Frxjs) [![Join the chat
@@ -10,10 +10,10 @@ Typings are for version 6.6.3
 | ------------------ | :-------------: |
 | Full name          | rxjs-compat |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 683 |
-| # downloads        | 19597429 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1677187.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/rxjs-compat)

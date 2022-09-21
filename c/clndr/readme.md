@@ -10,10 +10,10 @@ A jQuery calendar plugin that uses HTML templates.
 | ------------------ | :-------------: |
 | Full name          | clndr |
 | Keywords           | clndr, calendar, jquery, plugin, widget, jquery-plugin |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 107698 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10802.333333333334 |
+| # stars            | 2792.0 |
 
 ## Links
 - [Homepage](https://github.com/kylestetz/CLNDR)

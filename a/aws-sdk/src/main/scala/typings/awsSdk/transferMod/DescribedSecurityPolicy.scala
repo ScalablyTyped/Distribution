@@ -55,24 +55,24 @@ object DescribedSecurityPolicy {
     
     inline def setSshCiphersUndefined: Self = StObject.set(x, "SshCiphers", js.undefined)
     
-    inline def setSshCiphersVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshCiphers", js.Array(value :_*))
+    inline def setSshCiphersVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshCiphers", js.Array(value*))
     
     inline def setSshKexs(value: SecurityPolicyOptions): Self = StObject.set(x, "SshKexs", value.asInstanceOf[js.Any])
     
     inline def setSshKexsUndefined: Self = StObject.set(x, "SshKexs", js.undefined)
     
-    inline def setSshKexsVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshKexs", js.Array(value :_*))
+    inline def setSshKexsVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshKexs", js.Array(value*))
     
     inline def setSshMacs(value: SecurityPolicyOptions): Self = StObject.set(x, "SshMacs", value.asInstanceOf[js.Any])
     
     inline def setSshMacsUndefined: Self = StObject.set(x, "SshMacs", js.undefined)
     
-    inline def setSshMacsVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshMacs", js.Array(value :_*))
+    inline def setSshMacsVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "SshMacs", js.Array(value*))
     
     inline def setTlsCiphers(value: SecurityPolicyOptions): Self = StObject.set(x, "TlsCiphers", value.asInstanceOf[js.Any])
     
     inline def setTlsCiphersUndefined: Self = StObject.set(x, "TlsCiphers", js.undefined)
     
-    inline def setTlsCiphersVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "TlsCiphers", js.Array(value :_*))
+    inline def setTlsCiphersVarargs(value: SecurityPolicyOption*): Self = StObject.set(x, "TlsCiphers", js.Array(value*))
   }
 }

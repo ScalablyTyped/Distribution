@@ -29,7 +29,7 @@ object ListNamedQueriesOutput {
     
     inline def setNamedQueryIdsUndefined: Self = StObject.set(x, "NamedQueryIds", js.undefined)
     
-    inline def setNamedQueryIdsVarargs(value: NamedQueryId*): Self = StObject.set(x, "NamedQueryIds", js.Array(value :_*))
+    inline def setNamedQueryIdsVarargs(value: NamedQueryId*): Self = StObject.set(x, "NamedQueryIds", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

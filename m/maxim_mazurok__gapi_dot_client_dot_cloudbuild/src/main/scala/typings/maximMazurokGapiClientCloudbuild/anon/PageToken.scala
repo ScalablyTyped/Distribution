@@ -28,17 +28,17 @@ trait PageToken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Number of results to return in the list. */
+  /** The maximum number of `WorkerPool`s to return. The service may return fewer than this value. If omitted, the server will use a sensible default. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** Token to provide to skip to a particular spot in the list. */
+  /** A page token, received from a previous `ListWorkerPools` call. Provide this to retrieve the subsequent page. */
   var pageToken: js.UndefOr[String] = js.undefined
+  
+  /** Required. The parent of the collection of `WorkerPools`. Format: `projects/{project}/locations/{location}`. */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
-  
-  /** Required. ID of the project for which to list BuildTriggers. */
-  var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
@@ -51,8 +51,8 @@ trait PageToken extends StObject {
 }
 object PageToken {
   
-  inline def apply(projectId: String): PageToken = {
-    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
+  inline def apply(parent: String): PageToken = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageToken]
   }
   
@@ -94,11 +94,11 @@ object PageToken {
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
-    
-    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     

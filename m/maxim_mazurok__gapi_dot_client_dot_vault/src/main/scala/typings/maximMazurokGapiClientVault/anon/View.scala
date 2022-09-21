@@ -43,7 +43,7 @@ trait View extends StObject {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
   
-  /** Specifies which parts of the Matter to return in the response. */
+  /** Specifies how much information about the matter to return in the response. */
   var view: js.UndefOr[String] = js.undefined
 }
 object View {

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response for ListInstanceConfigs.
-  */
 trait SchemaListInstanceConfigsResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaListInstanceConfigsResponse extends StObject {
   var instanceConfigs: js.UndefOr[js.Array[SchemaInstanceConfig]] = js.undefined
   
   /**
-    * `next_page_token` can be sent in a subsequent ListInstanceConfigs call to
-    * fetch more of the matching instance configurations.
+    * `next_page_token` can be sent in a subsequent ListInstanceConfigs call to fetch more of the matching instance configurations.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListInstanceConfigsResponse {
   
@@ -33,9 +29,11 @@ object SchemaListInstanceConfigsResponse {
     
     inline def setInstanceConfigsUndefined: Self = StObject.set(x, "instanceConfigs", js.undefined)
     
-    inline def setInstanceConfigsVarargs(value: SchemaInstanceConfig*): Self = StObject.set(x, "instanceConfigs", js.Array(value :_*))
+    inline def setInstanceConfigsVarargs(value: SchemaInstanceConfig*): Self = StObject.set(x, "instanceConfigs", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

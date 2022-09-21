@@ -10,7 +10,7 @@ object stringgeneratorMod {
   
   @JSImport("rot-js/lib/stringgenerator", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with StringGenerator {
     def this(options: PartialOptionsOrder) = this()
@@ -228,7 +228,7 @@ object stringgeneratorMod {
       
       inline def set_prefix(value: js.Array[String]): Self = StObject.set(x, "_prefix", value.asInstanceOf[js.Any])
       
-      inline def set_prefixVarargs(value: String*): Self = StObject.set(x, "_prefix", js.Array(value :_*))
+      inline def set_prefixVarargs(value: String*): Self = StObject.set(x, "_prefix", js.Array(value*))
       
       inline def set_priorValues(value: StringDictionary[Double]): Self = StObject.set(x, "_priorValues", value.asInstanceOf[js.Any])
       

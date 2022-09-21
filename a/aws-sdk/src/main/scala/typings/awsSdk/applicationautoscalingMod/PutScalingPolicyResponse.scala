@@ -29,7 +29,7 @@ object PutScalingPolicyResponse {
     
     inline def setAlarmsUndefined: Self = StObject.set(x, "Alarms", js.undefined)
     
-    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "Alarms", js.Array(value :_*))
+    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "Alarms", js.Array(value*))
     
     inline def setPolicyARN(value: ResourceIdMaxLen1600): Self = StObject.set(x, "PolicyARN", value.asInstanceOf[js.Any])
   }

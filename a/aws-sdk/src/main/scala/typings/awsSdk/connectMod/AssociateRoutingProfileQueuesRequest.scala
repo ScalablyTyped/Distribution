@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateRoutingProfileQueuesRequest extends StObject {
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
@@ -38,7 +38,7 @@ object AssociateRoutingProfileQueuesRequest {
     
     inline def setQueueConfigs(value: RoutingProfileQueueConfigList): Self = StObject.set(x, "QueueConfigs", value.asInstanceOf[js.Any])
     
-    inline def setQueueConfigsVarargs(value: RoutingProfileQueueConfig*): Self = StObject.set(x, "QueueConfigs", js.Array(value :_*))
+    inline def setQueueConfigsVarargs(value: RoutingProfileQueueConfig*): Self = StObject.set(x, "QueueConfigs", js.Array(value*))
     
     inline def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
   }

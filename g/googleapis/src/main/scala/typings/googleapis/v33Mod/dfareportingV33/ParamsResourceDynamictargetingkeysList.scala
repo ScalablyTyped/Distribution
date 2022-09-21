@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +12,6 @@ trait ParamsResourceDynamictargetingkeysList
     * Select only dynamic targeting keys whose object has this advertiser ID.
     */
   var advertiserId: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only dynamic targeting keys exactly matching these names.
@@ -55,15 +46,11 @@ object ParamsResourceDynamictargetingkeysList {
     
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

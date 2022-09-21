@@ -44,7 +44,7 @@ object global {
     
     @JSGlobal("wx.OpenCardObj")
     @js.native
-    class OpenCardObj ()
+    open class OpenCardObj ()
       extends StObject
          with typings.wxJsSdkDt.wx.OpenCardObj {
       
@@ -99,7 +99,7 @@ object global {
       * 配置微信初始化失败后的回调
       * @param err 失败回调
       */
-    inline def error(err: js.Function1[/* res */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def error(err: js.Function1[/* res */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取本地图片接口,此接口仅在 iOS WKWebview 下提供，用于兼容 iOS WKWebview 不支持 localId 直接显示图片的问题

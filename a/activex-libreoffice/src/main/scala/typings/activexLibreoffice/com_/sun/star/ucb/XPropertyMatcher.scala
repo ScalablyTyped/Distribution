@@ -27,7 +27,7 @@ object XPropertyMatcher {
   inline def apply(
     acquire: () => Unit,
     matches: (XCommandProcessor, XCommandEnvironment) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPropertyMatcher = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), matches = js.Any.fromFunction2(matches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

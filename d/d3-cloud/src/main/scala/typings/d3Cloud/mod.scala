@@ -128,8 +128,8 @@ object mod {
         def fontWeight(weight: js.Function2[/* datum */ T, /* index */ Double, String | Double]): Cloud_[T] = js.native
         def fontWeight(weight: Double): Cloud_[T] = js.native
         
-        def on(`type`: String): js.Function1[/* repeated */ js.Any, Unit] = js.native
-        def on(`type`: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Cloud_[T] = js.native
+        def on(`type`: String): js.Function1[/* repeated */ Any, Unit] = js.native
+        def on(`type`: String, listener: js.Function1[/* repeated */ Any, Unit]): Cloud_[T] = js.native
         @JSName("on")
         def on_end(`type`: end): js.Function2[/* tags */ js.Array[T], /* bounds */ js.Array[X], Unit] = js.native
         @JSName("on")
@@ -165,7 +165,7 @@ object mod {
               ] = js.native
         def spiral(name: String): Cloud_[T] = js.native
         def spiral(
-          spiral: js.Function1[
+          name: js.Function1[
                   /* size */ js.Tuple2[Double, Double], 
                   js.Function1[/* t */ Double, js.Tuple2[Double, Double]]
                 ]

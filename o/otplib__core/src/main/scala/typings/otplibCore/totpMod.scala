@@ -26,7 +26,7 @@ object totpMod {
     *
     * @param defaultOptions used to override or add existing defaultOptions.
     */
-  class TOTP[T /* <: TOTPOptions_[String] */] () extends HOTP[T] {
+  open class TOTP[T /* <: TOTPOptions_[String] */] () extends HOTP[T] {
     def this(defaultOptions: Partial[T]) = this()
     
     /**
@@ -71,7 +71,7 @@ object totpMod {
     def verify(opts: Secret): Boolean = js.native
   }
   
-  inline def totpCheck[T /* <: TOTPOptions_[js.Any] */](token: String, secret: SecretKey, options: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheck")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def totpCheck[T /* <: TOTPOptions_[Any] */](token: String, secret: SecretKey, options: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheck")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def totpCheckByEpoch[T /* <: TOTPOptions_[String] */](epochs: js.Array[Double], token: String, secret: SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheckByEpoch")(epochs.asInstanceOf[js.Any], token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
@@ -83,16 +83,16 @@ object totpMod {
   @js.native
   val totpCreateHmacKey: CreateHmacKey[HexString] = js.native
   
-  inline def totpDefaultOptions[T /* <: TOTPOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("totpDefaultOptions")().asInstanceOf[Partial[T]]
+  inline def totpDefaultOptions[T /* <: TOTPOptions_[Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("totpDefaultOptions")().asInstanceOf[Partial[T]]
   
   inline def totpEpochAvailable(epoch: Double, step: Double, win: js.Tuple2[Double, Double]): EpochAvailable = (^.asInstanceOf[js.Dynamic].applyDynamic("totpEpochAvailable")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any], win.asInstanceOf[js.Any])).asInstanceOf[EpochAvailable]
   inline def totpEpochAvailable(epoch: Double, step: Double, win: Double): EpochAvailable = (^.asInstanceOf[js.Dynamic].applyDynamic("totpEpochAvailable")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any], win.asInstanceOf[js.Any])).asInstanceOf[EpochAvailable]
   
-  inline def totpKeyuri[T /* <: TOTPOptions_[js.Any] */](accountName: String, issuer: String, secret: SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpKeyuri")(accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def totpKeyuri[T /* <: TOTPOptions_[Any] */](accountName: String, issuer: String, secret: SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpKeyuri")(accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def totpOptions[T /* <: TOTPOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("totpOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def totpOptions[T /* <: TOTPOptions_[Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("totpOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def totpOptionsValidator[T /* <: TOTPOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("totpOptionsValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def totpOptionsValidator[T /* <: TOTPOptions_[Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("totpOptionsValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def totpPadSecret(secret: String, encoding: KeyEncodings, minLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpPadSecret")(secret.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], minLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -100,7 +100,7 @@ object totpMod {
   
   inline def totpTimeUsed(epoch: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("totpTimeUsed")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def totpToken[T /* <: TOTPOptions_[js.Any] */](secret: SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpToken")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def totpToken[T /* <: TOTPOptions_[Any] */](secret: SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpToken")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait EpochAvailable extends StObject {
     
@@ -123,11 +123,11 @@ object totpMod {
       
       inline def setFuture(value: js.Array[Double]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
       
-      inline def setFutureVarargs(value: Double*): Self = StObject.set(x, "future", js.Array(value :_*))
+      inline def setFutureVarargs(value: Double*): Self = StObject.set(x, "future", js.Array(value*))
       
       inline def setPast(value: js.Array[Double]): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
       
-      inline def setPastVarargs(value: Double*): Self = StObject.set(x, "past", js.Array(value :_*))
+      inline def setPastVarargs(value: Double*): Self = StObject.set(x, "past", js.Array(value*))
     }
   }
   

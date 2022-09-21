@@ -7,31 +7,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/index", "DiscBuilder")
-@js.native
-class DiscBuilder ()
-  extends typings.babylonjs.buildersIndexMod.DiscBuilder
-/* static members */
 object DiscBuilder {
   
   @JSImport("babylonjs/Meshes/index", "DiscBuilder")
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Creates a plane polygonal mesh.  By default, this is a disc
-    * * The parameter `radius` sets the radius size (float) of the polygon (default 0.5)
-    * * The parameter `tessellation` sets the number of polygon sides (positive integer, default 64). So a tessellation valued to 3 will build a triangle, to 4 a square, etc
-    * * You can create an unclosed polygon with the parameter `arc` (positive float, default 1), valued between 0 and 1, what is the ratio of the circumference : 2 x PI x ratio
-    * * You can also set the mesh side orientation with the values : BABYLON.Mesh.FRONTSIDE (default), BABYLON.Mesh.BACKSIDE or BABYLON.Mesh.DOUBLESIDE
-    * * If you create a double-sided mesh, you can choose what parts of the texture image to crop and stick respectively on the front and the back sides with the parameters `frontUVs` and `backUVs` (Vector4). Detail here : https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation
-    * * The mesh can be set to updatable with the boolean parameter `updatable` (default false) if its internal geometry is supposed to change once created
-    * @param name defines the name of the mesh
-    * @param options defines the options used to create the mesh
-    * @param scene defines the hosting scene
-    * @returns the plane polygonal mesh
-    * @see https://doc.babylonjs.com/how_to/set_shapes#disc-or-regular-polygon
-    */
+  @JSImport("babylonjs/Meshes/index", "DiscBuilder.CreateDisc")
+  @js.native
+  def CreateDisc: js.Function3[
+    /* name */ String, 
+    /* options */ js.UndefOr[Tessellation], 
+    /* scene */ js.UndefOr[Nullable[Scene]], 
+    typings.babylonjs.meshMod.Mesh
+  ] = js.native
+  inline def CreateDisc(name: String): typings.babylonjs.meshMod.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateDisc(name: String, options: Unit, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   inline def CreateDisc(name: String, options: Tessellation): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   inline def CreateDisc(name: String, options: Tessellation, scene: Nullable[Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDisc")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateDisc_=(
+    x: js.Function3[
+      /* name */ String, 
+      /* options */ js.UndefOr[Tessellation], 
+      /* scene */ js.UndefOr[Nullable[Scene]], 
+      typings.babylonjs.meshMod.Mesh
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateDisc")(x.asInstanceOf[js.Any])
 }

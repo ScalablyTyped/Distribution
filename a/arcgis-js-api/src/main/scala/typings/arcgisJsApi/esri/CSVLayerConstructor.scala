@@ -17,5 +17,5 @@ trait CSVLayerConstructor
 Instantiable0[CSVLayer]
      with Instantiable1[/* properties */ CSVLayerProperties, CSVLayer] {
   
-  def fromJSON(json: js.Any): CSVLayer = js.native
+  def fromJSON(json: Any): CSVLayer = js.native
 }

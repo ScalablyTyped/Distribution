@@ -4,8 +4,7 @@ import typings.browserfs.fileSystemMod.BFSCallback
 import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import typings.browserfs.fileSystemMod.BFSThreeArgCallback
 import typings.browserfs.nodeFsStatsMod.default
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object fileMod {
   
   @JSImport("browserfs/dist/node/core/file", "BaseFile")
   @js.native
-  class BaseFile () extends StObject {
+  open class BaseFile () extends StObject {
     
     def chmod(mode: Double, cb: BFSOneArgCallback): Unit = js.native
     
@@ -32,9 +31,9 @@ object fileMod {
     
     def syncSync(): Unit = js.native
     
-    def utimes(atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    def utimes(atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
-    def utimesSync(atime: Date, mtime: Date): Unit = js.native
+    def utimesSync(atime: js.Date, mtime: js.Date): Unit = js.native
   }
   
   @js.native
@@ -160,12 +159,12 @@ object fileMod {
     /**
       * **Optional**: Change the file timestamps of the file.
       */
-    def utimes(atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    def utimes(atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /**
       * **Optional**: Change the file timestamps of the file.
       */
-    def utimesSync(atime: Date, mtime: Date): Unit = js.native
+    def utimesSync(atime: js.Date, mtime: js.Date): Unit = js.native
     
     /**
       * **Core**: Write buffer to the file.

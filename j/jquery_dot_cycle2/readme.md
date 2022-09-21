@@ -10,10 +10,10 @@ A wrapper for jQuery Cycle 2
 | ------------------ | :-------------: |
 | Full name          | jquery.cycle2 |
 | Keywords           | slideshow, carousel, jquery, cycle2 |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 19847 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2744.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/jquery.cycle2)

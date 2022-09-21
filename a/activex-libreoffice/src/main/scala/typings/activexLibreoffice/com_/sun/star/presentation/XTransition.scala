@@ -27,7 +27,7 @@ object XTransition {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     update: Double => Unit,
     viewChanged: (XSlideShowView, XBitmap, XBitmap) => Unit

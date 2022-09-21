@@ -17,16 +17,16 @@ trait ASPxClientDashboardItemDataDimensionValue extends StObject {
   /**
     * Gets the unique value for the current dimension value.
     */
-  def GetUniqueValue(): js.Any
+  def GetUniqueValue(): Any
   
   /**
     * Gets the current dimension value.
     */
-  def GetValue(): js.Any
+  def GetValue(): Any
 }
 object ASPxClientDashboardItemDataDimensionValue {
   
-  inline def apply(GetDisplayText: () => String, GetUniqueValue: () => js.Any, GetValue: () => js.Any): ASPxClientDashboardItemDataDimensionValue = {
+  inline def apply(GetDisplayText: () => String, GetUniqueValue: () => Any, GetValue: () => Any): ASPxClientDashboardItemDataDimensionValue = {
     val __obj = js.Dynamic.literal(GetDisplayText = js.Any.fromFunction0(GetDisplayText), GetUniqueValue = js.Any.fromFunction0(GetUniqueValue), GetValue = js.Any.fromFunction0(GetValue))
     __obj.asInstanceOf[ASPxClientDashboardItemDataDimensionValue]
   }
@@ -35,8 +35,8 @@ object ASPxClientDashboardItemDataDimensionValue {
     
     inline def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
     
-    inline def setGetUniqueValue(value: () => js.Any): Self = StObject.set(x, "GetUniqueValue", js.Any.fromFunction0(value))
+    inline def setGetUniqueValue(value: () => Any): Self = StObject.set(x, "GetUniqueValue", js.Any.fromFunction0(value))
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
   }
 }

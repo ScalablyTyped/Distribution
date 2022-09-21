@@ -39,6 +39,6 @@ object ProjectsGetXpnResources {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: XpnResourceId*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: XpnResourceId*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

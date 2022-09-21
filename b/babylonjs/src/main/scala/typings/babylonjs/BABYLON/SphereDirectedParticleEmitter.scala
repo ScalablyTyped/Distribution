@@ -22,27 +22,27 @@ trait SphereDirectedParticleEmitter
     * Called by the particle System when the direction is computed for the created particle.
     * @param worldMatrix is the world matrix of the particle system
     * @param directionToUpdate is the direction vector to update with the result
-    * @param particle is the particle we are computed the direction for
     */
-  def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle): Unit
+  def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3): Unit
 }
 object SphereDirectedParticleEmitter {
   
   inline def apply(
-    applyToShader: Effect => Unit,
+    applyToShader: UniformBufferEffectCommonAccessor => Unit,
+    buildUniformLayout: UniformBuffer => Unit,
     direction1: Vector3,
     direction2: Vector3,
     directionRandomizer: Double,
     getClassName: () => String,
     getEffectDefines: () => String,
-    parse: js.Any => Unit,
+    parse: Any => Unit,
     radius: Double,
     radiusRange: Double,
-    serialize: () => js.Any,
-    startDirectionFunction: (Matrix, Vector3, Particle) => Unit,
+    serialize: () => Any,
+    startDirectionFunction: (Matrix, Vector3) => Unit,
     startPositionFunction: (Matrix, Vector3, Particle, Boolean) => Unit
   ): SphereDirectedParticleEmitter = {
-    val __obj = js.Dynamic.literal(applyToShader = js.Any.fromFunction1(applyToShader), direction1 = direction1.asInstanceOf[js.Any], direction2 = direction2.asInstanceOf[js.Any], directionRandomizer = directionRandomizer.asInstanceOf[js.Any], getClassName = js.Any.fromFunction0(getClassName), getEffectDefines = js.Any.fromFunction0(getEffectDefines), parse = js.Any.fromFunction1(parse), radius = radius.asInstanceOf[js.Any], radiusRange = radiusRange.asInstanceOf[js.Any], serialize = js.Any.fromFunction0(serialize), startDirectionFunction = js.Any.fromFunction3(startDirectionFunction), startPositionFunction = js.Any.fromFunction4(startPositionFunction))
+    val __obj = js.Dynamic.literal(applyToShader = js.Any.fromFunction1(applyToShader), buildUniformLayout = js.Any.fromFunction1(buildUniformLayout), direction1 = direction1.asInstanceOf[js.Any], direction2 = direction2.asInstanceOf[js.Any], directionRandomizer = directionRandomizer.asInstanceOf[js.Any], getClassName = js.Any.fromFunction0(getClassName), getEffectDefines = js.Any.fromFunction0(getEffectDefines), parse = js.Any.fromFunction1(parse), radius = radius.asInstanceOf[js.Any], radiusRange = radiusRange.asInstanceOf[js.Any], serialize = js.Any.fromFunction0(serialize), startDirectionFunction = js.Any.fromFunction2(startDirectionFunction), startPositionFunction = js.Any.fromFunction4(startPositionFunction))
     __obj.asInstanceOf[SphereDirectedParticleEmitter]
   }
   
@@ -52,6 +52,6 @@ object SphereDirectedParticleEmitter {
     
     inline def setDirection2(value: Vector3): Self = StObject.set(x, "direction2", value.asInstanceOf[js.Any])
     
-    inline def setStartDirectionFunction(value: (Matrix, Vector3, Particle) => Unit): Self = StObject.set(x, "startDirectionFunction", js.Any.fromFunction3(value))
+    inline def setStartDirectionFunction(value: (Matrix, Vector3) => Unit): Self = StObject.set(x, "startDirectionFunction", js.Any.fromFunction2(value))
   }
 }

@@ -13,7 +13,7 @@ object themeMod {
   
   @JSImport("playable/dist/src/modules/ui/core/theme", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.playable.themeServiceMod.default {
     def this(hasThemeConfig: ThemeConfig) = this()
   }

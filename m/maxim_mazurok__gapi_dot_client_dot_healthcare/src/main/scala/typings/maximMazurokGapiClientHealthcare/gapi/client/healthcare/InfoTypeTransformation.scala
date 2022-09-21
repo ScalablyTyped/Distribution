@@ -19,10 +19,10 @@ trait InfoTypeTransformation extends StObject {
   var infoTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Config for text redaction. */
-  var redactConfig: js.UndefOr[js.Any] = js.undefined
+  var redactConfig: js.UndefOr[Any] = js.undefined
   
   /** Config for replace with InfoType. */
-  var replaceWithInfoTypeConfig: js.UndefOr[js.Any] = js.undefined
+  var replaceWithInfoTypeConfig: js.UndefOr[Any] = js.undefined
 }
 object InfoTypeTransformation {
   
@@ -49,13 +49,13 @@ object InfoTypeTransformation {
     
     inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    inline def setInfoTypesVarargs(value: String*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: String*): Self = StObject.set(x, "infoTypes", js.Array(value*))
     
-    inline def setRedactConfig(value: js.Any): Self = StObject.set(x, "redactConfig", value.asInstanceOf[js.Any])
+    inline def setRedactConfig(value: Any): Self = StObject.set(x, "redactConfig", value.asInstanceOf[js.Any])
     
     inline def setRedactConfigUndefined: Self = StObject.set(x, "redactConfig", js.undefined)
     
-    inline def setReplaceWithInfoTypeConfig(value: js.Any): Self = StObject.set(x, "replaceWithInfoTypeConfig", value.asInstanceOf[js.Any])
+    inline def setReplaceWithInfoTypeConfig(value: Any): Self = StObject.set(x, "replaceWithInfoTypeConfig", value.asInstanceOf[js.Any])
     
     inline def setReplaceWithInfoTypeConfigUndefined: Self = StObject.set(x, "replaceWithInfoTypeConfig", js.undefined)
   }

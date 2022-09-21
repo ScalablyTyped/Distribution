@@ -4,21 +4,18 @@
 Typings are for version 0.1
 
 ## Library description:
-Parse package name with semver, path, scoped name support
+Parse npm package name into name, version and path
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | parse-package-name |
-| Keywords           | parse, package, name |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 1541947 |
-| # stars            | 0 |
+| Keywords           | - |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 786349.3333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/egoist/parse-package-name#readme)
-- [Bugs](https://github.com/egoist/parse-package-name/issues)
-- [Repository](https://github.com/egoist/parse-package-name)
 - [Npm](https://www.npmjs.com/package/parse-package-name)
     
 

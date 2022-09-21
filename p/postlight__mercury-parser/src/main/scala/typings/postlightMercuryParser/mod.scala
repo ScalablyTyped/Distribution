@@ -1,6 +1,6 @@
 package typings.postlightMercuryParser
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.postlightMercuryParser.postlightMercuryParserStrings.html
 import typings.postlightMercuryParser.postlightMercuryParserStrings.ltr
 import typings.postlightMercuryParser.postlightMercuryParserStrings.markdown

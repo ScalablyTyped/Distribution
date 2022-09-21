@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdvancedSecurityOptions extends StObject {
   
   /**
+    * Specifies the Anonymous Auth Disable Date when Anonymous Auth is enabled.
+    */
+  var AnonymousAuthDisableDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * True if Anonymous auth is enabled. Anonymous auth can be enabled only when AdvancedSecurity is enabled on existing domains.
+    */
+  var AnonymousAuthEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * True if advanced security is enabled.
     */
   var Enabled: js.UndefOr[Boolean] = js.undefined
@@ -29,6 +39,14 @@ object AdvancedSecurityOptions {
   }
   
   extension [Self <: AdvancedSecurityOptions](x: Self) {
+    
+    inline def setAnonymousAuthDisableDate(value: js.Date): Self = StObject.set(x, "AnonymousAuthDisableDate", value.asInstanceOf[js.Any])
+    
+    inline def setAnonymousAuthDisableDateUndefined: Self = StObject.set(x, "AnonymousAuthDisableDate", js.undefined)
+    
+    inline def setAnonymousAuthEnabled(value: Boolean): Self = StObject.set(x, "AnonymousAuthEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAnonymousAuthEnabledUndefined: Self = StObject.set(x, "AnonymousAuthEnabled", js.undefined)
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

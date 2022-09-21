@@ -1,6 +1,5 @@
 package typings.dateFns.anon
 
-import typings.dateFns.dateFnsNumbers.`1`
 import typings.dateFns.dateFnsNumbers.`2`
 import typings.dateFns.dateFnsNumbers.`3`
 import typings.dateFns.dateFnsNumbers.`4`
@@ -14,7 +13,9 @@ trait Locale extends StObject {
   
   var locale: js.UndefOr[typings.dateFns.mod.Locale] = js.undefined
   
-  var weekStartsOn: js.UndefOr[typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
+  var weekStartsOn: js.UndefOr[
+    typings.dateFns.dateFnsNumbers.`0` | typings.dateFns.dateFnsNumbers.`1` | `2` | `3` | `4` | `5` | `6`
+  ] = js.undefined
 }
 object Locale {
   
@@ -29,7 +30,9 @@ object Locale {
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setWeekStartsOn(value: typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "weekStartsOn", value.asInstanceOf[js.Any])
+    inline def setWeekStartsOn(
+      value: typings.dateFns.dateFnsNumbers.`0` | typings.dateFns.dateFnsNumbers.`1` | `2` | `3` | `4` | `5` | `6`
+    ): Self = StObject.set(x, "weekStartsOn", value.asInstanceOf[js.Any])
     
     inline def setWeekStartsOnUndefined: Self = StObject.set(x, "weekStartsOn", js.undefined)
   }

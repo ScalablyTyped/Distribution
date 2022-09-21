@@ -3,30 +3,31 @@ package typings.sentryTypes
 import org.scalablytyped.runtime.StringDictionary
 import typings.sentryTypes.anon.Data
 import typings.sentryTypes.anon.Description
+import typings.sentryTypes.anon.Method
+import typings.sentryTypes.anon.PartialDynamicSamplingCon
+import typings.sentryTypes.anon.PartialTransactionMetadat
 import typings.sentryTypes.anon.PickSpanContextExcludekey
-import typings.sentryTypes.anon.Value
+import typings.sentryTypes.measurementMod.MeasurementUnit
 import typings.sentryTypes.miscMod.ExtractedNodeRequestData
+import typings.sentryTypes.miscMod.Primitive
 import typings.sentryTypes.miscMod.WorkerLocation
 import typings.sentryTypes.spanMod.Span
 import typings.sentryTypes.spanMod.SpanContext
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionMod {
   
-  type CustomSamplingContext = StringDictionary[js.Any]
-  
-  type Measurements = Record[String, Value]
+  type CustomSamplingContext = StringDictionary[Any]
   
   trait SamplingContext
     extends StObject
        with CustomSamplingContext {
     
     /**
-      * Object representing the URL of the current page or worker script. Passed by default in a browser or service worker
-      * context.
+      * Object representing the URL of the current page or worker script. Passed by default when using the `BrowserTracing`
+      * integration.
       */
     var location: js.UndefOr[WorkerLocation] = js.undefined
     
@@ -70,7 +71,7 @@ object transactionMod {
     }
   }
   
-  /* Inlined std.Pick<@sentry/types.@sentry/types/dist/transaction.TransactionContext, 'traceId' | 'parentSpanId' | 'parentSampled'> */
+  /* Inlined std.Pick<@sentry/types.@sentry/types/types/transaction.TransactionContext, 'traceId' | 'parentSpanId' | 'parentSampled'> */
   trait TraceparentData extends StObject {
     
     var parentSampled: js.UndefOr[Boolean] = js.undefined
@@ -104,23 +105,16 @@ object transactionMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sentryTypes.spanMod.SpanContext because Already inherited
-  - typings.sentryTypes.spanMod.Span because var conflicts: data, description, endTimestamp, op, parentSpanId, sampled, spanId, startTimestamp, status, tags, traceId. Inlined transaction, finish, finish, setTag, setData, setStatus, setHttpStatus, child, child, startChild, startChild, isSuccess, toTraceparent, getTraceContext, toJSON */ @js.native
+  - typings.sentryTypes.spanMod.Span because var conflicts: data, description, endTimestamp, op, parentSpanId, sampled, spanId, startTimestamp, status, tags, traceId. Inlined transaction, finish, finish, setTag, setData, setStatus, setHttpStatus, startChild, startChild, isSuccess, toTraceparent, toContext, updateWithContext, getTraceContext, toJSON */ @js.native
   trait Transaction
     extends StObject
        with TransactionContext {
     
     /**
-      * Use {@link startChild}
-      * @deprecated
-      */
-    def child(): Span = js.native
-    def child(spanContext: PickSpanContextExcludekey): Span = js.native
-    
-    /**
       * @inheritDoc
       */
     @JSName("data")
-    var data_Transaction: StringDictionary[js.Any] = js.native
+    var data_Transaction: StringDictionary[Any] = js.native
     
     /**
       * Sets the finish timestamp on the current span.
@@ -128,6 +122,9 @@ object transactionMod {
       */
     def finish(): Unit = js.native
     def finish(endTimestamp: Double): Unit = js.native
+    
+    /** Return the current Dynamic Sampling Context of this transaction */
+    def getDynamicSamplingContext(): PartialDynamicSamplingCon = js.native
     
     /** Convert the object to JSON for w. spans array info only */
     def getTraceContext(): Data = js.native
@@ -138,11 +135,17 @@ object transactionMod {
     def isSuccess(): Boolean = js.native
     
     /**
+      * Metadata about the transaction
+      */
+    @JSName("metadata")
+    var metadata_Transaction: TransactionMetadata = js.native
+    
+    /**
       * Sets the data attribute on the current span
       * @param key Data key
       * @param value Data value
       */
-    def setData(key: String, value: js.Any): this.type = js.native
+    def setData(key: String, value: Any): this.type = js.native
     
     /**
       * Sets the status attribute on the current span based on the http code
@@ -151,9 +154,25 @@ object transactionMod {
     def setHttpStatus(httpStatus: Double): this.type = js.native
     
     /**
+      * Set observed measurement for this transaction.
+      *
+      * @param name Name of the measurement
+      * @param value Value of the measurement
+      * @param unit Unit of the measurement. (Defaults to an empty string)
+      */
+    def setMeasurement(name: String, value: Double, unit: MeasurementUnit): Unit = js.native
+    
+    /**
+      * Set metadata for this transaction.
+      * @hidden
+      */
+    def setMetadata(newMetadata: PartialTransactionMetadat): Unit = js.native
+    
+    /**
       * Set the name of the transaction
       */
     def setName(name: String): Unit = js.native
+    def setName(name: String, source: TransactionSource): Unit = js.native
     
     /**
       * Sets the status attribute on the current span
@@ -163,11 +182,14 @@ object transactionMod {
     def setStatus(status: String): this.type = js.native
     
     /**
-      * Sets the tag attribute on the current span
+      * Sets the tag attribute on the current span.
+      *
+      * Can also be used to unset a tag, by passing `undefined`.
+      *
       * @param key Tag key
       * @param value Tag value
       */
-    def setTag(key: String, value: String): this.type = js.native
+    def setTag(key: String, value: Primitive): this.type = js.native
     
     /**
       * @inheritDoc
@@ -192,7 +214,13 @@ object transactionMod {
       * @inheritDoc
       */
     @JSName("tags")
-    var tags_Transaction: StringDictionary[String] = js.native
+    var tags_Transaction: StringDictionary[Primitive] = js.native
+    
+    /** Returns the current span properties as a `SpanContext` */
+    def toContext(): SpanContext = js.native
+    /** Returns the current transaction properties as a `TransactionContext` */
+    @JSName("toContext")
+    def toContext_TransactionContext(): TransactionContext = js.native
     
     /** Convert the object to JSON */
     def toJSON(): Description = js.native
@@ -210,11 +238,21 @@ object transactionMod {
       * The transaction containing this span
       */
     var transaction: js.UndefOr[Transaction] = js.native
+    
+    /** Updates the current span with a new `SpanContext` */
+    def updateWithContext(spanContext: SpanContext): this.type = js.native
+    /** Updates the current transaction with a new `TransactionContext` */
+    def updateWithContext(transactionContext: TransactionContext): this.type = js.native
   }
   
   trait TransactionContext
     extends StObject
        with SpanContext {
+    
+    /**
+      * Metadata associated with the transaction, for internal SDK use.
+      */
+    var metadata: js.UndefOr[PartialTransactionMetadat] = js.undefined
     
     /**
       * Human-readable identifier for the transaction
@@ -243,6 +281,10 @@ object transactionMod {
     
     extension [Self <: TransactionContext](x: Self) {
       
+      inline def setMetadata(value: PartialTransactionMetadat): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setParentSampled(value: Boolean): Self = StObject.set(x, "parentSampled", value.asInstanceOf[js.Any])
@@ -253,5 +295,141 @@ object transactionMod {
       
       inline def setTrimEndUndefined: Self = StObject.set(x, "trimEnd", js.undefined)
     }
+  }
+  
+  trait TransactionMetadata extends StObject {
+    
+    /** Metadata representing information about transaction name changes  */
+    var changes: js.Array[TransactionNameChange]
+    
+    /**
+      * The Dynamic Sampling Context of a transaction. If provided during transaction creation, its Dynamic Sampling
+      * Context Will be frozen
+      */
+    var dynamicSamplingContext: js.UndefOr[PartialDynamicSamplingCon] = js.undefined
+    
+    /** The total number of propagations that happened */
+    var propagations: Double
+    
+    /** For transactions tracing server-side request handling, the path of the request being tracked. */
+    var requestPath: js.UndefOr[String] = js.undefined
+    
+    /** Information on how a transaction name was generated. */
+    var source: TransactionSource
+    
+    /** Metadata for the transaction's spans, keyed by spanId */
+    var spanMetadata: StringDictionary[StringDictionary[Any]]
+    
+    var transactionSampling: js.UndefOr[Method] = js.undefined
+  }
+  object TransactionMetadata {
+    
+    inline def apply(
+      changes: js.Array[TransactionNameChange],
+      propagations: Double,
+      source: TransactionSource,
+      spanMetadata: StringDictionary[StringDictionary[Any]]
+    ): TransactionMetadata = {
+      val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], propagations = propagations.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], spanMetadata = spanMetadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TransactionMetadata]
+    }
+    
+    extension [Self <: TransactionMetadata](x: Self) {
+      
+      inline def setChanges(value: js.Array[TransactionNameChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+      
+      inline def setChangesVarargs(value: TransactionNameChange*): Self = StObject.set(x, "changes", js.Array(value*))
+      
+      inline def setDynamicSamplingContext(value: PartialDynamicSamplingCon): Self = StObject.set(x, "dynamicSamplingContext", value.asInstanceOf[js.Any])
+      
+      inline def setDynamicSamplingContextUndefined: Self = StObject.set(x, "dynamicSamplingContext", js.undefined)
+      
+      inline def setPropagations(value: Double): Self = StObject.set(x, "propagations", value.asInstanceOf[js.Any])
+      
+      inline def setRequestPath(value: String): Self = StObject.set(x, "requestPath", value.asInstanceOf[js.Any])
+      
+      inline def setRequestPathUndefined: Self = StObject.set(x, "requestPath", js.undefined)
+      
+      inline def setSource(value: TransactionSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSpanMetadata(value: StringDictionary[StringDictionary[Any]]): Self = StObject.set(x, "spanMetadata", value.asInstanceOf[js.Any])
+      
+      inline def setTransactionSampling(value: Method): Self = StObject.set(x, "transactionSampling", value.asInstanceOf[js.Any])
+      
+      inline def setTransactionSamplingUndefined: Self = StObject.set(x, "transactionSampling", js.undefined)
+    }
+  }
+  
+  trait TransactionNameChange extends StObject {
+    
+    /** Number of propagations since start of transaction */
+    var propagations: Double
+    
+    /** Previous source before transaction name change */
+    var source: TransactionSource
+    
+    /**
+      * Unix timestamp when the name was changed. Same type as the start and
+      * end timestamps of a transaction and span.
+      */
+    var timestamp: Double
+  }
+  object TransactionNameChange {
+    
+    inline def apply(propagations: Double, source: TransactionSource, timestamp: Double): TransactionNameChange = {
+      val __obj = js.Dynamic.literal(propagations = propagations.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TransactionNameChange]
+    }
+    
+    extension [Self <: TransactionNameChange](x: Self) {
+      
+      inline def setPropagations(value: Double): Self = StObject.set(x, "propagations", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: TransactionSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.sentryTypes.sentryTypesStrings.explicitly_set
+    - typings.sentryTypes.sentryTypesStrings.client_sampler
+    - typings.sentryTypes.sentryTypesStrings.client_rate
+    - typings.sentryTypes.sentryTypesStrings.inheritance
+  */
+  trait TransactionSamplingMethod extends StObject
+  object TransactionSamplingMethod {
+    
+    inline def client_rate: typings.sentryTypes.sentryTypesStrings.client_rate = "client_rate".asInstanceOf[typings.sentryTypes.sentryTypesStrings.client_rate]
+    
+    inline def client_sampler: typings.sentryTypes.sentryTypesStrings.client_sampler = "client_sampler".asInstanceOf[typings.sentryTypes.sentryTypesStrings.client_sampler]
+    
+    inline def explicitly_set: typings.sentryTypes.sentryTypesStrings.explicitly_set = "explicitly_set".asInstanceOf[typings.sentryTypes.sentryTypesStrings.explicitly_set]
+    
+    inline def inheritance: typings.sentryTypes.sentryTypesStrings.inheritance = "inheritance".asInstanceOf[typings.sentryTypes.sentryTypesStrings.inheritance]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.sentryTypes.sentryTypesStrings.custom
+    - typings.sentryTypes.sentryTypesStrings.url
+    - typings.sentryTypes.sentryTypesStrings.route
+    - typings.sentryTypes.sentryTypesStrings.view
+    - typings.sentryTypes.sentryTypesStrings.component
+    - typings.sentryTypes.sentryTypesStrings.task
+  */
+  trait TransactionSource extends StObject
+  object TransactionSource {
+    
+    inline def component: typings.sentryTypes.sentryTypesStrings.component = "component".asInstanceOf[typings.sentryTypes.sentryTypesStrings.component]
+    
+    inline def custom: typings.sentryTypes.sentryTypesStrings.custom = "custom".asInstanceOf[typings.sentryTypes.sentryTypesStrings.custom]
+    
+    inline def route: typings.sentryTypes.sentryTypesStrings.route = "route".asInstanceOf[typings.sentryTypes.sentryTypesStrings.route]
+    
+    inline def task: typings.sentryTypes.sentryTypesStrings.task = "task".asInstanceOf[typings.sentryTypes.sentryTypesStrings.task]
+    
+    inline def url: typings.sentryTypes.sentryTypesStrings.url = "url".asInstanceOf[typings.sentryTypes.sentryTypesStrings.url]
+    
+    inline def view: typings.sentryTypes.sentryTypesStrings.view = "view".asInstanceOf[typings.sentryTypes.sentryTypesStrings.view]
   }
 }

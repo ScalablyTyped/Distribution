@@ -42,7 +42,7 @@ trait StyleConstructorOptions extends StObject {
   /**
     * The gradient to apply along the line.
     */
-  var lineGradient: LineGradient
+  var lineGradient: js.UndefOr[LineGradient] = js.undefined
   
   /**
     * The style to use when drawing joins between line segments.
@@ -76,8 +76,8 @@ trait StyleConstructorOptions extends StObject {
 }
 object StyleConstructorOptions {
   
-  inline def apply(lineGradient: LineGradient): StyleConstructorOptions = {
-    val __obj = js.Dynamic.literal(lineGradient = lineGradient.asInstanceOf[js.Any])
+  inline def apply(): StyleConstructorOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StyleConstructorOptions]
   }
   
@@ -107,9 +107,11 @@ object StyleConstructorOptions {
     
     inline def setLineDashUndefined: Self = StObject.set(x, "lineDash", js.undefined)
     
-    inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+    inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value*))
     
     inline def setLineGradient(value: LineGradient): Self = StObject.set(x, "lineGradient", value.asInstanceOf[js.Any])
+    
+    inline def setLineGradientUndefined: Self = StObject.set(x, "lineGradient", js.undefined)
     
     inline def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
     

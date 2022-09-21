@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapsjs", "styledGeometry")
 @js.native
-class styledGeometry protected () extends StObject {
+open class styledGeometry protected () extends StObject {
   def this(geom: geometry) = this()
   def this(geom: geometry, gStyle: geometryStyle) = this()
   

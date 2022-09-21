@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Media.MediaExtensionManager")
 @js.native
-class MediaExtensionManager ()
+open class MediaExtensionManager ()
   extends StObject
      with typings.winrt.Windows.Media.MediaExtensionManager

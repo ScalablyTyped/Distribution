@@ -1,14 +1,18 @@
 package typings.framesync
 
+import typings.node.timersMod.global.NodeJS.Timeout
+import typings.std.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onNextFrameMod {
   
-  @JSImport("framesync/lib/on-next-frame", JSImport.Namespace)
+  @JSImport("framesync/lib/on-next-frame", "defaultTimestep")
   @js.native
-  val ^ : js.Any = js.native
+  val defaultTimestep: Double = js.native
   
-  inline def default(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @JSImport("framesync/lib/on-next-frame", "onNextFrame")
+  @js.native
+  val onNextFrame: js.Function1[/* callback */ FrameRequestCallback, Double | Timeout] = js.native
 }

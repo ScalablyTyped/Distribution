@@ -11,7 +11,7 @@ object mod {
   /**
     * Creates an empty hashmap.
     */
-  class ^[TKey, TValue] ()
+  open class ^[TKey, TValue] ()
     extends StObject
        with HashMap[TKey, TValue] {
     def this(data: js.Array[js.Tuple2[TKey, TValue]]) = this()
@@ -84,10 +84,10 @@ object mod {
       * Return value from hashmap.
       *
       * @param key Key.
-      * @return Value stored under given key.
+      * @return Value stored under given key. If no value is stored for the key, returns undefined.
       */
     /* CompleteClass */
-    override def get(key: TKey): TValue = js.native
+    override def get(key: TKey): js.UndefOr[TValue] = js.native
     
     /**
       * Checks if given key exists in hashmap.
@@ -205,9 +205,9 @@ object mod {
       * Return value from hashmap.
       *
       * @param key Key.
-      * @return Value stored under given key.
+      * @return Value stored under given key. If no value is stored for the key, returns undefined.
       */
-    def get(key: TKey): TValue
+    def get(key: TKey): js.UndefOr[TValue]
     
     /**
       * Checks if given key exists in hashmap.
@@ -274,7 +274,7 @@ object mod {
       delete: TKey => HashMap[TKey, TValue],
       entries: () => js.Array[js.Tuple2[TKey, TValue]],
       forEach: js.Function2[/* value */ TValue, /* key */ TKey, Unit] => HashMap[TKey, TValue],
-      get: TKey => TValue,
+      get: TKey => js.UndefOr[TValue],
       has: TKey => Boolean,
       keys: () => js.Array[TKey],
       multi: /* repeated */ TKey | TValue => HashMap[TKey, TValue],
@@ -301,7 +301,7 @@ object mod {
       
       inline def setForEach(value: js.Function2[/* value */ TValue, /* key */ TKey, Unit] => HashMap[TKey, TValue]): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      inline def setGet(value: TKey => TValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: TKey => js.UndefOr[TValue]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
       inline def setHas(value: TKey => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       

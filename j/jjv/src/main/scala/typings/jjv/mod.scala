@@ -17,22 +17,22 @@ object mod {
   @js.native
   trait Env extends StObject {
     
-    def addCheck(name: String, check: js.Function2[/* input */ js.Any, /* comparator */ js.Any, js.Any]): Unit = js.native
+    def addCheck(name: String, check: js.Function2[/* input */ Any, /* comparator */ Any, Any]): Unit = js.native
     
-    def addFormat(name: String, parse: js.Function1[/* input */ js.Any, js.Any]): Unit = js.native
+    def addFormat(name: String, parse: js.Function1[/* input */ Any, Any]): Unit = js.native
     
     def addSchema(name: String, schema: js.Object): Unit = js.native
     
-    def addType(name: String, parse: js.Function1[/* input */ js.Any, js.Any]): Unit = js.native
+    def addType(name: String, parse: js.Function1[/* input */ Any, Any]): Unit = js.native
     
-    def addTypeCoercion(name: String, coerce: js.Function1[/* input */ js.Any, js.Any]): Unit = js.native
+    def addTypeCoercion(name: String, coerce: js.Function1[/* input */ Any, Any]): Unit = js.native
     
     var defaultOptions: Options = js.native
     
-    def validate(name: String, `object`: js.Any): Errors = js.native
-    def validate(name: String, `object`: js.Any, options: Options): Errors = js.native
-    def validate(schema: js.Object, `object`: js.Any): Errors = js.native
-    def validate(schema: js.Object, `object`: js.Any, options: Options): Errors = js.native
+    def validate(name: String, `object`: Any): Errors = js.native
+    def validate(name: String, `object`: Any, options: Options): Errors = js.native
+    def validate(schema: js.Object, `object`: Any): Errors = js.native
+    def validate(schema: js.Object, `object`: Any, options: Options): Errors = js.native
   }
   
   trait Errors extends StObject {

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapDropDownEdit")
 @js.native
-class BootstrapDropDownEdit ()
+open class BootstrapDropDownEdit ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapDropDownEdit

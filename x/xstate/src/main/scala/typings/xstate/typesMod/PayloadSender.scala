@@ -12,7 +12,7 @@ trait PayloadSender[TEvent /* <: EventObject */] extends StObject {
     */
   def apply(event: TEvent): Unit = js.native
   def apply(
-    event: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/types.ExtractSimple<TEvent>['type'] */ js.Any
+    event: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/types.ExtractWithSimpleSupport<TEvent>['type'] */ js.Any
   ): Unit = js.native
   /**
     * Send an event type and its payload

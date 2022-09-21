@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Properties and contents of each table cell.
-  */
 trait SchemaTableCell extends StObject {
   
   /**
     * Column span of the cell.
     */
-  var columnSpan: js.UndefOr[Double] = js.undefined
+  var columnSpan: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The location of the cell within the table.
@@ -22,7 +19,7 @@ trait SchemaTableCell extends StObject {
   /**
     * Row span of the cell.
     */
-  var rowSpan: js.UndefOr[Double] = js.undefined
+  var rowSpan: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The properties of the table cell.
@@ -45,6 +42,8 @@ object SchemaTableCell {
     
     inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     
+    inline def setColumnSpanNull: Self = StObject.set(x, "columnSpan", null)
+    
     inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
     
     inline def setLocation(value: SchemaTableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
@@ -52,6 +51,8 @@ object SchemaTableCell {
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+    
+    inline def setRowSpanNull: Self = StObject.set(x, "rowSpan", null)
     
     inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     

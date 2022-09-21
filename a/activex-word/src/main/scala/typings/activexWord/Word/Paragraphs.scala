@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Paragraphs extends StObject {
   
   def Add(): Paragraph = js.native
-  def Add(Range: js.Any): Paragraph = js.native
+  def Add(Range: Any): Paragraph = js.native
   
   var AddSpaceBetweenFarEastAndAlpha: Double = js.native
   
@@ -98,7 +98,7 @@ trait Paragraphs extends StObject {
   
   var PageBreakBefore: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var ReadingOrder: WdReadingOrder = js.native
   
@@ -122,7 +122,7 @@ trait Paragraphs extends StObject {
   
   var SpaceBeforeAuto: Double = js.native
   
-  var Style: js.Any = js.native
+  var Style: Any = js.native
   
   def TabHangingIndent(Count: Double): Unit = js.native
   

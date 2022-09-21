@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("math3d", "Matrix4x4")
   @js.native
-  class Matrix4x4 protected () extends StObject {
+  open class Matrix4x4 protected () extends StObject {
     def this(data: js.Array[Double]) = this()
     
     def add(matrix4x4: Matrix4x4): Matrix4x4 = js.native
@@ -111,7 +111,7 @@ object mod {
   
   @JSImport("math3d", "Quaternion")
   @js.native
-  class Quaternion () extends StObject {
+  open class Quaternion () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()
@@ -187,7 +187,7 @@ object mod {
   
   @JSImport("math3d", "Transform")
   @js.native
-  class Transform () extends StObject {
+  open class Transform () extends StObject {
     def this(position: Vector3) = this()
     def this(position: Unit, rotation: Quaternion) = this()
     def this(position: Vector3, rotation: Quaternion) = this()
@@ -257,7 +257,7 @@ object mod {
   
   @JSImport("math3d", "Vector3")
   @js.native
-  class Vector3 () extends StObject {
+  open class Vector3 () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()
@@ -359,7 +359,7 @@ object mod {
   
   @JSImport("math3d", "Vector4")
   @js.native
-  class Vector4 () extends StObject {
+  open class Vector4 () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()

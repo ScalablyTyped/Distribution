@@ -10,7 +10,7 @@ object asyncMod {
   
   @JSImport("@nodelib/fs.walk/out/providers/async", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with AsyncProvider {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
@@ -19,29 +19,29 @@ object asyncMod {
     override val _reader: typings.nodelibFsWalk.readersAsyncMod.default = js.native
     
     /* private */ /* CompleteClass */
-    override val _root: js.Any = js.native
+    override val _root: Any = js.native
     
     /* private */ /* CompleteClass */
-    override val _settings: js.Any = js.native
+    override val _settings: Any = js.native
     
     /* private */ /* CompleteClass */
-    override val _storage: js.Any = js.native
+    override val _storage: Any = js.native
     
     /* CompleteClass */
     override def read(callback: AsyncCallback): Unit = js.native
   }
   
-  type AsyncCallback = js.Function2[/* err */ Errno, /* entries */ js.Array[Entry], Unit]
+  type AsyncCallback = js.Function2[/* error */ Errno, /* entries */ js.Array[Entry], Unit]
   
   trait AsyncProvider extends StObject {
     
     /* protected */ val _reader: typings.nodelibFsWalk.readersAsyncMod.default
     
-    /* private */ val _root: js.Any
+    /* private */ val _root: Any
     
-    /* private */ val _settings: js.Any
+    /* private */ val _settings: Any
     
-    /* private */ val _storage: js.Any
+    /* private */ val _storage: Any
     
     def read(callback: AsyncCallback): Unit
   }
@@ -49,9 +49,9 @@ object asyncMod {
     
     inline def apply(
       _reader: typings.nodelibFsWalk.readersAsyncMod.default,
-      _root: js.Any,
-      _settings: js.Any,
-      _storage: js.Any,
+      _root: Any,
+      _settings: Any,
+      _storage: Any,
       read: AsyncCallback => Unit
     ): AsyncProvider = {
       val __obj = js.Dynamic.literal(_reader = _reader.asInstanceOf[js.Any], _root = _root.asInstanceOf[js.Any], _settings = _settings.asInstanceOf[js.Any], _storage = _storage.asInstanceOf[js.Any], read = js.Any.fromFunction1(read))
@@ -64,11 +64,11 @@ object asyncMod {
       
       inline def set_reader(value: typings.nodelibFsWalk.readersAsyncMod.default): Self = StObject.set(x, "_reader", value.asInstanceOf[js.Any])
       
-      inline def set_root(value: js.Any): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
+      inline def set_root(value: Any): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
       
-      inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
       
-      inline def set_storage(value: js.Any): Self = StObject.set(x, "_storage", value.asInstanceOf[js.Any])
+      inline def set_storage(value: Any): Self = StObject.set(x, "_storage", value.asInstanceOf[js.Any])
     }
   }
 }

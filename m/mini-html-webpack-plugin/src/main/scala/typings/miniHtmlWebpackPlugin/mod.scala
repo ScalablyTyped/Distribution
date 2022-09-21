@@ -1,7 +1,6 @@
 package typings.miniHtmlWebpackPlugin
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +13,16 @@ object mod {
     */
   @JSImport("mini-html-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with MiniHtmlWebpackPlugin {
     def this(options: PluginOptions) = this()
+    
+    /* CompleteClass */
+    override def plugin(
+      compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ Any,
+      callback: js.Function0[Unit]
+    ): Unit = js.native
   }
   @JSImport("mini-html-webpack-plugin", JSImport.Namespace)
   @js.native
@@ -56,7 +61,7 @@ object mod {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
@@ -111,15 +116,29 @@ object mod {
     * A miniature version of html-webpack-plugin with only necessary features
     * see {@link https://www.npmjs.com/package/mini-html-webpack-plugin}
     */
-  @js.native
-  trait MiniHtmlWebpackPlugin
-    extends StObject
-       with Plugin {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ trait MiniHtmlWebpackPlugin extends StObject {
     
     def plugin(
-      compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any,
+      compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ Any,
       callback: js.Function0[Unit]
-    ): Unit = js.native
+    ): Unit
+  }
+  object MiniHtmlWebpackPlugin {
+    
+    inline def apply(
+      plugin: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ Any, js.Function0[Unit]) => Unit
+    ): MiniHtmlWebpackPlugin = {
+      val __obj = js.Dynamic.literal(plugin = js.Any.fromFunction2(plugin))
+      __obj.asInstanceOf[MiniHtmlWebpackPlugin]
+    }
+    
+    extension [Self <: MiniHtmlWebpackPlugin](x: Self) {
+      
+      inline def setPlugin(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ Any, js.Function0[Unit]) => Unit
+      ): Self = StObject.set(x, "plugin", js.Any.fromFunction2(value))
+    }
   }
   
   trait PluginContext extends StObject {
@@ -167,7 +186,7 @@ object mod {
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
+      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value*))
       
       inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
@@ -185,7 +204,7 @@ object mod {
       
       inline def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
       
-      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value :_*))
+      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value*))
       
       inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
@@ -225,7 +244,7 @@ object mod {
       
       inline def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
       
-      inline def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value :_*))
+      inline def setChunksVarargs(value: String*): Self = StObject.set(x, "chunks", js.Array(value*))
       
       inline def setContext(value: PluginContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

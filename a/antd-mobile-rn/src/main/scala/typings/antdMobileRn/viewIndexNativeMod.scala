@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object viewIndexNativeMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @JSImport("antd-mobile-rn/lib/view/index.native", JSImport.Default)
+  - Dropped new (args : ...any): react-native.react-native.NativeMethods */ @JSImport("antd-mobile-rn/lib/view/index.native", JSImport.Default)
   @js.native
-  class default protected () extends View {
+  open class default protected () extends View {
     def this(props: ViewProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ViewProps, context: js.Any) = this()
+    def this(props: ViewProps, context: Any) = this()
   }
   /* static members */
   object default {

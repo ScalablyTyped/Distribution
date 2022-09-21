@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorksheetCustomPropertyUpdateData extends StObject {
   
   /**
-    *
     * Gets or sets the value of the custom property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var value: js.UndefOr[String] = js.undefined

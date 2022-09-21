@@ -53,7 +53,7 @@ object pathMod {
       *
       * @param paths - The string paths to join.
       */
-    inline def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     /**
       * Normalize a string path, reducing '..' and '.' parts.
@@ -109,6 +109,6 @@ object pathMod {
       *
       * If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
       */
-    inline def resolve(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def resolve(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(parts.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   }
 }

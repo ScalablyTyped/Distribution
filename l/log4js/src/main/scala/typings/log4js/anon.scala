@@ -25,7 +25,7 @@ object anon {
       
       inline def setAppenders(value: js.Array[String]): Self = StObject.set(x, "appenders", value.asInstanceOf[js.Any])
       
-      inline def setAppendersVarargs(value: String*): Self = StObject.set(x, "appenders", js.Array(value :_*))
+      inline def setAppendersVarargs(value: String*): Self = StObject.set(x, "appenders", js.Array(value*))
       
       inline def setEnableCallStack(value: Boolean): Self = StObject.set(x, "enableCallStack", value.asInstanceOf[js.Any])
       
@@ -43,9 +43,9 @@ object anon {
     
     var level: js.UndefOr[String] = js.undefined
     
-    var nolog: js.UndefOr[js.Any] = js.undefined
+    var nolog: js.UndefOr[Any] = js.undefined
     
-    var statusRules: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var statusRules: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object Context {
     
@@ -63,7 +63,7 @@ object anon {
       inline def setFormat(value: typings.log4js.mod.Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatFunction3(
-        value: (/* req */ js.Any, /* res */ js.Any, /* formatter */ js.Function1[/* str */ String, String]) => String
+        value: (/* req */ Any, /* res */ Any, /* formatter */ js.Function1[/* str */ String, String]) => String
       ): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
@@ -72,15 +72,15 @@ object anon {
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      inline def setNolog(value: js.Any): Self = StObject.set(x, "nolog", value.asInstanceOf[js.Any])
+      inline def setNolog(value: Any): Self = StObject.set(x, "nolog", value.asInstanceOf[js.Any])
       
       inline def setNologUndefined: Self = StObject.set(x, "nolog", js.undefined)
       
-      inline def setStatusRules(value: js.Array[js.Any]): Self = StObject.set(x, "statusRules", value.asInstanceOf[js.Any])
+      inline def setStatusRules(value: js.Array[Any]): Self = StObject.set(x, "statusRules", value.asInstanceOf[js.Any])
       
       inline def setStatusRulesUndefined: Self = StObject.set(x, "statusRules", js.undefined)
       
-      inline def setStatusRulesVarargs(value: js.Any*): Self = StObject.set(x, "statusRules", js.Array(value :_*))
+      inline def setStatusRulesVarargs(value: Any*): Self = StObject.set(x, "statusRules", js.Array(value*))
     }
   }
   
@@ -90,7 +90,7 @@ object anon {
     
     var level: js.UndefOr[String] = js.undefined
     
-    var nolog: js.UndefOr[js.Any] = js.undefined
+    var nolog: js.UndefOr[Any] = js.undefined
   }
   object Format {
     
@@ -104,7 +104,7 @@ object anon {
       inline def setFormat(value: typings.log4js.mod.Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatFunction3(
-        value: (/* req */ js.Any, /* res */ js.Any, /* formatter */ js.Function1[/* str */ String, String]) => String
+        value: (/* req */ Any, /* res */ Any, /* formatter */ js.Function1[/* str */ String, String]) => String
       ): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
@@ -113,7 +113,7 @@ object anon {
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      inline def setNolog(value: js.Any): Self = StObject.set(x, "nolog", value.asInstanceOf[js.Any])
+      inline def setNolog(value: Any): Self = StObject.set(x, "nolog", value.asInstanceOf[js.Any])
       
       inline def setNologUndefined: Self = StObject.set(x, "nolog", js.undefined)
     }

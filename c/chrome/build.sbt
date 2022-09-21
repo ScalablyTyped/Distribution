@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "chrome"
-version := "0.0-unknown-dt-20201028Z-eb8120"
-scalaVersion := "3.0.1"
+version := "0.0-unknown-dt-20220916Z-f8e820"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20201002Z-bd3055",
-  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20201002Z-d98900",
-  "org.scalablytyped" %%% "har-format" % "1.2-dt-20201030Z-e9c30e",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20220818Z-dae0e4",
+  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20220818Z-d7bf60",
+  "org.scalablytyped" %%% "har-format" % "1.2-dt-20220624Z-41775b",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

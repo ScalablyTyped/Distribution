@@ -13,6 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object browserSettings {
   
+  /** Color management mode. */
+  /* Rewritten from type alias, can be one of: 
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.off
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.full
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tagged_only
+  */
+  trait ColorManagementMode extends StObject
+  object ColorManagementMode {
+    
+    inline def full: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.full = "full".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.full]
+    
+    inline def off: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.off = "off".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.off]
+    
+    inline def tagged_only: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tagged_only = "tagged_only".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tagged_only]
+  }
+  
   /** After which mouse event context menus should popup. */
   /* Rewritten from type alias, can be one of: 
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mouseup

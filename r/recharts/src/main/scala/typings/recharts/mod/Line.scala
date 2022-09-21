@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Line")
 @js.native
-class Line protected ()
-  extends Component[LineProps, js.Object, js.Any] {
+open class Line protected ()
+  extends Component[LineProps, js.Object, Any] {
   def this(props: LineProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LineProps, context: js.Any) = this()
+  def this(props: LineProps, context: Any) = this()
 }

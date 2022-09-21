@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SecurityIsolationStatus extends StObject {
   
-  var coep: CrossOriginEmbedderPolicyStatus
+  var coep: js.UndefOr[CrossOriginEmbedderPolicyStatus] = js.undefined
   
-  var coop: CrossOriginOpenerPolicyStatus
+  var coop: js.UndefOr[CrossOriginOpenerPolicyStatus] = js.undefined
 }
 object SecurityIsolationStatus {
   
-  inline def apply(coep: CrossOriginEmbedderPolicyStatus, coop: CrossOriginOpenerPolicyStatus): SecurityIsolationStatus = {
-    val __obj = js.Dynamic.literal(coep = coep.asInstanceOf[js.Any], coop = coop.asInstanceOf[js.Any])
+  inline def apply(): SecurityIsolationStatus = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityIsolationStatus]
   }
   
@@ -21,6 +21,10 @@ object SecurityIsolationStatus {
     
     inline def setCoep(value: CrossOriginEmbedderPolicyStatus): Self = StObject.set(x, "coep", value.asInstanceOf[js.Any])
     
+    inline def setCoepUndefined: Self = StObject.set(x, "coep", js.undefined)
+    
     inline def setCoop(value: CrossOriginOpenerPolicyStatus): Self = StObject.set(x, "coop", value.asInstanceOf[js.Any])
+    
+    inline def setCoopUndefined: Self = StObject.set(x, "coop", js.undefined)
   }
 }

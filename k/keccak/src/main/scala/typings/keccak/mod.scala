@@ -1,7 +1,7 @@
 package typings.keccak
 
-import typings.node.Buffer
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
@@ -23,7 +23,7 @@ object mod {
   
   @JSImport("keccak", "Keccak")
   @js.native
-  class Keccak protected () extends Transform {
+  open class Keccak protected () extends Transform {
     def this(
       rate: Double,
       capacity: Double,
@@ -50,7 +50,7 @@ object mod {
   
   @JSImport("keccak", "Shake")
   @js.native
-  class Shake protected () extends Transform {
+  open class Shake protected () extends Transform {
     def this(rate: Double, capacity: Double, delimitedSuffix: Double, options: TransformOptions) = this()
     def this(rate: Double, capacity: Double, delimitedSuffix: Null, options: TransformOptions) = this()
     

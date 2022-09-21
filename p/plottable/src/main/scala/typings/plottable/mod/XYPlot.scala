@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {Scale} xScale The x scale to use.
   * @param {Scale} yScale The y scale to use.
   */
-class XYPlot[X, Y] ()
+open class XYPlot[X, Y] ()
   extends typings.plottable.xyPlotMod.XYPlot[X, Y]
 /* static members */
 object XYPlot {

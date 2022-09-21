@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-all
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Run promise-returning & async functions concurrently with optional limited concurrency
@@ -10,10 +10,10 @@ Run promise-returning & async functions concurrently with optional limited concu
 | ------------------ | :-------------: |
 | Full name          | p-all |
 | Keywords           | promise, all, function, func, fn, limited, limit, control, rate, collection, iterable, iterator, fulfilled, async, await, promises, concurrent, concurrently, concurrency, parallel, bluebird |
-| # releases         | 4 |
-| # dependents       | 97 |
-| # downloads        | 13571515 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3561787333333334E7 |
+| # stars            | 199.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-all#readme)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for psi
 
-Typings are for version 4.0
+Typings are for version 4.1
 
 ## Library description:
 PageSpeed Insights with reporting
@@ -10,10 +10,10 @@ PageSpeed Insights with reporting
 | ------------------ | :-------------: |
 | Full name          | psi |
 | Keywords           | pagespeed, insights, speed, page, website, measure, optimize, size |
-| # releases         | 3 |
-| # dependents       | 39 |
-| # downloads        | 298305 |
-| # stars            | 50 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 28776.0 |
+| # stars            | 3089.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChromeLabs/psi#readme)

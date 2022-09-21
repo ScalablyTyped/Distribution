@@ -6,12 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StaticRangeInit extends StObject {
   
+  /* standard dom */
   var endContainer: Node
   
+  /* standard dom */
   var endOffset: Double
   
+  /* standard dom */
   var startContainer: Node
   
+  /* standard dom */
   var startOffset: Double
 }
 object StaticRangeInit {

@@ -1,8 +1,8 @@
 package typings.reactRouterNavigationCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.History
 import typings.history.mod.Location
-import typings.history.mod.LocationState
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.PureComponent
@@ -10,8 +10,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactRouter.mod.RouterProps
-import typings.reactRouter.mod.`match`
+import typings.reactRouter.componentsMod.RouterProps
 import typings.reactRouterNavigationCore.anon.Cards
 import typings.reactRouterNavigationCore.anon.ForceSync
 import typings.reactRouterNavigationCore.anon.LoadedTabs
@@ -29,12 +28,11 @@ object mod {
   
   @JSImport("react-router-navigation-core", "CardStack")
   @js.native
-  class CardStack protected ()
-    extends PureComponent[CardStackProps, Cards, js.Any] {
+  open class CardStack protected () extends PureComponent[CardStackProps, Cards, Any] {
     def this(props: CardStackProps) = this()
-    def this(props: CardStackProps, context: js.Any) = this()
+    def this(props: CardStackProps, context: Any) = this()
     
-    def onListenHistory(history: History[LocationState], nextHistory: History[LocationState]): Unit = js.native
+    def onListenHistory(history: History, nextHistory: History): Unit = js.native
     
     // Pop to previous scene (n-1)
     def onNavigateBack(): Boolean = js.native
@@ -44,13 +42,12 @@ object mod {
   
   @JSImport("react-router-navigation-core", "TabStack")
   @js.native
-  class TabStack protected ()
-    extends PureComponent[TabStackProps, LoadedTabs, js.Any] {
+  open class TabStack protected () extends PureComponent[TabStackProps, LoadedTabs, Any] {
     def this(props: TabStackProps) = this()
     
     def onIndexChange(index: Double): Unit = js.native
     
-    def onListenHistory(history: History[LocationState], nextHistory: History[LocationState]): Unit = js.native
+    def onListenHistory(history: History, nextHistory: History): Unit = js.native
     
     var unlistenHistory: js.UndefOr[js.Function0[Unit]] = js.native
   }
@@ -74,19 +71,14 @@ object mod {
   
   inline def get[Item /* <: Route[js.Object] */](items: js.Array[Item], route: Route[js.Object]): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(items.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[Item]
   
-  inline def getRoute(stack: js.Array[RouteProps], location: Location[LocationState]): js.UndefOr[Route[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoute")(stack.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Route[js.Object]]]
+  inline def getRoute(stack: js.Array[RouteProps], location: Location): js.UndefOr[Route[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoute")(stack.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Route[js.Object]]]
   
-  inline def renderSubView(render: js.Function2[/* propsA */ js.Any, /* propsB */ js.Any, ReactNode]): js.Function1[/* ownProps */ js.Any, ReactNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSubView")(render.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ownProps */ js.Any, ReactNode]]
-  inline def renderSubView(render: js.Function2[/* propsA */ js.Any, /* propsB */ js.Any, ReactNode], additionalProps: js.Any): js.Function1[/* ownProps */ js.Any, ReactNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSubView")(render.asInstanceOf[js.Any], additionalProps.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ownProps */ js.Any, ReactNode]]
+  inline def renderSubView(render: js.Function2[/* propsA */ Any, /* propsB */ Any, ReactNode]): js.Function1[/* ownProps */ Any, ReactNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSubView")(render.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ownProps */ Any, ReactNode]]
+  inline def renderSubView(render: js.Function2[/* propsA */ Any, /* propsB */ Any, ReactNode], additionalProps: Any): js.Function1[/* ownProps */ Any, ReactNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSubView")(render.asInstanceOf[js.Any], additionalProps.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ownProps */ Any, ReactNode]]
   
-  inline def runHistoryListenner(history: History[LocationState], onListenHistory: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runHistoryListenner")(history.asInstanceOf[js.Any], onListenHistory.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def runHistoryListenner(history: History, onListenHistory: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runHistoryListenner")(history.asInstanceOf[js.Any], onListenHistory.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  inline def shouldUpdate(
-    currentItem: RouteProps,
-    nextItem: RouteProps,
-    currentLocation: Location[LocationState],
-    nextLocation: Location[LocationState]
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldUpdate")(currentItem.asInstanceOf[js.Any], nextItem.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any], nextLocation.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shouldUpdate(currentItem: RouteProps, nextItem: RouteProps, currentLocation: Location, nextLocation: Location): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldUpdate")(currentItem.asInstanceOf[js.Any], nextItem.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any], nextLocation.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait Card
     extends StObject
@@ -126,7 +118,7 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setRender(value: CardsRendererProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
@@ -162,30 +154,40 @@ object mod {
       
       inline def setRoutes(value: js.Array[Route[js.Object] & OwnRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: (Route[js.Object] & OwnRoute)*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (Route[js.Object] & OwnRoute)*): Self = StObject.set(x, "routes", js.Array(value*))
     }
   }
   
-  trait Route[T] extends StObject {
+  trait Route[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.reactRouterNavigationCore.reactRouterNavigationCoreStrings.Route & TopLevel[Any] */] extends StObject {
     
     var key: String
     
-    var `match`: js.UndefOr[typings.reactRouter.mod.`match`[T]] = js.undefined
+    var `match`: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify match<Params> */ Any
+      ] = js.undefined
     
     var routeName: String
   }
   object Route {
     
-    inline def apply[T](key: String, routeName: String): Route[T] = {
+    inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof Params ]:? string}
+      */ typings.reactRouterNavigationCore.reactRouterNavigationCoreStrings.Route & TopLevel[Any] */](key: String, routeName: String): Route[Params] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Route[T]]
+      __obj.asInstanceOf[Route[Params]]
     }
     
-    extension [Self <: Route[?], T](x: Self & Route[T]) {
+    extension [Self <: Route[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof Params ]:? string}
+      */ typings.reactRouterNavigationCore.reactRouterNavigationCoreStrings.Route & TopLevel[Any] */](x: Self & Route[Params]) {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setMatch(value: `match`[T]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify match<Params> */ Any
+      ): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
@@ -294,7 +296,7 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setForceSync(value: Boolean): Self = StObject.set(x, "forceSync", value.asInstanceOf[js.Any])
       
@@ -340,7 +342,7 @@ object mod {
       
       inline def setLoadedTabs(value: js.Array[String]): Self = StObject.set(x, "loadedTabs", value.asInstanceOf[js.Any])
       
-      inline def setLoadedTabsVarargs(value: String*): Self = StObject.set(x, "loadedTabs", js.Array(value :_*))
+      inline def setLoadedTabsVarargs(value: String*): Self = StObject.set(x, "loadedTabs", js.Array(value*))
       
       inline def setNavigationState(value: NavigationState[TestID]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
       
@@ -348,7 +350,7 @@ object mod {
       
       inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
 }

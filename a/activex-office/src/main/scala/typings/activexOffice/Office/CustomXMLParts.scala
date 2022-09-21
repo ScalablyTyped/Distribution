@@ -16,7 +16,7 @@ trait CustomXMLParts extends StObject {
   def Add(XML: String, SchemaCollection: CustomXMLSchemaCollection): CustomXMLPart = js.native
   def Add(XML: Unit, SchemaCollection: CustomXMLSchemaCollection): CustomXMLPart = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -25,7 +25,7 @@ trait CustomXMLParts extends StObject {
   def Item(Index: String): CustomXMLPart = js.native
   def Item(Index: Double): CustomXMLPart = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def SelectByID(Id: String): CustomXMLPart = js.native
   

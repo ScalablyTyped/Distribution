@@ -1,44 +1,37 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
+import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientLogging.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ProjectsResource extends StObject {
   
-  var exclusions: ExclusionsResource
+  var exclusions: ExclusionsResource = js.native
   
-  var locations: LocationsResource
+  /**
+    * Gets the Logging CMEK settings for the given resource.Note: CMEK for the Log Router can be configured for Google Cloud projects, folders, organizations and billing accounts. Once
+    * configured for an organization, it applies to all projects and folders in the Google Cloud organization.See Enabling CMEK for Log Router
+    * (https://cloud.google.com/logging/docs/routing/managed-encryption) for more information.
+    */
+  def getCmekSettings(): Request[CmekSettings] = js.native
+  def getCmekSettings(request: Callback): Request[CmekSettings] = js.native
   
-  var logs: LogsResource
+  /**
+    * Gets the Log Router settings for the given resource.Note: Settings for the Log Router can be get for Google Cloud projects, folders, organizations and billing accounts. Currently it
+    * can only be configured for organizations. Once configured for an organization, it applies to all projects and folders in the Google Cloud organization.See Enabling CMEK for Log
+    * Router (https://cloud.google.com/logging/docs/routing/managed-encryption) for more information.
+    */
+  def getSettings(): Request[Settings] = js.native
+  def getSettings(request: Callback): Request[Settings] = js.native
   
-  var metrics: MetricsResource
+  var locations: LocationsResource = js.native
   
-  var sinks: SinksResource
-}
-object ProjectsResource {
+  var logs: LogsResource = js.native
   
-  inline def apply(
-    exclusions: ExclusionsResource,
-    locations: LocationsResource,
-    logs: LogsResource,
-    metrics: MetricsResource,
-    sinks: SinksResource
-  ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(exclusions = exclusions.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], sinks = sinks.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ProjectsResource]
-  }
+  var metrics: MetricsResource = js.native
   
-  extension [Self <: ProjectsResource](x: Self) {
-    
-    inline def setExclusions(value: ExclusionsResource): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
-    
-    inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
-    
-    inline def setLogs(value: LogsResource): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
-    
-    inline def setMetrics(value: MetricsResource): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
-    
-    inline def setSinks(value: SinksResource): Self = StObject.set(x, "sinks", value.asInstanceOf[js.Any])
-  }
+  var sinks: SinksResource = js.native
 }

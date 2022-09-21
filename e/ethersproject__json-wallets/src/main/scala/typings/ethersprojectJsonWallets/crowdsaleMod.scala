@@ -16,7 +16,7 @@ object crowdsaleMod {
   
   @JSImport("@ethersproject/json-wallets/lib/crowdsale", "CrowdsaleAccount")
   @js.native
-  class CrowdsaleAccount protected ()
+  open class CrowdsaleAccount protected ()
     extends Description[_CrowdsaleAccount]
        with ExternallyOwnedAccount {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -28,7 +28,7 @@ object crowdsaleMod {
     /* CompleteClass */
     override val address: String = js.native
     
-    def isCrowdsaleAccount(value: js.Any): /* is @ethersproject/json-wallets.@ethersproject/json-wallets/lib/crowdsale.CrowdsaleAccount */ Boolean = js.native
+    def isCrowdsaleAccount(value: Any): /* is @ethersproject/json-wallets.@ethersproject/json-wallets/lib/crowdsale.CrowdsaleAccount */ Boolean = js.native
     
     val mnemonic: js.UndefOr[String] = js.native
     

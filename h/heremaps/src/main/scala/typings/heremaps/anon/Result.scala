@@ -19,6 +19,6 @@ object Result {
     
     inline def setResult(value: js.Array[Location]): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: Location*): Self = StObject.set(x, "Result", js.Array(value :_*))
+    inline def setResultVarargs(value: Location*): Self = StObject.set(x, "Result", js.Array(value*))
   }
 }

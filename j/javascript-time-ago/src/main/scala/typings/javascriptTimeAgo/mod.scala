@@ -7,7 +7,6 @@ import typings.javascriptTimeAgo.localeMod.Locale
 import typings.javascriptTimeAgo.localeMod.RTFFormatter
 import typings.javascriptTimeAgo.localeMod.TimeUnit
 import typings.javascriptTimeAgo.styleMod.FormatStyle
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("javascript-time-ago", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with TimeAgo {
     def this(locales: String) = this()
@@ -25,6 +24,9 @@ object mod {
   @JSImport("javascript-time-ago", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def addDefaultLocale(localeData: Locale): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDefaultLocale")(localeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
   inline def addLocale(localeData: Locale): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(localeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -47,25 +49,25 @@ object mod {
   @js.native
   trait TimeAgo extends StObject {
     
+    def format(input: js.Date): String = js.native
+    def format(input: js.Date, style: String): String = js.native
+    def format(input: js.Date, style: FormatStyle): String = js.native
     def format(input: Double): String = js.native
     def format(input: Double, style: String): String = js.native
     def format(input: Double, style: FormatStyle): String = js.native
-    def format(input: Date): String = js.native
-    def format(input: Date, style: String): String = js.native
-    def format(input: Date, style: FormatStyle): String = js.native
     
     def formatNumber(number: Double): String = js.native
     
+    def formatValue(value: js.Date, unit: TimeUnit, localeData: Duration): String = js.native
     def formatValue(value: Double, unit: TimeUnit, localeData: Duration): String = js.native
-    def formatValue(value: Date, unit: TimeUnit, localeData: Duration): String = js.native
     
     def getFormatter(flavor: DefaultFormats): RTFFormatter = js.native
     
     def getLocaleData(): Duration = js.native
     def getLocaleData(format: Formats): Duration = js.native
     
-    def getRule(value: Double, unit: TimeUnit, localeData: Duration): String = js.native
     // Defaults to "long"
-    def getRule(value: Date, unit: TimeUnit, localeData: Duration): String = js.native
+    def getRule(value: js.Date, unit: TimeUnit, localeData: Duration): String = js.native
+    def getRule(value: Double, unit: TimeUnit, localeData: Duration): String = js.native
   }
 }

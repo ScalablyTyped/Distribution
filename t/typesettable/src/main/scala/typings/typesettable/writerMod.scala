@@ -13,19 +13,19 @@ object writerMod {
   
   @JSImport("typesettable/build/src/writers/writer", "Writer")
   @js.native
-  class Writer protected () extends StObject {
-    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[js.Any]) = this()
-    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[js.Any], _wrapper: Wrapper) = this()
+  open class Writer protected () extends StObject {
+    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[Any]) = this()
+    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[Any], _wrapper: Wrapper) = this()
     
-    /* private */ var _measurer: js.Any = js.native
+    /* private */ var _measurer: Any = js.native
     
-    /* private */ var _penFactory: js.Any = js.native
+    /* private */ var _penFactory: Any = js.native
     
-    /* private */ var _wrapper: js.Any = js.native
+    /* private */ var _wrapper: Any = js.native
     
     def measurer(newMeasurer: AbstractMeasurer): Writer = js.native
     
-    def penFactory(newPenFactory: IPenFactoryContext[js.Any]): Writer = js.native
+    def penFactory(newPenFactory: IPenFactoryContext[Any]): Writer = js.native
     
     def wrapper(newWrapper: Wrapper): Writer = js.native
     
@@ -38,14 +38,7 @@ object writerMod {
     def write[T](text: String, width: Double, height: Double, options: IWriteOptions): Unit = js.native
     def write[T](text: String, width: Double, height: Double, options: IWriteOptions, container: T): Unit = js.native
     
-    /* private */ def writeLines(
-      lines: js.Any,
-      linePen: js.Any,
-      width: js.Any,
-      lineHeight: js.Any,
-      shearShift: js.Any,
-      xAlign: js.Any
-    ): js.Any = js.native
+    /* private */ def writeLines(lines: Any, linePen: Any, width: Any, lineHeight: Any, shearShift: Any, xAlign: Any): Any = js.native
   }
   /* static members */
   object Writer {
@@ -56,8 +49,8 @@ object writerMod {
     
     @JSImport("typesettable/build/src/writers/writer", "Writer.SupportedRotation")
     @js.native
-    def SupportedRotation: js.Any = js.native
-    inline def SupportedRotation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
+    def SupportedRotation: Any = js.native
+    inline def SupportedRotation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
     
     @JSImport("typesettable/build/src/writers/writer", "Writer.XOffsetFactor")
     @js.native

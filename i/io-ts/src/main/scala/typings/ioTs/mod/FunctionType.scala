@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "FunctionType")
 @js.native
-class FunctionType ()
-  extends Type_[js.Function, js.Function, js.Any] {
+open class FunctionType ()
+  extends Type_[js.Function, js.Function, Any] {
   
   /**
     * @since 1.0.0

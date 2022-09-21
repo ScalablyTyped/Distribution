@@ -10,15 +10,12 @@ A port of the Brotli compression algorithm as used in WOFF2
 | ------------------ | :-------------: |
 | Full name          | brotli |
 | Keywords           | compress, decompress, encode, decode |
-| # releases         | 0 |
-| # dependents       | 95 |
-| # downloads        | 44133767 |
-| # stars            | 5 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8293880.333333333 |
+| # stars            | 410.0 |
 
 ## Links
-- [Homepage](https://github.com/devongovett/brotli.js)
-- [Bugs](https://github.com/devongovett/brotli.js/issues)
-- [Repository](https://github.com/devongovett/brotli.js)
 - [Npm](https://www.npmjs.com/package/brotli)
     
 

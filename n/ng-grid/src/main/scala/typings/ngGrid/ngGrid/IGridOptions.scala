@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IGridOptions extends StObject {
   
   /** Callback for when you want to validate something after selection. */
-  var afterSelectionChange: js.UndefOr[
-    js.Function2[/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var afterSelectionChange: js.UndefOr[js.Function2[/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** Define an aggregate template to customize the rows when grouped. See github wiki for more details. */
   var aggregateTemplate: js.UndefOr[String] = js.undefined
@@ -21,7 +19,7 @@ trait IGridOptions extends StObject {
     Note: when shift+ Selecting multiple items in the grid this will only get called
     once and the rowItem will be an array of items that are queued to be selected. */
   var beforeSelectionChange: js.UndefOr[
-    js.Function2[/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any], Boolean]
+    js.Function2[/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[Any], Boolean]
   ] = js.undefined
   
   /** checkbox templates. */
@@ -36,7 +34,7 @@ trait IGridOptions extends StObject {
   /** Data being displayed in the grid. This can be either a string of object ID or object reference.
     Using string is preferred, as this turns on change tracking in ng-grid
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /** Data updated callback, fires every time the data is modified from outside the grid. */
   var dataUpdated: js.UndefOr[js.Function] = js.undefined
@@ -75,7 +73,7 @@ trait IGridOptions extends StObject {
   var enableSorting: js.UndefOr[Boolean] = js.undefined
   
   /**  string list of properties to exclude when auto-generating columns. */
-  var excludeProperties: js.UndefOr[js.Any] = js.undefined
+  var excludeProperties: js.UndefOr[Any] = js.undefined
   
   /** filterOptions -
     filterText: The text bound to the built-in search box.
@@ -122,7 +120,7 @@ trait IGridOptions extends StObject {
   var pinSelectionCheckbox: js.UndefOr[Boolean] = js.undefined
   
   /** Array of plugin functions to register in ng-grid */
-  var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var plugins: js.UndefOr[js.Array[Any]] = js.undefined
   
   /** Row height of rows in grid. */
   var rowHeight: js.UndefOr[Double] = js.undefined
@@ -131,13 +129,13 @@ trait IGridOptions extends StObject {
   var rowTemplate: js.UndefOr[String] = js.undefined
   
   /** Select deselect an item by index. */
-  var selectItem: js.UndefOr[js.Function2[/* idx */ Double, /* state */ Boolean, js.Any]] = js.undefined
+  var selectItem: js.UndefOr[js.Function2[/* idx */ Double, /* state */ Boolean, Any]] = js.undefined
   
   /** Disable row selections by clicking on the row and only when the checkbox is clicked. */
   var selectWithCheckboxOnly: js.UndefOr[Boolean] = js.undefined
   
   /** all of the items selected in the grid. In single select mode there will only be one item in the array. */
-  var selectedItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var selectedItems: js.UndefOr[js.Array[Any]] = js.undefined
   
   /** Enables menu to choose which columns to display and group by.
     If both showColumnMenu and showFilter are false the menu button will not display.*/
@@ -159,7 +157,7 @@ trait IGridOptions extends StObject {
   /** Define a sortInfo object to specify a default sorting state.
     You can also observe this variable to utilize server-side sorting (see useExternalSorting).
     Syntax is sortinfo: { fields: ['fieldName1',' fieldName2'], direction: 'ASC'/'asc' || 'desc'/'DESC'}*/
-  var sortInfo: js.UndefOr[js.Any] = js.undefined
+  var sortInfo: js.UndefOr[Any] = js.undefined
   
   /** Set the tab index of the Vieport. */
   var tabIndex: js.UndefOr[Double] = js.undefined
@@ -180,7 +178,7 @@ object IGridOptions {
   
   extension [Self <: IGridOptions](x: Self) {
     
-    inline def setAfterSelectionChange(value: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "afterSelectionChange", js.Any.fromFunction2(value))
+    inline def setAfterSelectionChange(value: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "afterSelectionChange", js.Any.fromFunction2(value))
     
     inline def setAfterSelectionChangeUndefined: Self = StObject.set(x, "afterSelectionChange", js.undefined)
     
@@ -188,7 +186,7 @@ object IGridOptions {
     
     inline def setAggregateTemplateUndefined: Self = StObject.set(x, "aggregateTemplate", js.undefined)
     
-    inline def setBeforeSelectionChange(value: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "beforeSelectionChange", js.Any.fromFunction2(value))
+    inline def setBeforeSelectionChange(value: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "beforeSelectionChange", js.Any.fromFunction2(value))
     
     inline def setBeforeSelectionChangeUndefined: Self = StObject.set(x, "beforeSelectionChange", js.undefined)
     
@@ -204,9 +202,9 @@ object IGridOptions {
     
     inline def setColumnDefsUndefined: Self = StObject.set(x, "columnDefs", js.undefined)
     
-    inline def setColumnDefsVarargs(value: IColumnDef*): Self = StObject.set(x, "columnDefs", js.Array(value :_*))
+    inline def setColumnDefsVarargs(value: IColumnDef*): Self = StObject.set(x, "columnDefs", js.Array(value*))
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -258,7 +256,7 @@ object IGridOptions {
     
     inline def setEnableSortingUndefined: Self = StObject.set(x, "enableSorting", js.undefined)
     
-    inline def setExcludeProperties(value: js.Any): Self = StObject.set(x, "excludeProperties", value.asInstanceOf[js.Any])
+    inline def setExcludeProperties(value: Any): Self = StObject.set(x, "excludeProperties", value.asInstanceOf[js.Any])
     
     inline def setExcludePropertiesUndefined: Self = StObject.set(x, "excludeProperties", js.undefined)
     
@@ -274,7 +272,7 @@ object IGridOptions {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setHeaderRowHeight(value: Double): Self = StObject.set(x, "headerRowHeight", value.asInstanceOf[js.Any])
     
@@ -316,11 +314,11 @@ object IGridOptions {
     
     inline def setPinSelectionCheckboxUndefined: Self = StObject.set(x, "pinSelectionCheckbox", js.undefined)
     
-    inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
@@ -330,7 +328,7 @@ object IGridOptions {
     
     inline def setRowTemplateUndefined: Self = StObject.set(x, "rowTemplate", js.undefined)
     
-    inline def setSelectItem(value: (/* idx */ Double, /* state */ Boolean) => js.Any): Self = StObject.set(x, "selectItem", js.Any.fromFunction2(value))
+    inline def setSelectItem(value: (/* idx */ Double, /* state */ Boolean) => Any): Self = StObject.set(x, "selectItem", js.Any.fromFunction2(value))
     
     inline def setSelectItemUndefined: Self = StObject.set(x, "selectItem", js.undefined)
     
@@ -338,11 +336,11 @@ object IGridOptions {
     
     inline def setSelectWithCheckboxOnlyUndefined: Self = StObject.set(x, "selectWithCheckboxOnly", js.undefined)
     
-    inline def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
-    inline def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
     
     inline def setShowColumnMenu(value: Boolean): Self = StObject.set(x, "showColumnMenu", value.asInstanceOf[js.Any])
     
@@ -364,7 +362,7 @@ object IGridOptions {
     
     inline def setShowSelectionCheckboxUndefined: Self = StObject.set(x, "showSelectionCheckbox", js.undefined)
     
-    inline def setSortInfo(value: js.Any): Self = StObject.set(x, "sortInfo", value.asInstanceOf[js.Any])
+    inline def setSortInfo(value: Any): Self = StObject.set(x, "sortInfo", value.asInstanceOf[js.Any])
     
     inline def setSortInfoUndefined: Self = StObject.set(x, "sortInfo", js.undefined)
     

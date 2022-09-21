@@ -1,7 +1,6 @@
 package typings.tablesorter
 
 import typings.jqueryui.JQueryUI.DatepickerOptions
-import typings.std.Date
 import typings.tablesorter.dateOptionsMod.DateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +16,7 @@ object uidaterangeoptionsMod {
     /**
       * The default `from`-value.
       */
-    var from: js.UndefOr[Date] = js.undefined
+    var from: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The label of the "from"-input.
@@ -32,7 +31,7 @@ object uidaterangeoptionsMod {
     /**
       * The default `to`-value.
       */
-    var to: js.UndefOr[Date] = js.undefined
+    var to: js.UndefOr[js.Date] = js.undefined
   }
   object UIDateRangeOptions {
     
@@ -43,7 +42,7 @@ object uidaterangeoptionsMod {
     
     extension [Self <: UIDateRangeOptions](x: Self) {
       
-      inline def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: js.Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
@@ -55,7 +54,7 @@ object uidaterangeoptionsMod {
       
       inline def setTextToUndefined: Self = StObject.set(x, "textTo", js.undefined)
       
-      inline def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: js.Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }

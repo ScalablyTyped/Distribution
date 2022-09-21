@@ -63,7 +63,7 @@ object DraggableViewProps {
     
     inline def setSwipeDirectionUndefined: Self = StObject.set(x, "swipeDirection", js.undefined)
     
-    inline def setSwipeDirectionVarargs(value: SwipeDirection*): Self = StObject.set(x, "swipeDirection", js.Array(value :_*))
+    inline def setSwipeDirectionVarargs(value: SwipeDirection*): Self = StObject.set(x, "swipeDirection", js.Array(value*))
     
     inline def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
     

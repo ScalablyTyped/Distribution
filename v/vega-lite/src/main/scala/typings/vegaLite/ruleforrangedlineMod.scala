@@ -1,5 +1,6 @@
 package typings.vegaLite
 
+import typings.vegaLite.anon.Mark
 import typings.vegaLite.channeldefMod.Field
 import typings.vegaLite.channeldefMod.Position2Def
 import typings.vegaLite.encodingMod.Encoding
@@ -13,6 +14,8 @@ import typings.vegaLite.specMod.GenericSpec
 import typings.vegaLite.specUnitMod.GenericUnitSpec
 import typings.vegaLite.specUnitMod.NormalizedUnitSpec
 import typings.vegaLite.srcConfigMod.Config
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.vegaLiteStrings.line
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
@@ -23,17 +26,17 @@ object ruleforrangedlineMod {
   
   @JSImport("vega-lite/build/src/normalize/ruleforrangedline", "RuleForRangedLineNormalizer")
   @js.native
-  class RuleForRangedLineNormalizer ()
+  open class RuleForRangedLineNormalizer ()
     extends StObject
        with ExtraNormalizer[
           RangedLineSpec, 
           NormalizedUnitSpec | NormalizedLayerSpec, 
-          (GenericUnitSpec[js.Any, js.Any]) | GenericLayerSpec[js.Any]
+          (GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]]) | GenericLayerSpec[Any]
         ] {
     
-    def hasMatchingType(spec: GenericSpec[js.Any, js.Any, js.Any, js.Any]): /* is vega-lite.vega-lite/build/src/normalize/ruleforrangedline.RangedLineSpec */ Boolean = js.native
+    def hasMatchingType(spec: GenericSpec[Any, Any, Any, Any]): /* is vega-lite.vega-lite/build/src/normalize/ruleforrangedline.RangedLineSpec */ Boolean = js.native
     /* CompleteClass */
-    override def hasMatchingType(spec: GenericSpec[js.Any, js.Any, js.Any, js.Any], config: Config[ExprRef | SignalRef]): /* is S */ Boolean = js.native
+    override def hasMatchingType(spec: GenericSpec[Any, Any, Any, Any], config: Config[ExprRef | SignalRef]): /* is S */ Boolean = js.native
     
     /* CompleteClass */
     var name: String = js.native
@@ -43,7 +46,7 @@ object ruleforrangedlineMod {
       spec: RangedLineSpec,
       params: NormalizerParams,
       normalize: Normalize[
-          (GenericUnitSpec[js.Any, js.Any]) | GenericLayerSpec[js.Any], 
+          (GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]]) | GenericLayerSpec[Any], 
           NormalizedUnitSpec | NormalizedLayerSpec
         ]
     ): NormalizedUnitSpec | NormalizedLayerSpec = js.native
@@ -87,5 +90,9 @@ object ruleforrangedlineMod {
     }
   }
   
-  type RangedLineSpec = GenericUnitSpec[Encoding[Field] & (EncodingX2Mixins | EncodingY2Mixins), line]
+  type RangedLineSpec = GenericUnitSpec[
+    (EncodingX2Mixins & Encoding[Field]) | (EncodingY2Mixins & Encoding[Field]), 
+    line | Mark, 
+    SelectionParameter[SelectionType]
+  ]
 }

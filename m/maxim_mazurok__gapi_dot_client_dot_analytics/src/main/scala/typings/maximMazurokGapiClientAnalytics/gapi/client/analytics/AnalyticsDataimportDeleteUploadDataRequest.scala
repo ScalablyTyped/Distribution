@@ -22,6 +22,6 @@ object AnalyticsDataimportDeleteUploadDataRequest {
     
     inline def setCustomDataImportUidsUndefined: Self = StObject.set(x, "customDataImportUids", js.undefined)
     
-    inline def setCustomDataImportUidsVarargs(value: String*): Self = StObject.set(x, "customDataImportUids", js.Array(value :_*))
+    inline def setCustomDataImportUidsVarargs(value: String*): Self = StObject.set(x, "customDataImportUids", js.Array(value*))
   }
 }

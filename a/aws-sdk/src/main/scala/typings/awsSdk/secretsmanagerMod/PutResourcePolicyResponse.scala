@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutResourcePolicyResponse extends StObject {
   
   /**
-    * The ARN of the secret retrieved by the resource-based policy.
+    * The ARN of the secret.
     */
   var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
-    * The friendly name of the secret that the retrieved by the resource-based policy.
+    * The name of the secret.
     */
   var Name: js.UndefOr[NameType] = js.undefined
 }

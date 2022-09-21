@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices.Sensors
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
@@ -44,8 +43,8 @@ object Pedometer {
   /* static member */
   @JSGlobal("Windows.Devices.Sensors.Pedometer.getReadingsFromTriggerDetails")
   @js.native
-  def getReadingsFromTriggerDetails: js.Any = js.native
-  inline def getReadingsFromTriggerDetails_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getReadingsFromTriggerDetails")(x.asInstanceOf[js.Any])
+  def getReadingsFromTriggerDetails: Any = js.native
+  inline def getReadingsFromTriggerDetails_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getReadingsFromTriggerDetails")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   /**
@@ -54,7 +53,7 @@ object Pedometer {
     * @return Asynchronously returns a list of PedometerReading objects that represent info about the sensor.
     */
   /* static member */
-  inline def getSystemHistoryAsync(fromTime: Date): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def getSystemHistoryAsync(fromTime: js.Date): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
   /**
     * Asynchronously gets pedometer readings from a specific time and duration.
     * @param fromTime The time for which you want to retrieve the reading.
@@ -62,5 +61,5 @@ object Pedometer {
     * @return Asynchronously returns a list of PedometerReading objects that represent info about the sensor.
     */
   /* static member */
-  inline def getSystemHistoryAsync(fromTime: Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def getSystemHistoryAsync(fromTime: js.Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
 }

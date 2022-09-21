@@ -14,7 +14,7 @@ trait RecipientListWithRecipients
 object RecipientListWithRecipients {
   
   inline def apply(
-    attributes: js.Any,
+    attributes: Any,
     description: String,
     id: String,
     name: String,
@@ -29,6 +29,6 @@ object RecipientListWithRecipients {
     
     inline def setRecipients(value: js.Array[Recipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
-    inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value*))
   }
 }

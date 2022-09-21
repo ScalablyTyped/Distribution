@@ -12,7 +12,7 @@ object global {
   
   @JSGlobal("_Context")
   @js.native
-  class Context ()
+  open class Context ()
     extends StObject
        with typings.jsfl.Context {
     
@@ -23,7 +23,7 @@ object global {
     var frame: FlashFrame = js.native
     
     /* CompleteClass */
-    override def goto(): js.Any = js.native
+    override def goto(): Any = js.native
     
     /* CompleteClass */
     var keyframes: js.Array[FlashFrame] = js.native
@@ -32,10 +32,10 @@ object global {
     var layer: FlashLayer = js.native
     
     /* CompleteClass */
-    override def setLayer(index: Double): js.Any = js.native
+    override def setLayer(index: Double): Any = js.native
     
     /* CompleteClass */
-    override def update(): js.Any = js.native
+    override def update(): Any = js.native
   }
   object Context {
     
@@ -57,7 +57,7 @@ object global {
   
   @JSGlobal("_File")
   @js.native
-  class File protected ()
+  open class File protected ()
     extends StObject
        with typings.jsfl.File {
     def this(path: String) = this()
@@ -74,7 +74,7 @@ object global {
   
   @JSGlobal("_Folder")
   @js.native
-  class Folder protected ()
+  open class Folder protected ()
     extends StObject
        with typings.jsfl.Folder {
     def this(path: String) = this()
@@ -85,13 +85,13 @@ object global {
   
   @JSGlobal("SpriteSheetExporter")
   @js.native
-  class SpriteSheetExporter ()
+  open class SpriteSheetExporter ()
     extends StObject
        with typings.jsfl.SpriteSheetExporter
   
   @JSGlobal("_URI")
   @js.native
-  class _URI protected ()
+  open class _URI protected ()
     extends StObject
        with typings.jsfl._URI {
     def this(path: String) = this()
@@ -128,7 +128,7 @@ object global {
   
   inline def confirm(strAlert: String): Boolean = js.Dynamic.global.applyDynamic("confirm")(strAlert.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def debug(item: js.Any): Unit = js.Dynamic.global.applyDynamic("debug")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def debug(item: Any): Unit = js.Dynamic.global.applyDynamic("debug")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // Global variables
   @JSGlobal("$dom")
@@ -142,13 +142,13 @@ object global {
   def fl: FlashFL = js.native
   inline def fl_=(x: FlashFL): Unit = js.Dynamic.global.updateDynamic("fl")(x.asInstanceOf[js.Any])
   
-  inline def format(format: String, params: js.Any*): Unit = (js.Dynamic.global.applyDynamic("format")(format.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def format(format: String, params: Any*): Unit = js.Dynamic.global.applyDynamic("format")(List(format.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   // Library / class loading
   inline def include(className: String): Unit = js.Dynamic.global.applyDynamic("include")(className.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // Inspection and debugging
-  inline def inspect(item: js.Any): Unit = js.Dynamic.global.applyDynamic("inspect")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def inspect(item: Any): Unit = js.Dynamic.global.applyDynamic("inspect")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("$library")
   @js.native
@@ -156,7 +156,7 @@ object global {
   
   inline def library_=(x: FlashLibrary): Unit = js.Dynamic.global.updateDynamic("$library")(x.asInstanceOf[js.Any])
   
-  inline def list(item: js.Any): Unit = js.Dynamic.global.applyDynamic("list")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def list(item: Any): Unit = js.Dynamic.global.applyDynamic("list")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // File
   inline def load(filePath: String): String = js.Dynamic.global.applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -182,7 +182,7 @@ object global {
   
   // Global functions
   // Output
-  inline def trace(args: js.Any*): Unit = js.Dynamic.global.applyDynamic("trace")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def trace(args: Any*): Unit = js.Dynamic.global.applyDynamic("trace")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   @JSGlobal("xjsfl")
   @js.native

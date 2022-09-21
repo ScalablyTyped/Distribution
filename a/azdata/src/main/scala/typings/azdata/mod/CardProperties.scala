@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CardProperties
   extends StObject
-     with ComponentProperties
-     with ComponentWithIcon {
+     with ComponentWithIconProperties {
   
   var actions: js.UndefOr[js.Array[ActionDescriptor]] = js.undefined
   
@@ -42,7 +41,7 @@ object CardProperties {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: ActionDescriptor*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ActionDescriptor*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setCardType(value: CardType): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     
@@ -52,7 +51,7 @@ object CardProperties {
     
     inline def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
     
-    inline def setDescriptionsVarargs(value: CardDescriptionItem*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
+    inline def setDescriptionsVarargs(value: CardDescriptionItem*): Self = StObject.set(x, "descriptions", js.Array(value*))
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

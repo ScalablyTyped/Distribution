@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "BitmapText")
 @js.native
-class BitmapText protected () extends Drawable {
+open class BitmapText protected () extends Drawable {
   def this(`type`: String, textOptions: BitmapTextOptions) = this()
   
   def setText(text: String): Unit = js.native

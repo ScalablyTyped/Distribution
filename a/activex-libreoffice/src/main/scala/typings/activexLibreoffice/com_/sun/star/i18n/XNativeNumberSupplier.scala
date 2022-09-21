@@ -51,7 +51,7 @@ object XNativeNumberSupplier {
     convertToXmlAttributes: (Locale, Double) => NativeNumberXmlAttributes,
     getNativeNumberString: (String, Locale, Double) => String,
     isValidNatNum: (Locale, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XNativeNumberSupplier = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertFromXmlAttributes = js.Any.fromFunction1(convertFromXmlAttributes), convertToXmlAttributes = js.Any.fromFunction2(convertToXmlAttributes), getNativeNumberString = js.Any.fromFunction3(getNativeNumberString), isValidNatNum = js.Any.fromFunction2(isValidNatNum), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

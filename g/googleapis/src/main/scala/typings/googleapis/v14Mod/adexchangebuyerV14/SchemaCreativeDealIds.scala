@@ -5,20 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The external deal ids associated with a creative.
-  */
 trait SchemaCreativeDealIds extends StObject {
   
   /**
     * A list of external deal ids and ARC approval status.
     */
-  var dealStatuses: js.UndefOr[js.Array[ArcStatus]] = js.undefined
+  var dealStatuses: js.UndefOr[js.Array[ArcStatus] | Null] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCreativeDealIds {
   
@@ -31,11 +28,15 @@ object SchemaCreativeDealIds {
     
     inline def setDealStatuses(value: js.Array[ArcStatus]): Self = StObject.set(x, "dealStatuses", value.asInstanceOf[js.Any])
     
+    inline def setDealStatusesNull: Self = StObject.set(x, "dealStatuses", null)
+    
     inline def setDealStatusesUndefined: Self = StObject.set(x, "dealStatuses", js.undefined)
     
-    inline def setDealStatusesVarargs(value: ArcStatus*): Self = StObject.set(x, "dealStatuses", js.Array(value :_*))
+    inline def setDealStatusesVarargs(value: ArcStatus*): Self = StObject.set(x, "dealStatuses", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

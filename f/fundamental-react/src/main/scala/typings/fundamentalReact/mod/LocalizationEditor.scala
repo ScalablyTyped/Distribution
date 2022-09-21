@@ -3,7 +3,6 @@ package typings.fundamentalReact.mod
 import typings.fundamentalReact.anon.PartialLocalizationEditor
 import typings.fundamentalReact.anon.WeakValidationMapLocaliza
 import typings.fundamentalReact.localizationEditorMod.LocalizationEditorProps
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -13,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/LocalizationEditor/LocalizationEditor.LocalizationEditorProps> & {  displayName :'LocalizationEditor'} */
 object LocalizationEditor {
   
-  inline def apply(props: PropsWithChildren[LocalizationEditorProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def apply(props: PropsWithChildren[LocalizationEditorProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def apply(props: LocalizationEditorProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def apply(props: LocalizationEditorProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
   @JSImport("fundamental-react", "LocalizationEditor")
   @js.native
@@ -22,8 +21,8 @@ object LocalizationEditor {
   
   @JSImport("fundamental-react", "LocalizationEditor.contextTypes")
   @js.native
-  def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-  inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+  inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("fundamental-react", "LocalizationEditor.defaultProps")
   @js.native

@@ -36,7 +36,7 @@ object DisposeOnClose {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: Onselect*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Onselect*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setStyle(value: compact): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

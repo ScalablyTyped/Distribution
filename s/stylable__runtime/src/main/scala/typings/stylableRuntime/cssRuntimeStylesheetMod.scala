@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cssRuntimeStylesheetMod {
   
-  @JSImport("@stylable/runtime/cjs/css-runtime-stylesheet", JSImport.Namespace)
+  @JSImport("@stylable/runtime/dist/css-runtime-stylesheet", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

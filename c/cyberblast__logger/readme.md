@@ -10,10 +10,10 @@ A simple logger for node
 | ------------------ | :-------------: |
 | Full name          | @cyberblast/logger |
 | Keywords           | node, log, logger |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 782 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 54.333333333333336 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/cyberblast/logger#readme)

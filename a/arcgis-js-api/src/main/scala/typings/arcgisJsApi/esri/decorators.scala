@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * This module contains Accessor [TypeScript](https://www.typescriptlang.org/docs/handbook/decorators.html) decorators.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html)
+  */
 @js.native
 trait decorators extends StObject {
   
@@ -26,13 +31,6 @@ trait decorators extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#cast)
     */
   def cast(propertyName: String): js.Function = js.native
-  
-  /**
-    * A function that can be used as a class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#declared)
-    */
-  def declared[T](baseClass: T, mixinClasses: js.Array[js.Any]*): T = js.native
   
   /**
     * This convenience decorator is used to define an [Accessor](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Accessor.html) property.

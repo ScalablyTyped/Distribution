@@ -14,7 +14,7 @@ trait Health extends StObject {
   /**
     * Returns the checks of a service
     */
-  def checks[TData](opts: ChecksOptions): Thenable[TData] = js.native
+  def checks[TData](opts: ChecksOptions): js.Promise[TData] = js.native
   /**
     * Returns the checks of a service
     */
@@ -22,7 +22,7 @@ trait Health extends StObject {
   /**
     * Returns the checks of a service
     */
-  def checks[TData](service: String): Thenable[TData] = js.native
+  def checks[TData](service: String): js.Promise[TData] = js.native
   /**
     * Returns the checks of a service
     */
@@ -33,7 +33,7 @@ trait Health extends StObject {
   /**
     * Returns the health info of a node
     */
-  def node[TData](node: String): Thenable[TData] = js.native
+  def node[TData](node: String): js.Promise[TData] = js.native
   /**
     * Returns the health info of a node
     */
@@ -41,7 +41,7 @@ trait Health extends StObject {
   /**
     * Returns the health info of a node
     */
-  def node[TData](opts: NodeOptions): Thenable[TData] = js.native
+  def node[TData](opts: NodeOptions): js.Promise[TData] = js.native
   /**
     * Returns the health info of a node
     */
@@ -50,7 +50,7 @@ trait Health extends StObject {
   /**
     * Returns the nodes and health info of a service
     */
-  def service[TData](opts: ServiceOptions): Thenable[TData] = js.native
+  def service[TData](opts: ServiceOptions): js.Promise[TData] = js.native
   /**
     * Returns the nodes and health info of a service
     */
@@ -58,7 +58,7 @@ trait Health extends StObject {
   /**
     * Returns the nodes and health info of a service
     */
-  def service[TData](service: String): Thenable[TData] = js.native
+  def service[TData](service: String): js.Promise[TData] = js.native
   /**
     * Returns the nodes and health info of a service
     */
@@ -67,7 +67,7 @@ trait Health extends StObject {
   /**
     * Returns the checks in a given state
     */
-  def state[TData](opts: StateOptions): Thenable[TData] = js.native
+  def state[TData](opts: StateOptions): js.Promise[TData] = js.native
   /**
     * Returns the checks in a given state
     */
@@ -75,7 +75,7 @@ trait Health extends StObject {
   /**
     * Returns the checks in a given state
     */
-  def state[TData](state: String): Thenable[TData] = js.native
+  def state[TData](state: String): js.Promise[TData] = js.native
   /**
     * Returns the checks in a given state
     */

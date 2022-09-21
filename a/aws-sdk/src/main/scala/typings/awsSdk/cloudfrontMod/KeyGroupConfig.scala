@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyGroupConfig extends StObject {
   
   /**
-    * A comment to describe the key group.
+    * A comment to describe the key group. The comment cannot be longer than 128 characters.
     */
   var Comment: js.UndefOr[String] = js.undefined
   
@@ -36,7 +36,7 @@ object KeyGroupConfig {
     
     inline def setItems(value: PublicKeyIdList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

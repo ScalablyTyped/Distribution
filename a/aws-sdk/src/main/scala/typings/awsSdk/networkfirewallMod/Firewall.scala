@@ -17,6 +17,11 @@ trait Firewall extends StObject {
   var Description: js.UndefOr[typings.awsSdk.networkfirewallMod.Description] = js.undefined
   
   /**
+    * A complex type that contains the Amazon Web Services KMS encryption configuration settings for your firewall.
+    */
+  var EncryptionConfiguration: js.UndefOr[typings.awsSdk.networkfirewallMod.EncryptionConfiguration] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the firewall.
     */
   var FirewallArn: js.UndefOr[ResourceArn] = js.undefined
@@ -83,6 +88,10 @@ object Firewall {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
+    inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
+    
     inline def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     
     inline def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
@@ -105,13 +114,13 @@ object Firewall {
     
     inline def setSubnetMappings(value: SubnetMappings): Self = StObject.set(x, "SubnetMappings", value.asInstanceOf[js.Any])
     
-    inline def setSubnetMappingsVarargs(value: SubnetMapping*): Self = StObject.set(x, "SubnetMappings", js.Array(value :_*))
+    inline def setSubnetMappingsVarargs(value: SubnetMapping*): Self = StObject.set(x, "SubnetMappings", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }

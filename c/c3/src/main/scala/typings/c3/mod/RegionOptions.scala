@@ -1,7 +1,6 @@
 package typings.c3.mod
 
 import typings.c3.c3Strings.dashed
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait RegionOptions extends StObject {
     * The point on the axis at which to end the region. If not provided, will
     * use the end edge of the axis.
     */
-  var end: js.UndefOr[String | Double | Date] = js.undefined
+  var end: js.UndefOr[String | Double | js.Date] = js.undefined
   
   /**
     * An optional label property can be provided to display a label for the region.
@@ -49,7 +48,7 @@ trait RegionOptions extends StObject {
     * The point on the axis at which to start the region. If not provided, will
     * use the start edge of the axis.
     */
-  var start: js.UndefOr[String | Double | Date] = js.undefined
+  var start: js.UndefOr[String | Double | js.Date] = js.undefined
   
   /**
     * If `'dashed'`, renders the line as dashed in this range instead of showing a region block.
@@ -78,7 +77,7 @@ object RegionOptions {
     
     inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    inline def setEnd(value: String | Double | Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String | Double | js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
@@ -98,7 +97,7 @@ object RegionOptions {
     
     inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
-    inline def setStart(value: String | Double | Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String | Double | js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     

@@ -17,7 +17,7 @@ trait RollingAverage extends StObject {
   /**
     * Wraps a value around the sample range boundaries
     * @param i Position in sample range, for example if the sample length is 5, and i is -3, then 2 will be returned.
-    * @return Wrapped position in sample range
+    * @returns Wrapped position in sample range
     */
   /* protected */ def _wrapPosition(i: Double): Double
   
@@ -35,13 +35,13 @@ trait RollingAverage extends StObject {
   /**
     * Returns previously added values or null if outside of history or outside the sliding window domain
     * @param i Index in history. For example, pass 0 for the most recent value and 1 for the value before that
-    * @return Value previously recorded with add() or null if outside of range
+    * @returns Value previously recorded with add() or null if outside of range
     */
   def history(i: Double): Double
   
   /**
     * Returns true if enough samples have been taken to completely fill the sliding window
-    * @return true if sample-set saturated
+    * @returns true if sample-set saturated
     */
   def isSaturated(): Boolean
   
@@ -96,7 +96,7 @@ object RollingAverage {
     
     inline def set_samples(value: js.Array[Double]): Self = StObject.set(x, "_samples", value.asInstanceOf[js.Any])
     
-    inline def set_samplesVarargs(value: Double*): Self = StObject.set(x, "_samples", js.Array(value :_*))
+    inline def set_samplesVarargs(value: Double*): Self = StObject.set(x, "_samples", js.Array(value*))
     
     inline def set_wrapPosition(value: Double => Double): Self = StObject.set(x, "_wrapPosition", js.Any.fromFunction1(value))
   }

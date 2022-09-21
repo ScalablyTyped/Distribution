@@ -24,7 +24,7 @@ object stepperPropsTypeMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -75,7 +75,7 @@ object stepperPropsTypeMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       

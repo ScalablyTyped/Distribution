@@ -7,12 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TakeHeapSnapshotRequest extends StObject {
   
   /**
+    * If true, numerical values are included in the snapshot
+    */
+  var captureNumericValue: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If true, exposes internals of the snapshot.
+    */
+  var exposeInternals: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If true 'reportHeapSnapshotProgress' events will be generated while snapshot is being taken.
     */
   var reportProgress: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If true, a raw snapshot without artifical roots will be generated
+    * If true, a raw snapshot without artificial roots will be generated.
+    * Deprecated in favor of `exposeInternals`.
     */
   var treatGlobalObjectsAsRoots: js.UndefOr[Boolean] = js.undefined
 }
@@ -24,6 +35,14 @@ object TakeHeapSnapshotRequest {
   }
   
   extension [Self <: TakeHeapSnapshotRequest](x: Self) {
+    
+    inline def setCaptureNumericValue(value: Boolean): Self = StObject.set(x, "captureNumericValue", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureNumericValueUndefined: Self = StObject.set(x, "captureNumericValue", js.undefined)
+    
+    inline def setExposeInternals(value: Boolean): Self = StObject.set(x, "exposeInternals", value.asInstanceOf[js.Any])
+    
+    inline def setExposeInternalsUndefined: Self = StObject.set(x, "exposeInternals", js.undefined)
     
     inline def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     

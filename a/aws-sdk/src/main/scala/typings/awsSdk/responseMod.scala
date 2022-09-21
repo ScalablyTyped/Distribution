@@ -10,7 +10,7 @@ object responseMod {
   
   @JSImport("aws-sdk/lib/response", "Response")
   @js.native
-  class Response[D, E] () extends StObject {
+  open class Response[D, E] () extends StObject {
     
     /**
     		 * The de-serialized response data from the service.

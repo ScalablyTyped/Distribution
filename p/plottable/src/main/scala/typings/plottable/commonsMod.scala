@@ -41,14 +41,14 @@ object commonsMod {
       *
       * The first argument in `plot.x((d) => d.x, scale)`.
       */
-    def accessor(datum: js.Any, index: Double, dataset: Dataset): js.Any
+    def accessor(datum: Any, index: Double, dataset: Dataset): Any
     /**
       * The (possibly upcasted to a function) user defined accessor.
       *
       * The first argument in `plot.x((d) => d.x, scale)`.
       */
     @JSName("accessor")
-    var accessor_Original: IAccessor[js.Any]
+    var accessor_Original: IAccessor[Any]
     
     /**
       * Transforms the scaled result of the accessor.
@@ -73,16 +73,16 @@ object commonsMod {
   }
   object IAccessorScaleBinding {
     
-    inline def apply[D, R](accessor: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): IAccessorScaleBinding[D, R] = {
+    inline def apply[D, R](accessor: (/* datum */ Any, /* index */ Double, /* dataset */ Dataset) => Any): IAccessorScaleBinding[D, R] = {
       val __obj = js.Dynamic.literal(accessor = js.Any.fromFunction3(accessor))
       __obj.asInstanceOf[IAccessorScaleBinding[D, R]]
     }
     
     extension [Self <: IAccessorScaleBinding[?, ?], D, R](x: Self & (IAccessorScaleBinding[D, R])) {
       
-      inline def setAccessor(value: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
+      inline def setAccessor(value: (/* datum */ Any, /* index */ Double, /* dataset */ Dataset) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
       
-      inline def setPostScale(value: (R, /* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => R): Self = StObject.set(x, "postScale", js.Any.fromFunction4(value))
+      inline def setPostScale(value: (R, /* datum */ Any, /* index */ Double, /* dataset */ Dataset) => R): Self = StObject.set(x, "postScale", js.Any.fromFunction4(value))
       
       inline def setPostScaleUndefined: Self = StObject.set(x, "postScale", js.undefined)
       
@@ -100,7 +100,7 @@ object commonsMod {
     
     var datasetIndex: Double
     
-    var datum: js.Any
+    var datum: Any
     
     var drawer: IDrawer
     
@@ -116,7 +116,7 @@ object commonsMod {
       component: Plot,
       dataset: Dataset,
       datasetIndex: Double,
-      datum: js.Any,
+      datum: Any,
       drawer: IDrawer,
       index: Double,
       position: Point,
@@ -134,7 +134,7 @@ object commonsMod {
       
       inline def setDatasetIndex(value: Double): Self = StObject.set(x, "datasetIndex", value.asInstanceOf[js.Any])
       
-      inline def setDatum(value: js.Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+      inline def setDatum(value: Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       
       inline def setDrawer(value: IDrawer): Self = StObject.set(x, "drawer", value.asInstanceOf[js.Any])
       
@@ -163,10 +163,10 @@ object commonsMod {
       component: Plot,
       dataset: Dataset,
       datasetIndex: Double,
-      datum: js.Any,
+      datum: Any,
       index: Double,
       position: Point,
-      selection: SimpleSelection[js.Any]
+      selection: SimpleSelection[Any]
     ): IPlotEntity = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], datasetIndex = datasetIndex.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPlotEntity]
@@ -184,9 +184,9 @@ object commonsMod {
   
   trait ITransformableAccessorScaleBinding[D, R] extends StObject {
     
-    def accessor(datum: js.Any, index: Double, dataset: Dataset): js.Any
+    def accessor(datum: Any, index: Double, dataset: Dataset): Any
     @JSName("accessor")
-    var accessor_Original: IAccessor[js.Any]
+    var accessor_Original: IAccessor[Any]
     
     var postScale: js.UndefOr[IRangeProjector[R]] = js.undefined
     
@@ -194,16 +194,16 @@ object commonsMod {
   }
   object ITransformableAccessorScaleBinding {
     
-    inline def apply[D, R](accessor: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): ITransformableAccessorScaleBinding[D, R] = {
+    inline def apply[D, R](accessor: (/* datum */ Any, /* index */ Double, /* dataset */ Dataset) => Any): ITransformableAccessorScaleBinding[D, R] = {
       val __obj = js.Dynamic.literal(accessor = js.Any.fromFunction3(accessor))
       __obj.asInstanceOf[ITransformableAccessorScaleBinding[D, R]]
     }
     
     extension [Self <: ITransformableAccessorScaleBinding[?, ?], D, R](x: Self & (ITransformableAccessorScaleBinding[D, R])) {
       
-      inline def setAccessor(value: (/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
+      inline def setAccessor(value: (/* datum */ Any, /* index */ Double, /* dataset */ Dataset) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
       
-      inline def setPostScale(value: (R, /* datum */ js.Any, /* index */ Double, /* dataset */ Dataset) => R): Self = StObject.set(x, "postScale", js.Any.fromFunction4(value))
+      inline def setPostScale(value: (R, /* datum */ Any, /* index */ Double, /* dataset */ Dataset) => R): Self = StObject.set(x, "postScale", js.Any.fromFunction4(value))
       
       inline def setPostScaleUndefined: Self = StObject.set(x, "postScale", js.undefined)
       

@@ -22,12 +22,12 @@ trait ModifyVpnConnectionOptionsRequest extends StObject {
   var LocalIpv6NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
-    * The IPv4 CIDR on the AWS side of the VPN connection. Default: 0.0.0.0/0 
+    * The IPv4 CIDR on the Amazon Web Services side of the VPN connection. Default: 0.0.0.0/0 
     */
   var RemoteIpv4NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
-    * The IPv6 CIDR on the AWS side of the VPN connection. Default: ::/0 
+    * The IPv6 CIDR on the Amazon Web Services side of the VPN connection. Default: ::/0 
     */
   var RemoteIpv6NetworkCidr: js.UndefOr[String] = js.undefined
   

@@ -18,7 +18,8 @@ object formListMod extends Shortcut {
   
   trait FormListFieldData extends StObject {
     
-    var fieldKey: Double
+    /** @deprecated No need anymore Use key instead */
+    var fieldKey: js.UndefOr[Double] = js.undefined
     
     var key: Double
     
@@ -26,14 +27,16 @@ object formListMod extends Shortcut {
   }
   object FormListFieldData {
     
-    inline def apply(fieldKey: Double, key: Double, name: Double): FormListFieldData = {
-      val __obj = js.Dynamic.literal(fieldKey = fieldKey.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(key: Double, name: Double): FormListFieldData = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormListFieldData]
     }
     
     extension [Self <: FormListFieldData](x: Self) {
       
       inline def setFieldKey(value: Double): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
+      
+      inline def setFieldKeyUndefined: Self = StObject.set(x, "fieldKey", js.undefined)
       
       inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -59,6 +62,8 @@ object formListMod extends Shortcut {
     
     def children(fields: js.Array[FormListFieldData], operation: FormListOperation, meta: Errors): ReactNode
     
+    var initialValue: js.UndefOr[js.Array[Any]] = js.undefined
+    
     var name: String | Double | (js.Array[String | Double])
     
     var prefixCls: js.UndefOr[String] = js.undefined
@@ -79,9 +84,15 @@ object formListMod extends Shortcut {
       
       inline def setChildren(value: (js.Array[FormListFieldData], FormListOperation, Errors) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
+      inline def setInitialValue(value: js.Array[Any]): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+      
+      inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+      
+      inline def setInitialValueVarargs(value: Any*): Self = StObject.set(x, "initialValue", js.Array(value*))
+      
       inline def setName(value: String | Double | (js.Array[String | Double])): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value*))
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
@@ -91,7 +102,7 @@ object formListMod extends Shortcut {
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      inline def setRulesVarargs(value: ValidatorRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: ValidatorRule*): Self = StObject.set(x, "rules", js.Array(value*))
     }
   }
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.Hyperexponential")
 @js.native
-class Hyperexponential ()
+open class Hyperexponential ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Hyperexponential] {
   def this(parameters: js.Array[Rate]) = this()

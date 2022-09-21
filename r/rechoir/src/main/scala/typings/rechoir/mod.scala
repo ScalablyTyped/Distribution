@@ -2,7 +2,6 @@ package typings.rechoir
 
 import typings.interpret.mod.Extensions_
 import typings.rechoir.rechoirBooleans.`true`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,26 +17,26 @@ object mod {
   
   trait Attempt extends StObject {
     
-    var error: Error | Null
+    var error: js.Error | Null
     
-    var module: js.Any
+    var module: Any
     
     var moduleName: String
   }
   object Attempt {
     
-    inline def apply(module: js.Any, moduleName: String): Attempt = {
+    inline def apply(module: Any, moduleName: String): Attempt = {
       val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], moduleName = moduleName.asInstanceOf[js.Any], error = null)
       __obj.asInstanceOf[Attempt]
     }
     
     extension [Self <: Attempt](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      inline def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
       inline def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
     }

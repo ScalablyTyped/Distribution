@@ -13,52 +13,52 @@ object overlayMod {
   
   @JSImport("playable/dist/src/modules/ui/overlay/overlay", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Overlay {
     def this(hasEventEmitterEngineRootContainerThemeConfigMainUIBlockLoader: Loader) = this()
     
     /* private */ /* CompleteClass */
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _hideContent: js.Any = js.native
+    var _hideContent: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _loader: js.Any = js.native
+    var _loader: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _mainUIBlock: js.Any = js.native
+    var _mainUIBlock: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _playVideo: js.Any = js.native
+    var _playVideo: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _showContent: js.Any = js.native
+    var _showContent: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _theme: js.Any = js.native
+    var _theme: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _tryHideContent: js.Any = js.native
+    var _tryHideContent: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _tryShowContent: js.Any = js.native
+    var _tryShowContent: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _updatePlayingState: js.Any = js.native
+    var _updatePlayingState: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -112,7 +112,7 @@ object overlayMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("playable/dist/src/modules/ui/overlay/overlay", "default.View")
     @js.native
-    class View protected ()
+    open class View protected ()
       extends typings.playable.overlayViewMod.default {
       def this(config: IOverlayViewConfig) = this()
     }
@@ -140,33 +140,33 @@ object overlayMod {
     extends StObject
        with IOverlay {
     
-    /* private */ var _bindEvents: js.Any
+    /* private */ var _bindEvents: Any
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _hideContent: js.Any
+    /* private */ var _hideContent: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _loader: js.Any
+    /* private */ var _loader: Any
     
-    /* private */ var _mainUIBlock: js.Any
+    /* private */ var _mainUIBlock: Any
     
-    /* private */ var _playVideo: js.Any
+    /* private */ var _playVideo: Any
     
-    /* private */ var _showContent: js.Any
+    /* private */ var _showContent: Any
     
-    /* private */ var _theme: js.Any
+    /* private */ var _theme: Any
     
-    /* private */ var _tryHideContent: js.Any
+    /* private */ var _tryHideContent: Any
     
-    /* private */ var _tryShowContent: js.Any
+    /* private */ var _tryShowContent: Any
     
-    /* private */ var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: Any
     
-    /* private */ var _updatePlayingState: js.Any
+    /* private */ var _updatePlayingState: Any
     
     var isHidden: Boolean
     
@@ -195,20 +195,20 @@ object overlayMod {
   object Overlay {
     
     inline def apply(
-      _bindEvents: js.Any,
-      _engine: js.Any,
-      _eventEmitter: js.Any,
-      _hideContent: js.Any,
-      _initUI: js.Any,
-      _loader: js.Any,
-      _mainUIBlock: js.Any,
-      _playVideo: js.Any,
-      _showContent: js.Any,
-      _theme: js.Any,
-      _tryHideContent: js.Any,
-      _tryShowContent: js.Any,
-      _unbindEvents: js.Any,
-      _updatePlayingState: js.Any,
+      _bindEvents: Any,
+      _engine: Any,
+      _eventEmitter: Any,
+      _hideContent: Any,
+      _initUI: Any,
+      _loader: Any,
+      _mainUIBlock: Any,
+      _playVideo: Any,
+      _showContent: Any,
+      _theme: Any,
+      _tryHideContent: Any,
+      _tryShowContent: Any,
+      _unbindEvents: Any,
+      _updatePlayingState: Any,
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -233,33 +233,33 @@ object overlayMod {
       
       inline def setView(value: typings.playable.overlayViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_hideContent(value: js.Any): Self = StObject.set(x, "_hideContent", value.asInstanceOf[js.Any])
+      inline def set_hideContent(value: Any): Self = StObject.set(x, "_hideContent", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_loader(value: js.Any): Self = StObject.set(x, "_loader", value.asInstanceOf[js.Any])
+      inline def set_loader(value: Any): Self = StObject.set(x, "_loader", value.asInstanceOf[js.Any])
       
-      inline def set_mainUIBlock(value: js.Any): Self = StObject.set(x, "_mainUIBlock", value.asInstanceOf[js.Any])
+      inline def set_mainUIBlock(value: Any): Self = StObject.set(x, "_mainUIBlock", value.asInstanceOf[js.Any])
       
-      inline def set_playVideo(value: js.Any): Self = StObject.set(x, "_playVideo", value.asInstanceOf[js.Any])
+      inline def set_playVideo(value: Any): Self = StObject.set(x, "_playVideo", value.asInstanceOf[js.Any])
       
-      inline def set_showContent(value: js.Any): Self = StObject.set(x, "_showContent", value.asInstanceOf[js.Any])
+      inline def set_showContent(value: Any): Self = StObject.set(x, "_showContent", value.asInstanceOf[js.Any])
       
-      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      inline def set_tryHideContent(value: js.Any): Self = StObject.set(x, "_tryHideContent", value.asInstanceOf[js.Any])
+      inline def set_tryHideContent(value: Any): Self = StObject.set(x, "_tryHideContent", value.asInstanceOf[js.Any])
       
-      inline def set_tryShowContent(value: js.Any): Self = StObject.set(x, "_tryShowContent", value.asInstanceOf[js.Any])
+      inline def set_tryShowContent(value: Any): Self = StObject.set(x, "_tryShowContent", value.asInstanceOf[js.Any])
       
-      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_updatePlayingState(value: js.Any): Self = StObject.set(x, "_updatePlayingState", value.asInstanceOf[js.Any])
+      inline def set_updatePlayingState(value: Any): Self = StObject.set(x, "_updatePlayingState", value.asInstanceOf[js.Any])
     }
   }
 }

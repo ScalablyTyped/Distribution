@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "BasicState")
 @js.native
-class BasicState ()
+open class BasicState ()
   extends typings.wonderJs.basicStateMod.BasicState
 /* static members */
 object BasicState {

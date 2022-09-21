@@ -10,7 +10,7 @@ object resizeSensorMod {
   
   @JSImport("css-element-queries/src/ResizeSensor", JSImport.Default)
   @js.native
-  class default protected () extends ResizeSensor {
+  open class default protected () extends ResizeSensor {
     def this(element: js.Array[Element], callback: ResizeSensorCallback) = this()
     /**
       * Creates a new resize sensor on given elements. The provided callback is called max 1 times per requestAnimationFrame and
@@ -43,7 +43,7 @@ object resizeSensorMod {
   
   @JSImport("css-element-queries/src/ResizeSensor", "ResizeSensor")
   @js.native
-  class ResizeSensor protected () extends StObject {
+  open class ResizeSensor protected () extends StObject {
     def this(element: js.Array[Element], callback: ResizeSensorCallback) = this()
     /**
       * Creates a new resize sensor on given elements. The provided callback is called max 1 times per requestAnimationFrame and

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.RequestTimeout")
 @js.native
-class RequestTimeout () extends Abstract
+open class RequestTimeout () extends Abstract

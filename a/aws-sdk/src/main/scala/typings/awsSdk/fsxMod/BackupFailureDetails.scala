@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BackupFailureDetails extends StObject {
   
   /**
-    * A message describing the backup creation failure.
+    * A message describing the backup-creation failure.
     */
   var Message: js.UndefOr[ErrorMessage] = js.undefined
 }

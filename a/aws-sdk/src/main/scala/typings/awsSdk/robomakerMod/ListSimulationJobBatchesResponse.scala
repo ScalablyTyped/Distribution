@@ -33,6 +33,6 @@ object ListSimulationJobBatchesResponse {
     
     inline def setSimulationJobBatchSummariesUndefined: Self = StObject.set(x, "simulationJobBatchSummaries", js.undefined)
     
-    inline def setSimulationJobBatchSummariesVarargs(value: SimulationJobBatchSummary*): Self = StObject.set(x, "simulationJobBatchSummaries", js.Array(value :_*))
+    inline def setSimulationJobBatchSummariesVarargs(value: SimulationJobBatchSummary*): Self = StObject.set(x, "simulationJobBatchSummaries", js.Array(value*))
   }
 }

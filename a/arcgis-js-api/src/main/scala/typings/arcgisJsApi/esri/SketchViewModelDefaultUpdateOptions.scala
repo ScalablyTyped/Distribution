@@ -1,5 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.move
+import typings.arcgisJsApi.arcgisJsApiStrings.reshape
+import typings.arcgisJsApi.arcgisJsApiStrings.transform
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -13,12 +16,16 @@ trait SketchViewModelDefaultUpdateOptions
   /**
     * Indicates if the `rotation` operation will be enabled when updating graphics.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
     */
   var enableRotation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the `scale` operation will be enabled when updating graphics.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
     */
@@ -27,12 +34,16 @@ trait SketchViewModelDefaultUpdateOptions
   /**
     * Indicates if z-values can be modified when updating the graphic.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
     */
   var enableZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether more than one selection can be made at once.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
     */
@@ -46,7 +57,16 @@ trait SketchViewModelDefaultUpdateOptions
   var preserveAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Changes the behavior for the `reshape` tool.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
+    */
+  var reshapeOptions: js.UndefOr[SketchViewModelDefaultUpdateOptionsReshapeOptions] = js.undefined
+  
+  /**
     * Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
     */
@@ -57,7 +77,7 @@ trait SketchViewModelDefaultUpdateOptions
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
     */
-  var tool: js.UndefOr[String] = js.undefined
+  var tool: js.UndefOr[move | transform | reshape] = js.undefined
 }
 object SketchViewModelDefaultUpdateOptions {
   
@@ -92,11 +112,15 @@ object SketchViewModelDefaultUpdateOptions {
     
     inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
     
+    inline def setReshapeOptions(value: SketchViewModelDefaultUpdateOptionsReshapeOptions): Self = StObject.set(x, "reshapeOptions", value.asInstanceOf[js.Any])
+    
+    inline def setReshapeOptionsUndefined: Self = StObject.set(x, "reshapeOptions", js.undefined)
+    
     inline def setToggleToolOnClick(value: Boolean): Self = StObject.set(x, "toggleToolOnClick", value.asInstanceOf[js.Any])
     
     inline def setToggleToolOnClickUndefined: Self = StObject.set(x, "toggleToolOnClick", js.undefined)
     
-    inline def setTool(value: String): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: move | transform | reshape): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
     inline def setToolUndefined: Self = StObject.set(x, "tool", js.undefined)
   }

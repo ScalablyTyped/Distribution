@@ -10,7 +10,7 @@ object fileslistFormatterMod {
   
   @JSImport("tslint/lib/formatters/fileslistFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter
+  open class Formatter () extends AbstractFormatter
   /* static members */
   object Formatter {
     

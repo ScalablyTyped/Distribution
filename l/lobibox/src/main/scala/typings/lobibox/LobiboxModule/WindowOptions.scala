@@ -11,10 +11,10 @@ trait WindowOptions
   // Override default option
   var autoload: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[Any] = js.undefined
   
   @JSName("height")
-  var height_WindowOptions: js.UndefOr[js.Any] = js.undefined
+  var height_WindowOptions: js.UndefOr[Any] = js.undefined
   
   // Auto load from given url when window is created
   var loadMethod: js.UndefOr[String] = js.undefined
@@ -41,11 +41,11 @@ object WindowOptions {
     
     inline def setAutoloadUndefined: Self = StObject.set(x, "autoload", js.undefined)
     
-    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     

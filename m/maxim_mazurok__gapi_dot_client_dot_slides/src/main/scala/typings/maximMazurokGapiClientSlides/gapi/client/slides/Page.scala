@@ -28,11 +28,11 @@ trait Page extends StObject {
   var pageType: js.UndefOr[String] = js.undefined
   
   /**
-    * The revision ID of the presentation containing this page. Can be used in update requests to assert that the presentation revision hasn't changed since the last read operation. Only
-    * populated if the user has edit access to the presentation. The format of the revision ID may change over time, so it should be treated opaquely. A returned revision ID is only
-    * guaranteed to be valid for 24 hours after it has been returned and cannot be shared across users. If the revision ID is unchanged between calls, then the presentation has not
-    * changed. Conversely, a changed ID (for the same presentation and user) usually means the presentation has been updated; however, a changed ID can also be due to internal factors
-    * such as ID format changes.
+    * Output only. The revision ID of the presentation. Can be used in update requests to assert the presentation revision hasn't changed since the last read operation. Only populated if
+    * the user has edit access to the presentation. The revision ID is not a sequential number but an opaque string. The format of the revision ID might change over time. A returned
+    * revision ID is only guaranteed to be valid for 24 hours after it has been returned and cannot be shared across users. If the revision ID is unchanged between calls, then the
+    * presentation has not changed. Conversely, a changed ID (for the same presentation and user) usually means the presentation has been updated. However, a changed ID can also be due to
+    * internal factors such as ID format changes.
     */
   var revisionId: js.UndefOr[String] = js.undefined
   
@@ -68,7 +68,7 @@ object Page {
     
     inline def setPageElementsUndefined: Self = StObject.set(x, "pageElements", js.undefined)
     
-    inline def setPageElementsVarargs(value: PageElement*): Self = StObject.set(x, "pageElements", js.Array(value :_*))
+    inline def setPageElementsVarargs(value: PageElement*): Self = StObject.set(x, "pageElements", js.Array(value*))
     
     inline def setPageProperties(value: PageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
     

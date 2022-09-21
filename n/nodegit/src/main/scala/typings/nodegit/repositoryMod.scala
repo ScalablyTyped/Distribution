@@ -1,9 +1,9 @@
 package typings.nodegit
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodegit.annotatedCommitMod.AnnotatedCommit
+import typings.nodegit.anon.Code
 import typings.nodegit.blobMod.Blob
-import typings.nodegit.bufMod.Buf
 import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import typings.nodegit.commitMod.Commit
 import typings.nodegit.configMod.Config
@@ -22,9 +22,11 @@ import typings.nodegit.revWalkMod.Revwalk
 import typings.nodegit.signatureMod.Signature
 import typings.nodegit.statusFileMod.StatusFile
 import typings.nodegit.statusOptionsMod.StatusOptions
+import typings.nodegit.submoduleMod.Submodule
 import typings.nodegit.tagMod.Tag
 import typings.nodegit.treeBuilderMod.Treebuilder
 import typings.nodegit.treeMod.Tree
+import typings.nodegit.worktreeMod.Worktree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +35,7 @@ object repositoryMod {
   
   @JSImport("nodegit/repository", "Repository")
   @js.native
-  class Repository () extends StObject {
+  open class Repository () extends StObject {
     
     /**
       * This will set the HEAD to point to the local branch and then attempt to update the index and working tree to match the content of the latest commit on that branch
@@ -49,7 +51,7 @@ object repositoryMod {
     def checkoutRef(reference: Reference): js.Promise[Reference] = js.native
     def checkoutRef(reference: Reference, opts: CheckoutOptions): js.Promise[Reference] = js.native
     
-    def cleanup(): Unit = js.native
+    def cleanup(): js.Promise[Unit] = js.native
     
     def commondir(): String = js.native
     
@@ -131,6 +133,34 @@ object repositoryMod {
       */
     def createCommitOnHead(filesToAdd: js.Array[String], author: Signature, committer: Signature, message: String): js.Promise[Oid] = js.native
     
+    def createCommitWithSignature(
+      updateRef: String,
+      author: Signature,
+      committer: Signature,
+      message: String,
+      Tree: String,
+      parents: js.Array[String | Commit | Oid],
+      onSignature: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = js.native
+    def createCommitWithSignature(
+      updateRef: String,
+      author: Signature,
+      committer: Signature,
+      message: String,
+      Tree: Oid,
+      parents: js.Array[String | Commit | Oid],
+      onSignature: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = js.native
+    def createCommitWithSignature(
+      updateRef: String,
+      author: Signature,
+      committer: Signature,
+      message: String,
+      Tree: Tree,
+      parents: js.Array[String | Commit | Oid],
+      onSignature: js.Function1[/* data */ String, js.Promise[Code] | Code]
+    ): js.Promise[Oid] = js.native
+    
     /**
       * Creates a new lightweight tag
       */
@@ -178,8 +208,8 @@ object repositoryMod {
     def fetchAll(fetchOptions: FetchOptions): js.Promise[Unit] = js.native
     def fetchAll(fetchOptions: FetchOptions, callback: js.Function): js.Promise[Unit] = js.native
     
-    def fetchheadForeach(): js.Promise[js.Any] = js.native
-    def fetchheadForeach(callback: js.Function): js.Promise[js.Any] = js.native
+    def fetchheadForeach(): js.Promise[Any] = js.native
+    def fetchheadForeach(callback: js.Function): js.Promise[Any] = js.native
     
     def free(): Unit = js.native
     
@@ -253,6 +283,11 @@ object repositoryMod {
     def getRemote(remote: Remote, callback: js.Function): js.Promise[Remote] = js.native
     
     /**
+      * Lists out the names of remotes in the given repository.
+      */
+    def getRemoteNames(): js.Promise[js.Array[String]] = js.native
+    
+    /**
       * Lists out the remotes in the given repository.
       */
     def getRemotes(): js.Promise[js.Array[Remote]] = js.native
@@ -274,6 +309,8 @@ object repositoryMod {
       * Get the names of the submodules in the repository.
       */
     def getSubmoduleNames(): js.Promise[js.Array[String]] = js.native
+    
+    def getSubmodules(): js.Promise[js.Array[Submodule]] = js.native
     
     /**
       * Retrieve the tag represented by the oid.
@@ -340,6 +377,8 @@ object repositoryMod {
     def isReverting(): Boolean = js.native
     
     def isShallow(): Double = js.native
+    
+    def itemPath(item: Double): js.Promise[String] = js.native
     
     def mergeBranches(to: String, from: String): js.Promise[Oid] = js.native
     def mergeBranches(to: String, from: String, signature: Unit, mergePreference: Unit, mergeOptions: MergeOptions): js.Promise[Oid] = js.native
@@ -434,8 +473,8 @@ object repositoryMod {
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
     
-    def mergeheadForeach(): js.Promise[js.Any] = js.native
-    def mergeheadForeach(callback: js.Function): js.Promise[js.Any] = js.native
+    def mergeheadForeach(): js.Promise[Any] = js.native
+    def mergeheadForeach(callback: js.Function): js.Promise[Any] = js.native
     
     def messageRemove(): Double = js.native
     
@@ -454,6 +493,8 @@ object repositoryMod {
       * Grabs a fresh copy of the index from the repository. Invalidates all previously grabbed indexes
       */
     def refreshIndex(): js.Promise[Index] = js.native
+    
+    def refreshReferences(): js.Promise[Unit] = js.native
     
     def setHead(refname: String): js.Promise[Double] = js.native
     
@@ -496,7 +537,7 @@ object repositoryMod {
     /**
       * Creates a branch with the passed in name pointing to the commit
       */
-    inline def discover(startPath: String, acrossFs: Double, ceilingDirs: String): js.Promise[Buf] = (^.asInstanceOf[js.Dynamic].applyDynamic("discover")(startPath.asInstanceOf[js.Any], acrossFs.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buf]]
+    inline def discover(startPath: String, acrossFs: Double, ceilingDirs: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("discover")(startPath.asInstanceOf[js.Any], acrossFs.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     inline def init(path: String, isBare: Double): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(path.asInstanceOf[js.Any], isBare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     
@@ -512,40 +553,33 @@ object repositoryMod {
     inline def openExt(path: String, flags: Double, ceilingDirs: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     inline def openExt(path: String, flags: Unit, ceilingDirs: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     
+    inline def openFromWorktree(wt: Worktree): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFromWorktree")(wt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
+    
     inline def wrapOdb(odb: Odb): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapOdb")(odb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
   }
   
   trait RepositoryInitOptions extends StObject {
     
-    var description: String
+    var description: js.UndefOr[String] = js.undefined
     
-    var flags: Double
+    var flags: js.UndefOr[Double] = js.undefined
     
-    var initialHead: String
+    var initialHead: js.UndefOr[String] = js.undefined
     
-    var mode: Double
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var originUrl: String
+    var originUrl: js.UndefOr[String] = js.undefined
     
-    var templatePath: String
+    var templatePath: js.UndefOr[String] = js.undefined
     
-    var version: Double
+    var version: js.UndefOr[Double] = js.undefined
     
-    var workdirPath: String
+    var workdirPath: js.UndefOr[String] = js.undefined
   }
   object RepositoryInitOptions {
     
-    inline def apply(
-      description: String,
-      flags: Double,
-      initialHead: String,
-      mode: Double,
-      originUrl: String,
-      templatePath: String,
-      version: Double,
-      workdirPath: String
-    ): RepositoryInitOptions = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], initialHead = initialHead.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], originUrl = originUrl.asInstanceOf[js.Any], templatePath = templatePath.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], workdirPath = workdirPath.asInstanceOf[js.Any])
+    inline def apply(): RepositoryInitOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RepositoryInitOptions]
     }
     
@@ -553,19 +587,35 @@ object repositoryMod {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
       inline def setInitialHead(value: String): Self = StObject.set(x, "initialHead", value.asInstanceOf[js.Any])
       
+      inline def setInitialHeadUndefined: Self = StObject.set(x, "initialHead", js.undefined)
+      
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       inline def setOriginUrl(value: String): Self = StObject.set(x, "originUrl", value.asInstanceOf[js.Any])
       
+      inline def setOriginUrlUndefined: Self = StObject.set(x, "originUrl", js.undefined)
+      
       inline def setTemplatePath(value: String): Self = StObject.set(x, "templatePath", value.asInstanceOf[js.Any])
+      
+      inline def setTemplatePathUndefined: Self = StObject.set(x, "templatePath", js.undefined)
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      
       inline def setWorkdirPath(value: String): Self = StObject.set(x, "workdirPath", value.asInstanceOf[js.Any])
+      
+      inline def setWorkdirPathUndefined: Self = StObject.set(x, "workdirPath", js.undefined)
     }
   }
 }

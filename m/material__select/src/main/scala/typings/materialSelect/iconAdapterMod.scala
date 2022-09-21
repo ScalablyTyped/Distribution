@@ -48,10 +48,10 @@ object iconAdapterMod {
   object MDCSelectIconAdapter {
     
     inline def apply(
-      deregisterInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      deregisterInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
       getAttr: String => String | Null,
       notifyIconAction: () => Unit,
-      registerInteractionHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      registerInteractionHandler: (Any, SpecificEventListener[Any]) => Unit,
       removeAttr: String => Unit,
       setAttr: (String, String) => Unit,
       setContent: String => Unit
@@ -62,13 +62,13 @@ object iconAdapterMod {
     
     extension [Self <: MDCSelectIconAdapter](x: Self) {
       
-      inline def setDeregisterInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterInteractionHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
       
       inline def setGetAttr(value: String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
       
       inline def setNotifyIconAction(value: () => Unit): Self = StObject.set(x, "notifyIconAction", js.Any.fromFunction0(value))
       
-      inline def setRegisterInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterInteractionHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
       
       inline def setRemoveAttr(value: String => Unit): Self = StObject.set(x, "removeAttr", js.Any.fromFunction1(value))
       

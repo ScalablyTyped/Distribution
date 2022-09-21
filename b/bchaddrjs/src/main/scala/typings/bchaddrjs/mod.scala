@@ -28,13 +28,15 @@ object mod {
   
   @JSImport("bchaddrjs", "InvalidAddressError")
   @js.native
-  class InvalidAddressError ()
+  open class InvalidAddressError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -81,7 +83,7 @@ object mod {
   
   inline def isTestnetAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTestnetAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isValidAddress(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAddress")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidAddress(input: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAddress")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def toBitpayAddress(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBitpayAddress")(address.asInstanceOf[js.Any]).asInstanceOf[String]
   

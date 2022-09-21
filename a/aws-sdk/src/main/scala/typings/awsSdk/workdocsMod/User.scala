@@ -9,7 +9,7 @@ trait User extends StObject {
   /**
     * The time when the user was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The email address of the user.
@@ -34,7 +34,7 @@ trait User extends StObject {
   /**
     * The time when the user was modified.
     */
-  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var ModifiedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the organization.
@@ -90,7 +90,7 @@ object User {
   
   extension [Self <: User](x: Self) {
     
-    inline def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -110,7 +110,7 @@ object User {
     
     inline def setLocaleUndefined: Self = StObject.set(x, "Locale", js.undefined)
     
-    inline def setModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setModifiedTimestamp(value: js.Date): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setModifiedTimestampUndefined: Self = StObject.set(x, "ModifiedTimestamp", js.undefined)
     

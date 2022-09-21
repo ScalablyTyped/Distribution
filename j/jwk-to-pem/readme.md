@@ -10,10 +10,10 @@ Convert a JSON Web Key to a PEM
 | ------------------ | :-------------: |
 | Full name          | jwk-to-pem |
 | Keywords           | jwt, jwk, jwa, jsonwebtoken |
-| # releases         | 4 |
-| # dependents       | 185 |
-| # downloads        | 11338416 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2004678.6666666667 |
+| # stars            | 139.0 |
 
 ## Links
 - [Homepage](https://github.com/Brightspace/node-jwk-to-pem#readme)

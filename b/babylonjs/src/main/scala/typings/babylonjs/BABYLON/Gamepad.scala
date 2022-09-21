@@ -15,32 +15,32 @@ trait Gamepad extends StObject {
   /** @hidden */
   var _isConnected: Boolean = js.native
   
-  /* private */ var _leftStick: js.Any = js.native
+  /* private */ var _leftStick: Any = js.native
   
-  /* private */ var _leftStickAxisX: js.Any = js.native
+  /* private */ var _leftStickAxisX: Any = js.native
   
-  /* private */ var _leftStickAxisY: js.Any = js.native
+  /* private */ var _leftStickAxisY: Any = js.native
   
   /**
     * Triggered when the left control stick has been changed
     */
-  /* private */ var _onleftstickchanged: js.Any = js.native
+  /* private */ var _onleftstickchanged: Any = js.native
   
   /**
     * Triggered when the right control stick has been changed
     */
-  /* private */ var _onrightstickchanged: js.Any = js.native
+  /* private */ var _onrightstickchanged: Any = js.native
   
-  /* private */ var _rightStick: js.Any = js.native
+  /* private */ var _rightStick: Any = js.native
   
-  /* private */ var _rightStickAxisX: js.Any = js.native
+  /* private */ var _rightStickAxisX: Any = js.native
   
-  /* private */ var _rightStickAxisY: js.Any = js.native
+  /* private */ var _rightStickAxisY: Any = js.native
   
   /**
     * The browser gamepad
     */
-  var browserGamepad: js.Any = js.native
+  var browserGamepad: Any = js.native
   
   /**
     * Disposes the gamepad

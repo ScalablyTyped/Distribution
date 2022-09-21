@@ -14,7 +14,7 @@ trait PackageVersionHistory extends StObject {
   /**
     * Timestamp which tells creation time of the package version.
     */
-  var CreatedAt: js.UndefOr[typings.awsSdk.esMod.CreatedAt] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Version of the package.
@@ -34,7 +34,7 @@ object PackageVersionHistory {
     
     inline def setCommitMessageUndefined: Self = StObject.set(x, "CommitMessage", js.undefined)
     
-    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     

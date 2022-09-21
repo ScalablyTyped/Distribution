@@ -18,15 +18,15 @@ trait UniqueValueRenderer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#addUniqueValueInfo)
     */
-  def addUniqueValueInfo(valueOrInfo: String): Unit = js.native
-  def addUniqueValueInfo(valueOrInfo: String, symbol: Symbol): Unit = js.native
-  def addUniqueValueInfo(valueOrInfo: String, symbol: SymbolProperties): Unit = js.native
-  def addUniqueValueInfo(valueOrInfo: js.Any): Unit = js.native
-  def addUniqueValueInfo(valueOrInfo: js.Any, symbol: Symbol): Unit = js.native
-  def addUniqueValueInfo(valueOrInfo: js.Any, symbol: SymbolProperties): Unit = js.native
-  def addUniqueValueInfo(valueOrInfo: Double): Unit = js.native
-  def addUniqueValueInfo(valueOrInfo: Double, symbol: Symbol): Unit = js.native
-  def addUniqueValueInfo(valueOrInfo: Double, symbol: SymbolProperties): Unit = js.native
+  def addUniqueValueInfo(valueOrInfo: String): scala.Unit = js.native
+  def addUniqueValueInfo(valueOrInfo: String, symbol: Symbol): scala.Unit = js.native
+  def addUniqueValueInfo(valueOrInfo: String, symbol: SymbolProperties): scala.Unit = js.native
+  def addUniqueValueInfo(valueOrInfo: Any): scala.Unit = js.native
+  def addUniqueValueInfo(valueOrInfo: Any, symbol: Symbol): scala.Unit = js.native
+  def addUniqueValueInfo(valueOrInfo: Any, symbol: SymbolProperties): scala.Unit = js.native
+  def addUniqueValueInfo(valueOrInfo: Double): scala.Unit = js.native
+  def addUniqueValueInfo(valueOrInfo: Double, symbol: Symbol): scala.Unit = js.native
+  def addUniqueValueInfo(valueOrInfo: Double, symbol: SymbolProperties): scala.Unit = js.native
   
   /**
     * This property is only relevant When symbolizing polygon features with marker symbols (or [IconSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html)) in the [uniqueValueInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueInfos) of this renderer.
@@ -96,8 +96,8 @@ trait UniqueValueRenderer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#removeUniqueValueInfo)
     */
-  def removeUniqueValueInfo(value: String): Unit = js.native
-  def removeUniqueValueInfo(value: Double): Unit = js.native
+  def removeUniqueValueInfo(value: String): scala.Unit = js.native
+  def removeUniqueValueInfo(value: Double): scala.Unit = js.native
   
   /**
     * The type of Renderer.
@@ -115,14 +115,14 @@ trait UniqueValueRenderer
   var uniqueValueInfos: js.Array[UniqueValueInfo] = js.native
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to either a string or a number.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression)
     */
   var valueExpression: String = js.native
   
   /**
-    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression) property.
+    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpression) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#valueExpressionTitle)
     */

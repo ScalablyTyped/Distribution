@@ -14,12 +14,12 @@ object nativePickerAndroidMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@ant-design/react-native/lib/picker/NativePicker.android", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ComponentDidMount {
     def this(props: ReadonlyPickerProps) = this()
     def this(props: PickerProps) = this()
-    def this(props: PickerProps, context: js.Any) = this()
+    def this(props: PickerProps, context: Any) = this()
   }
   object default {
     
@@ -31,8 +31,8 @@ object nativePickerAndroidMod {
     
     @JSImport("@ant-design/react-native/lib/picker/NativePicker.android", "default.contextType")
     @js.native
-    def contextType: js.UndefOr[Context[js.Any]] = js.native
-    inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: js.UndefOr[Context[Any]] = js.native
+    inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   }
   
   trait IPickerProp extends StObject {

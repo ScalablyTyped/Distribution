@@ -26,7 +26,7 @@ trait XControlAccess
     * @returns the requested value.
     * @throws com::sun::star::lang::IllegalArgumentException when the control is not supported or the control property is invalid.
     */
-  def getControlProperty(aControlName: String, aControlProperty: String): js.Any
+  def getControlProperty(aControlName: String, aControlProperty: String): Any
   
   /**
     * Change a control property.
@@ -35,16 +35,16 @@ trait XControlAccess
     * @param aValue A value appropriated for the property.
     * @throws com::sun::star::lang::IllegalArgumentException when the control is not supported, the control property is invalid or the value fits not the contr
     */
-  def setControlProperty(aControlName: String, aControlProperty: String, aValue: js.Any): Unit
+  def setControlProperty(aControlName: String, aControlProperty: String, aValue: Any): Unit
 }
 object XControlAccess {
   
   inline def apply(
     acquire: () => Unit,
-    getControlProperty: (String, String) => js.Any,
-    queryInterface: `type` => js.Any,
+    getControlProperty: (String, String) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    setControlProperty: (String, String, js.Any) => Unit
+    setControlProperty: (String, String, Any) => Unit
   ): XControlAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getControlProperty = js.Any.fromFunction2(getControlProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setControlProperty = js.Any.fromFunction3(setControlProperty))
     __obj.asInstanceOf[XControlAccess]
@@ -52,8 +52,8 @@ object XControlAccess {
   
   extension [Self <: XControlAccess](x: Self) {
     
-    inline def setGetControlProperty(value: (String, String) => js.Any): Self = StObject.set(x, "getControlProperty", js.Any.fromFunction2(value))
+    inline def setGetControlProperty(value: (String, String) => Any): Self = StObject.set(x, "getControlProperty", js.Any.fromFunction2(value))
     
-    inline def setSetControlProperty(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "setControlProperty", js.Any.fromFunction3(value))
+    inline def setSetControlProperty(value: (String, String, Any) => Unit): Self = StObject.set(x, "setControlProperty", js.Any.fromFunction3(value))
   }
 }

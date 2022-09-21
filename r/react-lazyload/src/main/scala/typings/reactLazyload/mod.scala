@@ -1,5 +1,6 @@
 package typings.reactLazyload
 
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import typings.std.Element
@@ -15,8 +16,8 @@ object mod {
   
   @JSImport("react-lazyload", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[LazyLoadProps, js.Object, js.Any] {
+  open class default protected ()
+    extends Component[LazyLoadProps, js.Object, Any] {
     def this(props: LazyLoad_) = this()
   }
   
@@ -29,6 +30,8 @@ object mod {
   trait LazyLoadProps extends StObject {
     
     var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
     
     var classNamePrefix: js.UndefOr[String] = js.undefined
     
@@ -52,6 +55,8 @@ object mod {
     
     var scrollContainer: js.UndefOr[String | Element] = js.undefined
     
+    var style: js.UndefOr[CSSProperties] = js.undefined
+    
     var throttle: js.UndefOr[Double | Boolean] = js.undefined
     
     var unmountIfInvisible: js.UndefOr[Boolean] = js.undefined
@@ -69,9 +74,13 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
       inline def setClassNamePrefix(value: String): Self = StObject.set(x, "classNamePrefix", value.asInstanceOf[js.Any])
       
       inline def setClassNamePrefixUndefined: Self = StObject.set(x, "classNamePrefix", js.undefined)
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setDebounce(value: Double | Boolean): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
       
@@ -85,7 +94,7 @@ object mod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
@@ -115,6 +124,10 @@ object mod {
       
       inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
       inline def setThrottle(value: Double | Boolean): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       
       inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
@@ -125,5 +138,5 @@ object mod {
     }
   }
   
-  type LazyLoad_ = Component[LazyLoadProps, js.Object, js.Any]
+  type LazyLoad_ = Component[LazyLoadProps, js.Object, Any]
 }

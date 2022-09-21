@@ -29,6 +29,6 @@ object ListTagsResponse {
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+    inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value*))
   }
 }

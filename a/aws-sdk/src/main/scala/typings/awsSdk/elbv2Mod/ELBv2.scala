@@ -46,12 +46,12 @@ trait ELBv2 extends Service {
   var config_ELBv2: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a listener for the specified Application Load Balancer, Network Load Balancer. or Gateway Load Balancer. For more information, see the following:    Listeners for your Application Load Balancers     Listeners for your Network Load Balancers     Listeners for your Gateway Load Balancers    This operation is idempotent, which means that it completes at most one time. If you attempt to create multiple listeners with the same settings, each call succeeds.
+    * Creates a listener for the specified Application Load Balancer, Network Load Balancer, or Gateway Load Balancer. For more information, see the following:    Listeners for your Application Load Balancers     Listeners for your Network Load Balancers     Listeners for your Gateway Load Balancers    This operation is idempotent, which means that it completes at most one time. If you attempt to create multiple listeners with the same settings, each call succeeds.
     */
   def createListener(): Request[CreateListenerOutput, AWSError] = js.native
   def createListener(callback: js.Function2[/* err */ AWSError, /* data */ CreateListenerOutput, Unit]): Request[CreateListenerOutput, AWSError] = js.native
   /**
-    * Creates a listener for the specified Application Load Balancer, Network Load Balancer. or Gateway Load Balancer. For more information, see the following:    Listeners for your Application Load Balancers     Listeners for your Network Load Balancers     Listeners for your Gateway Load Balancers    This operation is idempotent, which means that it completes at most one time. If you attempt to create multiple listeners with the same settings, each call succeeds.
+    * Creates a listener for the specified Application Load Balancer, Network Load Balancer, or Gateway Load Balancer. For more information, see the following:    Listeners for your Application Load Balancers     Listeners for your Network Load Balancers     Listeners for your Gateway Load Balancers    This operation is idempotent, which means that it completes at most one time. If you attempt to create multiple listeners with the same settings, each call succeeds.
     */
   def createListener(params: CreateListenerInput): Request[CreateListenerOutput, AWSError] = js.native
   def createListener(
@@ -172,12 +172,12 @@ trait ELBv2 extends Service {
   ): Request[DeregisterTargetsOutput, AWSError] = js.native
   
   /**
-    * Describes the current Elastic Load Balancing resource limits for your AWS account. For more information, see the following:    Quotas for your Application Load Balancers     Quotas for your Network Load Balancers     Quotas for your Gateway Load Balancers   
+    * Describes the current Elastic Load Balancing resource limits for your Amazon Web Services account. For more information, see the following:    Quotas for your Application Load Balancers     Quotas for your Network Load Balancers     Quotas for your Gateway Load Balancers   
     */
   def describeAccountLimits(): Request[DescribeAccountLimitsOutput, AWSError] = js.native
   def describeAccountLimits(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountLimitsOutput, Unit]): Request[DescribeAccountLimitsOutput, AWSError] = js.native
   /**
-    * Describes the current Elastic Load Balancing resource limits for your AWS account. For more information, see the following:    Quotas for your Application Load Balancers     Quotas for your Network Load Balancers     Quotas for your Gateway Load Balancers   
+    * Describes the current Elastic Load Balancing resource limits for your Amazon Web Services account. For more information, see the following:    Quotas for your Application Load Balancers     Quotas for your Network Load Balancers     Quotas for your Gateway Load Balancers   
     */
   def describeAccountLimits(params: DescribeAccountLimitsInput): Request[DescribeAccountLimitsOutput, AWSError] = js.native
   def describeAccountLimits(
@@ -368,12 +368,12 @@ trait ELBv2 extends Service {
   ): Request[ModifyRuleOutput, AWSError] = js.native
   
   /**
-    * Modifies the health checks used when evaluating the health state of the targets in the specified target group.
+    * Modifies the health checks used when evaluating the health state of the targets in the specified target group. If the protocol of the target group is TCP, TLS, UDP, or TCP_UDP, you can't modify the health check protocol, interval, timeout, or success codes.
     */
   def modifyTargetGroup(): Request[ModifyTargetGroupOutput, AWSError] = js.native
   def modifyTargetGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyTargetGroupOutput, Unit]): Request[ModifyTargetGroupOutput, AWSError] = js.native
   /**
-    * Modifies the health checks used when evaluating the health state of the targets in the specified target group.
+    * Modifies the health checks used when evaluating the health state of the targets in the specified target group. If the protocol of the target group is TCP, TLS, UDP, or TCP_UDP, you can't modify the health check protocol, interval, timeout, or success codes.
     */
   def modifyTargetGroup(params: ModifyTargetGroupInput): Request[ModifyTargetGroupOutput, AWSError] = js.native
   def modifyTargetGroup(

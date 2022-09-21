@@ -11,7 +11,7 @@ object datePickerViewPropsTypeMod {
     extends StObject
        with DatePickerPropsType {
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
     
     var triggerTypes: js.UndefOr[String] = js.undefined
   }
@@ -24,7 +24,7 @@ object datePickerViewPropsTypeMod {
     
     extension [Self <: DatePickerProps](x: Self) {
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       

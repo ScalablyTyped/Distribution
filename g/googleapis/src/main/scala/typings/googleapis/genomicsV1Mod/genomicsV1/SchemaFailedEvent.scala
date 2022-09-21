@@ -5,20 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * An event generated when the execution of a pipeline has failed. Note that
-  * other events can continue to occur after this event.
+  * An event generated when the execution of a pipeline has failed. Note that other events can continue to occur after this event.
   */
 trait SchemaFailedEvent extends StObject {
   
   /**
     * The human-readable description of the cause of the failure.
     */
-  var cause: js.UndefOr[String] = js.undefined
+  var cause: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The Google standard error code that best describes this failure.
     */
-  var code: js.UndefOr[String] = js.undefined
+  var code: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFailedEvent {
   
@@ -31,9 +30,13 @@ object SchemaFailedEvent {
     
     inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
+    inline def setCauseNull: Self = StObject.set(x, "cause", null)
+    
     inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
   }

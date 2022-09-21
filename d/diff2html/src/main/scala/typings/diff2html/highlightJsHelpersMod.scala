@@ -2,6 +2,7 @@ package typings.diff2html
 
 import typings.diff2html.diff2htmlStrings.start
 import typings.diff2html.diff2htmlStrings.stop
+import typings.highlightJs.mod.HighlightResult
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,6 +13,10 @@ object highlightJsHelpersMod {
   @JSImport("diff2html/lib/ui/js/highlight.js-helpers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def closeTags(res: HighlightResult): HighlightResult = ^.asInstanceOf[js.Dynamic].applyDynamic("closeTags")(res.asInstanceOf[js.Any]).asInstanceOf[HighlightResult]
+  
+  inline def getLanguage(fileExtension: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")(fileExtension.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def mergeStreams(original: js.Array[NodeEvent], highlighted: js.Array[NodeEvent], value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStreams")(original.asInstanceOf[js.Any], highlighted.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   

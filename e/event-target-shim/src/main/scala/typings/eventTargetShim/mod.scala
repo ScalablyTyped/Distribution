@@ -1,18 +1,48 @@
 package typings.eventTargetShim
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.eventTargetShim.anon.AddEventListener
-import typings.eventTargetShim.anon.EventTargetloose
-import typings.eventTargetShim.anon.EventTargetstandard
-import typings.eventTargetShim.anon.PartialPickEventOmittable
-import typings.eventTargetShim.mod.EventTarget.EventAttributes
-import typings.eventTargetShim.mod.EventTarget.EventDefinition
-import typings.eventTargetShim.mod.EventTarget.Mode
-import typings.eventTargetShim.mod.EventTarget._EventData
-import typings.std.Exclude
-import typings.std.Pick
+import typings.eventTargetShim.anon.AbortEvent
+import typings.eventTargetShim.anon.PartialOmitEventstringtypATTARGET
+import typings.eventTargetShim.anon.Type
+import typings.eventTargetShim.anon.TypeofEventInstantiable
+import typings.eventTargetShim.eventTargetShimStrings.AT_TARGET
+import typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE
+import typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE
+import typings.eventTargetShim.eventTargetShimStrings.NONE
+import typings.eventTargetShim.eventTargetShimStrings.`type`
+import typings.eventTargetShim.eventTargetShimStrings.bubbles
+import typings.eventTargetShim.eventTargetShimStrings.cancelBubble
+import typings.eventTargetShim.eventTargetShimStrings.cancelable
+import typings.eventTargetShim.eventTargetShimStrings.composed
+import typings.eventTargetShim.eventTargetShimStrings.composedPath
+import typings.eventTargetShim.eventTargetShimStrings.constructor
+import typings.eventTargetShim.eventTargetShimStrings.currentTarget
+import typings.eventTargetShim.eventTargetShimStrings.defaultPrevented
+import typings.eventTargetShim.eventTargetShimStrings.eventPhase
+import typings.eventTargetShim.eventTargetShimStrings.initEvent
+import typings.eventTargetShim.eventTargetShimStrings.isTrusted
+import typings.eventTargetShim.eventTargetShimStrings.preventDefault
+import typings.eventTargetShim.eventTargetShimStrings.returnValue
+import typings.eventTargetShim.eventTargetShimStrings.srcElement
+import typings.eventTargetShim.eventTargetShimStrings.standard
+import typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation
+import typings.eventTargetShim.eventTargetShimStrings.stopPropagation
+import typings.eventTargetShim.eventTargetShimStrings.strict
+import typings.eventTargetShim.eventTargetShimStrings.target
+import typings.eventTargetShim.eventTargetShimStrings.timeStamp
+import typings.eventTargetShim.mod.Event.EventInit
+import typings.eventTargetShim.mod.EventTarget.AddOptions
+import typings.eventTargetShim.mod.EventTarget.CallbackFunction
+import typings.eventTargetShim.mod.EventTarget.EventData
+import typings.eventTargetShim.mod.EventTarget.EventListener
+import typings.eventTargetShim.mod.EventTarget.FallbackEvent
+import typings.eventTargetShim.mod.EventTarget.FallbackEventListener
+import typings.eventTargetShim.mod.EventTarget.Options
+import typings.eventTargetShim.mod.defineEventAttribute.EventAttributes
+import typings.std.InstanceType
+import typings.std.Omit
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,108 +53,372 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  /* Inlined event-target-shim.event-target-shim.EventTargetConstructor<{}, {}, 'loose'> & {new <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(): event-target-shim.event-target-shim.EventTarget<TEvents, TEventAttributes, TMode>, None <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(events : std.Array<string>): event-target-shim.event-target-shim.EventTargetConstructor<TEvents, TEventAttributes, TMode>, None <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(event0 : string, events : ...string): event-target-shim.event-target-shim.EventTargetConstructor<TEvents, TEventAttributes, TMode>} */
-  object default {
+  @JSImport("event-target-shim", JSImport.Default)
+  @js.native
+  /**
+  	 * Initialize this instance.
+  	 */
+  open class default[TEventMap /* <: Record[String, Event[String]] */, TMode /* <: standard | strict */] () extends EventTarget[TEventMap, TMode]
+  
+  @JSImport("event-target-shim", "Event")
+  @js.native
+  open class Event[TEventType /* <: String */] protected () extends StObject {
+    /**
+    	 * Initialize this event instance.
+    	 * @param type The type of this event.
+    	 * @param eventInitDict Options to initialize.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-event
+    	 */
+    def this(`type`: TEventType) = this()
+    def this(`type`: TEventType, eventInitDict: EventInit) = this()
     
     /**
-      * Define an `EventTarget` constructor with attribute events and detailed event definition.
-      *
-      * Unfortunately, the second type parameter `TEventAttributes` was needed
-      * because we cannot compute string literal types.
-      *
-      * @example
-      * class AbortSignal extends EventTarget<{ abort: Event }, { onabort: Event }>("abort") {
-      *      abort(): void {}
-      * }
-      *
-      * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
-      */
-    inline def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](event0: String, events: String*): EventTargetConstructor[TEvents, TEventAttributes, TMode] = (^.asInstanceOf[js.Dynamic].apply(event0.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
+    	 * @see https://dom.spec.whatwg.org/#dom-event-at_target
+    	 */
+    def AT_TARGET: Double = js.native
+    
     /**
-      * Define an `EventTarget` constructor with attribute events and detailed event definition.
-      *
-      * Unfortunately, the second type parameter `TEventAttributes` was needed
-      * because we cannot compute string literal types.
-      *
-      * @example
-      * class AbortSignal extends EventTarget<{ abort: Event }, { onabort: Event }>("abort") {
-      *      abort(): void {}
-      * }
-      *
-      * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
-      */
-    inline def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = ^.asInstanceOf[js.Dynamic].apply(events.asInstanceOf[js.Any]).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
+    	 * @see https://dom.spec.whatwg.org/#dom-event-bubbling_phase
+    	 */
+    def BUBBLING_PHASE: Double = js.native
     
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("event-target-shim", JSImport.Default)
-    @js.native
-    class ^ ()
-      extends StObject
-         with EventTargetloose
+    /**
+    	 * @see https://dom.spec.whatwg.org/#dom-event-capturing_phase
+    	 */
+    def CAPTURING_PHASE: Double = js.native
     
-    @JSImport("event-target-shim", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
+    /**
+    	 * @see https://dom.spec.whatwg.org/#dom-event-none
+    	 */
+    def NONE: Double = js.native
+    
+    /**
+    	 * `true` if this event will bubble.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-bubbles
+    	 */
+    def bubbles: Boolean = js.native
+    
+    /**
+    	 * `true` if event bubbling was stopped.
+    	 * @deprecated
+    	 * @see https://dom.spec.whatwg.org/#dom-event-cancelbubble
+    	 */
+    def cancelBubble: Boolean = js.native
+    /**
+    	 * Stop event bubbling if `true` is set.
+    	 * @deprecated Use the `stopPropagation()` method instead.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-cancelbubble
+    	 */
+    def cancelBubble_=(value: Boolean): Unit = js.native
+    
+    /**
+    	 * `true` if this event can be canceled by the `preventDefault()` method.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-cancelable
+    	 */
+    def cancelable: Boolean = js.native
+    
+    /**
+    	 * @see https://dom.spec.whatwg.org/#dom-event-composed
+    	 */
+    def composed: Boolean = js.native
+    
+    /**
+    	 * The event target of the current dispatching.
+    	 * This doesn't support node tree.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-composedpath
+    	 */
+    def composedPath(): js.Array[EventTarget[Record[String, Event[String]], standard]] = js.native
+    
+    /**
+    	 * The event target of the current dispatching.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-currenttarget
+    	 */
+    def currentTarget: (EventTarget[Record[String, Event[String]], standard]) | Null = js.native
+    
+    /**
+    	 * `true` if the default behavior was canceled.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-defaultprevented
+    	 */
+    def defaultPrevented: Boolean = js.native
+    
+    /**
+    	 * The current event phase.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-eventphase
+    	 */
+    def eventPhase: Double = js.native
+    
+    /**
+    	 * @deprecated Don't use this method. The constructor did initialization.
+    	 */
+    def initEvent(`type`: String): Unit = js.native
+    def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
+    def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    
+    /**
+    	 * @see https://dom.spec.whatwg.org/#dom-event-istrusted
+    	 */
+    def isTrusted: Boolean = js.native
+    
+    /**
+    	 * Cancel the default behavior.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-preventdefault
+    	 */
+    def preventDefault(): Unit = js.native
+    
+    /**
+    	 * `true` if the default behavior will act.
+    	 * @deprecated Use the `defaultPrevented` proeprty instead.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-returnvalue
+    	 */
+    def returnValue: Boolean = js.native
+    /**
+    	 * Cancel the default behavior if `false` is set.
+    	 * @deprecated Use the `preventDefault()` method instead.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-returnvalue
+    	 */
+    def returnValue_=(value: Boolean): Unit = js.native
+    
+    /**
+    	 * The event target of the current dispatching.
+    	 * @deprecated Use the `target` property instead.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-srcelement
+    	 */
+    def srcElement: (EventTarget[Record[String, Event[String]], standard]) | Null = js.native
+    
+    /**
+    	 * Stop event bubbling and subsequent event listener callings.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-stopimmediatepropagation
+    	 */
+    def stopImmediatePropagation(): Unit = js.native
+    
+    /**
+    	 * Stop event bubbling.
+    	 * Because this shim doesn't support node tree, this merely changes the `cancelBubble` property value.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-stoppropagation
+    	 */
+    def stopPropagation(): Unit = js.native
+    
+    /**
+    	 * The event target of the current dispatching.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-target
+    	 */
+    def target: (EventTarget[Record[String, Event[String]], standard]) | Null = js.native
+    
+    /**
+    	 * @see https://dom.spec.whatwg.org/#dom-event-timestamp
+    	 */
+    def timeStamp: Double = js.native
+    
+    /**
+    	 * The type of this event.
+    	 * @see https://dom.spec.whatwg.org/#dom-event-type
+    	 */
+    def `type`: TEventType = js.native
+  }
+  object Event {
+    
+    /**
+    	 * The options of the `Event` constructor.
+    	 * @see https://dom.spec.whatwg.org/#dictdef-eventinit
+    	 */
+    trait EventInit extends StObject {
+      
+      var bubbles: js.UndefOr[Boolean] = js.undefined
+      
+      var cancelable: js.UndefOr[Boolean] = js.undefined
+      
+      var composed: js.UndefOr[Boolean] = js.undefined
+    }
+    object EventInit {
+      
+      inline def apply(): EventInit = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[EventInit]
+      }
+      
+      extension [Self <: EventInit](x: Self) {
+        
+        inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+        
+        inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+        
+        inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+        
+        inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+        
+        inline def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
+        
+        inline def setComposedUndefined: Self = StObject.set(x, "composed", js.undefined)
+      }
+    }
   }
   
-  /* Inlined event-target-shim.event-target-shim.EventTargetConstructor<{}, {}, 'loose'> & {new <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(): event-target-shim.event-target-shim.EventTarget<TEvents, TEventAttributes, TMode>, None <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(events : std.Array<string>): event-target-shim.event-target-shim.EventTargetConstructor<TEvents, TEventAttributes, TMode>, None <TEvents extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TEventAttributes extends event-target-shim.event-target-shim.EventTarget.EventDefinition = {}, TMode extends event-target-shim.event-target-shim.EventTarget.Mode = 'loose'>(event0 : string, events : ...string): event-target-shim.event-target-shim.EventTargetConstructor<TEvents, TEventAttributes, TMode>} */
+  @JSImport("event-target-shim", "EventTarget")
+  @js.native
+  /**
+  	 * Initialize this instance.
+  	 */
+  open class EventTarget[TEventMap /* <: Record[String, Event[String]] */, TMode /* <: standard | strict */] () extends StObject {
+    
+    /**
+    	 * Add an event listener.
+    	 * @param type The event type.
+    	 * @param callback The event listener.
+    	 * @param options Options.
+    	 */
+    def addEventListener(`type`: String): Unit = js.native
+    def addEventListener(`type`: String, callback: Unit, options: AddOptions): Unit = js.native
+    def addEventListener(`type`: String, callback: FallbackEventListener[this.type, TMode]): Unit = js.native
+    /**
+    	 * Add an event listener.
+    	 * @param type The event type.
+    	 * @param callback The event listener.
+    	 * @param capture The capture flag.
+    	 * @deprecated Use `{capture: boolean}` object instead of a boolean value.
+    	 */
+    def addEventListener(`type`: String, callback: FallbackEventListener[this.type, TMode], capture: Boolean): Unit = js.native
+    def addEventListener(`type`: String, callback: FallbackEventListener[this.type, TMode], options: AddOptions): Unit = js.native
+    /**
+    	 * Add an event listener.
+    	 * @param type The event type.
+    	 * @param callback The event listener.
+    	 * @param options Options.
+    	 */
+    def addEventListener[T /* <: String */](`type`: T): Unit = js.native
+    def addEventListener[T /* <: String */](`type`: T, callback: Null, capture: Boolean): Unit = js.native
+    def addEventListener[T /* <: String */](`type`: T, callback: Null, options: AddOptions): Unit = js.native
+    def addEventListener[T /* <: String */](`type`: T, callback: Unit, capture: Boolean): Unit = js.native
+    def addEventListener[T /* <: String */](`type`: T, callback: Unit, options: AddOptions): Unit = js.native
+    def addEventListener[T /* <: String */](
+      `type`: T,
+      callback: EventListener[
+          this.type, 
+          /* import warning: importer.ImportType#apply Failed type conversion: TEventMap[T] */ js.Any
+        ]
+    ): Unit = js.native
+    /**
+    	 * Add an event listener.
+    	 * @param type The event type.
+    	 * @param callback The event listener.
+    	 * @param capture The capture flag.
+    	 * @deprecated Use `{capture: boolean}` object instead of a boolean value.
+    	 */
+    def addEventListener[T /* <: String */](
+      `type`: T,
+      callback: EventListener[
+          this.type, 
+          /* import warning: importer.ImportType#apply Failed type conversion: TEventMap[T] */ js.Any
+        ],
+      capture: Boolean
+    ): Unit = js.native
+    def addEventListener[T /* <: String */](
+      `type`: T,
+      callback: EventListener[
+          this.type, 
+          /* import warning: importer.ImportType#apply Failed type conversion: TEventMap[T] */ js.Any
+        ],
+      options: AddOptions
+    ): Unit = js.native
+    
+    /**
+    	 * Dispatch an event.
+    	 * @param event The `Event` object to dispatch.
+    	 */
+    def dispatchEvent(event: FallbackEvent[TMode]): Boolean = js.native
+    /**
+    	 * Dispatch an event.
+    	 * @param event The `Event` object to dispatch.
+    	 */
+    def dispatchEvent[T /* <: String */](event: EventData[TEventMap, TMode, T]): Boolean = js.native
+    
+    /**
+    	 * Remove an added event listener.
+    	 * @param type The event type.
+    	 * @param callback The event listener.
+    	 * @param options Options.
+    	 */
+    def removeEventListener(`type`: String): Unit = js.native
+    def removeEventListener(`type`: String, callback: Unit, options: Options): Unit = js.native
+    def removeEventListener(`type`: String, callback: FallbackEventListener[this.type, TMode]): Unit = js.native
+    /**
+    	 * Remove an added event listener.
+    	 * @param type The event type.
+    	 * @param callback The event listener.
+    	 * @param capture The capture flag.
+    	 * @deprecated Use `{capture: boolean}` object instead of a boolean value.
+    	 */
+    def removeEventListener(`type`: String, callback: FallbackEventListener[this.type, TMode], capture: Boolean): Unit = js.native
+    def removeEventListener(`type`: String, callback: FallbackEventListener[this.type, TMode], options: Options): Unit = js.native
+    /**
+    	 * Remove an added event listener.
+    	 * @param type The event type.
+    	 * @param callback The event listener.
+    	 * @param options Options.
+    	 */
+    def removeEventListener[T /* <: String */](`type`: T): Unit = js.native
+    def removeEventListener[T /* <: String */](`type`: T, callback: Null, capture: Boolean): Unit = js.native
+    def removeEventListener[T /* <: String */](`type`: T, callback: Null, options: Options): Unit = js.native
+    def removeEventListener[T /* <: String */](`type`: T, callback: Unit, capture: Boolean): Unit = js.native
+    def removeEventListener[T /* <: String */](`type`: T, callback: Unit, options: Options): Unit = js.native
+    def removeEventListener[T /* <: String */](
+      `type`: T,
+      callback: EventListener[
+          this.type, 
+          /* import warning: importer.ImportType#apply Failed type conversion: TEventMap[T] */ js.Any
+        ]
+    ): Unit = js.native
+    /**
+    	 * Remove an added event listener.
+    	 * @param type The event type.
+    	 * @param callback The event listener.
+    	 * @param capture The capture flag.
+    	 * @deprecated Use `{capture: boolean}` object instead of a boolean value.
+    	 */
+    def removeEventListener[T /* <: String */](
+      `type`: T,
+      callback: EventListener[
+          this.type, 
+          /* import warning: importer.ImportType#apply Failed type conversion: TEventMap[T] */ js.Any
+        ],
+      capture: Boolean
+    ): Unit = js.native
+    def removeEventListener[T /* <: String */](
+      `type`: T,
+      callback: EventListener[
+          this.type, 
+          /* import warning: importer.ImportType#apply Failed type conversion: TEventMap[T] */ js.Any
+        ],
+      options: Options
+    ): Unit = js.native
+  }
   object EventTarget {
     
     /**
-      * Define an `EventTarget` constructor with attribute events and detailed event definition.
-      *
-      * Unfortunately, the second type parameter `TEventAttributes` was needed
-      * because we cannot compute string literal types.
-      *
-      * @example
-      * class AbortSignal extends EventTarget<{ abort: Event }, { onabort: Event }>("abort") {
-      *      abort(): void {}
-      * }
-      *
-      * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
-      */
-    inline def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](event0: String, events: String*): EventTargetConstructor[TEvents, TEventAttributes, TMode] = (^.asInstanceOf[js.Dynamic].apply(event0.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
+    	 * The abort signal.
+    	 * @see https://dom.spec.whatwg.org/#abortsignal
+    	 */
+    @js.native
+    trait AbortSignal extends EventTarget[AbortEvent, standard] {
+      
+      val aborted: Boolean = js.native
+      
+      var onabort: (CallbackFunction[this.type, Event[String]]) | Null = js.native
+    }
+    
     /**
-      * Define an `EventTarget` constructor with attribute events and detailed event definition.
-      *
-      * Unfortunately, the second type parameter `TEventAttributes` was needed
-      * because we cannot compute string literal types.
-      *
-      * @example
-      * class AbortSignal extends EventTarget<{ abort: Event }, { onabort: Event }>("abort") {
-      *      abort(): void {}
-      * }
-      *
-      * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
-      */
-    inline def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = ^.asInstanceOf[js.Dynamic].apply(events.asInstanceOf[js.Any]).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("event-target-shim", "EventTarget")
-    @js.native
-    class ^ ()
-      extends StObject
-         with EventTargetloose
-    
-    @JSImport("event-target-shim", "EventTarget")
-    @js.native
-    val ^ : js.Any = js.native
-    
+    	 * The options for the `addEventListener` methods.
+    	 * @see https://dom.spec.whatwg.org/#dictdef-addeventlisteneroptions
+    	 */
     trait AddOptions
       extends StObject
-         with RemoveOptions {
+         with Options {
       
-      /**
-        * The flag to indicate that the listener will be removed on the first
-        * event.
-        */
       var once: js.UndefOr[Boolean] = js.undefined
       
-      /**
-        * The flag to indicate that the listener doesn't support
-        * `event.preventDefault()` operation.
-        */
       var passive: js.UndefOr[Boolean] = js.undefined
+      
+      var signal: js.UndefOr[AbortSignal | Null] = js.undefined
     }
     object AddOptions {
       
@@ -142,335 +436,221 @@ object mod {
         inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
         
         inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
-      }
-    }
-    
-    type EventAttributes[TEventAttributes /* <: EventDefinition */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof TEventAttributes ]: event-target-shim.event-target-shim.EventTarget.FunctionListener<TEventAttributes[P]> | null}
-      */ typings.eventTargetShim.eventTargetShimStrings.EventAttributes & TopLevel[TEventAttributes]
-    
-    /* Rewritten from type alias, can be one of: 
-      - typings.eventTargetShim.mod.Event
-      - typings.eventTargetShim.mod.EventTarget.NonStandardEvent
-      - (typings.std.Pick[
-    / * import warning: importer.ImportType#apply Failed type conversion: TEvents[TEventType] * / js.Any, 
-    typings.std.Exclude[
-      / * import warning: importer.ImportType#apply Failed type conversion: keyof TEvents[TEventType] * / js.Any, 
-      typings.eventTargetShim.mod.EventTarget.OmittableEventKeys
-    ]]) & typings.eventTargetShim.anon.PartialPickEventOmittable[TEvents]
-    */
-    type EventData[TEvents /* <: EventDefinition */, TEventType /* <: /* keyof TEvents */ String */, TMode /* <: Mode */] = (_EventData[TEvents, TEventType, TMode]) | ((Pick[
-        /* import warning: importer.ImportType#apply Failed type conversion: TEvents[TEventType] */ js.Any, 
-        Exclude[
-          /* import warning: importer.ImportType#apply Failed type conversion: keyof TEvents[TEventType] */ js.Any, 
-          OmittableEventKeys
-        ]
-      ]) & PartialPickEventOmittable[TEvents])
-    
-    type EventDefinition = StringDictionary[Event]
-    
-    type EventType[TEvents /* <: EventDefinition */, TMode /* <: Mode */] = /* keyof TEvents */ String
-    
-    type FunctionListener[TEvent] = js.Function1[/* event */ TEvent, Unit]
-    
-    type Listener[TEvent] = FunctionListener[TEvent] | ObjectListener[TEvent]
-    
-    /* Rewritten from type alias, can be one of: 
-      - typings.eventTargetShim.eventTargetShimStrings.strict
-      - typings.eventTargetShim.eventTargetShimStrings.standard
-      - typings.eventTargetShim.eventTargetShimStrings.loose
-    */
-    trait Mode extends StObject
-    object Mode {
-      
-      inline def loose: typings.eventTargetShim.eventTargetShimStrings.loose = "loose".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.loose]
-      
-      inline def standard: typings.eventTargetShim.eventTargetShimStrings.standard = "standard".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.standard]
-      
-      inline def strict: typings.eventTargetShim.eventTargetShimStrings.strict = "strict".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.strict]
-    }
-    
-    trait NonStandardEvent
-      extends StObject
-         with /* key */ StringDictionary[js.Any]
-         with _EventData[js.Any, js.Any, js.Any] {
-      
-      var `type`: String
-    }
-    object NonStandardEvent {
-      
-      inline def apply(`type`: String): NonStandardEvent = {
-        val __obj = js.Dynamic.literal()
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-        __obj.asInstanceOf[NonStandardEvent]
-      }
-      
-      extension [Self <: NonStandardEvent](x: Self) {
         
-        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+        
+        inline def setSignalNull: Self = StObject.set(x, "signal", null)
+        
+        inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       }
     }
     
-    trait ObjectListener[TEvent] extends StObject {
+    /**
+    	 * The event listener function.
+    	 */
+    type CallbackFunction[TEventTarget /* <: EventTarget[Any, Any] */, TEvent /* <: Event[String] */] = js.ThisFunction1[/* this */ TEventTarget, /* event */ TEvent, Unit]
+    
+    /**
+    	 * The event listener object.
+    	 * @see https://dom.spec.whatwg.org/#callbackdef-eventlistener
+    	 */
+    trait CallbackObject[TEvent /* <: Event[String] */] extends StObject {
       
       def handleEvent(event: TEvent): Unit
     }
-    object ObjectListener {
+    object CallbackObject {
       
-      inline def apply[TEvent](handleEvent: TEvent => Unit): ObjectListener[TEvent] = {
+      inline def apply[TEvent /* <: Event[String] */](handleEvent: TEvent => Unit): CallbackObject[TEvent] = {
         val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
-        __obj.asInstanceOf[ObjectListener[TEvent]]
+        __obj.asInstanceOf[CallbackObject[TEvent]]
       }
       
-      extension [Self <: ObjectListener[?], TEvent](x: Self & ObjectListener[TEvent]) {
+      extension [Self <: CallbackObject[?], TEvent /* <: Event[String] */](x: Self & CallbackObject[TEvent]) {
         
         inline def setHandleEvent(value: TEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
       }
     }
     
-    /* Inlined std.Exclude<keyof event-target-shim.event-target-shim.Event, 'type'> */
+    /**
+    	 * The event data to dispatch in strict mode.
+    	 */
+    type EventData[TEventMap /* <: Record[String, Event[String]] */, TMode /* <: standard | strict */, TEventType /* <: String */] = ExplicitType[TEventType] & (Omit[
+        /* import warning: importer.ImportType#apply Failed type conversion: TEventMap[TEventType] */ js.Any, 
+        /* keyof event-target-shim.event-target-shim.Event<string> */ NONE | CAPTURING_PHASE | AT_TARGET | BUBBLING_PHASE | constructor | `type` | target | srcElement | currentTarget | composedPath | eventPhase | stopPropagation | cancelBubble | stopImmediatePropagation | bubbles | cancelable | returnValue | preventDefault | defaultPrevented | composed | isTrusted | timeStamp | initEvent
+      ]) & PartialOmitEventstringtypATTARGET
+    
+    /**
+    	 * The event listener.
+    	 */
+    type EventListener[TEventTarget /* <: EventTarget[Any, Any] */, TEvent /* <: Event[String] */] = (CallbackFunction[TEventTarget, TEvent]) | CallbackObject[TEvent]
+    
+    /**
+    	 * Define explicit `type` property if `T` is a string literal.
+    	 * Otherwise, never.
+    	 */
+    type ExplicitType[T /* <: String */] = Type[T]
+    
+    /**
+    	 * The event type in standard mode.
+    	 * Otherwise, never.
+    	 */
+    type FallbackEvent[TMode /* <: standard | strict */] = Event[String]
+    
+    /**
+    	 * The event listener type in standard mode.
+    	 * Otherwise, never.
+    	 */
+    type FallbackEventListener[TEventTarget /* <: EventTarget[Any, Any] */, TMode /* <: standard | strict */] = js.UndefOr[(EventListener[TEventTarget, Event[String]]) | Null]
+    
+    /**
+    	 * Check if given event map is valid.
+    	 * It's valid if the keys of the event map are narrower than `string`.
+    	 */
     /* Rewritten from type alias, can be one of: 
-      - typings.eventTargetShim.eventTargetShimStrings.target
-      - typings.eventTargetShim.eventTargetShimStrings.eventPhase
-      - typings.eventTargetShim.eventTargetShimStrings.composed
-      - typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE
-      - typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation
-      - typings.eventTargetShim.eventTargetShimStrings.timeStamp
-      - typings.eventTargetShim.eventTargetShimStrings.stopPropagation
-      - typings.eventTargetShim.eventTargetShimStrings.defaultPrevented
-      - typings.eventTargetShim.eventTargetShimStrings.AT_TARGET
-      - typings.eventTargetShim.eventTargetShimStrings.NONE
-      - typings.eventTargetShim.eventTargetShimStrings.cancelable
-      - typings.eventTargetShim.eventTargetShimStrings.returnValue
-      - typings.eventTargetShim.eventTargetShimStrings.isTrusted
-      - typings.eventTargetShim.eventTargetShimStrings.bubbles
-      - typings.eventTargetShim.eventTargetShimStrings.initEvent
-      - typings.eventTargetShim.eventTargetShimStrings.srcElement
-      - typings.eventTargetShim.eventTargetShimStrings.preventDefault
-      - typings.eventTargetShim.eventTargetShimStrings.cancelBubble
-      - typings.eventTargetShim.eventTargetShimStrings.composedPath
-      - typings.eventTargetShim.eventTargetShimStrings.currentTarget
-      - typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE
+      - typings.eventTargetShim.eventTargetShimBooleans.`true`
+      - typings.eventTargetShim.eventTargetShimBooleans.`false`
     */
-    trait OmittableEventKeys extends StObject
-    object OmittableEventKeys {
-      
-      inline def AT_TARGET: typings.eventTargetShim.eventTargetShimStrings.AT_TARGET = "AT_TARGET".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.AT_TARGET]
-      
-      inline def BUBBLING_PHASE: typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE = "BUBBLING_PHASE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE]
-      
-      inline def CAPTURING_PHASE: typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE = "CAPTURING_PHASE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE]
-      
-      inline def NONE: typings.eventTargetShim.eventTargetShimStrings.NONE = "NONE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.NONE]
-      
-      inline def bubbles: typings.eventTargetShim.eventTargetShimStrings.bubbles = "bubbles".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.bubbles]
-      
-      inline def cancelBubble: typings.eventTargetShim.eventTargetShimStrings.cancelBubble = "cancelBubble".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.cancelBubble]
-      
-      inline def cancelable: typings.eventTargetShim.eventTargetShimStrings.cancelable = "cancelable".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.cancelable]
-      
-      inline def composed: typings.eventTargetShim.eventTargetShimStrings.composed = "composed".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.composed]
-      
-      inline def composedPath: typings.eventTargetShim.eventTargetShimStrings.composedPath = "composedPath".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.composedPath]
-      
-      inline def currentTarget: typings.eventTargetShim.eventTargetShimStrings.currentTarget = "currentTarget".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.currentTarget]
-      
-      inline def defaultPrevented: typings.eventTargetShim.eventTargetShimStrings.defaultPrevented = "defaultPrevented".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.defaultPrevented]
-      
-      inline def eventPhase: typings.eventTargetShim.eventTargetShimStrings.eventPhase = "eventPhase".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.eventPhase]
-      
-      inline def initEvent: typings.eventTargetShim.eventTargetShimStrings.initEvent = "initEvent".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.initEvent]
-      
-      inline def isTrusted: typings.eventTargetShim.eventTargetShimStrings.isTrusted = "isTrusted".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.isTrusted]
-      
-      inline def preventDefault: typings.eventTargetShim.eventTargetShimStrings.preventDefault = "preventDefault".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.preventDefault]
-      
-      inline def returnValue: typings.eventTargetShim.eventTargetShimStrings.returnValue = "returnValue".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.returnValue]
-      
-      inline def srcElement: typings.eventTargetShim.eventTargetShimStrings.srcElement = "srcElement".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.srcElement]
-      
-      inline def stopImmediatePropagation: typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation = "stopImmediatePropagation".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation]
-      
-      inline def stopPropagation: typings.eventTargetShim.eventTargetShimStrings.stopPropagation = "stopPropagation".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.stopPropagation]
-      
-      inline def target: typings.eventTargetShim.eventTargetShimStrings.target = "target".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.target]
-      
-      inline def timeStamp: typings.eventTargetShim.eventTargetShimStrings.timeStamp = "timeStamp".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.timeStamp]
-    }
+    trait IsValidEventMap[T] extends StObject
     
-    type PickEvent[TEvents /* <: EventDefinition */, TEventType /* <: /* keyof TEvents */ String */] = Event | (/* import warning: importer.ImportType#apply Failed type conversion: TEvents[TEventType] */ js.Any)
-    
-    trait RemoveOptions extends StObject {
+    /**
+    	 * The common options for both `addEventListener` and `removeEventListener` methods.
+    	 * @see https://dom.spec.whatwg.org/#dictdef-eventlisteneroptions
+    	 */
+    trait Options extends StObject {
       
-      /**
-        * The flag to indicate that the listener is for the capturing phase.
-        */
       var capture: js.UndefOr[Boolean] = js.undefined
     }
-    object RemoveOptions {
+    object Options {
       
-      inline def apply(): RemoveOptions = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[RemoveOptions]
+        __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: RemoveOptions](x: Self) {
+      extension [Self <: Options](x: Self) {
         
         inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
         
         inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       }
     }
-    
-    trait _EventData[TEvents /* <: EventDefinition */, TEventType /* <: /* keyof TEvents */ String */, TMode /* <: Mode */] extends StObject
-  }
-  type EventTarget[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */] = EventAttributes[TEventAttributes] & (AddEventListener[TEvents, TMode])
-  
-  inline def defineEventAttribute(prototype: EventTargetloose, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineEventAttribute")(prototype.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  @js.native
-  trait Event
-    extends StObject
-       with _EventData[js.Any, js.Any, js.Any] {
-    
-    /**
-      * Constant of AT_TARGET.
-      */
-    val AT_TARGET: Double = js.native
-    
-    /**
-      * Constant of BUBBLING_PHASE.
-      */
-    val BUBBLING_PHASE: Double = js.native
-    
-    /**
-      * Constant of CAPTURING_PHASE.
-      */
-    val CAPTURING_PHASE: Double = js.native
-    
-    /**
-      * Constant of NONE.
-      */
-    val NONE: Double = js.native
-    
-    /**
-      * The flag indicating bubbling.
-      */
-    val bubbles: Boolean = js.native
-    
-    /**
-      * Stop event bubbling.
-      * @deprecated
-      */
-    var cancelBubble: Boolean = js.native
-    
-    /**
-      * The flag indicating whether the event can be canceled.
-      */
-    val cancelable: Boolean = js.native
-    
-    /**
-      * The flag to indicating if event is composed.
-      */
-    val composed: Boolean = js.native
-    
-    /**
-      * The composed path of this event.
-      */
-    def composedPath(): js.Array[EventTargetstandard] = js.native
-    
-    /**
-      * The current target of this event.
-      */
-    val currentTarget: EventTargetstandard | Null = js.native
-    
-    /**
-      * The flag to indicating whether the event was canceled.
-      */
-    val defaultPrevented: Boolean = js.native
-    
-    /**
-      * Indicates which phase of the event flow is currently being evaluated.
-      */
-    val eventPhase: Double = js.native
-    
-    /**
-      * Initialize event.
-      * @deprecated
-      */
-    def initEvent(`type`: String): Unit = js.native
-    def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
-    def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
-    def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
-    
-    /**
-      * Indicates whether the event was dispatched by the user agent.
-      */
-    val isTrusted: Boolean = js.native
-    
-    /**
-      * Cancel this event.
-      */
-    def preventDefault(): Unit = js.native
-    
-    /**
-      * Set or get cancellation flag.
-      * @deprecated
-      */
-    var returnValue: Boolean = js.native
-    
-    /**
-      * The target of this event.
-      * @deprecated
-      */
-    val srcElement: js.Any | Null = js.native
-    
-    /**
-      * Stop event bubbling.
-      */
-    def stopImmediatePropagation(): Unit = js.native
-    
-    /**
-      * Stop event bubbling.
-      */
-    def stopPropagation(): Unit = js.native
-    
-    /**
-      * The target of this event.
-      */
-    val target: EventTargetstandard | Null = js.native
-    
-    /**
-      * The unix time of this event.
-      */
-    val timeStamp: Double = js.native
-    
-    /**
-      * The type of this event.
-      */
-    val `type`: String = js.native
   }
   
-  @js.native
-  trait EventTargetConstructor[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */]
-    extends StObject
-       with Instantiable0[EventTarget[TEvents, TEventAttributes, TMode]]
-  
-  trait Type[T /* <: String */] extends StObject {
+  object defineCustomEventTarget {
     
-    var `type`: T
+    inline def apply[TEventMap /* <: Record[String, Event[String]] */, TMode /* <: standard | strict */](types: String*): CustomEventTargetConstructor[TEventMap, TMode] = ^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[Seq[js.Any]]*).asInstanceOf[CustomEventTargetConstructor[TEventMap, TMode]]
+    
+    @JSImport("event-target-shim", "defineCustomEventTarget")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+    	 * The interface of CustomEventTarget.
+    	 */
+    type CustomEventTarget[TEventMap /* <: Record[String, Event[String]] */, TMode /* <: standard | strict */] = (EventTarget[TEventMap, TMode]) & (EventAttributes[Any, TEventMap])
+    
+    /**
+    	 * The interface of CustomEventTarget constructor.
+    	 */
+    @js.native
+    trait CustomEventTargetConstructor[TEventMap /* <: Record[String, Event[String]] */, TMode /* <: standard | strict */]
+      extends StObject
+         with /**
+    		 * Create a new instance.
+    		 */
+    Instantiable0[CustomEventTarget[TEventMap, TMode]]
   }
-  object Type {
+  
+  object defineEventAttribute {
     
-    inline def apply[T /* <: String */](`type`: T): Type[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Type[T]]
-    }
+    inline def apply[TEventTarget /* <: EventTarget[Record[String, Event[String]], standard] */, TEventType /* <: String */, TEventConstrucor /* <: TypeofEventInstantiable */](target: TEventTarget, `type`: TEventType): (/* asserts target is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(TEventTarget))),IArray())*/ Boolean) & (EventAttributes[TEventTarget, Record[TEventType, InstanceType[TEventConstrucor]]]) = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[(/* asserts target is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(TEventTarget))),IArray())*/ Boolean) & (EventAttributes[TEventTarget, Record[TEventType, InstanceType[TEventConstrucor]]])]
+    inline def apply[TEventTarget /* <: EventTarget[Record[String, Event[String]], standard] */, TEventType /* <: String */, TEventConstrucor /* <: TypeofEventInstantiable */](target: TEventTarget, `type`: TEventType, _eventClass: TEventConstrucor): (/* asserts target is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(TEventTarget))),IArray())*/ Boolean) & (EventAttributes[TEventTarget, Record[TEventType, InstanceType[TEventConstrucor]]]) = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], _eventClass.asInstanceOf[js.Any])).asInstanceOf[(/* asserts target is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(TEventTarget))),IArray())*/ Boolean) & (EventAttributes[TEventTarget, Record[TEventType, InstanceType[TEventConstrucor]]])]
     
-    extension [Self <: Type[?], T /* <: String */](x: Self & Type[T]) {
+    @JSImport("event-target-shim", "defineEventAttribute")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+    	 * Definition of event attributes.
+    	 */
+    type EventAttributes[TEventTarget /* <: EventTarget[Any, Any] */, TEventMap /* <: Record[String, Event[String]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string & keyof TEventMap as 'on${P}' ]: event-target-shim.event-target-shim.EventTarget.CallbackFunction<TEventTarget, TEventMap[P]> | null}
+      */ typings.eventTargetShim.eventTargetShimStrings.EventAttributes & TopLevel[TEventMap]
+  }
+  
+  inline def getEventAttributeValue[TEventTarget /* <: EventTarget[Any, Any] */, TEvent /* <: Event[String] */](target: TEventTarget, `type`: String): (CallbackFunction[TEventTarget, TEvent]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventAttributeValue")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[(CallbackFunction[TEventTarget, TEvent]) | Null]
+  
+  object setErrorHandler {
+    
+    inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+    inline def apply(value: ErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSImport("event-target-shim", "setErrorHandler")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+    	 * The error handler.
+    	 * @param error The thrown error object.
+    	 */
+    type ErrorHandler = js.Function1[/* error */ js.Error, Unit]
+  }
+  
+  inline def setEventAttributeValue(target: EventTarget[Any, Any], `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEventAttributeValue")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setEventAttributeValue(target: EventTarget[Any, Any], `type`: String, callback: CallbackFunction[Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEventAttributeValue")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  object setWarningHandler {
+    
+    inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+    inline def apply(value: WarningHandler): Unit = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSImport("event-target-shim", "setWarningHandler")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+    	 * The warning information.
+    	 */
+    trait Warning extends StObject {
       
-      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      /**
+      		 * The arguments for replacing placeholders in the text.
+      		 */
+      var args: js.Array[Any]
+      
+      /**
+      		 * The code of this warning.
+      		 */
+      var code: String
+      
+      /**
+      		 * The message in English.
+      		 */
+      var message: String
     }
+    object Warning {
+      
+      inline def apply(args: js.Array[Any], code: String, message: String): Warning = {
+        val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Warning]
+      }
+      
+      extension [Self <: Warning](x: Self) {
+        
+        inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        
+        inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
+        
+        inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    /**
+    	 * The warning handler.
+    	 * @param warning The warning.
+    	 */
+    type WarningHandler = js.Function1[/* warning */ Warning, Unit]
   }
 }

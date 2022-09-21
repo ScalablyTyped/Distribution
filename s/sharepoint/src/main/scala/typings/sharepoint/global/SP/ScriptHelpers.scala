@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ScriptHelpers")
 @js.native
-class ScriptHelpers ()
+open class ScriptHelpers ()
   extends StObject
      with typings.sharepoint.SP.ScriptHelpers
 object ScriptHelpers {
@@ -44,7 +44,7 @@ object ScriptHelpers {
   inline def getUrlQueryPairs(docUrl: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlQueryPairs")(docUrl.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
   /* static member */
-  inline def getUserFieldProperty(item: typings.sharepoint.SP.ListItem[js.Any], fieldName: String, propertyName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserFieldProperty")(item.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getUserFieldProperty(item: typings.sharepoint.SP.ListItem[Any], fieldName: String, propertyName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserFieldProperty")(item.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
   inline def hasPermission(listPermissionMask: Double, listPermission: typings.sharepoint.SP.ListLevelPermissionMask): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPermission")(listPermissionMask.asInstanceOf[js.Any], listPermission.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -53,13 +53,13 @@ object ScriptHelpers {
   inline def isNullOrEmptyString(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrEmptyString")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  inline def isNullOrUndefined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNullOrUndefined(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
   inline def isNullOrUndefinedOrEmpty(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrUndefinedOrEmpty")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  inline def isUndefined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUndefined(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
   inline def newGuid(): typings.sharepoint.SP.Guid = ^.asInstanceOf[js.Dynamic].applyDynamic("newGuid")().asInstanceOf[typings.sharepoint.SP.Guid]

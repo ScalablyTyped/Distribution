@@ -10,15 +10,12 @@ growl like notifications for angularJS projects, using bootstrap alert classes
 | ------------------ | :-------------: |
 | Full name          | angular-growl-v2 |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 127960 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10255.333333333334 |
+| # stars            | 287.0 |
 
 ## Links
-- [Homepage](https://github.com/JanStevens/angular-growl-2#readme)
-- [Bugs](https://github.com/JanStevens/angular-growl-2/issues)
-- [Repository](https://github.com/JanStevens/angular-growl-2)
 - [Npm](https://www.npmjs.com/package/angular-growl-v2)
     
 

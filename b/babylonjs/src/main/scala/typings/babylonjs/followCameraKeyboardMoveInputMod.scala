@@ -10,43 +10,43 @@ object followCameraKeyboardMoveInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/followCameraKeyboardMoveInput", "FollowCameraKeyboardMoveInput")
   @js.native
-  class FollowCameraKeyboardMoveInput ()
+  open class FollowCameraKeyboardMoveInput ()
     extends StObject
        with ICameraInput[FollowCamera] {
     
-    /* private */ var _altPressed: js.Any = js.native
+    /* private */ var _altPressed: Any = js.native
     
-    /* private */ var _ctrlPressed: js.Any = js.native
+    /* private */ var _ctrlPressed: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _keys: js.Any = js.native
+    /* private */ var _keys: Any = js.native
     
     /**
       * Check if the pressed modifier keys (Alt/Ctrl/Shift) match those configured to
       * allow modification of the heightOffset value.
       */
-    /* private */ var _modifierHeightOffset: js.Any = js.native
+    /* private */ var _modifierHeightOffset: Any = js.native
     
     /**
       * Check if the pressed modifier keys (Alt/Ctrl/Shift) match those configured to
       * allow modification of the radius value.
       */
-    /* private */ var _modifierRadius: js.Any = js.native
+    /* private */ var _modifierRadius: Any = js.native
     
     /**
       * Check if the pressed modifier keys (Alt/Ctrl/Shift) match those configured to
       * allow modification of the rotationOffset value.
       */
-    /* private */ var _modifierRotationOffset: js.Any = js.native
+    /* private */ var _modifierRotationOffset: Any = js.native
     
-    /* private */ var _onCanvasBlurObserver: js.Any = js.native
+    /* private */ var _onCanvasBlurObserver: Any = js.native
     
-    /* private */ var _onKeyboardObserver: js.Any = js.native
+    /* private */ var _onKeyboardObserver: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _shiftPressed: js.Any = js.native
+    /* private */ var _shiftPressed: Any = js.native
     
     /**
       * Defines the camera the input is attached to.

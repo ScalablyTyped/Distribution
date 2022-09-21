@@ -22,6 +22,6 @@ object StopDataCollectionByAgentIdsRequest {
     
     inline def setAgentIds(value: AgentIds): Self = StObject.set(x, "agentIds", value.asInstanceOf[js.Any])
     
-    inline def setAgentIdsVarargs(value: AgentId*): Self = StObject.set(x, "agentIds", js.Array(value :_*))
+    inline def setAgentIdsVarargs(value: AgentId*): Self = StObject.set(x, "agentIds", js.Array(value*))
   }
 }

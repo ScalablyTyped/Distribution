@@ -10,10 +10,10 @@ React components for efficiently rendering large, scrollable lists and tabular d
 | ------------------ | :-------------: |
 | Full name          | react-window |
 | Keywords           | react, reactjs, virtual, window, windowed, list, scrolling, infinite, virtualized, table, grid, spreadsheet |
-| # releases         | 28 |
-| # dependents       | 257 |
-| # downloads        | 14915740 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4670083.666666667 |
+| # stars            | 12690.0 |
 
 ## Links
 - [Homepage](http://react-window.now.sh/)

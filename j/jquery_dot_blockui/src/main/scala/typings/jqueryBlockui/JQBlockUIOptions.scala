@@ -35,7 +35,7 @@ trait JQBlockUIOptions extends StObject {
     * these and use an external stylesheet then do this in your code: 
     * $.blockUI.defaults.css = {}; 
     */
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   /** style to replace wait cursor before unblocking to correct issue of lingering wait cursor */
   var cursorReset: js.UndefOr[String] = js.undefined
@@ -56,7 +56,7 @@ trait JQBlockUIOptions extends StObject {
   var forceIframe: js.UndefOr[Boolean] = js.undefined
   
   /** styles applied when using $.growlUI */
-  var growlCSS: js.UndefOr[js.Any] = js.undefined
+  var growlCSS: js.UndefOr[Any] = js.undefined
   
   /** ifreamSrc for IE */
   var iframeSrc: js.UndefOr[String] = js.undefined
@@ -65,7 +65,7 @@ trait JQBlockUIOptions extends StObject {
   var ignoreIfBlocked: js.UndefOr[Boolean] = js.undefined
   
   /** message displayed when blocking (use null for no message) */
-  var message: js.UndefOr[js.Any] = js.undefined
+  var message: js.UndefOr[Any] = js.undefined
   
   /** callback method invoked when fadeIn has completed and blocking message is visible */
   var onBlock: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -76,10 +76,10 @@ trait JQBlockUIOptions extends StObject {
     * blocks) and the options that were passed to the unblock call: 
     * onUnblock(element, options) 
     */
-  var onUnblock: js.UndefOr[js.Function2[/* element */ js.Any, /* options */ js.Any, Unit]] = js.undefined
+  var onUnblock: js.UndefOr[js.Function2[/* element */ Any, /* options */ Any, Unit]] = js.undefined
   
   /** styles for the overlay */
-  var overlayCSS: js.UndefOr[js.Any] = js.undefined
+  var overlayCSS: js.UndefOr[Any] = js.undefined
   
   // don't ask; if you really must know: http://groups.google.com/group/jquery-en/browse_thread/thread/36640a8730503595/2f6a79a77a78e493#2f6a79a77a78e493 
   /** quirksmodeOffsetHack */
@@ -92,7 +92,7 @@ trait JQBlockUIOptions extends StObject {
   var theme: js.UndefOr[Boolean] = js.undefined
   
   /** minimal style set used when themes are used  */
-  var themedCSS: js.UndefOr[js.Any] = js.undefined
+  var themedCSS: js.UndefOr[Any] = js.undefined
   
   /** time in millis to wait before auto-unblocking; set to 0 to disable auto-unblock */
   var timeout: js.UndefOr[Double] = js.undefined
@@ -137,7 +137,7 @@ object JQBlockUIOptions {
     
     inline def setConstrainTabKeyUndefined: Self = StObject.set(x, "constrainTabKey", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -165,7 +165,7 @@ object JQBlockUIOptions {
     
     inline def setForceIframeUndefined: Self = StObject.set(x, "forceIframe", js.undefined)
     
-    inline def setGrowlCSS(value: js.Any): Self = StObject.set(x, "growlCSS", value.asInstanceOf[js.Any])
+    inline def setGrowlCSS(value: Any): Self = StObject.set(x, "growlCSS", value.asInstanceOf[js.Any])
     
     inline def setGrowlCSSUndefined: Self = StObject.set(x, "growlCSS", js.undefined)
     
@@ -177,7 +177,7 @@ object JQBlockUIOptions {
     
     inline def setIgnoreIfBlockedUndefined: Self = StObject.set(x, "ignoreIfBlocked", js.undefined)
     
-    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
@@ -185,11 +185,11 @@ object JQBlockUIOptions {
     
     inline def setOnBlockUndefined: Self = StObject.set(x, "onBlock", js.undefined)
     
-    inline def setOnUnblock(value: (/* element */ js.Any, /* options */ js.Any) => Unit): Self = StObject.set(x, "onUnblock", js.Any.fromFunction2(value))
+    inline def setOnUnblock(value: (/* element */ Any, /* options */ Any) => Unit): Self = StObject.set(x, "onUnblock", js.Any.fromFunction2(value))
     
     inline def setOnUnblockUndefined: Self = StObject.set(x, "onUnblock", js.undefined)
     
-    inline def setOverlayCSS(value: js.Any): Self = StObject.set(x, "overlayCSS", value.asInstanceOf[js.Any])
+    inline def setOverlayCSS(value: Any): Self = StObject.set(x, "overlayCSS", value.asInstanceOf[js.Any])
     
     inline def setOverlayCSSUndefined: Self = StObject.set(x, "overlayCSS", js.undefined)
     
@@ -205,7 +205,7 @@ object JQBlockUIOptions {
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    inline def setThemedCSS(value: js.Any): Self = StObject.set(x, "themedCSS", value.asInstanceOf[js.Any])
+    inline def setThemedCSS(value: Any): Self = StObject.set(x, "themedCSS", value.asInstanceOf[js.Any])
     
     inline def setThemedCSSUndefined: Self = StObject.set(x, "themedCSS", js.undefined)
     

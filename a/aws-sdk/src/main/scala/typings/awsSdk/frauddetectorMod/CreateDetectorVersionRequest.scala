@@ -60,13 +60,13 @@ object CreateDetectorVersionRequest {
     
     inline def setExternalModelEndpointsUndefined: Self = StObject.set(x, "externalModelEndpoints", js.undefined)
     
-    inline def setExternalModelEndpointsVarargs(value: String*): Self = StObject.set(x, "externalModelEndpoints", js.Array(value :_*))
+    inline def setExternalModelEndpointsVarargs(value: String*): Self = StObject.set(x, "externalModelEndpoints", js.Array(value*))
     
     inline def setModelVersions(value: ListOfModelVersions): Self = StObject.set(x, "modelVersions", value.asInstanceOf[js.Any])
     
     inline def setModelVersionsUndefined: Self = StObject.set(x, "modelVersions", js.undefined)
     
-    inline def setModelVersionsVarargs(value: ModelVersion*): Self = StObject.set(x, "modelVersions", js.Array(value :_*))
+    inline def setModelVersionsVarargs(value: ModelVersion*): Self = StObject.set(x, "modelVersions", js.Array(value*))
     
     inline def setRuleExecutionMode(value: RuleExecutionMode): Self = StObject.set(x, "ruleExecutionMode", value.asInstanceOf[js.Any])
     
@@ -74,12 +74,12 @@ object CreateDetectorVersionRequest {
     
     inline def setRules(value: RuleList): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
     
     inline def setTags(value: tagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

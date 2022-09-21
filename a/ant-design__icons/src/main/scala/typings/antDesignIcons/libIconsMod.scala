@@ -1596,6 +1596,10 @@ object libIconsMod {
   @js.native
   val HistoryOutlined: ForwardRefExoticComponent[PickAntdIconPropsmaxrequi] = js.native
   
+  @JSImport("@ant-design/icons/lib/icons", "HolderOutlined")
+  @js.native
+  val HolderOutlined: ForwardRefExoticComponent[PickAntdIconPropsmaxrequi] = js.native
+  
   @JSImport("@ant-design/icons/lib/icons", "HomeFilled")
   @js.native
   val HomeFilled: ForwardRefExoticComponent[PickAntdIconPropsmaxrequi] = js.native

@@ -18,7 +18,7 @@ trait SearchBellmanFordOptions extends StObject {
   /**
     * The root node (selector or collection) where the search starts.
     */
-  var root: js.Any
+  var root: Any
   
   /**
     * A function that returns the positive numeric weight for this edge.
@@ -27,7 +27,7 @@ trait SearchBellmanFordOptions extends StObject {
 }
 object SearchBellmanFordOptions {
   
-  inline def apply(directed: Boolean, root: js.Any): SearchBellmanFordOptions = {
+  inline def apply(directed: Boolean, root: Any): SearchBellmanFordOptions = {
     val __obj = js.Dynamic.literal(directed = directed.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBellmanFordOptions]
   }
@@ -36,7 +36,7 @@ object SearchBellmanFordOptions {
     
     inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
-    inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     inline def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
     

@@ -10,10 +10,10 @@ Smooth Scroll behavior polyfill
 | ------------------ | :-------------: |
 | Full name          | smoothscroll-polyfill |
 | Keywords           | smooth, scroll, CSSOM, polyfill |
-| # releases         | 2 |
-| # dependents       | 193 |
-| # downloads        | 21084770 |
-| # stars            | 16 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3285890.0 |
+| # stars            | 3738.0 |
 
 ## Links
 - [Homepage](https://github.com/iamdustan/smoothscroll#readme)

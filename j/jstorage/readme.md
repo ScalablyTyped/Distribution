@@ -10,10 +10,10 @@ jStorage is a cross-browser key-value store database to store data locally in th
 | ------------------ | :-------------: |
 | Full name          | jstorage |
 | Keywords           | key |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 61725 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2840.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/jstorage)

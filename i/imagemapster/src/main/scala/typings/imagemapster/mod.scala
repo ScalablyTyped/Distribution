@@ -213,7 +213,7 @@ object mod {
         /**
           * array of areas that make up this group
           */
-        var area: js.Array[js.Any]
+        var area: js.Array[Any]
         
         /**
           * primary mapKey for this area or area group
@@ -229,16 +229,16 @@ object mod {
       }
       object OnGetListData {
         
-        inline def apply(area: js.Array[js.Any], key: String, options: AreaRenderingOptions, value: String): OnGetListData = {
+        inline def apply(area: js.Array[Any], key: String, options: AreaRenderingOptions, value: String): OnGetListData = {
           val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
           __obj.asInstanceOf[OnGetListData]
         }
         
         extension [Self <: OnGetListData](x: Self) {
           
-          inline def setArea(value: js.Array[js.Any]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+          inline def setArea(value: js.Array[Any]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
           
-          inline def setAreaVarargs(value: js.Any*): Self = StObject.set(x, "area", js.Array(value :_*))
+          inline def setAreaVarargs(value: Any*): Self = StObject.set(x, "area", js.Array(value*))
           
           inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
@@ -732,7 +732,7 @@ object mod {
           
           inline def setAreasUndefined: Self = StObject.set(x, "areas", js.undefined)
           
-          inline def setAreasVarargs(value: AreaRenderingOptions*): Self = StObject.set(x, "areas", js.Array(value :_*))
+          inline def setAreasVarargs(value: AreaRenderingOptions*): Self = StObject.set(x, "areas", js.Array(value*))
           
           inline def setBoundList(value: JQuery): Self = StObject.set(x, "boundList", value.asInstanceOf[js.Any])
           
@@ -818,7 +818,7 @@ object mod {
           
           inline def setToolTipCloseUndefined: Self = StObject.set(x, "toolTipClose", js.undefined)
           
-          inline def setToolTipCloseVarargs(value: ToolTipCloseEvent*): Self = StObject.set(x, "toolTipClose", js.Array(value :_*))
+          inline def setToolTipCloseVarargs(value: ToolTipCloseEvent*): Self = StObject.set(x, "toolTipClose", js.Array(value*))
           
           inline def setToolTipContainer(value: String | JQuery): Self = StObject.set(x, "toolTipContainer", value.asInstanceOf[js.Any])
           

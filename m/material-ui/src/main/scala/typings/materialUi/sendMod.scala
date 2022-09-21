@@ -10,10 +10,10 @@ object sendMod {
   
   @JSImport("material-ui/svg-icons/content/send", JSImport.Default)
   @js.native
-  class default () extends ContentSend
+  open class default () extends ContentSend
   
   @JSImport("material-ui/svg-icons/content/send", "ContentSend")
   @js.native
-  class ContentSend ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentSend ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

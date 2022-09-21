@@ -3,24 +3,6 @@
 
 Typings are for version 1.1.3
 
-## Library description:
-Packer, 3D-Bin-Packing with multiple Boxes.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | 3d-bin-packing |
-| Keywords           | packer, 3d bin packing, 3d bin packing with multiple boxes, boxing optimization |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2943 |
-| # stars            | 2 |
-
-## Links
-- [Homepage](https://github.com/betterwaysystems/packer#readme)
-- [Bugs](https://github.com/betterwaysystems/packer/issues)
-- [Repository](https://github.com/betterwaysystems/packer)
-- [Npm](https://www.npmjs.com/package/3d-bin-packing)
-    
 
 
 ## Note

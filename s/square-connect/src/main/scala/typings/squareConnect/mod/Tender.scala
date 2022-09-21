@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Tender")
 @js.native
-class Tender () extends StObject {
+open class Tender () extends StObject {
   
   /**
     * Additional recipients (other than the merchant) receiving a portion of this tender.

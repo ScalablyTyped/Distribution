@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OriginRequestPolicyConfig extends StObject {
   
   /**
-    * A comment to describe the origin request policy.
+    * A comment to describe the origin request policy. The comment cannot be longer than 128 characters.
     */
   var Comment: js.UndefOr[String] = js.undefined
   

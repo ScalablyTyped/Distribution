@@ -60,7 +60,7 @@ object AllowBrowserExecution {
     
     inline def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
     
-    inline def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+    inline def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value*))
     
     inline def setDisplayAll(value: Boolean): Self = StObject.set(x, "displayAll", value.asInstanceOf[js.Any])
     

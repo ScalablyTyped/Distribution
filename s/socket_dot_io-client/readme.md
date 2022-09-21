@@ -1,19 +1,19 @@
 
 # Scala.js typings for socket_dot_io-client
 
-Typings are for version 1.4.5
+Typings are for version 4.5.2
 
 ## Library description:
-[![Build Status](https://github.com/socketio/socket.io-client/workflows/CI/badge.svg?branch=master)](https://github.com/socketio/socket.io-client/actions) [![Dependency Status](https://david-dm.org/socketio/socket.io-client.svg)](https://david-dm.org/sock
+Realtime application framework client
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | socket.io-client |
 | Keywords           | realtime, framework, websocket, tcp, events, client |
-| # releases         | 14 |
-| # dependents       | 3962 |
-| # downloads        | 234602659 |
-| # stars            | 111 |
+| # releases         | 32 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8070387E7 |
+| # stars            | 9908.0 |
 
 ## Links
 - [Homepage](https://github.com/socketio/socket.io-client#readme)
@@ -24,7 +24,7 @@ Typings are for version 1.4.5
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

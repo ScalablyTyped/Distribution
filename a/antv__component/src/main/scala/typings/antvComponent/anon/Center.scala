@@ -12,15 +12,15 @@ trait Center extends StObject {
   
   var capture: Boolean
   
-  var center: js.Any
+  var center: Any
   
-  var container: js.Any
+  var container: Any
   
   var endAngle: Double
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -56,11 +56,11 @@ object Center {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    center: js.Any,
-    container: js.Any,
+    center: Any,
+    container: Any,
     endAngle: Double,
-    events: js.Any,
-    group: js.Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -89,15 +89,15 @@ object Center {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setCenter(value: js.Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -14,11 +14,11 @@ trait FieldDetailsForTestResults extends StObject {
   /**
     * Group by field values
     */
-  var groupsForField: js.Array[js.Any]
+  var groupsForField: js.Array[Any]
 }
 object FieldDetailsForTestResults {
   
-  inline def apply(fieldName: String, groupsForField: js.Array[js.Any]): FieldDetailsForTestResults = {
+  inline def apply(fieldName: String, groupsForField: js.Array[Any]): FieldDetailsForTestResults = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], groupsForField = groupsForField.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldDetailsForTestResults]
   }
@@ -27,8 +27,8 @@ object FieldDetailsForTestResults {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    inline def setGroupsForField(value: js.Array[js.Any]): Self = StObject.set(x, "groupsForField", value.asInstanceOf[js.Any])
+    inline def setGroupsForField(value: js.Array[Any]): Self = StObject.set(x, "groupsForField", value.asInstanceOf[js.Any])
     
-    inline def setGroupsForFieldVarargs(value: js.Any*): Self = StObject.set(x, "groupsForField", js.Array(value :_*))
+    inline def setGroupsForFieldVarargs(value: Any*): Self = StObject.set(x, "groupsForField", js.Array(value*))
   }
 }

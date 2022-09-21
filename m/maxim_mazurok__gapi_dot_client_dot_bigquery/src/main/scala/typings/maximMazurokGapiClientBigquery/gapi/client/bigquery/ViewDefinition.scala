@@ -10,6 +10,12 @@ trait ViewDefinition extends StObject {
   var query: js.UndefOr[String] = js.undefined
   
   /**
+    * True if the column names are explicitly specified. For example by using the 'CREATE VIEW v(c1, c2) AS ...' syntax. Can only be set using BigQuery's standard SQL:
+    * https://cloud.google.com/bigquery/sql-reference/
+    */
+  var useExplicitColumnNames: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Specifies whether to use BigQuery's legacy SQL for this view. The default value is true. If set to false, the view will use BigQuery's standard SQL:
     * https://cloud.google.com/bigquery/sql-reference/ Queries and views that reference this view must use the same flag value.
     */
@@ -31,6 +37,10 @@ object ViewDefinition {
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
+    inline def setUseExplicitColumnNames(value: Boolean): Self = StObject.set(x, "useExplicitColumnNames", value.asInstanceOf[js.Any])
+    
+    inline def setUseExplicitColumnNamesUndefined: Self = StObject.set(x, "useExplicitColumnNames", js.undefined)
+    
     inline def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
     
     inline def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
@@ -39,6 +49,6 @@ object ViewDefinition {
     
     inline def setUserDefinedFunctionResourcesUndefined: Self = StObject.set(x, "userDefinedFunctionResources", js.undefined)
     
-    inline def setUserDefinedFunctionResourcesVarargs(value: UserDefinedFunctionResource*): Self = StObject.set(x, "userDefinedFunctionResources", js.Array(value :_*))
+    inline def setUserDefinedFunctionResourcesVarargs(value: UserDefinedFunctionResource*): Self = StObject.set(x, "userDefinedFunctionResources", js.Array(value*))
   }
 }

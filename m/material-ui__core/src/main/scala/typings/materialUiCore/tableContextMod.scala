@@ -2,6 +2,7 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.tableTableMod.Padding
+import typings.materialUiCore.tableTableMod.Size
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,17 +17,21 @@ object tableContextMod extends Shortcut {
   trait TableContextProps extends StObject {
     
     var padding: Padding
+    
+    var size: Size
   }
   object TableContextProps {
     
-    inline def apply(padding: Padding): TableContextProps = {
-      val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any])
+    inline def apply(padding: Padding, size: Size): TableContextProps = {
+      val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableContextProps]
     }
     
     extension [Self <: TableContextProps](x: Self) {
       
       inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   

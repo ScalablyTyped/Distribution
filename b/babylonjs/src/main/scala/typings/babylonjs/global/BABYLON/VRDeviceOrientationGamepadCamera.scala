@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.VRDeviceOrientationGamepadCamera")
 @js.native
-class VRDeviceOrientationGamepadCamera protected ()
+open class VRDeviceOrientationGamepadCamera protected ()
   extends StObject
      with typings.babylonjs.BABYLON.VRDeviceOrientationGamepadCamera {
   /**
@@ -16,15 +16,36 @@ class VRDeviceOrientationGamepadCamera protected ()
     * @param name defines camera name
     * @param position defines the start position of the camera
     * @param scene defines the scene the camera belongs to
-    * @param compensateDistortion defines if the camera needs to compensate the lens distorsion
+    * @param compensateDistortion defines if the camera needs to compensate the lens distortion
     * @param vrCameraMetrics defines the vr metrics associated to the camera
     */
+  def this(name: String, position: typings.babylonjs.BABYLON.Vector3) = this()
   def this(name: String, position: typings.babylonjs.BABYLON.Vector3, scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(
+    name: String,
+    position: typings.babylonjs.BABYLON.Vector3,
+    scene: Unit,
+    compensateDistortion: Boolean
+  ) = this()
   def this(
     name: String,
     position: typings.babylonjs.BABYLON.Vector3,
     scene: typings.babylonjs.BABYLON.Scene,
     compensateDistortion: Boolean
+  ) = this()
+  def this(
+    name: String,
+    position: typings.babylonjs.BABYLON.Vector3,
+    scene: Unit,
+    compensateDistortion: Boolean,
+    vrCameraMetrics: typings.babylonjs.BABYLON.VRCameraMetrics
+  ) = this()
+  def this(
+    name: String,
+    position: typings.babylonjs.BABYLON.Vector3,
+    scene: Unit,
+    compensateDistortion: Unit,
+    vrCameraMetrics: typings.babylonjs.BABYLON.VRCameraMetrics
   ) = this()
   def this(
     name: String,

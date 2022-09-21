@@ -48,7 +48,7 @@ object mod {
     
     @JSImport("rsvp", "default.EventTarget")
     @js.native
-    class EventTarget ()
+    open class EventTarget ()
       extends StObject
          with typings.rsvp.mod.RSVP.EventTarget
     object EventTarget {
@@ -69,23 +69,19 @@ object mod {
         */
       /* static member */
       inline def off(eventName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      inline def off(eventName: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      
-      /* static member */
-      inline def on(eventName: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      
-      inline def on_chained(eventName: chained, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def off(eventName: String, callback: js.Function1[/* value */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /** Registers a callback to be executed when `eventName` is triggered */
       /* static member */
-      inline def on_created(eventName: created, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def on(
+        eventName: created | chained | fulfilled | rejected,
+        listener: js.Function1[/* event */ InstrumentEvent, Unit]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      /* static member */
+      inline def on(eventName: String, callback: js.Function1[/* value */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      inline def on_error(eventName: error, errorHandler: js.Function1[/* reason */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      
-      inline def on_fulfilled(eventName: fulfilled, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      
-      inline def on_rejected(eventName: rejected, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def on_error(eventName: error, errorHandler: js.Function1[/* reason */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Use `trigger` to fire custom events.
@@ -95,33 +91,33 @@ object mod {
         */
       /* static member */
       inline def trigger(eventName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      inline def trigger(eventName: String, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def trigger(eventName: String, options: js.Any, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def trigger(eventName: String, options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def trigger(eventName: String, options: Any, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def trigger(eventName: String, options: Unit, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     @JSImport("rsvp", "default.Promise")
     @js.native
-    class Promise[T] protected ()
+    open class Promise[T] protected ()
       extends StObject
          with typings.rsvp.mod.RSVP.Promise[T]
          with Instantiable1[
               /* executor */ js.Function2[
                 /* resolve */ js.Function1[/* value */ js.UndefOr[Arg[js.Object]], Unit], 
-                /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+                /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
                 Unit
               ], 
               typings.rsvp.mod.RSVP.Promise[js.Object]
             ] {
       def this(executor: js.Function2[
                 /* resolve */ js.Function1[/* value */ js.UndefOr[Arg[T]], Unit], 
-                /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+                /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
                 Unit
               ]) = this()
       def this(
         executor: js.Function2[
                 /* resolve */ js.Function1[/* value */ js.UndefOr[Arg[T]], Unit], 
-                /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+                /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
                 Unit
               ],
         label: String
@@ -252,8 +248,8 @@ object mod {
       
       /* static member */
       inline def reject(): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")().asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
-      inline def reject(reason: js.Any): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
-      inline def reject(reason: js.Any, label: String): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
+      inline def reject(reason: Any): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
+      inline def reject(reason: Any, label: String): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
       inline def reject(reason: Unit, label: String): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
       
       /* static member */
@@ -643,67 +639,59 @@ object mod {
     inline def defer[T](label: String): Deferred[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(label.asInstanceOf[js.Any]).asInstanceOf[Deferred[T]]
     
     inline def denodeify[T, A](
-      nodeFunc: js.Function2[
-          /* arg1 */ A, 
-          /* callback */ js.Function2[/* err */ js.Any, /* data */ T, Unit], 
-          Unit
-        ]
+      nodeFunc: js.Function2[/* arg1 */ A, /* callback */ js.Function2[/* err */ Any, /* data */ T, Unit], Unit]
     ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T]]]
     inline def denodeify[T, A, K1 /* <: String */](
-      nodeFunc: js.Function2[
-          /* arg1 */ A, 
-          /* callback */ js.Function2[/* err */ js.Any, /* data */ T, Unit], 
-          Unit
-        ],
+      nodeFunc: js.Function2[/* arg1 */ A, /* callback */ js.Function2[/* err */ Any, /* data */ T, Unit], Unit],
       options: js.Array[K1]
     ): js.Function1[
         /* arg1 */ A, 
         typings.rsvp.mod.RSVP.Promise[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in K1 ]: T}
-      */ typings.rsvp.rsvpStrings.denodeify & TopLevel[js.Any]
+      */ typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]
         ]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
         /* arg1 */ A, 
         typings.rsvp.mod.RSVP.Promise[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in K1 ]: T}
-      */ typings.rsvp.rsvpStrings.denodeify & TopLevel[js.Any]
+      */ typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]
         ]
       ]]
     inline def denodeify[T1, T2, A, K1 /* <: String */, K2 /* <: String */](
       nodeFunc: js.Function2[
           /* arg1 */ A, 
-          /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, Unit], 
+          /* callback */ js.Function3[/* err */ Any, /* data1 */ T1, /* data2 */ T2, Unit], 
           Unit
         ],
       options: js.Tuple2[K1, K2]
     ): js.Function1[
         /* arg1 */ A, 
-        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[js.Any]]
+        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
         /* arg1 */ A, 
-        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[js.Any]]
+        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]]
       ]]
     inline def denodeify[T1, T2, T3, A, K1 /* <: String */, K2 /* <: String */, K3 /* <: String */](
       nodeFunc: js.Function2[
           /* arg1 */ A, 
-          /* callback */ js.Function4[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
+          /* callback */ js.Function4[/* err */ Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
           Unit
         ],
       options: js.Tuple3[K1, K2, K3]
     ): js.Function1[
         /* arg1 */ A, 
-        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[js.Any]]
+        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
         /* arg1 */ A, 
-        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[js.Any]]
+        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]]
       ]]
     
     inline def denodeify_T1T2A[T1, T2, A](
       nodeFunc: js.Function2[
           /* arg1 */ A, 
-          /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, Unit], 
+          /* callback */ js.Function3[/* err */ Any, /* data1 */ T1, /* data2 */ T2, Unit], 
           Unit
         ]
     ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T1]]]
@@ -720,24 +708,20 @@ object mod {
     inline def denodeify_T1T2T3A[T1, T2, T3, A](
       nodeFunc: js.Function2[
           /* arg1 */ A, 
-          /* callback */ js.Function4[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
+          /* callback */ js.Function4[/* err */ Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
           Unit
         ]
     ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T1]]]
     
     inline def denodeify_false[T, A](
-      nodeFunc: js.Function2[
-          /* arg1 */ A, 
-          /* callback */ js.Function2[/* err */ js.Any, /* data */ T, Unit], 
-          Unit
-        ],
+      nodeFunc: js.Function2[/* arg1 */ A, /* callback */ js.Function2[/* err */ Any, /* data */ T, Unit], Unit],
       options: `false`
     ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T]]]
     
     inline def denodeify_false_T1T2A[T1, T2, A](
       nodeFunc: js.Function2[
           /* arg1 */ A, 
-          /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, Unit], 
+          /* callback */ js.Function3[/* err */ Any, /* data1 */ T1, /* data2 */ T2, Unit], 
           Unit
         ],
       options: `false`
@@ -746,25 +730,21 @@ object mod {
     inline def denodeify_false_T1T2T3A[T1, T2, T3, A](
       nodeFunc: js.Function2[
           /* arg1 */ A, 
-          /* callback */ js.Function4[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
+          /* callback */ js.Function4[/* err */ Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
           Unit
         ],
       options: `false`
     ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T1]]]
     
     inline def denodeify_true[T, A](
-      nodeFunc: js.Function2[
-          /* arg1 */ A, 
-          /* callback */ js.Function2[/* err */ js.Any, /* data */ T, Unit], 
-          Unit
-        ],
+      nodeFunc: js.Function2[/* arg1 */ A, /* callback */ js.Function2[/* err */ Any, /* data */ T, Unit], Unit],
       options: `true`
     ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[js.Array[T]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[js.Array[T]]]]
     
     inline def denodeify_true_T1T2A[T1, T2, A](
       nodeFunc: js.Function2[
           /* arg1 */ A, 
-          /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, Unit], 
+          /* callback */ js.Function3[/* err */ Any, /* data1 */ T1, /* data2 */ T2, Unit], 
           Unit
         ],
       options: `true`
@@ -773,7 +753,7 @@ object mod {
     inline def denodeify_true_T1T2T3A[T1, T2, T3, A](
       nodeFunc: js.Function2[
           /* arg1 */ A, 
-          /* callback */ js.Function4[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
+          /* callback */ js.Function4[/* err */ Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
           Unit
         ],
       options: `true`
@@ -984,26 +964,22 @@ object mod {
     /* static member */
     /* was `typeof EventTarget.off` */
     inline def off(eventName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def off(eventName: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    /* static member */
-    /* was `typeof EventTarget.on` */
-    inline def on(eventName: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def on_chained(eventName: chained, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def off(eventName: String, callback: js.Function1[/* value */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Registers a callback to be executed when `eventName` is triggered */
     /* static member */
     /* was `typeof EventTarget.on` */
-    inline def on_created(eventName: created, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def on(
+      eventName: created | chained | fulfilled | rejected,
+      listener: js.Function1[/* event */ InstrumentEvent, Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /* static member */
+    /* was `typeof EventTarget.on` */
+    inline def on(eventName: String, callback: js.Function1[/* value */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     /* was `typeof EventTarget.on` */
-    inline def on_error(eventName: error, errorHandler: js.Function1[/* reason */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def on_fulfilled(eventName: fulfilled, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def on_rejected(eventName: rejected, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def on_error(eventName: error, errorHandler: js.Function1[/* reason */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     /* was `typeof Promise.race` */
@@ -1082,8 +1058,8 @@ object mod {
     /* static member */
     /* was `typeof Promise.reject` */
     inline def reject(): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")().asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
-    inline def reject(reason: js.Any): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
-    inline def reject(reason: js.Any, label: String): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
+    inline def reject(reason: Any): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
+    inline def reject(reason: Any, label: String): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
     inline def reject(reason: Unit, label: String): typings.rsvp.mod.RSVP.Promise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[scala.Nothing]]
     
     /* static member */
@@ -1097,7 +1073,7 @@ object mod {
     /* was `typeof Promise.resolve` */
     inline def resolve_T[T](): typings.rsvp.mod.RSVP.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[typings.rsvp.mod.RSVP.Promise[T]]
     
-    inline def rethrow(reason: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rethrow")(reason.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def rethrow(reason: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rethrow")(reason.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("rsvp", "EventTarget")
@@ -1108,7 +1084,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rsvp", "EventTarget")
   @js.native
-  class EventTargetCls ()
+  open class EventTargetCls ()
     extends StObject
        with typings.rsvp.mod.RSVP.EventTarget
   
@@ -1117,10 +1093,10 @@ object mod {
   val Promise: TypeofPromise & (Instantiable2[
     /* executor */ js.Function2[
       /* resolve */ js.Function1[
-        /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]], 
+        /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls was tparam T */ Any]], 
         Unit
       ], 
-      /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+      /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
       Unit
     ], 
     /* label */ js.UndefOr[String], 
@@ -1131,24 +1107,24 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rsvp", "Promise")
   @js.native
-  class PromiseCls[T] protected ()
+  open class PromiseCls[T] protected ()
     extends StObject
        with typings.rsvp.mod.RSVP.Promise[T] {
     def this(executor: js.Function2[
             /* resolve */ js.Function1[
-              /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]], 
+              /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls was tparam T */ Any]], 
               Unit
             ], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ]) = this()
     def this(
       executor: js.Function2[
             /* resolve */ js.Function1[
-              /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]], 
+              /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls was tparam T */ Any]], 
               Unit
             ], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ],
       label: String
@@ -1192,7 +1168,7 @@ object mod {
       var promise: typings.rsvp.mod.RSVP.Promise[T] = js.native
       
       def reject(): Unit = js.native
-      def reject(reason: js.Any): Unit = js.native
+      def reject(reason: Any): Unit = js.native
       
       def resolve(): Unit = js.native
       def resolve(value: Arg[T]): Unit = js.native
@@ -1206,7 +1182,7 @@ object mod {
       var childGuid: String
       
       // one of ['created', 'chained', 'fulfilled', 'rejected']
-      var detail: js.Any
+      var detail: Any
       
       // child of child promise (for chained via `then`)
       var eventName: String
@@ -1221,14 +1197,7 @@ object mod {
     }
     object InstrumentEvent {
       
-      inline def apply(
-        childGuid: String,
-        detail: js.Any,
-        eventName: String,
-        guid: String,
-        label: String,
-        timeStamp: Double
-      ): InstrumentEvent = {
+      inline def apply(childGuid: String, detail: Any, eventName: String, guid: String, label: String, timeStamp: Double): InstrumentEvent = {
         val __obj = js.Dynamic.literal(childGuid = childGuid.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
         __obj.asInstanceOf[InstrumentEvent]
       }
@@ -1237,7 +1206,7 @@ object mod {
         
         inline def setChildGuid(value: String): Self = StObject.set(x, "childGuid", value.asInstanceOf[js.Any])
         
-        inline def setDetail(value: js.Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+        inline def setDetail(value: Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
         
         inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
         
@@ -1253,29 +1222,25 @@ object mod {
     trait ObjectWithEventMixins extends StObject {
       
       def off(eventName: String): Unit = js.native
-      def off(eventName: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+      def off(eventName: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
       
-      def on(eventName: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+      def on(
+        eventName: created | chained | fulfilled | rejected,
+        listener: js.Function1[/* event */ InstrumentEvent, Unit]
+      ): Unit = js.native
+      def on(eventName: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
       @JSName("on")
-      def on_chained(eventName: chained, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = js.native
-      @JSName("on")
-      def on_created(eventName: created, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = js.native
-      @JSName("on")
-      def on_error(eventName: error, errorHandler: js.Function1[/* reason */ js.Any, Unit]): Unit = js.native
-      @JSName("on")
-      def on_fulfilled(eventName: fulfilled, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = js.native
-      @JSName("on")
-      def on_rejected(eventName: rejected, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = js.native
+      def on_error(eventName: error, errorHandler: js.Function1[/* reason */ Any, Unit]): Unit = js.native
       
       def trigger(eventName: String): Unit = js.native
-      def trigger(eventName: String, options: js.Any): Unit = js.native
-      def trigger(eventName: String, options: js.Any, label: String): Unit = js.native
+      def trigger(eventName: String, options: Any): Unit = js.native
+      def trigger(eventName: String, options: Any, label: String): Unit = js.native
       def trigger(eventName: String, options: Unit, label: String): Unit = js.native
     }
     
     trait Pending
       extends StObject
-         with _PromiseState[js.Any] {
+         with _PromiseState[Any] {
       
       var state: pending
     }
@@ -1298,8 +1263,8 @@ object mod {
          with PromiseLike[T] {
       
       def `catch`[TResult](): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
-      def `catch`[TResult](onRejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
-      def `catch`[TResult](onRejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]], label: String): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
+      def `catch`[TResult](onRejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
+      def `catch`[TResult](onRejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]], label: String): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
       def `catch`[TResult](onRejected: Null, label: String): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
       def `catch`[TResult](onRejected: Unit, label: String): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
       
@@ -1309,7 +1274,7 @@ object mod {
       
       def `then`[TResult1, TResult2](
         onFulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-        onRejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]],
+        onRejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]],
         label: String
       ): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
@@ -1324,14 +1289,14 @@ object mod {
       ): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
         onFulfilled: Null,
-        onRejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]],
+        onRejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]],
         label: String
       ): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](onFulfilled: Null, onRejected: Null, label: String): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](onFulfilled: Null, onRejected: Unit, label: String): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
         onFulfilled: Unit,
-        onRejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]],
+        onRejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]],
         label: String
       ): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](onFulfilled: Unit, onRejected: Null, label: String): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
@@ -1343,10 +1308,10 @@ object mod {
     
     /* Rewritten from type alias, can be one of: 
       - typings.rsvp.mod.RSVP.Resolved[T]
-      - typings.rsvp.mod.RSVP.Rejected[js.Any]
+      - typings.rsvp.mod.RSVP.Rejected[scala.Any]
       - typings.rsvp.mod.RSVP.Pending
     */
-    type PromiseState[T] = _PromiseState[T] | Rejected[js.Any]
+    type PromiseState[T] = _PromiseState[T] | Rejected[Any]
     
     trait Rejected[T] extends StObject {
       
@@ -1723,90 +1688,74 @@ object mod {
   inline def defer[T](label: String): Deferred[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(label.asInstanceOf[js.Any]).asInstanceOf[Deferred[T]]
   
   inline def denodeify[T, A](
-    nodeFunc: js.Function2[
-      /* arg1 */ A, 
-      /* callback */ js.Function2[/* err */ js.Any, /* data */ T, Unit], 
-      Unit
-    ]
+    nodeFunc: js.Function2[/* arg1 */ A, /* callback */ js.Function2[/* err */ Any, /* data */ T, Unit], Unit]
   ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T]]]
   inline def denodeify[T, A](
-    nodeFunc: js.Function2[
-      /* arg1 */ A, 
-      /* callback */ js.Function2[/* err */ js.Any, /* data */ T, Unit], 
-      Unit
-    ],
+    nodeFunc: js.Function2[/* arg1 */ A, /* callback */ js.Function2[/* err */ Any, /* data */ T, Unit], Unit],
     options: `false`
   ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T]]]
   inline def denodeify[T, A](
-    nodeFunc: js.Function2[
-      /* arg1 */ A, 
-      /* callback */ js.Function2[/* err */ js.Any, /* data */ T, Unit], 
-      Unit
-    ],
+    nodeFunc: js.Function2[/* arg1 */ A, /* callback */ js.Function2[/* err */ Any, /* data */ T, Unit], Unit],
     options: `true`
   ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[js.Array[T]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[js.Array[T]]]]
   inline def denodeify[T, A, K1 /* <: String */](
-    nodeFunc: js.Function2[
-      /* arg1 */ A, 
-      /* callback */ js.Function2[/* err */ js.Any, /* data */ T, Unit], 
-      Unit
-    ],
+    nodeFunc: js.Function2[/* arg1 */ A, /* callback */ js.Function2[/* err */ Any, /* data */ T, Unit], Unit],
     options: js.Array[K1]
   ): js.Function1[
     /* arg1 */ A, 
     typings.rsvp.mod.RSVP.Promise[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in K1 ]: T}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[js.Any]
+    */ typings.rsvp.rsvpStrings.apply & TopLevel[Any]
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* arg1 */ A, 
     typings.rsvp.mod.RSVP.Promise[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in K1 ]: T}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[js.Any]
+    */ typings.rsvp.rsvpStrings.apply & TopLevel[Any]
     ]
   ]]
   inline def denodeify[T1, T2, A, K1 /* <: String */, K2 /* <: String */](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
-      /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, Unit], 
+      /* callback */ js.Function3[/* err */ Any, /* data1 */ T1, /* data2 */ T2, Unit], 
       Unit
     ],
     options: js.Tuple2[K1, K2]
   ): js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[js.Any]]
+    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[Any]]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[js.Any]]
+    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[Any]]
   ]]
   inline def denodeify[T1, T2, T3, A, K1 /* <: String */, K2 /* <: String */, K3 /* <: String */](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
-      /* callback */ js.Function4[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
+      /* callback */ js.Function4[/* err */ Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
       Unit
     ],
     options: js.Tuple3[K1, K2, K3]
   ): js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[js.Any]]
+    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[Any]]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[js.Any]]
+    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[Any]]
   ]]
   
   inline def denodeify_T1T2A[T1, T2, A](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
-      /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, Unit], 
+      /* callback */ js.Function3[/* err */ Any, /* data1 */ T1, /* data2 */ T2, Unit], 
       Unit
     ]
   ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T1]]]
   inline def denodeify_T1T2A[T1, T2, A](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
-      /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, Unit], 
+      /* callback */ js.Function3[/* err */ Any, /* data1 */ T1, /* data2 */ T2, Unit], 
       Unit
     ],
     options: `false`
@@ -1814,7 +1763,7 @@ object mod {
   inline def denodeify_T1T2A[T1, T2, A](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
-      /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, Unit], 
+      /* callback */ js.Function3[/* err */ Any, /* data1 */ T1, /* data2 */ T2, Unit], 
       Unit
     ],
     options: `true`
@@ -1823,14 +1772,14 @@ object mod {
   inline def denodeify_T1T2T3A[T1, T2, T3, A](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
-      /* callback */ js.Function4[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
+      /* callback */ js.Function4[/* err */ Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
       Unit
     ]
   ): js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A, typings.rsvp.mod.RSVP.Promise[T1]]]
   inline def denodeify_T1T2T3A[T1, T2, T3, A](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
-      /* callback */ js.Function4[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
+      /* callback */ js.Function4[/* err */ Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
       Unit
     ],
     options: `false`
@@ -1838,7 +1787,7 @@ object mod {
   inline def denodeify_T1T2T3A[T1, T2, T3, A](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
-      /* callback */ js.Function4[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
+      /* callback */ js.Function4[/* err */ Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, Unit], 
       Unit
     ],
     options: `true`
@@ -2043,16 +1992,16 @@ object mod {
   @js.native
   val off: js.Function2[
     /* eventName */ String, 
-    /* callback */ js.UndefOr[js.Function1[/* value */ js.Any, Unit]], 
+    /* callback */ js.UndefOr[js.Function1[/* value */ Any, Unit]], 
     Unit
   ] = js.native
   
-  inline def on(eventName: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def on(eventName: chained, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def on(eventName: created, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def on(eventName: error, errorHandler: js.Function1[/* reason */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def on(eventName: fulfilled, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def on(eventName: rejected, listener: js.Function1[/* event */ InstrumentEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(
+    eventName: created | chained | fulfilled | rejected,
+    listener: js.Function1[/* event */ InstrumentEvent, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: String, callback: js.Function1[/* value */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(eventName: error, errorHandler: js.Function1[/* reason */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def race[T](values: js.Array[Arg[T]]): typings.rsvp.mod.RSVP.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T]]
   inline def race[T](values: js.Array[Arg[T]], label: String): typings.rsvp.mod.RSVP.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T]]
@@ -2111,7 +2060,7 @@ object mod {
   @JSImport("rsvp", "reject")
   @js.native
   val reject: js.Function2[
-    /* reason */ js.UndefOr[js.Any], 
+    /* reason */ js.UndefOr[Any], 
     /* label */ js.UndefOr[String], 
     typings.rsvp.mod.RSVP.Promise[scala.Nothing]
   ] = js.native
@@ -2125,5 +2074,5 @@ object mod {
   
   @JSImport("rsvp", "rethrow")
   @js.native
-  val rethrow: js.Function1[/* reason */ js.Any, Unit] = js.native
+  val rethrow: js.Function1[/* reason */ Any, Unit] = js.native
 }

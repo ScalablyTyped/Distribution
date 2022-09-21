@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mocha", "Test")
 @js.native
-class Test_ ()
+open class Test_ ()
   extends StObject
      with Test

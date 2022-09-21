@@ -5,50 +5,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Cloud Security Command Center&#39;s (Cloud SCC) representation of a Google
-  * Cloud Platform (GCP) resource.  The Asset is a Cloud SCC resource that
-  * captures information about a single GCP resource. All modifications to an
-  * Asset are only within the context of Cloud SCC and don&#39;t affect the
-  * referenced GCP resource.
-  */
 trait SchemaAsset extends StObject {
   
   /**
-    * The time at which the asset was created in Cloud SCC.
+    * The time at which the asset was created in Security Command Center.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The relative resource name of this asset. See:
-    * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-    * Example: &quot;organizations/123/assets/456&quot;.
+    * The relative resource name of this asset. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Example: "organizations/{organization_id\}/assets/{asset_id\}".
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Resource managed properties. These properties are managed and defined by
-    * the GCP resource and cannot be modified by the user.
+    * Resource managed properties. These properties are managed and defined by the Google Cloud resource and cannot be modified by the user.
     */
-  var resourceProperties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var resourceProperties: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
   
   /**
-    * Cloud SCC managed properties. These properties are managed by Cloud SCC
-    * and cannot be modified by the user.
+    * Security Command Center managed properties. These properties are managed by Security Command Center and cannot be modified by the user.
     */
   var securityCenterProperties: js.UndefOr[SchemaSecurityCenterProperties] = js.undefined
   
   /**
-    * User specified security marks. These marks are entirely managed by the
-    * user and come from the SecurityMarks resource that belongs to the asset.
+    * User specified security marks. These marks are entirely managed by the user and come from the SecurityMarks resource that belongs to the asset.
     */
-  var securityMarks: js.UndefOr[SchemaSecurityMarks] = js.undefined
+  var securityMarks: js.UndefOr[SchemaGoogleCloudSecuritycenterV1beta1SecurityMarks] = js.undefined
   
   /**
-    * The time at which the asset was last updated, added, or deleted in Cloud
-    * SCC.
+    * The time at which the asset was last updated, added, or deleted in Security Command Center.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAsset {
   
@@ -61,13 +48,19 @@ object SchemaAsset {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setResourceProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "resourceProperties", value.asInstanceOf[js.Any])
+    inline def setResourceProperties(value: StringDictionary[Any]): Self = StObject.set(x, "resourceProperties", value.asInstanceOf[js.Any])
+    
+    inline def setResourcePropertiesNull: Self = StObject.set(x, "resourceProperties", null)
     
     inline def setResourcePropertiesUndefined: Self = StObject.set(x, "resourceProperties", js.undefined)
     
@@ -75,11 +68,13 @@ object SchemaAsset {
     
     inline def setSecurityCenterPropertiesUndefined: Self = StObject.set(x, "securityCenterProperties", js.undefined)
     
-    inline def setSecurityMarks(value: SchemaSecurityMarks): Self = StObject.set(x, "securityMarks", value.asInstanceOf[js.Any])
+    inline def setSecurityMarks(value: SchemaGoogleCloudSecuritycenterV1beta1SecurityMarks): Self = StObject.set(x, "securityMarks", value.asInstanceOf[js.Any])
     
     inline def setSecurityMarksUndefined: Self = StObject.set(x, "securityMarks", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }

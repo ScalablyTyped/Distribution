@@ -10,61 +10,43 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Parse the HTML `<img>` [srcset](http://mobile.smashingmagazine.com/2013/08/21/webkit-implements-srcset-and-why-its-a-good-thing/) attribute.
-  	@param srcset - A srcset string.
-  	@example
-  	```
-  	import srcset = require('srcset');
-  	console.log(srcset.parse('banner-HD.jpg 2x, banner-phone.jpg 100w'));
-  	// [
-  	// 	{
-  	// 		url: 'banner-HD.jpg',
-  	// 		density: 2
-  	// 	},
-  	// 	{
-  	// 		url: 'banner-phone.jpg',
-  	// 		width: 100
-  	// 	}
-  	// ]
-  	```
-  	*/
-  inline def parse(srcset: String): js.Array[SrcSetDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(srcset.asInstanceOf[js.Any]).asInstanceOf[js.Array[SrcSetDefinition]]
+  inline def parseSrcset(srcset: String): js.Array[SrcSetDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSrcset")(srcset.asInstanceOf[js.Any]).asInstanceOf[js.Array[SrcSetDefinition]]
+  inline def parseSrcset(srcset: String, options: Options): js.Array[SrcSetDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSrcset")(srcset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[SrcSetDefinition]]
   
-  /**
-  	Stringify `SrcSetDefinition`s.
-  	@returns A srcset string.
-  	@example
-  	```
-  	import srcset = require('srcset');
-  	const stringified = srcset.stringify([
-  		{
-  			url: 'banner-HD.jpg',
-  			density: 2
-  		},
-  		{
-  			url: 'banner-phone.jpg',
-  			width: 100
-  		},
-  		{
-  			url: 'banner-phone-HD.jpg',
-  			width: 100,
-  			density: 2
-  		}
-  	]);
-  	console.log(stringified);
-  	// banner-HD.jpg 2x, banner-phone.jpg 100w, banner-phone-HD.jpg 100w 2x
-  	```
-  	*/
-  inline def stringify(srcSetDefinitions: js.Array[SrcSetDefinition]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(srcSetDefinitions.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifySrcset(srcSetDefinitions: js.Array[SrcSetDefinition]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySrcset")(srcSetDefinitions.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifySrcset(srcSetDefinitions: js.Array[SrcSetDefinition], options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifySrcset")(srcSetDefinitions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  trait Options extends StObject {
+    
+    /**
+    	When strict mode is enabled, errors will be thrown on invalid input.
+    	When disabled, a best effort will be made to handle invalid input and no errors will be thrown. The output may be invalid.
+    	@default false
+    	*/
+    val strict: js.UndefOr[Boolean] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    }
+  }
   
   trait SrcSetDefinition extends StObject {
     
-    var density: js.UndefOr[Double] = js.undefined
+    val density: js.UndefOr[Double] = js.undefined
     
-    var url: String
+    val url: String
     
-    var width: js.UndefOr[Double] = js.undefined
+    val width: js.UndefOr[Double] = js.undefined
   }
   object SrcSetDefinition {
     

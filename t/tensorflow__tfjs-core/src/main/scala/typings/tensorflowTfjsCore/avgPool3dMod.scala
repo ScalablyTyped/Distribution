@@ -26,7 +26,6 @@ object avgPool3dMod {
     strides: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     dimRoundingMode: js.UndefOr[floor | round | ceil],
-    dataFormat: js.UndefOr[NDHWC | NCDHW],
-    dilations: js.UndefOr[(js.Tuple3[Double, Double, Double]) | Double]
-  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
+    dataFormat: js.UndefOr[NDHWC | NCDHW]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
 }

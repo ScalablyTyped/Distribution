@@ -19,7 +19,7 @@ trait LoadBalancer extends StObject {
   /**
     * The date when your load balancer was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The DNS name of your Lightsail load balancer.
@@ -32,6 +32,11 @@ trait LoadBalancer extends StObject {
   var healthCheckPath: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
+    * A Boolean value that indicates whether HTTPS redirection is enabled for the load balancer.
+    */
+  var httpsRedirectionEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * An array of InstanceHealthSummary objects describing the health of the load balancer.
     */
   var instanceHealthSummary: js.UndefOr[InstanceHealthSummaryList] = js.undefined
@@ -40,6 +45,11 @@ trait LoadBalancer extends StObject {
     * The port where the load balancer will direct traffic to your Lightsail instances. For HTTP traffic, it's port 80. For HTTPS traffic, it's port 443.
     */
   var instancePort: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The IP address type of the load balancer. The possible values are ipv4 for IPv4 only, and dualstack for IPv4 and IPv6.
+    */
+  var ipAddressType: js.UndefOr[IpAddressType] = js.undefined
   
   /**
     * The AWS Region where your load balancer was created (e.g., us-east-2a). Lightsail automatically creates your load balancer across Availability Zones.
@@ -77,7 +87,7 @@ trait LoadBalancer extends StObject {
   var supportCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
+    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Amazon Lightsail Developer Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   
@@ -85,6 +95,11 @@ trait LoadBalancer extends StObject {
     * An array of LoadBalancerTlsCertificateSummary objects that provide additional information about the SSL/TLS certificates. For example, if true, the certificate is attached to the load balancer.
     */
   var tlsCertificateSummaries: js.UndefOr[LoadBalancerTlsCertificateSummaryList] = js.undefined
+  
+  /**
+    * The name of the TLS security policy for the load balancer.
+    */
+  var tlsPolicyName: js.UndefOr[ResourceName] = js.undefined
 }
 object LoadBalancer {
   
@@ -103,7 +118,7 @@ object LoadBalancer {
     
     inline def setConfigurationOptionsUndefined: Self = StObject.set(x, "configurationOptions", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -115,15 +130,23 @@ object LoadBalancer {
     
     inline def setHealthCheckPathUndefined: Self = StObject.set(x, "healthCheckPath", js.undefined)
     
+    inline def setHttpsRedirectionEnabled(value: Boolean): Self = StObject.set(x, "httpsRedirectionEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setHttpsRedirectionEnabledUndefined: Self = StObject.set(x, "httpsRedirectionEnabled", js.undefined)
+    
     inline def setInstanceHealthSummary(value: InstanceHealthSummaryList): Self = StObject.set(x, "instanceHealthSummary", value.asInstanceOf[js.Any])
     
     inline def setInstanceHealthSummaryUndefined: Self = StObject.set(x, "instanceHealthSummary", js.undefined)
     
-    inline def setInstanceHealthSummaryVarargs(value: InstanceHealthSummary*): Self = StObject.set(x, "instanceHealthSummary", js.Array(value :_*))
+    inline def setInstanceHealthSummaryVarargs(value: InstanceHealthSummary*): Self = StObject.set(x, "instanceHealthSummary", js.Array(value*))
     
     inline def setInstancePort(value: integer): Self = StObject.set(x, "instancePort", value.asInstanceOf[js.Any])
     
     inline def setInstancePortUndefined: Self = StObject.set(x, "instancePort", js.undefined)
+    
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "ipAddressType", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "ipAddressType", js.undefined)
     
     inline def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -141,7 +164,7 @@ object LoadBalancer {
     
     inline def setPublicPortsUndefined: Self = StObject.set(x, "publicPorts", js.undefined)
     
-    inline def setPublicPortsVarargs(value: Port*): Self = StObject.set(x, "publicPorts", js.Array(value :_*))
+    inline def setPublicPortsVarargs(value: Port*): Self = StObject.set(x, "publicPorts", js.Array(value*))
     
     inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
@@ -159,12 +182,16 @@ object LoadBalancer {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTlsCertificateSummaries(value: LoadBalancerTlsCertificateSummaryList): Self = StObject.set(x, "tlsCertificateSummaries", value.asInstanceOf[js.Any])
     
     inline def setTlsCertificateSummariesUndefined: Self = StObject.set(x, "tlsCertificateSummaries", js.undefined)
     
-    inline def setTlsCertificateSummariesVarargs(value: LoadBalancerTlsCertificateSummary*): Self = StObject.set(x, "tlsCertificateSummaries", js.Array(value :_*))
+    inline def setTlsCertificateSummariesVarargs(value: LoadBalancerTlsCertificateSummary*): Self = StObject.set(x, "tlsCertificateSummaries", js.Array(value*))
+    
+    inline def setTlsPolicyName(value: ResourceName): Self = StObject.set(x, "tlsPolicyName", value.asInstanceOf[js.Any])
+    
+    inline def setTlsPolicyNameUndefined: Self = StObject.set(x, "tlsPolicyName", js.undefined)
   }
 }

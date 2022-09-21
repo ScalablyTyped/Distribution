@@ -13,9 +13,9 @@ trait HandleServerEventsOptions extends StObject {
   
   var heartbeatUrl: js.UndefOr[String] = js.undefined
   
-  var receivers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var receivers: js.UndefOr[StringDictionary[Any]] = js.undefined
   
-  var success: js.UndefOr[js.Function3[/* selector */ String, /* msg */ String, /* e */ js.Any, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function3[/* selector */ String, /* msg */ String, /* e */ Any, Unit]] = js.undefined
   
   var unRegisterUrl: js.UndefOr[String] = js.undefined
   
@@ -50,11 +50,11 @@ object HandleServerEventsOptions {
     
     inline def setHeartbeatUrlUndefined: Self = StObject.set(x, "heartbeatUrl", js.undefined)
     
-    inline def setReceivers(value: StringDictionary[js.Any]): Self = StObject.set(x, "receivers", value.asInstanceOf[js.Any])
+    inline def setReceivers(value: StringDictionary[Any]): Self = StObject.set(x, "receivers", value.asInstanceOf[js.Any])
     
     inline def setReceiversUndefined: Self = StObject.set(x, "receivers", js.undefined)
     
-    inline def setSuccess(value: (/* selector */ String, /* msg */ String, /* e */ js.Any) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+    inline def setSuccess(value: (/* selector */ String, /* msg */ String, /* e */ Any) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     

@@ -9,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Objects that need to clean up after themselves.
   */
-class Disposable () extends StObject
+open class Disposable () extends StObject

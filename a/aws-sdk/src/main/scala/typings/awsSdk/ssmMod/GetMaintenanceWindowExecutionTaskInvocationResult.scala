@@ -9,7 +9,7 @@ trait GetMaintenanceWindowExecutionTaskInvocationResult extends StObject {
   /**
     * The time that the task finished running on the target.
     */
-  var EndTime: js.UndefOr[DateTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The execution ID.
@@ -22,7 +22,7 @@ trait GetMaintenanceWindowExecutionTaskInvocationResult extends StObject {
   var InvocationId: js.UndefOr[MaintenanceWindowExecutionTaskInvocationId] = js.undefined
   
   /**
-    * User-provided value to be included in any CloudWatch events raised while running tasks for these targets in this maintenance window. 
+    * User-provided value to be included in any Amazon CloudWatch Events or Amazon EventBridge events raised while running tasks for these targets in this maintenance window.
     */
   var OwnerInformation: js.UndefOr[typings.awsSdk.ssmMod.OwnerInformation] = js.undefined
   
@@ -34,7 +34,7 @@ trait GetMaintenanceWindowExecutionTaskInvocationResult extends StObject {
   /**
     * The time that the task started running on the target.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The task status for an invocation.
@@ -52,7 +52,7 @@ trait GetMaintenanceWindowExecutionTaskInvocationResult extends StObject {
   var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.undefined
   
   /**
-    * Retrieves the task type for a maintenance window. Task types include the following: LAMBDA, STEP_FUNCTIONS, AUTOMATION, RUN_COMMAND.
+    * Retrieves the task type for a maintenance window.
     */
   var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   
@@ -75,7 +75,7 @@ object GetMaintenanceWindowExecutionTaskInvocationResult {
   
   extension [Self <: GetMaintenanceWindowExecutionTaskInvocationResult](x: Self) {
     
-    inline def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -95,7 +95,7 @@ object GetMaintenanceWindowExecutionTaskInvocationResult {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

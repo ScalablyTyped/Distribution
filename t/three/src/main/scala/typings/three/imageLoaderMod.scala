@@ -14,7 +14,7 @@ object imageLoaderMod {
   
   @JSImport("three/src/loaders/ImageLoader", "ImageLoader")
   @js.native
-  class ImageLoader () extends Loader {
+  open class ImageLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
     def load(url: String): HTMLImageElement = js.native

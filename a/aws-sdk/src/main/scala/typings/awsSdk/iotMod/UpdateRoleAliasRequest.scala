@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateRoleAliasRequest extends StObject {
   
   /**
-    * The number of seconds the credential will be valid.
+    * The number of seconds the credential will be valid. This value must be less than or equal to the maximum session duration of the IAM role that the role alias references.
     */
   var credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.undefined
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAppInstanceUserResponse extends StObject {
   
   /**
-    * The name of the app instance user.
+    * The name of the AppInstanceUser.
     */
   var AppInstanceUser: js.UndefOr[typings.awsSdk.chimeMod.AppInstanceUser] = js.undefined
 }

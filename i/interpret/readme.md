@@ -9,11 +9,11 @@ A dictionary of file extensions and associated module loaders.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | interpret |
-| Keywords           | cirru-script, cjsx, co, coco, coffee, coffee-script, coffee.md, coffeescript, csv, earlgrey, es, es6, iced, iced.md, iced-coffee-script, ini, js, json, json5, jsx, react, litcoffee, liticed, ls, livescript, toml, ts, typescript, wisp, xml, yaml, yml |
-| # releases         | 7 |
-| # dependents       | 297 |
-| # downloads        | 433785636 |
-| # stars            | 14 |
+| Keywords           | coffee, coffee.md, coffeescript, es, es6, js, json, json5, jsx, react, litcoffee, toml, ts, typescript, xml, yaml, yml |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.4053627E7 |
+| # stars            | 234.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/interpret#readme)

@@ -12,12 +12,12 @@ trait NetworkBinding extends StObject {
   var bindIP: js.UndefOr[String] = js.undefined
   
   /**
-    * The port number on the container that is used with the network binding.
+    * The port number on the container that's used with the network binding.
     */
   var containerPort: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
-    * The port number on the host that is used with the network binding.
+    * The port number on the host that's used with the network binding.
     */
   var hostPort: js.UndefOr[BoxedInteger] = js.undefined
   

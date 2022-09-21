@@ -1,19 +1,19 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_datamigration
 
-Typings are for version 1.0.20201105
+Typings are for version 1.0.20220804
 
 ## Library description:
-TypeScript typings for Database Migration API v1beta1
+TypeScript typings for Database Migration API v1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.datamigration |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 943 |
-| # stars            | 0 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 799.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

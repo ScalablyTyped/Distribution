@@ -3,7 +3,6 @@ package typings.awsSdkClientLambdaNode
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientLambdaNode.typesEnvironmentErrorMod.EnvironmentError
 import typings.awsSdkClientLambdaNode.typesEnvironmentErrorMod.UnmarshalledEnvironmentError
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object typesEnvironmentResponseMod {
     /**
       * <p>Environment variable key-value pairs.</p>
       */
-    var Variables: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Variables: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
   }
   object EnvironmentResponse {
     
@@ -35,7 +34,7 @@ object typesEnvironmentResponseMod {
       
       inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
       
-      inline def setVariables(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
       
       inline def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
     }

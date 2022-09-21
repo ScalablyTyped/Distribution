@@ -7,29 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(input: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  /**
-  	Check if a process exists.
-  	@param input - Process ID or name to check.
-  	@returns Whether the process exists.
-  	*/
-  inline def apply(input: Double): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  
   @JSImport("process-exists", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Check multiple processes if they exist.
-  	@param input - Process IDs or names to check.
-  	@returns A map with the process name/ID as key and the status as a boolean value.
-  	*/
-  inline def all(input: js.Array[Double | String]): js.Promise[Map[Double | String, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[Double | String, Boolean]]]
+  inline def filterExistingProcesses[T /* <: js.Array[Double | String] */](input: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("filterExistingProcesses")(input.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  /**
-  	Filter for processes that exist.
-  	@param input - Process IDs or names to check.
-  	@returns The processes that exist.
-  	*/
-  inline def filterExists(input: js.Array[Double | String]): js.Array[Double | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterExists")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double | String]]
+  inline def processExists(input: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("processExists")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def processExists(input: Double): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("processExists")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  
+  inline def processExistsMultiple[T /* <: Double | String */](input: js.Array[T]): js.Promise[Map[T, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("processExistsMultiple")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[T, Boolean]]]
 }

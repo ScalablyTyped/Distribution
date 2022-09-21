@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GameServerGroup extends StObject {
   
   /**
-    * A generated unique ID for the EC2 Auto Scaling group that is associated with this game server group.
+    * A generated unique ID for the Amazon EC2 Auto Scaling group that is associated with this game server group.
     */
   var AutoScalingGroupArn: js.UndefOr[typings.awsSdk.gameliftMod.AutoScalingGroupArn] = js.undefined
   
@@ -17,9 +17,9 @@ trait GameServerGroup extends StObject {
   var BalancingStrategy: js.UndefOr[typings.awsSdk.gameliftMod.BalancingStrategy] = js.undefined
   
   /**
-    * A timestamp that indicates when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * A time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A generated unique ID for the game server group.
@@ -27,32 +27,32 @@ trait GameServerGroup extends StObject {
   var GameServerGroupArn: js.UndefOr[typings.awsSdk.gameliftMod.GameServerGroupArn] = js.undefined
   
   /**
-    * A developer-defined identifier for the game server group. The name is unique for each Region in each AWS account.
+    * A developer-defined identifier for the game server group. The name is unique for each Region in each Amazon Web Services account.
     */
   var GameServerGroupName: js.UndefOr[typings.awsSdk.gameliftMod.GameServerGroupName] = js.undefined
   
   /**
-    * A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion (see ). An exception to this is with Spot Instances, which can be terminated by AWS regardless of protection status. 
+    * A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion (see ). An exception to this is with Spot Instances, which can be terminated by Amazon Web Services regardless of protection status. 
     */
   var GameServerProtectionPolicy: js.UndefOr[typings.awsSdk.gameliftMod.GameServerProtectionPolicy] = js.undefined
   
   /**
-    * The set of EC2 instance types that GameLift FleetIQ can use when balancing and automatically scaling instances in the corresponding Auto Scaling group. 
+    * The set of Amazon EC2 instance types that GameLift FleetIQ can use when balancing and automatically scaling instances in the corresponding Auto Scaling group. 
     */
   var InstanceDefinitions: js.UndefOr[typings.awsSdk.gameliftMod.InstanceDefinitions] = js.undefined
   
   /**
     * A timestamp that indicates when this game server group was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for an IAM role that allows Amazon GameLift to access your EC2 Auto Scaling groups.
+    * The Amazon Resource Name (ARN) for an IAM role that allows Amazon GameLift to access your Amazon EC2 Auto Scaling groups.
     */
   var RoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
   /**
-    * The current status of the game server group. Possible statuses include:    NEW - GameLift FleetIQ has validated the CreateGameServerGroup() request.     ACTIVATING - GameLift FleetIQ is setting up a game server group, which includes creating an Auto Scaling group in your AWS account.     ACTIVE - The game server group has been successfully created.     DELETE_SCHEDULED - A request to delete the game server group has been received.     DELETING - GameLift FleetIQ has received a valid DeleteGameServerGroup() request and is processing it. GameLift FleetIQ must first complete and release hosts before it deletes the Auto Scaling group and the game server group.     DELETED - The game server group has been successfully deleted.     ERROR - The asynchronous processes of activating or deleting a game server group has failed, resulting in an error state.  
+    * The current status of the game server group. Possible statuses include:    NEW - GameLift FleetIQ has validated the CreateGameServerGroup() request.     ACTIVATING - GameLift FleetIQ is setting up a game server group, which includes creating an Auto Scaling group in your Amazon Web Services account.     ACTIVE - The game server group has been successfully created.     DELETE_SCHEDULED - A request to delete the game server group has been received.     DELETING - GameLift FleetIQ has received a valid DeleteGameServerGroup() request and is processing it. GameLift FleetIQ must first complete and release hosts before it deletes the Auto Scaling group and the game server group.     DELETED - The game server group has been successfully deleted.     ERROR - The asynchronous processes of activating or deleting a game server group has failed, resulting in an error state.  
     */
   var Status: js.UndefOr[GameServerGroupStatus] = js.undefined
   
@@ -83,7 +83,7 @@ object GameServerGroup {
     
     inline def setBalancingStrategyUndefined: Self = StObject.set(x, "BalancingStrategy", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -103,9 +103,9 @@ object GameServerGroup {
     
     inline def setInstanceDefinitionsUndefined: Self = StObject.set(x, "InstanceDefinitions", js.undefined)
     
-    inline def setInstanceDefinitionsVarargs(value: InstanceDefinition*): Self = StObject.set(x, "InstanceDefinitions", js.Array(value :_*))
+    inline def setInstanceDefinitionsVarargs(value: InstanceDefinition*): Self = StObject.set(x, "InstanceDefinitions", js.Array(value*))
     
-    inline def setLastUpdatedTime(value: Timestamp): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
@@ -125,6 +125,6 @@ object GameServerGroup {
     
     inline def setSuspendedActionsUndefined: Self = StObject.set(x, "SuspendedActions", js.undefined)
     
-    inline def setSuspendedActionsVarargs(value: GameServerGroupAction*): Self = StObject.set(x, "SuspendedActions", js.Array(value :_*))
+    inline def setSuspendedActionsVarargs(value: GameServerGroupAction*): Self = StObject.set(x, "SuspendedActions", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "DetailsHeaderBase")
 @js.native
-class DetailsHeaderBase protected ()
+open class DetailsHeaderBase protected ()
   extends typings.officeUiFabricReact.libDetailsListMod.DetailsHeaderBase {
   def this(props: IDetailsHeaderBaseProps) = this()
 }

@@ -3,7 +3,7 @@ package typings.reactstrap
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formFeedbackMod {
   
-  @JSImport("reactstrap/lib/FormFeedback", JSImport.Default)
+  @JSImport("reactstrap/types/lib/FormFeedback", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FormFeedbackProps, js.Object, js.Any]
+  open class default ()
+    extends Component[FormFeedbackProps, js.Object, Any]
   
-  type FormFeedback = Component[FormFeedbackProps, js.Object, js.Any]
+  type FormFeedback = Component[FormFeedbackProps, js.Object, Any]
   
   trait FormFeedbackProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var cssModule: js.UndefOr[CSSModule] = js.undefined
     

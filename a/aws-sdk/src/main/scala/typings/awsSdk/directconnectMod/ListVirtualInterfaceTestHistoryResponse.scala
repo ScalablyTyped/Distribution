@@ -33,6 +33,6 @@ object ListVirtualInterfaceTestHistoryResponse {
     
     inline def setVirtualInterfaceTestHistoryUndefined: Self = StObject.set(x, "virtualInterfaceTestHistory", js.undefined)
     
-    inline def setVirtualInterfaceTestHistoryVarargs(value: VirtualInterfaceTestHistory*): Self = StObject.set(x, "virtualInterfaceTestHistory", js.Array(value :_*))
+    inline def setVirtualInterfaceTestHistoryVarargs(value: VirtualInterfaceTestHistory*): Self = StObject.set(x, "virtualInterfaceTestHistory", js.Array(value*))
   }
 }

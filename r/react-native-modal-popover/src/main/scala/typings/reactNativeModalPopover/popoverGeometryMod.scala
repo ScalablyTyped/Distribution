@@ -1,10 +1,6 @@
 package typings.reactNativeModalPopover
 
 import typings.reactNativeModalPopover.reactNativeModalPopoverStrings.auto
-import typings.reactNativeModalPopover.reactNativeModalPopoverStrings.bottom
-import typings.reactNativeModalPopover.reactNativeModalPopoverStrings.left
-import typings.reactNativeModalPopover.reactNativeModalPopoverStrings.right
-import typings.reactNativeModalPopover.reactNativeModalPopoverStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,15 +11,9 @@ object popoverGeometryMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def computeGeometry(contentSize: Size, placement: Placement, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  
   inline def computeGeometry_auto(contentSize: Size, placement: auto, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
-  
-  inline def computeGeometry_bottom(contentSize: Size, placement: bottom, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
-  
-  inline def computeGeometry_left(contentSize: Size, placement: left, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
-  
-  inline def computeGeometry_right(contentSize: Size, placement: right, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
-  
-  inline def computeGeometry_top(contentSize: Size, placement: top, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
   trait Geometry extends StObject {
     
@@ -52,18 +42,18 @@ object popoverGeometryMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeModalPopover.reactNativeModalPopoverStrings.top
-    - typings.reactNativeModalPopover.reactNativeModalPopoverStrings.right
+    - typings.reactNativeModalPopover.reactNativeModalPopoverStrings.end
     - typings.reactNativeModalPopover.reactNativeModalPopoverStrings.bottom
-    - typings.reactNativeModalPopover.reactNativeModalPopoverStrings.left
+    - typings.reactNativeModalPopover.reactNativeModalPopoverStrings.start
   */
   trait Placement extends StObject
   object Placement {
     
     inline def bottom: typings.reactNativeModalPopover.reactNativeModalPopoverStrings.bottom = "bottom".asInstanceOf[typings.reactNativeModalPopover.reactNativeModalPopoverStrings.bottom]
     
-    inline def left: typings.reactNativeModalPopover.reactNativeModalPopoverStrings.left = "left".asInstanceOf[typings.reactNativeModalPopover.reactNativeModalPopoverStrings.left]
+    inline def end: typings.reactNativeModalPopover.reactNativeModalPopoverStrings.end = "end".asInstanceOf[typings.reactNativeModalPopover.reactNativeModalPopoverStrings.end]
     
-    inline def right: typings.reactNativeModalPopover.reactNativeModalPopoverStrings.right = "right".asInstanceOf[typings.reactNativeModalPopover.reactNativeModalPopoverStrings.right]
+    inline def start: typings.reactNativeModalPopover.reactNativeModalPopoverStrings.start = "start".asInstanceOf[typings.reactNativeModalPopover.reactNativeModalPopoverStrings.start]
     
     inline def top: typings.reactNativeModalPopover.reactNativeModalPopoverStrings.top = "top".asInstanceOf[typings.reactNativeModalPopover.reactNativeModalPopoverStrings.top]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DomainMembership extends StObject {
   
-  /** True if the person is in the viewer's G Suite domain. */
+  /** True if the person is in the viewer's Google Workspace domain. */
   var inViewerDomain: js.UndefOr[Boolean] = js.undefined
 }
 object DomainMembership {

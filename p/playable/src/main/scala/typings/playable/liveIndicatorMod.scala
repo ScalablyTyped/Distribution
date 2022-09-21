@@ -13,7 +13,7 @@ object liveIndicatorMod {
   
   @JSImport("playable/dist/src/modules/ui/live-indicator/live-indicator", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with LiveIndicator {
     def this(hasEngineEventEmitterTextMapTooltipService: EventEmitterTextMap) = this()
@@ -72,41 +72,41 @@ object liveIndicatorMod {
     extends StObject
        with ILiveIndicator {
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _initInterceptor: js.Any = js.native
+    /* private */ var _initInterceptor: Any = js.native
     
-    /* private */ var _initUI: js.Any = js.native
+    /* private */ var _initUI: Any = js.native
     
-    /* private */ var _interceptor: js.Any = js.native
+    /* private */ var _interceptor: Any = js.native
     
-    /* private */ var _isActive: js.Any = js.native
+    /* private */ var _isActive: Any = js.native
     
-    /* private */ var _isEnded: js.Any = js.native
+    /* private */ var _isEnded: Any = js.native
     
-    /* private */ var _isHidden: js.Any = js.native
+    /* private */ var _isHidden: Any = js.native
     
-    /* private */ var _processStateChange: js.Any = js.native
+    /* private */ var _processStateChange: Any = js.native
     
-    /* private */ var _syncWithLive: js.Any = js.native
+    /* private */ var _syncWithLive: Any = js.native
     
-    /* private */ var _textMap: js.Any = js.native
+    /* private */ var _textMap: Any = js.native
     
-    /* private */ var _toggle: js.Any = js.native
+    /* private */ var _toggle: Any = js.native
     
-    /* private */ var _toggleActive: js.Any = js.native
+    /* private */ var _toggleActive: Any = js.native
     
-    /* private */ var _toggleEnded: js.Any = js.native
+    /* private */ var _toggleEnded: Any = js.native
     
-    /* private */ var _tooltipService: js.Any = js.native
+    /* private */ var _tooltipService: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     @JSName("isActive")
     def isActive_MLiveIndicator: Boolean = js.native

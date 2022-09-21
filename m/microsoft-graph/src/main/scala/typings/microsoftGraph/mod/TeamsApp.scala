@@ -35,7 +35,7 @@ object TeamsApp {
     
     inline def setAppDefinitionsUndefined: Self = StObject.set(x, "appDefinitions", js.undefined)
     
-    inline def setAppDefinitionsVarargs(value: TeamsAppDefinition*): Self = StObject.set(x, "appDefinitions", js.Array(value :_*))
+    inline def setAppDefinitionsVarargs(value: TeamsAppDefinition*): Self = StObject.set(x, "appDefinitions", js.Array(value*))
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

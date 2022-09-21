@@ -1,6 +1,6 @@
 package typings.prex
 
-import typings.esfxCancelable.distMod.Cancelable
+import typings.esfxCancelable.mod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object countdownMod {
   
   @JSImport("prex/out/lib/countdown", "CountdownEvent")
   @js.native
-  class CountdownEvent protected () extends StObject {
+  open class CountdownEvent protected () extends StObject {
     /**
       * Initializes a new instance of the CountdownEvent class.
       *
@@ -18,11 +18,11 @@ object countdownMod {
       */
     def this(initialCount: Double) = this()
     
-    /* private */ var _event: js.Any = js.native
+    /* private */ var _event: Any = js.native
     
-    /* private */ var _initialCount: js.Any = js.native
+    /* private */ var _initialCount: Any = js.native
     
-    /* private */ var _remainingCount: js.Any = js.native
+    /* private */ var _remainingCount: Any = js.native
     
     /**
       * Increments the event's current count by one or more.

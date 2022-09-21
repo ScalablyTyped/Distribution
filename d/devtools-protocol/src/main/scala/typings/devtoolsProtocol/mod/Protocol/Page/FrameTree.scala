@@ -29,7 +29,7 @@ object FrameTree {
     
     inline def setChildFramesUndefined: Self = StObject.set(x, "childFrames", js.undefined)
     
-    inline def setChildFramesVarargs(value: FrameTree*): Self = StObject.set(x, "childFrames", js.Array(value :_*))
+    inline def setChildFramesVarargs(value: FrameTree*): Self = StObject.set(x, "childFrames", js.Array(value*))
     
     inline def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
   }

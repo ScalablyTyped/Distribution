@@ -1,6 +1,5 @@
 package typings.webpack.anon
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +12,22 @@ trait AggregateTimeout extends StObject {
   var aggregateTimeout: js.UndefOr[Double] = js.undefined
   
   /**
-  		 * Ignore some files from watching
+  		 * Resolve symlinks and watch symlink and real file. This is usually not needed as webpack already resolves symlinks ('resolve.symlinks').
   		 */
-  var ignored: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var followSymlinks: js.UndefOr[Boolean] = js.undefined
   
   /**
-  		 * Enable polling mode for watching
+  		 * Ignore some files from watching (glob pattern or regexp).
   		 */
-  var poll: js.UndefOr[Boolean | Double] = js.undefined
+  var ignored: js.UndefOr[String | js.RegExp | js.Array[String]] = js.undefined
   
   /**
-  		 * Stop watching when stdin stream has ended
+  		 * Enable polling mode for watching.
+  		 */
+  var poll: js.UndefOr[Double | Boolean] = js.undefined
+  
+  /**
+  		 * Stop watching when stdin stream has ended.
   		 */
   var stdin: js.UndefOr[Boolean] = js.undefined
 }
@@ -40,11 +44,17 @@ object AggregateTimeout {
     
     inline def setAggregateTimeoutUndefined: Self = StObject.set(x, "aggregateTimeout", js.undefined)
     
-    inline def setIgnored(value: StringDictionary[js.Any]): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+    inline def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
+    
+    inline def setFollowSymlinksUndefined: Self = StObject.set(x, "followSymlinks", js.undefined)
+    
+    inline def setIgnored(value: String | js.RegExp | js.Array[String]): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
     inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     
-    inline def setPoll(value: Boolean | Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+    inline def setIgnoredVarargs(value: String*): Self = StObject.set(x, "ignored", js.Array(value*))
+    
+    inline def setPoll(value: Double | Boolean): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
     
     inline def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
     

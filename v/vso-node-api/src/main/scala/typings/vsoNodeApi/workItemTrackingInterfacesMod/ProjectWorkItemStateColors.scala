@@ -29,6 +29,6 @@ object ProjectWorkItemStateColors {
     
     inline def setWorkItemTypeStateColors(value: js.Array[WorkItemTypeStateColors]): Self = StObject.set(x, "workItemTypeStateColors", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemTypeStateColorsVarargs(value: WorkItemTypeStateColors*): Self = StObject.set(x, "workItemTypeStateColors", js.Array(value :_*))
+    inline def setWorkItemTypeStateColorsVarargs(value: WorkItemTypeStateColors*): Self = StObject.set(x, "workItemTypeStateColors", js.Array(value*))
   }
 }

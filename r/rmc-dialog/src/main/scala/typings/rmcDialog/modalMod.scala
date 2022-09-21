@@ -17,8 +17,8 @@ object modalMod {
   
   @JSImport("rmc-dialog/lib/Modal", JSImport.Default)
   @js.native
-  class default protected () extends RCModal {
-    def this(props: js.Any) = this()
+  open class default protected () extends RCModal {
+    def this(props: Any) = this()
   }
   /* static members */
   object default {
@@ -103,16 +103,15 @@ object modalMod {
   }
   
   @js.native
-  trait RCModal
-    extends Component[IModalPropTypes, js.Any, js.Any] {
+  trait RCModal extends Component[IModalPropTypes, Any, Any] {
     
-    var animDialog: js.Any = js.native
+    var animDialog: Any = js.native
     
-    var animMask: js.Any = js.native
+    var animMask: Any = js.native
     
-    def animateDialog(visible: js.Any): Unit = js.native
+    def animateDialog(visible: Any): Unit = js.native
     
-    def animateMask(visible: js.Any): Unit = js.native
+    def animateMask(visible: Any): Unit = js.native
     
     def close(): Unit = js.native
     
@@ -120,21 +119,21 @@ object modalMod {
     def componentDidMount_MRCModal(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MRCModal(prevProps: js.Any): Unit = js.native
+    def componentDidUpdate_MRCModal(prevProps: Any): Unit = js.native
     
     @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MRCModal(nextProps: js.Any): Unit = js.native
+    def componentWillReceiveProps_MRCModal(nextProps: Any): Unit = js.native
     
-    def getOpacity(visible: js.Any): `0` | `1` = js.native
+    def getOpacity(visible: Any): `0` | `1` = js.native
     
-    def getPosition(visible: js.Any): Double = js.native
+    def getPosition(visible: Any): Double = js.native
     
-    def getScale(visible: js.Any): `1` | `1.05` = js.native
+    def getScale(visible: Any): `1` | `1.05` = js.native
     
     def onMaskClose(): Unit = js.native
     
     @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MRCModal(nextProps: js.Any, nextState: js.Any): Boolean = js.native
+    def shouldComponentUpdate_MRCModal(nextProps: Any, nextState: Any): Boolean = js.native
     
     def stopDialogAnim(): Unit = js.native
     

@@ -1,11 +1,13 @@
 package typings.awsSdk.schemasMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Body = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.schemasMod.Blob | java.lang.String
+type Body = Buffer | js.typedarray.Uint8Array | Blob | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_IN_PROGRESS
@@ -13,61 +15,63 @@ type Body = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.schema
   - typings.awsSdk.awsSdkStrings.CREATE_FAILED
   - java.lang.String
 */
-type CodeGenerationStatus = typings.awsSdk.schemasMod._CodeGenerationStatus | java.lang.String
+type CodeGenerationStatus = _CodeGenerationStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STARTED
   - typings.awsSdk.awsSdkStrings.STOPPED
   - java.lang.String
 */
-type DiscovererState = typings.awsSdk.schemasMod._DiscovererState | java.lang.String
+type DiscovererState = _DiscovererState | String
 
-type GetDiscoveredSchemaVersionItemInput = java.lang.String
+type GetDiscoveredSchemaVersionItemInput = String
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.schemasMod.string]
+type Tags = StringDictionary[string]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OpenApi3
   - typings.awsSdk.awsSdkStrings.JSONSchemaDraft4
   - java.lang.String
 */
-type Type = typings.awsSdk.schemasMod._Type | java.lang.String
+type Type = _Type | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-12-02`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.schemasMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type integer = scala.Double
+type boolean = Boolean
 
-type listOfDiscovererSummary = js.Array[typings.awsSdk.schemasMod.DiscovererSummary]
+type integer = Double
 
-type listOfGetDiscoveredSchemaVersionItemInput = js.Array[typings.awsSdk.schemasMod.GetDiscoveredSchemaVersionItemInput]
+type listOfDiscovererSummary = js.Array[DiscovererSummary]
 
-type listOfRegistrySummary = js.Array[typings.awsSdk.schemasMod.RegistrySummary]
+type listOfGetDiscoveredSchemaVersionItemInput = js.Array[GetDiscoveredSchemaVersionItemInput]
 
-type listOfSchemaSummary = js.Array[typings.awsSdk.schemasMod.SchemaSummary]
+type listOfRegistrySummary = js.Array[RegistrySummary]
 
-type listOfSchemaVersionSummary = js.Array[typings.awsSdk.schemasMod.SchemaVersionSummary]
+type listOfSchemaSummary = js.Array[SchemaSummary]
 
-type listOfSearchSchemaSummary = js.Array[typings.awsSdk.schemasMod.SearchSchemaSummary]
+type listOfSchemaVersionSummary = js.Array[SchemaVersionSummary]
 
-type listOfSearchSchemaVersionSummary = js.Array[typings.awsSdk.schemasMod.SearchSchemaVersionSummary]
+type listOfSearchSchemaSummary = js.Array[SearchSchemaSummary]
 
-type listOfString = js.Array[typings.awsSdk.schemasMod.string]
+type listOfSearchSchemaVersionSummary = js.Array[SearchSchemaVersionSummary]
 
-type long = scala.Double
+type listOfString = js.Array[string]
 
-type string = java.lang.String
+type long = Double
 
-type stringMin0Max256 = java.lang.String
+type string = String
 
-type stringMin0Max36 = java.lang.String
+type stringMin0Max256 = String
 
-type stringMin1Max100000 = java.lang.String
+type stringMin0Max36 = String
 
-type stringMin20Max1600 = java.lang.String
+type stringMin1Max100000 = String
 
-type timestampIso8601 = typings.std.Date
+type stringMin20Max1600 = String
+
+type timestampIso8601 = js.Date

@@ -1,8 +1,9 @@
 package typings.googleapis.anon
 
-import typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2.Doubleclicksearch
-import typings.googleapis.doubleclicksearchV2Mod.doubleclicksearchV2.Options
-import typings.googleapis.googleapisStrings.v2
+import typings.googleapis.cloudshellV1Mod.cloudshellV1.Cloudshell
+import typings.googleapis.cloudshellV1Mod.cloudshellV1.Options
+import typings.googleapis.googleapisStrings.v1
+import typings.googleapis.googleapisStrings.v1alpha1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn63 extends StObject {
   
-  def apply(options: Options): Doubleclicksearch = js.native
-  def apply(version: v2): Doubleclicksearch = js.native
+  def apply(options: Options): Cloudshell = js.native
+  def apply(options: typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Options): typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell = js.native
+  def apply(version: v1): Cloudshell = js.native
+  def apply(version: v1alpha1): typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell = js.native
 }

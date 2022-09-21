@@ -1,5 +1,6 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.plotlyJsStrings.`bottom center`
 import typings.plotlyJs.plotlyJsStrings.`bottom left`
 import typings.plotlyJs.plotlyJsStrings.`bottom right`
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<plotly.js.plotly.js.DataTitle> */
 trait PartialDataTitle extends StObject {
   
-  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
+  var font: js.UndefOr[Partial[Font]] = js.undefined
   
   var position: js.UndefOr[
     (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
@@ -34,7 +35,7 @@ object PartialDataTitle {
   
   extension [Self <: PartialDataTitle](x: Self) {
     
-    inline def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Partial[Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     

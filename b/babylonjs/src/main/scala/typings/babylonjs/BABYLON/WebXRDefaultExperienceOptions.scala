@@ -12,7 +12,19 @@ trait WebXRDefaultExperienceOptions extends StObject {
   var disableDefaultUI: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Should teleportation not initialize. defaults to false.
+    * Should nearInteraction not initialize. Defaults to false.
+    */
+  var disableNearInteraction: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Should pointer selection not initialize.
+    * Note that disabling pointer selection also disables teleportation.
+    * Defaults to false.
+    */
+  var disablePointerSelection: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Should teleportation not initialize. Defaults to false.
     */
   var disableTeleportation: js.UndefOr[Boolean] = js.undefined
   
@@ -34,6 +46,11 @@ trait WebXRDefaultExperienceOptions extends StObject {
   var inputOptions: js.UndefOr[IWebXRInputOptions] = js.undefined
   
   /**
+    * optional configuration for near interaction
+    */
+  var nearInteractionOptions: js.UndefOr[IWebXRNearInteractionOptions] = js.undefined
+  
+  /**
     * A list of optional features to init the session with
     * If set to true, all features we support will be added
     */
@@ -45,9 +62,19 @@ trait WebXRDefaultExperienceOptions extends StObject {
   var outputCanvasOptions: js.UndefOr[WebXRManagedOutputCanvasOptions] = js.undefined
   
   /**
+    * optional configuration for pointer selection
+    */
+  var pointerSelectionOptions: js.UndefOr[IWebXRControllerPointerSelectionOptions] = js.undefined
+  
+  /**
     * An optional rendering group id that will be set globally for teleportation, pointer selection and default controller meshes
     */
   var renderingGroupId: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * optional configuration for teleportation
+    */
+  var teleportationOptions: js.UndefOr[IWebXRTeleportationOptions] = js.undefined
   
   /**
     * optional UI options. This can be used among other to change session mode and reference space type
@@ -72,6 +99,14 @@ object WebXRDefaultExperienceOptions {
     
     inline def setDisableDefaultUIUndefined: Self = StObject.set(x, "disableDefaultUI", js.undefined)
     
+    inline def setDisableNearInteraction(value: Boolean): Self = StObject.set(x, "disableNearInteraction", value.asInstanceOf[js.Any])
+    
+    inline def setDisableNearInteractionUndefined: Self = StObject.set(x, "disableNearInteraction", js.undefined)
+    
+    inline def setDisablePointerSelection(value: Boolean): Self = StObject.set(x, "disablePointerSelection", value.asInstanceOf[js.Any])
+    
+    inline def setDisablePointerSelectionUndefined: Self = StObject.set(x, "disablePointerSelection", js.undefined)
+    
     inline def setDisableTeleportation(value: Boolean): Self = StObject.set(x, "disableTeleportation", value.asInstanceOf[js.Any])
     
     inline def setDisableTeleportationUndefined: Self = StObject.set(x, "disableTeleportation", js.undefined)
@@ -80,7 +115,7 @@ object WebXRDefaultExperienceOptions {
     
     inline def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
     
-    inline def setFloorMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
+    inline def setFloorMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "floorMeshes", js.Array(value*))
     
     inline def setIgnoreNativeCameraTransformation(value: Boolean): Self = StObject.set(x, "ignoreNativeCameraTransformation", value.asInstanceOf[js.Any])
     
@@ -90,19 +125,31 @@ object WebXRDefaultExperienceOptions {
     
     inline def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
     
+    inline def setNearInteractionOptions(value: IWebXRNearInteractionOptions): Self = StObject.set(x, "nearInteractionOptions", value.asInstanceOf[js.Any])
+    
+    inline def setNearInteractionOptionsUndefined: Self = StObject.set(x, "nearInteractionOptions", js.undefined)
+    
     inline def setOptionalFeatures(value: Boolean | js.Array[String]): Self = StObject.set(x, "optionalFeatures", value.asInstanceOf[js.Any])
     
     inline def setOptionalFeaturesUndefined: Self = StObject.set(x, "optionalFeatures", js.undefined)
     
-    inline def setOptionalFeaturesVarargs(value: String*): Self = StObject.set(x, "optionalFeatures", js.Array(value :_*))
+    inline def setOptionalFeaturesVarargs(value: String*): Self = StObject.set(x, "optionalFeatures", js.Array(value*))
     
     inline def setOutputCanvasOptions(value: WebXRManagedOutputCanvasOptions): Self = StObject.set(x, "outputCanvasOptions", value.asInstanceOf[js.Any])
     
     inline def setOutputCanvasOptionsUndefined: Self = StObject.set(x, "outputCanvasOptions", js.undefined)
     
+    inline def setPointerSelectionOptions(value: IWebXRControllerPointerSelectionOptions): Self = StObject.set(x, "pointerSelectionOptions", value.asInstanceOf[js.Any])
+    
+    inline def setPointerSelectionOptionsUndefined: Self = StObject.set(x, "pointerSelectionOptions", js.undefined)
+    
     inline def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     
     inline def setRenderingGroupIdUndefined: Self = StObject.set(x, "renderingGroupId", js.undefined)
+    
+    inline def setTeleportationOptions(value: IWebXRTeleportationOptions): Self = StObject.set(x, "teleportationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setTeleportationOptionsUndefined: Self = StObject.set(x, "teleportationOptions", js.undefined)
     
     inline def setUiOptions(value: WebXREnterExitUIOptions): Self = StObject.set(x, "uiOptions", value.asInstanceOf[js.Any])
     

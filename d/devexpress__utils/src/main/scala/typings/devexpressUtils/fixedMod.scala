@@ -14,7 +14,7 @@ object fixedMod {
   
   @JSImport("@devexpress/utils/lib/intervals/fixed", "FixedInterval")
   @js.native
-  class FixedInterval protected ()
+  open class FixedInterval protected ()
     extends MutableInterval
        with IEquatable[FixedInterval]
        with ICloneable[FixedInterval]
@@ -27,6 +27,9 @@ object fixedMod {
     
     def expand(interval: FixedInterval): this.type = js.native
     
+    @JSName("length")
+    var length_FFixedInterval: Double = js.native
+    
     /* CompleteClass */
     override def makeByLengthEnd(length: Double, end: Double): FixedInterval = js.native
     
@@ -35,6 +38,9 @@ object fixedMod {
     
     /* CompleteClass */
     override def makeByStartLength(start: Double, length: Double): FixedInterval = js.native
+    
+    @JSName("start")
+    var start_FFixedInterval: Double = js.native
   }
   /* static members */
   object FixedInterval {

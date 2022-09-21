@@ -41,24 +41,24 @@ object PatchInstanceFilter {
     
     inline def setGroupLabelsUndefined: Self = StObject.set(x, "groupLabels", js.undefined)
     
-    inline def setGroupLabelsVarargs(value: PatchInstanceFilterGroupLabel*): Self = StObject.set(x, "groupLabels", js.Array(value :_*))
+    inline def setGroupLabelsVarargs(value: PatchInstanceFilterGroupLabel*): Self = StObject.set(x, "groupLabels", js.Array(value*))
     
     inline def setInstanceNamePrefixes(value: js.Array[String]): Self = StObject.set(x, "instanceNamePrefixes", value.asInstanceOf[js.Any])
     
     inline def setInstanceNamePrefixesUndefined: Self = StObject.set(x, "instanceNamePrefixes", js.undefined)
     
-    inline def setInstanceNamePrefixesVarargs(value: String*): Self = StObject.set(x, "instanceNamePrefixes", js.Array(value :_*))
+    inline def setInstanceNamePrefixesVarargs(value: String*): Self = StObject.set(x, "instanceNamePrefixes", js.Array(value*))
     
     inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value*))
     
     inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
     inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

@@ -47,7 +47,7 @@ object Css {
     
     inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
-    inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+    inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

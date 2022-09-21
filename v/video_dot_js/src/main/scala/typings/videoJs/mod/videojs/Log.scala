@@ -17,7 +17,7 @@ trait Log extends StObject {
     * @param args
     *           One or more messages or objects that should be logged.
     */
-  def apply(args: js.Any*): Unit = js.native
+  def apply(args: Any*): Unit = js.native
   
   /**
     * Make a new module or plugin and log messages with a label.
@@ -34,7 +34,7 @@ trait Log extends StObject {
     * @param args
     *        One or more messages or objects that should be logged as debug.
     */
-  def debug(args: js.Any*): Unit = js.native
+  def debug(args: Any*): Unit = js.native
   
   /**
     * Logs error messages. Similar to `console.error`.
@@ -42,7 +42,7 @@ trait Log extends StObject {
     * @param args
     *        One or more messages or objects that should be logged as an error
     */
-  def error(args: js.Any*): Unit = js.native
+  def error(args: Any*): Unit = js.native
   
   /**
     * Returns an array containing everything that has been logged to the history.
@@ -53,7 +53,7 @@ trait Log extends StObject {
     *
     * @return
     */
-  def history(): js.Array[js.Any] = js.native
+  def history(): js.Array[Any] = js.native
   @JSName("history")
   var history_Original: Call = js.native
   
@@ -96,5 +96,5 @@ trait Log extends StObject {
     * @param args
     *        One or more messages or objects that should be logged as a warning.
     */
-  def warn(args: js.Any*): Unit = js.native
+  def warn(args: Any*): Unit = js.native
 }

@@ -146,7 +146,7 @@ object HeatMapLegend {
     /** Specifies the height of the heatmap legend.
       * @Default {null}
       */
-    var height: js.UndefOr[js.Any] = js.undefined
+    var height: js.UndefOr[Any] = js.undefined
     
     /** Specifies can enable responsive mode or not for heatmap legend.
       * @Default {false}
@@ -171,7 +171,7 @@ object HeatMapLegend {
     /** Specifies the width of the heatmap legend.
       * @Default {null}
       */
-    var width: js.UndefOr[js.Any] = js.undefined
+    var width: js.UndefOr[Any] = js.undefined
   }
   object Model {
     
@@ -186,9 +186,9 @@ object HeatMapLegend {
       
       inline def setColorMappingCollectionUndefined: Self = StObject.set(x, "colorMappingCollection", js.undefined)
       
-      inline def setColorMappingCollectionVarargs(value: ColorMappingCollection*): Self = StObject.set(x, "colorMappingCollection", js.Array(value :_*))
+      inline def setColorMappingCollectionVarargs(value: ColorMappingCollection*): Self = StObject.set(x, "colorMappingCollection", js.Array(value*))
       
-      inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
@@ -208,7 +208,7 @@ object HeatMapLegend {
       
       inline def setShowLabelUndefined: Self = StObject.set(x, "showLabel", js.undefined)
       
-      inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }

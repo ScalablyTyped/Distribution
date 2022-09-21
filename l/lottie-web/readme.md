@@ -1,7 +1,7 @@
 
 # Scala.js typings for lottie-web
 
-Typings are for version 5.7.4
+Typings are for version 5.9.6
 
 ## Library description:
 After Effects plugin for exporting animations to SVG + JavaScript or canvas + JavaScript
@@ -10,10 +10,10 @@ After Effects plugin for exporting animations to SVG + JavaScript or canvas + Ja
 | ------------------ | :-------------: |
 | Full name          | lottie-web |
 | Keywords           | animation, canvas, svg, after effects, plugin, export |
-| # releases         | 29 |
-| # dependents       | 210 |
-| # downloads        | 13808874 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 4658179.0 |
+| # stars            | 26971.0 |
 
 ## Links
 - [Homepage](https://github.com/airbnb/lottie-web#readme)

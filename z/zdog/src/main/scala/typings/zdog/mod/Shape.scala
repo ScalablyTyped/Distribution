@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zdog", "Shape")
 @js.native
-class Shape () extends Anchor {
+open class Shape () extends Anchor {
   def this(options: ShapeOptions) = this()
   
   /** @see {@link ShapeOptions#backface} */

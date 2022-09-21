@@ -10,9 +10,9 @@ trait Command extends StObject {
   /**
     * Command that displays the documentation to the user.
     *
-    * This can display the documentation directly in VS Code or open a website using [`env.openExternal`](#env.openExternal);
+    * This can display the documentation directly in the editor or open a website using {@linkcode env.openExternal};
     *
-    * The title of this documentation code action is taken from [`Command.title`](#Command.title)
+    * The title of this documentation code action is taken from {@linkcode Command.title}
     */
   val command: typings.vscode.mod.Command
   

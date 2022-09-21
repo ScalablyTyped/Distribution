@@ -1,14 +1,26 @@
 package typings.awsSdkTypes.eventStreamMod
 
+import typings.std.AsyncIterable
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type EventStreamPayloadHandlerProvider = js.Function1[/* options */ js.Any, typings.awsSdkTypes.eventStreamMod.EventStreamPayloadHandler]
+type EventStreamMarshallerDeserFn[StreamType] = js.Function2[
+/* body */ StreamType, 
+/* deserializer */ js.Function1[/* input */ Record[String, Message], js.Promise[Any]], 
+AsyncIterable[Any]]
 
-type EventStreamSerdeProvider = js.Function1[/* options */ js.Any, typings.awsSdkTypes.eventStreamMod.EventStreamMarshaller]
+type EventStreamMarshallerSerFn[StreamType] = js.Function2[
+/* input */ AsyncIterable[Any], 
+/* serializer */ js.Function1[/* event */ Any, Message], 
+StreamType]
 
-type EventStreamSignerProvider = js.Function1[/* options */ js.Any, typings.awsSdkTypes.eventStreamMod.EventStreamRequestSigner]
+type EventStreamPayloadHandlerProvider = js.Function1[/* options */ Any, EventStreamPayloadHandler]
 
-type MessageHeaders = org.scalablytyped.runtime.StringDictionary[typings.awsSdkTypes.eventStreamMod.MessageHeaderValue]
+type EventStreamSerdeProvider = js.Function1[/* options */ Any, EventStreamMarshaller[Any]]
+
+type EventStreamSignerProvider = js.Function1[/* options */ Any, EventStreamRequestSigner]
+
+type MessageHeaders = Record[String, MessageHeaderValue]

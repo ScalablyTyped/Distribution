@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,11 +21,11 @@ trait TestSuite extends StObject {
   
   var lastError: String
   
-  var lastPopulatedDate: Date
+  var lastPopulatedDate: js.Date
   
   var lastUpdatedBy: IdentityRef
   
-  var lastUpdatedDate: Date
+  var lastUpdatedDate: js.Date
   
   var name: String
   
@@ -66,9 +65,9 @@ object TestSuite {
     id: Double,
     inheritDefaultConfigurations: Boolean,
     lastError: String,
-    lastPopulatedDate: Date,
+    lastPopulatedDate: js.Date,
     lastUpdatedBy: IdentityRef,
-    lastUpdatedDate: Date,
+    lastUpdatedDate: js.Date,
     name: String,
     parent: ShallowReference,
     plan: ShallowReference,
@@ -94,15 +93,15 @@ object TestSuite {
     
     inline def setChildren(value: js.Array[TestSuite]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: TestSuite*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TestSuite*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setDefaultConfigurations(value: js.Array[ShallowReference]): Self = StObject.set(x, "defaultConfigurations", value.asInstanceOf[js.Any])
     
-    inline def setDefaultConfigurationsVarargs(value: ShallowReference*): Self = StObject.set(x, "defaultConfigurations", js.Array(value :_*))
+    inline def setDefaultConfigurationsVarargs(value: ShallowReference*): Self = StObject.set(x, "defaultConfigurations", js.Array(value*))
     
     inline def setDefaultTesters(value: js.Array[ShallowReference]): Self = StObject.set(x, "defaultTesters", value.asInstanceOf[js.Any])
     
-    inline def setDefaultTestersVarargs(value: ShallowReference*): Self = StObject.set(x, "defaultTesters", js.Array(value :_*))
+    inline def setDefaultTestersVarargs(value: ShallowReference*): Self = StObject.set(x, "defaultTesters", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -110,11 +109,11 @@ object TestSuite {
     
     inline def setLastError(value: String): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
     
-    inline def setLastPopulatedDate(value: Date): Self = StObject.set(x, "lastPopulatedDate", value.asInstanceOf[js.Any])
+    inline def setLastPopulatedDate(value: js.Date): Self = StObject.set(x, "lastPopulatedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -136,7 +135,7 @@ object TestSuite {
     
     inline def setSuites(value: js.Array[ShallowReference]): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
     
-    inline def setSuitesVarargs(value: ShallowReference*): Self = StObject.set(x, "suites", js.Array(value :_*))
+    inline def setSuitesVarargs(value: ShallowReference*): Self = StObject.set(x, "suites", js.Array(value*))
     
     inline def setTestCaseCount(value: Double): Self = StObject.set(x, "testCaseCount", value.asInstanceOf[js.Any])
     

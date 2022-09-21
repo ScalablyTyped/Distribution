@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreateTaskSetResponse extends StObject {
   
+  /**
+    * Information about a set of Amazon ECS tasks in either an CodeDeploy or an EXTERNAL deployment. A task set includes details such as the desired number of tasks, how many tasks are running, and whether the task set serves production traffic.
+    */
   var taskSet: js.UndefOr[TaskSet] = js.undefined
 }
 object CreateTaskSetResponse {

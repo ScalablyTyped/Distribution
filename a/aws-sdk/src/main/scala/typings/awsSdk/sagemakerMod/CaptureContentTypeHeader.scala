@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaptureContentTypeHeader extends StObject {
   
   /**
-    * 
+    * The list of all content type headers that SageMaker will treat as CSV and capture accordingly.
     */
   var CsvContentTypes: js.UndefOr[typings.awsSdk.sagemakerMod.CsvContentTypes] = js.undefined
   
   /**
-    * 
+    * The list of all content type headers that SageMaker will treat as JSON and capture accordingly.
     */
   var JsonContentTypes: js.UndefOr[typings.awsSdk.sagemakerMod.JsonContentTypes] = js.undefined
 }
@@ -29,12 +29,12 @@ object CaptureContentTypeHeader {
     
     inline def setCsvContentTypesUndefined: Self = StObject.set(x, "CsvContentTypes", js.undefined)
     
-    inline def setCsvContentTypesVarargs(value: CsvContentType*): Self = StObject.set(x, "CsvContentTypes", js.Array(value :_*))
+    inline def setCsvContentTypesVarargs(value: CsvContentType*): Self = StObject.set(x, "CsvContentTypes", js.Array(value*))
     
     inline def setJsonContentTypes(value: JsonContentTypes): Self = StObject.set(x, "JsonContentTypes", value.asInstanceOf[js.Any])
     
     inline def setJsonContentTypesUndefined: Self = StObject.set(x, "JsonContentTypes", js.undefined)
     
-    inline def setJsonContentTypesVarargs(value: JsonContentType*): Self = StObject.set(x, "JsonContentTypes", js.Array(value :_*))
+    inline def setJsonContentTypesVarargs(value: JsonContentType*): Self = StObject.set(x, "JsonContentTypes", js.Array(value*))
   }
 }

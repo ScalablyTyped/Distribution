@@ -9,7 +9,7 @@ object conditionMod {
   
   @JSImport("babylonjs/Actions/condition", "Condition")
   @js.native
-  class Condition protected () extends StObject {
+  open class Condition protected () extends StObject {
     /**
       * Creates a new Condition
       * @param actionManager the manager of the action the condition is applied to
@@ -36,21 +36,25 @@ object conditionMod {
     
     /**
       * Internal only
+      * @param target
+      * @param propertyPath
       * @hidden
       */
-    def _getEffectiveTarget(target: js.Any, propertyPath: String): js.Any = js.native
+    def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
     
     /**
       * Internal only
+      * @param propertyPath
       * @hidden
       */
     def _getProperty(propertyPath: String): String = js.native
     
     /**
       * Internal only
+      * @param serializedCondition
       * @hidden
       */
-    /* protected */ def _serialize(serializedCondition: js.Any): js.Any = js.native
+    /* protected */ def _serialize(serializedCondition: Any): Any = js.native
     
     /**
       * Check if the current condition is valid
@@ -62,12 +66,12 @@ object conditionMod {
       * Serialize placeholder for child classes
       * @returns the serialized object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
   }
   
   @JSImport("babylonjs/Actions/condition", "PredicateCondition")
   @js.native
-  class PredicateCondition protected () extends Condition {
+  open class PredicateCondition protected () extends Condition {
     /**
       * Creates a new PredicateCondition
       * @param actionManager manager for the action the condition applies to
@@ -85,7 +89,7 @@ object conditionMod {
   
   @JSImport("babylonjs/Actions/condition", "StateCondition")
   @js.native
-  class StateCondition protected () extends Condition {
+  open class StateCondition protected () extends Condition {
     /**
       * Creates a new StateCondition
       * @param actionManager manager for the action the condition applies to
@@ -94,7 +98,7 @@ object conditionMod {
       */
     def this(
       actionManager: ActionManager,
-      target: js.Any,
+      target: Any,
       /** Value to compare with target state  */
     value: String
     ) = this()
@@ -103,7 +107,7 @@ object conditionMod {
       * Internal only
       * @hidden
       */
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
     /** Value to compare with target state  */
     var value: String = js.native
@@ -111,7 +115,7 @@ object conditionMod {
   
   @JSImport("babylonjs/Actions/condition", "ValueCondition")
   @js.native
-  class ValueCondition protected () extends Condition {
+  open class ValueCondition protected () extends Condition {
     /**
       * Creates a new ValueCondition
       * @param actionManager manager for the action the condition applies to
@@ -122,19 +126,19 @@ object conditionMod {
       */
     def this(
       actionManager: ActionManager,
-      target: js.Any,
+      target: Any,
       /** path to specify the property of the target the conditional operator uses  */
     propertyPath: String,
       /** the value compared by the conditional operator against the current value of the property */
-    value: js.Any
+    value: Any
     ) = this()
     def this(
       actionManager: ActionManager,
-      target: js.Any,
+      target: Any,
       /** path to specify the property of the target the conditional operator uses  */
     propertyPath: String,
       /** the value compared by the conditional operator against the current value of the property */
-    value: js.Any,
+    value: Any,
       /** the conditional operator, default ValueCondition.IsEqual */
     operator: Double
     ) = this()
@@ -143,19 +147,19 @@ object conditionMod {
       * Internal only
       * @hidden
       */
-    /* private */ var _effectiveTarget: js.Any = js.native
+    /* private */ var _effectiveTarget: Any = js.native
     
     /**
       * Internal only
       * @hidden
       */
-    /* private */ var _property: js.Any = js.native
+    /* private */ var _property: Any = js.native
     
     /**
       * Internal only
       * @hidden
       */
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
     /** the conditional operator, default ValueCondition.IsEqual */
     var operator: Double = js.native
@@ -164,7 +168,7 @@ object conditionMod {
     var propertyPath: String = js.native
     
     /** the value compared by the conditional operator against the current value of the property */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   /* static members */
   object ValueCondition {
@@ -186,8 +190,8 @@ object conditionMod {
       */
     @JSImport("babylonjs/Actions/condition", "ValueCondition._IsDifferent")
     @js.native
-    def _IsDifferent: js.Any = js.native
-    inline def _IsDifferent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
+    def _IsDifferent: Any = js.native
+    inline def _IsDifferent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
     
     /**
       * Internal only
@@ -195,8 +199,8 @@ object conditionMod {
       */
     @JSImport("babylonjs/Actions/condition", "ValueCondition._IsEqual")
     @js.native
-    def _IsEqual: js.Any = js.native
-    inline def _IsEqual_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
+    def _IsEqual: Any = js.native
+    inline def _IsEqual_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
     
     /**
       * Internal only
@@ -204,8 +208,8 @@ object conditionMod {
       */
     @JSImport("babylonjs/Actions/condition", "ValueCondition._IsGreater")
     @js.native
-    def _IsGreater: js.Any = js.native
-    inline def _IsGreater_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
+    def _IsGreater: Any = js.native
+    inline def _IsGreater_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
     
     /**
       * Internal only
@@ -213,7 +217,7 @@ object conditionMod {
       */
     @JSImport("babylonjs/Actions/condition", "ValueCondition._IsLesser")
     @js.native
-    def _IsLesser: js.Any = js.native
-    inline def _IsLesser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsLesser")(x.asInstanceOf[js.Any])
+    def _IsLesser: Any = js.native
+    inline def _IsLesser_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsLesser")(x.asInstanceOf[js.Any])
   }
 }

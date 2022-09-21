@@ -14,7 +14,7 @@ trait MethodSpec extends StObject {
   /**
     * Implementation.
     */
-  def implementation(params: js.Any*): js.Any
+  def implementation(params: Any*): Any
   /**
     * Implementation.
     */
@@ -39,7 +39,7 @@ object MethodSpec {
     
     inline def setArgumentTypesUndefined: Self = StObject.set(x, "argumentTypes", js.undefined)
     
-    inline def setArgumentTypesVarargs(value: String*): Self = StObject.set(x, "argumentTypes", js.Array(value :_*))
+    inline def setArgumentTypesVarargs(value: String*): Self = StObject.set(x, "argumentTypes", js.Array(value*))
     
     inline def setImplementation(value: MethodImplementation[js.Object]): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

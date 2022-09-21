@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * All configuration data for a particular Computation.
-  */
 trait SchemaComputationTopology extends StObject {
   
   /**
     * The ID of the computation.
     */
-  var computationId: js.UndefOr[String] = js.undefined
+  var computationId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The inputs to the computation.
@@ -37,7 +34,7 @@ trait SchemaComputationTopology extends StObject {
   /**
     * The system stage name.
     */
-  var systemStageName: js.UndefOr[String] = js.undefined
+  var systemStageName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaComputationTopology {
   
@@ -50,33 +47,37 @@ object SchemaComputationTopology {
     
     inline def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
     
+    inline def setComputationIdNull: Self = StObject.set(x, "computationId", null)
+    
     inline def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
     
     inline def setInputs(value: js.Array[SchemaStreamLocation]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: SchemaStreamLocation*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: SchemaStreamLocation*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setKeyRanges(value: js.Array[SchemaKeyRangeLocation]): Self = StObject.set(x, "keyRanges", value.asInstanceOf[js.Any])
     
     inline def setKeyRangesUndefined: Self = StObject.set(x, "keyRanges", js.undefined)
     
-    inline def setKeyRangesVarargs(value: SchemaKeyRangeLocation*): Self = StObject.set(x, "keyRanges", js.Array(value :_*))
+    inline def setKeyRangesVarargs(value: SchemaKeyRangeLocation*): Self = StObject.set(x, "keyRanges", js.Array(value*))
     
     inline def setOutputs(value: js.Array[SchemaStreamLocation]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: SchemaStreamLocation*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: SchemaStreamLocation*): Self = StObject.set(x, "outputs", js.Array(value*))
     
     inline def setStateFamilies(value: js.Array[SchemaStateFamilyConfig]): Self = StObject.set(x, "stateFamilies", value.asInstanceOf[js.Any])
     
     inline def setStateFamiliesUndefined: Self = StObject.set(x, "stateFamilies", js.undefined)
     
-    inline def setStateFamiliesVarargs(value: SchemaStateFamilyConfig*): Self = StObject.set(x, "stateFamilies", js.Array(value :_*))
+    inline def setStateFamiliesVarargs(value: SchemaStateFamilyConfig*): Self = StObject.set(x, "stateFamilies", js.Array(value*))
     
     inline def setSystemStageName(value: String): Self = StObject.set(x, "systemStageName", value.asInstanceOf[js.Any])
+    
+    inline def setSystemStageNameNull: Self = StObject.set(x, "systemStageName", null)
     
     inline def setSystemStageNameUndefined: Self = StObject.set(x, "systemStageName", js.undefined)
   }

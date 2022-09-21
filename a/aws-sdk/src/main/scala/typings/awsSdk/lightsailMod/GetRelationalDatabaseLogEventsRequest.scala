@@ -9,7 +9,7 @@ trait GetRelationalDatabaseLogEventsRequest extends StObject {
   /**
     * The end of the time interval from which to get log events. Constraints:   Specified in Coordinated Universal Time (UTC).   Specified in the Unix time format. For example, if you wish to use an end time of October 1, 2018, at 8 PM UTC, then you input 1538424000 as the end time.  
     */
-  var endTime: js.UndefOr[IsoDate] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the log stream. Use the get relational database log streams operation to get a list of available log streams.
@@ -34,7 +34,7 @@ trait GetRelationalDatabaseLogEventsRequest extends StObject {
   /**
     * The start of the time interval from which to get log events. Constraints:   Specified in Coordinated Universal Time (UTC).   Specified in the Unix time format. For example, if you wish to use a start time of October 1, 2018, at 8 PM UTC, then you input 1538424000 as the start time.  
     */
-  var startTime: js.UndefOr[IsoDate] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
 }
 object GetRelationalDatabaseLogEventsRequest {
   
@@ -45,7 +45,7 @@ object GetRelationalDatabaseLogEventsRequest {
   
   extension [Self <: GetRelationalDatabaseLogEventsRequest](x: Self) {
     
-    inline def setEndTime(value: IsoDate): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -61,7 +61,7 @@ object GetRelationalDatabaseLogEventsRequest {
     
     inline def setStartFromHeadUndefined: Self = StObject.set(x, "startFromHead", js.undefined)
     
-    inline def setStartTime(value: IsoDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric/fabric-impl", "Pattern")
 @js.native
-class Pattern ()
+open class Pattern ()
   extends StObject
      with IPatternOptions {
   def this(options: IPatternOptions) = this()
@@ -39,7 +39,7 @@ class Pattern ()
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
     * @return {Object} Object representation of a pattern instance
     */
-  def toObject(propertiesToInclude: js.Any): js.Any = js.native
+  def toObject(propertiesToInclude: Any): Any = js.native
   
   /**
     * Returns SVG representation of a pattern

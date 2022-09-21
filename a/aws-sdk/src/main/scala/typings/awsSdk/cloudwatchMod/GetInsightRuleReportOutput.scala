@@ -61,18 +61,18 @@ object GetInsightRuleReportOutput {
     
     inline def setContributorsUndefined: Self = StObject.set(x, "Contributors", js.undefined)
     
-    inline def setContributorsVarargs(value: InsightRuleContributor*): Self = StObject.set(x, "Contributors", js.Array(value :_*))
+    inline def setContributorsVarargs(value: InsightRuleContributor*): Self = StObject.set(x, "Contributors", js.Array(value*))
     
     inline def setKeyLabels(value: InsightRuleContributorKeyLabels): Self = StObject.set(x, "KeyLabels", value.asInstanceOf[js.Any])
     
     inline def setKeyLabelsUndefined: Self = StObject.set(x, "KeyLabels", js.undefined)
     
-    inline def setKeyLabelsVarargs(value: InsightRuleContributorKeyLabel*): Self = StObject.set(x, "KeyLabels", js.Array(value :_*))
+    inline def setKeyLabelsVarargs(value: InsightRuleContributorKeyLabel*): Self = StObject.set(x, "KeyLabels", js.Array(value*))
     
     inline def setMetricDatapoints(value: InsightRuleMetricDatapoints): Self = StObject.set(x, "MetricDatapoints", value.asInstanceOf[js.Any])
     
     inline def setMetricDatapointsUndefined: Self = StObject.set(x, "MetricDatapoints", js.undefined)
     
-    inline def setMetricDatapointsVarargs(value: InsightRuleMetricDatapoint*): Self = StObject.set(x, "MetricDatapoints", js.Array(value :_*))
+    inline def setMetricDatapointsVarargs(value: InsightRuleMetricDatapoint*): Self = StObject.set(x, "MetricDatapoints", js.Array(value*))
   }
 }

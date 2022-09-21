@@ -28,7 +28,7 @@ trait FilePondCallbackProps extends StObject {
     js.Function3[
       /* error */ FilePondErrorDescription, 
       /* file */ js.UndefOr[FilePondFile], 
-      /* status */ js.UndefOr[js.Any], 
+      /* status */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -41,7 +41,7 @@ trait FilePondCallbackProps extends StObject {
     * another plugin subscribing to the prepare_output filter.
     * It receives the file item and the output data.
     */
-  var onpreparefile: js.UndefOr[js.Function2[/* file */ FilePondFile, /* output */ js.Any, Unit]] = js.undefined
+  var onpreparefile: js.UndefOr[js.Function2[/* file */ FilePondFile, /* output */ Any, Unit]] = js.undefined
   
   /** If no error, Processing of a file has been completed. */
   var onprocessfile: js.UndefOr[
@@ -82,9 +82,9 @@ trait FilePondCallbackProps extends StObject {
     */
   var onwarning: js.UndefOr[
     js.Function3[
-      /* error */ js.Any, 
+      /* error */ Any, 
       /* file */ js.UndefOr[FilePondFile], 
-      /* status */ js.UndefOr[js.Any], 
+      /* status */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -115,7 +115,7 @@ object FilePondCallbackProps {
     inline def setOnaddfilestartUndefined: Self = StObject.set(x, "onaddfilestart", js.undefined)
     
     inline def setOnerror(
-      value: (/* error */ FilePondErrorDescription, /* file */ js.UndefOr[FilePondFile], /* status */ js.UndefOr[js.Any]) => Unit
+      value: (/* error */ FilePondErrorDescription, /* file */ js.UndefOr[FilePondFile], /* status */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "onerror", js.Any.fromFunction3(value))
     
     inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
@@ -124,7 +124,7 @@ object FilePondCallbackProps {
     
     inline def setOninitUndefined: Self = StObject.set(x, "oninit", js.undefined)
     
-    inline def setOnpreparefile(value: (/* file */ FilePondFile, /* output */ js.Any) => Unit): Self = StObject.set(x, "onpreparefile", js.Any.fromFunction2(value))
+    inline def setOnpreparefile(value: (/* file */ FilePondFile, /* output */ Any) => Unit): Self = StObject.set(x, "onpreparefile", js.Any.fromFunction2(value))
     
     inline def setOnpreparefileUndefined: Self = StObject.set(x, "onpreparefile", js.undefined)
     
@@ -165,7 +165,7 @@ object FilePondCallbackProps {
     inline def setOnupdatefilesUndefined: Self = StObject.set(x, "onupdatefiles", js.undefined)
     
     inline def setOnwarning(
-      value: (/* error */ js.Any, /* file */ js.UndefOr[FilePondFile], /* status */ js.UndefOr[js.Any]) => Unit
+      value: (/* error */ Any, /* file */ js.UndefOr[FilePondFile], /* status */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "onwarning", js.Any.fromFunction3(value))
     
     inline def setOnwarningUndefined: Self = StObject.set(x, "onwarning", js.undefined)

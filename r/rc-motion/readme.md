@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-motion
 
-Typings are for version 2.4.1
+Typings are for version 2.6.2
 
 ## Library description:
 React lifecycle controlled motion library
@@ -10,10 +10,10 @@ React lifecycle controlled motion library
 | ------------------ | :-------------: |
 | Full name          | rc-motion |
 | Keywords           | react, react-component, react-motion, motion, antd, ant-design |
-| # releases         | 14 |
-| # dependents       | 18 |
-| # downloads        | 1360336 |
-| # stars            | 0 |
+| # releases         | 32 |
+| # dependents       | 0.0 |
+| # downloads        | 4751031.333333333 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](https://react-component.github.io/motion)

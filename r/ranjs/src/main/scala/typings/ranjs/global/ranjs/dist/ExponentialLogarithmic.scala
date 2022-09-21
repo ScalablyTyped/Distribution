@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.ExponentialLogarithmic")
 @js.native
-class ExponentialLogarithmic ()
+open class ExponentialLogarithmic ()
   extends typings.ranjs.mod.dist.ExponentialLogarithmic {
   def this(p: Double) = this()
   def this(p: Double, beta: Double) = this()

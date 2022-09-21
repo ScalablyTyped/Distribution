@@ -38,11 +38,11 @@ object ListbarOptions {
     
     inline def setCommands(value: js.Array[ListbarCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    inline def setCommandsVarargs(value: ListbarCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: ListbarCommand*): Self = StObject.set(x, "commands", js.Array(value*))
     
     inline def setItems(value: js.Array[ListbarCommand]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ListbarCommand*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ListbarCommand*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setStyle(value: ListElementStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

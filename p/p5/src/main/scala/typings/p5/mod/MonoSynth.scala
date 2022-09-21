@@ -53,7 +53,7 @@ trait MonoSynth extends StObject {
     *   @param [secondsFromNow] time from now (in seconds)
     *   at which to play
     *   @param [sustainTime] time to sustain before
-    *   releasing the envelope
+    *   releasing the envelope. Defaults to 0.15 seconds.
     */
   def play(note: String): Unit = js.native
   def play(note: String, velocity: Double): Unit = js.native

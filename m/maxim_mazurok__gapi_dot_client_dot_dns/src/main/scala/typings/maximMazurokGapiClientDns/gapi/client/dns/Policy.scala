@@ -16,8 +16,8 @@ trait Policy extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows networks bound to this policy to receive DNS queries sent by VMs or applications over VPN connections. When enabled, a virtual IP address will be allocated from each of the
-    * sub-networks that are bound to this policy.
+    * Allows networks bound to this policy to receive DNS queries sent by VMs or applications over VPN connections. When enabled, a virtual IP address is allocated from each of the
+    * subnetworks that are bound to this policy.
     */
   var enableInboundForwarding: js.UndefOr[Boolean] = js.undefined
   
@@ -29,7 +29,7 @@ trait Policy extends StObject {
   
   var kind: js.UndefOr[String] = js.undefined
   
-  /** User assigned name for this policy. */
+  /** User-assigned name for this policy. */
   var name: js.UndefOr[String] = js.undefined
   
   /** List of network names specifying networks to which this policy is applied. */
@@ -76,6 +76,6 @@ object Policy {
     
     inline def setNetworksUndefined: Self = StObject.set(x, "networks", js.undefined)
     
-    inline def setNetworksVarargs(value: PolicyNetwork*): Self = StObject.set(x, "networks", js.Array(value :_*))
+    inline def setNetworksVarargs(value: PolicyNetwork*): Self = StObject.set(x, "networks", js.Array(value*))
   }
 }

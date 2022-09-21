@@ -14,7 +14,7 @@ trait ASPxClientSeriesPoint
   /**
     * Gets the data point's argument.
     */
-  var argument: js.Any
+  var argument: Any
   
   /**
     * Gets the color of a series point.
@@ -44,19 +44,19 @@ trait ASPxClientSeriesPoint
   /**
     * Gets the point's data value(s).
     */
-  var values: js.Array[js.Any]
+  var values: js.Array[Any]
 }
 object ASPxClientSeriesPoint {
   
   inline def apply(
-    argument: js.Any,
+    argument: Any,
     chart: ASPxClientWebChart,
     color: String,
     percentValue: Double,
     series: ASPxClientSeries,
     toolTipHint: String,
     toolTipText: String,
-    values: js.Array[js.Any]
+    values: js.Array[Any]
   ): ASPxClientSeriesPoint = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], percentValue = percentValue.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], toolTipHint = toolTipHint.asInstanceOf[js.Any], toolTipText = toolTipText.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSeriesPoint]
@@ -64,7 +64,7 @@ object ASPxClientSeriesPoint {
   
   extension [Self <: ASPxClientSeriesPoint](x: Self) {
     
-    inline def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
@@ -76,8 +76,8 @@ object ASPxClientSeriesPoint {
     
     inline def setToolTipText(value: String): Self = StObject.set(x, "toolTipText", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

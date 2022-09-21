@@ -30,7 +30,7 @@ trait XBitmapCanvas
     * This method copies a rectangular area from a place of one canvas to a place on another. Source and destination areas are permitted to overlap. If the
     * source view or render state has a clipping set, the regions clipped away from the source rectangle are regarded fully transparent for the copy
     * operation. The device color for both source and destination render state is ignored, the compositing mode only for the source render state.
-    * @param sourceCanvas {@link Canvas} from which to copy the bitmap data. Can be identical to the canvas this method is called on, but must be valid.
+    * @param sourceCanvas from which to copy the bitmap data. Can be identical to the canvas this method is called on, but must be valid.
     * @param sourceRect Rectangle from which to copy the bitmap data. This rectangle is subject to both view and render transformation, before being applied.
     * @param sourceViewState The view state to apply to the source of this copy operation. The view transformation must be non-singular.
     * @param sourceRenderState The render state to apply to the source of this copy operation. The render transformation must be non-singular, and the composi
@@ -70,7 +70,7 @@ object XBitmapCanvas {
     fillTexturedPolyPolygon: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture]) => XCachedPrimitive,
     getDevice: () => XGraphicDevice,
     queryAvailableFonts: (FontInfo, SeqEquiv[PropertyValue]) => SafeArray[FontInfo],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryStrokeShapes: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XPolyPolygon2D,
     release: () => Unit,
     strokePolyPolygon: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XCachedPrimitive,

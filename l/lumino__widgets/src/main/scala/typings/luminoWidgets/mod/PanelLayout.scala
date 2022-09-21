@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the layout.
   */
-class PanelLayout ()
+open class PanelLayout ()
   extends typings.luminoWidgets.panellayoutMod.PanelLayout {
   def this(options: IOptions) = this()
 }

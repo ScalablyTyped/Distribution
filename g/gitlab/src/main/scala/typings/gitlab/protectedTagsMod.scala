@@ -14,7 +14,7 @@ object protectedTagsMod {
   
   @JSImport("gitlab/dist/types/core/services/ProtectedTags", "ProtectedTags")
   @js.native
-  class ProtectedTags () extends BaseService {
+  open class ProtectedTags () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native

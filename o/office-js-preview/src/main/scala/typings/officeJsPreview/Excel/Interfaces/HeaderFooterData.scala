@@ -8,55 +8,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HeaderFooterData extends StObject {
   
   /**
-    *
     * The center footer of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var centerFooter: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The center header of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var centerHeader: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The left footer of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var leftFooter: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The left header of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var leftHeader: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The right footer of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rightFooter: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The right header of the worksheet.
     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rightHeader: js.UndefOr[String] = js.undefined

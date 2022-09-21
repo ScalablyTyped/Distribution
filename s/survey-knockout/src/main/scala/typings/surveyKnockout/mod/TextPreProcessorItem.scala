@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "TextPreProcessorItem")
 @js.native
-class TextPreProcessorItem () extends StObject {
+open class TextPreProcessorItem () extends StObject {
   
   var end: Double = js.native
   

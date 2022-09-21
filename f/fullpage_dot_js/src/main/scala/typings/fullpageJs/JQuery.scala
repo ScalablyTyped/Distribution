@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JQuery extends StObject {
   
-  def fullpage(): js.Any
-  def fullpage(options: FullPageJsOptions): js.Any
+  def fullpage(): Any
+  def fullpage(options: FullPageJsOptions): Any
   @JSName("fullpage")
   var fullpage_Original: FullPageJs
 }

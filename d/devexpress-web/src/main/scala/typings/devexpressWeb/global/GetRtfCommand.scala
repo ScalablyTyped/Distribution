@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("GetRtfCommand")
 @js.native
-class GetRtfCommand ()
+open class GetRtfCommand ()
   extends StObject
      with typings.devexpressWeb.GetRtfCommand {
   

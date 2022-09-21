@@ -13,22 +13,26 @@ trait SVGPatternElement
      with SVGURIReference {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val height: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val patternContentUnits: SVGAnimatedEnumeration = js.native
   
+  /* standard dom */
   val patternTransform: SVGAnimatedTransformList = js.native
   
+  /* standard dom */
   val patternUnits: SVGAnimatedEnumeration = js.native
   
   /* InferMemberOverrides */
@@ -42,9 +46,12 @@ trait SVGPatternElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val width: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val x: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val y: SVGAnimatedLength = js.native
 }

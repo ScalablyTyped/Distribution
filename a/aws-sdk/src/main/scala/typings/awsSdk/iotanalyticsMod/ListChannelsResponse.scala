@@ -29,7 +29,7 @@ object ListChannelsResponse {
     
     inline def setChannelSummariesUndefined: Self = StObject.set(x, "channelSummaries", js.undefined)
     
-    inline def setChannelSummariesVarargs(value: ChannelSummary*): Self = StObject.set(x, "channelSummaries", js.Array(value :_*))
+    inline def setChannelSummariesVarargs(value: ChannelSummary*): Self = StObject.set(x, "channelSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

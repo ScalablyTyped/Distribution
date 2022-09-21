@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.toastMod.IToastProps
+import typings.blueprintjsCore.toastMod.ToastProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Toast")
 @js.native
-class Toast protected ()
+open class Toast protected ()
   extends typings.blueprintjsCore.componentsMod.Toast {
-  def this(props: IToastProps) = this()
-  def this(props: IToastProps, context: js.Any) = this()
+  def this(props: ToastProps) = this()
+  def this(props: ToastProps, context: Any) = this()
 }
 /* static members */
 object Toast {
@@ -21,8 +21,8 @@ object Toast {
   
   @JSImport("@blueprintjs/core", "Toast.defaultProps")
   @js.native
-  def defaultProps: IToastProps = js.native
-  inline def defaultProps_=(x: IToastProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: ToastProps = js.native
+  inline def defaultProps_=(x: ToastProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core", "Toast.displayName")
   @js.native

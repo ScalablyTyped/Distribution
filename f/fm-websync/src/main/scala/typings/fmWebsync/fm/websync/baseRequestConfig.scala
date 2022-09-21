@@ -9,7 +9,7 @@ trait baseRequestConfig extends StObject {
   /**
     * Extra meta data to associate with the request/response.
     */
-  var meta: js.UndefOr[js.Any] = js.undefined
+  var meta: js.UndefOr[Any] = js.undefined
   
   /**
     * The URL of the proxy to use for this request.
@@ -38,7 +38,7 @@ object baseRequestConfig {
   
   extension [Self <: baseRequestConfig](x: Self) {
     
-    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     

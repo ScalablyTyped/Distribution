@@ -10,6 +10,6 @@ object useEventCallbackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */](): TCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[TCallback]
-  inline def default[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: TCallback): TCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[TCallback]
+  inline def default[TCallback /* <: js.Function1[/* repeated */ Any, Any] */](): TCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[TCallback]
+  inline def default[TCallback /* <: js.Function1[/* repeated */ Any, Any] */](fn: TCallback): TCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[TCallback]
 }

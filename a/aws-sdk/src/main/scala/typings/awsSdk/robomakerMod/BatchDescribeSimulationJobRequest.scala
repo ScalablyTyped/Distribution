@@ -22,6 +22,6 @@ object BatchDescribeSimulationJobRequest {
     
     inline def setJobs(value: Arns): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    inline def setJobsVarargs(value: Arn*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: Arn*): Self = StObject.set(x, "jobs", js.Array(value*))
   }
 }

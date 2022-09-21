@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ComponentProps
   extends StObject
-     with HTMLProps[js.Any]
+     with HTMLProps[Any]
      with /**
   * 渲染编辑回调
   */
 // renderEditer?:(React.ComponentClass<FitGaea.ComponentProps>,{})=>void
-/* x */ StringDictionary[js.Any] {
+/* x */ StringDictionary[Any] {
   
   /**
     * 是否可以拖入子元素
@@ -23,7 +23,7 @@ trait ComponentProps
   /**
     * 父组件传递的数据
     */
-  var gaeaData: js.UndefOr[js.Any] = js.undefined
+  var gaeaData: js.UndefOr[Any] = js.undefined
   
   /**
     * 编辑信息
@@ -83,7 +83,7 @@ object ComponentProps {
     
     inline def setCanDragInUndefined: Self = StObject.set(x, "canDragIn", js.undefined)
     
-    inline def setGaeaData(value: js.Any): Self = StObject.set(x, "gaeaData", value.asInstanceOf[js.Any])
+    inline def setGaeaData(value: Any): Self = StObject.set(x, "gaeaData", value.asInstanceOf[js.Any])
     
     inline def setGaeaDataUndefined: Self = StObject.set(x, "gaeaData", js.undefined)
     
@@ -91,7 +91,7 @@ object ComponentProps {
     
     inline def setGaeaEditUndefined: Self = StObject.set(x, "gaeaEdit", js.undefined)
     
-    inline def setGaeaEditVarargs(value: ComponentPropsGaeaEdit*): Self = StObject.set(x, "gaeaEdit", js.Array(value :_*))
+    inline def setGaeaEditVarargs(value: ComponentPropsGaeaEdit*): Self = StObject.set(x, "gaeaEdit", js.Array(value*))
     
     inline def setGaeaEvent(value: GaeaEvent): Self = StObject.set(x, "gaeaEvent", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object ComponentProps {
     
     inline def setGaeaEventDataUndefined: Self = StObject.set(x, "gaeaEventData", js.undefined)
     
-    inline def setGaeaEventDataVarargs(value: EventData*): Self = StObject.set(x, "gaeaEventData", js.Array(value :_*))
+    inline def setGaeaEventDataVarargs(value: EventData*): Self = StObject.set(x, "gaeaEventData", js.Array(value*))
     
     inline def setGaeaEventUndefined: Self = StObject.set(x, "gaeaEvent", js.undefined)
     
@@ -113,7 +113,7 @@ object ComponentProps {
     
     inline def setGaeaNativeEventDataUndefined: Self = StObject.set(x, "gaeaNativeEventData", js.undefined)
     
-    inline def setGaeaNativeEventDataVarargs(value: EventData*): Self = StObject.set(x, "gaeaNativeEventData", js.Array(value :_*))
+    inline def setGaeaNativeEventDataVarargs(value: EventData*): Self = StObject.set(x, "gaeaNativeEventData", js.Array(value*))
     
     inline def setGaeaPreview(value: Boolean): Self = StObject.set(x, "gaeaPreview", value.asInstanceOf[js.Any])
     

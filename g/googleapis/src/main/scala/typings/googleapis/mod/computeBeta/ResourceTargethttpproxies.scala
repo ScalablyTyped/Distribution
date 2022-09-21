@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "compute_beta.Resource$Targethttpproxies")
 @js.native
-class ResourceTargethttpproxies protected ()
+open class ResourceTargethttpproxies protected ()
   extends typings.googleapis.betaMod.computeBeta.ResourceTargethttpproxies {
   def this(context: APIRequestContext) = this()
 }

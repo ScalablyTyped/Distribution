@@ -33,6 +33,6 @@ object ListMultipartUploadsOutput {
     
     inline def setUploadsListUndefined: Self = StObject.set(x, "UploadsList", js.undefined)
     
-    inline def setUploadsListVarargs(value: UploadListElement*): Self = StObject.set(x, "UploadsList", js.Array(value :_*))
+    inline def setUploadsListVarargs(value: UploadListElement*): Self = StObject.set(x, "UploadsList", js.Array(value*))
   }
 }

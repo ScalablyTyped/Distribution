@@ -15,7 +15,7 @@ trait DurandalAppModule
     * @param {object} obj The object whose dialog should be closed.
     * @param {object} results* The results to return back to the dialog caller after closing.
     */
-  def closeDialog(obj: js.Any, results: js.Any*): Unit = js.native
+  def closeDialog(obj: Any, results: Any*): Unit = js.native
   
   /**
     * Configures one or more plugins to be loaded and installed into the application.
@@ -32,12 +32,12 @@ trait DurandalAppModule
     * @param {string} [transition] The transition to use from the previous root (or splash screen) into the new root.
     * @param {string} [applicationHost] The application host element id. By default the id 'applicationHost' will be used.
     */
-  def setRoot(root: js.Any): Unit = js.native
-  def setRoot(root: js.Any, transition: String): Unit = js.native
-  def setRoot(root: js.Any, transition: String, applicationHost: String): Unit = js.native
-  def setRoot(root: js.Any, transition: String, applicationHost: HTMLElement): Unit = js.native
-  def setRoot(root: js.Any, transition: Unit, applicationHost: String): Unit = js.native
-  def setRoot(root: js.Any, transition: Unit, applicationHost: HTMLElement): Unit = js.native
+  def setRoot(root: Any): Unit = js.native
+  def setRoot(root: Any, transition: String): Unit = js.native
+  def setRoot(root: Any, transition: String, applicationHost: String): Unit = js.native
+  def setRoot(root: Any, transition: String, applicationHost: HTMLElement): Unit = js.native
+  def setRoot(root: Any, transition: Unit, applicationHost: String): Unit = js.native
+  def setRoot(root: Any, transition: Unit, applicationHost: HTMLElement): Unit = js.native
   
   /**
     * Shows a dialog via the dialog plugin.
@@ -46,10 +46,10 @@ trait DurandalAppModule
     * @param {string} [context] The name of the dialog context to use. Uses the default context if none is specified.
     * @returns {Promise} A promise that resolves when the dialog is closed and returns any data passed at the time of closing.
     */
-  def showDialog(obj: js.Any): DurandalPromise[js.Any] = js.native
-  def showDialog(obj: js.Any, activationData: js.Any): DurandalPromise[js.Any] = js.native
-  def showDialog(obj: js.Any, activationData: js.Any, context: String): DurandalPromise[js.Any] = js.native
-  def showDialog(obj: js.Any, activationData: Unit, context: String): DurandalPromise[js.Any] = js.native
+  def showDialog(obj: Any): DurandalPromise[Any] = js.native
+  def showDialog(obj: Any, activationData: Any): DurandalPromise[Any] = js.native
+  def showDialog(obj: Any, activationData: Any, context: String): DurandalPromise[Any] = js.native
+  def showDialog(obj: Any, activationData: Unit, context: String): DurandalPromise[Any] = js.native
   
   /**
     * Shows a message box via the dialog plugin.
@@ -114,7 +114,7 @@ trait DurandalAppModule
     * Starts the application.
     * @returns {promise}
     */
-  def start(): DurandalPromise[js.Any] = js.native
+  def start(): DurandalPromise[Any] = js.native
   
   /**
     * The title of your application.

@@ -29,7 +29,7 @@ object GetConnectedBluetoothDevicesSuccess {
     
     inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    inline def setDevicesVarargs(value: GetConnectedBluetoothDevicesSuccessData*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: GetConnectedBluetoothDevicesSuccessData*): Self = StObject.set(x, "devices", js.Array(value*))
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

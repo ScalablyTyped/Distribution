@@ -14,7 +14,7 @@ trait TrafficPercentStrategy extends StObject {
   var percentages: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.TrafficPercentStrategy & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.TrafficPercentStrategy & TopLevel[Any]
   ] = js.undefined
 }
 object TrafficPercentStrategy {
@@ -29,7 +29,7 @@ object TrafficPercentStrategy {
     inline def setPercentages(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.TrafficPercentStrategy & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.TrafficPercentStrategy & TopLevel[Any]
     ): Self = StObject.set(x, "percentages", value.asInstanceOf[js.Any])
     
     inline def setPercentagesUndefined: Self = StObject.set(x, "percentages", js.undefined)

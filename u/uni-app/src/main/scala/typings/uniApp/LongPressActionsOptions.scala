@@ -56,7 +56,7 @@ object LongPressActionsOptions {
     
     inline def setItemListUndefined: Self = StObject.set(x, "itemList", js.undefined)
     
-    inline def setItemListVarargs(value: String*): Self = StObject.set(x, "itemList", js.Array(value :_*))
+    inline def setItemListVarargs(value: String*): Self = StObject.set(x, "itemList", js.Array(value*))
     
     inline def setSuccess(value: /* result */ LongPressActionsSuccessData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

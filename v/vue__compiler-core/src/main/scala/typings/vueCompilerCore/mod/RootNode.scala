@@ -20,6 +20,8 @@ trait RootNode
   
   var directives: js.Array[String]
   
+  var filters: js.UndefOr[js.Array[String]] = js.undefined
+  
   var helpers: js.Array[js.Symbol]
   
   var hoists: js.Array[JSChildNode | Null]
@@ -57,7 +59,7 @@ object RootNode {
     
     inline def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setCodegenNode(value: TemplateChildNode | JSChildNode | BlockStatement): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
@@ -65,29 +67,35 @@ object RootNode {
     
     inline def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    inline def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value*))
     
     inline def setDirectives(value: js.Array[String]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    inline def setDirectivesVarargs(value: String*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: String*): Self = StObject.set(x, "directives", js.Array(value*))
+    
+    inline def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    
+    inline def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setHelpers(value: js.Array[js.Symbol]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
-    inline def setHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "helpers", js.Array(value :_*))
+    inline def setHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "helpers", js.Array(value*))
     
     inline def setHoists(value: js.Array[JSChildNode | Null]): Self = StObject.set(x, "hoists", value.asInstanceOf[js.Any])
     
-    inline def setHoistsVarargs(value: (JSChildNode | Null)*): Self = StObject.set(x, "hoists", js.Array(value :_*))
+    inline def setHoistsVarargs(value: (JSChildNode | Null)*): Self = StObject.set(x, "hoists", js.Array(value*))
     
     inline def setImports(value: js.Array[ImportItem]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    inline def setImportsVarargs(value: ImportItem*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: ImportItem*): Self = StObject.set(x, "imports", js.Array(value*))
     
     inline def setSsrHelpers(value: js.Array[js.Symbol]): Self = StObject.set(x, "ssrHelpers", value.asInstanceOf[js.Any])
     
     inline def setSsrHelpersUndefined: Self = StObject.set(x, "ssrHelpers", js.undefined)
     
-    inline def setSsrHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "ssrHelpers", js.Array(value :_*))
+    inline def setSsrHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "ssrHelpers", js.Array(value*))
     
     inline def setTemps(value: Double): Self = StObject.set(x, "temps", value.asInstanceOf[js.Any])
     

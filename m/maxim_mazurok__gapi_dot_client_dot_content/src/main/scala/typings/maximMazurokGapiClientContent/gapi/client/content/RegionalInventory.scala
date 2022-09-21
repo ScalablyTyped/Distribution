@@ -12,7 +12,7 @@ trait RegionalInventory extends StObject {
   /** A list of custom (merchant-provided) attributes. It can also be used for submitting any attribute of the feed specification in its generic form. */
   var customAttributes: js.UndefOr[js.Array[CustomAttribute]] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#regionalInventory". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#regionalInventory`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The price of the product. */
@@ -44,7 +44,7 @@ object RegionalInventory {
     
     inline def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
     
-    inline def setCustomAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "customAttributes", js.Array(value :_*))
+    inline def setCustomAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "customAttributes", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

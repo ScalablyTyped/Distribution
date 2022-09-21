@@ -25,12 +25,12 @@ object BulkEditAssignedLocationsRequest {
     
     inline def setCreatedAssignedLocationsUndefined: Self = StObject.set(x, "createdAssignedLocations", js.undefined)
     
-    inline def setCreatedAssignedLocationsVarargs(value: AssignedLocation*): Self = StObject.set(x, "createdAssignedLocations", js.Array(value :_*))
+    inline def setCreatedAssignedLocationsVarargs(value: AssignedLocation*): Self = StObject.set(x, "createdAssignedLocations", js.Array(value*))
     
     inline def setDeletedAssignedLocations(value: js.Array[String]): Self = StObject.set(x, "deletedAssignedLocations", value.asInstanceOf[js.Any])
     
     inline def setDeletedAssignedLocationsUndefined: Self = StObject.set(x, "deletedAssignedLocations", js.undefined)
     
-    inline def setDeletedAssignedLocationsVarargs(value: String*): Self = StObject.set(x, "deletedAssignedLocations", js.Array(value :_*))
+    inline def setDeletedAssignedLocationsVarargs(value: String*): Self = StObject.set(x, "deletedAssignedLocations", js.Array(value*))
   }
 }

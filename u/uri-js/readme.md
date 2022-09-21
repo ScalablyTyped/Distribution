@@ -1,7 +1,7 @@
 
 # Scala.js typings for uri-js
 
-Typings are for version 4.4.0
+Typings are for version 4.4.1
 
 ## Library description:
 An RFC 3986/3987 compliant, scheme extendable URI/IRI parsing/validating/resolving library for JavaScript.
@@ -10,10 +10,10 @@ An RFC 3986/3987 compliant, scheme extendable URI/IRI parsing/validating/resolvi
 | ------------------ | :-------------: |
 | Full name          | uri-js |
 | Keywords           | URI, IRI, IDN, URN, UUID, HTTP, HTTPS, WS, WSS, MAILTO, RFC3986, RFC3987, RFC5891, RFC2616, RFC2818, RFC2141, RFC4122, RFC4291, RFC5952, RFC6068, RFC6455, RFC6874 |
-| # releases         | 4 |
-| # dependents       | 239 |
-| # downloads        | 876065178 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2623237533333333E8 |
+| # stars            | 278.0 |
 
 ## Links
 - [Homepage](https://github.com/garycourt/uri-js)

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WindowLocalStorage extends StObject {
   
+  /* standard dom */
   val localStorage: Storage
 }
 object WindowLocalStorage {

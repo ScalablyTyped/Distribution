@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateRequestValidatorRequest extends StObject {
   
   /**
-    * A list of update operations to be applied to the specified resource and in the order specified in this list.
+    * For more information about supported patch operations, see Patch Operations.
     */
   var patchOperations: js.UndefOr[ListOfPatchOperation] = js.undefined
   
   /**
-    * [Required] The identifier of RequestValidator to be updated.
+    * The identifier of RequestValidator to be updated.
     */
   var requestValidatorId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }
@@ -34,7 +34,7 @@ object UpdateRequestValidatorRequest {
     
     inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value*))
     
     inline def setRequestValidatorId(value: String): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
     

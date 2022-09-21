@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-beautiful-dnd
 
-Typings are for version 13.0
+Typings are for version 13.1
 
 ## Library description:
 Beautiful and accessible drag and drop for lists with React
@@ -10,10 +10,10 @@ Beautiful and accessible drag and drop for lists with React
 | ------------------ | :-------------: |
 | Full name          | react-beautiful-dnd |
 | Keywords           | drag and drop, dnd, sortable, reorder, reorderable, react, react.js, natural, beautiful, accessible |
-| # releases         | 39 |
-| # dependents       | 447 |
-| # downloads        | 27656159 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5156983.666666667 |
+| # stars            | 27834.0 |
 
 ## Links
 - [Homepage](https://github.com/atlassian/react-beautiful-dnd#readme)

@@ -1,19 +1,19 @@
 
 # Scala.js typings for koa__router
 
-Typings are for version 8.x
+Typings are for version 12.x
 
 ## Library description:
-Router middleware for koa. Provides RESTful resource routing.
+Router middleware for koa. Maintained by Forward Email and Lad.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @koa/router |
 | Keywords           | koa, middleware, route, router |
-| # releases         | 18 |
-| # dependents       | 133 |
-| # downloads        | 1810219 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1775922.3333333333 |
+| # stars            | 695.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/router)

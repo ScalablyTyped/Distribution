@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Frechet")
 @js.native
-class Frechet ()
+open class Frechet ()
   extends typings.ranjs.mod.dist.Frechet {
   def this(alpha: Double) = this()
   def this(alpha: Double, s: Double) = this()

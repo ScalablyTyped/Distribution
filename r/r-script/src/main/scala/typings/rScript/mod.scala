@@ -29,7 +29,7 @@ object mod {
   
   trait Options
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var Date: js.UndefOr[ISO8601 | epoch] = js.undefined
     
@@ -123,12 +123,12 @@ object mod {
   @js.native
   trait R extends StObject {
     
-    def call(callback: js.Function2[/* err */ js.Any, /* d */ js.Any, Unit]): Unit = js.native
-    def call(options: Options, callback: js.Function2[/* err */ js.Any, /* d */ js.Any, Unit]): Unit = js.native
+    def call(callback: js.Function2[/* err */ Any, /* d */ Any, Unit]): Unit = js.native
+    def call(options: Options, callback: js.Function2[/* err */ Any, /* d */ Any, Unit]): Unit = js.native
     
-    def callSync(): js.Any = js.native
-    def callSync(options: Options): js.Any = js.native
+    def callSync(): Any = js.native
+    def callSync(options: Options): Any = js.native
     
-    def data(args: js.Any*): this.type = js.native
+    def data(args: Any*): this.type = js.native
   }
 }

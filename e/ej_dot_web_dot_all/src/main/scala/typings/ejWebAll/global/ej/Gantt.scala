@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Gantt")
 @js.native
-class Gantt protected ()
+open class Gantt protected ()
   extends StObject
      with typings.ejWebAll.ej.Gantt {
   def this(element: JQuery) = this()
@@ -51,8 +51,8 @@ object Gantt {
   /* static member */
   @JSGlobal("ej.Gantt.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Gantt.RowPosition")
   @js.native

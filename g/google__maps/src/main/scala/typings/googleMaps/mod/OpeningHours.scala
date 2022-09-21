@@ -33,10 +33,10 @@ object OpeningHours {
     
     inline def setPeriods(value: js.Array[OpeningPeriod]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     
-    inline def setPeriodsVarargs(value: OpeningPeriod*): Self = StObject.set(x, "periods", js.Array(value :_*))
+    inline def setPeriodsVarargs(value: OpeningPeriod*): Self = StObject.set(x, "periods", js.Array(value*))
     
     inline def setWeekday_text(value: js.Array[String]): Self = StObject.set(x, "weekday_text", value.asInstanceOf[js.Any])
     
-    inline def setWeekday_textVarargs(value: String*): Self = StObject.set(x, "weekday_text", js.Array(value :_*))
+    inline def setWeekday_textVarargs(value: String*): Self = StObject.set(x, "weekday_text", js.Array(value*))
   }
 }

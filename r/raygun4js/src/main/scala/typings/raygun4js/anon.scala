@@ -114,7 +114,7 @@ object anon {
       
       inline def setStackTrace(value: js.Array[RaygunStackTrace]): Self = StObject.set(x, "StackTrace", value.asInstanceOf[js.Any])
       
-      inline def setStackTraceVarargs(value: RaygunStackTrace*): Self = StObject.set(x, "StackTrace", js.Array(value :_*))
+      inline def setStackTraceVarargs(value: RaygunStackTrace*): Self = StObject.set(x, "StackTrace", js.Array(value*))
     }
   }
   
@@ -134,7 +134,7 @@ object anon {
     
     var User: Email
     
-    var UserCustomData: js.Any
+    var UserCustomData: Any
     
     var Version: String
   }
@@ -147,7 +147,7 @@ object anon {
       Request: Headers,
       Tags: js.Array[String],
       User: Email,
-      UserCustomData: js.Any,
+      UserCustomData: Any,
       Version: String
     ): Client = {
       val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any], Environment = Environment.asInstanceOf[js.Any], Error = Error.asInstanceOf[js.Any], Request = Request.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any], User = User.asInstanceOf[js.Any], UserCustomData = UserCustomData.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
@@ -170,11 +170,11 @@ object anon {
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "Tags", js.Array(value*))
       
       inline def setUser(value: Email): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
       
-      inline def setUserCustomData(value: js.Any): Self = StObject.set(x, "UserCustomData", value.asInstanceOf[js.Any])
+      inline def setUserCustomData(value: Any): Self = StObject.set(x, "UserCustomData", value.asInstanceOf[js.Any])
       
       inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     }
@@ -213,7 +213,7 @@ object anon {
     
     var IsAnonymous: js.UndefOr[Boolean] = js.undefined
     
-    var UUID: js.UndefOr[js.Any] = js.undefined
+    var UUID: js.UndefOr[Any] = js.undefined
   }
   object Email {
     
@@ -244,7 +244,7 @@ object anon {
       
       inline def setIsAnonymousUndefined: Self = StObject.set(x, "IsAnonymous", js.undefined)
       
-      inline def setUUID(value: js.Any): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
+      inline def setUUID(value: Any): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
       
       inline def setUUIDUndefined: Self = StObject.set(x, "UUID", js.undefined)
     }
@@ -309,11 +309,11 @@ object anon {
     
     var message: String
     
-    var metadata: js.Any
+    var metadata: Any
   }
   object Level {
     
-    inline def apply(level: BreadcrumbLevel, location: String, message: String, metadata: js.Any): Level = {
+    inline def apply(level: BreadcrumbLevel, location: String, message: String, metadata: Any): Level = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[Level]
     }
@@ -326,7 +326,7 @@ object anon {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
   }
   

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Collapse extends StObject {
   
-  var collapse: js.UndefOr[js.Any] = js.undefined
+  var collapse: js.UndefOr[Any] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var expand: js.UndefOr[js.Any] = js.undefined
+  var expand: js.UndefOr[Any] = js.undefined
 }
 object Collapse {
   
@@ -22,7 +22,7 @@ object Collapse {
   
   extension [Self <: Collapse](x: Self) {
     
-    inline def setCollapse(value: js.Any): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+    inline def setCollapse(value: Any): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     
     inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
@@ -30,7 +30,7 @@ object Collapse {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setExpand(value: js.Any): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: Any): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
   }

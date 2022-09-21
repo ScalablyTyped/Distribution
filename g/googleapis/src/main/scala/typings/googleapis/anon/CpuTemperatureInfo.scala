@@ -25,13 +25,13 @@ object CpuTemperatureInfo {
     
     inline def setCpuTemperatureInfoUndefined: Self = StObject.set(x, "cpuTemperatureInfo", js.undefined)
     
-    inline def setCpuTemperatureInfoVarargs(value: Label*): Self = StObject.set(x, "cpuTemperatureInfo", js.Array(value :_*))
+    inline def setCpuTemperatureInfoVarargs(value: Label*): Self = StObject.set(x, "cpuTemperatureInfo", js.Array(value*))
     
     inline def setCpuUtilizationPercentageInfo(value: js.Array[Double]): Self = StObject.set(x, "cpuUtilizationPercentageInfo", value.asInstanceOf[js.Any])
     
     inline def setCpuUtilizationPercentageInfoUndefined: Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.undefined)
     
-    inline def setCpuUtilizationPercentageInfoVarargs(value: Double*): Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.Array(value :_*))
+    inline def setCpuUtilizationPercentageInfoVarargs(value: Double*): Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.Array(value*))
     
     inline def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
     

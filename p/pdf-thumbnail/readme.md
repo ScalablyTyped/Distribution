@@ -10,10 +10,10 @@ pdf-thumbnail creates a thumbnail of the first page of a pdf file
 | ------------------ | :-------------: |
 | Full name          | pdf-thumbnail |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 53219 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6208.333333333333 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/nicoFuccella/pdf-thumbnail#readme)

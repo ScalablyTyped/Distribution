@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsprintmanager", "JSPM.NetworkPrinter")
 @js.native
-class NetworkPrinter protected ()
+open class NetworkPrinter protected ()
   extends StObject
      with IClientPrinter {
   def this(port: Double) = this()
@@ -15,15 +15,15 @@ class NetworkPrinter protected ()
   def this(port: Double, ipAddress: Unit, dnsName: String) = this()
   
   /* CompleteClass */
-  var Id: js.Any = js.native
+  var Id: Any = js.native
   @JSName("Id")
   var Id_NetworkPrinter: Double = js.native
   
-  /* private */ var _dnsName: js.Any = js.native
+  /* private */ var _dnsName: Any = js.native
   
-  /* private */ var _networkIPAddress: js.Any = js.native
+  /* private */ var _networkIPAddress: Any = js.native
   
-  /* private */ var _networkPort: js.Any = js.native
+  /* private */ var _networkPort: Any = js.native
   
   var dnsName: String = js.native
   
@@ -32,5 +32,5 @@ class NetworkPrinter protected ()
   var port: Double = js.native
   
   /* CompleteClass */
-  override def serialize(): js.Any = js.native
+  override def serialize(): Any = js.native
 }

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.SprayBrush")
 @js.native
-class SprayBrush ()
+open class SprayBrush ()
   extends typings.fabric.fabricImplMod.SprayBrush

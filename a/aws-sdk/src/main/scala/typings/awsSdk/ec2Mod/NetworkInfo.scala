@@ -12,6 +12,11 @@ trait NetworkInfo extends StObject {
   var DefaultNetworkCardIndex: js.UndefOr[typings.awsSdk.ec2Mod.DefaultNetworkCardIndex] = js.undefined
   
   /**
+    * Describes the Elastic Fabric Adapters for the instance type.
+    */
+  var EfaInfo: js.UndefOr[typings.awsSdk.ec2Mod.EfaInfo] = js.undefined
+  
+  /**
     * Indicates whether Elastic Fabric Adapter (EFA) is supported.
     */
   var EfaSupported: js.UndefOr[EfaSupportedFlag] = js.undefined
@@ -20,6 +25,11 @@ trait NetworkInfo extends StObject {
     * Indicates whether Elastic Network Adapter (ENA) is supported.
     */
   var EnaSupport: js.UndefOr[typings.awsSdk.ec2Mod.EnaSupport] = js.undefined
+  
+  /**
+    * Indicates whether the instance type automatically encrypts in-transit traffic between instances.
+    */
+  var EncryptionInTransitSupported: js.UndefOr[typings.awsSdk.ec2Mod.EncryptionInTransitSupported] = js.undefined
   
   /**
     * The maximum number of IPv4 addresses per network interface.
@@ -69,6 +79,10 @@ object NetworkInfo {
     
     inline def setDefaultNetworkCardIndexUndefined: Self = StObject.set(x, "DefaultNetworkCardIndex", js.undefined)
     
+    inline def setEfaInfo(value: EfaInfo): Self = StObject.set(x, "EfaInfo", value.asInstanceOf[js.Any])
+    
+    inline def setEfaInfoUndefined: Self = StObject.set(x, "EfaInfo", js.undefined)
+    
     inline def setEfaSupported(value: EfaSupportedFlag): Self = StObject.set(x, "EfaSupported", value.asInstanceOf[js.Any])
     
     inline def setEfaSupportedUndefined: Self = StObject.set(x, "EfaSupported", js.undefined)
@@ -76,6 +90,10 @@ object NetworkInfo {
     inline def setEnaSupport(value: EnaSupport): Self = StObject.set(x, "EnaSupport", value.asInstanceOf[js.Any])
     
     inline def setEnaSupportUndefined: Self = StObject.set(x, "EnaSupport", js.undefined)
+    
+    inline def setEncryptionInTransitSupported(value: EncryptionInTransitSupported): Self = StObject.set(x, "EncryptionInTransitSupported", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionInTransitSupportedUndefined: Self = StObject.set(x, "EncryptionInTransitSupported", js.undefined)
     
     inline def setIpv4AddressesPerInterface(value: MaxIpv4AddrPerInterface): Self = StObject.set(x, "Ipv4AddressesPerInterface", value.asInstanceOf[js.Any])
     
@@ -101,7 +119,7 @@ object NetworkInfo {
     
     inline def setNetworkCardsUndefined: Self = StObject.set(x, "NetworkCards", js.undefined)
     
-    inline def setNetworkCardsVarargs(value: NetworkCardInfo*): Self = StObject.set(x, "NetworkCards", js.Array(value :_*))
+    inline def setNetworkCardsVarargs(value: NetworkCardInfo*): Self = StObject.set(x, "NetworkCards", js.Array(value*))
     
     inline def setNetworkPerformance(value: NetworkPerformance): Self = StObject.set(x, "NetworkPerformance", value.asInstanceOf[js.Any])
     

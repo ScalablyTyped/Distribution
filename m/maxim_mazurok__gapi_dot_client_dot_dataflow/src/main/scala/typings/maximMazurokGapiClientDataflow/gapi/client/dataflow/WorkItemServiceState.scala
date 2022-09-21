@@ -17,7 +17,7 @@ trait WorkItemServiceState extends StObject {
   var harnessData: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkItemServiceState & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkItemServiceState & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -66,7 +66,7 @@ object WorkItemServiceState {
     inline def setHarnessData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkItemServiceState & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkItemServiceState & TopLevel[Any]
     ): Self = StObject.set(x, "harnessData", value.asInstanceOf[js.Any])
     
     inline def setHarnessDataUndefined: Self = StObject.set(x, "harnessData", js.undefined)
@@ -83,7 +83,7 @@ object WorkItemServiceState {
     
     inline def setMetricShortIdUndefined: Self = StObject.set(x, "metricShortId", js.undefined)
     
-    inline def setMetricShortIdVarargs(value: MetricShortId*): Self = StObject.set(x, "metricShortId", js.Array(value :_*))
+    inline def setMetricShortIdVarargs(value: MetricShortId*): Self = StObject.set(x, "metricShortId", js.Array(value*))
     
     inline def setNextReportIndex(value: String): Self = StObject.set(x, "nextReportIndex", value.asInstanceOf[js.Any])
     

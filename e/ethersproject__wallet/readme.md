@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__wallet
 
-Typings are for version 5.0.8
+Typings are for version 5.7.0
 
 ## Library description:
 Classes for managing, encrypting and decrypting Ethereum private keys as a Signer for ethers.
@@ -10,10 +10,10 @@ Classes for managing, encrypting and decrypting Ethereum private keys as a Signe
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/wallet |
 | Keywords           | Ethereum, ethers |
-| # releases         | 35 |
-| # dependents       | 26 |
-| # downloads        | 1184426 |
-| # stars            | 0 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 2515817.3333333335 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

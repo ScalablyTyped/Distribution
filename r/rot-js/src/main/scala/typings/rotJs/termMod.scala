@@ -8,7 +8,7 @@ object termMod {
   
   @JSImport("rot-js/lib/display/term", JSImport.Default)
   @js.native
-  class default () extends Term
+  open class default () extends Term
   
   @js.native
   trait Term

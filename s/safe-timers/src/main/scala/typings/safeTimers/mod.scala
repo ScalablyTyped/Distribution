@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("safe-timers", "Interval")
   @js.native
-  class Interval () extends StObject {
+  open class Interval () extends StObject {
     
     /**
       * Cancels interval.
@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("safe-timers", "Timeout")
   @js.native
-  class Timeout () extends StObject {
+  open class Timeout () extends StObject {
     
     /**
       * Cancels timeout.
@@ -38,19 +38,19 @@ object mod {
   @js.native
   val maxInterval: Double = js.native
   
-  inline def setInterval[T /* <: js.Array[js.Any] */](
+  inline def setInterval[T /* <: js.Array[Any] */](
     callback: js.Function1[/* args */ T, Unit],
     interval: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(callback.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  inline def setTimeout[T /* <: js.Array[js.Any] */](
+  inline def setTimeout[T /* <: js.Array[Any] */](
     callback: js.Function1[/* args */ T, Unit],
     interval: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): Timeout = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Timeout]
   
-  inline def setTimeoutAt[T /* <: js.Array[js.Any] */](
+  inline def setTimeoutAt[T /* <: js.Array[Any] */](
     callback: js.Function1[/* args */ T, Unit],
     timestamp: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T

@@ -10,10 +10,10 @@ object settingsInputComponentMod {
   
   @JSImport("material-ui/svg-icons/action/settings-input-component", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsInputComponent
+  open class default () extends ActionSettingsInputComponent
   
   @JSImport("material-ui/svg-icons/action/settings-input-component", "ActionSettingsInputComponent")
   @js.native
-  class ActionSettingsInputComponent ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsInputComponent ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -27,7 +27,7 @@ object motionTreeNodeMod extends Shortcut {
   @js.native
   val default: ForwardRefExoticComponent[MotionTreeNodeProps & RefAttributes[HTMLDivElement]] = js.native
   
-  /* Inlined parent std.Omit<rc-tree.rc-tree/es/TreeNode.TreeNodeProps, 'domRef'> */
+  /* Inlined parent std.Omit<rc-tree.rc-tree/es/TreeNode.TreeNodeProps<rc-tree.rc-tree/es/interface.DataNode>, 'domRef'> */
   trait MotionTreeNodeProps extends StObject {
     
     var active: Boolean
@@ -60,6 +60,8 @@ object motionTreeNodeMod extends Shortcut {
     
     var icon: js.UndefOr[IconType] = js.undefined
     
+    var id: js.UndefOr[String] = js.undefined
+    
     var isEnd: js.UndefOr[js.Array[Boolean]] = js.undefined
     
     var isLeaf: js.UndefOr[Boolean] = js.undefined
@@ -70,9 +72,9 @@ object motionTreeNodeMod extends Shortcut {
     
     var loading: js.UndefOr[Boolean] = js.undefined
     
-    var motion: js.UndefOr[js.Any] = js.undefined
+    var motion: js.UndefOr[Any] = js.undefined
     
-    var motionNodes: js.UndefOr[js.Array[FlattenNode]] = js.undefined
+    var motionNodes: js.UndefOr[js.Array[FlattenNode[DataNode]]] = js.undefined
     
     var motionType: js.UndefOr[show | hide] = js.undefined
     
@@ -96,7 +98,7 @@ object motionTreeNodeMod extends Shortcut {
     
     var title: js.UndefOr[ReactNode | (js.Function1[/* data */ DataNode, ReactNode])] = js.undefined
     
-    var treeNodeRequiredProps: TreeNodeRequiredProps
+    var treeNodeRequiredProps: TreeNodeRequiredProps[DataNode]
   }
   object MotionTreeNodeProps {
     
@@ -104,7 +106,7 @@ object motionTreeNodeMod extends Shortcut {
       active: Boolean,
       onMotionEnd: () => Unit,
       onMotionStart: () => Unit,
-      treeNodeRequiredProps: TreeNodeRequiredProps
+      treeNodeRequiredProps: TreeNodeRequiredProps[DataNode]
     ): MotionTreeNodeProps = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], onMotionEnd = js.Any.fromFunction0(onMotionEnd), onMotionStart = js.Any.fromFunction0(onMotionStart), treeNodeRequiredProps = treeNodeRequiredProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[MotionTreeNodeProps]
@@ -168,15 +170,19 @@ object motionTreeNodeMod extends Shortcut {
       
       inline def setIcon(value: IconType): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      inline def setIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+      inline def setIconFunction1(value: /* props */ TreeNodeProps[DataNode] => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setIsEnd(value: js.Array[Boolean]): Self = StObject.set(x, "isEnd", value.asInstanceOf[js.Any])
       
       inline def setIsEndUndefined: Self = StObject.set(x, "isEnd", js.undefined)
       
-      inline def setIsEndVarargs(value: Boolean*): Self = StObject.set(x, "isEnd", js.Array(value :_*))
+      inline def setIsEndVarargs(value: Boolean*): Self = StObject.set(x, "isEnd", js.Array(value*))
       
       inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
@@ -186,7 +192,7 @@ object motionTreeNodeMod extends Shortcut {
       
       inline def setIsStartUndefined: Self = StObject.set(x, "isStart", js.undefined)
       
-      inline def setIsStartVarargs(value: Boolean*): Self = StObject.set(x, "isStart", js.Array(value :_*))
+      inline def setIsStartVarargs(value: Boolean*): Self = StObject.set(x, "isStart", js.Array(value*))
       
       inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
@@ -196,13 +202,13 @@ object motionTreeNodeMod extends Shortcut {
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setMotion(value: js.Any): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+      inline def setMotion(value: Any): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
       
-      inline def setMotionNodes(value: js.Array[FlattenNode]): Self = StObject.set(x, "motionNodes", value.asInstanceOf[js.Any])
+      inline def setMotionNodes(value: js.Array[FlattenNode[DataNode]]): Self = StObject.set(x, "motionNodes", value.asInstanceOf[js.Any])
       
       inline def setMotionNodesUndefined: Self = StObject.set(x, "motionNodes", js.undefined)
       
-      inline def setMotionNodesVarargs(value: FlattenNode*): Self = StObject.set(x, "motionNodes", js.Array(value :_*))
+      inline def setMotionNodesVarargs(value: FlattenNode[DataNode]*): Self = StObject.set(x, "motionNodes", js.Array(value*))
       
       inline def setMotionType(value: show | hide): Self = StObject.set(x, "motionType", value.asInstanceOf[js.Any])
       
@@ -240,7 +246,7 @@ object motionTreeNodeMod extends Shortcut {
       
       inline def setSwitcherIcon(value: IconType): Self = StObject.set(x, "switcherIcon", value.asInstanceOf[js.Any])
       
-      inline def setSwitcherIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
+      inline def setSwitcherIconFunction1(value: /* props */ TreeNodeProps[DataNode] => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
       
       inline def setSwitcherIconUndefined: Self = StObject.set(x, "switcherIcon", js.undefined)
       
@@ -250,7 +256,7 @@ object motionTreeNodeMod extends Shortcut {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTreeNodeRequiredProps(value: TreeNodeRequiredProps): Self = StObject.set(x, "treeNodeRequiredProps", value.asInstanceOf[js.Any])
+      inline def setTreeNodeRequiredProps(value: TreeNodeRequiredProps[DataNode]): Self = StObject.set(x, "treeNodeRequiredProps", value.asInstanceOf[js.Any])
     }
   }
   

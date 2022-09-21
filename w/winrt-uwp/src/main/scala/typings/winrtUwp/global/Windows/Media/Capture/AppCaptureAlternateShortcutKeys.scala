@@ -38,11 +38,11 @@ abstract class AppCaptureAlternateShortcutKeys ()
   var toggleGameBarKeyModifiers: VirtualKeyModifiers = js.native
   
   /* CompleteClass */
-  var toggleMicrophoneCaptureKey: js.Any = js.native
+  var toggleMicrophoneCaptureKey: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var toggleMicrophoneCaptureKeyModifiers: js.Any = js.native
+  var toggleMicrophoneCaptureKeyModifiers: Any = js.native
   
   /* unmapped type */
   /** Gets or sets the toggle recording indicator shortcut key. */

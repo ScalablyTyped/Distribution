@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ForceSyncWithServerCommand")
 @js.native
-class ForceSyncWithServerCommand ()
+open class ForceSyncWithServerCommand ()
   extends StObject
      with typings.devexpressWeb.ForceSyncWithServerCommand {
   

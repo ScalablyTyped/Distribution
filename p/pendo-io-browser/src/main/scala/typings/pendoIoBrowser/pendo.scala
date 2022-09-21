@@ -40,7 +40,7 @@ object pendo {
     
     def getBadgeGuides(): js.Array[Guide]
     
-    def getEventCache(): js.Array[js.Any]
+    def getEventCache(): js.Array[Any]
     
     def getLauncherGuides(): js.Array[Guide]
   }
@@ -50,7 +50,7 @@ object pendo {
       getAllGuides: () => js.Array[Guide],
       getAutoGuides: () => Auto,
       getBadgeGuides: () => js.Array[Guide],
-      getEventCache: () => js.Array[js.Any],
+      getEventCache: () => js.Array[Any],
       getLauncherGuides: () => js.Array[Guide]
     ): Debugging = {
       val __obj = js.Dynamic.literal(getAllGuides = js.Any.fromFunction0(getAllGuides), getAutoGuides = js.Any.fromFunction0(getAutoGuides), getBadgeGuides = js.Any.fromFunction0(getBadgeGuides), getEventCache = js.Any.fromFunction0(getEventCache), getLauncherGuides = js.Any.fromFunction0(getLauncherGuides))
@@ -65,7 +65,7 @@ object pendo {
       
       inline def setGetBadgeGuides(value: () => js.Array[Guide]): Self = StObject.set(x, "getBadgeGuides", js.Any.fromFunction0(value))
       
-      inline def setGetEventCache(value: () => js.Array[js.Any]): Self = StObject.set(x, "getEventCache", js.Any.fromFunction0(value))
+      inline def setGetEventCache(value: () => js.Array[Any]): Self = StObject.set(x, "getEventCache", js.Any.fromFunction0(value))
       
       inline def setGetLauncherGuides(value: () => js.Array[Guide]): Self = StObject.set(x, "getLauncherGuides", js.Any.fromFunction0(value))
     }
@@ -141,11 +141,35 @@ object pendo {
     }
   }
   
+  @js.native
+  trait Feedback extends StObject {
+    
+    def loginAndRedirect(): Unit = js.native
+    def loginAndRedirect(options: FeedbackOptions): Unit = js.native
+  }
+  
+  trait FeedbackOptions extends StObject {
+    
+    var anchor: HTMLElement
+  }
+  object FeedbackOptions {
+    
+    inline def apply(anchor: HTMLElement): FeedbackOptions = {
+      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FeedbackOptions]
+    }
+    
+    extension [Self <: FeedbackOptions](x: Self) {
+      
+      inline def setAnchor(value: HTMLElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Guide extends StObject {
     
     var attributes: Badge
     
-    var audience: js.Array[js.Any]
+    var audience: js.Array[Any]
     
     // TODO
     var audienceUiHint: Filters
@@ -185,7 +209,7 @@ object pendo {
     
     inline def apply(
       attributes: Badge,
-      audience: js.Array[js.Any],
+      audience: js.Array[Any],
       audienceUiHint: Filters,
       createdAt: Double,
       createdByUser: User,
@@ -211,11 +235,11 @@ object pendo {
       
       inline def setAttributes(value: Badge): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def setAudience(value: js.Array[js.Any]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: js.Array[Any]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       inline def setAudienceUiHint(value: Filters): Self = StObject.set(x, "audienceUiHint", value.asInstanceOf[js.Any])
       
-      inline def setAudienceVarargs(value: js.Any*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: Any*): Self = StObject.set(x, "audience", js.Array(value*))
       
       inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -247,7 +271,7 @@ object pendo {
       
       inline def setSteps(value: js.Array[GuideStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      inline def setStepsVarargs(value: GuideStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: GuideStep*): Self = StObject.set(x, "steps", js.Array(value*))
     }
   }
   
@@ -344,6 +368,8 @@ object pendo {
     
     var account: js.UndefOr[IdentityMetadata] = js.undefined
     
+    var parentAccount: js.UndefOr[IdentityMetadata] = js.undefined
+    
     /** visitor.id is required if user is logged in, otherwise an anonymous ID is generated and tracked by a cookie */
     var visitor: js.UndefOr[IdentityMetadata] = js.undefined
   }
@@ -359,6 +385,10 @@ object pendo {
       inline def setAccount(value: IdentityMetadata): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
       inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+      
+      inline def setParentAccount(value: IdentityMetadata): Self = StObject.set(x, "parentAccount", value.asInstanceOf[js.Any])
+      
+      inline def setParentAccountUndefined: Self = StObject.set(x, "parentAccount", js.undefined)
       
       inline def setVisitor(value: IdentityMetadata): Self = StObject.set(x, "visitor", value.asInstanceOf[js.Any])
       
@@ -438,7 +468,7 @@ object pendo {
     }
   }
   
-  type Metadata = StringDictionary[String | Double | Boolean]
+  type Metadata = StringDictionary[String | Double | Boolean | js.Array[String]]
   
   @js.native
   trait Pendo extends StObject {
@@ -447,7 +477,7 @@ object pendo {
     
     def disableDebugging(): Unit = js.native
     
-    def dom(input: js.Any): HTMLElement = js.native
+    def dom(input: Any): HTMLElement = js.native
     
     // Debugging
     def enableDebugging(): Unit = js.native
@@ -455,12 +485,15 @@ object pendo {
     // Events
     var events: Events = js.native
     
+    // feedback
+    var feedback: Feedback = js.native
+    
     def findGuideById(id: String): Guide | Unit = js.native
     
     // Guides and Guide Center
     def findGuideByName(name: String): Guide | Unit = js.native
     
-    def flushNow(): js.Promise[js.Any] = js.native
+    def flushNow(): js.Promise[Any] = js.native
     
     def getAccountId(): String = js.native
     

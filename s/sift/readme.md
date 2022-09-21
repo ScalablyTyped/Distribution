@@ -1,19 +1,19 @@
 
 # Scala.js typings for sift
 
-Typings are for version 5.1.0
+Typings are for version 16.0.0
 
 ## Library description:
-mongodb query style array filtering
+MongoDB query filtering in JavaScript
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sift |
 | Keywords           | - |
 | # releases         | 22 |
-| # dependents       | 239 |
-| # downloads        | 22729916 |
-| # stars            | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 7603061.0 |
+| # stars            | 1546.0 |
 
 ## Links
 - [Homepage](https://github.com/crcn/sift.js#readme)

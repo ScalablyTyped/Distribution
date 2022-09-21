@@ -1,7 +1,7 @@
 
 # Scala.js typings for fancy-log
 
-Typings are for version 1.3
+Typings are for version 2.0
 
 ## Library description:
 Log things, prefixed with a timestamp.
@@ -10,10 +10,10 @@ Log things, prefixed with a timestamp.
 | ------------------ | :-------------: |
 | Full name          | fancy-log |
 | Keywords           | console.log, log, logger, logging, pretty, timestamp |
-| # releases         | 0 |
-| # dependents       | 755 |
-| # downloads        | 116268603 |
-| # stars            | 13 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1479476E7 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/fancy-log#readme)

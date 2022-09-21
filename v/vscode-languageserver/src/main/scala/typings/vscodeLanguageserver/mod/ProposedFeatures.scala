@@ -1,18 +1,13 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeLanguageserver.callHierarchyProposedMod.CallHierarchy
-import typings.vscodeLanguageserver.sematicTokensProposedMod.SemanticTokens
+import typings.vscodeLanguageserver.serverMod.Features
+import typings.vscodeLanguageserver.serverMod._Connection
+import typings.vscodeLanguageserver.serverMod._underscore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ProposedFeatures {
-  
-  /* was `typeof st.SemanticTokensBuilder` */
-  @JSImport("vscode-languageserver", "ProposedFeatures.SemanticTokensBuilder")
-  @js.native
-  class SemanticTokensBuilder ()
-    extends typings.vscodeLanguageserver.sematicTokensProposedMod.SemanticTokensBuilder
   
   @JSImport("vscode-languageserver", "ProposedFeatures.all")
   @js.native
@@ -23,6 +18,18 @@ object ProposedFeatures {
     _underscore, 
     _underscore, 
     _underscore, 
-    CallHierarchy & SemanticTokens
+    _underscore, 
+    _underscore
   ] = js.native
+  
+  type Connection = _Connection[
+    _underscore, 
+    _underscore, 
+    _underscore, 
+    _underscore, 
+    _underscore, 
+    _underscore, 
+    _underscore, 
+    _underscore
+  ]
 }

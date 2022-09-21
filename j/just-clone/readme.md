@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-clone
 
-Typings are for version 3.1
+Typings are for version 6.1.1
 
 ## Library description:
 deep copies objects and arrays
@@ -10,10 +10,10 @@ deep copies objects and arrays
 | ------------------ | :-------------: |
 | Full name          | just-clone |
 | Keywords           | object, clone, copy, deep-copy, extend, no-dependencies, just |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 404383 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 140666.33333333334 |
+| # stars            | 4414.0 |
 
 ## Links
 - [Homepage](https://github.com/angus-c/just#readme)
@@ -24,7 +24,7 @@ deep copies objects and arrays
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

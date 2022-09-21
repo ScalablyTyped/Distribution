@@ -13,6 +13,12 @@ trait FunctionExpression
   var body: js.UndefOr[BlockStatement | IfStatement] = js.undefined
   
   /**
+    * __COMPAT__ only, indicates a slot function that should be excluded from
+    * the legacy $scopedSlots instance property.
+    */
+  var isNonScopedSlot: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * This flag is for codegen to determine whether it needs to generate the
     * withScopeId() wrapper
     */
@@ -41,6 +47,10 @@ object FunctionExpression {
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
+    inline def setIsNonScopedSlot(value: Boolean): Self = StObject.set(x, "isNonScopedSlot", value.asInstanceOf[js.Any])
+    
+    inline def setIsNonScopedSlotUndefined: Self = StObject.set(x, "isNonScopedSlot", js.undefined)
+    
     inline def setIsSlot(value: Boolean): Self = StObject.set(x, "isSlot", value.asInstanceOf[js.Any])
     
     inline def setNewline(value: Boolean): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
@@ -49,13 +59,13 @@ object FunctionExpression {
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setParamsVarargs(value: (ExpressionNode | String)*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: (ExpressionNode | String)*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setReturns(value: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
     inline def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
     
-    inline def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value :_*))
+    inline def setReturnsVarargs(value: TemplateChildNode*): Self = StObject.set(x, "returns", js.Array(value*))
     
     inline def setType(value: `18`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "crelt" : "1.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "crelt" : "1.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

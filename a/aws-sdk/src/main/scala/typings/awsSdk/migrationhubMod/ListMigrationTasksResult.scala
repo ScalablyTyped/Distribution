@@ -29,7 +29,7 @@ object ListMigrationTasksResult {
     
     inline def setMigrationTaskSummaryListUndefined: Self = StObject.set(x, "MigrationTaskSummaryList", js.undefined)
     
-    inline def setMigrationTaskSummaryListVarargs(value: MigrationTaskSummary*): Self = StObject.set(x, "MigrationTaskSummaryList", js.Array(value :_*))
+    inline def setMigrationTaskSummaryListVarargs(value: MigrationTaskSummary*): Self = StObject.set(x, "MigrationTaskSummaryList", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

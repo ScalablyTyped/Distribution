@@ -1,14 +1,28 @@
 package typings.firebaseFirestore.indexeddbSchemaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbNoDocument")
-@js.native
-class DbNoDocument protected () extends js.Object {
-  def this(path: js.Array[String], readTime: DbTimestamp) = this()
-  var path: js.Array[String] = js.native
-  var readTime: DbTimestamp = js.native
+trait DbNoDocument extends StObject {
+  
+  var path: js.Array[String]
+  
+  var readTime: DbTimestamp
 }
-
+object DbNoDocument {
+  
+  inline def apply(path: js.Array[String], readTime: DbTimestamp): DbNoDocument = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], readTime = readTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DbNoDocument]
+  }
+  
+  extension [Self <: DbNoDocument](x: Self) {
+    
+    inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
+    
+    inline def setReadTime(value: DbTimestamp): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,8 +1,13 @@
 package typings.osrm
 
+import typings.osrm.mod.AlgorithmTypes
+import typings.osrm.mod.ApproachTypes
+import typings.osrm.mod.FallbackCoordinateTypes
+import typings.osrm.mod.GapTypes
 import typings.osrm.mod.GeometriesTypes
 import typings.osrm.mod.Indication
 import typings.osrm.mod.OverviewTypes
+import typings.osrm.mod.SnappingTypes
 import typings.osrm.mod.StepManeuverTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +16,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object osrmStrings {
   
   @js.native
+  sealed trait default
+    extends StObject
+       with SnappingTypes
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait CH
+    extends StObject
+       with AlgorithmTypes
+  inline def CH: CH = "CH".asInstanceOf[CH]
+  
+  @js.native
+  sealed trait CoreCH
+    extends StObject
+       with AlgorithmTypes
+  inline def CoreCH: CoreCH = "CoreCH".asInstanceOf[CoreCH]
+  
+  @js.native
   sealed trait LineString extends StObject
   inline def LineString: LineString = "LineString".asInstanceOf[LineString]
+  
+  @js.native
+  sealed trait MLD
+    extends StObject
+       with AlgorithmTypes
+  inline def MLD: MLD = "MLD".asInstanceOf[MLD]
+  
+  @js.native
+  sealed trait any
+    extends StObject
+       with SnappingTypes
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait arrive
@@ -25,6 +60,16 @@ object osrmStrings {
     extends StObject
        with StepManeuverTypes
   inline def continue: continue = "continue".asInstanceOf[continue]
+  
+  @js.native
+  sealed trait curb
+    extends StObject
+       with ApproachTypes
+  inline def curb: curb = "curb".asInstanceOf[curb]
+  
+  @js.native
+  sealed trait datasources extends StObject
+  inline def datasources: datasources = "datasources".asInstanceOf[datasources]
   
   @js.native
   sealed trait depart
@@ -65,6 +110,10 @@ object osrmStrings {
   inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
+  sealed trait first extends StObject
+  inline def first: first = "first".asInstanceOf[first]
+  
+  @js.native
   sealed trait fork
     extends StObject
        with StepManeuverTypes
@@ -81,6 +130,26 @@ object osrmStrings {
     extends StObject
        with GeometriesTypes
   inline def geojson: geojson = "geojson".asInstanceOf[geojson]
+  
+  @js.native
+  sealed trait ignore
+    extends StObject
+       with GapTypes
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
+  
+  @js.native
+  sealed trait input
+    extends StObject
+       with FallbackCoordinateTypes
+  inline def input: input = "input".asInstanceOf[input]
+  
+  @js.native
+  sealed trait json_buffer extends StObject
+  inline def json_buffer: json_buffer = "json_buffer".asInstanceOf[json_buffer]
+  
+  @js.native
+  sealed trait last extends StObject
+  inline def last: last = "last".asInstanceOf[last]
   
   @js.native
   sealed trait left
@@ -101,10 +170,18 @@ object osrmStrings {
   inline def `new name`: `new name` = ("new name").asInstanceOf[`new name`]
   
   @js.native
+  sealed trait nodes extends StObject
+  inline def nodes: nodes = "nodes".asInstanceOf[nodes]
+  
+  @js.native
   sealed trait notification
     extends StObject
        with StepManeuverTypes
   inline def notification: notification = "notification".asInstanceOf[notification]
+  
+  @js.native
+  sealed trait `object` extends StObject
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
   sealed trait `off ramp`
@@ -191,6 +268,22 @@ object osrmStrings {
   inline def `slight rigth`: `slight rigth` = ("slight rigth").asInstanceOf[`slight rigth`]
   
   @js.native
+  sealed trait snapped
+    extends StObject
+       with FallbackCoordinateTypes
+  inline def snapped: snapped = "snapped".asInstanceOf[snapped]
+  
+  @js.native
+  sealed trait speed extends StObject
+  inline def speed: speed = "speed".asInstanceOf[speed]
+  
+  @js.native
+  sealed trait split
+    extends StObject
+       with GapTypes
+  inline def split: split = "split".asInstanceOf[split]
+  
+  @js.native
   sealed trait straight
     extends StObject
        with Indication
@@ -203,6 +296,12 @@ object osrmStrings {
   inline def turn: turn = "turn".asInstanceOf[turn]
   
   @js.native
+  sealed trait unrestricted
+    extends StObject
+       with ApproachTypes
+  inline def unrestricted: unrestricted = "unrestricted".asInstanceOf[unrestricted]
+  
+  @js.native
   sealed trait `use lane`
     extends StObject
        with StepManeuverTypes
@@ -213,4 +312,8 @@ object osrmStrings {
     extends StObject
        with Indication
   inline def uturn: uturn = "uturn".asInstanceOf[uturn]
+  
+  @js.native
+  sealed trait weight extends StObject
+  inline def weight: weight = "weight".asInstanceOf[weight]
 }

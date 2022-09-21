@@ -15,7 +15,7 @@ trait INavigation
   /** [Method] Zooms the chart to the specified selection range
     * @param zoomConfig Object
     */
-  var setZoom: js.UndefOr[js.Function1[/* zoomConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setZoom: js.UndefOr[js.Function1[/* zoomConfig */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object INavigation {
   
@@ -30,7 +30,7 @@ object INavigation {
     
     inline def setRestoreZoomUndefined: Self = StObject.set(x, "restoreZoom", js.undefined)
     
-    inline def setSetZoom(value: /* zoomConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction1(value))
+    inline def setSetZoom(value: /* zoomConfig */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction1(value))
     
     inline def setSetZoomUndefined: Self = StObject.set(x, "setZoom", js.undefined)
   }

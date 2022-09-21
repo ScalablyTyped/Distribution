@@ -4,20 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for ListTensorFlowVersions.
-  */
 trait SchemaListTensorFlowVersionsResponse extends StObject {
   
   /**
     * The next page token or empty if none.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The listed nodes.
     */
   var tensorflowVersions: js.UndefOr[js.Array[SchemaTensorFlowVersion]] = js.undefined
+  
+  /**
+    * Locations that could not be reached.
+    */
+  var unreachable: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaListTensorFlowVersionsResponse {
   
@@ -30,12 +32,22 @@ object SchemaListTensorFlowVersionsResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setTensorflowVersions(value: js.Array[SchemaTensorFlowVersion]): Self = StObject.set(x, "tensorflowVersions", value.asInstanceOf[js.Any])
     
     inline def setTensorflowVersionsUndefined: Self = StObject.set(x, "tensorflowVersions", js.undefined)
     
-    inline def setTensorflowVersionsVarargs(value: SchemaTensorFlowVersion*): Self = StObject.set(x, "tensorflowVersions", js.Array(value :_*))
+    inline def setTensorflowVersionsVarargs(value: SchemaTensorFlowVersion*): Self = StObject.set(x, "tensorflowVersions", js.Array(value*))
+    
+    inline def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
+    
+    inline def setUnreachableNull: Self = StObject.set(x, "unreachable", null)
+    
+    inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
+    
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

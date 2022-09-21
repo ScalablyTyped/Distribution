@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateNamespaceRequest extends StObject {
   
   /**
-    * The ID for the AWS account that you want to create the QuickSight namespace in.
+    * The ID for the Amazon Web Services account that you want to create the Amazon QuickSight namespace in.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
@@ -45,6 +45,6 @@ object CreateNamespaceRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

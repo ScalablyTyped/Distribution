@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientCloudsearch.anon
 
-import typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch.ResetSearchApplicationRequest
+import typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch.SearchApplication
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait KeyName extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name of the search application to be reset. Format: applications/{application_id}. */
+  /** The name of the Search Application. Format: searchapplications/{application_id}. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait KeyName extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ResetSearchApplicationRequest
+  var resource: SearchApplication
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait KeyName extends StObject {
 }
 object KeyName {
   
-  inline def apply(name: String, resource: ResetSearchApplicationRequest): KeyName = {
+  inline def apply(name: String, resource: SearchApplication): KeyName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyName]
   }
@@ -94,7 +94,7 @@ object KeyName {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ResetSearchApplicationRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SearchApplication): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

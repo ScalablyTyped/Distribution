@@ -1,7 +1,7 @@
 
 # Scala.js typings for rgb2hex
 
-Typings are for version 0.2
+Typings are for version 0.2.5
 
 ## Library description:
 lightweight rgb/rgba to hex parser
@@ -10,10 +10,10 @@ lightweight rgb/rgba to hex parser
 | ------------------ | :-------------: |
 | Full name          | rgb2hex |
 | Keywords           | rgb, rgba, hex, color, parse, parser |
-| # releases         | 8 |
-| # dependents       | 24 |
-| # downloads        | 27254044 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 3932552.3333333335 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/christian-bromann/rgb2hex)
@@ -24,7 +24,7 @@ lightweight rgb/rgba to hex parser
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

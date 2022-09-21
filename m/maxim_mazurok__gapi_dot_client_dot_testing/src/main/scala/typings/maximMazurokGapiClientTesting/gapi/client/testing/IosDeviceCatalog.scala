@@ -31,7 +31,7 @@ object IosDeviceCatalog {
     
     inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    inline def setModelsVarargs(value: IosModel*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: IosModel*): Self = StObject.set(x, "models", js.Array(value*))
     
     inline def setRuntimeConfiguration(value: IosRuntimeConfiguration): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
     
@@ -41,12 +41,12 @@ object IosDeviceCatalog {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: IosVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: IosVersion*): Self = StObject.set(x, "versions", js.Array(value*))
     
     inline def setXcodeVersions(value: js.Array[XcodeVersion]): Self = StObject.set(x, "xcodeVersions", value.asInstanceOf[js.Any])
     
     inline def setXcodeVersionsUndefined: Self = StObject.set(x, "xcodeVersions", js.undefined)
     
-    inline def setXcodeVersionsVarargs(value: XcodeVersion*): Self = StObject.set(x, "xcodeVersions", js.Array(value :_*))
+    inline def setXcodeVersionsVarargs(value: XcodeVersion*): Self = StObject.set(x, "xcodeVersions", js.Array(value*))
   }
 }

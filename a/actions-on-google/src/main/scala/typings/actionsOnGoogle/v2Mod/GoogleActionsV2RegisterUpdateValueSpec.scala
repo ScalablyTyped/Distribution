@@ -36,7 +36,7 @@ object GoogleActionsV2RegisterUpdateValueSpec {
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

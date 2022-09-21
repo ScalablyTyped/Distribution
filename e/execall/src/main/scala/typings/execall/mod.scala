@@ -1,39 +1,16 @@
 package typings.execall
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  Find multiple RegExp matches in a string.
-  @param regexp - Regular expression to match against the `string`.
-  @returns The matches.
-  @example
-  ```
-  import execall = require('execall');
-  execall(/(\d+)/g, '$200 and $400');
-  // [
-  // 	{
-  // 		match: '200',
-  // 		subMatches: ['200'],
-  // 		index: 1
-  // 	},
-  // 	{
-  // 		match: '400',
-  // 		subMatches: ['400'],
-  // 		index: 10
-  // 	}
-  // ]
-  ```
-  */
-  inline def apply(regexp: RegExp, string: String): js.Array[Match] = (^.asInstanceOf[js.Dynamic].apply(regexp.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Array[Match]]
-  
   @JSImport("execall", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(regexp: js.RegExp, string: String): js.Array[Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(regexp.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Array[Match]]
   
   trait Match extends StObject {
     
@@ -59,7 +36,7 @@ object mod {
       
       inline def setSubMatches(value: js.Array[String]): Self = StObject.set(x, "subMatches", value.asInstanceOf[js.Any])
       
-      inline def setSubMatchesVarargs(value: String*): Self = StObject.set(x, "subMatches", js.Array(value :_*))
+      inline def setSubMatchesVarargs(value: String*): Self = StObject.set(x, "subMatches", js.Array(value*))
     }
   }
 }

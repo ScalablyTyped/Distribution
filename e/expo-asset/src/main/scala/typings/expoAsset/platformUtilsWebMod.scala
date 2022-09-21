@@ -22,11 +22,13 @@ object platformUtilsWebMod {
   @js.native
   val IS_MANAGED_ENV: /* false */ Boolean = js.native
   
-  inline def downloadAsync(uri: js.Any, hash: js.Any, `type`: js.Any, name: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadAsync")(uri.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def downloadAsync(uri: Any, hash: Any, `type`: Any, name: Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadAsync")(uri.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def getManifest(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")().asInstanceOf[js.Object]
   
+  inline def getManifest2(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest2")().asInstanceOf[js.Object]
+  
   @JSImport("expo-asset/build/PlatformUtils.web", "manifestBaseUrl")
   @js.native
-  val manifestBaseUrl: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
+  val manifestBaseUrl: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any = js.native
 }

@@ -1,12 +1,9 @@
 package typings.reactResponsive
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.ClassType
 import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import typings.react.mod.ElementType
 import typings.react.mod.ReactNode
-import typings.react.mod.SFC
 import typings.reactResponsive.anon.PartialMediaQueryAllQuery
 import typings.reactResponsive.anon.PartialMediaQueryAllQueryAll
 import typings.reactResponsive.anon.PartialMediaQueryMatchers
@@ -26,8 +23,8 @@ object mod {
   
   @JSImport("react-responsive", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[MediaQueryProps, js.Object, js.Any]
+  open class default ()
+    extends Component[MediaQueryProps, js.Object, Any]
   
   @JSImport("react-responsive", "Context")
   @js.native
@@ -48,7 +45,7 @@ object mod {
     callback: js.Function1[/* matches */ Boolean, Unit]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(settings.asInstanceOf[js.Any], device.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  type MediaQuery = Component[MediaQueryProps, js.Object, js.Any]
+  type MediaQuery = Component[MediaQueryProps, js.Object, Any]
   
   trait MediaQueryAllQueryable
     extends StObject
@@ -296,9 +293,7 @@ object mod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[
-        String | SFC[js.Any] | (ClassType[js.Any, js.Any, js.Any]) | (ComponentClass[js.Any, ComponentState])
-      ] = js.undefined
+    var component: js.UndefOr[ElementType[Any]] = js.undefined
     
     var device: js.UndefOr[MediaQueryMatchers] = js.undefined
     
@@ -331,9 +326,7 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setComponent(
-        value: String | SFC[js.Any] | (ClassType[js.Any, js.Any, js.Any]) | (ComponentClass[js.Any, ComponentState])
-      ): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       

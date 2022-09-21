@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.navbarHeadingMod.INavbarHeadingProps
+import typings.blueprintjsCore.navbarHeadingMod.NavbarHeadingProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "NavbarHeading")
 @js.native
-class NavbarHeading protected ()
+open class NavbarHeading protected ()
   extends typings.blueprintjsCore.navbarHeadingMod.NavbarHeading {
-  def this(props: INavbarHeadingProps) = this()
-  def this(props: INavbarHeadingProps, context: js.Any) = this()
+  def this(props: NavbarHeadingProps) = this()
+  def this(props: NavbarHeadingProps, context: Any) = this()
 }
 /* static members */
 object NavbarHeading {

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * RangeView represents a set of visible cells of the parent range.
   *
+  * @remarks
   * [Api set: ExcelApi 1.3]
   */
 trait RangeViewLoadOptions extends StObject {
@@ -19,89 +19,89 @@ trait RangeViewLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the cell addresses of the `RangeView`.
     *
-    * Represents the cell addresses of the RangeView.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var cellAddresses: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The number of visible columns.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var columnCount: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
     *
-    * Represents the formula in A1-style notation.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var formulas: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is returned instead.
     *
-    * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var formulasLocal: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.
     *
-    * Represents the formula in R1C1-style notation.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var formulasR1C1: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns a value that represents the index of the `RangeView`.
     *
-    * Returns a value that represents the index of the RangeView.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var index: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents Excel's number format code for the given cell.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var numberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The number of visible rows.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var rowCount: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Text values of the specified range. The text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
     *
-    * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var text: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the type of data of each cell.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var valueTypes: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
     *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var values: js.UndefOr[Boolean] = js.undefined

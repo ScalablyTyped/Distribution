@@ -11,7 +11,6 @@ import typings.scriptableIos.scriptableIosStrings.failure
 import typings.scriptableIos.scriptableIosStrings.piano_error
 import typings.scriptableIos.scriptableIosStrings.piano_success
 import typings.scriptableIos.scriptableIosStrings.popup
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,7 +74,7 @@ trait Notification extends StObject {
     * and `setWeeklyTrigger` functions.
     * @see https://docs.scriptable.app/notification/#deliverydate
     */
-  var deliveryDate: Date = js.native
+  var deliveryDate: js.Date = js.native
   
   /**
     * _Identifier of the notification._
@@ -94,7 +93,7 @@ trait Notification extends StObject {
     * and `setWeeklyTrigger` functions.
     * @see https://docs.scriptable.app/notification/#nexttriggerdate
     */
-  var nextTriggerDate: Date = js.native
+  var nextTriggerDate: js.Date = js.native
   
   /**
     * _URL to open when notification is tapped._
@@ -159,7 +158,7 @@ trait Notification extends StObject {
     * @param date - Date and time to trigger the notification on.
     * @see https://docs.scriptable.app/notification/#-settriggerdate
     */
-  def setTriggerDate(date: Date): Unit = js.native
+  def setTriggerDate(date: js.Date): Unit = js.native
   
   /**
     * _Sets the notification to be triggered weekly._
@@ -221,7 +220,7 @@ trait Notification extends StObject {
     * Store any custom information for the notification. This can be accessed from the `Notification.opened` property when a script is run from a notification.
     * @see https://docs.scriptable.app/notification/#userinfo
     */
-  var userInfo: StringDictionary[js.Any] = js.native
+  var userInfo: StringDictionary[Any] = js.native
 }
 object Notification {
   

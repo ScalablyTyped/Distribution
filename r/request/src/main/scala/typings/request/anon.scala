@@ -130,7 +130,7 @@ object anon {
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setParamsVarargs(value: NameValuePair*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: NameValuePair*): Self = StObject.set(x, "params", js.Array(value*))
     }
   }
   

@@ -10,10 +10,10 @@ object watchMod {
   
   @JSImport("material-ui/svg-icons/hardware/watch", JSImport.Default)
   @js.native
-  class default () extends HardwareWatch
+  open class default () extends HardwareWatch
   
   @JSImport("material-ui/svg-icons/hardware/watch", "HardwareWatch")
   @js.native
-  class HardwareWatch ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareWatch ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

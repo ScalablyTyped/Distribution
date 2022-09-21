@@ -8,7 +8,7 @@ trait IShellPaneContainer extends StObject {
   
   def AddTab(TabId: String, tabTitle: String, insertBeforeTabId: String): IShellPaneTab
   
-  val Content: js.Any
+  val Content: Any
   
   val Events: IShellPaneContainerEvents
   
@@ -38,7 +38,7 @@ object IShellPaneContainer {
   
   inline def apply(
     AddTab: (String, String, String) => IShellPaneTab,
-    Content: js.Any,
+    Content: Any,
     Events: IShellPaneContainerEvents,
     Focus: () => Unit,
     GetSelectedTab: () => IShellPaneTab,
@@ -60,7 +60,7 @@ object IShellPaneContainer {
     
     inline def setAddTab(value: (String, String, String) => IShellPaneTab): Self = StObject.set(x, "AddTab", js.Any.fromFunction3(value))
     
-    inline def setContent(value: js.Any): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Any): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     inline def setEvents(value: IShellPaneContainerEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

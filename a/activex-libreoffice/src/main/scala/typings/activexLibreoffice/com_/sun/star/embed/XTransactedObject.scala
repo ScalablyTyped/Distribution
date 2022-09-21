@@ -22,7 +22,7 @@ object XTransactedObject {
   inline def apply(
     acquire: () => Unit,
     commit: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     revert: () => Unit
   ): XTransactedObject = {

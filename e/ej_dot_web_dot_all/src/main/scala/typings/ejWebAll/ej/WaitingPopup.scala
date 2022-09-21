@@ -128,7 +128,7 @@ object WaitingPopup {
     /** Specifies the list of HTML attributes to be added to waitingpopup control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Enables or disables the default loading icon.
       * @Default {true}
@@ -148,7 +148,7 @@ object WaitingPopup {
     /** Loads HTML content inside the popup panel instead of the default icon
       * @Default {null}
       */
-    var template: js.UndefOr[js.Any] = js.undefined
+    var template: js.UndefOr[Any] = js.undefined
     
     /** Sets the custom text in the pop-up panel to notify the waiting process
       * @Default {null}
@@ -180,7 +180,7 @@ object WaitingPopup {
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -196,7 +196,7 @@ object WaitingPopup {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       

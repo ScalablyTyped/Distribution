@@ -26,6 +26,6 @@ object TestMetricFilterRequest {
     
     inline def setLogEventMessages(value: TestEventMessages): Self = StObject.set(x, "logEventMessages", value.asInstanceOf[js.Any])
     
-    inline def setLogEventMessagesVarargs(value: EventMessage*): Self = StObject.set(x, "logEventMessages", js.Array(value :_*))
+    inline def setLogEventMessagesVarargs(value: EventMessage*): Self = StObject.set(x, "logEventMessages", js.Array(value*))
   }
 }

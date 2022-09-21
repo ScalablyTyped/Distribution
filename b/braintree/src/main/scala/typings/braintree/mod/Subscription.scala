@@ -1,13 +1,13 @@
 package typings.braintree.mod
 
-import typings.std.Date
+import typings.braintree.anon.Canceled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "Subscription")
 @js.native
-class Subscription () extends StObject {
+open class Subscription () extends StObject {
   
   var addOns: js.UndefOr[js.Array[AddOn]] = js.native
   
@@ -15,11 +15,11 @@ class Subscription () extends StObject {
   
   var billingDayOfMonth: js.UndefOr[Double] = js.native
   
-  var billingPeriodEndDate: Date = js.native
+  var billingPeriodEndDate: String = js.native
   
-  var billingPeriodStartDate: Date = js.native
+  var billingPeriodStartDate: String = js.native
   
-  var createdAt: Date = js.native
+  var createdAt: String = js.native
   
   var currentBillingCycle: Double = js.native
   
@@ -31,7 +31,7 @@ class Subscription () extends StObject {
   
   var failureCount: js.UndefOr[Double] = js.native
   
-  var firstBillingDate: js.UndefOr[Date] = js.native
+  var firstBillingDate: js.UndefOr[js.Date] = js.native
   
   var id: String = js.native
   
@@ -47,7 +47,7 @@ class Subscription () extends StObject {
   
   var numberOfBillingCycles: js.UndefOr[Double] = js.native
   
-  var paidThroughDate: Date = js.native
+  var paidThroughDate: js.Date = js.native
   
   var paymentMethodToken: String = js.native
   
@@ -67,5 +67,17 @@ class Subscription () extends StObject {
   
   var trialPeriod: js.UndefOr[Boolean] = js.native
   
-  var updatedAt: Date = js.native
+  var updatedAt: String = js.native
+}
+/* static members */
+object Subscription {
+  
+  @JSImport("braintree", "Subscription")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("braintree", "Subscription.Status")
+  @js.native
+  def Status: Canceled = js.native
+  inline def Status_=(x: Canceled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Status")(x.asInstanceOf[js.Any])
 }

@@ -1,9 +1,9 @@
 package typings.googleapis.anon
 
-import typings.googleapis.dialogflowV2Mod.dialogflowV2.Dialogflow
-import typings.googleapis.dialogflowV2Mod.dialogflowV2.Options
-import typings.googleapis.googleapisStrings.v2
-import typings.googleapis.googleapisStrings.v2beta1
+import typings.googleapis.cloudidentityV1Mod.cloudidentityV1.Cloudidentity
+import typings.googleapis.cloudidentityV1Mod.cloudidentityV1.Options
+import typings.googleapis.googleapisStrings.v1
+import typings.googleapis.googleapisStrings.v1beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn56 extends StObject {
   
-  def apply(options: Options): Dialogflow = js.native
-  def apply(options: typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Options): typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow = js.native
-  def apply(version: v2): Dialogflow = js.native
-  def apply(version: v2beta1): typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow = js.native
+  def apply(options: Options): Cloudidentity = js.native
+  def apply(options: typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Options): typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity = js.native
+  def apply(version: v1): Cloudidentity = js.native
+  def apply(version: v1beta1): typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity = js.native
 }

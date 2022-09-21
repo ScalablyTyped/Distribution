@@ -28,7 +28,7 @@ object ObjectExpression {
     
     inline def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setType(value: `15`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

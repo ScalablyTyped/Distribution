@@ -13,7 +13,7 @@ object touchFeedbackMod {
   
   @JSImport("rmc-feedback/lib/TouchFeedback", JSImport.Default)
   @js.native
-  class default () extends TouchFeedback
+  open class default () extends TouchFeedback
   /* static members */
   object default {
     
@@ -28,29 +28,28 @@ object touchFeedbackMod {
   }
   
   @js.native
-  trait TouchFeedback
-    extends Component[ITouchProps, ITouchState, js.Any] {
+  trait TouchFeedback extends Component[ITouchProps, ITouchState, Any] {
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MTouchFeedback(): Unit = js.native
     
-    def onMouseDown(e: js.Any): Unit = js.native
+    def onMouseDown(e: Any): Unit = js.native
     
-    def onMouseLeave(e: js.Any): Unit = js.native
+    def onMouseLeave(e: Any): Unit = js.native
     
-    def onMouseUp(e: js.Any): Unit = js.native
+    def onMouseUp(e: Any): Unit = js.native
     
-    def onTouchCancel(e: js.Any): Unit = js.native
+    def onTouchCancel(e: Any): Unit = js.native
     
-    def onTouchEnd(e: js.Any): Unit = js.native
+    def onTouchEnd(e: Any): Unit = js.native
     
-    def onTouchMove(e: js.Any): Unit = js.native
+    def onTouchMove(e: Any): Unit = js.native
     
-    def onTouchStart(e: js.Any): Unit = js.native
+    def onTouchStart(e: Any): Unit = js.native
     
     @JSName("state")
     var state_TouchFeedback: Active = js.native
     
-    def triggerEvent(`type`: js.Any, isActive: js.Any, ev: js.Any): Unit = js.native
+    def triggerEvent(`type`: Any, isActive: Any, ev: Any): Unit = js.native
   }
 }

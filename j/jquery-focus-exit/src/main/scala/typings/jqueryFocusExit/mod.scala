@@ -46,7 +46,7 @@ object mod {
       def on_focusExit(
         event: focusExit,
         handler: js.Function2[
-              /* event */ TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], 
+              /* event */ TriggeredEvent[HTMLElement, Any, Any, Any], 
               /* data */ FocusElements, 
               Unit
             ]
@@ -55,7 +55,7 @@ object mod {
       @JSName("one")
       def one_focusin(
         event: focusin,
-        handler: js.Function1[/* event */ TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], Unit]
+        handler: js.Function1[/* event */ TriggeredEvent[HTMLElement, Any, Any, Any], Unit]
       ): JQuery = js.native
     }
   }

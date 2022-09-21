@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CountArtifactsResponse extends StObject {
   
-  /** Count metrics of Groups. */
+  /** Count metrics for Groups. */
   var groupsCountResult: js.UndefOr[GroupsCountResult] = js.undefined
   
-  /** Count metrics of Mail. */
+  /** Count metrics for Gmail and classic Hangouts. */
   var mailCountResult: js.UndefOr[MailCountResult] = js.undefined
   
-  /** Total count of artifacts. For mail and groups, artifacts refers to messages. */
+  /** Total count of messages. */
   var totalCount: js.UndefOr[String] = js.undefined
 }
 object CountArtifactsResponse {

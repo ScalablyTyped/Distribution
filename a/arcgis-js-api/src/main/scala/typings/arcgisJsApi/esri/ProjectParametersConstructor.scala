@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProjectParametersConstructor
   extends StObject
-     with Instantiable0[ProjectParameters]
+     with /**
+  * Defines the projection parameters used when calling the [geometryService.project()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#project).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html)
+  */
+Instantiable0[ProjectParameters]
      with Instantiable1[/* properties */ ProjectParametersProperties, ProjectParameters]

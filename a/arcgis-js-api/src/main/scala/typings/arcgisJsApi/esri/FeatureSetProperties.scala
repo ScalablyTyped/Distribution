@@ -15,49 +15,49 @@ trait FeatureSetProperties extends StObject {
   /**
     * The name of the layer's primary display field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#displayFieldName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html#displayFieldName)
     */
   var displayFieldName: js.UndefOr[String] = js.undefined
   
   /**
     * Typically, a layer has a limit on the number of features (i.e., records) returned by the query operation.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#exceededTransferLimit)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html#exceededTransferLimit)
     */
   var exceededTransferLimit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The array of graphics returned from a task.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#features)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html#features)
     */
   var features: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
   
   /**
     * Information about each field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#fields)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html#fields)
     */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   
   /**
     * The geometry type of features in the FeatureSet.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#geometryType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html#geometryType)
     */
   var geometryType: js.UndefOr[point | multipoint | polyline | polygon | extent | mesh] = js.undefined
   
   /**
-    * The [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry) used to query the features.
+    * The [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#geometry) used to query the features.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#queryGeometry)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html#queryGeometry)
     */
   var queryGeometry: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
     * When a FeatureSet is used as input to Geoprocessor, the spatial reference is set to the map's spatial reference by default.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#spatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
@@ -82,13 +82,13 @@ object FeatureSetProperties {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setGeometryType(value: point | multipoint | polyline | polygon | extent | mesh): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     

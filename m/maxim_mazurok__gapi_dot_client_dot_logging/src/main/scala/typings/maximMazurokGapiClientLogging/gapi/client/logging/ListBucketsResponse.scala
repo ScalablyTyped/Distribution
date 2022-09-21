@@ -28,7 +28,7 @@ object ListBucketsResponse {
     
     inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    inline def setBucketsVarargs(value: LogBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: LogBucket*): Self = StObject.set(x, "buckets", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

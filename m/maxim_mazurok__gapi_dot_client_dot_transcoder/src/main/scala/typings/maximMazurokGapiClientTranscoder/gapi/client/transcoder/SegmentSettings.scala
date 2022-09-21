@@ -9,7 +9,10 @@ trait SegmentSettings extends StObject {
   /** Required. Create an individual segment file. The default is `false`. */
   var individualSegments: js.UndefOr[Boolean] = js.undefined
   
-  /** Duration of the segments in seconds. The default is `"6.0s"`. */
+  /**
+    * Duration of the segments in seconds. The default is `6.0s`. Note that `segmentDuration` must be greater than or equal to [`gopDuration`](#videostream), and `segmentDuration` must be
+    * divisible by [`gopDuration`](#videostream).
+    */
   var segmentDuration: js.UndefOr[String] = js.undefined
 }
 object SegmentSettings {

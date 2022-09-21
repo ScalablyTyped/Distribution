@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.PagingInformation")
 @js.native
-class PagingInformation ()
+open class PagingInformation ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.PagingInformation

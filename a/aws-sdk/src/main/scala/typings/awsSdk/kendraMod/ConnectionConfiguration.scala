@@ -22,7 +22,7 @@ trait ConnectionConfiguration extends StObject {
   var DatabasePort: typings.awsSdk.kendraMod.DatabasePort
   
   /**
-    * The Amazon Resource Name (ARN) of credentials stored in AWS Secrets Manager. The credentials should be a user/password pair. For more information, see Using a Database Data Source. For more information about AWS Secrets Manager, see  What Is AWS Secrets Manager  in the AWS Secrets Manager user guide.
+    * The Amazon Resource Name (ARN) of credentials stored in Secrets Manager. The credentials should be a user/password pair. For more information, see Using a Database Data Source. For more information about Secrets Manager, see  What Is Secrets Manager in the  Secrets Manager  user guide.
     */
   var SecretArn: typings.awsSdk.kendraMod.SecretArn
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "SourceBreakpoint")
 @js.native
-class SourceBreakpoint protected () extends Breakpoint {
+open class SourceBreakpoint protected () extends Breakpoint {
   /**
     * Create a new breakpoint for a source location.
     */

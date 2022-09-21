@@ -64,12 +64,12 @@ object BaseSpec {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
     
     inline def setTransform(value: js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value*))
   }
 }

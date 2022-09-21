@@ -10,8 +10,8 @@ object dividerMod {
   
   @JSImport("muicss/lib/react/divider", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DividerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DividerProps, js.Object, Any]
   
-  type Divider = Component[DividerProps, js.Object, js.Any]
+  type Divider = Component[DividerProps, js.Object, Any]
 }

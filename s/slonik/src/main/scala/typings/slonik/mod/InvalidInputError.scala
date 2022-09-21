@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("slonik", "InvalidInputError")
 @js.native
-class InvalidInputError () extends SlonikError
+open class InvalidInputError () extends SlonikError

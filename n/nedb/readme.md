@@ -10,10 +10,10 @@ File-based embedded data store for node.js
 | ------------------ | :-------------: |
 | Full name          | nedb |
 | Keywords           | database, datastore, embedded |
-| # releases         | 0 |
-| # dependents       | 696 |
-| # downloads        | 2461175 |
-| # stars            | 85 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 230472.66666666666 |
+| # stars            | 13105.0 |
 
 ## Links
 - [Homepage](https://github.com/louischatriot/nedb)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@opentelemetry/sdk-trace-base" : "1.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@opentelemetry/sdk-trace-base" : "1.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

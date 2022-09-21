@@ -75,7 +75,7 @@ object Context {
     
     inline def setPrincipals(value: js.Array[Principal]): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
-    inline def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "principals", js.Array(value*))
     
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }

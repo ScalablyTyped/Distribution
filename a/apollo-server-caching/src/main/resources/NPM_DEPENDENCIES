@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-server-caching" : "0.5.2"
+      "apollo-server-caching" : "3.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-server-caching" : "0.5.2"
+      "apollo-server-caching" : "3.3.0"
     }
   ],
   "compile-devDependencies" : [

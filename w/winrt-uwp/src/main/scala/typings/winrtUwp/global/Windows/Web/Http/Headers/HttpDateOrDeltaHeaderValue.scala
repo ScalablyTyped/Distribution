@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
-import typings.std.Date
 import typings.winrtUwp.anon.DateOrDeltaHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +14,7 @@ abstract class HttpDateOrDeltaHeaderValue ()
   
   /** Gets the value of the HTTP-date information used in the Retry-After HTTP header. */
   /* CompleteClass */
-  var date: Date = js.native
+  var date: js.Date = js.native
   
   /** Gets the value of the delta-seconds information used in the Retry-After HTTP header. */
   /* CompleteClass */

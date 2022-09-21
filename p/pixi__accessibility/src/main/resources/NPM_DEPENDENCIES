@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pixi/accessibility" : "6.5.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pixi/accessibility" : "6.5.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

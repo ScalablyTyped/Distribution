@@ -24,7 +24,7 @@ trait TableData extends StObject {
     *
     * - If you overwrite or update an existing table, the existing headers are not altered.
     */
-  var headers: js.Array[js.Any]
+  var headers: js.Array[Any]
   
   /**
     * Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table.
@@ -42,23 +42,23 @@ trait TableData extends StObject {
     *
     * - If you overwrite or update an existing table, the existing rows are not altered.
     */
-  var rows: js.Array[js.Array[js.Any]]
+  var rows: js.Array[js.Array[Any]]
 }
 object TableData {
   
-  inline def apply(headers: js.Array[js.Any], rows: js.Array[js.Array[js.Any]]): TableData = {
+  inline def apply(headers: js.Array[Any], rows: js.Array[js.Array[Any]]): TableData = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableData]
   }
   
   extension [Self <: TableData](x: Self) {
     
-    inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: Any*): Self = StObject.set(x, "headers", js.Array(value*))
     
-    inline def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[Any]*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ object capacitorMod {
   
   @JSImport("ionic/commands/capacitor", "CapacitorNamespace")
   @js.native
-  class CapacitorNamespace () extends Namespace {
+  open class CapacitorNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

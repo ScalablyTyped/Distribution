@@ -17,11 +17,11 @@ trait DDEItemInfo extends StObject {
   var Item: String
   
   /** The results of the item cached from the last update of the DDE link if available. This sequence may be empty. */
-  var Results: SafeArray[SafeArray[js.Any]]
+  var Results: SafeArray[SafeArray[Any]]
 }
 object DDEItemInfo {
   
-  inline def apply(Item: String, Results: SafeArray[SafeArray[js.Any]]): DDEItemInfo = {
+  inline def apply(Item: String, Results: SafeArray[SafeArray[Any]]): DDEItemInfo = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], Results = Results.asInstanceOf[js.Any])
     __obj.asInstanceOf[DDEItemInfo]
   }
@@ -30,6 +30,6 @@ object DDEItemInfo {
     
     inline def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    inline def setResults(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+    inline def setResults(value: SafeArray[SafeArray[Any]]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
   }
 }

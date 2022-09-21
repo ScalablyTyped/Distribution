@@ -13,11 +13,11 @@ trait GoogleErrorBody extends StObject {
   
   var message: js.UndefOr[String] = js.undefined
   
-  var response: Response[js.Any]
+  var response: Response[Any]
 }
 object GoogleErrorBody {
   
-  inline def apply(code: Double, response: Response[js.Any]): GoogleErrorBody = {
+  inline def apply(code: Double, response: Response[Any]): GoogleErrorBody = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleErrorBody]
   }
@@ -30,12 +30,12 @@ object GoogleErrorBody {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: GoogleInnerError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: GoogleInnerError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setResponse(value: Response[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Response[Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

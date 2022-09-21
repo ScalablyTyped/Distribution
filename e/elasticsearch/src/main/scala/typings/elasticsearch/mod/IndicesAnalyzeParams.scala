@@ -48,13 +48,13 @@ object IndicesAnalyzeParams {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setCharFilter(value: NameList): Self = StObject.set(x, "charFilter", value.asInstanceOf[js.Any])
     
     inline def setCharFilterUndefined: Self = StObject.set(x, "charFilter", js.undefined)
     
-    inline def setCharFilterVarargs(value: String*): Self = StObject.set(x, "charFilter", js.Array(value :_*))
+    inline def setCharFilterVarargs(value: String*): Self = StObject.set(x, "charFilter", js.Array(value*))
     
     inline def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object IndicesAnalyzeParams {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value*))
     
     inline def setFormat(value: _empty): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
@@ -86,7 +86,7 @@ object IndicesAnalyzeParams {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
     
     inline def setTokenizer(value: String): Self = StObject.set(x, "tokenizer", value.asInstanceOf[js.Any])
     

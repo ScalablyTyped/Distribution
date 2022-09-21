@@ -6,21 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "FunctionFactory")
 @js.native
-class FunctionFactory () extends StObject {
+open class FunctionFactory () extends StObject {
   
   def clear(): Unit = js.native
   
-  def getAll(): js.Array[String] = js.native
+  var functionHash: Any = js.native
+  
+  def getAll(): js.Array[Any] = js.native
   
   def hasFunction(name: String): Boolean = js.native
   
   def isAsyncFunction(name: String): Boolean = js.native
   
-  def register(name: String, func: js.Function1[/* params */ js.Array[js.Any], js.Any]): Unit = js.native
-  def register(name: String, func: js.Function1[/* params */ js.Array[js.Any], js.Any], isAsync: Boolean): Unit = js.native
+  var isAsyncHash: Any = js.native
   
-  def run(name: String, params: js.Array[js.Any]): js.Any = js.native
-  def run(name: String, params: js.Array[js.Any], properties: HashTable[js.Any]): js.Any = js.native
+  def register(name: String, func: js.Function1[/* params */ Any, Any]): Unit = js.native
+  def register(name: String, func: js.Function1[/* params */ Any, Any], isAsync: Boolean): Unit = js.native
+  
+  def run(name: String, params: Any): Any = js.native
+  def run(name: String, params: Any, properties: Any): Any = js.native
   
   def unregister(name: String): Unit = js.native
 }

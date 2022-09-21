@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("source-map", "SourceNode")
 @js.native
-class SourceNode () extends StObject {
+open class SourceNode () extends StObject {
   def this(
     line: Double | Null,
     column: Double | Null,
@@ -39,7 +39,7 @@ class SourceNode () extends StObject {
   
   var source: String = js.native
   
-  var sourceContents: js.Any = js.native
+  var sourceContents: Any = js.native
   
   def toStringWithSourceMap(): CodeWithSourceMap = js.native
   def toStringWithSourceMap(startOfSourceMap: StartOfSourceMap): CodeWithSourceMap = js.native

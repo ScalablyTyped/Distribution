@@ -1,6 +1,7 @@
 
 # Scala.js typings for estree-jsx
 
+Typings are for version 0.0.1
 
 ## Library description:
 TypeScript type definitions for JSX
@@ -9,10 +10,10 @@ TypeScript type definitions for JSX
 | ------------------ | :-------------: |
 | Full name          | estree-jsx |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 928 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 80.33333333333333 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/larsrh/estree-jsx#readme)
@@ -23,7 +24,7 @@ TypeScript type definitions for JSX
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

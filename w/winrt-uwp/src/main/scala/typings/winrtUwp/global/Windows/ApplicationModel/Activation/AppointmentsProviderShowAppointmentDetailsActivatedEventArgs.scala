@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Activation
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ abstract class AppointmentsProviderShowAppointmentDetailsActivatedEventArgs ()
   
   /** Gets the start date of the appointment instance for which the app should display details. */
   /* CompleteClass */
-  var instanceStartDate: Date = js.native
+  var instanceStartDate: js.Date = js.native
   
   /** Gets the activation type. */
   /* CompleteClass */

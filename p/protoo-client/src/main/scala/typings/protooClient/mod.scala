@@ -8,7 +8,6 @@ import typings.protooClient.protooClientStrings.failed
 import typings.protooClient.protooClientStrings.notification
 import typings.protooClient.protooClientStrings.open
 import typings.protooClient.protooClientStrings.request
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object mod {
   
   @JSImport("protoo-client", "Peer")
   @js.native
-  class Peer protected () extends StObject {
+  open class Peer protected () extends StObject {
     def this(transport: WebSocketTransport) = this()
     
     def close(): Unit = js.native
@@ -26,39 +25,38 @@ object mod {
     
     val connected: Boolean = js.native
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
-    def notify(method: String): js.Promise[js.Any] = js.native
-    def notify(method: String, data: js.Any): js.Promise[js.Any] = js.native
+    def notify(method: String): js.Promise[Any] = js.native
+    def notify(method: String, data: Any): js.Promise[Any] = js.native
     
+    def on(evt: open | disconnected | close, handler: js.Function0[Any]): Unit = js.native
     @JSName("on")
-    def on_close(evt: close, handler: js.Function0[js.Any]): Unit = js.native
+    def on_failed(evt: failed, handler: js.Function1[/* currentAttempt */ Double, Any]): Unit = js.native
     @JSName("on")
-    def on_disconnected(evt: disconnected, handler: js.Function0[js.Any]): Unit = js.native
-    @JSName("on")
-    def on_failed(evt: failed, handler: js.Function1[/* currentAttempt */ Double, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_notification(evt: notification, handler: js.Function1[/* notif */ ProtooNotification, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_open(evt: open, handler: js.Function0[js.Any]): Unit = js.native
+    def on_notification(evt: notification, handler: js.Function1[/* notif */ ProtooNotification, Any]): Unit = js.native
     @JSName("on")
     def on_request(
       evt: request,
       handler: js.Function3[
           /* request */ ProtooRequest, 
           /* accept */ js.Function1[/* data */ js.UndefOr[ProtooResponse], Unit], 
-          /* reject */ js.Function2[/* error */ js.UndefOr[Error | Double], /* errorReason */ js.UndefOr[String], Unit], 
-          js.Any
+          /* reject */ js.Function2[
+            /* error */ js.UndefOr[js.Error | Double], 
+            /* errorReason */ js.UndefOr[String], 
+            Unit
+          ], 
+          Any
         ]
     ): Unit = js.native
     
-    def request(method: String): js.Promise[js.Any] = js.native
-    def request(method: String, data: js.Any): js.Promise[js.Any] = js.native
+    def request(method: String): js.Promise[Any] = js.native
+    def request(method: String, data: Any): js.Promise[Any] = js.native
   }
   
   @JSImport("protoo-client", "WebSocketTransport")
   @js.native
-  class WebSocketTransport protected () extends StObject {
+  open class WebSocketTransport protected () extends StObject {
     def this(url: String) = this()
     def this(url: String, options: ClientConfig) = this()
     
@@ -66,12 +64,12 @@ object mod {
     
     val closed: Boolean = js.native
     
-    def send(message: js.Any): js.Promise[Unit] = js.native
+    def send(message: Any): js.Promise[Unit] = js.native
   }
   
   trait ProtooNotification extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var method: String
     
@@ -86,7 +84,7 @@ object mod {
     
     extension [Self <: ProtooNotification](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -98,7 +96,7 @@ object mod {
   
   trait ProtooRequest extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var id: Double
     
@@ -115,7 +113,7 @@ object mod {
     
     extension [Self <: ProtooRequest](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -134,7 +132,7 @@ object mod {
   trait ProtooResponse extends StObject
   object ProtooResponse {
     
-    inline def Data(data: js.Any, id: Double): typings.protooClient.anon.Data = {
+    inline def Data(data: Any, id: Double): typings.protooClient.anon.Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = true, response = true)
       __obj.asInstanceOf[typings.protooClient.anon.Data]
     }

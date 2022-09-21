@@ -10,7 +10,7 @@ object TextTrack {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("video.js/dist/alt/video.core", "default.TextTrack")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with typings.videoJs.mod.videojs.TextTrack {
     /**

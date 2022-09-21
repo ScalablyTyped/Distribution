@@ -11,7 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deflate(response: js.Object): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(response.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def deflate(response: js.Object): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(response.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   
-  inline def inflate(response: js.Object): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("inflate")(response.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def inflate(response: js.Object): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("inflate")(response.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
 }

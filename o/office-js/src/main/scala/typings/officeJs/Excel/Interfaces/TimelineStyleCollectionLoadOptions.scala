@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of timeline styles.
   *
-  * Represents a collection of TimelineStyles.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 trait TimelineStyleCollectionLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait TimelineStyleCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the name of the timeline style.
     *
-    * For EACH ITEM in the collection: Gets the name of the TimelineStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies if this `TimelineStyle` object is read-only.
     *
-    * For EACH ITEM in the collection: Specifies if this TimelineStyle object is read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined

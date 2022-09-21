@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.MsoDebugOptions")
 @js.native
-/* private */ class MsoDebugOptions ()
+/* private */ open class MsoDebugOptions ()
   extends StObject
      with typings.activexOffice.Office.MsoDebugOptions {
   
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def AddIgnoredAssertTag(bstrTagToIgnore: String): Unit = js.native
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -39,5 +39,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def RemoveIgnoredAssertTag(bstrTagToIgnore: String): Unit = js.native
   
   /* CompleteClass */
-  override val UnitTestManager: js.Any = js.native
+  override val UnitTestManager: Any = js.native
 }

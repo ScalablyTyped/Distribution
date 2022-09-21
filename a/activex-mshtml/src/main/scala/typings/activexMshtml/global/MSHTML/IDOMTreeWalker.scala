@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IDOMTreeWalker")
 @js.native
-/* private */ class IDOMTreeWalker ()
+/* private */ open class IDOMTreeWalker ()
   extends StObject
      with typings.activexMshtml.MSHTML.IDOMTreeWalker {
   
@@ -15,37 +15,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotIDOMTreeWalker_typekey: typings.activexMshtml.MSHTML.IDOMTreeWalker = js.native
   
   /* CompleteClass */
-  var currentNode: js.Any = js.native
+  var currentNode: Any = js.native
   
   /* CompleteClass */
   override val expandEntityReferences: Boolean = js.native
   
   /* CompleteClass */
-  override val filter: js.Any = js.native
+  override val filter: Any = js.native
   
   /* CompleteClass */
-  override def firstChild(): js.Any = js.native
+  override def firstChild(): Any = js.native
   
   /* CompleteClass */
-  override def lastChild(): js.Any = js.native
+  override def lastChild(): Any = js.native
   
   /* CompleteClass */
-  override def nextNode(): js.Any = js.native
+  override def nextNode(): Any = js.native
   
   /* CompleteClass */
-  override def nextSibling(): js.Any = js.native
+  override def nextSibling(): Any = js.native
   
   /* CompleteClass */
-  override def parentNode(): js.Any = js.native
+  override def parentNode(): Any = js.native
   
   /* CompleteClass */
-  override def previousNode(): js.Any = js.native
+  override def previousNode(): Any = js.native
   
   /* CompleteClass */
-  override def previousSibling(): js.Any = js.native
+  override def previousSibling(): Any = js.native
   
   /* CompleteClass */
-  override val root: js.Any = js.native
+  override val root: Any = js.native
   
   /* CompleteClass */
   override val whatToShow: Double = js.native

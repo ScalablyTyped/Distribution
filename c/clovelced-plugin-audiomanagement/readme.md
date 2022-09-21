@@ -10,10 +10,10 @@ A plugin to manage audio mode and volume
 | ------------------ | :-------------: |
 | Full name          | clovelced-plugin-audiomanagement |
 | Keywords           | cordova, device, audio, volume, vibrate |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 5138 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 375.6666666666667 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/clovelCed/cordova-plugin-audiomanagement#readme)

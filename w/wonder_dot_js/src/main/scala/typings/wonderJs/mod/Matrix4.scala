@@ -1,15 +1,14 @@
 package typings.wonderJs.mod
 
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "Matrix4")
 @js.native
-class Matrix4 ()
+open class Matrix4 ()
   extends typings.wonderJs.matrix4Mod.Matrix4 {
-  def this(mat: Float32Array) = this()
+  def this(mat: js.typedarray.Float32Array) = this()
 }
 /* static members */
 object Matrix4 {
@@ -19,5 +18,5 @@ object Matrix4 {
   val ^ : js.Any = js.native
   
   inline def create(): typings.wonderJs.matrix4Mod.Matrix4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.matrix4Mod.Matrix4]
-  inline def create(mat: Float32Array): typings.wonderJs.matrix4Mod.Matrix4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.matrix4Mod.Matrix4]
+  inline def create(mat: js.typedarray.Float32Array): typings.wonderJs.matrix4Mod.Matrix4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.matrix4Mod.Matrix4]
 }

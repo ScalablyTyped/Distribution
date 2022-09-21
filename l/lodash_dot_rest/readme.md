@@ -10,10 +10,10 @@ The lodash method `_.rest` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.rest |
 | Keywords           | lodash-modularized, rest |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 6455531 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 290222.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

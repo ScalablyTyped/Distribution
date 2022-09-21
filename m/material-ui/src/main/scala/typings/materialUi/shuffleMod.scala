@@ -10,10 +10,10 @@ object shuffleMod {
   
   @JSImport("material-ui/svg-icons/av/shuffle", JSImport.Default)
   @js.native
-  class default () extends AvShuffle
+  open class default () extends AvShuffle
   
   @JSImport("material-ui/svg-icons/av/shuffle", "AvShuffle")
   @js.native
-  class AvShuffle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvShuffle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

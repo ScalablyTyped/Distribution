@@ -20,7 +20,7 @@ trait StandardRenderingPipeline
   
   /**
     * @ignore
-    * Specifies if the depth of field pipeline is enabed
+    * Specifies if the depth of field pipeline is enabled
     */
   def DepthOfFieldEnabled: Boolean = js.native
   def DepthOfFieldEnabled_=(enabled: Boolean): Unit = js.native
@@ -34,7 +34,7 @@ trait StandardRenderingPipeline
   
   /**
     * @ignore
-    * Specifies if the lens flare pipeline is enabed
+    * Specifies if the lens flare pipeline is enabled
     */
   def LensFlareEnabled: Boolean = js.native
   def LensFlareEnabled_=(enabled: Boolean): Unit = js.native
@@ -53,80 +53,80 @@ trait StandardRenderingPipeline
   def VLSEnabled: Boolean = js.native
   def VLSEnabled_=(enabled: Boolean): Unit = js.native
   
-  /* private */ var _basePostProcess: js.Any = js.native
+  /* private */ var _basePostProcess: Any = js.native
   
-  /* private */ var _bloomEnabled: js.Any = js.native
+  /* private */ var _bloomEnabled: Any = js.native
   
-  /* private */ var _buildPipeline: js.Any = js.native
+  /* private */ var _buildPipeline: Any = js.native
   
-  /* private */ var _camerasToBeAttached: js.Any = js.native
+  /* private */ var _camerasToBeAttached: Any = js.native
   
-  /* private */ var _createBlurPostProcesses: js.Any = js.native
+  /* private */ var _createBlurPostProcesses: Any = js.native
   
-  /* private */ var _createBrightPassPostProcess: js.Any = js.native
+  /* private */ var _createBrightPassPostProcess: Any = js.native
   
-  /* private */ var _createDepthOfFieldPostProcess: js.Any = js.native
+  /* private */ var _createDepthOfFieldPostProcess: Any = js.native
   
-  /* private */ var _createDownSampleX4PostProcess: js.Any = js.native
+  /* private */ var _createDownSampleX4PostProcess: Any = js.native
   
-  /* private */ var _createHdrPostProcess: js.Any = js.native
+  /* private */ var _createHdrPostProcess: Any = js.native
   
-  /* private */ var _createLensFlarePostProcess: js.Any = js.native
+  /* private */ var _createLensFlarePostProcess: Any = js.native
   
-  /* private */ var _createLuminancePostProcesses: js.Any = js.native
+  /* private */ var _createLuminancePostProcesses: Any = js.native
   
-  /* private */ var _createMotionBlurPostProcess: js.Any = js.native
+  /* private */ var _createMotionBlurPostProcess: Any = js.native
   
-  /* private */ var _createTextureAdderPostProcess: js.Any = js.native
+  /* private */ var _createTextureAdderPostProcess: Any = js.native
   
-  /* private */ var _createVolumetricLightPostProcess: js.Any = js.native
+  /* private */ var _createVolumetricLightPostProcess: Any = js.native
   
-  /* private */ var _currentDepthOfFieldSource: js.Any = js.native
+  /* private */ var _currentDepthOfFieldSource: Any = js.native
   
-  /* private */ var _currentExposure: js.Any = js.native
+  /* private */ var _currentExposure: Any = js.native
   
-  /* private */ var _depthOfFieldEnabled: js.Any = js.native
+  /* private */ var _depthOfFieldEnabled: Any = js.native
   
-  /* private */ var _disposePostProcesses: js.Any = js.native
+  /* private */ var _disposePostProcesses: Any = js.native
   
-  /* private */ var _fixedExposure: js.Any = js.native
+  /* private */ var _fixedExposure: Any = js.native
   
-  /* private */ var _floatTextureType: js.Any = js.native
+  /* private */ var _floatTextureType: Any = js.native
   
-  /* private */ var _fxaaEnabled: js.Any = js.native
+  /* private */ var _fxaaEnabled: Any = js.native
   
-  /* private */ var _getDepthTexture: js.Any = js.native
+  /* private */ var _getDepthTexture: Any = js.native
   
-  /* private */ var _hdrAutoExposure: js.Any = js.native
+  /* private */ var _hdrAutoExposure: Any = js.native
   
-  /* private */ var _hdrCurrentLuminance: js.Any = js.native
+  /* private */ var _hdrCurrentLuminance: Any = js.native
   
-  /* private */ var _hdrEnabled: js.Any = js.native
+  /* private */ var _hdrEnabled: Any = js.native
   
-  /* private */ var _isObjectBasedMotionBlur: js.Any = js.native
+  /* private */ var _isObjectBasedMotionBlur: Any = js.native
   
-  /* private */ var _lensFlareEnabled: js.Any = js.native
+  /* private */ var _lensFlareEnabled: Any = js.native
   
-  /* private */ var _motionBlurEnabled: js.Any = js.native
+  /* private */ var _motionBlurEnabled: Any = js.native
   
-  /* private */ var _motionBlurSamples: js.Any = js.native
+  /* private */ var _motionBlurSamples: Any = js.native
   
-  /* private */ var _motionStrength: js.Any = js.native
+  /* private */ var _motionStrength: Any = js.native
   
-  /* private */ var _ratio: js.Any = js.native
+  /* private */ var _ratio: Any = js.native
   
-  /* private */ var _samples: js.Any = js.native
+  /* private */ var _samples: Any = js.native
   
   /**
     * Private members
     */
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _screenSpaceReflectionsEnabled: js.Any = js.native
+  /* private */ var _screenSpaceReflectionsEnabled: Any = js.native
   
-  /* private */ var _vlsEnabled: js.Any = js.native
+  /* private */ var _vlsEnabled: Any = js.native
   
-  /* private */ var _volumetricLightStepsCount: js.Any = js.native
+  /* private */ var _volumetricLightStepsCount: Any = js.native
   
   /**
     * List of animations for the pipeline (IAnimatable implementation)
@@ -201,16 +201,16 @@ trait StandardRenderingPipeline
   def fxaaEnabled_=(enabled: Boolean): Unit = js.native
   
   /**
-    * The Fast Approximate Anti-Aliasing post process which attemps to remove aliasing from an image.
+    * The Fast Approximate Anti-Aliasing post process which attempts to remove aliasing from an image.
     */
   var fxaaPostProcess: Nullable[FxaaPostProcess] = js.native
   
   /**
-    * Gets wether or not the exposure of the overall pipeline should be automatically adjusted by the HDR post-process
+    * Gets whether or not the exposure of the overall pipeline should be automatically adjusted by the HDR post-process
     */
   def hdrAutoExposure: Boolean = js.native
   /**
-    * Sets wether or not the exposure of the overall pipeline should be automatically adjusted by the HDR post-process
+    * Sets whether or not the exposure of the overall pipeline should be automatically adjusted by the HDR post-process
     */
   def hdrAutoExposure_=(value: Boolean): Unit = js.native
   
@@ -292,7 +292,7 @@ trait StandardRenderingPipeline
   var lensFlarePostProcess: Nullable[PostProcess] = js.native
   
   /**
-    * The overall strengh for the lens flare effect
+    * The overall strength for the lens flare effect
     */
   var lensFlareStrength: Double = js.native
   
@@ -341,11 +341,11 @@ trait StandardRenderingPipeline
   def motionStrength_=(strength: Double): Unit = js.native
   
   /**
-    * Gets wether or not the motion blur post-process is object based or screen based.
+    * Gets whether or not the motion blur post-process is object based or screen based.
     */
   def objectBasedMotionBlur: Boolean = js.native
   /**
-    * Sets wether or not the motion blur post-process should be object based or screen based
+    * Sets whether or not the motion blur post-process should be object based or screen based
     */
   def objectBasedMotionBlur_=(value: Boolean): Unit = js.native
   
@@ -378,7 +378,7 @@ trait StandardRenderingPipeline
     * Serialize the rendering pipeline (Used when exporting)
     * @returns the serialized object
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Light (spot or directional) used to generate the volumetric lights rays

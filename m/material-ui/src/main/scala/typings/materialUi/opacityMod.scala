@@ -10,10 +10,10 @@ object opacityMod {
   
   @JSImport("material-ui/svg-icons/action/opacity", JSImport.Default)
   @js.native
-  class default () extends ActionOpacity
+  open class default () extends ActionOpacity
   
   @JSImport("material-ui/svg-icons/action/opacity", "ActionOpacity")
   @js.native
-  class ActionOpacity ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionOpacity ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

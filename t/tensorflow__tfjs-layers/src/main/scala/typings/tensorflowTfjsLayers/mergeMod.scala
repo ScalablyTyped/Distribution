@@ -17,7 +17,7 @@ object mergeMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Add")
   @js.native
-  class Add_ () extends Merge {
+  open class Add_ () extends Merge {
     def this(args: LayerArgs) = this()
   }
   /* static members */
@@ -36,7 +36,7 @@ object mergeMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Average")
   @js.native
-  class Average_ () extends Merge {
+  open class Average_ () extends Merge {
     def this(args: LayerArgs) = this()
   }
   /* static members */
@@ -55,12 +55,12 @@ object mergeMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Concatenate")
   @js.native
-  class Concatenate_ () extends Merge {
+  open class Concatenate_ () extends Merge {
     def this(args: ConcatenateLayerArgs) = this()
     
     val DEFAULT_AXIS: /* -1 */ Double = js.native
     
-    /* private */ val axis: js.Any = js.native
+    /* private */ val axis: Any = js.native
   }
   /* static members */
   object Concatenate_ {
@@ -78,14 +78,14 @@ object mergeMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Dot")
   @js.native
-  class Dot protected () extends Merge {
+  open class Dot protected () extends Merge {
     def this(args: DotLayerArgs) = this()
     
-    /* private */ var axes: js.Any = js.native
+    /* private */ var axes: Any = js.native
     
-    /* private */ var interpretAxes: js.Any = js.native
+    /* private */ var interpretAxes: Any = js.native
     
-    /* private */ var normalize: js.Any = js.native
+    /* private */ var normalize: Any = js.native
   }
   /* static members */
   object Dot {
@@ -103,7 +103,7 @@ object mergeMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Maximum")
   @js.native
-  class Maximum_ () extends Merge {
+  open class Maximum_ () extends Merge {
     def this(args: LayerArgs) = this()
   }
   /* static members */
@@ -135,7 +135,7 @@ object mergeMod {
       * @throws ValueError: If `shape1` and `shape2` are not compatible for
       *   element-wise operations.
       */
-    /* private */ var computeElementwiseOpOutputShape: js.Any = js.native
+    /* private */ var computeElementwiseOpOutputShape: Any = js.native
     
     /**
       * Logic for merging multiple tensors, to be overridden by subclasses.
@@ -148,7 +148,7 @@ object mergeMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Minimum")
   @js.native
-  class Minimum_ () extends Merge {
+  open class Minimum_ () extends Merge {
     def this(args: LayerArgs) = this()
   }
   /* static members */
@@ -167,7 +167,7 @@ object mergeMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Multiply")
   @js.native
-  class Multiply_ () extends Merge {
+  open class Multiply_ () extends Merge {
     def this(args: LayerArgs) = this()
   }
   /* static members */

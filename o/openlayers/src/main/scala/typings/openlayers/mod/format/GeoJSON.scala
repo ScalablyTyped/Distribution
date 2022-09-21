@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class GeoJSON () extends JSONFeature {
+open class GeoJSON () extends JSONFeature {
   def this(opt_options: GeoJSONOptions) = this()
   
   def readFeature(source: String): typings.openlayers.mod.Feature = js.native

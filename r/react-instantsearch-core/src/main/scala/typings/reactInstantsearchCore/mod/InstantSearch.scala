@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-instantsearch-core", "InstantSearch")
 @js.native
-class InstantSearch protected ()
-  extends Component[InstantSearchProps, js.Object, js.Any] {
+open class InstantSearch protected ()
+  extends Component[InstantSearchProps, js.Object, Any] {
   def this(props: InstantSearchProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: InstantSearchProps, context: js.Any) = this()
+  def this(props: InstantSearchProps, context: Any) = this()
 }

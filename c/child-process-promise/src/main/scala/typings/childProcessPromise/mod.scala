@@ -10,7 +10,7 @@ import typings.childProcessPromise.anon.ReadonlyOptionsencodingbu
 import typings.childProcessPromise.anon.ReadonlyOptionsencodingst
 import typings.childProcessPromise.childProcessPromiseStrings.stderr
 import typings.childProcessPromise.childProcessPromiseStrings.stdout
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.ChildProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -63,7 +63,7 @@ object mod {
       * Default: []
       */
     var capture: js.UndefOr[
-        (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
+        (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
       ] = js.undefined
     
     /**
@@ -81,17 +81,17 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCapture(value: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      inline def setCaptureVarargs(value: (stdout | stderr | js.Any)*): Self = StObject.set(x, "capture", js.Array(value :_*))
+      inline def setCaptureVarargs(value: (stdout | stderr | Any)*): Self = StObject.set(x, "capture", js.Array(value*))
       
       inline def setSuccessfulExitCodes(value: js.Array[Double]): Self = StObject.set(x, "successfulExitCodes", value.asInstanceOf[js.Any])
       
       inline def setSuccessfulExitCodesUndefined: Self = StObject.set(x, "successfulExitCodes", js.undefined)
       
-      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value :_*))
+      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value*))
     }
   }
   

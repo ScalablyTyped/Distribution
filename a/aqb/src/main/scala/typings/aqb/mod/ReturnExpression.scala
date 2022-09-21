@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReturnExpression
   extends StObject
      with Expression
-     with Instantiable3[/* prev */ LetExpression, /* value */ js.Any, /* distinct */ Boolean, Expression] {
+     with Instantiable3[/* prev */ LetExpression, /* value */ Any, /* distinct */ Boolean, Expression] {
   
   var _distinct: Boolean = js.native
   

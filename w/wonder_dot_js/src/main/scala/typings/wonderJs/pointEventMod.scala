@@ -15,7 +15,7 @@ object pointEventMod {
   @JSImport("wonder.js/dist/es2015/event/object/PointEvent", "PointEvent")
   @js.native
   abstract class PointEvent protected () extends DomEvent {
-    def this(event: js.Any, eventName: EEventName) = this()
+    def this(event: Any, eventName: EEventName) = this()
     
     var button: Double | Null = js.native
     

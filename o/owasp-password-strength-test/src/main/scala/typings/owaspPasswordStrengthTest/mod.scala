@@ -163,27 +163,27 @@ object mod {
       
       inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setFailedTests(value: js.Array[Double]): Self = StObject.set(x, "failedTests", value.asInstanceOf[js.Any])
       
-      inline def setFailedTestsVarargs(value: Double*): Self = StObject.set(x, "failedTests", js.Array(value :_*))
+      inline def setFailedTestsVarargs(value: Double*): Self = StObject.set(x, "failedTests", js.Array(value*))
       
       inline def setIsPassphrase(value: Boolean): Self = StObject.set(x, "isPassphrase", value.asInstanceOf[js.Any])
       
       inline def setOptionalTestErrors(value: js.Array[String]): Self = StObject.set(x, "optionalTestErrors", value.asInstanceOf[js.Any])
       
-      inline def setOptionalTestErrorsVarargs(value: String*): Self = StObject.set(x, "optionalTestErrors", js.Array(value :_*))
+      inline def setOptionalTestErrorsVarargs(value: String*): Self = StObject.set(x, "optionalTestErrors", js.Array(value*))
       
       inline def setOptionalTestsPassed(value: Double): Self = StObject.set(x, "optionalTestsPassed", value.asInstanceOf[js.Any])
       
       inline def setPassedTests(value: js.Array[Double]): Self = StObject.set(x, "passedTests", value.asInstanceOf[js.Any])
       
-      inline def setPassedTestsVarargs(value: Double*): Self = StObject.set(x, "passedTests", js.Array(value :_*))
+      inline def setPassedTestsVarargs(value: Double*): Self = StObject.set(x, "passedTests", js.Array(value*))
       
       inline def setRequiredTestErrors(value: js.Array[String]): Self = StObject.set(x, "requiredTestErrors", value.asInstanceOf[js.Any])
       
-      inline def setRequiredTestErrorsVarargs(value: String*): Self = StObject.set(x, "requiredTestErrors", js.Array(value :_*))
+      inline def setRequiredTestErrorsVarargs(value: String*): Self = StObject.set(x, "requiredTestErrors", js.Array(value*))
       
       inline def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__typography
 
-Typings are for version 2.4.2
+Typings are for version 5.1.3
 
 ## Library description:
 The base package for including typography for react-md.
@@ -11,9 +11,9 @@ The base package for including typography for react-md.
 | Full name          | @react-md/typography |
 | Keywords           | react-md, material design, react, component, components, typography |
 | # releases         | 37 |
-| # dependents       | 18 |
-| # downloads        | 31700 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 11106.666666666666 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/typography/demos)

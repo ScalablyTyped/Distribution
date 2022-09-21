@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Projection")
 @js.native
-class Projection ()
+open class Projection ()
   extends StObject
      with typings.bmapgl.BMapGL.Projection {
   

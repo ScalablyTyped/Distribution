@@ -1,5 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
+import typings.jsrsasign.anon.Tlv
 import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("jsrsasign", "KJUR.asn1.DERObjectIdentifier")
 @js.native
-class DERObjectIdentifier ()
+open class DERObjectIdentifier ()
   extends StObject
      with typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier {
   def this(params: HexParam) = this()
@@ -71,6 +72,10 @@ class DERObjectIdentifier ()
   /** flag whether internal data was changed */
   /* CompleteClass */
   var isModified: String = js.native
+  
+  /** JSON object parameter for ASN.1 encode */
+  /* CompleteClass */
+  var params: Tlv | Null = js.native
   
   /**
     * set value by a hexadecimal string

@@ -8,7 +8,7 @@ trait NodeExporter extends StObject {
   
   /**
     * 
-    Indicates whether you want to enable or disable the Node Exporter.
+    Indicates whether you want to turn on or turn off the Node Exporter.
     
     */
   var EnabledInBroker: boolean

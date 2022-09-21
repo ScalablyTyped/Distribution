@@ -79,7 +79,7 @@ object DataTables {
       * The columns that can gain focus. This accepts all of the options of column-selector
       * such as class name selector, jQuery pseudo selects and column index selectors.
       */
-    var columns: js.UndefOr[js.Any] = js.undefined
+    var columns: js.UndefOr[Any] = js.undefined
     
     /*
       * Control if editing should be activated immediately upon focus
@@ -93,7 +93,7 @@ object DataTables {
       *
       * The Editor instance to use for editing of the table
       */
-    var editor: js.UndefOr[js.Any] = js.undefined
+    var editor: js.UndefOr[Any] = js.undefined
     
     /*
       * Cell to receive initial focus in the table
@@ -102,7 +102,7 @@ object DataTables {
       * the options of cell-selector such as class name selector, jQuery pseudo selects and
       * cell index selectors.
       */
-    var focus: js.UndefOr[js.Any] = js.undefined
+    var focus: js.UndefOr[Any] = js.undefined
     
     /*
       * Limit the keys that KeyTable will listen for and take action on
@@ -146,7 +146,7 @@ object DataTables {
       
       inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
       
-      inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
@@ -154,11 +154,11 @@ object DataTables {
       
       inline def setEditOnFocusUndefined: Self = StObject.set(x, "editOnFocus", js.undefined)
       
-      inline def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+      inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
       inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
       
-      inline def setFocus(value: js.Any): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: Any): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
       inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
@@ -168,7 +168,7 @@ object DataTables {
       
       inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      inline def setKeysVarargs(value: Double*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: Double*): Self = StObject.set(x, "keys", js.Array(value*))
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       

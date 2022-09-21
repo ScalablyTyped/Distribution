@@ -9,7 +9,7 @@ object colorMod {
   
   @JSImport("@devexpress/utils/lib/utils/color", "ColorUtils")
   @js.native
-  class ColorUtils () extends StObject
+  open class ColorUtils () extends StObject
   /* static members */
   object ColorUtils {
     
@@ -19,11 +19,11 @@ object colorMod {
     
     @JSImport("@devexpress/utils/lib/utils/color", "ColorUtils.DARK_COLOR")
     @js.native
-    val DARK_COLOR: js.Any = js.native
+    val DARK_COLOR: /* -16777216 */ Double = js.native
     
     @JSImport("@devexpress/utils/lib/utils/color", "ColorUtils.LIGHT_COLOR")
     @js.native
-    val LIGHT_COLOR: js.Any = js.native
+    val LIGHT_COLOR: /* -1 */ Double = js.native
     
     inline def bluePartToString(color: Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bluePartToString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
     

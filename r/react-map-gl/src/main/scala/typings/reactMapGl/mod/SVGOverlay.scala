@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "SVGOverlay")
 @js.native
-class SVGOverlay protected () extends BaseControl[SVGOverlayProps, Element] {
+open class SVGOverlay protected () extends BaseControl[SVGOverlayProps, Element] {
   def this(props: SVGOverlayProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SVGOverlayProps, context: js.Any) = this()
+  def this(props: SVGOverlayProps, context: Any) = this()
 }

@@ -8,7 +8,7 @@ object futureMod {
   
   @JSImport("fibers/future", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Future
   @JSImport("fibers/future", JSImport.Namespace)
@@ -16,9 +16,9 @@ object futureMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def wait_(future_list: js.Array[Future]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(future_list.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def wait_(future_list: js.Array[Future]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(future_list.asInstanceOf[js.Any]).asInstanceOf[Any]
   /* static member */
-  inline def wait_(future: Future): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(future.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def wait_(future: Future): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(future.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* static member */
   inline def wrap(fn: js.Function): Future = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[Future]
@@ -28,13 +28,13 @@ object futureMod {
     
     def detach(): Unit = js.native
     
-    def get(): js.Any = js.native
+    def get(): Any = js.native
     
     def isResolved(): Boolean = js.native
     
     def proxy(future: Future): Unit = js.native
     
-    def proxyErrors(futureOrList: js.Any): Future = js.native
+    def proxyErrors(futureOrList: Any): Future = js.native
     
     def resolve(fn: js.Function): Unit = js.native
     
@@ -43,8 +43,8 @@ object futureMod {
     def resolver(): js.Function = js.native
     
     def `return`(): Unit = js.native
-    def `return`(result: js.Any): Unit = js.native
+    def `return`(result: Any): Unit = js.native
     
-    def `throw`(error: js.Any): Unit = js.native
+    def `throw`(error: Any): Unit = js.native
   }
 }

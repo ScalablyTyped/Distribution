@@ -49,6 +49,6 @@ object DescribeImagePermissionsRequest {
     
     inline def setSharedAwsAccountIdsUndefined: Self = StObject.set(x, "SharedAwsAccountIds", js.undefined)
     
-    inline def setSharedAwsAccountIdsVarargs(value: AwsAccountId*): Self = StObject.set(x, "SharedAwsAccountIds", js.Array(value :_*))
+    inline def setSharedAwsAccountIdsVarargs(value: AwsAccountId*): Self = StObject.set(x, "SharedAwsAccountIds", js.Array(value*))
   }
 }

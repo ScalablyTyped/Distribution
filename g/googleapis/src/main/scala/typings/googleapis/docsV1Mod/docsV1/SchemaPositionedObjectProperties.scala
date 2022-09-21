@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Properties of a PositionedObject.
-  */
 trait SchemaPositionedObjectProperties extends StObject {
   
   /**
@@ -15,8 +12,7 @@ trait SchemaPositionedObjectProperties extends StObject {
   var embeddedObject: js.UndefOr[SchemaEmbeddedObject] = js.undefined
   
   /**
-    * The positioning of this positioned object relative to the newline of the
-    * Paragraph that references this positioned object.
+    * The positioning of this positioned object relative to the newline of the Paragraph that references this positioned object.
     */
   var positioning: js.UndefOr[SchemaPositionedObjectPositioning] = js.undefined
 }

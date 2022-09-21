@@ -14,7 +14,7 @@ trait AnimationOptions extends StObject {
   
   var animationOptions: js.UndefOr[typings.reactOnsenui.mod.AnimationOptions] = js.native
   
-  var initialRoute: js.UndefOr[js.Any] = js.native
+  var initialRoute: js.UndefOr[Any] = js.native
   
   var initialRouteStack: js.UndefOr[js.Array[String]] = js.native
   
@@ -26,6 +26,6 @@ trait AnimationOptions extends StObject {
   
   var onPrePush: js.UndefOr[js.Function0[Unit]] = js.native
   
-  def renderPage(route: js.Any): Element = js.native
-  def renderPage(route: js.Any, navigator: Navigator): Element = js.native
+  def renderPage(route: Any): Element = js.native
+  def renderPage(route: Any, navigator: Navigator): Element = js.native
 }

@@ -31,7 +31,7 @@ object CreateCollectdTimeSeriesResponse {
     
     inline def setPayloadErrorsUndefined: Self = StObject.set(x, "payloadErrors", js.undefined)
     
-    inline def setPayloadErrorsVarargs(value: CollectdPayloadError*): Self = StObject.set(x, "payloadErrors", js.Array(value :_*))
+    inline def setPayloadErrorsVarargs(value: CollectdPayloadError*): Self = StObject.set(x, "payloadErrors", js.Array(value*))
     
     inline def setSummary(value: CreateTimeSeriesSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     

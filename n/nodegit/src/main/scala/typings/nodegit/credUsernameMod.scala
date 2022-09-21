@@ -9,7 +9,7 @@ object credUsernameMod {
   
   @JSImport("nodegit/cred-username", "CredUsername")
   @js.native
-  class CredUsername () extends StObject {
+  open class CredUsername () extends StObject {
     
     var parent: Cred = js.native
     

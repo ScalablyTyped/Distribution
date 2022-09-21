@@ -17,31 +17,36 @@ trait OnsNavigatorElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  
+  /**
+    * @description Specify the animation's duration, timing and delay with an object literal. E.g. `{duration: 0.2, delay: 1, timing: 'ease-in'}`.
+    **/
+  var animationOptions: js.Object = js.native
   
   /**
     * @param {any} item
     * @param {Object} [options]
     * @description Page URL or index of an existing page in navigator's stack.
     */
-  def bringPageTop(item: js.Any): js.Promise[HTMLElement] = js.native
-  def bringPageTop(item: js.Any, options: js.Object): js.Promise[HTMLElement] = js.native
+  def bringPageTop(item: Any): js.Promise[HTMLElement] = js.native
+  def bringPageTop(item: Any, options: js.Object): js.Promise[HTMLElement] = js.native
   
   /**
     * @param {Number} index The index where it should be inserted
-    * @param {*} page Page URL. Can be either a HTML document or a <code>&lt;ons-template&gt;</code>
+    * @param {*} page Page URL. Can be either a HTML document or a <code>&lt;template&gt;</code>
     * @param {Object} [options] Parameter object
     * @param {String} [options.animation] Animation name. Available animations are "slide", "simpleslide", "lift", "fade" and "none"
     * @description Insert the specified page into the page stack with specified index
     */
-  def insertPage(index: Double, page: js.Any): js.Promise[HTMLElement] = js.native
-  def insertPage(index: Double, page: js.Any, options: NavigatorOptions): js.Promise[HTMLElement] = js.native
+  def insertPage(index: Double, page: Any): js.Promise[HTMLElement] = js.native
+  def insertPage(index: Double, page: Any, options: NavigatorOptions): js.Promise[HTMLElement] = js.native
   
-  var onDeviceBackButton: js.Any = js.native
+  var onDeviceBackButton: Any = js.native
   
   /**
     * @param {Number} index Decimal ratio of the current swipe.
@@ -55,15 +60,15 @@ trait OnsNavigatorElement
     */
   var options: NavigatorOptions = js.native
   
-  var page: js.Any = js.native
+  var page: Any = js.native
   
-  var pageLoader: js.Any = js.native
+  var pageLoader: Any = js.native
   
   //attribute length in future?
   /**
     * @description Navigator's page stack.
     */
-  var pages: js.Any = js.native
+  var pages: Any = js.native
   
   /**
     * @param {Object} [options] Parameter object
@@ -74,15 +79,15 @@ trait OnsNavigatorElement
   def popPage(options: NavigatorOptions): js.Promise[HTMLElement] = js.native
   
   /**
-    * @param {*} page Page URL. Can be either a HTML document or a <code>&lt;ons-template&gt;</code>
+    * @param {*} page Page URL. Can be either a HTML document or a <code>&lt;template&gt;</code>
     * @param {Object} [options] Parameter object
     * @param {String} [options.animation] Animation name. Available animations are "slide", "simpleslide", "lift", "fade" and "none"
     * @param {Function} [options.callback] Function that is called when the transition has ended
     * @return Promise which resolves to the pushed page.
     * @description Pushes the specified pageUrl into the page stack.
     */
-  def pushPage(page: js.Any): js.Promise[HTMLElement] = js.native
-  def pushPage(page: js.Any, options: PushPageOptions): js.Promise[HTMLElement] = js.native
+  def pushPage(page: Any): js.Promise[HTMLElement] = js.native
+  def pushPage(page: Any, options: PushPageOptions): js.Promise[HTMLElement] = js.native
   
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -91,24 +96,24 @@ trait OnsNavigatorElement
   /* InferMemberOverrides */
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   
-  def removePage(args: js.Any*): js.Any = js.native
+  def removePage(args: Any*): Any = js.native
   
   /**
     * @return Promise which resolves to the inserted page
     * @description Replaces the current page with the specified one. Extends pushPage parameters.
     */
-  def replacePage(page: js.Any): js.Promise[HTMLElement] = js.native
-  def replacePage(page: js.Any, options: PushPageOptions): js.Promise[HTMLElement] = js.native
+  def replacePage(page: Any): js.Promise[HTMLElement] = js.native
+  def replacePage(page: Any, options: PushPageOptions): js.Promise[HTMLElement] = js.native
   
   /**
-    * @param {*} page Page URL. Can be either a HTML document or an <code>&lt;ons-template&gt;</code>
+    * @param {*} page Page URL. Can be either a HTML document or an <code>&lt;template&gt;</code>
     * @param {Object} [options] Parameter object
     * @param {String} [options.animation] Animation name. Available animations are "slide", "simpleslide", "lift", "fade" and "none"
     * @param {Function} [options.callback] Function that is called when the transition has ended
     * @description Clears page stack and adds the specified pageUrl to the page stack
     */
-  def resetToPage(page: js.Any): js.Promise[HTMLElement] = js.native
-  def resetToPage(page: js.Any, options: NavigatorOptions): js.Promise[HTMLElement] = js.native
+  def resetToPage(page: Any): js.Promise[HTMLElement] = js.native
+  def resetToPage(page: Any, options: NavigatorOptions): js.Promise[HTMLElement] = js.native
   
   /**
     * @return {HTMLElement}

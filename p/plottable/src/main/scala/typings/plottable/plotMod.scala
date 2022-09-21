@@ -2,7 +2,7 @@ package typings.plottable
 
 import typings.d3Selection.mod.Selection_
 import typings.plottable.animatorMod.IAnimator
-import typings.plottable.anon.HeightWidth
+import typings.plottable.anon.Y
 import typings.plottable.commonsMod.IAccessorScaleBinding
 import typings.plottable.commonsMod.ILightweightPlotEntity
 import typings.plottable.commonsMod.IPlotEntity
@@ -39,13 +39,13 @@ object plotMod {
     *
     * @constructor
     */
-  class Plot () extends Component {
+  open class Plot () extends Component {
     
     /* protected */ def _addDataset(dataset: Dataset): this.type = js.native
     
     /* protected */ def _additionalPaint(time: Double): Unit = js.native
     
-    /* private */ var _animate: js.Any = js.native
+    /* private */ var _animate: Any = js.native
     
     /* protected */ def _animateOnNextRender(): Boolean = js.native
     
@@ -60,39 +60,29 @@ object plotMod {
       * all the dots to size 0), and then they do the "main" animation into the correct visualization
       * (e.g. scatter plot dots grow to their specified size).
       */
-    /* private */ var _animators: js.Any = js.native
+    /* private */ var _animators: Any = js.native
     
-    /* private */ def _appendCanvasNode(): js.Any = js.native
+    /* private */ var _appendCanvasNode: Any = js.native
     
     /**
       * Mapping from attribute names to the AccessorScale that defines that attribute.
       */
-    /* private */ var _attrBindings: js.Any = js.native
+    /* private */ var _attrBindings: Any = js.native
     
     /**
       * Mapping from attribute names to the extents ([min, max]) values that that attribute takes on.
       */
-    /* private */ var _attrExtents: js.Any = js.native
+    /* private */ var _attrExtents: Any = js.native
     
-    /* protected */ def _bindAttr(attr: String, valueOrFn: js.Any, scale: Scale[js.Any, js.Any]): Unit = js.native
-    /* protected */ def _bindAttr(attr: String, valueOrFn: js.Function, scale: Scale[js.Any, js.Any]): Unit = js.native
+    /* protected */ def _bindAttr(attr: String, valueOrFn: js.Function, scale: Scale[Any, Any]): Unit = js.native
+    /* protected */ def _bindAttr(attr: String, valueOrFn: Any, scale: Scale[Any, Any]): Unit = js.native
     
-    /* protected */ def _bindProperty(property: String, valueOrFn: js.Any, scale: Scale[js.Any, js.Any]): Unit = js.native
-    /* protected */ def _bindProperty(
-      property: String,
-      valueOrFn: js.Any,
-      scale: Scale[js.Any, js.Any],
-      postScale: IRangeProjector[js.Any]
-    ): Unit = js.native
-    /* protected */ def _bindProperty(property: String, valueOrFn: js.Function, scale: Scale[js.Any, js.Any]): Unit = js.native
-    /* protected */ def _bindProperty(
-      property: String,
-      valueOrFn: js.Function,
-      scale: Scale[js.Any, js.Any],
-      postScale: IRangeProjector[js.Any]
-    ): Unit = js.native
+    /* protected */ def _bindProperty(property: String, valueOrFn: js.Function, scale: Scale[Any, Any]): Unit = js.native
+    /* protected */ def _bindProperty(property: String, valueOrFn: js.Function, scale: Scale[Any, Any], postScale: IRangeProjector[Any]): Unit = js.native
+    /* protected */ def _bindProperty(property: String, valueOrFn: Any, scale: Scale[Any, Any]): Unit = js.native
+    /* protected */ def _bindProperty(property: String, valueOrFn: Any, scale: Scale[Any, Any], postScale: IRangeProjector[Any]): Unit = js.native
     
-    /* protected */ var _bufferCanvas: Selection_[HTMLCanvasElement, js.Any, js.Any, js.Any] = js.native
+    /* protected */ var _bufferCanvas: Selection_[HTMLCanvasElement, Any, Any, Any] = js.native
     
     /* protected */ var _bufferCanvasValid: Boolean = js.native
     
@@ -103,14 +93,14 @@ object plotMod {
       */
     /* protected */ def _buildLightweightPlotEntities(datasets: js.Array[Dataset]): js.Array[ILightweightPlotEntity] = js.native
     
-    /* private */ var _cachedAttrToProjector: js.Any = js.native
+    /* private */ var _cachedAttrToProjector: Any = js.native
     
     /**
       * _cachedEntityStore is a cache of all the entities in the plot. It, at times
       * may be undefined and shouldn't be accessed directly. Instead, use _getEntityStore
       * to access the entity store.
       */
-    /* private */ var _cachedEntityStore: js.Any = js.native
+    /* private */ var _cachedEntityStore: Any = js.native
     
     /**
       * The canvas element that this Plot will render to if using the canvas
@@ -118,7 +108,7 @@ object plotMod {
       * parent-less (which means that the plot isn't setup yet but is still using
       * the canvas renderer).
       */
-    /* protected */ var _canvas: Selection_[HTMLCanvasElement, js.Any, js.Any, js.Any] = js.native
+    /* protected */ var _canvas: Selection_[HTMLCanvasElement, Any, Any, Any] = js.native
     
     /* protected */ def _clearAttrToProjectorCache(): Unit = js.native
     
@@ -140,17 +130,17 @@ object plotMod {
     /**
       * Whether the backing datasets have changed since this plot's last render.
       */
-    /* private */ var _dataChanged: js.Any = js.native
+    /* private */ var _dataChanged: Any = js.native
     
     /**
       * Stores the Drawer for each dataset attached to this plot.
       */
-    /* private */ var _datasetToDrawer: js.Any = js.native
+    /* private */ var _datasetToDrawer: Any = js.native
     
-    /* private */ var _deferredResetEntityStore: js.Any = js.native
+    /* private */ var _deferredResetEntityStore: Any = js.native
     
-    /* protected */ def _entityBounds(entity: ILightweightPlotEntity): HeightWidth = js.native
-    /* protected */ def _entityBounds(entity: IPlotEntity): HeightWidth = js.native
+    /* protected */ def _entityBounds(entity: ILightweightPlotEntity): Y = js.native
+    /* protected */ def _entityBounds(entity: IPlotEntity): Y = js.native
     
     /* protected */ def _filterForProperty(property: String): IAccessor[Boolean] = js.native
     
@@ -162,7 +152,7 @@ object plotMod {
     
     /* protected */ def _getAttrToProjector(): AttributeToProjector = js.native
     
-    /* protected */ def _getDataToDraw(): Map[Dataset, js.Array[js.Any]] = js.native
+    /* protected */ def _getDataToDraw(): Map[Dataset, js.Array[Any]] = js.native
     
     /**
       * _getEntityStore returns the store of all Entities associated with the specified dataset
@@ -173,16 +163,16 @@ object plotMod {
     /* protected */ def _getEntityStore(): IEntityStore[ILightweightPlotEntity] = js.native
     /* protected */ def _getEntityStore(datasets: js.Array[Dataset]): IEntityStore[ILightweightPlotEntity] = js.native
     
-    /* private */ def _includedValuesForScale[D](scale: js.Any, ignoreAttachState: js.Any): js.Any = js.native
+    /* private */ var _includedValuesForScale: Any = js.native
     
     /**
       * Callback that we register onto Scales that get bound to this Plot.
       *
       * TODO make this an arrow method instead of re-defining it in constructor()
       */
-    /* private */ var _includedValuesProvider: js.Any = js.native
+    /* private */ var _includedValuesProvider: Any = js.native
     
-    /* protected */ def _installScaleForKey(scale: Scale[js.Any, js.Any], key: String): Unit = js.native
+    /* protected */ def _installScaleForKey(scale: Scale[Any, Any], key: String): Unit = js.native
     
     /* protected */ def _lightweightPlotEntityToPlotEntity(entity: ILightweightPlotEntity): IPlotEntity = js.native
     
@@ -200,11 +190,11 @@ object plotMod {
       *
       * TODO make this an arrow method insteade of re-defining it in constructor()
       */
-    /* private */ var _onDatasetUpdateCallback: js.Any = js.native
+    /* private */ var _onDatasetUpdateCallback: Any = js.native
     
-    /* private */ def _paint(): js.Any = js.native
+    /* private */ var _paint: Any = js.native
     
-    /* protected */ def _pixelPoint(datum: js.Any, index: Double, dataset: Dataset): Point = js.native
+    /* protected */ def _pixelPoint(datum: Any, index: Double, dataset: Dataset): Point = js.native
     
     /**
       * Mapping from property names to the AccessorScale that defines that
@@ -218,15 +208,15 @@ object plotMod {
       * _generateDrawStep's attrToProjector; properties are not.
       */
     /* protected */ var _propertyBindings: typings.std.Map[
-        IAccessorScaleBinding[js.Any, js.Any], 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+        IAccessorScaleBinding[Any, Any], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
       ] = js.native
     
     /**
       * Mapping from property names to the extents ([min, max]) values that that
       * property takes on.
       */
-    /* private */ var _propertyExtents: js.Any = js.native
+    /* private */ var _propertyExtents: Any = js.native
     
     /* protected */ def _propertyProjectors(): AttributeToProjector = js.native
     
@@ -237,7 +227,7 @@ object plotMod {
     /**
       * The _renderArea is the main SVG drawing area upon which this plot should draw to.
       */
-    /* protected */ var _renderArea: Selection_[SVGGElement, js.Any, js.Any, js.Any] = js.native
+    /* protected */ var _renderArea: Selection_[SVGGElement, Any, Any, Any] = js.native
     
     /**
       * Callback that triggers when any scale that's bound to this plot Updates.
@@ -252,9 +242,9 @@ object plotMod {
     /**
       * @returns {Scale[]} A unique array of all scales currently used by the Plot.
       */
-    /* private */ def _scales(): js.Any = js.native
+    /* private */ var _scales: Any = js.native
     
-    /* protected */ def _uninstallScaleForKey(scale: Scale[js.Any, js.Any], key: String): Unit = js.native
+    /* protected */ def _uninstallScaleForKey(scale: Scale[Any, Any], key: String): Unit = js.native
     
     /**
       * Updates the extents associated with each attribute, then autodomains all scales the Plot uses.
@@ -411,12 +401,12 @@ object plotMod {
       */
     def filterEntities(where: js.Function2[/* entity */ ILightweightPlotEntity, /* index */ Double, Boolean]): js.Array[IPlotEntity] = js.native
     
-    /* protected */ def getExtentsForAttr(attr: String): js.Array[js.Array[js.Any]] = js.native
+    /* protected */ def getExtentsForAttr(attr: String): js.Array[js.Array[Any]] = js.native
     
     /**
       * Override in subclass to add special extents, such as included values
       */
-    /* protected */ def getExtentsForProperty(property: String): js.Array[js.Array[js.Any]] = js.native
+    /* protected */ def getExtentsForProperty(property: String): js.Array[js.Array[Any]] = js.native
     
     /**
       * Removes a Dataset from the Plot.
@@ -444,8 +434,8 @@ object plotMod {
       *   If not provided, Selections will be retrieved for all Datasets on the Plot.
       * @returns {d3.Selection}
       */
-    def selections(): SimpleSelection[js.Any] = js.native
-    def selections(datasets: js.Array[Dataset]): SimpleSelection[js.Any] = js.native
+    def selections(): SimpleSelection[Any] = js.native
+    def selections(datasets: js.Array[Dataset]): SimpleSelection[Any] = js.native
   }
   /* static members */
   object Plot {
@@ -464,16 +454,16 @@ object plotMod {
     def _ANIMATION_MAX_DURATION: Double = js.native
     inline def _ANIMATION_MAX_DURATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ANIMATION_MAX_DURATION")(x.asInstanceOf[js.Any])
     
-    inline def _scaledAccessor[D, R](binding: IAccessorScaleBinding[D, R]): IAccessor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_scaledAccessor")(binding.asInstanceOf[js.Any]).asInstanceOf[IAccessor[js.Any]]
+    inline def _scaledAccessor[D, R](binding: IAccessorScaleBinding[D, R]): IAccessor[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_scaledAccessor")(binding.asInstanceOf[js.Any]).asInstanceOf[IAccessor[Any]]
     
     inline def applyDrawSteps(drawSteps: js.Array[DrawStep], dataset: Dataset): js.Array[AppliedDrawStep] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDrawSteps")(drawSteps.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any])).asInstanceOf[js.Array[AppliedDrawStep]]
     
-    inline def getTotalDrawTime(data: js.Array[js.Any], drawSteps: js.Array[DrawStep]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTotalDrawTime")(data.asInstanceOf[js.Any], drawSteps.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def getTotalDrawTime(data: js.Array[Any], drawSteps: js.Array[DrawStep]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTotalDrawTime")(data.asInstanceOf[js.Any], drawSteps.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   /* keyof plottable.anon.Canvas */ /* Rewritten from type alias, can be one of: 
-    - typings.plottable.plottableStrings.svg
     - typings.plottable.plottableStrings.canvas
+    - typings.plottable.plottableStrings.svg
   */
   trait Renderer extends StObject
   object Renderer {

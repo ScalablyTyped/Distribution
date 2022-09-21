@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "ShaderLibUtils")
 @js.native
-class ShaderLibUtils ()
+open class ShaderLibUtils ()
   extends typings.wonderJs.shaderLibUtilsMod.ShaderLibUtils
 /* static members */
 object ShaderLibUtils {

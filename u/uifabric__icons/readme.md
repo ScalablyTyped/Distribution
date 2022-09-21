@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__icons
 
-Typings are for version 7.5.17
+Typings are for version 7.8.6
 
 ## Library description:
 Fluent UI React icon set.
@@ -10,10 +10,10 @@ Fluent UI React icon set.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/icons |
 | Keywords           | - |
-| # releases         | 141 |
-| # dependents       | 35 |
-| # downloads        | 4280378 |
-| # stars            | 0 |
+| # releases         | 41 |
+| # dependents       | 0.0 |
+| # downloads        | 297405.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

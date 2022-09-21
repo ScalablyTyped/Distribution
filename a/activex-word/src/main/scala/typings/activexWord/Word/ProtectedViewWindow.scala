@@ -22,13 +22,13 @@ trait ProtectedViewWindow extends StObject {
   val Document: typings.activexWord.Word.Document = js.native
   
   def Edit(): typings.activexWord.Word.Document = js.native
-  def Edit(PasswordTemplate: js.Any): typings.activexWord.Word.Document = js.native
-  def Edit(PasswordTemplate: js.Any, WritePasswordDocument: js.Any): typings.activexWord.Word.Document = js.native
-  def Edit(PasswordTemplate: js.Any, WritePasswordDocument: js.Any, WritePasswordTemplate: js.Any): typings.activexWord.Word.Document = js.native
-  def Edit(PasswordTemplate: js.Any, WritePasswordDocument: Unit, WritePasswordTemplate: js.Any): typings.activexWord.Word.Document = js.native
-  def Edit(PasswordTemplate: Unit, WritePasswordDocument: js.Any): typings.activexWord.Word.Document = js.native
-  def Edit(PasswordTemplate: Unit, WritePasswordDocument: js.Any, WritePasswordTemplate: js.Any): typings.activexWord.Word.Document = js.native
-  def Edit(PasswordTemplate: Unit, WritePasswordDocument: Unit, WritePasswordTemplate: js.Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: Any, WritePasswordDocument: Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: Any, WritePasswordDocument: Any, WritePasswordTemplate: Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: Any, WritePasswordDocument: Unit, WritePasswordTemplate: Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: Unit, WritePasswordDocument: Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: Unit, WritePasswordDocument: Any, WritePasswordTemplate: Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: Unit, WritePasswordDocument: Unit, WritePasswordTemplate: Any): typings.activexWord.Word.Document = js.native
   
   var Height: Double = js.native
   
@@ -36,7 +36,7 @@ trait ProtectedViewWindow extends StObject {
   
   var Left: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val SourceName: String = js.native
   

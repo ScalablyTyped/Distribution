@@ -35,7 +35,7 @@ object MeshProperties {
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    inline def setComponentsVarargs(value: MeshComponentProperties*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: MeshComponentProperties*): Self = StObject.set(x, "components", js.Array(value*))
     
     inline def setVertexAttributes(value: MeshVertexAttributesProperties): Self = StObject.set(x, "vertexAttributes", value.asInstanceOf[js.Any])
     

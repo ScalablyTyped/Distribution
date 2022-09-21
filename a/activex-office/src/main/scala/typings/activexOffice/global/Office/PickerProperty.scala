@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.PickerProperty")
 @js.native
-/* private */ class PickerProperty ()
+/* private */ open class PickerProperty ()
   extends StObject
      with typings.activexOffice.Office.PickerProperty {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -28,5 +28,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Type: MsoPickerField = js.native
   
   /* CompleteClass */
-  override val Value: js.Any = js.native
+  override val Value: Any = js.native
 }

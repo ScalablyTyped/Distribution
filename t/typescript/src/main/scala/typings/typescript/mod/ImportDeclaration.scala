@@ -8,13 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportDeclaration
   extends StObject
      with Statement
-     with JSDocContainer
-     with HasJSDoc {
+     with HasJSDoc
+     with HasModifiers {
+  
+  val assertClause: js.UndefOr[AssertClause] = js.native
   
   val importClause: js.UndefOr[ImportClause] = js.native
   
   @JSName("kind")
   val kind_ImportDeclaration: typings.typescript.mod.SyntaxKind.ImportDeclaration = js.native
+  
+  @JSName("modifiers")
+  val modifiers_ImportDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
   
   /** If this is not a StringLiteral it will be a grammar error. */
   val moduleSpecifier: Expression = js.native

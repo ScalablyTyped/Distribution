@@ -1,20 +1,20 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.menuDividerMod.IMenuDividerProps
+import typings.blueprintjsCore.menuDividerMod.MenuDividerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "MenuDivider")
 @js.native
-class MenuDivider protected ()
+open class MenuDivider protected ()
   extends typings.blueprintjsCore.componentsMod.MenuDivider {
-  def this(props: IMenuDividerProps) = this()
+  def this(props: MenuDividerProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IMenuDividerProps, context: js.Any) = this()
+  def this(props: MenuDividerProps, context: Any) = this()
 }
 /* static members */
 object MenuDivider {

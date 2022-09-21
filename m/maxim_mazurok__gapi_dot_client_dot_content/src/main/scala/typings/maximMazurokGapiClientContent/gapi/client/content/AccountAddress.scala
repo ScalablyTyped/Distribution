@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccountAddress extends StObject {
   
-  /** CLDR country code (e.g. "US"). This value cannot be set for a sub-account of an MCA. All MCA sub-accounts inherit the country of their parent MCA. */
+  /** CLDR country code (for example, "US"). All MCA sub-accounts inherit the country of their parent MCA by default, however the country can be updated for individual sub-accounts. */
   var country: js.UndefOr[String] = js.undefined
   
-  /** City, town or commune. May also include dependent localities or sublocalities (e.g. neighborhoods or suburbs). */
+  /** City, town or commune. May also include dependent localities or sublocalities (for example, neighborhoods or suburbs). */
   var locality: js.UndefOr[String] = js.undefined
   
-  /** Postal code or ZIP (e.g. "94043"). */
+  /** Postal code or ZIP (for example, "94043"). */
   var postalCode: js.UndefOr[String] = js.undefined
   
   /** Top-level administrative subdivision of the country. For example, a state like California ("CA") or a province like Quebec ("QC"). */
   var region: js.UndefOr[String] = js.undefined
   
-  /** Street-level part of the address. */
+  /** Street-level part of the address. Use `\n` to add a second line. */
   var streetAddress: js.UndefOr[String] = js.undefined
 }
 object AccountAddress {

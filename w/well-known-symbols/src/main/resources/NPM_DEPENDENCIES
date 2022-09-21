@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "well-known-symbols" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "well-known-symbols" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

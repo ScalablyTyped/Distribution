@@ -15,8 +15,8 @@ object maskedTextFieldMod {
   
   @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/MaskedTextField", "MaskedTextField")
   @js.native
-  class MaskedTextField protected ()
-    extends Component[IMaskedTextFieldProps, IMaskedTextFieldState, js.Any]
+  open class MaskedTextField protected ()
+    extends Component[IMaskedTextFieldProps, IMaskedTextFieldState, Any]
        with ITextField {
     def this(props: IMaskedTextFieldProps) = this()
     
@@ -24,10 +24,10 @@ object maskedTextFieldMod {
     def UNSAFE_componentWillReceiveProps_MMaskedTextField(newProps: IMaskedTextFieldProps): Unit = js.native
     
     /** The stored selection data prior to input change events. */
-    /* private */ var _changeSelectionData: js.Any = js.native
+    /* private */ var _changeSelectionData: Any = js.native
     
     /** True if the TextField is focused */
-    /* private */ var _isFocused: js.Any = js.native
+    /* private */ var _isFocused: Any = js.native
     
     /**
       *  An array of data containing information regarding the format characters,
@@ -43,26 +43,26 @@ object maskedTextFieldMod {
       *  ]
       * ```
       */
-    /* private */ var _maskCharData: js.Any = js.native
+    /* private */ var _maskCharData: Any = js.native
     
     /** True if the TextField was not focused and it was clicked into */
-    /* private */ var _moveCursorOnMouseUp: js.Any = js.native
+    /* private */ var _moveCursorOnMouseUp: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
-    /* private */ var _onInputChange: js.Any = js.native
+    /* private */ var _onInputChange: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: Any = js.native
     
-    /* private */ var _onMouseUp: js.Any = js.native
+    /* private */ var _onMouseUp: Any = js.native
     
-    /* private */ var _onPaste: js.Any = js.native
+    /* private */ var _onPaste: Any = js.native
     
-    /* private */ var _textField: js.Any = js.native
+    /* private */ var _textField: Any = js.native
     
     /** Blurs the input */
     /* CompleteClass */

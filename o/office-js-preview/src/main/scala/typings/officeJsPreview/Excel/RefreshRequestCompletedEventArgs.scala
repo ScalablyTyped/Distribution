@@ -8,54 +8,54 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * The argument that is passed to the event handler upon completion of refresh request to an external service or link.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 trait RefreshRequestCompletedEventArgs extends StObject {
   
   /**
-    *
     * Indicates if the request to refresh was successful.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var refreshed: Boolean
   
   /**
+    * The unique ID of the object whose refresh request was completed.
     *
-    * The unique id of the object whose refresh request was completed.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var serviceId: Double
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var `type`: LinkedDataTypeRefreshRequestCompleted
   
   /**
-    *
     * An array that contains any warnings generated from the refresh request.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
@@ -83,6 +83,6 @@ object RefreshRequestCompletedEventArgs {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

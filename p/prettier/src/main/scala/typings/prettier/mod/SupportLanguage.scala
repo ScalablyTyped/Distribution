@@ -20,6 +20,8 @@ trait SupportLanguage extends StObject {
   
   var group: js.UndefOr[String] = js.undefined
   
+  var interpreters: js.UndefOr[js.Array[String]] = js.undefined
+  
   var linguistLanguageId: js.UndefOr[Double] = js.undefined
   
   var name: String
@@ -49,7 +51,7 @@ object SupportLanguage {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
     
     inline def setCodemirrorMimeType(value: String): Self = StObject.set(x, "codemirrorMimeType", value.asInstanceOf[js.Any])
     
@@ -63,17 +65,23 @@ object SupportLanguage {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setFilenames(value: js.Array[String]): Self = StObject.set(x, "filenames", value.asInstanceOf[js.Any])
     
     inline def setFilenamesUndefined: Self = StObject.set(x, "filenames", js.undefined)
     
-    inline def setFilenamesVarargs(value: String*): Self = StObject.set(x, "filenames", js.Array(value :_*))
+    inline def setFilenamesVarargs(value: String*): Self = StObject.set(x, "filenames", js.Array(value*))
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setInterpreters(value: js.Array[String]): Self = StObject.set(x, "interpreters", value.asInstanceOf[js.Any])
+    
+    inline def setInterpretersUndefined: Self = StObject.set(x, "interpreters", js.undefined)
+    
+    inline def setInterpretersVarargs(value: String*): Self = StObject.set(x, "interpreters", js.Array(value*))
     
     inline def setLinguistLanguageId(value: Double): Self = StObject.set(x, "linguistLanguageId", value.asInstanceOf[js.Any])
     
@@ -83,7 +91,7 @@ object SupportLanguage {
     
     inline def setParsers(value: js.Array[BuiltInParserName | String]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
     
-    inline def setParsersVarargs(value: (BuiltInParserName | String)*): Self = StObject.set(x, "parsers", js.Array(value :_*))
+    inline def setParsersVarargs(value: (BuiltInParserName | String)*): Self = StObject.set(x, "parsers", js.Array(value*))
     
     inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
@@ -97,6 +105,6 @@ object SupportLanguage {
     
     inline def setVscodeLanguageIdsUndefined: Self = StObject.set(x, "vscodeLanguageIds", js.undefined)
     
-    inline def setVscodeLanguageIdsVarargs(value: String*): Self = StObject.set(x, "vscodeLanguageIds", js.Array(value :_*))
+    inline def setVscodeLanguageIdsVarargs(value: String*): Self = StObject.set(x, "vscodeLanguageIds", js.Array(value*))
   }
 }

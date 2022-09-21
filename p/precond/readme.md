@@ -10,10 +10,10 @@ Precondition checking utilities.
 | ------------------ | :-------------: |
 | Full name          | precond |
 | Keywords           | precondition, assert, invariant, contract, condition |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 19149498 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2841868.6666666665 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/MathieuTurcotte/node-precond#readme)

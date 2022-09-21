@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__dom-util
 
-Typings are for version 2.0.2
+Typings are for version 2.0.4
 
 ## Library description:
 A common util collection for antv projects
@@ -10,10 +10,10 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/dom-util |
 | Keywords           | util, antv, g |
-| # releases         | 5 |
-| # dependents       | 22 |
-| # downloads        | 768896 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 325110.3333333333 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/util#readme)

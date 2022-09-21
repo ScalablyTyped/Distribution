@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("BarProp")
 @js.native
-class BarProp ()
+/* standard dom */
+open class BarProp ()
   extends StObject
      with typings.std.BarProp {
   
+  /* standard dom */
   /* CompleteClass */
   override val visible: scala.Boolean = js.native
 }

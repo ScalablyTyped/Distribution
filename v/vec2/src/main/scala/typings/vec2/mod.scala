@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("vec2", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Vec2 {
     def this(xy: js.Array[Double]) = this()
@@ -48,7 +48,7 @@ object mod {
       * this function returns the passed `fn`
       */
     def change(): Vec2 = js.native
-    def change(fn: js.Function2[/* vec */ this.type, /* prev */ this.type, js.Any]): Vec2 = js.native
+    def change(fn: js.Function2[/* vec */ this.type, /* prev */ this.type, Any]): Vec2 = js.native
     
     /**
       * Clamp the coordinates of this vector to the high/low of the incoming vec2s.  If `returnNew` apply the result to the new vector and return.
@@ -96,7 +96,7 @@ object mod {
       * Pass a `fn` to remove it from the observers list. Calling this function without a `fn` will remove all observers.
       */
     def ignore(): Vec2 = js.native
-    def ignore(fn: js.Function2[/* vec */ this.type, /* prev */ this.type, js.Any]): Vec2 = js.native
+    def ignore(fn: js.Function2[/* vec */ this.type, /* prev */ this.type, Any]): Vec2 = js.native
     
     /**
       * Where `start` and `end` are vec2-like (e.g. `start.x` and `start.y`)

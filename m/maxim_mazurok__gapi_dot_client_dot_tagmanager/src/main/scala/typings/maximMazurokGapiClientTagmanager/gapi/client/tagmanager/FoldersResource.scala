@@ -6,10 +6,10 @@ import typings.maximMazurokGapiClientTagmanager.anon.Callback
 import typings.maximMazurokGapiClientTagmanager.anon.Fields
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
 import typings.maximMazurokGapiClientTagmanager.anon.PageToken
-import typings.maximMazurokGapiClientTagmanager.anon.Resource
 import typings.maximMazurokGapiClientTagmanager.anon.TagId
 import typings.maximMazurokGapiClientTagmanager.anon.TriggerId
-import typings.maximMazurokGapiClientTagmanager.anon.UploadType
+import typings.maximMazurokGapiClientTagmanager.anon.Uploadprotocol
+import typings.maximMazurokGapiClientTagmanager.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ trait FoldersResource extends StObject {
   
   def create(request: Alt, body: Folder): Request[Folder] = js.native
   /** Creates a GTM Folder. */
-  def create(request: Resource): Request[Folder] = js.native
+  def create(request: Uploadprotocol): Request[Folder] = js.native
   
   /** Deletes a GTM Folder. */
   def delete(): Request[Unit] = js.native
@@ -47,5 +47,5 @@ trait FoldersResource extends StObject {
   
   def update(request: Oauthtoken, body: Folder): Request[Folder] = js.native
   /** Updates a GTM Folder. */
-  def update(request: UploadType): Request[Folder] = js.native
+  def update(request: Xgafv): Request[Folder] = js.native
 }

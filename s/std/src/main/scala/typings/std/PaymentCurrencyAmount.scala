@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PaymentCurrencyAmount extends StObject {
   
+  /* standard dom */
   var currency: java.lang.String
   
-  var currencySystem: js.UndefOr[java.lang.String] = js.undefined
-  
+  /* standard dom */
   var value: java.lang.String
 }
 object PaymentCurrencyAmount {
@@ -22,10 +22,6 @@ object PaymentCurrencyAmount {
   extension [Self <: PaymentCurrencyAmount](x: Self) {
     
     inline def setCurrency(value: java.lang.String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
-    
-    inline def setCurrencySystem(value: java.lang.String): Self = StObject.set(x, "currencySystem", value.asInstanceOf[js.Any])
-    
-    inline def setCurrencySystemUndefined: Self = StObject.set(x, "currencySystem", js.undefined)
     
     inline def setValue(value: java.lang.String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

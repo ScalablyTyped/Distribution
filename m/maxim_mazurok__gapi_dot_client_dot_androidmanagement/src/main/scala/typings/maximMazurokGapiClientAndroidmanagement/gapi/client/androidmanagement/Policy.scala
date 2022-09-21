@@ -13,10 +13,10 @@ trait Policy extends StObject {
   /** Whether adding new users and profiles is disabled. */
   var addUserDisabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Whether adjusting the master volume is disabled. */
+  /** Whether adjusting the master volume is disabled. Also mutes the device. */
   var adjustVolumeDisabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Security policies set to the most secure values by default. To maintain the security posture of a device, we don't recommend overriding any of the default values. */
+  /** Security policies set to secure values by default. To maintain the security posture of a device, we don't recommend overriding any of the default values. */
   var advancedSecurityOverrides: js.UndefOr[AdvancedSecurityOverrides] = js.undefined
   
   /** Configuration for an always-on VPN connection. Use with vpn_config_disabled to prevent modification of this setting. */
@@ -28,13 +28,19 @@ trait Policy extends StObject {
     */
   var androidDevicePolicyTracks: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** The app auto update policy, which controls when automatic app updates can be applied. */
+  /**
+    * Deprecated. Use autoUpdateMode instead.When autoUpdateMode is set to AUTO_UPDATE_POSTPONED or AUTO_UPDATE_HIGH_PRIORITY, this field has no effect.The app auto update policy, which
+    * controls when automatic app updates can be applied.
+    */
   var appAutoUpdatePolicy: js.UndefOr[String] = js.undefined
   
   /** Policy applied to apps. */
   var applications: js.UndefOr[js.Array[ApplicationPolicy]] = js.undefined
   
-  /** Whether auto time is required, which prevents the user from manually setting the date and time. */
+  /** Whether auto date, time, and time zone are enabled on a company-owned device. If this is set, then autoTimeRequired is ignored. */
+  var autoDateAndTimeZone: js.UndefOr[String] = js.undefined
+  
+  /** Whether auto time is required, which prevents the user from manually setting the date and time. If autoDateAndTimeZone is set, this field is ignored. */
   var autoTimeRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -52,16 +58,20 @@ trait Policy extends StObject {
   /** Whether bluetooth is disabled. Prefer this setting over bluetooth_config_disabled because bluetooth_config_disabled can be bypassed by the user. */
   var bluetoothDisabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Whether all cameras on the device are disabled. */
+  /** Controls the use of the camera and whether the user has access to the camera access toggle. */
+  var cameraAccess: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If camera_access is set to any value other than CAMERA_ACCESS_UNSPECIFIED, this has no effect. Otherwise this field controls whether cameras are disabled: If true, all cameras are
+    * disabled, otherwise they are available. For fully managed devices this field applies for all apps on the device. For work profiles, this field applies only to apps in the work
+    * profile, and the camera access of apps outside the work profile is unaffected.
+    */
   var cameraDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether configuring cell broadcast is disabled. */
   var cellBroadcastsConfigDisabled: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Rules for automatically choosing a private key and certificate to authenticate the device to a server. The rules are ordered by increasing precedence, so if an outgoing request
-    * matches more than one rule, the last rule defines which private key to use.
-    */
+  /** Rules for determining apps' access to private keys. See ChoosePrivateKeyRule for details. */
   var choosePrivateKeyRules: js.UndefOr[js.Array[ChoosePrivateKeyRule]] = js.undefined
   
   /**
@@ -75,6 +85,9 @@ trait Policy extends StObject {
   
   /** Whether configuring user credentials is disabled. */
   var credentialsConfigDisabled: js.UndefOr[Boolean] = js.undefined
+  
+  /** Cross-profile policies applied on the device. */
+  var crossProfilePolicies: js.UndefOr[CrossProfilePolicies] = js.undefined
   
   /** Whether roaming data services are disabled. */
   var dataRoamingDisabled: js.UndefOr[Boolean] = js.undefined
@@ -109,7 +122,7 @@ trait Policy extends StObject {
   /** Whether user installation of apps is disabled. */
   var installAppsDisabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Whether the user is allowed to enable the "Unknown Sources" setting, which allows installation of apps from unknown sources. */
+  /** This field has no effect. */
   var installUnknownSourcesAllowed: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the keyguard is disabled. */
@@ -127,7 +140,7 @@ trait Policy extends StObject {
   /** Settings controlling the behavior of a device in kiosk mode. To enable kiosk mode, set kioskCustomLauncherEnabled to true or specify an app in the policy with installType KIOSK. */
   var kioskCustomization: js.UndefOr[KioskCustomization] = js.undefined
   
-  /** The degree of location detection enabled. The user may change the value unless the user is otherwise blocked from accessing device settings. */
+  /** The degree of location detection enabled. */
   var locationMode: js.UndefOr[String] = js.undefined
   
   /** A message displayed to the user in the device administators settings screen. */
@@ -135,6 +148,9 @@ trait Policy extends StObject {
   
   /** Maximum time in milliseconds for user activity until the device locks. A value of 0 means there is no restriction. */
   var maximumTimeToLock: js.UndefOr[String] = js.undefined
+  
+  /** Controls the use of the microphone and whether the user has access to the microphone access toggle. This applies only on fully managed devices. */
+  var microphoneAccess: js.UndefOr[String] = js.undefined
   
   /** The minimum allowed Android API level. */
   var minimumApiLevel: js.UndefOr[Double] = js.undefined
@@ -154,18 +170,22 @@ trait Policy extends StObject {
   /**
     * Whether the network escape hatch is enabled. If a network connection can't be made at boot time, the escape hatch prompts the user to temporarily connect to a network in order to
     * refresh the device policy. After applying policy, the temporary network will be forgotten and the device will continue booting. This prevents being unable to connect to a network if
-    * there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is otherwise unable to reach device settings.
+    * there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is otherwise unable to reach device settings.Note: Setting
+    * wifiConfigDisabled to true will override this setting under specific circumstances. Please see wifiConfigDisabled for further details.
     */
   var networkEscapeHatchEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether resetting network settings is disabled. */
   var networkResetDisabled: js.UndefOr[Boolean] = js.undefined
   
+  /** This feature is not generally available. */
+  var oncCertificateProviders: js.UndefOr[js.Array[OncCertificateProvider]] = js.undefined
+  
   /** Network configuration for the device. See configure networks for more information. */
   var openNetworkConfiguration: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy & TopLevel[Any]
   ] = js.undefined
   
   /** Whether using NFC to beam data from apps is disabled. */
@@ -177,7 +197,10 @@ trait Policy extends StObject {
   /** Password requirement policies. Different policies can be set for work profile or fully managed devices by setting the password_scope field in the policy. */
   var passwordPolicies: js.UndefOr[js.Array[PasswordRequirements]] = js.undefined
   
-  /** Password requirements. The field password_requirements.require_password_unlock must not be set. DEPRECATED - Use password_policies. */
+  /**
+    * Password requirements. The field password_requirements.require_password_unlock must not be set. DEPRECATED - Use passwordPolicies.Note:Complexity-based values of PasswordQuality,
+    * that is, COMPLEXITY_LOW, COMPLEXITY_MEDIUM, and COMPLEXITY_HIGH, cannot be used here. unified_lock_settings cannot be used here.
+    */
   var passwordRequirements: js.UndefOr[PasswordRequirements] = js.undefined
   
   /** Explicit permission or group grants or denials for all apps. These values override the default_permission_policy. */
@@ -185,7 +208,8 @@ trait Policy extends StObject {
   
   /**
     * Specifies permitted accessibility services. If the field is not set, any accessibility service can be used. If the field is set, only the accessibility services in this list and the
-    * system's built-in accessibility service can be used. In particular, if the field is set to empty, only the system's built-in accessibility servicess can be used.
+    * system's built-in accessibility service can be used. In particular, if the field is set to empty, only the system's built-in accessibility servicess can be used. This can be set on
+    * fully managed devices and on work profiles. When applied to a work profile, this affects both the personal profile and the work profile.
     */
   var permittedAccessibilityServices: js.UndefOr[PackageNameList] = js.undefined
   
@@ -203,6 +227,13 @@ trait Policy extends StObject {
   
   /** Rules that define the behavior when a particular policy can not be applied on device */
   var policyEnforcementRules: js.UndefOr[js.Array[PolicyEnforcementRule]] = js.undefined
+  
+  /**
+    * Controls whether preferential network service is enabled on the work profile. For example, an organization may have an agreement with a carrier that all of the work data from its
+    * employees' devices will be sent via a network service dedicated for enterprise use. An example of a supported preferential network service is the enterprise slice on 5G networks.
+    * This has no effect on fully managed devices.
+    */
+  var preferentialNetworkService: js.UndefOr[String] = js.undefined
   
   /**
     * Allows showing UI on a device for a user to choose a private key alias if there are no matching rules in ChoosePrivateKeyRules. For devices below Android P, setting this may leave
@@ -231,7 +262,7 @@ trait Policy extends StObject {
   /** Whether changing the wallpaper is disabled. */
   var setWallpaperDisabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Actions to take during the setup process. */
+  /** Action to take during the setup process. At most one action may be specified. */
   var setupActions: js.UndefOr[js.Array[SetupAction]] = js.undefined
   
   /** Whether location sharing is disabled. */
@@ -270,8 +301,14 @@ trait Policy extends StObject {
   /** Whether user uninstallation of applications is disabled. */
   var uninstallAppsDisabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Whether the microphone is muted and adjusting microphone volume is disabled. */
+  /**
+    * If microphone_access is set to any value other than MICROPHONE_ACCESS_UNSPECIFIED, this has no effect. Otherwise this field controls whether microphones are disabled: If true, all
+    * microphones are disabled, otherwise they are available. This is available only on fully managed devices.
+    */
   var unmuteMicrophoneDisabled: js.UndefOr[Boolean] = js.undefined
+  
+  /** Configuration of device activity logging. */
+  var usageLog: js.UndefOr[UsageLog] = js.undefined
   
   /** Whether transferring files over USB is disabled. */
   var usbFileTransferDisabled: js.UndefOr[Boolean] = js.undefined
@@ -285,7 +322,10 @@ trait Policy extends StObject {
   /** Whether configuring VPN is disabled. */
   var vpnConfigDisabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Whether configuring Wi-Fi access points is disabled. */
+  /**
+    * Whether configuring Wi-Fi access points is disabled.Note: If a network connection can't be made at boot time and configuring Wi-Fi is disabled then network escape hatch will be
+    * shown in order to refresh the device policy (see networkEscapeHatchEnabled).
+    */
   var wifiConfigDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** DEPRECATED - Use wifi_config_disabled. */
@@ -304,7 +344,7 @@ object Policy {
     
     inline def setAccountTypesWithManagementDisabledUndefined: Self = StObject.set(x, "accountTypesWithManagementDisabled", js.undefined)
     
-    inline def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = StObject.set(x, "accountTypesWithManagementDisabled", js.Array(value :_*))
+    inline def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = StObject.set(x, "accountTypesWithManagementDisabled", js.Array(value*))
     
     inline def setAddUserDisabled(value: Boolean): Self = StObject.set(x, "addUserDisabled", value.asInstanceOf[js.Any])
     
@@ -326,7 +366,7 @@ object Policy {
     
     inline def setAndroidDevicePolicyTracksUndefined: Self = StObject.set(x, "androidDevicePolicyTracks", js.undefined)
     
-    inline def setAndroidDevicePolicyTracksVarargs(value: String*): Self = StObject.set(x, "androidDevicePolicyTracks", js.Array(value :_*))
+    inline def setAndroidDevicePolicyTracksVarargs(value: String*): Self = StObject.set(x, "androidDevicePolicyTracks", js.Array(value*))
     
     inline def setAppAutoUpdatePolicy(value: String): Self = StObject.set(x, "appAutoUpdatePolicy", value.asInstanceOf[js.Any])
     
@@ -336,7 +376,11 @@ object Policy {
     
     inline def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
     
-    inline def setApplicationsVarargs(value: ApplicationPolicy*): Self = StObject.set(x, "applications", js.Array(value :_*))
+    inline def setApplicationsVarargs(value: ApplicationPolicy*): Self = StObject.set(x, "applications", js.Array(value*))
+    
+    inline def setAutoDateAndTimeZone(value: String): Self = StObject.set(x, "autoDateAndTimeZone", value.asInstanceOf[js.Any])
+    
+    inline def setAutoDateAndTimeZoneUndefined: Self = StObject.set(x, "autoDateAndTimeZone", js.undefined)
     
     inline def setAutoTimeRequired(value: Boolean): Self = StObject.set(x, "autoTimeRequired", value.asInstanceOf[js.Any])
     
@@ -358,6 +402,10 @@ object Policy {
     
     inline def setBluetoothDisabledUndefined: Self = StObject.set(x, "bluetoothDisabled", js.undefined)
     
+    inline def setCameraAccess(value: String): Self = StObject.set(x, "cameraAccess", value.asInstanceOf[js.Any])
+    
+    inline def setCameraAccessUndefined: Self = StObject.set(x, "cameraAccess", js.undefined)
+    
     inline def setCameraDisabled(value: Boolean): Self = StObject.set(x, "cameraDisabled", value.asInstanceOf[js.Any])
     
     inline def setCameraDisabledUndefined: Self = StObject.set(x, "cameraDisabled", js.undefined)
@@ -370,13 +418,13 @@ object Policy {
     
     inline def setChoosePrivateKeyRulesUndefined: Self = StObject.set(x, "choosePrivateKeyRules", js.undefined)
     
-    inline def setChoosePrivateKeyRulesVarargs(value: ChoosePrivateKeyRule*): Self = StObject.set(x, "choosePrivateKeyRules", js.Array(value :_*))
+    inline def setChoosePrivateKeyRulesVarargs(value: ChoosePrivateKeyRule*): Self = StObject.set(x, "choosePrivateKeyRules", js.Array(value*))
     
     inline def setComplianceRules(value: js.Array[ComplianceRule]): Self = StObject.set(x, "complianceRules", value.asInstanceOf[js.Any])
     
     inline def setComplianceRulesUndefined: Self = StObject.set(x, "complianceRules", js.undefined)
     
-    inline def setComplianceRulesVarargs(value: ComplianceRule*): Self = StObject.set(x, "complianceRules", js.Array(value :_*))
+    inline def setComplianceRulesVarargs(value: ComplianceRule*): Self = StObject.set(x, "complianceRules", js.Array(value*))
     
     inline def setCreateWindowsDisabled(value: Boolean): Self = StObject.set(x, "createWindowsDisabled", value.asInstanceOf[js.Any])
     
@@ -385,6 +433,10 @@ object Policy {
     inline def setCredentialsConfigDisabled(value: Boolean): Self = StObject.set(x, "credentialsConfigDisabled", value.asInstanceOf[js.Any])
     
     inline def setCredentialsConfigDisabledUndefined: Self = StObject.set(x, "credentialsConfigDisabled", js.undefined)
+    
+    inline def setCrossProfilePolicies(value: CrossProfilePolicies): Self = StObject.set(x, "crossProfilePolicies", value.asInstanceOf[js.Any])
+    
+    inline def setCrossProfilePoliciesUndefined: Self = StObject.set(x, "crossProfilePolicies", js.undefined)
     
     inline def setDataRoamingDisabled(value: Boolean): Self = StObject.set(x, "dataRoamingDisabled", value.asInstanceOf[js.Any])
     
@@ -418,7 +470,7 @@ object Policy {
     
     inline def setFrpAdminEmailsUndefined: Self = StObject.set(x, "frpAdminEmails", js.undefined)
     
-    inline def setFrpAdminEmailsVarargs(value: String*): Self = StObject.set(x, "frpAdminEmails", js.Array(value :_*))
+    inline def setFrpAdminEmailsVarargs(value: String*): Self = StObject.set(x, "frpAdminEmails", js.Array(value*))
     
     inline def setFunDisabled(value: Boolean): Self = StObject.set(x, "funDisabled", value.asInstanceOf[js.Any])
     
@@ -438,7 +490,7 @@ object Policy {
     
     inline def setKeyguardDisabledFeaturesUndefined: Self = StObject.set(x, "keyguardDisabledFeatures", js.undefined)
     
-    inline def setKeyguardDisabledFeaturesVarargs(value: String*): Self = StObject.set(x, "keyguardDisabledFeatures", js.Array(value :_*))
+    inline def setKeyguardDisabledFeaturesVarargs(value: String*): Self = StObject.set(x, "keyguardDisabledFeatures", js.Array(value*))
     
     inline def setKeyguardDisabledUndefined: Self = StObject.set(x, "keyguardDisabled", js.undefined)
     
@@ -461,6 +513,10 @@ object Policy {
     inline def setMaximumTimeToLock(value: String): Self = StObject.set(x, "maximumTimeToLock", value.asInstanceOf[js.Any])
     
     inline def setMaximumTimeToLockUndefined: Self = StObject.set(x, "maximumTimeToLock", js.undefined)
+    
+    inline def setMicrophoneAccess(value: String): Self = StObject.set(x, "microphoneAccess", value.asInstanceOf[js.Any])
+    
+    inline def setMicrophoneAccessUndefined: Self = StObject.set(x, "microphoneAccess", js.undefined)
     
     inline def setMinimumApiLevel(value: Double): Self = StObject.set(x, "minimumApiLevel", value.asInstanceOf[js.Any])
     
@@ -490,10 +546,16 @@ object Policy {
     
     inline def setNetworkResetDisabledUndefined: Self = StObject.set(x, "networkResetDisabled", js.undefined)
     
+    inline def setOncCertificateProviders(value: js.Array[OncCertificateProvider]): Self = StObject.set(x, "oncCertificateProviders", value.asInstanceOf[js.Any])
+    
+    inline def setOncCertificateProvidersUndefined: Self = StObject.set(x, "oncCertificateProviders", js.undefined)
+    
+    inline def setOncCertificateProvidersVarargs(value: OncCertificateProvider*): Self = StObject.set(x, "oncCertificateProviders", js.Array(value*))
+    
     inline def setOpenNetworkConfiguration(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy & TopLevel[Any]
     ): Self = StObject.set(x, "openNetworkConfiguration", value.asInstanceOf[js.Any])
     
     inline def setOpenNetworkConfigurationUndefined: Self = StObject.set(x, "openNetworkConfiguration", js.undefined)
@@ -510,7 +572,7 @@ object Policy {
     
     inline def setPasswordPoliciesUndefined: Self = StObject.set(x, "passwordPolicies", js.undefined)
     
-    inline def setPasswordPoliciesVarargs(value: PasswordRequirements*): Self = StObject.set(x, "passwordPolicies", js.Array(value :_*))
+    inline def setPasswordPoliciesVarargs(value: PasswordRequirements*): Self = StObject.set(x, "passwordPolicies", js.Array(value*))
     
     inline def setPasswordRequirements(value: PasswordRequirements): Self = StObject.set(x, "passwordRequirements", value.asInstanceOf[js.Any])
     
@@ -520,7 +582,7 @@ object Policy {
     
     inline def setPermissionGrantsUndefined: Self = StObject.set(x, "permissionGrants", js.undefined)
     
-    inline def setPermissionGrantsVarargs(value: PermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value :_*))
+    inline def setPermissionGrantsVarargs(value: PermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value*))
     
     inline def setPermittedAccessibilityServices(value: PackageNameList): Self = StObject.set(x, "permittedAccessibilityServices", value.asInstanceOf[js.Any])
     
@@ -534,7 +596,7 @@ object Policy {
     
     inline def setPersistentPreferredActivitiesUndefined: Self = StObject.set(x, "persistentPreferredActivities", js.undefined)
     
-    inline def setPersistentPreferredActivitiesVarargs(value: PersistentPreferredActivity*): Self = StObject.set(x, "persistentPreferredActivities", js.Array(value :_*))
+    inline def setPersistentPreferredActivitiesVarargs(value: PersistentPreferredActivity*): Self = StObject.set(x, "persistentPreferredActivities", js.Array(value*))
     
     inline def setPersonalUsagePolicies(value: PersonalUsagePolicies): Self = StObject.set(x, "personalUsagePolicies", value.asInstanceOf[js.Any])
     
@@ -548,7 +610,11 @@ object Policy {
     
     inline def setPolicyEnforcementRulesUndefined: Self = StObject.set(x, "policyEnforcementRules", js.undefined)
     
-    inline def setPolicyEnforcementRulesVarargs(value: PolicyEnforcementRule*): Self = StObject.set(x, "policyEnforcementRules", js.Array(value :_*))
+    inline def setPolicyEnforcementRulesVarargs(value: PolicyEnforcementRule*): Self = StObject.set(x, "policyEnforcementRules", js.Array(value*))
+    
+    inline def setPreferentialNetworkService(value: String): Self = StObject.set(x, "preferentialNetworkService", value.asInstanceOf[js.Any])
+    
+    inline def setPreferentialNetworkServiceUndefined: Self = StObject.set(x, "preferentialNetworkService", js.undefined)
     
     inline def setPrivateKeySelectionEnabled(value: Boolean): Self = StObject.set(x, "privateKeySelectionEnabled", value.asInstanceOf[js.Any])
     
@@ -582,7 +648,7 @@ object Policy {
     
     inline def setSetupActionsUndefined: Self = StObject.set(x, "setupActions", js.undefined)
     
-    inline def setSetupActionsVarargs(value: SetupAction*): Self = StObject.set(x, "setupActions", js.Array(value :_*))
+    inline def setSetupActionsVarargs(value: SetupAction*): Self = StObject.set(x, "setupActions", js.Array(value*))
     
     inline def setShareLocationDisabled(value: Boolean): Self = StObject.set(x, "shareLocationDisabled", value.asInstanceOf[js.Any])
     
@@ -612,7 +678,7 @@ object Policy {
     
     inline def setStayOnPluggedModesUndefined: Self = StObject.set(x, "stayOnPluggedModes", js.undefined)
     
-    inline def setStayOnPluggedModesVarargs(value: String*): Self = StObject.set(x, "stayOnPluggedModes", js.Array(value :_*))
+    inline def setStayOnPluggedModesVarargs(value: String*): Self = StObject.set(x, "stayOnPluggedModes", js.Array(value*))
     
     inline def setSystemUpdate(value: SystemUpdate): Self = StObject.set(x, "systemUpdate", value.asInstanceOf[js.Any])
     
@@ -629,6 +695,10 @@ object Policy {
     inline def setUnmuteMicrophoneDisabled(value: Boolean): Self = StObject.set(x, "unmuteMicrophoneDisabled", value.asInstanceOf[js.Any])
     
     inline def setUnmuteMicrophoneDisabledUndefined: Self = StObject.set(x, "unmuteMicrophoneDisabled", js.undefined)
+    
+    inline def setUsageLog(value: UsageLog): Self = StObject.set(x, "usageLog", value.asInstanceOf[js.Any])
+    
+    inline def setUsageLogUndefined: Self = StObject.set(x, "usageLog", js.undefined)
     
     inline def setUsbFileTransferDisabled(value: Boolean): Self = StObject.set(x, "usbFileTransferDisabled", value.asInstanceOf[js.Any])
     

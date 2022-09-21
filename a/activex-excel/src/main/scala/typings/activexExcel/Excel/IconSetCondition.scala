@@ -35,7 +35,7 @@ trait IconSetCondition extends StObject {
   
   val PTCondition: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PercentileValues: Boolean
   
@@ -68,7 +68,7 @@ object IconSetCondition {
     IconSet: IconSets,
     ModifyAppliesToRange: Range => Unit,
     PTCondition: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PercentileValues: Boolean,
     Priority: Double,
     ReverseOrder: Boolean,
@@ -106,7 +106,7 @@ object IconSetCondition {
     
     inline def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPercentileValues(value: Boolean): Self = StObject.set(x, "PercentileValues", value.asInstanceOf[js.Any])
     

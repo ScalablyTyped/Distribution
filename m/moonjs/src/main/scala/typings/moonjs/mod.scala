@@ -18,9 +18,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("moonjs", JSImport.Namespace)
   @js.native
-  class ^[Props /* <: String */, Data, Methods] ()
+  open class ^[Props /* <: String */, Data, Methods] ()
     extends StObject
-       with Instance[Data & Methods & (Record[Props, js.Any])] {
+       with Instance[Data & Methods & (Record[Props, Any])] {
     def this(options: ConstructorOptions[Props, Data, Methods]) = this()
   }
   @JSImport("moonjs", JSImport.Namespace)
@@ -30,7 +30,7 @@ object mod extends Shortcut {
   trait ComponentOptions[Props /* <: String */, Data, Methods]
     extends StObject
        with ComponentOptionsProperties[Props, js.Function0[Data], Methods]
-       with ThisType[Instance[Data & Methods & (Record[Props, js.Any])]]
+       with ThisType[Instance[Data & Methods & (Record[Props, Any])]]
   object ComponentOptions {
     
     inline def apply[Props /* <: String */, Data, Methods](): ComponentOptions[Props, Data, Methods] = {
@@ -55,7 +55,7 @@ object mod extends Shortcut {
     
     var props: js.UndefOr[js.Array[Props]] = js.undefined
     
-    var render: js.UndefOr[js.Function2[/* h */ CreateElement, /* ctx */ js.Any, VDomElement]] = js.undefined
+    var render: js.UndefOr[js.Function2[/* h */ CreateElement, /* ctx */ Any, VDomElement]] = js.undefined
     
     var template: js.UndefOr[String] = js.undefined
   }
@@ -96,9 +96,9 @@ object mod extends Shortcut {
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      inline def setPropsVarargs(value: Props*): Self = StObject.set(x, "props", js.Array(value :_*))
+      inline def setPropsVarargs(value: Props*): Self = StObject.set(x, "props", js.Array(value*))
       
-      inline def setRender(value: (/* h */ CreateElement, /* ctx */ js.Any) => VDomElement): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* h */ CreateElement, /* ctx */ Any) => VDomElement): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
@@ -111,7 +111,7 @@ object mod extends Shortcut {
   trait ConstructorOptions[Props /* <: String */, Data, Methods]
     extends StObject
        with ComponentOptionsProperties[Props, js.Function0[Data] | Data, Methods]
-       with ThisType[Instance[Data & Methods & (Record[Props, js.Any])]]
+       with ThisType[Instance[Data & Methods & (Record[Props, Any])]]
   object ConstructorOptions {
     
     inline def apply[Props /* <: String */, Data, Methods](): ConstructorOptions[Props, Data, Methods] = {
@@ -123,32 +123,32 @@ object mod extends Shortcut {
   @js.native
   trait CreateElement extends StObject {
     
-    def apply(tag: String, attrs: Record[String, js.Any]): VDomElement = js.native
-    def apply(tag: String, attrs: Record[String, js.Any], metadata: js.Any): VDomElement = js.native
-    def apply(tag: String, attrs: Record[String, js.Any], metadata: js.Any, children: String): VDomElement = js.native
-    def apply(tag: String, attrs: Record[String, js.Any], metadata: js.Any, children: js.Array[VDomElement]): VDomElement = js.native
-    def apply(tag: String, attrs: Record[String, js.Any], metadata: Unit, children: String): VDomElement = js.native
-    def apply(tag: String, attrs: Record[String, js.Any], metadata: Unit, children: js.Array[VDomElement]): VDomElement = js.native
-    def apply(tag: Instance[js.Object], attrs: Record[String, js.Any]): VDomElement = js.native
-    def apply(tag: Instance[js.Object], attrs: Record[String, js.Any], metadata: js.Any): VDomElement = js.native
-    def apply(tag: Instance[js.Object], attrs: Record[String, js.Any], metadata: js.Any, children: String): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, Any]): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, Any], metadata: Any): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, Any], metadata: Any, children: String): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, Any], metadata: Any, children: js.Array[VDomElement]): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, Any], metadata: Unit, children: String): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, Any], metadata: Unit, children: js.Array[VDomElement]): VDomElement = js.native
+    def apply(tag: Instance[js.Object], attrs: Record[String, Any]): VDomElement = js.native
+    def apply(tag: Instance[js.Object], attrs: Record[String, Any], metadata: Any): VDomElement = js.native
+    def apply(tag: Instance[js.Object], attrs: Record[String, Any], metadata: Any, children: String): VDomElement = js.native
     def apply(
       tag: Instance[js.Object],
-      attrs: Record[String, js.Any],
-      metadata: js.Any,
+      attrs: Record[String, Any],
+      metadata: Any,
       children: js.Array[VDomElement]
     ): VDomElement = js.native
-    def apply(tag: Instance[js.Object], attrs: Record[String, js.Any], metadata: Unit, children: String): VDomElement = js.native
+    def apply(tag: Instance[js.Object], attrs: Record[String, Any], metadata: Unit, children: String): VDomElement = js.native
     def apply(
       tag: Instance[js.Object],
-      attrs: Record[String, js.Any],
+      attrs: Record[String, Any],
       metadata: Unit,
       children: js.Array[VDomElement]
     ): VDomElement = js.native
-    def apply(tag: Numbersigntext, attrs: Record[String, js.Any]): VDomElement = js.native
-    def apply(tag: Numbersigntext, attrs: Record[String, js.Any], metadata: js.Any): VDomElement = js.native
-    def apply(tag: Numbersigntext, attrs: Record[String, js.Any], metadata: js.Any, children: String): VDomElement = js.native
-    def apply(tag: Numbersigntext, attrs: Record[String, js.Any], metadata: Unit, children: String): VDomElement = js.native
+    def apply(tag: Numbersigntext, attrs: Record[String, Any]): VDomElement = js.native
+    def apply(tag: Numbersigntext, attrs: Record[String, Any], metadata: Any): VDomElement = js.native
+    def apply(tag: Numbersigntext, attrs: Record[String, Any], metadata: Any, children: String): VDomElement = js.native
+    def apply(tag: Numbersigntext, attrs: Record[String, Any], metadata: Unit, children: String): VDomElement = js.native
   }
   
   @js.native
@@ -159,13 +159,13 @@ object mod extends Shortcut {
     
     def build(): Unit = js.native
     
-    def callMethod[K /* <: /* keyof Data */ String */](methodName: K): js.Any = js.native
-    def callMethod[K /* <: /* keyof Data */ String */](methodName: K, params: js.Array[js.Any]): js.Any = js.native
+    def callMethod[K /* <: /* keyof Data */ String */](methodName: K): Any = js.native
+    def callMethod[K /* <: /* keyof Data */ String */](methodName: K, params: js.Array[Any]): Any = js.native
     
     def destroy(): Unit = js.native
     
     def emit(eventName: String): Unit = js.native
-    def emit(eventName: String, data: js.Any): Unit = js.native
+    def emit(eventName: String, data: Any): Unit = js.native
     
     def get[K /* <: /* keyof Data */ String */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: Data[K] */ js.Any = js.native
     
@@ -250,7 +250,7 @@ object mod extends Shortcut {
       
       inline def setDelimiters(value: js.Array[String]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      inline def setDelimitersVarargs(value: String*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: String*): Self = StObject.set(x, "delimiters", js.Array(value*))
       
       inline def setKeycodes(value: Record[String, Double] => Unit): Self = StObject.set(x, "keycodes", js.Any.fromFunction1(value))
       
@@ -265,10 +265,10 @@ object mod extends Shortcut {
   @js.native
   trait MoonConstructor
     extends StObject
-       with Instantiable0[Instance[js.Object & (Record[String, js.Any])]]
+       with Instantiable0[Instance[js.Object & (Record[String, Any])]]
        with Instantiable1[
           /* options */ ConstructorOptions[String, js.Object, js.Object], 
-          Instance[js.Object & (Record[String, js.Any])]
+          Instance[js.Object & (Record[String, Any])]
         ]
   
   @js.native
@@ -282,7 +282,7 @@ object mod extends Shortcut {
     
     var config: MoonConfig = js.native
     
-    def directive(name: String, action: js.Function2[/* el */ js.Any, /* val */ js.Any, Unit]): Unit = js.native
+    def directive(name: String, action: js.Function2[/* el */ Any, /* val */ Any, Unit]): Unit = js.native
     
     def nextTick(callback: js.Function0[Unit]): Unit = js.native
     
@@ -295,7 +295,7 @@ object mod extends Shortcut {
     
     var meta: js.Object
     
-    var props: Record[String, js.Any]
+    var props: Record[String, Any]
     
     var `type`: String
     
@@ -306,7 +306,7 @@ object mod extends Shortcut {
     inline def apply(
       children: js.Array[VDomElement],
       meta: js.Object,
-      props: Record[String, js.Any],
+      props: Record[String, Any],
       `type`: String,
       `val`: String
     ): VDomElement = {
@@ -320,11 +320,11 @@ object mod extends Shortcut {
       
       inline def setChildren(value: js.Array[VDomElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: VDomElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: VDomElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Record[String, Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

@@ -14,7 +14,7 @@ object GlobalAPI {
       * Cancels an ongoing reload. The reload of the app is stopped.
       * @return - A promise of a Qlik engine reply.
       */
-    def cancelReload(): IPromise[js.Any] = js.native
+    def cancelReload(): IPromise[Any] = js.native
     
     /**
       * Gets a list of Qlik Sense apps that you potentially can connect to and
@@ -23,23 +23,23 @@ object GlobalAPI {
       * for you to make other calls as well.
       * @param callback - Callback method.
       */
-    def getAppList(callback: js.Any): Unit = js.native
+    def getAppList(callback: Any): Unit = js.native
     
     /**
       * Gets information (user directory and user id) about the authenticated user.
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def getAuthenticatedUser(): IPromise[js.Any] = js.native
-    def getAuthenticatedUser(callback: js.Any): IPromise[js.Any] = js.native
+    def getAuthenticatedUser(): IPromise[Any] = js.native
+    def getAuthenticatedUser(callback: Any): IPromise[Any] = js.native
     
     /**
       * Gets the product version.
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def getProductVersion(): IPromise[js.Any] = js.native
-    def getProductVersion(callback: js.Any): IPromise[js.Any] = js.native
+    def getProductVersion(): IPromise[Any] = js.native
+    def getProductVersion(callback: Any): IPromise[Any] = js.native
     
     /**
       * Gets information about progress of doReload and doSave calls.
@@ -49,24 +49,24 @@ object GlobalAPI {
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def getProgress(qRequestId: Double): IPromise[js.Any] = js.native
-    def getProgress(qRequestId: Double, callback: js.Any): IPromise[js.Any] = js.native
+    def getProgress(qRequestId: Double): IPromise[Any] = js.native
+    def getProgress(qRequestId: Double, callback: Any): IPromise[Any] = js.native
     
     /**
       * Gets the Qlik product name.
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def getQTProduct(): IPromise[js.Any] = js.native
-    def getQTProduct(callback: js.Any): IPromise[js.Any] = js.native
+    def getQTProduct(): IPromise[Any] = js.native
+    def getQTProduct(callback: Any): IPromise[Any] = js.native
     
     /**
       * Gets the Qlik Sense version number.
       * @param [callback] - Optional. Callback method.
       * @return - A promise.
       */
-    def getQvVersion(): IPromise[js.Any] = js.native
-    def getQvVersion(callback: js.Any): IPromise[js.Any] = js.native
+    def getQvVersion(): IPromise[Any] = js.native
+    def getQvVersion(callback: Any): IPromise[Any] = js.native
     
     /**
       * Gets information if the user is working in personal mode
@@ -75,7 +75,7 @@ object GlobalAPI {
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def isPersonalMode(): IPromise[js.Any] = js.native
-    def isPersonalMode(callback: js.Any): IPromise[js.Any] = js.native
+    def isPersonalMode(): IPromise[Any] = js.native
+    def isPersonalMode(callback: Any): IPromise[Any] = js.native
   }
 }

@@ -13,8 +13,8 @@ trait NotificationConfig extends StObject {
   var payloadFormat: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The `Topic.name` of the Cloud Pub/Sub topic to which to publish notifications. Must be of the format: `projects/{project}/topics/{topic}`. Not matching this format will
-    * result in an INVALID_ARGUMENT error.
+    * Required. The `Topic.name` of the Pub/Sub topic to which to publish notifications. Must be of the format: `projects/{project}/topics/{topic}`. Not matching this format results in an
+    * INVALID_ARGUMENT error.
     */
   var pubsubTopic: js.UndefOr[String] = js.undefined
 }
@@ -31,7 +31,7 @@ object NotificationConfig {
     
     inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
     
-    inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
+    inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value*))
     
     inline def setPayloadFormat(value: String): Self = StObject.set(x, "payloadFormat", value.asInstanceOf[js.Any])
     

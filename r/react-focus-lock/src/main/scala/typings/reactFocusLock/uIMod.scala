@@ -27,50 +27,50 @@ object uIMod {
   
   @JSImport("react-focus-lock/UI/UI", "AutoFocusInside")
   @js.native
-  class AutoFocusInside protected ()
-    extends Component[AutoFocusProps, js.Object, js.Any] {
+  open class AutoFocusInside protected ()
+    extends Component[AutoFocusProps, js.Object, Any] {
     def this(props: AutoFocusProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: AutoFocusProps, context: js.Any) = this()
+    def this(props: AutoFocusProps, context: Any) = this()
   }
   
   @JSImport("react-focus-lock/UI/UI", "FreeFocusInside")
   @js.native
-  class FreeFocusInside protected ()
-    extends Component[FreeFocusProps, js.Object, js.Any] {
+  open class FreeFocusInside protected ()
+    extends Component[FreeFocusProps, js.Object, Any] {
     def this(props: FreeFocusProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FreeFocusProps, context: js.Any) = this()
+    def this(props: FreeFocusProps, context: Any) = this()
   }
   
   @JSImport("react-focus-lock/UI/UI", "InFocusGuard")
   @js.native
-  class InFocusGuard protected ()
-    extends Component[InFocusGuardProps, js.Object, js.Any] {
+  open class InFocusGuard protected ()
+    extends Component[InFocusGuardProps, js.Object, Any] {
     def this(props: InFocusGuardProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: InFocusGuardProps, context: js.Any) = this()
+    def this(props: InFocusGuardProps, context: Any) = this()
   }
   
   @JSImport("react-focus-lock/UI/UI", "MoveFocusInside")
   @js.native
-  class MoveFocusInside protected ()
-    extends Component[AutoFocusProps, js.Object, js.Any] {
+  open class MoveFocusInside protected ()
+    extends Component[AutoFocusProps, js.Object, Any] {
     def this(props: AutoFocusProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: AutoFocusProps, context: js.Any) = this()
+    def this(props: AutoFocusProps, context: Any) = this()
   }
   
   inline def useFocusInside(node: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusInside")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]

@@ -44,8 +44,8 @@ trait QueryCollection[T]
     * @param options The options passed to the newly-created controls.
     * @returns This QueryCollection object.
     **/
-  def control(ctor: js.Any): QueryCollection[T] = js.native
-  def control(ctor: js.Any, options: js.Any): QueryCollection[T] = js.native
+  def control(ctor: Any): QueryCollection[T] = js.native
+  def control(ctor: Any, options: Any): QueryCollection[T] = js.native
   
   /**
     * Gets an item from the QueryCollection.
@@ -59,7 +59,7 @@ trait QueryCollection[T]
     * @param name The name of the attribute.
     * @returns The value of the attribute.
     **/
-  def getAttribute(name: String): js.Any = js.native
+  def getAttribute(name: String): Any = js.native
   
   /**
     * Determines whether the specified class exists on the first element of the collection.
@@ -103,7 +103,7 @@ trait QueryCollection[T]
   @JSName("map")
   def map_U_Array[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-    thisArg: js.Any
+    thisArg: Any
   ): js.Array[U] = js.native
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
@@ -115,7 +115,7 @@ trait QueryCollection[T]
   @JSName("map")
   def map_U_Tuple3[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-    thisArg: js.Any
+    thisArg: Any
   ): js.Tuple3[U, U, U] = js.native
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
@@ -127,7 +127,7 @@ trait QueryCollection[T]
   @JSName("map")
   def map_U_Tuple4[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-    thisArg: js.Any
+    thisArg: Any
   ): js.Tuple4[U, U, U, U] = js.native
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
@@ -139,7 +139,7 @@ trait QueryCollection[T]
   @JSName("map")
   def map_U_Tuple5[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-    thisArg: js.Any
+    thisArg: Any
   ): js.Tuple5[U, U, U, U, U] = js.native
   
   /**
@@ -147,7 +147,7 @@ trait QueryCollection[T]
     * @param query The query selector string.
     * @returns A QueryCollection object containing the aggregate results of executing the query on all the elements in the collection.
     **/
-  def query(query: js.Any): QueryCollection[T] = js.native
+  def query(query: Any): QueryCollection[T] = js.native
   
   /**
     * Removes the specified class from all the elements in the collection.
@@ -172,7 +172,7 @@ trait QueryCollection[T]
     * @param value The value of the attribute to be set.
     * @returns This QueryCollection object.
     **/
-  def setAttribute(name: String, value: js.Any): QueryCollection[T] = js.native
+  def setAttribute(name: String, value: Any): QueryCollection[T] = js.native
   
   /**
     * Sets the specified style property for all the elements in the collection.
@@ -180,7 +180,7 @@ trait QueryCollection[T]
     * @param value The value for the property.
     * @returns This QueryCollection object.
     **/
-  def setStyle(name: String, value: js.Any): QueryCollection[T] = js.native
+  def setStyle(name: String, value: Any): QueryCollection[T] = js.native
   
   /**
     * Renders a template that is bound to the given data and parented to the elements included in the QueryCollection. If the QueryCollection contains multiple elements, the template is rendered multiple times, once at each element in the QueryCollection per item of data passed.
@@ -189,8 +189,8 @@ trait QueryCollection[T]
     * @param renderDonePromiseCallback If supplied, this function is called each time the template gets rendered, and is passed a promise that is fulfilled when the template rendering is complete.
     * @returns The QueryCollection.
     **/
-  def template(templateElement: HTMLElement, data: js.Any): QueryCollection[T] = js.native
-  def template(templateElement: HTMLElement, data: js.Any, renderDonePromiseCallback: js.Function): QueryCollection[T] = js.native
+  def template(templateElement: HTMLElement, data: Any): QueryCollection[T] = js.native
+  def template(templateElement: HTMLElement, data: Any, renderDonePromiseCallback: js.Function): QueryCollection[T] = js.native
   
   /**
     * Toggles (adds or removes) the specified class on all the elements in the collection. If the class is present, it is removed; if it is absent, it is added.

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFloatingObjectRotationCommand")
 @js.native
-class ChangeFloatingObjectRotationCommand ()
+open class ChangeFloatingObjectRotationCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFloatingObjectRotationCommand {
   

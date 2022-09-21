@@ -19,13 +19,13 @@ object plupload {
       * @param {plupload.File|mOxie.File|File|Node|Array} file File or files to add to the queue.
       * @param {String} [fileName] If specified, will be used as a name for the file
       */
-    def addFile(file: js.Any): Unit = js.native
-    def addFile(file: js.Any, fileName: String): Unit = js.native
+    def addFile(file: Any): Unit = js.native
+    def addFile(file: Any, fileName: String): Unit = js.native
     
-    def bind(name: String, func: js.Any): js.Any = js.native
-    def bind(name: String, func: js.Any, scope: js.Any): js.Any = js.native
+    def bind(name: String, func: Any): Any = js.native
+    def bind(name: String, func: Any, scope: Any): Any = js.native
     
-    def destroy(): js.Any = js.native
+    def destroy(): Any = js.native
     
     /**
       * Disables/enables browse button on request.
@@ -43,7 +43,7 @@ object plupload {
       * @property features
       * @type Object
       */
-    var features: js.Any = js.native
+    var features: Any = js.native
     
     /**
       * Current upload queue, an array of File instances.
@@ -52,7 +52,7 @@ object plupload {
       * @type Array
       * @see plupload.File
       */
-    var files: js.Array[js.Any] = js.native
+    var files: js.Array[Any] = js.native
     
     // TODO: Make plupload.File typing
     /**
@@ -62,7 +62,7 @@ object plupload {
       * @param {String} id File id to look for.
       * @return {plupload.File} File object or undefined if it wasn't found;
       */
-    def getFile(id: String): js.Any = js.native
+    def getFile(id: String): Any = js.native
     
     /**
       * Get the value for the specified option or the whole configuration, if not specified.
@@ -72,10 +72,10 @@ object plupload {
       * @param {String} [option] Name of the option to get
       * @return {Mixed} Value for the option or the whole set
       */
-    def getOption(): js.Any = js.native
-    def getOption(option: String): js.Any = js.native
+    def getOption(): Any = js.native
+    def getOption(option: String): Any = js.native
     
-    def hasEventListener(name: String): js.Any = js.native
+    def hasEventListener(name: String): Any = js.native
     
     /**
       * Unique id for the Uploader instance.
@@ -106,7 +106,7 @@ object plupload {
       * @method removeFile
       * @param {plupload.File|String} file File to remove from queue.
       */
-    def removeFile(file: js.Any): js.Any = js.native
+    def removeFile(file: Any): Any = js.native
     
     /**
       * Current runtime name.
@@ -125,9 +125,9 @@ object plupload {
       * @param {Mixed} [value] Value for the option (is ignored, if first argument is object)
       */
     def setOption(option: String): Unit = js.native
-    def setOption(option: String, value: js.Any): Unit = js.native
-    def setOption(option: js.Any): Unit = js.native
-    def setOption(option: js.Any, value: js.Any): Unit = js.native
+    def setOption(option: String, value: Any): Unit = js.native
+    def setOption(option: Any): Unit = js.native
+    def setOption(option: Any, value: Any): Unit = js.native
     
     /**
       * Object with name/value settings.
@@ -135,7 +135,7 @@ object plupload {
       * @property settings
       * @type Object
       */
-    var settings: js.Any = js.native
+    var settings: Any = js.native
     
     /**
       * Removes part of the queue and returns the files removed. This will also trigger the
@@ -146,10 +146,10 @@ object plupload {
       * @param {Number} [length] Number of files to remove (defaults to number of files in the queue).
       * @return {Array} Array of files that was removed.
       */
-    def splice(): js.Any = js.native
-    def splice(start: Double): js.Any = js.native
-    def splice(start: Double, length: Double): js.Any = js.native
-    def splice(start: Unit, length: Double): js.Any = js.native
+    def splice(): Any = js.native
+    def splice(start: Double): Any = js.native
+    def splice(start: Double, length: Double): Any = js.native
+    def splice(start: Unit, length: Double): Any = js.native
     
     /**
       * Starts uploading the queued files.
@@ -188,10 +188,10 @@ object plupload {
       * @param {String} name Event name to fire.
       * @param {Object..} Multiple arguments to pass along to the listener functions.
       */
-    def trigger(name: String, Multiple: js.Any): js.Any = js.native
+    def trigger(name: String, Multiple: Any): Any = js.native
     
-    def unbind(name: String, func: js.Any): js.Any = js.native
+    def unbind(name: String, func: Any): Any = js.native
     
-    def unbindAll(): js.Any = js.native
+    def unbindAll(): Any = js.native
   }
 }

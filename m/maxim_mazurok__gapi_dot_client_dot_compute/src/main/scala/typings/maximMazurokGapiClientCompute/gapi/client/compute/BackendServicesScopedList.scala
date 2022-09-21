@@ -26,7 +26,7 @@ object BackendServicesScopedList {
     
     inline def setBackendServicesUndefined: Self = StObject.set(x, "backendServices", js.undefined)
     
-    inline def setBackendServicesVarargs(value: BackendService*): Self = StObject.set(x, "backendServices", js.Array(value :_*))
+    inline def setBackendServicesVarargs(value: BackendService*): Self = StObject.set(x, "backendServices", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

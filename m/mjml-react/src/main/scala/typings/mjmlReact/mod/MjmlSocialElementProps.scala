@@ -1,7 +1,7 @@
 package typings.mjmlReact.mod
 
-import typings.csstype.mod.BackgroundColorProperty
-import typings.csstype.mod.ColorProperty
+import typings.csstype.mod.Property.BackgroundColor
+import typings.csstype.mod.Property.Color
 import typings.mjmlReact.mjmlReactStrings.`facebook-noshare`
 import typings.mjmlReact.mjmlReactStrings.`google-noshare`
 import typings.mjmlReact.mjmlReactStrings.`linkedin-noshare`
@@ -16,8 +16,10 @@ import typings.mjmlReact.mjmlReactStrings.google
 import typings.mjmlReact.mjmlReactStrings.horizontal
 import typings.mjmlReact.mjmlReactStrings.instagram
 import typings.mjmlReact.mjmlReactStrings.linkedin
+import typings.mjmlReact.mjmlReactStrings.ltr
 import typings.mjmlReact.mjmlReactStrings.medium
 import typings.mjmlReact.mjmlReactStrings.pinterest
+import typings.mjmlReact.mjmlReactStrings.rtl
 import typings.mjmlReact.mjmlReactStrings.snapchat
 import typings.mjmlReact.mjmlReactStrings.soundcloud
 import typings.mjmlReact.mjmlReactStrings.tumblr
@@ -27,6 +29,7 @@ import typings.mjmlReact.mjmlReactStrings.vimeo
 import typings.mjmlReact.mjmlReactStrings.web
 import typings.mjmlReact.mjmlReactStrings.xing
 import typings.mjmlReact.mjmlReactStrings.youtube
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,17 +40,23 @@ trait MjmlSocialElementProps extends StObject {
   
   var alt: js.UndefOr[String] = js.undefined
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  var backgroundColor: js.UndefOr[BackgroundColor] = js.undefined
   
   var borderRadius: js.UndefOr[String | Double] = js.undefined
   
-  var color: js.UndefOr[ColorProperty] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
+  var color: js.UndefOr[Color] = js.undefined
+  
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   
   var fontFamily: js.UndefOr[String] = js.undefined
   
   var fontSize: js.UndefOr[String | Double] = js.undefined
   
   var iconHeight: js.UndefOr[String] = js.undefined
+  
+  var iconPadding: js.UndefOr[String] = js.undefined
   
   var iconSize: js.UndefOr[String] = js.undefined
   
@@ -80,7 +89,7 @@ object MjmlSocialElementProps {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    inline def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
@@ -88,9 +97,17 @@ object MjmlSocialElementProps {
     
     inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    inline def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
@@ -103,6 +120,10 @@ object MjmlSocialElementProps {
     inline def setIconHeight(value: String): Self = StObject.set(x, "iconHeight", value.asInstanceOf[js.Any])
     
     inline def setIconHeightUndefined: Self = StObject.set(x, "iconHeight", js.undefined)
+    
+    inline def setIconPadding(value: String): Self = StObject.set(x, "iconPadding", value.asInstanceOf[js.Any])
+    
+    inline def setIconPaddingUndefined: Self = StObject.set(x, "iconPadding", js.undefined)
     
     inline def setIconSize(value: String): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     

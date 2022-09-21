@@ -33,6 +33,6 @@ object ListProvisionedConcurrencyConfigsResponse {
     
     inline def setProvisionedConcurrencyConfigsUndefined: Self = StObject.set(x, "ProvisionedConcurrencyConfigs", js.undefined)
     
-    inline def setProvisionedConcurrencyConfigsVarargs(value: ProvisionedConcurrencyConfigListItem*): Self = StObject.set(x, "ProvisionedConcurrencyConfigs", js.Array(value :_*))
+    inline def setProvisionedConcurrencyConfigsVarargs(value: ProvisionedConcurrencyConfigListItem*): Self = StObject.set(x, "ProvisionedConcurrencyConfigs", js.Array(value*))
   }
 }

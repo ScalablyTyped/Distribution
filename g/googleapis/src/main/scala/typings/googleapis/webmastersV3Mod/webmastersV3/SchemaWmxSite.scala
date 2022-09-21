@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains permission level information about a Search Console site. For more
-  * information, see  Permissions in Search Console.
-  */
 trait SchemaWmxSite extends StObject {
   
   /**
-    * The user&#39;s permission level for the site.
+    * The user's permission level for the site.
     */
-  var permissionLevel: js.UndefOr[String] = js.undefined
+  var permissionLevel: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The URL of the site.
     */
-  var siteUrl: js.UndefOr[String] = js.undefined
+  var siteUrl: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaWmxSite {
   
@@ -31,9 +27,13 @@ object SchemaWmxSite {
     
     inline def setPermissionLevel(value: String): Self = StObject.set(x, "permissionLevel", value.asInstanceOf[js.Any])
     
+    inline def setPermissionLevelNull: Self = StObject.set(x, "permissionLevel", null)
+    
     inline def setPermissionLevelUndefined: Self = StObject.set(x, "permissionLevel", js.undefined)
     
     inline def setSiteUrl(value: String): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
+    
+    inline def setSiteUrlNull: Self = StObject.set(x, "siteUrl", null)
     
     inline def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
   }

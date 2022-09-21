@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.anon.Path
   - typings.vegaTypings.anon.Sphere
 */
-type Clip = typings.vegaTypings.markMod._Clip | scala.Boolean
+type Clip = _Clip | Boolean

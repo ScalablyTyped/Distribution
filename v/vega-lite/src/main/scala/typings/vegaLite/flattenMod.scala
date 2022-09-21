@@ -10,11 +10,11 @@ object flattenMod {
   
   @JSImport("vega-lite/build/src/compile/data/flatten", "FlattenTransformNode")
   @js.native
-  class FlattenTransformNode protected () extends DataFlowNode {
+  open class FlattenTransformNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: FlattenTransform) = this()
     
     def assemble(): typings.vegaTypings.transformMod.FlattenTransform = js.native
     
-    /* private */ var transform: js.Any = js.native
+    /* private */ var transform: Any = js.native
   }
 }

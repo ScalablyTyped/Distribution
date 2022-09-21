@@ -23,6 +23,6 @@ object RollbackConfiguration {
     
     inline def setRollbackTriggers(value: js.Array[RollbackTrigger]): Self = StObject.set(x, "RollbackTriggers", value.asInstanceOf[js.Any])
     
-    inline def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = StObject.set(x, "RollbackTriggers", js.Array(value :_*))
+    inline def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = StObject.set(x, "RollbackTriggers", js.Array(value*))
   }
 }

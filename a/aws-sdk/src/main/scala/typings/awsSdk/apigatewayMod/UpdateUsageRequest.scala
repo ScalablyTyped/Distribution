@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateUsageRequest extends StObject {
   
   /**
-    * [Required] The identifier of the API key associated with the usage plan in which a temporary extension is granted to the remaining quota.
+    * The identifier of the API key associated with the usage plan in which a temporary extension is granted to the remaining quota.
     */
   var keyId: String
   
   /**
-    * A list of update operations to be applied to the specified resource and in the order specified in this list.
+    * For more information about supported patch operations, see Patch Operations.
     */
   var patchOperations: js.UndefOr[ListOfPatchOperation] = js.undefined
   
   /**
-    * [Required] The Id of the usage plan associated with the usage data.
+    * The Id of the usage plan associated with the usage data.
     */
   var usagePlanId: String
 }
@@ -36,7 +36,7 @@ object UpdateUsageRequest {
     
     inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value*))
     
     inline def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
   }

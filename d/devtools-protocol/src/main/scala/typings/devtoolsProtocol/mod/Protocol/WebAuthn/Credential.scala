@@ -12,7 +12,13 @@ trait Credential extends StObject {
   var isResidentCredential: Boolean
   
   /**
-    * The ECDSA P-256 private key in PKCS#8 format.
+    * The large blob associated with the credential.
+    * See https://w3c.github.io/webauthn/#sctn-large-blob-extension (Encoded as a base64 string when passed over JSON)
+    */
+  var largeBlob: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The ECDSA P-256 private key in PKCS#8 format. (Encoded as a base64 string when passed over JSON)
     */
   var privateKey: String
   
@@ -31,7 +37,7 @@ trait Credential extends StObject {
   
   /**
     * An opaque byte sequence with a maximum size of 64 bytes mapping the
-    * credential to a specific user.
+    * credential to a specific user. (Encoded as a base64 string when passed over JSON)
     */
   var userHandle: js.UndefOr[String] = js.undefined
 }
@@ -47,6 +53,10 @@ object Credential {
     inline def setCredentialId(value: String): Self = StObject.set(x, "credentialId", value.asInstanceOf[js.Any])
     
     inline def setIsResidentCredential(value: Boolean): Self = StObject.set(x, "isResidentCredential", value.asInstanceOf[js.Any])
+    
+    inline def setLargeBlob(value: String): Self = StObject.set(x, "largeBlob", value.asInstanceOf[js.Any])
+    
+    inline def setLargeBlobUndefined: Self = StObject.set(x, "largeBlob", js.undefined)
     
     inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     

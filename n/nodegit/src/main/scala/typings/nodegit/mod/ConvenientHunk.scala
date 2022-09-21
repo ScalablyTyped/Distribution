@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "ConvenientHunk")
 @js.native
-class ConvenientHunk ()
+open class ConvenientHunk ()
   extends typings.nodegit.convenientHunkMod.ConvenientHunk

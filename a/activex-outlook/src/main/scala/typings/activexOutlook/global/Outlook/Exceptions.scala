@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Exceptions")
 @js.native
-/* private */ class Exceptions ()
+/* private */ open class Exceptions ()
   extends StObject
      with typings.activexOutlook.Outlook.Exceptions {
   
@@ -21,14 +21,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexOutlook.Outlook.Exception = js.native
+  override def Item(Index: Any): typings.activexOutlook.Outlook.Exception = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.Exceptions_typekey")
   var OutlookDotExceptions_typekey: typings.activexOutlook.Outlook.Exceptions = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

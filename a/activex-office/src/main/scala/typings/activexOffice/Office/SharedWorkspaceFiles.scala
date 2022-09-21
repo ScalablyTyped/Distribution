@@ -28,7 +28,7 @@ trait SharedWorkspaceFiles extends StObject {
     KeepInSync: Boolean
   ): SharedWorkspaceFile = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -38,5 +38,5 @@ trait SharedWorkspaceFiles extends StObject {
   
   val ItemCountExceeded: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

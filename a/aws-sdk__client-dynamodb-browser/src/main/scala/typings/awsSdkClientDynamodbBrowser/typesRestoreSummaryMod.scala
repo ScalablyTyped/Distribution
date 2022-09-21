@@ -1,6 +1,5 @@
 package typings.awsSdkClientDynamodbBrowser
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object typesRestoreSummaryMod {
     /**
       * <p>Point in time or source backup time.</p>
       */
-    var RestoreDateTime: Date | String | Double
+    var RestoreDateTime: js.Date | String | Double
     
     /**
       * <p>Indicates if a restore is in progress or not.</p>
@@ -31,14 +30,14 @@ object typesRestoreSummaryMod {
   }
   object RestoreSummary {
     
-    inline def apply(RestoreDateTime: Date | String | Double, RestoreInProgress: Boolean): RestoreSummary = {
+    inline def apply(RestoreDateTime: js.Date | String | Double, RestoreInProgress: Boolean): RestoreSummary = {
       val __obj = js.Dynamic.literal(RestoreDateTime = RestoreDateTime.asInstanceOf[js.Any], RestoreInProgress = RestoreInProgress.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestoreSummary]
     }
     
     extension [Self <: RestoreSummary](x: Self) {
       
-      inline def setRestoreDateTime(value: Date | String | Double): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
+      inline def setRestoreDateTime(value: js.Date | String | Double): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
       
       inline def setRestoreInProgress(value: Boolean): Self = StObject.set(x, "RestoreInProgress", value.asInstanceOf[js.Any])
       
@@ -60,18 +59,18 @@ object typesRestoreSummaryMod {
       * <p>Point in time or source backup time.</p>
       */
     @JSName("RestoreDateTime")
-    var RestoreDateTime_UnmarshalledRestoreSummary: Date
+    var RestoreDateTime_UnmarshalledRestoreSummary: js.Date
   }
   object UnmarshalledRestoreSummary {
     
-    inline def apply(RestoreDateTime: Date, RestoreInProgress: Boolean): UnmarshalledRestoreSummary = {
+    inline def apply(RestoreDateTime: js.Date, RestoreInProgress: Boolean): UnmarshalledRestoreSummary = {
       val __obj = js.Dynamic.literal(RestoreDateTime = RestoreDateTime.asInstanceOf[js.Any], RestoreInProgress = RestoreInProgress.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledRestoreSummary]
     }
     
     extension [Self <: UnmarshalledRestoreSummary](x: Self) {
       
-      inline def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
+      inline def setRestoreDateTime(value: js.Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
     }
   }
 }

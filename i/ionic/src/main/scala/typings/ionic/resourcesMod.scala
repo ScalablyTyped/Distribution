@@ -16,7 +16,7 @@ object resourcesMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/cordova/resources", "ResourcesCommand")
   @js.native
-  class ResourcesCommand protected () extends CordovaCommand {
+  open class ResourcesCommand protected () extends CordovaCommand {
     def this(namespace: INamespace) = this()
     
     def getBuildPlatforms(): js.Promise[js.Array[String]] = js.native

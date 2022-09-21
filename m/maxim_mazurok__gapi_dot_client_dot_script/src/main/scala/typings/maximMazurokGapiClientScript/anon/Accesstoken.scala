@@ -171,18 +171,18 @@ object Accesstoken {
     
     inline def setUserProcessFilterDotstatusesUndefined: Self = StObject.set(x, "userProcessFilter.statuses", js.undefined)
     
-    inline def setUserProcessFilterDotstatusesVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.statuses", js.Array(value :_*))
+    inline def setUserProcessFilterDotstatusesVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.statuses", js.Array(value*))
     
     inline def setUserProcessFilterDottypes(value: String | js.Array[String]): Self = StObject.set(x, "userProcessFilter.types", value.asInstanceOf[js.Any])
     
     inline def setUserProcessFilterDottypesUndefined: Self = StObject.set(x, "userProcessFilter.types", js.undefined)
     
-    inline def setUserProcessFilterDottypesVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.types", js.Array(value :_*))
+    inline def setUserProcessFilterDottypesVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.types", js.Array(value*))
     
     inline def setUserProcessFilterDotuserAccessLevels(value: String | js.Array[String]): Self = StObject.set(x, "userProcessFilter.userAccessLevels", value.asInstanceOf[js.Any])
     
     inline def setUserProcessFilterDotuserAccessLevelsUndefined: Self = StObject.set(x, "userProcessFilter.userAccessLevels", js.undefined)
     
-    inline def setUserProcessFilterDotuserAccessLevelsVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.userAccessLevels", js.Array(value :_*))
+    inline def setUserProcessFilterDotuserAccessLevelsVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.userAccessLevels", js.Array(value*))
   }
 }

@@ -1,7 +1,6 @@
 package typings.uirouterCore
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import typings.uirouterCore.anon.Priority
 import typings.uirouterCore.coreservicesMod.LocationConfig
 import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
@@ -23,7 +22,7 @@ object urlInterfaceMod {
   trait MatchResult extends StObject {
     
     /** The matched value from a [[UrlRule]] */
-    var `match`: js.Any
+    var `match`: Any
     
     /** The rule that matched */
     var rule: UrlRule
@@ -33,7 +32,7 @@ object urlInterfaceMod {
   }
   object MatchResult {
     
-    inline def apply(`match`: js.Any, rule: UrlRule, weight: Double): MatchResult = {
+    inline def apply(`match`: Any, rule: UrlRule, weight: Double): MatchResult = {
       val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchResult]
@@ -41,7 +40,7 @@ object urlInterfaceMod {
     
     extension [Self <: MatchResult](x: Self) {
       
-      inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setRule(value: UrlRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
@@ -63,9 +62,9 @@ object urlInterfaceMod {
     inline def apply(
       $id: Double,
       _group: Double,
-      handler: (/* matchValue */ js.UndefOr[js.Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
-      `match`: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => js.Any,
-      matchPriority: js.Any => Double,
+      handler: (/* matchValue */ js.UndefOr[Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
+      `match`: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => Any,
+      matchPriority: Any => Double,
       priority: Double,
       `type`: URLMATCHER | STATE,
       urlMatcher: UrlMatcher
@@ -88,7 +87,7 @@ object urlInterfaceMod {
     extends StObject
        with UrlRule {
     
-    var regexp: RegExp
+    var regexp: js.RegExp
     
     @JSName("type")
     var type_RegExpRule: REGEXP
@@ -98,11 +97,11 @@ object urlInterfaceMod {
     inline def apply(
       $id: Double,
       _group: Double,
-      handler: (/* matchValue */ js.UndefOr[js.Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
-      `match`: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => js.Any,
-      matchPriority: js.Any => Double,
+      handler: (/* matchValue */ js.UndefOr[Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
+      `match`: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => Any,
+      matchPriority: Any => Double,
       priority: Double,
-      regexp: RegExp
+      regexp: js.RegExp
     ): RegExpRule = {
       val __obj = js.Dynamic.literal($id = $id.asInstanceOf[js.Any], _group = _group.asInstanceOf[js.Any], handler = js.Any.fromFunction3(handler), matchPriority = js.Any.fromFunction1(matchPriority), priority = priority.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(js.Any.fromFunction2(`match`))
@@ -112,7 +111,7 @@ object urlInterfaceMod {
     
     extension [Self <: RegExpRule](x: Self) {
       
-      inline def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: js.RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
       
       inline def setType(value: REGEXP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -132,9 +131,9 @@ object urlInterfaceMod {
     inline def apply(
       $id: Double,
       _group: Double,
-      handler: (/* matchValue */ js.UndefOr[js.Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
-      `match`: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => js.Any,
-      matchPriority: js.Any => Double,
+      handler: (/* matchValue */ js.UndefOr[Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
+      `match`: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => Any,
+      matchPriority: Any => Double,
       priority: Double,
       state: StateObject,
       urlMatcher: UrlMatcher
@@ -214,16 +213,16 @@ object urlInterfaceMod {
     /** See: [[UrlConfig.strictMode]] */ @JSName("strictMode")
     var strictMode_Original: js.Function1[/* value */ js.UndefOr[Boolean], Boolean]
     
-    /** See: [[UrlConfig.type]] */ def `type`(name: String): js.Any
-    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): js.Any
-    def `type`(name: String, definition: ParamTypeDefinition): js.Any
-    def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any
+    /** See: [[UrlConfig.type]] */ def `type`(name: String): Any
+    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): Any
+    def `type`(name: String, definition: ParamTypeDefinition): Any
+    def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): Any
     /** See: [[UrlConfig.type]] */ @JSName("type")
     var type_Original: js.Function3[
         /* name */ String, 
         /* definition */ js.UndefOr[ParamTypeDefinition], 
         /* definitionFn */ js.UndefOr[js.Function0[ParamTypeDefinition]], 
-        js.Any
+        Any
       ]
   }
   object UrlMatcherConfig {
@@ -232,7 +231,7 @@ object urlInterfaceMod {
       caseInsensitive: /* value */ js.UndefOr[Boolean] => Boolean,
       defaultSquashPolicy: /* value */ js.UndefOr[Boolean | String] => String | Boolean,
       strictMode: /* value */ js.UndefOr[Boolean] => Boolean,
-      `type`: (/* name */ String, /* definition */ js.UndefOr[ParamTypeDefinition], /* definitionFn */ js.UndefOr[js.Function0[ParamTypeDefinition]]) => js.Any
+      `type`: (/* name */ String, /* definition */ js.UndefOr[ParamTypeDefinition], /* definitionFn */ js.UndefOr[js.Function0[ParamTypeDefinition]]) => Any
     ): UrlMatcherConfig = {
       val __obj = js.Dynamic.literal(caseInsensitive = js.Any.fromFunction1(caseInsensitive), defaultSquashPolicy = js.Any.fromFunction1(defaultSquashPolicy), strictMode = js.Any.fromFunction1(strictMode))
       __obj.updateDynamic("type")(js.Any.fromFunction3(`type`))
@@ -248,7 +247,7 @@ object urlInterfaceMod {
       inline def setStrictMode(value: /* value */ js.UndefOr[Boolean] => Boolean): Self = StObject.set(x, "strictMode", js.Any.fromFunction1(value))
       
       inline def setType(
-        value: (/* name */ String, /* definition */ js.UndefOr[ParamTypeDefinition], /* definitionFn */ js.UndefOr[js.Function0[ParamTypeDefinition]]) => js.Any
+        value: (/* name */ String, /* definition */ js.UndefOr[ParamTypeDefinition], /* definitionFn */ js.UndefOr[js.Function0[ParamTypeDefinition]]) => Any
       ): Self = StObject.set(x, "type", js.Any.fromFunction3(value))
     }
   }
@@ -259,7 +258,7 @@ object urlInterfaceMod {
     
     var path: String
     
-    var search: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var search: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object UrlParts {
     
@@ -276,7 +275,7 @@ object urlInterfaceMod {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setSearch(value: StringDictionary[js.Any]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: StringDictionary[Any]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     }
@@ -302,10 +301,10 @@ object urlInterfaceMod {
       * See [[UrlRuleHandlerFn]] for details
       */
     def handler(): String | TargetState | TargetStateDef | Unit
-    def handler(matchValue: js.Any): String | TargetState | TargetStateDef | Unit
-    def handler(matchValue: js.Any, url: Unit, router: UIRouter): String | TargetState | TargetStateDef | Unit
-    def handler(matchValue: js.Any, url: UrlParts): String | TargetState | TargetStateDef | Unit
-    def handler(matchValue: js.Any, url: UrlParts, router: UIRouter): String | TargetState | TargetStateDef | Unit
+    def handler(matchValue: Any): String | TargetState | TargetStateDef | Unit
+    def handler(matchValue: Any, url: Unit, router: UIRouter): String | TargetState | TargetStateDef | Unit
+    def handler(matchValue: Any, url: UrlParts): String | TargetState | TargetStateDef | Unit
+    def handler(matchValue: Any, url: UrlParts, router: UIRouter): String | TargetState | TargetStateDef | Unit
     def handler(matchValue: Unit, url: Unit, router: UIRouter): String | TargetState | TargetStateDef | Unit
     def handler(matchValue: Unit, url: UrlParts): String | TargetState | TargetStateDef | Unit
     def handler(matchValue: Unit, url: UrlParts, router: UIRouter): String | TargetState | TargetStateDef | Unit
@@ -323,10 +322,10 @@ object urlInterfaceMod {
       *
       * See [[UrlRuleMatchFn]] for details
       */
-    def `match`(): js.Any
-    def `match`(url: Unit, router: UIRouter): js.Any
-    def `match`(url: UrlParts): js.Any
-    def `match`(url: UrlParts, router: UIRouter): js.Any
+    def `match`(): Any
+    def `match`(url: Unit, router: UIRouter): Any
+    def `match`(url: UrlParts): Any
+    def `match`(url: UrlParts, router: UIRouter): Any
     
     /**
       * The priority of a given match.
@@ -337,7 +336,7 @@ object urlInterfaceMod {
       * If multiple rules matched, each rule's `matchPriority` is called with the value from [[match]].
       * The rule with the highest `matchPriority` has its [[handler]] called.
       */
-    def matchPriority(`match`: js.Any): Double
+    def matchPriority(`match`: Any): Double
     
     /**
       * This function should match the url and return the match details
@@ -363,9 +362,9 @@ object urlInterfaceMod {
     inline def apply(
       $id: Double,
       _group: Double,
-      handler: (/* matchValue */ js.UndefOr[js.Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
-      `match`: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => js.Any,
-      matchPriority: js.Any => Double,
+      handler: (/* matchValue */ js.UndefOr[Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
+      `match`: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => Any,
+      matchPriority: Any => Double,
       priority: Double,
       `type`: UrlRuleType
     ): UrlRule = {
@@ -380,12 +379,12 @@ object urlInterfaceMod {
       inline def set$id(value: Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
       inline def setHandler(
-        value: (/* matchValue */ js.UndefOr[js.Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit
+        value: (/* matchValue */ js.UndefOr[Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit
       ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
       
-      inline def setMatch(value: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => js.Any): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
+      inline def setMatch(value: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => Any): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
       
-      inline def setMatchPriority(value: js.Any => Double): Self = StObject.set(x, "matchPriority", js.Any.fromFunction1(value))
+      inline def setMatchPriority(value: Any => Double): Self = StObject.set(x, "matchPriority", js.Any.fromFunction1(value))
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
@@ -396,13 +395,13 @@ object urlInterfaceMod {
   }
   
   type UrlRuleHandlerFn = js.Function3[
-    /* matchValue */ js.UndefOr[js.Any], 
+    /* matchValue */ js.UndefOr[Any], 
     /* url */ js.UndefOr[UrlParts], 
     /* router */ js.UndefOr[UIRouter], 
     String | TargetState | TargetStateDef | Unit
   ]
   
-  type UrlRuleMatchFn = js.Function2[/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter], js.Any]
+  type UrlRuleMatchFn = js.Function2[/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter], Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.uirouterCore.uirouterCoreStrings.STATE
@@ -441,9 +440,9 @@ object urlInterfaceMod {
     /** See: [[UrlRules.otherwise]] */ @JSName("otherwise")
     var otherwise_Original: js.Function1[/* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef, Unit]
     
-    /** See: [[UrlRules.removeRule]] */ def removeRule(rule: js.Any): Unit
+    /** See: [[UrlRules.removeRule]] */ def removeRule(rule: Any): Unit
     /** See: [[UrlRules.removeRule]] */ @JSName("removeRule")
-    var removeRule_Original: js.Function1[/* rule */ js.Any, Unit]
+    var removeRule_Original: js.Function1[/* rule */ Any, Unit]
     
     /** See: [[UrlRules.rule]] */ def rule(rule: UrlRule): js.Function
     /** See: [[UrlRules.rule]] */ @JSName("rule")
@@ -465,17 +464,17 @@ object urlInterfaceMod {
     def when(matcher: String, handler: String, options: Priority): UrlRule
     def when(matcher: String, handler: UrlRuleHandlerFn): UrlRule
     def when(matcher: String, handler: UrlRuleHandlerFn, options: Priority): UrlRule
-    /** See: [[UrlRules.when]] */ def when(matcher: RegExp, handler: String): UrlRule
-    def when(matcher: RegExp, handler: String, options: Priority): UrlRule
-    def when(matcher: RegExp, handler: UrlRuleHandlerFn): UrlRule
-    def when(matcher: RegExp, handler: UrlRuleHandlerFn, options: Priority): UrlRule
+    /** See: [[UrlRules.when]] */ def when(matcher: js.RegExp, handler: String): UrlRule
+    def when(matcher: js.RegExp, handler: String, options: Priority): UrlRule
+    def when(matcher: js.RegExp, handler: UrlRuleHandlerFn): UrlRule
+    def when(matcher: js.RegExp, handler: UrlRuleHandlerFn, options: Priority): UrlRule
     def when(matcher: UrlMatcher, handler: String): UrlRule
     def when(matcher: UrlMatcher, handler: String, options: Priority): UrlRule
     def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn): UrlRule
     def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn, options: Priority): UrlRule
     /** See: [[UrlRules.when]] */ @JSName("when")
     var when_Original: js.Function3[
-        /* matcher */ RegExp | UrlMatcher | String, 
+        /* matcher */ js.RegExp | UrlMatcher | String, 
         /* handler */ String | UrlRuleHandlerFn, 
         /* options */ js.UndefOr[Priority], 
         UrlRule
@@ -486,11 +485,11 @@ object urlInterfaceMod {
     inline def apply(
       initial: /* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef => Unit,
       otherwise: /* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef => Unit,
-      removeRule: /* rule */ js.Any => Unit,
+      removeRule: /* rule */ Any => Unit,
       rule: /* rule */ UrlRule => js.Function,
       rules: () => js.Array[UrlRule],
       sort: /* compareFn */ js.UndefOr[js.Function2[/* a */ UrlRule, /* b */ UrlRule, Double]] => Unit,
-      when: (/* matcher */ RegExp | UrlMatcher | String, /* handler */ String | UrlRuleHandlerFn, /* options */ js.UndefOr[Priority]) => UrlRule
+      when: (/* matcher */ js.RegExp | UrlMatcher | String, /* handler */ String | UrlRuleHandlerFn, /* options */ js.UndefOr[Priority]) => UrlRule
     ): UrlRulesApi = {
       val __obj = js.Dynamic.literal(initial = js.Any.fromFunction1(initial), otherwise = js.Any.fromFunction1(otherwise), removeRule = js.Any.fromFunction1(removeRule), rule = js.Any.fromFunction1(rule), rules = js.Any.fromFunction0(rules), sort = js.Any.fromFunction1(sort), when = js.Any.fromFunction3(when))
       __obj.asInstanceOf[UrlRulesApi]
@@ -502,7 +501,7 @@ object urlInterfaceMod {
       
       inline def setOtherwise(value: /* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef => Unit): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
       
-      inline def setRemoveRule(value: /* rule */ js.Any => Unit): Self = StObject.set(x, "removeRule", js.Any.fromFunction1(value))
+      inline def setRemoveRule(value: /* rule */ Any => Unit): Self = StObject.set(x, "removeRule", js.Any.fromFunction1(value))
       
       inline def setRule(value: /* rule */ UrlRule => js.Function): Self = StObject.set(x, "rule", js.Any.fromFunction1(value))
       
@@ -511,7 +510,7 @@ object urlInterfaceMod {
       inline def setSort(value: /* compareFn */ js.UndefOr[js.Function2[/* a */ UrlRule, /* b */ UrlRule, Double]] => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
       
       inline def setWhen(
-        value: (/* matcher */ RegExp | UrlMatcher | String, /* handler */ String | UrlRuleHandlerFn, /* options */ js.UndefOr[Priority]) => UrlRule
+        value: (/* matcher */ js.RegExp | UrlMatcher | String, /* handler */ String | UrlRuleHandlerFn, /* options */ js.UndefOr[Priority]) => UrlRule
       ): Self = StObject.set(x, "when", js.Any.fromFunction3(value))
     }
   }
@@ -529,16 +528,16 @@ object urlInterfaceMod {
     var listen_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['listen'] */ js.Any) & (js.Function1[/* enabled */ js.UndefOr[Boolean], js.Function])
     
     /** See: [[UrlService.sync]] */ def sync(): Unit
-    def sync(evt: js.Any): Unit
+    def sync(evt: Any): Unit
     /** See: [[UrlService.sync]] */ @JSName("sync")
-    var sync_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[js.Any], Unit])
+    var sync_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[Any], Unit])
   }
   object UrlSyncApi {
     
     inline def apply(
       deferIntercept: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['deferIntercept'] */ js.Any) & (js.Function1[/* defer */ js.UndefOr[Boolean], Unit]),
       listen: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['listen'] */ js.Any) & (js.Function1[/* enabled */ js.UndefOr[Boolean], js.Function]),
-      sync: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[js.Any], Unit])
+      sync: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[Any], Unit])
     ): UrlSyncApi = {
       val __obj = js.Dynamic.literal(deferIntercept = deferIntercept.asInstanceOf[js.Any], listen = listen.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlSyncApi]
@@ -555,7 +554,7 @@ object urlInterfaceMod {
       ): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
       
       inline def setSync(
-        value: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[js.Any], Unit])
+        value: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[Any], Unit])
       ): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }
   }

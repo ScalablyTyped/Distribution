@@ -60,7 +60,7 @@ object mod {
       
       inline def setProjects(value: js.Array[VsSolutionProject]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       
-      inline def setProjectsVarargs(value: VsSolutionProject*): Self = StObject.set(x, "projects", js.Array(value :_*))
+      inline def setProjectsVarargs(value: VsSolutionProject*): Self = StObject.set(x, "projects", js.Array(value*))
       
       inline def setSolutionConfigurationPlatforms(value: VsSolutionSection): Self = StObject.set(x, "solutionConfigurationPlatforms", value.asInstanceOf[js.Any])
       
@@ -124,7 +124,7 @@ object mod {
     }
   }
   
-  type VsSolutionSection = StringDictionary[js.Any]
+  type VsSolutionSection = StringDictionary[Any]
   
   type VsSolutionSectionCollection = StringDictionary[VsSolutionSection]
 }

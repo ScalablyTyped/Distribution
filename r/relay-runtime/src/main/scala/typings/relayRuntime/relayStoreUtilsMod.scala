@@ -69,11 +69,11 @@ object relayStoreUtilsMod {
   
   inline def getStableStorageKey(name: String, args: Arguments): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStableStorageKey")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getStableVariableValue(name: String, variables: Variables): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStableVariableValue")(name.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getStableVariableValue(name: String, variables: Variables): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStableVariableValue")(name.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def getStorageKey(field: NormalizationField, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def getStorageKey(field: NormalizationHandle, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def getStorageKey(field: ReaderField, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type Arguments = StringDictionary[js.Any]
+  type Arguments = StringDictionary[Any]
 }

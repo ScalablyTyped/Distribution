@@ -10,10 +10,10 @@ Solves a problem with util.format
 | ------------------ | :-------------: |
 | Full name          | quick-format-unescaped |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 52465701 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.315257E7 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/davidmarkclements/quick-format#readme)

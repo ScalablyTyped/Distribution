@@ -9,7 +9,7 @@ object tabsDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/tabs/demo/basic", JSImport.Default)
   @js.native
-  class default () extends BasicTabsExample
+  open class default () extends BasicTabsExample
   
   @JSImport("@ant-design/react-native/lib/tabs/demo/basic", "description")
   @js.native
@@ -20,6 +20,5 @@ object tabsDemoBasicMod {
   val title: /* "Tabs" */ String = js.native
   
   @js.native
-  trait BasicTabsExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicTabsExample extends Component[Any, Any, Any]
 }

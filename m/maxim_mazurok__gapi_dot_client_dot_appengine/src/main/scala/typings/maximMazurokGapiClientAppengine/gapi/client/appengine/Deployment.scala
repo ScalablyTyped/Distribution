@@ -20,7 +20,7 @@ trait Deployment extends StObject {
   var files: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.appengine.gapi.client.appengine.FileInfo}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Deployment & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Deployment & TopLevel[Any]
   ] = js.undefined
   
   /** The zip file for this deployment, if this is a zip deployment. */
@@ -46,7 +46,7 @@ object Deployment {
     inline def setFiles(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.appengine.gapi.client.appengine.FileInfo}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Deployment & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Deployment & TopLevel[Any]
     ): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)

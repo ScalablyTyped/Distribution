@@ -17,7 +17,12 @@ object initialViewPropertiesMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/webmap/InitialViewProperties", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Represents the initial viewing state of the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html) when displayed in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html)
+    */
+  open class Class ()
     extends StObject
        with InitialViewProperties {
     def this(properties: InitialViewPropertiesProperties) = this()

@@ -1,25 +1,24 @@
 package typings.rrule
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datewithzoneMod {
   
-  @JSImport("rrule/dist/esm/src/datewithzone", "DateWithZone")
+  @JSImport("rrule/dist/esm/datewithzone", "DateWithZone")
   @js.native
-  class DateWithZone protected () extends StObject {
-    def this(date: Date) = this()
-    def this(date: Date, tzid: String) = this()
+  open class DateWithZone protected () extends StObject {
+    def this(date: js.Date) = this()
+    def this(date: js.Date, tzid: String) = this()
     
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     def getTime(): Double = js.native
     
-    /* private */ def isUTC: js.Any = js.native
+    /* private */ def isUTC: Any = js.native
     
-    def rezonedDate(): Date = js.native
+    def rezonedDate(): js.Date = js.native
     
     var tzid: js.UndefOr[String | Null] = js.native
   }

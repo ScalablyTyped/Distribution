@@ -12,7 +12,7 @@ trait MetricKeyDataPoints extends StObject {
   var DataPoints: js.UndefOr[DataPointsList] = js.undefined
   
   /**
-    * The dimension(s) to which the data points apply.
+    * The dimensions to which the data points apply.
     */
   var Key: js.UndefOr[ResponseResourceMetricKey] = js.undefined
 }
@@ -29,7 +29,7 @@ object MetricKeyDataPoints {
     
     inline def setDataPointsUndefined: Self = StObject.set(x, "DataPoints", js.undefined)
     
-    inline def setDataPointsVarargs(value: DataPoint*): Self = StObject.set(x, "DataPoints", js.Array(value :_*))
+    inline def setDataPointsVarargs(value: DataPoint*): Self = StObject.set(x, "DataPoints", js.Array(value*))
     
     inline def setKey(value: ResponseResourceMetricKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

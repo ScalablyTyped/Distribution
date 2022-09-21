@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMsoPlotArea extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Border: IMsoBorder
   
-  def ClearFormats(): js.Any
+  def ClearFormats(): Any
   
   val Creator: Double
   
@@ -37,11 +37,11 @@ trait IMsoPlotArea extends StObject {
   /* private */ @JSName("Office.IMsoPlotArea_typekey")
   var OfficeDotIMsoPlotArea_typekey: IMsoPlotArea
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: XlChartElementPosition
   
-  def Select(): js.Any
+  def Select(): Any
   
   var Top: Double
   
@@ -50,9 +50,9 @@ trait IMsoPlotArea extends StObject {
 object IMsoPlotArea {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Border: IMsoBorder,
-    ClearFormats: () => js.Any,
+    ClearFormats: () => Any,
     Creator: Double,
     Fill: ChartFillFormat,
     Format: IMsoChartFormat,
@@ -65,9 +65,9 @@ object IMsoPlotArea {
     Left: Double,
     Name: String,
     OfficeDotIMsoPlotArea_typekey: IMsoPlotArea,
-    Parent: js.Any,
+    Parent: Any,
     Position: XlChartElementPosition,
-    Select: () => js.Any,
+    Select: () => Any,
     Top: Double,
     Width: Double
   ): IMsoPlotArea = {
@@ -78,11 +78,11 @@ object IMsoPlotArea {
   
   extension [Self <: IMsoPlotArea](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBorder(value: IMsoBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    inline def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
+    inline def setClearFormats(value: () => Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -108,11 +108,11 @@ object IMsoPlotArea {
     
     inline def setOfficeDotIMsoPlotArea_typekey(value: IMsoPlotArea): Self = StObject.set(x, "Office.IMsoPlotArea_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: XlChartElementPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     

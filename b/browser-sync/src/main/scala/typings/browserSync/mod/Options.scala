@@ -167,7 +167,7 @@ trait Options extends StObject {
     * Default: []
     * Note: Requires at least version 2.6.0.
     */
-  var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var plugins: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Use a specific port (instead of the one auto-detected by Browsersync)
@@ -275,7 +275,7 @@ trait Options extends StObject {
     * string[] syntax: eg: `serveStatic: ['./app']`.
     * Please see [serve-static](https://github.com/expressjs/serve-static) for details.
     */
-  var serveStaticOptions: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.undefined
+  var serveStaticOptions: js.UndefOr[ServeStaticOptions[ServerResponse[IncomingMessage]]] = js.undefined
   
   /**
     * Use the built-in static server for basic HTML/JS/CSS websites.
@@ -378,13 +378,13 @@ object Options {
     
     inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
     
-    inline def setBrowserVarargs(value: String*): Self = StObject.set(x, "browser", js.Array(value :_*))
+    inline def setBrowserVarargs(value: String*): Self = StObject.set(x, "browser", js.Array(value*))
     
     inline def setClientEvents(value: js.Array[String]): Self = StObject.set(x, "clientEvents", value.asInstanceOf[js.Any])
     
     inline def setClientEventsUndefined: Self = StObject.set(x, "clientEvents", js.undefined)
     
-    inline def setClientEventsVarargs(value: String*): Self = StObject.set(x, "clientEvents", js.Array(value :_*))
+    inline def setClientEventsVarargs(value: String*): Self = StObject.set(x, "clientEvents", js.Array(value*))
     
     inline def setCodeSync(value: Boolean): Self = StObject.set(x, "codeSync", value.asInstanceOf[js.Any])
     
@@ -398,13 +398,13 @@ object Options {
     
     inline def setExcludeFileTypesUndefined: Self = StObject.set(x, "excludeFileTypes", js.undefined)
     
-    inline def setExcludeFileTypesVarargs(value: String*): Self = StObject.set(x, "excludeFileTypes", js.Array(value :_*))
+    inline def setExcludeFileTypesVarargs(value: String*): Self = StObject.set(x, "excludeFileTypes", js.Array(value*))
     
     inline def setFiles(value: String | (js.Array[String | FileCallback | js.Object])): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: (String | FileCallback | js.Object)*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: (String | FileCallback | js.Object)*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setGhostMode(value: GhostOptions | Boolean): Self = StObject.set(x, "ghostMode", value.asInstanceOf[js.Any])
     
@@ -426,7 +426,7 @@ object Options {
     
     inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
-    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
     
     inline def setInjectChanges(value: Boolean): Self = StObject.set(x, "injectChanges", value.asInstanceOf[js.Any])
     
@@ -436,7 +436,7 @@ object Options {
     
     inline def setInjectFileTypesUndefined: Self = StObject.set(x, "injectFileTypes", js.undefined)
     
-    inline def setInjectFileTypesVarargs(value: String*): Self = StObject.set(x, "injectFileTypes", js.Array(value :_*))
+    inline def setInjectFileTypesVarargs(value: String*): Self = StObject.set(x, "injectFileTypes", js.Array(value*))
     
     inline def setLocalOnly(value: Boolean): Self = StObject.set(x, "localOnly", value.asInstanceOf[js.Any])
     
@@ -465,12 +465,12 @@ object Options {
     inline def setMiddleware(value: MiddlewareHandler | PerRouteMiddleware | (js.Array[MiddlewareHandler | PerRouteMiddleware])): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     
     inline def setMiddlewareFunction3(
-      value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ js.Function0[Unit]) => js.Any
+      value: (/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], /* next */ js.Function0[Unit]) => Any
     ): Self = StObject.set(x, "middleware", js.Any.fromFunction3(value))
     
     inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
     
-    inline def setMiddlewareVarargs(value: (MiddlewareHandler | PerRouteMiddleware)*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+    inline def setMiddlewareVarargs(value: (MiddlewareHandler | PerRouteMiddleware)*): Self = StObject.set(x, "middleware", js.Array(value*))
     
     inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     
@@ -488,11 +488,11 @@ object Options {
     
     inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
@@ -522,7 +522,7 @@ object Options {
     
     inline def setRewriteRulesUndefined: Self = StObject.set(x, "rewriteRules", js.undefined)
     
-    inline def setRewriteRulesVarargs(value: RewriteRules*): Self = StObject.set(x, "rewriteRules", js.Array(value :_*))
+    inline def setRewriteRulesVarargs(value: RewriteRules*): Self = StObject.set(x, "rewriteRules", js.Array(value*))
     
     inline def setScriptPath(value: /* path */ String => String): Self = StObject.set(x, "scriptPath", js.Any.fromFunction1(value))
     
@@ -532,13 +532,13 @@ object Options {
     
     inline def setScrollElementMappingUndefined: Self = StObject.set(x, "scrollElementMapping", js.undefined)
     
-    inline def setScrollElementMappingVarargs(value: String*): Self = StObject.set(x, "scrollElementMapping", js.Array(value :_*))
+    inline def setScrollElementMappingVarargs(value: String*): Self = StObject.set(x, "scrollElementMapping", js.Array(value*))
     
     inline def setScrollElements(value: js.Array[String]): Self = StObject.set(x, "scrollElements", value.asInstanceOf[js.Any])
     
     inline def setScrollElementsUndefined: Self = StObject.set(x, "scrollElements", js.undefined)
     
-    inline def setScrollElementsVarargs(value: String*): Self = StObject.set(x, "scrollElements", js.Array(value :_*))
+    inline def setScrollElementsVarargs(value: String*): Self = StObject.set(x, "scrollElements", js.Array(value*))
     
     inline def setScrollProportionally(value: Boolean): Self = StObject.set(x, "scrollProportionally", value.asInstanceOf[js.Any])
     
@@ -554,19 +554,19 @@ object Options {
     
     inline def setServeStatic(value: js.Array[StaticOptions | String]): Self = StObject.set(x, "serveStatic", value.asInstanceOf[js.Any])
     
-    inline def setServeStaticOptions(value: ServeStaticOptions[ServerResponse]): Self = StObject.set(x, "serveStaticOptions", value.asInstanceOf[js.Any])
+    inline def setServeStaticOptions(value: ServeStaticOptions[ServerResponse[IncomingMessage]]): Self = StObject.set(x, "serveStaticOptions", value.asInstanceOf[js.Any])
     
     inline def setServeStaticOptionsUndefined: Self = StObject.set(x, "serveStaticOptions", js.undefined)
     
     inline def setServeStaticUndefined: Self = StObject.set(x, "serveStatic", js.undefined)
     
-    inline def setServeStaticVarargs(value: (StaticOptions | String)*): Self = StObject.set(x, "serveStatic", js.Array(value :_*))
+    inline def setServeStaticVarargs(value: (StaticOptions | String)*): Self = StObject.set(x, "serveStatic", js.Array(value*))
     
     inline def setServer(value: String | Boolean | js.Array[String] | ServerOptions): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
-    inline def setServerVarargs(value: String*): Self = StObject.set(x, "server", js.Array(value :_*))
+    inline def setServerVarargs(value: String*): Self = StObject.set(x, "server", js.Array(value*))
     
     inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
@@ -606,7 +606,7 @@ object Options {
     
     inline def setWatchEventsUndefined: Self = StObject.set(x, "watchEvents", js.undefined)
     
-    inline def setWatchEventsVarargs(value: String*): Self = StObject.set(x, "watchEvents", js.Array(value :_*))
+    inline def setWatchEventsVarargs(value: String*): Self = StObject.set(x, "watchEvents", js.Array(value*))
     
     inline def setWatchOptions(value: WatchOptions): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
     

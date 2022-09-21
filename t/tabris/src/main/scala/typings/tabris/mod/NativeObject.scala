@@ -9,23 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "NativeObject")
 @js.native
-/* protected */ class NativeObject () extends StObject {
-  /* protected */ def this(properties: StringDictionary[js.Any]) = this()
+/**
+  * Base class for all objects with a native implementation.
+  */
+/* protected */ open class NativeObject () extends StObject {
+  /* protected */ def this(properties: StringDictionary[Any]) = this()
   
   /* private */ @JSName("$getProperty")
-  def $getProperty(name: String): js.Any = js.native
+  def $getProperty(name: String): Any = js.native
   
   /* private */ @JSName("$getPropertyGetter")
-  def $getPropertyGetter(propertyName: String): js.Any = js.native
+  def $getPropertyGetter(propertyName: String): Any = js.native
   
   /* private */ @JSName("$getPropertySetter")
-  def $getPropertySetter(propertyName: String): js.Any = js.native
+  def $getPropertySetter(propertyName: String): Any = js.native
   
   /* private */ @JSName("$props")
-  var $props: js.Any = js.native
+  var $props: Any = js.native
   
   /* private */ @JSName("$setProperty")
-  def $setProperty(name: String, value: js.Any): Unit = js.native
+  def $setProperty(name: String, value: Any): Unit = js.native
   
   /* private */ @JSName("$trigger")
   def $trigger(eventType: String): Unit = js.native
@@ -37,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   /* protected */ def _checkDisposed(): Unit = js.native
   
-  /* private */ def _decodeProperty(propertyName: String, value: js.Any): js.Any = js.native
+  /* private */ def _decodeProperty(propertyName: String, value: Any): Any = js.native
   
   /**
     * Called by the framework to dispose a `NativeObject` instance. (The `dispose` is only used by
@@ -48,7 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /* protected */ def _dispose(): Unit = js.native
   /* protected */ def _dispose(skipNative: Boolean): Unit = js.native
   
-  /* private */ def _encodeProperty(propertyName: String, value: js.Any): js.Any = js.native
+  /* private */ def _encodeProperty(propertyName: String, value: Any): Any = js.native
   
   /* private */ def _getDefaultPropertyValue(propertyName: String): Unit = js.native
   
@@ -56,9 +59,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * Returns a value stored via `_storeProperty`, or undefined.
     * @param propertyName
     */
-  /* protected */ def _getStoredProperty(propertyName: String): js.Any = js.native
+  /* protected */ def _getStoredProperty(propertyName: String): Any = js.native
   
-  /* private */ def _getTypeDef(propertyName: String): js.Any = js.native
+  /* private */ def _getTypeDef(propertyName: String): Any = js.native
   
   /**
     * Used by `console.dirxml()` to produce part of the XML representation of this object. May be
@@ -66,7 +69,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * attribute name and string representation. The new implementation may make a super call to obtain the
     * default list of attributes printed for this object.
     */
-  /* protected */ def _getXMLAttributes(): js.Array[js.Tuple2[String, js.Any]] = js.native
+  /* protected */ def _getXMLAttributes(): js.Array[js.Tuple2[String, Any]] = js.native
   
   /**
     * Used by `console.dirxml()` to produce part of the XML representation of this object. May be
@@ -125,7 +128,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param methodName
     * @param parameters
     */
-  /* protected */ def _nativeCall(methodName: String, parameters: js.Object): js.Any = js.native
+  /* protected */ def _nativeCall(methodName: String, parameters: js.Object): Any = js.native
   
   /**
     * Sends a 'create' operation to the native client. Called once by the constructor and should not be
@@ -135,13 +138,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param param The first argument (if any) given in the constructor call. Will be forwarded to the `set` method after the native object was created.
     */
   /* protected */ def _nativeCreate(): Unit = js.native
-  /* protected */ def _nativeCreate(param: StringDictionary[js.Any]): Unit = js.native
+  /* protected */ def _nativeCreate(param: StringDictionary[Any]): Unit = js.native
   
   /**
     * Sends a 'get' operation to the native client and returns the result.
     * @param propertyName
     */
-  /* protected */ def _nativeGet(propertyName: String): js.Any = js.native
+  /* protected */ def _nativeGet(propertyName: String): Any = js.native
   
   /**
     * Sends a 'listen' operation to the native client.
@@ -155,7 +158,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param propertyName
     * @param value
     */
-  /* protected */ def _nativeSet(propertyName: String, value: js.Any): Unit = js.native
+  /* protected */ def _nativeSet(propertyName: String, value: Any): Unit = js.native
   
   /* protected */ def _nativeType: String = js.native
   
@@ -191,7 +194,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param propertyName
     * @param encodedValue
     */
-  /* protected */ def _storeProperty(propertyName: String, encodedValue: js.Any): Unit = js.native
+  /* protected */ def _storeProperty(propertyName: String, encodedValue: Any): Unit = js.native
   
   /**
     * Called by the native client to trigger a JavaScript event on this instance. May be overwritten to
@@ -204,7 +207,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /* protected */ def _trigger(eventType: String): Boolean = js.native
   /* protected */ def _trigger(eventType: String, eventData: js.Object): Boolean = js.native
   
-  /* private */ def _triggerChangeEvent(propertyName: String, newEncodedValue: js.Any): Unit = js.native
+  /* private */ def _triggerChangeEvent(propertyName: String, newEncodedValue: Any): Unit = js.native
   
   /**
     * Returns `true` if _storeProperty was ever called with the given property propertyName
@@ -262,10 +265,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     In TypeScript you should use the alternative `Listeners` API, e.g. `widget.onResize(listener);` instead of `widget.on({resize: listener});` The former provides more type information.
     * @param context In the listener function, `this` will point to this object. If not present, the listener will be called in the context of this object.
     */
-  def on(`type`: String, listener: js.Function1[/* event */ EventObject[this.type], js.Any]): this.type = js.native
+  def on(`type`: String, listener: js.Function1[/* event */ EventObject[this.type], Any]): this.type = js.native
   def on(
     `type`: String,
-    listener: js.Function1[/* event */ EventObject[this.type], js.Any],
+    listener: js.Function1[/* event */ EventObject[this.type], Any],
     context: js.Object
   ): this.type = js.native
   
@@ -284,10 +287,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param listener The listener function to register. This function will be called with an [event object](./EventObject.md).
     * @param context In the listener function, `this` will point to this object. If not present, the listener will be called in the context of this object.
     */
-  def once(`type`: String, listener: js.Function1[/* event */ EventObject[this.type], js.Any]): this.type = js.native
+  def once(`type`: String, listener: js.Function1[/* event */ EventObject[this.type], Any]): this.type = js.native
   def once(
     `type`: String,
-    listener: js.Function1[/* event */ EventObject[this.type], js.Any],
+    listener: js.Function1[/* event */ EventObject[this.type], Any],
     context: js.Object
   ): this.type = js.native
   

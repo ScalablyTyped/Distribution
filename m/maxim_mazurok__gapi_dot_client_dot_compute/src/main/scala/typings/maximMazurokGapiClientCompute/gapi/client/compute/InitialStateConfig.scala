@@ -31,19 +31,19 @@ object InitialStateConfig {
     
     inline def setDbsUndefined: Self = StObject.set(x, "dbs", js.undefined)
     
-    inline def setDbsVarargs(value: FileContentBuffer*): Self = StObject.set(x, "dbs", js.Array(value :_*))
+    inline def setDbsVarargs(value: FileContentBuffer*): Self = StObject.set(x, "dbs", js.Array(value*))
     
     inline def setDbxs(value: js.Array[FileContentBuffer]): Self = StObject.set(x, "dbxs", value.asInstanceOf[js.Any])
     
     inline def setDbxsUndefined: Self = StObject.set(x, "dbxs", js.undefined)
     
-    inline def setDbxsVarargs(value: FileContentBuffer*): Self = StObject.set(x, "dbxs", js.Array(value :_*))
+    inline def setDbxsVarargs(value: FileContentBuffer*): Self = StObject.set(x, "dbxs", js.Array(value*))
     
     inline def setKeks(value: js.Array[FileContentBuffer]): Self = StObject.set(x, "keks", value.asInstanceOf[js.Any])
     
     inline def setKeksUndefined: Self = StObject.set(x, "keks", js.undefined)
     
-    inline def setKeksVarargs(value: FileContentBuffer*): Self = StObject.set(x, "keks", js.Array(value :_*))
+    inline def setKeksVarargs(value: FileContentBuffer*): Self = StObject.set(x, "keks", js.Array(value*))
     
     inline def setPk(value: FileContentBuffer): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     

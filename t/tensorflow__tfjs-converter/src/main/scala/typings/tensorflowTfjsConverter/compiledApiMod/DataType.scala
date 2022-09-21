@@ -38,6 +38,18 @@ object DataType extends StObject {
   /* 110 */ val DT_BOOL_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_BOOL_REF & Double = js.native
   
   @js.native
+  sealed trait DT_COMPLEX128
+    extends StObject
+       with DataType
+  /* 18 */ val DT_COMPLEX128: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_COMPLEX128 & Double = js.native
+  
+  @js.native
+  sealed trait DT_COMPLEX128_REF
+    extends StObject
+       with DataType
+  /* 118 */ val DT_COMPLEX128_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_COMPLEX128_REF & Double = js.native
+  
+  @js.native
   sealed trait DT_COMPLEX64
     extends StObject
        with DataType
@@ -72,6 +84,18 @@ object DataType extends StObject {
     extends StObject
        with DataType
   /* 101 */ val DT_FLOAT_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_FLOAT_REF & Double = js.native
+  
+  @js.native
+  sealed trait DT_HALF
+    extends StObject
+       with DataType
+  /* 19 */ val DT_HALF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_HALF & Double = js.native
+  
+  @js.native
+  sealed trait DT_HALF_REF
+    extends StObject
+       with DataType
+  /* 119 */ val DT_HALF_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_HALF_REF & Double = js.native
   
   @js.native
   sealed trait DT_INT16
@@ -128,6 +152,18 @@ object DataType extends StObject {
   /* 0 */ val DT_INVALID: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_INVALID & Double = js.native
   
   @js.native
+  sealed trait DT_QINT16
+    extends StObject
+       with DataType
+  /* 15 */ val DT_QINT16: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QINT16 & Double = js.native
+  
+  @js.native
+  sealed trait DT_QINT16_REF
+    extends StObject
+       with DataType
+  /* 115 */ val DT_QINT16_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QINT16_REF & Double = js.native
+  
+  @js.native
   sealed trait DT_QINT32
     extends StObject
        with DataType
@@ -152,6 +188,18 @@ object DataType extends StObject {
   /* 111 */ val DT_QINT8_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QINT8_REF & Double = js.native
   
   @js.native
+  sealed trait DT_QUINT16
+    extends StObject
+       with DataType
+  /* 16 */ val DT_QUINT16: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QUINT16 & Double = js.native
+  
+  @js.native
+  sealed trait DT_QUINT16_REF
+    extends StObject
+       with DataType
+  /* 116 */ val DT_QUINT16_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QUINT16_REF & Double = js.native
+  
+  @js.native
   sealed trait DT_QUINT8
     extends StObject
        with DataType
@@ -162,6 +210,18 @@ object DataType extends StObject {
     extends StObject
        with DataType
   /* 112 */ val DT_QUINT8_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_QUINT8_REF & Double = js.native
+  
+  @js.native
+  sealed trait DT_RESOURCE
+    extends StObject
+       with DataType
+  /* 20 */ val DT_RESOURCE: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_RESOURCE & Double = js.native
+  
+  @js.native
+  sealed trait DT_RESOURCE_REF
+    extends StObject
+       with DataType
+  /* 120 */ val DT_RESOURCE_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_RESOURCE_REF & Double = js.native
   
   @js.native
   sealed trait DT_STRING
@@ -176,6 +236,42 @@ object DataType extends StObject {
   /* 107 */ val DT_STRING_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_STRING_REF & Double = js.native
   
   @js.native
+  sealed trait DT_UINT16
+    extends StObject
+       with DataType
+  /* 17 */ val DT_UINT16: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_UINT16 & Double = js.native
+  
+  @js.native
+  sealed trait DT_UINT16_REF
+    extends StObject
+       with DataType
+  /* 117 */ val DT_UINT16_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_UINT16_REF & Double = js.native
+  
+  @js.native
+  sealed trait DT_UINT32
+    extends StObject
+       with DataType
+  /* 22 */ val DT_UINT32: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_UINT32 & Double = js.native
+  
+  @js.native
+  sealed trait DT_UINT32_REF
+    extends StObject
+       with DataType
+  /* 122 */ val DT_UINT32_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_UINT32_REF & Double = js.native
+  
+  @js.native
+  sealed trait DT_UINT64
+    extends StObject
+       with DataType
+  /* 23 */ val DT_UINT64: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_UINT64 & Double = js.native
+  
+  @js.native
+  sealed trait DT_UINT64_REF
+    extends StObject
+       with DataType
+  /* 123 */ val DT_UINT64_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_UINT64_REF & Double = js.native
+  
+  @js.native
   sealed trait DT_UINT8
     extends StObject
        with DataType
@@ -186,4 +282,16 @@ object DataType extends StObject {
     extends StObject
        with DataType
   /* 104 */ val DT_UINT8_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_UINT8_REF & Double = js.native
+  
+  @js.native
+  sealed trait DT_VARIANT
+    extends StObject
+       with DataType
+  /* 21 */ val DT_VARIANT: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_VARIANT & Double = js.native
+  
+  @js.native
+  sealed trait DT_VARIANT_REF
+    extends StObject
+       with DataType
+  /* 121 */ val DT_VARIANT_REF: typings.tensorflowTfjsConverter.compiledApiMod.DataType.DT_VARIANT_REF & Double = js.native
 }

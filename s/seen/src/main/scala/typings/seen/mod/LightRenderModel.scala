@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "LightRenderModel")
 @js.native
-class LightRenderModel protected () extends StObject {
+open class LightRenderModel protected () extends StObject {
   def this(light: Light, transform: Matrix) = this()
   
   var colorIntensity: Color = js.native

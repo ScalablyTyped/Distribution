@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-elemental", "LoadingBar")
 @js.native
-class LoadingBar protected ()
-  extends Component[LoadingBarProps, LoadingBarState, js.Any] {
+open class LoadingBar protected () extends Component[LoadingBarProps, LoadingBarState, Any] {
   def this(props: LoadingBarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LoadingBarProps, context: js.Any) = this()
+  def this(props: LoadingBarProps, context: Any) = this()
 }

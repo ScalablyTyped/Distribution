@@ -2,6 +2,7 @@ package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.failed_
 import typings.microsoftGraph.microsoftGraphStrings.notStarted_
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.inProgress
   - typings.microsoftGraph.microsoftGraphStrings.succeeded
   - typings.microsoftGraph.microsoftGraphStrings.failed_
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait TeamsAsyncOperationStatus extends StObject
 object TeamsAsyncOperationStatus {
@@ -27,5 +28,5 @@ object TeamsAsyncOperationStatus {
   
   inline def succeeded: typings.microsoftGraph.microsoftGraphStrings.succeeded = "succeeded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.succeeded]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

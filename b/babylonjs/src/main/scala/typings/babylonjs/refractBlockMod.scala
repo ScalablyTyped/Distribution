@@ -10,7 +10,7 @@ object refractBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/refractBlock", "RefractBlock")
   @js.native
-  class RefractBlock protected () extends NodeMaterialBlock {
+  open class RefractBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new RefractBlock
       * @param name defines the block name

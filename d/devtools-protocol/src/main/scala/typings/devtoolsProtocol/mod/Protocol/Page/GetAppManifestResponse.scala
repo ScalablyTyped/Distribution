@@ -38,7 +38,7 @@ object GetAppManifestResponse {
     
     inline def setErrors(value: js.Array[AppManifestError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: AppManifestError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: AppManifestError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setParsed(value: AppManifestParsedProperties): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     

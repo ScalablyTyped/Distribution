@@ -34,7 +34,7 @@ object AbstractContainer {
     
     inline def setMembers(value: js.Array[AbstractBase]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: AbstractBase*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: AbstractBase*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

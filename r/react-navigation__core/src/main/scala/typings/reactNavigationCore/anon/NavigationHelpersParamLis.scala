@@ -1,24 +1,19 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.reactNavigationCoreStrings.beforeRemove
-import typings.reactNavigationCore.reactNavigationCoreStrings.blur
-import typings.reactNavigationCore.reactNavigationCoreStrings.focus
-import typings.reactNavigationCore.reactNavigationCoreStrings.state
 import typings.reactNavigationCore.typesMod.EventArg
 import typings.reactNavigationCore.typesMod.EventListenerCallback
-import typings.reactNavigationCore.typesMod.EventMapCore
+import typings.reactNavigationCore.typesMod.Keyof
 import typings.reactNavigationCore.typesMod.NavigationProp
 import typings.reactNavigationRouters.typesMod.NavigationAction
 import typings.reactNavigationRouters.typesMod.NavigationState
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import typings.reactNavigationRouters.typesMod.PartialState
-import typings.std.Extract
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @react-navigation/core.@react-navigation/core/lib/typescript/src/types.NavigationHelpers<@react-navigation/routers.@react-navigation/routers.ParamListBase, {}> & std.Partial<@react-navigation/core.@react-navigation/core/lib/typescript/src/types.NavigationProp<@react-navigation/routers.@react-navigation/routers.ParamListBase, string, any, any, any>> */
+/* Inlined @react-navigation/core.@react-navigation/core/lib/typescript/src/types.NavigationHelpers<@react-navigation/routers.@react-navigation/routers.ParamListBase, {}> & std.Partial<@react-navigation/core.@react-navigation/core/lib/typescript/src/types.NavigationProp<@react-navigation/routers.@react-navigation/routers.ParamListBase, string, any, any, any, {}>> */
 @js.native
 trait NavigationHelpersParamLis extends StObject {
   
@@ -33,21 +28,12 @@ trait NavigationHelpersParamLis extends StObject {
     * Turns out if we use an empty string, it doesn't show up in intelliSense.
     */
   /* protected */ @JSName("")
-  var _empty: js.UndefOr[C] = js.native
+  var _empty: js.UndefOr[js.Tuple3[ParamListBase, Any, Any]] = js.native
   
   var addListener: js.UndefOr[
     js.Function2[
-      /* type */ Extract[
-        /* keyof any & @react-navigation/core.@react-navigation/core/lib/typescript/src/types.EventMapCore<any> */ focus | blur | state | beforeRemove, 
-        String
-      ], 
-      /* callback */ EventListenerCallback[
-        js.Any & EventMapCore[js.Any], 
-        Extract[
-          /* keyof any & @react-navigation/core.@react-navigation/core/lib/typescript/src/types.EventMapCore<any> */ focus | blur | state | beforeRemove, 
-          String
-        ]
-      ], 
+      /* type */ Keyof[EventMapCoreany], 
+      /* callback */ EventListenerCallback[EventMapCoreany, Keyof[EventMapCoreany]], 
       js.Function0[Unit]
     ]
   ] = js.native
@@ -60,33 +46,9 @@ trait NavigationHelpersParamLis extends StObject {
   @JSName("canGoBack")
   var canGoBack_FNavigationHelpersParamLis: js.UndefOr[js.Function0[Boolean]] = js.native
   
-  /**
-    * Returns the parent navigator, if any. Reason why the function is called
-    * dangerouslyGetParent is to warn developers against overusing it to eg. get parent
-    * of parent and other hard-to-follow patterns.
-    */
-  def dangerouslyGetParent[T](): T = js.native
-  @JSName("dangerouslyGetParent")
-  var dangerouslyGetParent_FNavigationHelpersParamLis: js.UndefOr[
-    js.Function0[
-      js.UndefOr[
-        NavigationProp[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object]
-      ]
-    ]
-  ] = js.native
-  
-  /**
-    * Returns the navigator's state. Reason why the function is called
-    * dangerouslyGetState is to discourage developers to use internal navigation's state.
-    * Note that this method doesn't re-render screen when the result changes. So don't use it in `render`.
-    */
-  def dangerouslyGetState(): NavigationState[ParamListBase] = js.native
-  @JSName("dangerouslyGetState")
-  var dangerouslyGetState_FNavigationHelpersParamLis: js.UndefOr[js.Function0[js.Any]] = js.native
-  
   var dispatch: js.UndefOr[
     js.Function1[
-      /* action */ NavigationAction | (js.Function1[/* state */ js.Any, NavigationAction]), 
+      /* action */ NavigationAction | (js.Function1[/* state */ Any, NavigationAction]), 
       Unit
     ]
   ] = js.native
@@ -107,11 +69,53 @@ trait NavigationHelpersParamLis extends StObject {
     * @param [options.target] Key of the target route which should receive the event.
     * If not specified, all routes receive the event.
     */
-  def emit[EventName /* <: Extract[/* keyof {} */ String, String] */](options: TypeEventName[EventName] & (js.Object | `2`) & (`9`[EventName] | `8`[EventName])): EventArg[
+  def emit[EventName /* <: Keyof[js.Object] */](options: TypeEventName[EventName] & (js.Object | `3`) & (`11`[EventName] | `10`[EventName])): EventArg[
     EventName, 
     /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] */ js.Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
   ] = js.native
+  
+  /**
+    * Returns the name of the navigator specified in the `name` prop.
+    * If no name is specified, returns `undefined`.
+    */
+  def getId(): js.UndefOr[String] = js.native
+  @JSName("getId")
+  var getId_FNavigationHelpersParamLis: js.UndefOr[js.Function0[js.UndefOr[String]]] = js.native
+  
+  /**
+    * Returns the navigation helpers from a parent navigator based on the ID.
+    * If an ID is provided, the navigation helper from the parent navigator with matching ID (including current) will be returned.
+    * If no ID is provided, the navigation helper from the immediate parent navigator will be returned.
+    *
+    * @param id Optional ID of a parent navigator.
+    */
+  def getParent[T](): T = js.native
+  def getParent[T](id: String): T = js.native
+  @JSName("getParent")
+  var getParent_FNavigationHelpersParamLis: js.UndefOr[
+    js.Function1[
+      /* id */ js.UndefOr[Any], 
+      js.UndefOr[
+        NavigationProp[
+          ParamListBase, 
+          Keyof[ParamListBase], 
+          Unit, 
+          NavigationState[ParamListBase], 
+          js.Object, 
+          js.Object
+        ]
+      ]
+    ]
+  ] = js.native
+  
+  /**
+    * Returns the navigator's state.
+    * Note that this method doesn't re-render screen when the result changes. So don't use it in `render`.
+    */
+  def getState(): NavigationState[ParamListBase] = js.native
+  @JSName("getState")
+  var getState_FNavigationHelpersParamLis: js.UndefOr[js.Function0[Any]] = js.native
   
   /**
     * Go back to the previous route in history.
@@ -133,10 +137,10 @@ trait NavigationHelpersParamLis extends StObject {
   var navigate: js.UndefOr[
     js.Function1[
       /* args */ (js.Tuple2[
-        /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase] */ js.Any
+        /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ /* screen */ String, 
+        /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase] */ /* params */ js.Any
       ]) | (js.Array[
-        /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String
+        /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ /* screen */ String
       ]), 
       Unit
     ]
@@ -148,37 +152,27 @@ trait NavigationHelpersParamLis extends StObject {
     * @param [params] Params object for the route.
     */
   def navigate[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: (js.Tuple2[
-      RouteName, 
-      /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName] */ js.Any
-    ]) | js.Array[RouteName]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RouteName extends unknown ? undefined extends ParamList[RouteName] ? [screen: RouteName] | [screen: RouteName, params: ParamList[RouteName]] : [screen: RouteName, params: ParamList[RouteName]] : never is not an array type */ args: (js.Tuple2[
+      /* screen */ RouteName, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName] */ /* params */ js.Any
+    ]) | (js.Array[/* screen */ RouteName])
   ): Unit = js.native
   /**
     * Navigate to a route in current navigation tree.
     *
     * @param route Object with `key` or `name` for the route to navigate to, and a `params` object.
     */
-  def navigate[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */](route: KeyStringParams[RouteName]): Unit = js.native
-  def navigate[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */](route: NameRouteName[RouteName]): Unit = js.native
+  def navigate[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */](options: KeyString[RouteName] | KeyMergeName[RouteName]): Unit = js.native
   
   var removeListener: js.UndefOr[
     js.Function2[
-      /* type */ Extract[
-        /* keyof any & @react-navigation/core.@react-navigation/core/lib/typescript/src/types.EventMapCore<any> */ focus | blur | state | beforeRemove, 
-        String
-      ], 
-      /* callback */ EventListenerCallback[
-        js.Any & EventMapCore[js.Any], 
-        Extract[
-          /* keyof any & @react-navigation/core.@react-navigation/core/lib/typescript/src/types.EventMapCore<any> */ focus | blur | state | beforeRemove, 
-          String
-        ]
-      ], 
+      /* type */ Keyof[EventMapCoreany], 
+      /* callback */ EventListenerCallback[EventMapCoreany, Keyof[EventMapCoreany]], 
       Unit
     ]
   ] = js.native
   
-  var reset: js.UndefOr[js.Function1[/* state */ PartialState[js.Any] | js.Any, Unit]] = js.native
+  var reset: js.UndefOr[js.Function1[/* state */ PartialState[Any] | Any, Unit]] = js.native
   /**
     * Reset the navigation state to the provided state.
     *
@@ -187,12 +181,14 @@ trait NavigationHelpersParamLis extends StObject {
   def reset(state: PartialStateNavigationSta): Unit = js.native
   def reset(state: NavigationState[ParamListBase]): Unit = js.native
   
-  var setOptions: js.UndefOr[js.Function1[/* options */ Partial[js.Any], Unit]] = js.native
+  var setOptions: js.UndefOr[js.Function1[/* options */ Partial[Any], Unit]] = js.native
   
   var setParams: js.UndefOr[
     js.Function1[
-      /* params */ Partial[
-        /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[string] */ js.Any
+      /* params */ js.UndefOr[
+        Partial[
+          /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[string] */ js.Any
+        ]
       ], 
       Unit
     ]

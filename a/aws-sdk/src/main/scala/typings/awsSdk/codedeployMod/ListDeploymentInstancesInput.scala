@@ -41,13 +41,13 @@ object ListDeploymentInstancesInput {
     
     inline def setInstanceStatusFilterUndefined: Self = StObject.set(x, "instanceStatusFilter", js.undefined)
     
-    inline def setInstanceStatusFilterVarargs(value: InstanceStatus*): Self = StObject.set(x, "instanceStatusFilter", js.Array(value :_*))
+    inline def setInstanceStatusFilterVarargs(value: InstanceStatus*): Self = StObject.set(x, "instanceStatusFilter", js.Array(value*))
     
     inline def setInstanceTypeFilter(value: InstanceTypeList): Self = StObject.set(x, "instanceTypeFilter", value.asInstanceOf[js.Any])
     
     inline def setInstanceTypeFilterUndefined: Self = StObject.set(x, "instanceTypeFilter", js.undefined)
     
-    inline def setInstanceTypeFilterVarargs(value: InstanceType*): Self = StObject.set(x, "instanceTypeFilter", js.Array(value :_*))
+    inline def setInstanceTypeFilterVarargs(value: InstanceType*): Self = StObject.set(x, "instanceTypeFilter", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

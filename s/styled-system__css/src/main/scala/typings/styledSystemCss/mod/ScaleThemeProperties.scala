@@ -1,5 +1,21 @@
 package typings.styledSystemCss.mod
 
+import typings.csstype.mod.Property.Border
+import typings.csstype.mod.Property.BorderRadius
+import typings.csstype.mod.Property.BorderStyle
+import typings.csstype.mod.Property.BorderWidth
+import typings.csstype.mod.Property.BoxShadow
+import typings.csstype.mod.Property.Color
+import typings.csstype.mod.Property.FontFamily
+import typings.csstype.mod.Property.FontSize
+import typings.csstype.mod.Property.FontWeight
+import typings.csstype.mod.Property.Height
+import typings.csstype.mod.Property.LetterSpacing
+import typings.csstype.mod.Property.LineHeight
+import typings.csstype.mod.Property.Margin
+import typings.csstype.mod.Property.Padding
+import typings.csstype.mod.Property.Width
+import typings.csstype.mod.Property.ZIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +29,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#border
     */
-  var borderStyles: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any
-    ]
-  ] = js.undefined
+  var borderStyles: js.UndefOr[ThemeValue[BorderStyle]] = js.undefined
   
   /**
     * | Prop        | CSS Property | Theme Field  |
@@ -26,11 +38,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#border
     */
-  var borderWidths: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<{}> */ js.Any
-    ]
-  ] = js.undefined
+  var borderWidths: js.UndefOr[ThemeValue[BorderWidth[js.Object]]] = js.undefined
   
   /**
     * | Prop         | CSS Property               | Theme Field |
@@ -45,11 +53,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#border
     */
-  var borders: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any
-    ]
-  ] = js.undefined
+  var borders: js.UndefOr[ThemeValue[Border[js.Object]]] = js.undefined
   
   /**
     * | Prop                | CSS Property     | Theme Field |
@@ -59,11 +63,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#color
     */
-  var colors: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-    ]
-  ] = js.undefined
+  var colors: js.UndefOr[ThemeValue[Color]] = js.undefined
   
   /**
     * | Prop     | CSS Property | Theme Field |
@@ -72,11 +72,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#typography
     */
-  var fontSizes: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any
-    ]
-  ] = js.undefined
+  var fontSizes: js.UndefOr[ThemeValue[FontSize[Double]]] = js.undefined
   
   /**
     * | Prop       | CSS Property | Theme Field |
@@ -85,11 +81,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#typography
     */
-  var fontWeights: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any
-    ]
-  ] = js.undefined
+  var fontWeights: js.UndefOr[ThemeValue[FontWeight]] = js.undefined
   
   /**
     * | Prop       | CSS Property | Theme Field |
@@ -98,11 +90,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#typography
     */
-  var fonts: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any
-    ]
-  ] = js.undefined
+  var fonts: js.UndefOr[ThemeValue[FontFamily]] = js.undefined
   
   /**
     * | Prop          | CSS Property   | Theme Field    |
@@ -111,11 +99,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#typography
     */
-  var letterSpacings: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<string | number> */ js.Any
-    ]
-  ] = js.undefined
+  var letterSpacings: js.UndefOr[ThemeValue[LetterSpacing[String | Double]]] = js.undefined
   
   /**
     * | Prop       | CSS Property | Theme Field |
@@ -124,11 +108,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#typography
     */
-  var lineHeights: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<string> */ js.Any
-    ]
-  ] = js.undefined
+  var lineHeights: js.UndefOr[ThemeValue[LineHeight[String]]] = js.undefined
   
   /**
     * | Prop         | CSS Property  | Theme Field |
@@ -137,11 +117,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#border
     */
-  var radii: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<{}> */ js.Any
-    ]
-  ] = js.undefined
+  var radii: js.UndefOr[ThemeValue[BorderRadius[js.Object]]] = js.undefined
   
   /**
     * | Prop       | CSS Property | Theme Field |
@@ -151,11 +127,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#shadow
     */
-  var shadows: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any
-    ]
-  ] = js.undefined
+  var shadows: js.UndefOr[ThemeValue[BoxShadow]] = js.undefined
   
   /**
     * | Prop      | CSS Property | Theme Field |
@@ -170,11 +142,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#layout
     */
-  var sizes: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any
-    ]
-  ] = js.undefined
+  var sizes: js.UndefOr[ThemeValue[Height[js.Object] | Width[js.Object]]] = js.undefined
   
   /**
     * | Prop              | CSS Property                   | Theme Field |
@@ -196,11 +164,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#space
     */
-  var space: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number> */ js.Any
-    ]
-  ] = js.undefined
+  var space: js.UndefOr[ThemeValue[Margin[Double] & Padding[Double]]] = js.undefined
   
   /**
     * | Prop    | CSS Property | Theme Field |
@@ -209,11 +173,7 @@ trait ScaleThemeProperties extends StObject {
     *
     * @see https://styled-system.com/table#position
     */
-  var zIndices: js.UndefOr[
-    ThemeValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any
-    ]
-  ] = js.undefined
+  var zIndices: js.UndefOr[ThemeValue[ZIndex]] = js.undefined
 }
 object ScaleThemeProperties {
   
@@ -224,172 +184,88 @@ object ScaleThemeProperties {
   
   extension [Self <: ScaleThemeProperties](x: Self) {
     
-    inline def setBorderStyles(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any
-        ]
-    ): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
+    inline def setBorderStyles(value: ThemeValue[BorderStyle]): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
     
     inline def setBorderStylesUndefined: Self = StObject.set(x, "borderStyles", js.undefined)
     
-    inline def setBorderStylesVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any)*
-    ): Self = StObject.set(x, "borderStyles", js.Array(value :_*))
+    inline def setBorderStylesVarargs(value: BorderStyle*): Self = StObject.set(x, "borderStyles", js.Array(value*))
     
-    inline def setBorderWidths(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<{}> */ js.Any
-        ]
-    ): Self = StObject.set(x, "borderWidths", value.asInstanceOf[js.Any])
+    inline def setBorderWidths(value: ThemeValue[BorderWidth[js.Object]]): Self = StObject.set(x, "borderWidths", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthsUndefined: Self = StObject.set(x, "borderWidths", js.undefined)
     
-    inline def setBorderWidthsVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<{}> */ js.Any)*
-    ): Self = StObject.set(x, "borderWidths", js.Array(value :_*))
+    inline def setBorderWidthsVarargs(value: BorderWidth[js.Object]*): Self = StObject.set(x, "borderWidths", js.Array(value*))
     
-    inline def setBorders(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any
-        ]
-    ): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: ThemeValue[Border[js.Object]]): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
     inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
-    inline def setBordersVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any)*
-    ): Self = StObject.set(x, "borders", js.Array(value :_*))
+    inline def setBordersVarargs(value: Border[js.Object]*): Self = StObject.set(x, "borders", js.Array(value*))
     
-    inline def setColors(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
-        ]
-    ): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: ThemeValue[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any)*
-    ): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setFontSizes(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any
-        ]
-    ): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
+    inline def setFontSizes(value: ThemeValue[FontSize[Double]]): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
     
     inline def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
     
-    inline def setFontSizesVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any)*
-    ): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
+    inline def setFontSizesVarargs(value: FontSize[Double]*): Self = StObject.set(x, "fontSizes", js.Array(value*))
     
-    inline def setFontWeights(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any
-        ]
-    ): Self = StObject.set(x, "fontWeights", value.asInstanceOf[js.Any])
+    inline def setFontWeights(value: ThemeValue[FontWeight]): Self = StObject.set(x, "fontWeights", value.asInstanceOf[js.Any])
     
     inline def setFontWeightsUndefined: Self = StObject.set(x, "fontWeights", js.undefined)
     
-    inline def setFontWeightsVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any)*
-    ): Self = StObject.set(x, "fontWeights", js.Array(value :_*))
+    inline def setFontWeightsVarargs(value: FontWeight*): Self = StObject.set(x, "fontWeights", js.Array(value*))
     
-    inline def setFonts(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any
-        ]
-    ): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    inline def setFonts(value: ThemeValue[FontFamily]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
     inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
-    inline def setFontsVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any)*
-    ): Self = StObject.set(x, "fonts", js.Array(value :_*))
+    inline def setFontsVarargs(value: FontFamily*): Self = StObject.set(x, "fonts", js.Array(value*))
     
-    inline def setLetterSpacings(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<string | number> */ js.Any
-        ]
-    ): Self = StObject.set(x, "letterSpacings", value.asInstanceOf[js.Any])
+    inline def setLetterSpacings(value: ThemeValue[LetterSpacing[String | Double]]): Self = StObject.set(x, "letterSpacings", value.asInstanceOf[js.Any])
     
     inline def setLetterSpacingsUndefined: Self = StObject.set(x, "letterSpacings", js.undefined)
     
-    inline def setLetterSpacingsVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<string | number> */ js.Any)*
-    ): Self = StObject.set(x, "letterSpacings", js.Array(value :_*))
+    inline def setLetterSpacingsVarargs(value: (LetterSpacing[String | Double])*): Self = StObject.set(x, "letterSpacings", js.Array(value*))
     
-    inline def setLineHeights(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<string> */ js.Any
-        ]
-    ): Self = StObject.set(x, "lineHeights", value.asInstanceOf[js.Any])
+    inline def setLineHeights(value: ThemeValue[LineHeight[String]]): Self = StObject.set(x, "lineHeights", value.asInstanceOf[js.Any])
     
     inline def setLineHeightsUndefined: Self = StObject.set(x, "lineHeights", js.undefined)
     
-    inline def setLineHeightsVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<string> */ js.Any)*
-    ): Self = StObject.set(x, "lineHeights", js.Array(value :_*))
+    inline def setLineHeightsVarargs(value: LineHeight[String]*): Self = StObject.set(x, "lineHeights", js.Array(value*))
     
-    inline def setRadii(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<{}> */ js.Any
-        ]
-    ): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
+    inline def setRadii(value: ThemeValue[BorderRadius[js.Object]]): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
     
     inline def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
     
-    inline def setRadiiVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<{}> */ js.Any)*
-    ): Self = StObject.set(x, "radii", js.Array(value :_*))
+    inline def setRadiiVarargs(value: BorderRadius[js.Object]*): Self = StObject.set(x, "radii", js.Array(value*))
     
-    inline def setShadows(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any
-        ]
-    ): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
+    inline def setShadows(value: ThemeValue[BoxShadow]): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
     inline def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
-    inline def setShadowsVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any)*
-    ): Self = StObject.set(x, "shadows", js.Array(value :_*))
+    inline def setShadowsVarargs(value: BoxShadow*): Self = StObject.set(x, "shadows", js.Array(value*))
     
-    inline def setSizes(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any
-        ]
-    ): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+    inline def setSizes(value: ThemeValue[Height[js.Object] | Width[js.Object]]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
     inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
-    inline def setSizesVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any)*
-    ): Self = StObject.set(x, "sizes", js.Array(value :_*))
+    inline def setSizesVarargs(value: (Height[js.Object] | Width[js.Object])*): Self = StObject.set(x, "sizes", js.Array(value*))
     
-    inline def setSpace(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number> */ js.Any
-        ]
-    ): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: ThemeValue[Margin[Double] & Padding[Double]]): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
-    inline def setSpaceVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number> */ js.Any)*
-    ): Self = StObject.set(x, "space", js.Array(value :_*))
+    inline def setSpaceVarargs(value: (Margin[Double] & Padding[Double])*): Self = StObject.set(x, "space", js.Array(value*))
     
-    inline def setZIndices(
-      value: ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any
-        ]
-    ): Self = StObject.set(x, "zIndices", value.asInstanceOf[js.Any])
+    inline def setZIndices(value: ThemeValue[ZIndex]): Self = StObject.set(x, "zIndices", value.asInstanceOf[js.Any])
     
     inline def setZIndicesUndefined: Self = StObject.set(x, "zIndices", js.undefined)
     
-    inline def setZIndicesVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any)*
-    ): Self = StObject.set(x, "zIndices", js.Array(value :_*))
+    inline def setZIndicesVarargs(value: ZIndex*): Self = StObject.set(x, "zIndices", js.Array(value*))
   }
 }

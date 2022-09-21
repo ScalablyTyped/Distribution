@@ -11,7 +11,6 @@ import typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KEY_MATERIAL_DOES_
 import typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KEY_MATERIAL_EXPIRES
 import typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.PendingDeletion
 import typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.PendingImport
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,12 +32,12 @@ object typesKeyMetadataMod {
     /**
       * <p>The date and time when the CMK was created.</p>
       */
-    var CreationDate: js.UndefOr[Date | String | Double] = js.undefined
+    var CreationDate: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The date and time after which AWS KMS deletes the CMK. This value is present only when <code>KeyState</code> is <code>PendingDeletion</code>, otherwise this value is omitted.</p>
       */
-    var DeletionDate: js.UndefOr[Date | String | Double] = js.undefined
+    var DeletionDate: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The description of the CMK.</p>
@@ -83,7 +82,7 @@ object typesKeyMetadataMod {
     /**
       * <p>The time at which the imported key material expires. When the key material expires, AWS KMS deletes the key material and the CMK becomes unusable. This value is present only for CMKs whose <code>Origin</code> is <code>EXTERNAL</code> and whose <code>ExpirationModel</code> is <code>KEY_MATERIAL_EXPIRES</code>, otherwise this value is omitted.</p>
       */
-    var ValidTo: js.UndefOr[Date | String | Double] = js.undefined
+    var ValidTo: js.UndefOr[js.Date | String | Double] = js.undefined
   }
   object KeyMetadata {
     
@@ -102,11 +101,11 @@ object typesKeyMetadataMod {
       
       inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
       
-      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
-      inline def setDeletionDate(value: Date | String | Double): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
+      inline def setDeletionDate(value: js.Date | String | Double): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
       
       inline def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
       
@@ -140,7 +139,7 @@ object typesKeyMetadataMod {
       
       inline def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
       
-      inline def setValidTo(value: Date | String | Double): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
+      inline def setValidTo(value: js.Date | String | Double): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
       
       inline def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
     }
@@ -154,19 +153,19 @@ object typesKeyMetadataMod {
       * <p>The date and time when the CMK was created.</p>
       */
     @JSName("CreationDate")
-    var CreationDate_UnmarshalledKeyMetadata: js.UndefOr[Date] = js.undefined
+    var CreationDate_UnmarshalledKeyMetadata: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The date and time after which AWS KMS deletes the CMK. This value is present only when <code>KeyState</code> is <code>PendingDeletion</code>, otherwise this value is omitted.</p>
       */
     @JSName("DeletionDate")
-    var DeletionDate_UnmarshalledKeyMetadata: js.UndefOr[Date] = js.undefined
+    var DeletionDate_UnmarshalledKeyMetadata: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The time at which the imported key material expires. When the key material expires, AWS KMS deletes the key material and the CMK becomes unusable. This value is present only for CMKs whose <code>Origin</code> is <code>EXTERNAL</code> and whose <code>ExpirationModel</code> is <code>KEY_MATERIAL_EXPIRES</code>, otherwise this value is omitted.</p>
       */
     @JSName("ValidTo")
-    var ValidTo_UnmarshalledKeyMetadata: js.UndefOr[Date] = js.undefined
+    var ValidTo_UnmarshalledKeyMetadata: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledKeyMetadata {
     
@@ -177,15 +176,15 @@ object typesKeyMetadataMod {
     
     extension [Self <: UnmarshalledKeyMetadata](x: Self) {
       
-      inline def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
-      inline def setDeletionDate(value: Date): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
+      inline def setDeletionDate(value: js.Date): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
       
       inline def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
       
-      inline def setValidTo(value: Date): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
+      inline def setValidTo(value: js.Date): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
       
       inline def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
     }

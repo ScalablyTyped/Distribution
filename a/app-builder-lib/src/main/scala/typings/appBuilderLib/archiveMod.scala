@@ -70,7 +70,7 @@ object archiveMod {
       
       inline def setExcludedUndefined: Self = StObject.set(x, "excluded", js.undefined)
       
-      inline def setExcludedVarargs(value: String*): Self = StObject.set(x, "excluded", js.Array(value :_*))
+      inline def setExcludedVarargs(value: String*): Self = StObject.set(x, "excluded", js.Array(value*))
       
       inline def setIsArchiveHeaderCompressed(value: Boolean): Self = StObject.set(x, "isArchiveHeaderCompressed", value.asInstanceOf[js.Any])
       

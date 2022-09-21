@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-regex-util" : "26.0.0"
+      "jest-regex-util" : "29.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-regex-util" : "26.0.0"
+      "jest-regex-util" : "29.0.0"
     }
   ],
   "compile-devDependencies" : [

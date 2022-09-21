@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CompletedMultipartUpload extends StObject {
   
   /**
-    * Array of CompletedPart data types.
+    * Array of CompletedPart data types. If you do not supply a valid Part with your request, the service sends back an HTTP 400 response.
     */
   var Parts: js.UndefOr[CompletedPartList] = js.undefined
 }
@@ -24,6 +24,6 @@ object CompletedMultipartUpload {
     
     inline def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
     
-    inline def setPartsVarargs(value: CompletedPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: CompletedPart*): Self = StObject.set(x, "Parts", js.Array(value*))
   }
 }

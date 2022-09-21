@@ -14,7 +14,7 @@ object foundationMod {
   
   @JSImport("@material/toolbar/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCToolbarFoundation {
+  open class default () extends MDCToolbarFoundation {
     def this(adapter: PartialMDCToolbarAdapter) = this()
   }
   /* static members */
@@ -39,7 +39,7 @@ object foundationMod {
   
   @JSImport("@material/toolbar/foundation", "MDCToolbarFoundation")
   @js.native
-  class MDCToolbarFoundation () extends MDCFoundation[MDCToolbarAdapter] {
+  open class MDCToolbarFoundation () extends MDCFoundation[MDCToolbarAdapter] {
     def this(adapter: PartialMDCToolbarAdapter) = this()
     
     def updateAdjustElementStyles(): Unit = js.native

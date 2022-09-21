@@ -8,7 +8,7 @@ import typings.chromeLauncher.chromeLauncherStrings.info
 import typings.chromeLauncher.chromeLauncherStrings.silent
 import typings.chromeLauncher.chromeLauncherStrings.verbose
 import typings.node.childProcessMod.ChildProcess
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object chromeLauncherMod {
   
   @JSImport("chrome-launcher/dist/chrome-launcher", JSImport.Default)
   @js.native
-  class default () extends Launcher {
+  open class default () extends Launcher {
     def this(opts: Options) = this()
     def this(opts: Unit, moduleOverrides: ModuleOverrides) = this()
     def this(opts: Options, moduleOverrides: ModuleOverrides) = this()
@@ -46,72 +46,74 @@ object chromeLauncherMod {
   
   @JSImport("chrome-launcher/dist/chrome-launcher", "Launcher")
   @js.native
-  class Launcher () extends StObject {
+  open class Launcher () extends StObject {
     def this(opts: Options) = this()
     def this(opts: Unit, moduleOverrides: ModuleOverrides) = this()
     def this(opts: Options, moduleOverrides: ModuleOverrides) = this()
     
-    var chrome: js.UndefOr[ChildProcess] = js.native
+    /* private */ var chromeFlags: Any = js.native
     
-    /* private */ var chromeFlags: js.Any = js.native
+    /* private */ var chromePath: Any = js.native
     
-    /* private */ var chromePath: js.Any = js.native
+    var chromeProcess: js.UndefOr[ChildProcess] = js.native
     
-    /* private */ var cleanup: js.Any = js.native
+    /* private */ var cleanup: Any = js.native
     
-    /* private */ var connectionPollInterval: js.Any = js.native
+    /* private */ var connectionPollInterval: Any = js.native
     
-    def destroyTmp(): js.Promise[js.Any] = js.native
+    def destroyTmp(): Unit = js.native
     
-    /* private */ var envVars: js.Any = js.native
+    /* private */ var envVars: Any = js.native
     
-    /* private */ var errFile: js.Any = js.native
+    /* private */ var errFile: Any = js.native
     
-    /* private */ def flags: js.Any = js.native
+    /* private */ def flags: Any = js.native
     
-    /* private */ var fs: js.Any = js.native
+    /* private */ var fs: Any = js.native
     
-    /* private */ var ignoreDefaultFlags: js.Any = js.native
+    /* private */ var ignoreDefaultFlags: Any = js.native
     
-    /* private */ var isDebuggerReady: js.Any = js.native
+    /* private */ var isDebuggerReady: Any = js.native
     
-    def kill(): js.Promise[js.Object] = js.native
+    def kill(): Unit = js.native
     
-    def launch(): js.Promise[Unit | js.Object] = js.native
+    def launch(): js.Promise[Unit] = js.native
     
     def makeTmpDir(): String = js.native
     
-    /* private */ var maxConnectionRetries: js.Any = js.native
+    /* private */ var maxConnectionRetries: Any = js.native
     
-    /* private */ var opts: js.Any = js.native
+    /* private */ var opts: Any = js.native
     
-    /* private */ var outFile: js.Any = js.native
+    /* private */ var outFile: Any = js.native
     
     var pid: js.UndefOr[Double] = js.native
     
-    /* private */ var pidFile: js.Any = js.native
+    /* private */ var pidFile: Any = js.native
     
     var port: js.UndefOr[Double] = js.native
     
+    /* private */ var prefs: Any = js.native
+    
     def prepare(): Unit = js.native
     
-    /* private */ var requestedPort: js.Any = js.native
+    /* private */ var requestedPort: Any = js.native
     
-    /* private */ var rimraf: js.Any = js.native
+    /* private */ var setBrowserPrefs: Any = js.native
     
-    /* private */ var spawn: js.Any = js.native
+    /* private */ var spawn: Any = js.native
     
-    /* private */ var spawnProcess: js.Any = js.native
+    /* private */ var spawnProcess: Any = js.native
     
-    /* private */ var startingUrl: js.Any = js.native
+    /* private */ var startingUrl: Any = js.native
     
-    /* private */ var tmpDirandPidFileReady: js.Any = js.native
+    /* private */ var tmpDirandPidFileReady: Any = js.native
     
-    /* private */ var useDefaultProfile: js.Any = js.native
+    /* private */ var useDefaultProfile: Any = js.native
     
     var userDataDir: js.UndefOr[String] = js.native
     
-    def waitUntilReady(): js.Promise[js.Any] = js.native
+    def waitUntilReady(): js.Promise[Unit] = js.native
   }
   object Launcher {
     
@@ -131,14 +133,19 @@ object chromeLauncherMod {
     inline def getInstallations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[js.Array[String]]
   }
   
-  inline def killAll(): js.Promise[js.Array[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("killAll")().asInstanceOf[js.Promise[js.Array[Error]]]
+  /** Returns Chrome installation path that chrome-launcher will launch by default. */
+  inline def getChromePath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getChromePath")().asInstanceOf[String]
+  
+  inline def killAll(): js.Array[js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("killAll")().asInstanceOf[js.Array[js.Error]]
   
   inline def launch(): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[LaunchedChrome]]
   inline def launch(opts: Options): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LaunchedChrome]]
   
+  type JSONLike = StringDictionary[Any] | js.Array[Any] | String | Double | Boolean | Null
+  
   trait LaunchedChrome extends StObject {
     
-    def kill(): js.Promise[js.Object]
+    def kill(): js.Promise[Unit]
     
     var pid: Double
     
@@ -148,14 +155,14 @@ object chromeLauncherMod {
   }
   object LaunchedChrome {
     
-    inline def apply(kill: () => js.Promise[js.Object], pid: Double, port: Double, process: ChildProcess): LaunchedChrome = {
+    inline def apply(kill: () => js.Promise[Unit], pid: Double, port: Double, process: ChildProcess): LaunchedChrome = {
       val __obj = js.Dynamic.literal(kill = js.Any.fromFunction0(kill), pid = pid.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any])
       __obj.asInstanceOf[LaunchedChrome]
     }
     
     extension [Self <: LaunchedChrome](x: Self) {
       
-      inline def setKill(value: () => js.Promise[js.Object]): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
+      inline def setKill(value: () => js.Promise[Unit]): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
       
       inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
@@ -168,8 +175,6 @@ object chromeLauncherMod {
   trait ModuleOverrides extends StObject {
     
     var fs: js.UndefOr[Typeoffs] = js.undefined
-    
-    var rimraf: js.UndefOr[RimrafModule] = js.undefined
     
     var spawn: js.UndefOr[FnCall] = js.undefined
   }
@@ -185,10 +190,6 @@ object chromeLauncherMod {
       inline def setFs(value: Typeoffs): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
-      
-      inline def setRimraf(value: (/* path */ String, /* callback */ js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "rimraf", js.Any.fromFunction2(value))
-      
-      inline def setRimrafUndefined: Self = StObject.set(x, "rimraf", js.undefined)
       
       inline def setSpawn(value: FnCall): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
       
@@ -216,6 +217,8 @@ object chromeLauncherMod {
     
     var port: js.UndefOr[Double] = js.undefined
     
+    var prefs: js.UndefOr[Record[String, JSONLike]] = js.undefined
+    
     var startingUrl: js.UndefOr[String] = js.undefined
     
     var userDataDir: js.UndefOr[String | Boolean] = js.undefined
@@ -233,7 +236,7 @@ object chromeLauncherMod {
       
       inline def setChromeFlagsUndefined: Self = StObject.set(x, "chromeFlags", js.undefined)
       
-      inline def setChromeFlagsVarargs(value: String*): Self = StObject.set(x, "chromeFlags", js.Array(value :_*))
+      inline def setChromeFlagsVarargs(value: String*): Self = StObject.set(x, "chromeFlags", js.Array(value*))
       
       inline def setChromePath(value: String): Self = StObject.set(x, "chromePath", value.asInstanceOf[js.Any])
       
@@ -267,6 +270,10 @@ object chromeLauncherMod {
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
+      inline def setPrefs(value: Record[String, JSONLike]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+      
+      inline def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
+      
       inline def setStartingUrl(value: String): Self = StObject.set(x, "startingUrl", value.asInstanceOf[js.Any])
       
       inline def setStartingUrlUndefined: Self = StObject.set(x, "startingUrl", js.undefined)
@@ -276,6 +283,4 @@ object chromeLauncherMod {
       inline def setUserDataDirUndefined: Self = StObject.set(x, "userDataDir", js.undefined)
     }
   }
-  
-  type RimrafModule = js.Function2[/* path */ String, /* callback */ js.Function1[/* error */ Error, Unit], Unit]
 }

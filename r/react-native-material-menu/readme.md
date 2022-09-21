@@ -10,10 +10,10 @@ Material Menu for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-material-menu |
 | Keywords           | react-native, react, menu, material-menu, react-component, material, dropdown |
-| # releases         | 17 |
-| # dependents       | 7 |
-| # downloads        | 234178 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 35491.0 |
+| # stars            | 443.0 |
 
 ## Links
 - [Homepage](https://github.com/mxck/react-native-material-menu#readme)

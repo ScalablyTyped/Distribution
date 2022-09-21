@@ -1,6 +1,5 @@
 package typings.atlassianCrowdClient
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +8,16 @@ object sessionMod {
   
   @JSImport("atlassian-crowd-client/lib/models/session", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Session {
-    def this(token: String, createdAt: Date, expiresAt: Date) = this()
+    def this(token: String, createdAt: js.Date, expiresAt: js.Date) = this()
     
     /* CompleteClass */
-    override val createdAt: Date = js.native
+    override val createdAt: js.Date = js.native
     
     /* CompleteClass */
-    override val expiresAt: Date = js.native
+    override val expiresAt: js.Date = js.native
     
     /* CompleteClass */
     override def toCrowd(): SessionObj = js.native
@@ -35,9 +34,9 @@ object sessionMod {
   
   trait Session extends StObject {
     
-    val createdAt: Date
+    val createdAt: js.Date
     
-    val expiresAt: Date
+    val expiresAt: js.Date
     
     def toCrowd(): SessionObj
     
@@ -45,16 +44,16 @@ object sessionMod {
   }
   object Session {
     
-    inline def apply(createdAt: Date, expiresAt: Date, toCrowd: () => SessionObj, token: String): Session = {
+    inline def apply(createdAt: js.Date, expiresAt: js.Date, toCrowd: () => SessionObj, token: String): Session = {
       val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], expiresAt = expiresAt.asInstanceOf[js.Any], toCrowd = js.Any.fromFunction0(toCrowd), token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[Session]
     }
     
     extension [Self <: Session](x: Self) {
       
-      inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
       inline def setToCrowd(value: () => SessionObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
       

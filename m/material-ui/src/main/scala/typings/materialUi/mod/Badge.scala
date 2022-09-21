@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Badge")
 @js.native
-class Badge ()
-  extends Component[BadgeProps, js.Object, js.Any]
+open class Badge ()
+  extends Component[BadgeProps, js.Object, Any]

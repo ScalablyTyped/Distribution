@@ -10,10 +10,10 @@ High-level API to libsodium.
 | ------------------ | :-------------: |
 | Full name          | js-nacl |
 | Keywords           | encryption, high-level, crypto, networking, nacl |
-| # releases         | 4 |
-| # dependents       | 43 |
-| # downloads        | 30142 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2395.3333333333335 |
+| # stars            | 475.0 |
 
 ## Links
 - [Homepage](https://github.com/tonyg/js-nacl#readme)

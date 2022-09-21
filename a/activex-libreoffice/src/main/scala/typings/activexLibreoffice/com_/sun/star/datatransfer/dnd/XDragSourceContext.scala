@@ -61,7 +61,7 @@ object XDragSourceContext {
     CurrentCursor: Double,
     acquire: () => Unit,
     getCurrentCursor: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCursor: Double => Unit,
     setImage: Double => Unit,

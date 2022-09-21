@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "Popup")
 @js.native
-class Popup[T] protected ()
+open class Popup[T] protected ()
   extends StObject
      with IPopup[T] {
   def this(map: Map_) = this()

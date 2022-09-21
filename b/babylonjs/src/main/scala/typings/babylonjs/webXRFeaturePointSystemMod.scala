@@ -12,21 +12,21 @@ object webXRFeaturePointSystemMod {
   
   @JSImport("babylonjs/XR/features/WebXRFeaturePointSystem", "WebXRFeaturePointSystem")
   @js.native
-  class WebXRFeaturePointSystem protected () extends WebXRAbstractFeature {
+  open class WebXRFeaturePointSystem protected () extends WebXRAbstractFeature {
     /**
       * construct the feature point system
       * @param _xrSessionManager an instance of xr Session manager
       */
     def this(_xrSessionManager: WebXRSessionManager) = this()
     
-    /* private */ var _enabled: js.Any = js.native
+    /* private */ var _enabled: Any = js.native
     
-    /* private */ var _featurePointCloud: js.Any = js.native
+    /* private */ var _featurePointCloud: Any = js.native
     
     /**
       * Initializes the feature. If the feature point feature is not available for this environment do not mark the feature as enabled.
       */
-    /* private */ var _init: js.Any = js.native
+    /* private */ var _init: Any = js.native
     
     /**
       * The current feature point cloud maintained across frames.

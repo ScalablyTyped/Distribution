@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaConferenceParametersAddOnParameters extends StObject {
   
-  var parameters: js.UndefOr[StringDictionary[String]] = js.undefined
+  var parameters: js.UndefOr[StringDictionary[String] | Null] = js.undefined
 }
 object SchemaConferenceParametersAddOnParameters {
   
@@ -19,6 +19,8 @@ object SchemaConferenceParametersAddOnParameters {
   extension [Self <: SchemaConferenceParametersAddOnParameters](x: Self) {
     
     inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersNull: Self = StObject.set(x, "parameters", null)
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }

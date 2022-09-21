@@ -24,8 +24,8 @@ object authContextMod {
     
     @JSImport("csw-aas-js/dist/components/context/AuthContext", "AuthContextDefaultState.auth")
     @js.native
-    def auth: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
-    inline def auth_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auth")(x.asInstanceOf[js.Any])
+    def auth: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any = js.native
+    inline def auth_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auth")(x.asInstanceOf[js.Any])
     
     inline def login(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("login")().asInstanceOf[Unit]
     

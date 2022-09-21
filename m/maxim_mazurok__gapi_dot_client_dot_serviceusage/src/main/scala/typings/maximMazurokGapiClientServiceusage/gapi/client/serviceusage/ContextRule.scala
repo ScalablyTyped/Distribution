@@ -34,25 +34,25 @@ object ContextRule {
     
     inline def setAllowedRequestExtensionsUndefined: Self = StObject.set(x, "allowedRequestExtensions", js.undefined)
     
-    inline def setAllowedRequestExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedRequestExtensions", js.Array(value :_*))
+    inline def setAllowedRequestExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedRequestExtensions", js.Array(value*))
     
     inline def setAllowedResponseExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedResponseExtensions", value.asInstanceOf[js.Any])
     
     inline def setAllowedResponseExtensionsUndefined: Self = StObject.set(x, "allowedResponseExtensions", js.undefined)
     
-    inline def setAllowedResponseExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedResponseExtensions", js.Array(value :_*))
+    inline def setAllowedResponseExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedResponseExtensions", js.Array(value*))
     
     inline def setProvided(value: js.Array[String]): Self = StObject.set(x, "provided", value.asInstanceOf[js.Any])
     
     inline def setProvidedUndefined: Self = StObject.set(x, "provided", js.undefined)
     
-    inline def setProvidedVarargs(value: String*): Self = StObject.set(x, "provided", js.Array(value :_*))
+    inline def setProvidedVarargs(value: String*): Self = StObject.set(x, "provided", js.Array(value*))
     
     inline def setRequested(value: js.Array[String]): Self = StObject.set(x, "requested", value.asInstanceOf[js.Any])
     
     inline def setRequestedUndefined: Self = StObject.set(x, "requested", js.undefined)
     
-    inline def setRequestedVarargs(value: String*): Self = StObject.set(x, "requested", js.Array(value :_*))
+    inline def setRequestedVarargs(value: String*): Self = StObject.set(x, "requested", js.Array(value*))
     
     inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

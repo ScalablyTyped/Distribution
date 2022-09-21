@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Flex extends StObject {
   
-  var event: js.UndefOr[js.Any] = js.undefined
+  var event: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {Boolean} [flex=true]
@@ -40,7 +40,7 @@ trait Flex extends StObject {
     */
   var position: js.UndefOr[top | bottom] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var tpl: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {String} [value=0]
@@ -63,7 +63,7 @@ object Flex {
   
   extension [Self <: Flex](x: Self) {
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
@@ -87,7 +87,7 @@ object Flex {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     

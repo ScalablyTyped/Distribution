@@ -49,7 +49,7 @@ trait Queue extends StObject {
   var stackdriverLoggingConfig: js.UndefOr[StackdriverLoggingConfig] = js.undefined
   
   /**
-    * Output only. The state of the queue. `state` can only be changed by called PauseQueue, ResumeQueue, or uploading
+    * Output only. The state of the queue. `state` can only be changed by calling PauseQueue, ResumeQueue, or uploading
     * [queue.yaml/xml](https://cloud.google.com/appengine/docs/python/config/queueref). UpdateQueue cannot be used to change `state`.
     */
   var state: js.UndefOr[String] = js.undefined

@@ -10,8 +10,8 @@ trait Scenario extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
-  def ChangeScenario(ChangingCells: Range): js.Any = js.native
-  def ChangeScenario(ChangingCells: Range, Values: SafeArray[js.Any]): js.Any = js.native
+  def ChangeScenario(ChangingCells: Range): Any = js.native
+  def ChangeScenario(ChangingCells: Range, Values: SafeArray[Any]): Any = js.native
   
   def ChangingCells(Address: String): Range = js.native
   def ChangingCells(RowIndex: Double): Range = js.native
@@ -23,7 +23,7 @@ trait Scenario extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
   /* private */ @JSName("Excel.Scenario_typekey")
   var ExcelDotScenario_typekey: Scenario = js.native
@@ -36,10 +36,10 @@ trait Scenario extends StObject {
   
   var Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Show(): js.Any = js.native
+  def Show(): Any = js.native
   
-  def Values(): SafeArray[js.Any] = js.native
-  def Values(Index: Double): js.Any = js.native
+  def Values(): SafeArray[Any] = js.native
+  def Values(Index: Double): Any = js.native
 }

@@ -44,13 +44,13 @@ object cpuprofileMod {
       
       inline def setNodes(value: js.Array[CPUProfileChunkNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: CPUProfileChunkNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: CPUProfileChunkNode*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
       inline def setSamples(value: js.Array[Double]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
       
-      inline def setSamplesVarargs(value: Double*): Self = StObject.set(x, "samples", js.Array(value :_*))
+      inline def setSamplesVarargs(value: Double*): Self = StObject.set(x, "samples", js.Array(value*))
       
       inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
@@ -58,7 +58,7 @@ object cpuprofileMod {
       
       inline def setTimeDeltas(value: js.Array[Double]): Self = StObject.set(x, "timeDeltas", value.asInstanceOf[js.Any])
       
-      inline def setTimeDeltasVarargs(value: Double*): Self = StObject.set(x, "timeDeltas", js.Array(value :_*))
+      inline def setTimeDeltasVarargs(value: Double*): Self = StObject.set(x, "timeDeltas", js.Array(value*))
     }
   }
   
@@ -112,15 +112,15 @@ object cpuprofileMod {
       
       inline def setNodes(value: js.Array[CPUProfileChunkNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: CPUProfileChunkNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: CPUProfileChunkNode*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setSampleNumbers(value: js.Array[Double]): Self = StObject.set(x, "sampleNumbers", value.asInstanceOf[js.Any])
       
-      inline def setSampleNumbersVarargs(value: Double*): Self = StObject.set(x, "sampleNumbers", js.Array(value :_*))
+      inline def setSampleNumbersVarargs(value: Double*): Self = StObject.set(x, "sampleNumbers", js.Array(value*))
       
       inline def setTimeDeltas(value: js.Array[Double]): Self = StObject.set(x, "timeDeltas", value.asInstanceOf[js.Any])
       
-      inline def setTimeDeltasVarargs(value: Double*): Self = StObject.set(x, "timeDeltas", js.Array(value :_*))
+      inline def setTimeDeltasVarargs(value: Double*): Self = StObject.set(x, "timeDeltas", js.Array(value*))
     }
   }
 }

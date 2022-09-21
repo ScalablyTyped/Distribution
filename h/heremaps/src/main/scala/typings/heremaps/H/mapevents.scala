@@ -212,12 +212,12 @@ object mapevents {
   object ContextMenuEvent {
     
     inline def apply(
-      currentTarget: js.Any,
+      currentTarget: Any,
       defaultPrevented: Boolean,
       originalEvent: Event,
       preventDefault: () => Unit,
       stopPropagation: () => Unit,
-      target: js.Any,
+      target: Any,
       `type`: String,
       viewportX: js.Array[ContextItem],
       viewportY: Double
@@ -233,7 +233,7 @@ object mapevents {
       
       inline def setViewportX(value: js.Array[ContextItem]): Self = StObject.set(x, "viewportX", value.asInstanceOf[js.Any])
       
-      inline def setViewportXVarargs(value: ContextItem*): Self = StObject.set(x, "viewportX", js.Array(value :_*))
+      inline def setViewportXVarargs(value: ContextItem*): Self = StObject.set(x, "viewportX", js.Array(value*))
       
       inline def setViewportY(value: Double): Self = StObject.set(x, "viewportY", value.asInstanceOf[js.Any])
     }
@@ -270,13 +270,13 @@ object mapevents {
     inline def apply(
       changedPointers: js.Array[Pointer],
       currentPointer: Pointer,
-      currentTarget: js.Any,
+      currentTarget: Any,
       defaultPrevented: Boolean,
       originalEvent: Event,
       pointers: js.Array[Pointer],
       preventDefault: () => Unit,
       stopPropagation: () => Unit,
-      target: js.Any,
+      target: Any,
       targetPointers: js.Array[Pointer],
       `type`: String
     ): Event = {
@@ -289,7 +289,7 @@ object mapevents {
       
       inline def setChangedPointers(value: js.Array[Pointer]): Self = StObject.set(x, "changedPointers", value.asInstanceOf[js.Any])
       
-      inline def setChangedPointersVarargs(value: Pointer*): Self = StObject.set(x, "changedPointers", js.Array(value :_*))
+      inline def setChangedPointersVarargs(value: Pointer*): Self = StObject.set(x, "changedPointers", js.Array(value*))
       
       inline def setCurrentPointer(value: Pointer): Self = StObject.set(x, "currentPointer", value.asInstanceOf[js.Any])
       
@@ -297,11 +297,11 @@ object mapevents {
       
       inline def setPointers(value: js.Array[Pointer]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
       
-      inline def setPointersVarargs(value: Pointer*): Self = StObject.set(x, "pointers", js.Array(value :_*))
+      inline def setPointersVarargs(value: Pointer*): Self = StObject.set(x, "pointers", js.Array(value*))
       
       inline def setTargetPointers(value: js.Array[Pointer]): Self = StObject.set(x, "targetPointers", value.asInstanceOf[js.Any])
       
-      inline def setTargetPointersVarargs(value: Pointer*): Self = StObject.set(x, "targetPointers", js.Array(value :_*))
+      inline def setTargetPointersVarargs(value: Pointer*): Self = StObject.set(x, "targetPointers", js.Array(value*))
     }
   }
   
@@ -354,13 +354,13 @@ object mapevents {
   object WheelEvent {
     
     inline def apply(
-      currentTarget: js.Any,
+      currentTarget: Any,
       defaultPrevented: Boolean,
       delta: Double,
       originalEvent: Event,
       preventDefault: () => Unit,
       stopPropagation: () => Unit,
-      target: js.Any,
+      target: Any,
       `type`: String,
       viewportX: Double,
       viewportY: Double

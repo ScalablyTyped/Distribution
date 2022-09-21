@@ -12,7 +12,7 @@ object mod {
   object fullscreen {
     
     /**
-      * Prefixing interface name with "I" is not recommended: http://www.typescriptlang.org/Handbook#writing-dts-files
+      * Prefixing interface name with "I" is not recommended: https://www.typescriptlang.org/Handbook#writing-dts-files
       * However, we let it here to keep consistency with all the other Angular-related definitions
       */
     @js.native

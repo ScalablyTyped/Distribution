@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InflightRequestThrottleOptions extends StObject {
   
-  var err: js.Any
+  var err: Any
   
   var limit: Double
   
@@ -15,14 +15,14 @@ trait InflightRequestThrottleOptions extends StObject {
 }
 object InflightRequestThrottleOptions {
   
-  inline def apply(err: js.Any, limit: Double, server: Server): InflightRequestThrottleOptions = {
+  inline def apply(err: Any, limit: Double, server: Server): InflightRequestThrottleOptions = {
     val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
     __obj.asInstanceOf[InflightRequestThrottleOptions]
   }
   
   extension [Self <: InflightRequestThrottleOptions](x: Self) {
     
-    inline def setErr(value: js.Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+    inline def setErr(value: Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

@@ -70,6 +70,6 @@ object Media {
     
     inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
     
-    inline def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value*))
   }
 }

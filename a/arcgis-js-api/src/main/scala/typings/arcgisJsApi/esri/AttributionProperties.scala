@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +18,9 @@ trait AttributionProperties
   var iconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * Text used to split attribution by [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html).
+    * Text used to split attribution by [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)
+    *
+    * @default |
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html#itemDelimiter)
     */
@@ -27,7 +31,7 @@ trait AttributionProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * The view model for this widget.
@@ -53,7 +57,7 @@ object AttributionProperties {
     
     inline def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
     
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewModel(value: AttributionViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

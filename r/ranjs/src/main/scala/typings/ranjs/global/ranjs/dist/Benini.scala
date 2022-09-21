@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Benini")
 @js.native
-class Benini ()
+open class Benini ()
   extends typings.ranjs.mod.dist.Benini {
   def this(alpha: Double) = this()
   def this(alpha: Double, beta: Double) = this()

@@ -127,9 +127,9 @@ object linePlotMod {
     *
     * @constructor
     */
-  class Line[X] () extends XYPlot[X, Double] {
+  open class Line[X] () extends XYPlot[X, Double] {
     
-    /* private */ var _autorangeSmooth: js.Any = js.native
+    /* private */ var _autorangeSmooth: Any = js.native
     
     /**
       * Iterates over the line points collapsing points that fall on the same
@@ -142,15 +142,15 @@ object linePlotMod {
       * also drawn. This allows lines with no collapsed segments to render
       * correctly.
       */
-    /* private */ def _bucketByX(dataset: js.Any, indices: js.Any, xFn: js.Any, yFn: js.Any): js.Any = js.native
+    /* private */ var _bucketByX: Any = js.native
     
-    /* private */ var _collapseDenseVerticalLinesEnabled: js.Any = js.native
+    /* private */ var _collapseDenseVerticalLinesEnabled: Any = js.native
     
-    /* protected */ def _constructLineProjector(xProjector: Projector, yProjector: Projector): js.Function3[/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, String] = js.native
+    /* protected */ def _constructLineProjector(xProjector: Projector, yProjector: Projector): js.Function3[/* datum */ Any, /* index */ Double, /* dataset */ Dataset, String] = js.native
     
-    /* private */ var _croppedRenderingEnabled: js.Any = js.native
+    /* private */ var _croppedRenderingEnabled: Any = js.native
     
-    /* private */ var _curve: js.Any = js.native
+    /* private */ var _curve: Any = js.native
     
     /**
       * Return a d3.Line whose .x, .y, and .defined accessors are hooked up to the xProjector and yProjector
@@ -161,14 +161,14 @@ object linePlotMod {
       * @returns {Line<[number,number]>}
       * @private
       */
-    /* protected */ def _d3LineFactory(dataset: Dataset): Line_[js.Any] = js.native
-    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: Unit, yProjector: IAccessor[js.Any]): Line_[js.Any] = js.native
-    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[js.Any]): Line_[js.Any] = js.native
-    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[js.Any], yProjector: IAccessor[js.Any]): Line_[js.Any] = js.native
+    /* protected */ def _d3LineFactory(dataset: Dataset): Line_[Any] = js.native
+    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: Unit, yProjector: IAccessor[Any]): Line_[Any] = js.native
+    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[Any]): Line_[Any] = js.native
+    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[Any], yProjector: IAccessor[Any]): Line_[Any] = js.native
     
-    /* private */ var _downsamplingEnabled: js.Any = js.native
+    /* private */ var _downsamplingEnabled: Any = js.native
     
-    /* private */ def _filterCroppedRendering(dataset: js.Any, indices: js.Any): js.Any = js.native
+    /* private */ var _filterCroppedRendering: Any = js.native
     
     /**
       * Collapse line geometry
@@ -177,17 +177,17 @@ object linePlotMod {
       * we can save a lot of render time by just drawing one line from the min to
       * max y-coordinate of all those points.
       */
-    /* private */ def _filterDenseLines(dataset: js.Any, indices: js.Any): js.Any = js.native
+    /* private */ var _filterDenseLines: Any = js.native
     
-    /* private */ def _filterDownsampling(dataset: js.Any, indices: js.Any): js.Any = js.native
+    /* private */ var _filterDownsampling: Any = js.native
     
     /* protected */ def _getCurveFactory(): CurveFactory | CurveFactoryLineOnly = js.native
     
-    /* private */ def _getEdgeIntersectionPoints(): js.Any = js.native
+    /* private */ var _getEdgeIntersectionPoints: Any = js.native
     
-    /* protected */ def _getResetYFunction(): js.Function3[/* d */ js.Any, /* i */ Double, /* dataset */ Dataset, Double] = js.native
+    /* protected */ def _getResetYFunction(): js.Function3[/* d */ Any, /* i */ Double, /* dataset */ Dataset, Double] = js.native
     
-    /* private */ def _setScaleSnapping(): js.Any = js.native
+    /* private */ var _setScaleSnapping: Any = js.native
     
     /**
       * Gets whether or not the autoranging is done smoothly.

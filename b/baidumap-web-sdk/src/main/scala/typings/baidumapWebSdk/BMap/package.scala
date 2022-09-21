@@ -5,60 +5,60 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type APIVersion = scala.Double
+type APIVersion = Double
 
-type Animation = scala.Double
+type Animation = Double
 
-type ContextMenuIcon = java.lang.String
+type ContextMenuIcon = String
 
-type ControlAnchor = scala.Double
+type ControlAnchor = Double
 
-type DrivingPolicy = scala.Double
+type DrivingPolicy = Double
 
-type GeolocationControl = typings.baidumapWebSdk.BMap.Control
+type GeolocationControl = Control
 
-type HighlightModes = scala.Double
+type HighlightModes = Double
 
-type LengthUnit = java.lang.String
+type LengthUnit = String
 
-type LineType = scala.Double
+type LineType = Double
 
-type MapTypeControl = typings.baidumapWebSdk.BMap.Control
+type MapTypeControl = Control
 
-type MapTypeControlType = scala.Double
+type MapTypeControlType = Double
 
-type MercatorProjection = typings.baidumapWebSdk.BMap.Projection
+type MercatorProjection = Projection
 
-type NavigationControlType = scala.Double
+type NavigationControlType = Double
 
-type PanoramaControl = typings.baidumapWebSdk.BMap.Control
+type PanoramaControl = Control
 
-type PanoramaCoverageLayer = typings.baidumapWebSdk.BMap.TileLayer
+type PanoramaCoverageLayer = TileLayer
 
-type PanoramaPOIType = java.lang.String
+type PanoramaPOIType = String
 
-type PanoramaSceneType = java.lang.String
+type PanoramaSceneType = String
 
-type PerspectiveProjection = typings.baidumapWebSdk.BMap.Projection
+type PerspectiveProjection = Projection
 
-type PoiType = scala.Double
+type PoiType = Double
 
-type PointDensityType = scala.Double
+type PointDensityType = Double
 
-type RouteType = scala.Double
+type RouteType = Double
 
-type ServiceStatusCode = scala.Double
+type ServiceStatusCode = Double
 
-type ShapeType = scala.Double
+type ShapeType = Double
 
-type SizeType = scala.Double
+type SizeType = Double
 
-type StatusCode = scala.Double
+type StatusCode = Double
 
-type SymbolShapeType = scala.Double
+type SymbolShapeType = Double
 
-type TrafficLayer = typings.baidumapWebSdk.BMap.TileLayer
+type TrafficLayer = TileLayer
 
-type TransitPolicy = scala.Double
+type TransitPolicy = Double
 
-type ZoomType = scala.Double
+type ZoomType = Double

@@ -1,7 +1,7 @@
 
 # Scala.js typings for amqplib
 
-Typings are for version 0.5
+Typings are for version 0.8
 
 ## Library description:
 An AMQP 0-9-1 (e.g., RabbitMQ) library and client.
@@ -10,15 +10,15 @@ An AMQP 0-9-1 (e.g., RabbitMQ) library and client.
 | ------------------ | :-------------: |
 | Full name          | amqplib |
 | Keywords           | AMQP, AMQP 0-9-1, RabbitMQ |
-| # releases         | 4 |
-| # dependents       | 1624 |
-| # downloads        | 29499026 |
-| # stars            | 62 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 4193824.3333333335 |
+| # stars            | 3276.0 |
 
 ## Links
-- [Homepage](http://squaremo.github.io/amqp.node/)
-- [Bugs](https://github.com/squaremo/amqp.node/issues)
-- [Repository](https://github.com/squaremo/amqp.node)
+- [Homepage](http://amqp-node.github.io/amqplib/)
+- [Bugs](https://github.com/amqp-node/amqplib/issues)
+- [Repository](https://github.com/amqp-node/amqplib)
 - [Npm](https://www.npmjs.com/package/amqplib)
     
 

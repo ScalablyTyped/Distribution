@@ -95,7 +95,7 @@ object SankeyProps {
     
     inline def setLinks(value: js.Array[Source]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    inline def setLinksVarargs(value: Source*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Source*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setMargin(value: Margin | Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
@@ -111,7 +111,7 @@ object SankeyProps {
     
     inline def setNodes(value: js.Array[SankeyPoint]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: SankeyPoint*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: SankeyPoint*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setOnLinkClick(value: (SankeyPoint, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onLinkClick", js.Any.fromFunction2(value))
     

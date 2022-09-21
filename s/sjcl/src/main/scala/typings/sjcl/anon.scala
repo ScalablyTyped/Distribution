@@ -80,11 +80,11 @@ object anon {
       
       inline def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value*))
       
       inline def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
+      inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value*))
     }
   }
   
@@ -172,11 +172,11 @@ object anon {
       
       inline def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value*))
       
       inline def setTag(value: BitArray_): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      inline def setTagVarargs(value: Double*): Self = StObject.set(x, "tag", js.Array(value :_*))
+      inline def setTagVarargs(value: Double*): Self = StObject.set(x, "tag", js.Array(value*))
     }
   }
 }

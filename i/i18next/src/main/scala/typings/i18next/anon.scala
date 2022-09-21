@@ -2,17 +2,32 @@ package typings.i18next
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.i18next.i18nextBooleans.`false`
-import typings.i18next.i18nextStrings.altKey
-import typings.i18next.i18nextStrings.ctrlKey
-import typings.i18next.i18nextStrings.iframe
-import typings.i18next.i18nextStrings.metaKey
-import typings.i18next.i18nextStrings.shiftKey
-import typings.i18next.i18nextStrings.window
+import typings.i18next.i18nextBooleans.`true`
+import typings.i18next.mod.FallbackLng
+import typings.i18next.mod.FallbackLngObjList
+import typings.i18next.mod.FormatFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait `0` extends StObject {
+    
+    var returnDetails: `true`
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal(returnDetails = true)
+      __obj.asInstanceOf[`0`]
+    }
+    
+    extension [Self <: `0`](x: Self) {
+      
+      inline def setReturnDetails(value: `true`): Self = StObject.set(x, "returnDetails", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait AllowedHosts extends StObject {
     
@@ -64,7 +79,7 @@ object anon {
       
       inline def setAllowedHostsUndefined: Self = StObject.set(x, "allowedHosts", js.undefined)
       
-      inline def setAllowedHostsVarargs(value: String*): Self = StObject.set(x, "allowedHosts", js.Array(value :_*))
+      inline def setAllowedHostsVarargs(value: String*): Self = StObject.set(x, "allowedHosts", js.Array(value*))
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -86,155 +101,22 @@ object anon {
     }
   }
   
-  trait AutoOpen extends StObject {
-    
-    /**
-      * If set to false you will need to open the editor via API
-      * @default true
-      */
-    var autoOpen: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Styles to adapt layout in iframe mode to your website layout.
-      * This will add a style to `<body>`
-      * @default 'margin-right: 605px;'
-      */
-    var bodyStyle: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Enable by adding querystring locize=true; can be set to another value or turned off by setting to false
-      * @default 'locize'
-      */
-    var enableByQS: js.UndefOr[String | `false`] = js.undefined
-    
-    /**
-      * Enable on init without the need of adding querystring locize=true
-      * @default false
-      */
-    var enabled: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Styles to adapt layout in iframe mode to your website layout.
-      * This will add a style to the `<iframe>`
-      * @default 'z-index: 2000; position: fixed; top: 0; right: 0; bottom: 0; width: 600px; box-shadow: -3px 0 5px 0 rgba(0,0,0,0.5);'
-      */
-    var iframeContainerStyle: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Styles to adapt layout in iframe mode to your website layout.
-      * This will add a style to the parent of `<iframe>`
-      * @default 'height: 100%; width: 600px; border: none;'
-      */
-    var iframeStyle: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Use lng in editor, eg. if running with lng=cimode (i18next, locize)
-      * @default null
-      */
-    var lngOverride: js.UndefOr[String | Null] = js.undefined
-    
-    /**
-      * Use lng in editor taken from query string, eg. if running with lng=cimode (i18next, locize)
-      * @default 'useLng'
-      */
-    var lngOverrideQS: js.UndefOr[String] = js.undefined
-    
-    /**
-      * How the editor will open.
-      * Setting to window will open a new window/tab instead
-      * @default 'iframe'
-      */
-    var mode: js.UndefOr[iframe | window] = js.undefined
-    
-    /**
-      * Handle when locize saved the edited translations, eg. reload website
-      * @default noop
-      */
-    var onEditorSaved: js.UndefOr[js.Function2[/* lng */ Null, /* ns */ String | js.Array[String], Unit]] = js.undefined
-    
-    /**
-      * Turn on/off by pressing key combination. Combine this with `toggleKeyModifier`
-      * @default 24 (x)
-      */
-    var toggleKeyCode: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Turn on/off by pressing key combination. Combine this with `toggleKeyCode`
-      * @default 'ctrlKey'
-      */
-    var toggleKeyModifier: js.UndefOr[ctrlKey | metaKey | altKey | shiftKey] = js.undefined
-  }
-  object AutoOpen {
-    
-    inline def apply(): AutoOpen = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AutoOpen]
-    }
-    
-    extension [Self <: AutoOpen](x: Self) {
-      
-      inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
-      
-      inline def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
-      
-      inline def setBodyStyle(value: String): Self = StObject.set(x, "bodyStyle", value.asInstanceOf[js.Any])
-      
-      inline def setBodyStyleUndefined: Self = StObject.set(x, "bodyStyle", js.undefined)
-      
-      inline def setEnableByQS(value: String | `false`): Self = StObject.set(x, "enableByQS", value.asInstanceOf[js.Any])
-      
-      inline def setEnableByQSUndefined: Self = StObject.set(x, "enableByQS", js.undefined)
-      
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-      
-      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
-      
-      inline def setIframeContainerStyle(value: String): Self = StObject.set(x, "iframeContainerStyle", value.asInstanceOf[js.Any])
-      
-      inline def setIframeContainerStyleUndefined: Self = StObject.set(x, "iframeContainerStyle", js.undefined)
-      
-      inline def setIframeStyle(value: String): Self = StObject.set(x, "iframeStyle", value.asInstanceOf[js.Any])
-      
-      inline def setIframeStyleUndefined: Self = StObject.set(x, "iframeStyle", js.undefined)
-      
-      inline def setLngOverride(value: String): Self = StObject.set(x, "lngOverride", value.asInstanceOf[js.Any])
-      
-      inline def setLngOverrideNull: Self = StObject.set(x, "lngOverride", null)
-      
-      inline def setLngOverrideQS(value: String): Self = StObject.set(x, "lngOverrideQS", value.asInstanceOf[js.Any])
-      
-      inline def setLngOverrideQSUndefined: Self = StObject.set(x, "lngOverrideQS", js.undefined)
-      
-      inline def setLngOverrideUndefined: Self = StObject.set(x, "lngOverride", js.undefined)
-      
-      inline def setMode(value: iframe | window): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-      
-      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-      
-      inline def setOnEditorSaved(value: (/* lng */ Null, /* ns */ String | js.Array[String]) => Unit): Self = StObject.set(x, "onEditorSaved", js.Any.fromFunction2(value))
-      
-      inline def setOnEditorSavedUndefined: Self = StObject.set(x, "onEditorSaved", js.undefined)
-      
-      inline def setToggleKeyCode(value: Double): Self = StObject.set(x, "toggleKeyCode", value.asInstanceOf[js.Any])
-      
-      inline def setToggleKeyCodeUndefined: Self = StObject.set(x, "toggleKeyCode", js.undefined)
-      
-      inline def setToggleKeyModifier(value: ctrlKey | metaKey | altKey | shiftKey): Self = StObject.set(x, "toggleKeyModifier", value.asInstanceOf[js.Any])
-      
-      inline def setToggleKeyModifierUndefined: Self = StObject.set(x, "toggleKeyModifier", js.undefined)
-    }
-  }
-  
   /* Inlined i18next.i18next.InterpolationOptions & {[key: string] : any} */
   trait InterpolationOptionskeyst
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
+    
+    /**
+      * Always format interpolated values.
+      * @default false
+      */
+    var alwaysFormat: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Global variables to use in interpolation replacements
       * @default undefined
       */
-    var defaultVariables: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var defaultVariables: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * Escape function
@@ -252,9 +134,7 @@ object anon {
       * Format function see formatting for details
       * @default noop
       */
-    var format: js.UndefOr[
-        /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias i18next.i18next.FormatFunction */ js.Object
-      ] = js.undefined
+    var format: js.UndefOr[FormatFunction] = js.undefined
     
     /**
       * Used to separate format from interpolation value
@@ -312,7 +192,7 @@ object anon {
     
     /**
       * If true, it will skip to interpolate the variables
-      * @default false
+      * @default true
       */
     var skipOnVariables: js.UndefOr[Boolean] = js.undefined
     
@@ -355,7 +235,11 @@ object anon {
     
     extension [Self <: InterpolationOptionskeyst](x: Self) {
       
-      inline def setDefaultVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "defaultVariables", value.asInstanceOf[js.Any])
+      inline def setAlwaysFormat(value: Boolean): Self = StObject.set(x, "alwaysFormat", value.asInstanceOf[js.Any])
+      
+      inline def setAlwaysFormatUndefined: Self = StObject.set(x, "alwaysFormat", js.undefined)
+      
+      inline def setDefaultVariables(value: StringDictionary[Any]): Self = StObject.set(x, "defaultVariables", value.asInstanceOf[js.Any])
       
       inline def setDefaultVariablesUndefined: Self = StObject.set(x, "defaultVariables", js.undefined)
       
@@ -368,8 +252,8 @@ object anon {
       inline def setEscapeValueUndefined: Self = StObject.set(x, "escapeValue", js.undefined)
       
       inline def setFormat(
-        value: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias i18next.i18next.FormatFunction */ js.Object
-      ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        value: (/* value */ Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String], /* options */ js.UndefOr[InterpolationOptionskeyst]) => String
+      ): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
       
       inline def setFormatSeparator(value: String): Self = StObject.set(x, "formatSeparator", value.asInstanceOf[js.Any])
       
@@ -438,6 +322,8 @@ object anon {
   trait KeySeparator extends StObject {
     
     var keySeparator: js.UndefOr[String] = js.undefined
+    
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object KeySeparator {
     
@@ -451,27 +337,6 @@ object anon {
       inline def setKeySeparator(value: String): Self = StObject.set(x, "keySeparator", value.asInstanceOf[js.Any])
       
       inline def setKeySeparatorUndefined: Self = StObject.set(x, "keySeparator", js.undefined)
-    }
-  }
-  
-  trait Silent extends StObject {
-    
-    var keySeparator: js.UndefOr[String] = js.undefined
-    
-    var silent: js.UndefOr[Boolean] = js.undefined
-  }
-  object Silent {
-    
-    inline def apply(): Silent = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Silent]
-    }
-    
-    extension [Self <: Silent](x: Self) {
-      
-      inline def setKeySeparator(value: String): Self = StObject.set(x, "keySeparator", value.asInstanceOf[js.Any])
-      
-      inline def setKeySeparatorUndefined: Self = StObject.set(x, "keySeparator", js.undefined)
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
@@ -479,20 +344,91 @@ object anon {
     }
   }
   
-  trait Translation extends StObject {
+  /* Inlined std.Pick<i18next.i18next.InitOptions, 'fallbackLng'> */
+  trait PickInitOptionsfallbackLn extends StObject {
     
-    var translation: StringDictionary[String]
+    var fallbackLng: js.UndefOr[`false` | FallbackLng] = js.undefined
   }
-  object Translation {
+  object PickInitOptionsfallbackLn {
     
-    inline def apply(translation: StringDictionary[String]): Translation = {
-      val __obj = js.Dynamic.literal(translation = translation.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Translation]
+    inline def apply(): PickInitOptionsfallbackLn = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PickInitOptionsfallbackLn]
     }
     
-    extension [Self <: Translation](x: Self) {
+    extension [Self <: PickInitOptionsfallbackLn](x: Self) {
       
-      inline def setTranslation(value: StringDictionary[String]): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
+      inline def setFallbackLng(value: `false` | FallbackLng): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
+      
+      inline def setFallbackLngFunction1(value: /* code */ String => String | js.Array[String] | FallbackLngObjList): Self = StObject.set(x, "fallbackLng", js.Any.fromFunction1(value))
+      
+      inline def setFallbackLngUndefined: Self = StObject.set(x, "fallbackLng", js.undefined)
+      
+      inline def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value*))
+    }
+  }
+  
+  /* Inlined std.Pick<i18next.i18next.InitOptions, 'keySeparator' | 'ignoreJSONStructure'> */
+  trait PickInitOptionskeySeparat extends StObject {
+    
+    var ignoreJSONStructure: js.UndefOr[Boolean] = js.undefined
+    
+    var keySeparator: js.UndefOr[`false` | String] = js.undefined
+  }
+  object PickInitOptionskeySeparat {
+    
+    inline def apply(): PickInitOptionskeySeparat = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PickInitOptionskeySeparat]
+    }
+    
+    extension [Self <: PickInitOptionskeySeparat](x: Self) {
+      
+      inline def setIgnoreJSONStructure(value: Boolean): Self = StObject.set(x, "ignoreJSONStructure", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreJSONStructureUndefined: Self = StObject.set(x, "ignoreJSONStructure", js.undefined)
+      
+      inline def setKeySeparator(value: `false` | String): Self = StObject.set(x, "keySeparator", value.asInstanceOf[js.Any])
+      
+      inline def setKeySeparatorUndefined: Self = StObject.set(x, "keySeparator", js.undefined)
+    }
+  }
+  
+  trait ReturnDetails extends StObject {
+    
+    var returnDetails: `true`
+    
+    var returnObjects: `true`
+  }
+  object ReturnDetails {
+    
+    inline def apply(): ReturnDetails = {
+      val __obj = js.Dynamic.literal(returnDetails = true, returnObjects = true)
+      __obj.asInstanceOf[ReturnDetails]
+    }
+    
+    extension [Self <: ReturnDetails](x: Self) {
+      
+      inline def setReturnDetails(value: `true`): Self = StObject.set(x, "returnDetails", value.asInstanceOf[js.Any])
+      
+      inline def setReturnObjects(value: `true`): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ReturnObjects extends StObject {
+    
+    var returnObjects: `true`
+  }
+  object ReturnObjects {
+    
+    inline def apply(): ReturnObjects = {
+      val __obj = js.Dynamic.literal(returnObjects = true)
+      __obj.asInstanceOf[ReturnObjects]
+    }
+    
+    extension [Self <: ReturnObjects](x: Self) {
+      
+      inline def setReturnObjects(value: `true`): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
     }
   }
 }

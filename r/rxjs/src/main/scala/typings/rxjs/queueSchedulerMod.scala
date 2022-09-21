@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object queueSchedulerMod {
   
-  @JSImport("rxjs/internal/scheduler/QueueScheduler", "QueueScheduler")
+  @JSImport("rxjs/dist/types/internal/scheduler/QueueScheduler", "QueueScheduler")
   @js.native
-  class QueueScheduler protected () extends AsyncScheduler {
+  open class QueueScheduler protected () extends AsyncScheduler {
     def this(SchedulerAction: Instantiable2[
             /* scheduler */ Scheduler, 
             /* work */ js.ThisFunction1[
-              /* this */ typings.rxjs.typesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
-              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+              /* this */ typings.rxjs.internalTypesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
+              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
               Unit
             ], 
             Action[js.Object]
@@ -26,8 +26,8 @@ object queueSchedulerMod {
       SchedulerAction: Instantiable2[
             /* scheduler */ Scheduler, 
             /* work */ js.ThisFunction1[
-              /* this */ typings.rxjs.typesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
-              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+              /* this */ typings.rxjs.internalTypesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
+              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
               Unit
             ], 
             Action[js.Object]

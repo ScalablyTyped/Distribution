@@ -2,10 +2,6 @@ package typings.webpackEnv
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeModule
-import typings.node.NodeRequire
-import typings.std.Error
-import typings.std.RegExp
 import typings.webpackEnv.webpackEnvStrings.`accept-errored`
 import typings.webpackEnv.webpackEnvStrings.`lazy-once`
 import typings.webpackEnv.webpackEnvStrings.`lazy`
@@ -133,20 +129,38 @@ object WebpackModuleApi {
       * Accept code updates for the specified dependencies. The callback is called when dependencies were replaced.
       * @param dependencies
       * @param callback
+      * @param errorHandler
       */
     def accept(dependencies: js.Array[String]): Unit = js.native
     def accept(
       dependencies: js.Array[String],
       callback: js.Function1[/* updatedDependencies */ js.Array[ModuleId], Unit]
     ): Unit = js.native
+    def accept(
+      dependencies: js.Array[String],
+      callback: js.Function1[/* updatedDependencies */ js.Array[ModuleId], Unit],
+      errorHandler: js.Function1[/* err */ js.Error, Unit]
+    ): Unit = js.native
+    def accept(
+      dependencies: js.Array[String],
+      callback: Unit,
+      errorHandler: js.Function1[/* err */ js.Error, Unit]
+    ): Unit = js.native
     /**
       * Accept code updates for the specified dependencies. The callback is called when dependencies were replaced.
       * @param dependency
       * @param callback
+      * @param errorHandler
       */
     def accept(dependency: String): Unit = js.native
     def accept(dependency: String, callback: js.Function0[Unit]): Unit = js.native
-    def accept(errHandler: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def accept(
+      dependency: String,
+      callback: js.Function0[Unit],
+      errorHandler: js.Function1[/* err */ js.Error, Unit]
+    ): Unit = js.native
+    def accept(dependency: String, callback: Unit, errorHandler: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+    def accept(errHandler: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     var active: Boolean = js.native
     
@@ -157,7 +171,7 @@ object WebpackModuleApi {
       * The data will be available at module.hot.data on the new module.
       * @param callback
       */
-    def addDisposeHandler(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def addDisposeHandler(callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
     @JSName("addDisposeHandler")
     def addDisposeHandler_T[T](callback: js.Function1[/* data */ T, Unit]): Unit = js.native
     
@@ -167,21 +181,12 @@ object WebpackModuleApi {
     /**
       * If status() != "ready" it throws an error.
       * Continue the update process.
-      * @param callback
-      */
-    @JSName("apply")
-    def apply(callback: js.Function2[/* err */ Error, /* outdatedModules */ js.Array[ModuleId], Unit]): Unit = js.native
-    /**
-      * If status() != "ready" it throws an error.
-      * Continue the update process.
       * @param options
-      * @param callback
       */
     @JSName("apply")
-    def apply(
-      options: AcceptOptions,
-      callback: js.Function2[/* err */ Error, /* outdatedModules */ js.Array[ModuleId], Unit]
-    ): Unit = js.native
+    def apply(): js.Promise[js.Array[ModuleId]] = js.native
+    @JSName("apply")
+    def apply(options: AcceptOptions): js.Promise[js.Array[ModuleId]] = js.native
     
     /**
       * Throws an exceptions if status() is not idle.
@@ -191,22 +196,11 @@ object WebpackModuleApi {
       * apply() is automatically called with autoApply as options parameter.
       * If autoApply is not set the callback will be called with all modules that will be disposed on apply().
       * @param autoApply
-      * @param callback
       */
-    def check(
-      autoApply: Boolean,
-      callback: js.Function2[/* err */ Error, /* outdatedModules */ js.Array[ModuleId], Unit]
-    ): Unit = js.native
-    /**
-      * Throws an exceptions if status() is not idle.
-      * Check all currently loaded modules for updates and apply updates if found.
-      * If no update was found, the callback is called with null.
-      * The callback will be called with all modules that will be disposed on apply().
-      * @param callback
-      */
-    def check(callback: js.Function2[/* err */ Error, /* outdatedModules */ js.Array[ModuleId], Unit]): Unit = js.native
+    def check(): js.Promise[Null | js.Array[ModuleId]] = js.native
+    def check(autoApply: Boolean): js.Promise[Null | js.Array[ModuleId]] = js.native
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /**
       * Flag the current module as not update-able. If updated the update code would fail with code "decline".
@@ -228,14 +222,14 @@ object WebpackModuleApi {
       * The data will be available at module.hot.data on the new module.
       * @param callback
       */
-    def dispose(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def dispose(callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
     
     /**
       * Remove a handler.
       * This can useful to add a temporary dispose handler. You could i. e. replace code while in the middle of a multi-step async function.
       * @param callback
       */
-    def removeDisposeHandler(callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def removeDisposeHandler(callback: js.Function1[/* data */ Any, Unit]): Unit = js.native
     @JSName("removeDisposeHandler")
     def removeDisposeHandler_T[T](callback: js.Function1[/* data */ T, Unit]): Unit = js.native
     
@@ -268,7 +262,7 @@ object WebpackModuleApi {
     /**
       * For errors: the thrown error
       */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     /**
       * The module in question.
@@ -279,7 +273,7 @@ object WebpackModuleApi {
       * For self-accept-error-handler-errored: the error thrown by the module
       * before the error handler tried to handle it.
       */
-    var originalError: js.UndefOr[Error] = js.undefined
+    var originalError: js.UndefOr[js.Error] = js.undefined
     
     /**
       * For accepted: The location of accept handlers that will handle the update
@@ -315,19 +309,19 @@ object WebpackModuleApi {
       
       inline def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
       
-      inline def setChainVarargs(value: Double*): Self = StObject.set(x, "chain", js.Array(value :_*))
+      inline def setChainVarargs(value: Double*): Self = StObject.set(x, "chain", js.Array(value*))
       
       inline def setDependencyId(value: Double): Self = StObject.set(x, "dependencyId", value.asInstanceOf[js.Any])
       
       inline def setDependencyIdUndefined: Self = StObject.set(x, "dependencyId", js.undefined)
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setModuleId(value: Double): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
       
-      inline def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
+      inline def setOriginalError(value: js.Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
       
       inline def setOriginalErrorUndefined: Self = StObject.set(x, "originalError", js.undefined)
       
@@ -339,7 +333,7 @@ object WebpackModuleApi {
       
       inline def setOutdatedModulesUndefined: Self = StObject.set(x, "outdatedModules", js.undefined)
       
-      inline def setOutdatedModulesVarargs(value: Double*): Self = StObject.set(x, "outdatedModules", js.Array(value :_*))
+      inline def setOutdatedModulesVarargs(value: Double*): Self = StObject.set(x, "outdatedModules", js.Array(value*))
       
       inline def setParentId(value: Double): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
@@ -355,7 +349,7 @@ object WebpackModuleApi {
     
     var children: js.Array[NodeModule]
     
-    var exports: js.Any
+    var exports: Any
     
     var filename: String
     
@@ -369,7 +363,7 @@ object WebpackModuleApi {
   }
   object Module {
     
-    inline def apply(children: js.Array[NodeModule], exports: js.Any, filename: String, id: String, loaded: Boolean): Module = {
+    inline def apply(children: js.Array[NodeModule], exports: Any, filename: String, id: String, loaded: Boolean): Module = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any])
       __obj.asInstanceOf[Module]
     }
@@ -378,9 +372,9 @@ object WebpackModuleApi {
       
       inline def setChildren(value: js.Array[NodeModule]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: NodeModule*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: NodeModule*): Self = StObject.set(x, "children", js.Array(value*))
       
-      inline def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -407,7 +401,7 @@ object WebpackModuleApi {
     */
   trait NodeProcess extends StObject {
     
-    var env: js.UndefOr[js.Any] = js.undefined
+    var env: js.UndefOr[Any] = js.undefined
   }
   object NodeProcess {
     
@@ -418,20 +412,20 @@ object WebpackModuleApi {
     
     extension [Self <: NodeProcess](x: Self) {
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     }
   }
   
-  type Require1 = js.Function1[/* id */ String, js.Any]
+  type Require1 = js.Function1[/* id */ String, Any]
   
-  type Require2 = js.Function1[/* id */ String, js.Any]
+  type Require2 = js.Function1[/* id */ String, Any]
   
   @js.native
   trait RequireContext extends StObject {
     
-    def apply(id: String): js.Any = js.native
+    def apply(id: String): Any = js.native
     
     /** The module id of the context module. This may be useful for module.hot.accept. */
     var id: String = js.native
@@ -447,11 +441,11 @@ object WebpackModuleApi {
     /**
       * Returns the exports from a dependency. The call is sync. No request to the server is fired. The compiler ensures that the dependency is available.
       */
-    def apply(path: String): js.Any = js.native
+    def apply(path: String): Any = js.native
     /**
       * Behaves similar to require.ensure, but the callback is called with the exports of each dependency in the paths array. There is no option to provide a chunk name.
       */
-    def apply(paths: js.Array[String], callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def apply(paths: js.Array[String], callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     /**
       * Multiple requires to the same module result in only one module execution and only one export. Therefore a cache in the runtime exists. Removing values from this cache cause new module execution and a new export. This is only needed in rare cases (for compatibility!).
@@ -460,48 +454,12 @@ object WebpackModuleApi {
     
     def context(path: String): RequireContext = js.native
     def context(path: String, deep: Boolean): RequireContext = js.native
-    def context(path: String, deep: Boolean, filter: RegExp): RequireContext = js.native
-    def context(path: String, deep: Unit, filter: RegExp): RequireContext = js.native
-    @JSName("context")
-    def context_eager(path: String, deep: Boolean, filter: Unit, mode: eager): RequireContext = js.native
-    @JSName("context")
-    def context_eager(path: String, deep: Boolean, filter: RegExp, mode: eager): RequireContext = js.native
-    @JSName("context")
-    def context_eager(path: String, deep: Unit, filter: Unit, mode: eager): RequireContext = js.native
-    @JSName("context")
-    def context_eager(path: String, deep: Unit, filter: RegExp, mode: eager): RequireContext = js.native
-    @JSName("context")
-    def context_lazy(path: String, deep: Boolean, filter: Unit, mode: `lazy`): RequireContext = js.native
-    @JSName("context")
-    def context_lazy(path: String, deep: Boolean, filter: RegExp, mode: `lazy`): RequireContext = js.native
-    @JSName("context")
-    def context_lazy(path: String, deep: Unit, filter: Unit, mode: `lazy`): RequireContext = js.native
-    @JSName("context")
-    def context_lazy(path: String, deep: Unit, filter: RegExp, mode: `lazy`): RequireContext = js.native
-    @JSName("context")
-    def context_lazyonce(path: String, deep: Boolean, filter: Unit, mode: `lazy-once`): RequireContext = js.native
-    @JSName("context")
-    def context_lazyonce(path: String, deep: Boolean, filter: RegExp, mode: `lazy-once`): RequireContext = js.native
-    @JSName("context")
-    def context_lazyonce(path: String, deep: Unit, filter: Unit, mode: `lazy-once`): RequireContext = js.native
-    @JSName("context")
-    def context_lazyonce(path: String, deep: Unit, filter: RegExp, mode: `lazy-once`): RequireContext = js.native
-    @JSName("context")
-    def context_sync(path: String, deep: Boolean, filter: Unit, mode: sync): RequireContext = js.native
-    @JSName("context")
-    def context_sync(path: String, deep: Boolean, filter: RegExp, mode: sync): RequireContext = js.native
-    @JSName("context")
-    def context_sync(path: String, deep: Unit, filter: Unit, mode: sync): RequireContext = js.native
-    @JSName("context")
-    def context_sync(path: String, deep: Unit, filter: RegExp, mode: sync): RequireContext = js.native
-    @JSName("context")
-    def context_weak(path: String, deep: Boolean, filter: Unit, mode: weak): RequireContext = js.native
-    @JSName("context")
-    def context_weak(path: String, deep: Boolean, filter: RegExp, mode: weak): RequireContext = js.native
-    @JSName("context")
-    def context_weak(path: String, deep: Unit, filter: Unit, mode: weak): RequireContext = js.native
-    @JSName("context")
-    def context_weak(path: String, deep: Unit, filter: RegExp, mode: weak): RequireContext = js.native
+    def context(path: String, deep: Boolean, filter: js.RegExp): RequireContext = js.native
+    def context(path: String, deep: Boolean, filter: js.RegExp, mode: sync | eager | weak | `lazy` | `lazy-once`): RequireContext = js.native
+    def context(path: String, deep: Boolean, filter: Unit, mode: sync | eager | weak | `lazy` | `lazy-once`): RequireContext = js.native
+    def context(path: String, deep: Unit, filter: js.RegExp): RequireContext = js.native
+    def context(path: String, deep: Unit, filter: js.RegExp, mode: sync | eager | weak | `lazy` | `lazy-once`): RequireContext = js.native
+    def context(path: String, deep: Unit, filter: Unit, mode: sync | eager | weak | `lazy` | `lazy-once`): RequireContext = js.native
     
     /**
       * Download additional dependencies on demand. The paths array lists modules that should be available. When they are, callback is called. If the callback is a function expression, dependencies in that source part are extracted and also loaded on demand. A single request is fired to the server, except if all modules are already available.
@@ -517,12 +475,12 @@ object WebpackModuleApi {
     def ensure(
       paths: js.Array[String],
       callback: js.Function1[/* require */ NodeRequire, Unit],
-      errorCallback: js.Function1[/* error */ js.Any, Unit]
+      errorCallback: js.Function1[/* error */ Any, Unit]
     ): Unit = js.native
     def ensure(
       paths: js.Array[String],
       callback: js.Function1[/* require */ NodeRequire, Unit],
-      errorCallback: js.Function1[/* error */ js.Any, Unit],
+      errorCallback: js.Function1[/* error */ Any, Unit],
       chunkName: String
     ): Unit = js.native
     def ensure(

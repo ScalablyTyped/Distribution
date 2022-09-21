@@ -25,7 +25,7 @@ object ArtifactResult {
     
     inline def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
     
-    inline def setFileHashVarargs(value: FileHashes*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
+    inline def setFileHashVarargs(value: FileHashes*): Self = StObject.set(x, "fileHash", js.Array(value*))
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

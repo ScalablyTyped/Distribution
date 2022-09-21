@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Hash extends StObject {
   
-  def hmac(hash: BlockHash[js.Any], key: js.Any): Hmac
+  def hmac(hash: BlockHash[Any], key: Any): Hmac
   @JSName("hmac")
   var hmac_Original: HmacConstructor
   @JSName("hmac")
-  def hmac_hex(hash: BlockHash[js.Any], key: js.Any, enc: hex): Hmac
+  def hmac_hex(hash: BlockHash[Any], key: Any, enc: hex): Hmac
   
   var ripemd: RipemdSet
   
@@ -46,7 +46,7 @@ trait Hash extends StObject {
 object Hash {
   
   inline def apply(
-    hmac: (/* hash */ BlockHash[js.Any], /* key */ js.Any, /* enc */ js.UndefOr[hex]) => Hmac,
+    hmac: (/* hash */ BlockHash[Any], /* key */ Any, /* enc */ js.UndefOr[hex]) => Hmac,
     ripemd: RipemdSet,
     ripemd160: () => Ripemd160,
     sha: ShaSet,
@@ -63,7 +63,7 @@ object Hash {
   
   extension [Self <: Hash](x: Self) {
     
-    inline def setHmac(value: (/* hash */ BlockHash[js.Any], /* key */ js.Any, /* enc */ js.UndefOr[hex]) => Hmac): Self = StObject.set(x, "hmac", js.Any.fromFunction3(value))
+    inline def setHmac(value: (/* hash */ BlockHash[Any], /* key */ Any, /* enc */ js.UndefOr[hex]) => Hmac): Self = StObject.set(x, "hmac", js.Any.fromFunction3(value))
     
     inline def setRipemd(value: RipemdSet): Self = StObject.set(x, "ripemd", value.asInstanceOf[js.Any])
     

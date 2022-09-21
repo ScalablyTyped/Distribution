@@ -19,7 +19,7 @@ trait Window extends StObject {
     * @param callback A function to execute after the DOM is ready.
     */
   @JSName("$")
-  def $(callback: js.Function0[js.Any]): Unit
+  def $(callback: js.Function0[Any]): Unit
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
@@ -75,7 +75,7 @@ trait Window extends StObject {
     *
     * @param callback A function to execute after the DOM is ready.
     */
-  def chocolatechipjs(callback: js.Function0[js.Any]): Unit
+  def chocolatechipjs(callback: js.Function0[Any]): Unit
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
@@ -112,11 +112,11 @@ trait Window extends StObject {
   @JSName("chocolatechipjs")
   var chocolatechipjs_Original: ChocolateChipStatic
   
-  var jsonp: js.Any
+  var jsonp: Any
 }
 object Window {
   
-  inline def apply($: ChocolateChipStatic, chocolatechipjs: ChocolateChipStatic, jsonp: js.Any): Window = {
+  inline def apply($: ChocolateChipStatic, chocolatechipjs: ChocolateChipStatic, jsonp: Any): Window = {
     val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], chocolatechipjs = chocolatechipjs.asInstanceOf[js.Any], jsonp = jsonp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
@@ -127,6 +127,6 @@ object Window {
     
     inline def setChocolatechipjs(value: ChocolateChipStatic): Self = StObject.set(x, "chocolatechipjs", value.asInstanceOf[js.Any])
     
-    inline def setJsonp(value: js.Any): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+    inline def setJsonp(value: Any): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
   }
 }

@@ -57,7 +57,7 @@ object DefaultLanguageValue {
     
     inline def setLanguageIdsUndefined: Self = StObject.set(x, "languageIds", js.undefined)
     
-    inline def setLanguageIdsVarargs(value: String*): Self = StObject.set(x, "languageIds", js.Array(value :_*))
+    inline def setLanguageIdsVarargs(value: String*): Self = StObject.set(x, "languageIds", js.Array(value*))
     
     inline def setWorkspaceFolderLanguageValue(value: T): Self = StObject.set(x, "workspaceFolderLanguageValue", value.asInstanceOf[js.Any])
     

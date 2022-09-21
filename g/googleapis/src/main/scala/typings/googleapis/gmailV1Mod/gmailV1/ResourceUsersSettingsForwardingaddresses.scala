@@ -4,35 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings$Forwardingaddresses")
 @js.native
-class ResourceUsersSettingsForwardingaddresses protected () extends StObject {
+open class ResourceUsersSettingsForwardingaddresses protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * gmail.users.settings.forwardingAddresses.create
-    * @desc Creates a forwarding address. If ownership verification is
-    * required, a message will be sent to the recipient and the resource's
-    * verification status will be set to pending; otherwise, the resource will
-    * be created with verification status set to accepted.  This method is only
-    * available to service account clients that have been delegated domain-wide
-    * authority.
-    * @alias gmail.users.settings.forwardingAddresses.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
-    * @param {().ForwardingAddress} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaForwardingAddress] = js.native
   def create(callback: BodyResponseCallback[SchemaForwardingAddress]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaForwardingAddress] = js.native
@@ -43,8 +27,8 @@ class ResourceUsersSettingsForwardingaddresses protected () extends StObject {
   ): Unit = js.native
   def create(
     params: ParamsResourceUsersSettingsForwardingaddressesCreate,
-    options: BodyResponseCallback[SchemaForwardingAddress],
-    callback: BodyResponseCallback[SchemaForwardingAddress]
+    options: BodyResponseCallback[Readable | SchemaForwardingAddress],
+    callback: BodyResponseCallback[Readable | SchemaForwardingAddress]
   ): Unit = js.native
   def create(params: ParamsResourceUsersSettingsForwardingaddressesCreate, options: MethodOptions): GaxiosPromise[SchemaForwardingAddress] = js.native
   def create(
@@ -52,23 +36,73 @@ class ResourceUsersSettingsForwardingaddresses protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaForwardingAddress]
   ): Unit = js.native
-  
   /**
-    * gmail.users.settings.forwardingAddresses.delete
-    * @desc Deletes the specified forwarding address and revokes any
-    * verification that may have been required.  This method is only available
-    * to service account clients that have been delegated domain-wide
-    * authority.
-    * @alias gmail.users.settings.forwardingAddresses.delete
-    * @memberOf! ()
+    * Creates a forwarding address. If ownership verification is required, a message will be sent to the recipient and the resource's verification status will be set to `pending`; otherwise, the resource will be created with verification status set to `accepted`. This method is only available to service account clients that have been delegated domain-wide authority.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/gmail.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.forwardingEmail The forwarding address to be deleted.
-    * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const gmail = google.gmail('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/gmail.settings.sharing'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await gmail.users.settings.forwardingAddresses.create({
+    *     // User's email address. The special value "me" can be used to indicate the authenticated user.
+    *     userId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "forwardingEmail": "my_forwardingEmail",
+    *       //   "verificationStatus": "my_verificationStatus"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "forwardingEmail": "my_forwardingEmail",
+    *   //   "verificationStatus": "my_verificationStatus"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceUsersSettingsForwardingaddressesCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceUsersSettingsForwardingaddressesCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -76,8 +110,8 @@ class ResourceUsersSettingsForwardingaddresses protected () extends StObject {
   def delete(params: ParamsResourceUsersSettingsForwardingaddressesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceUsersSettingsForwardingaddressesDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceUsersSettingsForwardingaddressesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(
@@ -85,20 +119,60 @@ class ResourceUsersSettingsForwardingaddresses protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
-  
   /**
-    * gmail.users.settings.forwardingAddresses.get
-    * @desc Gets the specified forwarding address.
-    * @alias gmail.users.settings.forwardingAddresses.get
-    * @memberOf! ()
+    * Deletes the specified forwarding address and revokes any verification that may have been required. This method is only available to service account clients that have been delegated domain-wide authority.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/gmail.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.forwardingEmail The forwarding address to be retrieved.
-    * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const gmail = google.gmail('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/gmail.settings.sharing'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await gmail.users.settings.forwardingAddresses.delete({
+    *     // The forwarding address to be deleted.
+    *     forwardingEmail: 'placeholder-value',
+    *     // User's email address. The special value "me" can be used to indicate the authenticated user.
+    *     userId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceUsersSettingsForwardingaddressesDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceUsersSettingsForwardingaddressesDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaForwardingAddress] = js.native
   def get(callback: BodyResponseCallback[SchemaForwardingAddress]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaForwardingAddress] = js.native
@@ -109,8 +183,8 @@ class ResourceUsersSettingsForwardingaddresses protected () extends StObject {
   ): Unit = js.native
   def get(
     params: ParamsResourceUsersSettingsForwardingaddressesGet,
-    options: BodyResponseCallback[SchemaForwardingAddress],
-    callback: BodyResponseCallback[SchemaForwardingAddress]
+    options: BodyResponseCallback[Readable | SchemaForwardingAddress],
+    callback: BodyResponseCallback[Readable | SchemaForwardingAddress]
   ): Unit = js.native
   def get(params: ParamsResourceUsersSettingsForwardingaddressesGet, options: MethodOptions): GaxiosPromise[SchemaForwardingAddress] = js.native
   def get(
@@ -118,19 +192,71 @@ class ResourceUsersSettingsForwardingaddresses protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaForwardingAddress]
   ): Unit = js.native
-  
   /**
-    * gmail.users.settings.forwardingAddresses.list
-    * @desc Lists the forwarding addresses for the specified account.
-    * @alias gmail.users.settings.forwardingAddresses.list
-    * @memberOf! ()
+    * Gets the specified forwarding address.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/gmail.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.userId User's email address. The special value "me" can be used to indicate the authenticated user.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const gmail = google.gmail('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://mail.google.com/',
+    *       'https://www.googleapis.com/auth/gmail.modify',
+    *       'https://www.googleapis.com/auth/gmail.readonly',
+    *       'https://www.googleapis.com/auth/gmail.settings.basic',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await gmail.users.settings.forwardingAddresses.get({
+    *     // The forwarding address to be retrieved.
+    *     forwardingEmail: 'placeholder-value',
+    *     // User's email address. The special value "me" can be used to indicate the authenticated user.
+    *     userId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "forwardingEmail": "my_forwardingEmail",
+    *   //   "verificationStatus": "my_verificationStatus"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceUsersSettingsForwardingaddressesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceUsersSettingsForwardingaddressesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListForwardingAddressesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListForwardingAddressesResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListForwardingAddressesResponse] = js.native
@@ -141,13 +267,74 @@ class ResourceUsersSettingsForwardingaddresses protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceUsersSettingsForwardingaddressesList,
-    options: BodyResponseCallback[SchemaListForwardingAddressesResponse],
-    callback: BodyResponseCallback[SchemaListForwardingAddressesResponse]
+    options: BodyResponseCallback[Readable | SchemaListForwardingAddressesResponse],
+    callback: BodyResponseCallback[Readable | SchemaListForwardingAddressesResponse]
   ): Unit = js.native
   def list(params: ParamsResourceUsersSettingsForwardingaddressesList, options: MethodOptions): GaxiosPromise[SchemaListForwardingAddressesResponse] = js.native
   def list(
     params: ParamsResourceUsersSettingsForwardingaddressesList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListForwardingAddressesResponse]
+  ): Unit = js.native
+  /**
+    * Lists the forwarding addresses for the specified account.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/gmail.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const gmail = google.gmail('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://mail.google.com/',
+    *       'https://www.googleapis.com/auth/gmail.modify',
+    *       'https://www.googleapis.com/auth/gmail.readonly',
+    *       'https://www.googleapis.com/auth/gmail.settings.basic',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await gmail.users.settings.forwardingAddresses.list({
+    *     // User's email address. The special value "me" can be used to indicate the authenticated user.
+    *     userId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "forwardingAddresses": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceUsersSettingsForwardingaddressesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceUsersSettingsForwardingaddressesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

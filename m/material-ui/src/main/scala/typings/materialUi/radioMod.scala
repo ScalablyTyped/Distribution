@@ -10,10 +10,10 @@ object radioMod {
   
   @JSImport("material-ui/svg-icons/av/radio", JSImport.Default)
   @js.native
-  class default () extends AvRadio
+  open class default () extends AvRadio
   
   @JSImport("material-ui/svg-icons/av/radio", "AvRadio")
   @js.native
-  class AvRadio ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvRadio ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

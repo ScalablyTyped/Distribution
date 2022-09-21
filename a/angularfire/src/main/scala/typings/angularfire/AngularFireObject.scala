@@ -32,7 +32,7 @@ trait AngularFireObject
     * @returns a promise which resolves to an unbind method after data is set in scope
     */
   @JSName("$bindTo")
-  def $bindTo(scope: IScope, varName: String): IPromise[js.Any] = js.native
+  def $bindTo(scope: IScope, varName: String): IPromise[Any] = js.native
   
   /**
     * Informs $firebase to stop sending events and clears memory being used
@@ -60,16 +60,16 @@ trait AngularFireObject
   @JSName("$loaded")
   def $loaded(
     resolve: js.Function1[/* x */ this.type, IHttpPromise[js.Object] | IPromise[js.Object] | Unit],
-    reject: js.Function1[/* err */ js.Any, js.Any]
+    reject: js.Function1[/* err */ Any, Any]
   ): IPromise[AngularFireObject] = js.native
   @JSName("$loaded")
-  def $loaded(resolve: Unit, reject: js.Function1[/* err */ js.Any, js.Any]): IPromise[AngularFireObject] = js.native
+  def $loaded(resolve: Unit, reject: js.Function1[/* err */ Any, Any]): IPromise[AngularFireObject] = js.native
   
   /**
     * @returns {Firebase} the original Firebase instance used to create this object.
     */
   @JSName("$ref")
-  def $ref(): js.Any = js.native
+  def $ref(): Any = js.native
   
   /**
     * Removes all keys from the FirebaseObject and also removes
@@ -79,7 +79,7 @@ trait AngularFireObject
     */
   @JSName("$remove")
   def $remove(): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ Any
   ] = js.native
   
   /**
@@ -88,7 +88,7 @@ trait AngularFireObject
     */
   @JSName("$save")
   def $save(): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ Any
   ] = js.native
   
   /**
@@ -105,5 +105,5 @@ trait AngularFireObject
   @JSName("$watch")
   def $watch(callback: js.Function): js.Function = js.native
   @JSName("$watch")
-  def $watch(callback: js.Function, context: js.Any): js.Function = js.native
+  def $watch(callback: js.Function, context: Any): js.Function = js.native
 }

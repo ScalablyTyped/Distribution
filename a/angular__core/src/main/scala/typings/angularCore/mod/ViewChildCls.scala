@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("@angular/core", "ViewChild")
 @js.native
-class ViewChildCls protected () extends Query {
+open class ViewChildCls protected () extends Query {
   def this(selector: String) = this()
   def this(selector: js.Function) = this()
-  def this(selector: InjectionToken[js.Any]) = this()
-  def this(selector: Type[js.Any]) = this()
+  def this(selector: ProviderToken[Any]) = this()
   def this(selector: String, opts: Read) = this()
   def this(selector: js.Function, opts: Read) = this()
-  def this(selector: InjectionToken[js.Any], opts: Read) = this()
-  def this(selector: Type[js.Any], opts: Read) = this()
+  def this(selector: ProviderToken[Any], opts: Read) = this()
 }

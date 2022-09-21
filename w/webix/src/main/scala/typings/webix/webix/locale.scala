@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait locale extends StObject {
   
-  var pager: js.Any
+  var pager: Any
 }
 object locale {
   
-  inline def apply(pager: js.Any): locale = {
+  inline def apply(pager: Any): locale = {
     val __obj = js.Dynamic.literal(pager = pager.asInstanceOf[js.Any])
     __obj.asInstanceOf[locale]
   }
   
   extension [Self <: locale](x: Self) {
     
-    inline def setPager(value: js.Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    inline def setPager(value: Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
   }
 }

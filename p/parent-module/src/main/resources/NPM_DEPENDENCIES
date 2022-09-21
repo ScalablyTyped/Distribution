@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "parent-module" : "2.0.0"
+      "parent-module" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "parent-module" : "2.0.0"
+      "parent-module" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -48,7 +48,7 @@ object webTwainAcquireMod {
       
       inline def setCapabilities(value: js.Array[CapabilitySetup]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      inline def setCapabilitiesVarargs(value: CapabilitySetup*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+      inline def setCapabilitiesVarargs(value: CapabilitySetup*): Self = StObject.set(x, "capabilities", js.Array(value*))
       
       inline def setExceptition(value: String): Self = StObject.set(x, "exceptition", value.asInstanceOf[js.Any])
     }
@@ -139,13 +139,13 @@ object webTwainAcquireMod {
       
       inline def setQuery(value: js.Array[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
+      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value*))
       
       inline def setValueType(value: ValueAndLabel): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
       
       inline def setValues(value: js.Array[ValueAndLabel]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: ValueAndLabel*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: ValueAndLabel*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -411,7 +411,7 @@ object webTwainAcquireMod {
     /**
       * Information about the driver if it's DriverType is "ICA"
       */
-    var DeviceInfo: js.UndefOr[js.Any] = js.undefined
+    var DeviceInfo: js.UndefOr[Any] = js.undefined
     
     /**
       * The driver type which can be "TWAIN" | "ICA" | "SANE"
@@ -469,7 +469,7 @@ object webTwainAcquireMod {
     
     extension [Self <: SourceDetails](x: Self) {
       
-      inline def setDeviceInfo(value: js.Any): Self = StObject.set(x, "DeviceInfo", value.asInstanceOf[js.Any])
+      inline def setDeviceInfo(value: Any): Self = StObject.set(x, "DeviceInfo", value.asInstanceOf[js.Any])
       
       inline def setDeviceInfoUndefined: Self = StObject.set(x, "DeviceInfo", js.undefined)
       

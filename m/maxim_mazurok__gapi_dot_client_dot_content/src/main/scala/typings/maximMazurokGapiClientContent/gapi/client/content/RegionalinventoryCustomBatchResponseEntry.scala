@@ -9,10 +9,10 @@ trait RegionalinventoryCustomBatchResponseEntry extends StObject {
   /** The ID of the request entry this entry responds to. */
   var batchId: js.UndefOr[Double] = js.undefined
   
-  /** A list of errors defined if and only if the request failed. */
+  /** A list of errors for failed custombatch entries. *Note:* Schema errors fail the whole request. */
   var errors: js.UndefOr[Errors] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#regionalinventoryCustomBatchResponseEntry". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#regionalinventoryCustomBatchResponseEntry`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Price and availability of the product. */

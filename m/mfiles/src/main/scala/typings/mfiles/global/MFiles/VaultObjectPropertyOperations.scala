@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.VaultObjectPropertyOperations")
 @js.native
-class VaultObjectPropertyOperations ()
+open class VaultObjectPropertyOperations ()
   extends StObject
      with IVaultObjectPropertyOperations {
   
@@ -105,7 +105,7 @@ class VaultObjectPropertyOperations ()
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any
+    ElectronicSignature: Any
   ): IObjectVersionAndProperties = js.native
   
   /* CompleteClass */
@@ -146,7 +146,7 @@ class VaultObjectPropertyOperations ()
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any
+    ElectronicSignature: Any
   ): IObjectVersionAndProperties = js.native
   
   /* CompleteClass */
@@ -159,7 +159,7 @@ class VaultObjectPropertyOperations ()
   override def SetWorkflowState(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState): IObjectVersionAndProperties = js.native
   
   /* CompleteClass */
-  override def SetWorkflowStateEx(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState, ElectronicSignature: js.Any): IObjectVersionAndProperties = js.native
+  override def SetWorkflowStateEx(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState, ElectronicSignature: Any): IObjectVersionAndProperties = js.native
   
   /* CompleteClass */
   override def SetWorkflowStateTransition(ObjVer: IObjVer, Workflow: Double, lStateTransition: Double, lVersionComment: String): IObjectVersionAndProperties = js.native
@@ -170,6 +170,6 @@ class VaultObjectPropertyOperations ()
     Workflow: Double,
     StateTransition: Double,
     VersionComment: String,
-    ElectronicSignature: js.Any
+    ElectronicSignature: Any
   ): IObjectVersionAndProperties = js.native
 }

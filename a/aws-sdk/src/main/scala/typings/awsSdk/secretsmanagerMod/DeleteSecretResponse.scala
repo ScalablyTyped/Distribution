@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteSecretResponse extends StObject {
   
   /**
-    * The ARN of the secret that is now scheduled for deletion.
+    * The ARN of the secret.
     */
   var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
-    * The date and time after which this secret can be deleted by Secrets Manager and can no longer be restored. This value is the date and time of the delete request plus the number of days specified in RecoveryWindowInDays.
+    * The date and time after which this secret Secrets Manager can permanently delete this secret, and it can no longer be restored. This value is the date and time of the delete request plus the number of days in RecoveryWindowInDays.
     */
-  var DeletionDate: js.UndefOr[DeletionDateType] = js.undefined
+  var DeletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The friendly name of the secret that is now scheduled for deletion.
+    * The name of the secret.
     */
   var Name: js.UndefOr[SecretNameType] = js.undefined
 }
@@ -34,7 +34,7 @@ object DeleteSecretResponse {
     
     inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    inline def setDeletionDate(value: DeletionDateType): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
+    inline def setDeletionDate(value: js.Date): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
     
     inline def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
     

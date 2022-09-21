@@ -30,7 +30,7 @@ trait Matrix
   
   def round(digits: Double): Matrix = js.native
   
-  def toArray(digits: Double): js.Any = js.native
+  def toArray(digits: Double): Any = js.native
   
   def toString(digits: Double, separator: String): String = js.native
 }

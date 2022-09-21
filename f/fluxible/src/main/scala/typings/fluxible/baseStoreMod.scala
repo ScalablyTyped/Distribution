@@ -9,7 +9,7 @@ object baseStoreMod {
   
   @JSImport("fluxible/addons/BaseStore", JSImport.Namespace)
   @js.native
-  class ^[S] protected ()
+  open class ^[S] protected ()
     extends typings.dispatchr.baseStoreMod.^[S] {
     def this(dispatcher: DispatcherInterface) = this()
   }

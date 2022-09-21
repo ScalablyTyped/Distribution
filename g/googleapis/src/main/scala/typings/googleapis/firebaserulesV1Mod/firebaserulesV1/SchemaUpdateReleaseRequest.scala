@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request for FirebaseRulesService.UpdateReleasePatch.
-  */
 trait SchemaUpdateReleaseRequest extends StObject {
   
   /**
-    * `Release` to update.
+    * Required. `Release` to update.
     */
   var release: js.UndefOr[SchemaRelease] = js.undefined
   
   /**
     * Specifies which fields to update.
     */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var updateMask: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUpdateReleaseRequest {
   
@@ -33,6 +30,8 @@ object SchemaUpdateReleaseRequest {
     inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
     inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }

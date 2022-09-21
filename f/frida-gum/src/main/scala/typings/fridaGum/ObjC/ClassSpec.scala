@@ -59,7 +59,7 @@ object ClassSpec {
     
     inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
-    inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value*))
     
     inline def setSuper(value: Object): Self = StObject.set(x, "super", value.asInstanceOf[js.Any])
     

@@ -9,15 +9,12 @@ A simple in-memory file cache for gulp
 | ------------------ | :-------------: |
 | Full name          | gulp-cached |
 | Keywords           | gulpplugin |
-| # releases         | 0 |
-| # dependents       | 201 |
-| # downloads        | 2660061 |
-| # stars            | 48 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 199650.33333333334 |
+| # stars            | 448.0 |
 
 ## Links
-- [Homepage](http://github.com/contra/gulp-cached)
-- [Bugs](https://github.com/contra/gulp-cached/issues)
-- [Repository](https://github.com/contra/gulp-cached)
 - [Npm](https://www.npmjs.com/package/gulp-cached)
     
 

@@ -8,7 +8,7 @@ object chartCursorSettingsMod {
   
   @JSImport("amcharts/ChartCursorSettings", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ChartCursorSettings {
     
@@ -59,7 +59,7 @@ object chartCursorSettingsMod {
       * ]
       */
     /* CompleteClass */
-    var categoryBalloonDateFormats: js.Array[js.Any] = js.native
+    var categoryBalloonDateFormats: js.Array[Any] = js.native
     
     /**
       * Specifies whether category balloon is enabled.
@@ -157,7 +157,7 @@ object chartCursorSettingsMod {
       *     {period:"fff", format:"JJ:NN:SS"}
       * ]
       */
-    var categoryBalloonDateFormats: js.Array[js.Any]
+    var categoryBalloonDateFormats: js.Array[Any]
     
     /**
       * Specifies whether category balloon is enabled.
@@ -209,7 +209,7 @@ object chartCursorSettingsMod {
       bulletsEnabled: Boolean,
       categoryBalloonAlpha: Double,
       categoryBalloonColor: String,
-      categoryBalloonDateFormats: js.Array[js.Any],
+      categoryBalloonDateFormats: js.Array[Any],
       categoryBalloonEnabled: Boolean,
       cursorAlpha: Double,
       cursorColor: String,
@@ -233,9 +233,9 @@ object chartCursorSettingsMod {
       
       inline def setCategoryBalloonColor(value: String): Self = StObject.set(x, "categoryBalloonColor", value.asInstanceOf[js.Any])
       
-      inline def setCategoryBalloonDateFormats(value: js.Array[js.Any]): Self = StObject.set(x, "categoryBalloonDateFormats", value.asInstanceOf[js.Any])
+      inline def setCategoryBalloonDateFormats(value: js.Array[Any]): Self = StObject.set(x, "categoryBalloonDateFormats", value.asInstanceOf[js.Any])
       
-      inline def setCategoryBalloonDateFormatsVarargs(value: js.Any*): Self = StObject.set(x, "categoryBalloonDateFormats", js.Array(value :_*))
+      inline def setCategoryBalloonDateFormatsVarargs(value: Any*): Self = StObject.set(x, "categoryBalloonDateFormats", js.Array(value*))
       
       inline def setCategoryBalloonEnabled(value: Boolean): Self = StObject.set(x, "categoryBalloonEnabled", value.asInstanceOf[js.Any])
       

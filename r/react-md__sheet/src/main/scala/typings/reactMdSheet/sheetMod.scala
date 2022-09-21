@@ -26,6 +26,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -35,9 +36,8 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.reactMdDialog.anon.OmitHTMLAttributesHTMLSpa
 import typings.reactMdPortal.getContainerMod.PortalInto
-import typings.reactMdSheet.anon.PickBaseSheetPropshiddenv
-import typings.reactMdSheet.anon.PickBaseSheetPropshiddenvAbout
 import typings.reactMdSheet.reactMdSheetStrings.`additions removals`
 import typings.reactMdSheet.reactMdSheetStrings.`additions text`
 import typings.reactMdSheet.reactMdSheetStrings.`inline`
@@ -92,9 +92,13 @@ import typings.reactMdSheet.reactMdSheetStrings.tree
 import typings.reactMdSheet.reactMdSheetStrings.url
 import typings.reactMdSheet.reactMdSheetStrings.vertical
 import typings.reactMdSheet.reactMdSheetStrings.yes
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
+import typings.reactMdTransition.typesMod.TransitionEnterHandler
+import typings.reactMdTransition.typesMod.TransitionExitHandler
 import typings.reactMdTransition.typesMod.TransitionTimeout
 import typings.reactMdUtils.typesTypesMod.LabelRequiredForA11y
 import typings.reactMdUtils.usePreviousFocusMod.FocusFallback
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -106,7 +110,7 @@ object sheetMod {
   
   @JSImport("@react-md/sheet/types/Sheet", "Sheet")
   @js.native
-  val Sheet: ForwardRefExoticComponent[PickBaseSheetPropshiddenv | PickBaseSheetPropshiddenvAbout] = js.native
+  val Sheet: ForwardRefExoticComponent[SheetProps & RefAttributes[HTMLDivElement]] = js.native
   
   /* Inlined std.Omit<@react-md/dialog.@react-md/dialog.BaseDialogProps, 'role' | 'type' | 'modal' | 'forceContainer'> */
   trait AllowedDialogProps extends StObject {
@@ -119,11 +123,11 @@ object sheetMod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -141,21 +145,21 @@ object sheetMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -169,11 +173,11 @@ object sheetMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -185,13 +189,13 @@ object sheetMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -201,7 +205,7 @@ object sheetMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -225,7 +229,7 @@ object sheetMod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var classNames: js.UndefOr[js.Any] = js.undefined
+    var classNames: js.UndefOr[CSSTransitionClassNames] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
@@ -281,9 +285,7 @@ object sheetMod {
     
     var id: String
     
-    var in: js.UndefOr[js.Any] = js.undefined
-    
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -300,8 +302,6 @@ object sheetMod {
     var itemType: js.UndefOr[String] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
-    
-    var mountOnEnter: js.UndefOr[js.Any] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -363,19 +363,19 @@ object sheetMod {
     
     var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onEnter: js.UndefOr[js.Any] = js.undefined
+    var onEnter: js.UndefOr[TransitionEnterHandler] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.undefined
+    var onEntered: js.UndefOr[TransitionEnterHandler] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.undefined
+    var onEntering: js.UndefOr[TransitionEnterHandler] = js.undefined
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.undefined
+    var onExit: js.UndefOr[TransitionExitHandler] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.undefined
+    var onExited: js.UndefOr[TransitionExitHandler] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.undefined
+    var onExiting: js.UndefOr[TransitionExitHandler] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
@@ -481,6 +481,8 @@ object sheetMod {
     
     var overlayHidden: js.UndefOr[Boolean] = js.undefined
     
+    var overlayProps: js.UndefOr[OmitHTMLAttributesHTMLSpa] = js.undefined
+    
     var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
@@ -515,6 +517,8 @@ object sheetMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    var temporary: js.UndefOr[Boolean] = js.undefined
+    
     var timeout: js.UndefOr[TransitionTimeout] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
@@ -524,8 +528,6 @@ object sheetMod {
     var typeof: js.UndefOr[String] = js.undefined
     
     var unmountFocusFallback: js.UndefOr[FocusFallback] = js.undefined
-    
-    var unmountOnExit: js.UndefOr[js.Any] = js.undefined
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
@@ -558,7 +560,7 @@ object sheetMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -566,7 +568,7 @@ object sheetMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -602,7 +604,7 @@ object sheetMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -614,7 +616,7 @@ object sheetMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -622,7 +624,7 @@ object sheetMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -630,7 +632,7 @@ object sheetMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -658,15 +660,15 @@ object sheetMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -690,7 +692,7 @@ object sheetMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -700,7 +702,7 @@ object sheetMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -720,7 +722,7 @@ object sheetMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -768,7 +770,7 @@ object sheetMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClassNames(value: js.Any): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
       inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
@@ -816,7 +818,7 @@ object sheetMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -880,11 +882,7 @@ object sheetMod {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setIn(value: js.Any): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
-      
-      inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
-      
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -920,10 +918,6 @@ object sheetMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setMountOnEnter(value: js.Any): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
-      
-      inline def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
-      
       inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
       inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
@@ -948,7 +942,7 @@ object sheetMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1044,15 +1038,15 @@ object sheetMod {
       
       inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      inline def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       
       inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      inline def setOnEntered(value: js.Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+      inline def setOnEntered(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
       
       inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
       
-      inline def setOnEntering(value: js.Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+      inline def setOnEntering(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
       
       inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
       
@@ -1060,19 +1054,19 @@ object sheetMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnExit(value: js.Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+      inline def setOnExit(value: () => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction0(value))
       
       inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      inline def setOnExited(value: js.Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+      inline def setOnExited(value: () => Unit): Self = StObject.set(x, "onExited", js.Any.fromFunction0(value))
       
       inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
       
-      inline def setOnExiting(value: js.Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
+      inline def setOnExiting(value: () => Unit): Self = StObject.set(x, "onExiting", js.Any.fromFunction0(value))
       
       inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1276,6 +1270,10 @@ object sheetMod {
       
       inline def setOverlayHiddenUndefined: Self = StObject.set(x, "overlayHidden", js.undefined)
       
+      inline def setOverlayProps(value: OmitHTMLAttributesHTMLSpa): Self = StObject.set(x, "overlayProps", value.asInstanceOf[js.Any])
+      
+      inline def setOverlayPropsUndefined: Self = StObject.set(x, "overlayProps", js.undefined)
+      
       inline def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       
       inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
@@ -1350,6 +1348,10 @@ object sheetMod {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
+      inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
+      
+      inline def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
+      
       inline def setTimeout(value: TransitionTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
@@ -1374,10 +1376,6 @@ object sheetMod {
       
       inline def setUnmountFocusFallbackUndefined: Self = StObject.set(x, "unmountFocusFallback", js.undefined)
       
-      inline def setUnmountOnExit(value: js.Any): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
-      
-      inline def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
-      
       inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
@@ -1394,26 +1392,10 @@ object sheetMod {
     extends StObject
        with AllowedDialogProps {
     
-    /**
-      * The size to use for sheets that have been positioned left or right. The
-      * default supported values are:
-      *
-      * - none - the size is based on content, but is still limited to the viewport
-      *   width so that the horizontal scrolling will not occur within the page. No
-      *   limits added to sizing.
-      * - touch - the `min-width` is set to be the entire viewport width minus a
-      *   touchable area and `max-width` is set to `20rem` and is normally
-      *   recommended for mobile devices.
-      * - static - the width is set to a static `16rem` and generally used for
-      *   landscape tablets and desktops.
-      * - media - automatically switches between "touch" and "static" based on css
-      *   media queries. (this is the default)
-      */
+    /** {@inheritDoc SheetHorizontalSize} */
     var horizontalSize: js.UndefOr[SheetHorizontalSize] = js.undefined
     
-    /**
-      * The location that the sheet should be located within the viewport.
-      */
+    /** {@inheritDoc SheetPosition} */
     var position: js.UndefOr[SheetPosition] = js.undefined
     
     /**
@@ -1426,17 +1408,7 @@ object sheetMod {
       */
     var role: js.UndefOr[dialog | menu | none] = js.undefined
     
-    /**
-      * The size to use for sheets that have been positioned top or bottom. The
-      * supported sizes are:
-      *
-      * - none - the size is based on content and is limited to the viewport
-      *   height.
-      * - touch - the size is based on content and is limited to the viewport
-      *   height with a touchable area to close the sheet.
-      * - recommended - the material design recommended sizing that forces a
-      *   max-height of 50vh and min-height of 3.5rem
-      */
+    /** {@inheritDoc SheetVerticalSize} */
     var verticalSize: js.UndefOr[SheetVerticalSize] = js.undefined
   }
   object BaseSheetProps {

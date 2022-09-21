@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudidentity.anon
 
-import typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1ClientState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,43 +19,45 @@ trait Callback extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. [Resource name](https://cloud.google.com/apis/design/resource_names) of the customer. If you're using this API for your own organization, use `customers/my_customer`
-    * If you're using this API to manage another organization, use `customers/{customer_id}`, where customer_id is the customer to whom the device belongs.
-    */
-  var customer: js.UndefOr[String] = js.undefined
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
+  
+  /** Optional. A query string for filtering `UserInvitation` results by their current state, in the format: `"state=='invited'"`. */
+  var filter: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the ClientState in format:
-    * `devices/{device_id}/deviceUsers/{device_user_id}/clientState/{partner_id}`, where partner_id corresponds to the partner storing the data. For partners belonging to the
-    * "BeyondCorp Alliance", this is the partner ID specified to you by Google. For all other callers, this is a string of the form: `{customer_id}-suffix`, where `customer_id` is
-    * your customer ID. The *suffix* is any string the caller specifies. This string will be displayed verbatim in the administration console. This suffix is used in setting up Custom
-    * Access Levels in Context-Aware Access. Your organization's customer ID can be obtained from the URL: `GET https://www.googleapis.com/admin/directory/v1/customers/my_customer`
-    * The `id` field in the response contains the customer ID starting with the letter 'C'. The customer ID to be used in this API is the string after the letter 'C' (not including
-    * 'C')
-    */
-  var name: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. The sort order of the list results. You can sort the results in descending order based on either email or last update timestamp but not both, using `order_by="email
+    * desc"`. Currently, sorting is supported for `update_time asc`, `update_time desc`, `email asc`, and `email desc`. If not specified, results will be returned based on `email asc`
+    * order.
+    */
+  var orderBy: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. The maximum number of UserInvitation resources to return. If unspecified, at most 100 resources will be returned. The maximum value is 200; values above 200 will be
+    * set to 200.
+    */
+  var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Optional. A page token, received from a previous `ListUserInvitations` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
+    * `ListBooks` must match the call that provided the page token.
+    */
+  var pageToken: js.UndefOr[String] = js.undefined
+  
+  /** Required. The customer ID of the Google Workspace or Cloud Identity account the UserInvitation resources are associated with. */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Request body */
-  var resource: GoogleAppsCloudidentityDevicesV1ClientState
-  
-  /** Optional. Comma-separated list of fully qualified names of fields to be updated. If not specified, all updatable fields in ClientState are updated. */
-  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -66,8 +67,8 @@ trait Callback extends StObject {
 }
 object Callback {
   
-  inline def apply(name: String, resource: GoogleAppsCloudidentityDevicesV1ClientState): Callback = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(parent: String): Callback = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Callback]
   }
   
@@ -89,23 +90,35 @@ object Callback {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
-    
-    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
-    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -114,12 +127,6 @@ object Callback {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: GoogleAppsCloudidentityDevicesV1ClientState): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -10,13 +10,13 @@ trait GlideSysAttachment extends StObject {
   
   def deleteAttachment(sysId: String): Unit
   
-  def getContent(record: ScopedGlideRecord): js.Any
+  def getContent(record: ScopedGlideRecord): Any
   
   def getContentBase64(record: ScopedGlideRecord): String
   
   def getContentStream(sysId: String): js.Object
   
-  def write(record: ScopedGlideRecord, fileName: String, contentType: String, data: js.Any): String
+  def write(record: ScopedGlideRecord, fileName: String, contentType: String, data: Any): String
   
   def writeBase64(record: ScopedGlideRecord, fileName: String, contentType: String, base64Content: String): String
   
@@ -27,10 +27,10 @@ object GlideSysAttachment {
   inline def apply(
     copy: (String, String, String, String) => Unit,
     deleteAttachment: String => Unit,
-    getContent: ScopedGlideRecord => js.Any,
+    getContent: ScopedGlideRecord => Any,
     getContentBase64: ScopedGlideRecord => String,
     getContentStream: String => js.Object,
-    write: (ScopedGlideRecord, String, String, js.Any) => String,
+    write: (ScopedGlideRecord, String, String, Any) => String,
     writeBase64: (ScopedGlideRecord, String, String, String) => String,
     writeContentStream: (ScopedGlideRecord, String, String, js.Object) => String
   ): GlideSysAttachment = {
@@ -44,13 +44,13 @@ object GlideSysAttachment {
     
     inline def setDeleteAttachment(value: String => Unit): Self = StObject.set(x, "deleteAttachment", js.Any.fromFunction1(value))
     
-    inline def setGetContent(value: ScopedGlideRecord => js.Any): Self = StObject.set(x, "getContent", js.Any.fromFunction1(value))
+    inline def setGetContent(value: ScopedGlideRecord => Any): Self = StObject.set(x, "getContent", js.Any.fromFunction1(value))
     
     inline def setGetContentBase64(value: ScopedGlideRecord => String): Self = StObject.set(x, "getContentBase64", js.Any.fromFunction1(value))
     
     inline def setGetContentStream(value: String => js.Object): Self = StObject.set(x, "getContentStream", js.Any.fromFunction1(value))
     
-    inline def setWrite(value: (ScopedGlideRecord, String, String, js.Any) => String): Self = StObject.set(x, "write", js.Any.fromFunction4(value))
+    inline def setWrite(value: (ScopedGlideRecord, String, String, Any) => String): Self = StObject.set(x, "write", js.Any.fromFunction4(value))
     
     inline def setWriteBase64(value: (ScopedGlideRecord, String, String, String) => String): Self = StObject.set(x, "writeBase64", js.Any.fromFunction4(value))
     

@@ -14,21 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object boxTypesMod {
   
-  type BoxComponent[P, D /* <: ElementType[js.Any] */] = js.Function1[/* props */ PolymorphicBoxProps[D, P], Element]
+  type BoxComponent[P, D /* <: ElementType[Any] */] = js.Function1[/* props */ PolymorphicBoxProps[D, P], Element]
   
-  type BoxOwnProps[E /* <: ElementType[js.Any] */, P] = (Without[EnhancerProps, /* keyof P */ String]) & AllowUnsafeHref[E]
+  type BoxOwnProps[E /* <: ElementType[Any] */, P] = (Without[EnhancerProps, /* keyof P */ String]) & AllowUnsafeHref[E]
   
-  type BoxProps[E /* <: ElementType[js.Any] */] = (BoxOwnProps[E, js.Object]) & (Without[
+  type BoxProps[E /* <: ElementType[Any] */] = (BoxOwnProps[E, js.Object]) & (Without[
     PropsOf[E], 
-    /* keyof ui-box.anon.BoxOwnPropsElementTypeany */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 145 */ js.Any
+    /* keyof ui-box.anon.BoxOwnPropsElementTypeany */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 145 */ Any
   ])
   
-  type PolymorphicBoxProps[E /* <: ElementType[js.Any] */, P] = (BoxOwnProps[E, P]) & (Without[
+  type PolymorphicBoxProps[E /* <: ElementType[Any] */, P] = (BoxOwnProps[E, P]) & (Without[
     PropsOf[E], 
-    /* keyof ui-box.anon.BoxOwnPropsElementTypeany & P */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 145 */ js.Any
+    /* keyof ui-box.anon.BoxOwnPropsElementTypeany & P */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 145 */ Any
   ]) & P
   
-  type PropsOf[E /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = LibraryManagedAttributes[E, ComponentPropsWithRef[E]]
+  type PropsOf[E /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] = LibraryManagedAttributes[E, ComponentPropsWithRef[E]]
   
   type Without[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
 }

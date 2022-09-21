@@ -12,7 +12,7 @@ trait AwsRdsDbInstanceDetails extends StObject {
   var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The AWS Identity and Access Management (IAM) roles associated with the DB instance.
+    * The IAM roles associated with the DB instance.
     */
   var AssociatedRoles: js.UndefOr[AwsRdsDbInstanceAssociatedRoles] = js.undefined
   
@@ -92,7 +92,7 @@ trait AwsRdsDbInstanceDetails extends StObject {
   var DbSubnetGroup: js.UndefOr[AwsRdsDbSubnetGroup] = js.undefined
   
   /**
-    * The AWS Region-unique, immutable identifier for the DB instance. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB instance is accessed. 
+    * The Amazon Web Services Region-unique, immutable identifier for the DB instance. This identifier is found in CloudTrail log entries whenever the KMS key for the DB instance is accessed. 
     */
   var DbiResourceId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -132,7 +132,7 @@ trait AwsRdsDbInstanceDetails extends StObject {
   var EnhancedMonitoringResourceArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false. IAM database authentication can be enabled for the following database engines.   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher   Aurora 5.6 or higher  
+    * True if mapping of IAM accounts to database accounts is enabled, and otherwise false. IAM database authentication can be enabled for the following database engines.   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher   Aurora 5.6 or higher  
     */
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -147,7 +147,7 @@ trait AwsRdsDbInstanceDetails extends StObject {
   var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
-    * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB instance.
+    * If StorageEncrypted is true, the KMS key identifier for the encrypted DB instance.
     */
   var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -204,7 +204,7 @@ trait AwsRdsDbInstanceDetails extends StObject {
   var PerformanceInsightsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The identifier of the AWS KMS key used to encrypt the Performance Insights data.
+    * The identifier of the KMS key used to encrypt the Performance Insights data.
     */
   var PerformanceInsightsKmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -305,7 +305,7 @@ object AwsRdsDbInstanceDetails {
     
     inline def setAssociatedRolesUndefined: Self = StObject.set(x, "AssociatedRoles", js.undefined)
     
-    inline def setAssociatedRolesVarargs(value: AwsRdsDbInstanceAssociatedRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value :_*))
+    inline def setAssociatedRolesVarargs(value: AwsRdsDbInstanceAssociatedRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value*))
     
     inline def setAutoMinorVersionUpgrade(value: Boolean): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
     
@@ -359,13 +359,13 @@ object AwsRdsDbInstanceDetails {
     
     inline def setDbParameterGroupsUndefined: Self = StObject.set(x, "DbParameterGroups", js.undefined)
     
-    inline def setDbParameterGroupsVarargs(value: AwsRdsDbParameterGroup*): Self = StObject.set(x, "DbParameterGroups", js.Array(value :_*))
+    inline def setDbParameterGroupsVarargs(value: AwsRdsDbParameterGroup*): Self = StObject.set(x, "DbParameterGroups", js.Array(value*))
     
     inline def setDbSecurityGroups(value: StringList): Self = StObject.set(x, "DbSecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setDbSecurityGroupsUndefined: Self = StObject.set(x, "DbSecurityGroups", js.undefined)
     
-    inline def setDbSecurityGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "DbSecurityGroups", js.Array(value :_*))
+    inline def setDbSecurityGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "DbSecurityGroups", js.Array(value*))
     
     inline def setDbSubnetGroup(value: AwsRdsDbSubnetGroup): Self = StObject.set(x, "DbSubnetGroup", value.asInstanceOf[js.Any])
     
@@ -383,13 +383,13 @@ object AwsRdsDbInstanceDetails {
     
     inline def setDomainMembershipsUndefined: Self = StObject.set(x, "DomainMemberships", js.undefined)
     
-    inline def setDomainMembershipsVarargs(value: AwsRdsDbDomainMembership*): Self = StObject.set(x, "DomainMemberships", js.Array(value :_*))
+    inline def setDomainMembershipsVarargs(value: AwsRdsDbDomainMembership*): Self = StObject.set(x, "DomainMemberships", js.Array(value*))
     
     inline def setEnabledCloudWatchLogsExports(value: StringList): Self = StObject.set(x, "EnabledCloudWatchLogsExports", value.asInstanceOf[js.Any])
     
     inline def setEnabledCloudWatchLogsExportsUndefined: Self = StObject.set(x, "EnabledCloudWatchLogsExports", js.undefined)
     
-    inline def setEnabledCloudWatchLogsExportsVarargs(value: NonEmptyString*): Self = StObject.set(x, "EnabledCloudWatchLogsExports", js.Array(value :_*))
+    inline def setEnabledCloudWatchLogsExportsVarargs(value: NonEmptyString*): Self = StObject.set(x, "EnabledCloudWatchLogsExports", js.Array(value*))
     
     inline def setEndpoint(value: AwsRdsDbInstanceEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
@@ -459,7 +459,7 @@ object AwsRdsDbInstanceDetails {
     
     inline def setOptionGroupMembershipsUndefined: Self = StObject.set(x, "OptionGroupMemberships", js.undefined)
     
-    inline def setOptionGroupMembershipsVarargs(value: AwsRdsDbOptionGroupMembership*): Self = StObject.set(x, "OptionGroupMemberships", js.Array(value :_*))
+    inline def setOptionGroupMembershipsVarargs(value: AwsRdsDbOptionGroupMembership*): Self = StObject.set(x, "OptionGroupMemberships", js.Array(value*))
     
     inline def setPendingModifiedValues(value: AwsRdsDbPendingModifiedValues): Self = StObject.set(x, "PendingModifiedValues", value.asInstanceOf[js.Any])
     
@@ -489,7 +489,7 @@ object AwsRdsDbInstanceDetails {
     
     inline def setProcessorFeaturesUndefined: Self = StObject.set(x, "ProcessorFeatures", js.undefined)
     
-    inline def setProcessorFeaturesVarargs(value: AwsRdsDbProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value :_*))
+    inline def setProcessorFeaturesVarargs(value: AwsRdsDbProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value*))
     
     inline def setPromotionTier(value: Integer): Self = StObject.set(x, "PromotionTier", value.asInstanceOf[js.Any])
     
@@ -503,13 +503,13 @@ object AwsRdsDbInstanceDetails {
     
     inline def setReadReplicaDBClusterIdentifiersUndefined: Self = StObject.set(x, "ReadReplicaDBClusterIdentifiers", js.undefined)
     
-    inline def setReadReplicaDBClusterIdentifiersVarargs(value: NonEmptyString*): Self = StObject.set(x, "ReadReplicaDBClusterIdentifiers", js.Array(value :_*))
+    inline def setReadReplicaDBClusterIdentifiersVarargs(value: NonEmptyString*): Self = StObject.set(x, "ReadReplicaDBClusterIdentifiers", js.Array(value*))
     
     inline def setReadReplicaDBInstanceIdentifiers(value: StringList): Self = StObject.set(x, "ReadReplicaDBInstanceIdentifiers", value.asInstanceOf[js.Any])
     
     inline def setReadReplicaDBInstanceIdentifiersUndefined: Self = StObject.set(x, "ReadReplicaDBInstanceIdentifiers", js.undefined)
     
-    inline def setReadReplicaDBInstanceIdentifiersVarargs(value: NonEmptyString*): Self = StObject.set(x, "ReadReplicaDBInstanceIdentifiers", js.Array(value :_*))
+    inline def setReadReplicaDBInstanceIdentifiersVarargs(value: NonEmptyString*): Self = StObject.set(x, "ReadReplicaDBInstanceIdentifiers", js.Array(value*))
     
     inline def setReadReplicaSourceDBInstanceIdentifier(value: NonEmptyString): Self = StObject.set(x, "ReadReplicaSourceDBInstanceIdentifier", value.asInstanceOf[js.Any])
     
@@ -523,7 +523,7 @@ object AwsRdsDbInstanceDetails {
     
     inline def setStatusInfosUndefined: Self = StObject.set(x, "StatusInfos", js.undefined)
     
-    inline def setStatusInfosVarargs(value: AwsRdsDbStatusInfo*): Self = StObject.set(x, "StatusInfos", js.Array(value :_*))
+    inline def setStatusInfosVarargs(value: AwsRdsDbStatusInfo*): Self = StObject.set(x, "StatusInfos", js.Array(value*))
     
     inline def setStorageEncrypted(value: Boolean): Self = StObject.set(x, "StorageEncrypted", value.asInstanceOf[js.Any])
     
@@ -545,6 +545,6 @@ object AwsRdsDbInstanceDetails {
     
     inline def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
-    inline def setVpcSecurityGroupsVarargs(value: AwsRdsDbInstanceVpcSecurityGroup*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
+    inline def setVpcSecurityGroupsVarargs(value: AwsRdsDbInstanceVpcSecurityGroup*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value*))
   }
 }

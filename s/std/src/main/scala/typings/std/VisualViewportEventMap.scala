@@ -6,20 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VisualViewportEventMap extends StObject {
   
-  var resize: UIEvent
+  /* standard dom */
+  var resize: Event
   
+  /* standard dom */
   var scroll: Event
 }
 object VisualViewportEventMap {
   
-  inline def apply(resize: UIEvent, scroll: Event): VisualViewportEventMap = {
+  inline def apply(resize: Event, scroll: Event): VisualViewportEventMap = {
     val __obj = js.Dynamic.literal(resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualViewportEventMap]
   }
   
   extension [Self <: VisualViewportEventMap](x: Self) {
     
-    inline def setResize(value: UIEvent): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: Event): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
     inline def setScroll(value: Event): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
   }

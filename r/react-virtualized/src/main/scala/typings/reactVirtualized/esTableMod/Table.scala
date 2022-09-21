@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized/dist/es/Table", "Table")
 @js.native
-class Table protected ()
-  extends PureComponent[TableProps, js.Object, js.Any] {
+open class Table protected ()
+  extends PureComponent[TableProps, js.Object, Any] {
   def this(props: TableProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TableProps, context: js.Any) = this()
+  def this(props: TableProps, context: Any) = this()
   
   var Grid: typings.reactVirtualized.esGridMod.Grid = js.native
   
@@ -25,6 +25,8 @@ class Table protected ()
   
   /** See Grid#getOffsetForCell */
   def getOffsetForRow(params: AlignmentIndex): Double = js.native
+  
+  def getScrollbarWidth(): Double = js.native
   
   /** See Grid#measureAllCells */
   def measureAllRows(): Unit = js.native

@@ -1,20 +1,17 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.listItemTextListItemTextMod.ListItemTextProps
-import typings.react.mod.ComponentType
+import typings.react.mod.ElementType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object listItemTextMod extends Shortcut {
+object listItemTextMod {
   
-  @JSImport("@material-ui/core/ListItemText", JSImport.Default)
+  @JSImport("@material-ui/core/ListItemText", JSImport.Namespace)
   @js.native
-  val default: ComponentType[ListItemTextProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[ListItemTextProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `listItemTextMod.foo` */
-  override def _to: ComponentType[ListItemTextProps] = default
+  inline def default[PrimaryTypographyComponent /* <: ElementType[Any] */, SecondaryTypographyComponent /* <: ElementType[Any] */](props: ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

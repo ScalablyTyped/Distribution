@@ -7,22 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientEventarcStrings {
   
   @js.native
+  sealed trait GoogleLongrunningOperation extends StObject
+  inline def GoogleLongrunningOperation: GoogleLongrunningOperation = "GoogleLongrunningOperation".asInstanceOf[GoogleLongrunningOperation]
+  
+  @js.native
+  sealed trait GoogleRpcStatus extends StObject
+  inline def GoogleRpcStatus: GoogleRpcStatus = "GoogleRpcStatus".asInstanceOf[GoogleRpcStatus]
+  
+  @js.native
   sealed trait Location extends StObject
   inline def Location: Location = "Location".asInstanceOf[Location]
   
   @js.native
-  sealed trait Operation extends StObject
-  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
+  sealed trait Trigger extends StObject
+  inline def Trigger: Trigger = "Trigger".asInstanceOf[Trigger]
   
   @js.native
   sealed trait eventarc extends StObject
   inline def eventarc: eventarc = "eventarc".asInstanceOf[eventarc]
   
   @js.native
-  sealed trait v1beta1 extends StObject
-  inline def v1beta1: v1beta1 = "v1beta1".asInstanceOf[v1beta1]
+  sealed trait v1 extends StObject
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

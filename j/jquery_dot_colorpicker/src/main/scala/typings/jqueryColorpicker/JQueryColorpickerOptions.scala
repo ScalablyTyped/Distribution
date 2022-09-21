@@ -75,9 +75,9 @@ trait JQueryColorpickerOptions extends StObject {
   
   var open: js.UndefOr[js.Function] = js.undefined
   
-  var part: js.UndefOr[js.Any] = js.undefined
+  var part: js.UndefOr[Any] = js.undefined
   
-  var parts: js.UndefOr[js.Any] = js.undefined
+  var parts: js.UndefOr[Any] = js.undefined
   
   var regional: js.UndefOr[String] = js.undefined
   
@@ -97,9 +97,9 @@ trait JQueryColorpickerOptions extends StObject {
   
   var showOn: js.UndefOr[String] = js.undefined
   
-  var showOptions: js.UndefOr[js.Any] = js.undefined
+  var showOptions: js.UndefOr[Any] = js.undefined
   
-  var swatches: js.UndefOr[js.Any] = js.undefined
+  var swatches: js.UndefOr[Any] = js.undefined
   
   var swatchesWidth: js.UndefOr[Double] = js.undefined
   
@@ -246,11 +246,11 @@ object JQueryColorpickerOptions {
     
     inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    inline def setPart(value: js.Any): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: Any): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
-    inline def setParts(value: js.Any): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    inline def setParts(value: Any): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
     inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
@@ -290,11 +290,11 @@ object JQueryColorpickerOptions {
     
     inline def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
     
-    inline def setShowOptions(value: js.Any): Self = StObject.set(x, "showOptions", value.asInstanceOf[js.Any])
+    inline def setShowOptions(value: Any): Self = StObject.set(x, "showOptions", value.asInstanceOf[js.Any])
     
     inline def setShowOptionsUndefined: Self = StObject.set(x, "showOptions", js.undefined)
     
-    inline def setSwatches(value: js.Any): Self = StObject.set(x, "swatches", value.asInstanceOf[js.Any])
+    inline def setSwatches(value: Any): Self = StObject.set(x, "swatches", value.asInstanceOf[js.Any])
     
     inline def setSwatchesUndefined: Self = StObject.set(x, "swatches", js.undefined)
     

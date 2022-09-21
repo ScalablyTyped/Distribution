@@ -19,10 +19,9 @@ object breadcrumbSectionMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/collections/Breadcrumb/BreadcrumbSection", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[BreadcrumbSectionProps, ComponentState, js.Any] {
+  open class default protected () extends Component[BreadcrumbSectionProps, ComponentState, Any] {
     def this(props: BreadcrumbSectionProps) = this()
-    def this(props: BreadcrumbSectionProps, context: js.Any) = this()
+    def this(props: BreadcrumbSectionProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/collections/Breadcrumb/BreadcrumbSection", JSImport.Default)
   @js.native
@@ -31,7 +30,7 @@ object breadcrumbSectionMod extends Shortcut {
   trait BreadcrumbSectionProps
     extends StObject
        with StrictBreadcrumbSectionProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object BreadcrumbSectionProps {
     
     inline def apply(): BreadcrumbSectionProps = {
@@ -46,7 +45,7 @@ object breadcrumbSectionMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -91,7 +90,7 @@ object breadcrumbSectionMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

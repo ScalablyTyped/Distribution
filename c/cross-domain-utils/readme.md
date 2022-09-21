@@ -10,15 +10,12 @@ Javascript module template.
 | ------------------ | :-------------: |
 | Full name          | cross-domain-utils |
 | Keywords           | template |
-| # releases         | 11 |
-| # dependents       | 24 |
-| # downloads        | 2525707 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 315249.6666666667 |
+| # stars            | 131.0 |
 
 ## Links
-- [Homepage](https://github.com/krakenjs/cross-domain-utils#readme)
-- [Bugs](https://github.com/krakenjs/cross-domain-utils/issues)
-- [Repository](https://github.com/krakenjs/cross-domain-utils)
 - [Npm](https://www.npmjs.com/package/cross-domain-utils)
     
 

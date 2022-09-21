@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "DiagnosticRelatedInformation")
 @js.native
-class DiagnosticRelatedInformation protected () extends StObject {
+open class DiagnosticRelatedInformation protected () extends StObject {
   /**
     * Creates a new related diagnostic information object.
     *

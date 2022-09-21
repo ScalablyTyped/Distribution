@@ -12,7 +12,7 @@ trait QueryResultItem extends StObject {
   var AdditionalAttributes: js.UndefOr[AdditionalResultAttributeList] = js.undefined
   
   /**
-    * An array of document attributes for the document that the query result maps to. For example, the document author (Author) or the source URI (SourceUri) of the document.
+    * An array of document attributes assigned to a document in the search results. For example, the document author (_author) or the source URI (_source_uri) of the document.
     */
   var DocumentAttributes: js.UndefOr[DocumentAttributeList] = js.undefined
   
@@ -35,6 +35,11 @@ trait QueryResultItem extends StObject {
     * The URI of the original location of the document.
     */
   var DocumentURI: js.UndefOr[Url] = js.undefined
+  
+  /**
+    * A token that identifies a particular result from a particular query. Use this token to provide click-through feedback for the result. For more information, see  Submitting feedback .
+    */
+  var FeedbackToken: js.UndefOr[typings.awsSdk.kendraMod.FeedbackToken] = js.undefined
   
   /**
     * The unique identifier for the query result.
@@ -64,13 +69,13 @@ object QueryResultItem {
     
     inline def setAdditionalAttributesUndefined: Self = StObject.set(x, "AdditionalAttributes", js.undefined)
     
-    inline def setAdditionalAttributesVarargs(value: AdditionalResultAttribute*): Self = StObject.set(x, "AdditionalAttributes", js.Array(value :_*))
+    inline def setAdditionalAttributesVarargs(value: AdditionalResultAttribute*): Self = StObject.set(x, "AdditionalAttributes", js.Array(value*))
     
     inline def setDocumentAttributes(value: DocumentAttributeList): Self = StObject.set(x, "DocumentAttributes", value.asInstanceOf[js.Any])
     
     inline def setDocumentAttributesUndefined: Self = StObject.set(x, "DocumentAttributes", js.undefined)
     
-    inline def setDocumentAttributesVarargs(value: DocumentAttribute*): Self = StObject.set(x, "DocumentAttributes", js.Array(value :_*))
+    inline def setDocumentAttributesVarargs(value: DocumentAttribute*): Self = StObject.set(x, "DocumentAttributes", js.Array(value*))
     
     inline def setDocumentExcerpt(value: TextWithHighlights): Self = StObject.set(x, "DocumentExcerpt", value.asInstanceOf[js.Any])
     
@@ -87,6 +92,10 @@ object QueryResultItem {
     inline def setDocumentURI(value: Url): Self = StObject.set(x, "DocumentURI", value.asInstanceOf[js.Any])
     
     inline def setDocumentURIUndefined: Self = StObject.set(x, "DocumentURI", js.undefined)
+    
+    inline def setFeedbackToken(value: FeedbackToken): Self = StObject.set(x, "FeedbackToken", value.asInstanceOf[js.Any])
+    
+    inline def setFeedbackTokenUndefined: Self = StObject.set(x, "FeedbackToken", js.undefined)
     
     inline def setId(value: ResultId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

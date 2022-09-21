@@ -54,7 +54,7 @@ object mod {
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      inline def setCustomVarargs(value: String*): Self = StObject.set(x, "custom", js.Array(value :_*))
+      inline def setCustomVarargs(value: String*): Self = StObject.set(x, "custom", js.Array(value*))
       
       inline def setLang(value: String | Boolean): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
@@ -80,7 +80,7 @@ object mod {
       
       inline def setTitleCaseUndefined: Self = StObject.set(x, "titleCase", js.undefined)
       
-      inline def setTitleCaseVarargs(value: String*): Self = StObject.set(x, "titleCase", js.Array(value :_*))
+      inline def setTitleCaseVarargs(value: String*): Self = StObject.set(x, "titleCase", js.Array(value*))
       
       inline def setTruncate(value: Double): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       

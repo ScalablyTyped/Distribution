@@ -1,7 +1,7 @@
 
 # Scala.js typings for force-graph
 
-Typings are for version 1.21
+Typings are for version 1.42.13
 
 ## Library description:
 2D force-directed graph rendered on HTML5 canvas
@@ -10,10 +10,10 @@ Typings are for version 1.21
 | ------------------ | :-------------: |
 | Full name          | force-graph |
 | Keywords           | 2d, force, simulation, graph, canvas, d3 |
-| # releases         | 69 |
-| # dependents       | 7 |
-| # downloads        | 194670 |
-| # stars            | 0 |
+| # releases         | 38 |
+| # dependents       | 0.0 |
+| # downloads        | 51440.0 |
+| # stars            | 830.0 |
 
 ## Links
 - [Homepage](https://github.com/vasturiano/force-graph)
@@ -24,7 +24,7 @@ Typings are for version 1.21
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

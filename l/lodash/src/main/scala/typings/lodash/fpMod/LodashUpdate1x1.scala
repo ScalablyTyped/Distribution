@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashUpdate1x1 extends StObject {
   
-  def apply(updater: js.Function1[/* value */ js.Any, js.Any]): LodashUpdate1x3 = js.native
-  def apply(updater: js.Function1[/* value */ js.Any, js.Any], `object`: js.Object): js.Any = js.native
+  def apply(updater: js.Function1[/* value */ Any, Any]): LodashUpdate1x3 = js.native
+  def apply(updater: js.Function1[/* value */ Any, Any], `object`: js.Object): Any = js.native
   def apply(updater: __, `object`: js.Object): LodashUpdate1x5 = js.native
 }

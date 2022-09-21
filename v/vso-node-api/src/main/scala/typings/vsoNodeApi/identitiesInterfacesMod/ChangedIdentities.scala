@@ -27,7 +27,7 @@ object ChangedIdentities {
     
     inline def setIdentities(value: js.Array[Identity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
-    inline def setIdentitiesVarargs(value: Identity*): Self = StObject.set(x, "identities", js.Array(value :_*))
+    inline def setIdentitiesVarargs(value: Identity*): Self = StObject.set(x, "identities", js.Array(value*))
     
     inline def setSequenceContext(value: ChangedIdentitiesContext): Self = StObject.set(x, "sequenceContext", value.asInstanceOf[js.Any])
   }

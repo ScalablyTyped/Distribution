@@ -2,7 +2,6 @@ package typings.gulp
 
 import org.scalablytyped.runtime.Shortcut
 import typings.gulp.anon.FnCall
-import typings.node.NodeJS.ReadWriteStream
 import typings.node.fsMod.FSWatcher
 import typings.vinyl.mod.File
 import typings.vinylFs.mod.DestOptions
@@ -20,9 +19,9 @@ object mod extends Shortcut {
   @js.native
   trait DestMethod extends StObject {
     
-    def apply(folder: String): ReadWriteStream = js.native
-    def apply(folder: String, opt: DestOptions): ReadWriteStream = js.native
-    def apply(getFolderPath: js.Function1[/* file */ File, String]): ReadWriteStream = js.native
+    def apply(folder: String): Any = js.native
+    def apply(folder: String, opt: DestOptions): Any = js.native
+    def apply(getFolderPath: js.Function1[/* file */ File, String]): Any = js.native
   }
   
   type Globs = String | js.Array[String]
@@ -64,10 +63,10 @@ object mod extends Shortcut {
   @js.native
   trait SrcMethod extends StObject {
     
-    def apply(globs: String): ReadWriteStream = js.native
-    def apply(globs: String, opt: SrcOptions): ReadWriteStream = js.native
-    def apply(globs: js.Array[String]): ReadWriteStream = js.native
-    def apply(globs: js.Array[String], opt: SrcOptions): ReadWriteStream = js.native
+    def apply(globs: String): Any = js.native
+    def apply(globs: String, opt: SrcOptions): Any = js.native
+    def apply(globs: js.Array[String]): Any = js.native
+    def apply(globs: js.Array[String], opt: SrcOptions): Any = js.native
   }
   
   /**
@@ -76,6 +75,8 @@ object mod extends Shortcut {
   type TaskCallback = TaskFunction
   
   type TaskFunction = typings.undertaker.mod.TaskFunction
+  
+  type TaskFunctionCallback = typings.undertaker.mod.TaskCallback
   
   @js.native
   trait WatchMethod extends StObject {

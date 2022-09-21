@@ -26,7 +26,7 @@ object permissionsMod {
   
   @JSImport("expo-permissions/build/Permissions", "CAMERA_ROLL")
   @js.native
-  val CAMERA_ROLL: /* "cameraRoll" */ String = js.native
+  val CAMERA_ROLL: /* "mediaLibrary" */ String = js.native
   
   @JSImport("expo-permissions/build/Permissions", "CONTACTS")
   @js.native
@@ -35,6 +35,22 @@ object permissionsMod {
   @JSImport("expo-permissions/build/Permissions", "LOCATION")
   @js.native
   val LOCATION: /* "location" */ String = js.native
+  
+  @JSImport("expo-permissions/build/Permissions", "LOCATION_BACKGROUND")
+  @js.native
+  val LOCATION_BACKGROUND: /* "locationBackground" */ String = js.native
+  
+  @JSImport("expo-permissions/build/Permissions", "LOCATION_FOREGROUND")
+  @js.native
+  val LOCATION_FOREGROUND: /* "locationForeground" */ String = js.native
+  
+  @JSImport("expo-permissions/build/Permissions", "MEDIA_LIBRARY")
+  @js.native
+  val MEDIA_LIBRARY: /* "mediaLibrary" */ String = js.native
+  
+  @JSImport("expo-permissions/build/Permissions", "MEDIA_LIBRARY_WRITE_ONLY")
+  @js.native
+  val MEDIA_LIBRARY_WRITE_ONLY: /* "mediaLibraryWriteOnly" */ String = js.native
   
   @JSImport("expo-permissions/build/Permissions", "MOTION")
   @js.native
@@ -49,13 +65,13 @@ object permissionsMod {
   object PermissionStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.unimodulesPermissionsInterface.mod.PermissionStatus & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus & String] = js.native
     
-    /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED & String = js.native
+    /* "denied" */ val DENIED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.DENIED & String = js.native
     
-    /* "granted" */ val GRANTED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.GRANTED & String = js.native
+    /* "granted" */ val GRANTED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.GRANTED & String = js.native
     
-    /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED & String = js.native
+    /* "undetermined" */ val UNDETERMINED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.UNDETERMINED & String = js.native
   }
   
   @JSImport("expo-permissions/build/Permissions", "REMINDERS")
@@ -70,7 +86,7 @@ object permissionsMod {
   @js.native
   val USER_FACING_NOTIFICATIONS: /* "userFacingNotifications" */ String = js.native
   
-  inline def askAsync(types: PermissionType*): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("askAsync")(types.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PermissionResponse]]
+  inline def askAsync(types: PermissionType*): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("askAsync")(types.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Promise[PermissionResponse]]
   
-  inline def getAsync(types: PermissionType*): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsync")(types.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PermissionResponse]]
+  inline def getAsync(types: PermissionType*): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsync")(types.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Promise[PermissionResponse]]
 }

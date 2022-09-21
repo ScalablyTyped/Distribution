@@ -12,5 +12,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * An ASCII only version of the validator.
+    */
+  inline def isAsciiEmail(email: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsciiEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /**
+    * An inverted check is also exposed for the ASCII only version.
+    */
+  inline def isNotAsciiEmail(email: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotAsciiEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /**
+    * An inverted check is also exposed.
+    */
   inline def isNotEmail(email: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

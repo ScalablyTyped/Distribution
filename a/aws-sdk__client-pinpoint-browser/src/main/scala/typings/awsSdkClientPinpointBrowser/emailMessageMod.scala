@@ -8,5 +8,5 @@ object emailMessageMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_EmailMessage", "_EmailMessage")
   @js.native
-  val EmailMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EmailMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

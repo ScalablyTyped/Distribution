@@ -29,6 +29,6 @@ object PlatformTypesListResponse {
     
     inline def setPlatformTypesUndefined: Self = StObject.set(x, "platformTypes", js.undefined)
     
-    inline def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "platformTypes", js.Array(value :_*))
+    inline def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "platformTypes", js.Array(value*))
   }
 }

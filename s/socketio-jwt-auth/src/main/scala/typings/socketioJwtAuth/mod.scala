@@ -1,7 +1,7 @@
 package typings.socketioJwtAuth
 
 import typings.socketIo.mod.Socket
-import typings.std.Error
+import typings.socketIo.typedEventsMod.DefaultEventsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def authenticate(options: authOptions, verify: verifyFunc): js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(options.asInstanceOf[js.Any], verify.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]]
+  inline def authenticate(options: authOptions, verify: verifyFunc): js.Function2[
+    /* socket */ Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any], 
+    /* fn */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(options.asInstanceOf[js.Any], verify.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* socket */ Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any], 
+    /* fn */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+    Unit
+  ]]
   
   trait authOptions extends StObject {
     
@@ -44,10 +52,10 @@ object mod {
   }
   
   type verifyFunc = js.Function2[
-    /* payload */ js.Any, 
+    /* payload */ Any, 
     /* done */ js.Function3[
-      /* err */ js.UndefOr[Error | Null], 
-      /* user */ js.UndefOr[js.Any], 
+      /* err */ js.UndefOr[js.Error | Null], 
+      /* user */ js.UndefOr[Any], 
       /* message */ js.UndefOr[String], 
       Unit
     ], 

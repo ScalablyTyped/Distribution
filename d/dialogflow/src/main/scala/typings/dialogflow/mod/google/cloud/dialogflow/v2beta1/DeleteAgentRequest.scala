@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new DeleteAgentRequest.
   * @param [properties] Properties to set
   */
-class DeleteAgentRequest ()
+open class DeleteAgentRequest ()
   extends StObject
      with IDeleteAgentRequest {
   def this(properties: IDeleteAgentRequest) = this()
@@ -29,7 +28,7 @@ class DeleteAgentRequest ()
     * Converts this DeleteAgentRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object DeleteAgentRequest {
   
@@ -46,6 +45,8 @@ object DeleteAgentRequest {
   inline def create(): DeleteAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeleteAgentRequest]
   inline def create(properties: IDeleteAgentRequest): DeleteAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DeleteAgentRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): DeleteAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteAgentRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): DeleteAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteAgentRequest]
   /**
     * Decodes a DeleteAgentRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object DeleteAgentRequest {
   /* static member */
   inline def decode(reader: Reader): DeleteAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteAgentRequest]
   inline def decode(reader: Reader, length: Double): DeleteAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteAgentRequest]
-  inline def decode(reader: Uint8Array): DeleteAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteAgentRequest]
-  inline def decode(reader: Uint8Array, length: Double): DeleteAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteAgentRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): DeleteAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteAgentRequest]
   /**
     * Decodes a DeleteAgentRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object DeleteAgentRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): DeleteAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteAgentRequest]
-  inline def decodeDelimited(reader: Uint8Array): DeleteAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteAgentRequest]
   
   /**
     * Encodes the specified DeleteAgentRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.DeleteAgentRequest.verify|verify} messages.
@@ -97,7 +96,7 @@ object DeleteAgentRequest {
     * @returns DeleteAgentRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): DeleteAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DeleteAgentRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): DeleteAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DeleteAgentRequest]
   
   /**
     * Creates a plain object from a DeleteAgentRequest message. Also converts values to other types if specified.
@@ -106,8 +105,8 @@ object DeleteAgentRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: DeleteAgentRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: DeleteAgentRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: DeleteAgentRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: DeleteAgentRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a DeleteAgentRequest message.
@@ -115,5 +114,5 @@ object DeleteAgentRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

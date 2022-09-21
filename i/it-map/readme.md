@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-map
 
-Typings are for version 1.0.4
+Typings are for version 1.0.6
 
 ## Library description:
 Maps the values yielded by an async iterator
@@ -10,13 +10,13 @@ Maps the values yielded by an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-map |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 346035 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 336144.0 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-map#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/it-map)

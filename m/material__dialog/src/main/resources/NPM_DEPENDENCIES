@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/dialog" : "8.0.0"
+      "@material/dialog" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/dialog" : "8.0.0"
+      "@material/dialog" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -28,7 +28,7 @@ object ListMigrationJobsResponse {
     
     inline def setMigrationJobsUndefined: Self = StObject.set(x, "migrationJobs", js.undefined)
     
-    inline def setMigrationJobsVarargs(value: MigrationJob*): Self = StObject.set(x, "migrationJobs", js.Array(value :_*))
+    inline def setMigrationJobsVarargs(value: MigrationJob*): Self = StObject.set(x, "migrationJobs", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object ListMigrationJobsResponse {
     
     inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

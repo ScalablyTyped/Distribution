@@ -71,7 +71,7 @@ object XObjectInspector {
     InspectorModel: XObjectInspectorModel,
     InspectorUI: XObjectInspectorUI,
     Model: XModel,
-    ViewData: js.Any,
+    ViewData: Any,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     attachFrame: XFrame => Unit,
@@ -79,14 +79,14 @@ object XObjectInspector {
     dispose: () => Unit,
     getFrame: () => XFrame,
     getModel: () => XModel,
-    getViewData: () => js.Any,
+    getViewData: () => Any,
     inspect: SeqEquiv[XInterface] => Unit,
     queryDispatch: (URL, String, Double) => XDispatch,
     queryDispatches: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
-    restoreViewData: js.Any => Unit,
+    restoreViewData: Any => Unit,
     suspend: Boolean => Boolean
   ): XObjectInspector = {
     val __obj = js.Dynamic.literal(Frame = Frame.asInstanceOf[js.Any], InspectorModel = InspectorModel.asInstanceOf[js.Any], InspectorUI = InspectorUI.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], ViewData = ViewData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), dispose = js.Any.fromFunction0(dispose), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getViewData = js.Any.fromFunction0(getViewData), inspect = js.Any.fromFunction1(inspect), queryDispatch = js.Any.fromFunction3(queryDispatch), queryDispatches = js.Any.fromFunction1(queryDispatches), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), restoreViewData = js.Any.fromFunction1(restoreViewData), suspend = js.Any.fromFunction1(suspend))

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__pro-utils
 
-Typings are for version 1.2.0
+Typings are for version 2.2.0
 
 ## Library description:
 @ant-design/pro-utils
@@ -10,10 +10,10 @@ Typings are for version 1.2.0
 | ------------------ | :-------------: |
 | Full name          | @ant-design/pro-utils |
 | Keywords           | antd, admin, ant-design, ant-design-pro |
-| # releases         | 52 |
-| # dependents       | 17 |
-| # downloads        | 284615 |
-| # stars            | 0 |
+| # releases         | 189 |
+| # dependents       | 0.0 |
+| # downloads        | 173033.66666666666 |
+| # stars            | 2883.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/pro-components/tree/master/packages/utils#readme)

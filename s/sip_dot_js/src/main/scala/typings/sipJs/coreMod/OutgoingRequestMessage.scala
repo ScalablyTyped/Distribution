@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js/lib/core", "OutgoingRequestMessage")
 @js.native
-class OutgoingRequestMessage protected ()
+open class OutgoingRequestMessage protected ()
   extends typings.sipJs.messagesMod.OutgoingRequestMessage {
   def this(
     method: String,
@@ -86,11 +86,11 @@ object OutgoingRequestMessage {
   /** Get a copy of the default options. */
   @JSImport("sip.js/lib/core", "OutgoingRequestMessage.getDefaultOptions")
   @js.native
-  def getDefaultOptions: js.Any = js.native
-  inline def getDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultOptions")(x.asInstanceOf[js.Any])
+  def getDefaultOptions: Any = js.native
+  inline def getDefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultOptions")(x.asInstanceOf[js.Any])
   
   @JSImport("sip.js/lib/core", "OutgoingRequestMessage.makeNameAddrHeader")
   @js.native
-  def makeNameAddrHeader: js.Any = js.native
-  inline def makeNameAddrHeader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
+  def makeNameAddrHeader: Any = js.native
+  inline def makeNameAddrHeader_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
 }

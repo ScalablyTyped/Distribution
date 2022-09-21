@@ -9,12 +9,12 @@ object wizard {
   
   @JSGlobal("kendo.wizard.Step")
   @js.native
-  class Step ()
+  open class Step ()
     extends StObject
        with typings.kendoUi.kendo.wizard.Step {
     
     /* CompleteClass */
-    override def buttons(): js.Array[js.Any] = js.native
+    override def buttons(): js.Array[Any] = js.native
     
     /* CompleteClass */
     override def load(): Unit = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object styleMod {
   
-  @JSImport("snabbdom/build/package/modules/style", "styleModule")
+  @JSImport("snabbdom/build/modules/style", "styleModule")
   @js.native
   val styleModule: Module = js.native
   

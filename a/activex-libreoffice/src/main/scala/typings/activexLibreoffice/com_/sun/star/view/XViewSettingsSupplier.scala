@@ -24,7 +24,7 @@ object XViewSettingsSupplier {
     ViewSettings: XPropertySet,
     acquire: () => Unit,
     getViewSettings: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XViewSettingsSupplier = {
     val __obj = js.Dynamic.literal(ViewSettings = ViewSettings.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getViewSettings = js.Any.fromFunction0(getViewSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

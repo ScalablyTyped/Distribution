@@ -247,45 +247,45 @@ object I2c {
     /** Represents actions common to all I²C providers. */
     trait II2cProvider extends StObject {
       
-      var getControllersAsync: js.Any
+      var getControllersAsync: Any
     }
     object II2cProvider {
       
-      inline def apply(getControllersAsync: js.Any): II2cProvider = {
+      inline def apply(getControllersAsync: Any): II2cProvider = {
         val __obj = js.Dynamic.literal(getControllersAsync = getControllersAsync.asInstanceOf[js.Any])
         __obj.asInstanceOf[II2cProvider]
       }
       
       extension [Self <: II2cProvider](x: Self) {
         
-        inline def setGetControllersAsync(value: js.Any): Self = StObject.set(x, "getControllersAsync", value.asInstanceOf[js.Any])
+        inline def setGetControllersAsync(value: Any): Self = StObject.set(x, "getControllersAsync", value.asInstanceOf[js.Any])
       }
     }
     
     trait ProviderI2cConnectionSettings extends StObject {
       
-      var busSpeed: js.Any
+      var busSpeed: Any
       
       /* unmapped type */
-      var sharingMode: js.Any
+      var sharingMode: Any
       
       /* unmapped type */
-      var slaveAddress: js.Any
+      var slaveAddress: Any
     }
     object ProviderI2cConnectionSettings {
       
-      inline def apply(busSpeed: js.Any, sharingMode: js.Any, slaveAddress: js.Any): ProviderI2cConnectionSettings = {
+      inline def apply(busSpeed: Any, sharingMode: Any, slaveAddress: Any): ProviderI2cConnectionSettings = {
         val __obj = js.Dynamic.literal(busSpeed = busSpeed.asInstanceOf[js.Any], sharingMode = sharingMode.asInstanceOf[js.Any], slaveAddress = slaveAddress.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProviderI2cConnectionSettings]
       }
       
       extension [Self <: ProviderI2cConnectionSettings](x: Self) {
         
-        inline def setBusSpeed(value: js.Any): Self = StObject.set(x, "busSpeed", value.asInstanceOf[js.Any])
+        inline def setBusSpeed(value: Any): Self = StObject.set(x, "busSpeed", value.asInstanceOf[js.Any])
         
-        inline def setSharingMode(value: js.Any): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
+        inline def setSharingMode(value: Any): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
         
-        inline def setSlaveAddress(value: js.Any): Self = StObject.set(x, "slaveAddress", value.asInstanceOf[js.Any])
+        inline def setSlaveAddress(value: Any): Self = StObject.set(x, "slaveAddress", value.asInstanceOf[js.Any])
       }
     }
   }

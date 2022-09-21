@@ -34,7 +34,7 @@ object ListAliasesResponse {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: AliasListEntry*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: AliasListEntry*): Self = StObject.set(x, "Aliases", js.Array(value*))
     
     inline def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

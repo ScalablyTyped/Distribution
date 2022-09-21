@@ -44,7 +44,7 @@ object BaseElementNode {
     
     inline def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
     
@@ -52,7 +52,7 @@ object BaseElementNode {
     
     inline def setProps(value: js.Array[AttributeNode | DirectiveNode]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    inline def setPropsVarargs(value: (AttributeNode | DirectiveNode)*): Self = StObject.set(x, "props", js.Array(value :_*))
+    inline def setPropsVarargs(value: (AttributeNode | DirectiveNode)*): Self = StObject.set(x, "props", js.Array(value*))
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     

@@ -84,9 +84,9 @@ object tabRouterMod {
     
     inline def apply[ParamList /* <: ParamListBase */](
       jumpTo: (js.Tuple2[
-          js.Any, 
+          Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-        ]) | js.Array[js.Any] => Unit
+        ]) | js.Array[Any] => Unit
     ): TabActionHelpers[ParamList] = {
       val __obj = js.Dynamic.literal(jumpTo = js.Any.fromFunction1(jumpTo))
       __obj.asInstanceOf[TabActionHelpers[ParamList]]
@@ -96,9 +96,9 @@ object tabRouterMod {
       
       inline def setJumpTo(
         value: (js.Tuple2[
-              js.Any, 
+              Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-            ]) | js.Array[js.Any] => Unit
+            ]) | js.Array[Any] => Unit
       ): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
     }
   }
@@ -182,7 +182,7 @@ object tabRouterMod {
       
       inline def setHistory(value: js.Array[KeyType]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      inline def setHistoryVarargs(value: KeyType*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: KeyType*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -190,11 +190,11 @@ object tabRouterMod {
       
       inline def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value*))
       
       inline def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       

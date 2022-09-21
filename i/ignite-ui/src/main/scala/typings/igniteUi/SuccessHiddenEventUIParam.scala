@@ -9,7 +9,7 @@ trait SuccessHiddenEventUIParam extends StObject {
   /**
     * Populated with options for the specific field in the collection or null.
     */
-  var fieldOptions: js.UndefOr[js.Any] = js.undefined
+  var fieldOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the text of message.
@@ -19,7 +19,7 @@ trait SuccessHiddenEventUIParam extends StObject {
   /**
     * Gets reference to the igValidator widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to the target of the message.
@@ -35,7 +35,7 @@ object SuccessHiddenEventUIParam {
   
   extension [Self <: SuccessHiddenEventUIParam](x: Self) {
     
-    inline def setFieldOptions(value: js.Any): Self = StObject.set(x, "fieldOptions", value.asInstanceOf[js.Any])
+    inline def setFieldOptions(value: Any): Self = StObject.set(x, "fieldOptions", value.asInstanceOf[js.Any])
     
     inline def setFieldOptionsUndefined: Self = StObject.set(x, "fieldOptions", js.undefined)
     
@@ -43,7 +43,7 @@ object SuccessHiddenEventUIParam {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

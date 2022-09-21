@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object docsV1 {
   
-  /**
-    * Google Docs API
-    *
-    * Reads and writes Google Docs documents.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const docs = google.docs('v1');
-    *
-    * @namespace docs
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Docs
-    */
   @JSImport("googleapis", "docs_v1.Docs")
   @js.native
-  class Docs protected ()
+  open class Docs protected ()
     extends typings.googleapis.docsV1Mod.docsV1.Docs {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,7 +19,7 @@ object docsV1 {
   
   @JSImport("googleapis", "docs_v1.Resource$Documents")
   @js.native
-  class ResourceDocuments protected ()
+  open class ResourceDocuments protected ()
     extends typings.googleapis.docsV1Mod.docsV1.ResourceDocuments {
     def this(context: APIRequestContext) = this()
   }

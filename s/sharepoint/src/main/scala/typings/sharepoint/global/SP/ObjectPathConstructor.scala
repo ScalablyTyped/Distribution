@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ObjectPathConstructor")
 @js.native
-class ObjectPathConstructor protected ()
+open class ObjectPathConstructor protected ()
   extends StObject
      with typings.sharepoint.SP.ObjectPath {
-  def this(context: typings.sharepoint.SP.ClientRuntimeContext, typeId: String, parameters: js.Array[js.Any]) = this()
+  def this(context: typings.sharepoint.SP.ClientRuntimeContext, typeId: String, parameters: js.Array[Any]) = this()
   
   /* CompleteClass */
   override def setPendingReplace(): Unit = js.native

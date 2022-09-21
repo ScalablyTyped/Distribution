@@ -13,7 +13,7 @@ object flyCameraMod {
   
   @JSImport("babylonjs/Cameras/flyCamera", "FlyCamera")
   @js.native
-  class FlyCamera protected () extends TargetCamera {
+  open class FlyCamera protected () extends TargetCamera {
     /**
       * Instantiates a FlyCamera.
       * This is a flying camera, designed for 3D movement and rotation in all directions,
@@ -21,31 +21,41 @@ object flyCameraMod {
       * @param name Define the name of the camera in the scene.
       * @param position Define the starting position of the camera in the scene.
       * @param scene Define the scene the camera belongs to.
-      * @param setActiveOnSceneIfNoneActive Defines wheter the camera should be marked as active, if no other camera has been defined as active.
+      * @param setActiveOnSceneIfNoneActive Defines whether the camera should be marked as active, if no other camera has been defined as active.
       */
+    def this(name: String, position: Vector3) = this()
     def this(name: String, position: Vector3, scene: Scene) = this()
+    def this(name: String, position: Vector3, scene: Unit, setActiveOnSceneIfNoneActive: Boolean) = this()
     def this(name: String, position: Vector3, scene: Scene, setActiveOnSceneIfNoneActive: Boolean) = this()
     
-    /** @hidden */
+    /**
+      * @param displacement
+      * @hidden
+      */
     def _collideWithWorld(displacement: Vector3): Unit = js.native
     
-    /* private */ var _collider: js.Any = js.native
+    /* private */ var _collider: Any = js.native
     
-    /* private */ var _collisionMask: js.Any = js.native
+    /* private */ var _collisionMask: Any = js.native
     
-    /* private */ var _diffPosition: js.Any = js.native
+    /* private */ var _diffPosition: Any = js.native
     
     /** @hidden */
     var _localDirection: Vector3 = js.native
     
-    /* private */ var _needMoveForGravity: js.Any = js.native
+    /* private */ var _needMoveForGravity: Any = js.native
     
-    /* private */ var _newPosition: js.Any = js.native
+    /* private */ var _newPosition: Any = js.native
     
-    /* private */ var _oldPosition: js.Any = js.native
+    /* private */ var _oldPosition: Any = js.native
     
-    /** @hidden */
-    /* private */ var _onCollisionPositionChange: js.Any = js.native
+    /**
+      * @param collisionId
+      * @param newPosition
+      * @param collidedMesh
+      * @hidden
+      */
+    /* private */ var _onCollisionPositionChange: Any = js.native
     
     /**
       * Track Roll to maintain the wanted Rolling when looking around.

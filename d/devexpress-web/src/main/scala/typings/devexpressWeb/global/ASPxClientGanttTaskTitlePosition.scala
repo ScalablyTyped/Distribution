@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGanttTaskTitlePosition")
 @js.native
-class ASPxClientGanttTaskTitlePosition ()
+open class ASPxClientGanttTaskTitlePosition ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGanttTaskTitlePosition {
   

@@ -22,7 +22,7 @@ trait LanguageServiceCompiler extends StObject {
   
   def compilationSettings(): ImmutableCompilationSettings
   
-  /* private */ var compiler: js.Any
+  /* private */ var compiler: Any
   
   def emit(fileName: String, resolvePath: js.Function1[/* path */ String, String]): EmitOutput
   
@@ -56,21 +56,21 @@ trait LanguageServiceCompiler extends StObject {
   
   def getVisibleMemberSymbolsFromAST(ast: AST, document: Document): PullVisibleSymbolsInfo
   
-  /* private */ var host: js.Any
+  /* private */ var host: Any
   
-  /* private */ var hostCache: js.Any
+  /* private */ var hostCache: Any
   
-  /* private */ var logger: js.Any
+  /* private */ var logger: Any
   
   def pullGetDeclInformation(decl: PullDecl, ast: AST, document: Document): PullSymbolInfo
   
-  /* private */ def synchronizeHostData(): js.Any
+  /* private */ def synchronizeHostData(): Any
   
-  /* private */ def synchronizeHostDataWorker(): js.Any
+  /* private */ def synchronizeHostDataWorker(): Any
   
   def topLevelDeclaration(fileName: String): PullDecl
   
-  /* private */ def tryUpdateFile(compiler: js.Any, fileName: js.Any): js.Any
+  /* private */ def tryUpdateFile(compiler: Any, fileName: Any): Any
 }
 object LanguageServiceCompiler {
   
@@ -78,7 +78,7 @@ object LanguageServiceCompiler {
     canEmitDeclarations: String => Boolean,
     cleanupSemanticCache: () => Unit,
     compilationSettings: () => ImmutableCompilationSettings,
-    compiler: js.Any,
+    compiler: Any,
     emit: (String, js.Function1[/* path */ String, String]) => EmitOutput,
     emitDeclarations: (String, js.Function1[/* path */ String, String]) => EmitOutput,
     fileNames: () => js.Array[String],
@@ -95,14 +95,14 @@ object LanguageServiceCompiler {
     getSyntacticDiagnostics: String => js.Array[Diagnostic],
     getVisibleDeclsFromAST: (AST, Document) => js.Array[PullDecl],
     getVisibleMemberSymbolsFromAST: (AST, Document) => PullVisibleSymbolsInfo,
-    host: js.Any,
-    hostCache: js.Any,
-    logger: js.Any,
+    host: Any,
+    hostCache: Any,
+    logger: Any,
     pullGetDeclInformation: (PullDecl, AST, Document) => PullSymbolInfo,
-    synchronizeHostData: () => js.Any,
-    synchronizeHostDataWorker: () => js.Any,
+    synchronizeHostData: () => Any,
+    synchronizeHostDataWorker: () => Any,
     topLevelDeclaration: String => PullDecl,
-    tryUpdateFile: (js.Any, js.Any) => js.Any
+    tryUpdateFile: (Any, Any) => Any
   ): LanguageServiceCompiler = {
     val __obj = js.Dynamic.literal(canEmitDeclarations = js.Any.fromFunction1(canEmitDeclarations), cleanupSemanticCache = js.Any.fromFunction0(cleanupSemanticCache), compilationSettings = js.Any.fromFunction0(compilationSettings), compiler = compiler.asInstanceOf[js.Any], emit = js.Any.fromFunction2(emit), emitDeclarations = js.Any.fromFunction2(emitDeclarations), fileNames = js.Any.fromFunction0(fileNames), getCachedHostFileName = js.Any.fromFunction1(getCachedHostFileName), getCachedTopLevelDeclaration = js.Any.fromFunction1(getCachedTopLevelDeclaration), getCallInformationFromAST = js.Any.fromFunction2(getCallInformationFromAST), getCompilerOptionsDiagnostics = js.Any.fromFunction1(getCompilerOptionsDiagnostics), getContextualMembersFromAST = js.Any.fromFunction2(getContextualMembersFromAST), getDeclForAST = js.Any.fromFunction1(getDeclForAST), getDocument = js.Any.fromFunction1(getDocument), getScriptSnapshot = js.Any.fromFunction1(getScriptSnapshot), getSemanticDiagnostics = js.Any.fromFunction1(getSemanticDiagnostics), getSymbolInformationFromAST = js.Any.fromFunction2(getSymbolInformationFromAST), getSyntacticDiagnostics = js.Any.fromFunction1(getSyntacticDiagnostics), getVisibleDeclsFromAST = js.Any.fromFunction2(getVisibleDeclsFromAST), getVisibleMemberSymbolsFromAST = js.Any.fromFunction2(getVisibleMemberSymbolsFromAST), host = host.asInstanceOf[js.Any], hostCache = hostCache.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], pullGetDeclInformation = js.Any.fromFunction3(pullGetDeclInformation), synchronizeHostData = js.Any.fromFunction0(synchronizeHostData), synchronizeHostDataWorker = js.Any.fromFunction0(synchronizeHostDataWorker), topLevelDeclaration = js.Any.fromFunction1(topLevelDeclaration), tryUpdateFile = js.Any.fromFunction2(tryUpdateFile))
     __obj.asInstanceOf[LanguageServiceCompiler]
@@ -116,7 +116,7 @@ object LanguageServiceCompiler {
     
     inline def setCompilationSettings(value: () => ImmutableCompilationSettings): Self = StObject.set(x, "compilationSettings", js.Any.fromFunction0(value))
     
-    inline def setCompiler(value: js.Any): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+    inline def setCompiler(value: Any): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     
     inline def setEmit(value: (String, js.Function1[/* path */ String, String]) => EmitOutput): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     
@@ -150,20 +150,20 @@ object LanguageServiceCompiler {
     
     inline def setGetVisibleMemberSymbolsFromAST(value: (AST, Document) => PullVisibleSymbolsInfo): Self = StObject.set(x, "getVisibleMemberSymbolsFromAST", js.Any.fromFunction2(value))
     
-    inline def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    inline def setHostCache(value: js.Any): Self = StObject.set(x, "hostCache", value.asInstanceOf[js.Any])
+    inline def setHostCache(value: Any): Self = StObject.set(x, "hostCache", value.asInstanceOf[js.Any])
     
-    inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     inline def setPullGetDeclInformation(value: (PullDecl, AST, Document) => PullSymbolInfo): Self = StObject.set(x, "pullGetDeclInformation", js.Any.fromFunction3(value))
     
-    inline def setSynchronizeHostData(value: () => js.Any): Self = StObject.set(x, "synchronizeHostData", js.Any.fromFunction0(value))
+    inline def setSynchronizeHostData(value: () => Any): Self = StObject.set(x, "synchronizeHostData", js.Any.fromFunction0(value))
     
-    inline def setSynchronizeHostDataWorker(value: () => js.Any): Self = StObject.set(x, "synchronizeHostDataWorker", js.Any.fromFunction0(value))
+    inline def setSynchronizeHostDataWorker(value: () => Any): Self = StObject.set(x, "synchronizeHostDataWorker", js.Any.fromFunction0(value))
     
     inline def setTopLevelDeclaration(value: String => PullDecl): Self = StObject.set(x, "topLevelDeclaration", js.Any.fromFunction1(value))
     
-    inline def setTryUpdateFile(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "tryUpdateFile", js.Any.fromFunction2(value))
+    inline def setTryUpdateFile(value: (Any, Any) => Any): Self = StObject.set(x, "tryUpdateFile", js.Any.fromFunction2(value))
   }
 }

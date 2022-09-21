@@ -10,10 +10,10 @@ A function that accepts the full name of a person in any format, parses it, and 
 | ------------------ | :-------------: |
 | Full name          | parse-full-name |
 | Keywords           | parse, parser, name, full name, first name, middle name, last name, nickname |
-| # releases         | 1 |
-| # dependents       | 10 |
-| # downloads        | 794185 |
-| # stars            | 4 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 144155.33333333334 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/RateGravity/parse-full-name)

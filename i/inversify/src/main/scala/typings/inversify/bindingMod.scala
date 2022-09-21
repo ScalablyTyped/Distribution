@@ -1,9 +1,11 @@
 package typings.inversify
 
+import typings.inversify.interfacesMod.interfaces.BindingActivation
+import typings.inversify.interfacesMod.interfaces.BindingDeactivation
 import typings.inversify.interfacesMod.interfaces.BindingScope
 import typings.inversify.interfacesMod.interfaces.BindingType
 import typings.inversify.interfacesMod.interfaces.ConstraintFunction
-import typings.inversify.interfacesMod.interfaces.Context
+import typings.inversify.interfacesMod.interfaces.DynamicValue
 import typings.inversify.interfacesMod.interfaces.FactoryCreator
 import typings.inversify.interfacesMod.interfaces.Newable
 import typings.inversify.interfacesMod.interfaces.ProviderCreator
@@ -15,18 +17,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bindingMod {
   
-  @JSImport("inversify/dts/bindings/binding", "Binding")
+  @JSImport("inversify/lib/bindings/binding", "Binding")
   @js.native
-  class Binding[T] protected ()
+  open class Binding[TActivated] protected ()
     extends StObject
-       with typings.inversify.interfacesMod.interfaces.Binding[T] {
-    def this(serviceIdentifier: ServiceIdentifier[T], scope: BindingScope) = this()
+       with typings.inversify.interfacesMod.interfaces.Binding[TActivated] {
+    def this(serviceIdentifier: ServiceIdentifier[TActivated], scope: BindingScope) = this()
     
     /* CompleteClass */
     var activated: Boolean = js.native
     
     /* CompleteClass */
-    var cache: T | Null = js.native
+    var cache: Null | TActivated | js.Promise[TActivated] = js.native
     
     /* CompleteClass */
     override def constraint(): Boolean = js.native
@@ -37,31 +39,34 @@ object bindingMod {
     var constraint_Original: ConstraintFunction = js.native
     
     /* CompleteClass */
-    var dynamicValue: (js.Function1[/* context */ Context, T]) | Null = js.native
+    var dynamicValue: DynamicValue[TActivated] | Null = js.native
     
     /* CompleteClass */
-    var factory: FactoryCreator[js.Any] | Null = js.native
+    var factory: (FactoryCreator[Any, js.Array[Any], js.Array[Any]]) | Null = js.native
     
     /* CompleteClass */
     var id: Double = js.native
     
     /* CompleteClass */
-    var implementationType: Newable[T] | Null = js.native
+    var implementationType: Newable[TActivated] | TActivated | Null = js.native
     
     /* CompleteClass */
-    var moduleId: String = js.native
+    var moduleId: Double = js.native
     
     /* CompleteClass */
-    var onActivation: (js.Function2[/* context */ Context, T, T]) | Null = js.native
+    var onActivation: BindingActivation[TActivated] | Null = js.native
     
     /* CompleteClass */
-    var provider: ProviderCreator[js.Any] | Null = js.native
+    var onDeactivation: BindingDeactivation[TActivated] | Null = js.native
+    
+    /* CompleteClass */
+    var provider: ProviderCreator[Any] | Null = js.native
     
     /* CompleteClass */
     var scope: BindingScope = js.native
     
     /* CompleteClass */
-    var serviceIdentifier: ServiceIdentifier[T] = js.native
+    var serviceIdentifier: ServiceIdentifier[TActivated] = js.native
     
     /* CompleteClass */
     var `type`: BindingType = js.native

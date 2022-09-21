@@ -95,7 +95,7 @@ object mod {
     
     var closeHtml: js.UndefOr[String] = js.undefined
     
-    var directiveData: js.UndefOr[js.Any] = js.undefined
+    var directiveData: js.UndefOr[Any] = js.undefined
     
     /**
       * Called when the toast has been removed.
@@ -150,7 +150,7 @@ object mod {
       
       inline def setCloseHtmlUndefined: Self = StObject.set(x, "closeHtml", js.undefined)
       
-      inline def setDirectiveData(value: js.Any): Self = StObject.set(x, "directiveData", value.asInstanceOf[js.Any])
+      inline def setDirectiveData(value: Any): Self = StObject.set(x, "directiveData", value.asInstanceOf[js.Any])
       
       inline def setDirectiveDataUndefined: Self = StObject.set(x, "directiveData", js.undefined)
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaLiveChatMessageDeletedDetails extends StObject {
   
-  var deletedMessageId: js.UndefOr[String] = js.undefined
+  var deletedMessageId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLiveChatMessageDeletedDetails {
   
@@ -18,6 +18,8 @@ object SchemaLiveChatMessageDeletedDetails {
   extension [Self <: SchemaLiveChatMessageDeletedDetails](x: Self) {
     
     inline def setDeletedMessageId(value: String): Self = StObject.set(x, "deletedMessageId", value.asInstanceOf[js.Any])
+    
+    inline def setDeletedMessageIdNull: Self = StObject.set(x, "deletedMessageId", null)
     
     inline def setDeletedMessageIdUndefined: Self = StObject.set(x, "deletedMessageId", js.undefined)
   }

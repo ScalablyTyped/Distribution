@@ -14,7 +14,7 @@ object Gme {
     */
   @JSGlobal("Gme.Client")
   @js.native
-  class Client ()
+  open class Client ()
     extends StObject
        with typings.webgme.Gme.Client
   

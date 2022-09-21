@@ -9,7 +9,7 @@ object util {
   
   @JSImport("yandex-maps", "util.Storage")
   @js.native
-  class Storage () extends StObject {
+  open class Storage () extends StObject {
     
     def add(key: String, `object`: js.Object): this.type = js.native
     
@@ -23,7 +23,7 @@ object util {
     
     @JSImport("yandex-maps", "util.cursor.Accessor")
     @js.native
-    class Accessor protected () extends StObject {
+    open class Accessor protected () extends StObject {
       def this(key: String) = this()
       
       def getKey(): String = js.native
@@ -35,7 +35,7 @@ object util {
     
     @JSImport("yandex-maps", "util.cursor.Manager")
     @js.native
-    class Manager protected () extends StObject {
+    open class Manager protected () extends StObject {
       def this(element: HTMLElement) = this()
       
       def push(key: String): Accessor = js.native

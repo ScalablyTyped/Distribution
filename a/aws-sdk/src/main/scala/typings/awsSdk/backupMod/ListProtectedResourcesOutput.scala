@@ -12,7 +12,7 @@ trait ListProtectedResourcesOutput extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of resources successfully backed up by AWS Backup including the time the resource was saved, an Amazon Resource Name (ARN) of the resource, and a resource type.
+    * An array of resources successfully backed up by Backup including the time the resource was saved, an Amazon Resource Name (ARN) of the resource, and a resource type.
     */
   var Results: js.UndefOr[ProtectedResourcesList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListProtectedResourcesOutput {
     
     inline def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     
-    inline def setResultsVarargs(value: ProtectedResource*): Self = StObject.set(x, "Results", js.Array(value :_*))
+    inline def setResultsVarargs(value: ProtectedResource*): Self = StObject.set(x, "Results", js.Array(value*))
   }
 }

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  inline def apply(release: String): String = ^.asInstanceOf[js.Dynamic].apply(release.asInstanceOf[js.Any]).asInstanceOf[String]
-  
   @JSImport("windows-release", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  inline def default(release: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(release.asInstanceOf[js.Any]).asInstanceOf[String]
 }

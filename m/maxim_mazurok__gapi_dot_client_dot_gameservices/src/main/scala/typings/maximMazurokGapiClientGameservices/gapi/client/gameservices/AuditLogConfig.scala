@@ -27,7 +27,7 @@ object AuditLogConfig {
     
     inline def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
     
-    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
+    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value*))
     
     inline def setIgnoreChildExemptions(value: Boolean): Self = StObject.set(x, "ignoreChildExemptions", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.materialFormField
 
+import typings.materialBase.Element
 import typings.materialFormField.anon.PartialMDCFormFieldAdapte
-import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +11,13 @@ object mod {
   
   @JSImport("@material/form-field", "MDCFormField")
   @js.native
-  class MDCFormField protected ()
+  open class MDCFormField protected ()
     extends typings.materialFormField.componentMod.MDCFormField {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialFormField.foundationMod.MDCFormFieldFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -32,7 +32,7 @@ object mod {
   
   @JSImport("@material/form-field", "MDCFormFieldFoundation")
   @js.native
-  class MDCFormFieldFoundation ()
+  open class MDCFormFieldFoundation ()
     extends typings.materialFormField.foundationMod.MDCFormFieldFoundation {
     def this(adapter: PartialMDCFormFieldAdapte) = this()
   }

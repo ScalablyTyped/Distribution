@@ -12,8 +12,8 @@ object mod {
   
   @JSImport("react-highlight-words", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[HighlighterProps, js.Object, js.Any]
+  open class default ()
+    extends Component[HighlighterProps, js.Object, Any]
   
   trait Chunk extends StObject {
     
@@ -44,13 +44,13 @@ object mod {
     
     var sanitize: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
     
-    var searchWords: js.Array[String]
+    var searchWords: js.Array[String | js.RegExp]
     
     var textToHighlight: String
   }
   object FindChunks {
     
-    inline def apply(searchWords: js.Array[String], textToHighlight: String): FindChunks = {
+    inline def apply(searchWords: js.Array[String | js.RegExp], textToHighlight: String): FindChunks = {
       val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any], textToHighlight = textToHighlight.asInstanceOf[js.Any])
       __obj.asInstanceOf[FindChunks]
     }
@@ -69,20 +69,20 @@ object mod {
       
       inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
       
-      inline def setSearchWords(value: js.Array[String]): Self = StObject.set(x, "searchWords", value.asInstanceOf[js.Any])
+      inline def setSearchWords(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "searchWords", value.asInstanceOf[js.Any])
       
-      inline def setSearchWordsVarargs(value: String*): Self = StObject.set(x, "searchWords", js.Array(value :_*))
+      inline def setSearchWordsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "searchWords", js.Array(value*))
       
       inline def setTextToHighlight(value: String): Self = StObject.set(x, "textToHighlight", value.asInstanceOf[js.Any])
     }
   }
   
-  type Highlighter = Component[HighlighterProps, js.Object, js.Any]
+  type Highlighter = Component[HighlighterProps, js.Object, Any]
   
   trait HighlighterProps
     extends StObject
        with /** Allows to pass through any parameter to wrapped component */
-  /* index */ StringDictionary[js.Any] {
+  /* index */ StringDictionary[Any] {
     
     /** The class name to be applied to an active match. Use along with activeIndex */
     var activeClassName: js.UndefOr[String] = js.undefined
@@ -119,7 +119,7 @@ object mod {
       * Type of tag to wrap around highlighted matches; defaults to mark but can also be a React element
       * (class or functional)
       */
-    var highlightTag: js.UndefOr[String | ComponentType[js.Any]] = js.undefined
+    var highlightTag: js.UndefOr[String | ComponentType[Any]] = js.undefined
     
     /**
       * Process each search word and text to highlight before comparing (eg remove accents); signature
@@ -128,7 +128,7 @@ object mod {
     var sanitize: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
     
     /** Array of search words. The search terms are treated as RegExps unless autoEscape is set. */
-    var searchWords: js.Array[String]
+    var searchWords: js.Array[String | js.RegExp]
     
     /** Text to highlight matches in */
     var textToHighlight: String
@@ -141,7 +141,7 @@ object mod {
   }
   object HighlighterProps {
     
-    inline def apply(searchWords: js.Array[String], textToHighlight: String): HighlighterProps = {
+    inline def apply(searchWords: js.Array[String | js.RegExp], textToHighlight: String): HighlighterProps = {
       val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any], textToHighlight = textToHighlight.asInstanceOf[js.Any])
       __obj.asInstanceOf[HighlighterProps]
     }
@@ -184,7 +184,7 @@ object mod {
       
       inline def setHighlightStyleUndefined: Self = StObject.set(x, "highlightStyle", js.undefined)
       
-      inline def setHighlightTag(value: String | ComponentType[js.Any]): Self = StObject.set(x, "highlightTag", value.asInstanceOf[js.Any])
+      inline def setHighlightTag(value: String | ComponentType[Any]): Self = StObject.set(x, "highlightTag", value.asInstanceOf[js.Any])
       
       inline def setHighlightTagUndefined: Self = StObject.set(x, "highlightTag", js.undefined)
       
@@ -192,9 +192,9 @@ object mod {
       
       inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
       
-      inline def setSearchWords(value: js.Array[String]): Self = StObject.set(x, "searchWords", value.asInstanceOf[js.Any])
+      inline def setSearchWords(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "searchWords", value.asInstanceOf[js.Any])
       
-      inline def setSearchWordsVarargs(value: String*): Self = StObject.set(x, "searchWords", js.Array(value :_*))
+      inline def setSearchWordsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "searchWords", js.Array(value*))
       
       inline def setTextToHighlight(value: String): Self = StObject.set(x, "textToHighlight", value.asInstanceOf[js.Any])
       

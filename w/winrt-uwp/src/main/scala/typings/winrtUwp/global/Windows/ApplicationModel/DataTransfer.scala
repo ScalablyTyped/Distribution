@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackageOperation
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
@@ -37,10 +36,10 @@ object DataTransfer {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_contentchanged(`type`: contentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_contentchanged(`type`: contentchanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Removes all data from the Clipboard. */
     /* static member */
@@ -61,14 +60,14 @@ object DataTransfer {
     /* static member */
     @JSGlobal("Windows.ApplicationModel.DataTransfer.Clipboard.oncontentchanged")
     @js.native
-    def oncontentchanged: EventHandler[js.Any] = js.native
-    inline def oncontentchanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncontentchanged")(x.asInstanceOf[js.Any])
+    def oncontentchanged: EventHandler[Any] = js.native
+    inline def oncontentchanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncontentchanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_contentchanged(`type`: contentchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_contentchanged(`type`: contentchanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets the current content that is stored in the clipboard object.
@@ -82,7 +81,7 @@ object DataTransfer {
   @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackage")
   @js.native
   /** Constructor that creates a new DataPackage . */
-  class DataPackage ()
+  open class DataPackage ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackage
   
@@ -149,14 +148,14 @@ object DataTransfer {
       * @return The first item in the DataPackage object.
       */
     /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+    override def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
     
     /**
       * Gets an immutable view of the property set.
       * @return The immutable view.
       */
     /* CompleteClass */
-    override def getView(): IMapView[String, js.Any] = js.native
+    override def getView(): IMapView[String, Any] = js.native
     
     /**
       * Indicates whether the DataPackagePropertySet object contains a specific property.
@@ -173,7 +172,7 @@ object DataTransfer {
       * @return True if the method replaced a value that already existed for the key; false if this is a new key.
       */
     /* CompleteClass */
-    override def insert(key: String, value: js.Any): Boolean = js.native
+    override def insert(key: String, value: Any): Boolean = js.native
     
     /** Gets or sets a background color for the sharing app's Square30x30Logo . */
     /* CompleteClass */
@@ -185,7 +184,7 @@ object DataTransfer {
       * @return The value, if an item with the specified key exists. Otherwise, an error code.
       */
     /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
+    override def lookup(key: String): Any = js.native
     
     /** Gets or sets the package family name of the source app. */
     /* CompleteClass */
@@ -255,7 +254,7 @@ object DataTransfer {
       * @return The first item in the DataPackage object.
       */
     /* CompleteClass */
-    override def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+    override def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
     
     /**
       * Indicates whether the DataPackagePropertySetView object contains a specific property.
@@ -275,7 +274,7 @@ object DataTransfer {
       * @return The value, if an item with the specified key exists. Otherwise, an error code.
       */
     /* CompleteClass */
-    override def lookup(key: String): js.Any = js.native
+    override def lookup(key: String): Any = js.native
     
     /** Gets the package family name of the source app. */
     /* CompleteClass */
@@ -332,7 +331,7 @@ object DataTransfer {
     
     /** Gets the deadline for finishing a delayed rendering operation. If execution goes beyond that deadline, the results of delayed rendering are ignored. */
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /** Specifies the format id. */
     /* CompleteClass */
@@ -350,7 +349,7 @@ object DataTransfer {
       * @param value The object associated with a particular format in the DataPackage .
       */
     /* CompleteClass */
-    override def setData(value: js.Any): Unit = js.native
+    override def setData(value: Any): Unit = js.native
   }
   
   /** Lets your app supply the content the user wants to share or specify a message, if an error occurs. */
@@ -366,7 +365,7 @@ object DataTransfer {
     
     /** Gets the deadline for finishing a delayed rendering operation. If execution goes beyond that deadline, the results of delayed rendering are ignored. */
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /**
       * Cancels the sharing operation and supplies an error string to display to the user.
@@ -468,7 +467,7 @@ object DataTransfer {
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs {
     
     /* CompleteClass */
-    var acceptedFormatId: js.Any = js.native
+    var acceptedFormatId: Any = js.native
     
     /* unmapped type */
     /** Specifies the operation that the target app completed. */
@@ -483,7 +482,7 @@ object DataTransfer {
     @JSGlobal("Windows.ApplicationModel.DataTransfer.ShareTarget.QuickLink")
     @js.native
     /** Creates a new instance of a QuickLink object. */
-    class QuickLink ()
+    open class QuickLink ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.ShareTarget.QuickLink {
       

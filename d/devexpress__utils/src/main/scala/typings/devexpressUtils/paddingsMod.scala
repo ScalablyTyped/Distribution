@@ -10,7 +10,7 @@ object paddingsMod {
   
   @JSImport("@devexpress/utils/lib/geometry/paddings", "Paddings")
   @js.native
-  class Paddings protected ()
+  open class Paddings protected ()
     extends Offsets
        with ICloneable[Paddings] {
     def this(left: Double, right: Double, top: Double, bottom: Double) = this()

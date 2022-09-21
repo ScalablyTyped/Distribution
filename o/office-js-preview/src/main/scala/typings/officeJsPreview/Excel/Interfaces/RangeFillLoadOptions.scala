@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the background of a range object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait RangeFillLoadOptions extends StObject {
@@ -19,44 +19,44 @@ trait RangeFillLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * HTML color code representing the color of the background, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
     *
-    * HTML color code representing the color of the background, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The pattern of a range. See `Excel.FillPattern` for details. LinearGradient and RectangularGradient are not supported.
+    A `null` value indicates that the entire range doesn't have a uniform pattern setting.
     *
-    * The pattern of a range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
-    A null value indicates that the entire range doesn't have uniform pattern setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pattern: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
     *
-    * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternColor: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies a double that lightens or darkens a pattern color for the range fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the range doesn't have uniform `patternTintAndShade` settings.
     *
-    * Specifies a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    If the pattern tintAndShades are not uniform, null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternTintAndShade: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies a double that lightens or darkens a color for the range fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the range doesn't have uniform `tintAndShade` settings.
     *
-    * Specifies a double that lightens or darkens a color for Range Fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    If the tintAndShades are not uniform, null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Boolean] = js.undefined

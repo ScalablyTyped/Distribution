@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorCommandArguments")
 @js.native
-class ASPxClientHtmlEditorCommandArguments protected ()
+open class ASPxClientHtmlEditorCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorCommandArguments {
   /**
@@ -18,11 +18,11 @@ class ASPxClientHtmlEditorCommandArguments protected ()
     * @param selectedElement The selected element.
     */
   def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor) = this()
-  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: Any) = this()
   
   /**
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
   /* CompleteClass */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any = js.native
 }

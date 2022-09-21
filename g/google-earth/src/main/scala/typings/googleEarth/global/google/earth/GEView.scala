@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.GEView")
 @js.native
-class GEView ()
+open class GEView ()
   extends StObject
      with typings.googleEarth.google.earth.GEView {
   

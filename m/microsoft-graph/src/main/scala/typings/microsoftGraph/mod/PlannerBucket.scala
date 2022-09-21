@@ -51,6 +51,6 @@ object PlannerBucket {
     
     inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    inline def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value*))
   }
 }

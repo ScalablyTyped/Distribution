@@ -25,12 +25,12 @@ object TranslateTextResponse {
     
     inline def setGlossaryTranslationsUndefined: Self = StObject.set(x, "glossaryTranslations", js.undefined)
     
-    inline def setGlossaryTranslationsVarargs(value: Translation*): Self = StObject.set(x, "glossaryTranslations", js.Array(value :_*))
+    inline def setGlossaryTranslationsVarargs(value: Translation*): Self = StObject.set(x, "glossaryTranslations", js.Array(value*))
     
     inline def setTranslations(value: js.Array[Translation]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
-    inline def setTranslationsVarargs(value: Translation*): Self = StObject.set(x, "translations", js.Array(value :_*))
+    inline def setTranslationsVarargs(value: Translation*): Self = StObject.set(x, "translations", js.Array(value*))
   }
 }

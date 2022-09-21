@@ -65,7 +65,7 @@ object AwsRdsDbSubnetGroup {
     
     inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    inline def setSubnetsVarargs(value: AwsRdsDbSubnetGroupSubnet*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: AwsRdsDbSubnetGroupSubnet*): Self = StObject.set(x, "Subnets", js.Array(value*))
     
     inline def setVpcId(value: NonEmptyString): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

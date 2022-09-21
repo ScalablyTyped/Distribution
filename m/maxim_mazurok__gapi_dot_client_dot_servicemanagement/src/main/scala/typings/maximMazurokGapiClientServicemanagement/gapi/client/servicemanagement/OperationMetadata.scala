@@ -35,7 +35,7 @@ object OperationMetadata {
     
     inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
-    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value*))
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object OperationMetadata {
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

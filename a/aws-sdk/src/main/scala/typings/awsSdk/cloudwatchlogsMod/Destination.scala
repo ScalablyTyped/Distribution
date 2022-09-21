@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Destination extends StObject {
   
   /**
-    * An IAM policy document that governs which AWS accounts can create subscription filters against this destination.
+    * An IAM policy document that governs which Amazon Web Services accounts can create subscription filters against this destination.
     */
   var accessPolicy: js.UndefOr[AccessPolicy] = js.undefined
   

@@ -11,7 +11,7 @@ object volumeViewMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/volume/volume.view", JSImport.Default)
   @js.native
-  class default protected () extends VolumeView {
+  open class default protected () extends VolumeView {
     def this(config: IVolumeViewConfig) = this()
   }
   
@@ -20,57 +20,57 @@ object volumeViewMod {
     extends typings.playable.viewMod.default[IVolumeViewStyles] {
     
     /* private */ @JSName("_$hitbox")
-    var _$hitbox: js.Any = js.native
+    var _$hitbox: Any = js.native
     
     /* private */ @JSName("_$muteToggle")
-    var _$muteToggle: js.Any = js.native
+    var _$muteToggle: Any = js.native
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
     /* private */ @JSName("_$volume")
-    var _$volume: js.Any = js.native
+    var _$volume: Any = js.native
     
     /* private */ @JSName("_$volumeContainer")
-    var _$volumeContainer: js.Any = js.native
+    var _$volumeContainer: Any = js.native
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
-    /* private */ var _isDragging: js.Any = js.native
+    /* private */ var _isDragging: Any = js.native
     
-    /* private */ var _muteToggleTooltipReference: js.Any = js.native
+    /* private */ var _muteToggleTooltipReference: Any = js.native
     
-    /* private */ var _onButtonClick: js.Any = js.native
+    /* private */ var _onButtonClick: Any = js.native
     
-    /* private */ var _setMuteDOMAttributes: js.Any = js.native
+    /* private */ var _setMuteDOMAttributes: Any = js.native
     
-    /* private */ var _setVolumeByClick: js.Any = js.native
+    /* private */ var _setVolumeByClick: Any = js.native
     
-    /* private */ var _setVolumeByDrag: js.Any = js.native
+    /* private */ var _setVolumeByDrag: Any = js.native
     
-    /* private */ var _setVolumeByWheel: js.Any = js.native
+    /* private */ var _setVolumeByWheel: Any = js.native
     
-    /* private */ var _setVolumeDOMAttributes: js.Any = js.native
+    /* private */ var _setVolumeDOMAttributes: Any = js.native
     
-    /* private */ var _startDrag: js.Any = js.native
+    /* private */ var _startDrag: Any = js.native
     
-    /* private */ var _startDragOnMouseDown: js.Any = js.native
+    /* private */ var _startDragOnMouseDown: Any = js.native
     
-    /* private */ var _stopDrag: js.Any = js.native
+    /* private */ var _stopDrag: Any = js.native
     
-    /* private */ var _stopDragOnMouseUp: js.Any = js.native
+    /* private */ var _stopDragOnMouseUp: Any = js.native
     
-    /* private */ var _textMap: js.Any = js.native
+    /* private */ var _textMap: Any = js.native
     
-    /* private */ var _tooltipService: js.Any = js.native
+    /* private */ var _tooltipService: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def destroy(): Unit = js.native
     

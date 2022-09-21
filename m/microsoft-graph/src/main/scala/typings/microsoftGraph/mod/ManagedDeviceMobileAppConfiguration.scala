@@ -56,7 +56,7 @@ object ManagedDeviceMobileAppConfiguration {
     
     inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    inline def setAssignmentsVarargs(value: ManagedDeviceMobileAppConfigurationAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: ManagedDeviceMobileAppConfigurationAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object ManagedDeviceMobileAppConfiguration {
     
     inline def setDeviceStatusesUndefined: Self = StObject.set(x, "deviceStatuses", js.undefined)
     
-    inline def setDeviceStatusesVarargs(value: ManagedDeviceMobileAppConfigurationDeviceStatus*): Self = StObject.set(x, "deviceStatuses", js.Array(value :_*))
+    inline def setDeviceStatusesVarargs(value: ManagedDeviceMobileAppConfigurationDeviceStatus*): Self = StObject.set(x, "deviceStatuses", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -96,7 +96,7 @@ object ManagedDeviceMobileAppConfiguration {
     
     inline def setTargetedMobileAppsUndefined: Self = StObject.set(x, "targetedMobileApps", js.undefined)
     
-    inline def setTargetedMobileAppsVarargs(value: String*): Self = StObject.set(x, "targetedMobileApps", js.Array(value :_*))
+    inline def setTargetedMobileAppsVarargs(value: String*): Self = StObject.set(x, "targetedMobileApps", js.Array(value*))
     
     inline def setUserStatusSummary(value: NullableOption[ManagedDeviceMobileAppConfigurationUserSummary]): Self = StObject.set(x, "userStatusSummary", value.asInstanceOf[js.Any])
     
@@ -110,7 +110,7 @@ object ManagedDeviceMobileAppConfiguration {
     
     inline def setUserStatusesUndefined: Self = StObject.set(x, "userStatuses", js.undefined)
     
-    inline def setUserStatusesVarargs(value: ManagedDeviceMobileAppConfigurationUserStatus*): Self = StObject.set(x, "userStatuses", js.Array(value :_*))
+    inline def setUserStatusesVarargs(value: ManagedDeviceMobileAppConfigurationUserStatus*): Self = StObject.set(x, "userStatuses", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

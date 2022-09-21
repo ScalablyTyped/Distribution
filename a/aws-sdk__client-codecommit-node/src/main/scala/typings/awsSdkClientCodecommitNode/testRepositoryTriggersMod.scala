@@ -8,5 +8,5 @@ object testRepositoryTriggersMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/TestRepositoryTriggers", "TestRepositoryTriggers")
   @js.native
-  val TestRepositoryTriggers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val TestRepositoryTriggers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

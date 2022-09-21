@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("bintrees", "BinTree")
   @js.native
-  class BinTree[T] protected ()
+  open class BinTree[T] protected ()
     extends StObject
        with TreeBase[T] {
     def this(comparator: Comparator[T]) = this()
@@ -20,10 +20,10 @@ object mod {
     override def each(cb: Callback[T]): Unit = js.native
     
     /* CompleteClass */
-    override def find(data: T): T = js.native
+    override def find(data: T): T | Null = js.native
     
     /* CompleteClass */
-    override def findIter(data: T): Iterator[T] = js.native
+    override def findIter(data: T): Iterator[T] | Null = js.native
     
     def insert(item: T): Boolean = js.native
     
@@ -34,10 +34,10 @@ object mod {
     override def lowerBound(item: T): Iterator[T] = js.native
     
     /* CompleteClass */
-    override def max(): T = js.native
+    override def max(): T | Null = js.native
     
     /* CompleteClass */
-    override def min(): T = js.native
+    override def min(): T | Null = js.native
     
     /* CompleteClass */
     override def reach(cb: Callback[T]): Unit = js.native
@@ -53,7 +53,7 @@ object mod {
   
   @JSImport("bintrees", "RBTree")
   @js.native
-  class RBTree[T] protected ()
+  open class RBTree[T] protected ()
     extends StObject
        with TreeBase[T] {
     def this(comparator: Comparator[T]) = this()
@@ -65,10 +65,10 @@ object mod {
     override def each(cb: Callback[T]): Unit = js.native
     
     /* CompleteClass */
-    override def find(data: T): T = js.native
+    override def find(data: T): T | Null = js.native
     
     /* CompleteClass */
-    override def findIter(data: T): Iterator[T] = js.native
+    override def findIter(data: T): Iterator[T] | Null = js.native
     
     def insert(item: T): Boolean = js.native
     
@@ -79,10 +79,10 @@ object mod {
     override def lowerBound(item: T): Iterator[T] = js.native
     
     /* CompleteClass */
-    override def max(): T = js.native
+    override def max(): T | Null = js.native
     
     /* CompleteClass */
-    override def min(): T = js.native
+    override def min(): T | Null = js.native
     
     /* CompleteClass */
     override def reach(cb: Callback[T]): Unit = js.native
@@ -102,26 +102,26 @@ object mod {
   
   trait Iterator[T] extends StObject {
     
-    def data(): T
+    def data(): T | Null
     
-    def next(): T
+    def next(): T | Null
     
-    def prev(): T
+    def prev(): T | Null
   }
   object Iterator {
     
-    inline def apply[T](data: () => T, next: () => T, prev: () => T): Iterator[T] = {
+    inline def apply[T](data: () => T | Null, next: () => T | Null, prev: () => T | Null): Iterator[T] = {
       val __obj = js.Dynamic.literal(data = js.Any.fromFunction0(data), next = js.Any.fromFunction0(next), prev = js.Any.fromFunction0(prev))
       __obj.asInstanceOf[Iterator[T]]
     }
     
     extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
       
-      inline def setData(value: () => T): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      inline def setData(value: () => T | Null): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
-      inline def setNext(value: () => T): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => T | Null): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      inline def setPrev(value: () => T): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+      inline def setPrev(value: () => T | Null): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     }
   }
   
@@ -131,17 +131,17 @@ object mod {
     
     def each(cb: Callback[T]): Unit
     
-    def find(data: T): T
+    def find(data: T): T | Null
     
-    def findIter(data: T): Iterator[T]
+    def findIter(data: T): Iterator[T] | Null
     
     def iterator(): Iterator[T]
     
     def lowerBound(item: T): Iterator[T]
     
-    def max(): T
+    def max(): T | Null
     
-    def min(): T
+    def min(): T | Null
     
     def reach(cb: Callback[T]): Unit
     
@@ -154,12 +154,12 @@ object mod {
     inline def apply[T](
       clear: () => Unit,
       each: Callback[T] => Unit,
-      find: T => T,
-      findIter: T => Iterator[T],
+      find: T => T | Null,
+      findIter: T => Iterator[T] | Null,
       iterator: () => Iterator[T],
       lowerBound: T => Iterator[T],
-      max: () => T,
-      min: () => T,
+      max: () => T | Null,
+      min: () => T | Null,
       reach: Callback[T] => Unit,
       size: Double,
       upperBound: T => Iterator[T]
@@ -174,17 +174,17 @@ object mod {
       
       inline def setEach(value: Callback[T] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
       
-      inline def setFind(value: T => T): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+      inline def setFind(value: T => T | Null): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      inline def setFindIter(value: T => Iterator[T]): Self = StObject.set(x, "findIter", js.Any.fromFunction1(value))
+      inline def setFindIter(value: T => Iterator[T] | Null): Self = StObject.set(x, "findIter", js.Any.fromFunction1(value))
       
       inline def setIterator(value: () => Iterator[T]): Self = StObject.set(x, "iterator", js.Any.fromFunction0(value))
       
       inline def setLowerBound(value: T => Iterator[T]): Self = StObject.set(x, "lowerBound", js.Any.fromFunction1(value))
       
-      inline def setMax(value: () => T): Self = StObject.set(x, "max", js.Any.fromFunction0(value))
+      inline def setMax(value: () => T | Null): Self = StObject.set(x, "max", js.Any.fromFunction0(value))
       
-      inline def setMin(value: () => T): Self = StObject.set(x, "min", js.Any.fromFunction0(value))
+      inline def setMin(value: () => T | Null): Self = StObject.set(x, "min", js.Any.fromFunction0(value))
       
       inline def setReach(value: Callback[T] => Unit): Self = StObject.set(x, "reach", js.Any.fromFunction1(value))
       

@@ -25,7 +25,7 @@ object FloodlightConfigurationsListResponse {
     
     inline def setFloodlightConfigurationsUndefined: Self = StObject.set(x, "floodlightConfigurations", js.undefined)
     
-    inline def setFloodlightConfigurationsVarargs(value: FloodlightConfiguration*): Self = StObject.set(x, "floodlightConfigurations", js.Array(value :_*))
+    inline def setFloodlightConfigurationsVarargs(value: FloodlightConfiguration*): Self = StObject.set(x, "floodlightConfigurations", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

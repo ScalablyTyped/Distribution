@@ -59,7 +59,7 @@ object PlaceAutocompleteResult {
     
     inline def setMatched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "matched_substrings", value.asInstanceOf[js.Any])
     
-    inline def setMatched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matched_substrings", js.Array(value :_*))
+    inline def setMatched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matched_substrings", js.Array(value*))
     
     inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
@@ -67,10 +67,10 @@ object PlaceAutocompleteResult {
     
     inline def setTerms(value: js.Array[PredictionTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
-    inline def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
+    inline def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value*))
     
     inline def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

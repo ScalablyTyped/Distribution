@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ContentControlListEntry")
 @js.native
-/* private */ class ContentControlListEntry ()
+/* private */ open class ContentControlListEntry ()
   extends StObject
      with typings.activexWord.Word.ContentControlListEntry {
   
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def MoveUp(): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Select(): Unit = js.native

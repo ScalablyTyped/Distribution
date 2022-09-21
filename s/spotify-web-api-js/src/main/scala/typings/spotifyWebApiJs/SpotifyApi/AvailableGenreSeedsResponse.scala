@@ -25,6 +25,6 @@ object AvailableGenreSeedsResponse {
     
     inline def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
-    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
+    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value*))
   }
 }

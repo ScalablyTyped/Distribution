@@ -4,33 +4,35 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PngOptions extends StObject {
+trait PngOptions
+  extends StObject
+     with OutputOptions {
   
-  /** use adaptive row filtering (optional, default false) */
+  /** Use adaptive row filtering (optional, default false) */
   var adaptiveFiltering: js.UndefOr[Boolean] = js.undefined
   
-  /** Alternative Spelling of "colours". Maximum number of palette entries, requires libimagequant (optional, default 256) */
+  /** Alternative Spelling of "colours". Maximum number of palette entries (optional, default 256) */
   var colors: js.UndefOr[Double] = js.undefined
   
-  /** Maximum number of palette entries, requires libimagequant (optional, default 256) */
+  /** Maximum number of palette entries (optional, default 256) */
   var colours: js.UndefOr[Double] = js.undefined
   
-  /** zlib compression level, 0-9 (optional, default 9) */
+  /** zlib compression level, 0-9 (optional, default 6) */
   var compressionLevel: js.UndefOr[Double] = js.undefined
   
-  /**  Level of Floyd-Steinberg error diffusion, requires libimagequant (optional, default 1.0) */
+  /**  Level of Floyd-Steinberg error diffusion (optional, default 1.0) */
   var dither: js.UndefOr[Double] = js.undefined
   
-  /** Force PNG output, otherwise attempt to use input format (optional, default  true) */
-  var force: js.UndefOr[Boolean] = js.undefined
+  /** Level of CPU effort to reduce file size, between 1 (fastest) and 10 (slowest), sets palette to true (optional, default 7) */
+  var effort: js.UndefOr[Double] = js.undefined
   
-  /** Quantise to a palette-based image with alpha transparency support, requires libimagequant (optional, default false) */
+  /** Quantise to a palette-based image with alpha transparency support (optional, default false) */
   var palette: js.UndefOr[Boolean] = js.undefined
   
   /** Use progressive (interlace) scan (optional, default false) */
   var progressive: js.UndefOr[Boolean] = js.undefined
   
-  /** use the lowest number of colours needed to achieve given quality, requires libimagequant (optional, default `100`) */
+  /** Use the lowest number of colours needed to achieve given quality (optional, default `100`) */
   var quality: js.UndefOr[Double] = js.undefined
 }
 object PngOptions {
@@ -62,9 +64,9 @@ object PngOptions {
     
     inline def setDitherUndefined: Self = StObject.set(x, "dither", js.undefined)
     
-    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setEffort(value: Double): Self = StObject.set(x, "effort", value.asInstanceOf[js.Any])
     
-    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setEffortUndefined: Self = StObject.set(x, "effort", js.undefined)
     
     inline def setPalette(value: Boolean): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     

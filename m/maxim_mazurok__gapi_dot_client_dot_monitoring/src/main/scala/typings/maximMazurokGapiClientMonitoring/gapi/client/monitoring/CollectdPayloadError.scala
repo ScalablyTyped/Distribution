@@ -36,6 +36,6 @@ object CollectdPayloadError {
     
     inline def setValueErrorsUndefined: Self = StObject.set(x, "valueErrors", js.undefined)
     
-    inline def setValueErrorsVarargs(value: CollectdValueError*): Self = StObject.set(x, "valueErrors", js.Array(value :_*))
+    inline def setValueErrorsVarargs(value: CollectdValueError*): Self = StObject.set(x, "valueErrors", js.Array(value*))
   }
 }

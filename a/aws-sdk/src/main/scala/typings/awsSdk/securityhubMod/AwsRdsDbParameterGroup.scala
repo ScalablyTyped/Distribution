@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsRdsDbParameterGroup extends StObject {
   
   /**
-    * 
+    * The name of the parameter group.
     */
   var DbParameterGroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * 
+    * The status of parameter updates.
     */
   var ParameterApplyStatus: js.UndefOr[NonEmptyString] = js.undefined
 }

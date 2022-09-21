@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "BatchUpsertCatalogObjectsRequest")
 @js.native
-class BatchUpsertCatalogObjectsRequest () extends StObject {
+open class BatchUpsertCatalogObjectsRequest () extends StObject {
   
   /**
     * A batch of CatalogObjects to be inserted/updated atomically. The objects within a batch will be inserted in an

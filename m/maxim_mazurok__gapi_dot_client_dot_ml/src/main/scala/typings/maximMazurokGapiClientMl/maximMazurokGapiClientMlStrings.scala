@@ -27,6 +27,10 @@ object maximMazurokGapiClientMlStrings {
   inline def GoogleCloudMlV1__OperationMetadata: GoogleCloudMlV1__OperationMetadata = "GoogleCloudMlV1__OperationMetadata".asInstanceOf[GoogleCloudMlV1__OperationMetadata]
   
   @js.native
+  sealed trait GoogleCloudMlV1__TrainingOutput extends StObject
+  inline def GoogleCloudMlV1__TrainingOutput: GoogleCloudMlV1__TrainingOutput = "GoogleCloudMlV1__TrainingOutput".asInstanceOf[GoogleCloudMlV1__TrainingOutput]
+  
+  @js.native
   sealed trait GoogleCloudMlV1__Version extends StObject
   inline def GoogleCloudMlV1__Version: GoogleCloudMlV1__Version = "GoogleCloudMlV1__Version".asInstanceOf[GoogleCloudMlV1__Version]
   

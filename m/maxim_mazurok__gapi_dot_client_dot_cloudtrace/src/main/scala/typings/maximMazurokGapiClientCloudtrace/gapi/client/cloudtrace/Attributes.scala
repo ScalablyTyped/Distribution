@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Attributes extends StObject {
   
   /**
-    * The set of attributes. Each attribute's key can be up to 128 bytes long. The value can be a string up to 256 bytes, a signed 64-bit integer, or the Boolean values `true` and
-    * `false`. For example: "/instance_id": { "string_value": { "value": "my-instance" } } "/http/request_bytes": { "int_value": 300 } "abc.com/myattribute": { "bool_value": false }
+    * A set of attributes. Each attribute's key can be up to 128 bytes long. The value can be a string up to 256 bytes, a signed 64-bit integer, or the boolean values `true` or `false`.
+    * For example: "/instance_id": { "string_value": { "value": "my-instance" } } "/http/request_bytes": { "int_value": 300 } "abc.com/myattribute": { "bool_value": false }
     */
   var attributeMap: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.cloudtrace.gapi.client.cloudtrace.AttributeValue}
-    */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -35,7 +35,7 @@ object Attributes {
     inline def setAttributeMap(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudtrace.gapi.client.cloudtrace.AttributeValue}
-      */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes & TopLevel[Any]
     ): Self = StObject.set(x, "attributeMap", value.asInstanceOf[js.Any])
     
     inline def setAttributeMapUndefined: Self = StObject.set(x, "attributeMap", js.undefined)

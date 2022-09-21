@@ -1,10 +1,9 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.PartialBackdropProps
-import typings.materialUiCore.anon.PartialClassNameMapModalC
 import typings.materialUiCore.anon.PartialClassNameMapPopove
 import typings.materialUiCore.anon.PartialPaperProps
+import typings.materialUiCore.anon.TransitionPropschildrenRe
 import typings.materialUiCore.backdropBackdropMod.BackdropProps
 import typings.materialUiCore.materialUiCoreStrings.`additions removals`
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
@@ -47,7 +46,6 @@ import typings.materialUiCore.materialUiCoreStrings.off
 import typings.materialUiCore.materialUiCoreStrings.on
 import typings.materialUiCore.materialUiCoreStrings.other
 import typings.materialUiCore.materialUiCoreStrings.page
-import typings.materialUiCore.materialUiCoreStrings.paper
 import typings.materialUiCore.materialUiCoreStrings.polite
 import typings.materialUiCore.materialUiCoreStrings.popup
 import typings.materialUiCore.materialUiCoreStrings.removals
@@ -63,11 +61,12 @@ import typings.materialUiCore.materialUiCoreStrings.tree
 import typings.materialUiCore.materialUiCoreStrings.url
 import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.materialUiCoreStrings.yes
-import typings.materialUiCore.modalMod.ModalManager
+import typings.materialUiCore.mod.ModalManager
 import typings.materialUiCore.transitionMod.TransitionProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -77,6 +76,7 @@ import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
+import typings.react.mod.ElementType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
@@ -90,11 +90,8 @@ import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
-import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
 import typings.react.mod.Ref
-import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -104,18 +101,20 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object popoverPopoverMod extends Shortcut {
+object popoverPopoverMod {
   
-  @JSImport("@material-ui/core/Popover/Popover", JSImport.Default)
+  @JSImport("@material-ui/core/Popover/Popover", JSImport.Namespace)
   @js.native
-  val default: ComponentType[PopoverProps] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(props: PopoverProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait PopoverActions extends StObject {
     
@@ -134,7 +133,17 @@ object popoverPopoverMod extends Shortcut {
     }
   }
   
-  type PopoverClassKey = paper
+  /* Rewritten from type alias, can be one of: 
+    - typings.materialUiCore.materialUiCoreStrings.root
+    - typings.materialUiCore.materialUiCoreStrings.paper
+  */
+  trait PopoverClassKey extends StObject
+  object PopoverClassKey {
+    
+    inline def paper: typings.materialUiCore.materialUiCoreStrings.paper = "paper".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.paper]
+    
+    inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
+  }
   
   trait PopoverOrigin extends StObject {
     
@@ -181,39 +190,76 @@ object popoverPopoverMod extends Shortcut {
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, @material-ui/core.@material-ui/core/Popover/Popover.PopoverClassKey, 'children'> */
   trait PopoverProps extends StObject {
     
-    var BackdropComponent: js.UndefOr[ReactType[BackdropProps]] = js.undefined
+    var BackdropComponent: js.UndefOr[ElementType[BackdropProps]] = js.undefined
     
     var BackdropProps: js.UndefOr[PartialBackdropProps] = js.undefined
     
-    var ModalClasses: js.UndefOr[PartialClassNameMapModalC] = js.undefined
-    
+    /**
+      * Props applied to the [`Paper`](/api/paper/) element.
+      */
     var PaperProps: js.UndefOr[PartialPaperProps] = js.undefined
     
-    var TransitionComponent: js.UndefOr[ComponentType[TransitionProps]] = js.undefined
+    /**
+      * The component used for the transition.
+      * [Follow this guide](/components/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.
+      */
+    var TransitionComponent: js.UndefOr[ComponentType[TransitionPropschildrenRe]] = js.undefined
     
+    /**
+      * Props applied to the [`Transition`](http://reactcommunity.org/react-transition-group/transition#Transition-props) element.
+      */
     var TransitionProps: js.UndefOr[typings.materialUiCore.transitionMod.TransitionProps] = js.undefined
     
     var about: js.UndefOr[String] = js.undefined
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var action: js.UndefOr[js.Function1[/* actions */ PopoverActions, Unit]] = js.undefined
+    /**
+      * A ref for imperative actions.
+      * It currently only supports updatePosition() action.
+      */
+    var action: js.UndefOr[Ref[PopoverActions]] = js.undefined
     
-    var anchorEl: js.UndefOr[Null | HTMLElement | (js.Function1[/* element */ HTMLElement, HTMLElement])] = js.undefined
+    /**
+      * A HTML element, or a function that returns it.
+      * It's used to set the position of the popover.
+      */
+    var anchorEl: js.UndefOr[
+        Null | typings.std.Element | (js.Function1[/* element */ typings.std.Element, typings.std.Element])
+      ] = js.undefined
     
+    /**
+      * This is the point on the anchor where the popover's
+      * `anchorEl` will attach to. This is not used when the
+      * anchorReference is 'anchorPosition'.
+      *
+      * Options:
+      * vertical: [top, center, bottom];
+      * horizontal: [left, center, right].
+      */
     var anchorOrigin: js.UndefOr[PopoverOrigin] = js.undefined
     
+    /**
+      * This is the position that may be used
+      * to set the position of the popover.
+      * The coordinates are relative to
+      * the application's client area.
+      */
     var anchorPosition: js.UndefOr[PopoverPosition] = js.undefined
     
+    /**
+      * This determines which anchor prop to refer to to set
+      * the position of the popover.
+      */
     var anchorReference: js.UndefOr[PopoverReference] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -231,21 +277,21 @@ object popoverPopoverMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -259,11 +305,11 @@ object popoverPopoverMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -275,13 +321,13 @@ object popoverPopoverMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -291,7 +337,7 @@ object popoverPopoverMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -311,17 +357,32 @@ object popoverPopoverMod extends Shortcut {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * The content of the component.
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Override or extend the styles applied to the component.
+      */
     var classes: js.UndefOr[PartialClassNameMapPopove] = js.undefined
     
     var closeAfterTransition: js.UndefOr[Boolean] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance] | Null] = js.undefined
+    /**
+      * A HTML element, component instance, or function that returns either.
+      * The `container` will passed to the Modal component.
+      *
+      * By default, it uses the body of the anchorEl's top-level document object,
+      * so it's simply `document.body` most of the time.
+      */
+    var container: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.@material-ui/core/Portal/Portal.PortalProps['container'] */ js.Any
+      ] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -349,11 +410,24 @@ object popoverPopoverMod extends Shortcut {
     
     var disableRestoreFocus: js.UndefOr[Boolean] = js.undefined
     
+    var disableScrollLock: js.UndefOr[Boolean] = js.undefined
+    
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * The elevation of the popover.
+      */
     var elevation: js.UndefOr[Double] = js.undefined
     
-    var getContentAnchorEl: js.UndefOr[Null | (js.Function1[/* element */ HTMLElement, HTMLElement])] = js.undefined
+    /**
+      * This function is called in order to retrieve the content anchor element.
+      * It's the opposite of the `anchorEl` prop.
+      * The content anchor element should be an element inside the popover.
+      * It's used to correctly scroll and set the position of the popover.
+      * The positioning strategy tries to make the content anchor element just above the
+      * anchor element.
+      */
+    var getContentAnchorEl: js.UndefOr[Null | (js.Function1[/* element */ typings.std.Element, typings.std.Element])] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
@@ -361,9 +435,9 @@ object popoverPopoverMod extends Shortcut {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -385,11 +459,10 @@ object popoverPopoverMod extends Shortcut {
     
     var manager: js.UndefOr[ModalManager] = js.undefined
     
-    var manifest: js.UndefOr[String] = js.undefined
-    
+    /**
+      * Specifies how close to the edge of the window the popover can appear.
+      */
     var marginThreshold: js.UndefOr[Double] = js.undefined
-    
-    var modal: js.UndefOr[Boolean] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -415,7 +488,9 @@ object popoverPopoverMod extends Shortcut {
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onClose: js.UndefOr[ReactEventHandler[js.Object]] = js.undefined
+    var onClose: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.BivarianceHack['bivarianceHack'] */ js.Any
+      ] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
     
@@ -455,21 +530,45 @@ object popoverPopoverMod extends Shortcut {
     
     var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onEnter: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired before the component is entering.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onEnter: js.UndefOr[Any] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired when the component has entered.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onEntered: js.UndefOr[Any] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired when the component is entering.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onEntering: js.UndefOr[Any] = js.undefined
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onEscapeKeyDown: js.UndefOr[ReactEventHandler[js.Object]] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired before the component is exiting.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onExit: js.UndefOr[Any] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired when the component has exited.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onExited: js.UndefOr[Any] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.undefined
+    /**
+      * Callback fired when the component is exiting.
+      * @deprecated Use the `TransitionProps` prop instead.
+      */
+    var onExiting: js.UndefOr[Any] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
@@ -569,6 +668,9 @@ object popoverPopoverMod extends Shortcut {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * If `true`, the popover is visible.
+      */
     var open: Boolean
     
     var placeholder: js.UndefOr[String] = js.undefined
@@ -579,11 +681,13 @@ object popoverPopoverMod extends Shortcut {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -601,9 +705,20 @@ object popoverPopoverMod extends Shortcut {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * This is the point on the popover which
+      * will attach to the anchor's origin.
+      *
+      * Options:
+      * vertical: [top, center, bottom, x(px)];
+      * horizontal: [left, center, right, x(px)].
+      */
     var transformOrigin: js.UndefOr[PopoverOrigin] = js.undefined
     
-    var transitionDuration: js.UndefOr[js.Any | auto] = js.undefined
+    /**
+      * Set to 'auto' to automatically calculate transition time based on height.
+      */
+    var transitionDuration: js.UndefOr[Any | auto] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
@@ -630,13 +745,19 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAction(value: /* actions */ PopoverActions => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: Ref[PopoverActions]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionFunction1(value: /* instance */ PopoverActions | Null => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      
+      inline def setActionNull: Self = StObject.set(x, "action", null)
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setAnchorEl(value: HTMLElement | (js.Function1[/* element */ HTMLElement, HTMLElement])): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
+      inline def setAnchorEl(
+        value: typings.std.Element | (js.Function1[/* element */ typings.std.Element, typings.std.Element])
+      ): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
       
-      inline def setAnchorElFunction1(value: /* element */ HTMLElement => HTMLElement): Self = StObject.set(x, "anchorEl", js.Any.fromFunction1(value))
+      inline def setAnchorElFunction1(value: /* element */ typings.std.Element => typings.std.Element): Self = StObject.set(x, "anchorEl", js.Any.fromFunction1(value))
       
       inline def setAnchorElNull: Self = StObject.set(x, "anchorEl", null)
       
@@ -658,7 +779,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -666,7 +787,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -702,7 +823,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -714,7 +835,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -722,7 +843,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -730,7 +851,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -758,15 +879,15 @@ object popoverPopoverMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -790,7 +911,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -800,7 +921,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -820,7 +941,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -860,7 +981,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setBackdropComponent(value: ReactType[BackdropProps]): Self = StObject.set(x, "BackdropComponent", value.asInstanceOf[js.Any])
+      inline def setBackdropComponent(value: ElementType[BackdropProps]): Self = StObject.set(x, "BackdropComponent", value.asInstanceOf[js.Any])
       
       inline def setBackdropComponentUndefined: Self = StObject.set(x, "BackdropComponent", js.undefined)
       
@@ -888,11 +1009,9 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContainer(value: ReactInstance | js.Function0[ReactInstance]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
-      
-      inline def setContainerFunction0(value: () => ReactInstance): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
-      
-      inline def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainer(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.@material-ui/core/Portal/Portal.PortalProps['container'] */ js.Any
+      ): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
@@ -920,7 +1039,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -950,6 +1069,10 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setDisableRestoreFocusUndefined: Self = StObject.set(x, "disableRestoreFocus", js.undefined)
       
+      inline def setDisableScrollLock(value: Boolean): Self = StObject.set(x, "disableScrollLock", value.asInstanceOf[js.Any])
+      
+      inline def setDisableScrollLockUndefined: Self = StObject.set(x, "disableScrollLock", js.undefined)
+      
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
@@ -958,7 +1081,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
       
-      inline def setGetContentAnchorEl(value: /* element */ HTMLElement => HTMLElement): Self = StObject.set(x, "getContentAnchorEl", js.Any.fromFunction1(value))
+      inline def setGetContentAnchorEl(value: /* element */ typings.std.Element => typings.std.Element): Self = StObject.set(x, "getContentAnchorEl", js.Any.fromFunction1(value))
       
       inline def setGetContentAnchorElNull: Self = StObject.set(x, "getContentAnchorEl", null)
       
@@ -976,13 +1099,13 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
@@ -1028,21 +1151,9 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setManagerUndefined: Self = StObject.set(x, "manager", js.undefined)
       
-      inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
-      
-      inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
-      
       inline def setMarginThreshold(value: Double): Self = StObject.set(x, "marginThreshold", value.asInstanceOf[js.Any])
       
       inline def setMarginThresholdUndefined: Self = StObject.set(x, "marginThreshold", js.undefined)
-      
-      inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
-      
-      inline def setModalClasses(value: PartialClassNameMapModalC): Self = StObject.set(x, "ModalClasses", value.asInstanceOf[js.Any])
-      
-      inline def setModalClassesUndefined: Self = StObject.set(x, "ModalClasses", js.undefined)
-      
-      inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
       inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -1072,7 +1183,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLDivElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1092,7 +1203,9 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnClose(value: SyntheticEvent[js.Object, Event] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.anon.BivarianceHack['bivarianceHack'] */ js.Any
+      ): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
@@ -1172,15 +1285,15 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      inline def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
       inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      inline def setOnEntered(value: js.Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+      inline def setOnEntered(value: Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
       
       inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
       
-      inline def setOnEntering(value: js.Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+      inline def setOnEntering(value: Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
       
       inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
       
@@ -1192,19 +1305,19 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
       
-      inline def setOnExit(value: js.Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+      inline def setOnExit(value: Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
       
       inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      inline def setOnExited(value: js.Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+      inline def setOnExited(value: Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
       
       inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
       
-      inline def setOnExiting(value: js.Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
+      inline def setOnExiting(value: Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
       
       inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLDivElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1422,6 +1535,14 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1430,7 +1551,7 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1470,11 +1591,11 @@ object popoverPopoverMod extends Shortcut {
       
       inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
       
-      inline def setTransitionComponent(value: ComponentType[TransitionProps]): Self = StObject.set(x, "TransitionComponent", value.asInstanceOf[js.Any])
+      inline def setTransitionComponent(value: ComponentType[TransitionPropschildrenRe]): Self = StObject.set(x, "TransitionComponent", value.asInstanceOf[js.Any])
       
       inline def setTransitionComponentUndefined: Self = StObject.set(x, "TransitionComponent", js.undefined)
       
-      inline def setTransitionDuration(value: js.Any | auto): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Any | auto): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
       inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
@@ -1514,9 +1635,4 @@ object popoverPopoverMod extends Shortcut {
     
     inline def none: typings.materialUiCore.materialUiCoreStrings.none = "none".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.none]
   }
-  
-  type _To = ComponentType[PopoverProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `popoverPopoverMod.foo` */
-  override def _to: ComponentType[PopoverProps] = default
 }

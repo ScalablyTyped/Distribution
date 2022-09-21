@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudDatalabelingV1p2alpha1ExportDataOperationMetadata extends StObject {
   
-  /** Output only. The name of annotated dataset in format "projects/∗/datasets/∗/annotatedDatasets/ *". */
+  /** Output only. The name of annotated dataset in format "projects/ *‍/datasets/ *‍/annotatedDatasets/ *". */
   var annotatedDataset: js.UndefOr[String] = js.undefined
   
   /** Output only. Timestamp when export dataset request was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** Output only. The name of dataset to be exported. "projects/∗/datasets/ *" */
+  /** Output only. The name of dataset to be exported. "projects/ *‍/datasets/ *" */
   var dataset: js.UndefOr[String] = js.undefined
   
   /** Output only. Partial failures encountered. E.g. single files that couldn't be read. Status details field will contain standard GCP error details. */
@@ -43,6 +43,6 @@ object GoogleCloudDatalabelingV1p2alpha1ExportDataOperationMetadata {
     
     inline def setPartialFailuresUndefined: Self = StObject.set(x, "partialFailures", js.undefined)
     
-    inline def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value :_*))
+    inline def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value*))
   }
 }

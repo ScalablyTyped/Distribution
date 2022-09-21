@@ -10,10 +10,10 @@ Spatial predicates for GeoJSON.
 | ------------------ | :-------------: |
 | Full name          | @terraformer/spatial |
 | Keywords           | arcgis, convert, geo, geojson, geometry |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 5933 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 11419.666666666666 |
+| # stars            | 90.0 |
 
 ## Links
 - [Homepage](https://github.com/terraformer-js/terraformer)

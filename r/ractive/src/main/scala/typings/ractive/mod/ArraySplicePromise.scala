@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait ArraySplicePromise
-  extends js.Promise[js.Array[js.Any]] {
+  extends js.Promise[js.Array[Any]] {
   
-  var result: js.Array[js.Any] = js.native
+  var result: js.Array[Any] = js.native
 }

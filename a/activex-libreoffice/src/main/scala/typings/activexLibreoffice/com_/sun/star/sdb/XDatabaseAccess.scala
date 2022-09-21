@@ -35,7 +35,7 @@ object XDatabaseAccess {
     getIsolatedConnection: (String, String) => XConnection,
     getLoginTimeout: () => Double,
     hasConnections: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeDatabaseAccessListener: XDatabaseAccessListener => Unit,
     setLoginTimeout: Double => Unit,

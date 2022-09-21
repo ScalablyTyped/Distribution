@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISelectionProvider extends StObject {
   
-  def ChangeSelection(rowItem: js.Any, event: js.Any): Unit
+  def ChangeSelection(rowItem: Any, event: Any): Unit
   
-  def getSelection(entity: js.Any): Double
+  def getSelection(entity: Any): Double
   
-  def getSelectionIndex(entity: js.Any): Double
+  def getSelectionIndex(entity: Any): Double
   
   var ignoreSelectedItemChanges: Boolean
   
-  var lastClickedRow: js.Any
+  var lastClickedRow: Any
   
   var multi: Boolean
   
-  var pKeyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ js.Any
+  var pKeyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ Any
   
   var selectedIndex: Double
   
-  var selectedItems: js.Array[js.Any]
+  var selectedItems: js.Array[Any]
   
   def setSelection(rowItem: IRow, isSelected: Boolean): Unit
   
@@ -31,15 +31,15 @@ trait ISelectionProvider extends StObject {
 object ISelectionProvider {
   
   inline def apply(
-    ChangeSelection: (js.Any, js.Any) => Unit,
-    getSelection: js.Any => Double,
-    getSelectionIndex: js.Any => Double,
+    ChangeSelection: (Any, Any) => Unit,
+    getSelection: Any => Double,
+    getSelectionIndex: Any => Double,
     ignoreSelectedItemChanges: Boolean,
-    lastClickedRow: js.Any,
+    lastClickedRow: Any,
     multi: Boolean,
-    pKeyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ js.Any,
+    pKeyParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ Any,
     selectedIndex: Double,
-    selectedItems: js.Array[js.Any],
+    selectedItems: js.Array[Any],
     setSelection: (IRow, Boolean) => Unit,
     toggleSelectAll: (Boolean, Boolean, Boolean) => Unit
   ): ISelectionProvider = {
@@ -49,27 +49,27 @@ object ISelectionProvider {
   
   extension [Self <: ISelectionProvider](x: Self) {
     
-    inline def setChangeSelection(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "ChangeSelection", js.Any.fromFunction2(value))
+    inline def setChangeSelection(value: (Any, Any) => Unit): Self = StObject.set(x, "ChangeSelection", js.Any.fromFunction2(value))
     
-    inline def setGetSelection(value: js.Any => Double): Self = StObject.set(x, "getSelection", js.Any.fromFunction1(value))
+    inline def setGetSelection(value: Any => Double): Self = StObject.set(x, "getSelection", js.Any.fromFunction1(value))
     
-    inline def setGetSelectionIndex(value: js.Any => Double): Self = StObject.set(x, "getSelectionIndex", js.Any.fromFunction1(value))
+    inline def setGetSelectionIndex(value: Any => Double): Self = StObject.set(x, "getSelectionIndex", js.Any.fromFunction1(value))
     
     inline def setIgnoreSelectedItemChanges(value: Boolean): Self = StObject.set(x, "ignoreSelectedItemChanges", value.asInstanceOf[js.Any])
     
-    inline def setLastClickedRow(value: js.Any): Self = StObject.set(x, "lastClickedRow", value.asInstanceOf[js.Any])
+    inline def setLastClickedRow(value: Any): Self = StObject.set(x, "lastClickedRow", value.asInstanceOf[js.Any])
     
     inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
     inline def setPKeyParser(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ Any
     ): Self = StObject.set(x, "pKeyParser", value.asInstanceOf[js.Any])
     
     inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
     
     inline def setSetSelection(value: (IRow, Boolean) => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction2(value))
     

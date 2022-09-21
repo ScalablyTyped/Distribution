@@ -11,16 +11,16 @@ trait ResponseBase extends StObject {
   
   var errorMsg: String
   
-  var headerJSON: StringDictionary[js.Any]
+  var headerJSON: StringDictionary[Any]
   
-  var invocationContext: js.Any
+  var invocationContext: Any
   
   // JSON Object
   var readyState: Double
   
-  var request: js.Any
+  var request: Any
   
-  var responseJSON: StringDictionary[js.Any]
+  var responseJSON: StringDictionary[Any]
   
   // JSON Object
   var responseText: String
@@ -36,11 +36,11 @@ object ResponseBase {
   inline def apply(
     errorCode: Double,
     errorMsg: String,
-    headerJSON: StringDictionary[js.Any],
-    invocationContext: js.Any,
+    headerJSON: StringDictionary[Any],
+    invocationContext: Any,
     readyState: Double,
-    request: js.Any,
-    responseJSON: StringDictionary[js.Any],
+    request: Any,
+    responseJSON: StringDictionary[Any],
     responseText: String,
     responseXML: String,
     status: Double,
@@ -56,15 +56,15 @@ object ResponseBase {
     
     inline def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
     
-    inline def setHeaderJSON(value: StringDictionary[js.Any]): Self = StObject.set(x, "headerJSON", value.asInstanceOf[js.Any])
+    inline def setHeaderJSON(value: StringDictionary[Any]): Self = StObject.set(x, "headerJSON", value.asInstanceOf[js.Any])
     
-    inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+    inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
     
     inline def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
-    inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    inline def setResponseJSON(value: StringDictionary[js.Any]): Self = StObject.set(x, "responseJSON", value.asInstanceOf[js.Any])
+    inline def setResponseJSON(value: StringDictionary[Any]): Self = StObject.set(x, "responseJSON", value.asInstanceOf[js.Any])
     
     inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
     

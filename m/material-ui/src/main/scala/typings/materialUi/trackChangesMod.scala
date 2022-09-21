@@ -10,10 +10,10 @@ object trackChangesMod {
   
   @JSImport("material-ui/svg-icons/action/track-changes", JSImport.Default)
   @js.native
-  class default () extends ActionTrackChanges
+  open class default () extends ActionTrackChanges
   
   @JSImport("material-ui/svg-icons/action/track-changes", "ActionTrackChanges")
   @js.native
-  class ActionTrackChanges ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionTrackChanges ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

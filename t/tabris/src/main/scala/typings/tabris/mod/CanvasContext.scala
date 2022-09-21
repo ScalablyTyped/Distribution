@@ -22,7 +22,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "CanvasContext")
 @js.native
-/* private */ class CanvasContext () extends StObject {
+/**
+  * The CanvasContext is used for drawing onto the [canvas](./Canvas.md). It is a subset of the HTML5
+  * [CanvasRenderingContext2D](https://developer.mozilla.org/en/docs/Web/API/CanvasRenderingContext2D).
+  */
+/* private */ open class CanvasContext () extends StObject {
   
   /**
     * Adds an arc to the path which is centered at *(x, y)* position with radius *r* starting at

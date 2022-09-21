@@ -11,9 +11,9 @@ In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery
 | Full name          | x-editable |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 519756 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 102797.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://github.com/vitalets/x-editable)

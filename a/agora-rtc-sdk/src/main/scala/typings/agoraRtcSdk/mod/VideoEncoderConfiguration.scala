@@ -25,12 +25,12 @@ trait VideoEncoderConfiguration extends StObject {
   var bitrate: js.UndefOr[Max] = js.undefined
   
   /**
-    * The video frame rate (fps).
+    * The video encoding frame rate (fps). The value range is [1, 10000].
     *
-    * The value range is [1, 10000]. We recommend setting the frame rate between 5 fps and 30 fps.
+    * Set this parameter as a value range. The minimum is **the expected frame rate**, and the maximum is the upper limit of the adjusted frame rate when the browser does not support the expected frame rate.
     *
     * **Note**
-    * - This parameter sets the local capturing video frame rate. The actual encoding frame rate depends on the device, system, and browser.
+    * - The actual encoding frame rate depends on the device, system, and browser.
     * - When the network conditions change, the browser adjusts the encoding frame rate automatically.
     */
   var frameRate: js.UndefOr[Max] = js.undefined

@@ -40,7 +40,7 @@ object XProgressBar {
     Value: Double,
     acquire: () => Unit,
     getValue: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setBackgroundColor: Color => Unit,
     setForegroundColor: Color => Unit,

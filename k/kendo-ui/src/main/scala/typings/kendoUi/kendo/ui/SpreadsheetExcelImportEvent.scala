@@ -13,7 +13,7 @@ trait SpreadsheetExcelImportEvent
   
   var file: js.UndefOr[Blob | File] = js.undefined
   
-  var progress: js.UndefOr[JQueryPromise[js.Any]] = js.undefined
+  var progress: js.UndefOr[JQueryPromise[Any]] = js.undefined
 }
 object SpreadsheetExcelImportEvent {
   
@@ -28,7 +28,7 @@ object SpreadsheetExcelImportEvent {
     
     inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    inline def setProgress(value: JQueryPromise[js.Any]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: JQueryPromise[Any]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }

@@ -1,22 +1,38 @@
 package typings.videoJs.mod.videojs
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.Element
+import typings.std.Node
+import typings.videoJs.anon.Children
+import typings.videoJs.mod.VideoJsPlayer
+import typings.videoJs.mod.VideoJsPlayerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Child = java.lang.String | typings.videoJs.anon.Children
+/* Rewritten from type alias, can be one of: 
+  - scala.Boolean
+  - typings.videoJs.videoJsStrings.muted
+  - typings.videoJs.videoJsStrings.play
+  - typings.videoJs.videoJsStrings.any
+*/
+type Autoplay = _Autoplay | Boolean
 
-type Content = java.lang.String | typings.std.Element | typings.std.Node | (js.Function0[java.lang.String | typings.std.Element | typings.std.Node])
+type Child = String | Children
 
-type LanguageTranslations = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Content = String | Element | Node | (js.Function0[String | Element | Node])
 
-type Player = typings.videoJs.mod.VideoJsPlayer
+type LanguageTranslations = StringDictionary[String]
 
-type PlayerOptions = typings.videoJs.mod.VideoJsPlayerOptions
+type Player = VideoJsPlayer
+
+type PlayerOptions = VideoJsPlayerOptions
+
+type ReadyCallback = js.ThisFunction0[/* this */ Player, Unit]
 
 type XhrCallback = js.Function3[
-/* error */ js.UndefOr[typings.std.Error], 
-/* response */ js.UndefOr[typings.videoJs.mod.videojs.XhrResponse], 
-/* body */ js.UndefOr[js.Any], 
-scala.Unit]
+/* error */ js.UndefOr[js.Error], 
+/* response */ js.UndefOr[XhrResponse], 
+/* body */ js.UndefOr[Any], 
+Unit]

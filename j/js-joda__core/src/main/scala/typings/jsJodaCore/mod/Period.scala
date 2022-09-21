@@ -1,0 +1,82 @@
+package typings.jsJodaCore.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("@js-joda/core", "Period")
+@js.native
+/* private */ open class Period () extends TemporalAmount {
+  
+  def chronology(): IsoChronology = js.native
+  
+  def days(): Double = js.native
+  
+  def isNegative(): Boolean = js.native
+  
+  def isZero(): Boolean = js.native
+  
+  def minus(amountToSubtract: TemporalAmount): Period = js.native
+  
+  def minusDays(daysToSubtract: Double): Period = js.native
+  
+  def minusMonths(monthsToSubtract: Double): Period = js.native
+  
+  def minusYears(yearsToSubtract: Double): Period = js.native
+  
+  def months(): Double = js.native
+  
+  def multipliedBy(scalar: Double): Period = js.native
+  
+  def negated(): Period = js.native
+  
+  def normalized(): Period = js.native
+  
+  def plus(amountToAdd: TemporalAmount): Period = js.native
+  
+  def plusDays(daysToAdd: Double): Period = js.native
+  
+  def plusMonths(monthsToAdd: Double): Period = js.native
+  
+  def plusYears(yearsToAdd: Double): Period = js.native
+  
+  def toJSON(): String = js.native
+  
+  def toTotalMonths(): Double = js.native
+  
+  def withDays(days: Double): Period = js.native
+  
+  def withMonths(months: Double): Period = js.native
+  
+  def withYears(years: Double): Period = js.native
+  
+  def years(): Double = js.native
+}
+/* static members */
+object Period {
+  
+  @JSImport("@js-joda/core", "Period")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@js-joda/core", "Period.ZERO")
+  @js.native
+  def ZERO: Period = js.native
+  inline def ZERO_=(x: Period): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  
+  inline def between(startDate: LocalDate, endDate: LocalDate): Period = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[Period]
+  
+  inline def from(amount: TemporalAmount): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(amount.asInstanceOf[js.Any]).asInstanceOf[Period]
+  
+  inline def of(years: Double, months: Double, days: Double): Period = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(years.asInstanceOf[js.Any], months.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Period]
+  
+  inline def ofDays(days: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofDays")(days.asInstanceOf[js.Any]).asInstanceOf[Period]
+  
+  inline def ofMonths(months: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofMonths")(months.asInstanceOf[js.Any]).asInstanceOf[Period]
+  
+  inline def ofWeeks(weeks: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofWeeks")(weeks.asInstanceOf[js.Any]).asInstanceOf[Period]
+  
+  inline def ofYears(years: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofYears")(years.asInstanceOf[js.Any]).asInstanceOf[Period]
+  
+  inline def parse(text: String): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Period]
+}

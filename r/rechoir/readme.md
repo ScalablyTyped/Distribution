@@ -10,10 +10,10 @@ Prepare a node environment to require files with different extensions.
 | ------------------ | :-------------: |
 | Full name          | rechoir |
 | Keywords           | require, loader, extension, extensions, prepare |
-| # releases         | 0 |
-| # dependents       | 78 |
-| # downloads        | 286602746 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5.1956742333333336E7 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/rechoir#readme)

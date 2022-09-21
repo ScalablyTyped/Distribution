@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the chart axis title formatting.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartAxisTitleFormatLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait ChartAxisTitleFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the chart axis title's border format, which includes color, linestyle, and weight.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var border: js.UndefOr[ChartBorderLoadOptions] = js.undefined
   
   /**
+    * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
     *
-    * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontLoadOptions] = js.undefined

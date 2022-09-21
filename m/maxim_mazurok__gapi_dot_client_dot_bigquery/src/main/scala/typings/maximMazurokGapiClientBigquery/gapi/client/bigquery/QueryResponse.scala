@@ -9,6 +9,9 @@ trait QueryResponse extends StObject {
   /** Whether the query result was fetched from the query cache. */
   var cacheHit: js.UndefOr[Boolean] = js.undefined
   
+  /** [Output-only] Detailed statistics for DML statements Present only for DML statements INSERT, UPDATE, DELETE or TRUNCATE. */
+  var dmlStats: js.UndefOr[DmlStatistics] = js.undefined
+  
   /**
     * [Output-only] The first errors or warnings encountered during the running of the job. The final message includes the number of errors that caused the process to stop. Errors here do
     * not necessarily mean that the job has completed or was unsuccessful.
@@ -42,6 +45,9 @@ trait QueryResponse extends StObject {
   /** The schema of the results. Present only when the query completes successfully. */
   var schema: js.UndefOr[TableSchema] = js.undefined
   
+  /** [Output-only] [Preview] Information of the session if this job is part of one. */
+  var sessionInfo: js.UndefOr[SessionInfo] = js.undefined
+  
   /** The total number of bytes processed for this query. If this query was a dry run, this is the number of bytes that would be processed if the query were run. */
   var totalBytesProcessed: js.UndefOr[String] = js.undefined
   
@@ -61,11 +67,15 @@ object QueryResponse {
     
     inline def setCacheHitUndefined: Self = StObject.set(x, "cacheHit", js.undefined)
     
+    inline def setDmlStats(value: DmlStatistics): Self = StObject.set(x, "dmlStats", value.asInstanceOf[js.Any])
+    
+    inline def setDmlStatsUndefined: Self = StObject.set(x, "dmlStats", js.undefined)
+    
     inline def setErrors(value: js.Array[ErrorProto]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: ErrorProto*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ErrorProto*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setJobComplete(value: Boolean): Self = StObject.set(x, "jobComplete", value.asInstanceOf[js.Any])
     
@@ -91,11 +101,15 @@ object QueryResponse {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: TableRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: TableRow*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSchema(value: TableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    
+    inline def setSessionInfo(value: SessionInfo): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
+    
+    inline def setSessionInfoUndefined: Self = StObject.set(x, "sessionInfo", js.undefined)
     
     inline def setTotalBytesProcessed(value: String): Self = StObject.set(x, "totalBytesProcessed", value.asInstanceOf[js.Any])
     

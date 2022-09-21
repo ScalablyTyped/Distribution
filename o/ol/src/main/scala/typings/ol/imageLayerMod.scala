@@ -11,7 +11,7 @@ object imageLayerMod {
   
   @JSImport("ol/renderer/canvas/ImageLayer", JSImport.Default)
   @js.native
-  class default protected () extends CanvasImageLayerRenderer {
+  open class default protected () extends CanvasImageLayerRenderer {
     def this(imageLayer: typings.ol.imageMod.default) = this()
   }
   

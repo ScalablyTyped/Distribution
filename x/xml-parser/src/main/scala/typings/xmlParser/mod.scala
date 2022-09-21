@@ -76,7 +76,7 @@ object mod {
       
       inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

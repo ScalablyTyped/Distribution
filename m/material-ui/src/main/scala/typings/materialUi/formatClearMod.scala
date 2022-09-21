@@ -10,10 +10,10 @@ object formatClearMod {
   
   @JSImport("material-ui/svg-icons/editor/format-clear", JSImport.Default)
   @js.native
-  class default () extends EditorFormatClear
+  open class default () extends EditorFormatClear
   
   @JSImport("material-ui/svg-icons/editor/format-clear", "EditorFormatClear")
   @js.native
-  class EditorFormatClear ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatClear ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -22,6 +22,6 @@ object WorkflowGraph {
     
     inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    inline def setNodesVarargs(value: WorkflowNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: WorkflowNode*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

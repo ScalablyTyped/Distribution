@@ -1,7 +1,7 @@
 
 # Scala.js typings for tap
 
-Typings are for version 14.10
+Typings are for version 15.0
 
 ## Library description:
 A Test-Anything-Protocol library for JavaScript
@@ -10,10 +10,10 @@ A Test-Anything-Protocol library for JavaScript
 | ------------------ | :-------------: |
 | Full name          | tap |
 | Keywords           | assert, tap, test, testing |
-| # releases         | 117 |
-| # dependents       | 223 |
-| # downloads        | 4934037 |
-| # stars            | 71 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 856187.0 |
+| # stars            | 2040.0 |
 
 ## Links
 - [Homepage](http://www.node-tap.org/)

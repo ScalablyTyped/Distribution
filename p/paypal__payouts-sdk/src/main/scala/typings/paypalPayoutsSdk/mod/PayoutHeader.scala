@@ -13,7 +13,7 @@ trait PayoutHeader extends StObject {
   
   var batch_status: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS
   
-  var errors: js.UndefOr[js.Any] = js.undefined
+  var errors: js.UndefOr[Any] = js.undefined
   
   var payout_batch_id: String
   
@@ -36,7 +36,7 @@ object PayoutHeader {
     
     inline def setBatch_status(value: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS): Self = StObject.set(x, "batch_status", value.asInstanceOf[js.Any])
     
-    inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     

@@ -7,17 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaBucketByActivity extends StObject {
   
   /**
-    * The default activity stream will be used if a specific
-    * activityDataSourceId is not specified.
+    * The default activity stream will be used if a specific activityDataSourceId is not specified.
     */
-  var activityDataSourceId: js.UndefOr[String] = js.undefined
+  var activityDataSourceId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specifies that only activity segments of duration longer than
-    * minDurationMillis are considered and used as a container for aggregated
-    * data.
+    * Specifies that only activity segments of duration longer than minDurationMillis are considered and used as a container for aggregated data.
     */
-  var minDurationMillis: js.UndefOr[String] = js.undefined
+  var minDurationMillis: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBucketByActivity {
   
@@ -30,9 +27,13 @@ object SchemaBucketByActivity {
     
     inline def setActivityDataSourceId(value: String): Self = StObject.set(x, "activityDataSourceId", value.asInstanceOf[js.Any])
     
+    inline def setActivityDataSourceIdNull: Self = StObject.set(x, "activityDataSourceId", null)
+    
     inline def setActivityDataSourceIdUndefined: Self = StObject.set(x, "activityDataSourceId", js.undefined)
     
     inline def setMinDurationMillis(value: String): Self = StObject.set(x, "minDurationMillis", value.asInstanceOf[js.Any])
+    
+    inline def setMinDurationMillisNull: Self = StObject.set(x, "minDurationMillis", null)
     
     inline def setMinDurationMillisUndefined: Self = StObject.set(x, "minDurationMillis", js.undefined)
   }

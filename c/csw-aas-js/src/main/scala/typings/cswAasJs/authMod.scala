@@ -31,7 +31,7 @@ object authMod {
     def loadUserProfile(): KeycloakPromise[KeycloakProfile, Unit] = js.native
     
     def logout(): KeycloakPromise[Unit, Unit] = js.native
-    def logout(options: js.Any): KeycloakPromise[Unit, Unit] = js.native
+    def logout(options: Any): KeycloakPromise[Unit, Unit] = js.native
     
     def realmAccess(): js.UndefOr[KeycloakRoles] = js.native
     

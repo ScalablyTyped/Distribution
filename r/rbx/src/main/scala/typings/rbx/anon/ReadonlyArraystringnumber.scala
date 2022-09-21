@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Readonly<std.Array<string | number>> */
 trait ReadonlyArraystringnumber extends StObject {
   
+  val at: js.Function1[/* index */ Double, js.UndefOr[String | Double]]
+  
   val concat: js.Function1[/* repeated */ js.Array[String | Double], js.Array[String | Double]]
   
   val copyWithin: js.Function2[/* target */ Double, /* start */ Double, this.type]
@@ -53,12 +55,12 @@ trait ReadonlyArraystringnumber extends StObject {
       /* value */ String | Double, 
       /* index */ Double, 
       /* obj */ js.Array[String | Double], 
-      js.Any
+      Any
     ], 
     Double
   ]
   
-  val flat: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, typings.rbx.rbxNumbers.`1`]]]
+  val flat: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxNumbers.`1`]]]
   
   val flatMap: js.Function1[
     /* callback */ js.ThisFunction3[
@@ -66,9 +68,9 @@ trait ReadonlyArraystringnumber extends StObject {
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      js.Any | js.Array[js.Any]
+      Any | js.Array[Any]
     ], 
-    js.Array[js.Any]
+    js.Array[Any]
   ]
   
   val forEach: js.Function1[
@@ -98,9 +100,9 @@ trait ReadonlyArraystringnumber extends StObject {
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      js.Any
+      Any
     ], 
-    js.Array[js.Any]
+    js.Array[Any]
   ]
   
   val pop: js.Function0[js.UndefOr[String | Double]]
@@ -140,7 +142,7 @@ trait ReadonlyArraystringnumber extends StObject {
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      js.Any
+      Any
     ], 
     Boolean
   ]
@@ -162,6 +164,7 @@ trait ReadonlyArraystringnumber extends StObject {
 object ReadonlyArraystringnumber {
   
   inline def apply(
+    at: /* index */ Double => js.UndefOr[String | Double],
     concat: /* repeated */ js.Array[String | Double] => js.Array[String | Double],
     copyWithin: (/* target */ Double, /* start */ Double) => ReadonlyArraystringnumber,
     entries: () => IterableIterator[js.Tuple2[Double, String | Double]],
@@ -189,16 +192,16 @@ object ReadonlyArraystringnumber {
       /* value */ String | Double, 
       /* index */ Double, 
       /* obj */ js.Array[String | Double], 
-      js.Any
+      Any
     ] => Double,
-    flat: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, typings.rbx.rbxNumbers.`1`]]],
+    flat: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxNumbers.`1`]]],
     flatMap: /* callback */ js.ThisFunction3[
       /* this */ Unit, 
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      js.Any | js.Array[js.Any]
-    ] => js.Array[js.Any],
+      Any | js.Array[Any]
+    ] => js.Array[Any],
     forEach: /* callbackfn */ js.Function3[
       /* value */ String | Double, 
       /* index */ Double, 
@@ -215,8 +218,8 @@ object ReadonlyArraystringnumber {
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      js.Any
-    ] => js.Array[js.Any],
+      Any
+    ] => js.Array[Any],
     pop: () => js.UndefOr[String | Double],
     push: /* repeated */ String | Double => Double,
     reduce: /* callbackfn */ js.Function4[
@@ -240,7 +243,7 @@ object ReadonlyArraystringnumber {
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      js.Any
+      Any
     ] => Boolean,
     sort: () => ReadonlyArraystringnumber,
     splice: /* start */ Double => js.Array[String | Double],
@@ -249,12 +252,14 @@ object ReadonlyArraystringnumber {
     unshift: /* repeated */ String | Double => Double,
     values: () => IterableIterator[String | Double]
   ): ReadonlyArraystringnumber = {
-    val __obj = js.Dynamic.literal(concat = js.Any.fromFunction1(concat), copyWithin = js.Any.fromFunction2(copyWithin), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), fill = js.Any.fromFunction1(fill), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), flat = flat.asInstanceOf[js.Any], flatMap = js.Any.fromFunction1(flatMap), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), reverse = js.Any.fromFunction0(reverse), shift = js.Any.fromFunction0(shift), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), sort = js.Any.fromFunction0(sort), splice = js.Any.fromFunction1(splice), toLocaleString = js.Any.fromFunction0(toLocaleString), unshift = js.Any.fromFunction1(unshift), values = js.Any.fromFunction0(values))
+    val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), concat = js.Any.fromFunction1(concat), copyWithin = js.Any.fromFunction2(copyWithin), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), fill = js.Any.fromFunction1(fill), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), flat = flat.asInstanceOf[js.Any], flatMap = js.Any.fromFunction1(flatMap), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), reverse = js.Any.fromFunction0(reverse), shift = js.Any.fromFunction0(shift), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), sort = js.Any.fromFunction0(sort), splice = js.Any.fromFunction1(splice), toLocaleString = js.Any.fromFunction0(toLocaleString), unshift = js.Any.fromFunction1(unshift), values = js.Any.fromFunction0(values))
     __obj.updateDynamic("toString")(js.Any.fromFunction0(toString_))
     __obj.asInstanceOf[ReadonlyArraystringnumber]
   }
   
   extension [Self <: ReadonlyArraystringnumber](x: Self) {
+    
+    inline def setAt(value: /* index */ Double => js.UndefOr[String | Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
     
     inline def setConcat(value: /* repeated */ js.Array[String | Double] => js.Array[String | Double]): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     
@@ -297,13 +302,11 @@ object ReadonlyArraystringnumber {
           /* value */ String | Double, 
           /* index */ Double, 
           /* obj */ js.Array[String | Double], 
-          js.Any
+          Any
         ] => Double
     ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
     
-    inline def setFlat(
-      value: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, typings.rbx.rbxNumbers.`1`]]]
-    ): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    inline def setFlat(value: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxNumbers.`1`]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     inline def setFlatMap(
       value: /* callback */ js.ThisFunction3[
@@ -311,8 +314,8 @@ object ReadonlyArraystringnumber {
           /* value */ String | Double, 
           /* index */ Double, 
           /* array */ js.Array[String | Double], 
-          js.Any | js.Array[js.Any]
-        ] => js.Array[js.Any]
+          Any | js.Array[Any]
+        ] => js.Array[Any]
     ): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
     
     inline def setForEach(
@@ -341,8 +344,8 @@ object ReadonlyArraystringnumber {
           /* value */ String | Double, 
           /* index */ Double, 
           /* array */ js.Array[String | Double], 
-          js.Any
-        ] => js.Array[js.Any]
+          Any
+        ] => js.Array[Any]
     ): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     
     inline def setPop(value: () => js.UndefOr[String | Double]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
@@ -380,7 +383,7 @@ object ReadonlyArraystringnumber {
           /* value */ String | Double, 
           /* index */ Double, 
           /* array */ js.Array[String | Double], 
-          js.Any
+          Any
         ] => Boolean
     ): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
     

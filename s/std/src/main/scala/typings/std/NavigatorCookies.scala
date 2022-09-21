@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigatorCookies extends StObject {
   
+  /* standard dom */
   val cookieEnabled: scala.Boolean
 }
 object NavigatorCookies {

@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait ASPxClientDateEdit
   var CalendarCustomDisabledDate: ASPxClientEvent[ASPxClientCalendarCustomDisabledDateEventHandler[ASPxClientDateEdit]]
   
   /**
-    * Fires after the selected date has been changed within the date editor.
+    * Occurs on the client after a user changes the selected date in the date editor.
     */
   var DateChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]]
   
@@ -35,17 +34,17 @@ trait ASPxClientDateEdit
   /**
     * Gets the date that is the editor's value.
     */
-  def GetDate(): Date
+  def GetDate(): js.Date
   
   /**
     * Gets the maximum date of the editor.
     */
-  def GetMaxDate(): Date
+  def GetMaxDate(): js.Date
   
   /**
     * Gets the minimum date of the editor.
     */
-  def GetMinDate(): Date
+  def GetMinDate(): js.Date
   
   /**
     * Returns the number of days in a range selected within a date edit.
@@ -71,19 +70,19 @@ trait ASPxClientDateEdit
     * Specifies the date for the editor.
     * @param date The date.
     */
-  def SetDate(date: Date): Unit
+  def SetDate(date: js.Date): Unit
   
   /**
     * Sets the maximum date of the editor.
     * @param date A DateTime object representing the maximum date.
     */
-  def SetMaxDate(date: Date): Unit
+  def SetMaxDate(date: js.Date): Unit
   
   /**
     * Sets the minimum date of the editor.
     * @param date A DateTime object representing the minimum date.
     */
-  def SetMinDate(date: Date): Unit
+  def SetMinDate(date: js.Date): Unit
   
   /**
     * This event is not in effect for the ASPxClientDateEdit. Use the ASPxClientDateEdit.DateChanged event instead.
@@ -103,28 +102,28 @@ object ASPxClientDateEdit {
     DateChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]],
     DropDown: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDropDownEditBase]],
     Focus: () => Unit,
-    GetButton: Double => js.Any,
+    GetButton: Double => Any,
     GetButtonVisible: Double => Boolean,
     GetCalendar: () => ASPxClientCalendar,
     GetCaption: () => String,
     GetCaretPosition: () => Double,
     GetClientVisible: () => Boolean,
-    GetDate: () => Date,
+    GetDate: () => js.Date,
     GetEnabled: () => Boolean,
     GetErrorText: () => String,
     GetHeight: () => Double,
-    GetInputElement: () => js.Any,
+    GetInputElement: () => Any,
     GetIsValid: () => Boolean,
-    GetMainElement: () => js.Any,
-    GetMaxDate: () => Date,
-    GetMinDate: () => Date,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetMaxDate: () => js.Date,
+    GetMinDate: () => js.Date,
+    GetParentControl: () => Any,
     GetRangeDayCount: () => Double,
     GetRangeLength: () => Double,
     GetReadOnly: () => Boolean,
     GetText: () => String,
     GetTimeEdit: () => ASPxClientTimeEdit,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
@@ -143,17 +142,17 @@ object ASPxClientDateEdit {
     SetCaption: String => Unit,
     SetCaretPosition: Double => Unit,
     SetClientVisible: Boolean => Unit,
-    SetDate: Date => Unit,
+    SetDate: js.Date => Unit,
     SetEnabled: Boolean => Unit,
     SetErrorText: String => Unit,
     SetHeight: Double => Unit,
     SetIsValid: Boolean => Unit,
-    SetMaxDate: Date => Unit,
-    SetMinDate: Date => Unit,
+    SetMaxDate: js.Date => Unit,
+    SetMinDate: js.Date => Unit,
     SetReadOnly: Boolean => Unit,
     SetSelection: (Double, Double, Boolean) => Unit,
     SetText: String => Unit,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     ShowDropDown: () => Unit,
@@ -178,11 +177,11 @@ object ASPxClientDateEdit {
     
     inline def setGetCalendar(value: () => ASPxClientCalendar): Self = StObject.set(x, "GetCalendar", js.Any.fromFunction0(value))
     
-    inline def setGetDate(value: () => Date): Self = StObject.set(x, "GetDate", js.Any.fromFunction0(value))
+    inline def setGetDate(value: () => js.Date): Self = StObject.set(x, "GetDate", js.Any.fromFunction0(value))
     
-    inline def setGetMaxDate(value: () => Date): Self = StObject.set(x, "GetMaxDate", js.Any.fromFunction0(value))
+    inline def setGetMaxDate(value: () => js.Date): Self = StObject.set(x, "GetMaxDate", js.Any.fromFunction0(value))
     
-    inline def setGetMinDate(value: () => Date): Self = StObject.set(x, "GetMinDate", js.Any.fromFunction0(value))
+    inline def setGetMinDate(value: () => js.Date): Self = StObject.set(x, "GetMinDate", js.Any.fromFunction0(value))
     
     inline def setGetRangeDayCount(value: () => Double): Self = StObject.set(x, "GetRangeDayCount", js.Any.fromFunction0(value))
     
@@ -192,11 +191,11 @@ object ASPxClientDateEdit {
     
     inline def setParseDate(value: ASPxClientEvent[ASPxClientParseDateEventHandler[ASPxClientDateEdit]]): Self = StObject.set(x, "ParseDate", value.asInstanceOf[js.Any])
     
-    inline def setSetDate(value: Date => Unit): Self = StObject.set(x, "SetDate", js.Any.fromFunction1(value))
+    inline def setSetDate(value: js.Date => Unit): Self = StObject.set(x, "SetDate", js.Any.fromFunction1(value))
     
-    inline def setSetMaxDate(value: Date => Unit): Self = StObject.set(x, "SetMaxDate", js.Any.fromFunction1(value))
+    inline def setSetMaxDate(value: js.Date => Unit): Self = StObject.set(x, "SetMaxDate", js.Any.fromFunction1(value))
     
-    inline def setSetMinDate(value: Date => Unit): Self = StObject.set(x, "SetMinDate", js.Any.fromFunction1(value))
+    inline def setSetMinDate(value: js.Date => Unit): Self = StObject.set(x, "SetMinDate", js.Any.fromFunction1(value))
     
     inline def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientDateEdit]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
   }

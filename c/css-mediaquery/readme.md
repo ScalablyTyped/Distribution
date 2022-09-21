@@ -10,10 +10,10 @@ Parses and determines if a given CSS Media Query matches a set of values.
 | ------------------ | :-------------: |
 | Full name          | css-mediaquery |
 | Keywords           | css, media, query, mediaquery, mobile, parse, match |
-| # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 16914679 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3038832.0 |
+| # stars            | 102.0 |
 
 ## Links
 - [Homepage](https://github.com/ericf/css-mediaquery)

@@ -62,7 +62,7 @@ trait TableView extends StObject {
   /* private */ @JSName("Outlook.TableView_typekey")
   var OutlookDotTableView_typekey: TableView
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reset(): Unit
   
@@ -128,7 +128,7 @@ object TableView {
     MultiLineWidth: Double,
     Name: String,
     OutlookDotTableView_typekey: TableView,
-    Parent: js.Any,
+    Parent: Any,
     Reset: () => Unit,
     RowFont: ViewFont,
     Save: () => Unit,
@@ -208,7 +208,7 @@ object TableView {
     
     inline def setOutlookDotTableView_typekey(value: TableView): Self = StObject.set(x, "Outlook.TableView_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     

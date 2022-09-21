@@ -59,7 +59,7 @@ trait JDBCConnectionProperties
     * COLUMN(X) defines the column which will be compared and the column which will be replaced. In the example above column 2 will be compared with the
     * value -5. If this is true than column 6 will now return the value PRECISION.
     */
-  var TypeInfoSettings: SafeArray[js.Any]
+  var TypeInfoSettings: SafeArray[Any]
 }
 object JDBCConnectionProperties {
   
@@ -69,7 +69,7 @@ object JDBCConnectionProperties {
     JavaDriverClass: String,
     JavaDriverClassPath: String,
     SystemProperties: SafeArray[NamedValue],
-    TypeInfoSettings: SafeArray[js.Any],
+    TypeInfoSettings: SafeArray[Any],
     password: String,
     user: String
   ): JDBCConnectionProperties = {
@@ -89,6 +89,6 @@ object JDBCConnectionProperties {
     
     inline def setSystemProperties(value: SafeArray[NamedValue]): Self = StObject.set(x, "SystemProperties", value.asInstanceOf[js.Any])
     
-    inline def setTypeInfoSettings(value: SafeArray[js.Any]): Self = StObject.set(x, "TypeInfoSettings", value.asInstanceOf[js.Any])
+    inline def setTypeInfoSettings(value: SafeArray[Any]): Self = StObject.set(x, "TypeInfoSettings", value.asInstanceOf[js.Any])
   }
 }

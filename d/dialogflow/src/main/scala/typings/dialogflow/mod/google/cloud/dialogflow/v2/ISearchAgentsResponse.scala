@@ -28,7 +28,7 @@ object ISearchAgentsResponse {
     
     inline def setAgentsUndefined: Self = StObject.set(x, "agents", js.undefined)
     
-    inline def setAgentsVarargs(value: IAgent*): Self = StObject.set(x, "agents", js.Array(value :_*))
+    inline def setAgentsVarargs(value: IAgent*): Self = StObject.set(x, "agents", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

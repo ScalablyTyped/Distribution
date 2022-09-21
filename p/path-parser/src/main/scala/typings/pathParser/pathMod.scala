@@ -12,7 +12,7 @@ object pathMod {
   
   @JSImport("path-parser/dist/Path", JSImport.Default)
   @js.native
-  class default[T /* <: Record[String, js.Any] */] protected () extends Path[T] {
+  open class default[T /* <: Record[String, Any] */] protected () extends Path[T] {
     def this(path: String) = this()
     def this(path: String, options: PathOptions) = this()
   }
@@ -23,13 +23,13 @@ object pathMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createPath[T /* <: Record[String, js.Any] */](path: String): Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[Path[T]]
-    inline def createPath[T /* <: Record[String, js.Any] */](path: String, options: PathOptions): Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Path[T]]
+    inline def createPath[T /* <: Record[String, Any] */](path: String): Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[Path[T]]
+    inline def createPath[T /* <: Record[String, Any] */](path: String, options: PathOptions): Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Path[T]]
   }
   
   @JSImport("path-parser/dist/Path", "Path")
   @js.native
-  class Path[T /* <: Record[String, js.Any] */] protected () extends StObject {
+  open class Path[T /* <: Record[String, Any] */] protected () extends StObject {
     def this(path: String) = this()
     def this(path: String, options: PathOptions) = this()
     
@@ -38,7 +38,7 @@ object pathMod {
     def build(params: T, opts: PathBuildOptions): String = js.native
     def build(params: Unit, opts: PathBuildOptions): String = js.native
     
-    /* private */ var getParams: js.Any = js.native
+    /* private */ var getParams: Any = js.native
     
     var hasMatrixParams: Boolean = js.native
     
@@ -74,7 +74,7 @@ object pathMod {
     
     var urlParams: js.Array[String] = js.native
     
-    /* private */ var urlTest: js.Any = js.native
+    /* private */ var urlTest: Any = js.native
   }
   /* static members */
   object Path {
@@ -83,8 +83,8 @@ object pathMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createPath[T /* <: Record[String, js.Any] */](path: String): Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[Path[T]]
-    inline def createPath[T /* <: Record[String, js.Any] */](path: String, options: PathOptions): Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Path[T]]
+    inline def createPath[T /* <: Record[String, Any] */](path: String): Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[Path[T]]
+    inline def createPath[T /* <: Record[String, Any] */](path: String, options: PathOptions): Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Path[T]]
   }
   
   trait InternalPathOptions extends StObject {
@@ -233,5 +233,5 @@ object pathMod {
     }
   }
   
-  type TestMatch[T /* <: Record[String, js.Any] */] = T | Null
+  type TestMatch[T /* <: Record[String, Any] */] = T | Null
 }

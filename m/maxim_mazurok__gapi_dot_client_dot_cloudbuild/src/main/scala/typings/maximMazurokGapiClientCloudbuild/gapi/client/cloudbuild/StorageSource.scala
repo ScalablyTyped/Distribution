@@ -12,7 +12,7 @@ trait StorageSource extends StObject {
   /** Google Cloud Storage generation for the object. If the generation is omitted, the latest generation will be used. */
   var generation: js.UndefOr[String] = js.undefined
   
-  /** Google Cloud Storage object containing the source. This object must be a gzipped archive file (`.tar.gz`) containing source to build. */
+  /** Google Cloud Storage object containing the source. This object must be a zipped (`.zip`) or gzipped archive file (`.tar.gz`) containing source to build. */
   var `object`: js.UndefOr[String] = js.undefined
 }
 object StorageSource {

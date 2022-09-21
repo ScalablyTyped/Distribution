@@ -41,12 +41,12 @@ object colorRampsByTagParams {
     
     inline def setExcludedTagsUndefined: Self = StObject.set(x, "excludedTags", js.undefined)
     
-    inline def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value :_*))
+    inline def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value*))
     
     inline def setIncludedTags(value: js.Array[String]): Self = StObject.set(x, "includedTags", value.asInstanceOf[js.Any])
     
     inline def setIncludedTagsUndefined: Self = StObject.set(x, "includedTags", js.undefined)
     
-    inline def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value :_*))
+    inline def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value*))
   }
 }

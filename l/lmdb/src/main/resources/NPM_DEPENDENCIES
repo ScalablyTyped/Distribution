@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "lmdb" : "2.6.0-beta1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "lmdb" : "2.6.0-beta1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

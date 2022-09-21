@@ -10,10 +10,10 @@ Get the correct trash path on Linux
 | ------------------ | :-------------: |
 | Full name          | xdg-trashdir |
 | Keywords           | dir, file, linux, recycle, trash, xdg |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 2385430 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 295384.0 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/xdg-trashdir#readme)

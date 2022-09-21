@@ -1,8 +1,10 @@
 package typings.googleapis.anon
 
+import typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1.Doubleclickbidmanager
+import typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1.Options
 import typings.googleapis.googleapisStrings.v1
+import typings.googleapis.googleapisStrings.v1Dot1
 import typings.googleapis.googleapisStrings.v2
-import typings.googleapis.oauth2V1Mod.oauth2V1.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn97 extends StObject {
   
-  def apply(options: Options): typings.googleapis.oauth2V1Mod.oauth2V1.Oauth2 = js.native
-  def apply(options: typings.googleapis.oauth2V2Mod.oauth2V2.Options): typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2 = js.native
-  def apply(version: v1): typings.googleapis.oauth2V1Mod.oauth2V1.Oauth2 = js.native
-  def apply(version: v2): typings.googleapis.oauth2V2Mod.oauth2V2.Oauth2 = js.native
+  def apply(options: Options): Doubleclickbidmanager = js.native
+  def apply(options: typings.googleapis.doubleclickbidmanagerV2Mod.doubleclickbidmanagerV2.Options): typings.googleapis.doubleclickbidmanagerV2Mod.doubleclickbidmanagerV2.Doubleclickbidmanager = js.native
+  def apply(options: typings.googleapis.v1Dot1Mod.doubleclickbidmanagerV11.Options): typings.googleapis.v1Dot1Mod.doubleclickbidmanagerV11.Doubleclickbidmanager = js.native
+  def apply(version: v1): Doubleclickbidmanager = js.native
+  def apply(version: v1Dot1): typings.googleapis.v1Dot1Mod.doubleclickbidmanagerV11.Doubleclickbidmanager = js.native
+  def apply(version: v2): typings.googleapis.doubleclickbidmanagerV2Mod.doubleclickbidmanagerV2.Doubleclickbidmanager = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "Browser")
 @js.native
-class Browser () extends StObject {
+open class Browser () extends StObject {
   
   var alpha: Boolean = js.native
   

@@ -1,18 +1,18 @@
 package typings.mangopay2NodejsSdk.mod.models
 
+import typings.mangopay2NodejsSdk.addressMod.address.AddressType
+import typings.mangopay2NodejsSdk.bankAccountMod.bankAccount.IBANDetails
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IBAN
-import typings.mangopay2NodejsSdk.mod.address.AddressType
-import typings.mangopay2NodejsSdk.mod.bankAccount.IBANDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.BankAccountDetailsIBAN")
 @js.native
-class BankAccountDetailsIBAN protected ()
+open class BankAccountDetailsIBAN protected ()
   extends BankAccountDetails
      with IBANDetails {
-  def this(data: js.Any) = this()
+  def this(data: Any) = this()
   
   /**
     * The IBAN of the bank account

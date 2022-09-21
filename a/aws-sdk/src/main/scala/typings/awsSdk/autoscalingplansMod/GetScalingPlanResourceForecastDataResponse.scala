@@ -22,6 +22,6 @@ object GetScalingPlanResourceForecastDataResponse {
     
     inline def setDatapoints(value: Datapoints): Self = StObject.set(x, "Datapoints", value.asInstanceOf[js.Any])
     
-    inline def setDatapointsVarargs(value: Datapoint*): Self = StObject.set(x, "Datapoints", js.Array(value :_*))
+    inline def setDatapointsVarargs(value: Datapoint*): Self = StObject.set(x, "Datapoints", js.Array(value*))
   }
 }

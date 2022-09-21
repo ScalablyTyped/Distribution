@@ -11,7 +11,7 @@ trait IgColorPickerSplitButton
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event fired when the button is clicked.
@@ -75,7 +75,7 @@ trait IgColorPickerSplitButton
     * Button items.
     *
     */
-  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var items: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Specifies whether the default button will be switched when another button is selected.
@@ -124,11 +124,11 @@ object IgColorPickerSplitButton {
     
     inline def setHasDefaultIconUndefined: Self = StObject.set(x, "hasDefaultIcon", js.undefined)
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSwapDefaultEnabled(value: Boolean): Self = StObject.set(x, "swapDefaultEnabled", value.asInstanceOf[js.Any])
     

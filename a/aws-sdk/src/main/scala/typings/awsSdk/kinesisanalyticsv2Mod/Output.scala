@@ -22,7 +22,7 @@ trait Output extends StObject {
   var KinesisStreamsOutput: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.KinesisStreamsOutput] = js.undefined
   
   /**
-    * Identifies an AWS Lambda function as the destination.
+    * Identifies an Amazon Lambda function as the destination.
     */
   var LambdaOutput: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.LambdaOutput] = js.undefined
   

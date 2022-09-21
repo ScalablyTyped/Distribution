@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__url
 
-Typings are for version 2.19.0
+Typings are for version 3.18.0
 
 ## Library description:
 WordPress URL utilities.
@@ -10,13 +10,13 @@ WordPress URL utilities.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/url |
 | Keywords           | wordpress, gutenberg, url |
-| # releases         | 22 |
-| # dependents       | 24 |
-| # downloads        | 1120782 |
-| # stars            | 1 |
+| # releases         | 54 |
+| # dependents       | 0.0 |
+| # downloads        | 163218.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/url/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/url/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Furl)

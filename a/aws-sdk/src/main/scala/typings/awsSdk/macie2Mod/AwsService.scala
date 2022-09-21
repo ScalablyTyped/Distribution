@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsService extends StObject {
   
   /**
-    * The name of the AWS service that performed the action.
+    * The name of the Amazon Web Service that performed the action.
     */
   var invokedBy: js.UndefOr[string] = js.undefined
 }

@@ -10,9 +10,9 @@ A Winston transport for Amazon DynamoDB
 | Full name          | winston-dynamodb |
 | Keywords           | logging, sysadmin, tools, winston, amazon, dynamodb, aws |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 4105 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 767.3333333333334 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/inspiredjw/winston-dynamodb)

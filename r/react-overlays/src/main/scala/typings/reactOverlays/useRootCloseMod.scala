@@ -59,10 +59,11 @@ object useRootCloseMod {
     - typings.reactOverlays.reactOverlaysStrings.pointerup
     - typings.reactOverlays.reactOverlaysStrings.focus
     - typings.reactOverlays.reactOverlaysStrings.pointercancel
+    - typings.reactOverlays.reactOverlaysStrings.compositionupdate
     - typings.reactOverlays.reactOverlaysStrings.selectionchange
     - typings.reactOverlays.reactOverlaysStrings.volumechange
-    - typings.reactOverlays.reactOverlaysStrings.dragexit
     - typings.reactOverlays.reactOverlaysStrings.pointerenter
+    - typings.reactOverlays.reactOverlaysStrings.webkitanimationend
     - typings.reactOverlays.reactOverlaysStrings.animationend
     - typings.reactOverlays.reactOverlaysStrings.animationstart
     - typings.reactOverlays.reactOverlaysStrings.canplaythrough
@@ -72,13 +73,17 @@ object useRootCloseMod {
     - typings.reactOverlays.reactOverlaysStrings.keyup
     - typings.reactOverlays.reactOverlaysStrings.stalled
     - typings.reactOverlays.reactOverlaysStrings.animationiteration
+    - typings.reactOverlays.reactOverlaysStrings.webkitanimationiteration
     - typings.reactOverlays.reactOverlaysStrings.drag
     - typings.reactOverlays.reactOverlaysStrings.mouseleave
     - typings.reactOverlays.reactOverlaysStrings.dblclick
+    - typings.reactOverlays.reactOverlaysStrings.formdata
+    - typings.reactOverlays.reactOverlaysStrings.webkittransitionend
     - typings.reactOverlays.reactOverlaysStrings.change
     - typings.reactOverlays.reactOverlaysStrings.suspend
     - typings.reactOverlays.reactOverlaysStrings.mouseover
     - typings.reactOverlays.reactOverlaysStrings.wheel
+    - typings.reactOverlays.reactOverlaysStrings.beforeinput
     - typings.reactOverlays.reactOverlaysStrings.canplay
     - typings.reactOverlays.reactOverlaysStrings.dragstart
     - typings.reactOverlays.reactOverlaysStrings.error
@@ -91,13 +96,14 @@ object useRootCloseMod {
     - typings.reactOverlays.reactOverlaysStrings.mouseout
     - typings.reactOverlays.reactOverlaysStrings.loadeddata
     - typings.reactOverlays.reactOverlaysStrings.gotpointercapture
+    - typings.reactOverlays.reactOverlaysStrings.webkitanimationstart
     - typings.reactOverlays.reactOverlaysStrings.transitioncancel
+    - typings.reactOverlays.reactOverlaysStrings.compositionstart
     - typings.reactOverlays.reactOverlaysStrings.touchcancel
     - typings.reactOverlays.reactOverlaysStrings.keydown
     - typings.reactOverlays.reactOverlaysStrings.touchstart
     - typings.reactOverlays.reactOverlaysStrings.dragleave
     - typings.reactOverlays.reactOverlaysStrings.mousedown
-    - typings.reactOverlays.reactOverlaysStrings.submit
     - typings.reactOverlays.reactOverlaysStrings.input
     - typings.reactOverlays.reactOverlaysStrings.loadstart
     - typings.reactOverlays.reactOverlaysStrings.loadedmetadata
@@ -113,7 +119,6 @@ object useRootCloseMod {
     - typings.reactOverlays.reactOverlaysStrings.dragenter
     - typings.reactOverlays.reactOverlaysStrings.resize
     - typings.reactOverlays.reactOverlaysStrings.pointerleave
-    - typings.reactOverlays.reactOverlaysStrings.cancel
     - typings.reactOverlays.reactOverlaysStrings.play
     - typings.reactOverlays.reactOverlaysStrings.securitypolicyviolation
     - typings.reactOverlays.reactOverlaysStrings.drop
@@ -134,9 +139,12 @@ object useRootCloseMod {
     - typings.reactOverlays.reactOverlaysStrings.touchmove
     - typings.reactOverlays.reactOverlaysStrings.load
     - typings.reactOverlays.reactOverlaysStrings.contextmenu
+    - typings.reactOverlays.reactOverlaysStrings.compositionend
+    - typings.reactOverlays.reactOverlaysStrings.submit
     - typings.reactOverlays.reactOverlaysStrings.selectstart
     - typings.reactOverlays.reactOverlaysStrings.mousemove
     - typings.reactOverlays.reactOverlaysStrings.transitionstart
+    - typings.reactOverlays.reactOverlaysStrings.slotchange
     - typings.reactOverlays.reactOverlaysStrings.ratechange
   */
   trait MouseEvents extends StObject

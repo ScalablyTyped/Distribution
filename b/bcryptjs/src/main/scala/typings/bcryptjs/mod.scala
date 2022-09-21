@@ -1,7 +1,6 @@
 package typings.bcryptjs
 
 import typings.bcryptjs.anon.ReadonlyArrayLikenumber
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +12,11 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def compare(s: String, hash: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(s.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def compare(s: String, hash: String, callback: js.Function2[/* err */ Error, /* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(s.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compare(s: String, hash: String, callback: js.Function2[/* err */ js.Error, /* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(s.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def compare(
     s: String,
     hash: String,
-    callback: js.Function2[/* err */ Error, /* success */ Boolean, Unit],
+    callback: js.Function2[/* err */ js.Error, /* success */ Boolean, Unit],
     progressCallback: js.Function1[/* percent */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(s.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def compare(
@@ -36,9 +35,9 @@ object mod {
   inline def encodeBase64(b: ReadonlyArrayLikenumber, len: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeBase64")(b.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def genSalt(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("genSalt")().asInstanceOf[js.Promise[String]]
-  inline def genSalt(callback: js.Function2[/* err */ Error, /* salt */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("genSalt")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def genSalt(callback: js.Function2[/* err */ js.Error, /* salt */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("genSalt")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def genSalt(rounds: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("genSalt")(rounds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def genSalt(rounds: Double, callback: js.Function2[/* err */ Error, /* salt */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("genSalt")(rounds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def genSalt(rounds: Double, callback: js.Function2[/* err */ js.Error, /* salt */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("genSalt")(rounds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def genSaltSync(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("genSaltSync")().asInstanceOf[String]
   inline def genSaltSync(rounds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("genSaltSync")(rounds.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -48,11 +47,11 @@ object mod {
   inline def getSalt(hash: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSalt")(hash.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def hash(s: String, salt: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(s.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def hash(s: String, salt: String, callback: js.Function2[/* err */ Error, /* hash */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(s.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hash(s: String, salt: String, callback: js.Function2[/* err */ js.Error, /* hash */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(s.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def hash(
     s: String,
     salt: String,
-    callback: js.Function2[/* err */ Error, /* hash */ String, Unit],
+    callback: js.Function2[/* err */ js.Error, /* hash */ String, Unit],
     progressCallback: js.Function1[/* percent */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(s.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def hash(
@@ -62,11 +61,11 @@ object mod {
     progressCallback: js.Function1[/* percent */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(s.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def hash(s: String, salt: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(s.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def hash(s: String, salt: Double, callback: js.Function2[/* err */ Error, /* hash */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(s.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hash(s: String, salt: Double, callback: js.Function2[/* err */ js.Error, /* hash */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(s.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def hash(
     s: String,
     salt: Double,
-    callback: js.Function2[/* err */ Error, /* hash */ String, Unit],
+    callback: js.Function2[/* err */ js.Error, /* hash */ String, Unit],
     progressCallback: js.Function1[/* percent */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(s.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def hash(

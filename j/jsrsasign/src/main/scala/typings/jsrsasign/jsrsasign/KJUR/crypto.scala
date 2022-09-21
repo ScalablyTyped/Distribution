@@ -381,26 +381,29 @@ object crypto {
     /**
       * completes hash calculation and returns hash result
       * @example
-      * mac.digest()
+      * var mac = new KJUR.crypto.Mac({alg: "HmacSHA256", "pass": "pass"});
+      * mac.updateString('aaa')
+      * mac.doFinal() → "5737da..."
       */
-    def doFinal(): Unit = js.native
+    def doFinal(): String = js.native
     
     /**
-      * performs final update on the digest using hexadecimal string,
-      * then completes the digest computation
+      * performs final update on the digest using hexadecimal string, then completes the digest computation
       * @param hex hexadecimal string to final update
       * @example
-      * mac.digestHex('0f2abd')
+      * var mac = new KJUR.crypto.Mac({alg: "HmacSHA256", "pass": "pass"});
+      * mac.doFinalHex("616161") → "5737da..."
       */
-    def doFinalHex(hex: String): Unit = js.native
+    def doFinalHex(hex: String): String = js.native
     
     /**
       * performs final update on the digest using string, then completes the digest computation
       * @param str string to final update
       * @example
-      * mac.digestString('aaa')
+      * var mac = new KJUR.crypto.Mac({alg: "HmacSHA256", "pass": "pass"});
+      * mac.doFinalString("aaa") → "5737da..."
       */
-    def doFinalString(str: String): Unit = js.native
+    def doFinalString(str: String): String = js.native
     
     def setAlgAndProvider(alg: String, prov: String): Unit = js.native
     
@@ -495,7 +498,7 @@ object crypto {
       * @example
       * md.digest()
       */
-    def digest(): Unit
+    def digest(): String
     
     /**
       * performs final update on the digest using hexadecimal string, then completes the digest computation
@@ -504,7 +507,7 @@ object crypto {
       * @example
       * md.digestHex('0f2abd')
       */
-    def digestHex(hex: String): Unit
+    def digestHex(hex: String): String
     
     /**
       * performs final update on the digest using string, then completes the digest computation
@@ -513,7 +516,7 @@ object crypto {
       * @example
       * md.digestString('aaa')
       */
-    def digestString(str: String): Unit
+    def digestString(str: String): String
     
     /**
       * set hash algorithm and provider
@@ -562,9 +565,9 @@ object crypto {
   object MessageDigest {
     
     inline def apply(
-      digest: () => Unit,
-      digestHex: String => Unit,
-      digestString: String => Unit,
+      digest: () => String,
+      digestHex: String => String,
+      digestString: String => String,
       setAlgAndProvider: (String, String) => Unit,
       updateHex: String => Unit,
       updateString: String => Unit
@@ -575,11 +578,11 @@ object crypto {
     
     extension [Self <: MessageDigest](x: Self) {
       
-      inline def setDigest(value: () => Unit): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
+      inline def setDigest(value: () => String): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
       
-      inline def setDigestHex(value: String => Unit): Self = StObject.set(x, "digestHex", js.Any.fromFunction1(value))
+      inline def setDigestHex(value: String => String): Self = StObject.set(x, "digestHex", js.Any.fromFunction1(value))
       
-      inline def setDigestString(value: String => Unit): Self = StObject.set(x, "digestString", js.Any.fromFunction1(value))
+      inline def setDigestString(value: String => String): Self = StObject.set(x, "digestString", js.Any.fromFunction1(value))
       
       inline def setSetAlgAndProvider(value: (String, String) => Unit): Self = StObject.set(x, "setAlgAndProvider", js.Any.fromFunction2(value))
       

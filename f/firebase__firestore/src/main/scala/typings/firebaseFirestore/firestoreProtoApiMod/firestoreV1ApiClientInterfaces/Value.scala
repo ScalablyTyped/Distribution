@@ -2,53 +2,85 @@ package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInter
 
 import typings.firebaseFirestore.firestoreProtoApiMod.Timestamp
 import typings.firebaseFirestore.firestoreProtoApiMod.ValueNullValue
-import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Value extends js.Object {
+trait Value extends StObject {
+  
   var arrayValue: js.UndefOr[ArrayValue] = js.undefined
+  
   var booleanValue: js.UndefOr[Boolean] = js.undefined
-  var bytesValue: js.UndefOr[String | Uint8Array] = js.undefined
+  
+  var bytesValue: js.UndefOr[String | js.typedarray.Uint8Array] = js.undefined
+  
   var doubleValue: js.UndefOr[String | Double] = js.undefined
+  
   var geoPointValue: js.UndefOr[LatLng] = js.undefined
+  
   var integerValue: js.UndefOr[String | Double] = js.undefined
+  
   var mapValue: js.UndefOr[MapValue] = js.undefined
+  
   var nullValue: js.UndefOr[ValueNullValue] = js.undefined
+  
   var referenceValue: js.UndefOr[String] = js.undefined
+  
   var stringValue: js.UndefOr[String] = js.undefined
+  
   var timestampValue: js.UndefOr[Timestamp] = js.undefined
 }
-
 object Value {
-  @scala.inline
-  def apply(
-    arrayValue: ArrayValue = null,
-    booleanValue: js.UndefOr[Boolean] = js.undefined,
-    bytesValue: String | Uint8Array = null,
-    doubleValue: String | Double = null,
-    geoPointValue: LatLng = null,
-    integerValue: String | Double = null,
-    mapValue: MapValue = null,
-    nullValue: ValueNullValue = null,
-    referenceValue: String = null,
-    stringValue: String = null,
-    timestampValue: Timestamp = null
-  ): Value = {
+  
+  inline def apply(): Value = {
     val __obj = js.Dynamic.literal()
-    if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.get.asInstanceOf[js.Any])
-    if (bytesValue != null) __obj.updateDynamic("bytesValue")(bytesValue.asInstanceOf[js.Any])
-    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (geoPointValue != null) __obj.updateDynamic("geoPointValue")(geoPointValue.asInstanceOf[js.Any])
-    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue.asInstanceOf[js.Any])
-    if (mapValue != null) __obj.updateDynamic("mapValue")(mapValue.asInstanceOf[js.Any])
-    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
-    if (referenceValue != null) __obj.updateDynamic("referenceValue")(referenceValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
-    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
+  
+  extension [Self <: Value](x: Self) {
+    
+    inline def setArrayValue(value: ArrayValue): Self = StObject.set(x, "arrayValue", value.asInstanceOf[js.Any])
+    
+    inline def setArrayValueUndefined: Self = StObject.set(x, "arrayValue", js.undefined)
+    
+    inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
+    
+    inline def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
+    
+    inline def setBytesValue(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "bytesValue", value.asInstanceOf[js.Any])
+    
+    inline def setBytesValueUndefined: Self = StObject.set(x, "bytesValue", js.undefined)
+    
+    inline def setDoubleValue(value: String | Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    
+    inline def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
+    
+    inline def setGeoPointValue(value: LatLng): Self = StObject.set(x, "geoPointValue", value.asInstanceOf[js.Any])
+    
+    inline def setGeoPointValueUndefined: Self = StObject.set(x, "geoPointValue", js.undefined)
+    
+    inline def setIntegerValue(value: String | Double): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
+    
+    inline def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
+    
+    inline def setMapValue(value: MapValue): Self = StObject.set(x, "mapValue", value.asInstanceOf[js.Any])
+    
+    inline def setMapValueUndefined: Self = StObject.set(x, "mapValue", js.undefined)
+    
+    inline def setNullValue(value: ValueNullValue): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
+    
+    inline def setNullValueUndefined: Self = StObject.set(x, "nullValue", js.undefined)
+    
+    inline def setReferenceValue(value: String): Self = StObject.set(x, "referenceValue", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceValueUndefined: Self = StObject.set(x, "referenceValue", js.undefined)
+    
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    
+    inline def setTimestampValue(value: Timestamp): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
+  }
 }
-

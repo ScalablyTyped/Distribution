@@ -12,7 +12,7 @@ object urlConfigMod {
   
   @JSImport("@uirouter/core/lib/url/urlConfig", "UrlConfig")
   @js.native
-  class UrlConfig protected ()
+  open class UrlConfig protected ()
     extends StObject
        with Disposable {
     /** @internal */ def this(/** @internal */ router: UIRouter) = this()
@@ -110,7 +110,7 @@ object urlConfigMod {
       */
     def protocol(): String = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
     
     /**
       * Defines whether URLs should match trailing slashes, or not (the default behavior).
@@ -157,9 +157,9 @@ object urlConfigMod {
       *
       * @returns if only the `name` parameter was specified: the currently registered [[ParamType]] object, or undefined
       */
-    def `type`(name: String): js.Any = js.native
-    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
-    def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
-    def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
+    def `type`(name: String): Any = js.native
+    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): Any = js.native
+    def `type`(name: String, definition: ParamTypeDefinition): Any = js.native
+    def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): Any = js.native
   }
 }

@@ -1,29 +1,32 @@
 package typings.cesium.anon
 
+import typings.cesium.mod.JulianDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IsStartIncluded extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var isStartIncluded: js.UndefOr[Boolean] = js.undefined
   
   var isStopIncluded: js.UndefOr[Boolean] = js.undefined
   
-  var iso8601: String
+  var start: js.UndefOr[JulianDate] = js.undefined
+  
+  var stop: js.UndefOr[JulianDate] = js.undefined
 }
 object IsStartIncluded {
   
-  inline def apply(iso8601: String): IsStartIncluded = {
-    val __obj = js.Dynamic.literal(iso8601 = iso8601.asInstanceOf[js.Any])
+  inline def apply(): IsStartIncluded = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsStartIncluded]
   }
   
   extension [Self <: IsStartIncluded](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -35,6 +38,12 @@ object IsStartIncluded {
     
     inline def setIsStopIncludedUndefined: Self = StObject.set(x, "isStopIncluded", js.undefined)
     
-    inline def setIso8601(value: String): Self = StObject.set(x, "iso8601", value.asInstanceOf[js.Any])
+    inline def setStart(value: JulianDate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setStop(value: JulianDate): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
   }
 }

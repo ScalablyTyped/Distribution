@@ -41,11 +41,17 @@ trait Age extends StObject {
     */
   var matchesPattern: js.UndefOr[String] = js.undefined
   
+  /** List of object name prefixes. This condition will be satisfied when at least one of the prefixes exactly matches the beginning of the object name. */
+  var matchesPrefix: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * Objects having any of the storage classes specified by this condition will be matched. Values include MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE, STANDARD,
     * and DURABLE_REDUCED_AVAILABILITY.
     */
   var matchesStorageClass: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** List of object name suffixes. This condition will be satisfied when at least one of the suffixes exactly matches the end of the object name. */
+  var matchesSuffix: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A date in RFC 3339 format with only the date part (for instance, "2013-01-15"). This condition is satisfied when the noncurrent time on an object is before this date in
@@ -96,11 +102,23 @@ object Age {
     
     inline def setMatchesPatternUndefined: Self = StObject.set(x, "matchesPattern", js.undefined)
     
+    inline def setMatchesPrefix(value: js.Array[String]): Self = StObject.set(x, "matchesPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setMatchesPrefixUndefined: Self = StObject.set(x, "matchesPrefix", js.undefined)
+    
+    inline def setMatchesPrefixVarargs(value: String*): Self = StObject.set(x, "matchesPrefix", js.Array(value*))
+    
     inline def setMatchesStorageClass(value: js.Array[String]): Self = StObject.set(x, "matchesStorageClass", value.asInstanceOf[js.Any])
     
     inline def setMatchesStorageClassUndefined: Self = StObject.set(x, "matchesStorageClass", js.undefined)
     
-    inline def setMatchesStorageClassVarargs(value: String*): Self = StObject.set(x, "matchesStorageClass", js.Array(value :_*))
+    inline def setMatchesStorageClassVarargs(value: String*): Self = StObject.set(x, "matchesStorageClass", js.Array(value*))
+    
+    inline def setMatchesSuffix(value: js.Array[String]): Self = StObject.set(x, "matchesSuffix", value.asInstanceOf[js.Any])
+    
+    inline def setMatchesSuffixUndefined: Self = StObject.set(x, "matchesSuffix", js.undefined)
+    
+    inline def setMatchesSuffixVarargs(value: String*): Self = StObject.set(x, "matchesSuffix", js.Array(value*))
     
     inline def setNoncurrentTimeBefore(value: String): Self = StObject.set(x, "noncurrentTimeBefore", value.asInstanceOf[js.Any])
     

@@ -6,12 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Trial extends StObject {
   
+  /**
+    * Who created the trial.
+    */
   var CreatedBy: js.UndefOr[UserContext] = js.undefined
   
   /**
     * When the trial was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the trial as displayed. If DisplayName isn't specified, TrialName is displayed.
@@ -28,7 +31,9 @@ trait Trial extends StObject {
   /**
     * Who last modified the trial.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
+  
+  var MetadataProperties: js.UndefOr[typings.awsSdk.sagemakerMod.MetadataProperties] = js.undefined
   
   var Source: js.UndefOr[TrialSource] = js.undefined
   
@@ -65,7 +70,7 @@ object Trial {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -81,9 +86,13 @@ object Trial {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    
+    inline def setMetadataProperties(value: MetadataProperties): Self = StObject.set(x, "MetadataProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataPropertiesUndefined: Self = StObject.set(x, "MetadataProperties", js.undefined)
     
     inline def setSource(value: TrialSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
@@ -93,7 +102,7 @@ object Trial {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTrialArn(value: TrialArn): Self = StObject.set(x, "TrialArn", value.asInstanceOf[js.Any])
     
@@ -103,7 +112,7 @@ object Trial {
     
     inline def setTrialComponentSummariesUndefined: Self = StObject.set(x, "TrialComponentSummaries", js.undefined)
     
-    inline def setTrialComponentSummariesVarargs(value: TrialComponentSimpleSummary*): Self = StObject.set(x, "TrialComponentSummaries", js.Array(value :_*))
+    inline def setTrialComponentSummariesVarargs(value: TrialComponentSimpleSummary*): Self = StObject.set(x, "TrialComponentSummaries", js.Array(value*))
     
     inline def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
     

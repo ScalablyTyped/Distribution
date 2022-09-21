@@ -14,14 +14,14 @@ object mod {
   
   @JSImport("workbox-broadcast-update", "BroadcastCacheUpdate")
   @js.native
-  class BroadcastCacheUpdate ()
+  open class BroadcastCacheUpdate ()
     extends typings.workboxBroadcastUpdate.broadcastCacheUpdateMod.BroadcastCacheUpdate {
     def this(options: BroadcastCacheUpdateOptions) = this()
   }
   
   @JSImport("workbox-broadcast-update", "Plugin")
   @js.native
-  class Plugin ()
+  open class Plugin ()
     extends typings.workboxBroadcastUpdate.pluginMod.Plugin {
     def this(options: BroadcastCacheUpdateOptions) = this()
   }

@@ -15,11 +15,6 @@ object mod {
   trait PropertyInfo extends StObject {
     
     /**
-      * Is this property an array
-      */
-    var isArray: Boolean
-    
-    /**
       *  The key name of the duplicated property
       */
     var key: String
@@ -41,20 +36,12 @@ object mod {
   }
   object PropertyInfo {
     
-    inline def apply(
-      isArray: Boolean,
-      key: String,
-      occurrence: Double,
-      parent: PropertyInfo,
-      propertyPath: () => js.Array[String]
-    ): PropertyInfo = {
-      val __obj = js.Dynamic.literal(isArray = isArray.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], occurrence = occurrence.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], propertyPath = js.Any.fromFunction0(propertyPath))
+    inline def apply(key: String, occurrence: Double, parent: PropertyInfo, propertyPath: () => js.Array[String]): PropertyInfo = {
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], occurrence = occurrence.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], propertyPath = js.Any.fromFunction0(propertyPath))
       __obj.asInstanceOf[PropertyInfo]
     }
     
     extension [Self <: PropertyInfo](x: Self) {
-      
-      inline def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

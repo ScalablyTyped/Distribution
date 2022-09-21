@@ -24,6 +24,6 @@ object SalesforceMetadata {
     
     inline def setOAuthScopesUndefined: Self = StObject.set(x, "oAuthScopes", js.undefined)
     
-    inline def setOAuthScopesVarargs(value: OAuthScope*): Self = StObject.set(x, "oAuthScopes", js.Array(value :_*))
+    inline def setOAuthScopesVarargs(value: OAuthScope*): Self = StObject.set(x, "oAuthScopes", js.Array(value*))
   }
 }

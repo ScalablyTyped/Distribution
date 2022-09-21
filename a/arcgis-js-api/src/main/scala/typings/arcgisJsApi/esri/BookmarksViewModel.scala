@@ -13,6 +13,13 @@ trait BookmarksViewModel
      with GoTo {
   
   /**
+    * Defines the abilities of the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#abilities)
+    */
+  var abilities: Abilities = js.native
+  
+  /**
     * The [Bookmark](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html) that is being navigated to.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#activeBookmark)
@@ -27,12 +34,26 @@ trait BookmarksViewModel
   var bookmarks: Collection[Bookmark] = js.native
   
   /**
-    * Creates a new bookmark from based on the [BookmarkCreationOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions).
+    * Creates a new bookmark from the [defaultCreateOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#defaultCreateOptions), unless otherwise specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#createBookmark)
     */
   def createBookmark(): js.Promise[Bookmark] = js.native
-  def createBookmark(bookmarkCreationOptions: BookmarkCreationOptions): js.Promise[Bookmark] = js.native
+  def createBookmark(options: BookmarkOptions): js.Promise[Bookmark] = js.native
+  
+  /**
+    * Specifies how new bookmarks will be created.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#defaultCreateOptions)
+    */
+  var defaultCreateOptions: BookmarkOptions = js.native
+  
+  /**
+    * Specifies how bookmarks will be edited.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#defaultEditOptions)
+    */
+  var defaultEditOptions: BookmarkOptions = js.native
   
   /**
     * Edits the given bookmark.
@@ -40,17 +61,19 @@ trait BookmarksViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#editBookmark)
     */
   def editBookmark(bookmark: Bookmark): js.Promise[Bookmark] = js.native
-  def editBookmark(bookmark: Bookmark, bookmarkCreationOptions: BookmarkCreationOptions): js.Promise[Bookmark] = js.native
+  def editBookmark(bookmark: Bookmark, options: BookmarkOptions): js.Promise[Bookmark] = js.native
   
   /**
     * Zoom to a specific bookmark.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#goTo)
     */
-  def goTo(bookmark: Bookmark): js.Promise[js.Any] = js.native
+  def goTo(bookmark: Bookmark): js.Promise[Any] = js.native
   
   /**
     * The view model's state.
+    *
+    * @default ready
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#state)
     */

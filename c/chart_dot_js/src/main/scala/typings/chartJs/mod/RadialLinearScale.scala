@@ -1,60 +1,71 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.chartJs.anon.AngleX
+import typings.chartJs.basicMod.AnyObject
+import typings.chartJs.geometricMod.ChartArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RadialLinearScale extends StObject {
+@js.native
+trait RadialLinearScale[O /* <: RadialLinearScaleOptions */] extends Scale[O] {
   
-  var angleLines: js.UndefOr[AngleLineOptions] = js.undefined
+  def getBasePosition(index: Double): AngleX = js.native
   
-  var animate: js.UndefOr[Boolean] = js.undefined
+  def getDistanceFromCenterForValue(value: Double): Double = js.native
   
-  var display: js.UndefOr[Boolean] = js.undefined
+  def getIndexAngle(index: Double): Double = js.native
   
-  var gridLines: js.UndefOr[GridLineOptions] = js.undefined
+  def getPointLabelPosition(index: Double): ChartArea = js.native
   
-  var pointLabels: js.UndefOr[PointLabelOptions] = js.undefined
+  def getPointPosition(index: Double, distanceFromCenter: Double): AngleX = js.native
   
-  var position: js.UndefOr[PositionType] = js.undefined
+  def getPointPositionForValue(index: Double, value: Double): AngleX = js.native
   
-  var ticks: js.UndefOr[LinearTickOptions] = js.undefined
+  def getValueForDistanceFromCenter(distance: Double): Double = js.native
+  
+  def setCenterPoint(leftMovement: Double, rightMovement: Double, topMovement: Double, bottomMovement: Double): Unit = js.native
 }
+/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.RadialLinearScale<chart.js.chart.js.RadialLinearScaleOptions>, new <O extends chart.js.chart.js.RadialLinearScaleOptions = chart.js.chart.js.RadialLinearScaleOptions>(cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.RadialLinearScale<O>} */
 object RadialLinearScale {
   
-  inline def apply(): RadialLinearScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[RadialLinearScale]
-  }
+  @JSImport("chart.js", "RadialLinearScale")
+  @js.native
+  val ^ : js.Any = js.native
   
-  extension [Self <: RadialLinearScale](x: Self) {
-    
-    inline def setAngleLines(value: AngleLineOptions): Self = StObject.set(x, "angleLines", value.asInstanceOf[js.Any])
-    
-    inline def setAngleLinesUndefined: Self = StObject.set(x, "angleLines", js.undefined)
-    
-    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
-    
-    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
-    
-    inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
-    
-    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
-    
-    inline def setGridLines(value: GridLineOptions): Self = StObject.set(x, "gridLines", value.asInstanceOf[js.Any])
-    
-    inline def setGridLinesUndefined: Self = StObject.set(x, "gridLines", js.undefined)
-    
-    inline def setPointLabels(value: PointLabelOptions): Self = StObject.set(x, "pointLabels", value.asInstanceOf[js.Any])
-    
-    inline def setPointLabelsUndefined: Self = StObject.set(x, "pointLabels", js.undefined)
-    
-    inline def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-    
-    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
-    
-    inline def setTicks(value: LinearTickOptions): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
-    
-    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
-  }
+  @JSImport("chart.js", "RadialLinearScale.afterRegister")
+  @js.native
+  def afterRegister: js.UndefOr[js.Function0[Unit]] = js.native
+  inline def afterRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterRegister")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.afterUnregister")
+  @js.native
+  def afterUnregister: js.UndefOr[js.Function0[Unit]] = js.native
+  inline def afterUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterUnregister")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.beforeRegister")
+  @js.native
+  def beforeRegister: js.UndefOr[js.Function0[Unit]] = js.native
+  inline def beforeRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeRegister")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.beforeUnregister")
+  @js.native
+  def beforeUnregister: js.UndefOr[js.Function0[Unit]] = js.native
+  inline def beforeUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUnregister")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.defaultRoutes")
+  @js.native
+  def defaultRoutes: js.UndefOr[StringDictionary[String]] = js.native
+  inline def defaultRoutes_=(x: js.UndefOr[StringDictionary[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultRoutes")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.defaults")
+  @js.native
+  def defaults: js.UndefOr[AnyObject] = js.native
+  inline def defaults_=(x: js.UndefOr[AnyObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.id")
+  @js.native
+  def id: String = js.native
+  inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamJournalToKinesisResponse extends StObject {
   
   /**
-    * The unique ID that QLDB assigns to each QLDB journal stream.
+    * The UUID (represented in Base62-encoded text) that QLDB assigns to each QLDB journal stream.
     */
   var StreamId: js.UndefOr[UniqueId] = js.undefined
 }

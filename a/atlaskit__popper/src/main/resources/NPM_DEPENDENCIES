@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@atlaskit/popper" : "5.2.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@atlaskit/popper" : "5.2.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     Optional configuration object.
   * @api stable
   */
-class WFS () extends XMLFeature {
+open class WFS () extends XMLFeature {
   def this(opt_options: WFSOptions) = this()
   
   def readFeatureCollectionMetadata(source: String): WFSFeatureCollectionMetadata = js.native

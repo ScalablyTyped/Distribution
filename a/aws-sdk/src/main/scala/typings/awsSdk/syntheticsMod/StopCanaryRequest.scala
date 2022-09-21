@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StopCanaryRequest extends StObject {
   
   /**
-    * The name of the canary that you want to stop. To find the names of your canaries, use DescribeCanaries.
+    * The name of the canary that you want to stop. To find the names of your canaries, use ListCanaries.
     */
   var Name: CanaryName
 }

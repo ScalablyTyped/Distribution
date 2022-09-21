@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Zipf")
 @js.native
-class Zipf ()
+open class Zipf ()
   extends typings.ranjs.mod.dist.Zipf {
   def this(s: Double) = this()
   def this(s: Double, N: Double) = this()

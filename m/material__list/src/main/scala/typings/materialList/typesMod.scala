@@ -37,6 +37,34 @@ object typesMod {
   
   type MDCListIndex = Double | js.Array[Double]
   
+  trait MDCListSelectionChangeDetail extends StObject {
+    
+    /** Indices of the list items for which the selection changed. */
+    var changedIndices: js.Array[Double]
+  }
+  object MDCListSelectionChangeDetail {
+    
+    inline def apply(changedIndices: js.Array[Double]): MDCListSelectionChangeDetail = {
+      val __obj = js.Dynamic.literal(changedIndices = changedIndices.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MDCListSelectionChangeDetail]
+    }
+    
+    extension [Self <: MDCListSelectionChangeDetail](x: Self) {
+      
+      inline def setChangedIndices(value: js.Array[Double]): Self = StObject.set(x, "changedIndices", value.asInstanceOf[js.Any])
+      
+      inline def setChangedIndicesVarargs(value: Double*): Self = StObject.set(x, "changedIndices", js.Array(value*))
+    }
+  }
+  
+  @js.native
+  trait MDCListSelectionChangeEvent
+    extends StObject
+       with Event {
+    
+    var detail: MDCListSelectionChangeDetail = js.native
+  }
+  
   trait MDCListTextAndIndex extends StObject {
     
     var index: Double

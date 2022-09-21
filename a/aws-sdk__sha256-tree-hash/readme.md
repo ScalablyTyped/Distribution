@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__sha256-tree-hash
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/sha256-tree-hash/latest.svg)](https://www.npmjs.com/package/@aws-sdk/sha256-tree-hash) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/sha256-tree-hash.svg)](https://www.npmjs.com/package/@aws
@@ -10,10 +10,10 @@ Typings are for version 1.0.0-rc.7
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/sha256-tree-hash |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 2 |
-| # downloads        | 3355 |
-| # stars            | 0 |
+| # releases         | 55 |
+| # dependents       | 0.0 |
+| # downloads        | 2386.0 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/sha256-tree-hash)

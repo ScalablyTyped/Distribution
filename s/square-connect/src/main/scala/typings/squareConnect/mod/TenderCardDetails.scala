@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TenderCardDetails")
 @js.native
-class TenderCardDetails () extends StObject {
+open class TenderCardDetails () extends StObject {
   
   /**
     * The credit card's non-confidential details.

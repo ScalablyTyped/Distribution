@@ -34,7 +34,7 @@ object TextTracksAddedEvent {
     
     inline def setTracks(value: js.Array[TextTrackInfo]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    inline def setTracksVarargs(value: TextTrackInfo*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: TextTrackInfo*): Self = StObject.set(x, "tracks", js.Array(value*))
     
     inline def setType(value: allTextTracksAdded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

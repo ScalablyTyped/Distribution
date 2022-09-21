@@ -14,7 +14,7 @@ object epicIssuesMod {
   
   @JSImport("gitlab/dist/types/core/services/EpicIssues", "EpicIssues")
   @js.native
-  class EpicIssues () extends BaseService {
+  open class EpicIssues () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(groupId: String, epicId: Double): js.Promise[GetResponse] = js.native

@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DocumentAndElementEventHandlersEventMap extends StObject {
   
+  /* standard dom */
   var copy: ClipboardEvent
   
+  /* standard dom */
   var cut: ClipboardEvent
   
+  /* standard dom */
   var paste: ClipboardEvent
 }
 object DocumentAndElementEventHandlersEventMap {

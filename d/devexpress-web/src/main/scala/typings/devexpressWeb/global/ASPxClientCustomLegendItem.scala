@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCustomLegendItem")
 @js.native
-class ASPxClientCustomLegendItem ()
+open class ASPxClientCustomLegendItem ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCustomLegendItem {
   

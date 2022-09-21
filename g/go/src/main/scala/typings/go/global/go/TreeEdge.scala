@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an edge that does not know about any Link.
   */
-class TreeEdge ()
+open class TreeEdge ()
   extends typings.go.mod.TreeEdge

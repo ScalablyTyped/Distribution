@@ -33,6 +33,6 @@ object DescribeStandardsResponse {
     
     inline def setStandardsUndefined: Self = StObject.set(x, "Standards", js.undefined)
     
-    inline def setStandardsVarargs(value: Standard*): Self = StObject.set(x, "Standards", js.Array(value :_*))
+    inline def setStandardsVarargs(value: Standard*): Self = StObject.set(x, "Standards", js.Array(value*))
   }
 }

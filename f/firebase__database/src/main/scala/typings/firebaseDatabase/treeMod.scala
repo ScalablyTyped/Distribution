@@ -1,157 +1,102 @@
 package typings.firebaseDatabase
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.pathMod.Path
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeMod {
   
-  @JSImport("@firebase/database/dist/src/core/util/Tree", "Tree")
+  @JSImport("@firebase/database/dist/node-esm/src/core/util/Tree", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/database/dist/node-esm/src/core/util/Tree", "Tree")
   @js.native
   /**
-    * @template T
-    * @param {string=} name_ Optional name of the node.
-    * @param {Tree=} parent_ Optional parent node.
-    * @param {TreeNode=} node_ Optional node to wrap.
+    * @param name - Optional name of the node.
+    * @param parent - Optional parent node.
+    * @param node - Optional node to wrap.
     */
-  class Tree[T] () extends StObject {
-    def this(name_ : String) = this()
-    def this(name_ : String, parent_ : Tree[T]) = this()
-    def this(name_ : Unit, parent_ : Tree[T]) = this()
-    def this(name_ : String, parent_ : Null, node_ : TreeNode[T]) = this()
-    def this(name_ : String, parent_ : Unit, node_ : TreeNode[T]) = this()
-    def this(name_ : String, parent_ : Tree[T], node_ : TreeNode[T]) = this()
-    def this(name_ : Unit, parent_ : Null, node_ : TreeNode[T]) = this()
-    def this(name_ : Unit, parent_ : Unit, node_ : TreeNode[T]) = this()
-    def this(name_ : Unit, parent_ : Tree[T], node_ : TreeNode[T]) = this()
+  open class Tree[T] () extends StObject {
+    def this(name: String) = this()
+    def this(name: String, parent: Tree[T]) = this()
+    def this(name: Unit, parent: Tree[T]) = this()
+    def this(name: String, parent: Null, node: TreeNode[T]) = this()
+    def this(name: String, parent: Unit, node: TreeNode[T]) = this()
+    def this(name: String, parent: Tree[T], node: TreeNode[T]) = this()
+    def this(name: Unit, parent: Null, node: TreeNode[T]) = this()
+    def this(name: Unit, parent: Unit, node: TreeNode[T]) = this()
+    def this(name: Unit, parent: Tree[T], node: TreeNode[T]) = this()
     
-    /**
-      * Clears the contents of the tree node (its value and all children).
-      */
-    def clear(): Unit = js.native
+    val name: String = js.native
     
-    /**
-      * Calls action on each ancestor node.
-      *
-      * @param {function(!Tree.<T>)} action Action to be called on each parent; return
-      *   true to abort.
-      * @param {boolean=} includeSelf Whether to call action on this node as well.
-      * @return {boolean} true if the action callback returned true.
-      */
-    def forEachAncestor(action: js.Function1[/* tree */ Tree[T], js.Any]): Boolean = js.native
-    def forEachAncestor(action: js.Function1[/* tree */ Tree[T], js.Any], includeSelf: Boolean): Boolean = js.native
+    var node: TreeNode[T] = js.native
     
-    /**
-      * Calls action for each child of this tree node.
-      *
-      * @param {function(!Tree.<T>)} action Action to be called for each child.
-      */
-    def forEachChild(action: js.Function1[/* tree */ Tree[T], Unit]): Unit = js.native
-    
-    /**
-      * Does a depth-first traversal of this node's descendants, calling action for each one.
-      *
-      * @param {function(!Tree.<T>)} action Action to be called for each child.
-      * @param {boolean=} includeSelf Whether to call action on this node as well. Defaults to
-      *   false.
-      * @param {boolean=} childrenFirst Whether to call action on children before calling it on
-      *   parent.
-      */
-    def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit]): Unit = js.native
-    def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit], includeSelf: Boolean): Unit = js.native
-    def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit], includeSelf: Boolean, childrenFirst: Boolean): Unit = js.native
-    def forEachDescendant(action: js.Function1[/* tree */ Tree[T], Unit], includeSelf: Unit, childrenFirst: Boolean): Unit = js.native
-    
-    /**
-      * Does a depth-first traversal of this node's descendants.  When a descendant with a value
-      * is found, action is called on it and traversal does not continue inside the node.
-      * Action is *not* called on this node.
-      *
-      * @param {function(!Tree.<T>)} action Action to be called for each child.
-      */
-    def forEachImmediateDescendantWithValue(action: js.Function1[/* tree */ Tree[T], Unit]): Unit = js.native
-    
-    /**
-      * Returns the data associated with this tree node.
-      *
-      * @return {?T} The data or null if no data exists.
-      */
-    def getValue(): T | Null = js.native
-    
-    /**
-      * @return {boolean} Whether the tree has any children.
-      */
-    def hasChildren(): Boolean = js.native
-    
-    /**
-      * @return {boolean} Whether the tree is empty (no value or children).
-      */
-    def isEmpty(): Boolean = js.native
-    
-    /**
-      * @return {string} The name of the tree node.
-      */
-    def name(): String = js.native
-    
-    /* private */ var name_ : js.Any = js.native
-    
-    /* private */ var node_ : js.Any = js.native
-    
-    /**
-      * @return {?Tree} The parent tree node, or null if this is the root of the tree.
-      */
-    def parent(): Tree[T] | Null = js.native
-    
-    /* private */ var parent_ : js.Any = js.native
-    
-    /**
-      * @return {!Path} The path of this tree node, as a Path.
-      */
-    def path(): Path = js.native
-    
-    /**
-      * Sets data to this tree node.
-      *
-      * @param {!T} value Value to set.
-      */
-    def setValue(value: T): Unit = js.native
-    
-    /**
-      * Returns a sub-Tree for the given path.
-      *
-      * @param {!(string|Path)} pathObj Path to look up.
-      * @return {!Tree.<T>} Tree for path.
-      */
-    def subTree(pathObj: String): Tree[T] = js.native
-    def subTree(pathObj: Path): Tree[T] = js.native
-    
-    /**
-      * Adds or removes the passed child to this tree node, depending on whether it's empty.
-      *
-      * @param {string} childName The name of the child to update.
-      * @param {!Tree.<T>} child The child to update.
-      * @private
-      */
-    /* private */ var updateChild_ : js.Any = js.native
-    
-    /**
-      * Adds or removes this child from its parent based on whether it's empty or not.
-      *
-      * @private
-      */
-    /* private */ var updateParents_ : js.Any = js.native
+    val parent: Tree[T] | Null = js.native
   }
   
-  @JSImport("@firebase/database/dist/src/core/util/Tree", "TreeNode")
-  @js.native
-  class TreeNode[T] () extends StObject {
+  inline def treeForEachAncestor[T](tree: Tree[T], action: js.Function1[/* tree */ Tree[T], Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("treeForEachAncestor")(tree.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def treeForEachAncestor[T](tree: Tree[T], action: js.Function1[/* tree */ Tree[T], Any], includeSelf: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("treeForEachAncestor")(tree.asInstanceOf[js.Any], action.asInstanceOf[js.Any], includeSelf.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def treeForEachChild[T](tree: Tree[T], action: js.Function1[/* tree */ Tree[T], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treeForEachChild")(tree.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def treeForEachDescendant[T](tree: Tree[T], action: js.Function1[/* tree */ Tree[T], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treeForEachDescendant")(tree.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treeForEachDescendant[T](tree: Tree[T], action: js.Function1[/* tree */ Tree[T], Unit], includeSelf: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treeForEachDescendant")(tree.asInstanceOf[js.Any], action.asInstanceOf[js.Any], includeSelf.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treeForEachDescendant[T](
+    tree: Tree[T],
+    action: js.Function1[/* tree */ Tree[T], Unit],
+    includeSelf: Boolean,
+    childrenFirst: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treeForEachDescendant")(tree.asInstanceOf[js.Any], action.asInstanceOf[js.Any], includeSelf.asInstanceOf[js.Any], childrenFirst.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def treeForEachDescendant[T](
+    tree: Tree[T],
+    action: js.Function1[/* tree */ Tree[T], Unit],
+    includeSelf: Unit,
+    childrenFirst: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treeForEachDescendant")(tree.asInstanceOf[js.Any], action.asInstanceOf[js.Any], includeSelf.asInstanceOf[js.Any], childrenFirst.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def treeForEachImmediateDescendantWithValue[T](tree: Tree[T], action: js.Function1[/* tree */ Tree[T], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treeForEachImmediateDescendantWithValue")(tree.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def treeGetPath[T](tree: Tree[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("treeGetPath")(tree.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def treeGetValue[T](tree: Tree[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("treeGetValue")(tree.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  
+  inline def treeHasChildren[T](tree: Tree[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("treeHasChildren")(tree.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def treeIsEmpty[T](tree: Tree[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("treeIsEmpty")(tree.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def treeSetValue[T](tree: Tree[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("treeSetValue")(tree.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def treeSetValue[T](tree: Tree[T], value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treeSetValue")(tree.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def treeSubTree[T](tree: Tree[T], pathObj: String): Tree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeSubTree")(tree.asInstanceOf[js.Any], pathObj.asInstanceOf[js.Any])).asInstanceOf[Tree[T]]
+  inline def treeSubTree[T](tree: Tree[T], pathObj: Path): Tree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeSubTree")(tree.asInstanceOf[js.Any], pathObj.asInstanceOf[js.Any])).asInstanceOf[Tree[T]]
+  
+  trait TreeNode[T] extends StObject {
     
-    var childCount: Double = js.native
+    var childCount: Double
     
-    var children: StringDictionary[TreeNode[T]] = js.native
+    var children: Record[String, TreeNode[T]]
     
-    var value: T | Null = js.native
+    var value: js.UndefOr[T] = js.undefined
+  }
+  object TreeNode {
+    
+    inline def apply[T](childCount: Double, children: Record[String, TreeNode[T]]): TreeNode[T] = {
+      val __obj = js.Dynamic.literal(childCount = childCount.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TreeNode[T]]
+    }
+    
+    extension [Self <: TreeNode[?], T](x: Self & TreeNode[T]) {
+      
+      inline def setChildCount(value: Double): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
+      
+      inline def setChildren(value: Record[String, TreeNode[T]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
   }
 }

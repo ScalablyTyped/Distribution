@@ -138,5 +138,5 @@ object anon {
   @js.native
   trait Instantiable[T]
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, T]
+       with Instantiable1[/* args (repeated) */ Any, T]
 }

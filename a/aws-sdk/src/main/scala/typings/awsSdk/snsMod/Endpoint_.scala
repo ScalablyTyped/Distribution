@@ -12,7 +12,7 @@ trait Endpoint_ extends StObject {
   var Attributes: js.UndefOr[MapStringToString] = js.undefined
   
   /**
-    * EndpointArn for mobile app and device.
+    * The EndpointArn for mobile app and device.
     */
   var EndpointArn: js.UndefOr[String] = js.undefined
 }

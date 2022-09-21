@@ -10,6 +10,6 @@ trait IndexQuery extends StObject {
   def create(): IndexCreationQuery = js.native
   def create(indexName: String): IndexCreationQuery = js.native
   
-  def drop(columns: (Column[js.Any, js.Any])*): Executable = js.native
+  def drop(columns: (Column[Any, Any])*): Executable = js.native
   def drop(indexName: String): Executable = js.native
 }

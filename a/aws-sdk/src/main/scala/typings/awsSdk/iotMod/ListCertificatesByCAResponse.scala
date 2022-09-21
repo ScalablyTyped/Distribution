@@ -29,7 +29,7 @@ object ListCertificatesByCAResponse {
     
     inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    inline def setCertificatesVarargs(value: Certificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: Certificate*): Self = StObject.set(x, "certificates", js.Array(value*))
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     

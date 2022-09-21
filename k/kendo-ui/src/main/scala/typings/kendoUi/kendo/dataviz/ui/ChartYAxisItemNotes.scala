@@ -31,7 +31,7 @@ object ChartYAxisItemNotes {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: ChartYAxisItemNotesDataItem*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ChartYAxisItemNotesDataItem*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setIcon(value: ChartYAxisItemNotesIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

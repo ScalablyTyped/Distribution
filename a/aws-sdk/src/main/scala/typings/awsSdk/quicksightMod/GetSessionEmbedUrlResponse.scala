@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetSessionEmbedUrlResponse extends StObject {
   
   /**
-    * A single-use URL that you can put into your server-side web page to embed your QuickSight session. This URL is valid for 5 minutes. The API operation provides the URL with an auth_code value that enables one (and only one) sign-on to a user session that is valid for 10 hours. 
+    * A single-use URL that you can put into your server-side web page to embed your Amazon QuickSight session. This URL is valid for 5 minutes. The API operation provides the URL with an auth_code value that enables one (and only one) sign-on to a user session that is valid for 10 hours. 
     */
   var EmbedUrl: js.UndefOr[EmbeddingUrl] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   

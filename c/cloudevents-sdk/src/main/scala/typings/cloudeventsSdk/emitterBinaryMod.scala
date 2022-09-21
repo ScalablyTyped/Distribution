@@ -13,7 +13,7 @@ object emitterBinaryMod {
     */
   @JSImport("cloudevents-sdk/lib/bindings/http/emitter_binary", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with BinaryHTTPEmitter {
     /**
@@ -37,13 +37,13 @@ object emitterBinaryMod {
       * @returns {Promise} Promise with an eventual response from the receiver
       */
     /* CompleteClass */
-    override def emit(options: UrlURL, cloudevent: js.Object): js.Promise[js.Any] = js.native
+    override def emit(options: UrlURL, cloudevent: js.Object): js.Promise[Any] = js.native
     
     /* CompleteClass */
-    var extensionPrefix: js.Any = js.native
+    var extensionPrefix: Any = js.native
     
     /* CompleteClass */
-    var headerParserMap: Map[js.Any, js.Any] = js.native
+    var headerParserMap: Map[Any, Any] = js.native
   }
   
   /**
@@ -61,30 +61,26 @@ object emitterBinaryMod {
       * @param {Object} cloudevent the CloudEvent to be sent
       * @returns {Promise} Promise with an eventual response from the receiver
       */
-    def emit(options: UrlURL, cloudevent: js.Object): js.Promise[js.Any]
+    def emit(options: UrlURL, cloudevent: js.Object): js.Promise[Any]
     
-    var extensionPrefix: js.Any
+    var extensionPrefix: Any
     
-    var headerParserMap: Map[js.Any, js.Any]
+    var headerParserMap: Map[Any, Any]
   }
   object BinaryHTTPEmitter {
     
-    inline def apply(
-      emit: (UrlURL, js.Object) => js.Promise[js.Any],
-      extensionPrefix: js.Any,
-      headerParserMap: Map[js.Any, js.Any]
-    ): BinaryHTTPEmitter = {
+    inline def apply(emit: (UrlURL, js.Object) => js.Promise[Any], extensionPrefix: Any, headerParserMap: Map[Any, Any]): BinaryHTTPEmitter = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), extensionPrefix = extensionPrefix.asInstanceOf[js.Any], headerParserMap = headerParserMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[BinaryHTTPEmitter]
     }
     
     extension [Self <: BinaryHTTPEmitter](x: Self) {
       
-      inline def setEmit(value: (UrlURL, js.Object) => js.Promise[js.Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (UrlURL, js.Object) => js.Promise[Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      inline def setExtensionPrefix(value: js.Any): Self = StObject.set(x, "extensionPrefix", value.asInstanceOf[js.Any])
+      inline def setExtensionPrefix(value: Any): Self = StObject.set(x, "extensionPrefix", value.asInstanceOf[js.Any])
       
-      inline def setHeaderParserMap(value: Map[js.Any, js.Any]): Self = StObject.set(x, "headerParserMap", value.asInstanceOf[js.Any])
+      inline def setHeaderParserMap(value: Map[Any, Any]): Self = StObject.set(x, "headerParserMap", value.asInstanceOf[js.Any])
     }
   }
 }

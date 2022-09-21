@@ -10,10 +10,10 @@ Fossil SCM delta compression
 | ------------------ | :-------------: |
 | Full name          | fossil-delta |
 | Keywords           | delta, compression, encoding |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 52114 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2780.3333333333335 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/dchest/fossil-delta-js#readme)

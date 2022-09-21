@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "classic-level" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "classic-level" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

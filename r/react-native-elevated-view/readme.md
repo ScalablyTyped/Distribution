@@ -11,9 +11,9 @@ Cross platform solution to elevation for React Native
 | Full name          | react-native-elevated-view |
 | Keywords           | react-native, react-native-elevated-view, react, native, elevated, view, elevation, ios, android, react native |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 75089 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6812.333333333333 |
+| # stars            | 160.0 |
 
 ## Links
 - [Homepage](https://github.com/alekhurst/react-native-elevated-view#readme)

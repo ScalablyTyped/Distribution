@@ -16,7 +16,7 @@ object getFileCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/GetFileCommand", "GetFileCommand")
   @js.native
-  class GetFileCommand protected ()
+  open class GetFileCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object getFileCommandMod {
     override val middlewareStack: MiddlewareStack[GetFileInput, GetFileOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: CodeCommitResolvedConfiguration
     ): Handler[GetFileInput, GetFileOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CodeCommitResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetFileInput, GetFileOutput] = js.native
   }
 }

@@ -11,14 +11,11 @@ Typings are for version 0.14
 | Full name          | react-addons-linked-state-mixin |
 | Keywords           | react, react-addon |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 372322 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 18775.333333333332 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/facebook/react#readme)
-- [Bugs](https://github.com/facebook/react/issues)
-- [Repository](https://github.com/facebook/react)
 - [Npm](https://www.npmjs.com/package/react-addons-linked-state-mixin)
     
 

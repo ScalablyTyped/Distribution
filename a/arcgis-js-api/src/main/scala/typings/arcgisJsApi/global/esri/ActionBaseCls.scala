@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html)
   */
-class ActionBaseCls ()
+open class ActionBaseCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ActionBase {
   def this(properties: ActionBaseProperties) = this()

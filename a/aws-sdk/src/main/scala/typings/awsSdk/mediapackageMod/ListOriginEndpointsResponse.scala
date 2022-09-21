@@ -33,6 +33,6 @@ object ListOriginEndpointsResponse {
     
     inline def setOriginEndpointsUndefined: Self = StObject.set(x, "OriginEndpoints", js.undefined)
     
-    inline def setOriginEndpointsVarargs(value: OriginEndpoint*): Self = StObject.set(x, "OriginEndpoints", js.Array(value :_*))
+    inline def setOriginEndpointsVarargs(value: OriginEndpoint*): Self = StObject.set(x, "OriginEndpoints", js.Array(value*))
   }
 }

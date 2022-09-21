@@ -6,76 +6,192 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "SurveyElement")
 @js.native
-class SurveyElement protected ()
-  extends Base
+open class SurveyElement protected ()
+  extends SurveyElementCore
      with ISurveyElement {
   def this(name: String) = this()
   
-  val areInvisibleElementsShowing: Boolean = js.native
+  def __setData(data: ISurveyData): Unit = js.native
   
-  /* CompleteClass */
-  var containsErrors: Boolean = js.native
+  var allowRootStyle: Boolean = js.native
   
-  val data: ISurveyData = js.native
+  def areInvisibleElementsShowing: Boolean = js.native
   
-  /* CompleteClass */
-  override def delete(): js.Any = js.native
+  /* protected */ def calcCssClasses(css: Any): Any = js.native
+  
+  /* protected */ def clearCssClasses(): Unit = js.native
+  
+  def clickTitleFunction: Any = js.native
+  
+  /*
+    * Collapses the survey element.
+    * 
+    * In collapsed state, the element displays only `title` and `description`.
+    */
+  def collapse(): Unit = js.native
+  
+  /*
+    * Returns `true` if the survey element or its child elements have a validation error.
+    * 
+    * This property contains the result of the most recent validation. This result may be outdated. Call the `hasErrors` method to get an up-to-date value.
+    */
+  @JSName("containsErrors")
+  def containsErrors_MSurveyElement: Boolean = js.native
+  
+  /* protected */ def createActionContainer(): ActionContainer[Action] = js.native
+  /* protected */ def createActionContainer(allowAdaptiveActions: Boolean): ActionContainer[Action] = js.native
+  
+  var cssClassesValue: Any = js.native
+  
+  def cssError: String = js.native
+  
+  def data: ISurveyData = js.native
   
   var disableDesignActions: Boolean = js.native
   
-  /**
-    * The list of errors. It is created by callig hasErrors functions
-    * @see hasErrors
+  var dragTypeOverMe: DragTypeOverMeEnum = js.native
+  
+  /*
+    * Validation errors. Call the `hasErrors()` method to validate survey element data.
     */
-  var errors: js.Array[SurveyError] = js.native
+  def errors: Any = js.native
+  def errors_=(`val`: Any): Unit = js.native
+  
+  /*
+    * Expands the survey element.
+    */
+  def expand(): Unit = js.native
   
   /* protected */ def getContainsErrors(): Boolean = js.native
   
+  /* protected */ def getDefaultTitleActions(): js.Array[IAction] = js.native
+  
   def getElementsInDesign(): js.Array[IElement] = js.native
   def getElementsInDesign(includeHidden: Boolean): js.Array[IElement] = js.native
+  
+  /* protected */ def getIsErrorsModeTooltip(): Boolean = js.native
+  
+  /* InferMemberOverrides */
+  override def getLocale(): String = js.native
   
   /* protected */ def getPage(parent: IPanel): IPage = js.native
   
   /* protected */ def getProcessedHtml(html: String): String = js.native
   
-  /**
-    * Returns the type of the object as a string as it represents in the json. It should be in lowcase.
+  /* protected */ def getSkeletonComponentNameCore(): String = js.native
+  
+  def getTitleActions(): js.Array[Any] = js.native
+  
+  /* InferMemberOverrides */
+  override def getTitleToolbar(): AdaptiveActionContainer[Action] = js.native
+  
+  /*
+    * Returns the object type as it is used in the JSON schema.
     */
   /* InferMemberOverrides */
   override def getType(): String = js.native
   
+  /* protected */ def getUseDisplayValuesInTitle(): Boolean = js.native
+  
   /* protected */ def getValidName(name: String): String = js.native
+  
+  /* protected */ def hasFrameV2: Boolean = js.native
+  
+  def hasParent: Boolean = js.native
+  
+  def hasStateButton: Boolean = js.native
+  
+  var hasVisibleErrors: Boolean = js.native
+  
+  /*
+    * Increases or decreases indent of the survey element content from the left edge. Accepts positive integer values and 0.
+    */
+  def indent: Double = js.native
+  def indent_=(`val`: Double): Unit = js.native
+  
+  /*
+    * Returns `true` if the survey element is collapsed.
+    */
+  def isCollapsed: Boolean = js.native
   
   var isContentElement: Boolean = js.native
   
-  /**
-    * Returns true if the question in design mode right now.
+  /* protected */ def isDefaultV2Theme: Boolean = js.native
+  
+  var isDragMe: Boolean = js.native
+  
+  var isEditableTemplateElement: Boolean = js.native
+  
+  def isErrorsModeTooltip: Boolean = js.native
+  
+  /*
+    * Returns `true` if the survey element is expanded.
     */
-  val isDesignMode: Boolean = js.native
+  def isExpanded: Boolean = js.native
   
-  /* CompleteClass */
-  var isPage: Boolean = js.native
+  var isInteractiveDesignElement: Boolean = js.native
   
-  /* CompleteClass */
-  var isPanel: Boolean = js.native
+  /*
+    * Returns `true` if the survey element is a page.
+    */
+  @JSName("isPage")
+  def isPage_MSurveyElement: Boolean = js.native
   
-  /* CompleteClass */
-  var isReadOnly: Boolean = js.native
+  /*
+    * Returns `true` if the survey element is a panel.
+    */
+  @JSName("isPanel")
+  def isPanel_MSurveyElement: Boolean = js.native
   
-  /* CompleteClass */
-  var isVisible: Boolean = js.native
+  /*
+    * Returns `true` if the survey element is a question.
+    */
+  def isQuestion: Boolean = js.native
+  
+  /*
+    * Returns `true` if the survey element or its parent element is read-only.
+    */
+  @JSName("isReadOnly")
+  def isReadOnly_MSurveyElement: Boolean = js.native
+  
+  var isSingleInRow: Boolean = js.native
+  
+  var isTitleActionRequested: Boolean = js.native
+  
+  @JSName("isVisible")
+  def isVisible_MSurveyElement: Boolean = js.native
+  
+  var locOwner: ILocalizableOwner = js.native
   
   /* InferMemberOverrides */
-  override def locStrsChanged(): Unit & js.Any = js.native
+  override def locStrsChanged(): Unit & Any = js.native
+  
+  /*
+    * Gets or sets maximum survey element width in CSS values.
+    * 
+    * Default value: "100%" (taken from [`settings.maxWidth`](https://surveyjs.io/form-library/documentation/settings#maxWidth))
+    */
+  def maxWidth: String = js.native
+  def maxWidth_=(`val`: String): Unit = js.native
+  
+  /*
+    * Gets or sets minimum survey element width in CSS values.
+    * 
+    * Default value: "300px" (taken from [`settings.minWidth`](https://surveyjs.io/form-library/documentation/settings#minWidth))
+    */
+  def minWidth: String = js.native
+  def minWidth_=(`val`: String): Unit = js.native
   
   /* protected */ def moveToBase(parent: IPanel, container: IPanel): Boolean = js.native
-  /* protected */ def moveToBase(parent: IPanel, container: IPanel, insertBefore: js.Any): Boolean = js.native
+  /* protected */ def moveToBase(parent: IPanel, container: IPanel, insertBefore: Any): Boolean = js.native
   
-  /* CompleteClass */
-  var name: String = js.native
+  /*
+    * A survey element identifier.
+    */
+  @JSName("name")
+  def name_MSurveyElement: String = js.native
   
-  /* CompleteClass */
-  override def onFirstRendering(): js.Any = js.native
+  /* protected */ def needClickTitleFunction(): Boolean = js.native
   
   /* protected */ def onNameChanged(oldValue: String): Unit = js.native
   
@@ -83,45 +199,118 @@ class SurveyElement protected ()
   
   /* protected */ def onSetData(): Unit = js.native
   
-  /* CompleteClass */
-  override def onSurveyLoad(): js.Any = js.native
+  /* InferMemberOverrides */
+  override def onSurveyLoad(): Unit & Any = js.native
   
-  /**
-    * Set it to true to make an element question/panel/page readonly.
-    * Please note, this property is hidden for question without input, for example html question.
-    * @see enableIf
-    * @see isReadOnly
+  def paddingLeft: String = js.native
+  def paddingLeft_=(`val`: String): Unit = js.native
+  
+  def paddingRight: String = js.native
+  def paddingRight_=(`val`: String): Unit = js.native
+  
+  @JSName("parent")
+  def parent_MSurveyElement: IPanel = js.native
+  
+  /* protected */ def processTitleClick(): Unit = js.native
+  
+  /*
+    * Makes the survey element read-only.
     */
-  var readOnly: Boolean = js.native
+  def readOnly: Boolean = js.native
   
-  def readOnlyChangedCallback(): Unit = js.native
+  var readOnlyChangedCallback: Any = js.native
   
-  /* protected */ def removeSelfFromList(list: js.Array[js.Any]): Unit = js.native
+  def readOnly_=(`val`: Boolean): Unit = js.native
   
-  var selectedElementInDesign: SurveyElement = js.native
+  /* protected */ def removeSelfFromList(list: Any): Unit = js.native
   
-  /* protected */ def setPage(parent: IPanel, `val`: IPage): Unit = js.native
+  /*
+    * Returns a calculated width of the rendered survey element in CSS values.
+    */
+  def renderWidth: String = js.native
+  def renderWidth_=(`val`: String): Unit = js.native
+  
+  /*
+    * Increases or decreases indent of the survey element content from the right edge. Accepts positive integer values and 0.
+    */
+  def rightIndent: Double = js.native
+  def rightIndent_=(`val`: Double): Unit = js.native
+  
+  def rootStyle: Any = js.native
+  
+  def selectedElementInDesign: SurveyElement = js.native
+  
+  var selectedElementInDesignValue: SurveyElement = js.native
+  
+  def selectedElementInDesign_=(`val`: SurveyElement): Unit = js.native
+  
+  /* protected */ def setPage(parent: IPanel, newPage: IPage): Unit = js.native
+  
+  /* protected */ def setSurveyCore(value: ISurvey): Unit = js.native
   
   /* CompleteClass */
-  override def setSurveyImpl(value: ISurveyImpl): js.Any = js.native
+  var shortcutText: String = js.native
+  @JSName("shortcutText")
+  def shortcutText_MSurveyElement: String = js.native
   
-  /* CompleteClass */
-  override def setVisibleIndex(value: Double): Double = js.native
+  @JSName("skeletonComponentName")
+  def skeletonComponentName_MSurveyElement: String = js.native
   
-  /**
+  /*
+    * Gets and sets the survey element's expand state.
+    * 
+    * Possible values:
+    * 
+    * - `"collapsed"` - The survey element displays only `title` and `description`.
+    * - `"expanded"` - The survey element is displayed in full.
+    */
+  def state: String = js.native
+  
+  @JSName("stateChangedCallback")
+  var stateChangedCallback_FSurveyElement: Any = js.native
+  
+  def state_=(`val`: String): Unit = js.native
+  
+  /*
     * Returns the survey object.
     */
-  val survey: ISurvey = js.native
+  def survey: ISurvey = js.native
   
-  /* protected */ val surveyImpl: ISurveyImpl = js.native
+  var surveyDataValue: ISurveyData = js.native
   
-  /* protected */ val textProcessor: ITextProcessor = js.native
+  /* protected */ def surveyImpl: ISurveyImpl = js.native
+  
+  var surveyImplValue: ISurveyImpl = js.native
+  
+  var surveyValue: ISurvey = js.native
+  
+  /* protected */ def textProcessor: ITextProcessor = js.native
+  
+  var textProcessorValue: ITextProcessor = js.native
+  
+  def titleActions: Any = js.native
+  
+  var titleToolbarValue: Any = js.native
+  
+  /* InferMemberOverrides */
+  override def toggleState(): Unit & Boolean = js.native
   
   def updateContainsErrors(): Unit = js.native
   
   def updateCustomWidgets(): Unit = js.native
   
   def updateElementCss(): Unit = js.native
+  def updateElementCss(reNew: Boolean): Unit = js.native
+  
+  /* protected */ def updateElementCssCore(cssClasses: Any): Unit = js.native
+  
+  /*
+    * Sets survey element width in CSS values.
+    * 
+    * Default value: ""
+    */
+  def width: String = js.native
+  def width_=(`val`: String): Unit = js.native
 }
 /* static members */
 object SurveyElement {
@@ -137,12 +326,10 @@ object SurveyElement {
   
   inline def FocusElement(elementId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusElement")(elementId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def GetFirstNonTextElement(elements: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstNonTextElement")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def GetFirstNonTextElement(elements: js.Any, removeSpaces: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstNonTextElement")(elements.asInstanceOf[js.Any], removeSpaces.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def GetFirstNonTextElement(elements: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstNonTextElement")(elements.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def GetFirstNonTextElement(elements: Any, removeSpaces: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstNonTextElement")(elements.asInstanceOf[js.Any], removeSpaces.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def ScrollElementToTop(elementId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollElementToTop")(elementId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def createProgressInfo(): IProgressInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgressInfo")().asInstanceOf[IProgressInfo]
-  
-  inline def getProgressInfoByElements(children: js.Array[SurveyElement], isRequired: Boolean): IProgressInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getProgressInfoByElements")(children.asInstanceOf[js.Any], isRequired.asInstanceOf[js.Any])).asInstanceOf[IProgressInfo]
+  inline def getProgressInfoByElements(children: Any, isRequired: Boolean): IProgressInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getProgressInfoByElements")(children.asInstanceOf[js.Any], isRequired.asInstanceOf[js.Any])).asInstanceOf[IProgressInfo]
 }

@@ -17,7 +17,7 @@ trait WorkItemTemplate
 object WorkItemTemplate {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     description: String,
     fields: StringDictionary[String],
     id: String,

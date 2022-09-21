@@ -15,5 +15,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.actionTool.
   */
-class ActionTool ()
+open class ActionTool ()
   extends typings.go.mod.ActionTool

@@ -28,7 +28,7 @@ object CampaignCreativeAssociationsListResponse {
     
     inline def setCampaignCreativeAssociationsUndefined: Self = StObject.set(x, "campaignCreativeAssociations", js.undefined)
     
-    inline def setCampaignCreativeAssociationsVarargs(value: CampaignCreativeAssociation*): Self = StObject.set(x, "campaignCreativeAssociations", js.Array(value :_*))
+    inline def setCampaignCreativeAssociationsVarargs(value: CampaignCreativeAssociation*): Self = StObject.set(x, "campaignCreativeAssociations", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

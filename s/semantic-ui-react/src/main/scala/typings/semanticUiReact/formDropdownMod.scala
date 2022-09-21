@@ -2,11 +2,11 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.KeyboardEvent
+import typings.react.mod.FC
+import typings.react.mod.FocusEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.react.mod.SyntheticEvent
 import typings.semanticUiReact.dropdownDropdownMod.DropdownOnSearchChangeData
 import typings.semanticUiReact.dropdownDropdownMod.DropdownProps
@@ -21,6 +21,7 @@ import typings.semanticUiReact.semanticUiReactStrings.bottom
 import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.right
 import typings.semanticUiReact.semanticUiReactStrings.top
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -31,12 +32,12 @@ object formDropdownMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormDropdown", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FormDropdownProps] = js.native
+  val default: FC[FormDropdownProps] = js.native
   
   trait FormDropdownProps
     extends StObject
        with StrictFormDropdownProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FormDropdownProps {
     
     inline def apply(): FormDropdownProps = {
@@ -110,7 +111,7 @@ object formDropdownMod extends Shortcut {
     
     /** Individual fields may display an error state along with a message. */
     @JSName("error")
-    var error_StrictFormDropdownProps: js.UndefOr[js.Any] = js.undefined
+    var error_StrictFormDropdownProps: js.UndefOr[Any] = js.undefined
     
     /** A dropdown menu can contain floated content. */
     var floating: js.UndefOr[Boolean] = js.undefined
@@ -122,7 +123,7 @@ object formDropdownMod extends Shortcut {
     var header: js.UndefOr[ReactNode] = js.undefined
     
     /** Shorthand for Icon. */
-    var icon: js.UndefOr[js.Any] = js.undefined
+    var icon: js.UndefOr[Any] = js.undefined
     
     /** A dropdown can be formatted as a Menu item. */
     var item: js.UndefOr[Boolean] = js.undefined
@@ -152,7 +153,7 @@ object formDropdownMod extends Shortcut {
       * @param {object} data - All props and the new item's value.
       */
     var onAddItem: js.UndefOr[
-        js.Function2[/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps, Unit]
+        js.Function2[/* event */ SyntheticEvent[HTMLElement, Event], /* data */ DropdownProps, Unit]
       ] = js.undefined
     
     /**
@@ -162,7 +163,7 @@ object formDropdownMod extends Shortcut {
       * @param {object} data - All props.
       */
     var onBlur: js.UndefOr[
-        js.Function2[/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps, Unit]
+        js.Function2[/* event */ FocusEvent[HTMLElement, Element], /* data */ DropdownProps, Unit]
       ] = js.undefined
     
     /**
@@ -182,7 +183,11 @@ object formDropdownMod extends Shortcut {
       * @param {object} data - All props.
       */
     var onClick: js.UndefOr[
-        js.Function2[/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps, Unit]
+        js.Function2[
+          /* event */ MouseEvent[HTMLElement, NativeMouseEvent], 
+          /* data */ DropdownProps, 
+          Unit
+        ]
       ] = js.undefined
     
     /**
@@ -202,7 +207,7 @@ object formDropdownMod extends Shortcut {
       * @param {object} data - All props.
       */
     var onFocus: js.UndefOr[
-        js.Function2[/* event */ SyntheticEvent[HTMLElement, Event], /* data */ DropdownProps, Unit]
+        js.Function2[/* event */ FocusEvent[HTMLElement, Element], /* data */ DropdownProps, Unit]
       ] = js.undefined
     
     /**
@@ -284,7 +289,7 @@ object formDropdownMod extends Shortcut {
           /* item */ DropdownItemProps, 
           /* index */ Double, 
           /* defaultLabelProps */ LabelProps, 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -304,7 +309,7 @@ object formDropdownMod extends Shortcut {
       ] = js.undefined
     
     /** A shorthand for a search input. */
-    var searchInput: js.UndefOr[js.Any] = js.undefined
+    var searchInput: js.UndefOr[Any] = js.undefined
     
     /** Current value of searchQuery. Creates a controlled component. */
     var searchQuery: js.UndefOr[String] = js.undefined
@@ -319,7 +324,7 @@ object formDropdownMod extends Shortcut {
     var selectedLabel: js.UndefOr[Double | String] = js.undefined
     
     /** A dropdown can be used to select between choices in a form. */
-    var selection: js.UndefOr[js.Any] = js.undefined
+    var selection: js.UndefOr[Any] = js.undefined
     
     /** A simple dropdown can open without Javascript. */
     var simple: js.UndefOr[Boolean] = js.undefined
@@ -418,13 +423,13 @@ object formDropdownMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: (Double | String | Boolean)*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: (Double | String | Boolean)*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDirection(value: left | right): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -440,7 +445,7 @@ object formDropdownMod extends Shortcut {
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -472,11 +477,11 @@ object formDropdownMod extends Shortcut {
       
       inline def setNoResultsMessageUndefined: Self = StObject.set(x, "noResultsMessage", js.undefined)
       
-      inline def setOnAddItem(value: (/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onAddItem", js.Any.fromFunction2(value))
+      inline def setOnAddItem(value: (/* event */ SyntheticEvent[HTMLElement, Event], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onAddItem", js.Any.fromFunction2(value))
       
       inline def setOnAddItemUndefined: Self = StObject.set(x, "onAddItem", js.undefined)
       
-      inline def setOnBlur(value: (/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
+      inline def setOnBlur(value: (/* event */ FocusEvent[HTMLElement, Element], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -484,7 +489,7 @@ object formDropdownMod extends Shortcut {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnClick(value: (/* event */ KeyboardEvent[HTMLElement], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
@@ -492,7 +497,7 @@ object formDropdownMod extends Shortcut {
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      inline def setOnFocus(value: (/* event */ SyntheticEvent[HTMLElement, Event], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      inline def setOnFocus(value: (/* event */ FocusEvent[HTMLElement, Element], /* data */ DropdownProps) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -526,7 +531,7 @@ object formDropdownMod extends Shortcut {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: DropdownItemProps*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: DropdownItemProps*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -539,7 +544,7 @@ object formDropdownMod extends Shortcut {
       inline def setPointingUndefined: Self = StObject.set(x, "pointing", js.undefined)
       
       inline def setRenderLabel(
-        value: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => js.Any
+        value: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => Any
       ): Self = StObject.set(x, "renderLabel", js.Any.fromFunction3(value))
       
       inline def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
@@ -560,7 +565,7 @@ object formDropdownMod extends Shortcut {
         value: (/* options */ js.Array[DropdownItemProps], /* value */ String) => js.Array[DropdownItemProps]
       ): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
       
-      inline def setSearchInput(value: js.Any): Self = StObject.set(x, "searchInput", value.asInstanceOf[js.Any])
+      inline def setSearchInput(value: Any): Self = StObject.set(x, "searchInput", value.asInstanceOf[js.Any])
       
       inline def setSearchInputUndefined: Self = StObject.set(x, "searchInput", js.undefined)
       
@@ -582,7 +587,7 @@ object formDropdownMod extends Shortcut {
       
       inline def setSelectedLabelUndefined: Self = StObject.set(x, "selectedLabel", js.undefined)
       
-      inline def setSelection(value: js.Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
       inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
@@ -610,7 +615,7 @@ object formDropdownMod extends Shortcut {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: (Boolean | Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (Boolean | Double | String)*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setWrapSelection(value: Boolean): Self = StObject.set(x, "wrapSelection", value.asInstanceOf[js.Any])
       
@@ -618,8 +623,8 @@ object formDropdownMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[FormDropdownProps]
+  type _To = FC[FormDropdownProps]
   
   /* This means you don't have to write `default`, but can instead just say `formDropdownMod.foo` */
-  override def _to: StatelessComponent[FormDropdownProps] = default
+  override def _to: FC[FormDropdownProps] = default
 }

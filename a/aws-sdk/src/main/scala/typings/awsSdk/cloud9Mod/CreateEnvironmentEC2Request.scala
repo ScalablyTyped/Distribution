@@ -12,12 +12,12 @@ trait CreateEnvironmentEC2Request extends StObject {
   var automaticStopTimeMinutes: js.UndefOr[AutomaticStopTimeMinutes] = js.undefined
   
   /**
-    * A unique, case-sensitive string that helps AWS Cloud9 to ensure this operation completes no more than one time. For more information, see Client Tokens in the Amazon EC2 API Reference.
+    * A unique, case-sensitive string that helps Cloud9 to ensure this operation completes no more than one time. For more information, see Client Tokens in the Amazon EC2 API Reference.
     */
   var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
-    * The connection type used for connecting to an Amazon EC2 environment.
+    * The connection type used for connecting to an Amazon EC2 environment. Valid values are CONNECT_SSH (default) and CONNECT_SSM (connected through Amazon EC2 Systems Manager). For more information, see Accessing no-ingress EC2 instances with Amazon EC2 Systems Manager in the Cloud9 User Guide.
     */
   var connectionType: js.UndefOr[ConnectionType] = js.undefined
   
@@ -27,27 +27,37 @@ trait CreateEnvironmentEC2Request extends StObject {
   var description: js.UndefOr[EnvironmentDescription] = js.undefined
   
   /**
+    * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+    */
+  var dryRun: js.UndefOr[NullableBoolean] = js.undefined
+  
+  /**
+    * The identifier for the Amazon Machine Image (AMI) that's used to create the EC2 instance. To choose an AMI for the instance, you must specify a valid AMI alias or a valid Amazon EC2 Systems Manager (SSM) path. The default AMI is used if the parameter isn't explicitly assigned a value in the request. Because Amazon Linux AMI has ended standard support as of December 31, 2020, we recommend you choose Amazon Linux 2, which includes long term support through 2023.  AMI aliases      Amazon Linux (default): amazonlinux-1-x86_64     Amazon Linux 2: amazonlinux-2-x86_64    Ubuntu 18.04: ubuntu-18.04-x86_64     SSM paths     Amazon Linux (default): resolve:ssm:/aws/service/cloud9/amis/amazonlinux-1-x86_64     Amazon Linux 2: resolve:ssm:/aws/service/cloud9/amis/amazonlinux-2-x86_64    Ubuntu 18.04: resolve:ssm:/aws/service/cloud9/amis/ubuntu-18.04-x86_64   
+    */
+  var imageId: js.UndefOr[ImageId] = js.undefined
+  
+  /**
     * The type of instance to connect to the environment (for example, t2.micro).
     */
   var instanceType: InstanceType
   
   /**
-    * The name of the environment to create. This name is visible to other AWS IAM users in the same AWS account.
+    * The name of the environment to create. This name is visible to other IAM users in the same Amazon Web Services account.
     */
   var name: EnvironmentName
   
   /**
-    * The Amazon Resource Name (ARN) of the environment owner. This ARN can be the ARN of any AWS IAM principal. If this value is not specified, the ARN defaults to this environment's creator.
+    * The Amazon Resource Name (ARN) of the environment owner. This ARN can be the ARN of any IAM principal. If this value is not specified, the ARN defaults to this environment's creator.
     */
   var ownerArn: js.UndefOr[UserArn] = js.undefined
   
   /**
-    * The ID of the subnet in Amazon VPC that AWS Cloud9 will use to communicate with the Amazon EC2 instance.
+    * The ID of the subnet in Amazon VPC that Cloud9 will use to communicate with the Amazon EC2 instance.
     */
   var subnetId: js.UndefOr[SubnetId] = js.undefined
   
   /**
-    * An array of key-value pairs that will be associated with the new AWS Cloud9 development environment.
+    * An array of key-value pairs that will be associated with the new Cloud9 development environment.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }
@@ -76,6 +86,14 @@ object CreateEnvironmentEC2Request {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setDryRun(value: NullableBoolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    
+    inline def setImageId(value: ImageId): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+    
+    inline def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
+    
     inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     inline def setName(value: EnvironmentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -92,6 +110,6 @@ object CreateEnvironmentEC2Request {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

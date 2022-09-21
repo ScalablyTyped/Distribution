@@ -19,7 +19,7 @@ object mod extends Shortcut {
        with IOptions {
     
     var filter: js.UndefOr[
-        String | (js.Function2[/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[js.Any], Boolean])
+        String | (js.Function2[/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[Any], Boolean])
       ] = js.undefined
     
     var prefixBase: js.UndefOr[Boolean] = js.undefined
@@ -38,10 +38,10 @@ object mod extends Shortcut {
     extension [Self <: FindOptions](x: Self) {
       
       inline def setFilter(
-        value: String | (js.Function2[/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[js.Any], Boolean])
+        value: String | (js.Function2[/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[Any], Boolean])
       ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      inline def setFilterFunction2(value: (/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilterFunction2(value: (/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
@@ -207,7 +207,7 @@ object mod extends Shortcut {
       
       inline def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value*))
     }
   }
   

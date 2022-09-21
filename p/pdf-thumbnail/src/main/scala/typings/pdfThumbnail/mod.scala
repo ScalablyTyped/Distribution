@@ -1,19 +1,19 @@
 package typings.pdfThumbnail
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(body: String): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
-  inline def apply(body: String, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
-  inline def apply(body: Buffer): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
-  inline def apply(body: Buffer, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
-  inline def apply(body: ReadableStream): js.Promise[ReadableStream] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream]]
-  inline def apply(body: ReadableStream, options: PDFThumbnailOptions): js.Promise[ReadableStream] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream]]
+  inline def apply(body: String): js.Promise[ReadableStream[Any]] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream[Any]]]
+  inline def apply(body: String, options: PDFThumbnailOptions): js.Promise[ReadableStream[Any]] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream[Any]]]
+  inline def apply(body: Buffer): js.Promise[ReadableStream[Any]] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream[Any]]]
+  inline def apply(body: Buffer, options: PDFThumbnailOptions): js.Promise[ReadableStream[Any]] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream[Any]]]
+  inline def apply(body: ReadableStream[Any]): js.Promise[ReadableStream[Any]] = ^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadableStream[Any]]]
+  inline def apply(body: ReadableStream[Any], options: PDFThumbnailOptions): js.Promise[ReadableStream[Any]] = (^.asInstanceOf[js.Dynamic].apply(body.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadableStream[Any]]]
   
   @JSImport("pdf-thumbnail", JSImport.Namespace)
   @js.native

@@ -11,5 +11,5 @@ object safeRequestAnimationFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def safeRequestAnimationFrame(component: Component[js.Object, js.Object, js.Any]): js.Function1[/* cb */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeRequestAnimationFrame")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* cb */ js.Function, Unit]]
+  inline def safeRequestAnimationFrame(component: Component[js.Object, js.Object, Any]): js.Function1[/* cb */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeRequestAnimationFrame")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* cb */ js.Function, Unit]]
 }

@@ -15,7 +15,7 @@ object libChoiceGroupMod {
   
   @JSImport("office-ui-fabric-react/lib/ChoiceGroup", "ChoiceGroupBase")
   @js.native
-  class ChoiceGroupBase protected ()
+  open class ChoiceGroupBase protected ()
     extends typings.officeUiFabricReact.choiceGroupMod.ChoiceGroupBase {
     def this(props: IChoiceGroupProps) = this()
   }

@@ -473,7 +473,7 @@ object CIMTextSymbol {
     
     inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
-    inline def setShadowColorVarargs(value: Double*): Self = StObject.set(x, "shadowColor", js.Array(value :_*))
+    inline def setShadowColorVarargs(value: Double*): Self = StObject.set(x, "shadowColor", js.Array(value*))
     
     inline def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
     

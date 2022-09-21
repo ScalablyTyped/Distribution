@@ -1,9 +1,5 @@
 package typings.matchSorter
 
-import typings.matchSorter.anon.Key
-import typings.matchSorter.anon.MaxRanking
-import typings.matchSorter.anon.MinRanking
-import typings.matchSorter.anon.Threshold
 import typings.matchSorter.matchSorterNumbers.`0`
 import typings.matchSorter.matchSorterNumbers.`1`
 import typings.matchSorter.matchSorterNumbers.`2`
@@ -18,17 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("match-sorter", "defaultBaseSortFn")
+  @js.native
+  val defaultBaseSortFn: BaseSorter[Any] = js.native
+  
   object matchSorter {
     
     /**
       * Takes an array of items and a value and returns a new array with the items that match the given value
-      * @param items - the items to sort
-      * @param value - the value to use for ranking
-      * @param options - Some options to configure the sorter
-      * @return the new sorted array
+      * @param {Array} items - the items to sort
+      * @param {String} value - the value to use for ranking
+      * @param {Object} options - Some options to configure the sorter
+      * @return {Array} - the new sorted array
       */
-    inline def apply[T](items: js.Array[T], value: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-    inline def apply[T](items: js.Array[T], value: String, options: Options[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def apply[ItemType](items: js.Array[ItemType], value: String): js.Array[ItemType] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[ItemType]]
+    inline def apply[ItemType](items: js.Array[ItemType], value: String, options: MatchSorterOptions[ItemType]): js.Array[ItemType] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ItemType]]
     
     @JSImport("match-sorter", "matchSorter")
     @js.native
@@ -70,40 +70,252 @@ object mod {
     }
   }
   
-  type ExtendedKeyOptions[T] = Key[T] & (MinRanking | MaxRanking | Threshold)
+  object rankings {
+    
+    @JSImport("match-sorter", "rankings.ACRONYM")
+    @js.native
+    val ACRONYM: `2` = js.native
+    
+    @JSImport("match-sorter", "rankings.CASE_SENSITIVE_EQUAL")
+    @js.native
+    val CASE_SENSITIVE_EQUAL: `7` = js.native
+    
+    @JSImport("match-sorter", "rankings.CONTAINS")
+    @js.native
+    val CONTAINS: `3` = js.native
+    
+    @JSImport("match-sorter", "rankings.EQUAL")
+    @js.native
+    val EQUAL: `6` = js.native
+    
+    @JSImport("match-sorter", "rankings.MATCHES")
+    @js.native
+    val MATCHES: `1` = js.native
+    
+    @JSImport("match-sorter", "rankings.NO_MATCH")
+    @js.native
+    val NO_MATCH: `0` = js.native
+    
+    @JSImport("match-sorter", "rankings.STARTS_WITH")
+    @js.native
+    val STARTS_WITH: `5` = js.native
+    
+    @JSImport("match-sorter", "rankings.WORD_STARTS_WITH")
+    @js.native
+    val WORD_STARTS_WITH: `4` = js.native
+  }
   
-  type KeyOptions[T] = String | (js.Function1[/* item */ T, String | js.Array[String]])
+  type BaseSorter[ItemType] = js.Function2[/* a */ RankedItem[ItemType], /* b */ RankedItem[ItemType], Double]
   
-  trait Options[T] extends StObject {
+  trait IndexedItem[ItemType] extends StObject {
+    
+    var index: Double
+    
+    var item: ItemType
+  }
+  object IndexedItem {
+    
+    inline def apply[ItemType](index: Double, item: ItemType): IndexedItem[ItemType] = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IndexedItem[ItemType]]
+    }
+    
+    extension [Self <: IndexedItem[?], ItemType](x: Self & IndexedItem[ItemType]) {
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setItem(value: ItemType): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait KeyAttributes extends StObject {
+    
+    var maxRanking: Ranking
+    
+    var minRanking: Ranking
+    
+    var threshold: js.UndefOr[Ranking] = js.undefined
+  }
+  object KeyAttributes {
+    
+    inline def apply(maxRanking: Ranking, minRanking: Ranking): KeyAttributes = {
+      val __obj = js.Dynamic.literal(maxRanking = maxRanking.asInstanceOf[js.Any], minRanking = minRanking.asInstanceOf[js.Any])
+      __obj.asInstanceOf[KeyAttributes]
+    }
+    
+    extension [Self <: KeyAttributes](x: Self) {
+      
+      inline def setMaxRanking(value: Ranking): Self = StObject.set(x, "maxRanking", value.asInstanceOf[js.Any])
+      
+      inline def setMinRanking(value: Ranking): Self = StObject.set(x, "minRanking", value.asInstanceOf[js.Any])
+      
+      inline def setThreshold(value: Ranking): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    }
+  }
+  
+  trait KeyAttributesOptions[ItemType] extends StObject {
+    
+    var key: js.UndefOr[String | ValueGetterKey[ItemType]] = js.undefined
+    
+    var maxRanking: js.UndefOr[Ranking] = js.undefined
+    
+    var minRanking: js.UndefOr[Ranking] = js.undefined
+    
+    var threshold: js.UndefOr[Ranking] = js.undefined
+  }
+  object KeyAttributesOptions {
+    
+    inline def apply[ItemType](): KeyAttributesOptions[ItemType] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[KeyAttributesOptions[ItemType]]
+    }
+    
+    extension [Self <: KeyAttributesOptions[?], ItemType](x: Self & KeyAttributesOptions[ItemType]) {
+      
+      inline def setKey(value: String | ValueGetterKey[ItemType]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyFunction1(value: ItemType => String | js.Array[String]): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setMaxRanking(value: Ranking): Self = StObject.set(x, "maxRanking", value.asInstanceOf[js.Any])
+      
+      inline def setMaxRankingUndefined: Self = StObject.set(x, "maxRanking", js.undefined)
+      
+      inline def setMinRanking(value: Ranking): Self = StObject.set(x, "minRanking", value.asInstanceOf[js.Any])
+      
+      inline def setMinRankingUndefined: Self = StObject.set(x, "minRanking", js.undefined)
+      
+      inline def setThreshold(value: Ranking): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    }
+  }
+  
+  type KeyOption[ItemType] = KeyAttributesOptions[ItemType] | ValueGetterKey[ItemType] | String
+  
+  trait MatchSorterOptions[ItemType] extends StObject {
+    
+    var baseSort: js.UndefOr[BaseSorter[ItemType]] = js.undefined
     
     var keepDiacritics: js.UndefOr[Boolean] = js.undefined
     
-    var keys: js.UndefOr[js.Array[KeyOptions[T] | ExtendedKeyOptions[T]]] = js.undefined
+    var keys: js.UndefOr[js.Array[KeyOption[ItemType]]] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.undefined
+    var sorter: js.UndefOr[Sorter[ItemType]] = js.undefined
+    
+    var threshold: js.UndefOr[Ranking] = js.undefined
   }
-  object Options {
+  object MatchSorterOptions {
     
-    inline def apply[T](): Options[T] = {
+    inline def apply[ItemType](): MatchSorterOptions[ItemType] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options[T]]
+      __obj.asInstanceOf[MatchSorterOptions[ItemType]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    extension [Self <: MatchSorterOptions[?], ItemType](x: Self & MatchSorterOptions[ItemType]) {
+      
+      inline def setBaseSort(value: (/* a */ RankedItem[ItemType], /* b */ RankedItem[ItemType]) => Double): Self = StObject.set(x, "baseSort", js.Any.fromFunction2(value))
+      
+      inline def setBaseSortUndefined: Self = StObject.set(x, "baseSort", js.undefined)
       
       inline def setKeepDiacritics(value: Boolean): Self = StObject.set(x, "keepDiacritics", value.asInstanceOf[js.Any])
       
       inline def setKeepDiacriticsUndefined: Self = StObject.set(x, "keepDiacritics", js.undefined)
       
-      inline def setKeys(value: js.Array[KeyOptions[T] | ExtendedKeyOptions[T]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[KeyOption[ItemType]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
       inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      inline def setKeysVarargs(value: (KeyOptions[T] | ExtendedKeyOptions[T])*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: KeyOption[ItemType]*): Self = StObject.set(x, "keys", js.Array(value*))
       
-      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setSorter(value: /* matchItems */ js.Array[RankedItem[ItemType]] => js.Array[RankedItem[ItemType]]): Self = StObject.set(x, "sorter", js.Any.fromFunction1(value))
+      
+      inline def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
+      
+      inline def setThreshold(value: Ranking): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
       inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
+  
+  trait RankedItem[ItemType]
+    extends StObject
+       with RankingInfo
+       with IndexedItem[ItemType]
+  object RankedItem {
+    
+    inline def apply[ItemType](index: Double, item: ItemType, keyIndex: Double, rank: Ranking, rankedValue: String): RankedItem[ItemType] = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], keyIndex = keyIndex.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], rankedValue = rankedValue.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RankedItem[ItemType]]
+    }
+  }
+  
+  /* Inlined { readonly CASE_SENSITIVE_EQUAL :7,  readonly EQUAL :6,  readonly STARTS_WITH :5,  readonly WORD_STARTS_WITH :4,  readonly CONTAINS :3,  readonly ACRONYM :2,  readonly MATCHES :1,  readonly NO_MATCH :0}[keyof { readonly CASE_SENSITIVE_EQUAL :7,  readonly EQUAL :6,  readonly STARTS_WITH :5,  readonly WORD_STARTS_WITH :4,  readonly CONTAINS :3,  readonly ACRONYM :2,  readonly MATCHES :1,  readonly NO_MATCH :0}] */
+  /* Rewritten from type alias, can be one of: 
+    - typings.matchSorter.matchSorterNumbers.`3`
+    - typings.matchSorter.matchSorterNumbers.`2`
+    - typings.matchSorter.matchSorterNumbers.`4`
+    - typings.matchSorter.matchSorterNumbers.`0`
+    - typings.matchSorter.matchSorterNumbers.`7`
+    - typings.matchSorter.matchSorterNumbers.`5`
+    - typings.matchSorter.matchSorterNumbers.`6`
+    - typings.matchSorter.matchSorterNumbers.`1`
+  */
+  trait Ranking extends StObject
+  object Ranking {
+    
+    inline def `0`: typings.matchSorter.matchSorterNumbers.`0` = 0.asInstanceOf[typings.matchSorter.matchSorterNumbers.`0`]
+    
+    inline def `1`: typings.matchSorter.matchSorterNumbers.`1` = 1.asInstanceOf[typings.matchSorter.matchSorterNumbers.`1`]
+    
+    inline def `2`: typings.matchSorter.matchSorterNumbers.`2` = 2.asInstanceOf[typings.matchSorter.matchSorterNumbers.`2`]
+    
+    inline def `3`: typings.matchSorter.matchSorterNumbers.`3` = 3.asInstanceOf[typings.matchSorter.matchSorterNumbers.`3`]
+    
+    inline def `4`: typings.matchSorter.matchSorterNumbers.`4` = 4.asInstanceOf[typings.matchSorter.matchSorterNumbers.`4`]
+    
+    inline def `5`: typings.matchSorter.matchSorterNumbers.`5` = 5.asInstanceOf[typings.matchSorter.matchSorterNumbers.`5`]
+    
+    inline def `6`: typings.matchSorter.matchSorterNumbers.`6` = 6.asInstanceOf[typings.matchSorter.matchSorterNumbers.`6`]
+    
+    inline def `7`: typings.matchSorter.matchSorterNumbers.`7` = 7.asInstanceOf[typings.matchSorter.matchSorterNumbers.`7`]
+  }
+  
+  trait RankingInfo extends StObject {
+    
+    var keyIndex: Double
+    
+    var keyThreshold: js.UndefOr[Ranking] = js.undefined
+    
+    var rank: Ranking
+    
+    var rankedValue: String
+  }
+  object RankingInfo {
+    
+    inline def apply(keyIndex: Double, rank: Ranking, rankedValue: String): RankingInfo = {
+      val __obj = js.Dynamic.literal(keyIndex = keyIndex.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], rankedValue = rankedValue.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RankingInfo]
+    }
+    
+    extension [Self <: RankingInfo](x: Self) {
+      
+      inline def setKeyIndex(value: Double): Self = StObject.set(x, "keyIndex", value.asInstanceOf[js.Any])
+      
+      inline def setKeyThreshold(value: Ranking): Self = StObject.set(x, "keyThreshold", value.asInstanceOf[js.Any])
+      
+      inline def setKeyThresholdUndefined: Self = StObject.set(x, "keyThreshold", js.undefined)
+      
+      inline def setRank(value: Ranking): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+      
+      inline def setRankedValue(value: String): Self = StObject.set(x, "rankedValue", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type Sorter[ItemType] = js.Function1[/* matchItems */ js.Array[RankedItem[ItemType]], js.Array[RankedItem[ItemType]]]
+  
+  type ValueGetterKey[ItemType] = js.Function1[/* item */ ItemType, String | js.Array[String]]
 }

@@ -28,7 +28,7 @@ object XDispatchResultListener {
     acquire: () => Unit,
     dispatchFinished: DispatchResultEvent => Unit,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDispatchResultListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), dispatchFinished = js.Any.fromFunction1(dispatchFinished), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

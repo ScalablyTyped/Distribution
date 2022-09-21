@@ -28,14 +28,14 @@ object clusterBrokerClientMod {
   
   @JSImport("scc-broker-client/cluster-broker-client", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ClusterBrokerClient {
+  open class ^ protected () extends ClusterBrokerClient {
     def this(broker: typings.scBroker.scbrokerMod.^) = this()
     def this(broker: typings.scBroker.scbrokerMod.^, options: SCCBrokerClientOptions) = this()
   }
   
   @js.native
   trait ClusterBrokerClient
-    extends typings.asyncStreamEmitter.mod.^[js.Any] {
+    extends typings.asyncStreamEmitter.mod.^[Any] {
     
     var authKey: js.UndefOr[Secret] = js.native
     
@@ -64,7 +64,7 @@ object clusterBrokerClientMod {
     
     def getAllSubscriptions(): js.Array[String] = js.native
     
-    def invokePublish(channelName: String, data: js.Any): Unit = js.native
+    def invokePublish(channelName: String, data: Any): Unit = js.native
     
     var isReady: Boolean = js.native
     
@@ -106,11 +106,11 @@ object clusterBrokerClientMod {
     
     var channelName: String
     
-    var packet: js.Any
+    var packet: Any
   }
   object MessageData {
     
-    inline def apply(channelName: String, packet: js.Any): MessageData = {
+    inline def apply(channelName: String, packet: Any): MessageData = {
       val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any], packet = packet.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageData]
     }
@@ -119,7 +119,7 @@ object clusterBrokerClientMod {
       
       inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
-      inline def setPacket(value: js.Any): Self = StObject.set(x, "packet", value.asInstanceOf[js.Any])
+      inline def setPacket(value: Any): Self = StObject.set(x, "packet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,7 +138,7 @@ object clusterBrokerClientMod {
       
       inline def setBrokerURIs(value: js.Array[String]): Self = StObject.set(x, "brokerURIs", value.asInstanceOf[js.Any])
       
-      inline def setBrokerURIsVarargs(value: String*): Self = StObject.set(x, "brokerURIs", js.Array(value :_*))
+      inline def setBrokerURIsVarargs(value: String*): Self = StObject.set(x, "brokerURIs", js.Array(value*))
     }
   }
   

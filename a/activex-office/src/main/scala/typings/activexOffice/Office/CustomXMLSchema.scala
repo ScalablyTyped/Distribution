@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomXMLSchema extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -19,20 +19,20 @@ trait CustomXMLSchema extends StObject {
   /* private */ @JSName("Office.CustomXMLSchema_typekey")
   var OfficeDotCustomXMLSchema_typekey: CustomXMLSchema
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reload(): Unit
 }
 object CustomXMLSchema {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Delete: () => Unit,
     Location: String,
     NamespaceURI: String,
     OfficeDotCustomXMLSchema_typekey: CustomXMLSchema,
-    Parent: js.Any,
+    Parent: Any,
     Reload: () => Unit
   ): CustomXMLSchema = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Location = Location.asInstanceOf[js.Any], NamespaceURI = NamespaceURI.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Reload = js.Any.fromFunction0(Reload))
@@ -42,7 +42,7 @@ object CustomXMLSchema {
   
   extension [Self <: CustomXMLSchema](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object CustomXMLSchema {
     
     inline def setOfficeDotCustomXMLSchema_typekey(value: CustomXMLSchema): Self = StObject.set(x, "Office.CustomXMLSchema_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReload(value: () => Unit): Self = StObject.set(x, "Reload", js.Any.fromFunction0(value))
   }

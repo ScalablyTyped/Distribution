@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("GoToDataRecordCommand")
 @js.native
-class GoToDataRecordCommand ()
+open class GoToDataRecordCommand ()
   extends StObject
      with typings.devexpressWeb.GoToDataRecordCommand {
   

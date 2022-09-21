@@ -49,7 +49,7 @@ object ArcGaugeOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: ArcGaugeColor*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: ArcGaugeColor*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setGaugeArea(value: ArcGaugeGaugeArea): Self = StObject.set(x, "gaugeArea", value.asInstanceOf[js.Any])
     

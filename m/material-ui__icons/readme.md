@@ -1,26 +1,8 @@
 
 # Scala.js typings for material-ui__icons
 
-Typings are for version 4.9.1
+Typings are for version 4.11.3
 
-## Library description:
-Material Design Svg Icons converted to Material-UI React components.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @material-ui/icons |
-| Keywords           | react, react-component, material design, material-ui, icons |
-| # releases         | 29 |
-| # dependents       | 2357 |
-| # downloads        | 48750968 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-icons)
-- [Bugs](https://github.com/mui-org/material-ui/issues)
-- [Repository](https://github.com/mui-org/material-ui)
-- [Npm](https://www.npmjs.com/package/%40material-ui%2Ficons)
-    
 
 
 ## Note

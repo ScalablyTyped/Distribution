@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeIpGroupsResult extends StObject {
   
   /**
-    * The token to use to retrieve the next set of results, or null if no more results are available.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
@@ -33,6 +33,6 @@ object DescribeIpGroupsResult {
     
     inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     
-    inline def setResultVarargs(value: WorkspacesIpGroup*): Self = StObject.set(x, "Result", js.Array(value :_*))
+    inline def setResultVarargs(value: WorkspacesIpGroup*): Self = StObject.set(x, "Result", js.Array(value*))
   }
 }

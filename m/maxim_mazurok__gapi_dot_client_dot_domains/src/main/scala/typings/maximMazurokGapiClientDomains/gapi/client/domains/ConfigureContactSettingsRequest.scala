@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConfigureContactSettingsRequest extends StObject {
   
-  /** The list of contact notices that the caller acknowledges. The notices required here depend on the values specified in `contact_settings`. */
+  /** The list of contact notices that the caller acknowledges. The notices needed here depend on the values specified in `contact_settings`. */
   var contactNotices: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Fields of the `ContactSettings` to update. */
   var contactSettings: js.UndefOr[ContactSettings] = js.undefined
   
   /**
-    * Required. The field mask describing which fields to update as a comma-separated list. For example, if only the registrant contact is being updated, the `update_mask` would be
+    * Required. The field mask describing which fields to update as a comma-separated list. For example, if only the registrant contact is being updated, the `update_mask` is
     * `"registrant_contact"`.
     */
   var updateMask: js.UndefOr[String] = js.undefined
@@ -34,7 +34,7 @@ object ConfigureContactSettingsRequest {
     
     inline def setContactNoticesUndefined: Self = StObject.set(x, "contactNotices", js.undefined)
     
-    inline def setContactNoticesVarargs(value: String*): Self = StObject.set(x, "contactNotices", js.Array(value :_*))
+    inline def setContactNoticesVarargs(value: String*): Self = StObject.set(x, "contactNotices", js.Array(value*))
     
     inline def setContactSettings(value: ContactSettings): Self = StObject.set(x, "contactSettings", value.asInstanceOf[js.Any])
     

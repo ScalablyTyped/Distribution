@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "DatePickerView")
 @js.native
-class DatePickerView () extends default
+open class DatePickerView () extends default
 /* static members */
 object DatePickerView {
   

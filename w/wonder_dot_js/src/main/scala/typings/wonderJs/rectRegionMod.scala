@@ -9,8 +9,8 @@ object rectRegionMod {
   
   @JSImport("wonder.js/dist/es2015/structure/RectRegion", "RectRegion")
   @js.native
-  class RectRegion () extends Vector4 {
-    def this(x: js.Any, y: js.Any, z: js.Any, w: js.Any) = this()
+  open class RectRegion () extends Vector4 {
+    def this(x: Any, y: Any, z: Any, w: Any) = this()
     
     var height: Double = js.native
     

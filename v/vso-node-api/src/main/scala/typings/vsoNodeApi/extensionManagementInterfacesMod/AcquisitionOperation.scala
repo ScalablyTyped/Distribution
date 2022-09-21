@@ -48,6 +48,6 @@ object AcquisitionOperation {
     
     inline def setReasons(value: js.Array[AcquisitionOperationDisallowReason]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
     
-    inline def setReasonsVarargs(value: AcquisitionOperationDisallowReason*): Self = StObject.set(x, "reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: AcquisitionOperationDisallowReason*): Self = StObject.set(x, "reasons", js.Array(value*))
   }
 }

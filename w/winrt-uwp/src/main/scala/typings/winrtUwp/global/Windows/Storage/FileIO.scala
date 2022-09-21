@@ -73,7 +73,7 @@ object FileIO {
     * @return When this method completes successfully, it returns the contents of the file as a list (type IVector ) of lines of text. Each line of text in the list is represented by a String object.
     */
   /* static member */
-  inline def readLinesAsync(file: IStorageFile): IPromiseWithIAsyncOperation[IVector[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVector[js.Any]]]
+  inline def readLinesAsync(file: IStorageFile): IPromiseWithIAsyncOperation[IVector[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVector[Any]]]
   /**
     * Reads the contents of the specified file using the specified character encoding and returns lines of text.
     * @param file The file to read.
@@ -81,7 +81,7 @@ object FileIO {
     * @return When this method completes successfully, it returns the contents of the file as a list (type IVector ) of lines of text. Each line of text in the list is represented by a String object.
     */
   /* static member */
-  inline def readLinesAsync(file: IStorageFile, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[IVector[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVector[js.Any]]]
+  inline def readLinesAsync(file: IStorageFile, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[IVector[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(file.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVector[Any]]]
   
   /**
     * Reads the contents of the specified file and returns text.

@@ -10,15 +10,12 @@ Configuration preset loader for `conventional-changelog`.
 | ------------------ | :-------------: |
 | Full name          | conventional-changelog-preset-loader |
 | Keywords           | conventional-changelog, preset, loader |
-| # releases         | 5 |
-| # dependents       | 34 |
-| # downloads        | 59842577 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7946632.0 |
+| # stars            | 6435.0 |
 
 ## Links
-- [Homepage](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-preset-loader#readme)
-- [Bugs](https://github.com/conventional-changelog/conventional-changelog/issues)
-- [Repository](https://github.com/conventional-changelog/conventional-changelog)
 - [Npm](https://www.npmjs.com/package/conventional-changelog-preset-loader)
     
 

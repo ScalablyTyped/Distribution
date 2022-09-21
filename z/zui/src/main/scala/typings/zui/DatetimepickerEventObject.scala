@@ -10,5 +10,5 @@ trait DatetimepickerEventObject
   extends StObject
      with JQueryEventObject {
   
-  var date: js.Any = js.native
+  var date: Any = js.native
 }

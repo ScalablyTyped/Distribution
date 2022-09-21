@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("object-refs", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Refs {
     /**
@@ -27,10 +27,10 @@ object mod {
     val ^ : js.Any = js.native
     
     /** Extends a collection with Refs aware methods */
-    inline def extend(collection: js.Array[js.Any], refs: Refs, property: String, target: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(collection.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], property.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def extend(collection: js.Array[js.Any], refs: Refs, property: AttributeDescriptor, target: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(collection.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], property.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(collection: js.Array[Any], refs: Refs, property: String, target: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(collection.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], property.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def extend(collection: js.Array[Any], refs: Refs, property: AttributeDescriptor, target: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(collection.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], property.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def isExtended(collection: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtended")(collection.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isExtended(collection: js.Array[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtended")(collection.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   trait AttributeDescriptor extends StObject {
@@ -70,18 +70,18 @@ object mod {
       * @param {*} target
       * @param {string|Refs.AttributeDescriptor} property
       */
-    def bind(target: js.Any, property: String): Unit = js.native
-    def bind(target: js.Any, property: AttributeDescriptor): Unit = js.native
+    def bind(target: Any, property: String): Unit = js.native
+    def bind(target: Any, property: AttributeDescriptor): Unit = js.native
     
-    def ensureBound(target: js.Any, property: String): Unit = js.native
-    def ensureBound(target: js.Any, property: AttributeDescriptor): Unit = js.native
+    def ensureBound(target: Any, property: String): Unit = js.native
+    def ensureBound(target: Any, property: AttributeDescriptor): Unit = js.native
     
-    def ensureRefsCollection(target: js.Any, property: AttributeDescriptor): js.Any = js.native
+    def ensureRefsCollection(target: Any, property: AttributeDescriptor): Any = js.native
     
-    def set(target: js.Any, property: String, value: js.Any): Unit = js.native
-    def set(target: js.Any, property: AttributeDescriptor, value: js.Any): Unit = js.native
+    def set(target: Any, property: String, value: Any): Unit = js.native
+    def set(target: Any, property: AttributeDescriptor, value: Any): Unit = js.native
     
-    def unset(target: js.Any, property: String, value: js.Any): Unit = js.native
-    def unset(target: js.Any, property: AttributeDescriptor, value: js.Any): Unit = js.native
+    def unset(target: Any, property: String, value: Any): Unit = js.native
+    def unset(target: Any, property: AttributeDescriptor, value: Any): Unit = js.native
   }
 }

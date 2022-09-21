@@ -9,10 +9,10 @@ object nnMod extends Shortcut {
   
   @JSImport("@angular/common/locales/extra/nn", JSImport.Default)
   @js.native
-  val default: js.Array[scala.Nothing] = js.native
+  val default: js.Array[js.Array[String | js.Array[String]]] = js.native
   
-  type _To = js.Array[scala.Nothing]
+  type _To = js.Array[js.Array[String | js.Array[String]]]
   
   /* This means you don't have to write `default`, but can instead just say `nnMod.foo` */
-  override def _to: js.Array[scala.Nothing] = default
+  override def _to: js.Array[js.Array[String | js.Array[String]]] = default
 }

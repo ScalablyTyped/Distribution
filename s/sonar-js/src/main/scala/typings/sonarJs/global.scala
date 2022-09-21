@@ -17,7 +17,7 @@ object global {
       */
     @JSGlobal("Sonar")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.sonarJs.mod.^ {
       def this(window: Window) = this()
     }

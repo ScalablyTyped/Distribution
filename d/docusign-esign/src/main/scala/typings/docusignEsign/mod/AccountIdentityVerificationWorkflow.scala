@@ -55,7 +55,7 @@ object AccountIdentityVerificationWorkflow {
     
     inline def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
     
-    inline def setInputOptionsVarargs(value: AccountIdentityInputOption*): Self = StObject.set(x, "inputOptions", js.Array(value :_*))
+    inline def setInputOptionsVarargs(value: AccountIdentityInputOption*): Self = StObject.set(x, "inputOptions", js.Array(value*))
     
     inline def setSignatureProvider(value: AccountSignatureProvider): Self = StObject.set(x, "signatureProvider", value.asInstanceOf[js.Any])
     

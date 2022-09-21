@@ -1,5 +1,7 @@
 package typings.less
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.less.Less.ImportManager
 import typings.less.Less.Options
@@ -14,6 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait LessStatic extends StObject {
+  
+  var FileManager: Instantiable0[typings.less.Less.FileManager] = js.native
+  
+  var PluginManager: Instantiable1[/* less */ LessStatic, typings.less.Less.PluginManager] = js.native
   
   var importManager: js.UndefOr[ImportManager] = js.native
   

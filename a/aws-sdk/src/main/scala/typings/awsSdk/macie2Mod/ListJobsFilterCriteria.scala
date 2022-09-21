@@ -29,12 +29,12 @@ object ListJobsFilterCriteria {
     
     inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
-    inline def setExcludesVarargs(value: ListJobsFilterTerm*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: ListJobsFilterTerm*): Self = StObject.set(x, "excludes", js.Array(value*))
     
     inline def setIncludes(value: listOfListJobsFilterTerm): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
     inline def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
     
-    inline def setIncludesVarargs(value: ListJobsFilterTerm*): Self = StObject.set(x, "includes", js.Array(value :_*))
+    inline def setIncludesVarargs(value: ListJobsFilterTerm*): Self = StObject.set(x, "includes", js.Array(value*))
   }
 }

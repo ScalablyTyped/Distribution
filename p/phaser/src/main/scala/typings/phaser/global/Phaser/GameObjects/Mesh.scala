@@ -3,17 +3,46 @@ package typings.phaser.global.Phaser.GameObjects
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Textures.Texture
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Mesh Game Object.
+  * 
+  * The Mesh Game Object allows you to render a group of textured vertices and manipulate
+  * the view of those vertices, such as rotation, translation or scaling.
+  * 
+  * Support for generating mesh data from grids, model data or Wavefront OBJ Files is included.
+  * 
+  * Although you can use this to render 3D objects, its primary use is for displaying more complex
+  * Sprites, or Sprites where you need fine-grained control over the vertex positions in order to
+  * achieve special effects in your games. Note that rendering still takes place using Phaser's
+  * orthographic camera (after being transformed via `projectionMesh`, see `setPerspective`,
+  * `setOrtho`, and `panZ` methods). As a result, all depth and face tests are done in an eventually
+  * orthographic space.
+  * 
+  * The rendering process will iterate through the faces of this Mesh and render out each face
+  * that is considered as being in view of the camera. No depth buffer is used, and because of this,
+  * you should be careful not to use model data with too many vertices, or overlapping geometry,
+  * or you'll probably encounter z-depth fighting. The Mesh was designed to allow for more advanced
+  * 2D layouts, rather than displaying 3D objects, even though it can do this to a degree.
+  * 
+  * In short, if you want to remake Crysis, use a 3D engine, not a Mesh. However, if you want
+  * to easily add some small fun 3D elements into your game, or create some special effects involving
+  * vertex warping, this is the right object for you. Mesh data becomes part of the WebGL batch,
+  * just like standard Sprites, so doesn't introduce any additional shader overhead. Because
+  * the Mesh just generates vertices into the WebGL batch, like any other Sprite, you can use all of
+  * the common Game Object components on a Mesh too, such as a custom pipeline, mask, blend mode
+  * or texture.
+  * 
+  * Note that the Mesh object is WebGL only and does not have a Canvas counterpart.
+  * 
+  * The Mesh origin is always 0.5 x 0.5 and cannot be changed.
   */
 @JSGlobal("Phaser.GameObjects.Mesh")
 @js.native
-class Mesh protected ()
+open class Mesh protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Mesh {
   /**
@@ -21,76 +50,29 @@ class Mesh protected ()
     * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
     * @param x The horizontal position of this Game Object in the world.
     * @param y The vertical position of this Game Object in the world.
-    * @param vertices An array containing the vertices data for this Mesh.
-    * @param uv An array containing the uv data for this Mesh.
-    * @param colors An array containing the color data for this Mesh.
-    * @param alphas An array containing the alpha data for this Mesh.
     * @param texture The key, or instance of the Texture this Game Object will use to render with, as stored in the Texture Manager.
     * @param frame An optional frame from the Texture this Game Object is rendering with.
+    * @param vertices The vertices array. Either `xy` pairs, or `xyz` if the `containsZ` parameter is `true` (but see note).
+    * @param uvs The UVs pairs array.
+    * @param indicies Optional vertex indicies array. If you don't have one, pass `null` or an empty array.
+    * @param containsZ Does the vertices data include a `z` component? Note: If not, it will be assumed `z=0`, see method `panZ` or `setOrtho`. Default false.
+    * @param normals Optional vertex normals array. If you don't have one, pass `null` or an empty array.
+    * @param colors An array of colors, one per vertex, or a single color value applied to all vertices. Default 0xffffff.
+    * @param alphas An array of alpha values, one per vertex, or a single alpha value applied to all vertices. Default 1.
     */
   def this(
     scene: Scene,
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: String
-  ) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: Texture
-  ) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: String,
-    frame: String
-  ) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: String,
-    frame: integer
-  ) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: Texture,
-    frame: String
-  ) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    vertices: js.Array[Double],
-    uv: js.Array[Double],
-    colors: js.Array[Double],
-    alphas: js.Array[Double],
-    texture: Texture,
-    frame: integer
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    texture: js.UndefOr[String | Texture],
+    frame: js.UndefOr[String | Double],
+    vertices: js.UndefOr[js.Array[Double]],
+    uvs: js.UndefOr[js.Array[Double]],
+    indicies: js.UndefOr[js.Array[Double]],
+    containsZ: js.UndefOr[Boolean],
+    normals: js.UndefOr[js.Array[Double]],
+    colors: js.UndefOr[Double | js.Array[Double]],
+    alphas: js.UndefOr[Double | js.Array[Double]]
   ) = this()
   
   /**
@@ -150,7 +132,7 @@ class Mesh protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

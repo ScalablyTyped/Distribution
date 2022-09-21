@@ -21,10 +21,9 @@ object dropdownHeaderMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownHeader", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[DropdownHeaderProps, ComponentState, js.Any] {
+  open class default protected () extends Component[DropdownHeaderProps, ComponentState, Any] {
     def this(props: DropdownHeaderProps) = this()
-    def this(props: DropdownHeaderProps, context: js.Any) = this()
+    def this(props: DropdownHeaderProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownHeader", JSImport.Default)
   @js.native
@@ -33,7 +32,7 @@ object dropdownHeaderMod extends Shortcut {
   trait DropdownHeaderProps
     extends StObject
        with StrictDropdownHeaderProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object DropdownHeaderProps {
     
     inline def apply(): DropdownHeaderProps = {
@@ -45,7 +44,7 @@ object dropdownHeaderMod extends Shortcut {
   trait StrictDropdownHeaderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -68,7 +67,7 @@ object dropdownHeaderMod extends Shortcut {
     
     extension [Self <: StrictDropdownHeaderProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

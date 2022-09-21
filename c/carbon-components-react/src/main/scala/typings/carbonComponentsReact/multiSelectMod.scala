@@ -13,17 +13,17 @@ object multiSelectMod {
     
     @JSImport("carbon-components-react/lib/components/MultiSelect", JSImport.Default)
     @js.native
-    val ^ : MultiSelect[String] = js.native
+    val ^ : MultiSelect = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("carbon-components-react/lib/components/MultiSelect", "default.Filterable")
     @js.native
-    class Filterable[T /* <: ListBoxBaseItemType */] ()
-      extends typings.carbonComponentsReact.filterableMultiSelectMod.default[T]
+    open class Filterable[T /* <: ListBoxBaseItemType */] ()
+      extends typings.carbonComponentsReact.multiSelectFilterableMultiSelectMod.default[T]
     
-    type _To = MultiSelect[String]
+    type _To = MultiSelect
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: MultiSelect[String] = ^
+    override def _to: MultiSelect = ^
   }
 }

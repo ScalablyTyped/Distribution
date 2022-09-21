@@ -1,7 +1,6 @@
 package typings.lunr
 
 import typings.lunr.mod.Token
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,6 +76,6 @@ object anon {
       *
       * @see lunr.tokenizer
       */
-    var separator: RegExp = js.native
+    var separator: js.RegExp = js.native
   }
 }

@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,17 @@ trait AutoscalingPolicy extends StObject {
     * between 3 and 50 characters.
     */
   var id: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. The labels to associate with this autoscaling policy. Label keys must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).
+    * Label values may be empty, but, if present, must contain 1 to 63 characters, and must conform to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be
+    * associated with an autoscaling policy.
+    */
+  var labels: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.AutoscalingPolicy & TopLevel[Any]
+  ] = js.undefined
   
   /**
     * Output only. The "resource name" of the autoscaling policy, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.autoscalingPolicies, the
@@ -43,6 +55,14 @@ object AutoscalingPolicy {
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLabels(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.AutoscalingPolicy & TopLevel[Any]
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

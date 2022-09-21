@@ -2,19 +2,22 @@ package typings.reactNativeVectorIcons
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
+import typings.reactNative.mod.BackgroundPropType
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
+import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeSyntheticEvent
-import typings.reactNative.mod.StyleProp
+import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextLayoutEventData
 import typings.reactNative.mod.TextStyle
+import typings.reactNative.mod.ViewStyle
 import typings.reactNativeVectorIcons.iconMod.Icon
 import typings.reactNativeVectorIcons.iconMod.ImageSource
 import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`0`
@@ -26,19 +29,18 @@ import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.all
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.assertive
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.auto
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.balanced
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.button
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.clip
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.email
+import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.full
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.head
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.highQuality
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.link
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.middle
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.no
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.none
+import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.normal
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.phoneNumber
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.polite
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.radiobutton_checked
-import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.radiobutton_unchecked
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.simple
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.tail
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.yes
@@ -88,17 +90,21 @@ object anon {
     
     var TabBarItemIOS: Instantiable0[typings.reactNativeVectorIcons.iconMod.Icon.TabBarItemIOS] = js.native
     
-    var ToolbarAndroid: Instantiable0[typings.reactNativeVectorIcons.iconMod.Icon.ToolbarAndroid] = js.native
+    def getFontFamily(): String = js.native
     
     def getImageSource(name: String): js.Promise[ImageSource] = js.native
     def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
-    def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native
-    def getImageSource(name: String, size: Unit, color: String): js.Promise[ImageSource] = js.native
+    def getImageSource(name: String, size: Double, color: Double): js.Promise[ImageSource] = js.native
+    def getImageSource(name: String, size: Double, color: ColorValue): js.Promise[ImageSource] = js.native
+    def getImageSource(name: String, size: Unit, color: Double): js.Promise[ImageSource] = js.native
+    def getImageSource(name: String, size: Unit, color: ColorValue): js.Promise[ImageSource] = js.native
     
     def getImageSourceSync(name: String): ImageSource = js.native
     def getImageSourceSync(name: String, size: Double): ImageSource = js.native
-    def getImageSourceSync(name: String, size: Double, color: String): ImageSource = js.native
-    def getImageSourceSync(name: String, size: Unit, color: String): ImageSource = js.native
+    def getImageSourceSync(name: String, size: Double, color: Double): ImageSource = js.native
+    def getImageSourceSync(name: String, size: Double, color: ColorValue): ImageSource = js.native
+    def getImageSourceSync(name: String, size: Unit, color: Double): ImageSource = js.native
+    def getImageSourceSync(name: String, size: Unit, color: ColorValue): ImageSource = js.native
     
     def getRawGlyphMap(): StringDictionary[Double] = js.native
     
@@ -108,22 +114,13 @@ object anon {
     def loadFont(file: String): js.Promise[Unit] = js.native
   }
   
-  /* Inlined {[ K in react-native-vector-icons.react-native-vector-icons/FontAwesome5.FontAwesome5IconVariants ]:? boolean} & react-native-vector-icons.react-native-vector-icons/Icon.IconProps */
+  /* Inlined {[ K in react-native-vector-icons.react-native-vector-icons/FontAwesome5.FontAwesome5IconVariants ]:? boolean} & react-native-vector-icons.react-native-vector-icons/Icon.IconButtonProps */
   trait KinFontAwesome5IconVarian extends StObject {
     
     /**
       * Provides an array of custom actions available for accessibility.
       */
     var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-    
-    /**
-      * In some cases, we also want to alert the end user of the type of selected component (i.e., that it is a “button”).
-      * If we were using native buttons, this would work automatically. Since we are using javascript, we need to
-      * provide a bit more context for TalkBack. To do so, you must specify the ‘accessibilityComponentType’ property
-      * for any UI component. For instances, we support ‘button’, ‘radiobutton_checked’ and ‘radiobutton_unchecked’ and so on.
-      * @platform android
-      */
-    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
     
     /**
       * A Boolean value indicating whether the accessibility elements contained within this accessibility element
@@ -150,6 +147,20 @@ object anon {
     var accessibilityLabel: js.UndefOr[String] = js.undefined
     
     /**
+      * Specifies the nativeID of the associated label text. When the assistive technology focuses on the component with this props, the text is read aloud.
+      * @platform android
+      */
+    var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    /**
+      * Indicates to the accessibility services that the UI component is in
+      * a specific language. The provided string should be formatted following
+      * the BCP 47 specification (https://www.rfc-editor.org/info/bcp47).
+      * @platform ios
+      */
+    var accessibilityLanguage: js.UndefOr[String] = js.undefined
+    
+    /**
       * Indicates to accessibility services whether the user should be notified when this view changes.
       * Works for Android API >= 19 only.
       * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
@@ -166,13 +177,6 @@ object anon {
       * Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
       */
     var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-    
-    /**
-      * Accessibility traits tell a person using VoiceOver what kind of element they have selected.
-      * Is this element a label? A button? A header? These questions are answered by accessibilityTraits.
-      * @platform ios
-      */
-    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
     
     /**
       * Represents the current value of a component. It can be a textual description of a component's value, or for range-based components, such as sliders and progress bars,
@@ -193,6 +197,11 @@ object anon {
     var accessible: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Determines what the opacity of the wrapped view should be when touch is active.
+      */
+    var activeOpacity: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Specifies whether font should be scaled down automatically to fit given style constraints.
       */
     var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.undefined
@@ -203,19 +212,79 @@ object anon {
       */
     var allowFontScaling: js.UndefOr[Boolean] = js.undefined
     
-    var brand: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Hyphenation strategy
+      */
+    var android_hyphenationFrequency: js.UndefOr[normal | none | full] = js.undefined
     
     /**
-      * Color of the icon
-      *
+      * Determines the type of background drawable that's going to be used to display feedback.
+      * It takes an object with type property and extra data depending on the type.
+      * It's recommended to use one of the following static methods to generate that dictionary:
+      *      1) TouchableNativeFeedback.SelectableBackground() - will create object that represents android theme's
+      *         default background for selectable elements (?android:attr/selectableItemBackground)
+      *      2) TouchableNativeFeedback.SelectableBackgroundBorderless() - will create object that represent android
+      *         theme's default background for borderless selectable elements
+      *         (?android:attr/selectableItemBackgroundBorderless). Available on android API level 21+
+      *      3) TouchableNativeFeedback.Ripple(color, borderless) - will create object that represents ripple drawable
+      *         with specified color (as a string). If property borderless evaluates to true the ripple will render
+      *         outside of the view bounds (see native actionbar buttons as an example of that behavior). This background
+      *         type is available on Android API level 21+
       */
-    var color: js.UndefOr[String] = js.undefined
+    var background: js.UndefOr[BackgroundPropType] = js.undefined
+    
+    /**
+      * Background color of the button
+      *
+      * @default '#007AFF'
+      */
+    var backgroundColor: js.UndefOr[ColorValue | Double] = js.undefined
+    
+    /**
+      * Border radius of the button
+      * Set to 0 to disable.
+      *
+      * @default 5
+      */
+    var borderRadius: js.UndefOr[Double] = js.undefined
+    
+    var brand: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    /**
+      * Text and icon color
+      * Use iconStyle or nest a Text component if you need different colors.
+      *
+      * @default 'white'
+      */
+    var color: js.UndefOr[ColorValue | Double] = js.undefined
     
     /**
       * Determines the types of data converted to clickable URLs in the text element.
       * By default no data types are detected.
       */
     var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
+    
+    /**
+      * Delay in ms, from onPressIn, before onLongPress is called.
+      */
+    var delayLongPress: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Delay in ms, from the start of the touch, before onPressIn is called.
+      */
+    var delayPressIn: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Delay in ms, from the release of the touch, before onPressOut is called.
+      */
+    var delayPressOut: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * If true, disable all interactions for this component.
+      */
+    var disabled: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * This can be one of the following values:
@@ -235,6 +304,30 @@ object anon {
       * > `clip` is working only for iOS
       */
     var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
+    
+    /**
+      * *(Apple TV only)* TV preferred focus (see documentation for the View component).
+      *
+      * @platform ios
+      */
+    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * This defines how far your touch can start away from the button.
+      * This is added to pressRetentionOffset when moving off of the button.
+      * NOTE The touch area never extends past the parent view bounds and
+      * the Z-index of sibling views always takes precedence if a touch hits
+      * two overlapping views.
+      */
+    var hitSlop: js.UndefOr[Insets] = js.undefined
+    
+    /**
+      * Styles applied to the icon only
+      * Good for setting margins or a different color.
+      *
+      * @default {marginRight: 10}
+      */
+    var iconStyle: js.UndefOr[TextStyle] = js.undefined
     
     /**
       * Controls how view is important for accessibility which is if it fires accessibility events
@@ -284,6 +377,41 @@ object anon {
     var nativeID: js.UndefOr[String] = js.undefined
     
     /**
+      * Designates the next view to receive focus when the user navigates down. See the Android documentation.
+      *
+      * @platform android
+      */
+    var nextFocusDown: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Designates the next view to receive focus when the user navigates forward. See the Android documentation.
+      *
+      * @platform android
+      */
+    var nextFocusForward: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Designates the next view to receive focus when the user navigates left. See the Android documentation.
+      *
+      * @platform android
+      */
+    var nextFocusLeft: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Designates the next view to receive focus when the user navigates right. See the Android documentation.
+      *
+      * @platform android
+      */
+    var nextFocusRight: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Designates the next view to receive focus when the user navigates up. See the Android documentation.
+      *
+      * @platform android
+      */
+    var nextFocusUp: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Used to truncate the text with an ellipsis after computing the text
       * layout, including line wrapping, such that the total number of lines
       * does not exceed this number.
@@ -310,9 +438,37 @@ object anon {
     var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
+      * When `accessible` is true (which is the default) this may be called when
+      * the OS-specific concept of "blur" occurs, meaning the element lost focus.
+      * Some platforms may not have the concept of blur.
+      */
+    var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
+    
+    /**
+      * When `accessible` is true (which is the default) this may be called when
+      * the OS-specific concept of "focus" occurs. Some platforms may not have
+      * the concept of focus.
+      */
+    var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
+    
+    /**
+      *
+      * Called immediately after the underlay is hidden
+      */
+    var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
       * Invoked on mount and layout changes with
       *
       * {nativeEvent: { layout: {x, y, width, height}}}.
+      */
+    /**
+      * Invoked on mount and layout changes with
+      * {nativeEvent: {layout: {x, y, width, height}}}
+      */
+    /**
+      * Invoked on mount and layout changes with
+      * {nativeEvent: {layout: {x, y, width, height}}}
       */
     var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
     
@@ -332,12 +488,39 @@ object anon {
       * This function is called on press.
       * Text intrinsically supports press handling with a default highlight state (which can be disabled with suppressHighlighting).
       */
+    /**
+      * Called when the touch is released,
+      * but not if cancelled (e.g. by a scroll that steals the responder lock).
+      */
+    /**
+      * Called when the touch is released,
+      * but not if cancelled (e.g. by a scroll that steals the responder lock).
+      */
     var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+    
+    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+    
+    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+    
+    /**
+      * Called immediately after the underlay is shown
+      */
+    var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Invoked on Text layout
       */
     var onTextLayout: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[TextLayoutEventData], Unit]] = js.undefined
+    
+    /**
+      * When the scroll view is disabled, this defines how far your
+      * touch may move off of the button, before deactivating the button.
+      * Once deactivated, try moving it back and you'll see that the button
+      * is once again reactivated! Move it back and forth several times
+      * while the scroll view is disabled. Ensure you pass in a constant
+      * to reduce memory allocations.
+      */
+    var pressRetentionOffset: js.UndefOr[Insets] = js.undefined
     
     /**
       * Lets the user select text, to use the native copy and paste functionality.
@@ -359,9 +542,11 @@ object anon {
     var solid: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @see https://reactnative.dev/docs/text#style
+      * Style prop inherited from TextProps and TouchableWithoutFeedbackProperties
+      * Only exist here so we can have ViewStyle or TextStyle
+      *
       */
-    var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+    var style: js.UndefOr[ViewStyle | TextStyle] = js.undefined
     
     /**
       * When `true`, no visual change is made when text is pressed down. By
@@ -379,6 +564,20 @@ object anon {
       * default is `highQuality`.
       */
     var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+    
+    /**
+      * If true, doesn't play a system sound on touch.
+      *
+      * @platform android
+      */
+    var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+    
+    /**
+      * The color of the underlay that will show through when the touch is active.
+      */
+    var underlayColor: js.UndefOr[ColorValue] = js.undefined
+    
+    var useForeground: js.UndefOr[Boolean] = js.undefined
   }
   object KinFontAwesome5IconVarian {
     
@@ -393,11 +592,7 @@ object anon {
       
       inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
       
-      inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-      
-      inline def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-      
-      inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+      inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
       
       inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
       
@@ -415,6 +610,16 @@ object anon {
       
       inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
       
+      inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+      
+      inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+      
+      inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+      
+      inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+      
+      inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+      
       inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -426,12 +631,6 @@ object anon {
       inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
       
       inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-      
-      inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-      
-      inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-      
-      inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
       
       inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
       
@@ -445,6 +644,10 @@ object anon {
       
       inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
       
+      inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+      
+      inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+      
       inline def setAdjustsFontSizeToFit(value: Boolean): Self = StObject.set(x, "adjustsFontSizeToFit", value.asInstanceOf[js.Any])
       
       inline def setAdjustsFontSizeToFitUndefined: Self = StObject.set(x, "adjustsFontSizeToFit", js.undefined)
@@ -453,11 +656,31 @@ object anon {
       
       inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
       
+      inline def setAndroid_hyphenationFrequency(value: normal | none | full): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
+      
+      inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
+      
+      inline def setBackground(value: BackgroundPropType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      
+      inline def setBackgroundColor(value: ColorValue | Double): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      
+      inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+      
+      inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+      
       inline def setBrand(value: Boolean): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
       inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
       
-      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setColor(value: ColorValue | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -467,9 +690,39 @@ object anon {
       
       inline def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
       
+      inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
+      
+      inline def setDelayLongPressUndefined: Self = StObject.set(x, "delayLongPress", js.undefined)
+      
+      inline def setDelayPressIn(value: Double): Self = StObject.set(x, "delayPressIn", value.asInstanceOf[js.Any])
+      
+      inline def setDelayPressInUndefined: Self = StObject.set(x, "delayPressIn", js.undefined)
+      
+      inline def setDelayPressOut(value: Double): Self = StObject.set(x, "delayPressOut", value.asInstanceOf[js.Any])
+      
+      inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
       inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
       
       inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
+      
+      inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
+      
+      inline def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
+      
+      inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
+      
+      inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
+      
+      inline def setIconStyle(value: TextStyle): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+      
+      inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
       
       inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
       
@@ -499,6 +752,26 @@ object anon {
       
       inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
       
+      inline def setNextFocusDown(value: Double): Self = StObject.set(x, "nextFocusDown", value.asInstanceOf[js.Any])
+      
+      inline def setNextFocusDownUndefined: Self = StObject.set(x, "nextFocusDown", js.undefined)
+      
+      inline def setNextFocusForward(value: Double): Self = StObject.set(x, "nextFocusForward", value.asInstanceOf[js.Any])
+      
+      inline def setNextFocusForwardUndefined: Self = StObject.set(x, "nextFocusForward", js.undefined)
+      
+      inline def setNextFocusLeft(value: Double): Self = StObject.set(x, "nextFocusLeft", value.asInstanceOf[js.Any])
+      
+      inline def setNextFocusLeftUndefined: Self = StObject.set(x, "nextFocusLeft", js.undefined)
+      
+      inline def setNextFocusRight(value: Double): Self = StObject.set(x, "nextFocusRight", value.asInstanceOf[js.Any])
+      
+      inline def setNextFocusRightUndefined: Self = StObject.set(x, "nextFocusRight", js.undefined)
+      
+      inline def setNextFocusUp(value: Double): Self = StObject.set(x, "nextFocusUp", value.asInstanceOf[js.Any])
+      
+      inline def setNextFocusUpUndefined: Self = StObject.set(x, "nextFocusUp", js.undefined)
+      
       inline def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
       
       inline def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
@@ -515,6 +788,18 @@ object anon {
       
       inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
       
+      inline def setOnBlur(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      
+      inline def setOnFocus(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      
+      inline def setOnHideUnderlay(value: () => Unit): Self = StObject.set(x, "onHideUnderlay", js.Any.fromFunction0(value))
+      
+      inline def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
+      
       inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
       
       inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
@@ -529,11 +814,27 @@ object anon {
       
       inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
+      inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+      
+      inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+      
+      inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+      
+      inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+      
       inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      
+      inline def setOnShowUnderlay(value: () => Unit): Self = StObject.set(x, "onShowUnderlay", js.Any.fromFunction0(value))
+      
+      inline def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
       
       inline def setOnTextLayout(value: /* event */ NativeSyntheticEvent[TextLayoutEventData] => Unit): Self = StObject.set(x, "onTextLayout", js.Any.fromFunction1(value))
       
       inline def setOnTextLayoutUndefined: Self = StObject.set(x, "onTextLayout", js.undefined)
+      
+      inline def setPressRetentionOffset(value: Insets): Self = StObject.set(x, "pressRetentionOffset", value.asInstanceOf[js.Any])
+      
+      inline def setPressRetentionOffsetUndefined: Self = StObject.set(x, "pressRetentionOffset", js.undefined)
       
       inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
@@ -551,9 +852,7 @@ object anon {
       
       inline def setSolidUndefined: Self = StObject.set(x, "solid", js.undefined)
       
-      inline def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyle(value: ViewStyle | TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -568,6 +867,20 @@ object anon {
       inline def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
       
       inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
+      
+      inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
+      
+      inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
+      
+      inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
+      
+      inline def setUnderlayColor(value: ColorValue): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
+      
+      inline def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
+      
+      inline def setUseForeground(value: Boolean): Self = StObject.set(x, "useForeground", value.asInstanceOf[js.Any])
+      
+      inline def setUseForegroundUndefined: Self = StObject.set(x, "useForeground", js.undefined)
     }
   }
 }

@@ -23,14 +23,9 @@ trait sizeCreateClassBreaksRendererParams
      with Object {
   
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer)
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
-  
-  /**
     * The classification method used for generating breaks.
+    *
+    * @default equal-interval
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer)
     */
@@ -38,6 +33,8 @@ trait sizeCreateClassBreaksRendererParams
   
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value and features that do not fall within the configured data range.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer)
     */
@@ -55,7 +52,7 @@ trait sizeCreateClassBreaksRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * Provides options for setting a title to describe a field instead of using the field name.
@@ -102,6 +99,8 @@ trait sizeCreateClassBreaksRendererParams
   /**
     * The number of class breaks to generate.
     *
+    * @default 5
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer)
     */
   var numClasses: js.UndefOr[Double] = js.undefined
@@ -144,6 +143,8 @@ trait sizeCreateClassBreaksRendererParams
   /**
     * If a `standard-deviation` classification method is used, then this indicates the interval by which to generate class breaks.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer)
     */
   var standardDeviationInterval: js.UndefOr[Double] = js.undefined
@@ -151,12 +152,14 @@ trait sizeCreateClassBreaksRendererParams
   /**
     * The type of symbol to generate.
     *
+    * @default 2d
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer)
     */
   var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer)
     */
@@ -182,7 +185,7 @@ object sizeCreateClassBreaksRendererParams {
     constructor: js.Function,
     field: String,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean
   ): sizeCreateClassBreaksRendererParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
@@ -190,10 +193,6 @@ object sizeCreateClassBreaksRendererParams {
   }
   
   extension [Self <: sizeCreateClassBreaksRendererParams](x: Self) {
-    
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     inline def setClassificationMethod(value: `equal-interval` | `natural-breaks` | quantile | `standard-deviation`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
     
@@ -205,7 +204,7 @@ object sizeCreateClassBreaksRendererParams {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: sizeCreateClassBreaksRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     

@@ -8,11 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Errors extends StObject {
   
   var errors: js.Array[ReactNode]
+  
+  var warnings: js.Array[ReactNode]
 }
 object Errors {
   
-  inline def apply(errors: js.Array[ReactNode]): Errors = {
-    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
+  inline def apply(errors: js.Array[ReactNode], warnings: js.Array[ReactNode]): Errors = {
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Errors]
   }
   
@@ -20,6 +22,10 @@ object Errors {
     
     inline def setErrors(value: js.Array[ReactNode]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: ReactNode*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ReactNode*): Self = StObject.set(x, "errors", js.Array(value*))
+    
+    inline def setWarnings(value: js.Array[ReactNode]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsVarargs(value: ReactNode*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mmdb-lib" : "1.2.0"
+      "mmdb-lib" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "mmdb-lib" : "1.2.0"
+      "mmdb-lib" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

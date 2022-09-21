@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The credential used by Deployment Manager and TypeProvider. Only one of the
-  * options is permitted.
-  */
 trait SchemaCredential extends StObject {
   
   /**
@@ -21,10 +17,9 @@ trait SchemaCredential extends StObject {
   var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.undefined
   
   /**
-    * Specify to use the project default credential, only supported by
-    * Deployment.
+    * Specify to use the project default credential, only supported by Deployment.
     */
-  var useProjectDefault: js.UndefOr[Boolean] = js.undefined
+  var useProjectDefault: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaCredential {
   
@@ -44,6 +39,8 @@ object SchemaCredential {
     inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     inline def setUseProjectDefault(value: Boolean): Self = StObject.set(x, "useProjectDefault", value.asInstanceOf[js.Any])
+    
+    inline def setUseProjectDefaultNull: Self = StObject.set(x, "useProjectDefault", null)
     
     inline def setUseProjectDefaultUndefined: Self = StObject.set(x, "useProjectDefault", js.undefined)
   }

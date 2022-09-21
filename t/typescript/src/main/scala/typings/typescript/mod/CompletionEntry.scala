@@ -7,19 +7,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompletionEntry extends StObject {
   
+  /**
+    * A property to be sent back to TS Server in the CompletionDetailsRequest, along with `name`,
+    * that allows TS Server to look up the symbol represented by the completion item, disambiguating
+    * items with the same name. Currently only defined for auto-import completions, but the type is
+    * `unknown` in the protocol, so it can be changed as needed to support other kinds of completions.
+    * The presence of this property should generally not be used to assume that this completion entry
+    * is an auto-import.
+    */
+  var data: js.UndefOr[CompletionEntryData] = js.undefined
+  
   var hasAction: js.UndefOr[`true`] = js.undefined
   
   var insertText: js.UndefOr[java.lang.String] = js.undefined
   
   var isFromUncheckedFile: js.UndefOr[`true`] = js.undefined
   
+  var isImportStatementCompletion: js.UndefOr[`true`] = js.undefined
+  
   var isPackageJsonImport: js.UndefOr[`true`] = js.undefined
   
   var isRecommended: js.UndefOr[`true`] = js.undefined
   
+  var isSnippet: js.UndefOr[`true`] = js.undefined
+  
   var kind: ScriptElementKind
   
   var kindModifiers: js.UndefOr[java.lang.String] = js.undefined
+  
+  var labelDetails: js.UndefOr[CompletionEntryLabelDetails] = js.undefined
   
   var name: java.lang.String
   
@@ -33,6 +49,8 @@ trait CompletionEntry extends StObject {
   var sortText: java.lang.String
   
   var source: js.UndefOr[java.lang.String] = js.undefined
+  
+  var sourceDisplay: js.UndefOr[js.Array[SymbolDisplayPart]] = js.undefined
 }
 object CompletionEntry {
   
@@ -42,6 +60,10 @@ object CompletionEntry {
   }
   
   extension [Self <: CompletionEntry](x: Self) {
+    
+    inline def setData(value: CompletionEntryData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setHasAction(value: `true`): Self = StObject.set(x, "hasAction", value.asInstanceOf[js.Any])
     
@@ -55,6 +77,10 @@ object CompletionEntry {
     
     inline def setIsFromUncheckedFileUndefined: Self = StObject.set(x, "isFromUncheckedFile", js.undefined)
     
+    inline def setIsImportStatementCompletion(value: `true`): Self = StObject.set(x, "isImportStatementCompletion", value.asInstanceOf[js.Any])
+    
+    inline def setIsImportStatementCompletionUndefined: Self = StObject.set(x, "isImportStatementCompletion", js.undefined)
+    
     inline def setIsPackageJsonImport(value: `true`): Self = StObject.set(x, "isPackageJsonImport", value.asInstanceOf[js.Any])
     
     inline def setIsPackageJsonImportUndefined: Self = StObject.set(x, "isPackageJsonImport", js.undefined)
@@ -63,11 +89,19 @@ object CompletionEntry {
     
     inline def setIsRecommendedUndefined: Self = StObject.set(x, "isRecommended", js.undefined)
     
+    inline def setIsSnippet(value: `true`): Self = StObject.set(x, "isSnippet", value.asInstanceOf[js.Any])
+    
+    inline def setIsSnippetUndefined: Self = StObject.set(x, "isSnippet", js.undefined)
+    
     inline def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
     inline def setKindModifiersUndefined: Self = StObject.set(x, "kindModifiers", js.undefined)
+    
+    inline def setLabelDetails(value: CompletionEntryLabelDetails): Self = StObject.set(x, "labelDetails", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDetailsUndefined: Self = StObject.set(x, "labelDetails", js.undefined)
     
     inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -78,6 +112,12 @@ object CompletionEntry {
     inline def setSortText(value: java.lang.String): Self = StObject.set(x, "sortText", value.asInstanceOf[js.Any])
     
     inline def setSource(value: java.lang.String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceDisplay(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "sourceDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setSourceDisplayUndefined: Self = StObject.set(x, "sourceDisplay", js.undefined)
+    
+    inline def setSourceDisplayVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "sourceDisplay", js.Array(value*))
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }

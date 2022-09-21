@@ -10,15 +10,13 @@ http://amcharts.com
 | ------------------ | :-------------: |
 | Full name          | amcharts |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 24555 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2344.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://amcharts.com)
-- [Bugs](https://github.com/bequadrat/amcharts/issues)
-- [Repository](https://github.com/bequadrat/amcharts)
 - [Npm](https://www.npmjs.com/package/amcharts)
     
 

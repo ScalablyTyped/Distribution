@@ -8,9 +8,15 @@ trait UIEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var detail: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var view: js.UndefOr[Window | Null] = js.undefined
+  
+  /** @deprecated */
+  /* standard dom */
+  var which: js.UndefOr[Double] = js.undefined
 }
 object UIEventInit {
   
@@ -30,5 +36,9 @@ object UIEventInit {
     inline def setViewNull: Self = StObject.set(x, "view", null)
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+    
+    inline def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
   }
 }

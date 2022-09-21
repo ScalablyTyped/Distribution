@@ -35,7 +35,7 @@ object XHyperlinkControl {
     ControlContext: XPropertyControlContext,
     ControlType: Double,
     ControlWindow: XWindow,
-    Value: js.Any,
+    Value: Any,
     ValueType: `type`,
     addActionListener: XActionListener => Unit,
     isModified: () => Boolean,

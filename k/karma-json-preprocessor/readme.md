@@ -11,9 +11,9 @@ A Karma plugin. Convert JSON files into JS variables to use in your tests.
 | Full name          | karma-json-preprocessor |
 | Keywords           | karma-plugin, karma-preprocessor, json |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 194115 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 66493.33333333333 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/mjeanroy/karma-json-preprocessor#readme)

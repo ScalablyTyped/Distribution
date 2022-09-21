@@ -25,7 +25,7 @@ object cognitoIdentityCredentialsMod {
   /**
     * Creates a new credentials object.
     */
-  class CognitoIdentityCredentials () extends Credentials {
+  open class CognitoIdentityCredentials () extends Credentials {
     /**
       * Creates a new credentials object with optional configuration.
       */

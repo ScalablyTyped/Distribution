@@ -16,11 +16,11 @@ object Application {
       
       var DefaultForms: FormsInfo
       
-      var OtherForms: js.Any
+      var OtherForms: Any
     }
     object DefaultFormsInformation {
       
-      inline def apply(DefaultForms: FormsInfo, OtherForms: js.Any): DefaultFormsInformation = {
+      inline def apply(DefaultForms: FormsInfo, OtherForms: Any): DefaultFormsInformation = {
         val __obj = js.Dynamic.literal(DefaultForms = DefaultForms.asInstanceOf[js.Any], OtherForms = OtherForms.asInstanceOf[js.Any])
         __obj.asInstanceOf[DefaultFormsInformation]
       }
@@ -29,7 +29,7 @@ object Application {
         
         inline def setDefaultForms(value: FormsInfo): Self = StObject.set(x, "DefaultForms", value.asInstanceOf[js.Any])
         
-        inline def setOtherForms(value: js.Any): Self = StObject.set(x, "OtherForms", value.asInstanceOf[js.Any])
+        inline def setOtherForms(value: Any): Self = StObject.set(x, "OtherForms", value.asInstanceOf[js.Any])
       }
     }
     
@@ -106,14 +106,14 @@ object Application {
         dispose: () => Unit,
         endUpdate: () => Unit,
         get_element: () => HTMLElement,
-        get_events: () => js.Any,
+        get_events: () => Any,
         get_id: () => String,
         get_isInitialized: () => Boolean,
         get_isUpdating: () => Boolean,
         get_moreColorsPicker: () => MoreColorsPicker,
         initialize: () => Unit,
-        onBubbleEvent: (js.Any, js.Any) => Boolean,
-        raiseBubbleEvent: (js.Any, js.Any) => Unit,
+        onBubbleEvent: (Any, Any) => Boolean,
+        raiseBubbleEvent: (Any, Any) => Unit,
         raisePropertyChanged: String => Unit,
         removeCssClass: String => Unit,
         remove_disposing: js.Function => Unit,
@@ -154,13 +154,13 @@ object Application {
         endUpdate: () => Unit,
         get_colorValue: () => String,
         get_element: () => HTMLElement,
-        get_events: () => js.Any,
+        get_events: () => Any,
         get_id: () => String,
         get_isInitialized: () => Boolean,
         get_isUpdating: () => Boolean,
         initialize: () => Unit,
-        onBubbleEvent: (js.Any, js.Any) => Boolean,
-        raiseBubbleEvent: (js.Any, js.Any) => Unit,
+        onBubbleEvent: (Any, Any) => Boolean,
+        raiseBubbleEvent: (Any, Any) => Unit,
         raisePropertyChanged: String => Unit,
         removeCssClass: String => Unit,
         remove_disposing: js.Function => Unit,
@@ -186,15 +186,15 @@ object Application {
       extends StObject
          with Control {
       
-      def add_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit
+      def add_themeDisplayUpdated(value: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit]): Unit
       
-      def get_thmxThemes(): js.Any
+      def get_thmxThemes(): Any
       
       def onThemeSelectionChanged(evt: DomEvent): Unit
       
-      def remove_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit
+      def remove_themeDisplayUpdated(value: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit]): Unit
       
-      def set_thmxThemes(value: js.Any): Unit
+      def set_thmxThemes(value: Any): Unit
       
       def updateThemeDisplay(): Unit
     }
@@ -204,27 +204,27 @@ object Application {
         addCssClass: String => Unit,
         add_disposing: js.Function => Unit,
         add_propertyChanged: js.Function => Unit,
-        add_themeDisplayUpdated: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit,
+        add_themeDisplayUpdated: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit] => Unit,
         beginUpdate: () => Unit,
         dispose: () => Unit,
         endUpdate: () => Unit,
         get_element: () => HTMLElement,
-        get_events: () => js.Any,
+        get_events: () => Any,
         get_id: () => String,
         get_isInitialized: () => Boolean,
         get_isUpdating: () => Boolean,
-        get_thmxThemes: () => js.Any,
+        get_thmxThemes: () => Any,
         initialize: () => Unit,
-        onBubbleEvent: (js.Any, js.Any) => Boolean,
+        onBubbleEvent: (Any, Any) => Boolean,
         onThemeSelectionChanged: DomEvent => Unit,
-        raiseBubbleEvent: (js.Any, js.Any) => Unit,
+        raiseBubbleEvent: (Any, Any) => Unit,
         raisePropertyChanged: String => Unit,
         removeCssClass: String => Unit,
         remove_disposing: js.Function => Unit,
         remove_propertyChanged: js.Function => Unit,
-        remove_themeDisplayUpdated: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit,
+        remove_themeDisplayUpdated: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit] => Unit,
         set_id: String => Unit,
-        set_thmxThemes: js.Any => Unit,
+        set_thmxThemes: Any => Unit,
         toggleCssClass: String => Unit,
         updateThemeDisplay: () => Unit,
         updated: () => Unit
@@ -235,15 +235,15 @@ object Application {
       
       extension [Self <: ThemeWebPage](x: Self) {
         
-        inline def setAdd_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_themeDisplayUpdated", js.Any.fromFunction1(value))
+        inline def setAdd_themeDisplayUpdated(value: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_themeDisplayUpdated", js.Any.fromFunction1(value))
         
-        inline def setGet_thmxThemes(value: () => js.Any): Self = StObject.set(x, "get_thmxThemes", js.Any.fromFunction0(value))
+        inline def setGet_thmxThemes(value: () => Any): Self = StObject.set(x, "get_thmxThemes", js.Any.fromFunction0(value))
         
         inline def setOnThemeSelectionChanged(value: DomEvent => Unit): Self = StObject.set(x, "onThemeSelectionChanged", js.Any.fromFunction1(value))
         
-        inline def setRemove_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "remove_themeDisplayUpdated", js.Any.fromFunction1(value))
+        inline def setRemove_themeDisplayUpdated(value: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "remove_themeDisplayUpdated", js.Any.fromFunction1(value))
         
-        inline def setSet_thmxThemes(value: js.Any => Unit): Self = StObject.set(x, "set_thmxThemes", js.Any.fromFunction1(value))
+        inline def setSet_thmxThemes(value: Any => Unit): Self = StObject.set(x, "set_thmxThemes", js.Any.fromFunction1(value))
         
         inline def setUpdateThemeDisplay(value: () => Unit): Self = StObject.set(x, "updateThemeDisplay", js.Any.fromFunction0(value))
       }
@@ -270,25 +270,25 @@ object Application {
       
       var DefaultView: ViewSelectorMenuItem
       
-      var ModeratedViews: js.Any
+      var ModeratedViews: Any
       
-      var OtherViews: js.Any
+      var OtherViews: Any
       
-      var PersonalViews: js.Any
+      var PersonalViews: Any
       
-      var PublicViews: js.Any
+      var PublicViews: Any
       
-      var ViewCreation: js.Any
+      var ViewCreation: Any
     }
     object ViewSelectorGroups {
       
       inline def apply(
         DefaultView: ViewSelectorMenuItem,
-        ModeratedViews: js.Any,
-        OtherViews: js.Any,
-        PersonalViews: js.Any,
-        PublicViews: js.Any,
-        ViewCreation: js.Any
+        ModeratedViews: Any,
+        OtherViews: Any,
+        PersonalViews: Any,
+        PublicViews: Any,
+        ViewCreation: Any
       ): ViewSelectorGroups = {
         val __obj = js.Dynamic.literal(DefaultView = DefaultView.asInstanceOf[js.Any], ModeratedViews = ModeratedViews.asInstanceOf[js.Any], OtherViews = OtherViews.asInstanceOf[js.Any], PersonalViews = PersonalViews.asInstanceOf[js.Any], PublicViews = PublicViews.asInstanceOf[js.Any], ViewCreation = ViewCreation.asInstanceOf[js.Any])
         __obj.asInstanceOf[ViewSelectorGroups]
@@ -298,15 +298,15 @@ object Application {
         
         inline def setDefaultView(value: ViewSelectorMenuItem): Self = StObject.set(x, "DefaultView", value.asInstanceOf[js.Any])
         
-        inline def setModeratedViews(value: js.Any): Self = StObject.set(x, "ModeratedViews", value.asInstanceOf[js.Any])
+        inline def setModeratedViews(value: Any): Self = StObject.set(x, "ModeratedViews", value.asInstanceOf[js.Any])
         
-        inline def setOtherViews(value: js.Any): Self = StObject.set(x, "OtherViews", value.asInstanceOf[js.Any])
+        inline def setOtherViews(value: Any): Self = StObject.set(x, "OtherViews", value.asInstanceOf[js.Any])
         
-        inline def setPersonalViews(value: js.Any): Self = StObject.set(x, "PersonalViews", value.asInstanceOf[js.Any])
+        inline def setPersonalViews(value: Any): Self = StObject.set(x, "PersonalViews", value.asInstanceOf[js.Any])
         
-        inline def setPublicViews(value: js.Any): Self = StObject.set(x, "PublicViews", value.asInstanceOf[js.Any])
+        inline def setPublicViews(value: Any): Self = StObject.set(x, "PublicViews", value.asInstanceOf[js.Any])
         
-        inline def setViewCreation(value: js.Any): Self = StObject.set(x, "ViewCreation", value.asInstanceOf[js.Any])
+        inline def setViewCreation(value: Any): Self = StObject.set(x, "ViewCreation", value.asInstanceOf[js.Any])
       }
     }
     
@@ -429,13 +429,13 @@ object Application {
       
       var ImageSourceUrl: String
       
-      var SubMenuItems: js.Any
+      var SubMenuItems: Any
       
       var Text: String
     }
     object ViewSelectorSubMenu {
       
-      inline def apply(ImageSourceUrl: String, SubMenuItems: js.Any, Text: String): ViewSelectorSubMenu = {
+      inline def apply(ImageSourceUrl: String, SubMenuItems: Any, Text: String): ViewSelectorSubMenu = {
         val __obj = js.Dynamic.literal(ImageSourceUrl = ImageSourceUrl.asInstanceOf[js.Any], SubMenuItems = SubMenuItems.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
         __obj.asInstanceOf[ViewSelectorSubMenu]
       }
@@ -444,7 +444,7 @@ object Application {
         
         inline def setImageSourceUrl(value: String): Self = StObject.set(x, "ImageSourceUrl", value.asInstanceOf[js.Any])
         
-        inline def setSubMenuItems(value: js.Any): Self = StObject.set(x, "SubMenuItems", value.asInstanceOf[js.Any])
+        inline def setSubMenuItems(value: Any): Self = StObject.set(x, "SubMenuItems", value.asInstanceOf[js.Any])
         
         inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
       }

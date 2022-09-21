@@ -22,6 +22,6 @@ object SetRemoteLocationsRequest {
     
     inline def setLocations(value: js.Array[RemoteLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    inline def setLocationsVarargs(value: RemoteLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: RemoteLocation*): Self = StObject.set(x, "locations", js.Array(value*))
   }
 }

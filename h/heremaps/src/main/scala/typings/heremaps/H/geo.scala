@@ -66,32 +66,29 @@ object geo {
   trait AbstractGeometry extends StObject {
     
     /**
-      * Checks whether the geometry is equal to the geometry supplied by the caller.
-      * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-      * @param other {any} - The geometry to check against
-      * @return {boolean} - true if the two geometries are equal, otherwise false
-      */
-    def equals(other: js.Any): Boolean
-    
-    /**
       * Returns the bounding rectangle of the geometry.
       * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
       */
     def getBoundingBox(): Rect
+    
+    /**
+      * To obtain a GeoJSON representation of the given geometry.
+      * @return {object} - A GeoJSON Geometry object representing the given geometry.
+      */
+    def toGeoJSON(): js.Object
   }
   object AbstractGeometry {
     
-    inline def apply(equals_ : js.Any => Boolean, getBoundingBox: () => Rect): AbstractGeometry = {
-      val __obj = js.Dynamic.literal(getBoundingBox = js.Any.fromFunction0(getBoundingBox))
-      __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
+    inline def apply(getBoundingBox: () => Rect, toGeoJSON: () => js.Object): AbstractGeometry = {
+      val __obj = js.Dynamic.literal(getBoundingBox = js.Any.fromFunction0(getBoundingBox), toGeoJSON = js.Any.fromFunction0(toGeoJSON))
       __obj.asInstanceOf[AbstractGeometry]
     }
     
     extension [Self <: AbstractGeometry](x: Self) {
       
-      inline def setEquals_(value: js.Any => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
-      
       inline def setGetBoundingBox(value: () => Rect): Self = StObject.set(x, "getBoundingBox", js.Any.fromFunction0(value))
+      
+      inline def setToGeoJSON(value: () => js.Object): Self = StObject.set(x, "toGeoJSON", js.Any.fromFunction0(value))
     }
   }
   

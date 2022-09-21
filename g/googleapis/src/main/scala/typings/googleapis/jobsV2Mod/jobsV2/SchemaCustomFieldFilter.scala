@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Input only.  Custom field filter of the search.
-  */
 trait SchemaCustomFieldFilter extends StObject {
   
   /**
-    * Required.  The query strings for the filter.
+    * Required. The query strings for the filter.
     */
-  var queries: js.UndefOr[js.Array[String]] = js.undefined
+  var queries: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Optional.  The type of filter. Defaults to FilterType.OR.
+    * Optional. The type of filter. Defaults to FilterType.OR.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCustomFieldFilter {
   
@@ -30,11 +27,15 @@ object SchemaCustomFieldFilter {
     
     inline def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
+    inline def setQueriesNull: Self = StObject.set(x, "queries", null)
+    
     inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

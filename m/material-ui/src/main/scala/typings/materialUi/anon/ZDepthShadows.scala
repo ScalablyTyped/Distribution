@@ -33,6 +33,6 @@ object ZDepthShadows {
     
     inline def setZDepthShadowsUndefined: Self = StObject.set(x, "zDepthShadows", js.undefined)
     
-    inline def setZDepthShadowsVarargs(value: String*): Self = StObject.set(x, "zDepthShadows", js.Array(value :_*))
+    inline def setZDepthShadowsVarargs(value: String*): Self = StObject.set(x, "zDepthShadows", js.Array(value*))
   }
 }

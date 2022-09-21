@@ -10,10 +10,10 @@ pipe streams with centralized error handling
 | ------------------ | :-------------: |
 | Full name          | multipipe |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 150 |
-| # downloads        | 58237131 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5258104.666666667 |
+| # stars            | 290.0 |
 
 ## Links
 - [Homepage](https://github.com/juliangruber/multipipe#readme)

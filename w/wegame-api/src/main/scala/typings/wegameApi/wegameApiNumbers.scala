@@ -51,6 +51,14 @@ object wegameApiNumbers {
   inline def `48000`: `48000` = 48000.asInstanceOf[`48000`]
   
   @js.native
+  sealed trait `5` extends StObject
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
+  
+  @js.native
+  sealed trait `8` extends StObject
+  inline def `8`: `8` = 8.asInstanceOf[`8`]
+  
+  @js.native
   sealed trait `8000` extends StObject
   inline def `8000`: `8000` = 8000.asInstanceOf[`8000`]
 }

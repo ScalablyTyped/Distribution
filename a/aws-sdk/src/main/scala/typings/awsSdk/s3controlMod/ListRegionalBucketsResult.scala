@@ -33,6 +33,6 @@ object ListRegionalBucketsResult {
     
     inline def setRegionalBucketListUndefined: Self = StObject.set(x, "RegionalBucketList", js.undefined)
     
-    inline def setRegionalBucketListVarargs(value: RegionalBucket*): Self = StObject.set(x, "RegionalBucketList", js.Array(value :_*))
+    inline def setRegionalBucketListVarargs(value: RegionalBucket*): Self = StObject.set(x, "RegionalBucketList", js.Array(value*))
   }
 }

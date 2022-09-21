@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.StaveHairpin")
 @js.native
-class StaveHairpin protected ()
+open class StaveHairpin protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.StaveHairpin {
   def this(notes: Firstnote, `type`: typings.vexflow.Vex.Flow.StaveHairpin.`type`) = this()

@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A collection of all the NamedRanges in the document that share a given
-  * name.
-  */
 trait SchemaNamedRanges extends StObject {
   
   /**
     * The name that all the named ranges share.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The NamedRanges that share the same name.
@@ -31,12 +27,14 @@ object SchemaNamedRanges {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNamedRanges(value: js.Array[SchemaNamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
     
     inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
     
-    inline def setNamedRangesVarargs(value: SchemaNamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
+    inline def setNamedRangesVarargs(value: SchemaNamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value*))
   }
 }

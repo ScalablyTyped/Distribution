@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@stencil/core" : "2.18.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@stencil/core" : "2.18.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

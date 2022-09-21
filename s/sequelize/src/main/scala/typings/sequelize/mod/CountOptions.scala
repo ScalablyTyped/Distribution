@@ -37,7 +37,9 @@ trait CountOptions
   /**
     * Include options. See `find` for details
     */
-  var include: js.UndefOr[js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]] = js.undefined
+  var include: js.UndefOr[
+    (js.Array[(Model[Any, Any, Any]) | IncludeOptions]) | (Model[Any, Any, Any]) | IncludeOptions
+  ] = js.undefined
   
   /**
     * A hash of search attributes.
@@ -57,7 +59,7 @@ object CountOptions {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: (String | (js.Tuple2[String, String]))*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: (String | (js.Tuple2[String, String]))*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setCol(value: String): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
@@ -71,16 +73,18 @@ object CountOptions {
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(
+      value: (js.Array[(Model[Any, Any, Any]) | IncludeOptions]) | (Model[Any, Any, Any]) | IncludeOptions
+    ): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: ((Model[Any, Any, Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setWhere(value: AnyWhereOptions | js.Array[String]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     
-    inline def setWhereVarargs(value: String*): Self = StObject.set(x, "where", js.Array(value :_*))
+    inline def setWhereVarargs(value: String*): Self = StObject.set(x, "where", js.Array(value*))
   }
 }

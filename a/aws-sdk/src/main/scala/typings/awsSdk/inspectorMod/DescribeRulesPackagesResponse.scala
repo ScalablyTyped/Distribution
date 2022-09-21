@@ -29,6 +29,6 @@ object DescribeRulesPackagesResponse {
     
     inline def setRulesPackages(value: RulesPackageList): Self = StObject.set(x, "rulesPackages", value.asInstanceOf[js.Any])
     
-    inline def setRulesPackagesVarargs(value: RulesPackage*): Self = StObject.set(x, "rulesPackages", js.Array(value :_*))
+    inline def setRulesPackagesVarargs(value: RulesPackage*): Self = StObject.set(x, "rulesPackages", js.Array(value*))
   }
 }

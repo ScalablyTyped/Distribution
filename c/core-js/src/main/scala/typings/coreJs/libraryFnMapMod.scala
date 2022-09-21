@@ -1,7 +1,6 @@
 package typings.coreJs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Iterable
 import typings.std.MapConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,11 +11,12 @@ object libraryFnMapMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("core-js/library/fn/map", JSImport.Namespace)
   @js.native
-  class ^[K, V] ()
+  /* standard es2015.collection */
+  open class ^[K, V] ()
     extends StObject
        with typings.std.Map[K, V] {
     def this(entries: js.Array[js.Tuple2[K, V]]) = this()
-    def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
+    def this(iterable: js.Iterable[js.Tuple2[K, V]]) = this()
   }
   @JSImport("core-js/library/fn/map", JSImport.Namespace)
   @js.native

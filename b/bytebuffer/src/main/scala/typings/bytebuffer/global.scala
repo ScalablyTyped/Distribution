@@ -1,9 +1,6 @@
 package typings.bytebuffer
 
-import typings.long.mod.Long
-import typings.node.Buffer
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +14,7 @@ object global {
     /**
       * Constructs a new ByteBuffer.
       */
-    class ^ ()
+    open class ^ ()
       extends typings.bytebuffer.mod.^ {
       def this(capacity: Double) = this()
       def this(capacity: Double, littleEndian: Boolean) = this()
@@ -176,68 +173,94 @@ object global {
       */
     /* static member */
     inline def calculateVarint64(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-    inline def calculateVarint64(value: Long): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def calculateVarint64(value: typings.long.mod.^): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Concatenates multiple ByteBuffers into one.
       */
     /* static member */
-    inline def concat(buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String]): typings.bytebuffer.mod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any]).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ]
+    ): typings.bytebuffer.mod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any]).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
+    inline def concat(
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: String
     ): typings.bytebuffer.mod.ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: String,
       litteEndian: Boolean
     ): typings.bytebuffer.mod.ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: String,
       litteEndian: Boolean,
       noAssert: Boolean
     ): typings.bytebuffer.mod.ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: String,
       litteEndian: Unit,
       noAssert: Boolean
     ): typings.bytebuffer.mod.ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: Boolean
     ): typings.bytebuffer.mod.ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: Boolean,
       litteEndian: Boolean
     ): typings.bytebuffer.mod.ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: Boolean,
       litteEndian: Boolean,
       noAssert: Boolean
     ): typings.bytebuffer.mod.ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: Boolean,
       litteEndian: Unit,
       noAssert: Boolean
     ): typings.bytebuffer.mod.ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: Unit,
       litteEndian: Boolean
     ): typings.bytebuffer.mod.ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: Unit,
       litteEndian: Boolean,
       noAssert: Boolean
     ): typings.bytebuffer.mod.ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[typings.bytebuffer.mod.ByteBuffer]
     inline def concat(
-      buffers: js.Array[typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+      buffers: js.Array[
+          typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String
+        ],
       encoding: Unit,
       litteEndian: Unit,
       noAssert: Boolean
@@ -292,7 +315,7 @@ object global {
       * Gets the backing buffer type.
       */
     /* static member */
-    inline def isByteBuffer(bb: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isByteBuffer(bb: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Wraps a buffer or a string. Sets the allocated ByteBuffer's ByteBuffer#offset to 0 and its ByteBuffer#limit to the length of the wrapped data.
@@ -303,7 +326,7 @@ object global {
       */
     /* static member */
     inline def wrap(
-      buffer: typings.bytebuffer.mod.ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String,
+      buffer: typings.bytebuffer.mod.ByteBuffer | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | String,
       enc: js.UndefOr[String | Boolean],
       littleEndian: js.UndefOr[Boolean],
       noAssert: js.UndefOr[Boolean]
@@ -319,8 +342,8 @@ object global {
       * Decodes a zigzag encoded signed 64bit integer.
       */
     /* static member */
-    inline def zigZagDecode64(n: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
-    inline def zigZagDecode64(n: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+    inline def zigZagDecode64(n: Double): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
+    inline def zigZagDecode64(n: typings.long.mod.^): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
     
     /**
       * Zigzag encodes a signed 32bit integer so that it can be effectively used with varint encoding.
@@ -332,7 +355,7 @@ object global {
       * Zigzag encodes a signed 64bit integer so that it can be effectively used with varint encoding.
       */
     /* static member */
-    inline def zigZagEncode64(n: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
-    inline def zigZagEncode64(n: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+    inline def zigZagEncode64(n: Double): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
+    inline def zigZagEncode64(n: typings.long.mod.^): typings.long.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[typings.long.mod.^]
   }
 }

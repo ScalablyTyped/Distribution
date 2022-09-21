@@ -28,7 +28,7 @@ object TwoColorTimeline {
   
   inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
-    curves: js.Any,
+    curves: Any,
     frames: ArrayLike[Double],
     getCurvePercent: (Double, Double) => Double,
     getCurveType: Double => Double,

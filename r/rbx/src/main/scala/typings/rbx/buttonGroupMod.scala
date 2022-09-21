@@ -70,7 +70,7 @@ object buttonGroupMod {
   
   @JSImport("rbx/elements/button/button-group", "ButtonGroup")
   @js.native
-  val ButtonGroup: ForwardRefAsExoticComponent[ButtonGroupProps, ElementType[js.Any]] = js.native
+  val ButtonGroup: ForwardRefAsExoticComponent[ButtonGroupProps, ElementType[Any]] = js.native
   
   trait ButtonGroupModifierProps extends StObject {
     

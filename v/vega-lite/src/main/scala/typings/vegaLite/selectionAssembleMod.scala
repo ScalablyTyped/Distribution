@@ -3,11 +3,13 @@ package typings.vegaLite
 import typings.vegaLite.compileFacetMod.FacetModel
 import typings.vegaLite.layerMod.LayerModel
 import typings.vegaLite.modelMod.Model
-import typings.vegaLite.srcSelectionMod.SelectionExtent
+import typings.vegaLite.scaleComponentMod.ScaleComponent
+import typings.vegaLite.srcSelectionMod.ParameterExtent
 import typings.vegaLite.srcSelectionMod.SelectionInit
 import typings.vegaLite.srcSelectionMod.SelectionInitInterval
 import typings.vegaLite.unitMod.UnitModel
 import typings.vegaLite.vegaSchemaMod.VgData
+import typings.vegaLite.vegaSchemaMod.VgDomain
 import typings.vegaTypings.signalMod.Signal
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
@@ -22,36 +24,36 @@ object selectionAssembleMod {
   
   inline def assembleFacetSignals(model: FacetModel, signals: js.Array[Signal]): js.Array[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleFacetSignals")(model.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Signal]]
   
-  inline def assembleInit(init: js.Array[SelectionInit | js.Array[SelectionInit] | SelectionInitInterval]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def assembleInit(init: js.Array[SelectionInit | js.Array[SelectionInit] | SelectionInitInterval], isExpr: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def assembleInit(init: js.Array[SelectionInit | js.Array[SelectionInit] | SelectionInitInterval]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def assembleInit(init: js.Array[SelectionInit | js.Array[SelectionInit] | SelectionInitInterval], isExpr: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def assembleInit(
     init: js.Array[SelectionInit | js.Array[SelectionInit] | SelectionInitInterval],
     isExpr: Boolean,
     wrap: js.Function1[/* str */ String | Double, String | Double]
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def assembleInit(
     init: js.Array[SelectionInit | js.Array[SelectionInit] | SelectionInitInterval],
     isExpr: Unit,
     wrap: js.Function1[/* str */ String | Double, String | Double]
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def assembleInit(init: SelectionInit): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def assembleInit(init: SelectionInit, isExpr: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def assembleInit(init: SelectionInit): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def assembleInit(init: SelectionInit, isExpr: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def assembleInit(
     init: SelectionInit,
     isExpr: Boolean,
     wrap: js.Function1[/* str */ String | Double, String | Double]
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def assembleInit(init: SelectionInit, isExpr: Unit, wrap: js.Function1[/* str */ String | Double, String | Double]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def assembleInit(init: SelectionInit, isExpr: Unit, wrap: js.Function1[/* str */ String | Double, String | Double]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleInit")(init.asInstanceOf[js.Any], isExpr.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def assembleLayerSelectionMarks(model: LayerModel, marks: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleLayerSelectionMarks")(model.asInstanceOf[js.Any], marks.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def assembleLayerSelectionMarks(model: LayerModel, marks: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleLayerSelectionMarks")(model.asInstanceOf[js.Any], marks.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def assembleSelectionScaleDomain(model: Model, extent: SelectionExtent): SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleSelectionScaleDomain")(model.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[SignalRef]
+  inline def assembleSelectionScaleDomain(model: Model, extent: ParameterExtent, scaleCmpt: ScaleComponent, domain: VgDomain): SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleSelectionScaleDomain")(model.asInstanceOf[js.Any], extent.asInstanceOf[js.Any], scaleCmpt.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[SignalRef]
   
   inline def assembleTopLevelSignals(model: UnitModel, signals: js.Array[Signal]): js.Array[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleTopLevelSignals")(model.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Signal]]
   
   inline def assembleUnitSelectionData(model: UnitModel, data: js.Array[VgData]): js.Array[VgData] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleUnitSelectionData")(model.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[VgData]]
   
-  inline def assembleUnitSelectionMarks(model: UnitModel, marks: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleUnitSelectionMarks")(model.asInstanceOf[js.Any], marks.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def assembleUnitSelectionMarks(model: UnitModel, marks: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleUnitSelectionMarks")(model.asInstanceOf[js.Any], marks.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   inline def assembleUnitSelectionSignals(model: UnitModel, signals: js.Array[Signal]): js.Array[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleUnitSelectionSignals")(model.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Signal]]
 }

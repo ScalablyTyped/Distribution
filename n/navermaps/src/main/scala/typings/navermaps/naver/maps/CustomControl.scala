@@ -15,8 +15,8 @@ trait CustomControl
   
   def getMap(): Map | Null = js.native
   
-  def getOptions(): js.Any = js.native
-  def getOptions(key: String): js.Any = js.native
+  def getOptions(): Any = js.native
+  def getOptions(key: String): Any = js.native
   
   def html(): js.UndefOr[String] = js.native
   def html(html: String): js.UndefOr[String] = js.native

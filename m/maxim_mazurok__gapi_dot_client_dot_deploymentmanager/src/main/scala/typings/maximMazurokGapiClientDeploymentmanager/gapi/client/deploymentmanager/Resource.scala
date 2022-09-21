@@ -99,6 +99,6 @@ object Resource {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: Data*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Data*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

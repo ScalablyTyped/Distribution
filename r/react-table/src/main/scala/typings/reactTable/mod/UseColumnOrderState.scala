@@ -19,6 +19,6 @@ object UseColumnOrderState {
     
     inline def setColumnOrder(value: js.Array[IdType[D]]): Self = StObject.set(x, "columnOrder", value.asInstanceOf[js.Any])
     
-    inline def setColumnOrderVarargs(value: IdType[D]*): Self = StObject.set(x, "columnOrder", js.Array(value :_*))
+    inline def setColumnOrderVarargs(value: IdType[D]*): Self = StObject.set(x, "columnOrder", js.Array(value*))
   }
 }

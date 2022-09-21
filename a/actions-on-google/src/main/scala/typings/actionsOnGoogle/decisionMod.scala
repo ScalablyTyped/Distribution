@@ -18,7 +18,7 @@ object decisionMod {
     *     if using ordersv3
     * @public
     */
-  class TransactionDecision () extends SoloHelper[
+  open class TransactionDecision () extends SoloHelper[
           actionsDotintentDotTRANSACTION_DECISION, 
           GoogleActionsV2TransactionDecisionValueSpec | GoogleActionsTransactionsV3TransactionDecisionValueSpec
         ] {

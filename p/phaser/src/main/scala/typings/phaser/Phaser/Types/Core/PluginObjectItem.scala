@@ -9,7 +9,7 @@ trait PluginObjectItem extends StObject {
   /**
     * Arbitrary data passed to the plugin's init() method.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * A key to identify the plugin in the Plugin Manager.
@@ -24,7 +24,7 @@ trait PluginObjectItem extends StObject {
   /**
     * The plugin itself. Usually a class/constructor.
     */
-  var plugin: js.UndefOr[js.Any] = js.undefined
+  var plugin: js.UndefOr[Any] = js.undefined
   
   /**
     * For a scene plugin, add the plugin to the scene object under this key (`this.KEY`, from the scene).
@@ -50,7 +50,7 @@ object PluginObjectItem {
   
   extension [Self <: PluginObjectItem](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -62,7 +62,7 @@ object PluginObjectItem {
     
     inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
-    inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     

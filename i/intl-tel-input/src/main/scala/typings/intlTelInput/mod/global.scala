@@ -1,20 +1,5 @@
 package typings.intlTelInput.mod
 
-import typings.intlTelInput.intlTelInputStrings.destroy
-import typings.intlTelInput.intlTelInputStrings.getExtension
-import typings.intlTelInput.intlTelInputStrings.getNumber
-import typings.intlTelInput.intlTelInputStrings.getNumberType
-import typings.intlTelInput.intlTelInputStrings.getSelectedCountryData
-import typings.intlTelInput.intlTelInputStrings.getValidationError
-import typings.intlTelInput.intlTelInputStrings.isValidNumber
-import typings.intlTelInput.intlTelInputStrings.setCountry
-import typings.intlTelInput.intlTelInputStrings.setNumber
-import typings.intlTelInput.intlTelInputStrings.setPlaceholderNumberType
-import typings.intlTelInput.mod.intlTelInputUtils.CountryData
-import typings.intlTelInput.mod.intlTelInputUtils.numberFormat
-import typings.intlTelInput.mod.intlTelInputUtils.numberType
-import typings.intlTelInput.mod.intlTelInputUtils.placeholderNumberType
-import typings.intlTelInput.mod.intlTelInputUtils.validationError
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,6 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object global {
   
   object intlTelInputUtils {
+    
+    @JSGlobal("intlTelInputUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def formatNumber(number: String, countryCode: String, format: numberFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(number.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def getExampleNumber(countryCode: String, isNational: Boolean, numberType: numberType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getExampleNumber")(countryCode.asInstanceOf[js.Any], isNational.asInstanceOf[js.Any], numberType.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def getNumberType(number: String, countryCode: String): numberType = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumberType")(number.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any])).asInstanceOf[numberType]
+    
+    inline def getValidationError(number: String, countryCode: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(number.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def isValidNumber(number: String, countryCode: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(number.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @js.native
     sealed trait numberFormat extends StObject
@@ -181,110 +180,6 @@ object global {
     }
   }
   
-  trait JQuery extends StObject {
-    
-    /**
-      * initialise the plugin with optional options.
-      * @param options options that can be provided during initialization.
-      */
-    def intlTelInput(): js.Any
-    def intlTelInput(method: String, numberFormat: numberFormat): String
-    def intlTelInput(options: Options): js.Any
-    @JSName("intlTelInput")
-    var intlTelInput_Original: JQueryPlugin
-    /**
-      * Remove the plugin from the input, and unbind any event listeners.
-      */
-    @JSName("intlTelInput")
-    def intlTelInput_destroy(method: destroy): Unit
-    /**
-      * Get the extension from the current number.
-      * Requires the utilsScript option.
-      * e.g. if the input value was "(702) 555-5555 ext. 1234", this would
-      * return "1234".
-      */
-    @JSName("intlTelInput")
-    def intlTelInput_getExtension(method: getExtension): String
-    /**
-      * Get the current number in the given format (defaults to E.164 standard).
-      * The different formats are available in the enum
-      * intlTelInputUtils.numberFormat - taken from here.
-      * Requires the utilsScript option.
-      * Note that even if nationalMode is enabled, this can still return a full
-      * international number.
-      * @param numberFormat the format in which the number will be returned.
-      */
-    @JSName("intlTelInput")
-    def intlTelInput_getNumber(method: getNumber): String
-    @JSName("intlTelInput")
-    def intlTelInput_getNumber(method: getNumber, numberFormat: numberFormat): String
-    /**
-      * Get the type (fixed-line/mobile/toll-free etc) of the current number.
-      * Requires the utilsScript option.
-      * Returns an integer, which you can match against the various options in the
-      * global enum intlTelInputUtils.numberType.
-      * Note that in the US there's no way to differentiate between fixed-line and
-      * mobile numbers, so instead it will return FIXED_LINE_OR_MOBILE.
-      */
-    @JSName("intlTelInput")
-    def intlTelInput_getNumberType(method: getNumberType): numberType
-    /**
-      * Get the country data for the currently selected flag.
-      */
-    @JSName("intlTelInput")
-    def intlTelInput_getSelectedCountryData(method: getSelectedCountryData): CountryData
-    /**
-      * Get more information about a validation error.
-      * Requires the utilsScript option.
-      * Returns an integer, which you can match against the various options in the
-      * global enum ValidationError
-      */
-    @JSName("intlTelInput")
-    def intlTelInput_getValidationError(method: getValidationError): validationError
-    /**
-      * Validate the current number. Expects an internationally formatted number
-      * (unless nationalMode is enabled). If validation fails, you can use
-      * getValidationError to get more information.
-      * Requires the utilsScript option.
-      * Also see getNumberType if you want to make sure the user enters a certain
-      * type of number e.g. a mobile number.
-      */
-    @JSName("intlTelInput")
-    def intlTelInput_isValidNumber(method: isValidNumber): Boolean
-    /**
-      * Change the country selection (e.g. when the user is entering their address).
-      * @param countryCode country code of the country to be set.
-      */
-    @JSName("intlTelInput")
-    def intlTelInput_setCountry(method: setCountry, countryCode: String): Unit
-    /**
-      * Insert a number, and update the selected flag accordingly.
-      * Note that by default, if nationalMode is enabled it will try to use
-      * national formatting.
-      * @param aNumber number to be set.
-      */
-    @JSName("intlTelInput")
-    def intlTelInput_setNumber(method: setNumber, aNumber: String): Unit
-    /**
-      * Set the type of the placeholder number
-      * @param type Placeholder number type to be set
-      */
-    @JSName("intlTelInput")
-    def intlTelInput_setPlaceholderNumberType(method: setPlaceholderNumberType, `type`: placeholderNumberType): Unit
-  }
-  object JQuery {
-    
-    inline def apply(intlTelInput: JQueryPlugin): JQuery = {
-      val __obj = js.Dynamic.literal(intlTelInput = intlTelInput.asInstanceOf[js.Any])
-      __obj.asInstanceOf[JQuery]
-    }
-    
-    extension [Self <: JQuery](x: Self) {
-      
-      inline def setIntlTelInput(value: JQueryPlugin): Self = StObject.set(x, "intlTelInput", value.asInstanceOf[js.Any])
-    }
-  }
-  
   @js.native
   trait Window extends StObject {
     
@@ -292,9 +187,9 @@ object global {
       * initialise the plugin with optional options.
       * @param options options that can be provided during initialization.
       */
-    def intlTelInput(node: Element): Plugin = js.native
-    def intlTelInput(node: Element, options: Options): Plugin = js.native
+    def intlTelInput(node: Element): typings.std.Plugin = js.native
+    def intlTelInput(node: Element, options: Options): typings.std.Plugin = js.native
     
-    var intlTelInputGlobals: Static = js.native
+    var intlTelInputGlobals: IntlTelInputGlobals = js.native
   }
 }

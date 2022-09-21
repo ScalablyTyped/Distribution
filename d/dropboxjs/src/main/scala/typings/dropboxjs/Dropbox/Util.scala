@@ -1,6 +1,5 @@
 package typings.dropboxjs.Dropbox
 
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
@@ -11,18 +10,18 @@ object Util {
   
   trait EventSource extends StObject {
     
-    def addListener(listener: js.Function1[/* event */ js.Any, Unit]): EventSource
+    def addListener(listener: js.Function1[/* event */ Any, Unit]): EventSource
     
     def dispatch(event: js.Object): Boolean
     
-    def removeListener(listener: js.Function1[/* event */ js.Any, Unit]): EventSource
+    def removeListener(listener: js.Function1[/* event */ Any, Unit]): EventSource
   }
   object EventSource {
     
     inline def apply(
-      addListener: js.Function1[/* event */ js.Any, Unit] => EventSource,
+      addListener: js.Function1[/* event */ Any, Unit] => EventSource,
       dispatch: js.Object => Boolean,
-      removeListener: js.Function1[/* event */ js.Any, Unit] => EventSource
+      removeListener: js.Function1[/* event */ Any, Unit] => EventSource
     ): EventSource = {
       val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), dispatch = js.Any.fromFunction1(dispatch), removeListener = js.Any.fromFunction1(removeListener))
       __obj.asInstanceOf[EventSource]
@@ -30,11 +29,11 @@ object Util {
     
     extension [Self <: EventSource](x: Self) {
       
-      inline def setAddListener(value: js.Function1[/* event */ js.Any, Unit] => EventSource): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      inline def setAddListener(value: js.Function1[/* event */ Any, Unit] => EventSource): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
       inline def setDispatch(value: js.Object => Boolean): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      inline def setRemoveListener(value: js.Function1[/* event */ js.Any, Unit] => EventSource): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: js.Function1[/* event */ Any, Unit] => EventSource): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -79,7 +78,7 @@ object Util {
     ): Xhr = js.native
     
     def setBody(body: String): Xhr = js.native
-    def setBody(body: ArrayBuffer): Xhr = js.native
+    def setBody(body: js.typedarray.ArrayBuffer): Xhr = js.native
     def setBody(body: Blob): Xhr = js.native
     
     def setCallback(

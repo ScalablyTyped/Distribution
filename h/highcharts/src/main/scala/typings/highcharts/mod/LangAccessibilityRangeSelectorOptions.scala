@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LangAccessibilityRangeSelectorOptions extends StObject {
   
-  var buttonText: js.UndefOr[String] = js.undefined
+  var clickButtonAnnouncement: js.UndefOr[String] = js.undefined
+  
+  var dropdownLabel: js.UndefOr[String] = js.undefined
   
   var maxInputLabel: js.UndefOr[String] = js.undefined
   
@@ -21,9 +23,13 @@ object LangAccessibilityRangeSelectorOptions {
   
   extension [Self <: LangAccessibilityRangeSelectorOptions](x: Self) {
     
-    inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+    inline def setClickButtonAnnouncement(value: String): Self = StObject.set(x, "clickButtonAnnouncement", value.asInstanceOf[js.Any])
     
-    inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
+    inline def setClickButtonAnnouncementUndefined: Self = StObject.set(x, "clickButtonAnnouncement", js.undefined)
+    
+    inline def setDropdownLabel(value: String): Self = StObject.set(x, "dropdownLabel", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownLabelUndefined: Self = StObject.set(x, "dropdownLabel", js.undefined)
     
     inline def setMaxInputLabel(value: String): Self = StObject.set(x, "maxInputLabel", value.asInstanceOf[js.Any])
     

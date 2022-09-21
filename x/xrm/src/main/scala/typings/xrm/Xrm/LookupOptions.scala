@@ -25,9 +25,26 @@ trait LookupOptions extends StObject {
   var defaultViewId: js.UndefOr[String] = js.undefined
   
   /**
+    * Decides whether to display the most recently used(MRU) item.
+    * @remarks Available only for Unified Interface.
+    */
+  var disableMru: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The entity types to display.
     */
-  var entityTypes: js.UndefOr[js.Array[String]] = js.undefined
+  var entityTypes: js.Array[String]
+  
+  /**
+    * Used to filter the results.
+    */
+  var filters: js.UndefOr[js.Array[LookupFilterOptions]] = js.undefined
+  
+  /**
+    * Indicates the default search term for the lookup control.
+    * This is supported only on Unified Interface.
+    */
+  var searchText: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the lookup control should show the barcode scanner in mobile clients.
@@ -35,14 +52,14 @@ trait LookupOptions extends StObject {
   var showBarcodeScanner: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The views to be available in the view picker.Only system views are supported.
+    * The views to be available in the view picker. Only system views are supported.
     */
   var viewIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object LookupOptions {
   
-  inline def apply(): LookupOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(entityTypes: js.Array[String]): LookupOptions = {
+    val __obj = js.Dynamic.literal(entityTypes = entityTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupOptions]
   }
   
@@ -60,11 +77,23 @@ object LookupOptions {
     
     inline def setDefaultViewIdUndefined: Self = StObject.set(x, "defaultViewId", js.undefined)
     
+    inline def setDisableMru(value: Boolean): Self = StObject.set(x, "disableMru", value.asInstanceOf[js.Any])
+    
+    inline def setDisableMruUndefined: Self = StObject.set(x, "disableMru", js.undefined)
+    
     inline def setEntityTypes(value: js.Array[String]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
-    inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
+    inline def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value*))
     
-    inline def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setFilters(value: js.Array[LookupFilterOptions]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    
+    inline def setFiltersVarargs(value: LookupFilterOptions*): Self = StObject.set(x, "filters", js.Array(value*))
+    
+    inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+    
+    inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
     inline def setShowBarcodeScanner(value: Boolean): Self = StObject.set(x, "showBarcodeScanner", value.asInstanceOf[js.Any])
     
@@ -74,6 +103,6 @@ object LookupOptions {
     
     inline def setViewIdsUndefined: Self = StObject.set(x, "viewIds", js.undefined)
     
-    inline def setViewIdsVarargs(value: String*): Self = StObject.set(x, "viewIds", js.Array(value :_*))
+    inline def setViewIdsVarargs(value: String*): Self = StObject.set(x, "viewIds", js.Array(value*))
   }
 }

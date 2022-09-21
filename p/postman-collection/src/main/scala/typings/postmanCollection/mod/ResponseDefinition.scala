@@ -1,7 +1,6 @@
 package typings.postmanCollection.mod
 
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ trait ResponseDefinition
   
   var responseTime: Double
   
-  var stream: js.UndefOr[Buffer | Uint8Array] = js.undefined
+  var stream: js.UndefOr[Buffer | js.typedarray.Uint8Array] = js.undefined
 }
 object ResponseDefinition {
   
@@ -43,13 +42,13 @@ object ResponseDefinition {
     
     inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
     
-    inline def setCookieVarargs(value: CookieDefinition*): Self = StObject.set(x, "cookie", js.Array(value :_*))
+    inline def setCookieVarargs(value: CookieDefinition*): Self = StObject.set(x, "cookie", js.Array(value*))
     
     inline def setHeader(value: js.Array[HeaderDefinition]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setHeaderVarargs(value: HeaderDefinition*): Self = StObject.set(x, "header", js.Array(value :_*))
+    inline def setHeaderVarargs(value: HeaderDefinition*): Self = StObject.set(x, "header", js.Array(value*))
     
     inline def setOriginalRequest(value: RequestDefinition): Self = StObject.set(x, "originalRequest", value.asInstanceOf[js.Any])
     
@@ -57,7 +56,7 @@ object ResponseDefinition {
     
     inline def setResponseTime(value: Double): Self = StObject.set(x, "responseTime", value.asInstanceOf[js.Any])
     
-    inline def setStream(value: Buffer | Uint8Array): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }

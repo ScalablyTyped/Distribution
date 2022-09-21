@@ -18,6 +18,7 @@ trait AbstractScene extends StObject {
   
   /**
     * ActionManagers available on the scene.
+    * @deprecated
     */
   var actionManagers: js.Array[AbstractActionManager] = js.native
   
@@ -41,7 +42,7 @@ trait AbstractScene extends StObject {
   
   /**
     * All of the animation groups added to this scene
-    * @see https://doc.babylonjs.com/how_to/group
+    * @see https://doc.babylonjs.com/divingDeeper/animation/groupAnimations
     */
   var animationGroups: js.Array[AnimationGroup] = js.native
   
@@ -100,23 +101,31 @@ trait AbstractScene extends StObject {
   /**
     * Return a the first highlight layer of the scene with a given name.
     * @param name The name of the highlight layer to look for.
-    * @return The highlight layer if found otherwise null.
+    * @returns The highlight layer if found otherwise null.
     */
   def getGlowLayerByName(name: String): Nullable[GlowLayer] = js.native
   
   /**
     * Return a the first highlight layer of the scene with a given name.
     * @param name The name of the highlight layer to look for.
-    * @return The highlight layer if found otherwise null.
+    * @returns The highlight layer if found otherwise null.
     */
   def getHighlightLayerByName(name: String): Nullable[HighlightLayer] = js.native
   
   /**
-    * Gets a lens flare system using its id
-    * @param id defines the id to look for
+    * Gets a lens flare system using its Id
+    * @param id defines the Id to look for
     * @returns the lens flare system or null if not found
+    * @deprecated Please use getLensFlareSystemById instead
     */
   def getLensFlareSystemByID(id: String): Nullable[LensFlareSystem] = js.native
+  
+  /**
+    * Gets a lens flare system using its Id
+    * @param id defines the Id to look for
+    * @returns the lens flare system or null if not found
+    */
+  def getLensFlareSystemById(id: String): Nullable[LensFlareSystem] = js.native
   
   /**
     * Gets a lens flare system using its name
@@ -249,10 +258,10 @@ trait AbstractScene extends StObject {
   var textures: js.Array[BaseTexture] = js.native
   
   /**
-    * All of the tranform nodes added to this scene
+    * All of the transform nodes added to this scene
     * In the context of a Scene, it is not supposed to be modified manually.
     * Any addition or removal should be done using the addTransformNode and removeTransformNode Scene methods.
-    * Note also that the order of the TransformNode wihin the array is not significant and might change.
+    * Note also that the order of the TransformNode within the array is not significant and might change.
     * @see https://doc.babylonjs.com/how_to/transformnode
     */
   var transformNodes: js.Array[TransformNode] = js.native

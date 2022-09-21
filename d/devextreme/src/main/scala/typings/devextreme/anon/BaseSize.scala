@@ -1,18 +1,29 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BaseSize extends StObject {
   
-  var baseSize: js.UndefOr[Double | auto] = js.undefined
+  /**
+    * The row&apos;s base height. Calculated automatically when the singleColumnScreen property arranges all elements in a single column.
+    */
+  var baseSize: js.UndefOr[Double | typings.devextreme.mod.DevExpress.common.Mode] = js.undefined
   
+  /**
+    * The row height ratio.
+    */
   var ratio: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Decides on which screens the current row is rendered.
+    */
   var screen: js.UndefOr[String] = js.undefined
   
+  /**
+    * A factor that defines how much a row height shrinks relative to the rest of the rows in the container.
+    */
   var shrink: js.UndefOr[Double] = js.undefined
 }
 object BaseSize {
@@ -24,7 +35,7 @@ object BaseSize {
   
   extension [Self <: BaseSize](x: Self) {
     
-    inline def setBaseSize(value: Double | auto): Self = StObject.set(x, "baseSize", value.asInstanceOf[js.Any])
+    inline def setBaseSize(value: Double | typings.devextreme.mod.DevExpress.common.Mode): Self = StObject.set(x, "baseSize", value.asInstanceOf[js.Any])
     
     inline def setBaseSizeUndefined: Self = StObject.set(x, "baseSize", js.undefined)
     

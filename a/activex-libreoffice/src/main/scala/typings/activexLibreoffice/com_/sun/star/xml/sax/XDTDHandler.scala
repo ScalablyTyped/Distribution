@@ -30,7 +30,7 @@ object XDTDHandler {
   inline def apply(
     acquire: () => Unit,
     notationDecl: (String, String, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     unparsedEntityDecl: (String, String, String, String) => Unit
   ): XDTDHandler = {

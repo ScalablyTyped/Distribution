@@ -14,7 +14,7 @@ trait Color extends StObject {
   
   def darken(percent: Double): String = js.native
   
-  def fade(percent: Double): js.Any = js.native
+  def fade(percent: Double): Any = js.native
   
   def hexStr(): String = js.native
   

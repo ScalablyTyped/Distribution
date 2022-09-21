@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@antv/data-set" : "0.11.7"
+      "@antv/data-set" : "0.11.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@antv/data-set" : "0.11.7"
+      "@antv/data-set" : "0.11.8"
     }
   ],
   "compile-devDependencies" : [

@@ -10,10 +10,10 @@ Livereload for webpack
 | ------------------ | :-------------: |
 | Full name          | webpack-livereload-plugin |
 | Keywords           | webpack, livereload |
-| # releases         | 1 |
-| # dependents       | 46 |
-| # downloads        | 2470124 |
-| # stars            | 14 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 252658.0 |
+| # stars            | 198.0 |
 
 ## Links
 - [Homepage](https://github.com/statianzo/webpack-livereload-plugin#readme)

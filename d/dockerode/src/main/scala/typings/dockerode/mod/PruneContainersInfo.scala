@@ -21,7 +21,7 @@ object PruneContainersInfo {
     
     inline def setContainersDeleted(value: js.Array[String]): Self = StObject.set(x, "ContainersDeleted", value.asInstanceOf[js.Any])
     
-    inline def setContainersDeletedVarargs(value: String*): Self = StObject.set(x, "ContainersDeleted", js.Array(value :_*))
+    inline def setContainersDeletedVarargs(value: String*): Self = StObject.set(x, "ContainersDeleted", js.Array(value*))
     
     inline def setSpaceReclaimed(value: Double): Self = StObject.set(x, "SpaceReclaimed", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,7 @@ trait TabStripOptions extends StObject {
   
   var contentLoad: js.UndefOr[js.Function1[/* e */ TabStripContentLoadEvent, Unit]] = js.undefined
   
-  var contentUrls: js.UndefOr[js.Any] = js.undefined
+  var contentUrls: js.UndefOr[Any] = js.undefined
   
   var dataContentField: js.UndefOr[String] = js.undefined
   
@@ -23,7 +23,7 @@ trait TabStripOptions extends StObject {
   
   var dataImageUrlField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var dataSpriteCssClass: js.UndefOr[String] = js.undefined
   
@@ -72,7 +72,7 @@ object TabStripOptions {
     
     inline def setContentLoadUndefined: Self = StObject.set(x, "contentLoad", js.undefined)
     
-    inline def setContentUrls(value: js.Any): Self = StObject.set(x, "contentUrls", value.asInstanceOf[js.Any])
+    inline def setContentUrls(value: Any): Self = StObject.set(x, "contentUrls", value.asInstanceOf[js.Any])
     
     inline def setContentUrlsUndefined: Self = StObject.set(x, "contentUrls", js.undefined)
     
@@ -88,7 +88,7 @@ object TabStripOptions {
     
     inline def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     

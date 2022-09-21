@@ -1,5 +1,6 @@
 package typings.serverless.awsProviderMod
 
+import typings.serverless.serverlessBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ trait Logs extends StObject {
   
   var httpApi: js.UndefOr[Boolean | HttpApiLogs] = js.undefined
   
-  var restApi: js.UndefOr[RestApiLogs] = js.undefined
+  var restApi: js.UndefOr[`true` | RestApiLogs] = js.undefined
   
   var websocket: js.UndefOr[WebsocketLogs] = js.undefined
 }
@@ -31,7 +32,7 @@ object Logs {
     
     inline def setHttpApiUndefined: Self = StObject.set(x, "httpApi", js.undefined)
     
-    inline def setRestApi(value: RestApiLogs): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+    inline def setRestApi(value: `true` | RestApiLogs): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
     
     inline def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
     

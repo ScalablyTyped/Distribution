@@ -1,6 +1,5 @@
 package typings.chrome.chrome
 
-import typings.std.ArrayBuffer
 import typings.std.KeyAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +22,7 @@ object platformKeys {
       * Optional.
       * If given, the selectClientCertificates operates on this list. Otherwise, obtains the list of all certificates from the platform's certificate stores that are available to this extensions. Entries that the extension doesn't have permission for or which doesn't match the request, are removed.
       */
-    var clientCerts: js.UndefOr[js.Array[ArrayBuffer]] = js.undefined
+    var clientCerts: js.UndefOr[js.Array[js.typedarray.ArrayBuffer]] = js.undefined
     
     /** If true, the filtered list is presented to the user to manually select a certificate and thereby granting the extension access to the certificate(s) and key(s). Only the selected certificate(s) will be returned. If is false, the list is reduced to all certificates that the extension has been granted access to (automatically or manually). */
     var interactive: Boolean
@@ -40,11 +39,11 @@ object platformKeys {
     
     extension [Self <: ClientCertificateSelectDetails](x: Self) {
       
-      inline def setClientCerts(value: js.Array[ArrayBuffer]): Self = StObject.set(x, "clientCerts", value.asInstanceOf[js.Any])
+      inline def setClientCerts(value: js.Array[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "clientCerts", value.asInstanceOf[js.Any])
       
       inline def setClientCertsUndefined: Self = StObject.set(x, "clientCerts", js.undefined)
       
-      inline def setClientCertsVarargs(value: ArrayBuffer*): Self = StObject.set(x, "clientCerts", js.Array(value :_*))
+      inline def setClientCertsVarargs(value: js.typedarray.ArrayBuffer*): Self = StObject.set(x, "clientCerts", js.Array(value*))
       
       inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
@@ -55,48 +54,48 @@ object platformKeys {
   trait ClientCertificateSelectRequestDetails extends StObject {
     
     /** List of distinguished names of certificate authorities allowed by the server. Each entry must be a DER-encoded X.509 DistinguishedName. */
-    var certificateAuthorities: js.Array[ArrayBuffer]
+    var certificateAuthorities: js.Array[js.typedarray.ArrayBuffer]
     
     /** This field is a list of the types of certificates requested, sorted in order of the server's preference. Only certificates of a type contained in this list will be retrieved. If certificateTypes is the empty list, however, certificates of any type will be returned. */
     var certificateTypes: js.Array[String]
   }
   object ClientCertificateSelectRequestDetails {
     
-    inline def apply(certificateAuthorities: js.Array[ArrayBuffer], certificateTypes: js.Array[String]): ClientCertificateSelectRequestDetails = {
+    inline def apply(certificateAuthorities: js.Array[js.typedarray.ArrayBuffer], certificateTypes: js.Array[String]): ClientCertificateSelectRequestDetails = {
       val __obj = js.Dynamic.literal(certificateAuthorities = certificateAuthorities.asInstanceOf[js.Any], certificateTypes = certificateTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientCertificateSelectRequestDetails]
     }
     
     extension [Self <: ClientCertificateSelectRequestDetails](x: Self) {
       
-      inline def setCertificateAuthorities(value: js.Array[ArrayBuffer]): Self = StObject.set(x, "certificateAuthorities", value.asInstanceOf[js.Any])
+      inline def setCertificateAuthorities(value: js.Array[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "certificateAuthorities", value.asInstanceOf[js.Any])
       
-      inline def setCertificateAuthoritiesVarargs(value: ArrayBuffer*): Self = StObject.set(x, "certificateAuthorities", js.Array(value :_*))
+      inline def setCertificateAuthoritiesVarargs(value: js.typedarray.ArrayBuffer*): Self = StObject.set(x, "certificateAuthorities", js.Array(value*))
       
       inline def setCertificateTypes(value: js.Array[String]): Self = StObject.set(x, "certificateTypes", value.asInstanceOf[js.Any])
       
-      inline def setCertificateTypesVarargs(value: String*): Self = StObject.set(x, "certificateTypes", js.Array(value :_*))
+      inline def setCertificateTypesVarargs(value: String*): Self = StObject.set(x, "certificateTypes", js.Array(value*))
     }
   }
   
   trait Match extends StObject {
     
     /** The DER encoding of a X.509 certificate. */
-    var certificate: ArrayBuffer
+    var certificate: js.typedarray.ArrayBuffer
     
     /** The  KeyAlgorithm of the certified key. This contains algorithm parameters that are inherent to the key of the certificate (e.g. the key length). Other parameters like the hash function used by the sign function are not included. */
     var keyAlgorithm: KeyAlgorithm
   }
   object Match {
     
-    inline def apply(certificate: ArrayBuffer, keyAlgorithm: KeyAlgorithm): Match = {
+    inline def apply(certificate: js.typedarray.ArrayBuffer, keyAlgorithm: KeyAlgorithm): Match = {
       val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], keyAlgorithm = keyAlgorithm.asInstanceOf[js.Any])
       __obj.asInstanceOf[Match]
     }
     
     extension [Self <: Match](x: Self) {
       
-      inline def setCertificate(value: ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
       inline def setKeyAlgorithm(value: KeyAlgorithm): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
     }
@@ -108,11 +107,11 @@ object platformKeys {
     var hostname: String
     
     /** Each chain entry must be the DER encoding of a X.509 certificate, the first entry must be the server certificate and each entry must certify the entry preceding it. */
-    var serverCertificateChain: js.Array[ArrayBuffer]
+    var serverCertificateChain: js.Array[js.typedarray.ArrayBuffer]
   }
   object ServerCertificateVerificationDetails {
     
-    inline def apply(hostname: String, serverCertificateChain: js.Array[ArrayBuffer]): ServerCertificateVerificationDetails = {
+    inline def apply(hostname: String, serverCertificateChain: js.Array[js.typedarray.ArrayBuffer]): ServerCertificateVerificationDetails = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], serverCertificateChain = serverCertificateChain.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerCertificateVerificationDetails]
     }
@@ -121,9 +120,9 @@ object platformKeys {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      inline def setServerCertificateChain(value: js.Array[ArrayBuffer]): Self = StObject.set(x, "serverCertificateChain", value.asInstanceOf[js.Any])
+      inline def setServerCertificateChain(value: js.Array[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "serverCertificateChain", value.asInstanceOf[js.Any])
       
-      inline def setServerCertificateChainVarargs(value: ArrayBuffer*): Self = StObject.set(x, "serverCertificateChain", js.Array(value :_*))
+      inline def setServerCertificateChainVarargs(value: js.typedarray.ArrayBuffer*): Self = StObject.set(x, "serverCertificateChain", js.Array(value*))
     }
   }
   
@@ -149,7 +148,7 @@ object platformKeys {
       
       inline def setDebug_errors(value: js.Array[String]): Self = StObject.set(x, "debug_errors", value.asInstanceOf[js.Any])
       
-      inline def setDebug_errorsVarargs(value: String*): Self = StObject.set(x, "debug_errors", js.Array(value :_*))
+      inline def setDebug_errorsVarargs(value: String*): Self = StObject.set(x, "debug_errors", js.Array(value*))
       
       inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
     }

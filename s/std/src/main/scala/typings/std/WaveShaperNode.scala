@@ -10,7 +10,9 @@ trait WaveShaperNode
   extends StObject
      with AudioNode {
   
-  var curve: Float32Array | Null = js.native
+  /* standard dom */
+  var curve: js.typedarray.Float32Array | Null = js.native
   
+  /* standard dom */
   var oversample: OverSampleType = js.native
 }

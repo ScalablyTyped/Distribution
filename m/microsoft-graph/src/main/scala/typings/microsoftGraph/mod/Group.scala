@@ -16,25 +16,26 @@ trait Group
   
   /**
     * Indicates if people external to the organization can send messages to the group. Default value is false. Returned only
-    * on $select.
+    * on $select. Supported only on the Get group API (GET /groups/{ID}).
     */
   var allowExternalSenders: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Represents the app roles a group has been granted for an application. Supports $expand.
   var appRoleAssignments: js.UndefOr[NullableOption[js.Array[AppRoleAssignment]]] = js.undefined
   
   /**
-    * The list of sensitivity label pairs (label ID, label name) associated with an Microsoft 365 group. Returned only on
+    * The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. Returned only on
     * $select. Read-only.
     */
   var assignedLabels: js.UndefOr[NullableOption[js.Array[AssignedLabel]]] = js.undefined
   
-  // The licenses that are assigned to the group. Returned only on $select. Read-only.
+  // The licenses that are assigned to the group. Returned only on $select. Supports $filter (eq).Read-only.
   var assignedLicenses: js.UndefOr[NullableOption[js.Array[AssignedLicense]]] = js.undefined
   
   /**
-    * Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this
+    * Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set ,this
     * property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default
-    * value is false. Returned only on $select.
+    * value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
     */
   var autoSubscribeNewMembers: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
@@ -47,6 +48,7 @@ trait Group
   /**
     * Describes a classification for the group (such as low, medium or high business impact). Valid values for this property
     * are defined by creating a ClassificationList setting value, based on the template definition.Returned by default.
+    * Supports $filter (eq, ne, not, ge, le, startsWith).
     */
   var classification: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -56,19 +58,24 @@ trait Group
   /**
     * Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is
     * created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For
-    * example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default. Read-only.
+    * example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge,
+    * le, in). Read-only.
     */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.
   var createdOnBehalfOf: js.UndefOr[NullableOption[DirectoryObject]] = js.undefined
   
-  // An optional description for the group. Returned by default.
+  /**
+    * An optional description for the group. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith) and
+    * $search.
+    */
   var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The display name for the group. This property is required when a group is created and cannot be cleared during updates.
-    * Returned by default. Supports $filter and $orderby.
+    * Maximum length is 256 characters. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on
+    * null values), $search, and $orderBy.
     */
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -84,8 +91,8 @@ trait Group
   /**
     * Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the
     * group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC
-    * time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default.
-    * Read-only.
+    * time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne,
+    * not, ge, le, in). Read-only.
     */
   var expirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -99,35 +106,50 @@ trait Group
     * Specifies the group type and its membership. If the collection contains Unified, the group is a Microsoft 365 group;
     * otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection
     * includes DynamicMembership, the group has dynamic membership; otherwise, membership is static. Returned by default.
-    * Supports $filter.
+    * Supports $filter (eq, not).
     */
   var groupTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether there are members in this group that have license errors from its group-based license assignment.
     * This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have
-    * members with license errors (that is, filter for this property being true). See an example.
+    * members with license errors (that is, filter for this property being true). See an example. Supports $filter (eq).
     */
   var hasMembersWithLicenseErrors: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * True if the group is not displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting
     * message recipients, and the Browse Groups dialog for searching groups; otherwise, false. Default value is false.
-    * Returned only on $select.
+    * Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
     */
   var hideFromAddressLists: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * True if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise,
-    * false. Default value is false. Returned only on $select.
+    * false. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
     */
   var hideFromOutlookClients: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  /**
+    * When a group is associated with a team this property determines whether the team is in read-only mode.To read this
+    * property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and
+    * unarchiveTeam APIs.
+    */
   var isArchived: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
+    * Indicates whether this group can be assigned to an Azure Active Directory role or not. Optional. This property can only
+    * be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true
+    * and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global
+    * administrator and Privileged role administrator roles can set this property. The caller must be assigned the
+    * RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more,
+    * see Using a group to manage Azure AD role assignmentsReturned by default. Supports $filter (eq, ne, not).
+    */
+  var isAssignableToRole: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  /**
     * Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only
-    * on $select.
+    * on $select. Supported only on the Get group API (GET /groups/{ID}).
     */
   var isSubscribedByMail: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
@@ -139,22 +161,31 @@ trait Group
   
   /**
     * The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only.
-    * Supports $filter.
+    * Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     */
   var mail: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Specifies whether the group is mail-enabled. Returned by default.
+  // Specifies whether the group is mail-enabled. Required. Returned by default. Supports $filter (eq, ne, not).
   var mailEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  /**
+    * The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters.
+    * This property can contain only characters in the ASCII character set 0 - 127 except the following: @ () / [] ' ; : .
+    * &amp;lt;&amp;gt; , SPACE. Required. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq
+    * on null values).
+    */
   var mailNickname: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
+  /**
+    * Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable. Supports
+    * $expand.
+    */
   var memberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
-    * Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for
-    * Microsoft 365 groups, security groups and mail-enabled security groups), DELETE (supported for Microsoft 365 groups and
-    * security groups) Nullable.
+    * The members of this group, who can be users, devices, other groups, or service principals. Supports the List members,
+    * Add member, and Remove member operations. Nullable. Supports $expand including nested $select. For example,
+    * /groups?$filter=startsWith(displayName,'Role')&amp;$select=id,displayName&amp;$expand=members($select=id,userPrincipalName,displayName).
     */
   var members: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
@@ -164,54 +195,64 @@ trait Group
   /**
     * The rule that determines members for this group if the group is a dynamic group (groupTypes contains
     * DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned
-    * by default.
+    * by default. Supports $filter (eq, ne, not, ge, le, startsWith).
     */
   var membershipRule: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Indicates whether the dynamic membership processing is on or paused. Possible values are 'On' or 'Paused'. Returned by
-    * default.
+    * Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by
+    * default. Supports $filter (eq, ne, not, in).
     */
   var membershipRuleProcessingState: js.UndefOr[NullableOption[String]] = js.undefined
   
   var onPremisesDomainName: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date
+    * and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is
+    * 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in).
+    */
   var onPremisesLastSyncDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   var onPremisesNetBiosName: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * Errors when using Microsoft synchronization product during provisioning. Returned by default. Supports $filter (eq,
+    * not).
+    */
   var onPremisesProvisioningErrors: js.UndefOr[NullableOption[js.Array[OnPremisesProvisioningError]]] = js.undefined
   
   /**
     * Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated
     * for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned
-    * by default. Read-only.
+    * by default. Supports $filter (eq, ne, not, ge, le, in, startsWith). Read-only.
     */
   var onPremisesSamAccountName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud.
-    * Returned by default. Read-only.
+    * Returned by default. Supports $filter (eq including on null values). Read-only.
     */
   var onPremisesSecurityIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * true if this group is synced from an on-premises directory; false if this group was originally synced from an
     * on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory
-    * (default). Returned by default. Read-only. Supports $filter.
+    * (default). Returned by default. Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
     */
   var onPremisesSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // Read-only.
   var onenote: js.UndefOr[NullableOption[Onenote]] = js.undefined
   
   /**
-    * The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 100
-    * owners. HTTP Methods: GET (supported for all groups), POST (supported for Microsoft 365 groups, security groups and
-    * mail-enabled security groups), DELETE (supported for Microsoft 365 groups and security groups). Nullable.
+    * The owners of the group. Limited to 100 owners. Nullable. If this property is not specified when creating a Microsoft
+    * 365 group, the calling user is automatically assigned as the group owner. Supports $expand including nested $select.
+    * For example,
+    * /groups?$filter=startsWith(displayName,'Role')&amp;$select=id,displayName&amp;$expand=owners($select=id,userPrincipalName,displayName).
     */
   var owners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
+  // The permission that has been granted for a group to a specific application. Supports $expand.
   var permissionGrants: js.UndefOr[NullableOption[js.Array[ResourceSpecificPermissionGrant]]] = js.undefined
   
   // The group's profile photo
@@ -223,19 +264,25 @@ trait Group
   // Entry-point to Planner resource that might exist for a Unified Group.
   var planner: js.UndefOr[NullableOption[PlannerGroup]] = js.undefined
   
-  // The preferred data location for the group. For more information, see OneDrive Online Multi-Geo. Returned by default.
+  /**
+    * The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred
+    * data location. To set this property, the calling user must be assigned one of the following Azure AD roles: Global
+    * Administrator User Account Administrator Directory Writer Exchange Administrator SharePoint Administrator For more
+    * information about this property, see OneDrive Online Multi-Geo. Nullable. Returned by default.
+    */
   var preferredDataLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * The preferred language for an Microsoft 365 group. Should follow ISO 639-1 Code; for example 'en-US'. Returned by
-    * default.
+    * The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example en-US. Returned by default.
+    * Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     */
   var preferredLanguage: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp:
     * bob@sales.contoso.com']. The any operator is required to filter expressions on multi-valued properties. Returned by
-    * default. Read-only. Not nullable. Supports $filter.
+    * default. Read-only. Not nullable. Supports $filter (eq, not, ge, le, startsWith, endsWith, and counting empty
+    * collections).
     */
   var proxyAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -245,27 +292,28 @@ trait Group
   /**
     * Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew
     * service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC
-    * time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default.
-    * Read-only.
+    * time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne,
+    * not, ge, le, in). Read-only.
     */
   var renewedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Specifies whether the group is a security group. Returned by default. Supports $filter.
+  // Specifies whether the group is a security group. Required. Returned by default. Supports $filter (eq, ne, not, in).
   var securityEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Security identifier of the group, used in Windows scenarios. Returned by default.
   var securityIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Read-only. Nullable.
+  // Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.
   var settings: js.UndefOr[NullableOption[js.Array[GroupSetting]]] = js.undefined
   
   // The list of SharePoint sites in this group. Access the default site with /sites/root.
   var sites: js.UndefOr[NullableOption[js.Array[Site]]] = js.undefined
   
+  // The team associated with this group.
   var team: js.UndefOr[NullableOption[Team]] = js.undefined
   
   /**
-    * Specifies an Microsoft 365 group's color theme. Possible values are Teal, Purple, Green, Blue, Pink, Orange or Red.
+    * Specifies a Microsoft 365 group's color theme. Possible values are Teal, Purple, Green, Blue, Pink, Orange or Red.
     * Returned by default.
     */
   var theme: js.UndefOr[NullableOption[String]] = js.undefined
@@ -273,21 +321,25 @@ trait Group
   // The group's conversation threads. Nullable.
   var threads: js.UndefOr[NullableOption[js.Array[ConversationThread]]] = js.undefined
   
+  // The groups that a group is a member of, either directly and through nested membership. Nullable.
   var transitiveMemberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
+  // The direct and transitive members of a group. Nullable.
   var transitiveMembers: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * Count of conversations that have received new posts since the signed-in user last visited the group. Returned only on
-    * $select.
+    * $select. Supported only on the Get group API (GET /groups/{ID}).
     */
   var unseenCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
-    * Specifies the visibility of a Microsoft 365 group. Possible values are: Private, Public, or Hiddenmembership; blank
-    * values are treated as public. See group visibility options to learn more.Visibility can be set only when a group is
-    * created; it is not editable.Visibility is supported only for unified groups; it is not supported for security groups.
-    * Returned by default.
+    * Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or
+    * HiddenMembership. HiddenMembership can be set only for Microsoft 365 groups, when the groups are created. It can't be
+    * updated later. Other values of visibility can be updated after group creation. If visibility value is not specified
+    * during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is
+    * Public. Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default.
+    * Nullable.
     */
   var visibility: js.UndefOr[NullableOption[String]] = js.undefined
 }
@@ -306,7 +358,7 @@ object Group {
     
     inline def setAcceptedSendersUndefined: Self = StObject.set(x, "acceptedSenders", js.undefined)
     
-    inline def setAcceptedSendersVarargs(value: DirectoryObject*): Self = StObject.set(x, "acceptedSenders", js.Array(value :_*))
+    inline def setAcceptedSendersVarargs(value: DirectoryObject*): Self = StObject.set(x, "acceptedSenders", js.Array(value*))
     
     inline def setAllowExternalSenders(value: NullableOption[Boolean]): Self = StObject.set(x, "allowExternalSenders", value.asInstanceOf[js.Any])
     
@@ -320,7 +372,7 @@ object Group {
     
     inline def setAppRoleAssignmentsUndefined: Self = StObject.set(x, "appRoleAssignments", js.undefined)
     
-    inline def setAppRoleAssignmentsVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignments", js.Array(value :_*))
+    inline def setAppRoleAssignmentsVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignments", js.Array(value*))
     
     inline def setAssignedLabels(value: NullableOption[js.Array[AssignedLabel]]): Self = StObject.set(x, "assignedLabels", value.asInstanceOf[js.Any])
     
@@ -328,7 +380,7 @@ object Group {
     
     inline def setAssignedLabelsUndefined: Self = StObject.set(x, "assignedLabels", js.undefined)
     
-    inline def setAssignedLabelsVarargs(value: AssignedLabel*): Self = StObject.set(x, "assignedLabels", js.Array(value :_*))
+    inline def setAssignedLabelsVarargs(value: AssignedLabel*): Self = StObject.set(x, "assignedLabels", js.Array(value*))
     
     inline def setAssignedLicenses(value: NullableOption[js.Array[AssignedLicense]]): Self = StObject.set(x, "assignedLicenses", value.asInstanceOf[js.Any])
     
@@ -336,7 +388,7 @@ object Group {
     
     inline def setAssignedLicensesUndefined: Self = StObject.set(x, "assignedLicenses", js.undefined)
     
-    inline def setAssignedLicensesVarargs(value: AssignedLicense*): Self = StObject.set(x, "assignedLicenses", js.Array(value :_*))
+    inline def setAssignedLicensesVarargs(value: AssignedLicense*): Self = StObject.set(x, "assignedLicenses", js.Array(value*))
     
     inline def setAutoSubscribeNewMembers(value: NullableOption[Boolean]): Self = StObject.set(x, "autoSubscribeNewMembers", value.asInstanceOf[js.Any])
     
@@ -356,7 +408,7 @@ object Group {
     
     inline def setCalendarViewUndefined: Self = StObject.set(x, "calendarView", js.undefined)
     
-    inline def setCalendarViewVarargs(value: Event*): Self = StObject.set(x, "calendarView", js.Array(value :_*))
+    inline def setCalendarViewVarargs(value: Event*): Self = StObject.set(x, "calendarView", js.Array(value*))
     
     inline def setClassification(value: NullableOption[String]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
@@ -370,7 +422,7 @@ object Group {
     
     inline def setConversationsUndefined: Self = StObject.set(x, "conversations", js.undefined)
     
-    inline def setConversationsVarargs(value: Conversation*): Self = StObject.set(x, "conversations", js.Array(value :_*))
+    inline def setConversationsVarargs(value: Conversation*): Self = StObject.set(x, "conversations", js.Array(value*))
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
@@ -408,7 +460,7 @@ object Group {
     
     inline def setDrivesUndefined: Self = StObject.set(x, "drives", js.undefined)
     
-    inline def setDrivesVarargs(value: Drive*): Self = StObject.set(x, "drives", js.Array(value :_*))
+    inline def setDrivesVarargs(value: Drive*): Self = StObject.set(x, "drives", js.Array(value*))
     
     inline def setEvents(value: NullableOption[js.Array[Event]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
@@ -416,7 +468,7 @@ object Group {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
@@ -430,7 +482,7 @@ object Group {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setGroupLifecyclePolicies(value: NullableOption[js.Array[GroupLifecyclePolicy]]): Self = StObject.set(x, "groupLifecyclePolicies", value.asInstanceOf[js.Any])
     
@@ -438,13 +490,13 @@ object Group {
     
     inline def setGroupLifecyclePoliciesUndefined: Self = StObject.set(x, "groupLifecyclePolicies", js.undefined)
     
-    inline def setGroupLifecyclePoliciesVarargs(value: GroupLifecyclePolicy*): Self = StObject.set(x, "groupLifecyclePolicies", js.Array(value :_*))
+    inline def setGroupLifecyclePoliciesVarargs(value: GroupLifecyclePolicy*): Self = StObject.set(x, "groupLifecyclePolicies", js.Array(value*))
     
     inline def setGroupTypes(value: js.Array[String]): Self = StObject.set(x, "groupTypes", value.asInstanceOf[js.Any])
     
     inline def setGroupTypesUndefined: Self = StObject.set(x, "groupTypes", js.undefined)
     
-    inline def setGroupTypesVarargs(value: String*): Self = StObject.set(x, "groupTypes", js.Array(value :_*))
+    inline def setGroupTypesVarargs(value: String*): Self = StObject.set(x, "groupTypes", js.Array(value*))
     
     inline def setHasMembersWithLicenseErrors(value: NullableOption[Boolean]): Self = StObject.set(x, "hasMembersWithLicenseErrors", value.asInstanceOf[js.Any])
     
@@ -469,6 +521,12 @@ object Group {
     inline def setIsArchivedNull: Self = StObject.set(x, "isArchived", null)
     
     inline def setIsArchivedUndefined: Self = StObject.set(x, "isArchived", js.undefined)
+    
+    inline def setIsAssignableToRole(value: NullableOption[Boolean]): Self = StObject.set(x, "isAssignableToRole", value.asInstanceOf[js.Any])
+    
+    inline def setIsAssignableToRoleNull: Self = StObject.set(x, "isAssignableToRole", null)
+    
+    inline def setIsAssignableToRoleUndefined: Self = StObject.set(x, "isAssignableToRole", js.undefined)
     
     inline def setIsSubscribedByMail(value: NullableOption[Boolean]): Self = StObject.set(x, "isSubscribedByMail", value.asInstanceOf[js.Any])
     
@@ -506,7 +564,7 @@ object Group {
     
     inline def setMemberOfUndefined: Self = StObject.set(x, "memberOf", js.undefined)
     
-    inline def setMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "memberOf", js.Array(value :_*))
+    inline def setMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "memberOf", js.Array(value*))
     
     inline def setMembers(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
@@ -514,7 +572,7 @@ object Group {
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setMembersWithLicenseErrors(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "membersWithLicenseErrors", value.asInstanceOf[js.Any])
     
@@ -522,7 +580,7 @@ object Group {
     
     inline def setMembersWithLicenseErrorsUndefined: Self = StObject.set(x, "membersWithLicenseErrors", js.undefined)
     
-    inline def setMembersWithLicenseErrorsVarargs(value: DirectoryObject*): Self = StObject.set(x, "membersWithLicenseErrors", js.Array(value :_*))
+    inline def setMembersWithLicenseErrorsVarargs(value: DirectoryObject*): Self = StObject.set(x, "membersWithLicenseErrors", js.Array(value*))
     
     inline def setMembershipRule(value: NullableOption[String]): Self = StObject.set(x, "membershipRule", value.asInstanceOf[js.Any])
     
@@ -560,7 +618,7 @@ object Group {
     
     inline def setOnPremisesProvisioningErrorsUndefined: Self = StObject.set(x, "onPremisesProvisioningErrors", js.undefined)
     
-    inline def setOnPremisesProvisioningErrorsVarargs(value: OnPremisesProvisioningError*): Self = StObject.set(x, "onPremisesProvisioningErrors", js.Array(value :_*))
+    inline def setOnPremisesProvisioningErrorsVarargs(value: OnPremisesProvisioningError*): Self = StObject.set(x, "onPremisesProvisioningErrors", js.Array(value*))
     
     inline def setOnPremisesSamAccountName(value: NullableOption[String]): Self = StObject.set(x, "onPremisesSamAccountName", value.asInstanceOf[js.Any])
     
@@ -592,7 +650,7 @@ object Group {
     
     inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
-    inline def setOwnersVarargs(value: DirectoryObject*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: DirectoryObject*): Self = StObject.set(x, "owners", js.Array(value*))
     
     inline def setPermissionGrants(value: NullableOption[js.Array[ResourceSpecificPermissionGrant]]): Self = StObject.set(x, "permissionGrants", value.asInstanceOf[js.Any])
     
@@ -600,7 +658,7 @@ object Group {
     
     inline def setPermissionGrantsUndefined: Self = StObject.set(x, "permissionGrants", js.undefined)
     
-    inline def setPermissionGrantsVarargs(value: ResourceSpecificPermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value :_*))
+    inline def setPermissionGrantsVarargs(value: ResourceSpecificPermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value*))
     
     inline def setPhoto(value: NullableOption[ProfilePhoto]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
@@ -614,7 +672,7 @@ object Group {
     
     inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
     
-    inline def setPhotosVarargs(value: ProfilePhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: ProfilePhoto*): Self = StObject.set(x, "photos", js.Array(value*))
     
     inline def setPlanner(value: NullableOption[PlannerGroup]): Self = StObject.set(x, "planner", value.asInstanceOf[js.Any])
     
@@ -638,7 +696,7 @@ object Group {
     
     inline def setProxyAddressesUndefined: Self = StObject.set(x, "proxyAddresses", js.undefined)
     
-    inline def setProxyAddressesVarargs(value: String*): Self = StObject.set(x, "proxyAddresses", js.Array(value :_*))
+    inline def setProxyAddressesVarargs(value: String*): Self = StObject.set(x, "proxyAddresses", js.Array(value*))
     
     inline def setRejectedSenders(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "rejectedSenders", value.asInstanceOf[js.Any])
     
@@ -646,7 +704,7 @@ object Group {
     
     inline def setRejectedSendersUndefined: Self = StObject.set(x, "rejectedSenders", js.undefined)
     
-    inline def setRejectedSendersVarargs(value: DirectoryObject*): Self = StObject.set(x, "rejectedSenders", js.Array(value :_*))
+    inline def setRejectedSendersVarargs(value: DirectoryObject*): Self = StObject.set(x, "rejectedSenders", js.Array(value*))
     
     inline def setRenewedDateTime(value: NullableOption[String]): Self = StObject.set(x, "renewedDateTime", value.asInstanceOf[js.Any])
     
@@ -672,7 +730,7 @@ object Group {
     
     inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    inline def setSettingsVarargs(value: GroupSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: GroupSetting*): Self = StObject.set(x, "settings", js.Array(value*))
     
     inline def setSites(value: NullableOption[js.Array[Site]]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
     
@@ -680,7 +738,7 @@ object Group {
     
     inline def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
     
-    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value :_*))
+    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value*))
     
     inline def setTeam(value: NullableOption[Team]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
     
@@ -700,7 +758,7 @@ object Group {
     
     inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
-    inline def setThreadsVarargs(value: ConversationThread*): Self = StObject.set(x, "threads", js.Array(value :_*))
+    inline def setThreadsVarargs(value: ConversationThread*): Self = StObject.set(x, "threads", js.Array(value*))
     
     inline def setTransitiveMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "transitiveMemberOf", value.asInstanceOf[js.Any])
     
@@ -708,7 +766,7 @@ object Group {
     
     inline def setTransitiveMemberOfUndefined: Self = StObject.set(x, "transitiveMemberOf", js.undefined)
     
-    inline def setTransitiveMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMemberOf", js.Array(value :_*))
+    inline def setTransitiveMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMemberOf", js.Array(value*))
     
     inline def setTransitiveMembers(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "transitiveMembers", value.asInstanceOf[js.Any])
     
@@ -716,7 +774,7 @@ object Group {
     
     inline def setTransitiveMembersUndefined: Self = StObject.set(x, "transitiveMembers", js.undefined)
     
-    inline def setTransitiveMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMembers", js.Array(value :_*))
+    inline def setTransitiveMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMembers", js.Array(value*))
     
     inline def setUnseenCount(value: NullableOption[Double]): Self = StObject.set(x, "unseenCount", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.awsSdkClientCodecommitNode
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object typesCommentMod {
     /**
       * <p>The date and time the comment was created, in timestamp format.</p>
       */
-    var creationDate: js.UndefOr[Date | String | Double] = js.undefined
+    var creationDate: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>A Boolean value indicating whether the comment has been deleted.</p>
@@ -47,7 +46,7 @@ object typesCommentMod {
     /**
       * <p>The date and time the comment was most recently modified, in timestamp format.</p>
       */
-    var lastModifiedDate: js.UndefOr[Date | String | Double] = js.undefined
+    var lastModifiedDate: js.UndefOr[js.Date | String | Double] = js.undefined
   }
   object Comment {
     
@@ -74,7 +73,7 @@ object typesCommentMod {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date | String | Double): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
@@ -86,7 +85,7 @@ object typesCommentMod {
       
       inline def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
       
-      inline def setLastModifiedDate(value: Date | String | Double): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: js.Date | String | Double): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     }
@@ -100,13 +99,13 @@ object typesCommentMod {
       * <p>The date and time the comment was created, in timestamp format.</p>
       */
     @JSName("creationDate")
-    var creationDate_UnmarshalledComment: js.UndefOr[Date] = js.undefined
+    var creationDate_UnmarshalledComment: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The date and time the comment was most recently modified, in timestamp format.</p>
       */
     @JSName("lastModifiedDate")
-    var lastModifiedDate_UnmarshalledComment: js.UndefOr[Date] = js.undefined
+    var lastModifiedDate_UnmarshalledComment: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledComment {
     
@@ -117,11 +116,11 @@ object typesCommentMod {
     
     extension [Self <: UnmarshalledComment](x: Self) {
       
-      inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
       inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
-      inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     }

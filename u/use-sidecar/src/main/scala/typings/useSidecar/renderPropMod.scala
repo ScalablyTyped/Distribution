@@ -13,33 +13,9 @@ object renderPropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def renderCar[T /* <: js.Array[js.Any] */, K](WrappedComponent: RenderPropComponent[T, K], defaults: js.Function1[/* props */ K, T]): js.Function1[/* props */ CombinedProps[T, K], Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCar")(WrappedComponent.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ CombinedProps[T, K], Element]]
-  inline def renderCar[T /* <: js.Array[js.Any] */, K](
-    WrappedComponent: RenderPropComponent[T, K],
-    defaults: js.Function1[/* props */ K, T],
-    options: Options
-  ): js.Function1[/* props */ CombinedProps[T, K], Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCar")(WrappedComponent.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ CombinedProps[T, K], Element]]
+  inline def renderCar[T /* <: js.Array[Any] */, K, C](WrappedComponent: C, defaults: js.Function1[/* props */ K, T]): js.Function1[/* props */ CombinedProps[T, K], Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCar")(WrappedComponent.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ CombinedProps[T, K], Element]]
   
-  type CombinedProps[T /* <: js.Array[js.Any] */, K] = Children[T] & K
+  type CombinedProps[T /* <: js.Array[Any] */, K] = Children[T] & K
   
-  trait Options extends StObject {
-    
-    var pure: js.UndefOr[Boolean] = js.undefined
-  }
-  object Options {
-    
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
-    }
-    
-    extension [Self <: Options](x: Self) {
-      
-      inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
-      
-      inline def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
-    }
-  }
-  
-  type RenderPropComponent[T /* <: js.Array[js.Any] */, K] = ComponentType[CombinedProps[T, K]]
+  type RenderPropComponent[T /* <: js.Array[Any] */, K] = ComponentType[CombinedProps[T, K]]
 }

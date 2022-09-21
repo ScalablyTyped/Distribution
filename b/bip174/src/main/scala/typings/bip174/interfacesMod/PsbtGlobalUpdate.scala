@@ -21,6 +21,6 @@ object PsbtGlobalUpdate {
     
     inline def setGlobalXpubUndefined: Self = StObject.set(x, "globalXpub", js.undefined)
     
-    inline def setGlobalXpubVarargs(value: GlobalXpub*): Self = StObject.set(x, "globalXpub", js.Array(value :_*))
+    inline def setGlobalXpubVarargs(value: GlobalXpub*): Self = StObject.set(x, "globalXpub", js.Array(value*))
   }
 }

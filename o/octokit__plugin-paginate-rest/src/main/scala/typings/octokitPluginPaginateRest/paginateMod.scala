@@ -3,6 +3,7 @@ package typings.octokitPluginPaginateRest
 import typings.octokitCore.mod.Octokit
 import typings.octokitPluginPaginateRest.typesMod.MapFunction
 import typings.octokitPluginPaginateRest.typesMod.PaginationResults
+import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import typings.octokitTypes.requestInterfaceMod.RequestInterface
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.octokitTypes.routeMod.Route
@@ -16,22 +17,32 @@ object paginateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def paginate(octokit: Octokit, route: RequestInterface[js.Object]): js.Promise[PaginationResults[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[js.Any]]]
+  inline def paginate(octokit: Octokit, route: RequestInterface[js.Object]): js.Promise[PaginationResults[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[Any]]]
   inline def paginate(
     octokit: Octokit,
     route: RequestInterface[js.Object],
     parameters: Unit,
-    mapFn: MapFunction[js.Any, js.Any]
-  ): js.Promise[PaginationResults[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[js.Any]]]
-  inline def paginate(octokit: Octokit, route: RequestInterface[js.Object], parameters: RequestParameters): js.Promise[PaginationResults[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[js.Any]]]
+    mapFn: MapFunction[OctokitResponse[PaginationResults[Any], Double], js.Array[Any]]
+  ): js.Promise[PaginationResults[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[Any]]]
+  inline def paginate(octokit: Octokit, route: RequestInterface[js.Object], parameters: RequestParameters): js.Promise[PaginationResults[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[Any]]]
   inline def paginate(
     octokit: Octokit,
     route: RequestInterface[js.Object],
     parameters: RequestParameters,
-    mapFn: MapFunction[js.Any, js.Any]
-  ): js.Promise[PaginationResults[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[js.Any]]]
-  inline def paginate(octokit: Octokit, route: Route): js.Promise[PaginationResults[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[js.Any]]]
-  inline def paginate(octokit: Octokit, route: Route, parameters: Unit, mapFn: MapFunction[js.Any, js.Any]): js.Promise[PaginationResults[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[js.Any]]]
-  inline def paginate(octokit: Octokit, route: Route, parameters: RequestParameters): js.Promise[PaginationResults[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[js.Any]]]
-  inline def paginate(octokit: Octokit, route: Route, parameters: RequestParameters, mapFn: MapFunction[js.Any, js.Any]): js.Promise[PaginationResults[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[js.Any]]]
+    mapFn: MapFunction[OctokitResponse[PaginationResults[Any], Double], js.Array[Any]]
+  ): js.Promise[PaginationResults[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[Any]]]
+  inline def paginate(octokit: Octokit, route: Route): js.Promise[PaginationResults[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[Any]]]
+  inline def paginate(
+    octokit: Octokit,
+    route: Route,
+    parameters: Unit,
+    mapFn: MapFunction[OctokitResponse[PaginationResults[Any], Double], js.Array[Any]]
+  ): js.Promise[PaginationResults[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[Any]]]
+  inline def paginate(octokit: Octokit, route: Route, parameters: RequestParameters): js.Promise[PaginationResults[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[Any]]]
+  inline def paginate(
+    octokit: Octokit,
+    route: Route,
+    parameters: RequestParameters,
+    mapFn: MapFunction[OctokitResponse[PaginationResults[Any], Double], js.Array[Any]]
+  ): js.Promise[PaginationResults[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("paginate")(octokit.asInstanceOf[js.Any], route.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PaginationResults[Any]]]
 }

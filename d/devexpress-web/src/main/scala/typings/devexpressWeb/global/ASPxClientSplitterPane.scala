@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSplitterPane")
 @js.native
-class ASPxClientSplitterPane ()
+open class ASPxClientSplitterPane ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSplitterPane

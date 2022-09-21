@@ -9,7 +9,7 @@ trait AccountProviderMetadata extends StObject {
   /**
     * Any arguments that identify an instantiation of the provider
     */
-  var args: js.UndefOr[js.Any] = js.undefined
+  var args: js.UndefOr[Any] = js.undefined
   
   /**
     * Display name of the provider
@@ -35,7 +35,7 @@ object AccountProviderMetadata {
   
   extension [Self <: AccountProviderMetadata](x: Self) {
     
-    inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     

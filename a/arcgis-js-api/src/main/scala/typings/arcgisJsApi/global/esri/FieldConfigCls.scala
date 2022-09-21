@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.FieldConfig")
 @js.native
 /**
-  * Configuration options for displaying an individual field within the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
+  * Configuration options for configuring an individual field within the [FeatureTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html).
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html)
   */
-class FieldConfigCls ()
+open class FieldConfigCls ()
   extends StObject
      with typings.arcgisJsApi.esri.FieldConfig {
   def this(properties: FieldConfigProperties) = this()

@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Assignee details about a coursework/announcement. This field is set if and
-  * only if `assigneeMode` is `INDIVIDUAL_STUDENTS`.
-  */
 trait SchemaIndividualStudentsOptions extends StObject {
   
   /**
-    * Identifiers for the students that have access to the
-    * coursework/announcement.
+    * Identifiers for the students that have access to the coursework/announcement.
     */
-  var studentIds: js.UndefOr[js.Array[String]] = js.undefined
+  var studentIds: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaIndividualStudentsOptions {
   
@@ -27,8 +22,10 @@ object SchemaIndividualStudentsOptions {
     
     inline def setStudentIds(value: js.Array[String]): Self = StObject.set(x, "studentIds", value.asInstanceOf[js.Any])
     
+    inline def setStudentIdsNull: Self = StObject.set(x, "studentIds", null)
+    
     inline def setStudentIdsUndefined: Self = StObject.set(x, "studentIds", js.undefined)
     
-    inline def setStudentIdsVarargs(value: String*): Self = StObject.set(x, "studentIds", js.Array(value :_*))
+    inline def setStudentIdsVarargs(value: String*): Self = StObject.set(x, "studentIds", js.Array(value*))
   }
 }

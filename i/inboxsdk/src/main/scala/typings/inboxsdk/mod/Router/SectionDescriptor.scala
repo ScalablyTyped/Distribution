@@ -15,7 +15,7 @@ trait SectionDescriptor extends StObject {
   
   var onDropdownClick: js.UndefOr[js.Function1[/* event */ SectionDropdownClickEvent, Unit]] = js.undefined
   
-  var onFooterLinkClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  var onFooterLinkClick: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
   
   var onTitleLinkClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -52,7 +52,7 @@ object SectionDescriptor {
     
     inline def setOnDropdownClickUndefined: Self = StObject.set(x, "onDropdownClick", js.undefined)
     
-    inline def setOnFooterLinkClick(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onFooterLinkClick", js.Any.fromFunction1(value))
+    inline def setOnFooterLinkClick(value: /* event */ Any => Unit): Self = StObject.set(x, "onFooterLinkClick", js.Any.fromFunction1(value))
     
     inline def setOnFooterLinkClickUndefined: Self = StObject.set(x, "onFooterLinkClick", js.undefined)
     
@@ -68,7 +68,7 @@ object SectionDescriptor {
     
     inline def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
     
-    inline def setTableRowsVarargs(value: RowDescriptor*): Self = StObject.set(x, "tableRows", js.Array(value :_*))
+    inline def setTableRowsVarargs(value: RowDescriptor*): Self = StObject.set(x, "tableRows", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

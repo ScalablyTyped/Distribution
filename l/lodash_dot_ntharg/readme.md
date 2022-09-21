@@ -10,10 +10,10 @@ The lodash method `_.nthArg` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.ntharg |
 | Keywords           | lodash-modularized, ntharg |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2662 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 89.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

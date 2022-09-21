@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "FeatureDefn")
 @js.native
-class FeatureDefn () extends StObject {
+open class FeatureDefn () extends StObject {
   
   val fields: FeatureDefnFields = js.native
   

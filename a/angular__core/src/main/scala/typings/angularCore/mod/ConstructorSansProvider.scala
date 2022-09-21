@@ -11,7 +11,7 @@ trait ConstructorSansProvider
   /**
     * A list of `token`s to be resolved by the injector.
     */
-  var deps: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var deps: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object ConstructorSansProvider {
   
@@ -22,10 +22,10 @@ object ConstructorSansProvider {
   
   extension [Self <: ConstructorSansProvider](x: Self) {
     
-    inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
     inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
-    inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: Any*): Self = StObject.set(x, "deps", js.Array(value*))
   }
 }

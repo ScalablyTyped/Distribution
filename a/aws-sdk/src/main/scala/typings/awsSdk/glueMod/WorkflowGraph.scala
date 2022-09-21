@@ -12,7 +12,7 @@ trait WorkflowGraph extends StObject {
   var Edges: js.UndefOr[EdgeList] = js.undefined
   
   /**
-    * A list of the the AWS Glue components belong to the workflow represented as nodes.
+    * A list of the the Glue components belong to the workflow represented as nodes.
     */
   var Nodes: js.UndefOr[NodeList] = js.undefined
 }
@@ -29,12 +29,12 @@ object WorkflowGraph {
     
     inline def setEdgesUndefined: Self = StObject.set(x, "Edges", js.undefined)
     
-    inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "Edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "Edges", js.Array(value*))
     
     inline def setNodes(value: NodeList): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
     
     inline def setNodesUndefined: Self = StObject.set(x, "Nodes", js.undefined)
     
-    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "Nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "Nodes", js.Array(value*))
   }
 }

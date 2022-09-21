@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "MinMaxReducer")
 @js.native
-class MinMaxReducer protected ()
+open class MinMaxReducer protected ()
   extends typings.babylonjs.indexMod.MinMaxReducer {
   /**
     * Creates a min/max reducer

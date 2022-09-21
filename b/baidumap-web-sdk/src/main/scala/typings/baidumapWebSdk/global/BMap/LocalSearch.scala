@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.LocalSearch")
 @js.native
-class LocalSearch protected ()
+open class LocalSearch protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.LocalSearch {
   def this(location: String) = this()

@@ -9,11 +9,11 @@ object tileCacheMod {
   
   @JSImport("ol/TileCache", JSImport.Default)
   @js.native
-  class default () extends TileCache
+  open class default () extends TileCache
   
   @js.native
   trait TileCache
-    extends typings.ol.lrucacheMod.default[js.Any] {
+    extends typings.ol.lrucacheMod.default[Any] {
     
     def expireCache(usedTiles: StringDictionary[Boolean]): Unit = js.native
     

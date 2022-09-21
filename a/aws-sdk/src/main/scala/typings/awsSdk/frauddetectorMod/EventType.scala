@@ -27,9 +27,19 @@ trait EventType extends StObject {
   var entityTypes: js.UndefOr[NonEmptyListOfStrings] = js.undefined
   
   /**
+    * If Enabled, Amazon Fraud Detector stores event data when you generate a prediction and uses that data to update calculated variables in near real-time. Amazon Fraud Detector uses this data, known as INGESTED_EVENTS, to train your model and improve fraud predictions.
+    */
+  var eventIngestion: js.UndefOr[EventIngestion] = js.undefined
+  
+  /**
     * The event type event variables.
     */
   var eventVariables: js.UndefOr[ListOfStrings] = js.undefined
+  
+  /**
+    * Data about the stored events.
+    */
+  var ingestedEventStatistics: js.UndefOr[IngestedEventStatistics] = js.undefined
   
   /**
     * The event type labels.
@@ -71,19 +81,27 @@ object EventType {
     
     inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    inline def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value*))
+    
+    inline def setEventIngestion(value: EventIngestion): Self = StObject.set(x, "eventIngestion", value.asInstanceOf[js.Any])
+    
+    inline def setEventIngestionUndefined: Self = StObject.set(x, "eventIngestion", js.undefined)
     
     inline def setEventVariables(value: ListOfStrings): Self = StObject.set(x, "eventVariables", value.asInstanceOf[js.Any])
     
     inline def setEventVariablesUndefined: Self = StObject.set(x, "eventVariables", js.undefined)
     
-    inline def setEventVariablesVarargs(value: String*): Self = StObject.set(x, "eventVariables", js.Array(value :_*))
+    inline def setEventVariablesVarargs(value: String*): Self = StObject.set(x, "eventVariables", js.Array(value*))
+    
+    inline def setIngestedEventStatistics(value: IngestedEventStatistics): Self = StObject.set(x, "ingestedEventStatistics", value.asInstanceOf[js.Any])
+    
+    inline def setIngestedEventStatisticsUndefined: Self = StObject.set(x, "ingestedEventStatistics", js.undefined)
     
     inline def setLabels(value: ListOfStrings): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "RaycastResult")
 @js.native
-class RaycastResult () extends StObject {
+open class RaycastResult () extends StObject {
   
   var body: Body = js.native
   

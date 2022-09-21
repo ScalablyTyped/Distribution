@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientProcessingModeEventArgs")
 @js.native
-class ASPxClientProcessingModeEventArgs protected ()
+open class ASPxClientProcessingModeEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientProcessingModeEventArgs {
   /**

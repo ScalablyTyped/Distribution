@@ -14,7 +14,7 @@ trait AssessmentTarget extends StObject {
   /**
     * The time at which the assessment target is created.
     */
-  var createdAt: Timestamp
+  var createdAt: js.Date
   
   /**
     * The name of the Amazon Inspector assessment target.
@@ -29,11 +29,11 @@ trait AssessmentTarget extends StObject {
   /**
     * The time at which UpdateAssessmentTarget is called.
     */
-  var updatedAt: Timestamp
+  var updatedAt: js.Date
 }
 object AssessmentTarget {
   
-  inline def apply(arn: Arn, createdAt: Timestamp, name: AssessmentTargetName, updatedAt: Timestamp): AssessmentTarget = {
+  inline def apply(arn: Arn, createdAt: js.Date, name: AssessmentTargetName, updatedAt: js.Date): AssessmentTarget = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentTarget]
   }
@@ -42,7 +42,7 @@ object AssessmentTarget {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setName(value: AssessmentTargetName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -50,6 +50,6 @@ object AssessmentTarget {
     
     inline def setResourceGroupArnUndefined: Self = StObject.set(x, "resourceGroupArn", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

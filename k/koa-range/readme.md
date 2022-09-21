@@ -10,10 +10,10 @@ range request implementation for koa
 | ------------------ | :-------------: |
 | Full name          | koa-range |
 | Keywords           | range, koa, http |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 5135140 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 791018.3333333334 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/yorkie/koa-range)

@@ -19,7 +19,7 @@ object distUserMod {
   - typings.typedGithubApi.interfacesUserMod.User because Already inherited
   - typings.typedGithubApi.interfacesUserMod.MyUser because var conflicts: avatarUri, blog, company, createdAt, email, followers, following, id, location, login, name, publicGists, publicRepos, updatedAt. Inlined privateReposTotal, privateReposOwned, privateGists, diskUsage, collaborators, plan, twoFactorAuthentication */ @JSImport("typed-github-api/dist/user", "MyUserClass")
   @js.native
-  class MyUserClass protected () extends UserClass {
+  open class MyUserClass protected () extends UserClass {
     def this(data: PrivateUser, options: OptionsOrRef) = this()
     
     var collaborators: Double = js.native
@@ -42,7 +42,7 @@ object distUserMod {
   - typings.typedGithubApi.interfacesUserMod.UserSummary because Already inherited
   - typings.typedGithubApi.interfacesUserMod.User because var conflicts: avatarUri, id, login. Inlined name, company, blog, location, email, publicRepos, publicGists, followers, following, createdAt, updatedAt */ @JSImport("typed-github-api/dist/user", "UserClass")
   @js.native
-  class UserClass protected () extends UserSummaryClass {
+  open class UserClass protected () extends UserSummaryClass {
     def this(data: User, options: OptionsOrRef) = this()
     
     var biography: String = js.native
@@ -76,7 +76,7 @@ object distUserMod {
   - typings.typedGithubApi.ownerRefMod.OwnerRef because Already inherited
   - typings.typedGithubApi.interfacesUserMod.UserSummary because var conflicts: login. Inlined id, avatarUri */ @JSImport("typed-github-api/dist/user", "UserSummaryClass")
   @js.native
-  class UserSummaryClass protected () extends OwnerRefClass {
+  open class UserSummaryClass protected () extends OwnerRefClass {
     def this(data: UserSummary, options: OptionsOrRef) = this()
     
     var avatarUri: String = js.native

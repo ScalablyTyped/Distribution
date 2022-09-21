@@ -7,72 +7,82 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CodeReview extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) of the  RepositoryAssociation  that contains the reviewed source code. You can retrieve associated repository ARNs by calling  ListRepositoryAssociations . 
+    * The types of analysis performed during a repository analysis or a pull request review. You can specify either Security, CodeQuality, or both.
+    */
+  var AnalysisTypes: js.UndefOr[typings.awsSdk.codegurureviewerMod.AnalysisTypes] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the RepositoryAssociation that contains the reviewed source code. You can retrieve associated repository ARNs by calling ListRepositoryAssociations.
     */
   var AssociationArn: js.UndefOr[typings.awsSdk.codegurureviewerMod.AssociationArn] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the  CodeReview  object. 
+    * The Amazon Resource Name (ARN) of the CodeReview object. 
     */
   var CodeReviewArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    *  The time, in milliseconds since the epoch, when the code review was created. 
+    * The state of the aws-codeguru-reviewer.yml configuration file that allows the configuration of the CodeGuru Reviewer analysis. The file either exists, doesn't exist, or exists with errors at the root directory of your repository.
     */
-  var CreatedTimeStamp: js.UndefOr[TimeStamp] = js.undefined
+  var ConfigFileState: js.UndefOr[typings.awsSdk.codegurureviewerMod.ConfigFileState] = js.undefined
   
   /**
-    *  The time, in milliseconds since the epoch, when the code review was last updated. 
+    * The time, in milliseconds since the epoch, when the code review was created.
     */
-  var LastUpdatedTimeStamp: js.UndefOr[TimeStamp] = js.undefined
+  var CreatedTimeStamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The statistics from the code review. 
+    * The time, in milliseconds since the epoch, when the code review was last updated.
+    */
+  var LastUpdatedTimeStamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The statistics from the code review.
     */
   var Metrics: js.UndefOr[typings.awsSdk.codegurureviewerMod.Metrics] = js.undefined
   
   /**
-    *  The name of the code review. 
+    * The name of the code review.
     */
   var Name: js.UndefOr[typings.awsSdk.codegurureviewerMod.Name] = js.undefined
   
   /**
-    * The owner of the repository. For an AWS CodeCommit repository, this is the AWS account ID of the account that owns the repository. For a GitHub, GitHub Enterprise Server, or Bitbucket repository, this is the username for the account that owns the repository.
+    * The owner of the repository. For an Amazon Web Services CodeCommit repository, this is the Amazon Web Services account ID of the account that owns the repository. For a GitHub, GitHub Enterprise Server, or Bitbucket repository, this is the username for the account that owns the repository. For an S3 repository, it can be the username or Amazon Web Services account ID.
     */
   var Owner: js.UndefOr[typings.awsSdk.codegurureviewerMod.Owner] = js.undefined
   
   /**
-    *  The type of repository that contains the reviewed code (for example, GitHub or Bitbucket). 
+    * The type of repository that contains the reviewed code (for example, GitHub or Bitbucket).
     */
   var ProviderType: js.UndefOr[typings.awsSdk.codegurureviewerMod.ProviderType] = js.undefined
   
   /**
-    *  The pull request ID for the code review. 
+    * The pull request ID for the code review.
     */
   var PullRequestId: js.UndefOr[typings.awsSdk.codegurureviewerMod.PullRequestId] = js.undefined
   
   /**
-    *  The name of the repository. 
+    * The name of the repository.
     */
   var RepositoryName: js.UndefOr[Name] = js.undefined
   
   /**
-    *  The type of the source code for the code review. 
+    * The type of the source code for the code review.
     */
   var SourceCodeType: js.UndefOr[typings.awsSdk.codegurureviewerMod.SourceCodeType] = js.undefined
   
   /**
-    * The valid code review states are:    Completed: The code review is complete.     Pending: The code review started and has not completed or failed.     Failed: The code review failed.     Deleting: The code review is being deleted.   
+    * The valid code review states are:    Completed: The code review is complete.    Pending: The code review started and has not completed or failed.    Failed: The code review failed.    Deleting: The code review is being deleted.  
     */
   var State: js.UndefOr[JobState] = js.undefined
   
   /**
-    *  The reason for the state of the code review. 
+    * The reason for the state of the code review.
     */
   var StateReason: js.UndefOr[typings.awsSdk.codegurureviewerMod.StateReason] = js.undefined
   
   /**
-    *  The type of code review. 
+    * The type of code review.
     */
   var Type: js.UndefOr[typings.awsSdk.codegurureviewerMod.Type] = js.undefined
 }
@@ -85,6 +95,12 @@ object CodeReview {
   
   extension [Self <: CodeReview](x: Self) {
     
+    inline def setAnalysisTypes(value: AnalysisTypes): Self = StObject.set(x, "AnalysisTypes", value.asInstanceOf[js.Any])
+    
+    inline def setAnalysisTypesUndefined: Self = StObject.set(x, "AnalysisTypes", js.undefined)
+    
+    inline def setAnalysisTypesVarargs(value: AnalysisType*): Self = StObject.set(x, "AnalysisTypes", js.Array(value*))
+    
     inline def setAssociationArn(value: AssociationArn): Self = StObject.set(x, "AssociationArn", value.asInstanceOf[js.Any])
     
     inline def setAssociationArnUndefined: Self = StObject.set(x, "AssociationArn", js.undefined)
@@ -93,11 +109,15 @@ object CodeReview {
     
     inline def setCodeReviewArnUndefined: Self = StObject.set(x, "CodeReviewArn", js.undefined)
     
-    inline def setCreatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
+    inline def setConfigFileState(value: ConfigFileState): Self = StObject.set(x, "ConfigFileState", value.asInstanceOf[js.Any])
+    
+    inline def setConfigFileStateUndefined: Self = StObject.set(x, "ConfigFileState", js.undefined)
+    
+    inline def setCreatedTimeStamp(value: js.Date): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeStampUndefined: Self = StObject.set(x, "CreatedTimeStamp", js.undefined)
     
-    inline def setLastUpdatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimeStamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeStampUndefined: Self = StObject.set(x, "LastUpdatedTimeStamp", js.undefined)
     

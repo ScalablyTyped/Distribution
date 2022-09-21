@@ -16,12 +16,12 @@ object esriMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/Color", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with Color_ {
     def this(color: String) = this()
-    def this(color: js.Any) = this()
     def this(color: js.Array[Double]) = this()
+    def this(color: Any) = this()
   }
   
   type _To = ColorConstructor

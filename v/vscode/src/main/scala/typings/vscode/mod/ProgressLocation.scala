@@ -14,7 +14,8 @@ object ProgressLocation extends StObject {
   def apply(value: Double): js.UndefOr[ProgressLocation & Double] = js.native
   
   /**
-    * Show progress as notification with an optional cancel button. Supports to show infinite and discrete progress.
+    * Show progress as notification with an optional cancel button. Supports to show infinite and discrete
+    * progress but does not support rendering of icons.
     */
   @js.native
   sealed trait Notification
@@ -24,7 +25,8 @@ object ProgressLocation extends StObject {
   
   /**
     * Show progress for the source control viewlet, as overlay for the icon and as progress bar
-    * inside the viewlet (when visible). Neither supports cancellation nor discrete progress.
+    * inside the viewlet (when visible). Neither supports cancellation nor discrete progress nor
+    * a label to describe the operation.
     */
   @js.native
   sealed trait SourceControl
@@ -34,6 +36,7 @@ object ProgressLocation extends StObject {
   
   /**
     * Show progress in the status bar of the editor. Neither supports cancellation nor discrete progress.
+    * Supports rendering of {@link ThemeIcon theme icons} via the `$(<name>)`-syntax in the progress label.
     */
   @js.native
   sealed trait Window

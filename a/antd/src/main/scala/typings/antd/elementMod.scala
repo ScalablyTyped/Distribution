@@ -6,6 +6,7 @@ import typings.antd.antdStrings.large
 import typings.antd.antdStrings.round
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.square
+import typings.react.mod.CSSProperties
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,11 +28,11 @@ object elementMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var shape: js.UndefOr[circle | square | round] = js.undefined
+    var shape: js.UndefOr[circle | square | round | default] = js.undefined
     
     var size: js.UndefOr[large | small | default | Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SkeletonElementProps {
     
@@ -54,7 +55,7 @@ object elementMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setShape(value: circle | square | round): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: circle | square | round | default): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
@@ -62,7 +63,7 @@ object elementMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

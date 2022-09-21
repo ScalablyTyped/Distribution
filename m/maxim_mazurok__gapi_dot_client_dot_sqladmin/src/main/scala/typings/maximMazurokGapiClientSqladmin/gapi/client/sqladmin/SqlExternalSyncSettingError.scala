@@ -9,7 +9,7 @@ trait SqlExternalSyncSettingError extends StObject {
   /** Additional information about the error encountered. */
   var detail: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#migrationSettingError*. */
+  /** Can be `sql#externalSyncSettingError` or `sql#externalSyncSettingWarning`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Identifies the specific error that occurred. */

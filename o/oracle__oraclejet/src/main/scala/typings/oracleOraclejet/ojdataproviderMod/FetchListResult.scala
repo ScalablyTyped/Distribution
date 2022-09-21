@@ -23,12 +23,12 @@ object FetchListResult {
     
     inline def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: D*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setFetchParameters(value: FetchListParameters[D]): Self = StObject.set(x, "fetchParameters", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: js.Array[ItemMetadata[K]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    inline def setMetadataVarargs(value: ItemMetadata[K]*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: ItemMetadata[K]*): Self = StObject.set(x, "metadata", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object ListCertificateAuthoritiesResponse {
     
     inline def setCertificateAuthoritiesUndefined: Self = StObject.set(x, "CertificateAuthorities", js.undefined)
     
-    inline def setCertificateAuthoritiesVarargs(value: CertificateAuthority*): Self = StObject.set(x, "CertificateAuthorities", js.Array(value :_*))
+    inline def setCertificateAuthoritiesVarargs(value: CertificateAuthority*): Self = StObject.set(x, "CertificateAuthorities", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

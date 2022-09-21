@@ -8,12 +8,18 @@ trait AzureBlobStorageData extends StObject {
   
   /**
     * Required. Input only. Credentials used to authenticate API requests to Azure. For information on our data retention policy for user credentials, see [User
-    * credentials](data-retention#user-credentials).
+    * credentials](/storage-transfer/docs/data-retention#user-credentials).
     */
   var azureCredentials: js.UndefOr[AzureCredentials] = js.undefined
   
   /** Required. The container to transfer from the Azure Storage account. */
   var container: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Root path to transfer objects. Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should generally not begin with
+    * a '/'.
+    */
+  var path: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the Azure Storage account. */
   var storageAccount: js.UndefOr[String] = js.undefined
@@ -34,6 +40,10 @@ object AzureBlobStorageData {
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     inline def setStorageAccount(value: String): Self = StObject.set(x, "storageAccount", value.asInstanceOf[js.Any])
     

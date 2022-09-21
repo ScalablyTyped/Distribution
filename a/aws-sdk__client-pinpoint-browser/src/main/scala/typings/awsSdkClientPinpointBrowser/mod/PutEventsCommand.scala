@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "PutEventsCommand")
 @js.native
-class PutEventsCommand protected ()
+open class PutEventsCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.putEventsCommandMod.PutEventsCommand {
   def this(input: PutEventsInput) = this()
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "strict-event-emitter-types" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "strict-event-emitter-types" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

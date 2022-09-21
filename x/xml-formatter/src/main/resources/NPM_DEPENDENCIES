@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xml-formatter" : "2.4.0"
+      "xml-formatter" : "2.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "xml-formatter" : "2.4.0"
+      "xml-formatter" : "2.6.1"
     }
   ],
   "compile-devDependencies" : [

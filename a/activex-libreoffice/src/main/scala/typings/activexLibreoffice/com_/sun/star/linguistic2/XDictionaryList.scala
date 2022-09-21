@@ -153,7 +153,7 @@ object XDictionaryList {
     getCount: () => Double,
     getDictionaries: () => SafeArray[XDictionary],
     getDictionaryByName: String => XDictionary,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeDictionary: XDictionary => Boolean,
     removeDictionaryListEventListener: XDictionaryListEventListener => Boolean

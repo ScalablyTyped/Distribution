@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  inline def createPersistedState(key: String): FnCall = js.Dynamic.global.applyDynamic("createPersistedState")(key.asInstanceOf[js.Any]).asInstanceOf[FnCall]
-  inline def createPersistedState(key: String, provider: PickStoragegetItemsetItem): FnCall = (js.Dynamic.global.applyDynamic("createPersistedState")(key.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  inline def createPersistedState[S](key: String): FnCall[S] = js.Dynamic.global.applyDynamic("createPersistedState")(key.asInstanceOf[js.Any]).asInstanceOf[FnCall[S]]
+  inline def createPersistedState[S](key: String, provider: PickStoragegetItemsetItem): FnCall[S] = (js.Dynamic.global.applyDynamic("createPersistedState")(key.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[FnCall[S]]
 }

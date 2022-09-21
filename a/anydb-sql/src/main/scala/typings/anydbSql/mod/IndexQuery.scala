@@ -12,6 +12,6 @@ trait IndexQuery
   def create(): IndexCreationQuery = js.native
   def create(indexName: String): IndexCreationQuery = js.native
   
-  def drop(columns: Column[js.Any]*): Executable[Unit] = js.native
+  def drop(columns: Column[Any]*): Executable[Unit] = js.native
   def drop(indexName: String): Executable[Unit] = js.native
 }

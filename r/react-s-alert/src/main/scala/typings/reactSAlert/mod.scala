@@ -11,8 +11,8 @@ object mod {
   
   @JSImport("react-s-alert", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SAlertProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SAlertProps, js.Object, Any]
   object default {
     
     @JSImport("react-s-alert", JSImport.Default)
@@ -87,7 +87,7 @@ object mod {
       
       var beep: js.UndefOr[String | Boolean | SAlertBeepProps] = js.undefined
       
-      var contentTemplate: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+      var contentTemplate: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
       
       var customFields: js.UndefOr[js.Object] = js.undefined
       
@@ -120,7 +120,7 @@ object mod {
         
         inline def setBeepUndefined: Self = StObject.set(x, "beep", js.undefined)
         
-        inline def setContentTemplate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction1(value))
+        inline def setContentTemplate(value: /* repeated */ Any => Any): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction1(value))
         
         inline def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
         
@@ -208,5 +208,5 @@ object mod {
       }
     }
   }
-  type SAlert = Component[SAlertProps, js.Object, js.Any]
+  type SAlert = Component[SAlertProps, js.Object, Any]
 }

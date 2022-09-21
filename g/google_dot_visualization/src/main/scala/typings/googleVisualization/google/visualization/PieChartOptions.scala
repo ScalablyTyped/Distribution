@@ -23,7 +23,7 @@ trait PieChartOptions extends StObject {
   
   var is3D: js.UndefOr[Boolean] = js.undefined
   
-  var legend: js.UndefOr[ChartLegend | none] = js.undefined
+  var legend: js.UndefOr[PieChartLegend | none] = js.undefined
   
   var pieHole: js.UndefOr[Double] = js.undefined
   
@@ -43,7 +43,7 @@ trait PieChartOptions extends StObject {
   
   var sliceVisibilityThreshold: js.UndefOr[Double] = js.undefined
   
-  var slices: js.UndefOr[js.Any] = js.undefined
+  var slices: js.UndefOr[Any] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -74,7 +74,7 @@ object PieChartOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setEnableInteractivity(value: Boolean): Self = StObject.set(x, "enableInteractivity", value.asInstanceOf[js.Any])
     
@@ -96,7 +96,7 @@ object PieChartOptions {
     
     inline def setIs3DUndefined: Self = StObject.set(x, "is3D", js.undefined)
     
-    inline def setLegend(value: ChartLegend | none): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: PieChartLegend | none): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
@@ -136,7 +136,7 @@ object PieChartOptions {
     
     inline def setSliceVisibilityThresholdUndefined: Self = StObject.set(x, "sliceVisibilityThreshold", js.undefined)
     
-    inline def setSlices(value: js.Any): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
+    inline def setSlices(value: Any): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
     
     inline def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
     

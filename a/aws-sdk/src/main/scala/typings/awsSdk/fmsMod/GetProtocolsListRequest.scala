@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetProtocolsListRequest extends StObject {
   
   /**
-    * Specifies whether the list to retrieve is a default list owned by AWS Firewall Manager.
+    * Specifies whether the list to retrieve is a default list owned by Firewall Manager.
     */
   var DefaultList: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ID of the AWS Firewall Manager protocols list that you want the details for.
+    * The ID of the Firewall Manager protocols list that you want the details for.
     */
   var ListId: typings.awsSdk.fmsMod.ListId
 }

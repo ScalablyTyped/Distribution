@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "ShapePath")
 @js.native
-class ShapePath ()
-  extends typings.three.shapePathMod.ShapePath
+open class ShapePath ()
+  extends typings.three.threeMod.ShapePath

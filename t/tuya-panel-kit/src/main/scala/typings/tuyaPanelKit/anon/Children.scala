@@ -12,19 +12,19 @@ trait Children extends StObject {
   /**
     * React component to render for this screen.
     */
-  var component: ComponentType[js.Any]
+  var component: ComponentType[Any]
   
   var getComponent: js.UndefOr[scala.Nothing] = js.undefined
 }
 object Children {
   
-  inline def apply(component: ComponentType[js.Any]): Children = {
+  inline def apply(component: ComponentType[Any]): Children = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
     __obj.asInstanceOf[Children]
   }
   
   extension [Self <: Children](x: Self) {
     
-    inline def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
   }
 }

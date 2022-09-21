@@ -28,13 +28,13 @@ object Correction {
     
     inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    inline def setContextsVarargs(value: ServingContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: ServingContext*): Self = StObject.set(x, "contexts", js.Array(value*))
     
     inline def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

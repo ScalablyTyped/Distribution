@@ -9,7 +9,7 @@ trait Encryption extends StObject {
   /**
     * The type of algorithm that is used for the encryption (such as aes128, aes192, or aes256).
     */
-  var Algorithm: typings.awsSdk.mediaconnectMod.Algorithm
+  var Algorithm: js.UndefOr[typings.awsSdk.mediaconnectMod.Algorithm] = js.undefined
   
   /**
     * A 128-bit, 16-byte hex value represented by a 32-character string, to be used with the key for encrypting content. This parameter is not valid for static key encryption.
@@ -53,14 +53,16 @@ trait Encryption extends StObject {
 }
 object Encryption {
   
-  inline def apply(Algorithm: Algorithm, RoleArn: string): Encryption = {
-    val __obj = js.Dynamic.literal(Algorithm = Algorithm.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
+  inline def apply(RoleArn: string): Encryption = {
+    val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encryption]
   }
   
   extension [Self <: Encryption](x: Self) {
     
     inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
+    
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "Algorithm", js.undefined)
     
     inline def setConstantInitializationVector(value: string): Self = StObject.set(x, "ConstantInitializationVector", value.asInstanceOf[js.Any])
     

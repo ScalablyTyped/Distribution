@@ -29,6 +29,6 @@ object SendWorkerMessagesRequest {
     
     inline def setWorkerMessagesUndefined: Self = StObject.set(x, "workerMessages", js.undefined)
     
-    inline def setWorkerMessagesVarargs(value: WorkerMessage*): Self = StObject.set(x, "workerMessages", js.Array(value :_*))
+    inline def setWorkerMessagesVarargs(value: WorkerMessage*): Self = StObject.set(x, "workerMessages", js.Array(value*))
   }
 }

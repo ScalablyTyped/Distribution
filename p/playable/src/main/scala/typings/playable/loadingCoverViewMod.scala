@@ -10,19 +10,19 @@ object loadingCoverViewMod {
   
   @JSImport("playable/dist/src/modules/ui/loading-cover/loading-cover.view", JSImport.Default)
   @js.native
-  class default () extends LoadingCoverView
+  open class default () extends LoadingCoverView
   
   @js.native
   trait LoadingCoverView
     extends typings.playable.viewMod.default[ILoadingCoverViewStyles] {
     
     /* private */ @JSName("_$image")
-    var _$image: js.Any = js.native
+    var _$image: Any = js.native
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
     def destroy(): Unit = js.native
     

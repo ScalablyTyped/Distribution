@@ -26,7 +26,7 @@ object ContainerMixin {
     
     inline def setBackgrounds(value: js.Array[Paint]): Self = StObject.set(x, "backgrounds", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundsVarargs(value: Paint*): Self = StObject.set(x, "backgrounds", js.Array(value :_*))
+    inline def setBackgroundsVarargs(value: Paint*): Self = StObject.set(x, "backgrounds", js.Array(value*))
     
     inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "SpinButton")
 @js.native
-class SpinButton protected ()
+open class SpinButton protected ()
   extends typings.officeUiFabricReact.mod.SpinButton {
   def this(props: ISpinButtonProps) = this()
 }

@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SearchLayerFieldConstructor
   extends StObject
-     with Instantiable0[SearchLayerField]
+     with /**
+  * Represents the field of a layer to use for search.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html)
+  */
+Instantiable0[SearchLayerField]
      with Instantiable1[/* properties */ SearchLayerFieldProperties, SearchLayerField]

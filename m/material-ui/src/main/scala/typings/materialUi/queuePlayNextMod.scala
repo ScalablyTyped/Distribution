@@ -10,10 +10,10 @@ object queuePlayNextMod {
   
   @JSImport("material-ui/svg-icons/av/queue-play-next", JSImport.Default)
   @js.native
-  class default () extends AvQueuePlayNext
+  open class default () extends AvQueuePlayNext
   
   @JSImport("material-ui/svg-icons/av/queue-play-next", "AvQueuePlayNext")
   @js.native
-  class AvQueuePlayNext ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvQueuePlayNext ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

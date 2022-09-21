@@ -31,6 +31,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_note
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.voice
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_started
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_ended
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_participants_invited
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_scheduled
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.message_auto_delete_timer_changed
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chat_invite_link
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chat_member_updated
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.web_app_data
 */
 trait MessageType extends StObject
 object MessageType {
@@ -40,6 +48,10 @@ object MessageType {
   inline def audio: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.audio = "audio".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.audio]
   
   inline def channel_chat_created: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel_chat_created = "channel_chat_created".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel_chat_created]
+  
+  inline def chat_invite_link: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chat_invite_link = "chat_invite_link".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chat_invite_link]
+  
+  inline def chat_member_updated: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chat_member_updated = "chat_member_updated".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.chat_member_updated]
   
   inline def contact: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.contact = "contact".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.contact]
   
@@ -56,6 +68,8 @@ object MessageType {
   inline def left_chat_member: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.left_chat_member = "left_chat_member".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.left_chat_member]
   
   inline def location: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.location = "location".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.location]
+  
+  inline def message_auto_delete_timer_changed: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.message_auto_delete_timer_changed = "message_auto_delete_timer_changed".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.message_auto_delete_timer_changed]
   
   inline def migrate_from_chat_id: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.migrate_from_chat_id = "migrate_from_chat_id".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.migrate_from_chat_id]
   
@@ -83,7 +97,17 @@ object MessageType {
   
   inline def video: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video = "video".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video]
   
+  inline def video_chat_ended: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_ended = "video_chat_ended".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_ended]
+  
+  inline def video_chat_participants_invited: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_participants_invited = "video_chat_participants_invited".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_participants_invited]
+  
+  inline def video_chat_scheduled: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_scheduled = "video_chat_scheduled".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_scheduled]
+  
+  inline def video_chat_started: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_started = "video_chat_started".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_chat_started]
+  
   inline def video_note: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_note = "video_note".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video_note]
   
   inline def voice: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.voice = "voice".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.voice]
+  
+  inline def web_app_data: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.web_app_data = "web_app_data".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.web_app_data]
 }

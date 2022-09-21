@@ -17,7 +17,7 @@ trait ResolverEndpoint extends StObject {
   var CreationTime: js.UndefOr[Rfc3339TimeString] = js.undefined
   
   /**
-    * A unique string that identifies the request that created the Resolver endpoint. The CreatorRequestId allows failed requests to be retried without the risk of executing the operation twice.
+    * A unique string that identifies the request that created the Resolver endpoint. The CreatorRequestId allows failed requests to be retried without the risk of running the operation twice.
     */
   var CreatorRequestId: js.UndefOr[typings.awsSdk.route53resolverMod.CreatorRequestId] = js.undefined
   
@@ -115,7 +115,7 @@ object ResolverEndpoint {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: ResourceId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: ResourceId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setStatus(value: ResolverEndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

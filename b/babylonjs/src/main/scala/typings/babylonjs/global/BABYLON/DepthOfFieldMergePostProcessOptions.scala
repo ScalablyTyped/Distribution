@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DepthOfFieldMergePostProcessOptions")
 @js.native
-class DepthOfFieldMergePostProcessOptions ()
+open class DepthOfFieldMergePostProcessOptions ()
   extends StObject
      with typings.babylonjs.BABYLON.DepthOfFieldMergePostProcessOptions {
   

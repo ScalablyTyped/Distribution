@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OneToOneAttribute
   extends StObject
-     with BaseAttribute[js.Any]
+     with BaseAttribute[Any]
      with _Attribute {
   
   var model: String

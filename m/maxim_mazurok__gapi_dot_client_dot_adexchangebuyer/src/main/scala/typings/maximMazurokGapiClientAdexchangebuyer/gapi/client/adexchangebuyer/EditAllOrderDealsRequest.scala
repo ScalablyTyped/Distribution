@@ -37,7 +37,7 @@ object EditAllOrderDealsRequest {
     
     inline def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
     
-    inline def setDealsVarargs(value: MarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
+    inline def setDealsVarargs(value: MarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value*))
     
     inline def setProposal(value: Proposal): Self = StObject.set(x, "proposal", value.asInstanceOf[js.Any])
     

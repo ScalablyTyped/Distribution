@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "VRCameraMetrics")
 @js.native
-class VRCameraMetrics ()
+open class VRCameraMetrics ()
   extends typings.babylonjs.babylonjsMod.VRCameraMetrics
 /* static members */
 object VRCameraMetrics {

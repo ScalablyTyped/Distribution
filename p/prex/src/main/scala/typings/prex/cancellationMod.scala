@@ -1,12 +1,11 @@
 package typings.prex
 
-import typings.esfxCancelable.distMod.Cancelable
-import typings.esfxCancelable.distMod.CancelableSource
-import typings.esfxDisposable.distMod.Disposable
+import typings.esfxCancelable.mod.Cancelable
+import typings.esfxCancelable.mod.CancelableSource
+import typings.esfxDisposable.disposableMod.Disposable
 import typings.prex.anon.Dispose
 import typings.prex.prexStrings.abort
 import typings.std.Error
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,25 +14,27 @@ object cancellationMod {
   
   @JSImport("prex/out/lib/cancellation", "CancelError")
   @js.native
-  class CancelError ()
+  open class CancelError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("prex/out/lib/cancellation", "CancellationToken")
   @js.native
-  class CancellationToken ()
+  open class CancellationToken ()
     extends StObject
        with Cancelable {
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Gets a value indicating whether the underlying source can be canceled.
@@ -68,7 +69,7 @@ object cancellationMod {
       * Returns a CancellationToken that becomes canceled when **all** of the provided tokens are canceled.
       * @param tokens An iterable of CancellationToken objects.
       */
-    inline def all(tokens: Iterable[CancellationToken | Cancelable]): CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(tokens.asInstanceOf[js.Any]).asInstanceOf[CancellationToken]
+    inline def all(tokens: js.Iterable[CancellationToken | Cancelable]): CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(tokens.asInstanceOf[js.Any]).asInstanceOf[CancellationToken]
     
     /**
       * A token that is already canceled.
@@ -96,25 +97,25 @@ object cancellationMod {
       * Returns a CancellationToken that becomes canceled when **any** of the provided tokens are canceled.
       * @param tokens An iterable of CancellationToken objects.
       */
-    inline def race(tokens: Iterable[CancellationToken | Cancelable]): CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(tokens.asInstanceOf[js.Any]).asInstanceOf[CancellationToken]
+    inline def race(tokens: js.Iterable[CancellationToken | Cancelable]): CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(tokens.asInstanceOf[js.Any]).asInstanceOf[CancellationToken]
   }
   
   @JSImport("prex/out/lib/cancellation", "CancellationTokenCountdown")
   @js.native
-  class CancellationTokenCountdown () extends StObject {
-    def this(iterable: Iterable[CancellationToken | Cancelable]) = this()
+  open class CancellationTokenCountdown () extends StObject {
+    def this(iterable: js.Iterable[CancellationToken | Cancelable]) = this()
     
-    /* private */ var _addedCount: js.Any = js.native
+    /* private */ var _addedCount: Any = js.native
     
-    /* private */ var _canBeSignaled: js.Any = js.native
+    /* private */ var _canBeSignaled: Any = js.native
     
-    /* private */ var _checkSignalState: js.Any = js.native
+    /* private */ var _checkSignalState: Any = js.native
     
-    /* private */ var _registrations: js.Any = js.native
+    /* private */ var _registrations: Any = js.native
     
-    /* private */ var _signaledCount: js.Any = js.native
+    /* private */ var _signaledCount: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     def add(token: Cancelable): this.type = js.native
     /**
@@ -145,30 +146,30 @@ object cancellationMod {
     *
     * @param linkedTokens An optional iterable of tokens to which to link this source.
     */
-  class CancellationTokenSource ()
+  open class CancellationTokenSource ()
     extends StObject
        with CancelableSource {
-    def this(linkedTokens: Iterable[CancellationToken | Cancelable]) = this()
+    def this(linkedTokens: js.Iterable[CancellationToken | Cancelable]) = this()
     
     /**
       * Executes the provided callback.
       *
       * @param callback The callback to execute.
       */
-    /* private */ var _executeCallback: js.Any = js.native
+    /* private */ var _executeCallback: Any = js.native
     
-    /* private */ var _linkingRegistrations: js.Any = js.native
+    /* private */ var _linkingRegistrations: Any = js.native
     
-    /* private */ var _registrations: js.Any = js.native
+    /* private */ var _registrations: Any = js.native
     
-    /* private */ var _state: js.Any = js.native
+    /* private */ var _state: Any = js.native
     
-    /* private */ var _token: js.Any = js.native
+    /* private */ var _token: Any = js.native
     
     /**
       * Unlinks the source from any linked tokens.
       */
-    /* private */ var _unlink: js.Any = js.native
+    /* private */ var _unlink: Any = js.native
     
     /**
       * Cancels the source, evaluating any registered callbacks. If any callback raises an exception,
@@ -192,11 +193,11 @@ object cancellationMod {
     val aborted: Boolean
     
     @JSName("addEventListener")
-    def addEventListener_abort(`type`: abort, callback: js.Function0[js.Any]): js.Any
+    def addEventListener_abort(`type`: abort, callback: js.Function0[Any]): Any
   }
   object AbortSignalLike {
     
-    inline def apply(aborted: Boolean, addEventListener: (abort, js.Function0[js.Any]) => js.Any): AbortSignalLike = {
+    inline def apply(aborted: Boolean, addEventListener: (abort, js.Function0[Any]) => Any): AbortSignalLike = {
       val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener))
       __obj.asInstanceOf[AbortSignalLike]
     }
@@ -205,14 +206,12 @@ object cancellationMod {
       
       inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
-      inline def setAddEventListener(value: (abort, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (abort, js.Function0[Any]) => Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     }
   }
   
   @js.native
-  trait CancellationTokenRegistration
-    extends StObject
-       with Disposable {
+  trait CancellationTokenRegistration extends Disposable {
     
     /**
       * Unregisters the callback
@@ -224,11 +223,11 @@ object cancellationMod {
     
     val isCancellationRequested: Boolean
     
-    def onCancellationRequested(listener: js.Function0[js.Any]): Dispose
+    def onCancellationRequested(listener: js.Function0[Any]): Dispose
   }
   object VSCodeCancellationTokenLike {
     
-    inline def apply(isCancellationRequested: Boolean, onCancellationRequested: js.Function0[js.Any] => Dispose): VSCodeCancellationTokenLike = {
+    inline def apply(isCancellationRequested: Boolean, onCancellationRequested: js.Function0[Any] => Dispose): VSCodeCancellationTokenLike = {
       val __obj = js.Dynamic.literal(isCancellationRequested = isCancellationRequested.asInstanceOf[js.Any], onCancellationRequested = js.Any.fromFunction1(onCancellationRequested))
       __obj.asInstanceOf[VSCodeCancellationTokenLike]
     }
@@ -237,7 +236,7 @@ object cancellationMod {
       
       inline def setIsCancellationRequested(value: Boolean): Self = StObject.set(x, "isCancellationRequested", value.asInstanceOf[js.Any])
       
-      inline def setOnCancellationRequested(value: js.Function0[js.Any] => Dispose): Self = StObject.set(x, "onCancellationRequested", js.Any.fromFunction1(value))
+      inline def setOnCancellationRequested(value: js.Function0[Any] => Dispose): Self = StObject.set(x, "onCancellationRequested", js.Any.fromFunction1(value))
     }
   }
 }

@@ -29,7 +29,7 @@ object ListNetworkProfilesResult {
     
     inline def setNetworkProfilesUndefined: Self = StObject.set(x, "networkProfiles", js.undefined)
     
-    inline def setNetworkProfilesVarargs(value: NetworkProfile*): Self = StObject.set(x, "networkProfiles", js.Array(value :_*))
+    inline def setNetworkProfilesVarargs(value: NetworkProfile*): Self = StObject.set(x, "networkProfiles", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

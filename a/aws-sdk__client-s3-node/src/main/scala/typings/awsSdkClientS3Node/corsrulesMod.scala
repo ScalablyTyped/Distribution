@@ -8,5 +8,5 @@ object corsrulesMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_CORSRules", "_CORSRules")
   @js.native
-  val CORSRules: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val CORSRules: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

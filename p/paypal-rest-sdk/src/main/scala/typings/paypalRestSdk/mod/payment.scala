@@ -160,7 +160,7 @@ object payment {
       
       inline def setPayments(value: js.Array[Payment_]): Self = StObject.set(x, "payments", value.asInstanceOf[js.Any])
       
-      inline def setPaymentsVarargs(value: Payment_ *): Self = StObject.set(x, "payments", js.Array(value :_*))
+      inline def setPaymentsVarargs(value: Payment_ *): Self = StObject.set(x, "payments", js.Array(value*))
     }
   }
   

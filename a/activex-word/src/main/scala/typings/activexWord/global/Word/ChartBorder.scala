@@ -6,30 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ChartBorder")
 @js.native
-/* private */ class ChartBorder ()
+/* private */ open class ChartBorder ()
   extends StObject
      with typings.activexWord.Word.ChartBorder {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
-  var Color: js.Any = js.native
+  var Color: Any = js.native
   
   /* CompleteClass */
-  var ColorIndex: js.Any = js.native
+  var ColorIndex: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  var LineStyle: js.Any = js.native
+  var LineStyle: Any = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  var Weight: js.Any = js.native
+  var Weight: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Word.ChartBorder_typekey")

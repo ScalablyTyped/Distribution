@@ -13,17 +13,17 @@ trait FlatListProps[ItemT]
   /**
     * Rendered in between each item, but not at the top or bottom
     */
-  var ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
+  var ItemSeparatorComponent: js.UndefOr[ComponentType[Any] | Null] = js.undefined
   
   /**
     * Styling for internal View for ListFooterComponent
     */
-  var ListFooterComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
+  var ListFooterComponentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Styling for internal View for ListHeaderComponent
     */
-  var ListHeaderComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
+  var ListHeaderComponentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Optional custom style for multi-item rows generated when numColumns > 1
@@ -69,7 +69,7 @@ trait FlatListProps[ItemT]
     * See `ViewabilityHelper` for flow type and further documentation.
     */
   @JSName("viewabilityConfig")
-  var viewabilityConfig_FlatListProps: js.UndefOr[js.Any] = js.undefined
+  var viewabilityConfig_FlatListProps: js.UndefOr[Any] = js.undefined
 }
 object FlatListProps {
   
@@ -92,13 +92,13 @@ object FlatListProps {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setGetItemLayout(value: (/* data */ js.UndefOr[js.Array[ItemT] | Null], /* index */ Double) => Index): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
     
     inline def setGetItemLayoutUndefined: Self = StObject.set(x, "getItemLayout", js.undefined)
     
-    inline def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    inline def setItemSeparatorComponent(value: ComponentType[Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     inline def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
     
@@ -108,13 +108,13 @@ object FlatListProps {
     
     inline def setLegacyImplementationUndefined: Self = StObject.set(x, "legacyImplementation", js.undefined)
     
-    inline def setListFooterComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
+    inline def setListFooterComponentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
     
     inline def setListFooterComponentStyleNull: Self = StObject.set(x, "ListFooterComponentStyle", null)
     
     inline def setListFooterComponentStyleUndefined: Self = StObject.set(x, "ListFooterComponentStyle", js.undefined)
     
-    inline def setListHeaderComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
+    inline def setListHeaderComponentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
     
     inline def setListHeaderComponentStyleNull: Self = StObject.set(x, "ListHeaderComponentStyle", null)
     
@@ -124,7 +124,7 @@ object FlatListProps {
     
     inline def setNumColumnsUndefined: Self = StObject.set(x, "numColumns", js.undefined)
     
-    inline def setViewabilityConfig(value: js.Any): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
+    inline def setViewabilityConfig(value: Any): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
     
     inline def setViewabilityConfigUndefined: Self = StObject.set(x, "viewabilityConfig", js.undefined)
   }

@@ -15,7 +15,7 @@ object global {
       * 室内地图
       * @param options 选项
       */
-    class IndoorMap ()
+    open class IndoorMap ()
       extends StObject
          with typings.amapJsApiIndoorMap.AMap.IndoorMap {
       def this(options: Options) = this()

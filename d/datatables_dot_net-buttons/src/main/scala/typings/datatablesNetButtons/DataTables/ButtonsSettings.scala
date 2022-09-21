@@ -26,7 +26,7 @@ object ButtonsSettings {
     
     inline def setButtons(value: js.Array[String | FunctionButtom | ButtonSettings]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    inline def setButtonsVarargs(value: (String | FunctionButtom | ButtonSettings)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: (String | FunctionButtom | ButtonSettings)*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setDom(value: ButtonDomSettings): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     

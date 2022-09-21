@@ -9,7 +9,7 @@ trait DescribeDatasetResponse extends StObject {
   /**
     * When the dataset was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The frequency of data collection. Valid intervals are Y (Year), M (Month), W (Week), D (Day), H (Hour), 30min (30 minutes), 15min (15 minutes), 10min (10 minutes), 5min (5 minutes), and 1min (1 minute). For example, "M" indicates every month and "30min" indicates every 30 minutes.
@@ -44,7 +44,7 @@ trait DescribeDatasetResponse extends StObject {
   /**
     * When you create a dataset, LastModificationTime is the same as CreationTime. While data is being imported to the dataset, LastModificationTime is the current time of the DescribeDataset call. After a CreateDatasetImportJob operation has finished, LastModificationTime is when the import job completed or failed.
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModificationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An array of SchemaAttribute objects that specify the dataset fields. Each SchemaAttribute specifies the name and data type of a field.
@@ -65,7 +65,7 @@ object DescribeDatasetResponse {
   
   extension [Self <: DescribeDatasetResponse](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -93,7 +93,7 @@ object DescribeDatasetResponse {
     
     inline def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
     
-    inline def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
+    inline def setLastModificationTime(value: js.Date): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     inline def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "positive-zero" : "3.0.0"
+      "positive-zero" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "positive-zero" : "3.0.0"
+      "positive-zero" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Web.Http.HttpResponseMessage")
 @js.native
 /** Initializes a new instance of the HttpResponseMessage class. */
-class HttpResponseMessage ()
+open class HttpResponseMessage ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.HttpResponseMessage {
   /**

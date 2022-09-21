@@ -36,6 +36,6 @@ object GetConfigRequest {
     
     inline def setHapgList(value: HapgList): Self = StObject.set(x, "HapgList", value.asInstanceOf[js.Any])
     
-    inline def setHapgListVarargs(value: HapgArn*): Self = StObject.set(x, "HapgList", js.Array(value :_*))
+    inline def setHapgListVarargs(value: HapgArn*): Self = StObject.set(x, "HapgList", js.Array(value*))
   }
 }

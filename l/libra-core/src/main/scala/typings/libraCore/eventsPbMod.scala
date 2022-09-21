@@ -8,7 +8,6 @@ import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.accessPathPbMod.AccessPath
 import typings.libraCore.proofPbMod.EventProof
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,17 +16,17 @@ object eventsPbMod {
   
   @JSImport("libra-core/lib/@/generated/events_pb", "Event")
   @js.native
-  class Event () extends Message {
+  open class Event () extends Message {
     
     def clearAccessPath(): Unit = js.native
     
     def getAccessPath(): js.UndefOr[AccessPath] = js.native
     
-    def getEventData(): Uint8Array | String = js.native
+    def getEventData(): js.typedarray.Uint8Array | String = js.native
     
     def getEventData_asB64(): String = js.native
     
-    def getEventData_asU8(): Uint8Array = js.native
+    def getEventData_asU8(): js.typedarray.Uint8Array = js.native
     
     def getSequenceNumber(): String = js.native
     
@@ -37,7 +36,7 @@ object eventsPbMod {
     def setAccessPath(value: AccessPath): Unit = js.native
     
     def setEventData(value: String): Unit = js.native
-    def setEventData(value: Uint8Array): Unit = js.native
+    def setEventData(value: js.typedarray.Uint8Array): Unit = js.native
     
     def setSequenceNumber(value: String): Unit = js.native
   }
@@ -48,7 +47,7 @@ object eventsPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Event]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Event]
     
     inline def deserializeBinaryFromReader(message: Event, reader: BinaryReader): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Event]
     
@@ -71,13 +70,13 @@ object eventsPbMod {
       
       var accessPath: js.UndefOr[typings.libraCore.accessPathPbMod.AccessPath.AsObject] = js.undefined
       
-      var eventData: Uint8Array | String
+      var eventData: js.typedarray.Uint8Array | String
       
       var sequenceNumber: String
     }
     object AsObject {
       
-      inline def apply(eventData: Uint8Array | String, sequenceNumber: String): AsObject = {
+      inline def apply(eventData: js.typedarray.Uint8Array | String, sequenceNumber: String): AsObject = {
         val __obj = js.Dynamic.literal(eventData = eventData.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
@@ -88,7 +87,7 @@ object eventsPbMod {
         
         inline def setAccessPathUndefined: Self = StObject.set(x, "accessPath", js.undefined)
         
-        inline def setEventData(value: Uint8Array | String): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
+        inline def setEventData(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
         
         inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
       }
@@ -97,7 +96,7 @@ object eventsPbMod {
   
   @JSImport("libra-core/lib/@/generated/events_pb", "EventWithProof")
   @js.native
-  class EventWithProof () extends Message {
+  open class EventWithProof () extends Message {
     
     def clearEvent(): Unit = js.native
     
@@ -132,7 +131,7 @@ object eventsPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): EventWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EventWithProof]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): EventWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EventWithProof]
     
     inline def deserializeBinaryFromReader(message: EventWithProof, reader: BinaryReader): EventWithProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EventWithProof]
     
@@ -187,7 +186,7 @@ object eventsPbMod {
   
   @JSImport("libra-core/lib/@/generated/events_pb", "EventsForVersions")
   @js.native
-  class EventsForVersions () extends Message {
+  open class EventsForVersions () extends Message {
     
     def addEventsForVersion(): EventsList = js.native
     def addEventsForVersion(value: Unit, index: Double): EventsList = js.native
@@ -207,7 +206,7 @@ object eventsPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): EventsForVersions = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EventsForVersions]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): EventsForVersions = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EventsForVersions]
     
     inline def deserializeBinaryFromReader(message: EventsForVersions, reader: BinaryReader): EventsForVersions = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EventsForVersions]
     
@@ -241,14 +240,14 @@ object eventsPbMod {
         
         inline def setEventsForVersionList(value: js.Array[typings.libraCore.eventsPbMod.EventsList.AsObject]): Self = StObject.set(x, "eventsForVersionList", value.asInstanceOf[js.Any])
         
-        inline def setEventsForVersionListVarargs(value: typings.libraCore.eventsPbMod.EventsList.AsObject*): Self = StObject.set(x, "eventsForVersionList", js.Array(value :_*))
+        inline def setEventsForVersionListVarargs(value: typings.libraCore.eventsPbMod.EventsList.AsObject*): Self = StObject.set(x, "eventsForVersionList", js.Array(value*))
       }
     }
   }
   
   @JSImport("libra-core/lib/@/generated/events_pb", "EventsList")
   @js.native
-  class EventsList () extends Message {
+  open class EventsList () extends Message {
     
     def addEvents(): Event = js.native
     def addEvents(value: Unit, index: Double): Event = js.native
@@ -268,7 +267,7 @@ object eventsPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): EventsList = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EventsList]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): EventsList = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[EventsList]
     
     inline def deserializeBinaryFromReader(message: EventsList, reader: BinaryReader): EventsList = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[EventsList]
     
@@ -302,7 +301,7 @@ object eventsPbMod {
         
         inline def setEventsList(value: js.Array[typings.libraCore.eventsPbMod.Event.AsObject]): Self = StObject.set(x, "eventsList", value.asInstanceOf[js.Any])
         
-        inline def setEventsListVarargs(value: typings.libraCore.eventsPbMod.Event.AsObject*): Self = StObject.set(x, "eventsList", js.Array(value :_*))
+        inline def setEventsListVarargs(value: typings.libraCore.eventsPbMod.Event.AsObject*): Self = StObject.set(x, "eventsList", js.Array(value*))
       }
     }
   }

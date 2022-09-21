@@ -10,30 +10,30 @@ trait AnyChanges extends StObject {
   
   def AnyChanges(): Boolean = js.native
   
-  def ChangeKeySliceInfo(): js.Any = js.native
+  def ChangeKeySliceInfo(): Any = js.native
   
-  def ChangeQuery(): js.Any = js.native
+  def ChangeQuery(): Any = js.native
   
-  def EventSliceInfo(): js.Any = js.native
+  def EventSliceInfo(): Any = js.native
   
   def GetChanges(
-    optStartEvent: js.Any,
-    optEndEvent: js.Any,
-    optRecordKeys: js.Any,
+    optStartEvent: Any,
+    optEndEvent: Any,
+    optRecordKeys: Any,
     bFirstStartEvent: Boolean,
     bStartInclusive: Boolean,
     bEndInclusive: Boolean,
     bIncludeInvalidPropUpdates: Boolean,
     bLastEndEvent: Boolean
-  ): js.Any = js.native
+  ): Any = js.native
   
-  def GetChangesAsJson(changeQuery: js.Any): String = js.native
-  def GetChangesAsJson(changeQuery: js.Any, optfnPreProcessUpdateForSerialize: js.Any): String = js.native
+  def GetChangesAsJson(changeQuery: Any): String = js.native
+  def GetChangesAsJson(changeQuery: Any, optfnPreProcessUpdateForSerialize: Any): String = js.native
   
-  def GetUniquePropertyChanges(changeQuery: js.Any): js.Any = js.native
-  def GetUniquePropertyChanges(changeQuery: js.Any, optfnFilter: js.Any): js.Any = js.native
+  def GetUniquePropertyChanges(changeQuery: Any): Any = js.native
+  def GetUniquePropertyChanges(changeQuery: Any, optfnFilter: Any): Any = js.native
   
-  def RegisterEvent(changeKey: IChangeKey, eventObject: js.Any): Unit = js.native
+  def RegisterEvent(changeKey: IChangeKey, eventObject: Any): Unit = js.native
   
-  def UnregisterEvent(changeKey: IChangeKey, eventObject: js.Any): Unit = js.native
+  def UnregisterEvent(changeKey: IChangeKey, eventObject: Any): Unit = js.native
 }

@@ -15,9 +15,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents an image in the worksheet. To get the corresponding `Shape` object, use `Image.shape`.
   *
-  * Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -30,17 +30,17 @@ trait Image
   var context_Image: RequestContext = js.native
   
   /**
-    *
     * Returns the format of the image.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val format: PictureFormat | UNKNOWN | BMP | JPEG | GIF | PNG | SVG = js.native
   
   /**
-    *
     * Specifies the shape identifier for the image object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val id: String = js.native
@@ -57,9 +57,9 @@ trait Image
   def load(propertyNames: js.Array[String]): Image = js.native
   
   /**
+    * Returns the `Shape` object associated with the image.
     *
-    * Returns the Shape object associated with the image.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   val shape: Shape = js.native

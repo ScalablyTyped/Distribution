@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemElementCustomColorEventArgs")
 @js.native
-class ASPxClientDashboardItemElementCustomColorEventArgs ()
+open class ASPxClientDashboardItemElementCustomColorEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemElementCustomColorEventArgs {
   

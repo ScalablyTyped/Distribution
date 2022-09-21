@@ -13,7 +13,23 @@ object expoLocalizationMod {
     @js.native
     val ^ : js.Any = js.native
     
+    @JSImport("expo-localization/build/ExpoLocalization", "default.currency")
+    @js.native
+    val currency: String | Null = js.native
+    
+    @JSImport("expo-localization/build/ExpoLocalization", "default.decimalSeparator")
+    @js.native
+    val decimalSeparator: String = js.native
+    
+    @JSImport("expo-localization/build/ExpoLocalization", "default.digitGroupingSeparator")
+    @js.native
+    val digitGroupingSeparator: String = js.native
+    
     inline def getLocalizationAsync(): js.Promise[Localization] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalizationAsync")().asInstanceOf[js.Promise[Localization]]
+    
+    @JSImport("expo-localization/build/ExpoLocalization", "default.isMetric")
+    @js.native
+    val isMetric: Boolean = js.native
     
     @JSImport("expo-localization/build/ExpoLocalization", "default.isRTL")
     @js.native

@@ -12,7 +12,7 @@ trait UpdateJobRequest extends StObject {
   var JobName: NameString
   
   /**
-    * Specifies the values with which to update the job definition.
+    * Specifies the values with which to update the job definition. Unspecified configuration is removed or reset to default values.
     */
   var JobUpdate: typings.awsSdk.glueMod.JobUpdate
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReturnpolicyListResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#returnpolicyListResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#returnpolicyListResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   var resources: js.UndefOr[js.Array[ReturnPolicy]] = js.undefined
@@ -28,6 +28,6 @@ object ReturnpolicyListResponse {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: ReturnPolicy*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: ReturnPolicy*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

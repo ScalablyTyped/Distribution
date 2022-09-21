@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "typed-query-selector" : "2.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "typed-query-selector" : "2.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

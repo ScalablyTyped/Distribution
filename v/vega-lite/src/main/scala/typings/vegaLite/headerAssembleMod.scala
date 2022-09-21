@@ -10,7 +10,6 @@ import typings.vegaLite.anon.Encode
 import typings.vegaLite.anon.Font
 import typings.vegaLite.anon.FontSize
 import typings.vegaLite.anon.FontStyle
-import typings.vegaLite.anon.From
 import typings.vegaLite.anon.Name
 import typings.vegaLite.anon.PartialRecordkeyofCoreHea
 import typings.vegaLite.anon.PartialVgTitle
@@ -76,7 +75,7 @@ object headerAssembleMod {
     headerType: HeaderType,
     layoutHeader: LayoutHeaderComponent,
     headerComponent: HeaderComponent
-  ): Axes | From = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleHeaderGroup")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], headerType.asInstanceOf[js.Any], layoutHeader.asInstanceOf[js.Any], headerComponent.asInstanceOf[js.Any])).asInstanceOf[Axes | From]
+  ): Axes = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleHeaderGroup")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], headerType.asInstanceOf[js.Any], layoutHeader.asInstanceOf[js.Any], headerComponent.asInstanceOf[js.Any])).asInstanceOf[Axes]
   
   inline def assembleHeaderGroups(model: Model, channel: HeaderChannel): js.Array[VgMarkGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleHeaderGroups")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[js.Array[VgMarkGroup]]
   
@@ -101,5 +100,5 @@ object headerAssembleMod {
   
   inline def defaultHeaderGuideBaseline(angle: Double, channel: FacetChannel): `2` | BaselineUndefined = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultHeaderGuideBaseline")(angle.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[`2` | BaselineUndefined]
   
-  inline def getLayoutTitleBand(titleAnchor: TitleAnchor, headerChannel: HeaderChannel): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLayoutTitleBand")(titleAnchor.asInstanceOf[js.Any], headerChannel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getLayoutTitleBand(titleAnchor: TitleAnchor, headerChannel: HeaderChannel): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLayoutTitleBand")(titleAnchor.asInstanceOf[js.Any], headerChannel.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

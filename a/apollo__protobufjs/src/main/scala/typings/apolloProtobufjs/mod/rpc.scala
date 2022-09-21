@@ -1,7 +1,6 @@
 package typings.apolloProtobufjs.mod
 
 import typings.apolloProtobufjs.mod.util.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object rpc {
   /** An RPC service as returned by {@link Service#create}. */
   @JSImport("@apollo/protobufjs", "rpc.Service")
   @js.native
-  class Service protected () extends EventEmitter {
+  open class Service protected () extends EventEmitter {
     /**
       * Constructs a new RPC service instance.
       * @param rpcImpl RPC implementation
@@ -97,5 +96,5 @@ object rpc {
     * @param error Error, if any
     * @param [response] Response message
     */
-  type ServiceMethodCallback[TRes /* <: Message[TRes] */] = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[TRes], Unit]
+  type ServiceMethodCallback[TRes /* <: Message[TRes] */] = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[TRes], Unit]
 }

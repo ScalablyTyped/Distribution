@@ -1,6 +1,5 @@
 package typings.tabris.mod
 
-import typings.std.ArrayBuffer
 import typings.tabris.Blob
 import typings.tabris.File
 import typings.tabris.anon.Quantity
@@ -10,7 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "FileSystem")
 @js.native
-/* private */ class FileSystem () extends NativeObject {
+/**
+  * The `fs` object provides methods to read and write files. All methods are asynchronous and return a
+  * promise.
+  */
+/* private */ open class FileSystem () extends NativeObject {
   
   /**
     * Writes the given binary content to the given file. If the file exists, it is appended, otherwise it
@@ -19,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param path The path of the file to append.
     * @param data The content to append to the file.
     */
-  def appendToFile(path: String, data: ArrayBuffer): js.Promise[Boolean] = js.native
+  def appendToFile(path: String, data: js.typedarray.ArrayBuffer): js.Promise[Boolean] = js.native
   def appendToFile(path: String, data: Blob): js.Promise[Boolean] = js.native
   /**
     * Writes the given text to the given file using the given encoding or `utf-8` if no encoding is
@@ -116,7 +119,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * ArrayBuffer.
     * @param path The path of the file to read.
     */
-  def readFile(path: String): js.Promise[ArrayBuffer] = js.native
+  def readFile(path: String): js.Promise[js.typedarray.ArrayBuffer] = js.native
   /**
     * Reads the given text file and returns a promise that resolves to the contents of the file on success
     * and rejects with an Error if no file exists at that path. The file contents are returned as a string.
@@ -162,7 +165,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param path The path of the file to write.
     * @param data The contents to write to the file.
     */
-  def writeFile(path: String, data: ArrayBuffer): js.Promise[Unit] = js.native
+  def writeFile(path: String, data: js.typedarray.ArrayBuffer): js.Promise[Unit] = js.native
   def writeFile(path: String, data: Blob): js.Promise[Unit] = js.native
   /**
     * Writes the given text to the given file using the given encoding or `utf-8` if no encoding is

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Diagram extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var AutoFormat: MsoTriState
   
@@ -22,7 +22,7 @@ trait Diagram extends StObject {
   
   val Nodes: DiagramNodes
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Diagram_typekey")
   var PowerPointDotDiagram_typekey: Diagram
@@ -34,14 +34,14 @@ trait Diagram extends StObject {
 object Diagram {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     AutoFormat: MsoTriState,
     AutoLayout: MsoTriState,
     Convert: MsoDiagramType => Unit,
     Creator: Double,
     FitText: () => Unit,
     Nodes: DiagramNodes,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotDiagram_typekey: Diagram,
     Reverse: MsoTriState,
     Type: MsoDiagramType
@@ -53,7 +53,7 @@ object Diagram {
   
   extension [Self <: Diagram](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setAutoFormat(value: MsoTriState): Self = StObject.set(x, "AutoFormat", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object Diagram {
     
     inline def setNodes(value: DiagramNodes): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotDiagram_typekey(value: Diagram): Self = StObject.set(x, "PowerPoint.Diagram_typekey", value.asInstanceOf[js.Any])
     

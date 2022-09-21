@@ -29,7 +29,7 @@ trait Session extends StObject {
   /**
     * The time when the streaming session is set to expire. This time is based on the MaxUserDurationinSeconds value, which determines the maximum length of time that a streaming session can run. A streaming session might end earlier than the time specified in SessionMaxExpirationTime, when the DisconnectTimeOutInSeconds elapses or the user chooses to end his or her session. If the DisconnectTimeOutInSeconds elapses, or the user chooses to end his or her session, the streaming instance is terminated and the streaming session ends.
     */
-  var MaxExpirationTime: js.UndefOr[Timestamp] = js.undefined
+  var MaxExpirationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The network details for the streaming session.
@@ -44,7 +44,7 @@ trait Session extends StObject {
   /**
     * The time when a streaming instance is dedicated for the user.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current state of the streaming session.
@@ -77,7 +77,7 @@ object Session {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    inline def setMaxExpirationTime(value: Timestamp): Self = StObject.set(x, "MaxExpirationTime", value.asInstanceOf[js.Any])
+    inline def setMaxExpirationTime(value: js.Date): Self = StObject.set(x, "MaxExpirationTime", value.asInstanceOf[js.Any])
     
     inline def setMaxExpirationTimeUndefined: Self = StObject.set(x, "MaxExpirationTime", js.undefined)
     
@@ -87,7 +87,7 @@ object Session {
     
     inline def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

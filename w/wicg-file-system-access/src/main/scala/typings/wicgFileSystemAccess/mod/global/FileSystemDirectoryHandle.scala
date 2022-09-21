@@ -1,19 +1,20 @@
 package typings.wicgFileSystemAccess.mod.global
 
 import typings.std.AsyncIterableIterator
-import typings.wicgFileSystemAccess.mod.BaseFileSystemHandle
+import typings.wicgFileSystemAccess.wicgFileSystemAccessBooleans.`false`
+import typings.wicgFileSystemAccess.wicgFileSystemAccessBooleans.`true`
 import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.directory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("FileSystemDirectoryHandle")
 @js.native
-class FileSystemDirectoryHandle ()
+trait FileSystemDirectoryHandle
   extends StObject
-     with BaseFileSystemHandle {
+     with FileSystemHandle
+     with FileSystemHandleUnion {
   
-  def entries(): AsyncIterableIterator[js.Tuple2[String, FileSystemHandle]] = js.native
+  def entries(): AsyncIterableIterator[js.Tuple2[String, FileSystemDirectoryHandle | FileSystemFileHandle]] = js.native
   
   /**
     * @deprecated Old property just for Chromium <=85. Use `.getDirectoryHandle()` in the new API.
@@ -37,12 +38,12 @@ class FileSystemDirectoryHandle ()
   /**
     * @deprecated Old property just for Chromium <=85. Use `.keys()`, `.values()`, `.entries()`, or the directory itself as an async iterable in the new API.
     */
-  def getEntries(): AsyncIterableIterator[FileSystemHandle] = js.native
+  def getEntries(): AsyncIterableIterator[FileSystemDirectoryHandle | FileSystemFileHandle] = js.native
   /**
     * @deprecated Old property just for Chromium <=85. Use `.keys()`, `.values()`, `.entries()`, or the directory itself as an async iterable in the new API.
     */
   @JSName("getEntries")
-  var getEntries_Original: js.Function0[AsyncIterableIterator[FileSystemHandle]] = js.native
+  var getEntries_Original: js.Function0[AsyncIterableIterator[FileSystemDirectoryHandle | FileSystemFileHandle]] = js.native
   
   /**
     * @deprecated Old property just for Chromium <=85. Use `.getFileHandle()` in the new API.
@@ -63,6 +64,18 @@ class FileSystemDirectoryHandle ()
     js.Promise[FileSystemFileHandle]
   ] = js.native
   
+  /**
+    * @deprecated Old property just for Chromium <=85. Use `kind` property in the new API.
+    */
+  @JSName("isDirectory")
+  val isDirectory_FileSystemDirectoryHandle: `true` = js.native
+  
+  /**
+    * @deprecated Old property just for Chromium <=85. Use `kind` property in the new API.
+    */
+  @JSName("isFile")
+  val isFile_FileSystemDirectoryHandle: `false` = js.native
+  
   def keys(): AsyncIterableIterator[String] = js.native
   
   @JSName("kind")
@@ -73,17 +86,5 @@ class FileSystemDirectoryHandle ()
   
   def resolve(possibleDescendant: FileSystemHandle): js.Promise[js.Array[String] | Null] = js.native
   
-  def values(): AsyncIterableIterator[FileSystemHandle] = js.native
-}
-object FileSystemDirectoryHandle {
-  
-  @JSGlobal("FileSystemDirectoryHandle")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * @deprecated Old method just for Chromium <=85. Use `navigator.storage.getDirectory()` in the new API.
-    */
-  /* static member */
-  inline def getSystemDirectory(options: GetSystemDirectoryOptions): js.Promise[FileSystemDirectoryHandle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemDirectory")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileSystemDirectoryHandle]]
+  def values(): AsyncIterableIterator[FileSystemDirectoryHandle | FileSystemFileHandle] = js.native
 }

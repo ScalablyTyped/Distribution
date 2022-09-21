@@ -22,12 +22,12 @@ trait ModifyEventSubscriptionMessage extends StObject {
   var SnsTopicArn: js.UndefOr[String] = js.undefined
   
   /**
-    *  The type of AWS DMS resource that generates the events you want to subscribe to.  Valid values: replication-instance | replication-task
+    *  The type of DMS resource that generates the events you want to subscribe to.  Valid values: replication-instance | replication-task
     */
   var SourceType: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the AWS DMS event notification subscription to be modified.
+    * The name of the DMS event notification subscription to be modified.
     */
   var SubscriptionName: String
 }
@@ -48,7 +48,7 @@ object ModifyEventSubscriptionMessage {
     
     inline def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
-    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value*))
     
     inline def setSnsTopicArn(value: String): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     

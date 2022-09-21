@@ -1,6 +1,5 @@
 package typings.jsfl
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +17,11 @@ trait FlashFLfile extends StObject {
   
   def getCreationDate(fileOrFolderURI: String): String = js.native
   
-  def getCreationDateObj(fileOrFolderURI: String): Date = js.native
+  def getCreationDateObj(fileOrFolderURI: String): js.Date = js.native
   
   def getModificationDate(fileOrFolderURI: String): String = js.native
   
-  def getModificationDateObj(fileOrFolderURI: String): Date = js.native
+  def getModificationDateObj(fileOrFolderURI: String): js.Date = js.native
   
   def getSize(fileURI: String): Double = js.native
   

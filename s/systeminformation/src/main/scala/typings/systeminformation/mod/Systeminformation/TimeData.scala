@@ -7,29 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 1. General
 trait TimeData extends StObject {
   
-  var current: String
+  var current: Double
   
   var timezone: String
   
   var timezoneName: String
   
-  var uptime: String
+  var uptime: Double
 }
 object TimeData {
   
-  inline def apply(current: String, timezone: String, timezoneName: String, uptime: String): TimeData = {
+  inline def apply(current: Double, timezone: String, timezoneName: String, uptime: Double): TimeData = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], timezoneName = timezoneName.asInstanceOf[js.Any], uptime = uptime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeData]
   }
   
   extension [Self <: TimeData](x: Self) {
     
-    inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     inline def setTimezoneName(value: String): Self = StObject.set(x, "timezoneName", value.asInstanceOf[js.Any])
     
-    inline def setUptime(value: String): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
+    inline def setUptime(value: Double): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
   }
 }

@@ -135,7 +135,7 @@ object mod {
   @js.native
   trait ForceCenter_[NodeDatum /* <: SimulationNodeDatum */]
     extends StObject
-       with Force[NodeDatum, js.Any] {
+       with Force[NodeDatum, Any] {
     
     /**
       * Supplies the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
@@ -183,7 +183,7 @@ object mod {
   @js.native
   trait ForceCollide_[NodeDatum /* <: SimulationNodeDatum */]
     extends StObject
-       with Force[NodeDatum, js.Any] {
+       with Force[NodeDatum, Any] {
     
     /**
       * Supplies the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
@@ -212,29 +212,14 @@ object mod {
       * Returns the current radius accessor function.
       */
     def radius(): js.Function3[/* node */ NodeDatum, /* i */ Double, /* nodes */ js.Array[NodeDatum], Double] = js.native
-    /**
-      * Set the radius accessor function determining the radius for each node in collision detection.
-      *
-      * The radius accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the radius of each node is only recomputed
-      * when the force is initialized or when this method is called with a new radius, and not on every application of the force.
-      *
-      * @param radius A radius accessor function which is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The function returns a radius.
-      */
     def radius(
       radius: js.Function3[/* node */ NodeDatum, /* i */ Double, /* nodes */ js.Array[NodeDatum], Double]
     ): this.type = js.native
     /**
-      * Set the radius used in collision detection to a constant number for each node.
-      *
-      * The constant is internally wrapped into a radius accessor function.
-      *
-      * The radius accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the radius of each node is only recomputed
-      * when the force is initialized or when this method is called with a new radius, and not on every application of the force.
-      *
-      * @param radius A constant radius for each node.
+      * Sets the radius accessor to the specified number or function, re-evaluates the radius accessor for each node, and returns this force.
+      * The radius accessor is invoked for each node in the simulation, being passed the node and its zero-based index.
+      * The resulting number is then stored internally, such that the radius of each node is only recomputed when the
+      * force is initialized or when this method is called with a new radius, and not on every application of the force.
       */
     def radius(radius: Double): this.type = js.native
     
@@ -265,31 +250,14 @@ object mod {
       * Return the current distance accessor, which defaults to implying a default distance of 30.
       */
     def distance(): js.Function3[/* link */ LinkDatum, /* i */ Double, /* links */ js.Array[LinkDatum], Double] = js.native
-    /**
-      * Set the distance accessor to use the specified function,
-      * re-evaluates the distance accessor for each link, and returns this force.
-      *
-      * The distance accessor is invoked for each link, being passed the link, its zero-based index and the complete array of links.
-      * The resulting number is then stored internally, such that the distance of each link is only recomputed when the force is initialized or
-      * when this method is called with a new distance, and not on every application of the force.
-      *
-      * @param distance A distance accessor function which is invoked for each link being passed the link,
-      * its zero-based index and the complete array of links. It returns the distance.
-      */
     def distance(
       distance: js.Function3[/* link */ LinkDatum, /* i */ Double, /* links */ js.Array[LinkDatum], Double]
     ): this.type = js.native
     /**
-      * Set the distance accessor to use the specified constant number for all links,
-      * re-evaluates the distance accessor for each link, and returns this force.
-      *
-      * The constant is internally wrapped into a distance accessor function.
-      *
-      * The distance accessor is invoked for each link, being passed the link, its zero-based index and the complete array of links.
-      * The resulting number is then stored internally, such that the distance of each link is only recomputed when the force is initialized or
-      * when this method is called with a new distance, and not on every application of the force.
-      *
-      * @param distance The constant distance to be used for all links.
+      * Sets the distance accessor to the specified number or function, re-evaluates the distance accessor for each link, and returns this force.
+      * The distance accessor is invoked for each link, being passed the link and its zero-based index.
+      * The resulting number is then stored internally, such that the distance of each link is only recomputed when the
+      * force is initialized or when this method is called with a new distance, and not on every application of the force.
       */
     def distance(distance: Double): this.type = js.native
     
@@ -312,11 +280,16 @@ object mod {
       * as when the nodes or links change, being passed the node, the zero-based index of the node in the node array, and the node array.
       *
       * @param id A node id accessor function which is invoked for each node in the simulation,
-      * being passed the node, the zero-based index of the node in the node array, and the node array. It returns a string to represent the node id which can be used
+      * being passed the node, the zero-based index of the node in the node array, and the node array. It returns a string or number to represent the node id which can be used
       * for matching link source and link target strings during the ForceLink initialization.
       */
     def id(
-      id: js.Function3[/* node */ NodeDatum, /* i */ Double, /* nodesData */ js.Array[NodeDatum], String]
+      id: js.Function3[
+          /* node */ NodeDatum, 
+          /* i */ Double, 
+          /* nodesData */ js.Array[NodeDatum], 
+          String | Double
+        ]
     ): this.type = js.native
     
     /**
@@ -371,31 +344,14 @@ object mod {
       * For details regarding the default behavior see: {@link https://github.com/d3/d3-force#link_strength}
       */
     def strength(): js.Function3[/* link */ LinkDatum, /* i */ Double, /* links */ js.Array[LinkDatum], Double] = js.native
-    /**
-      * Set the strength accessor to use the specified function,
-      * re-evaluates the strength accessor for each link, and returns this force.
-      *
-      * The strength accessor is invoked for each link, being passed the link, its zero-based index and the complete array of links.
-      * The resulting number is then stored internally, such that the strength of each link is only recomputed
-      * when the force is initialized or when this method is called with a new strength, and not on every application of the force.
-      *
-      * @param strength A distance accessor function which is invoked for each link being passed the link,
-      * its zero-based index and the complete array of links. It returns the strength.
-      */
     def strength(
       strength: js.Function3[/* link */ LinkDatum, /* i */ Double, /* links */ js.Array[LinkDatum], Double]
     ): this.type = js.native
     /**
-      * Set the strength accessor to use the specified constant number for all links,
-      * re-evaluates the strength accessor for each link, and returns this force.
-      *
-      * The constant is internally wrapped into a strength accessor function.
-      *
-      * The strength accessor is invoked for each link, being passed the link, its zero-based index and the complete array of links.
-      * The resulting number is then stored internally, such that the strength of each link is only recomputed
-      * when the force is initialized or when this method is called with a new strength, and not on every application of the force.
-      *
-      * @param strength The constant strength to be used for all links.
+      * Sets the strength accessor to the specified number or function, re-evaluates the strength accessor for each link, and returns this force.
+      * The strength accessor is invoked for each link, being passed the link and its zero-based index.
+      * The resulting number is then stored internally, such that the strength of each link is only recomputed when the
+      * force is initialized or when this method is called with a new strength, and not on every application of the force.
       */
     def strength(strength: Double): this.type = js.native
   }
@@ -403,7 +359,7 @@ object mod {
   @js.native
   trait ForceManyBody_[NodeDatum /* <: SimulationNodeDatum */]
     extends StObject
-       with Force[NodeDatum, js.Any] {
+       with Force[NodeDatum, Any] {
     
     /**
       * Returns the current maximum distance over which this force is considered, which defaults to infinity.
@@ -451,39 +407,13 @@ object mod {
       * For details regarding the default behavior see: {@link https://github.com/d3/d3-force#manyBody_strength}
       */
     def strength(): js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double] = js.native
-    /**
-      * Set the strength accessor to the specified function, re-evaluates the strength accessor for each node, and
-      * returns this force.
-      *
-      * A positive value causes nodes to attract each other, similar to gravity, while a negative value causes nodes to repel each other,
-      * similar to electrostatic charge.
-      *
-      * The default represents a constant value of -30.
-      *
-      * The strength accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the force is initialized or
-      * when this method is called with a new strength, and not on every application of the force.
-      *
-      * @param strength A strength accessor function which is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The function returns the strength.
-      */
     def strength(strength: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): this.type = js.native
     /**
-      * Set the strength accessor to the specified constant strength for all nodes, re-evaluates the strength accessor for each node, and
-      * returns this force.
-      *
-      * A positive value causes nodes to attract each other, similar to gravity, while a negative value causes nodes to repel each other,
-      * similar to electrostatic charge.
-      *
-      * The default represents a constant value of -30.
-      *
-      * The constant is internally wrapped into a strength accessor function.
-      *
-      * The strength accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the force is initialized or
-      * when this method is called with a new strength, and not on every application of the force.
-      *
-      * @param strength The constant strength to be used for all nodes.
+      * sets the strength accessor to the specified number or function, re-evaluates the strength accessor for each node, and returns this force.
+      * A positive value causes nodes to attract each other, similar to gravity, while a negative value causes nodes to repel each other, similar to electrostatic charge.
+      * The strength accessor is invoked for each node in the simulation, being passed the node and its zero-based index.
+      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the
+      * force is initialized or when this method is called with a new strength, and not on every application of the force.
       */
     def strength(strength: Double): this.type = js.native
     
@@ -512,7 +442,7 @@ object mod {
   @js.native
   trait ForceRadial_[NodeDatum /* <: SimulationNodeDatum */]
     extends StObject
-       with Force[NodeDatum, js.Any] {
+       with Force[NodeDatum, Any] {
     
     /**
       * Assigns the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
@@ -527,29 +457,12 @@ object mod {
       * Return the current radius accessor for the circle.
       */
     def radius(): js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double] = js.native
-    /**
-      * Set the radius accessor for the circle to the specified function, re-evaluates the radius accessor for each node,
-      * and returns this force.
-      *
-      * The radius accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that radius of the circle for each node is only recomputed when the force is initialized or
-      * when this method is called with a new radius, and not on every application of the force.
-      *
-      * @param radius A radius accessor function for the circle which is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The function returns the radius of the circle.
-      */
     def radius(radius: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): this.type = js.native
     /**
-      * Set the radius accessor for the circle to the specified number, re-evaluates the radius accessor for each node,
-      * and returns this force.
-      *
-      * The constant is internally wrapped into a radius accessor function.
-      *
-      * The radius accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that radius of the circle for each node is only recomputed when the force is initialized or
-      * when this method is called with a new radius, and not on every application of the force.
-      *
-      * @param radius Constant radius of the circle to be used for all nodes.
+      * Sets the circle radius to the specified number or function, re-evaluates the radius accessor for each node, and returns this force.
+      * The radius accessor is invoked for each node in the simulation, being passed the node and its zero-based index.
+      * The resulting number is then stored internally, such that the target radius of each node is only recomputed when
+      * the force is initialized or when this method is called with a new radius, and not on every application of the force.
       */
     def radius(radius: Double): this.type = js.native
     
@@ -557,41 +470,16 @@ object mod {
       *  Returns the current strength accessor, which defaults to a constant strength for all nodes of 0.1.
       */
     def strength(): js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double] = js.native
-    /**
-      * Set the strength accessor to the specified function, re-evaluates the strength accessor for each node, and returns this force.
-      *
-      * The strength determines how much to increment the node’s x-velocity: (x - node.x) × strength.
-      *
-      * For example, a value of 0.1 indicates that the node should move a tenth of the way from its current x-position to the target x-position with each application.
-      * Higher values moves nodes more quickly to the target position, often at the expense of other forces or constraints.
-      *
-      * A value outside the range [0,1] is not recommended.
-      *
-      * The strength accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the force is initialized or
-      * when this method is called with a new strength, and not on every application of the force.
-      *
-      * @param strength A strength accessor function which is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The function returns the strength.
-      */
     def strength(strength: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): this.type = js.native
     /**
-      * Set the strength accessor to the specified constant strength for all nodes, re-evaluates the strength accessor for each node, and returns this force.
-      *
-      * The strength determines how much to increment the node’s x-velocity: (x - node.x) × strength.
-      *
-      * For example, a value of 0.1 indicates that the node should move a tenth of the way from its current x-position to the target x-position with each application.
+      * Sets the strength accessor to the specified number or function, re-evaluates the strength accessor for each node, and returns this force.
+      * The strength determines how much to increment the node’s x- and y-velocity.
+      * For example, a value of 0.1 indicates that the node should move a tenth of the way from its current position to the closest point on the circle with each application.
       * Higher values moves nodes more quickly to the target position, often at the expense of other forces or constraints.
-      *
       * A value outside the range [0,1] is not recommended.
-      *
-      * The constant is internally wrapped into a strength accessor function.
-      *
-      * The strength accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the force is initialized or
-      * when this method is called with a new strength, and not on every application of the force.
-      *
-      * @param strength Constant value of strength to be used for all nodes.
+      * The strength accessor is invoked for each node in the simulation, being passed the node and its zero-based index.
+      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the
+      * force is initialized or when this method is called with a new strength, and not on every application of the force.
       */
     def strength(strength: Double): this.type = js.native
     
@@ -599,29 +487,9 @@ object mod {
       * Return the current x-accessor for the circle center, which defaults to a function returning 0 for all nodes.
       */
     def x(): js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double] = js.native
-    /**
-      * Set the x-coordinate accessor to the specified function, re-evaluates the x-accessor for each node,
-      * and returns this force.
-      *
-      * The x-accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the x-coordinate of the circle center for each node is only recomputed when the force is initialized or
-      * when this method is called with a new x, and not on every application of the force.
-      *
-      * @param x A x-coordinate accessor function for the circle center which is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The function returns the x-coordinate of the circle center.
-      */
     def x(x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): this.type = js.native
     /**
-      * Set the x-coordinate accessor for the circle center to the specified number, re-evaluates the x-accessor for each node,
-      * and returns this force.
-      *
-      * The constant is internally wrapped into an x-coordinate accessor function.
-      *
-      * The x-accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the x-coordinate of the circle center for each node is only recomputed when the force is initialized or
-      * when this method is called with a new x, and not on every application of the force.
-      *
-      * @param x Constant x-coordinate of the circle center to be used for all nodes.
+      * Sets the x-coordinate of the circle center to the specified number and returns this force.
       */
     def x(x: Double): this.type = js.native
     
@@ -629,29 +497,9 @@ object mod {
       * Return the current y-accessor for the circle center, which defaults to a function returning 0 for all nodes.
       */
     def y(): js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double] = js.native
-    /**
-      * Set the y-coordinate accessor to the specified function, re-evaluates the y-accessor for each node,
-      * and returns this force.
-      *
-      * The y-accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the y-coordinate of the circle center for each node is only recomputed when the force is initialized or
-      * when this method is called with a new y, and not on every application of the force.
-      *
-      * @param y A y-coordinate accessor function for the circle center which is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The function returns the y-coordinate of the circle center.
-      */
     def y(y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): this.type = js.native
     /**
-      * Set the y-coordinate accessor for the circle center to the specified number, re-evaluates the y-accessor for each node,
-      * and returns this force.
-      *
-      * The constant is internally wrapped into an y-coordinate accessor function.
-      *
-      * The y-accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the y-coordinate of the circle center for each node is only recomputed when the force is initialized or
-      * when this method is called with a new y, and not on every application of the force.
-      *
-      * @param y Constant y-coordinate of the circle center to be used for all nodes.
+      * Sets the y-coordinate of the circle center to the specified number and returns this force.
       */
     def y(y: Double): this.type = js.native
   }
@@ -659,7 +507,7 @@ object mod {
   @js.native
   trait ForceX_[NodeDatum /* <: SimulationNodeDatum */]
     extends StObject
-       with Force[NodeDatum, js.Any] {
+       with Force[NodeDatum, Any] {
     
     /**
       * Supplies the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
@@ -674,41 +522,16 @@ object mod {
       *  Returns the current strength accessor, which defaults to a constant strength for all nodes of 0.1.
       */
     def strength(): js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double] = js.native
-    /**
-      * Set the strength accessor to the specified function, re-evaluates the strength accessor for each node, and returns this force.
-      *
-      * The strength determines how much to increment the node’s x-velocity: (x - node.x) × strength.
-      *
-      * For example, a value of 0.1 indicates that the node should move a tenth of the way from its current x-position to the target x-position with each application.
-      * Higher values moves nodes more quickly to the target position, often at the expense of other forces or constraints.
-      *
-      * A value outside the range [0,1] is not recommended.
-      *
-      * The strength accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the force is initialized or
-      * when this method is called with a new strength, and not on every application of the force.
-      *
-      * @param strength A strength accessor function which is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The function returns the strength.
-      */
     def strength(strength: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): this.type = js.native
     /**
-      * Set the strength accessor to the specified constant strength for all nodes, re-evaluates the strength accessor for each node, and returns this force.
-      *
+      * Sets the strength accessor to the specified number or function, re-evaluates the strength accessor for each node, and returns this force.
       * The strength determines how much to increment the node’s x-velocity: (x - node.x) × strength.
-      *
       * For example, a value of 0.1 indicates that the node should move a tenth of the way from its current x-position to the target x-position with each application.
       * Higher values moves nodes more quickly to the target position, often at the expense of other forces or constraints.
-      *
       * A value outside the range [0,1] is not recommended.
-      *
-      * The constant is internally wrapped into a strength accessor function.
-      *
-      * The strength accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the force is initialized or
-      * when this method is called with a new strength, and not on every application of the force.
-      *
-      * @param strength Constant value of strength to be used for all nodes.
+      * The strength accessor is invoked for each node in the simulation, being passed the node and its zero-based index.
+      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the
+      * force is initialized or when this method is called with a new strength, and not on every application of the force.
       */
     def strength(strength: Double): this.type = js.native
     
@@ -716,29 +539,12 @@ object mod {
       * Return the current x-accessor, which defaults to a function returning 0 for all nodes.
       */
     def x(): js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double] = js.native
-    /**
-      * Set the x-coordinate accessor to the specified function, re-evaluates the x-accessor for each node,
-      * and returns this force.
-      *
-      * The x-accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the target x-coordinate of each node is only recomputed when the force is initialized or
-      * when this method is called with a new x, and not on every application of the force.
-      *
-      * @param x A x-coordinate accessor function which is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The function returns the x-coordinate.
-      */
     def x(x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): this.type = js.native
     /**
-      * Set the x-coordinate accessor to the specified number, re-evaluates the x-accessor for each node,
-      * and returns this force.
-      *
-      * The constant is internally wrapped into an x-coordinate accessor function.
-      *
-      * The x-accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the target x-coordinate of each node is only recomputed when the force is initialized or
-      * when this method is called with a new x, and not on every application of the force.
-      *
-      * @param x Constant x-coordinate to be used for all nodes.
+      * Sets the x-coordinate accessor to the specified number or function, re-evaluates the x-accessor for each node, and returns this force.
+      * The x-accessor is invoked for each node in the simulation, being passed the node and its zero-based index.
+      * The resulting number is then stored internally, such that the target x-coordinate of each node is only recomputed
+      * when the force is initialized or when this method is called with a new x, and not on every application of the force.
       */
     def x(x: Double): this.type = js.native
   }
@@ -746,7 +552,7 @@ object mod {
   @js.native
   trait ForceY_[NodeDatum /* <: SimulationNodeDatum */]
     extends StObject
-       with Force[NodeDatum, js.Any] {
+       with Force[NodeDatum, Any] {
     
     /**
       * Supplies the array of nodes and random source to this force. This method is called when a force is bound to a simulation via simulation.force
@@ -761,41 +567,16 @@ object mod {
       *  Returns the current strength accessor, which defaults to a constant strength for all nodes of 0.1.
       */
     def strength(): js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double] = js.native
-    /**
-      * Set the strength accessor to the specified function, re-evaluates the strength accessor for each node, and returns this force.
-      *
-      * The strength determines how much to increment the node’s y-velocity: (y - node.y) × strength.
-      *
-      * For example, a value of 0.1 indicates that the node should move a tenth of the way from its current y-position to the target y-position with each application.
-      * Higher values moves nodes more quickly to the target position, often at the expense of other forces or constraints.
-      *
-      * A value outside the range [0,1] is not recommended.
-      *
-      * The strength accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the force is initialized or
-      * when this method is called with a new strength, and not on every application of the force.
-      *
-      * @param strength A strength accessor function which is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The function returns the strength.
-      */
     def strength(strength: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): this.type = js.native
     /**
-      * Set the strength accessor to the specified constant strength for all nodes, re-evaluates the strength accessor for each node, and returns this force.
-      *
+      * Sets the strength accessor to the specified number or function, re-evaluates the strength accessor for each node, and returns this force.
       * The strength determines how much to increment the node’s y-velocity: (y - node.y) × strength.
-      *
       * For example, a value of 0.1 indicates that the node should move a tenth of the way from its current y-position to the target y-position with each application.
       * Higher values moves nodes more quickly to the target position, often at the expense of other forces or constraints.
-      *
       * A value outside the range [0,1] is not recommended.
-      *
-      * The constant is internally wrapped into a strength accessor function.
-      *
-      * The strength accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the force is initialized or
-      * when this method is called with a new strength, and not on every application of the force.
-      *
-      * @param strength Constant value of strength to be used for all nodes.
+      * The strength accessor is invoked for each node in the simulation, being passed the node and its zero-based index.
+      * The resulting number is then stored internally, such that the strength of each node is only recomputed when the
+      * force is initialized or when this method is called with a new strength, and not on every application of the force.
       */
     def strength(strength: Double): this.type = js.native
     
@@ -803,29 +584,12 @@ object mod {
       * Return the current y-accessor, which defaults to a function returning 0 for all nodes.
       */
     def y(): js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double] = js.native
-    /**
-      * Set the y-coordinate accessor to the specified function, re-evaluates the y-accessor for each node,
-      * and returns this force.
-      *
-      * The y-accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the target y-coordinate of each node is only recomputed when the force is initialized or
-      * when this method is called with a new y, and not on every application of the force.
-      *
-      * @param y A y-coordinate accessor function which is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The function returns the y-coordinate.
-      */
     def y(y: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): this.type = js.native
     /**
-      * Set the y-coordinate accessor to the specified number, re-evaluates the y-accessor for each node,
-      * and returns this force.
-      *
-      * The constant is internally wrapped into a y-coordinate accessor function.
-      *
-      * The y-accessor is invoked for each node in the simulation, being passed the node, its zero-based index and the complete array of nodes.
-      * The resulting number is then stored internally, such that the target y-coordinate of each node is only recomputed when the force is initialized or
-      * when this method is called with a new y, and not on every application of the force.
-      *
-      * @param y Constant y-coordinate to be used for all nodes.
+      * Sets the y-coordinate accessor to the specified number or function, re-evaluates the y-accessor for each node, and returns this force.
+      * The y-accessor is invoked for each node in the simulation, being passed the node and its zero-based index.
+      * The resulting number is then stored internally, such that the target y-coordinate of each node is only recomputed
+      * when the force is initialized or when this method is called with a new y, and not on every application of the force.
       */
     def y(y: Double): this.type = js.native
   }
@@ -910,19 +674,10 @@ object mod {
     def find(x: Double, y: Double, radius: Double): js.UndefOr[NodeDatum] = js.native
     
     /**
-      * Remove a previously registered force.
-      *
-      * @param name Name of the registered force.
-      * @param force Use null to remove force.
+      * If force is specified, assigns the force for the specified name and returns this simulation.
+      * To remove the force with the given name, pass null as the force.
       */
-    def force(name: String, force: Null): this.type = js.native
-    /**
-      * Assign the force for the specified name and return this simulation.
-      * (By default, new simulations have no forces.)
-      *
-      * @param name Name to register the force under.
-      * @param force A force to use with the simulation.
-      */
+    def force(name: String): this.type = js.native
     def force(name: String, force: Force[NodeDatum, LinkDatum]): this.type = js.native
     /**
       * Return the force with the specified name, or undefined if there is no such force.
@@ -933,7 +688,9 @@ object mod {
       *
       * @param name Name of the registered force.
       */
-    def force[F /* <: Force[NodeDatum, LinkDatum] */](name: String): js.UndefOr[F] = js.native
+    // tslint:disable-next-line:no-unnecessary-generics
+    @JSName("force")
+    def force_F_ForceNodeDatumLinkDatum_Union[F /* <: Force[NodeDatum, LinkDatum] */](name: String): js.UndefOr[F] = js.native
     
     /**
       * Returns the simulation’s array of nodes as specified to the constructor.
@@ -968,49 +725,18 @@ object mod {
       */
     def nodes(nodesData: js.Array[NodeDatum]): this.type = js.native
     
+    def on(typenames: tick | end): this.type = js.native
+    def on(typenames: tick | end, listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+    /**
+      * Sets the event listener for the specified typenames and returns this simulation.
+      * If an event listener was already registered for the same type and name, the existing listener is removed before the new listener is added.
+      * If listener is null, removes the current event listeners for the specified typenames, if any.
+      * When a specified event is dispatched, each listener will be invoked with the this context as the simulation.
+      */
     def on(typenames: String): this.type = js.native
     def on(typenames: String, listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
     @JSName("on")
-    def on_Union(typenames: String): js.UndefOr[js.ThisFunction0[/* this */ Simulation[NodeDatum, LinkDatum], Unit]] = js.native
-    @JSName("on")
-    def on_end(typenames: end): this.type = js.native
-    @JSName("on")
-    def on_end(typenames: end, listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
-    @JSName("on")
-    def on_end_Union(typenames: end): js.UndefOr[js.ThisFunction0[/* this */ Simulation[NodeDatum, LinkDatum], Unit]] = js.native
-    /**
-      * Remove the current event listeners for the specified typenames, if any, return the simulation.
-      *
-      * @param typenames The typenames is a string containing one or more typename separated by whitespace. Each typename is a type,
-      * optionally followed by a period (.) and a name, such as "tick.foo" and "tick.bar"; the name allows multiple listeners to be registered for the same type.
-      * The type must be one of the following: "tick" (after each tick of the simulation’s internal timer) or
-      * "end" (after the simulation’s timer stops when alpha < alphaMin).
-      * @param listener Use null to remove the listener.
-      */
-    @JSName("on")
-    def on_tick(typenames: tick): this.type = js.native
-    /**
-      * Set the event listener for the specified typenames and return this simulation.
-      * If an event listener was already registered for the same type and name,
-      * the existing listener is removed before the new listener is added.
-      * When a specified event is dispatched, each listener will be invoked with the this context as the simulation.
-      *
-      * The type must be one of the following:
-      * - tick [after each tick of the simulation’s internal timer]
-      * - end [after the simulation’s timer stops when alpha < alphaMin]
-      *
-      * Note that tick events are not dispatched when simulation.tick is called manually;
-      * events are only dispatched by the internal timer and are intended for interactive rendering of the simulation.
-      * To affect the simulation, register forces instead of modifying nodes’ positions or velocities inside a tick event listener.
-      *
-      * @param typenames The typenames is a string containing one or more typename separated by whitespace. Each typename is a type,
-      * optionally followed by a period (.) and a name, such as "tick.foo" and "tick.bar"; the name allows multiple listeners to be registered for the same type.
-      * The type must be one of the following: "tick" (after each tick of the simulation’s internal timer) or
-      * "end" (after the simulation’s timer stops when alpha < alphaMin).
-      * @param listener An event listener function which is invoked with the this context of the simulation.
-      */
-    @JSName("on")
-    def on_tick(typenames: tick, listener: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+    def on_Union(typenames: tick | end): js.UndefOr[js.ThisFunction0[/* this */ Simulation[NodeDatum, LinkDatum], Unit]] = js.native
     /**
       * Return the first currently-assigned listener matching the specified typenames, if any.
       *
@@ -1020,7 +746,7 @@ object mod {
       * "end" (after the simulation’s timer stops when alpha < alphaMin).
       */
     @JSName("on")
-    def on_tick_Union(typenames: tick): js.UndefOr[js.ThisFunction0[/* this */ Simulation[NodeDatum, LinkDatum], Unit]] = js.native
+    def on_Union(typenames: String): js.UndefOr[js.ThisFunction0[/* this */ Simulation[NodeDatum, LinkDatum], Unit]] = js.native
     
     /**
       * Returns this simulation’s current random source which defaults to a fixed-seed linear congruential generator.
@@ -1057,8 +783,8 @@ object mod {
       * creation or by calling simulation.restart. The natural number of ticks when the simulation is started is
       * ⌈log(alphaMin) / log(1 - alphaDecay)⌉; by default, this is 300.
       */
-    def tick(): Unit = js.native
-    def tick(iterations: Double): Unit = js.native
+    def tick(): this.type = js.native
+    def tick(iterations: Double): this.type = js.native
     
     /**
       * Return the current target alpha value, which defaults to 0.4.

@@ -4,25 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * `File` containing source content.
-  */
 trait SchemaFile extends StObject {
   
   /**
-    * Textual Content.
+    * Required. Textual Content.
     */
-  var content: js.UndefOr[String] = js.undefined
+  var content: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Fingerprint (e.g. github sha) associated with the `File`.
     */
-  var fingerprint: js.UndefOr[String] = js.undefined
+  var fingerprint: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * File name.
+    * Required. File name.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFile {
   
@@ -35,13 +32,19 @@ object SchemaFile {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
+    inline def setContentNull: Self = StObject.set(x, "content", null)
+    
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
+    inline def setFingerprintNull: Self = StObject.set(x, "fingerprint", null)
+    
     inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

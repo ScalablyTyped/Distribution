@@ -8,5 +8,5 @@ object listKeyPoliciesOutputMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/ListKeyPoliciesOutput", "ListKeyPoliciesOutput")
   @js.native
-  val ListKeyPoliciesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListKeyPoliciesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

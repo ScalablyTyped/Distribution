@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Compute numerical stats over an individual column, including number of
-  * distinct values and value count distribution.
-  */
 trait SchemaGooglePrivacyDlpV2CategoricalStatsConfig extends StObject {
   
   /**
-    * Field to compute categorical stats on. All column types are supported
-    * except for arrays and structs. However, it may be more informative to use
-    * NumericalStats when the field type is supported, depending on the data.
+    * Field to compute categorical stats on. All column types are supported except for arrays and structs. However, it may be more informative to use NumericalStats when the field type is supported, depending on the data.
     */
   var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
 }

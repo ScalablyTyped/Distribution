@@ -12,12 +12,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def AddOrUndeleteUserAccount(
     User: IUserAccount,
     successCallback: js.Function1[/* result */ IUserAccount, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddOrUndeleteUserAccount(
     User: IUserAccount,
     successCallback: js.Function1[/* result */ IUserAccount, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddOrUndeleteUserAccount(
@@ -29,12 +29,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def AddOrUndeleteUserAccount(
     User: IUserAccount,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddOrUndeleteUserAccount(
     User: IUserAccount,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddOrUndeleteUserAccount(
@@ -49,12 +49,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def AddUserAccount(
     User: IUserAccount,
     successCallback: js.Function1[/* result */ IUserAccount, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddUserAccount(
     User: IUserAccount,
     successCallback: js.Function1[/* result */ IUserAccount, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddUserAccount(
@@ -66,12 +66,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def AddUserAccount(
     User: IUserAccount,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def AddUserAccount(
     User: IUserAccount,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def AddUserAccount(
@@ -86,12 +86,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def GetLoginAccountOfUser(
     UserID: Double,
     successCallback: js.Function1[/* result */ ILoginAccount, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetLoginAccountOfUser(
     UserID: Double,
     successCallback: js.Function1[/* result */ ILoginAccount, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetLoginAccountOfUser(
@@ -103,12 +103,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def GetLoginAccountOfUser(
     UserID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetLoginAccountOfUser(
     UserID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetLoginAccountOfUser(UserID: Double, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -117,11 +117,11 @@ trait IVaultUserOperationsAsync extends StObject {
   def GetLoginAccounts(successCallback: js.Function1[/* result */ ILoginAccounts, Unit]): Unit = js.native
   def GetLoginAccounts(
     successCallback: js.Function1[/* result */ ILoginAccounts, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetLoginAccounts(
     successCallback: js.Function1[/* result */ ILoginAccounts, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetLoginAccounts(
@@ -131,11 +131,11 @@ trait IVaultUserOperationsAsync extends StObject {
   ): Unit = js.native
   def GetLoginAccounts(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetLoginAccounts(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetLoginAccounts(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -145,12 +145,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def GetUserAccount(
     UserID: Double,
     successCallback: js.Function1[/* result */ IUserAccount, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserAccount(
     UserID: Double,
     successCallback: js.Function1[/* result */ IUserAccount, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserAccount(
@@ -162,12 +162,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def GetUserAccount(
     UserID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserAccount(
     UserID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserAccount(UserID: Double, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -176,11 +176,11 @@ trait IVaultUserOperationsAsync extends StObject {
   def GetUserAccounts(successCallback: js.Function1[/* result */ IUserAccounts, Unit]): Unit = js.native
   def GetUserAccounts(
     successCallback: js.Function1[/* result */ IUserAccounts, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserAccounts(
     successCallback: js.Function1[/* result */ IUserAccounts, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserAccounts(
@@ -190,11 +190,11 @@ trait IVaultUserOperationsAsync extends StObject {
   ): Unit = js.native
   def GetUserAccounts(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserAccounts(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserAccounts(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -204,12 +204,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def GetUserIDByGUID(
     UserGUID: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserIDByGUID(
     UserGUID: String,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserIDByGUID(
@@ -221,12 +221,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def GetUserIDByGUID(
     UserGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserIDByGUID(
     UserGUID: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserIDByGUID(UserGUID: String, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -235,11 +235,11 @@ trait IVaultUserOperationsAsync extends StObject {
   def GetUserList(successCallback: js.Function1[/* result */ IKeyNamePairs, Unit]): Unit = js.native
   def GetUserList(
     successCallback: js.Function1[/* result */ IKeyNamePairs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserList(
     successCallback: js.Function1[/* result */ IKeyNamePairs, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserList(
@@ -249,11 +249,11 @@ trait IVaultUserOperationsAsync extends StObject {
   ): Unit = js.native
   def GetUserList(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetUserList(
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetUserList(successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
@@ -263,12 +263,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def ModifyUserAccount(
     User: IUserAccount,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ModifyUserAccount(
     User: IUserAccount,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ModifyUserAccount(
@@ -280,12 +280,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def ModifyUserAccount(
     User: IUserAccount,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ModifyUserAccount(
     User: IUserAccount,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def ModifyUserAccount(
@@ -300,12 +300,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def RemoveUserAccount(
     UserID: Double,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveUserAccount(
     UserID: Double,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveUserAccount(
@@ -317,12 +317,12 @@ trait IVaultUserOperationsAsync extends StObject {
   def RemoveUserAccount(
     UserID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveUserAccount(
     UserID: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def RemoveUserAccount(UserID: Double, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native

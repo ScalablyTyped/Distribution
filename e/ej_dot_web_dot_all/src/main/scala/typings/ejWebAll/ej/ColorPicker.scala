@@ -13,19 +13,19 @@ trait ColorPicker
     * @param {any} Specified HSV code converted to RGB
     * @returns {any}
     */
-  def HSVToRGB(HSV: js.Any): js.Any = js.native
+  def HSVToRGB(HSV: Any): Any = js.native
   
   /** Convert color value from RGB to HEX
     * @param {any} Specified RGB code converted to HEX code
     * @returns {string}
     */
-  def RGBToHEX(RGB: js.Any): String = js.native
+  def RGBToHEX(RGB: Any): String = js.native
   
   /** Convert color value from RGB to HSV
     * @param {any} Specified RGB code converted to HSV code
     * @returns {any}
     */
-  def RGBToHSV(RGB: js.Any): js.Any = js.native
+  def RGBToHSV(RGB: Any): Any = js.native
   
   var defaults: Model = js.native
   
@@ -42,7 +42,7 @@ trait ColorPicker
   /** Gets the selected color in RGB format
     * @returns {any}
     */
-  def getColor(): js.Any = js.native
+  def getColor(): Any = js.native
   
   /** Gets the selected color value as string
     * @returns {string}
@@ -53,7 +53,7 @@ trait ColorPicker
     * @param {string} Specified HEX code converted to RGB
     * @returns {any}
     */
-  def hexCodeToRGB(colorCode: String): js.Any = js.native
+  def hexCodeToRGB(colorCode: String): Any = js.native
   
   /** Hides the ColorPicker popup, if in opened state.
     * @returns {void}
@@ -289,7 +289,7 @@ object ColorPicker {
     
     /** returns the color picker model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -304,7 +304,7 @@ object ColorPicker {
     
     extension [Self <: CreateEventArgs](x: Self) {
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -387,7 +387,7 @@ object ColorPicker {
     /** This property allows to define the custom colors in the palette model.Custom palettes are created by passing a comma delimited string of HEX values or an array of colors.
       * @Default {empty}
       */
-    var custom: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var custom: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Fires after Color picker control is destroyed. If the user want to perform any operation after the color picker control destroyed then the user can make use of this destroy event.
       */
@@ -411,7 +411,7 @@ object ColorPicker {
     /** It allows to define the characteristics of the ColorPicker control. It will helps to extend the capability of an HTML element.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Defines the localized text values in button and tooltip.
       * @Default {en-US}
@@ -532,11 +532,11 @@ object ColorPicker {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setCustom(value: js.Array[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: js.Array[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      inline def setCustomVarargs(value: js.Any*): Self = StObject.set(x, "custom", js.Array(value :_*))
+      inline def setCustomVarargs(value: Any*): Self = StObject.set(x, "custom", js.Array(value*))
       
       inline def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
@@ -554,7 +554,7 @@ object ColorPicker {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       

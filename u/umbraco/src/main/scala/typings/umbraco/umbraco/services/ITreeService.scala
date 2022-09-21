@@ -44,7 +44,7 @@ trait ITreeService extends StObject {
     * @param {object} treeNode to retrive child node from
     * @param {int} id id of child node
     */
-  def getChildNode(treeNode: js.Object, id: Double): js.Any = js.native
+  def getChildNode(treeNode: js.Object, id: Double): Any = js.native
   
   /**
     * @ngdoc method
@@ -58,7 +58,7 @@ trait ITreeService extends StObject {
     * @param {object} args.node tree node object to retrieve the children for
     * @param {string} args.section current section alias
     */
-  def getChildren(args: js.Any*): js.Any = js.native
+  def getChildren(args: Any*): Any = js.native
   
   /**
     * @ngdoc method
@@ -72,7 +72,7 @@ trait ITreeService extends StObject {
     * @param {int} id id of descendant node
     * @param {string} treeAlias - optional tree alias, if fetching descendant node from a child of a listview document
     */
-  def getDescendantNode(treeNode: js.Object, id: Double, treeAlias: String): js.Any = js.native
+  def getDescendantNode(treeNode: js.Object, id: Double, treeAlias: String): Any = js.native
   
   /**
     * @ngdoc method
@@ -85,7 +85,7 @@ trait ITreeService extends StObject {
     * @param {object} args Arguments
     * @param {string} args.treeNode tree node object to retrieve the menu for
     */
-  def getMenu(args: js.Any*): js.Any = js.native
+  def getMenu(args: Any*): Any = js.native
   
   /**
     * @ngdoc method
@@ -111,7 +111,7 @@ trait ITreeService extends StObject {
     * @param {string} args.section Section alias
     * @param {string} args.cacheKey Optional cachekey
     */
-  def getTree(args: ITreeArgs): IPromise[js.Any] = js.native
+  def getTree(args: ITreeArgs): IPromise[Any] = js.native
   
   /**
     * @ngdoc method
@@ -149,7 +149,7 @@ trait ITreeService extends StObject {
     * Gets the root node of the current tree type for a given tree node
     * @param {object} treeNode to retrive tree root node from
     */
-  def getTreeRoot(treeNode: js.Object): js.Any = js.native
+  def getTreeRoot(treeNode: js.Object): Any = js.native
   
   /**
     * @ngdoc method
@@ -164,7 +164,7 @@ trait ITreeService extends StObject {
     * @param {object} args.node The tree node
     * @param {object} args.section The current section
     */
-  def loadNodeChildren(args: INodeArgs): IPromise[js.Any] = js.native
+  def loadNodeChildren(args: INodeArgs): IPromise[Any] = js.native
   
   /**
     * @ngdoc method

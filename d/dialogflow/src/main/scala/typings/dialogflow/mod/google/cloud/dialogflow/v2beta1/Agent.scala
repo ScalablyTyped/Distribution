@@ -7,7 +7,6 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.Tier
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Agent.
   * @param [properties] Properties to set
   */
-class Agent ()
+open class Agent ()
   extends StObject
      with IAgent {
   def this(properties: IAgent) = this()
@@ -76,7 +75,7 @@ class Agent ()
     * Converts this Agent to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object Agent {
   
@@ -192,6 +191,8 @@ object Agent {
   inline def create(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Agent]
   inline def create(properties: IAgent): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
+  inline def decode(reader: js.typedarray.Uint8Array): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Agent]
   /**
     * Decodes an Agent message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -203,9 +204,8 @@ object Agent {
   /* static member */
   inline def decode(reader: Reader): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Agent]
   inline def decode(reader: Reader, length: Double): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Agent]
-  inline def decode(reader: Uint8Array): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Agent]
-  inline def decode(reader: Uint8Array, length: Double): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Agent]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Agent]
   /**
     * Decodes an Agent message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -215,7 +215,6 @@ object Agent {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Agent]
-  inline def decodeDelimited(reader: Uint8Array): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
   /**
     * Encodes the specified Agent message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Agent.verify|verify} messages.
@@ -243,7 +242,7 @@ object Agent {
     * @returns Agent
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  inline def fromObject(`object`: StringDictionary[Any]): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
   /**
     * Creates a plain object from an Agent message. Also converts values to other types if specified.
@@ -252,8 +251,8 @@ object Agent {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: Agent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: Agent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Agent): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: Agent, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an Agent message.
@@ -261,5 +260,5 @@ object Agent {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strrchrMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(haystack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(haystack: js.Any, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(haystack: Unit, needle: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(haystack: Any): Any = ^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(haystack: Any, needle: Any): Any = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(haystack: Unit, needle: Any): Any = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/strrchr", JSImport.Namespace)
   @js.native

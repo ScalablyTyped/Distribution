@@ -22,11 +22,11 @@ trait ASPxClientUploadControlFile extends StObject {
   /**
     * Provides access to the file as a native Javascript object.
     */
-  var sourceFileObject: js.Any
+  var sourceFileObject: Any
 }
 object ASPxClientUploadControlFile {
   
-  inline def apply(name: String, size: Double, sourceFileObject: js.Any): ASPxClientUploadControlFile = {
+  inline def apply(name: String, size: Double, sourceFileObject: Any): ASPxClientUploadControlFile = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], sourceFileObject = sourceFileObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientUploadControlFile]
   }
@@ -37,6 +37,6 @@ object ASPxClientUploadControlFile {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setSourceFileObject(value: js.Any): Self = StObject.set(x, "sourceFileObject", value.asInstanceOf[js.Any])
+    inline def setSourceFileObject(value: Any): Self = StObject.set(x, "sourceFileObject", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,6 @@
 package typings.dropboxjs.Dropbox
 
 import typings.dropboxjs.Dropbox.File.Stat
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,7 +138,7 @@ object Http {
   
   trait UploadCursor extends StObject {
     
-    var expiresAt: Date
+    var expiresAt: js.Date
     
     var offset: Double
     
@@ -149,14 +148,14 @@ object Http {
   }
   object UploadCursor {
     
-    inline def apply(expiresAt: Date, offset: Double, tag: String, toJSON: () => js.Object): UploadCursor = {
+    inline def apply(expiresAt: js.Date, offset: Double, tag: String, toJSON: () => js.Object): UploadCursor = {
       val __obj = js.Dynamic.literal(expiresAt = expiresAt.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[UploadCursor]
     }
     
     extension [Self <: UploadCursor](x: Self) {
       
-      inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

@@ -25,12 +25,12 @@ trait IVideo
     * @param url String/Array The new value.
     */
   @JSName("setUrl")
-  var setUrl_IVideo: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setUrl_IVideo: js.UndefOr[js.Function1[/* url */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Updates the URL to the poster even if it is rendered
     * @param newUrl Object
     */
-  var updatePosterUrl: js.UndefOr[js.Function1[/* newUrl */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updatePosterUrl: js.UndefOr[js.Function1[/* newUrl */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IVideo {
   
@@ -53,11 +53,11 @@ object IVideo {
     
     inline def setSetPosterUrlUndefined: Self = StObject.set(x, "setPosterUrl", js.undefined)
     
-    inline def setSetUrl(value: /* url */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+    inline def setSetUrl(value: /* url */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
     
     inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     
-    inline def setUpdatePosterUrl(value: /* newUrl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updatePosterUrl", js.Any.fromFunction1(value))
+    inline def setUpdatePosterUrl(value: /* newUrl */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updatePosterUrl", js.Any.fromFunction1(value))
     
     inline def setUpdatePosterUrlUndefined: Self = StObject.set(x, "updatePosterUrl", js.undefined)
   }

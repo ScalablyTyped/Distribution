@@ -1,14 +1,14 @@
 package typings.nodeRed
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.express.mod.Express
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
+import typings.expressServeStaticCore.mod.Application
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.nodeRedEditorApi.mod.Auth
 import typings.nodeRedEditorClient.mod.NodeInstance
 import typings.nodeRedEditorClient.mod.NodeProperties
@@ -25,9 +25,9 @@ import typings.nodeRedRuntime.mod.InternalNodesModule
 import typings.nodeRedRuntime.mod.LocalSettings
 import typings.nodeRedRuntime.mod.PersistentSettings
 import typings.nodeRedRuntime.mod.RuntimeModule
+import typings.nodeRedUtil.mod.Hooks
 import typings.nodeRedUtil.mod.Log
 import typings.nodeRedUtil.mod.Util
-import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,7 +111,7 @@ object mod extends Shortcut {
   
   type NodeAPISettingsWithData = typings.nodeRedRegistry.mod.NodeAPISettingsWithData
   
-  type NodeConstructor[TNode /* <: Node[TCreds] */, TNodeDef /* <: NodeDef */, TCreds] = typings.nodeRedRegistry.mod.NodeConstructor[TNode, TNodeDef, TCreds]
+  type NodeConstructor[TNode /* <: Node[TCreds] */, TNodeDef /* <: NodeDef */, TCreds /* <: js.Object */] = typings.nodeRedRegistry.mod.NodeConstructor[TNode, TNodeDef, TCreds]
   
   type NodeContext = typings.nodeRedRegistry.mod.NodeContext
   
@@ -151,25 +151,14 @@ object mod extends Shortcut {
     var events: EventEmitter
     
     /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
+      * Runtime hooks engine
       */
+    var hooks: Hooks
+    
     /**
       * The express application for the Editor Admin API
       */
-    def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-    /**
-      * The express application for the Editor Admin API
-      */
-    def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-    /**
-      * The express application for the Editor Admin API
-      */
-    def httpAdmin(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-    /**
-      * The express application for the Editor Admin API
-      */
-    def httpAdmin(req: IncomingMessage, res: ServerResponse): js.Any
+    def httpAdmin(): Application
     /**
       * The express application for the Editor Admin API
       */
@@ -177,25 +166,9 @@ object mod extends Shortcut {
     val httpAdmin_Original: Express
     
     /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    /**
       * The express application for HTTP Nodes
       */
-    def httpNode(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-    /**
-      * The express application for HTTP Nodes
-      */
-    def httpNode(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-    /**
-      * The express application for HTTP Nodes
-      */
-    def httpNode(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-    /**
-      * The express application for HTTP Nodes
-      */
-    def httpNode(req: IncomingMessage, res: ServerResponse): js.Any
+    def httpNode(): Application
     /**
       * The express application for HTTP Nodes
       */
@@ -207,7 +180,16 @@ object mod extends Shortcut {
       * @param httpServer - the HTTP server object to use
       * @param userSettings - an object containing the runtime settings
       */
-    def init(httpServer: Server, userSettings: LocalSettings): Unit
+    def init(
+      httpServer: Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ],
+      userSettings: LocalSettings
+    ): Unit
     
     /**
       * Logging utilities
@@ -232,7 +214,13 @@ object mod extends Shortcut {
     /**
       * The HTTP Server used by the runtime
       */
-    val server: Server
+    val server: Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ]
     
     /**
       * This provides access to the internal settings module of the
@@ -265,20 +253,33 @@ object mod extends Shortcut {
     inline def apply(
       auth: Auth,
       events: EventEmitter,
+      hooks: Hooks,
       httpAdmin: Express,
       httpNode: Express,
-      init: (Server, LocalSettings) => Unit,
+      init: (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ], LocalSettings) => Unit,
       log: Log,
       nodes: InternalNodesModule,
       runtime: RuntimeModule,
-      server: Server,
+      server: Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ],
       settings: PersistentSettings,
       start: () => js.Promise[Unit],
       stop: () => js.Promise[Unit],
       util: Util,
       version: String
     ): NodeRedApp = {
-      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], httpAdmin = httpAdmin.asInstanceOf[js.Any], httpNode = httpNode.asInstanceOf[js.Any], init = js.Any.fromFunction2(init), log = log.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), util = util.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any], httpAdmin = httpAdmin.asInstanceOf[js.Any], httpNode = httpNode.asInstanceOf[js.Any], init = js.Any.fromFunction2(init), log = log.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), util = util.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeRedApp]
     }
     
@@ -288,11 +289,21 @@ object mod extends Shortcut {
       
       inline def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
+      inline def setHooks(value: Hooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      
       inline def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
       
       inline def setHttpNode(value: Express): Self = StObject.set(x, "httpNode", value.asInstanceOf[js.Any])
       
-      inline def setInit(value: (Server, LocalSettings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+      inline def setInit(
+        value: (Server[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[IncomingMessage]
+              ]
+            ], LocalSettings) => Unit
+      ): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
       
       inline def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
@@ -300,7 +311,15 @@ object mod extends Shortcut {
       
       inline def setRuntime(value: RuntimeModule): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(
+        value: Server[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[IncomingMessage]
+              ]
+            ]
+      ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
       inline def setSettings(value: PersistentSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       

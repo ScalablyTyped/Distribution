@@ -43,7 +43,7 @@ object EmittedChunk {
     
     inline def setImplicitlyLoadedAfterOneOfUndefined: Self = StObject.set(x, "implicitlyLoadedAfterOneOf", js.undefined)
     
-    inline def setImplicitlyLoadedAfterOneOfVarargs(value: String*): Self = StObject.set(x, "implicitlyLoadedAfterOneOf", js.Array(value :_*))
+    inline def setImplicitlyLoadedAfterOneOfVarargs(value: String*): Self = StObject.set(x, "implicitlyLoadedAfterOneOf", js.Array(value*))
     
     inline def setImporter(value: String): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetSolutionMetricsResponse extends StObject {
   
   /**
-    * The metrics for the solution version.
+    * The metrics for the solution version. For more information, see  Evaluating a solution version with metrics .
     */
   var metrics: js.UndefOr[Metrics] = js.undefined
   

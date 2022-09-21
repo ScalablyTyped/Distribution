@@ -8,20 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableRowData extends StObject {
   
   /**
-    *
     * Returns the index number of the row within the rows collection of the table. Zero-indexed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var index: js.UndefOr[Double] = js.undefined
   
   /**
+    * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+    If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
     *
-    * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
-  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var values: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
 }
 object TableRowData {
   
@@ -36,10 +37,10 @@ object TableRowData {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

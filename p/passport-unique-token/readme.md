@@ -9,16 +9,13 @@ Unique Token authentication strategy for Passport.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | passport-unique-token |
-| Keywords           | passport, token, auth, authentication |
+| Keywords           | passport, token, auth, authentication, express, nest |
 | # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 113259 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19573.666666666668 |
+| # stars            | 35.0 |
 
 ## Links
-- [Homepage](https://github.com/lughino/passport-unique-token)
-- [Bugs](https://github.com/lughino/passport-unique-token/issues)
-- [Repository](https://github.com/lughino/passport-unique-token)
 - [Npm](https://www.npmjs.com/package/passport-unique-token)
     
 

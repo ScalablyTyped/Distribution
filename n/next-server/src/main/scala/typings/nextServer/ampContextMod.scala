@@ -9,5 +9,5 @@ object ampContextMod {
   
   @JSImport("next-server/dist/lib/amp-context", "AmpStateContext")
   @js.native
-  val AmpStateContext: Context[js.Any] = js.native
+  val AmpStateContext: Context[Any] = js.native
 }

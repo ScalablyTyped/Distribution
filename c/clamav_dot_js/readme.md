@@ -10,10 +10,10 @@ A node.js library for ClamAV.
 | ------------------ | :-------------: |
 | Full name          | clamav.js |
 | Keywords           | clamav.js, clamav, clamd, daemon, virus, scan, node.js |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 48461 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3697.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/yongtang/clamav.js)

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IShim extends StObject {
   
-  def dispose(dummy: js.Any): Unit
+  def dispose(dummy: Any): Unit
 }
 object IShim {
   
-  inline def apply(dispose: js.Any => Unit): IShim = {
+  inline def apply(dispose: Any => Unit): IShim = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction1(dispose))
     __obj.asInstanceOf[IShim]
   }
   
   extension [Self <: IShim](x: Self) {
     
-    inline def setDispose(value: js.Any => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
+    inline def setDispose(value: Any => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
   }
 }

@@ -15,7 +15,7 @@ object d3v3adaptorMod {
   
   @JSImport("webcola/dist/src/d3v3adaptor", "D3StyleLayoutAdaptor")
   @js.native
-  class D3StyleLayoutAdaptor ()
+  open class D3StyleLayoutAdaptor ()
     extends Layout
        with ID3StyleLayoutAdaptor {
     

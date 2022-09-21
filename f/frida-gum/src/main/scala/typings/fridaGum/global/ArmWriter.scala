@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ArmWriter")
 @js.native
-class ArmWriter protected ()
+open class ArmWriter protected ()
   extends StObject
      with typings.fridaGum.ArmWriter {
   /**

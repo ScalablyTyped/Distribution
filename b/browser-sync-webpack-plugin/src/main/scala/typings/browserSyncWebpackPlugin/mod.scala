@@ -1,19 +1,17 @@
 package typings.browserSyncWebpackPlugin
 
 import typings.browserSync.mod.BrowserSyncInstance
-import typings.std.Error
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("browser-sync-webpack-plugin", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("browser-sync-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ protected ()
-    extends StObject
-       with Plugin {
+  open class ^ protected () extends StObject {
     def this(browserSyncOptions: typings.browserSync.mod.Options) = this()
     def this(browserSyncOptions: typings.browserSync.mod.Options, pluginOptions: Options) = this()
   }
@@ -26,7 +24,7 @@ object mod {
       * BrowserSync instance init callback.
       * @defaultValue undefined
       */
-    var callback: js.UndefOr[js.Function2[/* error */ Error, /* bs */ BrowserSyncInstance, Unit]] = js.undefined
+    var callback: js.UndefOr[js.Function2[/* error */ js.Error, /* bs */ BrowserSyncInstance, Unit]] = js.undefined
     
     /**
       * allows BrowserSync to inject changes inplace instead of reloading the page when changed
@@ -56,7 +54,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCallback(value: (/* error */ Error, /* bs */ BrowserSyncInstance) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* error */ js.Error, /* bs */ BrowserSyncInstance) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       

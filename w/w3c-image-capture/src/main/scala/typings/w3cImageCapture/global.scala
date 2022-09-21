@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("ImageCapture")
   @js.native
-  class ImageCapture protected ()
+  open class ImageCapture protected ()
     extends StObject
        with typings.w3cImageCapture.ImageCapture {
     def this(videoTrack: MediaStreamTrack) = this()

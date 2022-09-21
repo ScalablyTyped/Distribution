@@ -44,7 +44,7 @@ object XFrameLoader {
     acquire: () => Unit,
     cancel: () => Unit,
     load: (XFrame, String, SeqEquiv[PropertyValue], XLoadEventListener) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFrameLoader = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), load = js.Any.fromFunction4(load), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

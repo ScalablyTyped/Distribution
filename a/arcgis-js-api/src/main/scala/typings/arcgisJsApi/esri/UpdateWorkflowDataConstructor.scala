@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UpdateWorkflowDataConstructor
   extends StObject
-     with Instantiable0[UpdateWorkflowData]
+     with /**
+  * This object supports the [Editor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html)
+  */
+Instantiable0[UpdateWorkflowData]
      with Instantiable1[/* properties */ UpdateWorkflowDataProperties, UpdateWorkflowData]

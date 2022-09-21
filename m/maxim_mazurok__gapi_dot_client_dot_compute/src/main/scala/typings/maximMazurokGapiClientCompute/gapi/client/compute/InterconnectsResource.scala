@@ -2,10 +2,10 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientCompute.anon.FieldsInterconnect
-import typings.maximMazurokGapiClientCompute.anon.FieldsKey
-import typings.maximMazurokGapiClientCompute.anon.FieldsKeyOauthtokenPrettyPrintProject
 import typings.maximMazurokGapiClientCompute.anon.InterconnectKey
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
+import typings.maximMazurokGapiClientCompute.anon.UploadTypeUploadprotocolUserIpXgafv
+import typings.maximMazurokGapiClientCompute.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,8 +26,8 @@ trait InterconnectsResource extends StObject {
   def getDiagnostics(request: FieldsInterconnect): Request[InterconnectsGetDiagnosticsResponse] = js.native
   
   /** Creates a Interconnect in the specified project using the data included in the request. */
-  def insert(request: FieldsKeyOauthtokenPrettyPrintProject): Request[Operation] = js.native
-  def insert(request: FieldsKey, body: Interconnect): Request[Operation] = js.native
+  def insert(request: UploadTypeUploadprotocolUserIpXgafv): Request[Operation] = js.native
+  def insert(request: Xgafv, body: Interconnect): Request[Operation] = js.native
   
   /** Retrieves the list of interconnect available to the specified project. */
   def list(): Request[InterconnectList] = js.native

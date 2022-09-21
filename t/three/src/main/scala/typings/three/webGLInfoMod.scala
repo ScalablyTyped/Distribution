@@ -12,27 +12,27 @@ object webGLInfoMod {
   
   @JSImport("three/src/renderers/webgl/WebGLInfo", "WebGLInfo")
   @js.native
-  class WebGLInfo protected () extends StObject {
+  open class WebGLInfo protected () extends StObject {
     def this(gl: WebGLRenderingContext) = this()
     
     /**
-    	 * @default true
-    	 */
+      * @default true
+      */
     var autoReset: Boolean = js.native
     
     /**
-    	 * @default { geometries: 0, textures: 0 }
-    	 */
+      * @default { geometries: 0, textures: 0 }
+      */
     var memory: Textures = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var programs: js.Array[WebGLProgram] | Null = js.native
     
     /**
-    	 * @default { frame: 0, calls: 0, triangles: 0, points: 0, lines: 0 }
-    	 */
+      * @default { frame: 0, calls: 0, triangles: 0, points: 0, lines: 0 }
+      */
     var render: Calls = js.native
     
     def reset(): Unit = js.native

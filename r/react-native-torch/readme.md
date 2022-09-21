@@ -10,10 +10,10 @@ Torch/flashlight for react-native
 | ------------------ | :-------------: |
 | Full name          | react-native-torch |
 | Keywords           | react, react-component, react-native, ios, android, device, torch, flashlight |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 57882 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4270.666666666667 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/ludo/react-native-torch#readme)

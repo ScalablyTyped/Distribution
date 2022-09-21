@@ -3,12 +3,12 @@ package typings.semanticUiReact
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.imageImageMod.ImageProps
 import typings.semanticUiReact.listContentMod.ListContentProps
@@ -24,12 +24,12 @@ object listItemMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/List/ListItem", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ListItemProps] = js.native
+  val default: FC[ListItemProps] = js.native
   
   trait ListItemProps
     extends StObject
        with StrictListItemProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ListItemProps {
     
     inline def apply(): ListItemProps = {
@@ -44,7 +44,7 @@ object listItemMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -100,7 +100,7 @@ object listItemMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -168,8 +168,8 @@ object listItemMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ListItemProps]
+  type _To = FC[ListItemProps]
   
   /* This means you don't have to write `default`, but can instead just say `listItemMod.foo` */
-  override def _to: StatelessComponent[ListItemProps] = default
+  override def _to: FC[ListItemProps] = default
 }

@@ -17,7 +17,7 @@ trait TypeofAMap extends StObject {
   var ArrayBounds: Instantiable1[/* bounds */ js.Array[LocationValue], typings.amapJsApi.AMap.ArrayBounds] = js.native
   
   val BezierCurve: Instantiable1[
-    /* options */ Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ js.Any], 
+    /* options */ Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ Any], 
     typings.amapJsApi.AMap.BezierCurve[js.Object]
   ] = js.native
   
@@ -37,7 +37,7 @@ trait TypeofAMap extends StObject {
   
   val Circle: Instantiable1[
     /* options */ js.UndefOr[
-      typings.amapJsApi.AMap.Circle.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ js.Any]
+      typings.amapJsApi.AMap.Circle.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ Any]
     ], 
     typings.amapJsApi.AMap.Circle[js.Object]
   ] = js.native
@@ -56,7 +56,7 @@ trait TypeofAMap extends StObject {
   
   val Ellipse: Instantiable1[
     /* options */ js.UndefOr[
-      typings.amapJsApi.AMap.Ellipse.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ js.Any]
+      typings.amapJsApi.AMap.Ellipse.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ Any]
     ], 
     typings.amapJsApi.AMap.Ellipse[js.Object]
   ] = js.native
@@ -81,12 +81,12 @@ trait TypeofAMap extends StObject {
   var ImageLayer: Instantiable0[typings.amapJsApi.AMap.ImageLayer] = js.native
   
   val InfoWindow: Instantiable1[
-    /* options */ js.UndefOr[typings.amapJsApi.AMap.InfoWindow.Options[js.Any]], 
+    /* options */ js.UndefOr[typings.amapJsApi.AMap.InfoWindow.Options[Any]], 
     typings.amapJsApi.AMap.InfoWindow[js.Object]
   ] = js.native
   
   val LabelMarker: Instantiable1[
-    /* options */ js.UndefOr[typings.amapJsApi.AMap.LabelMarker.Options[js.Any]], 
+    /* options */ js.UndefOr[typings.amapJsApi.AMap.LabelMarker.Options[Any]], 
     typings.amapJsApi.AMap.LabelMarker[js.Object]
   ] = js.native
   
@@ -98,7 +98,7 @@ trait TypeofAMap extends StObject {
   val Layer: Instantiable0[typings.amapJsApi.AMap.Layer] = js.native
   
   var LayerGroup: Instantiable1[
-    /* layers */ (/* import warning: RewrittenClass.unapply cls was tparam L */ js.Any) | (js.Array[/* import warning: RewrittenClass.unapply cls was tparam L */ js.Any]), 
+    /* layers */ (/* import warning: RewrittenClass.unapply cls was tparam L */ Any) | (js.Array[/* import warning: RewrittenClass.unapply cls was tparam L */ Any]), 
     typings.amapJsApi.AMap.LayerGroup[js.Object]
   ] = js.native
   
@@ -117,7 +117,7 @@ trait TypeofAMap extends StObject {
   
   val Marker: Instantiable1[
     /* options */ js.UndefOr[
-      typings.amapJsApi.AMap.Marker.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ js.Any]
+      typings.amapJsApi.AMap.Marker.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ Any]
     ], 
     typings.amapJsApi.AMap.Marker[js.Object]
   ] = js.native
@@ -128,7 +128,7 @@ trait TypeofAMap extends StObject {
   ] = js.native
   
   val MassMarks: Instantiable2[
-    /* data */ (js.Array[/* import warning: RewrittenClass.unapply cls was tparam D */ js.Any]) | String, 
+    /* data */ (js.Array[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]) | String, 
     /* opts */ typings.amapJsApi.AMap.MassMarks.Options, 
     typings.amapJsApi.AMap.MassMarks[typings.amapJsApi.AMap.MassMarks.Data]
   ] = js.native
@@ -139,20 +139,20 @@ trait TypeofAMap extends StObject {
   ] = js.native
   
   val Overlay: Instantiable1[
-    /* options */ js.UndefOr[typings.amapJsApi.AMap.Overlay.Options[js.Any]], 
+    /* options */ js.UndefOr[typings.amapJsApi.AMap.Overlay.Options[Any]], 
     typings.amapJsApi.AMap.Overlay[js.Object]
   ] = js.native
   
   var OverlayGroup: Instantiable1[
     /* overlays */ js.UndefOr[
-      (/* import warning: RewrittenClass.unapply cls was tparam O */ js.Any) | (js.Array[/* import warning: RewrittenClass.unapply cls was tparam O */ js.Any])
+      (/* import warning: RewrittenClass.unapply cls was tparam O */ Any) | (js.Array[/* import warning: RewrittenClass.unapply cls was tparam O */ Any])
     ], 
-    typings.amapJsApi.AMap.OverlayGroup[typings.amapJsApi.AMap.Overlay[js.Any], js.Object]
+    typings.amapJsApi.AMap.OverlayGroup[typings.amapJsApi.AMap.Overlay[Any], js.Object]
   ] = js.native
   
   val PathOverlay: Instantiable1[
     /* options */ js.UndefOr[
-      typings.amapJsApi.AMap.PathOverlay.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ js.Any]
+      typings.amapJsApi.AMap.PathOverlay.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ Any]
     ], 
     typings.amapJsApi.AMap.PathOverlay[js.Object]
   ] = js.native
@@ -166,21 +166,21 @@ trait TypeofAMap extends StObject {
   
   val Polygon: Instantiable1[
     /* options */ js.UndefOr[
-      typings.amapJsApi.AMap.Polygon.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ js.Any]
+      typings.amapJsApi.AMap.Polygon.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ Any]
     ], 
     typings.amapJsApi.AMap.Polygon[js.Object]
   ] = js.native
   
   val Polyline: Instantiable1[
     /* options */ js.UndefOr[
-      (Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ js.Any]) | (typings.amapJsApi.AMap.Polyline.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ js.Any])
+      (Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ Any]) | (typings.amapJsApi.AMap.Polyline.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ Any])
     ], 
     typings.amapJsApi.AMap.Polyline[js.Object]
   ] = js.native
   
   val Rectangle: Instantiable1[
     /* options */ js.UndefOr[
-      typings.amapJsApi.AMap.Rectangle.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ js.Any]
+      typings.amapJsApi.AMap.Rectangle.Options[/* import warning: RewrittenClass.unapply cls was tparam ExtraData */ Any]
     ], 
     typings.amapJsApi.AMap.Rectangle[js.Object]
   ] = js.native

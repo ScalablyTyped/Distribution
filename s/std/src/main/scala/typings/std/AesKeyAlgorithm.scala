@@ -8,6 +8,7 @@ trait AesKeyAlgorithm
   extends StObject
      with KeyAlgorithm {
   
+  /* standard dom */
   var length: Double
 }
 object AesKeyAlgorithm {

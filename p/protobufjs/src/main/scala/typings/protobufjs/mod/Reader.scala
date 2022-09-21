@@ -1,18 +1,17 @@
 package typings.protobufjs.mod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs", "Reader")
 @js.native
-class Reader protected () extends StObject {
+open class Reader protected () extends StObject {
   /**
     * Constructs a new reader instance using the specified buffer.
     * @param buffer Buffer to read from
     */
-  def this(buffer: Uint8Array) = this()
+  def this(buffer: js.typedarray.Uint8Array) = this()
   
   /**
     * Reads a varint as a boolean.
@@ -21,13 +20,13 @@ class Reader protected () extends StObject {
   def bool(): Boolean = js.native
   
   /** Read buffer. */
-  var buf: Uint8Array = js.native
+  var buf: js.typedarray.Uint8Array = js.native
   
   /**
     * Reads a sequence of bytes preceeded by its length as a varint.
     * @returns Value read
     */
-  def bytes(): Uint8Array = js.native
+  def bytes(): js.typedarray.Uint8Array = js.native
   
   /**
     * Reads a double (64 bit float) as a number.
@@ -141,5 +140,5 @@ object Reader {
     * @returns A {@link BufferReader} if `buffer` is a Buffer, otherwise a {@link Reader}
     * @throws {Error} If `buffer` is not a valid buffer
     */
-  inline def create(buffer: Buffer | Uint8Array): Reader | BufferReader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[Reader | BufferReader]
+  inline def create(buffer: js.typedarray.Uint8Array): Reader | BufferReader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[Reader | BufferReader]
 }

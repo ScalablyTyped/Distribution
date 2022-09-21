@@ -9,10 +9,10 @@ Asynchronous library in JavaScript. Standalone and Compact.
 | ------------------ | :-------------: |
 | Full name          | jsdeferred |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 33 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0 |
+| # stars            | 330.0 |
 
 ## Links
 - [Homepage](http://github.com/cho45/jsdeferred)

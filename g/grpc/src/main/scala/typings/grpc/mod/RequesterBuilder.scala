@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grpc", "RequesterBuilder")
 @js.native
-class RequesterBuilder () extends StObject {
+open class RequesterBuilder () extends StObject {
   
   /**
     * Builds the requester's interceptor methods.

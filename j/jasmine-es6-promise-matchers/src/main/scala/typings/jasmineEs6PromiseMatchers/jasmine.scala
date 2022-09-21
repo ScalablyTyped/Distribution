@@ -18,8 +18,8 @@ object jasmine {
     /**
       * Verifies that a Promise is (or has been) rejected with the specified parameter.
       */
-    def toBeRejectedWith(value: js.Any): Boolean = js.native
-    def toBeRejectedWith(value: js.Any, done: js.Function0[Unit]): Boolean = js.native
+    def toBeRejectedWith(value: Any): Boolean = js.native
+    def toBeRejectedWith(value: Any, done: js.Function0[Unit]): Boolean = js.native
     
     /**
       * Verifies that a Promise is (or has been) resolved.
@@ -30,7 +30,7 @@ object jasmine {
     /**
       * Verifies that a Promise is (or has been) resolved with the specified parameter.
       */
-    def toBeResolvedWith(value: js.Any): Boolean = js.native
-    def toBeResolvedWith(value: js.Any, done: js.Function0[Unit]): Boolean = js.native
+    def toBeResolvedWith(value: Any): Boolean = js.native
+    def toBeResolvedWith(value: Any, done: js.Function0[Unit]): Boolean = js.native
   }
 }

@@ -10,15 +10,15 @@ object sanitizersImplMod {
   
   @JSImport("express-validator/src/chain/sanitizers-impl", "SanitizersImpl")
   @js.native
-  class SanitizersImpl[Chain] protected ()
+  open class SanitizersImpl[Chain] protected ()
     extends StObject
        with Sanitizers[Chain] {
     def this(builder: ContextBuilder, chain: Chain) = this()
     
-    /* private */ var addStandardSanitization: js.Any = js.native
+    /* private */ var addStandardSanitization: Any = js.native
     
-    /* private */ val builder: js.Any = js.native
+    /* private */ val builder: Any = js.native
     
-    /* private */ val chain: js.Any = js.native
+    /* private */ val chain: Any = js.native
   }
 }

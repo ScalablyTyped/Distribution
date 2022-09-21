@@ -6,8 +6,10 @@ import typings.materialUiCore.materialUiCoreStrings.onMouseDown
 import typings.materialUiCore.materialUiCoreStrings.onMouseUp
 import typings.materialUiCore.materialUiCoreStrings.onTouchEnd
 import typings.materialUiCore.materialUiCoreStrings.onTouchStart
-import typings.react.mod.ChangeEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +19,11 @@ trait PartialClickAwayListenerP extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  var disableReactTree: js.UndefOr[Boolean] = js.undefined
+  
   var mouseEvent: js.UndefOr[onClick | onMouseDown | onMouseUp | `false`] = js.undefined
   
-  var onClickAway: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
+  var onClickAway: js.UndefOr[js.Function1[/* event */ MouseEvent[Document, NativeMouseEvent], Unit]] = js.undefined
   
   var touchEvent: js.UndefOr[onTouchStart | onTouchEnd | `false`] = js.undefined
 }
@@ -36,11 +40,15 @@ object PartialClickAwayListenerP {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
+    inline def setDisableReactTree(value: Boolean): Self = StObject.set(x, "disableReactTree", value.asInstanceOf[js.Any])
+    
+    inline def setDisableReactTreeUndefined: Self = StObject.set(x, "disableReactTree", js.undefined)
+    
     inline def setMouseEvent(value: onClick | onMouseDown | onMouseUp | `false`): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
     
     inline def setMouseEventUndefined: Self = StObject.set(x, "mouseEvent", js.undefined)
     
-    inline def setOnClickAway(value: /* event */ ChangeEvent[js.Object] => Unit): Self = StObject.set(x, "onClickAway", js.Any.fromFunction1(value))
+    inline def setOnClickAway(value: /* event */ MouseEvent[Document, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClickAway", js.Any.fromFunction1(value))
     
     inline def setOnClickAwayUndefined: Self = StObject.set(x, "onClickAway", js.undefined)
     

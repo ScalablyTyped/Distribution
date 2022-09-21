@@ -12,7 +12,7 @@ trait ErrorEventObject extends StObject {
   
   var message: String
   
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
 }
 object ErrorEventObject {
   
@@ -31,7 +31,7 @@ object ErrorEventObject {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.IslandManager")
 @js.native
-class IslandManager ()
+open class IslandManager ()
   extends typings.p2.mod.IslandManager {
   def this(options: IslandManagerOptions) = this()
 }

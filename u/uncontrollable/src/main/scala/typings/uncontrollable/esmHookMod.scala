@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esmHookMod {
   
-  @JSImport("uncontrollable/esm/hook", JSImport.Namespace)
+  @JSImport("uncontrollable/lib/esm/hook", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -23,11 +23,11 @@ object esmHookMod {
   inline def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: Unit, defaultValue: TProp, handler: THandler): js.Tuple2[js.UndefOr[TProp], THandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUncontrolledProp")(propValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.UndefOr[TProp], THandler]]
   inline def useUncontrolledProp[TProp, THandler /* <: Handler */](propValue: Unit, defaultValue: Unit, handler: THandler): js.Tuple2[js.UndefOr[TProp], THandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUncontrolledProp")(propValue.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.UndefOr[TProp], THandler]]
   
-  type AllowedNames[Base, Condition] = /* import warning: importer.ImportType#apply Failed type conversion: uncontrollable.uncontrollable/esm/hook.FilterFlags<Base, Condition>[keyof Base] */ js.Any
+  type AllowedNames[Base, Condition] = /* import warning: importer.ImportType#apply Failed type conversion: uncontrollable.uncontrollable/lib/esm/hook.FilterFlags<Base, Condition>[keyof Base] */ js.Any
   
   type ConfigMap[TProps /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ p in keyof TProps ]:? uncontrollable.uncontrollable/esm/hook.AllowedNames<TProps, std.Function>}
-    */ typings.uncontrollable.uncontrollableStrings.ConfigMap & TopLevel[js.Any]
+  {[ p in keyof TProps ]:? uncontrollable.uncontrollable/lib/esm/hook.AllowedNames<TProps, std.Function>}
+    */ typings.uncontrollable.uncontrollableStrings.ConfigMap & TopLevel[Any]
   
   type FilterFlags[Base, Condition] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ Key in keyof Base ]: std.NonNullable<Base[Key]> extends Condition? Key : never}
@@ -36,6 +36,6 @@ object esmHookMod {
   @js.native
   trait Handler extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
 }

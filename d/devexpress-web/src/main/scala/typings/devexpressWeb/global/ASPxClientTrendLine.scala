@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTrendLine")
 @js.native
-class ASPxClientTrendLine ()
+open class ASPxClientTrendLine ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFinancialIndicator {
   

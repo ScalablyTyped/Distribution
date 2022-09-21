@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.FeatureReductionClusterPr
 import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
@@ -11,9 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OGCFeatureLayerProperties
   extends StObject
      with LayerProperties
-     with ScaleRangeLayerProperties
+     with APIKeyMixinProperties
+     with BlendLayerProperties
+     with CustomParametersMixinProperties
+     with OrderedLayerProperties
+     with PortalLayerProperties
      with RefreshableLayerProperties
-     with BlendLayerProperties {
+     with ScaleRangeLayerProperties
+     with FeatureEffectLayerProperties {
   
   /**
     * The unique identifier of the collection on the server.
@@ -37,7 +43,7 @@ trait OGCFeatureLayerProperties
   var displayField: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies how graphics are placed on the vertical axis (z).
+    * Specifies how features are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#elevationInfo)
     */
@@ -48,7 +54,7 @@ trait OGCFeatureLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[FeatureReductionClusterProperties | FeatureReductionSelectionProperties] = js.undefined
+  var featureReduction: js.UndefOr[FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -74,6 +80,8 @@ trait OGCFeatureLayerProperties
   /**
     * Indicates whether to display labels for this layer.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#labelsVisible)
     */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
@@ -81,19 +89,16 @@ trait OGCFeatureLayerProperties
   /**
     * Indicates whether the layer will be included in the legend.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#legendEnabled)
     */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The url query string in the format request json content from the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#mediaType)
-    */
-  var mediaType: js.UndefOr[String] = js.undefined
-  
-  /**
     * The OGCFeatureLayer requires that each feature be uniquely identified with an object id.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#objectIdField)
     */
@@ -101,6 +106,8 @@ trait OGCFeatureLayerProperties
   
   /**
     * Indicates whether to display popups when features in the layer are clicked.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#popupEnabled)
     */
@@ -119,6 +126,15 @@ trait OGCFeatureLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#renderer)
     */
   var renderer: js.UndefOr[RendererProperties] = js.undefined
+  
+  /**
+    * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OGCFeatureLayer.html#screenSizePerspectiveEnabled)
+    */
+  var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The URL to the server.
@@ -152,7 +168,7 @@ object OGCFeatureLayerProperties {
     
     inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
-    inline def setFeatureReduction(value: FeatureReductionClusterProperties | FeatureReductionSelectionProperties): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
+    inline def setFeatureReduction(value: FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     
     inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
@@ -160,7 +176,7 @@ object OGCFeatureLayerProperties {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setGeometryType(value: point | polygon | polyline | multipoint): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
@@ -170,7 +186,7 @@ object OGCFeatureLayerProperties {
     
     inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
-    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value*))
     
     inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
@@ -179,10 +195,6 @@ object OGCFeatureLayerProperties {
     inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
     inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
-    
-    inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
-    
-    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
     inline def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
     
@@ -199,6 +211,10 @@ object OGCFeatureLayerProperties {
     inline def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    
+    inline def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

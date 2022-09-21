@@ -64,7 +64,7 @@ object XUntitledNumbers {
     acquire: () => Unit,
     getUntitledPrefix: () => String,
     leaseNumber: XInterface => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     releaseNumber: Double => Unit,
     releaseNumberForComponent: XInterface => Unit

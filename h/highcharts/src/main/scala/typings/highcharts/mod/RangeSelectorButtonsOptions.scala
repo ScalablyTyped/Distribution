@@ -45,6 +45,12 @@ trait RangeSelectorButtonsOptions extends StObject {
   var text: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highstock, Gantt) Explanation for the button, shown as a tooltip on
+    * hover, and used by assistive technology.
+    */
+  var title: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highstock, Gantt) Defined the time span for the button. Can be one of
     * `millisecond`, `second`, `minute`, `hour`, `day`, `week`, `month`,
     * `year`, `ytd`, and `all`.
@@ -87,6 +93,10 @@ object RangeSelectorButtonsOptions {
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setType(value: RangeSelectorButtonTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

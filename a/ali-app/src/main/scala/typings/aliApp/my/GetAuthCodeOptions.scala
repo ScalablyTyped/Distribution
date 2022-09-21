@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region 用户授权 https://docs.alipay.com/mini/api/openapi-authorize
 trait GetAuthCodeOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   var scopes: js.UndefOr[String | js.Array[String]] = js.undefined
   
@@ -29,7 +29,7 @@ object GetAuthCodeOptions {
     
     inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     
     inline def setSuccess(value: /* res */ AuthCode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

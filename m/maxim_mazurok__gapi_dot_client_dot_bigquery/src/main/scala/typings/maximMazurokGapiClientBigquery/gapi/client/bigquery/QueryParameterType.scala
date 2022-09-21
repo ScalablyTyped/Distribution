@@ -33,7 +33,7 @@ object QueryParameterType {
     
     inline def setStructTypesUndefined: Self = StObject.set(x, "structTypes", js.undefined)
     
-    inline def setStructTypesVarargs(value: Description*): Self = StObject.set(x, "structTypes", js.Array(value :_*))
+    inline def setStructTypesVarargs(value: Description*): Self = StObject.set(x, "structTypes", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

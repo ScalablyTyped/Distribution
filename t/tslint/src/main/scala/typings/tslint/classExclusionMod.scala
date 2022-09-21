@@ -14,16 +14,16 @@ object classExclusionMod {
   
   @JSImport("tslint/lib/rules/completed-docs/classExclusion", "ClassExclusion")
   @js.native
-  class ClassExclusion () extends Exclusion[IClassExclusionDescriptor] {
+  open class ClassExclusion () extends Exclusion[IClassExclusionDescriptor] {
     def this(descriptor: Partial[IClassExclusionDescriptor]) = this()
     
     val locations: Set[Location] = js.native
     
     val privacies: Set[Privacy] = js.native
     
-    /* private */ var shouldLocationBeDocumented: js.Any = js.native
+    /* private */ var shouldLocationBeDocumented: Any = js.native
     
-    /* private */ var shouldPrivacyBeDocumented: js.Any = js.native
+    /* private */ var shouldPrivacyBeDocumented: Any = js.native
   }
   
   trait IClassExclusionDescriptor
@@ -47,13 +47,13 @@ object classExclusionMod {
       
       inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
       
-      inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value*))
       
       inline def setPrivacies(value: js.Array[Privacy]): Self = StObject.set(x, "privacies", value.asInstanceOf[js.Any])
       
       inline def setPrivaciesUndefined: Self = StObject.set(x, "privacies", js.undefined)
       
-      inline def setPrivaciesVarargs(value: Privacy*): Self = StObject.set(x, "privacies", js.Array(value :_*))
+      inline def setPrivaciesVarargs(value: Privacy*): Self = StObject.set(x, "privacies", js.Array(value*))
     }
   }
 }

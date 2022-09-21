@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,11 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoscalingPolicy extends StObject {
   
   /**
-    * The number of seconds that the autoscaler should wait before it starts collecting information from a new instance. This prevents the autoscaler from collecting information when the
-    * instance is initializing, during which the collected usage would not be reliable. The default time autoscaler waits is 60 seconds.
-    *
-    * Virtual machine initialization times might vary because of numerous factors. We recommend that you test how long an instance may take to initialize. To do this, create an instance
-    * and time the startup process.
+    * The number of seconds that the autoscaler waits before it starts collecting information from a new instance. This prevents the autoscaler from collecting information when the
+    * instance is initializing, during which the collected usage would not be reliable. The default time autoscaler waits is 60 seconds. Virtual machine initialization times might vary
+    * because of numerous factors. We recommend that you test how long an instance may take to initialize. To do this, create an instance and time the startup process.
     */
   var coolDownPeriodSec: js.UndefOr[Double] = js.undefined
   
@@ -25,14 +24,14 @@ trait AutoscalingPolicy extends StObject {
   var loadBalancingUtilization: js.UndefOr[AutoscalingPolicyLoadBalancingUtilization] = js.undefined
   
   /**
-    * The maximum number of instances that the autoscaler can scale up to. This is required when creating or updating an autoscaler. The maximum number of replicas should not be lower
-    * than minimal number of replicas.
+    * The maximum number of instances that the autoscaler can scale out to. This is required when creating or updating an autoscaler. The maximum number of replicas must not be lower than
+    * minimal number of replicas.
     */
   var maxNumReplicas: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum number of replicas that the autoscaler can scale down to. This cannot be less than 0. If not provided, autoscaler will choose a default value depending on maximum number
-    * of instances allowed.
+    * The minimum number of replicas that the autoscaler can scale in to. This cannot be less than 0. If not provided, autoscaler chooses a default value depending on maximum number of
+    * instances allowed.
     */
   var minNumReplicas: js.UndefOr[Double] = js.undefined
   
@@ -40,6 +39,16 @@ trait AutoscalingPolicy extends StObject {
   var mode: js.UndefOr[String] = js.undefined
   
   var scaleInControl: js.UndefOr[AutoscalingPolicyScaleInControl] = js.undefined
+  
+  /**
+    * Scaling schedules defined for an autoscaler. Multiple schedules can be set on an autoscaler, and they can overlap. During overlapping periods the greatest min_required_replicas of
+    * all scaling schedules is applied. Up to 128 scaling schedules are allowed.
+    */
+  var scalingSchedules: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.AutoscalingPolicyScalingSchedule}
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AutoscalingPolicy & TopLevel[Any]
+  ] = js.undefined
 }
 object AutoscalingPolicy {
   
@@ -62,7 +71,7 @@ object AutoscalingPolicy {
     
     inline def setCustomMetricUtilizationsUndefined: Self = StObject.set(x, "customMetricUtilizations", js.undefined)
     
-    inline def setCustomMetricUtilizationsVarargs(value: AutoscalingPolicyCustomMetricUtilization*): Self = StObject.set(x, "customMetricUtilizations", js.Array(value :_*))
+    inline def setCustomMetricUtilizationsVarargs(value: AutoscalingPolicyCustomMetricUtilization*): Self = StObject.set(x, "customMetricUtilizations", js.Array(value*))
     
     inline def setLoadBalancingUtilization(value: AutoscalingPolicyLoadBalancingUtilization): Self = StObject.set(x, "loadBalancingUtilization", value.asInstanceOf[js.Any])
     
@@ -83,5 +92,13 @@ object AutoscalingPolicy {
     inline def setScaleInControl(value: AutoscalingPolicyScaleInControl): Self = StObject.set(x, "scaleInControl", value.asInstanceOf[js.Any])
     
     inline def setScaleInControlUndefined: Self = StObject.set(x, "scaleInControl", js.undefined)
+    
+    inline def setScalingSchedules(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.AutoscalingPolicyScalingSchedule}
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AutoscalingPolicy & TopLevel[Any]
+    ): Self = StObject.set(x, "scalingSchedules", value.asInstanceOf[js.Any])
+    
+    inline def setScalingSchedulesUndefined: Self = StObject.set(x, "scalingSchedules", js.undefined)
   }
 }

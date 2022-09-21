@@ -32,24 +32,24 @@ object RecordHookNamestringArray {
     
     inline def setBuildColonafterUndefined: Self = StObject.set(x, "build:after", js.undefined)
     
-    inline def setBuildColonafterVarargs(value: String*): Self = StObject.set(x, "build:after", js.Array(value :_*))
+    inline def setBuildColonafterVarargs(value: String*): Self = StObject.set(x, "build:after", js.Array(value*))
     
     inline def setBuildColonbefore(value: String | js.Array[String]): Self = StObject.set(x, "build:before", value.asInstanceOf[js.Any])
     
     inline def setBuildColonbeforeUndefined: Self = StObject.set(x, "build:before", js.undefined)
     
-    inline def setBuildColonbeforeVarargs(value: String*): Self = StObject.set(x, "build:before", js.Array(value :_*))
+    inline def setBuildColonbeforeVarargs(value: String*): Self = StObject.set(x, "build:before", js.Array(value*))
     
     inline def setServeColonafter(value: String | js.Array[String]): Self = StObject.set(x, "serve:after", value.asInstanceOf[js.Any])
     
     inline def setServeColonafterUndefined: Self = StObject.set(x, "serve:after", js.undefined)
     
-    inline def setServeColonafterVarargs(value: String*): Self = StObject.set(x, "serve:after", js.Array(value :_*))
+    inline def setServeColonafterVarargs(value: String*): Self = StObject.set(x, "serve:after", js.Array(value*))
     
     inline def setServeColonbefore(value: String | js.Array[String]): Self = StObject.set(x, "serve:before", value.asInstanceOf[js.Any])
     
     inline def setServeColonbeforeUndefined: Self = StObject.set(x, "serve:before", js.undefined)
     
-    inline def setServeColonbeforeVarargs(value: String*): Self = StObject.set(x, "serve:before", js.Array(value :_*))
+    inline def setServeColonbeforeVarargs(value: String*): Self = StObject.set(x, "serve:before", js.Array(value*))
   }
 }

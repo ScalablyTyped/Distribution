@@ -8,47 +8,47 @@ trait ColumnMetadata extends StObject {
   
   var defaultValue: String
   
-  /// <summary>
-  /// Escaped identifier for the name of the column
-  /// </summary>
+  /**
+    * Escaped identifier for the name of the column
+    */
   var escapedName: String
   
   var hasExtendedProperties: Boolean
   
-  /// <summary>
-  /// Whether or not the column is calculated on the server side. This could be a computed
-  /// column or a identity column.
-  /// </summary>
+  /**
+    * Whether or not the column is calculated on the server side. This could be a computed
+    * column or a identity column.
+    */
   var isCalculated: Boolean
   
-  /// <summary>
-  /// Whether or not the column is computed
-  /// </summary>
+  /**
+    * Whether or not the column is computed
+    */
   var isComputed: Boolean
   
-  /// <summary>
-  /// Whether or not the column is deterministically computed
-  /// </summary>
+  /**
+    * Whether or not the column is deterministically computed
+    */
   var isDeterministic: Boolean
   
-  /// <summary>
-  /// Whether or not the column is an identity column
-  /// </summary>
+  /**
+    * Whether or not the column is an identity column
+    */
   var isIdentity: Boolean
   
-  /// <summary>
-  /// Whether or not the column is used in a key to uniquely identify a row
-  /// </summary>
+  /**
+    * Whether or not the column is used in a key to uniquely identify a row
+    */
   var isKey: Boolean
   
-  /// <summary>
-  /// Whether or not the column can be trusted for uniqueness
-  /// </summary>
+  /**
+    * Whether or not the column can be trusted for uniqueness
+    */
   var isTrustworthyForUniqueness: Boolean
   
-  /// <summary>
-  /// The ordinal ID of the column
-  /// </summary>
+  /**
+    * The ordinal ID of the column
+    */
   var ordinal: Double
 }
 object ColumnMetadata {

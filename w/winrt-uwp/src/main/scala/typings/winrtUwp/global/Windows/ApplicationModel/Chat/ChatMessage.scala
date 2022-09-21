@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Chat
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessage")
 @js.native
 /** Creates a new instance of the ChatMessage class. */
-class ChatMessage ()
+open class ChatMessage ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessage {
   
@@ -69,7 +68,7 @@ class ChatMessage ()
   
   /** Gets the local timestamp of the message. */
   /* CompleteClass */
-  var localTimestamp: Date = js.native
+  var localTimestamp: js.Date = js.native
   
   /** Gets or sets the type of the ChatMessage . */
   /* CompleteClass */
@@ -81,7 +80,7 @@ class ChatMessage ()
   
   /** Gets the network timestamp of the message. */
   /* CompleteClass */
-  var networkTimestamp: Date = js.native
+  var networkTimestamp: js.Date = js.native
   
   /** Gets the list of send statuses for the message. */
   /* CompleteClass */

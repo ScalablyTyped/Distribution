@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAppInstanceResponse extends StObject {
   
   /**
-    * The Amazon Resource Number (ARN) of the app instance.
+    * The Amazon Resource Number (ARN) of the AppInstance.
     */
   var AppInstanceArn: js.UndefOr[ChimeArn] = js.undefined
 }

@@ -2,21 +2,18 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.remoteConnectivityMonitorMod.ConnectivityMonitor
 import typings.firebaseFirestore.remoteConnectivityMonitorMod.ConnectivityMonitorCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/platform/browser/connectivity_monitor", JSImport.Namespace)
-@js.native
-object connectivityMonitorMod extends js.Object {
+object connectivityMonitorMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/platform/browser/connectivity_monitor", "BrowserConnectivityMonitor")
   @js.native
-  class BrowserConnectivityMonitor () extends ConnectivityMonitor {
-    var callbacks: js.Any = js.native
-    var configureNetworkMonitoring: js.Any = js.native
-    val networkAvailableListener: js.Any = js.native
-    val networkUnavailableListener: js.Any = js.native
-    var onNetworkAvailable: js.Any = js.native
-    var onNetworkUnavailable: js.Any = js.native
+  open class BrowserConnectivityMonitor ()
+    extends StObject
+       with ConnectivityMonitor {
+    
     /**
       * Adds a callback to be called when connectivity changes.
       *
@@ -27,6 +24,19 @@ object connectivityMonitorMod extends js.Object {
       */
     /* CompleteClass */
     override def addCallback(callback: ConnectivityMonitorCallback): Unit = js.native
+    
+    /* private */ var callbacks: Any = js.native
+    
+    /* private */ var configureNetworkMonitoring: Any = js.native
+    
+    /* private */ val networkAvailableListener: Any = js.native
+    
+    /* private */ val networkUnavailableListener: Any = js.native
+    
+    /* private */ var onNetworkAvailable: Any = js.native
+    
+    /* private */ var onNetworkUnavailable: Any = js.native
+    
     /**
       * Stops monitoring connectivity. After this call completes, no further
       * callbacks will be triggered. After shutdown() is called, no further calls
@@ -35,13 +45,14 @@ object connectivityMonitorMod extends js.Object {
     /* CompleteClass */
     override def shutdown(): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object BrowserConnectivityMonitor extends js.Object {
+  object BrowserConnectivityMonitor {
+    
+    @JSImport("@firebase/firestore/dist/firestore/src/platform/browser/connectivity_monitor", "BrowserConnectivityMonitor")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** Checks that all used attributes of window are available. */
-    def isAvailable(): Boolean = js.native
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
-  
 }
-

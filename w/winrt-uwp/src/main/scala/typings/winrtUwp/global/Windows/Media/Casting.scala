@@ -155,7 +155,7 @@ object Casting {
   @JSGlobal("Windows.Media.Casting.CastingDevicePicker")
   @js.native
   /** Creates a CastingDevicePicker object. */
-  class CastingDevicePicker ()
+  open class CastingDevicePicker ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Casting.CastingDevicePicker
   

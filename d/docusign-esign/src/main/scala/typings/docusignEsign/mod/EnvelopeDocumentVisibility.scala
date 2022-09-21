@@ -34,6 +34,6 @@ object EnvelopeDocumentVisibility {
     
     inline def setDocumentVisibilityVarargs(
       value: (/* This object configures a recipient's read/write access to a document. */ DocumentVisibility)*
-    ): Self = StObject.set(x, "documentVisibility", js.Array(value :_*))
+    ): Self = StObject.set(x, "documentVisibility", js.Array(value*))
   }
 }

@@ -20,7 +20,7 @@ object ruleMod {
   
   @JSImport("tslint/lib/language/rule/rule", "Replacement")
   @js.native
-  class Replacement protected () extends StObject {
+  open class Replacement protected () extends StObject {
     def this(start: Double, length: Double, text: String) = this()
     
     @JSName("apply")
@@ -61,7 +61,7 @@ object ruleMod {
   
   @JSImport("tslint/lib/language/rule/rule", "RuleFailure")
   @js.native
-  class RuleFailure protected () extends StObject {
+  open class RuleFailure protected () extends StObject {
     def this(sourceFile: SourceFile, start: Double, end: Double, failure: String, ruleName: String) = this()
     def this(
       sourceFile: SourceFile,
@@ -80,17 +80,17 @@ object ruleMod {
       fix: Replacement
     ) = this()
     
-    /* private */ var createFailurePosition: js.Any = js.native
+    /* private */ var createFailurePosition: Any = js.native
     
-    /* private */ val endPosition: js.Any = js.native
+    /* private */ val endPosition: Any = js.native
     
     def equals(ruleFailure: RuleFailure): Boolean = js.native
     
-    /* private */ val failure: js.Any = js.native
+    /* private */ val failure: Any = js.native
     
-    /* private */ val fileName: js.Any = js.native
+    /* private */ val fileName: Any = js.native
     
-    /* private */ val fix: js.Any = js.native
+    /* private */ val fix: Any = js.native
     
     def getEndPosition(): RuleFailurePosition = js.native
     
@@ -110,17 +110,17 @@ object ruleMod {
     
     def hasFix(): Boolean = js.native
     
-    /* private */ val rawLines: js.Any = js.native
+    /* private */ val rawLines: Any = js.native
     
-    /* private */ val ruleName: js.Any = js.native
+    /* private */ val ruleName: Any = js.native
     
-    /* private */ var ruleSeverity: js.Any = js.native
+    /* private */ var ruleSeverity: Any = js.native
     
     def setRuleSeverity(value: RuleSeverity): Unit = js.native
     
-    /* private */ val sourceFile: js.Any = js.native
+    /* private */ val sourceFile: Any = js.native
     
-    /* private */ val startPosition: js.Any = js.native
+    /* private */ val startPosition: Any = js.native
     
     def toJson(): IRuleFailureJson = js.native
   }
@@ -136,7 +136,7 @@ object ruleMod {
   
   @JSImport("tslint/lib/language/rule/rule", "RuleFailurePosition")
   @js.native
-  class RuleFailurePosition protected () extends StObject {
+  open class RuleFailurePosition protected () extends StObject {
     def this(position: Double, lineAndCharacter: LineAndCharacter) = this()
     
     def equals(ruleFailurePosition: RuleFailurePosition): Boolean = js.native
@@ -145,9 +145,9 @@ object ruleMod {
     
     def getPosition(): Double = js.native
     
-    /* private */ val lineAndCharacter: js.Any = js.native
+    /* private */ val lineAndCharacter: Any = js.native
     
-    /* private */ val position: js.Any = js.native
+    /* private */ val position: Any = js.native
     
     def toJson(): IRuleFailurePositionJson = js.native
   }
@@ -219,7 +219,7 @@ object ruleMod {
       */
     var disabledIntervals: js.Array[IDisabledInterval]
     
-    var ruleArguments: js.Array[js.Any]
+    var ruleArguments: js.Array[Any]
     
     var ruleName: String
     
@@ -229,7 +229,7 @@ object ruleMod {
     
     inline def apply(
       disabledIntervals: js.Array[IDisabledInterval],
-      ruleArguments: js.Array[js.Any],
+      ruleArguments: js.Array[Any],
       ruleName: String,
       ruleSeverity: RuleSeverity
     ): IOptions = {
@@ -241,11 +241,11 @@ object ruleMod {
       
       inline def setDisabledIntervals(value: js.Array[IDisabledInterval]): Self = StObject.set(x, "disabledIntervals", value.asInstanceOf[js.Any])
       
-      inline def setDisabledIntervalsVarargs(value: IDisabledInterval*): Self = StObject.set(x, "disabledIntervals", js.Array(value :_*))
+      inline def setDisabledIntervalsVarargs(value: IDisabledInterval*): Self = StObject.set(x, "disabledIntervals", js.Array(value*))
       
-      inline def setRuleArguments(value: js.Array[js.Any]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
+      inline def setRuleArguments(value: js.Array[Any]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
       
-      inline def setRuleArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "ruleArguments", js.Array(value :_*))
+      inline def setRuleArgumentsVarargs(value: Any*): Self = StObject.set(x, "ruleArguments", js.Array(value*))
       
       inline def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
       
@@ -328,7 +328,7 @@ object ruleMod {
       
       inline def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
       
-      inline def setFixVarargs(value: ReplacementJson*): Self = StObject.set(x, "fix", js.Array(value :_*))
+      inline def setFixVarargs(value: ReplacementJson*): Self = StObject.set(x, "fix", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -396,7 +396,7 @@ object ruleMod {
       * Examples of what a standard config for the rule might look like.
       * Using a string[] here is deprecated. Write the options as a JSON object instead.
       */
-    var optionExamples: js.UndefOr[js.Array[`true` | js.Array[js.Any] | OptionsAny | String]] = js.undefined
+    var optionExamples: js.UndefOr[js.Array[`true` | js.Array[Any] | OptionsAny | String]] = js.undefined
     
     /**
       * Schema of the options the rule accepts.
@@ -404,7 +404,7 @@ object ruleMod {
       * This field describes the options after that boolean.
       * If null, this rule has no options and is not configurable.
       */
-    var options: js.Any
+    var options: Any
     
     /**
       * An explanation of the available options for the rule.
@@ -440,7 +440,7 @@ object ruleMod {
     
     inline def apply(
       description: String,
-      options: js.Any,
+      options: Any,
       optionsDescription: String,
       ruleName: String,
       `type`: RuleType,
@@ -457,7 +457,7 @@ object ruleMod {
       
       inline def setCodeExamplesUndefined: Self = StObject.set(x, "codeExamples", js.undefined)
       
-      inline def setCodeExamplesVarargs(value: ICodeExample*): Self = StObject.set(x, "codeExamples", js.Array(value :_*))
+      inline def setCodeExamplesVarargs(value: ICodeExample*): Self = StObject.set(x, "codeExamples", js.Array(value*))
       
       inline def setDeprecationMessage(value: String): Self = StObject.set(x, "deprecationMessage", value.asInstanceOf[js.Any])
       
@@ -473,13 +473,13 @@ object ruleMod {
       
       inline def setHasFixUndefined: Self = StObject.set(x, "hasFix", js.undefined)
       
-      inline def setOptionExamples(value: js.Array[`true` | js.Array[js.Any] | OptionsAny | String]): Self = StObject.set(x, "optionExamples", value.asInstanceOf[js.Any])
+      inline def setOptionExamples(value: js.Array[`true` | js.Array[Any] | OptionsAny | String]): Self = StObject.set(x, "optionExamples", value.asInstanceOf[js.Any])
       
       inline def setOptionExamplesUndefined: Self = StObject.set(x, "optionExamples", js.undefined)
       
-      inline def setOptionExamplesVarargs(value: (`true` | js.Array[js.Any] | OptionsAny | String)*): Self = StObject.set(x, "optionExamples", js.Array(value :_*))
+      inline def setOptionExamplesVarargs(value: (`true` | js.Array[Any] | OptionsAny | String)*): Self = StObject.set(x, "optionExamples", js.Array(value*))
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsDescription(value: String): Self = StObject.set(x, "optionsDescription", value.asInstanceOf[js.Any])
       

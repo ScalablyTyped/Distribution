@@ -2,8 +2,6 @@ package typings.log4javascript
 
 import typings.log4javascript.anon.AppendResult
 import typings.log4javascript.anon.Name
-import typings.std.Date
-import typings.std.Error
 import typings.std.HTMLElement
 import typings.std.Window
 import typings.std.XMLHttpRequest
@@ -19,7 +17,7 @@ object mod {
   
   @JSImport("log4javascript", "AjaxAppender")
   @js.native
-  class AjaxAppender protected () extends Appender {
+  open class AjaxAppender protected () extends Appender {
     /**
     	 * Constructor
     	 * @param url The URL to which log messages should be sent. Note that this is subject to the usual Ajax restrictions:
@@ -143,11 +141,11 @@ object mod {
   /**
   	 * Constructor
   	 */
-  class AlertAppender () extends Appender
+  open class AlertAppender () extends Appender
   
   @JSImport("log4javascript", "Appender")
   @js.native
-  class Appender () extends StObject {
+  open class Appender () extends StObject {
     
     /**
     	 * Appender-specific method to append a log message. Every appender object should implement this method.
@@ -186,18 +184,18 @@ object mod {
   /**
   	 * Constructor
   	 */
-  class BrowserConsoleAppender () extends Appender
+  open class BrowserConsoleAppender () extends Appender
   
   @JSImport("log4javascript", "HttpPostDataLayout")
   @js.native
   /**
   	 * Constructor
   	 */
-  class HttpPostDataLayout () extends Layout
+  open class HttpPostDataLayout () extends Layout
   
   @JSImport("log4javascript", "InPageAppender")
   @js.native
-  class InPageAppender protected () extends Appender {
+  open class InPageAppender protected () extends Appender {
     /**
     	 * Constructor
     	 * @param container The container element for the console window. This should be an HTML element.
@@ -415,7 +413,7 @@ object mod {
     	 */
     def addCommandLineFunction(
       functionName: String,
-      commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AppendResult, js.Any]
+      commandLineFunction: js.Function3[/* appender */ Appender, /* args */ Any, /* returnValue */ AppendResult, Any]
     ): Unit = js.native
     
     /**
@@ -581,10 +579,16 @@ object mod {
   	 * @param combineMessages Whether or not to format multiple log messages as a combined single message property composed of
   	 * each individual message separated by line breaks or to format multiple messages as an array. If not specified, defaults to true.
   	 */
-  class JsonLayout () extends Layout {
+  open class JsonLayout () extends Layout {
     def this(readable: Boolean) = this()
     def this(readable: Boolean, combineMessages: Boolean) = this()
     def this(readable: Unit, combineMessages: Boolean) = this()
+    
+    /**
+    	 * Returns whether or not to format multiple log messages as a combined single message property composed of each individual
+    	 * message separated by line breaks or to format multiple messages as an array. If not specified, defaults to true.
+    	 */
+    def isCombinedMessages(): Boolean = js.native
     
     /**
     	 * Returns whether or not to each log message is formatted with line breaks and tabs.
@@ -594,7 +598,7 @@ object mod {
   
   @JSImport("log4javascript", "Layout")
   @js.native
-  class Layout () extends StObject {
+  open class Layout () extends StObject {
     
     /**
     	 * Returns whether the layout's output is suitable for batching. JsonLayout and XmlLayout are the only built-in layouts that
@@ -617,7 +621,7 @@ object mod {
     /**
     	 * Used internally by log4javascript in constructing formatted output for some layouts.
     	 */
-    def getDataValues(loggingEvent: LoggingEvent): js.Array[js.Any] = js.native
+    def getDataValues(loggingEvent: LoggingEvent): js.Array[Any] = js.native
     
     /**
     	 * Returns whether the layout has any custom fields.
@@ -718,7 +722,7 @@ object mod {
   
   @JSImport("log4javascript", "Logger")
   @js.native
-  class Logger () extends StObject {
+  open class Logger () extends StObject {
     
     /**
     	 * Adds the given appender.
@@ -728,22 +732,22 @@ object mod {
     /**
     	 * Asserts the given expression is true or evaluates to true. If so, nothing is logged. If not, an error is logged at the ERROR level.
     	 */
-    def assert(expr: js.Any): Unit = js.native
+    def assert(expr: Any): Unit = js.native
     
     /**
     	 * Logs one or more messages and optionally an error at level DEBUG.
     	 */
-    def debug(messages: js.Any*): Unit = js.native
+    def debug(messages: Any*): Unit = js.native
     
     /**
     	 * Logs one or more messages and optionally an error at level ERROR.
     	 */
-    def error(messages: js.Any*): Unit = js.native
+    def error(messages: Any*): Unit = js.native
     
     /**
     	 * Logs one or more messages and optionally an error at level FATAL.
     	 */
-    def fatal(messages: js.Any*): Unit = js.native
+    def fatal(messages: Any*): Unit = js.native
     
     /**
     	 * Returns whether additivity is enabled for this logger.
@@ -782,7 +786,7 @@ object mod {
     /**
     	 * Logs one or more messages and optionally an error at level INFO.
     	 */
-    def info(messages: js.Any*): Unit = js.native
+    def info(messages: Any*): Unit = js.native
     
     /**
     	 * Returns whether the logger is enabled for DEBUG messages.
@@ -792,7 +796,7 @@ object mod {
     /**
     	 * Returns whether the logger is enabled for the specified level.
     	 */
-    def isEnabledFor(level: Level, exception: Error): Boolean = js.native
+    def isEnabledFor(level: Level, exception: js.Error): Boolean = js.native
     
     /**
     	 * Returns whether the logger is enabled for ERROR messages.
@@ -822,7 +826,7 @@ object mod {
     /**
     	 * Generic logging method used by wrapper methods such as debug, error etc.
     	 */
-    def log(level: Level, params: js.Array[js.Any]): Unit = js.native
+    def log(level: Level, params: js.Array[Any]): Unit = js.native
     
     var name: String = js.native
     
@@ -865,21 +869,21 @@ object mod {
     /**
     	 * Logs one or more messages and optionally an error at level TRACE.
     	 */
-    def trace(messages: js.Any*): Unit = js.native
+    def trace(messages: Any*): Unit = js.native
     
     /**
     	 * Logs one or more messages and optionally an error at level WARN.
     	 */
-    def warn(messages: js.Any*): Unit = js.native
+    def warn(messages: Any*): Unit = js.native
   }
   
   @JSImport("log4javascript", "LoggingEvent")
   @js.native
-  class LoggingEvent protected () extends StObject {
-    def this(logger: Logger, timeStamp: Date, level: Level, messages: js.Array[String]) = this()
-    def this(logger: Logger, timeStamp: Date, level: Level, messages: js.Array[String], exception: Error) = this()
+  open class LoggingEvent protected () extends StObject {
+    def this(logger: Logger, timeStamp: js.Date, level: Level, messages: js.Array[String]) = this()
+    def this(logger: Logger, timeStamp: js.Date, level: Level, messages: js.Array[String], exception: js.Error) = this()
     
-    var exception: Error = js.native
+    var exception: js.Error = js.native
     
     def getCombinedMessages(): String = js.native
     
@@ -889,11 +893,11 @@ object mod {
     
     var logger: Logger = js.native
     
-    var messages: js.Array[js.Any] = js.native
+    var messages: js.Array[Any] = js.native
     
     var milliseconds: Double = js.native
     
-    var timeStamp: Date = js.native
+    var timeStamp: js.Date = js.native
     
     var timeStampInMilliseconds: Double = js.native
     
@@ -905,11 +909,11 @@ object mod {
   /**
   	 * Constructor
   	 */
-  class NullLayout () extends Layout
+  open class NullLayout () extends Layout
   
   @JSImport("log4javascript", "PatternLayout")
   @js.native
-  class PatternLayout protected () extends Layout {
+  open class PatternLayout protected () extends Layout {
     /**
     	 * Constructor
     	 * @param pattern The conversion pattern string to use.
@@ -985,7 +989,7 @@ object mod {
   	 * @param width The outer width in pixels of the pop-up window. If not specified, defaults to 600.
   	 * @param height The outer height in pixels of the pop-up window. If not specified, defaults to 400.
   	 */
-  class PopUpAppender () extends Appender {
+  open class PopUpAppender () extends Appender {
     def this(lazyInit: Boolean) = this()
     def this(lazyInit: Boolean, initiallyMinimized: Boolean) = this()
     def this(lazyInit: Unit, initiallyMinimized: Boolean) = this()
@@ -1072,7 +1076,7 @@ object mod {
     	 */
     def addCommandLineFunction(
       functionName: String,
-      commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AppendResult, js.Any]
+      commandLineFunction: js.Function3[/* appender */ Appender, /* args */ Any, /* returnValue */ AppendResult, Any]
     ): Unit = js.native
     
     /**
@@ -1269,7 +1273,7 @@ object mod {
   /**
   	 * Constructor
   	 */
-  class SimpleLayout () extends Layout
+  open class SimpleLayout () extends Layout
   
   @JSImport("log4javascript", "XmlLayout")
   @js.native
@@ -1279,18 +1283,18 @@ object mod {
   	 * element composed of each individual message separated by line breaks or to include a <log4javascript:message> element for
   	 * each message inside one <log4javascript:messages> element. If not specified, defaults to true.
   	 */
-  class XmlLayout () extends Layout {
+  open class XmlLayout () extends Layout {
     def this(combineMessages: Boolean) = this()
   }
   
   inline def addEventListener(
     eventType: String,
-    listener: js.Function3[/* sender */ js.Any, /* eventType */ String, /* eventArgs */ js.Any, Unit]
+    listener: js.Function3[/* sender */ Any, /* eventType */ String, /* eventArgs */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def dispatchEvent(eventType: String, eventArgs: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventType.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dispatchEvent(eventType: String, eventArgs: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventType.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def evalInScope(expr: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("evalInScope")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def evalInScope(expr: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("evalInScope")(expr.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def getDefaultLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLogger")().asInstanceOf[Logger]
   
@@ -1310,24 +1314,24 @@ object mod {
     val ^ : js.Any = js.native
     
     inline def debug(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def debug(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(message: String, exception: js.Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def displayDebug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("displayDebug")().asInstanceOf[Unit]
     
     inline def error(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def error(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def error(message: String, exception: js.Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def setAlertAllErrors(alertAllErrors: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAlertAllErrors")(alertAllErrors.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def setQuietMode(quietMode: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setQuietMode")(quietMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def warn(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def warn(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def warn(message: String, exception: js.Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   inline def removeEventListener(
     eventType: String,
-    listener: js.Function3[/* sender */ js.Any, /* eventType */ String, /* eventArgs */ js.Any, Unit]
+    listener: js.Function3[/* sender */ Any, /* eventType */ String, /* eventArgs */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def resetConfiguration(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetConfiguration")().asInstanceOf[Unit]

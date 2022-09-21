@@ -7,19 +7,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "ProviderViewModel")
 @js.native
-class ProviderViewModel protected () extends StObject {
+open class ProviderViewModel protected () extends StObject {
   def this(options: Category) = this()
   
-  var creationCommand: Command = js.native
+  /**
+    * Gets the category
+    */
+  val category: String = js.native
   
+  /**
+    * Gets the Command that creates one or more providers which will be added to
+    * the globe when this item is selected.
+    */
+  val creationCommand: Command = js.native
+  
+  /**
+    * Gets the icon.  This property is observable.
+    */
   var iconUrl: String = js.native
   
+  /**
+    * Gets the display name.  This property is observable.
+    */
   var name: String = js.native
   
+  /**
+    * Gets the tooltip.  This property is observable.
+    */
   var tooltip: String = js.native
 }
 object ProviderViewModel {
   
+  /**
+    * A function which creates one or more providers.
+    */
   type CreationFunction = js.Function0[
     ImageryProvider | TerrainProvider | (js.Array[ImageryProvider | TerrainProvider])
   ]

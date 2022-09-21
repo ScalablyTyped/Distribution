@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("muicss/react", "Divider")
 @js.native
-class Divider () extends default
+open class Divider () extends default

@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "LinkTag")
 @js.native
-class LinkTag protected ()
-  extends Component[LinkTagProps, js.Any, js.Any] {
+open class LinkTag protected () extends Component[LinkTagProps, Any, Any] {
   def this(props: LinkTagProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LinkTagProps, context: js.Any) = this()
+  def this(props: LinkTagProps, context: Any) = this()
 }

@@ -53,7 +53,7 @@ object anon {
       
       inline def setStepNumsUndefined: Self = StObject.set(x, "stepNums", js.undefined)
       
-      inline def setStepNumsVarargs(value: String*): Self = StObject.set(x, "stepNums", js.Array(value :_*))
+      inline def setStepNumsVarargs(value: String*): Self = StObject.set(x, "stepNums", js.Array(value*))
     }
   }
 }

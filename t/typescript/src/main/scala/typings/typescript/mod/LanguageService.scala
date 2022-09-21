@@ -40,28 +40,84 @@ trait LanguageService extends StObject {
     fileName: java.lang.String,
     positionOrRange: Double,
     preferences: Unit,
+    triggerReason: Unit,
+    kind: java.lang.String
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: Unit,
     triggerReason: RefactorTriggerReason
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: Unit,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: Double, preferences: UserPreferences): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
     fileName: java.lang.String,
     positionOrRange: Double,
     preferences: UserPreferences,
+    triggerReason: Unit,
+    kind: java.lang.String
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: UserPreferences,
     triggerReason: RefactorTriggerReason
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: UserPreferences,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: TextRange): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
     fileName: java.lang.String,
     positionOrRange: TextRange,
     preferences: Unit,
+    triggerReason: Unit,
+    kind: java.lang.String
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: Unit,
     triggerReason: RefactorTriggerReason
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: Unit,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: TextRange, preferences: UserPreferences): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
     fileName: java.lang.String,
     positionOrRange: TextRange,
     preferences: UserPreferences,
+    triggerReason: Unit,
+    kind: java.lang.String
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: UserPreferences,
     triggerReason: RefactorTriggerReason
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: UserPreferences,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String
   ): js.Array[ApplicableRefactorInfo] = js.native
   
   def getBraceMatchingAtPosition(fileName: java.lang.String, position: Double): js.Array[TextSpan] = js.native
@@ -94,10 +150,11 @@ trait LanguageService extends StObject {
     *
     * @param fileName The path to the file
     * @param position A zero based index of the character where you want the entries
-    * @param entryName The name from an existing completion which came from `getCompletionsAtPosition`
+    * @param entryName The `name` from an existing completion which came from `getCompletionsAtPosition`
     * @param formatOptions How should code samples in the completions be formatted, can be undefined for backwards compatibility
-    * @param source Source code for the current file, can be undefined for backwards compatibility
+    * @param source `source` property from the completion entry
     * @param preferences User settings, can be undefined for backwards compatibility
+    * @param data `data` property from the completion entry
     */
   def getCompletionEntryDetails(fileName: java.lang.String, position: Double, entryName: java.lang.String): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
@@ -113,7 +170,34 @@ trait LanguageService extends StObject {
     entryName: java.lang.String,
     formatOptions: Unit,
     source: java.lang.String,
+    preferences: Unit,
+    data: CompletionEntryData
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: Unit,
+    source: java.lang.String,
     preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: Unit,
+    source: java.lang.String,
+    preferences: UserPreferences,
+    data: CompletionEntryData
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: Unit,
+    source: Unit,
+    preferences: Unit,
+    data: CompletionEntryData
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
@@ -122,6 +206,15 @@ trait LanguageService extends StObject {
     formatOptions: Unit,
     source: Unit,
     preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: Unit,
+    source: Unit,
+    preferences: UserPreferences,
+    data: CompletionEntryData
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
@@ -142,7 +235,34 @@ trait LanguageService extends StObject {
     entryName: java.lang.String,
     formatOptions: FormatCodeOptions,
     source: java.lang.String,
+    preferences: Unit,
+    data: CompletionEntryData
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeOptions,
+    source: java.lang.String,
     preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeOptions,
+    source: java.lang.String,
+    preferences: UserPreferences,
+    data: CompletionEntryData
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeOptions,
+    source: Unit,
+    preferences: Unit,
+    data: CompletionEntryData
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
@@ -151,6 +271,15 @@ trait LanguageService extends StObject {
     formatOptions: FormatCodeOptions,
     source: Unit,
     preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeOptions,
+    source: Unit,
+    preferences: UserPreferences,
+    data: CompletionEntryData
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
@@ -171,7 +300,34 @@ trait LanguageService extends StObject {
     entryName: java.lang.String,
     formatOptions: FormatCodeSettings,
     source: java.lang.String,
+    preferences: Unit,
+    data: CompletionEntryData
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeSettings,
+    source: java.lang.String,
     preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeSettings,
+    source: java.lang.String,
+    preferences: UserPreferences,
+    data: CompletionEntryData
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeSettings,
+    source: Unit,
+    preferences: Unit,
+    data: CompletionEntryData
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
     fileName: java.lang.String,
@@ -180,6 +336,15 @@ trait LanguageService extends StObject {
     formatOptions: FormatCodeSettings,
     source: Unit,
     preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: Double,
+    entryName: java.lang.String,
+    formatOptions: FormatCodeSettings,
+    source: Unit,
+    preferences: UserPreferences,
+    data: CompletionEntryData
   ): js.UndefOr[CompletionEntryDetails] = js.native
   
   def getCompletionEntrySymbol(fileName: java.lang.String, position: Double, name: java.lang.String): js.UndefOr[Symbol] = js.native
@@ -192,15 +357,29 @@ trait LanguageService extends StObject {
     * @param position A zero-based index of the character where you want the entries
     * @param options An object describing how the request was triggered and what kinds
     * of code actions can be returned with the completions.
+    * @param formattingSettings settings needed for calling formatting functions.
     */
   def getCompletionsAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[WithMetadataCompletionInf] = js.native
+  def getCompletionsAtPosition(
+    fileName: java.lang.String,
+    position: Double,
+    options: Unit,
+    formattingSettings: FormatCodeSettings
+  ): js.UndefOr[WithMetadataCompletionInf] = js.native
   def getCompletionsAtPosition(fileName: java.lang.String, position: Double, options: GetCompletionsAtPositionOptions): js.UndefOr[WithMetadataCompletionInf] = js.native
+  def getCompletionsAtPosition(
+    fileName: java.lang.String,
+    position: Double,
+    options: GetCompletionsAtPositionOptions,
+    formattingSettings: FormatCodeSettings
+  ): js.UndefOr[WithMetadataCompletionInf] = js.native
   
   def getDefinitionAndBoundSpan(fileName: java.lang.String, position: Double): js.UndefOr[DefinitionInfoAndBoundSpan] = js.native
   
   def getDefinitionAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[js.Array[DefinitionInfo]] = js.native
   
   def getDocCommentTemplateAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[TextInsertion] = js.native
+  def getDocCommentTemplateAtPosition(fileName: java.lang.String, position: Double, options: DocCommentTemplateOptions): js.UndefOr[TextInsertion] = js.native
   
   def getDocumentHighlights(fileName: java.lang.String, position: Double, filesToSearch: js.Array[java.lang.String]): js.UndefOr[js.Array[DocumentHighlights]] = js.native
   
@@ -262,6 +441,8 @@ trait LanguageService extends StObject {
   
   /** Encoded as triples of [start, length, ClassificationType]. */
   def getEncodedSyntacticClassifications(fileName: java.lang.String, span: TextSpan): Classifications = js.native
+  
+  def getFileReferences(fileName: java.lang.String): js.Array[ReferenceEntry] = js.native
   
   def getFormattingEditsAfterKeystroke(fileName: java.lang.String, position: Double, key: java.lang.String, options: FormatCodeOptions): js.Array[TextChange] = js.native
   def getFormattingEditsAfterKeystroke(fileName: java.lang.String, position: Double, key: java.lang.String, options: FormatCodeSettings): js.Array[TextChange] = js.native
@@ -326,8 +507,10 @@ trait LanguageService extends StObject {
   
   def getReferencesAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[js.Array[ReferenceEntry]] = js.native
   
+  /** @deprecated Use the signature with `UserPreferences` instead. */
   def getRenameInfo(fileName: java.lang.String, position: Double): RenameInfo = js.native
   def getRenameInfo(fileName: java.lang.String, position: Double, options: RenameInfoOptions): RenameInfo = js.native
+  def getRenameInfo(fileName: java.lang.String, position: Double, preferences: UserPreferences): RenameInfo = js.native
   
   /** @deprecated Use getEncodedSemanticClassifications instead. */
   def getSemanticClassifications(fileName: java.lang.String, span: TextSpan): js.Array[ClassifiedSpan] = js.native
@@ -395,14 +578,17 @@ trait LanguageService extends StObject {
   
   def isValidBraceCompletionAtPosition(fileName: java.lang.String, position: Double, openingBrace: Double): Boolean = js.native
   
-  def organizeImports(scope: OrganizeImportsScope, formatOptions: FormatCodeSettings): js.Array[FileTextChanges] = js.native
-  def organizeImports(scope: OrganizeImportsScope, formatOptions: FormatCodeSettings, preferences: UserPreferences): js.Array[FileTextChanges] = js.native
+  def organizeImports(args: OrganizeImportsArgs, formatOptions: FormatCodeSettings): js.Array[FileTextChanges] = js.native
+  def organizeImports(args: OrganizeImportsArgs, formatOptions: FormatCodeSettings, preferences: UserPreferences): js.Array[FileTextChanges] = js.native
   
   def prepareCallHierarchy(fileName: java.lang.String, position: Double): js.UndefOr[CallHierarchyItem | js.Array[CallHierarchyItem]] = js.native
   
   def provideCallHierarchyIncomingCalls(fileName: java.lang.String, position: Double): js.Array[CallHierarchyIncomingCall] = js.native
   
   def provideCallHierarchyOutgoingCalls(fileName: java.lang.String, position: Double): js.Array[CallHierarchyOutgoingCall] = js.native
+  
+  def provideInlayHints(fileName: java.lang.String, span: TextSpan): js.Array[InlayHint] = js.native
+  def provideInlayHints(fileName: java.lang.String, span: TextSpan, preferences: UserPreferences): js.Array[InlayHint] = js.native
   
   var toLineColumnOffset: js.UndefOr[
     js.Function2[/* fileName */ java.lang.String, /* position */ Double, LineAndCharacter]

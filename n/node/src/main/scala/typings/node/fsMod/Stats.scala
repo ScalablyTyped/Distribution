@@ -1,24 +1,23 @@
 package typings.node.fsMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "Stats")
 @js.native
-class Stats ()
+open class Stats ()
   extends StObject
      with StatsBase[Double] {
   
   /* CompleteClass */
-  var atime: Date = js.native
+  var atime: js.Date = js.native
   
   /* CompleteClass */
   var atimeMs: Double = js.native
   
   /* CompleteClass */
-  var birthtime: Date = js.native
+  var birthtime: js.Date = js.native
   
   /* CompleteClass */
   var birthtimeMs: Double = js.native
@@ -30,7 +29,7 @@ class Stats ()
   var blocks: Double = js.native
   
   /* CompleteClass */
-  var ctime: Date = js.native
+  var ctime: js.Date = js.native
   
   /* CompleteClass */
   var ctimeMs: Double = js.native
@@ -69,7 +68,7 @@ class Stats ()
   var mode: Double = js.native
   
   /* CompleteClass */
-  var mtime: Date = js.native
+  var mtime: js.Date = js.native
   
   /* CompleteClass */
   var mtimeMs: Double = js.native

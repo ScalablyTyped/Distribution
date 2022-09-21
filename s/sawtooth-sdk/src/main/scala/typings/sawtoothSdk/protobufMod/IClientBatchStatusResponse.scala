@@ -28,7 +28,7 @@ object IClientBatchStatusResponse {
     
     inline def setBatchStatusesUndefined: Self = StObject.set(x, "batchStatuses", js.undefined)
     
-    inline def setBatchStatusesVarargs(value: IClientBatchStatus*): Self = StObject.set(x, "batchStatuses", js.Array(value :_*))
+    inline def setBatchStatusesVarargs(value: IClientBatchStatus*): Self = StObject.set(x, "batchStatuses", js.Array(value*))
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

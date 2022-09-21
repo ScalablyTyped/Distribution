@@ -10,10 +10,10 @@ Utilities module suitable for both Node.js and client-side use
 | ------------------ | :-------------: |
 | Full name          | oblo-util |
 | Keywords           | utility, server, client, browser |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 809 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 74.33333333333333 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/Oblosys/oblo-util#readme)

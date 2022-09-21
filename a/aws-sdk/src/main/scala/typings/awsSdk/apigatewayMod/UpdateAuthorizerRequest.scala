@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateAuthorizerRequest extends StObject {
   
   /**
-    * [Required] The identifier of the Authorizer resource.
+    * The identifier of the Authorizer resource.
     */
   var authorizerId: String
   
   /**
-    * A list of update operations to be applied to the specified resource and in the order specified in this list.
+    * For more information about supported patch operations, see Patch Operations.
     */
   var patchOperations: js.UndefOr[ListOfPatchOperation] = js.undefined
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }
@@ -36,7 +36,7 @@ object UpdateAuthorizerRequest {
     
     inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value*))
     
     inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }

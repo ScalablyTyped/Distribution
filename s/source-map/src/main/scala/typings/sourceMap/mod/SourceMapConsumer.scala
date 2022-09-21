@@ -60,8 +60,8 @@ trait SourceMapConsumer extends StObject {
     *        `SourceMapConsumer.GENERATED_ORDER`.
     */
   def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit]): Unit = js.native
-  def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: js.Any): Unit = js.native
-  def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: js.Any, order: Double): Unit = js.native
+  def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: Any): Unit = js.native
+  def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: Any, order: Double): Unit = js.native
   def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: Unit, order: Double): Unit = js.native
   
   /**

@@ -10,10 +10,10 @@ Javascript date range picker - lightweight, no jQuery - (Unmaintained)
 | ------------------ | :-------------: |
 | Full name          | lightpick |
 | Keywords           | datepicker, date, daterange, date, picker, range |
-| # releases         | 21 |
-| # dependents       | 3 |
-| # downloads        | 75053 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14897.333333333334 |
+| # stars            | 216.0 |
 
 ## Links
 - [Homepage](https://github.com/wakirin/lightpick#readme)

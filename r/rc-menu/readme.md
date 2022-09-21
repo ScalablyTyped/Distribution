@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-menu
 
-Typings are for version 8.10.0
+Typings are for version 9.6.4
 
 ## Library description:
 menu ui component for react
@@ -10,10 +10,10 @@ menu ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-menu |
 | Keywords           | react, react-component, menu, ui, react-menu |
-| # releases         | 59 |
-| # dependents       | 279 |
-| # downloads        | 26798780 |
-| # stars            | 3 |
+| # releases         | 57 |
+| # dependents       | 0.0 |
+| # downloads        | 4202208.333333333 |
+| # stars            | 613.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/menu)

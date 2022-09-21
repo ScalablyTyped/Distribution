@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Types.Core
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,9 @@ trait RenderConfig extends StObject {
   var antialiasGL: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The default WebGL batch size.
+    * The default WebGL batch size. Represents the number of _quads_ that can be added to a single batch.
     */
-  var batchSize: js.UndefOr[integer] = js.undefined
+  var batchSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the game canvas will be cleared between each rendering frame.
@@ -40,12 +39,22 @@ trait RenderConfig extends StObject {
   /**
     * The maximum number of lights allowed to be visible within range of a single Camera in the LightManager.
     */
-  var maxLights: js.UndefOr[integer] = js.undefined
+  var maxLights: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * When in WebGL mode, this sets the maximum number of GPU Textures to use. The default, -1, will use all available units. The WebGL1 spec says all browsers should provide a minimum of 8.
+    */
+  var maxTextures: js.UndefOr[Double] = js.undefined
   
   /**
     * The mipmap magFilter to be used when creating WebGL textures.
     */
   var mipmapFilter: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The WebGL Pipeline configuration object.
+    */
+  var pipeline: js.UndefOr[PipelineConfig] = js.undefined
   
   /**
     * Sets `antialias` to false and `roundPixels` to true. This is the best setting for pixel-art games.
@@ -61,6 +70,11 @@ trait RenderConfig extends StObject {
     * In WebGL mode, the drawing buffer contains colors with pre-multiplied alpha.
     */
   var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If the value is true the WebGL buffers will not be cleared and will preserve their values until cleared or overwritten by the author.
+    */
+  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Draw texture-based Game Objects at only whole-integer positions. Game Objects without textures, like Graphics, ignore this property.
@@ -89,7 +103,7 @@ object RenderConfig {
     
     inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
-    inline def setBatchSize(value: integer): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
@@ -105,13 +119,21 @@ object RenderConfig {
     
     inline def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
     
-    inline def setMaxLights(value: integer): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
+    inline def setMaxLights(value: Double): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
     
     inline def setMaxLightsUndefined: Self = StObject.set(x, "maxLights", js.undefined)
+    
+    inline def setMaxTextures(value: Double): Self = StObject.set(x, "maxTextures", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTexturesUndefined: Self = StObject.set(x, "maxTextures", js.undefined)
     
     inline def setMipmapFilter(value: String): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
     
     inline def setMipmapFilterUndefined: Self = StObject.set(x, "mipmapFilter", js.undefined)
+    
+    inline def setPipeline(value: PipelineConfig): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    
+    inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
     
     inline def setPixelArt(value: Boolean): Self = StObject.set(x, "pixelArt", value.asInstanceOf[js.Any])
     
@@ -124,6 +146,10 @@ object RenderConfig {
     inline def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
     
     inline def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
+    
+    inline def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
     
     inline def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
     

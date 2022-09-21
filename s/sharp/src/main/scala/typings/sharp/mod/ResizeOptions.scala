@@ -39,6 +39,9 @@ trait ResizeOptions extends StObject {
   
   /** Do not enlarge if the width or height are already less than the specified dimensions, equivalent to GraphicsMagick's > geometry option. (optional, default false) */
   var withoutEnlargement: js.UndefOr[Boolean] = js.undefined
+  
+  /** Do not reduce if the width or height are already greater than the specified dimensions, equivalent to GraphicsMagick's < geometry option. (optional, default false) */
+  var withoutReduction: js.UndefOr[Boolean] = js.undefined
 }
 object ResizeOptions {
   
@@ -80,5 +83,9 @@ object ResizeOptions {
     inline def setWithoutEnlargement(value: Boolean): Self = StObject.set(x, "withoutEnlargement", value.asInstanceOf[js.Any])
     
     inline def setWithoutEnlargementUndefined: Self = StObject.set(x, "withoutEnlargement", js.undefined)
+    
+    inline def setWithoutReduction(value: Boolean): Self = StObject.set(x, "withoutReduction", value.asInstanceOf[js.Any])
+    
+    inline def setWithoutReductionUndefined: Self = StObject.set(x, "withoutReduction", js.undefined)
   }
 }

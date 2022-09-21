@@ -8,17 +8,17 @@ trait UploadControlDropZoneLeaveEventArgs
   extends StObject
      with EventArgs {
   
-  val dropZone: js.Any
+  val dropZone: Any
 }
 object UploadControlDropZoneLeaveEventArgs {
   
-  inline def apply(dropZone: js.Any, sender: Control): UploadControlDropZoneLeaveEventArgs = {
+  inline def apply(dropZone: Any, sender: Control): UploadControlDropZoneLeaveEventArgs = {
     val __obj = js.Dynamic.literal(dropZone = dropZone.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadControlDropZoneLeaveEventArgs]
   }
   
   extension [Self <: UploadControlDropZoneLeaveEventArgs](x: Self) {
     
-    inline def setDropZone(value: js.Any): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
+    inline def setDropZone(value: Any): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
   }
 }

@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates the SceneOptimization object
   * @param priority defines the priority of this optimization (0 by default which means first in the list)
-  * @param desc defines the description associated with the optimization
   */
-class ParticlesOptimization ()
+open class ParticlesOptimization ()
   extends typings.babylonjs.legacyMod.ParticlesOptimization {
   def this(/**
     * Defines the priority of this optimization (0 by default which means first in the list)

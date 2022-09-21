@@ -34,9 +34,9 @@ object TypeCheck {
     
     def parseType(typeDescription: String): js.Object = js.native
     
-    def parsedTypeCheck(parsedType: js.Any, obj: js.Any): Boolean = js.native
+    def parsedTypeCheck(parsedType: Any, obj: Any): Boolean = js.native
     
-    def typeCheck(typeDescription: String, inst: js.Any): Boolean = js.native
-    def typeCheck(typeDescription: String, inst: js.Any, options: Options): Boolean = js.native
+    def typeCheck(typeDescription: String, inst: Any): Boolean = js.native
+    def typeCheck(typeDescription: String, inst: Any, options: Options): Boolean = js.native
   }
 }

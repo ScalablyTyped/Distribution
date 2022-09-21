@@ -16,7 +16,7 @@ object disableEnhancedMonitoringCommandMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/commands/DisableEnhancedMonitoringCommand", "DisableEnhancedMonitoringCommand")
   @js.native
-  class DisableEnhancedMonitoringCommand protected ()
+  open class DisableEnhancedMonitoringCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object disableEnhancedMonitoringCommandMod {
     override val middlewareStack: MiddlewareStack[DisableEnhancedMonitoringInput, DisableEnhancedMonitoringOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KinesisResolvedConfiguration
     ): Handler[DisableEnhancedMonitoringInput, DisableEnhancedMonitoringOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KinesisResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DisableEnhancedMonitoringInput, DisableEnhancedMonitoringOutput] = js.native
   }
 }

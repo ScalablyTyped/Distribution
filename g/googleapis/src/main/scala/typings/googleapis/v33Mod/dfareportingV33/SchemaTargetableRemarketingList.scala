@@ -4,34 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains properties of a targetable remarketing list. Remarketing enables
-  * you to create lists of users who have performed specific actions on a site,
-  * then target ads to members of those lists. This resource is a read-only
-  * view of a remarketing list to be used to faciliate targeting ads to
-  * specific lists. Remarketing lists that are owned by your advertisers and
-  * those that are shared to your advertisers or account are accessible via
-  * this resource. To manage remarketing lists that are owned by your
-  * advertisers, use the RemarketingLists resource.
-  */
 trait SchemaTargetableRemarketingList extends StObject {
   
   /**
-    * Account ID of this remarketing list. This is a read-only, auto-generated
-    * field that is only returned in GET requests.
+    * Account ID of this remarketing list. This is a read-only, auto-generated field that is only returned in GET requests.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Whether this targetable remarketing list is active.
     */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Dimension value for the advertiser ID that owns this targetable
-    * remarketing list.
+    * Dimension value for the advertiser ID that owns this targetable remarketing list.
     */
-  var advertiserId: js.UndefOr[String] = js.undefined
+  var advertiserId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Dimension value for the ID of the advertiser.
@@ -41,46 +29,42 @@ trait SchemaTargetableRemarketingList extends StObject {
   /**
     * Targetable remarketing list description.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Targetable remarketing list ID.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#targetableRemarketingList&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#targetableRemarketingList".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Number of days that a user should remain in the targetable remarketing
-    * list without an impression.
+    * Number of days that a user should remain in the targetable remarketing list without an impression.
     */
-  var lifeSpan: js.UndefOr[String] = js.undefined
+  var lifeSpan: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Number of users currently in the list. This is a read-only field.
     */
-  var listSize: js.UndefOr[String] = js.undefined
+  var listSize: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Product from which this targetable remarketing list was originated.
     */
-  var listSource: js.UndefOr[String] = js.undefined
+  var listSource: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Name of the targetable remarketing list. Is no greater than 128
-    * characters long.
+    * Name of the targetable remarketing list. Is no greater than 128 characters long.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Subaccount ID of this remarketing list. This is a read-only,
-    * auto-generated field that is only returned in GET requests.
+    * Subaccount ID of this remarketing list. This is a read-only, auto-generated field that is only returned in GET requests.
     */
-  var subaccountId: js.UndefOr[String] = js.undefined
+  var subaccountId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTargetableRemarketingList {
   
@@ -93,9 +77,13 @@ object SchemaTargetableRemarketingList {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveNull: Self = StObject.set(x, "active", null)
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
@@ -105,37 +93,55 @@ object SchemaTargetableRemarketingList {
     
     inline def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
+    inline def setAdvertiserIdNull: Self = StObject.set(x, "advertiserId", null)
+    
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLifeSpan(value: String): Self = StObject.set(x, "lifeSpan", value.asInstanceOf[js.Any])
     
+    inline def setLifeSpanNull: Self = StObject.set(x, "lifeSpan", null)
+    
     inline def setLifeSpanUndefined: Self = StObject.set(x, "lifeSpan", js.undefined)
     
     inline def setListSize(value: String): Self = StObject.set(x, "listSize", value.asInstanceOf[js.Any])
+    
+    inline def setListSizeNull: Self = StObject.set(x, "listSize", null)
     
     inline def setListSizeUndefined: Self = StObject.set(x, "listSize", js.undefined)
     
     inline def setListSource(value: String): Self = StObject.set(x, "listSource", value.asInstanceOf[js.Any])
     
+    inline def setListSourceNull: Self = StObject.set(x, "listSource", null)
+    
     inline def setListSourceUndefined: Self = StObject.set(x, "listSource", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
+    
+    inline def setSubaccountIdNull: Self = StObject.set(x, "subaccountId", null)
     
     inline def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
   }

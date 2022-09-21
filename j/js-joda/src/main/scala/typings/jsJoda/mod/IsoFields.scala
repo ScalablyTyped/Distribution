@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "IsoFields")
 @js.native
-/* private */ class IsoFields () extends StObject
+/* private */ open class IsoFields () extends StObject
 object IsoFields {
   
   @JSImport("js-joda", "IsoFields")

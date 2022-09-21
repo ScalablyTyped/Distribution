@@ -39,8 +39,64 @@ trait FraudDetector extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetVariableResult, Unit]
   ): Request[BatchGetVariableResult, AWSError] = js.native
   
+  /**
+    *  Cancels an in-progress batch import job.
+    */
+  def cancelBatchImportJob(): Request[CancelBatchImportJobResult, AWSError] = js.native
+  def cancelBatchImportJob(callback: js.Function2[/* err */ AWSError, /* data */ CancelBatchImportJobResult, Unit]): Request[CancelBatchImportJobResult, AWSError] = js.native
+  /**
+    *  Cancels an in-progress batch import job.
+    */
+  def cancelBatchImportJob(params: CancelBatchImportJobRequest): Request[CancelBatchImportJobResult, AWSError] = js.native
+  def cancelBatchImportJob(
+    params: CancelBatchImportJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelBatchImportJobResult, Unit]
+  ): Request[CancelBatchImportJobResult, AWSError] = js.native
+  
+  /**
+    * Cancels the specified batch prediction job.
+    */
+  def cancelBatchPredictionJob(): Request[CancelBatchPredictionJobResult, AWSError] = js.native
+  def cancelBatchPredictionJob(callback: js.Function2[/* err */ AWSError, /* data */ CancelBatchPredictionJobResult, Unit]): Request[CancelBatchPredictionJobResult, AWSError] = js.native
+  /**
+    * Cancels the specified batch prediction job.
+    */
+  def cancelBatchPredictionJob(params: CancelBatchPredictionJobRequest): Request[CancelBatchPredictionJobResult, AWSError] = js.native
+  def cancelBatchPredictionJob(
+    params: CancelBatchPredictionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelBatchPredictionJobResult, Unit]
+  ): Request[CancelBatchPredictionJobResult, AWSError] = js.native
+  
   @JSName("config")
   var config_FraudDetector: ConfigBase & ClientConfiguration = js.native
+  
+  /**
+    * Creates a batch import job. 
+    */
+  def createBatchImportJob(): Request[CreateBatchImportJobResult, AWSError] = js.native
+  def createBatchImportJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchImportJobResult, Unit]): Request[CreateBatchImportJobResult, AWSError] = js.native
+  /**
+    * Creates a batch import job. 
+    */
+  def createBatchImportJob(params: CreateBatchImportJobRequest): Request[CreateBatchImportJobResult, AWSError] = js.native
+  def createBatchImportJob(
+    params: CreateBatchImportJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchImportJobResult, Unit]
+  ): Request[CreateBatchImportJobResult, AWSError] = js.native
+  
+  /**
+    * Creates a batch prediction job.
+    */
+  def createBatchPredictionJob(): Request[CreateBatchPredictionJobResult, AWSError] = js.native
+  def createBatchPredictionJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchPredictionJobResult, Unit]): Request[CreateBatchPredictionJobResult, AWSError] = js.native
+  /**
+    * Creates a batch prediction job.
+    */
+  def createBatchPredictionJob(params: CreateBatchPredictionJobRequest): Request[CreateBatchPredictionJobResult, AWSError] = js.native
+  def createBatchPredictionJob(
+    params: CreateBatchPredictionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchPredictionJobResult, Unit]
+  ): Request[CreateBatchPredictionJobResult, AWSError] = js.native
   
   /**
     * Creates a detector version. The detector version starts in a DRAFT status.
@@ -113,6 +169,34 @@ trait FraudDetector extends Service {
   ): Request[CreateVariableResult, AWSError] = js.native
   
   /**
+    * Deletes the specified batch import job ID record. This action does not delete the data that was batch imported. 
+    */
+  def deleteBatchImportJob(): Request[DeleteBatchImportJobResult, AWSError] = js.native
+  def deleteBatchImportJob(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBatchImportJobResult, Unit]): Request[DeleteBatchImportJobResult, AWSError] = js.native
+  /**
+    * Deletes the specified batch import job ID record. This action does not delete the data that was batch imported. 
+    */
+  def deleteBatchImportJob(params: DeleteBatchImportJobRequest): Request[DeleteBatchImportJobResult, AWSError] = js.native
+  def deleteBatchImportJob(
+    params: DeleteBatchImportJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteBatchImportJobResult, Unit]
+  ): Request[DeleteBatchImportJobResult, AWSError] = js.native
+  
+  /**
+    * Deletes a batch prediction job.
+    */
+  def deleteBatchPredictionJob(): Request[DeleteBatchPredictionJobResult, AWSError] = js.native
+  def deleteBatchPredictionJob(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBatchPredictionJobResult, Unit]): Request[DeleteBatchPredictionJobResult, AWSError] = js.native
+  /**
+    * Deletes a batch prediction job.
+    */
+  def deleteBatchPredictionJob(params: DeleteBatchPredictionJobRequest): Request[DeleteBatchPredictionJobResult, AWSError] = js.native
+  def deleteBatchPredictionJob(
+    params: DeleteBatchPredictionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteBatchPredictionJobResult, Unit]
+  ): Request[DeleteBatchPredictionJobResult, AWSError] = js.native
+  
+  /**
     * Deletes the detector. Before deleting a detector, you must first delete all detector versions and rule versions associated with the detector. When you delete a detector, Amazon Fraud Detector permanently deletes the detector and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteDetector(): Request[DeleteDetectorResult, AWSError] = js.native
@@ -141,12 +225,12 @@ trait FraudDetector extends Service {
   ): Request[DeleteDetectorVersionResult, AWSError] = js.native
   
   /**
-    * Deletes an entity type. You cannot delete an entity type that is included in an event type. When you delete an entity type, Amazon Fraud Detector permanently deletes that entity type from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes an entity type. You cannot delete an entity type that is included in an event type. When you delete an entity type, Amazon Fraud Detector permanently deletes that entity type and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteEntityType(): Request[DeleteEntityTypeResult, AWSError] = js.native
   def deleteEntityType(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEntityTypeResult, Unit]): Request[DeleteEntityTypeResult, AWSError] = js.native
   /**
-    * Deletes an entity type. You cannot delete an entity type that is included in an event type. When you delete an entity type, Amazon Fraud Detector permanently deletes that entity type from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes an entity type. You cannot delete an entity type that is included in an event type. When you delete an entity type, Amazon Fraud Detector permanently deletes that entity type and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteEntityType(params: DeleteEntityTypeRequest): Request[DeleteEntityTypeResult, AWSError] = js.native
   def deleteEntityType(
@@ -155,12 +239,12 @@ trait FraudDetector extends Service {
   ): Request[DeleteEntityTypeResult, AWSError] = js.native
   
   /**
-    * Deletes the specified event. When you delete an event, Amazon Fraud Detector permanently deletes that event from the evaluation history, and the event data is no longer stored in Amazon Fraud Detector.
+    * Deletes the specified event. When you delete an event, Amazon Fraud Detector permanently deletes that event and the event data is no longer stored in Amazon Fraud Detector.
     */
   def deleteEvent(): Request[DeleteEventResult, AWSError] = js.native
   def deleteEvent(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventResult, Unit]): Request[DeleteEventResult, AWSError] = js.native
   /**
-    * Deletes the specified event. When you delete an event, Amazon Fraud Detector permanently deletes that event from the evaluation history, and the event data is no longer stored in Amazon Fraud Detector.
+    * Deletes the specified event. When you delete an event, Amazon Fraud Detector permanently deletes that event and the event data is no longer stored in Amazon Fraud Detector.
     */
   def deleteEvent(params: DeleteEventRequest): Request[DeleteEventResult, AWSError] = js.native
   def deleteEvent(
@@ -169,18 +253,32 @@ trait FraudDetector extends Service {
   ): Request[DeleteEventResult, AWSError] = js.native
   
   /**
-    * Deletes an event type. You cannot delete an event type that is used in a detector or a model. When you delete an entity type, Amazon Fraud Detector permanently deletes that entity type from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes an event type. You cannot delete an event type that is used in a detector or a model. When you delete an event type, Amazon Fraud Detector permanently deletes that event type and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteEventType(): Request[DeleteEventTypeResult, AWSError] = js.native
   def deleteEventType(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventTypeResult, Unit]): Request[DeleteEventTypeResult, AWSError] = js.native
   /**
-    * Deletes an event type. You cannot delete an event type that is used in a detector or a model. When you delete an entity type, Amazon Fraud Detector permanently deletes that entity type from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes an event type. You cannot delete an event type that is used in a detector or a model. When you delete an event type, Amazon Fraud Detector permanently deletes that event type and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteEventType(params: DeleteEventTypeRequest): Request[DeleteEventTypeResult, AWSError] = js.native
   def deleteEventType(
     params: DeleteEventTypeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventTypeResult, Unit]
   ): Request[DeleteEventTypeResult, AWSError] = js.native
+  
+  /**
+    * Deletes all events of a particular event type.
+    */
+  def deleteEventsByEventType(): Request[DeleteEventsByEventTypeResult, AWSError] = js.native
+  def deleteEventsByEventType(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventsByEventTypeResult, Unit]): Request[DeleteEventsByEventTypeResult, AWSError] = js.native
+  /**
+    * Deletes all events of a particular event type.
+    */
+  def deleteEventsByEventType(params: DeleteEventsByEventTypeRequest): Request[DeleteEventsByEventTypeResult, AWSError] = js.native
+  def deleteEventsByEventType(
+    params: DeleteEventsByEventTypeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteEventsByEventTypeResult, Unit]
+  ): Request[DeleteEventsByEventTypeResult, AWSError] = js.native
   
   /**
     * Removes a SageMaker model from Amazon Fraud Detector. You can remove an Amazon SageMaker model if it is not associated with a detector version. Removing a SageMaker model disconnects it from Amazon Fraud Detector, but the model remains available in SageMaker.
@@ -197,12 +295,12 @@ trait FraudDetector extends Service {
   ): Request[DeleteExternalModelResult, AWSError] = js.native
   
   /**
-    * Deletes a label. You cannot delete labels that are included in an event type in Amazon Fraud Detector. You cannot delete a label assigned to an event ID. You must first delete the relevant event ID. When you delete a label, Amazon Fraud Detector permanently deletes that label from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes a label. You cannot delete labels that are included in an event type in Amazon Fraud Detector. You cannot delete a label assigned to an event ID. You must first delete the relevant event ID. When you delete a label, Amazon Fraud Detector permanently deletes that label and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteLabel(): Request[DeleteLabelResult, AWSError] = js.native
   def deleteLabel(callback: js.Function2[/* err */ AWSError, /* data */ DeleteLabelResult, Unit]): Request[DeleteLabelResult, AWSError] = js.native
   /**
-    * Deletes a label. You cannot delete labels that are included in an event type in Amazon Fraud Detector. You cannot delete a label assigned to an event ID. You must first delete the relevant event ID. When you delete a label, Amazon Fraud Detector permanently deletes that label from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes a label. You cannot delete labels that are included in an event type in Amazon Fraud Detector. You cannot delete a label assigned to an event ID. You must first delete the relevant event ID. When you delete a label, Amazon Fraud Detector permanently deletes that label and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteLabel(params: DeleteLabelRequest): Request[DeleteLabelResult, AWSError] = js.native
   def deleteLabel(
@@ -211,12 +309,12 @@ trait FraudDetector extends Service {
   ): Request[DeleteLabelResult, AWSError] = js.native
   
   /**
-    * Deletes a model. You can delete models and model versions in Amazon Fraud Detector, provided that they are not associated with a detector version.  When you delete a model, Amazon Fraud Detector permanently deletes that model from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes a model. You can delete models and model versions in Amazon Fraud Detector, provided that they are not associated with a detector version.  When you delete a model, Amazon Fraud Detector permanently deletes that model and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteModel(): Request[DeleteModelResult, AWSError] = js.native
   def deleteModel(callback: js.Function2[/* err */ AWSError, /* data */ DeleteModelResult, Unit]): Request[DeleteModelResult, AWSError] = js.native
   /**
-    * Deletes a model. You can delete models and model versions in Amazon Fraud Detector, provided that they are not associated with a detector version.  When you delete a model, Amazon Fraud Detector permanently deletes that model from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes a model. You can delete models and model versions in Amazon Fraud Detector, provided that they are not associated with a detector version.  When you delete a model, Amazon Fraud Detector permanently deletes that model and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteModel(params: DeleteModelRequest): Request[DeleteModelResult, AWSError] = js.native
   def deleteModel(
@@ -225,12 +323,12 @@ trait FraudDetector extends Service {
   ): Request[DeleteModelResult, AWSError] = js.native
   
   /**
-    * Deletes a model version. You can delete models and model versions in Amazon Fraud Detector, provided that they are not associated with a detector version.  When you delete a model version, Amazon Fraud Detector permanently deletes that model version from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes a model version. You can delete models and model versions in Amazon Fraud Detector, provided that they are not associated with a detector version.  When you delete a model version, Amazon Fraud Detector permanently deletes that model version and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteModelVersion(): Request[DeleteModelVersionResult, AWSError] = js.native
   def deleteModelVersion(callback: js.Function2[/* err */ AWSError, /* data */ DeleteModelVersionResult, Unit]): Request[DeleteModelVersionResult, AWSError] = js.native
   /**
-    * Deletes a model version. You can delete models and model versions in Amazon Fraud Detector, provided that they are not associated with a detector version.  When you delete a model version, Amazon Fraud Detector permanently deletes that model version from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes a model version. You can delete models and model versions in Amazon Fraud Detector, provided that they are not associated with a detector version.  When you delete a model version, Amazon Fraud Detector permanently deletes that model version and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteModelVersion(params: DeleteModelVersionRequest): Request[DeleteModelVersionResult, AWSError] = js.native
   def deleteModelVersion(
@@ -239,12 +337,12 @@ trait FraudDetector extends Service {
   ): Request[DeleteModelVersionResult, AWSError] = js.native
   
   /**
-    * Deletes an outcome. You cannot delete an outcome that is used in a rule version. When you delete an outcome, Amazon Fraud Detector permanently deletes that outcome from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes an outcome. You cannot delete an outcome that is used in a rule version. When you delete an outcome, Amazon Fraud Detector permanently deletes that outcome and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteOutcome(): Request[DeleteOutcomeResult, AWSError] = js.native
   def deleteOutcome(callback: js.Function2[/* err */ AWSError, /* data */ DeleteOutcomeResult, Unit]): Request[DeleteOutcomeResult, AWSError] = js.native
   /**
-    * Deletes an outcome. You cannot delete an outcome that is used in a rule version. When you delete an outcome, Amazon Fraud Detector permanently deletes that outcome from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes an outcome. You cannot delete an outcome that is used in a rule version. When you delete an outcome, Amazon Fraud Detector permanently deletes that outcome and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteOutcome(params: DeleteOutcomeRequest): Request[DeleteOutcomeResult, AWSError] = js.native
   def deleteOutcome(
@@ -253,12 +351,12 @@ trait FraudDetector extends Service {
   ): Request[DeleteOutcomeResult, AWSError] = js.native
   
   /**
-    * Deletes the rule. You cannot delete a rule if it is used by an ACTIVE or INACTIVE detector version. When you delete a rule, Amazon Fraud Detector permanently deletes that rule from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes the rule. You cannot delete a rule if it is used by an ACTIVE or INACTIVE detector version. When you delete a rule, Amazon Fraud Detector permanently deletes that rule and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteRule(): Request[DeleteRuleResult, AWSError] = js.native
   def deleteRule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRuleResult, Unit]): Request[DeleteRuleResult, AWSError] = js.native
   /**
-    * Deletes the rule. You cannot delete a rule if it is used by an ACTIVE or INACTIVE detector version. When you delete a rule, Amazon Fraud Detector permanently deletes that rule from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes the rule. You cannot delete a rule if it is used by an ACTIVE or INACTIVE detector version. When you delete a rule, Amazon Fraud Detector permanently deletes that rule and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteRule(params: DeleteRuleRequest): Request[DeleteRuleResult, AWSError] = js.native
   def deleteRule(
@@ -267,12 +365,12 @@ trait FraudDetector extends Service {
   ): Request[DeleteRuleResult, AWSError] = js.native
   
   /**
-    * Deletes a variable. You can't delete variables that are included in an event type in Amazon Fraud Detector. Amazon Fraud Detector automatically deletes model output variables and SageMaker model output variables when you delete the model. You can't delete these variables manually. When you delete a variable, Amazon Fraud Detector permanently deletes that variable from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes a variable. You can't delete variables that are included in an event type in Amazon Fraud Detector. Amazon Fraud Detector automatically deletes model output variables and SageMaker model output variables when you delete the model. You can't delete these variables manually. When you delete a variable, Amazon Fraud Detector permanently deletes that variable and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteVariable(): Request[DeleteVariableResult, AWSError] = js.native
   def deleteVariable(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVariableResult, Unit]): Request[DeleteVariableResult, AWSError] = js.native
   /**
-    * Deletes a variable. You can't delete variables that are included in an event type in Amazon Fraud Detector. Amazon Fraud Detector automatically deletes model output variables and SageMaker model output variables when you delete the model. You can't delete these variables manually. When you delete a variable, Amazon Fraud Detector permanently deletes that variable from the evaluation history, and the data is no longer stored in Amazon Fraud Detector.
+    * Deletes a variable. You can't delete variables that are included in an event type in Amazon Fraud Detector. Amazon Fraud Detector automatically deletes model output variables and SageMaker model output variables when you delete the model. You can't delete these variables manually. When you delete a variable, Amazon Fraud Detector permanently deletes that variable and the data is no longer stored in Amazon Fraud Detector.
     */
   def deleteVariable(params: DeleteVariableRequest): Request[DeleteVariableResult, AWSError] = js.native
   def deleteVariable(
@@ -307,6 +405,50 @@ trait FraudDetector extends Service {
     params: DescribeModelVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeModelVersionsResult, Unit]
   ): Request[DescribeModelVersionsResult, AWSError] = js.native
+  
+  /**
+    * Gets all batch import jobs or a specific job of the specified ID. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 50 records per page. If you provide a maxResults, the value must be between 1 and 50. To get the next page results, provide the pagination token from the GetBatchImportJobsResponse as part of your request. A null pagination token fetches the records from the beginning.
+    */
+  def getBatchImportJobs(): Request[GetBatchImportJobsResult, AWSError] = js.native
+  def getBatchImportJobs(callback: js.Function2[/* err */ AWSError, /* data */ GetBatchImportJobsResult, Unit]): Request[GetBatchImportJobsResult, AWSError] = js.native
+  /**
+    * Gets all batch import jobs or a specific job of the specified ID. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 50 records per page. If you provide a maxResults, the value must be between 1 and 50. To get the next page results, provide the pagination token from the GetBatchImportJobsResponse as part of your request. A null pagination token fetches the records from the beginning.
+    */
+  def getBatchImportJobs(params: GetBatchImportJobsRequest): Request[GetBatchImportJobsResult, AWSError] = js.native
+  def getBatchImportJobs(
+    params: GetBatchImportJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBatchImportJobsResult, Unit]
+  ): Request[GetBatchImportJobsResult, AWSError] = js.native
+  
+  /**
+    * Gets all batch prediction jobs or a specific job if you specify a job ID. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 50 records per page. If you provide a maxResults, the value must be between 1 and 50. To get the next page results, provide the pagination token from the GetBatchPredictionJobsResponse as part of your request. A null pagination token fetches the records from the beginning.
+    */
+  def getBatchPredictionJobs(): Request[GetBatchPredictionJobsResult, AWSError] = js.native
+  def getBatchPredictionJobs(callback: js.Function2[/* err */ AWSError, /* data */ GetBatchPredictionJobsResult, Unit]): Request[GetBatchPredictionJobsResult, AWSError] = js.native
+  /**
+    * Gets all batch prediction jobs or a specific job if you specify a job ID. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 50 records per page. If you provide a maxResults, the value must be between 1 and 50. To get the next page results, provide the pagination token from the GetBatchPredictionJobsResponse as part of your request. A null pagination token fetches the records from the beginning.
+    */
+  def getBatchPredictionJobs(params: GetBatchPredictionJobsRequest): Request[GetBatchPredictionJobsResult, AWSError] = js.native
+  def getBatchPredictionJobs(
+    params: GetBatchPredictionJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBatchPredictionJobsResult, Unit]
+  ): Request[GetBatchPredictionJobsResult, AWSError] = js.native
+  
+  /**
+    * Retrieves the status of a DeleteEventsByEventType action.
+    */
+  def getDeleteEventsByEventTypeStatus(): Request[GetDeleteEventsByEventTypeStatusResult, AWSError] = js.native
+  def getDeleteEventsByEventTypeStatus(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDeleteEventsByEventTypeStatusResult, Unit]
+  ): Request[GetDeleteEventsByEventTypeStatusResult, AWSError] = js.native
+  /**
+    * Retrieves the status of a DeleteEventsByEventType action.
+    */
+  def getDeleteEventsByEventTypeStatus(params: GetDeleteEventsByEventTypeStatusRequest): Request[GetDeleteEventsByEventTypeStatusResult, AWSError] = js.native
+  def getDeleteEventsByEventTypeStatus(
+    params: GetDeleteEventsByEventTypeStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDeleteEventsByEventTypeStatusResult, Unit]
+  ): Request[GetDeleteEventsByEventTypeStatusResult, AWSError] = js.native
   
   /**
     * Gets a particular detector version. 
@@ -351,6 +493,20 @@ trait FraudDetector extends Service {
   ): Request[GetEntityTypesResult, AWSError] = js.native
   
   /**
+    * Retrieves details of events stored with Amazon Fraud Detector. This action does not retrieve prediction results.
+    */
+  def getEvent(): Request[GetEventResult, AWSError] = js.native
+  def getEvent(callback: js.Function2[/* err */ AWSError, /* data */ GetEventResult, Unit]): Request[GetEventResult, AWSError] = js.native
+  /**
+    * Retrieves details of events stored with Amazon Fraud Detector. This action does not retrieve prediction results.
+    */
+  def getEvent(params: GetEventRequest): Request[GetEventResult, AWSError] = js.native
+  def getEvent(
+    params: GetEventRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEventResult, Unit]
+  ): Request[GetEventResult, AWSError] = js.native
+  
+  /**
     * Evaluates an event against a detector version. If a version ID is not provided, the detector’s (ACTIVE) version is used.
     */
   def getEventPrediction(): Request[GetEventPredictionResult, AWSError] = js.native
@@ -363,6 +519,20 @@ trait FraudDetector extends Service {
     params: GetEventPredictionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEventPredictionResult, Unit]
   ): Request[GetEventPredictionResult, AWSError] = js.native
+  
+  /**
+    *  Gets details of the past fraud predictions for the specified event ID, event type, detector ID, and detector version ID that was generated in the specified time period. 
+    */
+  def getEventPredictionMetadata(): Request[GetEventPredictionMetadataResult, AWSError] = js.native
+  def getEventPredictionMetadata(callback: js.Function2[/* err */ AWSError, /* data */ GetEventPredictionMetadataResult, Unit]): Request[GetEventPredictionMetadataResult, AWSError] = js.native
+  /**
+    *  Gets details of the past fraud predictions for the specified event ID, event type, detector ID, and detector version ID that was generated in the specified time period. 
+    */
+  def getEventPredictionMetadata(params: GetEventPredictionMetadataRequest): Request[GetEventPredictionMetadataResult, AWSError] = js.native
+  def getEventPredictionMetadata(
+    params: GetEventPredictionMetadataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEventPredictionMetadataResult, Unit]
+  ): Request[GetEventPredictionMetadataResult, AWSError] = js.native
   
   /**
     * Gets all event types or a specific event type if name is provided. This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 5 and 10. To get the next page results, provide the pagination token from the GetEventTypesResponse as part of your request. A null pagination token fetches the records from the beginning. 
@@ -393,7 +563,7 @@ trait FraudDetector extends Service {
   ): Request[GetExternalModelsResult, AWSError] = js.native
   
   /**
-    * Gets the encryption key if a Key Management Service (KMS) customer master key (CMK) has been specified to be used to encrypt content in Amazon Fraud Detector.
+    * Gets the encryption key if a KMS key has been specified to be used to encrypt content in Amazon Fraud Detector.
     */
   def getKMSEncryptionKey(): Request[GetKMSEncryptionKeyResult, AWSError] = js.native
   def getKMSEncryptionKey(callback: js.Function2[/* err */ AWSError, /* data */ GetKMSEncryptionKeyResult, Unit]): Request[GetKMSEncryptionKeyResult, AWSError] = js.native
@@ -427,12 +597,12 @@ trait FraudDetector extends Service {
   ): Request[GetModelVersionResult, AWSError] = js.native
   
   /**
-    * Gets one or more models. Gets all models for the AWS account if no model type and no model id provided. Gets all models for the AWS account and model type, if the model type is specified but model id is not provided. Gets a specific model if (model type, model id) tuple is specified.  This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 1 and 10. To get the next page results, provide the pagination token from the response as part of your request. A null pagination token fetches the records from the beginning.
+    * Gets one or more models. Gets all models for the Amazon Web Services account if no model type and no model id provided. Gets all models for the Amazon Web Services account and model type, if the model type is specified but model id is not provided. Gets a specific model if (model type, model id) tuple is specified.  This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 1 and 10. To get the next page results, provide the pagination token from the response as part of your request. A null pagination token fetches the records from the beginning.
     */
   def getModels(): Request[GetModelsResult, AWSError] = js.native
   def getModels(callback: js.Function2[/* err */ AWSError, /* data */ GetModelsResult, Unit]): Request[GetModelsResult, AWSError] = js.native
   /**
-    * Gets one or more models. Gets all models for the AWS account if no model type and no model id provided. Gets all models for the AWS account and model type, if the model type is specified but model id is not provided. Gets a specific model if (model type, model id) tuple is specified.  This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 1 and 10. To get the next page results, provide the pagination token from the response as part of your request. A null pagination token fetches the records from the beginning.
+    * Gets one or more models. Gets all models for the Amazon Web Services account if no model type and no model id provided. Gets all models for the Amazon Web Services account and model type, if the model type is specified but model id is not provided. Gets a specific model if (model type, model id) tuple is specified.  This is a paginated API. If you provide a null maxResults, this action retrieves a maximum of 10 records per page. If you provide a maxResults, the value must be between 1 and 10. To get the next page results, provide the pagination token from the response as part of your request. A null pagination token fetches the records from the beginning.
     */
   def getModels(params: GetModelsRequest): Request[GetModelsResult, AWSError] = js.native
   def getModels(
@@ -481,6 +651,20 @@ trait FraudDetector extends Service {
     params: GetVariablesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVariablesResult, Unit]
   ): Request[GetVariablesResult, AWSError] = js.native
+  
+  /**
+    * Gets a list of past predictions. The list can be filtered by detector ID, detector version ID, event ID, event type, or by specifying a time period. If filter is not specified, the most recent prediction is returned. For example, the following filter lists all past predictions for xyz event type - { "eventType":{ "value": "xyz" }” }   This is a paginated API. If you provide a null maxResults, this action will retrieve a maximum of 10 records per page. If you provide a maxResults, the value must be between 50 and 100. To get the next page results, provide the nextToken from the response as part of your request. A null nextToken fetches the records from the beginning. 
+    */
+  def listEventPredictions(): Request[ListEventPredictionsResult, AWSError] = js.native
+  def listEventPredictions(callback: js.Function2[/* err */ AWSError, /* data */ ListEventPredictionsResult, Unit]): Request[ListEventPredictionsResult, AWSError] = js.native
+  /**
+    * Gets a list of past predictions. The list can be filtered by detector ID, detector version ID, event ID, event type, or by specifying a time period. If filter is not specified, the most recent prediction is returned. For example, the following filter lists all past predictions for xyz event type - { "eventType":{ "value": "xyz" }” }   This is a paginated API. If you provide a null maxResults, this action will retrieve a maximum of 10 records per page. If you provide a maxResults, the value must be between 50 and 100. To get the next page results, provide the nextToken from the response as part of your request. A null nextToken fetches the records from the beginning. 
+    */
+  def listEventPredictions(params: ListEventPredictionsRequest): Request[ListEventPredictionsResult, AWSError] = js.native
+  def listEventPredictions(
+    params: ListEventPredictionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEventPredictionsResult, Unit]
+  ): Request[ListEventPredictionsResult, AWSError] = js.native
   
   /**
     * Lists all tags associated with the resource. This is a paginated API. To get the next page results, provide the pagination token from the response as part of your request. A null pagination token fetches the records from the beginning. 
@@ -553,12 +737,12 @@ trait FraudDetector extends Service {
   ): Request[PutExternalModelResult, AWSError] = js.native
   
   /**
-    * Specifies the Key Management Service (KMS) customer master key (CMK) to be used to encrypt content in Amazon Fraud Detector.
+    * Specifies the KMS key to be used to encrypt content in Amazon Fraud Detector.
     */
   def putKMSEncryptionKey(): Request[PutKMSEncryptionKeyResult, AWSError] = js.native
   def putKMSEncryptionKey(callback: js.Function2[/* err */ AWSError, /* data */ PutKMSEncryptionKeyResult, Unit]): Request[PutKMSEncryptionKeyResult, AWSError] = js.native
   /**
-    * Specifies the Key Management Service (KMS) customer master key (CMK) to be used to encrypt content in Amazon Fraud Detector.
+    * Specifies the KMS key to be used to encrypt content in Amazon Fraud Detector.
     */
   def putKMSEncryptionKey(params: PutKMSEncryptionKeyRequest): Request[PutKMSEncryptionKeyResult, AWSError] = js.native
   def putKMSEncryptionKey(
@@ -593,6 +777,20 @@ trait FraudDetector extends Service {
     params: PutOutcomeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutOutcomeResult, Unit]
   ): Request[PutOutcomeResult, AWSError] = js.native
+  
+  /**
+    * Stores events in Amazon Fraud Detector without generating fraud predictions for those events. For example, you can use SendEvent to upload a historical dataset, which you can then later use to train a model.
+    */
+  def sendEvent(): Request[SendEventResult, AWSError] = js.native
+  def sendEvent(callback: js.Function2[/* err */ AWSError, /* data */ SendEventResult, Unit]): Request[SendEventResult, AWSError] = js.native
+  /**
+    * Stores events in Amazon Fraud Detector without generating fraud predictions for those events. For example, you can use SendEvent to upload a historical dataset, which you can then later use to train a model.
+    */
+  def sendEvent(params: SendEventRequest): Request[SendEventResult, AWSError] = js.native
+  def sendEvent(
+    params: SendEventRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SendEventResult, Unit]
+  ): Request[SendEventResult, AWSError] = js.native
   
   /**
     * Assigns tags to a resource.
@@ -665,12 +863,26 @@ trait FraudDetector extends Service {
   ): Request[UpdateDetectorVersionStatusResult, AWSError] = js.native
   
   /**
-    * Updates a model. You can update the description attribute using this action.
+    * Updates the specified event with a new label.
+    */
+  def updateEventLabel(): Request[UpdateEventLabelResult, AWSError] = js.native
+  def updateEventLabel(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEventLabelResult, Unit]): Request[UpdateEventLabelResult, AWSError] = js.native
+  /**
+    * Updates the specified event with a new label.
+    */
+  def updateEventLabel(params: UpdateEventLabelRequest): Request[UpdateEventLabelResult, AWSError] = js.native
+  def updateEventLabel(
+    params: UpdateEventLabelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateEventLabelResult, Unit]
+  ): Request[UpdateEventLabelResult, AWSError] = js.native
+  
+  /**
+    * Updates model description.
     */
   def updateModel(): Request[UpdateModelResult, AWSError] = js.native
   def updateModel(callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelResult, Unit]): Request[UpdateModelResult, AWSError] = js.native
   /**
-    * Updates a model. You can update the description attribute using this action.
+    * Updates model description.
     */
   def updateModel(params: UpdateModelRequest): Request[UpdateModelResult, AWSError] = js.native
   def updateModel(
@@ -693,12 +905,12 @@ trait FraudDetector extends Service {
   ): Request[UpdateModelVersionResult, AWSError] = js.native
   
   /**
-    * Updates the status of a model version. You can perform the following status updates:   Change the TRAINING_COMPLETE status to ACTIVE.   Change ACTIVEto INACTIVE.  
+    * Updates the status of a model version. You can perform the following status updates:   Change the TRAINING_IN_PROGRESS status to TRAINING_CANCELLED.   Change the TRAINING_COMPLETE status to ACTIVE.   Change ACTIVE to INACTIVE.  
     */
   def updateModelVersionStatus(): Request[UpdateModelVersionStatusResult, AWSError] = js.native
   def updateModelVersionStatus(callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelVersionStatusResult, Unit]): Request[UpdateModelVersionStatusResult, AWSError] = js.native
   /**
-    * Updates the status of a model version. You can perform the following status updates:   Change the TRAINING_COMPLETE status to ACTIVE.   Change ACTIVEto INACTIVE.  
+    * Updates the status of a model version. You can perform the following status updates:   Change the TRAINING_IN_PROGRESS status to TRAINING_CANCELLED.   Change the TRAINING_COMPLETE status to ACTIVE.   Change ACTIVE to INACTIVE.  
     */
   def updateModelVersionStatus(params: UpdateModelVersionStatusRequest): Request[UpdateModelVersionStatusResult, AWSError] = js.native
   def updateModelVersionStatus(

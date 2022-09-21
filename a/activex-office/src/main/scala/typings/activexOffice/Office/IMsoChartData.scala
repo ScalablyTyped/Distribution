@@ -17,7 +17,7 @@ trait IMsoChartData extends StObject {
   /* private */ @JSName("Office.IMsoChartData_typekey")
   var OfficeDotIMsoChartData_typekey: IMsoChartData
   
-  val Workbook: js.Any
+  val Workbook: Any
 }
 object IMsoChartData {
   
@@ -27,7 +27,7 @@ object IMsoChartData {
     BreakLink: () => Unit,
     IsLinked: Boolean,
     OfficeDotIMsoChartData_typekey: IMsoChartData,
-    Workbook: js.Any
+    Workbook: Any
   ): IMsoChartData = {
     val __obj = js.Dynamic.literal(Activate = js.Any.fromFunction0(Activate), ActivateChartDataWindow = js.Any.fromFunction0(ActivateChartDataWindow), BreakLink = js.Any.fromFunction0(BreakLink), IsLinked = IsLinked.asInstanceOf[js.Any], Workbook = Workbook.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.IMsoChartData_typekey")(OfficeDotIMsoChartData_typekey.asInstanceOf[js.Any])
@@ -46,6 +46,6 @@ object IMsoChartData {
     
     inline def setOfficeDotIMsoChartData_typekey(value: IMsoChartData): Self = StObject.set(x, "Office.IMsoChartData_typekey", value.asInstanceOf[js.Any])
     
-    inline def setWorkbook(value: js.Any): Self = StObject.set(x, "Workbook", value.asInstanceOf[js.Any])
+    inline def setWorkbook(value: Any): Self = StObject.set(x, "Workbook", value.asInstanceOf[js.Any])
   }
 }

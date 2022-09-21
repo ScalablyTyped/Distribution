@@ -39,7 +39,7 @@ object DescribeConnectionAliasesRequest {
     
     inline def setAliasIdsUndefined: Self = StObject.set(x, "AliasIds", js.undefined)
     
-    inline def setAliasIdsVarargs(value: ConnectionAliasId*): Self = StObject.set(x, "AliasIds", js.Array(value :_*))
+    inline def setAliasIdsVarargs(value: ConnectionAliasId*): Self = StObject.set(x, "AliasIds", js.Array(value*))
     
     inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

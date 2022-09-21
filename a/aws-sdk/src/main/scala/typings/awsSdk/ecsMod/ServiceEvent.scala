@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceEvent extends StObject {
   
   /**
-    * The Unix timestamp for when the event was triggered.
+    * The Unix timestamp for the time when the event was triggered.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ID string of the event.
+    * The ID string for the event.
     */
   var id: js.UndefOr[String] = js.undefined
   
@@ -30,7 +30,7 @@ object ServiceEvent {
   
   extension [Self <: ServiceEvent](x: Self) {
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

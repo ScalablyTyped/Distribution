@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AWS.Response")
 @js.native
-class Response[D, E] ()
+open class Response[D, E] ()
   extends typings.awsSdk.mod.Response[D, E]

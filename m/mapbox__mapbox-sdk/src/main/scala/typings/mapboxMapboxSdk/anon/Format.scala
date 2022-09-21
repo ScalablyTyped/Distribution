@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Format extends StObject {
   
+  var draft: js.UndefOr[Boolean] = js.undefined
+  
   var format: js.UndefOr[json | png] = js.undefined
+  
+  var fresh: js.UndefOr[Boolean] = js.undefined
   
   var highRes: js.UndefOr[Boolean] = js.undefined
   
@@ -25,9 +29,17 @@ object Format {
   
   extension [Self <: Format](x: Self) {
     
+    inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+    
     inline def setFormat(value: json | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setFresh(value: Boolean): Self = StObject.set(x, "fresh", value.asInstanceOf[js.Any])
+    
+    inline def setFreshUndefined: Self = StObject.set(x, "fresh", js.undefined)
     
     inline def setHighRes(value: Boolean): Self = StObject.set(x, "highRes", value.asInstanceOf[js.Any])
     

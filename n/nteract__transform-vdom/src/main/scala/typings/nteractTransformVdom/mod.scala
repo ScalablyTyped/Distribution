@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("@nteract/transform-vdom", JSImport.Default)
   @js.native
-  class default () extends VDOM
+  open class default () extends VDOM
   /* static members */
   object default {
     
@@ -40,7 +40,7 @@ object mod {
   
   inline def objectToReactElement(
     obj: VDOMEl,
-    onVDOMEvent: js.Function2[/* targetName */ String, /* event */ SerializedEvent[js.Any], Unit]
+    onVDOMEvent: js.Function2[/* targetName */ String, /* event */ SerializedEvent[Any], Unit]
   ): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("objectToReactElement")(obj.asInstanceOf[js.Any], onVDOMEvent.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
   trait Props extends StObject {
@@ -49,11 +49,11 @@ object mod {
     
     var mediaType: applicationSlashvdomDotv1Plussignjson
     
-    def onVDOMEvent(targetName: String, event: SerializedEvent[js.Any]): Unit
+    def onVDOMEvent(targetName: String, event: SerializedEvent[Any]): Unit
   }
   object Props {
     
-    inline def apply(data: VDOMEl, onVDOMEvent: (String, SerializedEvent[js.Any]) => Unit): Props = {
+    inline def apply(data: VDOMEl, onVDOMEvent: (String, SerializedEvent[Any]) => Unit): Props = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mediaType = "application/vdom.v1+json", onVDOMEvent = js.Any.fromFunction2(onVDOMEvent))
       __obj.asInstanceOf[Props]
     }
@@ -64,11 +64,11 @@ object mod {
       
       inline def setMediaType(value: applicationSlashvdomDotv1Plussignjson): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      inline def setOnVDOMEvent(value: (String, SerializedEvent[js.Any]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
+      inline def setOnVDOMEvent(value: (String, SerializedEvent[Any]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
     }
   }
   
   @js.native
   trait VDOM
-    extends PureComponent[PartialProps, js.Object, js.Any]
+    extends PureComponent[PartialProps, js.Object, Any]
 }

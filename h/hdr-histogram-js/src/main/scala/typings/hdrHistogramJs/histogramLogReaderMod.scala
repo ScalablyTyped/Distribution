@@ -1,15 +1,14 @@
 package typings.hdrHistogramJs
 
-import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
-import typings.hdrHistogramJs.abstractHistogramMod.HistogramConstructor
-import typings.hdrHistogramJs.anon.HistogramConstr
+import typings.hdrHistogramJs.histogramMod.BitBucketSize
+import typings.hdrHistogramJs.histogramMod.Histogram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object histogramLogReaderMod {
   
-  @JSImport("hdr-histogram-js/HistogramLogReader", JSImport.Namespace)
+  @JSImport("hdr-histogram-js/dist/HistogramLogReader", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -54,13 +53,15 @@ object histogramLogReaderMod {
     * that may be added to timestamps in the file to determine an absolute
     * timestamp (e.g. since the epoch) for each interval.
     */
-  @JSImport("hdr-histogram-js/HistogramLogReader", JSImport.Default)
+  @JSImport("hdr-histogram-js/dist/HistogramLogReader", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with HistogramLogReader {
     def this(logContent: String) = this()
-    def this(logContent: String, options: HistogramConstr) = this()
+    def this(logContent: String, bitBucketSize: BitBucketSize) = this()
+    def this(logContent: String, bitBucketSize: Unit, useWebAssembly: Boolean) = this()
+    def this(logContent: String, bitBucketSize: BitBucketSize, useWebAssembly: Boolean) = this()
   }
   
   inline def listTags(content: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTags")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
@@ -111,9 +112,9 @@ object histogramLogReaderMod {
     
     var baseTimeSec: Double = js.native
     
-    var currentLineIndex: Double = js.native
+    var bitBucketSize: BitBucketSize = js.native
     
-    var histogramConstr: HistogramConstructor = js.native
+    var currentLineIndex: Double = js.native
     
     var lines: js.Array[String] = js.native
     
@@ -124,15 +125,17 @@ object histogramLogReaderMod {
       * from the file, this method will return a null.
       * @return a DecodedInterval, or a null if no appropriate interval found
       */
-    def nextIntervalHistogram(): AbstractHistogram | Null = js.native
-    def nextIntervalHistogram(rangeStartTimeSec: Double): AbstractHistogram | Null = js.native
-    def nextIntervalHistogram(rangeStartTimeSec: Double, rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
-    def nextIntervalHistogram(rangeStartTimeSec: Unit, rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
+    def nextIntervalHistogram(): Histogram | Null = js.native
+    def nextIntervalHistogram(rangeStartTimeSec: Double): Histogram | Null = js.native
+    def nextIntervalHistogram(rangeStartTimeSec: Double, rangeEndTimeSec: Double): Histogram | Null = js.native
+    def nextIntervalHistogram(rangeStartTimeSec: Unit, rangeEndTimeSec: Double): Histogram | Null = js.native
     
-    /* private */ var parseBaseTimeFromLine: js.Any = js.native
+    /* private */ var parseBaseTimeFromLine: Any = js.native
     
-    /* private */ var parseStartTimeFromLine: js.Any = js.native
+    /* private */ var parseStartTimeFromLine: Any = js.native
     
     var startTimeSec: Double = js.native
+    
+    var useWebAssembly: Boolean = js.native
   }
 }

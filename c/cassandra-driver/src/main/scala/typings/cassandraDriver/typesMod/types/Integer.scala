@@ -1,13 +1,13 @@
 package typings.cassandraDriver.typesMod.types
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.Integer")
 @js.native
-class Integer protected () extends StObject {
+open class Integer protected () extends StObject {
   def this(bits: js.Array[Double], sign: Double) = this()
   
   def abs(): Integer = js.native

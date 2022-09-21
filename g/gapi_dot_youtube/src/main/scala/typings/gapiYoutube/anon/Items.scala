@@ -32,7 +32,7 @@ object Items {
     
     inline def setItems(value: js.Array[Type]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Type*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Type*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setPosition(value: CornerPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

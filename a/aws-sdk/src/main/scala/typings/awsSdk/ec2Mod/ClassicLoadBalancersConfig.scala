@@ -24,6 +24,6 @@ object ClassicLoadBalancersConfig {
     
     inline def setClassicLoadBalancersUndefined: Self = StObject.set(x, "ClassicLoadBalancers", js.undefined)
     
-    inline def setClassicLoadBalancersVarargs(value: ClassicLoadBalancer*): Self = StObject.set(x, "ClassicLoadBalancers", js.Array(value :_*))
+    inline def setClassicLoadBalancersVarargs(value: ClassicLoadBalancer*): Self = StObject.set(x, "ClassicLoadBalancers", js.Array(value*))
   }
 }

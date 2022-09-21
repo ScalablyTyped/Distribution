@@ -1,8 +1,5 @@
 package typings.awsSdkClientS3Browser
 
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +11,7 @@ object typesRecordsEventMod {
     /**
       * <p>The byte array of partial, one or more result records.</p>
       */
-    var Payload: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.undefined
+    var Payload: js.UndefOr[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String] = js.undefined
   }
   object RecordsEvent {
     
@@ -25,7 +22,7 @@ object typesRecordsEventMod {
     
     extension [Self <: RecordsEvent](x: Self) {
       
-      inline def setPayload(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     }
@@ -39,7 +36,7 @@ object typesRecordsEventMod {
       * <p>The byte array of partial, one or more result records.</p>
       */
     @JSName("Payload")
-    var Payload_UnmarshalledRecordsEvent: js.UndefOr[Uint8Array] = js.undefined
+    var Payload_UnmarshalledRecordsEvent: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   }
   object UnmarshalledRecordsEvent {
     
@@ -50,7 +47,7 @@ object typesRecordsEventMod {
     
     extension [Self <: UnmarshalledRecordsEvent](x: Self) {
       
-      inline def setPayload(value: Uint8Array): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     }

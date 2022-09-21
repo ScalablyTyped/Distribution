@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Namespace extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) that AWS Cloud Map assigns to the namespace when you create it.
+    * The Amazon Resource Name (ARN) that Cloud Map assigns to the namespace when you create it.
     */
   var Arn: js.UndefOr[typings.awsSdk.servicediscoveryMod.Arn] = js.undefined
   
   /**
     * The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC). The value of CreateDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A unique string that identifies the request and that allows failed requests to be retried without the risk of executing an operation twice. 
+    * A unique string that identifies the request and that allows failed requests to be retried without the risk of running an operation twice. 
     */
   var CreatorRequestId: js.UndefOr[ResourceId] = js.undefined
   
@@ -47,7 +47,7 @@ trait Namespace extends StObject {
   var ServiceCount: js.UndefOr[ResourceCount] = js.undefined
   
   /**
-    * The type of the namespace. The methods for discovering instances depends on the value that you specify:    HTTP: Instances can be discovered only programmatically, using the AWS Cloud Map DiscoverInstances API.    DNS_PUBLIC: Instances can be discovered using public DNS queries and using the DiscoverInstances API.    DNS_PRIVATE: Instances can be discovered using DNS queries in VPCs and using the DiscoverInstances API.  
+    * The type of the namespace. The methods for discovering instances depends on the value that you specify:  HTTP  Instances can be discovered only programmatically, using the Cloud Map DiscoverInstances API.  DNS_PUBLIC  Instances can be discovered using public DNS queries and using the DiscoverInstances API.  DNS_PRIVATE  Instances can be discovered using DNS queries in VPCs and using the DiscoverInstances API.  
     */
   var Type: js.UndefOr[NamespaceType] = js.undefined
 }
@@ -64,7 +64,7 @@ object Namespace {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     

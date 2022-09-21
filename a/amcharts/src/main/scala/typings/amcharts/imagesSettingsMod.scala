@@ -8,7 +8,7 @@ object imagesSettingsMod {
   
   @JSImport("amcharts/ImagesSettings", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ImagesSettings {
     

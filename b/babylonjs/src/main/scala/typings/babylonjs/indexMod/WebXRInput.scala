@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WebXRInput")
 @js.native
-class WebXRInput protected ()
+open class WebXRInput protected ()
   extends typings.babylonjs.xRIndexMod.WebXRInput {
   /**
     * Initializes the WebXRInput
     * @param xrSessionManager the xr session manager for this session
     * @param xrCamera the WebXR camera for this session. Mainly used for teleportation
-    * @param options = initialization options for this xr input
+    * @param _options = initialization options for this xr input
     */
   def this(
     /**
@@ -34,6 +34,6 @@ class WebXRInput protected ()
     * the WebXR camera for this session. Mainly used for teleportation
     */
   xrCamera: typings.babylonjs.webXRCameraMod.WebXRCamera,
-    options: IWebXRInputOptions
+    _options: IWebXRInputOptions
   ) = this()
 }

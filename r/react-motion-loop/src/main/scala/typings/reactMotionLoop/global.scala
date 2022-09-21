@@ -11,14 +11,14 @@ object global {
     
     @JSGlobal("ReactMotionLoop.ReactMotionLoop")
     @js.native
-    class ReactMotionLoop protected ()
+    open class ReactMotionLoop protected ()
       extends typings.reactMotionLoop.mod.ReactMotionLoop {
       def this(props: ReactMotionLoopProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: ReactMotionLoopProps, context: js.Any) = this()
+      def this(props: ReactMotionLoopProps, context: Any) = this()
     }
   }
 }

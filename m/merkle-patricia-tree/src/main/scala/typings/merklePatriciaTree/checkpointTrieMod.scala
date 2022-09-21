@@ -1,10 +1,7 @@
 package typings.merklePatriciaTree
 
 import typings.merklePatriciaTree.baseTrieMod.Trie
-import typings.merklePatriciaTree.dbMod.DB
-import typings.merklePatriciaTree.scratchMod.ScratchDB
-import typings.merklePatriciaTree.scratchReadStreamMod.ScratchReadStream
-import typings.node.Buffer
+import typings.merklePatriciaTree.checkpointDbMod.CheckpointDB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,39 +10,12 @@ object checkpointTrieMod {
   
   @JSImport("merkle-patricia-tree/dist/checkpointTrie", "CheckpointTrie")
   @js.native
-  class CheckpointTrie protected () extends Trie {
-    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any) = this()
-    
-    var _checkpoints: js.Array[Buffer] = js.native
-    
-    /**
-      * Returns a `ScratchReadStream` based on the state updates
-      * since checkpoint.
-      * @private
-      */
-    def _createScratchReadStream(): ScratchReadStream = js.native
-    def _createScratchReadStream(scratchDb: ScratchDB): ScratchReadStream = js.native
-    
-    /**
-      * Enter into checkpoint mode.
-      * @private
-      */
-    def _enterCpMode(): Unit = js.native
-    
-    /**
-      * Exit from checkpoint mode.
-      * @private
-      */
-    def _exitCpMode(commitState: Boolean): js.Promise[Unit] = js.native
-    
-    var _mainDB: DB = js.native
-    
-    var _scratch: ScratchDB | Null = js.native
+  open class CheckpointTrie protected () extends Trie {
+    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any) = this()
     
     /**
       * Creates a checkpoint that can later be reverted to or committed.
-      * After this is called, no changes to the trie will be permanently saved until `commit` is called.
-      * To override the checkpointing mechanism use `_maindb.put` to write directly write to db.
+      * After this is called, all changes can be reverted until `commit` is called.
       */
     def checkpoint(): Unit = js.native
     
@@ -58,10 +28,8 @@ object checkpointTrieMod {
     
     def copy(includeCheckpoints: Boolean): CheckpointTrie = js.native
     
-    /**
-      * Is the trie during a checkpoint phase?
-      */
-    def isCheckpoint: Boolean = js.native
+    @JSName("db")
+    var db_CheckpointTrie: CheckpointDB = js.native
     
     /**
       * Reverts the trie to the state it was at when `checkpoint` was first called.

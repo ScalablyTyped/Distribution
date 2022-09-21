@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AmiDistributionConfiguration extends StObject {
   
   /**
-    * The tags to apply to AMIs distributed to this Region. 
+    * The tags to apply to AMIs distributed to this Region.
     */
   var amiTags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * The description of the distribution configuration. Minimum and maximum length are in characters.
+    * The description of the AMI distribution configuration. Minimum and maximum length are in characters.
     */
   var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  The KMS key identifier used to encrypt the distributed image. 
+    * The KMS key identifier used to encrypt the distributed image.
     */
   var kmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  Launch permissions can be used to configure which AWS accounts can use the AMI to launch instances. 
+    *  Launch permissions can be used to configure which Amazon Web Services accounts can use the AMI to launch instances.
     */
   var launchPermission: js.UndefOr[LaunchPermissionConfiguration] = js.undefined
   
   /**
-    * The name of the distribution configuration. 
+    * The name of the output AMI.
     */
   var name: js.UndefOr[AmiNameString] = js.undefined
   
   /**
-    *  The ID of an account to which you want to distribute an image. 
+    * The ID of an account to which you want to distribute an image.
     */
   var targetAccountIds: js.UndefOr[AccountList] = js.undefined
 }
@@ -69,6 +69,6 @@ object AmiDistributionConfiguration {
     
     inline def setTargetAccountIdsUndefined: Self = StObject.set(x, "targetAccountIds", js.undefined)
     
-    inline def setTargetAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "targetAccountIds", js.Array(value :_*))
+    inline def setTargetAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "targetAccountIds", js.Array(value*))
   }
 }

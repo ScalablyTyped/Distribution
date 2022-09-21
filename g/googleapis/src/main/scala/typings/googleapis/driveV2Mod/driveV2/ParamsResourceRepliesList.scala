@@ -1,9 +1,5 @@
 package typings.googleapis.driveV2Mod.driveV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceRepliesList
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the comment.
@@ -28,21 +19,17 @@ trait ParamsResourceRepliesList
   var fileId: js.UndefOr[String] = js.undefined
   
   /**
-    * If set, all replies, including deleted replies (with content stripped)
-    * will be returned.
+    * If set, all replies, including deleted replies (with content stripped) will be returned.
     */
   var includeDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The maximum number of replies to include in the response, used for
-    * paging.
+    * The maximum number of replies to include in the response, used for paging.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * The continuation token, used to page through large result sets. To get
-    * the next page of results, set this parameter to the value of
-    * "nextPageToken" from the previous response.
+    * The continuation token, used to page through large result sets. To get the next page of results, set this parameter to the value of "nextPageToken" from the previous response.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -54,10 +41,6 @@ object ParamsResourceRepliesList {
   }
   
   extension [Self <: ParamsResourceRepliesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCommentId(value: String): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     

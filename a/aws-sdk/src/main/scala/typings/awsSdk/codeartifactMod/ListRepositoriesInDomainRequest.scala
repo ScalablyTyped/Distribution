@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListRepositoriesInDomainRequest extends StObject {
   
   /**
-    *  Filter the list of repositories to only include those that are managed by the AWS account ID. 
+    *  Filter the list of repositories to only include those that are managed by the Amazon Web Services account ID. 
     */
   var administratorAccount: js.UndefOr[AccountId] = js.undefined
   
@@ -17,7 +17,7 @@ trait ListRepositoriesInDomainRequest extends StObject {
   var domain: DomainName
   
   /**
-    *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
+    *  The 12-digit account number of the Amazon Web Services account that owns the domain. It does not include dashes or spaces. 
     */
   var domainOwner: js.UndefOr[AccountId] = js.undefined
   

@@ -19,7 +19,7 @@ trait XIdentifierReplace
     * @throws com::sun::star::lang::NoSuchElementException If the identifier is not existing.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def replaceByIdentifer(Identifier: Double, aElement: js.Any): Unit
+  def replaceByIdentifer(Identifier: Double, aElement: Any): Unit
 }
 object XIdentifierReplace {
   
@@ -27,13 +27,13 @@ object XIdentifierReplace {
     ElementType: `type`,
     Identifiers: SafeArray[Double],
     acquire: () => Unit,
-    getByIdentifier: Double => js.Any,
+    getByIdentifier: Double => Any,
     getElementType: () => `type`,
     getIdentifiers: () => SafeArray[Double],
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    replaceByIdentifer: (Double, js.Any) => Unit
+    replaceByIdentifer: (Double, Any) => Unit
   ): XIdentifierReplace = {
     val __obj = js.Dynamic.literal(ElementType = ElementType.asInstanceOf[js.Any], Identifiers = Identifiers.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIdentifier = js.Any.fromFunction1(getByIdentifier), getElementType = js.Any.fromFunction0(getElementType), getIdentifiers = js.Any.fromFunction0(getIdentifiers), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), replaceByIdentifer = js.Any.fromFunction2(replaceByIdentifer))
     __obj.asInstanceOf[XIdentifierReplace]
@@ -41,6 +41,6 @@ object XIdentifierReplace {
   
   extension [Self <: XIdentifierReplace](x: Self) {
     
-    inline def setReplaceByIdentifer(value: (Double, js.Any) => Unit): Self = StObject.set(x, "replaceByIdentifer", js.Any.fromFunction2(value))
+    inline def setReplaceByIdentifer(value: (Double, Any) => Unit): Self = StObject.set(x, "replaceByIdentifer", js.Any.fromFunction2(value))
   }
 }

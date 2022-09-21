@@ -9,10 +9,10 @@ node client for extended StatsD server of Datadog
 | ------------------ | :-------------: |
 | Full name          | node-dogstatsd |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 4955381 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 219898.66666666666 |
+| # stars            | 82.0 |
 
 ## Links
 - [Homepage](https://github.com/joybro/node-dogstatsd#readme)

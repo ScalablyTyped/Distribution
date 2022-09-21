@@ -11,9 +11,9 @@ YUI 3 Source
 | Full name          | yui |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 48 |
-| # downloads        | 1274110 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 137973.66666666666 |
+| # stars            | 4072.0 |
 
 ## Links
 - [Homepage](https://github.com/yui/yui3)

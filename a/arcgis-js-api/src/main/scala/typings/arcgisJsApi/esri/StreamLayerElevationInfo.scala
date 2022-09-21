@@ -21,7 +21,7 @@ trait StreamLayerElevationInfo
      with Object {
   
   /**
-    * This object contains information about setting a custom z-value on the feature.
+    * Defines how to override a feature's Z-value based on its attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#elevationInfo)
     */
@@ -35,7 +35,7 @@ trait StreamLayerElevationInfo
   var mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`
   
   /**
-    * An elevation offset, which is added to the vertical position of the graphic.
+    * An elevation offset, which is added to the vertical position of the feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#elevationInfo)
     */

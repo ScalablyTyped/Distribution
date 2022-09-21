@@ -9,7 +9,7 @@ trait RegisterUsageResult extends StObject {
   /**
     * (Optional) Only included when public key version has expired
     */
-  var PublicKeyRotationTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var PublicKeyRotationTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * JWT Token
@@ -25,7 +25,7 @@ object RegisterUsageResult {
   
   extension [Self <: RegisterUsageResult](x: Self) {
     
-    inline def setPublicKeyRotationTimestamp(value: Timestamp): Self = StObject.set(x, "PublicKeyRotationTimestamp", value.asInstanceOf[js.Any])
+    inline def setPublicKeyRotationTimestamp(value: js.Date): Self = StObject.set(x, "PublicKeyRotationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setPublicKeyRotationTimestampUndefined: Self = StObject.set(x, "PublicKeyRotationTimestamp", js.undefined)
     

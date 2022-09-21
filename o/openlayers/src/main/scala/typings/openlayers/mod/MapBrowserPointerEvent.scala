@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "MapBrowserPointerEvent")
 @js.native
-class MapBrowserPointerEvent protected () extends MapBrowserEvent {
+open class MapBrowserPointerEvent protected () extends MapBrowserEvent {
   /**
     * @classdesc
     * Events emitted as map browser events are instances of this type.

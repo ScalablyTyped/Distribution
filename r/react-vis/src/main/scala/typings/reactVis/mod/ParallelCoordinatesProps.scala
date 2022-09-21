@@ -57,7 +57,7 @@ object ParallelCoordinatesProps {
     
     inline def setColorRangeUndefined: Self = StObject.set(x, "colorRange", js.undefined)
     
-    inline def setColorRangeVarargs(value: String*): Self = StObject.set(x, "colorRange", js.Array(value :_*))
+    inline def setColorRangeVarargs(value: String*): Self = StObject.set(x, "colorRange", js.Array(value*))
     
     inline def setColorType(value: String): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
     
@@ -65,11 +65,11 @@ object ParallelCoordinatesProps {
     
     inline def setData(value: js.Array[ParallelCoordinatesPoint]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: ParallelCoordinatesPoint*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ParallelCoordinatesPoint*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value*))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -85,7 +85,7 @@ object ParallelCoordinatesProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTickFormat(value: /* tick */ js.Any => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
+    inline def setTickFormat(value: /* tick */ Any => String): Self = StObject.set(x, "tickFormat", js.Any.fromFunction1(value))
     
     inline def setTickFormatUndefined: Self = StObject.set(x, "tickFormat", js.undefined)
     

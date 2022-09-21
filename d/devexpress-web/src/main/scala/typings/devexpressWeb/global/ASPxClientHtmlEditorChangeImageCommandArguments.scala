@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorChangeImageCommandArguments")
 @js.native
-class ASPxClientHtmlEditorChangeImageCommandArguments protected ()
+open class ASPxClientHtmlEditorChangeImageCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorInsertImageCommandArguments {
   /**
@@ -17,7 +17,7 @@ class ASPxClientHtmlEditorChangeImageCommandArguments protected ()
     * @param htmlEditor The html editor in which the target element is located.
     * @param selectedElement The image that is about to be changed.
     */
-  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: Any) = this()
   
   /**
     * Determines the position of the target image.
@@ -35,7 +35,7 @@ class ASPxClientHtmlEditorChangeImageCommandArguments protected ()
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
   /* CompleteClass */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any = js.native
   
   /**
     * Specifies the source of the target image.

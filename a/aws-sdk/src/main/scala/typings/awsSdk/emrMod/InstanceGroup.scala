@@ -12,12 +12,12 @@ trait InstanceGroup extends StObject {
   var AutoScalingPolicy: js.UndefOr[AutoScalingPolicyDescription] = js.undefined
   
   /**
-    * The bid price for each EC2 Spot instance type as defined by InstanceType. Expressed in USD. If neither BidPrice nor BidPriceAsPercentageOfOnDemandPrice is provided, BidPriceAsPercentageOfOnDemandPrice defaults to 100%.
+    * If specified, indicates that the instance group uses Spot Instances. This is the maximum price you are willing to pay for Spot Instances. Specify OnDemandPrice to set the amount equal to the On-Demand price, or specify an amount in USD.
     */
   var BidPrice: js.UndefOr[String] = js.undefined
   
   /**
-    *  Amazon EMR releases 4.x or later.  The list of configurations supplied for an EMR cluster instance group. You can specify a separate configuration for each instance group (master, core, and task).
+    *  Amazon EMR releases 4.x or later.  The list of configurations supplied for an Amazon EMR cluster instance group. You can specify a separate configuration for each instance group (master, core, and task).
     */
   var Configurations: js.UndefOr[ConfigurationList] = js.undefined
   
@@ -25,6 +25,11 @@ trait InstanceGroup extends StObject {
     * The version number of the requested configuration specification for this instance group.
     */
   var ConfigurationsVersion: js.UndefOr[Long] = js.undefined
+  
+  /**
+    * The custom AMI ID to use for the provisioned instance group.
+    */
+  var CustomAmiId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
     * The EBS block devices that are mapped to this instance group.
@@ -112,17 +117,21 @@ object InstanceGroup {
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value*))
     
     inline def setConfigurationsVersion(value: Long): Self = StObject.set(x, "ConfigurationsVersion", value.asInstanceOf[js.Any])
     
     inline def setConfigurationsVersionUndefined: Self = StObject.set(x, "ConfigurationsVersion", js.undefined)
     
+    inline def setCustomAmiId(value: XmlStringMaxLen256): Self = StObject.set(x, "CustomAmiId", value.asInstanceOf[js.Any])
+    
+    inline def setCustomAmiIdUndefined: Self = StObject.set(x, "CustomAmiId", js.undefined)
+    
     inline def setEbsBlockDevices(value: EbsBlockDeviceList): Self = StObject.set(x, "EbsBlockDevices", value.asInstanceOf[js.Any])
     
     inline def setEbsBlockDevicesUndefined: Self = StObject.set(x, "EbsBlockDevices", js.undefined)
     
-    inline def setEbsBlockDevicesVarargs(value: EbsBlockDevice*): Self = StObject.set(x, "EbsBlockDevices", js.Array(value :_*))
+    inline def setEbsBlockDevicesVarargs(value: EbsBlockDevice*): Self = StObject.set(x, "EbsBlockDevices", js.Array(value*))
     
     inline def setEbsOptimized(value: BooleanObject): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
@@ -144,7 +153,7 @@ object InstanceGroup {
     
     inline def setLastSuccessfullyAppliedConfigurationsUndefined: Self = StObject.set(x, "LastSuccessfullyAppliedConfigurations", js.undefined)
     
-    inline def setLastSuccessfullyAppliedConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "LastSuccessfullyAppliedConfigurations", js.Array(value :_*))
+    inline def setLastSuccessfullyAppliedConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "LastSuccessfullyAppliedConfigurations", js.Array(value*))
     
     inline def setLastSuccessfullyAppliedConfigurationsVersion(value: Long): Self = StObject.set(x, "LastSuccessfullyAppliedConfigurationsVersion", value.asInstanceOf[js.Any])
     

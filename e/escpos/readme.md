@@ -10,10 +10,10 @@ ESC/POS Printer driver for nodejs
 | ------------------ | :-------------: |
 | Full name          | escpos |
 | Keywords           | escpos, printer |
-| # releases         | 12 |
-| # dependents       | 18 |
-| # downloads        | 27021 |
-| # stars            | 10 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3988.6666666666665 |
+| # stars            | 978.0 |
 
 ## Links
 - [Homepage](https://github.com/song940/node-escpos#readme)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for bn_dot_js
 
-Typings are for version 4.11
+Typings are for version 5.1
 
 ## Library description:
 Big number implementation in pure javascript
@@ -9,16 +9,13 @@ Big number implementation in pure javascript
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | bn.js |
-| Keywords           | BN, BigNum, Big number, Modulo, Montgomery |
-| # releases         | 7 |
-| # dependents       | 1841 |
-| # downloads        | 858121618 |
-| # stars            | 10 |
+| Keywords           | BN, Big number, BigNum, Modulo, Montgomery |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5632784366666666E8 |
+| # stars            | 1019.0 |
 
 ## Links
-- [Homepage](https://github.com/indutny/bn.js)
-- [Bugs](https://github.com/indutny/bn.js/issues)
-- [Repository](https://github.com/indutny/bn.js)
 - [Npm](https://www.npmjs.com/package/bn.js)
     
 

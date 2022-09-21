@@ -2,7 +2,7 @@ package typings.mqttPacket.mod
 
 import typings.mqttPacket.anon.CorrelationData
 import typings.mqttPacket.mqttPacketStrings.publish
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

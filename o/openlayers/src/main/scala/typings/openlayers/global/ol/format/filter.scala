@@ -21,7 +21,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.And")
   @js.native
-  class And_ protected ()
+  open class And_ protected ()
     extends typings.openlayers.mod.format.filter.And_ {
     /**
       * @classdesc
@@ -46,7 +46,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.Bbox")
   @js.native
-  class Bbox_ protected ()
+  open class Bbox_ protected ()
     extends typings.openlayers.mod.format.filter.Bbox_ {
     /**
       * @classdesc
@@ -76,7 +76,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.Comparison")
   @js.native
-  class Comparison protected ()
+  open class Comparison protected ()
     extends typings.openlayers.mod.format.filter.Comparison {
     /**
       * @classdesc
@@ -107,7 +107,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.ComparisonBinary")
   @js.native
-  class ComparisonBinary protected ()
+  open class ComparisonBinary protected ()
     extends typings.openlayers.mod.format.filter.ComparisonBinary {
     /**
       * @classdesc
@@ -139,7 +139,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.During")
   @js.native
-  class During_ protected ()
+  open class During_ protected ()
     extends typings.openlayers.mod.format.filter.During_ {
     /**
       * @classdesc
@@ -164,7 +164,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.EqualTo")
   @js.native
-  class EqualTo_ protected ()
+  open class EqualTo_ protected ()
     extends typings.openlayers.mod.format.filter.EqualTo_ {
     /**
       * @classdesc
@@ -192,7 +192,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.Filter")
   @js.native
-  class Filter protected ()
+  open class Filter protected ()
     extends typings.openlayers.mod.format.filter.Filter {
     /**
       * @classdesc
@@ -216,7 +216,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.GreaterThanOrEqualTo")
   @js.native
-  class GreaterThanOrEqualTo_ protected ()
+  open class GreaterThanOrEqualTo_ protected ()
     extends typings.openlayers.mod.format.filter.GreaterThanOrEqualTo_ {
     /**
       * @classdesc
@@ -239,7 +239,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.GreaterThan")
   @js.native
-  class GreaterThan_ protected ()
+  open class GreaterThan_ protected ()
     extends typings.openlayers.mod.format.filter.GreaterThan_ {
     /**
       * @classdesc
@@ -265,7 +265,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.Intersects")
   @js.native
-  class Intersects_ protected ()
+  open class Intersects_ protected ()
     extends typings.openlayers.mod.format.filter.Intersects_ {
     /**
       * @classdesc
@@ -293,7 +293,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.IsBetween")
   @js.native
-  class IsBetween protected ()
+  open class IsBetween protected ()
     extends typings.openlayers.mod.format.filter.IsBetween {
     /**
       * @classdesc
@@ -324,7 +324,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.IsLike")
   @js.native
-  class IsLike protected ()
+  open class IsLike protected ()
     extends typings.openlayers.mod.format.filter.IsLike {
     /**
       * @classdesc
@@ -448,7 +448,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.IsNull")
   @js.native
-  class IsNull_ protected ()
+  open class IsNull_ protected ()
     extends typings.openlayers.mod.format.filter.IsNull_ {
     /**
       * @classdesc
@@ -470,7 +470,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.LessThanOrEqualTo")
   @js.native
-  class LessThanOrEqualTo_ protected ()
+  open class LessThanOrEqualTo_ protected ()
     extends typings.openlayers.mod.format.filter.LessThanOrEqualTo_ {
     /**
       * @classdesc
@@ -493,7 +493,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.LessThan")
   @js.native
-  class LessThan_ protected ()
+  open class LessThan_ protected ()
     extends typings.openlayers.mod.format.filter.LessThan_ {
     /**
       * @classdesc
@@ -513,7 +513,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.LogicalNary")
   @js.native
-  class LogicalNary protected ()
+  open class LogicalNary protected ()
     extends typings.openlayers.mod.format.filter.LogicalNary {
     /**
       * @classdesc
@@ -538,7 +538,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.NotEqualTo")
   @js.native
-  class NotEqualTo_ protected ()
+  open class NotEqualTo_ protected ()
     extends typings.openlayers.mod.format.filter.NotEqualTo_ {
     /**
       * @classdesc
@@ -564,7 +564,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.Not")
   @js.native
-  class Not_ protected ()
+  open class Not_ protected ()
     extends typings.openlayers.mod.format.filter.Not_ {
     /**
       * @classdesc
@@ -585,7 +585,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.Or")
   @js.native
-  class Or_ protected ()
+  open class Or_ protected ()
     extends typings.openlayers.mod.format.filter.Or_ {
     /**
       * @classdesc
@@ -611,7 +611,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.Spatial")
   @js.native
-  class Spatial protected ()
+  open class Spatial protected ()
     extends typings.openlayers.mod.format.filter.Spatial {
     /**
       * @classdesc
@@ -642,7 +642,7 @@ object filter {
     */
   @JSGlobal("ol.format.filter.Within")
   @js.native
-  class Within_ protected ()
+  open class Within_ protected ()
     extends typings.openlayers.mod.format.filter.Within_ {
     /**
       * @classdesc
@@ -666,7 +666,7 @@ object filter {
     * @returns `<And>` operator.
     * @api
     */
-  inline def and(conditions: typings.openlayers.mod.format.filter.Filter*): typings.openlayers.mod.format.filter.And_ = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(conditions.asInstanceOf[js.Any]).asInstanceOf[typings.openlayers.mod.format.filter.And_]
+  inline def and(conditions: typings.openlayers.mod.format.filter.Filter*): typings.openlayers.mod.format.filter.And_ = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(conditions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.openlayers.mod.format.filter.And_]
   
   /**
     * Create a `<BBOX>` operator to test whether a geometry-valued property
@@ -926,7 +926,7 @@ object filter {
     * @returns `<Or>` operator.
     * @api
     */
-  inline def or(conditions: typings.openlayers.mod.format.filter.Filter*): typings.openlayers.mod.format.filter.Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(conditions.asInstanceOf[js.Any]).asInstanceOf[typings.openlayers.mod.format.filter.Or_]
+  inline def or(conditions: typings.openlayers.mod.format.filter.Filter*): typings.openlayers.mod.format.filter.Or_ = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(conditions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.openlayers.mod.format.filter.Or_]
   
   /**
     * Create a `<Within>` operator to test whether a geometry-valued property

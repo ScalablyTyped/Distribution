@@ -10,10 +10,10 @@ Easy website screenshots (Clone of webshot package, supports Node v12+)
 | ------------------ | :-------------: |
 | Full name          | webshot-node |
 | Keywords           | screenshot, screengrab |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 60460 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 23506.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/architjn/node-webshot#readme)

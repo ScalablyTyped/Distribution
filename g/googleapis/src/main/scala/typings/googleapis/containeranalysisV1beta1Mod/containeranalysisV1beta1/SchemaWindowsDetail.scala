@@ -7,30 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaWindowsDetail extends StObject {
   
   /**
-    * Required. The CPE URI in [cpe
-    * format](https://cpe.mitre.org/specification/) in which the vulnerability
-    * manifests. Examples include distro or storage location for vulnerable
-    * jar.
+    * Required. The CPE URI in [cpe format](https://cpe.mitre.org/specification/) in which the vulnerability manifests. Examples include distro or storage location for vulnerable jar.
     */
-  var cpeUri: js.UndefOr[String] = js.undefined
+  var cpeUri: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The description of the vulnerability.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required. The names of the KBs which have hotfixes to mitigate this
-    * vulnerability. Note that there may be multiple hotfixes (and thus
-    * multiple KBs) that mitigate a given vulnerability. Currently any listed
-    * kb&#39;s presence is considered a fix.
+    * Required. The names of the KBs which have hotfixes to mitigate this vulnerability. Note that there may be multiple hotfixes (and thus multiple KBs) that mitigate a given vulnerability. Currently any listed kb's presence is considered a fix.
     */
   var fixingKbs: js.UndefOr[js.Array[SchemaKnowledgeBase]] = js.undefined
   
   /**
     * Required. The name of the vulnerability.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaWindowsDetail {
   
@@ -43,9 +37,13 @@ object SchemaWindowsDetail {
     
     inline def setCpeUri(value: String): Self = StObject.set(x, "cpeUri", value.asInstanceOf[js.Any])
     
+    inline def setCpeUriNull: Self = StObject.set(x, "cpeUri", null)
+    
     inline def setCpeUriUndefined: Self = StObject.set(x, "cpeUri", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
@@ -53,9 +51,11 @@ object SchemaWindowsDetail {
     
     inline def setFixingKbsUndefined: Self = StObject.set(x, "fixingKbs", js.undefined)
     
-    inline def setFixingKbsVarargs(value: SchemaKnowledgeBase*): Self = StObject.set(x, "fixingKbs", js.Array(value :_*))
+    inline def setFixingKbsVarargs(value: SchemaKnowledgeBase*): Self = StObject.set(x, "fixingKbs", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

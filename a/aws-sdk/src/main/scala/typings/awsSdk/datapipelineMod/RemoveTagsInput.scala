@@ -29,6 +29,6 @@ object RemoveTagsInput {
     
     inline def setTagKeys(value: stringList): Self = StObject.set(x, "tagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "tagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "tagKeys", js.Array(value*))
   }
 }

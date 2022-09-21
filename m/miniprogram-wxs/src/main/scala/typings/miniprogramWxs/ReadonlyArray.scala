@@ -24,10 +24,10 @@ trait ReadonlyArray[T]
     * @param callbackfn A function that accepts up to three arguments. The every method calls the callbackfn function for each element in array1 until the callbackfn returns false, or until the end of the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def every(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], js.Any]): scala.Boolean = js.native
+  def every(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], Any]): scala.Boolean = js.native
   def every(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], js.Any],
-    thisArg: js.Any
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], Any],
+    thisArg: Any
   ): scala.Boolean = js.native
   
   /**
@@ -35,10 +35,10 @@ trait ReadonlyArray[T]
     * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], js.Any]): Array[T] = js.native
+  def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], Any]): Array[T] = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], js.Any],
-    thisArg: js.Any
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], Any],
+    thisArg: Any
   ): Array[T] = js.native
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
@@ -62,7 +62,7 @@ trait ReadonlyArray[T]
       /* array */ ReadonlyArray[T], 
       /* is S */ scala.Boolean
     ],
-    thisArg: js.Any
+    thisArg: Any
   ): Array[S] = js.native
   
   /**
@@ -73,7 +73,7 @@ trait ReadonlyArray[T]
   def forEach(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], Unit]): Unit = js.native
   def forEach(
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
   
   /**
@@ -112,7 +112,7 @@ trait ReadonlyArray[T]
   def map[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], U]): Array[U] = js.native
   def map[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], U],
-    thisArg: js.Any
+    thisArg: Any
   ): Array[U] = js.native
   
   /**
@@ -213,9 +213,9 @@ trait ReadonlyArray[T]
     * @param callbackfn A function that accepts up to three arguments. The some method calls the callbackfn function for each element in array1 until the callbackfn returns true, or until the end of the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
-  def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], js.Any]): scala.Boolean = js.native
+  def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], Any]): scala.Boolean = js.native
   def some(
-    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], js.Any],
-    thisArg: js.Any
+    callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ ReadonlyArray[T], Any],
+    thisArg: Any
   ): scala.Boolean = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArrayPropertiesDetail extends StObject {
   
   /**
-    * The job index within the array that is associated with this job. This parameter is returned for array job children.
+    * The job index within the array that's associated with this job. This parameter is returned for array job children.
     */
   var index: js.UndefOr[Integer] = js.undefined
   

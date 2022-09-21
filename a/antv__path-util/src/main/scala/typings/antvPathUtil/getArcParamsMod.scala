@@ -11,7 +11,7 @@ object getArcParamsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(startPoint: js.Any, params: js.Any): ArcFlag = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(startPoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ArcFlag]
+  inline def default(startPoint: Any, params: Any): ArcFlag = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(startPoint.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[ArcFlag]
   
-  inline def isSamePoint(point1: js.Any, point2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSamePoint")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isSamePoint(point1: Any, point2: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSamePoint")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VariableDeclarator
   extends StObject
-     with BaseNode
-     with Node {
+     with BaseNode {
   
   var id: Pattern
   

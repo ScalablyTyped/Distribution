@@ -8,5 +8,5 @@ object listMultipartUploadsInputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/ListMultipartUploadsInput", "ListMultipartUploadsInput")
   @js.native
-  val ListMultipartUploadsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListMultipartUploadsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

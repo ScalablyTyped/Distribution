@@ -171,9 +171,9 @@ object legendMod {
     
     /**
       * The offset of the legend label.
-      * @minimum 0
       *
       * __Default value:__ `4`.
+      * @minimum 0
       */
     var labelOffset: js.UndefOr[NumberValue] = js.undefined
     
@@ -549,7 +549,7 @@ object legendMod {
       
       inline def setSymbolDashUndefined: Self = StObject.set(x, "symbolDash", js.undefined)
       
-      inline def setSymbolDashVarargs(value: Double*): Self = StObject.set(x, "symbolDash", js.Array(value :_*))
+      inline def setSymbolDashVarargs(value: Double*): Self = StObject.set(x, "symbolDash", js.Array(value*))
       
       inline def setSymbolFillColor(value: ColorValue): Self = StObject.set(x, "symbolFillColor", value.asInstanceOf[js.Any])
       
@@ -708,7 +708,7 @@ object legendMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setUpdate(value: T): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
@@ -774,7 +774,7 @@ object legendMod {
     /**
       * Explicitly set the visible legend values.
       */
-    var values: js.UndefOr[js.Array[js.Any] | SignalRef] = js.undefined
+    var values: js.UndefOr[js.Array[Any] | SignalRef] = js.undefined
   }
   object Legend {
     
@@ -837,17 +837,17 @@ object legendMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
       
       inline def setType(value: LegendType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any] | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   

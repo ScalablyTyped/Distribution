@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "define-lazy-prop" : "2.0.0"
+      "define-lazy-prop" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "define-lazy-prop" : "2.0.0"
+      "define-lazy-prop" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

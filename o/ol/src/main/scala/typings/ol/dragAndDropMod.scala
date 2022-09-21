@@ -1,5 +1,6 @@
 package typings.ol
 
+import org.scalablytyped.runtime.Instantiable0
 import typings.ol.eventsMod.EventsKey
 import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.olStrings.addfeatures
@@ -15,8 +16,47 @@ object dragAndDropMod {
   
   @JSImport("ol/interaction/DragAndDrop", JSImport.Default)
   @js.native
-  class default () extends DragAndDrop {
+  open class default () extends DragAndDrop {
     def this(opt_options: Options) = this()
+  }
+  
+  @JSImport("ol/interaction/DragAndDrop", "DragAndDropEvent")
+  @js.native
+  open class DragAndDropEvent protected ()
+    extends typings.ol.eventMod.default {
+    def this(`type`: DragAndDropEventType, file: File) = this()
+    def this(
+      `type`: DragAndDropEventType,
+      file: File,
+      opt_features: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
+    ) = this()
+    def this(
+      `type`: DragAndDropEventType,
+      file: File,
+      opt_features: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]],
+      opt_projection: typings.ol.projectionMod.default
+    ) = this()
+    def this(
+      `type`: DragAndDropEventType,
+      file: File,
+      opt_features: Unit,
+      opt_projection: typings.ol.projectionMod.default
+    ) = this()
+    
+    /**
+      * The features parsed from dropped data.
+      */
+    var features: js.Array[FeatureLike] = js.native
+    
+    /**
+      * The dropped file.
+      */
+    var file: File = js.native
+    
+    /**
+      * The feature projection.
+      */
+    var projection: typings.ol.projectionMod.default = js.native
   }
   
   @js.native
@@ -49,29 +89,11 @@ object dragAndDropMod {
     def un_addfeatures(`type`: addfeatures, listener: js.Function1[/* evt */ DragAndDropEvent, Unit]): Unit = js.native
   }
   
-  @js.native
-  trait DragAndDropEvent
-    extends typings.ol.eventMod.default {
-    
-    /**
-      * The features parsed from dropped data.
-      */
-    var features: js.Array[FeatureLike] = js.native
-    
-    /**
-      * The dropped file.
-      */
-    var file: File = js.native
-    
-    /**
-      * The feature projection.
-      */
-    var projection: typings.ol.projectionMod.default = js.native
-  }
-  
   trait Options extends StObject {
     
-    var formatConstructors: js.UndefOr[js.Array[typings.ol.featureMod.default]] = js.undefined
+    var formatConstructors: js.UndefOr[
+        js.Array[Instantiable0[typings.ol.featureMod.default] | typings.ol.featureMod.default]
+      ] = js.undefined
     
     var projection: js.UndefOr[ProjectionLike] = js.undefined
     
@@ -88,11 +110,11 @@ object dragAndDropMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setFormatConstructors(value: js.Array[typings.ol.featureMod.default]): Self = StObject.set(x, "formatConstructors", value.asInstanceOf[js.Any])
+      inline def setFormatConstructors(value: js.Array[Instantiable0[typings.ol.featureMod.default] | typings.ol.featureMod.default]): Self = StObject.set(x, "formatConstructors", value.asInstanceOf[js.Any])
       
       inline def setFormatConstructorsUndefined: Self = StObject.set(x, "formatConstructors", js.undefined)
       
-      inline def setFormatConstructorsVarargs(value: typings.ol.featureMod.default*): Self = StObject.set(x, "formatConstructors", js.Array(value :_*))
+      inline def setFormatConstructorsVarargs(value: (Instantiable0[typings.ol.featureMod.default] | typings.ol.featureMod.default)*): Self = StObject.set(x, "formatConstructors", js.Array(value*))
       
       inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       

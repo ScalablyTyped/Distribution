@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientSchemaVersions")
 @js.native
-class ClientSchemaVersions ()
+open class ClientSchemaVersions ()
   extends StObject
      with typings.sharepoint.SP.ClientSchemaVersions
 object ClientSchemaVersions {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait editors extends StObject {
   
   @JSName("$popup")
-  var $popup: js.Any
+  var $popup: Any
   
   var checkbox: String
   
@@ -41,7 +41,7 @@ object editors {
   
   extension [Self <: editors](x: Self) {
     
-    inline def set$popup(value: js.Any): Self = StObject.set(x, "$popup", value.asInstanceOf[js.Any])
+    inline def set$popup(value: Any): Self = StObject.set(x, "$popup", value.asInstanceOf[js.Any])
     
     inline def setCheckbox(value: String): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     

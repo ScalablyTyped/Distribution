@@ -33,7 +33,7 @@ object gapi {
       
       trait Promotion extends StObject {
         
-        /** An array of block objects for this promotion. See [Google WebSearch Protocol reference](https://developers.google.com/custom-search/docs/xml_results) for more information. */
+        /** An array of block objects for this promotion. */
         var bodyLines: js.UndefOr[js.Array[HtmlTitle]] = js.undefined
         
         /** An abridged version of this search's result URL, e.g. www.example.com. */
@@ -64,7 +64,7 @@ object gapi {
           
           inline def setBodyLinesUndefined: Self = StObject.set(x, "bodyLines", js.undefined)
           
-          inline def setBodyLinesVarargs(value: HtmlTitle*): Self = StObject.set(x, "bodyLines", js.Array(value :_*))
+          inline def setBodyLinesVarargs(value: HtmlTitle*): Self = StObject.set(x, "bodyLines", js.Array(value*))
           
           inline def setDisplayLink(value: String): Self = StObject.set(x, "displayLink", value.asInstanceOf[js.Any])
           
@@ -117,7 +117,7 @@ object gapi {
         /** A unique identifier for the type of current object. For this API, it is `customsearch#result.` */
         var kind: js.UndefOr[String] = js.undefined
         
-        /** Encapsulates all information about [refinement labels](https://developers.google.com/custom-search/docs/xml_results). */
+        /** Encapsulates all information about refinement labels. */
         var labels: js.UndefOr[js.Array[DisplayName]] = js.undefined
         
         /** The full URL to which the search result is pointing, e.g. http://www.example.com/foo/bar. */
@@ -130,7 +130,7 @@ object gapi {
         var pagemap: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result & TopLevel[Any]
               ] = js.undefined
         
         /** The snippet of the search result, in plain text. */
@@ -188,7 +188,7 @@ object gapi {
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
           
-          inline def setLabelsVarargs(value: DisplayName*): Self = StObject.set(x, "labels", js.Array(value :_*))
+          inline def setLabelsVarargs(value: DisplayName*): Self = StObject.set(x, "labels", js.Array(value*))
           
           inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
           
@@ -201,7 +201,7 @@ object gapi {
           inline def setPagemap(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result & TopLevel[Any]
           ): Self = StObject.set(x, "pagemap", value.asInstanceOf[js.Any])
           
           inline def setPagemapUndefined: Self = StObject.set(x, "pagemap", js.undefined)
@@ -225,7 +225,7 @@ object gapi {
         var context: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search & TopLevel[Any]
               ] = js.undefined
         
         /** The current set of custom search results. */
@@ -264,7 +264,7 @@ object gapi {
           inline def setContext(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search & TopLevel[Any]
           ): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
           
           inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
@@ -273,7 +273,7 @@ object gapi {
           
           inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          inline def setItemsVarargs(value: Result*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: Result*): Self = StObject.set(x, "items", js.Array(value*))
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
@@ -283,7 +283,7 @@ object gapi {
           
           inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
           
-          inline def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+          inline def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value*))
           
           inline def setQueries(value: NextPage): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
           

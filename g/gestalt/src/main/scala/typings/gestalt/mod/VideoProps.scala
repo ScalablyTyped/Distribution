@@ -10,11 +10,13 @@ import typings.gestalt.gestaltStrings.`scale-down`
 import typings.gestalt.gestaltStrings.`use-credentials`
 import typings.gestalt.gestaltStrings.anonymous
 import typings.gestalt.gestaltStrings.auto
+import typings.gestalt.gestaltStrings.black
 import typings.gestalt.gestaltStrings.contain
 import typings.gestalt.gestaltStrings.cover
 import typings.gestalt.gestaltStrings.fill
 import typings.gestalt.gestaltStrings.metadata
 import typings.gestalt.gestaltStrings.none
+import typings.gestalt.gestaltStrings.transparent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.SyntheticEvent
@@ -42,6 +44,8 @@ trait VideoProps extends StObject {
   
   var aspectRatio: Double
   
+  var backgroundColor: js.UndefOr[black | transparent] = js.undefined
+  
   var captions: String
   
   var children: js.UndefOr[Node] = js.undefined
@@ -49,6 +53,8 @@ trait VideoProps extends StObject {
   var controls: js.UndefOr[Boolean] = js.undefined
   
   var crossOrigin: js.UndefOr[anonymous | `use-credentials`] = js.undefined
+  
+  var disableRemotePlayback: js.UndefOr[Boolean] = js.undefined
   
   var loop: js.UndefOr[Boolean] = js.undefined
   
@@ -58,7 +64,11 @@ trait VideoProps extends StObject {
   
   var onEnded: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
   
+  var onError: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  
   var onFullscreenChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Fullscreen]] = js.undefined
+  
+  var onLoadStart: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
   
   var onLoadedChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Loaded]] = js.undefined
   
@@ -70,13 +80,21 @@ trait VideoProps extends StObject {
   
   var onPlayheadUp: js.UndefOr[AbstractEventHandler[MouseEvent[HTMLDivElement, NativeMouseEvent], js.Object]] = js.undefined
   
+  var onPlaying: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  
   var onReady: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
   
   var onSeek: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
   
+  var onSeeking: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  
+  var onStalled: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  
   var onTimeChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Time]] = js.undefined
   
   var onVolumeChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLDivElement, Event], Volume]] = js.undefined
+  
+  var onWaiting: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
   
   var playbackRate: js.UndefOr[Double] = js.undefined
   
@@ -89,6 +107,8 @@ trait VideoProps extends StObject {
   var preload: js.UndefOr[auto | metadata | none] = js.undefined
   
   var src: String | js.Array[Src]
+  
+  var startTime: js.UndefOr[Double] = js.undefined
   
   var volume: js.UndefOr[Double] = js.undefined
 }
@@ -127,6 +147,10 @@ object VideoProps {
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
+    inline def setBackgroundColor(value: black | transparent): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
     inline def setCaptions(value: String): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
     
     inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -140,6 +164,10 @@ object VideoProps {
     inline def setCrossOrigin(value: anonymous | `use-credentials`): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    
+    inline def setDisableRemotePlayback(value: Boolean): Self = StObject.set(x, "disableRemotePlayback", value.asInstanceOf[js.Any])
+    
+    inline def setDisableRemotePlaybackUndefined: Self = StObject.set(x, "disableRemotePlayback", js.undefined)
     
     inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
@@ -159,11 +187,23 @@ object VideoProps {
     
     inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
+    inline def setOnError(
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    
     inline def setOnFullscreenChange(
       value: /* arg */ Fullscreen & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
     ): Self = StObject.set(x, "onFullscreenChange", js.Any.fromFunction1(value))
     
     inline def setOnFullscreenChangeUndefined: Self = StObject.set(x, "onFullscreenChange", js.undefined)
+    
+    inline def setOnLoadStart(
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
+    
+    inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
     
     inline def setOnLoadedChange(
       value: /* arg */ Loaded & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
@@ -195,6 +235,12 @@ object VideoProps {
     
     inline def setOnPlayheadUpUndefined: Self = StObject.set(x, "onPlayheadUp", js.undefined)
     
+    inline def setOnPlaying(
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+    
+    inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
+    
     inline def setOnReady(
       value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
     ): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
@@ -207,6 +253,18 @@ object VideoProps {
     
     inline def setOnSeekUndefined: Self = StObject.set(x, "onSeek", js.undefined)
     
+    inline def setOnSeeking(
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+    
+    inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
+    
+    inline def setOnStalled(
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+    
+    inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
+    
     inline def setOnTimeChange(
       value: /* arg */ Time & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
     ): Self = StObject.set(x, "onTimeChange", js.Any.fromFunction1(value))
@@ -218,6 +276,12 @@ object VideoProps {
     ): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
     
     inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
+    
+    inline def setOnWaiting(
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+    
+    inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
     
     inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
@@ -241,7 +305,11 @@ object VideoProps {
     
     inline def setSrc(value: String | js.Array[Src]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    inline def setSrcVarargs(value: Src*): Self = StObject.set(x, "src", js.Array(value :_*))
+    inline def setSrcVarargs(value: Src*): Self = StObject.set(x, "src", js.Array(value*))
+    
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     

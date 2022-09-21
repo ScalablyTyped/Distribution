@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cheerio" : "1.0.0-rc.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cheerio" : "1.0.0-rc.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

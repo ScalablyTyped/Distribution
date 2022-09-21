@@ -18,7 +18,7 @@ object irawstyleMod {
     * here, partners are broken in many unpredictable cases where typescript can't infer
     * the right typing. Loosening the typing to both allow for css variables and other things.
     */
-  /* key */ StringDictionary[js.Any]
+  /* key */ StringDictionary[Any]
        with _IStyleBase {
     
     /**

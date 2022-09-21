@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.yandexMaps.mod.IEventEmitter because Already inherited
 - typings.yandexMaps.mod.ICollection because var conflicts: events. Inlined add, getIterator, remove */ @JSImport("yandex-maps", "Collection")
 @js.native
-class Collection_[T] () extends Item {
+open class Collection_[T] () extends Item {
   def this(options: js.Object) = this()
   
   def add(`object`: js.Object): this.type = js.native

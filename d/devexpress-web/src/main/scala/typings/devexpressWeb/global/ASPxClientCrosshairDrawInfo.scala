@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCrosshairDrawInfo")
 @js.native
-class ASPxClientCrosshairDrawInfo ()
+open class ASPxClientCrosshairDrawInfo ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCrosshairDrawInfo

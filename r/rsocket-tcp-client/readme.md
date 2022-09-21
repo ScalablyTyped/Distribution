@@ -4,21 +4,18 @@
 Typings are for version 0.0
 
 ## Library description:
-RSocket TCP client for use in Node.js environments
+This package is published from the rsocket-js monorepo.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rsocket-tcp-client |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 4 |
-| # downloads        | 64928 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 10346.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/rsocket/rsocket-js#readme)
-- [Bugs](https://github.com/rsocket/rsocket-js/issues)
-- [Repository](https://github.com/rsocket/rsocket-js)
 - [Npm](https://www.npmjs.com/package/rsocket-tcp-client)
     
 

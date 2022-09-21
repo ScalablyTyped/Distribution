@@ -9,7 +9,7 @@ object Blobs {
   
   @JSGlobal("Blobs.BlobClient")
   @js.native
-  class BlobClient protected ()
+  open class BlobClient protected ()
     extends StObject
        with typings.webgme.Blobs.BlobClient {
     /**

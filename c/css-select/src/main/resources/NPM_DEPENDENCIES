@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "css-select" : "3.1.0"
+      "css-select" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "css-select" : "3.1.0"
+      "css-select" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -28,7 +28,7 @@ object XDialog2 {
     endExecute: () => Unit,
     execute: () => Double,
     getTitle: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setHelpId: String => Unit,
     setTitle: String => Unit

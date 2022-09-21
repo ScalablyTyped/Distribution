@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@mauron85/react-native-background-geolocation" : "0.6.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@mauron85/react-native-background-geolocation" : "0.6.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -3,11 +3,8 @@ package typings.fluxxor
 import org.scalablytyped.runtime.Instantiable1
 import typings.fluxxor.fluxxorStrings.input
 import typings.react.anon.Default
-import typings.react.experimentalMod.reactAugmentingMod.OpaqueIdentifier
-import typings.react.experimentalMod.reactAugmentingMod.SuspenseConfig
 import typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps
-import typings.react.experimentalMod.reactAugmentingMod.TransitionFunction
-import typings.react.experimentalMod.reactAugmentingMod.TransitionStartFunction
+import typings.react.experimentalMod.reactAugmentingMod.Usable
 import typings.react.mod.Attributes
 import typings.react.mod.CElement
 import typings.react.mod.CFactory
@@ -44,9 +41,7 @@ import typings.react.mod.MemoExoticComponent
 import typings.react.mod.MutableRefObject
 import typings.react.mod.NamedExoticComponent
 import typings.react.mod.ProfilerProps
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.PropsWithoutRef
-import typings.react.mod.ReactChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactHTMLElement
 import typings.react.mod.ReactNode
@@ -59,12 +54,14 @@ import typings.react.mod.ReducerWithoutAction
 import typings.react.mod.Ref
 import typings.react.mod.RefAttributes
 import typings.react.mod.RefObject
-import typings.react.mod.SFC
 import typings.react.mod.SVGAttributes
 import typings.react.mod.SVGFactory
 import typings.react.mod.SetStateAction
 import typings.react.mod.SuspenseProps
+import typings.react.mod.TransitionFunction
+import typings.react.mod.TransitionStartFunction
 import typings.std.Element
+import typings.std.Exclude
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.Partial
@@ -74,6 +71,23 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  @js.native
+  trait TypeofChildren extends StObject {
+    
+    def count(children: Any): Double = js.native
+    
+    def forEach[C](children: C, fn: js.Function2[/* child */ C, /* index */ Double, Unit]): Unit = js.native
+    def forEach[C](children: js.Array[C], fn: js.Function2[/* child */ C, /* index */ Double, Unit]): Unit = js.native
+    
+    def map[T, C](children: C, fn: js.Function2[/* child */ C, /* index */ Double, T]): (js.Array[Exclude[T, js.UndefOr[Boolean | Null]]]) | C = js.native
+    def map[T, C](children: js.Array[C], fn: js.Function2[/* child */ C, /* index */ Double, T]): (js.Array[Exclude[T, js.UndefOr[Boolean | Null]]]) | C = js.native
+    
+    def only[C](children: C): C = js.native
+    
+    def toArray(children: js.Array[ReactNode]): js.Array[Exclude[ReactNode, js.UndefOr[Boolean | Null]]] = js.native
+    def toArray(children: ReactNode): js.Array[Exclude[ReactNode, js.UndefOr[Boolean | Null]]] = js.native
+  }
   
   trait TypeofComponent extends StObject {
     
@@ -99,7 +113,7 @@ object anon {
       * @see https://reactjs.org/docs/context.html#classcontexttype
       */
     /* static member */
-    var contextType: js.UndefOr[Context[js.Any]] = js.undefined
+    var contextType: js.UndefOr[Context[Any]] = js.undefined
   }
   object TypeofComponent {
     
@@ -110,7 +124,7 @@ object anon {
     
     extension [Self <: TypeofComponent](x: Self) {
       
-      inline def setContextType(value: Context[js.Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+      inline def setContextType(value: Context[Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
       
       inline def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
     }
@@ -119,11 +133,12 @@ object anon {
   @js.native
   trait TypeofReact extends StObject {
     
-    val Children: ReactChildren = js.native
+    // Sync with `ReactChildren` until `ReactChildren` is removed.
+    val Children: TypeofChildren = js.native
     
     // Base component for plain JS classes
     var Component: (Instantiable1[
-        /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
         typings.react.mod.Component[js.Object, js.Object, js.Object]
       ]) & TypeofComponent = js.native
     
@@ -132,25 +147,23 @@ object anon {
     val Profiler: ExoticComponent[ProfilerProps] = js.native
     
     var PureComponent: Instantiable1[
-        /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
         typings.react.mod.PureComponent[js.Object, js.Object, js.Object]
       ] = js.native
     
     val StrictMode: ExoticComponent[typings.react.anon.Children] = js.native
     
-    /**
-      * This feature is not yet available for server-side rendering.
-      * Suspense support will be added in a later release.
-      */
     val Suspense: ExoticComponent[SuspenseProps] = js.native
+    
+    val SuspenseList: ExoticComponent[SuspenseListProps] = js.native
     
     // Custom components
     def cloneElement[P](element: FunctionComponentElement[P], props: Partial[P] & Attributes, children: ReactNode*): FunctionComponentElement[P] = js.native
     def cloneElement[P](element: FunctionComponentElement[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = js.native
     def cloneElement[P](element: ReactElement, props: Partial[P] & Attributes, children: ReactNode*): ReactElement = js.native
     def cloneElement[P](element: ReactElement, props: Unit, children: ReactNode*): ReactElement = js.native
-    def cloneElement[P, T /* <: Component[P, ComponentState, js.Any] */](element: CElement[P, T], props: Partial[P] & ClassAttributes[T], children: ReactNode*): CElement[P, T] = js.native
-    def cloneElement[P, T /* <: Component[P, ComponentState, js.Any] */](element: CElement[P, T], props: Unit, children: ReactNode*): CElement[P, T] = js.native
+    def cloneElement[P, T /* <: Component[P, ComponentState, Any] */](element: CElement[P, T], props: Partial[P] & ClassAttributes[T], children: ReactNode*): CElement[P, T] = js.native
+    def cloneElement[P, T /* <: Component[P, ComponentState, Any] */](element: CElement[P, T], props: Unit, children: ReactNode*): CElement[P, T] = js.native
     // DOM Element (has to be the last, because type checking stops at first overload that fits)
     def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: DOMAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = js.native
     def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: Unit, children: ReactNode*): DOMElement[P, T] = js.native
@@ -199,23 +212,20 @@ object anon {
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = js.native
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = js.native
     def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
       props: ClassAttributes[T] & P,
       children: ReactNode*
     ): ReactSVGElement = js.native
     def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
       props: Null,
       children: ReactNode*
     ): ReactSVGElement = js.native
     def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
       props: Unit,
       children: ReactNode*
     ): ReactSVGElement = js.native
-    def createElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = js.native
-    def createElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = js.native
-    def createElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = js.native
     @JSName("createElement")
     def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = js.native
     @JSName("createElement")
@@ -224,22 +234,28 @@ object anon {
     def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = js.native
     @JSName("createElement")
     def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
       props: ClassAttributes[T] & P,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
     @JSName("createElement")
     def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
       props: Null,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
     @JSName("createElement")
     def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
       props: Unit,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
+    @JSName("createElement")
+    def createElement_P_ObjectT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = js.native
+    @JSName("createElement")
+    def createElement_P_ObjectT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = js.native
+    @JSName("createElement")
+    def createElement_P_ObjectT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = js.native
     @JSName("createElement")
     def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReactElement = js.native
     @JSName("createElement")
@@ -259,53 +275,44 @@ object anon {
     @JSName("createElement")
     def createElement_input(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
     
-    def createFactory(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): SVGFactory = js.native
+    def createFactory(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any): SVGFactory = js.native
     def createFactory[P](`type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]]): CFactory[P, ClassicComponent[P, ComponentState]] = js.native
     def createFactory[P](`type`: ComponentClass[P, ComponentState]): Factory[P] = js.native
     // Custom components
     def createFactory[P](`type`: FunctionComponent[P]): FunctionComponentFactory[P] = js.native
     def createFactory[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String): DOMFactory[P, T] = js.native
-    def createFactory[P, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = js.native
+    @JSName("createFactory")
+    def createFactory_PT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CFactory[P, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = js.native
     //
     // Top Level API
     // ----------------------------------------------------------------------
     // DOM Elements
     @JSName("createFactory")
-    def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any): HTMLFactory[T] = js.native
+    def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any): HTMLFactory[T] = js.native
     
     def createRef[T](): RefObject[T] = js.native
+    
+    def experimental_use[T](usable: Usable[T]): T = js.native
     
     def forwardRef[T, P](render: ForwardRefRenderFunction[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[T]] = js.native
     
     def isValidElement[P](): /* is react.react.ReactElement */ Boolean = js.native
     def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ Boolean = js.native
     
-    def `lazy`[T /* <: ComponentType[js.Any] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = js.native
+    def `lazy`[T /* <: ComponentType[Any] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = js.native
     
-    def memo[T /* <: ComponentType[js.Any] */](Component: T): MemoExoticComponent[T] = js.native
-    def memo[T /* <: ComponentType[js.Any] */](
+    def memo[T /* <: ComponentType[Any] */](Component: T): MemoExoticComponent[T] = js.native
+    def memo[T /* <: ComponentType[Any] */](
       Component: T,
       propsAreEqual: js.Function2[/* prevProps */ ComponentProps[T], /* nextProps */ ComponentProps[T], Boolean]
     ): MemoExoticComponent[T] = js.native
-    def memo[P /* <: js.Object */](Component: SFC[P]): NamedExoticComponent[P] = js.native
+    def memo[P /* <: js.Object */](Component: FunctionComponent[P]): NamedExoticComponent[P] = js.native
     def memo[P /* <: js.Object */](
-      Component: SFC[P],
-      propsAreEqual: js.Function2[/* prevProps */ PropsWithChildren[P], /* nextProps */ PropsWithChildren[P], Boolean]
+      Component: FunctionComponent[P],
+      propsAreEqual: js.Function2[/* prevProps */ P, /* nextProps */ P, Boolean]
     ): NamedExoticComponent[P] = js.native
     
-    val unstable_SuspenseList: ExoticComponent[SuspenseListProps] = js.native
-    
-    def unstable_startTransition(scope: TransitionFunction): Unit = js.native
-    
-    def unstable_useDeferredValue[T](value: T): T = js.native
-    
-    def unstable_useOpaqueIdentifier(): OpaqueIdentifier = js.native
-    
-    def unstable_useTransition(): js.Tuple2[TransitionStartFunction, Boolean] = js.native
-    def unstable_useTransition(config: SuspenseConfig): js.Tuple2[TransitionStartFunction, Boolean] = js.native
-    
-    def unstable_withSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]]): Unit = js.native
-    def unstable_withSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: SuspenseConfig): Unit = js.native
+    def startTransition(scope: TransitionFunction): Unit = js.native
     
     // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
     // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
@@ -316,8 +323,10 @@ object anon {
       * @version 16.8.0
       * @see https://reactjs.org/docs/hooks-reference.html#usecallback
       */
-    // TODO (TypeScript 3.0): <T extends (...args: never[]) => unknown>
-    def useCallback[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, deps: DependencyList): T = js.native
+    // A specific function type would not trigger implicit any.
+    // See https://github.com/DefinitelyTyped/DefinitelyTyped/issues/52873#issuecomment-845806435 for a comparison between `Function` and more specific types.
+    // tslint:disable-next-line ban-types
+    def useCallback[T /* <: js.Function */](callback: T, deps: DependencyList): T = js.native
     
     // This will technically work if you give a Consumer<T> or Provider<T> but it's deprecated and warns
     /**
@@ -341,7 +350,9 @@ object anon {
     // the name of the custom hook is itself derived from the function name at runtime:
     // it's just the function name without the "use" prefix.
     def useDebugValue[T](value: T): Unit = js.native
-    def useDebugValue[T](value: T, format: js.Function1[/* value */ T, js.Any]): Unit = js.native
+    def useDebugValue[T](value: T, format: js.Function1[/* value */ T, Any]): Unit = js.native
+    
+    def useDeferredValue[T](value: T): T = js.native
     
     /**
       * Accepts a function that contains imperative, possibly effectful code.
@@ -354,6 +365,8 @@ object anon {
       */
     def useEffect(effect: EffectCallback): Unit = js.native
     def useEffect(effect: EffectCallback, deps: DependencyList): Unit = js.native
+    
+    def useId(): String = js.native
     
     def useImperativeHandle[T, R /* <: T */](ref: Unit, init: js.Function0[R]): Unit = js.native
     def useImperativeHandle[T, R /* <: T */](ref: Unit, init: js.Function0[R], deps: DependencyList): Unit = js.native
@@ -369,6 +382,9 @@ object anon {
       */
     def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R]): Unit = js.native
     def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R], deps: DependencyList): Unit = js.native
+    
+    def useInsertionEffect(effect: EffectCallback): Unit = js.native
+    def useInsertionEffect(effect: EffectCallback, deps: DependencyList): Unit = js.native
     
     /**
       * The signature is identical to `useEffect`, but it fires synchronously after all DOM mutations.
@@ -389,18 +405,6 @@ object anon {
     /**
       * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
       *
-      * Usage note: if calling `useMemo` with a referentially stable function, also give it as the input in
-      * the second argument.
-      *
-      * ```ts
-      * function expensive () { ... }
-      *
-      * function Component () {
-      *   const expensiveResult = useMemo(expensive, [expensive])
-      *   return ...
-      * }
-      * ```
-      *
       * @version 16.8.0
       * @see https://reactjs.org/docs/hooks-reference.html#usememo
       */
@@ -419,7 +423,7 @@ object anon {
       * @see https://reactjs.org/docs/hooks-reference.html#usereducer
       */
     // overload where dispatch could accept 0 arguments.
-    def useReducer[R /* <: ReducerWithoutAction[js.Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+    def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
     /**
       * An alternative to `useState`.
       *
@@ -430,12 +434,15 @@ object anon {
       * @version 16.8.0
       * @see https://reactjs.org/docs/hooks-reference.html#usereducer
       */
-    // overload where dispatch could accept 0 arguments.
-    def useReducer[R /* <: ReducerWithoutAction[js.Any] */, I](
+    // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
+    // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be omitted.
+    // the last overload effectively behaves as if the identity function (x => x) is the initializer.
+    // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
+    def useReducer[R /* <: Reducer[Any, Any] */, I](
       reducer: R,
-      initializerArg: I,
-      initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
-    ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+      initializerArg: (I & ReducerState[R]) | I,
+      initializer: js.Function1[(/* arg */ I & ReducerState[R]) | (/* arg */ I), ReducerState[R]]
+    ): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
     /**
       * An alternative to `useState`.
       *
@@ -454,7 +461,7 @@ object anon {
     // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
     // in older versions, or a regression in newer versions of the typescript completion service.
     @JSName("useReducer")
-    def useReducer_R_ReducerAnyAny[R /* <: Reducer[js.Any, js.Any] */](reducer: R, initialState: ReducerState[R], initializer: Unit): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
+    def useReducer_R_ReducerAnyAny[R /* <: Reducer[Any, Any] */](reducer: R, initialState: ReducerState[R], initializer: Unit): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
     /**
       * An alternative to `useState`.
       *
@@ -465,16 +472,13 @@ object anon {
       * @version 16.8.0
       * @see https://reactjs.org/docs/hooks-reference.html#usereducer
       */
-    // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
-    // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be omitted.
-    // the last overload effectively behaves as if the identity function (x => x) is the initializer.
-    // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
+    // overload where dispatch could accept 0 arguments.
     @JSName("useReducer")
-    def useReducer_R_ReducerAnyAnyI[R /* <: Reducer[js.Any, js.Any] */, I](
+    def useReducer_R_ReducerWithoutActionAnyI[R /* <: ReducerWithoutAction[Any] */, I](
       reducer: R,
-      initializerArg: (I & ReducerState[R]) | I,
-      initializer: js.Function1[(/* arg */ I & ReducerState[R]) | (/* arg */ I), ReducerState[R]]
-    ): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
+      initializerArg: I,
+      initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
+    ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
     
     // convenience overload for refs given as a ref prop as they typically start with a null value
     /**
@@ -490,7 +494,6 @@ object anon {
       * @version 16.8.0
       * @see https://reactjs.org/docs/hooks-reference.html#useref
       */
-    // TODO (TypeScript 3.0): <T extends unknown>
     def useRef[T](): RefObject[T] = js.native
     def useRef[T](initialValue: T): RefObject[T] = js.native
     // convenience overload for potentially undefined initialValue / call with 0 arguments
@@ -505,7 +508,6 @@ object anon {
       * @version 16.8.0
       * @see https://reactjs.org/docs/hooks-reference.html#useref
       */
-    // TODO (TypeScript 3.0): <T extends unknown>
     @JSName("useRef")
     def useRef_T_MutableRefObject[T](): MutableRefObject[js.UndefOr[T]] = js.native
     /**
@@ -518,7 +520,6 @@ object anon {
       * @version 16.8.0
       * @see https://reactjs.org/docs/hooks-reference.html#useref
       */
-    // TODO (TypeScript 3.0): <T extends unknown>
     @JSName("useRef")
     def useRef_T_MutableRefObject[T](initialValue: T): MutableRefObject[T] = js.native
     
@@ -538,6 +539,18 @@ object anon {
       */
     def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
     def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
+    
+    def useSyncExternalStore[Snapshot](
+      subscribe: js.Function1[/* onStoreChange */ js.Function0[Unit], js.Function0[Unit]],
+      getSnapshot: js.Function0[Snapshot]
+    ): Snapshot = js.native
+    def useSyncExternalStore[Snapshot](
+      subscribe: js.Function1[/* onStoreChange */ js.Function0[Unit], js.Function0[Unit]],
+      getSnapshot: js.Function0[Snapshot],
+      getServerSnapshot: js.Function0[Snapshot]
+    ): Snapshot = js.native
+    
+    def useTransition(): js.Tuple2[Boolean, TransitionStartFunction] = js.native
     
     val version: String = js.native
   }

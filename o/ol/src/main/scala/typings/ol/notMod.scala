@@ -8,7 +8,7 @@ object notMod {
   
   @JSImport("ol/format/filter/Not", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.ol.filterFilterMod.default {
     def this(condition: typings.ol.filterFilterMod.default) = this()
   }

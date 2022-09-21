@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Navbar")
 @js.native
-class Navbar ()
+open class Navbar ()
   extends typings.reactBootstrap.libMod.Navbar
 object Navbar {
   
@@ -25,7 +25,7 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Navbar.Brand")
   @js.native
-  class Brand ()
+  open class Brand ()
     extends typings.reactBootstrap.navbarBrandMod.^
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Brand")
@@ -36,7 +36,7 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Navbar.Collapse")
   @js.native
-  class Collapse ()
+  open class Collapse ()
     extends typings.reactBootstrap.navbarCollapseMod.^
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Collapse")
@@ -47,8 +47,8 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Navbar.Form")
   @js.native
-  class Form ()
-    extends Component[NavbarFormProps, js.Object, js.Any]
+  open class Form ()
+    extends Component[NavbarFormProps, js.Object, Any]
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Form")
   @js.native
@@ -58,7 +58,7 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Navbar.Header")
   @js.native
-  class Header ()
+  open class Header ()
     extends typings.reactBootstrap.navbarHeaderMod.^
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Header")
@@ -69,8 +69,8 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Navbar.Link")
   @js.native
-  class Link ()
-    extends Component[NavbarLinkProps, js.Object, js.Any]
+  open class Link ()
+    extends Component[NavbarLinkProps, js.Object, Any]
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Link")
   @js.native
@@ -80,8 +80,8 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Navbar.Text")
   @js.native
-  class Text ()
-    extends Component[NavbarTextProps, js.Object, js.Any]
+  open class Text ()
+    extends Component[NavbarTextProps, js.Object, Any]
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Text")
   @js.native
@@ -91,7 +91,7 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Navbar.Toggle")
   @js.native
-  class Toggle ()
+  open class Toggle ()
     extends typings.reactBootstrap.navbarToggleMod.^
   /* static member */
   @JSImport("react-bootstrap", "Navbar.Toggle")

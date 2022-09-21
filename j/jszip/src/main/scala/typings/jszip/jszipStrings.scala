@@ -65,6 +65,18 @@ object jszipStrings {
   inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
+  
+  @js.native
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
   sealed trait nodebuffer
     extends StObject
        with OutputType

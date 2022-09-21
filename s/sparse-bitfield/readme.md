@@ -11,9 +11,9 @@ Bitfield that allocates a series of small buffers to support sparse bits without
 | Full name          | sparse-bitfield |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 57347669 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 9233666.666666666 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/sparse-bitfield)

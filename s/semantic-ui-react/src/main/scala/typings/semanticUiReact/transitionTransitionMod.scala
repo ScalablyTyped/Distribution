@@ -18,10 +18,9 @@ object transitionTransitionMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Transition/Transition", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[TransitionProps, ComponentState, js.Any] {
+  open class default protected () extends Component[TransitionProps, ComponentState, Any] {
     def this(props: TransitionProps) = this()
-    def this(props: TransitionProps, context: js.Any) = this()
+    def this(props: TransitionProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -32,10 +31,9 @@ object transitionTransitionMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Transition/Transition", "default.Group")
     @js.native
-    class Group protected ()
-      extends Component[TransitionGroupProps, ComponentState, js.Any] {
+    open class Group protected () extends Component[TransitionGroupProps, ComponentState, Any] {
       def this(props: TransitionGroupProps) = this()
-      def this(props: TransitionGroupProps, context: js.Any) = this()
+      def this(props: TransitionGroupProps, context: Any) = this()
     }
     
     type _To = TransitionComponent
@@ -250,7 +248,7 @@ object transitionTransitionMod {
   trait TransitionProps
     extends StObject
        with StrictTransitionProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object TransitionProps {
     
     inline def apply(): TransitionProps = {

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +20,7 @@ trait GitConflictRenameDelete
 object GitConflictRenameDelete {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     baseBlob: GitBlobRef,
     conflictId: Double,
     conflictPath: String,
@@ -34,7 +33,7 @@ object GitConflictRenameDelete {
     resolutionError: GitResolutionError,
     resolutionStatus: GitResolutionStatus,
     resolvedBy: IdentityRef,
-    resolvedDate: Date,
+    resolvedDate: js.Date,
     sourceBlob: GitBlobRef,
     sourceNewPath: String,
     url: String

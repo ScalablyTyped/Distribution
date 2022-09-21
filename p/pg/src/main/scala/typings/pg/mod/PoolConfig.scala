@@ -11,12 +11,16 @@ trait PoolConfig
   
   var Promise: js.UndefOr[PromiseConstructorLike] = js.undefined
   
+  var allowExitOnIdle: js.UndefOr[Boolean] = js.undefined
+  
   var idleTimeoutMillis: js.UndefOr[Double] = js.undefined
   
-  var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var log: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   // properties from module 'node-pool'
   var max: js.UndefOr[Double] = js.undefined
+  
+  var maxUses: js.UndefOr[Double] = js.undefined
   
   var min: js.UndefOr[Double] = js.undefined
 }
@@ -29,17 +33,25 @@ object PoolConfig {
   
   extension [Self <: PoolConfig](x: Self) {
     
+    inline def setAllowExitOnIdle(value: Boolean): Self = StObject.set(x, "allowExitOnIdle", value.asInstanceOf[js.Any])
+    
+    inline def setAllowExitOnIdleUndefined: Self = StObject.set(x, "allowExitOnIdle", js.undefined)
+    
     inline def setIdleTimeoutMillis(value: Double): Self = StObject.set(x, "idleTimeoutMillis", value.asInstanceOf[js.Any])
     
     inline def setIdleTimeoutMillisUndefined: Self = StObject.set(x, "idleTimeoutMillis", js.undefined)
     
-    inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
     inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMaxUses(value: Double): Self = StObject.set(x, "maxUses", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUsesUndefined: Self = StObject.set(x, "maxUses", js.undefined)
     
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     

@@ -4,46 +4,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Application resource contains the top-level configuration of an App
-  * Engine application.
-  */
 trait SchemaApplication extends StObject {
   
   /**
-    * Google Apps authentication domain that controls which users can access
-    * this application.Defaults to open access for any Google Account.
+    * Google Apps authentication domain that controls which users can access this application.Defaults to open access for any Google Account.
     */
-  var authDomain: js.UndefOr[String] = js.undefined
+  var authDomain: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Google Cloud Storage bucket that can be used for storing files associated
-    * with this application. This bucket is associated with the application and
-    * can be used by the gcloud deployment commands.@OutputOnly
+    * Google Cloud Storage bucket that can be used for storing files associated with this application. This bucket is associated with the application and can be used by the gcloud deployment commands.@OutputOnly
     */
-  var codeBucket: js.UndefOr[String] = js.undefined
+  var codeBucket: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Google Cloud Storage bucket that can be used by this application to store
-    * content.@OutputOnly
+    * The type of the Cloud Firestore or Cloud Datastore database associated with this application.
     */
-  var defaultBucket: js.UndefOr[String] = js.undefined
+  var databaseType: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Google Cloud Storage bucket that can be used by this application to store content.@OutputOnly
+    */
+  var defaultBucket: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Cookie expiration policy for this application.
     */
-  var defaultCookieExpiration: js.UndefOr[String] = js.undefined
+  var defaultCookieExpiration: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Hostname used to reach this application, as resolved by App
-    * Engine.@OutputOnly
+    * Hostname used to reach this application, as resolved by App Engine.@OutputOnly
     */
-  var defaultHostname: js.UndefOr[String] = js.undefined
+  var defaultHostname: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * HTTP path dispatch rules for requests to the application that do not
-    * explicitly target a service or version. Rules are order-dependent. Up to
-    * 20 dispatch rules can be supported.
+    * HTTP path dispatch rules for requests to the application that do not explicitly target a service or version. Rules are order-dependent. Up to 20 dispatch rules can be supported.
     */
   var dispatchRules: js.UndefOr[js.Array[SchemaUrlDispatchRule]] = js.undefined
   
@@ -53,39 +47,36 @@ trait SchemaApplication extends StObject {
   var featureSettings: js.UndefOr[SchemaFeatureSettings] = js.undefined
   
   /**
-    * The Google Container Registry domain used for storing managed build
-    * docker images for this application.
+    * The Google Container Registry domain used for storing managed build docker images for this application.
     */
-  var gcrDomain: js.UndefOr[String] = js.undefined
+  var gcrDomain: js.UndefOr[String | Null] = js.undefined
   
   var iap: js.UndefOr[SchemaIdentityAwareProxy] = js.undefined
   
   /**
-    * Identifier of the Application resource. This identifier is equivalent to
-    * the project ID of the Google Cloud Platform project where you want to
-    * deploy your application. Example: myapp.
+    * Identifier of the Application resource. This identifier is equivalent to the project ID of the Google Cloud Platform project where you want to deploy your application. Example: myapp.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Location from which this application runs. Application instances run out
-    * of the data centers in the specified location, which is also where all of
-    * the application&#39;s end user content is stored.Defaults to
-    * us-central.View the list of supported locations
-    * (https://cloud.google.com/appengine/docs/locations).
+    * Location from which this application runs. Application instances run out of the data centers in the specified location, which is also where all of the application's end user content is stored.Defaults to us-central.View the list of supported locations (https://cloud.google.com/appengine/docs/locations).
     */
-  var locationId: js.UndefOr[String] = js.undefined
+  var locationId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Full path to the Application resource in the API. Example:
-    * apps/myapp.@OutputOnly
+    * Full path to the Application resource in the API. Example: apps/myapp.@OutputOnly
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The service account associated with the application. This is the app-level default identity. If no identity provided during create version, Admin API will fallback to this one.
+    */
+  var serviceAccount: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Serving status of this application.
     */
-  var servingStatus: js.UndefOr[String] = js.undefined
+  var servingStatus: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaApplication {
   
@@ -98,21 +89,37 @@ object SchemaApplication {
     
     inline def setAuthDomain(value: String): Self = StObject.set(x, "authDomain", value.asInstanceOf[js.Any])
     
+    inline def setAuthDomainNull: Self = StObject.set(x, "authDomain", null)
+    
     inline def setAuthDomainUndefined: Self = StObject.set(x, "authDomain", js.undefined)
     
     inline def setCodeBucket(value: String): Self = StObject.set(x, "codeBucket", value.asInstanceOf[js.Any])
     
+    inline def setCodeBucketNull: Self = StObject.set(x, "codeBucket", null)
+    
     inline def setCodeBucketUndefined: Self = StObject.set(x, "codeBucket", js.undefined)
     
+    inline def setDatabaseType(value: String): Self = StObject.set(x, "databaseType", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseTypeNull: Self = StObject.set(x, "databaseType", null)
+    
+    inline def setDatabaseTypeUndefined: Self = StObject.set(x, "databaseType", js.undefined)
+    
     inline def setDefaultBucket(value: String): Self = StObject.set(x, "defaultBucket", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultBucketNull: Self = StObject.set(x, "defaultBucket", null)
     
     inline def setDefaultBucketUndefined: Self = StObject.set(x, "defaultBucket", js.undefined)
     
     inline def setDefaultCookieExpiration(value: String): Self = StObject.set(x, "defaultCookieExpiration", value.asInstanceOf[js.Any])
     
+    inline def setDefaultCookieExpirationNull: Self = StObject.set(x, "defaultCookieExpiration", null)
+    
     inline def setDefaultCookieExpirationUndefined: Self = StObject.set(x, "defaultCookieExpiration", js.undefined)
     
     inline def setDefaultHostname(value: String): Self = StObject.set(x, "defaultHostname", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultHostnameNull: Self = StObject.set(x, "defaultHostname", null)
     
     inline def setDefaultHostnameUndefined: Self = StObject.set(x, "defaultHostname", js.undefined)
     
@@ -120,13 +127,15 @@ object SchemaApplication {
     
     inline def setDispatchRulesUndefined: Self = StObject.set(x, "dispatchRules", js.undefined)
     
-    inline def setDispatchRulesVarargs(value: SchemaUrlDispatchRule*): Self = StObject.set(x, "dispatchRules", js.Array(value :_*))
+    inline def setDispatchRulesVarargs(value: SchemaUrlDispatchRule*): Self = StObject.set(x, "dispatchRules", js.Array(value*))
     
     inline def setFeatureSettings(value: SchemaFeatureSettings): Self = StObject.set(x, "featureSettings", value.asInstanceOf[js.Any])
     
     inline def setFeatureSettingsUndefined: Self = StObject.set(x, "featureSettings", js.undefined)
     
     inline def setGcrDomain(value: String): Self = StObject.set(x, "gcrDomain", value.asInstanceOf[js.Any])
+    
+    inline def setGcrDomainNull: Self = StObject.set(x, "gcrDomain", null)
     
     inline def setGcrDomainUndefined: Self = StObject.set(x, "gcrDomain", js.undefined)
     
@@ -136,17 +145,31 @@ object SchemaApplication {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    
+    inline def setLocationIdNull: Self = StObject.set(x, "locationId", null)
     
     inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAccountNull: Self = StObject.set(x, "serviceAccount", null)
+    
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    
     inline def setServingStatus(value: String): Self = StObject.set(x, "servingStatus", value.asInstanceOf[js.Any])
+    
+    inline def setServingStatusNull: Self = StObject.set(x, "servingStatus", null)
     
     inline def setServingStatusUndefined: Self = StObject.set(x, "servingStatus", js.undefined)
   }

@@ -10,23 +10,40 @@ trait PointerEvent
   extends StObject
      with MouseEvent {
   
+  /** Available only in secure contexts. */
+  /* standard dom */
+  def getCoalescedEvents(): js.Array[PointerEvent] = js.native
+  
+  /* standard dom */
+  def getPredictedEvents(): js.Array[PointerEvent] = js.native
+  
+  /* standard dom */
   val height: Double = js.native
   
+  /* standard dom */
   val isPrimary: scala.Boolean = js.native
   
+  /* standard dom */
   val pointerId: Double = js.native
   
+  /* standard dom */
   val pointerType: java.lang.String = js.native
   
+  /* standard dom */
   val pressure: Double = js.native
   
+  /* standard dom */
   val tangentialPressure: Double = js.native
   
+  /* standard dom */
   val tiltX: Double = js.native
   
+  /* standard dom */
   val tiltY: Double = js.native
   
+  /* standard dom */
   val twist: Double = js.native
   
+  /* standard dom */
   val width: Double = js.native
 }

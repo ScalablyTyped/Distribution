@@ -19,7 +19,7 @@ trait Preset extends StObject {
   /**
     * The timestamp in epoch seconds for preset creation.
     */
-  var CreatedAt: js.UndefOr[timestampUnix] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An optional description you create for each preset.
@@ -29,7 +29,7 @@ trait Preset extends StObject {
   /**
     * The timestamp in epoch seconds when the preset was last updated.
     */
-  var LastUpdated: js.UndefOr[timestampUnix] = js.undefined
+  var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A name you create for each preset. Each name must be unique within your account.
@@ -63,7 +63,7 @@ object Preset {
     
     inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
-    inline def setCreatedAt(value: timestampUnix): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -71,7 +71,7 @@ object Preset {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setLastUpdated(value: timestampUnix): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     

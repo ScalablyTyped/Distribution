@@ -1,22 +1,22 @@
 
 # Scala.js typings for string-strip-html
 
-Typings are for version 5.0
+Typings are for version 11.6.5
 
 ## Library description:
-Strips HTML tags from strings. No parser, accepts mixed sources.
+Strip HTML tags from strings. No parser, accepts mixed sources.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | string-strip-html |
 | Keywords           | code, extract, from, html, jsp, mixed, remove, separate, stri, string, strip, tags, templating, text, xhtml |
-| # releases         | 89 |
-| # dependents       | 26 |
-| # downloads        | 1101224 |
-| # stars            | 0 |
+| # releases         | 66 |
+| # dependents       | 0.0 |
+| # downloads        | 312520.0 |
+| # stars            | 116.0 |
 
 ## Links
-- [Homepage](https://codsen.com/os/string-strip-html/)
+- [Homepage](https://codsen.com/os/string-strip-html)
 - [Bugs](https://github.com/codsen/codsen/issues)
 - [Repository](https://github.com/codsen/codsen)
 - [Npm](https://www.npmjs.com/package/string-strip-html)
@@ -24,7 +24,7 @@ Strips HTML tags from strings. No parser, accepts mixed sources.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

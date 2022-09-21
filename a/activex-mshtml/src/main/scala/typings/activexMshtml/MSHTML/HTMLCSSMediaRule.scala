@@ -24,7 +24,7 @@ trait HTMLCSSMediaRule extends StObject {
   def insertRule(bstrRule: String): Double = js.native
   def insertRule(bstrRule: String, lIndex: Double): Double = js.native
   
-  var media: js.Any = js.native
+  var media: Any = js.native
   
   val parentRule: IHTMLCSSRule = js.native
   

@@ -6,11 +6,14 @@ import typings.cathoQuantum.cathoQuantumStrings.neutral
 import typings.cathoQuantum.cathoQuantumStrings.primary
 import typings.cathoQuantum.cathoQuantumStrings.success
 import typings.cathoQuantum.cathoQuantumStrings.warning
+import typings.cathoQuantum.iconMod.IconNames
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.react.mod.TouchEvent
+import typings.react.mod.TouchEventHandler
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,18 +23,18 @@ object alertMod {
   
   @JSImport("@catho/quantum/Alert", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[AlertProps, js.Object, js.Any]
+  open class default ()
+    extends Component[AlertProps, js.Object, Any]
   
-  type Alert = Component[AlertProps, js.Object, js.Any]
+  type Alert = Component[AlertProps, js.Object, Any]
   
   trait AlertProps extends StObject {
     
     var children: ReactNode
     
-    var icon: js.UndefOr[String] = js.undefined
+    var icon: js.UndefOr[IconNames | String] = js.undefined
     
-    var onClose: MouseEventHandler[HTMLButtonElement]
+    var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement] | TouchEventHandler[HTMLButtonElement]] = js.undefined
     
     var skin: js.UndefOr[primary | success | error | neutral | warning] = js.undefined
     
@@ -39,8 +42,8 @@ object alertMod {
   }
   object AlertProps {
     
-    inline def apply(onClose: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): AlertProps = {
-      val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction1(onClose))
+    inline def apply(): AlertProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlertProps]
     }
     
@@ -50,11 +53,13 @@ object alertMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconNames | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setOnClose(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: (MouseEvent[HTMLButtonElement, NativeMouseEvent]) | TouchEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       inline def setSkin(value: primary | success | error | neutral | warning): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       

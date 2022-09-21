@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] A method called when the filtering caused by the doQuery call is complete and the store has been either filtered loca
     * @param queryPlan Object An object containing details about the query was executed.
     */
-  var afterQuery: js.UndefOr[js.Function1[/* queryPlan */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var afterQuery: js.UndefOr[js.Function1[/* queryPlan */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var allQuery: js.UndefOr[String] = js.undefined
@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] A method which may modify aspects of how the store is to be filtered if queryMode is local  of loaded if queryMod
     * @param queryPlan Object An object containing details about the query to be executed.
     */
-  var beforeQuery: js.UndefOr[js.Function1[/* queryPlan */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var beforeQuery: js.UndefOr[js.Function1[/* queryPlan */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Template method before a field is reset  */
   @JSName("beforeReset")
@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Binds a store to this instance
     * @param store Ext.data.AbstractStore/String The store to bind or ID of the store. When no store given (or when null or undefined passed), unbinds the existing store.
     */
-  var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+  var bindStore: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Binds listeners for this component to the store
     * @param store Ext.data.AbstractStore The store to bind to
@@ -59,7 +59,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var clearValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultListConfig: js.UndefOr[js.Any] = js.undefined
+  var defaultListConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var delimiter: js.UndefOr[String] = js.undefined
@@ -94,20 +94,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns Ext.data.Model The matched record or false.
     */
   var findRecord: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], IModel]
+    js.Function2[/* field */ js.UndefOr[String], /* value */ js.UndefOr[Any], IModel]
   ] = js.undefined
   
   /** [Method] Finds the record by searching values in the displayField
     * @param value Object The value to match the field against.
     * @returns Ext.data.Model The matched record or false.
     */
-  var findRecordByDisplay: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], IModel]] = js.undefined
+  var findRecordByDisplay: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], IModel]] = js.undefined
   
   /** [Method] Finds the record by searching values in the valueField
     * @param value Object The value to match the field against.
     * @returns Ext.data.Model The matched record or false.
     */
-  var findRecordByValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], IModel]] = js.undefined
+  var findRecordByValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], IModel]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var forceSelection: js.UndefOr[Boolean] = js.undefined
@@ -120,7 +120,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Gets the listeners to bind to a new store
     * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
     */
-  var getStoreListeners: js.UndefOr[js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])] = js.undefined
+  var getStoreListeners: js.UndefOr[js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])] = js.undefined
   
   /** [Method] Returns the value that would be included in a standard form submit for this field
     * @returns String The value to be submitted, or null.
@@ -132,7 +132,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns Object value The field value
     */
   @JSName("getValue")
-  var getValue_IComboBox: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValue_IComboBox: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var growToLongestValue: js.UndefOr[Boolean] = js.undefined
@@ -144,7 +144,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var lastQuery: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var listConfig: js.UndefOr[js.Any] = js.undefined
+  var listConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var minChars: js.UndefOr[Double] = js.undefined
@@ -156,15 +156,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param store Object
     * @param initial Object
     */
-  var onBindStore: js.UndefOr[
-    js.Function2[js.UndefOr[js.Any | IAbstractStore], js.UndefOr[js.Any | Boolean], Unit]
-  ] = js.undefined
+  var onBindStore: js.UndefOr[js.Function2[js.UndefOr[Any | IAbstractStore], js.UndefOr[Any | Boolean], Unit]] = js.undefined
   
   /** [Method] Template method it is called when an existing store is unbound from the current instance
     * @param store Object
     */
   var onUnbindStore: js.UndefOr[
-    (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
+    (js.Function1[/* store */ js.UndefOr[Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
   ] = js.undefined
   
   /** [Config Option] (Number) */
@@ -185,16 +183,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Selects an item by a Model or by a key value
     * @param r Object
     */
-  var select: js.UndefOr[js.Function1[/* r */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var select: js.UndefOr[js.Function1[/* r */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var selectOnTab: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.data.Store/String/Array) */
-  var store: js.UndefOr[js.Any] = js.undefined
+  var store: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var transform: js.UndefOr[js.Any] = js.undefined
+  var transform: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var triggerAction: js.UndefOr[String] = js.undefined
@@ -225,7 +223,7 @@ object IComboBox {
   
   extension [Self <: IComboBox](x: Self) {
     
-    inline def setAfterQuery(value: /* queryPlan */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterQuery", js.Any.fromFunction1(value))
+    inline def setAfterQuery(value: /* queryPlan */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "afterQuery", js.Any.fromFunction1(value))
     
     inline def setAfterQueryUndefined: Self = StObject.set(x, "afterQuery", js.undefined)
     
@@ -245,7 +243,7 @@ object IComboBox {
     
     inline def setBeforeBlurUndefined: Self = StObject.set(x, "beforeBlur", js.undefined)
     
-    inline def setBeforeQuery(value: /* queryPlan */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeQuery", js.Any.fromFunction1(value))
+    inline def setBeforeQuery(value: /* queryPlan */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beforeQuery", js.Any.fromFunction1(value))
     
     inline def setBeforeQueryUndefined: Self = StObject.set(x, "beforeQuery", js.undefined)
     
@@ -253,7 +251,7 @@ object IComboBox {
     
     inline def setBeforeResetUndefined: Self = StObject.set(x, "beforeReset", js.undefined)
     
-    inline def setBindStore(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
+    inline def setBindStore(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     
     inline def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
     
@@ -269,7 +267,7 @@ object IComboBox {
     
     inline def setClearValueUndefined: Self = StObject.set(x, "clearValue", js.undefined)
     
-    inline def setDefaultListConfig(value: js.Any): Self = StObject.set(x, "defaultListConfig", value.asInstanceOf[js.Any])
+    inline def setDefaultListConfig(value: Any): Self = StObject.set(x, "defaultListConfig", value.asInstanceOf[js.Any])
     
     inline def setDefaultListConfigUndefined: Self = StObject.set(x, "defaultListConfig", js.undefined)
     
@@ -295,13 +293,13 @@ object IComboBox {
     
     inline def setFieldSubTplUndefined: Self = StObject.set(x, "fieldSubTpl", js.undefined)
     
-    inline def setFindRecord(value: (/* field */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => IModel): Self = StObject.set(x, "findRecord", js.Any.fromFunction2(value))
+    inline def setFindRecord(value: (/* field */ js.UndefOr[String], /* value */ js.UndefOr[Any]) => IModel): Self = StObject.set(x, "findRecord", js.Any.fromFunction2(value))
     
-    inline def setFindRecordByDisplay(value: /* value */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "findRecordByDisplay", js.Any.fromFunction1(value))
+    inline def setFindRecordByDisplay(value: /* value */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "findRecordByDisplay", js.Any.fromFunction1(value))
     
     inline def setFindRecordByDisplayUndefined: Self = StObject.set(x, "findRecordByDisplay", js.undefined)
     
-    inline def setFindRecordByValue(value: /* value */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "findRecordByValue", js.Any.fromFunction1(value))
+    inline def setFindRecordByValue(value: /* value */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "findRecordByValue", js.Any.fromFunction1(value))
     
     inline def setFindRecordByValueUndefined: Self = StObject.set(x, "findRecordByValue", js.undefined)
     
@@ -313,11 +311,11 @@ object IComboBox {
     
     inline def setGetStore(value: () => IAbstractStore | IStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
-    inline def setGetStoreListeners(value: js.Function0[js.Any] | (js.Function1[/* store */ js.UndefOr[IStore], js.Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
+    inline def setGetStoreListeners(value: js.Function0[Any] | (js.Function1[/* store */ js.UndefOr[IStore], Any])): Self = StObject.set(x, "getStoreListeners", value.asInstanceOf[js.Any])
     
-    inline def setGetStoreListenersFunction0(value: () => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
+    inline def setGetStoreListenersFunction0(value: () => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
     
-    inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
+    inline def setGetStoreListenersFunction1(value: /* store */ js.UndefOr[IStore] => Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
     
     inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
     
@@ -327,7 +325,7 @@ object IComboBox {
     
     inline def setGetSubmitValueUndefined: Self = StObject.set(x, "getSubmitValue", js.undefined)
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
@@ -343,7 +341,7 @@ object IComboBox {
     
     inline def setLastQueryUndefined: Self = StObject.set(x, "lastQuery", js.undefined)
     
-    inline def setListConfig(value: js.Any): Self = StObject.set(x, "listConfig", value.asInstanceOf[js.Any])
+    inline def setListConfig(value: Any): Self = StObject.set(x, "listConfig", value.asInstanceOf[js.Any])
     
     inline def setListConfigUndefined: Self = StObject.set(x, "listConfig", js.undefined)
     
@@ -355,15 +353,15 @@ object IComboBox {
     
     inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
     
-    inline def setOnBindStore(value: (js.UndefOr[js.Any | IAbstractStore], js.UndefOr[js.Any | Boolean]) => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction2(value))
+    inline def setOnBindStore(value: (js.UndefOr[Any | IAbstractStore], js.UndefOr[Any | Boolean]) => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction2(value))
     
     inline def setOnBindStoreUndefined: Self = StObject.set(x, "onBindStore", js.undefined)
     
     inline def setOnUnbindStore(
-      value: (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
+      value: (js.Function1[/* store */ js.UndefOr[Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit])
     ): Self = StObject.set(x, "onUnbindStore", value.asInstanceOf[js.Any])
     
-    inline def setOnUnbindStoreFunction1(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction1(value))
+    inline def setOnUnbindStoreFunction1(value: /* store */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction1(value))
     
     inline def setOnUnbindStoreFunction2(value: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction2(value))
     
@@ -389,7 +387,7 @@ object IComboBox {
     
     inline def setQueryParamUndefined: Self = StObject.set(x, "queryParam", js.undefined)
     
-    inline def setSelect(value: /* r */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: /* r */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     inline def setSelectOnTab(value: Boolean): Self = StObject.set(x, "selectOnTab", value.asInstanceOf[js.Any])
     
@@ -397,11 +395,11 @@ object IComboBox {
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
-    inline def setTransform(value: js.Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     

@@ -47,7 +47,7 @@ object ServiceId {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

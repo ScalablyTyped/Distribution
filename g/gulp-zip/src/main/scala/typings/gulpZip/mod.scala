@@ -1,7 +1,6 @@
 package typings.gulpZip
 
 import typings.node.processMod.global.NodeJS.ReadStream
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object mod {
       *
       * @default undefined
       */
-    var modifiedTime: js.UndefOr[Date] = js.undefined
+    var modifiedTime: js.UndefOr[js.Date] = js.undefined
   }
   object GulpZipOptions {
     
@@ -47,7 +46,7 @@ object mod {
       
       inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      inline def setModifiedTime(value: Date): Self = StObject.set(x, "modifiedTime", value.asInstanceOf[js.Any])
+      inline def setModifiedTime(value: js.Date): Self = StObject.set(x, "modifiedTime", value.asInstanceOf[js.Any])
       
       inline def setModifiedTimeUndefined: Self = StObject.set(x, "modifiedTime", js.undefined)
     }

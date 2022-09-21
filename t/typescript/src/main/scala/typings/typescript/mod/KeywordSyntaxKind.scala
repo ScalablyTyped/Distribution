@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.SyntaxKind.AnyKeyword
   - typings.typescript.mod.SyntaxKind.AsKeyword
   - typings.typescript.mod.SyntaxKind.AssertsKeyword
+  - typings.typescript.mod.SyntaxKind.AssertKeyword
   - typings.typescript.mod.SyntaxKind.AsyncKeyword
   - typings.typescript.mod.SyntaxKind.AwaitKeyword
   - typings.typescript.mod.SyntaxKind.BigIntKeyword
@@ -60,6 +61,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.SyntaxKind.ProtectedKeyword
   - typings.typescript.mod.SyntaxKind.PublicKeyword
   - typings.typescript.mod.SyntaxKind.ReadonlyKeyword
+  - typings.typescript.mod.SyntaxKind.OutKeyword
+  - typings.typescript.mod.SyntaxKind.OverrideKeyword
   - typings.typescript.mod.SyntaxKind.RequireKeyword
   - typings.typescript.mod.SyntaxKind.ReturnKeyword
   - typings.typescript.mod.SyntaxKind.SetKeyword

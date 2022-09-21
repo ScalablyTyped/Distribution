@@ -27,6 +27,6 @@ object Immutable {
     
     inline def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
     
-    inline def setKeyExprVarargs(value: String*): Self = StObject.set(x, "keyExpr", js.Array(value :_*))
+    inline def setKeyExprVarargs(value: String*): Self = StObject.set(x, "keyExpr", js.Array(value*))
   }
 }

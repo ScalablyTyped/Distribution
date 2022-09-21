@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "Skeleton")
 @js.native
-class Skeleton protected ()
-  extends typings.three.skeletonMod.Skeleton {
+open class Skeleton protected ()
+  extends typings.three.threeMod.Skeleton {
   def this(bones: js.Array[typings.three.boneMod.Bone]) = this()
   def this(
     bones: js.Array[typings.three.boneMod.Bone],

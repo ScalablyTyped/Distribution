@@ -1,34 +1,30 @@
 package typings.rxjs
 
 import typings.rxjs.internalObservableMod.Observable
-import typings.rxjs.typesMod.SchedulerLike
+import typings.rxjs.internalTypesMod.SchedulerLike
+import typings.rxjs.internalTypesMod.ValueFromArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ofMod {
   
-  @JSImport("rxjs/internal/observable/of", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/observable/of", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def of[T](a: T): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
-  inline def of[T](a: T, scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
-  inline def of[T](args: (SchedulerLike | T)*): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(args.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
-  inline def of[T, T2](a: T, b: T2): Observable[T | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2]]
-  inline def of[T, T2](a: T, b: T2, scheduler: SchedulerLike): Observable[T | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2]]
-  inline def of[T, T2, T3](a: T, b: T2, c: T3): Observable[T | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3]]
-  inline def of[T, T2, T3](a: T, b: T2, c: T3, scheduler: SchedulerLike): Observable[T | T2 | T3] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3]]
-  inline def of[T, T2, T3, T4](a: T, b: T2, c: T3, d: T4): Observable[T | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4]]
-  inline def of[T, T2, T3, T4](a: T, b: T2, c: T3, d: T4, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4]]
-  inline def of[T, T2, T3, T4, T5](a: T, b: T2, c: T3, d: T4, e: T5): Observable[T | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5]]
-  inline def of[T, T2, T3, T4, T5](a: T, b: T2, c: T3, d: T4, e: T5, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5]]
-  inline def of[T, T2, T3, T4, T5, T6](a: T, b: T2, c: T3, d: T4, e: T5, f: T6): Observable[T | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6]]
-  inline def of[T, T2, T3, T4, T5, T6](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6]]
-  inline def of[T, T2, T3, T4, T5, T6, T7](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7): Observable[T | T2 | T3 | T4 | T5 | T6 | T7] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7]]
-  inline def of[T, T2, T3, T4, T5, T6, T7](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6 | T7] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7]]
-  inline def of[T, T2, T3, T4, T5, T6, T7, T8](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8]]
-  inline def of[T, T2, T3, T4, T5, T6, T7, T8](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any], h.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8]]
-  inline def of[T, T2, T3, T4, T5, T6, T7, T8, T9](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, i: T9): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any], h.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9]]
-  inline def of[T, T2, T3, T4, T5, T6, T7, T8, T9](a: T, b: T2, c: T3, d: T4, e: T5, f: T6, g: T7, h: T8, i: T9, scheduler: SchedulerLike): Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any], g.asInstanceOf[js.Any], h.asInstanceOf[js.Any], i.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9]]
+  inline def of(): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")().asInstanceOf[Observable[scala.Nothing]]
+  inline def of(scheduler: SchedulerLike): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Observable[scala.Nothing]]
+  inline def of(value: Null): Observable[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Observable[Null]]
+  inline def of(value: Unit): Observable[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Observable[Unit]]
+  inline def of[T](value: T): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  inline def of[A /* <: js.Array[Any] */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param valuesAndScheduler because its type [...A, SchedulerLike] is not an array type */ valuesAndScheduler: /* import warning: importer.ImportType#apply c repeated non-array type: A */ js.Array[A]
+  ): Observable[ValueFromArray[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(valuesAndScheduler.asInstanceOf[js.Any]).asInstanceOf[Observable[ValueFromArray[A]]]
+  
+  inline def of_A_ArrayAny[A /* <: js.Array[Any] */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param values because its type A is not an array type */ values: A
+  ): Observable[ValueFromArray[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(values.asInstanceOf[js.Any]).asInstanceOf[Observable[ValueFromArray[A]]]
+  
+  inline def of_T[T](): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")().asInstanceOf[Observable[T]]
 }

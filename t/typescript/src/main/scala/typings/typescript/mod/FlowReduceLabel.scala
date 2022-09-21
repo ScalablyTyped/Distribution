@@ -28,7 +28,7 @@ object FlowReduceLabel {
     
     inline def setAntecedents(value: js.Array[FlowNode]): Self = StObject.set(x, "antecedents", value.asInstanceOf[js.Any])
     
-    inline def setAntecedentsVarargs(value: FlowNode*): Self = StObject.set(x, "antecedents", js.Array(value :_*))
+    inline def setAntecedentsVarargs(value: FlowNode*): Self = StObject.set(x, "antecedents", js.Array(value*))
     
     inline def setTarget(value: FlowLabel): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

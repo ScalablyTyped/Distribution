@@ -1,12 +1,5 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
-import typings.std.Date
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Uint16Array
-import typings.std.Uint32Array
 import typings.winrtUwp.Windows.Foundation.Point
 import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Foundation.Size
@@ -111,14 +104,14 @@ trait LoggingFields extends StObject {
     * @param name The name of the event field.
     * @param value The value of the event field.
     */
-  def addDateTime(name: String, value: Date): Unit = js.native
+  def addDateTime(name: String, value: js.Date): Unit = js.native
   /**
     * Adds a DateTime field with the specified field name and format.
     * @param name The name of the event field.
     * @param value The value of the event field.
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     */
-  def addDateTime(name: String, value: Date, format: LoggingFieldFormat): Unit = js.native
+  def addDateTime(name: String, value: js.Date, format: LoggingFieldFormat): Unit = js.native
   /**
     * Adds a DateTime field with the specified field name, format, and tags.
     * @param name The name of the event field.
@@ -126,21 +119,21 @@ trait LoggingFields extends StObject {
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
-  def addDateTime(name: String, value: Date, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  def addDateTime(name: String, value: js.Date, format: LoggingFieldFormat, tags: Double): Unit = js.native
   
   /**
     * Adds a DateTime array field with the specified field name.
     * @param name The name of the event field.
     * @param value The array of values for the event field.
     */
-  def addDateTimeArray(name: String, value: js.Array[Date]): Unit = js.native
+  def addDateTimeArray(name: String, value: js.Array[js.Date]): Unit = js.native
   /**
     * Adds a DateTime array field with the specified field name and format.
     * @param name The name of the event field.
     * @param value The array of values for the event field.
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     */
-  def addDateTimeArray(name: String, value: js.Array[Date], format: LoggingFieldFormat): Unit = js.native
+  def addDateTimeArray(name: String, value: js.Array[js.Date], format: LoggingFieldFormat): Unit = js.native
   /**
     * Adds a DateTime array field with the specified field name, format, and tags.
     * @param name The name of the event field.
@@ -148,7 +141,7 @@ trait LoggingFields extends StObject {
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
-  def addDateTimeArray(name: String, value: js.Array[Date], format: LoggingFieldFormat, tags: Double): Unit = js.native
+  def addDateTimeArray(name: String, value: js.Array[js.Date], format: LoggingFieldFormat, tags: Double): Unit = js.native
   
   /**
     * Adds a Double field with the specified field name.
@@ -177,14 +170,14 @@ trait LoggingFields extends StObject {
     * @param name Name of the event field.
     * @param value The array of values for the event field.
     */
-  def addDoubleArray(name: String, value: Float64Array): Unit = js.native
+  def addDoubleArray(name: String, value: js.typedarray.Float64Array): Unit = js.native
   /**
     * Adds a Double array field with the specified field name and format.
     * @param name Name of the event field.
     * @param value The array of values for the event field.
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     */
-  def addDoubleArray(name: String, value: Float64Array, format: LoggingFieldFormat): Unit = js.native
+  def addDoubleArray(name: String, value: js.typedarray.Float64Array, format: LoggingFieldFormat): Unit = js.native
   /**
     * Adds a Double array field with the specified field name, format, and tags.
     * @param name Name of the event field.
@@ -192,7 +185,7 @@ trait LoggingFields extends StObject {
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
-  def addDoubleArray(name: String, value: Float64Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  def addDoubleArray(name: String, value: js.typedarray.Float64Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
   
   /**
     * Adds an empty field.
@@ -284,14 +277,14 @@ trait LoggingFields extends StObject {
     * @param name Name of the event field.
     * @param value Value of the event field.
     */
-  def addInt16Array(name: String, value: Int16Array): Unit = js.native
+  def addInt16Array(name: String, value: js.typedarray.Int16Array): Unit = js.native
   /**
     * Adds a 16-bit integer array field with the specified field name and format.
     * @param name Name of the event field.
     * @param value Value of the event field.
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     */
-  def addInt16Array(name: String, value: Int16Array, format: LoggingFieldFormat): Unit = js.native
+  def addInt16Array(name: String, value: js.typedarray.Int16Array, format: LoggingFieldFormat): Unit = js.native
   /**
     * Adds a 16-bit integer array field with the specified field name, format, and tags.
     * @param name Name of the event field.
@@ -299,7 +292,7 @@ trait LoggingFields extends StObject {
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
-  def addInt16Array(name: String, value: Int16Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  def addInt16Array(name: String, value: js.typedarray.Int16Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
   
   /**
     * Adds a 32-bit integer array field with the specified field name.
@@ -328,14 +321,14 @@ trait LoggingFields extends StObject {
     * @param name Name of the event field.
     * @param value The array values for the event field.
     */
-  def addInt32Array(name: String, value: Int32Array): Unit = js.native
+  def addInt32Array(name: String, value: js.typedarray.Int32Array): Unit = js.native
   /**
     * Adds a 32-bit integer array field with the specified field name and format.
     * @param name Name of the event field.
     * @param value The array values for the event field.
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     */
-  def addInt32Array(name: String, value: Int32Array, format: LoggingFieldFormat): Unit = js.native
+  def addInt32Array(name: String, value: js.typedarray.Int32Array, format: LoggingFieldFormat): Unit = js.native
   /**
     * Adds a 32-bit integer array field with the specified field name, format, and tags.
     * @param name Name of the event field.
@@ -343,7 +336,7 @@ trait LoggingFields extends StObject {
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
-  def addInt32Array(name: String, value: Int32Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  def addInt32Array(name: String, value: js.typedarray.Int32Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
   
   /**
     * Adds a 64-bit integer array field with the specified field name.
@@ -504,14 +497,14 @@ trait LoggingFields extends StObject {
     * @param name Name of the event field.
     * @param value The value for the event field.
     */
-  def addSingleArray(name: String, value: Float32Array): Unit = js.native
+  def addSingleArray(name: String, value: js.typedarray.Float32Array): Unit = js.native
   /**
     * Adds a Single array field with the specified field name and format.
     * @param name Name of the event field.
     * @param value The value for the event field.
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     */
-  def addSingleArray(name: String, value: Float32Array, format: LoggingFieldFormat): Unit = js.native
+  def addSingleArray(name: String, value: js.typedarray.Float32Array, format: LoggingFieldFormat): Unit = js.native
   /**
     * Adds a Single array field with the specified field name, format, and tags.
     * @param name Name of the event field.
@@ -519,7 +512,7 @@ trait LoggingFields extends StObject {
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
-  def addSingleArray(name: String, value: Float32Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  def addSingleArray(name: String, value: js.typedarray.Float32Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
   
   /**
     * Adds a Size field with the specified field name.
@@ -680,14 +673,14 @@ trait LoggingFields extends StObject {
     * @param name Name of the event field.
     * @param value The value for the event field. The default format for the array is binary. See the remarks section for other formats that may be specified.
     */
-  def addUInt16Array(name: String, value: Uint16Array): Unit = js.native
+  def addUInt16Array(name: String, value: js.typedarray.Uint16Array): Unit = js.native
   /**
     * Adds a 16-bit unsigned integer array field with the specified field name and format.
     * @param name Name of the event field.
     * @param value The value for the event field. The default format for the array is binary. See the remarks section for other formats that may be specified.
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     */
-  def addUInt16Array(name: String, value: Uint16Array, format: LoggingFieldFormat): Unit = js.native
+  def addUInt16Array(name: String, value: js.typedarray.Uint16Array, format: LoggingFieldFormat): Unit = js.native
   /**
     * Adds a 16-bit unsigned integer array field with the specified field name, format, and tags.
     * @param name Name of the event field.
@@ -695,7 +688,7 @@ trait LoggingFields extends StObject {
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
-  def addUInt16Array(name: String, value: Uint16Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  def addUInt16Array(name: String, value: js.typedarray.Uint16Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
   
   /**
     * Adds a 32-bit unsigned integer field with the specified field name.
@@ -724,14 +717,14 @@ trait LoggingFields extends StObject {
     * @param name Name of the event field.
     * @param value The value for the event field.
     */
-  def addUInt32Array(name: String, value: Uint32Array): Unit = js.native
+  def addUInt32Array(name: String, value: js.typedarray.Uint32Array): Unit = js.native
   /**
     * Adds a 32-bit unsigned integer array field with the specified field name and format.
     * @param name Name of the event field.
     * @param value The value for the event field.
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     */
-  def addUInt32Array(name: String, value: Uint32Array, format: LoggingFieldFormat): Unit = js.native
+  def addUInt32Array(name: String, value: js.typedarray.Uint32Array, format: LoggingFieldFormat): Unit = js.native
   /**
     * Adds a 32-bit unsigned integer array field with the specified field name, format, and tags.
     * @param name Name of the event field.
@@ -739,7 +732,7 @@ trait LoggingFields extends StObject {
     * @param format The format of the event field. Specifies an optional formatting hint that may be used by Event Tracing for Windows (ETW) tools.
     * @param tags The user-defined tag for the event field. Specifies up to twenty-eight bits of user-defined field processing metadata for use by a custom ETW processing tool. The top four bits are reserved and must be set to zero (0).
     */
-  def addUInt32Array(name: String, value: Uint32Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
+  def addUInt32Array(name: String, value: js.typedarray.Uint32Array, format: LoggingFieldFormat, tags: Double): Unit = js.native
   
   /**
     * Adds a 64-bit unsigned integer field with the specified field name.

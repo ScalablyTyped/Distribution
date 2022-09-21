@@ -11,14 +11,11 @@ object dateTimeControlMod {
   
   @JSImport("@wordpress/customize-browser/DateTimeControl", "DateTimeControl")
   @js.native
-  class DateTimeControl protected () extends Control {
+  open class DateTimeControl protected () extends Control {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
-    @JSName("convertHourToTwentyFourHourFormat")
-    def convertHourToTwentyFourHourFormat_am(hourInTwelveHourFormat: String, meridian: am): String = js.native
-    @JSName("convertHourToTwentyFourHourFormat")
-    def convertHourToTwentyFourHourFormat_pm(hourInTwelveHourFormat: String, meridian: pm): String = js.native
+    def convertHourToTwentyFourHourFormat(hourInTwelveHourFormat: String, meridian: am | pm): String = js.native
     
     def convertInputDateToString(): String = js.native
     

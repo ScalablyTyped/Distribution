@@ -10,15 +10,12 @@ A declarative, nested way to manipulate your body's className
 | ------------------ | :-------------: |
 | Full name          | react-body-classname |
 | Keywords           | react, component, react-component, body.className, title, jsx |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 430788 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40034.666666666664 |
+| # stars            | 80.0 |
 
 ## Links
-- [Homepage](https://github.com/iest/react-body-classname)
-- [Bugs](https://github.com/iest/react-body-classname/issues)
-- [Repository](https://github.com/iest/react-body-classname)
 - [Npm](https://www.npmjs.com/package/react-body-classname)
     
 

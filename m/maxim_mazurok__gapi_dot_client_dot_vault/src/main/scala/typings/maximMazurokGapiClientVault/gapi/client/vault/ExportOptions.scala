@@ -6,20 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExportOptions extends StObject {
   
-  /** Option available for Drive export. */
+  /** Options for Drive exports. */
   var driveOptions: js.UndefOr[DriveExportOptions] = js.undefined
   
-  /** Option available for groups export. */
+  /** Options for Groups exports. */
   var groupsOptions: js.UndefOr[GroupsExportOptions] = js.undefined
   
-  /** Option available for hangouts chat export. */
+  /** Options for Chat exports. */
   var hangoutsChatOptions: js.UndefOr[HangoutsChatExportOptions] = js.undefined
   
-  /** Option available for mail export. */
+  /** Options for Gmail exports. */
   var mailOptions: js.UndefOr[MailExportOptions] = js.undefined
   
-  /** The requested export location. */
+  /** The requested data region for the export. */
   var region: js.UndefOr[String] = js.undefined
+  
+  /** Options for Voice exports. */
+  var voiceOptions: js.UndefOr[VoiceExportOptions] = js.undefined
 }
 object ExportOptions {
   
@@ -49,5 +52,9 @@ object ExportOptions {
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
+    inline def setVoiceOptions(value: VoiceExportOptions): Self = StObject.set(x, "voiceOptions", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceOptionsUndefined: Self = StObject.set(x, "voiceOptions", js.undefined)
   }
 }

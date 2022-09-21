@@ -9,7 +9,7 @@ object devicesMod {
   
   @JSImport("novnc-core/lib/input/devices", "Keyboard")
   @js.native
-  class Keyboard () extends StObject {
+  open class Keyboard () extends StObject {
     def this(defaults: NvKeyboardDefaults) = this()
     
     def get_focused(): Boolean = js.native
@@ -31,7 +31,7 @@ object devicesMod {
   
   @JSImport("novnc-core/lib/input/devices", "Mouse")
   @js.native
-  class Mouse () extends StObject {
+  open class Mouse () extends StObject {
     def this(defaults: NvMouseDefaults) = this()
     
     def get_focused(): Boolean = js.native

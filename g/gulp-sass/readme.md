@@ -1,7 +1,7 @@
 
 # Scala.js typings for gulp-sass
 
-Typings are for version 4.0.2
+Typings are for version 5.0.0
 
 ## Library description:
 Gulp plugin for sass
@@ -10,10 +10,10 @@ Gulp plugin for sass
 | ------------------ | :-------------: |
 | Full name          | gulp-sass |
 | Keywords           | gulpplugin, sass, gulp |
-| # releases         | 3 |
-| # dependents       | 1514 |
-| # downloads        | 18758694 |
-| # stars            | 478 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1710724.0 |
+| # stars            | 1551.0 |
 
 ## Links
 - [Homepage](https://github.com/dlmanning/gulp-sass#readme)

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JQuery extends StObject {
   
-  def treeview(method: String, args: js.Any*): JQuery = js.native
+  def treeview(method: String, args: Any*): JQuery = js.native
   def treeview(options: BootstrapTreeViewOptions): JQuery = js.native
 }

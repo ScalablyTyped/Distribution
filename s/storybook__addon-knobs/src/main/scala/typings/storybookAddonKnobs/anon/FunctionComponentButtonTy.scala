@@ -1,6 +1,5 @@
 package typings.storybookAddonKnobs.anon
 
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import typings.storybookAddonKnobs.buttonMod.ButtonTypeProps
@@ -12,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionComponentButtonTy extends StObject {
   
-  def apply(props: PropsWithChildren[ButtonTypeProps]): ReactElement | Null = js.native
-  def apply(props: PropsWithChildren[ButtonTypeProps], context: js.Any): ReactElement | Null = js.native
+  def apply(props: ButtonTypeProps): ReactElement | Null = js.native
+  def apply(props: ButtonTypeProps, context: Any): ReactElement | Null = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
   var defaultProps: js.UndefOr[PartialButtonTypeProps] = js.native
   

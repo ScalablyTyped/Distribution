@@ -12,16 +12,16 @@ object my {
   
   @JSImport("nodal", "my.Config")
   @js.native
-  def Config: js.UndefOr[js.Any] = js.native
-  inline def Config_=(x: js.UndefOr[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Config")(x.asInstanceOf[js.Any])
+  def Config: js.UndefOr[Any] = js.native
+  inline def Config_=(x: js.UndefOr[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Config")(x.asInstanceOf[js.Any])
   
   @JSImport("nodal", "my.Schema")
   @js.native
-  def Schema: js.UndefOr[js.Any] = js.native
-  inline def Schema_=(x: js.UndefOr[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Schema")(x.asInstanceOf[js.Any])
+  def Schema: js.UndefOr[Any] = js.native
+  inline def Schema_=(x: js.UndefOr[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Schema")(x.asInstanceOf[js.Any])
   
   @JSImport("nodal", "my.bootstrapper")
   @js.native
-  def bootstrapper: js.UndefOr[js.Any] = js.native
-  inline def bootstrapper_=(x: js.UndefOr[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bootstrapper")(x.asInstanceOf[js.Any])
+  def bootstrapper: js.UndefOr[Any] = js.native
+  inline def bootstrapper_=(x: js.UndefOr[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bootstrapper")(x.asInstanceOf[js.Any])
 }

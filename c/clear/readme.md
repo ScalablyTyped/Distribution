@@ -10,10 +10,10 @@ Clear the terminal screen if possible
 | ------------------ | :-------------: |
 | Full name          | clear |
 | Keywords           | ansi, clear, terminal |
-| # releases         | 0 |
-| # dependents       | 1983 |
-| # downloads        | 1953091 |
-| # stars            | 18 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 250152.0 |
+| # stars            | 110.0 |
 
 ## Links
 - [Homepage](https://github.com/bahamas10/node-clear#readme)

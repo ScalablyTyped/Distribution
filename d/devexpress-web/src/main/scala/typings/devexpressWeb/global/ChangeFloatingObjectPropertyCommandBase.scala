@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFloatingObjectPropertyCommandBase")
 @js.native
-class ChangeFloatingObjectPropertyCommandBase[T] ()
+open class ChangeFloatingObjectPropertyCommandBase[T] ()
   extends StObject
      with typings.devexpressWeb.ChangeFloatingObjectPropertyCommandBase[T] {
   

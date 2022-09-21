@@ -42,6 +42,11 @@ trait MessageConfiguration extends StObject {
   var GCMMessage: js.UndefOr[Message] = js.undefined
   
   /**
+    * The in-app message configuration.
+    */
+  var InAppMessage: js.UndefOr[CampaignInAppMessage] = js.undefined
+  
+  /**
     * The message that the campaign sends through the SMS channel. If specified, this message overrides the default message.
     */
   var SMSMessage: js.UndefOr[CampaignSmsMessage] = js.undefined
@@ -82,6 +87,10 @@ object MessageConfiguration {
     inline def setGCMMessage(value: Message): Self = StObject.set(x, "GCMMessage", value.asInstanceOf[js.Any])
     
     inline def setGCMMessageUndefined: Self = StObject.set(x, "GCMMessage", js.undefined)
+    
+    inline def setInAppMessage(value: CampaignInAppMessage): Self = StObject.set(x, "InAppMessage", value.asInstanceOf[js.Any])
+    
+    inline def setInAppMessageUndefined: Self = StObject.set(x, "InAppMessage", js.undefined)
     
     inline def setSMSMessage(value: CampaignSmsMessage): Self = StObject.set(x, "SMSMessage", value.asInstanceOf[js.Any])
     

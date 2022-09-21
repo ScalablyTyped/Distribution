@@ -1,6 +1,5 @@
 package typings.unusedFilesWebpackPlugin
 
-import typings.std.Plugin
 import typings.unusedFilesWebpackPlugin.anon.Ignore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,11 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("unused-files-webpack-plugin", "UnusedFilesWebpackPlugin")
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("unused-files-webpack-plugin", "UnusedFilesWebpackPlugin")
   @js.native
-  class UnusedFilesWebpackPlugin protected ()
-    extends StObject
-       with Plugin {
+  open class UnusedFilesWebpackPlugin protected () extends StObject {
     def this(options: Options) = this()
   }
   
@@ -51,13 +49,13 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
       inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
       
-      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value*))
     }
   }
 }

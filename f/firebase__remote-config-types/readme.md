@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__remote-config-types
 
-Typings are for version 0.1.9
+Typings are for version 0.2.0
 
 ## Library description:
 @firebase/remote-config Types
@@ -10,10 +10,10 @@ Typings are for version 0.1.9
 | ------------------ | :-------------: |
 | Full name          | @firebase/remote-config-types |
 | Keywords           | - |
-| # releases         | 952 |
-| # dependents       | 2 |
-| # downloads        | 25158168 |
-| # stars            | 0 |
+| # releases         | 1155 |
+| # dependents       | 0.0 |
+| # downloads        | 4766891.0 |
+| # stars            | 4194.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

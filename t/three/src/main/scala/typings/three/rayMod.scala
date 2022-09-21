@@ -13,7 +13,7 @@ object rayMod {
   
   @JSImport("three/src/math/Ray", "Ray")
   @js.native
-  class Ray () extends StObject {
+  open class Ray () extends StObject {
     def this(origin: Vector3) = this()
     def this(origin: Unit, direction: Vector3) = this()
     def this(origin: Vector3, direction: Vector3) = this()
@@ -27,8 +27,8 @@ object rayMod {
     def copy(ray: Ray): this.type = js.native
     
     /**
-    	 * @default new THREE.Vector3( 0, 0, - 1 )
-    	 */
+      * @default new THREE.Vector3( 0, 0, - 1 )
+      */
     var direction: Vector3 = js.native
     
     def distanceSqToPoint(point: Vector3): Double = js.native
@@ -59,25 +59,25 @@ object rayMod {
     def intersectsSphere(sphere: Sphere): Boolean = js.native
     
     /**
-    	 * @deprecated Use {@link Ray#intersectsBox .intersectsBox()} instead.
-    	 */
-    def isIntersectionBox(b: js.Any): js.Any = js.native
+      * @deprecated Use {@link Ray#intersectsBox .intersectsBox()} instead.
+      */
+    def isIntersectionBox(b: Any): Any = js.native
     
     /**
-    	 * @deprecated Use {@link Ray#intersectsPlane .intersectsPlane()} instead.
-    	 */
-    def isIntersectionPlane(p: js.Any): js.Any = js.native
+      * @deprecated Use {@link Ray#intersectsPlane .intersectsPlane()} instead.
+      */
+    def isIntersectionPlane(p: Any): Any = js.native
     
     /**
-    	 * @deprecated Use {@link Ray#intersectsSphere .intersectsSphere()} instead.
-    	 */
-    def isIntersectionSphere(s: js.Any): js.Any = js.native
+      * @deprecated Use {@link Ray#intersectsSphere .intersectsSphere()} instead.
+      */
+    def isIntersectionSphere(s: Any): Any = js.native
     
     def lookAt(v: Vector3): Ray = js.native
     
     /**
-    	 * @default new THREE.Vector3()
-    	 */
+      * @default new THREE.Vector3()
+      */
     var origin: Vector3 = js.native
     
     def recast(t: Double): Ray = js.native

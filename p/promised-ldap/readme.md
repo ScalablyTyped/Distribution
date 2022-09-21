@@ -10,10 +10,10 @@ A thin wrapper over ldapjs to give a promise interface and a couple of other goo
 | ------------------ | :-------------: |
 | Full name          | promised-ldap |
 | Keywords           | ldap, promise, authentication |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 12217 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 893.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/stewartml/promised-ldap#readme)

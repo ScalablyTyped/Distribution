@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IArrayMetadata
   extends StObject
-     with /* item */ StringDictionary[js.Any] {
+     with /* item */ StringDictionary[Any] {
   
   var offset: js.UndefOr[Double] = js.undefined
   

@@ -10,7 +10,7 @@ trait ServerPolicy extends StObject {
   def apply(Index: String): PolicyItem = js.native
   def apply(Index: Double): PolicyItem = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val BlockPreview: Boolean = js.native
   
@@ -27,7 +27,7 @@ trait ServerPolicy extends StObject {
   
   val Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Statement: String = js.native
 }

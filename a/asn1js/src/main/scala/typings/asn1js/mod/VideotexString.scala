@@ -6,6 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("asn1js", "VideotexString")
 @js.native
-class VideotexString () extends LocalSimpleStringBlock {
-  def this(params: LocalSimpleStringBlockParams) = this()
+open class VideotexString ()
+  extends LocalSimpleStringBlock
+     with _AsnType {
+  def this(parameters: VideotexStringParams) = this()
+}
+object VideotexString {
+  
+  @JSImport("asn1js", "VideotexString")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("asn1js", "VideotexString.NAME")
+  @js.native
+  def NAME: String = js.native
+  inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
 }

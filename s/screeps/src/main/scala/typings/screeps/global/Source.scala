@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Source")
 @js.native
-class Source protected ()
+open class Source protected ()
   extends StObject
      with typings.screeps.Source {
   def this(id: Id[typings.screeps.Source]) = this()

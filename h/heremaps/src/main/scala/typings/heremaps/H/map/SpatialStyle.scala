@@ -150,7 +150,7 @@ object SpatialStyle {
       
       inline def setLineDashUndefined: Self = StObject.set(x, "lineDash", js.undefined)
       
-      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value*))
       
       inline def setLineJoin(value: LineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       

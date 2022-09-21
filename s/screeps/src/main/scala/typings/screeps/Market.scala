@@ -92,7 +92,7 @@ trait Market extends StObject {
     * @returns An array of objects with resource info.
     */
   def getHistory(): js.Array[PriceHistory] = js.native
-  def getHistory(resource: ResourceConstant): js.Array[PriceHistory] = js.native
+  def getHistory(resource: MarketResourceConstant): js.Array[PriceHistory] = js.native
   
   /**
     * Retrieve info for specific market order.

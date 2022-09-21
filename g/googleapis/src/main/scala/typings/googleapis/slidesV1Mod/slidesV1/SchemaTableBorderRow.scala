@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contents of each border row in a table.
-  */
 trait SchemaTableBorderRow extends StObject {
   
   /**
-    * Properties of each border cell. When a border&#39;s adjacent table cells
-    * are merged, it is not included in the response.
+    * Properties of each border cell. When a border's adjacent table cells are merged, it is not included in the response.
     */
   var tableBorderCells: js.UndefOr[js.Array[SchemaTableBorderCell]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaTableBorderRow {
     
     inline def setTableBorderCellsUndefined: Self = StObject.set(x, "tableBorderCells", js.undefined)
     
-    inline def setTableBorderCellsVarargs(value: SchemaTableBorderCell*): Self = StObject.set(x, "tableBorderCells", js.Array(value :_*))
+    inline def setTableBorderCellsVarargs(value: SchemaTableBorderCell*): Self = StObject.set(x, "tableBorderCells", js.Array(value*))
   }
 }

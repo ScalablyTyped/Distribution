@@ -25,12 +25,12 @@ object Quota {
     
     inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
-    inline def setLimitsVarargs(value: QuotaLimit*): Self = StObject.set(x, "limits", js.Array(value :_*))
+    inline def setLimitsVarargs(value: QuotaLimit*): Self = StObject.set(x, "limits", js.Array(value*))
     
     inline def setMetricRules(value: js.Array[MetricRule]): Self = StObject.set(x, "metricRules", value.asInstanceOf[js.Any])
     
     inline def setMetricRulesUndefined: Self = StObject.set(x, "metricRules", js.undefined)
     
-    inline def setMetricRulesVarargs(value: MetricRule*): Self = StObject.set(x, "metricRules", js.Array(value :_*))
+    inline def setMetricRulesVarargs(value: MetricRule*): Self = StObject.set(x, "metricRules", js.Array(value*))
   }
 }

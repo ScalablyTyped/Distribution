@@ -9,7 +9,7 @@ object shapeMod {
   
   @JSImport("@antv/component/lib/annotation/shape", JSImport.Default)
   @js.native
-  class default () extends ShapeAnnotation
+  open class default () extends ShapeAnnotation
   
   @js.native
   trait ShapeAnnotation

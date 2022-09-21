@@ -11,9 +11,9 @@ Browserify version of Switchery
 | Full name          | switchery |
 | Keywords           | switchery |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 98857 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6045.666666666667 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/antonamurskiy/switchery#readme)

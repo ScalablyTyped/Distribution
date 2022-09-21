@@ -1,6 +1,5 @@
 package typings.miniprogram
 
-import typings.miniprogram.anon.BarCode
 import typings.miniprogram.miniprogramStrings.bar
 import typings.miniprogram.miniprogramStrings.qr
 import org.scalablytyped.runtime.StObject
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ScanArgs
   extends StObject
-     with AsyncCallback[BarCode] {
+     with AsyncCallback[ScanCallbackValue] {
   
   /**
     * Hide album entry or not. If it is false, there will be an entry

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlImage")
 @js.native
-class MjmlImage protected ()
-  extends Component[MjmlImageProps & PaddingProps & ClassNameProps & HrefProps, js.Object, js.Any] {
+open class MjmlImage protected ()
+  extends Component[MjmlImageProps & PaddingProps & ClassNameProps & HrefProps, js.Object, Any] {
   def this(props: MjmlImageProps & PaddingProps & ClassNameProps & HrefProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MjmlImageProps & PaddingProps & ClassNameProps & HrefProps, context: js.Any) = this()
+  def this(props: MjmlImageProps & PaddingProps & ClassNameProps & HrefProps, context: Any) = this()
 }

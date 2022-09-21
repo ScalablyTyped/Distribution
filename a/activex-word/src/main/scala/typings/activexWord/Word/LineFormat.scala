@@ -37,7 +37,7 @@ trait LineFormat extends StObject {
   
   var InsetPen: MsoTriState
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Pattern: MsoPatternType
   
@@ -67,7 +67,7 @@ object LineFormat {
     EndArrowheadWidth: MsoArrowheadWidth,
     ForeColor: ColorFormat,
     InsetPen: MsoTriState,
-    Parent: js.Any,
+    Parent: Any,
     Pattern: MsoPatternType,
     Style: MsoLineStyle,
     Transparency: Double,
@@ -106,7 +106,7 @@ object LineFormat {
     
     inline def setInsetPen(value: MsoTriState): Self = StObject.set(x, "InsetPen", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPattern(value: MsoPatternType): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,6 @@
 package typings.tiffToPng
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.tiffToPng.tiffToPngBooleans.`true`
 import typings.tiffToPng.tiffToPngNumbers.`1`
 import typings.tiffToPng.tiffToPngNumbers.`2`
@@ -17,7 +16,7 @@ object mod {
   
   @JSImport("tiff-to-png", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with TiffConverter {
     def this(options: Options) = this()
@@ -29,9 +28,9 @@ object mod {
   /* static member */
   inline def call(command: String): js.Promise[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true`]]
   
-  inline def count(converted: js.Array[StringDictionary[js.Any]], key: String, value: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(converted.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def count(converted: js.Array[StringDictionary[Any]], key: String, value: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(converted.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   /* static member */
-  inline def count(converted: StringDictionary[js.Any], key: String, value: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(converted.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def count(converted: StringDictionary[Any], key: String, value: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(converted.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
   inline def createDir(target: String, filename: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDir")(target.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -60,11 +59,11 @@ object mod {
       
       inline def setConverted(value: js.Array[Converted]): Self = StObject.set(x, "converted", value.asInstanceOf[js.Any])
       
-      inline def setConvertedVarargs(value: Converted*): Self = StObject.set(x, "converted", js.Array(value :_*))
+      inline def setConvertedVarargs(value: Converted*): Self = StObject.set(x, "converted", js.Array(value*))
       
       inline def setErrors(value: js.Array[TiffConverterError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: TiffConverterError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: TiffConverterError*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
@@ -247,8 +246,8 @@ object mod {
     /** @default '' */
     var location: String = js.native
     
-    def onComplete(error: js.Array[Error], converted: js.Array[Converted], total: Double): js.Promise[Unit] = js.native
-    def onComplete(error: js.Array[Error], converted: Converted, total: Double): js.Promise[Unit] = js.native
+    def onComplete(error: js.Array[js.Error], converted: js.Array[Converted], total: Double): js.Promise[Unit] = js.native
+    def onComplete(error: js.Array[js.Error], converted: Converted, total: Double): js.Promise[Unit] = js.native
     
     /** @default {} */
     var options: Options = js.native
@@ -264,7 +263,7 @@ object mod {
   
   trait TiffConverterError extends StObject {
     
-    var error: Error
+    var error: js.Error
     
     val filename: String
     
@@ -274,14 +273,14 @@ object mod {
   }
   object TiffConverterError {
     
-    inline def apply(error: Error, filename: String, target: String, tiff: String): TiffConverterError = {
+    inline def apply(error: js.Error, filename: String, target: String, tiff: String): TiffConverterError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], tiff = tiff.asInstanceOf[js.Any])
       __obj.asInstanceOf[TiffConverterError]
     }
     
     extension [Self <: TiffConverterError](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

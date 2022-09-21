@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Mineral")
 @js.native
-class Mineral protected ()
+open class Mineral protected ()
   extends StObject
      with typings.screeps.Mineral[MineralConstant] {
   def this(id: Id[typings.screeps.Mineral[MineralConstant]]) = this()
@@ -51,12 +51,6 @@ class Mineral protected ()
     */
   /* CompleteClass */
   var pos: typings.screeps.RoomPosition = js.native
-  
-  /**
-    * The remaining time after which the deposit will be refilled.
-    */
-  /* CompleteClass */
-  var ticksToRegeneration: Double = js.native
 }
 object Mineral {
   

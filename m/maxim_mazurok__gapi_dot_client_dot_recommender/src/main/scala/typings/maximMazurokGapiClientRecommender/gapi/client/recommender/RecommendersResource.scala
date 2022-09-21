@@ -1,22 +1,23 @@
 package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
+import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientRecommender.anon.Accesstoken
+import typings.maximMazurokGapiClientRecommender.anon.Key
+import typings.maximMazurokGapiClientRecommender.anon.QuotaUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait RecommendersResource extends StObject {
   
-  var recommendations: RecommendationsResource
-}
-object RecommendersResource {
+  /** Gets the requested Recommender Config. There is only one instance of the config for each Recommender. */
+  def getConfig(): Request[GoogleCloudRecommenderV1RecommenderConfig] = js.native
+  def getConfig(request: Accesstoken): Request[GoogleCloudRecommenderV1RecommenderConfig] = js.native
   
-  inline def apply(recommendations: RecommendationsResource): RecommendersResource = {
-    val __obj = js.Dynamic.literal(recommendations = recommendations.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RecommendersResource]
-  }
+  var recommendations: RecommendationsResource = js.native
   
-  extension [Self <: RecommendersResource](x: Self) {
-    
-    inline def setRecommendations(value: RecommendationsResource): Self = StObject.set(x, "recommendations", value.asInstanceOf[js.Any])
-  }
+  def updateConfig(request: Key, body: GoogleCloudRecommenderV1RecommenderConfig): Request[GoogleCloudRecommenderV1RecommenderConfig] = js.native
+  /** Updates a Recommender Config. This will create a new revision of the config. */
+  def updateConfig(request: QuotaUser): Request[GoogleCloudRecommenderV1RecommenderConfig] = js.native
 }

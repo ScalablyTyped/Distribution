@@ -6,12 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCIceServer extends StObject {
   
-  var credential: js.UndefOr[java.lang.String | RTCOAuthCredential] = js.undefined
+  /* standard dom */
+  var credential: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var credentialType: js.UndefOr[RTCIceCredentialType] = js.undefined
   
+  /* standard dom */
   var urls: java.lang.String | js.Array[java.lang.String]
   
+  /* standard dom */
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCIceServer {
@@ -23,7 +27,7 @@ object RTCIceServer {
   
   extension [Self <: RTCIceServer](x: Self) {
     
-    inline def setCredential(value: java.lang.String | RTCOAuthCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: java.lang.String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
     inline def setCredentialType(value: RTCIceCredentialType): Self = StObject.set(x, "credentialType", value.asInstanceOf[js.Any])
     
@@ -33,7 +37,7 @@ object RTCIceServer {
     
     inline def setUrls(value: java.lang.String | js.Array[java.lang.String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    inline def setUrlsVarargs(value: java.lang.String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: java.lang.String*): Self = StObject.set(x, "urls", js.Array(value*))
     
     inline def setUsername(value: java.lang.String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     

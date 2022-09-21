@@ -17,5 +17,5 @@ trait SimpleRendererConstructor
 Instantiable0[SimpleRenderer]
      with Instantiable1[/* properties */ SimpleRendererProperties, SimpleRenderer] {
   
-  def fromJSON(json: js.Any): SimpleRenderer = js.native
+  def fromJSON(json: Any): SimpleRenderer = js.native
 }

@@ -14,7 +14,7 @@ object iterMod {
   
   @JSImport("@lumino/algorithm/types/iter", "ArrayIterator")
   @js.native
-  class ArrayIterator[T] protected ()
+  open class ArrayIterator[T] protected ()
     extends StObject
        with IIterator[T] {
     /**
@@ -24,9 +24,9 @@ object iterMod {
       */
     def this(source: ArrayLike[T]) = this()
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -63,7 +63,7 @@ object iterMod {
   
   @JSImport("@lumino/algorithm/types/iter", "FnIterator")
   @js.native
-  class FnIterator[T] protected ()
+  open class FnIterator[T] protected ()
     extends StObject
        with IIterator[T] {
     /**
@@ -73,7 +73,7 @@ object iterMod {
       */
     def this(fn: js.Function0[js.UndefOr[T]]) = this()
     
-    /* private */ var _fn: js.Any = js.native
+    /* private */ var _fn: Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -110,7 +110,7 @@ object iterMod {
   
   @JSImport("@lumino/algorithm/types/iter", "ItemIterator")
   @js.native
-  class ItemIterator[T] protected ()
+  open class ItemIterator[T] protected ()
     extends StObject
        with IIterator[js.Tuple2[String, T]] {
     /**
@@ -123,11 +123,11 @@ object iterMod {
     def this(source: StringDictionary[T]) = this()
     def this(source: StringDictionary[T], keys: js.Array[String]) = this()
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _keys: js.Any = js.native
+    /* private */ var _keys: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -164,7 +164,7 @@ object iterMod {
   
   @JSImport("@lumino/algorithm/types/iter", "KeyIterator")
   @js.native
-  class KeyIterator protected ()
+  open class KeyIterator protected ()
     extends StObject
        with IIterator[String] {
     /**
@@ -174,14 +174,14 @@ object iterMod {
       *
       * @param keys - The keys to iterate, if known.
       */
-    def this(source: StringDictionary[js.Any]) = this()
-    def this(source: StringDictionary[js.Any], keys: js.Array[String]) = this()
+    def this(source: StringDictionary[Any]) = this()
+    def this(source: StringDictionary[Any], keys: js.Array[String]) = this()
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _keys: js.Any = js.native
+    /* private */ var _keys: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -218,7 +218,7 @@ object iterMod {
   
   @JSImport("@lumino/algorithm/types/iter", "ValueIterator")
   @js.native
-  class ValueIterator[T] protected ()
+  open class ValueIterator[T] protected ()
     extends StObject
        with IIterator[T] {
     /**
@@ -231,11 +231,11 @@ object iterMod {
     def this(source: StringDictionary[T]) = this()
     def this(source: StringDictionary[T], keys: js.Array[String]) = this()
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _keys: js.Any = js.native
+    /* private */ var _keys: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.

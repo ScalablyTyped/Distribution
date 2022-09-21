@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCrosshairElement")
 @js.native
-class ASPxClientCrosshairElement ()
+open class ASPxClientCrosshairElement ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCrosshairElement {
   

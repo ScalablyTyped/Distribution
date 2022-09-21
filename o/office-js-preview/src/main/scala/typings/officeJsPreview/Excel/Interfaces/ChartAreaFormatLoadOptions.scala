@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties for the overall chart area.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartAreaFormatLoadOptions extends StObject {
@@ -19,33 +19,33 @@ trait ChartAreaFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the border format of chart area, which includes color, linestyle, and weight.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var border: js.UndefOr[ChartBorderLoadOptions] = js.undefined
   
   /**
-    *
     * Specifies the color scheme of the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var colorScheme: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the font attributes (font name, font size, color, etc.) for the current object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontLoadOptions] = js.undefined
   
   /**
-    *
     * Specifies if the chart area of the chart has rounded corners.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var roundedCorners: js.UndefOr[Boolean] = js.undefined

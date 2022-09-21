@@ -1,8 +1,8 @@
 package typings.reactBootstrap
 
 import typings.react.mod.Component
+import typings.react.mod.ElementType
 import typings.react.mod.HTMLProps
-import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,22 +11,20 @@ object tabContentMod {
   
   @JSImport("react-bootstrap/lib/TabContent", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[TabContentProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[TabContentProps, js.Object, Any]
   
-  @js.native
-  trait TabContent
-    extends Component[TabContentProps, js.Object, js.Any]
+  type TabContent = Component[TabContentProps, js.Object, Any]
   
   trait TabContentProps
     extends StObject
        with HTMLProps[TabContent] {
     
-    var animation: js.UndefOr[Boolean | ReactType[js.Any]] = js.undefined
+    var animation: js.UndefOr[Boolean | ElementType[Any]] = js.undefined
     
     var bsClass: js.UndefOr[String] = js.undefined
     
-    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var componentClass: js.UndefOr[ElementType[Any]] = js.undefined
     
     var mountOnEnter: js.UndefOr[Boolean] = js.undefined
     
@@ -41,7 +39,7 @@ object tabContentMod {
     
     extension [Self <: TabContentProps](x: Self) {
       
-      inline def setAnimation(value: Boolean | ReactType[js.Any]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Boolean | ElementType[Any]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
@@ -49,7 +47,7 @@ object tabContentMod {
       
       inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
       

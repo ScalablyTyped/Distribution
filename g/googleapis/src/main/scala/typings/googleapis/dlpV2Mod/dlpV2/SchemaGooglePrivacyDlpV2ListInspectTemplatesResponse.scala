@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for ListInspectTemplates.
-  */
 trait SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse extends StObject {
   var inspectTemplates: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InspectTemplate]] = js.undefined
   
   /**
-    * If the next page is available then the next page token to be used in
-    * following ListInspectTemplates request.
+    * If the next page is available then the next page token to be used in following ListInspectTemplates request.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse {
   
@@ -33,9 +29,11 @@ object SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse {
     
     inline def setInspectTemplatesUndefined: Self = StObject.set(x, "inspectTemplates", js.undefined)
     
-    inline def setInspectTemplatesVarargs(value: SchemaGooglePrivacyDlpV2InspectTemplate*): Self = StObject.set(x, "inspectTemplates", js.Array(value :_*))
+    inline def setInspectTemplatesVarargs(value: SchemaGooglePrivacyDlpV2InspectTemplate*): Self = StObject.set(x, "inspectTemplates", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

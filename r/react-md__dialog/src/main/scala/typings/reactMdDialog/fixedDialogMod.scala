@@ -26,6 +26,8 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
+import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -35,8 +37,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactMdDialog.anon.PickBaseFixedDialogPropsh
-import typings.reactMdDialog.anon.PickBaseFixedDialogPropshAbout
+import typings.reactMdDialog.anon.OmitHTMLAttributesHTMLSpa
 import typings.reactMdDialog.reactMdDialogStrings.`additions removals`
 import typings.reactMdDialog.reactMdDialogStrings.`additions text`
 import typings.reactMdDialog.reactMdDialogStrings.`inline`
@@ -93,13 +94,15 @@ import typings.reactMdDialog.reactMdDialogStrings.url
 import typings.reactMdDialog.reactMdDialogStrings.vertical
 import typings.reactMdDialog.reactMdDialogStrings.yes
 import typings.reactMdPortal.getContainerMod.PortalInto
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
+import typings.reactMdTransition.typesMod.TransitionEnterHandler
+import typings.reactMdTransition.typesMod.TransitionExitHandler
 import typings.reactMdTransition.typesMod.TransitionTimeout
-import typings.reactMdTransition.useFixedPositioningMod.FixedTo
-import typings.reactMdTransition.useFixedPositioningMod.GetFixedPositionOptions
-import typings.reactMdTransition.useFixedPositioningMod.OptionalFixedPositionOptions
-import typings.reactMdUtils.anon.PartialPositionAnchor
+import typings.reactMdUtils.positioningTypesMod.CalculateFixedPositionOptions
+import typings.reactMdUtils.positioningTypesMod.PositionAnchor
 import typings.reactMdUtils.typesTypesMod.LabelRequiredForA11y
 import typings.reactMdUtils.usePreviousFocusMod.FocusFallback
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -111,27 +114,27 @@ object fixedDialogMod {
   
   @JSImport("@react-md/dialog/types/FixedDialog", "FixedDialog")
   @js.native
-  val FixedDialog: ForwardRefExoticComponent[PickBaseFixedDialogPropsh | PickBaseFixedDialogPropshAbout] = js.native
+  val FixedDialog: ForwardRefExoticComponent[FixedDialogProps & RefAttributes[HTMLDivElement]] = js.native
   
   /* Inlined parent std.Omit<@react-md/dialog.@react-md/dialog/types/Dialog.BaseDialogProps, 'type'> */
-  /* Inlined parent std.Pick<@react-md/transition.@react-md/transition.OptionalFixedPositionOptions, 'anchor'> */
+  /* Inlined parent std.Pick<@react-md/utils.@react-md/utils.CalculateFixedPositionOptions, 'anchor'> */
   trait BaseFixedDialogProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var anchor: js.UndefOr[PartialPositionAnchor] = js.undefined
+    var anchor: js.UndefOr[PositionAnchor] = js.undefined
     
     var appear: js.UndefOr[Boolean] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -149,21 +152,21 @@ object fixedDialogMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -177,11 +180,11 @@ object fixedDialogMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -193,13 +196,13 @@ object fixedDialogMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -209,7 +212,7 @@ object fixedDialogMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -233,7 +236,7 @@ object fixedDialogMod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var classNames: js.UndefOr[js.Any] = js.undefined
+    var classNames: js.UndefOr[CSSTransitionClassNames] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
@@ -292,22 +295,20 @@ object fixedDialogMod {
       * - a function that returns an HTMLElement or null
       * - null
       */
-    var fixedTo: FixedTo
+    var fixedTo: RefObject[HTMLElement]
     
     var forceContainer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional function to call to get the fixed positioning options.
       */
-    var getOptions: js.UndefOr[GetFixedPositionOptions] = js.undefined
+    var getOptions: js.UndefOr[js.Function0[CalculateFixedPositionOptions]] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: String
     
-    var in: js.UndefOr[js.Any] = js.undefined
-    
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -326,8 +327,6 @@ object fixedDialogMod {
     var lang: js.UndefOr[String] = js.undefined
     
     var modal: js.UndefOr[Boolean] = js.undefined
-    
-    var mountOnEnter: js.UndefOr[js.Any] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -389,19 +388,19 @@ object fixedDialogMod {
     
     var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onEnter: js.UndefOr[js.Any] = js.undefined
+    var onEnter: js.UndefOr[TransitionEnterHandler] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.undefined
+    var onEntered: js.UndefOr[TransitionEnterHandler] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.undefined
+    var onEntering: js.UndefOr[TransitionEnterHandler] = js.undefined
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.undefined
+    var onExit: js.UndefOr[TransitionExitHandler] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.undefined
+    var onExited: js.UndefOr[TransitionExitHandler] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.undefined
+    var onExiting: js.UndefOr[TransitionExitHandler] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
@@ -505,13 +504,15 @@ object fixedDialogMod {
       * Any additional options to apply to the fixed positioning logic. The
       * `transformOrigin` option will be enabled by default.
       */
-    var options: js.UndefOr[OptionalFixedPositionOptions] = js.undefined
+    var options: js.UndefOr[CalculateFixedPositionOptions] = js.undefined
     
     var overlay: js.UndefOr[Boolean] = js.undefined
     
     var overlayClassName: js.UndefOr[String] = js.undefined
     
     var overlayHidden: js.UndefOr[Boolean] = js.undefined
+    
+    var overlayProps: js.UndefOr[OmitHTMLAttributesHTMLSpa] = js.undefined
     
     var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
@@ -549,6 +550,8 @@ object fixedDialogMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    var temporary: js.UndefOr[Boolean] = js.undefined
+    
     var timeout: js.UndefOr[TransitionTimeout] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
@@ -559,8 +562,6 @@ object fixedDialogMod {
     
     var unmountFocusFallback: js.UndefOr[FocusFallback] = js.undefined
     
-    var unmountOnExit: js.UndefOr[js.Any] = js.undefined
-    
     var unselectable: js.UndefOr[on | off] = js.undefined
     
     var visible: Boolean
@@ -569,8 +570,8 @@ object fixedDialogMod {
   }
   object BaseFixedDialogProps {
     
-    inline def apply(id: String, onRequestClose: () => Unit, visible: Boolean): BaseFixedDialogProps = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction0(onRequestClose), visible = visible.asInstanceOf[js.Any], fixedTo = null)
+    inline def apply(fixedTo: RefObject[HTMLElement], id: String, onRequestClose: () => Unit, visible: Boolean): BaseFixedDialogProps = {
+      val __obj = js.Dynamic.literal(fixedTo = fixedTo.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction0(onRequestClose), visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseFixedDialogProps]
     }
     
@@ -584,7 +585,7 @@ object fixedDialogMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAnchor(value: PartialPositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
       inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
@@ -596,7 +597,7 @@ object fixedDialogMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -604,7 +605,7 @@ object fixedDialogMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -640,7 +641,7 @@ object fixedDialogMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -652,7 +653,7 @@ object fixedDialogMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -660,7 +661,7 @@ object fixedDialogMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -668,7 +669,7 @@ object fixedDialogMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -696,15 +697,15 @@ object fixedDialogMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -728,7 +729,7 @@ object fixedDialogMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -738,7 +739,7 @@ object fixedDialogMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -758,7 +759,7 @@ object fixedDialogMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -806,7 +807,7 @@ object fixedDialogMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClassNames(value: js.Any): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
       inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
@@ -854,7 +855,7 @@ object fixedDialogMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -912,17 +913,13 @@ object fixedDialogMod {
       
       inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
       
-      inline def setFixedTo(value: FixedTo): Self = StObject.set(x, "fixedTo", value.asInstanceOf[js.Any])
-      
-      inline def setFixedToFunction0(value: () => HTMLElement | Null): Self = StObject.set(x, "fixedTo", js.Any.fromFunction0(value))
-      
-      inline def setFixedToNull: Self = StObject.set(x, "fixedTo", null)
+      inline def setFixedTo(value: RefObject[HTMLElement]): Self = StObject.set(x, "fixedTo", value.asInstanceOf[js.Any])
       
       inline def setForceContainer(value: Boolean): Self = StObject.set(x, "forceContainer", value.asInstanceOf[js.Any])
       
       inline def setForceContainerUndefined: Self = StObject.set(x, "forceContainer", js.undefined)
       
-      inline def setGetOptions(value: /* node */ HTMLElement => OptionalFixedPositionOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction1(value))
+      inline def setGetOptions(value: () => CalculateFixedPositionOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
       
       inline def setGetOptionsUndefined: Self = StObject.set(x, "getOptions", js.undefined)
       
@@ -932,11 +929,7 @@ object fixedDialogMod {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setIn(value: js.Any): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
-      
-      inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
-      
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -976,10 +969,6 @@ object fixedDialogMod {
       
       inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
-      inline def setMountOnEnter(value: js.Any): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
-      
-      inline def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
-      
       inline def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
       inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
@@ -1004,7 +993,7 @@ object fixedDialogMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1100,15 +1089,15 @@ object fixedDialogMod {
       
       inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      inline def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       
       inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      inline def setOnEntered(value: js.Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+      inline def setOnEntered(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
       
       inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
       
-      inline def setOnEntering(value: js.Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+      inline def setOnEntering(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
       
       inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
       
@@ -1116,19 +1105,19 @@ object fixedDialogMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnExit(value: js.Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+      inline def setOnExit(value: () => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction0(value))
       
       inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      inline def setOnExited(value: js.Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+      inline def setOnExited(value: () => Unit): Self = StObject.set(x, "onExited", js.Any.fromFunction0(value))
       
       inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
       
-      inline def setOnExiting(value: js.Any): Self = StObject.set(x, "onExiting", value.asInstanceOf[js.Any])
+      inline def setOnExiting(value: () => Unit): Self = StObject.set(x, "onExiting", js.Any.fromFunction0(value))
       
       inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1322,7 +1311,7 @@ object fixedDialogMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOptions(value: OptionalFixedPositionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: CalculateFixedPositionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -1335,6 +1324,10 @@ object fixedDialogMod {
       inline def setOverlayHidden(value: Boolean): Self = StObject.set(x, "overlayHidden", value.asInstanceOf[js.Any])
       
       inline def setOverlayHiddenUndefined: Self = StObject.set(x, "overlayHidden", js.undefined)
+      
+      inline def setOverlayProps(value: OmitHTMLAttributesHTMLSpa): Self = StObject.set(x, "overlayProps", value.asInstanceOf[js.Any])
+      
+      inline def setOverlayPropsUndefined: Self = StObject.set(x, "overlayProps", js.undefined)
       
       inline def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       
@@ -1414,6 +1407,10 @@ object fixedDialogMod {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
+      inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
+      
+      inline def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
+      
       inline def setTimeout(value: TransitionTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
@@ -1437,10 +1434,6 @@ object fixedDialogMod {
       inline def setUnmountFocusFallbackNull: Self = StObject.set(x, "unmountFocusFallback", null)
       
       inline def setUnmountFocusFallbackUndefined: Self = StObject.set(x, "unmountFocusFallback", js.undefined)
-      
-      inline def setUnmountOnExit(value: js.Any): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
-      
-      inline def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
       
       inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       

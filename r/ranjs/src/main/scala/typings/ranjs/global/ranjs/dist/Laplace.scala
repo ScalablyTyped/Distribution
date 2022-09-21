@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Laplace")
 @js.native
-class Laplace ()
+open class Laplace ()
   extends typings.ranjs.mod.dist.Laplace {
   def this(mu: Double) = this()
   def this(mu: Double, b: Double) = this()

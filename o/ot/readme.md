@@ -10,15 +10,12 @@ Collaborative editing using operational transformation
 | ------------------ | :-------------: |
 | Full name          | ot |
 | Keywords           | operational transformation |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 36392 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2958.3333333333335 |
+| # stars            | 1727.0 |
 
 ## Links
-- [Homepage](http://operational-transformation.github.com)
-- [Bugs](https://github.com/operational-transformation/ot.js/issues)
-- [Repository](https://github.com/operational-transformation/ot.js)
 - [Npm](https://www.npmjs.com/package/ot)
     
 

@@ -1,13 +1,12 @@
 package typings.web3CoreHelpers.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-core-helpers", "HttpProviderBase")
 @js.native
-class HttpProviderBase protected () extends StObject {
+open class HttpProviderBase protected () extends StObject {
   def this(host: String) = this()
   def this(host: String, options: HttpProviderOptions) = this()
   
@@ -19,7 +18,7 @@ class HttpProviderBase protected () extends StObject {
   
   def send(
     payload: JsonRpcPayload,
-    callback: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
+    callback: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
   ): Unit = js.native
   
   def supportsSubscriptions(): Boolean = js.native

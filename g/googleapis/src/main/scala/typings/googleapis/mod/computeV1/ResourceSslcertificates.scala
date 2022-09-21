@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "compute_v1.Resource$Sslcertificates")
 @js.native
-class ResourceSslcertificates protected ()
+open class ResourceSslcertificates protected ()
   extends typings.googleapis.computeV1Mod.computeV1.ResourceSslcertificates {
   def this(context: APIRequestContext) = this()
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.EdgesRenderer")
 @js.native
-class EdgesRenderer protected ()
+open class EdgesRenderer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.EdgesRenderer {
   /**
@@ -131,8 +131,8 @@ class EdgesRenderer protected ()
   var isEnabled: Boolean = js.native
   
   /**
-    * Checks wether or not the edges renderer is ready to render.
-    * @return true if ready, otherwise false.
+    * Checks whether or not the edges renderer is ready to render.
+    * @returns true if ready, otherwise false.
     */
   /* CompleteClass */
   override def isReady(): Boolean = js.native
@@ -150,8 +150,8 @@ object EdgesRenderer {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("BABYLON.EdgesRenderer.GetShader")
+  @JSGlobal("BABYLON.EdgesRenderer._GetShader")
   @js.native
-  def GetShader: js.Any = js.native
-  inline def GetShader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShader")(x.asInstanceOf[js.Any])
+  def _GetShader: Any = js.native
+  inline def _GetShader_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetShader")(x.asInstanceOf[js.Any])
 }

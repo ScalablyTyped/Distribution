@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ChangeToken")
 @js.native
-class ChangeToken ()
+open class ChangeToken ()
   extends StObject
      with typings.sharepoint.SP.ChangeToken {
   
   /* CompleteClass */
-  override def customFromJson(obj: js.Any): Boolean = js.native
+  override def customFromJson(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   override def customWriteToXml(
@@ -20,7 +20,7 @@ class ChangeToken ()
   ): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(obj: js.Any): Unit = js.native
+  override def fromJson(obj: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_stringValue(): String = js.native

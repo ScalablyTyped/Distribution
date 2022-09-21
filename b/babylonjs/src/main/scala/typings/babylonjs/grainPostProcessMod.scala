@@ -14,7 +14,7 @@ object grainPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/grainPostProcess", "GrainPostProcess")
   @js.native
-  class GrainPostProcess protected () extends PostProcess {
+  open class GrainPostProcess protected () extends PostProcess {
     /**
       * Creates a new instance of @see GrainPostProcess
       * @param name The name of the effect.
@@ -54,7 +54,13 @@ object grainPostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): GrainPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[GrainPostProcess]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): GrainPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[GrainPostProcess]
   }
 }

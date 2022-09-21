@@ -1,0 +1,154 @@
+package typings.firebaseFirestore.protosFirestoreProtoApiMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseFirestore.anon.Seconds
+import typings.firebaseFirestore.firebaseFirestoreStrings.NULL_VALUE
+import typings.firebaseFirestore.protosFirestoreProtoApiMod.^
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+inline def CompositeFilterOpEnum: ICompositeFilterOpEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("CompositeFilterOpEnum").asInstanceOf[ICompositeFilterOpEnum]
+
+inline def FieldFilterOpEnum: IFieldFilterOpEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("FieldFilterOpEnum").asInstanceOf[IFieldFilterOpEnum]
+
+inline def FieldTransformSetToServerValueEnum: IFieldTransformSetToServerValueEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("FieldTransformSetToServerValueEnum").asInstanceOf[IFieldTransformSetToServerValueEnum]
+
+inline def IndexFieldModeEnum: IIndexFieldModeEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("IndexFieldModeEnum").asInstanceOf[IIndexFieldModeEnum]
+
+inline def IndexStateEnum: IIndexStateEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("IndexStateEnum").asInstanceOf[IIndexStateEnum]
+
+inline def OrderDirectionEnum: IOrderDirectionEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("OrderDirectionEnum").asInstanceOf[IOrderDirectionEnum]
+
+inline def ProjectsDatabasesDocumentsApiClientAltEnum: IProjectsDatabasesDocumentsApiClientAltEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("ProjectsDatabasesDocumentsApiClientAltEnum").asInstanceOf[IProjectsDatabasesDocumentsApiClientAltEnum]
+
+inline def ProjectsDatabasesDocumentsApiClientXgafvEnum: IProjectsDatabasesDocumentsApiClientXgafvEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("ProjectsDatabasesDocumentsApiClient$XgafvEnum").asInstanceOf[IProjectsDatabasesDocumentsApiClientXgafvEnum]
+
+inline def ProjectsDatabasesIndexesApiClientAltEnum: IProjectsDatabasesIndexesApiClientAltEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("ProjectsDatabasesIndexesApiClientAltEnum").asInstanceOf[IProjectsDatabasesIndexesApiClientAltEnum]
+
+inline def ProjectsDatabasesIndexesApiClientXgafvEnum: IProjectsDatabasesIndexesApiClientXgafvEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("ProjectsDatabasesIndexesApiClient$XgafvEnum").asInstanceOf[IProjectsDatabasesIndexesApiClientXgafvEnum]
+
+inline def TargetChangeTargetChangeTypeEnum: ITargetChangeTargetChangeTypeEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("TargetChangeTargetChangeTypeEnum").asInstanceOf[ITargetChangeTargetChangeTypeEnum]
+
+inline def UnaryFilterOpEnum: IUnaryFilterOpEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("UnaryFilterOpEnum").asInstanceOf[IUnaryFilterOpEnum]
+
+inline def ValueNullValueEnum: IValueNullValueEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("ValueNullValueEnum").asInstanceOf[IValueNullValueEnum]
+
+type ApiClientHookFactory = Any
+
+type ApiClientObjectMap[T] = StringDictionary[T]
+
+type ArrayValue = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.ArrayValue
+
+type BatchGetDocumentsRequest = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.BatchGetDocumentsRequest
+
+type BatchGetDocumentsResponse = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.BatchGetDocumentsResponse
+
+type BeginTransactionRequest = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.BeginTransactionRequest
+
+type BeginTransactionResponse = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.BeginTransactionResponse
+
+type CollectionSelector = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.CollectionSelector
+
+type CommitRequest = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.CommitRequest
+
+type CommitResponse = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.CommitResponse
+
+type CompositeFilter = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.CompositeFilter
+
+type Cursor = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Cursor
+
+type Document = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Document
+
+type DocumentChange = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentChange
+
+type DocumentDelete = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentDelete
+
+type DocumentMask = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentMask
+
+type DocumentRemove = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentRemove
+
+type DocumentTransform = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentTransform
+
+type DocumentsTarget = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentsTarget
+
+type Empty = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Empty
+
+type ExistenceFilter = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.ExistenceFilter
+
+type FieldFilter = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.FieldFilter
+
+type FieldReference = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.FieldReference
+
+type FieldTransform = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.FieldTransform
+
+type Filter = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Filter
+
+type Index = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Index
+
+type IndexField = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.IndexField
+
+type LatLng = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.LatLng
+
+type ListCollectionIdsRequest = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListCollectionIdsRequest
+
+type ListCollectionIdsResponse = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListCollectionIdsResponse
+
+type ListDocumentsResponse = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListDocumentsResponse
+
+type ListIndexesResponse = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListIndexesResponse
+
+type ListenRequest = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListenRequest
+
+type ListenResponse = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListenResponse
+
+type MapValue = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.MapValue
+
+type Operation = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Operation
+
+type Order = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Order
+
+type Precondition = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Precondition
+
+type Projection = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Projection
+
+type PromiseRequestService = Any
+
+type QueryTarget = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.QueryTarget
+
+type ReadOnly = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.ReadOnly
+
+type ReadWrite = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.ReadWrite
+
+type RollbackRequest = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.RollbackRequest
+
+type RunQueryRequest = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.RunQueryRequest
+
+type RunQueryResponse = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.RunQueryResponse
+
+type Status = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Status
+
+type StructuredQuery = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.StructuredQuery
+
+type Target = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Target
+
+type TargetChange = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.TargetChange
+
+type Timestamp = String | Seconds
+
+type TransactionOptions = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.TransactionOptions
+
+type UnaryFilter = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.UnaryFilter
+
+type Value = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Value
+
+type ValueNullValue = NULL_VALUE
+
+type Write = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Write
+
+type WriteRequest = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.WriteRequest
+
+type WriteResponse = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.WriteResponse
+
+type WriteResult = typings.firebaseFirestore.protosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.WriteResult

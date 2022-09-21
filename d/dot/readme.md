@@ -10,10 +10,10 @@ Concise and fast javascript templating compatible with nodejs and other javascri
 | ------------------ | :-------------: |
 | Full name          | dot |
 | Keywords           | template, fast, simple, templating |
-| # releases         | 3 |
-| # dependents       | 399 |
-| # downloads        | 13547271 |
-| # stars            | 17 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1689750.0 |
+| # stars            | 4816.0 |
 
 ## Links
 - [Homepage](http://github.com/olado/doT)

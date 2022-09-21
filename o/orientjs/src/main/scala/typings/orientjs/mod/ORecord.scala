@@ -1,6 +1,6 @@
 package typings.orientjs.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.orientjs.orientjsStrings.b
 import typings.orientjs.orientjsStrings.d
 import typings.std.Object
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "ORecord")
 @js.native
-class ORecord ()
+open class ORecord ()
   extends StObject
      with Object {
   
@@ -24,6 +24,7 @@ class ORecord ()
   var `@version`: js.UndefOr[Version] = js.native
   
   /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+  /* standard es5 */
   /* CompleteClass */
   var constructor: js.Function = js.native
   
@@ -35,7 +36,7 @@ class ORecord ()
     * @promise {Object}        The inserted record.
     */
   def create(record: ODocument | ORecord): js.Promise[ORecord] = js.native
-  def create(record: ODocument | ORecord, options: js.Any): js.Promise[ORecord] = js.native
+  def create(record: ODocument | ORecord, options: Any): js.Promise[ORecord] = js.native
   /**
     * Insert the given record into the database.
     *
@@ -44,13 +45,13 @@ class ORecord ()
     * @promise {Object}        The inserted record.
     */
   def create(records: js.Array[BinaryRecord | ODocument | ORecord]): js.Promise[js.Array[ORecord]] = js.native
-  def create(records: js.Array[BinaryRecord | ODocument | ORecord], options: js.Any): js.Promise[js.Array[ORecord]] = js.native
+  def create(records: js.Array[BinaryRecord | ODocument | ORecord], options: Any): js.Promise[js.Array[ORecord]] = js.native
   def create(record: BinaryRecord): js.Promise[ORecord] = js.native
-  def create(record: BinaryRecord, options: js.Any): js.Promise[ORecord] = js.native
+  def create(record: BinaryRecord, options: Any): js.Promise[ORecord] = js.native
   
   def delete(): js.Promise[ORecord] = js.native
   def delete(record: ORID): js.Promise[ORecord] = js.native
-  def delete(record: ORID, options: js.Any): js.Promise[ORecord] = js.native
+  def delete(record: ORID, options: Any): js.Promise[ORecord] = js.native
   /**
     * Delete the given record.
     *
@@ -59,7 +60,7 @@ class ORecord ()
     * @promise {Object}                    The deleted record object.
     */
   def delete(record: ORecord): js.Promise[ORecord] = js.native
-  def delete(record: ORecord, options: js.Any): js.Promise[ORecord] = js.native
+  def delete(record: ORecord, options: Any): js.Promise[ORecord] = js.native
   
   /**
     * Read the given record.
@@ -69,9 +70,9 @@ class ORecord ()
     * @promise {Object[]}        The loaded record.
     */
   def get(records: js.Array[ORID | ORecord]): js.Promise[js.Array[Buffer | ORecord]] = js.native
-  def get(records: js.Array[ORID | ORecord], options: js.Any): js.Promise[js.Array[Buffer | ORecord]] = js.native
+  def get(records: js.Array[ORID | ORecord], options: Any): js.Promise[js.Array[Buffer | ORecord]] = js.native
   def get(record: ORID): js.Promise[ORecord | Buffer] = js.native
-  def get(record: ORID, options: js.Any): js.Promise[ORecord | Buffer] = js.native
+  def get(record: ORID, options: Any): js.Promise[ORecord | Buffer] = js.native
   /**
     * Read the given record.
     *
@@ -80,17 +81,18 @@ class ORecord ()
     * @promise {Object}        The loaded record.
     */
   def get(record: ORecord): js.Promise[ORecord | Buffer] = js.native
-  def get(record: ORecord, options: js.Any): js.Promise[ORecord | Buffer] = js.native
+  def get(record: ORecord, options: Any): js.Promise[ORecord | Buffer] = js.native
   
   /**
     * Determines whether an object has a property with the specified name.
     * @param v A property name.
     */
+  /* standard es5 */
   /* CompleteClass */
   override def hasOwnProperty(v: PropertyKey): Boolean = js.native
   
   def meta(record: String): js.Promise[RecordMeta] = js.native
-  def meta(record: String, options: js.Any): js.Promise[RecordMeta] = js.native
+  def meta(record: String, options: Any): js.Promise[RecordMeta] = js.native
   /**
     * Read the metadata for the given record.
     *
@@ -99,9 +101,9 @@ class ORecord ()
     * @promise {Object}        The record object with loaded meta data.
     */
   def meta(records: js.Array[ORID | ORecord]): js.Promise[js.Array[RecordMeta]] = js.native
-  def meta(records: js.Array[ORID | ORecord], options: js.Any): js.Promise[js.Array[RecordMeta]] = js.native
+  def meta(records: js.Array[ORID | ORecord], options: Any): js.Promise[js.Array[RecordMeta]] = js.native
   def meta(record: ORID): js.Promise[RecordMeta] = js.native
-  def meta(record: ORID, options: js.Any): js.Promise[RecordMeta] = js.native
+  def meta(record: ORID, options: Any): js.Promise[RecordMeta] = js.native
   /**
     * Read the metadata for the given record.
     *
@@ -110,12 +112,13 @@ class ORecord ()
     * @promise {Object}        The record object with loaded meta data.
     */
   def meta(record: ORecord): js.Promise[RecordMeta] = js.native
-  def meta(record: ORecord, options: js.Any): js.Promise[RecordMeta] = js.native
+  def meta(record: ORecord, options: Any): js.Promise[RecordMeta] = js.native
   
   /**
     * Determines whether a specified property is enumerable.
     * @param v A property name.
     */
+  /* standard es5 */
   /* CompleteClass */
   override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   
@@ -137,9 +140,9 @@ class ORecord ()
     * @promise {Object}        The updated record.
     */
   def update(): js.Promise[ORecord] = js.native
-  def update(record: Unit, options: js.Any): js.Promise[ORecord] = js.native
+  def update(record: Unit, options: Any): js.Promise[ORecord] = js.native
   def update(record: ORID): js.Promise[ORecord] = js.native
-  def update(record: ORID, options: js.Any): js.Promise[ORecord] = js.native
+  def update(record: ORID, options: Any): js.Promise[ORecord] = js.native
   def update(record: ORecord): js.Promise[ORecord] = js.native
-  def update(record: ORecord, options: js.Any): js.Promise[ORecord] = js.native
+  def update(record: ORecord, options: Any): js.Promise[ORecord] = js.native
 }

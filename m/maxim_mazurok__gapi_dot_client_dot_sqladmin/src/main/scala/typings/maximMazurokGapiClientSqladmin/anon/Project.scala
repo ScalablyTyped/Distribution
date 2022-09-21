@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSqladmin.anon
 
-import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.InstancesExportRequest
+import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.InstancesCloneRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ trait Project extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Cloud SQL instance ID. This does not include the project ID. */
+  /** The ID of the Cloud SQL instance to be cloned (source). This does not include the project ID. */
   var instance: String
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -35,14 +35,14 @@ trait Project extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Project ID of the project that contains the instance to be exported. */
+  /** Project ID of the source as well as the clone Cloud SQL instance. */
   var project: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: InstancesExportRequest
+  var resource: InstancesCloneRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait Project extends StObject {
 }
 object Project {
   
-  inline def apply(instance: String, project: String, resource: InstancesExportRequest): Project = {
+  inline def apply(instance: String, project: String, resource: InstancesCloneRequest): Project = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Project]
   }
@@ -99,7 +99,7 @@ object Project {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: InstancesExportRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: InstancesCloneRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

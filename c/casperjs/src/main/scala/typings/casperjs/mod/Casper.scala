@@ -4,14 +4,13 @@ import typings.casperjs.anon.Url
 import typings.casperjs.casperjsBooleans.`false`
 import typings.casperjs.casperjsBooleans.`true`
 import typings.phantomjs.ClipRect
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("casperjs", "Casper")
 @js.native
-class Casper protected () extends StObject {
+open class Casper protected () extends StObject {
   def this(options: CasperOptions) = this()
   
   // Properties
@@ -22,8 +21,8 @@ class Casper protected () extends StObject {
   
   def base64encode(url: String): String = js.native
   def base64encode(url: String, method: String): String = js.native
-  def base64encode(url: String, method: String, data: js.Any): String = js.native
-  def base64encode(url: String, method: Unit, data: js.Any): String = js.native
+  def base64encode(url: String, method: String, data: Any): String = js.native
+  def base64encode(url: String, method: Unit, data: Any): String = js.native
   
   def bypass(nb: Double): Casper = js.native
   
@@ -71,26 +70,26 @@ class Casper protected () extends StObject {
   
   def download(url: String, target: String): Casper = js.native
   def download(url: String, target: String, method: String): Casper = js.native
-  def download(url: String, target: String, method: String, data: js.Any): Casper = js.native
-  def download(url: String, target: String, method: Unit, data: js.Any): Casper = js.native
+  def download(url: String, target: String, method: String, data: Any): Casper = js.native
+  def download(url: String, target: String, method: Unit, data: Any): Casper = js.native
   
   def each[T](
     array: js.Array[T],
     fn: js.ThisFunction2[/* this */ this.type, /* item */ T, /* index */ Double, Unit]
   ): Casper = js.native
   
-  def eachThen(array: js.Array[js.Any]): Casper = js.native
-  def eachThen(array: js.Array[js.Any], `then`: FunctionThen): Casper = js.native
+  def eachThen(array: js.Array[Any]): Casper = js.native
+  def eachThen(array: js.Array[Any], `then`: FunctionThen): Casper = js.native
   
   def echo(message: String): Casper = js.native
   def echo(message: String, style: String): Casper = js.native
   
-  def evaluate[T](fn: js.Function1[/* repeated */ js.Any, T], args: js.Any*): T = js.native
+  def evaluate[T](fn: js.Function1[/* repeated */ Any, T], args: Any*): T = js.native
   
-  def evaluateOrDie(fn: js.Function0[js.Any]): Casper = js.native
-  def evaluateOrDie(fn: js.Function0[js.Any], message: String): Casper = js.native
-  def evaluateOrDie(fn: js.Function0[js.Any], message: String, status: Double): Casper = js.native
-  def evaluateOrDie(fn: js.Function0[js.Any], message: Unit, status: Double): Casper = js.native
+  def evaluateOrDie(fn: js.Function0[Any]): Casper = js.native
+  def evaluateOrDie(fn: js.Function0[Any], message: String): Casper = js.native
+  def evaluateOrDie(fn: js.Function0[Any], message: String, status: Double): Casper = js.native
+  def evaluateOrDie(fn: js.Function0[Any], message: Unit, status: Double): Casper = js.native
   
   def exists(selector: String): Boolean = js.native
   
@@ -99,14 +98,14 @@ class Casper protected () extends StObject {
   
   def fetchText(selector: String): String = js.native
   
-  def fill(selector: String, values: js.Any): Unit = js.native
-  def fill(selector: String, values: js.Any, submit: Boolean): Unit = js.native
+  def fill(selector: String, values: Any): Unit = js.native
+  def fill(selector: String, values: Any, submit: Boolean): Unit = js.native
   
-  def fillSelectors(selector: String, values: js.Any): Unit = js.native
-  def fillSelectors(selector: String, values: js.Any, submit: Boolean): Unit = js.native
+  def fillSelectors(selector: String, values: Any): Unit = js.native
+  def fillSelectors(selector: String, values: Any, submit: Boolean): Unit = js.native
   
-  def fillXPath(selector: String, values: js.Any): Unit = js.native
-  def fillXPath(selector: String, values: js.Any, submit: Boolean): Unit = js.native
+  def fillXPath(selector: String, values: Any): Unit = js.native
+  def fillXPath(selector: String, values: Any, submit: Boolean): Unit = js.native
   
   def forward(): Casper = js.native
   
@@ -125,9 +124,9 @@ class Casper protected () extends StObject {
   
   def getElementsInfo(selector: String): ElementInfo = js.native
   
-  def getFormValues(selector: String): js.Any = js.native
+  def getFormValues(selector: String): Any = js.native
   
-  def getGlobal(name: String): js.Any = js.native
+  def getGlobal(name: String): Any = js.native
   
   def getHTML(): String = js.native
   def getHTML(selector: String): String = js.native
@@ -153,7 +152,7 @@ class Casper protected () extends StObject {
   def mouseEvent(`type`: String, selector: String, X: Unit, Y: String): Boolean = js.native
   def mouseEvent(`type`: String, selector: String, X: Unit, Y: Double): Boolean = js.native
   
-  def newPage(): js.Any = js.native
+  def newPage(): Any = js.native
   
   def open(location: String, settings: OpenSettings): Casper = js.native
   
@@ -166,7 +165,7 @@ class Casper protected () extends StObject {
   
   def resourceExists(test: String): Boolean = js.native
   def resourceExists(test: js.Function): Boolean = js.native
-  def resourceExists(test: RegExp): Boolean = js.native
+  def resourceExists(test: js.RegExp): Boolean = js.native
   
   def run(): Casper = js.native
   def run(onComplete: js.Function): Casper = js.native
@@ -208,14 +207,14 @@ class Casper protected () extends StObject {
   
   def thenBypass(nb: Double): Casper = js.native
   
-  def thenBypassIf(condition: js.Any, nb: Double): Casper = js.native
+  def thenBypassIf(condition: Any, nb: Double): Casper = js.native
   
-  def thenBypassUnless(condition: js.Any, nb: Double): Casper = js.native
+  def thenBypassUnless(condition: Any, nb: Double): Casper = js.native
   
   def thenClick(selector: String): Casper = js.native
   def thenClick(selector: String, `then`: FunctionThen): Casper = js.native
   
-  def thenEvaluate(fn: js.Function0[js.Any], args: js.Any*): Casper = js.native
+  def thenEvaluate(fn: js.Function0[Any], args: Any*): Casper = js.native
   
   def thenOpen(location: String): Casper = js.native
   def thenOpen(location: String, options: Unit, `then`: js.Function1[/* response */ HttpResponse, Unit]): Casper = js.native
@@ -223,8 +222,8 @@ class Casper protected () extends StObject {
   def thenOpen(location: String, options: OpenSettings, `then`: js.Function1[/* response */ HttpResponse, Unit]): Casper = js.native
   def thenOpen(location: String, `then`: js.Function1[/* response */ HttpResponse, Unit]): Casper = js.native
   
-  def thenOpenAndEvaluate(location: String, `then`: Unit, args: js.Any*): Casper = js.native
-  def thenOpenAndEvaluate(location: String, `then`: FunctionThen, args: js.Any*): Casper = js.native
+  def thenOpenAndEvaluate(location: String, `then`: Unit, args: Any*): Casper = js.native
+  def thenOpenAndEvaluate(location: String, `then`: FunctionThen, args: Any*): Casper = js.native
   
   def unwait(): Casper = js.native
   
@@ -241,16 +240,16 @@ class Casper protected () extends StObject {
   
   def waitFor(testFx: js.Function): Casper = js.native
   def waitFor(testFx: js.Function, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
-  def waitFor(testFx: js.Function, `then`: Unit, onTimeout: Unit, timeout: Double, details: js.Any): Casper = js.native
-  def waitFor(testFx: js.Function, `then`: Unit, onTimeout: Unit, timeout: Unit, details: js.Any): Casper = js.native
+  def waitFor(testFx: js.Function, `then`: Unit, onTimeout: Unit, timeout: Double, details: Any): Casper = js.native
+  def waitFor(testFx: js.Function, `then`: Unit, onTimeout: Unit, timeout: Unit, details: Any): Casper = js.native
   def waitFor(testFx: js.Function, `then`: Unit, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitFor(testFx: js.Function, `then`: Unit, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
-  def waitFor(testFx: js.Function, `then`: Unit, onTimeout: FunctionOnTimeout, timeout: Double, details: js.Any): Casper = js.native
-  def waitFor(testFx: js.Function, `then`: Unit, onTimeout: FunctionOnTimeout, timeout: Unit, details: js.Any): Casper = js.native
+  def waitFor(testFx: js.Function, `then`: Unit, onTimeout: FunctionOnTimeout, timeout: Double, details: Any): Casper = js.native
+  def waitFor(testFx: js.Function, `then`: Unit, onTimeout: FunctionOnTimeout, timeout: Unit, details: Any): Casper = js.native
   def waitFor(testFx: js.Function, `then`: FunctionThen): Casper = js.native
   def waitFor(testFx: js.Function, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
-  def waitFor(testFx: js.Function, `then`: FunctionThen, onTimeout: Unit, timeout: Double, details: js.Any): Casper = js.native
-  def waitFor(testFx: js.Function, `then`: FunctionThen, onTimeout: Unit, timeout: Unit, details: js.Any): Casper = js.native
+  def waitFor(testFx: js.Function, `then`: FunctionThen, onTimeout: Unit, timeout: Double, details: Any): Casper = js.native
+  def waitFor(testFx: js.Function, `then`: FunctionThen, onTimeout: Unit, timeout: Unit, details: Any): Casper = js.native
   def waitFor(testFx: js.Function, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitFor(testFx: js.Function, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   def waitFor(
@@ -258,14 +257,14 @@ class Casper protected () extends StObject {
     `then`: FunctionThen,
     onTimeout: FunctionOnTimeout,
     timeout: Double,
-    details: js.Any
+    details: Any
   ): Casper = js.native
   def waitFor(
     testFx: js.Function,
     `then`: FunctionThen,
     onTimeout: FunctionOnTimeout,
     timeout: Unit,
-    details: js.Any
+    details: Any
   ): Casper = js.native
   
   def waitForAlert(`then`: FunctionThen): Casper = js.native
@@ -328,6 +327,14 @@ class Casper protected () extends StObject {
   def waitForPopup(urlPattern: String, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
   def waitForPopup(urlPattern: String, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: String, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
+  def waitForPopup(urlPattern: js.RegExp): Casper = js.native
+  def waitForPopup(urlPattern: js.RegExp, `then`: Unit, onTimeout: js.Function): Casper = js.native
+  def waitForPopup(urlPattern: js.RegExp, `then`: Unit, onTimeout: js.Function, timeout: Double): Casper = js.native
+  def waitForPopup(urlPattern: js.RegExp, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
+  def waitForPopup(urlPattern: js.RegExp, `then`: FunctionThen): Casper = js.native
+  def waitForPopup(urlPattern: js.RegExp, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
+  def waitForPopup(urlPattern: js.RegExp, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
+  def waitForPopup(urlPattern: js.RegExp, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: Double): Casper = js.native
   def waitForPopup(urlPattern: Double, `then`: Unit, onTimeout: js.Function): Casper = js.native
   def waitForPopup(urlPattern: Double, `then`: Unit, onTimeout: js.Function, timeout: Double): Casper = js.native
@@ -344,14 +351,6 @@ class Casper protected () extends StObject {
   def waitForPopup(urlPattern: FindByUrlNameTitle, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
   def waitForPopup(urlPattern: FindByUrlNameTitle, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
   def waitForPopup(urlPattern: FindByUrlNameTitle, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
-  def waitForPopup(urlPattern: RegExp): Casper = js.native
-  def waitForPopup(urlPattern: RegExp, `then`: Unit, onTimeout: js.Function): Casper = js.native
-  def waitForPopup(urlPattern: RegExp, `then`: Unit, onTimeout: js.Function, timeout: Double): Casper = js.native
-  def waitForPopup(urlPattern: RegExp, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
-  def waitForPopup(urlPattern: RegExp, `then`: FunctionThen): Casper = js.native
-  def waitForPopup(urlPattern: RegExp, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
-  def waitForPopup(urlPattern: RegExp, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
-  def waitForPopup(urlPattern: RegExp, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
   
   def waitForResource(testFx: String): Casper = js.native
   def waitForResource(testFx: String, `then`: Unit, onTimeout: js.Function): Casper = js.native
@@ -384,14 +383,14 @@ class Casper protected () extends StObject {
     onTimeout: Unit,
     timeout: Double
   ): Casper = js.native
-  def waitForResource(testFx: RegExp): Casper = js.native
-  def waitForResource(testFx: RegExp, `then`: Unit, onTimeout: js.Function): Casper = js.native
-  def waitForResource(testFx: RegExp, `then`: Unit, onTimeout: js.Function, timeout: Double): Casper = js.native
-  def waitForResource(testFx: RegExp, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
-  def waitForResource(testFx: RegExp, `then`: FunctionThen): Casper = js.native
-  def waitForResource(testFx: RegExp, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
-  def waitForResource(testFx: RegExp, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
-  def waitForResource(testFx: RegExp, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
+  def waitForResource(testFx: js.RegExp): Casper = js.native
+  def waitForResource(testFx: js.RegExp, `then`: Unit, onTimeout: js.Function): Casper = js.native
+  def waitForResource(testFx: js.RegExp, `then`: Unit, onTimeout: js.Function, timeout: Double): Casper = js.native
+  def waitForResource(testFx: js.RegExp, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
+  def waitForResource(testFx: js.RegExp, `then`: FunctionThen): Casper = js.native
+  def waitForResource(testFx: js.RegExp, `then`: FunctionThen, onTimeout: js.Function): Casper = js.native
+  def waitForResource(testFx: js.RegExp, `then`: FunctionThen, onTimeout: js.Function, timeout: Double): Casper = js.native
+  def waitForResource(testFx: js.RegExp, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
   
   def waitForSelector(selector: String): Casper = js.native
   def waitForSelector(selector: String, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
@@ -419,14 +418,14 @@ class Casper protected () extends StObject {
   def waitForText(pattern: String, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
   def waitForText(pattern: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForText(pattern: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
-  def waitForText(pattern: RegExp): Casper = js.native
-  def waitForText(pattern: RegExp, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
-  def waitForText(pattern: RegExp, `then`: Unit, onTimeout: FunctionOnTimeout): Casper = js.native
-  def waitForText(pattern: RegExp, `then`: Unit, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
-  def waitForText(pattern: RegExp, `then`: FunctionThen): Casper = js.native
-  def waitForText(pattern: RegExp, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
-  def waitForText(pattern: RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
-  def waitForText(pattern: RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
+  def waitForText(pattern: js.RegExp): Casper = js.native
+  def waitForText(pattern: js.RegExp, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
+  def waitForText(pattern: js.RegExp, `then`: Unit, onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitForText(pattern: js.RegExp, `then`: Unit, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
+  def waitForText(pattern: js.RegExp, `then`: FunctionThen): Casper = js.native
+  def waitForText(pattern: js.RegExp, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
+  def waitForText(pattern: js.RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitForText(pattern: js.RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   
   def waitForUrl(url: String): Casper = js.native
   def waitForUrl(url: String, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
@@ -436,14 +435,14 @@ class Casper protected () extends StObject {
   def waitForUrl(url: String, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
   def waitForUrl(url: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
   def waitForUrl(url: String, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
-  def waitForUrl(url: RegExp): Casper = js.native
-  def waitForUrl(url: RegExp, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
-  def waitForUrl(url: RegExp, `then`: Unit, onTimeout: FunctionOnTimeout): Casper = js.native
-  def waitForUrl(url: RegExp, `then`: Unit, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
-  def waitForUrl(url: RegExp, `then`: FunctionThen): Casper = js.native
-  def waitForUrl(url: RegExp, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
-  def waitForUrl(url: RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
-  def waitForUrl(url: RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
+  def waitForUrl(url: js.RegExp): Casper = js.native
+  def waitForUrl(url: js.RegExp, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
+  def waitForUrl(url: js.RegExp, `then`: Unit, onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitForUrl(url: js.RegExp, `then`: Unit, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
+  def waitForUrl(url: js.RegExp, `then`: FunctionThen): Casper = js.native
+  def waitForUrl(url: js.RegExp, `then`: FunctionThen, onTimeout: Unit, timeout: Double): Casper = js.native
+  def waitForUrl(url: js.RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout): Casper = js.native
+  def waitForUrl(url: js.RegExp, `then`: FunctionThen, onTimeout: FunctionOnTimeout, timeout: Double): Casper = js.native
   
   def waitUntilVisible(selector: String): Casper = js.native
   def waitUntilVisible(selector: String, `then`: Unit, onTimeout: Unit, timeout: Double): Casper = js.native
@@ -478,9 +477,9 @@ class Casper protected () extends StObject {
   def withFrame(frameInfo: Double, `then`: FunctionThen): Casper = js.native
   
   def withPopup(popupInfo: String, step: FunctionThen): Casper = js.native
+  def withPopup(popupInfo: js.RegExp, step: FunctionThen): Casper = js.native
   def withPopup(popupInfo: Double, step: FunctionThen): Casper = js.native
   def withPopup(popupInfo: FindByUrlNameTitle, step: FunctionThen): Casper = js.native
-  def withPopup(popupInfo: RegExp, step: FunctionThen): Casper = js.native
   
   def withSelectorScope(selector: String, `then`: FunctionThen): Casper = js.native
   

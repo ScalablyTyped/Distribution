@@ -11,7 +11,7 @@ object selectorSetNextMod {
   
   @JSImport("selector-set/selector-set.next", JSImport.Default)
   @js.native
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with SelectorSet[T]
   

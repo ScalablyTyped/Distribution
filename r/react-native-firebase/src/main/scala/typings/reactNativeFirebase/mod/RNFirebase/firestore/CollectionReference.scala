@@ -19,10 +19,10 @@ trait CollectionReference extends StObject {
   def doc(documentPath: String): DocumentReference = js.native
   
   def endAt(snapshot: DocumentSnapshot): Query = js.native
-  def endAt(varargs: js.Any*): Query = js.native
+  def endAt(varargs: Any*): Query = js.native
   
   def endBefore(snapshot: DocumentSnapshot): Query = js.native
-  def endBefore(varargs: js.Any*): Query = js.native
+  def endBefore(varargs: Any*): Query = js.native
   
   val firestore: Firestore = js.native
   
@@ -52,11 +52,11 @@ trait CollectionReference extends StObject {
   val path: String = js.native
   
   def startAfter(snapshot: DocumentSnapshot): Query = js.native
-  def startAfter(varargs: js.Any*): Query = js.native
+  def startAfter(varargs: Any*): Query = js.native
   
   def startAt(snapshot: DocumentSnapshot): Query = js.native
-  def startAt(varargs: js.Any*): Query = js.native
+  def startAt(varargs: Any*): Query = js.native
   
-  def where(fieldPath: String, op: QueryOperator, value: js.Any): Query = js.native
-  def where(fieldPath: FieldPath, op: QueryOperator, value: js.Any): Query = js.native
+  def where(fieldPath: String, op: QueryOperator, value: Any): Query = js.native
+  def where(fieldPath: FieldPath, op: QueryOperator, value: Any): Query = js.native
 }

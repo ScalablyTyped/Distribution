@@ -37,18 +37,18 @@ object mod extends Shortcut {
     trait IModule extends StObject {
       
       /** creating a resource service factory */
-      def factory(name: String, resourceServiceFactoryFunction: IResourceServiceFactoryFunction[js.Any]): IModule
+      def factory(name: String, resourceServiceFactoryFunction: IResourceServiceFactoryFunction[Any]): IModule
     }
     object IModule {
       
-      inline def apply(factory: (String, IResourceServiceFactoryFunction[js.Any]) => IModule): IModule = {
+      inline def apply(factory: (String, IResourceServiceFactoryFunction[Any]) => IModule): IModule = {
         val __obj = js.Dynamic.literal(factory = js.Any.fromFunction2(factory))
         __obj.asInstanceOf[IModule]
       }
       
       extension [Self <: IModule](x: Self) {
         
-        inline def setFactory(value: (String, IResourceServiceFactoryFunction[js.Any]) => IModule): Self = StObject.set(x, "factory", js.Any.fromFunction2(value))
+        inline def setFactory(value: (String, IResourceServiceFactoryFunction[Any]) => IModule): Self = StObject.set(x, "factory", js.Any.fromFunction2(value))
       }
     }
     
@@ -87,7 +87,7 @@ object mod extends Shortcut {
         
         var hasBody: js.UndefOr[Boolean] = js.undefined
         
-        var headers: js.UndefOr[js.Any] = js.undefined
+        var headers: js.UndefOr[Any] = js.undefined
         
         var interceptor: js.UndefOr[IResourceInterceptor] = js.undefined
         
@@ -95,7 +95,7 @@ object mod extends Shortcut {
         
         var method: String
         
-        var params: js.UndefOr[js.Any] = js.undefined
+        var params: js.UndefOr[Any] = js.undefined
         
         var responseType: js.UndefOr[String] = js.undefined
         
@@ -135,7 +135,7 @@ object mod extends Shortcut {
           
           inline def setHasBodyUndefined: Self = StObject.set(x, "hasBody", js.undefined)
           
-          inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+          inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
           
           inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
           
@@ -149,7 +149,7 @@ object mod extends Shortcut {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
           
-          inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+          inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
           
           inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
           
@@ -163,19 +163,19 @@ object mod extends Shortcut {
           
           inline def setTransformRequest(value: IHttpRequestTransformer | js.Array[IHttpRequestTransformer]): Self = StObject.set(x, "transformRequest", value.asInstanceOf[js.Any])
           
-          inline def setTransformRequestFunction2(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter) => js.Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
+          inline def setTransformRequestFunction2(value: (/* data */ Any, /* headersGetter */ IHttpHeadersGetter) => Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
           
           inline def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
           
-          inline def setTransformRequestVarargs(value: IHttpRequestTransformer*): Self = StObject.set(x, "transformRequest", js.Array(value :_*))
+          inline def setTransformRequestVarargs(value: IHttpRequestTransformer*): Self = StObject.set(x, "transformRequest", js.Array(value*))
           
           inline def setTransformResponse(value: IHttpResponseTransformer | js.Array[IHttpResponseTransformer]): Self = StObject.set(x, "transformResponse", value.asInstanceOf[js.Any])
           
-          inline def setTransformResponseFunction3(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter, /* status */ Double) => js.Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction3(value))
+          inline def setTransformResponseFunction3(value: (/* data */ Any, /* headersGetter */ IHttpHeadersGetter, /* status */ Double) => Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction3(value))
           
           inline def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
           
-          inline def setTransformResponseVarargs(value: IHttpResponseTransformer*): Self = StObject.set(x, "transformResponse", js.Array(value :_*))
+          inline def setTransformResponseVarargs(value: IHttpResponseTransformer*): Self = StObject.set(x, "transformResponse", js.Array(value*))
           
           inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
@@ -370,7 +370,7 @@ object mod extends Shortcut {
       trait IResourceClass[T]
         extends StObject
            with Instantiable0[T & IResource[T]]
-           with Instantiable1[/* dataOrParams */ js.Any, T & IResource[T]] {
+           with Instantiable1[/* dataOrParams */ Any, T & IResource[T]] {
         
         def delete(): T = js.native
         def delete(params: js.Object): T = js.native
@@ -440,9 +440,9 @@ object mod extends Shortcut {
       
       trait IResourceInterceptor extends StObject {
         
-        var response: js.UndefOr[js.Function1[/* response */ IResourceResponse, js.Any]] = js.undefined
+        var response: js.UndefOr[js.Function1[/* response */ IResourceResponse, Any]] = js.undefined
         
-        var responseError: js.UndefOr[js.Function1[/* rejection */ js.Any, js.Any]] = js.undefined
+        var responseError: js.UndefOr[js.Function1[/* rejection */ Any, Any]] = js.undefined
       }
       object IResourceInterceptor {
         
@@ -453,9 +453,9 @@ object mod extends Shortcut {
         
         extension [Self <: IResourceInterceptor](x: Self) {
           
-          inline def setResponse(value: /* response */ IResourceResponse => js.Any): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
+          inline def setResponse(value: /* response */ IResourceResponse => Any): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
           
-          inline def setResponseError(value: /* rejection */ js.Any => js.Any): Self = StObject.set(x, "responseError", js.Any.fromFunction1(value))
+          inline def setResponseError(value: /* rejection */ Any => Any): Self = StObject.set(x, "responseError", js.Any.fromFunction1(value))
           
           inline def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)
           
@@ -517,13 +517,13 @@ object mod extends Shortcut {
       
       trait IResourceResponse extends StObject {
         
-        var config: js.Any
+        var config: Any
         
-        var data: js.Any
+        var data: Any
         
-        var headers: js.Any
+        var headers: Any
         
-        var resource: js.Any
+        var resource: Any
         
         var status: Double
         
@@ -531,27 +531,20 @@ object mod extends Shortcut {
       }
       object IResourceResponse {
         
-        inline def apply(
-          config: js.Any,
-          data: js.Any,
-          headers: js.Any,
-          resource: js.Any,
-          status: Double,
-          statusText: String
-        ): IResourceResponse = {
+        inline def apply(config: Any, data: Any, headers: Any, resource: Any, status: Double, statusText: String): IResourceResponse = {
           val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
           __obj.asInstanceOf[IResourceResponse]
         }
         
         extension [Self <: IResourceResponse](x: Self) {
           
-          inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+          inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
           
-          inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+          inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
-          inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+          inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
           
-          inline def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+          inline def setResource(value: Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
           
           inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
           
@@ -576,14 +569,14 @@ object mod extends Shortcut {
           * @param actions example: {update: { method: 'PUT' }, delete: deleteDescriptor } where deleteDescriptor: IActionDescriptor
           * @param options Hash with custom settings that should extend the default $resourceProvider behavior
           */
-        def apply(url: String): IResourceClass[IResource[js.Any]] = js.native
-        def apply(url: String, paramDefaults: js.Any): IResourceClass[IResource[js.Any]] = js.native
-        def apply(url: String, paramDefaults: js.Any, actions: Unit, options: IResourceOptions): IResourceClass[IResource[js.Any]] = js.native
-        def apply(url: String, paramDefaults: js.Any, actions: IActionHash): IResourceClass[IResource[js.Any]] = js.native
-        def apply(url: String, paramDefaults: js.Any, actions: IActionHash, options: IResourceOptions): IResourceClass[IResource[js.Any]] = js.native
-        def apply(url: String, paramDefaults: Unit, actions: Unit, options: IResourceOptions): IResourceClass[IResource[js.Any]] = js.native
-        def apply(url: String, paramDefaults: Unit, actions: IActionHash): IResourceClass[IResource[js.Any]] = js.native
-        def apply(url: String, paramDefaults: Unit, actions: IActionHash, options: IResourceOptions): IResourceClass[IResource[js.Any]] = js.native
+        def apply(url: String): IResourceClass[IResource[Any]] = js.native
+        def apply(url: String, paramDefaults: Any): IResourceClass[IResource[Any]] = js.native
+        def apply(url: String, paramDefaults: Any, actions: Unit, options: IResourceOptions): IResourceClass[IResource[Any]] = js.native
+        def apply(url: String, paramDefaults: Any, actions: IActionHash): IResourceClass[IResource[Any]] = js.native
+        def apply(url: String, paramDefaults: Any, actions: IActionHash, options: IResourceOptions): IResourceClass[IResource[Any]] = js.native
+        def apply(url: String, paramDefaults: Unit, actions: Unit, options: IResourceOptions): IResourceClass[IResource[Any]] = js.native
+        def apply(url: String, paramDefaults: Unit, actions: IActionHash): IResourceClass[IResource[Any]] = js.native
+        def apply(url: String, paramDefaults: Unit, actions: IActionHash, options: IResourceOptions): IResourceClass[IResource[Any]] = js.native
       }
       
       /** when creating a resource factory via IModule.factory */
@@ -602,7 +595,7 @@ object mod extends Shortcut {
       }
       object IResourceServiceProvider {
         
-        inline def apply($get: js.Any, defaults: IResourceOptions): IResourceServiceProvider = {
+        inline def apply($get: Any, defaults: IResourceOptions): IResourceServiceProvider = {
           val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any])
           __obj.asInstanceOf[IResourceServiceProvider]
         }

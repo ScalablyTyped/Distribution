@@ -16,7 +16,7 @@ trait TIcu extends StObject {
     *
     * The last value is `other`
     */
-  var cases: js.Array[js.Any]
+  var cases: js.Array[Any]
   
   /**
     * A set of OpCodes to apply in order to build up the DOM render tree for the ICU
@@ -56,7 +56,7 @@ object TIcu {
   
   inline def apply(
     anchorIdx: Double,
-    cases: js.Array[js.Any],
+    cases: js.Array[Any],
     create: js.Array[IcuCreateOpCodes],
     currentCaseLViewIndex: Double,
     remove: js.Array[I18nRemoveOpCodes],
@@ -72,24 +72,24 @@ object TIcu {
     
     inline def setAnchorIdx(value: Double): Self = StObject.set(x, "anchorIdx", value.asInstanceOf[js.Any])
     
-    inline def setCases(value: js.Array[js.Any]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
+    inline def setCases(value: js.Array[Any]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
-    inline def setCasesVarargs(value: js.Any*): Self = StObject.set(x, "cases", js.Array(value :_*))
+    inline def setCasesVarargs(value: Any*): Self = StObject.set(x, "cases", js.Array(value*))
     
     inline def setCreate(value: js.Array[IcuCreateOpCodes]): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    inline def setCreateVarargs(value: IcuCreateOpCodes*): Self = StObject.set(x, "create", js.Array(value :_*))
+    inline def setCreateVarargs(value: IcuCreateOpCodes*): Self = StObject.set(x, "create", js.Array(value*))
     
     inline def setCurrentCaseLViewIndex(value: Double): Self = StObject.set(x, "currentCaseLViewIndex", value.asInstanceOf[js.Any])
     
     inline def setRemove(value: js.Array[I18nRemoveOpCodes]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    inline def setRemoveVarargs(value: I18nRemoveOpCodes*): Self = StObject.set(x, "remove", js.Array(value :_*))
+    inline def setRemoveVarargs(value: I18nRemoveOpCodes*): Self = StObject.set(x, "remove", js.Array(value*))
     
     inline def setType(value: IcuType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUpdate(value: js.Array[I18nUpdateOpCodes]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    inline def setUpdateVarargs(value: I18nUpdateOpCodes*): Self = StObject.set(x, "update", js.Array(value :_*))
+    inline def setUpdateVarargs(value: I18nUpdateOpCodes*): Self = StObject.set(x, "update", js.Array(value*))
   }
 }

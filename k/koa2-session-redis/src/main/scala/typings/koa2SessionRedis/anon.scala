@@ -18,6 +18,8 @@ object anon {
     
     var length: js.UndefOr[Double] = js.undefined
     
+    var manuallyCommit: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
+    
     var maxAge: js.UndefOr[Double | session] = js.undefined
     
     var populated: js.UndefOr[Boolean] = js.undefined
@@ -42,6 +44,10 @@ object anon {
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      
+      inline def setManuallyCommit(value: () => js.Promise[Unit]): Self = StObject.set(x, "manuallyCommit", js.Any.fromFunction0(value))
+      
+      inline def setManuallyCommitUndefined: Self = StObject.set(x, "manuallyCommit", js.undefined)
       
       inline def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       

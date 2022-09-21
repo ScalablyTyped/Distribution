@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel PivotItem.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.PivotItem")
 @js.native
-class PivotItem ()
+open class PivotItem ()
   extends StObject
      with typings.officeJsPreview.Excel.PivotItem {
   

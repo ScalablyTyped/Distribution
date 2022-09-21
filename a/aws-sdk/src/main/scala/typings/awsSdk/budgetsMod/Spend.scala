@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Spend extends StObject {
   
   /**
-    * The cost or usage amount that is associated with a budget forecast, actual spend, or budget threshold.
+    * The cost or usage amount that's associated with a budget forecast, actual spend, or budget threshold.
     */
   var Amount: NumericValue
   
   /**
-    * The unit of measurement that is used for the budget forecast, actual spend, or budget threshold, such as dollars or GB.
+    * The unit of measurement that's used for the budget forecast, actual spend, or budget threshold, such as USD or GBP.
     */
   var Unit: UnitValue
 }

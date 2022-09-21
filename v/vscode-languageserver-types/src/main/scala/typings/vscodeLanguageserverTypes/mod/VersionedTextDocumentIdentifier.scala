@@ -9,18 +9,14 @@ trait VersionedTextDocumentIdentifier
      with TextDocumentIdentifier {
   
   /**
-    * The version number of this document. If a versioned text document identifier
-    * is sent from the server to the client and the file is not open in the editor
-    * (the server has not received an open notification before) the server can send
-    * `null` to indicate that the version is unknown and the content on disk is the
-    * truth (as speced with document content ownership).
+    * The version number of this document.
     */
-  var version: Double | Null
+  var version: integer
 }
 object VersionedTextDocumentIdentifier {
   
-  inline def apply(uri: DocumentUri): VersionedTextDocumentIdentifier = {
-    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any], version = null)
+  inline def apply(uri: DocumentUri, version: integer): VersionedTextDocumentIdentifier = {
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionedTextDocumentIdentifier]
   }
   
@@ -31,20 +27,17 @@ object VersionedTextDocumentIdentifier {
   /**
     * Creates a new VersionedTextDocumentIdentifier literal.
     * @param uri The document's uri.
-    * @param uri The document's text.
+    * @param version The document's version.
     */
-  inline def create(uri: DocumentUri): VersionedTextDocumentIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[VersionedTextDocumentIdentifier]
-  inline def create(uri: DocumentUri, version: Double): VersionedTextDocumentIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[VersionedTextDocumentIdentifier]
+  inline def create(uri: DocumentUri, version: integer): VersionedTextDocumentIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[VersionedTextDocumentIdentifier]
   
   /**
     * Checks whether the given literal conforms to the [VersionedTextDocumentIdentifier](#VersionedTextDocumentIdentifier) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean]
   
   extension [Self <: VersionedTextDocumentIdentifier](x: Self) {
     
-    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-    
-    inline def setVersionNull: Self = StObject.set(x, "version", null)
+    inline def setVersion(value: integer): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

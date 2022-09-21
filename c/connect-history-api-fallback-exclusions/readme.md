@@ -10,10 +10,10 @@ Provides a fallback for non-existing directories so that the HTML 5 history API 
 | ------------------ | :-------------: |
 | Full name          | connect-history-api-fallback-exclusions |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 65138 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1598.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/connect-history-api-fallback-exclusions)

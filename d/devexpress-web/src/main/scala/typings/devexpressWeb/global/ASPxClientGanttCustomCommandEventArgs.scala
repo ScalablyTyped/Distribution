@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGanttCustomCommandEventArgs")
 @js.native
-class ASPxClientGanttCustomCommandEventArgs protected ()
+open class ASPxClientGanttCustomCommandEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGanttCustomCommandEventArgs {
   /**
@@ -17,7 +17,7 @@ class ASPxClientGanttCustomCommandEventArgs protected ()
     * @param commandName The command name.
     * @param parameter The parameter that complements the processed command.
     */
-  def this(commandName: String, parameter: js.Any) = this()
+  def this(commandName: String, parameter: Any) = this()
   
   /**
     * Specifies the command name for a custom toolbar item.
@@ -29,5 +29,5 @@ class ASPxClientGanttCustomCommandEventArgs protected ()
     * Gets an optional parameter that complements the processed command.
     */
   /* CompleteClass */
-  var parameter: js.Any = js.native
+  var parameter: Any = js.native
 }

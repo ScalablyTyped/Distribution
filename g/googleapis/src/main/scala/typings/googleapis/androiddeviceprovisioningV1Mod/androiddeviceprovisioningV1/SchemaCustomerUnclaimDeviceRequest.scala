@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for customer to unclaim a device.
-  */
 trait SchemaCustomerUnclaimDeviceRequest extends StObject {
   
   /**
-    * Required. The device to unclaim.
+    * Required. The device to unclaim. There are custom validations in UnclaimDeviceRequestValidator.
     */
   var device: js.UndefOr[SchemaDeviceReference] = js.undefined
 }

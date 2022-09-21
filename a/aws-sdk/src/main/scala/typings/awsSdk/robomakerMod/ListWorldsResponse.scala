@@ -33,6 +33,6 @@ object ListWorldsResponse {
     
     inline def setWorldSummariesUndefined: Self = StObject.set(x, "worldSummaries", js.undefined)
     
-    inline def setWorldSummariesVarargs(value: WorldSummary*): Self = StObject.set(x, "worldSummaries", js.Array(value :_*))
+    inline def setWorldSummariesVarargs(value: WorldSummary*): Self = StObject.set(x, "worldSummaries", js.Array(value*))
   }
 }

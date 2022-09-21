@@ -4,7 +4,6 @@ import typings.frctlFractal.anon.ClifractalFractal
 import typings.frctlFractal.anon.Current
 import typings.frctlFractal.anon.Description
 import typings.frctlFractal.mod.CliTheme
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,20 +12,20 @@ object cli {
   
   @JSImport("@frctl/fractal", "fractal.cli.Cli")
   @js.native
-  class Cli () extends StObject {
+  open class Cli () extends StObject {
     
     def command(
       commandString: String,
-      callback: js.ThisFunction2[/* this */ ClifractalFractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit]
+      callback: js.ThisFunction2[/* this */ ClifractalFractal, /* args */ Any, /* done */ js.Function0[Unit], Unit]
     ): Unit = js.native
     def command(
       commandString: String,
-      callback: js.ThisFunction2[/* this */ ClifractalFractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit],
+      callback: js.ThisFunction2[/* this */ ClifractalFractal, /* args */ Any, /* done */ js.Function0[Unit], Unit],
       opts: String
     ): Unit = js.native
     def command(
       commandString: String,
-      callback: js.ThisFunction2[/* this */ ClifractalFractal, /* args */ js.Any, /* done */ js.Function0[Unit], Unit],
+      callback: js.ThisFunction2[/* this */ ClifractalFractal, /* args */ Any, /* done */ js.Function0[Unit], Unit],
       opts: Description
     ): Unit = js.native
     
@@ -36,7 +35,7 @@ object cli {
     
     def exec(command: String): Unit = js.native
     
-    def get(command: String): js.Any = js.native
+    def get(command: String): Any = js.native
     
     def has(command: String): Boolean = js.native
     
@@ -50,7 +49,7 @@ object cli {
   
   @JSImport("@frctl/fractal", "fractal.cli.Console")
   @js.native
-  class Console () extends StObject {
+  open class Console () extends StObject {
     
     def box(): this.type = js.native
     def box(header: String): this.type = js.native
@@ -65,18 +64,18 @@ object cli {
     
     def clear(): this.type = js.native
     
-    def columns(data: js.Any): this.type = js.native
-    def columns(data: js.Any, options: js.Any): this.type = js.native
+    def columns(data: Any): this.type = js.native
+    def columns(data: Any, options: Any): this.type = js.native
     
     def debug(text: String): this.type = js.native
-    def debug(text: String, data: js.Any): this.type = js.native
+    def debug(text: String, data: Any): this.type = js.native
     
     def debugMode(status: Boolean): Unit = js.native
     
-    def dump(data: js.Any): Unit = js.native
+    def dump(data: Any): Unit = js.native
     
-    def error(err: String, data: Error): this.type = js.native
-    def error(err: Error): this.type = js.native
+    def error(err: String, data: js.Error): this.type = js.native
+    def error(err: js.Error): this.type = js.native
     
     def isSlogging(): Boolean = js.native
     
@@ -103,7 +102,7 @@ object cli {
   
   @JSImport("@frctl/fractal", "fractal.cli.Notifier")
   @js.native
-  class Notifier () extends StObject {
+  open class Notifier () extends StObject {
     
     def updateAvailable(details: Current): Unit = js.native
     

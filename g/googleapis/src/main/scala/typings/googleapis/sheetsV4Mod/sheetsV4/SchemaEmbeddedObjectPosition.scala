@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The position of an embedded object such as a chart.
-  */
 trait SchemaEmbeddedObjectPosition extends StObject {
   
   /**
-    * If true, the embedded object is put on a new sheet whose ID is chosen for
-    * you. Used only when writing.
+    * If true, the embedded object is put on a new sheet whose ID is chosen for you. Used only when writing.
     */
-  var newSheet: js.UndefOr[Boolean] = js.undefined
+  var newSheet: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The position at which the object is overlaid on top of a grid.
@@ -21,10 +17,9 @@ trait SchemaEmbeddedObjectPosition extends StObject {
   var overlayPosition: js.UndefOr[SchemaOverlayPosition] = js.undefined
   
   /**
-    * The sheet this is on. Set only if the embedded object is on its own
-    * sheet. Must be non-negative.
+    * The sheet this is on. Set only if the embedded object is on its own sheet. Must be non-negative.
     */
-  var sheetId: js.UndefOr[Double] = js.undefined
+  var sheetId: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaEmbeddedObjectPosition {
   
@@ -37,6 +32,8 @@ object SchemaEmbeddedObjectPosition {
     
     inline def setNewSheet(value: Boolean): Self = StObject.set(x, "newSheet", value.asInstanceOf[js.Any])
     
+    inline def setNewSheetNull: Self = StObject.set(x, "newSheet", null)
+    
     inline def setNewSheetUndefined: Self = StObject.set(x, "newSheet", js.undefined)
     
     inline def setOverlayPosition(value: SchemaOverlayPosition): Self = StObject.set(x, "overlayPosition", value.asInstanceOf[js.Any])
@@ -44,6 +41,8 @@ object SchemaEmbeddedObjectPosition {
     inline def setOverlayPositionUndefined: Self = StObject.set(x, "overlayPosition", js.undefined)
     
     inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    
+    inline def setSheetIdNull: Self = StObject.set(x, "sheetId", null)
     
     inline def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }

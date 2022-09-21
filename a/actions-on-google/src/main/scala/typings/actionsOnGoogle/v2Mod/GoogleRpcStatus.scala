@@ -19,7 +19,7 @@ trait GoogleRpcStatus
     * A list of messages that carry the error details.  There is a common set of
     * message types for APIs to use.
     */
-  var details: js.UndefOr[js.Array[ApiClientObjectMap[js.Any]]] = js.undefined
+  var details: js.UndefOr[js.Array[ApiClientObjectMap[Any]]] = js.undefined
   
   /**
     * A developer-facing error message, which should be in English. Any
@@ -41,11 +41,11 @@ object GoogleRpcStatus {
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    inline def setDetails(value: js.Array[ApiClientObjectMap[js.Any]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[ApiClientObjectMap[Any]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setDetailsVarargs(value: ApiClientObjectMap[js.Any]*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: ApiClientObjectMap[Any]*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

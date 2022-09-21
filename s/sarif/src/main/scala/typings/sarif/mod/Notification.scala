@@ -81,7 +81,7 @@ object Notification {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

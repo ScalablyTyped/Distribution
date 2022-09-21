@@ -1,19 +1,20 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.AudioSceneComponent")
 @js.native
-class AudioSceneComponent protected ()
+/**
+  * Creates a new instance of the component for the given scene
+  * @param scene Defines the scene to register the component in
+  */
+open class AudioSceneComponent ()
   extends StObject
      with typings.babylonjs.BABYLON.AudioSceneComponent {
-  /**
-    * Creates a new instance of the component for the given scene
-    * @param scene Defines the scene to register the component in
-    */
-  def this(scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(scene: Nullable[typings.babylonjs.BABYLON.Scene]) = this()
   
   /**
     * Disposes the component and the associated ressources.
@@ -53,13 +54,8 @@ object AudioSceneComponent {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("BABYLON.AudioSceneComponent._CameraDirectionLH")
+  @JSGlobal("BABYLON.AudioSceneComponent._CameraDirection")
   @js.native
-  def _CameraDirectionLH: js.Any = js.native
-  inline def _CameraDirectionLH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CameraDirectionLH")(x.asInstanceOf[js.Any])
-  
-  @JSGlobal("BABYLON.AudioSceneComponent._CameraDirectionRH")
-  @js.native
-  def _CameraDirectionRH: js.Any = js.native
-  inline def _CameraDirectionRH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CameraDirectionRH")(x.asInstanceOf[js.Any])
+  def _CameraDirection: Any = js.native
+  inline def _CameraDirection_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CameraDirection")(x.asInstanceOf[js.Any])
 }

@@ -10,8 +10,8 @@ object headersMod {
   
   @JSImport("@angular/http/src/headers", "Headers")
   @js.native
-  class Headers () extends StObject {
-    def this(headers: StringDictionary[js.Any]) = this()
+  open class Headers () extends StObject {
+    def this(headers: StringDictionary[Any]) = this()
     def this(headers: Headers) = this()
     
     /**
@@ -58,7 +58,7 @@ object headersMod {
       */
     def keys(): js.Array[String] = js.native
     
-    /* private */ var mayBeSetNormalizedName: js.Any = js.native
+    /* private */ var mayBeSetNormalizedName: Any = js.native
     
     /**
       * Sets or overrides header value for given name.
@@ -69,7 +69,7 @@ object headersMod {
     /**
       * Returns string of all headers.
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     /**
       * Returns values of all headers.

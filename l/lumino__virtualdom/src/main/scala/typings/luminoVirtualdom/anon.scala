@@ -31,7 +31,7 @@ object anon {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: VirtualNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: VirtualNode*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
 }

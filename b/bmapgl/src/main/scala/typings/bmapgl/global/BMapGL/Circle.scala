@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Circle")
 @js.native
-class Circle protected ()
+open class Circle protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Circle {
   def this(center: typings.bmapgl.BMapGL.Point, radius: Double) = this()

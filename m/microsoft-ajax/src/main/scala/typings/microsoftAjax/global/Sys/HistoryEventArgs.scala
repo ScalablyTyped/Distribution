@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sys.HistoryEventArgs")
 @js.native
-class HistoryEventArgs protected ()
+open class HistoryEventArgs protected ()
   extends StObject
      with typings.microsoftAjax.Sys.HistoryEventArgs {
   //#region Constructors
@@ -18,7 +18,7 @@ class HistoryEventArgs protected ()
     * For a live code example that demonstrates this event in action, and for a view of how this event is used in code, see Managing Browser History Using Client Script.
     * @param state Object. A collection of key/value pairs that represent the state data. This data will be added to the main state to form the global state of the new history point.
     */
-  def this(state: js.Any) = this()
+  def this(state: Any) = this()
   
   /**
     * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
@@ -34,5 +34,5 @@ class HistoryEventArgs protected ()
     * @return Object. A collection of name/value pairs that represent the state of a Web page.
     */
   /* CompleteClass */
-  override def get_State(): js.Any = js.native
+  override def get_State(): Any = js.native
 }

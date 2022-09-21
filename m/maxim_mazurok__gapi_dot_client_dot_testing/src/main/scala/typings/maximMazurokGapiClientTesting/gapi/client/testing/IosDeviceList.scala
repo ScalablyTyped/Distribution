@@ -22,6 +22,6 @@ object IosDeviceList {
     
     inline def setIosDevicesUndefined: Self = StObject.set(x, "iosDevices", js.undefined)
     
-    inline def setIosDevicesVarargs(value: IosDevice*): Self = StObject.set(x, "iosDevices", js.Array(value :_*))
+    inline def setIosDevicesVarargs(value: IosDevice*): Self = StObject.set(x, "iosDevices", js.Array(value*))
   }
 }

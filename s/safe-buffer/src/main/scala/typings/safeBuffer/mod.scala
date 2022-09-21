@@ -1,8 +1,6 @@
 package typings.safeBuffer
 
 import typings.safeBuffer.anon.Data
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +9,7 @@ object mod {
   
   @JSImport("safe-buffer", "Buffer")
   @js.native
-  class Buffer protected () extends StObject {
+  open class Buffer protected () extends StObject {
     /**
       * Produces a Buffer backed by the same allocated memory as
       * the given {ArrayBuffer}.
@@ -19,19 +17,19 @@ object mod {
       *
       * @param arrayBuffer The ArrayBuffer with which to share memory.
       */
-    def this(arrayBuffer: ArrayBuffer) = this()
+    def this(arrayBuffer: js.typedarray.ArrayBuffer) = this()
     /**
       * Allocates a new buffer containing the given {array} of octets.
       *
       * @param array The octets to store.
       */
-    def this(array: js.Array[js.Any]) = this()
+    def this(array: js.Array[Any]) = this()
     /**
       * Allocates a new buffer containing the given {array} of octets.
       *
       * @param array The octets to store.
       */
-    def this(array: Uint8Array) = this()
+    def this(array: js.typedarray.Uint8Array) = this()
     /**
       * Copies the passed {buffer} data onto a new {Buffer} instance.
       *
@@ -87,10 +85,10 @@ object mod {
     
     def equals(otherBuffer: Buffer): Boolean = js.native
     
-    def fill(value: js.Any): this.type = js.native
-    def fill(value: js.Any, offset: Double): this.type = js.native
-    def fill(value: js.Any, offset: Double, end: Double): this.type = js.native
-    def fill(value: js.Any, offset: Unit, end: Double): this.type = js.native
+    def fill(value: Any): this.type = js.native
+    def fill(value: Any, offset: Double): this.type = js.native
+    def fill(value: Any, offset: Double, end: Double): this.type = js.native
+    def fill(value: Any, offset: Unit, end: Double): this.type = js.native
     
     def includes(value: String): Boolean = js.native
     def includes(value: String, byteOffset: Double): Boolean = js.native
@@ -350,16 +348,16 @@ object mod {
       * @param byteOffset
       * @param length
       */
-    inline def from(arrayBuffer: ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-    inline def from(arrayBuffer: ArrayBuffer, byteOffset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-    inline def from(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-    inline def from(arrayBuffer: ArrayBuffer, byteOffset: Unit, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    inline def from(arrayBuffer: js.typedarray.ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def from(arrayBuffer: js.typedarray.ArrayBuffer, byteOffset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    inline def from(arrayBuffer: js.typedarray.ArrayBuffer, byteOffset: Double, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    inline def from(arrayBuffer: js.typedarray.ArrayBuffer, byteOffset: Unit, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayBuffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     /**
       * Allocates a new Buffer using an {array} of octets.
       *
       * @param array
       */
-    inline def from(array: js.Array[js.Any]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(array.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def from(array: js.Array[Any]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(array.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     /**
       * Copies the passed {buffer} data onto a new Buffer instance.
       *
@@ -381,7 +379,7 @@ object mod {
       *
       * @param obj object to test.
       */
-    inline def isBuffer(obj: js.Any): /* is safe-buffer.safe-buffer.Buffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is safe-buffer.safe-buffer.Buffer */ Boolean]
+    inline def isBuffer(obj: Any): /* is safe-buffer.safe-buffer.Buffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is safe-buffer.safe-buffer.Buffer */ Boolean]
     
     /**
       * Returns true if {encoding} is a valid encoding argument.

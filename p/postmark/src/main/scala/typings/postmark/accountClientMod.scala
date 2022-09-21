@@ -27,7 +27,7 @@ object accountClientMod {
   
   @JSImport("postmark/dist/client/AccountClient", JSImport.Default)
   @js.native
-  class default protected () extends AccountClient {
+  open class default protected () extends AccountClient {
     /**
       * Create a new AccountClient
       * @param accountToken The account token that should be used with requests.

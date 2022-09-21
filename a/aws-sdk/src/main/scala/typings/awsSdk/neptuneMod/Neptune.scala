@@ -15,12 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Neptune extends Service {
   
   /**
-    * Associates an Identity and Access Management (IAM) role from an Neptune DB cluster.
+    * Associates an Identity and Access Management (IAM) role with an Neptune DB cluster.
     */
   def addRoleToDBCluster(): Request[js.Object, AWSError] = js.native
   def addRoleToDBCluster(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Associates an Identity and Access Management (IAM) role from an Neptune DB cluster.
+    * Associates an Identity and Access Management (IAM) role with an Neptune DB cluster.
     */
   def addRoleToDBCluster(params: AddRoleToDBClusterMessage): Request[js.Object, AWSError] = js.native
   def addRoleToDBCluster(
@@ -202,12 +202,12 @@ trait Neptune extends Service {
   ): Request[CreateDBParameterGroupResult, AWSError] = js.native
   
   /**
-    * Creates a new DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the AWS Region.
+    * Creates a new DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the Amazon Region.
     */
   def createDBSubnetGroup(): Request[CreateDBSubnetGroupResult, AWSError] = js.native
   def createDBSubnetGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateDBSubnetGroupResult, Unit]): Request[CreateDBSubnetGroupResult, AWSError] = js.native
   /**
-    * Creates a new DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the AWS Region.
+    * Creates a new DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the Amazon Region.
     */
   def createDBSubnetGroup(params: CreateDBSubnetGroupMessage): Request[CreateDBSubnetGroupResult, AWSError] = js.native
   def createDBSubnetGroup(
@@ -228,6 +228,20 @@ trait Neptune extends Service {
     params: CreateEventSubscriptionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResult, Unit]
   ): Request[CreateEventSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Creates a Neptune global database spread across multiple Amazon Regions. The global database contains a single primary cluster with read-write capability, and read-only secondary clusters that receive data from the primary cluster through high-speed replication performed by the Neptune storage subsystem. You can create a global database that is initially empty, and then add a primary cluster and secondary clusters to it, or you can specify an existing Neptune cluster during the create operation to become the primary cluster of the global database.
+    */
+  def createGlobalCluster(): Request[CreateGlobalClusterResult, AWSError] = js.native
+  def createGlobalCluster(callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalClusterResult, Unit]): Request[CreateGlobalClusterResult, AWSError] = js.native
+  /**
+    * Creates a Neptune global database spread across multiple Amazon Regions. The global database contains a single primary cluster with read-write capability, and read-only secondary clusters that receive data from the primary cluster through high-speed replication performed by the Neptune storage subsystem. You can create a global database that is initially empty, and then add a primary cluster and secondary clusters to it, or you can specify an existing Neptune cluster during the create operation to become the primary cluster of the global database.
+    */
+  def createGlobalCluster(params: CreateGlobalClusterMessage): Request[CreateGlobalClusterResult, AWSError] = js.native
+  def createGlobalCluster(
+    params: CreateGlobalClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalClusterResult, Unit]
+  ): Request[CreateGlobalClusterResult, AWSError] = js.native
   
   /**
     * The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted. Note that the DB Cluster cannot be deleted if deletion protection is enabled. To delete it, you must first set its DeletionProtection field to False.
@@ -342,6 +356,20 @@ trait Neptune extends Service {
   ): Request[DeleteEventSubscriptionResult, AWSError] = js.native
   
   /**
+    * Deletes a global database. The primary and all secondary clusters must already be detached or deleted first.
+    */
+  def deleteGlobalCluster(): Request[DeleteGlobalClusterResult, AWSError] = js.native
+  def deleteGlobalCluster(callback: js.Function2[/* err */ AWSError, /* data */ DeleteGlobalClusterResult, Unit]): Request[DeleteGlobalClusterResult, AWSError] = js.native
+  /**
+    * Deletes a global database. The primary and all secondary clusters must already be detached or deleted first.
+    */
+  def deleteGlobalCluster(params: DeleteGlobalClusterMessage): Request[DeleteGlobalClusterResult, AWSError] = js.native
+  def deleteGlobalCluster(
+    params: DeleteGlobalClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteGlobalClusterResult, Unit]
+  ): Request[DeleteGlobalClusterResult, AWSError] = js.native
+  
+  /**
     * Returns information about endpoints for an Amazon Neptune DB cluster.  This operation can also return information for Amazon RDS clusters and Amazon DocDB clusters. 
     */
   def describeDBClusterEndpoints(): Request[DBClusterEndpointMessage, AWSError] = js.native
@@ -384,14 +412,14 @@ trait Neptune extends Service {
   ): Request[DBClusterParameterGroupDetails, AWSError] = js.native
   
   /**
-    * Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot. When sharing snapshots with other AWS accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual DB cluster snapshot. If all is included in the list of values for the restore attribute, then the manual DB cluster snapshot is public and can be copied or restored by all AWS accounts. To add or remove access for an AWS account to copy or restore a manual DB cluster snapshot, or to make the manual DB cluster snapshot public or private, use the ModifyDBClusterSnapshotAttribute API action.
+    * Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot. When sharing snapshots with other Amazon accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the Amazon accounts that are authorized to copy or restore the manual DB cluster snapshot. If all is included in the list of values for the restore attribute, then the manual DB cluster snapshot is public and can be copied or restored by all Amazon accounts. To add or remove access for an Amazon account to copy or restore a manual DB cluster snapshot, or to make the manual DB cluster snapshot public or private, use the ModifyDBClusterSnapshotAttribute API action.
     */
   def describeDBClusterSnapshotAttributes(): Request[DescribeDBClusterSnapshotAttributesResult, AWSError] = js.native
   def describeDBClusterSnapshotAttributes(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBClusterSnapshotAttributesResult, Unit]
   ): Request[DescribeDBClusterSnapshotAttributesResult, AWSError] = js.native
   /**
-    * Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot. When sharing snapshots with other AWS accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual DB cluster snapshot. If all is included in the list of values for the restore attribute, then the manual DB cluster snapshot is public and can be copied or restored by all AWS accounts. To add or remove access for an AWS account to copy or restore a manual DB cluster snapshot, or to make the manual DB cluster snapshot public or private, use the ModifyDBClusterSnapshotAttribute API action.
+    * Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot. When sharing snapshots with other Amazon accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the Amazon accounts that are authorized to copy or restore the manual DB cluster snapshot. If all is included in the list of values for the restore attribute, then the manual DB cluster snapshot is public and can be copied or restored by all Amazon accounts. To add or remove access for an Amazon account to copy or restore a manual DB cluster snapshot, or to make the manual DB cluster snapshot public or private, use the ModifyDBClusterSnapshotAttribute API action.
     */
   def describeDBClusterSnapshotAttributes(params: DescribeDBClusterSnapshotAttributesMessage): Request[DescribeDBClusterSnapshotAttributesResult, AWSError] = js.native
   def describeDBClusterSnapshotAttributes(
@@ -570,6 +598,20 @@ trait Neptune extends Service {
   ): Request[EventsMessage, AWSError] = js.native
   
   /**
+    * Returns information about Neptune global database clusters. This API supports pagination.
+    */
+  def describeGlobalClusters(): Request[GlobalClustersMessage, AWSError] = js.native
+  def describeGlobalClusters(callback: js.Function2[/* err */ AWSError, /* data */ GlobalClustersMessage, Unit]): Request[GlobalClustersMessage, AWSError] = js.native
+  /**
+    * Returns information about Neptune global database clusters. This API supports pagination.
+    */
+  def describeGlobalClusters(params: DescribeGlobalClustersMessage): Request[GlobalClustersMessage, AWSError] = js.native
+  def describeGlobalClusters(
+    params: DescribeGlobalClustersMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ GlobalClustersMessage, Unit]
+  ): Request[GlobalClustersMessage, AWSError] = js.native
+  
+  /**
     * Returns a list of orderable DB instance options for the specified engine.
     */
   def describeOrderableDBInstanceOptions(): Request[OrderableDBInstanceOptionsMessage, AWSError] = js.native
@@ -628,6 +670,20 @@ trait Neptune extends Service {
   ): Request[FailoverDBClusterResult, AWSError] = js.native
   
   /**
+    * Initiates the failover process for a Neptune global database. A failover for a Neptune global database promotes one of secondary read-only DB clusters to be the primary DB cluster and demotes the primary DB cluster to being a secondary (read-only) DB cluster. In other words, the role of the current primary DB cluster and the selected target secondary DB cluster are switched. The selected secondary DB cluster assumes full read/write capabilities for the Neptune global database.  This action applies only to Neptune global databases. This action is only intended for use on healthy Neptune global databases with healthy Neptune DB clusters and no region-wide outages, to test disaster recovery scenarios or to reconfigure the global database topology. 
+    */
+  def failoverGlobalCluster(): Request[FailoverGlobalClusterResult, AWSError] = js.native
+  def failoverGlobalCluster(callback: js.Function2[/* err */ AWSError, /* data */ FailoverGlobalClusterResult, Unit]): Request[FailoverGlobalClusterResult, AWSError] = js.native
+  /**
+    * Initiates the failover process for a Neptune global database. A failover for a Neptune global database promotes one of secondary read-only DB clusters to be the primary DB cluster and demotes the primary DB cluster to being a secondary (read-only) DB cluster. In other words, the role of the current primary DB cluster and the selected target secondary DB cluster are switched. The selected secondary DB cluster assumes full read/write capabilities for the Neptune global database.  This action applies only to Neptune global databases. This action is only intended for use on healthy Neptune global databases with healthy Neptune DB clusters and no region-wide outages, to test disaster recovery scenarios or to reconfigure the global database topology. 
+    */
+  def failoverGlobalCluster(params: FailoverGlobalClusterMessage): Request[FailoverGlobalClusterResult, AWSError] = js.native
+  def failoverGlobalCluster(
+    params: FailoverGlobalClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ FailoverGlobalClusterResult, Unit]
+  ): Request[FailoverGlobalClusterResult, AWSError] = js.native
+  
+  /**
     * Lists all tags on an Amazon Neptune resource.
     */
   def listTagsForResource(): Request[TagListMessage, AWSError] = js.native
@@ -684,14 +740,14 @@ trait Neptune extends Service {
   ): Request[DBClusterParameterGroupNameMessage, AWSError] = js.native
   
   /**
-    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.
+    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other Amazon accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the Amazon accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all Amazon accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all Amazon accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized Amazon account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which Amazon accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.
     */
   def modifyDBClusterSnapshotAttribute(): Request[ModifyDBClusterSnapshotAttributeResult, AWSError] = js.native
   def modifyDBClusterSnapshotAttribute(
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBClusterSnapshotAttributeResult, Unit]
   ): Request[ModifyDBClusterSnapshotAttributeResult, AWSError] = js.native
   /**
-    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.
+    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other Amazon accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the Amazon accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all Amazon accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all Amazon accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized Amazon account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which Amazon accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.
     */
   def modifyDBClusterSnapshotAttribute(params: ModifyDBClusterSnapshotAttributeMessage): Request[ModifyDBClusterSnapshotAttributeResult, AWSError] = js.native
   def modifyDBClusterSnapshotAttribute(
@@ -728,12 +784,12 @@ trait Neptune extends Service {
   ): Request[DBParameterGroupNameMessage, AWSError] = js.native
   
   /**
-    * Modifies an existing DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the AWS Region.
+    * Modifies an existing DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the Amazon Region.
     */
   def modifyDBSubnetGroup(): Request[ModifyDBSubnetGroupResult, AWSError] = js.native
   def modifyDBSubnetGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBSubnetGroupResult, Unit]): Request[ModifyDBSubnetGroupResult, AWSError] = js.native
   /**
-    * Modifies an existing DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the AWS Region.
+    * Modifies an existing DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the Amazon Region.
     */
   def modifyDBSubnetGroup(params: ModifyDBSubnetGroupMessage): Request[ModifyDBSubnetGroupResult, AWSError] = js.native
   def modifyDBSubnetGroup(
@@ -754,6 +810,20 @@ trait Neptune extends Service {
     params: ModifyEventSubscriptionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyEventSubscriptionResult, Unit]
   ): Request[ModifyEventSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Modify a setting for an Amazon Neptune global cluster. You can change one or more database configuration parameters by specifying these parameters and their new values in the request.
+    */
+  def modifyGlobalCluster(): Request[ModifyGlobalClusterResult, AWSError] = js.native
+  def modifyGlobalCluster(callback: js.Function2[/* err */ AWSError, /* data */ ModifyGlobalClusterResult, Unit]): Request[ModifyGlobalClusterResult, AWSError] = js.native
+  /**
+    * Modify a setting for an Amazon Neptune global cluster. You can change one or more database configuration parameters by specifying these parameters and their new values in the request.
+    */
+  def modifyGlobalCluster(params: ModifyGlobalClusterMessage): Request[ModifyGlobalClusterResult, AWSError] = js.native
+  def modifyGlobalCluster(
+    params: ModifyGlobalClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyGlobalClusterResult, Unit]
+  ): Request[ModifyGlobalClusterResult, AWSError] = js.native
   
   /**
     * Not supported.
@@ -782,6 +852,20 @@ trait Neptune extends Service {
     params: RebootDBInstanceMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RebootDBInstanceResult, Unit]
   ): Request[RebootDBInstanceResult, AWSError] = js.native
+  
+  /**
+    * Detaches a Neptune DB cluster from a Neptune global database. A secondary cluster becomes a normal standalone cluster with read-write capability instead of being read-only, and no longer receives data from a the primary cluster.
+    */
+  def removeFromGlobalCluster(): Request[RemoveFromGlobalClusterResult, AWSError] = js.native
+  def removeFromGlobalCluster(callback: js.Function2[/* err */ AWSError, /* data */ RemoveFromGlobalClusterResult, Unit]): Request[RemoveFromGlobalClusterResult, AWSError] = js.native
+  /**
+    * Detaches a Neptune DB cluster from a Neptune global database. A secondary cluster becomes a normal standalone cluster with read-write capability instead of being read-only, and no longer receives data from a the primary cluster.
+    */
+  def removeFromGlobalCluster(params: RemoveFromGlobalClusterMessage): Request[RemoveFromGlobalClusterResult, AWSError] = js.native
+  def removeFromGlobalCluster(
+    params: RemoveFromGlobalClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveFromGlobalClusterResult, Unit]
+  ): Request[RemoveFromGlobalClusterResult, AWSError] = js.native
   
   /**
     * Disassociates an Identity and Access Management (IAM) role from a DB cluster.
@@ -884,12 +968,12 @@ trait Neptune extends Service {
   ): Request[RestoreDBClusterToPointInTimeResult, AWSError] = js.native
   
   /**
-    * Starts an Amazon Neptune DB cluster that was stopped using the AWS console, the AWS CLI stop-db-cluster command, or the StopDBCluster API.
+    * Starts an Amazon Neptune DB cluster that was stopped using the Amazon console, the Amazon CLI stop-db-cluster command, or the StopDBCluster API.
     */
   def startDBCluster(): Request[StartDBClusterResult, AWSError] = js.native
   def startDBCluster(callback: js.Function2[/* err */ AWSError, /* data */ StartDBClusterResult, Unit]): Request[StartDBClusterResult, AWSError] = js.native
   /**
-    * Starts an Amazon Neptune DB cluster that was stopped using the AWS console, the AWS CLI stop-db-cluster command, or the StopDBCluster API.
+    * Starts an Amazon Neptune DB cluster that was stopped using the Amazon console, the Amazon CLI stop-db-cluster command, or the StopDBCluster API.
     */
   def startDBCluster(params: StartDBClusterMessage): Request[StartDBClusterResult, AWSError] = js.native
   def startDBCluster(

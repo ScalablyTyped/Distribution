@@ -24,7 +24,7 @@ trait DomainPackageDetails extends StObject {
   /**
     * Timestamp of the most-recent update to the association status.
     */
-  var LastUpdated: js.UndefOr[typings.awsSdk.esMod.LastUpdated] = js.undefined
+  var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Internal ID of the package.
@@ -69,7 +69,7 @@ object DomainPackageDetails {
     
     inline def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
     
-    inline def setLastUpdated(value: LastUpdated): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     

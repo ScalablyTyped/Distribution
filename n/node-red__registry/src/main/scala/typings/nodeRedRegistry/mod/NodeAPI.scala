@@ -1,14 +1,13 @@
 package typings.nodeRedRegistry.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.express.mod.Express
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
+import typings.expressServeStaticCore.mod.Application
 import typings.node.eventsMod.EventEmitter
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import typings.node.httpsMod.Server
-import typings.qs.mod.ParsedQs
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NodeAPI[TSets /* <: NodeAPISettingsWithData */] extends StObject {
   
   @JSName("_")
-  var _underscore: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.I18nTFunction */ js.Any
+  var _underscore: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.I18nTFunction */ Any
   
   var auth: NodeAPIAuth
   
@@ -27,25 +26,13 @@ trait NodeAPI[TSets /* <: NodeAPISettingsWithData */] extends StObject {
   
   var events: EventEmitter
   
-  /**
-    * Express instance itself is a request handler, which could be invoked without
-    * third argument.
-    */
-  def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-  def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-  def httpAdmin(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-  def httpAdmin(req: IncomingMessage, res: ServerResponse): js.Any
+  var hooks: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Hooks */ Any
+  
+  def httpAdmin(): Application
   @JSName("httpAdmin")
   val httpAdmin_Original: Express
   
-  /**
-    * Express instance itself is a request handler, which could be invoked without
-    * third argument.
-    */
-  def httpNode(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-  def httpNode(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-  def httpNode(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-  def httpNode(req: IncomingMessage, res: ServerResponse): js.Any
+  def httpNode(): Application
   @JSName("httpNode")
   val httpNode_Original: Express
   
@@ -55,35 +42,48 @@ trait NodeAPI[TSets /* <: NodeAPISettingsWithData */] extends StObject {
   
   var nodes: NodeAPINodes
   
-  def require(id: String): js.Any
+  def require(id: String): Any
   
-  val server: Server
+  val server: Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[typings.node.httpMod.IncomingMessage]
+    ]
+  ]
   
   var settings: TSets
   
-  var util: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Util */ js.Any
+  var util: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Util */ Any
   
   def version(): js.Promise[String]
 }
 object NodeAPI {
   
   inline def apply[TSets /* <: NodeAPISettingsWithData */](
-    _underscore: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.I18nTFunction */ js.Any,
+    _underscore: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.I18nTFunction */ Any,
     auth: NodeAPIAuth,
     comms: NodeAPIComms,
     events: EventEmitter,
+    hooks: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Hooks */ Any,
     httpAdmin: Express,
     httpNode: Express,
     library: NodeAPILibrary,
     log: NodeApiLog,
     nodes: NodeAPINodes,
-    require: String => js.Any,
-    server: Server,
+    require: String => Any,
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[typings.node.httpMod.IncomingMessage]
+      ]
+    ],
     settings: TSets,
-    util: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Util */ js.Any,
+    util: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Util */ Any,
     version: () => js.Promise[String]
   ): NodeAPI[TSets] = {
-    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], comms = comms.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], httpAdmin = httpAdmin.asInstanceOf[js.Any], httpNode = httpNode.asInstanceOf[js.Any], library = library.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], require = js.Any.fromFunction1(require), server = server.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any], version = js.Any.fromFunction0(version))
+    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], comms = comms.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any], httpAdmin = httpAdmin.asInstanceOf[js.Any], httpNode = httpNode.asInstanceOf[js.Any], library = library.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], require = js.Any.fromFunction1(require), server = server.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any], version = js.Any.fromFunction0(version))
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeAPI[TSets]]
   }
@@ -96,6 +96,10 @@ object NodeAPI {
     
     inline def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
+    inline def setHooks(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Hooks */ Any
+    ): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    
     inline def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
     
     inline def setHttpNode(value: Express): Self = StObject.set(x, "httpNode", value.asInstanceOf[js.Any])
@@ -106,20 +110,28 @@ object NodeAPI {
     
     inline def setNodes(value: NodeAPINodes): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
+    inline def setRequire(value: String => Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
     
-    inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(
+      value: Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     inline def setSettings(value: TSets): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     inline def setUtil(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Util */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.Util */ Any
     ): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: () => js.Promise[String]): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
     
     inline def set_underscore(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.I18nTFunction */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify util.I18nTFunction */ Any
     ): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
   }
 }

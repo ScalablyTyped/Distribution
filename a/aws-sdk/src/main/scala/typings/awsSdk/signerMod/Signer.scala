@@ -13,6 +13,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Signer extends Service {
   
   /**
+    * Adds cross-account permissions to a signing profile.
+    */
+  def addProfilePermission(): Request[AddProfilePermissionResponse, AWSError] = js.native
+  def addProfilePermission(callback: js.Function2[/* err */ AWSError, /* data */ AddProfilePermissionResponse, Unit]): Request[AddProfilePermissionResponse, AWSError] = js.native
+  /**
+    * Adds cross-account permissions to a signing profile.
+    */
+  def addProfilePermission(params: AddProfilePermissionRequest): Request[AddProfilePermissionResponse, AWSError] = js.native
+  def addProfilePermission(
+    params: AddProfilePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AddProfilePermissionResponse, Unit]
+  ): Request[AddProfilePermissionResponse, AWSError] = js.native
+  
+  /**
     * Changes the state of an ACTIVE signing profile to CANCELED. A canceled profile is still viewable with the ListSigningProfiles operation, but it cannot perform new signing jobs, and is deleted two years after cancelation.
     */
   def cancelSigningProfile(): Request[js.Object, AWSError] = js.native
@@ -70,6 +84,20 @@ trait Signer extends Service {
     params: GetSigningProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSigningProfileResponse, Unit]
   ): Request[GetSigningProfileResponse, AWSError] = js.native
+  
+  /**
+    * Lists the cross-account permissions associated with a signing profile.
+    */
+  def listProfilePermissions(): Request[ListProfilePermissionsResponse, AWSError] = js.native
+  def listProfilePermissions(callback: js.Function2[/* err */ AWSError, /* data */ ListProfilePermissionsResponse, Unit]): Request[ListProfilePermissionsResponse, AWSError] = js.native
+  /**
+    * Lists the cross-account permissions associated with a signing profile.
+    */
+  def listProfilePermissions(params: ListProfilePermissionsRequest): Request[ListProfilePermissionsResponse, AWSError] = js.native
+  def listProfilePermissions(
+    params: ListProfilePermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListProfilePermissionsResponse, Unit]
+  ): Request[ListProfilePermissionsResponse, AWSError] = js.native
   
   /**
     * Lists all your signing jobs. You can use the maxResults parameter to limit the number of signing jobs that are returned in the response. If additional jobs remain to be listed, code signing returns a nextToken value. Use this value in subsequent calls to ListSigningJobs to fetch the remaining values. You can continue calling ListSigningJobs with your maxResults parameter and with new values that code signing returns in the nextToken parameter until all of your signing jobs have been returned. 
@@ -140,6 +168,48 @@ trait Signer extends Service {
     params: PutSigningProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutSigningProfileResponse, Unit]
   ): Request[PutSigningProfileResponse, AWSError] = js.native
+  
+  /**
+    * Removes cross-account permissions from a signing profile.
+    */
+  def removeProfilePermission(): Request[RemoveProfilePermissionResponse, AWSError] = js.native
+  def removeProfilePermission(callback: js.Function2[/* err */ AWSError, /* data */ RemoveProfilePermissionResponse, Unit]): Request[RemoveProfilePermissionResponse, AWSError] = js.native
+  /**
+    * Removes cross-account permissions from a signing profile.
+    */
+  def removeProfilePermission(params: RemoveProfilePermissionRequest): Request[RemoveProfilePermissionResponse, AWSError] = js.native
+  def removeProfilePermission(
+    params: RemoveProfilePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveProfilePermissionResponse, Unit]
+  ): Request[RemoveProfilePermissionResponse, AWSError] = js.native
+  
+  /**
+    * Changes the state of a signing job to REVOKED. This indicates that the signature is no longer valid.
+    */
+  def revokeSignature(): Request[js.Object, AWSError] = js.native
+  def revokeSignature(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Changes the state of a signing job to REVOKED. This indicates that the signature is no longer valid.
+    */
+  def revokeSignature(params: RevokeSignatureRequest): Request[js.Object, AWSError] = js.native
+  def revokeSignature(
+    params: RevokeSignatureRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Changes the state of a signing profile to REVOKED. This indicates that signatures generated using the signing profile after an effective start date are no longer valid.
+    */
+  def revokeSigningProfile(): Request[js.Object, AWSError] = js.native
+  def revokeSigningProfile(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Changes the state of a signing profile to REVOKED. This indicates that signatures generated using the signing profile after an effective start date are no longer valid.
+    */
+  def revokeSigningProfile(params: RevokeSigningProfileRequest): Request[js.Object, AWSError] = js.native
+  def revokeSigningProfile(
+    params: RevokeSigningProfileRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   
   /**
     * Initiates a signing job to be performed on the code provided. Signing jobs are viewable by the ListSigningJobs operation for two years after they are performed. Note the following requirements:     You must create an Amazon S3 source bucket. For more information, see Create a Bucket in the Amazon S3 Getting Started Guide.    Your S3 source bucket must be version enabled.   You must create an S3 destination bucket. Code signing uses your S3 destination bucket to write your signed code.   You specify the name of the source and destination buckets when calling the StartSigningJob operation.   You must also specify a request token that identifies your request to code signing.   You can call the DescribeSigningJob and the ListSigningJobs actions after you call StartSigningJob. For a Java example that shows how to use this action, see http://docs.aws.amazon.com/acm/latest/userguide/ 

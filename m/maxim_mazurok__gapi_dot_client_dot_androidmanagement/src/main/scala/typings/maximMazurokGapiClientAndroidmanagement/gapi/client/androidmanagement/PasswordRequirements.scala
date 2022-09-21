@@ -53,6 +53,13 @@ trait PasswordRequirements extends StObject {
     * method (e.g. fingerprint, trust agents, face). After the specified time period elapses, only strong forms of authentication can be used to unlock the device or work profile.
     */
   var requirePasswordUnlock: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Controls whether a unified lock is allowed for the device and the work profile, on devices running Android 9 and above with a work profile. This can be set only if password_scope is
+    * set to SCOPE_PROFILE, the policy will be rejected otherwise. If user has not set a separate work lock and this field is set to REQUIRE_SEPARATE_WORK_LOCK, a NonComplianceDetail is
+    * reported with nonComplianceReason set to USER_ACTION.
+    */
+  var unifiedLockSettings: js.UndefOr[String] = js.undefined
 }
 object PasswordRequirements {
   
@@ -114,5 +121,9 @@ object PasswordRequirements {
     inline def setRequirePasswordUnlock(value: String): Self = StObject.set(x, "requirePasswordUnlock", value.asInstanceOf[js.Any])
     
     inline def setRequirePasswordUnlockUndefined: Self = StObject.set(x, "requirePasswordUnlock", js.undefined)
+    
+    inline def setUnifiedLockSettings(value: String): Self = StObject.set(x, "unifiedLockSettings", value.asInstanceOf[js.Any])
+    
+    inline def setUnifiedLockSettingsUndefined: Self = StObject.set(x, "unifiedLockSettings", js.undefined)
   }
 }

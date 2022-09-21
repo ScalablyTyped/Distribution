@@ -23,7 +23,7 @@ object DisplacementGroups {
     
     inline def setAll(value: js.Array[DraggableId]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    inline def setAllVarargs(value: DraggableId*): Self = StObject.set(x, "all", js.Array(value :_*))
+    inline def setAllVarargs(value: DraggableId*): Self = StObject.set(x, "all", js.Array(value*))
     
     inline def setInvisible(value: DraggableIdMap): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     

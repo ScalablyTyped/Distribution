@@ -17,7 +17,7 @@ trait Errors extends StObject {
   def Item(Index: Double): Error = js.native
   def Item(Index: XlErrorChecks): Error = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): Error = js.native
+  def _Default(Index: Any): Error = js.native
 }

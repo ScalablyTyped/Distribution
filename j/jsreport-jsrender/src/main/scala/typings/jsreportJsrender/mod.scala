@@ -1,6 +1,8 @@
 package typings.jsreportJsrender
 
 import typings.jsreportCore.mod.ExtensionDefinition
+import typings.jsreportCore.mod.Recipe
+import typings.jsreportCore.mod.Template
 import typings.jsreportJsrender.jsreportJsrenderStrings.jsrender
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,23 +16,43 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  trait JsRenderTemplate
+    extends StObject
+       with Template {
+    
+    @JSName("engine")
+    var engine_JsRenderTemplate: jsrender | String
+  }
+  object JsRenderTemplate {
+    
+    inline def apply(content: String, engine: jsrender | String, recipe: Recipe | String): JsRenderTemplate = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
+      __obj.asInstanceOf[JsRenderTemplate]
+    }
+    
+    extension [Self <: JsRenderTemplate](x: Self) {
+      
+      inline def setEngine(value: jsrender | String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    trait Template extends StObject {
+    trait TemplateRegistry extends StObject {
       
-      var engine: jsrender | String
+      var JsRenderTemplate: typings.jsreportJsrender.mod.JsRenderTemplate
     }
-    object Template {
+    object TemplateRegistry {
       
-      inline def apply(engine: jsrender | String): Template = {
-        val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Template]
+      inline def apply(JsRenderTemplate: JsRenderTemplate): TemplateRegistry = {
+        val __obj = js.Dynamic.literal(JsRenderTemplate = JsRenderTemplate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: Template](x: Self) {
+      extension [Self <: TemplateRegistry](x: Self) {
         
-        inline def setEngine(value: jsrender | String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+        inline def setJsRenderTemplate(value: JsRenderTemplate): Self = StObject.set(x, "JsRenderTemplate", value.asInstanceOf[js.Any])
       }
     }
   }

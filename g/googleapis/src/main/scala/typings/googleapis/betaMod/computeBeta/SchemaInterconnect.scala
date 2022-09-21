@@ -5,44 +5,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents an Interconnects resource. The Interconnects resource is a
-  * dedicated connection between Google&#39;s network and your on-premises
-  * network. For more information, see the  Dedicated overview page. (==
-  * resource_for v1.interconnects ==) (== resource_for beta.interconnects ==)
-  */
 trait SchemaInterconnect extends StObject {
   
   /**
-    * Administrative status of the interconnect. When this is set to true, the
-    * Interconnect is functional and can carry traffic. When set to false, no
-    * packets can be carried over the interconnect and no BGP routes are
-    * exchanged over it. By default, the status is set to true.
+    * Administrative status of the interconnect. When this is set to true, the Interconnect is functional and can carry traffic. When set to false, no packets can be carried over the interconnect and no BGP routes are exchanged over it. By default, the status is set to true.
     */
-  var adminEnabled: js.UndefOr[Boolean] = js.undefined
+  var adminEnabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * [Output Only] A list of CircuitInfo objects, that describe the individual
-    * circuits in this LAG.
+    * [Output Only] A list of CircuitInfo objects, that describe the individual circuits in this LAG.
     */
   var circuitInfos: js.UndefOr[js.Array[SchemaInterconnectCircuitInfo]] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.undefined
+  var creationTimestamp: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Customer name, to put in the Letter of Authorization as the party
-    * authorized to request a crossconnect.
+    * Customer name, to put in the Letter of Authorization as the party authorized to request a crossconnect.
     */
-  var customerName: js.UndefOr[String] = js.undefined
+  var customerName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An optional description of this resource. Provide this property when you
-    * create the resource.
+    * An optional description of this resource. Provide this property when you create the resource.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Output Only] A list of outages expected for this Interconnect.
@@ -50,124 +38,99 @@ trait SchemaInterconnect extends StObject {
   var expectedOutages: js.UndefOr[js.Array[SchemaInterconnectOutageNotification]] = js.undefined
   
   /**
-    * [Output Only] IP address configured on the Google side of the
-    * Interconnect link. This can be used only for ping tests.
+    * [Output Only] IP address configured on the Google side of the Interconnect link. This can be used only for ping tests.
     */
-  var googleIpAddress: js.UndefOr[String] = js.undefined
+  var googleIpAddress: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] Google reference ID to be used when raising support tickets
-    * with Google or otherwise to debug backend connectivity issues.
+    * [Output Only] Google reference ID to be used when raising support tickets with Google or otherwise to debug backend connectivity issues.
     */
-  var googleReferenceId: js.UndefOr[String] = js.undefined
+  var googleReferenceId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] The unique identifier for the resource. This identifier is
-    * defined by the server.
+    * [Output Only] The unique identifier for the resource. This identifier is defined by the server.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] A list of the URLs of all InterconnectAttachments
-    * configured to use this Interconnect.
+    * [Output Only] A list of the URLs of all InterconnectAttachments configured to use this Interconnect.
     */
-  var interconnectAttachments: js.UndefOr[js.Array[String]] = js.undefined
+  var interconnectAttachments: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Type of interconnect. Note that &quot;IT_PRIVATE&quot; has been
-    * deprecated in favor of &quot;DEDICATED&quot;
+    * Type of interconnect, which can take one of the following values: - PARTNER: A partner-managed interconnection shared between customers though a partner. - DEDICATED: A dedicated physical interconnection with the customer. Note that a value IT_PRIVATE has been deprecated in favor of DEDICATED.
     */
-  var interconnectType: js.UndefOr[String] = js.undefined
+  var interconnectType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] Type of the resource. Always compute#interconnect for
-    * interconnects.
+    * [Output Only] Type of the resource. Always compute#interconnect for interconnects.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A fingerprint for the labels being applied to this Interconnect, which is
-    * essentially a hash of the labels set used for optimistic locking. The
-    * fingerprint is initially generated by Compute Engine and changes after
-    * every request to modify or update labels. You must always provide an
-    * up-to-date fingerprint hash in order to update or change labels,
-    * otherwise the request will fail with error 412 conditionNotMet.  To see
-    * the latest fingerprint, make a get() request to retrieve an Interconnect.
+    * A fingerprint for the labels being applied to this Interconnect, which is essentially a hash of the labels set used for optimistic locking. The fingerprint is initially generated by Compute Engine and changes after every request to modify or update labels. You must always provide an up-to-date fingerprint hash in order to update or change labels, otherwise the request will fail with error 412 conditionNotMet. To see the latest fingerprint, make a get() request to retrieve an Interconnect.
     */
-  var labelFingerprint: js.UndefOr[String] = js.undefined
+  var labelFingerprint: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Labels to apply to this Interconnect resource. These can be later
-    * modified by the setLabels method. Each label key/value must comply with
-    * RFC1035. Label values may be empty.
+    * Labels for this resource. These can only be added or modified by the setLabels method. Each label key/value pair must comply with RFC1035. Label values may be empty.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
-    * Type of link requested. This field indicates speed of each of the links
-    * in the bundle, not the entire bundle.
+    * Type of link requested, which can take one of the following values: - LINK_TYPE_ETHERNET_10G_LR: A 10G Ethernet with LR optics - LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics. Note that this field indicates the speed of each of the links in the bundle, not the speed of the entire bundle.
     */
-  var linkType: js.UndefOr[String] = js.undefined
+  var linkType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * URL of the InterconnectLocation object that represents where this
-    * connection is to be provisioned.
+    * URL of the InterconnectLocation object that represents where this connection is to be provisioned.
     */
-  var location: js.UndefOr[String] = js.undefined
+  var location: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Name of the resource. Provided by the client when the resource is
-    * created. The name must be 1-63 characters long, and comply with RFC1035.
-    * Specifically, the name must be 1-63 characters long and match the regular
-    * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
-    * must be a lowercase letter, and all following characters must be a dash,
-    * lowercase letter, or digit, except the last character, which cannot be a
-    * dash.
+    * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Email address to contact the customer NOC for operations and maintenance
-    * notifications regarding this Interconnect. If specified, this will be
-    * used for notifications in addition to all other forms described, such as
-    * Stackdriver logs alerting and Cloud Notifications.
+    * Email address to contact the customer NOC for operations and maintenance notifications regarding this Interconnect. If specified, this will be used for notifications in addition to all other forms described, such as Stackdriver logs alerting and Cloud Notifications.
     */
-  var nocContactEmail: js.UndefOr[String] = js.undefined
+  var nocContactEmail: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] The current status of whether or not this Interconnect is
-    * functional.
+    * [Output Only] The current status of this Interconnect's functionality, which can take one of the following values: - OS_ACTIVE: A valid Interconnect, which is turned up and is ready to use. Attachments may be provisioned on this Interconnect. - OS_UNPROVISIONED: An Interconnect that has not completed turnup. No attachments may be provisioned on this Interconnect. - OS_UNDER_MAINTENANCE: An Interconnect that is undergoing internal maintenance. No attachments may be provisioned or updated on this Interconnect.
     */
-  var operationalStatus: js.UndefOr[String] = js.undefined
+  var operationalStatus: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] IP address configured on the customer side of the
-    * Interconnect link. The customer should configure this IP address during
-    * turnup when prompted by Google NOC. This can be used only for ping tests.
+    * [Output Only] IP address configured on the customer side of the Interconnect link. The customer should configure this IP address during turnup when prompted by Google NOC. This can be used only for ping tests.
     */
-  var peerIpAddress: js.UndefOr[String] = js.undefined
+  var peerIpAddress: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Output Only] Number of links actually provisioned in this interconnect.
     */
-  var provisionedLinkCount: js.UndefOr[Double] = js.undefined
+  var provisionedLinkCount: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Target number of physical links in the link bundle, as requested by the
-    * customer.
+    * Target number of physical links in the link bundle, as requested by the customer.
     */
-  var requestedLinkCount: js.UndefOr[Double] = js.undefined
+  var requestedLinkCount: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * [Output Only] Set to true if the resource satisfies the zone separation organization policy constraints and false otherwise. Defaults to false if the field is not present.
+    */
+  var satisfiesPzs: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.undefined
+  var selfLink: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] The current state of whether or not this Interconnect is
-    * functional.
+    * [Output Only] The current state of Interconnect functionality, which can take one of the following values: - ACTIVE: The Interconnect is valid, turned up and ready to use. Attachments may be provisioned on this Interconnect. - UNPROVISIONED: The Interconnect has not completed turnup. No attachments may be provisioned on this Interconnect. - UNDER_MAINTENANCE: The Interconnect is undergoing internal maintenance. No attachments may be provisioned or updated on this Interconnect.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInterconnect {
   
@@ -180,23 +143,31 @@ object SchemaInterconnect {
     
     inline def setAdminEnabled(value: Boolean): Self = StObject.set(x, "adminEnabled", value.asInstanceOf[js.Any])
     
+    inline def setAdminEnabledNull: Self = StObject.set(x, "adminEnabled", null)
+    
     inline def setAdminEnabledUndefined: Self = StObject.set(x, "adminEnabled", js.undefined)
     
     inline def setCircuitInfos(value: js.Array[SchemaInterconnectCircuitInfo]): Self = StObject.set(x, "circuitInfos", value.asInstanceOf[js.Any])
     
     inline def setCircuitInfosUndefined: Self = StObject.set(x, "circuitInfos", js.undefined)
     
-    inline def setCircuitInfosVarargs(value: SchemaInterconnectCircuitInfo*): Self = StObject.set(x, "circuitInfos", js.Array(value :_*))
+    inline def setCircuitInfosVarargs(value: SchemaInterconnectCircuitInfo*): Self = StObject.set(x, "circuitInfos", js.Array(value*))
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setCreationTimestampNull: Self = StObject.set(x, "creationTimestamp", null)
     
     inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     inline def setCustomerName(value: String): Self = StObject.set(x, "customerName", value.asInstanceOf[js.Any])
     
+    inline def setCustomerNameNull: Self = StObject.set(x, "customerName", null)
+    
     inline def setCustomerNameUndefined: Self = StObject.set(x, "customerName", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
@@ -204,79 +175,121 @@ object SchemaInterconnect {
     
     inline def setExpectedOutagesUndefined: Self = StObject.set(x, "expectedOutages", js.undefined)
     
-    inline def setExpectedOutagesVarargs(value: SchemaInterconnectOutageNotification*): Self = StObject.set(x, "expectedOutages", js.Array(value :_*))
+    inline def setExpectedOutagesVarargs(value: SchemaInterconnectOutageNotification*): Self = StObject.set(x, "expectedOutages", js.Array(value*))
     
     inline def setGoogleIpAddress(value: String): Self = StObject.set(x, "googleIpAddress", value.asInstanceOf[js.Any])
+    
+    inline def setGoogleIpAddressNull: Self = StObject.set(x, "googleIpAddress", null)
     
     inline def setGoogleIpAddressUndefined: Self = StObject.set(x, "googleIpAddress", js.undefined)
     
     inline def setGoogleReferenceId(value: String): Self = StObject.set(x, "googleReferenceId", value.asInstanceOf[js.Any])
     
+    inline def setGoogleReferenceIdNull: Self = StObject.set(x, "googleReferenceId", null)
+    
     inline def setGoogleReferenceIdUndefined: Self = StObject.set(x, "googleReferenceId", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setInterconnectAttachments(value: js.Array[String]): Self = StObject.set(x, "interconnectAttachments", value.asInstanceOf[js.Any])
     
+    inline def setInterconnectAttachmentsNull: Self = StObject.set(x, "interconnectAttachments", null)
+    
     inline def setInterconnectAttachmentsUndefined: Self = StObject.set(x, "interconnectAttachments", js.undefined)
     
-    inline def setInterconnectAttachmentsVarargs(value: String*): Self = StObject.set(x, "interconnectAttachments", js.Array(value :_*))
+    inline def setInterconnectAttachmentsVarargs(value: String*): Self = StObject.set(x, "interconnectAttachments", js.Array(value*))
     
     inline def setInterconnectType(value: String): Self = StObject.set(x, "interconnectType", value.asInstanceOf[js.Any])
+    
+    inline def setInterconnectTypeNull: Self = StObject.set(x, "interconnectType", null)
     
     inline def setInterconnectTypeUndefined: Self = StObject.set(x, "interconnectType", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
+    
+    inline def setLabelFingerprintNull: Self = StObject.set(x, "labelFingerprint", null)
     
     inline def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
+    
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+    
+    inline def setLinkTypeNull: Self = StObject.set(x, "linkType", null)
     
     inline def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
+    
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNocContactEmail(value: String): Self = StObject.set(x, "nocContactEmail", value.asInstanceOf[js.Any])
     
+    inline def setNocContactEmailNull: Self = StObject.set(x, "nocContactEmail", null)
+    
     inline def setNocContactEmailUndefined: Self = StObject.set(x, "nocContactEmail", js.undefined)
     
     inline def setOperationalStatus(value: String): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
+    
+    inline def setOperationalStatusNull: Self = StObject.set(x, "operationalStatus", null)
     
     inline def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
     
     inline def setPeerIpAddress(value: String): Self = StObject.set(x, "peerIpAddress", value.asInstanceOf[js.Any])
     
+    inline def setPeerIpAddressNull: Self = StObject.set(x, "peerIpAddress", null)
+    
     inline def setPeerIpAddressUndefined: Self = StObject.set(x, "peerIpAddress", js.undefined)
     
     inline def setProvisionedLinkCount(value: Double): Self = StObject.set(x, "provisionedLinkCount", value.asInstanceOf[js.Any])
+    
+    inline def setProvisionedLinkCountNull: Self = StObject.set(x, "provisionedLinkCount", null)
     
     inline def setProvisionedLinkCountUndefined: Self = StObject.set(x, "provisionedLinkCount", js.undefined)
     
     inline def setRequestedLinkCount(value: Double): Self = StObject.set(x, "requestedLinkCount", value.asInstanceOf[js.Any])
     
+    inline def setRequestedLinkCountNull: Self = StObject.set(x, "requestedLinkCount", null)
+    
     inline def setRequestedLinkCountUndefined: Self = StObject.set(x, "requestedLinkCount", js.undefined)
     
+    inline def setSatisfiesPzs(value: Boolean): Self = StObject.set(x, "satisfiesPzs", value.asInstanceOf[js.Any])
+    
+    inline def setSatisfiesPzsNull: Self = StObject.set(x, "satisfiesPzs", null)
+    
+    inline def setSatisfiesPzsUndefined: Self = StObject.set(x, "satisfiesPzs", js.undefined)
+    
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    
+    inline def setSelfLinkNull: Self = StObject.set(x, "selfLink", null)
     
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

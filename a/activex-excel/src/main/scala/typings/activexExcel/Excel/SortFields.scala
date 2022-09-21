@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SortFields extends StObject {
   
-  def apply(Index: js.Any): SortField = js.native
+  def apply(Index: Any): SortField = js.native
   
   def Add(Key: Range): SortField = js.native
-  def Add(Key: Range, SortOn: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: js.Any, Order: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: js.Any, Order: js.Any, CustomOrder: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: js.Any, Order: js.Any, CustomOrder: js.Any, DataOption: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: js.Any, Order: js.Any, CustomOrder: Unit, DataOption: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: js.Any, Order: Unit, CustomOrder: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: js.Any, Order: Unit, CustomOrder: js.Any, DataOption: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: js.Any, Order: Unit, CustomOrder: Unit, DataOption: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: Unit, Order: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: Unit, Order: js.Any, CustomOrder: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: Unit, Order: js.Any, CustomOrder: js.Any, DataOption: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: Unit, Order: js.Any, CustomOrder: Unit, DataOption: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: Unit, Order: Unit, CustomOrder: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: Unit, Order: Unit, CustomOrder: js.Any, DataOption: js.Any): SortField = js.native
-  def Add(Key: Range, SortOn: Unit, Order: Unit, CustomOrder: Unit, DataOption: js.Any): SortField = js.native
+  def Add(Key: Range, SortOn: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Any, Order: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Any, Order: Any, CustomOrder: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Any, Order: Any, CustomOrder: Any, DataOption: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Any, Order: Any, CustomOrder: Unit, DataOption: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Any, Order: Unit, CustomOrder: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Any, Order: Unit, CustomOrder: Any, DataOption: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Any, Order: Unit, CustomOrder: Unit, DataOption: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Unit, Order: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Unit, Order: Any, CustomOrder: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Unit, Order: Any, CustomOrder: Any, DataOption: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Unit, Order: Any, CustomOrder: Unit, DataOption: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Unit, Order: Unit, CustomOrder: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Unit, Order: Unit, CustomOrder: Any, DataOption: Any): SortField = js.native
+  def Add(Key: Range, SortOn: Unit, Order: Unit, CustomOrder: Unit, DataOption: Any): SortField = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -34,9 +34,9 @@ trait SortFields extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Item(Index: js.Any): SortField = js.native
+  def Item(Index: Any): SortField = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): SortField = js.native
+  def _Default(Index: Any): SortField = js.native
 }

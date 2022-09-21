@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpsEntityItem extends StObject {
   
   /**
-    * The time OpsItem data was captured.
+    * The time the OpsData was captured.
     */
   var CaptureTime: js.UndefOr[OpsEntityItemCaptureTime] = js.undefined
   
   /**
-    * The detailed data content for an OpsItem summaries result item.
+    * The details of an OpsData summary.
     */
   var Content: js.UndefOr[OpsEntityItemEntryList] = js.undefined
 }
@@ -33,6 +33,6 @@ object OpsEntityItem {
     
     inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    inline def setContentVarargs(value: OpsEntityItemEntry*): Self = StObject.set(x, "Content", js.Array(value :_*))
+    inline def setContentVarargs(value: OpsEntityItemEntry*): Self = StObject.set(x, "Content", js.Array(value*))
   }
 }

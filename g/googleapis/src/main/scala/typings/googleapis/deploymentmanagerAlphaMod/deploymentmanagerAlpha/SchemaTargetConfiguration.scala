@@ -12,9 +12,7 @@ trait SchemaTargetConfiguration extends StObject {
   var config: js.UndefOr[SchemaConfigFile] = js.undefined
   
   /**
-    * Specifies any files to import for this configuration. This can be used to
-    * import templates or other files. For example, you might import a text
-    * file in order to use the file in a template.
+    * Specifies any files to import for this configuration. This can be used to import templates or other files. For example, you might import a text file in order to use the file in a template.
     */
   var imports: js.UndefOr[js.Array[SchemaImportFile]] = js.undefined
 }
@@ -35,6 +33,6 @@ object SchemaTargetConfiguration {
     
     inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    inline def setImportsVarargs(value: SchemaImportFile*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: SchemaImportFile*): Self = StObject.set(x, "imports", js.Array(value*))
   }
 }

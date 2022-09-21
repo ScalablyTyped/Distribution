@@ -6,42 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Get paths for storing things like data, config, cache, etc.
-  	@param name - Name of your project. Used to generate the paths.
-  	@returns The paths to use for your project on current OS.
-  	@example
-  	```
-  	import envPaths = require('env-paths');
-  	const paths = envPaths('MyApp');
-  	paths.data;
-  	//=> '/home/sindresorhus/.local/share/MyApp-nodejs'
-  	paths.config
-  	//=> '/home/sindresorhus/.config/MyApp-nodejs'
-  	```
-  	*/
-  inline def apply(name: String): Paths = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Paths]
-  inline def apply(name: String, options: Options): Paths = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Paths]
-  
   @JSImport("env-paths", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function envPaths(name: string, options?: envPaths.Options): envPaths.Paths;
-  // export = envPaths;
-  @JSImport("env-paths", "default")
-  @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof envPaths */ js.Any = js.native
-  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof envPaths */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(name: String): Paths = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[Paths]
+  inline def default(name: String, options: Options): Paths = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Paths]
   
   trait Options extends StObject {
     
     /**
-    		__Don't use this option unless you really have to!__
-    		Suffix appended to the project name to avoid name conflicts with native apps. Pass an empty string to disable it.
-    		@default 'nodejs'
-    		*/
+    	__Don't use this option unless you really have to!__
+    	Suffix appended to the project name to avoid name conflicts with native apps. Pass an empty string to disable it.
+    	@default 'nodejs'
+    	*/
     val suffix: js.UndefOr[String] = js.undefined
   }
   object Options {
@@ -62,28 +40,48 @@ object mod {
   trait Paths extends StObject {
     
     /**
-    		Directory for non-essential data files.
-    		*/
+    	Directory for non-essential data files.
+    	Example locations (with the default `nodejs` suffix):
+    	- macOS: `~/Library/Caches/MyApp-nodejs`
+    	- Windows: `%LOCALAPPDATA%\MyApp-nodejs\Cache` (for example, `C:\Users\USERNAME\AppData\Local\MyApp-nodejs\Cache`)
+    	- Linux: `~/.cache/MyApp-nodejs` (or `$XDG_CACHE_HOME/MyApp-nodejs`)
+    	*/
     val cache: String
     
     /**
-    		Directory for data files.
-    		*/
+    	Directory for data files.
+    	Example locations (with the default `nodejs` suffix):
+    	- macOS: `~/Library/Preferences/MyApp-nodejs`
+    	- Windows: `%APPDATA%\MyApp-nodejs\Config` (for example, `C:\Users\USERNAME\AppData\Roaming\MyApp-nodejs\Config`)
+    	- Linux: `~/.config/MyApp-nodejs` (or `$XDG_CONFIG_HOME/MyApp-nodejs`)
+    	*/
     val config: String
     
     /**
-    		Directory for data files.
-    		*/
+    	Directory for data files.
+    	Example locations (with the default `nodejs` suffix):
+    	- macOS: `~/Library/Application Support/MyApp-nodejs`
+    	- Windows: `%LOCALAPPDATA%\MyApp-nodejs\Data` (for example, `C:\Users\USERNAME\AppData\Local\MyApp-nodejs\Data`)
+    	- Linux: `~/.local/share/MyApp-nodejs` (or `$XDG_DATA_HOME/MyApp-nodejs`)
+    	*/
     val data: String
     
     /**
-    		Directory for log files.
-    		*/
+    	Directory for log files.
+    	Example locations (with the default `nodejs` suffix):
+    	- macOS: `~/Library/Logs/MyApp-nodejs`
+    	- Windows: `%LOCALAPPDATA%\MyApp-nodejs\Log` (for example, `C:\Users\USERNAME\AppData\Local\MyApp-nodejs\Log`)
+    	- Linux: `~/.local/state/MyApp-nodejs` (or `$XDG_STATE_HOME/MyApp-nodejs`)
+    	*/
     val log: String
     
     /**
-    		Directory for temporary files.
-    		*/
+    	Directory for temporary files.
+    	Example locations (with the default `nodejs` suffix):
+    	- macOS: `/var/folders/jf/f2twvvvs5jl_m49tf034ffpw0000gn/T/MyApp-nodejs`
+    	- Windows: `%LOCALAPPDATA%\Temp\MyApp-nodejs` (for example, `C:\Users\USERNAME\AppData\Local\Temp\MyApp-nodejs`)
+    	- Linux: `/tmp/USERNAME/MyApp-nodejs`
+    	*/
     val temp: String
   }
   object Paths {

@@ -18,6 +18,7 @@ import typings.tensorflowTfjsLayers.kerasFormatCommonMod.BidirectionalMergeMode
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormat
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormatSerialization
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataType
+import typings.tensorflowTfjsLayers.kerasFormatCommonMod.InterpolationFormat
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PoolMode
 import typings.tensorflowTfjsLayers.layerSerializationMod.LayerClassName
@@ -590,6 +591,12 @@ object tensorflowTfjsLayersStrings {
   inline def batch_size: batch_size = "batch_size".asInstanceOf[batch_size]
   
   @js.native
+  sealed trait bilinear
+    extends StObject
+       with InterpolationFormat
+  inline def bilinear: bilinear = "bilinear".asInstanceOf[bilinear]
+  
+  @js.native
   sealed trait bool
     extends StObject
        with DataType
@@ -844,6 +851,12 @@ object tensorflowTfjsLayersStrings {
   inline def minMaxNorm_ : minMaxNorm_ = "minMaxNorm".asInstanceOf[minMaxNorm_]
   
   @js.native
+  sealed trait mish
+    extends StObject
+       with ActivationIdentifier
+  inline def mish: mish = "mish".asInstanceOf[mish]
+  
+  @js.native
   sealed trait mul
     extends StObject
        with BidirectionalMergeMode
@@ -852,6 +865,12 @@ object tensorflowTfjsLayersStrings {
   @js.native
   sealed trait name extends StObject
   inline def name: name = "name".asInstanceOf[name]
+  
+  @js.native
+  sealed trait nearest
+    extends StObject
+       with InterpolationFormat
+  inline def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
   sealed trait never
@@ -967,6 +986,12 @@ object tensorflowTfjsLayersStrings {
     extends StObject
        with BidirectionalMergeMode
   inline def sum: sum = "sum".asInstanceOf[sum]
+  
+  @js.native
+  sealed trait swish
+    extends StObject
+       with ActivationIdentifier
+  inline def swish: swish = "swish".asInstanceOf[swish]
   
   @js.native
   sealed trait tanh

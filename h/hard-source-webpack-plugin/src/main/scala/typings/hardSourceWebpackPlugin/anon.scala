@@ -32,11 +32,11 @@ object anon {
       
       inline def setDirectories(value: js.Array[String]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
       
-      inline def setDirectoriesVarargs(value: String*): Self = StObject.set(x, "directories", js.Array(value :_*))
+      inline def setDirectoriesVarargs(value: String*): Self = StObject.set(x, "directories", js.Array(value*))
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

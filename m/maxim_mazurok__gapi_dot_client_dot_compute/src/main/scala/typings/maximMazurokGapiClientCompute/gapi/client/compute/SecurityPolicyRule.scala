@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SecurityPolicyRule extends StObject {
   
-  /** The Action to preform when the client connection triggers the rule. Can currently be either "allow" or "deny()" where valid values for status are 403, 404, and 502. */
+  /** The Action to perform when the client connection triggers the rule. Can currently be either "allow" or "deny()" where valid values for status are 403, 404, and 502. */
   var action: js.UndefOr[String] = js.undefined
   
   /** An optional description of this resource. Provide this property when you create the resource. */
@@ -23,7 +23,7 @@ trait SecurityPolicyRule extends StObject {
   
   /**
     * An integer indicating the priority of a rule in the list. The priority must be a positive value between 0 and 2147483647. Rules are evaluated from highest to lowest priority where 0
-    * is the highest priority and 2147483647 is the lowest prority.
+    * is the highest priority and 2147483647 is the lowest priority.
     */
   var priority: js.UndefOr[Double] = js.undefined
 }

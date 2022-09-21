@@ -59,13 +59,13 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setPlayers(value: String | js.Array[String]): Self = StObject.set(x, "players", value.asInstanceOf[js.Any])
       
       inline def setPlayersUndefined: Self = StObject.set(x, "players", js.undefined)
       
-      inline def setPlayersVarargs(value: String*): Self = StObject.set(x, "players", js.Array(value :_*))
+      inline def setPlayersVarargs(value: String*): Self = StObject.set(x, "players", js.Array(value*))
     }
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "NodeMaterialConnectionPoint")
 @js.native
-class NodeMaterialConnectionPoint protected ()
+open class NodeMaterialConnectionPoint protected ()
   extends typings.babylonjs.indexMod.NodeMaterialConnectionPoint {
   /**
     * Creates a new connection point

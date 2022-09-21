@@ -4,26 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A VPN connection contains all VPN tunnels connected from this VpnGateway to
-  * the same peer gateway. The peer gateway could either be a external VPN
-  * gateway or GCP VPN gateway.
-  */
 trait SchemaVpnGatewayStatusVpnConnection extends StObject {
   
   /**
-    * URL reference to the peer external VPN gateways to which the VPN tunnels
-    * in this VPN connection are connected. This field is mutually exclusive
-    * with peer_gcp_gateway.
+    * URL reference to the peer external VPN gateways to which the VPN tunnels in this VPN connection are connected. This field is mutually exclusive with peer_gcp_gateway.
     */
-  var peerExternalGateway: js.UndefOr[String] = js.undefined
+  var peerExternalGateway: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * URL reference to the peer side VPN gateways to which the VPN tunnels in
-    * this VPN connection are connected. This field is mutually exclusive with
-    * peer_gcp_gateway.
+    * URL reference to the peer side VPN gateways to which the VPN tunnels in this VPN connection are connected. This field is mutually exclusive with peer_gcp_gateway.
     */
-  var peerGcpGateway: js.UndefOr[String] = js.undefined
+  var peerGcpGateway: js.UndefOr[String | Null] = js.undefined
   
   /**
     * HighAvailabilityRequirementState for the VPN connection.
@@ -46,9 +37,13 @@ object SchemaVpnGatewayStatusVpnConnection {
     
     inline def setPeerExternalGateway(value: String): Self = StObject.set(x, "peerExternalGateway", value.asInstanceOf[js.Any])
     
+    inline def setPeerExternalGatewayNull: Self = StObject.set(x, "peerExternalGateway", null)
+    
     inline def setPeerExternalGatewayUndefined: Self = StObject.set(x, "peerExternalGateway", js.undefined)
     
     inline def setPeerGcpGateway(value: String): Self = StObject.set(x, "peerGcpGateway", value.asInstanceOf[js.Any])
+    
+    inline def setPeerGcpGatewayNull: Self = StObject.set(x, "peerGcpGateway", null)
     
     inline def setPeerGcpGatewayUndefined: Self = StObject.set(x, "peerGcpGateway", js.undefined)
     
@@ -60,6 +55,6 @@ object SchemaVpnGatewayStatusVpnConnection {
     
     inline def setTunnelsUndefined: Self = StObject.set(x, "tunnels", js.undefined)
     
-    inline def setTunnelsVarargs(value: SchemaVpnGatewayStatusTunnel*): Self = StObject.set(x, "tunnels", js.Array(value :_*))
+    inline def setTunnelsVarargs(value: SchemaVpnGatewayStatusTunnel*): Self = StObject.set(x, "tunnels", js.Array(value*))
   }
 }

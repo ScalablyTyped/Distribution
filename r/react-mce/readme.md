@@ -11,14 +11,11 @@ React TinyMCE component
 | Full name          | react-mce |
 | Keywords           | tinymce, react-component |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 28933 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 778.6666666666666 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/janstuemmel/react-mce)
-- [Bugs](https://github.com/janstuemmel/react-mce/issues)
-- [Repository](https://github.com/janstuemmel/react-mce)
 - [Npm](https://www.npmjs.com/package/react-mce)
     
 

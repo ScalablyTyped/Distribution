@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@lumino/widgets", "SplitLayout")
 @js.native
-class SplitLayout protected ()
+open class SplitLayout protected ()
   extends typings.luminoWidgets.splitlayoutMod.SplitLayout {
   /**
     * Construct a new split layout.

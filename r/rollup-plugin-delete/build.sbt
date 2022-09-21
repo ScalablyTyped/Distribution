@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-delete"
-version := "2.0.0-c48dcd"
-scalaVersion := "3.0.1"
+version := "2.0.0-f0ffd2"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "del" % "6.0.0-84870d",
-  "org.scalablytyped" %%% "fast-glob" % "3.2.4-6e50c7",
-  "org.scalablytyped" %%% "globby" % "11.0.1-8593b0",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "nodelib__fs_dot_scandir" % "2.1.3-c66984",
-  "org.scalablytyped" %%% "nodelib__fs_dot_stat" % "2.0.3-ea5389",
-  "org.scalablytyped" %%% "nodelib__fs_dot_walk" % "1.2.4-eab1ac",
-  "org.scalablytyped" %%% "rollup" % "2.33.3-779c1f",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "del" % "7.0.0-9bf12d",
+  "org.scalablytyped" %%% "fast-glob" % "3.2.12-168ee0",
+  "org.scalablytyped" %%% "globby" % "13.1.2-dab2ef",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "nodelib__fs_dot_scandir" % "2.1.5-40e953",
+  "org.scalablytyped" %%% "nodelib__fs_dot_stat" % "2.0.5-edcf29",
+  "org.scalablytyped" %%% "nodelib__fs_dot_walk" % "1.2.8-bccb6e",
+  "org.scalablytyped" %%% "rollup" % "2.79.0-aeffd0",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

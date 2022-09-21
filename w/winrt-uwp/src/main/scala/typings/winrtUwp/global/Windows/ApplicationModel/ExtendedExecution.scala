@@ -72,7 +72,7 @@ object ExtendedExecution {
   @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionSession")
   @js.native
   /** Creates an ExtendedExecutionSession object. */
-  class ExtendedExecutionSession ()
+  open class ExtendedExecutionSession ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionSession
   
@@ -144,7 +144,7 @@ object ExtendedExecution {
     @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundSession")
     @js.native
     /** Creates an ExtendedExecutionForegroundSession object */
-    class ExtendedExecutionForegroundSession ()
+    open class ExtendedExecutionForegroundSession ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundSession
   }

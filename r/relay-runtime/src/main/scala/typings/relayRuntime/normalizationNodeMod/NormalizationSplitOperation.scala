@@ -9,13 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NormalizationSplitOperation
   extends StObject
      with GeneratedNode
+     with NormalizationNode
+     with NormalizationRootNode
      with NormalizationSelectableNode {
+  
+  val argumentDefinitions: js.UndefOr[js.Array[NormalizationLocalArgumentDefinition]] = js.undefined
   
   val kind: String
   
-  val metadata: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
+  val metadata: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
   
-  // 'SplitOperation';
+  // "SplitOperation";
   val name: String
   
   val selections: js.Array[NormalizationSelection]
@@ -29,9 +33,15 @@ object NormalizationSplitOperation {
   
   extension [Self <: NormalizationSplitOperation](x: Self) {
     
+    inline def setArgumentDefinitions(value: js.Array[NormalizationLocalArgumentDefinition]): Self = StObject.set(x, "argumentDefinitions", value.asInstanceOf[js.Any])
+    
+    inline def setArgumentDefinitionsUndefined: Self = StObject.set(x, "argumentDefinitions", js.undefined)
+    
+    inline def setArgumentDefinitionsVarargs(value: NormalizationLocalArgumentDefinition*): Self = StObject.set(x, "argumentDefinitions", js.Array(value*))
+    
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    inline def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataNull: Self = StObject.set(x, "metadata", null)
     
@@ -41,6 +51,6 @@ object NormalizationSplitOperation {
     
     inline def setSelections(value: js.Array[NormalizationSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value*))
   }
 }

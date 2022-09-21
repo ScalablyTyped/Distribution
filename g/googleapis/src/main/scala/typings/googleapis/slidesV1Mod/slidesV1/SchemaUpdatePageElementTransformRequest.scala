@@ -4,23 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Updates the transform of a page element.  Updating the transform of a group
-  * will change the absolute transform of the page elements in that group,
-  * which can change their visual appearance. See the documentation for
-  * PageElement.transform for more details.
-  */
 trait SchemaUpdatePageElementTransformRequest extends StObject {
   
   /**
     * The apply mode of the transform update.
     */
-  var applyMode: js.UndefOr[String] = js.undefined
+  var applyMode: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The object ID of the page element to update.
     */
-  var objectId: js.UndefOr[String] = js.undefined
+  var objectId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The input transform matrix used to update the page element.
@@ -38,9 +32,13 @@ object SchemaUpdatePageElementTransformRequest {
     
     inline def setApplyMode(value: String): Self = StObject.set(x, "applyMode", value.asInstanceOf[js.Any])
     
+    inline def setApplyModeNull: Self = StObject.set(x, "applyMode", null)
+    
     inline def setApplyModeUndefined: Self = StObject.set(x, "applyMode", js.undefined)
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    
+    inline def setObjectIdNull: Self = StObject.set(x, "objectId", null)
     
     inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     

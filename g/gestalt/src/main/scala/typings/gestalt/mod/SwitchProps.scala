@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.EventValue
+import typings.gestalt.anon.ValueBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +13,13 @@ trait SwitchProps extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  def onChange(args: EventValue): Unit
+  def onChange(args: ValueBoolean): Unit
   
   var switched: js.UndefOr[Boolean] = js.undefined
 }
 object SwitchProps {
   
-  inline def apply(id: String, onChange: EventValue => Unit): SwitchProps = {
+  inline def apply(id: String, onChange: ValueBoolean => Unit): SwitchProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[SwitchProps]
   }
@@ -36,7 +36,7 @@ object SwitchProps {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnChange(value: EventValue => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: ValueBoolean => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setSwitched(value: Boolean): Self = StObject.set(x, "switched", value.asInstanceOf[js.Any])
     

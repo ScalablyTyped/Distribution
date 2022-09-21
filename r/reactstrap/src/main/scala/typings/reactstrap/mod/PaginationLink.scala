@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "PaginationLink")
+@JSImport("reactstrap", "PaginationLink")
 @js.native
-class PaginationLink () extends default
+open class PaginationLink () extends default

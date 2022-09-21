@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UnscopedEmitHelper
   extends StObject
+     with EmitHelperBase
      with EmitHelper {
   
   @JSName("scoped")

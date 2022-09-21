@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "Uri")
 @js.native
-class Uri ()
+open class Uri ()
   extends StObject
      with UriComponents {
   
@@ -91,7 +91,7 @@ object Uri {
   
   inline def from(components: Fragment): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any]).asInstanceOf[Uri]
   
-  inline def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.Uri */ Boolean]
+  inline def isUri(thing: Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.Uri */ Boolean]
   
   /**
     * Join a Uri path with path fragments and normalizes the resulting path.
@@ -100,10 +100,10 @@ object Uri {
     * @param pathFragment The path fragment to add to the Uri path.
     * @returns The resulting Uri.
     */
-  inline def joinPath(uri: Uri, pathFragment: String*): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(uri.asInstanceOf[js.Any], pathFragment.asInstanceOf[js.Any])).asInstanceOf[Uri]
+  inline def joinPath(uri: Uri, pathFragment: String*): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(List(uri.asInstanceOf[js.Any]).`++`(pathFragment.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Uri]
   
   /**
-    * Creates a new Uri from a string, e.g. `http://www.msft.com/some/path`,
+    * Creates a new Uri from a string, e.g. `http://www.example.com/some/path`,
     * `file:///usr/home`, or `scheme:with/path`.
     *
     * @param value A string which represents an Uri (see `Uri#toString`).

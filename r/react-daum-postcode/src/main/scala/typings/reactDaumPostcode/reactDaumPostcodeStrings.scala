@@ -1,5 +1,6 @@
 package typings.reactDaumPostcode
 
+import typings.reactDaumPostcode.loadPostcodeMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,8 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactDaumPostcodeStrings {
   
   @js.native
+  sealed trait COMPLETE_CLOSE
+    extends StObject
+       with State
+  inline def COMPLETE_CLOSE: COMPLETE_CLOSE = "COMPLETE_CLOSE".asInstanceOf[COMPLETE_CLOSE]
+  
+  @js.native
   sealed trait E extends StObject
   inline def E: E = "E".asInstanceOf[E]
+  
+  @js.native
+  sealed trait FORCE_CLOSE
+    extends StObject
+       with State
+  inline def FORCE_CLOSE: FORCE_CLOSE = "FORCE_CLOSE".asInstanceOf[FORCE_CLOSE]
   
   @js.native
   sealed trait J extends StObject

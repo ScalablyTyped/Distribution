@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteImagePipelineRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the image pipeline to delete. 
+    * The Amazon Resource Name (ARN) of the image pipeline to delete.
     */
   var imagePipelineArn: ImagePipelineArn
 }

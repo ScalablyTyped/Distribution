@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fs-extra", "Dirent")
 @js.native
-class Dirent ()
+open class Dirent ()
   extends typings.node.fsMod.Dirent

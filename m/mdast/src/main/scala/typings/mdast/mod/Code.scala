@@ -7,19 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Code
   extends StObject
-     with Literal
-     with BlockContent {
+     with Literal {
   
-  var lang: js.UndefOr[String] = js.undefined
+  var lang: js.UndefOr[String | Null] = js.undefined
   
-  var meta: js.UndefOr[String] = js.undefined
+  var meta: js.UndefOr[String | Null] = js.undefined
   
   @JSName("type")
   var type_Code: code
 }
 object Code {
   
-  inline def apply(value: js.Any): Code = {
+  inline def apply(value: Any): Code = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("code")
     __obj.asInstanceOf[Code]
@@ -29,9 +28,13 @@ object Code {
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
+    inline def setLangNull: Self = StObject.set(x, "lang", null)
+    
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     inline def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaNull: Self = StObject.set(x, "meta", null)
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     

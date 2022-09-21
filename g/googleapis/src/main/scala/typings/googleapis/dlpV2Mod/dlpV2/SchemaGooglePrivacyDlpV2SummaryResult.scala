@@ -4,21 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A collection that informs the user the number of times a particular
-  * `TransformationResultCode` and error details occurred.
-  */
 trait SchemaGooglePrivacyDlpV2SummaryResult extends StObject {
   
-  var code: js.UndefOr[String] = js.undefined
-  
-  var count: js.UndefOr[String] = js.undefined
+  /**
+    * Outcome of the transformation.
+    */
+  var code: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A place for warnings or errors to show up if a transformation didn&#39;t
-    * work as expected.
+    * Number of transformations counted by this result.
     */
-  var details: js.UndefOr[String] = js.undefined
+  var count: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * A place for warnings or errors to show up if a transformation didn't work as expected.
+    */
+  var details: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2SummaryResult {
   
@@ -31,13 +32,19 @@ object SchemaGooglePrivacyDlpV2SummaryResult {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
+    
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
+    inline def setCountNull: Self = StObject.set(x, "count", null)
+    
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    
+    inline def setDetailsNull: Self = StObject.set(x, "details", null)
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
   }

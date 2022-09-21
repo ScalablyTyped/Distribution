@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DotBlock")
 @js.native
-class DotBlock protected ()
+open class DotBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.DotBlock {
   /**

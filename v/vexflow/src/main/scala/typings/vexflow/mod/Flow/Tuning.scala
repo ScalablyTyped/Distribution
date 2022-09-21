@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.Tuning")
 @js.native
-class Tuning ()
+open class Tuning ()
   extends StObject
      with typings.vexflow.Vex.Flow.Tuning {
   def this(tuningString: String) = this()

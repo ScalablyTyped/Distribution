@@ -11,13 +11,13 @@ object isPostalCodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(str: String, locale: typings.validator.mod.validator.PostalCodeLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
   /**
     * Check if the string is a postal code
     *
     * @param locale - PostalCodeLocale
     */
+  inline def default(str: String, locale: typings.validator.mod.validator.PostalCodeLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def default_any(str: String, locale: any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type PostalCodeLocale = typings.validator.mod.validator.PostalCodeLocale

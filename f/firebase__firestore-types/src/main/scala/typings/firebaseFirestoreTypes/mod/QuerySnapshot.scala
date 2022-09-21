@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "QuerySnapshot")
 @js.native
-/* private */ class QuerySnapshot[T] () extends StObject {
+/* private */ open class QuerySnapshot[T] () extends StObject {
   
   def docChanges(): js.Array[DocumentChange[T]] = js.native
   def docChanges(options: SnapshotListenOptions): js.Array[DocumentChange[T]] = js.native
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   val empty: Boolean = js.native
   
   def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot[T], Unit]): Unit = js.native
-  def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot[T], Unit], thisArg: js.Any): Unit = js.native
+  def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot[T], Unit], thisArg: Any): Unit = js.native
   
   def isEqual(other: QuerySnapshot[T]): Boolean = js.native
   

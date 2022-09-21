@@ -24,17 +24,12 @@ trait PolygonDrawAction
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#complete)
     */
-  def complete(): Unit = js.native
-  
-  /**
-    * Returns the actual z value to be used when drawing geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#getGeometryZValue)
-    */
-  def getGeometryZValue(): Unit = js.native
+  def complete(): scala.Unit = js.native
   
   /**
     * The drawing mode.
+    *
+    * @default hybrid
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#mode)
     */
@@ -52,11 +47,4 @@ trait PolygonDrawAction
   def on_vertexadd(name: `vertex-add`, eventHandler: PolygonDrawActionVertexAddEventHandler): IHandle = js.native
   @JSName("on")
   def on_vertexremove(name: `vertex-remove`, eventHandler: PolygonDrawActionVertexRemoveEventHandler): IHandle = js.native
-  
-  /**
-    * Two-dimensional array of numbers representing the coordinates of each vertex comprising the geometry being drawn.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#vertices)
-    */
-  val vertices: js.Array[js.Array[Double]] = js.native
 }

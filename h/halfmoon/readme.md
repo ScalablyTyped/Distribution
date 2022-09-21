@@ -10,10 +10,10 @@ Front-end framework with a built-in dark mode and full customizability using CSS
 | ------------------ | :-------------: |
 | Full name          | halfmoon |
 | Keywords           | halfmoon, css, javascript, dark-theme, dark-mode, dashboard, web-framework, css-framework, css-variables, css-custom-properties |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 2452 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2345.6666666666665 |
+| # stars            | 2708.0 |
 
 ## Links
 - [Homepage](https://github.com/halfmoonui/halfmoon#readme)

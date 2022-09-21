@@ -1,6 +1,11 @@
 package typings.reactMdTransition
 
 import typings.react.mod.ReactElement
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
+import typings.reactMdTransition.typesMod.CSSTransitionComponentImplementation
+import typings.reactMdTransition.typesMod.CSSTransitionHookOptions
+import typings.reactMdTransition.typesMod.TransitionTimeout
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +16,22 @@ object csstransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CSSTransition(
-    hasChildrenTemporaryTransitionInOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ js.Any
-  ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CSSTransition")(hasChildrenTemporaryTransitionInOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def CSSTransition[E /* <: HTMLElement */](hasChildrenClassNameOptions: CSSTransitionProps[E]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CSSTransition")(hasChildrenClassNameOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  
+  trait CSSTransitionProps[E /* <: HTMLElement */]
+    extends StObject
+       with CSSTransitionHookOptions[E]
+       with CSSTransitionComponentImplementation[E]
+  object CSSTransitionProps {
+    
+    inline def apply[E /* <: HTMLElement */](
+      children: ReactElement,
+      classNames: CSSTransitionClassNames,
+      timeout: TransitionTimeout,
+      transitionIn: Boolean
+    ): CSSTransitionProps[E] = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], transitionIn = transitionIn.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CSSTransitionProps[E]]
+    }
+  }
 }

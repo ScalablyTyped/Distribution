@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListItemUpdateData extends StObject {
   
   /**
-    *
     * Gets or sets the level of the item in the list.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var level: js.UndefOr[Double] = js.undefined

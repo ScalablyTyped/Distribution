@@ -1,7 +1,7 @@
 package typings.schemaUtils
 
-import typings.ajv.mod.ErrorParameters
 import typings.schemaUtils.validationErrorMod.default
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object validateMod {
   
   @JSImport("schema-utils/declarations/validate", "ValidationError")
   @js.native
-  class ValidationError protected () extends default {
+  open class ValidationError protected () extends default {
     /**
       * @param {Array<SchemaUtilErrorObject>} errors
       * @param {Schema} schema
@@ -36,17 +36,19 @@ object validateMod {
   inline def validate(schema: Schema, options: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def validate(schema: Schema, options: js.Object, configuration: ValidationErrorConfiguration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type ErrorObject = typings.ajv.mod.ErrorObject
+  type ErrorObject = typings.ajv.distTypesMod.ErrorObject[String, Record[String, Any], Any]
   
   trait Extend extends StObject {
     
-    var formatExclusiveMaximum: js.UndefOr[Boolean] = js.undefined
+    var formatExclusiveMaximum: js.UndefOr[String] = js.undefined
     
-    var formatExclusiveMinimum: js.UndefOr[Boolean] = js.undefined
+    var formatExclusiveMinimum: js.UndefOr[String] = js.undefined
     
-    var formatMaximum: js.UndefOr[Double] = js.undefined
+    var formatMaximum: js.UndefOr[String] = js.undefined
     
-    var formatMinimum: js.UndefOr[Double] = js.undefined
+    var formatMinimum: js.UndefOr[String] = js.undefined
+    
+    var link: js.UndefOr[String] = js.undefined
   }
   object Extend {
     
@@ -57,21 +59,25 @@ object validateMod {
     
     extension [Self <: Extend](x: Self) {
       
-      inline def setFormatExclusiveMaximum(value: Boolean): Self = StObject.set(x, "formatExclusiveMaximum", value.asInstanceOf[js.Any])
+      inline def setFormatExclusiveMaximum(value: String): Self = StObject.set(x, "formatExclusiveMaximum", value.asInstanceOf[js.Any])
       
       inline def setFormatExclusiveMaximumUndefined: Self = StObject.set(x, "formatExclusiveMaximum", js.undefined)
       
-      inline def setFormatExclusiveMinimum(value: Boolean): Self = StObject.set(x, "formatExclusiveMinimum", value.asInstanceOf[js.Any])
+      inline def setFormatExclusiveMinimum(value: String): Self = StObject.set(x, "formatExclusiveMinimum", value.asInstanceOf[js.Any])
       
       inline def setFormatExclusiveMinimumUndefined: Self = StObject.set(x, "formatExclusiveMinimum", js.undefined)
       
-      inline def setFormatMaximum(value: Double): Self = StObject.set(x, "formatMaximum", value.asInstanceOf[js.Any])
+      inline def setFormatMaximum(value: String): Self = StObject.set(x, "formatMaximum", value.asInstanceOf[js.Any])
       
       inline def setFormatMaximumUndefined: Self = StObject.set(x, "formatMaximum", js.undefined)
       
-      inline def setFormatMinimum(value: Double): Self = StObject.set(x, "formatMinimum", value.asInstanceOf[js.Any])
+      inline def setFormatMinimum(value: String): Self = StObject.set(x, "formatMinimum", value.asInstanceOf[js.Any])
       
       inline def setFormatMinimumUndefined: Self = StObject.set(x, "formatMinimum", js.undefined)
+      
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     }
   }
   
@@ -83,28 +89,28 @@ object validateMod {
   
   type PostFormatter = js.Function2[/* formattedError */ String, /* error */ SchemaUtilErrorObject, String]
   
-  type Schema = (typings.jsonSchema.mod.JSONSchema4 & Extend) | (typings.jsonSchema.mod.JSONSchema6 & Extend) | (typings.jsonSchema.mod.JSONSchema7 & Extend)
+  type Schema = (JSONSchema4 & Extend) | (JSONSchema6 & Extend) | (JSONSchema7 & Extend)
   
   trait SchemaUtilErrorObject
     extends StObject
-       with typings.ajv.mod.ErrorObject {
+       with typings.ajv.distTypesMod.ErrorObject[String, Record[String, Any], Any] {
     
-    var children: js.UndefOr[js.Array[typings.ajv.mod.ErrorObject]] = js.undefined
+    var children: js.UndefOr[js.Array[ErrorObject]] = js.undefined
   }
   object SchemaUtilErrorObject {
     
-    inline def apply(dataPath: String, keyword: String, params: ErrorParameters, schemaPath: String): SchemaUtilErrorObject = {
-      val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
+    inline def apply(instancePath: String, keyword: String, params: Record[String, Any], schemaPath: String): SchemaUtilErrorObject = {
+      val __obj = js.Dynamic.literal(instancePath = instancePath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaUtilErrorObject]
     }
     
     extension [Self <: SchemaUtilErrorObject](x: Self) {
       
-      inline def setChildren(value: js.Array[typings.ajv.mod.ErrorObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ErrorObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: typings.ajv.mod.ErrorObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ErrorObject*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   

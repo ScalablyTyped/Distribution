@@ -11,7 +11,7 @@ trait GoogleActionsV2OrdersLineItemUpdate extends StObject {
     * Update to the line item extension. Type must match the item's
     * existing extension type.
     */
-  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var `extension`: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * New line item-level state.
@@ -37,7 +37,7 @@ object GoogleActionsV2OrdersLineItemUpdate {
   
   extension [Self <: GoogleActionsV2OrdersLineItemUpdate](x: Self) {
     
-    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     

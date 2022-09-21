@@ -35,7 +35,7 @@ object HeatmapSliderProperties {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setViewModel(value: HeatmapSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

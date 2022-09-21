@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait DebuggerStatement_
   extends StObject
      with BaseNode
+     with Standardized
      with Statement {
   
   @JSName("type")

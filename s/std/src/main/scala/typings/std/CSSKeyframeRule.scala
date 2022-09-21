@@ -9,8 +9,10 @@ trait CSSKeyframeRule
   extends StObject
      with CSSRule {
   
+  /* standard dom */
   var keyText: java.lang.String
   
+  /* standard dom */
   val style: CSSStyleDeclaration
 }
 object CSSKeyframeRule {

@@ -8,7 +8,7 @@ object registryInfoMod {
   
   trait RegistryInfo extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var rootKey: String
     
@@ -20,7 +20,7 @@ object registryInfoMod {
   }
   object RegistryInfo {
     
-    inline def apply(data: js.Any, rootKey: String, subkey: String, `type`: String, value: String): RegistryInfo = {
+    inline def apply(data: Any, rootKey: String, subkey: String, `type`: String, value: String): RegistryInfo = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], rootKey = rootKey.asInstanceOf[js.Any], subkey = subkey.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegistryInfo]
@@ -28,7 +28,7 @@ object registryInfoMod {
     
     extension [Self <: RegistryInfo](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setRootKey(value: String): Self = StObject.set(x, "rootKey", value.asInstanceOf[js.Any])
       

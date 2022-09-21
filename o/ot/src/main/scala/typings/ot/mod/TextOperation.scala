@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ot", "TextOperation")
 @js.native
-class TextOperation () extends StObject {
+open class TextOperation () extends StObject {
   
   /**
     * Apply an operation to a string, returning a new string. Throws an error if

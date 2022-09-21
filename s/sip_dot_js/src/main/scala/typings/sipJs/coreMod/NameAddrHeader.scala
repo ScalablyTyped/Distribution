@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js/lib/core", "NameAddrHeader")
 @js.native
-class NameAddrHeader protected ()
+open class NameAddrHeader protected ()
   extends typings.sipJs.messagesMod.NameAddrHeader {
   /**
     * Constructor

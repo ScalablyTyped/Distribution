@@ -1,9 +1,11 @@
 package typings.restifyCookies
 
+import typings.restify.mod.Next
+import typings.restify.mod.Request
+import typings.restify.mod.Response
 import typings.restifyCookies.restifyCookiesStrings.lax
 import typings.restifyCookies.restifyCookiesStrings.none
 import typings.restifyCookies.restifyCookiesStrings.strict
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[js.Any]
+  inline def parse(req: Request, res: Response, next: Next): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* augmented module */
   object restifyAugmentingMod {
@@ -25,7 +27,7 @@ object mod {
       
       var encode: js.UndefOr[js.Function1[/* input */ String, String]] = js.undefined
       
-      var expires: js.UndefOr[Date] = js.undefined
+      var expires: js.UndefOr[js.Date] = js.undefined
       
       var httpOnly: js.UndefOr[Boolean] = js.undefined
       
@@ -54,7 +56,7 @@ object mod {
         
         inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
         
-        inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
         inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
         
@@ -82,18 +84,18 @@ object mod {
     
     trait Request extends StObject {
       
-      var cookies: js.Any
+      var cookies: Any
     }
     object Request {
       
-      inline def apply(cookies: js.Any): Request = {
+      inline def apply(cookies: Any): typings.restifyCookies.mod.restifyAugmentingMod.Request = {
         val __obj = js.Dynamic.literal(cookies = cookies.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Request]
+        __obj.asInstanceOf[typings.restifyCookies.mod.restifyAugmentingMod.Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      extension [Self <: typings.restifyCookies.mod.restifyAugmentingMod.Request](x: Self) {
         
-        inline def setCookies(value: js.Any): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+        inline def setCookies(value: Any): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       }
     }
     

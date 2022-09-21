@@ -9,7 +9,7 @@ object eventsourcePolyfillMod {
   
   @JSImport("eventsource/lib/eventsource-polyfill", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.eventsource.mod.^ {
     def this(url: String) = this()
     def this(url: String, eventSourceInitDict: EventSourceInitDict) = this()

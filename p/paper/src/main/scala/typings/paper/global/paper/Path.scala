@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param segments - An array of segments (or points to be
   * converted to segments) that will be added to the path
   */
-class Path ()
+open class Path ()
   extends StObject
      with typings.paper.paper.Path {
   /** 
@@ -40,7 +40,7 @@ object Path {
   
   @JSGlobal("paper.Path.Arc")
   @js.native
-  class Arc protected ()
+  open class Arc protected ()
     extends StObject
        with typings.paper.paper.Path {
     /** 
@@ -63,7 +63,7 @@ object Path {
   
   @JSGlobal("paper.Path.Circle")
   @js.native
-  class Circle protected ()
+  open class Circle protected ()
     extends StObject
        with typings.paper.paper.Path {
     /** 
@@ -85,7 +85,7 @@ object Path {
   
   @JSGlobal("paper.Path.Ellipse")
   @js.native
-  class Ellipse protected ()
+  open class Ellipse protected ()
     extends StObject
        with typings.paper.paper.Path {
     /** 
@@ -106,7 +106,7 @@ object Path {
   
   @JSGlobal("paper.Path.Line")
   @js.native
-  class Line protected ()
+  open class Line protected ()
     extends StObject
        with typings.paper.paper.Path {
     /** 
@@ -128,7 +128,7 @@ object Path {
   
   @JSGlobal("paper.Path.Rectangle")
   @js.native
-  class Rectangle protected ()
+  open class Rectangle protected ()
     extends StObject
        with typings.paper.paper.Path {
     /** 
@@ -168,7 +168,7 @@ object Path {
   
   @JSGlobal("paper.Path.RegularPolygon")
   @js.native
-  class RegularPolygon protected ()
+  open class RegularPolygon protected ()
     extends StObject
        with typings.paper.paper.Path {
     /** 
@@ -191,7 +191,7 @@ object Path {
   
   @JSGlobal("paper.Path.Star")
   @js.native
-  class Star protected ()
+  open class Star protected ()
     extends StObject
        with typings.paper.paper.Path {
     /** 

@@ -10,10 +10,10 @@ Combine an array of streams into a single duplex stream using pump and duplexify
 | ------------------ | :-------------: |
 | Full name          | pumpify |
 | Keywords           | pump, duplexify, duplex, streams, stream, pipeline, combine |
-| # releases         | 3 |
-| # dependents       | 309 |
-| # downloads        | 485930560 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5.5959105666666664E7 |
+| # stars            | 224.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/pumpify)

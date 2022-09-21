@@ -32,6 +32,11 @@ trait GetSigningPlatformResponse extends StObject {
   var platformId: js.UndefOr[PlatformId] = js.undefined
   
   /**
+    * A flag indicating whether signatures generated for the signing platform can be revoked.
+    */
+  var revocationSupported: js.UndefOr[bool] = js.undefined
+  
+  /**
     * A list of configurations applied to the target platform at signing.
     */
   var signingConfiguration: js.UndefOr[SigningConfiguration] = js.undefined
@@ -74,6 +79,10 @@ object GetSigningPlatformResponse {
     inline def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
     
     inline def setPlatformIdUndefined: Self = StObject.set(x, "platformId", js.undefined)
+    
+    inline def setRevocationSupported(value: bool): Self = StObject.set(x, "revocationSupported", value.asInstanceOf[js.Any])
+    
+    inline def setRevocationSupportedUndefined: Self = StObject.set(x, "revocationSupported", js.undefined)
     
     inline def setSigningConfiguration(value: SigningConfiguration): Self = StObject.set(x, "signingConfiguration", value.asInstanceOf[js.Any])
     

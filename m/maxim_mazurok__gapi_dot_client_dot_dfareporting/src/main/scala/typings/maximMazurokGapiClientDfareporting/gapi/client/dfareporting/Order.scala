@@ -87,7 +87,7 @@ object Order {
     
     inline def setApproverUserProfileIdsUndefined: Self = StObject.set(x, "approverUserProfileIds", js.undefined)
     
-    inline def setApproverUserProfileIdsVarargs(value: String*): Self = StObject.set(x, "approverUserProfileIds", js.Array(value :_*))
+    inline def setApproverUserProfileIdsVarargs(value: String*): Self = StObject.set(x, "approverUserProfileIds", js.Array(value*))
     
     inline def setBuyerInvoiceId(value: String): Self = StObject.set(x, "buyerInvoiceId", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object Order {
     
     inline def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
     
-    inline def setContactsVarargs(value: OrderContact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+    inline def setContactsVarargs(value: OrderContact*): Self = StObject.set(x, "contacts", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -147,13 +147,13 @@ object Order {
     
     inline def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
     
-    inline def setSiteIdVarargs(value: String*): Self = StObject.set(x, "siteId", js.Array(value :_*))
+    inline def setSiteIdVarargs(value: String*): Self = StObject.set(x, "siteId", js.Array(value*))
     
     inline def setSiteNames(value: js.Array[String]): Self = StObject.set(x, "siteNames", value.asInstanceOf[js.Any])
     
     inline def setSiteNamesUndefined: Self = StObject.set(x, "siteNames", js.undefined)
     
-    inline def setSiteNamesVarargs(value: String*): Self = StObject.set(x, "siteNames", js.Array(value :_*))
+    inline def setSiteNamesVarargs(value: String*): Self = StObject.set(x, "siteNames", js.Array(value*))
     
     inline def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     

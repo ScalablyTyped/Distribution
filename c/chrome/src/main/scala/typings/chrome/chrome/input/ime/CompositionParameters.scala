@@ -41,7 +41,7 @@ object CompositionParameters {
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: CompositionParameterSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: CompositionParameterSegment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
     

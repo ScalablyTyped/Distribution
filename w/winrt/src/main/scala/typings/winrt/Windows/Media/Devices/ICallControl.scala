@@ -16,17 +16,17 @@ trait ICallControl extends StObject {
   
   def indicateNewOutgoingCall(): Double
   
-  var onanswerrequested: js.Any
+  var onanswerrequested: Any
   
-  var onaudiotransferrequested: js.Any
+  var onaudiotransferrequested: Any
   
-  var ondialrequested: js.Any
+  var ondialrequested: Any
   
-  var onhanguprequested: js.Any
+  var onhanguprequested: Any
   
-  var onkeypadpressed: js.Any
+  var onkeypadpressed: Any
   
-  var onredialrequested: js.Any
+  var onredialrequested: Any
 }
 object ICallControl {
   
@@ -36,12 +36,12 @@ object ICallControl {
     indicateActiveCall: Double => Unit,
     indicateNewIncomingCall: (Boolean, String) => Double,
     indicateNewOutgoingCall: () => Double,
-    onanswerrequested: js.Any,
-    onaudiotransferrequested: js.Any,
-    ondialrequested: js.Any,
-    onhanguprequested: js.Any,
-    onkeypadpressed: js.Any,
-    onredialrequested: js.Any
+    onanswerrequested: Any,
+    onaudiotransferrequested: Any,
+    ondialrequested: Any,
+    onhanguprequested: Any,
+    onkeypadpressed: Any,
+    onredialrequested: Any
   ): ICallControl = {
     val __obj = js.Dynamic.literal(endCall = js.Any.fromFunction1(endCall), hasRinger = hasRinger.asInstanceOf[js.Any], indicateActiveCall = js.Any.fromFunction1(indicateActiveCall), indicateNewIncomingCall = js.Any.fromFunction2(indicateNewIncomingCall), indicateNewOutgoingCall = js.Any.fromFunction0(indicateNewOutgoingCall), onanswerrequested = onanswerrequested.asInstanceOf[js.Any], onaudiotransferrequested = onaudiotransferrequested.asInstanceOf[js.Any], ondialrequested = ondialrequested.asInstanceOf[js.Any], onhanguprequested = onhanguprequested.asInstanceOf[js.Any], onkeypadpressed = onkeypadpressed.asInstanceOf[js.Any], onredialrequested = onredialrequested.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICallControl]
@@ -59,16 +59,16 @@ object ICallControl {
     
     inline def setIndicateNewOutgoingCall(value: () => Double): Self = StObject.set(x, "indicateNewOutgoingCall", js.Any.fromFunction0(value))
     
-    inline def setOnanswerrequested(value: js.Any): Self = StObject.set(x, "onanswerrequested", value.asInstanceOf[js.Any])
+    inline def setOnanswerrequested(value: Any): Self = StObject.set(x, "onanswerrequested", value.asInstanceOf[js.Any])
     
-    inline def setOnaudiotransferrequested(value: js.Any): Self = StObject.set(x, "onaudiotransferrequested", value.asInstanceOf[js.Any])
+    inline def setOnaudiotransferrequested(value: Any): Self = StObject.set(x, "onaudiotransferrequested", value.asInstanceOf[js.Any])
     
-    inline def setOndialrequested(value: js.Any): Self = StObject.set(x, "ondialrequested", value.asInstanceOf[js.Any])
+    inline def setOndialrequested(value: Any): Self = StObject.set(x, "ondialrequested", value.asInstanceOf[js.Any])
     
-    inline def setOnhanguprequested(value: js.Any): Self = StObject.set(x, "onhanguprequested", value.asInstanceOf[js.Any])
+    inline def setOnhanguprequested(value: Any): Self = StObject.set(x, "onhanguprequested", value.asInstanceOf[js.Any])
     
-    inline def setOnkeypadpressed(value: js.Any): Self = StObject.set(x, "onkeypadpressed", value.asInstanceOf[js.Any])
+    inline def setOnkeypadpressed(value: Any): Self = StObject.set(x, "onkeypadpressed", value.asInstanceOf[js.Any])
     
-    inline def setOnredialrequested(value: js.Any): Self = StObject.set(x, "onredialrequested", value.asInstanceOf[js.Any])
+    inline def setOnredialrequested(value: Any): Self = StObject.set(x, "onredialrequested", value.asInstanceOf[js.Any])
   }
 }

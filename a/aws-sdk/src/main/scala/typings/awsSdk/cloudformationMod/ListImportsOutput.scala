@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListImportsOutput extends StObject {
   
   /**
-    * A list of stack names that are importing the specified exported output value. 
+    * A list of stack names that are importing the specified exported output value.
     */
   var Imports: js.UndefOr[typings.awsSdk.cloudformationMod.Imports] = js.undefined
   
@@ -29,7 +29,7 @@ object ListImportsOutput {
     
     inline def setImportsUndefined: Self = StObject.set(x, "Imports", js.undefined)
     
-    inline def setImportsVarargs(value: StackName*): Self = StObject.set(x, "Imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: StackName*): Self = StObject.set(x, "Imports", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

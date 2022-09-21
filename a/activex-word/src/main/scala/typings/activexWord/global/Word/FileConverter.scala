@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.FileConverter")
 @js.native
-/* private */ class FileConverter ()
+/* private */ open class FileConverter ()
   extends StObject
      with typings.activexWord.Word.FileConverter {
   
@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val OpenFormat: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Path: String = js.native

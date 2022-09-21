@@ -13,5 +13,5 @@ trait Prompt
   @JSName("options")
   var options_Prompt: PromptOptions = js.native
   
-  var result: JQueryPromise[js.Any] = js.native
+  var result: JQueryPromise[Any] = js.native
 }

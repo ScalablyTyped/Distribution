@@ -6,7 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`greater-than`
 import typings.arcgisJsApi.arcgisJsApiStrings.`less-than`
 import typings.arcgisJsApi.arcgisJsApiStrings.`not-between`
 import typings.arcgisJsApi.arcgisJsApiStrings.`not-equal`
-import typings.arcgisJsApi.arcgisJsApiStrings.between
+import typings.arcgisJsApi.arcgisJsApiStrings.between_
 import typings.arcgisJsApi.arcgisJsApiStrings.equal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,9 +41,11 @@ trait HistogramRangeSliderViewModel
   /**
     * Determines the SQL where clause generated in [generateWhereClause()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#generateWhereClause) for filtering purposes.
     *
+    * @default equal
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#rangeType)
     */
-  var rangeType: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between` = js.native
+  var rangeType: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between_ | `not-between` = js.native
   
   /**
     * Indicates the standard deviation of the dataset above and below the `average`.

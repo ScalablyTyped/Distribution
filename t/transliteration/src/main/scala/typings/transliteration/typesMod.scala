@@ -1,7 +1,6 @@
 package typings.transliteration
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import typings.transliteration.charmapMod.Charmap_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -47,7 +46,7 @@ object typesMod {
   
   type OptionReplaceArray = js.Array[OptionReplaceArrayItem]
   
-  type OptionReplaceArrayItem = js.Tuple2[String | RegExp, String]
+  type OptionReplaceArrayItem = js.Tuple2[String | js.RegExp, String]
   
   type OptionReplaceCombined = OptionReplaceArray | OptionReplaceObject
   
@@ -188,7 +187,7 @@ object typesMod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setReplace(value: OptionReplaceCombined): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
@@ -196,11 +195,11 @@ object typesMod {
       
       inline def setReplaceAfterUndefined: Self = StObject.set(x, "replaceAfter", js.undefined)
       
-      inline def setReplaceAfterVarargs(value: OptionReplaceArrayItem*): Self = StObject.set(x, "replaceAfter", js.Array(value :_*))
+      inline def setReplaceAfterVarargs(value: OptionReplaceArrayItem*): Self = StObject.set(x, "replaceAfter", js.Array(value*))
       
       inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      inline def setReplaceVarargs(value: OptionReplaceArrayItem*): Self = StObject.set(x, "replace", js.Array(value :_*))
+      inline def setReplaceVarargs(value: OptionReplaceArrayItem*): Self = StObject.set(x, "replace", js.Array(value*))
       
       inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       

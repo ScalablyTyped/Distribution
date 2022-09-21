@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for coordinates of a building in Directory API.
-  */
 trait SchemaBuildingCoordinates extends StObject {
   
   /**
     * Latitude in decimal degrees.
     */
-  var latitude: js.UndefOr[Double] = js.undefined
+  var latitude: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Longitude in decimal degrees.
     */
-  var longitude: js.UndefOr[Double] = js.undefined
+  var longitude: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaBuildingCoordinates {
   
@@ -30,9 +27,13 @@ object SchemaBuildingCoordinates {
     
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
+    inline def setLatitudeNull: Self = StObject.set(x, "latitude", null)
+    
     inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
     inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    
+    inline def setLongitudeNull: Self = StObject.set(x, "longitude", null)
     
     inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
   }

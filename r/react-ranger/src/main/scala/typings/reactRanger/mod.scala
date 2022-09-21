@@ -137,7 +137,7 @@ object mod {
       
       inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      inline def setStepsVarargs(value: Double*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Double*): Self = StObject.set(x, "steps", js.Array(value*))
       
       inline def setTickSize(value: Double): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
       
@@ -147,11 +147,11 @@ object mod {
       
       inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
       
-      inline def setTicksVarargs(value: Double*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+      inline def setTicksVarargs(value: Double*): Self = StObject.set(x, "ticks", js.Array(value*))
       
       inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   

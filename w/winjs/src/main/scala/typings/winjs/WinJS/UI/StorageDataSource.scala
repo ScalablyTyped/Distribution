@@ -27,7 +27,7 @@ trait StorageDataSource[T] extends StObject {
     * @param details The set of additional properties to be attached to the event object.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, details: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, details: Any): Boolean = js.native
   
   //#endregion Constructors
   //#region Methods
@@ -46,5 +46,5 @@ trait StorageDataSource[T] extends StObject {
     * @param useCapture Optional. The same value that was passed to addEventListener for this listener. It may be omitted if it was omitted when calling addEventListener.
     **/
   def removeEventListener(`type`: String, eventHandler: js.Function): Unit = js.native
-  def removeEventListener(`type`: String, eventHandler: js.Function, useCapture: js.Any): Unit = js.native
+  def removeEventListener(`type`: String, eventHandler: js.Function, useCapture: Any): Unit = js.native
 }

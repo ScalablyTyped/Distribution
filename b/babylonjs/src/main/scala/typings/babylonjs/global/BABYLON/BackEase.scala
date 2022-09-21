@@ -11,21 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://easings.net/#easeInBack
   * @param amplitude Defines the amplitude of the function
   */
-class BackEase ()
+open class BackEase ()
   extends StObject
      with typings.babylonjs.BABYLON.BackEase {
   def this(/** Defines the amplitude of the function */
   amplitude: Double) = this()
   
   /* private */ /* CompleteClass */
-  var _easingMode: js.Any = js.native
+  var _easingMode: Any = js.native
   
   /** Defines the amplitude of the function */
   /* CompleteClass */
   var amplitude: Double = js.native
   
   /**
-    * Given an input gradient between 0 and 1, this returns the corrseponding value
+    * Given an input gradient between 0 and 1, this returns the corresponding value
     * of the easing function.
     * The link below provides some of the most common examples of easing functions.
     * @see https://easings.net/
@@ -36,6 +36,7 @@ class BackEase ()
   override def ease(gradient: Double): Double = js.native
   
   /**
+    * @param gradient
     * @hidden
     */
   /* CompleteClass */

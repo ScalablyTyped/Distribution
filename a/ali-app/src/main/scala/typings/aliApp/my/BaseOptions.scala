@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BaseOptions[R, E] extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function1[/* res */ Any, Unit]] = js.undefined
   
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[js.Function1[/* res */ E, Unit]] = js.undefined
@@ -24,7 +24,7 @@ object BaseOptions {
   
   extension [Self <: BaseOptions[?, ?], R, E](x: Self & (BaseOptions[R, E])) {
     
-    inline def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     

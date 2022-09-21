@@ -14,7 +14,7 @@ trait GetCredentialReportResponse extends StObject {
   /**
     *  The date and time when the credential report was created, in ISO 8601 date-time format.
     */
-  var GeneratedTime: js.UndefOr[dateType] = js.undefined
+  var GeneratedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The format (MIME type) of the credential report.
@@ -34,7 +34,7 @@ object GetCredentialReportResponse {
     
     inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    inline def setGeneratedTime(value: dateType): Self = StObject.set(x, "GeneratedTime", value.asInstanceOf[js.Any])
+    inline def setGeneratedTime(value: js.Date): Self = StObject.set(x, "GeneratedTime", value.asInstanceOf[js.Any])
     
     inline def setGeneratedTimeUndefined: Self = StObject.set(x, "GeneratedTime", js.undefined)
     

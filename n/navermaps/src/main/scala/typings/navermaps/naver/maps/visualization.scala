@@ -85,14 +85,14 @@ object visualization {
     
     def getDrawing(id: String): DrawingOverlay = js.native
     
-    def getDrawings(): js.Any = js.native
+    def getDrawings(): Any = js.native
     
     def getMap(): Map | Null = js.native
     
     def setMap(): Unit = js.native
     def setMap(map: Map): Unit = js.native
     
-    def toGeoJson(): js.Any = js.native
+    def toGeoJson(): Any = js.native
   }
   
   trait DotMapOptions extends StObject {
@@ -126,7 +126,7 @@ object visualization {
       
       inline def setData(value: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: (LatLng | PointArrayLiteral | WeightedLocation)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (LatLng | PointArrayLiteral | WeightedLocation)*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
@@ -165,7 +165,7 @@ object visualization {
     
     def getColorMap(): SpectrumStyle = js.native
     
-    def getData(): js.Array[LatLng | PointArrayLiteral] = js.native
+    def getData(): js.Array[LatLng | PointArrayLiteral | WeightedLocation] = js.native
     
     def getMap(): Map | Null = js.native
     
@@ -176,12 +176,12 @@ object visualization {
     
     def setColorMap(colormap: SpectrumStyle, inReverse: Boolean): Unit = js.native
     
-    def setData(data: js.Array[LatLng | PointArrayLiteral]): Unit = js.native
+    def setData(data: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): Unit = js.native
     
     def setMap(): Unit = js.native
     def setMap(map: Map): Unit = js.native
     
-    def setOptions(key: String, value: js.Any): Unit = js.native
+    def setOptions(key: String, value: Any): Unit = js.native
     def setOptions(options: HeatMapOptions): Unit = js.native
   }
   
@@ -212,7 +212,7 @@ object visualization {
       
       inline def setData(value: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: (LatLng | PointArrayLiteral | WeightedLocation)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (LatLng | PointArrayLiteral | WeightedLocation)*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

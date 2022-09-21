@@ -10,7 +10,7 @@ trait IgDataChartCrosshairPoint
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * The x coordinate.

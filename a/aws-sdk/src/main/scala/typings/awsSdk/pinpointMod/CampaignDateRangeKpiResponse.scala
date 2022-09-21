@@ -19,7 +19,7 @@ trait CampaignDateRangeKpiResponse extends StObject {
   /**
     * The last date and time of the date range that was used to filter the query results, in extended ISO 8601 format. The date range is inclusive.
     */
-  var EndTime: timestampIso8601
+  var EndTime: js.Date
   
   /**
     * The name of the metric, also referred to as a key performance indicator (KPI), that the data was retrieved for. This value describes the associated metric and consists of two or more terms, which are comprised of lowercase alphanumeric characters, separated by a hyphen. For a list of possible values, see the Amazon Pinpoint Developer Guide.
@@ -39,17 +39,17 @@ trait CampaignDateRangeKpiResponse extends StObject {
   /**
     * The first date and time of the date range that was used to filter the query results, in extended ISO 8601 format. The date range is inclusive.
     */
-  var StartTime: timestampIso8601
+  var StartTime: js.Date
 }
 object CampaignDateRangeKpiResponse {
   
   inline def apply(
     ApplicationId: string,
     CampaignId: string,
-    EndTime: timestampIso8601,
+    EndTime: js.Date,
     KpiName: string,
     KpiResult: BaseKpiResult,
-    StartTime: timestampIso8601
+    StartTime: js.Date
   ): CampaignDateRangeKpiResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any], EndTime = EndTime.asInstanceOf[js.Any], KpiName = KpiName.asInstanceOf[js.Any], KpiResult = KpiResult.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CampaignDateRangeKpiResponse]
@@ -61,7 +61,7 @@ object CampaignDateRangeKpiResponse {
     
     inline def setCampaignId(value: string): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setKpiName(value: string): Self = StObject.set(x, "KpiName", value.asInstanceOf[js.Any])
     
@@ -71,6 +71,6 @@ object CampaignDateRangeKpiResponse {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

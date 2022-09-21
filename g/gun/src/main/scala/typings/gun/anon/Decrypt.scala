@@ -1,7 +1,6 @@
 package typings.gun.anon
 
 import typings.gun.mod.Gun.CryptoKeyPair
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Decrypt extends StObject {
   
-  def decrypt(message: js.Any, pair: String): js.Promise[js.Any] = js.native
+  def decrypt(message: Any, pair: String): js.Promise[Any] = js.native
   /**
     * Read the secret data, if and only if you are allowed to.
     * @param message is what comes from .encrypt.
     * @param pair from .pair or the passphrase to decypher the message.
     */
-  def decrypt(message: js.Any, pair: CryptoKeyPair): js.Promise[js.Any] = js.native
+  def decrypt(message: Any, pair: CryptoKeyPair): js.Promise[Any] = js.native
   
-  def encrypt(data: js.Any, pair: String): js.Promise[String] = js.native
+  def encrypt(data: Any, pair: String): js.Promise[String] = js.native
   /**
     * Takes some data that you want to keep secret and encrypts it so nobody else can read it.
     * @param data is the content that you want to encrypt.
     * @param pair from .pair or a passphrase you want to use as a cypher to encrypt with.
     */
-  def encrypt(data: js.Any, pair: CryptoKeyPair): js.Promise[String] = js.native
+  def encrypt(data: Any, pair: CryptoKeyPair): js.Promise[String] = js.native
   
   /** Last known error */
-  var err: js.UndefOr[Error] = js.native
+  var err: js.UndefOr[js.Error] = js.native
   
   /**
     * This generates a cryptographically secure public/private key pair - be careful not to leak the private keys!
@@ -42,18 +41,18 @@ trait Decrypt extends StObject {
     * @param data is the content that you want to prove is authorized.
     * @param pair is from .pair.
     */
-  def sign(data: js.Any, pair: CryptoKeyPair): js.Promise[js.UndefOr[String]] = js.native
+  def sign(data: Any, pair: CryptoKeyPair): js.Promise[js.UndefOr[String]] = js.native
   
   /** If you want SEA to throw while in development, turn SEA.throw = true on, but please do not use this in production. */
   var `throw`: js.UndefOr[Boolean] = js.native
   
-  def verify(message: js.Any, pair: String): js.Promise[js.Any] = js.native
+  def verify(message: Any, pair: String): js.Promise[Any] = js.native
   /**
     * Gets the data if and only if the message can be verified as coming from the person you expect.
     * @param message is what comes from .sign.
     * @param pair from .pair or its public key text (pair.pub).
     */
-  def verify(message: js.Any, pair: CryptoKeyPair): js.Promise[js.Any] = js.native
+  def verify(message: Any, pair: CryptoKeyPair): js.Promise[Any] = js.native
   
   /**
     * This gives you a Proof of Work (POW) / Hashing of Data
@@ -64,22 +63,22 @@ trait Decrypt extends StObject {
     * @param callback function to executed upon execution of proof
     * @param opt default: {name: 'PBKDF2', encode: 'base64'}
     */
-  def work(data: js.Any): js.Promise[js.UndefOr[String]] = js.native
-  def work(data: js.Any, pair: js.Any): js.Promise[js.UndefOr[String]] = js.native
-  def work(data: js.Any, pair: js.Any, callback: js.Function1[/* data */ js.UndefOr[String], Unit]): js.Promise[js.UndefOr[String]] = js.native
+  def work(data: Any): js.Promise[js.UndefOr[String]] = js.native
+  def work(data: Any, pair: Any): js.Promise[js.UndefOr[String]] = js.native
+  def work(data: Any, pair: Any, callback: js.Function1[/* data */ js.UndefOr[String], Unit]): js.Promise[js.UndefOr[String]] = js.native
   def work(
-    data: js.Any,
-    pair: js.Any,
+    data: Any,
+    pair: Any,
     callback: js.Function1[/* data */ js.UndefOr[String], Unit],
     opt: PartialnameSHA256PBKDF2en
   ): js.Promise[js.UndefOr[String]] = js.native
-  def work(data: js.Any, pair: js.Any, callback: Unit, opt: PartialnameSHA256PBKDF2en): js.Promise[js.UndefOr[String]] = js.native
-  def work(data: js.Any, pair: Unit, callback: js.Function1[/* data */ js.UndefOr[String], Unit]): js.Promise[js.UndefOr[String]] = js.native
+  def work(data: Any, pair: Any, callback: Unit, opt: PartialnameSHA256PBKDF2en): js.Promise[js.UndefOr[String]] = js.native
+  def work(data: Any, pair: Unit, callback: js.Function1[/* data */ js.UndefOr[String], Unit]): js.Promise[js.UndefOr[String]] = js.native
   def work(
-    data: js.Any,
+    data: Any,
     pair: Unit,
     callback: js.Function1[/* data */ js.UndefOr[String], Unit],
     opt: PartialnameSHA256PBKDF2en
   ): js.Promise[js.UndefOr[String]] = js.native
-  def work(data: js.Any, pair: Unit, callback: Unit, opt: PartialnameSHA256PBKDF2en): js.Promise[js.UndefOr[String]] = js.native
+  def work(data: Any, pair: Unit, callback: Unit, opt: PartialnameSHA256PBKDF2en): js.Promise[js.UndefOr[String]] = js.native
 }

@@ -21,32 +21,13 @@ trait PortalItemResource
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html#fetch)
     */
-  def fetch(): js.Promise[js.Any] = js.native
-  def fetch(responseType: Unit, options: PortalItemResourceFetchOptions): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_arraybuffer(responseType: `array-buffer`): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_arraybuffer(responseType: `array-buffer`, options: PortalItemResourceFetchOptions): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_blob(responseType: blob): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_blob(responseType: blob, options: PortalItemResourceFetchOptions): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_document(responseType: document): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_document(responseType: document, options: PortalItemResourceFetchOptions): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_json(responseType: json): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_json(responseType: json, options: PortalItemResourceFetchOptions): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_text(responseType: text): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_text(responseType: text, options: PortalItemResourceFetchOptions): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_xml(responseType: xml): js.Promise[js.Any] = js.native
-  @JSName("fetch")
-  def fetch_xml(responseType: xml, options: PortalItemResourceFetchOptions): js.Promise[js.Any] = js.native
+  def fetch(): js.Promise[Any] = js.native
+  def fetch(responseType: json | xml | text | blob | `array-buffer` | document): js.Promise[Any] = js.native
+  def fetch(
+    responseType: json | xml | text | blob | `array-buffer` | document,
+    options: PortalItemResourceFetchOptions
+  ): js.Promise[Any] = js.native
+  def fetch(responseType: scala.Unit, options: PortalItemResourceFetchOptions): js.Promise[Any] = js.native
   
   /**
     * Path of the resource relative to `{ITEM}/resources/`.
@@ -67,8 +48,8 @@ trait PortalItemResource
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html#update)
     */
-  def update(content: Blob): js.Promise[js.Any] = js.native
-  def update(content: Blob, options: PortalItemResourceUpdateOptions): js.Promise[js.Any] = js.native
+  def update(content: Blob): js.Promise[Any] = js.native
+  def update(content: Blob, options: PortalItemResourceUpdateOptions): js.Promise[Any] = js.native
   
   /**
     * The absolute url to the item resource.

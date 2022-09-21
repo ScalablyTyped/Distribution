@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Clearfix")
 @js.native
-class Clearfix ()
+open class Clearfix ()
   extends typings.reactBootstrap.libMod.Clearfix

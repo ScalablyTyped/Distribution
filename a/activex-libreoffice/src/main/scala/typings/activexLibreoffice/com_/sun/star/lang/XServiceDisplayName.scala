@@ -31,7 +31,7 @@ object XServiceDisplayName {
   inline def apply(
     acquire: () => Unit,
     getServiceDisplayName: Locale => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XServiceDisplayName = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getServiceDisplayName = js.Any.fromFunction1(getServiceDisplayName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

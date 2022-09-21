@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.hapiCatbox.mod.Id
 import typings.hapiHapi.mod.CachePolicyOptions
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ResponseToolkit
 import typings.hapiYar.anon.ClearInvalid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,6 +43,14 @@ object mod extends Shortcut {
     def clear(key: String): Unit = js.native
     
     /**
+      * used to manually prepare the session state and commit it into the response when the response is taken
+      * over in an onPreResponse handler. Normally, the yar onPreRespinse handler performs the commit, but if
+      * an application extension handler takes over, yar doesn't get a chance to commit the state before the
+      * response goes out. The method requires the hapi h toolkit argument available in the extension handler.
+      */
+    def commit(h: ResponseToolkit): js.Promise[Unit] = js.native
+    
+    /**
       * stores volatile data - data that should be deleted once read.
       * When given no arguments, it will return all of the flash messages and delete the originals.
       * When given only a type, it will return all of the flash messages of that type and delete the originals.
@@ -49,16 +58,20 @@ object mod extends Shortcut {
       * 'isOverride' used to indicate that the message provided should replace
       * any existing value instead of being appended to it (defaults to false).
       */
-    def flash(`type`: String): js.Array[js.Any] = js.native
-    def flash(`type`: String, message: js.Any): js.Array[js.Any] = js.native
-    def flash(`type`: String, message: js.Any, isOverride: Boolean): js.Array[js.Any] = js.native
-    def flash(`type`: String, message: Unit, isOverride: Boolean): js.Array[js.Any] = js.native
+    def flash(): js.Array[Any] = js.native
+    def flash(`type`: String): js.Array[Any] = js.native
+    def flash(`type`: String, message: Any): js.Array[Any] = js.native
+    def flash(`type`: String, message: Any, isOverride: Boolean): js.Array[Any] = js.native
+    def flash(`type`: String, message: Unit, isOverride: Boolean): js.Array[Any] = js.native
+    def flash(`type`: Unit, message: Any): js.Array[Any] = js.native
+    def flash(`type`: Unit, message: Any, isOverride: Boolean): js.Array[Any] = js.native
+    def flash(`type`: Unit, message: Unit, isOverride: Boolean): js.Array[Any] = js.native
     
     /**
       * retrieve value using a key. If 'clear' is 'true', key is cleared on return.
       */
-    def get(key: String): js.Any = js.native
-    def get(key: String, clear: Boolean): js.Any = js.native
+    def get(key: String): Any = js.native
+    def get(key: String, clear: Boolean): Any = js.native
     
     /**
       * Session id, see `customSessionIDGenerator`.
@@ -86,7 +99,7 @@ object mod extends Shortcut {
     /**
       *  assigns values to multiple keys using each 'keysObject' top-level property. Returns the keysObject.
       */
-    def set[T /* <: StringDictionary[js.Any] */](keysObject: T): T = js.native
+    def set[T /* <: StringDictionary[Any] */](keysObject: T): T = js.native
     
     /**
       * Manually notify the session of changes (when using get()
@@ -100,7 +113,7 @@ object mod extends Shortcut {
     /**
       * hapi cache options which includes (among other options):
       */
-    var cache: js.UndefOr[CachePolicyOptions[js.Any]] = js.undefined
+    var cache: js.UndefOr[CachePolicyOptions[Any]] = js.undefined
     
     /**
       * the configuration for cookie-specific features:
@@ -141,7 +154,7 @@ object mod extends Shortcut {
     
     extension [Self <: YarOptions](x: Self) {
       
-      inline def setCache(value: CachePolicyOptions[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: CachePolicyOptions[Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       

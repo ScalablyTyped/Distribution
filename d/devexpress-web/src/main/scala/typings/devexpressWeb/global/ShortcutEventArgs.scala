@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ShortcutEventArgs")
 @js.native
-class ShortcutEventArgs protected ()
+open class ShortcutEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ShortcutEventArgs {
   /**
@@ -17,7 +17,7 @@ class ShortcutEventArgs protected ()
     * @param commandName Specifies the command name.
     * @param htmlEvent Specifies the html event.
     */
-  def this(commandName: String, htmlEvent: js.Any) = this()
+  def this(commandName: String, htmlEvent: Any) = this()
   
   /**
     * Gets the name of a command associated with the keyboard shortcut.
@@ -35,5 +35,5 @@ class ShortcutEventArgs protected ()
     * Gets an object containing information about a keyboard shortcut event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
 }

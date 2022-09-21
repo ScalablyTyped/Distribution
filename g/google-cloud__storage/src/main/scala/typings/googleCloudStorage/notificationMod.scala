@@ -1,11 +1,10 @@
 package typings.googleCloudStorage
 
-import typings.googleCloudCommon.mod.ServiceObject
-import typings.googleCloudCommon.serviceObjectMod.Metadata
-import typings.googleCloudCommon.serviceObjectMod.MetadataCallback
-import typings.googleCloudCommon.utilMod.ResponseBody
 import typings.googleCloudStorage.bucketMod.Bucket
-import typings.std.Error
+import typings.googleCloudStorage.nodejsCommonMod.ServiceObject
+import typings.googleCloudStorage.serviceObjectMod.Metadata
+import typings.googleCloudStorage.serviceObjectMod.MetadataCallback
+import typings.googleCloudStorage.utilMod.ResponseBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +12,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object notificationMod {
   
   /**
+    * The API-formatted resource description of the notification.
+    *
+    * Note: This is not guaranteed to be up-to-date when accessed. To get the
+    * latest record, call the `getMetadata()` method.
+    *
+    * @name Notification#metadata
+    * @type {object}
+    */
+  /**
     * A Notification object is created from your {@link Bucket} object using
     * {@link Bucket#notification}. Use it to interact with Cloud Pub/Sub
     * notifications.
     *
-    * @see [Cloud Pub/Sub Notifications for Google Cloud Storage]{@link https://cloud.google.com/storage/docs/pubsub-notifications}
+    * See {@link https://cloud.google.com/storage/docs/pubsub-notifications| Cloud Pub/Sub Notifications for Google Cloud Storage}
     *
     * @class
     * @hideconstructor
@@ -26,16 +34,17 @@ object notificationMod {
     * @param {string} id The ID of the notification.
     *
     * @example
+    * ```
     * const {Storage} = require('@google-cloud/storage');
     * const storage = new Storage();
     * const myBucket = storage.bucket('my-bucket');
     *
     * const notification = myBucket.notification('1');
+    * ```
     */
   @JSImport("@google-cloud/storage/build/src/notification", "Notification")
   @js.native
-  class Notification protected ()
-    extends ServiceObject[js.Any] {
+  open class Notification protected () extends ServiceObject[Any] {
     def this(bucket: Bucket, id: String) = this()
     
     def delete(options: DeleteNotificationOptions): js.Promise[js.Array[Metadata]] = js.native
@@ -48,7 +57,7 @@ object notificationMod {
     def getMetadata(options: GetNotificationMetadataOptions, callback: MetadataCallback): Unit = js.native
   }
   
-  type DeleteNotificationCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.UndefOr[Metadata], Unit]
+  type DeleteNotificationCallback = js.Function2[/* err */ js.Error | Null, /* apiResponse */ js.UndefOr[Metadata], Unit]
   
   trait DeleteNotificationOptions extends StObject {
     
@@ -70,14 +79,14 @@ object notificationMod {
   }
   
   type GetNotificationCallback = js.Function3[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* notification */ js.UndefOr[Notification | Null], 
     /* apiResponse */ js.UndefOr[Metadata], 
     Unit
   ]
   
   type GetNotificationMetadataCallback = js.Function3[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* metadata */ js.UndefOr[ResponseBody], 
     /* apiResponse */ js.UndefOr[Metadata], 
     Unit

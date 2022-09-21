@@ -17,7 +17,7 @@ trait CreateExperimentRequest extends StObject {
   var DisplayName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
-    * The name of the experiment. The name must be unique in your AWS account and is not case-sensitive.
+    * The name of the experiment. The name must be unique in your Amazon Web Services account and is not case-sensitive.
     */
   var ExperimentName: ExperimentEntityName
   
@@ -49,6 +49,6 @@ object CreateExperimentRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

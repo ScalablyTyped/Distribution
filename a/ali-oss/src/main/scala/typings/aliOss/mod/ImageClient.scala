@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ali-oss", "ImageClient")
 @js.native
-class ImageClient protected () extends StObject {
+open class ImageClient protected () extends StObject {
   def this(options: ImageClientOptions) = this()
   
   /**
@@ -24,8 +24,8 @@ class ImageClient protected () extends StObject {
     * Get an image from the image channel.
     */
   def get(name: String): js.Promise[Content] = js.native
-  def get(name: String, file: js.Any): js.Promise[Content] = js.native
-  def get(name: String, file: js.Any, options: ImageGetOptions): js.Promise[Content] = js.native
+  def get(name: String, file: Any): js.Promise[Content] = js.native
+  def get(name: String, file: Any, options: ImageGetOptions): js.Promise[Content] = js.native
   def get(name: String, file: Unit, options: ImageGetOptions): js.Promise[Content] = js.native
   
   /**

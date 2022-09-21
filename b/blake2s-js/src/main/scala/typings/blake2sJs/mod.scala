@@ -3,7 +3,6 @@ package typings.blake2sJs
 import typings.blake2sJs.blake2sJsNumbers.`32`
 import typings.blake2sJs.blake2sJsNumbers.`64`
 import typings.blake2sJs.blake2sJsNumbers.`8`
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   
   @JSImport("blake2s-js", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with BLAKE2s {
     def this(digestLength: Double) = this()
@@ -68,7 +67,7 @@ object mod {
   @js.native
   trait BLAKE2s extends StObject {
     
-    def digest(): Uint8Array = js.native
+    def digest(): js.typedarray.Uint8Array = js.native
     
     def hexDigest(): String = js.native
     
@@ -99,21 +98,21 @@ object mod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value*))
       
       inline def setPersonalization(value: ByteArray): Self = StObject.set(x, "personalization", value.asInstanceOf[js.Any])
       
       inline def setPersonalizationUndefined: Self = StObject.set(x, "personalization", js.undefined)
       
-      inline def setPersonalizationVarargs(value: Double*): Self = StObject.set(x, "personalization", js.Array(value :_*))
+      inline def setPersonalizationVarargs(value: Double*): Self = StObject.set(x, "personalization", js.Array(value*))
       
       inline def setSalt(value: ByteArray): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
       inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
       
-      inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
+      inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value*))
     }
   }
   
-  type ByteArray = js.Array[Double] | Uint8Array
+  type ByteArray = js.Array[Double] | js.typedarray.Uint8Array
 }

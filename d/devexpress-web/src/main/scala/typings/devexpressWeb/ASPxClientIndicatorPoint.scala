@@ -14,7 +14,7 @@ trait ASPxClientIndicatorPoint
   /**
     * Returns the indicator point's argument.
     */
-  var argument: js.Any
+  var argument: Any
   
   /**
     * Returns the series to which the indicator and its point belong.
@@ -24,23 +24,23 @@ trait ASPxClientIndicatorPoint
   /**
     * Returns the values for the indicator point that the Crosshair Cursor highlights.
     */
-  var values: js.Array[js.Any]
+  var values: js.Array[Any]
 }
 object ASPxClientIndicatorPoint {
   
-  inline def apply(argument: js.Any, chart: ASPxClientWebChart, series: ASPxClientSeries, values: js.Array[js.Any]): ASPxClientIndicatorPoint = {
+  inline def apply(argument: Any, chart: ASPxClientWebChart, series: ASPxClientSeries, values: js.Array[Any]): ASPxClientIndicatorPoint = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientIndicatorPoint]
   }
   
   extension [Self <: ASPxClientIndicatorPoint](x: Self) {
     
-    inline def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
     inline def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

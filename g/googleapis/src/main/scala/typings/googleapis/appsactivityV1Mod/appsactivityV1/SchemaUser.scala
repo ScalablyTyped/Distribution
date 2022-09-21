@@ -4,37 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A representation of a user.
-  */
 trait SchemaUser extends StObject {
   
   /**
-    * A boolean which indicates whether the specified User was deleted. If
-    * true, name, photo and permission_id will be omitted.
+    * A boolean which indicates whether the specified User was deleted. If true, name, photo and permission_id will be omitted.
     */
-  var isDeleted: js.UndefOr[Boolean] = js.undefined
+  var isDeleted: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Whether the user is the authenticated user.
     */
-  var isMe: js.UndefOr[Boolean] = js.undefined
+  var isMe: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The displayable name of the user.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The permission ID associated with this user. Equivalent to the Drive
-    * API&#39;s permission ID for this user, returned as part of the Drive
-    * Permissions resource.
+    * The permission ID associated with this user. Equivalent to the Drive API&#39;s permission ID for this user, returned as part of the Drive Permissions resource.
     */
-  var permissionId: js.UndefOr[String] = js.undefined
+  var permissionId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The profile photo of the user. Not present if the user has no profile
-    * photo.
+    * The profile photo of the user. Not present if the user has no profile photo.
     */
   var photo: js.UndefOr[SchemaPhoto] = js.undefined
 }
@@ -49,17 +42,25 @@ object SchemaUser {
     
     inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
+    inline def setIsDeletedNull: Self = StObject.set(x, "isDeleted", null)
+    
     inline def setIsDeletedUndefined: Self = StObject.set(x, "isDeleted", js.undefined)
     
     inline def setIsMe(value: Boolean): Self = StObject.set(x, "isMe", value.asInstanceOf[js.Any])
+    
+    inline def setIsMeNull: Self = StObject.set(x, "isMe", null)
     
     inline def setIsMeUndefined: Self = StObject.set(x, "isMe", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionIdNull: Self = StObject.set(x, "permissionId", null)
     
     inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
     

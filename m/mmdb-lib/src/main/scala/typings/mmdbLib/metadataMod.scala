@@ -1,7 +1,6 @@
 package typings.mmdbLib
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object metadataMod {
     
     val binaryFormatMinorVersion: Double
     
-    val buildEpoch: Date
+    val buildEpoch: js.Date
     
     val databaseType: String
     
@@ -47,7 +46,7 @@ object metadataMod {
     inline def apply(
       binaryFormatMajorVersion: Double,
       binaryFormatMinorVersion: Double,
-      buildEpoch: Date,
+      buildEpoch: js.Date,
       databaseType: String,
       description: String,
       ipVersion: Double,
@@ -68,7 +67,7 @@ object metadataMod {
       
       inline def setBinaryFormatMinorVersion(value: Double): Self = StObject.set(x, "binaryFormatMinorVersion", value.asInstanceOf[js.Any])
       
-      inline def setBuildEpoch(value: Date): Self = StObject.set(x, "buildEpoch", value.asInstanceOf[js.Any])
+      inline def setBuildEpoch(value: js.Date): Self = StObject.set(x, "buildEpoch", value.asInstanceOf[js.Any])
       
       inline def setDatabaseType(value: String): Self = StObject.set(x, "databaseType", value.asInstanceOf[js.Any])
       
@@ -78,7 +77,7 @@ object metadataMod {
       
       inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
       
       inline def setNodeByteSize(value: Double): Self = StObject.set(x, "nodeByteSize", value.asInstanceOf[js.Any])
       

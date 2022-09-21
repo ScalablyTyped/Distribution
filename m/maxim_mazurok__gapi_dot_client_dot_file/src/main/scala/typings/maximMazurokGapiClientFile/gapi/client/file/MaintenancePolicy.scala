@@ -17,7 +17,7 @@ trait MaintenancePolicy extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.MaintenancePolicy & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.MaintenancePolicy & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -56,7 +56,7 @@ object MaintenancePolicy {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.MaintenancePolicy & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.MaintenancePolicy & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

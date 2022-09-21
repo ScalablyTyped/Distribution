@@ -10,10 +10,10 @@ Typings are for version 4.0
 | ------------------ | :-------------: |
 | Full name          | react-with-styles |
 | Keywords           | react, css, styles, aphrodite, radium, inline, styles, react, native |
-| # releases         | 13 |
-| # dependents       | 62 |
-| # downloads        | 19545099 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2340539.0 |
+| # stars            | 1684.0 |
 
 ## Links
 - [Homepage](https://github.com/airbnb/react-with-styles#readme)

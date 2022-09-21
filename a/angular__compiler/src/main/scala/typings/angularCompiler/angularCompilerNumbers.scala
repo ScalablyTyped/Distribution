@@ -1,20 +1,15 @@
 package typings.angularCompiler
 
-import typings.angularCompiler.astMod.BindingType
-import typings.angularCompiler.astMod.ParsedEventType
-import typings.angularCompiler.constantPoolMod.DefinitionKind
-import typings.angularCompiler.coreMod.ArgumentType
-import typings.angularCompiler.coreMod.AttributeMarker
-import typings.angularCompiler.coreMod.BindingFlags
-import typings.angularCompiler.coreMod.DepFlags
-import typings.angularCompiler.coreMod.InjectFlags
-import typings.angularCompiler.coreMod.NodeFlags
-import typings.angularCompiler.coreMod.QueryBindingType
-import typings.angularCompiler.coreMod.QueryValueType
-import typings.angularCompiler.coreMod.RenderFlags
-import typings.angularCompiler.coreMod.SelectorFlags
-import typings.angularCompiler.coreMod.ViewFlags
-import typings.angularCompiler.templateAstMod.PropertyBindingType
+import typings.angularCompiler.mod.AttributeMarker
+import typings.angularCompiler.mod.BindingType
+import typings.angularCompiler.mod.DeclarationListEmitMode
+import typings.angularCompiler.mod.ForwardRefHandling
+import typings.angularCompiler.mod.InjectFlags
+import typings.angularCompiler.mod.ParseFlags
+import typings.angularCompiler.mod.ParsedEventType
+import typings.angularCompiler.mod.RenderFlags
+import typings.angularCompiler.mod.SelectorFlags
+import typings.angularCompiler.mod.TokenType2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,306 +19,184 @@ object angularCompilerNumbers {
   @js.native
   sealed trait `0`
     extends StObject
-       with ArgumentType
        with AttributeMarker
        with BindingType
-       with DefinitionKind
-       with DepFlags
+       with DeclarationListEmitMode
+       with ForwardRefHandling
        with InjectFlags
-       with NodeFlags
+       with ParseFlags
        with ParsedEventType
-       with PropertyBindingType
-       with QueryBindingType
-       with QueryValueType
-       with ViewFlags
+       with TokenType2
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
     extends StObject
-       with ArgumentType
        with AttributeMarker
-       with BindingFlags
        with BindingType
-       with DefinitionKind
-       with DepFlags
+       with DeclarationListEmitMode
+       with ForwardRefHandling
        with InjectFlags
-       with NodeFlags
+       with ParseFlags
        with ParsedEventType
-       with PropertyBindingType
-       with QueryBindingType
-       with QueryValueType
        with RenderFlags
        with SelectorFlags
+       with TokenType2
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
-  sealed trait `1024`
+  sealed trait `10`
     extends StObject
-       with NodeFlags
-  inline def `1024`: `1024` = 1024.asInstanceOf[`1024`]
+       with TokenType2
+  inline def `10`: `10` = 10.asInstanceOf[`10`]
   
   @js.native
-  sealed trait `1048576`
+  sealed trait `11`
     extends StObject
-       with NodeFlags
-  inline def `1048576`: `1048576` = 1048576.asInstanceOf[`1048576`]
+       with TokenType2
+  inline def `11`: `11` = 11.asInstanceOf[`11`]
   
   @js.native
-  sealed trait `1073741824`
+  sealed trait `12`
     extends StObject
-       with NodeFlags
-  inline def `1073741824`: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
+       with TokenType2
+  inline def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
-  sealed trait `128`
+  sealed trait `13`
     extends StObject
-       with NodeFlags
-  inline def `128`: `128` = 128.asInstanceOf[`128`]
+       with TokenType2
+  inline def `13`: `13` = 13.asInstanceOf[`13`]
   
   @js.native
-  sealed trait `131072`
+  sealed trait `14`
     extends StObject
-       with NodeFlags
-  inline def `131072`: `131072` = 131072.asInstanceOf[`131072`]
-  
-  @js.native
-  sealed trait `134217728`
-    extends StObject
-       with NodeFlags
-  inline def `134217728`: `134217728` = 134217728.asInstanceOf[`134217728`]
+       with TokenType2
+  inline def `14`: `14` = 14.asInstanceOf[`14`]
   
   @js.native
   sealed trait `15`
     extends StObject
-       with BindingFlags
+       with TokenType2
   inline def `15`: `15` = 15.asInstanceOf[`15`]
   
   @js.native
   sealed trait `16`
     extends StObject
-       with BindingFlags
-       with NodeFlags
+       with TokenType2
   inline def `16`: `16` = 16.asInstanceOf[`16`]
   
   @js.native
-  sealed trait `16384`
+  sealed trait `17`
     extends StObject
-       with NodeFlags
-  inline def `16384`: `16384` = 16384.asInstanceOf[`16384`]
+       with TokenType2
+  inline def `17`: `17` = 17.asInstanceOf[`17`]
   
   @js.native
-  sealed trait `16777216`
+  sealed trait `18`
     extends StObject
-       with NodeFlags
-  inline def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
+       with TokenType2
+  inline def `18`: `18` = 18.asInstanceOf[`18`]
+  
+  @js.native
+  sealed trait `19`
+    extends StObject
+       with TokenType2
+  inline def `19`: `19` = 19.asInstanceOf[`19`]
   
   @js.native
   sealed trait `2`
     extends StObject
        with AttributeMarker
-       with BindingFlags
        with BindingType
-       with DefinitionKind
-       with DepFlags
+       with DeclarationListEmitMode
+       with ForwardRefHandling
        with InjectFlags
-       with NodeFlags
-       with PropertyBindingType
-       with QueryValueType
+       with ParseFlags
        with RenderFlags
        with SelectorFlags
-       with ViewFlags
+       with TokenType2
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
-  sealed trait `201326592`
+  sealed trait `20`
     extends StObject
-       with NodeFlags
-  inline def `201326592`: `201326592` = 201326592.asInstanceOf[`201326592`]
+       with TokenType2
+  inline def `20`: `20` = 20.asInstanceOf[`20`]
   
   @js.native
-  sealed trait `201347067`
+  sealed trait `21`
     extends StObject
-       with NodeFlags
-  inline def `201347067`: `201347067` = 201347067.asInstanceOf[`201347067`]
+       with TokenType2
+  inline def `21`: `21` = 21.asInstanceOf[`21`]
   
   @js.native
-  sealed trait `20224`
+  sealed trait `22`
     extends StObject
-       with NodeFlags
-  inline def `20224`: `20224` = 20224.asInstanceOf[`20224`]
+       with TokenType2
+  inline def `22`: `22` = 22.asInstanceOf[`22`]
   
   @js.native
-  sealed trait `2048`
+  sealed trait `23`
     extends StObject
-       with NodeFlags
-  inline def `2048`: `2048` = 2048.asInstanceOf[`2048`]
+       with TokenType2
+  inline def `23`: `23` = 23.asInstanceOf[`23`]
   
   @js.native
-  sealed trait `2097152`
+  sealed trait `24`
     extends StObject
-       with NodeFlags
-  inline def `2097152`: `2097152` = 2097152.asInstanceOf[`2097152`]
-  
-  @js.native
-  sealed trait `224`
-    extends StObject
-       with NodeFlags
-  inline def `224`: `224` = 224.asInstanceOf[`224`]
-  
-  @js.native
-  sealed trait `256`
-    extends StObject
-       with NodeFlags
-  inline def `256`: `256` = 256.asInstanceOf[`256`]
-  
-  @js.native
-  sealed trait `262144`
-    extends StObject
-       with NodeFlags
-  inline def `262144`: `262144` = 262144.asInstanceOf[`262144`]
-  
-  @js.native
-  sealed trait `268435456`
-    extends StObject
-       with NodeFlags
-  inline def `268435456`: `268435456` = 268435456.asInstanceOf[`268435456`]
+       with TokenType2
+  inline def `24`: `24` = 24.asInstanceOf[`24`]
   
   @js.native
   sealed trait `3`
     extends StObject
        with AttributeMarker
        with BindingType
-       with DefinitionKind
-       with NodeFlags
-       with PropertyBindingType
-       with QueryValueType
+       with TokenType2
   inline def `3`: `3` = 3.asInstanceOf[`3`]
-  
-  @js.native
-  sealed trait `32`
-    extends StObject
-       with BindingFlags
-       with NodeFlags
-  inline def `32`: `32` = 32.asInstanceOf[`32`]
-  
-  @js.native
-  sealed trait `32768`
-    extends StObject
-       with NodeFlags
-  inline def `32768`: `32768` = 32768.asInstanceOf[`32768`]
-  
-  @js.native
-  sealed trait `33554432`
-    extends StObject
-       with NodeFlags
-  inline def `33554432`: `33554432` = 33554432.asInstanceOf[`33554432`]
-  
-  @js.native
-  sealed trait `3840`
-    extends StObject
-       with NodeFlags
-  inline def `3840`: `3840` = 3840.asInstanceOf[`3840`]
   
   @js.native
   sealed trait `4`
     extends StObject
        with AttributeMarker
-       with BindingFlags
        with BindingType
-       with DepFlags
        with InjectFlags
-       with NodeFlags
-       with PropertyBindingType
-       with QueryValueType
        with SelectorFlags
+       with TokenType2
   inline def `4`: `4` = 4.asInstanceOf[`4`]
-  
-  @js.native
-  sealed trait `4096`
-    extends StObject
-       with NodeFlags
-  inline def `4096`: `4096` = 4096.asInstanceOf[`4096`]
-  
-  @js.native
-  sealed trait `4194304`
-    extends StObject
-       with NodeFlags
-  inline def `4194304`: `4194304` = 4194304.asInstanceOf[`4194304`]
-  
-  @js.native
-  sealed trait `48`
-    extends StObject
-       with BindingFlags
-  inline def `48`: `48` = 48.asInstanceOf[`48`]
   
   @js.native
   sealed trait `5`
     extends StObject
        with AttributeMarker
+       with TokenType2
   inline def `5`: `5` = 5.asInstanceOf[`5`]
-  
-  @js.native
-  sealed trait `512`
-    extends StObject
-       with NodeFlags
-  inline def `512`: `512` = 512.asInstanceOf[`512`]
-  
-  @js.native
-  sealed trait `524288`
-    extends StObject
-       with NodeFlags
-  inline def `524288`: `524288` = 524288.asInstanceOf[`524288`]
-  
-  @js.native
-  sealed trait `536870912`
-    extends StObject
-       with NodeFlags
-  inline def `536870912`: `536870912` = 536870912.asInstanceOf[`536870912`]
   
   @js.native
   sealed trait `6`
     extends StObject
        with AttributeMarker
+       with TokenType2
   inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
-  sealed trait `64`
+  sealed trait `7`
     extends StObject
-       with NodeFlags
-  inline def `64`: `64` = 64.asInstanceOf[`64`]
-  
-  @js.native
-  sealed trait `65536`
-    extends StObject
-       with NodeFlags
-  inline def `65536`: `65536` = 65536.asInstanceOf[`65536`]
-  
-  @js.native
-  sealed trait `67108864`
-    extends StObject
-       with NodeFlags
-  inline def `67108864`: `67108864` = 67108864.asInstanceOf[`67108864`]
+       with TokenType2
+  inline def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
   sealed trait `8`
     extends StObject
-       with BindingFlags
-       with DepFlags
        with InjectFlags
-       with NodeFlags
        with SelectorFlags
+       with TokenType2
   inline def `8`: `8` = 8.asInstanceOf[`8`]
   
   @js.native
-  sealed trait `8192`
+  sealed trait `9`
     extends StObject
-       with NodeFlags
-  inline def `8192`: `8192` = 8192.asInstanceOf[`8192`]
-  
-  @js.native
-  sealed trait `8388608`
-    extends StObject
-       with NodeFlags
-  inline def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
+       with TokenType2
+  inline def `9`: `9` = 9.asInstanceOf[`9`]
 }

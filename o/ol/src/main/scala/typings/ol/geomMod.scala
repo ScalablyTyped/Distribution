@@ -11,7 +11,7 @@ object geomMod {
   
   @JSImport("ol/geom", "Circle")
   @js.native
-  class Circle protected () extends default {
+  open class Circle protected () extends default {
     def this(center: Coordinate) = this()
     def this(center: Coordinate, opt_radius: Double) = this()
     def this(center: Coordinate, opt_radius: Double, opt_layout: GeometryLayout) = this()
@@ -25,14 +25,14 @@ object geomMod {
   
   @JSImport("ol/geom", "GeometryCollection")
   @js.native
-  class GeometryCollection ()
+  open class GeometryCollection ()
     extends typings.ol.geometryCollectionMod.default {
     def this(opt_geometries: js.Array[typings.ol.geometryMod.default]) = this()
   }
   
   @JSImport("ol/geom", "LineString")
   @js.native
-  class LineString protected ()
+  open class LineString protected ()
     extends typings.ol.lineStringMod.default {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
@@ -40,7 +40,7 @@ object geomMod {
   
   @JSImport("ol/geom", "LinearRing")
   @js.native
-  class LinearRing protected ()
+  open class LinearRing protected ()
     extends typings.ol.linearRingMod.default {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
@@ -48,7 +48,7 @@ object geomMod {
   
   @JSImport("ol/geom", "MultiLineString")
   @js.native
-  class MultiLineString protected ()
+  open class MultiLineString protected ()
     extends typings.ol.multiLineStringMod.default {
     def this(coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default]) = this()
     def this(
@@ -69,7 +69,7 @@ object geomMod {
   
   @JSImport("ol/geom", "MultiPoint")
   @js.native
-  class MultiPoint protected ()
+  open class MultiPoint protected ()
     extends typings.ol.multiPointMod.default {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
@@ -77,7 +77,7 @@ object geomMod {
   
   @JSImport("ol/geom", "MultiPolygon")
   @js.native
-  class MultiPolygon protected ()
+  open class MultiPolygon protected ()
     extends typings.ol.multiPolygonMod.default {
     def this(coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default]) = this()
     def this(
@@ -98,7 +98,7 @@ object geomMod {
   
   @JSImport("ol/geom", "Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends typings.ol.pointMod.default {
     def this(coordinates: Coordinate) = this()
     def this(coordinates: Coordinate, opt_layout: GeometryLayout) = this()
@@ -106,7 +106,7 @@ object geomMod {
   
   @JSImport("ol/geom", "Polygon")
   @js.native
-  class Polygon protected ()
+  open class Polygon protected ()
     extends typings.ol.polygonMod.default {
     def this(coordinates: js.Array[js.Array[Coordinate] | Double]) = this()
     def this(coordinates: js.Array[js.Array[Coordinate] | Double], opt_layout: GeometryLayout) = this()

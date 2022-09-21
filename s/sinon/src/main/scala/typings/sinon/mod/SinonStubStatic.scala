@@ -19,11 +19,11 @@ trait SinonStubStatic extends StObject {
   /**
     * Creates an anonymous stub function
     */
-  def apply[TArgs /* <: js.Array[js.Any] */, R](): SinonStub[TArgs, R] = js.native
+  def apply[TArgs /* <: js.Array[Any] */, R](): SinonStub[TArgs, R] = js.native
   /**
     * Replaces obj.method with a stub function.
     * An exception is thrown if the property is not already a function.
     * The original function can be restored by calling object.method.restore(); (or stub.restore();).
     */
-  def apply[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonStub[js.Any | js.Array[js.Any], js.Any] = js.native
+  def apply[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonStub[Any | js.Array[Any], Any] = js.native
 }

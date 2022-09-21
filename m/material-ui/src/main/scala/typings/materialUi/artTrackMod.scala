@@ -10,10 +10,10 @@ object artTrackMod {
   
   @JSImport("material-ui/svg-icons/av/art-track", JSImport.Default)
   @js.native
-  class default () extends AvArtTrack
+  open class default () extends AvArtTrack
   
   @JSImport("material-ui/svg-icons/av/art-track", "AvArtTrack")
   @js.native
-  class AvArtTrack ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvArtTrack ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

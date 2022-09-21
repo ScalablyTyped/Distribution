@@ -11,9 +11,9 @@ Continuation Local Storage made easy
 | Full name          | @emartech/cls-adapter |
 | Keywords           | threading, shared, context, middleware |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 15471 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2197.6666666666665 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/emartech/cls-adapter#readme)

@@ -9,7 +9,7 @@ trait LabelingJobForWorkteamSummary extends StObject {
   /**
     * The date and time that the labeling job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * A unique identifier for a labeling job. You can use this to refer to a specific labeling job.
@@ -32,20 +32,20 @@ trait LabelingJobForWorkteamSummary extends StObject {
   var NumberOfHumanWorkersPerDataObject: js.UndefOr[typings.awsSdk.sagemakerMod.NumberOfHumanWorkersPerDataObject] = js.undefined
   
   /**
-    * 
+    * The Amazon Web Services account ID of the account used to start the labeling job.
     */
   var WorkRequesterAccountId: AccountId
 }
 object LabelingJobForWorkteamSummary {
   
-  inline def apply(CreationTime: Timestamp, JobReferenceCode: JobReferenceCode, WorkRequesterAccountId: AccountId): LabelingJobForWorkteamSummary = {
+  inline def apply(CreationTime: js.Date, JobReferenceCode: JobReferenceCode, WorkRequesterAccountId: AccountId): LabelingJobForWorkteamSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], JobReferenceCode = JobReferenceCode.asInstanceOf[js.Any], WorkRequesterAccountId = WorkRequesterAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobForWorkteamSummary]
   }
   
   extension [Self <: LabelingJobForWorkteamSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setJobReferenceCode(value: JobReferenceCode): Self = StObject.set(x, "JobReferenceCode", value.asInstanceOf[js.Any])
     

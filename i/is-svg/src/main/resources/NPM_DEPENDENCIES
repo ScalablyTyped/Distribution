@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-svg" : "4.2.1"
+      "is-svg" : "4.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "is-svg" : "4.2.1"
+      "is-svg" : "4.3.2"
     }
   ],
   "compile-devDependencies" : [

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MakeTextLowerCaseCommand")
 @js.native
-class MakeTextLowerCaseCommand ()
+open class MakeTextLowerCaseCommand ()
   extends StObject
      with typings.devexpressWeb.MakeTextLowerCaseCommand {
   

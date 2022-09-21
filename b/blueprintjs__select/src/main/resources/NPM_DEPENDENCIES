@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@blueprintjs/select" : "3.15.0"
+      "@blueprintjs/select" : "4.6.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@blueprintjs/select" : "3.15.0"
+      "@blueprintjs/select" : "4.6.6"
     }
   ],
   "compile-devDependencies" : [

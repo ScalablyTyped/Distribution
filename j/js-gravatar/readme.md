@@ -10,15 +10,12 @@ A vanilla JS library to get a user's gravatar and if it doesn't exist provides o
 | ------------------ | :-------------: |
 | Full name          | js-gravatar |
 | Keywords           | gravatar, avatar, javascript, angular-avatar, angular-gravatar, react-gravatar, react-avatar, vue-gravatar, vue-avatar |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 2538 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2408.0 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/chukwumaijem/js-gravatar#readme)
-- [Bugs](https://github.com/chukwumaijem/js-gravatar/issues)
-- [Repository](https://github.com/chukwumaijem/js-gravatar)
 - [Npm](https://www.npmjs.com/package/js-gravatar)
     
 

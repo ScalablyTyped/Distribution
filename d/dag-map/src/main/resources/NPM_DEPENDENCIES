@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dag-map" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dag-map" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

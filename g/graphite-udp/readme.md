@@ -10,10 +10,10 @@ Graphite UDP client for Node.js
 | ------------------ | :-------------: |
 | Full name          | graphite-udp |
 | Keywords           | graphite, udp |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 5649 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 778.6666666666666 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/fermads/graphite-udp)

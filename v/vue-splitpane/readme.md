@@ -10,10 +10,10 @@ vue split-pane component
 | ------------------ | :-------------: |
 | Full name          | vue-splitpane |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 116 |
-| # downloads        | 779004 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 74009.33333333333 |
+| # stars            | 481.0 |
 
 ## Links
 - [Homepage](https://github.com/PanJiaChen/vue-split-pane#readme)

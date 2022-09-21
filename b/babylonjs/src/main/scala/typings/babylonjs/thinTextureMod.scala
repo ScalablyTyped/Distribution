@@ -12,7 +12,7 @@ object thinTextureMod {
   
   @JSImport("babylonjs/Materials/Textures/thinTexture", "ThinTexture")
   @js.native
-  class ThinTexture protected () extends StObject {
+  open class ThinTexture protected () extends StObject {
     /**
       * Instantiates a new ThinTexture.
       * Base class of all the textures in babylon.
@@ -21,11 +21,14 @@ object thinTextureMod {
       */
     def this(internalTexture: Nullable[InternalTexture]) = this()
     
-    /* private */ var _cachedBaseSize: js.Any = js.native
+    /* private */ var _cachedBaseSize: Any = js.native
     
-    /* private */ var _cachedSize: js.Any = js.native
+    /* private */ var _cachedSize: Any = js.native
     
     /* protected */ var _engine: Nullable[ThinEngine] = js.native
+    
+    /** @hidden */
+    /* protected */ var _initialSamplingMode: Double = js.native
     
     /** @hidden */
     var _texture: Nullable[InternalTexture] = js.native
@@ -77,7 +80,7 @@ object thinTextureMod {
     
     /**
       * Get the underlying lower level texture from Babylon.
-      * @returns the insternal texture
+      * @returns the internal texture
       */
     def getInternalTexture(): Nullable[InternalTexture] = js.native
     
@@ -115,6 +118,11 @@ object thinTextureMod {
       * Release and destroy the underlying lower level texture aka internalTexture.
       */
     def releaseInternalTexture(): Unit = js.native
+    
+    /**
+      * Get the current sampling mode associated with the texture.
+      */
+    def samplingMode: Double = js.native
     
     /**
       * Update the sampling mode of the texture.

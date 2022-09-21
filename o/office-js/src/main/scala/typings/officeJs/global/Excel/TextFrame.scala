@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the text frame of a shape object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.TextFrame")
 @js.native
-class TextFrame ()
+open class TextFrame ()
   extends StObject
      with typings.officeJs.Excel.TextFrame {
   

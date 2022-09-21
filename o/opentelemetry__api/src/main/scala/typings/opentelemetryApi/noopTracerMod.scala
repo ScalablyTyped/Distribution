@@ -1,19 +1,25 @@
 package typings.opentelemetryApi
 
+import typings.opentelemetryApi.contextTypesMod.Context
+import typings.opentelemetryApi.spanMod.Span
+import typings.opentelemetryApi.spanOptionsMod.SpanOptions
 import typings.opentelemetryApi.tracerMod.Tracer
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noopTracerMod {
   
-  @JSImport("@opentelemetry/api/build/src/trace/NoopTracer", "NOOP_TRACER")
-  @js.native
-  val NOOP_TRACER: NoopTracer = js.native
-  
   @JSImport("@opentelemetry/api/build/src/trace/NoopTracer", "NoopTracer")
   @js.native
-  class NoopTracer ()
+  open class NoopTracer ()
     extends StObject
-       with Tracer
+       with Tracer {
+    
+    def startActiveSpan[F /* <: js.Function1[/* span */ Span, ReturnType[F]] */](name: String, opts: Unit, ctx: Unit, fn: F): ReturnType[F] = js.native
+    def startActiveSpan[F /* <: js.Function1[/* span */ Span, ReturnType[F]] */](name: String, opts: Unit, ctx: Context, fn: F): ReturnType[F] = js.native
+    def startActiveSpan[F /* <: js.Function1[/* span */ Span, ReturnType[F]] */](name: String, opts: Unit, fn: F): ReturnType[F] = js.native
+    def startActiveSpan[F /* <: js.Function1[/* span */ Span, ReturnType[F]] */](name: String, opts: SpanOptions, ctx: Unit, fn: F): ReturnType[F] = js.native
+  }
 }

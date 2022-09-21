@@ -10,10 +10,10 @@ A karma reporter that reports results with OSX Notification Center, Growl or not
 | ------------------ | :-------------: |
 | Full name          | karma-notify-reporter |
 | Keywords           | karma-plugin, karma-reporter, osx, notification center, growl, notify-send |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 524238 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 31851.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/jdcataldo/karma-notify-reporter#readme)

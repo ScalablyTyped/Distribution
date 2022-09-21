@@ -47,7 +47,7 @@ object SaleResource {
     
     inline def setPayment_hold_reasonsUndefined: Self = StObject.set(x, "payment_hold_reasons", js.undefined)
     
-    inline def setPayment_hold_reasonsVarargs(value: String*): Self = StObject.set(x, "payment_hold_reasons", js.Array(value :_*))
+    inline def setPayment_hold_reasonsVarargs(value: String*): Self = StObject.set(x, "payment_hold_reasons", js.Array(value*))
     
     inline def setPayment_hold_status(value: String): Self = StObject.set(x, "payment_hold_status", value.asInstanceOf[js.Any])
     

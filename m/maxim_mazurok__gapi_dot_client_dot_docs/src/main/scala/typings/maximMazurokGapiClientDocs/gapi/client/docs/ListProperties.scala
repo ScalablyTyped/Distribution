@@ -25,6 +25,6 @@ object ListProperties {
     
     inline def setNestingLevelsUndefined: Self = StObject.set(x, "nestingLevels", js.undefined)
     
-    inline def setNestingLevelsVarargs(value: NestingLevel*): Self = StObject.set(x, "nestingLevels", js.Array(value :_*))
+    inline def setNestingLevelsVarargs(value: NestingLevel*): Self = StObject.set(x, "nestingLevels", js.Array(value*))
   }
 }

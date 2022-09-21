@@ -4,8 +4,11 @@ import typings.blueprintjsCore.popoverMod.PopoverInteractionKind
 import typings.blueprintjsCore.popoverSharedPropsMod.PopoverPosition
 import typings.popperJs.mod.Boundary
 import typings.popperJs.mod.Modifiers
+import typings.popperJs.mod.Placement
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.HTMLProps
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
@@ -27,6 +30,8 @@ trait PartialIPopoverProps extends StObject {
   var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
   
   var captureDismiss: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -78,15 +83,19 @@ trait PartialIPopoverProps extends StObject {
   
   var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
   
+  var placement: js.UndefOr[Placement] = js.undefined
+  
   var popoverClassName: js.UndefOr[String] = js.undefined
   
-  var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
+  var popoverRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
   
   var portalClassName: js.UndefOr[String] = js.undefined
   
   var portalContainer: js.UndefOr[HTMLElement] = js.undefined
   
   var position: js.UndefOr[PopoverPosition] = js.undefined
+  
+  var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
   
   var target: js.UndefOr[String | Element] = js.undefined
   
@@ -95,7 +104,7 @@ trait PartialIPopoverProps extends StObject {
   var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
   
   var targetTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
   ] = js.undefined
   
   var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -103,7 +112,7 @@ trait PartialIPopoverProps extends StObject {
   var usePortal: js.UndefOr[Boolean] = js.undefined
   
   var wrapperTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
   ] = js.undefined
 }
 object PartialIPopoverProps {
@@ -134,6 +143,10 @@ object PartialIPopoverProps {
     inline def setCaptureDismiss(value: Boolean): Self = StObject.set(x, "captureDismiss", value.asInstanceOf[js.Any])
     
     inline def setCaptureDismissUndefined: Self = StObject.set(x, "captureDismiss", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -225,11 +238,19 @@ object PartialIPopoverProps {
     
     inline def setOpenOnTargetFocusUndefined: Self = StObject.set(x, "openOnTargetFocus", js.undefined)
     
+    inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
     inline def setPopoverClassName(value: String): Self = StObject.set(x, "popoverClassName", value.asInstanceOf[js.Any])
     
     inline def setPopoverClassNameUndefined: Self = StObject.set(x, "popoverClassName", js.undefined)
     
-    inline def setPopoverRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
+    inline def setPopoverRef(value: Ref[HTMLElement]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
+    
+    inline def setPopoverRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
+    
+    inline def setPopoverRefNull: Self = StObject.set(x, "popoverRef", null)
     
     inline def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
     
@@ -245,6 +266,10 @@ object PartialIPopoverProps {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
+    inline def setShouldReturnFocusOnClose(value: Boolean): Self = StObject.set(x, "shouldReturnFocusOnClose", value.asInstanceOf[js.Any])
+    
+    inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
+    
     inline def setTarget(value: String | Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetClassName(value: String): Self = StObject.set(x, "targetClassName", value.asInstanceOf[js.Any])
@@ -255,7 +280,7 @@ object PartialIPopoverProps {
     
     inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
     
-    inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+    inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
     
     inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
     
@@ -269,7 +294,7 @@ object PartialIPopoverProps {
     
     inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
     
-    inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
+    inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
     
     inline def setWrapperTagNameUndefined: Self = StObject.set(x, "wrapperTagName", js.undefined)
   }

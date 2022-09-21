@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "compute_alpha.Resource$Interconnectattachments")
 @js.native
-class ResourceInterconnectattachments protected ()
+open class ResourceInterconnectattachments protected ()
   extends typings.googleapis.alphaMod.computeAlpha.ResourceInterconnectattachments {
   def this(context: APIRequestContext) = this()
 }

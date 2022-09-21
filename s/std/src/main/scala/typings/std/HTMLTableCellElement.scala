@@ -10,68 +10,71 @@ trait HTMLTableCellElement
   extends StObject
      with HTMLElement {
   
-  /**
-    * Sets or retrieves abbreviated text for the object.
-    */
+  /** Sets or retrieves abbreviated text for the object. */
+  /* standard dom */
   var abbr: java.lang.String = js.native
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
   /**
     * Sets or retrieves how the object is aligned with adjacent text.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var align: java.lang.String = js.native
   
   /**
     * Sets or retrieves a comma-delimited list of conceptual categories associated with the object.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var axis: java.lang.String = js.native
   
   /** @deprecated */
+  /* standard dom */
   var bgColor: java.lang.String = js.native
   
-  /**
-    * Retrieves the position of the object in the cells collection of a row.
-    */
+  /** Retrieves the position of the object in the cells collection of a row. */
+  /* standard dom */
   val cellIndex: Double = js.native
   
   /** @deprecated */
+  /* standard dom */
   var ch: java.lang.String = js.native
   
   /** @deprecated */
+  /* standard dom */
   var chOff: java.lang.String = js.native
   
-  /**
-    * Sets or retrieves the number columns in the table that the object should span.
-    */
+  /** Sets or retrieves the number columns in the table that the object should span. */
+  /* standard dom */
   var colSpan: Double = js.native
   
-  /**
-    * Sets or retrieves a list of header cells that provide information for the object.
-    */
+  /** Sets or retrieves a list of header cells that provide information for the object. */
+  /* standard dom */
   var headers: java.lang.String = js.native
   
   /**
     * Sets or retrieves the height of the object.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var height: java.lang.String = js.native
   
   /**
     * Sets or retrieves whether the browser automatically performs wordwrap.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var noWrap: scala.Boolean = js.native
   
   /* InferMemberOverrides */
@@ -85,22 +88,22 @@ trait HTMLTableCellElement
     options: EventListenerOptions
   ): Unit = js.native
   
-  /**
-    * Sets or retrieves how many rows in a table the cell should span.
-    */
+  /** Sets or retrieves how many rows in a table the cell should span. */
+  /* standard dom */
   var rowSpan: Double = js.native
   
-  /**
-    * Sets or retrieves the group of cells in a table to which the object's information applies.
-    */
+  /** Sets or retrieves the group of cells in a table to which the object's information applies. */
+  /* standard dom */
   var scope: java.lang.String = js.native
   
   /** @deprecated */
+  /* standard dom */
   var vAlign: java.lang.String = js.native
   
   /**
     * Sets or retrieves the width of the object.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var width: java.lang.String = js.native
 }

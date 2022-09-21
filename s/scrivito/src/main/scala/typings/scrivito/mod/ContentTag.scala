@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "ContentTag")
 @js.native
-class ContentTag protected ()
-  extends Component[ContentTagProps, js.Any, js.Any] {
+open class ContentTag protected () extends Component[ContentTagProps, Any, Any] {
   def this(props: ContentTagProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ContentTagProps, context: js.Any) = this()
+  def this(props: ContentTagProps, context: Any) = this()
 }

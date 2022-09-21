@@ -10,8 +10,8 @@ trait ListBackupOperationsResponse extends StObject {
   var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The list of matching backup long-running operations. Each operation's name will be prefixed by the backup's name and the operation's metadata will be of type CreateBackupMetadata.
-    * Operations returned include those that are pending or have completed/failed/canceled within the last 7 days. Operations returned are ordered by
+    * The list of matching backup long-running operations. Each operation's name will be prefixed by the backup's name. The operation's metadata field type `metadata.type_url` describes
+    * the type of the metadata. Operations returned include those that are pending or have completed/failed/canceled within the last 7 days. Operations returned are ordered by
     * `operation.metadata.value.progress.start_time` in descending order starting from the most recently started operation.
     */
   var operations: js.UndefOr[js.Array[Operation]] = js.undefined
@@ -33,6 +33,6 @@ object ListBackupOperationsResponse {
     
     inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value*))
   }
 }

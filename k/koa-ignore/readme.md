@@ -10,10 +10,10 @@ Koa middleware to make other middleware conditional
 | ------------------ | :-------------: |
 | Full name          | koa-ignore |
 | Keywords           | koa, skip, condition |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 795 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 186.66666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/smcmurray/koa-ignore#readme)

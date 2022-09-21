@@ -1,7 +1,6 @@
 package typings.chromeApps.global.chrome
 
 import typings.chromeApps.chrome.enterprise.platformKeys.Token
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,7 +101,10 @@ object enterprise {
       * @param challenge A challenge as emitted by the Verified Access Web API.
       * @param callback Called back with the challenge response.
       */
-    inline def challengeMachineKey(challenge: ArrayBuffer, callback: js.Function1[/* response */ ArrayBuffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def challengeMachineKey(
+      challenge: js.typedarray.ArrayBuffer,
+      callback: js.Function1[/* response */ js.typedarray.ArrayBuffer, Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * @since **Since Chrome 59.** - Note: the parameter 'registerKey' requires at least Chrome 59
       * @description
@@ -126,9 +128,9 @@ object enterprise {
       * @param callback Called back with the challenge response.
       */
     inline def challengeMachineKey(
-      challenge: ArrayBuffer,
+      challenge: js.typedarray.ArrayBuffer,
       registerKey: Boolean,
-      callback: js.Function1[/* response */ ArrayBuffer, Unit]
+      callback: js.Function1[/* response */ js.typedarray.ArrayBuffer, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], registerKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
@@ -152,9 +154,9 @@ object enterprise {
       * @param callback Called back with the challenge response.
       */
     inline def challengeUserKey(
-      challenge: ArrayBuffer,
+      challenge: js.typedarray.ArrayBuffer,
       registerKey: Boolean,
-      callback: js.Function1[/* response */ ArrayBuffer, Unit]
+      callback: js.Function1[/* response */ js.typedarray.ArrayBuffer, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeUserKey")(challenge.asInstanceOf[js.Any], registerKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
@@ -163,7 +165,10 @@ object enterprise {
       * @param tokenId The id of a Token returned by getTokens.
       * @param callback Called back with the list of the available certificates.
       */
-    inline def getCertificates(tokenId: String, callback: js.Function1[/* certificates */ js.Array[ArrayBuffer], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificates")(tokenId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def getCertificates(
+      tokenId: String,
+      callback: js.Function1[/* certificates */ js.Array[js.typedarray.ArrayBuffer], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificates")(tokenId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns the available Tokens.
@@ -182,7 +187,7 @@ object enterprise {
       * @param certificate The DER encoding of a X.509 certificate.
       * @param [callback] Called back when this operation is finished.
       */
-    inline def importCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def importCertificate(tokenId: String, certificate: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes certificate from the given token if present.
@@ -193,6 +198,6 @@ object enterprise {
       * @param certificate The DER encoding of a X.509 certificate.
       * @param [callback] Called back when this operation is finished.
       */
-    inline def removeCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeCertificate(tokenId: String, certificate: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

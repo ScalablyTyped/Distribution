@@ -17,5 +17,5 @@ trait FeatureReductionSelectionConstructor
 Instantiable0[FeatureReductionSelection]
      with Instantiable1[/* properties */ FeatureReductionSelectionProperties, FeatureReductionSelection] {
   
-  def fromJSON(json: js.Any): FeatureReductionSelection = js.native
+  def fromJSON(json: Any): FeatureReductionSelection = js.native
 }

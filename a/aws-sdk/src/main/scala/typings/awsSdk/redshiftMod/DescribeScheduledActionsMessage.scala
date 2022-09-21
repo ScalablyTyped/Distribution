@@ -14,7 +14,7 @@ trait DescribeScheduledActionsMessage extends StObject {
   /**
     * The end time in UTC of the scheduled action to retrieve. Only active scheduled actions that have invocations before this time are retrieved.
     */
-  var EndTime: js.UndefOr[TStamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * List of scheduled action filters. 
@@ -22,7 +22,7 @@ trait DescribeScheduledActionsMessage extends StObject {
   var Filters: js.UndefOr[ScheduledActionFilterList] = js.undefined
   
   /**
-    * An optional parameter that specifies the starting point to return a set of response records. When the results of a DescribeScheduledActions request exceed the value specified in MaxRecords, AWS returns a value in the Marker field of the response. You can retrieve the next set of response records by providing the returned marker value in the Marker parameter and retrying the request. 
+    * An optional parameter that specifies the starting point to return a set of response records. When the results of a DescribeScheduledActions request exceed the value specified in MaxRecords, Amazon Web Services returns a value in the Marker field of the response. You can retrieve the next set of response records by providing the returned marker value in the Marker parameter and retrying the request. 
     */
   var Marker: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ trait DescribeScheduledActionsMessage extends StObject {
   /**
     * The start time in UTC of the scheduled actions to retrieve. Only active scheduled actions that have invocations after this time are retrieved.
     */
-  var StartTime: js.UndefOr[TStamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of the scheduled actions to retrieve. 
@@ -59,7 +59,7 @@ object DescribeScheduledActionsMessage {
     
     inline def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
-    inline def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -67,7 +67,7 @@ object DescribeScheduledActionsMessage {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: ScheduledActionFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ScheduledActionFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object DescribeScheduledActionsMessage {
     
     inline def setScheduledActionNameUndefined: Self = StObject.set(x, "ScheduledActionName", js.undefined)
     
-    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

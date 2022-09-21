@@ -31,7 +31,7 @@ object IAlternateStateData {
     
     inline def setQFieldItems(value: js.Array[IBookmarkFieldItem]): Self = StObject.set(x, "qFieldItems", value.asInstanceOf[js.Any])
     
-    inline def setQFieldItemsVarargs(value: IBookmarkFieldItem*): Self = StObject.set(x, "qFieldItems", js.Array(value :_*))
+    inline def setQFieldItemsVarargs(value: IBookmarkFieldItem*): Self = StObject.set(x, "qFieldItems", js.Array(value*))
     
     inline def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
   }

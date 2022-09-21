@@ -97,8 +97,6 @@ trait PolarGridProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var gridType: js.UndefOr[polygon | circle] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
@@ -324,10 +322,6 @@ object PolarGridProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setGridType(value: polygon | circle): Self = StObject.set(x, "gridType", value.asInstanceOf[js.Any])
     
     inline def setGridTypeUndefined: Self = StObject.set(x, "gridType", js.undefined)
@@ -392,13 +386,13 @@ object PolarGridProps {
     
     inline def setPolarAnglesUndefined: Self = StObject.set(x, "polarAngles", js.undefined)
     
-    inline def setPolarAnglesVarargs(value: Double*): Self = StObject.set(x, "polarAngles", js.Array(value :_*))
+    inline def setPolarAnglesVarargs(value: Double*): Self = StObject.set(x, "polarAngles", js.Array(value*))
     
     inline def setPolarRadius(value: js.Array[Double]): Self = StObject.set(x, "polarRadius", value.asInstanceOf[js.Any])
     
     inline def setPolarRadiusUndefined: Self = StObject.set(x, "polarRadius", js.undefined)
     
-    inline def setPolarRadiusVarargs(value: Double*): Self = StObject.set(x, "polarRadius", js.Array(value :_*))
+    inline def setPolarRadiusVarargs(value: Double*): Self = StObject.set(x, "polarRadius", js.Array(value*))
     
     inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     

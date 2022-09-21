@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("@pollyjs/adapter-node-http", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.pollyjsAdapter.mod.default
   
   type HttpAdapter = typings.pollyjsAdapter.mod.default

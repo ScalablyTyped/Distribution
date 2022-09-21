@@ -12,6 +12,11 @@ trait ConfigDetails extends StObject {
   var antennaDemodDecodeDetails: js.UndefOr[AntennaDemodDecodeDetails] = js.undefined
   
   var endpointDetails: js.UndefOr[EndpointDetails] = js.undefined
+  
+  /**
+    * Details for an S3 recording Config in a contact.
+    */
+  var s3RecordingDetails: js.UndefOr[S3RecordingDetails] = js.undefined
 }
 object ConfigDetails {
   
@@ -29,5 +34,9 @@ object ConfigDetails {
     inline def setEndpointDetails(value: EndpointDetails): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
     
     inline def setEndpointDetailsUndefined: Self = StObject.set(x, "endpointDetails", js.undefined)
+    
+    inline def setS3RecordingDetails(value: S3RecordingDetails): Self = StObject.set(x, "s3RecordingDetails", value.asInstanceOf[js.Any])
+    
+    inline def setS3RecordingDetailsUndefined: Self = StObject.set(x, "s3RecordingDetails", js.undefined)
   }
 }

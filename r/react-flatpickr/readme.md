@@ -10,15 +10,12 @@ flatpickr for React
 | ------------------ | :-------------: |
 | Full name          | react-flatpickr |
 | Keywords           | flatpickr, react |
-| # releases         | 9 |
-| # dependents       | 35 |
-| # downloads        | 2549639 |
-| # stars            | 1 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 350709.0 |
+| # stars            | 528.0 |
 
 ## Links
-- [Homepage](https://github.com/coderhaoxin/react-flatpickr#readme)
-- [Bugs](https://github.com/coderhaoxin/react-flatpickr/issues)
-- [Repository](https://github.com/coderhaoxin/react-flatpickr)
 - [Npm](https://www.npmjs.com/package/react-flatpickr)
     
 

@@ -11,13 +11,13 @@ trait Console extends StObject {
     *
     * 向调试面板中打印 debug 日志 */
   def debug(/** 日志内容，可以有任意多个。 */
-  args: js.Any*): Unit = js.native
+  args: Any*): Unit = js.native
   
   /** [console.error()](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/console.error.html)
     *
     * 向调试面板中打印 error 日志 */
   def error(/** 日志内容，可以有任意多个。 */
-  args: js.Any*): Unit = js.native
+  args: Any*): Unit = js.native
   
   /** [console.group(string label)](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/console.group.html)
     *
@@ -45,17 +45,17 @@ trait Console extends StObject {
     *
     * 向调试面板中打印 info 日志 */
   def info(/** 日志内容，可以有任意多个。 */
-  args: js.Any*): Unit = js.native
+  args: Any*): Unit = js.native
   
   /** [console.log()](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/console.log.html)
     *
     * 向调试面板中打印 log 日志 */
   def log(/** 日志内容，可以有任意多个。 */
-  args: js.Any*): Unit = js.native
+  args: Any*): Unit = js.native
   
   /** [console.warn()](https://developers.weixin.qq.com/miniprogram/dev/api/base/debug/console.warn.html)
     *
     * 向调试面板中打印 warn 日志 */
   def warn(/** 日志内容，可以有任意多个。 */
-  args: js.Any*): Unit = js.native
+  args: Any*): Unit = js.native
 }

@@ -10,7 +10,7 @@ trait IgSliderBookmarks
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Get or set a custom css class to be applied to the bookmark anchor element.

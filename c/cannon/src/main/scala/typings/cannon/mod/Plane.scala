@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "Plane")
 @js.native
-class Plane ()
+open class Plane ()
   extends StObject
      with typings.cannon.CANNON.Plane {
   
@@ -24,6 +24,9 @@ class Plane ()
   
   /* CompleteClass */
   override def computeWorldNormal(quat: typings.cannon.CANNON.Quaternion): Unit = js.native
+  
+  /* CompleteClass */
+  var id: Double = js.native
   
   /* CompleteClass */
   var `type`: Double = js.native

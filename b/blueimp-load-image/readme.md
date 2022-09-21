@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueimp-load-image
 
-Typings are for version 2.23
+Typings are for version 5.16
 
 ## Library description:
 JavaScript Load Image is a library to load images provided as File or Blob objects or via URL. It returns an optionally scaled, cropped or rotated HTML img or canvas element. It also provides methods to parse image metadata to extract IPTC and Exif tags a
@@ -10,10 +10,10 @@ JavaScript Load Image is a library to load images provided as File or Blob objec
 | ------------------ | :-------------: |
 | Full name          | blueimp-load-image |
 | Keywords           | javascript, load, loading, image, file, blob, url, scale, crop, rotate, img, canvas, meta, exif, orientation, thumbnail, iptc |
-| # releases         | 31 |
-| # dependents       | 79 |
-| # downloads        | 10320468 |
-| # stars            | 12 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1010145.0 |
+| # stars            | 4287.0 |
 
 ## Links
 - [Homepage](https://github.com/blueimp/JavaScript-Load-Image)

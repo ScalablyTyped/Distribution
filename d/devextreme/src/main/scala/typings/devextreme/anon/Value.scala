@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Value extends StObject {
   
-  var value: js.UndefOr[String | Double | typings.std.Date] = js.undefined
+  var value: js.UndefOr[String | Double | js.Date] = js.undefined
   
   var valueText: js.UndefOr[String] = js.undefined
 }
@@ -19,7 +19,7 @@ object Value {
   
   extension [Self <: Value](x: Self) {
     
-    inline def setValue(value: String | Double | typings.std.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
     

@@ -4,6 +4,7 @@ import typings.phaser.Phaser.Cache.BaseCache
 import typings.phaser.Phaser.Loader.FileTypes.SpineFileConfig
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Loader.FileConfig
+import typings.phaser.Phaser.Types.Loader.FileTypes.AsepriteFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AtlasJSONFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AtlasXMLFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AudioFileConfig
@@ -19,6 +20,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.ImageFrameConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.JSONFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.MultiAtlasFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.MultiScriptFileConfig
+import typings.phaser.Phaser.Types.Loader.FileTypes.OBJFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.PackFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.PluginFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.SVGFileConfig
@@ -35,7 +37,6 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.UnityAtlasFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.VideoFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.XMLFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
-import typings.phaser.integer
 import typings.std.AudioContext
 import typings.std.Blob
 import typings.std.EventTarget
@@ -66,7 +67,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.Events.ADD")
     @js.native
-    val ADD: js.Any = js.native
+    val ADD: Any = js.native
     
     /**
       * The Loader Plugin Complete Event.
@@ -78,7 +79,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.Events.COMPLETE")
     @js.native
-    val COMPLETE: js.Any = js.native
+    val COMPLETE: Any = js.native
     
     /**
       * The File Load Complete Event.
@@ -91,7 +92,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.Events.FILE_COMPLETE")
     @js.native
-    val FILE_COMPLETE: js.Any = js.native
+    val FILE_COMPLETE: Any = js.native
     
     /**
       * The File Load Complete Event.
@@ -129,7 +130,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.Events.FILE_KEY_COMPLETE")
     @js.native
-    val FILE_KEY_COMPLETE: js.Any = js.native
+    val FILE_KEY_COMPLETE: Any = js.native
     
     /**
       * The File Load Event.
@@ -141,7 +142,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.Events.FILE_LOAD")
     @js.native
-    val FILE_LOAD: js.Any = js.native
+    val FILE_LOAD: Any = js.native
     
     /**
       * The File Load Error Event.
@@ -152,7 +153,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.Events.FILE_LOAD_ERROR")
     @js.native
-    val FILE_LOAD_ERROR: js.Any = js.native
+    val FILE_LOAD_ERROR: Any = js.native
     
     /**
       * The File Load Progress Event.
@@ -164,7 +165,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.Events.FILE_PROGRESS")
     @js.native
-    val FILE_PROGRESS: js.Any = js.native
+    val FILE_PROGRESS: Any = js.native
     
     /**
       * The Loader Plugin Post Process Event.
@@ -179,7 +180,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.Events.POST_PROCESS")
     @js.native
-    val POST_PROCESS: js.Any = js.native
+    val POST_PROCESS: Any = js.native
     
     /**
       * The Loader Plugin Progress Event.
@@ -190,7 +191,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.Events.PROGRESS")
     @js.native
-    val PROGRESS: js.Any = js.native
+    val PROGRESS: Any = js.native
     
     /**
       * The Loader Plugin Start Event.
@@ -203,7 +204,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.Events.START")
     @js.native
-    val START: js.Any = js.native
+    val START: Any = js.native
   }
   
   /**
@@ -211,72 +212,72 @@ object Loader {
     */
   @JSImport("phaser", "Loader.FILE_COMPLETE")
   @js.native
-  def FILE_COMPLETE: integer = js.native
-  inline def FILE_COMPLETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_COMPLETE")(x.asInstanceOf[js.Any])
+  def FILE_COMPLETE: Double = js.native
+  inline def FILE_COMPLETE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_COMPLETE")(x.asInstanceOf[js.Any])
   
   /**
     * File has been destroyed
     */
   @JSImport("phaser", "Loader.FILE_DESTROYED")
   @js.native
-  def FILE_DESTROYED: integer = js.native
-  inline def FILE_DESTROYED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_DESTROYED")(x.asInstanceOf[js.Any])
+  def FILE_DESTROYED: Double = js.native
+  inline def FILE_DESTROYED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_DESTROYED")(x.asInstanceOf[js.Any])
   
   /**
     * The File has errored somehow during processing.
     */
   @JSImport("phaser", "Loader.FILE_ERRORED")
   @js.native
-  def FILE_ERRORED: integer = js.native
-  inline def FILE_ERRORED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_ERRORED")(x.asInstanceOf[js.Any])
+  def FILE_ERRORED: Double = js.native
+  inline def FILE_ERRORED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_ERRORED")(x.asInstanceOf[js.Any])
   
   /**
     * File failed to load
     */
   @JSImport("phaser", "Loader.FILE_FAILED")
   @js.native
-  def FILE_FAILED: integer = js.native
-  inline def FILE_FAILED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_FAILED")(x.asInstanceOf[js.Any])
+  def FILE_FAILED: Double = js.native
+  inline def FILE_FAILED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_FAILED")(x.asInstanceOf[js.Any])
   
   /**
     * File has loaded successfully, awaiting processing
     */
   @JSImport("phaser", "Loader.FILE_LOADED")
   @js.native
-  def FILE_LOADED: integer = js.native
-  inline def FILE_LOADED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_LOADED")(x.asInstanceOf[js.Any])
+  def FILE_LOADED: Double = js.native
+  inline def FILE_LOADED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_LOADED")(x.asInstanceOf[js.Any])
   
   /**
     * File has been started to load by the loader (onLoad called)
     */
   @JSImport("phaser", "Loader.FILE_LOADING")
   @js.native
-  def FILE_LOADING: integer = js.native
-  inline def FILE_LOADING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_LOADING")(x.asInstanceOf[js.Any])
+  def FILE_LOADING: Double = js.native
+  inline def FILE_LOADING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_LOADING")(x.asInstanceOf[js.Any])
   
   /**
     * File is in the load queue but not yet started
     */
   @JSImport("phaser", "Loader.FILE_PENDING")
   @js.native
-  def FILE_PENDING: integer = js.native
-  inline def FILE_PENDING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_PENDING")(x.asInstanceOf[js.Any])
+  def FILE_PENDING: Double = js.native
+  inline def FILE_PENDING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_PENDING")(x.asInstanceOf[js.Any])
   
   /**
     * File was populated from local data and doesn't need an HTTP request
     */
   @JSImport("phaser", "Loader.FILE_POPULATED")
   @js.native
-  def FILE_POPULATED: integer = js.native
-  inline def FILE_POPULATED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_POPULATED")(x.asInstanceOf[js.Any])
+  def FILE_POPULATED: Double = js.native
+  inline def FILE_POPULATED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_POPULATED")(x.asInstanceOf[js.Any])
   
   /**
     * File is being processed (onProcess callback)
     */
   @JSImport("phaser", "Loader.FILE_PROCESSING")
   @js.native
-  def FILE_PROCESSING: integer = js.native
-  inline def FILE_PROCESSING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_PROCESSING")(x.asInstanceOf[js.Any])
+  def FILE_PROCESSING: Double = js.native
+  inline def FILE_PROCESSING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_PROCESSING")(x.asInstanceOf[js.Any])
   
   /**
     * The base File class used by all File Types that the Loader can support.
@@ -284,7 +285,7 @@ object Loader {
     */
   @JSImport("phaser", "Loader.File")
   @js.native
-  class File protected ()
+  open class File protected ()
     extends StObject
        with typings.phaser.Phaser.Loader.File {
     /**
@@ -325,13 +326,13 @@ object Loader {
       * A config object that can be used by file types to store transitional data.
       */
     /* CompleteClass */
-    var config: js.Any = js.native
+    var config: Any = js.native
     
     /**
       * The processed file data, stored here after the file has loaded.
       */
     /* CompleteClass */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /**
       * Destroy this File and any references it holds.
@@ -464,7 +465,7 @@ object Loader {
       * The current state of the file. One of the FILE_CONST values.
       */
     /* CompleteClass */
-    var state: integer = js.native
+    var state: Double = js.native
     
     /**
       * The file type string (image, json, etc) for sorting within the Loader.
@@ -530,7 +531,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.AnimationJSONFile")
     @js.native
-    class AnimationJSONFile protected ()
+    open class AnimationJSONFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.AnimationJSONFile {
       /**
@@ -657,13 +658,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -802,7 +803,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -842,11 +843,11 @@ object Loader {
       * 
       * https://www.codeandweb.com/texturepacker/tutorials/how-to-create-sprite-sheets-for-phaser3?source=photonstorm
       */
-    @JSImport("phaser", "Loader.FileTypes.AtlasJSONFile")
+    @JSImport("phaser", "Loader.FileTypes.AsepriteFile")
     @js.native
-    class AtlasJSONFile protected ()
+    open class AsepriteFile protected ()
       extends StObject
-         with typings.phaser.Phaser.Loader.FileTypes.AtlasJSONFile {
+         with typings.phaser.Phaser.Loader.FileTypes.AsepriteFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -858,7 +859,7 @@ object Loader {
         */
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String | AtlasJSONFileConfig,
+        key: String | AsepriteFileConfig,
         textureURL: js.UndefOr[String | js.Array[String]],
         atlasURL: js.UndefOr[js.Object | String],
         textureXhrSettings: js.UndefOr[XHRSettingsObject],
@@ -895,13 +896,13 @@ object Loader {
         * A storage container for transient data that the loading files need.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The number of files that failed to load.
         */
       /* CompleteClass */
-      var failed: integer = js.native
+      var failed: Double = js.native
       
       /**
         * Array of files that make up this MultiFile.
@@ -952,7 +953,142 @@ object Loader {
         * The number of files to load.
         */
       /* CompleteClass */
-      var pending: integer = js.native
+      var pending: Double = js.native
+      
+      /**
+        * A reference to the Loaders prefix at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var prefix: String = js.native
+      
+      /**
+        * The file type string for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+    }
+    
+    /**
+      * A single JSON based Texture Atlas File suitable for loading by the Loader.
+      * 
+      * These are created when you use the Phaser.Loader.LoaderPlugin#atlas method and are not typically created directly.
+      * 
+      * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#atlas.
+      * 
+      * https://www.codeandweb.com/texturepacker/tutorials/how-to-create-sprite-sheets-for-phaser3?source=photonstorm
+      */
+    @JSImport("phaser", "Loader.FileTypes.AtlasJSONFile")
+    @js.native
+    open class AtlasJSONFile protected ()
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.AtlasJSONFile {
+      /**
+        * 
+        * @param loader A reference to the Loader that is responsible for this file.
+        * @param key The key to use for this file, or a file configuration object.
+        * @param textureURL The absolute or relative URL to load the texture image file from. If undefined or `null` it will be set to `<key>.png`, i.e. if `key` was "alien" then the URL will be "alien.png".
+        * @param atlasURL The absolute or relative URL to load the texture atlas json data file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json". Or, a well formed JSON object.
+        * @param textureXhrSettings An XHR Settings configuration object for the atlas image file. Used in replacement of the Loaders default XHR Settings.
+        * @param atlasXhrSettings An XHR Settings configuration object for the atlas json file. Used in replacement of the Loaders default XHR Settings.
+        */
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String | AtlasJSONFileConfig,
+        textureURL: js.UndefOr[String | js.Array[String]],
+        atlasURL: js.UndefOr[js.Object | String],
+        textureXhrSettings: js.UndefOr[XHRSettingsObject],
+        atlasXhrSettings: js.UndefOr[XHRSettingsObject]
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+        * @param files The File to add to this MultiFile.
+        */
+      /* CompleteClass */
+      override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * A reference to the Loaders baseURL at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var baseURL: String = js.native
+      
+      /**
+        * The completion status of this MultiFile.
+        */
+      /* CompleteClass */
+      var complete: Boolean = js.native
+      
+      /**
+        * A storage container for transient data that the loading files need.
+        */
+      /* CompleteClass */
+      var config: Any = js.native
+      
+      /**
+        * The number of files that failed to load.
+        */
+      /* CompleteClass */
+      var failed: Double = js.native
+      
+      /**
+        * Array of files that make up this MultiFile.
+        */
+      /* CompleteClass */
+      var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+      
+      /**
+        * Checks if this MultiFile is ready to process its children or not.
+        */
+      /* CompleteClass */
+      override def isReadyToProcess(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * Called by each File when it finishes loading.
+        * @param file The File that has completed processing.
+        */
+      /* CompleteClass */
+      override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * Called by each File that fails to load.
+        * @param file The File that has failed to load.
+        */
+      /* CompleteClass */
+      override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * A reference to the Loaders path at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var path: String = js.native
+      
+      /**
+        * The number of files to load.
+        */
+      /* CompleteClass */
+      var pending: Double = js.native
       
       /**
         * A reference to the Loaders prefix at the time this MultiFile was created.
@@ -977,7 +1113,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.AtlasXMLFile")
     @js.native
-    class AtlasXMLFile protected ()
+    open class AtlasXMLFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.AtlasXMLFile {
       /**
@@ -1337,13 +1473,13 @@ object Loader {
         * A storage container for transient data that the loading files need.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The number of files that failed to load.
         */
       /* CompleteClass */
-      var failed: integer = js.native
+      var failed: Double = js.native
       
       /**
         * Array of files that make up this MultiFile.
@@ -1394,7 +1530,7 @@ object Loader {
         * The number of files to load.
         */
       /* CompleteClass */
-      var pending: integer = js.native
+      var pending: Double = js.native
       
       /**
         * A reference to the Loaders prefix at the time this MultiFile was created.
@@ -1419,7 +1555,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.AudioFile")
     @js.native
-    class AudioFile protected ()
+    open class AudioFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.AudioFile {
       /**
@@ -1432,12 +1568,12 @@ object Loader {
         */
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: AudioFileConfig) = this()
-      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, urlConfig: js.Any) = this()
-      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: AudioFileConfig, urlConfig: js.Any) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, urlConfig: Any) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: AudioFileConfig, urlConfig: Any) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        urlConfig: js.Any,
+        urlConfig: Any,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1449,7 +1585,7 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AudioFileConfig,
-        urlConfig: js.Any,
+        urlConfig: Any,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1461,14 +1597,14 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        urlConfig: js.Any,
+        urlConfig: Any,
         xhrSettings: Unit,
         audioContext: AudioContext
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        urlConfig: js.Any,
+        urlConfig: Any,
         xhrSettings: XHRSettingsObject,
         audioContext: AudioContext
       ) = this()
@@ -1489,14 +1625,14 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AudioFileConfig,
-        urlConfig: js.Any,
+        urlConfig: Any,
         xhrSettings: Unit,
         audioContext: AudioContext
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AudioFileConfig,
-        urlConfig: js.Any,
+        urlConfig: Any,
         xhrSettings: XHRSettingsObject,
         audioContext: AudioContext
       ) = this()
@@ -1546,13 +1682,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -1685,7 +1821,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -1725,7 +1861,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.AudioSpriteFile")
     @js.native
-    class AudioSpriteFile protected ()
+    open class AudioSpriteFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.AudioSpriteFile {
       /**
@@ -1757,35 +1893,35 @@ object Loader {
         key: String,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.Any
+        audioConfig: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         jsonURL: String,
         audioURL: Unit,
-        audioConfig: js.Any
+        audioConfig: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.Any
+        audioConfig: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: Unit,
-        audioConfig: js.Any
+        audioConfig: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1801,7 +1937,7 @@ object Loader {
         key: String,
         jsonURL: String,
         audioURL: Unit,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1817,7 +1953,7 @@ object Loader {
         key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1833,7 +1969,7 @@ object Loader {
         key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: Unit,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1849,7 +1985,7 @@ object Loader {
         key: String,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: Unit,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
@@ -1858,7 +1994,7 @@ object Loader {
         key: String,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: XHRSettingsObject,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
@@ -1885,7 +2021,7 @@ object Loader {
         key: String,
         jsonURL: String,
         audioURL: Unit,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: Unit,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
@@ -1894,7 +2030,7 @@ object Loader {
         key: String,
         jsonURL: String,
         audioURL: Unit,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: XHRSettingsObject,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
@@ -1921,7 +2057,7 @@ object Loader {
         key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: Unit,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
@@ -1930,7 +2066,7 @@ object Loader {
         key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: XHRSettingsObject,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
@@ -1957,7 +2093,7 @@ object Loader {
         key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: Unit,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: Unit,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
@@ -1966,7 +2102,7 @@ object Loader {
         key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: Unit,
-        audioConfig: js.Any,
+        audioConfig: Any,
         audioXhrSettings: XHRSettingsObject,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
@@ -2019,13 +2155,13 @@ object Loader {
         * A storage container for transient data that the loading files need.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The number of files that failed to load.
         */
       /* CompleteClass */
-      var failed: integer = js.native
+      var failed: Double = js.native
       
       /**
         * Array of files that make up this MultiFile.
@@ -2076,7 +2212,7 @@ object Loader {
         * The number of files to load.
         */
       /* CompleteClass */
-      var pending: integer = js.native
+      var pending: Double = js.native
       
       /**
         * A reference to the Loaders prefix at the time this MultiFile was created.
@@ -2101,7 +2237,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.BinaryFile")
     @js.native
-    class BinaryFile protected ()
+    open class BinaryFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.BinaryFile {
       /**
@@ -2145,56 +2281,56 @@ object Loader {
         key: String,
         url: String,
         xhrSettings: Unit,
-        dataType: js.Any
+        dataType: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
         xhrSettings: XHRSettingsObject,
-        dataType: js.Any
+        dataType: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: Unit,
         xhrSettings: Unit,
-        dataType: js.Any
+        dataType: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: Unit,
         xhrSettings: XHRSettingsObject,
-        dataType: js.Any
+        dataType: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BinaryFileConfig,
         url: String,
         xhrSettings: Unit,
-        dataType: js.Any
+        dataType: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BinaryFileConfig,
         url: String,
         xhrSettings: XHRSettingsObject,
-        dataType: js.Any
+        dataType: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BinaryFileConfig,
         url: Unit,
         xhrSettings: Unit,
-        dataType: js.Any
+        dataType: Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BinaryFileConfig,
         url: Unit,
         xhrSettings: XHRSettingsObject,
-        dataType: js.Any
+        dataType: Any
       ) = this()
       
       /**
@@ -2228,13 +2364,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -2367,7 +2503,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -2407,7 +2543,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.BitmapFontFile")
     @js.native
-    class BitmapFontFile protected ()
+    open class BitmapFontFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.BitmapFontFile {
       /**
@@ -2772,13 +2908,13 @@ object Loader {
         * A storage container for transient data that the loading files need.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The number of files that failed to load.
         */
       /* CompleteClass */
-      var failed: integer = js.native
+      var failed: Double = js.native
       
       /**
         * Array of files that make up this MultiFile.
@@ -2829,7 +2965,7 @@ object Loader {
         * The number of files to load.
         */
       /* CompleteClass */
-      var pending: integer = js.native
+      var pending: Double = js.native
       
       /**
         * A reference to the Loaders prefix at the time this MultiFile was created.
@@ -2854,7 +2990,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.CSSFile")
     @js.native
-    class CSSFile protected ()
+    open class CSSFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.CSSFile {
       /**
@@ -2924,13 +3060,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -3063,7 +3199,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -3103,7 +3239,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.GLSLFile")
     @js.native
-    class GLSLFile protected ()
+    open class GLSLFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.GLSLFile {
       /**
@@ -3220,13 +3356,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -3253,7 +3389,7 @@ object Loader {
         * @param headerSource The header data.
         */
       /* CompleteClass */
-      override def getShaderUniforms(headerSource: js.Array[String]): js.Any = js.native
+      override def getShaderUniforms(headerSource: js.Array[String]): Any = js.native
       
       /**
         * Checks if a key matching the one used by this file exists in the target Cache or not.
@@ -3380,7 +3516,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -3420,7 +3556,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.HTML5AudioFile")
     @js.native
-    class HTML5AudioFile protected ()
+    open class HTML5AudioFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.HTML5AudioFile {
       /**
@@ -3490,13 +3626,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -3644,7 +3780,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -3684,14 +3820,14 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.HTMLFile")
     @js.native
-    class HTMLFile protected ()
+    open class HTMLFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.HTMLFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
         * @param key The key to use for this file, or a file configuration object.
-        * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.txt`, i.e. if `key` was "alien" then the URL will be "alien.html".
+        * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.html`, i.e. if `key` was "alien" then the URL will be "alien.html".
         * @param xhrSettings Extra XHR Settings specifically for this file.
         */
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String) = this()
@@ -3754,13 +3890,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -3893,7 +4029,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -3933,7 +4069,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.HTMLTextureFile")
     @js.native
-    class HTMLTextureFile protected ()
+    open class HTMLTextureFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.HTMLTextureFile {
       /**
@@ -3949,75 +4085,99 @@ object Loader {
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: HTMLTextureFileConfig) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: HTMLTextureFileConfig, url: String) = this()
-      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String, width: integer) = this()
-      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: Unit, width: integer) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String, width: Double) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: Unit, width: Double) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: HTMLTextureFileConfig,
         url: String,
-        width: integer
+        width: Double
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: HTMLTextureFileConfig,
         url: Unit,
-        width: integer
+        width: Double
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: String,
+        width: Double,
+        height: Double
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
         width: Unit,
-        height: integer
+        height: Double
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: String,
-        width: integer,
-        height: integer
+        url: Unit,
+        width: Double,
+        height: Double
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: Unit,
         width: Unit,
-        height: integer
+        height: Double
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLTextureFileConfig,
+        url: String,
+        width: Double,
+        height: Double
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLTextureFileConfig,
+        url: String,
+        width: Unit,
+        height: Double
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLTextureFileConfig,
+        url: Unit,
+        width: Double,
+        height: Double
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLTextureFileConfig,
+        url: Unit,
+        width: Unit,
+        height: Double
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: Unit,
-        width: integer,
-        height: integer
+        url: String,
+        width: Double,
+        height: Double,
+        xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
+        key: String,
+        url: String,
+        width: Double,
+        height: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
         url: String,
         width: Unit,
-        height: integer
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: String,
-        width: integer,
-        height: integer
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: Unit,
-        width: Unit,
-        height: integer
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: Unit,
-        width: integer,
-        height: integer
+        height: Double,
+        xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -4030,32 +4190,16 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: String,
-        width: Unit,
-        height: integer,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: String,
-        width: integer,
-        height: Unit,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: String,
-        width: integer,
-        height: integer,
+        url: Unit,
+        width: Double,
+        height: Double,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: Unit,
-        width: Unit,
+        width: Double,
         height: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -4064,23 +4208,39 @@ object Loader {
         key: String,
         url: Unit,
         width: Unit,
-        height: integer,
+        height: Double,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: Unit,
-        width: integer,
+        width: Unit,
         height: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: Unit,
-        width: integer,
-        height: integer,
+        key: HTMLTextureFileConfig,
+        url: String,
+        width: Double,
+        height: Double,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLTextureFileConfig,
+        url: String,
+        width: Double,
+        height: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLTextureFileConfig,
+        url: String,
+        width: Unit,
+        height: Double,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -4094,32 +4254,16 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: HTMLTextureFileConfig,
-        url: String,
-        width: Unit,
-        height: integer,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: String,
-        width: integer,
-        height: Unit,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: String,
-        width: integer,
-        height: integer,
+        url: Unit,
+        width: Double,
+        height: Double,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: HTMLTextureFileConfig,
         url: Unit,
-        width: Unit,
+        width: Double,
         height: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -4128,23 +4272,15 @@ object Loader {
         key: HTMLTextureFileConfig,
         url: Unit,
         width: Unit,
-        height: integer,
+        height: Double,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: HTMLTextureFileConfig,
         url: Unit,
-        width: integer,
+        width: Unit,
         height: Unit,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: Unit,
-        width: integer,
-        height: integer,
         xhrSettings: XHRSettingsObject
       ) = this()
       
@@ -4179,13 +4315,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -4318,7 +4454,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -4358,7 +4494,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.ImageFile")
     @js.native
-    class ImageFile protected ()
+    open class ImageFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.ImageFile {
       /**
@@ -4527,13 +4663,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -4666,7 +4802,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -4706,7 +4842,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.JSONFile")
     @js.native
-    class JSONFile protected ()
+    open class JSONFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.JSONFile {
       /**
@@ -4875,13 +5011,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -5014,7 +5150,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -5054,7 +5190,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.MultiAtlasFile")
     @js.native
-    class MultiAtlasFile protected ()
+    open class MultiAtlasFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.MultiAtlasFile {
       /**
@@ -5107,13 +5243,13 @@ object Loader {
         * A storage container for transient data that the loading files need.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The number of files that failed to load.
         */
       /* CompleteClass */
-      var failed: integer = js.native
+      var failed: Double = js.native
       
       /**
         * Array of files that make up this MultiFile.
@@ -5164,7 +5300,7 @@ object Loader {
         * The number of files to load.
         */
       /* CompleteClass */
-      var pending: integer = js.native
+      var pending: Double = js.native
       
       /**
         * A reference to the Loaders prefix at the time this MultiFile was created.
@@ -5189,7 +5325,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.MultiScriptFile")
     @js.native
-    class MultiScriptFile protected ()
+    open class MultiScriptFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.MultiScriptFile {
       /**
@@ -5262,13 +5398,13 @@ object Loader {
         * A storage container for transient data that the loading files need.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The number of files that failed to load.
         */
       /* CompleteClass */
-      var failed: integer = js.native
+      var failed: Double = js.native
       
       /**
         * Array of files that make up this MultiFile.
@@ -5319,7 +5455,334 @@ object Loader {
         * The number of files to load.
         */
       /* CompleteClass */
-      var pending: integer = js.native
+      var pending: Double = js.native
+      
+      /**
+        * A reference to the Loaders prefix at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var prefix: String = js.native
+      
+      /**
+        * The file type string for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+    }
+    
+    /**
+      * A single Wavefront OBJ File suitable for loading by the Loader.
+      * 
+      * These are created when you use the Phaser.Loader.LoaderPlugin#obj method and are not typically created directly.
+      * 
+      * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#obj.
+      */
+    @JSImport("phaser", "Loader.FileTypes.OBJFile")
+    @js.native
+    open class OBJFile protected ()
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.OBJFile {
+      /**
+        * 
+        * @param loader A reference to the Loader that is responsible for this file.
+        * @param key The key to use for this file, or a file configuration object.
+        * @param objURL The absolute or relative URL to load the obj file from. If undefined or `null` it will be set to `<key>.obj`, i.e. if `key` was "alien" then the URL will be "alien.obj".
+        * @param matURL The absolute or relative URL to load the material file from. If undefined or `null` it will be set to `<key>.mat`, i.e. if `key` was "alien" then the URL will be "alien.mat".
+        * @param flipUV Flip the UV coordinates stored in the model data?
+        * @param xhrSettings Extra XHR Settings specifically for these files.
+        */
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: OBJFileConfig) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, objURL: String) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: OBJFileConfig, objURL: String) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, objURL: String, matURL: String) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, objURL: Unit, matURL: String) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: String,
+        matURL: String
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: Unit,
+        matURL: String
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: String,
+        matURL: String,
+        flipUV: Boolean
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: String,
+        matURL: Unit,
+        flipUV: Boolean
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: Unit,
+        matURL: String,
+        flipUV: Boolean
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: Unit,
+        matURL: Unit,
+        flipUV: Boolean
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: String,
+        matURL: String,
+        flipUV: Boolean
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: String,
+        matURL: Unit,
+        flipUV: Boolean
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: Unit,
+        matURL: String,
+        flipUV: Boolean
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: Unit,
+        matURL: Unit,
+        flipUV: Boolean
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: String,
+        matURL: String,
+        flipUV: Boolean,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: String,
+        matURL: String,
+        flipUV: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: String,
+        matURL: Unit,
+        flipUV: Boolean,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: String,
+        matURL: Unit,
+        flipUV: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: Unit,
+        matURL: String,
+        flipUV: Boolean,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: Unit,
+        matURL: String,
+        flipUV: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: Unit,
+        matURL: Unit,
+        flipUV: Boolean,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        objURL: Unit,
+        matURL: Unit,
+        flipUV: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: String,
+        matURL: String,
+        flipUV: Boolean,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: String,
+        matURL: String,
+        flipUV: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: String,
+        matURL: Unit,
+        flipUV: Boolean,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: String,
+        matURL: Unit,
+        flipUV: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: Unit,
+        matURL: String,
+        flipUV: Boolean,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: Unit,
+        matURL: String,
+        flipUV: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: Unit,
+        matURL: Unit,
+        flipUV: Boolean,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: OBJFileConfig,
+        objURL: Unit,
+        matURL: Unit,
+        flipUV: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+        * @param files The File to add to this MultiFile.
+        */
+      /* CompleteClass */
+      override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * A reference to the Loaders baseURL at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var baseURL: String = js.native
+      
+      /**
+        * The completion status of this MultiFile.
+        */
+      /* CompleteClass */
+      var complete: Boolean = js.native
+      
+      /**
+        * A storage container for transient data that the loading files need.
+        */
+      /* CompleteClass */
+      var config: Any = js.native
+      
+      /**
+        * The number of files that failed to load.
+        */
+      /* CompleteClass */
+      var failed: Double = js.native
+      
+      /**
+        * Array of files that make up this MultiFile.
+        */
+      /* CompleteClass */
+      var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+      
+      /**
+        * Checks if this MultiFile is ready to process its children or not.
+        */
+      /* CompleteClass */
+      override def isReadyToProcess(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * Called by each File when it finishes loading.
+        * @param file The File that has completed processing.
+        */
+      /* CompleteClass */
+      override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * Called by each File that fails to load.
+        * @param file The File that has failed to load.
+        */
+      /* CompleteClass */
+      override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * A reference to the Loaders path at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var path: String = js.native
+      
+      /**
+        * The number of files to load.
+        */
+      /* CompleteClass */
+      var pending: Double = js.native
       
       /**
         * A reference to the Loaders prefix at the time this MultiFile was created.
@@ -5344,7 +5807,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.PackFile")
     @js.native
-    class PackFile protected ()
+    open class PackFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.PackFile {
       /**
@@ -5471,13 +5934,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -5610,7 +6073,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -5650,7 +6113,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.PluginFile")
     @js.native
-    class PluginFile protected ()
+    open class PluginFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.PluginFile {
       /**
@@ -5896,13 +6359,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -6035,7 +6498,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -6075,7 +6538,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.SVGFile")
     @js.native
-    class SVGFile protected ()
+    open class SVGFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.SVGFile {
       /**
@@ -6202,13 +6665,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -6341,7 +6804,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -6381,7 +6844,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.SceneFile")
     @js.native
-    class SceneFile protected ()
+    open class SceneFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.SceneFile {
       /**
@@ -6451,13 +6914,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -6590,7 +7053,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -6630,7 +7093,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.ScenePluginFile")
     @js.native
-    class ScenePluginFile protected ()
+    open class ScenePluginFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.ScenePluginFile {
       /**
@@ -6876,13 +7339,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -7015,7 +7478,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -7055,7 +7518,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.ScriptFile")
     @js.native
-    class ScriptFile protected ()
+    open class ScriptFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.ScriptFile {
       /**
@@ -7125,13 +7588,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -7264,7 +7727,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -7297,7 +7760,7 @@ object Loader {
     
     @JSImport("phaser", "Loader.FileTypes.SpineFile")
     @js.native
-    class SpineFile protected ()
+    open class SpineFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.SpineFile {
       def this(
@@ -7338,7 +7801,7 @@ object Loader {
       ) = this()
       
       /* CompleteClass */
-      override def addToCache(): js.Any = js.native
+      override def addToCache(): Any = js.native
       
       /**
         * Adds another child to this MultiFile, increases the pending count and resets the completion status.
@@ -7364,13 +7827,13 @@ object Loader {
         * A storage container for transient data that the loading files need.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The number of files that failed to load.
         */
       /* CompleteClass */
-      var failed: integer = js.native
+      var failed: Double = js.native
       
       /**
         * Array of files that make up this MultiFile.
@@ -7421,7 +7884,7 @@ object Loader {
         * The number of files to load.
         */
       /* CompleteClass */
-      var pending: integer = js.native
+      var pending: Double = js.native
       
       /**
         * A reference to the Loaders prefix at the time this MultiFile was created.
@@ -7446,7 +7909,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.SpriteSheetFile")
     @js.native
-    class SpriteSheetFile protected ()
+    open class SpriteSheetFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.SpriteSheetFile {
       /**
@@ -7619,13 +8082,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -7758,7 +8221,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -7798,7 +8261,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.TextFile")
     @js.native
-    class TextFile protected ()
+    open class TextFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.TextFile {
       /**
@@ -7868,13 +8331,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -8007,7 +8470,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -8047,7 +8510,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.TilemapCSVFile")
     @js.native
-    class TilemapCSVFile protected ()
+    open class TilemapCSVFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.TilemapCSVFile {
       /**
@@ -8117,13 +8580,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -8256,7 +8719,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -8296,7 +8759,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.TilemapImpactFile")
     @js.native
-    class TilemapImpactFile protected ()
+    open class TilemapImpactFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.TilemapImpactFile {
       /**
@@ -8366,13 +8829,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -8505,7 +8968,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -8545,7 +9008,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.TilemapJSONFile")
     @js.native
-    class TilemapJSONFile protected ()
+    open class TilemapJSONFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.TilemapJSONFile {
       /**
@@ -8629,13 +9092,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -8768,7 +9231,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -8808,7 +9271,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.UnityAtlasFile")
     @js.native
-    class UnityAtlasFile protected ()
+    open class UnityAtlasFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.UnityAtlasFile {
       /**
@@ -9168,13 +9631,13 @@ object Loader {
         * A storage container for transient data that the loading files need.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The number of files that failed to load.
         */
       /* CompleteClass */
-      var failed: integer = js.native
+      var failed: Double = js.native
       
       /**
         * Array of files that make up this MultiFile.
@@ -9225,7 +9688,7 @@ object Loader {
         * The number of files to load.
         */
       /* CompleteClass */
-      var pending: integer = js.native
+      var pending: Double = js.native
       
       /**
         * A reference to the Loaders prefix at the time this MultiFile was created.
@@ -9250,7 +9713,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.VideoFile")
     @js.native
-    class VideoFile protected ()
+    open class VideoFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.VideoFile {
       /**
@@ -9266,7 +9729,7 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String | VideoFileConfig,
-        urlConfig: js.UndefOr[js.Any],
+        urlConfig: js.UndefOr[Any],
         loadEvent: js.UndefOr[String],
         asBlob: js.UndefOr[Boolean],
         noAudio: js.UndefOr[Boolean],
@@ -9304,13 +9767,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -9443,7 +9906,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -9483,7 +9946,7 @@ object Loader {
       */
     @JSImport("phaser", "Loader.FileTypes.XMLFile")
     @js.native
-    class XMLFile protected ()
+    open class XMLFile protected ()
       extends StObject
          with typings.phaser.Phaser.Loader.FileTypes.XMLFile {
       /**
@@ -9553,13 +10016,13 @@ object Loader {
         * A config object that can be used by file types to store transitional data.
         */
       /* CompleteClass */
-      var config: js.Any = js.native
+      var config: Any = js.native
       
       /**
         * The processed file data, stored here after the file has loaded.
         */
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       /**
         * Destroy this File and any references it holds.
@@ -9692,7 +10155,7 @@ object Loader {
         * The current state of the file. One of the FILE_CONST values.
         */
       /* CompleteClass */
-      var state: integer = js.native
+      var state: Double = js.native
       
       /**
         * The file type string (image, json, etc) for sorting within the Loader.
@@ -9766,48 +10229,48 @@ object Loader {
     */
   @JSImport("phaser", "Loader.LOADER_COMPLETE")
   @js.native
-  def LOADER_COMPLETE: integer = js.native
-  inline def LOADER_COMPLETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_COMPLETE")(x.asInstanceOf[js.Any])
+  def LOADER_COMPLETE: Double = js.native
+  inline def LOADER_COMPLETE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_COMPLETE")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader has been destroyed.
     */
   @JSImport("phaser", "Loader.LOADER_DESTROYED")
   @js.native
-  def LOADER_DESTROYED: integer = js.native
-  inline def LOADER_DESTROYED_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_DESTROYED")(x.asInstanceOf[js.Any])
+  def LOADER_DESTROYED: Double = js.native
+  inline def LOADER_DESTROYED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_DESTROYED")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader is idle.
     */
   @JSImport("phaser", "Loader.LOADER_IDLE")
   @js.native
-  def LOADER_IDLE: integer = js.native
-  inline def LOADER_IDLE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_IDLE")(x.asInstanceOf[js.Any])
+  def LOADER_IDLE: Double = js.native
+  inline def LOADER_IDLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_IDLE")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader is actively loading.
     */
   @JSImport("phaser", "Loader.LOADER_LOADING")
   @js.native
-  def LOADER_LOADING: integer = js.native
-  inline def LOADER_LOADING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_LOADING")(x.asInstanceOf[js.Any])
+  def LOADER_LOADING: Double = js.native
+  inline def LOADER_LOADING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_LOADING")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader is processing files is has loaded.
     */
   @JSImport("phaser", "Loader.LOADER_PROCESSING")
   @js.native
-  def LOADER_PROCESSING: integer = js.native
-  inline def LOADER_PROCESSING_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_PROCESSING")(x.asInstanceOf[js.Any])
+  def LOADER_PROCESSING: Double = js.native
+  inline def LOADER_PROCESSING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_PROCESSING")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader is shutting down.
     */
   @JSImport("phaser", "Loader.LOADER_SHUTDOWN")
   @js.native
-  def LOADER_SHUTDOWN: integer = js.native
-  inline def LOADER_SHUTDOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_SHUTDOWN")(x.asInstanceOf[js.Any])
+  def LOADER_SHUTDOWN: Double = js.native
+  inline def LOADER_SHUTDOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADER_SHUTDOWN")(x.asInstanceOf[js.Any])
   
   /**
     * The Loader handles loading all external content such as Images, Sounds, Texture Atlases and data files.
@@ -9836,7 +10299,7 @@ object Loader {
     */
   @JSImport("phaser", "Loader.LoaderPlugin")
   @js.native
-  class LoaderPlugin protected ()
+  open class LoaderPlugin protected ()
     extends StObject
        with typings.phaser.Phaser.Loader.LoaderPlugin {
     /**
@@ -9864,7 +10327,7 @@ object Loader {
     */
   @JSImport("phaser", "Loader.MultiFile")
   @js.native
-  class MultiFile protected ()
+  open class MultiFile protected ()
     extends StObject
        with typings.phaser.Phaser.Loader.MultiFile {
     /**
@@ -9905,13 +10368,13 @@ object Loader {
       * A storage container for transient data that the loading files need.
       */
     /* CompleteClass */
-    var config: js.Any = js.native
+    var config: Any = js.native
     
     /**
       * The number of files that failed to load.
       */
     /* CompleteClass */
-    var failed: integer = js.native
+    var failed: Double = js.native
     
     /**
       * Array of files that make up this MultiFile.
@@ -9962,7 +10425,7 @@ object Loader {
       * The number of files to load.
       */
     /* CompleteClass */
-    var pending: integer = js.native
+    var pending: Double = js.native
     
     /**
       * A reference to the Loaders prefix at the time this MultiFile was created.
@@ -10001,7 +10464,7 @@ object Loader {
     async: js.UndefOr[Boolean],
     user: js.UndefOr[String],
     password: js.UndefOr[String],
-    timeout: js.UndefOr[integer],
+    timeout: js.UndefOr[Double],
     withCredentials: js.UndefOr[Boolean]
   ): XHRSettingsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("XHRSettings")(responseType.asInstanceOf[js.Any], async.asInstanceOf[js.Any], user.asInstanceOf[js.Any], password.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any])).asInstanceOf[XHRSettingsObject]
 }

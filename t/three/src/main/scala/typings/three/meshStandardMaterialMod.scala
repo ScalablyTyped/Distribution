@@ -2,10 +2,11 @@ package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.colorMod.Color
-import typings.three.constantsMod.NormalMapTypes
 import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
+import typings.three.srcConstantsMod.NormalMapTypes
 import typings.three.textureMod.Texture
+import typings.three.utilsMod.ColorRepresentation
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,180 +16,169 @@ object meshStandardMaterialMod {
   
   @JSImport("three/src/materials/MeshStandardMaterial", "MeshStandardMaterial")
   @js.native
-  class MeshStandardMaterial () extends Material {
+  open class MeshStandardMaterial () extends Material {
     def this(parameters: MeshStandardMaterialParameters) = this()
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var alphaMap: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var aoMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var aoMapIntensity: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var bumpMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var bumpScale: Double = js.native
     
     /**
-    	 * @default new THREE.Color( 0xffffff )
-    	 */
+      * @default new THREE.Color( 0xffffff )
+      */
     var color: Color = js.native
     
     /**
-    	 * @default { 'STANDARD': '' }
-    	 */
+      * @default { 'STANDARD': '' }
+      */
     @JSName("defines")
-    var defines_MeshStandardMaterial: StringDictionary[js.Any] = js.native
+    var defines_MeshStandardMaterial: StringDictionary[Any] = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var displacementBias: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var displacementMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var displacementScale: Double = js.native
     
     /**
-    	 * @default new THREE.Color( 0x000000 )
-    	 */
+      * @default new THREE.Color( 0x000000 )
+      */
     var emissive: Color = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var emissiveIntensity: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var emissiveMap: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var envMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var envMapIntensity: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * Define whether the material is rendered with flat shading. Default is false.
+      * @default false
+      */
+    var flatShading: Boolean = js.native
+    
+    /**
+      * Whether the material is affected by fog. Default is true.
+      * @default fog
+      */
+    var fog: Boolean = js.native
+    
+    var isMeshStandardMaterial: Boolean = js.native
+    
+    /**
+      * @default null
+      */
     var lightMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var lightMapIntensity: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var map: Texture | Null = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var metalness: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var metalnessMap: Texture | Null = js.native
     
     /**
-    	 * @default false
-    	 */
-    var morphNormals: Boolean = js.native
-    
-    /**
-    	 * @default false
-    	 */
-    var morphTargets: Boolean = js.native
-    
-    /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var normalMap: Texture | Null = js.native
     
     /**
-    	 * @default THREE.TangentSpaceNormalMap
-    	 */
+      * @default THREE.TangentSpaceNormalMap
+      */
     var normalMapType: NormalMapTypes = js.native
     
     /**
-    	 * @default new THREE.Vector2( 1, 1 )
-    	 */
+      * @default new THREE.Vector2( 1, 1 )
+      */
     var normalScale: Vector2 = js.native
     
     /**
-    	 * @default 0.98
-    	 */
-    var refractionRatio: Double = js.native
-    
-    /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var roughness: Double = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var roughnessMap: Texture | Null = js.native
     
     def setValues(parameters: MeshStandardMaterialParameters): Unit = js.native
     
     /**
-    	 * @default false
-    	 */
-    var skinning: Boolean = js.native
-    
-    /**
-    	 * @default false
-    	 */
-    var vertexTangents: Boolean = js.native
-    
-    /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var wireframe: Boolean = js.native
     
     /**
-    	 * @default 'round'
-    	 */
+      * @default 'round'
+      */
     var wireframeLinecap: String = js.native
     
     /**
-    	 * @default 'round'
-    	 */
+      * @default 'round'
+      */
     var wireframeLinejoin: String = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var wireframeLinewidth: Double = js.native
   }
   
@@ -206,7 +196,7 @@ object meshStandardMaterialMod {
     
     var bumpScale: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[Color | String | Double] = js.undefined
+    var color: js.UndefOr[ColorRepresentation] = js.undefined
     
     var displacementBias: js.UndefOr[Double] = js.undefined
     
@@ -214,7 +204,7 @@ object meshStandardMaterialMod {
     
     var displacementScale: js.UndefOr[Double] = js.undefined
     
-    var emissive: js.UndefOr[Color | String | Double] = js.undefined
+    var emissive: js.UndefOr[ColorRepresentation] = js.undefined
     
     var emissiveIntensity: js.UndefOr[Double] = js.undefined
     
@@ -223,6 +213,10 @@ object meshStandardMaterialMod {
     var envMap: js.UndefOr[Texture | Null] = js.undefined
     
     var envMapIntensity: js.UndefOr[Double] = js.undefined
+    
+    var flatShading: js.UndefOr[Boolean] = js.undefined
+    
+    var fog: js.UndefOr[Boolean] = js.undefined
     
     var lightMap: js.UndefOr[Texture | Null] = js.undefined
     
@@ -234,25 +228,15 @@ object meshStandardMaterialMod {
     
     var metalnessMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var morphNormals: js.UndefOr[Boolean] = js.undefined
-    
-    var morphTargets: js.UndefOr[Boolean] = js.undefined
-    
     var normalMap: js.UndefOr[Texture | Null] = js.undefined
     
     var normalMapType: js.UndefOr[NormalMapTypes] = js.undefined
     
     var normalScale: js.UndefOr[Vector2] = js.undefined
     
-    var refractionRatio: js.UndefOr[Double] = js.undefined
-    
     var roughness: js.UndefOr[Double] = js.undefined
     
     var roughnessMap: js.UndefOr[Texture | Null] = js.undefined
-    
-    var skinning: js.UndefOr[Boolean] = js.undefined
-    
-    var vertexTangents: js.UndefOr[Boolean] = js.undefined
     
     var wireframe: js.UndefOr[Boolean] = js.undefined
     
@@ -293,7 +277,7 @@ object meshStandardMaterialMod {
       
       inline def setBumpScaleUndefined: Self = StObject.set(x, "bumpScale", js.undefined)
       
-      inline def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorRepresentation): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -311,7 +295,7 @@ object meshStandardMaterialMod {
       
       inline def setDisplacementScaleUndefined: Self = StObject.set(x, "displacementScale", js.undefined)
       
-      inline def setEmissive(value: Color | String | Double): Self = StObject.set(x, "emissive", value.asInstanceOf[js.Any])
+      inline def setEmissive(value: ColorRepresentation): Self = StObject.set(x, "emissive", value.asInstanceOf[js.Any])
       
       inline def setEmissiveIntensity(value: Double): Self = StObject.set(x, "emissiveIntensity", value.asInstanceOf[js.Any])
       
@@ -334,6 +318,14 @@ object meshStandardMaterialMod {
       inline def setEnvMapNull: Self = StObject.set(x, "envMap", null)
       
       inline def setEnvMapUndefined: Self = StObject.set(x, "envMap", js.undefined)
+      
+      inline def setFlatShading(value: Boolean): Self = StObject.set(x, "flatShading", value.asInstanceOf[js.Any])
+      
+      inline def setFlatShadingUndefined: Self = StObject.set(x, "flatShading", js.undefined)
+      
+      inline def setFog(value: Boolean): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
+      
+      inline def setFogUndefined: Self = StObject.set(x, "fog", js.undefined)
       
       inline def setLightMap(value: Texture): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
       
@@ -361,14 +353,6 @@ object meshStandardMaterialMod {
       
       inline def setMetalnessUndefined: Self = StObject.set(x, "metalness", js.undefined)
       
-      inline def setMorphNormals(value: Boolean): Self = StObject.set(x, "morphNormals", value.asInstanceOf[js.Any])
-      
-      inline def setMorphNormalsUndefined: Self = StObject.set(x, "morphNormals", js.undefined)
-      
-      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
-      
-      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
-      
       inline def setNormalMap(value: Texture): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
       
       inline def setNormalMapNull: Self = StObject.set(x, "normalMap", null)
@@ -383,10 +367,6 @@ object meshStandardMaterialMod {
       
       inline def setNormalScaleUndefined: Self = StObject.set(x, "normalScale", js.undefined)
       
-      inline def setRefractionRatio(value: Double): Self = StObject.set(x, "refractionRatio", value.asInstanceOf[js.Any])
-      
-      inline def setRefractionRatioUndefined: Self = StObject.set(x, "refractionRatio", js.undefined)
-      
       inline def setRoughness(value: Double): Self = StObject.set(x, "roughness", value.asInstanceOf[js.Any])
       
       inline def setRoughnessMap(value: Texture): Self = StObject.set(x, "roughnessMap", value.asInstanceOf[js.Any])
@@ -396,14 +376,6 @@ object meshStandardMaterialMod {
       inline def setRoughnessMapUndefined: Self = StObject.set(x, "roughnessMap", js.undefined)
       
       inline def setRoughnessUndefined: Self = StObject.set(x, "roughness", js.undefined)
-      
-      inline def setSkinning(value: Boolean): Self = StObject.set(x, "skinning", value.asInstanceOf[js.Any])
-      
-      inline def setSkinningUndefined: Self = StObject.set(x, "skinning", js.undefined)
-      
-      inline def setVertexTangents(value: Boolean): Self = StObject.set(x, "vertexTangents", value.asInstanceOf[js.Any])
-      
-      inline def setVertexTangentsUndefined: Self = StObject.set(x, "vertexTangents", js.undefined)
       
       inline def setWireframe(value: Boolean): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
       

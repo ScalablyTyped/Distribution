@@ -32,6 +32,6 @@ object Filename {
     
     inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

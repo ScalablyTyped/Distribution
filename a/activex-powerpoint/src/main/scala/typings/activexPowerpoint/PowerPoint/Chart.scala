@@ -16,45 +16,45 @@ trait Chart extends StObject {
   def ApplyChartTemplate(FileName: String): Unit = js.native
   
   def ApplyCustomType(ChartType: XlChartType): Unit = js.native
-  def ApplyCustomType(ChartType: XlChartType, TypeName: js.Any): Unit = js.native
+  def ApplyCustomType(ChartType: XlChartType, TypeName: Any): Unit = js.native
   
   /** @param PowerPoint.XlDataLabelsType [Type=2] */
   def ApplyDataLabels(
     Type: js.UndefOr[XlDataLabelsType],
-    LegendKey: js.UndefOr[js.Any],
-    AutoText: js.UndefOr[js.Any],
-    HasLeaderLines: js.UndefOr[js.Any],
-    ShowSeriesName: js.UndefOr[js.Any],
-    ShowCategoryName: js.UndefOr[js.Any],
-    ShowValue: js.UndefOr[js.Any],
-    ShowPercentage: js.UndefOr[js.Any],
-    ShowBubbleSize: js.UndefOr[js.Any],
-    Separator: js.UndefOr[js.Any]
+    LegendKey: js.UndefOr[Any],
+    AutoText: js.UndefOr[Any],
+    HasLeaderLines: js.UndefOr[Any],
+    ShowSeriesName: js.UndefOr[Any],
+    ShowCategoryName: js.UndefOr[Any],
+    ShowValue: js.UndefOr[Any],
+    ShowPercentage: js.UndefOr[Any],
+    ShowBubbleSize: js.UndefOr[Any],
+    Separator: js.UndefOr[Any]
   ): Unit = js.native
   
   def ApplyLayout(Layout: Double): Unit = js.native
-  def ApplyLayout(Layout: Double, ChartType: js.Any): Unit = js.native
+  def ApplyLayout(Layout: Double, ChartType: Any): Unit = js.native
   
   val Area3DGroup: ChartGroup = js.native
   
-  def AreaGroups(): js.Any = js.native
-  def AreaGroups(Index: js.Any): js.Any = js.native
+  def AreaGroups(): Any = js.native
+  def AreaGroups(Index: Any): Any = js.native
   
   def AutoFormat(Gallery: Double): Unit = js.native
-  def AutoFormat(Gallery: Double, Format: js.Any): Unit = js.native
+  def AutoFormat(Gallery: Double, Format: Any): Unit = js.native
   
   var AutoScaling: Boolean = js.native
   
   /** @param PowerPoint.XlAxisGroup [AxisGroup=1] */
-  def Axes(Type: js.Any): js.Any = js.native
-  def Axes(Type: js.Any, AxisGroup: XlAxisGroup): js.Any = js.native
+  def Axes(Type: Any): Any = js.native
+  def Axes(Type: Any, AxisGroup: XlAxisGroup): Any = js.native
   
   val BackWall: typings.activexPowerpoint.PowerPoint.Walls = js.native
   
   val Bar3DGroup: ChartGroup = js.native
   
-  def BarGroups(): js.Any = js.native
-  def BarGroups(Index: js.Any): js.Any = js.native
+  def BarGroups(): Any = js.native
+  def BarGroups(Index: Any): Any = js.native
   
   var BarShape: XlBarShape = js.native
   
@@ -62,40 +62,40 @@ trait Chart extends StObject {
   
   val ChartData: typings.activexPowerpoint.PowerPoint.ChartData = js.native
   
-  def ChartGroups(): js.Any = js.native
-  def ChartGroups(Index: js.Any): js.Any = js.native
+  def ChartGroups(): Any = js.native
+  def ChartGroups(Index: Any): Any = js.native
   
-  var ChartStyle: js.Any = js.native
+  var ChartStyle: Any = js.native
   
   val ChartTitle: typings.activexPowerpoint.PowerPoint.ChartTitle = js.native
   
   var ChartType: XlChartType = js.native
   
   def ChartWizard(
-    Source: js.UndefOr[js.Any],
-    Gallery: js.UndefOr[js.Any],
-    Format: js.UndefOr[js.Any],
-    PlotBy: js.UndefOr[js.Any],
-    CategoryLabels: js.UndefOr[js.Any],
-    SeriesLabels: js.UndefOr[js.Any],
-    HasLegend: js.UndefOr[js.Any],
-    Title: js.UndefOr[js.Any],
-    CategoryTitle: js.UndefOr[js.Any],
-    ValueTitle: js.UndefOr[js.Any],
-    ExtraTitle: js.UndefOr[js.Any]
+    Source: js.UndefOr[Any],
+    Gallery: js.UndefOr[Any],
+    Format: js.UndefOr[Any],
+    PlotBy: js.UndefOr[Any],
+    CategoryLabels: js.UndefOr[Any],
+    SeriesLabels: js.UndefOr[Any],
+    HasLegend: js.UndefOr[Any],
+    Title: js.UndefOr[Any],
+    CategoryTitle: js.UndefOr[Any],
+    ValueTitle: js.UndefOr[Any],
+    ExtraTitle: js.UndefOr[Any]
   ): Unit = js.native
   
   def ClearToMatchStyle(): Unit = js.native
   
   val Column3DGroup: ChartGroup = js.native
   
-  def ColumnGroups(): js.Any = js.native
-  def ColumnGroups(Index: js.Any): js.Any = js.native
+  def ColumnGroups(): Any = js.native
+  def ColumnGroups(Index: Any): Any = js.native
   
   def Copy(): Unit = js.native
-  def Copy(Before: js.Any): Unit = js.native
-  def Copy(Before: js.Any, After: js.Any): Unit = js.native
-  def Copy(Before: Unit, After: js.Any): Unit = js.native
+  def Copy(Before: Any): Unit = js.native
+  def Copy(Before: Any, After: Any): Unit = js.native
+  def Copy(Before: Unit, After: Any): Unit = js.native
   
   /**
     * @param PowerPoint.XlPictureAppearance [Appearance=1]
@@ -123,15 +123,15 @@ trait Chart extends StObject {
   
   var DisplayBlanksAs: XlDisplayBlanksAs = js.native
   
-  def DoughnutGroups(): js.Any = js.native
-  def DoughnutGroups(Index: js.Any): js.Any = js.native
+  def DoughnutGroups(): Any = js.native
+  def DoughnutGroups(Index: Any): Any = js.native
   
   var Elevation: Double = js.native
   
   def Export(FileName: String): Boolean = js.native
-  def Export(FileName: String, FilterName: js.Any): Boolean = js.native
-  def Export(FileName: String, FilterName: js.Any, Interactive: js.Any): Boolean = js.native
-  def Export(FileName: String, FilterName: Unit, Interactive: js.Any): Boolean = js.native
+  def Export(FileName: String, FilterName: Any): Boolean = js.native
+  def Export(FileName: String, FilterName: Any, Interactive: Any): Boolean = js.native
+  def Export(FileName: String, FilterName: Unit, Interactive: Any): Boolean = js.native
   
   val Floor: typings.activexPowerpoint.PowerPoint.Floor = js.native
   
@@ -141,10 +141,10 @@ trait Chart extends StObject {
   
   def GetChartElement(X: Double, Y: Double, ElementID: Double, Arg1: Double, Arg2: Double): Unit = js.native
   
-  def HasAxis(): js.Any = js.native
-  def HasAxis(Index1: js.Any): js.Any = js.native
-  def HasAxis(Index1: js.Any, Index2: js.Any): js.Any = js.native
-  def HasAxis(Index1: Unit, Index2: js.Any): js.Any = js.native
+  def HasAxis(): Any = js.native
+  def HasAxis(Index1: Any): Any = js.native
+  def HasAxis(Index1: Any, Index2: Any): Any = js.native
+  def HasAxis(Index1: Unit, Index2: Any): Any = js.native
   
   var HasDataTable: Boolean = js.native
   
@@ -160,22 +160,22 @@ trait Chart extends StObject {
   
   val Line3DGroup: ChartGroup = js.native
   
-  def LineGroups(): js.Any = js.native
-  def LineGroups(Index: js.Any): js.Any = js.native
+  def LineGroups(): Any = js.native
+  def LineGroups(Index: Any): Any = js.native
   
   var Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Paste(): Unit = js.native
-  def Paste(Type: js.Any): Unit = js.native
+  def Paste(Type: Any): Unit = js.native
   
   var Perspective: Double = js.native
   
   val Pie3DGroup: ChartGroup = js.native
   
-  def PieGroups(): js.Any = js.native
-  def PieGroups(Index: js.Any): js.Any = js.native
+  def PieGroups(): Any = js.native
+  def PieGroups(Index: Any): Any = js.native
   
   val PlotArea: typings.activexPowerpoint.PowerPoint.PlotArea = js.native
   
@@ -186,31 +186,31 @@ trait Chart extends StObject {
   /* private */ @JSName("PowerPoint.Chart_typekey")
   var PowerPointDotChart_typekey: Chart = js.native
   
-  def RadarGroups(): js.Any = js.native
-  def RadarGroups(Index: js.Any): js.Any = js.native
+  def RadarGroups(): Any = js.native
+  def RadarGroups(Index: Any): Any = js.native
   
   def Refresh(): Unit = js.native
   
-  var RightAngleAxes: js.Any = js.native
+  var RightAngleAxes: Any = js.native
   
-  var Rotation: js.Any = js.native
+  var Rotation: Any = js.native
   
   def SaveChartTemplate(FileName: String): Unit = js.native
   
   def Select(): Unit = js.native
-  def Select(Replace: js.Any): Unit = js.native
+  def Select(Replace: Any): Unit = js.native
   
-  def SeriesCollection(): js.Any = js.native
-  def SeriesCollection(Index: js.Any): js.Any = js.native
+  def SeriesCollection(): Any = js.native
+  def SeriesCollection(Index: Any): Any = js.native
   
   def SetBackgroundPicture(FileName: String): Unit = js.native
   
-  def SetDefaultChart(Name: js.Any): Unit = js.native
+  def SetDefaultChart(Name: Any): Unit = js.native
   
   def SetElement(Element: MsoChartElementType): Unit = js.native
   
   def SetSourceData(Source: String): Unit = js.native
-  def SetSourceData(Source: String, PlotBy: js.Any): Unit = js.native
+  def SetSourceData(Source: String, PlotBy: Any): Unit = js.native
   
   val Shapes: typings.activexPowerpoint.PowerPoint.Shapes = js.native
   
@@ -238,24 +238,24 @@ trait Chart extends StObject {
   
   val Walls: typings.activexPowerpoint.PowerPoint.Walls = js.native
   
-  def XYGroups(): js.Any = js.native
-  def XYGroups(Index: js.Any): js.Any = js.native
+  def XYGroups(): Any = js.native
+  def XYGroups(Index: Any): Any = js.native
   
   /** @param PowerPoint.XlDataLabelsType [Type=2] */
   def _ApplyDataLabels(): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Any, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Unit, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Any, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: Any): Unit = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Any, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Unit, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Any, HasLeaderLines: Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: Any): Unit = js.native
 }

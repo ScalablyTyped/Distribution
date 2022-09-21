@@ -12,13 +12,13 @@ object adadeltaOptimizerMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/optimizers/adadelta_optimizer", "AdadeltaOptimizer")
   @js.native
-  class AdadeltaOptimizer protected () extends Optimizer {
+  open class AdadeltaOptimizer protected () extends Optimizer {
     def this(learningRate: Double, rho: Double) = this()
     def this(learningRate: Double, rho: Double, epsilon: Double) = this()
     
-    /* private */ var accumulatedGrads: js.Any = js.native
+    /* private */ var accumulatedGrads: Any = js.native
     
-    /* private */ var accumulatedUpdates: js.Any = js.native
+    /* private */ var accumulatedUpdates: Any = js.native
     
     /* protected */ var epsilon: Double = js.native
     

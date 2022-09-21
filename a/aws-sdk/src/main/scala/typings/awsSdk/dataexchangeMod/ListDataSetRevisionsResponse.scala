@@ -33,6 +33,6 @@ object ListDataSetRevisionsResponse {
     
     inline def setRevisionsUndefined: Self = StObject.set(x, "Revisions", js.undefined)
     
-    inline def setRevisionsVarargs(value: RevisionEntry*): Self = StObject.set(x, "Revisions", js.Array(value :_*))
+    inline def setRevisionsVarargs(value: RevisionEntry*): Self = StObject.set(x, "Revisions", js.Array(value*))
   }
 }

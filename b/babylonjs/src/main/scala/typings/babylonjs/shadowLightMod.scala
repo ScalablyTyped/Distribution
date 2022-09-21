@@ -18,14 +18,14 @@ object shadowLightMod {
     /**
       * Creates a Light object in the scene.
       * Documentation : https://doc.babylonjs.com/babylon101/lights
-      * @param name The firendly name of the light
+      * @param name The friendly name of the light
       * @param scene The scene the light belongs too
       */
     def this(name: String, scene: Scene) = this()
     
     /* protected */ var _direction: Vector3 = js.native
     
-    /* private */ var _needProjectionMatrixCompute: js.Any = js.native
+    /* private */ var _needProjectionMatrixCompute: Any = js.native
     
     /* protected */ var _position: Vector3 = js.native
     
@@ -145,13 +145,13 @@ object shadowLightMod {
     def needProjectionMatrixCompute(): Boolean = js.native
     
     /**
-      * The position the shdow will be casted from.
+      * The position the shadow will be casted from.
       */
     var position: Vector3 = js.native
     
     /**
       * Sets the shadow projection matrix in parameter to the generated projection matrix.
-      * @param matrix The materix to updated with the projection information
+      * @param matrix The matrix to updated with the projection information
       * @param viewMatrix The transform matrix of the light
       * @param renderList The list of mesh to render in the map
       * @returns The current light

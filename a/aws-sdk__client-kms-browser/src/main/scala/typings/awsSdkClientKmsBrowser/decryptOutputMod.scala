@@ -8,5 +8,5 @@ object decryptOutputMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/DecryptOutput", "DecryptOutput")
   @js.native
-  val DecryptOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DecryptOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

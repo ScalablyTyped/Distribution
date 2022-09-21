@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RouteParametersConstructor
   extends StObject
-     with Instantiable0[RouteParameters]
+     with /**
+  * Input parameters for [route](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-route.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html)
+  */
+Instantiable0[RouteParameters]
      with Instantiable1[/* properties */ RouteParametersProperties, RouteParameters] {
   
-  def fromJSON(json: js.Any): RouteParameters = js.native
+  def fromJSON(json: Any): RouteParameters = js.native
 }

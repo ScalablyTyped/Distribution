@@ -11,7 +11,6 @@ import typings.phaser.Phaser.Tilemaps.Tile
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBodyConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterConstraintConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterTileOptions
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -157,10 +156,10 @@ trait Factory extends StObject {
     * @param options An optional Body configuration object that is used to set initial Body properties on creation.
     * @param addToWorld Should the newly created body be immediately added to the World? Default true.
     */
-  def fromJSON(x: Double, y: Double, config: js.Any): BodyType = js.native
-  def fromJSON(x: Double, y: Double, config: js.Any, options: Unit, addToWorld: Boolean): BodyType = js.native
-  def fromJSON(x: Double, y: Double, config: js.Any, options: MatterBodyConfig): BodyType = js.native
-  def fromJSON(x: Double, y: Double, config: js.Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
+  def fromJSON(x: Double, y: Double, config: Any): BodyType = js.native
+  def fromJSON(x: Double, y: Double, config: Any, options: Unit, addToWorld: Boolean): BodyType = js.native
+  def fromJSON(x: Double, y: Double, config: Any, options: MatterBodyConfig): BodyType = js.native
+  def fromJSON(x: Double, y: Double, config: Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
   
   /**
     * Creates a body using data exported from the application PhysicsEditor (https://www.codeandweb.com/physicseditor)
@@ -189,10 +188,10 @@ trait Factory extends StObject {
     * @param options An optional Body configuration object that is used to set initial Body properties on creation.
     * @param addToWorld Should the newly created body be immediately added to the World? Default true.
     */
-  def fromPhysicsEditor(x: Double, y: Double, config: js.Any): BodyType = js.native
-  def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: Unit, addToWorld: Boolean): BodyType = js.native
-  def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: MatterBodyConfig): BodyType = js.native
-  def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
+  def fromPhysicsEditor(x: Double, y: Double, config: Any): BodyType = js.native
+  def fromPhysicsEditor(x: Double, y: Double, config: Any, options: Unit, addToWorld: Boolean): BodyType = js.native
+  def fromPhysicsEditor(x: Double, y: Double, config: Any, options: MatterBodyConfig): BodyType = js.native
+  def fromPhysicsEditor(x: Double, y: Double, config: Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
   
   /**
     * Creates a body using the path data from an SVG file.
@@ -355,12 +354,12 @@ trait Factory extends StObject {
     removeCollinear: Unit,
     minimumArea: Double
   ): BodyType = js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Any]): BodyType = js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Any], options: Unit, flagInternal: Boolean): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[Any]): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[Any], options: Unit, flagInternal: Boolean): BodyType = js.native
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: Unit,
     flagInternal: Boolean,
     removeCollinear: Double
@@ -368,7 +367,7 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: Unit,
     flagInternal: Boolean,
     removeCollinear: Double,
@@ -377,7 +376,7 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: Unit,
     flagInternal: Boolean,
     removeCollinear: Unit,
@@ -386,7 +385,7 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: Unit,
     flagInternal: Unit,
     removeCollinear: Double
@@ -394,7 +393,7 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: Unit,
     flagInternal: Unit,
     removeCollinear: Double,
@@ -403,24 +402,18 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: Unit,
     flagInternal: Unit,
     removeCollinear: Unit,
     minimumArea: Double
   ): BodyType = js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Any], options: MatterBodyConfig): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[Any], options: MatterBodyConfig): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[Any], options: MatterBodyConfig, flagInternal: Boolean): BodyType = js.native
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
-    options: MatterBodyConfig,
-    flagInternal: Boolean
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: MatterBodyConfig,
     flagInternal: Boolean,
     removeCollinear: Double
@@ -428,7 +421,7 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: MatterBodyConfig,
     flagInternal: Boolean,
     removeCollinear: Double,
@@ -437,7 +430,7 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: MatterBodyConfig,
     flagInternal: Boolean,
     removeCollinear: Unit,
@@ -446,7 +439,7 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: MatterBodyConfig,
     flagInternal: Unit,
     removeCollinear: Double
@@ -454,7 +447,7 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: MatterBodyConfig,
     flagInternal: Unit,
     removeCollinear: Double,
@@ -463,7 +456,7 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[js.Any],
+    vertexSets: js.Array[Any],
     options: MatterBodyConfig,
     flagInternal: Unit,
     removeCollinear: Unit,
@@ -482,12 +475,12 @@ trait Factory extends StObject {
     * @param options A Matter Body configuration object, or an instance of a Matter Body.
     * @param addToWorld Add this Matter Body to the World? Default true.
     */
-  def gameObject(gameObject: GameObject): GameObject = js.native
-  def gameObject(gameObject: GameObject, options: Unit, addToWorld: Boolean): GameObject = js.native
-  def gameObject(gameObject: GameObject, options: Body): GameObject = js.native
-  def gameObject(gameObject: GameObject, options: Body, addToWorld: Boolean): GameObject = js.native
-  def gameObject(gameObject: GameObject, options: MatterBodyConfig): GameObject = js.native
-  def gameObject(gameObject: GameObject, options: MatterBodyConfig, addToWorld: Boolean): GameObject = js.native
+  def gameObject(gameObject: GameObject): Image | Sprite | GameObject = js.native
+  def gameObject(gameObject: GameObject, options: Unit, addToWorld: Boolean): Image | Sprite | GameObject = js.native
+  def gameObject(gameObject: GameObject, options: Body): Image | Sprite | GameObject = js.native
+  def gameObject(gameObject: GameObject, options: Body, addToWorld: Boolean): Image | Sprite | GameObject = js.native
+  def gameObject(gameObject: GameObject, options: MatterBodyConfig): Image | Sprite | GameObject = js.native
+  def gameObject(gameObject: GameObject, options: MatterBodyConfig, addToWorld: Boolean): Image | Sprite | GameObject = js.native
   
   /**
     * Creates a Matter Physics Image Game Object.
@@ -505,9 +498,9 @@ trait Factory extends StObject {
   def image(x: Double, y: Double, key: String): Image = js.native
   def image(x: Double, y: Double, key: String, frame: String): Image = js.native
   def image(x: Double, y: Double, key: String, frame: String, options: MatterBodyConfig): Image = js.native
+  def image(x: Double, y: Double, key: String, frame: Double): Image = js.native
+  def image(x: Double, y: Double, key: String, frame: Double, options: MatterBodyConfig): Image = js.native
   def image(x: Double, y: Double, key: String, frame: Unit, options: MatterBodyConfig): Image = js.native
-  def image(x: Double, y: Double, key: String, frame: integer): Image = js.native
-  def image(x: Double, y: Double, key: String, frame: integer, options: MatterBodyConfig): Image = js.native
   
   /**
     * Create a new composite containing Matter Image objects created in a grid arrangement.
@@ -588,19 +581,11 @@ trait Factory extends StObject {
     rowGap: Unit,
     options: MatterBodyConfig
   ): CompositeType = js.native
-  def imageStack(key: String, frame: integer, x: Double, y: Double, columns: Double, rows: Double): CompositeType = js.native
+  def imageStack(key: String, frame: Double, x: Double, y: Double, columns: Double, rows: Double): CompositeType = js.native
+  def imageStack(key: String, frame: Double, x: Double, y: Double, columns: Double, rows: Double, columnGap: Double): CompositeType = js.native
   def imageStack(
     key: String,
-    frame: integer,
-    x: Double,
-    y: Double,
-    columns: Double,
-    rows: Double,
-    columnGap: Double
-  ): CompositeType = js.native
-  def imageStack(
-    key: String,
-    frame: integer,
+    frame: Double,
     x: Double,
     y: Double,
     columns: Double,
@@ -610,7 +595,7 @@ trait Factory extends StObject {
   ): CompositeType = js.native
   def imageStack(
     key: String,
-    frame: integer,
+    frame: Double,
     x: Double,
     y: Double,
     columns: Double,
@@ -621,7 +606,7 @@ trait Factory extends StObject {
   ): CompositeType = js.native
   def imageStack(
     key: String,
-    frame: integer,
+    frame: Double,
     x: Double,
     y: Double,
     columns: Double,
@@ -632,7 +617,7 @@ trait Factory extends StObject {
   ): CompositeType = js.native
   def imageStack(
     key: String,
-    frame: integer,
+    frame: Double,
     x: Double,
     y: Double,
     columns: Double,
@@ -642,7 +627,7 @@ trait Factory extends StObject {
   ): CompositeType = js.native
   def imageStack(
     key: String,
-    frame: integer,
+    frame: Double,
     x: Double,
     y: Double,
     columns: Double,
@@ -653,7 +638,7 @@ trait Factory extends StObject {
   ): CompositeType = js.native
   def imageStack(
     key: String,
-    frame: integer,
+    frame: Double,
     x: Double,
     y: Double,
     columns: Double,
@@ -918,9 +903,9 @@ trait Factory extends StObject {
   def sprite(x: Double, y: Double, key: String): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: String): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: String, options: MatterBodyConfig): Sprite = js.native
+  def sprite(x: Double, y: Double, key: String, frame: Double): Sprite = js.native
+  def sprite(x: Double, y: Double, key: String, frame: Double, options: MatterBodyConfig): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: Unit, options: MatterBodyConfig): Sprite = js.native
-  def sprite(x: Double, y: Double, key: String, frame: integer): Sprite = js.native
-  def sprite(x: Double, y: Double, key: String, frame: integer, options: MatterBodyConfig): Sprite = js.native
   
   /**
     * Create a new composite containing bodies created in the callback in a grid arrangement.

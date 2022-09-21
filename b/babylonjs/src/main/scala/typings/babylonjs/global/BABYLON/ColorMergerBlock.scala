@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ColorMergerBlock")
 @js.native
-class ColorMergerBlock protected ()
+open class ColorMergerBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ColorMergerBlock {
   /**

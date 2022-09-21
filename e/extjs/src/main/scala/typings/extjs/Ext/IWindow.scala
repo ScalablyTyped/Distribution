@@ -18,13 +18,13 @@ trait IWindow
   var afterExpand_IWindow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/Ext.Element) */
-  var animateTarget: js.UndefOr[js.Any] = js.undefined
+  var animateTarget: js.UndefOr[Any] = js.undefined
   
   /** [Method] Applies the state to the object
     * @param state Object
     */
   @JSName("applyState")
-  var applyState_IWindow: js.UndefOr[js.Function1[/* state */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var applyState_IWindow: js.UndefOr[js.Function1[/* state */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
   @JSName("autoRender")
@@ -35,7 +35,7 @@ trait IWindow
   var dd_IWindow: js.UndefOr[IComponentDragger] = js.undefined
   
   /** [Config Option] (String/Number/Ext.Component) */
-  var defaultFocus: js.UndefOr[js.Any] = js.undefined
+  var defaultFocus: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var expandOnShow: js.UndefOr[Boolean] = js.undefined
@@ -44,7 +44,7 @@ trait IWindow
   var getDefaultFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Function) */
-  var ghost: js.UndefOr[js.Any] = js.undefined
+  var ghost: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var hideShadowOnDeactivate: js.UndefOr[Boolean] = js.undefined
@@ -76,7 +76,7 @@ trait IWindow
   var modal: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var onEsc: js.UndefOr[js.Any] = js.undefined
+  var onEsc: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var plain: js.UndefOr[Boolean] = js.undefined
@@ -85,7 +85,7 @@ trait IWindow
     * @param animate Object
     * @returns Ext.window.Window this
     */
-  var restore: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var restore: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] A shortcut method for toggling between maximize and restore based on the current maximized state of the window
     * @returns Ext.window.Window this
@@ -115,11 +115,11 @@ object IWindow {
     
     inline def setAfterExpandUndefined: Self = StObject.set(x, "afterExpand", js.undefined)
     
-    inline def setAnimateTarget(value: js.Any): Self = StObject.set(x, "animateTarget", value.asInstanceOf[js.Any])
+    inline def setAnimateTarget(value: Any): Self = StObject.set(x, "animateTarget", value.asInstanceOf[js.Any])
     
     inline def setAnimateTargetUndefined: Self = StObject.set(x, "animateTarget", js.undefined)
     
-    inline def setApplyState(value: /* state */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
+    inline def setApplyState(value: /* state */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
     
     inline def setApplyStateUndefined: Self = StObject.set(x, "applyState", js.undefined)
     
@@ -131,7 +131,7 @@ object IWindow {
     
     inline def setDdUndefined: Self = StObject.set(x, "dd", js.undefined)
     
-    inline def setDefaultFocus(value: js.Any): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+    inline def setDefaultFocus(value: Any): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
     
     inline def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
     
@@ -143,7 +143,7 @@ object IWindow {
     
     inline def setGetDefaultFocusUndefined: Self = StObject.set(x, "getDefaultFocus", js.undefined)
     
-    inline def setGhost(value: js.Any): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
+    inline def setGhost(value: Any): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
     
     inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
     
@@ -179,7 +179,7 @@ object IWindow {
     
     inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
-    inline def setOnEsc(value: js.Any): Self = StObject.set(x, "onEsc", value.asInstanceOf[js.Any])
+    inline def setOnEsc(value: Any): Self = StObject.set(x, "onEsc", value.asInstanceOf[js.Any])
     
     inline def setOnEscUndefined: Self = StObject.set(x, "onEsc", js.undefined)
     
@@ -187,7 +187,7 @@ object IWindow {
     
     inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
     
-    inline def setRestore(value: /* animate */ js.UndefOr[js.Any] => IWindow): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
+    inline def setRestore(value: /* animate */ js.UndefOr[Any] => IWindow): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
     
     inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
     

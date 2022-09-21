@@ -1,5 +1,6 @@
 package typings.popperjsCore
 
+import typings.popperjsCore.anon.ScrollTop
 import typings.popperjsCore.typesMod.Window
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
@@ -12,6 +13,6 @@ object getNodeScrollMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(node: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def default(node: Node): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(node: Window): ScrollTop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[ScrollTop]
+  inline def default(node: Node): ScrollTop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[ScrollTop]
 }

@@ -8,17 +8,17 @@ object fieldLabelMod {
   
   @JSImport("@nulogy/components/src/FieldLabel", "FieldLabel")
   @js.native
-  val FieldLabel: js.Any = js.native
+  val FieldLabel: Any = js.native
   
   @JSImport("@nulogy/components/src/FieldLabel", "HelpText")
   @js.native
-  val HelpText: js.Any = js.native
+  val HelpText: Any = js.native
   
   @JSImport("@nulogy/components/src/FieldLabel", "MaybeFieldLabel")
   @js.native
-  val MaybeFieldLabel: js.Any = js.native
+  val MaybeFieldLabel: Any = js.native
   
   @JSImport("@nulogy/components/src/FieldLabel", "RequirementText")
   @js.native
-  val RequirementText: js.Any = js.native
+  val RequirementText: Any = js.native
 }

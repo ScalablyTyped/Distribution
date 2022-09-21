@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParameterRequest extends StObject {
   
   /**
-    * The name of the parameter you want to query.
+    * The name of the parameter you want to query. To query by parameter label, use "Name": "name:label". To query by parameter version, use "Name": "name:version".
     */
   var Name: PSParameterName
   

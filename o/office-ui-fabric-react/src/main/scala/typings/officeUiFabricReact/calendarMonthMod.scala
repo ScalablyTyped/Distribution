@@ -6,7 +6,6 @@ import typings.officeUiFabricReact.calendarTypesMod.ICalendarIconStrings
 import typings.officeUiFabricReact.calendarTypesMod.ICalendarStrings
 import typings.react.mod.ClassAttributes
 import typings.react.mod.Component
-import typings.std.Date
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,53 +15,52 @@ object calendarMonthMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Calendar/CalendarMonth", "CalendarMonth")
   @js.native
-  class CalendarMonth protected ()
-    extends Component[ICalendarMonthProps, ICalendarMonthState, js.Any] {
+  open class CalendarMonth protected () extends Component[ICalendarMonthProps, ICalendarMonthState, Any] {
     def this(props: ICalendarMonthProps) = this()
     
-    /* private */ var _calendarYearRef: js.Any = js.native
+    /* private */ var _calendarYearRef: Any = js.native
     
-    /* private */ var _focusOnUpdate: js.Any = js.native
+    /* private */ var _focusOnUpdate: Any = js.native
     
-    /* private */ var _isCurrentMonth: js.Any = js.native
+    /* private */ var _isCurrentMonth: Any = js.native
     
-    /* private */ var _navigatedMonthRef: js.Any = js.native
+    /* private */ var _navigatedMonthRef: Any = js.native
     
-    /* private */ var _onCalendarYearRef: js.Any = js.native
+    /* private */ var _onCalendarYearRef: Any = js.native
     
-    /* private */ var _onHeaderKeyDown: js.Any = js.native
+    /* private */ var _onHeaderKeyDown: Any = js.native
     
-    /* private */ var _onHeaderSelect: js.Any = js.native
+    /* private */ var _onHeaderSelect: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _onRenderYear: js.Any = js.native
+    /* private */ var _onRenderYear: Any = js.native
     
-    /* private */ var _onSelectMonth: js.Any = js.native
+    /* private */ var _onSelectMonth: Any = js.native
     
-    /* private */ var _onSelectMonthKeyDown: js.Any = js.native
+    /* private */ var _onSelectMonthKeyDown: Any = js.native
     
-    /* private */ var _onSelectNextYear: js.Any = js.native
+    /* private */ var _onSelectNextYear: Any = js.native
     
-    /* private */ var _onSelectNextYearKeyDown: js.Any = js.native
+    /* private */ var _onSelectNextYearKeyDown: Any = js.native
     
-    /* private */ var _onSelectPrevYear: js.Any = js.native
+    /* private */ var _onSelectPrevYear: Any = js.native
     
-    /* private */ var _onSelectPrevYearKeyDown: js.Any = js.native
+    /* private */ var _onSelectPrevYearKeyDown: Any = js.native
     
-    /* private */ var _onSelectYear: js.Any = js.native
+    /* private */ var _onSelectYear: Any = js.native
     
-    /* private */ var _onYearPickerHeaderSelect: js.Any = js.native
+    /* private */ var _onYearPickerHeaderSelect: Any = js.native
     
-    /* private */ var _selectMonthCallbacks: js.Any = js.native
+    /* private */ var _selectMonthCallbacks: Any = js.native
     
-    /* private */ var _yearRangeToNextDecadeLabel: js.Any = js.native
+    /* private */ var _yearRangeToNextDecadeLabel: Any = js.native
     
-    /* private */ var _yearRangeToPrevDecadeLabel: js.Any = js.native
+    /* private */ var _yearRangeToPrevDecadeLabel: Any = js.native
     
-    /* private */ var _yearRangeToString: js.Any = js.native
+    /* private */ var _yearRangeToString: Any = js.native
     
-    /* private */ var _yearToString: js.Any = js.native
+    /* private */ var _yearToString: Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MCalendarMonth(): Unit = js.native
@@ -105,23 +103,23 @@ object calendarMonthMod {
     
     var highlightSelectedMonth: Boolean
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
-    var navigatedDate: Date
+    var navigatedDate: js.Date
     
     var navigationIcons: ICalendarIconStrings
     
     var onHeaderSelect: js.UndefOr[js.Function1[/* focus */ Boolean, Unit]] = js.undefined
     
-    def onNavigateDate(date: Date, focusOnNavigatedDay: Boolean): Unit
+    def onNavigateDate(date: js.Date, focusOnNavigatedDay: Boolean): Unit
     
-    var selectedDate: Date
+    var selectedDate: js.Date
     
     var strings: ICalendarStrings
     
-    var today: js.UndefOr[Date] = js.undefined
+    var today: js.UndefOr[js.Date] = js.undefined
     
     var yearPickerHidden: js.UndefOr[Boolean] = js.undefined
   }
@@ -131,10 +129,10 @@ object calendarMonthMod {
       dateTimeFormatter: ICalendarFormatDateCallbacks,
       highlightCurrentMonth: Boolean,
       highlightSelectedMonth: Boolean,
-      navigatedDate: Date,
+      navigatedDate: js.Date,
       navigationIcons: ICalendarIconStrings,
-      onNavigateDate: (Date, Boolean) => Unit,
-      selectedDate: Date,
+      onNavigateDate: (js.Date, Boolean) => Unit,
+      selectedDate: js.Date,
       strings: ICalendarStrings
     ): ICalendarMonthProps = {
       val __obj = js.Dynamic.literal(dateTimeFormatter = dateTimeFormatter.asInstanceOf[js.Any], highlightCurrentMonth = highlightCurrentMonth.asInstanceOf[js.Any], highlightSelectedMonth = highlightSelectedMonth.asInstanceOf[js.Any], navigatedDate = navigatedDate.asInstanceOf[js.Any], navigationIcons = navigationIcons.asInstanceOf[js.Any], onNavigateDate = js.Any.fromFunction2(onNavigateDate), selectedDate = selectedDate.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
@@ -155,15 +153,15 @@ object calendarMonthMod {
       
       inline def setHighlightSelectedMonth(value: Boolean): Self = StObject.set(x, "highlightSelectedMonth", value.asInstanceOf[js.Any])
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setNavigatedDate(value: Date): Self = StObject.set(x, "navigatedDate", value.asInstanceOf[js.Any])
+      inline def setNavigatedDate(value: js.Date): Self = StObject.set(x, "navigatedDate", value.asInstanceOf[js.Any])
       
       inline def setNavigationIcons(value: ICalendarIconStrings): Self = StObject.set(x, "navigationIcons", value.asInstanceOf[js.Any])
       
@@ -171,13 +169,13 @@ object calendarMonthMod {
       
       inline def setOnHeaderSelectUndefined: Self = StObject.set(x, "onHeaderSelect", js.undefined)
       
-      inline def setOnNavigateDate(value: (Date, Boolean) => Unit): Self = StObject.set(x, "onNavigateDate", js.Any.fromFunction2(value))
+      inline def setOnNavigateDate(value: (js.Date, Boolean) => Unit): Self = StObject.set(x, "onNavigateDate", js.Any.fromFunction2(value))
       
-      inline def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
+      inline def setSelectedDate(value: js.Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
       
       inline def setStrings(value: ICalendarStrings): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
       
-      inline def setToday(value: Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: js.Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
       inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
       

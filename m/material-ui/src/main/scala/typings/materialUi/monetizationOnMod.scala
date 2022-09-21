@@ -10,10 +10,10 @@ object monetizationOnMod {
   
   @JSImport("material-ui/svg-icons/editor/monetization-on", JSImport.Default)
   @js.native
-  class default () extends EditorMonetizationOn
+  open class default () extends EditorMonetizationOn
   
   @JSImport("material-ui/svg-icons/editor/monetization-on", "EditorMonetizationOn")
   @js.native
-  class EditorMonetizationOn ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorMonetizationOn ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

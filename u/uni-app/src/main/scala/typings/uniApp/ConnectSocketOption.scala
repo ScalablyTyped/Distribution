@@ -27,7 +27,7 @@ trait ConnectSocketOption extends StObject {
   /**
     * HTTP 请求 Header，header 中不能设置 Referer
     */
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[Any] = js.undefined
   
   /**
     * 默认为 GET
@@ -67,7 +67,7 @@ object ConnectSocketOption {
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
@@ -79,7 +79,7 @@ object ConnectSocketOption {
     
     inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
-    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value*))
     
     inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.TextArea")
 @js.native
-class TextArea protected ()
+open class TextArea protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.TextArea {
   def this(element: Element) = this()

@@ -9,17 +9,40 @@ import typings.bullArena.bullArenaStrings.bullmq
 import typings.bullArena.mod.BullArena.MiddlewareListenOptions
 import typings.bullArena.mod.BullArena.MiddlewareOptions
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.redis.mod.ClientOpts
+import typings.ioredis.mod.Redis
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(options: MiddlewareOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(options: MiddlewareOptions, listenOptions: MiddlewareListenOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], listenOptions.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: MiddlewareOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(options: MiddlewareOptions, listenOptions: MiddlewareListenOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], listenOptions.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("bull-arena", JSImport.Namespace)
   @js.native
@@ -40,7 +63,9 @@ object mod {
         __obj.asInstanceOf[typings.bullArena.mod.BullArena.PortHostConnectionOptions]
       }
       
-      inline def RedisClientConnectionOptions(redis: ClientOpts): typings.bullArena.mod.BullArena.RedisClientConnectionOptions = {
+      inline def RedisClientConnectionOptions(
+        redis: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOpts */ Any) | Redis
+      ): typings.bullArena.mod.BullArena.RedisClientConnectionOptions = {
         val __obj = js.Dynamic.literal(redis = redis.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.bullArena.mod.BullArena.RedisClientConnectionOptions]
       }
@@ -127,7 +152,7 @@ object mod {
         
         inline def setQueues(value: js.Array[QueueOptions & ConnectionOptions]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
         
-        inline def setQueuesVarargs(value: (QueueOptions & ConnectionOptions)*): Self = StObject.set(x, "queues", js.Array(value :_*))
+        inline def setQueuesVarargs(value: (QueueOptions & ConnectionOptions)*): Self = StObject.set(x, "queues", js.Array(value*))
       }
     }
     
@@ -174,18 +199,18 @@ object mod {
       // inconsistent between different packages.
       // We are using an example method here
       // that is consistent across all providers.
-      def getJob(jobId: String): js.Promise[js.Any]
+      def getJob(jobId: String): js.Promise[Any]
     }
     object Queue {
       
-      inline def apply(getJob: String => js.Promise[js.Any]): Queue = {
+      inline def apply(getJob: String => js.Promise[Any]): Queue = {
         val __obj = js.Dynamic.literal(getJob = js.Any.fromFunction1(getJob))
         __obj.asInstanceOf[Queue]
       }
       
       extension [Self <: Queue](x: Self) {
         
-        inline def setGetJob(value: String => js.Promise[js.Any]): Self = StObject.set(x, "getJob", js.Any.fromFunction1(value))
+        inline def setGetJob(value: String => js.Promise[Any]): Self = StObject.set(x, "getJob", js.Any.fromFunction1(value))
       }
     }
     
@@ -234,18 +259,22 @@ object mod {
       extends StObject
          with ConnectionOptions {
       
-      var redis: ClientOpts
+      var redis: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOpts */ Any) | Redis
     }
     object RedisClientConnectionOptions {
       
-      inline def apply(redis: ClientOpts): RedisClientConnectionOptions = {
+      inline def apply(
+        redis: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOpts */ Any) | Redis
+      ): RedisClientConnectionOptions = {
         val __obj = js.Dynamic.literal(redis = redis.asInstanceOf[js.Any])
         __obj.asInstanceOf[RedisClientConnectionOptions]
       }
       
       extension [Self <: RedisClientConnectionOptions](x: Self) {
         
-        inline def setRedis(value: ClientOpts): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+        inline def setRedis(
+          value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOpts */ Any) | Redis
+        ): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
       }
     }
     

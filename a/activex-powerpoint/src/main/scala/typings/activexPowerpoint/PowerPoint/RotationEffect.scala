@@ -12,7 +12,7 @@ trait RotationEffect extends StObject {
   
   var From: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.RotationEffect_typekey")
   var PowerPointDotRotationEffect_typekey: RotationEffect
@@ -25,7 +25,7 @@ object RotationEffect {
     Application: Application,
     By: Double,
     From: Double,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotRotationEffect_typekey: RotationEffect,
     To: Double
   ): RotationEffect = {
@@ -42,7 +42,7 @@ object RotationEffect {
     
     inline def setFrom(value: Double): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotRotationEffect_typekey(value: RotationEffect): Self = StObject.set(x, "PowerPoint.RotationEffect_typekey", value.asInstanceOf[js.Any])
     

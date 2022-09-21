@@ -37,7 +37,7 @@ object BatchGetDocumentsRequest {
     
     inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
-    inline def setDocumentsVarargs(value: String*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: String*): Self = StObject.set(x, "documents", js.Array(value*))
     
     inline def setMask(value: DocumentMask): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     

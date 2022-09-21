@@ -23,43 +23,43 @@ trait XAnyDescriptionAccess
     * retrieves the descriptions for all columns.
     * @returns a sequence of sequences of anys representing the descriptions of all columns. The outer index represents different columns. The inner index repre
     */
-  val AnyColumnDescriptions: SafeArray[SafeArray[js.Any]]
+  val AnyColumnDescriptions: SafeArray[SafeArray[Any]]
   
   /**
     * retrieves the descriptions for all rows.
     * @returns a sequence of sequences of anys representing the descriptions of all rows. The outer index represents different rows. The inner index represents
     */
-  val AnyRowDescriptions: SafeArray[SafeArray[js.Any]]
+  val AnyRowDescriptions: SafeArray[SafeArray[Any]]
   
   /**
     * retrieves the descriptions for all columns.
     * @returns a sequence of sequences of anys representing the descriptions of all columns. The outer index represents different columns. The inner index repre
     */
-  def getAnyColumnDescriptions(): SafeArray[SafeArray[js.Any]]
+  def getAnyColumnDescriptions(): SafeArray[SafeArray[Any]]
   
   /**
     * retrieves the descriptions for all rows.
     * @returns a sequence of sequences of anys representing the descriptions of all rows. The outer index represents different rows. The inner index represents
     */
-  def getAnyRowDescriptions(): SafeArray[SafeArray[js.Any]]
+  def getAnyRowDescriptions(): SafeArray[SafeArray[Any]]
   
   /**
     * sets the descriptions for all columns.
     * @param rColumnDescriptions a sequence of sequences of anys which represent the descriptions of all columns. The outer index represents different columns
     */
-  def setAnyColumnDescriptions(rColumnDescriptions: SeqEquiv[SeqEquiv[js.Any]]): Unit
+  def setAnyColumnDescriptions(rColumnDescriptions: SeqEquiv[SeqEquiv[Any]]): Unit
   
   /**
     * sets the descriptions for all rows.
     * @param rRowDescriptions a sequence of sequences of anys representing the descriptions of all rows. The outer index represents different rows. The inner
     */
-  def setAnyRowDescriptions(rRowDescriptions: SeqEquiv[SeqEquiv[js.Any]]): Unit
+  def setAnyRowDescriptions(rRowDescriptions: SeqEquiv[SeqEquiv[Any]]): Unit
 }
 object XAnyDescriptionAccess {
   
   inline def apply(
-    AnyColumnDescriptions: SafeArray[SafeArray[js.Any]],
-    AnyRowDescriptions: SafeArray[SafeArray[js.Any]],
+    AnyColumnDescriptions: SafeArray[SafeArray[Any]],
+    AnyRowDescriptions: SafeArray[SafeArray[Any]],
     ColumnDescriptions: SafeArray[String],
     ComplexColumnDescriptions: SafeArray[SafeArray[String]],
     ComplexRowDescriptions: SafeArray[SafeArray[String]],
@@ -68,8 +68,8 @@ object XAnyDescriptionAccess {
     RowDescriptions: SafeArray[String],
     acquire: () => Unit,
     addChartDataChangeEventListener: XChartDataChangeEventListener => Unit,
-    getAnyColumnDescriptions: () => SafeArray[SafeArray[js.Any]],
-    getAnyRowDescriptions: () => SafeArray[SafeArray[js.Any]],
+    getAnyColumnDescriptions: () => SafeArray[SafeArray[Any]],
+    getAnyRowDescriptions: () => SafeArray[SafeArray[Any]],
     getColumnDescriptions: () => SafeArray[String],
     getComplexColumnDescriptions: () => SafeArray[SafeArray[String]],
     getComplexRowDescriptions: () => SafeArray[SafeArray[String]],
@@ -77,11 +77,11 @@ object XAnyDescriptionAccess {
     getNotANumber: () => Double,
     getRowDescriptions: () => SafeArray[String],
     isNotANumber: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeChartDataChangeEventListener: XChartDataChangeEventListener => Unit,
-    setAnyColumnDescriptions: SeqEquiv[SeqEquiv[js.Any]] => Unit,
-    setAnyRowDescriptions: SeqEquiv[SeqEquiv[js.Any]] => Unit,
+    setAnyColumnDescriptions: SeqEquiv[SeqEquiv[Any]] => Unit,
+    setAnyRowDescriptions: SeqEquiv[SeqEquiv[Any]] => Unit,
     setColumnDescriptions: SeqEquiv[String] => Unit,
     setComplexColumnDescriptions: SeqEquiv[SeqEquiv[String]] => Unit,
     setComplexRowDescriptions: SeqEquiv[SeqEquiv[String]] => Unit,
@@ -94,16 +94,16 @@ object XAnyDescriptionAccess {
   
   extension [Self <: XAnyDescriptionAccess](x: Self) {
     
-    inline def setAnyColumnDescriptions(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "AnyColumnDescriptions", value.asInstanceOf[js.Any])
+    inline def setAnyColumnDescriptions(value: SafeArray[SafeArray[Any]]): Self = StObject.set(x, "AnyColumnDescriptions", value.asInstanceOf[js.Any])
     
-    inline def setAnyRowDescriptions(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "AnyRowDescriptions", value.asInstanceOf[js.Any])
+    inline def setAnyRowDescriptions(value: SafeArray[SafeArray[Any]]): Self = StObject.set(x, "AnyRowDescriptions", value.asInstanceOf[js.Any])
     
-    inline def setGetAnyColumnDescriptions(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getAnyColumnDescriptions", js.Any.fromFunction0(value))
+    inline def setGetAnyColumnDescriptions(value: () => SafeArray[SafeArray[Any]]): Self = StObject.set(x, "getAnyColumnDescriptions", js.Any.fromFunction0(value))
     
-    inline def setGetAnyRowDescriptions(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getAnyRowDescriptions", js.Any.fromFunction0(value))
+    inline def setGetAnyRowDescriptions(value: () => SafeArray[SafeArray[Any]]): Self = StObject.set(x, "getAnyRowDescriptions", js.Any.fromFunction0(value))
     
-    inline def setSetAnyColumnDescriptions(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setAnyColumnDescriptions", js.Any.fromFunction1(value))
+    inline def setSetAnyColumnDescriptions(value: SeqEquiv[SeqEquiv[Any]] => Unit): Self = StObject.set(x, "setAnyColumnDescriptions", js.Any.fromFunction1(value))
     
-    inline def setSetAnyRowDescriptions(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setAnyRowDescriptions", js.Any.fromFunction1(value))
+    inline def setSetAnyRowDescriptions(value: SeqEquiv[SeqEquiv[Any]] => Unit): Self = StObject.set(x, "setAnyRowDescriptions", js.Any.fromFunction1(value))
   }
 }

@@ -27,14 +27,19 @@ trait PhoneNumber extends StObject {
   var Capabilities: js.UndefOr[PhoneNumberCapabilities] = js.undefined
   
   /**
+    * The phone number country. Format: ISO 3166-1 alpha-2.
+    */
+  var Country: js.UndefOr[Alpha2CountryCode] = js.undefined
+  
+  /**
     * The phone number creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The deleted phone number timestamp, in ISO 8601 format.
     */
-  var DeletionTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var DeletionTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The phone number, in E.164 format.
@@ -64,7 +69,7 @@ trait PhoneNumber extends StObject {
   /**
     * The updated phone number timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var UpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object PhoneNumber {
   
@@ -79,7 +84,7 @@ object PhoneNumber {
     
     inline def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
     
-    inline def setAssociationsVarargs(value: PhoneNumberAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: PhoneNumberAssociation*): Self = StObject.set(x, "Associations", js.Array(value*))
     
     inline def setCallingName(value: CallingName): Self = StObject.set(x, "CallingName", value.asInstanceOf[js.Any])
     
@@ -93,11 +98,15 @@ object PhoneNumber {
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
-    inline def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCountry(value: Alpha2CountryCode): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+    
+    inline def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
+    
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    inline def setDeletionTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "DeletionTimestamp", value.asInstanceOf[js.Any])
+    inline def setDeletionTimestamp(value: js.Date): Self = StObject.set(x, "DeletionTimestamp", value.asInstanceOf[js.Any])
     
     inline def setDeletionTimestampUndefined: Self = StObject.set(x, "DeletionTimestamp", js.undefined)
     
@@ -121,7 +130,7 @@ object PhoneNumber {
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    inline def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
   }

@@ -20,6 +20,6 @@ object EventUrlFilters {
     
     inline def setUrl(value: js.Array[UrlFilter]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUrlVarargs(value: UrlFilter*): Self = StObject.set(x, "url", js.Array(value :_*))
+    inline def setUrlVarargs(value: UrlFilter*): Self = StObject.set(x, "url", js.Array(value*))
   }
 }

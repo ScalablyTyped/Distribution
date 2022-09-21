@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.TreeView")
 @js.native
-class TreeView protected ()
+open class TreeView protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.TreeView {
   def this(element: Element) = this()

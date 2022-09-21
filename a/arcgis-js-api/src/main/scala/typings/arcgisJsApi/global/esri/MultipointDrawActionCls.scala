@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-MultipointDrawAction.html)
   */
-class MultipointDrawActionCls ()
+open class MultipointDrawActionCls ()
   extends StObject
      with typings.arcgisJsApi.esri.MultipointDrawAction {
   def this(properties: MultipointDrawActionProperties) = this()

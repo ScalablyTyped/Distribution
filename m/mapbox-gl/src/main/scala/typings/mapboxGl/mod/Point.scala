@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "Point")
 @js.native
-class Point protected () extends StObject {
+open class Point protected () extends StObject {
   def this(x: Double, y: Double) = this()
   
   def add(p: Point): Point = js.native

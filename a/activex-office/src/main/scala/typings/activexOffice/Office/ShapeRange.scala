@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ShapeRange extends StObject {
   
-  def apply(Index: js.Any): Shape = js.native
+  def apply(Index: Any): Shape = js.native
   
   def Adjustments(Index: Double): Double = js.native
   @JSName("Adjustments")
@@ -17,7 +17,7 @@ trait ShapeRange extends StObject {
   
   var AlternativeText: String = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   def Apply(): Unit = js.native
   
@@ -78,7 +78,7 @@ trait ShapeRange extends StObject {
   
   def Group(): Shape = js.native
   
-  def GroupItems(Index: js.Any): Shape = js.native
+  def GroupItems(Index: Any): Shape = js.native
   @JSName("GroupItems")
   val GroupItems_Original: GroupShapes = js.native
   
@@ -100,7 +100,7 @@ trait ShapeRange extends StObject {
   
   def IncrementTop(Increment: Double): Unit = js.native
   
-  def Item(Index: js.Any): Shape = js.native
+  def Item(Index: Any): Shape = js.native
   
   var Left: Double = js.native
   
@@ -114,11 +114,11 @@ trait ShapeRange extends StObject {
   
   var Name: String = js.native
   
-  def Nodes(Index: js.Any): ShapeNode = js.native
+  def Nodes(Index: Any): ShapeNode = js.native
   @JSName("Nodes")
   val Nodes_Original: ShapeNodes = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentGroup: Shape = js.native
   
@@ -147,7 +147,7 @@ trait ShapeRange extends StObject {
   val Script: typings.activexOffice.Office.Script = js.native
   
   def Select(): Unit = js.native
-  def Select(Replace: js.Any): Unit = js.native
+  def Select(Replace: Any): Unit = js.native
   
   def SetShapesDefaultProperties(): Unit = js.native
   
@@ -175,7 +175,7 @@ trait ShapeRange extends StObject {
   
   val VerticalFlip: MsoTriState = js.native
   
-  val Vertices: js.Any = js.native
+  val Vertices: Any = js.native
   
   var Visible: MsoTriState = js.native
   

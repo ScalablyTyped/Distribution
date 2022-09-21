@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait PromisedWatchHandle
-  extends js.Promise[js.Any] {
+  extends js.Promise[Any] {
   
-  def remove(): Unit = js.native
+  def remove(): scala.Unit = js.native
 }

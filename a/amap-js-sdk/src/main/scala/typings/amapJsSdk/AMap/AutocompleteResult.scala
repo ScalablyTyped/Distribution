@@ -27,6 +27,6 @@ object AutocompleteResult {
     
     inline def setTips(value: js.Array[Tip]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
-    inline def setTipsVarargs(value: Tip*): Self = StObject.set(x, "tips", js.Array(value :_*))
+    inline def setTipsVarargs(value: Tip*): Self = StObject.set(x, "tips", js.Array(value*))
   }
 }

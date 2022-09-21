@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fs-extra", "Dir")
 @js.native
-class Dir ()
+open class Dir ()
   extends typings.node.fsMod.Dir

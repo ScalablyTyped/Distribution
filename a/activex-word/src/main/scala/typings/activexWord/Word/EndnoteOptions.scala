@@ -16,7 +16,7 @@ trait EndnoteOptions extends StObject {
   
   var NumberingRule: WdNumberingRule
   
-  val Parent: js.Any
+  val Parent: Any
   
   var StartingNumber: Double
   
@@ -31,7 +31,7 @@ object EndnoteOptions {
     Location: WdEndnoteLocation,
     NumberStyle: WdNoteNumberStyle,
     NumberingRule: WdNumberingRule,
-    Parent: js.Any,
+    Parent: Any,
     StartingNumber: Double,
     WordDotEndnoteOptions_typekey: EndnoteOptions
   ): EndnoteOptions = {
@@ -52,7 +52,7 @@ object EndnoteOptions {
     
     inline def setNumberingRule(value: WdNumberingRule): Self = StObject.set(x, "NumberingRule", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setStartingNumber(value: Double): Self = StObject.set(x, "StartingNumber", value.asInstanceOf[js.Any])
     

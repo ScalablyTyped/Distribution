@@ -26,6 +26,6 @@ object PlannerGroup {
     
     inline def setPlansUndefined: Self = StObject.set(x, "plans", js.undefined)
     
-    inline def setPlansVarargs(value: PlannerPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: PlannerPlan*): Self = StObject.set(x, "plans", js.Array(value*))
   }
 }

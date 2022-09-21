@@ -1,7 +1,7 @@
 
 # Scala.js typings for supercluster
 
-Typings are for version 5.0
+Typings are for version 7.1
 
 ## Library description:
 A very fast geospatial point clustering library.
@@ -10,10 +10,10 @@ A very fast geospatial point clustering library.
 | ------------------ | :-------------: |
 | Full name          | supercluster |
 | Keywords           | clustering, geospatial, markers |
-| # releases         | 7 |
-| # dependents       | 144 |
-| # downloads        | 22440558 |
-| # stars            | 5 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 4178544.3333333335 |
+| # stars            | 1536.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/supercluster#readme)

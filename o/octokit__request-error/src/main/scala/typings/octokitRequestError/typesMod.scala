@@ -1,33 +1,28 @@
 package typings.octokitRequestError
 
+import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import typings.octokitTypes.requestOptionsMod.RequestOptions
-import typings.octokitTypes.responseHeadersMod.ResponseHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  trait RequestErrorOptions extends StObject {
-    
-    var headers: js.UndefOr[ResponseHeaders] = js.undefined
-    
-    var request: RequestOptions
-  }
+  /* Rewritten from type alias, can be one of: 
+    - typings.octokitRequestError.anon.Headers
+    - typings.octokitRequestError.anon.Request
+  */
+  trait RequestErrorOptions extends StObject
   object RequestErrorOptions {
     
-    inline def apply(request: RequestOptions): RequestErrorOptions = {
+    inline def Headers(request: RequestOptions): typings.octokitRequestError.anon.Headers = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RequestErrorOptions]
+      __obj.asInstanceOf[typings.octokitRequestError.anon.Headers]
     }
     
-    extension [Self <: RequestErrorOptions](x: Self) {
-      
-      inline def setHeaders(value: ResponseHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-      
-      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-      
-      inline def setRequest(value: RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def Request(request: RequestOptions, response: OctokitResponse[Any, Double]): typings.octokitRequestError.anon.Request = {
+      val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.octokitRequestError.anon.Request]
     }
   }
 }

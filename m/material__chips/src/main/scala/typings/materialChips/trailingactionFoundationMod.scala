@@ -11,18 +11,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object trailingactionFoundationMod {
   
-  @JSImport("@material/chips/trailingaction/foundation", JSImport.Default)
+  @JSImport("@material/chips/deprecated/trailingaction/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCChipTrailingActionFoundation {
+  open class default () extends MDCChipTrailingActionFoundation {
     def this(adapter: PartialMDCChipTrailingAct) = this()
   }
   
-  @JSImport("@material/chips/trailingaction/foundation", "MDCChipTrailingActionFoundation")
+  @JSImport("@material/chips/deprecated/trailingaction/foundation", "MDCChipTrailingActionFoundation")
   @js.native
-  class MDCChipTrailingActionFoundation () extends MDCFoundation[MDCChipTrailingActionAdapter] {
+  open class MDCChipTrailingActionFoundation () extends MDCFoundation[MDCChipTrailingActionAdapter] {
     def this(adapter: PartialMDCChipTrailingAct) = this()
     
     def focus(): Unit = js.native
+    
+    /* private */ var getTriggerFromKey: Any = js.native
     
     def handleClick(evt: MouseEvent): Unit = js.native
     
@@ -31,5 +33,7 @@ object trailingactionFoundationMod {
     def isNavigable(): Boolean = js.native
     
     def removeFocus(): Unit = js.native
+    
+    /* private */ var shouldNotifyInteractionFromKey: Any = js.native
   }
 }

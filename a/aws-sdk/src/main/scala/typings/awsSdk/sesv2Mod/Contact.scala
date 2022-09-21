@@ -14,7 +14,7 @@ trait Contact extends StObject {
   /**
     * A timestamp noting the last time the contact's information was updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The default topic preferences applied to the contact.
@@ -44,7 +44,7 @@ object Contact {
     
     inline def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
     
-    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     
@@ -52,13 +52,13 @@ object Contact {
     
     inline def setTopicDefaultPreferencesUndefined: Self = StObject.set(x, "TopicDefaultPreferences", js.undefined)
     
-    inline def setTopicDefaultPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicDefaultPreferences", js.Array(value :_*))
+    inline def setTopicDefaultPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicDefaultPreferences", js.Array(value*))
     
     inline def setTopicPreferences(value: TopicPreferenceList): Self = StObject.set(x, "TopicPreferences", value.asInstanceOf[js.Any])
     
     inline def setTopicPreferencesUndefined: Self = StObject.set(x, "TopicPreferences", js.undefined)
     
-    inline def setTopicPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicPreferences", js.Array(value :_*))
+    inline def setTopicPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicPreferences", js.Array(value*))
     
     inline def setUnsubscribeAll(value: UnsubscribeAll): Self = StObject.set(x, "UnsubscribeAll", value.asInstanceOf[js.Any])
     

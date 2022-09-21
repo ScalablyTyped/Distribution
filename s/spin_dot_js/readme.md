@@ -1,7 +1,7 @@
 
 # Scala.js typings for spin_dot_js
 
-Typings are for version 4.1.0
+Typings are for version 4.1.1
 
 ## Library description:
 A spinning activity indicator
@@ -10,10 +10,10 @@ A spinning activity indicator
 | ------------------ | :-------------: |
 | Full name          | spin.js |
 | Keywords           | css, progress indicator, spin, spinner |
-| # releases         | 2 |
-| # dependents       | 69 |
-| # downloads        | 8556105 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 947382.0 |
+| # stars            | 9337.0 |
 
 ## Links
 - [Homepage](https://github.com/fgnass/spin.js#readme)

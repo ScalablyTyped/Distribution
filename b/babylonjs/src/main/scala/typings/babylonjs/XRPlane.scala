@@ -13,6 +13,8 @@ trait XRPlane extends StObject {
   
   var orientation: Horizontal | Vertical
   
+  var parentSceneObject: js.UndefOr[XRSceneObject] = js.undefined
+  
   var planeSpace: XRSpace
   
   var polygon: js.Array[DOMPointReadOnly]
@@ -35,10 +37,14 @@ object XRPlane {
     
     inline def setOrientation(value: Horizontal | Vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
+    inline def setParentSceneObject(value: XRSceneObject): Self = StObject.set(x, "parentSceneObject", value.asInstanceOf[js.Any])
+    
+    inline def setParentSceneObjectUndefined: Self = StObject.set(x, "parentSceneObject", js.undefined)
+    
     inline def setPlaneSpace(value: XRSpace): Self = StObject.set(x, "planeSpace", value.asInstanceOf[js.Any])
     
     inline def setPolygon(value: js.Array[DOMPointReadOnly]): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
-    inline def setPolygonVarargs(value: DOMPointReadOnly*): Self = StObject.set(x, "polygon", js.Array(value :_*))
+    inline def setPolygonVarargs(value: DOMPointReadOnly*): Self = StObject.set(x, "polygon", js.Array(value*))
   }
 }

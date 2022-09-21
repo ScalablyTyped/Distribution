@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("muicss/react", "Button")
 @js.native
-class Button () extends default
+open class Button () extends default

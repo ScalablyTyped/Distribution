@@ -1,0 +1,18 @@
+package typings.googleapis.networkmanagementV1Mod.networkmanagementV1
+
+import typings.googleapisCommon.apiMod.APIRequestContext
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("googleapis/build/src/apis/networkmanagement/v1", "networkmanagement_v1.Resource$Projects$Locations$Global")
+@js.native
+open class ResourceProjectsLocationsGlobal protected () extends StObject {
+  def this(context: APIRequestContext) = this()
+  
+  var connectivityTests: ResourceProjectsLocationsGlobalConnectivitytests = js.native
+  
+  var context: APIRequestContext = js.native
+  
+  var operations: ResourceProjectsLocationsGlobalOperations = js.native
+}

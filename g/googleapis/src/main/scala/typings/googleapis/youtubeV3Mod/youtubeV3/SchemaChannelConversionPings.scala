@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The conversionPings object encapsulates information about conversion pings
-  * that need to be respected by the channel.
-  */
 trait SchemaChannelConversionPings extends StObject {
   
   /**
-    * Pings that the app shall fire (authenticated by biscotti cookie). Each
-    * ping has a context, in which the app must fire the ping, and a url
-    * identifying the ping.
+    * Pings that the app shall fire (authenticated by biscotti cookie). Each ping has a context, in which the app must fire the ping, and a url identifying the ping.
     */
   var pings: js.UndefOr[js.Array[SchemaChannelConversionPing]] = js.undefined
 }
@@ -30,6 +24,6 @@ object SchemaChannelConversionPings {
     
     inline def setPingsUndefined: Self = StObject.set(x, "pings", js.undefined)
     
-    inline def setPingsVarargs(value: SchemaChannelConversionPing*): Self = StObject.set(x, "pings", js.Array(value :_*))
+    inline def setPingsVarargs(value: SchemaChannelConversionPing*): Self = StObject.set(x, "pings", js.Array(value*))
   }
 }

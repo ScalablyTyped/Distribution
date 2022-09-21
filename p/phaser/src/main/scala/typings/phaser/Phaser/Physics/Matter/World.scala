@@ -11,9 +11,8 @@ import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Graphics
 import typings.phaser.Phaser.Scene
-import typings.phaser.Phaser.Tilemaps.DynamicTilemapLayer
-import typings.phaser.Phaser.Tilemaps.StaticTilemapLayer
 import typings.phaser.Phaser.Tilemaps.Tile
+import typings.phaser.Phaser.Tilemaps.TilemapLayer
 import typings.phaser.Phaser.Types.Physics.Matter.MatterDebugConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterRunnerConfig
 import org.scalablytyped.runtime.StObject
@@ -63,10 +62,8 @@ trait World
     * @param tilemapLayer An array of tiles.
     * @param options Options to be passed to the MatterTileBody constructor. {@see Phaser.Physics.Matter.TileBody}
     */
-  def convertTilemapLayer(tilemapLayer: DynamicTilemapLayer): this.type = js.native
-  def convertTilemapLayer(tilemapLayer: DynamicTilemapLayer, options: js.Object): this.type = js.native
-  def convertTilemapLayer(tilemapLayer: StaticTilemapLayer): this.type = js.native
-  def convertTilemapLayer(tilemapLayer: StaticTilemapLayer, options: js.Object): this.type = js.native
+  def convertTilemapLayer(tilemapLayer: TilemapLayer): this.type = js.native
+  def convertTilemapLayer(tilemapLayer: TilemapLayer, options: js.Object): this.type = js.native
   
   /**
     * Adds `MatterTileBody` instances for the given tiles. This adds bodies regardless of whether the
@@ -559,7 +556,7 @@ trait World
     * @param lineOpacity The line opacity, between 0 and 1.
     */
   def renderBodyAxes(
-    bodies: js.Array[js.Any],
+    bodies: js.Array[Any],
     graphics: Graphics,
     showAxes: Boolean,
     lineColor: Double,
@@ -580,7 +577,7 @@ trait World
     * @param lineColor The line color.
     * @param lineOpacity The line opacity, between 0 and 1.
     */
-  def renderBodyBounds(bodies: js.Array[js.Any], graphics: Graphics, lineColor: Double, lineOpacity: Double): Unit = js.native
+  def renderBodyBounds(bodies: js.Array[Any], graphics: Graphics, lineColor: Double, lineOpacity: Double): Unit = js.native
   
   /**
     * Renders a velocity indicator for an array of Bodies, to the given Graphics instance.
@@ -596,7 +593,7 @@ trait World
     * @param lineThickness The line thickness.
     */
   def renderBodyVelocity(
-    bodies: js.Array[js.Any],
+    bodies: js.Array[Any],
     graphics: Graphics,
     lineColor: Double,
     lineOpacity: Double,

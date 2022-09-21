@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object nouisliderStrings {
   
   @js.native
-  sealed trait count extends StObject
-  inline def count: count = "count".asInstanceOf[count]
-  
-  @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
@@ -23,28 +19,12 @@ object nouisliderStrings {
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait positions extends StObject
-  inline def positions: positions = "positions".asInstanceOf[positions]
-  
-  @js.native
-  sealed trait range extends StObject
-  inline def range: range = "range".asInstanceOf[range]
-  
-  @js.native
   sealed trait rtl extends StObject
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait steps extends StObject
-  inline def steps: steps = "steps".asInstanceOf[steps]
-  
-  @js.native
   sealed trait upper extends StObject
   inline def upper: upper = "upper".asInstanceOf[upper]
-  
-  @js.native
-  sealed trait values extends StObject
-  inline def values: values = "values".asInstanceOf[values]
   
   @js.native
   sealed trait vertical extends StObject

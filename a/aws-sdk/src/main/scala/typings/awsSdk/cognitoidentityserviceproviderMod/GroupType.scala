@@ -9,7 +9,7 @@ trait GroupType extends StObject {
   /**
     * The date the group was created.
     */
-  var CreationDate: js.UndefOr[DateType] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A string containing the description of the group.
@@ -24,15 +24,15 @@ trait GroupType extends StObject {
   /**
     * The date the group was last modified.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A nonnegative integer value that specifies the precedence of this group relative to the other groups that a user can belong to in the user pool. If a user belongs to two or more groups, it is the group with the highest precedence whose role ARN will be used in the cognito:roles and cognito:preferred_role claims in the user's tokens. Groups with higher Precedence values take precedence over groups with lower Precedence values or with null Precedence values. Two groups can have the same Precedence value. If this happens, neither group takes precedence over the other. If two groups with the same Precedence have the same role ARN, that role is used in the cognito:preferred_role claim in tokens for users in each group. If the two groups have different role ARNs, the cognito:preferred_role claim is not set in users' tokens. The default Precedence value is null.
+    * A non-negative integer value that specifies the precedence of this group relative to the other groups that a user can belong to in the user pool. Zero is the highest precedence value. Groups with lower Precedence values take precedence over groups with higher ornull Precedence values. If a user belongs to two or more groups, it is the group with the lowest precedence value whose role ARN is given in the user's tokens for the cognito:roles and cognito:preferred_role claims. Two groups can have the same Precedence value. If this happens, neither group takes precedence over the other. If two groups with the same Precedence have the same role ARN, that role is used in the cognito:preferred_role claim in tokens for users in each group. If the two groups have different role ARNs, the cognito:preferred_role claim isn't set in users' tokens. The default Precedence value is null.
     */
   var Precedence: js.UndefOr[PrecedenceType] = js.undefined
   
   /**
-    * The role ARN for the group.
+    * The role Amazon Resource Name (ARN) for the group.
     */
   var RoleArn: js.UndefOr[ArnType] = js.undefined
   
@@ -50,7 +50,7 @@ object GroupType {
   
   extension [Self <: GroupType](x: Self) {
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -62,7 +62,7 @@ object GroupType {
     
     inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

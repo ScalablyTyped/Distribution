@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Credential
   extends StObject
-     with Accessor {
+     with Accessor
+     with Evented {
   
   /**
     * Token expiration time specified as number of milliseconds since 1 January 1970 00:00:00 UTC.
@@ -20,7 +21,7 @@ trait Credential
   var expires: Double = js.native
   
   /**
-    * Indicates that this credential was created to access the [ArcGIS REST Admin service](https://developers.arcgis.com/rest/services-reference/rest-api-admin.htm).
+    * Indicates that this credential was created to access the [ArcGIS REST Admin service](https://developers.arcgis.com/rest/services-reference/enterprise/rest-api-admin.htm).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html#isAdmin)
     */
@@ -31,7 +32,7 @@ trait Credential
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html#oAuthState)
     */
-  var oAuthState: js.Any = js.native
+  var oAuthState: Any = js.native
   
   @JSName("on")
   def on_destroy(name: destroy, eventHandler: CredentialDestroyEventHandler): IHandle = js.native
@@ -43,7 +44,7 @@ trait Credential
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html#refreshToken)
     */
-  def refreshToken(): Unit = js.native
+  def refreshToken(): scala.Unit = js.native
   
   /**
     * The server url.

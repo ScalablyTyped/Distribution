@@ -8,11 +8,13 @@ trait Scheduling extends StObject {
   
   /**
     * Specifies whether the instance should be automatically restarted if it is terminated by Compute Engine (not terminated by a user). You can only set the automatic restart option for
-    * standard instances. Preemptible instances cannot be automatically restarted.
-    *
-    * By default, this is set to true so an instance is automatically restarted if it is terminated by Compute Engine.
+    * standard instances. Preemptible instances cannot be automatically restarted. By default, this is set to true so an instance is automatically restarted if it is terminated by Compute
+    * Engine.
     */
   var automaticRestart: js.UndefOr[Boolean] = js.undefined
+  
+  /** An opaque location hint used to place the instance close to other resources. This field is for use by internal tools that use the public API. */
+  var locationHint: js.UndefOr[String] = js.undefined
   
   /** The minimum number of virtual CPUs this instance will consume when running on a sole-tenant node. */
   var minNodeCpus: js.UndefOr[Double] = js.undefined
@@ -45,6 +47,10 @@ object Scheduling {
     
     inline def setAutomaticRestartUndefined: Self = StObject.set(x, "automaticRestart", js.undefined)
     
+    inline def setLocationHint(value: String): Self = StObject.set(x, "locationHint", value.asInstanceOf[js.Any])
+    
+    inline def setLocationHintUndefined: Self = StObject.set(x, "locationHint", js.undefined)
+    
     inline def setMinNodeCpus(value: Double): Self = StObject.set(x, "minNodeCpus", value.asInstanceOf[js.Any])
     
     inline def setMinNodeCpusUndefined: Self = StObject.set(x, "minNodeCpus", js.undefined)
@@ -53,7 +59,7 @@ object Scheduling {
     
     inline def setNodeAffinitiesUndefined: Self = StObject.set(x, "nodeAffinities", js.undefined)
     
-    inline def setNodeAffinitiesVarargs(value: SchedulingNodeAffinity*): Self = StObject.set(x, "nodeAffinities", js.Array(value :_*))
+    inline def setNodeAffinitiesVarargs(value: SchedulingNodeAffinity*): Self = StObject.set(x, "nodeAffinities", js.Array(value*))
     
     inline def setOnHostMaintenance(value: String): Self = StObject.set(x, "onHostMaintenance", value.asInstanceOf[js.Any])
     

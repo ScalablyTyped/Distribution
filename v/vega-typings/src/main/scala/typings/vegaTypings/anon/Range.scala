@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Range
   extends StObject
-     with ScaledValueRef[js.Any] {
+     with ScaledValueRef[Any] {
   
   var range: Double | Boolean
   

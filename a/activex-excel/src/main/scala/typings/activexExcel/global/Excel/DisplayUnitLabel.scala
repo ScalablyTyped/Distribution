@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DisplayUnitLabel")
 @js.native
-/* private */ class DisplayUnitLabel ()
+/* private */ open class DisplayUnitLabel ()
   extends StObject
      with typings.activexExcel.Excel.DisplayUnitLabel

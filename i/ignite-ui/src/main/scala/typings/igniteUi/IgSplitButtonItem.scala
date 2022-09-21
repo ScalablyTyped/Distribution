@@ -10,7 +10,7 @@ trait IgSplitButtonItem
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Css class to represent the iconClass of the item

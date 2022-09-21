@@ -34,6 +34,6 @@ object CleanupMode {
     
     inline def setViewModelNull: Self = StObject.set(x, "viewModel", null)
     
-    inline def setViewVarargs(value: Node*): Self = StObject.set(x, "view", js.Array(value :_*))
+    inline def setViewVarargs(value: Node*): Self = StObject.set(x, "view", js.Array(value*))
   }
 }

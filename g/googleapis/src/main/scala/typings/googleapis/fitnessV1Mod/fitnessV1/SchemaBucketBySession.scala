@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaBucketBySession extends StObject {
   
   /**
-    * Specifies that only sessions of duration longer than minDurationMillis
-    * are considered and used as a container for aggregated data.
+    * Specifies that only sessions of duration longer than minDurationMillis are considered and used as a container for aggregated data.
     */
-  var minDurationMillis: js.UndefOr[String] = js.undefined
+  var minDurationMillis: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBucketBySession {
   
@@ -22,6 +21,8 @@ object SchemaBucketBySession {
   extension [Self <: SchemaBucketBySession](x: Self) {
     
     inline def setMinDurationMillis(value: String): Self = StObject.set(x, "minDurationMillis", value.asInstanceOf[js.Any])
+    
+    inline def setMinDurationMillisNull: Self = StObject.set(x, "minDurationMillis", null)
     
     inline def setMinDurationMillisUndefined: Self = StObject.set(x, "minDurationMillis", js.undefined)
   }

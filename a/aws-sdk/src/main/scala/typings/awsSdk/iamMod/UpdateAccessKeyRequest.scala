@@ -12,7 +12,7 @@ trait UpdateAccessKeyRequest extends StObject {
   var AccessKeyId: accessKeyIdType
   
   /**
-    *  The status you want to assign to the secret access key. Active means that the key can be used for API calls to AWS, while Inactive means that the key cannot be used.
+    *  The status you want to assign to the secret access key. Active means that the key can be used for programmatic calls to Amazon Web Services, while Inactive means that the key cannot be used.
     */
   var Status: statusType
   

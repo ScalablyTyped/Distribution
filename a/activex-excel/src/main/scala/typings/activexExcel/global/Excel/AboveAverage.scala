@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.AboveAverage")
 @js.native
-/* private */ class AboveAverage ()
+/* private */ open class AboveAverage ()
   extends StObject
      with typings.activexExcel.Excel.AboveAverage {
   
@@ -71,7 +71,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val PTCondition: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Priority: Double = js.native

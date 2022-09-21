@@ -4,16 +4,15 @@ import typings.mfiles.MFiles.MFBuiltInDocumentClass
 import typings.mfiles.MFiles.MFBuiltInObjectClass
 import typings.mfiles.MFiles.MFObjectVersionFlag
 import typings.mfiles.MFiles.MFSpecialObjectFlag
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IObjectVersion extends StObject {
   
-  val AccessedByMeUtc: Date
+  val AccessedByMeUtc: js.Date
   
-  val CheckedOutAtUtc: Date
+  val CheckedOutAtUtc: js.Date
   
   val CheckedOutTo: Double
   
@@ -27,7 +26,7 @@ trait IObjectVersion extends StObject {
   
   def Clone(): IObjectVersion
   
-  val CreatedUtc: Date
+  val CreatedUtc: js.Date
   
   val Deleted: Boolean
   
@@ -53,7 +52,7 @@ trait IObjectVersion extends StObject {
   
   val IsObjectShortcut: Boolean
   
-  val LastModifiedUtc: Date
+  val LastModifiedUtc: js.Date
   
   val LatestCheckedInVersion: Double
   
@@ -92,15 +91,15 @@ trait IObjectVersion extends StObject {
 object IObjectVersion {
   
   inline def apply(
-    AccessedByMeUtc: Date,
-    CheckedOutAtUtc: Date,
+    AccessedByMeUtc: js.Date,
+    CheckedOutAtUtc: js.Date,
     CheckedOutTo: Double,
     CheckedOutToHostName: String,
     CheckedOutToUserName: String,
     CheckedOutVersion: Double,
     Class: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double,
     Clone: () => IObjectVersion,
-    CreatedUtc: Date,
+    CreatedUtc: js.Date,
     Deleted: Boolean,
     DisplayID: String,
     DisplayIDAvailable: Boolean,
@@ -113,7 +112,7 @@ object IObjectVersion {
     IsAccessedByMeValid: Boolean,
     IsObjectConflict: Boolean,
     IsObjectShortcut: Boolean,
-    LastModifiedUtc: Date,
+    LastModifiedUtc: js.Date,
     LatestCheckedInVersion: Double,
     LatestCheckedInVersionOrCheckedOutVersion: Boolean,
     ObjVer: IObjVer,
@@ -138,9 +137,9 @@ object IObjectVersion {
   
   extension [Self <: IObjectVersion](x: Self) {
     
-    inline def setAccessedByMeUtc(value: Date): Self = StObject.set(x, "AccessedByMeUtc", value.asInstanceOf[js.Any])
+    inline def setAccessedByMeUtc(value: js.Date): Self = StObject.set(x, "AccessedByMeUtc", value.asInstanceOf[js.Any])
     
-    inline def setCheckedOutAtUtc(value: Date): Self = StObject.set(x, "CheckedOutAtUtc", value.asInstanceOf[js.Any])
+    inline def setCheckedOutAtUtc(value: js.Date): Self = StObject.set(x, "CheckedOutAtUtc", value.asInstanceOf[js.Any])
     
     inline def setCheckedOutTo(value: Double): Self = StObject.set(x, "CheckedOutTo", value.asInstanceOf[js.Any])
     
@@ -154,7 +153,7 @@ object IObjectVersion {
     
     inline def setClone(value: () => IObjectVersion): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    inline def setCreatedUtc(value: Date): Self = StObject.set(x, "CreatedUtc", value.asInstanceOf[js.Any])
+    inline def setCreatedUtc(value: js.Date): Self = StObject.set(x, "CreatedUtc", value.asInstanceOf[js.Any])
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
@@ -180,7 +179,7 @@ object IObjectVersion {
     
     inline def setIsObjectShortcut(value: Boolean): Self = StObject.set(x, "IsObjectShortcut", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedUtc(value: Date): Self = StObject.set(x, "LastModifiedUtc", value.asInstanceOf[js.Any])
+    inline def setLastModifiedUtc(value: js.Date): Self = StObject.set(x, "LastModifiedUtc", value.asInstanceOf[js.Any])
     
     inline def setLatestCheckedInVersion(value: Double): Self = StObject.set(x, "LatestCheckedInVersion", value.asInstanceOf[js.Any])
     

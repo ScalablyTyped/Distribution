@@ -13,7 +13,7 @@ object webXRBackgroundRemoverMod {
   
   @JSImport("babylonjs/XR/features/WebXRBackgroundRemover", "WebXRBackgroundRemover")
   @js.native
-  class WebXRBackgroundRemover protected () extends WebXRAbstractFeature {
+  open class WebXRBackgroundRemover protected () extends WebXRAbstractFeature {
     /**
       * constructs a new background remover module
       * @param _xrSessionManager the session manager for this module
@@ -28,7 +28,7 @@ object webXRBackgroundRemoverMod {
     options: IWebXRBackgroundRemoverOptions
     ) = this()
     
-    /* private */ var _setBackgroundState: js.Any = js.native
+    /* private */ var _setBackgroundState: Any = js.native
     
     /**
       * registered observers will be triggered when the background state changes
@@ -91,7 +91,7 @@ object webXRBackgroundRemoverMod {
       
       inline def setBackgroundMeshesUndefined: Self = StObject.set(x, "backgroundMeshes", js.undefined)
       
-      inline def setBackgroundMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "backgroundMeshes", js.Array(value :_*))
+      inline def setBackgroundMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "backgroundMeshes", js.Array(value*))
       
       inline def setEnvironmentHelperRemovalFlags(value: Ground): Self = StObject.set(x, "environmentHelperRemovalFlags", value.asInstanceOf[js.Any])
       

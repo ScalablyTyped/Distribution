@@ -29,7 +29,7 @@ object ListApplicationsResponse {
     
     inline def setApplicationInfoListUndefined: Self = StObject.set(x, "ApplicationInfoList", js.undefined)
     
-    inline def setApplicationInfoListVarargs(value: ApplicationInfo*): Self = StObject.set(x, "ApplicationInfoList", js.Array(value :_*))
+    inline def setApplicationInfoListVarargs(value: ApplicationInfo*): Self = StObject.set(x, "ApplicationInfoList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

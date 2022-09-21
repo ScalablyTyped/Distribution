@@ -2,23 +2,28 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.errorMod.Code
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/test/unit/specs/spec_rpc_error", JSImport.Namespace)
-@js.native
-object specRpcErrorMod extends js.Object {
+object specRpcErrorMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/test/unit/specs/spec_rpc_error", "RpcError")
   @js.native
-  class RpcError protected () extends Error {
+  open class RpcError protected ()
+    extends StObject
+       with Error {
     def this(code: Double, message: String) = this()
     def this(code: Code, message: String) = this()
+    
     var code: Double = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
-  
 }
-

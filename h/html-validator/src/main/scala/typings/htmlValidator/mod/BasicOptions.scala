@@ -15,7 +15,7 @@ trait BasicOptions extends StObject {
   
   var isLocal: js.UndefOr[Boolean] = js.undefined
   
-  var validator: js.UndefOr[js.Object] = js.undefined
+  var validator: js.UndefOr[String | js.Object] = js.undefined
 }
 object BasicOptions {
   
@@ -34,7 +34,7 @@ object BasicOptions {
     
     inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
-    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
     
     inline def setIsFragment(value: Boolean): Self = StObject.set(x, "isFragment", value.asInstanceOf[js.Any])
     
@@ -44,7 +44,7 @@ object BasicOptions {
     
     inline def setIsLocalUndefined: Self = StObject.set(x, "isLocal", js.undefined)
     
-    inline def setValidator(value: js.Object): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+    inline def setValidator(value: String | js.Object): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     
     inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WebXRControllerPointerSelection")
 @js.native
-class WebXRControllerPointerSelection protected ()
+open class WebXRControllerPointerSelection protected ()
   extends typings.babylonjs.xRIndexMod.WebXRControllerPointerSelection {
   /**
     * constructs a new background remover module
@@ -42,8 +42,8 @@ object WebXRControllerPointerSelection {
   @js.native
   val Version: Double = js.native
   
-  @JSImport("babylonjs/index", "WebXRControllerPointerSelection._idCounter")
+  @JSImport("babylonjs/index", "WebXRControllerPointerSelection._IdCounter")
   @js.native
-  def _idCounter: js.Any = js.native
-  inline def _idCounter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_idCounter")(x.asInstanceOf[js.Any])
+  def _IdCounter: Any = js.native
+  inline def _IdCounter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IdCounter")(x.asInstanceOf[js.Any])
 }

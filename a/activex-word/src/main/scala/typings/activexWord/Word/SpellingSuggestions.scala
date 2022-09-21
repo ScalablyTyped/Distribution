@@ -14,7 +14,7 @@ trait SpellingSuggestions extends StObject {
   
   def Item(Index: Double): SpellingSuggestion
   
-  val Parent: js.Any
+  val Parent: Any
   
   val SpellingErrorType: WdSpellingErrorType
   
@@ -28,7 +28,7 @@ object SpellingSuggestions {
     Count: Double,
     Creator: Double,
     Item: Double => SpellingSuggestion,
-    Parent: js.Any,
+    Parent: Any,
     SpellingErrorType: WdSpellingErrorType,
     WordDotSpellingSuggestions_typekey: SpellingSuggestions
   ): SpellingSuggestions = {
@@ -47,7 +47,7 @@ object SpellingSuggestions {
     
     inline def setItem(value: Double => SpellingSuggestion): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSpellingErrorType(value: WdSpellingErrorType): Self = StObject.set(x, "SpellingErrorType", value.asInstanceOf[js.Any])
     

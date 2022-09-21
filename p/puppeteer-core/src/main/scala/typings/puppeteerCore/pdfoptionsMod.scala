@@ -1,72 +1,113 @@
 package typings.puppeteerCore
 
+import typings.std.Capitalize
+import typings.std.Uppercase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pdfoptionsMod {
   
-  /* Inlined std.Record<puppeteer-core.puppeteer-core/lib/cjs/puppeteer/common/PDFOptions.PaperFormat, puppeteer-core.puppeteer-core/lib/cjs/puppeteer/common/PDFOptions.PaperFormatDimensions> */
+  /* Inlined std.Record<puppeteer-core.puppeteer-core/lib/cjs/puppeteer/common/PDFOptions.LowerCasePaperFormat, puppeteer-core.puppeteer-core/lib/cjs/puppeteer/common/PDFOptions.PaperFormatDimensions> */
   object paperFormats {
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.a0")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.a0")
     @js.native
     def a0: PaperFormatDimensions = js.native
     inline def a0_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a0")(x.asInstanceOf[js.Any])
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.a1")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.a1")
     @js.native
     def a1: PaperFormatDimensions = js.native
     inline def a1_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a1")(x.asInstanceOf[js.Any])
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.a2")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.a2")
     @js.native
     def a2: PaperFormatDimensions = js.native
     inline def a2_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a2")(x.asInstanceOf[js.Any])
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.a3")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.a3")
     @js.native
     def a3: PaperFormatDimensions = js.native
     inline def a3_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a3")(x.asInstanceOf[js.Any])
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.a4")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.a4")
     @js.native
     def a4: PaperFormatDimensions = js.native
     inline def a4_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a4")(x.asInstanceOf[js.Any])
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.a5")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.a5")
     @js.native
     def a5: PaperFormatDimensions = js.native
     inline def a5_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a5")(x.asInstanceOf[js.Any])
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.a6")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.a6")
     @js.native
     def a6: PaperFormatDimensions = js.native
     inline def a6_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a6")(x.asInstanceOf[js.Any])
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.ledger")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.ledger")
     @js.native
     def ledger: PaperFormatDimensions = js.native
     inline def ledger_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ledger")(x.asInstanceOf[js.Any])
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.legal")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.legal")
     @js.native
     def legal: PaperFormatDimensions = js.native
     inline def legal_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legal")(x.asInstanceOf[js.Any])
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.letter")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.letter")
     @js.native
     def letter: PaperFormatDimensions = js.native
     inline def letter_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("letter")(x.asInstanceOf[js.Any])
     
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "paperFormats.tabloid")
+    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/PDFOptions", "_paperFormats.tabloid")
     @js.native
     def tabloid: PaperFormatDimensions = js.native
     inline def tabloid_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabloid")(x.asInstanceOf[js.Any])
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.puppeteerCore.puppeteerCoreStrings.letter
+    - typings.puppeteerCore.puppeteerCoreStrings.legal
+    - typings.puppeteerCore.puppeteerCoreStrings.tabloid
+    - typings.puppeteerCore.puppeteerCoreStrings.ledger
+    - typings.puppeteerCore.puppeteerCoreStrings.a0
+    - typings.puppeteerCore.puppeteerCoreStrings.a1
+    - typings.puppeteerCore.puppeteerCoreStrings.a2
+    - typings.puppeteerCore.puppeteerCoreStrings.a3
+    - typings.puppeteerCore.puppeteerCoreStrings.a4
+    - typings.puppeteerCore.puppeteerCoreStrings.a5
+    - typings.puppeteerCore.puppeteerCoreStrings.a6
+  */
+  trait LowerCasePaperFormat extends StObject
+  object LowerCasePaperFormat {
+    
+    inline def a0: typings.puppeteerCore.puppeteerCoreStrings.a0 = "a0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a0]
+    
+    inline def a1: typings.puppeteerCore.puppeteerCoreStrings.a1 = "a1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a1]
+    
+    inline def a2: typings.puppeteerCore.puppeteerCoreStrings.a2 = "a2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a2]
+    
+    inline def a3: typings.puppeteerCore.puppeteerCoreStrings.a3 = "a3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a3]
+    
+    inline def a4: typings.puppeteerCore.puppeteerCoreStrings.a4 = "a4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a4]
+    
+    inline def a5: typings.puppeteerCore.puppeteerCoreStrings.a5 = "a5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a5]
+    
+    inline def a6: typings.puppeteerCore.puppeteerCoreStrings.a6 = "a6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a6]
+    
+    inline def ledger: typings.puppeteerCore.puppeteerCoreStrings.ledger = "ledger".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ledger]
+    
+    inline def legal: typings.puppeteerCore.puppeteerCoreStrings.legal = "legal".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.legal]
+    
+    inline def letter: typings.puppeteerCore.puppeteerCoreStrings.letter = "letter".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.letter]
+    
+    inline def tabloid: typings.puppeteerCore.puppeteerCoreStrings.tabloid = "tabloid".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.tabloid]
   }
   
   trait PDFMargin extends StObject {
@@ -130,6 +171,7 @@ object pdfoptionsMod {
     /**
       * HTML template for the print header. Should be valid HTML with the following
       * classes used to inject values into them:
+      *
       * - `date` formatted print date
       *
       * - `title` document title
@@ -158,6 +200,12 @@ object pdfoptionsMod {
       * @defaultValue no margins are set.
       */
     var margin: js.UndefOr[PDFMargin] = js.undefined
+    
+    /**
+      * Hides default white background and allows generating pdfs with transparency.
+      * @defaultValue false
+      */
+    var omitBackground: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Paper ranges to print, e.g. `1-5, 8, 11-13`.
@@ -194,6 +242,12 @@ object pdfoptionsMod {
       * @defaultValue 1
       */
     var scale: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Timeout in milliseconds
+      * @defaultValue 30000
+      */
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets the width of paper. You can pass in a number or a string with a unit.
@@ -237,6 +291,10 @@ object pdfoptionsMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
+      inline def setOmitBackground(value: Boolean): Self = StObject.set(x, "omitBackground", value.asInstanceOf[js.Any])
+      
+      inline def setOmitBackgroundUndefined: Self = StObject.set(x, "omitBackground", js.undefined)
+      
       inline def setPageRanges(value: String): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
       
       inline def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
@@ -257,50 +315,17 @@ object pdfoptionsMod {
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      
       inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.puppeteerCore.puppeteerCoreStrings.letter
-    - typings.puppeteerCore.puppeteerCoreStrings.legal
-    - typings.puppeteerCore.puppeteerCoreStrings.tabloid
-    - typings.puppeteerCore.puppeteerCoreStrings.ledger
-    - typings.puppeteerCore.puppeteerCoreStrings.a0
-    - typings.puppeteerCore.puppeteerCoreStrings.a1
-    - typings.puppeteerCore.puppeteerCoreStrings.a2
-    - typings.puppeteerCore.puppeteerCoreStrings.a3
-    - typings.puppeteerCore.puppeteerCoreStrings.a4
-    - typings.puppeteerCore.puppeteerCoreStrings.a5
-    - typings.puppeteerCore.puppeteerCoreStrings.a6
-  */
-  trait PaperFormat extends StObject
-  object PaperFormat {
-    
-    inline def a0: typings.puppeteerCore.puppeteerCoreStrings.a0 = "a0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a0]
-    
-    inline def a1: typings.puppeteerCore.puppeteerCoreStrings.a1 = "a1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a1]
-    
-    inline def a2: typings.puppeteerCore.puppeteerCoreStrings.a2 = "a2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a2]
-    
-    inline def a3: typings.puppeteerCore.puppeteerCoreStrings.a3 = "a3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a3]
-    
-    inline def a4: typings.puppeteerCore.puppeteerCoreStrings.a4 = "a4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a4]
-    
-    inline def a5: typings.puppeteerCore.puppeteerCoreStrings.a5 = "a5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a5]
-    
-    inline def a6: typings.puppeteerCore.puppeteerCoreStrings.a6 = "a6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a6]
-    
-    inline def ledger: typings.puppeteerCore.puppeteerCoreStrings.ledger = "ledger".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ledger]
-    
-    inline def legal: typings.puppeteerCore.puppeteerCoreStrings.legal = "legal".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.legal]
-    
-    inline def letter: typings.puppeteerCore.puppeteerCoreStrings.letter = "letter".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.letter]
-    
-    inline def tabloid: typings.puppeteerCore.puppeteerCoreStrings.tabloid = "tabloid".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.tabloid]
-  }
+  type PaperFormat = Uppercase[LowerCasePaperFormat] | Capitalize[LowerCasePaperFormat] | LowerCasePaperFormat
   
   trait PaperFormatDimensions extends StObject {
     

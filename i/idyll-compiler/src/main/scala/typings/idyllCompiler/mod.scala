@@ -64,7 +64,7 @@ object mod {
       
       inline def setPostProcessorsUndefined: Self = StObject.set(x, "postProcessors", js.undefined)
       
-      inline def setPostProcessorsVarargs(value: PostProcessor*): Self = StObject.set(x, "postProcessors", js.Array(value :_*))
+      inline def setPostProcessorsVarargs(value: PostProcessor*): Self = StObject.set(x, "postProcessors", js.Array(value*))
       
       inline def setSmartquotes(value: Boolean): Self = StObject.set(x, "smartquotes", value.asInstanceOf[js.Any])
       
@@ -78,7 +78,7 @@ object mod {
   
   type PostProcessor = (js.Function1[/* ast */ AST, AST]) | (js.Function2[
     /* ast */ AST, 
-    /* callback */ js.Function2[/* err */ js.Any, /* value */ AST, Unit], 
+    /* callback */ js.Function2[/* err */ Any, /* value */ AST, Unit], 
     Unit
   ])
   

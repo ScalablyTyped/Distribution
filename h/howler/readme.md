@@ -10,10 +10,10 @@ Javascript audio library for the modern web.
 | ------------------ | :-------------: |
 | Full name          | howler |
 | Keywords           | howler, howler.js, audio, sound, web audio, webaudio, browser, html5, html5 audio, audio sprite, audiosprite |
-| # releases         | 6 |
-| # dependents       | 161 |
-| # downloads        | 2665194 |
-| # stars            | 28 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 773199.0 |
+| # stars            | 20336.0 |
 
 ## Links
 - [Homepage](https://howlerjs.com)

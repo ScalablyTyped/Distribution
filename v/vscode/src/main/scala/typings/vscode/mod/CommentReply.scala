@@ -12,7 +12,7 @@ trait CommentReply extends StObject {
   var text: String
   
   /**
-    * The active [comment thread](#CommentThread)
+    * The active {@link CommentThread comment thread}
     */
   var thread: CommentThread
 }

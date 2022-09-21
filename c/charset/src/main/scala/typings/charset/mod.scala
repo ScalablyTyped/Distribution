@@ -1,6 +1,6 @@
 package typings.charset
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject

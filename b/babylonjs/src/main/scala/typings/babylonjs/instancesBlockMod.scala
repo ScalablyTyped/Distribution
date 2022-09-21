@@ -10,7 +10,7 @@ object instancesBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Vertex/instancesBlock", "InstancesBlock")
   @js.native
-  class InstancesBlock protected () extends NodeMaterialBlock {
+  open class InstancesBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new InstancesBlock
       * @param name defines the block name
@@ -18,7 +18,7 @@ object instancesBlockMod {
     def this(name: String) = this()
     
     /**
-      * Gets the isntanceID component
+      * Gets the instanceID component
       */
     def instanceID: NodeMaterialConnectionPoint = js.native
     

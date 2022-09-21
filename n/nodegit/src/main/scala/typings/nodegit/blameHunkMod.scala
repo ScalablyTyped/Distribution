@@ -10,7 +10,7 @@ object blameHunkMod {
   
   @JSImport("nodegit/blame-hunk", "BlameHunk")
   @js.native
-  class BlameHunk () extends StObject {
+  open class BlameHunk () extends StObject {
     
     def finalCommitId(): Oid = js.native
     

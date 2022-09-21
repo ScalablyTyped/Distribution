@@ -35,11 +35,11 @@ object anon {
     
     var cacheKey: GraphQLCacheKey
     
-    var cacheValue: GraphQLCacheValue[js.Any]
+    var cacheValue: GraphQLCacheValue[Any]
   }
   object CacheKey {
     
-    inline def apply(cacheKey: GraphQLCacheKey, cacheValue: GraphQLCacheValue[js.Any]): CacheKey = {
+    inline def apply(cacheKey: GraphQLCacheKey, cacheValue: GraphQLCacheValue[Any]): CacheKey = {
       val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], cacheValue = cacheValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheKey]
     }
@@ -48,7 +48,7 @@ object anon {
       
       inline def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
-      inline def setCacheValue(value: GraphQLCacheValue[js.Any]): Self = StObject.set(x, "cacheValue", value.asInstanceOf[js.Any])
+      inline def setCacheValue(value: GraphQLCacheValue[Any]): Self = StObject.set(x, "cacheValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,11 +56,11 @@ object anon {
     
     var cacheKey: GraphQLCacheKey
     
-    var cacheValuePromise: js.Promise[GraphQLCacheValue[js.Any]]
+    var cacheValuePromise: js.Promise[GraphQLCacheValue[Any]]
   }
   object CacheValuePromise {
     
-    inline def apply(cacheKey: GraphQLCacheKey, cacheValuePromise: js.Promise[GraphQLCacheValue[js.Any]]): CacheValuePromise = {
+    inline def apply(cacheKey: GraphQLCacheKey, cacheValuePromise: js.Promise[GraphQLCacheValue[Any]]): CacheValuePromise = {
       val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], cacheValuePromise = cacheValuePromise.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheValuePromise]
     }
@@ -69,7 +69,7 @@ object anon {
       
       inline def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
-      inline def setCacheValuePromise(value: js.Promise[GraphQLCacheValue[js.Any]]): Self = StObject.set(x, "cacheValuePromise", value.asInstanceOf[js.Any])
+      inline def setCacheValuePromise(value: js.Promise[GraphQLCacheValue[Any]]): Self = StObject.set(x, "cacheValuePromise", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,13 +218,13 @@ object anon {
       
       inline def setLocations(value: js.Array[Column]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      inline def setLocationsVarargs(value: Column*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Column*): Self = StObject.set(x, "locations", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   

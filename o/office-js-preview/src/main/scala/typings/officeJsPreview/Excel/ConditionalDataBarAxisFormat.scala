@@ -7,25 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ConditionalDataBarAxisFormat extends StObject
 /**
+  * Represents the format options for a data bar axis.
   *
-  * Represents the format options for a Data Bar Axis.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalDataBarAxisFormat")
 @js.native
 object ConditionalDataBarAxisFormat extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
   sealed trait automatic
     extends StObject
        with ConditionalDataBarAxisFormat
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
   sealed trait cellMidPoint
     extends StObject
        with ConditionalDataBarAxisFormat
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
   sealed trait none
     extends StObject

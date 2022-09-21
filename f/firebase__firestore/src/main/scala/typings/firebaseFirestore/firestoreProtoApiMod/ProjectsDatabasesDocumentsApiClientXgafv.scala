@@ -1,19 +1,17 @@
 package typings.firebaseFirestore.firestoreProtoApiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.firebaseFirestore.firebaseFirestoreStrings.`1`
   - typings.firebaseFirestore.firebaseFirestoreStrings.`2`
 */
-trait ProjectsDatabasesDocumentsApiClientXgafv extends js.Object
-
+trait ProjectsDatabasesDocumentsApiClientXgafv extends StObject
 object ProjectsDatabasesDocumentsApiClientXgafv {
-  @scala.inline
-  def `1`: typings.firebaseFirestore.firebaseFirestoreStrings.`1` = "1".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`1`]
-  @scala.inline
-  def `2`: typings.firebaseFirestore.firebaseFirestoreStrings.`2` = "2".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`2`]
+  
+  inline def `1`: typings.firebaseFirestore.firebaseFirestoreStrings.`1` = "1".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`1`]
+  
+  inline def `2`: typings.firebaseFirestore.firebaseFirestoreStrings.`2` = "2".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.`2`]
 }
-

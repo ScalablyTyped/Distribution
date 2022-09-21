@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.FormRegion")
 @js.native
-/* private */ class FormRegion ()
+/* private */ open class FormRegion ()
   extends StObject
      with typings.activexOutlook.Outlook.FormRegion {
   
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var EnableAutoLayout: Boolean = js.native
   
   /* CompleteClass */
-  override val Form: js.Any = js.native
+  override val Form: Any = js.native
   
   /* CompleteClass */
   override val FormRegionMode: OlFormRegionMode = js.native
@@ -43,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val IsExpanded: Boolean = js.native
   
   /* CompleteClass */
-  override val Item: js.Any = js.native
+  override val Item: Any = js.native
   
   /* CompleteClass */
   override val Language: Double = js.native
@@ -53,7 +53,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotFormRegion_typekey: typings.activexOutlook.Outlook.FormRegion = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Reflow(): Unit = js.native
@@ -65,7 +65,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native
   
   /* CompleteClass */
-  override def SetControlItemProperty(Control: js.Any, PropertyName: String): Unit = js.native
+  override def SetControlItemProperty(Control: Any, PropertyName: String): Unit = js.native
   
   /* CompleteClass */
   var SuppressControlReplacement: Boolean = js.native

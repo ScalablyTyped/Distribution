@@ -1,9 +1,8 @@
 package typings.bunyan
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   
   @JSImport("bunyan", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Logger {
+  open class ^ protected () extends Logger {
     def this(options: LoggerOptions) = this()
   }
   @JSImport("bunyan", JSImport.Namespace)
@@ -37,7 +36,7 @@ object mod {
   
   @JSImport("bunyan", "RingBuffer")
   @js.native
-  class RingBuffer protected () extends EventEmitter {
+  open class RingBuffer protected () extends EventEmitter {
     def this(options: RingBufferOptions) = this()
     
     def destroy(): Unit = js.native
@@ -45,18 +44,18 @@ object mod {
     def destroySoon(): Unit = js.native
     
     def end(): Unit = js.native
-    def end(record: js.Any): Unit = js.native
+    def end(record: Any): Unit = js.native
     
-    var records: js.Array[js.Any] = js.native
+    var records: js.Array[Any] = js.native
     
     var writable: Boolean = js.native
     
-    def write(record: js.Any): Boolean = js.native
+    def write(record: Any): Boolean = js.native
   }
   
   @JSImport("bunyan", "RotatingFileStream")
   @js.native
-  class RotatingFileStream protected () extends EventEmitter {
+  open class RotatingFileStream protected () extends EventEmitter {
     def this(options: RotatingFileStreamOptions) = this()
     
     def destroy(): Unit = js.native
@@ -64,23 +63,23 @@ object mod {
     def destroySoon(): Unit = js.native
     
     def end(): Unit = js.native
-    def end(record: js.Any): Unit = js.native
+    def end(record: Any): Unit = js.native
     
     var periodNum: Double = js.native
     
     var periodScope: String = js.native
     
-    var rotQueue: js.Array[js.Any] = js.native
+    var rotQueue: js.Array[Any] = js.native
     
     def rotate(): Unit = js.native
     
     var rotating: Boolean = js.native
     
-    var stream: js.Any = js.native
+    var stream: Any = js.native
     
     var writable: Boolean = js.native
     
-    def write(record: js.Any): Boolean = js.native
+    def write(record: Any): Boolean = js.native
   }
   
   @JSImport("bunyan", "TRACE")
@@ -133,7 +132,7 @@ object mod {
   
   inline def resolveLevel(value: LogLevel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLevel")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeCycles")().asInstanceOf[js.Function2[/* key */ String, /* value */ js.Any, js.Any]]
+  inline def safeCycles(): js.Function2[/* key */ String, /* value */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeCycles")().asInstanceOf[js.Function2[/* key */ String, /* value */ Any, Any]]
   
   @JSImport("bunyan", "stdSerializers")
   @js.native
@@ -187,11 +186,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def debug(error: Error, params: js.Any*): Unit = js.native
+    def debug(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def debug(format: js.Any, params: js.Any*): Unit = js.native
+    def debug(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -199,7 +198,7 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def debug(obj: js.Object, params: js.Any*): Unit = js.native
+    def debug(obj: js.Object, params: Any*): Unit = js.native
     
     /**
       * Returns a boolean: is the `error` level enabled?
@@ -213,11 +212,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def error(error: Error, params: js.Any*): Unit = js.native
+    def error(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def error(format: js.Any, params: js.Any*): Unit = js.native
+    def error(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -225,7 +224,7 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def error(obj: js.Object, params: js.Any*): Unit = js.native
+    def error(obj: js.Object, params: Any*): Unit = js.native
     
     /**
       * Returns a boolean: is the `fatal` level enabled?
@@ -239,11 +238,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def fatal(error: Error, params: js.Any*): Unit = js.native
+    def fatal(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def fatal(format: js.Any, params: js.Any*): Unit = js.native
+    def fatal(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -251,9 +250,9 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def fatal(obj: js.Object, params: js.Any*): Unit = js.native
+    def fatal(obj: js.Object, params: Any*): Unit = js.native
     
-    var fields: js.Any = js.native
+    var fields: Any = js.native
     
     /**
       * Returns a boolean: is the `info` level enabled?
@@ -267,11 +266,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def info(error: Error, params: js.Any*): Unit = js.native
+    def info(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def info(format: js.Any, params: js.Any*): Unit = js.native
+    def info(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -279,7 +278,7 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def info(obj: js.Object, params: js.Any*): Unit = js.native
+    def info(obj: js.Object, params: Any*): Unit = js.native
     
     def level(): Double = js.native
     def level(value: LogLevel): Unit = js.native
@@ -306,11 +305,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def trace(error: Error, params: js.Any*): Unit = js.native
+    def trace(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def trace(format: js.Any, params: js.Any*): Unit = js.native
+    def trace(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -318,7 +317,7 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def trace(obj: js.Object, params: js.Any*): Unit = js.native
+    def trace(obj: js.Object, params: Any*): Unit = js.native
     
     /**
       * Returns a boolean: is the `warn` level enabled?
@@ -332,11 +331,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def warn(error: Error, params: js.Any*): Unit = js.native
+    def warn(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def warn(format: js.Any, params: js.Any*): Unit = js.native
+    def warn(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -344,12 +343,12 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def warn(obj: js.Object, params: js.Any*): Unit = js.native
+    def warn(obj: js.Object, params: Any*): Unit = js.native
   }
   
   trait LoggerOptions
     extends StObject
-       with /* custom */ StringDictionary[js.Any] {
+       with /* custom */ StringDictionary[Any] {
     
     var level: js.UndefOr[LogLevel] = js.undefined
     
@@ -359,7 +358,7 @@ object mod {
     
     var src: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[WritableStream] = js.undefined
+    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
     
     var streams: js.UndefOr[js.Array[Stream]] = js.undefined
   }
@@ -386,7 +385,7 @@ object mod {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
@@ -394,7 +393,7 @@ object mod {
       
       inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
       
-      inline def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value*))
     }
   }
   
@@ -446,7 +445,7 @@ object mod {
     }
   }
   
-  type Serializer = js.Function1[/* input */ js.Any, js.Any]
+  type Serializer = js.Function1[/* input */ Any, Any]
   
   type Serializers = StringDictionary[Serializer]
   
@@ -454,36 +453,32 @@ object mod {
     extends StObject
        with Serializers {
     
-    def err(input: js.Any): js.Any
+    def err(input: Any): Any
     @JSName("err")
     var err_Original: Serializer
     
-    def req(input: js.Any): js.Any
+    def req(input: Any): Any
     @JSName("req")
     var req_Original: Serializer
     
-    def res(input: js.Any): js.Any
+    def res(input: Any): Any
     @JSName("res")
     var res_Original: Serializer
   }
   object StdSerializers_ {
     
-    inline def apply(
-      err: /* input */ js.Any => js.Any,
-      req: /* input */ js.Any => js.Any,
-      res: /* input */ js.Any => js.Any
-    ): StdSerializers_ = {
+    inline def apply(err: /* input */ Any => Any, req: /* input */ Any => Any, res: /* input */ Any => Any): StdSerializers_ = {
       val __obj = js.Dynamic.literal(err = js.Any.fromFunction1(err), req = js.Any.fromFunction1(req), res = js.Any.fromFunction1(res))
       __obj.asInstanceOf[StdSerializers_]
     }
     
     extension [Self <: StdSerializers_](x: Self) {
       
-      inline def setErr(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "err", js.Any.fromFunction1(value))
+      inline def setErr(value: /* input */ Any => Any): Self = StObject.set(x, "err", js.Any.fromFunction1(value))
       
-      inline def setReq(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "req", js.Any.fromFunction1(value))
+      inline def setReq(value: /* input */ Any => Any): Self = StObject.set(x, "req", js.Any.fromFunction1(value))
       
-      inline def setRes(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "res", js.Any.fromFunction1(value))
+      inline def setRes(value: /* input */ Any => Any): Self = StObject.set(x, "res", js.Any.fromFunction1(value))
     }
   }
   
@@ -503,7 +498,7 @@ object mod {
     
     var reemitErrorEvents: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[WritableStream | Stream] = js.undefined
+    var stream: js.UndefOr[WritableStream[Any] | WriteFn] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -544,13 +539,30 @@ object mod {
       
       inline def setReemitErrorEventsUndefined: Self = StObject.set(x, "reemitErrorEvents", js.undefined)
       
-      inline def setStream(value: WritableStream | Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream[Any] | WriteFn): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  trait WriteFn extends StObject {
+    
+    def write(`object`: js.Object): Unit
+  }
+  object WriteFn {
+    
+    inline def apply(write: js.Object => Unit): WriteFn = {
+      val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
+      __obj.asInstanceOf[WriteFn]
+    }
+    
+    extension [Self <: WriteFn](x: Self) {
+      
+      inline def setWrite(value: js.Object => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
 }

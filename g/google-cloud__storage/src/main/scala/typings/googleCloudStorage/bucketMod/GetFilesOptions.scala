@@ -10,8 +10,6 @@ trait GetFilesOptions extends StObject {
   
   var delimiter: js.UndefOr[String] = js.undefined
   
-  var directory: js.UndefOr[String] = js.undefined
-  
   var endOffset: js.UndefOr[String] = js.undefined
   
   var includeTrailingDelimiter: js.UndefOr[Boolean] = js.undefined
@@ -46,10 +44,6 @@ object GetFilesOptions {
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
-    
-    inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
-    
-    inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
     
     inline def setEndOffset(value: String): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     

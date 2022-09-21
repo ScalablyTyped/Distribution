@@ -80,13 +80,13 @@ object typesListObjectsOutputMod {
       
       inline def setCommonPrefixesUndefined: Self = StObject.set(x, "CommonPrefixes", js.undefined)
       
-      inline def setCommonPrefixesVarargs(value: UnmarshalledCommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value :_*))
+      inline def setCommonPrefixesVarargs(value: UnmarshalledCommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value*))
       
       inline def setContents(value: js.Array[UnmarshalledObject]): Self = StObject.set(x, "Contents", value.asInstanceOf[js.Any])
       
       inline def setContentsUndefined: Self = StObject.set(x, "Contents", js.undefined)
       
-      inline def setContentsVarargs(value: UnmarshalledObject*): Self = StObject.set(x, "Contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: UnmarshalledObject*): Self = StObject.set(x, "Contents", js.Array(value*))
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
       

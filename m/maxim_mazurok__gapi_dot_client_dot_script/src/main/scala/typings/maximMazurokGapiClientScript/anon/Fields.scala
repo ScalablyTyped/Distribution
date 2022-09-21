@@ -34,7 +34,7 @@ trait Fields extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The script ID of the script to be executed. To find the script ID, open the project in the script editor and select **File > Project properties**. */
+  /** The script ID of the script to be executed. Find the script ID on the **Project settings** page under "IDs." */
   var scriptId: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

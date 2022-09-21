@@ -12,7 +12,7 @@ object tabsIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/tabs/index.native", JSImport.Default)
   @js.native
-  class default () extends Tabs
+  open class default () extends Tabs
   /* static members */
   object default {
     
@@ -33,8 +33,8 @@ object tabsIndexNativeMod {
   
   @js.native
   trait Tabs
-    extends PureComponent[TabsProps, js.Object, js.Any] {
+    extends PureComponent[TabsProps, js.Object, Any] {
     
-    def renderTabBar(props: js.Any): Element = js.native
+    def renderTabBar(props: Any): Element = js.native
   }
 }

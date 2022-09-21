@@ -10,20 +10,20 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var err: StrongholdPayError | Null
   }
   object Data {
     
-    inline def apply(data: js.Any): Data = {
+    inline def apply(data: Any): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], err = null)
       __obj.asInstanceOf[Data]
     }
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setErr(value: StrongholdPayError): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       

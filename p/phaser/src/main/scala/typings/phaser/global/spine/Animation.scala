@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.Animation")
 @js.native
-class Animation protected ()
+open class Animation protected ()
   extends StObject
      with typings.phaser.spine.Animation {
   def this(name: String, timelines: js.Array[Timeline], duration: Double) = this()

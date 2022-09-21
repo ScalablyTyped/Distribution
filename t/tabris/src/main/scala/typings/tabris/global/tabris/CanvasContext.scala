@@ -6,5 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.CanvasContext")
 @js.native
-/* private */ class CanvasContext ()
+/**
+  * The CanvasContext is used for drawing onto the [canvas](./Canvas.md). It is a subset of the HTML5
+  * [CanvasRenderingContext2D](https://developer.mozilla.org/en/docs/Web/API/CanvasRenderingContext2D).
+  */
+/* private */ open class CanvasContext ()
   extends typings.tabris.mod.CanvasContext

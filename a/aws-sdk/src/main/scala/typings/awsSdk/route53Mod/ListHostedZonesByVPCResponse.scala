@@ -17,7 +17,7 @@ trait ListHostedZonesByVPCResponse extends StObject {
   var MaxItems: PageMaxItems
   
   /**
-    * The value that you specified for NextToken in the most recent ListHostedZonesByVPC request.
+    * The value that you will use for NextToken in the next ListHostedZonesByVPC request.
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -32,7 +32,7 @@ object ListHostedZonesByVPCResponse {
     
     inline def setHostedZoneSummaries(value: HostedZoneSummaries): Self = StObject.set(x, "HostedZoneSummaries", value.asInstanceOf[js.Any])
     
-    inline def setHostedZoneSummariesVarargs(value: HostedZoneSummary*): Self = StObject.set(x, "HostedZoneSummaries", js.Array(value :_*))
+    inline def setHostedZoneSummariesVarargs(value: HostedZoneSummary*): Self = StObject.set(x, "HostedZoneSummaries", js.Array(value*))
     
     inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     

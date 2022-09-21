@@ -1,6 +1,5 @@
 package typings.tracking
 
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,7 +75,7 @@ object tracking {
       * @param event Name of the event.
       * @param args Callback arguments.
       */
-    def emit(event: String, args: js.Any*): Boolean = js.native
+    def emit(event: String, args: Any*): Boolean = js.native
     
     /**
       * Adds a listener to the end of the listeners array for the specified event.
@@ -185,7 +184,7 @@ object tracking {
       
       inline def setData(value: js.Array[TrackRect]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: TrackRect*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: TrackRect*): Self = StObject.set(x, "data", js.Array(value*))
     }
   }
   
@@ -252,7 +251,7 @@ object tracking {
       * @param width The pixel canvas width.
       * @param height The pixel data height.
       */
-    def track(pixels: Uint8ClampedArray, width: Double, height: Double): Unit = js.native
+    def track(pixels: js.typedarray.Uint8ClampedArray, width: Double, height: Double): Unit = js.native
   }
   
   /**

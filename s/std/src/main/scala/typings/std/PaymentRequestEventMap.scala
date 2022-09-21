@@ -6,21 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PaymentRequestEventMap extends StObject {
   
-  var shippingaddresschange: Event
-  
-  var shippingoptionchange: Event
+  /* standard dom */
+  var paymentmethodchange: Event
 }
 object PaymentRequestEventMap {
   
-  inline def apply(shippingaddresschange: Event, shippingoptionchange: Event): PaymentRequestEventMap = {
-    val __obj = js.Dynamic.literal(shippingaddresschange = shippingaddresschange.asInstanceOf[js.Any], shippingoptionchange = shippingoptionchange.asInstanceOf[js.Any])
+  inline def apply(paymentmethodchange: Event): PaymentRequestEventMap = {
+    val __obj = js.Dynamic.literal(paymentmethodchange = paymentmethodchange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentRequestEventMap]
   }
   
   extension [Self <: PaymentRequestEventMap](x: Self) {
     
-    inline def setShippingaddresschange(value: Event): Self = StObject.set(x, "shippingaddresschange", value.asInstanceOf[js.Any])
-    
-    inline def setShippingoptionchange(value: Event): Self = StObject.set(x, "shippingoptionchange", value.asInstanceOf[js.Any])
+    inline def setPaymentmethodchange(value: Event): Self = StObject.set(x, "paymentmethodchange", value.asInstanceOf[js.Any])
   }
 }

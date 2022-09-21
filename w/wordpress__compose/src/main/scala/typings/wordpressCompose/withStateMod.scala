@@ -21,10 +21,10 @@ object withStateMod {
   {[ k in keyof SP ]: SP[k]}
     */ typings.wordpressCompose.wordpressComposeStrings.default & TopLevel[SP]
   ): js.Function1[
-    /* component */ ComponentType[js.Any], 
-    ComponentClass[Omit[js.Any, (/* keyof SP */ String) | setState], SP]
+    /* component */ ComponentType[Any], 
+    ComponentClass[Omit[Any, (/* keyof SP */ String) | setState], SP]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ ComponentType[js.Any], 
-    ComponentClass[Omit[js.Any, (/* keyof SP */ String) | setState], SP]
+    /* component */ ComponentType[Any], 
+    ComponentClass[Omit[Any, (/* keyof SP */ String) | setState], SP]
   ]]
 }

@@ -8,17 +8,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Provides information about the worksheet format change event.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait WorksheetFormatChangedEventArgs extends StObject {
   
   /**
-    *
     * Gets the range address that represents the changed area of a specific worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var address: String
@@ -40,25 +40,25 @@ trait WorksheetFormatChangedEventArgs extends StObject {
   def getRangeOrNullObject(ctx: RequestContext): Range
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: WorksheetFormatChanged
   
   /**
+    * Gets the ID of the worksheet in which the data changed.
     *
-    * Gets the id of the worksheet in which the data changed.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var worksheetId: String

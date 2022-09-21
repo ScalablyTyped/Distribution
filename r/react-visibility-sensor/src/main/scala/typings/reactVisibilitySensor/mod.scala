@@ -2,7 +2,6 @@ package typings.reactVisibilitySensor
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.reactVisibilitySensor.anon.IsVisible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ object mod extends Shortcut {
   
   @JSImport("react-visibility-sensor", JSImport.Default)
   @js.native
-  val default: StatelessComponent[Props] = js.native
+  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.StatelessComponent<Props> */ Any = js.native
   
   trait Props extends StObject {
     
@@ -20,7 +19,7 @@ object mod extends Shortcut {
     
     var children: js.UndefOr[ReactNode | (js.Function1[/* args */ IsVisible, ReactNode])] = js.undefined
     
-    var containment: js.UndefOr[js.Any] = js.undefined
+    var containment: js.UndefOr[Any] = js.undefined
     
     var delayedCall: js.UndefOr[Boolean] = js.undefined
     
@@ -67,7 +66,7 @@ object mod extends Shortcut {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+      inline def setContainment(value: Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
       
       inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
       
@@ -162,8 +161,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[Props]
+  type _To = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.StatelessComponent<Props> */ Any
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: StatelessComponent[Props] = default
+  override def _to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.StatelessComponent<Props> */ Any = default
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FileDialogFilter extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -17,17 +17,17 @@ trait FileDialogFilter extends StObject {
   /* private */ @JSName("Office.FileDialogFilter_typekey")
   var OfficeDotFileDialogFilter_typekey: FileDialogFilter
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object FileDialogFilter {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Description: String,
     Extensions: String,
     OfficeDotFileDialogFilter_typekey: FileDialogFilter,
-    Parent: js.Any
+    Parent: Any
   ): FileDialogFilter = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Extensions = Extensions.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.FileDialogFilter_typekey")(OfficeDotFileDialogFilter_typekey.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object FileDialogFilter {
   
   extension [Self <: FileDialogFilter](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -46,6 +46,6 @@ object FileDialogFilter {
     
     inline def setOfficeDotFileDialogFilter_typekey(value: FileDialogFilter): Self = StObject.set(x, "Office.FileDialogFilter_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

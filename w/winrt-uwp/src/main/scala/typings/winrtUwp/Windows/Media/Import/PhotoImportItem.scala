@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Import
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
@@ -14,7 +13,7 @@ trait PhotoImportItem extends StObject {
   var contentType: PhotoImportContentType
   
   /** Gets the creation date of the imported item. */
-  var date: Date
+  var date: js.Date
   
   /** Gets a list of the names of files associated with this item that were deleted. */
   var deletedFileNames: IVectorView[String]
@@ -50,7 +49,7 @@ object PhotoImportItem {
   
   inline def apply(
     contentType: PhotoImportContentType,
-    date: Date,
+    date: js.Date,
     deletedFileNames: IVectorView[String],
     importedFileNames: IVectorView[String],
     isSelected: Boolean,
@@ -70,7 +69,7 @@ object PhotoImportItem {
     
     inline def setContentType(value: PhotoImportContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDeletedFileNames(value: IVectorView[String]): Self = StObject.set(x, "deletedFileNames", value.asInstanceOf[js.Any])
     

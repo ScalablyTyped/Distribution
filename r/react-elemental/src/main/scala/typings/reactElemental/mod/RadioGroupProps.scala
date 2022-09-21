@@ -57,7 +57,7 @@ object RadioGroupProps {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: Disabled*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Disabled*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setRadioRenderer(
       value: (/* option */ ReactElement, /* idx */ Double, /* options */ js.Array[ReactElement]) => ReactElement

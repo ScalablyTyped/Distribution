@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRPlaneDetector")
 @js.native
-class WebXRPlaneDetector protected ()
+open class WebXRPlaneDetector protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRPlaneDetector {
   /**
@@ -35,7 +35,7 @@ object WebXRPlaneDetector {
     */
   @JSGlobal("BABYLON.WebXRPlaneDetector.Name")
   @js.native
-  val Name: String = js.native
+  val Name: /* "xr-plane-detection" */ String = js.native
   
   /**
     * The (Babylon) version of this module.
@@ -44,5 +44,5 @@ object WebXRPlaneDetector {
     */
   @JSGlobal("BABYLON.WebXRPlaneDetector.Version")
   @js.native
-  val Version: Double = js.native
+  val Version: /* 1 */ Double = js.native
 }

@@ -1,8 +1,6 @@
 package typings.awsCryptoIe11Detection
 
 import typings.awsCryptoIe11Detection.keyMod.Key
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,9 +26,9 @@ object cryptoOperationMod {
     
     def onprogress(event: Event): Unit
     
-    def process(buffer: ArrayBufferView): Unit
+    def process(buffer: js.typedarray.ArrayBufferView): Unit
     
-    val result: js.UndefOr[ArrayBuffer] = js.undefined
+    val result: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   }
   object CryptoOperation {
     
@@ -43,7 +41,7 @@ object cryptoOperationMod {
       oncomplete: Event => Unit,
       onerror: Event => Unit,
       onprogress: Event => Unit,
-      process: ArrayBufferView => Unit
+      process: js.typedarray.ArrayBufferView => Unit
     ): CryptoOperation = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), algorithm = algorithm.asInstanceOf[js.Any], finish = js.Any.fromFunction0(finish), key = key.asInstanceOf[js.Any], onabort = js.Any.fromFunction1(onabort), oncomplete = js.Any.fromFunction1(oncomplete), onerror = js.Any.fromFunction1(onerror), onprogress = js.Any.fromFunction1(onprogress), process = js.Any.fromFunction1(process))
       __obj.asInstanceOf[CryptoOperation]
@@ -67,9 +65,9 @@ object cryptoOperationMod {
       
       inline def setOnprogress(value: Event => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction1(value))
       
-      inline def setProcess(value: ArrayBufferView => Unit): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+      inline def setProcess(value: js.typedarray.ArrayBufferView => Unit): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
       
-      inline def setResult(value: ArrayBuffer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }

@@ -2,10 +2,9 @@ package typings.vitalsigns
 
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
+import typings.std.Record
 import typings.vitalsigns.mod.vitalsigns.ConstraintWrapper
 import typings.vitalsigns.mod.vitalsigns.Monitor
 import typings.vitalsigns.mod.vitalsigns.MonitorField
@@ -27,7 +26,7 @@ object mod {
     * @constructors
     * @param {Options} [options] Options.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with VitalSigns_ {
     def this(options: Options) = this()
@@ -55,17 +54,20 @@ object mod {
       * Gets a request handler.
       * @type {RequestHandler}
       */
-    def express(
-      req: Request[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response[js.Any, Double],
-      next: NextFunction
-    ): js.Any = js.native
+    def express(req: Request, res: Response): Any = js.native
+    def express(req: Request, res: Response, next: NextFunction): Any = js.native
     /**
       * Gets a request handler.
       * @type {RequestHandler}
       */
     @JSName("express")
-    var express_Original: RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    var express_Original: RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     /**
       * Retrieves an array of human-readable messages that define the specific health constraints that failed when running the last health check.
@@ -147,11 +149,11 @@ object mod {
         * The value against which the field should be compared.
         * @type {any}
         */
-      var value: js.Any
+      var value: Any
     }
     object Constraint {
       
-      inline def apply(comparator: String, field: String, monitor: String, value: js.Any): Constraint = {
+      inline def apply(comparator: String, field: String, monitor: String, value: Any): Constraint = {
         val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], monitor = monitor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Constraint]
       }
@@ -168,7 +170,7 @@ object mod {
         
         inline def setNegateUndefined: Self = StObject.set(x, "negate", js.undefined)
         
-        inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -216,18 +218,18 @@ object mod {
         * Connections.
         * @type {any}
         */
-      var connections: js.Any
+      var connections: Any
     }
     object Monitor {
       
-      inline def apply(connections: js.Any): Monitor = {
+      inline def apply(connections: Any): Monitor = {
         val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any])
         __obj.asInstanceOf[Monitor]
       }
       
       extension [Self <: Monitor](x: Self) {
         
-        inline def setConnections(value: js.Any): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+        inline def setConnections(value: Any): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       }
     }
     

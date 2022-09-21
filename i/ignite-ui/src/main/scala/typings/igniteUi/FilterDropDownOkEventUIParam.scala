@@ -14,12 +14,12 @@ trait FilterDropDownOkEventUIParam extends StObject {
   /**
     * A collection with the selected filter members. If all filter members are selected the collection will be empty.
     */
-  var filterMembers: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var filterMembers: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * A reference to the hierarchy.
     */
-  var hierarchy: js.UndefOr[js.Any] = js.undefined
+  var hierarchy: js.UndefOr[Any] = js.undefined
 }
 object FilterDropDownOkEventUIParam {
   
@@ -34,13 +34,13 @@ object FilterDropDownOkEventUIParam {
     
     inline def setDropDownElementUndefined: Self = StObject.set(x, "dropDownElement", js.undefined)
     
-    inline def setFilterMembers(value: js.Array[js.Any]): Self = StObject.set(x, "filterMembers", value.asInstanceOf[js.Any])
+    inline def setFilterMembers(value: js.Array[Any]): Self = StObject.set(x, "filterMembers", value.asInstanceOf[js.Any])
     
     inline def setFilterMembersUndefined: Self = StObject.set(x, "filterMembers", js.undefined)
     
-    inline def setFilterMembersVarargs(value: js.Any*): Self = StObject.set(x, "filterMembers", js.Array(value :_*))
+    inline def setFilterMembersVarargs(value: Any*): Self = StObject.set(x, "filterMembers", js.Array(value*))
     
-    inline def setHierarchy(value: js.Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
+    inline def setHierarchy(value: Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
     
     inline def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
   }

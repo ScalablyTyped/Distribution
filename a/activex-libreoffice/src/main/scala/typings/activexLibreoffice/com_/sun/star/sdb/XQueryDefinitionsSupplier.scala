@@ -30,7 +30,7 @@ object XQueryDefinitionsSupplier {
     QueryDefinitions: XNameAccess,
     acquire: () => Unit,
     getQueryDefinitions: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XQueryDefinitionsSupplier = {
     val __obj = js.Dynamic.literal(QueryDefinitions = QueryDefinitions.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getQueryDefinitions = js.Any.fromFunction0(getQueryDefinitions), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

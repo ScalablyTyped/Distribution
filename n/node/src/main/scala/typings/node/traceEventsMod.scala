@@ -11,17 +11,43 @@ object traceEventsMod {
   val ^ : js.Any = js.native
   
   /**
-    * Creates and returns a Tracing object for the given set of categories.
+    * Creates and returns a `Tracing` object for the given set of `categories`.
+    *
+    * ```js
+    * const trace_events = require('trace_events');
+    * const categories = ['node.perf', 'node.async_hooks'];
+    * const tracing = trace_events.createTracing({ categories });
+    * tracing.enable();
+    * // do stuff
+    * tracing.disable();
+    * ```
+    * @since v10.0.0
+    * @return .
     */
   inline def createTracing(options: CreateTracingOptions): Tracing = ^.asInstanceOf[js.Dynamic].applyDynamic("createTracing")(options.asInstanceOf[js.Any]).asInstanceOf[Tracing]
   
   /**
     * Returns a comma-separated list of all currently-enabled trace event
-    * categories. The current set of enabled trace event categories is
-    * determined by the union of all currently-enabled `Tracing` objects and
-    * any categories enabled using the `--trace-event-categories` flag.
+    * categories. The current set of enabled trace event categories is determined
+    * by the _union_ of all currently-enabled `Tracing` objects and any categories
+    * enabled using the `--trace-event-categories` flag.
+    *
+    * Given the file `test.js` below, the command`node --trace-event-categories node.perf test.js` will print`'node.async_hooks,node.perf'` to the console.
+    *
+    * ```js
+    * const trace_events = require('trace_events');
+    * const t1 = trace_events.createTracing({ categories: ['node.async_hooks'] });
+    * const t2 = trace_events.createTracing({ categories: ['node.perf'] });
+    * const t3 = trace_events.createTracing({ categories: ['v8'] });
+    *
+    * t1.enable();
+    * t2.enable();
+    *
+    * console.log(trace_events.getEnabledCategories());
+    * ```
+    * @since v10.0.0
     */
-  inline def getEnabledCategories(): js.UndefOr[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnabledCategories")().asInstanceOf[js.UndefOr[java.lang.String]]
+  inline def getEnabledCategories(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnabledCategories")().asInstanceOf[js.UndefOr[String]]
   
   trait CreateTracingOptions extends StObject {
     
@@ -30,20 +56,20 @@ object traceEventsMod {
       * coerced to a string when possible. An error will be thrown if the
       * value cannot be coerced.
       */
-    var categories: js.Array[java.lang.String]
+    var categories: js.Array[String]
   }
   object CreateTracingOptions {
     
-    inline def apply(categories: js.Array[java.lang.String]): CreateTracingOptions = {
+    inline def apply(categories: js.Array[String]): CreateTracingOptions = {
       val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateTracingOptions]
     }
     
     extension [Self <: CreateTracingOptions](x: Self) {
       
-      inline def setCategories(value: js.Array[java.lang.String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: java.lang.String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     }
   }
   
@@ -63,7 +89,7 @@ object traceEventsMod {
       * A comma-separated list of the trace event categories covered by this
       * `Tracing` object.
       */
-    val categories: java.lang.String
+    val categories: String
     
     /**
       * Disables this `Tracing` object.
@@ -87,14 +113,14 @@ object traceEventsMod {
   }
   object Tracing {
     
-    inline def apply(categories: java.lang.String, disable: () => Unit, enable: () => Unit, enabled: Boolean): Tracing = {
+    inline def apply(categories: String, disable: () => Unit, enable: () => Unit, enabled: Boolean): Tracing = {
       val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tracing]
     }
     
     extension [Self <: Tracing](x: Self) {
       
-      inline def setCategories(value: java.lang.String): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: String): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       

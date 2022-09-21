@@ -14,22 +14,12 @@ object ojlocaledataMod {
   val ^ : js.Any = js.native
   
   inline def getDayNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayNames")().asInstanceOf[js.Array[String]]
-  
-  inline def getDayNames_abbreviated(`type`: abbreviated): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayNames")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  
-  inline def getDayNames_narrow(`type`: narrow): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayNames")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  
-  inline def getDayNames_wide(`type`: wide): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayNames")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getDayNames(`type`: abbreviated | narrow | wide): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayNames")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def getFirstDayOfWeek(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstDayOfWeek")().asInstanceOf[Double]
   
   inline def getMonthNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthNames")().asInstanceOf[js.Array[String]]
-  
-  inline def getMonthNames_abbreviated(`type`: abbreviated): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthNames")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  
-  inline def getMonthNames_narrow(`type`: narrow): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthNames")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  
-  inline def getMonthNames_wide(`type`: wide): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthNames")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getMonthNames(`type`: abbreviated | narrow | wide): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthNames")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def getWeekendEnd(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekendEnd")().asInstanceOf[Double]
   

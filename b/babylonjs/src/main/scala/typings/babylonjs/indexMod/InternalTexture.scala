@@ -1,14 +1,12 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.typesMod.Nullable
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "InternalTexture")
 @js.native
-class InternalTexture protected ()
+open class InternalTexture protected ()
   extends typings.babylonjs.materialsIndexMod.InternalTexture {
   /**
     * Creates a new InternalTexture
@@ -34,11 +32,8 @@ object InternalTexture {
   val ^ : js.Any = js.native
   
   /** @hidden */
-  inline def _UpdateRGBDAsync(
-    internalTexture: typings.babylonjs.internalTextureMod.InternalTexture,
-    data: js.Array[js.Array[ArrayBufferView]],
-    sphericalPolynomial: Nullable[typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial],
-    lodScale: Double,
-    lodOffset: Double
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("_UpdateRGBDAsync")(internalTexture.asInstanceOf[js.Any], data.asInstanceOf[js.Any], sphericalPolynomial.asInstanceOf[js.Any], lodScale.asInstanceOf[js.Any], lodOffset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @JSImport("babylonjs/index", "InternalTexture._Counter")
+  @js.native
+  def _Counter: Double = js.native
+  inline def _Counter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Counter")(x.asInstanceOf[js.Any])
 }

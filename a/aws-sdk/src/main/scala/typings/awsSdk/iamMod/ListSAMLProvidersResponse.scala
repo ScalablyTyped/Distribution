@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListSAMLProvidersResponse extends StObject {
   
   /**
-    * The list of SAML provider resource objects defined in IAM for this AWS account.
+    * The list of SAML provider resource objects defined in IAM for this Amazon Web Services account.
     */
   var SAMLProviderList: js.UndefOr[SAMLProviderListType] = js.undefined
 }
@@ -24,6 +24,6 @@ object ListSAMLProvidersResponse {
     
     inline def setSAMLProviderListUndefined: Self = StObject.set(x, "SAMLProviderList", js.undefined)
     
-    inline def setSAMLProviderListVarargs(value: SAMLProviderListEntry*): Self = StObject.set(x, "SAMLProviderList", js.Array(value :_*))
+    inline def setSAMLProviderListVarargs(value: SAMLProviderListEntry*): Self = StObject.set(x, "SAMLProviderList", js.Array(value*))
   }
 }

@@ -49,7 +49,7 @@ object RouterStatusBgpPeerStatus {
     
     inline def setAdvertisedRoutesUndefined: Self = StObject.set(x, "advertisedRoutes", js.undefined)
     
-    inline def setAdvertisedRoutesVarargs(value: Route*): Self = StObject.set(x, "advertisedRoutes", js.Array(value :_*))
+    inline def setAdvertisedRoutesVarargs(value: Route*): Self = StObject.set(x, "advertisedRoutes", js.Array(value*))
     
     inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     

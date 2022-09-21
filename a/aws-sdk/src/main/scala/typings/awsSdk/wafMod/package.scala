@@ -1,30 +1,33 @@
 package typings.awsSdk.wafMod
 
+import typings.awsSdk.awsSdkStrings.Country_
+import typings.awsSdk.awsSdkStrings.IP
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Action = java.lang.String
+type Action = String
 
-type ActivatedRules = js.Array[typings.awsSdk.wafMod.ActivatedRule]
+type ActivatedRules = js.Array[ActivatedRule]
 
-type ByteMatchSetSummaries = js.Array[typings.awsSdk.wafMod.ByteMatchSetSummary]
+type ByteMatchSetSummaries = js.Array[ByteMatchSetSummary]
 
-type ByteMatchSetUpdates = js.Array[typings.awsSdk.wafMod.ByteMatchSetUpdate]
+type ByteMatchSetUpdates = js.Array[ByteMatchSetUpdate]
 
-type ByteMatchTargetString = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.wafMod.Blob | java.lang.String
+type ByteMatchTargetString = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type ByteMatchTuples = js.Array[typings.awsSdk.wafMod.ByteMatchTuple]
+type ByteMatchTuples = js.Array[ByteMatchTuple]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSERT
   - typings.awsSdk.awsSdkStrings.DELETE
   - java.lang.String
 */
-type ChangeAction = typings.awsSdk.wafMod._ChangeAction | java.lang.String
+type ChangeAction = _ChangeAction | String
 
-type ChangeToken = java.lang.String
+type ChangeToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROVISIONED
@@ -32,7 +35,7 @@ type ChangeToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.INSYNC
   - java.lang.String
 */
-type ChangeTokenStatus = typings.awsSdk.wafMod._ChangeTokenStatus | java.lang.String
+type ChangeTokenStatus = _ChangeTokenStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EQ
@@ -43,13 +46,13 @@ type ChangeTokenStatus = typings.awsSdk.wafMod._ChangeTokenStatus | java.lang.St
   - typings.awsSdk.awsSdkStrings.GT
   - java.lang.String
 */
-type ComparisonOperator = typings.awsSdk.wafMod._ComparisonOperator | java.lang.String
+type ComparisonOperator = _ComparisonOperator | String
 
-type Country = java.lang.String
+type Country = String
 
-type ExcludedRules = js.Array[typings.awsSdk.wafMod.ExcludedRule]
+type ExcludedRules = js.Array[ExcludedRule]
 
-type GeoMatchConstraintType = typings.awsSdk.awsSdkStrings.Country_ | java.lang.String
+type GeoMatchConstraintType = Country_ | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AF
@@ -303,54 +306,54 @@ type GeoMatchConstraintType = typings.awsSdk.awsSdkStrings.Country_ | java.lang.
   - typings.awsSdk.awsSdkStrings.ZW
   - java.lang.String
 */
-type GeoMatchConstraintValue = typings.awsSdk.wafMod._GeoMatchConstraintValue | java.lang.String
+type GeoMatchConstraintValue = _GeoMatchConstraintValue | String
 
-type GeoMatchConstraints = js.Array[typings.awsSdk.wafMod.GeoMatchConstraint]
+type GeoMatchConstraints = js.Array[GeoMatchConstraint]
 
-type GeoMatchSetSummaries = js.Array[typings.awsSdk.wafMod.GeoMatchSetSummary]
+type GeoMatchSetSummaries = js.Array[GeoMatchSetSummary]
 
-type GeoMatchSetUpdates = js.Array[typings.awsSdk.wafMod.GeoMatchSetUpdate]
+type GeoMatchSetUpdates = js.Array[GeoMatchSetUpdate]
 
-type GetSampledRequestsMaxItems = scala.Double
+type GetSampledRequestsMaxItems = Double
 
-type HTTPHeaders = js.Array[typings.awsSdk.wafMod.HTTPHeader]
+type HTTPHeaders = js.Array[HTTPHeader]
 
-type HTTPMethod = java.lang.String
+type HTTPMethod = String
 
-type HTTPVersion = java.lang.String
+type HTTPVersion = String
 
-type HeaderName = java.lang.String
+type HeaderName = String
 
-type HeaderValue = java.lang.String
+type HeaderValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IPV4
   - typings.awsSdk.awsSdkStrings.IPV6
   - java.lang.String
 */
-type IPSetDescriptorType = typings.awsSdk.wafMod._IPSetDescriptorType | java.lang.String
+type IPSetDescriptorType = _IPSetDescriptorType | String
 
-type IPSetDescriptorValue = java.lang.String
+type IPSetDescriptorValue = String
 
-type IPSetDescriptors = js.Array[typings.awsSdk.wafMod.IPSetDescriptor]
+type IPSetDescriptors = js.Array[IPSetDescriptor]
 
-type IPSetSummaries = js.Array[typings.awsSdk.wafMod.IPSetSummary]
+type IPSetSummaries = js.Array[IPSetSummary]
 
-type IPSetUpdates = js.Array[typings.awsSdk.wafMod.IPSetUpdate]
+type IPSetUpdates = js.Array[IPSetUpdate]
 
-type IPString = java.lang.String
+type IPString = String
 
-type IgnoreUnsupportedType = scala.Boolean
+type IgnoreUnsupportedType = Boolean
 
-type LogDestinationConfigs = js.Array[typings.awsSdk.wafMod.ResourceArn]
+type LogDestinationConfigs = js.Array[ResourceArn]
 
-type LoggingConfigurations = js.Array[typings.awsSdk.wafMod.LoggingConfiguration]
+type LoggingConfigurations = js.Array[LoggingConfiguration]
 
-type ManagedKey = java.lang.String
+type ManagedKey = String
 
-type ManagedKeys = js.Array[typings.awsSdk.wafMod.ManagedKey]
+type ManagedKeys = js.Array[ManagedKey]
 
-type MatchFieldData = java.lang.String
+type MatchFieldData = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.URI
@@ -362,19 +365,19 @@ type MatchFieldData = java.lang.String
   - typings.awsSdk.awsSdkStrings.ALL_QUERY_ARGS
   - java.lang.String
 */
-type MatchFieldType = typings.awsSdk.wafMod._MatchFieldType | java.lang.String
+type MatchFieldType = _MatchFieldType | String
 
-type MetricName = java.lang.String
+type MetricName = String
 
-type Negated = scala.Boolean
+type Negated = Boolean
 
-type NextMarker = java.lang.String
+type NextMarker = String
 
-type PaginationLimit = scala.Double
+type PaginationLimit = Double
 
-type PolicyString = java.lang.String
+type PolicyString = String
 
-type PopulationSize = scala.Double
+type PopulationSize = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EXACTLY
@@ -384,7 +387,7 @@ type PopulationSize = scala.Double
   - typings.awsSdk.awsSdkStrings.CONTAINS_WORD
   - java.lang.String
 */
-type PositionalConstraint = typings.awsSdk.wafMod._PositionalConstraint | java.lang.String
+type PositionalConstraint = _PositionalConstraint | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IPMatch
@@ -396,77 +399,77 @@ type PositionalConstraint = typings.awsSdk.wafMod._PositionalConstraint | java.l
   - typings.awsSdk.awsSdkStrings.RegexMatch
   - java.lang.String
 */
-type PredicateType = typings.awsSdk.wafMod._PredicateType | java.lang.String
+type PredicateType = _PredicateType | String
 
-type Predicates = js.Array[typings.awsSdk.wafMod.Predicate]
+type Predicates = js.Array[Predicate]
 
-type RateKey = typings.awsSdk.awsSdkStrings.IP | java.lang.String
+type RateKey = IP | String
 
-type RateLimit = scala.Double
+type RateLimit = Double
 
-type RedactedFields = js.Array[typings.awsSdk.wafMod.FieldToMatch]
+type RedactedFields = js.Array[FieldToMatch]
 
-type RegexMatchSetSummaries = js.Array[typings.awsSdk.wafMod.RegexMatchSetSummary]
+type RegexMatchSetSummaries = js.Array[RegexMatchSetSummary]
 
-type RegexMatchSetUpdates = js.Array[typings.awsSdk.wafMod.RegexMatchSetUpdate]
+type RegexMatchSetUpdates = js.Array[RegexMatchSetUpdate]
 
-type RegexMatchTuples = js.Array[typings.awsSdk.wafMod.RegexMatchTuple]
+type RegexMatchTuples = js.Array[RegexMatchTuple]
 
-type RegexPatternSetSummaries = js.Array[typings.awsSdk.wafMod.RegexPatternSetSummary]
+type RegexPatternSetSummaries = js.Array[RegexPatternSetSummary]
 
-type RegexPatternSetUpdates = js.Array[typings.awsSdk.wafMod.RegexPatternSetUpdate]
+type RegexPatternSetUpdates = js.Array[RegexPatternSetUpdate]
 
-type RegexPatternString = java.lang.String
+type RegexPatternString = String
 
-type RegexPatternStrings = js.Array[typings.awsSdk.wafMod.RegexPatternString]
+type RegexPatternStrings = js.Array[RegexPatternString]
 
-type ResourceArn = java.lang.String
+type ResourceArn = String
 
-type ResourceId = java.lang.String
+type ResourceId = String
 
-type ResourceName = java.lang.String
+type ResourceName = String
 
-type RuleGroupSummaries = js.Array[typings.awsSdk.wafMod.RuleGroupSummary]
+type RuleGroupSummaries = js.Array[RuleGroupSummary]
 
-type RuleGroupUpdates = js.Array[typings.awsSdk.wafMod.RuleGroupUpdate]
+type RuleGroupUpdates = js.Array[RuleGroupUpdate]
 
-type RulePriority = scala.Double
+type RulePriority = Double
 
-type RuleSummaries = js.Array[typings.awsSdk.wafMod.RuleSummary]
+type RuleSummaries = js.Array[RuleSummary]
 
-type RuleUpdates = js.Array[typings.awsSdk.wafMod.RuleUpdate]
+type RuleUpdates = js.Array[RuleUpdate]
 
-type S3BucketName = java.lang.String
+type S3BucketName = String
 
-type S3ObjectUrl = java.lang.String
+type S3ObjectUrl = String
 
-type SampleWeight = scala.Double
+type SampleWeight = Double
 
-type SampledHTTPRequests = js.Array[typings.awsSdk.wafMod.SampledHTTPRequest]
+type SampledHTTPRequests = js.Array[SampledHTTPRequest]
 
-type Size = scala.Double
+type Size = Double
 
-type SizeConstraintSetSummaries = js.Array[typings.awsSdk.wafMod.SizeConstraintSetSummary]
+type SizeConstraintSetSummaries = js.Array[SizeConstraintSetSummary]
 
-type SizeConstraintSetUpdates = js.Array[typings.awsSdk.wafMod.SizeConstraintSetUpdate]
+type SizeConstraintSetUpdates = js.Array[SizeConstraintSetUpdate]
 
-type SizeConstraints = js.Array[typings.awsSdk.wafMod.SizeConstraint]
+type SizeConstraints = js.Array[SizeConstraint]
 
-type SqlInjectionMatchSetSummaries = js.Array[typings.awsSdk.wafMod.SqlInjectionMatchSetSummary]
+type SqlInjectionMatchSetSummaries = js.Array[SqlInjectionMatchSetSummary]
 
-type SqlInjectionMatchSetUpdates = js.Array[typings.awsSdk.wafMod.SqlInjectionMatchSetUpdate]
+type SqlInjectionMatchSetUpdates = js.Array[SqlInjectionMatchSetUpdate]
 
-type SqlInjectionMatchTuples = js.Array[typings.awsSdk.wafMod.SqlInjectionMatchTuple]
+type SqlInjectionMatchTuples = js.Array[SqlInjectionMatchTuple]
 
-type SubscribedRuleGroupSummaries = js.Array[typings.awsSdk.wafMod.SubscribedRuleGroupSummary]
+type SubscribedRuleGroupSummaries = js.Array[SubscribedRuleGroupSummary]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.wafMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.wafMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -477,11 +480,11 @@ type TagValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.URL_DECODE
   - java.lang.String
 */
-type TextTransformation = typings.awsSdk.wafMod._TextTransformation | java.lang.String
+type TextTransformation = _TextTransformation | String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type URIString = java.lang.String
+type URIString = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BLOCK
@@ -489,14 +492,14 @@ type URIString = java.lang.String
   - typings.awsSdk.awsSdkStrings.COUNT
   - java.lang.String
 */
-type WafActionType = typings.awsSdk.wafMod._WafActionType | java.lang.String
+type WafActionType = _WafActionType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.COUNT
   - java.lang.String
 */
-type WafOverrideActionType = typings.awsSdk.wafMod._WafOverrideActionType | java.lang.String
+type WafOverrideActionType = _WafOverrideActionType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.REGULAR
@@ -504,21 +507,21 @@ type WafOverrideActionType = typings.awsSdk.wafMod._WafOverrideActionType | java
   - typings.awsSdk.awsSdkStrings.GROUP
   - java.lang.String
 */
-type WafRuleType = typings.awsSdk.wafMod._WafRuleType | java.lang.String
+type WafRuleType = _WafRuleType | String
 
-type WebACLSummaries = js.Array[typings.awsSdk.wafMod.WebACLSummary]
+type WebACLSummaries = js.Array[WebACLSummary]
 
-type WebACLUpdates = js.Array[typings.awsSdk.wafMod.WebACLUpdate]
+type WebACLUpdates = js.Array[WebACLUpdate]
 
-type XssMatchSetSummaries = js.Array[typings.awsSdk.wafMod.XssMatchSetSummary]
+type XssMatchSetSummaries = js.Array[XssMatchSetSummary]
 
-type XssMatchSetUpdates = js.Array[typings.awsSdk.wafMod.XssMatchSetUpdate]
+type XssMatchSetUpdates = js.Array[XssMatchSetUpdate]
 
-type XssMatchTuples = js.Array[typings.awsSdk.wafMod.XssMatchTuple]
+type XssMatchTuples = js.Array[XssMatchTuple]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-08-24`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.wafMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SoftEdgeFormat extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -20,7 +20,7 @@ trait SoftEdgeFormat extends StObject {
 object SoftEdgeFormat {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     OfficeDotSoftEdgeFormat_typekey: SoftEdgeFormat,
     Radius: Double,
@@ -33,7 +33,7 @@ object SoftEdgeFormat {
   
   extension [Self <: SoftEdgeFormat](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     

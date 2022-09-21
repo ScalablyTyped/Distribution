@@ -33,7 +33,7 @@ object XColumnLocate {
   inline def apply(
     acquire: () => Unit,
     findColumn: String => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XColumnLocate = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), findColumn = js.Any.fromFunction1(findColumn), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

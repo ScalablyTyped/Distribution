@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetricsAndOperator extends StObject {
   
   /**
+    * The access point ARN used when evaluating an AND predicate.
+    */
+  var AccessPointArn: js.UndefOr[typings.awsSdk.s3Mod.AccessPointArn] = js.undefined
+  
+  /**
     * The prefix used when evaluating an AND predicate.
     */
   var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
@@ -25,6 +30,10 @@ object MetricsAndOperator {
   
   extension [Self <: MetricsAndOperator](x: Self) {
     
+    inline def setAccessPointArn(value: AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
+    
+    inline def setAccessPointArnUndefined: Self = StObject.set(x, "AccessPointArn", js.undefined)
+    
     inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
@@ -33,6 +42,6 @@ object MetricsAndOperator {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

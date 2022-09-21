@@ -46,7 +46,7 @@ object IFresnelParametersSerialized {
     
     inline def setLeftColor(value: js.Array[Double]): Self = StObject.set(x, "leftColor", value.asInstanceOf[js.Any])
     
-    inline def setLeftColorVarargs(value: Double*): Self = StObject.set(x, "leftColor", js.Array(value :_*))
+    inline def setLeftColorVarargs(value: Double*): Self = StObject.set(x, "leftColor", js.Array(value*))
     
     inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
@@ -54,6 +54,6 @@ object IFresnelParametersSerialized {
     
     inline def setRightColor(value: js.Array[Double]): Self = StObject.set(x, "rightColor", value.asInstanceOf[js.Any])
     
-    inline def setRightColorVarargs(value: Double*): Self = StObject.set(x, "rightColor", js.Array(value :_*))
+    inline def setRightColorVarargs(value: Double*): Self = StObject.set(x, "rightColor", js.Array(value*))
   }
 }

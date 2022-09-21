@@ -1,6 +1,6 @@
 package typings.nodemailer
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.PassThrough
 import typings.node.streamMod.Readable
 import typings.nodemailer.anon.Key
@@ -13,7 +13,7 @@ object dkimMod {
   
   @JSImport("nodemailer/lib/dkim", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with DKIM {
     def this(options: Options) = this()
@@ -53,7 +53,7 @@ object dkimMod {
       
       inline def setKeys(value: js.Array[SingleKeyOptions]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      inline def setKeysVarargs(value: SingleKeyOptions*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: SingleKeyOptions*): Self = StObject.set(x, "keys", js.Array(value*))
     }
   }
   

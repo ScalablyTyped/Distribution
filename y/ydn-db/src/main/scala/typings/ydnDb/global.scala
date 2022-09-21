@@ -1,6 +1,5 @@
 package typings.ydnDb
 
-import typings.std.Error
 import typings.ydnDb.anon.Push
 import typings.ydnDb.ydn.db.EventType
 import typings.ydnDb.ydn.db.Op
@@ -18,7 +17,7 @@ object global {
         
         @JSGlobal("ydb.db.algo.NestedLoop")
         @js.native
-        class NestedLoop protected ()
+        open class NestedLoop protected ()
           extends StObject
              with typings.ydnDb.ydb.db.algo.Solver {
           def this(out: Push) = this()
@@ -27,13 +26,13 @@ object global {
         
         @JSGlobal("ydb.db.algo.Solver")
         @js.native
-        class Solver ()
+        open class Solver ()
           extends StObject
              with typings.ydnDb.ydb.db.algo.Solver
         
         @JSGlobal("ydb.db.algo.SortedMerge")
         @js.native
-        class SortedMerge protected ()
+        open class SortedMerge protected ()
           extends StObject
              with typings.ydnDb.ydb.db.algo.Solver {
           def this(out: Push) = this()
@@ -42,7 +41,7 @@ object global {
         
         @JSGlobal("ydb.db.algo.ZigzagMerge")
         @js.native
-        class ZigzagMerge protected ()
+        open class ZigzagMerge protected ()
           extends StObject
              with typings.ydnDb.ydb.db.algo.Solver {
           def this(out: Push) = this()
@@ -62,7 +61,7 @@ object global {
       
       @JSGlobal("ydn.db.DbOperator")
       @js.native
-      class DbOperator ()
+      open class DbOperator ()
         extends StObject
            with typings.ydnDb.ydn.db.DbOperator
       
@@ -88,18 +87,18 @@ object global {
       
       @JSGlobal("ydn.db.ICursor")
       @js.native
-      class ICursor ()
+      open class ICursor ()
         extends StObject
            with typings.ydnDb.ydn.db.ICursor
       
       @JSGlobal("ydn.db.IndexKeyIterator")
       @js.native
-      class IndexKeyIterator protected ()
+      open class IndexKeyIterator protected ()
         extends StObject
            with typings.ydnDb.ydn.db.Iterator {
         def this(store_name: String, index_name: String) = this()
-        def this(store_name: String, index_name: String, key_range: js.Any) = this()
-        def this(store_name: String, index_name: String, key_range: js.Any, reverse: Boolean) = this()
+        def this(store_name: String, index_name: String, key_range: Any) = this()
+        def this(store_name: String, index_name: String, key_range: Any, reverse: Boolean) = this()
         def this(store_name: String, index_name: String, key_range: Unit, reverse: Boolean) = this()
       }
       /* static members */
@@ -109,17 +108,17 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        inline def where(store_name: String, index_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], index_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        inline def where(store_name: String, index_name: String, op: Op, value: Any, op2: Op, value2: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], index_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Any]
       }
       
       @JSGlobal("ydn.db.IndexValueIterator")
       @js.native
-      class IndexValueIterator protected ()
+      open class IndexValueIterator protected ()
         extends StObject
            with typings.ydnDb.ydn.db.Iterator {
         def this(store_name: String, index_name: String) = this()
-        def this(store_name: String, index_name: String, key_range: js.Any) = this()
-        def this(store_name: String, index_name: String, key_range: js.Any, reverse: Boolean) = this()
+        def this(store_name: String, index_name: String, key_range: Any) = this()
+        def this(store_name: String, index_name: String, key_range: Any, reverse: Boolean) = this()
         def this(store_name: String, index_name: String, key_range: Unit, reverse: Boolean) = this()
       }
       /* static members */
@@ -129,34 +128,34 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        inline def where(store_name: String, index_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], index_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        inline def where(store_name: String, index_name: String, op: Op, value: Any, op2: Op, value2: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], index_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Any]
       }
       
       @JSGlobal("ydn.db.Iterator")
       @js.native
-      class Iterator ()
+      open class Iterator ()
         extends StObject
            with typings.ydnDb.ydn.db.Iterator
       
       @JSGlobal("ydn.db.Key")
       @js.native
-      class Key protected ()
+      open class Key protected ()
         extends StObject
            with typings.ydnDb.ydn.db.Key {
         def this(json: js.Object) = this()
         def this(key_string: String) = this()
-        def this(store_name: String, id: js.Any) = this()
-        def this(store_name: String, id: js.Any, parent_key: typings.ydnDb.ydn.db.Key) = this()
+        def this(store_name: String, id: Any) = this()
+        def this(store_name: String, id: Any, parent_key: typings.ydnDb.ydn.db.Key) = this()
       }
       
       @JSGlobal("ydn.db.KeyIterator")
       @js.native
-      class KeyIterator protected ()
+      open class KeyIterator protected ()
         extends StObject
            with typings.ydnDb.ydn.db.Iterator {
         def this(store_name: String) = this()
-        def this(store_name: String, key_range: js.Any) = this()
-        def this(store_name: String, key_range: js.Any, reverse: Boolean) = this()
+        def this(store_name: String, key_range: Any) = this()
+        def this(store_name: String, key_range: Any, reverse: Boolean) = this()
         def this(store_name: String, key_range: Unit, reverse: Boolean) = this()
       }
       /* static members */
@@ -166,7 +165,7 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        inline def where(store_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        inline def where(store_name: String, op: Op, value: Any, op2: Op, value2: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Any]
       }
       
       @JSGlobal("ydn.db.Op")
@@ -209,41 +208,41 @@ object global {
       
       @JSGlobal("ydn.db.Query")
       @js.native
-      class Query ()
+      open class Query ()
         extends StObject
            with typings.ydnDb.ydn.db.Query
       
       @JSGlobal("ydn.db.Request")
       @js.native
-      class Request ()
+      open class Request ()
         extends StObject
            with typings.ydnDb.ydn.db.Request {
         
         /* CompleteClass */
-        override def abort(): js.Any = js.native
+        override def abort(): Any = js.native
         
         /* CompleteClass */
-        override def always(callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+        override def always(callback: js.Function1[/* data */ Any, Unit]): Any = js.native
         
         /* CompleteClass */
         override def canAbort(): Boolean = js.native
         
         /* CompleteClass */
-        override def done(callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+        override def done(callback: js.Function1[/* data */ Any, Unit]): Any = js.native
         
         /* CompleteClass */
-        override def fail(callback: js.Function1[/* data */ js.Any, Unit]): js.Any = js.native
+        override def fail(callback: js.Function1[/* data */ Any, Unit]): Any = js.native
         
         /* CompleteClass */
         override def `then`(
-          success_callback: js.Function1[/* data */ js.Any, js.Any],
-          error_callback: js.Function1[/* data */ Error, js.Any]
-        ): js.Any = js.native
+          success_callback: js.Function1[/* data */ Any, Any],
+          error_callback: js.Function1[/* data */ js.Error, Any]
+        ): Any = js.native
       }
       
       @JSGlobal("ydn.db.Storage")
       @js.native
-      class Storage ()
+      open class Storage ()
         extends StObject
            with typings.ydnDb.ydn.db.Storage {
         def this(db_name: String) = this()
@@ -257,7 +256,7 @@ object global {
       
       @JSGlobal("ydn.db.Streamer")
       @js.native
-      class Streamer protected ()
+      open class Streamer protected ()
         extends StObject
            with typings.ydnDb.ydn.db.Streamer {
         def this(storage: typings.ydnDb.ydn.db.Storage, store_name: String) = this()
@@ -278,12 +277,12 @@ object global {
       
       @JSGlobal("ydn.db.ValueIterator")
       @js.native
-      class ValueIterator protected ()
+      open class ValueIterator protected ()
         extends StObject
            with typings.ydnDb.ydn.db.Iterator {
         def this(store_name: String) = this()
-        def this(store_name: String, key_range: js.Any) = this()
-        def this(store_name: String, key_range: js.Any, reverse: Boolean) = this()
+        def this(store_name: String, key_range: Any) = this()
+        def this(store_name: String, key_range: Any, reverse: Boolean) = this()
         def this(store_name: String, key_range: Unit, reverse: Boolean) = this()
       }
       /* static members */
@@ -293,10 +292,10 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        inline def where(store_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        inline def where(store_name: String, op: Op, value: Any, op2: Op, value2: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Any]
       }
       
-      inline def cmp(first: js.Any, second: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def cmp(first: Any, second: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       inline def deleteDatabase(db_name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(db_name.asInstanceOf[js.Any]).asInstanceOf[Unit]
       inline def deleteDatabase(db_name: String, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(db_name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -305,7 +304,7 @@ object global {
         
         @JSGlobal("ydn.db.events.Event")
         @js.native
-        class Event ()
+        open class Event ()
           extends StObject
              with typings.ydnDb.ydn.db.events.Event {
           
@@ -318,18 +317,18 @@ object global {
         
         @JSGlobal("ydn.db.events.RecordEvent")
         @js.native
-        class RecordEvent ()
+        open class RecordEvent ()
           extends StObject
              with typings.ydnDb.ydn.db.events.RecordEvent {
           
           /* CompleteClass */
-          override def getKey(): js.Any = js.native
+          override def getKey(): Any = js.native
           
           /* CompleteClass */
           override def getStoreName(): String = js.native
           
           /* CompleteClass */
-          override def getValue(): js.Any = js.native
+          override def getValue(): Any = js.native
           
           /* CompleteClass */
           var name: String = js.native
@@ -340,12 +339,12 @@ object global {
         
         @JSGlobal("ydn.db.events.StorageEvent")
         @js.native
-        class StorageEvent ()
+        open class StorageEvent ()
           extends StObject
              with typings.ydnDb.ydn.db.events.StorageEvent {
           
           /* CompleteClass */
-          override def getError(): Error = js.native
+          override def getError(): js.Error = js.native
           
           /* CompleteClass */
           override def getOldVersion(): Double = js.native
@@ -362,18 +361,18 @@ object global {
         
         @JSGlobal("ydn.db.events.StoreEvent")
         @js.native
-        class StoreEvent ()
+        open class StoreEvent ()
           extends StObject
              with typings.ydnDb.ydn.db.events.StoreEvent {
           
           /* CompleteClass */
-          override def getKeys(): js.Array[js.Any] = js.native
+          override def getKeys(): js.Array[Any] = js.native
           
           /* CompleteClass */
           override def getStoreName(): String = js.native
           
           /* CompleteClass */
-          override def getValues(): js.Array[js.Any] = js.native
+          override def getValues(): js.Array[Any] = js.native
           
           /* CompleteClass */
           var name: String = js.native

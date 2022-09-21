@@ -11,5 +11,5 @@ object sectionMod {
   
   @JSImport("rbx/layout/section", "Section")
   @js.native
-  val Section: ForwardRefAsExoticComponent[SectionProps, ElementType[js.Any]] = js.native
+  val Section: ForwardRefAsExoticComponent[SectionProps, ElementType[Any]] = js.native
 }

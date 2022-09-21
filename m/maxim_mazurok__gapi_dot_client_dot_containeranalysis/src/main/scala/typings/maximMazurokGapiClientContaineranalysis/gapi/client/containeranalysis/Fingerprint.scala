@@ -32,7 +32,7 @@ object Fingerprint {
     
     inline def setV2BlobUndefined: Self = StObject.set(x, "v2Blob", js.undefined)
     
-    inline def setV2BlobVarargs(value: String*): Self = StObject.set(x, "v2Blob", js.Array(value :_*))
+    inline def setV2BlobVarargs(value: String*): Self = StObject.set(x, "v2Blob", js.Array(value*))
     
     inline def setV2Name(value: String): Self = StObject.set(x, "v2Name", value.asInstanceOf[js.Any])
     

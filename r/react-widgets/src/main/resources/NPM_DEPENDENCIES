@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-widgets" : "5.8.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-widgets" : "5.8.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.GammaGompertz")
 @js.native
-class GammaGompertz ()
+open class GammaGompertz ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.GammaGompertz] {
   def this(b: Double) = this()

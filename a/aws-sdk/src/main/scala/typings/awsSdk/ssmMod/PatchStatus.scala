@@ -9,7 +9,7 @@ trait PatchStatus extends StObject {
   /**
     * The date the patch was approved (or will be approved if the status is PENDING_APPROVAL).
     */
-  var ApprovalDate: js.UndefOr[DateTime] = js.undefined
+  var ApprovalDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The compliance severity level for a patch.
@@ -17,7 +17,7 @@ trait PatchStatus extends StObject {
   var ComplianceLevel: js.UndefOr[PatchComplianceLevel] = js.undefined
   
   /**
-    * The approval status of a patch (APPROVED, PENDING_APPROVAL, EXPLICIT_APPROVED, EXPLICIT_REJECTED).
+    * The approval status of a patch.
     */
   var DeploymentStatus: js.UndefOr[PatchDeploymentStatus] = js.undefined
 }
@@ -30,7 +30,7 @@ object PatchStatus {
   
   extension [Self <: PatchStatus](x: Self) {
     
-    inline def setApprovalDate(value: DateTime): Self = StObject.set(x, "ApprovalDate", value.asInstanceOf[js.Any])
+    inline def setApprovalDate(value: js.Date): Self = StObject.set(x, "ApprovalDate", value.asInstanceOf[js.Any])
     
     inline def setApprovalDateUndefined: Self = StObject.set(x, "ApprovalDate", js.undefined)
     

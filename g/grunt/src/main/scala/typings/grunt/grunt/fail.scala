@@ -1,6 +1,5 @@
 package typings.grunt.grunt
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,8 +56,8 @@ object fail {
       */
     def fatal(error: String): Unit = js.native
     def fatal(error: String, errorCode: ErrorCode): Unit = js.native
-    def fatal(error: Error): Unit = js.native
-    def fatal(error: Error, errorCode: ErrorCode): Unit = js.native
+    def fatal(error: js.Error): Unit = js.native
+    def fatal(error: js.Error, errorCode: ErrorCode): Unit = js.native
     
     /**
       * Display a warning and abort Grunt immediately.
@@ -66,7 +65,7 @@ object fail {
       */
     def warn(error: String): Unit = js.native
     def warn(error: String, errorCode: ErrorCode): Unit = js.native
-    def warn(error: Error): Unit = js.native
-    def warn(error: Error, errorCode: ErrorCode): Unit = js.native
+    def warn(error: js.Error): Unit = js.native
+    def warn(error: js.Error, errorCode: ErrorCode): Unit = js.native
   }
 }

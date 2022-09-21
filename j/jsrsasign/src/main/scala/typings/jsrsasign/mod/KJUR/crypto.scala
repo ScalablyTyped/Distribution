@@ -109,7 +109,7 @@ object crypto {
     */
   @JSImport("jsrsasign", "KJUR.crypto.DSA")
   @js.native
-  class DSA ()
+  open class DSA ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
   
@@ -129,7 +129,7 @@ object crypto {
     */
   @JSImport("jsrsasign", "KJUR.crypto.ECDSA")
   @js.native
-  class ECDSA ()
+  open class ECDSA ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA {
     def this(publicKey: Curve) = this()
@@ -297,7 +297,7 @@ object crypto {
     */
   @JSImport("jsrsasign", "KJUR.crypto.Mac")
   @js.native
-  class Mac protected ()
+  open class Mac protected ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.crypto.Mac {
     def this(params: Pass) = this()
@@ -333,7 +333,7 @@ object crypto {
     */
   @JSImport("jsrsasign", "KJUR.crypto.MessageDigest")
   @js.native
-  class MessageDigest protected ()
+  open class MessageDigest protected ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.crypto.MessageDigest {
     def this(params: Prov) = this()
@@ -345,7 +345,7 @@ object crypto {
       * md.digest()
       */
     /* CompleteClass */
-    override def digest(): Unit = js.native
+    override def digest(): String = js.native
     
     /**
       * performs final update on the digest using hexadecimal string, then completes the digest computation
@@ -355,7 +355,7 @@ object crypto {
       * md.digestHex('0f2abd')
       */
     /* CompleteClass */
-    override def digestHex(hex: String): Unit = js.native
+    override def digestHex(hex: String): String = js.native
     
     /**
       * performs final update on the digest using string, then completes the digest computation
@@ -365,7 +365,7 @@ object crypto {
       * md.digestString('aaa')
       */
     /* CompleteClass */
-    override def digestString(str: String): Unit = js.native
+    override def digestString(str: String): String = js.native
     
     /**
       * set hash algorithm and provider
@@ -568,7 +568,7 @@ object crypto {
     */
   @JSImport("jsrsasign", "KJUR.crypto.Signature")
   @js.native
-  class Signature ()
+  open class Signature ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.crypto.Signature {
     def this(params: `0`) = this()

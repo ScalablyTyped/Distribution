@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "DisputeEvidenceFile")
 @js.native
-class DisputeEvidenceFile () extends StObject {
+open class DisputeEvidenceFile () extends StObject {
   
   /**
     * The file name including the file extension. For example: \"receipt.tiff\".

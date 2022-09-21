@@ -1,8 +1,6 @@
 package typings.pixelmatch
 
-import typings.node.Buffer
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +9,11 @@ object mod {
   
   inline def apply(
     /** Image data of the first image to compare. Note: image dimensions must be equal. */
-  img1: Buffer | Uint8Array | Uint8ClampedArray,
+  img1: Buffer | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray,
     /** Image data of the second image to compare. Note: image dimensions must be equal. */
-  img2: Buffer | Uint8Array | Uint8ClampedArray,
+  img2: Buffer | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray,
     /** Image data to write the diff to, or null if don't need a diff image. */
-  output: Buffer | Uint8Array | Null,
+  output: Buffer | js.typedarray.Uint8Array | js.typedarray.Uint8ClampedArray | Null,
     /** Width of the images. Note that all three images need to have the same dimensions. */
   width: Double,
     /** Height of the images. Note that all three images need to have the same dimensions. */

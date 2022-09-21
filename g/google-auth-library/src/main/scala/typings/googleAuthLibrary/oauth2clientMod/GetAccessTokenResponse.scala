@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetAccessTokenResponse extends StObject {
   
-  var res: js.UndefOr[GaxiosResponse[js.Any] | Null] = js.undefined
+  var res: js.UndefOr[GaxiosResponse[Any] | Null] = js.undefined
   
   var token: js.UndefOr[String | Null] = js.undefined
 }
@@ -20,7 +20,7 @@ object GetAccessTokenResponse {
   
   extension [Self <: GetAccessTokenResponse](x: Self) {
     
-    inline def setRes(value: GaxiosResponse[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: GaxiosResponse[Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
     inline def setResNull: Self = StObject.set(x, "res", null)
     

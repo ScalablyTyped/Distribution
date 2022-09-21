@@ -43,13 +43,13 @@ object VPCConfigResponse {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "securityGroups", js.Array(value*))
     
     inline def setSubnets(value: Subnets): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
     
     inline def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
     
-    inline def setSubnetsVarargs(value: NonEmptyString*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: NonEmptyString*): Self = StObject.set(x, "subnets", js.Array(value*))
     
     inline def setVpcId(value: GenericString): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     

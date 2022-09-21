@@ -22,23 +22,23 @@ trait ISceneLoaderPlugin
     * @returns True if successful or false otherwise
     */
   def importMesh(
-    meshesNames: js.Any,
+    meshesNames: Any,
     scene: Scene,
-    data: js.Any,
+    data: Any,
     rootUrl: String,
     meshes: js.Array[AbstractMesh],
     particleSystems: js.Array[IParticleSystem],
     skeletons: js.Array[Skeleton]
   ): Boolean = js.native
   def importMesh(
-    meshesNames: js.Any,
+    meshesNames: Any,
     scene: Scene,
-    data: js.Any,
+    data: Any,
     rootUrl: String,
     meshes: js.Array[AbstractMesh],
     particleSystems: js.Array[IParticleSystem],
     skeletons: js.Array[Skeleton],
-    onError: js.Function2[/* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
+    onError: js.Function2[/* message */ String, /* exception */ js.UndefOr[Any], Unit]
   ): Boolean = js.native
   
   /**
@@ -49,12 +49,12 @@ trait ISceneLoaderPlugin
     * @param onError The callback when import fails
     * @returns True if successful or false otherwise
     */
-  def load(scene: Scene, data: js.Any, rootUrl: String): Boolean = js.native
+  def load(scene: Scene, data: Any, rootUrl: String): Boolean = js.native
   def load(
     scene: Scene,
-    data: js.Any,
+    data: Any,
     rootUrl: String,
-    onError: js.Function2[/* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
+    onError: js.Function2[/* message */ String, /* exception */ js.UndefOr[Any], Unit]
   ): Boolean = js.native
   
   /**
@@ -65,11 +65,11 @@ trait ISceneLoaderPlugin
     * @param onError The callback when import fails
     * @returns The loaded asset container
     */
-  def loadAssetContainer(scene: Scene, data: js.Any, rootUrl: String): AssetContainer = js.native
+  def loadAssetContainer(scene: Scene, data: Any, rootUrl: String): AssetContainer = js.native
   def loadAssetContainer(
     scene: Scene,
-    data: js.Any,
+    data: Any,
     rootUrl: String,
-    onError: js.Function2[/* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
+    onError: js.Function2[/* message */ String, /* exception */ js.UndefOr[Any], Unit]
   ): AssetContainer = js.native
 }

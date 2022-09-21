@@ -49,7 +49,7 @@ object CIMMaterialProperties {
     
     inline def setSpecularColorUndefined: Self = StObject.set(x, "specularColor", js.undefined)
     
-    inline def setSpecularColorVarargs(value: Double*): Self = StObject.set(x, "specularColor", js.Array(value :_*))
+    inline def setSpecularColorVarargs(value: Double*): Self = StObject.set(x, "specularColor", js.Array(value*))
     
     inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialProperties): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,7 @@ object ListJournalS3ExportsForLedgerResponse {
     
     inline def setJournalS3ExportsUndefined: Self = StObject.set(x, "JournalS3Exports", js.undefined)
     
-    inline def setJournalS3ExportsVarargs(value: JournalS3ExportDescription*): Self = StObject.set(x, "JournalS3Exports", js.Array(value :_*))
+    inline def setJournalS3ExportsVarargs(value: JournalS3ExportDescription*): Self = StObject.set(x, "JournalS3Exports", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

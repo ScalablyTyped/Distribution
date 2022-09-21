@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "capital-case" : "1.0.3"
+      "capital-case" : "1.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "capital-case" : "1.0.3"
+      "capital-case" : "1.0.4"
     }
   ],
   "compile-devDependencies" : [

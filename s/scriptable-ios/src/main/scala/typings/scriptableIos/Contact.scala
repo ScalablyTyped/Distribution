@@ -5,7 +5,6 @@ import typings.scriptableIos.Contact.EmailAddresses
 import typings.scriptableIos.Contact.PhoneNumbers
 import typings.scriptableIos.Contact.PostalAddresses
 import typings.scriptableIos.Contact.SocialProfiles
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait Contact extends StObject {
     * _Birthday._
     * @see https://docs.scriptable.app/contact/#birthday
     */
-  var birthday: Date
+  var birthday: js.Date
   
   /**
     * _Dates._
@@ -31,7 +30,7 @@ trait Contact extends StObject {
     * When updating this property, you must set the entire array of dates that you would like to store on the contact. The "identifier" key is optional.
     * @see https://docs.scriptable.app/contact/#dates
     */
-  var dates: js.Array[StringDictionary[js.Any]]
+  var dates: js.Array[StringDictionary[Any]]
   
   /**
     * _Name of the department associated with the contact._
@@ -220,7 +219,7 @@ trait Contact extends StObject {
   var isURLAddressesAvailable: Boolean
   
   /**
-    * _The contacts job title._
+    * _The contact's job title._
     * @see https://docs.scriptable.app/contact/#jobtitle
     */
   var jobTitle: String
@@ -246,7 +245,7 @@ trait Contact extends StObject {
   /**
     * _Note for the contact._
     *
-    * For security reasons, a contacts notes cannot be accessed in Siri, the Shortcuts app and in a notification.
+    * For security reasons, a contact's notes cannot be accessed in Siri, the Shortcuts app and in a notification.
     * @see https://docs.scriptable.app/contact/#note
     */
   var note: String
@@ -334,8 +333,8 @@ trait Contact extends StObject {
 object Contact {
   
   inline def apply(
-    birthday: Date,
-    dates: js.Array[StringDictionary[js.Any]],
+    birthday: js.Date,
+    dates: js.Array[StringDictionary[Any]],
     departmentName: String,
     emailAddresses: js.Array[EmailAddresses],
     familyName: String,
@@ -376,17 +375,17 @@ object Contact {
   
   extension [Self <: Contact](x: Self) {
     
-    inline def setBirthday(value: Date): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
+    inline def setBirthday(value: js.Date): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
     
-    inline def setDates(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
+    inline def setDates(value: js.Array[StringDictionary[Any]]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
     
-    inline def setDatesVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "dates", js.Array(value :_*))
+    inline def setDatesVarargs(value: StringDictionary[Any]*): Self = StObject.set(x, "dates", js.Array(value*))
     
     inline def setDepartmentName(value: String): Self = StObject.set(x, "departmentName", value.asInstanceOf[js.Any])
     
     inline def setEmailAddresses(value: js.Array[EmailAddresses]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     
-    inline def setEmailAddressesVarargs(value: EmailAddresses*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
+    inline def setEmailAddressesVarargs(value: EmailAddresses*): Self = StObject.set(x, "emailAddresses", js.Array(value*))
     
     inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
@@ -444,19 +443,19 @@ object Contact {
     
     inline def setPhoneNumbers(value: js.Array[PhoneNumbers]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
     
-    inline def setPhoneNumbersVarargs(value: PhoneNumbers*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
+    inline def setPhoneNumbersVarargs(value: PhoneNumbers*): Self = StObject.set(x, "phoneNumbers", js.Array(value*))
     
     inline def setPostalAddresses(value: js.Array[PostalAddresses]): Self = StObject.set(x, "postalAddresses", value.asInstanceOf[js.Any])
     
-    inline def setPostalAddressesVarargs(value: PostalAddresses*): Self = StObject.set(x, "postalAddresses", js.Array(value :_*))
+    inline def setPostalAddressesVarargs(value: PostalAddresses*): Self = StObject.set(x, "postalAddresses", js.Array(value*))
     
     inline def setSocialProfiles(value: js.Array[SocialProfiles]): Self = StObject.set(x, "socialProfiles", value.asInstanceOf[js.Any])
     
-    inline def setSocialProfilesVarargs(value: SocialProfiles*): Self = StObject.set(x, "socialProfiles", js.Array(value :_*))
+    inline def setSocialProfilesVarargs(value: SocialProfiles*): Self = StObject.set(x, "socialProfiles", js.Array(value*))
     
     inline def setUrlAddresses(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "urlAddresses", value.asInstanceOf[js.Any])
     
-    inline def setUrlAddressesVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "urlAddresses", js.Array(value :_*))
+    inline def setUrlAddressesVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "urlAddresses", js.Array(value*))
   }
   
   trait EmailAddresses extends StObject {

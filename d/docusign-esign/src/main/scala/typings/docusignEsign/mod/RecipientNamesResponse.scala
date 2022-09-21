@@ -38,7 +38,7 @@ object RecipientNamesResponse {
     
     inline def setRecipientNamesUndefined: Self = StObject.set(x, "recipientNames", js.undefined)
     
-    inline def setRecipientNamesVarargs(value: String*): Self = StObject.set(x, "recipientNames", js.Array(value :_*))
+    inline def setRecipientNamesVarargs(value: String*): Self = StObject.set(x, "recipientNames", js.Array(value*))
     
     inline def setReservedRecipientEmail(value: String): Self = StObject.set(x, "reservedRecipientEmail", value.asInstanceOf[js.Any])
     

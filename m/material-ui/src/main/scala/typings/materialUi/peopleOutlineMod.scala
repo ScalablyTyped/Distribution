@@ -10,10 +10,10 @@ object peopleOutlineMod {
   
   @JSImport("material-ui/svg-icons/social/people-outline", JSImport.Default)
   @js.native
-  class default () extends SocialPeopleOutline
+  open class default () extends SocialPeopleOutline
   
   @JSImport("material-ui/svg-icons/social/people-outline", "SocialPeopleOutline")
   @js.native
-  class SocialPeopleOutline ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialPeopleOutline ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Lookup")
 @js.native
-class Lookup protected () extends AttributeBase {
+open class Lookup protected () extends AttributeBase {
   /**
     * A Lookup Attribute.
     * @param name The logical name of the attribute.

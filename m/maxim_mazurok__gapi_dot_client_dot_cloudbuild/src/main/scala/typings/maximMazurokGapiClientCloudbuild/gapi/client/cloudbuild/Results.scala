@@ -48,19 +48,19 @@ object Results {
     
     inline def setBuildStepImagesUndefined: Self = StObject.set(x, "buildStepImages", js.undefined)
     
-    inline def setBuildStepImagesVarargs(value: String*): Self = StObject.set(x, "buildStepImages", js.Array(value :_*))
+    inline def setBuildStepImagesVarargs(value: String*): Self = StObject.set(x, "buildStepImages", js.Array(value*))
     
     inline def setBuildStepOutputs(value: js.Array[String]): Self = StObject.set(x, "buildStepOutputs", value.asInstanceOf[js.Any])
     
     inline def setBuildStepOutputsUndefined: Self = StObject.set(x, "buildStepOutputs", js.undefined)
     
-    inline def setBuildStepOutputsVarargs(value: String*): Self = StObject.set(x, "buildStepOutputs", js.Array(value :_*))
+    inline def setBuildStepOutputsVarargs(value: String*): Self = StObject.set(x, "buildStepOutputs", js.Array(value*))
     
     inline def setImages(value: js.Array[BuiltImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: BuiltImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: BuiltImage*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setNumArtifacts(value: String): Self = StObject.set(x, "numArtifacts", value.asInstanceOf[js.Any])
     

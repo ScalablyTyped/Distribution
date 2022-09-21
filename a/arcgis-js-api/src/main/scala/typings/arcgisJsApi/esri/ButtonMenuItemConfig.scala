@@ -83,7 +83,7 @@ object ButtonMenuItemConfig {
     
     inline def setAutoCloseMenuUndefined: Self = StObject.set(x, "autoCloseMenu", js.undefined)
     
-    inline def setClickFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "clickFunction", js.Any.fromFunction1(value))
+    inline def setClickFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "clickFunction", js.Any.fromFunction1(value))
     
     inline def setClickFunctionUndefined: Self = StObject.set(x, "clickFunction", js.undefined)
     
@@ -95,7 +95,7 @@ object ButtonMenuItemConfig {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ButtonMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ButtonMenuItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

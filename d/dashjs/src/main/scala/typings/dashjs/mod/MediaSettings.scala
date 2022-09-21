@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MediaSettings extends StObject {
   
-  var accessibility: js.UndefOr[js.Any] = js.undefined
+  var accessibility: js.UndefOr[Any] = js.undefined
   
-  var audioChannelConfiguration: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var audioChannelConfiguration: js.UndefOr[js.Array[Any]] = js.undefined
   
   var lang: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[String] = js.undefined
   
-  var viewpoint: js.UndefOr[js.Any] = js.undefined
+  var viewpoint: js.UndefOr[Any] = js.undefined
 }
 object MediaSettings {
   
@@ -25,15 +25,15 @@ object MediaSettings {
   
   extension [Self <: MediaSettings](x: Self) {
     
-    inline def setAccessibility(value: js.Any): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: Any): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
-    inline def setAudioChannelConfiguration(value: js.Array[js.Any]): Self = StObject.set(x, "audioChannelConfiguration", value.asInstanceOf[js.Any])
+    inline def setAudioChannelConfiguration(value: js.Array[Any]): Self = StObject.set(x, "audioChannelConfiguration", value.asInstanceOf[js.Any])
     
     inline def setAudioChannelConfigurationUndefined: Self = StObject.set(x, "audioChannelConfiguration", js.undefined)
     
-    inline def setAudioChannelConfigurationVarargs(value: js.Any*): Self = StObject.set(x, "audioChannelConfiguration", js.Array(value :_*))
+    inline def setAudioChannelConfigurationVarargs(value: Any*): Self = StObject.set(x, "audioChannelConfiguration", js.Array(value*))
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
@@ -43,7 +43,7 @@ object MediaSettings {
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    inline def setViewpoint(value: js.Any): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
+    inline def setViewpoint(value: Any): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
     inline def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
   }

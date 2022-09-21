@@ -1,27 +1,13 @@
 package typings.antvCoord
 
-import typings.antvCoord.interfaceMod.Point
-import typings.antvCoord.interfaceMod.PolarCfg
+import typings.antvCoord.typeMod.CreateTransformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polarMod {
   
-  @JSImport("@antv/coord/lib/coord/polar", JSImport.Default)
+  @JSImport("@antv/coord/lib/transforms/polar", "polar")
   @js.native
-  class default protected () extends Polar {
-    def this(cfg: PolarCfg) = this()
-  }
-  
-  @js.native
-  trait Polar
-    extends typings.antvCoord.baseMod.default {
-    
-    var circleCenter: Point = js.native
-    
-    /* private */ var getOneBox: js.Any = js.native
-    
-    /* private */ var polarRadius: js.Any = js.native
-  }
+  val polar: CreateTransformer = js.native
 }

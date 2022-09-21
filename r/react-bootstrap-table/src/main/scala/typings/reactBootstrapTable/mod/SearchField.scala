@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap-table", "SearchField")
 @js.native
-class SearchField protected ()
-  extends Component[SearchFieldProps, js.Object, js.Any]
+open class SearchField protected ()
+  extends Component[SearchFieldProps, js.Object, Any]
      with SearchFieldInterface {
   def this(props: SearchFieldProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SearchFieldProps, context: js.Any) = this()
+  def this(props: SearchFieldProps, context: Any) = this()
   
   /**
     * getValue should return the current search text.

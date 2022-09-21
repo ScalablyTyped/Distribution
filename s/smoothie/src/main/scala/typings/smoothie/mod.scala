@@ -3,9 +3,11 @@ package typings.smoothie
 import typings.smoothie.anon.Index
 import typings.smoothie.anon.LineWidth
 import typings.smoothie.smoothieStrings.bezier
+import typings.smoothie.smoothieStrings.bottom
 import typings.smoothie.smoothieStrings.linear
+import typings.smoothie.smoothieStrings.middle
 import typings.smoothie.smoothieStrings.step
-import typings.std.Date
+import typings.smoothie.smoothieStrings.top
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +17,7 @@ object mod {
   
   @JSImport("smoothie", "SmoothieChart")
   @js.native
-  class SmoothieChart () extends StObject {
+  open class SmoothieChart () extends StObject {
     def this(chartOptions: IChartOptions) = this()
     
     /**
@@ -81,7 +83,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def timeFormatter(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatter")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def timeFormatter(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatter")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("smoothie", "TimeSeries")
@@ -100,7 +102,7 @@ object mod {
     *
     * Presentation options for TimeSeries are specified as an argument to <code>SmoothieChart.addTimeSeries</code>.
     */
-  class TimeSeries () extends StObject {
+  open class TimeSeries () extends StObject {
     def this(options: ITimeSeriesOptions) = this()
     
     /**
@@ -160,7 +162,7 @@ object mod {
     
     var horizontalLines: js.UndefOr[js.Array[IHorizontalLine]] = js.undefined
     
-    /** Controls how lines are drawn between data points. Defaults to "bezier". */
+    /** Default value for time series presentation options' <code>interpolation</code>. Defaults to "bezier". */
     var interpolation: js.UndefOr[linear | step | bezier] = js.undefined
     
     var labels: js.UndefOr[ILabelOptions] = js.undefined
@@ -195,7 +197,9 @@ object mod {
     var scaleSmoothing: js.UndefOr[Double] = js.undefined
     
     /** Optional function to format time stamps for bottom of chart. You may use <code>SmoothieChart.timeFormatter</code>, or your own/ */
-    var timestampFormatter: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
+    var timestampFormatter: js.UndefOr[js.Function1[/* date */ js.Date, String]] = js.undefined
+    
+    var title: js.UndefOr[ITitleOptions] = js.undefined
     
     var tooltip: js.UndefOr[Boolean] = js.undefined
     
@@ -239,7 +243,7 @@ object mod {
       
       inline def setHorizontalLinesUndefined: Self = StObject.set(x, "horizontalLines", js.undefined)
       
-      inline def setHorizontalLinesVarargs(value: IHorizontalLine*): Self = StObject.set(x, "horizontalLines", js.Array(value :_*))
+      inline def setHorizontalLinesVarargs(value: IHorizontalLine*): Self = StObject.set(x, "horizontalLines", js.Array(value*))
       
       inline def setInterpolation(value: linear | step | bezier): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
       
@@ -289,9 +293,13 @@ object mod {
       
       inline def setScaleSmoothingUndefined: Self = StObject.set(x, "scaleSmoothing", js.undefined)
       
-      inline def setTimestampFormatter(value: /* date */ Date => String): Self = StObject.set(x, "timestampFormatter", js.Any.fromFunction1(value))
+      inline def setTimestampFormatter(value: /* date */ js.Date => String): Self = StObject.set(x, "timestampFormatter", js.Any.fromFunction1(value))
       
       inline def setTimestampFormatterUndefined: Self = StObject.set(x, "timestampFormatter", js.undefined)
+      
+      inline def setTitle(value: ITitleOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setTooltip(value: Boolean): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
@@ -337,9 +345,6 @@ object mod {
     /** Distance between vertical grid lines. */
     var millisPerLine: js.UndefOr[Double] = js.undefined
     
-    /** Controls whether grid lines are 1px sharp, or softened. */
-    var sharpLines: js.UndefOr[Boolean] = js.undefined
-    
     /** Colour of grid lines. */
     var strokeStyle: js.UndefOr[String] = js.undefined
     
@@ -370,10 +375,6 @@ object mod {
       inline def setMillisPerLine(value: Double): Self = StObject.set(x, "millisPerLine", value.asInstanceOf[js.Any])
       
       inline def setMillisPerLineUndefined: Self = StObject.set(x, "millisPerLine", js.undefined)
-      
-      inline def setSharpLines(value: Boolean): Self = StObject.set(x, "sharpLines", value.asInstanceOf[js.Any])
-      
-      inline def setSharpLinesUndefined: Self = StObject.set(x, "sharpLines", js.undefined)
       
       inline def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
       
@@ -524,9 +525,17 @@ object mod {
     
     var fillStyle: js.UndefOr[String] = js.undefined
     
+    /**
+      * Controls how lines are drawn between data points.
+      * Default value is controlled by <code>SmoothieChart</code>'s <code>interpolation</code> option.
+      */
+    var interpolation: js.UndefOr[linear | step | bezier] = js.undefined
+    
     var lineWidth: js.UndefOr[Double] = js.undefined
     
     var strokeStyle: js.UndefOr[String] = js.undefined
+    
+    var tooltipLabel: js.UndefOr[String] = js.undefined
   }
   object ITimeSeriesPresentationOptions {
     
@@ -541,6 +550,10 @@ object mod {
       
       inline def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
       
+      inline def setInterpolation(value: linear | step | bezier): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+      
+      inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+      
       inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       
       inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
@@ -548,6 +561,56 @@ object mod {
       inline def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
       
       inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
+      
+      inline def setTooltipLabel(value: String): Self = StObject.set(x, "tooltipLabel", value.asInstanceOf[js.Any])
+      
+      inline def setTooltipLabelUndefined: Self = StObject.set(x, "tooltipLabel", js.undefined)
+    }
+  }
+  
+  trait ITitleOptions extends StObject {
+    
+    /** Colour for text. */
+    var fillStyle: js.UndefOr[String] = js.undefined
+    
+    var fontFamily: js.UndefOr[String] = js.undefined
+    
+    var fontSize: js.UndefOr[Double] = js.undefined
+    
+    /** The text to display on the left side of the chart. Defaults to "". */
+    var text: js.UndefOr[String] = js.undefined
+    
+    /** The vertical position of the text. Defaults to "middle". */
+    var verticalAlign: js.UndefOr[top | middle | bottom] = js.undefined
+  }
+  object ITitleOptions {
+    
+    inline def apply(): ITitleOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ITitleOptions]
+    }
+    
+    extension [Self <: ITitleOptions](x: Self) {
+      
+      inline def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
+      
+      inline def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
+      
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      
+      inline def setVerticalAlign(value: top | middle | bottom): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     }
   }
 }

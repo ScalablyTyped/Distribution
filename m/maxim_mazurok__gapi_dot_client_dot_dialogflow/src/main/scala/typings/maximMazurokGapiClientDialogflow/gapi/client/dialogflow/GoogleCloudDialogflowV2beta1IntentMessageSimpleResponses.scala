@@ -22,6 +22,6 @@ object GoogleCloudDialogflowV2beta1IntentMessageSimpleResponses {
     
     inline def setSimpleResponsesUndefined: Self = StObject.set(x, "simpleResponses", js.undefined)
     
-    inline def setSimpleResponsesVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse*): Self = StObject.set(x, "simpleResponses", js.Array(value :_*))
+    inline def setSimpleResponsesVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse*): Self = StObject.set(x, "simpleResponses", js.Array(value*))
   }
 }

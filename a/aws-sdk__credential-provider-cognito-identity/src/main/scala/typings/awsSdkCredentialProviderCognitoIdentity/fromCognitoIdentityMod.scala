@@ -2,19 +2,21 @@ package typings.awsSdkCredentialProviderCognitoIdentity
 
 import typings.awsSdkClientCognitoIdentity.mod.CognitoIdentityClient
 import typings.awsSdkCredentialProviderCognitoIdentity.cognitoProviderParametersMod.CognitoProviderParameters
-import typings.awsSdkTypes.credentialsMod.CredentialProvider
 import typings.awsSdkTypes.credentialsMod.Credentials
+import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromCognitoIdentityMod {
   
-  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist/cjs/fromCognitoIdentity", JSImport.Namespace)
+  @JSImport("@aws-sdk/credential-provider-cognito-identity/dist-types/fromCognitoIdentity", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromCognitoIdentity(parameters: FromCognitoIdentityParameters): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentity")(parameters.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromCognitoIdentity(parameters: FromCognitoIdentityParameters): CognitoIdentityCredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentity")(parameters.asInstanceOf[js.Any]).asInstanceOf[CognitoIdentityCredentialProvider]
+  
+  type CognitoIdentityCredentialProvider = Provider[CognitoIdentityCredentials]
   
   trait CognitoIdentityCredentials
     extends StObject

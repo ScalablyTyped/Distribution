@@ -12,13 +12,13 @@ object foundationMod {
   
   @JSImport("@material/line-ripple/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCLineRippleFoundation {
+  open class default () extends MDCLineRippleFoundation {
     def this(adapter: PartialMDCLineRippleAdapt) = this()
   }
   
   @JSImport("@material/line-ripple/foundation", "MDCLineRippleFoundation")
   @js.native
-  class MDCLineRippleFoundation () extends MDCFoundation[MDCLineRippleAdapter] {
+  open class MDCLineRippleFoundation () extends MDCFoundation[MDCLineRippleAdapter] {
     def this(adapter: PartialMDCLineRippleAdapt) = this()
     
     def activate(): Unit = js.native
@@ -28,5 +28,7 @@ object foundationMod {
     def handleTransitionEnd(evt: TransitionEvent): Unit = js.native
     
     def setRippleCenter(xCoordinate: Double): Unit = js.native
+    
+    /* private */ val transitionEndHandler: Any = js.native
   }
 }

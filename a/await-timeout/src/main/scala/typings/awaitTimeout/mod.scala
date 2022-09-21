@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("await-timeout", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Timeout
   @JSImport("await-timeout", JSImport.Namespace)
@@ -21,8 +21,8 @@ object mod {
   inline def set(delay: Double, message: String): js.Promise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(delay.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Nothing]]
   
   /* static member */
-  inline def wrap(promise: js.Promise[js.Any], delay: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def wrap(promise: js.Promise[js.Any], delay: Double, error: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def wrap(promise: js.Promise[Any], delay: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def wrap(promise: js.Promise[Any], delay: Double, error: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   @js.native
   trait Timeout extends StObject {

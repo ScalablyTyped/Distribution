@@ -2,7 +2,6 @@ package typings.revalidator
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.revalidator.revalidatorStrings.`object`
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -134,7 +133,7 @@ object Revalidator {
       
       inline def setErrors(value: js.Array[IErrrorProperty]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: IErrrorProperty*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: IErrrorProperty*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
@@ -143,13 +142,13 @@ object Revalidator {
   trait ISchema[T] extends StObject {
     
     /**Default value */
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
     /**If false, the value must not be an empty string */
     var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**Value must conform to constraint denoted by expected value */
-    var conform: js.UndefOr[js.Function2[/* value */ js.Any, /* data */ js.UndefOr[T], Boolean]] = js.undefined
+    var conform: js.UndefOr[js.Function2[/* value */ Any, /* data */ js.UndefOr[T], Boolean]] = js.undefined
     
     /**Value is valid only if the dependent value is valid */
     var dependencies: js.UndefOr[String] = js.undefined
@@ -161,7 +160,7 @@ object Revalidator {
     var divisibleBy: js.UndefOr[Double] = js.undefined
     
     /**Value must be present in the array of expected values */
-    var `enum`: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var `enum`: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**Value must be lesser than expected value */
     var exclusiveMaximum: js.UndefOr[Double] = js.undefined
@@ -200,7 +199,7 @@ object Revalidator {
     var minimum: js.UndefOr[Double] = js.undefined
     
     /**The expected value regex needs to be satisfied by the value */
-    var pattern: js.UndefOr[RegExp | String] = js.undefined
+    var pattern: js.UndefOr[js.RegExp | String] = js.undefined
     
     /**If true, the value should not be undefined */
     var required: js.UndefOr[Boolean] = js.undefined
@@ -225,11 +224,11 @@ object Revalidator {
       
       inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
       
-      inline def setConform(value: (/* value */ js.Any, /* data */ js.UndefOr[T]) => Boolean): Self = StObject.set(x, "conform", js.Any.fromFunction2(value))
+      inline def setConform(value: (/* value */ Any, /* data */ js.UndefOr[T]) => Boolean): Self = StObject.set(x, "conform", js.Any.fromFunction2(value))
       
       inline def setConformUndefined: Self = StObject.set(x, "conform", js.undefined)
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -245,11 +244,11 @@ object Revalidator {
       
       inline def setDivisibleByUndefined: Self = StObject.set(x, "divisibleBy", js.undefined)
       
-      inline def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: js.Array[Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
       inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      inline def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: Any*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setExclusiveMaximum(value: Double): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
       
@@ -299,7 +298,7 @@ object Revalidator {
       
       inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
       
-      inline def setPattern(value: RegExp | String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: js.RegExp | String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
@@ -309,7 +308,7 @@ object Revalidator {
       
       inline def setType(value: Types | js.Array[Types]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setTypeVarargs(value: Types*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: Types*): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
       

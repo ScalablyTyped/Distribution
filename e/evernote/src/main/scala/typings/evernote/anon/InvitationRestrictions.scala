@@ -32,12 +32,12 @@ object InvitationRestrictions {
     
     inline def setInvitationsUndefined: Self = StObject.set(x, "invitations", js.undefined)
     
-    inline def setInvitationsVarargs(value: NoteInvitationShareRelationship*): Self = StObject.set(x, "invitations", js.Array(value :_*))
+    inline def setInvitationsVarargs(value: NoteInvitationShareRelationship*): Self = StObject.set(x, "invitations", js.Array(value*))
     
     inline def setMemberships(value: js.Array[NoteMemberShareRelationship]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     
     inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
-    inline def setMembershipsVarargs(value: NoteMemberShareRelationship*): Self = StObject.set(x, "memberships", js.Array(value :_*))
+    inline def setMembershipsVarargs(value: NoteMemberShareRelationship*): Self = StObject.set(x, "memberships", js.Array(value*))
   }
 }

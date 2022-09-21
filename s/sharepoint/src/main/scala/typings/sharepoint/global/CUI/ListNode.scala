@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.ListNode")
 @js.native
-class ListNode[T] protected ()
+open class ListNode[T] protected ()
   extends StObject
      with typings.sharepoint.CUI.ListNode[T] {
   def this(data: T, prev: typings.sharepoint.CUI.ListNode[T], next: typings.sharepoint.CUI.ListNode[T]) = this()

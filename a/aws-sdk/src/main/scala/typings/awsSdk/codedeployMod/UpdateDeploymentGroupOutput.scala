@@ -24,6 +24,6 @@ object UpdateDeploymentGroupOutput {
     
     inline def setHooksNotCleanedUpUndefined: Self = StObject.set(x, "hooksNotCleanedUp", js.undefined)
     
-    inline def setHooksNotCleanedUpVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "hooksNotCleanedUp", js.Array(value :_*))
+    inline def setHooksNotCleanedUpVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "hooksNotCleanedUp", js.Array(value*))
   }
 }

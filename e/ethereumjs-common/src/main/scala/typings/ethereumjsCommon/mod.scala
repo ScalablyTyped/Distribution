@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("ethereumjs-common", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Common {
     /**
@@ -43,8 +43,8 @@ object mod {
     
     @JSImport("ethereumjs-common", "default._getChainParams")
     @js.native
-    def _getChainParams: js.Any = js.native
-    inline def _getChainParams_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getChainParams")(x.asInstanceOf[js.Any])
+    def _getChainParams: Any = js.native
+    inline def _getChainParams_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getChainParams")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a Common object for a custom chain, based on a standard one. It uses all the [[Chain]]
@@ -101,7 +101,7 @@ object mod {
   @js.native
   trait Common extends StObject {
     
-    /* private */ var _chainParams: js.Any = js.native
+    /* private */ var _chainParams: Any = js.native
     
     /**
       * Internal helper function to choose between hardfork set and hardfork provided as param
@@ -119,9 +119,9 @@ object mod {
       * @param hardfork Hardfork name
       * @returns Dictionary with hardfork params
       */
-    def _getHardfork(hardfork: String): js.Any = js.native
+    def _getHardfork(hardfork: String): Any = js.native
     
-    /* private */ var _hardfork: js.Any = js.native
+    /* private */ var _hardfork: Any = js.native
     
     /**
       * Internal helper function to check if a hardfork is set to be supported by the library
@@ -131,7 +131,7 @@ object mod {
     def _isSupportedHardfork(): Boolean = js.native
     def _isSupportedHardfork(hardfork: String): Boolean = js.native
     
-    /* private */ var _supportedHardforks: js.Any = js.native
+    /* private */ var _supportedHardforks: Any = js.native
     
     /**
       * Returns the latest active hardfork name for chain or block or throws if unavailable
@@ -151,11 +151,11 @@ object mod {
       * @param opts Hardfork options (onlyActive unused)
       * @return Array with hardfork arrays
       */
-    def activeHardforks(): js.Array[js.Any] = js.native
-    def activeHardforks(blockNumber: Double): js.Array[js.Any] = js.native
-    def activeHardforks(blockNumber: Double, opts: hardforkOptions): js.Array[js.Any] = js.native
-    def activeHardforks(blockNumber: Null, opts: hardforkOptions): js.Array[js.Any] = js.native
-    def activeHardforks(blockNumber: Unit, opts: hardforkOptions): js.Array[js.Any] = js.native
+    def activeHardforks(): js.Array[Any] = js.native
+    def activeHardforks(blockNumber: Double): js.Array[Any] = js.native
+    def activeHardforks(blockNumber: Double, opts: hardforkOptions): js.Array[Any] = js.native
+    def activeHardforks(blockNumber: Null, opts: hardforkOptions): js.Array[Any] = js.native
+    def activeHardforks(blockNumber: Unit, opts: hardforkOptions): js.Array[Any] = js.native
     
     /**
       * Alias to hardforkIsActiveOnBlock when hardfork is set
@@ -170,7 +170,7 @@ object mod {
       * Returns bootstrap nodes for the current chain
       * @returns {Dictionary} Dict with bootstrap nodes
       */
-    def bootstrapNodes(): js.Any = js.native
+    def bootstrapNodes(): Any = js.native
     
     /**
       * Returns the Id of current chain
@@ -204,7 +204,7 @@ object mod {
       * Returns the Genesis parameters of current chain
       * @returns Genesis dictionary
       */
-    def genesis(): js.Any = js.native
+    def genesis(): Any = js.native
     
     /**
       * Alias to hardforkGteHardfork when hardfork is set
@@ -269,7 +269,7 @@ object mod {
       * Returns the hardforks for current chain
       * @returns {Array} Array with arrays of hardforks
       */
-    def hardforks(): js.Any = js.native
+    def hardforks(): Any = js.native
     
     /**
       * True if block number provided is the hardfork (given or set) change block of the current chain
@@ -292,8 +292,8 @@ object mod {
       * @param name Parameter name (e.g. 'minGasLimit' for 'gasConfig' topic)
       * @param hardfork Hardfork name, optional if hardfork set
       */
-    def param(topic: String, name: String): js.Any = js.native
-    def param(topic: String, name: String, hardfork: String): js.Any = js.native
+    def param(topic: String, name: String): Any = js.native
+    def param(topic: String, name: String, hardfork: String): Any = js.native
     
     /**
       * Returns a parameter for the hardfork active on block number
@@ -301,7 +301,7 @@ object mod {
       * @param name Parameter name
       * @param blockNumber Block number
       */
-    def paramByBlock(topic: String, name: String, blockNumber: Double): js.Any = js.native
+    def paramByBlock(topic: String, name: String, blockNumber: Double): Any = js.native
     
     /**
       * Sets the chain
@@ -309,9 +309,9 @@ object mod {
       *     representation. Or, a Dictionary of chain parameters for a private network.
       * @returns The dictionary with parameters set as chain
       */
-    def setChain(chain: String): js.Any = js.native
-    def setChain(chain: js.Object): js.Any = js.native
-    def setChain(chain: Double): js.Any = js.native
+    def setChain(chain: String): Any = js.native
+    def setChain(chain: js.Object): Any = js.native
+    def setChain(chain: Double): Any = js.native
     
     /**
       * Sets the hardfork to get params for

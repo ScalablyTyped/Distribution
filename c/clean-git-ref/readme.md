@@ -10,15 +10,12 @@ Clean an input string into a usable git ref
 | ------------------ | :-------------: |
 | Full name          | clean-git-ref |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 1690611 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 907866.6666666666 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/TheSavior/clean-git-ref#readme)
-- [Bugs](https://github.com/TheSavior/clean-git-ref/issues)
-- [Repository](https://github.com/TheSavior/clean-git-ref)
 - [Npm](https://www.npmjs.com/package/clean-git-ref)
     
 

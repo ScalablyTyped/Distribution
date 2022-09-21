@@ -14,30 +14,30 @@ trait IPromise[T] extends StObject {
   
   def cancel(): Unit = js.native
   
-  var dispatchEvent: js.UndefOr[js.Function2[/* type */ String, /* details */ js.Any, Boolean]] = js.native
+  var dispatchEvent: js.UndefOr[js.Function2[/* type */ String, /* details */ Any, Boolean]] = js.native
   
   def done[U](): Unit = js.native
-  def done[U](success: js.Function1[/* value */ T, js.Any]): Unit = js.native
-  def done[U](success: js.Function1[/* value */ T, js.Any], error: js.Function1[/* error */ js.Any, js.Any]): Unit = js.native
+  def done[U](success: js.Function1[/* value */ T, Any]): Unit = js.native
+  def done[U](success: js.Function1[/* value */ T, Any], error: js.Function1[/* error */ Any, Any]): Unit = js.native
   def done[U](
-    success: js.Function1[/* value */ T, js.Any],
-    error: js.Function1[/* error */ js.Any, js.Any],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    success: js.Function1[/* value */ T, Any],
+    error: js.Function1[/* error */ Any, Any],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): Unit = js.native
   def done[U](
-    success: js.Function1[/* value */ T, js.Any],
+    success: js.Function1[/* value */ T, Any],
     error: Unit,
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    progress: js.Function1[/* progress */ Any, Unit]
   ): Unit = js.native
-  def done[U](success: Unit, error: js.Function1[/* error */ js.Any, js.Any]): Unit = js.native
+  def done[U](success: Unit, error: js.Function1[/* error */ Any, Any]): Unit = js.native
   def done[U](
     success: Unit,
-    error: js.Function1[/* error */ js.Any, js.Any],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    error: js.Function1[/* error */ Any, Any],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): Unit = js.native
-  def done[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): Unit = js.native
+  def done[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ Any, Unit]): Unit = js.native
   
-  var onerror: js.UndefOr[js.Function1[/* eventInfo */ CustomEvent[js.Any], Unit]] = js.native
+  var onerror: js.UndefOr[js.Function1[/* eventInfo */ CustomEvent[Any], Unit]] = js.native
   
   var removeEventListener: js.UndefOr[
     js.Function3[
@@ -52,23 +52,23 @@ trait IPromise[T] extends StObject {
   def `then`[U](success: js.Function1[/* value */ T, IPromise[U] | U]): IPromise[U] = js.native
   def `then`[U](
     success: js.Function1[/* value */ T, IPromise[U] | U],
-    error: js.Function1[/* error */ js.Any, IPromise[U] | U]
+    error: js.Function1[/* error */ Any, IPromise[U] | U]
   ): IPromise[U] = js.native
   def `then`[U](
     success: js.Function1[/* value */ T, IPromise[U] | U],
-    error: js.Function1[/* error */ js.Any, IPromise[U] | U],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    error: js.Function1[/* error */ Any, IPromise[U] | U],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): IPromise[U] = js.native
   def `then`[U](
     success: js.Function1[/* value */ T, IPromise[U] | U],
     error: Unit,
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    progress: js.Function1[/* progress */ Any, Unit]
   ): IPromise[U] = js.native
-  def `then`[U](success: Unit, error: js.Function1[/* error */ js.Any, IPromise[U] | U]): IPromise[U] = js.native
+  def `then`[U](success: Unit, error: js.Function1[/* error */ Any, IPromise[U] | U]): IPromise[U] = js.native
   def `then`[U](
     success: Unit,
-    error: js.Function1[/* error */ js.Any, IPromise[U] | U],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    error: js.Function1[/* error */ Any, IPromise[U] | U],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): IPromise[U] = js.native
-  def `then`[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): IPromise[U] = js.native
+  def `then`[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ Any, Unit]): IPromise[U] = js.native
 }

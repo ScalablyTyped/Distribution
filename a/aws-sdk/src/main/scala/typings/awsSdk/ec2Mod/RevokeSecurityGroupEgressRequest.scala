@@ -37,6 +37,11 @@ trait RevokeSecurityGroupEgressRequest extends StObject {
   var IpProtocol: js.UndefOr[String] = js.undefined
   
   /**
+    * The IDs of the security group rules.
+    */
+  var SecurityGroupRuleIds: js.UndefOr[SecurityGroupRuleIdList] = js.undefined
+  
+  /**
     * Not supported. Use a set of IP permissions to specify a destination security group.
     */
   var SourceSecurityGroupName: js.UndefOr[String] = js.undefined
@@ -78,11 +83,17 @@ object RevokeSecurityGroupEgressRequest {
     
     inline def setIpPermissionsUndefined: Self = StObject.set(x, "IpPermissions", js.undefined)
     
-    inline def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value :_*))
+    inline def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value*))
     
     inline def setIpProtocol(value: String): Self = StObject.set(x, "IpProtocol", value.asInstanceOf[js.Any])
     
     inline def setIpProtocolUndefined: Self = StObject.set(x, "IpProtocol", js.undefined)
+    
+    inline def setSecurityGroupRuleIds(value: SecurityGroupRuleIdList): Self = StObject.set(x, "SecurityGroupRuleIds", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityGroupRuleIdsUndefined: Self = StObject.set(x, "SecurityGroupRuleIds", js.undefined)
+    
+    inline def setSecurityGroupRuleIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupRuleIds", js.Array(value*))
     
     inline def setSourceSecurityGroupName(value: String): Self = StObject.set(x, "SourceSecurityGroupName", value.asInstanceOf[js.Any])
     

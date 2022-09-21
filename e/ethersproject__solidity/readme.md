@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__solidity
 
-Typings are for version 5.0.6
+Typings are for version 5.7.0
 
 ## Library description:
 Solidity coder for non-standard (tight) packing.
@@ -10,10 +10,10 @@ Solidity coder for non-standard (tight) packing.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/solidity |
 | Keywords           | Ethereum, ethers |
-| # releases         | 26 |
-| # dependents       | 44 |
-| # downloads        | 1078921 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 2477432.0 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

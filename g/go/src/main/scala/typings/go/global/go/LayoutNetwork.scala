@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an empty network.
   */
-class LayoutNetwork ()
+open class LayoutNetwork ()
   extends typings.go.mod.LayoutNetwork

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchLoyaltyAccountsRequestLoyaltyAccountQuery")
 @js.native
-class SearchLoyaltyAccountsRequestLoyaltyAccountQuery () extends StObject {
+open class SearchLoyaltyAccountsRequestLoyaltyAccountQuery () extends StObject {
   
   /**
     * The set of customer IDs to use in the loyalty account search. This cannot be combined with `mappings`. Max: 30 customer IDs.

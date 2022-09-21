@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertPageBreakCommand")
 @js.native
-class InsertPageBreakCommand ()
+open class InsertPageBreakCommand ()
   extends StObject
      with typings.devexpressWeb.InsertPageBreakCommand {
   

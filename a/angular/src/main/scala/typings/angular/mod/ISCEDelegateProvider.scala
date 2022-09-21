@@ -13,15 +13,19 @@ trait ISCEDelegateProvider
   extends StObject
      with IServiceProvider {
   
-  def bannedResourceUrlList(): js.Array[js.Any] = js.native
-  def bannedResourceUrlList(bannedList: js.Array[js.Any]): Unit = js.native
+  def bannedResourceUrlList(): js.Array[Any] = js.native
+  def bannedResourceUrlList(bannedList: js.Array[Any]): Unit = js.native
   
-  def resourceUrlBlacklist(): js.Array[js.Any] = js.native
-  def resourceUrlBlacklist(bannedList: js.Array[js.Any]): Unit = js.native
+  /** @deprecated since 1.8.1 */
+  def resourceUrlBlacklist(): js.Array[Any] = js.native
+  /** @deprecated since 1.8.1 */
+  def resourceUrlBlacklist(bannedList: js.Array[Any]): Unit = js.native
   
-  def resourceUrlWhitelist(): js.Array[js.Any] = js.native
-  def resourceUrlWhitelist(trustedList: js.Array[js.Any]): Unit = js.native
+  /** @deprecated since 1.8.1 */
+  def resourceUrlWhitelist(): js.Array[Any] = js.native
+  /** @deprecated since 1.8.1 */
+  def resourceUrlWhitelist(trustedList: js.Array[Any]): Unit = js.native
   
-  def trustedResourceUrlList(): js.Array[js.Any] = js.native
-  def trustedResourceUrlList(trustedList: js.Array[js.Any]): Unit = js.native
+  def trustedResourceUrlList(): js.Array[Any] = js.native
+  def trustedResourceUrlList(trustedList: js.Array[Any]): Unit = js.native
 }

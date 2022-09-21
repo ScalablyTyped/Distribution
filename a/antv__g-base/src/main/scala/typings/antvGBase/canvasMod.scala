@@ -34,7 +34,7 @@ object canvasMod {
       * @param {number} width  宽度
       * @param {number} height 高度
       */
-    def changeSize(width: Double, height: Double): js.Any = js.native
+    def changeSize(width: Double, height: Double): Any = js.native
     @JSName("changeSize")
     def changeSize_Unit(width: Double, height: Double): Unit = js.native
     
@@ -53,7 +53,7 @@ object canvasMod {
     /**
       * 绘制
       */
-    def draw(): js.Any = js.native
+    def draw(): Any = js.native
     @JSName("draw")
     def draw_Unit(): Unit = js.native
     
@@ -135,7 +135,7 @@ object canvasMod {
       * 设置画布的 cursor 样式
       * @param {Cursor} cursor  cursor 样式
       */
-    def setCursor(cursor: Cursor): js.Any = js.native
+    def setCursor(cursor: Cursor): Any = js.native
     /**
       * 设置画布的 cursor 样式
       * @param {Cursor} cursor  cursor 样式

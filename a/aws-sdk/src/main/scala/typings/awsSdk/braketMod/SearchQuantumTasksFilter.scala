@@ -40,6 +40,6 @@ object SearchQuantumTasksFilter {
     
     inline def setValues(value: SearchQuantumTasksFilterValuesList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: String256*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String256*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

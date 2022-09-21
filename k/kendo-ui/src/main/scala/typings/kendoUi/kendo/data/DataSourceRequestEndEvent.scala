@@ -8,7 +8,7 @@ trait DataSourceRequestEndEvent
   extends StObject
      with DataSourceEvent {
   
-  var response: js.UndefOr[js.Any] = js.undefined
+  var response: js.UndefOr[Any] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -21,7 +21,7 @@ object DataSourceRequestEndEvent {
   
   extension [Self <: DataSourceRequestEndEvent](x: Self) {
     
-    inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     

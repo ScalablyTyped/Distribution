@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Removes the named range with the given ID from the spreadsheet.
-  */
 trait SchemaDeleteNamedRangeRequest extends StObject {
   
   /**
     * The ID of the named range to delete.
     */
-  var namedRangeId: js.UndefOr[String] = js.undefined
+  var namedRangeId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDeleteNamedRangeRequest {
   
@@ -24,6 +21,8 @@ object SchemaDeleteNamedRangeRequest {
   extension [Self <: SchemaDeleteNamedRangeRequest](x: Self) {
     
     inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
+    
+    inline def setNamedRangeIdNull: Self = StObject.set(x, "namedRangeId", null)
     
     inline def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
   }

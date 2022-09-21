@@ -14,34 +14,34 @@ object mod {
   
   @JSImport("react-typing-animation", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TypingProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TypingProps, js.Object, Any]
   object default {
     
     @JSImport("react-typing-animation", "default.Backspace")
     @js.native
-    class Backspace ()
-      extends Component[BackspaceProperties, js.Object, js.Any]
+    open class Backspace ()
+      extends Component[BackspaceProperties, js.Object, Any]
     
     @JSImport("react-typing-animation", "default.Delay")
     @js.native
-    class Delay ()
-      extends Component[DelayProperties, js.Object, js.Any]
+    open class Delay ()
+      extends Component[DelayProperties, js.Object, Any]
     
     @JSImport("react-typing-animation", "default.Reset")
     @js.native
-    class Reset ()
-      extends Component[ResetProperties, js.Object, js.Any]
+    open class Reset ()
+      extends Component[ResetProperties, js.Object, Any]
     
     @JSImport("react-typing-animation", "default.Speed")
     @js.native
-    class Speed ()
-      extends Component[SpeedProperties, js.Object, js.Any]
+    open class Speed ()
+      extends Component[SpeedProperties, js.Object, Any]
   }
   
   object Typing {
     
-    type Backspace = Component[BackspaceProperties, js.Object, js.Any]
+    type Backspace = Component[BackspaceProperties, js.Object, Any]
     
     trait BackspaceProperties extends StObject {
       
@@ -74,7 +74,7 @@ object mod {
       }
     }
     
-    type Delay = Component[DelayProperties, js.Object, js.Any]
+    type Delay = Component[DelayProperties, js.Object, Any]
     
     trait DelayProperties extends StObject {
       
@@ -93,7 +93,7 @@ object mod {
       }
     }
     
-    type Reset = Component[ResetProperties, js.Object, js.Any]
+    type Reset = Component[ResetProperties, js.Object, Any]
     
     trait ResetProperties extends StObject {
       
@@ -126,7 +126,7 @@ object mod {
       }
     }
     
-    type Speed = Component[SpeedProperties, js.Object, js.Any]
+    type Speed = Component[SpeedProperties, js.Object, Any]
     
     trait SpeedProperties extends StObject {
       
@@ -145,7 +145,7 @@ object mod {
       }
     }
   }
-  type Typing = Component[TypingProps, js.Object, js.Any]
+  type Typing = Component[TypingProps, js.Object, Any]
   
   trait TypingProps extends StObject {
     

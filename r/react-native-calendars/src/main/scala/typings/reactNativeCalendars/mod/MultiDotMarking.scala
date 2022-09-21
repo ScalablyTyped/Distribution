@@ -31,7 +31,7 @@ object MultiDotMarking {
     
     inline def setDots(value: js.Array[CalendarDot]): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
-    inline def setDotsVarargs(value: CalendarDot*): Self = StObject.set(x, "dots", js.Array(value :_*))
+    inline def setDotsVarargs(value: CalendarDot*): Self = StObject.set(x, "dots", js.Array(value*))
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     

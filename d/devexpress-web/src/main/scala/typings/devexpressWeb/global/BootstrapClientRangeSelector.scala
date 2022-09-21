@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientRangeSelector")
 @js.native
-class BootstrapClientRangeSelector ()
+open class BootstrapClientRangeSelector ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientRangeSelector {
   
@@ -86,7 +86,7 @@ class BootstrapClientRangeSelector ()
     * Gets the client data source instance.
     */
   /* CompleteClass */
-  override def GetDataSource(): js.Any = js.native
+  override def GetDataSource(): Any = js.native
   
   /* CompleteClass */
   override def GetEnabled(): Boolean = js.native
@@ -101,25 +101,25 @@ class BootstrapClientRangeSelector ()
     * Gets an instance of the widget.
     */
   /* CompleteClass */
-  override def GetInstance(): js.Any = js.native
+  override def GetInstance(): Any = js.native
   
   /**
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Gets the Range Selector's selected value range.
     */
   /* CompleteClass */
-  override def GetValue(): js.Array[js.Any] = js.native
+  override def GetValue(): js.Array[Any] = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -192,7 +192,7 @@ class BootstrapClientRangeSelector ()
     * @param dataSource A DevExtreme DataSource object.
     */
   /* CompleteClass */
-  override def SetDataSource(dataSource: js.Any): Unit = js.native
+  override def SetDataSource(dataSource: Any): Unit = js.native
   
   /* CompleteClass */
   override def SetEnabled(enabled: Boolean): Unit = js.native
@@ -209,14 +209,14 @@ class BootstrapClientRangeSelector ()
     * @param options An object containing key-value pairs specifying new option values.
     */
   /* CompleteClass */
-  override def SetOptions(options: js.Any): Unit = js.native
+  override def SetOptions(options: Any): Unit = js.native
   
   /**
     * Gets the Range Selector's selected value range.
     * @param value An array containing the value range.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Array[js.Any]): Unit = js.native
+  override def SetValue(value: js.Array[Any]): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.

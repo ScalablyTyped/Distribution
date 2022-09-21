@@ -29,7 +29,7 @@ object OperationExpression {
     
     inline def setArgs(value: js.Array[Expression]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: Expression*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Expression*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

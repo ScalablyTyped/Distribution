@@ -10,7 +10,7 @@ trait IgPivotViewDataSelectorPanel
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Determines if the panel containing the igPivotDataSelector will initially collapsed.
@@ -25,7 +25,7 @@ trait IgPivotViewDataSelectorPanel
   /**
     * Determines the position of the data selector panel inside the igPivotView widget.
     */
-  var location: js.UndefOr[js.Any] = js.undefined
+  var location: js.UndefOr[Any] = js.undefined
   
   /**
     * Determines if the panel containing the igPivotDataSelector will be resizable.
@@ -59,7 +59,7 @@ object IgPivotViewDataSelectorPanel {
     
     inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
-    inline def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     

@@ -22,7 +22,7 @@ trait ImageArcGISRestOptions extends StObject {
   
   var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var params: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var projection: ProjectionLike
   
@@ -45,7 +45,7 @@ object ImageArcGISRestOptions {
     
     inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
-    inline def setAttributionsVarargs(value: Attribution*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+    inline def setAttributionsVarargs(value: Attribution*): Self = StObject.set(x, "attributions", js.Array(value*))
     
     inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object ImageArcGISRestOptions {
     
     inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
-    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
@@ -79,7 +79,7 @@ object ImageArcGISRestOptions {
     
     inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
     
-    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

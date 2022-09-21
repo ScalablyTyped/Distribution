@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FilterRowsData[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] extends StObject {
   
-  var cellsById: StringDictionary[DataTableCell[js.Any, DataTableHeader[String]]]
+  var cellsById: StringDictionary[DataTableCell[Any, DataTableHeader[String]]]
   
   var headers: js.Array[H]
   
@@ -20,7 +20,7 @@ trait FilterRowsData[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[St
 object FilterRowsData {
   
   inline def apply[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */](
-    cellsById: StringDictionary[DataTableCell[js.Any, DataTableHeader[String]]],
+    cellsById: StringDictionary[DataTableCell[Any, DataTableHeader[String]]],
     headers: js.Array[H],
     inputValue: String,
     rowIds: js.Array[
@@ -33,11 +33,11 @@ object FilterRowsData {
   
   extension [Self <: FilterRowsData[?, ?], R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */](x: Self & (FilterRowsData[R, H])) {
     
-    inline def setCellsById(value: StringDictionary[DataTableCell[js.Any, DataTableHeader[String]]]): Self = StObject.set(x, "cellsById", value.asInstanceOf[js.Any])
+    inline def setCellsById(value: StringDictionary[DataTableCell[Any, DataTableHeader[String]]]): Self = StObject.set(x, "cellsById", value.asInstanceOf[js.Any])
     
     inline def setHeaders(value: js.Array[H]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setHeadersVarargs(value: H*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: H*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
@@ -47,6 +47,6 @@ object FilterRowsData {
         ]
     ): Self = StObject.set(x, "rowIds", value.asInstanceOf[js.Any])
     
-    inline def setRowIdsVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: R['id'] */ js.Any)*): Self = StObject.set(x, "rowIds", js.Array(value :_*))
+    inline def setRowIdsVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: R['id'] */ js.Any)*): Self = StObject.set(x, "rowIds", js.Array(value*))
   }
 }

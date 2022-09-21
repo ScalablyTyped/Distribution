@@ -3,6 +3,7 @@ package typings.antd
 import org.scalablytyped.runtime.Shortcut
 import typings.antd.anon.PickAntdIconPropschildren
 import typings.react.mod.CSSProperties
+import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
@@ -79,6 +80,8 @@ object resultMod extends Shortcut {
   
   trait ResultProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var extra: js.UndefOr[ReactNode] = js.undefined
@@ -103,6 +106,10 @@ object resultMod extends Shortcut {
     }
     
     extension [Self <: ResultProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -152,11 +159,11 @@ object resultMod extends Shortcut {
     extends StObject
        with FunctionComponent[ResultProps] {
     
-    var PRESENTED_IMAGE_403: ReactNode = js.native
+    var PRESENTED_IMAGE_403: FC[js.Object] = js.native
     
-    var PRESENTED_IMAGE_404: ReactNode = js.native
+    var PRESENTED_IMAGE_404: FC[js.Object] = js.native
     
-    var PRESENTED_IMAGE_500: ReactNode = js.native
+    var PRESENTED_IMAGE_500: FC[js.Object] = js.native
   }
   
   type _To = ResultType

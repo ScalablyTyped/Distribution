@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.EntityState")
 @js.native
-class EntityState () extends StObject
+open class EntityState () extends StObject

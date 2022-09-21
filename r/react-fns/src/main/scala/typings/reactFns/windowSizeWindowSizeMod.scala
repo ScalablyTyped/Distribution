@@ -11,14 +11,13 @@ object windowSizeWindowSizeMod {
   
   @JSImport("react-fns/dist/WindowSize/WindowSize", "WindowSize")
   @js.native
-  class WindowSize protected ()
-    extends Component[WindowSizeConfig & SharedRenderProps[WindowSizeProps], WindowSizeProps, js.Any] {
+  open class WindowSize protected () extends Component[WindowSizeConfig & SharedRenderProps[WindowSizeProps], WindowSizeProps, Any] {
     def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: js.Any) = this()
+    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MWindowSize(): Unit = js.native

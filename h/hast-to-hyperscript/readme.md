@@ -1,7 +1,7 @@
 
 # Scala.js typings for hast-to-hyperscript
 
-Typings are for version 9.0.0
+Typings are for version 10.0.1
 
 ## Library description:
 hast utility to transform to something else (react, vue, etc) through a hyperscript DSL
@@ -10,10 +10,10 @@ hast utility to transform to something else (react, vue, etc) through a hyperscr
 | ------------------ | :-------------: |
 | Full name          | hast-to-hyperscript |
 | Keywords           | unist, hast, hast-util, util, utility, html, change, transform, rehype, vdom, virtual, dom, hyperscript, dsl |
-| # releases         | 11 |
-| # dependents       | 17 |
-| # downloads        | 25355203 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5528778333333334E7 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/hast-to-hyperscript#readme)

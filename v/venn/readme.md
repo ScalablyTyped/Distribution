@@ -10,10 +10,10 @@ fluent API library for set operations
 | ------------------ | :-------------: |
 | Full name          | venn |
 | Keywords           | venn, set, intersect, union |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 5007 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 575.0 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/bitoiu/venn#readme)

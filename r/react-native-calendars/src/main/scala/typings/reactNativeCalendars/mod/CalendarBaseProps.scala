@@ -1,13 +1,12 @@
 package typings.reactNativeCalendars.mod
 
 import typings.react.mod.Component
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.SFC
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.left
 import typings.reactNativeCalendars.reactNativeCalendarsStrings.right
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +19,14 @@ trait CalendarBaseProps extends StObject {
   var current: js.UndefOr[TCalendarDate] = js.undefined
   
   /**
+    * Allow rendering of a totally custom header
+    */
+  var customHeader: js.UndefOr[js.Function1[/* props */ HeaderComponentProps, ReactNode]] = js.undefined
+  
+  /**
     *  Provide custom day rendering component.
     */
-  var dayComponent: js.UndefOr[(Component[DayComponentProps, js.Object, js.Any]) | SFC[DayComponentProps]] = js.undefined
+  var dayComponent: js.UndefOr[(Component[DayComponentProps, js.Object, Any]) | FC[DayComponentProps]] = js.undefined
   
   /**
     *  Disable left arrow. Default = false
@@ -125,10 +129,10 @@ trait CalendarBaseProps extends StObject {
     */
   var renderArrow: js.UndefOr[js.Function1[/* direction */ left | right, ReactNode]] = js.undefined
   
-  /*
+  /**
     *  Replace default month and year title with custom one. the function receive a date as parameter.
     */
-  var renderHeader: js.UndefOr[js.Function1[/* date */ Date, ReactNode]] = js.undefined
+  var renderHeader: js.UndefOr[js.Function1[/* date */ js.Date, ReactNode]] = js.undefined
   
   /**
     *  Show week numbers to the left. Default = false
@@ -163,7 +167,11 @@ object CalendarBaseProps {
     
     inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
-    inline def setDayComponent(value: (Component[DayComponentProps, js.Object, js.Any]) | SFC[DayComponentProps]): Self = StObject.set(x, "dayComponent", value.asInstanceOf[js.Any])
+    inline def setCustomHeader(value: /* props */ HeaderComponentProps => ReactNode): Self = StObject.set(x, "customHeader", js.Any.fromFunction1(value))
+    
+    inline def setCustomHeaderUndefined: Self = StObject.set(x, "customHeader", js.undefined)
+    
+    inline def setDayComponent(value: (Component[DayComponentProps, js.Object, Any]) | FC[DayComponentProps]): Self = StObject.set(x, "dayComponent", value.asInstanceOf[js.Any])
     
     inline def setDayComponentUndefined: Self = StObject.set(x, "dayComponent", js.undefined)
     
@@ -249,7 +257,7 @@ object CalendarBaseProps {
     
     inline def setRenderArrowUndefined: Self = StObject.set(x, "renderArrow", js.undefined)
     
-    inline def setRenderHeader(value: /* date */ Date => ReactNode): Self = StObject.set(x, "renderHeader", js.Any.fromFunction1(value))
+    inline def setRenderHeader(value: /* date */ js.Date => ReactNode): Self = StObject.set(x, "renderHeader", js.Any.fromFunction1(value))
     
     inline def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
     

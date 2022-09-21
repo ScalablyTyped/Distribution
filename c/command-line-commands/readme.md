@@ -10,15 +10,12 @@ Add a git-like command interface to your app.
 | ------------------ | :-------------: |
 | Full name          | command-line-commands |
 | Keywords           | argv, parse, argument, args, option, parser, parsing, cli, command, commands, line |
-| # releases         | 4 |
-| # dependents       | 86 |
-| # downloads        | 1896020 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 81481.33333333333 |
+| # stars            | 40.0 |
 
 ## Links
-- [Homepage](https://github.com/75lb/command-line-commands#readme)
-- [Bugs](https://github.com/75lb/command-line-commands/issues)
-- [Repository](https://github.com/75lb/command-line-commands)
 - [Npm](https://www.npmjs.com/package/command-line-commands)
     
 

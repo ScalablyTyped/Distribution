@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Shape")
 @js.native
-class Shape ()
+open class Shape ()
   extends StObject
      with typings.easeljs.createjs.Shape {
   def this(graphics: typings.easeljs.createjs.Graphics) = this()

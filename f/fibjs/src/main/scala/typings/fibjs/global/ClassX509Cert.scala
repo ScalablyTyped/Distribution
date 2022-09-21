@@ -17,6 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassX509Cert ()
+open class ClassX509Cert ()
   extends StObject
      with typings.fibjs.ClassX509Cert

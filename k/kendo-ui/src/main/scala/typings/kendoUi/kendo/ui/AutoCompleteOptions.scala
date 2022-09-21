@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AutoCompleteOptions extends StObject {
+trait AutoCompleteOptions
+  extends StObject
+     with AllEditorOptions {
   
   var animation: js.UndefOr[Boolean | AutoCompleteAnimation] = js.undefined
   
@@ -19,7 +21,7 @@ trait AutoCompleteOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ AutoCompleteDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var dataTextField: js.UndefOr[String] = js.undefined
   
@@ -28,6 +30,8 @@ trait AutoCompleteOptions extends StObject {
   var enable: js.UndefOr[Boolean] = js.undefined
   
   var enforceMinLength: js.UndefOr[Boolean] = js.undefined
+  
+  var fillMode: js.UndefOr[String] = js.undefined
   
   var filter: js.UndefOr[String] = js.undefined
   
@@ -57,11 +61,15 @@ trait AutoCompleteOptions extends StObject {
   
   var placeholder: js.UndefOr[String] = js.undefined
   
-  var popup: js.UndefOr[js.Any] = js.undefined
+  var popup: js.UndefOr[Any] = js.undefined
+  
+  var rounded: js.UndefOr[String] = js.undefined
   
   var select: js.UndefOr[js.Function1[/* e */ AutoCompleteSelectEvent, Unit]] = js.undefined
   
-  var separator: js.UndefOr[String | js.Any] = js.undefined
+  var separator: js.UndefOr[String | Any] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var suggest: js.UndefOr[Boolean] = js.undefined
   
@@ -106,7 +114,7 @@ object AutoCompleteOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -125,6 +133,10 @@ object AutoCompleteOptions {
     inline def setEnforceMinLength(value: Boolean): Self = StObject.set(x, "enforceMinLength", value.asInstanceOf[js.Any])
     
     inline def setEnforceMinLengthUndefined: Self = StObject.set(x, "enforceMinLength", js.undefined)
+    
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
@@ -182,17 +194,25 @@ object AutoCompleteOptions {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setPopup(value: js.Any): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: Any): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+    
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
     
     inline def setSelect(value: /* e */ AutoCompleteSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    inline def setSeparator(value: String | js.Any): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String | Any): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setSuggest(value: Boolean): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
     

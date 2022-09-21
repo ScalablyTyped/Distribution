@@ -23,14 +23,14 @@ abstract class MediaStreamSamplePropertySet ()
     * @return The iterator. The current position of the iterator is index 0, or the end of the property set if the property set is empty.
     */
   /* CompleteClass */
-  override def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+  override def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
   
   /**
     * Gets an immutable view of the property set.
     * @return The immutable view.
     */
   /* CompleteClass */
-  override def getView(): IMapView[String, js.Any] = js.native
+  override def getView(): IMapView[String, Any] = js.native
   
   /**
     * Indicates if the specified key exists in the property set.
@@ -47,7 +47,7 @@ abstract class MediaStreamSamplePropertySet ()
     * @return True if the method replaces a value that already exists for the key; false if this is a new key.
     */
   /* CompleteClass */
-  override def insert(key: String, value: js.Any): Boolean = js.native
+  override def insert(key: String, value: Any): Boolean = js.native
   
   /**
     * Retrieves the value for the specified key.
@@ -55,7 +55,7 @@ abstract class MediaStreamSamplePropertySet ()
     * @return The value, if an item with the specified key exists; otherwise, null.
     */
   /* CompleteClass */
-  override def lookup(key: String): js.Any = js.native
+  override def lookup(key: String): Any = js.native
   
   /**
     * Removes an item from the property set.

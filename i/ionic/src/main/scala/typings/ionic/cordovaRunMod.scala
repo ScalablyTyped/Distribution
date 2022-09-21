@@ -16,7 +16,7 @@ object cordovaRunMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/cordova/run", "RunCommand")
   @js.native
-  class RunCommand protected () extends CordovaCommand {
+  open class RunCommand protected () extends CordovaCommand {
     def this(namespace: INamespace) = this()
     
     /* protected */ def checkNativeRun(): js.Promise[Unit] = js.native

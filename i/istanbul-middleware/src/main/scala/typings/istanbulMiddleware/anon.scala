@@ -1,11 +1,10 @@
 package typings.istanbulMiddleware
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.istanbulMiddleware.mod.ClientMatcher
 import typings.istanbulMiddleware.mod.PathTransformer
 import typings.istanbulMiddleware.mod.PostLoadHookFn
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,11 +28,27 @@ object anon {
     
     extension [Self <: Matcher](x: Self) {
       
-      inline def setMatcher(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction1(value))
+      inline def setMatcher(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => Boolean
+      ): Self = StObject.set(x, "matcher", js.Any.fromFunction1(value))
       
       inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
       
-      inline def setPathTransformer(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "pathTransformer", js.Any.fromFunction1(value))
+      inline def setPathTransformer(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => String
+      ): Self = StObject.set(x, "pathTransformer", js.Any.fromFunction1(value))
       
       inline def setPathTransformerUndefined: Self = StObject.set(x, "pathTransformer", js.undefined)
       
@@ -59,7 +74,7 @@ object anon {
     extension [Self <: PostLoadHook](x: Self) {
       
       inline def setPostLoadHook(
-        value: (/* matcherfn */ typings.istanbulMiddleware.mod.Matcher, /* transformer */ js.Any, /* verbose */ Boolean) => PostLoadHookFn
+        value: (/* matcherfn */ typings.istanbulMiddleware.mod.Matcher, /* transformer */ Any, /* verbose */ Boolean) => PostLoadHookFn
       ): Self = StObject.set(x, "postLoadHook", js.Any.fromFunction3(value))
       
       inline def setPostLoadHookUndefined: Self = StObject.set(x, "postLoadHook", js.undefined)

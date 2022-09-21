@@ -10,10 +10,10 @@ The lodash method `_.assignIn` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.assignin |
 | Keywords           | lodash-modularized, assignin |
-| # releases         | 0 |
-| # dependents       | 65 |
-| # downloads        | 56203647 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5868418.666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

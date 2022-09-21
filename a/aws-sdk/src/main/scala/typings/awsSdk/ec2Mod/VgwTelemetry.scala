@@ -19,7 +19,7 @@ trait VgwTelemetry extends StObject {
   /**
     * The date and time of the last change in status.
     */
-  var LastStatusChange: js.UndefOr[DateTime] = js.undefined
+  var LastStatusChange: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Internet-routable IP address of the virtual private gateway's outside interface.
@@ -53,7 +53,7 @@ object VgwTelemetry {
     
     inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    inline def setLastStatusChange(value: DateTime): Self = StObject.set(x, "LastStatusChange", value.asInstanceOf[js.Any])
+    inline def setLastStatusChange(value: js.Date): Self = StObject.set(x, "LastStatusChange", value.asInstanceOf[js.Any])
     
     inline def setLastStatusChangeUndefined: Self = StObject.set(x, "LastStatusChange", js.undefined)
     

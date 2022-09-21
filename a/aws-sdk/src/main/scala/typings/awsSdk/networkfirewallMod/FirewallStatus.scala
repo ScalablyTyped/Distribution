@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FirewallStatus extends StObject {
   
   /**
+    * Describes the capacity usage of the resources contained in a firewall's reference sets. Network Firewall calclulates the capacity usage by taking an aggregated count of all of the resources used by all of the reference sets in a firewall.
+    */
+  var CapacityUsageSummary: js.UndefOr[typings.awsSdk.networkfirewallMod.CapacityUsageSummary] = js.undefined
+  
+  /**
     * The configuration sync state for the firewall. This summarizes the sync states reported in the Config settings for all of the Availability Zones where you have configured the firewall.  When you create a firewall or update its configuration, for example by adding a rule group to its firewall policy, Network Firewall distributes the configuration changes to all zones where the firewall is in use. This summary indicates whether the configuration changes have been applied everywhere.  This status must be IN_SYNC for the firewall to be ready for use, but it doesn't indicate that the firewall is ready. The Status setting indicates firewall readiness.
     */
   var ConfigurationSyncStateSummary: ConfigurationSyncState
@@ -29,6 +34,10 @@ object FirewallStatus {
   }
   
   extension [Self <: FirewallStatus](x: Self) {
+    
+    inline def setCapacityUsageSummary(value: CapacityUsageSummary): Self = StObject.set(x, "CapacityUsageSummary", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityUsageSummaryUndefined: Self = StObject.set(x, "CapacityUsageSummary", js.undefined)
     
     inline def setConfigurationSyncStateSummary(value: ConfigurationSyncState): Self = StObject.set(x, "ConfigurationSyncStateSummary", value.asInstanceOf[js.Any])
     

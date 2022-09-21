@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.CanvasTile")
 @js.native
-class CanvasTile protected ()
+open class CanvasTile protected ()
   extends StObject
      with typings.navermaps.naver.maps.Tile {
   def this(canvasTileOptions: CanvasTileOptions) = this()

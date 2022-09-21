@@ -90,13 +90,13 @@ object DescribeAlarmsInputwaiter {
     
     inline def setAlarmNamesUndefined: Self = StObject.set(x, "AlarmNames", js.undefined)
     
-    inline def setAlarmNamesVarargs(value: AlarmName*): Self = StObject.set(x, "AlarmNames", js.Array(value :_*))
+    inline def setAlarmNamesVarargs(value: AlarmName*): Self = StObject.set(x, "AlarmNames", js.Array(value*))
     
     inline def setAlarmTypes(value: AlarmTypes): Self = StObject.set(x, "AlarmTypes", value.asInstanceOf[js.Any])
     
     inline def setAlarmTypesUndefined: Self = StObject.set(x, "AlarmTypes", js.undefined)
     
-    inline def setAlarmTypesVarargs(value: AlarmType*): Self = StObject.set(x, "AlarmTypes", js.Array(value :_*))
+    inline def setAlarmTypesVarargs(value: AlarmType*): Self = StObject.set(x, "AlarmTypes", js.Array(value*))
     
     inline def setChildrenOfAlarmName(value: AlarmName): Self = StObject.set(x, "ChildrenOfAlarmName", value.asInstanceOf[js.Any])
     

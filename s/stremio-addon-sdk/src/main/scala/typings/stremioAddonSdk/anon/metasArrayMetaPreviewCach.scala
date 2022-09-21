@@ -41,7 +41,7 @@ object metasArrayMetaPreviewCach {
     
     inline def setMetas(value: js.Array[MetaPreview]): Self = StObject.set(x, "metas", value.asInstanceOf[js.Any])
     
-    inline def setMetasVarargs(value: MetaPreview*): Self = StObject.set(x, "metas", js.Array(value :_*))
+    inline def setMetasVarargs(value: MetaPreview*): Self = StObject.set(x, "metas", js.Array(value*))
     
     inline def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
     

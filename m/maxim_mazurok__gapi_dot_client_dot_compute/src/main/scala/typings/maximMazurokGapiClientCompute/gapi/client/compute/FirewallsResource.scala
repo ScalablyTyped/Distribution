@@ -1,11 +1,11 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientCompute.anon.AccesstokenAltCallback
 import typings.maximMazurokGapiClientCompute.anon.FieldsFirewall
-import typings.maximMazurokGapiClientCompute.anon.FieldsKey
 import typings.maximMazurokGapiClientCompute.anon.FirewallKey
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
-import typings.maximMazurokGapiClientCompute.anon.OauthtokenPrettyPrintProject
+import typings.maximMazurokGapiClientCompute.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +21,9 @@ trait FirewallsResource extends StObject {
   def get(): Request[Firewall] = js.native
   def get(request: FieldsFirewall): Request[Firewall] = js.native
   
-  def insert(request: FieldsKey, body: Firewall): Request[Operation] = js.native
   /** Creates a firewall rule in the specified project using the data included in the request. */
-  def insert(request: OauthtokenPrettyPrintProject): Request[Operation] = js.native
+  def insert(request: AccesstokenAltCallback): Request[Operation] = js.native
+  def insert(request: Xgafv, body: Firewall): Request[Operation] = js.native
   
   /** Retrieves the list of firewall rules available to the specified project. */
   def list(): Request[FirewallList] = js.native

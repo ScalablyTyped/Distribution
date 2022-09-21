@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "eth-block-tracker" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "eth-block-tracker" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

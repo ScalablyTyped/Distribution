@@ -17,6 +17,11 @@ trait ComparedFace extends StObject {
   var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
+    *  The emotions that appear to be expressed on the face, and the confidence level in the determination. Valid values include "Happy", "Sad", "Angry", "Confused", "Disgusted", "Surprised", "Calm", "Unknown", and "Fear". 
+    */
+  var Emotions: js.UndefOr[typings.awsSdk.rekognitionMod.Emotions] = js.undefined
+  
+  /**
     * An array of facial landmarks.
     */
   var Landmarks: js.UndefOr[typings.awsSdk.rekognitionMod.Landmarks] = js.undefined
@@ -30,6 +35,11 @@ trait ComparedFace extends StObject {
     * Identifies face image brightness and sharpness. 
     */
   var Quality: js.UndefOr[ImageQuality] = js.undefined
+  
+  /**
+    *  Indicates whether or not the face is smiling, and the confidence level in the determination. 
+    */
+  var Smile: js.UndefOr[typings.awsSdk.rekognitionMod.Smile] = js.undefined
 }
 object ComparedFace {
   
@@ -48,11 +58,17 @@ object ComparedFace {
     
     inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
+    inline def setEmotions(value: Emotions): Self = StObject.set(x, "Emotions", value.asInstanceOf[js.Any])
+    
+    inline def setEmotionsUndefined: Self = StObject.set(x, "Emotions", js.undefined)
+    
+    inline def setEmotionsVarargs(value: Emotion*): Self = StObject.set(x, "Emotions", js.Array(value*))
+    
     inline def setLandmarks(value: Landmarks): Self = StObject.set(x, "Landmarks", value.asInstanceOf[js.Any])
     
     inline def setLandmarksUndefined: Self = StObject.set(x, "Landmarks", js.undefined)
     
-    inline def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "Landmarks", js.Array(value :_*))
+    inline def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "Landmarks", js.Array(value*))
     
     inline def setPose(value: Pose): Self = StObject.set(x, "Pose", value.asInstanceOf[js.Any])
     
@@ -61,5 +77,9 @@ object ComparedFace {
     inline def setQuality(value: ImageQuality): Self = StObject.set(x, "Quality", value.asInstanceOf[js.Any])
     
     inline def setQualityUndefined: Self = StObject.set(x, "Quality", js.undefined)
+    
+    inline def setSmile(value: Smile): Self = StObject.set(x, "Smile", value.asInstanceOf[js.Any])
+    
+    inline def setSmileUndefined: Self = StObject.set(x, "Smile", js.undefined)
   }
 }

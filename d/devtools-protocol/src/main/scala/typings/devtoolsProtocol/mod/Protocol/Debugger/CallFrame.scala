@@ -13,6 +13,14 @@ trait CallFrame extends StObject {
   var callFrameId: CallFrameId
   
   /**
+    * Valid only while the VM is paused and indicates whether this frame
+    * can be restarted or not. Note that a `true` value here does not
+    * guarantee that Debugger#restartFrame with this CallFrameId will be
+    * successful, but it is very likely.
+    */
+  var canBeRestarted: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Location in the source code.
     */
   var functionLocation: js.UndefOr[Location] = js.undefined
@@ -44,6 +52,8 @@ trait CallFrame extends StObject {
   
   /**
     * JavaScript script name or url.
+    * Deprecated in favor of using the `location.scriptId` to resolve the URL via a previously
+    * sent `Debugger.scriptParsed` event.
     */
   var url: String
 }
@@ -66,6 +76,10 @@ object CallFrame {
     
     inline def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     
+    inline def setCanBeRestarted(value: Boolean): Self = StObject.set(x, "canBeRestarted", value.asInstanceOf[js.Any])
+    
+    inline def setCanBeRestartedUndefined: Self = StObject.set(x, "canBeRestarted", js.undefined)
+    
     inline def setFunctionLocation(value: Location): Self = StObject.set(x, "functionLocation", value.asInstanceOf[js.Any])
     
     inline def setFunctionLocationUndefined: Self = StObject.set(x, "functionLocation", js.undefined)
@@ -80,7 +94,7 @@ object CallFrame {
     
     inline def setScopeChain(value: js.Array[Scope]): Self = StObject.set(x, "scopeChain", value.asInstanceOf[js.Any])
     
-    inline def setScopeChainVarargs(value: Scope*): Self = StObject.set(x, "scopeChain", js.Array(value :_*))
+    inline def setScopeChainVarargs(value: Scope*): Self = StObject.set(x, "scopeChain", js.Array(value*))
     
     inline def setThis(value: RemoteObject): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
     

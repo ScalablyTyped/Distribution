@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object idbManagerMod {
   
-  @JSImport("@firebase/messaging/dist/helpers/idb-manager", JSImport.Namespace)
+  @JSImport("@firebase/messaging/dist/esm/src/internals/idb-manager", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@firebase/messaging/dist/helpers/idb-manager", "DATABASE_NAME")
+  @JSImport("@firebase/messaging/dist/esm/src/internals/idb-manager", "DATABASE_NAME")
   @js.native
   val DATABASE_NAME: /* "firebase-messaging-database" */ String = js.native
   

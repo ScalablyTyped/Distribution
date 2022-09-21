@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FMS extends Service {
   
   /**
-    * Sets the AWS Firewall Manager administrator account. AWS Firewall Manager must be associated with the master account of your AWS organization or associated with a member account that has the appropriate permissions. If the account ID that you submit is not an AWS Organizations master account, AWS Firewall Manager will set the appropriate permissions for the given member account. The account that you associate with AWS Firewall Manager is called the AWS Firewall Manager administrator account. 
+    * Sets the Firewall Manager administrator account. The account must be a member of the organization in Organizations whose resources you want to protect. Firewall Manager sets the permissions that allow the account to administer your Firewall Manager policies. The account that you associate with Firewall Manager is called the Firewall Manager administrator account. 
     */
   def associateAdminAccount(): Request[js.Object, AWSError] = js.native
   def associateAdminAccount(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Sets the AWS Firewall Manager administrator account. AWS Firewall Manager must be associated with the master account of your AWS organization or associated with a member account that has the appropriate permissions. If the account ID that you submit is not an AWS Organizations master account, AWS Firewall Manager will set the appropriate permissions for the given member account. The account that you associate with AWS Firewall Manager is called the AWS Firewall Manager administrator account. 
+    * Sets the Firewall Manager administrator account. The account must be a member of the organization in Organizations whose resources you want to protect. Firewall Manager sets the permissions that allow the account to administer your Firewall Manager policies. The account that you associate with Firewall Manager is called the Firewall Manager administrator account. 
     */
   def associateAdminAccount(params: AssociateAdminAccountRequest): Request[js.Object, AWSError] = js.native
   def associateAdminAccount(
@@ -25,16 +25,30 @@ trait FMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   
+  /**
+    * Sets the Firewall Manager policy administrator as a tenant administrator of a third-party firewall service. A tenant is an instance of the third-party firewall service that's associated with your Amazon Web Services customer account.
+    */
+  def associateThirdPartyFirewall(): Request[AssociateThirdPartyFirewallResponse, AWSError] = js.native
+  def associateThirdPartyFirewall(callback: js.Function2[/* err */ AWSError, /* data */ AssociateThirdPartyFirewallResponse, Unit]): Request[AssociateThirdPartyFirewallResponse, AWSError] = js.native
+  /**
+    * Sets the Firewall Manager policy administrator as a tenant administrator of a third-party firewall service. A tenant is an instance of the third-party firewall service that's associated with your Amazon Web Services customer account.
+    */
+  def associateThirdPartyFirewall(params: AssociateThirdPartyFirewallRequest): Request[AssociateThirdPartyFirewallResponse, AWSError] = js.native
+  def associateThirdPartyFirewall(
+    params: AssociateThirdPartyFirewallRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateThirdPartyFirewallResponse, Unit]
+  ): Request[AssociateThirdPartyFirewallResponse, AWSError] = js.native
+  
   @JSName("config")
   var config_FMS: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Permanently deletes an AWS Firewall Manager applications list.
+    * Permanently deletes an Firewall Manager applications list.
     */
   def deleteAppsList(): Request[js.Object, AWSError] = js.native
   def deleteAppsList(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Permanently deletes an AWS Firewall Manager applications list.
+    * Permanently deletes an Firewall Manager applications list.
     */
   def deleteAppsList(params: DeleteAppsListRequest): Request[js.Object, AWSError] = js.native
   def deleteAppsList(
@@ -43,12 +57,12 @@ trait FMS extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes an AWS Firewall Manager association with the IAM role and the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
+    * Deletes an Firewall Manager association with the IAM role and the Amazon Simple Notification Service (SNS) topic that is used to record Firewall Manager SNS logs.
     */
   def deleteNotificationChannel(): Request[js.Object, AWSError] = js.native
   def deleteNotificationChannel(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes an AWS Firewall Manager association with the IAM role and the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
+    * Deletes an Firewall Manager association with the IAM role and the Amazon Simple Notification Service (SNS) topic that is used to record Firewall Manager SNS logs.
     */
   def deleteNotificationChannel(params: DeleteNotificationChannelRequest): Request[js.Object, AWSError] = js.native
   def deleteNotificationChannel(
@@ -57,12 +71,12 @@ trait FMS extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Permanently deletes an AWS Firewall Manager policy. 
+    * Permanently deletes an Firewall Manager policy. 
     */
   def deletePolicy(): Request[js.Object, AWSError] = js.native
   def deletePolicy(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Permanently deletes an AWS Firewall Manager policy. 
+    * Permanently deletes an Firewall Manager policy. 
     */
   def deletePolicy(params: DeletePolicyRequest): Request[js.Object, AWSError] = js.native
   def deletePolicy(
@@ -71,12 +85,12 @@ trait FMS extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Permanently deletes an AWS Firewall Manager protocols list.
+    * Permanently deletes an Firewall Manager protocols list.
     */
   def deleteProtocolsList(): Request[js.Object, AWSError] = js.native
   def deleteProtocolsList(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Permanently deletes an AWS Firewall Manager protocols list.
+    * Permanently deletes an Firewall Manager protocols list.
     */
   def deleteProtocolsList(params: DeleteProtocolsListRequest): Request[js.Object, AWSError] = js.native
   def deleteProtocolsList(
@@ -85,12 +99,12 @@ trait FMS extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Disassociates the account that has been set as the AWS Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request.
+    * Disassociates the account that has been set as the Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request.
     */
   def disassociateAdminAccount(): Request[js.Object, AWSError] = js.native
   def disassociateAdminAccount(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Disassociates the account that has been set as the AWS Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request.
+    * Disassociates the account that has been set as the Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request.
     */
   def disassociateAdminAccount(params: DisassociateAdminAccountRequest): Request[js.Object, AWSError] = js.native
   def disassociateAdminAccount(
@@ -99,12 +113,28 @@ trait FMS extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Returns the AWS Organizations master account that is associated with AWS Firewall Manager as the AWS Firewall Manager administrator.
+    * Disassociates a Firewall Manager policy administrator from a third-party firewall tenant. When you call DisassociateThirdPartyFirewall, the third-party firewall vendor deletes all of the firewalls that are associated with the account.
+    */
+  def disassociateThirdPartyFirewall(): Request[DisassociateThirdPartyFirewallResponse, AWSError] = js.native
+  def disassociateThirdPartyFirewall(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateThirdPartyFirewallResponse, Unit]
+  ): Request[DisassociateThirdPartyFirewallResponse, AWSError] = js.native
+  /**
+    * Disassociates a Firewall Manager policy administrator from a third-party firewall tenant. When you call DisassociateThirdPartyFirewall, the third-party firewall vendor deletes all of the firewalls that are associated with the account.
+    */
+  def disassociateThirdPartyFirewall(params: DisassociateThirdPartyFirewallRequest): Request[DisassociateThirdPartyFirewallResponse, AWSError] = js.native
+  def disassociateThirdPartyFirewall(
+    params: DisassociateThirdPartyFirewallRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateThirdPartyFirewallResponse, Unit]
+  ): Request[DisassociateThirdPartyFirewallResponse, AWSError] = js.native
+  
+  /**
+    * Returns the Organizations account that is associated with Firewall Manager as the Firewall Manager administrator.
     */
   def getAdminAccount(): Request[GetAdminAccountResponse, AWSError] = js.native
   def getAdminAccount(callback: js.Function2[/* err */ AWSError, /* data */ GetAdminAccountResponse, Unit]): Request[GetAdminAccountResponse, AWSError] = js.native
   /**
-    * Returns the AWS Organizations master account that is associated with AWS Firewall Manager as the AWS Firewall Manager administrator.
+    * Returns the Organizations account that is associated with Firewall Manager as the Firewall Manager administrator.
     */
   def getAdminAccount(params: GetAdminAccountRequest): Request[GetAdminAccountResponse, AWSError] = js.native
   def getAdminAccount(
@@ -113,12 +143,12 @@ trait FMS extends Service {
   ): Request[GetAdminAccountResponse, AWSError] = js.native
   
   /**
-    * Returns information about the specified AWS Firewall Manager applications list.
+    * Returns information about the specified Firewall Manager applications list.
     */
   def getAppsList(): Request[GetAppsListResponse, AWSError] = js.native
   def getAppsList(callback: js.Function2[/* err */ AWSError, /* data */ GetAppsListResponse, Unit]): Request[GetAppsListResponse, AWSError] = js.native
   /**
-    * Returns information about the specified AWS Firewall Manager applications list.
+    * Returns information about the specified Firewall Manager applications list.
     */
   def getAppsList(params: GetAppsListRequest): Request[GetAppsListResponse, AWSError] = js.native
   def getAppsList(
@@ -127,12 +157,12 @@ trait FMS extends Service {
   ): Request[GetAppsListResponse, AWSError] = js.native
   
   /**
-    * Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy. Resources are considered noncompliant for AWS WAF and Shield Advanced policies if the specified policy has not been applied to them. Resources are considered noncompliant for security group policies if they are in scope of the policy, they violate one or more of the policy rules, and remediation is disabled or not possible. Resources are considered noncompliant for Network Firewall policies if a firewall is missing in the VPC, if the firewall endpoint isn't set up in an expected Availability Zone and subnet, if a subnet created by the Firewall Manager doesn't have the expected route table, and for modifications to a firewall policy that violate the Firewall Manager policy's rules. 
+    * Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy.    Resources are considered noncompliant for WAF and Shield Advanced policies if the specified policy has not been applied to them.   Resources are considered noncompliant for security group policies if they are in scope of the policy, they violate one or more of the policy rules, and remediation is disabled or not possible.   Resources are considered noncompliant for Network Firewall policies if a firewall is missing in the VPC, if the firewall endpoint isn't set up in an expected Availability Zone and subnet, if a subnet created by the Firewall Manager doesn't have the expected route table, and for modifications to a firewall policy that violate the Firewall Manager policy's rules.   Resources are considered noncompliant for DNS Firewall policies if a DNS Firewall rule group is missing from the rule group associations for the VPC.   
     */
   def getComplianceDetail(): Request[GetComplianceDetailResponse, AWSError] = js.native
   def getComplianceDetail(callback: js.Function2[/* err */ AWSError, /* data */ GetComplianceDetailResponse, Unit]): Request[GetComplianceDetailResponse, AWSError] = js.native
   /**
-    * Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy. Resources are considered noncompliant for AWS WAF and Shield Advanced policies if the specified policy has not been applied to them. Resources are considered noncompliant for security group policies if they are in scope of the policy, they violate one or more of the policy rules, and remediation is disabled or not possible. Resources are considered noncompliant for Network Firewall policies if a firewall is missing in the VPC, if the firewall endpoint isn't set up in an expected Availability Zone and subnet, if a subnet created by the Firewall Manager doesn't have the expected route table, and for modifications to a firewall policy that violate the Firewall Manager policy's rules. 
+    * Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy.    Resources are considered noncompliant for WAF and Shield Advanced policies if the specified policy has not been applied to them.   Resources are considered noncompliant for security group policies if they are in scope of the policy, they violate one or more of the policy rules, and remediation is disabled or not possible.   Resources are considered noncompliant for Network Firewall policies if a firewall is missing in the VPC, if the firewall endpoint isn't set up in an expected Availability Zone and subnet, if a subnet created by the Firewall Manager doesn't have the expected route table, and for modifications to a firewall policy that violate the Firewall Manager policy's rules.   Resources are considered noncompliant for DNS Firewall policies if a DNS Firewall rule group is missing from the rule group associations for the VPC.   
     */
   def getComplianceDetail(params: GetComplianceDetailRequest): Request[GetComplianceDetailResponse, AWSError] = js.native
   def getComplianceDetail(
@@ -141,12 +171,12 @@ trait FMS extends Service {
   ): Request[GetComplianceDetailResponse, AWSError] = js.native
   
   /**
-    * Information about the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
+    * Information about the Amazon Simple Notification Service (SNS) topic that is used to record Firewall Manager SNS logs.
     */
   def getNotificationChannel(): Request[GetNotificationChannelResponse, AWSError] = js.native
   def getNotificationChannel(callback: js.Function2[/* err */ AWSError, /* data */ GetNotificationChannelResponse, Unit]): Request[GetNotificationChannelResponse, AWSError] = js.native
   /**
-    * Information about the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
+    * Information about the Amazon Simple Notification Service (SNS) topic that is used to record Firewall Manager SNS logs.
     */
   def getNotificationChannel(params: GetNotificationChannelRequest): Request[GetNotificationChannelResponse, AWSError] = js.native
   def getNotificationChannel(
@@ -155,12 +185,12 @@ trait FMS extends Service {
   ): Request[GetNotificationChannelResponse, AWSError] = js.native
   
   /**
-    * Returns information about the specified AWS Firewall Manager policy.
+    * Returns information about the specified Firewall Manager policy.
     */
   def getPolicy(): Request[GetPolicyResponse, AWSError] = js.native
   def getPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetPolicyResponse, Unit]): Request[GetPolicyResponse, AWSError] = js.native
   /**
-    * Returns information about the specified AWS Firewall Manager policy.
+    * Returns information about the specified Firewall Manager policy.
     */
   def getPolicy(params: GetPolicyRequest): Request[GetPolicyResponse, AWSError] = js.native
   def getPolicy(
@@ -183,12 +213,12 @@ trait FMS extends Service {
   ): Request[GetProtectionStatusResponse, AWSError] = js.native
   
   /**
-    * Returns information about the specified AWS Firewall Manager protocols list.
+    * Returns information about the specified Firewall Manager protocols list.
     */
   def getProtocolsList(): Request[GetProtocolsListResponse, AWSError] = js.native
   def getProtocolsList(callback: js.Function2[/* err */ AWSError, /* data */ GetProtocolsListResponse, Unit]): Request[GetProtocolsListResponse, AWSError] = js.native
   /**
-    * Returns information about the specified AWS Firewall Manager protocols list.
+    * Returns information about the specified Firewall Manager protocols list.
     */
   def getProtocolsList(params: GetProtocolsListRequest): Request[GetProtocolsListResponse, AWSError] = js.native
   def getProtocolsList(
@@ -197,12 +227,28 @@ trait FMS extends Service {
   ): Request[GetProtocolsListResponse, AWSError] = js.native
   
   /**
-    * Retrieves violations for a resource based on the specified AWS Firewall Manager policy and AWS account.
+    * The onboarding status of a Firewall Manager admin account to third-party firewall vendor tenant.
+    */
+  def getThirdPartyFirewallAssociationStatus(): Request[GetThirdPartyFirewallAssociationStatusResponse, AWSError] = js.native
+  def getThirdPartyFirewallAssociationStatus(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetThirdPartyFirewallAssociationStatusResponse, Unit]
+  ): Request[GetThirdPartyFirewallAssociationStatusResponse, AWSError] = js.native
+  /**
+    * The onboarding status of a Firewall Manager admin account to third-party firewall vendor tenant.
+    */
+  def getThirdPartyFirewallAssociationStatus(params: GetThirdPartyFirewallAssociationStatusRequest): Request[GetThirdPartyFirewallAssociationStatusResponse, AWSError] = js.native
+  def getThirdPartyFirewallAssociationStatus(
+    params: GetThirdPartyFirewallAssociationStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetThirdPartyFirewallAssociationStatusResponse, Unit]
+  ): Request[GetThirdPartyFirewallAssociationStatusResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves violations for a resource based on the specified Firewall Manager policy and Amazon Web Services account.
     */
   def getViolationDetails(): Request[GetViolationDetailsResponse, AWSError] = js.native
   def getViolationDetails(callback: js.Function2[/* err */ AWSError, /* data */ GetViolationDetailsResponse, Unit]): Request[GetViolationDetailsResponse, AWSError] = js.native
   /**
-    * Retrieves violations for a resource based on the specified AWS Firewall Manager policy and AWS account.
+    * Retrieves violations for a resource based on the specified Firewall Manager policy and Amazon Web Services account.
     */
   def getViolationDetails(params: GetViolationDetailsRequest): Request[GetViolationDetailsResponse, AWSError] = js.native
   def getViolationDetails(
@@ -239,12 +285,12 @@ trait FMS extends Service {
   ): Request[ListComplianceStatusResponse, AWSError] = js.native
   
   /**
-    * Returns a MemberAccounts object that lists the member accounts in the administrator's AWS organization. The ListMemberAccounts must be submitted by the account that is set as the AWS Firewall Manager administrator.
+    * Returns a MemberAccounts object that lists the member accounts in the administrator's Amazon Web Services organization. The ListMemberAccounts must be submitted by the account that is set as the Firewall Manager administrator.
     */
   def listMemberAccounts(): Request[ListMemberAccountsResponse, AWSError] = js.native
   def listMemberAccounts(callback: js.Function2[/* err */ AWSError, /* data */ ListMemberAccountsResponse, Unit]): Request[ListMemberAccountsResponse, AWSError] = js.native
   /**
-    * Returns a MemberAccounts object that lists the member accounts in the administrator's AWS organization. The ListMemberAccounts must be submitted by the account that is set as the AWS Firewall Manager administrator.
+    * Returns a MemberAccounts object that lists the member accounts in the administrator's Amazon Web Services organization. The ListMemberAccounts must be submitted by the account that is set as the Firewall Manager administrator.
     */
   def listMemberAccounts(params: ListMemberAccountsRequest): Request[ListMemberAccountsResponse, AWSError] = js.native
   def listMemberAccounts(
@@ -281,12 +327,12 @@ trait FMS extends Service {
   ): Request[ListProtocolsListsResponse, AWSError] = js.native
   
   /**
-    * Retrieves the list of tags for the specified AWS resource. 
+    * Retrieves the list of tags for the specified Amazon Web Services resource. 
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Retrieves the list of tags for the specified AWS resource. 
+    * Retrieves the list of tags for the specified Amazon Web Services resource. 
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -295,12 +341,28 @@ trait FMS extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    * Creates an AWS Firewall Manager applications list.
+    * Retrieves a list of all of the third-party firewall policies that are associated with the third-party firewall administrator's account.
+    */
+  def listThirdPartyFirewallFirewallPolicies(): Request[ListThirdPartyFirewallFirewallPoliciesResponse, AWSError] = js.native
+  def listThirdPartyFirewallFirewallPolicies(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListThirdPartyFirewallFirewallPoliciesResponse, Unit]
+  ): Request[ListThirdPartyFirewallFirewallPoliciesResponse, AWSError] = js.native
+  /**
+    * Retrieves a list of all of the third-party firewall policies that are associated with the third-party firewall administrator's account.
+    */
+  def listThirdPartyFirewallFirewallPolicies(params: ListThirdPartyFirewallFirewallPoliciesRequest): Request[ListThirdPartyFirewallFirewallPoliciesResponse, AWSError] = js.native
+  def listThirdPartyFirewallFirewallPolicies(
+    params: ListThirdPartyFirewallFirewallPoliciesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListThirdPartyFirewallFirewallPoliciesResponse, Unit]
+  ): Request[ListThirdPartyFirewallFirewallPoliciesResponse, AWSError] = js.native
+  
+  /**
+    * Creates an Firewall Manager applications list.
     */
   def putAppsList(): Request[PutAppsListResponse, AWSError] = js.native
   def putAppsList(callback: js.Function2[/* err */ AWSError, /* data */ PutAppsListResponse, Unit]): Request[PutAppsListResponse, AWSError] = js.native
   /**
-    * Creates an AWS Firewall Manager applications list.
+    * Creates an Firewall Manager applications list.
     */
   def putAppsList(params: PutAppsListRequest): Request[PutAppsListResponse, AWSError] = js.native
   def putAppsList(
@@ -309,12 +371,12 @@ trait FMS extends Service {
   ): Request[PutAppsListResponse, AWSError] = js.native
   
   /**
-    * Designates the IAM role and Amazon Simple Notification Service (SNS) topic that AWS Firewall Manager uses to record SNS logs. To perform this action outside of the console, you must configure the SNS topic to allow the Firewall Manager role AWSServiceRoleForFMS to publish SNS logs. For more information, see Firewall Manager required permissions for API actions in the AWS Firewall Manager Developer Guide.
+    * Designates the IAM role and Amazon Simple Notification Service (SNS) topic that Firewall Manager uses to record SNS logs. To perform this action outside of the console, you must configure the SNS topic to allow the Firewall Manager role AWSServiceRoleForFMS to publish SNS logs. For more information, see Firewall Manager required permissions for API actions in the Firewall Manager Developer Guide.
     */
   def putNotificationChannel(): Request[js.Object, AWSError] = js.native
   def putNotificationChannel(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Designates the IAM role and Amazon Simple Notification Service (SNS) topic that AWS Firewall Manager uses to record SNS logs. To perform this action outside of the console, you must configure the SNS topic to allow the Firewall Manager role AWSServiceRoleForFMS to publish SNS logs. For more information, see Firewall Manager required permissions for API actions in the AWS Firewall Manager Developer Guide.
+    * Designates the IAM role and Amazon Simple Notification Service (SNS) topic that Firewall Manager uses to record SNS logs. To perform this action outside of the console, you must configure the SNS topic to allow the Firewall Manager role AWSServiceRoleForFMS to publish SNS logs. For more information, see Firewall Manager required permissions for API actions in the Firewall Manager Developer Guide.
     */
   def putNotificationChannel(params: PutNotificationChannelRequest): Request[js.Object, AWSError] = js.native
   def putNotificationChannel(
@@ -323,12 +385,12 @@ trait FMS extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Creates an AWS Firewall Manager policy. Firewall Manager provides the following types of policies:    An AWS WAF policy (type WAFV2), which defines rule groups to run first in the corresponding AWS WAF web ACL and rule groups to run last in the web ACL.   An AWS WAF Classic policy (type WAF), which defines a rule group.    A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources.   A security group policy, which manages VPC security groups across your AWS organization.    An AWS Network Firewall policy, which provides firewall rules to filter network traffic in specified Amazon VPCs.   Each policy is specific to one of the types. If you want to enforce more than one policy type across accounts, create multiple policies. You can create multiple policies for each type. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information about subscribing to Shield Advanced, see CreateSubscription.
+    * Creates an Firewall Manager policy. Firewall Manager provides the following types of policies:    An WAF policy (type WAFV2), which defines rule groups to run first in the corresponding WAF web ACL and rule groups to run last in the web ACL.   An WAF Classic policy (type WAF), which defines a rule group.    A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources.   A security group policy, which manages VPC security groups across your Amazon Web Services organization.    An Network Firewall policy, which provides firewall rules to filter network traffic in specified Amazon VPCs.   A DNS Firewall policy, which provides Route 53 Resolver DNS Firewall rules to filter DNS queries for specified VPCs.   Each policy is specific to one of the types. If you want to enforce more than one policy type across accounts, create multiple policies. You can create multiple policies for each type. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information about subscribing to Shield Advanced, see CreateSubscription.
     */
   def putPolicy(): Request[PutPolicyResponse, AWSError] = js.native
   def putPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutPolicyResponse, Unit]): Request[PutPolicyResponse, AWSError] = js.native
   /**
-    * Creates an AWS Firewall Manager policy. Firewall Manager provides the following types of policies:    An AWS WAF policy (type WAFV2), which defines rule groups to run first in the corresponding AWS WAF web ACL and rule groups to run last in the web ACL.   An AWS WAF Classic policy (type WAF), which defines a rule group.    A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources.   A security group policy, which manages VPC security groups across your AWS organization.    An AWS Network Firewall policy, which provides firewall rules to filter network traffic in specified Amazon VPCs.   Each policy is specific to one of the types. If you want to enforce more than one policy type across accounts, create multiple policies. You can create multiple policies for each type. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information about subscribing to Shield Advanced, see CreateSubscription.
+    * Creates an Firewall Manager policy. Firewall Manager provides the following types of policies:    An WAF policy (type WAFV2), which defines rule groups to run first in the corresponding WAF web ACL and rule groups to run last in the web ACL.   An WAF Classic policy (type WAF), which defines a rule group.    A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources.   A security group policy, which manages VPC security groups across your Amazon Web Services organization.    An Network Firewall policy, which provides firewall rules to filter network traffic in specified Amazon VPCs.   A DNS Firewall policy, which provides Route 53 Resolver DNS Firewall rules to filter DNS queries for specified VPCs.   Each policy is specific to one of the types. If you want to enforce more than one policy type across accounts, create multiple policies. You can create multiple policies for each type. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information about subscribing to Shield Advanced, see CreateSubscription.
     */
   def putPolicy(params: PutPolicyRequest): Request[PutPolicyResponse, AWSError] = js.native
   def putPolicy(
@@ -337,12 +399,12 @@ trait FMS extends Service {
   ): Request[PutPolicyResponse, AWSError] = js.native
   
   /**
-    * Creates an AWS Firewall Manager protocols list.
+    * Creates an Firewall Manager protocols list.
     */
   def putProtocolsList(): Request[PutProtocolsListResponse, AWSError] = js.native
   def putProtocolsList(callback: js.Function2[/* err */ AWSError, /* data */ PutProtocolsListResponse, Unit]): Request[PutProtocolsListResponse, AWSError] = js.native
   /**
-    * Creates an AWS Firewall Manager protocols list.
+    * Creates an Firewall Manager protocols list.
     */
   def putProtocolsList(params: PutProtocolsListRequest): Request[PutProtocolsListResponse, AWSError] = js.native
   def putProtocolsList(
@@ -351,12 +413,12 @@ trait FMS extends Service {
   ): Request[PutProtocolsListResponse, AWSError] = js.native
   
   /**
-    * Adds one or more tags to an AWS resource.
+    * Adds one or more tags to an Amazon Web Services resource.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Adds one or more tags to an AWS resource.
+    * Adds one or more tags to an Amazon Web Services resource.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -365,12 +427,12 @@ trait FMS extends Service {
   ): Request[TagResourceResponse, AWSError] = js.native
   
   /**
-    * Removes one or more tags from an AWS resource.
+    * Removes one or more tags from an Amazon Web Services resource.
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Removes one or more tags from an AWS resource.
+    * Removes one or more tags from an Amazon Web Services resource.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(

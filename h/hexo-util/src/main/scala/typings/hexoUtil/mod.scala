@@ -8,20 +8,16 @@ import typings.hexoUtil.anon.Separator
 import typings.hexoUtil.anon.Width
 import typings.hexoUtil.hexoUtilBooleans.`false`
 import typings.hexoUtil.hexoUtilStrings._empty
-import typings.node.Buffer
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
+import typings.node.childProcessMod.IOType
 import typings.node.childProcessMod.SpawnOptions
 import typings.node.childProcessMod.StdioOptions
-import typings.node.nodeStrings.ignore
-import typings.node.nodeStrings.inherit
+import typings.node.nodeStreamMod.Stream
 import typings.node.nodeStrings.ipc
-import typings.node.nodeStrings.pipe
-import typings.node.streamMod.Stream
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
-import typings.std.ArrayBufferView
 import typings.std.ArrayLike
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,22 +30,24 @@ object mod {
   
   @JSImport("hexo-util", "CacheStream")
   @js.native
-  class CacheStream () extends Transform {
+  open class CacheStream () extends Transform {
     def this(opts: TransformOptions) = this()
+    
+    def destroy(): this.type = js.native
     
     def getCache(): Buffer = js.native
   }
   
   @JSImport("hexo-util", "HashStream")
   @js.native
-  class HashStream () extends Transform {
+  open class HashStream () extends Transform {
     def this(opts: TransformOptions) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("hexo-util", "Pattern")
   @js.native
-  class PatternCls[T] protected ()
+  open class PatternCls[T] protected ()
     extends StObject
        with Pattern[T] {
     def this(rule: js.Function1[/* str */ String, T]) = this()
@@ -64,15 +62,15 @@ object mod {
   
   @JSImport("hexo-util", "Permalink")
   @js.native
-  class Permalink protected () extends StObject {
+  open class Permalink protected () extends StObject {
     def this(rule: String) = this()
     def this(rule: String, options: Segments) = this()
     
     var params: js.Array[String] = js.native
     
-    def parse(str: String): js.UndefOr[StringDictionary[js.Any]] = js.native
+    def parse(str: String): js.UndefOr[StringDictionary[Any]] = js.native
     
-    var regex: RegExp = js.native
+    var regex: js.RegExp = js.native
     
     var rule: String = js.native
     
@@ -81,7 +79,7 @@ object mod {
     def test(str: String): Boolean = js.native
   }
   
-  inline def camelCaseKeys(obj: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def camelCaseKeys(obj: StringDictionary[Any]): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   
   inline def escapeDiacritic(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeDiacritic")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -90,7 +88,7 @@ object mod {
   inline def escapeRegExp(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeRegExp")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def hash(str: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  inline def hash(str: ArrayBufferView): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def hash(str: js.typedarray.ArrayBufferView): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   inline def highlight(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def highlight(str: String, options: AutoDetect): String = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -98,11 +96,23 @@ object mod {
   inline def htmlTag(tag: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def htmlTag(tag: String, attrs: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def htmlTag(tag: String, attrs: js.Array[String], text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def htmlTag(tag: String, attrs: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def htmlTag(tag: String, attrs: StringDictionary[js.Any], text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: js.Array[String], text: String, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: js.Array[String], text: Null, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: js.Array[String], text: Unit, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: StringDictionary[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: StringDictionary[Any], text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: StringDictionary[Any], text: String, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: StringDictionary[Any], text: Null, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: StringDictionary[Any], text: Unit, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def htmlTag(tag: String, attrs: Unit, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: Unit, text: String, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: Unit, text: Null, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: Unit, text: Unit, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def htmlTag(tag: String, attrs: ArrayLike[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def htmlTag(tag: String, attrs: ArrayLike[String], text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: ArrayLike[String], text: String, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: ArrayLike[String], text: Null, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: ArrayLike[String], text: Unit, escape: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any], escape.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def slugize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slugize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def slugize(str: String, options: Separator): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slugize")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -166,7 +176,7 @@ object mod {
       
       inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
-      inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: (js.UndefOr[IOType | ipc | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value*))
     }
   }
   
@@ -242,7 +252,7 @@ object mod {
       
       inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
-      inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: (js.UndefOr[IOType | ipc | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value*))
     }
   }
 }

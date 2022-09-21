@@ -105,9 +105,9 @@ trait WebBrowserControl extends StObject {
   
   var Name: String = js.native
   
-  val Object: js.Any = js.native
+  val Object: Any = js.native
   
-  val OldValue: js.Any = js.native
+  val OldValue: Any = js.native
   
   var OnBeforeNavigate: String = js.native
   
@@ -157,7 +157,7 @@ trait WebBrowserControl extends StObject {
   
   var OnUpdatedMacro: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Progress: Double = js.native
   
@@ -202,7 +202,7 @@ trait WebBrowserControl extends StObject {
   
   def Undo(): Unit = js.native
   
-  var Value: js.Any = js.native
+  var Value: Any = js.native
   
   var VerticalAnchor: AcVerticalAnchor = js.native
   
@@ -210,56 +210,56 @@ trait WebBrowserControl extends StObject {
   
   var Width: Double = js.native
   
-  def _Evaluate(bstrExpr: String, ppsa: js.Any*): js.Any = js.native
+  def _Evaluate(bstrExpr: String, ppsa: Any*): Any = js.native
   
-  def accChild(varChild: js.Any): js.Any = js.native
+  def accChild(varChild: Any): Any = js.native
   
   val accChildCount: Double = js.native
   
   def accDefaultAction(): String = js.native
-  def accDefaultAction(varChild: js.Any): String = js.native
+  def accDefaultAction(varChild: Any): String = js.native
   
   def accDescription(): String = js.native
-  def accDescription(varChild: js.Any): String = js.native
+  def accDescription(varChild: Any): String = js.native
   
   def accDoDefaultAction(): Unit = js.native
-  def accDoDefaultAction(varChild: js.Any): Unit = js.native
+  def accDoDefaultAction(varChild: Any): Unit = js.native
   
-  val accFocus: js.Any = js.native
+  val accFocus: Any = js.native
   
   def accHelp(): String = js.native
-  def accHelp(varChild: js.Any): String = js.native
+  def accHelp(varChild: Any): String = js.native
   
   def accHelpTopic(pszHelpFile: String): Double = js.native
-  def accHelpTopic(pszHelpFile: String, varChild: js.Any): Double = js.native
+  def accHelpTopic(pszHelpFile: String, varChild: Any): Double = js.native
   
-  def accHitTest(xLeft: Double, yTop: Double): js.Any = js.native
+  def accHitTest(xLeft: Double, yTop: Double): Any = js.native
   
   def accKeyboardShortcut(): String = js.native
-  def accKeyboardShortcut(varChild: js.Any): String = js.native
+  def accKeyboardShortcut(varChild: Any): String = js.native
   
   def accLocation(pxLeft: Double, pyTop: Double, pcxWidth: Double, pcyHeight: Double): Unit = js.native
-  def accLocation(pxLeft: Double, pyTop: Double, pcxWidth: Double, pcyHeight: Double, varChild: js.Any): Unit = js.native
+  def accLocation(pxLeft: Double, pyTop: Double, pcxWidth: Double, pcyHeight: Double, varChild: Any): Unit = js.native
   
   def accName(): String = js.native
-  def accName(varChild: js.Any): String = js.native
+  def accName(varChild: Any): String = js.native
   
-  def accNavigate(navDir: Double): js.Any = js.native
-  def accNavigate(navDir: Double, varStart: js.Any): js.Any = js.native
+  def accNavigate(navDir: Double): Any = js.native
+  def accNavigate(navDir: Double, varStart: Any): Any = js.native
   
-  val accParent: js.Any = js.native
+  val accParent: Any = js.native
   
-  def accRole(): js.Any = js.native
-  def accRole(varChild: js.Any): js.Any = js.native
+  def accRole(): Any = js.native
+  def accRole(varChild: Any): Any = js.native
   
   def accSelect(flagsSelect: Double): Unit = js.native
-  def accSelect(flagsSelect: Double, varChild: js.Any): Unit = js.native
+  def accSelect(flagsSelect: Double, varChild: Any): Unit = js.native
   
-  val accSelection: js.Any = js.native
+  val accSelection: Any = js.native
   
-  def accState(): js.Any = js.native
-  def accState(varChild: js.Any): js.Any = js.native
+  def accState(): Any = js.native
+  def accState(varChild: Any): Any = js.native
   
   def accValue(): String = js.native
-  def accValue(varChild: js.Any): String = js.native
+  def accValue(varChild: Any): String = js.native
 }

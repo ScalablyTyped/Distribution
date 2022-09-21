@@ -1,7 +1,6 @@
 package typings.azdata.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.azdata.anon.Token
 import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
 import typings.vscode.mod.Event
@@ -21,16 +20,45 @@ object accounts {
   
   inline def endAutoOAuthDeviceCode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endAutoOAuthDeviceCode")().asInstanceOf[Unit]
   
-  inline def getAccountSecurityToken(account: Account, tenant: String, resource: AzureResource): Thenable[js.UndefOr[Token]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccountSecurityToken")(account.asInstanceOf[js.Any], tenant.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[Thenable[js.UndefOr[Token]]]
+  inline def getAccountSecurityToken(account: Account, tenantId: String, resource: AzureResource): Thenable[js.UndefOr[AccountSecurityToken]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccountSecurityToken")(account.asInstanceOf[js.Any], tenantId.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[Thenable[js.UndefOr[AccountSecurityToken]]]
   
   inline def getAllAccounts(): Thenable[js.Array[Account]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAccounts")().asInstanceOf[Thenable[js.Array[Account]]]
   
-  inline def getSecurityToken(account: Account): Thenable[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityToken")(account.asInstanceOf[js.Any]).asInstanceOf[Thenable[StringDictionary[js.Any]]]
-  inline def getSecurityToken(account: Account, resource: AzureResource): Thenable[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityToken")(account.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[Thenable[StringDictionary[js.Any]]]
+  inline def getSecurityToken(account: Account): Thenable[StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityToken")(account.asInstanceOf[js.Any]).asInstanceOf[Thenable[StringDictionary[Any]]]
+  inline def getSecurityToken(account: Account, resource: AzureResource): Thenable[StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityToken")(account.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[Thenable[StringDictionary[Any]]]
   
   @JSImport("azdata", "accounts.onDidChangeAccounts")
   @js.native
   val onDidChangeAccounts: Event[DidChangeAccountsParams] = js.native
   
   inline def registerAccountProvider(providerMetadata: AccountProviderMetadata, provider: AccountProvider): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAccountProvider")(providerMetadata.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
+  trait AccountSecurityToken extends StObject {
+    
+    /**
+      * The token to use
+      */
+    var token: String
+    
+    /**
+      * What type of token this is (such as Bearer)
+      */
+    var tokenType: js.UndefOr[String] = js.undefined
+  }
+  object AccountSecurityToken {
+    
+    inline def apply(token: String): AccountSecurityToken = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AccountSecurityToken]
+    }
+    
+    extension [Self <: AccountSecurityToken](x: Self) {
+      
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      
+      inline def setTokenType(value: String): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
+      
+      inline def setTokenTypeUndefined: Self = StObject.set(x, "tokenType", js.undefined)
+    }
+  }
 }

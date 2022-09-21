@@ -10,15 +10,12 @@ jsreport extension capable of running custom javascript functions during the ren
 | ------------------ | :-------------: |
 | Full name          | jsreport-scripts |
 | Keywords           | jsreport |
-| # releases         | 11 |
-| # dependents       | 6 |
-| # downloads        | 98646 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5213.666666666667 |
+| # stars            | 2.0 |
 
 ## Links
-- [Homepage](https://github.com/jsreport/jsreport-scripts)
-- [Bugs](https://github.com/jsreport/jsreport-scripts/issues)
-- [Repository](https://github.com/jsreport/jsreport-scripts)
 - [Npm](https://www.npmjs.com/package/jsreport-scripts)
     
 

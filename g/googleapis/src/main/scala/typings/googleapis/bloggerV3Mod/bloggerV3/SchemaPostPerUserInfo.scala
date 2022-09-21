@@ -9,27 +9,27 @@ trait SchemaPostPerUserInfo extends StObject {
   /**
     * ID of the Blog that the post resource belongs to.
     */
-  var blogId: js.UndefOr[String] = js.undefined
+  var blogId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * True if the user has Author level access to the post.
     */
-  var hasEditAccess: js.UndefOr[Boolean] = js.undefined
+  var hasEditAccess: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The kind of this entity. Always blogger#postPerUserInfo
+    * The kind of this entity. Always blogger#postPerUserInfo.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * ID of the Post resource.
     */
-  var postId: js.UndefOr[String] = js.undefined
+  var postId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * ID of the User.
     */
-  var userId: js.UndefOr[String] = js.undefined
+  var userId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPostPerUserInfo {
   
@@ -42,21 +42,31 @@ object SchemaPostPerUserInfo {
     
     inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
+    inline def setBlogIdNull: Self = StObject.set(x, "blogId", null)
+    
     inline def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
     inline def setHasEditAccess(value: Boolean): Self = StObject.set(x, "hasEditAccess", value.asInstanceOf[js.Any])
+    
+    inline def setHasEditAccessNull: Self = StObject.set(x, "hasEditAccess", null)
     
     inline def setHasEditAccessUndefined: Self = StObject.set(x, "hasEditAccess", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setPostId(value: String): Self = StObject.set(x, "postId", value.asInstanceOf[js.Any])
     
+    inline def setPostIdNull: Self = StObject.set(x, "postId", null)
+    
     inline def setPostIdUndefined: Self = StObject.set(x, "postId", js.undefined)
     
     inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    
+    inline def setUserIdNull: Self = StObject.set(x, "userId", null)
     
     inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }

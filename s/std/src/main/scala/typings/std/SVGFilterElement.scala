@@ -12,20 +12,23 @@ trait SVGFilterElement
      with SVGURIReference {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val filterUnits: SVGAnimatedEnumeration = js.native
   
+  /* standard dom */
   val height: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val primitiveUnits: SVGAnimatedEnumeration = js.native
   
   /* InferMemberOverrides */
@@ -39,9 +42,12 @@ trait SVGFilterElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val width: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val x: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val y: SVGAnimatedLength = js.native
 }

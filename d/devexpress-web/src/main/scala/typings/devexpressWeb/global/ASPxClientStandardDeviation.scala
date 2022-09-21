@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientStandardDeviation")
 @js.native
-class ASPxClientStandardDeviation ()
+open class ASPxClientStandardDeviation ()
   extends StObject
      with typings.devexpressWeb.ASPxClientStandardDeviation {
   

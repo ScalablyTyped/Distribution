@@ -14,61 +14,61 @@ object listListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/List/List", "List")
   @js.native
-  class List[T] protected ()
-    extends Component[IListProps[T], IListState[T], js.Any]
+  open class List[T] protected ()
+    extends Component[IListProps[T], IListState[T], Any]
        with IList {
     def this(props: IListProps[T]) = this()
     
-    /* private */ var _allowedRect: js.Any = js.native
+    /* private */ var _allowedRect: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
     /** Build up the pages that should be rendered. */
-    /* private */ var _buildPages: js.Any = js.native
+    /* private */ var _buildPages: Any = js.native
     
-    /* private */ var _cachedPageHeights: js.Any = js.native
+    /* private */ var _cachedPageHeights: Any = js.native
     
-    /* private */ var _createPage: js.Any = js.native
+    /* private */ var _createPage: Any = js.native
     
-    /* private */ var _estimatedPageHeight: js.Any = js.native
+    /* private */ var _estimatedPageHeight: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _focusedIndex: js.Any = js.native
+    /* private */ var _focusedIndex: Any = js.native
     
-    /* private */ var _getDerivedStateFromProps: js.Any = js.native
+    /* private */ var _getDerivedStateFromProps: Any = js.native
     
-    /* private */ var _getItemCountForPage: js.Any = js.native
+    /* private */ var _getItemCountForPage: Any = js.native
     
     /**
       * Get the pixel height of a give page. Will use the props getPageHeight first, and if not provided, fallback to
       * cached height, or estimated page height, or default page height.
       */
-    /* private */ var _getPageHeight: js.Any = js.native
+    /* private */ var _getPageHeight: Any = js.native
     
-    /* private */ var _getPageSpecification: js.Any = js.native
+    /* private */ var _getPageSpecification: Any = js.native
     
     /** Generate the style object for the page. */
-    /* private */ var _getPageStyle: js.Any = js.native
+    /* private */ var _getPageStyle: Any = js.native
     
-    /* private */ var _getRenderCount: js.Any = js.native
+    /* private */ var _getRenderCount: Any = js.native
     
-    /* private */ var _hasCompletedFirstRender: js.Any = js.native
+    /* private */ var _hasCompletedFirstRender: Any = js.native
     
     /**
       * when props.items change or forceUpdate called, throw away cached pages
       */
-    /* private */ var _invalidatePageCache: js.Any = js.native
+    /* private */ var _invalidatePageCache: Any = js.native
     
-    /* private */ var _materializedRect: js.Any = js.native
+    /* private */ var _materializedRect: Any = js.native
     
     /**
       * Given a page, measure its dimensions, update cache.
       * @returns True if the height has changed.
       */
-    /* private */ var _measurePage: js.Any = js.native
+    /* private */ var _measurePage: Any = js.native
     
-    /* private */ var _measureVersion: js.Any = js.native
+    /* private */ var _measureVersion: Any = js.native
     
     /**
       * Notify consumers that the rendered pages have changed
@@ -76,92 +76,92 @@ object listListMod {
       * @param newPages - The new pages
       * @param props - The props to use
       */
-    /* private */ var _notifyPageChanges: js.Any = js.native
+    /* private */ var _notifyPageChanges: Any = js.native
     
     /**
       * This is an async debounced method that will try and increment the windows we render. If we can increment
       * either, we increase the amount we render and re-evaluate.
       */
-    /* private */ var _onAsyncIdle: js.Any = js.native
+    /* private */ var _onAsyncIdle: Any = js.native
     
-    /* private */ var _onAsyncResize: js.Any = js.native
+    /* private */ var _onAsyncResize: Any = js.native
     
     /**
       * Debounced method to asynchronously update the visible region on a scroll event.
       */
-    /* private */ var _onAsyncScroll: js.Any = js.native
+    /* private */ var _onAsyncScroll: Any = js.native
     
     /** Track the last item index focused so that we ensure we keep it rendered. */
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
     /** Called when a page has been added to the DOM. */
-    /* private */ var _onPageAdded: js.Any = js.native
+    /* private */ var _onPageAdded: Any = js.native
     
     /** Called when a page has been removed from the DOM. */
-    /* private */ var _onPageRemoved: js.Any = js.native
+    /* private */ var _onPageRemoved: Any = js.native
     
-    /* private */ var _onRenderPage: js.Any = js.native
+    /* private */ var _onRenderPage: Any = js.native
     
-    /* private */ var _onRenderRoot: js.Any = js.native
+    /* private */ var _onRenderRoot: Any = js.native
     
-    /* private */ var _onRenderSurface: js.Any = js.native
+    /* private */ var _onRenderSurface: Any = js.native
     
     /**
       * Called synchronously to reset the required render range to 0 on scrolling. After async scroll has executed,
       * we will call onAsyncIdle which will reset it back to it's correct value.
       */
-    /* private */ var _onScroll: js.Any = js.native
+    /* private */ var _onScroll: Any = js.native
     
     /**
       * Function to call when the list is done scrolling.
       * This function is debounced.
       */
-    /* private */ var _onScrollingDone: js.Any = js.native
+    /* private */ var _onScrollingDone: Any = js.native
     
-    /* private */ var _pageCache: js.Any = js.native
+    /* private */ var _pageCache: Any = js.native
     
-    /* private */ var _pageRefs: js.Any = js.native
+    /* private */ var _pageRefs: Any = js.native
     
-    /* private */ var _renderPage: js.Any = js.native
+    /* private */ var _renderPage: Any = js.native
     
-    /* private */ var _requiredRect: js.Any = js.native
+    /* private */ var _requiredRect: Any = js.native
     
-    /* private */ var _requiredWindowsAhead: js.Any = js.native
+    /* private */ var _requiredWindowsAhead: Any = js.native
     
-    /* private */ var _requiredWindowsBehind: js.Any = js.native
+    /* private */ var _requiredWindowsBehind: Any = js.native
     
-    /* private */ var _resetRequiredWindows: js.Any = js.native
+    /* private */ var _resetRequiredWindows: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _scrollElement: js.Any = js.native
+    /* private */ var _scrollElement: Any = js.native
     
-    /* private */ var _scrollHeight: js.Any = js.native
+    /* private */ var _scrollHeight: Any = js.native
     
-    /* private */ var _scrollTop: js.Any = js.native
+    /* private */ var _scrollTop: Any = js.native
     
-    /* private */ var _shouldVirtualize: js.Any = js.native
+    /* private */ var _shouldVirtualize: Any = js.native
     
-    /* private */ var _surface: js.Any = js.native
+    /* private */ var _surface: Any = js.native
     
-    /* private */ var _surfaceRect: js.Any = js.native
+    /* private */ var _surfaceRect: Any = js.native
     
-    /* private */ var _totalEstimates: js.Any = js.native
+    /* private */ var _totalEstimates: Any = js.native
     
-    /* private */ var _updatePageMeasurements: js.Any = js.native
+    /* private */ var _updatePageMeasurements: Any = js.native
     
-    /* private */ var _updatePages: js.Any = js.native
+    /* private */ var _updatePages: Any = js.native
     
     /** Calculate the visible rect within the list where top: 0 and left: 0 is the top/left of the list. */
-    /* private */ var _updateRenderRects: js.Any = js.native
+    /* private */ var _updateRenderRects: Any = js.native
     
-    /* private */ var _visibleRect: js.Any = js.native
+    /* private */ var _visibleRect: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MList(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MList(previousProps: IListProps[js.Any], previousState: IListState[T]): Unit = js.native
+    def componentDidUpdate_MList(previousProps: IListProps[Any], previousState: IListState[T]): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MList(): Unit = js.native
@@ -177,7 +177,7 @@ object listListMod {
     @JSName("getTotalListHeight")
     def getTotalListHeight_MList(): Double = js.native
     
-    val pageRefs: Record[String, js.Any] = js.native
+    val pageRefs: Record[String, Any] = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MList(newProps: IListProps[T], newState: IListState[T]): Boolean = js.native
@@ -233,7 +233,7 @@ object listListMod {
       
       inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
       
-      inline def setPagesVarargs(value: IPage[T]*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: IPage[T]*): Self = StObject.set(x, "pages", js.Array(value*))
       
       inline def setPagesVersion(value: js.Object): Self = StObject.set(x, "pagesVersion", value.asInstanceOf[js.Any])
       

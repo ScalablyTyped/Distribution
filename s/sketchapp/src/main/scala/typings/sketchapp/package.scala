@@ -1,20 +1,22 @@
 package typings.sketchapp
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.sketchapp.anon.ScrollOrigin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type SketchMSFlow = typings.sketchapp.SketchMSFlowConnection
+type SketchMSFlow = SketchMSFlowConnection
 
-type SketchMSLayerFrame = typings.sketchapp.SketchMSRect
+type SketchMSLayerFrame = SketchMSRect
 
-type SketchMSPagesAndArtboards = org.scalablytyped.runtime.StringDictionary[typings.sketchapp.SketchMSArtboards]
+type SketchMSPagesAndArtboards = StringDictionary[SketchMSArtboards]
 
-type SketchMSPoint = typings.sketchapp.SketchMSCurvePoint
+type SketchMSPoint = SketchMSCurvePoint
 
-type SketchMSPointString = java.lang.String
+type SketchMSPointString = String
 
-type SketchMSUser = typings.sketchapp.SketchMSUserPages | typings.sketchapp.SketchMSUserDocument
+type SketchMSUser = SketchMSUserPages | SketchMSUserDocument
 
-type SketchMSUserPages = org.scalablytyped.runtime.StringDictionary[typings.sketchapp.anon.ScrollOrigin]
+type SketchMSUserPages = StringDictionary[ScrollOrigin]

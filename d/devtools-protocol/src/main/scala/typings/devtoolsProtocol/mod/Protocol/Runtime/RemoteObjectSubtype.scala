@@ -6,12 +6,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.arraybuffer
 import typings.devtoolsProtocol.devtoolsProtocolStrings.dataview
 import typings.devtoolsProtocol.devtoolsProtocolStrings.date
 import typings.devtoolsProtocol.devtoolsProtocolStrings.error
-import typings.devtoolsProtocol.devtoolsProtocolStrings.externref
-import typings.devtoolsProtocol.devtoolsProtocolStrings.f32
-import typings.devtoolsProtocol.devtoolsProtocolStrings.f64
 import typings.devtoolsProtocol.devtoolsProtocolStrings.generator
-import typings.devtoolsProtocol.devtoolsProtocolStrings.i32
-import typings.devtoolsProtocol.devtoolsProtocolStrings.i64
 import typings.devtoolsProtocol.devtoolsProtocolStrings.iterator
 import typings.devtoolsProtocol.devtoolsProtocolStrings.map
 import typings.devtoolsProtocol.devtoolsProtocolStrings.node
@@ -20,9 +15,10 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.proxy_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.regexp
 import typings.devtoolsProtocol.devtoolsProtocolStrings.set
 import typings.devtoolsProtocol.devtoolsProtocolStrings.typedarray
-import typings.devtoolsProtocol.devtoolsProtocolStrings.v128
+import typings.devtoolsProtocol.devtoolsProtocolStrings.wasmvalue
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakmap
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakset
+import typings.devtoolsProtocol.devtoolsProtocolStrings.webassemblymemory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,12 +41,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.typedarray
   - typings.devtoolsProtocol.devtoolsProtocolStrings.arraybuffer
   - typings.devtoolsProtocol.devtoolsProtocolStrings.dataview
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.i32
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.i64
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.f32
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.f64
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.v128
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.externref
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.webassemblymemory
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.wasmvalue
 */
 trait RemoteObjectSubtype extends StObject
 object RemoteObjectSubtype {
@@ -65,17 +57,7 @@ object RemoteObjectSubtype {
   
   inline def Error: error = "error".asInstanceOf[error]
   
-  inline def Externref: externref = "externref".asInstanceOf[externref]
-  
-  inline def F32: f32 = "f32".asInstanceOf[f32]
-  
-  inline def F64: f64 = "f64".asInstanceOf[f64]
-  
   inline def Generator: generator = "generator".asInstanceOf[generator]
-  
-  inline def I32: i32 = "i32".asInstanceOf[i32]
-  
-  inline def I64: i64 = "i64".asInstanceOf[i64]
   
   inline def Iterator: iterator = "iterator".asInstanceOf[iterator]
   
@@ -95,9 +77,11 @@ object RemoteObjectSubtype {
   
   inline def Typedarray: typedarray = "typedarray".asInstanceOf[typedarray]
   
-  inline def V128: v128 = "v128".asInstanceOf[v128]
+  inline def Wasmvalue: wasmvalue = "wasmvalue".asInstanceOf[wasmvalue]
   
   inline def Weakmap: weakmap = "weakmap".asInstanceOf[weakmap]
   
   inline def Weakset: weakset = "weakset".asInstanceOf[weakset]
+  
+  inline def Webassemblymemory: webassemblymemory = "webassemblymemory".asInstanceOf[webassemblymemory]
 }

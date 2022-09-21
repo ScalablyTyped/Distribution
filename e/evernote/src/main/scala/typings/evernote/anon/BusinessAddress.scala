@@ -169,7 +169,7 @@ object BusinessAddress {
     
     inline def setRecentMailedAddressesUndefined: Self = StObject.set(x, "recentMailedAddresses", js.undefined)
     
-    inline def setRecentMailedAddressesVarargs(value: String*): Self = StObject.set(x, "recentMailedAddresses", js.Array(value :_*))
+    inline def setRecentMailedAddressesVarargs(value: String*): Self = StObject.set(x, "recentMailedAddresses", js.Array(value*))
     
     inline def setRecognitionLanguage(value: String): Self = StObject.set(x, "recognitionLanguage", value.asInstanceOf[js.Any])
     
@@ -223,6 +223,6 @@ object BusinessAddress {
     
     inline def setViewedPromotionsUndefined: Self = StObject.set(x, "viewedPromotions", js.undefined)
     
-    inline def setViewedPromotionsVarargs(value: String*): Self = StObject.set(x, "viewedPromotions", js.Array(value :_*))
+    inline def setViewedPromotionsVarargs(value: String*): Self = StObject.set(x, "viewedPromotions", js.Array(value*))
   }
 }

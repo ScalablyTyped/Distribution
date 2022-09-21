@@ -39,7 +39,7 @@ object EcommerceData {
     
     inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    inline def setProductsVarargs(value: ProductData*): Self = StObject.set(x, "products", js.Array(value :_*))
+    inline def setProductsVarargs(value: ProductData*): Self = StObject.set(x, "products", js.Array(value*))
     
     inline def setTransaction(value: TransactionData): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     

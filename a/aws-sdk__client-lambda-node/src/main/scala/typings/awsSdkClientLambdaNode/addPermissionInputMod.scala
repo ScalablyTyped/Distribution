@@ -8,5 +8,5 @@ object addPermissionInputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/AddPermissionInput", "AddPermissionInput")
   @js.native
-  val AddPermissionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AddPermissionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -8,10 +8,10 @@ object global {
   
   @JSGlobal("MockAjax")
   @js.native
-  class MockAjax protected ()
+  open class MockAjax protected ()
     extends StObject
        with typings.jasmineAjax.MockAjax {
-    def this(globals: js.Any) = this()
+    def this(globals: Any) = this()
   }
   
   object jasmine {

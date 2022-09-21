@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GSSolverOptions extends StObject {
+trait GSSolverOptions
+  extends StObject
+     with SolverOptions {
+  
+  var frictionIterations: js.UndefOr[Double] = js.undefined
   
   var iterations: js.UndefOr[Double] = js.undefined
   
@@ -18,6 +22,10 @@ object GSSolverOptions {
   }
   
   extension [Self <: GSSolverOptions](x: Self) {
+    
+    inline def setFrictionIterations(value: Double): Self = StObject.set(x, "frictionIterations", value.asInstanceOf[js.Any])
+    
+    inline def setFrictionIterationsUndefined: Self = StObject.set(x, "frictionIterations", js.undefined)
     
     inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     

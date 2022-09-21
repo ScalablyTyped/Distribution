@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element The DOM element that functions as the scaling box. This element fills 100% of the width and height allotted to it.
   * @param options The set of options to be applied initially to the ViewBox control. There are currently no options on this control, and any options included in this parameter are ignored.
   **/
-class ViewBox ()
+open class ViewBox ()
   extends StObject
      with typings.winjs.WinJS.UI.ViewBox {
   def this(element: HTMLElement) = this()
-  def this(element: Unit, options: js.Any) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: Unit, options: Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
 }
 object ViewBox {
   

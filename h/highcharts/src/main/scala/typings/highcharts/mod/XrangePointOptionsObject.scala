@@ -49,7 +49,7 @@ trait XrangePointOptionsObject extends StObject {
     * values for customized functionality. Here you can add additional data for
     * your own event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Individual data label for each point. The
@@ -165,9 +165,9 @@ object XrangePointOptionsObject {
     
     inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
-    inline def setConnectVarargs(value: (String | XrangePointConnectorsOptionsObject)*): Self = StObject.set(x, "connect", js.Array(value :_*))
+    inline def setConnectVarargs(value: (String | XrangePointConnectorsOptionsObject)*): Self = StObject.set(x, "connect", js.Array(value*))
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
@@ -175,7 +175,7 @@ object XrangePointOptionsObject {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: DataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: DataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

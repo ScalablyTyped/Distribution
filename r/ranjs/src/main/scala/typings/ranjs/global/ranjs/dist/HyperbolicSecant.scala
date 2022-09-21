@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.HyperbolicSecant")
 @js.native
-class HyperbolicSecant ()
+open class HyperbolicSecant ()
   extends typings.ranjs.mod.dist.HyperbolicSecant

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFontFormattingCommand")
 @js.native
-class ChangeFontFormattingCommand ()
+open class ChangeFontFormattingCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFontFormattingCommand {
   

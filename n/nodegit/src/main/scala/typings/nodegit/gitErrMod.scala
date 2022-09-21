@@ -9,7 +9,7 @@ object gitErrMod {
   
   @JSImport("nodegit/git-err", "Giterr")
   @js.native
-  class Giterr () extends StObject
+  open class Giterr () extends StObject
   /* static members */
   object Giterr {
     

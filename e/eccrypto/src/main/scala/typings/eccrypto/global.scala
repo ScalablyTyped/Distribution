@@ -2,7 +2,7 @@ package typings.eccrypto
 
 import typings.eccrypto.anon.EphemPrivateKey
 import typings.eccrypto.mod.Ecies
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

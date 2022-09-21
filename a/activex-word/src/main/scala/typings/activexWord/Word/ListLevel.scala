@@ -26,7 +26,7 @@ trait ListLevel extends StObject {
   
   var NumberStyle: WdListNumberStyle
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PictureBullet: InlineShape
   
@@ -58,7 +58,7 @@ object ListLevel {
     NumberFormat: String,
     NumberPosition: Double,
     NumberStyle: WdListNumberStyle,
-    Parent: js.Any,
+    Parent: Any,
     PictureBullet: InlineShape,
     ResetOnHigher: Double,
     ResetOnHigherOld: Boolean,
@@ -95,7 +95,7 @@ object ListLevel {
     
     inline def setNumberStyle(value: WdListNumberStyle): Self = StObject.set(x, "NumberStyle", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPictureBullet(value: InlineShape): Self = StObject.set(x, "PictureBullet", value.asInstanceOf[js.Any])
     

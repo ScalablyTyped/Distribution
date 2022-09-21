@@ -11,9 +11,9 @@ Enable destroying a server, and all currently open connections.
 | Full name          | server-destroy |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 300 |
-| # downloads        | 47451924 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5915714.333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/isaacs/server-destroy#readme)

@@ -37,7 +37,7 @@ object XDataSource {
     DataSequences: SafeArray[XLabeledDataSequence],
     acquire: () => Unit,
     getDataSequences: () => SafeArray[XLabeledDataSequence],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataSource = {
     val __obj = js.Dynamic.literal(DataSequences = DataSequences.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDataSequences = js.Any.fromFunction0(getDataSequences), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -40,7 +40,7 @@ object QueueItem {
     
     inline def setActiveTrackIds(value: js.Array[Number]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
     
-    inline def setActiveTrackIdsVarargs(value: Number*): Self = StObject.set(x, "activeTrackIds", js.Array(value :_*))
+    inline def setActiveTrackIdsVarargs(value: Number*): Self = StObject.set(x, "activeTrackIds", js.Array(value*))
     
     inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     

@@ -8,5 +8,5 @@ object getBucketInventoryConfigurationOutputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/GetBucketInventoryConfigurationOutput", "GetBucketInventoryConfigurationOutput")
   @js.native
-  val GetBucketInventoryConfigurationOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetBucketInventoryConfigurationOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

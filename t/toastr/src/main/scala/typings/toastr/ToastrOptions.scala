@@ -1,6 +1,6 @@
 package typings.toastr
 
-import typings.jquery.JQueryMouseEventObject
+import typings.jquery.JQuery.ClickEvent
 import typings.toastr.anon.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -127,7 +127,7 @@ trait ToastrOptions extends StObject {
     * Closing cannot be prevented by ev.stopPropagation() etc.
     * @default undefined
     */
-  var onCloseClick: js.UndefOr[js.Function1[/* ev */ JQueryMouseEventObject, Unit]] = js.undefined
+  var onCloseClick: js.UndefOr[js.Function1[/* ev */ ClickEvent[Any, Any, Any, Any], Unit]] = js.undefined
   
   /**
     * onHidden function callback.
@@ -145,7 +145,7 @@ trait ToastrOptions extends StObject {
     * Function to execute on toast click. Closing cannot be prevented by ev.stopPropagation() etc.
     * @default undefined
     */
-  var onclick: js.UndefOr[js.Function1[/* ev */ JQueryMouseEventObject, Unit]] = js.undefined
+  var onclick: js.UndefOr[js.Function1[/* ev */ ClickEvent[Any, Any, Any, Any], Unit]] = js.undefined
   
   /**
     * Where toast should be displayed.
@@ -313,7 +313,7 @@ object ToastrOptions {
     
     inline def setNewestOnTopUndefined: Self = StObject.set(x, "newestOnTop", js.undefined)
     
-    inline def setOnCloseClick(value: /* ev */ JQueryMouseEventObject => Unit): Self = StObject.set(x, "onCloseClick", js.Any.fromFunction1(value))
+    inline def setOnCloseClick(value: /* ev */ ClickEvent[Any, Any, Any, Any] => Unit): Self = StObject.set(x, "onCloseClick", js.Any.fromFunction1(value))
     
     inline def setOnCloseClickUndefined: Self = StObject.set(x, "onCloseClick", js.undefined)
     
@@ -325,7 +325,7 @@ object ToastrOptions {
     
     inline def setOnShownUndefined: Self = StObject.set(x, "onShown", js.undefined)
     
-    inline def setOnclick(value: /* ev */ JQueryMouseEventObject => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
+    inline def setOnclick(value: /* ev */ ClickEvent[Any, Any, Any, Any] => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
     inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     

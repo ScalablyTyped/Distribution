@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object rollupPluginTypescript2Strings {
   
   @js.native
-  sealed trait Partial extends StObject
-  inline def Partial: Partial = "Partial".asInstanceOf[Partial]
-  
-  @js.native
   sealed trait dts extends StObject
   inline def dts: dts = "dts".asInstanceOf[dts]
   

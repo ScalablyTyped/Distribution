@@ -25,7 +25,7 @@ object JSPrintManager {
   
   inline def getPrintersInfo(): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrintersInfo")().asInstanceOf[js.Promise[js.Object]]
   
-  inline def showAbout(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showAbout")().asInstanceOf[js.Promise[js.Any]]
+  inline def showAbout(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showAbout")().asInstanceOf[js.Promise[Any]]
   
   inline def start(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[Unit]]
   inline def start(secure: Boolean): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(secure.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
@@ -38,7 +38,7 @@ object JSPrintManager {
   
   inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
   
-  inline def updateClient(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateClient")().asInstanceOf[js.Promise[js.Any]]
+  inline def updateClient(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateClient")().asInstanceOf[js.Promise[Any]]
   
   @JSImport("jsprintmanager", "JSPM.JSPrintManager.websocket_status")
   @js.native

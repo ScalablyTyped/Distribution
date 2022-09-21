@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.AbstractRequest")
 @js.native
-class AbstractRequest protected ()
+open class AbstractRequest protected ()
   extends StObject
      with typings.preloadjs.createjs.AbstractRequest {
   def this(item: typings.preloadjs.createjs.LoadItem) = this()

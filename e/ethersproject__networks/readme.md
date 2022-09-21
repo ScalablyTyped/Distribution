@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__networks
 
-Typings are for version 5.0.5
+Typings are for version 5.7.1
 
 ## Library description:
 Network definitions for ethers.
@@ -10,10 +10,10 @@ Network definitions for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/networks |
 | Keywords           | Ethereum, ethers |
-| # releases         | 30 |
-| # dependents       | 27 |
-| # downloads        | 1598674 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 3789905.3333333335 |
+| # stars            | 5632.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

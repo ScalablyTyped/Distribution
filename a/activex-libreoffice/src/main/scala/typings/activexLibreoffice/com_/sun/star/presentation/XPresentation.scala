@@ -25,7 +25,7 @@ object XPresentation {
   inline def apply(
     acquire: () => Unit,
     end: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     rehearseTimings: () => Unit,
     release: () => Unit,
     start: () => Unit

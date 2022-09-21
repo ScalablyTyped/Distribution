@@ -13,28 +13,28 @@ object mod {
   
   @JSImport("reactabular-sticky", "Body")
   @js.native
-  class Body protected ()
-    extends Component[StickyBodyProps & BodyProps, js.Object, js.Any] {
+  open class Body protected ()
+    extends Component[StickyBodyProps & BodyProps, js.Object, Any] {
     def this(props: StickyBodyProps & BodyProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: StickyBodyProps & BodyProps, context: js.Any) = this()
+    def this(props: StickyBodyProps & BodyProps, context: Any) = this()
     
     var ref: HTMLElement = js.native
   }
   
   @JSImport("reactabular-sticky", "Header")
   @js.native
-  class Header protected ()
-    extends Component[StickyHeaderProps & HeaderProps, js.Object, js.Any] {
+  open class Header protected ()
+    extends Component[StickyHeaderProps & HeaderProps, js.Object, Any] {
     def this(props: StickyHeaderProps & HeaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: StickyHeaderProps & HeaderProps, context: js.Any) = this()
+    def this(props: StickyHeaderProps & HeaderProps, context: Any) = this()
     
     var container: HTMLElement = js.native
     

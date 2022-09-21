@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object literalTypesMod {
   
-  @JSImport("inversify/dts/constants/literal_types", "BindingScopeEnum")
+  @JSImport("inversify/lib/constants/literal_types", "BindingScopeEnum")
   @js.native
   val BindingScopeEnum: typings.inversify.interfacesMod.interfaces.BindingScopeEnum = js.native
   
-  @JSImport("inversify/dts/constants/literal_types", "BindingTypeEnum")
+  @JSImport("inversify/lib/constants/literal_types", "BindingTypeEnum")
   @js.native
   val BindingTypeEnum: typings.inversify.interfacesMod.interfaces.BindingTypeEnum = js.native
   
-  @JSImport("inversify/dts/constants/literal_types", "TargetTypeEnum")
+  @JSImport("inversify/lib/constants/literal_types", "TargetTypeEnum")
   @js.native
   val TargetTypeEnum: typings.inversify.interfacesMod.interfaces.TargetTypeEnum = js.native
 }

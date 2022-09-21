@@ -10,7 +10,7 @@ object projectVariablesMod {
   
   @JSImport("gitlab/dist/types/core/services/ProjectVariables", "ProjectVariables")
   @js.native
-  class ProjectVariables protected () extends ResourceVariables {
+  open class ProjectVariables protected () extends ResourceVariables {
     def this(options: BaseServiceOptions) = this()
   }
 }

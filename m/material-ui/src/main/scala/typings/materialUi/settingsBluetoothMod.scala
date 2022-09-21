@@ -10,10 +10,10 @@ object settingsBluetoothMod {
   
   @JSImport("material-ui/svg-icons/action/settings-bluetooth", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsBluetooth
+  open class default () extends ActionSettingsBluetooth
   
   @JSImport("material-ui/svg-icons/action/settings-bluetooth", "ActionSettingsBluetooth")
   @js.native
-  class ActionSettingsBluetooth ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsBluetooth ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

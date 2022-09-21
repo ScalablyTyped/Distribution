@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object mergeMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Merge", JSImport.Default)
   @js.native
-  val default: SFC[MergeProps] = js.native
+  val default: FC[MergeProps] = js.native
   
   trait MergeProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object MergeProps {
     
@@ -29,14 +29,14 @@ object mergeMod extends Shortcut {
     
     extension [Self <: MergeProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[MergeProps]
+  type _To = FC[MergeProps]
   
   /* This means you don't have to write `default`, but can instead just say `mergeMod.foo` */
-  override def _to: SFC[MergeProps] = default
+  override def _to: FC[MergeProps] = default
 }

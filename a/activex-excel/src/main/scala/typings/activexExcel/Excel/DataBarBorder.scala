@@ -15,7 +15,7 @@ trait DataBarBorder extends StObject {
   /* private */ @JSName("Excel.DataBarBorder_typekey")
   var ExcelDotDataBarBorder_typekey: DataBarBorder
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Type: XlDataBarBorderType
 }
@@ -26,7 +26,7 @@ object DataBarBorder {
     Color: FormatColor,
     Creator: XlCreator,
     ExcelDotDataBarBorder_typekey: DataBarBorder,
-    Parent: js.Any,
+    Parent: Any,
     Type: XlDataBarBorderType
   ): DataBarBorder = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object DataBarBorder {
     
     inline def setExcelDotDataBarBorder_typekey(value: DataBarBorder): Self = StObject.set(x, "Excel.DataBarBorder_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setType(value: XlDataBarBorderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

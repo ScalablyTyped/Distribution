@@ -49,6 +49,6 @@ object BatchListIndex {
     
     inline def setRangesOnIndexedValuesUndefined: Self = StObject.set(x, "RangesOnIndexedValues", js.undefined)
     
-    inline def setRangesOnIndexedValuesVarargs(value: ObjectAttributeRange*): Self = StObject.set(x, "RangesOnIndexedValues", js.Array(value :_*))
+    inline def setRangesOnIndexedValuesVarargs(value: ObjectAttributeRange*): Self = StObject.set(x, "RangesOnIndexedValues", js.Array(value*))
   }
 }

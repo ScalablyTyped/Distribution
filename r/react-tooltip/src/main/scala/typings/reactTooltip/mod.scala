@@ -18,8 +18,8 @@ object mod {
   
   @JSImport("react-tooltip", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TooltipProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TooltipProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -107,7 +107,7 @@ object mod {
     inline def top: typings.reactTooltip.reactTooltipStrings.top = "top".asInstanceOf[typings.reactTooltip.reactTooltipStrings.top]
   }
   
-  type ReactTooltip = Component[TooltipProps, js.Object, js.Any]
+  type ReactTooltip = Component[TooltipProps, js.Object, Any]
   
   trait TooltipProps extends StObject {
     
@@ -219,6 +219,9 @@ object mod {
     // Hide the tooltip when risizing the window;
     // default = true
     var resizeHide: js.UndefOr[Boolean] = js.undefined
+    
+    // Aria role for the tooltip
+    var role: js.UndefOr[String] = js.undefined
     
     // Hide the tooltip when scrolling;
     // default = true
@@ -373,6 +376,10 @@ object mod {
       
       inline def setResizeHideUndefined: Self = StObject.set(x, "resizeHide", js.undefined)
       
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
       inline def setScrollHide(value: Boolean): Self = StObject.set(x, "scrollHide", value.asInstanceOf[js.Any])
       
       inline def setScrollHideUndefined: Self = StObject.set(x, "scrollHide", js.undefined)
@@ -422,6 +429,6 @@ object mod {
   @js.native
   trait VoidFunc extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
 }

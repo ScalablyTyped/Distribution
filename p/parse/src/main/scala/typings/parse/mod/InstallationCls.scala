@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("parse", "Installation")
 @js.native
-class InstallationCls[T /* <: Attributes */] protected ()
+open class InstallationCls[T /* <: Attributes */] protected ()
   extends StObject
      with typings.parse.mod.global.Parse.Installation[T] {
   def this(attributes: T) = this()

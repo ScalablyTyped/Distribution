@@ -13,11 +13,30 @@ trait VirtualAuthenticatorOptions extends StObject {
   var automaticPresenceSimulation: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Defaults to ctap2_0. Ignored if |protocol| == u2f.
+    */
+  var ctap2Version: js.UndefOr[Ctap2Version] = js.undefined
+  
+  /**
+    * If set to true, the authenticator will support the credBlob extension.
+    * https://fidoalliance.org/specs/fido-v2.1-rd-20201208/fido-client-to-authenticator-protocol-v2.1-rd-20201208.html#sctn-credBlob-extension
+    * Defaults to false.
+    */
+  var hasCredBlob: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If set to true, the authenticator will support the largeBlob extension.
     * https://w3c.github.io/webauthn#largeBlob
     * Defaults to false.
     */
   var hasLargeBlob: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If set to true, the authenticator will support the minPinLength extension.
+    * https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-20210615.html#sctn-minpinlength-extension
+    * Defaults to false.
+    */
+  var hasMinPinLength: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defaults to false.
@@ -52,9 +71,21 @@ object VirtualAuthenticatorOptions {
     
     inline def setAutomaticPresenceSimulationUndefined: Self = StObject.set(x, "automaticPresenceSimulation", js.undefined)
     
+    inline def setCtap2Version(value: Ctap2Version): Self = StObject.set(x, "ctap2Version", value.asInstanceOf[js.Any])
+    
+    inline def setCtap2VersionUndefined: Self = StObject.set(x, "ctap2Version", js.undefined)
+    
+    inline def setHasCredBlob(value: Boolean): Self = StObject.set(x, "hasCredBlob", value.asInstanceOf[js.Any])
+    
+    inline def setHasCredBlobUndefined: Self = StObject.set(x, "hasCredBlob", js.undefined)
+    
     inline def setHasLargeBlob(value: Boolean): Self = StObject.set(x, "hasLargeBlob", value.asInstanceOf[js.Any])
     
     inline def setHasLargeBlobUndefined: Self = StObject.set(x, "hasLargeBlob", js.undefined)
+    
+    inline def setHasMinPinLength(value: Boolean): Self = StObject.set(x, "hasMinPinLength", value.asInstanceOf[js.Any])
+    
+    inline def setHasMinPinLengthUndefined: Self = StObject.set(x, "hasMinPinLength", js.undefined)
     
     inline def setHasResidentKey(value: Boolean): Self = StObject.set(x, "hasResidentKey", value.asInstanceOf[js.Any])
     

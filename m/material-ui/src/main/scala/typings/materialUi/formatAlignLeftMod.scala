@@ -10,10 +10,10 @@ object formatAlignLeftMod {
   
   @JSImport("material-ui/svg-icons/editor/format-align-left", JSImport.Default)
   @js.native
-  class default () extends EditorFormatAlignLeft
+  open class default () extends EditorFormatAlignLeft
   
   @JSImport("material-ui/svg-icons/editor/format-align-left", "EditorFormatAlignLeft")
   @js.native
-  class EditorFormatAlignLeft ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatAlignLeft ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

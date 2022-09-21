@@ -43,8 +43,16 @@ object jasmineStrings {
   inline def get: get = "get".asInstanceOf[get]
   
   @js.native
+  sealed trait `import` extends StObject
+  inline def `import`: `import` = "import".asInstanceOf[`import`]
+  
+  @js.native
   sealed trait objectContaining_ extends StObject
   inline def objectContaining_ : objectContaining_ = "objectContaining".asInstanceOf[objectContaining_]
+  
+  @js.native
+  sealed trait require extends StObject
+  inline def require: require = "require".asInstanceOf[require]
   
   @js.native
   sealed trait set extends StObject

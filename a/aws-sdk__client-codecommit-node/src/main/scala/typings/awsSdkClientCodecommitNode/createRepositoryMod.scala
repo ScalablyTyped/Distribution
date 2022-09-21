@@ -8,5 +8,5 @@ object createRepositoryMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/CreateRepository", "CreateRepository")
   @js.native
-  val CreateRepository: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val CreateRepository: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

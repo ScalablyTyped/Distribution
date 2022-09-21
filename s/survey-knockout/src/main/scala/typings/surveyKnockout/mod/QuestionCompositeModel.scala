@@ -6,10 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionCompositeModel")
 @js.native
-class QuestionCompositeModel protected () extends QuestionCustomModelBase {
+open class QuestionCompositeModel protected () extends QuestionCustomModelBase {
   def this(name: String, customQuestion: ComponentQuestionJSON) = this()
   
-  val contentPanel: PanelModel = js.native
+  def contentPanel: PanelModel = js.native
   
   /* protected */ def createPanel(): PanelModel = js.native
+  
+  var panelWrapper: PanelModel = js.native
+  
+  var settingNewValue: Boolean = js.native
+  
+  var textProcessing: QuestionCompositeTextProcessor = js.native
+}
+/* static members */
+object QuestionCompositeModel {
+  
+  @JSImport("survey-knockout", "QuestionCompositeModel")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "QuestionCompositeModel.ItemVariableName")
+  @js.native
+  def ItemVariableName: String = js.native
+  inline def ItemVariableName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemVariableName")(x.asInstanceOf[js.Any])
 }

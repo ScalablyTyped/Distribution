@@ -71,5 +71,5 @@ object mod {
     }
   }
   
-  type Unsubscribe = js.Function0[js.Any]
+  type Unsubscribe = js.Function0[Any]
 }

@@ -2,6 +2,7 @@ package typings.tuyaPanelKit.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactNative.anon.AutoscrollToTopThreshold
 import typings.reactNative.anon.AverageItemLength
 import typings.reactNative.anon.Changed
@@ -11,7 +12,6 @@ import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
@@ -19,13 +19,16 @@ import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeScrollEvent
 import typings.reactNative.mod.NativeSyntheticEvent
-import typings.reactNative.mod.PointPropType
+import typings.reactNative.mod.PointProp
+import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.ScrollViewProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNative.mod.ViewabilityConfigCallbackPair
 import typings.reactNative.mod.ViewabilityConfigCallbackPairs
+import typings.tuyaPanelKit.anon.`21`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-none`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-only`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`no-hide-descendants`
@@ -35,7 +38,6 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.assertive
 import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
 import typings.tuyaPanelKit.tuyaPanelKitStrings.automatic
 import typings.tuyaPanelKit.tuyaPanelKitStrings.black
-import typings.tuyaPanelKit.tuyaPanelKitStrings.button
 import typings.tuyaPanelKit.tuyaPanelKitStrings.center
 import typings.tuyaPanelKit.tuyaPanelKitStrings.default
 import typings.tuyaPanelKit.tuyaPanelKitStrings.end
@@ -47,8 +49,6 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.no
 import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
 import typings.tuyaPanelKit.tuyaPanelKitStrings.normal
 import typings.tuyaPanelKit.tuyaPanelKitStrings.polite
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_checked
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_unchecked
 import typings.tuyaPanelKit.tuyaPanelKitStrings.scrollableAxes
 import typings.tuyaPanelKit.tuyaPanelKitStrings.start
 import typings.tuyaPanelKit.tuyaPanelKitStrings.white
@@ -58,26 +58,27 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<tuya-panel-kit.tuya-panel-kit.DialogProps, 'motionType' | 'motionConfig'> */
+/* Inlined parent tuya-panel-kit.tuya-panel-kit.DialogCancelProps */
 /* Inlined parent std.Omit<tuya-panel-kit.tuya-panel-kit.TYFlatListProps<{}>, 'data' | 'renderItem'> */
 trait DialogListProps extends StObject {
   
-  var CellRendererComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
+  var CellRendererComponent: js.UndefOr[ComponentType[Any]] = js.undefined
   
-  var ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
+  var ItemSeparatorComponent: js.UndefOr[ComponentType[Any] | Null] = js.undefined
   
-  var ListEmptyComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListEmptyComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
-  var ListFooterComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListFooterComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
-  var ListFooterComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
+  var ListFooterComponentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var ListHeaderComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListHeaderComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
-  var ListHeaderComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
+  var ListHeaderComponentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
+  var StickyHeaderComponent: js.UndefOr[ComponentType[Any]] = js.undefined
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-  
-  var accessibilityComponentType: js.UndefOr[none_ | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
@@ -87,13 +88,15 @@ trait DialogListProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
+  
   var accessibilityLiveRegion: js.UndefOr[none_ | polite | assertive] = js.undefined
   
   var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
   var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
@@ -107,21 +110,67 @@ trait DialogListProps extends StObject {
   
   var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined
   
+  var automaticallyAdjustKeyboardInsets: js.UndefOr[Boolean] = js.undefined
+  
+  var automaticallyAdjustsScrollIndicatorInsets: js.UndefOr[Boolean] = js.undefined
+  
   var bounces: js.UndefOr[Boolean] = js.undefined
   
   var bouncesZoom: js.UndefOr[Boolean] = js.undefined
   
   var canCancelContentTouches: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 测试标志
+    * @defaultValue ''
+    */
+  /**
+    * @language en-US
+    * @description Test flag
+    * @defaultValue ''
+    */
+  var cancelAccessibilityLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * @language zh-CN
+    * @description 取消文字
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Cancellation text
+    * @defaultValue null
+    */
   var cancelText: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 取消文字样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Cancellation text style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  var cancelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  
   var centerContent: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var collapsable: js.UndefOr[Boolean] = js.undefined
   
   var columnWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var confirmText: String
+  var confirmAccessibilityLabel: js.UndefOr[String] = js.undefined
+  
+  var confirmText: js.UndefOr[String] = js.undefined
+  
+  var confirmTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -129,10 +178,22 @@ trait DialogListProps extends StObject {
   
   var contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.undefined
   
-  var contentOffset: js.UndefOr[PointPropType] = js.undefined
+  var contentOffset: js.UndefOr[PointProp] = js.undefined
   
   var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description Checkbox 数据源
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/9c5d06d5adde673df002d70c2c51a6f63213a282/types/tuya-panel-kit/index.d.ts#L1610">DialogCheckbox[]</a>
+    * @defaultValue 5
+    */
+  /**
+    * @language en-US
+    * @description Checkbox data source
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/9c5d06d5adde673df002d70c2c51a6f63213a282/types/tuya-panel-kit/index.d.ts#L1610">DialogCheckbox[]</a>
+    * @defaultValue 5
+    */
   var dataSource: js.Array[DialogList]
   
   var debug: js.UndefOr[Boolean] = js.undefined
@@ -149,7 +210,7 @@ trait DialogListProps extends StObject {
   
   var endFillColor: js.UndefOr[ColorValue] = js.undefined
   
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[Any] = js.undefined
   
   var fadingEdgeLength: js.UndefOr[Double] = js.undefined
   
@@ -157,15 +218,19 @@ trait DialogListProps extends StObject {
   
   var focusable: js.UndefOr[Boolean] = js.undefined
   
-  var getItem: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, js.Object]] = js.undefined
+  var footerWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, Double]] = js.undefined
+  var getItem: js.UndefOr[js.Function2[/* data */ Any, /* index */ Double, js.Object]] = js.undefined
+  
+  var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
   
   var getItemLayout: js.UndefOr[
     js.Function2[/* data */ js.UndefOr[js.Array[js.Object] | Null], /* index */ Double, Index]
   ] = js.undefined
   
   var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
+  
+  var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var hitSlop: js.UndefOr[Insets] = js.undefined
   
@@ -195,10 +260,32 @@ trait DialogListProps extends StObject {
   
   var listKey: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 列表样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description List container style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var listStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var maintainVisibleContentPosition: js.UndefOr[Null | AutoscrollToTopThreshold] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最大列表项
+    * @defaultValue 5
+    */
+  /**
+    * @language en-US
+    * @description Largest list item
+    * @defaultValue 5
+    */
   var maxItemNum: js.UndefOr[Double] = js.undefined
   
   var maxToRenderPerBatch: js.UndefOr[Double] = js.undefined
@@ -221,7 +308,19 @@ trait DialogListProps extends StObject {
   
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 取消点击回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of clicking the cancel button
+    * @defaultValue () => {}
+    */
   var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `21`, Unit]] = js.undefined
   
   var onContentSizeChange: js.UndefOr[js.Function2[/* w */ Double, /* h */ Double, Unit]] = js.undefined
   
@@ -240,6 +339,30 @@ trait DialogListProps extends StObject {
   var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
   var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
+  
+  var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerCancelCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerDownCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerEnterCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerLeaveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerMoveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
   var onRefresh: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
   
@@ -339,6 +462,8 @@ trait DialogListProps extends StObject {
   
   var snapToStart: js.UndefOr[Boolean] = js.undefined
   
+  var stickyHeaderHiddenOnScroll: js.UndefOr[Boolean] = js.undefined
+  
   var stickyHeaderIndices: js.UndefOr[js.Array[Double]] = js.undefined
   
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
@@ -369,7 +494,7 @@ trait DialogListProps extends StObject {
   
   var useART: js.UndefOr[Boolean] = js.undefined
   
-  var viewabilityConfig: js.UndefOr[js.Any] = js.undefined
+  var viewabilityConfig: js.UndefOr[Any] = js.undefined
   
   var viewabilityConfigCallbackPairs: js.UndefOr[ViewabilityConfigCallbackPairs] = js.undefined
   
@@ -379,8 +504,8 @@ trait DialogListProps extends StObject {
 }
 object DialogListProps {
   
-  inline def apply(confirmText: String, dataSource: js.Array[DialogList], title: String): DialogListProps = {
-    val __obj = js.Dynamic.literal(confirmText = confirmText.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  inline def apply(dataSource: js.Array[DialogList], title: String): DialogListProps = {
+    val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogListProps]
   }
   
@@ -390,11 +515,7 @@ object DialogListProps {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-    
-    inline def setAccessibilityComponentType(value: none_ | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
@@ -412,6 +533,16 @@ object DialogListProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: none_ | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -423,12 +554,6 @@ object DialogListProps {
     inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -454,6 +579,14 @@ object DialogListProps {
     
     inline def setAutomaticallyAdjustContentInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustContentInsets", js.undefined)
     
+    inline def setAutomaticallyAdjustKeyboardInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustKeyboardInsets", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticallyAdjustKeyboardInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustKeyboardInsets", js.undefined)
+    
+    inline def setAutomaticallyAdjustsScrollIndicatorInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustsScrollIndicatorInsets", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticallyAdjustsScrollIndicatorInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustsScrollIndicatorInsets", js.undefined)
+    
     inline def setBounces(value: Boolean): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
     
     inline def setBouncesUndefined: Self = StObject.set(x, "bounces", js.undefined)
@@ -466,17 +599,31 @@ object DialogListProps {
     
     inline def setCanCancelContentTouchesUndefined: Self = StObject.set(x, "canCancelContentTouches", js.undefined)
     
+    inline def setCancelAccessibilityLabel(value: String): Self = StObject.set(x, "cancelAccessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelAccessibilityLabelUndefined: Self = StObject.set(x, "cancelAccessibilityLabel", js.undefined)
+    
     inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+    
+    inline def setCancelTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "cancelTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def setCancelTextStyleNull: Self = StObject.set(x, "cancelTextStyle", null)
+    
+    inline def setCancelTextStyleUndefined: Self = StObject.set(x, "cancelTextStyle", js.undefined)
     
     inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
-    inline def setCellRendererComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
+    inline def setCellRendererComponent(value: ComponentType[Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
     
     inline def setCellRendererComponentUndefined: Self = StObject.set(x, "CellRendererComponent", js.undefined)
     
     inline def setCenterContent(value: Boolean): Self = StObject.set(x, "centerContent", value.asInstanceOf[js.Any])
     
     inline def setCenterContentUndefined: Self = StObject.set(x, "centerContent", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     
@@ -488,7 +635,19 @@ object DialogListProps {
     
     inline def setColumnWrapperStyleUndefined: Self = StObject.set(x, "columnWrapperStyle", js.undefined)
     
+    inline def setConfirmAccessibilityLabel(value: String): Self = StObject.set(x, "confirmAccessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def setConfirmAccessibilityLabelUndefined: Self = StObject.set(x, "confirmAccessibilityLabel", js.undefined)
+    
     inline def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
+    
+    inline def setConfirmTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "confirmTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def setConfirmTextStyleNull: Self = StObject.set(x, "confirmTextStyle", null)
+    
+    inline def setConfirmTextStyleUndefined: Self = StObject.set(x, "confirmTextStyle", js.undefined)
+    
+    inline def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
     
     inline def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentContainerStyle", value.asInstanceOf[js.Any])
     
@@ -504,7 +663,7 @@ object DialogListProps {
     
     inline def setContentInsetUndefined: Self = StObject.set(x, "contentInset", js.undefined)
     
-    inline def setContentOffset(value: PointPropType): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
+    inline def setContentOffset(value: PointProp): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
     
     inline def setContentOffsetUndefined: Self = StObject.set(x, "contentOffset", js.undefined)
     
@@ -516,7 +675,7 @@ object DialogListProps {
     
     inline def setDataSource(value: js.Array[DialogList]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    inline def setDataSourceVarargs(value: DialogList*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: DialogList*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
@@ -546,7 +705,7 @@ object DialogListProps {
     
     inline def setEndFillColorUndefined: Self = StObject.set(x, "endFillColor", js.undefined)
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     
@@ -562,9 +721,15 @@ object DialogListProps {
     
     inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
     
-    inline def setGetItem(value: (/* data */ js.Any, /* index */ Double) => js.Object): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
+    inline def setFooterWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "footerWrapperStyle", value.asInstanceOf[js.Any])
     
-    inline def setGetItemCount(value: /* data */ js.Any => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction1(value))
+    inline def setFooterWrapperStyleNull: Self = StObject.set(x, "footerWrapperStyle", null)
+    
+    inline def setFooterWrapperStyleUndefined: Self = StObject.set(x, "footerWrapperStyle", js.undefined)
+    
+    inline def setGetItem(value: (/* data */ Any, /* index */ Double) => js.Object): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
+    
+    inline def setGetItemCount(value: /* data */ Any => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction1(value))
     
     inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
     
@@ -577,6 +742,12 @@ object DialogListProps {
     inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
     
     inline def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
+    
+    inline def setHeaderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderStyleNull: Self = StObject.set(x, "headerStyle", null)
+    
+    inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
     
     inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
@@ -620,7 +791,7 @@ object DialogListProps {
     
     inline def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
     
-    inline def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    inline def setItemSeparatorComponent(value: ComponentType[Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     inline def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
     
@@ -642,17 +813,17 @@ object DialogListProps {
     
     inline def setLegacyImplementationUndefined: Self = StObject.set(x, "legacyImplementation", js.undefined)
     
-    inline def setListEmptyComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
+    inline def setListEmptyComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
     
     inline def setListEmptyComponentNull: Self = StObject.set(x, "ListEmptyComponent", null)
     
     inline def setListEmptyComponentUndefined: Self = StObject.set(x, "ListEmptyComponent", js.undefined)
     
-    inline def setListFooterComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
+    inline def setListFooterComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
     
     inline def setListFooterComponentNull: Self = StObject.set(x, "ListFooterComponent", null)
     
-    inline def setListFooterComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
+    inline def setListFooterComponentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
     
     inline def setListFooterComponentStyleNull: Self = StObject.set(x, "ListFooterComponentStyle", null)
     
@@ -660,11 +831,11 @@ object DialogListProps {
     
     inline def setListFooterComponentUndefined: Self = StObject.set(x, "ListFooterComponent", js.undefined)
     
-    inline def setListHeaderComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
+    inline def setListHeaderComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
     
     inline def setListHeaderComponentNull: Self = StObject.set(x, "ListHeaderComponent", null)
     
-    inline def setListHeaderComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
+    inline def setListHeaderComponentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
     
     inline def setListHeaderComponentStyleNull: Self = StObject.set(x, "ListHeaderComponentStyle", null)
     
@@ -736,6 +907,10 @@ object DialogListProps {
     
     inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
+    inline def setOnConfirm(value: (/* data */ Any, /* args */ `21`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+    
+    inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
+    
     inline def setOnContentSizeChange(value: (/* w */ Double, /* h */ Double) => Unit): Self = StObject.set(x, "onContentSizeChange", js.Any.fromFunction2(value))
     
     inline def setOnContentSizeChangeUndefined: Self = StObject.set(x, "onContentSizeChange", js.undefined)
@@ -775,6 +950,54 @@ object DialogListProps {
     inline def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
     
     inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
+    
+    inline def setOnPointerCancel(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerCancelCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancelCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
+    
+    inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+    
+    inline def setOnPointerDown(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDownCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
+    
+    inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+    
+    inline def setOnPointerEnter(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnterCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
+    
+    inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+    
+    inline def setOnPointerLeave(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeaveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
+    
+    inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+    
+    inline def setOnPointerMove(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMoveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
+    
+    inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+    
+    inline def setOnPointerUp(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUpCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
+    
+    inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
     inline def setOnRefresh(value: () => Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
     
@@ -976,17 +1199,25 @@ object DialogListProps {
     
     inline def setSnapToOffsetsUndefined: Self = StObject.set(x, "snapToOffsets", js.undefined)
     
-    inline def setSnapToOffsetsVarargs(value: Double*): Self = StObject.set(x, "snapToOffsets", js.Array(value :_*))
+    inline def setSnapToOffsetsVarargs(value: Double*): Self = StObject.set(x, "snapToOffsets", js.Array(value*))
     
     inline def setSnapToStart(value: Boolean): Self = StObject.set(x, "snapToStart", value.asInstanceOf[js.Any])
     
     inline def setSnapToStartUndefined: Self = StObject.set(x, "snapToStart", js.undefined)
     
+    inline def setStickyHeaderComponent(value: ComponentType[Any]): Self = StObject.set(x, "StickyHeaderComponent", value.asInstanceOf[js.Any])
+    
+    inline def setStickyHeaderComponentUndefined: Self = StObject.set(x, "StickyHeaderComponent", js.undefined)
+    
+    inline def setStickyHeaderHiddenOnScroll(value: Boolean): Self = StObject.set(x, "stickyHeaderHiddenOnScroll", value.asInstanceOf[js.Any])
+    
+    inline def setStickyHeaderHiddenOnScrollUndefined: Self = StObject.set(x, "stickyHeaderHiddenOnScroll", js.undefined)
+    
     inline def setStickyHeaderIndices(value: js.Array[Double]): Self = StObject.set(x, "stickyHeaderIndices", value.asInstanceOf[js.Any])
     
     inline def setStickyHeaderIndicesUndefined: Self = StObject.set(x, "stickyHeaderIndices", js.undefined)
     
-    inline def setStickyHeaderIndicesVarargs(value: Double*): Self = StObject.set(x, "stickyHeaderIndices", js.Array(value :_*))
+    inline def setStickyHeaderIndicesVarargs(value: Double*): Self = StObject.set(x, "stickyHeaderIndices", js.Array(value*))
     
     inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
@@ -1048,13 +1279,13 @@ object DialogListProps {
     
     inline def setUseARTUndefined: Self = StObject.set(x, "useART", js.undefined)
     
-    inline def setViewabilityConfig(value: js.Any): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
+    inline def setViewabilityConfig(value: Any): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
     
     inline def setViewabilityConfigCallbackPairs(value: ViewabilityConfigCallbackPairs): Self = StObject.set(x, "viewabilityConfigCallbackPairs", value.asInstanceOf[js.Any])
     
     inline def setViewabilityConfigCallbackPairsUndefined: Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.undefined)
     
-    inline def setViewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.Array(value :_*))
+    inline def setViewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.Array(value*))
     
     inline def setViewabilityConfigUndefined: Self = StObject.set(x, "viewabilityConfig", js.undefined)
     

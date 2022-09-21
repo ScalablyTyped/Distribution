@@ -1,144 +1,193 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.SERVICE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountId = java.lang.String
+type AccountId = String
 
-type Arn = java.lang.String
+type Arn = String
 
-type ArnList = js.Array[typings.awsSdk.personalizeMod.Arn]
+type ArnList = js.Array[Arn]
 
-type AvroSchema = java.lang.String
+type AvroSchema = String
 
-type BatchInferenceJobs = js.Array[typings.awsSdk.personalizeMod.BatchInferenceJobSummary]
+type BatchInferenceJobs = js.Array[BatchInferenceJobSummary]
+
+type BatchSegmentJobs = js.Array[BatchSegmentJobSummary]
 
 type Boolean = scala.Boolean
 
-type Campaigns = js.Array[typings.awsSdk.personalizeMod.CampaignSummary]
+type Campaigns = js.Array[CampaignSummary]
 
-type CategoricalHyperParameterRanges = js.Array[typings.awsSdk.personalizeMod.CategoricalHyperParameterRange]
+type CategoricalHyperParameterRanges = js.Array[CategoricalHyperParameterRange]
 
-type CategoricalValue = java.lang.String
+type CategoricalValue = String
 
-type CategoricalValues = js.Array[typings.awsSdk.personalizeMod.CategoricalValue]
+type CategoricalValues = js.Array[CategoricalValue]
 
-type ContinuousHyperParameterRanges = js.Array[typings.awsSdk.personalizeMod.ContinuousHyperParameterRange]
+type ContinuousHyperParameterRanges = js.Array[ContinuousHyperParameterRange]
 
-type ContinuousMaxValue = scala.Double
+type ContinuousMaxValue = Double
 
-type ContinuousMinValue = scala.Double
+type ContinuousMinValue = Double
 
-type DatasetGroups = js.Array[typings.awsSdk.personalizeMod.DatasetGroupSummary]
+type DatasetExportJobs = js.Array[DatasetExportJobSummary]
 
-type DatasetImportJobs = js.Array[typings.awsSdk.personalizeMod.DatasetImportJobSummary]
+type DatasetGroups = js.Array[DatasetGroupSummary]
 
-type DatasetType = java.lang.String
+type DatasetImportJobs = js.Array[DatasetImportJobSummary]
 
-type Datasets = js.Array[typings.awsSdk.personalizeMod.DatasetSummary]
+type DatasetType = String
 
-type Date = typings.std.Date
+type Datasets = js.Array[DatasetSummary]
 
-type DefaultCategoricalHyperParameterRanges = js.Array[typings.awsSdk.personalizeMod.DefaultCategoricalHyperParameterRange]
+type Date = js.Date
 
-type DefaultContinuousHyperParameterRanges = js.Array[typings.awsSdk.personalizeMod.DefaultContinuousHyperParameterRange]
+type DefaultCategoricalHyperParameterRanges = js.Array[DefaultCategoricalHyperParameterRange]
 
-type DefaultIntegerHyperParameterRanges = js.Array[typings.awsSdk.personalizeMod.DefaultIntegerHyperParameterRange]
+type DefaultContinuousHyperParameterRanges = js.Array[DefaultContinuousHyperParameterRange]
 
-type Description = java.lang.String
+type DefaultIntegerHyperParameterRanges = js.Array[DefaultIntegerHyperParameterRange]
 
-type DockerURI = java.lang.String
+type Description = String
 
-type EventTrackers = js.Array[typings.awsSdk.personalizeMod.EventTrackerSummary]
+type DockerURI = String
 
-type EventType = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ECOMMERCE
+  - typings.awsSdk.awsSdkStrings.VIDEO_ON_DEMAND
+  - java.lang.String
+*/
+type Domain = _Domain | String
 
-type EventValueThreshold = java.lang.String
+type EventTrackers = js.Array[EventTrackerSummary]
 
-type FailureReason = java.lang.String
+type EventType = String
 
-type FeatureTransformationParameters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.personalizeMod.ParameterValue]
+type EventValueThreshold = String
 
-type FeaturizationParameters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.personalizeMod.ParameterValue]
+type FailureReason = String
 
-type FilterExpression = java.lang.String
+type FeatureTransformationParameters = StringDictionary[ParameterValue]
 
-type Filters = js.Array[typings.awsSdk.personalizeMod.FilterSummary]
+type FeaturizationParameters = StringDictionary[ParameterValue]
 
-type HPOObjectiveType = java.lang.String
+type FilterExpression = String
 
-type HPOResource = java.lang.String
+type Filters = js.Array[FilterSummary]
 
-type HyperParameters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.personalizeMod.ParameterValue]
+type HPOObjectiveType = String
 
-type IntegerHyperParameterRanges = js.Array[typings.awsSdk.personalizeMod.IntegerHyperParameterRange]
+type HPOResource = String
 
-type IntegerMaxValue = scala.Double
+type HyperParameters = StringDictionary[ParameterValue]
 
-type IntegerMinValue = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FULL
+  - typings.awsSdk.awsSdkStrings.INCREMENTAL
+  - java.lang.String
+*/
+type ImportMode = _ImportMode | String
 
-type KmsKeyArn = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BULK
+  - typings.awsSdk.awsSdkStrings.PUT
+  - typings.awsSdk.awsSdkStrings.ALL
+  - java.lang.String
+*/
+type IngestionMode = _IngestionMode | String
 
-type MaxResults = scala.Double
+type IntegerHyperParameterRanges = js.Array[IntegerHyperParameterRange]
 
-type MetricName = java.lang.String
+type IntegerMaxValue = Double
 
-type MetricRegex = java.lang.String
+type IntegerMinValue = Double
 
-type MetricValue = scala.Double
+type ItemAttribute = String
 
-type Metrics = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.personalizeMod.MetricValue]
+type KmsKeyArn = String
 
-type Name = java.lang.String
+type MaxResults = Double
 
-type NextToken = java.lang.String
+type MetricName = String
 
-type NumBatchResults = scala.Double
+type MetricRegex = String
 
-type ParameterName = java.lang.String
+type MetricValue = Double
 
-type ParameterValue = java.lang.String
+type Metrics = StringDictionary[MetricValue]
+
+type Name = String
+
+type NextToken = String
+
+type NumBatchResults = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LOW
+  - typings.awsSdk.awsSdkStrings.MEDIUM
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - typings.awsSdk.awsSdkStrings.OFF
+  - java.lang.String
+*/
+type ObjectiveSensitivity = _ObjectiveSensitivity | String
+
+type ParameterName = String
+
+type ParameterValue = String
 
 type PerformAutoML = scala.Boolean
 
 type PerformHPO = scala.Boolean
 
-type RecipeProvider = typings.awsSdk.awsSdkStrings.SERVICE | java.lang.String
+type RecipeProvider = SERVICE | String
 
-type RecipeType = java.lang.String
+type RecipeType = String
 
-type Recipes = js.Array[typings.awsSdk.personalizeMod.RecipeSummary]
+type Recipes = js.Array[RecipeSummary]
 
-type ResourceConfig = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.personalizeMod.ParameterValue]
+type Recommenders = js.Array[RecommenderSummary]
 
-type RoleArn = java.lang.String
+type ResourceConfig = StringDictionary[ParameterValue]
 
-type S3Location = java.lang.String
+type RoleArn = String
 
-type Schemas = js.Array[typings.awsSdk.personalizeMod.DatasetSchemaSummary]
+type S3Location = String
 
-type SolutionVersions = js.Array[typings.awsSdk.personalizeMod.SolutionVersionSummary]
+type Schemas = js.Array[DatasetSchemaSummary]
 
-type Solutions = js.Array[typings.awsSdk.personalizeMod.SolutionSummary]
+type SolutionVersions = js.Array[SolutionVersionSummary]
 
-type Status = java.lang.String
+type Solutions = js.Array[SolutionSummary]
 
-type TrackingId = java.lang.String
+type Status = String
 
-type TrainingHours = scala.Double
+type TagKey = String
 
-type TrainingInputMode = java.lang.String
+type TagKeys = js.Array[TagKey]
+
+type TagValue = String
+
+type Tags = js.Array[Tag]
+
+type TrackingId = String
+
+type TrainingHours = Double
+
+type TrainingInputMode = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FULL
   - typings.awsSdk.awsSdkStrings.UPDATE
   - java.lang.String
 */
-type TrainingMode = typings.awsSdk.personalizeMod._TrainingMode | java.lang.String
+type TrainingMode = _TrainingMode | String
 
-type TransactionsPerSecond = scala.Double
+type TransactionsPerSecond = Double
 
 type Tunable = scala.Boolean
 
@@ -147,4 +196,4 @@ type Tunable = scala.Boolean
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.personalizeMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

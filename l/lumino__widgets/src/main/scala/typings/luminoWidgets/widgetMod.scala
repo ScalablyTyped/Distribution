@@ -10,6 +10,7 @@ import typings.luminoWidgets.layoutMod.Layout
 import typings.luminoWidgets.titleMod.Title
 import typings.luminoWidgets.widgetMod.Widget.ChildMessage
 import typings.luminoWidgets.widgetMod.Widget.Flag
+import typings.luminoWidgets.widgetMod.Widget.HiddenMode
 import typings.luminoWidgets.widgetMod.Widget.IOptions
 import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import typings.std.DOMStringMap
@@ -27,19 +28,21 @@ object widgetMod {
     *
     * @param options - The options for initializing the widget.
     */
-  class Widget ()
+  open class Widget ()
     extends StObject
        with IMessageHandler
        with IObservableDisposable {
     def this(options: IOptions) = this()
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
-    /* private */ var _flags: js.Any = js.native
+    /* private */ var _flags: Any = js.native
     
-    /* private */ var _layout: js.Any = js.native
+    /* private */ var _hiddenMode: Any = js.native
     
-    /* private */ var _parent: js.Any = js.native
+    /* private */ var _layout: Any = js.native
+    
+    /* private */ var _parent: Any = js.native
     
     /**
       * Post an `'activate-request'` message to the widget.
@@ -139,6 +142,14 @@ object widgetMod {
       * @returns `true` if the node has the class, `false` otherwise.
       */
     def hasClass(name: String): Boolean = js.native
+    
+    /**
+      * Get the method for hiding the widget.
+      */
+    /**
+      * Set the method for hiding the widget.
+      */
+    var hiddenMode: HiddenMode = js.native
     
     /**
       * Hide the widget and make it hidden to its parent widget.
@@ -458,7 +469,7 @@ object widgetMod {
       */
     @JSImport("@lumino/widgets/types/widget", "Widget.ChildMessage")
     @js.native
-    class ChildMessage protected () extends Message {
+    open class ChildMessage protected () extends Message {
       /**
         * Construct a new child message.
         *
@@ -530,6 +541,51 @@ object widgetMod {
         extends StObject
            with Flag
       /* 8 */ val IsVisible: typings.luminoWidgets.widgetMod.Widget.Flag.IsVisible & Double = js.native
+    }
+    
+    @js.native
+    sealed trait HiddenMode extends StObject
+    /**
+      * The method for hiding the widget.
+      *
+      * The default is Display.
+      *
+      * Using `Scale` will often increase performance as most browsers will not
+      * trigger style computation for the `transform` action. This should be used
+      * sparingly and tested, since increasing the number of composition layers
+      * may slow things down.
+      *
+      * To ensure the transformation does not trigger style recomputation, you
+      * may need to set the widget CSS style `will-change: transform`. This
+      * should be used only when needed as it may overwhelm the browser with a
+      * high number of layers. See
+      * https://developer.mozilla.org/en-US/docs/Web/CSS/will-change
+      */
+    @JSImport("@lumino/widgets/types/widget", "Widget.HiddenMode")
+    @js.native
+    object HiddenMode extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[HiddenMode & Double] = js.native
+      
+      /**
+        * Set a `lm-mod-hidden` CSS class to hide the widget using `display:none`
+        * CSS from the standard Lumino CSS.
+        */
+      @js.native
+      sealed trait Display
+        extends StObject
+           with HiddenMode
+      /* 0 */ val Display: typings.luminoWidgets.widgetMod.Widget.HiddenMode.Display & Double = js.native
+      
+      /**
+        * Hide the widget by setting the `transform` to `'scale(0)'`.
+        */
+      @js.native
+      sealed trait Scale
+        extends StObject
+           with HiddenMode
+      /* 1 */ val Scale: typings.luminoWidgets.widgetMod.Widget.HiddenMode.Scale & Double = js.native
     }
     
     /**
@@ -692,7 +748,7 @@ object widgetMod {
       */
     @JSImport("@lumino/widgets/types/widget", "Widget.ResizeMessage")
     @js.native
-    class ResizeMessage protected () extends Message {
+    open class ResizeMessage protected () extends Message {
       /**
         * Construct a new resize message.
         *
@@ -778,6 +834,16 @@ object widgetMod {
         * The default is a new `<div>`.
         */
       var node: js.UndefOr[HTMLElement] = js.undefined
+      
+      /**
+        * The optional element tag, used for constructing the widget's node.
+        *
+        * If a pre-constructed node is provided via the `node` arg, this
+        * value is ignored.
+        */
+      var tag: js.UndefOr[
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
+          ] = js.undefined
     }
     object IOptions {
       
@@ -791,6 +857,10 @@ object widgetMod {
         inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
         
         inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+        
+        inline def setTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        
+        inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       }
     }
   }

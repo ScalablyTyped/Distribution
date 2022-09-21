@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object iterMod {
   
-  @JSImport("rrule/dist/esm/src/iter", JSImport.Namespace)
+  @JSImport("rrule/dist/esm/iter", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

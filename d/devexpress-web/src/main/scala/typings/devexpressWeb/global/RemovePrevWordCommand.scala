@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RemovePrevWordCommand")
 @js.native
-class RemovePrevWordCommand ()
+open class RemovePrevWordCommand ()
   extends StObject
      with typings.devexpressWeb.RemovePrevWordCommand {
   

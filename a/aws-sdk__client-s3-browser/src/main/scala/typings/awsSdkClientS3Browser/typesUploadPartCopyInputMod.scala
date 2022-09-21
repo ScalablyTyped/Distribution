@@ -4,7 +4,6 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.requester_
 import typings.awsSdkClientS3Browser.inputTypesUnionMod._InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
 import typings.awsSdkTypes.cryptoMod.SourceData
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +54,7 @@ object typesUploadPartCopyInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -100,7 +99,7 @@ object typesUploadPartCopyInputMod {
     /**
       * <p>Copies the object if it has been modified since the specified time.</p>
       */
-    var CopySourceIfModifiedSince: js.UndefOr[Date | String | Double] = js.undefined
+    var CopySourceIfModifiedSince: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Copies the object if its entity tag (ETag) is different than the specified ETag.</p>
@@ -110,7 +109,7 @@ object typesUploadPartCopyInputMod {
     /**
       * <p>Copies the object if it hasn't been modified since the specified time.</p>
       */
-    var CopySourceIfUnmodifiedSince: js.UndefOr[Date | String | Double] = js.undefined
+    var CopySourceIfUnmodifiedSince: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The range of bytes to copy from the source object. The range value must use the form bytes=first-last, where the first and last are the zero-based byte offsets to copy. For example, bytes=0-9 indicates that you want to copy the first ten bytes of the source. You can copy a range only if the source object is greater than 5 GB.</p>
@@ -173,7 +172,7 @@ object typesUploadPartCopyInputMod {
       inline def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -202,7 +201,7 @@ object typesUploadPartCopyInputMod {
       
       inline def setCopySourceIfMatchUndefined: Self = StObject.set(x, "CopySourceIfMatch", js.undefined)
       
-      inline def setCopySourceIfModifiedSince(value: Date | String | Double): Self = StObject.set(x, "CopySourceIfModifiedSince", value.asInstanceOf[js.Any])
+      inline def setCopySourceIfModifiedSince(value: js.Date | String | Double): Self = StObject.set(x, "CopySourceIfModifiedSince", value.asInstanceOf[js.Any])
       
       inline def setCopySourceIfModifiedSinceUndefined: Self = StObject.set(x, "CopySourceIfModifiedSince", js.undefined)
       
@@ -210,7 +209,7 @@ object typesUploadPartCopyInputMod {
       
       inline def setCopySourceIfNoneMatchUndefined: Self = StObject.set(x, "CopySourceIfNoneMatch", js.undefined)
       
-      inline def setCopySourceIfUnmodifiedSince(value: Date | String | Double): Self = StObject.set(x, "CopySourceIfUnmodifiedSince", value.asInstanceOf[js.Any])
+      inline def setCopySourceIfUnmodifiedSince(value: js.Date | String | Double): Self = StObject.set(x, "CopySourceIfUnmodifiedSince", value.asInstanceOf[js.Any])
       
       inline def setCopySourceIfUnmodifiedSinceUndefined: Self = StObject.set(x, "CopySourceIfUnmodifiedSince", js.undefined)
       

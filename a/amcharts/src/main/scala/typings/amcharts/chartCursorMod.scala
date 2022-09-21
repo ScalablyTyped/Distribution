@@ -1,7 +1,6 @@
 package typings.amcharts
 
 import typings.amcharts.anon.Delta2X
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object chartCursorMod {
   
   @JSImport("amcharts/ChartCursor", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ChartCursor
   
@@ -114,7 +113,7 @@ object chartCursorMod {
     /**
       * Removes event listener from chart object.
       */
-    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
+    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit = js.native
     
     /**
       * Specifies if cursor should only mark selected area but not zoom-in after user releases mouse button.
@@ -130,7 +129,7 @@ object chartCursorMod {
       * You can force cursor to appear at specified cateogry or date.
       */
     def showCursorAt(category: String): Unit = js.native
-    def showCursorAt(category: Date): Unit = js.native
+    def showCursorAt(category: js.Date): Unit = js.native
     
     /**
       * Specifies whether value balloons are enabled.

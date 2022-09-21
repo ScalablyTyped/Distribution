@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientServicenetworking.anon
 
-import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.PeeredDnsDomain
+import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.RemoveDnsZoneRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,10 +30,8 @@ trait UploadType extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. Parent resource identifying the connection for which the peered DNS domain will be created in the format:
-    * `services/{service}/projects/{project}/global/networks/{network}` {service} is the peering service that is managing connectivity for the service producer's organization. For
-    * Google services that support this functionality, this value is `servicenetworking.googleapis.com`. {project} is the number of the project that contains the service consumer's
-    * VPC network e.g. `12345`. {network} is the name of the service consumer's VPC network.
+    * Required. The service that is managing peering connectivity for a service producer's organization. For Google services that support this functionality, this value is
+    * `services/servicenetworking.googleapis.com`.
     */
   var parent: String
   
@@ -44,7 +42,7 @@ trait UploadType extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: PeeredDnsDomain
+  var resource: RemoveDnsZoneRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -54,7 +52,7 @@ trait UploadType extends StObject {
 }
 object UploadType {
   
-  inline def apply(parent: String, resource: PeeredDnsDomain): UploadType = {
+  inline def apply(parent: String, resource: RemoveDnsZoneRequest): UploadType = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadType]
   }
@@ -99,7 +97,7 @@ object UploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: PeeredDnsDomain): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: RemoveDnsZoneRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

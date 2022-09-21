@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@unidriver/puppeteer" : "1.2.1"
+      "@unidriver/puppeteer" : "2.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@unidriver/puppeteer" : "1.2.1"
+      "@unidriver/puppeteer" : "2.2.7"
     }
   ],
   "compile-devDependencies" : [

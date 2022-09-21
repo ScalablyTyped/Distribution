@@ -38,7 +38,7 @@ trait CalloutFormat extends StObject {
   
   val Length: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   def PresetDrop(DropType: MsoCalloutDropType): Unit
   
@@ -64,7 +64,7 @@ object CalloutFormat {
     DropType: MsoCalloutDropType,
     Gap: Double,
     Length: Double,
-    Parent: js.Any,
+    Parent: Any,
     PresetDrop: MsoCalloutDropType => Unit,
     Type: MsoCalloutType,
     WordDotCalloutFormat_typekey: CalloutFormat
@@ -104,7 +104,7 @@ object CalloutFormat {
     
     inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPresetDrop(value: MsoCalloutDropType => Unit): Self = StObject.set(x, "PresetDrop", js.Any.fromFunction1(value))
     

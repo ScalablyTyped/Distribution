@@ -2,9 +2,7 @@ package typings.webidlConversions
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.ArrayBuffer
 import typings.std.ArrayBufferLike
-import typings.std.ArrayBufferView
 import typings.webidlConversions.anon.BufferSourceOptionsallowS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,119 +14,110 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ArrayBuffer(V: js.Any): typings.std.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.ArrayBuffer]
-  inline def ArrayBuffer(V: js.Any, opts: BufferSourceOptionsallowS): typings.std.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.ArrayBuffer]
-  inline def ArrayBuffer(V: js.Any, opts: BufferSourceOptions): ArrayBufferLike = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ArrayBufferLike]
+  inline def ArrayBuffer(V: Any): ArrayBufferLike = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferLike]
+  inline def ArrayBuffer(V: Any, opts: BufferSourceOptionsallowS): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
+  inline def ArrayBuffer(V: Any, opts: BufferSourceOptions): ArrayBufferLike = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ArrayBufferLike]
   
-  inline def ArrayBufferView(V: js.Any): typings.std.ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBufferView")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.ArrayBufferView]
-  inline def ArrayBufferView(V: js.Any, opts: BufferSourceOptions): typings.std.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBufferView")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.ArrayBufferView]
+  inline def ArrayBufferView(V: Any): js.typedarray.ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBufferView")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBufferView]
+  inline def ArrayBufferView(V: Any, opts: BufferSourceOptions): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBufferView")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
   
-  inline def ArrayBuffer_ArrayBufferLike(V: js.Any): ArrayBufferLike = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferLike]
+  inline def ArrayBuffer_ArrayBuffer(V: Any): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
   
-  inline def BufferSource(V: js.Any): ArrayBuffer | ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("BufferSource")(V.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer | ArrayBufferView]
-  inline def BufferSource(V: js.Any, opts: BufferSourceOptionsallowS): ArrayBuffer | ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("BufferSource")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer | ArrayBufferView]
-  inline def BufferSource(V: js.Any, opts: BufferSourceOptions): ArrayBufferLike | ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("BufferSource")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ArrayBufferLike | ArrayBufferView]
+  inline def BufferSource(V: Any): js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("BufferSource")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView]
+  inline def BufferSource(V: Any, opts: BufferSourceOptionsallowS): js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("BufferSource")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView]
+  inline def BufferSource(V: Any, opts: BufferSourceOptions): ArrayBufferLike | js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("BufferSource")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ArrayBufferLike | js.typedarray.ArrayBufferView]
   
-  inline def ByteString(V: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ByteString")(V.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def ByteString(V: js.Any, opts: StringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ByteString")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def ByteString(V: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ByteString")(V.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ByteString(V: Any, opts: StringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ByteString")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def DOMString(V: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DOMString")(V.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def DOMString(V: js.Any, opts: StringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("DOMString")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def DOMString(V: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DOMString")(V.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def DOMString(V: Any, opts: StringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("DOMString")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def DOMTimeStamp(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DOMTimeStamp")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def DOMTimeStamp(V: js.Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("DOMTimeStamp")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def DOMTimeStamp(V: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DOMTimeStamp")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def DOMTimeStamp(V: Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("DOMTimeStamp")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def DataView(V: js.Any): typings.std.DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("DataView")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.DataView]
-  inline def DataView(V: js.Any, opts: BufferSourceOptions): typings.std.DataView = (^.asInstanceOf[js.Dynamic].applyDynamic("DataView")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.DataView]
+  inline def DataView(V: Any): js.typedarray.DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("DataView")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.DataView]
+  inline def DataView(V: Any, opts: BufferSourceOptions): js.typedarray.DataView = (^.asInstanceOf[js.Dynamic].applyDynamic("DataView")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.DataView]
   
-  inline def Float32Array(V: js.Any): typings.std.Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Float32Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Float32Array]
-  inline def Float32Array(V: js.Any, opts: BufferSourceOptions): typings.std.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Float32Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Float32Array]
+  inline def Float32Array(V: Any): js.typedarray.Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Float32Array")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array]
+  inline def Float32Array(V: Any, opts: BufferSourceOptions): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Float32Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
   
-  inline def Float64Array(V: js.Any): typings.std.Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Float64Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Float64Array]
-  inline def Float64Array(V: js.Any, opts: BufferSourceOptions): typings.std.Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Float64Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Float64Array]
+  inline def Float64Array(V: Any): js.typedarray.Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Float64Array")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float64Array]
+  inline def Float64Array(V: Any, opts: BufferSourceOptions): js.typedarray.Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Float64Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float64Array]
   
-  // tslint:disable:ban-types
-  /** @deprecated Will be removed in v7.0 */
-  inline def Function[V](V: V): js.Function | V = ^.asInstanceOf[js.Dynamic].applyDynamic("Function")(V.asInstanceOf[js.Any]).asInstanceOf[js.Function | V]
-  inline def Function[V](V: V, opts: Options): js.Function | V = (^.asInstanceOf[js.Dynamic].applyDynamic("Function")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function | V]
+  inline def Int16Array(V: Any): js.typedarray.Int16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Int16Array")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Int16Array]
+  inline def Int16Array(V: Any, opts: BufferSourceOptions): js.typedarray.Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Int16Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int16Array]
   
-  inline def Int16Array(V: js.Any): typings.std.Int16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Int16Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Int16Array]
-  inline def Int16Array(V: js.Any, opts: BufferSourceOptions): typings.std.Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Int16Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Int16Array]
+  inline def Int32Array(V: Any): js.typedarray.Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Int32Array")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Int32Array]
+  inline def Int32Array(V: Any, opts: BufferSourceOptions): js.typedarray.Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Int32Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int32Array]
   
-  inline def Int32Array(V: js.Any): typings.std.Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Int32Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Int32Array]
-  inline def Int32Array(V: js.Any, opts: BufferSourceOptions): typings.std.Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Int32Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Int32Array]
+  inline def Int8Array(V: Any): js.typedarray.Int8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Int8Array")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Int8Array]
+  inline def Int8Array(V: Any, opts: BufferSourceOptions): js.typedarray.Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Int8Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int8Array]
   
-  inline def Int8Array(V: js.Any): typings.std.Int8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Int8Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Int8Array]
-  inline def Int8Array(V: js.Any, opts: BufferSourceOptions): typings.std.Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Int8Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Int8Array]
+  inline def USVString(V: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("USVString")(V.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def USVString(V: Any, opts: StringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("USVString")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def USVString(V: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("USVString")(V.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def USVString(V: js.Any, opts: StringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("USVString")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Uint16Array(V: Any): js.typedarray.Uint16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint16Array")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint16Array]
+  inline def Uint16Array(V: Any, opts: BufferSourceOptions): js.typedarray.Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint16Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint16Array]
   
-  inline def Uint16Array(V: js.Any): typings.std.Uint16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint16Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint16Array]
-  inline def Uint16Array(V: js.Any, opts: BufferSourceOptions): typings.std.Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint16Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint16Array]
+  inline def Uint32Array(V: Any): js.typedarray.Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint32Array")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint32Array]
+  inline def Uint32Array(V: Any, opts: BufferSourceOptions): js.typedarray.Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint32Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint32Array]
   
-  inline def Uint32Array(V: js.Any): typings.std.Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint32Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint32Array]
-  inline def Uint32Array(V: js.Any, opts: BufferSourceOptions): typings.std.Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint32Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint32Array]
+  inline def Uint8Array(V: Any): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint8Array")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def Uint8Array(V: Any, opts: BufferSourceOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint8Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def Uint8Array(V: js.Any): typings.std.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint8Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
-  inline def Uint8Array(V: js.Any, opts: BufferSourceOptions): typings.std.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint8Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
-  
-  inline def Uint8ClampedArray(V: js.Any): typings.std.Uint8ClampedArray = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint8ClampedArray")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8ClampedArray]
-  inline def Uint8ClampedArray(V: js.Any, opts: BufferSourceOptions): typings.std.Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint8ClampedArray")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8ClampedArray]
-  
-  /** @deprecated Will be removed in v7.0 */
-  inline def VoidFunction[V](V: V): js.Function | (js.Function1[/* args */ Parameters[V], Unit]) = ^.asInstanceOf[js.Dynamic].applyDynamic("VoidFunction")(V.asInstanceOf[js.Any]).asInstanceOf[js.Function | (js.Function1[/* args */ Parameters[V], Unit])]
-  inline def VoidFunction[V](V: V, opts: Options): js.Function | (js.Function1[/* args */ Parameters[V], Unit]) = (^.asInstanceOf[js.Dynamic].applyDynamic("VoidFunction")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function | (js.Function1[/* args */ Parameters[V], Unit])]
+  inline def Uint8ClampedArray(V: Any): js.typedarray.Uint8ClampedArray = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint8ClampedArray")(V.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8ClampedArray]
+  inline def Uint8ClampedArray(V: Any, opts: BufferSourceOptions): js.typedarray.Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint8ClampedArray")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8ClampedArray]
   
   inline def any[V](V: V): V = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(V.asInstanceOf[js.Any]).asInstanceOf[V]
   inline def any[V](V: V, opts: Options): V = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[V]
   
-  inline def boolean(V: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(V.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def boolean(V: js.Any, opts: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def boolean(V: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(V.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def boolean(V: Any, opts: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def byte(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byte")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def byte(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byte")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def byte(V: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byte")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def byte(V: Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byte")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def double(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("double")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def double(V: js.Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("double")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def double(V: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("double")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def double(V: Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("double")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def float(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("float")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def float(V: js.Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("float")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def float(V: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("float")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def float(V: Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("float")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def long(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("long")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def long(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def long(V: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("long")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def long(V: Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def longLong(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long long")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def longLong(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def longLong(V: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long long")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def longLong(V: Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def `object`[V](V: V): (V & js.Object) | V = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(V.asInstanceOf[js.Any]).asInstanceOf[(V & js.Object) | V]
   inline def `object`[V](V: V, opts: Options): (V & js.Object) | V = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[(V & js.Object) | V]
   
-  inline def octet(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("octet")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def octet(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("octet")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def octet(V: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("octet")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def octet(V: Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("octet")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def short(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("short")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def short(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("short")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def short(V: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("short")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def short(V: Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("short")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def unrestrictedDouble(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted double")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def unrestrictedDouble(V: js.Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted double")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def undefined(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("undefined")().asInstanceOf[Unit]
+  inline def undefined(V: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("undefined")(V.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def undefined(V: Any, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("undefined")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def undefined(V: Unit, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("undefined")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def unrestrictedFloat(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted float")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def unrestrictedFloat(V: js.Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted float")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unrestrictedDouble(V: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted double")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unrestrictedDouble(V: Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted double")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def unsignedLong(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def unsignedLong(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unrestrictedFloat(V: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted float")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unrestrictedFloat(V: Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted float")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def unsignedLongLong(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long long")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def unsignedLongLong(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unsignedLong(V: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unsignedLong(V: Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def unsignedShort(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned short")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def unsignedShort(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned short")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unsignedLongLong(V: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long long")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unsignedLongLong(V: Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def void(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("void")().asInstanceOf[Unit]
-  inline def void(V: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("void")(V.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def void(V: js.Any, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("void")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def void(V: Unit, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("void")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unsignedShort(V: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned short")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def unsignedShort(V: Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned short")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   trait BufferSourceOptions
     extends StObject
@@ -154,18 +143,18 @@ object mod {
   @js.native
   trait Globals
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     def Number(): Double = js.native
-    def Number(value: js.Any): Double = js.native
+    def Number(value: Any): Double = js.native
     
     def String(): java.lang.String = js.native
-    def String(value: js.Any): java.lang.String = js.native
+    def String(value: Any): java.lang.String = js.native
     
-    var TypeError: Instantiable1[/* message */ js.UndefOr[String], typings.std.TypeError] = js.native
+    var TypeError: Instantiable1[/* message */ js.UndefOr[String], js.TypeError] = js.native
   }
   
-  type IntegerConversion = js.Function2[/* V */ js.Any, /* opts */ js.UndefOr[IntegerOptions], Double]
+  type IntegerConversion = js.Function2[/* V */ Any, /* opts */ js.UndefOr[IntegerOptions], Double]
   
   trait IntegerOptions
     extends StObject
@@ -194,7 +183,7 @@ object mod {
     }
   }
   
-  type NumberConversion = js.Function2[/* V */ js.Any, /* opts */ js.UndefOr[Options], Double]
+  type NumberConversion = js.Function2[/* V */ Any, /* opts */ js.UndefOr[Options], Double]
   
   trait Options extends StObject {
     
@@ -221,9 +210,7 @@ object mod {
     }
   }
   
-  type Parameters[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = js.Any
-  
-  type StringConversion = js.Function2[/* V */ js.Any, /* opts */ js.UndefOr[StringOptions], String]
+  type StringConversion = js.Function2[/* V */ Any, /* opts */ js.UndefOr[StringOptions], String]
   
   trait StringOptions
     extends StObject

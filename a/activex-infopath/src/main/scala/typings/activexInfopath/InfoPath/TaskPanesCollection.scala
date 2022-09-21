@@ -11,14 +11,14 @@ trait TaskPanesCollection extends StObject {
   /* private */ @JSName("InfoPath.TaskPanesCollection_typekey")
   var InfoPathDotTaskPanesCollection_typekey: TaskPanesCollection
   
-  def Item(varIndex: js.Any): TaskPaneObject
+  def Item(varIndex: Any): TaskPaneObject
 }
 object TaskPanesCollection {
   
   inline def apply(
     Count: Double,
     InfoPathDotTaskPanesCollection_typekey: TaskPanesCollection,
-    Item: js.Any => TaskPaneObject
+    Item: Any => TaskPaneObject
   ): TaskPanesCollection = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.updateDynamic("InfoPath.TaskPanesCollection_typekey")(InfoPathDotTaskPanesCollection_typekey.asInstanceOf[js.Any])
@@ -31,6 +31,6 @@ object TaskPanesCollection {
     
     inline def setInfoPathDotTaskPanesCollection_typekey(value: TaskPanesCollection): Self = StObject.set(x, "InfoPath.TaskPanesCollection_typekey", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => TaskPaneObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => TaskPaneObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

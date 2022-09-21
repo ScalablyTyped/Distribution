@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CalloutActionMenu")
 @js.native
-class CalloutActionMenu protected ()
+open class CalloutActionMenu protected ()
   extends StObject
      with typings.sharepoint.CalloutActionMenu {
-  def this(actionsId: js.Any) = this()
+  def this(actionsId: Any) = this()
   
   /* CompleteClass */
   override def addAction(action: typings.sharepoint.CalloutAction): Unit = js.native

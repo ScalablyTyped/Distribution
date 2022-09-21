@@ -19,6 +19,6 @@ object ConnectionProviderOptions {
     
     inline def setOptions(value: js.Array[ConnectionOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: ConnectionOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: ConnectionOption*): Self = StObject.set(x, "options", js.Array(value*))
   }
 }

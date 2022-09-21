@@ -6,8 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "Comment")
 @js.native
-class Comment protected ()
-  extends typings.angularCompiler.compilerMod.Comment {
-  def this(value: String, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(value: Null, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
+open class Comment protected ()
+  extends StObject
+     with Comment2 {
+  def this(value: String, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Null, sourceSpan: ParseSourceSpan) = this()
+  
+  /* CompleteClass */
+  var sourceSpan: ParseSourceSpan = js.native
+  
+  /* CompleteClass */
+  var value: String | Null = js.native
+  
+  /* CompleteClass */
+  override def visit(visitor: Visitor, context: Any): Any = js.native
 }

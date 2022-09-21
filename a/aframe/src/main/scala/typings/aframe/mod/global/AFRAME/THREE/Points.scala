@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("AFRAME.THREE.Points")
 @js.native
 /**
-	 * @param geometry An instance of Geometry or BufferGeometry.
-	 * @param material An instance of Material (optional).
-	 */
-class Points[TGeometry /* <: typings.three.geometryMod.Geometry | typings.three.bufferGeometryMod.BufferGeometry */, TMaterial /* <: typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material] */] ()
+  * @param geometry An instance of BufferGeometry.
+  * @param material An instance of Material (optional).
+  */
+open class Points[TGeometry /* <: typings.three.bufferGeometryMod.BufferGeometry */, TMaterial /* <: typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material] */] ()
   extends typings.three.mod.Points[TGeometry, TMaterial]

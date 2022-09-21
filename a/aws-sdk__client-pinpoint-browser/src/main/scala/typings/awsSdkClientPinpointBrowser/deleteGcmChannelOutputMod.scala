@@ -8,5 +8,5 @@ object deleteGcmChannelOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteGcmChannelOutput", "DeleteGcmChannelOutput")
   @js.native
-  val DeleteGcmChannelOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteGcmChannelOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mergeMod {
   
-  @JSImport("@storybook/api/dist/lib/merge", JSImport.Namespace)
+  @JSImport("@storybook/api/dist/ts3.9/lib/merge", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(a: Any, b: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

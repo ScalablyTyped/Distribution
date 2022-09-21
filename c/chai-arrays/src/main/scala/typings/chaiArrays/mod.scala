@@ -27,26 +27,38 @@ object mod extends Shortcut {
       @js.native
       trait Assert extends StObject {
         
-        def array(`val`: js.Array[js.Any]): Unit = js.native
-        def array(`val`: js.Array[js.Any], msg: String): Unit = js.native
+        def Uint16Array(`val`: Any): Unit = js.native
+        def Uint16Array(`val`: Any, msg: String): Unit = js.native
         
-        def containing(`val`: js.Array[js.Any], value: js.Any): Unit = js.native
-        def containing(`val`: js.Array[js.Any], value: js.Any, msg: String): Unit = js.native
+        def Uint32Array(`val`: Any): Unit = js.native
+        def Uint32Array(`val`: Any, msg: String): Unit = js.native
         
-        def containingAllOf(`val`: js.Array[js.Any], values: js.Array[js.Any]): Unit = js.native
-        def containingAllOf(`val`: js.Array[js.Any], values: js.Array[js.Any], msg: String): Unit = js.native
+        def Uint8Array(`val`: Any): Unit = js.native
+        def Uint8Array(`val`: Any, msg: String): Unit = js.native
         
-        def containingAnyOf(`val`: js.Array[js.Any], values: js.Array[js.Any]): Unit = js.native
-        def containingAnyOf(`val`: js.Array[js.Any], values: js.Array[js.Any], msg: String): Unit = js.native
+        def Uint8ClampedArray(`val`: Any): Unit = js.native
+        def Uint8ClampedArray(`val`: Any, msg: String): Unit = js.native
         
-        def equalTo(`val`: js.Array[js.Any], array: js.Array[js.Any]): Unit = js.native
-        def equalTo(`val`: js.Array[js.Any], array: js.Array[js.Any], msg: String): Unit = js.native
+        def array(`val`: js.Array[Any]): Unit = js.native
+        def array(`val`: js.Array[Any], msg: String): Unit = js.native
         
-        def ofSize(`val`: js.Array[js.Any], size: Double): Unit = js.native
-        def ofSize(`val`: js.Array[js.Any], size: Double, msg: String): Unit = js.native
+        def containing(`val`: js.Array[Any], value: Any): Unit = js.native
+        def containing(`val`: js.Array[Any], value: Any, msg: String): Unit = js.native
         
-        def sorted(`val`: js.Array[js.Any]): Unit = js.native
-        def sorted(`val`: js.Array[js.Any], msg: String): Unit = js.native
+        def containingAllOf(`val`: js.Array[Any], values: js.Array[Any]): Unit = js.native
+        def containingAllOf(`val`: js.Array[Any], values: js.Array[Any], msg: String): Unit = js.native
+        
+        def containingAnyOf(`val`: js.Array[Any], values: js.Array[Any]): Unit = js.native
+        def containingAnyOf(`val`: js.Array[Any], values: js.Array[Any], msg: String): Unit = js.native
+        
+        def equalTo(`val`: js.Array[Any], array: js.Array[Any]): Unit = js.native
+        def equalTo(`val`: js.Array[Any], array: js.Array[Any], msg: String): Unit = js.native
+        
+        def ofSize(`val`: js.Array[Any], size: Double): Unit = js.native
+        def ofSize(`val`: js.Array[Any], size: Double, msg: String): Unit = js.native
+        
+        def sorted(`val`: js.Array[Any]): Unit = js.native
+        def sorted(`val`: js.Array[Any], msg: String): Unit = js.native
       }
       
       @js.native
@@ -56,15 +68,23 @@ object mod extends Shortcut {
            with NumericComparison
            with TypeComparison {
         
+        def Uint16Array(): Assertion = js.native
+        
+        def Uint32Array(): Assertion = js.native
+        
+        def Uint8Array(): Assertion = js.native
+        
+        def Uint8ClampedArray(): Assertion = js.native
+        
         def array(): Assertion = js.native
         
-        def containing(value: js.Any): Assertion = js.native
+        def containing(value: Any): Assertion = js.native
         
-        def containingAllOf(values: js.Array[js.Any]): Assertion = js.native
+        def containingAllOf(values: js.Array[Any]): Assertion = js.native
         
-        def containingAnyOf(values: js.Array[js.Any]): Assertion = js.native
+        def containingAnyOf(values: js.Array[Any]): Assertion = js.native
         
-        def equalTo(arr: js.Array[js.Any]): Assertion = js.native
+        def equalTo(arr: js.Array[Any]): Assertion = js.native
         
         def ofSize(size: Double): Assertion = js.native
         

@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TestInvokeAuthorizerRequest extends StObject {
   
   /**
-    * [Optional] A key-value map of additional context variables.
+    * A key-value map of additional context variables.
     */
   var additionalContext: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
-    * [Required] Specifies a test invoke authorizer request's Authorizer ID.
+    * Specifies a test invoke authorizer request's Authorizer ID.
     */
   var authorizerId: String
   
   /**
-    * [Optional] The simulated request body of an incoming invocation request.
+    * The simulated request body of an incoming invocation request.
     */
   var body: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] A key-value map of headers to simulate an incoming invocation request. This is where the incoming authorization token, or identity source, should be specified.
+    * A key-value map of headers to simulate an incoming invocation request. This is where the incoming authorization token, or identity source, should be specified.
     */
   var headers: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
-    * [Optional] The headers as a map from string to list of values to simulate an incoming invocation request. This is where the incoming authorization token, or identity source, may be specified.
+    * The headers as a map from string to list of values to simulate an incoming invocation request. This is where the incoming authorization token, or identity source, may be specified.
     */
   var multiValueHeaders: js.UndefOr[MapOfStringToList] = js.undefined
   
   /**
-    * [Optional] The URI path, including query string, of the simulated invocation request. Use this to specify path parameters and query string parameters.
+    * The URI path, including query string, of the simulated invocation request. Use this to specify path parameters and query string parameters.
     */
   var pathWithQueryString: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
   

@@ -29,7 +29,7 @@ object IfNode {
     
     inline def setBranches(value: js.Array[IfBranchNode]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
-    inline def setBranchesVarargs(value: IfBranchNode*): Self = StObject.set(x, "branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: IfBranchNode*): Self = StObject.set(x, "branches", js.Array(value*))
     
     inline def setCodegenNode(value: IfConditionalExpression | CacheExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     

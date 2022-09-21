@@ -2,24 +2,6 @@
 # Scala.js typings for radius
 
 
-## Library description:
-RADIUS packet encoding/decoding
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | radius |
-| Keywords           | radius |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 44466 |
-| # stars            | 4 |
-
-## Links
-- [Homepage](https://github.com/nearbuy/node-radius#readme)
-- [Bugs](https://github.com/nearbuy/node-radius/issues)
-- [Repository](https://github.com/nearbuy/node-radius)
-- [Npm](https://www.npmjs.com/package/radius)
-    
 
 
 ## Note

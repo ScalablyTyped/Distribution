@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListFileSharesOutput extends StObject {
   
   /**
-    * An array of information about the file gateway's file shares.
+    * An array of information about the S3 File Gateway's file shares.
     */
   var FileShareInfoList: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareInfoList] = js.undefined
   
@@ -34,7 +34,7 @@ object ListFileSharesOutput {
     
     inline def setFileShareInfoListUndefined: Self = StObject.set(x, "FileShareInfoList", js.undefined)
     
-    inline def setFileShareInfoListVarargs(value: FileShareInfo*): Self = StObject.set(x, "FileShareInfoList", js.Array(value :_*))
+    inline def setFileShareInfoListVarargs(value: FileShareInfo*): Self = StObject.set(x, "FileShareInfoList", js.Array(value*))
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

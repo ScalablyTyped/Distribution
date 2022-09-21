@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.RangeSlider")
 @js.native
-class RangeSlider protected ()
+open class RangeSlider protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.RangeSlider {
   def this(element: Element) = this()

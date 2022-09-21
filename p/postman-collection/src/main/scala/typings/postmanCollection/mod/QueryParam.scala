@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.QueryParamDefinition because var conflicts: description, disabled, id, name. Inlined key, value, system */ @JSImport("postman-collection", "QueryParam")
 @js.native
-class QueryParam protected () extends Property[QueryParamDefinition] {
+open class QueryParam protected () extends Property[QueryParamDefinition] {
   def this(options: String) = this()
   def this(options: QueryParamDefinition) = this()
   

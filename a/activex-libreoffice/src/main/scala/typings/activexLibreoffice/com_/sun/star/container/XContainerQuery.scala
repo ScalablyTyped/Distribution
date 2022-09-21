@@ -43,7 +43,7 @@ object XContainerQuery {
     acquire: () => Unit,
     createSubSetEnumerationByProperties: SeqEquiv[NamedValue] => XEnumeration,
     createSubSetEnumerationByQuery: String => XEnumeration,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XContainerQuery = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSubSetEnumerationByProperties = js.Any.fromFunction1(createSubSetEnumerationByProperties), createSubSetEnumerationByQuery = js.Any.fromFunction1(createSubSetEnumerationByQuery), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

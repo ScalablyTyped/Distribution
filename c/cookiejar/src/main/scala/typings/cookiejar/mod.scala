@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("cookiejar", "Cookie")
   @js.native
-  class Cookie protected () extends StObject {
+  open class Cookie protected () extends StObject {
     // number of millis since 1970 at which this should be removed
     /**
       * It turns input into a Cookie (singleton if given a Cookie), the
@@ -91,7 +91,7 @@ object mod {
   
   @JSImport("cookiejar", "CookieAccessInfo")
   @js.native
-  class CookieAccessInfo protected () extends StObject {
+  open class CookieAccessInfo protected () extends StObject {
     /**
       * Class to determine matching qualities of a cookie
       * @param domain string domain to match
@@ -137,7 +137,7 @@ object mod {
   /**
     * class to hold numerous cookies from multiple domains correctly
     */
-  class CookieJar () extends StObject {
+  open class CookieJar () extends StObject {
     
     /**
       * get a cookie with the name and access_info matching

@@ -16,8 +16,6 @@ trait DictxLarge
   var small: js.UndefOr[String] = js.undefined
   
   var xlarge: js.UndefOr[String] = js.undefined
-  
-  var xsmall: js.UndefOr[String] = js.undefined
 }
 object DictxLarge {
   
@@ -43,9 +41,5 @@ object DictxLarge {
     inline def setXlarge(value: String): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
     
     inline def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
-    
-    inline def setXsmall(value: String): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
-    
-    inline def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
   }
 }

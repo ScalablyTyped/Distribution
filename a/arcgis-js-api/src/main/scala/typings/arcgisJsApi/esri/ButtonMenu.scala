@@ -10,6 +10,15 @@ trait ButtonMenu
      with Widget_ {
   
   /**
+    * When true, the widget is visually withdrawn and cannot be interacted with.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html#disabled)
+    */
+  var disabled: Boolean = js.native
+  
+  /**
     * Adds a CSS class to the menu button's DOM node.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html#iconClass)
@@ -24,7 +33,9 @@ trait ButtonMenu
   var items: js.Array[ButtonMenuItem] = js.native
   
   /**
-    * Indicates if the menu content is visible.
+    * Indicates if the menu content is open and visible.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenu.html#open)
     */

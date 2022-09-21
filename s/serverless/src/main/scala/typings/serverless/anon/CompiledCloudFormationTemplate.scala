@@ -1,5 +1,7 @@
 package typings.serverless.anon
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +10,15 @@ trait CompiledCloudFormationTemplate extends StObject {
   
   var compiledCloudFormationTemplate: Outputs
   
+  var layers: js.UndefOr[js.Array[String | (Record[String, String])]] = js.undefined
+  
   var name: String
   
   var region: String
   
   var runtime: js.UndefOr[String] = js.undefined
+  
+  var stackTags: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var stage: String
   
@@ -37,6 +43,12 @@ object CompiledCloudFormationTemplate {
     
     inline def setCompiledCloudFormationTemplate(value: Outputs): Self = StObject.set(x, "compiledCloudFormationTemplate", value.asInstanceOf[js.Any])
     
+    inline def setLayers(value: js.Array[String | (Record[String, String])]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    
+    inline def setLayersVarargs(value: (String | (Record[String, String]))*): Self = StObject.set(x, "layers", js.Array(value*))
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
@@ -44,6 +56,10 @@ object CompiledCloudFormationTemplate {
     inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
     inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+    
+    inline def setStackTags(value: StringDictionary[Any]): Self = StObject.set(x, "stackTags", value.asInstanceOf[js.Any])
+    
+    inline def setStackTagsUndefined: Self = StObject.set(x, "stackTags", js.undefined)
     
     inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait JsxAttribute
      with JsxAttributeLike
      with VariableLikeDeclaration {
   
-  val initializer: js.UndefOr[StringLiteral | JsxExpression] = js.native
+  val initializer: js.UndefOr[JsxAttributeValue] = js.native
   
   @JSName("kind")
   val kind_JsxAttribute: typings.typescript.mod.SyntaxKind.JsxAttribute = js.native

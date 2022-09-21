@@ -18,7 +18,7 @@ object angularServeMod {
   
   @JSImport("ionic/lib/project/angular/serve", "AngularServeCLI")
   @js.native
-  class AngularServeCLI protected () extends ServeCLI[AngularServeOptions] {
+  open class AngularServeCLI protected () extends ServeCLI[AngularServeOptions] {
     def this(e: ServeRunnerDeps) = this()
     
     /* protected */ def buildArchitectCommand(options: AngularServeOptions): js.Array[String] = js.native
@@ -33,7 +33,7 @@ object angularServeMod {
   
   @JSImport("ionic/lib/project/angular/serve", "AngularServeRunner")
   @js.native
-  class AngularServeRunner protected () extends ServeRunner[AngularServeOptions] {
+  open class AngularServeRunner protected () extends ServeRunner[AngularServeOptions] {
     def this(e: AngularServeRunnerDeps) = this()
     
     /* protected */ @JSName("e")

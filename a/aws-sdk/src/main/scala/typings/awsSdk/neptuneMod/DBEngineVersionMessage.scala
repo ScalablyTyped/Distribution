@@ -29,7 +29,7 @@ object DBEngineVersionMessage {
     
     inline def setDBEngineVersionsUndefined: Self = StObject.set(x, "DBEngineVersions", js.undefined)
     
-    inline def setDBEngineVersionsVarargs(value: DBEngineVersion*): Self = StObject.set(x, "DBEngineVersions", js.Array(value :_*))
+    inline def setDBEngineVersionsVarargs(value: DBEngineVersion*): Self = StObject.set(x, "DBEngineVersions", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

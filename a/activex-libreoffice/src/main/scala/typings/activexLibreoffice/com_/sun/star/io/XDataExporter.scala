@@ -28,7 +28,7 @@ object XDataExporter {
     acquire: () => Unit,
     cancel: () => Unit,
     exportData: (XOutputStream, XComponent, XDataTransferEventListener) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataExporter = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), exportData = js.Any.fromFunction3(exportData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

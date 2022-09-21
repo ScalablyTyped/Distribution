@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a set of goals that were reached in an activity.
-  */
 trait SchemaGoalSetData extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaGoalSetData {
     
     inline def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
     
-    inline def setGoalsVarargs(value: SchemaGoalData*): Self = StObject.set(x, "goals", js.Array(value :_*))
+    inline def setGoalsVarargs(value: SchemaGoalData*): Self = StObject.set(x, "goals", js.Array(value*))
   }
 }

@@ -21,7 +21,7 @@ trait MajorDimension extends StObject {
   
   /**
     * How dates, times, and durations should be represented in the output. This is ignored if value_render_option is FORMATTED_VALUE. The default dateTime render option is
-    * [DateTimeRenderOption.SERIAL_NUMBER].
+    * SERIAL_NUMBER.
     */
   var dateTimeRenderOption: js.UndefOr[String] = js.undefined
   
@@ -46,7 +46,7 @@ trait MajorDimension extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The A1 notation of the values to retrieve. */
+  /** The [A1 notation or R1C1 notation](/sheets/api/guides/concepts#cell) of the range to retrieve values from. */
   var range: String
   
   /** The ID of the spreadsheet to retrieve data from. */
@@ -58,7 +58,7 @@ trait MajorDimension extends StObject {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
   
-  /** How values should be represented in the output. The default render option is ValueRenderOption.FORMATTED_VALUE. */
+  /** How values should be represented in the output. The default render option is FORMATTED_VALUE. */
   var valueRenderOption: js.UndefOr[String] = js.undefined
 }
 object MajorDimension {

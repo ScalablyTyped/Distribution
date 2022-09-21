@@ -21,7 +21,7 @@ object SingleLayerStratum {
     getOwnerEntity: () => String,
     getUpdatableLayer: String => XUpdatableLayer,
     isEqualEntity: (String, String) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     supportsEntity: String => Boolean
   ): SingleLayerStratum = {

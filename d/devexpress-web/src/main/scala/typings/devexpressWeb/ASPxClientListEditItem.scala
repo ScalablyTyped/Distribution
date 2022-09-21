@@ -45,5 +45,5 @@ trait ASPxClientListEditItem extends StObject {
   /**
     * Gets the item's associated value.
     */
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

@@ -21,6 +21,6 @@ object Buttons {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value*))
   }
 }

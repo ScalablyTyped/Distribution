@@ -12,8 +12,8 @@ object tabMod {
   
   @JSImport("react-bootstrap/lib/Tab", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[TabProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[TabProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/Tab", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -21,7 +21,7 @@ object tabMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Tab", "Container")
   @js.native
-  class Container ()
+  open class Container ()
     extends typings.reactBootstrap.tabContainerMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Tab", "Container")
@@ -32,7 +32,7 @@ object tabMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Tab", "Content")
   @js.native
-  class Content ()
+  open class Content ()
     extends typings.reactBootstrap.tabContentMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Tab", "Content")
@@ -43,7 +43,7 @@ object tabMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Tab", "Pane")
   @js.native
-  class Pane ()
+  open class Pane ()
     extends typings.reactBootstrap.tabPaneMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Tab", "Pane")
@@ -51,9 +51,7 @@ object tabMod {
   def Pane: Instantiable0[typings.reactBootstrap.tabPaneMod.^] = js.native
   inline def Pane_=(x: Instantiable0[typings.reactBootstrap.tabPaneMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pane")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Tab
-    extends Component[TabProps, js.Object, js.Any]
+  type Tab = Component[TabProps, js.Object, Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Tab.Tab>[P]} */ trait TabProps
@@ -66,7 +64,7 @@ object tabMod {
     
     var bsClass: js.UndefOr[String] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.undefined
+    var eventKey: js.UndefOr[Any] = js.undefined
     
     var tabClassName: js.UndefOr[String] = js.undefined
     
@@ -96,7 +94,7 @@ object tabMod {
       
       inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
       inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHiddenField")
 @js.native
-class ASPxClientHiddenField ()
+open class ASPxClientHiddenField ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHiddenField {
   
@@ -23,7 +23,7 @@ class ASPxClientHiddenField ()
     * @param propertyValue An object that represents the value of the specified property.
     */
   /* CompleteClass */
-  override def Add(propertyName: String, propertyValue: js.Any): Unit = js.native
+  override def Add(propertyName: String, propertyValue: Any): Unit = js.native
   
   /**
     * Modifies the control's size against the control's container.
@@ -67,7 +67,7 @@ class ASPxClientHiddenField ()
     * @param propertyName A string value that specifies the property name.
     */
   /* CompleteClass */
-  override def Get(propertyName: String): js.Any = js.native
+  override def Get(propertyName: String): Any = js.native
   
   /** @deprecated Use the GetVisible method instead. */
   /**
@@ -86,13 +86,13 @@ class ASPxClientHiddenField ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -145,7 +145,7 @@ class ASPxClientHiddenField ()
     * @param propertyValue An object that represents the property value.
     */
   /* CompleteClass */
-  override def Set(propertyName: String, propertyValue: js.Any): Unit = js.native
+  override def Set(propertyName: String, propertyValue: Any): Unit = js.native
   
   /** @deprecated Use the SetVisible method instead. */
   /**
@@ -192,5 +192,5 @@ object ASPxClientHiddenField {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientHiddenField = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientHiddenField]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientHiddenField = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientHiddenField]
 }

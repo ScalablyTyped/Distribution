@@ -34,12 +34,12 @@ object UserProfiles {
   /** Returns information about a request to follow an item. */
   @JSGlobal("SP.UserProfiles.FollowResult")
   @js.native
-  class FollowResult ()
+  open class FollowResult ()
     extends StObject
        with typings.sharepoint.SP.UserProfiles.FollowResult {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -48,7 +48,7 @@ object UserProfiles {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Contains the item being followed. */
     /* CompleteClass */
@@ -89,7 +89,7 @@ object UserProfiles {
   /** Provides access to followed content items. */
   @JSGlobal("SP.UserProfiles.FollowedContent")
   @js.native
-  class FollowedContent protected ()
+  open class FollowedContent protected ()
     extends StObject
        with typings.sharepoint.SP.UserProfiles.FollowedContent {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext) = this()
@@ -155,12 +155,12 @@ object UserProfiles {
   /** Represents a followed content resource. */
   @JSGlobal("SP.UserProfiles.FollowedItem")
   @js.native
-  class FollowedItem ()
+  open class FollowedItem ()
     extends StObject
        with typings.sharepoint.SP.UserProfiles.FollowedItem {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -169,11 +169,11 @@ object UserProfiles {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Additional metadata associated with this item */
     /* CompleteClass */
-    override def get_data(): StringDictionary[js.Any] = js.native
+    override def get_data(): StringDictionary[Any] = js.native
     
     /** Specifies the type of the file if this item is a file. Otherwise, this property is the empty string. */
     /* CompleteClass */
@@ -252,7 +252,7 @@ object UserProfiles {
     
     /** Additional metadata associated with this item */
     /* CompleteClass */
-    override def set_data(value: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
+    override def set_data(value: StringDictionary[Any]): StringDictionary[Any] = js.native
     
     /** Specifies the type of the file if this item is a file. Otherwise, this property is the empty string. */
     /* CompleteClass */
@@ -324,7 +324,7 @@ object UserProfiles {
     
     /** Specifies the site identification (GUID) in the Content database for this item if it is a site, or the identification of its parent site if this item is a document. */
     /* CompleteClass */
-    override def set_webId(value: typings.sharepoint.SP.Guid): js.Any = js.native
+    override def set_webId(value: typings.sharepoint.SP.Guid): Any = js.native
     
     /* CompleteClass */
     override def writeToXml(
@@ -336,7 +336,7 @@ object UserProfiles {
   /** Contains additional data that can be attached to a FollowedItem object */
   @JSGlobal("SP.UserProfiles.FollowedItemData")
   @js.native
-  class FollowedItemData ()
+  open class FollowedItemData ()
     extends StObject
        with typings.sharepoint.SP.UserProfiles.FollowedItemData
   
@@ -372,12 +372,12 @@ object UserProfiles {
   
   @JSGlobal("SP.UserProfiles.HashTag")
   @js.native
-  class HashTag ()
+  open class HashTag ()
     extends StObject
        with typings.sharepoint.SP.UserProfiles.HashTag {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -386,7 +386,7 @@ object UserProfiles {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_name(): String = js.native
@@ -448,7 +448,7 @@ object UserProfiles {
     However, PeopleManager provides some methods that SocialFollowingManager doesn't. */
   @JSGlobal("SP.UserProfiles.PeopleManager")
   @js.native
-  class PeopleManager protected ()
+  open class PeopleManager protected ()
     extends StObject
        with typings.sharepoint.SP.UserProfiles.PeopleManager {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext) = this()
@@ -474,7 +474,7 @@ object UserProfiles {
   /** Represents user properties. */
   @JSGlobal("SP.UserProfiles.PersonProperties")
   @js.native
-  class PersonProperties ()
+  open class PersonProperties ()
     extends StObject
        with typings.sharepoint.SP.UserProfiles.PersonProperties
   
@@ -549,7 +549,7 @@ object UserProfiles {
   /** Provides an alternate entry point to user profiles rather than calling methods directly. */
   @JSGlobal("SP.UserProfiles.ProfileLoader")
   @js.native
-  class ProfileLoader ()
+  open class ProfileLoader ()
     extends StObject
        with typings.sharepoint.SP.UserProfiles.ProfileLoader
   object ProfileLoader {
@@ -584,14 +584,14 @@ object UserProfiles {
     To access user properties from client-side code, use PeopleManager */
   @JSGlobal("SP.UserProfiles.UserProfile")
   @js.native
-  class UserProfile ()
+  open class UserProfile ()
     extends StObject
        with typings.sharepoint.SP.UserProfiles.UserProfile
   
   /** Represents a set of user profile properties for a specified user. */
   @JSGlobal("SP.UserProfiles.UserProfilePropertiesForUser")
   @js.native
-  class UserProfilePropertiesForUser protected ()
+  open class UserProfilePropertiesForUser protected ()
     extends StObject
        with typings.sharepoint.SP.UserProfiles.UserProfilePropertiesForUser {
     /** Creates new UserProfilePropertiesForUser object

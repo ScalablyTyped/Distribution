@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WiFiDirectDevice extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[WiFiDirectDevice, js.Any]): Unit = js.native
+  def addEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[WiFiDirectDevice, Any]): Unit = js.native
   
   /** Close the active Wi-Fi Direct device connection. */
   def close(): Unit = js.native
@@ -34,12 +34,12 @@ trait WiFiDirectDevice extends StObject {
   def getConnectionEndpointPairs(): IVectorView[EndpointPair] = js.native
   
   /** Occurs when a Wi-Fi Direct device connection is connected or disconnected. */
-  def onconnectionstatuschanged(ev: js.Any & WinRTEvent[WiFiDirectDevice]): Unit = js.native
+  def onconnectionstatuschanged(ev: Any & WinRTEvent[WiFiDirectDevice]): Unit = js.native
   /** Occurs when a Wi-Fi Direct device connection is connected or disconnected. */
   @JSName("onconnectionstatuschanged")
-  var onconnectionstatuschanged_Original: TypedEventHandler[WiFiDirectDevice, js.Any] = js.native
+  var onconnectionstatuschanged_Original: TypedEventHandler[WiFiDirectDevice, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[WiFiDirectDevice, js.Any]): Unit = js.native
+  def removeEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[WiFiDirectDevice, Any]): Unit = js.native
 }

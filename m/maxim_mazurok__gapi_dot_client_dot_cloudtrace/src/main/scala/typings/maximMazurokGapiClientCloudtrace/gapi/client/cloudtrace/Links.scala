@@ -29,6 +29,6 @@ object Links {
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    inline def setLinkVarargs(value: Link*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: Link*): Self = StObject.set(x, "link", js.Array(value*))
   }
 }

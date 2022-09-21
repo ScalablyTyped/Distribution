@@ -12,18 +12,18 @@ trait TextureDome[T /* <: Texture */]
   
   /* protected */ def _changeTextureMode(value: Double): Unit = js.native
   
-  /* private */ var _crossEye: js.Any = js.native
+  /* private */ var _crossEye: Any = js.native
   
-  /* private */ var _halfDome: js.Any = js.native
+  /* private */ var _halfDome: Any = js.native
   
   /**
     * A mesh that will be used to mask the back of the dome in case it is a 180 degree movie.
     */
-  /* private */ var _halfDomeMask: js.Any = js.native
+  /* private */ var _halfDomeMask: Any = js.native
   
-  /* protected */ def _initTexture(urlsOrElement: String, scene: Scene, options: js.Any): T = js.native
-  /* protected */ def _initTexture(urlsOrElement: js.Array[String], scene: Scene, options: js.Any): T = js.native
-  /* protected */ def _initTexture(urlsOrElement: HTMLElement, scene: Scene, options: js.Any): T = js.native
+  /* protected */ def _initTexture(urlsOrElement: String, scene: Scene, options: Any): T = js.native
+  /* protected */ def _initTexture(urlsOrElement: js.Array[String], scene: Scene, options: Any): T = js.native
+  /* protected */ def _initTexture(urlsOrElement: HTMLElement, scene: Scene, options: Any): T = js.native
   
   /**
     * The skybox material
@@ -38,7 +38,7 @@ trait TextureDome[T /* <: Texture */]
   /**
     * Oberserver used in Stereoscopic VR Mode.
     */
-  /* private */ var _onBeforeCameraRenderObserver: js.Any = js.native
+  /* private */ var _onBeforeCameraRenderObserver: Any = js.native
   
   /**
     * The texture being displayed on the sphere
@@ -85,13 +85,18 @@ trait TextureDome[T /* <: Texture */]
   def mesh: Mesh = js.native
   
   /* protected */ var onError: Nullable[
-    js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
   ] = js.native
   
   /**
-    * Observable raised when an error occured while loading the 360 image
+    * Observable raised when an error occurred while loading the texture
     */
   var onLoadErrorObservable: Observable[String] = js.native
+  
+  /**
+    * Observable raised when the texture finished loading
+    */
+  var onLoadObservable: Observable[Unit] = js.native
   
   /**
     * Gets the texture being displayed on the sphere

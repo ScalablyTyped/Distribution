@@ -119,7 +119,7 @@ trait PlotPackedbubbleLayoutAlgorithmOptions extends StObject {
     * (Highcharts) Whether to split series into individual groups or to mix all
     * series together.
     */
-  var splitSeries: js.UndefOr[String] = js.undefined
+  var splitSeries: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Type of the algorithm used when positioning nodes.
@@ -191,7 +191,7 @@ object PlotPackedbubbleLayoutAlgorithmOptions {
     
     inline def setSeriesInteractionUndefined: Self = StObject.set(x, "seriesInteraction", js.undefined)
     
-    inline def setSplitSeries(value: String): Self = StObject.set(x, "splitSeries", value.asInstanceOf[js.Any])
+    inline def setSplitSeries(value: Boolean): Self = StObject.set(x, "splitSeries", value.asInstanceOf[js.Any])
     
     inline def setSplitSeriesUndefined: Self = StObject.set(x, "splitSeries", js.undefined)
     

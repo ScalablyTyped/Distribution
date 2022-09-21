@@ -11,13 +11,15 @@ object baseMod {
   
   @JSImport("express-validator/src/base", "ValidationHalt")
   @js.native
-  class ValidationHalt ()
+  open class ValidationHalt ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -26,11 +28,11 @@ object baseMod {
   @js.native
   val contextsKey: /* "express-validator#contexts" */ String = js.native
   
-  type CustomSanitizer = js.Function2[/* input */ js.Any, /* meta */ Meta, js.Any]
+  type CustomSanitizer = js.Function2[/* input */ Any, /* meta */ Meta, Any]
   
-  type CustomValidator = js.Function2[/* input */ js.Any, /* meta */ Meta, js.Any]
+  type CustomValidator = js.Function2[/* input */ Any, /* meta */ Meta, Any]
   
-  type DynamicMessageCreator = js.Function2[/* value */ js.Any, /* meta */ Meta, js.Any]
+  type DynamicMessageCreator = js.Function2[/* value */ Any, /* meta */ Meta, Any]
   
   trait FieldInstance extends StObject {
     
@@ -38,15 +40,15 @@ object baseMod {
     
     var originalPath: String
     
-    var originalValue: js.Any
+    var originalValue: Any
     
     var path: String
     
-    var value: js.Any
+    var value: Any
   }
   object FieldInstance {
     
-    inline def apply(location: Location, originalPath: String, originalValue: js.Any, path: String, value: js.Any): FieldInstance = {
+    inline def apply(location: Location, originalPath: String, originalValue: Any, path: String, value: Any): FieldInstance = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], originalPath = originalPath.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldInstance]
     }
@@ -57,11 +59,11 @@ object baseMod {
       
       inline def setOriginalPath(value: String): Self = StObject.set(x, "originalPath", value.asInstanceOf[js.Any])
       
-      inline def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+      inline def setOriginalValue(value: Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,24 +120,24 @@ object baseMod {
   
   type Middleware = js.Function3[
     /* req */ Request, 
-    /* res */ js.Any, 
-    /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+    /* res */ Any, 
+    /* next */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
     Unit
   ]
   
   trait Request
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
-    var cookies: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var cookies: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var headers: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var headers: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var params: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var params: js.UndefOr[Record[String, Any]] = js.undefined
     
-    var query: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var query: js.UndefOr[Record[String, Any]] = js.undefined
   }
   object Request {
     
@@ -146,23 +148,23 @@ object baseMod {
     
     extension [Self <: Request](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      inline def setCookies(value: Record[String, js.Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: Record[String, Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
       inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      inline def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setQuery(value: Record[String, js.Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Record[String, Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
@@ -171,13 +173,13 @@ object baseMod {
   @js.native
   trait StandardSanitizer extends StObject {
     
-    def apply(input: String, options: js.Any*): js.Any = js.native
+    def apply(input: String, options: Any*): Any = js.native
   }
   
   @js.native
   trait StandardValidator extends StObject {
     
-    def apply(input: String, options: js.Any*): Boolean = js.native
+    def apply(input: String, options: Any*): Boolean = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -187,19 +189,12 @@ object baseMod {
   trait ValidationError extends StObject
   object ValidationError {
     
-    inline def Location(
-      location: Unit,
-      msg: js.Any,
-      nestedErrors: js.Array[
-          /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
-        ],
-      value: Unit
-    ): typings.expressValidator.anon.Location = {
+    inline def Location(location: Unit, msg: Any, nestedErrors: js.Array[ValidationError], value: Unit): typings.expressValidator.anon.Location = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], nestedErrors = nestedErrors.asInstanceOf[js.Any], param = "_error", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expressValidator.anon.Location]
     }
     
-    inline def Msg(location: Location, msg: js.Any, param: String, value: js.Any): typings.expressValidator.anon.Msg = {
+    inline def Msg(location: Location, msg: Any, param: String, value: Any): typings.expressValidator.anon.Msg = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expressValidator.anon.Msg]
     }

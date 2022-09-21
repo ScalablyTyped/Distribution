@@ -29,7 +29,7 @@ trait CalculatedMember extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val SolveOrder: Double
   
@@ -53,7 +53,7 @@ object CalculatedMember {
     HierarchizeDistinct: Boolean,
     IsValid: Boolean,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     SolveOrder: Double,
     SourceName: String,
     Type: XlCalculatedMemberType,
@@ -88,7 +88,7 @@ object CalculatedMember {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSolveOrder(value: Double): Self = StObject.set(x, "SolveOrder", value.asInstanceOf[js.Any])
     

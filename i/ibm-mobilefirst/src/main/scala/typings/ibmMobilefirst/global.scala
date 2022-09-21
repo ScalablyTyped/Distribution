@@ -118,7 +118,7 @@ object global {
       /**
         * TODO: declare exception type. (Exceptions that are thrown by the IBM® Worklight® client runtime framework)
         */
-      inline def getErrorMessage(exception: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorMessage")(exception.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def getErrorMessage(exception: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorMessage")(exception.asInstanceOf[js.Any]).asInstanceOf[String]
       
       inline def hideSplashScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideSplashScreen")().asInstanceOf[Unit]
       
@@ -215,7 +215,7 @@ object global {
     
     @JSGlobal("WL.BusyIndicator")
     @js.native
-    class BusyIndicator ()
+    open class BusyIndicator ()
       extends StObject
          with typings.ibmMobilefirst.WL.BusyIndicator {
       def this(containerId: String) = this()
@@ -237,15 +237,15 @@ object global {
       
       @JSGlobal("WL.Client.AbstractChallengeHandler")
       @js.native
-      class AbstractChallengeHandler ()
+      open class AbstractChallengeHandler ()
         extends StObject
            with typings.ibmMobilefirst.WL.Client.AbstractChallengeHandler {
         
         /* CompleteClass */
-        override def handleChallenge(challenge: js.Any): Boolean = js.native
+        override def handleChallenge(challenge: Any): Boolean = js.native
         
         /* CompleteClass */
-        override def isCustomResponse(transport: js.Any): Boolean = js.native
+        override def isCustomResponse(transport: Any): Boolean = js.native
         
         /* CompleteClass */
         override def submitAdapterAuthentication(invocationData: ChallengehandlerInvocationData, options: ChallengeHandlerAuthenticationOptions): Unit = js.native
@@ -257,7 +257,7 @@ object global {
         override def submitLoginForm(
           reqURL: String,
           options: ChallengeHandlerSubmitLoginFormOptions,
-          submitLoginFormCallback: js.Function1[/* transport */ js.Any, Unit]
+          submitLoginFormCallback: js.Function1[/* transport */ Any, Unit]
         ): Unit = js.native
         
         /* CompleteClass */
@@ -268,7 +268,7 @@ object global {
       
       inline def checkForDirectUpdate(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkForDirectUpdate")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      inline def clearSharedToken(`object`: SharedTokenObject): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSharedToken")(`object`.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
+      inline def clearSharedToken(`object`: SharedTokenObject): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSharedToken")(`object`.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[Any]]
       
       inline def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
       
@@ -287,7 +287,7 @@ object global {
       /**
         * See WL.AppProperty for possible results
         */
-      inline def getAppProperty(property: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppProperty")(property.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def getAppProperty(property: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppProperty")(property.asInstanceOf[js.Any]).asInstanceOf[Any]
       
       /**
         * See WL.Environment for possible results
@@ -306,15 +306,15 @@ object global {
         */
       inline def getRequiredAccessTokenScope(status: Double, header: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequiredAccessTokenScope")(status.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[String]
       
-      inline def getSharedToken(`object`: SharedTokenObject): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSharedToken")(`object`.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
+      inline def getSharedToken(`object`: SharedTokenObject): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSharedToken")(`object`.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[Any]]
       
-      inline def getUserInfo(realm: String, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserInfo")(realm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def getUserInfo(realm: String, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserInfo")(realm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
       
-      inline def getUserName(realm: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserName")(realm.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def getUserName(realm: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserName")(realm.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      inline def getUserPref(key: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserPref")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def getUserPref(key: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserPref")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
       
-      inline def hasUserPref(key: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUserPref")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def hasUserPref(key: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUserPref")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       inline def init(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
@@ -368,8 +368,8 @@ object global {
       inline def setUserPrefs(userPrefsHash: UserPreferences): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserPrefs")(userPrefsHash.asInstanceOf[js.Any]).asInstanceOf[Unit]
       inline def setUserPrefs(userPrefsHash: UserPreferences, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserPrefs")(userPrefsHash.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      inline def transmitEvent(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("transmitEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      inline def transmitEvent(event: js.Any, immediate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transmitEvent")(event.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def transmitEvent(event: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("transmitEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def transmitEvent(event: Any, immediate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transmitEvent")(event.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def updateUserInfo(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateUserInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
@@ -553,7 +553,7 @@ object global {
     
     @JSGlobal("WL.FailureResponse")
     @js.native
-    class FailureResponse ()
+    open class FailureResponse ()
       extends StObject
          with typings.ibmMobilefirst.WL.ResponseBase {
       
@@ -564,20 +564,20 @@ object global {
       var errorMsg: String = js.native
       
       /* CompleteClass */
-      var headerJSON: StringDictionary[js.Any] = js.native
+      var headerJSON: StringDictionary[Any] = js.native
       
       /* CompleteClass */
-      var invocationContext: js.Any = js.native
+      var invocationContext: Any = js.native
       
       // JSON Object
       /* CompleteClass */
       var readyState: Double = js.native
       
       /* CompleteClass */
-      var request: js.Any = js.native
+      var request: Any = js.native
       
       /* CompleteClass */
-      var responseJSON: StringDictionary[js.Any] = js.native
+      var responseJSON: StringDictionary[Any] = js.native
       
       // JSON Object
       /* CompleteClass */
@@ -616,7 +616,7 @@ object global {
     
     @JSGlobal("WL.Item")
     @js.native
-    class Item ()
+    open class Item ()
       extends StObject
          with typings.ibmMobilefirst.WL.Item {
       
@@ -638,7 +638,7 @@ object global {
       
       @JSGlobal("WL.JSONStore.JSONStoreInstance")
       @js.native
-      class JSONStoreInstance ()
+      open class JSONStoreInstance ()
         extends StObject
            with typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance
       
@@ -649,7 +649,7 @@ object global {
       
       @JSGlobal("WL.JSONStore.QueryPartObj")
       @js.native
-      class QueryPartObj ()
+      open class QueryPartObj ()
         extends StObject
            with typings.ibmMobilefirst.WL.JSONStore.QueryPartObj {
         
@@ -657,103 +657,103 @@ object global {
           * Add a between clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def between(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def between(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add an equal to clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def equal(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def equal(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a greater or equal thanclause to a query for advanced find.
           */
         /* CompleteClass */
-        override def greaterOrEqualThan(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def greaterOrEqualThan(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a greater than clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def greaterThan(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def greaterThan(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add an in clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def inside(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def inside(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a left clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def leftLike(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def leftLike(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a less or equal than clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def lessOrEqualThan(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def lessOrEqualThan(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a less than clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def lessThan(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def lessThan(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a like clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def like(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def like(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a not between clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def notBetween(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def notBetween(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a not equal to clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def notEqual(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def notEqual(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a not in clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def notInside(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def notInside(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a not left clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def notLeftLike(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def notLeftLike(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a not like clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def notLike(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def notLike(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a not right clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def notRightLike(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def notRightLike(searchField: Any, value: Any): js.Array[Any] = js.native
         
         /**
           * Add a right clause to a query for advanced find.
           */
         /* CompleteClass */
-        override def rightLike(searchField: js.Any, value: js.Any): js.Array[js.Any] = js.native
+        override def rightLike(searchField: Any, value: Any): js.Array[Any] = js.native
       }
       
       /**
         * Changes the password for the internal storage. You must have an initialized collection before calling WL.JSONStore.changePassword.
         */
-      inline def changePassword(oldPassword: String, newPassword: String, username: String, options: Options): JQueryDeferred[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("changePassword")(oldPassword.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], username.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JQueryDeferred[js.Any]]
+      inline def changePassword(oldPassword: String, newPassword: String, username: String, options: Options): JQueryDeferred[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("changePassword")(oldPassword.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], username.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JQueryDeferred[Any]]
       
       /**
         * @deprecated since version 5.0.6, it is no longer needed if you use WL.JSONStore.init
@@ -763,8 +763,8 @@ object global {
       /**
         * Locks access to all the collections until WL.JSONStore.init is called.
         */
-      inline def closeAll(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAll")().asInstanceOf[JQueryDeferred[js.Any]]
-      inline def closeAll(options: Options): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAll")(options.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
+      inline def closeAll(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAll")().asInstanceOf[JQueryDeferred[Any]]
+      inline def closeAll(options: Options): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAll")(options.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[Any]]
       
       /**
         * Commit a transaction.
@@ -781,7 +781,7 @@ object global {
       /**
         * @deprecated since version 6.2.0.
         */
-      inline def documentify(id: Double, data: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("documentify")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def documentify(id: Double, data: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("documentify")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Any]
       
       /**
         * Returns information about the file that is used to persist data in the store. The following key value pairs are returned:
@@ -789,7 +789,7 @@ object global {
         * size - the total size, in bytes, of the store
         * isEncrypted - boolean that is true when encrypted and false otherwise.
         */
-      inline def fileInfo(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileInfo")().asInstanceOf[JQueryDeferred[js.Any]]
+      inline def fileInfo(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileInfo")().asInstanceOf[JQueryDeferred[Any]]
       
       /**
         * Provides an accessor to the collection if the collection exists, otherwise it returns undefined.
@@ -801,14 +801,14 @@ object global {
         */
       inline def getErrorMessage(errorCode: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorMessage")(errorCode.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      inline def init(collections: js.Any): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(collections.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
-      inline def init(collections: js.Any, options: typings.ibmMobilefirst.WL.JSONStore.InitOptions): JQueryDeferred[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(collections.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JQueryDeferred[js.Any]]
+      inline def init(collections: Any): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(collections.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[Any]]
+      inline def init(collections: Any, options: typings.ibmMobilefirst.WL.JSONStore.InitOptions): JQueryDeferred[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(collections.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JQueryDeferred[Any]]
       
       /**
         * @deprecated since version 5.0.6, it is no longer needed if you use WL.JSONStore.init
         */
-      inline def initCollection(name: String, searchFields: js.Any): typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("initCollection")(name.asInstanceOf[js.Any], searchFields.asInstanceOf[js.Any])).asInstanceOf[typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance]
-      inline def initCollection(name: String, searchFields: js.Any, options: typings.ibmMobilefirst.WL.JSONStore.InitOptions): typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("initCollection")(name.asInstanceOf[js.Any], searchFields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance]
+      inline def initCollection(name: String, searchFields: Any): typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("initCollection")(name.asInstanceOf[js.Any], searchFields.asInstanceOf[js.Any])).asInstanceOf[typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance]
+      inline def initCollection(name: String, searchFields: Any, options: typings.ibmMobilefirst.WL.JSONStore.InitOptions): typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("initCollection")(name.asInstanceOf[js.Any], searchFields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.ibmMobilefirst.WL.JSONStore.JSONStoreInstance]
       
       /**
         * Roll back a transaction
@@ -848,7 +848,7 @@ object global {
       */
     @JSGlobal("WL.LogInstance")
     @js.native
-    class LogInstance ()
+    open class LogInstance ()
       extends StObject
          with typings.ibmMobilefirst.WL.LogInstance {
       
@@ -880,7 +880,7 @@ object global {
       */
     @JSGlobal("WL.LoggerObject")
     @js.native
-    class LoggerObject ()
+    open class LoggerObject ()
       extends StObject
          with typings.ibmMobilefirst.WL.LoggerObject
     
@@ -892,12 +892,12 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def show(className: String, callback: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(className.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def show(className: String, callback: js.Function1[/* data */ Any, Unit], data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(className.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     @JSGlobal("WL.Response")
     @js.native
-    class Response ()
+    open class Response ()
       extends StObject
          with typings.ibmMobilefirst.WL.Response {
       
@@ -911,26 +911,26 @@ object global {
       override def getAllHeaders(): Headers = js.native
       
       /* CompleteClass */
-      override def getHeader(name: js.Any): String = js.native
+      override def getHeader(name: Any): String = js.native
       
       /* CompleteClass */
       override def getHeaderNames(): js.Array[String] = js.native
       
       /* CompleteClass */
-      var headerJSON: StringDictionary[js.Any] = js.native
+      var headerJSON: StringDictionary[Any] = js.native
       
       /* CompleteClass */
-      var invocationContext: js.Any = js.native
+      var invocationContext: Any = js.native
       
       // JSON Object
       /* CompleteClass */
       var readyState: Double = js.native
       
       /* CompleteClass */
-      var request: js.Any = js.native
+      var request: Any = js.native
       
       /* CompleteClass */
-      var responseJSON: StringDictionary[js.Any] = js.native
+      var responseJSON: StringDictionary[Any] = js.native
       
       // JSON Object
       /* CompleteClass */
@@ -948,7 +948,7 @@ object global {
     
     @JSGlobal("WL.ResponseBase")
     @js.native
-    class ResponseBase ()
+    open class ResponseBase ()
       extends StObject
          with typings.ibmMobilefirst.WL.ResponseBase {
       
@@ -959,20 +959,20 @@ object global {
       var errorMsg: String = js.native
       
       /* CompleteClass */
-      var headerJSON: StringDictionary[js.Any] = js.native
+      var headerJSON: StringDictionary[Any] = js.native
       
       /* CompleteClass */
-      var invocationContext: js.Any = js.native
+      var invocationContext: Any = js.native
       
       // JSON Object
       /* CompleteClass */
       var readyState: Double = js.native
       
       /* CompleteClass */
-      var request: js.Any = js.native
+      var request: Any = js.native
       
       /* CompleteClass */
-      var responseJSON: StringDictionary[js.Any] = js.native
+      var responseJSON: StringDictionary[Any] = js.native
       
       // JSON Object
       /* CompleteClass */
@@ -1054,7 +1054,7 @@ object global {
     
     @JSGlobal("WL.TabBarItem")
     @js.native
-    class TabBarItem ()
+    open class TabBarItem ()
       extends StObject
          with typings.ibmMobilefirst.WL.TabBarItem
     
@@ -1111,31 +1111,31 @@ object global {
     
     inline def addCachedAuthorizationHeader(request: RequestObject): JQueryDeferred[RequestObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("addCachedAuthorizationHeader")(request.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[RequestObject]]
     
-    inline def getAppIdentity(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppIdentity")().asInstanceOf[JQueryDeferred[js.Any]]
+    inline def getAppIdentity(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppIdentity")().asInstanceOf[JQueryDeferred[Any]]
     
     inline def getAuthorizationScope(responseAuthenticationHeader: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationScope")(responseAuthenticationHeader.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * TODO: Set Promise types. Should be something like: JQueryDeferred<data, error>()
       */
-    inline def getCachedAuthorizationHeader(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCachedAuthorizationHeader")().asInstanceOf[JQueryDeferred[js.Any]]
+    inline def getCachedAuthorizationHeader(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCachedAuthorizationHeader")().asInstanceOf[JQueryDeferred[Any]]
     
     /**
       * TODO: Set Promise types. Should be something like: JQueryDeferred<data, error>()
       */
-    inline def getDeviceIdentity(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceIdentity")().asInstanceOf[JQueryDeferred[js.Any]]
+    inline def getDeviceIdentity(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceIdentity")().asInstanceOf[JQueryDeferred[Any]]
     
     /**
       * TODO: Set Promise types. Should be something like: JQueryDeferred<data, error>()
       */
-    inline def getUserIdentity(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserIdentity")().asInstanceOf[JQueryDeferred[js.Any]]
+    inline def getUserIdentity(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserIdentity")().asInstanceOf[JQueryDeferred[Any]]
     
     inline def isAuthorizationRequired(responseStatus: Double, responseAuthenticationHeader: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAuthorizationRequired")(responseStatus.asInstanceOf[js.Any], responseAuthenticationHeader.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * TODO: Set Promise types. Should be something like: JQueryDeferred<header, error>()
       */
-    inline def obtainAuthorizationHeader(scope: String): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("obtainAuthorizationHeader")(scope.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[js.Any]]
+    inline def obtainAuthorizationHeader(scope: String): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("obtainAuthorizationHeader")(scope.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[Any]]
     
     /**
       * See WLAuthorizarionManager.NEVER and WLAuthorizarionManager.ALWAYS
@@ -1145,7 +1145,7 @@ object global {
   
   @JSGlobal("WLResourceRequest")
   @js.native
-  class WLResourceRequest protected ()
+  open class WLResourceRequest protected ()
     extends StObject
        with typings.ibmMobilefirst.WLResourceRequest {
     def this(url: String, method: String) = this()

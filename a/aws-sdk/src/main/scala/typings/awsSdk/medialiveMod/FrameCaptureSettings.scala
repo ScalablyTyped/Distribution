@@ -9,7 +9,7 @@ trait FrameCaptureSettings extends StObject {
   /**
     * The frequency at which to capture frames for inclusion in the output. May be specified in either seconds or milliseconds, as specified by captureIntervalUnits.
     */
-  var CaptureInterval: integerMin1Max3600000
+  var CaptureInterval: js.UndefOr[integerMin1Max3600000] = js.undefined
   
   /**
     * Unit for the frame capture interval.
@@ -18,14 +18,16 @@ trait FrameCaptureSettings extends StObject {
 }
 object FrameCaptureSettings {
   
-  inline def apply(CaptureInterval: integerMin1Max3600000): FrameCaptureSettings = {
-    val __obj = js.Dynamic.literal(CaptureInterval = CaptureInterval.asInstanceOf[js.Any])
+  inline def apply(): FrameCaptureSettings = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FrameCaptureSettings]
   }
   
   extension [Self <: FrameCaptureSettings](x: Self) {
     
     inline def setCaptureInterval(value: integerMin1Max3600000): Self = StObject.set(x, "CaptureInterval", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureIntervalUndefined: Self = StObject.set(x, "CaptureInterval", js.undefined)
     
     inline def setCaptureIntervalUnits(value: FrameCaptureIntervalUnit): Self = StObject.set(x, "CaptureIntervalUnits", value.asInstanceOf[js.Any])
     

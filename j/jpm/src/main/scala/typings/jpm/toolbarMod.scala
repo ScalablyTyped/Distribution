@@ -14,58 +14,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object toolbarMod {
   
-  @js.native
   trait Toolbar extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var hidden: Boolean = js.native
+    var hidden: Boolean
     
-    var items: js.Array[ToolbarItem] = js.native
+    var items: js.Array[ToolbarItem]
     
-    @JSName("off")
-    def off_attach(event: attach, handler: js.Function): Unit = js.native
-    @JSName("off")
-    def off_detach(event: detach, handler: js.Function): Unit = js.native
-    @JSName("off")
-    def off_hide(event: hide, handler: js.Function): Unit = js.native
-    @JSName("off")
-    def off_show(event: show, handler: js.Function): Unit = js.native
+    def off(event: show | hide | attach | detach, handler: js.Function): Unit
     
-    @JSName("on")
-    def on_attach(event: attach, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_detach(event: detach, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_hide(event: hide, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_show(event: show, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
+    def on(event: show | hide | attach | detach, handler: js.Function1[/* toolbar */ this.type, Any]): Unit
     
-    @JSName("once")
-    def once_attach(event: attach, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_detach(event: detach, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_hide(event: hide, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
-    @JSName("once")
-    def once_show(event: show, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
+    def once(event: show | hide | attach | detach, handler: js.Function1[/* toolbar */ this.type, Any]): Unit
     
-    @JSName("removeListener")
-    def removeListener_attach(event: attach, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_detach(event: detach, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_hide(event: hide, handler: js.Function): Unit = js.native
-    @JSName("removeListener")
-    def removeListener_show(event: show, handler: js.Function): Unit = js.native
+    def removeListener(event: show | hide | attach | detach, handler: js.Function): Unit
     
-    var title: String = js.native
+    var title: String
   }
   object Toolbar {
     
     @JSImport("sdk/ui/toolbar", "Toolbar")
     @js.native
     def apply(options: Hidden): Toolbar = js.native
+    
+    extension [Self <: Toolbar](x: Self) {
+      
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      
+      inline def setItems(value: js.Array[ToolbarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsVarargs(value: ToolbarItem*): Self = StObject.set(x, "items", js.Array(value*))
+      
+      inline def setOff(value: (show | hide | attach | detach, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      
+      inline def setOn(value: (show | hide | attach | detach, js.Function1[Toolbar, Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      
+      inline def setOnce(value: (show | hide | attach | detach, js.Function1[Toolbar, Any]) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      
+      inline def setRemoveListener(value: (show | hide | attach | detach, js.Function) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Rewritten from type alias, can be one of: 

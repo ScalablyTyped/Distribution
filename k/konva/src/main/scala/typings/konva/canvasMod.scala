@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object canvasMod {
   
-  @JSImport("konva/types/Canvas", "Canvas")
+  @JSImport("konva/lib/Canvas", "Canvas")
   @js.native
-  class Canvas protected () extends StObject {
+  open class Canvas protected () extends StObject {
     def this(config: ICanvasConfig) = this()
     
     var _canvas: HTMLCanvasElement = js.native
@@ -31,30 +31,30 @@ object canvasMod {
     
     var pixelRatio: Double = js.native
     
-    def setHeight(height: js.Any): Unit = js.native
+    def setHeight(height: Any): Unit = js.native
     
-    def setPixelRatio(pixelRatio: js.Any): Unit = js.native
+    def setPixelRatio(pixelRatio: Any): Unit = js.native
     
-    def setSize(width: js.Any, height: js.Any): Unit = js.native
+    def setSize(width: Any, height: Any): Unit = js.native
     
-    def setWidth(width: js.Any): Unit = js.native
+    def setWidth(width: Any): Unit = js.native
     
-    def toDataURL(mimeType: js.Any, quality: js.Any): String = js.native
+    def toDataURL(mimeType: Any, quality: Any): String = js.native
     
     var width: Double = js.native
   }
   
-  @JSImport("konva/types/Canvas", "HitCanvas")
+  @JSImport("konva/lib/Canvas", "HitCanvas")
   @js.native
-  class HitCanvas () extends Canvas {
+  open class HitCanvas () extends Canvas {
     def this(config: ICanvasConfig) = this()
     
     var hitCanvas: Boolean = js.native
   }
   
-  @JSImport("konva/types/Canvas", "SceneCanvas")
+  @JSImport("konva/lib/Canvas", "SceneCanvas")
   @js.native
-  class SceneCanvas () extends Canvas {
+  open class SceneCanvas () extends Canvas {
     def this(config: ICanvasConfig) = this()
   }
   

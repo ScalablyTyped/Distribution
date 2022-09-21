@@ -1,7 +1,7 @@
 
 # Scala.js typings for spectrum
 
-Typings are for version 1.5.1
+Typings are for version 1.8
 
 ## Library description:
 JavaScript Template Library
@@ -11,14 +11,11 @@ JavaScript Template Library
 | Full name          | spectrum |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 25091 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1235.3333333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/spectrum/spectrum#readme)
-- [Bugs](https://github.com/spectrum/spectrum/issues)
-- [Repository](https://github.com/spectrum/spectrum)
 - [Npm](https://www.npmjs.com/package/spectrum)
     
 

@@ -13,19 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(url: String): WebSocket = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[WebSocket]
-  inline def apply(url: String, _reserved: js.Any): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
-  inline def apply(url: String, _reserved: js.Any, options: Options): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
+  inline def apply(url: String, _reserved: Any): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
+  inline def apply(url: String, _reserved: Any, options: Options): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
   inline def apply(url: String, _reserved: Unit, options: Options): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sockjs-client", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with WebSocket {
     def this(url: String) = this()
-    def this(url: String, _reserved: js.Any) = this()
-    def this(url: String, _reserved: js.Any, options: Options) = this()
+    def this(url: String, _reserved: Any) = this()
+    def this(url: String, _reserved: Any, options: Options) = this()
     def this(url: String, _reserved: Unit, options: Options) = this()
   }
   @JSImport("sockjs-client", JSImport.Namespace)
@@ -120,7 +120,7 @@ object mod {
       
       inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
       
-      inline def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value :_*))
+      inline def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value*))
     }
   }
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.firestore.FieldPath")
 @js.native
-class FieldPath protected () extends StObject {
+open class FieldPath protected () extends StObject {
   def this(segments: String*) = this()
 }
 object FieldPath {

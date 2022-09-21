@@ -8,6 +8,8 @@ trait BarChartProps[T]
   extends StObject
      with ChartProps[T] {
   
+  var horizontal: js.UndefOr[Boolean] = js.undefined
+  
   var spacingInner: js.UndefOr[Double] = js.undefined
   
   var spacingOuter: js.UndefOr[Double] = js.undefined
@@ -20,6 +22,10 @@ object BarChartProps {
   }
   
   extension [Self <: BarChartProps[?], T](x: Self & BarChartProps[T]) {
+    
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     inline def setSpacingInner(value: Double): Self = StObject.set(x, "spacingInner", value.asInstanceOf[js.Any])
     

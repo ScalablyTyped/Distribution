@@ -1,7 +1,7 @@
 package typings.jwtThen
 
 import typings.jwtThen.anon.Key
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,7 +80,7 @@ object mod {
       
       inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value*))
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

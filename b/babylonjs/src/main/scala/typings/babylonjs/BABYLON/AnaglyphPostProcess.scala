@@ -9,5 +9,5 @@ trait AnaglyphPostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _passedProcess: js.Any = js.native
+  /* private */ var _passedProcess: Any = js.native
 }

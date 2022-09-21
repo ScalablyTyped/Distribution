@@ -24,14 +24,14 @@ trait NoteItem extends StObject {
   
   val Conflicts: typings.activexOutlook.Outlook.Conflicts = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   val CreationTime: VarDate = js.native
   
   def Delete(): Unit = js.native
   
   def Display(): Unit = js.native
-  def Display(Modal: js.Any): Unit = js.native
+  def Display(Modal: Any): Unit = js.native
   
   val DownloadState: OlDownloadState = js.native
   
@@ -55,12 +55,12 @@ trait NoteItem extends StObject {
   
   var MessageClass: String = js.native
   
-  def Move(DestFldr: Folder): js.Any = js.native
+  def Move(DestFldr: Folder): Any = js.native
   
   /* private */ @JSName("Outlook.NoteItem_typekey")
   var OutlookDotNoteItem_typekey: NoteItem = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PrintOut(): Unit = js.native
   
@@ -69,7 +69,7 @@ trait NoteItem extends StObject {
   def Save(): Unit = js.native
   
   def SaveAs(Path: String): Unit = js.native
-  def SaveAs(Path: String, Type: js.Any): Unit = js.native
+  def SaveAs(Path: String, Type: Any): Unit = js.native
   
   val Saved: Boolean = js.native
   

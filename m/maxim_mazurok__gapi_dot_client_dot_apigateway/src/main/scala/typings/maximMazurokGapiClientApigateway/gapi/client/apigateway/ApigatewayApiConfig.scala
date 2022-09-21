@@ -13,8 +13,12 @@ trait ApigatewayApiConfig extends StObject {
   /** Optional. Display name. */
   var displayName: js.UndefOr[String] = js.undefined
   
-  /** Immutable. Gateway specific configuration. If not specified, backend authentication will be set to use OIDC authentication using the default compute service account. */
-  var gatewayConfig: js.UndefOr[ApigatewayGatewayConfig] = js.undefined
+  /**
+    * Immutable. The Google Cloud IAM Service Account that Gateways serving this config should use to authenticate to other services. This may either be the Service Account's email
+    * (`{ACCOUNT_ID}@{PROJECT}.iam.gserviceaccount.com`) or its full resource name (`projects/{PROJECT}/accounts/{UNIQUE_ID}`). This is most often used when the service is a GCP resource
+    * such as a Cloud Run Service or an IAP-secured service.
+    */
+  var gatewayServiceAccount: js.UndefOr[String] = js.undefined
   
   /** Optional. gRPC service definition files. If specified, openapi_documents must not be included. */
   var grpcServices: js.UndefOr[js.Array[ApigatewayApiConfigGrpcServiceDefinition]] = js.undefined
@@ -23,21 +27,21 @@ trait ApigatewayApiConfig extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayApiConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayApiConfig & TopLevel[Any]
   ] = js.undefined
   
   /**
-    * Optional. Service Configuration files. At least one must be included when using gRPC service definitions. See https: //cloud.google.com/endpoints/docs/grpc/g //
-    * rpc-service-config#service_configuration_overview for the expected file contents. If multiple files are specified, the files are merged with the following rules: * All singular
-    * scalar fields are merged using "last one wins" semantics in the order of the files uploaded. * Repeated fields are concatenated. * Singular embedded messages are merged using these
-    * rules for nested fields.
+    * Optional. Service Configuration files. At least one must be included when using gRPC service definitions. See
+    * https://cloud.google.com/endpoints/docs/grpc/grpc-service-config#service_configuration_overview for the expected file contents. If multiple files are specified, the files are merged
+    * with the following rules: * All singular scalar fields are merged using "last one wins" semantics in the order of the files uploaded. * Repeated fields are concatenated. * Singular
+    * embedded messages are merged using these rules for nested fields.
     */
   var managedServiceConfigs: js.UndefOr[js.Array[ApigatewayApiConfigFile]] = js.undefined
   
   /** Output only. Resource name of the API Config. Format: projects/{project}/locations/global/apis/{api}/configs/{api_config} */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Optional. OpenAPI specification documents. If specified, grpc_services and managed_service_config must not be included. */
+  /** Optional. OpenAPI specification documents. If specified, grpc_services and managed_service_configs must not be included. */
   var openapiDocuments: js.UndefOr[js.Array[ApigatewayApiConfigOpenApiDocument]] = js.undefined
   
   /** Output only. The ID of the associated Service Config ( https://cloud.google.com/service-infrastructure/docs/glossary#config). */
@@ -66,20 +70,20 @@ object ApigatewayApiConfig {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    inline def setGatewayConfig(value: ApigatewayGatewayConfig): Self = StObject.set(x, "gatewayConfig", value.asInstanceOf[js.Any])
+    inline def setGatewayServiceAccount(value: String): Self = StObject.set(x, "gatewayServiceAccount", value.asInstanceOf[js.Any])
     
-    inline def setGatewayConfigUndefined: Self = StObject.set(x, "gatewayConfig", js.undefined)
+    inline def setGatewayServiceAccountUndefined: Self = StObject.set(x, "gatewayServiceAccount", js.undefined)
     
     inline def setGrpcServices(value: js.Array[ApigatewayApiConfigGrpcServiceDefinition]): Self = StObject.set(x, "grpcServices", value.asInstanceOf[js.Any])
     
     inline def setGrpcServicesUndefined: Self = StObject.set(x, "grpcServices", js.undefined)
     
-    inline def setGrpcServicesVarargs(value: ApigatewayApiConfigGrpcServiceDefinition*): Self = StObject.set(x, "grpcServices", js.Array(value :_*))
+    inline def setGrpcServicesVarargs(value: ApigatewayApiConfigGrpcServiceDefinition*): Self = StObject.set(x, "grpcServices", js.Array(value*))
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayApiConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.ApigatewayApiConfig & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -88,7 +92,7 @@ object ApigatewayApiConfig {
     
     inline def setManagedServiceConfigsUndefined: Self = StObject.set(x, "managedServiceConfigs", js.undefined)
     
-    inline def setManagedServiceConfigsVarargs(value: ApigatewayApiConfigFile*): Self = StObject.set(x, "managedServiceConfigs", js.Array(value :_*))
+    inline def setManagedServiceConfigsVarargs(value: ApigatewayApiConfigFile*): Self = StObject.set(x, "managedServiceConfigs", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -98,7 +102,7 @@ object ApigatewayApiConfig {
     
     inline def setOpenapiDocumentsUndefined: Self = StObject.set(x, "openapiDocuments", js.undefined)
     
-    inline def setOpenapiDocumentsVarargs(value: ApigatewayApiConfigOpenApiDocument*): Self = StObject.set(x, "openapiDocuments", js.Array(value :_*))
+    inline def setOpenapiDocumentsVarargs(value: ApigatewayApiConfigOpenApiDocument*): Self = StObject.set(x, "openapiDocuments", js.Array(value*))
     
     inline def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     

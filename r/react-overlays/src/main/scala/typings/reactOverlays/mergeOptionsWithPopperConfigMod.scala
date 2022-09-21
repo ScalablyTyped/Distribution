@@ -1,6 +1,7 @@
 package typings.reactOverlays
 
 import typings.reactOverlays.anon.PartialModifieranyany
+import typings.reactOverlays.anon.PartialModifieranyanyData
 import typings.reactOverlays.usePopperMod.Modifiers
 import typings.reactOverlays.usePopperMod.Offset
 import typings.reactOverlays.usePopperMod.OffsetValue
@@ -18,10 +19,10 @@ object mergeOptionsWithPopperConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasEnabledEnableEventsPlacementFlipOffsetContainerPaddingArrowElementPopperConfig: Config): UsePopperOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasEnabledEnableEventsPlacementFlipOffsetContainerPaddingArrowElementPopperConfig.asInstanceOf[js.Any]).asInstanceOf[UsePopperOptions]
+  inline def default(hasEnabledEnableEventsPlacementFlipOffsetFixedContainerPaddingArrowElementPopperConfig: Config): UsePopperOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasEnabledEnableEventsPlacementFlipOffsetFixedContainerPaddingArrowElementPopperConfig.asInstanceOf[js.Any]).asInstanceOf[UsePopperOptions]
   
-  inline def toModifierArray(): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")().asInstanceOf[js.Array[PartialModifieranyany]]
-  inline def toModifierArray(map: Modifiers): js.Array[PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[PartialModifieranyany]]
+  inline def toModifierArray(): js.Array[PartialModifieranyanyData] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")().asInstanceOf[js.Array[PartialModifieranyanyData]]
+  inline def toModifierArray(map: Modifiers): js.Array[PartialModifieranyanyData] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierArray")(map.asInstanceOf[js.Any]).asInstanceOf[js.Array[PartialModifieranyanyData]]
   
   inline def toModifierMap(): Record[String, PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")().asInstanceOf[Record[String, PartialModifieranyany]]
   inline def toModifierMap(modifiers: Modifiers): Record[String, PartialModifieranyany] = ^.asInstanceOf[js.Dynamic].applyDynamic("toModifierMap")(modifiers.asInstanceOf[js.Any]).asInstanceOf[Record[String, PartialModifieranyany]]
@@ -38,6 +39,8 @@ object mergeOptionsWithPopperConfigMod {
     
     var enabled: js.UndefOr[Boolean] = js.undefined
     
+    var fixed: js.UndefOr[Boolean] = js.undefined
+    
     var flip: js.UndefOr[Boolean] = js.undefined
     
     var offset: js.UndefOr[Offset] = js.undefined
@@ -45,8 +48,6 @@ object mergeOptionsWithPopperConfigMod {
     var placement: js.UndefOr[Placement] = js.undefined
     
     var popperConfig: js.UndefOr[UsePopperOptions] = js.undefined
-    
-    var show: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -79,6 +80,10 @@ object mergeOptionsWithPopperConfigMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      
       inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
       inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
@@ -96,10 +101,6 @@ object mergeOptionsWithPopperConfigMod {
       inline def setPopperConfig(value: UsePopperOptions): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
       
       inline def setPopperConfigUndefined: Self = StObject.set(x, "popperConfig", js.undefined)
-      
-      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
-      
-      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     }
   }
 }

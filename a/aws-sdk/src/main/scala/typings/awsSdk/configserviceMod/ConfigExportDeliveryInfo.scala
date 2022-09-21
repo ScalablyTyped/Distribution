@@ -9,7 +9,7 @@ trait ConfigExportDeliveryInfo extends StObject {
   /**
     * The time of the last attempted delivery.
     */
-  var lastAttemptTime: js.UndefOr[Date] = js.undefined
+  var lastAttemptTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The error code from the last attempted delivery.
@@ -29,12 +29,12 @@ trait ConfigExportDeliveryInfo extends StObject {
   /**
     * The time of the last successful delivery.
     */
-  var lastSuccessfulTime: js.UndefOr[Date] = js.undefined
+  var lastSuccessfulTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time that the next delivery occurs.
     */
-  var nextDeliveryTime: js.UndefOr[Date] = js.undefined
+  var nextDeliveryTime: js.UndefOr[js.Date] = js.undefined
 }
 object ConfigExportDeliveryInfo {
   
@@ -45,7 +45,7 @@ object ConfigExportDeliveryInfo {
   
   extension [Self <: ConfigExportDeliveryInfo](x: Self) {
     
-    inline def setLastAttemptTime(value: Date): Self = StObject.set(x, "lastAttemptTime", value.asInstanceOf[js.Any])
+    inline def setLastAttemptTime(value: js.Date): Self = StObject.set(x, "lastAttemptTime", value.asInstanceOf[js.Any])
     
     inline def setLastAttemptTimeUndefined: Self = StObject.set(x, "lastAttemptTime", js.undefined)
     
@@ -61,11 +61,11 @@ object ConfigExportDeliveryInfo {
     
     inline def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
     
-    inline def setLastSuccessfulTime(value: Date): Self = StObject.set(x, "lastSuccessfulTime", value.asInstanceOf[js.Any])
+    inline def setLastSuccessfulTime(value: js.Date): Self = StObject.set(x, "lastSuccessfulTime", value.asInstanceOf[js.Any])
     
     inline def setLastSuccessfulTimeUndefined: Self = StObject.set(x, "lastSuccessfulTime", js.undefined)
     
-    inline def setNextDeliveryTime(value: Date): Self = StObject.set(x, "nextDeliveryTime", value.asInstanceOf[js.Any])
+    inline def setNextDeliveryTime(value: js.Date): Self = StObject.set(x, "nextDeliveryTime", value.asInstanceOf[js.Any])
     
     inline def setNextDeliveryTimeUndefined: Self = StObject.set(x, "nextDeliveryTime", js.undefined)
   }

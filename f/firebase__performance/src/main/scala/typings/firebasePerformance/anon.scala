@@ -85,18 +85,18 @@ object anon {
   
   trait OnFirstInputDelay extends StObject {
     
-    var onFirstInputDelay: js.Function
+    def onFirstInputDelay(fn: js.Function1[/* fid */ Double, Unit]): Unit
   }
   object OnFirstInputDelay {
     
-    inline def apply(onFirstInputDelay: js.Function): OnFirstInputDelay = {
-      val __obj = js.Dynamic.literal(onFirstInputDelay = onFirstInputDelay.asInstanceOf[js.Any])
+    inline def apply(onFirstInputDelay: js.Function1[/* fid */ Double, Unit] => Unit): OnFirstInputDelay = {
+      val __obj = js.Dynamic.literal(onFirstInputDelay = js.Any.fromFunction1(onFirstInputDelay))
       __obj.asInstanceOf[OnFirstInputDelay]
     }
     
     extension [Self <: OnFirstInputDelay](x: Self) {
       
-      inline def setOnFirstInputDelay(value: js.Function): Self = StObject.set(x, "onFirstInputDelay", value.asInstanceOf[js.Any])
+      inline def setOnFirstInputDelay(value: js.Function1[/* fid */ Double, Unit] => Unit): Self = StObject.set(x, "onFirstInputDelay", js.Any.fromFunction1(value))
     }
   }
   
@@ -119,6 +119,7 @@ object anon {
   
   trait TypeofPerformanceObserver extends StObject {
     
+    /* standard dom */
     val supportedEntryTypes: js.Array[String]
   }
   object TypeofPerformanceObserver {
@@ -132,7 +133,7 @@ object anon {
       
       inline def setSupportedEntryTypes(value: js.Array[String]): Self = StObject.set(x, "supportedEntryTypes", value.asInstanceOf[js.Any])
       
-      inline def setSupportedEntryTypesVarargs(value: String*): Self = StObject.set(x, "supportedEntryTypes", js.Array(value :_*))
+      inline def setSupportedEntryTypesVarargs(value: String*): Self = StObject.set(x, "supportedEntryTypes", js.Array(value*))
     }
   }
 }

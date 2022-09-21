@@ -26,6 +26,6 @@ object Row {
     
     inline def setAltitudeDiffsUndefined: Self = StObject.set(x, "altitudeDiffs", js.undefined)
     
-    inline def setAltitudeDiffsVarargs(value: Double*): Self = StObject.set(x, "altitudeDiffs", js.Array(value :_*))
+    inline def setAltitudeDiffsVarargs(value: Double*): Self = StObject.set(x, "altitudeDiffs", js.Array(value*))
   }
 }

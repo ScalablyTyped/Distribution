@@ -54,7 +54,7 @@ object MessageRuleActions {
     
     inline def setAssignCategoriesUndefined: Self = StObject.set(x, "assignCategories", js.undefined)
     
-    inline def setAssignCategoriesVarargs(value: String*): Self = StObject.set(x, "assignCategories", js.Array(value :_*))
+    inline def setAssignCategoriesVarargs(value: String*): Self = StObject.set(x, "assignCategories", js.Array(value*))
     
     inline def setCopyToFolder(value: NullableOption[String]): Self = StObject.set(x, "copyToFolder", value.asInstanceOf[js.Any])
     
@@ -74,7 +74,7 @@ object MessageRuleActions {
     
     inline def setForwardAsAttachmentToUndefined: Self = StObject.set(x, "forwardAsAttachmentTo", js.undefined)
     
-    inline def setForwardAsAttachmentToVarargs(value: Recipient*): Self = StObject.set(x, "forwardAsAttachmentTo", js.Array(value :_*))
+    inline def setForwardAsAttachmentToVarargs(value: Recipient*): Self = StObject.set(x, "forwardAsAttachmentTo", js.Array(value*))
     
     inline def setForwardTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "forwardTo", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object MessageRuleActions {
     
     inline def setForwardToUndefined: Self = StObject.set(x, "forwardTo", js.undefined)
     
-    inline def setForwardToVarargs(value: Recipient*): Self = StObject.set(x, "forwardTo", js.Array(value :_*))
+    inline def setForwardToVarargs(value: Recipient*): Self = StObject.set(x, "forwardTo", js.Array(value*))
     
     inline def setMarkAsRead(value: NullableOption[Boolean]): Self = StObject.set(x, "markAsRead", value.asInstanceOf[js.Any])
     
@@ -114,7 +114,7 @@ object MessageRuleActions {
     
     inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
     
-    inline def setRedirectToVarargs(value: Recipient*): Self = StObject.set(x, "redirectTo", js.Array(value :_*))
+    inline def setRedirectToVarargs(value: Recipient*): Self = StObject.set(x, "redirectTo", js.Array(value*))
     
     inline def setStopProcessingRules(value: NullableOption[Boolean]): Self = StObject.set(x, "stopProcessingRules", value.asInstanceOf[js.Any])
     

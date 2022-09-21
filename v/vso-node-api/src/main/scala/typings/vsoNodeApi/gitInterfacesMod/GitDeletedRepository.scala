@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
@@ -9,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GitDeletedRepository extends StObject {
   
-  var createdDate: Date
+  var createdDate: js.Date
   
   var deletedBy: IdentityRef
   
-  var deletedDate: Date
+  var deletedDate: js.Date
   
   var id: String
   
@@ -24,9 +23,9 @@ trait GitDeletedRepository extends StObject {
 object GitDeletedRepository {
   
   inline def apply(
-    createdDate: Date,
+    createdDate: js.Date,
     deletedBy: IdentityRef,
-    deletedDate: Date,
+    deletedDate: js.Date,
     id: String,
     name: String,
     project: TeamProjectReference
@@ -37,11 +36,11 @@ object GitDeletedRepository {
   
   extension [Self <: GitDeletedRepository](x: Self) {
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setDeletedBy(value: IdentityRef): Self = StObject.set(x, "deletedBy", value.asInstanceOf[js.Any])
     
-    inline def setDeletedDate(value: Date): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
+    inline def setDeletedDate(value: js.Date): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

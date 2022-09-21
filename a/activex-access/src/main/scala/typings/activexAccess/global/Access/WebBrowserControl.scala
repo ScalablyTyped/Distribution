@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.WebBrowserControl")
 @js.native
-/* private */ class WebBrowserControl ()
+/* private */ open class WebBrowserControl ()
   extends StObject
      with typings.activexAccess.Access.WebBrowserControl

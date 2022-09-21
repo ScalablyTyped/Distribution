@@ -9,7 +9,7 @@ trait WindowDragStartedEventUIParam extends StObject {
   /**
     * Gets reference to the igZoombar.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object WindowDragStartedEventUIParam {
   
@@ -20,7 +20,7 @@ object WindowDragStartedEventUIParam {
   
   extension [Self <: WindowDragStartedEventUIParam](x: Self) {
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

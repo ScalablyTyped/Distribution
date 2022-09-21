@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/index", "FragmentOutputBlock")
 @js.native
-class FragmentOutputBlock protected ()
+open class FragmentOutputBlock protected ()
   extends typings.babylonjs.blocksIndexMod.FragmentOutputBlock {
   /**
     * Create a new FragmentOutputBlock

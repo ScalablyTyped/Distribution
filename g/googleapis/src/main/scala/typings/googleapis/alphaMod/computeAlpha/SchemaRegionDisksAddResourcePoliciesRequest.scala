@@ -9,7 +9,7 @@ trait SchemaRegionDisksAddResourcePoliciesRequest extends StObject {
   /**
     * Resource policies to be added to this disk.
     */
-  var resourcePolicies: js.UndefOr[js.Array[String]] = js.undefined
+  var resourcePolicies: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaRegionDisksAddResourcePoliciesRequest {
   
@@ -22,8 +22,10 @@ object SchemaRegionDisksAddResourcePoliciesRequest {
     
     inline def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
     
+    inline def setResourcePoliciesNull: Self = StObject.set(x, "resourcePolicies", null)
+    
     inline def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
-    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
+    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value*))
   }
 }

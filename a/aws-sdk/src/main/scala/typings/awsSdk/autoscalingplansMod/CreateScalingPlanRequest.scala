@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateScalingPlanRequest extends StObject {
   
   /**
-    * A CloudFormation stack or set of tags. You can create one scaling plan per application source.
+    * A CloudFormation stack or set of tags. You can create one scaling plan per application source. For more information, see ApplicationSource in the AWS Auto Scaling API Reference.
     */
   var ApplicationSource: typings.awsSdk.autoscalingplansMod.ApplicationSource
   
   /**
-    * The scaling instructions.
+    * The scaling instructions. For more information, see ScalingInstruction in the AWS Auto Scaling API Reference.
     */
   var ScalingInstructions: typings.awsSdk.autoscalingplansMod.ScalingInstructions
   
@@ -38,7 +38,7 @@ object CreateScalingPlanRequest {
     
     inline def setScalingInstructions(value: ScalingInstructions): Self = StObject.set(x, "ScalingInstructions", value.asInstanceOf[js.Any])
     
-    inline def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value :_*))
+    inline def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value*))
     
     inline def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
   }

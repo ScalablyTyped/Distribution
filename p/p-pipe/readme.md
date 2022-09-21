@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-pipe
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Compose promise-returning & async functions into a reusable pipeline
@@ -10,10 +10,10 @@ Compose promise-returning & async functions into a reusable pipeline
 | ------------------ | :-------------: |
 | Full name          | p-pipe |
 | Keywords           | promise, pipe, pipeline, compose, composition, combine, flow, serial, functions, reusable, async, await, promises, bluebird |
-| # releases         | 4 |
-| # dependents       | 50 |
-| # downloads        | 90224180 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0114694E7 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-pipe#readme)

@@ -1,150 +1,129 @@
 package typings.rcTimePicker
 
+import org.scalablytyped.runtime.Instantiable0
 import typings.moment.mod.Moment
 import typings.rcTimePicker.anon.Open
-import typings.rcTimePicker.anon.PartialTimePickerProps
-import typings.rcTimePicker.anon.ReadonlyPartialTimePicker
+import typings.rcTimePicker.anon.`0`
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rc-time-picker", JSImport.Namespace)
+  @JSImport("rc-time-picker", JSImport.Default)
   @js.native
-  class ^ protected () extends TimePicker {
-    def this(props: ReadonlyPartialTimePicker) = this()
+  open class default () extends TimePicker
+  
+  @js.native
+  trait Panel
+    extends Component[Any, js.Object, Any] {
+    
+    def close(): Unit = js.native
   }
   
   @js.native
   trait TimePicker
-    extends Component[PartialTimePickerProps, js.Object, js.Any] {
+    extends Component[TimePickerProps, js.Object, Any] {
     
-    def close(): Unit = js.native
+    def blur(): Unit = js.native
     
-    def isAM(): Boolean = js.native
+    def focus(): Unit = js.native
   }
   
   trait TimePickerProps extends StObject {
     
-    def addon(timepicker: TimePicker): Element
+    var addon: js.UndefOr[js.Function1[/* instance */ Instantiable0[Panel], ReactNode]] = js.undefined
     
-    var allowEmpty: Boolean
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var className: String
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearIcon: ReactNode
+    var clearIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var clearText: String
+    var clearText: js.UndefOr[String] = js.undefined
     
-    var defaultOpenValue: Moment
+    var defaultOpenValue: js.UndefOr[Moment] = js.undefined
     
-    var defaultValue: Moment
+    var defaultValue: js.UndefOr[Moment] = js.undefined
     
-    var disabled: Boolean
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    def disabledHours(): js.Array[Double]
+    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
     
-    def disabledMinutes(hour: Double): js.Array[Double]
+    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
     
-    def disabledSeconds(hour: Double, minute: Double): js.Array[Double]
+    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
     
-    var focusOnOpen: Boolean
+    var focusOnOpen: js.UndefOr[Boolean] = js.undefined
     
-    var format: String
+    var format: js.UndefOr[String] = js.undefined
     
-    var hideDisabledOptions: Boolean
+    var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var hourStep: Double
+    var hourStep: js.UndefOr[Double] = js.undefined
     
-    var id: String
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputIcon: ReactNode
+    var inputIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var inputReadOnly: Boolean
+    var inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
-    var minuteStep: Double
+    var minuteStep: js.UndefOr[Double] = js.undefined
     
-    def onChange(value: Moment): Unit
+    var name: js.UndefOr[String] = js.undefined
     
-    def onClose(state: Open): Unit
+    var onChange: js.UndefOr[js.Function1[/* newValue */ Moment, Unit]] = js.undefined
     
-    def onOpen(state: Open): Unit
+    var onClose: js.UndefOr[js.Function1[/* newState */ `0`, Unit]] = js.undefined
     
-    var open: Boolean
+    var onOpen: js.UndefOr[js.Function1[/* newState */ Open, Unit]] = js.undefined
     
-    var placeholder: String
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var placement: String
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var popupClassName: String
+    var placement: js.UndefOr[String] = js.undefined
     
-    var prefixCls: String
+    var popupClassName: js.UndefOr[String] = js.undefined
     
-    var secondStep: Double
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var showHour: Boolean
+    var secondStep: js.UndefOr[Double] = js.undefined
     
-    var showMinute: Boolean
+    var showHour: js.UndefOr[Boolean] = js.undefined
     
-    var showSecond: Boolean
+    var showMinute: js.UndefOr[Boolean] = js.undefined
     
-    var transitionName: String
+    var showSecond: js.UndefOr[Boolean] = js.undefined
     
-    var use12Hours: Boolean
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var value: Moment
+    var use12Hours: js.UndefOr[Boolean] = js.undefined
+    
+    var value: js.UndefOr[Moment] = js.undefined
   }
   object TimePickerProps {
     
-    inline def apply(
-      addon: TimePicker => Element,
-      allowEmpty: Boolean,
-      className: String,
-      clearText: String,
-      defaultOpenValue: Moment,
-      defaultValue: Moment,
-      disabled: Boolean,
-      disabledHours: () => js.Array[Double],
-      disabledMinutes: Double => js.Array[Double],
-      disabledSeconds: (Double, Double) => js.Array[Double],
-      focusOnOpen: Boolean,
-      format: String,
-      hideDisabledOptions: Boolean,
-      hourStep: Double,
-      id: String,
-      inputReadOnly: Boolean,
-      minuteStep: Double,
-      onChange: Moment => Unit,
-      onClose: Open => Unit,
-      onOpen: Open => Unit,
-      open: Boolean,
-      placeholder: String,
-      placement: String,
-      popupClassName: String,
-      prefixCls: String,
-      secondStep: Double,
-      showHour: Boolean,
-      showMinute: Boolean,
-      showSecond: Boolean,
-      transitionName: String,
-      use12Hours: Boolean,
-      value: Moment
-    ): TimePickerProps = {
-      val __obj = js.Dynamic.literal(addon = js.Any.fromFunction1(addon), allowEmpty = allowEmpty.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], clearText = clearText.asInstanceOf[js.Any], defaultOpenValue = defaultOpenValue.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], disabledHours = js.Any.fromFunction0(disabledHours), disabledMinutes = js.Any.fromFunction1(disabledMinutes), disabledSeconds = js.Any.fromFunction2(disabledSeconds), focusOnOpen = focusOnOpen.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], hideDisabledOptions = hideDisabledOptions.asInstanceOf[js.Any], hourStep = hourStep.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inputReadOnly = inputReadOnly.asInstanceOf[js.Any], minuteStep = minuteStep.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onClose = js.Any.fromFunction1(onClose), onOpen = js.Any.fromFunction1(onOpen), open = open.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popupClassName = popupClassName.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], secondStep = secondStep.asInstanceOf[js.Any], showHour = showHour.asInstanceOf[js.Any], showMinute = showMinute.asInstanceOf[js.Any], showSecond = showSecond.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any], use12Hours = use12Hours.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(): TimePickerProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimePickerProps]
     }
     
     extension [Self <: TimePickerProps](x: Self) {
       
-      inline def setAddon(value: TimePicker => Element): Self = StObject.set(x, "addon", js.Any.fromFunction1(value))
+      inline def setAddon(value: /* instance */ Instantiable0[Panel] => ReactNode): Self = StObject.set(x, "addon", js.Any.fromFunction1(value))
+      
+      inline def setAddonUndefined: Self = StObject.set(x, "addon", js.undefined)
       
       inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
+      inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setClearIcon(value: ReactNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
       
@@ -152,27 +131,51 @@ object mod {
       
       inline def setClearText(value: String): Self = StObject.set(x, "clearText", value.asInstanceOf[js.Any])
       
+      inline def setClearTextUndefined: Self = StObject.set(x, "clearText", js.undefined)
+      
       inline def setDefaultOpenValue(value: Moment): Self = StObject.set(x, "defaultOpenValue", value.asInstanceOf[js.Any])
       
+      inline def setDefaultOpenValueUndefined: Self = StObject.set(x, "defaultOpenValue", js.undefined)
+      
       inline def setDefaultValue(value: Moment): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledHours(value: () => js.Array[Double]): Self = StObject.set(x, "disabledHours", js.Any.fromFunction0(value))
       
-      inline def setDisabledMinutes(value: Double => js.Array[Double]): Self = StObject.set(x, "disabledMinutes", js.Any.fromFunction1(value))
+      inline def setDisabledHoursUndefined: Self = StObject.set(x, "disabledHours", js.undefined)
       
-      inline def setDisabledSeconds(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "disabledSeconds", js.Any.fromFunction2(value))
+      inline def setDisabledMinutes(value: /* hour */ Double => js.Array[Double]): Self = StObject.set(x, "disabledMinutes", js.Any.fromFunction1(value))
+      
+      inline def setDisabledMinutesUndefined: Self = StObject.set(x, "disabledMinutes", js.undefined)
+      
+      inline def setDisabledSeconds(value: (/* hour */ Double, /* minute */ Double) => js.Array[Double]): Self = StObject.set(x, "disabledSeconds", js.Any.fromFunction2(value))
+      
+      inline def setDisabledSecondsUndefined: Self = StObject.set(x, "disabledSeconds", js.undefined)
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setFocusOnOpen(value: Boolean): Self = StObject.set(x, "focusOnOpen", value.asInstanceOf[js.Any])
       
+      inline def setFocusOnOpenUndefined: Self = StObject.set(x, "focusOnOpen", js.undefined)
+      
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
       inline def setHideDisabledOptions(value: Boolean): Self = StObject.set(x, "hideDisabledOptions", value.asInstanceOf[js.Any])
       
+      inline def setHideDisabledOptionsUndefined: Self = StObject.set(x, "hideDisabledOptions", js.undefined)
+      
       inline def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
       
+      inline def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
+      
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setInputIcon(value: ReactNode): Self = StObject.set(x, "inputIcon", value.asInstanceOf[js.Any])
       
@@ -180,37 +183,75 @@ object mod {
       
       inline def setInputReadOnly(value: Boolean): Self = StObject.set(x, "inputReadOnly", value.asInstanceOf[js.Any])
       
+      inline def setInputReadOnlyUndefined: Self = StObject.set(x, "inputReadOnly", js.undefined)
+      
       inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
       
-      inline def setOnChange(value: Moment => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
       
-      inline def setOnClose(value: Open => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setOnOpen(value: Open => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setOnChange(value: /* newValue */ Moment => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      inline def setOnClose(value: /* newState */ `0` => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      
+      inline def setOnOpen(value: /* newState */ Open => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
       inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
+      
+      inline def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      
       inline def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
+      
+      inline def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
       
       inline def setShowHour(value: Boolean): Self = StObject.set(x, "showHour", value.asInstanceOf[js.Any])
       
+      inline def setShowHourUndefined: Self = StObject.set(x, "showHour", js.undefined)
+      
       inline def setShowMinute(value: Boolean): Self = StObject.set(x, "showMinute", value.asInstanceOf[js.Any])
+      
+      inline def setShowMinuteUndefined: Self = StObject.set(x, "showMinute", js.undefined)
       
       inline def setShowSecond(value: Boolean): Self = StObject.set(x, "showSecond", value.asInstanceOf[js.Any])
       
+      inline def setShowSecondUndefined: Self = StObject.set(x, "showSecond", js.undefined)
+      
       inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+      
+      inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
       
       inline def setUse12Hours(value: Boolean): Self = StObject.set(x, "use12Hours", value.asInstanceOf[js.Any])
       
+      inline def setUse12HoursUndefined: Self = StObject.set(x, "use12Hours", js.undefined)
+      
       inline def setValue(value: Moment): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

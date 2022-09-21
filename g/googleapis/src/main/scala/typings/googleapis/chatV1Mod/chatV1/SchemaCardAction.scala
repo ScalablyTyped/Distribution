@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A card action is the action associated with the card. For an invoice card,
-  * a typical action would be: delete invoice, email invoice or open the
-  * invoice in browser.
-  */
 trait SchemaCardAction extends StObject {
   
   /**
     * The label used to be displayed in the action menu item.
     */
-  var actionLabel: js.UndefOr[String] = js.undefined
+  var actionLabel: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The onclick action for this action item.
@@ -31,6 +26,8 @@ object SchemaCardAction {
   extension [Self <: SchemaCardAction](x: Self) {
     
     inline def setActionLabel(value: String): Self = StObject.set(x, "actionLabel", value.asInstanceOf[js.Any])
+    
+    inline def setActionLabelNull: Self = StObject.set(x, "actionLabel", null)
     
     inline def setActionLabelUndefined: Self = StObject.set(x, "actionLabel", js.undefined)
     

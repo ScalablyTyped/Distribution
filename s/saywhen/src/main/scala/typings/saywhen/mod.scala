@@ -1,7 +1,6 @@
 package typings.saywhen
 
 import typings.jasmine.jasmine.Spy
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,11 +24,11 @@ object mod {
     
     val isCalled: Proxy[T]
     
-    def isCalledWith(args: js.Any*): Proxy[T]
+    def isCalledWith(args: Any*): Proxy[T]
   }
   object CallHandler {
     
-    inline def apply[T /* <: Func */](isCalled: Proxy[T], isCalledWith: /* repeated */ js.Any => Proxy[T]): CallHandler[T] = {
+    inline def apply[T /* <: Func */](isCalled: Proxy[T], isCalledWith: /* repeated */ Any => Proxy[T]): CallHandler[T] = {
       val __obj = js.Dynamic.literal(isCalled = isCalled.asInstanceOf[js.Any], isCalledWith = js.Any.fromFunction1(isCalledWith))
       __obj.asInstanceOf[CallHandler[T]]
     }
@@ -38,14 +37,14 @@ object mod {
       
       inline def setIsCalled(value: Proxy[T]): Self = StObject.set(x, "isCalled", value.asInstanceOf[js.Any])
       
-      inline def setIsCalledWith(value: /* repeated */ js.Any => Proxy[T]): Self = StObject.set(x, "isCalledWith", js.Any.fromFunction1(value))
+      inline def setIsCalledWith(value: /* repeated */ Any => Proxy[T]): Self = StObject.set(x, "isCalledWith", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
   trait Func extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
   
   @js.native
@@ -62,13 +61,13 @@ object mod {
     
     def `then`(fn: T): Proxy[T]
     
-    def thenReturn(`val`: js.Any): Proxy[T]
+    def thenReturn(`val`: Any): Proxy[T]
     
-    def thenThrow(err: Error): Proxy[T]
+    def thenThrow(err: js.Error): Proxy[T]
   }
   object Proxy {
     
-    inline def apply[T /* <: Func */](`then`: T => Proxy[T], thenReturn: js.Any => Proxy[T], thenThrow: Error => Proxy[T]): Proxy[T] = {
+    inline def apply[T /* <: Func */](`then`: T => Proxy[T], thenReturn: Any => Proxy[T], thenThrow: js.Error => Proxy[T]): Proxy[T] = {
       val __obj = js.Dynamic.literal(thenReturn = js.Any.fromFunction1(thenReturn), thenThrow = js.Any.fromFunction1(thenThrow))
       __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
       __obj.asInstanceOf[Proxy[T]]
@@ -78,9 +77,9 @@ object mod {
       
       inline def setThen(value: T => Proxy[T]): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
       
-      inline def setThenReturn(value: js.Any => Proxy[T]): Self = StObject.set(x, "thenReturn", js.Any.fromFunction1(value))
+      inline def setThenReturn(value: Any => Proxy[T]): Self = StObject.set(x, "thenReturn", js.Any.fromFunction1(value))
       
-      inline def setThenThrow(value: Error => Proxy[T]): Self = StObject.set(x, "thenThrow", js.Any.fromFunction1(value))
+      inline def setThenThrow(value: js.Error => Proxy[T]): Self = StObject.set(x, "thenThrow", js.Any.fromFunction1(value))
     }
   }
 }

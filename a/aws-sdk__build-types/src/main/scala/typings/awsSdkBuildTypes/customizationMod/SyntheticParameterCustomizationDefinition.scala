@@ -69,7 +69,7 @@ object SyntheticParameterCustomizationDefinition {
     
     inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value*))
     
     inline def setLocation(value: input | output): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

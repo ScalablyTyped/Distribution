@@ -15,13 +15,13 @@ object translateMod {
   
   @JSImport("ol/interaction/Translate", JSImport.Default)
   @js.native
-  class default () extends Translate {
+  open class default () extends Translate {
     def this(opt_options: Options) = this()
   }
   
   @JSImport("ol/interaction/Translate", "TranslateEvent")
   @js.native
-  class TranslateEvent protected ()
+  open class TranslateEvent protected ()
     extends typings.ol.eventMod.default {
     def this(
       `type`: TranslateEventType,
@@ -133,7 +133,7 @@ object translateMod {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]*): Self = StObject.set(x, "layers", js.Array(value*))
     }
   }
   

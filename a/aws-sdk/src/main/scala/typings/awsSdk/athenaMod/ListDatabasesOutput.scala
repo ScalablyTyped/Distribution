@@ -29,7 +29,7 @@ object ListDatabasesOutput {
     
     inline def setDatabaseListUndefined: Self = StObject.set(x, "DatabaseList", js.undefined)
     
-    inline def setDatabaseListVarargs(value: Database*): Self = StObject.set(x, "DatabaseList", js.Array(value :_*))
+    inline def setDatabaseListVarargs(value: Database*): Self = StObject.set(x, "DatabaseList", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

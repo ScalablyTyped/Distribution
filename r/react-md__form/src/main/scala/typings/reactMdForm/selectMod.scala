@@ -7,7 +7,7 @@ import typings.reactMdForm.listboxMod.ListboxProps
 import typings.reactMdForm.nativeSelectMod.NativeSelectProps
 import typings.reactMdForm.optionMod.OptionProps
 import typings.reactMdForm.selectSelectMod.SelectProps
-import typings.reactMdForm.utilsMod.ListboxOption
+import typings.reactMdForm.selectUtilsMod.ListboxOption
 import typings.reactMdList.listMod.ListElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLLIElement

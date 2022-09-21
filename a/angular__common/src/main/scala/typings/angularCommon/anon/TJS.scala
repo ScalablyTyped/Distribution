@@ -21,10 +21,10 @@ object TJS {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
     inline def setTJS(value: js.Array[String]): Self = StObject.set(x, "TJS", value.asInstanceOf[js.Any])
     
-    inline def setTJSVarargs(value: String*): Self = StObject.set(x, "TJS", js.Array(value :_*))
+    inline def setTJSVarargs(value: String*): Self = StObject.set(x, "TJS", js.Array(value*))
   }
 }

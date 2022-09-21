@@ -10,10 +10,10 @@ object notificationsActiveMod {
   
   @JSImport("material-ui/svg-icons/social/notifications-active", JSImport.Default)
   @js.native
-  class default () extends SocialNotificationsActive
+  open class default () extends SocialNotificationsActive
   
   @JSImport("material-ui/svg-icons/social/notifications-active", "SocialNotificationsActive")
   @js.native
-  class SocialNotificationsActive ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialNotificationsActive ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

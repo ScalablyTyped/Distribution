@@ -6,15 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the collection of sheet views in the worksheet.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * @remarks
+  * [Api set: ExcelApiOnline 1.1]
   */
 @JSGlobal("Excel.NamedSheetViewCollection")
 @js.native
-class NamedSheetViewCollection ()
+open class NamedSheetViewCollection ()
   extends StObject
      with typings.officeJsPreview.Excel.NamedSheetViewCollection {
   

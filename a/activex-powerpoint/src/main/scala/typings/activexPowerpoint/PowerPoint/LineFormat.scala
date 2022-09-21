@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LineFormat extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var BackColor: ColorFormat
   
@@ -37,7 +37,7 @@ trait LineFormat extends StObject {
   
   var InsetPen: MsoTriState
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Pattern: MsoPatternType
   
@@ -55,7 +55,7 @@ trait LineFormat extends StObject {
 object LineFormat {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     BackColor: ColorFormat,
     BeginArrowheadLength: MsoArrowheadLength,
     BeginArrowheadStyle: MsoArrowheadStyle,
@@ -67,7 +67,7 @@ object LineFormat {
     EndArrowheadWidth: MsoArrowheadWidth,
     ForeColor: ColorFormat,
     InsetPen: MsoTriState,
-    Parent: js.Any,
+    Parent: Any,
     Pattern: MsoPatternType,
     PowerPointDotLineFormat_typekey: LineFormat,
     Style: MsoLineStyle,
@@ -82,7 +82,7 @@ object LineFormat {
   
   extension [Self <: LineFormat](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBackColor(value: ColorFormat): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
@@ -106,7 +106,7 @@ object LineFormat {
     
     inline def setInsetPen(value: MsoTriState): Self = StObject.set(x, "InsetPen", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPattern(value: MsoPatternType): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     

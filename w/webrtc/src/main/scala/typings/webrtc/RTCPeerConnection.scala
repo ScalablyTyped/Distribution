@@ -11,7 +11,6 @@ import typings.std.RTCSessionDescription
 import typings.std.RTCSessionDescriptionCallback
 import typings.std.RTCSessionDescriptionInit
 import typings.std.RTCSignalingState
-import typings.std.RTCStatsCallback
 import typings.std.RTCStatsReport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -80,11 +79,15 @@ trait RTCPeerConnection
   
   // Extension: https://www.w3.org/TR/webrtc/#h-rtcpeerconnection-interface-extensions-2
   def getStats(): js.Promise[RTCStatsReport] = js.native
-  def getStats(selector: Null, successCallback: RTCStatsCallback, failureCallback: RTCPeerConnectionErrorCallback): js.Promise[Unit] = js.native
+  def getStats(
+    selector: Null,
+    successCallback: js.Function1[/* report */ RTCStatsReport, Unit],
+    failureCallback: RTCPeerConnectionErrorCallback
+  ): js.Promise[Unit] = js.native
   def getStats(selector: MediaStreamTrack): js.Promise[RTCStatsReport] = js.native
   def getStats(
     selector: MediaStreamTrack,
-    successCallback: RTCStatsCallback,
+    successCallback: js.Function1[/* report */ RTCStatsReport, Unit],
     failureCallback: RTCPeerConnectionErrorCallback
   ): js.Promise[Unit] = js.native
   
@@ -96,7 +99,7 @@ trait RTCPeerConnection
   
   var ondatachannel: PeerConnectionEventHandler[RTCDataChannelEvent] = js.native
   
-  var onicecandidateerror: PeerConnectionEventHandler[RTCPeerConnectionIceErrorEvent] = js.native
+  var onicecandidateerror: PeerConnectionEventHandler[Event] = js.native
   
   var ontrack: PeerConnectionEventHandler[RTCTrackEvent] = js.native
   

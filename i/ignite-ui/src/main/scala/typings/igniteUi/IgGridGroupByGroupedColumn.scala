@@ -10,19 +10,19 @@ trait IgGridGroupByGroupedColumn
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * [column](ui.iggrid#options:columns) object for the column that is grouped
     *
     */
-  var col: js.UndefOr[js.Any] = js.undefined
+  var col: js.UndefOr[Any] = js.undefined
   
   /**
     * sort order - ascending or descending
     *
     */
-  var dir: js.UndefOr[js.Any] = js.undefined
+  var dir: js.UndefOr[Any] = js.undefined
   
   /**
     * Key of the column that's grouped
@@ -44,11 +44,11 @@ object IgGridGroupByGroupedColumn {
   
   extension [Self <: IgGridGroupByGroupedColumn](x: Self) {
     
-    inline def setCol(value: js.Any): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: Any): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
     
-    inline def setDir(value: js.Any): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: Any): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     

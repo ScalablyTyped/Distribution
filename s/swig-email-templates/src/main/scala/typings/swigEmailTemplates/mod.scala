@@ -2,6 +2,7 @@ package typings.swigEmailTemplates
 
 import typings.jquery.JQueryStatic
 import typings.swig.mod.SwigOptions
+import typings.swigEmailTemplates.anon.Html
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,117 +11,50 @@ object mod {
   
   @JSImport("swig-email-templates", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with EmailTemplates {
     def this(options: SwigEmailTemplatesOptions) = this()
-    
-    /* CompleteClass */
-    override def generateSubject(
-      templatePath: String,
-      context: js.Any,
-      cb: js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]
-    ): Unit = js.native
-    
-    /* CompleteClass */
-    override def generateText(
-      templatePath: String,
-      context: js.Any,
-      html: String,
-      cb: js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]
-    ): Unit = js.native
-    
-    /* CompleteClass */
-    override def render(
-      templatePath: String,
-      context: js.Any,
-      cb: js.Function4[
-          /* error */ js.Any, 
-          /* inlinedHTML */ js.UndefOr[String], 
-          /* text */ js.UndefOr[String], 
-          /* subject */ js.UndefOr[String], 
-          Unit
-        ]
-    ): Unit = js.native
-    
-    /* CompleteClass */
-    override def rewriteUrls($: JQueryStatic, rewrite: js.Function1[/* href */ String, Unit]): Unit = js.native
   }
   
+  @js.native
   trait EmailTemplates extends StObject {
     
     def generateSubject(
       templatePath: String,
-      context: js.Any,
-      cb: js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]
-    ): Unit
+      context: Any,
+      cb: js.Function2[/* error */ Any, /* text */ String | Null, Unit]
+    ): Unit = js.native
     
     def generateText(
       templatePath: String,
-      context: js.Any,
+      context: Any,
       html: String,
-      cb: js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]
-    ): Unit
+      cb: js.Function2[/* error */ Any, /* text */ String | Null, Unit]
+    ): Unit = js.native
     
+    /** @async */
+    def render(templatePath: String, context: Any): js.Promise[Html] = js.native
     def render(
       templatePath: String,
-      context: js.Any,
+      context: Any,
       cb: js.Function4[
-          /* error */ js.Any, 
+          /* error */ Any, 
           /* inlinedHTML */ js.UndefOr[String], 
           /* text */ js.UndefOr[String], 
           /* subject */ js.UndefOr[String], 
           Unit
         ]
-    ): Unit
+    ): Unit = js.native
     
-    def rewriteUrls($: JQueryStatic, rewrite: js.Function1[/* href */ String, Unit]): Unit
-  }
-  object EmailTemplates {
-    
-    inline def apply(
-      generateSubject: (String, js.Any, js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]) => Unit,
-      generateText: (String, js.Any, String, js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]) => Unit,
-      render: (String, js.Any, js.Function4[
-          /* error */ js.Any, 
-          /* inlinedHTML */ js.UndefOr[String], 
-          /* text */ js.UndefOr[String], 
-          /* subject */ js.UndefOr[String], 
-          Unit
-        ]) => Unit,
-      rewriteUrls: (JQueryStatic, js.Function1[/* href */ String, Unit]) => Unit
-    ): EmailTemplates = {
-      val __obj = js.Dynamic.literal(generateSubject = js.Any.fromFunction3(generateSubject), generateText = js.Any.fromFunction4(generateText), render = js.Any.fromFunction3(render), rewriteUrls = js.Any.fromFunction2(rewriteUrls))
-      __obj.asInstanceOf[EmailTemplates]
-    }
-    
-    extension [Self <: EmailTemplates](x: Self) {
-      
-      inline def setGenerateSubject(value: (String, js.Any, js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]) => Unit): Self = StObject.set(x, "generateSubject", js.Any.fromFunction3(value))
-      
-      inline def setGenerateText(
-        value: (String, js.Any, String, js.Function2[/* error */ js.Any, /* text */ String | Null, Unit]) => Unit
-      ): Self = StObject.set(x, "generateText", js.Any.fromFunction4(value))
-      
-      inline def setRender(
-        value: (String, js.Any, js.Function4[
-              /* error */ js.Any, 
-              /* inlinedHTML */ js.UndefOr[String], 
-              /* text */ js.UndefOr[String], 
-              /* subject */ js.UndefOr[String], 
-              Unit
-            ]) => Unit
-      ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
-      
-      inline def setRewriteUrls(value: (JQueryStatic, js.Function1[/* href */ String, Unit]) => Unit): Self = StObject.set(x, "rewriteUrls", js.Any.fromFunction2(value))
-    }
+    def rewriteUrls($: JQueryStatic, rewrite: js.Function1[/* href */ String, Unit]): Unit = js.native
   }
   
   trait SwigEmailTemplatesOptions
     extends StObject
        with SwigOptions {
     
-    var juice: js.UndefOr[js.Any] = js.undefined
+    var juice: js.UndefOr[Any] = js.undefined
     
     var rewrite: js.UndefOr[js.Function1[/* $ */ JQueryStatic, Unit]] = js.undefined
     
@@ -137,7 +71,7 @@ object mod {
     
     extension [Self <: SwigEmailTemplatesOptions](x: Self) {
       
-      inline def setJuice(value: js.Any): Self = StObject.set(x, "juice", value.asInstanceOf[js.Any])
+      inline def setJuice(value: Any): Self = StObject.set(x, "juice", value.asInstanceOf[js.Any])
       
       inline def setJuiceUndefined: Self = StObject.set(x, "juice", js.undefined)
       
@@ -158,7 +92,7 @@ object mod {
   type SwigRender[T] = js.Function3[
     /* file */ String, 
     /* context */ T, 
-    /* callback */ js.Function3[/* err */ js.Any, /* html */ String, /* text */ String, js.Any], 
-    js.Any
+    /* callback */ js.Function3[/* err */ Any, /* html */ String, /* text */ String, Any], 
+    Any
   ]
 }

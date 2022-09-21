@@ -14,7 +14,7 @@ object Certificates {
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager")
   @js.native
-  class CertificateEnrollmentManager ()
+  open class CertificateEnrollmentManager ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager
   /* static members */
@@ -40,7 +40,7 @@ object Certificates {
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateRequestProperties")
   @js.native
-  class CertificateRequestProperties ()
+  open class CertificateRequestProperties ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Certificates.CertificateRequestProperties {
     
@@ -118,7 +118,7 @@ object Certificates {
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames")
   @js.native
-  class KeyAlgorithmNames ()
+  open class KeyAlgorithmNames ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Certificates.KeyAlgorithmNames
   /* static members */
@@ -201,7 +201,7 @@ object Certificates {
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames")
   @js.native
-  class KeyStorageProviderNames ()
+  open class KeyStorageProviderNames ()
     extends StObject
        with typings.winrt.Windows.Security.Cryptography.Certificates.KeyStorageProviderNames
   /* static members */

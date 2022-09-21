@@ -82,7 +82,7 @@ object Product {
     
     inline def setCreatorContactsUndefined: Self = StObject.set(x, "creatorContacts", js.undefined)
     
-    inline def setCreatorContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "creatorContacts", js.Array(value :_*))
+    inline def setCreatorContactsVarargs(value: ContactInformation*): Self = StObject.set(x, "creatorContacts", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -116,7 +116,7 @@ object Product {
     
     inline def setTargetingCriterionUndefined: Self = StObject.set(x, "targetingCriterion", js.undefined)
     
-    inline def setTargetingCriterionVarargs(value: TargetingCriteria*): Self = StObject.set(x, "targetingCriterion", js.Array(value :_*))
+    inline def setTargetingCriterionVarargs(value: TargetingCriteria*): Self = StObject.set(x, "targetingCriterion", js.Array(value*))
     
     inline def setTerms(value: DealTerms): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     

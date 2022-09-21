@@ -19,12 +19,12 @@ trait DescribeReplayResponse extends StObject {
   /**
     * The time stamp for the last event that was replayed from the archive.
     */
-  var EventEndTime: js.UndefOr[Timestamp] = js.undefined
+  var EventEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time that the event was last replayed.
     */
-  var EventLastReplayedTime: js.UndefOr[Timestamp] = js.undefined
+  var EventLastReplayedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the archive events were replayed from.
@@ -34,7 +34,7 @@ trait DescribeReplayResponse extends StObject {
   /**
     * The time stamp of the first event that was last replayed from the archive.
     */
-  var EventStartTime: js.UndefOr[Timestamp] = js.undefined
+  var EventStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the replay.
@@ -44,7 +44,7 @@ trait DescribeReplayResponse extends StObject {
   /**
     * A time stamp for the time that the replay stopped.
     */
-  var ReplayEndTime: js.UndefOr[Timestamp] = js.undefined
+  var ReplayEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the replay.
@@ -54,7 +54,7 @@ trait DescribeReplayResponse extends StObject {
   /**
     * A time stamp for the time that the replay started.
     */
-  var ReplayStartTime: js.UndefOr[Timestamp] = js.undefined
+  var ReplayStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current state of the replay.
@@ -83,11 +83,11 @@ object DescribeReplayResponse {
     
     inline def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
     
-    inline def setEventEndTime(value: Timestamp): Self = StObject.set(x, "EventEndTime", value.asInstanceOf[js.Any])
+    inline def setEventEndTime(value: js.Date): Self = StObject.set(x, "EventEndTime", value.asInstanceOf[js.Any])
     
     inline def setEventEndTimeUndefined: Self = StObject.set(x, "EventEndTime", js.undefined)
     
-    inline def setEventLastReplayedTime(value: Timestamp): Self = StObject.set(x, "EventLastReplayedTime", value.asInstanceOf[js.Any])
+    inline def setEventLastReplayedTime(value: js.Date): Self = StObject.set(x, "EventLastReplayedTime", value.asInstanceOf[js.Any])
     
     inline def setEventLastReplayedTimeUndefined: Self = StObject.set(x, "EventLastReplayedTime", js.undefined)
     
@@ -95,7 +95,7 @@ object DescribeReplayResponse {
     
     inline def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
     
-    inline def setEventStartTime(value: Timestamp): Self = StObject.set(x, "EventStartTime", value.asInstanceOf[js.Any])
+    inline def setEventStartTime(value: js.Date): Self = StObject.set(x, "EventStartTime", value.asInstanceOf[js.Any])
     
     inline def setEventStartTimeUndefined: Self = StObject.set(x, "EventStartTime", js.undefined)
     
@@ -103,7 +103,7 @@ object DescribeReplayResponse {
     
     inline def setReplayArnUndefined: Self = StObject.set(x, "ReplayArn", js.undefined)
     
-    inline def setReplayEndTime(value: Timestamp): Self = StObject.set(x, "ReplayEndTime", value.asInstanceOf[js.Any])
+    inline def setReplayEndTime(value: js.Date): Self = StObject.set(x, "ReplayEndTime", value.asInstanceOf[js.Any])
     
     inline def setReplayEndTimeUndefined: Self = StObject.set(x, "ReplayEndTime", js.undefined)
     
@@ -111,7 +111,7 @@ object DescribeReplayResponse {
     
     inline def setReplayNameUndefined: Self = StObject.set(x, "ReplayName", js.undefined)
     
-    inline def setReplayStartTime(value: Timestamp): Self = StObject.set(x, "ReplayStartTime", value.asInstanceOf[js.Any])
+    inline def setReplayStartTime(value: js.Date): Self = StObject.set(x, "ReplayStartTime", value.asInstanceOf[js.Any])
     
     inline def setReplayStartTimeUndefined: Self = StObject.set(x, "ReplayStartTime", js.undefined)
     

@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response message for EntityTypes.ListEntityTypes.
-  */
 trait SchemaGoogleCloudDialogflowV2ListEntityTypesResponse extends StObject {
   
   /**
-    * The list of agent entity types. There will be a maximum number of items
-    * returned based on the page_size field in the request.
+    * The list of agent entity types. There will be a maximum number of items returned based on the page_size field in the request.
     */
   var entityTypes: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2EntityType]] = js.undefined
   
   /**
-    * Token to retrieve the next page of results, or empty if there are no more
-    * results in the list.
+    * Token to retrieve the next page of results, or empty if there are no more results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2ListEntityTypesResponse {
   
@@ -34,9 +29,11 @@ object SchemaGoogleCloudDialogflowV2ListEntityTypesResponse {
     
     inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    inline def setEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

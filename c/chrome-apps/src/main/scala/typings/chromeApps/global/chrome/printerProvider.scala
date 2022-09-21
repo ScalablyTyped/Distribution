@@ -52,7 +52,7 @@ object printerProvider {
   @js.native
   val onGetUsbPrinterInfoRequested: typings.chromeApps.chrome.events.Event[
     js.Function2[
-      /* device */ js.Any, 
+      /* device */ Any, 
       /* resultCallback */ js.Function1[/* printerInfo */ js.UndefOr[PrinterInfo], Unit], 
       Unit
     ]

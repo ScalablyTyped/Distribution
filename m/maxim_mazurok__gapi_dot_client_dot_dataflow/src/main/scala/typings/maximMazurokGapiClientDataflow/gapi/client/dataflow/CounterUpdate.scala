@@ -40,7 +40,7 @@ trait CounterUpdate extends StObject {
   var integerMean: js.UndefOr[IntegerMean] = js.undefined
   
   /** Value for internally-defined counters used by the Dataflow service. */
-  var internal: js.UndefOr[js.Any] = js.undefined
+  var internal: js.UndefOr[Any] = js.undefined
   
   /** Counter name and aggregation type. */
   var nameAndKind: js.UndefOr[NameAndKind] = js.undefined
@@ -103,7 +103,7 @@ object CounterUpdate {
     
     inline def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
     
-    inline def setInternal(value: js.Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+    inline def setInternal(value: Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
     inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     

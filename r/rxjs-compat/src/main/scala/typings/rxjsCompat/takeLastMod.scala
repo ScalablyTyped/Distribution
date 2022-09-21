@@ -10,5 +10,5 @@ object takeLastMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def takeLast[T](count: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("takeLast")(count.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def takeLast[T](count: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("takeLast")(count.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

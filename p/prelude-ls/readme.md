@@ -10,10 +10,10 @@ prelude.ls is a functionally oriented utility library. It is powerful and flexib
 | ------------------ | :-------------: |
 | Full name          | prelude-ls |
 | Keywords           | prelude, livescript, utility, ls, coffeescript, javascript, library, functional, array, list, object, string |
-| # releases         | 3 |
-| # dependents       | 273 |
-| # downloads        | 742439203 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.53690026E8 |
+| # stars            | 419.0 |
 
 ## Links
 - [Homepage](http://preludels.com)

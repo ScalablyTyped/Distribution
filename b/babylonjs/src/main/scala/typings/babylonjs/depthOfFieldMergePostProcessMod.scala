@@ -16,13 +16,13 @@ object depthOfFieldMergePostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/depthOfFieldMergePostProcess", "DepthOfFieldMergePostProcess")
   @js.native
-  class DepthOfFieldMergePostProcess protected () extends PostProcess {
+  open class DepthOfFieldMergePostProcess protected () extends PostProcess {
     /**
       * Creates a new instance of DepthOfFieldMergePostProcess
       * @param name The name of the effect.
       * @param originalFromInput Post process which's input will be used for the merge.
       * @param circleOfConfusion Circle of confusion post process which's output will be used to blur each pixel.
-      * @param blurSteps Blur post processes from low to high which will be mixed with the original image.
+      * @param _blurSteps Blur post processes from low to high which will be mixed with the original image.
       * @param options The required width/height ratio to downsize to before computing the render pass.
       * @param camera The camera to apply the render pass to.
       * @param samplingMode The sampling mode to be used when computing the pass. (default: 0)
@@ -35,7 +35,7 @@ object depthOfFieldMergePostProcessMod {
       name: String,
       originalFromInput: PostProcess,
       circleOfConfusion: PostProcess,
-      blurSteps: js.Array[PostProcess],
+      _blurSteps: js.Array[PostProcess],
       options: Double | PostProcessOptions,
       camera: Nullable[Camera],
       samplingMode: js.UndefOr[Double],
@@ -45,7 +45,7 @@ object depthOfFieldMergePostProcessMod {
       blockCompilation: js.UndefOr[Boolean]
     ) = this()
     
-    /* private */ var blurSteps: js.Any = js.native
+    /* private */ var _blurSteps: Any = js.native
     
     /**
       * Updates the effect with the current post process compile time values and recompiles the shader.
@@ -60,7 +60,7 @@ object depthOfFieldMergePostProcessMod {
       defines: js.UndefOr[Nullable[String]],
       uniforms: js.UndefOr[Nullable[js.Array[String]]],
       samplers: js.UndefOr[Nullable[js.Array[String]]],
-      indexParameters: js.UndefOr[js.Any],
+      indexParameters: js.UndefOr[Any],
       onCompiled: js.UndefOr[js.Function1[/* effect */ Effect, Unit]],
       onError: js.UndefOr[js.Function2[/* effect */ Effect, /* errors */ String, Unit]]
     ): Unit = js.native
@@ -68,7 +68,7 @@ object depthOfFieldMergePostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/depthOfFieldMergePostProcess", "DepthOfFieldMergePostProcessOptions")
   @js.native
-  class DepthOfFieldMergePostProcessOptions () extends StObject {
+  open class DepthOfFieldMergePostProcessOptions () extends StObject {
     
     /**
       * Parameters to perform the merge of bloom effect

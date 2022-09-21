@@ -10,10 +10,10 @@ jsreport handlebars templating engine
 | ------------------ | :-------------: |
 | Full name          | jsreport-handlebars |
 | Keywords           | jsreport, handlebars |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 193168 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9131.666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/jsreport/jsreport-handlebars)

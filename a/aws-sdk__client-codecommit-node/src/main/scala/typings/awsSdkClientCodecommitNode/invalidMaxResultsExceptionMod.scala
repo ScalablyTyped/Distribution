@@ -8,5 +8,5 @@ object invalidMaxResultsExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidMaxResultsException", "InvalidMaxResultsException")
   @js.native
-  val InvalidMaxResultsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidMaxResultsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

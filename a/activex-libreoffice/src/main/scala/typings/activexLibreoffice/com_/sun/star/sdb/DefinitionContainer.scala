@@ -41,21 +41,21 @@ object DefinitionContainer {
     addRefreshListener: XRefreshListener => Unit,
     createEnumeration: () => XEnumeration,
     createInstance: () => XInterface,
-    createInstanceWithArguments: SeqEquiv[js.Any] => XInterface,
-    getByIndex: Double => js.Any,
-    getByName: String => js.Any,
+    createInstanceWithArguments: SeqEquiv[Any] => XInterface,
+    getByIndex: Double => Any,
+    getByName: String => Any,
     getCount: () => Double,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
-    insertByName: (String, js.Any) => Unit,
-    queryInterface: `type` => js.Any,
+    insertByName: (String, Any) => Unit,
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit,
     removeByName: String => Unit,
     removeRefreshListener: XRefreshListener => Unit,
-    replaceByName: (String, js.Any) => Unit
+    replaceByName: (String, Any) => Unit
   ): DefinitionContainer = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addRefreshListener = js.Any.fromFunction1(addRefreshListener), createEnumeration = js.Any.fromFunction0(createEnumeration), createInstance = js.Any.fromFunction0(createInstance), createInstanceWithArguments = js.Any.fromFunction1(createInstanceWithArguments), getByIndex = js.Any.fromFunction1(getByIndex), getByName = js.Any.fromFunction1(getByName), getCount = js.Any.fromFunction0(getCount), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), insertByName = js.Any.fromFunction2(insertByName), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), removeByName = js.Any.fromFunction1(removeByName), removeRefreshListener = js.Any.fromFunction1(removeRefreshListener), replaceByName = js.Any.fromFunction2(replaceByName))
     __obj.asInstanceOf[DefinitionContainer]

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param radiusRange the range of the emission sphere [0-1] 0 Surface only, 1 Entire Radius (1 by default)
   * @param directionRandomizer defines how much to randomize the particle direction [0-1]
   */
-class SphereParticleEmitter ()
+open class SphereParticleEmitter ()
   extends typings.babylonjs.indexMod.SphereParticleEmitter {
   def this(/**
     * The radius of the emission sphere.

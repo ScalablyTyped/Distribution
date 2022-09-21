@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BaselineEnd[K2, D2]
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var baselineEnd: String
   
@@ -52,7 +52,7 @@ object BaselineEnd {
     
     inline def setTaskContexts(value: js.Array[ItemData[K2, D2]]): Self = StObject.set(x, "taskContexts", value.asInstanceOf[js.Any])
     
-    inline def setTaskContextsVarargs(value: (ItemData[K2, D2])*): Self = StObject.set(x, "taskContexts", js.Array(value :_*))
+    inline def setTaskContextsVarargs(value: (ItemData[K2, D2])*): Self = StObject.set(x, "taskContexts", js.Array(value*))
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

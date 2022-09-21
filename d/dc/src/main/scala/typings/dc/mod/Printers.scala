@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Printers extends StObject {
   
-  def filter(filter: js.Any): String = js.native
-  def filter(filter: js.Array[js.Any]): String = js.native
-  def filter(filter: js.Function1[/* filters */ js.Array[js.Any], String]): String = js.native
+  def filter(filter: js.Array[Any]): String = js.native
+  def filter(filter: js.Function1[/* filters */ js.Array[Any], String]): String = js.native
+  def filter(filter: Any): String = js.native
   
-  def filters(filters: js.Array[js.Any]): String = js.native
+  def filters(filters: js.Array[Any]): String = js.native
 }

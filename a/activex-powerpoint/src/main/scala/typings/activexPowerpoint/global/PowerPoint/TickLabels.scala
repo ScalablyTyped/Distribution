@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TickLabels")
 @js.native
-/* private */ class TickLabels ()
+/* private */ open class TickLabels ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TickLabels {
   
@@ -18,13 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
   /* CompleteClass */
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override def Delete(): js.Any = js.native
+  override def Delete(): Any = js.native
   
   /* CompleteClass */
   override val Depth: Double = js.native
@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var NumberFormatLinked: Boolean = js.native
   
   /* CompleteClass */
-  var NumberFormatLocal: js.Any = js.native
+  var NumberFormatLocal: Any = js.native
   
   /* CompleteClass */
   var Offset: Double = js.native
@@ -57,7 +57,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Orientation: XlTickLabelOrientation = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.TickLabels_typekey")
@@ -67,5 +67,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ReadingOrder: Double = js.native
   
   /* CompleteClass */
-  override def Select(): js.Any = js.native
+  override def Select(): Any = js.native
 }

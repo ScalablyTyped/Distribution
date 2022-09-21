@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.ViewFields")
 @js.native
-/* private */ class ViewFields ()
+/* private */ open class ViewFields ()
   extends StObject
      with typings.activexOutlook.Outlook.ViewFields {
   
@@ -24,20 +24,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Insert(PropertyName: String, Index: js.Any): typings.activexOutlook.Outlook.ViewField = js.native
+  override def Insert(PropertyName: String, Index: Any): typings.activexOutlook.Outlook.ViewField = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexOutlook.Outlook.ViewField = js.native
+  override def Item(Index: Any): typings.activexOutlook.Outlook.ViewField = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.ViewFields_typekey")
   var OutlookDotViewFields_typekey: typings.activexOutlook.Outlook.ViewFields = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  override def Remove(Index: js.Any): Unit = js.native
+  override def Remove(Index: Any): Unit = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

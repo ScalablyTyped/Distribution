@@ -8,121 +8,121 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the options in sheet protection.
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 trait WorksheetProtectionOptions extends StObject {
   
   /**
+    * Represents the worksheet protection option allowing use of the AutoFilter feature.
     *
-    * Represents the worksheet protection option of allowing using auto filter feature.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowAutoFilter: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing deleting of columns.
     *
-    * Represents the worksheet protection option of allowing deleting columns.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowDeleteColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing deleting of rows.
     *
-    * Represents the worksheet protection option of allowing deleting rows.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowDeleteRows: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing editing of objects.
     *
-    * Represents the worksheet protection option of allowing editing objects.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var allowEditObjects: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing editing of scenarios.
     *
-    * Represents the worksheet protection option of allowing editing scenarios.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var allowEditScenarios: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing formatting of cells.
     *
-    * Represents the worksheet protection option of allowing formatting cells.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowFormatCells: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing formatting of columns.
     *
-    * Represents the worksheet protection option of allowing formatting columns.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowFormatColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing formatting of rows.
     *
-    * Represents the worksheet protection option of allowing formatting rows.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowFormatRows: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing inserting of columns.
     *
-    * Represents the worksheet protection option of allowing inserting columns.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowInsertColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing inserting of hyperlinks.
     *
-    * Represents the worksheet protection option of allowing inserting hyperlinks.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowInsertHyperlinks: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing inserting of rows.
     *
-    * Represents the worksheet protection option of allowing inserting rows.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowInsertRows: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing use of the PivotTable feature.
     *
-    * Represents the worksheet protection option of allowing using PivotTable feature.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowPivotTables: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the worksheet protection option allowing use of the sort feature.
     *
-    * Represents the worksheet protection option of allowing using sort feature.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowSort: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the worksheet protection option of selection mode.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var selectionMode: js.UndefOr[ProtectionSelectionMode | Normal | Unlocked | None] = js.undefined

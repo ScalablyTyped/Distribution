@@ -12,7 +12,7 @@ trait IHtmlElementTextureOptions extends StObject {
   var engine: Nullable[ThinEngine]
   
   /**
-    * Defines wether mip maps should be created or not.
+    * Defines whether mip maps should be created or not.
     */
   var generateMipMaps: js.UndefOr[Boolean] = js.undefined
   

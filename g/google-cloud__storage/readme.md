@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__storage
 
-Typings are for version 5.5.0
+Typings are for version 6.5.1
 
 ## Library description:
 Cloud Storage Client Library for Node.js
@@ -10,10 +10,10 @@ Cloud Storage Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/storage |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google storage, storage |
-| # releases         | 44 |
-| # dependents       | 551 |
-| # downloads        | 79350867 |
-| # stars            | 6 |
+| # releases         | 71 |
+| # dependents       | 0.0 |
+| # downloads        | 8721003.333333334 |
+| # stars            | 750.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/nodejs-storage#readme)

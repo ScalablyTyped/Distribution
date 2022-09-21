@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.StorageItem")
 @js.native
-/* private */ class StorageItem ()
+/* private */ open class StorageItem ()
   extends StObject
      with typings.activexOutlook.Outlook.StorageItem {
   
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotStorageItem_typekey: typings.activexOutlook.Outlook.StorageItem = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native

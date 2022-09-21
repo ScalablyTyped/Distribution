@@ -27,15 +27,14 @@ object groupedListSectionMod {
   
   @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupedListSection", "GroupedListSection")
   @js.native
-  class GroupedListSection protected ()
-    extends Component[IGroupedListSectionProps, IGroupedListSectionState, js.Any] {
+  open class GroupedListSection protected () extends Component[IGroupedListSectionProps, IGroupedListSectionState, Any] {
     def this(props: IGroupedListSectionProps) = this()
     
-    /* private */ var _dragDropSubscription: js.Any = js.native
+    /* private */ var _dragDropSubscription: Any = js.native
     
-    /* private */ var _droppingClassName: js.Any = js.native
+    /* private */ var _droppingClassName: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
     /**
       * get the correct css class to reflect the dropping state for a given group
@@ -44,38 +43,38 @@ object groupedListSectionMod {
       * Otherwise, return '';
       *
       */
-    /* private */ var _getDroppingClassName: js.Any = js.native
+    /* private */ var _getDroppingClassName: Any = js.native
     
     /**
       * collect all the data we need to enable drag/drop for a group
       */
-    /* private */ var _getGroupDragDropOptions: js.Any = js.native
+    /* private */ var _getGroupDragDropOptions: Any = js.native
     
-    /* private */ var _getGroupKey: js.Any = js.native
+    /* private */ var _getGroupKey: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _list: js.Any = js.native
+    /* private */ var _list: Any = js.native
     
-    /* private */ var _onRenderGroup: js.Any = js.native
+    /* private */ var _onRenderGroup: Any = js.native
     
-    /* private */ var _onRenderGroupCell: js.Any = js.native
+    /* private */ var _onRenderGroupCell: Any = js.native
     
-    /* private */ var _onRenderGroupFooter: js.Any = js.native
+    /* private */ var _onRenderGroupFooter: Any = js.native
     
-    /* private */ var _onRenderGroupHeader: js.Any = js.native
+    /* private */ var _onRenderGroupHeader: Any = js.native
     
-    /* private */ var _onRenderGroupShowAll: js.Any = js.native
+    /* private */ var _onRenderGroupShowAll: Any = js.native
     
-    /* private */ var _onSelectionChange: js.Any = js.native
+    /* private */ var _onSelectionChange: Any = js.native
     
-    /* private */ var _renderSubGroup: js.Any = js.native
+    /* private */ var _renderSubGroup: Any = js.native
     
-    /* private */ var _returnOne: js.Any = js.native
+    /* private */ var _returnOne: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _subGroupRefs: js.Any = js.native
+    /* private */ var _subGroupRefs: Any = js.native
     
     /**
       * update groupIsDropping state based on the input value, which is used to change style during drag and drop
@@ -83,7 +82,7 @@ object groupedListSectionMod {
       * @param newValue - new isDropping state value
       * @param event - the event trigger dropping state change which can be dragenter, dragleave etc
       */
-    /* private */ var _updateDroppingState: js.Any = js.native
+    /* private */ var _updateDroppingState: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MGroupedListSection(): Unit = js.native
@@ -147,19 +146,19 @@ object groupedListSectionMod {
     var headerProps: js.UndefOr[IGroupHeaderProps] = js.native
     
     /** List of items to render. */
-    var items: js.Array[js.Any] = js.native
+    var items: js.Array[Any] = js.native
     
     /** Optional list props to pass to list renderer.  */
-    var listProps: js.UndefOr[IListProps[js.Any]] = js.native
+    var listProps: js.UndefOr[IListProps[Any]] = js.native
     
     /** Rendering callback to render the group items. */
     def onRenderCell(): ReactNode = js.native
     def onRenderCell(nestingDepth: Double): ReactNode = js.native
-    def onRenderCell(nestingDepth: Double, item: js.Any): ReactNode = js.native
-    def onRenderCell(nestingDepth: Double, item: js.Any, index: Double): ReactNode = js.native
+    def onRenderCell(nestingDepth: Double, item: Any): ReactNode = js.native
+    def onRenderCell(nestingDepth: Double, item: Any, index: Double): ReactNode = js.native
     def onRenderCell(nestingDepth: Double, item: Unit, index: Double): ReactNode = js.native
-    def onRenderCell(nestingDepth: Unit, item: js.Any): ReactNode = js.native
-    def onRenderCell(nestingDepth: Unit, item: js.Any, index: Double): ReactNode = js.native
+    def onRenderCell(nestingDepth: Unit, item: Any): ReactNode = js.native
+    def onRenderCell(nestingDepth: Unit, item: Any, index: Double): ReactNode = js.native
     def onRenderCell(nestingDepth: Unit, item: Unit, index: Double): ReactNode = js.native
     
     /** Override for rendering the group footer. */
@@ -178,7 +177,7 @@ object groupedListSectionMod {
       * smaller lists.
       * The default implementation will virtualize when this callback is not provided.
       */
-    var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[js.Any], Boolean]] = js.native
+    var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[Any], Boolean]] = js.native
     
     /** Optional selection model to track selection state.  */
     var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.native

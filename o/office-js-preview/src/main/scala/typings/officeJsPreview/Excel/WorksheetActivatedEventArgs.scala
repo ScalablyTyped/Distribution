@@ -6,25 +6,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the worksheet that raised the activated event.
   *
-  * Provides information about the worksheet that raised the Activated event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait WorksheetActivatedEventArgs extends StObject {
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: WorksheetActivated
   
   /**
+    * Gets the ID of the worksheet that is activated.
     *
-    * Gets the id of the worksheet that is activated.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var worksheetId: String

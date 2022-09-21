@@ -8,5 +8,5 @@ object deleteObjectsInputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/DeleteObjectsInput", "DeleteObjectsInput")
   @js.native
-  val DeleteObjectsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteObjectsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -7,14 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConformancePackRuleCompliance extends StObject {
   
   /**
-    * Compliance of the AWS Config rule The allowed values are COMPLIANT and NON_COMPLIANT.
+    * Compliance of the Config rule. The allowed values are COMPLIANT, NON_COMPLIANT, and INSUFFICIENT_DATA.
     */
   var ComplianceType: js.UndefOr[ConformancePackComplianceType] = js.undefined
   
   /**
-    * Name of the config rule.
+    * Name of the Config rule.
     */
   var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.undefined
+  
+  /**
+    * Controls for the conformance pack. A control is a process to prevent or detect problems while meeting objectives. A control can align with a specific compliance regime or map to internal controls defined by an organization.
+    */
+  var Controls: js.UndefOr[ControlsList] = js.undefined
 }
 object ConformancePackRuleCompliance {
   
@@ -32,5 +37,11 @@ object ConformancePackRuleCompliance {
     inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
     inline def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
+    
+    inline def setControls(value: ControlsList): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
+    
+    inline def setControlsUndefined: Self = StObject.set(x, "Controls", js.undefined)
+    
+    inline def setControlsVarargs(value: StringWithCharLimit128*): Self = StObject.set(x, "Controls", js.Array(value*))
   }
 }

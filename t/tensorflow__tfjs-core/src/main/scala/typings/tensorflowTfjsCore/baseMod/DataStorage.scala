@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-core/dist/base", "DataStorage")
 @js.native
-class DataStorage[T] protected ()
+open class DataStorage[T] protected ()
   extends typings.tensorflowTfjsCore.backendMod.DataStorage[T] {
   def this(backend: typings.tensorflowTfjsCore.backendMod.KernelBackend, dataMover: DataMover) = this()
 }

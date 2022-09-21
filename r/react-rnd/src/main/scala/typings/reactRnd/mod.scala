@@ -37,8 +37,7 @@ object mod {
   
   @JSImport("react-rnd", "Rnd")
   @js.native
-  class Rnd protected ()
-    extends PureComponent[Props, State, js.Any] {
+  open class Rnd protected () extends PureComponent[Props, State, Any] {
     def this(props: Props) = this()
     
     @JSName("componentDidMount")
@@ -54,7 +53,7 @@ object mod {
     
     def getOffsetWidth(boundary: HTMLElement): Double = js.native
     
-    def getParent(): js.Any = js.native
+    def getParent(): Any = js.native
     
     def getParentSize(): Height = js.native
     
@@ -81,7 +80,9 @@ object mod {
     def onResizeStop(e: MouseEvent, direction: ResizeDirection, elementRef: HTMLElement, delta: Width): Unit = js.native
     def onResizeStop(e: TouchEvent, direction: ResizeDirection, elementRef: HTMLElement, delta: Width): Unit = js.native
     
-    def refDraggable(c: js.Any): Unit = js.native
+    var originalPosition: X = js.native
+    
+    def refDraggable(c: TODO): Unit = js.native
     
     def refResizable(): Unit = js.native
     def refResizable(c: Resizable): Unit = js.native
@@ -89,8 +90,6 @@ object mod {
     var resizable: Resizable = js.native
     
     var resizableElement: Current = js.native
-    
-    var resizing: Boolean = js.native
     
     var resizingPosition: X = js.native
     
@@ -456,7 +455,7 @@ object mod {
   
   trait Props
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var default: js.UndefOr[xnumberynumberSize] = js.undefined
     
@@ -775,12 +774,12 @@ object mod {
     
     var maxWidth: js.UndefOr[Double | String] = js.undefined
     
-    var original: Position
+    var resizing: Boolean
   }
   object State {
     
-    inline def apply(bounds: Bottom, original: Position): State = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any])
+    inline def apply(bounds: Bottom, resizing: Boolean): State = {
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], resizing = resizing.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
@@ -796,9 +795,9 @@ object mod {
       
       inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      inline def setOriginal(value: Position): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setResizing(value: Boolean): Self = StObject.set(x, "resizing", value.asInstanceOf[js.Any])
     }
   }
   
-  type TODO = js.Any
+  type TODO = Any
 }

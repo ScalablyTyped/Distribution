@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLCollectionBase
   extends StObject
-     with /* index */ NumberDictionary[Element] {
+     with /* standard dom */
+/* index */ NumberDictionary[Element] {
   
-  /**
-    * Retrieves an object from various collections.
-    */
+  /** Retrieves an object from various collections. */
+  /* standard dom */
   def item(index: Double): Element | Null = js.native
   
+  /* standard dom.iterable */
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Element]] = js.native
   
-  /**
-    * Sets or retrieves the number of objects in a collection.
-    */
+  /** Sets or retrieves the number of objects in a collection. */
+  /* standard dom */
   val length: Double = js.native
 }

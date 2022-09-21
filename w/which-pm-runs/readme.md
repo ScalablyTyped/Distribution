@@ -9,16 +9,16 @@ Detects what package manager executes the process
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | which-pm-runs |
-| Keywords           | npm, pnpm, yarn |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 97241617 |
-| # stars            | 0 |
+| Keywords           | npm, pnpm, yarn, cnpm |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3550068E7 |
+| # stars            | 45.0 |
 
 ## Links
-- [Homepage](https://github.com/zkochan/which-pm-runs#readme)
-- [Bugs](https://github.com/zkochan/which-pm-runs/issues)
-- [Repository](https://github.com/zkochan/which-pm-runs)
+- [Homepage](https://github.com/zkochan/packages/tree/main/which-pm-runs#readme)
+- [Bugs](https://github.com/zkochan/packages/labels/package%3A%20which-pm-runs)
+- [Repository](https://github.com/zkochan/packages)
 - [Npm](https://www.npmjs.com/package/which-pm-runs)
     
 

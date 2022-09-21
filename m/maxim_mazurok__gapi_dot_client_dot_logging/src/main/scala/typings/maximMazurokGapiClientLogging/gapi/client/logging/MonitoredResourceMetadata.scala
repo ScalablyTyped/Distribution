@@ -15,14 +15,14 @@ trait MonitoredResourceMetadata extends StObject {
   var systemLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResourceMetadata & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResourceMetadata & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. A map of user-defined metadata labels. */
   var userLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResourceMetadata & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResourceMetadata & TopLevel[Any]
   ] = js.undefined
 }
 object MonitoredResourceMetadata {
@@ -37,7 +37,7 @@ object MonitoredResourceMetadata {
     inline def setSystemLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResourceMetadata & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResourceMetadata & TopLevel[Any]
     ): Self = StObject.set(x, "systemLabels", value.asInstanceOf[js.Any])
     
     inline def setSystemLabelsUndefined: Self = StObject.set(x, "systemLabels", js.undefined)
@@ -45,7 +45,7 @@ object MonitoredResourceMetadata {
     inline def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResourceMetadata & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.MonitoredResourceMetadata & TopLevel[Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)

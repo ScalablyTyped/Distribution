@@ -94,6 +94,42 @@ object typeFieldsMod {
     /* 3 */ val SIGHASH_TYPE: typings.bip174.typeFieldsMod.InputTypes.SIGHASH_TYPE & Double = js.native
     
     @js.native
+    sealed trait TAP_BIP32_DERIVATION
+      extends StObject
+         with InputTypes
+    /* 22 */ val TAP_BIP32_DERIVATION: typings.bip174.typeFieldsMod.InputTypes.TAP_BIP32_DERIVATION & Double = js.native
+    
+    @js.native
+    sealed trait TAP_INTERNAL_KEY
+      extends StObject
+         with InputTypes
+    /* 23 */ val TAP_INTERNAL_KEY: typings.bip174.typeFieldsMod.InputTypes.TAP_INTERNAL_KEY & Double = js.native
+    
+    @js.native
+    sealed trait TAP_KEY_SIG
+      extends StObject
+         with InputTypes
+    /* 19 */ val TAP_KEY_SIG: typings.bip174.typeFieldsMod.InputTypes.TAP_KEY_SIG & Double = js.native
+    
+    @js.native
+    sealed trait TAP_LEAF_SCRIPT
+      extends StObject
+         with InputTypes
+    /* 21 */ val TAP_LEAF_SCRIPT: typings.bip174.typeFieldsMod.InputTypes.TAP_LEAF_SCRIPT & Double = js.native
+    
+    @js.native
+    sealed trait TAP_MERKLE_ROOT
+      extends StObject
+         with InputTypes
+    /* 24 */ val TAP_MERKLE_ROOT: typings.bip174.typeFieldsMod.InputTypes.TAP_MERKLE_ROOT & Double = js.native
+    
+    @js.native
+    sealed trait TAP_SCRIPT_SIG
+      extends StObject
+         with InputTypes
+    /* 20 */ val TAP_SCRIPT_SIG: typings.bip174.typeFieldsMod.InputTypes.TAP_SCRIPT_SIG & Double = js.native
+    
+    @js.native
     sealed trait WITNESS_SCRIPT
       extends StObject
          with InputTypes
@@ -130,6 +166,24 @@ object typeFieldsMod {
       extends StObject
          with OutputTypes
     /* 0 */ val REDEEM_SCRIPT: typings.bip174.typeFieldsMod.OutputTypes.REDEEM_SCRIPT & Double = js.native
+    
+    @js.native
+    sealed trait TAP_BIP32_DERIVATION
+      extends StObject
+         with OutputTypes
+    /* 7 */ val TAP_BIP32_DERIVATION: typings.bip174.typeFieldsMod.OutputTypes.TAP_BIP32_DERIVATION & Double = js.native
+    
+    @js.native
+    sealed trait TAP_INTERNAL_KEY
+      extends StObject
+         with OutputTypes
+    /* 5 */ val TAP_INTERNAL_KEY: typings.bip174.typeFieldsMod.OutputTypes.TAP_INTERNAL_KEY & Double = js.native
+    
+    @js.native
+    sealed trait TAP_TREE
+      extends StObject
+         with OutputTypes
+    /* 6 */ val TAP_TREE: typings.bip174.typeFieldsMod.OutputTypes.TAP_TREE & Double = js.native
     
     @js.native
     sealed trait WITNESS_SCRIPT

@@ -33,6 +33,6 @@ object ListUsersResponse {
     
     inline def setUserSummaryListUndefined: Self = StObject.set(x, "UserSummaryList", js.undefined)
     
-    inline def setUserSummaryListVarargs(value: UserSummary*): Self = StObject.set(x, "UserSummaryList", js.Array(value :_*))
+    inline def setUserSummaryListVarargs(value: UserSummary*): Self = StObject.set(x, "UserSummaryList", js.Array(value*))
   }
 }

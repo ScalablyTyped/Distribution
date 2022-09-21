@@ -10,7 +10,7 @@ trait Layout
   extends StObject
      with Observable {
   
-  def append(element: js.Any): Unit = js.native
+  def append(element: Any): Unit = js.native
   
   def clear(): Unit = js.native
   
@@ -23,7 +23,7 @@ trait Layout
   
   def reflow(): Unit = js.native
   
-  def remove(element: js.Any): Unit = js.native
+  def remove(element: Any): Unit = js.native
   
   def visible(): Boolean = js.native
   def visible(visible: Boolean): Unit = js.native

@@ -18,7 +18,7 @@ trait Custompoi extends StObject {
   
   var districtCode: Double
   
-  var extendedData: js.Any
+  var extendedData: Any
   
   var phoneNumber: String
   
@@ -47,7 +47,7 @@ object Custompoi {
     databoxId: String,
     district: String,
     districtCode: Double,
-    extendedData: js.Any,
+    extendedData: Any,
     phoneNumber: String,
     poiId: String,
     point: Point,
@@ -76,7 +76,7 @@ object Custompoi {
     
     inline def setDistrictCode(value: Double): Self = StObject.set(x, "districtCode", value.asInstanceOf[js.Any])
     
-    inline def setExtendedData(value: js.Any): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
+    inline def setExtendedData(value: Any): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
     
     inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object Custompoi {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

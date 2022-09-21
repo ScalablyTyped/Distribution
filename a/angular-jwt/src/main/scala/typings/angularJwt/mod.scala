@@ -1,6 +1,5 @@
 package typings.angularJwt
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,26 +48,26 @@ object mod {
       
       def decodeToken(token: String): JwtToken = js.native
       
-      def getTokenExpirationDate(token: js.Any): Date = js.native
+      def getTokenExpirationDate(token: Any): js.Date = js.native
       
-      def isTokenExpired(token: js.Any): Boolean = js.native
-      def isTokenExpired(token: js.Any, offsetSeconds: Double): Boolean = js.native
+      def isTokenExpired(token: Any): Boolean = js.native
+      def isTokenExpired(token: Any, offsetSeconds: Double): Boolean = js.native
     }
     
     trait IJwtInterceptor extends StObject {
       
-      def tokenGetter(params: js.Any*): String
+      def tokenGetter(params: Any*): String
     }
     object IJwtInterceptor {
       
-      inline def apply(tokenGetter: /* repeated */ js.Any => String): IJwtInterceptor = {
+      inline def apply(tokenGetter: /* repeated */ Any => String): IJwtInterceptor = {
         val __obj = js.Dynamic.literal(tokenGetter = js.Any.fromFunction1(tokenGetter))
         __obj.asInstanceOf[IJwtInterceptor]
       }
       
       extension [Self <: IJwtInterceptor](x: Self) {
         
-        inline def setTokenGetter(value: /* repeated */ js.Any => String): Self = StObject.set(x, "tokenGetter", js.Any.fromFunction1(value))
+        inline def setTokenGetter(value: /* repeated */ Any => String): Self = StObject.set(x, "tokenGetter", js.Any.fromFunction1(value))
       }
     }
     

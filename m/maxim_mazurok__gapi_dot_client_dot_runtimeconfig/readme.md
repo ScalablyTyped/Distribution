@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_runtimeconfig
 
-Typings are for version 1.0.20201116
+Typings are for version 1.0.20220808
 
 ## Library description:
 TypeScript typings for Cloud Runtime Configuration API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Runtime Configuration API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.runtimeconfig |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 1069 |
-| # stars            | 0 |
+| # releases         | 76 |
+| # dependents       | 0.0 |
+| # downloads        | 837.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

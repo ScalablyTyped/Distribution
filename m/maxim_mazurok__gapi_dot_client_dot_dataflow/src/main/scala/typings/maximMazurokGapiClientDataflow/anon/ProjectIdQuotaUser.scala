@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.anon
 
-import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.Job
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,14 +22,14 @@ trait ProjectIdQuotaUser extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** The job ID. */
-  var jobId: String
+  /** If specified, list snapshots created from this job. */
+  var jobId: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains this job. */
-  var location: String
+  /** The location to list snapshots in. */
+  var location: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -38,14 +37,11 @@ trait ProjectIdQuotaUser extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** The ID of the Cloud Platform project that the job belongs to. */
+  /** The project ID to list snapshots for. */
   var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Request body */
-  var resource: Job
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -55,8 +51,8 @@ trait ProjectIdQuotaUser extends StObject {
 }
 object ProjectIdQuotaUser {
   
-  inline def apply(jobId: String, location: String, projectId: String, resource: Job): ProjectIdQuotaUser = {
-    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(projectId: String): ProjectIdQuotaUser = {
+    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectIdQuotaUser]
   }
   
@@ -84,11 +80,15 @@ object ProjectIdQuotaUser {
     
     inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -103,8 +103,6 @@ object ProjectIdQuotaUser {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: Job): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

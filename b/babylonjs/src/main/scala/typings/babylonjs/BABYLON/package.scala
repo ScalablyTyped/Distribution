@@ -1,161 +1,217 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.babylonjs.BABYLON.PointerInput.MouseWheelX
+import typings.babylonjs.BABYLON.PointerInput.MouseWheelY
+import typings.babylonjs.BABYLON.PointerInput.MouseWheelZ
+import typings.babylonjs.BABYLON.PointerInput.Move
+import typings.babylonjs.XRInputSource
+import typings.babylonjs.anon.IsBinary
+import typings.babylonjs.anon.Layers
+import typings.babylonjs.anon.Object
+import typings.babylonjs.babylonjsStrings.XRProjectionLayer
+import typings.babylonjs.babylonjsStrings.XRWebGLLayer
+import typings.babylonjs.babylonjsStrings.cpu
+import typings.std.Element
+import typings.std.Exclude
+import typings.std.HTMLElement
+import typings.std.IteratorResult
+import typings.std.WebGLQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type AsyncCoroutine[T] = CoroutineBase[Unit | js.Promise[Unit], T]
+
 type BabylonFileParser = js.Function4[
-/* parsedData */ js.Any, 
-/* scene */ typings.babylonjs.BABYLON.Scene, 
-/* container */ typings.babylonjs.BABYLON.AssetContainer, 
-/* rootUrl */ java.lang.String, 
-scala.Unit]
+/* parsedData */ Any, 
+/* scene */ Scene, 
+/* container */ AssetContainer, 
+/* rootUrl */ String, 
+Unit]
 
-type BaseError = typings.std.Error
+type BaseError = js.Error
 
-type CameraInputsMap[TCamera /* <: typings.babylonjs.BABYLON.Camera */] = (/**
+type CameraInputsMap[TCamera /* <: Camera */] = (/**
   * Accessor to the input by input type.
   */
-org.scalablytyped.runtime.StringDictionary[typings.babylonjs.BABYLON.ICameraInput[TCamera]]) & (/**
+org.scalablytyped.runtime.StringDictionary[ICameraInput[TCamera]]) & (/**
   * Accessor to the input by input index.
   */
-org.scalablytyped.runtime.NumberDictionary[typings.babylonjs.BABYLON.ICameraInput[TCamera]])
+NumberDictionary[ICameraInput[TCamera]])
 
-type CameraStageAction = js.Function1[/* camera */ typings.babylonjs.BABYLON.Camera, scala.Unit]
+type CameraStageAction = js.Function1[/* camera */ Camera, Unit]
 
-type CameraStageFrameBufferAction = js.Function1[/* camera */ typings.babylonjs.BABYLON.Camera, scala.Boolean]
+type CameraStageFrameBufferAction = js.Function1[/* camera */ Camera, Boolean]
 
-type DataArray = js.Array[scala.Double] | typings.std.ArrayBuffer | typings.std.ArrayBufferView
+type ComputeBindingList = org.scalablytyped.runtime.StringDictionary[Object]
 
-type DeepImmutable[T] = typings.babylonjs.BABYLON.DeepImmutableObject[T] | typings.babylonjs.BABYLON.DeepImmutableArray[js.Any] | T
+type ComputeBindingMapping = org.scalablytyped.runtime.StringDictionary[ComputeBindingLocation]
+
+type Coroutine[T] = CoroutineBase[Unit, T]
+
+type CoroutineScheduler[T] = js.Function3[
+/* coroutine */ AsyncCoroutine[T], 
+/* onStep */ js.Function1[/* stepResult */ CoroutineStep[T], Unit], 
+/* onError */ js.Function1[/* stepError */ Any, Unit], 
+Unit]
+
+type CoroutineStep[T] = IteratorResult[Unit, T]
+
+type DataArray = js.Array[Double] | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView
+
+type DeepImmutable[T] = DeepImmutableObject[T] | DeepImmutableArray[Any] | T
 
 type DeepImmutableObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {readonly [ K in keyof T ]: babylonjs.BABYLON.DeepImmutable<T[K]>}
-  */ typings.babylonjs.babylonjsStrings.DeepImmutableObject & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.babylonjs.babylonjsStrings.DeepImmutableObject & TopLevel[T]
 
 /* Rewritten from type alias, can be one of: 
+  - typings.babylonjs.BABYLON.DualSenseInput
   - typings.babylonjs.BABYLON.SwitchInput
   - typings.babylonjs.BABYLON.XboxInput
   - typings.babylonjs.BABYLON.DualShockInput
-  - typings.babylonjs.BABYLON.PointerInput
+  - typings.std.Exclude[
+typings.babylonjs.BABYLON.PointerInput, 
+typings.babylonjs.BABYLON.PointerInput.Move | typings.babylonjs.BABYLON.PointerInput.MouseWheelX | typings.babylonjs.BABYLON.PointerInput.MouseWheelY | typings.babylonjs.BABYLON.PointerInput.MouseWheelZ]
   - scala.Double
 */
-type DeviceInput[T /* <: typings.babylonjs.BABYLON.DeviceType */] = typings.babylonjs.BABYLON._DeviceInput[T] | scala.Double
+type DeviceInput[T /* <: DeviceType */] = _DeviceInput[T] | (Exclude[PointerInput, Move | MouseWheelX | MouseWheelY | MouseWheelZ]) | Double
 
-type EvaluateSubMeshStageAction = js.Function2[
-/* mesh */ typings.babylonjs.BABYLON.AbstractMesh, 
-/* subMesh */ typings.babylonjs.BABYLON.SubMesh, 
-scala.Unit]
+type DeviceSourceType = Distribute[DeviceType]
 
-type FloatArray = js.Array[scala.Double] | typings.std.Float32Array
+type Distribute[T] = DeviceSource[T]
+
+type EvaluateSubMeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* subMesh */ SubMesh, Unit]
+
+type FloatArray = js.Array[Double] | js.typedarray.Float32Array
+
+type IComputePressureSource = cpu
 
 type IMotionControllerLayoutMap = /**
   * Layouts with handedness type as a key
   */
-org.scalablytyped.runtime.StringDictionary[typings.babylonjs.BABYLON.IMotionControllerLayout]
+org.scalablytyped.runtime.StringDictionary[IMotionControllerLayout]
 
 type ISceneLoaderPluginExtensions = /**
   * Defines the list of supported extensions
   */
-org.scalablytyped.runtime.StringDictionary[typings.babylonjs.anon.IsBinary]
+org.scalablytyped.runtime.StringDictionary[IsBinary]
 
-type Immutable[T] = typings.babylonjs.BABYLON.DeepImmutable[T] | js.Array[js.Any] | T
+type Immutable[T] = js.Array[Any] | T
 
-type IndicesArray = js.Array[scala.Double] | typings.std.Int32Array | typings.std.Uint32Array | typings.std.Uint16Array
+type IndicesArray = js.Array[Double] | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Uint16Array
 
-type IndividualBabylonFileParser = js.Function3[
-/* parsedData */ js.Any, 
-/* scene */ typings.babylonjs.BABYLON.Scene, 
-/* rootUrl */ java.lang.String, 
-js.Any]
+type IndividualBabylonFileParser = js.Function3[/* parsedData */ Any, /* scene */ Scene, /* rootUrl */ String, Any]
 
-type KeepAssets = typings.babylonjs.BABYLON.AbstractScene
+type KeepAssets = AbstractScene
 
-type MeshStageAction = js.Function2[
-/* mesh */ typings.babylonjs.BABYLON.AbstractMesh, 
-/* hardwareInstancedRendering */ scala.Boolean, 
-scala.Boolean]
+type MaterialPluginCreated = js.Object
 
-type MotionControllerConstructor = js.Function2[
-/* xrInput */ typings.babylonjs.XRInputSource, 
-/* scene */ typings.babylonjs.BABYLON.Scene, 
-typings.babylonjs.BABYLON.WebXRAbstractMotionController]
+type MeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* hardwareInstancedRendering */ Boolean, Boolean]
+
+type MotionControllerConstructor = js.Function2[/* xrInput */ XRInputSource, /* scene */ Scene, WebXRAbstractMotionController]
+
+type NativeData = js.typedarray.Uint32Array
 
 type NodeConstructor = js.Function3[
-/* name */ java.lang.String, 
-/* scene */ typings.babylonjs.BABYLON.Scene, 
-/* options */ js.UndefOr[js.Any], 
-js.Function0[typings.babylonjs.BABYLON.Node]]
+/* name */ String, 
+/* scene */ Scene, 
+/* options */ js.UndefOr[Any], 
+js.Function0[Node]]
 
-type Nullable[T] = T | scala.Null
+type Nullable[T] = T | Null
+
+type ObserveCallback = js.Function2[/* functionName */ String, /* previousLength */ Double, Unit]
+
+type OcclusionMaterial = ShaderMaterial
+
+type OcclusionQuery = WebGLQuery | Double
+
+type PerfStrategyInitialization = js.Function1[/* scene */ Scene, IPerfViewerCollectionStrategy]
+
+type PluginMaterialFactory = js.Function1[/* material */ Material, Nullable[MaterialPluginBase]]
 
 type PointerMoveStageAction = js.Function5[
-/* unTranslatedPointerX */ scala.Double, 
-/* unTranslatedPointerY */ scala.Double, 
-/* pickResult */ typings.babylonjs.BABYLON.Nullable[typings.babylonjs.BABYLON.PickingInfo], 
-/* isMeshPicked */ scala.Boolean, 
-/* element */ typings.std.HTMLElement, 
-typings.babylonjs.BABYLON.Nullable[typings.babylonjs.BABYLON.PickingInfo]]
+/* unTranslatedPointerX */ Double, 
+/* unTranslatedPointerY */ Double, 
+/* pickResult */ Nullable[PickingInfo], 
+/* isMeshPicked */ Boolean, 
+/* element */ Nullable[HTMLElement], 
+Nullable[PickingInfo]]
 
-type PointerUpDownStageAction = js.Function4[
-/* unTranslatedPointerX */ scala.Double, 
-/* unTranslatedPointerY */ scala.Double, 
-/* pickResult */ typings.babylonjs.BABYLON.Nullable[typings.babylonjs.BABYLON.PickingInfo], 
-/* evt */ typings.std.PointerEvent, 
-typings.babylonjs.BABYLON.Nullable[typings.babylonjs.BABYLON.PickingInfo]]
+type PointerUpDownStageAction = js.Function5[
+/* unTranslatedPointerX */ Double, 
+/* unTranslatedPointerY */ Double, 
+/* pickResult */ Nullable[PickingInfo], 
+/* evt */ IPointerEvent, 
+/* doubleClick */ Boolean, 
+Nullable[PickingInfo]]
 
-type PreActiveMeshStageAction = js.Function1[/* mesh */ typings.babylonjs.BABYLON.AbstractMesh, scala.Unit]
+type PreActiveMeshStageAction = js.Function1[/* mesh */ AbstractMesh, Unit]
 
 /**
   * Alias type for primitive types
   * @ignorenaming
   */
-type Primitive = js.UndefOr[scala.Null | scala.Boolean | java.lang.String | scala.Double | js.Function]
+type Primitive = js.UndefOr[Null | Boolean | String | Double | js.Function | Element]
 
-type RenderTargetStageAction = js.Function1[/* renderTarget */ typings.babylonjs.BABYLON.RenderTargetTexture, scala.Unit]
+type RenderTargetStageAction = js.Function3[
+/* renderTarget */ RenderTargetTexture, 
+/* faceIndex */ js.UndefOr[Double], 
+/* layer */ js.UndefOr[Double], 
+Unit]
 
-type RenderTargetTextureSize = scala.Double | typings.babylonjs.anon.Height
+type RenderTargetTextureSize = TextureSize
 
-type RenderTargetsStageAction = js.Function1[
-/* renderTargets */ typings.babylonjs.BABYLON.SmartArrayNoDuplicate[typings.babylonjs.BABYLON.RenderTargetTexture], 
-scala.Unit]
+type RenderTargetsStageAction = js.Function1[/* renderTargets */ SmartArrayNoDuplicate[RenderTargetTexture], Unit]
 
-type RenderingGroupStageAction = js.Function1[/* renderingGroupId */ scala.Double, scala.Unit]
+type RenderingGroupStageAction = js.Function1[/* renderingGroupId */ Double, Unit]
 
 type RenderingMeshStageAction = js.Function4[
-/* mesh */ typings.babylonjs.BABYLON.Mesh, 
-/* subMesh */ typings.babylonjs.BABYLON.SubMesh, 
-/* batch */ typings.babylonjs.BABYLON.InstancesBatch, 
-/* effect */ typings.babylonjs.BABYLON.Nullable[typings.babylonjs.BABYLON.Effect], 
-scala.Unit]
+/* mesh */ Mesh, 
+/* subMesh */ SubMesh, 
+/* batch */ Any, 
+/* effect */ Nullable[Effect], 
+Unit]
 
 type SceneLoaderSuccessCallback = js.Function7[
-/* meshes */ js.Array[typings.babylonjs.BABYLON.AbstractMesh], 
-/* particleSystems */ js.Array[typings.babylonjs.BABYLON.IParticleSystem], 
-/* skeletons */ js.Array[typings.babylonjs.BABYLON.Skeleton], 
-/* animationGroups */ js.Array[typings.babylonjs.BABYLON.AnimationGroup], 
-/* transformNodes */ js.Array[typings.babylonjs.BABYLON.TransformNode], 
-/* geometries */ js.Array[typings.babylonjs.BABYLON.Geometry], 
-/* lights */ js.Array[typings.babylonjs.BABYLON.Light], 
-scala.Unit]
+/* meshes */ js.Array[AbstractMesh], 
+/* particleSystems */ js.Array[IParticleSystem], 
+/* skeletons */ js.Array[Skeleton], 
+/* animationGroups */ js.Array[AnimationGroup], 
+/* transformNodes */ js.Array[TransformNode], 
+/* geometries */ js.Array[Geometry], 
+/* lights */ js.Array[Light], 
+Unit]
 
-type SimpleStageAction = js.Function0[scala.Unit]
+type ShaderCustomProcessingFunction = js.Function2[/* shaderType */ String, /* code */ String, String]
 
-type TrianglePickingPredicate = js.Function4[
-/* p0 */ typings.babylonjs.BABYLON.Vector3, 
-/* p1 */ typings.babylonjs.BABYLON.Vector3, 
-/* p2 */ typings.babylonjs.BABYLON.Vector3, 
-/* ray */ typings.babylonjs.BABYLON.Ray, 
-scala.Boolean]
+type SimpleStageAction = js.Function0[Unit]
+
+type TextureSize = Double | Layers
+
+type TrianglePickingPredicate = js.Function4[/* p0 */ Vector3, /* p1 */ Vector3, /* p2 */ Vector3, /* ray */ Ray, Boolean]
+
+type WebGPUExternalTexture = ExternalTexture
+
+type WebXRCompositionLayerType = XRProjectionLayer
 
 type WebXRFeatureConstructor = js.Function2[
-/* xrSessionManager */ typings.babylonjs.BABYLON.WebXRSessionManager, 
-/* options */ js.UndefOr[js.Any], 
-js.Function0[typings.babylonjs.BABYLON.IWebXRFeature]]
+/* xrSessionManager */ WebXRSessionManager, 
+/* options */ js.UndefOr[Any], 
+js.Function0[IWebXRFeature]]
 
-type double = scala.Double
+type WebXRLayerType = XRWebGLLayer | WebXRCompositionLayerType
 
-type float = scala.Double
+type XRHandMeshRigMapping = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ webXRJointName in babylonjs.BABYLON.XRHandJoint ]: string}
+  */ typings.babylonjs.babylonjsStrings.XRHandMeshRigMapping & TopLevel[Any]
 
-type int = scala.Double
+type double = Double
+
+type float = Double
+
+type int = Double

@@ -11,9 +11,9 @@ A Fancy, Higher-Level Wrapper for Telegram Bot API
 | Full name          | tgfancy |
 | Keywords           | telegram, bot, api |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 8268 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 428.0 |
+| # stars            | 146.0 |
 
 ## Links
 - [Homepage](https://github.com/GochoMugo/tgfancy#readme)

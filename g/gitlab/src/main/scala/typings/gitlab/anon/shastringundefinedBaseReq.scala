@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  sha :string | undefined} & gitlab.gitlab/dist/types/core/infrastructure.BaseRequestOptions */
 trait shastringundefinedBaseReq
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var sha: js.UndefOr[String] = js.undefined
   

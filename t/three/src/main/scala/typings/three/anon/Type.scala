@@ -1,31 +1,27 @@
 package typings.three.anon
 
-import typings.three.webXRControllerMod.XRControllerEventType
-import typings.three.webXRMod.XRInputSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Type extends StObject {
+trait Type[T, U] extends StObject {
   
-  var data: js.UndefOr[XRInputSource] = js.undefined
+  var target: U
   
-  var `type`: XRControllerEventType
+  var `type`: T
 }
 object Type {
   
-  inline def apply(`type`: XRControllerEventType): Type = {
-    val __obj = js.Dynamic.literal()
+  inline def apply[T, U](target: U, `type`: T): Type[T, U] = {
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Type]
+    __obj.asInstanceOf[Type[T, U]]
   }
   
-  extension [Self <: Type](x: Self) {
+  extension [Self <: Type[?, ?], T, U](x: Self & (Type[T, U])) {
     
-    inline def setData(value: XRInputSource): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setTarget(value: U): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-    
-    inline def setType(value: XRControllerEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

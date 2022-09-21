@@ -12,27 +12,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object panelMod {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("@storybook/addon-jest/dist/components/Panel", JSImport.Default)
+  @JSImport("@storybook/addon-jest/dist/ts3.9/components/Panel", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ComponentDidCatch {
     def this(props: ReadonlyHocProps) = this()
     def this(props: HocProps) = this()
-    def this(props: HocProps, context: js.Any) = this()
+    def this(props: HocProps, context: Any) = this()
   }
   object default {
     
-    @JSImport("@storybook/addon-jest/dist/components/Panel", JSImport.Default)
+    @JSImport("@storybook/addon-jest/dist/ts3.9/components/Panel", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@storybook/addon-jest/dist/components/Panel", "default.contextType")
+    @JSImport("@storybook/addon-jest/dist/ts3.9/components/Panel", "default.contextType")
     @js.native
-    def contextType: js.UndefOr[Context[js.Any]] = js.native
-    inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: js.UndefOr[Context[Any]] = js.native
+    inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-jest/dist/components/Panel", "default.defaultProps")
+    @JSImport("@storybook/addon-jest/dist/ts3.9/components/Panel", "default.defaultProps")
     @js.native
     def defaultProps: Active = js.native
     inline def defaultProps_=(x: Active): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])

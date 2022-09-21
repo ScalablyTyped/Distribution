@@ -33,6 +33,6 @@ object ServerGroupValidationConfiguration {
     
     inline def setServerValidationConfigurationsUndefined: Self = StObject.set(x, "serverValidationConfigurations", js.undefined)
     
-    inline def setServerValidationConfigurationsVarargs(value: ServerValidationConfiguration*): Self = StObject.set(x, "serverValidationConfigurations", js.Array(value :_*))
+    inline def setServerValidationConfigurationsVarargs(value: ServerValidationConfiguration*): Self = StObject.set(x, "serverValidationConfigurations", js.Array(value*))
   }
 }

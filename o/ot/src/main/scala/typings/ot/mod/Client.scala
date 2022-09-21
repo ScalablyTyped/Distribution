@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ot", "Client")
 @js.native
-class Client protected () extends StObject {
+open class Client protected () extends StObject {
   def this(revision: Double) = this()
   
   /**

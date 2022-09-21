@@ -21,7 +21,7 @@ trait FieldSchemaInForm
   
   /** Specifies Input Method Editor (IME) mode bias to use for the field.
     The IME enables conversion of keystrokes between languages when one writing system has more characters than can be encoded for the given keyboard. */
-  var IMEMode: js.Any
+  var IMEMode: Any
   
   /** Guid of the field */
   var Id: String
@@ -48,7 +48,7 @@ object FieldSchemaInForm {
     Direction: String,
     FieldType: String,
     Hidden: Boolean,
-    IMEMode: js.Any,
+    IMEMode: Any,
     Id: String,
     Name: String,
     ReadOnlyField: Boolean,
@@ -70,7 +70,7 @@ object FieldSchemaInForm {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
-    inline def setIMEMode(value: js.Any): Self = StObject.set(x, "IMEMode", value.asInstanceOf[js.Any])
+    inline def setIMEMode(value: Any): Self = StObject.set(x, "IMEMode", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

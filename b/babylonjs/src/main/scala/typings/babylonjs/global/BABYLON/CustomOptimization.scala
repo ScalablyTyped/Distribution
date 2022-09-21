@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.CustomOptimization")
 @js.native
-class CustomOptimization ()
+open class CustomOptimization ()
   extends StObject
      with typings.babylonjs.BABYLON.CustomOptimization {
   

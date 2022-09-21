@@ -12,7 +12,7 @@ trait GetCertificateResponse extends StObject {
   var Certificate: js.UndefOr[CertificateBody] = js.undefined
   
   /**
-    * The base64 PEM-encoded certificate chain that chains up to the on-premises root CA certificate that you used to sign your private CA certificate. 
+    * The base64 PEM-encoded certificate chain that chains up to the root CA certificate that you used to sign your private CA certificate. 
     */
   var CertificateChain: js.UndefOr[typings.awsSdk.acmpcaMod.CertificateChain] = js.undefined
 }

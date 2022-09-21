@@ -6,18 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionBoolean")
 @js.native
-class QuestionBoolean protected () extends QuestionBooleanModel {
+open class QuestionBoolean protected () extends QuestionBooleanModel {
   def this(name: String) = this()
   
-  def getCheckedLabelCss(): String = js.native
+  var _implementor: QuestionImplementor = js.native
   
-  def getItemCss(row: js.Any, column: js.Any): js.Any = js.native
+  def onFalseLabelClick(data: Any, event: Any): Any = js.native
   
-  def getUncheckedLabelCss(): String = js.native
+  def onKeyDown(data: Any, event: Any): Boolean = js.native
   
-  def onFalseLabelClick(data: js.Any, event: js.Any): Boolean = js.native
+  def onSwitchClick(data: Any, event: Any): Any = js.native
   
-  def onSwitchClick(data: js.Any, event: js.Any): Boolean = js.native
-  
-  def onTrueLabelClick(data: js.Any, event: js.Any): Boolean = js.native
+  def onTrueLabelClick(data: Any, event: Any): Any = js.native
 }

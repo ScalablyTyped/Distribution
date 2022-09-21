@@ -10,10 +10,10 @@ Lazyload images with jQuery
 | ------------------ | :-------------: |
 | Full name          | jquery-lazyload |
 | Keywords           | jquery-plugin, ecosystem:jquery |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 501241 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 33609.333333333336 |
+| # stars            | 8673.0 |
 
 ## Links
 - [Homepage](http://www.appelsiini.net/projects/lazyload)

@@ -9,7 +9,8 @@ trait ForInStatement
   extends StObject
      with IterationStatement
      with ForInOrOfStatement
-     with HasInitializer {
+     with HasInitializer
+     with HasJSDoc {
   
   val expression: Expression = js.native
   

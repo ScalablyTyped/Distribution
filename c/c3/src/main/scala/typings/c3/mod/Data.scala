@@ -93,7 +93,7 @@ trait Data extends StObject {
   /**
     * Specify headers for the data request if `data.url` is provided.
     */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /**
     * Hide each data when the chart appears.
@@ -287,7 +287,7 @@ object Data {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setEmpty(value: LabelText): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
@@ -307,9 +307,9 @@ object Data {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: js.Array[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: js.Array[String]*): Self = StObject.set(x, "groups", js.Array(value*))
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -317,7 +317,7 @@ object Data {
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
+    inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value*))
     
     inline def setIdConverter(value: /* id */ String => String): Self = StObject.set(x, "idConverter", js.Any.fromFunction1(value))
     
@@ -327,7 +327,7 @@ object Data {
     
     inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
-    inline def setJsonVarargs(value: (Record[String, Primitive])*): Self = StObject.set(x, "json", js.Array(value :_*))
+    inline def setJsonVarargs(value: (Record[String, Primitive])*): Self = StObject.set(x, "json", js.Array(value*))
     
     inline def setKeys(value: Value): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
@@ -385,7 +385,7 @@ object Data {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: PrimitiveArray*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: PrimitiveArray*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSelection(value: Draggable): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     

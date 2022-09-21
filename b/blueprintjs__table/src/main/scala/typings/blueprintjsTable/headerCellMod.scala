@@ -6,6 +6,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -16,16 +17,15 @@ object headerCellMod {
   
   @JSImport("@blueprintjs/table/lib/esm/headers/headerCell", "HeaderCell")
   @js.native
-  class HeaderCell protected ()
-    extends Component[IInternalHeaderCellProps, IHeaderCellState, js.Any] {
+  open class HeaderCell protected () extends Component[IInternalHeaderCellProps, IHeaderCellState, Any] {
     def this(props: IInternalHeaderCellProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IInternalHeaderCellProps, context: js.Any) = this()
+    def this(props: IInternalHeaderCellProps, context: Any) = this()
     
-    def renderContextMenu(_event: MouseEvent[HTMLElement, NativeMouseEvent]): Element = js.native
+    def renderContextMenu(_event: MouseEvent[HTMLElement, NativeMouseEvent]): js.UndefOr[Element] = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MHeaderCell(nextProps: IHeaderCellProps): Boolean = js.native
@@ -34,6 +34,8 @@ object headerCellMod {
   trait IHeaderCellProps
     extends StObject
        with IProps {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The index of the cell in the header. If provided, this will be passed as an argument to any
@@ -51,6 +53,7 @@ object headerCellMod {
       * If `true`, the row/column `name` will be replaced with a fixed-height skeleton, and the
       * `resizeHandle` will not be rendered. If passing in additional children to this component, you
       * will also want to conditionally apply `Classes.SKELETON` where appropriate.
+      *
       * @default false
       */
     var loading: js.UndefOr[Boolean] = js.undefined
@@ -90,6 +93,10 @@ object headerCellMod {
     }
     
     extension [Self <: IHeaderCellProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

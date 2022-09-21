@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Camera")
 @js.native
 /**
-	 * This constructor sets following properties to the correct type: matrixWorldInverse, projectionMatrix and projectionMatrixInverse.
-	 */
-class Camera ()
-  extends typings.three.cameraMod.Camera
+  * This constructor sets following properties to the correct type: matrixWorldInverse, projectionMatrix and projectionMatrixInverse.
+  */
+open class Camera ()
+  extends typings.three.threeMod.Camera

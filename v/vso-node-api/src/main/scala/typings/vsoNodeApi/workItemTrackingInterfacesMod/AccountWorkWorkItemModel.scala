@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait AccountWorkWorkItemModel extends StObject {
   
   var assignedTo: String
   
-  var changedDate: Date
+  var changedDate: js.Date
   
   var id: Double
   
@@ -25,7 +24,7 @@ object AccountWorkWorkItemModel {
   
   inline def apply(
     assignedTo: String,
-    changedDate: Date,
+    changedDate: js.Date,
     id: Double,
     state: String,
     teamProject: String,
@@ -40,7 +39,7 @@ object AccountWorkWorkItemModel {
     
     inline def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     
-    inline def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
+    inline def setChangedDate(value: js.Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

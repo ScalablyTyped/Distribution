@@ -11,6 +11,13 @@ trait LocatorSearchSourceProperties
      with SearchSourceProperties {
   
   /**
+    * An authorization string used to access a resource or service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#apiKey)
+    */
+  var apiKey: js.UndefOr[String] = js.undefined
+  
+  /**
     * A string array which limits the results to one or more categories.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#categories)
@@ -27,9 +34,20 @@ trait LocatorSearchSourceProperties
   /**
     * Sets the scale of the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#scale) for the resulting search result, if the locator service doesn’t return an extent with a scale.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#defaultZoomScale)
     */
   var defaultZoomScale: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * This property controls prioritization of [Search](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html) widget result candidates depending on the view scale.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#localSearchDisabled)
+    */
+  var localSearchDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the type of location, either `street` or `rooftop`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
@@ -37,13 +55,6 @@ trait LocatorSearchSourceProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationType)
     */
   var locationType: js.UndefOr[rooftop | street] = js.undefined
-  
-  /**
-    * The locator task used to search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locator)
-    */
-  var locator: js.UndefOr[LocatorProperties] = js.undefined
   
   /**
     * The name of the source for display.
@@ -65,6 +76,13 @@ trait LocatorSearchSourceProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#singleLineFieldName)
     */
   var singleLineFieldName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * URL to the ArcGIS Server REST resource that represents a locator service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#url)
+    */
+  var url: js.UndefOr[String] = js.undefined
 }
 object LocatorSearchSourceProperties {
   
@@ -75,11 +93,15 @@ object LocatorSearchSourceProperties {
   
   extension [Self <: LocatorSearchSourceProperties](x: Self) {
     
+    inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    
+    inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+    
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
@@ -89,13 +111,13 @@ object LocatorSearchSourceProperties {
     
     inline def setDefaultZoomScaleUndefined: Self = StObject.set(x, "defaultZoomScale", js.undefined)
     
+    inline def setLocalSearchDisabled(value: Boolean): Self = StObject.set(x, "localSearchDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setLocalSearchDisabledUndefined: Self = StObject.set(x, "localSearchDisabled", js.undefined)
+    
     inline def setLocationType(value: rooftop | street): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
-    
-    inline def setLocator(value: LocatorProperties): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
-    
-    inline def setLocatorUndefined: Self = StObject.set(x, "locator", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -108,5 +130,9 @@ object LocatorSearchSourceProperties {
     inline def setSingleLineFieldName(value: String): Self = StObject.set(x, "singleLineFieldName", value.asInstanceOf[js.Any])
     
     inline def setSingleLineFieldNameUndefined: Self = StObject.set(x, "singleLineFieldName", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

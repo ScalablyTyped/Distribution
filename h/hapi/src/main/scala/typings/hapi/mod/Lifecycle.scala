@@ -1,9 +1,8 @@
 package typings.hapi.mod
 
 import typings.boom.mod.^
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Stream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ object Lifecycle {
   type Method = js.Function3[
     /* request */ Request, 
     /* h */ ResponseToolkit, 
-    /* err */ js.UndefOr[Error], 
+    /* err */ js.UndefOr[js.Error], 
     ReturnValue
   ]
   
@@ -62,7 +61,7 @@ object Lifecycle {
     */
   type ReturnValue = ReturnValueTypes | js.Promise[ReturnValueTypes]
   
-  type ReturnValueTypes = Null | String | Double | Boolean | Buffer | Error | ^[js.Any] | Stream | js.Object | js.Array[js.Object] | js.Symbol | ResponseToolkit
+  type ReturnValueTypes = Null | String | Double | Boolean | Buffer | js.Error | ^[Any] | Stream | js.Object | js.Array[js.Object] | js.Symbol | ResponseToolkit
   
   trait _FailAction extends StObject
 }

@@ -1,6 +1,7 @@
 package typings.reactUid
 
-import typings.react.mod.SFC
+import typings.react.mod.FC
+import typings.react.mod.PropsWithChildren
 import typings.reactUid.contextMod.UIDProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,15 +11,15 @@ object controlMod {
   
   @JSImport("react-uid/dist/es5/Control", "UIDConsumer")
   @js.native
-  val UIDConsumer: SFC[UIDProps] = js.native
+  val UIDConsumer: FC[UIDProps] = js.native
   
   @JSImport("react-uid/dist/es5/Control", "UIDFork")
   @js.native
-  val UIDFork: SFC[WithPrefix] = js.native
+  val UIDFork: FC[PropsWithChildren[WithPrefix]] = js.native
   
   @JSImport("react-uid/dist/es5/Control", "UIDReset")
   @js.native
-  val UIDReset: SFC[WithPrefix] = js.native
+  val UIDReset: FC[PropsWithChildren[WithPrefix]] = js.native
   
   trait WithPrefix extends StObject {
     

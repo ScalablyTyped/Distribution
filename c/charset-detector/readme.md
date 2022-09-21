@@ -10,10 +10,10 @@ ICU based port of charset detection
 | ------------------ | :-------------: |
 | Full name          | charset-detector |
 | Keywords           | icu, charset, detection |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 198372 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21737.666666666668 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/btd/node-charset-detector)

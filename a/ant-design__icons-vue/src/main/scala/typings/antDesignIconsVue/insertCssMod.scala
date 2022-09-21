@@ -10,5 +10,5 @@ object insertCssMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(css: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(css.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(css: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(css.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

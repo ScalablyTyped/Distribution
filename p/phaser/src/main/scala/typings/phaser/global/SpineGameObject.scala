@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SpineGameObject")
 @js.native
-class SpineGameObject protected ()
+open class SpineGameObject protected ()
   extends StObject
      with typings.phaser.SpineGameObject {
   def this(scene: Scene, pluginManager: typings.phaser.SpinePlugin, x: Double, y: Double) = this()

@@ -17,7 +17,7 @@ object rdfeManagerMod {
       */
     @JSImport("msportalfx-mock/lib/src/RdfeProxy/rdfeManager", "RdfeManager.Manager")
     @js.native
-    class Manager () extends StObject {
+    open class Manager () extends StObject {
       
       /**
         * The Add Management Certificate operation adds a management certificate to the specified subscription.
@@ -30,7 +30,7 @@ object rdfeManagerMod {
         */
       def addManagementCertificate(subscriptionId: String, subscriptionCertificate: SubscriptionCertificate): Boolean = js.native
       
-      /* private */ var data: js.Any = js.native
+      /* private */ var data: Any = js.native
       
       /**
         * The Delete Management Certificate operation deletes a certificate from the specified subscription.
@@ -69,7 +69,7 @@ object rdfeManagerMod {
         * @param data The mock data.
         * @return A promise that is resolved when the data is initialized.
         */
-      def initializeMockData(data: MockData): Promise[js.Any] = js.native
+      def initializeMockData(data: MockData): Promise[Any] = js.native
       
       /**
         * The List Management Certificates operation returns basic information about all of the management certificates that are associated with the specified subscription.
@@ -111,7 +111,7 @@ object rdfeManagerMod {
         
         inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
         
-        inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+        inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
       }
     }
   }

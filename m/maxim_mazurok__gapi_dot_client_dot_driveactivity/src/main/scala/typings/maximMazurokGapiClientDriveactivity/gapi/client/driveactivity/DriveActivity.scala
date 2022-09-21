@@ -40,13 +40,13 @@ object DriveActivity {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setActors(value: js.Array[Actor]): Self = StObject.set(x, "actors", value.asInstanceOf[js.Any])
     
     inline def setActorsUndefined: Self = StObject.set(x, "actors", js.undefined)
     
-    inline def setActorsVarargs(value: Actor*): Self = StObject.set(x, "actors", js.Array(value :_*))
+    inline def setActorsVarargs(value: Actor*): Self = StObject.set(x, "actors", js.Array(value*))
     
     inline def setPrimaryActionDetail(value: ActionDetail): Self = StObject.set(x, "primaryActionDetail", value.asInstanceOf[js.Any])
     
@@ -56,7 +56,7 @@ object DriveActivity {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "targets", js.Array(value*))
     
     inline def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
     

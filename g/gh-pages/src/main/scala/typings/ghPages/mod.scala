@@ -28,6 +28,10 @@ object mod {
     @js.native
     val add: `false` = js.native
     
+    @JSImport("gh-pages", "defaults.beforeAdd")
+    @js.native
+    val beforeAdd: /* is `Null`, but independent javascript fields cannot be in scala 3 */ Any = js.native
+    
     @JSImport("gh-pages", "defaults.branch")
     @js.native
     val branch: `gh-pages` = js.native
@@ -77,13 +81,18 @@ object mod {
     val src: AsteriskAsteriskSlashAsterisk = js.native
   }
   
-  inline def publish(basePath: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(basePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getCacheDir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheDir")().asInstanceOf[String]
+  inline def getCacheDir(optPath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheDir")(optPath.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def publish(basePath: String, callback: js.Function1[/* err */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(basePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def publish(basePath: String, config: PublishOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(basePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def publish(basePath: String, config: PublishOptions, callback: js.Function1[/* err */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(basePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def publish(basePath: String, config: PublishOptions, callback: js.Function1[/* err */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publish")(basePath.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Defaults_ extends StObject {
     
     var add: `false`
+    
+    var beforeAdd: Null
     
     var branch: `gh-pages`
     
@@ -111,14 +120,16 @@ object mod {
   }
   object Defaults_ {
     
-    inline def apply(remote: String): Defaults_ = {
-      val __obj = js.Dynamic.literal(add = false, branch = "gh-pages", depth = 1, dest = ".", dotfiles = false, git = "git", history = true, message = "Updates", push = true, remote = remote.asInstanceOf[js.Any], remove = ".", silent = false, src = "**/*")
+    inline def apply(beforeAdd: Null, remote: String): Defaults_ = {
+      val __obj = js.Dynamic.literal(add = false, beforeAdd = beforeAdd.asInstanceOf[js.Any], branch = "gh-pages", depth = 1, dest = ".", dotfiles = false, git = "git", history = true, message = "Updates", push = true, remote = remote.asInstanceOf[js.Any], remove = ".", silent = false, src = "**/*")
       __obj.asInstanceOf[Defaults_]
     }
     
     extension [Self <: Defaults_](x: Self) {
       
       inline def setAdd(value: `false`): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeAdd(value: Null): Self = StObject.set(x, "beforeAdd", value.asInstanceOf[js.Any])
       
       inline def setBranch(value: `gh-pages`): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
@@ -146,9 +157,46 @@ object mod {
     }
   }
   
+  @js.native
+  trait Git extends StObject {
+    
+    def add(files: String): js.Promise[this.type] = js.native
+    def add(files: js.Array[String]): js.Promise[this.type] = js.native
+    
+    def checkout(remote: String, branch: String): js.Promise[this.type] = js.native
+    
+    def clean(): js.Promise[this.type] = js.native
+    
+    def clone(repo: String, dir: String, branch: String, options: PublishOptions): js.Promise[this.type] = js.native
+    
+    def commit(message: String): js.Promise[this.type] = js.native
+    
+    def deleteRef(branch: String): js.Promise[this.type] = js.native
+    
+    def exec(command: String): js.Promise[this.type] = js.native
+    
+    def fetch(remote: String): js.Promise[this.type] = js.native
+    
+    def getRemoteUrl(remote: String): js.Promise[this.type] = js.native
+    
+    def init(): js.Promise[this.type] = js.native
+    
+    def push(remote: String, branch: String): js.Promise[this.type] = js.native
+    def push(remote: String, branch: String, force: Boolean): js.Promise[this.type] = js.native
+    
+    def reset(remote: String, branch: String): js.Promise[this.type] = js.native
+    
+    def rm(files: String): js.Promise[this.type] = js.native
+    def rm(files: js.Array[String]): js.Promise[this.type] = js.native
+    
+    def tag(name: String): js.Promise[this.type] = js.native
+  }
+  
   trait PublishOptions extends StObject {
     
     var add: js.UndefOr[Boolean] = js.undefined
+    
+    var beforeAdd: js.UndefOr[(js.Function1[/* git */ Git, js.Promise[js.UndefOr[Git]]]) | Null] = js.undefined
     
     var branch: js.UndefOr[String] = js.undefined
     
@@ -202,6 +250,12 @@ object mod {
       
       inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
       
+      inline def setBeforeAdd(value: /* git */ Git => js.Promise[js.UndefOr[Git]]): Self = StObject.set(x, "beforeAdd", js.Any.fromFunction1(value))
+      
+      inline def setBeforeAddNull: Self = StObject.set(x, "beforeAdd", null)
+      
+      inline def setBeforeAddUndefined: Self = StObject.set(x, "beforeAdd", js.undefined)
+      
       inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
       inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
@@ -254,7 +308,7 @@ object mod {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value*))
       
       inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       

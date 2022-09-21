@@ -17,7 +17,7 @@ trait ResolverRule extends StObject {
   var CreationTime: js.UndefOr[Rfc3339TimeString] = js.undefined
   
   /**
-    * A unique string that you specified when you created the Resolver rule. CreatorRequestId identifies the request and allows failed requests to be retried without the risk of executing the operation twice. 
+    * A unique string that you specified when you created the Resolver rule. CreatorRequestId identifies the request and allows failed requests to be retried without the risk of running the operation twice. 
     */
   var CreatorRequestId: js.UndefOr[typings.awsSdk.route53resolverMod.CreatorRequestId] = js.undefined
   
@@ -42,7 +42,7 @@ trait ResolverRule extends StObject {
   var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.undefined
   
   /**
-    * When a rule is shared with another AWS account, the account ID of the account that the rule is shared with.
+    * When a rule is shared with another Amazon Web Services account, the account ID of the account that the rule is shared with.
     */
   var OwnerId: js.UndefOr[AccountId] = js.undefined
   
@@ -57,7 +57,7 @@ trait ResolverRule extends StObject {
   var RuleType: js.UndefOr[RuleTypeOption] = js.undefined
   
   /**
-    * Whether the rules is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
+    * Whether the rule is shared and, if so, whether the current account is sharing the rule with another account, or another account is sharing the rule with the current account.
     */
   var ShareStatus: js.UndefOr[typings.awsSdk.route53resolverMod.ShareStatus] = js.undefined
   
@@ -141,6 +141,6 @@ object ResolverRule {
     
     inline def setTargetIpsUndefined: Self = StObject.set(x, "TargetIps", js.undefined)
     
-    inline def setTargetIpsVarargs(value: TargetAddress*): Self = StObject.set(x, "TargetIps", js.Array(value :_*))
+    inline def setTargetIpsVarargs(value: TargetAddress*): Self = StObject.set(x, "TargetIps", js.Array(value*))
   }
 }

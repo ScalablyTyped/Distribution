@@ -8,11 +8,11 @@ trait Confident extends StObject {
   
   var confident: Boolean
   
-  var value: js.Any
+  var value: Any
 }
 object Confident {
   
-  inline def apply(confident: Boolean, value: js.Any): Confident = {
+  inline def apply(confident: Boolean, value: Any): Confident = {
     val __obj = js.Dynamic.literal(confident = confident.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Confident]
   }
@@ -21,6 +21,6 @@ object Confident {
     
     inline def setConfident(value: Boolean): Self = StObject.set(x, "confident", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

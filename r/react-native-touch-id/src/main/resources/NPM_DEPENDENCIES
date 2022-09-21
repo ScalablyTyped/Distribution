@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-touch-id" : "4.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-touch-id" : "4.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

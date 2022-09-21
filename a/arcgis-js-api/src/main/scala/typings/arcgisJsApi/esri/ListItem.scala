@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.connected
+import typings.arcgisJsApi.arcgisJsApiStrings.disconnected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +13,8 @@ trait ListItem
   
   /**
     * Whether the actions panel is open in the LayerList.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#actionsOpen)
     */
@@ -33,9 +37,18 @@ trait ListItem
   /**
     * Indicates if the children of a list item (or sublayers in a GroupLayer) can be sorted or moved/reordered.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#childrenSortable)
     */
   var childrenSortable: Boolean = js.native
+  
+  /**
+    * Only valid when the list item represents a [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#connectionStatus)
+    */
+  val connectionStatus: connected | disconnected = js.native
   
   /**
     * The Error object returned if an error occurred.
@@ -45,7 +58,18 @@ trait ListItem
   val error: Error = js.native
   
   /**
+    * When `true`, hides the layer from the LayerList instance.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#hidden)
+    */
+  var hidden: Boolean = js.native
+  
+  /**
     * The layer associated with the triggered action.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#layer)
     */
@@ -61,6 +85,8 @@ trait ListItem
   /**
     * Whether the layer is open in the LayerList.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#open)
     */
   var open: Boolean = js.native
@@ -73,7 +99,9 @@ trait ListItem
   var panel: ListItemPanel = js.native
   
   /**
-    * The parent of this item.
+    * The parent of this item
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#parent)
     */
@@ -81,6 +109,8 @@ trait ListItem
   
   /**
     * Indicates if the list item (or layer in the map) can be sorted or moved/reordered.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#sortable)
     */
@@ -95,6 +125,8 @@ trait ListItem
   
   /**
     * Value is `true` when the layer is updating; for example, if it is in the process of fetching data.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#updating)
     */
@@ -117,12 +149,16 @@ trait ListItem
   /**
     * Indicates if the ListItem is visible.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#visible)
     */
   var visible: Boolean = js.native
   
   /**
     * Whether the layer is visible at the current scale or not.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#visibleAtCurrentScale)
     */

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "constant-case" : "3.0.3"
+      "constant-case" : "3.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "constant-case" : "3.0.3"
+      "constant-case" : "3.0.4"
     }
   ],
   "compile-devDependencies" : [

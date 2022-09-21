@@ -82,7 +82,7 @@ object XMultipleResults {
     getMoreResults: () => Boolean,
     getResultSet: () => XResultSet,
     getUpdateCount: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XMultipleResults = {
     val __obj = js.Dynamic.literal(MoreResults = MoreResults.asInstanceOf[js.Any], ResultSet = ResultSet.asInstanceOf[js.Any], UpdateCount = UpdateCount.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getMoreResults = js.Any.fromFunction0(getMoreResults), getResultSet = js.Any.fromFunction0(getResultSet), getUpdateCount = js.Any.fromFunction0(getUpdateCount), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

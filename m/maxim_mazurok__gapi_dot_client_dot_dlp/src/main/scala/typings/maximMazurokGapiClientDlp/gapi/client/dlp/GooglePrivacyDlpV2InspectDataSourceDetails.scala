@@ -9,7 +9,7 @@ trait GooglePrivacyDlpV2InspectDataSourceDetails extends StObject {
   /** The configuration used for this job. */
   var requestedOptions: js.UndefOr[GooglePrivacyDlpV2RequestedOptions] = js.undefined
   
-  /** A summary of the outcome of this inspect job. */
+  /** A summary of the outcome of this inspection job. */
   var result: js.UndefOr[GooglePrivacyDlpV2Result] = js.undefined
 }
 object GooglePrivacyDlpV2InspectDataSourceDetails {

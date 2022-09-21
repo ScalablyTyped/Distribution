@@ -23,7 +23,7 @@ object Track {
     
     inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     
-    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value*))
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.ScaleControl")
 @js.native
-class ScaleControl ()
+open class ScaleControl ()
   extends StObject
      with typings.bmapgl.BMapGL.ScaleControl {
   def this(opts: ScaleControlOptions) = this()

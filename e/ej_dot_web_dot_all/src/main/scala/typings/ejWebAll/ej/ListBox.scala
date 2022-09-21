@@ -16,7 +16,7 @@ trait ListBox
     * @param {number} The index value to add the given items at the specified index. If index is not specified, the given items will be added at the end of the list.
     * @returns {void}
     */
-  def addItem(listItem: js.Any, index: Double): Unit = js.native
+  def addItem(listItem: Any, index: Double): Unit = js.native
   
   /** Checks all the list items in the ListBox widget. It is dependent on showCheckbox property.
     * @returns {void}
@@ -88,7 +88,7 @@ trait ListBox
   /** Returns the list of checked items in the ListBox widget. It is dependent on showCheckbox property.
     * @returns {any}
     */
-  def getCheckedItems(): js.Any = js.native
+  def getCheckedItems(): Any = js.native
   
   /** Returns an itemâ€™s index based on the given text.
     * @param {string} The list item text (label)
@@ -105,18 +105,18 @@ trait ListBox
   /** Returns a list itemâ€™s object using its index.
     * @returns {any}
     */
-  def getItemByIndex(): js.Any = js.native
+  def getItemByIndex(): Any = js.native
   
   /** Returns a list itemâ€™s object based on the text given.
     * @param {string} The list item text.
     * @returns {any}
     */
-  def getItemByText(text: String): js.Any = js.native
+  def getItemByText(text: String): Any = js.native
   
   /** Returns the list of selected items in the ListBox widget.
     * @returns {any}
     */
-  def getSelectedItems(): js.Any = js.native
+  def getSelectedItems(): Any = js.native
   
   /** Returns an itemâ€™s text (label) based on the index given.
     * @returns {string}
@@ -161,13 +161,13 @@ trait ListBox
     * @param {any[]} Values of the listbox items to be hidden.
     * @returns {void}
     */
-  def hideItemsByValues(values: js.Array[js.Any]): Unit = js.native
+  def hideItemsByValues(values: js.Array[Any]): Unit = js.native
   
   /** Merges the given data with the existing data items in the listbox.
     * @param {any[]} Data to merge in listbox.
     * @returns {void}
     */
-  def mergeData(data: js.Array[js.Any]): Unit = js.native
+  def mergeData(data: js.Array[Any]): Unit = js.native
   
   @JSName("model")
   var model_ListBox: Model = js.native
@@ -274,7 +274,7 @@ trait ListBox
     * @param {any[]} Values of the listbox items to be shown.
     * @returns {void}
     */
-  def showItemsByValues(values: js.Array[js.Any]): Unit = js.native
+  def showItemsByValues(values: js.Array[Any]): Unit = js.native
   
   /** Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
     * @returns {void}
@@ -355,7 +355,7 @@ object ListBox {
     
     /** List of actual object.
       */
-    var actual: js.UndefOr[js.Any] = js.undefined
+    var actual: js.UndefOr[Any] = js.undefined
     
     /** Set this option to true to cancel the event.
       */
@@ -367,11 +367,11 @@ object ListBox {
     
     /** Object of ListBox widget which contains DataManager arguments
       */
-    var request: js.UndefOr[js.Any] = js.undefined
+    var request: js.UndefOr[Any] = js.undefined
     
     /** List of array object
       */
-    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var result: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Name of the event.
       */
@@ -379,7 +379,7 @@ object ListBox {
     
     /** ExecuteQuery object of DataManager
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object ActionBeforeSuccessEventArgs {
     
@@ -390,7 +390,7 @@ object ListBox {
     
     extension [Self <: ActionBeforeSuccessEventArgs](x: Self) {
       
-      inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
       inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
       
@@ -402,21 +402,21 @@ object ListBox {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      inline def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setResultVarargs(value: js.Any*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: Any*): Self = StObject.set(x, "result", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -430,7 +430,7 @@ object ListBox {
     
     /** returns the ListBox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -449,7 +449,7 @@ object ListBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -471,19 +471,19 @@ object ListBox {
     
     /** returns the ListBox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.undefined
+    var request: js.UndefOr[Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var result: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the name of the event
       */
@@ -491,7 +491,7 @@ object ListBox {
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -510,29 +510,29 @@ object ListBox {
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      inline def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setResultVarargs(value: js.Any*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: Any*): Self = StObject.set(x, "result", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -546,15 +546,15 @@ object ListBox {
     
     /** Returns the error message
       */
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     /** returns the ListBox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -573,15 +573,15 @@ object ListBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -603,19 +603,19 @@ object ListBox {
     
     /** returns the ListBox model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Returns the query for data retrieval from the Database
       */
-    var request: js.UndefOr[js.Any] = js.undefined
+    var request: js.UndefOr[Any] = js.undefined
     
     /** Returns the number of items fetched from remote data
       */
-    var result: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var result: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the name of the event
       */
@@ -623,7 +623,7 @@ object ListBox {
     
     /** Returns the requested data
       */
-    var xhr: js.UndefOr[js.Any] = js.undefined
+    var xhr: js.UndefOr[Any] = js.undefined
   }
   object ActionSuccessEventArgs {
     
@@ -642,29 +642,29 @@ object ListBox {
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      inline def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      inline def setResultVarargs(value: js.Any*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: Any*): Self = StObject.set(x, "result", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -678,7 +678,7 @@ object ListBox {
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** List itemâ€™s index.
       */
@@ -698,7 +698,7 @@ object ListBox {
     
     /** List item object.
       */
-    var item: js.UndefOr[js.Any] = js.undefined
+    var item: js.UndefOr[Any] = js.undefined
     
     /** Instance of the listbox model object.
       */
@@ -729,7 +729,7 @@ object ListBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -749,7 +749,7 @@ object ListBox {
       
       inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
@@ -779,7 +779,7 @@ object ListBox {
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** List itemâ€™s index.
       */
@@ -799,7 +799,7 @@ object ListBox {
     
     /** List item object.
       */
-    var item: js.UndefOr[js.Any] = js.undefined
+    var item: js.UndefOr[Any] = js.undefined
     
     /** Instance of the listbox model object.
       */
@@ -830,7 +830,7 @@ object ListBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -850,7 +850,7 @@ object ListBox {
       
       inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
@@ -958,7 +958,7 @@ object ListBox {
     
     /** Defines the HTML attributes such as id, class, styles for the specific ListBox item.
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Defines the specific field name which contains id values for the list items.
       */
@@ -1009,7 +1009,7 @@ object ListBox {
       
       inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -1129,7 +1129,7 @@ object ListBox {
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** List itemâ€™s index.
       */
@@ -1176,7 +1176,7 @@ object ListBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1222,7 +1222,7 @@ object ListBox {
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** List itemâ€™s index.
       */
@@ -1269,7 +1269,7 @@ object ListBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1315,7 +1315,7 @@ object ListBox {
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** List itemâ€™s index.
       */
@@ -1362,7 +1362,7 @@ object ListBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1408,7 +1408,7 @@ object ListBox {
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** List itemâ€™s index.
       */
@@ -1455,7 +1455,7 @@ object ListBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1558,7 +1558,7 @@ object ListBox {
     /** Set of list items to be checked by default using its index. It works only when the showCheckbox property is set to true.
       * @Default {null}
       */
-    var checkedIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var checkedIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Triggers when the ListBox widget is created successfully.
       */
@@ -1572,7 +1572,7 @@ object ListBox {
     /** Contains the list of data for generating the list items.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Triggers when the ListBox widget is destroyed successfully.
       */
@@ -1674,7 +1674,7 @@ object ListBox {
     /** The list items to be selected by default using its indices. To use this property allowMultiSelection should be enabled.
       * @Default {[]}
       */
-    var selectedIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Enables/Disables the multi selection option with the help of checkbox control.
       * @Default {false}
@@ -1787,11 +1787,11 @@ object ListBox {
       
       inline def setCheckChangeUndefined: Self = StObject.set(x, "checkChange", js.undefined)
       
-      inline def setCheckedIndices(value: js.Array[js.Any]): Self = StObject.set(x, "checkedIndices", value.asInstanceOf[js.Any])
+      inline def setCheckedIndices(value: js.Array[Any]): Self = StObject.set(x, "checkedIndices", value.asInstanceOf[js.Any])
       
       inline def setCheckedIndicesUndefined: Self = StObject.set(x, "checkedIndices", js.undefined)
       
-      inline def setCheckedIndicesVarargs(value: js.Any*): Self = StObject.set(x, "checkedIndices", js.Array(value :_*))
+      inline def setCheckedIndicesVarargs(value: Any*): Self = StObject.set(x, "checkedIndices", js.Array(value*))
       
       inline def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -1801,7 +1801,7 @@ object ListBox {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -1889,11 +1889,11 @@ object ListBox {
       
       inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
       
-      inline def setSelectedIndices(value: js.Array[js.Any]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
+      inline def setSelectedIndices(value: js.Array[Any]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
       
       inline def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
       
-      inline def setSelectedIndicesVarargs(value: js.Any*): Self = StObject.set(x, "selectedIndices", js.Array(value :_*))
+      inline def setSelectedIndicesVarargs(value: Any*): Self = StObject.set(x, "selectedIndices", js.Array(value*))
       
       inline def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
       
@@ -1945,7 +1945,7 @@ object ListBox {
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** List itemâ€™s index.
       */
@@ -1965,7 +1965,7 @@ object ListBox {
     
     /** List item object.
       */
-    var item: js.UndefOr[js.Any] = js.undefined
+    var item: js.UndefOr[Any] = js.undefined
     
     /** Instance of the listbox model object.
       */
@@ -1996,7 +1996,7 @@ object ListBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -2016,7 +2016,7 @@ object ListBox {
       
       inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
@@ -2046,7 +2046,7 @@ object ListBox {
     
     /** The Datasource of the listbox.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** List itemâ€™s index.
       */
@@ -2066,7 +2066,7 @@ object ListBox {
     
     /** List item object.
       */
-    var item: js.UndefOr[js.Any] = js.undefined
+    var item: js.UndefOr[Any] = js.undefined
     
     /** Instance of the listbox model object.
       */
@@ -2097,7 +2097,7 @@ object ListBox {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -2117,7 +2117,7 @@ object ListBox {
       
       inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       

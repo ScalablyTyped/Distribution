@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UploadServiceAccountKeyRequest extends StObject {
   
   /**
-    * A field that allows clients to upload their own public key. If set, use this public key data to create a service account key for given service account. Please note, the expected
-    * format for this field is X509_PEM.
+    * The public key to associate with the service account. Must be an RSA public key that is wrapped in an X.509 v3 certificate. Include the first line, `-----BEGIN CERTIFICATE-----`,
+    * and the last line, `-----END CERTIFICATE-----`.
     */
   var publicKeyData: js.UndefOr[String] = js.undefined
 }

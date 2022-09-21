@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientServicenetworking.anon
 
-import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.RemoveDnsZoneRequest
+import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.AddDnsZoneRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +42,7 @@ trait Resource extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: RemoveDnsZoneRequest
+  var resource: AddDnsZoneRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  inline def apply(parent: String, resource: RemoveDnsZoneRequest): Resource = {
+  inline def apply(parent: String, resource: AddDnsZoneRequest): Resource = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
@@ -97,7 +97,7 @@ object Resource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: RemoveDnsZoneRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: AddDnsZoneRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import typings.libnpmsearch.libnpmsearchStrings.maintenance
 import typings.libnpmsearch.libnpmsearchStrings.optimal
 import typings.libnpmsearch.libnpmsearchStrings.popularity
 import typings.libnpmsearch.libnpmsearchStrings.quality
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.streamMod.Stream
 import typings.npmPackageArg.mod.Result
@@ -49,7 +49,7 @@ object anon {
   /* Inlined libnpmsearch.libnpmsearch.Options & {  detailed :true} */
   trait Optionsdetailedtrue
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * @deprecated
@@ -294,7 +294,7 @@ object anon {
       * `JSONStream.parse`, and can be used to transform stream data before
       * output.
       */
-    var mapJSON: js.UndefOr[js.Function1[/* v */ js.Any, js.Any]] = js.undefined
+    var mapJSON: js.UndefOr[js.Function1[/* v */ Any, Any]] = js.undefined
     
     /**
       * Maximum number of sockets to keep open during requests. Has no effect
@@ -528,7 +528,7 @@ object anon {
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -608,7 +608,7 @@ object anon {
       
       inline def setMaintenanceUndefined: Self = StObject.set(x, "maintenance", js.undefined)
       
-      inline def setMapJSON(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "mapJSON", js.Any.fromFunction1(value))
+      inline def setMapJSON(value: /* v */ Any => Any): Self = StObject.set(x, "mapJSON", js.Any.fromFunction1(value))
       
       inline def setMapJSONUndefined: Self = StObject.set(x, "mapJSON", js.undefined)
       

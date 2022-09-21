@@ -14,7 +14,7 @@ trait SchemaNetworkConfiguration extends StObject {
   /**
     * The unique opaque id for this network traffic configuration.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The emulation rule applying to the upload traffic.
@@ -35,6 +35,8 @@ object SchemaNetworkConfiguration {
     inline def setDownRuleUndefined: Self = StObject.set(x, "downRule", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     

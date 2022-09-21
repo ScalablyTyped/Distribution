@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "retext-equality" : "6.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "retext-equality" : "6.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

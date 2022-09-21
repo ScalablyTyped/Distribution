@@ -10,7 +10,7 @@ object rotate2dBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/rotate2dBlock", "Rotate2dBlock")
   @js.native
-  class Rotate2dBlock protected () extends NodeMaterialBlock {
+  open class Rotate2dBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new Rotate2dBlock
       * @param name defines the block name
@@ -21,6 +21,8 @@ object rotate2dBlockMod {
       * Gets the input angle
       */
     def angle: NodeMaterialConnectionPoint = js.native
+    
+    def autoConfigure(): Unit = js.native
     
     /**
       * Gets the input vector

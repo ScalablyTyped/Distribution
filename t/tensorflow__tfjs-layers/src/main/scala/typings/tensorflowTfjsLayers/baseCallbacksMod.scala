@@ -53,11 +53,11 @@ object baseCallbacksMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "BaseLogger")
   @js.native
-  class BaseLogger () extends BaseCallback {
+  open class BaseLogger () extends BaseCallback {
     
-    /* private */ var seen: js.Any = js.native
+    /* private */ var seen: Any = js.native
     
-    /* private */ var totals: js.Any = js.native
+    /* private */ var totals: Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackConstructorRegistry")
@@ -65,7 +65,7 @@ object baseCallbacksMod {
   /**
     * Blocks public access to constructor.
     */
-  /* private */ class CallbackConstructorRegistry () extends StObject
+  /* private */ open class CallbackConstructorRegistry () extends StObject
   /* static members */
   object CallbackConstructorRegistry {
     
@@ -75,8 +75,8 @@ object baseCallbacksMod {
     
     @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackConstructorRegistry.checkForDuplicate")
     @js.native
-    def checkForDuplicate: js.Any = js.native
-    inline def checkForDuplicate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkForDuplicate")(x.asInstanceOf[js.Any])
+    def checkForDuplicate: Any = js.native
+    inline def checkForDuplicate_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkForDuplicate")(x.asInstanceOf[js.Any])
     
     /**
       * Clear all registered callback constructors.
@@ -85,8 +85,8 @@ object baseCallbacksMod {
     
     @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CallbackConstructorRegistry.constructors")
     @js.native
-    def constructors: js.Any = js.native
-    inline def constructors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constructors")(x.asInstanceOf[js.Any])
+    def constructors: Any = js.native
+    inline def constructors_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constructors")(x.asInstanceOf[js.Any])
     
     /**
       * Create callbacks using the registered callback constructors.
@@ -121,7 +121,7 @@ object baseCallbacksMod {
     * @param queueLength Queue length for keeping running statistics over
     *   callback execution time.
     */
-  class CallbackList () extends StObject {
+  open class CallbackList () extends StObject {
     def this(callbacks: js.Array[BaseCallback]) = this()
     def this(callbacks: js.Array[BaseCallback], queueLength: Double) = this()
     def this(callbacks: Unit, queueLength: Double) = this()
@@ -185,7 +185,7 @@ object baseCallbacksMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "CustomCallback")
   @js.native
-  class CustomCallback protected () extends BaseCallback {
+  open class CustomCallback protected () extends BaseCallback {
     def this(args: CustomCallbackArgs) = this()
     def this(args: CustomCallbackArgs, yieldEvery: YieldEveryOptions) = this()
     
@@ -195,7 +195,7 @@ object baseCallbacksMod {
     /* protected */ def batchEnd(batch: Double): Unit | js.Promise[Unit] = js.native
     /* protected */ def batchEnd(batch: Double, logs: Logs): Unit | js.Promise[Unit] = js.native
     
-    /* private */ var currentEpoch: js.Any = js.native
+    /* private */ var currentEpoch: Any = js.native
     
     /* protected */ def epochBegin(epoch: Double): Unit | js.Promise[Unit] = js.native
     /* protected */ def epochBegin(epoch: Double, logs: Logs): Unit | js.Promise[Unit] = js.native
@@ -205,6 +205,10 @@ object baseCallbacksMod {
     
     def maybeWait(epoch: Double, batch: Double, logs: UnresolvedLogs): js.Promise[Unit] = js.native
     
+    var nextFrameFunc: js.Function = js.native
+    
+    var nowFunc: js.Function = js.native
+    
     /* protected */ def trainBegin(): Unit | js.Promise[Unit] = js.native
     /* protected */ def trainBegin(logs: Logs): Unit | js.Promise[Unit] = js.native
     
@@ -213,7 +217,7 @@ object baseCallbacksMod {
     
     /* protected */ def `yield`(epoch: Double, batch: Double, logs: Logs): Unit | js.Promise[Unit] = js.native
     
-    /* private */ var yieldEvery: js.Any = js.native
+    /* private */ var yieldEvery: Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "DEFAULT_YIELD_EVERY_MS")
@@ -222,7 +226,7 @@ object baseCallbacksMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/base_callbacks", "History")
   @js.native
-  class History () extends BaseCallback {
+  open class History () extends BaseCallback {
     
     var epoch: js.Array[Double] = js.native
     
@@ -279,6 +283,10 @@ object baseCallbacksMod {
   
   trait CustomCallbackArgs extends StObject {
     
+    var nextFrameFunc: js.UndefOr[js.Function] = js.undefined
+    
+    var nowFunc: js.UndefOr[js.Function] = js.undefined
+    
     var onBatchBegin: js.UndefOr[
         js.Function2[/* batch */ Double, /* logs */ js.UndefOr[Logs], Unit | js.Promise[Unit]]
       ] = js.undefined
@@ -311,6 +319,14 @@ object baseCallbacksMod {
     }
     
     extension [Self <: CustomCallbackArgs](x: Self) {
+      
+      inline def setNextFrameFunc(value: js.Function): Self = StObject.set(x, "nextFrameFunc", value.asInstanceOf[js.Any])
+      
+      inline def setNextFrameFuncUndefined: Self = StObject.set(x, "nextFrameFunc", js.undefined)
+      
+      inline def setNowFunc(value: js.Function): Self = StObject.set(x, "nowFunc", value.asInstanceOf[js.Any])
+      
+      inline def setNowFuncUndefined: Self = StObject.set(x, "nowFunc", js.undefined)
       
       inline def setOnBatchBegin(value: (/* batch */ Double, /* logs */ js.UndefOr[Logs]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "onBatchBegin", js.Any.fromFunction2(value))
       

@@ -82,13 +82,13 @@ object ImportInstanceLaunchSpecification {
     
     inline def setGroupIdsUndefined: Self = StObject.set(x, "GroupIds", js.undefined)
     
-    inline def setGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "GroupIds", js.Array(value :_*))
+    inline def setGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "GroupIds", js.Array(value*))
     
     inline def setGroupNames(value: SecurityGroupStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
     
     inline def setGroupNamesUndefined: Self = StObject.set(x, "GroupNames", js.undefined)
     
-    inline def setGroupNamesVarargs(value: SecurityGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
+    inline def setGroupNamesVarargs(value: SecurityGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value*))
     
     inline def setInstanceInitiatedShutdownBehavior(value: ShutdownBehavior): Self = StObject.set(x, "InstanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
     

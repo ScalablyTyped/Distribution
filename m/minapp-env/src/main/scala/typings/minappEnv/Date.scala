@@ -212,7 +212,7 @@ trait Date extends StObject {
   
   /** Used by the JSON.stringify method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization. */
   def toJSON(): java.lang.String = js.native
-  def toJSON(key: js.Any): java.lang.String = js.native
+  def toJSON(key: Any): java.lang.String = js.native
   
   /** Returns a date as a string value appropriate to the host environment's current locale. */
   def toLocaleDateString(): java.lang.String = js.native

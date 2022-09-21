@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Reorders each of the items based on a mapping from old index to new index
     * @param mapping Object Mapping from old item index to new item index.
     */
-  var reorder: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var reorder: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sorts the data in the Store by one or more of its properties
     * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
@@ -34,19 +34,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns Ext.util.Sorter[]
     */
   var sort: js.UndefOr[
-    js.Function4[js.UndefOr[js.Any], js.UndefOr[String], js.UndefOr[String], js.UndefOr[Boolean], Array]
+    js.Function4[js.UndefOr[Any], js.UndefOr[String], js.UndefOr[String], js.UndefOr[Boolean], Array]
   ] = js.undefined
   
   /** [Method] Sorts the collection by a single sorter function
     * @param sorterFn Function The function to sort by.
     */
-  var sortBy: js.UndefOr[js.Function1[/* sorterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var sortBy: js.UndefOr[js.Function1[/* sorterFn */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sorts this collection by keys
     * @param dir String Sorting direction: 'ASC' or 'DESC'.
     * @param fn Function Comparison function that defines the sort order. Defaults to sorting by case insensitive string.
     */
-  var sortByKey: js.UndefOr[js.Function2[/* dir */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var sortByKey: js.UndefOr[js.Function2[/* dir */ js.UndefOr[String], /* fn */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Property] (String) */
   var sortRoot: js.UndefOr[String] = js.undefined
@@ -75,15 +75,15 @@ object IMixedCollection {
     
     inline def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
     
-    inline def setReorder(value: /* mapping */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reorder", js.Any.fromFunction1(value))
+    inline def setReorder(value: /* mapping */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "reorder", js.Any.fromFunction1(value))
     
     inline def setReorderUndefined: Self = StObject.set(x, "reorder", js.undefined)
     
-    inline def setSort(value: (js.UndefOr[js.Any], js.UndefOr[String], js.UndefOr[String], js.UndefOr[Boolean]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction4(value))
+    inline def setSort(value: (js.UndefOr[Any], js.UndefOr[String], js.UndefOr[String], js.UndefOr[Boolean]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction4(value))
     
-    inline def setSortBy(value: /* sorterFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "sortBy", js.Any.fromFunction1(value))
+    inline def setSortBy(value: /* sorterFn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "sortBy", js.Any.fromFunction1(value))
     
-    inline def setSortByKey(value: (/* dir */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "sortByKey", js.Any.fromFunction2(value))
+    inline def setSortByKey(value: (/* dir */ js.UndefOr[String], /* fn */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "sortByKey", js.Any.fromFunction2(value))
     
     inline def setSortByKeyUndefined: Self = StObject.set(x, "sortByKey", js.undefined)
     

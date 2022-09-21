@@ -15,12 +15,12 @@ object mittMod {
   @js.native
   trait Handler extends StObject {
     
-    def apply(evts: js.Any*): Unit = js.native
+    def apply(evts: Any*): Unit = js.native
   }
   
   trait MittEmitter extends StObject {
     
-    def emit(`type`: String, evts: js.Any*): Unit
+    def emit(`type`: String, evts: Any*): Unit
     
     def off(`type`: String, handler: Handler): Unit
     
@@ -29,7 +29,7 @@ object mittMod {
   object MittEmitter {
     
     inline def apply(
-      emit: (String, /* repeated */ js.Any) => Unit,
+      emit: (String, /* repeated */ Any) => Unit,
       off: (String, Handler) => Unit,
       on: (String, Handler) => Unit
     ): MittEmitter = {
@@ -39,7 +39,7 @@ object mittMod {
     
     extension [Self <: MittEmitter](x: Self) {
       
-      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       inline def setOff(value: (String, Handler) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       

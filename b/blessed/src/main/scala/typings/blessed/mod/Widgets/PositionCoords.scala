@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.PositionCoords")
 @js.native
-class PositionCoords () extends StObject {
+open class PositionCoords () extends StObject {
   
   var xi: Double = js.native
   

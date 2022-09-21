@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-node", "S3Client")
 @js.native
-class S3Client protected ()
+open class S3Client protected ()
   extends typings.awsSdkClientS3Node.s3ClientMod.S3Client {
   def this(configuration: S3Configuration) = this()
 }

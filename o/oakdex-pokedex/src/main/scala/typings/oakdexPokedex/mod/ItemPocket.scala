@@ -21,7 +21,7 @@ object ItemPocket {
     
     inline def setGenerations(value: js.Array[Double]): Self = StObject.set(x, "generations", value.asInstanceOf[js.Any])
     
-    inline def setGenerationsVarargs(value: Double*): Self = StObject.set(x, "generations", js.Array(value :_*))
+    inline def setGenerationsVarargs(value: Double*): Self = StObject.set(x, "generations", js.Array(value*))
     
     inline def setPocket(value: String): Self = StObject.set(x, "pocket", value.asInstanceOf[js.Any])
   }

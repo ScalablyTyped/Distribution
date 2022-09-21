@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object settingsMod {
   
-  @JSImport("@storybook/api/dist/modules/settings", "init")
+  @JSImport("@storybook/api/dist/ts3.9/modules/settings", "init")
   @js.native
   val init: ModuleFn = js.native
   

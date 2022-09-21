@@ -1,8 +1,7 @@
 package typings.neteaseCaptcha
 
-import typings.neteaseCaptcha.neteaseCaptchaStrings.`zh-CN`
+import typings.neteaseCaptcha.neteaseCaptchaStrings.bind
 import typings.neteaseCaptcha.neteaseCaptchaStrings.embed
-import typings.neteaseCaptcha.neteaseCaptchaStrings.en
 import typings.neteaseCaptcha.neteaseCaptchaStrings.float
 import typings.neteaseCaptcha.neteaseCaptchaStrings.http
 import typings.neteaseCaptcha.neteaseCaptchaStrings.https
@@ -17,6 +16,11 @@ object NeteaseCaptcha {
   trait Config extends StObject {
     
     /**
+      * Only available on 'popup' mode. Selector string or HTMLElement for the captcha popup
+      */
+    var appendTo: js.UndefOr[String | HTMLElement] = js.undefined
+    
+    /**
       * Verification code id
       */
     var captchaId: String
@@ -27,18 +31,28 @@ object NeteaseCaptcha {
     var element: String | HTMLElement
     
     /**
-      * Defaults to 'zh-CN'
+      * Defaults to false. Used to enable the Instance.close method
       */
-    var lang: js.UndefOr[`zh-CN` | en] = js.undefined
+    var enableClose: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Defaults to 'float' on desktop, and 'popup' on mobile
+      * Defaults to 'zh-CN'
       */
-    var mode: js.UndefOr[float | embed | popup] = js.undefined
+    var lang: js.UndefOr[Lang] = js.undefined
+    
+    /**
+      * Defaults to 'float' on desktop, and 'popup' on mobile. 'bind' is for invisible captcha
+      */
+    var mode: js.UndefOr[float | embed | popup | bind] = js.undefined
+    
+    /**
+      * Callback invoked when the captcha popup is closed
+      */
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onReady: js.UndefOr[js.Function1[/* instance */ Instance, Unit]] = js.undefined
     
-    var onVerify: js.UndefOr[js.Function2[/* error */ js.Any, /* data */ Data, Unit]] = js.undefined
+    var onVerify: js.UndefOr[js.Function2[/* error */ Any, /* data */ Data, Unit]] = js.undefined
     
     /**
       * Defaults to page protocol
@@ -59,23 +73,35 @@ object NeteaseCaptcha {
     
     extension [Self <: Config](x: Self) {
       
+      inline def setAppendTo(value: String | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      
+      inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+      
       inline def setCaptchaId(value: String): Self = StObject.set(x, "captchaId", value.asInstanceOf[js.Any])
       
       inline def setElement(value: String | HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      inline def setLang(value: `zh-CN` | en): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setEnableClose(value: Boolean): Self = StObject.set(x, "enableClose", value.asInstanceOf[js.Any])
+      
+      inline def setEnableCloseUndefined: Self = StObject.set(x, "enableClose", js.undefined)
+      
+      inline def setLang(value: Lang): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setMode(value: float | embed | popup): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: float | embed | popup | bind): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       inline def setOnReady(value: /* instance */ Instance => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
       
       inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
-      inline def setOnVerify(value: (/* error */ js.Any, /* data */ Data) => Unit): Self = StObject.set(x, "onVerify", js.Any.fromFunction2(value))
+      inline def setOnVerify(value: (/* error */ Any, /* data */ Data) => Unit): Self = StObject.set(x, "onVerify", js.Any.fromFunction2(value))
       
       inline def setOnVerifyUndefined: Self = StObject.set(x, "onVerify", js.undefined)
       
@@ -116,6 +142,11 @@ object NeteaseCaptcha {
   trait Instance extends StObject {
     
     /**
+      * Available when enableClose is true - closes the captcha bulletin
+      */
+    var close: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
       * Destroy the current instance
       */
     def destroy(): Unit
@@ -129,6 +160,11 @@ object NeteaseCaptcha {
       * Refresh the instance to get new verification information
       */
     def refresh(): Unit
+    
+    /**
+      * Available when the mode is set to 'bind' - verify token manually
+      */
+    var verify: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Instance {
     
@@ -139,6 +175,10 @@ object NeteaseCaptcha {
     
     extension [Self <: Instance](x: Self) {
       
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
       inline def setPopUp(value: () => Unit): Self = StObject.set(x, "popUp", js.Any.fromFunction0(value))
@@ -146,10 +186,14 @@ object NeteaseCaptcha {
       inline def setPopUpUndefined: Self = StObject.set(x, "popUp", js.undefined)
       
       inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+      
+      inline def setVerify(value: () => Unit): Self = StObject.set(x, "verify", js.Any.fromFunction0(value))
+      
+      inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
     }
   }
   
-  type onError = js.Function1[/* error */ js.Any, Unit]
+  type onError = js.Function1[/* error */ Any, Unit]
   
   type onLoad = js.Function1[/* instance */ Instance, Unit]
 }

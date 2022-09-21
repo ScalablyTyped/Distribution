@@ -29,6 +29,6 @@ object BatchGetValuesByDataFilterResponse {
     
     inline def setValueRangesUndefined: Self = StObject.set(x, "valueRanges", js.undefined)
     
-    inline def setValueRangesVarargs(value: MatchedValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value :_*))
+    inline def setValueRangesVarargs(value: MatchedValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value*))
   }
 }

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.ShimBase")
 @js.native
-class ShimBase protected ()
+open class ShimBase protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.ShimBase {
   def this(factory: IShimFactory) = this()
   
   /* CompleteClass */
-  override def dispose(dummy: js.Any): Unit = js.native
+  override def dispose(dummy: Any): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var factory: js.Any = js.native
+  var factory: Any = js.native
 }

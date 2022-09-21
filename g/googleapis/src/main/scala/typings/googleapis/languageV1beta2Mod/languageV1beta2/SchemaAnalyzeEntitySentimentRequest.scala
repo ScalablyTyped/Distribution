@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The entity-level sentiment analysis request message.
-  */
 trait SchemaAnalyzeEntitySentimentRequest extends StObject {
   
   /**
-    * Input document.
+    * Required. Input document.
     */
   var document: js.UndefOr[SchemaDocument] = js.undefined
   
   /**
     * The encoding type used by the API to calculate offsets.
     */
-  var encodingType: js.UndefOr[String] = js.undefined
+  var encodingType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAnalyzeEntitySentimentRequest {
   
@@ -33,6 +30,8 @@ object SchemaAnalyzeEntitySentimentRequest {
     inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     inline def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingTypeNull: Self = StObject.set(x, "encodingType", null)
     
     inline def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
   }

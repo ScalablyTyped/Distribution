@@ -10,10 +10,10 @@ object gridTileMod {
   
   @JSImport("material-ui/GridList/GridTile", JSImport.Default)
   @js.native
-  class default () extends GridTile
+  open class default () extends GridTile
   
   @JSImport("material-ui/GridList/GridTile", "GridTile")
   @js.native
-  class GridTile ()
-    extends Component[GridTileProps, js.Object, js.Any]
+  open class GridTile ()
+    extends Component[GridTileProps, js.Object, Any]
 }

@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_Fiber")
 @js.native
-class ClassFiber ()
+open class ClassFiber ()
   extends StObject
      with typings.fibjs.ClassFiber

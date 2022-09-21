@@ -1,7 +1,6 @@
 package typings.etag
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,28 +39,28 @@ object mod {
   
   trait StatsLike extends StObject {
     
-    var ctime: Date
+    var ctime: js.Date
     
     var ino: Double
     
-    var mtime: Date
+    var mtime: js.Date
     
     var size: Double
   }
   object StatsLike {
     
-    inline def apply(ctime: Date, ino: Double, mtime: Date, size: Double): StatsLike = {
+    inline def apply(ctime: js.Date, ino: Double, mtime: js.Date, size: Double): StatsLike = {
       val __obj = js.Dynamic.literal(ctime = ctime.asInstanceOf[js.Any], ino = ino.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatsLike]
     }
     
     extension [Self <: StatsLike](x: Self) {
       
-      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
       inline def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }

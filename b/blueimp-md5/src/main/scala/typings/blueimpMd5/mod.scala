@@ -9,6 +9,7 @@ object mod {
   inline def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def apply(value: String, key: String): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(value: String, key: String, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(value: String, key: Null, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(value: String, key: Unit, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("blueimp-md5", JSImport.Namespace)

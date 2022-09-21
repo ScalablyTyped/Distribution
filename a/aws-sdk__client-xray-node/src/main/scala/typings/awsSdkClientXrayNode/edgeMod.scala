@@ -8,5 +8,5 @@ object edgeMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_Edge", "_Edge")
   @js.native
-  val Edge: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Edge: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

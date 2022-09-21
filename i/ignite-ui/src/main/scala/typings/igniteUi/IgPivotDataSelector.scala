@@ -11,7 +11,7 @@ trait IgPivotDataSelector
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A function that will be called to determine if an item can be moved in or dropped on an area of the data selector.
@@ -32,7 +32,7 @@ trait IgPivotDataSelector
     * An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after the data source has initialized.
@@ -110,7 +110,7 @@ trait IgPivotDataSelector
   /**
     * Specifies the parent for the drop downs.
     */
-  var dropDownParent: js.UndefOr[js.Any] = js.undefined
+  var dropDownParent: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after the filter members drop down closes.
@@ -163,7 +163,7 @@ trait IgPivotDataSelector
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after a metadata item drop.
@@ -218,7 +218,7 @@ object IgPivotDataSelector {
     
     inline def setDataSelectorRenderedUndefined: Self = StObject.set(x, "dataSelectorRendered", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceInitialized(value: (/* event */ Event, /* ui */ DataSourceInitializedEventUIParam) => Unit): Self = StObject.set(x, "dataSourceInitialized", js.Any.fromFunction2(value))
     
@@ -274,7 +274,7 @@ object IgPivotDataSelector {
     
     inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
-    inline def setDropDownParent(value: js.Any): Self = StObject.set(x, "dropDownParent", value.asInstanceOf[js.Any])
+    inline def setDropDownParent(value: Any): Self = StObject.set(x, "dropDownParent", value.asInstanceOf[js.Any])
     
     inline def setDropDownParentUndefined: Self = StObject.set(x, "dropDownParent", js.undefined)
     
@@ -310,7 +310,7 @@ object IgPivotDataSelector {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

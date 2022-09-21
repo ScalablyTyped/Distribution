@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Resource extends StObject {
   
   /**
+    * ISO timestamp (sometimes needs additional permissions)
+    */
+  var created_at: js.UndefOr[String] = js.undefined
+  
+  /**
     * Resource type
     */
   var resource: ResourceType
+  
+  /**
+    * ISO timestamp (sometimes needs additional permissions)
+    */
+  var updated_at: js.UndefOr[String] = js.undefined
 }
 object Resource {
   
@@ -20,6 +30,14 @@ object Resource {
   
   extension [Self <: Resource](x: Self) {
     
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    
+    inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
+    
     inline def setResource(value: ResourceType): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    
+    inline def setUpdated_atUndefined: Self = StObject.set(x, "updated_at", js.undefined)
   }
 }

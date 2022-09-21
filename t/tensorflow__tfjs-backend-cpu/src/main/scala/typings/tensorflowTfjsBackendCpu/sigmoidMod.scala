@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsBackendCpu
 
+import typings.tensorflowTfjsBackendCpu.unaryTypesMod.SimpleUnaryImpl
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelFunc
 import org.scalablytyped.runtime.StObject
@@ -15,4 +16,8 @@ object sigmoidMod {
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Sigmoid", "sigmoidConfig")
   @js.native
   val sigmoidConfig: KernelConfig = js.native
+  
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Sigmoid", "sigmoidImpl")
+  @js.native
+  val sigmoidImpl: SimpleUnaryImpl = js.native
 }

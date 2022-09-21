@@ -42,7 +42,7 @@ object XDependentTextField {
     getAnchor: () => XTextRange,
     getPresentation: Boolean => String,
     getTextFieldMaster: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): XDependentTextField = {

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FinalizationRegistry extends StObject {
+trait FinalizationRegistry[T] extends StObject {
   
   /**
     * Registers an object with the registry.
@@ -16,9 +16,11 @@ trait FinalizationRegistry extends StObject {
     * object. If provided (and not undefined), this must be an object. If not provided, the target
     * cannot be unregistered.
     */
-  def register(target: js.Object, heldValue: js.Any): Unit = js.native
-  def register(target: js.Object, heldValue: js.Any, unregisterToken: js.Object): Unit = js.native
+  /* standard es2021.weakref */
+  def register(target: js.Object, heldValue: T): Unit = js.native
+  def register(target: js.Object, heldValue: T, unregisterToken: js.Object): Unit = js.native
   
+  /* standard es2021.weakref */
   @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.std.stdStrings.FinalizationRegistry = js.native
   
@@ -27,5 +29,6 @@ trait FinalizationRegistry extends StObject {
     * @param unregisterToken The token that was used as the unregisterToken argument when calling
     * register to register the target object.
     */
+  /* standard es2021.weakref */
   def unregister(unregisterToken: js.Object): Unit = js.native
 }

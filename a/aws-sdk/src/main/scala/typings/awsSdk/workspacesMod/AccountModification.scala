@@ -34,7 +34,7 @@ trait AccountModification extends StObject {
   /**
     * The timestamp when the modification of the BYOL configuration was started.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object AccountModification {
   
@@ -65,7 +65,7 @@ object AccountModification {
     
     inline def setModificationStateUndefined: Self = StObject.set(x, "ModificationState", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

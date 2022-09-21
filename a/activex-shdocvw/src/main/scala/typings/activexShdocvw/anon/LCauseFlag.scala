@@ -10,11 +10,11 @@ trait LCauseFlag extends StObject {
   
   val lCauseFlag: Double
   
-  val pWB2: js.Any
+  val pWB2: Any
 }
 object LCauseFlag {
   
-  inline def apply(Cancel: Boolean, lCauseFlag: Double, pWB2: js.Any): LCauseFlag = {
+  inline def apply(Cancel: Boolean, lCauseFlag: Double, pWB2: Any): LCauseFlag = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], lCauseFlag = lCauseFlag.asInstanceOf[js.Any], pWB2 = pWB2.asInstanceOf[js.Any])
     __obj.asInstanceOf[LCauseFlag]
   }
@@ -25,6 +25,6 @@ object LCauseFlag {
     
     inline def setLCauseFlag(value: Double): Self = StObject.set(x, "lCauseFlag", value.asInstanceOf[js.Any])
     
-    inline def setPWB2(value: js.Any): Self = StObject.set(x, "pWB2", value.asInstanceOf[js.Any])
+    inline def setPWB2(value: Any): Self = StObject.set(x, "pWB2", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-share-menu
 
-Typings are for version 2.2
+Typings are for version 5.0
 
 ## Library description:
 Add your app as a target for sharing from other apps and write iOS Share Extensions in React Native.
@@ -11,9 +11,9 @@ Add your app as a target for sharing from other apps and write iOS Share Extensi
 | Full name          | react-native-share-menu |
 | Keywords           | react-component, react-native, android, ios, share, share-extension, custom-view |
 | # releases         | 15 |
-| # dependents       | 0 |
-| # downloads        | 19116 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 36058.666666666664 |
+| # stars            | 388.0 |
 
 ## Links
 - [Homepage](https://github.com/meedan/react-native-share-menu)

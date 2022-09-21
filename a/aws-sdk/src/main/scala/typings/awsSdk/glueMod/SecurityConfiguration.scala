@@ -9,7 +9,7 @@ trait SecurityConfiguration extends StObject {
   /**
     * The time at which this security configuration was created.
     */
-  var CreatedTimeStamp: js.UndefOr[TimestampValue] = js.undefined
+  var CreatedTimeStamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The encryption configuration associated with this security configuration.
@@ -30,7 +30,7 @@ object SecurityConfiguration {
   
   extension [Self <: SecurityConfiguration](x: Self) {
     
-    inline def setCreatedTimeStamp(value: TimestampValue): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimeStamp(value: js.Date): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeStampUndefined: Self = StObject.set(x, "CreatedTimeStamp", js.undefined)
     

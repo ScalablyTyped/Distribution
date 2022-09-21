@@ -73,7 +73,7 @@ object SelectOptions {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
@@ -91,7 +91,7 @@ object SelectOptions {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
     
     inline def setToggleCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "toggleCondition", js.Any.fromFunction1(value))
     

@@ -25,12 +25,12 @@ object Names {
     
     inline def setNamesAbbr(value: js.Array[String]): Self = StObject.set(x, "namesAbbr", value.asInstanceOf[js.Any])
     
-    inline def setNamesAbbrVarargs(value: String*): Self = StObject.set(x, "namesAbbr", js.Array(value :_*))
+    inline def setNamesAbbrVarargs(value: String*): Self = StObject.set(x, "namesAbbr", js.Array(value*))
     
     inline def setNamesShort(value: js.Array[String]): Self = StObject.set(x, "namesShort", value.asInstanceOf[js.Any])
     
-    inline def setNamesShortVarargs(value: String*): Self = StObject.set(x, "namesShort", js.Array(value :_*))
+    inline def setNamesShortVarargs(value: String*): Self = StObject.set(x, "namesShort", js.Array(value*))
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
   }
 }

@@ -16,5 +16,5 @@ trait BootstrapUploadControlFile
   
   val size: Double = js.native
   
-  val sourceFileObject: js.Any = js.native
+  val sourceFileObject: Any = js.native
 }

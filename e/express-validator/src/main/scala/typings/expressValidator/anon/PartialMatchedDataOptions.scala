@@ -30,7 +30,7 @@ object PartialMatchedDataOptions {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: typings.expressValidator.baseMod.Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: typings.expressValidator.baseMod.Location*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setOnlyValidData(value: Boolean): Self = StObject.set(x, "onlyValidData", value.asInstanceOf[js.Any])
     

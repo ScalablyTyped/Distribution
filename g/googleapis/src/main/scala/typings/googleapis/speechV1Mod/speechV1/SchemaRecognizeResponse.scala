@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The only message returned to the client by the `Recognize` method. It
-  * contains the result as zero or more sequential `SpeechRecognitionResult`
-  * messages.
-  */
 trait SchemaRecognizeResponse extends StObject {
   
   /**
-    * Output only. Sequential list of transcription results corresponding to
-    * sequential portions of audio.
+    * Sequential list of transcription results corresponding to sequential portions of audio.
     */
   var results: js.UndefOr[js.Array[SchemaSpeechRecognitionResult]] = js.undefined
+  
+  /**
+    * When available, billed audio seconds for the corresponding request.
+    */
+  var totalBilledTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRecognizeResponse {
   
@@ -30,6 +29,12 @@ object SchemaRecognizeResponse {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: SchemaSpeechRecognitionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaSpeechRecognitionResult*): Self = StObject.set(x, "results", js.Array(value*))
+    
+    inline def setTotalBilledTime(value: String): Self = StObject.set(x, "totalBilledTime", value.asInstanceOf[js.Any])
+    
+    inline def setTotalBilledTimeNull: Self = StObject.set(x, "totalBilledTime", null)
+    
+    inline def setTotalBilledTimeUndefined: Self = StObject.set(x, "totalBilledTime", js.undefined)
   }
 }

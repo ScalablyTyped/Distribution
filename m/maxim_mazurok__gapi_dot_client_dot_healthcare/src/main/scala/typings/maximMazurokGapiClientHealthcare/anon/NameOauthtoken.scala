@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientHealthcare.anon
 
-import typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.Message
+import typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare.ImportDicomDataRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,10 @@ trait NameOauthtoken extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Resource name of the Message, of the form `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_id}/messages/{message_id}`. Assigned by the server. */
+  /**
+    * The name of the DICOM store resource into which the data is imported. For example,
+    * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}`.
+    */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,10 +42,7 @@ trait NameOauthtoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Message
-  
-  /** The update mask applies to the resource. For the `FieldMask` definition, see https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var resource: ImportDicomDataRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait NameOauthtoken extends StObject {
 }
 object NameOauthtoken {
   
-  inline def apply(name: String, resource: Message): NameOauthtoken = {
+  inline def apply(name: String, resource: ImportDicomDataRequest): NameOauthtoken = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameOauthtoken]
   }
@@ -97,11 +97,7 @@ object NameOauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Message): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setResource(value: ImportDicomDataRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

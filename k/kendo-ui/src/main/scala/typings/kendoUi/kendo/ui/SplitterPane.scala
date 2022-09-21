@@ -14,6 +14,10 @@ trait SplitterPane extends StObject {
   
   var contentUrl: js.UndefOr[String] = js.undefined
   
+  var label: js.UndefOr[String] = js.undefined
+  
+  var labelId: js.UndefOr[String] = js.undefined
+  
   var max: js.UndefOr[String] = js.undefined
   
   var min: js.UndefOr[String] = js.undefined
@@ -48,6 +52,14 @@ object SplitterPane {
     inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
+    
+    inline def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

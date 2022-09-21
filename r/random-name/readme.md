@@ -11,9 +11,9 @@ return random last names.
 | Full name          | random-name |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 174228 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 24784.666666666668 |
+| # stars            | 264.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/random-name)

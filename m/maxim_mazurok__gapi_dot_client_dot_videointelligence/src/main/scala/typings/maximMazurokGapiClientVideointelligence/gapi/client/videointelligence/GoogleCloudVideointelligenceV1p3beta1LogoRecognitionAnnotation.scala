@@ -32,12 +32,12 @@ object GoogleCloudVideointelligenceV1p3beta1LogoRecognitionAnnotation {
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1p3beta1VideoSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1p3beta1VideoSegment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setTracks(value: js.Array[GoogleCloudVideointelligenceV1p3beta1Track]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    inline def setTracksVarargs(value: GoogleCloudVideointelligenceV1p3beta1Track*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: GoogleCloudVideointelligenceV1p3beta1Track*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

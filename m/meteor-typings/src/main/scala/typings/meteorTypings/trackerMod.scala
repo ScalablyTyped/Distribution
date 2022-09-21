@@ -71,7 +71,7 @@ object trackerMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/tracker", "Tracker.Dependency")
     @js.native
-    class DependencyCls ()
+    open class DependencyCls ()
       extends StObject
          with Dependency
     

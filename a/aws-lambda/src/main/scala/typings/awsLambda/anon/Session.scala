@@ -34,7 +34,7 @@ object Session {
     
     inline def setSession(value: js.Array[typings.awsLambda.commonMod.ChallengeResult | CustomChallengeResult]): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    inline def setSessionVarargs(value: (typings.awsLambda.commonMod.ChallengeResult | CustomChallengeResult)*): Self = StObject.set(x, "session", js.Array(value :_*))
+    inline def setSessionVarargs(value: (typings.awsLambda.commonMod.ChallengeResult | CustomChallengeResult)*): Self = StObject.set(x, "session", js.Array(value*))
     
     inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     

@@ -34,22 +34,22 @@ trait ClassImage
     * 
     * @async
     */
-  def affine(affine: js.Array[js.Any]): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Double, y: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Double, y: Double, width: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Double, y: Double, width: Double, height: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Double, y: Double, width: Unit, height: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Double, y: Unit, width: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Double, y: Unit, width: Double, height: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Double, y: Unit, width: Unit, height: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Unit, y: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Unit, y: Double, width: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Unit, y: Double, width: Double, height: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Unit, y: Double, width: Unit, height: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Unit, y: Unit, width: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Unit, y: Unit, width: Double, height: Double): ClassImage = js.native
-  def affine(affine: js.Array[js.Any], x: Unit, y: Unit, width: Unit, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any]): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Double, y: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Double, y: Double, width: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Double, y: Double, width: Double, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Double, y: Double, width: Unit, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Double, y: Unit, width: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Double, y: Unit, width: Double, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Double, y: Unit, width: Unit, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Unit, y: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Unit, y: Double, width: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Unit, y: Double, width: Double, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Unit, y: Double, width: Unit, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Unit, y: Unit, width: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Unit, y: Unit, width: Double, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[Any], x: Unit, y: Unit, width: Unit, height: Double): ClassImage = js.native
   
   /**
     * class prop 
@@ -606,7 +606,7 @@ trait ClassImage
     * 
     * 
     */
-  def filledPolygon(points: js.Array[js.Any], color: Double): Unit = js.native
+  def filledPolygon(points: js.Array[Any], color: Double): Unit = js.native
   
   /**
     * 
@@ -769,7 +769,7 @@ trait ClassImage
     * 
     * 
     */
-  def openPolygon(points: js.Array[js.Any], color: Double): Unit = js.native
+  def openPolygon(points: js.Array[Any], color: Double): Unit = js.native
   
   /**
     * 
@@ -780,7 +780,7 @@ trait ClassImage
     * 
     * 
     */
-  def polygon(points: js.Array[js.Any], color: Double): Unit = js.native
+  def polygon(points: js.Array[Any], color: Double): Unit = js.native
   
   /**
     * class prop 

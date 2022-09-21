@@ -5,32 +5,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.TorusKnotBuilder")
-@js.native
-class TorusKnotBuilder ()
-  extends StObject
-     with typings.babylonjs.BABYLON.TorusKnotBuilder
-/* static members */
 object TorusKnotBuilder {
   
   @JSGlobal("BABYLON.TorusKnotBuilder")
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Creates a torus knot mesh
-    * * The parameter `radius` sets the global radius size (float) of the torus knot (default 2)
-    * * The parameter `radialSegments` sets the number of sides on each tube segments (positive integer, default 32)
-    * * The parameter `tubularSegments` sets the number of tubes to decompose the knot into (positive integer, default 32)
-    * * The parameters `p` and `q` are the number of windings on each axis (positive integers, default 2 and 3)
-    * * You can also set the mesh side orientation with the values : BABYLON.Mesh.FRONTSIDE (default), BABYLON.Mesh.BACKSIDE or BABYLON.Mesh.DOUBLESIDE
-    * * If you create a double-sided mesh, you can choose what parts of the texture image to crop and stick respectively on the front and the back sides with the parameters `frontUVs` and `backUVs` (Vector4). Detail here : https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation
-    * * The mesh can be set to updatable with the boolean parameter `updatable` (default false) if its internal geometry is supposed to change once created.
-    * @param name defines the name of the mesh
-    * @param options defines the options used to create the mesh
-    * @param scene defines the hosting scene
-    * @returns the torus knot mesh
-    * @see  https://doc.babylonjs.com/how_to/set_shapes#torus-knot
-    */
-  inline def CreateTorusKnot(name: String, options: Tube, scene: js.Any): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  @JSGlobal("BABYLON.TorusKnotBuilder.CreateTorusKnot")
+  @js.native
+  def CreateTorusKnot: js.Function3[
+    /* name */ String, 
+    /* options */ js.UndefOr[Tube], 
+    /* scene */ js.UndefOr[typings.babylonjs.BABYLON.Scene], 
+    typings.babylonjs.BABYLON.Mesh
+  ] = js.native
+  inline def CreateTorusKnot(name: String): typings.babylonjs.BABYLON.Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTorusKnot(name: String, options: Unit, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTorusKnot(name: String, options: Tube): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTorusKnot(name: String, options: Tube, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusKnot")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Mesh]
+  inline def CreateTorusKnot_=(
+    x: js.Function3[
+      /* name */ String, 
+      /* options */ js.UndefOr[Tube], 
+      /* scene */ js.UndefOr[typings.babylonjs.BABYLON.Scene], 
+      typings.babylonjs.BABYLON.Mesh
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateTorusKnot")(x.asInstanceOf[js.Any])
 }

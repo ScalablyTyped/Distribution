@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/common", "NgIfContext")
 @js.native
-class NgIfContext[T] () extends StObject {
+open class NgIfContext[T] () extends StObject {
   
   @JSName("$implicit")
   var $implicit: T = js.native

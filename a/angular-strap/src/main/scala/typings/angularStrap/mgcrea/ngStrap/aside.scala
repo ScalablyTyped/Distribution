@@ -55,7 +55,7 @@ object aside {
     
     var contentTemplate: js.UndefOr[String] = js.undefined
     
-    var controller: js.UndefOr[js.Any] = js.undefined
+    var controller: js.UndefOr[Any] = js.undefined
     
     var controllerAs: js.UndefOr[String] = js.undefined
     
@@ -112,7 +112,7 @@ object aside {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
       inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
       

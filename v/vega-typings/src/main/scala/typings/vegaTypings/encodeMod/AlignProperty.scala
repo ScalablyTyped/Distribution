@@ -22,6 +22,6 @@ object AlignProperty {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAlignVarargs(value: (Test & ScaledValueRef[Align])*): Self = StObject.set(x, "align", js.Array(value :_*))
+    inline def setAlignVarargs(value: (Test & ScaledValueRef[Align])*): Self = StObject.set(x, "align", js.Array(value*))
   }
 }

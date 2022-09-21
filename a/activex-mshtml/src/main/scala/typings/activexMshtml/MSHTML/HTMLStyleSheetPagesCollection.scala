@@ -9,7 +9,7 @@ trait HTMLStyleSheetPagesCollection extends StObject {
   
   def apply(index: Double): IHTMLStyleSheetPage = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
   def item(index: Double): IHTMLStyleSheetPage = js.native
   

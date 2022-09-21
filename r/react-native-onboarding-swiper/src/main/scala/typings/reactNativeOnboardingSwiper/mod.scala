@@ -3,6 +3,7 @@ package typings.reactNativeOnboardingSwiper
 import typings.react.mod.Component
 import typings.react.mod.FC
 import typings.react.mod.global.JSX.Element
+import typings.reactNative.mod.FlatList
 import typings.reactNative.mod.FlatListProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
@@ -15,8 +16,7 @@ object mod {
   
   @JSImport("react-native-onboarding-swiper", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default () extends Onboarding
   
   trait DoneButtonProps extends StObject {
     
@@ -24,11 +24,11 @@ object mod {
     
     var isLight: Boolean
     
-    def onPress(): js.Any
+    def onPress(): Any
   }
   object DoneButtonProps {
     
-    inline def apply(allowFontScaling: Boolean, isLight: Boolean, onPress: () => js.Any): DoneButtonProps = {
+    inline def apply(allowFontScaling: Boolean, isLight: Boolean, onPress: () => Any): DoneButtonProps = {
       val __obj = js.Dynamic.literal(allowFontScaling = allowFontScaling.asInstanceOf[js.Any], isLight = isLight.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
       __obj.asInstanceOf[DoneButtonProps]
     }
@@ -39,7 +39,7 @@ object mod {
       
       inline def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
       
-      inline def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     }
   }
   
@@ -72,11 +72,11 @@ object mod {
     
     var nextLabel: String | Element
     
-    def onPress(): js.Any
+    def onPress(): Any
   }
   object NextButtonProps {
     
-    inline def apply(allowFontScaling: Boolean, isLight: Boolean, nextLabel: String | Element, onPress: () => js.Any): NextButtonProps = {
+    inline def apply(allowFontScaling: Boolean, isLight: Boolean, nextLabel: String | Element, onPress: () => Any): NextButtonProps = {
       val __obj = js.Dynamic.literal(allowFontScaling = allowFontScaling.asInstanceOf[js.Any], isLight = isLight.asInstanceOf[js.Any], nextLabel = nextLabel.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
       __obj.asInstanceOf[NextButtonProps]
     }
@@ -89,11 +89,18 @@ object mod {
       
       inline def setNextLabel(value: String | Element): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
       
-      inline def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     }
   }
   
-  type Onboarding = Component[Props, js.Object, js.Any]
+  @js.native
+  trait Onboarding
+    extends Component[Props, js.Object, Any] {
+    
+    var flatList: js.UndefOr[FlatList[Any]] = js.native
+    
+    def goNext(): Unit = js.native
+  }
   
   trait Page extends StObject {
     
@@ -239,17 +246,17 @@ object mod {
     /**
       * A callback that is fired after the Onboarding is completed.
       */
-    var onDone: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onDone: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * A callback that is fired if the Onboarding is skipped.
       */
-    var onSkip: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onSkip: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * A function that receives the page index as a parameter on page change. Example Usage.
       */
-    var pageIndexCallback: js.UndefOr[js.Function1[/* pageIndex */ Double, js.Any]] = js.undefined
+    var pageIndexCallback: js.UndefOr[js.Function1[/* pageIndex */ Double, Any]] = js.undefined
     
     /**
       * An array of pages in the following shape.
@@ -368,21 +375,21 @@ object mod {
       
       inline def setNextLabelUndefined: Self = StObject.set(x, "nextLabel", js.undefined)
       
-      inline def setOnDone(value: () => js.Any): Self = StObject.set(x, "onDone", js.Any.fromFunction0(value))
+      inline def setOnDone(value: () => Any): Self = StObject.set(x, "onDone", js.Any.fromFunction0(value))
       
       inline def setOnDoneUndefined: Self = StObject.set(x, "onDone", js.undefined)
       
-      inline def setOnSkip(value: () => js.Any): Self = StObject.set(x, "onSkip", js.Any.fromFunction0(value))
+      inline def setOnSkip(value: () => Any): Self = StObject.set(x, "onSkip", js.Any.fromFunction0(value))
       
       inline def setOnSkipUndefined: Self = StObject.set(x, "onSkip", js.undefined)
       
-      inline def setPageIndexCallback(value: /* pageIndex */ Double => js.Any): Self = StObject.set(x, "pageIndexCallback", js.Any.fromFunction1(value))
+      inline def setPageIndexCallback(value: /* pageIndex */ Double => Any): Self = StObject.set(x, "pageIndexCallback", js.Any.fromFunction1(value))
       
       inline def setPageIndexCallbackUndefined: Self = StObject.set(x, "pageIndexCallback", js.undefined)
       
       inline def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value*))
       
       inline def setShowDone(value: Boolean): Self = StObject.set(x, "showDone", value.asInstanceOf[js.Any])
       
@@ -436,13 +443,13 @@ object mod {
     
     var isLight: Boolean
     
-    def onPress(): js.Any
+    def onPress(): Any
     
     var skipLabel: String | Element
   }
   object SkipButtonProps {
     
-    inline def apply(allowFontScaling: Boolean, isLight: Boolean, onPress: () => js.Any, skipLabel: String | Element): SkipButtonProps = {
+    inline def apply(allowFontScaling: Boolean, isLight: Boolean, onPress: () => Any, skipLabel: String | Element): SkipButtonProps = {
       val __obj = js.Dynamic.literal(allowFontScaling = allowFontScaling.asInstanceOf[js.Any], isLight = isLight.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress), skipLabel = skipLabel.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkipButtonProps]
     }
@@ -453,7 +460,7 @@ object mod {
       
       inline def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
       
-      inline def setOnPress(value: () => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Any): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
       inline def setSkipLabel(value: String | Element): Self = StObject.set(x, "skipLabel", value.asInstanceOf[js.Any])
     }

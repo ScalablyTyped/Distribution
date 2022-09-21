@@ -13,10 +13,15 @@ trait TypeofDebugger extends StObject {
   
   def attach(target: Debuggee, requiredVersion: String): Unit = js.native
   def attach(target: Debuggee, requiredVersion: String, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("attach")
+  def attach_Promise(target: Debuggee, requiredVersion: String): js.Promise[Unit] = js.native
   
   def detach(target: Debuggee): Unit = js.native
   def detach(target: Debuggee, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("detach")
+  def detach_Promise(target: Debuggee): js.Promise[Unit] = js.native
   
+  def getTargets(): js.Promise[js.Array[TargetInfo]] = js.native
   def getTargets(callback: js.Function1[/* result */ js.Array[TargetInfo], Unit]): Unit = js.native
   
   var onDetach: DebuggerDetachedEvent = js.native
@@ -37,4 +42,8 @@ trait TypeofDebugger extends StObject {
     commandParams: Unit,
     callback: js.Function1[/* result */ js.UndefOr[js.Object], Unit]
   ): Unit = js.native
+  @JSName("sendCommand")
+  def sendCommand_Promise(target: Debuggee, method: String): js.Promise[js.Object] = js.native
+  @JSName("sendCommand")
+  def sendCommand_Promise(target: Debuggee, method: String, commandParams: js.Object): js.Promise[js.Object] = js.native
 }

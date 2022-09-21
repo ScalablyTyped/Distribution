@@ -11,5 +11,5 @@ trait TriggeredObservable
      with Destroyable {
   
   def emitter(): ModelBase = js.native
-  def emitter(newEmitter: ModelBase): js.Any = js.native
+  def emitter(newEmitter: ModelBase): Any = js.native
 }

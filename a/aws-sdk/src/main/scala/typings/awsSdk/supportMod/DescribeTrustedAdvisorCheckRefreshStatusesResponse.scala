@@ -22,6 +22,6 @@ object DescribeTrustedAdvisorCheckRefreshStatusesResponse {
     
     inline def setStatuses(value: TrustedAdvisorCheckRefreshStatusList): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    inline def setStatusesVarargs(value: TrustedAdvisorCheckRefreshStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: TrustedAdvisorCheckRefreshStatus*): Self = StObject.set(x, "statuses", js.Array(value*))
   }
 }

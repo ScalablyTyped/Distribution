@@ -46,7 +46,7 @@ object SearchUserActivityRequest {
     
     inline def setActivityTypesUndefined: Self = StObject.set(x, "activityTypes", js.undefined)
     
-    inline def setActivityTypesVarargs(value: String*): Self = StObject.set(x, "activityTypes", js.Array(value :_*))
+    inline def setActivityTypesVarargs(value: String*): Self = StObject.set(x, "activityTypes", js.Array(value*))
     
     inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     

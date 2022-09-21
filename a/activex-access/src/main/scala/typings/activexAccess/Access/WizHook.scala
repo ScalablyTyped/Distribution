@@ -110,7 +110,7 @@ trait WizHook extends StObject {
     View: Double,
     flags: Double,
     fOpen: Boolean,
-    fFileSystem: js.Any
+    fFileSystem: Any
   ): Double
   
   def GetFileOdso(bstrExt: String, bstrFilename: String): Double
@@ -125,7 +125,7 @@ trait WizHook extends StObject {
   
   def GetScriptString(HScr: Double, ScriptColumn: Double, Value: String): Boolean
   
-  def GetWizGlob(lWhich: Double): js.Any
+  def GetWizGlob(lWhich: Double): Any
   
   def GlobalProcExists(Name: String): Boolean
   
@@ -171,7 +171,7 @@ trait WizHook extends StObject {
   
   def SetVbaPassword(bstrDbName: String, bstrConnect: String, bstrPasswd: String): Boolean
   
-  def SetWizGlob(lWhich: Double, vValue: js.Any): Unit
+  def SetWizGlob(lWhich: Double, vValue: Any): Unit
   
   def SortStringArray(Array: SafeArray[String]): Unit
   
@@ -235,14 +235,14 @@ object WizHook {
     GetCurrentView: String => Double,
     GetDisabledExtensions: () => String,
     GetFileName: (Double, String, String, String, String, String, String, Double, Double, Double, Boolean) => Double,
-    GetFileName2: (Double, String, String, String, String, String, String, Double, Double, Double, Boolean, js.Any) => Double,
+    GetFileName2: (Double, String, String, String, String, String, String, Double, Double, Double, Boolean, Any) => Double,
     GetFileOdso: (String, String) => Double,
     GetImexTblName: () => String,
     GetInfoForColumns: String => String,
     GetLinkedListProperty: (String, String, Boolean) => String,
     GetObjPubOption: (String, AcObjectType, Boolean) => Double,
     GetScriptString: (Double, Double, String) => Boolean,
-    GetWizGlob: Double => js.Any,
+    GetWizGlob: Double => Any,
     GlobalProcExists: String => Boolean,
     HideDates: () => Boolean,
     IsMatchToDbcConnectString: String => Boolean,
@@ -265,7 +265,7 @@ object WizHook {
     SetDefaultSpecName: String => Unit,
     SetDpBlockKeyInput: Boolean => Unit,
     SetVbaPassword: (String, String, String) => Boolean,
-    SetWizGlob: (Double, js.Any) => Unit,
+    SetWizGlob: (Double, Any) => Unit,
     SortStringArray: SafeArray[String] => Unit,
     SplitPath: (String, String, String, String, String) => Unit,
     TableFieldHasUniqueIndex: (String, String) => Boolean,
@@ -349,7 +349,7 @@ object WizHook {
     ): Self = StObject.set(x, "GetFileName", js.Any.fromFunction11(value))
     
     inline def setGetFileName2(
-      value: (Double, String, String, String, String, String, String, Double, Double, Double, Boolean, js.Any) => Double
+      value: (Double, String, String, String, String, String, String, Double, Double, Double, Boolean, Any) => Double
     ): Self = StObject.set(x, "GetFileName2", js.Any.fromFunction12(value))
     
     inline def setGetFileOdso(value: (String, String) => Double): Self = StObject.set(x, "GetFileOdso", js.Any.fromFunction2(value))
@@ -364,7 +364,7 @@ object WizHook {
     
     inline def setGetScriptString(value: (Double, Double, String) => Boolean): Self = StObject.set(x, "GetScriptString", js.Any.fromFunction3(value))
     
-    inline def setGetWizGlob(value: Double => js.Any): Self = StObject.set(x, "GetWizGlob", js.Any.fromFunction1(value))
+    inline def setGetWizGlob(value: Double => Any): Self = StObject.set(x, "GetWizGlob", js.Any.fromFunction1(value))
     
     inline def setGlobalProcExists(value: String => Boolean): Self = StObject.set(x, "GlobalProcExists", js.Any.fromFunction1(value))
     
@@ -410,7 +410,7 @@ object WizHook {
     
     inline def setSetVbaPassword(value: (String, String, String) => Boolean): Self = StObject.set(x, "SetVbaPassword", js.Any.fromFunction3(value))
     
-    inline def setSetWizGlob(value: (Double, js.Any) => Unit): Self = StObject.set(x, "SetWizGlob", js.Any.fromFunction2(value))
+    inline def setSetWizGlob(value: (Double, Any) => Unit): Self = StObject.set(x, "SetWizGlob", js.Any.fromFunction2(value))
     
     inline def setSortStringArray(value: SafeArray[String] => Unit): Self = StObject.set(x, "SortStringArray", js.Any.fromFunction1(value))
     

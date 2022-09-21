@@ -1,7 +1,7 @@
 
 # Scala.js typings for lazy-value
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Create a lazily evaluated value
@@ -9,11 +9,11 @@ Create a lazily evaluated value
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lazy-value |
-| Keywords           | lazy, value, lazily, laziness, val, evaluation, eval, execute, getter, function, fn, memoize, cache, defer, deferred |
+| Keywords           | lazy, value, lazily, laziness, evaluation, eval, execute, getter, function, memoize, cache, defer, deferred |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 27297 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1127.3333333333333 |
+| # stars            | 57.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/lazy-value#readme)

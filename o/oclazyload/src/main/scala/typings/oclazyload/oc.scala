@@ -26,8 +26,8 @@ object oc {
       * Injects a module with the associated name into Angular. Useful for manual injection when loading through RequireJS, SystemJS, etc. Useful in
       * conjunction with the toggleWatch() method.
       */
-    def inject(moduleName: String): IPromise[js.Any] = js.native
-    def inject(moduleName: js.Array[String]): IPromise[js.Any] = js.native
+    def inject(moduleName: String): IPromise[Any] = js.native
+    def inject(moduleName: js.Array[String]): IPromise[Any] = js.native
     
     /**
       * Checks if a module name, or list of modules names, has been previously loaded into Angular.
@@ -41,14 +41,14 @@ object oc {
       * @param module The name of a predefined module config object, or a module config object, or an array of either
       * @param config Options to be used when loading the modules
       */
-    def load(module: String): IPromise[js.Any] = js.native
-    def load(module: String, config: IOptionsConfig): IPromise[js.Any] = js.native
-    def load(module: js.Array[String | ITypedModuleConfig | IModuleConfig]): IPromise[js.Any] = js.native
-    def load(module: js.Array[String | ITypedModuleConfig | IModuleConfig], config: IOptionsConfig): IPromise[js.Any] = js.native
-    def load(module: IModuleConfig): IPromise[js.Any] = js.native
-    def load(module: IModuleConfig, config: IOptionsConfig): IPromise[js.Any] = js.native
-    def load(module: ITypedModuleConfig): IPromise[js.Any] = js.native
-    def load(module: ITypedModuleConfig, config: IOptionsConfig): IPromise[js.Any] = js.native
+    def load(module: String): IPromise[Any] = js.native
+    def load(module: String, config: IOptionsConfig): IPromise[Any] = js.native
+    def load(module: js.Array[String | ITypedModuleConfig | IModuleConfig]): IPromise[Any] = js.native
+    def load(module: js.Array[String | ITypedModuleConfig | IModuleConfig], config: IOptionsConfig): IPromise[Any] = js.native
+    def load(module: IModuleConfig): IPromise[Any] = js.native
+    def load(module: IModuleConfig, config: IOptionsConfig): IPromise[Any] = js.native
+    def load(module: ITypedModuleConfig): IPromise[Any] = js.native
+    def load(module: ITypedModuleConfig, config: IOptionsConfig): IPromise[Any] = js.native
     
     /**
       * Defines a module config object.
@@ -112,7 +112,7 @@ object oc {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -223,7 +223,7 @@ object oc {
       
       inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      inline def setModulesVarargs(value: IModuleConfig*): Self = StObject.set(x, "modules", js.Array(value :_*))
+      inline def setModulesVarargs(value: IModuleConfig*): Self = StObject.set(x, "modules", js.Array(value*))
     }
   }
   

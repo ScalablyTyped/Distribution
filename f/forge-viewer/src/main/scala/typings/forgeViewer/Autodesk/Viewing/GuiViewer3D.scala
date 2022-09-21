@@ -1,5 +1,6 @@
 package typings.forgeViewer.Autodesk.Viewing
 
+import typings.forgeViewer.Autodesk.Viewing.Private.ProgressBar
 import typings.forgeViewer.Autodesk.Viewing.UI.Button
 import typings.forgeViewer.Autodesk.Viewing.UI.DockingPanel
 import typings.forgeViewer.Autodesk.Viewing.UI.ToolBar
@@ -27,14 +28,14 @@ trait GuiViewer3D
   def addOptionToggle(
     parent: Element,
     tooltip: String,
-    initialState: js.Any,
+    initialState: Any,
     onchange: js.Function1[/* checked */ Boolean, Unit],
     saveKey: Boolean
   ): Unit = js.native
   
   def addPanel(panel: DockingPanel): Boolean = js.native
   
-  var autocam: js.Any = js.native
+  var autocam: Any = js.native
   
   def createDebugSubmenu(button: Button): Unit = js.native
   
@@ -42,17 +43,17 @@ trait GuiViewer3D
   
   def createUI(model: Model): Unit = js.native
   
-  def createViewerOptionsMenu(model: Model): Unit = js.native
+  def createViewerOptionsMenu(): Unit = js.native
   
-  var dockingPanels: js.Any = js.native
+  var dockingPanels: Any = js.native
   
-  def getPropertyPanel(): js.Any = js.native
-  def getPropertyPanel(createDefault: Boolean): js.Any = js.native
+  def getPropertyPanel(): Any = js.native
+  def getPropertyPanel(createDefault: Boolean): Any = js.native
   
-  def getSettingsPanel(): js.Any = js.native
-  def getSettingsPanel(createDefault: Boolean): js.Any = js.native
-  def getSettingsPanel(createDefault: Boolean, model: Model): js.Any = js.native
-  def getSettingsPanel(createDefault: Unit, model: Model): js.Any = js.native
+  def getSettingsPanel(): Any = js.native
+  def getSettingsPanel(createDefault: Boolean): Any = js.native
+  def getSettingsPanel(createDefault: Boolean, model: Model): Any = js.native
+  def getSettingsPanel(createDefault: Unit, model: Model): Any = js.native
   
   def getToolbar(create: Boolean): ToolBar = js.native
   
@@ -80,7 +81,7 @@ trait GuiViewer3D
   
   var overlays: OverlayManager = js.native
   
-  var progressbar: js.Any = js.native
+  var progressbar: ProgressBar = js.native
   
   def removeDebugTools(): Unit = js.native
   
@@ -88,17 +89,19 @@ trait GuiViewer3D
   
   def resizePanels(options: js.Object): Unit = js.native
   
-  def setLayersPanel(layersPanel: js.Any): Unit = js.native
+  /** @deprecated */
+  def setLayersPanel(): Unit = js.native
   
-  def setModelStructurePanel(modelStructurePanel: js.Any): Unit = js.native
+  def setModelStructurePanel(modelStructurePanel: Any): Unit = js.native
   
   def setPropertiesOnSelect(onSelect: Boolean): Unit = js.native
   
-  def setPropertyPanel(propertyPanel: js.Any): Unit = js.native
+  def setPropertyPanel(propertyPanel: Any): Unit = js.native
   
-  def setSettingsPanel(settingsPanel: js.Any): Unit = js.native
+  def setSettingsPanel(settingsPanel: Any): Unit = js.native
   
-  def showLayerManager(show: Boolean): Unit = js.native
+  /** @deprecated */
+  def showLayerManager(): Unit = js.native
   
   def showModelStructurePanel(show: Boolean): Unit = js.native
   
@@ -108,7 +111,7 @@ trait GuiViewer3D
   
   var toolController: ToolController = js.native
   
-  def updateFullscreenButton(mode: js.Any): Unit = js.native
+  def updateFullscreenButton(mode: Any): Unit = js.native
   
   def updateToolbarButtons(width: Double, height: Double): Unit = js.native
   

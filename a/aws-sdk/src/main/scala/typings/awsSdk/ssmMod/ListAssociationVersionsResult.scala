@@ -29,7 +29,7 @@ object ListAssociationVersionsResult {
     
     inline def setAssociationVersionsUndefined: Self = StObject.set(x, "AssociationVersions", js.undefined)
     
-    inline def setAssociationVersionsVarargs(value: AssociationVersionInfo*): Self = StObject.set(x, "AssociationVersions", js.Array(value :_*))
+    inline def setAssociationVersionsVarargs(value: AssociationVersionInfo*): Self = StObject.set(x, "AssociationVersions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

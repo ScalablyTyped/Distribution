@@ -99,7 +99,7 @@ object boxengineMod {
   
   @JSImport("@lumino/widgets/types/boxengine", "BoxSizer")
   @js.native
-  class BoxSizer () extends StObject {
+  open class BoxSizer () extends StObject {
     
     /**
       * An internal storage property for the layout algorithm.

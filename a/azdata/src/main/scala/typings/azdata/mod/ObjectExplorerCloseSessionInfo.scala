@@ -6,17 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ObjectExplorerCloseSessionInfo extends StObject {
   
-  var sessionId: String
+  var sessionId: js.UndefOr[String] = js.undefined
 }
 object ObjectExplorerCloseSessionInfo {
   
-  inline def apply(sessionId: String): ObjectExplorerCloseSessionInfo = {
-    val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
+  inline def apply(): ObjectExplorerCloseSessionInfo = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectExplorerCloseSessionInfo]
   }
   
   extension [Self <: ObjectExplorerCloseSessionInfo](x: Self) {
     
     inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    
+    inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
   }
 }

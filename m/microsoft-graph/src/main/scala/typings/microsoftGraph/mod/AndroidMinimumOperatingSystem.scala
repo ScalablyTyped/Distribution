@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AndroidMinimumOperatingSystem extends StObject {
   
+  // Version 10.0 or later.
+  var v10_0: js.UndefOr[Boolean] = js.undefined
+  
+  // Version 11.0 or later.
+  var v11_0: js.UndefOr[Boolean] = js.undefined
+  
   // Version 4.0 or later.
   var v4_0: js.UndefOr[Boolean] = js.undefined
   
@@ -38,6 +44,14 @@ object AndroidMinimumOperatingSystem {
   }
   
   extension [Self <: AndroidMinimumOperatingSystem](x: Self) {
+    
+    inline def setV10_0(value: Boolean): Self = StObject.set(x, "v10_0", value.asInstanceOf[js.Any])
+    
+    inline def setV10_0Undefined: Self = StObject.set(x, "v10_0", js.undefined)
+    
+    inline def setV11_0(value: Boolean): Self = StObject.set(x, "v11_0", value.asInstanceOf[js.Any])
+    
+    inline def setV11_0Undefined: Self = StObject.set(x, "v11_0", js.undefined)
     
     inline def setV4_0(value: Boolean): Self = StObject.set(x, "v4_0", value.asInstanceOf[js.Any])
     

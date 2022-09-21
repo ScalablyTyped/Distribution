@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DocumentReference extends StObject {
   
-  def field(`object`: Record[String, js.Any]): this.type = js.native
+  def field(`object`: Record[String, Any]): this.type = js.native
   
   def get(): js.Promise[IQuerySingleResult] = js.native
   def get(options: OQ[IGetDocumentOptions]): Unit = js.native

@@ -19,7 +19,7 @@ trait SmartTag extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Properties(Index: String): SmartTagProperty
   def Properties(Index: Double): SmartTagProperty
@@ -42,7 +42,7 @@ object SmartTag {
     IsMemberSafe: Double => Boolean,
     IsMissing: Boolean,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Properties: SmartTagProperties,
     SmartTagActions: SmartTagActions,
     XML: String
@@ -66,7 +66,7 @@ object SmartTag {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: SmartTagProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     

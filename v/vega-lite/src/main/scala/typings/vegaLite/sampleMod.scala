@@ -10,11 +10,11 @@ object sampleMod {
   
   @JSImport("vega-lite/build/src/compile/data/sample", "SampleTransformNode")
   @js.native
-  class SampleTransformNode protected () extends DataFlowNode {
+  open class SampleTransformNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: SampleTransform) = this()
     
     def assemble(): typings.vegaTypings.transformMod.SampleTransform = js.native
     
-    /* private */ var transform: js.Any = js.native
+    /* private */ var transform: Any = js.native
   }
 }

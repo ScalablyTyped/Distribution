@@ -10,10 +10,10 @@ object switchVideoMod {
   
   @JSImport("material-ui/svg-icons/image/switch-video", JSImport.Default)
   @js.native
-  class default () extends ImageSwitchVideo
+  open class default () extends ImageSwitchVideo
   
   @JSImport("material-ui/svg-icons/image/switch-video", "ImageSwitchVideo")
   @js.native
-  class ImageSwitchVideo ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageSwitchVideo ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

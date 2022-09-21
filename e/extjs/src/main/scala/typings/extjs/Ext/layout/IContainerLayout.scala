@@ -22,20 +22,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   @JSName("beginLayoutCycle")
   var beginLayoutCycle_IContainerLayout: js.UndefOr[
-    js.Function2[/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* ownerContext */ js.UndefOr[Any], /* firstCycle */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] In addition to work done by our base classes containers benefit from some extra cached data
     * @param ownerContext Object
     */
   @JSName("beginLayout")
-  var beginLayout_IContainerLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var beginLayout_IContainerLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Adds layout s itemCls and owning Container s itemCls
     * @param item Object
     */
   @JSName("configureItem")
-  var configureItem_IContainerLayout: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var configureItem_IContainerLayout: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Returns the container size that of the target
     * @param ownerContext Ext.layout.ContextItem The owner's context item.
@@ -43,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @returns Object The size
     */
   var getContainerSize: js.UndefOr[
-    js.Function2[/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], js.Any]
+    js.Function2[/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean], Any]
   ] = js.undefined
   
   /** [Method] Returns the element into which extra functional DOM elements can be inserted
@@ -86,7 +86,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] Removes items in the childEls array based on the return value of a supplied test function
     * @param testFn Function The test function.
     */
-  var removeChildEls: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+  var removeChildEls: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
 }
 object IContainerLayout {
   
@@ -101,19 +101,19 @@ object IContainerLayout {
     
     inline def setAddChildElsUndefined: Self = StObject.set(x, "addChildEls", js.undefined)
     
-    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
-    inline def setBeginLayoutCycle(value: (/* ownerContext */ js.UndefOr[js.Any], /* firstCycle */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction2(value))
+    inline def setBeginLayoutCycle(value: (/* ownerContext */ js.UndefOr[Any], /* firstCycle */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction2(value))
     
     inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
     inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
     
-    inline def setConfigureItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "configureItem", js.Any.fromFunction1(value))
+    inline def setConfigureItem(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "configureItem", js.Any.fromFunction1(value))
     
     inline def setConfigureItemUndefined: Self = StObject.set(x, "configureItem", js.undefined)
     
-    inline def setGetContainerSize(value: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getContainerSize", js.Any.fromFunction2(value))
+    inline def setGetContainerSize(value: (/* ownerContext */ js.UndefOr[IContextItem], /* inDom */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "getContainerSize", js.Any.fromFunction2(value))
     
     inline def setGetContainerSizeUndefined: Self = StObject.set(x, "getContainerSize", js.undefined)
     
@@ -149,7 +149,7 @@ object IContainerLayout {
     
     inline def setOverflowPadderElUndefined: Self = StObject.set(x, "overflowPadderEl", js.undefined)
     
-    inline def setRemoveChildEls(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeChildEls", js.Any.fromFunction1(value))
+    inline def setRemoveChildEls(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "removeChildEls", js.Any.fromFunction1(value))
     
     inline def setRemoveChildElsUndefined: Self = StObject.set(x, "removeChildEls", js.undefined)
   }

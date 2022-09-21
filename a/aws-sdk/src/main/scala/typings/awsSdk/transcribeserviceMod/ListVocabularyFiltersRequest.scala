@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListVocabularyFiltersRequest extends StObject {
   
   /**
-    * The maximum number of filters to return in the response. If there are fewer results in the list, this response contains only the actual results.
+    * The maximum number of custom vocabulary filters to return in each page of results. If there are fewer results than the value you specify, only the actual results are returned. If you don't specify a value, a default of 5 is used.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.undefined
   
   /**
-    * Filters the response so that it only contains vocabulary filters whose name contains the specified string.
+    * Returns only the custom vocabulary filters that contain the specified string. The search is not case sensitive.
     */
   var NameContains: js.UndefOr[VocabularyFilterName] = js.undefined
   
   /**
-    * If the result of the previous request to ListVocabularyFilters was truncated, include the NextToken to fetch the next set of collections.
+    * If your ListVocabularyFilters request returns more results than can be displayed, NextToken is displayed in the response with an associated string. To get the next page of results, copy this string and repeat your request, including NextToken with the value of the copied string. Repeat as needed to view all your results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for googleapis-common
 
-Typings are for version 0.7.2
+Typings are for version 6.0.3
 
 ## Library description:
 A common tooling library used by the googleapis npm module. You probably don't want to use this directly.
@@ -10,10 +10,10 @@ A common tooling library used by the googleapis npm module. You probably don't w
 | ------------------ | :-------------: |
 | Full name          | googleapis-common |
 | Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 13 |
-| # downloads        | 26047253 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 5047720.333333333 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/nodejs-googleapis-common#readme)

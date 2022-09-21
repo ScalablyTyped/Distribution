@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "PullHook")
 @js.native
-class PullHook protected ()
-  extends Component[FixedContent, js.Any] {
+open class PullHook protected () extends Component[FixedContent, Any] {
   def this(props: HTMLAttributesidclassName & FixedContent) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & FixedContent, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & FixedContent, context: Any) = this()
 }

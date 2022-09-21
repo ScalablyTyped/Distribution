@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "levenshtein-edit-distance" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "levenshtein-edit-distance" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

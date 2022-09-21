@@ -19,7 +19,7 @@ object webSessionDescriptionHandlerMod {
   
   @JSImport("sip.js/lib/platform/web/session-description-handler", "SessionDescriptionHandler")
   @js.native
-  class SessionDescriptionHandler protected ()
+  open class SessionDescriptionHandler protected ()
     extends typings.sipJs.sessionDescriptionHandlerSessionDescriptionHandlerMod.SessionDescriptionHandler {
     /**
       * Constructor
@@ -43,13 +43,13 @@ object webSessionDescriptionHandlerMod {
     
     @JSImport("sip.js/lib/platform/web/session-description-handler", "SessionDescriptionHandler.dispatchAddTrackEvent")
     @js.native
-    def dispatchAddTrackEvent: js.Any = js.native
-    inline def dispatchAddTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchAddTrackEvent")(x.asInstanceOf[js.Any])
+    def dispatchAddTrackEvent: Any = js.native
+    inline def dispatchAddTrackEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchAddTrackEvent")(x.asInstanceOf[js.Any])
     
     @JSImport("sip.js/lib/platform/web/session-description-handler", "SessionDescriptionHandler.dispatchRemoveTrackEvent")
     @js.native
-    def dispatchRemoveTrackEvent: js.Any = js.native
-    inline def dispatchRemoveTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
+    def dispatchRemoveTrackEvent: Any = js.native
+    inline def dispatchRemoveTrackEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
   }
   
   inline def defaultMediaStreamFactory(): MediaStreamFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMediaStreamFactory")().asInstanceOf[MediaStreamFactory]

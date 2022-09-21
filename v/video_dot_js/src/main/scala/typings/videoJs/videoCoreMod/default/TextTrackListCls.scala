@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param tracks
   *        A list of tracks to initialize the list with.
   */
-class TextTrackListCls ()
+open class TextTrackListCls ()
   extends StObject
      with TextTrackList {
   def this(tracks: js.Array[typings.videoJs.mod.videojs.TextTrack]) = this()

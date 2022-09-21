@@ -33,7 +33,7 @@ trait IHTMLEventObj extends StObject {
   
   val reason: Double
   
-  var returnValue: js.Any
+  var returnValue: Any
   
   val screenX: Double
   
@@ -43,7 +43,7 @@ trait IHTMLEventObj extends StObject {
   
   val srcElement: IHTMLElement
   
-  val srcFilter: js.Any
+  val srcFilter: Any
   
   val toElement: IHTMLElement
   
@@ -69,12 +69,12 @@ object IHTMLEventObj {
     offsetY: Double,
     qualifier: String,
     reason: Double,
-    returnValue: js.Any,
+    returnValue: Any,
     screenX: Double,
     screenY: Double,
     shiftKey: Boolean,
     srcElement: IHTMLElement,
-    srcFilter: js.Any,
+    srcFilter: Any,
     toElement: IHTMLElement,
     `type`: String,
     x: Double,
@@ -114,7 +114,7 @@ object IHTMLEventObj {
     
     inline def setReason(value: Double): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    inline def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
     inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object IHTMLEventObj {
     
     inline def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
     
-    inline def setSrcFilter(value: js.Any): Self = StObject.set(x, "srcFilter", value.asInstanceOf[js.Any])
+    inline def setSrcFilter(value: Any): Self = StObject.set(x, "srcFilter", value.asInstanceOf[js.Any])
     
     inline def setToElement(value: IHTMLElement): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
     

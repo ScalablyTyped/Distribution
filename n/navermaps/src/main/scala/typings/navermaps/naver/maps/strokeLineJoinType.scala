@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.navermaps.navermapsStrings.miter
-  - typings.navermaps.navermapsStrings.`round `
+  - typings.navermaps.navermapsStrings.round
   - typings.navermaps.navermapsStrings.bevel
 */
 trait strokeLineJoinType extends StObject
@@ -16,5 +16,5 @@ object strokeLineJoinType {
   
   inline def miter: typings.navermaps.navermapsStrings.miter = "miter".asInstanceOf[typings.navermaps.navermapsStrings.miter]
   
-  inline def `round `: typings.navermaps.navermapsStrings.`round ` = ("round ").asInstanceOf[typings.navermaps.navermapsStrings.`round `]
+  inline def round: typings.navermaps.navermapsStrings.round = "round".asInstanceOf[typings.navermaps.navermapsStrings.round]
 }

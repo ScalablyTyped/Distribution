@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "http-proxy-middleware" : "2.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "http-proxy-middleware" : "2.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

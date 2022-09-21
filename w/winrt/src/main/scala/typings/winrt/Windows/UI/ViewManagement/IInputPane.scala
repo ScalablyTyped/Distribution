@@ -9,13 +9,13 @@ trait IInputPane extends StObject {
   
   var occludedRect: Rect
   
-  var onhiding: js.Any
+  var onhiding: Any
   
-  var onshowing: js.Any
+  var onshowing: Any
 }
 object IInputPane {
   
-  inline def apply(occludedRect: Rect, onhiding: js.Any, onshowing: js.Any): IInputPane = {
+  inline def apply(occludedRect: Rect, onhiding: Any, onshowing: Any): IInputPane = {
     val __obj = js.Dynamic.literal(occludedRect = occludedRect.asInstanceOf[js.Any], onhiding = onhiding.asInstanceOf[js.Any], onshowing = onshowing.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInputPane]
   }
@@ -24,8 +24,8 @@ object IInputPane {
     
     inline def setOccludedRect(value: Rect): Self = StObject.set(x, "occludedRect", value.asInstanceOf[js.Any])
     
-    inline def setOnhiding(value: js.Any): Self = StObject.set(x, "onhiding", value.asInstanceOf[js.Any])
+    inline def setOnhiding(value: Any): Self = StObject.set(x, "onhiding", value.asInstanceOf[js.Any])
     
-    inline def setOnshowing(value: js.Any): Self = StObject.set(x, "onshowing", value.asInstanceOf[js.Any])
+    inline def setOnshowing(value: Any): Self = StObject.set(x, "onshowing", value.asInstanceOf[js.Any])
   }
 }

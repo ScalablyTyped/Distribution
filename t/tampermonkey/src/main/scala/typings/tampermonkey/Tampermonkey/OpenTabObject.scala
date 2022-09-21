@@ -12,7 +12,7 @@ trait OpenTabObject extends StObject {
   var closed: Boolean
   
   /** Set closed listener */
-  var onclosed: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onclose: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object OpenTabObject {
   
@@ -27,8 +27,8 @@ object OpenTabObject {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    inline def setOnclosed(value: () => Unit): Self = StObject.set(x, "onclosed", js.Any.fromFunction0(value))
+    inline def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
     
-    inline def setOnclosedUndefined: Self = StObject.set(x, "onclosed", js.undefined)
+    inline def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
   }
 }

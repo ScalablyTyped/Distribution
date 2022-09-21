@@ -111,7 +111,7 @@ object IDatepickerPopupConfig {
     
     inline def setAltInputFormatsUndefined: Self = StObject.set(x, "altInputFormats", js.undefined)
     
-    inline def setAltInputFormatsVarargs(value: String*): Self = StObject.set(x, "altInputFormats", js.Array(value :_*))
+    inline def setAltInputFormatsVarargs(value: String*): Self = StObject.set(x, "altInputFormats", js.Array(value*))
     
     inline def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
     

@@ -12,61 +12,58 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-//option.presetStorage
-//[number, number]
-//[[number, number], [number, number]]
 object behavior {
   
   @JSGlobal("ymaps.behavior.DblClickZoom")
   @js.native
-  class DblClickZoom ()
+  open class DblClickZoom ()
     extends typings.yandexMaps.mod.behavior.DblClickZoom {
     def this(options: IDblClickZoomOptions) = this()
   }
   
   @JSGlobal("ymaps.behavior.Drag")
   @js.native
-  class Drag ()
+  open class Drag ()
     extends typings.yandexMaps.mod.behavior.Drag {
     def this(options: IDragOptions) = this()
   }
   
   @JSGlobal("ymaps.behavior.LeftMouseButtonMagnifier")
   @js.native
-  class LeftMouseButtonMagnifier ()
+  open class LeftMouseButtonMagnifier ()
     extends typings.yandexMaps.mod.behavior.LeftMouseButtonMagnifier {
     def this(options: ILeftMouseButtonMagnifierOptions) = this()
   }
   
   @JSGlobal("ymaps.behavior.MultiTouch")
   @js.native
-  class MultiTouch ()
+  open class MultiTouch ()
     extends typings.yandexMaps.mod.behavior.MultiTouch {
     def this(options: IMultiTouchOptions) = this()
   }
   
   @JSGlobal("ymaps.behavior.RightMouseButtonMagnifier")
   @js.native
-  class RightMouseButtonMagnifier ()
+  open class RightMouseButtonMagnifier ()
     extends typings.yandexMaps.mod.behavior.RightMouseButtonMagnifier {
     def this(options: IRightMouseButtonMagnifierOptions) = this()
   }
   
   @JSGlobal("ymaps.behavior.RouteEditor")
   @js.native
-  class RouteEditor ()
+  open class RouteEditor ()
     extends typings.yandexMaps.mod.behavior.RouteEditor
   
   @JSGlobal("ymaps.behavior.Ruler")
   @js.native
-  class Ruler ()
+  open class Ruler ()
     extends typings.yandexMaps.mod.behavior.Ruler {
     def this(options: IRulerOptions) = this()
   }
   
   @JSGlobal("ymaps.behavior.ScrollZoom")
   @js.native
-  class ScrollZoom ()
+  open class ScrollZoom ()
     extends typings.yandexMaps.mod.behavior.ScrollZoom {
     def this(options: IScrollZoomOptions) = this()
   }

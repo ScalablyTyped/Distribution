@@ -3,7 +3,7 @@ package typings.reactColor
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.reactColor.mod.Color
 import typings.reactColor.mod.ColorChangeHandler
 import typings.reactColor.mod.ColorResult
@@ -21,7 +21,7 @@ object colorWrapMod {
   val ^ : js.Any = js.native
   
   inline def default[A](component: ComponentClass[A & InjectedColorProps, ComponentState]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
-  inline def default[A](component: StatelessComponent[A & InjectedColorProps]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
+  inline def default[A](component: FunctionComponent[A & InjectedColorProps]): ComponentClass[A & ExportedColorProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A & ExportedColorProps, ComponentState]]
   
   type ColorWrapChangeHandler = js.Function1[/* color */ Color | ColorResult, Unit]
   

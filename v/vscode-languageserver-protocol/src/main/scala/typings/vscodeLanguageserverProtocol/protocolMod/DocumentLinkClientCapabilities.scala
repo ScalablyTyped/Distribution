@@ -12,7 +12,7 @@ trait DocumentLinkClientCapabilities extends StObject {
   var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether the client support the `tooltip` property on `DocumentLink`.
+    * Whether the client supports the `tooltip` property on `DocumentLink`.
     *
     * @since 3.15.0
     */

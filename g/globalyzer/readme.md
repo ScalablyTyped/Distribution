@@ -10,10 +10,10 @@ Detect and extract the static part of a glob string
 | ------------------ | :-------------: |
 | Full name          | globalyzer |
 | Keywords           | glob, analyzer, base, detect |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 14697828 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2598790.3333333335 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/terkelg/globalyzer#readme)

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Rotate Server CA request.
-  */
 trait SchemaInstancesRotateServerCaRequest extends StObject {
   
   /**

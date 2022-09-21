@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComplianceSummaryByResourceType extends StObject {
   
   /**
-    * The number of AWS resources that are compliant or noncompliant, up to a maximum of 100 for each.
+    * The number of Amazon Web Services resources that are compliant or noncompliant, up to a maximum of 100 for each.
     */
   var ComplianceSummary: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceSummary] = js.undefined
   
   /**
-    * The type of AWS resource.
+    * The type of Amazon Web Services resource.
     */
   var ResourceType: js.UndefOr[StringWithCharLimit256] = js.undefined
 }

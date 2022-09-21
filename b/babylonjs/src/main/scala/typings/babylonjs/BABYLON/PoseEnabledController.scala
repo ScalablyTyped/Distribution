@@ -12,11 +12,11 @@ trait PoseEnabledController
   
   /* protected */ var _calculatedPosition: Vector3 = js.native
   
-  /* private */ var _calculatedRotation: js.Any = js.native
+  /* private */ var _calculatedRotation: Any = js.native
   
-  /* private */ var _deviceRoomPosition: js.Any = js.native
+  /* private */ var _deviceRoomPosition: Any = js.native
   
-  /* private */ var _deviceRoomRotationQuaternion: js.Any = js.native
+  /* private */ var _deviceRoomRotationQuaternion: Any = js.native
   
   /**
     * Internal, matrix used to convert room space to babylon space
@@ -25,15 +25,16 @@ trait PoseEnabledController
   var _deviceToWorld: Matrix = js.native
   
   /**
+    * @param fixedPosition
     * @hidden
     */
   def _disableTrackPosition(fixedPosition: Vector3): Unit = js.native
   
-  /* private */ var _draggedRoomRotation: js.Any = js.native
+  /* private */ var _draggedRoomRotation: Any = js.native
   
-  /* private */ var _leftHandSystemQuaternion: js.Any = js.native
+  /* private */ var _leftHandSystemQuaternion: Any = js.native
   
-  /* private */ var _maxRotationDistFromHeadset: js.Any = js.native
+  /* private */ var _maxRotationDistFromHeadset: Any = js.native
   
   /**
     * Internal, the mesh attached to the controller
@@ -52,16 +53,16 @@ trait PoseEnabledController
     */
   var _pointingPoseNode: Nullable[TransformNode] = js.native
   
-  /* private */ var _poseControlledCamera: js.Any = js.native
+  /* private */ var _poseControlledCamera: Any = js.native
   
-  /* private */ var _trackPosition: js.Any = js.native
+  /* private */ var _trackPosition: Any = js.native
   
   /**
     * Updates only the pose device and mesh without doing any button event checking
     */
   /* protected */ def _updatePoseAndMesh(): Unit = js.native
   
-  /* private */ var _workingMatrix: js.Any = js.native
+  /* private */ var _workingMatrix: Any = js.native
   
   /**
     * Attaches a mesh to the controller

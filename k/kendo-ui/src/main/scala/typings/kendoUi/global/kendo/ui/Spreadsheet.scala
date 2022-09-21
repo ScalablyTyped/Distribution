@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Spreadsheet")
 @js.native
-class Spreadsheet protected ()
+open class Spreadsheet protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Spreadsheet {
   def this(element: Element) = this()

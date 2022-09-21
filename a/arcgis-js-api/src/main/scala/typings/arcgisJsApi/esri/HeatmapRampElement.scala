@@ -50,7 +50,7 @@ object HeatmapRampElement {
     
     inline def setInfos(value: js.Array[HeatmapRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
-    inline def setInfosVarargs(value: HeatmapRampStop*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: HeatmapRampStop*): Self = StObject.set(x, "infos", js.Array(value*))
     
     inline def setTitle(value: String | RampTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

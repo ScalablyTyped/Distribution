@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Meshes/index", "TransformNode")
 @js.native
-class TransformNode protected ()
+open class TransformNode protected ()
   extends typings.babylonjs.transformNodeMod.TransformNode {
   def this(name: String) = this()
   def this(name: String, scene: Nullable[Scene]) = this()
@@ -73,34 +73,34 @@ object TransformNode {
   /**
     * Returns a new TransformNode object parsed from the source provided.
     * @param parsedTransformNode is the source.
-    * @param scene the scne the object belongs to
+    * @param scene the scene the object belongs to
     * @param rootUrl is a string, it's the root URL to prefix the `delayLoadingFile` property with
     * @returns a new TransformNode object parsed from the source provided.
     */
-  inline def Parse(parsedTransformNode: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTransformNode.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+  inline def Parse(parsedTransformNode: Any, scene: Scene, rootUrl: String): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTransformNode.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
+  
+  @JSImport("babylonjs/Meshes/index", "TransformNode._LookAtVectorCache")
+  @js.native
+  def _LookAtVectorCache: Any = js.native
+  inline def _LookAtVectorCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LookAtVectorCache")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs/Meshes/index", "TransformNode._RotationAxisCache")
+  @js.native
+  def _RotationAxisCache: Any = js.native
+  inline def _RotationAxisCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RotationAxisCache")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Meshes/index", "TransformNode._TmpRotation")
   @js.native
-  def _TmpRotation: js.Any = js.native
-  inline def _TmpRotation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpRotation")(x.asInstanceOf[js.Any])
+  def _TmpRotation: Any = js.native
+  inline def _TmpRotation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpRotation")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Meshes/index", "TransformNode._TmpScaling")
   @js.native
-  def _TmpScaling: js.Any = js.native
-  inline def _TmpScaling_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpScaling")(x.asInstanceOf[js.Any])
+  def _TmpScaling: Any = js.native
+  inline def _TmpScaling_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpScaling")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs/Meshes/index", "TransformNode._TmpTranslation")
   @js.native
-  def _TmpTranslation: js.Any = js.native
-  inline def _TmpTranslation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpTranslation")(x.asInstanceOf[js.Any])
-  
-  @JSImport("babylonjs/Meshes/index", "TransformNode._lookAtVectorCache")
-  @js.native
-  def _lookAtVectorCache: js.Any = js.native
-  inline def _lookAtVectorCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_lookAtVectorCache")(x.asInstanceOf[js.Any])
-  
-  @JSImport("babylonjs/Meshes/index", "TransformNode._rotationAxisCache")
-  @js.native
-  def _rotationAxisCache: js.Any = js.native
-  inline def _rotationAxisCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_rotationAxisCache")(x.asInstanceOf[js.Any])
+  def _TmpTranslation: Any = js.native
+  inline def _TmpTranslation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpTranslation")(x.asInstanceOf[js.Any])
 }

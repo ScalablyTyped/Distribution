@@ -1,6 +1,5 @@
 package typings.reactBootstrapTable.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +10,11 @@ trait DateFilterValue
   
   var comparator: FilterComparator
   
-  var date: Date | String
+  var date: js.Date | String
 }
 object DateFilterValue {
   
-  inline def apply(comparator: FilterComparator, date: Date | String): DateFilterValue = {
+  inline def apply(comparator: FilterComparator, date: js.Date | String): DateFilterValue = {
     val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateFilterValue]
   }
@@ -24,6 +23,6 @@ object DateFilterValue {
     
     inline def setComparator(value: FilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    inline def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

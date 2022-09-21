@@ -32,7 +32,7 @@ object XRemoteContentProviderConnectionControl {
   inline def apply(
     acquire: () => Unit,
     enableConnectionControl: (XRemoteContentProviderAcceptor, XInterface) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XRemoteContentProviderConnectionControl = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), enableConnectionControl = js.Any.fromFunction2(enableConnectionControl), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

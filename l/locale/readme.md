@@ -10,10 +10,10 @@ Browser locale negotiation for node.js
 | ------------------ | :-------------: |
 | Full name          | locale |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 1412609 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 112801.33333333333 |
+| # stars            | 250.0 |
 
 ## Links
 - [Homepage](https://github.com/florrain/locale)

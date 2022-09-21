@@ -32,7 +32,7 @@ trait Entity extends StObject {
   var Id: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The level of confidence that Amazon Comprehend Medical has in the accuracy of the detection.
+    * The level of confidence that Comprehend Medical; has in the accuracy of the detection.
     */
   var Score: js.UndefOr[Float] = js.undefined
   
@@ -64,7 +64,7 @@ object Entity {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "Attributes", js.Array(value*))
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
@@ -94,7 +94,7 @@ object Entity {
     
     inline def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
     
-    inline def setTraitsVarargs(value: Trait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
+    inline def setTraitsVarargs(value: Trait*): Self = StObject.set(x, "Traits", js.Array(value*))
     
     inline def setType(value: EntitySubType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

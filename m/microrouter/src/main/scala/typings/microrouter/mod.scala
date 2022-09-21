@@ -41,13 +41,17 @@ object mod {
   @js.native
   val put: RouteHandler = js.native
   
-  inline def router(routes: RequestHandler*): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("router")(routes.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def router(routes: RequestHandler*): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("router")(routes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[RequestHandler]
   
   inline def withNamespace(namespace: String): js.Function1[/* repeated */ RequestHandler, RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNamespace")(namespace.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ RequestHandler, RequestHandler]]
   
-  type AugmentedRequestHandler = js.Function2[/* req */ ServerRequest, /* res */ ServerResponse, js.Any]
+  type AugmentedRequestHandler = js.Function2[/* req */ ServerRequest, /* res */ ServerResponse, Any]
   
-  type RouteHandler = js.Function2[/* path */ String, /* handler */ AugmentedRequestHandler, RequestHandler]
+  type RouteHandler = js.Function2[
+    /* path */ String | typings.urlPattern.mod.^, 
+    /* handler */ AugmentedRequestHandler, 
+    RequestHandler
+  ]
   
   @js.native
   trait ServerRequest extends IncomingMessage {
@@ -57,5 +61,5 @@ object mod {
     var query: StringDictionary[String] = js.native
   }
   
-  type ServerResponse = typings.node.httpMod.ServerResponse
+  type ServerResponse = typings.node.httpMod.ServerResponse[IncomingMessage]
 }

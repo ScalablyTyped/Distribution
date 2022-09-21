@@ -24,6 +24,6 @@ object IGetPeersResponse {
     
     inline def setPeerEndpointsUndefined: Self = StObject.set(x, "peerEndpoints", js.undefined)
     
-    inline def setPeerEndpointsVarargs(value: String*): Self = StObject.set(x, "peerEndpoints", js.Array(value :_*))
+    inline def setPeerEndpointsVarargs(value: String*): Self = StObject.set(x, "peerEndpoints", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ trait BillingAccount extends StObject {
   var displayName: js.UndefOr[String] = js.undefined
   
   /**
-    * If this account is a [subaccount](https://cloud.google.com/billing/docs/concepts), then this will be the resource name of the master billing account that it is being resold through.
+    * If this account is a [subaccount](https://cloud.google.com/billing/docs/concepts), then this will be the resource name of the parent billing account that it is being resold through.
     * Otherwise this will be empty.
     */
   var masterBillingAccount: js.UndefOr[String] = js.undefined

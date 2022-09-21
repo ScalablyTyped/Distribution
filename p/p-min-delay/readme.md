@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-min-delay
 
-Typings are for version 3.1.0
+Typings are for version 4.0.1
 
 ## Library description:
 Delay a promise a minimum amount of time
@@ -11,9 +11,9 @@ Delay a promise a minimum amount of time
 | Full name          | p-min-delay |
 | Keywords           | promise, delay, minimum, min, resolve, stall, defer, wait, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird |
 | # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 224995 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 60675.666666666664 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-min-delay#readme)

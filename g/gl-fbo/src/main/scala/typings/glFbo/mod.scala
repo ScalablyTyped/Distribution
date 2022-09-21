@@ -53,7 +53,7 @@ object mod {
       
       inline def setColor(value: js.Array[Texture]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      inline def setColorVarargs(value: Texture*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: Texture*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setDepth(value: Texture): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

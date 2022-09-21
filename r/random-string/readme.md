@@ -10,9 +10,9 @@ Simple Module for generating Random Strings
 | Full name          | random-string |
 | Keywords           | random, string |
 | # releases         | 0 |
-| # dependents       | 76 |
-| # downloads        | 1156524 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 112543.0 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/valiton/node-random-string)

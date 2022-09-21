@@ -16,7 +16,7 @@ trait KeySet extends StObject {
     * A list of specific keys. Entries in `keys` should have exactly as many elements as there are columns in the primary or index key with which this `KeySet` is used. Individual key
     * values are encoded as described here.
     */
-  var keys: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var keys: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
   
   /** A list of key ranges. See KeyRange for more information about key range specifications. */
   var ranges: js.UndefOr[js.Array[KeyRange]] = js.undefined
@@ -34,16 +34,16 @@ object KeySet {
     
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    inline def setKeys(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: js.Array[Any]*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setRanges(value: js.Array[KeyRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: KeyRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: KeyRange*): Self = StObject.set(x, "ranges", js.Array(value*))
   }
 }

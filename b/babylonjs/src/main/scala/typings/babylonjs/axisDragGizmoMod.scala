@@ -2,10 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.anon.SnapDistance
 import typings.babylonjs.gizmoMod.Gizmo
+import typings.babylonjs.gizmoMod.IGizmo
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.observableMod.Observable
+import typings.babylonjs.observableMod.Observer
 import typings.babylonjs.pointerDragBehaviorMod.PointerDragBehavior
+import typings.babylonjs.pointerEventsMod.PointerInfo
 import typings.babylonjs.positionGizmoMod.PositionGizmo
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.standardMaterialMod.StandardMaterial
@@ -18,14 +22,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object axisDragGizmoMod {
   
-  @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo")
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.babylonjs.sceneMod.IDisposable because Already inherited
+  - typings.babylonjs.gizmoMod.IGizmo because Already inherited
+  - typings.babylonjs.axisDragGizmoMod.IAxisDragGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined dragBehavior, snapDistance, onSnapObservable, isEnabled */ @JSImport("babylonjs/Gizmos/axisDragGizmo", "AxisDragGizmo")
   @js.native
-  class AxisDragGizmo protected () extends Gizmo {
+  open class AxisDragGizmo protected () extends Gizmo {
     /**
       * Creates an AxisDragGizmo
-      * @param gizmoLayer The utility layer the gizmo will be added to
       * @param dragAxis The axis which the gizmo will be able to drag on
       * @param color The color of the gizmo
+      * @param gizmoLayer The utility layer the gizmo will be added to
+      * @param parent
       * @param thickness display gizmo axis thickness
       */
     def this(dragAxis: Vector3) = this()
@@ -80,21 +88,21 @@ object axisDragGizmoMod {
       thickness: Double
     ) = this()
     
-    /* private */ var _coloredMaterial: js.Any = js.native
+    /* protected */ var _coloredMaterial: StandardMaterial = js.native
     
-    /* private */ var _disableMaterial: js.Any = js.native
+    /* protected */ var _disableMaterial: StandardMaterial = js.native
     
-    /* private */ var _dragging: js.Any = js.native
+    /* protected */ var _dragging: Boolean = js.native
     
-    /* private */ var _gizmoMesh: js.Any = js.native
+    /* protected */ var _gizmoMesh: Mesh = js.native
     
-    /* private */ var _hoverMaterial: js.Any = js.native
+    /* protected */ var _hoverMaterial: StandardMaterial = js.native
     
-    /* private */ var _isEnabled: js.Any = js.native
+    /* protected */ var _isEnabled: Boolean = js.native
     
-    /* private */ var _parent: js.Any = js.native
+    /* protected */ var _parent: Nullable[PositionGizmo] = js.native
     
-    /* private */ var _pointerObserver: js.Any = js.native
+    /* protected */ var _pointerObserver: Nullable[Observer[PointerInfo]] = js.native
     
     /**
       * Drag behavior responsible for the gizmos dragging interactions
@@ -106,6 +114,9 @@ object axisDragGizmoMod {
       * If the gizmo is enabled
       */
     def isEnabled_=(value: Boolean): Unit = js.native
+    /** If the gizmo is enabled */
+    @JSName("isEnabled")
+    var isEnabled_FAxisDragGizmo: Boolean = js.native
     
     /**
       * Event that fires each time the gizmo snaps to a new location.
@@ -125,13 +136,75 @@ object axisDragGizmoMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
+    /**
+      * @param scene
+      * @param material
+      * @param thickness
+      * @param isCollider
+      * @hidden
+      */
     inline def _CreateArrow(scene: Scene, material: StandardMaterial): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
     inline def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
     inline def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Double, isCollider: Boolean): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
     inline def _CreateArrow(scene: Scene, material: StandardMaterial, thickness: Unit, isCollider: Boolean): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
     
-    /** @hidden */
+    /**
+      * @param scene
+      * @param arrow
+      * @hidden
+      */
     inline def _CreateArrowInstance(scene: Scene, arrow: TransformNode): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrowInstance")(scene.asInstanceOf[js.Any], arrow.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
+  }
+  
+  trait IAxisDragGizmo
+    extends StObject
+       with IGizmo {
+    
+    /** Drag behavior responsible for the gizmos dragging interactions */
+    var dragBehavior: PointerDragBehavior
+    
+    /** If the gizmo is enabled */
+    var isEnabled: Boolean
+    
+    /**
+      * Event that fires each time the gizmo snaps to a new location.
+      * * snapDistance is the the change in distance
+      */
+    var onSnapObservable: Observable[SnapDistance]
+    
+    /** Drag distance in babylon units that the gizmo will snap to when dragged */
+    var snapDistance: Double
+  }
+  object IAxisDragGizmo {
+    
+    inline def apply(
+      _rootMesh: Mesh,
+      dispose: () => Unit,
+      dragBehavior: PointerDragBehavior,
+      gizmoLayer: UtilityLayerRenderer,
+      isEnabled: Boolean,
+      isHovered: Boolean,
+      onSnapObservable: Observable[SnapDistance],
+      scaleRatio: Double,
+      setCustomMesh: Mesh => Unit,
+      snapDistance: Double,
+      updateGizmoPositionToMatchAttachedMesh: Boolean,
+      updateGizmoRotationToMatchAttachedMesh: Boolean,
+      updateScale: Boolean
+    ): IAxisDragGizmo = {
+      val __obj = js.Dynamic.literal(_rootMesh = _rootMesh.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), dragBehavior = dragBehavior.asInstanceOf[js.Any], gizmoLayer = gizmoLayer.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], onSnapObservable = onSnapObservable.asInstanceOf[js.Any], scaleRatio = scaleRatio.asInstanceOf[js.Any], setCustomMesh = js.Any.fromFunction1(setCustomMesh), snapDistance = snapDistance.asInstanceOf[js.Any], updateGizmoPositionToMatchAttachedMesh = updateGizmoPositionToMatchAttachedMesh.asInstanceOf[js.Any], updateGizmoRotationToMatchAttachedMesh = updateGizmoRotationToMatchAttachedMesh.asInstanceOf[js.Any], updateScale = updateScale.asInstanceOf[js.Any], attachedMesh = null, attachedNode = null, customRotationQuaternion = null)
+      __obj.asInstanceOf[IAxisDragGizmo]
+    }
+    
+    extension [Self <: IAxisDragGizmo](x: Self) {
+      
+      inline def setDragBehavior(value: PointerDragBehavior): Self = StObject.set(x, "dragBehavior", value.asInstanceOf[js.Any])
+      
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setOnSnapObservable(value: Observable[SnapDistance]): Self = StObject.set(x, "onSnapObservable", value.asInstanceOf[js.Any])
+      
+      inline def setSnapDistance(value: Double): Self = StObject.set(x, "snapDistance", value.asInstanceOf[js.Any])
+    }
   }
 }

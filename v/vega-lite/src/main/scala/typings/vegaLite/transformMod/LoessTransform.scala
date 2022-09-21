@@ -59,7 +59,7 @@ object LoessTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setLoess(value: FieldName): Self = StObject.set(x, "loess", value.asInstanceOf[js.Any])
     

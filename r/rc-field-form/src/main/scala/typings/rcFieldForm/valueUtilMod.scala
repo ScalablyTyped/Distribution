@@ -22,12 +22,12 @@ object valueUtilMod {
   inline def defaultGetValueFromEvent(
     valuePropName: String,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventArgs is not an array type */ args: EventArgs
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetValueFromEvent")(valuePropName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetValueFromEvent")(valuePropName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def getNamePath(): InternalNamePath = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamePath")().asInstanceOf[InternalNamePath]
   inline def getNamePath(path: NamePath): InternalNamePath = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamePath")(path.asInstanceOf[js.Any]).asInstanceOf[InternalNamePath]
   
-  inline def getValue(store: Store, namePath: InternalNamePath): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(store.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getValue(store: Store, namePath: InternalNamePath): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(store.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def isSimilar(source: SimilarObject, target: SimilarObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSimilar")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -37,8 +37,9 @@ object valueUtilMod {
   inline def move[T](array: js.Array[T], moveIndex: Double, toIndex: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(array.asInstanceOf[js.Any], moveIndex.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def setValue(store: Store, namePath: InternalNamePath, value: StoreValue): Store = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(store.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Store]
+  inline def setValue(store: Store, namePath: InternalNamePath, value: StoreValue, removeIfUndefined: Boolean): Store = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(store.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], removeIfUndefined.asInstanceOf[js.Any])).asInstanceOf[Store]
   
-  inline def setValues[T](store: T, restValues: T*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setValues")(store.asInstanceOf[js.Any], restValues.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def setValues[T](store: T, restValues: T*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("setValues")(List(store.asInstanceOf[js.Any]).`++`(restValues.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   type SimilarObject = String | Double | js.Object
 }

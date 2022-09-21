@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var init: js.UndefOr[
     js.Function5[
-      /* element */ js.Any, 
-      /* valueAccessor */ js.Function0[js.Any], 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutAllBindingsAccessor */ /* allBindingsAccessor */ js.Any, 
-      /* viewModel */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ /* bindingContext */ js.Any, 
+      /* element */ Any, 
+      /* valueAccessor */ js.Function0[Any], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutAllBindingsAccessor */ /* allBindingsAccessor */ Any, 
+      /* viewModel */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ /* bindingContext */ Any, 
       KnockoutControlsDescendantBindings
     ]
   ] = js.undefined
@@ -28,7 +28,7 @@ object AlertKnockoutBindingHandler {
   extension [Self <: AlertKnockoutBindingHandler](x: Self) {
     
     inline def setInit(
-      value: (/* element */ js.Any, /* valueAccessor */ js.Function0[js.Any], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutAllBindingsAccessor */ /* allBindingsAccessor */ js.Any, /* viewModel */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ /* bindingContext */ js.Any) => KnockoutControlsDescendantBindings
+      value: (/* element */ Any, /* valueAccessor */ js.Function0[Any], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutAllBindingsAccessor */ /* allBindingsAccessor */ Any, /* viewModel */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ /* bindingContext */ Any) => KnockoutControlsDescendantBindings
     ): Self = StObject.set(x, "init", js.Any.fromFunction5(value))
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)

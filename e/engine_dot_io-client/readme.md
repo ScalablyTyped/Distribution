@@ -1,7 +1,7 @@
 
 # Scala.js typings for engine_dot_io-client
 
-Typings are for version 3.1
+Typings are for version 6.2.2
 
 ## Library description:
 Client for the realtime Engine
@@ -10,10 +10,10 @@ Client for the realtime Engine
 | ------------------ | :-------------: |
 | Full name          | engine.io-client |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 132 |
-| # downloads        | 234339248 |
-| # stars            | 2 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7735007333333332E7 |
+| # stars            | 700.0 |
 
 ## Links
 - [Homepage](https://github.com/socketio/engine.io-client)
@@ -24,7 +24,7 @@ Client for the realtime Engine
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

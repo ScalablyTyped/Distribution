@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAutoMLJobRequest extends StObject {
   
   /**
-    * Request information about a job using that job's unique name.
+    * Requests information about an AutoML job using its unique name.
     */
   var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName
 }

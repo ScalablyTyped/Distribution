@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__keyboard
 
-Typings are for version 1.2.3
+Typings are for version 1.8.2
 
 ## Library description:
 Lumino Keyboard
@@ -10,10 +10,10 @@ Lumino Keyboard
 | ------------------ | :-------------: |
 | Full name          | @lumino/keyboard |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 6 |
-| # downloads        | 1371056 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 283857.3333333333 |
+| # stars            | 370.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

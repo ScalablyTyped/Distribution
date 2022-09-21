@@ -33,23 +33,23 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.AccountMyWorkResult")
   @js.native
-  def AccountMyWorkResult: js.Any = js.native
-  inline def AccountMyWorkResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AccountMyWorkResult")(x.asInstanceOf[js.Any])
+  def AccountMyWorkResult: Any = js.native
+  inline def AccountMyWorkResult_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AccountMyWorkResult")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.AccountRecentActivityWorkItemModel")
   @js.native
-  def AccountRecentActivityWorkItemModel: js.Any = js.native
-  inline def AccountRecentActivityWorkItemModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AccountRecentActivityWorkItemModel")(x.asInstanceOf[js.Any])
+  def AccountRecentActivityWorkItemModel: Any = js.native
+  inline def AccountRecentActivityWorkItemModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AccountRecentActivityWorkItemModel")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.AccountRecentMentionWorkItemModel")
   @js.native
-  def AccountRecentMentionWorkItemModel: js.Any = js.native
-  inline def AccountRecentMentionWorkItemModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AccountRecentMentionWorkItemModel")(x.asInstanceOf[js.Any])
+  def AccountRecentMentionWorkItemModel: Any = js.native
+  inline def AccountRecentMentionWorkItemModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AccountRecentMentionWorkItemModel")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.AccountWorkWorkItemModel")
   @js.native
-  def AccountWorkWorkItemModel: js.Any = js.native
-  inline def AccountWorkWorkItemModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AccountWorkWorkItemModel")(x.asInstanceOf[js.Any])
+  def AccountWorkWorkItemModel: Any = js.native
+  inline def AccountWorkWorkItemModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AccountWorkWorkItemModel")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.CommentSortOrder")
   @js.native
@@ -98,13 +98,13 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.QueryHierarchyItem")
   @js.native
-  def QueryHierarchyItem: js.Any = js.native
-  inline def QueryHierarchyItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QueryHierarchyItem")(x.asInstanceOf[js.Any])
+  def QueryHierarchyItem: Any = js.native
+  inline def QueryHierarchyItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QueryHierarchyItem")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.QueryHierarchyItemsResult")
   @js.native
-  def QueryHierarchyItemsResult: js.Any = js.native
-  inline def QueryHierarchyItemsResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QueryHierarchyItemsResult")(x.asInstanceOf[js.Any])
+  def QueryHierarchyItemsResult: Any = js.native
+  inline def QueryHierarchyItemsResult_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QueryHierarchyItemsResult")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.QueryOption")
   @js.native
@@ -133,8 +133,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.ReportingWorkItemLink")
   @js.native
-  def ReportingWorkItemLink: js.Any = js.native
-  inline def ReportingWorkItemLink_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReportingWorkItemLink")(x.asInstanceOf[js.Any])
+  def ReportingWorkItemLink: Any = js.native
+  inline def ReportingWorkItemLink_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReportingWorkItemLink")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.TemplateType")
   @js.native
@@ -153,18 +153,18 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemClassificationNode")
   @js.native
-  def WorkItemClassificationNode: js.Any = js.native
-  inline def WorkItemClassificationNode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemClassificationNode")(x.asInstanceOf[js.Any])
+  def WorkItemClassificationNode: Any = js.native
+  inline def WorkItemClassificationNode_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemClassificationNode")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemComment")
   @js.native
-  def WorkItemComment: js.Any = js.native
-  inline def WorkItemComment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemComment")(x.asInstanceOf[js.Any])
+  def WorkItemComment: Any = js.native
+  inline def WorkItemComment_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemComment")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemComments")
   @js.native
-  def WorkItemComments: js.Any = js.native
-  inline def WorkItemComments_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemComments")(x.asInstanceOf[js.Any])
+  def WorkItemComments: Any = js.native
+  inline def WorkItemComments_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemComments")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemErrorPolicy")
   @js.native
@@ -178,23 +178,23 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemField")
   @js.native
-  def WorkItemField: js.Any = js.native
-  inline def WorkItemField_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemField")(x.asInstanceOf[js.Any])
+  def WorkItemField: Any = js.native
+  inline def WorkItemField_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemField")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemHistory")
   @js.native
-  def WorkItemHistory: js.Any = js.native
-  inline def WorkItemHistory_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemHistory")(x.asInstanceOf[js.Any])
+  def WorkItemHistory: Any = js.native
+  inline def WorkItemHistory_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemHistory")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemQueryClause")
   @js.native
-  def WorkItemQueryClause: js.Any = js.native
-  inline def WorkItemQueryClause_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemQueryClause")(x.asInstanceOf[js.Any])
+  def WorkItemQueryClause: Any = js.native
+  inline def WorkItemQueryClause_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemQueryClause")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemQueryResult")
   @js.native
-  def WorkItemQueryResult: js.Any = js.native
-  inline def WorkItemQueryResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemQueryResult")(x.asInstanceOf[js.Any])
+  def WorkItemQueryResult: Any = js.native
+  inline def WorkItemQueryResult_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemQueryResult")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemRecentActivityType")
   @js.native
@@ -208,11 +208,11 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemTypeTemplateUpdateModel")
   @js.native
-  def WorkItemTypeTemplateUpdateModel: js.Any = js.native
-  inline def WorkItemTypeTemplateUpdateModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemTypeTemplateUpdateModel")(x.asInstanceOf[js.Any])
+  def WorkItemTypeTemplateUpdateModel: Any = js.native
+  inline def WorkItemTypeTemplateUpdateModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemTypeTemplateUpdateModel")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/WorkItemTrackingInterfaces", "TypeInfo.WorkItemUpdate")
   @js.native
-  def WorkItemUpdate: js.Any = js.native
-  inline def WorkItemUpdate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemUpdate")(x.asInstanceOf[js.Any])
+  def WorkItemUpdate: Any = js.native
+  inline def WorkItemUpdate_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkItemUpdate")(x.asInstanceOf[js.Any])
 }

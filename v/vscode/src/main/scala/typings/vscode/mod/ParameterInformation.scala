@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "ParameterInformation")
 @js.native
-class ParameterInformation protected () extends StObject {
+open class ParameterInformation protected () extends StObject {
   /**
     * Creates a new parameter information object.
     *
@@ -30,8 +30,8 @@ class ParameterInformation protected () extends StObject {
     * The label of this signature.
     *
     * Either a string or inclusive start and exclusive end offsets within its containing
-    * [signature label](#SignatureInformation.label). *Note*: A label of type string must be
-    * a substring of its containing signature information's [label](#SignatureInformation.label).
+    * {@link SignatureInformation.label signature label}. *Note*: A label of type string must be
+    * a substring of its containing signature information's {@link SignatureInformation.label label}.
     */
   var label: String | (js.Tuple2[Double, Double]) = js.native
 }

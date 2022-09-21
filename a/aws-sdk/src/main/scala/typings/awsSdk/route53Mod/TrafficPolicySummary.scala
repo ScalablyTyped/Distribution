@@ -22,7 +22,7 @@ trait TrafficPolicySummary extends StObject {
   var Name: TrafficPolicyName
   
   /**
-    * The number of traffic policies that are associated with the current AWS account.
+    * The number of traffic policies that are associated with the current Amazon Web Services account.
     */
   var TrafficPolicyCount: TrafficPolicyVersion
   

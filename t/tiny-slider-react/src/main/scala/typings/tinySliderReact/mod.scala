@@ -2,6 +2,7 @@ package typings.tinySliderReact
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.std.Event
 import typings.std.HTMLCollection
 import typings.std.HTMLElement
@@ -23,8 +24,8 @@ object mod {
   
   @JSImport("tiny-slider-react", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TinySliderProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TinySliderProps, js.Object, Any]
   
   trait CommonOptions extends StObject {
     
@@ -179,7 +180,7 @@ object mod {
       
       inline def setAutoplayTextUndefined: Self = StObject.set(x, "autoplayText", js.undefined)
       
-      inline def setAutoplayTextVarargs(value: String*): Self = StObject.set(x, "autoplayText", js.Array(value :_*))
+      inline def setAutoplayTextVarargs(value: String*): Self = StObject.set(x, "autoplayText", js.Array(value*))
       
       inline def setAutoplayTimeout(value: Double): Self = StObject.set(x, "autoplayTimeout", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,7 @@ object mod {
       
       inline def setControlsTextUndefined: Self = StObject.set(x, "controlsText", js.undefined)
       
-      inline def setControlsTextVarargs(value: String*): Self = StObject.set(x, "controlsText", js.Array(value :_*))
+      inline def setControlsTextVarargs(value: String*): Self = StObject.set(x, "controlsText", js.Array(value*))
       
       inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
@@ -245,7 +246,7 @@ object mod {
   
   type ResponsiveOptions = NumberDictionary[CommonOptions]
   
-  type TinySlider = Component[TinySliderProps, js.Object, js.Any]
+  type TinySlider = Component[TinySliderProps, js.Object, Any]
   
   trait TinySliderInfo extends StObject {
     
@@ -365,7 +366,10 @@ object mod {
     }
   }
   
+  /* Inlined react.react.PropsWithChildren<{  settings :tiny-slider-react.tiny-slider-react.TinySliderSettings | undefined,   onClick :(slideClicked : number, info : string, event : std.Event): void | undefined,   startIndex :number | undefined,   onIndexChanged :(info : tiny-slider-react.tiny-slider-react.TinySliderInfo): void | undefined,   onTransitionStart :(info : tiny-slider-react.tiny-slider-react.TinySliderInfo): void | undefined,   onTransitionEnd :(info : tiny-slider-react.tiny-slider-react.TinySliderInfo): void | undefined,   onTouchStart :(info : tiny-slider-react.tiny-slider-react.TinySliderInfo): void | undefined,   onTouchMove :(info : tiny-slider-react.tiny-slider-react.TinySliderInfo): void | undefined,   onTouchEnd :(info : tiny-slider-react.tiny-slider-react.TinySliderInfo): void | undefined}> */
   trait TinySliderProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function3[/* slideClicked */ Double, /* info */ String, /* event */ Event, Unit]
@@ -395,6 +399,10 @@ object mod {
     }
     
     extension [Self <: TinySliderProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setOnClick(value: (/* slideClicked */ Double, /* info */ String, /* event */ Event) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
       

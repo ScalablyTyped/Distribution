@@ -240,7 +240,7 @@ object Imaging {
     inline def createAsync(
       encoderId: String,
       stream: IRandomAccessStream,
-      encodingOptions: IIterable[IKeyValuePair[js.Any, js.Any]]
+      encodingOptions: IIterable[IKeyValuePair[Any, Any]]
     ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(encoderId.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], encodingOptions.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder]]
     
     /**
@@ -391,7 +391,7 @@ object Imaging {
       * @return Object that manages the setting of the bitmap properties asynchronously.
       */
     /* CompleteClass */
-    override def setPropertiesAsync(propertiesToSet: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncAction = js.native
+    override def setPropertiesAsync(propertiesToSet: IIterable[IKeyValuePair[Any, Any]]): IPromiseWithIAsyncAction = js.native
   }
   
   /** Provides read access to image properties and metadata. A particular instance of BitmapPropertiesView may represent the entire contents of the frame metadata, or any nested metadata block within the frame. */
@@ -414,7 +414,7 @@ object Imaging {
   @JSGlobal("Windows.Graphics.Imaging.BitmapPropertySet")
   @js.native
   /** Creates and initializes a new instance of the bitmap property set. */
-  class BitmapPropertySet ()
+  open class BitmapPropertySet ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.BitmapPropertySet
   
@@ -439,7 +439,7 @@ object Imaging {
   @JSGlobal("Windows.Graphics.Imaging.BitmapTransform")
   @js.native
   /** Creates a new BitmapTransform object. */
-  class BitmapTransform ()
+  open class BitmapTransform ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.BitmapTransform {
     
@@ -471,7 +471,7 @@ object Imaging {
   /** A value along with an enumeration specifying its data type. */
   @JSGlobal("Windows.Graphics.Imaging.BitmapTypedValue")
   @js.native
-  class BitmapTypedValue protected ()
+  open class BitmapTypedValue protected ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.BitmapTypedValue {
     /**
@@ -479,7 +479,7 @@ object Imaging {
       * @param value The value to store.
       * @param type The type of the value parameter.
       */
-    def this(value: js.Any, `type`: PropertyType) = this()
+    def this(value: Any, `type`: PropertyType) = this()
     
     /** Gets the PropertyType of the stored value. */
     /* CompleteClass */
@@ -487,7 +487,7 @@ object Imaging {
     
     /** Gets the stored value. */
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /** Specifies the color management behavior when obtaining pixel data. */
@@ -661,7 +661,7 @@ object Imaging {
   /** Represents an uncompressed bitmap. */
   @JSGlobal("Windows.Graphics.Imaging.SoftwareBitmap")
   @js.native
-  class SoftwareBitmap protected ()
+  open class SoftwareBitmap protected ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap {
     /**

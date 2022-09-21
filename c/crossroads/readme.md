@@ -9,13 +9,13 @@ Flexible router which can be used in multiple environments
 | ------------------ | :-------------: |
 | Full name          | crossroads |
 | Keywords           | routes, event, observer, routing, router |
-| # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 417115 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 32669.666666666668 |
+| # stars            | 1438.0 |
 
 ## Links
-- [Homepage](http://millermedeiros.github.com/crossroads.js/)
+- [Homepage](https://github.com/millermedeiros/crossroads.js#readme)
 - [Bugs](https://github.com/millermedeiros/crossroads.js/issues)
 - [Repository](https://github.com/millermedeiros/crossroads.js)
 - [Npm](https://www.npmjs.com/package/crossroads)

@@ -24,12 +24,12 @@ trait DataSet extends StObject {
   /**
     * The amount of SPICE capacity used by this dataset. This is 0 if the dataset isn't imported into SPICE.
     */
-  var ConsumedSpiceCapacityInBytes: js.UndefOr[Long_] = js.undefined
+  var ConsumedSpiceCapacityInBytes: js.UndefOr[Long] = js.undefined
   
   /**
     * The time that this dataset was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the dataset.
@@ -37,14 +37,24 @@ trait DataSet extends StObject {
   var DataSetId: js.UndefOr[ResourceId] = js.undefined
   
   /**
-    * Indicates whether you want to import the data into SPICE.
+    * The usage configuration to apply to child datasets that reference this dataset as a source.
+    */
+  var DataSetUsageConfiguration: js.UndefOr[typings.awsSdk.quicksightMod.DataSetUsageConfiguration] = js.undefined
+  
+  /**
+    * The folder that contains fields and nested subfolders for your dataset.
+    */
+  var FieldFolders: js.UndefOr[FieldFolderMap] = js.undefined
+  
+  /**
+    * A value that indicates whether you want to import the data into SPICE.
     */
   var ImportMode: js.UndefOr[DataSetImportMode] = js.undefined
   
   /**
     * The last time that this dataset was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Configures the combination and transformation of the data from the physical tables.
@@ -70,6 +80,11 @@ trait DataSet extends StObject {
     * The row-level security configuration for the dataset.
     */
   var RowLevelPermissionDataSet: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionDataSet] = js.undefined
+  
+  /**
+    * The element you can use to define tags for row-level security.
+    */
+  var RowLevelPermissionTagConfiguration: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionTagConfiguration] = js.undefined
 }
 object DataSet {
   
@@ -88,19 +103,19 @@ object DataSet {
     
     inline def setColumnGroupsUndefined: Self = StObject.set(x, "ColumnGroups", js.undefined)
     
-    inline def setColumnGroupsVarargs(value: ColumnGroup*): Self = StObject.set(x, "ColumnGroups", js.Array(value :_*))
+    inline def setColumnGroupsVarargs(value: ColumnGroup*): Self = StObject.set(x, "ColumnGroups", js.Array(value*))
     
     inline def setColumnLevelPermissionRules(value: ColumnLevelPermissionRuleList): Self = StObject.set(x, "ColumnLevelPermissionRules", value.asInstanceOf[js.Any])
     
     inline def setColumnLevelPermissionRulesUndefined: Self = StObject.set(x, "ColumnLevelPermissionRules", js.undefined)
     
-    inline def setColumnLevelPermissionRulesVarargs(value: ColumnLevelPermissionRule*): Self = StObject.set(x, "ColumnLevelPermissionRules", js.Array(value :_*))
+    inline def setColumnLevelPermissionRulesVarargs(value: ColumnLevelPermissionRule*): Self = StObject.set(x, "ColumnLevelPermissionRules", js.Array(value*))
     
-    inline def setConsumedSpiceCapacityInBytes(value: Long_): Self = StObject.set(x, "ConsumedSpiceCapacityInBytes", value.asInstanceOf[js.Any])
+    inline def setConsumedSpiceCapacityInBytes(value: Long): Self = StObject.set(x, "ConsumedSpiceCapacityInBytes", value.asInstanceOf[js.Any])
     
     inline def setConsumedSpiceCapacityInBytesUndefined: Self = StObject.set(x, "ConsumedSpiceCapacityInBytes", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -108,11 +123,19 @@ object DataSet {
     
     inline def setDataSetIdUndefined: Self = StObject.set(x, "DataSetId", js.undefined)
     
+    inline def setDataSetUsageConfiguration(value: DataSetUsageConfiguration): Self = StObject.set(x, "DataSetUsageConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setDataSetUsageConfigurationUndefined: Self = StObject.set(x, "DataSetUsageConfiguration", js.undefined)
+    
+    inline def setFieldFolders(value: FieldFolderMap): Self = StObject.set(x, "FieldFolders", value.asInstanceOf[js.Any])
+    
+    inline def setFieldFoldersUndefined: Self = StObject.set(x, "FieldFolders", js.undefined)
+    
     inline def setImportMode(value: DataSetImportMode): Self = StObject.set(x, "ImportMode", value.asInstanceOf[js.Any])
     
     inline def setImportModeUndefined: Self = StObject.set(x, "ImportMode", js.undefined)
     
-    inline def setLastUpdatedTime(value: Timestamp_): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
@@ -128,7 +151,7 @@ object DataSet {
     
     inline def setOutputColumnsUndefined: Self = StObject.set(x, "OutputColumns", js.undefined)
     
-    inline def setOutputColumnsVarargs(value: OutputColumn*): Self = StObject.set(x, "OutputColumns", js.Array(value :_*))
+    inline def setOutputColumnsVarargs(value: OutputColumn*): Self = StObject.set(x, "OutputColumns", js.Array(value*))
     
     inline def setPhysicalTableMap(value: PhysicalTableMap): Self = StObject.set(x, "PhysicalTableMap", value.asInstanceOf[js.Any])
     
@@ -137,5 +160,9 @@ object DataSet {
     inline def setRowLevelPermissionDataSet(value: RowLevelPermissionDataSet): Self = StObject.set(x, "RowLevelPermissionDataSet", value.asInstanceOf[js.Any])
     
     inline def setRowLevelPermissionDataSetUndefined: Self = StObject.set(x, "RowLevelPermissionDataSet", js.undefined)
+    
+    inline def setRowLevelPermissionTagConfiguration(value: RowLevelPermissionTagConfiguration): Self = StObject.set(x, "RowLevelPermissionTagConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setRowLevelPermissionTagConfigurationUndefined: Self = StObject.set(x, "RowLevelPermissionTagConfiguration", js.undefined)
   }
 }

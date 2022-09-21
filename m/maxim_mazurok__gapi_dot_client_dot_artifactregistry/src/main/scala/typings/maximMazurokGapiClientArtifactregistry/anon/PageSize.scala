@@ -22,19 +22,25 @@ trait PageSize extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /**
+    * An expression for filtering the results of the request. Filter rules are case insensitive. The fields eligible for filtering are: * `version` An example of using a filter: *
+    * `version="projects/p1/locations/us-central1/repositories/repo1/packages/pkg1/versions/1.0"` --> Tags that are applied to the version `1.0` in package `pkg1`.
+    */
+  var filter: js.UndefOr[String] = js.undefined
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The maximum number of versions to return. Maximum page size is 10,000. */
+  /** The maximum number of tags to return. Maximum page size is 10,000. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /** The next_page_token value returned from a previous list request, if any. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** The name of the parent resource whose versions will be listed. */
+  /** The name of the parent resource whose tags will be listed. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -48,9 +54,6 @@ trait PageSize extends StObject {
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /** The view that should be returned in the response. */
-  var view: js.UndefOr[String] = js.undefined
 }
 object PageSize {
   
@@ -80,6 +83,10 @@ object PageSize {
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -114,9 +121,5 @@ object PageSize {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
-    
-    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

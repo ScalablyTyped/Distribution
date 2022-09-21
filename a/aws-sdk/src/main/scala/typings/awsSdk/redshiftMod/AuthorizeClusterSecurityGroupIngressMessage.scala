@@ -22,7 +22,7 @@ trait AuthorizeClusterSecurityGroupIngressMessage extends StObject {
   var EC2SecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account number of the owner of the security group specified by the EC2SecurityGroupName parameter. The AWS Access Key ID is not an acceptable value.  Example: 111122223333 
+    * The Amazon Web Services account number of the owner of the security group specified by the EC2SecurityGroupName parameter. The Amazon Web Services Access Key ID is not an acceptable value.  Example: 111122223333 
     */
   var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.undefined
 }

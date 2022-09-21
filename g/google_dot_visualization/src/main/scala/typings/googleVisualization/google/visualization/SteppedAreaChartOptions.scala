@@ -48,7 +48,7 @@ trait SteppedAreaChartOptions extends StObject {
   
   var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
   
-  var series: js.UndefOr[js.Any] = js.undefined
+  var series: js.UndefOr[Any] = js.undefined
   
   var theme: js.UndefOr[String] = js.undefined
   
@@ -60,7 +60,7 @@ trait SteppedAreaChartOptions extends StObject {
   
   var tooltip: js.UndefOr[ChartTooltip] = js.undefined
   
-  var vAxes: js.UndefOr[js.Any] = js.undefined
+  var vAxes: js.UndefOr[Any] = js.undefined
   
   var vAxis: js.UndefOr[ChartAxis] = js.undefined
   
@@ -103,7 +103,7 @@ object SteppedAreaChartOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setConnectSteps(value: Boolean): Self = StObject.set(x, "connectSteps", value.asInstanceOf[js.Any])
     
@@ -153,7 +153,7 @@ object SteppedAreaChartOptions {
     
     inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     
-    inline def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
@@ -177,7 +177,7 @@ object SteppedAreaChartOptions {
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    inline def setVAxes(value: js.Any): Self = StObject.set(x, "vAxes", value.asInstanceOf[js.Any])
+    inline def setVAxes(value: Any): Self = StObject.set(x, "vAxes", value.asInstanceOf[js.Any])
     
     inline def setVAxesUndefined: Self = StObject.set(x, "vAxes", js.undefined)
     

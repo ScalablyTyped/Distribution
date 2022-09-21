@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("massive", "Sequence")
 @js.native
-class Sequence protected () extends StObject {
+open class Sequence protected () extends StObject {
   /** A database sequence. */
   def this(db: Database, name: String, schema: String) = this()
   

@@ -51,7 +51,7 @@ object MediaTrackConstraintSet {
     
     inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    inline def setDeviceIdVarargs(value: String*): Self = StObject.set(x, "deviceId", js.Array(value :_*))
+    inline def setDeviceIdVarargs(value: String*): Self = StObject.set(x, "deviceId", js.Array(value*))
     
     inline def setEchoCancellation(value: ConstrainBoolean): Self = StObject.set(x, "echoCancellation", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object MediaTrackConstraintSet {
     
     inline def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
     
-    inline def setFacingModeVarargs(value: String*): Self = StObject.set(x, "facingMode", js.Array(value :_*))
+    inline def setFacingModeVarargs(value: String*): Self = StObject.set(x, "facingMode", js.Array(value*))
     
     inline def setFrameRate(value: ConstrainDouble): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
@@ -71,7 +71,7 @@ object MediaTrackConstraintSet {
     
     inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    inline def setGroupIdVarargs(value: String*): Self = StObject.set(x, "groupId", js.Array(value :_*))
+    inline def setGroupIdVarargs(value: String*): Self = StObject.set(x, "groupId", js.Array(value*))
     
     inline def setHeight(value: ConstrainLong): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

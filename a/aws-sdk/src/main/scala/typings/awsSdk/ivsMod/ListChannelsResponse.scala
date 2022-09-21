@@ -27,7 +27,7 @@ object ListChannelsResponse {
     
     inline def setChannels(value: ChannelList): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    inline def setChannelsVarargs(value: ChannelSummary*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: ChannelSummary*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

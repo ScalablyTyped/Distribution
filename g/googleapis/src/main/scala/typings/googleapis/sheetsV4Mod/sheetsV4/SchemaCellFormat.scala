@@ -4,15 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The format of a cell.
-  */
 trait SchemaCellFormat extends StObject {
   
   /**
-    * The background color of the cell.
+    * The background color of the cell. Deprecated: Use background_color_style.
     */
   var backgroundColor: js.UndefOr[SchemaColor] = js.undefined
+  
+  /**
+    * The background color of the cell. If background_color is also set, this field takes precedence.
+    */
+  var backgroundColorStyle: js.UndefOr[SchemaColorStyle] = js.undefined
   
   /**
     * The borders of the cell.
@@ -22,12 +24,12 @@ trait SchemaCellFormat extends StObject {
   /**
     * The horizontal alignment of the value in the cell.
     */
-  var horizontalAlignment: js.UndefOr[String] = js.undefined
+  var horizontalAlignment: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * How a hyperlink, if it exists, should be displayed in the cell.
+    * If one exists, how a hyperlink should be displayed in the cell.
     */
-  var hyperlinkDisplayType: js.UndefOr[String] = js.undefined
+  var hyperlinkDisplayType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A format describing how number values should be represented to the user.
@@ -42,27 +44,27 @@ trait SchemaCellFormat extends StObject {
   /**
     * The direction of the text in the cell.
     */
-  var textDirection: js.UndefOr[String] = js.undefined
+  var textDirection: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The format of the text in the cell (unless overridden by a format run).
+    * The format of the text in the cell (unless overridden by a format run). Setting a cell-level link here clears the cell's existing links. Setting the link field in a TextFormatRun takes precedence over the cell-level link.
     */
   var textFormat: js.UndefOr[SchemaTextFormat] = js.undefined
   
   /**
-    * The rotation applied to text in a cell
+    * The rotation applied to text in the cell.
     */
   var textRotation: js.UndefOr[SchemaTextRotation] = js.undefined
   
   /**
     * The vertical alignment of the value in the cell.
     */
-  var verticalAlignment: js.UndefOr[String] = js.undefined
+  var verticalAlignment: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The wrap strategy for the value in the cell.
     */
-  var wrapStrategy: js.UndefOr[String] = js.undefined
+  var wrapStrategy: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCellFormat {
   
@@ -75,6 +77,10 @@ object SchemaCellFormat {
     
     inline def setBackgroundColor(value: SchemaColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
+    inline def setBackgroundColorStyle(value: SchemaColorStyle): Self = StObject.set(x, "backgroundColorStyle", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorStyleUndefined: Self = StObject.set(x, "backgroundColorStyle", js.undefined)
+    
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     inline def setBorders(value: SchemaBorders): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
@@ -83,9 +89,13 @@ object SchemaCellFormat {
     
     inline def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
+    inline def setHorizontalAlignmentNull: Self = StObject.set(x, "horizontalAlignment", null)
+    
     inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     inline def setHyperlinkDisplayType(value: String): Self = StObject.set(x, "hyperlinkDisplayType", value.asInstanceOf[js.Any])
+    
+    inline def setHyperlinkDisplayTypeNull: Self = StObject.set(x, "hyperlinkDisplayType", null)
     
     inline def setHyperlinkDisplayTypeUndefined: Self = StObject.set(x, "hyperlinkDisplayType", js.undefined)
     
@@ -99,6 +109,8 @@ object SchemaCellFormat {
     
     inline def setTextDirection(value: String): Self = StObject.set(x, "textDirection", value.asInstanceOf[js.Any])
     
+    inline def setTextDirectionNull: Self = StObject.set(x, "textDirection", null)
+    
     inline def setTextDirectionUndefined: Self = StObject.set(x, "textDirection", js.undefined)
     
     inline def setTextFormat(value: SchemaTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
@@ -111,9 +123,13 @@ object SchemaCellFormat {
     
     inline def setVerticalAlignment(value: String): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
+    inline def setVerticalAlignmentNull: Self = StObject.set(x, "verticalAlignment", null)
+    
     inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     
     inline def setWrapStrategy(value: String): Self = StObject.set(x, "wrapStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setWrapStrategyNull: Self = StObject.set(x, "wrapStrategy", null)
     
     inline def setWrapStrategyUndefined: Self = StObject.set(x, "wrapStrategy", js.undefined)
   }

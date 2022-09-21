@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "Task")
 @js.native
-class Task protected () extends StObject {
+open class Task protected () extends StObject {
   /**
     * Creates a new task.
     *
     * @deprecated Use the new constructors that allow specifying a scope for the task.
     *
-    * @param definition The task definition as defined in the taskDefinitions extension point.
+    * @param taskDefinition The task definition as defined in the taskDefinitions extension point.
     * @param name The task's name. Is presented in the user interface.
     * @param source The task's source (e.g. 'gulp', 'npm', ...). Is presented in the user interface.
     * @param execution The process or shell execution.
@@ -30,7 +30,7 @@ class Task protected () extends StObject {
   /**
     * Creates a new task.
     *
-    * @param definition The task definition as defined in the taskDefinitions extension point.
+    * @param taskDefinition The task definition as defined in the taskDefinitions extension point.
     * @param scope Specifies the task's scope. It is either a global or a workspace task or a task for a specific workspace folder. Global tasks are currently not supported.
     * @param name The task's name. Is presented in the user interface.
     * @param source The task's source (e.g. 'gulp', 'npm', ...). Is presented in the user interface.
@@ -345,7 +345,7 @@ class Task protected () extends StObject {
   
   /**
     * A human-readable string which is rendered less prominently on a separate line in places
-    * where the task's name is displayed. Supports rendering of [theme icons](#ThemeIcon)
+    * where the task's name is displayed. Supports rendering of {@link ThemeIcon theme icons}
     * via the `$(<name>)`-syntax.
     */
   var detail: js.UndefOr[String] = js.native
@@ -396,7 +396,7 @@ class Task protected () extends StObject {
   
   /**
     * A human-readable string describing the source of this shell task, e.g. 'gulp'
-    * or 'npm'. Supports rendering of [theme icons](#ThemeIcon) via the `$(<name>)`-syntax.
+    * or 'npm'. Supports rendering of {@link ThemeIcon theme icons} via the `$(<name>)`-syntax.
     */
   var source: String = js.native
 }

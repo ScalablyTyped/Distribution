@@ -11,10 +11,10 @@ trait Extension extends StObject {
   var coerce: js.UndefOr[
     js.ThisFunction3[
       /* this */ ExtensionBoundSchema, 
-      /* value */ js.Any, 
+      /* value */ Any, 
       /* state */ State, 
       /* options */ ValidationOptions, 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -29,14 +29,14 @@ trait Extension extends StObject {
   var pre: js.UndefOr[
     js.ThisFunction3[
       /* this */ ExtensionBoundSchema, 
-      /* value */ js.Any, 
+      /* value */ Any, 
       /* state */ State, 
       /* options */ ValidationOptions, 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
-  var rules: js.UndefOr[js.Array[Rules[js.Any]]] = js.undefined
+  var rules: js.UndefOr[js.Array[Rules[Any]]] = js.undefined
 }
 object Extension {
   
@@ -54,10 +54,10 @@ object Extension {
     inline def setCoerce(
       value: js.ThisFunction3[
           /* this */ ExtensionBoundSchema, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* state */ State, 
           /* options */ ValidationOptions, 
-          js.Any
+          Any
         ]
     ): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
     
@@ -78,19 +78,19 @@ object Extension {
     inline def setPre(
       value: js.ThisFunction3[
           /* this */ ExtensionBoundSchema, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* state */ State, 
           /* options */ ValidationOptions, 
-          js.Any
+          Any
         ]
     ): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
     inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
-    inline def setRules(value: js.Array[Rules[js.Any]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[Rules[Any]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: Rules[js.Any]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rules[Any]*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

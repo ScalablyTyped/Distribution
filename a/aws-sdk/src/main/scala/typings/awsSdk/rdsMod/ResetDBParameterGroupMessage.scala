@@ -17,7 +17,7 @@ trait ResetDBParameterGroupMessage extends StObject {
   var Parameters: js.UndefOr[ParametersList] = js.undefined
   
   /**
-    *  A value that indicates whether to reset all parameters in the DB parameter group to default values. By default, all parameters in the DB parameter group are reset to default values. 
+    * A value that indicates whether to reset all parameters in the DB parameter group to default values. By default, all parameters in the DB parameter group are reset to default values.
     */
   var ResetAllParameters: js.UndefOr[Boolean] = js.undefined
 }
@@ -36,7 +36,7 @@ object ResetDBParameterGroupMessage {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value*))
     
     inline def setResetAllParameters(value: Boolean): Self = StObject.set(x, "ResetAllParameters", value.asInstanceOf[js.Any])
     

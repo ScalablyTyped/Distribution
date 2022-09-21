@@ -12,6 +12,11 @@ trait ImagePipeline extends StObject {
   var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
+    * The Amazon Resource Name (ARN) of the container recipe that is used for this pipeline.
+    */
+  var containerRecipeArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
     * The date on which this image pipeline was created.
     */
   var dateCreated: js.UndefOr[DateTime] = js.undefined
@@ -42,7 +47,7 @@ trait ImagePipeline extends StObject {
   var distributionConfigurationArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default. 
+    *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
     */
   var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
@@ -98,6 +103,10 @@ object ImagePipeline {
     inline def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    
+    inline def setContainerRecipeArn(value: Arn): Self = StObject.set(x, "containerRecipeArn", value.asInstanceOf[js.Any])
+    
+    inline def setContainerRecipeArnUndefined: Self = StObject.set(x, "containerRecipeArn", js.undefined)
     
     inline def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     

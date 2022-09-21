@@ -11,9 +11,9 @@ Simple JSON value templating.
 | Full name          | json-templates |
 | Keywords           | json, template |
 | # releases         | 6 |
-| # dependents       | 7 |
-| # downloads        | 132439 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 53531.333333333336 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/datavis-tech/json-templates#readme)

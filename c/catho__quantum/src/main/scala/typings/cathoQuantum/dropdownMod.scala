@@ -1,7 +1,8 @@
 package typings.cathoQuantum
 
 import typings.cathoQuantum.anon.BaseFontSize
-import typings.cathoQuantum.anon.Label
+import typings.cathoQuantum.anon.Value
+import typings.cathoQuantum.cathoQuantumStrings.dark
 import typings.downshift.mod.ControllerStateAndHelpers
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
@@ -12,10 +13,10 @@ object dropdownMod {
   
   @JSImport("@catho/quantum/Dropdown", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DropdownProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DropdownProps, js.Object, Any]
   
-  type Dropdown = Component[DropdownProps, js.Object, js.Any]
+  type Dropdown = Component[DropdownProps, js.Object, Any]
   
   trait DropdownProps extends StObject {
     
@@ -35,6 +36,8 @@ object dropdownMod {
     
     var label: js.UndefOr[String] = js.undefined
     
+    var name: js.UndefOr[String] = js.undefined
+    
     /** More about stateAndHelpers parameter here https://github.com/downshift-js/downshift#children-function */
     var onChange: js.UndefOr[
         js.Function2[
@@ -49,6 +52,8 @@ object dropdownMod {
     var required: js.UndefOr[Boolean] = js.undefined
     
     var selectedItem: js.UndefOr[ItemPropType] = js.undefined
+    
+    var skin: js.UndefOr[typings.cathoQuantum.cathoQuantumStrings.default | dark] = js.undefined
     
     var theme: js.UndefOr[BaseFontSize] = js.undefined
   }
@@ -89,11 +94,15 @@ object dropdownMod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: ItemPropType*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ItemPropType*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setOnChange(
         value: (/* selectedItem */ ItemPropType | Null, /* stateAndHelpers */ ControllerStateAndHelpers[ItemPropType]) => Unit
@@ -113,11 +122,15 @@ object dropdownMod {
       
       inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
       
+      inline def setSkin(value: typings.cathoQuantum.cathoQuantumStrings.default | dark): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      
       inline def setTheme(value: BaseFontSize): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
-  type ItemPropType = String | Label
+  type ItemPropType = String | Value
 }

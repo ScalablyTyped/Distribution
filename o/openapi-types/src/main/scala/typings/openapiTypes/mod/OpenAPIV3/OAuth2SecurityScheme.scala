@@ -10,6 +10,8 @@ trait OAuth2SecurityScheme
   extends StObject
      with SecuritySchemeObject {
   
+  var description: js.UndefOr[String] = js.undefined
+  
   var flows: AuthorizationCode
   
   var `type`: oauth2
@@ -23,6 +25,10 @@ object OAuth2SecurityScheme {
   }
   
   extension [Self <: OAuth2SecurityScheme](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setFlows(value: AuthorizationCode): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     

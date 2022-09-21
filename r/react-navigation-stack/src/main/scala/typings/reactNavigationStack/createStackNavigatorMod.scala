@@ -25,14 +25,14 @@ object createStackNavigatorMod {
     routeConfigMap: NavigationRouteConfigMap[
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams], 
-      js.Any
+      Any
     ]
-  ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigMap.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigMap.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
   inline def default(
     routeConfigMap: NavigationRouteConfigMap[
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams], 
-      js.Any
+      Any
     ],
     stackConfig: CreateNavigatorConfig[
       StackNavigationConfig, 
@@ -40,5 +40,5 @@ object createStackNavigatorMod {
       StackNavigationOptions, 
       StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams]
     ]
-  ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigMap.asInstanceOf[js.Any], stackConfig.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigMap.asInstanceOf[js.Any], stackConfig.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
 }

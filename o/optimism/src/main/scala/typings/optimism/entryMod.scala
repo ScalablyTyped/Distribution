@@ -11,14 +11,14 @@ object entryMod {
   
   @JSImport("optimism/lib/entry", "Entry")
   @js.native
-  class Entry[TArgs /* <: js.Array[js.Any] */, TValue] protected () extends StObject {
+  open class Entry[TArgs /* <: js.Array[Any] */, TValue] protected () extends StObject {
     def this(fn: js.Function1[/* args */ TArgs, TValue]) = this()
     
-    val childValues: Map[AnyEntry, Value[js.Any]] = js.native
+    val childValues: Map[AnyEntry, Value[Any]] = js.native
     
-    def dependOn(dep: Dep_[js.Any]): Unit = js.native
+    def dependOn(dep: Dep_[Any]): Unit = js.native
     
-    /* private */ var deps: js.Any = js.native
+    /* private */ var deps: Any = js.native
     
     var dirty: Boolean = js.native
     
@@ -29,6 +29,8 @@ object entryMod {
     def fn(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
     ): TValue = js.native
+    
+    def forget(): Unit = js.native
     
     def forgetDeps(): Unit = js.native
     
@@ -42,9 +44,9 @@ object entryMod {
     
     def setDirty(): Unit = js.native
     
-    var subscribe: js.UndefOr[js.Function1[/* args */ TArgs, Unit | js.Function0[js.Any]]] = js.native
+    var subscribe: js.UndefOr[js.Function1[/* args */ TArgs, Unit | js.Function0[Any]]] = js.native
     
-    var unsubscribe: js.UndefOr[Unit | js.Function0[js.Any]] = js.native
+    var unsubscribe: js.UndefOr[Unit | js.Function0[Any]] = js.native
     
     val value: Value[TValue] = js.native
   }
@@ -61,7 +63,7 @@ object entryMod {
     inline def count_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("count")(x.asInstanceOf[js.Any])
   }
   
-  type AnyEntry = Entry[js.Any, js.Any]
+  type AnyEntry = Entry[Any, Any]
   
-  type Value[T] = (js.Array[js.Any | T]) | (js.Tuple2[Unit, js.Any])
+  type Value[T] = (js.Array[Any | T]) | (js.Tuple2[Unit, Any])
 }

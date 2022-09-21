@@ -29,7 +29,7 @@ trait BannerInstruction extends StObject {
     */
   var sub: js.UndefOr[Sub] = js.undefined
   
-  var `then`: js.UndefOr[js.Any] = js.undefined
+  var `then`: js.UndefOr[Any] = js.undefined
 }
 object BannerInstruction {
   
@@ -48,13 +48,13 @@ object BannerInstruction {
     
     inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
-    inline def setSecondaryVarargs(value: Instruction*): Self = StObject.set(x, "secondary", js.Array(value :_*))
+    inline def setSecondaryVarargs(value: Instruction*): Self = StObject.set(x, "secondary", js.Array(value*))
     
     inline def setSub(value: Sub): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
     inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     
-    inline def setThen(value: js.Any): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
+    inline def setThen(value: Any): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     
     inline def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListIndicesResponse extends StObject {
   
   /**
-    * An array of summary information for one or more indexes.
+    * An array of summary information on the configuration of one or more indexes.
     */
   var IndexConfigurationSummaryItems: js.UndefOr[IndexConfigurationSummaryList] = js.undefined
   
@@ -29,7 +29,7 @@ object ListIndicesResponse {
     
     inline def setIndexConfigurationSummaryItemsUndefined: Self = StObject.set(x, "IndexConfigurationSummaryItems", js.undefined)
     
-    inline def setIndexConfigurationSummaryItemsVarargs(value: IndexConfigurationSummary*): Self = StObject.set(x, "IndexConfigurationSummaryItems", js.Array(value :_*))
+    inline def setIndexConfigurationSummaryItemsVarargs(value: IndexConfigurationSummary*): Self = StObject.set(x, "IndexConfigurationSummaryItems", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

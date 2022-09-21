@@ -8,7 +8,6 @@ import typings.momentMini.mod.unitOfTime.Base
 import typings.momentMini.mod.unitOfTime.Diff
 import typings.momentMini.mod.unitOfTime.DurationConstructor
 import typings.momentMini.mod.unitOfTime.MomentConstructor
-import typings.momentMini.mod.unitOfTime.StartOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,6 @@ object momentMiniStrings {
     extends StObject
        with All
        with MomentConstructor
-       with StartOf
        with typings.momentMini.mod.unitOfTime.date
   inline def D: D = "D".asInstanceOf[D]
   
@@ -95,7 +93,6 @@ object momentMiniStrings {
        with DurationConstructor
        with MomentConstructor
        with RelativeTimeKey
-       with StartOf
   inline def M: M = "M".asInstanceOf[M]
   
   @js.native
@@ -110,7 +107,6 @@ object momentMiniStrings {
        with All
        with Diff
        with DurationConstructor
-       with StartOf
        with typings.momentMini.mod.unitOfTime.quarter
   inline def Q: Q = "Q".asInstanceOf[Q]
   
@@ -118,7 +114,7 @@ object momentMiniStrings {
   sealed trait W
     extends StObject
        with All
-       with StartOf
+       with DurationConstructor
        with typings.momentMini.mod.unitOfTime.isoWeek
   inline def W: W = "W".asInstanceOf[W]
   
@@ -139,7 +135,6 @@ object momentMiniStrings {
        with DurationConstructor
        with MomentConstructor
        with RelativeTimeKey
-       with StartOf
   inline def d_ : d_ = "d".asInstanceOf[d_]
   
   @js.native
@@ -147,7 +142,6 @@ object momentMiniStrings {
     extends StObject
        with All
        with MomentConstructor
-       with StartOf
        with typings.momentMini.mod.unitOfTime.date
   inline def date: date = "date".asInstanceOf[date]
   
@@ -156,7 +150,6 @@ object momentMiniStrings {
     extends StObject
        with All
        with MomentConstructor
-       with StartOf
        with typings.momentMini.mod.unitOfTime.date
   inline def dates: dates = "dates".asInstanceOf[dates]
   
@@ -168,7 +161,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def day: day = "day".asInstanceOf[day]
   
   @js.native
@@ -191,7 +183,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def days: days = "days".asInstanceOf[days]
   
   @js.native
@@ -221,7 +212,6 @@ object momentMiniStrings {
        with DurationConstructor
        with MomentConstructor
        with RelativeTimeKey
-       with StartOf
   inline def h: h = "h".asInstanceOf[h]
   
   @js.native
@@ -238,7 +228,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
@@ -249,14 +238,13 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
   sealed trait isoWeek
     extends StObject
        with All
-       with StartOf
+       with DurationConstructor
        with typings.momentMini.mod.unitOfTime.isoWeek
   inline def isoWeek: isoWeek = "isoWeek".asInstanceOf[isoWeek]
   
@@ -288,7 +276,7 @@ object momentMiniStrings {
   sealed trait isoWeeks
     extends StObject
        with All
-       with StartOf
+       with DurationConstructor
        with typings.momentMini.mod.unitOfTime.isoWeek
   inline def isoWeeks: isoWeeks = "isoWeeks".asInstanceOf[isoWeeks]
   
@@ -349,7 +337,6 @@ object momentMiniStrings {
        with DurationConstructor
        with MomentConstructor
        with RelativeTimeKey
-       with StartOf
   inline def m_ : m_ = "m".asInstanceOf[m_]
   
   @js.native
@@ -360,7 +347,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   
   @js.native
@@ -371,7 +357,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
   
   @js.native
@@ -382,7 +367,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
@@ -393,7 +377,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
@@ -410,7 +393,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def month: month = "month".asInstanceOf[month]
   
   @js.native
@@ -421,7 +403,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def months: months = "months".asInstanceOf[months]
   
   @js.native
@@ -432,7 +413,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def ms: ms = "ms".asInstanceOf[ms]
   
   @js.native
@@ -453,7 +433,6 @@ object momentMiniStrings {
        with All
        with Diff
        with DurationConstructor
-       with StartOf
        with typings.momentMini.mod.unitOfTime.quarter
   inline def quarter: quarter = "quarter".asInstanceOf[quarter]
   
@@ -463,7 +442,6 @@ object momentMiniStrings {
        with All
        with Diff
        with DurationConstructor
-       with StartOf
        with typings.momentMini.mod.unitOfTime.quarter
   inline def quarters: quarters = "quarters".asInstanceOf[quarters]
   
@@ -476,7 +454,6 @@ object momentMiniStrings {
        with DurationConstructor
        with MomentConstructor
        with RelativeTimeKey
-       with StartOf
   inline def s: s = "s".asInstanceOf[s]
   
   @js.native
@@ -499,7 +476,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def second: second = "second".asInstanceOf[second]
   
   @js.native
@@ -510,7 +486,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def seconds: seconds = "seconds".asInstanceOf[seconds]
   
   @js.native
@@ -527,7 +502,7 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
+       with RelativeTimeKey
   inline def w_ : w_ = "w".asInstanceOf[w_]
   
   @js.native
@@ -538,7 +513,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def week: week = "week".asInstanceOf[week]
   
   @js.native
@@ -573,8 +547,13 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def weeks: weeks = "weeks".asInstanceOf[weeks]
+  
+  @js.native
+  sealed trait ww
+    extends StObject
+       with RelativeTimeKey
+  inline def ww: ww = "ww".asInstanceOf[ww]
   
   @js.native
   sealed trait y
@@ -585,7 +564,6 @@ object momentMiniStrings {
        with DurationConstructor
        with MomentConstructor
        with RelativeTimeKey
-       with StartOf
   inline def y: y = "y".asInstanceOf[y]
   
   @js.native
@@ -596,7 +574,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def year: year = "year".asInstanceOf[year]
   
   @js.native
@@ -607,7 +584,6 @@ object momentMiniStrings {
        with Diff
        with DurationConstructor
        with MomentConstructor
-       with StartOf
   inline def years: years = "years".asInstanceOf[years]
   
   @js.native

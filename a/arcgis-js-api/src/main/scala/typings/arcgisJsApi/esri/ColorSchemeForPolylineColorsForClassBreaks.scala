@@ -41,7 +41,7 @@ object ColorSchemeForPolylineColorsForClassBreaks {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
   }

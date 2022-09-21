@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ICanvasGradient")
 @js.native
-/* private */ class ICanvasGradient ()
+/* private */ open class ICanvasGradient ()
   extends StObject
      with typings.activexMshtml.MSHTML.ICanvasGradient {
   

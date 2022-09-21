@@ -123,7 +123,7 @@ object QueryDesign {
     EscapeProcessing: Boolean,
     Frame: XFrame,
     Model: XModel,
-    ViewData: js.Any,
+    ViewData: Any,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     attachFrame: XFrame => Unit,
@@ -131,12 +131,12 @@ object QueryDesign {
     dispose: () => Unit,
     getFrame: () => XFrame,
     getModel: () => XModel,
-    getViewData: () => js.Any,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    getViewData: () => Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
-    restoreViewData: js.Any => Unit,
+    restoreViewData: Any => Unit,
     suspend: Boolean => Boolean
   ): QueryDesign = {
     val __obj = js.Dynamic.literal(ActiveCommand = ActiveCommand.asInstanceOf[js.Any], EscapeProcessing = EscapeProcessing.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], ViewData = ViewData.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), attachFrame = js.Any.fromFunction1(attachFrame), attachModel = js.Any.fromFunction1(attachModel), dispose = js.Any.fromFunction0(dispose), getFrame = js.Any.fromFunction0(getFrame), getModel = js.Any.fromFunction0(getModel), getViewData = js.Any.fromFunction0(getViewData), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), restoreViewData = js.Any.fromFunction1(restoreViewData), suspend = js.Any.fromFunction1(suspend))

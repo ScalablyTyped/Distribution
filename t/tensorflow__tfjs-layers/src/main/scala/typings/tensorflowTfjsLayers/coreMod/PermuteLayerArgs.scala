@@ -28,6 +28,6 @@ object PermuteLayerArgs {
     
     inline def setDims(value: js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
     
-    inline def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value :_*))
+    inline def setDimsVarargs(value: Double*): Self = StObject.set(x, "dims", js.Array(value*))
   }
 }

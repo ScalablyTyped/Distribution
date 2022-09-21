@@ -22,6 +22,6 @@ object CreateAssociationBatchRequest {
     
     inline def setEntries(value: CreateAssociationBatchRequestEntries): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: CreateAssociationBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: CreateAssociationBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
   }
 }

@@ -24,7 +24,7 @@ trait DataSetOptions
     * from a server into JavaScript Date objects.
     * The available data types are listed in section Data Types.
     */
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[Any] = js.undefined
 }
 object DataSetOptions {
   
@@ -39,7 +39,7 @@ object DataSetOptions {
     
     inline def setFieldIdUndefined: Self = StObject.set(x, "fieldId", js.undefined)
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

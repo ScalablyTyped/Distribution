@@ -108,7 +108,7 @@ object ChangeListSearchCriteria {
     
     inline def setItemPaths(value: js.Array[String]): Self = StObject.set(x, "itemPaths", value.asInstanceOf[js.Any])
     
-    inline def setItemPathsVarargs(value: String*): Self = StObject.set(x, "itemPaths", js.Array(value :_*))
+    inline def setItemPathsVarargs(value: String*): Self = StObject.set(x, "itemPaths", js.Array(value*))
     
     inline def setItemVersion(value: String): Self = StObject.set(x, "itemVersion", value.asInstanceOf[js.Any])
     

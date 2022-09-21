@@ -1,9 +1,8 @@
 package typings.hapiHapi.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.hapiShot.anon.Req
-import typings.hapiShot.mod.Headers
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +25,14 @@ trait ServerInjectResponse
 object ServerInjectResponse {
   
   inline def apply(
-    headers: Headers,
+    headers: OutgoingHttpHeaders,
     payload: String,
     raw: Req,
     rawPayload: Buffer,
     request: Request,
     statusCode: Double,
     statusMessage: String,
-    trailers: StringDictionary[js.Any]
+    trailers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any
   ): ServerInjectResponse = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], rawPayload = rawPayload.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], trailers = trailers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInjectResponse]

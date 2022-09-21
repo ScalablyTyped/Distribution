@@ -1,13 +1,12 @@
 package typings.googleProtobuf.mod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "BinaryEncoder")
 @js.native
-class BinaryEncoder () extends StObject {
+open class BinaryEncoder () extends StObject {
   
   def end(): js.Array[Double] = js.native
   
@@ -15,7 +14,7 @@ class BinaryEncoder () extends StObject {
   
   def writeBool(value: Boolean): Unit = js.native
   
-  def writeBytes(bytes: Uint8Array): Unit = js.native
+  def writeBytes(bytes: js.typedarray.Uint8Array): Unit = js.native
   
   def writeDouble(value: Double): Unit = js.native
   

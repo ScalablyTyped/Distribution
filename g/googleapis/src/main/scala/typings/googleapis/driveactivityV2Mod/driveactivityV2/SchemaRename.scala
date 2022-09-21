@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An object was renamed.
-  */
 trait SchemaRename extends StObject {
   
   /**
     * The new title of the drive object.
     */
-  var newTitle: js.UndefOr[String] = js.undefined
+  var newTitle: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The previous title of the drive object.
     */
-  var oldTitle: js.UndefOr[String] = js.undefined
+  var oldTitle: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRename {
   
@@ -30,9 +27,13 @@ object SchemaRename {
     
     inline def setNewTitle(value: String): Self = StObject.set(x, "newTitle", value.asInstanceOf[js.Any])
     
+    inline def setNewTitleNull: Self = StObject.set(x, "newTitle", null)
+    
     inline def setNewTitleUndefined: Self = StObject.set(x, "newTitle", js.undefined)
     
     inline def setOldTitle(value: String): Self = StObject.set(x, "oldTitle", value.asInstanceOf[js.Any])
+    
+    inline def setOldTitleNull: Self = StObject.set(x, "oldTitle", null)
     
     inline def setOldTitleUndefined: Self = StObject.set(x, "oldTitle", js.undefined)
   }

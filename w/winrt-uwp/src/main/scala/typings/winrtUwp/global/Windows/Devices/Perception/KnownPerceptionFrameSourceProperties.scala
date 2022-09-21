@@ -19,8 +19,8 @@ object KnownPerceptionFrameSourceProperties {
   /* static member */
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionFrameSourceProperties.deviceId")
   @js.native
-  def deviceId: js.Any = js.native
-  inline def deviceId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceId")(x.asInstanceOf[js.Any])
+  def deviceId: Any = js.native
+  inline def deviceId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceId")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   /** Gets a string key used to look up a string property with the device, model, version string for the physical sensor device this frame source represents. */

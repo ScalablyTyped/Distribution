@@ -61,7 +61,7 @@ object ClassificationResult {
     
     inline def setSensitiveDataUndefined: Self = StObject.set(x, "sensitiveData", js.undefined)
     
-    inline def setSensitiveDataVarargs(value: SensitiveDataItem*): Self = StObject.set(x, "sensitiveData", js.Array(value :_*))
+    inline def setSensitiveDataVarargs(value: SensitiveDataItem*): Self = StObject.set(x, "sensitiveData", js.Array(value*))
     
     inline def setSizeClassified(value: long): Self = StObject.set(x, "sizeClassified", value.asInstanceOf[js.Any])
     

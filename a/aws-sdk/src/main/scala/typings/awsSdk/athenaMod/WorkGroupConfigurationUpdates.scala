@@ -17,6 +17,11 @@ trait WorkGroupConfigurationUpdates extends StObject {
   var EnforceWorkGroupConfiguration: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
+    * The engine version requested when a workgroup is updated. After the update, all queries on the workgroup run on the requested engine version. If no value was previously set, the default is Auto. Queries on the AmazonAthenaPreviewFunctionality workgroup run on the preview engine regardless of this setting.
+    */
+  var EngineVersion: js.UndefOr[typings.awsSdk.athenaMod.EngineVersion] = js.undefined
+  
+  /**
     * Indicates whether this workgroup enables publishing metrics to Amazon CloudWatch.
     */
   var PublishCloudWatchMetricsEnabled: js.UndefOr[BoxedBoolean] = js.undefined
@@ -52,6 +57,10 @@ object WorkGroupConfigurationUpdates {
     inline def setEnforceWorkGroupConfiguration(value: BoxedBoolean): Self = StObject.set(x, "EnforceWorkGroupConfiguration", value.asInstanceOf[js.Any])
     
     inline def setEnforceWorkGroupConfigurationUndefined: Self = StObject.set(x, "EnforceWorkGroupConfiguration", js.undefined)
+    
+    inline def setEngineVersion(value: EngineVersion): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
+    
+    inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     inline def setPublishCloudWatchMetricsEnabled(value: BoxedBoolean): Self = StObject.set(x, "PublishCloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
     

@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Automatically resizes one or more dimensions based on the contents of the
-  * cells in that dimension.
-  */
 trait SchemaAutoResizeDimensionsRequest extends StObject {
+  
+  /**
+    * The dimensions on a data source sheet to automatically resize.
+    */
+  var dataSourceSheetDimensions: js.UndefOr[SchemaDataSourceSheetDimensionRange] = js.undefined
   
   /**
     * The dimensions to automatically resize.
@@ -23,6 +24,10 @@ object SchemaAutoResizeDimensionsRequest {
   }
   
   extension [Self <: SchemaAutoResizeDimensionsRequest](x: Self) {
+    
+    inline def setDataSourceSheetDimensions(value: SchemaDataSourceSheetDimensionRange): Self = StObject.set(x, "dataSourceSheetDimensions", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceSheetDimensionsUndefined: Self = StObject.set(x, "dataSourceSheetDimensions", js.undefined)
     
     inline def setDimensions(value: SchemaDimensionRange): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait DescribeRetentionConfigurationsRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
   
   /**
-    * A list of names of retention configurations for which you want details. If you do not specify a name, AWS Config returns details for all the retention configurations for that account.  Currently, AWS Config supports only one retention configuration per region in your account. 
+    * A list of names of retention configurations for which you want details. If you do not specify a name, Config returns details for all the retention configurations for that account.  Currently, Config supports only one retention configuration per region in your account. 
     */
   var RetentionConfigurationNames: js.UndefOr[RetentionConfigurationNameList] = js.undefined
 }
@@ -33,6 +33,6 @@ object DescribeRetentionConfigurationsRequest {
     
     inline def setRetentionConfigurationNamesUndefined: Self = StObject.set(x, "RetentionConfigurationNames", js.undefined)
     
-    inline def setRetentionConfigurationNamesVarargs(value: RetentionConfigurationName*): Self = StObject.set(x, "RetentionConfigurationNames", js.Array(value :_*))
+    inline def setRetentionConfigurationNamesVarargs(value: RetentionConfigurationName*): Self = StObject.set(x, "RetentionConfigurationNames", js.Array(value*))
   }
 }

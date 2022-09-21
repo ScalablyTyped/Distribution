@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A tab stop within a paragraph.
-  */
 trait SchemaTabStop extends StObject {
   
   /**
     * The alignment of this tab stop. If unset, the value defaults to START.
     */
-  var alignment: js.UndefOr[String] = js.undefined
+  var alignment: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The offset between this tab stop and the start margin.
@@ -29,6 +26,8 @@ object SchemaTabStop {
   extension [Self <: SchemaTabStop](x: Self) {
     
     inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentNull: Self = StObject.set(x, "alignment", null)
     
     inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     

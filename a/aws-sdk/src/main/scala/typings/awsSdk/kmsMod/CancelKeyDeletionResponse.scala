@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelKeyDeletionResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (key ARN) of the CMK whose deletion is canceled.
+    * The Amazon Resource Name (key ARN) of the KMS key whose deletion is canceled.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
 }

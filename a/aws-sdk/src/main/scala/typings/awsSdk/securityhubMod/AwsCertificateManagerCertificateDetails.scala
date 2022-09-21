@@ -42,7 +42,7 @@ trait AwsCertificateManagerCertificateDetails extends StObject {
   var ImportedAt: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The list of ARNs for the AWS resources that use the certificate.
+    * The list of ARNs for the Amazon Web Services resources that use the certificate.
     */
   var InUseBy: js.UndefOr[StringList] = js.undefined
   
@@ -87,7 +87,7 @@ trait AwsCertificateManagerCertificateDetails extends StObject {
   var RenewalEligibility: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Information about the status of the AWS Certificate Manager managed renewal for the certificate. Provided only when the certificate type is AMAZON_ISSUED.
+    * Information about the status of the Certificate Manager managed renewal for the certificate. Provided only when the certificate type is AMAZON_ISSUED.
     */
   var RenewalSummary: js.UndefOr[AwsCertificateManagerCertificateRenewalSummary] = js.undefined
   
@@ -117,7 +117,7 @@ trait AwsCertificateManagerCertificateDetails extends StObject {
   var SubjectAlternativeNames: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The source of the certificate. For certificates that AWS Certificate Manager provides, Type is AMAZON_ISSUED. For certificates that are imported with ImportCertificate, Type is IMPORTED. Valid values: IMPORTED | AMAZON_ISSUED | PRIVATE 
+    * The source of the certificate. For certificates that Certificate Manager provides, Type is AMAZON_ISSUED. For certificates that are imported with ImportCertificate, Type is IMPORTED. Valid values: IMPORTED | AMAZON_ISSUED | PRIVATE 
     */
   var Type: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -146,13 +146,13 @@ object AwsCertificateManagerCertificateDetails {
     
     inline def setDomainValidationOptionsUndefined: Self = StObject.set(x, "DomainValidationOptions", js.undefined)
     
-    inline def setDomainValidationOptionsVarargs(value: AwsCertificateManagerCertificateDomainValidationOption*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value :_*))
+    inline def setDomainValidationOptionsVarargs(value: AwsCertificateManagerCertificateDomainValidationOption*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value*))
     
     inline def setExtendedKeyUsages(value: AwsCertificateManagerCertificateExtendedKeyUsages): Self = StObject.set(x, "ExtendedKeyUsages", value.asInstanceOf[js.Any])
     
     inline def setExtendedKeyUsagesUndefined: Self = StObject.set(x, "ExtendedKeyUsages", js.undefined)
     
-    inline def setExtendedKeyUsagesVarargs(value: AwsCertificateManagerCertificateExtendedKeyUsage*): Self = StObject.set(x, "ExtendedKeyUsages", js.Array(value :_*))
+    inline def setExtendedKeyUsagesVarargs(value: AwsCertificateManagerCertificateExtendedKeyUsage*): Self = StObject.set(x, "ExtendedKeyUsages", js.Array(value*))
     
     inline def setFailureReason(value: NonEmptyString): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
@@ -166,7 +166,7 @@ object AwsCertificateManagerCertificateDetails {
     
     inline def setInUseByUndefined: Self = StObject.set(x, "InUseBy", js.undefined)
     
-    inline def setInUseByVarargs(value: NonEmptyString*): Self = StObject.set(x, "InUseBy", js.Array(value :_*))
+    inline def setInUseByVarargs(value: NonEmptyString*): Self = StObject.set(x, "InUseBy", js.Array(value*))
     
     inline def setIssuedAt(value: NonEmptyString): Self = StObject.set(x, "IssuedAt", value.asInstanceOf[js.Any])
     
@@ -184,7 +184,7 @@ object AwsCertificateManagerCertificateDetails {
     
     inline def setKeyUsagesUndefined: Self = StObject.set(x, "KeyUsages", js.undefined)
     
-    inline def setKeyUsagesVarargs(value: AwsCertificateManagerCertificateKeyUsage*): Self = StObject.set(x, "KeyUsages", js.Array(value :_*))
+    inline def setKeyUsagesVarargs(value: AwsCertificateManagerCertificateKeyUsage*): Self = StObject.set(x, "KeyUsages", js.Array(value*))
     
     inline def setNotAfter(value: NonEmptyString): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
@@ -224,7 +224,7 @@ object AwsCertificateManagerCertificateDetails {
     
     inline def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "SubjectAlternativeNames", js.undefined)
     
-    inline def setSubjectAlternativeNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "SubjectAlternativeNames", js.Array(value :_*))
+    inline def setSubjectAlternativeNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "SubjectAlternativeNames", js.Array(value*))
     
     inline def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
     

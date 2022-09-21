@@ -19,6 +19,6 @@ object PostResponseData {
     
     inline def setMessages(value: js.Array[PostResponseDataMessage]): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
-    inline def setMessagesVarargs(value: PostResponseDataMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: PostResponseDataMessage*): Self = StObject.set(x, "Messages", js.Array(value*))
   }
 }

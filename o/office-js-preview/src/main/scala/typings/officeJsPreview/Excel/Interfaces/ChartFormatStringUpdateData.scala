@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartFormatStringUpdateData extends StObject {
   
   /**
+    * Represents the font attributes, such as font name, font size, and color of a chart characters object.
     *
-    * Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var font: js.UndefOr[ChartFontUpdateData] = js.undefined

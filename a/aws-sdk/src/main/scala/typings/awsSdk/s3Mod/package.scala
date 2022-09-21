@@ -1,53 +1,70 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.anon.Cont
+import typings.awsSdk.awsSdkStrings.CSV
+import typings.awsSdk.awsSdkStrings.Destination_
+import typings.awsSdk.awsSdkStrings.ENABLED
+import typings.awsSdk.awsSdkStrings.Enabled_
+import typings.awsSdk.awsSdkStrings.SELECT
+import typings.awsSdk.awsSdkStrings.SQL
+import typings.awsSdk.awsSdkStrings.STANDARD
+import typings.awsSdk.awsSdkStrings.V_1
+import typings.awsSdk.awsSdkStrings.requester_
+import typings.awsSdk.awsSdkStrings.url_
+import typings.awsSdk.eventStreamMod.EventStream
+import typings.node.bufferMod.global.Buffer
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AbortDate = typings.std.Date
+type AbortDate = js.Date
 
-type AbortRuleId = java.lang.String
+type AbortRuleId = String
 
-type AcceptRanges = java.lang.String
+type AcceptRanges = String
 
-type AccountId = java.lang.String
+type AccessPointArn = String
 
-type AllowQuotedRecordDelimiter = scala.Boolean
+type AccountId = String
 
-type AllowedHeader = java.lang.String
+type AllowQuotedRecordDelimiter = Boolean
 
-type AllowedHeaders = js.Array[typings.awsSdk.s3Mod.AllowedHeader]
+type AllowedHeader = String
 
-type AllowedMethod = java.lang.String
+type AllowedHeaders = js.Array[AllowedHeader]
 
-type AllowedMethods = js.Array[typings.awsSdk.s3Mod.AllowedMethod]
+type AllowedMethod = String
 
-type AllowedOrigin = java.lang.String
+type AllowedMethods = js.Array[AllowedMethod]
 
-type AllowedOrigins = js.Array[typings.awsSdk.s3Mod.AllowedOrigin]
+type AllowedOrigin = String
 
-type AnalyticsConfigurationList = js.Array[typings.awsSdk.s3Mod.AnalyticsConfiguration]
+type AllowedOrigins = js.Array[AllowedOrigin]
 
-type AnalyticsId = java.lang.String
+type AnalyticsConfigurationList = js.Array[AnalyticsConfiguration]
 
-type AnalyticsS3ExportFileFormat = typings.awsSdk.awsSdkStrings.CSV | java.lang.String
+type AnalyticsId = String
+
+type AnalyticsS3ExportFileFormat = CSV | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ARCHIVE_ACCESS
   - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE_ACCESS
   - java.lang.String
 */
-type ArchiveStatus = typings.awsSdk.s3Mod._ArchiveStatus | java.lang.String
+type ArchiveStatus = _ArchiveStatus | String
 
-type Body = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.s3Mod.Blob | java.lang.String | typings.node.streamMod.Readable
+type Body = Buffer | js.typedarray.Uint8Array | Blob | String | Readable
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Suspended_
   - java.lang.String
 */
-type BucketAccelerateStatus = typings.awsSdk.s3Mod._BucketAccelerateStatus | java.lang.String
+type BucketAccelerateStatus = _BucketAccelerateStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.private__
@@ -56,7 +73,9 @@ type BucketAccelerateStatus = typings.awsSdk.s3Mod._BucketAccelerateStatus | jav
   - typings.awsSdk.awsSdkStrings.`authenticated-read`
   - java.lang.String
 */
-type BucketCannedACL = typings.awsSdk.s3Mod._BucketCannedACL | java.lang.String
+type BucketCannedACL = _BucketCannedACL | String
+
+type BucketKeyEnabled = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`af-south-1`
@@ -86,7 +105,7 @@ type BucketCannedACL = typings.awsSdk.s3Mod._BucketCannedACL | java.lang.String
   - typings.awsSdk.awsSdkStrings.`us-west-2`
   - java.lang.String
 */
-type BucketLocationConstraint = typings.awsSdk.s3Mod._BucketLocationConstraint | java.lang.String
+type BucketLocationConstraint = _BucketLocationConstraint | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FULL_CONTROL
@@ -94,42 +113,63 @@ type BucketLocationConstraint = typings.awsSdk.s3Mod._BucketLocationConstraint |
   - typings.awsSdk.awsSdkStrings.WRITE
   - java.lang.String
 */
-type BucketLogsPermission = typings.awsSdk.s3Mod._BucketLogsPermission | java.lang.String
+type BucketLogsPermission = _BucketLogsPermission | String
 
-type BucketName = java.lang.String
+type BucketName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Suspended_
   - java.lang.String
 */
-type BucketVersioningStatus = typings.awsSdk.s3Mod._BucketVersioningStatus | java.lang.String
+type BucketVersioningStatus = _BucketVersioningStatus | String
 
-type Buckets = js.Array[typings.awsSdk.s3Mod.Bucket]
+type Buckets = js.Array[Bucket]
 
-type BypassGovernanceRetention = scala.Boolean
+type BypassGovernanceRetention = Boolean
 
-type BytesProcessed = scala.Double
+type BytesProcessed = Double
 
-type BytesReturned = scala.Double
+type BytesReturned = Double
 
-type BytesScanned = scala.Double
+type BytesScanned = Double
 
-type CORSRules = js.Array[typings.awsSdk.s3Mod.CORSRule]
+type CORSRules = js.Array[CORSRule]
 
-type CacheControl = java.lang.String
+type CacheControl = String
 
-type CloudFunction = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CRC32
+  - typings.awsSdk.awsSdkStrings.CRC32C
+  - typings.awsSdk.awsSdkStrings.SHA1
+  - typings.awsSdk.awsSdkStrings.SHA256
+  - java.lang.String
+*/
+type ChecksumAlgorithm = _ChecksumAlgorithm | String
 
-type CloudFunctionInvocationRole = java.lang.String
+type ChecksumAlgorithmList = js.Array[ChecksumAlgorithm]
 
-type Code = java.lang.String
+type ChecksumCRC32 = String
 
-type Comments = java.lang.String
+type ChecksumCRC32C = String
 
-type CommonPrefixList = js.Array[typings.awsSdk.s3Mod.CommonPrefix]
+type ChecksumMode = ENABLED | String
 
-type CompletedPartList = js.Array[typings.awsSdk.s3Mod.CompletedPart]
+type ChecksumSHA1 = String
+
+type ChecksumSHA256 = String
+
+type CloudFunction = String
+
+type CloudFunctionInvocationRole = String
+
+type Code = String
+
+type Comments = String
+
+type CommonPrefixList = js.Array[CommonPrefix]
+
+type CompletedPartList = js.Array[CompletedPart]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -137,84 +177,88 @@ type CompletedPartList = js.Array[typings.awsSdk.s3Mod.CompletedPart]
   - typings.awsSdk.awsSdkStrings.BZIP2
   - java.lang.String
 */
-type CompressionType = typings.awsSdk.s3Mod._CompressionType | java.lang.String
+type CompressionType = _CompressionType | String
 
-type ConfirmRemoveSelfBucketAccess = scala.Boolean
+type ConfirmRemoveSelfBucketAccess = Boolean
 
-type ContentDisposition = java.lang.String
+type ContentDisposition = String
 
-type ContentEncoding = java.lang.String
+type ContentEncoding = String
 
-type ContentLanguage = java.lang.String
+type ContentLanguage = String
 
-type ContentLength = scala.Double
+type ContentLength = Double
 
-type ContentMD5 = java.lang.String
+type ContentMD5 = String
 
-type ContentRange = java.lang.String
+type ContentRange = String
 
-type ContentType = java.lang.String
+type ContentType = String
 
-type CopySource = java.lang.String
+type CopySource = String
 
-type CopySourceIfMatch = java.lang.String
+type CopySourceIfMatch = String
 
-type CopySourceIfModifiedSince = typings.std.Date
+type CopySourceIfModifiedSince = js.Date
 
-type CopySourceIfNoneMatch = java.lang.String
+type CopySourceIfNoneMatch = String
 
-type CopySourceIfUnmodifiedSince = typings.std.Date
+type CopySourceIfUnmodifiedSince = js.Date
 
-type CopySourceRange = java.lang.String
+type CopySourceRange = String
 
-type CopySourceSSECustomerAlgorithm = java.lang.String
+type CopySourceSSECustomerAlgorithm = String
 
-type CopySourceSSECustomerKey = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.s3Mod.Blob | java.lang.String
+type CopySourceSSECustomerKey = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type CopySourceSSECustomerKeyMD5 = java.lang.String
+type CopySourceSSECustomerKeyMD5 = String
 
-type CopySourceVersionId = java.lang.String
+type CopySourceVersionId = String
 
-type CreationDate = typings.std.Date
+type CreationDate = js.Date
 
-type Date = typings.std.Date
+type Date = js.Date
 
-type Days = scala.Double
+type Days = Double
 
-type DaysAfterInitiation = scala.Double
+type DaysAfterInitiation = Double
 
-type DeleteMarker = scala.Boolean
+type DeleteMarker = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - java.lang.String
 */
-type DeleteMarkerReplicationStatus = typings.awsSdk.s3Mod._DeleteMarkerReplicationStatus | java.lang.String
+type DeleteMarkerReplicationStatus = _DeleteMarkerReplicationStatus | String
 
-type DeleteMarkerVersionId = java.lang.String
+type DeleteMarkerVersionId = String
 
-type DeleteMarkers = js.Array[typings.awsSdk.s3Mod.DeleteMarkerEntry]
+type DeleteMarkers = js.Array[DeleteMarkerEntry]
 
-type DeletedObjects = js.Array[typings.awsSdk.s3Mod.DeletedObject]
+type DeletedObjects = js.Array[DeletedObject]
 
-type Delimiter = java.lang.String
+type Delimiter = String
 
-type Description = java.lang.String
+type Description = String
 
-type DisplayName = java.lang.String
+type DisplayName = String
 
-type ETag = java.lang.String
+type ETag = String
 
-type EmailAddress = java.lang.String
+type EmailAddress = String
 
-type EnableRequestProgress = scala.Boolean
+type EnableRequestProgress = Boolean
 
-type EncodingType = typings.awsSdk.awsSdkStrings.url_ | java.lang.String
+type EncodingType = url_ | String
 
-type End = scala.Double
+type End = Double
 
-type Errors = js.Array[typings.awsSdk.s3Mod.Error]
+type ErrorCode = String
+
+type ErrorMessage = String
+
+type Errors = js.Array[Error]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.s3ColonReducedRedundancyLostObject
@@ -234,43 +278,53 @@ type Errors = js.Array[typings.awsSdk.s3Mod.Error]
   - typings.awsSdk.awsSdkStrings.s3ColonReplicationColonOperationNotTracked
   - typings.awsSdk.awsSdkStrings.s3ColonReplicationColonOperationMissedThreshold
   - typings.awsSdk.awsSdkStrings.s3ColonReplicationColonOperationReplicatedAfterThreshold
+  - typings.awsSdk.awsSdkStrings.s3ColonObjectRestoreColonDelete
+  - typings.awsSdk.awsSdkStrings.s3ColonLifecycleTransition
+  - typings.awsSdk.awsSdkStrings.s3ColonIntelligentTiering
+  - typings.awsSdk.awsSdkStrings.s3ColonObjectAclColonPut
+  - typings.awsSdk.awsSdkStrings.s3ColonLifecycleExpirationColonAsterisk
+  - typings.awsSdk.awsSdkStrings.s3ColonLifecycleExpirationColonDelete
+  - typings.awsSdk.awsSdkStrings.s3ColonLifecycleExpirationColonDeleteMarkerCreated
+  - typings.awsSdk.awsSdkStrings.s3ColonObjectTaggingColonAsterisk
+  - typings.awsSdk.awsSdkStrings.s3ColonObjectTaggingColonPut
+  - typings.awsSdk.awsSdkStrings.s3ColonObjectTaggingColonDelete
   - java.lang.String
 */
-type Event = typings.awsSdk.s3Mod._Event | java.lang.String
+type Event = _Event | String
 
-type EventList = js.Array[typings.awsSdk.s3Mod.Event]
+type EventList = js.Array[Event]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - java.lang.String
 */
-type ExistingObjectReplicationStatus = typings.awsSdk.s3Mod._ExistingObjectReplicationStatus | java.lang.String
+type ExistingObjectReplicationStatus = _ExistingObjectReplicationStatus | String
 
-type Expiration = java.lang.String
+type Expiration = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - java.lang.String
 */
-type ExpirationStatus = typings.awsSdk.s3Mod._ExpirationStatus | java.lang.String
+type ExpirationStatus = _ExpirationStatus | String
 
-type ExpiredObjectDeleteMarker = scala.Boolean
+type ExpiredObjectDeleteMarker = Boolean
 
-type Expires = typings.std.Date
+type Expires = js.Date
 
-type ExposeHeader = java.lang.String
+type ExposeHeader = String
 
-type ExposeHeaders = js.Array[typings.awsSdk.s3Mod.ExposeHeader]
+type ExposeHeaders = js.Array[ExposeHeader]
 
-type Expression = java.lang.String
+type Expression = String
 
-type ExpressionType = typings.awsSdk.awsSdkStrings.SQL | java.lang.String
+type ExpressionType = SQL | String
 
-type FetchOwner = scala.Boolean
+type FetchOwner = Boolean
 
-type FieldDelimiter = java.lang.String
+type FieldDelimiter = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USE
@@ -278,70 +332,72 @@ type FieldDelimiter = java.lang.String
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type FileHeaderInfo = typings.awsSdk.s3Mod._FileHeaderInfo | java.lang.String
+type FileHeaderInfo = _FileHeaderInfo | String
 
-type FilterRuleList = js.Array[typings.awsSdk.s3Mod.FilterRule]
+type FilterRuleList = js.Array[FilterRule]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.prefix_
-  - typings.awsSdk.awsSdkStrings.suffix
+  - typings.awsSdk.awsSdkStrings.prefix__
+  - typings.awsSdk.awsSdkStrings.suffix_
   - java.lang.String
 */
-type FilterRuleName = typings.awsSdk.s3Mod._FilterRuleName | java.lang.String
+type FilterRuleName = _FilterRuleName | String
 
-type FilterRuleValue = java.lang.String
+type FilterRuleValue = String
 
-type GrantFullControl = java.lang.String
+type GetObjectResponseStatusCode = Double
 
-type GrantRead = java.lang.String
+type GrantFullControl = String
 
-type GrantReadACP = java.lang.String
+type GrantRead = String
 
-type GrantWrite = java.lang.String
+type GrantReadACP = String
 
-type GrantWriteACP = java.lang.String
+type GrantWrite = String
 
-type Grants = js.Array[typings.awsSdk.s3Mod.Grant]
+type GrantWriteACP = String
 
-type HostName = java.lang.String
+type Grants = js.Array[Grant]
 
-type HttpErrorCodeReturnedEquals = java.lang.String
+type HostName = String
 
-type HttpRedirectCode = java.lang.String
+type HttpErrorCodeReturnedEquals = String
 
-type ID = java.lang.String
+type HttpRedirectCode = String
 
-type IfMatch = java.lang.String
+type ID = String
 
-type IfModifiedSince = typings.std.Date
+type IfMatch = String
 
-type IfNoneMatch = java.lang.String
+type IfModifiedSince = js.Date
 
-type IfUnmodifiedSince = typings.std.Date
+type IfNoneMatch = String
 
-type Initiated = typings.std.Date
+type IfUnmodifiedSince = js.Date
+
+type Initiated = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ARCHIVE_ACCESS
   - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE_ACCESS
   - java.lang.String
 */
-type IntelligentTieringAccessTier = typings.awsSdk.s3Mod._IntelligentTieringAccessTier | java.lang.String
+type IntelligentTieringAccessTier = _IntelligentTieringAccessTier | String
 
-type IntelligentTieringConfigurationList = js.Array[typings.awsSdk.s3Mod.IntelligentTieringConfiguration]
+type IntelligentTieringConfigurationList = js.Array[IntelligentTieringConfiguration]
 
-type IntelligentTieringDays = scala.Double
+type IntelligentTieringDays = Double
 
-type IntelligentTieringId = java.lang.String
+type IntelligentTieringId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - java.lang.String
 */
-type IntelligentTieringStatus = typings.awsSdk.s3Mod._IntelligentTieringStatus | java.lang.String
+type IntelligentTieringStatus = _IntelligentTieringStatus | String
 
-type InventoryConfigurationList = js.Array[typings.awsSdk.s3Mod.InventoryConfiguration]
+type InventoryConfigurationList = js.Array[InventoryConfiguration]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CSV
@@ -349,23 +405,23 @@ type InventoryConfigurationList = js.Array[typings.awsSdk.s3Mod.InventoryConfigu
   - typings.awsSdk.awsSdkStrings.Parquet_
   - java.lang.String
 */
-type InventoryFormat = typings.awsSdk.s3Mod._InventoryFormat | java.lang.String
+type InventoryFormat = _InventoryFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Daily_
   - typings.awsSdk.awsSdkStrings.Weekly_
   - java.lang.String
 */
-type InventoryFrequency = typings.awsSdk.s3Mod._InventoryFrequency | java.lang.String
+type InventoryFrequency = _InventoryFrequency | String
 
-type InventoryId = java.lang.String
+type InventoryId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.All_
   - typings.awsSdk.awsSdkStrings.Current_
   - java.lang.String
 */
-type InventoryIncludedObjectVersions = typings.awsSdk.s3Mod._InventoryIncludedObjectVersions | java.lang.String
+type InventoryIncludedObjectVersions = _InventoryIncludedObjectVersions | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Size_
@@ -379,122 +435,136 @@ type InventoryIncludedObjectVersions = typings.awsSdk.s3Mod._InventoryIncludedOb
   - typings.awsSdk.awsSdkStrings.ObjectLockMode
   - typings.awsSdk.awsSdkStrings.ObjectLockLegalHoldStatus
   - typings.awsSdk.awsSdkStrings.IntelligentTieringAccessTier
+  - typings.awsSdk.awsSdkStrings.BucketKeyStatus
+  - typings.awsSdk.awsSdkStrings.ChecksumAlgorithm
   - java.lang.String
 */
-type InventoryOptionalField = typings.awsSdk.s3Mod._InventoryOptionalField | java.lang.String
+type InventoryOptionalField = _InventoryOptionalField | String
 
-type InventoryOptionalFields = js.Array[typings.awsSdk.s3Mod.InventoryOptionalField]
+type InventoryOptionalFields = js.Array[InventoryOptionalField]
 
-type IsEnabled = scala.Boolean
+type IsEnabled = Boolean
 
-type IsLatest = scala.Boolean
+type IsLatest = Boolean
 
-type IsPublic = scala.Boolean
+type IsPublic = Boolean
 
-type IsTruncated = scala.Boolean
+type IsTruncated = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DOCUMENT
   - typings.awsSdk.awsSdkStrings.LINES
   - java.lang.String
 */
-type JSONType = typings.awsSdk.s3Mod._JSONType | java.lang.String
+type JSONType = _JSONType | String
 
-type KMSContext = java.lang.String
+type KMSContext = String
 
-type KeyCount = scala.Double
+type KeyCount = Double
 
-type KeyMarker = java.lang.String
+type KeyMarker = String
 
-type KeyPrefixEquals = java.lang.String
+type KeyPrefixEquals = String
 
-type LambdaFunctionArn = java.lang.String
+type LambdaFunctionArn = String
 
-type LambdaFunctionConfigurationList = js.Array[typings.awsSdk.s3Mod.LambdaFunctionConfiguration]
+type LambdaFunctionConfigurationList = js.Array[LambdaFunctionConfiguration]
 
-type LastModified = typings.std.Date
+type LastModified = js.Date
 
-type LifecycleRules = js.Array[typings.awsSdk.s3Mod.LifecycleRule]
+type LifecycleRules = js.Array[LifecycleRule]
 
-type Location = java.lang.String
+type Location = String
 
-type LocationPrefix = java.lang.String
+type LocationPrefix = String
 
-type MFA = java.lang.String
-
-/* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.Enabled_
-  - typings.awsSdk.awsSdkStrings.Disabled_
-  - java.lang.String
-*/
-type MFADelete = typings.awsSdk.s3Mod._MFADelete | java.lang.String
+type MFA = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - java.lang.String
 */
-type MFADeleteStatus = typings.awsSdk.s3Mod._MFADeleteStatus | java.lang.String
+type MFADelete = _MFADelete | String
 
-type Marker = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type MFADeleteStatus = _MFADeleteStatus | String
 
-type MaxAgeSeconds = scala.Double
+type Marker = String
 
-type MaxKeys = scala.Double
+type MaxAgeSeconds = Double
 
-type MaxParts = scala.Double
+type MaxKeys = Double
 
-type MaxUploads = scala.Double
+type MaxParts = Double
 
-type Message = java.lang.String
+type MaxUploads = Double
 
-type Metadata = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.s3Mod.MetadataValue]
+type Message = String
+
+type Metadata = StringDictionary[MetadataValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COPY
   - typings.awsSdk.awsSdkStrings.REPLACE
   - java.lang.String
 */
-type MetadataDirective = typings.awsSdk.s3Mod._MetadataDirective | java.lang.String
+type MetadataDirective = _MetadataDirective | String
 
-type MetadataKey = java.lang.String
+type MetadataKey = String
 
-type MetadataValue = java.lang.String
+type MetadataValue = String
 
-type MetricsConfigurationList = js.Array[typings.awsSdk.s3Mod.MetricsConfiguration]
+type MetricsConfigurationList = js.Array[MetricsConfiguration]
 
-type MetricsId = java.lang.String
+type MetricsId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - java.lang.String
 */
-type MetricsStatus = typings.awsSdk.s3Mod._MetricsStatus | java.lang.String
+type MetricsStatus = _MetricsStatus | String
 
-type Minutes = scala.Double
+type Minutes = Double
 
-type MissingMeta = scala.Double
+type MissingMeta = Double
 
-type MultipartUploadId = java.lang.String
+type MultipartUploadId = String
 
-type MultipartUploadList = js.Array[typings.awsSdk.s3Mod.MultipartUpload]
+type MultipartUploadList = js.Array[MultipartUpload]
 
-type NextKeyMarker = java.lang.String
+type NextKeyMarker = String
 
-type NextMarker = java.lang.String
+type NextMarker = String
 
-type NextPartNumberMarker = scala.Double
+type NextPartNumberMarker = Double
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type NextUploadIdMarker = java.lang.String
+type NextUploadIdMarker = String
 
-type NextVersionIdMarker = java.lang.String
+type NextVersionIdMarker = String
 
-type NoncurrentVersionTransitionList = js.Array[typings.awsSdk.s3Mod.NoncurrentVersionTransition]
+type NoncurrentVersionTransitionList = js.Array[NoncurrentVersionTransition]
 
-type NotificationId = java.lang.String
+type NotificationId = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ETag
+  - typings.awsSdk.awsSdkStrings.Checksum
+  - typings.awsSdk.awsSdkStrings.ObjectParts
+  - typings.awsSdk.awsSdkStrings.StorageClass
+  - typings.awsSdk.awsSdkStrings.ObjectSize
+  - java.lang.String
+*/
+type ObjectAttributes = _ObjectAttributes | String
+
+type ObjectAttributesList = js.Array[ObjectAttributes]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.private__
@@ -506,49 +576,56 @@ type NotificationId = java.lang.String
   - typings.awsSdk.awsSdkStrings.`bucket-owner-full-control`
   - java.lang.String
 */
-type ObjectCannedACL = typings.awsSdk.s3Mod._ObjectCannedACL | java.lang.String
+type ObjectCannedACL = _ObjectCannedACL | String
 
-type ObjectIdentifierList = js.Array[typings.awsSdk.s3Mod.ObjectIdentifier]
+type ObjectIdentifierList = js.Array[ObjectIdentifier]
 
-type ObjectKey = java.lang.String
+type ObjectKey = String
 
-type ObjectList = js.Array[typings.awsSdk.s3Mod.Object]
+type ObjectList = js.Array[Object]
 
-type ObjectLockEnabled = typings.awsSdk.awsSdkStrings.Enabled_ | java.lang.String
+type ObjectLockEnabled = Enabled_ | String
 
-type ObjectLockEnabledForBucket = scala.Boolean
+type ObjectLockEnabledForBucket = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ON
   - typings.awsSdk.awsSdkStrings.OFF
   - java.lang.String
 */
-type ObjectLockLegalHoldStatus = typings.awsSdk.s3Mod._ObjectLockLegalHoldStatus | java.lang.String
+type ObjectLockLegalHoldStatus = _ObjectLockLegalHoldStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GOVERNANCE
   - typings.awsSdk.awsSdkStrings.COMPLIANCE
   - java.lang.String
 */
-type ObjectLockMode = typings.awsSdk.s3Mod._ObjectLockMode | java.lang.String
+type ObjectLockMode = _ObjectLockMode | String
 
-type ObjectLockRetainUntilDate = typings.std.Date
+type ObjectLockRetainUntilDate = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GOVERNANCE
   - typings.awsSdk.awsSdkStrings.COMPLIANCE
   - java.lang.String
 */
-type ObjectLockRetentionMode = typings.awsSdk.s3Mod._ObjectLockRetentionMode | java.lang.String
+type ObjectLockRetentionMode = _ObjectLockRetentionMode | String
 
-type ObjectLockToken = java.lang.String
+type ObjectLockToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BucketOwnerPreferred
   - typings.awsSdk.awsSdkStrings.ObjectWriter
+  - typings.awsSdk.awsSdkStrings.BucketOwnerEnforced
   - java.lang.String
 */
-type ObjectOwnership = typings.awsSdk.s3Mod._ObjectOwnership | java.lang.String
+type ObjectOwnership = _ObjectOwnership | String
+
+type ObjectSize = Double
+
+type ObjectSizeGreaterThanBytes = Double
+
+type ObjectSizeLessThanBytes = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
@@ -559,34 +636,37 @@ type ObjectOwnership = typings.awsSdk.s3Mod._ObjectOwnership | java.lang.String
   - typings.awsSdk.awsSdkStrings.INTELLIGENT_TIERING
   - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE
   - typings.awsSdk.awsSdkStrings.OUTPOSTS
+  - typings.awsSdk.awsSdkStrings.GLACIER_IR
   - java.lang.String
 */
-type ObjectStorageClass = typings.awsSdk.s3Mod._ObjectStorageClass | java.lang.String
+type ObjectStorageClass = _ObjectStorageClass | String
 
-type ObjectVersionId = java.lang.String
+type ObjectVersionId = String
 
-type ObjectVersionList = js.Array[typings.awsSdk.s3Mod.ObjectVersion]
+type ObjectVersionList = js.Array[ObjectVersion]
 
-type ObjectVersionStorageClass = typings.awsSdk.awsSdkStrings.STANDARD | java.lang.String
+type ObjectVersionStorageClass = STANDARD | String
 
-type OwnerOverride = typings.awsSdk.awsSdkStrings.Destination | java.lang.String
+type OwnerOverride = Destination_ | String
 
-type OwnershipControlsRules = js.Array[typings.awsSdk.s3Mod.OwnershipControlsRule]
+type OwnershipControlsRules = js.Array[OwnershipControlsRule]
 
-type PartNumber = scala.Double
+type PartNumber = Double
 
-type PartNumberMarker = scala.Double
+type PartNumberMarker = Double
 
-type Parts = js.Array[typings.awsSdk.s3Mod.Part]
+type Parts = js.Array[Part]
 
-type PartsCount = scala.Double
+type PartsCount = Double
+
+type PartsList = js.Array[ObjectPart]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Requester
   - typings.awsSdk.awsSdkStrings.BucketOwner
   - java.lang.String
 */
-type Payer = typings.awsSdk.s3Mod._Payer | java.lang.String
+type Payer = _Payer | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FULL_CONTROL
@@ -596,56 +676,63 @@ type Payer = typings.awsSdk.s3Mod._Payer | java.lang.String
   - typings.awsSdk.awsSdkStrings.READ_ACP
   - java.lang.String
 */
-type Permission = typings.awsSdk.s3Mod._Permission | java.lang.String
+type Permission = _Permission | String
 
-type Policy = java.lang.String
+type Policy = String
 
-type Prefix = java.lang.String
+type Prefix = String
 
-type Priority = scala.Double
+type Priority = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.http_
   - typings.awsSdk.awsSdkStrings.https_
   - java.lang.String
 */
-type Protocol = typings.awsSdk.s3Mod._Protocol | java.lang.String
+type Protocol = _Protocol | String
 
-type QueueArn = java.lang.String
+type QueueArn = String
 
-type QueueConfigurationList = js.Array[typings.awsSdk.s3Mod.QueueConfiguration]
+type QueueConfigurationList = js.Array[QueueConfiguration]
 
-type Quiet = scala.Boolean
+type Quiet = Boolean
 
-type QuoteCharacter = java.lang.String
+type QuoteCharacter = String
 
-type QuoteEscapeCharacter = java.lang.String
+type QuoteEscapeCharacter = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALWAYS
   - typings.awsSdk.awsSdkStrings.ASNEEDED
   - java.lang.String
 */
-type QuoteFields = typings.awsSdk.s3Mod._QuoteFields | java.lang.String
+type QuoteFields = _QuoteFields | String
 
-type Range = java.lang.String
+type Range = String
 
-type RecordDelimiter = java.lang.String
+type RecordDelimiter = String
 
-type ReplaceKeyPrefixWith = java.lang.String
+type ReplaceKeyPrefixWith = String
 
-type ReplaceKeyWith = java.lang.String
+type ReplaceKeyWith = String
 
-type ReplicaKmsKeyID = java.lang.String
+type ReplicaKmsKeyID = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - java.lang.String
 */
-type ReplicationRuleStatus = typings.awsSdk.s3Mod._ReplicationRuleStatus | java.lang.String
+type ReplicaModificationsStatus = _ReplicaModificationsStatus | String
 
-type ReplicationRules = js.Array[typings.awsSdk.s3Mod.ReplicationRule]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Enabled_
+  - typings.awsSdk.awsSdkStrings.Disabled_
+  - java.lang.String
+*/
+type ReplicationRuleStatus = _ReplicationRuleStatus | String
+
+type ReplicationRules = js.Array[ReplicationRule]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLETE
@@ -654,78 +741,84 @@ type ReplicationRules = js.Array[typings.awsSdk.s3Mod.ReplicationRule]
   - typings.awsSdk.awsSdkStrings.REPLICA
   - java.lang.String
 */
-type ReplicationStatus = typings.awsSdk.s3Mod._ReplicationStatus | java.lang.String
+type ReplicationStatus = _ReplicationStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - java.lang.String
 */
-type ReplicationTimeStatus = typings.awsSdk.s3Mod._ReplicationTimeStatus | java.lang.String
+type ReplicationTimeStatus = _ReplicationTimeStatus | String
 
-type RequestCharged = typings.awsSdk.awsSdkStrings.requester_ | java.lang.String
+type RequestCharged = requester_ | String
 
-type RequestPayer = typings.awsSdk.awsSdkStrings.requester_ | java.lang.String
+type RequestPayer = requester_ | String
 
-type ResponseCacheControl = java.lang.String
+type RequestRoute = String
 
-type ResponseContentDisposition = java.lang.String
+type RequestToken = String
 
-type ResponseContentEncoding = java.lang.String
+type ResponseCacheControl = String
 
-type ResponseContentLanguage = java.lang.String
+type ResponseContentDisposition = String
 
-type ResponseContentType = java.lang.String
+type ResponseContentEncoding = String
 
-type ResponseExpires = typings.std.Date
+type ResponseContentLanguage = String
 
-type Restore = java.lang.String
+type ResponseContentType = String
 
-type RestoreOutputPath = java.lang.String
+type ResponseExpires = js.Date
 
-type RestoreRequestType = typings.awsSdk.awsSdkStrings.SELECT | java.lang.String
+type Restore = String
 
-type Role = java.lang.String
+type RestoreOutputPath = String
 
-type RoutingRules = js.Array[typings.awsSdk.s3Mod.RoutingRule]
+type RestoreRequestType = SELECT | String
 
-type Rules = js.Array[typings.awsSdk.s3Mod.Rule]
+type Role = String
 
-type SSECustomerAlgorithm = java.lang.String
+type RoutingRules = js.Array[RoutingRule]
 
-type SSECustomerKey = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.s3Mod.Blob | java.lang.String
+type Rules = js.Array[Rule]
 
-type SSECustomerKeyMD5 = java.lang.String
+type SSECustomerAlgorithm = String
 
-type SSEKMSEncryptionContext = java.lang.String
+type SSECustomerKey = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type SSEKMSKeyId = java.lang.String
+type SSECustomerKeyMD5 = String
 
-type SelectObjectContentEventStream = typings.awsSdk.eventStreamMod.EventStream[typings.awsSdk.anon.Cont]
+type SSEKMSEncryptionContext = String
+
+type SSEKMSKeyId = String
+
+type SelectObjectContentEventStream = EventStream[Cont]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AES256
   - typings.awsSdk.awsSdkStrings.awsColonkms
   - java.lang.String
 */
-type ServerSideEncryption = typings.awsSdk.s3Mod._ServerSideEncryption | java.lang.String
+type ServerSideEncryption = _ServerSideEncryption | String
 
-type ServerSideEncryptionRules = js.Array[typings.awsSdk.s3Mod.ServerSideEncryptionRule]
+type ServerSideEncryptionRules = js.Array[ServerSideEncryptionRule]
 
-type Setting = scala.Boolean
+type Setting = Boolean
 
-type Size = scala.Double
+type Size = Double
+
+type SkipValidation = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - java.lang.String
 */
-type SseKmsEncryptedObjectsStatus = typings.awsSdk.s3Mod._SseKmsEncryptedObjectsStatus | java.lang.String
+type SseKmsEncryptedObjectsStatus = _SseKmsEncryptedObjectsStatus | String
 
-type Start = scala.Double
+type Start = Double
 
-type StartAfter = java.lang.String
+type StartAfter = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
@@ -736,32 +829,33 @@ type StartAfter = java.lang.String
   - typings.awsSdk.awsSdkStrings.GLACIER
   - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE
   - typings.awsSdk.awsSdkStrings.OUTPOSTS
+  - typings.awsSdk.awsSdkStrings.GLACIER_IR
   - java.lang.String
 */
-type StorageClass = typings.awsSdk.s3Mod._StorageClass | java.lang.String
+type StorageClass = _StorageClass | String
 
-type StorageClassAnalysisSchemaVersion = typings.awsSdk.awsSdkStrings.V_1 | java.lang.String
+type StorageClassAnalysisSchemaVersion = V_1 | String
 
-type Suffix = java.lang.String
+type Suffix = String
 
-type TagCount = scala.Double
+type TagCount = Double
 
-type TagSet = js.Array[typings.awsSdk.s3Mod.Tag]
+type TagSet = js.Array[Tag]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COPY
   - typings.awsSdk.awsSdkStrings.REPLACE
   - java.lang.String
 */
-type TaggingDirective = typings.awsSdk.s3Mod._TaggingDirective | java.lang.String
+type TaggingDirective = _TaggingDirective | String
 
-type TaggingHeader = java.lang.String
+type TaggingHeader = String
 
-type TargetBucket = java.lang.String
+type TargetBucket = String
 
-type TargetGrants = js.Array[typings.awsSdk.s3Mod.TargetGrant]
+type TargetGrants = js.Array[TargetGrant]
 
-type TargetPrefix = java.lang.String
+type TargetPrefix = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Standard_
@@ -769,17 +863,17 @@ type TargetPrefix = java.lang.String
   - typings.awsSdk.awsSdkStrings.Expedited
   - java.lang.String
 */
-type Tier = typings.awsSdk.s3Mod._Tier | java.lang.String
+type Tier = _Tier | String
 
-type TieringList = js.Array[typings.awsSdk.s3Mod.Tiering]
+type TieringList = js.Array[Tiering]
 
-type Token = java.lang.String
+type Token = String
 
-type TopicArn = java.lang.String
+type TopicArn = String
 
-type TopicConfigurationList = js.Array[typings.awsSdk.s3Mod.TopicConfiguration]
+type TopicConfigurationList = js.Array[TopicConfiguration]
 
-type TransitionList = js.Array[typings.awsSdk.s3Mod.Transition]
+type TransitionList = js.Array[Transition]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GLACIER
@@ -787,9 +881,10 @@ type TransitionList = js.Array[typings.awsSdk.s3Mod.Transition]
   - typings.awsSdk.awsSdkStrings.ONEZONE_IA
   - typings.awsSdk.awsSdkStrings.INTELLIGENT_TIERING
   - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE
+  - typings.awsSdk.awsSdkStrings.GLACIER_IR
   - java.lang.String
 */
-type TransitionStorageClass = typings.awsSdk.s3Mod._TransitionStorageClass | java.lang.String
+type TransitionStorageClass = _TransitionStorageClass | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CanonicalUser
@@ -797,25 +892,27 @@ type TransitionStorageClass = typings.awsSdk.s3Mod._TransitionStorageClass | jav
   - typings.awsSdk.awsSdkStrings.Group_
   - java.lang.String
 */
-type Type = typings.awsSdk.s3Mod._Type | java.lang.String
+type Type = _Type | String
 
-type URI = java.lang.String
+type URI = String
 
-type UploadIdMarker = java.lang.String
+type UploadIdMarker = String
 
-type UserMetadata = js.Array[typings.awsSdk.s3Mod.MetadataEntry]
+type UserMetadata = js.Array[MetadataEntry]
 
-type Value = java.lang.String
+type Value = String
 
-type VersionIdMarker = java.lang.String
+type VersionCount = Double
 
-type WebsiteRedirectLocation = java.lang.String
+type VersionIdMarker = String
 
-type Years = scala.Double
+type WebsiteRedirectLocation = String
+
+type Years = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2006-03-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.s3Mod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorInsertAudioCommandArguments")
 @js.native
-class ASPxClientHtmlEditorInsertAudioCommandArguments protected ()
+open class ASPxClientHtmlEditorInsertAudioCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
   /**
@@ -18,7 +18,7 @@ class ASPxClientHtmlEditorInsertAudioCommandArguments protected ()
     * @param elementToReplace The element that should be inserted.
     */
   def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor) = this()
-  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, elementToReplace: js.Any) = this()
+  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, elementToReplace: Any) = this()
   
   /**
     * Returns the name of the client-side command corresponding to the parameter.
@@ -60,7 +60,7 @@ class ASPxClientHtmlEditorInsertAudioCommandArguments protected ()
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
   /* CompleteClass */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any = js.native
   
   /**
     * Determines if the media player controls should be displayed.

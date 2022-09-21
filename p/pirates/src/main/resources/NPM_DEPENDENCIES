@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pirates" : "4.0.1"
+      "pirates" : "4.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "pirates" : "4.0.1"
+      "pirates" : "4.0.5"
     }
   ],
   "compile-devDependencies" : [

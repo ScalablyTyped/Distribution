@@ -9,10 +9,10 @@ Beautiful and accessible math in all browsers. MathJax is an open-source JavaScr
 | ------------------ | :-------------: |
 | Full name          | mathjax |
 | Keywords           | math, svg, mathml, tex, latex, asciimath, browser, node |
-| # releases         | 12 |
-| # dependents       | 67 |
-| # downloads        | 1321953 |
-| # stars            | 10 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 532369.0 |
+| # stars            | 8890.0 |
 
 ## Links
 - [Homepage](https://github.com/mathjax/MathJax#readme)

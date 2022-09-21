@@ -1,7 +1,7 @@
 package typings.awsLambda
 
 import typings.awsLambda.anon.AwsSdkVersion
-import typings.awsLambda.anon.ClientMetadata
+import typings.awsLambda.anon.CodeParameter
 import typings.awsLambda.anon.EmailMessage
 import typings.awsLambda.awsLambdaStrings.CustomMessage_AdminCreateUser
 import typings.awsLambda.awsLambdaStrings.CustomMessage_Authentication
@@ -22,7 +22,7 @@ object customMessageMod {
     extends StObject
        with BaseTriggerEvent[T] {
     
-    var request: ClientMetadata
+    var request: CodeParameter
     
     var response: EmailMessage
   }
@@ -31,7 +31,7 @@ object customMessageMod {
     inline def apply[T /* <: String */](
       callerContext: AwsSdkVersion,
       region: String,
-      request: ClientMetadata,
+      request: CodeParameter,
       response: EmailMessage,
       triggerSource: T,
       userName: String,
@@ -44,7 +44,7 @@ object customMessageMod {
     
     extension [Self <: BaseCustomMessageTriggerEvent[?], T /* <: String */](x: Self & BaseCustomMessageTriggerEvent[T]) {
       
-      inline def setRequest(value: ClientMetadata): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: CodeParameter): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setResponse(value: EmailMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
@@ -62,7 +62,7 @@ object customMessageMod {
   
   type CustomMessageTriggerEvent = CustomMessageSignUpTriggerEvent | CustomMessageAdminCreateUserTriggerEvent | CustomMessageResendCodeTriggerEvent | CustomMessageForgotPasswordTriggerEvent | CustomMessageUpdateUserAttributeTriggerEvent | CustomMessageVerifyUserAttributeTriggerEvent | CustomMessageAuthenticationTriggerEvent
   
-  type CustomMessageTriggerHandler = Handler[CustomMessageTriggerEvent, js.Any]
+  type CustomMessageTriggerHandler = Handler[CustomMessageTriggerEvent, Any]
   
   type CustomMessageUpdateUserAttributeTriggerEvent = BaseCustomMessageTriggerEvent[CustomMessage_UpdateUserAttribute]
   

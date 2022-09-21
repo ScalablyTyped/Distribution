@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateMembersRequest extends StObject {
   
   /**
-    * The list of accounts to associate with the Security Hub master account. For each account, the list includes the account ID and the email address.
+    * The list of accounts to associate with the Security Hub administrator account. For each account, the list includes the account ID and optionally the email address.
     */
-  var AccountDetails: js.UndefOr[AccountDetailsList] = js.undefined
+  var AccountDetails: AccountDetailsList
 }
 object CreateMembersRequest {
   
-  inline def apply(): CreateMembersRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(AccountDetails: AccountDetailsList): CreateMembersRequest = {
+    val __obj = js.Dynamic.literal(AccountDetails = AccountDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMembersRequest]
   }
   
@@ -22,8 +22,6 @@ object CreateMembersRequest {
     
     inline def setAccountDetails(value: AccountDetailsList): Self = StObject.set(x, "AccountDetails", value.asInstanceOf[js.Any])
     
-    inline def setAccountDetailsUndefined: Self = StObject.set(x, "AccountDetails", js.undefined)
-    
-    inline def setAccountDetailsVarargs(value: AccountDetails*): Self = StObject.set(x, "AccountDetails", js.Array(value :_*))
+    inline def setAccountDetailsVarargs(value: AccountDetails*): Self = StObject.set(x, "AccountDetails", js.Array(value*))
   }
 }

@@ -13,34 +13,34 @@ object permissionMod {
   
   @JSImport("ts3-nodejs-library/lib/util/Permission", "Permission")
   @js.native
-  class Permission[T /* <: js.Object */] protected () extends StObject {
+  open class Permission[T /* <: js.Object */] protected () extends StObject {
     def this(config: IConfig[T]) = this()
     
-    /* private */ var _negate: js.Any = js.native
+    /* private */ var _negate: Any = js.native
     
-    /* private */ var _perm: js.Any = js.native
+    /* private */ var _perm: Any = js.native
     
-    /* private */ var _skip: js.Any = js.native
+    /* private */ var _skip: Any = js.native
     
-    /* private */ var _value: js.Any = js.native
+    /* private */ var _value: Any = js.native
     
-    /* private */ var cmdRemove: js.Any = js.native
+    /* private */ var cmdRemove: Any = js.native
     
-    /* private */ var cmdUpdate: js.Any = js.native
+    /* private */ var cmdUpdate: Any = js.native
     
-    /* private */ var context: js.Any = js.native
+    /* private */ var context: Any = js.native
     
     /** retrieves the permission object */
     def get(): PermId | PermSid = js.native
     
     /** retrieves a raw object with permid */
-    /* private */ var getAsPermId: js.Any = js.native
+    /* private */ var getAsPermId: Any = js.native
     
     /** retrieves a raw object with permsid */
-    /* private */ var getAsPermSid: js.Any = js.native
+    /* private */ var getAsPermSid: Any = js.native
     
     /** retrieves skip and negate flags */
-    /* private */ var getFlags: js.Any = js.native
+    /* private */ var getFlags: Any = js.native
     
     /** retrieves wether negate has been set */
     def getNegate(): Boolean = js.native
@@ -49,7 +49,7 @@ object permissionMod {
     def getPerm(): js.UndefOr[String | Double] = js.native
     
     /** retrieves the correct permission name */
-    /* private */ var getPermName: js.Any = js.native
+    /* private */ var getPermName: Any = js.native
     
     /** retrieves wether skip has been set */
     def getSkip(): Boolean = js.native
@@ -65,20 +65,20 @@ object permissionMod {
     def perm(perm: Double): Permission[T] = js.native
     
     /** removes the specified permission */
-    def remove(): js.Promise[js.Array[js.Any]] = js.native
+    def remove(): js.Promise[js.Array[Any]] = js.native
     
     /** sets/gets the skip value */
     def skip(skip: Boolean): Permission[T] = js.native
     
-    /* private */ var teamspeak: js.Any = js.native
+    /* private */ var teamspeak: Any = js.native
     
     /** updates or adds the permission to the teamspeak server */
-    def update(): js.Promise[js.Array[js.Any]] = js.native
+    def update(): js.Promise[js.Array[Any]] = js.native
     
     /** sets/gets the value for the permission */
     def value(value: Double): Permission[T] = js.native
     
-    /* private */ var withSkipNegate: js.Any = js.native
+    /* private */ var withSkipNegate: Any = js.native
   }
   /* static members */
   object Permission {

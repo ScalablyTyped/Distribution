@@ -33,6 +33,6 @@ object ListStepThumbnailsResponse {
     
     inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
-    inline def setThumbnailsVarargs(value: Image*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
+    inline def setThumbnailsVarargs(value: Image*): Self = StObject.set(x, "thumbnails", js.Array(value*))
   }
 }

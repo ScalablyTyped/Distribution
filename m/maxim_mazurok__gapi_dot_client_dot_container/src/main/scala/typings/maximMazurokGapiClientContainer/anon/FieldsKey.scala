@@ -29,7 +29,7 @@ trait FieldsKey extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The parent (project and location) where the cluster will be created. Specified in the format `projects/∗/locations/ *`. */
+  /** The parent (project and location) where the cluster will be created. Specified in the format `projects/ *‍/locations/ *`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

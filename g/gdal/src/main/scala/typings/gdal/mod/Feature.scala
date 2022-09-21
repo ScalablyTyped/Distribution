@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "Feature")
 @js.native
-class Feature protected () extends StObject {
+open class Feature protected () extends StObject {
   def this(definition: FeatureDefn) = this()
   def this(definition: Layer) = this()
   

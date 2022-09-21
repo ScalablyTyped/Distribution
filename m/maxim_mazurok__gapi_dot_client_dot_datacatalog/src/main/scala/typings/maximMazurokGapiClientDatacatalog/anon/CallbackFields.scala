@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDatacatalog.anon
 
+import typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,14 +26,11 @@ trait CallbackFields extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /** Required. The name of the enum field value. */
+  var name: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Required. The name of the project and the template location [region](https://cloud.google.com/data-catalog/docs/concepts/regions. Example: *
-    * projects/{project_id}/locations/us-central1
-    */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -40,8 +38,8 @@ trait CallbackFields extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Required. The id of the tag template to create. */
-  var tagTemplateId: js.UndefOr[String] = js.undefined
+  /** Request body */
+  var resource: GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +49,8 @@ trait CallbackFields extends StObject {
 }
 object CallbackFields {
   
-  inline def apply(parent: String): CallbackFields = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest): CallbackFields = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFields]
   }
   
@@ -82,11 +80,11 @@ object CallbackFields {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -96,9 +94,7 @@ object CallbackFields {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setTagTemplateId(value: String): Self = StObject.set(x, "tagTemplateId", value.asInstanceOf[js.Any])
-    
-    inline def setTagTemplateIdUndefined: Self = StObject.set(x, "tagTemplateId", js.undefined)
+    inline def setResource(value: GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

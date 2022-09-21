@@ -8,5 +8,5 @@ object deleteApnsVoipChannelInputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteApnsVoipChannelInput", "DeleteApnsVoipChannelInput")
   @js.native
-  val DeleteApnsVoipChannelInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteApnsVoipChannelInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

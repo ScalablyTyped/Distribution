@@ -32,7 +32,7 @@ trait ApiId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Parent resource of the API, of the form: `projects/∗/locations/global` */
+  /** Required. Parent resource of the API, of the form: `projects/ *‍/locations/global` */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

@@ -1,6 +1,5 @@
 package typings.w3cWebUsb
 
-import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +8,13 @@ object global {
   
   @JSGlobal("USB")
   @js.native
-  class USB ()
+  open class USB ()
     extends StObject
        with typings.w3cWebUsb.USB
   
   @JSGlobal("USBAlternateInterface")
   @js.native
-  class USBAlternateInterface protected ()
+  open class USBAlternateInterface protected ()
     extends StObject
        with typings.w3cWebUsb.USBAlternateInterface {
     def this(deviceInterface: typings.w3cWebUsb.USBInterface, alternateSetting: Double) = this()
@@ -38,7 +37,7 @@ object global {
   
   @JSGlobal("USBConfiguration")
   @js.native
-  class USBConfiguration ()
+  open class USBConfiguration ()
     extends StObject
        with typings.w3cWebUsb.USBConfiguration {
     
@@ -51,7 +50,7 @@ object global {
   
   @JSGlobal("USBConnectionEvent")
   @js.native
-  class USBConnectionEvent protected ()
+  open class USBConnectionEvent protected ()
     extends StObject
        with typings.w3cWebUsb.USBConnectionEvent {
     def this(`type`: String, eventInitDict: USBConnectionEventInit) = this()
@@ -59,22 +58,22 @@ object global {
   
   @JSGlobal("USBDevice")
   @js.native
-  class USBDevice ()
+  open class USBDevice ()
     extends StObject
        with typings.w3cWebUsb.USBDevice
   
   @JSGlobal("USBInTransferResult")
   @js.native
-  class USBInTransferResult protected ()
+  open class USBInTransferResult protected ()
     extends StObject
        with typings.w3cWebUsb.USBInTransferResult {
     def this(status: USBTransferStatus) = this()
-    def this(status: USBTransferStatus, data: DataView) = this()
+    def this(status: USBTransferStatus, data: js.typedarray.DataView) = this()
   }
   
   @JSGlobal("USBInterface")
   @js.native
-  class USBInterface protected ()
+  open class USBInterface protected ()
     extends StObject
        with typings.w3cWebUsb.USBInterface {
     def this(configuration: typings.w3cWebUsb.USBConfiguration, interfaceNumber: Double) = this()
@@ -94,20 +93,20 @@ object global {
   
   @JSGlobal("USBIsochronousInTransferPacket")
   @js.native
-  class USBIsochronousInTransferPacket protected ()
+  open class USBIsochronousInTransferPacket protected ()
     extends StObject
        with typings.w3cWebUsb.USBIsochronousInTransferPacket {
     def this(status: USBTransferStatus) = this()
-    def this(status: USBTransferStatus, data: DataView) = this()
+    def this(status: USBTransferStatus, data: js.typedarray.DataView) = this()
   }
   
   @JSGlobal("USBIsochronousInTransferResult")
   @js.native
-  class USBIsochronousInTransferResult protected ()
+  open class USBIsochronousInTransferResult protected ()
     extends StObject
        with typings.w3cWebUsb.USBIsochronousInTransferResult {
     def this(packets: js.Array[typings.w3cWebUsb.USBIsochronousInTransferPacket]) = this()
-    def this(packets: js.Array[typings.w3cWebUsb.USBIsochronousInTransferPacket], data: DataView) = this()
+    def this(packets: js.Array[typings.w3cWebUsb.USBIsochronousInTransferPacket], data: js.typedarray.DataView) = this()
     
     /* CompleteClass */
     override val packets: js.Array[typings.w3cWebUsb.USBIsochronousInTransferPacket] = js.native
@@ -115,7 +114,7 @@ object global {
   
   @JSGlobal("USBIsochronousOutTransferPacket")
   @js.native
-  class USBIsochronousOutTransferPacket protected ()
+  open class USBIsochronousOutTransferPacket protected ()
     extends StObject
        with typings.w3cWebUsb.USBIsochronousOutTransferPacket {
     def this(status: USBTransferStatus) = this()
@@ -130,7 +129,7 @@ object global {
   
   @JSGlobal("USBIsochronousOutTransferResult")
   @js.native
-  class USBIsochronousOutTransferResult protected ()
+  open class USBIsochronousOutTransferResult protected ()
     extends StObject
        with typings.w3cWebUsb.USBIsochronousOutTransferResult {
     def this(packets: js.Array[typings.w3cWebUsb.USBIsochronousOutTransferPacket]) = this()
@@ -141,7 +140,7 @@ object global {
   
   @JSGlobal("USBOutTransferResult")
   @js.native
-  class USBOutTransferResult protected ()
+  open class USBOutTransferResult protected ()
     extends StObject
        with typings.w3cWebUsb.USBOutTransferResult {
     def this(status: USBTransferStatus) = this()

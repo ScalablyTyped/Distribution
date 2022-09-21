@@ -23,12 +23,12 @@ object _ThemeType {
     
     inline def setAdditional_backgrounds_alignmentUndefined: Self = StObject.set(x, "additional_backgrounds_alignment", js.undefined)
     
-    inline def setAdditional_backgrounds_alignmentVarargs(value: ThemeTypeAdditionalBackgroundsAlignment*): Self = StObject.set(x, "additional_backgrounds_alignment", js.Array(value :_*))
+    inline def setAdditional_backgrounds_alignmentVarargs(value: ThemeTypeAdditionalBackgroundsAlignment*): Self = StObject.set(x, "additional_backgrounds_alignment", js.Array(value*))
     
     inline def setAdditional_backgrounds_tiling(value: js.Array[ThemeTypeAdditionalBackgroundsTiling]): Self = StObject.set(x, "additional_backgrounds_tiling", value.asInstanceOf[js.Any])
     
     inline def setAdditional_backgrounds_tilingUndefined: Self = StObject.set(x, "additional_backgrounds_tiling", js.undefined)
     
-    inline def setAdditional_backgrounds_tilingVarargs(value: ThemeTypeAdditionalBackgroundsTiling*): Self = StObject.set(x, "additional_backgrounds_tiling", js.Array(value :_*))
+    inline def setAdditional_backgrounds_tilingVarargs(value: ThemeTypeAdditionalBackgroundsTiling*): Self = StObject.set(x, "additional_backgrounds_tiling", js.Array(value*))
   }
 }

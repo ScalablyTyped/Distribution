@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HistoryMessage extends StObject {
   
-  var entry: js.Any
+  var entry: Any
   
   var meta: js.UndefOr[js.Object] = js.undefined
   
@@ -14,14 +14,14 @@ trait HistoryMessage extends StObject {
 }
 object HistoryMessage {
   
-  inline def apply(entry: js.Any): HistoryMessage = {
+  inline def apply(entry: Any): HistoryMessage = {
     val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryMessage]
   }
   
   extension [Self <: HistoryMessage](x: Self) {
     
-    inline def setEntry(value: js.Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
     inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

@@ -19,6 +19,6 @@ object `2` {
     
     inline def setChannel(value: String | js.Array[String]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setChannelVarargs(value: String*): Self = StObject.set(x, "channel", js.Array(value :_*))
+    inline def setChannelVarargs(value: String*): Self = StObject.set(x, "channel", js.Array(value*))
   }
 }

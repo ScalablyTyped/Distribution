@@ -15,7 +15,7 @@ trait Loader
   @JSName("options")
   var options_Loader: LoaderOptions = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def show(): Unit = js.native
   

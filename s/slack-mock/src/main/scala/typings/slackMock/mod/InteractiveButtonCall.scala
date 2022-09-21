@@ -35,7 +35,7 @@ object InteractiveButtonCall {
     
     inline def setHeaders(value: InteractiveButtonHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

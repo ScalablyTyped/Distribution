@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object predicateMod {
   
-  type Predicate = js.Function1[/* hint */ js.Any, Boolean]
+  type Predicate = js.Function1[/* hint */ Any, Boolean]
 }

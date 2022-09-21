@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.anon.PartialFormGroupProps
 import typings.fundamentalReact.anon.WeakValidationMapFormGrou
 import typings.fundamentalReact.fundamentalReactStrings.FormGroup
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -16,8 +15,8 @@ object formGroupMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Forms/FormGroup.FormGroupProps> & {  displayName :'FormGroup'} */
   object default {
     
-    inline def apply(props: PropsWithChildren[FormGroupProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[FormGroupProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: FormGroupProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: FormGroupProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/Forms/FormGroup", JSImport.Default)
     @js.native
@@ -25,8 +24,8 @@ object formGroupMod {
     
     @JSImport("fundamental-react/lib/Forms/FormGroup", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Forms/FormGroup", "default.defaultProps")
     @js.native
@@ -46,7 +45,7 @@ object formGroupMod {
   
   trait FormGroupProps
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var disableStyles: js.UndefOr[Boolean] = js.undefined
   }

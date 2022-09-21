@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorOptions extends StObject {
+trait EditorOptions
+  extends StObject
+     with AllEditorOptions {
   
   var change: js.UndefOr[js.Function1[/* e */ EditorEvent, Unit]] = js.undefined
   
@@ -46,7 +48,7 @@ trait EditorOptions extends StObject {
   
   var serialization: js.UndefOr[EditorSerialization] = js.undefined
   
-  var stylesheets: js.UndefOr[js.Any] = js.undefined
+  var stylesheets: js.UndefOr[Any] = js.undefined
   
   var tools: js.UndefOr[js.Array[EditorTool | String]] = js.undefined
 }
@@ -139,7 +141,7 @@ object EditorOptions {
     
     inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
     
-    inline def setStylesheets(value: js.Any): Self = StObject.set(x, "stylesheets", value.asInstanceOf[js.Any])
+    inline def setStylesheets(value: Any): Self = StObject.set(x, "stylesheets", value.asInstanceOf[js.Any])
     
     inline def setStylesheetsUndefined: Self = StObject.set(x, "stylesheets", js.undefined)
     
@@ -147,6 +149,6 @@ object EditorOptions {
     
     inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
     
-    inline def setToolsVarargs(value: (EditorTool | String)*): Self = StObject.set(x, "tools", js.Array(value :_*))
+    inline def setToolsVarargs(value: (EditorTool | String)*): Self = StObject.set(x, "tools", js.Array(value*))
   }
 }

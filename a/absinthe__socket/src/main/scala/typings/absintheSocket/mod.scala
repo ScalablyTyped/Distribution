@@ -3,7 +3,6 @@ package typings.absintheSocket
 import typings.absintheSocket.anon.OnError
 import typings.phoenix.mod.Channel
 import typings.phoenix.mod.Socket
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,7 +74,7 @@ object mod {
       
       inline def setNotifiers(value: js.Array[Notifier[T, js.Object]]): Self = StObject.set(x, "notifiers", value.asInstanceOf[js.Any])
       
-      inline def setNotifiersVarargs(value: (Notifier[T, js.Object])*): Self = StObject.set(x, "notifiers", js.Array(value :_*))
+      inline def setNotifiersVarargs(value: (Notifier[T, js.Object])*): Self = StObject.set(x, "notifiers", js.Array(value*))
       
       inline def setPhoenixSocket(value: Socket): Self = StObject.set(x, "phoenixSocket", value.asInstanceOf[js.Any])
     }
@@ -153,11 +152,11 @@ object mod {
       
       inline def setActiveObservers(value: js.Array[Observer[Variables, Result]]): Self = StObject.set(x, "activeObservers", value.asInstanceOf[js.Any])
       
-      inline def setActiveObserversVarargs(value: (Observer[Variables, Result])*): Self = StObject.set(x, "activeObservers", js.Array(value :_*))
+      inline def setActiveObserversVarargs(value: (Observer[Variables, Result])*): Self = StObject.set(x, "activeObservers", js.Array(value*))
       
       inline def setCanceledObservers(value: js.Array[Observer[Variables, Result]]): Self = StObject.set(x, "canceledObservers", value.asInstanceOf[js.Any])
       
-      inline def setCanceledObserversVarargs(value: (Observer[Variables, Result])*): Self = StObject.set(x, "canceledObservers", js.Array(value :_*))
+      inline def setCanceledObserversVarargs(value: (Observer[Variables, Result])*): Self = StObject.set(x, "canceledObservers", js.Array(value*))
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -175,15 +174,15 @@ object mod {
   
   trait Observer[Variables, Result] extends StObject {
     
-    var onAbort: js.UndefOr[js.Function1[/* error */ Error, js.Any]] = js.undefined
+    var onAbort: js.UndefOr[js.Function1[/* error */ js.Error, Any]] = js.undefined
     
-    var onCancel: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onCancel: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, js.Any]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ js.Error, Any]] = js.undefined
     
-    var onResult: js.UndefOr[js.Function1[/* result */ Result, js.Any]] = js.undefined
+    var onResult: js.UndefOr[js.Function1[/* result */ Result, Any]] = js.undefined
     
-    var onStart: js.UndefOr[js.Function1[/* notifier */ Notifier[Variables, js.Object], js.Any]] = js.undefined
+    var onStart: js.UndefOr[js.Function1[/* notifier */ Notifier[Variables, js.Object], Any]] = js.undefined
   }
   object Observer {
     
@@ -194,23 +193,23 @@ object mod {
     
     extension [Self <: Observer[?, ?], Variables, Result](x: Self & (Observer[Variables, Result])) {
       
-      inline def setOnAbort(value: /* error */ Error => js.Any): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: /* error */ js.Error => Any): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
       inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      inline def setOnCancel(value: () => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      inline def setOnCancel(value: () => Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       
       inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      inline def setOnError(value: /* error */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.Error => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnResult(value: /* result */ Result => js.Any): Self = StObject.set(x, "onResult", js.Any.fromFunction1(value))
+      inline def setOnResult(value: /* result */ Result => Any): Self = StObject.set(x, "onResult", js.Any.fromFunction1(value))
       
       inline def setOnResultUndefined: Self = StObject.set(x, "onResult", js.undefined)
       
-      inline def setOnStart(value: /* notifier */ Notifier[Variables, js.Object] => js.Any): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* notifier */ Notifier[Variables, js.Object] => Any): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
       inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     }

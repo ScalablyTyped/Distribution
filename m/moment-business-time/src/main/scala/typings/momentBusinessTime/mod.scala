@@ -1,11 +1,12 @@
 package typings.momentBusinessTime
 
 import typings.moment.mod.unitOfTime.Base
+import typings.momentBusinessTime.momentBusinessTimeStrings.close
+import typings.momentBusinessTime.momentBusinessTimeStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/*~ Here, declare the same module as the one you imported above */
 /* augmented module */
 object mod {
   
@@ -28,7 +29,7 @@ object mod {
       
       inline def setHolidaysUndefined: Self = StObject.set(x, "holidays", js.undefined)
       
-      inline def setHolidaysVarargs(value: String*): Self = StObject.set(x, "holidays", js.Array(value :_*))
+      inline def setHolidaysVarargs(value: String*): Self = StObject.set(x, "holidays", js.Array(value*))
       
       inline def setWorkinghours(value: WorkingHoursMap): Self = StObject.set(x, "workinghours", value.asInstanceOf[js.Any])
       
@@ -45,9 +46,21 @@ object mod {
     
     def isWorkingTime(): Boolean = js.native
     
+    /**
+      * Returns a new object with moment and transition properties representing
+      * the most recent moment when the business transitioned between 'open' and 'closed' states.
+      */
+    def lastTransitionTime(): TransitionTime = js.native
+    
     def lastWorkingDay(): Moment = js.native
     
     def lastWorkingTime(): Moment = js.native
+    
+    /**
+      * Returns a new object with moment and transition properties representing
+      * the next moment when the business will transition between 'open' and 'closed' states.
+      */
+    def nextTransitionTime(): TransitionTime = js.native
     
     def nextWorkingDay(): Moment = js.native
     
@@ -57,6 +70,27 @@ object mod {
     
     def workingDiff(moment: Moment, unit: Base): Double = js.native
     def workingDiff(moment: Moment, unit: Base, fractions: Boolean): Double = js.native
+  }
+  
+  trait TransitionTime extends StObject {
+    
+    var moment: Moment
+    
+    var transition: open | close
+  }
+  object TransitionTime {
+    
+    inline def apply(moment: Moment, transition: open | close): TransitionTime = {
+      val __obj = js.Dynamic.literal(moment = moment.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TransitionTime]
+    }
+    
+    extension [Self <: TransitionTime](x: Self) {
+      
+      inline def setMoment(value: Moment): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
+      
+      inline def setTransition(value: open | close): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    }
   }
   
   trait WorkingHoursMap extends StObject {
@@ -95,43 +129,43 @@ object mod {
       
       inline def set0Null: Self = StObject.set(x, "0", null)
       
-      inline def set0Varargs(value: String*): Self = StObject.set(x, "0", js.Array(value :_*))
+      inline def set0Varargs(value: String*): Self = StObject.set(x, "0", js.Array(value*))
       
       inline def set1(value: js.Array[String]): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
       inline def set1Null: Self = StObject.set(x, "1", null)
       
-      inline def set1Varargs(value: String*): Self = StObject.set(x, "1", js.Array(value :_*))
+      inline def set1Varargs(value: String*): Self = StObject.set(x, "1", js.Array(value*))
       
       inline def set2(value: js.Array[String]): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
       inline def set2Null: Self = StObject.set(x, "2", null)
       
-      inline def set2Varargs(value: String*): Self = StObject.set(x, "2", js.Array(value :_*))
+      inline def set2Varargs(value: String*): Self = StObject.set(x, "2", js.Array(value*))
       
       inline def set3(value: js.Array[String]): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
       inline def set3Null: Self = StObject.set(x, "3", null)
       
-      inline def set3Varargs(value: String*): Self = StObject.set(x, "3", js.Array(value :_*))
+      inline def set3Varargs(value: String*): Self = StObject.set(x, "3", js.Array(value*))
       
       inline def set4(value: js.Array[String]): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
       inline def set4Null: Self = StObject.set(x, "4", null)
       
-      inline def set4Varargs(value: String*): Self = StObject.set(x, "4", js.Array(value :_*))
+      inline def set4Varargs(value: String*): Self = StObject.set(x, "4", js.Array(value*))
       
       inline def set5(value: js.Array[String]): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
       inline def set5Null: Self = StObject.set(x, "5", null)
       
-      inline def set5Varargs(value: String*): Self = StObject.set(x, "5", js.Array(value :_*))
+      inline def set5Varargs(value: String*): Self = StObject.set(x, "5", js.Array(value*))
       
       inline def set6(value: js.Array[String]): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
       
       inline def set6Null: Self = StObject.set(x, "6", null)
       
-      inline def set6Varargs(value: String*): Self = StObject.set(x, "6", js.Array(value :_*))
+      inline def set6Varargs(value: String*): Self = StObject.set(x, "6", js.Array(value*))
     }
   }
 }

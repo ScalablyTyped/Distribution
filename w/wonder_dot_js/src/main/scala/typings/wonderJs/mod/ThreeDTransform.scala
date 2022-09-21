@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "ThreeDTransform")
 @js.native
-class ThreeDTransform ()
+open class ThreeDTransform ()
   extends typings.wonderJs.threeDTransformMod.ThreeDTransform
 /* static members */
 object ThreeDTransform {

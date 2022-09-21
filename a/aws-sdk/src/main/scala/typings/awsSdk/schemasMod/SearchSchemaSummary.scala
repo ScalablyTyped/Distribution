@@ -51,6 +51,6 @@ object SearchSchemaSummary {
     
     inline def setSchemaVersionsUndefined: Self = StObject.set(x, "SchemaVersions", js.undefined)
     
-    inline def setSchemaVersionsVarargs(value: SearchSchemaVersionSummary*): Self = StObject.set(x, "SchemaVersions", js.Array(value :_*))
+    inline def setSchemaVersionsVarargs(value: SearchSchemaVersionSummary*): Self = StObject.set(x, "SchemaVersions", js.Array(value*))
   }
 }

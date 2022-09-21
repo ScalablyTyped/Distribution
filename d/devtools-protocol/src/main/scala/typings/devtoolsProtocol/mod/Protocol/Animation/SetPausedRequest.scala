@@ -27,7 +27,7 @@ object SetPausedRequest {
     
     inline def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    inline def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value*))
     
     inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
   }

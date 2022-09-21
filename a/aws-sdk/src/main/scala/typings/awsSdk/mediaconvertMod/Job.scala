@@ -29,7 +29,7 @@ trait Job extends StObject {
   /**
     * The time, in Unix epoch format in seconds, when the job got created.
     */
-  var CreatedAt: js.UndefOr[timestampUnix] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A job's phase can be PROBING, TRANSCODING OR UPLOADING
@@ -156,7 +156,7 @@ object Job {
     
     inline def setBillingTagsSourceUndefined: Self = StObject.set(x, "BillingTagsSource", js.undefined)
     
-    inline def setCreatedAt(value: timestampUnix): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -176,7 +176,7 @@ object Job {
     
     inline def setHopDestinationsUndefined: Self = StObject.set(x, "HopDestinations", js.undefined)
     
-    inline def setHopDestinationsVarargs(value: HopDestination*): Self = StObject.set(x, "HopDestinations", js.Array(value :_*))
+    inline def setHopDestinationsVarargs(value: HopDestination*): Self = StObject.set(x, "HopDestinations", js.Array(value*))
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
@@ -198,7 +198,7 @@ object Job {
     
     inline def setOutputGroupDetailsUndefined: Self = StObject.set(x, "OutputGroupDetails", js.undefined)
     
-    inline def setOutputGroupDetailsVarargs(value: OutputGroupDetail*): Self = StObject.set(x, "OutputGroupDetails", js.Array(value :_*))
+    inline def setOutputGroupDetailsVarargs(value: OutputGroupDetail*): Self = StObject.set(x, "OutputGroupDetails", js.Array(value*))
     
     inline def setPriority(value: integerMinNegative50Max50): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
@@ -210,7 +210,7 @@ object Job {
     
     inline def setQueueTransitionsUndefined: Self = StObject.set(x, "QueueTransitions", js.undefined)
     
-    inline def setQueueTransitionsVarargs(value: QueueTransition*): Self = StObject.set(x, "QueueTransitions", js.Array(value :_*))
+    inline def setQueueTransitionsVarargs(value: QueueTransition*): Self = StObject.set(x, "QueueTransitions", js.Array(value*))
     
     inline def setQueueUndefined: Self = StObject.set(x, "Queue", js.undefined)
     

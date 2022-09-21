@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientTagmanager.anon
 
-import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Workspace
+import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Zone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ trait OauthtokenParent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** GTM parent Container's API relative path. Example: accounts/{account_id}/containers/{container_id} */
+  /** GTM Workspace's API relative path. Example: accounts/{account_id}/containers/{container_id}/workspaces/{workspace_id} */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,7 +39,7 @@ trait OauthtokenParent extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Workspace
+  var resource: Zone
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait OauthtokenParent extends StObject {
 }
 object OauthtokenParent {
   
-  inline def apply(parent: String, resource: Workspace): OauthtokenParent = {
+  inline def apply(parent: String, resource: Zone): OauthtokenParent = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthtokenParent]
   }
@@ -94,7 +94,7 @@ object OauthtokenParent {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Workspace): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Zone): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

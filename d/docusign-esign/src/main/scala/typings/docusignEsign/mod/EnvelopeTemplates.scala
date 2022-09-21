@@ -24,6 +24,6 @@ object EnvelopeTemplates {
     
     inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    inline def setTemplatesVarargs(value: (/* Summary of a template request. */ TemplateSummary)*): Self = StObject.set(x, "templates", js.Array(value :_*))
+    inline def setTemplatesVarargs(value: (/* Summary of a template request. */ TemplateSummary)*): Self = StObject.set(x, "templates", js.Array(value*))
   }
 }

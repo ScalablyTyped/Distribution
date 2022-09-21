@@ -27,6 +27,6 @@ object IDataRecord {
     
     inline def setQValues(value: js.Array[String]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    inline def setQValuesVarargs(value: String*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: String*): Self = StObject.set(x, "qValues", js.Array(value*))
   }
 }

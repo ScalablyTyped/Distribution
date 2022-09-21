@@ -10,10 +10,10 @@ Low level bindings for libsodium
 | ------------------ | :-------------: |
 | Full name          | sodium-native |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 114 |
-| # downloads        | 714498 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 236339.33333333334 |
+| # stars            | 262.0 |
 
 ## Links
 - [Homepage](https://github.com/sodium-friends/sodium-native)

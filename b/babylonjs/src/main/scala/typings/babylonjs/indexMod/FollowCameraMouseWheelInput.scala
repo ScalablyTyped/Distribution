@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "FollowCameraMouseWheelInput")
 @js.native
-class FollowCameraMouseWheelInput ()
+open class FollowCameraMouseWheelInput ()
   extends typings.babylonjs.babylonjsMod.FollowCameraMouseWheelInput

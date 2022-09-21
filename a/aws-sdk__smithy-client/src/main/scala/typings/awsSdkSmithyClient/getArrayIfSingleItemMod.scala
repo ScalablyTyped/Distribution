@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getArrayIfSingleItemMod {
   
-  @JSImport("@aws-sdk/smithy-client/dist/cjs/get-array-if-single-item", JSImport.Namespace)
+  @JSImport("@aws-sdk/smithy-client/dist-types/get-array-if-single-item", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -11,7 +11,7 @@ trait IgTreeGridColumnMoving
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies if header cells should include an additional button that opens a moving helper dropdown.
@@ -316,7 +316,7 @@ object IgTreeGridColumnMoving {
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: IgGridColumnMovingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridColumnMovingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
     inline def setDialogWidget(value: String): Self = StObject.set(x, "dialogWidget", value.asInstanceOf[js.Any])
     

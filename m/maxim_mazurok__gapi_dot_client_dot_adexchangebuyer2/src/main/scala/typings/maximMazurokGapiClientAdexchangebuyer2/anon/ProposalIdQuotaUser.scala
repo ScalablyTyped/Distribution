@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.anon
 
-import typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2.ResumeProposalRequest
+import typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2.PauseProposalRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,14 +35,14 @@ trait ProposalIdQuotaUser extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** The ID of the proposal to resume. */
+  /** The ID of the proposal to pause. */
   var proposalId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ResumeProposalRequest
+  var resource: PauseProposalRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait ProposalIdQuotaUser extends StObject {
 }
 object ProposalIdQuotaUser {
   
-  inline def apply(accountId: String, proposalId: String, resource: ResumeProposalRequest): ProposalIdQuotaUser = {
+  inline def apply(accountId: String, proposalId: String, resource: PauseProposalRequest): ProposalIdQuotaUser = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], proposalId = proposalId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProposalIdQuotaUser]
   }
@@ -99,7 +99,7 @@ object ProposalIdQuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ResumeProposalRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: PauseProposalRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

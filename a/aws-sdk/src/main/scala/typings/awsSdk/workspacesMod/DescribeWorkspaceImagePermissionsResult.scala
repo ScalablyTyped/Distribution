@@ -12,12 +12,12 @@ trait DescribeWorkspaceImagePermissionsResult extends StObject {
   var ImageId: js.UndefOr[WorkspaceImageId] = js.undefined
   
   /**
-    * The identifiers of the AWS accounts that the image has been shared with.
+    * The identifiers of the Amazon Web Services accounts that the image has been shared with.
     */
   var ImagePermissions: js.UndefOr[typings.awsSdk.workspacesMod.ImagePermissions] = js.undefined
   
   /**
-    * The token to use to retrieve the next set of results, or null if no more results are available.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -38,7 +38,7 @@ object DescribeWorkspaceImagePermissionsResult {
     
     inline def setImagePermissionsUndefined: Self = StObject.set(x, "ImagePermissions", js.undefined)
     
-    inline def setImagePermissionsVarargs(value: ImagePermission*): Self = StObject.set(x, "ImagePermissions", js.Array(value :_*))
+    inline def setImagePermissionsVarargs(value: ImagePermission*): Self = StObject.set(x, "ImagePermissions", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -296,19 +296,19 @@ trait PlusWebview extends StObject {
   def create(): PlusWebviewWebviewObject = js.native
   def create(url: String): PlusWebviewWebviewObject = js.native
   def create(url: String, id: String): PlusWebviewWebviewObject = js.native
-  def create(url: String, id: String, styles: Unit, extras: js.Any): PlusWebviewWebviewObject = js.native
+  def create(url: String, id: String, styles: Unit, extras: Any): PlusWebviewWebviewObject = js.native
   def create(url: String, id: String, styles: PlusWebviewWebviewStyles): PlusWebviewWebviewObject = js.native
-  def create(url: String, id: String, styles: PlusWebviewWebviewStyles, extras: js.Any): PlusWebviewWebviewObject = js.native
-  def create(url: String, id: Unit, styles: Unit, extras: js.Any): PlusWebviewWebviewObject = js.native
+  def create(url: String, id: String, styles: PlusWebviewWebviewStyles, extras: Any): PlusWebviewWebviewObject = js.native
+  def create(url: String, id: Unit, styles: Unit, extras: Any): PlusWebviewWebviewObject = js.native
   def create(url: String, id: Unit, styles: PlusWebviewWebviewStyles): PlusWebviewWebviewObject = js.native
-  def create(url: String, id: Unit, styles: PlusWebviewWebviewStyles, extras: js.Any): PlusWebviewWebviewObject = js.native
+  def create(url: String, id: Unit, styles: PlusWebviewWebviewStyles, extras: Any): PlusWebviewWebviewObject = js.native
   def create(url: Unit, id: String): PlusWebviewWebviewObject = js.native
-  def create(url: Unit, id: String, styles: Unit, extras: js.Any): PlusWebviewWebviewObject = js.native
+  def create(url: Unit, id: String, styles: Unit, extras: Any): PlusWebviewWebviewObject = js.native
   def create(url: Unit, id: String, styles: PlusWebviewWebviewStyles): PlusWebviewWebviewObject = js.native
-  def create(url: Unit, id: String, styles: PlusWebviewWebviewStyles, extras: js.Any): PlusWebviewWebviewObject = js.native
-  def create(url: Unit, id: Unit, styles: Unit, extras: js.Any): PlusWebviewWebviewObject = js.native
+  def create(url: Unit, id: String, styles: PlusWebviewWebviewStyles, extras: Any): PlusWebviewWebviewObject = js.native
+  def create(url: Unit, id: Unit, styles: Unit, extras: Any): PlusWebviewWebviewObject = js.native
   def create(url: Unit, id: Unit, styles: PlusWebviewWebviewStyles): PlusWebviewWebviewObject = js.native
-  def create(url: Unit, id: Unit, styles: PlusWebviewWebviewStyles, extras: js.Any): PlusWebviewWebviewObject = js.native
+  def create(url: Unit, id: Unit, styles: PlusWebviewWebviewStyles, extras: Any): PlusWebviewWebviewObject = js.native
   
   /**
     * 获取当前窗口的WebviewObject对象
@@ -426,7 +426,7 @@ trait PlusWebview extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def prefetchURLs(): Unit = js.native
-  def prefetchURLs(urls: js.Array[js.Any]): Unit = js.native
+  def prefetchURLs(urls: js.Array[Any]): Unit = js.native
   
   /**
     * 显示Webview窗口
@@ -571,23 +571,23 @@ trait PlusWebview extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   def startAnimation(): Unit = js.native
-  def startAnimation(options: Unit, otherOptions: Unit, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def startAnimation(options: Unit, otherOptions: Unit, callback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def startAnimation(options: Unit, otherOptions: PlusWebviewWebviewAnimationOptions): Unit = js.native
   def startAnimation(
     options: Unit,
     otherOptions: PlusWebviewWebviewAnimationOptions,
-    callback: js.Function1[/* result */ js.Any, Unit]
+    callback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def startAnimation(options: PlusWebviewWebviewAnimationOptions): Unit = js.native
   def startAnimation(
     options: PlusWebviewWebviewAnimationOptions,
     otherOptions: Unit,
-    callback: js.Function1[/* result */ js.Any, Unit]
+    callback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def startAnimation(options: PlusWebviewWebviewAnimationOptions, otherOptions: PlusWebviewWebviewAnimationOptions): Unit = js.native
   def startAnimation(
     options: PlusWebviewWebviewAnimationOptions,
     otherOptions: PlusWebviewWebviewAnimationOptions,
-    callback: js.Function1[/* result */ js.Any, Unit]
+    callback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
 }

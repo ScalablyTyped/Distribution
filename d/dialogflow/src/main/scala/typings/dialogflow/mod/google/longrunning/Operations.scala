@@ -8,7 +8,6 @@ import typings.dialogflow.mod.google.longrunning.Operations.WaitOperationCallbac
 import typings.dialogflow.mod.google.protobuf.Empty
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.rpc.Service
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents an Operations */
 @JSImport("dialogflow/protos/protos", "google.longrunning.Operations")
 @js.native
-class Operations protected () extends Service {
+open class Operations protected () extends Service {
   /**
     * Constructs a new Operations service.
     * @param rpcImpl RPC implementation
@@ -117,33 +116,33 @@ object Operations {
     * @param error Error, if any
     * @param [response] Empty
     */
-  type CancelOperationCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type CancelOperationCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
     * Callback as used by {@link google.longrunning.Operations#deleteOperation}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteOperationCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteOperationCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
     * Callback as used by {@link google.longrunning.Operations#getOperation}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type GetOperationCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type GetOperationCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
   
   /**
     * Callback as used by {@link google.longrunning.Operations#listOperations}.
     * @param error Error, if any
     * @param [response] ListOperationsResponse
     */
-  type ListOperationsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[ListOperationsResponse], Unit]
+  type ListOperationsCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[ListOperationsResponse], Unit]
   
   /**
     * Callback as used by {@link google.longrunning.Operations#waitOperation}.
     * @param error Error, if any
     * @param [response] Operation
     */
-  type WaitOperationCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Operation], Unit]
+  type WaitOperationCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Operation], Unit]
 }

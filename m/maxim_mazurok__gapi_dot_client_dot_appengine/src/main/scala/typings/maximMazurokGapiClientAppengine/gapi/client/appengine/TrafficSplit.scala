@@ -15,7 +15,7 @@ trait TrafficSplit extends StObject {
   var allocations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.TrafficSplit & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.TrafficSplit & TopLevel[Any]
   ] = js.undefined
   
   /** Mechanism used to determine which version a request is sent to. The traffic selection algorithm will be stable for either type until allocations are changed. */
@@ -33,7 +33,7 @@ object TrafficSplit {
     inline def setAllocations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.TrafficSplit & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.TrafficSplit & TopLevel[Any]
     ): Self = StObject.set(x, "allocations", value.asInstanceOf[js.Any])
     
     inline def setAllocationsUndefined: Self = StObject.set(x, "allocations", js.undefined)

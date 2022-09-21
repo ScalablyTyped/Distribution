@@ -10,13 +10,13 @@ object dtmfMod {
   
   @JSImport("sip.js/lib/api/dtmf", "DTMF")
   @js.native
-  class DTMF protected () extends Info {
+  open class DTMF protected () extends Info {
     /** @internal */
     def this(incomingInfoRequest: IncomingInfoRequest, tone: String, duration: Double) = this()
     
-    /* private */ var _duration: js.Any = js.native
+    /* private */ var _duration: Any = js.native
     
-    /* private */ var _tone: js.Any = js.native
+    /* private */ var _tone: Any = js.native
     
     def duration: Double = js.native
     

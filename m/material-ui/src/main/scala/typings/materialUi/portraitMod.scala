@@ -10,10 +10,10 @@ object portraitMod {
   
   @JSImport("material-ui/svg-icons/image/portrait", JSImport.Default)
   @js.native
-  class default () extends ImagePortrait
+  open class default () extends ImagePortrait
   
   @JSImport("material-ui/svg-icons/image/portrait", "ImagePortrait")
   @js.native
-  class ImagePortrait ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImagePortrait ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

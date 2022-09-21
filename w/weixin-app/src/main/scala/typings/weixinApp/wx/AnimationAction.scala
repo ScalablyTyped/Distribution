@@ -21,7 +21,7 @@ object AnimationAction {
     
     inline def setAnimates(value: js.Array[Animate]): Self = StObject.set(x, "animates", value.asInstanceOf[js.Any])
     
-    inline def setAnimatesVarargs(value: Animate*): Self = StObject.set(x, "animates", js.Array(value :_*))
+    inline def setAnimatesVarargs(value: Animate*): Self = StObject.set(x, "animates", js.Array(value*))
     
     inline def setOption(value: AnimationActionOption): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
   }

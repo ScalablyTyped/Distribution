@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import typings.oracledb.anon.Hint
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -107,41 +108,47 @@ trait SodaCollection extends StObject {
   /**
     * This is similar to insertOne() however it accepts an array of the Objects or SodaDocuments that insertOne() accepts.
     * When inserting multiple documents, using insertMany() is recommended in preference to insertOne().
-    * 
+    *
     * If an error occurs, the offset attribute on the Error objects will contain the number of documents that were successfully inserted.
     * Subsequent documents in the input array will not be inserted
-    * 
+    *
     * This method is in Preview status and should not be used in production.
-    * 
+    *
     * @param documents The documents to insert.
-    * 
+    *
     * @requires Oracle Client 18.5 or higher
     * @since 4.0
     */
-  def insertMany(documents: js.Array[SodaDocument | (Record[String, js.Any])]): js.Promise[Unit] = js.native
+  def insertMany(documents: js.Array[SodaDocument | (Record[String, Any])]): js.Promise[Unit] = js.native
   def insertMany(
-    documents: js.Array[SodaDocument | (Record[String, js.Any])],
+    documents: js.Array[SodaDocument | (Record[String, Any])],
     callback: js.Function1[/* error */ DBError, Unit]
   ): Unit = js.native
   
   /**
     * Similar to sodaCollection.insertMany() but also returns an array of the inserted documents so system managed properties,
     * such as the keys (in default collections), can be found. Content itself is not returned for performance reasons.
-    * 
+    *
     * When inserting multiple documents, using insertManyAndGet() is recommended in preference to insertOneAndGet().
-    * 
+    *
     * This method is in Preview status and should not be used in production.
-    * 
-    * @param documents 
-    * 
+    *
+    * @param documents
+    *
     * @required Oracle Client 18.5 or higher
     * @since 4.0
     */
-  def insertManyAndGet(documents: js.Array[SodaDocument | (Record[String, js.Any])]): js.Promise[js.Array[SodaDocument]] = js.native
+  def insertManyAndGet(documents: js.Array[SodaDocument | (Record[String, Any])]): js.Promise[js.Array[SodaDocument]] = js.native
   def insertManyAndGet(
-    documents: js.Array[SodaDocument | (Record[String, js.Any])],
+    documents: js.Array[SodaDocument | (Record[String, Any])],
     callback: js.Function2[/* error */ DBError, /* documents */ js.Array[SodaDocument], Unit]
   ): Unit = js.native
+  def insertManyAndGet(
+    documents: js.Array[SodaDocument | (Record[String, Any])],
+    callback: js.Function2[/* error */ DBError, /* documents */ js.Array[SodaDocument], Unit],
+    options: Hint
+  ): Unit = js.native
+  def insertManyAndGet(documents: js.Array[SodaDocument | (Record[String, Any])], options: Hint): js.Promise[js.Array[SodaDocument]] = js.native
   
   /**
     * Inserts a given document to the collection. The input document can be either a JavaScript object representing
@@ -161,8 +168,8 @@ trait SodaCollection extends StObject {
     */
   def insertOne(newDocument: SodaDocument): js.Promise[Unit] = js.native
   def insertOne(newDocument: SodaDocument, callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
-  def insertOne(newDocument: Record[String, js.Any]): js.Promise[Unit] = js.native
-  def insertOne(newDocument: Record[String, js.Any], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
+  def insertOne(newDocument: Record[String, Any]): js.Promise[Unit] = js.native
+  def insertOne(newDocument: Record[String, Any], callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   
   /**
     * Similar to sodaCollection.insertOne() but also returns the inserted document so system managed properties,
@@ -188,11 +195,23 @@ trait SodaCollection extends StObject {
     newDocument: SodaDocument,
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
   ): Unit = js.native
-  def insertOneAndGet(newDocument: Record[String, js.Any]): js.Promise[SodaDocument] = js.native
   def insertOneAndGet(
-    newDocument: Record[String, js.Any],
+    newDocument: SodaDocument,
+    callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit],
+    options: Hint
+  ): Unit = js.native
+  def insertOneAndGet(newDocument: SodaDocument, options: Hint): js.Promise[SodaDocument] = js.native
+  def insertOneAndGet(newDocument: Record[String, Any]): js.Promise[SodaDocument] = js.native
+  def insertOneAndGet(
+    newDocument: Record[String, Any],
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit]
   ): Unit = js.native
+  def insertOneAndGet(
+    newDocument: Record[String, Any],
+    callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, Unit],
+    options: Hint
+  ): Unit = js.native
+  def insertOneAndGet(newDocument: Record[String, Any], options: Hint): js.Promise[SodaDocument] = js.native
   
   /**
     * Metadata of the current collection.
@@ -211,10 +230,10 @@ trait SodaCollection extends StObject {
   
   /**
     * This method behaves like sodaCollection.insertOne() with the exception that if a document with the same key already exists, then it is updated instead.
-    * 
+    *
     * The collection must use client-assigned keys keys, which is why save() accepts only a SodaDocument, unlike insertOne(). If the collection is not configured
     * with client-assigned keys, then the behavior is exactly the same as sodaCollection.insertOne().
-    * 
+    *
     * @since 5.0
     */
   def save(document: SodaDocument): js.Promise[SodaDocument] = js.native
@@ -222,18 +241,24 @@ trait SodaCollection extends StObject {
   
   /**
     * This method behaves like sodaCollection.insertOneAndGet() with the exception that if a document with the same key already exists, then it is updated instead.
-    * 
+    *
     * The collection must use client-assigned keys keys, which is why saveAndGet() accepts only a SodaDocument, unlike insertOneAndGet(). If the collection is not
     * configured with client-assigned keys, then the behavior is exactly the same as sodaCollection.insertOneAndGet().
-    * 
+    *
     * @since 5.0
     */
   def saveAndGet(document: SodaDocument): js.Promise[SodaDocument] = js.native
   def saveAndGet(document: SodaDocument, cb: js.Function2[/* err */ DBError, /* doc */ SodaDocument, Unit]): Unit = js.native
+  def saveAndGet(
+    document: SodaDocument,
+    cb: js.Function2[/* err */ DBError, /* doc */ SodaDocument, Unit],
+    options: Hint
+  ): Unit = js.native
+  def saveAndGet(document: SodaDocument, options: Hint): js.Promise[SodaDocument] = js.native
   
   /**
     * This method truncates a collection, removing all documents. The collection will not be deleted.
-    * 
+    *
     * @since 5.0
     */
   def truncate(): js.Promise[Unit] = js.native

@@ -98,7 +98,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("spotify-web-api-js", JSImport.Default)
     @js.native
-    class ^ ()
+    open class ^ ()
       extends StObject
          with SpotifyWebApiJs
     
@@ -146,7 +146,7 @@ object mod {
       * An optional callback that receives 2 parameters. The first
       * one is the error object (null if no error), and the second is the value if the request succeeded.
       */
-    type ResultsCallback[T] = js.Function2[/* error */ ErrorObject, /* value */ T, js.Any]
+    type ResultsCallback[T] = js.Function2[/* error */ ErrorObject, /* value */ T, Any]
     
     /**
       * Describes an instance of SpotifyApi
@@ -574,8 +574,8 @@ object mod {
         * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
         * one is the error object (null if no error), and the second is the value if the request succeeded.
         */
-      def getAudioAnalysisForTrack(trackId: String): js.Promise[js.Any] = js.native
-      def getAudioAnalysisForTrack(trackId: String, callback: ResultsCallback[js.Any]): js.Promise[js.Any] = js.native
+      def getAudioAnalysisForTrack(trackId: String): js.Promise[Any] = js.native
+      def getAudioAnalysisForTrack(trackId: String, callback: ResultsCallback[Any]): js.Promise[Any] = js.native
       
       /**
         * Get audio features for a single track identified by its unique Spotify ID.
@@ -1718,6 +1718,6 @@ object mod {
       extends StObject
          with Instantiable0[SpotifyWebApiJs]
     
-    type VoidResultsCallback = js.Function1[/* error */ ErrorObject, js.Any]
+    type VoidResultsCallback = js.Function1[/* error */ ErrorObject, Any]
   }
 }

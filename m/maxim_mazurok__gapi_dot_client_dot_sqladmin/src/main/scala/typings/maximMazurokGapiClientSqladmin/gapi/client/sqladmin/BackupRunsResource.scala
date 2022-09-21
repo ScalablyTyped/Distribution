@@ -20,11 +20,11 @@ trait BackupRunsResource extends StObject {
   def get(): Request[BackupRun] = js.native
   def get(request: Accesstoken): Request[BackupRun] = js.native
   
-  /** Creates a new backup run on demand. This method is applicable only to Second Generation instances. */
+  /** Creates a new backup run on demand. */
   def insert(request: Alt): Request[Operation] = js.native
   def insert(request: Callback, body: BackupRun): Request[Operation] = js.native
   
-  /** Lists all backup runs associated with a given instance and configuration in the reverse chronological order of the backup initiation time. */
+  /** Lists all backup runs associated with the project or a given instance and configuration in the reverse chronological order of the backup initiation time. */
   def list(): Request[BackupRunsListResponse] = js.native
   def list(request: Fields): Request[BackupRunsListResponse] = js.native
 }

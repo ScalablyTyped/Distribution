@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An instruction that writes records. Takes one input, produces no outputs.
-  */
 trait SchemaWriteInstruction extends StObject {
   
   /**

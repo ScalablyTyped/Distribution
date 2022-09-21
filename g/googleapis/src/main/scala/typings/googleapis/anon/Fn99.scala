@@ -1,11 +1,9 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v1
+import typings.googleapis.driveV2Mod.driveV2.Drive
+import typings.googleapis.driveV2Mod.driveV2.Options
 import typings.googleapis.googleapisStrings.v2
-import typings.googleapis.googleapisStrings.v4
-import typings.googleapis.googleapisStrings.v5
-import typings.googleapis.pagespeedonlineV1Mod.pagespeedonlineV1.Options
-import typings.googleapis.pagespeedonlineV1Mod.pagespeedonlineV1.Pagespeedonline
+import typings.googleapis.googleapisStrings.v3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn99 extends StObject {
   
-  def apply(options: Options): Pagespeedonline = js.native
-  def apply(options: typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Options): typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline = js.native
-  def apply(options: typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Options): typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline = js.native
-  def apply(options: typings.googleapis.v5Mod.pagespeedonlineV5.Options): typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline = js.native
-  def apply(version: v1): Pagespeedonline = js.native
-  def apply(version: v2): typings.googleapis.pagespeedonlineV2Mod.pagespeedonlineV2.Pagespeedonline = js.native
-  def apply(version: v4): typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.Pagespeedonline = js.native
-  def apply(version: v5): typings.googleapis.v5Mod.pagespeedonlineV5.Pagespeedonline = js.native
+  def apply(options: Options): Drive = js.native
+  def apply(options: typings.googleapis.driveV3Mod.driveV3.Options): typings.googleapis.driveV3Mod.driveV3.Drive = js.native
+  def apply(version: v2): Drive = js.native
+  def apply(version: v3): typings.googleapis.driveV3Mod.driveV3.Drive = js.native
 }

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param tooltip A tooltip text.
   * @param text A hyperlink text.
   */
-class HyperlinkSettings ()
+open class HyperlinkSettings ()
   extends StObject
      with typings.devexpressWeb.HyperlinkSettings {
   def this(url: String) = this()

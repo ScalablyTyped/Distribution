@@ -10,7 +10,7 @@ trait SimpleTextMarkerTemplateSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var backgroundColor: js.UndefOr[String] = js.undefined
   
@@ -18,9 +18,9 @@ trait SimpleTextMarkerTemplateSettings
   
   var borderThickness: js.UndefOr[Double] = js.undefined
   
-  var font: js.UndefOr[js.Any] = js.undefined
+  var font: js.UndefOr[Any] = js.undefined
   
-  var getText: js.UndefOr[js.Any] = js.undefined
+  var getText: js.UndefOr[Any] = js.undefined
   
   var padding: js.UndefOr[Double] = js.undefined
   
@@ -47,11 +47,11 @@ object SimpleTextMarkerTemplateSettings {
     
     inline def setBorderThicknessUndefined: Self = StObject.set(x, "borderThickness", js.undefined)
     
-    inline def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setGetText(value: js.Any): Self = StObject.set(x, "getText", value.asInstanceOf[js.Any])
+    inline def setGetText(value: Any): Self = StObject.set(x, "getText", value.asInstanceOf[js.Any])
     
     inline def setGetTextUndefined: Self = StObject.set(x, "getText", js.undefined)
     

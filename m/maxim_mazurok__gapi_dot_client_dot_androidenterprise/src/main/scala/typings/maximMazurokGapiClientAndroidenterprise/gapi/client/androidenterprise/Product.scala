@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Product extends StObject {
   
+  /** The app restriction schema */
+  var appRestrictionsSchema: js.UndefOr[AppRestrictionsSchema] = js.undefined
+  
   /** The tracks visible to the enterprise. */
   var appTracks: js.UndefOr[js.Array[TrackInfo]] = js.undefined
   
@@ -94,17 +97,21 @@ object Product {
   
   extension [Self <: Product](x: Self) {
     
+    inline def setAppRestrictionsSchema(value: AppRestrictionsSchema): Self = StObject.set(x, "appRestrictionsSchema", value.asInstanceOf[js.Any])
+    
+    inline def setAppRestrictionsSchemaUndefined: Self = StObject.set(x, "appRestrictionsSchema", js.undefined)
+    
     inline def setAppTracks(value: js.Array[TrackInfo]): Self = StObject.set(x, "appTracks", value.asInstanceOf[js.Any])
     
     inline def setAppTracksUndefined: Self = StObject.set(x, "appTracks", js.undefined)
     
-    inline def setAppTracksVarargs(value: TrackInfo*): Self = StObject.set(x, "appTracks", js.Array(value :_*))
+    inline def setAppTracksVarargs(value: TrackInfo*): Self = StObject.set(x, "appTracks", js.Array(value*))
     
     inline def setAppVersion(value: js.Array[AppVersion]): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     
     inline def setAppVersionUndefined: Self = StObject.set(x, "appVersion", js.undefined)
     
-    inline def setAppVersionVarargs(value: AppVersion*): Self = StObject.set(x, "appVersion", js.Array(value :_*))
+    inline def setAppVersionVarargs(value: AppVersion*): Self = StObject.set(x, "appVersion", js.Array(value*))
     
     inline def setAuthorName(value: String): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     
@@ -114,13 +121,13 @@ object Product {
     
     inline def setAvailableCountriesUndefined: Self = StObject.set(x, "availableCountries", js.undefined)
     
-    inline def setAvailableCountriesVarargs(value: String*): Self = StObject.set(x, "availableCountries", js.Array(value :_*))
+    inline def setAvailableCountriesVarargs(value: String*): Self = StObject.set(x, "availableCountries", js.Array(value*))
     
     inline def setAvailableTracks(value: js.Array[String]): Self = StObject.set(x, "availableTracks", value.asInstanceOf[js.Any])
     
     inline def setAvailableTracksUndefined: Self = StObject.set(x, "availableTracks", js.undefined)
     
-    inline def setAvailableTracksVarargs(value: String*): Self = StObject.set(x, "availableTracks", js.Array(value :_*))
+    inline def setAvailableTracksVarargs(value: String*): Self = StObject.set(x, "availableTracks", js.Array(value*))
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
@@ -146,7 +153,7 @@ object Product {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
@@ -164,7 +171,7 @@ object Product {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: ProductPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ProductPermission*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
@@ -186,7 +193,7 @@ object Product {
     
     inline def setScreenshotUrlsUndefined: Self = StObject.set(x, "screenshotUrls", js.undefined)
     
-    inline def setScreenshotUrlsVarargs(value: String*): Self = StObject.set(x, "screenshotUrls", js.Array(value :_*))
+    inline def setScreenshotUrlsVarargs(value: String*): Self = StObject.set(x, "screenshotUrls", js.Array(value*))
     
     inline def setSigningCertificate(value: ProductSigningCertificate): Self = StObject.set(x, "signingCertificate", value.asInstanceOf[js.Any])
     

@@ -5,6 +5,7 @@ import typings.luminoCommands.mod.CommandRegistry.Dataset
 import typings.luminoCommands.mod.CommandRegistry.IKeyBinding
 import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
 import typings.luminoSignaling.mod.ISignal
+import typings.luminoVirtualdom.mod.ElementARIAAttrs
 import typings.luminoVirtualdom.mod.ElementDataset
 import typings.luminoVirtualdom.mod.VirtualElement
 import typings.luminoVirtualdom.mod.h.Child
@@ -26,7 +27,7 @@ object menuMod {
   
   @JSImport("@lumino/widgets/types/menu", "Menu")
   @js.native
-  class Menu protected () extends Widget {
+  open class Menu protected () extends Widget {
     /**
       * Construct a new menu.
       *
@@ -34,32 +35,32 @@ object menuMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _aboutToClose: js.Any = js.native
+    /* private */ var _aboutToClose: Any = js.native
     
-    /* private */ var _activeIndex: js.Any = js.native
+    /* private */ var _activeIndex: Any = js.native
     
     /**
       * Cancel the close timer, if the timer is pending.
       */
-    /* private */ var _cancelCloseTimer: js.Any = js.native
+    /* private */ var _cancelCloseTimer: Any = js.native
     
     /**
       * Cancel the open timer, if the timer is pending.
       */
-    /* private */ var _cancelOpenTimer: js.Any = js.native
+    /* private */ var _cancelOpenTimer: Any = js.native
     
-    /* private */ var _childIndex: js.Any = js.native
+    /* private */ var _childIndex: Any = js.native
     
-    /* private */ var _childMenu: js.Any = js.native
+    /* private */ var _childMenu: Any = js.native
     
     /**
       * Close the child menu immediately.
       *
       * This is a no-op if a child menu is not open.
       */
-    /* private */ var _closeChildMenu: js.Any = js.native
+    /* private */ var _closeChildMenu: Any = js.native
     
-    /* private */ var _closeTimerID: js.Any = js.native
+    /* private */ var _closeTimerID: Any = js.native
     
     /**
       * Handle the `'keydown'` event for the menu.
@@ -67,7 +68,7 @@ object menuMod {
       * #### Notes
       * This listener is attached to the menu node.
       */
-    /* private */ var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the menu.
@@ -75,7 +76,7 @@ object menuMod {
       * #### Notes
       * This listener is attached to the document node.
       */
-    /* private */ var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: Any = js.native
     
     /**
       * Handle the `'mouseenter'` event for the menu.
@@ -83,7 +84,7 @@ object menuMod {
       * #### Notes
       * This listener is attached to the menu node.
       */
-    /* private */ var _evtMouseEnter: js.Any = js.native
+    /* private */ var _evtMouseEnter: Any = js.native
     
     /**
       * Handle the `'mouseleave'` event for the menu.
@@ -91,7 +92,7 @@ object menuMod {
       * #### Notes
       * This listener is attached to the menu node.
       */
-    /* private */ var _evtMouseLeave: js.Any = js.native
+    /* private */ var _evtMouseLeave: Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the menu.
@@ -99,7 +100,7 @@ object menuMod {
       * #### Notes
       * This listener is attached to the menu node.
       */
-    /* private */ var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the menu.
@@ -107,11 +108,11 @@ object menuMod {
       * #### Notes
       * This listener is attached to the menu node.
       */
-    /* private */ var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: Any = js.native
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _items: Any = js.native
     
-    /* private */ var _menuRequested: js.Any = js.native
+    /* private */ var _menuRequested: Any = js.native
     
     /**
       * Open the child menu at the active index immediately.
@@ -119,21 +120,21 @@ object menuMod {
       * If a different child menu is already open, it will be closed,
       * even if the active item is not a valid submenu.
       */
-    /* private */ var _openChildMenu: js.Any = js.native
+    /* private */ var _openChildMenu: Any = js.native
     
-    /* private */ var _openTimerID: js.Any = js.native
+    /* private */ var _openTimerID: Any = js.native
     
-    /* private */ var _parentMenu: js.Any = js.native
+    /* private */ var _parentMenu: Any = js.native
     
     /**
       * Start the close timer, unless it is already pending.
       */
-    /* private */ var _startCloseTimer: js.Any = js.native
+    /* private */ var _startCloseTimer: Any = js.native
     
     /**
       * Start the open timer, unless it is already pending.
       */
-    /* private */ var _startOpenTimer: js.Any = js.native
+    /* private */ var _startOpenTimer: Any = js.native
     
     /**
       * A signal emitted just before the menu is closed.
@@ -357,10 +358,7 @@ object menuMod {
       */
     @JSImport("@lumino/widgets/types/menu", "Menu.Renderer")
     @js.native
-    /**
-      * Construct a new renderer.
-      */
-    class Renderer ()
+    open class Renderer ()
       extends StObject
          with IRenderer {
       
@@ -372,6 +370,15 @@ object menuMod {
         * @returns The full class name for the item icon.
         */
       def createIconClass(data: IRenderData): String = js.native
+      
+      /**
+        * Create the aria attributes for menu item.
+        *
+        * @param data - The data to use for the aria attributes.
+        *
+        * @returns The aria attributes object for the item.
+        */
+      def createItemARIA(data: IRenderData): ElementARIAAttrs = js.native
       
       /**
         * Create the class name for the menu item.
@@ -774,6 +781,11 @@ object menuMod {
         * The item to be rendered.
         */
       val item: IItem
+      
+      /**
+        * Handler for when element is in focus.
+        */
+      val onfocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     }
     object IRenderData {
       
@@ -789,6 +801,10 @@ object menuMod {
         inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
         
         inline def setItem(value: IItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+        
+        inline def setOnfocus(value: () => Unit): Self = StObject.set(x, "onfocus", js.Any.fromFunction0(value))
+        
+        inline def setOnfocusUndefined: Self = StObject.set(x, "onfocus", js.undefined)
       }
     }
     

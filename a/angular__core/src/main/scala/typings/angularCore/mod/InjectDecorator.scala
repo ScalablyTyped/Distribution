@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InjectDecorator
   extends StObject
-     with Instantiable1[/* token */ js.Any, Inject_] {
+     with Instantiable1[/* token */ Any, Inject_] {
   
   /**
     * Parameter decorator on a dependency parameter of a class constructor
@@ -27,5 +27,5 @@ trait InjectDecorator
     * @see ["Dependency Injection Guide"](guide/dependency-injection)
     *
     */
-  def apply(token: js.Any): js.Any = js.native
+  def apply(token: Any): Any = js.native
 }

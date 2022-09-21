@@ -14,6 +14,9 @@ trait MonitoringQueryLanguageCondition extends StObject {
     */
   var duration: js.UndefOr[String] = js.undefined
   
+  /** A condition control that determines how metric-threshold conditions are evaluated when data stops arriving. */
+  var evaluationMissingData: js.UndefOr[String] = js.undefined
+  
   /** Monitoring Query Language (https://cloud.google.com/monitoring/mql) query that outputs a boolean stream. */
   var query: js.UndefOr[String] = js.undefined
   
@@ -35,6 +38,10 @@ object MonitoringQueryLanguageCondition {
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEvaluationMissingData(value: String): Self = StObject.set(x, "evaluationMissingData", value.asInstanceOf[js.Any])
+    
+    inline def setEvaluationMissingDataUndefined: Self = StObject.set(x, "evaluationMissingData", js.undefined)
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

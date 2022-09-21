@@ -1,23 +1,20 @@
 package typings.tern.ternMod
 
+import typings.tern.ternMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def defineQueryType[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Query['type'] */ js.Any */](name: T, desc: typings.tern.ternMod.Desc[T]): scala.Unit = (typings.tern.ternMod.^.asInstanceOf[js.Dynamic].applyDynamic("defineQueryType")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def defineQueryType[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.Query['type'] */ js.Any */](name: T, desc: Desc[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineQueryType")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def registerPlugin(
-  name: java.lang.String,
-  init: js.Function2[
-  /* server */ typings.tern.ternMod.Server, 
-  /* options */ js.UndefOr[typings.tern.ternMod.ConstructorOptions], 
-  scala.Unit
-]
-): scala.Unit = (typings.tern.ternMod.^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  name: String,
+  init: js.Function2[/* server */ Server, /* options */ js.UndefOr[ConstructorOptions], Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def version: java.lang.String = typings.tern.ternMod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-type ConstructorOptions = typings.tern.ternMod.CtorOptions & (typings.tern.ternMod.SyncConstructorOptions | typings.tern.ternMod.ASyncConstructorOptions)
+type ConstructorOptions = (SyncConstructorOptions & CtorOptions) | (ASyncConstructorOptions & CtorOptions)
 
-type QueryResult[Q /* <: typings.tern.ternMod.Query */] = /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q['type']]['result'] */ js.Any
+type QueryResult[Q /* <: Query */] = /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q['type']]['result'] */ js.Any

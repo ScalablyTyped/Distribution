@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.DisplayObject")
 @js.native
-class DisplayObject ()
+open class DisplayObject ()
   extends StObject
      with typings.easeljs.createjs.DisplayObject
 /* static members */

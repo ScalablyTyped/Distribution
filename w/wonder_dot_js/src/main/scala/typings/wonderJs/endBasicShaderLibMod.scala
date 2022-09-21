@@ -11,7 +11,7 @@ object endBasicShaderLibMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/shader/lib/basic/EndBasicShaderLib", "EndBasicShaderLib")
   @js.native
-  class EndBasicShaderLib () extends EngineShaderLib {
+  open class EndBasicShaderLib () extends EngineShaderLib {
     
     def setShaderDefinition(cmd: QuadCommand, material: StandardBasicMaterial): Unit = js.native
   }

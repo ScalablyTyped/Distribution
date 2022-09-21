@@ -15,7 +15,7 @@ object comparatorMod {
   
   @JSImport("semver/classes/comparator", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Comparator {
     def this(comp: String) = this()

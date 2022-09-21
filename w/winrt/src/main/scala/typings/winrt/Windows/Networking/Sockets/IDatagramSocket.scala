@@ -31,7 +31,7 @@ trait IDatagramSocket
   
   def joinMulticastGroup(host: HostName): Unit = js.native
   
-  var onmessagereceived: js.Any = js.native
+  var onmessagereceived: Any = js.native
   
   var outputStream: IOutputStream = js.native
 }

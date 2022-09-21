@@ -33,6 +33,6 @@ object BatchDeleteConnectionResponse {
     
     inline def setSucceededUndefined: Self = StObject.set(x, "Succeeded", js.undefined)
     
-    inline def setSucceededVarargs(value: NameString*): Self = StObject.set(x, "Succeeded", js.Array(value :_*))
+    inline def setSucceededVarargs(value: NameString*): Self = StObject.set(x, "Succeeded", js.Array(value*))
   }
 }

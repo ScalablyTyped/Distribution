@@ -4,26 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request message for EntityTypes.BatchDeleteEntities.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest extends StObject {
   
   /**
-    * Required. The canonical `values` of the entities to delete. Note that
-    * these are not fully-qualified names, i.e. they don&#39;t start with
-    * `projects/&lt;Project ID&gt;`.
+    * Required. The reference `values` of the entities to delete. Note that these are not fully-qualified names, i.e. they don't start with `projects/`.
     */
-  var entityValues: js.UndefOr[js.Array[String]] = js.undefined
+  var entityValues: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * Optional. The language of entity synonyms defined in `entities`. If not
-    * specified, the agent&#39;s default language is used. [Many
-    * languages](https://cloud.google.com/dialogflow-enterprise/docs/reference/language)
-    * are supported. Note: languages must be enabled in the agent before they
-    * can be used.
+    * Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
     */
-  var languageCode: js.UndefOr[String] = js.undefined
+  var languageCode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest {
   
@@ -36,11 +27,15 @@ object SchemaGoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest {
     
     inline def setEntityValues(value: js.Array[String]): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
     
+    inline def setEntityValuesNull: Self = StObject.set(x, "entityValues", null)
+    
     inline def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
     
-    inline def setEntityValuesVarargs(value: String*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
+    inline def setEntityValuesVarargs(value: String*): Self = StObject.set(x, "entityValues", js.Array(value*))
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }

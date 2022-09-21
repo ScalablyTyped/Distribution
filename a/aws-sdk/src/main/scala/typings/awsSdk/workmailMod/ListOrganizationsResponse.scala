@@ -33,6 +33,6 @@ object ListOrganizationsResponse {
     
     inline def setOrganizationSummariesUndefined: Self = StObject.set(x, "OrganizationSummaries", js.undefined)
     
-    inline def setOrganizationSummariesVarargs(value: OrganizationSummary*): Self = StObject.set(x, "OrganizationSummaries", js.Array(value :_*))
+    inline def setOrganizationSummariesVarargs(value: OrganizationSummary*): Self = StObject.set(x, "OrganizationSummaries", js.Array(value*))
   }
 }

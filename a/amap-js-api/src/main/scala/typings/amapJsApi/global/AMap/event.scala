@@ -20,7 +20,7 @@ object event {
     * @param handler 事件功能函数
     * @param context 事件上下文
     */
-  inline def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 */ js.Any */, C](
+  inline def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any */, C](
     // tslint:disable-next-line: no-unnecessary-generics
   instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,
@@ -30,7 +30,7 @@ object event {
       Unit
     ]
   ): EventListener[`0`] = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener[`0`]]
-  inline def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 */ js.Any */, C](
+  inline def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any */, C](
     // tslint:disable-next-line: no-unnecessary-generics
   instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,
@@ -53,13 +53,13 @@ object event {
     // tslint:disable-next-line: no-unnecessary-generics
   instance: I,
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit]
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit]
   ): EventListener[`1`] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener[`1`]]
   inline def addListener[I /* <: typings.amapJsApi.AMap.EventEmitter */, C](
     // tslint:disable-next-line: no-unnecessary-generics
   instance: I,
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
     context: C
   ): EventListener[`1`] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener[`1`]]
   
@@ -74,13 +74,13 @@ object event {
     // tslint:disable-next-line: no-unnecessary-generics
   instance: I,
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit]
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit]
   ): EventListener[`1`] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener[`1`]]
   inline def addListenerOnce[I /* <: typings.amapJsApi.AMap.EventEmitter */, C](
     // tslint:disable-next-line: no-unnecessary-generics
   instance: I,
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
     context: C
   ): EventListener[`1`] = (^.asInstanceOf[js.Dynamic].applyDynamic("addListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener[`1`]]
   
@@ -97,5 +97,5 @@ object event {
     * @param data 事件数据
     */
   inline def trigger(instance: typings.amapJsApi.AMap.EventEmitter, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def trigger(instance: typings.amapJsApi.AMap.EventEmitter, eventName: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trigger(instance: typings.amapJsApi.AMap.EventEmitter, eventName: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

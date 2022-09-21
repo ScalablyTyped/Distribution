@@ -10,10 +10,10 @@ Glob to regular expression with support for extended globs
 | ------------------ | :-------------: |
 | Full name          | globrex |
 | Keywords           | glob, regex, regexp, parser, glob2regx, compiler |
-| # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 15473483 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3225629.6666666665 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/terkelg/globrex#readme)

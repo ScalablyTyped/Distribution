@@ -2,7 +2,6 @@ package typings.react.mod
 
 import typings.react.reactStrings.backwards
 import typings.react.reactStrings.forwards
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ trait DirectionalSuspenseListProps
 }
 object DirectionalSuspenseListProps {
   
-  inline def apply(children: ReactElement | Iterable[ReactElement], revealOrder: forwards | backwards): DirectionalSuspenseListProps = {
+  inline def apply(children: ReactElement | js.Iterable[ReactElement], revealOrder: forwards | backwards): DirectionalSuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionalSuspenseListProps]
   }

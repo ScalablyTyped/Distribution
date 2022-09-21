@@ -10,9 +10,9 @@ Create C "array" instances on top of Buffers
 | Full name          | ref-array |
 | Keywords           | array, ref |
 | # releases         | 0 |
-| # dependents       | 125 |
-| # downloads        | 478778 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29840.333333333332 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/ref-array#readme)

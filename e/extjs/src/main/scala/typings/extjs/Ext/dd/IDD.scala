@@ -34,12 +34,12 @@ trait IDD
   /** [Method] Event that fires prior to the onDrag event
     * @param e Object
     */
-  var b4Drag: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var b4Drag: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Event that fires prior to the onMouseDown event
     * @param e Object
     */
-  var b4MouseDown: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var b4MouseDown: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Saves the most recent position so that we can reset the constraints and tick marks on demand
     * @param iPageX Number the current x position (this just makes it so we don't have to look it up again)
@@ -93,11 +93,11 @@ object IDD {
     
     inline def setAutoOffsetUndefined: Self = StObject.set(x, "autoOffset", js.undefined)
     
-    inline def setB4Drag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "b4Drag", js.Any.fromFunction1(value))
+    inline def setB4Drag(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "b4Drag", js.Any.fromFunction1(value))
     
     inline def setB4DragUndefined: Self = StObject.set(x, "b4Drag", js.undefined)
     
-    inline def setB4MouseDown(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "b4MouseDown", js.Any.fromFunction1(value))
+    inline def setB4MouseDown(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "b4MouseDown", js.Any.fromFunction1(value))
     
     inline def setB4MouseDownUndefined: Self = StObject.set(x, "b4MouseDown", js.undefined)
     

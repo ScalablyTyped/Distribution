@@ -1,16 +1,11 @@
 package typings.peerDial
 
 import typings.express.mod.Express
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
+import typings.expressServeStaticCore.mod.Application
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
 import typings.nodeUuid.mod.UUIDOptions
 import typings.peerDial.anon.Icon
-import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,14 +14,11 @@ object mod {
   
   @JSImport("peer-dial", "Client")
   @js.native
-  class Client () extends EventEmitter {
+  open class Client () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     def getDialDevice(deviceDescriptionUrl: String): Unit = js.native
-    def getDialDevice(
-      deviceDescriptionUrl: String,
-      callback: js.Function2[/* data */ DialDevice, /* err */ js.Any, Unit]
-    ): Unit = js.native
+    def getDialDevice(deviceDescriptionUrl: String, callback: js.Function2[/* data */ DialDevice, /* err */ Any, Unit]): Unit = js.native
     
     def refresh(): Unit = js.native
     
@@ -37,33 +29,33 @@ object mod {
   
   @JSImport("peer-dial", "DialDevice")
   @js.native
-  class DialDevice protected () extends StObject {
+  open class DialDevice protected () extends StObject {
     def this(deviceInfo: DeviceInfo) = this()
     
     def getAppInfo(appName: String): Unit = js.native
-    def getAppInfo(appName: String, callback: js.Function2[/* data */ AppInfo, /* err */ js.Any, Unit]): Unit = js.native
+    def getAppInfo(appName: String, callback: js.Function2[/* data */ AppInfo, /* err */ Any, Unit]): Unit = js.native
     
     def getAppInfoXml(appName: String): Unit = js.native
-    def getAppInfoXml(appName: String, callback: js.Function2[/* data */ String, /* err */ js.Any, Unit]): Unit = js.native
+    def getAppInfoXml(appName: String, callback: js.Function2[/* data */ String, /* err */ Any, Unit]): Unit = js.native
     
     def launchApp(appName: String, launchData: String, contentType: String): Unit = js.native
     def launchApp(
       appName: String,
       launchData: String,
       contentType: String,
-      callback: js.Function2[/* data */ String, /* err */ js.Any, Unit]
+      callback: js.Function2[/* data */ String, /* err */ Any, Unit]
     ): Unit = js.native
     
     def stopApp(appName: String, pid: String): Unit = js.native
-    def stopApp(appName: String, pid: String, callback: js.Function2[/* data */ Double, /* err */ js.Any, Unit]): Unit = js.native
+    def stopApp(appName: String, pid: String, callback: js.Function2[/* data */ Double, /* err */ Any, Unit]): Unit = js.native
   }
   
   @JSImport("peer-dial", "Server")
   @js.native
-  class Server protected () extends EventEmitter {
+  open class Server protected () extends EventEmitter {
     def this(options: ServerOptions) = this()
     
-    def corsOptionsAppsDelegate(req: String, callback: js.Function2[/* err */ js.Any, /* data */ CorsOptions, Unit]): Unit = js.native
+    def corsOptionsAppsDelegate(req: String, callback: js.Function2[/* err */ Any, /* data */ CorsOptions, Unit]): Unit = js.native
     
     def start(): Unit = js.native
     
@@ -172,11 +164,11 @@ object mod {
       
       inline def setExposedHeaders(value: js.Array[String]): Self = StObject.set(x, "exposedHeaders", value.asInstanceOf[js.Any])
       
-      inline def setExposedHeadersVarargs(value: String*): Self = StObject.set(x, "exposedHeaders", js.Array(value :_*))
+      inline def setExposedHeadersVarargs(value: String*): Self = StObject.set(x, "exposedHeaders", js.Array(value*))
       
       inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setOrigin(value: Boolean): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     }
@@ -257,7 +249,7 @@ object mod {
       
       inline def setIconList(value: js.Array[js.Object] | Icon): Self = StObject.set(x, "iconList", value.asInstanceOf[js.Any])
       
-      inline def setIconListVarargs(value: js.Object*): Self = StObject.set(x, "iconList", js.Array(value :_*))
+      inline def setIconListVarargs(value: js.Object*): Self = StObject.set(x, "iconList", js.Array(value*))
       
       inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
       
@@ -273,14 +265,7 @@ object mod {
     
     var delegate: Delegate
     
-    /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    def expressApp(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-    def expressApp(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-    def expressApp(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-    def expressApp(req: IncomingMessage, res: ServerResponse): js.Any
+    def expressApp(): Application
     @JSName("expressApp")
     var expressApp_Original: Express
     

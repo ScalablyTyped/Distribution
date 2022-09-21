@@ -12,9 +12,14 @@ trait UpdateRobotApplicationResponse extends StObject {
   var arn: js.UndefOr[Arn] = js.undefined
   
   /**
+    * The object that contains the Docker image URI for your robot application.
+    */
+  var environment: js.UndefOr[Environment] = js.undefined
+  
+  /**
     * The time, in milliseconds since the epoch, when the robot application was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the robot application.
@@ -54,7 +59,11 @@ object UpdateRobotApplicationResponse {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
@@ -74,7 +83,7 @@ object UpdateRobotApplicationResponse {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

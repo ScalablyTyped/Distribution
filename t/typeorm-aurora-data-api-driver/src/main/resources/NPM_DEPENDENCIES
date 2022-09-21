@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "typeorm-aurora-data-api-driver" : "2.4.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "typeorm-aurora-data-api-driver" : "2.4.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

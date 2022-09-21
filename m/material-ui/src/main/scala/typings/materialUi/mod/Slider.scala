@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Slider")
 @js.native
-class Slider ()
-  extends Component[SliderProps, js.Object, js.Any]
+open class Slider ()
+  extends Component[SliderProps, js.Object, Any]

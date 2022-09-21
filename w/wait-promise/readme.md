@@ -11,9 +11,9 @@ Make a promise, waiting for a specified amount of time, util something is done.
 | Full name          | wait-promise |
 | Keywords           | promise, node, wait, before, after, every, and, until, till, async |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 190842 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 12659.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/wait-promise)

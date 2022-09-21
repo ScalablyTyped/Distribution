@@ -16,7 +16,7 @@ object physicsEngineMod {
   
   @JSImport("babylonjs/Physics/physicsEngine", "PhysicsEngine")
   @js.native
-  class PhysicsEngine protected ()
+  open class PhysicsEngine protected ()
     extends StObject
        with IPhysicsEngine {
     /**
@@ -27,20 +27,22 @@ object physicsEngineMod {
     def this(gravity: Nullable[Vector3]) = this()
     def this(gravity: Nullable[Vector3], _physicsPlugin: IPhysicsEnginePlugin) = this()
     
-    /* private */ var _impostors: js.Any = js.native
+    /* private */ var _impostors: Any = js.native
     
-    /* private */ var _joints: js.Any = js.native
+    /* private */ var _joints: Any = js.native
     
-    /* private */ var _physicsPlugin: js.Any = js.native
+    /* private */ var _physicsPlugin: Any = js.native
     
     /**
       * Called by the scene. No need to call it.
-      * @param delta defines the timespam between frames
+      * @param delta defines the timespan between frames
       */
     /* CompleteClass */
     override def _step(delta: Double): Unit = js.native
     
-    /* private */ var _subTimeStep: js.Any = js.native
+    /* private */ var _subTimeStep: Any = js.native
+    
+    /* private */ var _uniqueIdCounter: Any = js.native
     
     /**
       * Adding a new impostor for the impostor tracking.
@@ -79,7 +81,7 @@ object physicsEngineMod {
       * @returns the PhysicsImpostor or null if not found
       */
     /* CompleteClass */
-    override def getImpostorWithPhysicsBody(body: js.Any): Nullable[PhysicsImpostor] = js.native
+    override def getImpostorWithPhysicsBody(body: Any): Nullable[PhysicsImpostor] = js.native
     
     /**
       * Gets the list of physic impostors

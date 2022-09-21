@@ -8,22 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaVolumeseriesinfo extends StObject {
   
   /**
-    * The display number string. This should be used only for display purposes
-    * and the actual sequence should be inferred from the below orderNumber.
+    * The display number string. This should be used only for display purposes and the actual sequence should be inferred from the below orderNumber.
     */
-  var bookDisplayNumber: js.UndefOr[String] = js.undefined
+  var bookDisplayNumber: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Short book title in the context of the series.
     */
-  var shortSeriesBookTitle: js.UndefOr[String] = js.undefined
+  var shortSeriesBookTitle: js.UndefOr[String | Null] = js.undefined
   
-  var volumeSeries: js.UndefOr[js.Array[Issue]] = js.undefined
+  var volumeSeries: js.UndefOr[js.Array[Issue] | Null] = js.undefined
 }
 object SchemaVolumeseriesinfo {
   
@@ -36,20 +35,28 @@ object SchemaVolumeseriesinfo {
     
     inline def setBookDisplayNumber(value: String): Self = StObject.set(x, "bookDisplayNumber", value.asInstanceOf[js.Any])
     
+    inline def setBookDisplayNumberNull: Self = StObject.set(x, "bookDisplayNumber", null)
+    
     inline def setBookDisplayNumberUndefined: Self = StObject.set(x, "bookDisplayNumber", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setShortSeriesBookTitle(value: String): Self = StObject.set(x, "shortSeriesBookTitle", value.asInstanceOf[js.Any])
     
+    inline def setShortSeriesBookTitleNull: Self = StObject.set(x, "shortSeriesBookTitle", null)
+    
     inline def setShortSeriesBookTitleUndefined: Self = StObject.set(x, "shortSeriesBookTitle", js.undefined)
     
     inline def setVolumeSeries(value: js.Array[Issue]): Self = StObject.set(x, "volumeSeries", value.asInstanceOf[js.Any])
     
+    inline def setVolumeSeriesNull: Self = StObject.set(x, "volumeSeries", null)
+    
     inline def setVolumeSeriesUndefined: Self = StObject.set(x, "volumeSeries", js.undefined)
     
-    inline def setVolumeSeriesVarargs(value: Issue*): Self = StObject.set(x, "volumeSeries", js.Array(value :_*))
+    inline def setVolumeSeriesVarargs(value: Issue*): Self = StObject.set(x, "volumeSeries", js.Array(value*))
   }
 }

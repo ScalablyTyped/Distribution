@@ -7,27 +7,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("WebSocket")
 @js.native
-class WebSocket protected ()
+open class WebSocket protected ()
   extends StObject
      with typings.std.WebSocket {
+  /* standard dom */
   def this(url: java.lang.String) = this()
+  def this(url: typings.std.URL) = this()
   def this(url: java.lang.String, protocols: java.lang.String) = this()
   def this(url: java.lang.String, protocols: js.Array[java.lang.String]) = this()
+  def this(url: typings.std.URL, protocols: java.lang.String) = this()
+  def this(url: typings.std.URL, protocols: js.Array[java.lang.String]) = this()
 }
 object WebSocket {
   
+  /* standard dom */
   @JSGlobal("WebSocket.CLOSED")
   @js.native
   val CLOSED: Double = js.native
   
+  /* standard dom */
   @JSGlobal("WebSocket.CLOSING")
   @js.native
   val CLOSING: Double = js.native
   
+  /* standard dom */
   @JSGlobal("WebSocket.CONNECTING")
   @js.native
   val CONNECTING: Double = js.native
   
+  /* standard dom */
   @JSGlobal("WebSocket.OPEN")
   @js.native
   val OPEN: Double = js.native

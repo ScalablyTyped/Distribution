@@ -12,7 +12,7 @@ trait DescribeAccountAssignmentDeletionStatusRequest extends StObject {
   var AccountAssignmentDeletionRequestId: UUId
   
   /**
-    * The ARN of the SSO instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
+    * The ARN of the IAM Identity Center instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
   var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn
 }

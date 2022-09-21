@@ -28,14 +28,17 @@ trait TransferRun extends StObject {
     */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Output only. Pub/Sub topic where a notification will be sent after this transfer run finishes */
+  /** Output only. Pub/Sub topic where a notification will be sent after this transfer run finishes. The format for specifying a pubsub topic is: `projects/{project}/topics/{topic}` */
   var notificationPubsubTopic: js.UndefOr[String] = js.undefined
   
-  /** Output only. Data transfer specific parameters. */
+  /**
+    * Output only. Parameters specific to each data source. For more information see the bq tab in the 'Setting up a data transfer' section for each data source. For example the
+    * parameters for Cloud Storage transfers are listed here: https://cloud.google.com/bigquery-transfer/docs/cloud-storage-transfer#bq
+    */
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferRun & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferRun & TopLevel[Any]
   ] = js.undefined
   
   /** For batch transfer runs, specifies the date and time of the data should be ingested. */
@@ -102,7 +105,7 @@ object TransferRun {
     inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferRun & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferRun & TopLevel[Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

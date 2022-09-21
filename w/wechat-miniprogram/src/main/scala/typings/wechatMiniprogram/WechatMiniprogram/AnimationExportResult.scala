@@ -20,6 +20,6 @@ object AnimationExportResult {
     
     inline def setActions(value: js.Array[IAnyObject]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: IAnyObject*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: IAnyObject*): Self = StObject.set(x, "actions", js.Array(value*))
   }
 }

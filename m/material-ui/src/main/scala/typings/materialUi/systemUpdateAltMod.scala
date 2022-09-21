@@ -10,10 +10,10 @@ object systemUpdateAltMod {
   
   @JSImport("material-ui/svg-icons/action/system-update-alt", JSImport.Default)
   @js.native
-  class default () extends ActionSystemUpdateAlt
+  open class default () extends ActionSystemUpdateAlt
   
   @JSImport("material-ui/svg-icons/action/system-update-alt", "ActionSystemUpdateAlt")
   @js.native
-  class ActionSystemUpdateAlt ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSystemUpdateAlt ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

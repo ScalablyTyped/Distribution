@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Specifies the bin type of a histogram chart or pareto chart series.
   *
-  * Specifies the bin's type of a histogram chart or pareto chart series.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartBinType")

@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("codeflask", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with CodeFlask {
     def this(selectorOrElement: String, opts: options) = this()

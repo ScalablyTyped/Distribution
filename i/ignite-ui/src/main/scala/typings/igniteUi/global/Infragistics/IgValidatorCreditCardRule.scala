@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.IgValidatorCreditCardRule")
 @js.native
-class IgValidatorCreditCardRule protected ()
+open class IgValidatorCreditCardRule protected ()
   extends StObject
      with typings.igniteUi.Infragistics.IgValidatorCreditCardRule {
-  def this(formatItems: js.Array[js.Any]) = this()
+  def this(formatItems: js.Array[Any]) = this()
   def this(name: String) = this()
   
   /**

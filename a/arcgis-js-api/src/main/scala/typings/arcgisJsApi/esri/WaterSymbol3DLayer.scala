@@ -22,6 +22,8 @@ trait WaterSymbol3DLayer
   /**
     * The dominant color used to shade the water.
     *
+    * @default #0077BE
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#color)
     */
   var color: Color_ = js.native
@@ -37,6 +39,8 @@ trait WaterSymbol3DLayer
   /**
     * Indicates the size of the waterbody which is represented by the symbol layer.
     *
+    * @default medium
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waterbodySize)
     */
   var waterbodySize: small | medium | large = js.native
@@ -44,12 +48,16 @@ trait WaterSymbol3DLayer
   /**
     * Indicates the direction in which the waves travel.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waveDirection)
     */
   var waveDirection: Double = js.native
   
   /**
     * Indicates the shape and intensity of the waves.
+    *
+    * @default moderate
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waveStrength)
     */

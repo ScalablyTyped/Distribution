@@ -34,7 +34,7 @@ trait ValidKioskManifest
     * Not useful since it will prevent app from running.
     * @see[Source]{@link https://github.com/chromium/chromium/blob/master/chrome/browser/chromeos/extensions/device_local_account_management_policy_provider.cc#L155}
     */
-  var kiosk_secondary_apps: js.UndefOr[js.Any] = js.undefined
+  var kiosk_secondary_apps: js.UndefOr[Any] = js.undefined
 }
 object ValidKioskManifest {
   
@@ -55,7 +55,7 @@ object ValidKioskManifest {
     
     inline def setKiosk_onlyUndefined: Self = StObject.set(x, "kiosk_only", js.undefined)
     
-    inline def setKiosk_secondary_apps(value: js.Any): Self = StObject.set(x, "kiosk_secondary_apps", value.asInstanceOf[js.Any])
+    inline def setKiosk_secondary_apps(value: Any): Self = StObject.set(x, "kiosk_secondary_apps", value.asInstanceOf[js.Any])
     
     inline def setKiosk_secondary_appsUndefined: Self = StObject.set(x, "kiosk_secondary_apps", js.undefined)
   }

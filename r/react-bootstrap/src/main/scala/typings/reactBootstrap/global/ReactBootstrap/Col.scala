@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Col")
 @js.native
-class Col ()
+open class Col ()
   extends typings.reactBootstrap.mod.Col

@@ -10,14 +10,11 @@ A stream meter that both counts the bytes piped through it, and can optionally a
 | Full name          | stream-meter |
 | Keywords           | streams2, streams, meter, abort |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 2925120 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 527826.6666666666 |
+| # stars            | 29.0 |
 
 ## Links
-- [Homepage](https://github.com/brycebaril/node-stream-meter#readme)
-- [Bugs](https://github.com/brycebaril/node-stream-meter/issues)
-- [Repository](https://github.com/brycebaril/node-stream-meter)
 - [Npm](https://www.npmjs.com/package/stream-meter)
     
 

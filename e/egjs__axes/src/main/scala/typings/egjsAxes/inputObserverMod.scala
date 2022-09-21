@@ -1,45 +1,36 @@
 package typings.egjsAxes
 
-import typings.egjsAxes.animationManagerMod.AnimationManager
-import typings.egjsAxes.axesMod.AxesOption
-import typings.egjsAxes.axisManagerMod.Axis
-import typings.egjsAxes.axisManagerMod.AxisManager
-import typings.egjsAxes.eventManagerMod.EventManager
-import typings.egjsAxes.inputTypeMod.IInputTypeObserver
-import typings.egjsAxes.interruptManagerMod.InterruptManager
+import typings.egjsAxes.anon.AnimationManager
+import typings.egjsAxes.inputTypeMod.InputTypeObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputObserverMod {
   
-  @JSImport("@egjs/axes/InputObserver", "InputObserver")
+  @JSImport("@egjs/axes/declaration/InputObserver", "InputObserver")
   @js.native
-  class InputObserver protected ()
+  open class InputObserver protected ()
     extends StObject
-       with IInputTypeObserver {
-    def this(
-      options: AxesOption,
-      itm: InterruptManager,
-      em: EventManager,
-      axm: AxisManager,
-      am: AnimationManager
-    ) = this()
+       with InputTypeObserver {
+    def this(hasOptionsInterruptManagerEventManagerAxisManagerAnimationManager: AnimationManager) = this()
     
-    /* private */ var am: js.Any = js.native
+    /* private */ var _animationManager: Any = js.native
     
-    /* private */ def atOutside(pos: js.Any): js.Any = js.native
+    /* private */ var _atOutside: Any = js.native
     
-    /* private */ var axm: js.Any = js.native
+    /* private */ var _axisManager: Any = js.native
     
-    def change(inputType: js.Any, event: js.Any, offset: Axis): Unit = js.native
+    /* private */ var _eventManager: Any = js.native
     
-    /* private */ var em: js.Any = js.native
+    /* private */ var _interruptManager: Any = js.native
     
-    var isOutside: Boolean = js.native
+    /* private */ var _isEndofAxis: Any = js.native
     
-    /* private */ var itm: js.Any = js.native
+    /* private */ var _isOutside: Any = js.native
     
-    var moveDistance: Axis = js.native
+    /* private */ var _isStopped: Any = js.native
+    
+    /* private */ var _moveDistance: Any = js.native
   }
 }

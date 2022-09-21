@@ -11,9 +11,9 @@ Synchronously get the current git commit hash, tag, or branch
 | Full name          | git-rev-sync |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 138 |
-| # downloads        | 23108093 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2718203.3333333335 |
+| # stars            | 154.0 |
 
 ## Links
 - [Homepage](https://github.com/kurttheviking/git-rev-sync-js)

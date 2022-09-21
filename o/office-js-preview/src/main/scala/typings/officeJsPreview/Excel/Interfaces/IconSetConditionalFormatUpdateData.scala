@@ -31,33 +31,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IconSetConditionalFormatUpdateData extends StObject {
   
   /**
+    * An array of criteria and icon sets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
     *
-    * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var criteria: js.UndefOr[js.Array[ConditionalIconCriterion]] = js.undefined
   
   /**
+    * If `true`, reverses the icon orders for the icon set. Note that this cannot be set if custom icons are used.
     *
-    * If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var reverseIconOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * If `true`, hides the values and only shows icons.
     *
-    * If true, hides the values and only shows icons.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var showIconOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * If set, displays the icon set option for the conditional format.
     *
-    * If set, displays the IconSet option for the conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var style: js.UndefOr[
@@ -77,7 +77,7 @@ object IconSetConditionalFormatUpdateData {
     
     inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    inline def setCriteriaVarargs(value: ConditionalIconCriterion*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: ConditionalIconCriterion*): Self = StObject.set(x, "criteria", js.Array(value*))
     
     inline def setReverseIconOrder(value: Boolean): Self = StObject.set(x, "reverseIconOrder", value.asInstanceOf[js.Any])
     

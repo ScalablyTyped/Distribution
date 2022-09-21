@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ConsensusSendToResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ConsensusSendToResponse.
   * @param [properties] Properties to set
   */
-class ConsensusSendToResponse ()
+open class ConsensusSendToResponse ()
   extends StObject
      with IConsensusSendToResponse {
   def this(properties: IConsensusSendToResponse) = this()
@@ -29,7 +28,7 @@ class ConsensusSendToResponse ()
     * Converts this ConsensusSendToResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ConsensusSendToResponse {
@@ -93,6 +92,8 @@ object ConsensusSendToResponse {
   inline def create(): ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusSendToResponse]
   inline def create(properties: IConsensusSendToResponse): ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusSendToResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSendToResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ConsensusSendToResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusSendToResponse]
   /**
     * Decodes a ConsensusSendToResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -103,9 +104,8 @@ object ConsensusSendToResponse {
     */
   inline def decode(reader: Reader): ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSendToResponse]
   inline def decode(reader: Reader, length: Double): ConsensusSendToResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusSendToResponse]
-  inline def decode(reader: Uint8Array): ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSendToResponse]
-  inline def decode(reader: Uint8Array, length: Double): ConsensusSendToResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusSendToResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSendToResponse]
   /**
     * Decodes a ConsensusSendToResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -114,7 +114,6 @@ object ConsensusSendToResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSendToResponse]
-  inline def decodeDelimited(reader: Uint8Array): ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSendToResponse]
   
   /**
     * Encodes the specified ConsensusSendToResponse message. Does not implicitly {@link ConsensusSendToResponse.verify|verify} messages.
@@ -139,7 +138,7 @@ object ConsensusSendToResponse {
     * @param object Plain object
     * @returns ConsensusSendToResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusSendToResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ConsensusSendToResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusSendToResponse]
   
   /**
     * Creates a plain object from a ConsensusSendToResponse message. Also converts values to other types if specified.
@@ -147,13 +146,13 @@ object ConsensusSendToResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ConsensusSendToResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ConsensusSendToResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusSendToResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ConsensusSendToResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ConsensusSendToResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

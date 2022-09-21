@@ -22,7 +22,7 @@ object screenBufferMod {
   
   @JSImport("terminal-kit/ScreenBuffer", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ScreenBuffer {
+  open class ^ protected () extends ScreenBuffer {
     def this(options: Options) = this()
   }
   @JSImport("terminal-kit/ScreenBuffer", JSImport.Namespace)
@@ -42,7 +42,7 @@ object screenBufferMod {
   inline def loadImage(
     url: String,
     calback: js.Function2[
-      /* error */ js.UndefOr[js.Any], 
+      /* error */ js.UndefOr[Any], 
       /* image */ js.UndefOr[typings.terminalKit.screenBufferHDMod.^], 
       Unit
     ]
@@ -51,7 +51,7 @@ object screenBufferMod {
   inline def loadImage(
     url: String,
     options: Shrink,
-    calback: js.Function2[/* error */ js.Any, /* image */ typings.terminalKit.screenBufferHDMod.^, Unit]
+    calback: js.Function2[/* error */ Any, /* image */ typings.terminalKit.screenBufferHDMod.^, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
@@ -62,7 +62,7 @@ object screenBufferMod {
   
   trait Attributes extends StObject {
     
-    var bgColor: js.UndefOr[Double] = js.undefined
+    var bgColor: js.UndefOr[Double | String] = js.undefined
     
     var bgDefaultColor: js.UndefOr[Boolean] = js.undefined
     
@@ -74,7 +74,7 @@ object screenBufferMod {
     
     var charTransparency: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[Double] = js.undefined
+    var color: js.UndefOr[Double | String] = js.undefined
     
     var defaultColor: js.UndefOr[Boolean] = js.undefined
     
@@ -105,7 +105,7 @@ object screenBufferMod {
     
     extension [Self <: Attributes](x: Self) {
       
-      inline def setBgColor(value: Double): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+      inline def setBgColor(value: Double | String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       
       inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
       
@@ -129,7 +129,7 @@ object screenBufferMod {
       
       inline def setCharTransparencyUndefined: Self = StObject.set(x, "charTransparency", js.undefined)
       
-      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Double | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -372,11 +372,13 @@ object screenBufferMod {
     def get(): AttrChar = js.native
     def get(options: X): AttrChar = js.native
     
+    val height: Double = js.native
+    
     def moveTo(x: Double, y: Double): Unit = js.native
     
     def object2attr(attrObject: Attributes): Unit = js.native
     
-    def put(options: PutOptions, format: String, formatArgumets: js.Any*): Unit = js.native
+    def put(options: PutOptions, format: String, formatArgumets: Any*): Unit = js.native
     
     def resize(fromRect: typings.terminalKit.rectMod.Options): Unit = js.native
     def resize(fromRect: typings.terminalKit.rectMod.^): Unit = js.native
@@ -384,6 +386,8 @@ object screenBufferMod {
     def saveSync(filepath: String): Unit = js.native
     
     def vScroll(offset: Double, drawToTerminal: Boolean): Unit = js.native
+    
+    val width: Double = js.native
     
     val x: Double = js.native
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessControlListConfiguration extends StObject {
   
   /**
-    * Path to the AWS S3 bucket that contains the ACL files.
+    * Path to the Amazon S3 bucket that contains the ACL files.
     */
   var KeyPath: js.UndefOr[S3ObjectKey] = js.undefined
 }

@@ -33,7 +33,7 @@ object BatchDeleteDocumentRequest {
     
     inline def setDocumentIdList(value: DocumentIdList): Self = StObject.set(x, "DocumentIdList", value.asInstanceOf[js.Any])
     
-    inline def setDocumentIdListVarargs(value: DocumentId*): Self = StObject.set(x, "DocumentIdList", js.Array(value :_*))
+    inline def setDocumentIdListVarargs(value: DocumentId*): Self = StObject.set(x, "DocumentIdList", js.Array(value*))
     
     inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
   }

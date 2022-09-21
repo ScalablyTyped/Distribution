@@ -11,9 +11,9 @@ morph your svg component one into another
 | Full name          | react-svg-morph |
 | Keywords           | react, icons, svg, morph, transform, icon |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 66936 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3507.6666666666665 |
+| # stars            | 806.0 |
 
 ## Links
 - [Homepage](https://github.com/gorangajic/react-svg-morph#readme)

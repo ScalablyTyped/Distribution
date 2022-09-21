@@ -257,11 +257,11 @@ object FaceResponses {
       
       inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setMessyGroup(value: js.Array[String]): Self = StObject.set(x, "messyGroup", value.asInstanceOf[js.Any])
       
-      inline def setMessyGroupVarargs(value: String*): Self = StObject.set(x, "messyGroup", js.Array(value :_*))
+      inline def setMessyGroupVarargs(value: String*): Self = StObject.set(x, "messyGroup", js.Array(value*))
     }
   }
   
@@ -282,7 +282,7 @@ object FaceResponses {
       
       inline def setCandidates(value: js.Array[Confidence]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
       
-      inline def setCandidatesVarargs(value: Confidence*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+      inline def setCandidatesVarargs(value: Confidence*): Self = StObject.set(x, "candidates", js.Array(value*))
       
       inline def setFaceId(value: String): Self = StObject.set(x, "faceId", value.asInstanceOf[js.Any])
     }
@@ -303,7 +303,7 @@ object FaceResponses {
       
       inline def setFaceIds(value: js.Array[String]): Self = StObject.set(x, "faceIds", value.asInstanceOf[js.Any])
       
-      inline def setFaceIdsVarargs(value: String*): Self = StObject.set(x, "faceIds", js.Array(value :_*))
+      inline def setFaceIdsVarargs(value: String*): Self = StObject.set(x, "faceIds", js.Array(value*))
     }
   }
   

@@ -26,7 +26,7 @@ object XAvailableLocales {
   inline def apply(
     acquire: () => Unit,
     getAvailableLocales: String => SafeArray[Locale],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAvailableLocales = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getAvailableLocales = js.Any.fromFunction1(getAvailableLocales), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

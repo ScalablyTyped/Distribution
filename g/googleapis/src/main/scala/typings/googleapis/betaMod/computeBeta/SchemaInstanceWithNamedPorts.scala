@@ -9,7 +9,7 @@ trait SchemaInstanceWithNamedPorts extends StObject {
   /**
     * [Output Only] The URL of the instance.
     */
-  var instance: js.UndefOr[String] = js.undefined
+  var instance: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Output Only] The named ports that belong to this instance group.
@@ -19,7 +19,7 @@ trait SchemaInstanceWithNamedPorts extends StObject {
   /**
     * [Output Only] The status of the instance.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInstanceWithNamedPorts {
   
@@ -32,15 +32,19 @@ object SchemaInstanceWithNamedPorts {
     
     inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
+    inline def setInstanceNull: Self = StObject.set(x, "instance", null)
+    
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
     inline def setNamedPorts(value: js.Array[SchemaNamedPort]): Self = StObject.set(x, "namedPorts", value.asInstanceOf[js.Any])
     
     inline def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
     
-    inline def setNamedPortsVarargs(value: SchemaNamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
+    inline def setNamedPortsVarargs(value: SchemaNamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

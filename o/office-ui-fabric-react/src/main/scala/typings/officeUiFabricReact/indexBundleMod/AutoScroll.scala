@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "AutoScroll")
 @js.native
-class AutoScroll protected ()
+open class AutoScroll protected ()
   extends typings.officeUiFabricReact.mod.AutoScroll {
   def this(element: HTMLElement) = this()
 }

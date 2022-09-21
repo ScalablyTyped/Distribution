@@ -15,9 +15,9 @@ trait AlterableQueryBuilder[T] extends StObject {
 object AlterableQueryBuilder {
   
   inline def apply[T](
-    alter: (js.Any, String) => AlterableQueryBuilder[T],
-    drop: /* repeated */ js.Any => AlterableQueryBuilder[T],
-    rename: (js.Any, js.Any) => AlterableQueryBuilder[T]
+    alter: (Any, String) => AlterableQueryBuilder[T],
+    drop: /* repeated */ Any => AlterableQueryBuilder[T],
+    rename: (Any, Any) => AlterableQueryBuilder[T]
   ): AlterableQueryBuilder[T] = {
     val __obj = js.Dynamic.literal(alter = js.Any.fromFunction2(alter), drop = js.Any.fromFunction1(drop), rename = js.Any.fromFunction2(rename))
     __obj.asInstanceOf[AlterableQueryBuilder[T]]
@@ -25,10 +25,10 @@ object AlterableQueryBuilder {
   
   extension [Self <: AlterableQueryBuilder[?], T](x: Self & AlterableQueryBuilder[T]) {
     
-    inline def setAlter(value: (js.Any, String) => AlterableQueryBuilder[T]): Self = StObject.set(x, "alter", js.Any.fromFunction2(value))
+    inline def setAlter(value: (Any, String) => AlterableQueryBuilder[T]): Self = StObject.set(x, "alter", js.Any.fromFunction2(value))
     
-    inline def setDrop(value: /* repeated */ js.Any => AlterableQueryBuilder[T]): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
+    inline def setDrop(value: /* repeated */ Any => AlterableQueryBuilder[T]): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
     
-    inline def setRename(value: (js.Any, js.Any) => AlterableQueryBuilder[T]): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
+    inline def setRename(value: (Any, Any) => AlterableQueryBuilder[T]): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
   }
 }

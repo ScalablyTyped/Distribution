@@ -1,9 +1,7 @@
 package typings.plist
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.ReadonlyArray
+import typings.node.bufferMod.global.Buffer
 import typings.xmlbuilder.mod.XMLToStringOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,18 +18,13 @@ object mod {
   
   inline def parse(xml: String): PlistValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[PlistValue]
   
-  @js.native
-  trait PlistArray
-    extends StObject
-       with ReadonlyArray[PlistValue]
-       with _PlistValue
+  type PlistArray = js.Array[PlistValue]
   
   type PlistBuildOptions = XMLToStringOptions
   
   trait PlistObject
     extends StObject
        with /* x */ StringDictionary[PlistValue]
-       with _PlistValue
   object PlistObject {
     
     inline def apply(): PlistObject = {
@@ -40,16 +33,5 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - typings.std.Date
-    - typings.node.Buffer
-    - typings.plist.mod.PlistObject
-    - typings.plist.mod.PlistArray
-  */
-  type PlistValue = _PlistValue | String | Double | Boolean | Date | Buffer
-  
-  trait _PlistValue extends StObject
+  type PlistValue = String | Double | Boolean | js.Date | Buffer | PlistObject | Any
 }

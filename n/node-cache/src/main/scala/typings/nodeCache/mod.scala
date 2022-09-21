@@ -11,13 +11,13 @@ object mod {
   @JSImport("node-cache", JSImport.Namespace)
   @js.native
   /** constructor */
-  class ^ () extends NodeCache {
+  open class ^ () extends NodeCache {
     def this(options: Options) = this()
   }
   
-  type Callback[T] = js.Function2[/* err */ js.Any, /* data */ js.UndefOr[T], Unit]
+  type Callback[T] = js.Function2[/* err */ Any, /* data */ js.UndefOr[T], Unit]
   
-  type Data = StringDictionary[WrappedValue[js.Any]]
+  type Data = StringDictionary[WrappedValue[Any]]
   
   /**
   	 * Since 4.1.0: Key-validation: The keys can be given as either string or number,

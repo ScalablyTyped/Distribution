@@ -41,7 +41,7 @@ object ManagedMobileLobApp {
     
     inline def setContentVersionsUndefined: Self = StObject.set(x, "contentVersions", js.undefined)
     
-    inline def setContentVersionsVarargs(value: MobileAppContent*): Self = StObject.set(x, "contentVersions", js.Array(value :_*))
+    inline def setContentVersionsVarargs(value: MobileAppContent*): Self = StObject.set(x, "contentVersions", js.Array(value*))
     
     inline def setFileName(value: NullableOption[String]): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

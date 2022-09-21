@@ -59,7 +59,7 @@ object BulkSendingCopy {
     inline def setCustomFieldsVarargs(
       value: (/* This object contains details about a custom field for a bulk send copy. In a bulk send request, each custom field in the bulk send list
       must match a custom field in the envelope or template that you want to send. */ BulkSendingCopyCustomField)*
-    ): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    ): Self = StObject.set(x, "customFields", js.Array(value*))
     
     inline def setEmailBlurb(value: String): Self = StObject.set(x, "emailBlurb", value.asInstanceOf[js.Any])
     
@@ -77,6 +77,6 @@ object BulkSendingCopy {
     
     inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    inline def setRecipientsVarargs(value: (/* This object contains details about a bulk send recipient. */ BulkSendingCopyRecipient)*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: (/* This object contains details about a bulk send recipient. */ BulkSendingCopyRecipient)*): Self = StObject.set(x, "recipients", js.Array(value*))
   }
 }

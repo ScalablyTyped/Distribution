@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("commonmark", "HtmlRenderer")
   @js.native
-  class HtmlRenderer () extends StObject {
+  open class HtmlRenderer () extends StObject {
     def this(options: HtmlRenderingOptions) = this()
     
     /**
@@ -33,7 +33,7 @@ object mod {
   
   @JSImport("commonmark", "Node")
   @js.native
-  class Node protected () extends StObject {
+  open class Node protected () extends StObject {
     def this(nodeType: NodeType) = this()
     def this(nodeType: NodeType, sourcepos: Position) = this()
     
@@ -176,7 +176,7 @@ object mod {
   /**
     * Constructs a new Parser
     */
-  class Parser () extends StObject {
+  open class Parser () extends StObject {
     def this(options: ParserOptions) = this()
     
     def parse(input: String): Node = js.native
@@ -184,7 +184,7 @@ object mod {
   
   @JSImport("commonmark", "XmlRenderer")
   @js.native
-  class XmlRenderer () extends StObject {
+  open class XmlRenderer () extends StObject {
     def this(options: XmlRenderingOptions) = this()
     
     def render(root: Node): String = js.native

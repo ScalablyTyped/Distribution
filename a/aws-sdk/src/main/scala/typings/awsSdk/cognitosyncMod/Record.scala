@@ -9,7 +9,7 @@ trait Record extends StObject {
   /**
     * The last modified date of the client device.
     */
-  var DeviceLastModifiedDate: js.UndefOr[Date] = js.undefined
+  var DeviceLastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The key for the record.
@@ -24,7 +24,7 @@ trait Record extends StObject {
   /**
     * The date on which the record was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The server sync count for this record.
@@ -45,7 +45,7 @@ object Record {
   
   extension [Self <: Record](x: Self) {
     
-    inline def setDeviceLastModifiedDate(value: Date): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setDeviceLastModifiedDate(value: js.Date): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setDeviceLastModifiedDateUndefined: Self = StObject.set(x, "DeviceLastModifiedDate", js.undefined)
     
@@ -57,7 +57,7 @@ object Record {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

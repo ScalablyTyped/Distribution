@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InvocationListener")
 @js.native
-class InvocationListener ()
+open class InvocationListener ()
   extends StObject
      with typings.fridaGum.InvocationListener {
   

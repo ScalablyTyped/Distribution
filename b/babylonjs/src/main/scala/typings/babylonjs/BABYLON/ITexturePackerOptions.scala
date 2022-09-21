@@ -108,7 +108,7 @@ object ITexturePackerOptions {
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setMapVarargs(value: String*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: String*): Self = StObject.set(x, "map", js.Array(value*))
     
     inline def setPaddingColor(value: Color3 | Color4): Self = StObject.set(x, "paddingColor", value.asInstanceOf[js.Any])
     

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "Slider")
 @js.native
-class Slider protected () extends _MDLComponent[SliderProps] {
+open class Slider protected () extends _MDLComponent[SliderProps] {
   def this(props: SliderProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SliderProps, context: js.Any) = this()
+  def this(props: SliderProps, context: Any) = this()
 }

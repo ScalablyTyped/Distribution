@@ -53,13 +53,13 @@ object mod extends Shortcut {
       
       inline def setFormTypesUndefined: Self = StObject.set(x, "formTypes", js.undefined)
       
-      inline def setFormTypesVarargs(value: String*): Self = StObject.set(x, "formTypes", js.Array(value :_*))
+      inline def setFormTypesVarargs(value: String*): Self = StObject.set(x, "formTypes", js.Array(value*))
       
       inline def setJsonTypes(value: js.Array[String]): Self = StObject.set(x, "jsonTypes", value.asInstanceOf[js.Any])
       
       inline def setJsonTypesUndefined: Self = StObject.set(x, "jsonTypes", js.undefined)
       
-      inline def setJsonTypesVarargs(value: String*): Self = StObject.set(x, "jsonTypes", js.Array(value :_*))
+      inline def setJsonTypesVarargs(value: String*): Self = StObject.set(x, "jsonTypes", js.Array(value*))
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -85,24 +85,36 @@ object mod extends Shortcut {
       
       inline def setTextTypesUndefined: Self = StObject.set(x, "textTypes", js.undefined)
       
-      inline def setTextTypesVarargs(value: String*): Self = StObject.set(x, "textTypes", js.Array(value :_*))
+      inline def setTextTypesVarargs(value: String*): Self = StObject.set(x, "textTypes", js.Array(value*))
     }
   }
   
   @js.native
   trait Parse extends StObject {
     
-    def apply(context: Context): js.Promise[js.Any] = js.native
-    def apply(context: Context, options: Options): js.Promise[js.Any] = js.native
+    /**
+      * @async
+      */
+    def apply(context: Context): js.Promise[Any] = js.native
+    def apply(context: Context, options: Options): js.Promise[Any] = js.native
     
-    def form(context: Context): js.Promise[js.Any] = js.native
-    def form(context: Context, options: Options): js.Promise[js.Any] = js.native
+    /**
+      * @async
+      */
+    def form(context: Context): js.Promise[Any] = js.native
+    def form(context: Context, options: Options): js.Promise[Any] = js.native
     
-    def json(context: Context): js.Promise[js.Any] = js.native
-    def json(context: Context, options: Options): js.Promise[js.Any] = js.native
+    /**
+      * @async
+      */
+    def json(context: Context): js.Promise[Any] = js.native
+    def json(context: Context, options: Options): js.Promise[Any] = js.native
     
-    def text(context: Context): js.Promise[js.Any] = js.native
-    def text(context: Context, options: Options): js.Promise[js.Any] = js.native
+    /**
+      * @async
+      */
+    def text(context: Context): js.Promise[Any] = js.native
+    def text(context: Context, options: Options): js.Promise[Any] = js.native
   }
   
   type _To = Parse

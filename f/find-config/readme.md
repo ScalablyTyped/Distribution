@@ -10,15 +10,12 @@ Find the first config file matching a given name in the current directory or the
 | ------------------ | :-------------: |
 | Full name          | find-config |
 | Keywords           | config, dot, rc, file, find, glob, xdg |
-| # releases         | 0 |
-| # dependents       | 161 |
-| # downloads        | 3276238 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 623835.3333333334 |
+| # stars            | 37.0 |
 
 ## Links
-- [Homepage](https://github.com/shannonmoeller/find-config)
-- [Bugs](https://github.com/shannonmoeller/find-config/issues)
-- [Repository](https://github.com/shannonmoeller/find-config)
 - [Npm](https://www.npmjs.com/package/find-config)
     
 

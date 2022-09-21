@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.resellerV1Mod.resellerV1.Options
-import typings.googleapis.resellerV1Mod.resellerV1.Reseller
+import typings.googleapis.firebasedatabaseV1betaMod.firebasedatabaseV1beta.Firebasedatabase
+import typings.googleapis.firebasedatabaseV1betaMod.firebasedatabaseV1beta.Options
+import typings.googleapis.googleapisStrings.v1beta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn110 extends StObject {
   
-  def apply(options: Options): Reseller = js.native
-  def apply(version: v1): Reseller = js.native
+  def apply(options: Options): Firebasedatabase = js.native
+  def apply(version: v1beta): Firebasedatabase = js.native
 }

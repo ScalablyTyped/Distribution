@@ -9,10 +9,10 @@ A simple and intuitive object validation library
 | ------------------ | :-------------: |
 | Full name          | js-schema |
 | Keywords           | json, schema, JSON Schema, validation, validator |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 81236 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4102.333333333333 |
+| # stars            | 388.0 |
 
 ## Links
 - [Homepage](https://github.com/molnarg/js-schema)

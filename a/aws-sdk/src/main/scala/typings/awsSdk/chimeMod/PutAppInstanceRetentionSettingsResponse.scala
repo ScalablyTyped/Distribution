@@ -14,7 +14,7 @@ trait PutAppInstanceRetentionSettingsResponse extends StObject {
   /**
     * The time at which the API deletes data.
     */
-  var InitiateDeletionTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var InitiateDeletionTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object PutAppInstanceRetentionSettingsResponse {
   
@@ -29,7 +29,7 @@ object PutAppInstanceRetentionSettingsResponse {
     
     inline def setAppInstanceRetentionSettingsUndefined: Self = StObject.set(x, "AppInstanceRetentionSettings", js.undefined)
     
-    inline def setInitiateDeletionTimestamp(value: Timestamp): Self = StObject.set(x, "InitiateDeletionTimestamp", value.asInstanceOf[js.Any])
+    inline def setInitiateDeletionTimestamp(value: js.Date): Self = StObject.set(x, "InitiateDeletionTimestamp", value.asInstanceOf[js.Any])
     
     inline def setInitiateDeletionTimestampUndefined: Self = StObject.set(x, "InitiateDeletionTimestamp", js.undefined)
   }

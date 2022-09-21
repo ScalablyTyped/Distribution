@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-collapse" : "3.0.1"
+      "rc-collapse" : "3.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-collapse" : "3.0.1"
+      "rc-collapse" : "3.4.2"
     }
   ],
   "compile-devDependencies" : [

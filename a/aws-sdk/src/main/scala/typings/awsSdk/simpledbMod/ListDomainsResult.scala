@@ -29,7 +29,7 @@ object ListDomainsResult {
     
     inline def setDomainNamesUndefined: Self = StObject.set(x, "DomainNames", js.undefined)
     
-    inline def setDomainNamesVarargs(value: String*): Self = StObject.set(x, "DomainNames", js.Array(value :_*))
+    inline def setDomainNamesVarargs(value: String*): Self = StObject.set(x, "DomainNames", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

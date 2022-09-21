@@ -26,6 +26,6 @@ object PresentationProperties {
     
     inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
     
-    inline def setSlidesVarargs(value: SlideProperties*): Self = StObject.set(x, "slides", js.Array(value :_*))
+    inline def setSlidesVarargs(value: SlideProperties*): Self = StObject.set(x, "slides", js.Array(value*))
   }
 }

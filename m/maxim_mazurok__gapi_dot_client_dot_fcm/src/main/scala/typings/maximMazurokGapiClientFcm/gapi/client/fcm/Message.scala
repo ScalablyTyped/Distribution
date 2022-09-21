@@ -16,17 +16,21 @@ trait Message extends StObject {
   /** Condition to send a message to, e.g. "'foo' in topics && 'bar' in topics". */
   var condition: js.UndefOr[String] = js.undefined
   
-  /** Input only. Arbitrary key/value payload. The key should not be a reserved word ("from", "message_type", or any word starting with "google" or "gcm"). */
+  /**
+    * Input only. Arbitrary key/value payload, which must be UTF-8 encoded. The key should not be a reserved word ("from", "message_type", or any word starting with "google" or "gcm").
+    * When sending payloads containing only data fields to iOS devices, only normal priority (`"apns-priority": "5"`) is allowed in
+    * [`ApnsConfig`](/docs/reference/fcm/rest/v1/projects.messages#apnsconfig).
+    */
   var data: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message & TopLevel[Any]
   ] = js.undefined
   
   /** Input only. Template for FCM SDK feature options to use across all platforms. */
   var fcmOptions: js.UndefOr[FcmOptions] = js.undefined
   
-  /** Output Only. The identifier of the message sent, in the format of `projects/∗/messages/{message_id}`. */
+  /** Output Only. The identifier of the message sent, in the format of `projects/ *‍/messages/{message_id}`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Input only. Basic notification template to use across all platforms. */
@@ -65,7 +69,7 @@ object Message {
     inline def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message & TopLevel[Any]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

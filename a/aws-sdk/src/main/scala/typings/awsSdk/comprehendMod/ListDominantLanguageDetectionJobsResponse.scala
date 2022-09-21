@@ -29,7 +29,7 @@ object ListDominantLanguageDetectionJobsResponse {
     
     inline def setDominantLanguageDetectionJobPropertiesListUndefined: Self = StObject.set(x, "DominantLanguageDetectionJobPropertiesList", js.undefined)
     
-    inline def setDominantLanguageDetectionJobPropertiesListVarargs(value: DominantLanguageDetectionJobProperties*): Self = StObject.set(x, "DominantLanguageDetectionJobPropertiesList", js.Array(value :_*))
+    inline def setDominantLanguageDetectionJobPropertiesListVarargs(value: DominantLanguageDetectionJobProperties*): Self = StObject.set(x, "DominantLanguageDetectionJobPropertiesList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

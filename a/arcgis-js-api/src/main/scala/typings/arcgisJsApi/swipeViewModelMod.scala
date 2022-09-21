@@ -17,7 +17,12 @@ object swipeViewModelMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Swipe/SwipeViewModel", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides the logic for the [Swipe](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html) widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe-SwipeViewModel.html)
+    */
+  open class Class ()
     extends StObject
        with SwipeViewModel {
     def this(properties: SwipeViewModelProperties) = this()

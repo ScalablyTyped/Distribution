@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ZoneRulesProvider")
 @js.native
-class ZoneRulesProvider () extends StObject
+open class ZoneRulesProvider () extends StObject
 object ZoneRulesProvider {
   
   @JSImport("js-joda", "ZoneRulesProvider")

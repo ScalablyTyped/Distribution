@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrefixList extends StObject {
   
   /**
-    * The IP address range of the AWS service.
+    * The IP address range of the Amazon Web Service.
     */
   var Cidrs: js.UndefOr[ValueStringList] = js.undefined
   
@@ -34,7 +34,7 @@ object PrefixList {
     
     inline def setCidrsUndefined: Self = StObject.set(x, "Cidrs", js.undefined)
     
-    inline def setCidrsVarargs(value: String*): Self = StObject.set(x, "Cidrs", js.Array(value :_*))
+    inline def setCidrsVarargs(value: String*): Self = StObject.set(x, "Cidrs", js.Array(value*))
     
     inline def setPrefixListId(value: String): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     

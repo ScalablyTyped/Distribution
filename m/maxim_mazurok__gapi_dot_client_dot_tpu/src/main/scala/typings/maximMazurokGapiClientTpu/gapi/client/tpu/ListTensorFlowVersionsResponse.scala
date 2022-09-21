@@ -32,12 +32,12 @@ object ListTensorFlowVersionsResponse {
     
     inline def setTensorflowVersionsUndefined: Self = StObject.set(x, "tensorflowVersions", js.undefined)
     
-    inline def setTensorflowVersionsVarargs(value: TensorFlowVersion*): Self = StObject.set(x, "tensorflowVersions", js.Array(value :_*))
+    inline def setTensorflowVersionsVarargs(value: TensorFlowVersion*): Self = StObject.set(x, "tensorflowVersions", js.Array(value*))
     
     inline def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
     inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

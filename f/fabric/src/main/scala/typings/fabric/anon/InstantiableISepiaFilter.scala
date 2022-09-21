@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstantiableISepiaFilter
   extends StObject
      with Instantiable0[ISepiaFilter]
-     with Instantiable1[/* options */ js.Any, ISepiaFilter] {
+     with Instantiable1[/* options */ Any, ISepiaFilter] {
   
   /**
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): ISepiaFilter = js.native
+  def fromObject(`object`: Any): ISepiaFilter = js.native
 }

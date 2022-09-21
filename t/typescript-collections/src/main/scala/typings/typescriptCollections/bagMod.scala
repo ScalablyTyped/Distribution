@@ -28,7 +28,7 @@ object bagMod {
     * is not appropriate, a custom function which receives an object and returns a
     * unique string must be provided.
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with Bag[T] {
     def this(toStrFunction: js.Function1[/* item */ T, String]) = this()
@@ -67,7 +67,7 @@ object bagMod {
       */
     def count(element: T): Double = js.native
     
-    /* private */ var dictionary: js.Any = js.native
+    /* private */ var dictionary: Any = js.native
     
     /**
       * Executes the provided function once for each element
@@ -84,7 +84,7 @@ object bagMod {
       */
     def isEmpty(): Boolean = js.native
     
-    /* private */ var nElements: js.Any = js.native
+    /* private */ var nElements: Any = js.native
     
     /**
       * Removes nCopies of the specified object to this bag.
@@ -117,6 +117,6 @@ object bagMod {
       */
     def toSet(): typings.typescriptCollections.setMod.default[T] = js.native
     
-    /* private */ var toStrF: js.Any = js.native
+    /* private */ var toStrF: Any = js.native
   }
 }

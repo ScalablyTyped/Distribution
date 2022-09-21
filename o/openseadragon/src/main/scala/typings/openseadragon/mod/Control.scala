@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "Control")
 @js.native
-class Control protected () extends StObject {
+open class Control protected () extends StObject {
   def this(element: Element, options: TControlOptions, container: Element) = this()
   
   var anchor: ControlAnchor = js.native

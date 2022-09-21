@@ -3,7 +3,6 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientCodecommitNode.typesRepositoryTriggerMod.RepositoryTrigger
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesPutRepositoryTriggersInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -44,11 +43,11 @@ object typesPutRepositoryTriggersInputMod {
     /**
       * <p>The JSON block of configuration information for each trigger.</p>
       */
-    var triggers: js.Array[RepositoryTrigger] | Iterable[RepositoryTrigger]
+    var triggers: js.Array[RepositoryTrigger] | js.Iterable[RepositoryTrigger]
   }
   object PutRepositoryTriggersInput {
     
-    inline def apply(repositoryName: String, triggers: js.Array[RepositoryTrigger] | Iterable[RepositoryTrigger]): PutRepositoryTriggersInput = {
+    inline def apply(repositoryName: String, triggers: js.Array[RepositoryTrigger] | js.Iterable[RepositoryTrigger]): PutRepositoryTriggersInput = {
       val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutRepositoryTriggersInput]
     }
@@ -60,7 +59,7 @@ object typesPutRepositoryTriggersInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -71,9 +70,9 @@ object typesPutRepositoryTriggersInputMod {
       
       inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
       
-      inline def setTriggers(value: js.Array[RepositoryTrigger] | Iterable[RepositoryTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+      inline def setTriggers(value: js.Array[RepositoryTrigger] | js.Iterable[RepositoryTrigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
       
-      inline def setTriggersVarargs(value: RepositoryTrigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+      inline def setTriggersVarargs(value: RepositoryTrigger*): Self = StObject.set(x, "triggers", js.Array(value*))
     }
   }
 }

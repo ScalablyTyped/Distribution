@@ -15,6 +15,11 @@ trait CreateTestGridProjectRequest extends StObject {
     * Human-readable name of the Selenium testing project.
     */
   var name: ResourceName
+  
+  /**
+    * The VPC security groups and subnets that are attached to a project.
+    */
+  var vpcConfig: js.UndefOr[TestGridVpcConfig] = js.undefined
 }
 object CreateTestGridProjectRequest {
   
@@ -30,5 +35,9 @@ object CreateTestGridProjectRequest {
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfig(value: TestGridVpcConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
   }
 }

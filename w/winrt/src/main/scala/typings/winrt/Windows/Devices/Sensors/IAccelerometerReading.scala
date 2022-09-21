@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +12,11 @@ trait IAccelerometerReading extends StObject {
   
   var accelerationZ: Double
   
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object IAccelerometerReading {
   
-  inline def apply(accelerationX: Double, accelerationY: Double, accelerationZ: Double, timestamp: Date): IAccelerometerReading = {
+  inline def apply(accelerationX: Double, accelerationY: Double, accelerationZ: Double, timestamp: js.Date): IAccelerometerReading = {
     val __obj = js.Dynamic.literal(accelerationX = accelerationX.asInstanceOf[js.Any], accelerationY = accelerationY.asInstanceOf[js.Any], accelerationZ = accelerationZ.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccelerometerReading]
   }
@@ -30,6 +29,6 @@ object IAccelerometerReading {
     
     inline def setAccelerationZ(value: Double): Self = StObject.set(x, "accelerationZ", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

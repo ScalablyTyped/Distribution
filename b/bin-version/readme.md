@@ -1,7 +1,7 @@
 
 # Scala.js typings for bin-version
 
-Typings are for version 4.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 Get the version of a binary in semver format
@@ -9,11 +9,11 @@ Get the version of a binary in semver format
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | bin-version |
-| Keywords           | bin, binary, executable, version, semver, semantic, cli |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 52033770 |
-| # stars            | 0 |
+| Keywords           | binary, executable, version, semver, semantic, cli |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5451622.333333333 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/bin-version#readme)

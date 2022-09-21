@@ -26,7 +26,7 @@ object XTitled {
     TitleObject: XTitle,
     acquire: () => Unit,
     getTitleObject: () => XTitle,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTitleObject: XTitle => Unit
   ): XTitled = {

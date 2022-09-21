@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DiagramNodes extends StObject {
   
-  def apply(Index: js.Any): DiagramNode = js.native
+  def apply(Index: Any): DiagramNode = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): DiagramNode = js.native
+  def Item(Index: Any): DiagramNode = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def SelectAll(): Unit = js.native
 }

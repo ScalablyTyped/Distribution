@@ -17,7 +17,7 @@ trait RedshiftDataParameters extends StObject {
   var DbUser: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.DbUser] = js.undefined
   
   /**
-    * The name or ARN of the secret that enables access to the database. Required when authenticating using AWS Secrets Manager.
+    * The name or ARN of the secret that enables access to the database. Required when authenticating using Amazon Web Services Secrets Manager.
     */
   var SecretManagerArn: js.UndefOr[RedshiftSecretManagerArn] = js.undefined
   

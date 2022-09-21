@@ -11,7 +11,7 @@ trait ServeStaticFiles_ extends StObject {
   
   var maxAge: js.UndefOr[Double] = js.undefined
   
-  var setHeaders: js.UndefOr[js.Function3[/* res */ Response, /* path */ String, /* stat */ js.Any, js.Any]] = js.undefined
+  var setHeaders: js.UndefOr[js.Function3[/* res */ Response, /* path */ String, /* stat */ Any, Any]] = js.undefined
 }
 object ServeStaticFiles_ {
   
@@ -30,7 +30,7 @@ object ServeStaticFiles_ {
     
     inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
-    inline def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ js.Any) => js.Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
+    inline def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ Any) => Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
     
     inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
   }

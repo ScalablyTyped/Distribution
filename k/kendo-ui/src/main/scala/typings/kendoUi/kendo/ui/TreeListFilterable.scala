@@ -10,6 +10,8 @@ trait TreeListFilterable extends StObject {
   
   var messages: js.UndefOr[TreeListFilterableMessages] = js.undefined
   
+  var mode: js.UndefOr[String] = js.undefined
+  
   var operators: js.UndefOr[TreeListFilterableOperators] = js.undefined
 }
 object TreeListFilterable {
@@ -28,6 +30,10 @@ object TreeListFilterable {
     inline def setMessages(value: TreeListFilterableMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setOperators(value: TreeListFilterableOperators): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     

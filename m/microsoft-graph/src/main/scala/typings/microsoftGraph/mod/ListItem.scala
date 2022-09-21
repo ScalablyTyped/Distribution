@@ -14,6 +14,9 @@ trait ListItem
   // The content type of this list item
   var contentType: js.UndefOr[NullableOption[ContentTypeInfo]] = js.undefined
   
+  // Version information for a document set version created by a user.
+  var documentSetVersions: js.UndefOr[NullableOption[js.Array[DocumentSetVersion]]] = js.undefined
+  
   // For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
   var driveItem: js.UndefOr[NullableOption[DriveItem]] = js.undefined
   
@@ -47,6 +50,14 @@ object ListItem {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
+    inline def setDocumentSetVersions(value: NullableOption[js.Array[DocumentSetVersion]]): Self = StObject.set(x, "documentSetVersions", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentSetVersionsNull: Self = StObject.set(x, "documentSetVersions", null)
+    
+    inline def setDocumentSetVersionsUndefined: Self = StObject.set(x, "documentSetVersions", js.undefined)
+    
+    inline def setDocumentSetVersionsVarargs(value: DocumentSetVersion*): Self = StObject.set(x, "documentSetVersions", js.Array(value*))
+    
     inline def setDriveItem(value: NullableOption[DriveItem]): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
     
     inline def setDriveItemNull: Self = StObject.set(x, "driveItem", null)
@@ -71,6 +82,6 @@ object ListItem {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: ListItemVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: ListItemVersion*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

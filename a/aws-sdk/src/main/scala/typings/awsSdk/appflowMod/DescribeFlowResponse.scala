@@ -9,7 +9,7 @@ trait DescribeFlowResponse extends StObject {
   /**
     *  Specifies when the flow was created. 
     */
-  var createdAt: js.UndefOr[Date] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The ARN of the user who created the flow. 
@@ -59,7 +59,7 @@ trait DescribeFlowResponse extends StObject {
   /**
     *  Specifies when the flow was last updated. 
     */
-  var lastUpdatedAt: js.UndefOr[Date] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  Specifies the user name of the account that performed the most recent update. 
@@ -95,7 +95,7 @@ object DescribeFlowResponse {
   
   extension [Self <: DescribeFlowResponse](x: Self) {
     
-    inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -111,7 +111,7 @@ object DescribeFlowResponse {
     
     inline def setDestinationFlowConfigListUndefined: Self = StObject.set(x, "destinationFlowConfigList", js.undefined)
     
-    inline def setDestinationFlowConfigListVarargs(value: DestinationFlowConfig*): Self = StObject.set(x, "destinationFlowConfigList", js.Array(value :_*))
+    inline def setDestinationFlowConfigListVarargs(value: DestinationFlowConfig*): Self = StObject.set(x, "destinationFlowConfigList", js.Array(value*))
     
     inline def setFlowArn(value: FlowArn): Self = StObject.set(x, "flowArn", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object DescribeFlowResponse {
     
     inline def setLastRunExecutionDetailsUndefined: Self = StObject.set(x, "lastRunExecutionDetails", js.undefined)
     
-    inline def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
@@ -157,7 +157,7 @@ object DescribeFlowResponse {
     
     inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value*))
     
     inline def setTriggerConfig(value: TriggerConfig): Self = StObject.set(x, "triggerConfig", value.asInstanceOf[js.Any])
     

@@ -7,17 +7,16 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric`
 import typings.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
 import typings.arcgisJsApi.arcgisJsApiStrings.`centered-on`
 import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
+import typings.arcgisJsApi.arcgisJsApiStrings.above
+import typings.arcgisJsApi.arcgisJsApiStrings.below
 import typings.arcgisJsApi.arcgisJsApiStrings.days
 import typings.arcgisJsApi.arcgisJsApiStrings.extremes
 import typings.arcgisJsApi.arcgisJsApiStrings.hours
 import typings.arcgisJsApi.arcgisJsApiStrings.minutes
 import typings.arcgisJsApi.arcgisJsApiStrings.months
-import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.seconds
-import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import typings.arcgisJsApi.arcgisJsApiStrings.years
 import typings.std.AbortSignal
-import typings.std.Date
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -29,14 +28,9 @@ trait colorCreateAgeRendererParams
      with Object {
   
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
-  
-  /**
     * **This option only applies to generating renderers for mesh SceneLayers**.
+    *
+    * @default replace
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
@@ -52,30 +46,25 @@ trait colorCreateAgeRendererParams
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
-    */
-  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Indicates whether to add edges to the output renderer.
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var edgesType: js.UndefOr[solid | none] = js.undefined
+  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the field, or a date value representing the end time in the age calculation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var endTime: Date | String | Double
+  var endTime: js.Date | String | Double
   
   /**
     * The layer for which the visualization is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
@@ -124,7 +113,7 @@ trait colorCreateAgeRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var startTime: Date | String | Double
+  var startTime: js.Date | String | Double
   
   /**
     * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
@@ -136,6 +125,8 @@ trait colorCreateAgeRendererParams
   /**
     * The type of symbol to generate.
     *
+    * @default 2d
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
   var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
@@ -143,9 +134,11 @@ trait colorCreateAgeRendererParams
   /**
     * Determines which values will be emphasized in the continuous ramp and the map.
     *
+    * @default high-to-low
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
     */
-  var theme: js.UndefOr[`high-to-low` | `above-and-below` | `centered-on` | extremes] = js.undefined
+  var theme: js.UndefOr[`high-to-low` | above | below | `above-and-below` | `centered-on` | extremes] = js.undefined
   
   /**
     * The time unit used to calculate the difference between `endTime` and `startTime`.
@@ -165,11 +158,11 @@ object colorCreateAgeRendererParams {
   
   inline def apply(
     constructor: js.Function,
-    endTime: Date | String | Double,
+    endTime: js.Date | String | Double,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
-    startTime: Date | String | Double,
+    startTime: js.Date | String | Double,
     view: View
   ): colorCreateAgeRendererParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startTime = startTime.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
@@ -177,10 +170,6 @@ object colorCreateAgeRendererParams {
   }
   
   extension [Self <: colorCreateAgeRendererParams](x: Self) {
-    
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     inline def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     
@@ -194,13 +183,9 @@ object colorCreateAgeRendererParams {
     
     inline def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
-    inline def setEdgesType(value: solid | none): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    inline def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
-    
-    inline def setEndTime(value: Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
-    
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: colorCreateAgeRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
@@ -226,7 +211,7 @@ object colorCreateAgeRendererParams {
     
     inline def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
     
-    inline def setStartTime(value: Date | String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date | String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
@@ -236,7 +221,7 @@ object colorCreateAgeRendererParams {
     
     inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
     
-    inline def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: `high-to-low` | above | below | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

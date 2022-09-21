@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListReplaysRequest extends StObject {
   
   /**
-    * The ARN of the event source associated with the replay.
+    * The ARN of the archive from which the events are replayed.
     */
   var EventSourceArn: js.UndefOr[Arn] = js.undefined
   

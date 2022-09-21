@@ -11,6 +11,7 @@ object visitorMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def visit(node: js.Array[Node], observer: Observer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visit")(node.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def visit(node: Node, observer: Observer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visit")(node.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Observer extends StObject {

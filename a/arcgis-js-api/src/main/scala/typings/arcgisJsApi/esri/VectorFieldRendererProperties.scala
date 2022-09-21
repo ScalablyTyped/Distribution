@@ -13,7 +13,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`ocean-current-kn`
 import typings.arcgisJsApi.arcgisJsApiStrings.`ocean-current-m`
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-scalar`
 import typings.arcgisJsApi.arcgisJsApiStrings.`single-arrow`
-import typings.arcgisJsApi.arcgisJsApiStrings.`wind-speed`
+import typings.arcgisJsApi.arcgisJsApiStrings.`wind-barb`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,6 +30,8 @@ trait VectorFieldRendererProperties extends StObject {
   /**
     * Defines the flow direction of the data.
     *
+    * @default "flow-from"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#flowRepresentation)
     */
   var flowRepresentation: js.UndefOr[`flow-from` | `flow-to`] = js.undefined
@@ -37,14 +39,18 @@ trait VectorFieldRendererProperties extends StObject {
   /**
     * Predefined symbol styles used to represent the vector flow.
     *
+    * @default "single-arrow"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#style)
     */
   var style: js.UndefOr[
-    `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-speed`
+    `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-barb`
   ] = js.undefined
   
   /**
     * Determines the density of the symbols.
+    *
+    * @default 50
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#symbolTileSize)
     */
@@ -75,7 +81,7 @@ object VectorFieldRendererProperties {
     inline def setFlowRepresentationUndefined: Self = StObject.set(x, "flowRepresentation", js.undefined)
     
     inline def setStyle(
-      value: `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-speed`
+      value: `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-barb`
     ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
@@ -88,6 +94,6 @@ object VectorFieldRendererProperties {
     
     inline def setVisualVariablesUndefined: Self = StObject.set(x, "visualVariables", js.undefined)
     
-    inline def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
+    inline def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value*))
   }
 }

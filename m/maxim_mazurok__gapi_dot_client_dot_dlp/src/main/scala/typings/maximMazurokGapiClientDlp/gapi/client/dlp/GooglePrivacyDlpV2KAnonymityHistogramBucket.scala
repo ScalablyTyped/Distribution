@@ -42,7 +42,7 @@ object GooglePrivacyDlpV2KAnonymityHistogramBucket {
     
     inline def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
     
-    inline def setBucketValuesVarargs(value: GooglePrivacyDlpV2KAnonymityEquivalenceClass*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
+    inline def setBucketValuesVarargs(value: GooglePrivacyDlpV2KAnonymityEquivalenceClass*): Self = StObject.set(x, "bucketValues", js.Array(value*))
     
     inline def setEquivalenceClassSizeLowerBound(value: String): Self = StObject.set(x, "equivalenceClassSizeLowerBound", value.asInstanceOf[js.Any])
     

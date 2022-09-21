@@ -42,11 +42,11 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV]
   
   def addEventListener(
     `type`: autocompleteChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | String], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | String], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: autocompleteChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | String], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | String], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -55,7 +55,7 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Array[AsyncValidator[V]]], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -64,63 +64,63 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Array[AsyncValidator[V]]], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_autofocusChanged(
     `type`: autofocusChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_autofocusChanged(
     `type`: autofocusChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_placeholderChanged(
     `type`: placeholderChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_placeholderChanged(
     `type`: placeholderChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_rawValueChanged(
     `type`: rawValueChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RV], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RV], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_rawValueChanged(
     `type`: rawValueChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RV], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[RV], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
     `type`: readonlyChanged_,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
     `type`: readonlyChanged_,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_requiredChanged(
     `type`: requiredChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_requiredChanged(
     `type`: requiredChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -129,7 +129,7 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(js.Array[Validator[V] | RegisteredValidator]) | Null], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -138,7 +138,7 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(js.Array[Validator[V] | RegisteredValidator]) | Null], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -164,29 +164,29 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV]
   @JSName("getProperty")
   def getProperty_validators(property: validators): (js.Array[Validator[V] | RegisteredValidator]) | Null = js.native
   
-  var onAsyncValidatorsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[AsyncValidator[V]]], js.Any]) | Null = js.native
+  var onAsyncValidatorsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[AsyncValidator[V]]], Any]) | Null = js.native
   
-  var onAutocompleteChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | String], js.Any]) | Null = js.native
+  var onAutocompleteChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | String], Any]) | Null = js.native
   
-  var onAutofocusChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
+  var onAutofocusChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], Any]) | Null = js.native
   
   @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_inputBase: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
+  var onOjAnimateEnd_inputBase: (js.Function1[/* event */ ojAnimateEnd, Any]) | Null = js.native
   
   @JSName("onOjAnimateStart")
-  var onOjAnimateStart_inputBase: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
+  var onOjAnimateStart_inputBase: (js.Function1[/* event */ ojAnimateStart, Any]) | Null = js.native
   
-  var onPlaceholderChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
+  var onPlaceholderChanged: (js.Function1[/* event */ JetElementCustomEvent[String], Any]) | Null = js.native
   
-  var onRawValueChanged: (js.Function1[/* event */ JetElementCustomEvent[RV], js.Any]) | Null = js.native
+  var onRawValueChanged: (js.Function1[/* event */ JetElementCustomEvent[RV], Any]) | Null = js.native
   
-  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
+  var onReadonlyChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], Any]) | Null = js.native
   
-  var onRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], js.Any]) | Null = js.native
+  var onRequiredChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], Any]) | Null = js.native
   
   var onValidatorsChanged: (js.Function1[
     /* event */ JetElementCustomEvent[(js.Array[Validator[V] | RegisteredValidator]) | Null], 
-    js.Any
+    Any
   ]) | Null = js.native
   
   var placeholder: String = js.native
@@ -199,8 +199,7 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV]
   
   def setProperties(properties: inputBaseSettablePropertiesLenient[V, SV, RV]): Unit = js.native
   
-  def setProperty(property: autocomplete, value: off): Unit = js.native
-  def setProperty(property: autocomplete, value: on): Unit = js.native
+  def setProperty(property: autocomplete, value: on | off): Unit = js.native
   @JSName("setProperty")
   def setProperty_asyncValidators(property: asyncValidators, value: js.Array[AsyncValidator[V]]): Unit = js.native
   @JSName("setProperty")

@@ -12,9 +12,9 @@ trait Control extends StObject {
   
   def getHeight(): Double = js.native
   
-  def getMainElement(): js.Any = js.native
+  def getMainElement(): Any = js.native
   
-  def getParentControl(): js.Any = js.native
+  def getParentControl(): Any = js.native
   
   def getVisible(): Boolean = js.native
   
@@ -22,7 +22,7 @@ trait Control extends StObject {
   
   def inCallback(): Boolean = js.native
   
-  /* protected */ val instance: js.Any = js.native
+  /* protected */ val instance: Any = js.native
   
   val name: String = js.native
   

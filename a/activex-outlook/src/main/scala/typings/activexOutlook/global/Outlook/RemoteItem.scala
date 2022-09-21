@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.RemoteItem")
 @js.native
-/* private */ class RemoteItem ()
+/* private */ open class RemoteItem ()
   extends StObject
      with typings.activexOutlook.Outlook.RemoteItem

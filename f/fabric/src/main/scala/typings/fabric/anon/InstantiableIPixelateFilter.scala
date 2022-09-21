@@ -17,5 +17,5 @@ trait InstantiableIPixelateFilter
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IPixelateFilter = js.native
+  def fromObject(`object`: Any): IPixelateFilter = js.native
 }

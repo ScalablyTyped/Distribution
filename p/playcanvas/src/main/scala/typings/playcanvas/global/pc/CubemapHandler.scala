@@ -1,24 +1,25 @@
 package typings.playcanvas.global.pc
 
-import typings.playcanvas.pc.ResourceHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @typedef {import('./handler.js').ResourceHandler} ResourceHandler */
+/** @typedef {import('../framework/app-base.js').AppBase} AppBase */
 /**
-  * Resource handler used for loading cubemap {@link pc.Texture} resources.
-  * @param device - The graphics device.
-  * @param assets - The asset registry.
-  * @param loader - The resource loader.
+  * Resource handler used for loading cubemap {@link Texture} resources.
+  *
+  * @implements {ResourceHandler}
   */
 @JSGlobal("pc.CubemapHandler")
 @js.native
-class CubemapHandler protected ()
-  extends StObject
-     with ResourceHandler {
-  def this(
-    device: typings.playcanvas.pc.GraphicsDevice,
-    assets: typings.playcanvas.pc.AssetRegistry,
-    loader: typings.playcanvas.pc.ResourceLoader
-  ) = this()
+open class CubemapHandler protected ()
+  extends typings.playcanvas.mod.CubemapHandler {
+  /**
+    * Create a new CubemapHandler instance.
+    *
+    * @param {AppBase} app - The running {@link AppBase}.
+    * @hideconstructor
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

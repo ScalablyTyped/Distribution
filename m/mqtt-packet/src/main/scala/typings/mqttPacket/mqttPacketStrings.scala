@@ -16,6 +16,12 @@ object mqttPacketStrings {
   inline def MQTT: MQTT = "MQTT".asInstanceOf[MQTT]
   
   @js.native
+  sealed trait auth
+    extends StObject
+       with PacketCmd
+  inline def auth: auth = "auth".asInstanceOf[auth]
+  
+  @js.native
   sealed trait connack
     extends StObject
        with PacketCmd

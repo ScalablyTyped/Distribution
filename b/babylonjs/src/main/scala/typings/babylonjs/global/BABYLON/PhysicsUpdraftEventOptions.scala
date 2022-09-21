@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PhysicsUpdraftEventOptions")
 @js.native
-class PhysicsUpdraftEventOptions ()
+open class PhysicsUpdraftEventOptions ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsUpdraftEventOptions {
   
@@ -23,7 +23,7 @@ class PhysicsUpdraftEventOptions ()
   var radius: Double = js.native
   
   /**
-    * The strenth of the updraft.
+    * The strength of the updraft.
     */
   /* CompleteClass */
   var strength: Double = js.native

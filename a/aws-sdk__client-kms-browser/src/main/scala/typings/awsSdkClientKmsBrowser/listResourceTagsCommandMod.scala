@@ -16,7 +16,7 @@ object listResourceTagsCommandMod {
   
   @JSImport("@aws-sdk/client-kms-browser/commands/ListResourceTagsCommand", "ListResourceTagsCommand")
   @js.native
-  class ListResourceTagsCommand protected ()
+  open class ListResourceTagsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object listResourceTagsCommandMod {
     override val middlewareStack: MiddlewareStack[ListResourceTagsInput, ListResourceTagsOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[ListResourceTagsInput, ListResourceTagsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ListResourceTagsInput, ListResourceTagsOutput] = js.native
   }
 }

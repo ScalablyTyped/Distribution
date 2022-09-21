@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("orientjs", "OServer")
 @js.native
-class OServer () extends StObject {
+open class OServer () extends StObject {
   def this(options: ServerConfig) = this()
   
   /**
@@ -46,7 +46,7 @@ class OServer () extends StObject {
     * @param  config The server config.
     * @return        The configured server object.
     */
-  def configureTransport(config: js.Any): OServer = js.native
+  def configureTransport(config: Any): OServer = js.native
   
   /**
     * Create a database with the given name / config.
@@ -83,8 +83,8 @@ class OServer () extends StObject {
     * @param   storageType The storage type, defaults to `plocal`.
     * @return              The response from the server.
     */
-  def freeze(name: String): js.Any = js.native
-  def freeze(name: String, storageType: String): js.Any = js.native
+  def freeze(name: String): Any = js.native
+  def freeze(name: String, storageType: String): Any = js.native
   
   /**
     * Initialize the server instance.
@@ -107,8 +107,8 @@ class OServer () extends StObject {
     * @param   storageType The storage type, defaults to `plocal`.
     * @return              The response from the server.
     */
-  def release(name: String): js.Any = js.native
-  def release(name: String, storageType: String): js.Any = js.native
+  def release(name: String): Any = js.native
+  def release(name: String, storageType: String): Any = js.native
   
   /**
     * Send an operation to the server,
@@ -117,9 +117,9 @@ class OServer () extends StObject {
     * @param  options    The options for the operation.
     * @promise {Mixed}            The result of the operation.
     */
-  def send(operation: Double, options: js.Any): js.Any = js.native
+  def send(operation: Double, options: Any): Any = js.native
   
-  def shutdown(): js.Promise[js.Any] = js.native
+  def shutdown(): js.Promise[Any] = js.native
   
   /**
     * Use the database with the given name / config.

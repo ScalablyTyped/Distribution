@@ -32,7 +32,12 @@ trait CreateDistributionRequest extends StObject {
   var distributionName: ResourceName
   
   /**
-    * An object that describes the origin resource for the distribution, such as a Lightsail instance or load balancer. The distribution pulls, caches, and serves content from the origin.
+    * The IP address type for the distribution. The possible values are ipv4 for IPv4 only, and dualstack for IPv4 and IPv6. The default value is dualstack.
+    */
+  var ipAddressType: js.UndefOr[IpAddressType] = js.undefined
+  
+  /**
+    * An object that describes the origin resource for the distribution, such as a Lightsail instance, bucket, or load balancer. The distribution pulls, caches, and serves content from the origin.
     */
   var origin: InputOrigin
   
@@ -65,11 +70,15 @@ object CreateDistributionRequest {
     
     inline def setCacheBehaviorsUndefined: Self = StObject.set(x, "cacheBehaviors", js.undefined)
     
-    inline def setCacheBehaviorsVarargs(value: CacheBehaviorPerPath*): Self = StObject.set(x, "cacheBehaviors", js.Array(value :_*))
+    inline def setCacheBehaviorsVarargs(value: CacheBehaviorPerPath*): Self = StObject.set(x, "cacheBehaviors", js.Array(value*))
     
     inline def setDefaultCacheBehavior(value: CacheBehavior): Self = StObject.set(x, "defaultCacheBehavior", value.asInstanceOf[js.Any])
     
     inline def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "ipAddressType", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "ipAddressType", js.undefined)
     
     inline def setOrigin(value: InputOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
@@ -77,6 +86,6 @@ object CreateDistributionRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

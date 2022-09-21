@@ -88,7 +88,7 @@ object AdministrativeBody {
     
     inline def setElectionOfficialsUndefined: Self = StObject.set(x, "electionOfficials", js.undefined)
     
-    inline def setElectionOfficialsVarargs(value: ElectionOfficial*): Self = StObject.set(x, "electionOfficials", js.Array(value :_*))
+    inline def setElectionOfficialsVarargs(value: ElectionOfficial*): Self = StObject.set(x, "electionOfficials", js.Array(value*))
     
     inline def setElectionRegistrationConfirmationUrl(value: String): Self = StObject.set(x, "electionRegistrationConfirmationUrl", value.asInstanceOf[js.Any])
     
@@ -118,7 +118,7 @@ object AdministrativeBody {
     
     inline def setVoter_servicesUndefined: Self = StObject.set(x, "voter_services", js.undefined)
     
-    inline def setVoter_servicesVarargs(value: String*): Self = StObject.set(x, "voter_services", js.Array(value :_*))
+    inline def setVoter_servicesVarargs(value: String*): Self = StObject.set(x, "voter_services", js.Array(value*))
     
     inline def setVotingLocationFinderUrl(value: String): Self = StObject.set(x, "votingLocationFinderUrl", value.asInstanceOf[js.Any])
     

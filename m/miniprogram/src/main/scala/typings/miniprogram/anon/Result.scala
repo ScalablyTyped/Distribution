@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Result extends StObject {
   
-  var result: js.Array[js.Any]
+  var result: js.Array[Any]
   
   var success: Boolean
 }
 object Result {
   
-  inline def apply(result: js.Array[js.Any], success: Boolean): Result = {
+  inline def apply(result: js.Array[Any], success: Boolean): Result = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
   
   extension [Self <: Result](x: Self) {
     
-    inline def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: js.Any*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: Any*): Self = StObject.set(x, "result", js.Array(value*))
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

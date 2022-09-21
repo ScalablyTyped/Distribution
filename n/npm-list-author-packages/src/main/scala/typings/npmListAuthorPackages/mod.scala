@@ -4,7 +4,6 @@ import typings.npmListAuthorPackages.npmListAuthorPackagesNumbers.`443`
 import typings.npmListAuthorPackages.npmListAuthorPackagesNumbers.`80`
 import typings.npmListAuthorPackages.npmListAuthorPackagesStrings.http
 import typings.npmListAuthorPackages.npmListAuthorPackagesStrings.https
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object mod {
   
   inline def factory(opts: Options, callback: Callback): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  type Callback = js.Function2[/* error */ Error | Null, /* data */ js.Array[String], Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* data */ js.Array[String], Unit]
   
   trait Options extends StObject {
     

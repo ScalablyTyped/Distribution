@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StockChartSeriesItemTargetLine extends StObject {
   
-  var width: js.UndefOr[js.Any | js.Function] = js.undefined
+  var width: js.UndefOr[Any | js.Function] = js.undefined
 }
 object StockChartSeriesItemTargetLine {
   
@@ -17,7 +17,7 @@ object StockChartSeriesItemTargetLine {
   
   extension [Self <: StockChartSeriesItemTargetLine](x: Self) {
     
-    inline def setWidth(value: js.Any | js.Function): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Any | js.Function): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

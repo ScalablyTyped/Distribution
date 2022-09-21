@@ -43,7 +43,7 @@ object FieldStatsParams {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
     
@@ -53,7 +53,7 @@ object FieldStatsParams {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setLevel(value: indices | cluster): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

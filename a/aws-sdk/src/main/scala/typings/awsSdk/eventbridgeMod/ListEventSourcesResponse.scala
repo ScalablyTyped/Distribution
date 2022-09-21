@@ -29,7 +29,7 @@ object ListEventSourcesResponse {
     
     inline def setEventSourcesUndefined: Self = StObject.set(x, "EventSources", js.undefined)
     
-    inline def setEventSourcesVarargs(value: EventSource*): Self = StObject.set(x, "EventSources", js.Array(value :_*))
+    inline def setEventSourcesVarargs(value: EventSource*): Self = StObject.set(x, "EventSources", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

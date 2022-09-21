@@ -10,7 +10,7 @@ trait IgRadialMenuItem
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Returns or sets a boolean indicating if the children should be rotated to align with the location of this element.
@@ -39,7 +39,7 @@ trait IgRadialMenuItem
     * Use ui.owner to obtain reference to menu widget.
     * Use ui.item to obtain reference to the item.
     */
-  var checked: js.UndefOr[js.Any] = js.undefined
+  var checked: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the brush used for the arc displayed within the tool when checked.
@@ -62,7 +62,7 @@ trait IgRadialMenuItem
     * Use ui.owner to obtain reference to menu widget.
     * Use ui.item to obtain reference to the item.
     */
-  var click: js.UndefOr[js.Any] = js.undefined
+  var click: js.UndefOr[Any] = js.undefined
   
   /**
     * Cancel="false" Invoked when one navigates back to the item after viewing the child items.
@@ -70,13 +70,13 @@ trait IgRadialMenuItem
     * Use ui.owner to obtain reference to menu widget.
     * Use ui.item to obtain reference to the item.
     */
-  var closed: js.UndefOr[js.Any] = js.undefined
+  var closed: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the color that the item represents.
     * Note: When the Color property is set, several of the brush properties are changed.
     */
-  var color: js.UndefOr[js.Any] = js.undefined
+  var color: js.UndefOr[Any] = js.undefined
   
   /**
     * Cancel="false" Event invoked when the Color property is changed.
@@ -86,7 +86,7 @@ trait IgRadialMenuItem
     * Use ui.newValue to obtain the new value.
     * Use ui.item to obtain reference to the item.
     */
-  var colorChanged: js.UndefOr[js.Any] = js.undefined
+  var colorChanged: js.UndefOr[Any] = js.undefined
   
   /**
     * Cancel="false" Occurs when the item area of a descendant color well is clicked.
@@ -94,7 +94,7 @@ trait IgRadialMenuItem
     * Use ui.owner to obtain reference to menu widget.
     * Use ui.item to obtain reference to the item.
     */
-  var colorWellClick: js.UndefOr[js.Any] = js.undefined
+  var colorWellClick: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the foreground for the inner area of the item.
@@ -109,7 +109,7 @@ trait IgRadialMenuItem
   /**
     * Returns or sets the header of the menu item.
     */
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the brush used for the arc displayed within the tool when hot tracked.
@@ -172,7 +172,7 @@ trait IgRadialMenuItem
     * Use ui.owner to obtain reference to menu widget.
     * Use ui.item to obtain reference to the item.
     */
-  var opened: js.UndefOr[js.Any] = js.undefined
+  var opened: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the default background of the button within the outer ring for a menu item.
@@ -212,7 +212,7 @@ trait IgRadialMenuItem
   /**
     * Returns or sets the value while the user is interacting with the element.
     */
-  var pendingValue: js.UndefOr[js.Any] = js.undefined
+  var pendingValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Cancel="false" Event invoked when the PendingValue property is changed.
@@ -222,7 +222,7 @@ trait IgRadialMenuItem
     * Use ui.newValue to obtain the new value.
     * Use ui.item to obtain reference to the item.
     */
-  var pendingValueChanged: js.UndefOr[js.Any] = js.undefined
+  var pendingValueChanged: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the brush used to render the line that represents the PendingValue
@@ -252,22 +252,22 @@ trait IgRadialMenuItem
   /**
     * Returns or sets the values of the ticks.
     */
-  var ticks: js.UndefOr[js.Any] = js.undefined
+  var ticks: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the tooltip to be displayed for the radial menu item.
     */
-  var toolTip: js.UndefOr[js.Any] = js.undefined
+  var toolTip: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the ending color for the track.
     */
-  var trackEndColor: js.UndefOr[js.Any] = js.undefined
+  var trackEndColor: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the starting color for the track.
     */
-  var trackStartColor: js.UndefOr[js.Any] = js.undefined
+  var trackStartColor: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets a value indicating what type of item is being provided.
@@ -289,7 +289,7 @@ trait IgRadialMenuItem
     * Use ui.owner to obtain reference to menu widget.
     * Use ui.item to obtain reference to the item.
     */
-  var unchecked: js.UndefOr[js.Any] = js.undefined
+  var unchecked: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the value of the numeric item.
@@ -304,7 +304,7 @@ trait IgRadialMenuItem
     * Use ui.newValue to obtain the new value.
     * Use ui.item to obtain reference to the item.
     */
-  var valueChanged: js.UndefOr[js.Any] = js.undefined
+  var valueChanged: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the brush used to represent the Value
@@ -342,7 +342,7 @@ object IgRadialMenuItem {
     
     inline def setCheckBehaviorUndefined: Self = StObject.set(x, "checkBehavior", js.undefined)
     
-    inline def setChecked(value: js.Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     inline def setCheckedHighlightBrush(value: String): Self = StObject.set(x, "checkedHighlightBrush", value.asInstanceOf[js.Any])
     
@@ -354,23 +354,23 @@ object IgRadialMenuItem {
     
     inline def setChildItemPlacementUndefined: Self = StObject.set(x, "childItemPlacement", js.undefined)
     
-    inline def setClick(value: js.Any): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: Any): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    inline def setClosed(value: js.Any): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    inline def setClosed(value: Any): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
     inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColorChanged(value: js.Any): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
+    inline def setColorChanged(value: Any): Self = StObject.set(x, "colorChanged", value.asInstanceOf[js.Any])
     
     inline def setColorChangedUndefined: Self = StObject.set(x, "colorChanged", js.undefined)
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorWellClick(value: js.Any): Self = StObject.set(x, "colorWellClick", value.asInstanceOf[js.Any])
+    inline def setColorWellClick(value: Any): Self = StObject.set(x, "colorWellClick", value.asInstanceOf[js.Any])
     
     inline def setColorWellClickUndefined: Self = StObject.set(x, "colorWellClick", js.undefined)
     
@@ -382,7 +382,7 @@ object IgRadialMenuItem {
     
     inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
-    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
@@ -430,7 +430,7 @@ object IgRadialMenuItem {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOpened(value: js.Any): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
+    inline def setOpened(value: Any): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
     
     inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
     
@@ -462,9 +462,9 @@ object IgRadialMenuItem {
     
     inline def setOuterRingButtonStrokeUndefined: Self = StObject.set(x, "outerRingButtonStroke", js.undefined)
     
-    inline def setPendingValue(value: js.Any): Self = StObject.set(x, "pendingValue", value.asInstanceOf[js.Any])
+    inline def setPendingValue(value: Any): Self = StObject.set(x, "pendingValue", value.asInstanceOf[js.Any])
     
-    inline def setPendingValueChanged(value: js.Any): Self = StObject.set(x, "pendingValueChanged", value.asInstanceOf[js.Any])
+    inline def setPendingValueChanged(value: Any): Self = StObject.set(x, "pendingValueChanged", value.asInstanceOf[js.Any])
     
     inline def setPendingValueChangedUndefined: Self = StObject.set(x, "pendingValueChanged", js.undefined)
     
@@ -490,19 +490,19 @@ object IgRadialMenuItem {
     
     inline def setTickBrushUndefined: Self = StObject.set(x, "tickBrush", js.undefined)
     
-    inline def setTicks(value: js.Any): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: Any): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    inline def setToolTip(value: js.Any): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
+    inline def setToolTip(value: Any): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
     
     inline def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
     
-    inline def setTrackEndColor(value: js.Any): Self = StObject.set(x, "trackEndColor", value.asInstanceOf[js.Any])
+    inline def setTrackEndColor(value: Any): Self = StObject.set(x, "trackEndColor", value.asInstanceOf[js.Any])
     
     inline def setTrackEndColorUndefined: Self = StObject.set(x, "trackEndColor", js.undefined)
     
-    inline def setTrackStartColor(value: js.Any): Self = StObject.set(x, "trackStartColor", value.asInstanceOf[js.Any])
+    inline def setTrackStartColor(value: Any): Self = StObject.set(x, "trackStartColor", value.asInstanceOf[js.Any])
     
     inline def setTrackStartColorUndefined: Self = StObject.set(x, "trackStartColor", js.undefined)
     
@@ -510,13 +510,13 @@ object IgRadialMenuItem {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUnchecked(value: js.Any): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
+    inline def setUnchecked(value: Any): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
     
     inline def setUncheckedUndefined: Self = StObject.set(x, "unchecked", js.undefined)
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueChanged(value: js.Any): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
+    inline def setValueChanged(value: Any): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
     
     inline def setValueChangedUndefined: Self = StObject.set(x, "valueChanged", js.undefined)
     

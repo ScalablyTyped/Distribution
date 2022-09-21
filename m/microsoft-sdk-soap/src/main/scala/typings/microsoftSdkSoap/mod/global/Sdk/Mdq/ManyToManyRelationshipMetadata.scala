@@ -22,7 +22,7 @@ trait ManyToManyRelationshipMetadata extends StObject {
   
   var IntersectEntityName: String
   
-  var IntroducedVersion: js.Any
+  var IntroducedVersion: Any
   
   var IsCustomRelationship: Boolean
   
@@ -51,7 +51,7 @@ object ManyToManyRelationshipMetadata {
     Entity2LogicalName: String,
     HasChanged: Boolean,
     IntersectEntityName: String,
-    IntroducedVersion: js.Any,
+    IntroducedVersion: Any,
     IsCustomRelationship: Boolean,
     IsCustomizable: ManagedProperty[Boolean],
     IsManaged: Boolean,
@@ -83,7 +83,7 @@ object ManyToManyRelationshipMetadata {
     
     inline def setIntersectEntityName(value: String): Self = StObject.set(x, "IntersectEntityName", value.asInstanceOf[js.Any])
     
-    inline def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
+    inline def setIntroducedVersion(value: Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
     
     inline def setIsCustomRelationship(value: Boolean): Self = StObject.set(x, "IsCustomRelationship", value.asInstanceOf[js.Any])
     

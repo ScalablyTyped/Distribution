@@ -1,7 +1,6 @@
 package typings.archiver
 
 import typings.node.fsMod.Stats
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object anon {
   /* Inlined archiver.archiver.Partial<archiver.archiver.EntryData> */
   trait PartialEntryData extends StObject {
     
-    var date: js.UndefOr[Date | String] = js.undefined
+    var date: js.UndefOr[js.Date | String] = js.undefined
     
     var mode: js.UndefOr[Double] = js.undefined
     
@@ -30,7 +29,7 @@ object anon {
     
     extension [Self <: PartialEntryData](x: Self) {
       
-      inline def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       

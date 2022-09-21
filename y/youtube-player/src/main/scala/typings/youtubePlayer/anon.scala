@@ -2,6 +2,7 @@ package typings.youtubePlayer
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.std.CustomEvent
+import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import typings.youtubePlayer.playerStatesMod.PlayerStates.ENDED
 import typings.youtubePlayer.playerStatesMod.PlayerStates.PAUSED
@@ -189,103 +190,107 @@ object anon {
   @js.native
   trait CustomEventanydatanumber extends StObject {
     
+    /* standard dom */
     val AT_TARGET: Double = js.native
     
+    /* standard dom */
     val BUBBLING_PHASE: Double = js.native
     
+    /* standard dom */
     val CAPTURING_PHASE: Double = js.native
     
+    /* standard dom */
     val NONE: Double = js.native
     
-    /**
-      * Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise.
-      */
+    /** Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise. */
+    /* standard dom */
     val bubbles: Boolean = js.native
     
+    /* standard dom */
     var cancelBubble: Boolean = js.native
     
-    /**
-      * Returns true or false depending on how event was initialized. Its return value does not always carry meaning, but true can indicate that part of the operation during which event was dispatched, can be canceled by invoking the preventDefault() method.
-      */
+    /** Returns true or false depending on how event was initialized. Its return value does not always carry meaning, but true can indicate that part of the operation during which event was dispatched, can be canceled by invoking the preventDefault() method. */
+    /* standard dom */
     val cancelable: Boolean = js.native
     
-    /**
-      * Returns true or false depending on how event was initialized. True if event invokes listeners past a ShadowRoot node that is the root of its target, and false otherwise.
-      */
+    /** Returns true or false depending on how event was initialized. True if event invokes listeners past a ShadowRoot node that is the root of its target, and false otherwise. */
+    /* standard dom */
     val composed: Boolean = js.native
     
-    /**
-      * Returns the invocation target objects of event's path (objects on which listeners will be invoked), except for any nodes in shadow trees of which the shadow root's mode is "closed" that are not reachable from event's currentTarget.
-      */
+    /** Returns the invocation target objects of event's path (objects on which listeners will be invoked), except for any nodes in shadow trees of which the shadow root's mode is "closed" that are not reachable from event's currentTarget. */
+    /* standard dom */
     def composedPath(): js.Array[EventTarget] = js.native
     
-    /**
-      * Returns the object whose event listener's callback is currently being invoked.
-      */
+    /** Returns the object whose event listener's callback is currently being invoked. */
+    /* standard dom */
     val currentTarget: EventTarget | Null = js.native
     
     var data: Double = js.native
     
-    /**
-      * Returns true if preventDefault() was invoked successfully to indicate cancelation, and false otherwise.
-      */
+    /** Returns true if preventDefault() was invoked successfully to indicate cancelation, and false otherwise. */
+    /* standard dom */
     val defaultPrevented: Boolean = js.native
     
-    /**
-      * Returns any custom data event was created with. Typically used for synthetic events.
-      */
-    val detail: js.Any = js.native
+    /** Returns any custom data event was created with. Typically used for synthetic events. */
+    /* standard dom */
+    val detail: Any = js.native
     
-    /**
-      * Returns the event's phase, which is one of NONE, CAPTURING_PHASE, AT_TARGET, and BUBBLING_PHASE.
-      */
+    /** Returns the event's phase, which is one of NONE, CAPTURING_PHASE, AT_TARGET, and BUBBLING_PHASE. */
+    /* standard dom */
     val eventPhase: Double = js.native
     
-    def initCustomEvent(typeArg: String, canBubbleArg: Boolean, cancelableArg: Boolean, detailArg: js.Any): Unit = js.native
+    /** @deprecated */
+    /* standard dom */
+    def initCustomEvent(`type`: String): Unit = js.native
+    def initCustomEvent(`type`: String, bubbles: Boolean): Unit = js.native
+    def initCustomEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def initCustomEvent(`type`: String, bubbles: Boolean, cancelable: Boolean, detail: Any): Unit = js.native
+    def initCustomEvent(`type`: String, bubbles: Boolean, cancelable: Unit, detail: Any): Unit = js.native
+    def initCustomEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    def initCustomEvent(`type`: String, bubbles: Unit, cancelable: Boolean, detail: Any): Unit = js.native
+    def initCustomEvent(`type`: String, bubbles: Unit, cancelable: Unit, detail: Any): Unit = js.native
     
+    /** @deprecated */
+    /* standard dom */
     def initEvent(`type`: String): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
     
-    /**
-      * Returns true if event was dispatched by the user agent, and false otherwise.
-      */
+    /** Returns true if event was dispatched by the user agent, and false otherwise. */
+    /* standard dom */
     val isTrusted: Boolean = js.native
     
-    /**
-      * If invoked when the cancelable attribute value is true, and while executing a listener for the event with passive set to false, signals to the operation that caused event to be dispatched that it needs to be canceled.
-      */
+    /** If invoked when the cancelable attribute value is true, and while executing a listener for the event with passive set to false, signals to the operation that caused event to be dispatched that it needs to be canceled. */
+    /* standard dom */
     def preventDefault(): Unit = js.native
     
+    /** @deprecated */
+    /* standard dom */
     var returnValue: Boolean = js.native
     
     /** @deprecated */
+    /* standard dom */
     val srcElement: EventTarget | Null = js.native
     
-    /**
-      * Invoking this method prevents event from reaching any registered event listeners after the current one finishes running and, when dispatched in a tree, also prevents event from reaching any other objects.
-      */
+    /** Invoking this method prevents event from reaching any registered event listeners after the current one finishes running and, when dispatched in a tree, also prevents event from reaching any other objects. */
+    /* standard dom */
     def stopImmediatePropagation(): Unit = js.native
     
-    /**
-      * When dispatched in a tree, invoking this method prevents event from reaching any objects other than the current object.
-      */
+    /** When dispatched in a tree, invoking this method prevents event from reaching any objects other than the current object. */
+    /* standard dom */
     def stopPropagation(): Unit = js.native
     
-    /**
-      * Returns the object to which event is dispatched (its target).
-      */
+    /** Returns the object to which event is dispatched (its target). */
+    /* standard dom */
     val target: EventTarget | Null = js.native
     
-    /**
-      * Returns the event's timestamp as the number of milliseconds measured relative to the time origin.
-      */
-    val timeStamp: Double = js.native
+    /** Returns the event's timestamp as the number of milliseconds measured relative to the time origin. */
+    /* standard dom */
+    val timeStamp: DOMHighResTimeStamp = js.native
     
-    /**
-      * Returns the type of event, e.g. "click", "hashchange", or "submit".
-      */
+    /** Returns the type of event, e.g. "click", "hashchange", or "submit". */
+    /* standard dom */
     val `type`: String = js.native
   }
   
@@ -455,19 +460,19 @@ object anon {
   /* Inlined {[ eventType in youtube-player.youtube-player/dist/eventNames.EventType ]:? (event : std.CustomEvent<any>): void} */
   trait eventTypeinEventTypeevent extends StObject {
     
-    var apiChange: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var apiChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var error: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
-    var playbackQualityChange: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var playbackQualityChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
-    var playbackRateChange: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var playbackRateChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
-    var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
-    var stateChange: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var stateChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
-    var volumeChange: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var volumeChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
   }
   object eventTypeinEventTypeevent {
     
@@ -478,31 +483,31 @@ object anon {
     
     extension [Self <: eventTypeinEventTypeevent](x: Self) {
       
-      inline def setApiChange(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "apiChange", js.Any.fromFunction1(value))
+      inline def setApiChange(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "apiChange", js.Any.fromFunction1(value))
       
       inline def setApiChangeUndefined: Self = StObject.set(x, "apiChange", js.undefined)
       
-      inline def setError(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setPlaybackQualityChange(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "playbackQualityChange", js.Any.fromFunction1(value))
+      inline def setPlaybackQualityChange(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "playbackQualityChange", js.Any.fromFunction1(value))
       
       inline def setPlaybackQualityChangeUndefined: Self = StObject.set(x, "playbackQualityChange", js.undefined)
       
-      inline def setPlaybackRateChange(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "playbackRateChange", js.Any.fromFunction1(value))
+      inline def setPlaybackRateChange(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "playbackRateChange", js.Any.fromFunction1(value))
       
       inline def setPlaybackRateChangeUndefined: Self = StObject.set(x, "playbackRateChange", js.undefined)
       
-      inline def setReady(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+      inline def setReady(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
       
       inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
       
-      inline def setStateChange(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "stateChange", js.Any.fromFunction1(value))
+      inline def setStateChange(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "stateChange", js.Any.fromFunction1(value))
       
       inline def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
       
-      inline def setVolumeChange(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "volumeChange", js.Any.fromFunction1(value))
+      inline def setVolumeChange(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "volumeChange", js.Any.fromFunction1(value))
       
       inline def setVolumeChangeUndefined: Self = StObject.set(x, "volumeChange", js.undefined)
     }

@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A document footnote.
-  */
 trait SchemaFootnote extends StObject {
   
   /**
-    * The contents of the footnote.  The indexes for a footnote&#39;s content
-    * begin at zero.
+    * The contents of the footnote. The indexes for a footnote's content begin at zero.
     */
   var content: js.UndefOr[js.Array[SchemaStructuralElement]] = js.undefined
   
   /**
     * The ID of the footnote.
     */
-  var footnoteId: js.UndefOr[String] = js.undefined
+  var footnoteId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFootnote {
   
@@ -33,9 +29,11 @@ object SchemaFootnote {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
+    
+    inline def setFootnoteIdNull: Self = StObject.set(x, "footnoteId", null)
     
     inline def setFootnoteIdUndefined: Self = StObject.set(x, "footnoteId", js.undefined)
   }

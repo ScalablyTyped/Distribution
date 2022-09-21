@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Wigner")
 @js.native
-class Wigner ()
+open class Wigner ()
   extends typings.ranjs.mod.dist.Wigner {
   def this(R: Double) = this()
 }

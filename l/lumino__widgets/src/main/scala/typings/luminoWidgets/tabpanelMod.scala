@@ -8,6 +8,8 @@ import typings.luminoWidgets.tabpanelMod.TabPanel.ICurrentChangedArgs
 import typings.luminoWidgets.tabpanelMod.TabPanel.IOptions
 import typings.luminoWidgets.tabpanelMod.TabPanel.TabPlacement
 import typings.luminoWidgets.widgetMod.Widget
+import typings.std.Document
+import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,37 +23,60 @@ object tabpanelMod {
     *
     * @param options - The options for initializing the tab panel.
     */
-  class TabPanel () extends Widget {
+  open class TabPanel () extends Widget {
     def this(options: IOptions) = this()
     
-    /* private */ var _currentChanged: js.Any = js.native
+    /* private */ var _addRequested: Any = js.native
+    
+    /* private */ var _currentChanged: Any = js.native
     
     /**
       * Handle the `currentChanged` signal from the tab bar.
       */
-    /* private */ var _onCurrentChanged: js.Any = js.native
+    /* private */ var _onCurrentChanged: Any = js.native
     
     /**
       * Handle the `tabActivateRequested` signal from the tab bar.
       */
-    /* private */ var _onTabActivateRequested: js.Any = js.native
+    /* private */ var _onTabActivateRequested: Any = js.native
+    
+    /**
+      * Handle the `tabAddRequested` signal from the tab bar.
+      */
+    /* private */ var _onTabAddRequested: Any = js.native
     
     /**
       * Handle the `tabCloseRequested` signal from the tab bar.
       */
-    /* private */ var _onTabCloseRequested: js.Any = js.native
+    /* private */ var _onTabCloseRequested: Any = js.native
     
     /**
       * Handle the `tabMoved` signal from the tab bar.
       */
-    /* private */ var _onTabMoved: js.Any = js.native
+    /* private */ var _onTabMoved: Any = js.native
     
     /**
       * Handle the `widgetRemoved` signal from the stacked panel.
       */
-    /* private */ var _onWidgetRemoved: js.Any = js.native
+    /* private */ var _onWidgetRemoved: Any = js.native
     
-    /* private */ var _tabPlacement: js.Any = js.native
+    /* private */ var _tabPlacement: Any = js.native
+    
+    /**
+      * Get the whether the add button is enabled.
+      *
+      */
+    /**
+      * Set the whether the add button is enabled.
+      *
+      */
+    var addButtonEnabled: Boolean = js.native
+    
+    /**
+      * A signal emitted when the add button on a tab bar is clicked.
+      *
+      */
+    val addRequested: ISignal[this.type, TabBar[Widget]] = js.native
     
     /**
       * Add a widget to the end of the tab panel.
@@ -225,6 +250,20 @@ object tabpanelMod {
     trait IOptions extends StObject {
       
       /**
+        * Whether the button to add new tabs is enabled.
+        *
+        * The default is `false`.
+        */
+      var addButtonEnabled: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * The document to use with the tab panel.
+        *
+        * The default is the global `document` instance.
+        */
+      var document: js.UndefOr[Document | ShadowRoot] = js.undefined
+      
+      /**
         * The renderer for the panel's tab bar.
         *
         * The default is a shared renderer instance.
@@ -253,6 +292,14 @@ object tabpanelMod {
       }
       
       extension [Self <: IOptions](x: Self) {
+        
+        inline def setAddButtonEnabled(value: Boolean): Self = StObject.set(x, "addButtonEnabled", value.asInstanceOf[js.Any])
+        
+        inline def setAddButtonEnabledUndefined: Self = StObject.set(x, "addButtonEnabled", js.undefined)
+        
+        inline def setDocument(value: Document | ShadowRoot): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+        
+        inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
         
         inline def setRenderer(value: IRenderer[Widget]): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         

@@ -22,7 +22,7 @@ object HeaderContext {
     
     inline def setIntervals(value: js.Array[StartTime]): Self = StObject.set(x, "intervals", value.asInstanceOf[js.Any])
     
-    inline def setIntervalsVarargs(value: StartTime*): Self = StObject.set(x, "intervals", js.Array(value :_*))
+    inline def setIntervalsVarargs(value: StartTime*): Self = StObject.set(x, "intervals", js.Array(value*))
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Dropbox.AccountInfo")
 @js.native
-class AccountInfo ()
+open class AccountInfo ()
   extends StObject
      with typings.dropboxjs.Dropbox.AccountInfo {
   

@@ -19,11 +19,11 @@ trait ASPxClientTreeListBatchEditNodeDeletingEventArgs
   /**
     * Gets the value of the processed cell.
     */
-  var nodeValues: js.Any
+  var nodeValues: Any
 }
 object ASPxClientTreeListBatchEditNodeDeletingEventArgs {
   
-  inline def apply(cancel: Boolean, nodeKey: String, nodeValues: js.Any): ASPxClientTreeListBatchEditNodeDeletingEventArgs = {
+  inline def apply(cancel: Boolean, nodeKey: String, nodeValues: Any): ASPxClientTreeListBatchEditNodeDeletingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], nodeValues = nodeValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeDeletingEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientTreeListBatchEditNodeDeletingEventArgs {
     
     inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
     
-    inline def setNodeValues(value: js.Any): Self = StObject.set(x, "nodeValues", value.asInstanceOf[js.Any])
+    inline def setNodeValues(value: Any): Self = StObject.set(x, "nodeValues", value.asInstanceOf[js.Any])
   }
 }

@@ -24,6 +24,9 @@ trait WorkItemDetails extends StObject {
   /** State of this work item. */
   var state: js.UndefOr[String] = js.undefined
   
+  /** Information about straggler detections for this work item. */
+  var stragglerInfo: js.UndefOr[StragglerInfo] = js.undefined
+  
   /** Name of this work item. */
   var taskId: js.UndefOr[String] = js.undefined
 }
@@ -48,7 +51,7 @@ object WorkItemDetails {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: MetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setProgress(value: ProgressTimeseries): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
@@ -61,6 +64,10 @@ object WorkItemDetails {
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setStragglerInfo(value: StragglerInfo): Self = StObject.set(x, "stragglerInfo", value.asInstanceOf[js.Any])
+    
+    inline def setStragglerInfoUndefined: Self = StObject.set(x, "stragglerInfo", js.undefined)
     
     inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionRadiogroup")
 @js.native
-class QuestionRadiogroup protected () extends QuestionRadiogroupModel {
+open class QuestionRadiogroup protected () extends QuestionRadiogroupModel {
   def this(name: String) = this()
+  
+  var _implementor: QuestionCheckboxBaseImplementor = js.native
 }

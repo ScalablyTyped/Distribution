@@ -4,13 +4,14 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.react.mod.global.JSX.Element
 import typings.reactSlick.reactSlickStrings.unslick
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +20,9 @@ object mod {
   
   @JSImport("react-slick", JSImport.Default)
   @js.native
-  class default () extends Slider
+  open class default () extends Slider
   
-  type ComponentConstructor[TProps] = (ComponentClass[TProps, ComponentState]) | StatelessComponent[TProps]
+  type ComponentConstructor[TProps] = (ComponentClass[TProps, ComponentState]) | FunctionComponent[TProps]
   
   trait CustomArrowProps extends StObject {
     
@@ -29,7 +30,7 @@ object mod {
     
     var currentSlide: js.UndefOr[Double] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
+    var onClick: js.UndefOr[MouseEventHandler[Any]] = js.undefined
     
     var slideCount: js.UndefOr[Double] = js.undefined
     
@@ -52,7 +53,7 @@ object mod {
       
       inline def setCurrentSlideUndefined: Self = StObject.set(x, "currentSlide", js.undefined)
       
-      inline def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
@@ -66,12 +67,34 @@ object mod {
     }
   }
   
+  trait InnerSlider extends StObject {
+    
+    var list: js.UndefOr[HTMLDivElement] = js.undefined
+  }
+  object InnerSlider {
+    
+    inline def apply(): InnerSlider = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InnerSlider]
+    }
+    
+    extension [Self <: InnerSlider](x: Self) {
+      
+      inline def setList(value: HTMLDivElement): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    }
+  }
+  
   /* Rewritten from type alias, can be one of: 
     - typings.reactSlick.reactSlickStrings.ondemand
     - typings.reactSlick.reactSlickStrings.progressive
+    - typings.reactSlick.reactSlickStrings.anticipated
   */
   trait LazyLoadTypes extends StObject
   object LazyLoadTypes {
+    
+    inline def anticipated: typings.reactSlick.reactSlickStrings.anticipated = "anticipated".asInstanceOf[typings.reactSlick.reactSlickStrings.anticipated]
     
     inline def ondemand: typings.reactSlick.reactSlickStrings.ondemand = "ondemand".asInstanceOf[typings.reactSlick.reactSlickStrings.ondemand]
     
@@ -122,6 +145,8 @@ object mod {
     var centerMode: js.UndefOr[Boolean] = js.undefined
     
     var centerPadding: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -260,6 +285,10 @@ object mod {
       
       inline def setCenterPaddingUndefined: Self = StObject.set(x, "centerPadding", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -356,7 +385,7 @@ object mod {
       
       inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      inline def setResponsiveVarargs(value: ResponsiveObject*): Self = StObject.set(x, "responsive", js.Array(value :_*))
+      inline def setResponsiveVarargs(value: ResponsiveObject*): Self = StObject.set(x, "responsive", js.Array(value*))
       
       inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
@@ -434,7 +463,9 @@ object mod {
   
   @js.native
   trait Slider
-    extends Component[Settings, scala.Nothing, js.Any] {
+    extends Component[Settings, scala.Nothing, Any] {
+    
+    var innerSlider: js.UndefOr[InnerSlider] = js.native
     
     def slickGoTo(slideNumber: Double): Unit = js.native
     def slickGoTo(slideNumber: Double, dontAnimate: Boolean): Unit = js.native

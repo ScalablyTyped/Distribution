@@ -14,7 +14,7 @@ trait IBackgroundUploadProperties extends StObject {
     * The file input object to read the file from. Can be a
     * Windows.Storage.StorageFile or an IFile.
     */
-  var file_input: js.UndefOr[js.Any] = js.undefined
+  var file_input: js.UndefOr[Any] = js.undefined
   
   /**
     * The name of the file to upload.
@@ -50,7 +50,7 @@ object IBackgroundUploadProperties {
   
   extension [Self <: IBackgroundUploadProperties](x: Self) {
     
-    inline def setFile_input(value: js.Any): Self = StObject.set(x, "file_input", value.asInstanceOf[js.Any])
+    inline def setFile_input(value: Any): Self = StObject.set(x, "file_input", value.asInstanceOf[js.Any])
     
     inline def setFile_inputUndefined: Self = StObject.set(x, "file_input", js.undefined)
     

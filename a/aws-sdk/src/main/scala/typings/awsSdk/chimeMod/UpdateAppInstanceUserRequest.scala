@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateAppInstanceUserRequest extends StObject {
   
   /**
-    * The ARN of the app instance user.
+    * The ARN of the AppInstanceUser.
     */
   var AppInstanceUserArn: ChimeArn
   
   /**
-    * The metadata of the app instance user.
+    * The metadata of the AppInstanceUser.
     */
   var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
-    * The name of the app instance user.
+    * The name of the AppInstanceUser.
     */
   var Name: UserName
 }

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BindFormOptions extends StObject {
   
-  var complete: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   var onSubmitDisable: js.UndefOr[String] = js.undefined
   
@@ -26,11 +26,11 @@ object BindFormOptions {
   
   extension [Self <: BindFormOptions](x: Self) {
     
-    inline def setComplete(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* repeated */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

@@ -335,7 +335,7 @@ object mod {
       
       inline def setAccounts(value: js.Array[Account]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
       
-      inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+      inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -454,7 +454,7 @@ object mod {
       
       inline def setAchievements(value: js.Array[Achievement]): Self = StObject.set(x, "achievements", value.asInstanceOf[js.Any])
       
-      inline def setAchievementsVarargs(value: Achievement*): Self = StObject.set(x, "achievements", js.Array(value :_*))
+      inline def setAchievementsVarargs(value: Achievement*): Self = StObject.set(x, "achievements", js.Array(value*))
       
       inline def setCompetitive(value: GameMode): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
       

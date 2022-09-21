@@ -8,5 +8,5 @@ object encryptInputMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/EncryptInput", "EncryptInput")
   @js.native
-  val EncryptInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EncryptInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -1,6 +1,7 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import typings.highcharts.anon.ReadonlySVGAttributes
 import typings.highcharts.highchartsStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "Point")
 @js.native
-class Point () extends StObject {
+open class Point () extends StObject {
   
   /**
     * Cancel sonification of a point. Calls onEnd functions.
@@ -24,7 +25,7 @@ class Point () extends StObject {
     * For categorized axes this property holds the category name for the point.
     * For other axes it holds the X value.
     */
-  var category: String = js.native
+  var category: Double | String = js.native
   
   /**
     * The point's current color.
@@ -38,17 +39,28 @@ class Point () extends StObject {
   var colorIndex: Double = js.native
   
   /**
-    * (Highstock) Highstock only. If a point object is created by data
-    * grouping, it doesn't reflect actual points in the raw data. In this case,
-    * the `dataGroup` property holds information that points back to the raw
-    * data.
+    * (Highstock) Highcharts Stock only. If a point object is created by
+    * data grouping, it doesn't reflect actual points in the raw data. In
+    * this case, the `dataGroup` property holds information that points
+    * back to the raw data.
     *
     * - `dataGroup.start` is the index of the first raw data point in the
     * group.
     *
     * - `dataGroup.length` is the amount of points in the group.
     */
-  var dataGroup: js.UndefOr[DataGroupingInfoObject] = js.native
+  var dataGroup: (js.UndefOr[
+    typings.highcharts.datagroupingMod.highchartsAugmentingMod.DataGroupingInfoObject
+  ]) & js.UndefOr[typings.highcharts.stockMod.highchartsAugmentingMod.DataGroupingInfoObject] = js.native
+  
+  /**
+    * Perform drilldown on a point instance. The drilldown property must be
+    * set on the point options.
+    *
+    * To drill down multiple points in the same category, use
+    * `Axis.drilldownCategory` instead.
+    */
+  def doDrilldown(): Unit = js.native
   
   /**
     * Get the CSS class names for individual points. Used internally where the
@@ -166,11 +178,11 @@ class Point () extends StObject {
     * scatter series will be transformed to `{ x: 1, y: 10 }`.
     *
     * @param options
-    *        The input option.
+    *        Series data options.
     *
-    * @return Transformed options.
+    * @return Transformed point options.
     */
-  def optionsToObject(options: PointOptionsType): Dictionary[js.Any] = js.native
+  def optionsToObject(options: PointOptionsType): Dictionary[Any] = js.native
   
   /**
     * The percentage for points in a stacked series or pies.
@@ -178,15 +190,29 @@ class Point () extends StObject {
   var percentage: js.UndefOr[Double] = js.native
   
   /**
+    * The translated X value for the point in terms of pixels. Relative to the
+    * X axis position if the series has one, otherwise relative to the plot
+    * area. Depending on the series type this value might not be defined.
+    */
+  var plotX: js.UndefOr[Double] = js.native
+  
+  /**
+    * The translated Y value for the point in terms of pixels. Relative to the
+    * Y axis position if the series has one, otherwise relative to the plot
+    * area. Depending on the series type this value might not be defined.
+    */
+  var plotY: js.UndefOr[Double] = js.native
+  
+  /**
     * Heatmap series only. Padding between the points in the heatmap.
     */
   var pointPadding: js.UndefOr[Double] = js.native
   
   /**
-    * In Highmaps, when data is loaded from GeoJSON, the GeoJSON item's
-    * properies are copied over here.
+    * In Highcharts Maps, when data is loaded from GeoJSON, the GeoJSON
+    * item's properies are copied over here.
     */
-  var properties: js.Any = js.native
+  var properties: Any = js.native
   
   /**
     * Remove a point and optionally redraw the series and if necessary the axes
@@ -256,7 +282,7 @@ class Point () extends StObject {
     *
     * @return The modified object.
     */
-  def setNestedProperty[T](`object`: T, value: js.Any, key: String): T = js.native
+  def setNestedProperty[T](`object`: T, value: Any, key: String): T = js.native
   
   /**
     * Set the point's state.
@@ -277,6 +303,30 @@ class Point () extends StObject {
   def setState(state: _empty, move: Boolean): Unit = js.native
   def setState(state: PointStateValue): Unit = js.native
   def setState(state: PointStateValue, move: Boolean): Unit = js.native
+  
+  /**
+    * Toggle the visibility of a pie slice or other data point. Note that this
+    * method is available only for some series, like pie, treemap and sunburst.
+    *
+    * @param vis
+    *        True to show the pie slice or other data point, false to hide. If
+    *        undefined, the visibility is toggled.
+    *
+    * @param redraw
+    *        Whether to redraw the chart after the point is altered. If doing
+    *        more operations on the chart, it is a good idea to set redraw to
+    *        false and call chart.redraw() after.
+    */
+  def setVisible(): Unit = js.native
+  def setVisible(vis: Boolean): Unit = js.native
+  def setVisible(vis: Boolean, redraw: Boolean): Unit = js.native
+  def setVisible(vis: Unit, redraw: Boolean): Unit = js.native
+  
+  /**
+    * The attributes of the rendered SVG shape like in `column` or `pie`
+    * series.
+    */
+  val shapeArgs: js.UndefOr[ReadonlySVGAttributes] = js.native
   
   /**
     * Pie series only. Whether to display a slice offset from the center.

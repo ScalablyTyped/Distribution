@@ -10,7 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictkey
   extends StObject
-     with /* prop */ StringDictionary[js.Any] {
+     with /**
+  * @language zh-CN
+  * @description 其他属性
+  * @defaultValue null
+  */
+/**
+  * @language en-US
+  * @description Other attributes
+  * @defaultValue null
+  */
+/* prop */ StringDictionary[Any] {
   
   var activeSubDeviceWithGwId: AnyFunction
   
@@ -98,9 +108,9 @@ trait Dictkey
   
   var hideLoading: AnyFunction
   
-  var is24Hour: AnyFunction
+  def is24Hour(): js.Promise[Boolean]
   
-  def jumpTo(routeId: String): js.Any
+  def jumpTo(routeId: String): Any
   
   var lang: I18NLanMap
   
@@ -210,8 +220,8 @@ object Dictkey {
     gotoDeviceWifiNetworkMonitor: AnyFunction,
     gotoDpAlarm: Category => Unit,
     hideLoading: AnyFunction,
-    is24Hour: AnyFunction,
-    jumpTo: String => js.Any,
+    is24Hour: () => js.Promise[Boolean],
+    jumpTo: String => Any,
     lang: I18NLanMap,
     mobileInfo: MobileInfo,
     panelInfo: IsVDevice,
@@ -244,7 +254,7 @@ object Dictkey {
     stopListening: AnyFunction,
     updateLocation: AnyFunction
   ): Dictkey = {
-    val __obj = js.Dynamic.literal(activeSubDeviceWithGwId = activeSubDeviceWithGwId.asInstanceOf[js.Any], addDeviceToRoom = addDeviceToRoom.asInstanceOf[js.Any], addListener = addListener.asInstanceOf[js.Any], aes128DecryptedStringWithPassword = aes128DecryptedStringWithPassword.asInstanceOf[js.Any], aes128EncryptedStringWithPassword = aes128EncryptedStringWithPassword.asInstanceOf[js.Any], apiRNRequest = apiRNRequest.asInstanceOf[js.Any], apiRequest = apiRequest.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], battery = battery.asInstanceOf[js.Any], bottomListDialog = bottomListDialog.asInstanceOf[js.Any], calculateWhiteModeColor = calculateWhiteModeColor.asInstanceOf[js.Any], calculationDistance = calculationDistance.asInstanceOf[js.Any], checkUpdate = checkUpdate.asInstanceOf[js.Any], deleteDeviceInfo = deleteDeviceInfo.asInstanceOf[js.Any], deviceIsCharging = deviceIsCharging.asInstanceOf[js.Any], disablePopGesture = disablePopGesture.asInstanceOf[js.Any], enablePopGesture = enablePopGesture.asInstanceOf[js.Any], evilTransform = evilTransform.asInstanceOf[js.Any], gcj02ToWgs84Location = gcj02ToWgs84Location.asInstanceOf[js.Any], getBleManagerState = getBleManagerState.asInstanceOf[js.Any], getBleRssi = getBleRssi.asInstanceOf[js.Any], getCurrentscreenBrightness = getCurrentscreenBrightness.asInstanceOf[js.Any], getDevInfo = getDevInfo.asInstanceOf[js.Any], getDevProperty = getDevProperty.asInstanceOf[js.Any], getDeviceList = getDeviceList.asInstanceOf[js.Any], getDpDataFromClient = getDpDataFromClient.asInstanceOf[js.Any], getDpDataFromDevice = getDpDataFromDevice.asInstanceOf[js.Any], getDpDataFromMeshDevice = getDpDataFromMeshDevice.asInstanceOf[js.Any], getDpsWithDevId = getDpsWithDevId.asInstanceOf[js.Any], getMeshDeviceInfoByNodeId = getMeshDeviceInfoByNodeId.asInstanceOf[js.Any], getMobileInfo = getMobileInfo.asInstanceOf[js.Any], getNetType = getNetType.asInstanceOf[js.Any], getNetworkType = getNetworkType.asInstanceOf[js.Any], getPanelInfo = getPanelInfo.asInstanceOf[js.Any], getPlayStatus = getPlayStatus.asInstanceOf[js.Any], getRoomsInCurrentHome = getRoomsInCurrentHome.asInstanceOf[js.Any], getSubDeviceList = getSubDeviceList.asInstanceOf[js.Any], getWiFiSsid = getWiFiSsid.asInstanceOf[js.Any], goToAlarmListActivity = goToAlarmListActivity.asInstanceOf[js.Any], gotoBlePermissions = gotoBlePermissions.asInstanceOf[js.Any], gotoDeviceWifiNetworkMonitor = gotoDeviceWifiNetworkMonitor.asInstanceOf[js.Any], gotoDpAlarm = js.Any.fromFunction1(gotoDpAlarm), hideLoading = hideLoading.asInstanceOf[js.Any], is24Hour = is24Hour.asInstanceOf[js.Any], jumpTo = js.Any.fromFunction1(jumpTo), lang = lang.asInstanceOf[js.Any], mobileInfo = mobileInfo.asInstanceOf[js.Any], panelInfo = panelInfo.asInstanceOf[js.Any], postBleChannelCommand = postBleChannelCommand.asInstanceOf[js.Any], pushToNextPageWithDeviceId = pushToNextPageWithDeviceId.asInstanceOf[js.Any], putDpData = putDpData.asInstanceOf[js.Any], putLocalDpData = putLocalDpData.asInstanceOf[js.Any], putMqttDpData = putMqttDpData.asInstanceOf[js.Any], receiverMqttData = receiverMqttData.asInstanceOf[js.Any], removeDevice = removeDevice.asInstanceOf[js.Any], removeGW = removeGW.asInstanceOf[js.Any], removeListeners = removeListeners.asInstanceOf[js.Any], removeSubDevice = removeSubDevice.asInstanceOf[js.Any], renameSubDeviceName = renameSubDeviceName.asInstanceOf[js.Any], renameTitle = renameTitle.asInstanceOf[js.Any], screenAlwaysOn = screenAlwaysOn.asInstanceOf[js.Any], screenBrightness = screenBrightness.asInstanceOf[js.Any], sendMqttData = sendMqttData.asInstanceOf[js.Any], setDevProperty = setDevProperty.asInstanceOf[js.Any], shareMsg = shareMsg.asInstanceOf[js.Any], shareToSystem = shareToSystem.asInstanceOf[js.Any], showDeviceMenu = showDeviceMenu.asInstanceOf[js.Any], showEditDialog = showEditDialog.asInstanceOf[js.Any], showLoading = showLoading.asInstanceOf[js.Any], simpleConfirmDialog = simpleConfirmDialog.asInstanceOf[js.Any], simpleTipDialog = simpleTipDialog.asInstanceOf[js.Any], startBLEListening = startBLEListening.asInstanceOf[js.Any], startListening = startListening.asInstanceOf[js.Any], stopActiveSubDeviceWithGwId = stopActiveSubDeviceWithGwId.asInstanceOf[js.Any], stopListening = stopListening.asInstanceOf[js.Any], updateLocation = updateLocation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeSubDeviceWithGwId = activeSubDeviceWithGwId.asInstanceOf[js.Any], addDeviceToRoom = addDeviceToRoom.asInstanceOf[js.Any], addListener = addListener.asInstanceOf[js.Any], aes128DecryptedStringWithPassword = aes128DecryptedStringWithPassword.asInstanceOf[js.Any], aes128EncryptedStringWithPassword = aes128EncryptedStringWithPassword.asInstanceOf[js.Any], apiRNRequest = apiRNRequest.asInstanceOf[js.Any], apiRequest = apiRequest.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], battery = battery.asInstanceOf[js.Any], bottomListDialog = bottomListDialog.asInstanceOf[js.Any], calculateWhiteModeColor = calculateWhiteModeColor.asInstanceOf[js.Any], calculationDistance = calculationDistance.asInstanceOf[js.Any], checkUpdate = checkUpdate.asInstanceOf[js.Any], deleteDeviceInfo = deleteDeviceInfo.asInstanceOf[js.Any], deviceIsCharging = deviceIsCharging.asInstanceOf[js.Any], disablePopGesture = disablePopGesture.asInstanceOf[js.Any], enablePopGesture = enablePopGesture.asInstanceOf[js.Any], evilTransform = evilTransform.asInstanceOf[js.Any], gcj02ToWgs84Location = gcj02ToWgs84Location.asInstanceOf[js.Any], getBleManagerState = getBleManagerState.asInstanceOf[js.Any], getBleRssi = getBleRssi.asInstanceOf[js.Any], getCurrentscreenBrightness = getCurrentscreenBrightness.asInstanceOf[js.Any], getDevInfo = getDevInfo.asInstanceOf[js.Any], getDevProperty = getDevProperty.asInstanceOf[js.Any], getDeviceList = getDeviceList.asInstanceOf[js.Any], getDpDataFromClient = getDpDataFromClient.asInstanceOf[js.Any], getDpDataFromDevice = getDpDataFromDevice.asInstanceOf[js.Any], getDpDataFromMeshDevice = getDpDataFromMeshDevice.asInstanceOf[js.Any], getDpsWithDevId = getDpsWithDevId.asInstanceOf[js.Any], getMeshDeviceInfoByNodeId = getMeshDeviceInfoByNodeId.asInstanceOf[js.Any], getMobileInfo = getMobileInfo.asInstanceOf[js.Any], getNetType = getNetType.asInstanceOf[js.Any], getNetworkType = getNetworkType.asInstanceOf[js.Any], getPanelInfo = getPanelInfo.asInstanceOf[js.Any], getPlayStatus = getPlayStatus.asInstanceOf[js.Any], getRoomsInCurrentHome = getRoomsInCurrentHome.asInstanceOf[js.Any], getSubDeviceList = getSubDeviceList.asInstanceOf[js.Any], getWiFiSsid = getWiFiSsid.asInstanceOf[js.Any], goToAlarmListActivity = goToAlarmListActivity.asInstanceOf[js.Any], gotoBlePermissions = gotoBlePermissions.asInstanceOf[js.Any], gotoDeviceWifiNetworkMonitor = gotoDeviceWifiNetworkMonitor.asInstanceOf[js.Any], gotoDpAlarm = js.Any.fromFunction1(gotoDpAlarm), hideLoading = hideLoading.asInstanceOf[js.Any], is24Hour = js.Any.fromFunction0(is24Hour), jumpTo = js.Any.fromFunction1(jumpTo), lang = lang.asInstanceOf[js.Any], mobileInfo = mobileInfo.asInstanceOf[js.Any], panelInfo = panelInfo.asInstanceOf[js.Any], postBleChannelCommand = postBleChannelCommand.asInstanceOf[js.Any], pushToNextPageWithDeviceId = pushToNextPageWithDeviceId.asInstanceOf[js.Any], putDpData = putDpData.asInstanceOf[js.Any], putLocalDpData = putLocalDpData.asInstanceOf[js.Any], putMqttDpData = putMqttDpData.asInstanceOf[js.Any], receiverMqttData = receiverMqttData.asInstanceOf[js.Any], removeDevice = removeDevice.asInstanceOf[js.Any], removeGW = removeGW.asInstanceOf[js.Any], removeListeners = removeListeners.asInstanceOf[js.Any], removeSubDevice = removeSubDevice.asInstanceOf[js.Any], renameSubDeviceName = renameSubDeviceName.asInstanceOf[js.Any], renameTitle = renameTitle.asInstanceOf[js.Any], screenAlwaysOn = screenAlwaysOn.asInstanceOf[js.Any], screenBrightness = screenBrightness.asInstanceOf[js.Any], sendMqttData = sendMqttData.asInstanceOf[js.Any], setDevProperty = setDevProperty.asInstanceOf[js.Any], shareMsg = shareMsg.asInstanceOf[js.Any], shareToSystem = shareToSystem.asInstanceOf[js.Any], showDeviceMenu = showDeviceMenu.asInstanceOf[js.Any], showEditDialog = showEditDialog.asInstanceOf[js.Any], showLoading = showLoading.asInstanceOf[js.Any], simpleConfirmDialog = simpleConfirmDialog.asInstanceOf[js.Any], simpleTipDialog = simpleTipDialog.asInstanceOf[js.Any], startBLEListening = startBLEListening.asInstanceOf[js.Any], startListening = startListening.asInstanceOf[js.Any], stopActiveSubDeviceWithGwId = stopActiveSubDeviceWithGwId.asInstanceOf[js.Any], stopListening = stopListening.asInstanceOf[js.Any], updateLocation = updateLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
   
@@ -336,9 +346,9 @@ object Dictkey {
     
     inline def setHideLoading(value: AnyFunction): Self = StObject.set(x, "hideLoading", value.asInstanceOf[js.Any])
     
-    inline def setIs24Hour(value: AnyFunction): Self = StObject.set(x, "is24Hour", value.asInstanceOf[js.Any])
+    inline def setIs24Hour(value: () => js.Promise[Boolean]): Self = StObject.set(x, "is24Hour", js.Any.fromFunction0(value))
     
-    inline def setJumpTo(value: String => js.Any): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
+    inline def setJumpTo(value: String => Any): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
     
     inline def setLang(value: I18NLanMap): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

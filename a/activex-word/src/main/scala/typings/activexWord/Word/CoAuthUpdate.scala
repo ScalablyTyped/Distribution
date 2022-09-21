@@ -10,7 +10,7 @@ trait CoAuthUpdate extends StObject {
   
   val Creator: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Range: typings.activexWord.Word.Range
   
@@ -22,7 +22,7 @@ object CoAuthUpdate {
   inline def apply(
     Application: Application,
     Creator: Double,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     WordDotCoAuthUpdate_typekey: CoAuthUpdate
   ): CoAuthUpdate = {
@@ -37,7 +37,7 @@ object CoAuthUpdate {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

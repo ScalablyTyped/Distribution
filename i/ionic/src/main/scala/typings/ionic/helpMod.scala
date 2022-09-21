@@ -10,7 +10,7 @@ object helpMod {
   
   @JSImport("ionic/commands/help", "HelpCommand")
   @js.native
-  class HelpCommand protected () extends Command {
+  open class HelpCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

@@ -29,6 +29,6 @@ object GlobalExplanation {
     
     inline def setExplanationsUndefined: Self = StObject.set(x, "explanations", js.undefined)
     
-    inline def setExplanationsVarargs(value: Explanation*): Self = StObject.set(x, "explanations", js.Array(value :_*))
+    inline def setExplanationsVarargs(value: Explanation*): Self = StObject.set(x, "explanations", js.Array(value*))
   }
 }

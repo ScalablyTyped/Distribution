@@ -1,7 +1,7 @@
 
 # Scala.js typings for sqltools__formatter
 
-Typings are for version 1.2.2
+Typings are for version 1.2.3
 
 ## Library description:
 Formats SQL queries. Part of SQLTools
@@ -10,10 +10,10 @@ Formats SQL queries. Part of SQLTools
 | ------------------ | :-------------: |
 | Full name          | @sqltools/formatter |
 | Keywords           | sql, formatter, format, n1ql, whitespaces, sqltools |
-| # releases         | 13 |
-| # dependents       | 2 |
-| # downloads        | 2307 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3569324.6666666665 |
+| # stars            | 967.0 |
 
 ## Links
 - [Homepage](https://github.com/mtxr/vscode-sqltools#readme)

@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("react-native-svg-uri", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SvgUriProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SvgUriProps, js.Object, Any]
   
-  type SvgUri = Component[SvgUriProps, js.Object, js.Any]
+  type SvgUri = Component[SvgUriProps, js.Object, Any]
   
   trait SvgUriProps extends StObject {
     

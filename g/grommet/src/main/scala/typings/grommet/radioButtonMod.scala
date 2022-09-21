@@ -1,46 +1,37 @@
 package typings.grommet
 
 import typings.grommet.utilsMod.A11yTitleType
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.DetailedHTMLProps
-import typings.react.mod.InputHTMLAttributes
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioButtonMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/RadioButton", "RadioButton")
   @js.native
-  class RadioButton protected ()
-    extends Component[
-          RadioButtonProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: RadioButtonProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])) = this()
-    def this(
-      props: RadioButtonProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]),
-      context: js.Any
-    ) = this()
+  val RadioButton: FC[RadioButtonExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'name' | 'children'> ]: react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>[P]} */ trait RadioButtonExtendedProps
+    extends StObject
+       with RadioButtonProps
+  object RadioButtonExtendedProps {
+    
+    inline def apply(name: String): RadioButtonExtendedProps = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RadioButtonExtendedProps]
+    }
   }
-  @JSImport("grommet/components/RadioButton", "RadioButton")
-  @js.native
-  val RadioButton: ComponentClass[
-    RadioButtonProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
-    ComponentState
-  ] = js.native
   
   trait RadioButtonProps extends StObject {
     
     var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode | js.Function] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -66,6 +57,10 @@ object radioButtonMod {
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      
+      inline def setChildren(value: ReactNode | js.Function): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

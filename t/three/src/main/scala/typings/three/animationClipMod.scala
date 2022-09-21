@@ -1,9 +1,9 @@
 package typings.three
 
 import typings.three.boneMod.Bone
-import typings.three.constantsMod.AnimationBlendMode
-import typings.three.geometryMod.MorphTarget
 import typings.three.keyframeTrackMod.KeyframeTrack
+import typings.three.srcConstantsMod.AnimationBlendMode
+import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object animationClipMod {
   
   @JSImport("three/src/animation/AnimationClip", "AnimationClip")
   @js.native
-  class AnimationClip () extends StObject {
+  open class AnimationClip () extends StObject {
     def this(name: String) = this()
     def this(name: String, duration: Double) = this()
     def this(name: Unit, duration: Double) = this()
@@ -30,13 +30,13 @@ object animationClipMod {
     def this(name: Unit, duration: Unit, tracks: Unit, blendMode: AnimationBlendMode) = this()
     
     /**
-    	 * @default THREE.NormalAnimationBlendMode
-    	 */
+      * @default THREE.NormalAnimationBlendMode
+      */
     var blendMode: AnimationBlendMode = js.native
     
     /**
-    	 * @default -1
-    	 */
+      * @default -1
+      */
     var duration: Double = js.native
     
     var name: String = js.native
@@ -45,7 +45,9 @@ object animationClipMod {
     
     def resetDuration(): AnimationClip = js.native
     
-    var results: js.Array[js.Any] = js.native
+    var results: js.Array[Any] = js.native
+    
+    def toJSON(clip: AnimationClip): Any = js.native
     
     var tracks: js.Array[KeyframeTrack] = js.native
     
@@ -68,10 +70,33 @@ object animationClipMod {
     
     inline def findByName(clipArray: js.Array[AnimationClip], name: String): AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("findByName")(clipArray.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[AnimationClip]
     
-    inline def parse(json: js.Any): AnimationClip = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any]).asInstanceOf[AnimationClip]
+    inline def parse(json: Any): AnimationClip = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any]).asInstanceOf[AnimationClip]
     
-    inline def parseAnimation(animation: js.Any, bones: js.Array[Bone]): AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAnimation")(animation.asInstanceOf[js.Any], bones.asInstanceOf[js.Any])).asInstanceOf[AnimationClip]
+    inline def parseAnimation(animation: Any, bones: js.Array[Bone]): AnimationClip = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAnimation")(animation.asInstanceOf[js.Any], bones.asInstanceOf[js.Any])).asInstanceOf[AnimationClip]
     
-    inline def toJSON(clip: AnimationClip): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(clip.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def toJSON(clip: AnimationClip): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(clip.asInstanceOf[js.Any]).asInstanceOf[Any]
+  }
+  
+  trait MorphTarget extends StObject {
+    
+    var name: String
+    
+    var vertices: js.Array[Vector3]
+  }
+  object MorphTarget {
+    
+    inline def apply(name: String, vertices: js.Array[Vector3]): MorphTarget = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MorphTarget]
+    }
+    
+    extension [Self <: MorphTarget](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setVertices(value: js.Array[Vector3]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+      
+      inline def setVerticesVarargs(value: Vector3*): Self = StObject.set(x, "vertices", js.Array(value*))
+    }
   }
 }

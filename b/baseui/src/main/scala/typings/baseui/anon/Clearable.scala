@@ -24,6 +24,9 @@ trait Clearable extends StObject {
   @JSName("$error")
   var $error: Boolean
   
+  @JSName("$isEmpty")
+  var $isEmpty: Boolean
+  
   @JSName("$isFocused")
   var $isFocused: Boolean
   
@@ -49,10 +52,10 @@ trait Clearable extends StObject {
   var $searchable: Boolean
   
   @JSName("$size")
-  var $size: mini | default_ | compact | large_
+  var $size: default_ | compact | large_ | mini
   
   @JSName("$type")
-  var $type: select | search
+  var $type: search | select
 }
 object Clearable {
   
@@ -61,6 +64,7 @@ object Clearable {
     $creatable: Boolean,
     $disabled: Boolean,
     $error: Boolean,
+    $isEmpty: Boolean,
     $isFocused: Boolean,
     $isLoading: Boolean,
     $isOpen: Boolean,
@@ -69,10 +73,10 @@ object Clearable {
     $positive: Boolean,
     $required: Boolean,
     $searchable: Boolean,
-    $size: mini | default_ | compact | large_,
-    $type: select | search
+    $size: default_ | compact | large_ | mini,
+    $type: search | select
   ): Clearable = {
-    val __obj = js.Dynamic.literal($clearable = $clearable.asInstanceOf[js.Any], $creatable = $creatable.asInstanceOf[js.Any], $disabled = $disabled.asInstanceOf[js.Any], $error = $error.asInstanceOf[js.Any], $isFocused = $isFocused.asInstanceOf[js.Any], $isLoading = $isLoading.asInstanceOf[js.Any], $isOpen = $isOpen.asInstanceOf[js.Any], $isPseudoFocused = $isPseudoFocused.asInstanceOf[js.Any], $multi = $multi.asInstanceOf[js.Any], $positive = $positive.asInstanceOf[js.Any], $required = $required.asInstanceOf[js.Any], $searchable = $searchable.asInstanceOf[js.Any], $size = $size.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal($clearable = $clearable.asInstanceOf[js.Any], $creatable = $creatable.asInstanceOf[js.Any], $disabled = $disabled.asInstanceOf[js.Any], $error = $error.asInstanceOf[js.Any], $isEmpty = $isEmpty.asInstanceOf[js.Any], $isFocused = $isFocused.asInstanceOf[js.Any], $isLoading = $isLoading.asInstanceOf[js.Any], $isOpen = $isOpen.asInstanceOf[js.Any], $isPseudoFocused = $isPseudoFocused.asInstanceOf[js.Any], $multi = $multi.asInstanceOf[js.Any], $positive = $positive.asInstanceOf[js.Any], $required = $required.asInstanceOf[js.Any], $searchable = $searchable.asInstanceOf[js.Any], $size = $size.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Clearable]
   }
   
@@ -85,6 +89,8 @@ object Clearable {
     inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     
     inline def set$error(value: Boolean): Self = StObject.set(x, "$error", value.asInstanceOf[js.Any])
+    
+    inline def set$isEmpty(value: Boolean): Self = StObject.set(x, "$isEmpty", value.asInstanceOf[js.Any])
     
     inline def set$isFocused(value: Boolean): Self = StObject.set(x, "$isFocused", value.asInstanceOf[js.Any])
     
@@ -102,8 +108,8 @@ object Clearable {
     
     inline def set$searchable(value: Boolean): Self = StObject.set(x, "$searchable", value.asInstanceOf[js.Any])
     
-    inline def set$size(value: mini | default_ | compact | large_): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+    inline def set$size(value: default_ | compact | large_ | mini): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
     
-    inline def set$type(value: select | search): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+    inline def set$type(value: search | select): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
   }
 }

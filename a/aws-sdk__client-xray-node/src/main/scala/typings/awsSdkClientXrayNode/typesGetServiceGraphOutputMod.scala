@@ -3,7 +3,6 @@ package typings.awsSdkClientXrayNode
 import typings.awsSdkClientXrayNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientXrayNode.typesServiceMod.UnmarshalledService
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object typesGetServiceGraphOutputMod {
     /**
       * <p>The end of the time frame for which the graph was generated.</p>
       */
-    var EndTime: js.UndefOr[Date] = js.undefined
+    var EndTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>Pagination token. Not used.</p>
@@ -38,7 +37,7 @@ object typesGetServiceGraphOutputMod {
     /**
       * <p>The start of the time frame for which the graph was generated.</p>
       */
-    var StartTime: js.UndefOr[Date] = js.undefined
+    var StartTime: js.UndefOr[js.Date] = js.undefined
   }
   object GetServiceGraphOutput {
     
@@ -51,7 +50,7 @@ object typesGetServiceGraphOutputMod {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
@@ -63,9 +62,9 @@ object typesGetServiceGraphOutputMod {
       
       inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
       
-      inline def setServicesVarargs(value: UnmarshalledService*): Self = StObject.set(x, "Services", js.Array(value :_*))
+      inline def setServicesVarargs(value: UnmarshalledService*): Self = StObject.set(x, "Services", js.Array(value*))
       
-      inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     }

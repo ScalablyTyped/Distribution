@@ -17,7 +17,7 @@ object durationMod {
     * Construct a time duration of 0 milliseconds
     * @throws nothing
     */
-  class Duration () extends StObject {
+  open class Duration () extends StObject {
     /**
       * Construct a duration from an amount and a time unit.
       * @param amount	Number of units
@@ -38,18 +38,18 @@ object durationMod {
     /**
       * Given amount in constructor
       */
-    /* private */ var _amount: js.Any = js.native
+    /* private */ var _amount: Any = js.native
     
     /**
       * Return this % unit, always positive
       * @throws nothing
       */
-    /* private */ var _part: js.Any = js.native
+    /* private */ var _part: Any = js.native
     
     /**
       * Unit
       */
-    /* private */ var _unit: js.Any = js.native
+    /* private */ var _unit: Any = js.native
     
     /**
       * Return the absolute value of the duration i.e. remove the sign.
@@ -254,6 +254,11 @@ object durationMod {
     def multiply(value: Double): Duration = js.native
     
     /**
+      * Returns true if this is a non-zero length duration
+      */
+    def nonZero(): Boolean = js.native
+    
+    /**
       * The second part of the duration (always positive)
       * For Day/Month/Year durations, this is approximate!
       * @return e.g. 3 for a -01:02:03.400 duration
@@ -332,6 +337,11 @@ object durationMod {
       * @throws nothing
       */
     def years(): Double = js.native
+    
+    /**
+      * Returns true if this is a zero-length duration
+      */
+    def zero(): Boolean = js.native
   }
   /* static members */
   object Duration {
@@ -401,7 +411,7 @@ object durationMod {
   
   inline def hours(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  inline def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean]
+  inline def isDuration(value: Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean]
   
   inline def milliseconds(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   

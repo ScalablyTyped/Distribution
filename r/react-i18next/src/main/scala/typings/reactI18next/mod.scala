@@ -10,10 +10,12 @@ import typings.i18next.mod.i18n
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
+import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentType
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
@@ -47,12 +49,14 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.reactI18next.anon.Call
 import typings.reactI18next.anon.I18n
 import typings.reactI18next.anon.I18nI18n
 import typings.reactI18next.anon.InitialI18nStore
 import typings.reactI18next.anon.Lng
 import typings.reactI18next.anon.WithRef
+import typings.reactI18next.reactI18nextBooleans.`false`
 import typings.reactI18next.reactI18nextStrings.`additions removals`
 import typings.reactI18next.reactI18nextStrings.`additions text`
 import typings.reactI18next.reactI18nextStrings.`inline`
@@ -68,10 +72,13 @@ import typings.reactI18next.reactI18nextStrings.both
 import typings.reactI18next.reactI18nextStrings.copy
 import typings.reactI18next.reactI18nextStrings.date
 import typings.reactI18next.reactI18nextStrings.decimal
+import typings.reactI18next.reactI18nextStrings.default
 import typings.reactI18next.reactI18nextStrings.descending
 import typings.reactI18next.reactI18nextStrings.dialog
 import typings.reactI18next.reactI18nextStrings.email
+import typings.reactI18next.reactI18nextStrings.environment
 import typings.reactI18next.reactI18nextStrings.execute
+import typings.reactI18next.reactI18nextStrings.fallback
 import typings.reactI18next.reactI18nextStrings.grammar
 import typings.reactI18next.reactI18nextStrings.grid
 import typings.reactI18next.reactI18nextStrings.horizontal
@@ -102,6 +109,7 @@ import typings.reactI18next.reactI18nextStrings.text
 import typings.reactI18next.reactI18nextStrings.time
 import typings.reactI18next.reactI18nextStrings.tree
 import typings.reactI18next.reactI18nextStrings.url
+import typings.reactI18next.reactI18nextStrings.user
 import typings.reactI18next.reactI18nextStrings.vertical
 import typings.reactI18next.reactI18nextStrings.yes
 import typings.std.Element
@@ -128,9 +136,9 @@ object mod {
   
   inline def Trans[E /* <: Element */](props: TransProps[E]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Trans")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def Translation(props: TranslationProps): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Translation")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def Translation(props: TranslationProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Translation")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def composeInitialProps(ForComponent: js.Any): js.Function1[/* ctx */ js.Any, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeInitialProps")(ForComponent.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ctx */ js.Any, js.Promise[js.Any]]]
+  inline def composeInitialProps(ForComponent: Any): js.Function1[/* ctx */ Any, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeInitialProps")(ForComponent.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ctx */ Any, js.Promise[Any]]]
   
   inline def getDefaults(): ReactOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")().asInstanceOf[ReactOptions]
   
@@ -153,54 +161,80 @@ object mod {
   inline def useTranslation(ns: Namespace): UseTranslationResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("useTranslation")(ns.asInstanceOf[js.Any]).asInstanceOf[UseTranslationResponse]
   inline def useTranslation(ns: Namespace, options: UseTranslationOptions): UseTranslationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("useTranslation")(ns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseTranslationResponse]
   
-  inline def withSSR(): js.Function1[/* WrappedComponent */ ComponentType[js.Any], Call[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSSR")().asInstanceOf[js.Function1[/* WrappedComponent */ ComponentType[js.Any], Call[js.Any]]]
+  inline def withSSR(): js.Function1[/* WrappedComponent */ ComponentType[Any], Call[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSSR")().asInstanceOf[js.Function1[/* WrappedComponent */ ComponentType[Any], Call[Any]]]
   
   inline def withTranslation(): js.Function1[
-    /* component */ ComponentType[WithTranslation_], 
+    /* component */ Any, 
     ComponentType[
-      (Omit[WithTranslation_, typings.reactI18next.reactI18nextStrings.i18n | tReady]) & WithTranslationProps
+      (Omit[
+        LibraryManagedAttributes[Any, Subtract[ComponentProps[Any], WithTranslationProps]], 
+        typings.reactI18next.reactI18nextStrings.i18n | tReady
+      ]) & WithTranslationProps
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTranslation")().asInstanceOf[js.Function1[
-    /* component */ ComponentType[WithTranslation_], 
+    /* component */ Any, 
     ComponentType[
-      (Omit[WithTranslation_, typings.reactI18next.reactI18nextStrings.i18n | tReady]) & WithTranslationProps
+      (Omit[
+        LibraryManagedAttributes[Any, Subtract[ComponentProps[Any], WithTranslationProps]], 
+        typings.reactI18next.reactI18nextStrings.i18n | tReady
+      ]) & WithTranslationProps
     ]
   ]]
   inline def withTranslation(ns: Unit, options: WithRef): js.Function1[
-    /* component */ ComponentType[WithTranslation_], 
+    /* component */ Any, 
     ComponentType[
-      (Omit[WithTranslation_, typings.reactI18next.reactI18nextStrings.i18n | tReady]) & WithTranslationProps
+      (Omit[
+        LibraryManagedAttributes[Any, Subtract[ComponentProps[Any], WithTranslationProps]], 
+        typings.reactI18next.reactI18nextStrings.i18n | tReady
+      ]) & WithTranslationProps
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTranslation")(ns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ ComponentType[WithTranslation_], 
+    /* component */ Any, 
     ComponentType[
-      (Omit[WithTranslation_, typings.reactI18next.reactI18nextStrings.i18n | tReady]) & WithTranslationProps
+      (Omit[
+        LibraryManagedAttributes[Any, Subtract[ComponentProps[Any], WithTranslationProps]], 
+        typings.reactI18next.reactI18nextStrings.i18n | tReady
+      ]) & WithTranslationProps
     ]
   ]]
   inline def withTranslation(ns: Namespace): js.Function1[
-    /* component */ ComponentType[WithTranslation_], 
+    /* component */ Any, 
     ComponentType[
-      (Omit[WithTranslation_, typings.reactI18next.reactI18nextStrings.i18n | tReady]) & WithTranslationProps
+      (Omit[
+        LibraryManagedAttributes[Any, Subtract[ComponentProps[Any], WithTranslationProps]], 
+        typings.reactI18next.reactI18nextStrings.i18n | tReady
+      ]) & WithTranslationProps
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTranslation")(ns.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ ComponentType[WithTranslation_], 
+    /* component */ Any, 
     ComponentType[
-      (Omit[WithTranslation_, typings.reactI18next.reactI18nextStrings.i18n | tReady]) & WithTranslationProps
+      (Omit[
+        LibraryManagedAttributes[Any, Subtract[ComponentProps[Any], WithTranslationProps]], 
+        typings.reactI18next.reactI18nextStrings.i18n | tReady
+      ]) & WithTranslationProps
     ]
   ]]
   inline def withTranslation(ns: Namespace, options: WithRef): js.Function1[
-    /* component */ ComponentType[WithTranslation_], 
+    /* component */ Any, 
     ComponentType[
-      (Omit[WithTranslation_, typings.reactI18next.reactI18nextStrings.i18n | tReady]) & WithTranslationProps
+      (Omit[
+        LibraryManagedAttributes[Any, Subtract[ComponentProps[Any], WithTranslationProps]], 
+        typings.reactI18next.reactI18nextStrings.i18n | tReady
+      ]) & WithTranslationProps
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withTranslation")(ns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ ComponentType[WithTranslation_], 
+    /* component */ Any, 
     ComponentType[
-      (Omit[WithTranslation_, typings.reactI18next.reactI18nextStrings.i18n | tReady]) & WithTranslationProps
+      (Omit[
+        LibraryManagedAttributes[Any, Subtract[ComponentProps[Any], WithTranslationProps]], 
+        typings.reactI18next.reactI18nextStrings.i18n | tReady
+      ]) & WithTranslationProps
     ]
   ]]
   
   trait I18nextProviderProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var defaultNS: js.UndefOr[String] = js.undefined
     
@@ -214,6 +248,10 @@ object mod {
     }
     
     extension [Self <: I18nextProviderProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDefaultNS(value: String): Self = StObject.set(x, "defaultNS", value.asInstanceOf[js.Any])
       
@@ -248,6 +286,8 @@ object mod {
     }
   }
   
+  type Subtract[T /* <: K */, K] = Omit[T, /* keyof K */ String]
+  
   /* Inlined parent react.react.HTMLProps<E> */
   /* Inlined parent std.Partial<i18next.i18next.WithT> */
   trait TransProps[E /* <: Element */] extends StObject {
@@ -277,7 +317,7 @@ object mod {
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
     /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
@@ -286,7 +326,7 @@ object mod {
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
     /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
@@ -337,7 +377,7 @@ object mod {
       * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
       * @see aria-hidden @see aria-readonly.
       */
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates what functions can be performed when a dragged object is released on the drop target.
@@ -352,7 +392,7 @@ object mod {
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
@@ -364,7 +404,7 @@ object mod {
       * Indicates an element's "grabbed" state in a drag-and-drop operation.
       * @deprecated in ARIA 1.1
       */
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
@@ -373,7 +413,7 @@ object mod {
       * Indicates whether the element is exposed to an accessibility API.
       * @see aria-disabled.
       */
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates the entered value does not conform to the format expected by the application.
@@ -403,13 +443,13 @@ object mod {
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
     /** Indicates whether an element is modal when displayed. */
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether a text box accepts multiple lines of input or only a single line. */
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates that the user may select more than one item from the current selectable descendants. */
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
@@ -443,7 +483,7 @@ object mod {
       * Indicates that the element is not editable, but is otherwise operable.
       * @see aria-disabled.
       */
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
@@ -454,7 +494,7 @@ object mod {
       ] = js.undefined
     
     /** Indicates that user input is required on the element before a form may be submitted. */
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     /** Defines a human-readable, author-localized description for the role of an element. */
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
@@ -481,7 +521,7 @@ object mod {
       * Indicates the current "selected" state of various widgets.
       * @see aria-checked @see aria-pressed.
       */
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     /**
       * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
@@ -524,7 +564,7 @@ object mod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var cellPadding: js.UndefOr[Double | String] = js.undefined
     
@@ -550,11 +590,13 @@ object mod {
     
     var cols: js.UndefOr[Double] = js.undefined
     
-    var components: js.UndefOr[js.Array[ReactNode] | StringDictionary[ReactNode]] = js.undefined
+    var components: js.UndefOr[js.Array[ReactElement] | StringDictionary[ReactElement]] = js.undefined
     
     var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
+    
+    var context: js.UndefOr[String] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
@@ -587,7 +629,7 @@ object mod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var download: js.UndefOr[js.Any] = js.undefined
+    var download: js.UndefOr[Any] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -629,7 +671,7 @@ object mod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -785,6 +827,7 @@ object mod {
     // Keyboard Events
     var onKeyDown: js.UndefOr[KeyboardEventHandler[E]] = js.undefined
     
+    /** @deprecated */
     var onKeyPress: js.UndefOr[KeyboardEventHandler[E]] = js.undefined
     
     var onKeyUp: js.UndefOr[KeyboardEventHandler[E]] = js.undefined
@@ -884,7 +927,7 @@ object mod {
     
     var optimum: js.UndefOr[Double] = js.undefined
     
-    var parent: js.UndefOr[String | ComponentType[js.Any] | Null] = js.undefined
+    var parent: js.UndefOr[String | ComponentType[Any] | Null] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
@@ -919,7 +962,7 @@ object mod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rowSpan: js.UndefOr[Double] = js.undefined
     
@@ -940,6 +983,8 @@ object mod {
     var selected: js.UndefOr[Boolean] = js.undefined
     
     var shape: js.UndefOr[String] = js.undefined
+    
+    var shouldUnescape: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
     
@@ -1049,7 +1094,7 @@ object mod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -1057,7 +1102,7 @@ object mod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -1093,7 +1138,7 @@ object mod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -1105,7 +1150,7 @@ object mod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -1113,7 +1158,7 @@ object mod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -1121,7 +1166,7 @@ object mod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -1149,15 +1194,15 @@ object mod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -1181,7 +1226,7 @@ object mod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -1191,7 +1236,7 @@ object mod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -1211,7 +1256,7 @@ object mod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -1271,7 +1316,7 @@ object mod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -1323,11 +1368,11 @@ object mod {
       
       inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      inline def setComponents(value: js.Array[ReactNode] | StringDictionary[ReactNode]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Array[ReactElement] | StringDictionary[ReactElement]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      inline def setComponentsVarargs(value: ReactNode*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: ReactElement*): Self = StObject.set(x, "components", js.Array(value*))
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -1337,9 +1382,13 @@ object mod {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+      
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
       inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
@@ -1385,7 +1434,7 @@ object mod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -1403,7 +1452,7 @@ object mod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
       inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
@@ -1487,7 +1536,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -1625,7 +1674,7 @@ object mod {
       
       inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
       
-      inline def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value :_*))
+      inline def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value*))
       
       inline def setOnAbort(value: SyntheticEvent[E, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
@@ -1651,7 +1700,7 @@ object mod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[E] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[E, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1751,7 +1800,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[E] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[E, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1951,7 +2000,7 @@ object mod {
       
       inline def setOptimumUndefined: Self = StObject.set(x, "optimum", js.undefined)
       
-      inline def setParent(value: String | ComponentType[js.Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String | ComponentType[Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       inline def setParentNull: Self = StObject.set(x, "parent", null)
       
@@ -2021,7 +2070,7 @@ object mod {
       
       inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -2064,6 +2113,10 @@ object mod {
       inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      
+      inline def setShouldUnescape(value: Boolean): Self = StObject.set(x, "shouldUnescape", value.asInstanceOf[js.Any])
+      
+      inline def setShouldUnescapeUndefined: Self = StObject.set(x, "shouldUnescape", js.undefined)
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -2169,7 +2222,7 @@ object mod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
@@ -2200,6 +2253,10 @@ object mod {
     var i18n: js.UndefOr[typings.i18next.mod.i18n] = js.undefined
     
     var ns: js.UndefOr[Namespace] = js.undefined
+    
+    var nsMode: js.UndefOr[fallback | default] = js.undefined
+    
+    var useSuspense: js.UndefOr[Boolean] = js.undefined
   }
   object TranslationProps {
     
@@ -2218,15 +2275,29 @@ object mod {
       
       inline def setNs(value: Namespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
       
+      inline def setNsMode(value: fallback | default): Self = StObject.set(x, "nsMode", value.asInstanceOf[js.Any])
+      
+      inline def setNsModeUndefined: Self = StObject.set(x, "nsMode", js.undefined)
+      
       inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
       
-      inline def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value :_*))
+      inline def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value*))
+      
+      inline def setUseSuspense(value: Boolean): Self = StObject.set(x, "useSuspense", value.asInstanceOf[js.Any])
+      
+      inline def setUseSuspenseUndefined: Self = StObject.set(x, "useSuspense", js.undefined)
     }
   }
   
   trait UseTranslationOptions extends StObject {
     
+    var bindI18n: js.UndefOr[String | `false`] = js.undefined
+    
     var i18n: js.UndefOr[typings.i18next.mod.i18n] = js.undefined
+    
+    var keyPrefix: js.UndefOr[String] = js.undefined
+    
+    var nsMode: js.UndefOr[fallback | default] = js.undefined
     
     var useSuspense: js.UndefOr[Boolean] = js.undefined
   }
@@ -2239,9 +2310,21 @@ object mod {
     
     extension [Self <: UseTranslationOptions](x: Self) {
       
+      inline def setBindI18n(value: String | `false`): Self = StObject.set(x, "bindI18n", value.asInstanceOf[js.Any])
+      
+      inline def setBindI18nUndefined: Self = StObject.set(x, "bindI18n", js.undefined)
+      
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
       inline def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
+      
+      inline def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
+      
+      inline def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
+      
+      inline def setNsMode(value: fallback | default): Self = StObject.set(x, "nsMode", value.asInstanceOf[js.Any])
+      
+      inline def setNsModeUndefined: Self = StObject.set(x, "nsMode", js.undefined)
       
       inline def setUseSuspense(value: Boolean): Self = StObject.set(x, "useSuspense", value.asInstanceOf[js.Any])
       

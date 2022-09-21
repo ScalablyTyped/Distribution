@@ -1,13 +1,17 @@
 package typings.octokitCore
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.beforeAfterHook.mod.GetType
 import typings.beforeAfterHook.mod.HookCollection
 import typings.beforeAfterHook.mod.HookMethod
 import typings.octokitCore.anon.Dictkey
-import typings.octokitCore.anon.Instantiable
-import typings.octokitCore.anon.InstantiablePlugins
 import typings.octokitCore.anon.Plugins
+import typings.octokitCore.octokitCoreStrings.O
+import typings.octokitCore.octokitCoreStrings.Options
+import typings.octokitCore.octokitCoreStrings.R
+import typings.octokitCore.octokitCoreStrings.Result
+import typings.octokitCore.octokitCoreStrings.request
 import typings.octokitCore.typesMod.Constructor
+import typings.octokitCore.typesMod.Hooks
 import typings.octokitCore.typesMod.OctokitOptions
 import typings.octokitCore.typesMod.OctokitPlugin
 import typings.octokitCore.typesMod.ReturnTypeOf
@@ -30,12 +34,10 @@ object mod {
   
   @JSImport("@octokit/core", "Octokit")
   @js.native
-  class Octokit ()
-    extends StObject
-       with /* key */ StringDictionary[js.Any] {
+  open class Octokit () extends StObject {
     def this(options: OctokitOptions) = this()
     
-    def auth(args: js.Any*): js.Promise[js.Any] = js.native
+    def auth(args: Any*): js.Promise[Any] = js.native
     
     /**
       * Sends a GraphQL query request based on endpoint options
@@ -58,38 +60,121 @@ object mod {
     /**
       * Invoke before and after hooks
       */
-    def hook(name: String, hookMethod: HookMethod[js.Any, js.Any]): js.Promise[js.Any] = js.native
-    def hook(name: String, hookMethod: HookMethod[js.Any, js.Any], options: js.Any): js.Promise[js.Any] = js.native
-    def hook(name: js.Array[String], hookMethod: HookMethod[js.Any, js.Any]): js.Promise[js.Any] = js.native
-    def hook(name: js.Array[String], hookMethod: HookMethod[js.Any, js.Any], options: js.Any): js.Promise[js.Any] = js.native
+    def hook[Name /* <: request */](
+      name: Name,
+      hookMethod: HookMethod[
+          GetType[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+            Options, 
+            O
+          ], 
+          GetType[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+            Result, 
+            R
+          ]
+        ]
+    ): js.Promise[
+        GetType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+          Result, 
+          R
+        ]
+      ] = js.native
+    def hook[Name /* <: request */](
+      name: Name,
+      hookMethod: HookMethod[
+          GetType[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+            Options, 
+            O
+          ], 
+          GetType[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+            Result, 
+            R
+          ]
+        ],
+      options: GetType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+          Options, 
+          O
+        ]
+    ): js.Promise[
+        GetType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+          Result, 
+          R
+        ]
+      ] = js.native
+    def hook[Name /* <: request */](
+      name: js.Array[Name],
+      hookMethod: HookMethod[
+          GetType[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+            Options, 
+            O
+          ], 
+          GetType[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+            Result, 
+            R
+          ]
+        ]
+    ): js.Promise[
+        GetType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+          Result, 
+          R
+        ]
+      ] = js.native
+    def hook[Name /* <: request */](
+      name: js.Array[Name],
+      hookMethod: HookMethod[
+          GetType[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+            Options, 
+            O
+          ], 
+          GetType[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+            Result, 
+            R
+          ]
+        ],
+      options: GetType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+          Options, 
+          O
+        ]
+    ): js.Promise[
+        GetType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/core.@octokit/core/dist-types/types.Hooks[Name] */ js.Any, 
+          Result, 
+          R
+        ]
+      ] = js.native
     @JSName("hook")
-    var hook_Original: HookCollection = js.native
+    var hook_Original: HookCollection[Hooks, request] = js.native
     
     var log: Dictkey = js.native
     
-    def request[R /* <: Route */](route: R): js.Promise[
-        (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['response'] */ js.Any) | OctokitResponse[js.Any]
-      ] = js.native
-    def request[R /* <: Route */](
-      route: R,
-      options: typings.octokitTypes.requestParametersMod.RequestParameters | ((/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['parameters'] */ js.Any) & typings.octokitTypes.requestParametersMod.RequestParameters)
-    ): js.Promise[
-        (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['response'] */ js.Any) | OctokitResponse[js.Any]
-      ] = js.native
     /**
       * Sends a request based on endpoint options
       *
-      * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
+      * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
       * @param {object} [parameters] URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       */
-    def request[R /* <: Route */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any): js.Promise[
-        (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['response'] */ js.Any) | OctokitResponse[js.Any]
+    def request[R /* <: Route */](
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R
+    ): js.Promise[
+        (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['response'] */ js.Any) | (OctokitResponse[Any, Double])
       ] = js.native
     def request[R /* <: Route */](
-      route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any,
-      options: typings.octokitTypes.requestParametersMod.RequestParameters | ((/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['parameters'] */ js.Any) & typings.octokitTypes.requestParametersMod.RequestParameters)
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R,
+      options: ((/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['parameters'] */ js.Any) & typings.octokitTypes.requestParametersMod.RequestParameters) | typings.octokitTypes.requestParametersMod.RequestParameters
     ): js.Promise[
-        (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['response'] */ js.Any) | OctokitResponse[js.Any]
+        (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['response'] */ js.Any) | (OctokitResponse[Any, Double])
       ] = js.native
     @JSName("request")
     var request_Original: RequestInterface[js.Object] = js.native
@@ -99,7 +184,7 @@ object mod {
       * @param {object} endpoint Must set `method` and `url`. Plus URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       */
     @JSName("request")
-    def request_url[T, O /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](options: O & Method & (UrlString | Url)): js.Promise[OctokitResponse[T]] = js.native
+    def request_url[T, O /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](options: O & Method & (UrlString | Url)): js.Promise[OctokitResponse[T, Double]] = js.native
   }
   /* static members */
   object Octokit {
@@ -113,8 +198,8 @@ object mod {
     def VERSION: String = js.native
     inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
-    inline def defaults[S /* <: Constructor[js.Any] */](defaults: js.Function): Instantiable & S = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(defaults.asInstanceOf[js.Any]).asInstanceOf[Instantiable & S]
-    inline def defaults[S /* <: Constructor[js.Any] */](defaults: OctokitOptions): Instantiable & S = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(defaults.asInstanceOf[js.Any]).asInstanceOf[Instantiable & S]
+    inline def defaults[S /* <: Constructor[Any] */](defaults: js.Function): S = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(defaults.asInstanceOf[js.Any]).asInstanceOf[S]
+    inline def defaults[S /* <: Constructor[Any] */](defaults: OctokitOptions): S = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(defaults.asInstanceOf[js.Any]).asInstanceOf[S]
     
     /**
       * Attach a plugin (or many) to your Octokit instance.
@@ -122,9 +207,9 @@ object mod {
       * @example
       * const API = Octokit.plugin(plugin1, plugin2, plugin3, ...)
       */
-    inline def plugin[S /* <: Constructor[js.Any] & Plugins */, T /* <: js.Array[OctokitPlugin] */](
+    inline def plugin[S /* <: Constructor[Any] & Plugins */, T /* <: js.Array[OctokitPlugin] */](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param newPlugins because its type T is not an array type */ newPlugins: T
-    ): InstantiablePlugins & S & Constructor[UnionToIntersection[ReturnTypeOf[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(newPlugins.asInstanceOf[js.Any]).asInstanceOf[InstantiablePlugins & S & Constructor[UnionToIntersection[ReturnTypeOf[T]]]]
+    ): S & Constructor[UnionToIntersection[ReturnTypeOf[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(newPlugins.asInstanceOf[js.Any]).asInstanceOf[S & Constructor[UnionToIntersection[ReturnTypeOf[T]]]]
     
     @JSImport("@octokit/core", "Octokit.plugins")
     @js.native

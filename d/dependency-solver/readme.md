@@ -10,10 +10,10 @@ A tiny dependency solver using topological sorting
 | ------------------ | :-------------: |
 | Full name          | dependency-solver |
 | Keywords           | dependency, denepdency-solver, dependency-parser, topological, topological-sort, kahn |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 18886 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7044.666666666667 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/haavistu/dependency-solver#readme)

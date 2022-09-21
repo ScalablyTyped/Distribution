@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ClientRuntimeContext")
 @js.native
-class ClientRuntimeContext protected ()
+open class ClientRuntimeContext protected ()
   extends StObject
      with typings.sharepoint.SP.ClientRuntimeContext {
   def this(serverRelativeUrlOrFullUrl: String) = this()

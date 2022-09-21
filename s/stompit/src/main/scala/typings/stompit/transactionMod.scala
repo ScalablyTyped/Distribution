@@ -10,7 +10,7 @@ object transactionMod {
   
   @JSImport("stompit/lib/client/Transaction", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Transaction {
     def this(id: Double, client: typings.stompit.clientMod.^) = this()
@@ -26,8 +26,8 @@ object transactionMod {
     def commit(options: SendOptions): Unit = js.native
     
     def send(): Writable = js.native
-    def send(headers: js.Any): Writable = js.native
-    def send(headers: js.Any, options: SendOptions): Writable = js.native
+    def send(headers: Any): Writable = js.native
+    def send(headers: Any, options: SendOptions): Writable = js.native
     def send(headers: Unit, options: SendOptions): Writable = js.native
   }
 }

@@ -22,6 +22,8 @@ trait SceneViewConstraintsTiltProperties
   /**
     * Specifies the mode of the constraint.
     *
+    * @default auto
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
   var mode: js.UndefOr[auto | manual] = js.undefined

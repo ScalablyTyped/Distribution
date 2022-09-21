@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Pad extends StObject {
   
-  var pad: js.UndefOr[js.Any] = js.undefined
+  var pad: js.UndefOr[Double] = js.undefined
 }
 object Pad {
   
@@ -17,7 +17,7 @@ object Pad {
   
   extension [Self <: Pad](x: Self) {
     
-    inline def setPad(value: js.Any): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
   }

@@ -1,6 +1,5 @@
 package typings.fibjs
 
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,7 +99,7 @@ trait ClassBuffer
     * 
     * 
     */
-  def entries(): Iterable[js.Any] = js.native
+  def entries(): js.Iterable[Any] = js.native
   
   /**
     * 
@@ -226,7 +225,7 @@ trait ClassBuffer
     * 
     * 
     */
-  def keys(): Iterable[js.Any] = js.native
+  def keys(): js.Iterable[Any] = js.native
   
   /**
     * class prop 
@@ -590,7 +589,7 @@ trait ClassBuffer
     * 
     * 
     */
-  def toArray(): js.Array[js.Any] = js.native
+  def toArray(): js.Array[Any] = js.native
   
   /**
     * 
@@ -616,7 +615,7 @@ trait ClassBuffer
     * 
     * 
     */
-  def values(): Iterable[js.Any] = js.native
+  def values(): js.Iterable[Any] = js.native
   
   /**
     * 

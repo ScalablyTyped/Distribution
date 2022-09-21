@@ -9,6 +9,9 @@ trait DimensionMetadata extends StObject {
   /** This dimension's name. Useable in [Dimension](#Dimension)'s `name`. For example, `eventName`. */
   var apiName: js.UndefOr[String] = js.undefined
   
+  /** The display name of the category that this dimension belongs to. Similar dimensions and metrics are categorized together. */
+  var category: js.UndefOr[String] = js.undefined
+  
   /** True if the dimension is a custom dimension for this property. */
   var customDefinition: js.UndefOr[Boolean] = js.undefined
   
@@ -37,6 +40,10 @@ object DimensionMetadata {
     
     inline def setApiNameUndefined: Self = StObject.set(x, "apiName", js.undefined)
     
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
     inline def setCustomDefinition(value: Boolean): Self = StObject.set(x, "customDefinition", value.asInstanceOf[js.Any])
     
     inline def setCustomDefinitionUndefined: Self = StObject.set(x, "customDefinition", js.undefined)
@@ -45,7 +52,7 @@ object DimensionMetadata {
     
     inline def setDeprecatedApiNamesUndefined: Self = StObject.set(x, "deprecatedApiNames", js.undefined)
     
-    inline def setDeprecatedApiNamesVarargs(value: String*): Self = StObject.set(x, "deprecatedApiNames", js.Array(value :_*))
+    inline def setDeprecatedApiNamesVarargs(value: String*): Self = StObject.set(x, "deprecatedApiNames", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -24,10 +24,10 @@ trait Webhook extends StObject {
   /**
     * A timestamp that indicates the last time a repository's secret token was modified. 
     */
-  var lastModifiedSecret: js.UndefOr[Timestamp] = js.undefined
+  var lastModifiedSecret: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The AWS CodeBuild endpoint where webhook events are sent.
+    * The CodeBuild endpoint where webhook events are sent.
     */
   var payloadUrl: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -62,9 +62,9 @@ object Webhook {
     
     inline def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
     
-    inline def setFilterGroupsVarargs(value: FilterGroup*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
+    inline def setFilterGroupsVarargs(value: FilterGroup*): Self = StObject.set(x, "filterGroups", js.Array(value*))
     
-    inline def setLastModifiedSecret(value: Timestamp): Self = StObject.set(x, "lastModifiedSecret", value.asInstanceOf[js.Any])
+    inline def setLastModifiedSecret(value: js.Date): Self = StObject.set(x, "lastModifiedSecret", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedSecretUndefined: Self = StObject.set(x, "lastModifiedSecret", js.undefined)
     

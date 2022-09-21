@@ -27,7 +27,7 @@ trait JQueryRatyOptions extends StObject {
   
   var hints: js.UndefOr[js.Array[String]] = js.undefined
   
-  var iconRange: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var iconRange: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
   
   var mouseout: js.UndefOr[js.Function2[/* score */ Double, /* event */ JQueryEventObject, Unit]] = js.undefined
   
@@ -124,13 +124,13 @@ object JQueryRatyOptions {
     
     inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
-    inline def setHintsVarargs(value: String*): Self = StObject.set(x, "hints", js.Array(value :_*))
+    inline def setHintsVarargs(value: String*): Self = StObject.set(x, "hints", js.Array(value*))
     
-    inline def setIconRange(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "iconRange", value.asInstanceOf[js.Any])
+    inline def setIconRange(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "iconRange", value.asInstanceOf[js.Any])
     
     inline def setIconRangeUndefined: Self = StObject.set(x, "iconRange", js.undefined)
     
-    inline def setIconRangeVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "iconRange", js.Array(value :_*))
+    inline def setIconRangeVarargs(value: js.Array[Any]*): Self = StObject.set(x, "iconRange", js.Array(value*))
     
     inline def setMouseout(value: (/* score */ Double, /* event */ JQueryEventObject) => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction2(value))
     

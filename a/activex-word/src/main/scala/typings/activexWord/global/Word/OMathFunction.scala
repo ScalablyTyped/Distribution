@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathFunction")
 @js.native
-/* private */ class OMathFunction ()
+/* private */ open class OMathFunction ()
   extends StObject
      with typings.activexWord.Word.OMathFunction {
   
@@ -63,7 +63,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val OMath: typings.activexWord.Word.OMath = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Phantom: typings.activexWord.Word.OMathPhantom = js.native

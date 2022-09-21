@@ -65,7 +65,7 @@ object Content {
     
     inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
-    inline def setThumbnailsVarargs(value: DescriptionImage*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
+    inline def setThumbnailsVarargs(value: DescriptionImage*): Self = StObject.set(x, "thumbnails", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

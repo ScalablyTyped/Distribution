@@ -24,6 +24,6 @@ object AddJobFlowStepsOutput {
     
     inline def setStepIdsUndefined: Self = StObject.set(x, "StepIds", js.undefined)
     
-    inline def setStepIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "StepIds", js.Array(value :_*))
+    inline def setStepIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "StepIds", js.Array(value*))
   }
 }

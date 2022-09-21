@@ -34,7 +34,7 @@ object SearchNetworkProfilesResponse {
     
     inline def setNetworkProfilesUndefined: Self = StObject.set(x, "NetworkProfiles", js.undefined)
     
-    inline def setNetworkProfilesVarargs(value: NetworkProfileData*): Self = StObject.set(x, "NetworkProfiles", js.Array(value :_*))
+    inline def setNetworkProfilesVarargs(value: NetworkProfileData*): Self = StObject.set(x, "NetworkProfiles", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

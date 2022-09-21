@@ -25,12 +25,12 @@ object AccessSelector {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.DetectedPlanes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,15 +10,39 @@ trait XRFrame extends StObject {
     js.Function2[/* pose */ XRRigidTransform, /* space */ XRSpace, js.Promise[XRAnchor]]
   ] = js.undefined
   
+  var detectedPlanes: js.UndefOr[XRPlaneSet] = js.undefined
+  
   var featurePointCloud: js.UndefOr[js.Array[Double]] = js.undefined
+  
+  var fillJointRadii: js.UndefOr[
+    js.Function2[
+      /* jointSpaces */ js.Array[XRJointSpace], 
+      /* radii */ js.typedarray.Float32Array, 
+      Boolean
+    ]
+  ] = js.undefined
+  
+  var fillPoses: js.UndefOr[
+    js.Function3[
+      /* spaces */ js.Array[XRSpace], 
+      /* baseSpace */ XRSpace, 
+      /* transforms */ js.typedarray.Float32Array, 
+      Boolean
+    ]
+  ] = js.undefined
   
   // AR
   def getHitTestResults(hitTestSource: XRHitTestSource): js.Array[XRHitTestResult]
   
   def getHitTestResultsForTransientInput(hitTestSource: XRTransientInputHitTestSource): js.Array[XRTransientInputHitTestResult]
   
+  // Image tracking
+  var getImageTrackingResults: js.UndefOr[js.Function0[js.Array[XRImageTrackingResult]]] = js.undefined
+  
   // Hand tracking
   var getJointPose: js.UndefOr[js.Function2[/* joint */ XRJointSpace, /* baseSpace */ XRSpace, XRJointPose]] = js.undefined
+  
+  def getLightEstimate(xrLightProbe: XRLightProbe): XRLightEstimate
   
   def getPose(space: XRSpace, baseSpace: XRSpace): js.UndefOr[XRPose]
   
@@ -30,19 +53,20 @@ trait XRFrame extends StObject {
   // Anchors
   var trackedAnchors: js.UndefOr[XRAnchorSet] = js.undefined
   
-  // Planes
-  var worldInformation: js.UndefOr[DetectedPlanes] = js.undefined
+  // World geometries. DEPRECATED
+  var worldInformation: js.UndefOr[XRWorldInformation] = js.undefined
 }
 object XRFrame {
   
   inline def apply(
     getHitTestResults: XRHitTestSource => js.Array[XRHitTestResult],
     getHitTestResultsForTransientInput: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult],
+    getLightEstimate: XRLightProbe => XRLightEstimate,
     getPose: (XRSpace, XRSpace) => js.UndefOr[XRPose],
     getViewerPose: XRReferenceSpace => js.UndefOr[XRViewerPose],
     session: XRSession
   ): XRFrame = {
-    val __obj = js.Dynamic.literal(getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getPose = js.Any.fromFunction2(getPose), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[XRFrame]
   }
   
@@ -52,19 +76,41 @@ object XRFrame {
     
     inline def setCreateAnchorUndefined: Self = StObject.set(x, "createAnchor", js.undefined)
     
+    inline def setDetectedPlanes(value: XRPlaneSet): Self = StObject.set(x, "detectedPlanes", value.asInstanceOf[js.Any])
+    
+    inline def setDetectedPlanesUndefined: Self = StObject.set(x, "detectedPlanes", js.undefined)
+    
     inline def setFeaturePointCloud(value: js.Array[Double]): Self = StObject.set(x, "featurePointCloud", value.asInstanceOf[js.Any])
     
     inline def setFeaturePointCloudUndefined: Self = StObject.set(x, "featurePointCloud", js.undefined)
     
-    inline def setFeaturePointCloudVarargs(value: Double*): Self = StObject.set(x, "featurePointCloud", js.Array(value :_*))
+    inline def setFeaturePointCloudVarargs(value: Double*): Self = StObject.set(x, "featurePointCloud", js.Array(value*))
+    
+    inline def setFillJointRadii(
+      value: (/* jointSpaces */ js.Array[XRJointSpace], /* radii */ js.typedarray.Float32Array) => Boolean
+    ): Self = StObject.set(x, "fillJointRadii", js.Any.fromFunction2(value))
+    
+    inline def setFillJointRadiiUndefined: Self = StObject.set(x, "fillJointRadii", js.undefined)
+    
+    inline def setFillPoses(
+      value: (/* spaces */ js.Array[XRSpace], /* baseSpace */ XRSpace, /* transforms */ js.typedarray.Float32Array) => Boolean
+    ): Self = StObject.set(x, "fillPoses", js.Any.fromFunction3(value))
+    
+    inline def setFillPosesUndefined: Self = StObject.set(x, "fillPoses", js.undefined)
     
     inline def setGetHitTestResults(value: XRHitTestSource => js.Array[XRHitTestResult]): Self = StObject.set(x, "getHitTestResults", js.Any.fromFunction1(value))
     
     inline def setGetHitTestResultsForTransientInput(value: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult]): Self = StObject.set(x, "getHitTestResultsForTransientInput", js.Any.fromFunction1(value))
     
+    inline def setGetImageTrackingResults(value: () => js.Array[XRImageTrackingResult]): Self = StObject.set(x, "getImageTrackingResults", js.Any.fromFunction0(value))
+    
+    inline def setGetImageTrackingResultsUndefined: Self = StObject.set(x, "getImageTrackingResults", js.undefined)
+    
     inline def setGetJointPose(value: (/* joint */ XRJointSpace, /* baseSpace */ XRSpace) => XRJointPose): Self = StObject.set(x, "getJointPose", js.Any.fromFunction2(value))
     
     inline def setGetJointPoseUndefined: Self = StObject.set(x, "getJointPose", js.undefined)
+    
+    inline def setGetLightEstimate(value: XRLightProbe => XRLightEstimate): Self = StObject.set(x, "getLightEstimate", js.Any.fromFunction1(value))
     
     inline def setGetPose(value: (XRSpace, XRSpace) => js.UndefOr[XRPose]): Self = StObject.set(x, "getPose", js.Any.fromFunction2(value))
     
@@ -76,7 +122,7 @@ object XRFrame {
     
     inline def setTrackedAnchorsUndefined: Self = StObject.set(x, "trackedAnchors", js.undefined)
     
-    inline def setWorldInformation(value: DetectedPlanes): Self = StObject.set(x, "worldInformation", value.asInstanceOf[js.Any])
+    inline def setWorldInformation(value: XRWorldInformation): Self = StObject.set(x, "worldInformation", value.asInstanceOf[js.Any])
     
     inline def setWorldInformationUndefined: Self = StObject.set(x, "worldInformation", js.undefined)
   }

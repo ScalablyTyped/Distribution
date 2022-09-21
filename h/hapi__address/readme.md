@@ -10,10 +10,10 @@ Email address and domain validation
 | ------------------ | :-------------: |
 | Full name          | @hapi/address |
 | Keywords           | email, domain, address, validation |
-| # releases         | 14 |
-| # dependents       | 5 |
-| # downloads        | 94610932 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7747356666666668E7 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/address#readme)

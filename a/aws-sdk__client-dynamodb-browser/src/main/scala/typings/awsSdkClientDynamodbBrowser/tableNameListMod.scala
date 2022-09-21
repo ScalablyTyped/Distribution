@@ -8,5 +8,5 @@ object tableNameListMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_TableNameList", "_TableNameList")
   @js.native
-  val TableNameList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val TableNameList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

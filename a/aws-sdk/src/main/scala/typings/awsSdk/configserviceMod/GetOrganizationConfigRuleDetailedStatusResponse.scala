@@ -33,6 +33,6 @@ object GetOrganizationConfigRuleDetailedStatusResponse {
     
     inline def setOrganizationConfigRuleDetailedStatusUndefined: Self = StObject.set(x, "OrganizationConfigRuleDetailedStatus", js.undefined)
     
-    inline def setOrganizationConfigRuleDetailedStatusVarargs(value: MemberAccountStatus*): Self = StObject.set(x, "OrganizationConfigRuleDetailedStatus", js.Array(value :_*))
+    inline def setOrganizationConfigRuleDetailedStatusVarargs(value: MemberAccountStatus*): Self = StObject.set(x, "OrganizationConfigRuleDetailedStatus", js.Array(value*))
   }
 }

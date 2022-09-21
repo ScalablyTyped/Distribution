@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CachingConfig extends StObject {
   
   /**
-    * The caching keys for a resolver that has caching enabled. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.
+    * The caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.
     */
   var cachingKeys: js.UndefOr[CachingKeys] = js.undefined
   
   /**
-    * The TTL in seconds for a resolver that has caching enabled. Valid values are between 1 and 3600 seconds.
+    * The TTL in seconds for a resolver that has caching activated. Valid values are 1–3,600 seconds.
     */
-  var ttl: js.UndefOr[Long] = js.undefined
+  var ttl: Long
 }
 object CachingConfig {
   
-  inline def apply(): CachingConfig = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(ttl: Long): CachingConfig = {
+    val __obj = js.Dynamic.literal(ttl = ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachingConfig]
   }
   
@@ -29,10 +29,8 @@ object CachingConfig {
     
     inline def setCachingKeysUndefined: Self = StObject.set(x, "cachingKeys", js.undefined)
     
-    inline def setCachingKeysVarargs(value: String*): Self = StObject.set(x, "cachingKeys", js.Array(value :_*))
+    inline def setCachingKeysVarargs(value: String*): Self = StObject.set(x, "cachingKeys", js.Array(value*))
     
     inline def setTtl(value: Long): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
-    
-    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

@@ -38,7 +38,7 @@ object NotebookGuid {
     
     inline def setRecipientContactsUndefined: Self = StObject.set(x, "recipientContacts", js.undefined)
     
-    inline def setRecipientContactsVarargs(value: Contact*): Self = StObject.set(x, "recipientContacts", js.Array(value :_*))
+    inline def setRecipientContactsVarargs(value: Contact*): Self = StObject.set(x, "recipientContacts", js.Array(value*))
     
     inline def setRecipientThreadId(value: MessageThreadID): Self = StObject.set(x, "recipientThreadId", value.asInstanceOf[js.Any])
     

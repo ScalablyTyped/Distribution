@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object filtersMod {
   
-  @JSImport("css-select/lib/pseudo-selectors/filters", "filters")
+  @JSImport("css-select/lib/esm/pseudo-selectors/filters", "filters")
   @js.native
   val filters: Record[String, Filter] = js.native
   
   type Filter = js.Function4[
-    /* next */ CompiledQuery[js.Any], 
+    /* next */ CompiledQuery[Any], 
     /* text */ String, 
-    /* options */ InternalOptions[js.Any, js.Any], 
-    /* context */ js.UndefOr[js.Array[js.Any]], 
-    CompiledQuery[js.Any]
+    /* options */ InternalOptions[Any, Any], 
+    /* context */ js.UndefOr[js.Array[Any]], 
+    CompiledQuery[Any]
   ]
 }

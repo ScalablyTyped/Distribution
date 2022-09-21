@@ -10,7 +10,7 @@ trait CustomerUpdateRequest extends StObject {
   
   var creditCard: js.UndefOr[CreditCardUpdateRequest] = js.undefined
   
-  var customFields: js.UndefOr[js.Any] = js.undefined
+  var customFields: js.UndefOr[Any] = js.undefined
   
   var defaultPaymentMethodToken: js.UndefOr[String] = js.undefined
   
@@ -49,7 +49,7 @@ object CustomerUpdateRequest {
     
     inline def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
     
-    inline def setCustomFields(value: js.Any): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: Any): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     

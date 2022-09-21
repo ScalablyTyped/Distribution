@@ -1,38 +1,41 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientCompute.anon.Accesstoken
 import typings.maximMazurokGapiClientCompute.anon.Alt
-import typings.maximMazurokGapiClientCompute.anon.AltFieldsInstance
-import typings.maximMazurokGapiClientCompute.anon.AltFieldsInstanceKey
-import typings.maximMazurokGapiClientCompute.anon.AltFieldsInstanceKeyOauthtoken
+import typings.maximMazurokGapiClientCompute.anon.AltCallbackFieldsInstance
 import typings.maximMazurokGapiClientCompute.anon.AutoDelete
+import typings.maximMazurokGapiClientCompute.anon.CallbackFieldsInstance
+import typings.maximMazurokGapiClientCompute.anon.CallbackFieldsInstanceKey
+import typings.maximMazurokGapiClientCompute.anon.CallbackFieldsKeyOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.DeletionProtection
 import typings.maximMazurokGapiClientCompute.anon.DeviceName
-import typings.maximMazurokGapiClientCompute.anon.Fields
 import typings.maximMazurokGapiClientCompute.anon.FieldsForceAttach
 import typings.maximMazurokGapiClientCompute.anon.FieldsInstance
 import typings.maximMazurokGapiClientCompute.anon.FieldsInstanceKey
 import typings.maximMazurokGapiClientCompute.anon.FieldsInstanceKeyOauthtoken
-import typings.maximMazurokGapiClientCompute.anon.FieldsInstanceKeyOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.FilterInstance
 import typings.maximMazurokGapiClientCompute.anon.ForceAttach
 import typings.maximMazurokGapiClientCompute.anon.InstanceKey
 import typings.maximMazurokGapiClientCompute.anon.InstanceKeyOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.InstanceKeyOauthtokenPrettyPrint
-import typings.maximMazurokGapiClientCompute.anon.InstanceKeyOauthtokenPrettyPrintProject
 import typings.maximMazurokGapiClientCompute.anon.KeyNetworkInterface
-import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrintProjectQuotaUser
+import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrintProject
 import typings.maximMazurokGapiClientCompute.anon.MinimalAction
 import typings.maximMazurokGapiClientCompute.anon.MostDisruptiveAllowedAction
-import typings.maximMazurokGapiClientCompute.anon.OauthtokenPrettyPrintProjectQuotaUserRequestId
+import typings.maximMazurokGapiClientCompute.anon.NetworkInterfaceOauthtoken
+import typings.maximMazurokGapiClientCompute.anon.OauthtokenPrettyPrintProjectQuotaUser
 import typings.maximMazurokGapiClientCompute.anon.OptionsRequestedPolicyVersion
 import typings.maximMazurokGapiClientCompute.anon.Port
-import typings.maximMazurokGapiClientCompute.anon.PrettyPrintProjectQuotaUserRequestIdResource
+import typings.maximMazurokGapiClientCompute.anon.PrettyPrintProjectQuotaUserRequestId
+import typings.maximMazurokGapiClientCompute.anon.ProjectQuotaUserRequestIdResource
 import typings.maximMazurokGapiClientCompute.anon.QueryPath
-import typings.maximMazurokGapiClientCompute.anon.QuotaUserRequestIdResourceUserIp
+import typings.maximMazurokGapiClientCompute.anon.QuotaUser
+import typings.maximMazurokGapiClientCompute.anon.QuotaUserRequestIdResourceUploadType
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserResource
-import typings.maximMazurokGapiClientCompute.anon.RequestIdResourceUserIpZone
+import typings.maximMazurokGapiClientCompute.anon.RequestIdResourceUploadTypeUploadprotocol
 import typings.maximMazurokGapiClientCompute.anon.RequestIdSourceInstanceTemplate
+import typings.maximMazurokGapiClientCompute.anon.ResourceUploadTypeUploadprotocolUserIp
 import typings.maximMazurokGapiClientCompute.anon.SourceInstanceTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,7 +54,7 @@ trait InstancesResource extends StObject {
   
   /** Retrieves aggregated list of all of the instances in your project across all regions and zones. */
   def aggregatedList(): Request[InstanceAggregatedList] = js.native
-  def aggregatedList(request: Alt): Request[InstanceAggregatedList] = js.native
+  def aggregatedList(request: Accesstoken): Request[InstanceAggregatedList] = js.native
   
   def attachDisk(request: FieldsForceAttach, body: AttachedDisk): Request[Operation] = js.native
   /**
@@ -60,7 +63,11 @@ trait InstancesResource extends StObject {
     */
   def attachDisk(request: ForceAttach): Request[Operation] = js.native
   
-  /** Deletes the specified Instance resource. For more information, see Stopping or Deleting an Instance. */
+  /** Creates multiple instances. Count specifies the number of instances to create. */
+  def bulkInsert(request: CallbackFieldsKeyOauthtoken): Request[Operation] = js.native
+  def bulkInsert(request: QuotaUser, body: BulkInsertInstanceResource): Request[Operation] = js.native
+  
+  /** Deletes the specified Instance resource. For more information, see Deleting an instance. */
   def delete(): Request[Operation] = js.native
   def delete(request: InstanceKey): Request[Operation] = js.native
   
@@ -74,7 +81,11 @@ trait InstancesResource extends StObject {
   
   /** Returns the specified Instance resource. Gets a list of available instances by making a list() request. */
   def get(): Request[Instance] = js.native
-  def get(request: AltFieldsInstance): Request[Instance] = js.native
+  def get(request: CallbackFieldsInstance): Request[Instance] = js.native
+  
+  /** Returns effective firewalls applied to an interface of the instance. */
+  def getEffectiveFirewalls(): Request[InstancesGetEffectiveFirewallsResponse] = js.native
+  def getEffectiveFirewalls(request: KeyNetworkInterface): Request[InstancesGetEffectiveFirewallsResponse] = js.native
   
   /** Returns the specified guest attributes entry. */
   def getGuestAttributes(): Request[GuestAttributes] = js.native
@@ -86,7 +97,7 @@ trait InstancesResource extends StObject {
   
   /** Returns the screenshot from the specified instance. */
   def getScreenshot(): Request[Screenshot] = js.native
-  def getScreenshot(request: AltFieldsInstance): Request[Screenshot] = js.native
+  def getScreenshot(request: CallbackFieldsInstance): Request[Screenshot] = js.native
   
   /** Returns the last 1 MB of serial port output from the specified instance. */
   def getSerialPortOutput(): Request[SerialPortOutput] = js.native
@@ -94,7 +105,7 @@ trait InstancesResource extends StObject {
   
   /** Returns the Shielded Instance Identity of an instance */
   def getShieldedInstanceIdentity(): Request[ShieldedInstanceIdentity] = js.native
-  def getShieldedInstanceIdentity(request: AltFieldsInstance): Request[ShieldedInstanceIdentity] = js.native
+  def getShieldedInstanceIdentity(request: CallbackFieldsInstance): Request[ShieldedInstanceIdentity] = js.native
   
   def insert(request: RequestIdSourceInstanceTemplate, body: Instance): Request[Operation] = js.native
   /** Creates an instance resource in the specified project using the data included in the request. */
@@ -102,7 +113,7 @@ trait InstancesResource extends StObject {
   
   /** Retrieves the list of instances contained within the specified zone. */
   def list(): Request[InstanceList] = js.native
-  def list(request: Fields): Request[InstanceList] = js.native
+  def list(request: Alt): Request[InstanceList] = js.native
   
   /**
     * Retrieves a list of resources that refer to the VM instance specified in the request. For example, if the VM instance is part of a managed or unmanaged instance group, the referrers
@@ -135,46 +146,46 @@ trait InstancesResource extends StObject {
   def setLabels(request: InstanceKey, body: InstancesSetLabelsRequest): Request[Operation] = js.native
   
   /** Changes the number and/or type of accelerator for a stopped instance to the values specified in the request. */
-  def setMachineResources(request: AltFieldsInstanceKey): Request[Operation] = js.native
+  def setMachineResources(request: AltCallbackFieldsInstance): Request[Operation] = js.native
   def setMachineResources(request: InstanceKey, body: InstancesSetMachineResourcesRequest): Request[Operation] = js.native
   
   /** Changes the machine type for a stopped instance to the machine type specified in the request. */
-  def setMachineType(request: FieldsInstanceKeyOauthtoken): Request[Operation] = js.native
+  def setMachineType(request: CallbackFieldsInstanceKey): Request[Operation] = js.native
   def setMachineType(request: InstanceKey, body: InstancesSetMachineTypeRequest): Request[Operation] = js.native
   
   /** Sets metadata for the specified instance to the data included in the request. */
-  def setMetadata(request: InstanceKeyOauthtokenPrettyPrint): Request[Operation] = js.native
+  def setMetadata(request: FieldsInstanceKeyOauthtoken): Request[Operation] = js.native
   def setMetadata(request: InstanceKey, body: Metadata): Request[Operation] = js.native
   
-  def setMinCpuPlatform(request: InstanceKey, body: InstancesSetMinCpuPlatformRequest): Request[Operation] = js.native
   /** Changes the minimum CPU platform that this instance should use. This method can only be called on a stopped instance. For more information, read Specifying a Minimum CPU Platform. */
-  def setMinCpuPlatform(request: QuotaUserRequestIdResourceUserIp): Request[Operation] = js.native
+  def setMinCpuPlatform(request: InstanceKeyOauthtokenPrettyPrint): Request[Operation] = js.native
+  def setMinCpuPlatform(request: InstanceKey, body: InstancesSetMinCpuPlatformRequest): Request[Operation] = js.native
   
   def setScheduling(request: InstanceKey, body: Scheduling): Request[Operation] = js.native
   /**
     * Sets an instance's scheduling options. You can only call this method on a stopped instance, that is, a VM instance that is in a `TERMINATED` state. See Instance Life Cycle for more
     * information on the possible instance states.
     */
-  def setScheduling(request: RequestIdResourceUserIpZone): Request[Operation] = js.native
+  def setScheduling(request: KeyOauthtokenPrettyPrintProject): Request[Operation] = js.native
   
-  /** Sets the service account on the instance. For more information, read Changing the service account and access scopes for an instance. */
-  def setServiceAccount(request: AltFieldsInstanceKeyOauthtoken): Request[Operation] = js.native
   def setServiceAccount(request: InstanceKey, body: InstancesSetServiceAccountRequest): Request[Operation] = js.native
+  /** Sets the service account on the instance. For more information, read Changing the service account and access scopes for an instance. */
+  def setServiceAccount(request: OauthtokenPrettyPrintProjectQuotaUser): Request[Operation] = js.native
   
+  def setShieldedInstanceIntegrityPolicy(request: InstanceKey, body: ShieldedInstanceIntegrityPolicy): Request[Operation] = js.native
   /**
     * Sets the Shielded Instance integrity policy for an instance. You can only use this method on a running instance. This method supports PATCH semantics and uses the JSON merge patch
     * format and processing rules.
     */
-  def setShieldedInstanceIntegrityPolicy(request: FieldsInstanceKeyOauthtokenPrettyPrint): Request[Operation] = js.native
-  def setShieldedInstanceIntegrityPolicy(request: InstanceKey, body: ShieldedInstanceIntegrityPolicy): Request[Operation] = js.native
+  def setShieldedInstanceIntegrityPolicy(request: PrettyPrintProjectQuotaUserRequestId): Request[Operation] = js.native
   
-  /** Sets network tags for the specified instance to the data included in the request. */
-  def setTags(request: InstanceKeyOauthtokenPrettyPrintProject): Request[Operation] = js.native
   def setTags(request: InstanceKey, body: Tags): Request[Operation] = js.native
+  /** Sets network tags for the specified instance to the data included in the request. */
+  def setTags(request: ProjectQuotaUserRequestIdResource): Request[Operation] = js.native
   
   /** Simulates a maintenance event on the instance. */
   def simulateMaintenanceEvent(): Request[Operation] = js.native
-  def simulateMaintenanceEvent(request: AltFieldsInstance): Request[Operation] = js.native
+  def simulateMaintenanceEvent(request: CallbackFieldsInstance): Request[Operation] = js.native
   
   /** Starts an instance that was stopped using the instances().stop method. For more information, see Restart an instance. */
   def start(): Request[Operation] = js.native
@@ -182,7 +193,7 @@ trait InstancesResource extends StObject {
   
   def startWithEncryptionKey(request: InstanceKey, body: InstancesStartWithEncryptionKeyRequest): Request[Operation] = js.native
   /** Starts an instance that was stopped using the instances().stop method. For more information, see Restart an instance. */
-  def startWithEncryptionKey(request: KeyOauthtokenPrettyPrintProjectQuotaUser): Request[Operation] = js.native
+  def startWithEncryptionKey(request: QuotaUserRequestIdResourceUploadType): Request[Operation] = js.native
   
   /**
     * Stops a running instance, shutting it down cleanly, and allows you to restart the instance at a later time. Stopped instances do not incur VM usage charges while they are stopped.
@@ -196,7 +207,7 @@ trait InstancesResource extends StObject {
   def testIamPermissions(request: QuotaUserResource, body: TestPermissionsRequest): Request[TestPermissionsResponse] = js.native
   
   /**
-    * Updates an instance only if the necessary resources are available. This method can update only a specific set of instance properties. See  Updating a running instance for a list of
+    * Updates an instance only if the necessary resources are available. This method can update only a specific set of instance properties. See Updating a running instance for a list of
     * updatable instance properties.
     */
   def update(request: MinimalAction): Request[Operation] = js.native
@@ -214,10 +225,13 @@ trait InstancesResource extends StObject {
     * Updates the Display config for a VM instance. You can only use this method on a stopped VM instance. This method supports PATCH semantics and uses the JSON merge patch format and
     * processing rules.
     */
-  def updateDisplayDevice(request: OauthtokenPrettyPrintProjectQuotaUserRequestId): Request[Operation] = js.native
+  def updateDisplayDevice(request: RequestIdResourceUploadTypeUploadprotocol): Request[Operation] = js.native
   
-  /** Updates an instance's network interface. This method follows PATCH semantics. */
-  def updateNetworkInterface(request: KeyNetworkInterface): Request[Operation] = js.native
+  /**
+    * Updates an instance's network interface. This method can only update an interface's alias IP range and attached network. See Modifying alias IP ranges for an existing instance for
+    * instructions on changing alias IP ranges. See Migrating a VM between networks for instructions on migrating an interface. This method follows PATCH semantics.
+    */
+  def updateNetworkInterface(request: NetworkInterfaceOauthtoken): Request[Operation] = js.native
   def updateNetworkInterface(request: typings.maximMazurokGapiClientCompute.anon.NetworkInterface, body: NetworkInterface): Request[Operation] = js.native
   
   def updateShieldedInstanceConfig(request: InstanceKey, body: ShieldedInstanceConfig): Request[Operation] = js.native
@@ -225,5 +239,5 @@ trait InstancesResource extends StObject {
     * Updates the Shielded Instance config for an instance. You can only use this method on a stopped instance. This method supports PATCH semantics and uses the JSON merge patch format
     * and processing rules.
     */
-  def updateShieldedInstanceConfig(request: PrettyPrintProjectQuotaUserRequestIdResource): Request[Operation] = js.native
+  def updateShieldedInstanceConfig(request: ResourceUploadTypeUploadprotocolUserIp): Request[Operation] = js.native
 }

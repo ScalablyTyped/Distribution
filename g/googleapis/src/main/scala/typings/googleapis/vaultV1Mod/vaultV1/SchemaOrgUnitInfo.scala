@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Org Unit to search
-  */
 trait SchemaOrgUnitInfo extends StObject {
   
   /**
-    * Org unit to search, as provided by the &lt;a
-    * href=&quot;https://developers.google.com/admin-sdk/directory/&quot;&gt;Admin
-    * SDK Directory API&lt;/a&gt;.
+    * The name of the organizational unit to search, as provided by the [Admin SDK Directory API](https://developers.google.com/admin-sdk/directory/).
     */
-  var orgUnitId: js.UndefOr[String] = js.undefined
+  var orgUnitId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrgUnitInfo {
   
@@ -26,6 +21,8 @@ object SchemaOrgUnitInfo {
   extension [Self <: SchemaOrgUnitInfo](x: Self) {
     
     inline def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
+    
+    inline def setOrgUnitIdNull: Self = StObject.set(x, "orgUnitId", null)
     
     inline def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
   }

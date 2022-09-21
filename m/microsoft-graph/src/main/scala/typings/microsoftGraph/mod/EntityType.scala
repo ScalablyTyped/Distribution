@@ -1,6 +1,6 @@
 package typings.microsoftGraph.mod
 
-import typings.microsoftGraph.microsoftGraphStrings.unknownfuturevalue_
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.list
   - typings.microsoftGraph.microsoftGraphStrings.listItem
   - typings.microsoftGraph.microsoftGraphStrings.drive
-  - typings.microsoftGraph.microsoftGraphStrings.unknownfuturevalue_
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait EntityType extends StObject
 object EntityType {
@@ -35,5 +35,5 @@ object EntityType {
   
   inline def site: typings.microsoftGraph.microsoftGraphStrings.site = "site".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.site]
   
-  inline def unknownfuturevalue: unknownfuturevalue_ = "unknownfuturevalue".asInstanceOf[unknownfuturevalue_]
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

@@ -60,6 +60,6 @@ object PlatformBranchSummary {
     
     inline def setSupportedTierListUndefined: Self = StObject.set(x, "SupportedTierList", js.undefined)
     
-    inline def setSupportedTierListVarargs(value: SupportedTier*): Self = StObject.set(x, "SupportedTierList", js.Array(value :_*))
+    inline def setSupportedTierListVarargs(value: SupportedTier*): Self = StObject.set(x, "SupportedTierList", js.Array(value*))
   }
 }

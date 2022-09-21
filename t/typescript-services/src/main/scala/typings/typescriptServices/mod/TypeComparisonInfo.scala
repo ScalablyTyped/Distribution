@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "TypeComparisonInfo")
 @js.native
-class TypeComparisonInfo ()
+open class TypeComparisonInfo ()
   extends StObject
      with typings.typescriptServices.TypeScript.TypeComparisonInfo {
   def this(sourceComparisonInfo: typings.typescriptServices.TypeScript.TypeComparisonInfo) = this()
@@ -23,10 +23,10 @@ class TypeComparisonInfo ()
   var flags: typings.typescriptServices.TypeScript.TypeRelationshipFlags = js.native
   
   /* private */ /* CompleteClass */
-  var indent: js.Any = js.native
+  var indent: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def indentString(): js.Any = js.native
+  override def indentString(): Any = js.native
   
   /* CompleteClass */
   var message: String = js.native

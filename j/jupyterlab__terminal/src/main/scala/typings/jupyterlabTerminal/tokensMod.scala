@@ -4,6 +4,7 @@ import typings.jupyterlabApputils.mod.MainAreaWidget
 import typings.jupyterlabApputils.widgettrackerMod.IWidgetTracker
 import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection
 import typings.jupyterlabTerminal.jupyterlabTerminalStrings.autoFit
+import typings.jupyterlabTerminal.jupyterlabTerminalStrings.closeOnExit
 import typings.jupyterlabTerminal.jupyterlabTerminalStrings.cursorBlink
 import typings.jupyterlabTerminal.jupyterlabTerminalStrings.fontFamily
 import typings.jupyterlabTerminal.jupyterlabTerminalStrings.fontSize
@@ -42,6 +43,11 @@ object tokensMod {
         * Whether to auto-fit the terminal to its host element size.
         */
       var autoFit: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Whether to close the widget when exiting a terminal or not.
+        */
+      var closeOnExit: Boolean
       
       /**
         * Whether to blink the cursor.  Can only be set at startup.
@@ -104,6 +110,7 @@ object tokensMod {
     object IOptions {
       
       inline def apply(
+        closeOnExit: Boolean,
         cursorBlink: Boolean,
         fontSize: Double,
         initialCommand: String,
@@ -112,7 +119,7 @@ object tokensMod {
         shutdownOnClose: Boolean,
         theme: Theme
       ): IOptions = {
-        val __obj = js.Dynamic.literal(cursorBlink = cursorBlink.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], initialCommand = initialCommand.asInstanceOf[js.Any], pasteWithCtrlV = pasteWithCtrlV.asInstanceOf[js.Any], screenReaderMode = screenReaderMode.asInstanceOf[js.Any], shutdownOnClose = shutdownOnClose.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(closeOnExit = closeOnExit.asInstanceOf[js.Any], cursorBlink = cursorBlink.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], initialCommand = initialCommand.asInstanceOf[js.Any], pasteWithCtrlV = pasteWithCtrlV.asInstanceOf[js.Any], screenReaderMode = screenReaderMode.asInstanceOf[js.Any], shutdownOnClose = shutdownOnClose.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
@@ -121,6 +128,8 @@ object tokensMod {
         inline def setAutoFit(value: Boolean): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
         
         inline def setAutoFitUndefined: Self = StObject.set(x, "autoFit", js.undefined)
+        
+        inline def setCloseOnExit(value: Boolean): Self = StObject.set(x, "closeOnExit", value.asInstanceOf[js.Any])
         
         inline def setCursorBlink(value: Boolean): Self = StObject.set(x, "cursorBlink", value.asInstanceOf[js.Any])
         
@@ -159,6 +168,8 @@ object tokensMod {
       
       @JSName("getOption")
       def getOption_autoFit(option: autoFit): js.UndefOr[Boolean] = js.native
+      @JSName("getOption")
+      def getOption_closeOnExit(option: closeOnExit): Boolean = js.native
       @JSName("getOption")
       def getOption_cursorBlink(option: cursorBlink): Boolean = js.native
       /**
@@ -199,6 +210,8 @@ object tokensMod {
       def setOption_autoFit(option: autoFit): Unit = js.native
       @JSName("setOption")
       def setOption_autoFit(option: autoFit, value: Boolean): Unit = js.native
+      @JSName("setOption")
+      def setOption_closeOnExit(option: closeOnExit, value: Boolean): Unit = js.native
       @JSName("setOption")
       def setOption_cursorBlink(option: cursorBlink, value: Boolean): Unit = js.native
       /**

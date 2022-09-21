@@ -2,7 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.error
 import typings.arcgisJsApi.arcgisJsApiStrings.info
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.warn
 import typings.std.Object
 import typings.std.PropertyKey
@@ -26,7 +26,7 @@ trait configLog
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#log)
     */
-  var level: none | error | warn | info
+  var level: none_ | error | warn | info
 }
 object configLog {
   
@@ -34,7 +34,7 @@ object configLog {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     interceptors: js.Array[LogInterceptor],
-    level: none | error | warn | info,
+    level: none_ | error | warn | info,
     propertyIsEnumerable: PropertyKey => Boolean
   ): configLog = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), interceptors = interceptors.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
@@ -45,8 +45,8 @@ object configLog {
     
     inline def setInterceptors(value: js.Array[LogInterceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
     
-    inline def setInterceptorsVarargs(value: LogInterceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+    inline def setInterceptorsVarargs(value: LogInterceptor*): Self = StObject.set(x, "interceptors", js.Array(value*))
     
-    inline def setLevel(value: none | error | warn | info): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: none_ | error | warn | info): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

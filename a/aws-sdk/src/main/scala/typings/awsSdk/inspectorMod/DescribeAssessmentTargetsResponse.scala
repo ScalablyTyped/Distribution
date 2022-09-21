@@ -27,7 +27,7 @@ object DescribeAssessmentTargetsResponse {
     
     inline def setAssessmentTargets(value: AssessmentTargetList): Self = StObject.set(x, "assessmentTargets", value.asInstanceOf[js.Any])
     
-    inline def setAssessmentTargetsVarargs(value: AssessmentTarget*): Self = StObject.set(x, "assessmentTargets", js.Array(value :_*))
+    inline def setAssessmentTargetsVarargs(value: AssessmentTarget*): Self = StObject.set(x, "assessmentTargets", js.Array(value*))
     
     inline def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
   }

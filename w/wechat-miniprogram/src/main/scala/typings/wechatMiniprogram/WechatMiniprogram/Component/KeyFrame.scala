@@ -134,11 +134,11 @@ object KeyFrame {
     
     inline def setMatrix3dUndefined: Self = StObject.set(x, "matrix3d", js.undefined)
     
-    inline def setMatrix3dVarargs(value: Double*): Self = StObject.set(x, "matrix3d", js.Array(value :_*))
+    inline def setMatrix3dVarargs(value: Double*): Self = StObject.set(x, "matrix3d", js.Array(value*))
     
     inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
-    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value :_*))
+    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value*))
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
@@ -158,7 +158,7 @@ object KeyFrame {
     
     inline def setRotate3dUndefined: Self = StObject.set(x, "rotate3d", js.undefined)
     
-    inline def setRotate3dVarargs(value: Double*): Self = StObject.set(x, "rotate3d", js.Array(value :_*))
+    inline def setRotate3dVarargs(value: Double*): Self = StObject.set(x, "rotate3d", js.Array(value*))
     
     inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
@@ -180,11 +180,11 @@ object KeyFrame {
     
     inline def setScale3dUndefined: Self = StObject.set(x, "scale3d", js.undefined)
     
-    inline def setScale3dVarargs(value: Double*): Self = StObject.set(x, "scale3d", js.Array(value :_*))
+    inline def setScale3dVarargs(value: Double*): Self = StObject.set(x, "scale3d", js.Array(value*))
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setScaleVarargs(value: Double*): Self = StObject.set(x, "scale", js.Array(value :_*))
+    inline def setScaleVarargs(value: Double*): Self = StObject.set(x, "scale", js.Array(value*))
     
     inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
@@ -202,7 +202,7 @@ object KeyFrame {
     
     inline def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
     
-    inline def setSkewVarargs(value: Double*): Self = StObject.set(x, "skew", js.Array(value :_*))
+    inline def setSkewVarargs(value: Double*): Self = StObject.set(x, "skew", js.Array(value*))
     
     inline def setSkewX(value: Double): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
     
@@ -226,11 +226,11 @@ object KeyFrame {
     
     inline def setTranslate3dUndefined: Self = StObject.set(x, "translate3d", js.undefined)
     
-    inline def setTranslate3dVarargs(value: (Double | String)*): Self = StObject.set(x, "translate3d", js.Array(value :_*))
+    inline def setTranslate3dVarargs(value: (Double | String)*): Self = StObject.set(x, "translate3d", js.Array(value*))
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
-    inline def setTranslateVarargs(value: (Double | String)*): Self = StObject.set(x, "translate", js.Array(value :_*))
+    inline def setTranslateVarargs(value: (Double | String)*): Self = StObject.set(x, "translate", js.Array(value*))
     
     inline def setTranslateX(value: Double | String): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     

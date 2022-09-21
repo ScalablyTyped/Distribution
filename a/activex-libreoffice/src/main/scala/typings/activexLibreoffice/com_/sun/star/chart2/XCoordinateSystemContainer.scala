@@ -37,7 +37,7 @@ object XCoordinateSystemContainer {
     acquire: () => Unit,
     addCoordinateSystem: XCoordinateSystem => Unit,
     getCoordinateSystems: () => SafeArray[XCoordinateSystem],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeCoordinateSystem: XCoordinateSystem => Unit,
     setCoordinateSystems: SeqEquiv[XCoordinateSystem] => Unit

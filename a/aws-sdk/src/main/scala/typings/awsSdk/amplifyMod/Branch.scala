@@ -22,7 +22,7 @@ trait Branch extends StObject {
   var backendEnvironmentArn: js.UndefOr[BackendEnvironmentArn] = js.undefined
   
   /**
-    *  The basic authorization credentials for a branch of an Amplify app. 
+    *  The basic authorization credentials for a branch of an Amplify app. You must base64-encode the authorization credentials and provide them in the format user:password.
     */
   var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
   
@@ -44,7 +44,7 @@ trait Branch extends StObject {
   /**
     *  The creation date and time for a branch that is part of an Amplify app. 
     */
-  var createTime: CreateTime
+  var createTime: js.Date
   
   /**
     *  The custom domains for a branch of an Amplify app. 
@@ -139,7 +139,7 @@ trait Branch extends StObject {
   /**
     *  The last updated date and time for a branch that is part of an Amplify app. 
     */
-  var updateTime: UpdateTime
+  var updateTime: js.Date
 }
 object Branch {
   
@@ -147,7 +147,7 @@ object Branch {
     activeJobId: ActiveJobId,
     branchArn: BranchArn,
     branchName: BranchName,
-    createTime: CreateTime,
+    createTime: js.Date,
     customDomains: CustomDomains,
     description: Description,
     displayName: DisplayName,
@@ -160,7 +160,7 @@ object Branch {
     stage: Stage,
     totalNumberOfJobs: TotalNumberOfJobs,
     ttl: TTL,
-    updateTime: UpdateTime
+    updateTime: js.Date
   ): Branch = {
     val __obj = js.Dynamic.literal(activeJobId = activeJobId.asInstanceOf[js.Any], branchArn = branchArn.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], customDomains = customDomains.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], enableAutoBuild = enableAutoBuild.asInstanceOf[js.Any], enableBasicAuth = enableBasicAuth.asInstanceOf[js.Any], enableNotification = enableNotification.asInstanceOf[js.Any], enablePullRequestPreview = enablePullRequestPreview.asInstanceOf[js.Any], environmentVariables = environmentVariables.asInstanceOf[js.Any], framework = framework.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], totalNumberOfJobs = totalNumberOfJobs.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any], updateTime = updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Branch]
@@ -174,7 +174,7 @@ object Branch {
     
     inline def setAssociatedResourcesUndefined: Self = StObject.set(x, "associatedResources", js.undefined)
     
-    inline def setAssociatedResourcesVarargs(value: AssociatedResource*): Self = StObject.set(x, "associatedResources", js.Array(value :_*))
+    inline def setAssociatedResourcesVarargs(value: AssociatedResource*): Self = StObject.set(x, "associatedResources", js.Array(value*))
     
     inline def setBackendEnvironmentArn(value: BackendEnvironmentArn): Self = StObject.set(x, "backendEnvironmentArn", value.asInstanceOf[js.Any])
     
@@ -192,11 +192,11 @@ object Branch {
     
     inline def setBuildSpecUndefined: Self = StObject.set(x, "buildSpec", js.undefined)
     
-    inline def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCustomDomains(value: CustomDomains): Self = StObject.set(x, "customDomains", value.asInstanceOf[js.Any])
     
-    inline def setCustomDomainsVarargs(value: CustomDomain*): Self = StObject.set(x, "customDomains", js.Array(value :_*))
+    inline def setCustomDomainsVarargs(value: CustomDomain*): Self = StObject.set(x, "customDomains", js.Array(value*))
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -244,6 +244,6 @@ object Branch {
     
     inline def setTtl(value: TTL): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    inline def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: js.Date): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
   }
 }

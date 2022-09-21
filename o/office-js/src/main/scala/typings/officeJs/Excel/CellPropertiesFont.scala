@@ -9,89 +9,89 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the `format.font` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties`, or the `format.font` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
   *
-  * Represents the `format.font` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties` or the `format.font` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait CellPropertiesFont extends StObject {
   
   /**
-    *
     * Represents the `format.font.bold` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the `format.font.color` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents the `format.font.italic` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the `format.font.name` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents the `format.font.size` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var size: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Represents the `format.font.strikethrough` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the `format.font.subscript` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var subscript: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the `format.font.superscript` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var superscript: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the `format.font.tintAndShade` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Represents the `format.font.underline` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var underline: js.UndefOr[

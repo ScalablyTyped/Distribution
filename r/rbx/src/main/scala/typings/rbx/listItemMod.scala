@@ -53,7 +53,7 @@ object listItemMod {
   
   @JSImport("rbx/components/list/list-item", "ListItem")
   @js.native
-  val ListItem: ForwardRefAsExoticComponent[ListItemProps, ElementType[js.Any]] = js.native
+  val ListItem: ForwardRefAsExoticComponent[ListItemProps, ElementType[Any]] = js.native
   
   trait ListItemModifierProps extends StObject {
     

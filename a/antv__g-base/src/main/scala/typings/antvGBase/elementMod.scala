@@ -24,7 +24,7 @@ object elementMod {
   @JSImport("@antv/g-base/lib/abstract/element", JSImport.Default)
   @js.native
   abstract class default protected () extends Element {
-    def this(cfg: js.Any) = this()
+    def this(cfg: Any) = this()
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -38,7 +38,7 @@ object elementMod {
       * 属性更改后需要做的事情
       * @protected
       */
-    def afterAttrsChange(targetAttrs: js.Any): Unit = js.native
+    def afterAttrsChange(targetAttrs: Any): Unit = js.native
     
     /**
       * 执行动画，支持多种函数签名
@@ -54,7 +54,7 @@ object elementMod {
       *   callback 动画执行后的回调
       *   delay    动画延迟时间
       */
-    def animate(args: js.Any*): Unit = js.native
+    def animate(args: Any*): Unit = js.native
     /**
       * 执行动画
       * @param {OnFrame}  onFrame  自定义帧动画函数
@@ -63,20 +63,20 @@ object elementMod {
       * @param {function} callback 动画执行后的回调
       * @param {number}   delay    动画延迟时间
       */
-    def animate(onFrame: OnFrame, duration: Double): js.Any = js.native
-    def animate(onFrame: OnFrame, duration: Double, easing: String): js.Any = js.native
-    def animate(onFrame: OnFrame, duration: Double, easing: String, callback: js.Function): js.Any = js.native
-    def animate(onFrame: OnFrame, duration: Double, easing: String, callback: js.Function, delay: Double): js.Any = js.native
-    def animate(onFrame: OnFrame, duration: Double, easing: String, callback: Unit, delay: Double): js.Any = js.native
-    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: js.Function): js.Any = js.native
-    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: js.Function, delay: Double): js.Any = js.native
-    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: Unit, delay: Double): js.Any = js.native
+    def animate(onFrame: OnFrame, duration: Double): Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: String): Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: String, callback: js.Function): Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: String, callback: js.Function, delay: Double): Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: String, callback: Unit, delay: Double): Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: js.Function): Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: js.Function, delay: Double): Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: Unit, delay: Double): Any = js.native
     /**
       * 执行动画
       * @param {ElementAttrs} toAttrs 动画最终状态
       * @param {AnimateCfg}   cfg     动画配置
       */
-    def animate(toAttrs: js.Any, cfg: AnimateCfg): js.Any = js.native
+    def animate(toAttrs: Any, cfg: AnimateCfg): Any = js.native
     /**
       * 执行动画
       * @param {ElementAttrs} toAttrs 动画最终状态
@@ -85,14 +85,14 @@ object elementMod {
       * @param {function}     callback 动画执行后的回调
       * @param {number}       delay 动画延迟时间
       */
-    def animate(toAttrs: ElementAttrs, duration: Double): js.Any = js.native
-    def animate(toAttrs: ElementAttrs, duration: Double, easing: String): js.Any = js.native
-    def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: js.Function): js.Any = js.native
-    def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: js.Function, delay: Double): js.Any = js.native
-    def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: Unit, delay: Double): js.Any = js.native
-    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: js.Function): js.Any = js.native
-    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: js.Function, delay: Double): js.Any = js.native
-    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: Unit, delay: Double): js.Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double): Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: String): Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: js.Function): Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: js.Function, delay: Double): Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: Unit, delay: Double): Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: js.Function): Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: js.Function, delay: Double): Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: Unit, delay: Double): Any = js.native
     
     def applyMatrix(matrix: js.Array[Double]): Unit = js.native
     
@@ -100,32 +100,32 @@ object elementMod {
       * 将向量应用设置的矩阵
       * @param {number[]} v 向量
       */
-    def applyToMatrix(v: js.Array[Double]): js.Any = js.native
+    def applyToMatrix(v: js.Array[Double]): Any = js.native
     @JSName("applyToMatrix")
     def applyToMatrix_Array(v: js.Array[Double]): js.Array[Double] = js.native
     
     /**
       * 获取全量的图形属性
       */
-    def attr(): js.Any = js.native
-    def attr(args: js.Any*): js.Any = js.native
+    def attr(): Any = js.native
+    def attr(args: Any*): Any = js.native
     /**
       * 设置图形属性
       * @param {object} attrs 图形属性配置项，键值对方式
       */
-    def attr(attrs: js.Object): js.Any = js.native
+    def attr(attrs: js.Object): Any = js.native
     /**
       * 获取图形属性
       * @param {string} name 图形属性名
       * @returns 图形属性值
       */
-    def attr(name: String): js.Any = js.native
+    def attr(name: String): Any = js.native
     /**
       * 设置图形属性
       * @param {string} name  图形属性名
       * @param {any}    value 图形属性值
       */
-    def attr(name: String, value: js.Any): js.Any = js.native
+    def attr(name: String, value: Any): Any = js.native
     
     /**
       * @protected
@@ -135,9 +135,9 @@ object elementMod {
     var attrs: ShapeAttrs = js.native
     
     @JSName("clone")
-    def clone_Any(): js.Any = js.native
+    def clone_Any(): Any = js.native
     
-    /* private */ var emitDelegateEvent: js.Any = js.native
+    /* private */ var emitDelegateEvent: Any = js.native
     
     /**
       * 触发委托事件
@@ -155,7 +155,7 @@ object elementMod {
       * 获取包围盒，这个包围盒是相对于图形元素自己，不会计算 matrix
       * @returns {BBox} 包围盒
       */
-    def getBBox(): js.Any = js.native
+    def getBBox(): Any = js.native
     @JSName("getBBox")
     def getBBox_BBox(): BBox = js.native
     
@@ -188,7 +188,7 @@ object elementMod {
       * 获取默认的矩阵
       * @returns {number[]|null} 默认的矩阵
       */
-    def getDefaultMatrix(): js.Any = js.native
+    def getDefaultMatrix(): Any = js.native
     
     /**
       * 获取 Group 的基类，用于添加默认的 Group
@@ -216,12 +216,12 @@ object elementMod {
       */
     def getShapeBase(): ShapeBase = js.native
     
-    def getTotalMatrix(): js.Any = js.native
+    def getTotalMatrix(): Any = js.native
     
     /**
       * 隐藏
       */
-    def hide(): js.Any = js.native
+    def hide(): Any = js.native
     @JSName("hide")
     def hide_This(): this.type = js.native
     
@@ -242,7 +242,7 @@ object elementMod {
       * 根据设置的矩阵，将向量转换相对于图形/分组的位置
       * @param {number[]} v 向量
       */
-    def invertFromMatrix(v: js.Array[Double]): js.Any = js.native
+    def invertFromMatrix(v: js.Array[Double]): Any = js.native
     @JSName("invertFromMatrix")
     def invertFromMatrix_Array(v: js.Array[Double]): js.Array[Double] = js.native
     
@@ -250,9 +250,9 @@ object elementMod {
       * 是否处于动画暂停状态
       * @return {boolean} 是否处于动画暂停状态
       */
-    def isAnimatePaused(): js.Any = js.native
+    def isAnimatePaused(): Any = js.native
     
-    def isClipped(refX: js.Any, refY: js.Any): Boolean = js.native
+    def isClipped(refX: Any, refY: Any): Boolean = js.native
     /**
       * 指定的点是否被裁剪掉
       * @param  {number}  refX 相对于图形的坐标 x
@@ -307,14 +307,14 @@ object elementMod {
       * @param {any} value 属性值
       * @param {any} originValue 属性值
       */
-    def onAttrChange(name: String, value: js.Any, originValue: js.Any): Unit = js.native
+    def onAttrChange(name: String, value: Any, originValue: Any): Unit = js.native
     
     /**
       * 当引擎画布变化时，可以调用这个方法，告知 canvas 图形属性发生了改变
       * 这个方法一般不要直接调用，在实现 element 的继承类时可以复写
       * @param {ChangeType} changeType 改变的类型
       */
-    def onCanvasChange(changeType: ChangeType): js.Any = js.native
+    def onCanvasChange(changeType: ChangeType): Any = js.native
     /**
       * @protected
       * 一些方法调用会引起画布变化
@@ -326,7 +326,7 @@ object elementMod {
     /**
       * 暂停图形的动画
       */
-    def pauseAnimate(): js.Any = js.native
+    def pauseAnimate(): Any = js.native
     /**
       * 暂停动画
       */
@@ -337,8 +337,8 @@ object elementMod {
       * 从父元素中移除
       * @param {boolean} destroy 是否同时销毁
       */
-    def remove(): js.Any = js.native
-    def remove(destroy: Boolean): js.Any = js.native
+    def remove(): Any = js.native
+    def remove(destroy: Boolean): Any = js.native
     @JSName("remove")
     def remove_Unit(): Unit = js.native
     @JSName("remove")
@@ -347,14 +347,14 @@ object elementMod {
     /**
       * 清除掉所有平移、旋转和缩放
       */
-    def resetMatrix(): js.Any = js.native
+    def resetMatrix(): Any = js.native
     @JSName("resetMatrix")
     def resetMatrix_Unit(): Unit = js.native
     
     /**
       * 恢复暂停的动画
       */
-    def resumeAnimate(): js.Any = js.native
+    def resumeAnimate(): Any = js.native
     /**
       * 恢复动画
       */
@@ -419,33 +419,33 @@ object elementMod {
       * @param {string} name 属性名
       * @param {any} value 属性值
       */
-    def setAttr(name: String, value: js.Any): Unit = js.native
+    def setAttr(name: String, value: Any): Unit = js.native
     
     /**
       * 设置 clip ，会在内部转换成对应的图形
       * @param {ClipCfg} clipCfg 配置项
       */
-    def setClip(clipCfg: ClipCfg): js.Any = js.native
+    def setClip(clipCfg: ClipCfg): Any = js.native
     
     /**
       * 设置 transform 的矩阵
       * @param {number[]} m 应用到图形元素的矩阵
       */
-    def setMatrix(m: js.Array[Double]): js.Any = js.native
+    def setMatrix(m: js.Array[Double]): Any = js.native
     @JSName("setMatrix")
     def setMatrix_Unit(m: js.Array[Double]): Unit = js.native
     
     /**
       * 设置 zIndex
       */
-    def setZIndex(zIndex: Double): js.Any = js.native
+    def setZIndex(zIndex: Double): Any = js.native
     @JSName("setZIndex")
     def setZIndex_This(zIndex: Double): this.type = js.native
     
     /**
       * 显示
       */
-    def show(): js.Any = js.native
+    def show(): Any = js.native
     @JSName("show")
     def show_This(): this.type = js.native
     
@@ -453,8 +453,8 @@ object elementMod {
       * 停止图形的动画
       * @param {boolean} toEnd 是否到动画的最终状态
       */
-    def stopAnimate(): js.Any = js.native
-    def stopAnimate(toEnd: Boolean): js.Any = js.native
+    def stopAnimate(): Any = js.native
+    def stopAnimate(toEnd: Boolean): Any = js.native
     /**
       * 停止动画
       * @param {boolean} toEnd 是否到动画的最终状态
@@ -467,14 +467,14 @@ object elementMod {
     /**
       * 最后面
       */
-    def toBack(): js.Any = js.native
+    def toBack(): Any = js.native
     @JSName("toBack")
     def toBack_Unit(): Unit = js.native
     
     /**
       * 最前面
       */
-    def toFront(): js.Any = js.native
+    def toFront(): Any = js.native
     @JSName("toFront")
     def toFront_Unit(): Unit = js.native
     

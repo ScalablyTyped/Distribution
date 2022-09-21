@@ -8,5 +8,5 @@ object getBucketRequestPaymentInputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/GetBucketRequestPaymentInput", "GetBucketRequestPaymentInput")
   @js.native
-  val GetBucketRequestPaymentInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetBucketRequestPaymentInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

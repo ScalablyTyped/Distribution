@@ -3,267 +3,142 @@ package typings.firebaseDatabase
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.eventMod.Event
 import typings.firebaseDatabase.eventRegistrationMod.EventRegistration
+import typings.firebaseDatabase.eventRegistrationMod.QueryContext
+import typings.firebaseDatabase.immutableTreeMod.ImmutableTree
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
-import typings.firebaseDatabase.queryMod.Query
-import typings.std.Error
+import typings.firebaseDatabase.referenceMod.ReferenceConstructor
+import typings.firebaseDatabase.syncPointMod.SyncPoint
+import typings.firebaseDatabase.writeTreeMod.WriteTree
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncTreeMod {
   
-  @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree")
+  @JSImport("@firebase/database/dist/node-esm/src/core/SyncTree", JSImport.Namespace)
   @js.native
-  class SyncTree protected () extends StObject {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/database/dist/node-esm/src/core/SyncTree", "SyncTree")
+  @js.native
+  open class SyncTree protected () extends StObject {
     /**
-      * @param {!ListenProvider} listenProvider_ Used by SyncTree to start / stop listening
+      * @param listenProvider_ - Used by SyncTree to start / stop listening
       *   to server data.
       */
     def this(listenProvider_ : ListenProvider) = this()
     
-    /**
-      * Acknowledge a pending user write that was previously registered with applyUserOverwrite() or applyUserMerge().
-      *
-      * @param revert True if the given write failed and needs to be reverted
-      * @return Events to raise.
-      */
-    def ackUserWrite(writeId: Double): js.Array[Event] = js.native
-    def ackUserWrite(writeId: Double, revert: Boolean): js.Array[Event] = js.native
-    
-    /**
-      * Add an event callback for the specified query.
-      *
-      * @return Events to raise.
-      */
-    def addEventRegistration(query: Query, eventRegistration: EventRegistration): js.Array[Event] = js.native
-    
-    /**
-      * Apply a listen complete for a query
-      *
-      * @return Events to raise.
-      */
-    def applyListenComplete(path: Path): js.Array[Event] = js.native
-    
-    /**
-      * Recursive helper for applyOperationToSyncPoints_
-      */
-    /* private */ var applyOperationDescendantsHelper_ : js.Any = js.native
-    
-    /**
-      * Recursive helper for applyOperationToSyncPoints_
-      */
-    /* private */ var applyOperationHelper_ : js.Any = js.native
-    
-    /**
-      * A helper method that visits all descendant and ancestor SyncPoints, applying the operation.
-      *
-      * NOTES:
-      * - Descendant SyncPoints will be visited first (since we raise events depth-first).
-      *
-      * - We call applyOperation() on each SyncPoint passing three things:
-      *   1. A version of the Operation that has been made relative to the SyncPoint location.
-      *   2. A WriteTreeRef of any writes we have cached at the SyncPoint location.
-      *   3. A snapshot Node with cached server data, if we have it.
-      *
-      * - We concatenate all of the events returned by each SyncPoint and return the result.
-      */
-    /* private */ var applyOperationToSyncPoints_ : js.Any = js.native
-    
-    /**
-      * Apply new server data to be merged in at the specified path.
-      *
-      * @return Events to raise.
-      */
-    def applyServerMerge(path: Path, changedChildren: StringDictionary[Node]): js.Array[Event] = js.native
-    
-    /**
-      * Apply new server data for the specified path..
-      *
-      * @return Events to raise.
-      */
-    def applyServerOverwrite(path: Path, newData: Node): js.Array[Event] = js.native
-    
-    /**
-      * Apply a listen complete for a tagged query
-      *
-      * @return Events to raise.
-      */
-    def applyTaggedListenComplete(path: Path, tag: Double): js.Array[Event] = js.native
-    
-    /**
-      * A helper method to apply tagged operations
-      */
-    /* private */ var applyTaggedOperation_ : js.Any = js.native
-    
-    /**
-      * Apply server data to be merged in for the specified tagged query.
-      *
-      * @return Events to raise.
-      */
-    def applyTaggedQueryMerge(path: Path, changedChildren: StringDictionary[Node], tag: Double): js.Array[Event] = js.native
-    
-    /**
-      * Apply new server data for the specified tagged query.
-      *
-      * @return Events to raise.
-      */
-    def applyTaggedQueryOverwrite(path: Path, snap: Node, tag: Double): js.Array[Event] = js.native
-    
-    /**
-      * Apply the data from a user-generated update() call
-      *
-      * @return Events to raise.
-      */
-    def applyUserMerge(path: Path, changedChildren: StringDictionary[Node], writeId: Double): js.Array[Event] = js.native
-    
-    /**
-      * Apply the data changes for a user-generated set() or transaction() call.
-      *
-      * @return Events to raise.
-      */
-    def applyUserOverwrite(path: Path, newData: Node, writeId: Double): js.Array[Event] = js.native
-    def applyUserOverwrite(path: Path, newData: Node, writeId: Double, visible: Boolean): js.Array[Event] = js.native
-    
-    /**
-      * Returns a complete cache, if we have one, of the data at a particular path. If the location does not have a
-      * listener above it, we will get a false "null". This shouldn't be a problem because transactions will always
-      * have a listener above, and atomic operations would correctly show a jitter of <increment value> ->
-      *     <incremented total> as the write is applied locally and then acknowledged at the server.
-      *
-      * Note: this method will *include* hidden writes from transaction with applyLocally set to false.
-      *
-      * @param path The path to the data we want
-      * @param writeIdsToExclude A specific set to be excluded
-      */
-    def calcCompleteEventCache(path: Path): Node = js.native
-    def calcCompleteEventCache(path: Path, writeIdsToExclude: js.Array[Double]): Node = js.native
-    
-    /**
-      * This collapses multiple unfiltered views into a single view, since we only need a single
-      * listener for them.
-      */
-    /* private */ var collectDistinctViewsForSubTree_ : js.Any = js.native
-    
-    /* private */ var createListenerForView_ : js.Any = js.native
-    
-    /* private */ var listenProvider_ : js.Any = js.native
+    var listenProvider_ : ListenProvider = js.native
     
     /**
       * A tree of all pending user writes (user-initiated set()'s, transaction()'s, update()'s, etc.).
       */
-    /* private */ var pendingWriteTree_ : js.Any = js.native
+    var pendingWriteTree_ : WriteTree = js.native
     
-    /**
-      * Return the query associated with the given tag, if we have one
-      */
-    /* private */ var queryKeyForTag_ : js.Any = js.native
-    
-    /* private */ val queryToTagMap: js.Any = js.native
-    
-    /**
-      * Remove event callback(s).
-      *
-      * If query is the default query, we'll check all queries for the specified eventRegistration.
-      * If eventRegistration is null, we'll remove all callbacks for the specified query/queries.
-      *
-      * @param eventRegistration If null, all callbacks are removed.
-      * @param cancelError If a cancelError is provided, appropriate cancel events will be returned.
-      * @return Cancel events, if cancelError was provided.
-      */
-    def removeEventRegistration(query: Query): js.Array[Event] = js.native
-    def removeEventRegistration(query: Query, eventRegistration: Null, cancelError: Error): js.Array[Event] = js.native
-    def removeEventRegistration(query: Query, eventRegistration: EventRegistration): js.Array[Event] = js.native
-    def removeEventRegistration(query: Query, eventRegistration: EventRegistration, cancelError: Error): js.Array[Event] = js.native
-    
-    /* private */ var removeTags_ : js.Any = js.native
-    
-    /**
-      * For a given new listen, manage the de-duplication of outstanding subscriptions.
-      *
-      * @return This method can return events to support synchronous data sources
-      */
-    /* private */ var setupListener_ : js.Any = js.native
+    val queryToTagMap: Map[String, Double] = js.native
     
     /**
       * Tree of SyncPoints.  There's a SyncPoint at any location that has 1 or more views.
       */
-    /* private */ var syncPointTree_ : js.Any = js.native
+    var syncPointTree_ : ImmutableTree[SyncPoint] = js.native
     
-    /**
-      * Return the tag associated with the given query.
-      */
-    /* private */ var tagForQuery_ : js.Any = js.native
-    
-    /* private */ val tagToQueryMap: js.Any = js.native
+    val tagToQueryMap: Map[Double, String] = js.native
   }
-  /* static members */
-  object SyncTree {
-    
-    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Static accessor for query tags.
-      */
-    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.getNextQueryTag_")
-    @js.native
-    def getNextQueryTag_ : js.Any = js.native
-    inline def getNextQueryTag__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getNextQueryTag_")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Given a query, computes a "queryKey" suitable for use in our queryToTagMap_.
-      */
-    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.makeQueryKey_")
-    @js.native
-    def makeQueryKey_ : js.Any = js.native
-    inline def makeQueryKey__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeQueryKey_")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Static tracker for next query tag.
-      */
-    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.nextQueryTag_")
-    @js.native
-    def nextQueryTag_ : js.Any = js.native
-    inline def nextQueryTag__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextQueryTag_")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Given a queryKey (created by makeQueryKey), parse it back into a path and queryId.
-      */
-    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.parseQueryKey_")
-    @js.native
-    def parseQueryKey_ : js.Any = js.native
-    inline def parseQueryKey__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseQueryKey_")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Normalizes a query to a query we send the server for listening
-      *
-      * @return The normalized query
-      */
-    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.queryForListening_")
-    @js.native
-    def queryForListening_ : js.Any = js.native
-    inline def queryForListening__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryForListening_")(x.asInstanceOf[js.Any])
-  }
+  
+  inline def syncTreeAckUserWrite(syncTree: SyncTree, writeId: Double): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeAckUserWrite")(syncTree.asInstanceOf[js.Any], writeId.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def syncTreeAckUserWrite(syncTree: SyncTree, writeId: Double, revert: Boolean): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeAckUserWrite")(syncTree.asInstanceOf[js.Any], writeId.asInstanceOf[js.Any], revert.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeAddEventRegistration(syncTree: SyncTree, query: QueryContext, eventRegistration: EventRegistration): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeAddEventRegistration")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def syncTreeAddEventRegistration(
+    syncTree: SyncTree,
+    query: QueryContext,
+    eventRegistration: EventRegistration,
+    skipSetupListener: Boolean
+  ): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeAddEventRegistration")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any], skipSetupListener.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeApplyListenComplete(syncTree: SyncTree, path: Path): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeApplyListenComplete")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeApplyServerMerge(syncTree: SyncTree, path: Path, changedChildren: StringDictionary[Node]): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeApplyServerMerge")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any], changedChildren.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeApplyServerOverwrite(syncTree: SyncTree, path: Path, newData: Node): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeApplyServerOverwrite")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any], newData.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeApplyTaggedListenComplete(syncTree: SyncTree, path: Path, tag: Double): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeApplyTaggedListenComplete")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeApplyTaggedQueryMerge(syncTree: SyncTree, path: Path, changedChildren: StringDictionary[Node], tag: Double): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeApplyTaggedQueryMerge")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any], changedChildren.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeApplyTaggedQueryOverwrite(syncTree: SyncTree, path: Path, snap: Node, tag: Double): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeApplyTaggedQueryOverwrite")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any], snap.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeApplyUserMerge(syncTree: SyncTree, path: Path, changedChildren: StringDictionary[Node], writeId: Double): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeApplyUserMerge")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any], changedChildren.asInstanceOf[js.Any], writeId.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeApplyUserOverwrite(syncTree: SyncTree, path: Path, newData: Node, writeId: Double): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeApplyUserOverwrite")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any], newData.asInstanceOf[js.Any], writeId.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def syncTreeApplyUserOverwrite(syncTree: SyncTree, path: Path, newData: Node, writeId: Double, visible: Boolean): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeApplyUserOverwrite")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any], newData.asInstanceOf[js.Any], writeId.asInstanceOf[js.Any], visible.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeCalcCompleteEventCache(syncTree: SyncTree, path: Path): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeCalcCompleteEventCache")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def syncTreeCalcCompleteEventCache(syncTree: SyncTree, path: Path, writeIdsToExclude: js.Array[Double]): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeCalcCompleteEventCache")(syncTree.asInstanceOf[js.Any], path.asInstanceOf[js.Any], writeIdsToExclude.asInstanceOf[js.Any])).asInstanceOf[Node]
+  
+  inline def syncTreeGetServerValue(syncTree: SyncTree, query: QueryContext): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeGetServerValue")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
+  
+  inline def syncTreeRemoveEventRegistration(syncTree: SyncTree, query: QueryContext): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeRemoveEventRegistration")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def syncTreeRemoveEventRegistration(syncTree: SyncTree, query: QueryContext, eventRegistration: Null, cancelError: js.Error): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeRemoveEventRegistration")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any], cancelError.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def syncTreeRemoveEventRegistration(
+    syncTree: SyncTree,
+    query: QueryContext,
+    eventRegistration: Null,
+    cancelError: js.Error,
+    skipListenerDedup: Boolean
+  ): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeRemoveEventRegistration")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any], cancelError.asInstanceOf[js.Any], skipListenerDedup.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def syncTreeRemoveEventRegistration(
+    syncTree: SyncTree,
+    query: QueryContext,
+    eventRegistration: Null,
+    cancelError: Unit,
+    skipListenerDedup: Boolean
+  ): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeRemoveEventRegistration")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any], cancelError.asInstanceOf[js.Any], skipListenerDedup.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def syncTreeRemoveEventRegistration(syncTree: SyncTree, query: QueryContext, eventRegistration: EventRegistration): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeRemoveEventRegistration")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def syncTreeRemoveEventRegistration(
+    syncTree: SyncTree,
+    query: QueryContext,
+    eventRegistration: EventRegistration,
+    cancelError: js.Error
+  ): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeRemoveEventRegistration")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any], cancelError.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def syncTreeRemoveEventRegistration(
+    syncTree: SyncTree,
+    query: QueryContext,
+    eventRegistration: EventRegistration,
+    cancelError: js.Error,
+    skipListenerDedup: Boolean
+  ): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeRemoveEventRegistration")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any], cancelError.asInstanceOf[js.Any], skipListenerDedup.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def syncTreeRemoveEventRegistration(
+    syncTree: SyncTree,
+    query: QueryContext,
+    eventRegistration: EventRegistration,
+    cancelError: Unit,
+    skipListenerDedup: Boolean
+  ): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeRemoveEventRegistration")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any], cancelError.asInstanceOf[js.Any], skipListenerDedup.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def syncTreeSetReferenceConstructor(`val`: ReferenceConstructor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeSetReferenceConstructor")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def syncTreeTagForQuery(syncTree: SyncTree, query: QueryContext): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("syncTreeTagForQuery")(syncTree.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
   @js.native
   trait ListenProvider extends StObject {
     
     def startListening(
-      query: Query,
+      query: QueryContext,
       tag: Double,
       hashFn: js.Function0[String],
-      onComplete: js.Function2[/* a */ String, /* b */ js.UndefOr[js.Any], js.Array[Event]]
+      onComplete: js.Function2[/* a */ String, /* b */ js.UndefOr[Any], js.Array[Event]]
     ): js.Array[Event] = js.native
     def startListening(
-      query: Query,
+      query: QueryContext,
       tag: Null,
       hashFn: js.Function0[String],
-      onComplete: js.Function2[/* a */ String, /* b */ js.UndefOr[js.Any], js.Array[Event]]
+      onComplete: js.Function2[/* a */ String, /* b */ js.UndefOr[Any], js.Array[Event]]
     ): js.Array[Event] = js.native
     
-    def stopListening(a: Query): Unit = js.native
-    def stopListening(a: Query, b: Double): Unit = js.native
+    def stopListening(a: QueryContext): Unit = js.native
+    def stopListening(a: QueryContext, b: Double): Unit = js.native
   }
 }

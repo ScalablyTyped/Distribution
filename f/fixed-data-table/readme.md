@@ -10,10 +10,10 @@ A React table component designed to allow presenting thousands of rows of data.
 | ------------------ | :-------------: |
 | Full name          | fixed-data-table |
 | Keywords           | react, react-component, table, data-table, fixed-table |
-| # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 2172841 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 81119.0 |
+| # stars            | 4337.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/fixed-data-table#readme)

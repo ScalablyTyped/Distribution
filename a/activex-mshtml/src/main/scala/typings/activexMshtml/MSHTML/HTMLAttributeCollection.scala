@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLAttributeCollection extends StObject {
   
-  def apply(): js.Any = js.native
-  def apply(name: js.Any): js.Any = js.native
+  def apply(): Any = js.native
+  def apply(name: Any): Any = js.native
   
-  val constructor: js.Any = js.native
+  val constructor: Any = js.native
   
   def getNamedItem(bstrName: String): IHTMLDOMAttribute = js.native
   
-  def getNamedItemNS(pvarNS: js.Any, bstrName: String): IHTMLDOMAttribute2 = js.native
+  def getNamedItemNS(pvarNS: Any, bstrName: String): IHTMLDOMAttribute2 = js.native
   
   def ie8_getNamedItem(bstrName: String): IHTMLDOMAttribute = js.native
   
@@ -36,14 +36,14 @@ trait HTMLAttributeCollection extends StObject {
   
   def ie9_setNamedItem(pNodeIn: IHTMLDOMAttribute2): IHTMLDOMAttribute2 = js.native
   
-  def item(): js.Any = js.native
-  def item(name: js.Any): js.Any = js.native
+  def item(): Any = js.native
+  def item(name: Any): Any = js.native
   
   val length: Double = js.native
   
   def removeNamedItem(bstrName: String): IHTMLDOMAttribute = js.native
   
-  def removeNamedItemNS(pvarNS: js.Any, bstrName: String): IHTMLDOMAttribute2 = js.native
+  def removeNamedItemNS(pvarNS: Any, bstrName: String): IHTMLDOMAttribute2 = js.native
   
   def setNamedItem(ppNode: IHTMLDOMAttribute): IHTMLDOMAttribute = js.native
   

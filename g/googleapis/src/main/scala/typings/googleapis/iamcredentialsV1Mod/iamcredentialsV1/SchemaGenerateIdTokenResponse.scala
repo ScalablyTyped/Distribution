@@ -9,7 +9,7 @@ trait SchemaGenerateIdTokenResponse extends StObject {
   /**
     * The OpenId Connect ID token.
     */
-  var token: js.UndefOr[String] = js.undefined
+  var token: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGenerateIdTokenResponse {
   
@@ -21,6 +21,8 @@ object SchemaGenerateIdTokenResponse {
   extension [Self <: SchemaGenerateIdTokenResponse](x: Self) {
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenNull: Self = StObject.set(x, "token", null)
     
     inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }

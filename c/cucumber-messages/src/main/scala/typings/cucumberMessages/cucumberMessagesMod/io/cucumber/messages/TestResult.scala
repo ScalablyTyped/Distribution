@@ -5,7 +5,6 @@ import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestRes
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new TestResult.
   * @param [properties] Properties to set
   */
-class TestResult ()
+open class TestResult ()
   extends StObject
      with ITestResult {
   def this(properties: ITestResult) = this()
@@ -34,7 +33,7 @@ class TestResult ()
     * Converts this TestResult to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** TestResult willBeRetried. */
   @JSName("willBeRetried")
@@ -119,6 +118,8 @@ object TestResult {
   inline def create(): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TestResult]
   inline def create(properties: ITestResult): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TestResult]
   
+  inline def decode(reader: js.typedarray.Uint8Array): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TestResult]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): TestResult = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TestResult]
   /**
     * Decodes a TestResult message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -130,9 +131,8 @@ object TestResult {
   /* static member */
   inline def decode(reader: Reader): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TestResult]
   inline def decode(reader: Reader, length: Double): TestResult = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TestResult]
-  inline def decode(reader: Uint8Array): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TestResult]
-  inline def decode(reader: Uint8Array, length: Double): TestResult = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TestResult]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TestResult]
   /**
     * Decodes a TestResult message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -142,7 +142,6 @@ object TestResult {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TestResult]
-  inline def decodeDelimited(reader: Uint8Array): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TestResult]
   
   /**
     * Encodes the specified TestResult message. Does not implicitly {@link io.cucumber.messages.TestResult.verify|verify} messages.
@@ -170,7 +169,7 @@ object TestResult {
     * @returns TestResult
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TestResult]
+  inline def fromObject(`object`: StringDictionary[Any]): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TestResult]
   
   /**
     * Creates a plain object from a TestResult message. Also converts values to other types if specified.
@@ -179,8 +178,8 @@ object TestResult {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: TestResult): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: TestResult, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: TestResult): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: TestResult, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a TestResult message.
@@ -188,5 +187,5 @@ object TestResult {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

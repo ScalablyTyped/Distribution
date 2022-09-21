@@ -5,8 +5,9 @@ import typings.angularCommon.angularCommonStrings.arraybuffer
 import typings.angularCommon.angularCommonStrings.blob
 import typings.angularCommon.angularCommonStrings.json
 import typings.angularCommon.angularCommonStrings.text
-import typings.angularCommon.httpHttpMod.HttpHeaders
-import typings.angularCommon.httpHttpMod.HttpParams
+import typings.angularCommon.httpMod.HttpContext
+import typings.angularCommon.httpMod.HttpHeaders
+import typings.angularCommon.httpMod.HttpParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetHeaders[V] extends StObject {
   
   var body: js.UndefOr[V | Null] = js.undefined
+  
+  var context: js.UndefOr[HttpContext] = js.undefined
   
   var headers: js.UndefOr[HttpHeaders] = js.undefined
   
@@ -47,6 +50,10 @@ object SetHeaders {
     inline def setBodyNull: Self = StObject.set(x, "body", null)
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setContext(value: HttpContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     inline def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

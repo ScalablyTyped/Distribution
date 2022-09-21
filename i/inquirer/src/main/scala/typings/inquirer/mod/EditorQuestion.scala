@@ -5,15 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a question for the `EditorPrompt`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait EditorQuestion[T /* <: Answers */]
   extends StObject
-     with Question[T] {
+     with EditorQuestionOptions[T] {
   
   /**
     * @inheritdoc

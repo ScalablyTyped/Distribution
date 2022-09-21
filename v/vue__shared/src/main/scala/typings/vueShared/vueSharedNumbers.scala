@@ -58,6 +58,12 @@ object vueSharedNumbers {
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
+  sealed trait `2048`
+    extends StObject
+       with PatchFlags
+  inline def `2048`: `2048` = 2048.asInstanceOf[`2048`]
+  
+  @js.native
   sealed trait `256`
     extends StObject
        with PatchFlags

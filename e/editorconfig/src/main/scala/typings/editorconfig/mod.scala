@@ -10,7 +10,7 @@ import typings.editorconfig.editorconfigStrings.unset
 import typings.editorconfig.iniMod.ParseStringResult
 import typings.editorconfig.iniMod.SectionBody
 import typings.editorconfig.iniMod.SectionName
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,7 +73,7 @@ object mod {
       
       inline def setContents(value: ParseStringResult): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      inline def setContentsVarargs(value: (js.Tuple2[SectionName, SectionBody])*): Self = StObject.set(x, "contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: (js.Tuple2[SectionName, SectionBody])*): Self = StObject.set(x, "contents", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

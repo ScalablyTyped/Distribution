@@ -19,7 +19,7 @@ object mod extends Shortcut {
     var default_Original: DeepFreezeFn = js.native
   }
   
-  type DeepFreezeFn = js.Function1[/* obj */ js.Any, js.Any]
+  type DeepFreezeFn = js.Function1[/* obj */ Any, Any]
   
   type _To = DeepFreezeExport
   

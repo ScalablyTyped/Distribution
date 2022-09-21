@@ -10,10 +10,10 @@ The lodash method `_.differenceWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.differencewith |
 | Keywords           | lodash-modularized, differencewith |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 6788552 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 533172.6666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

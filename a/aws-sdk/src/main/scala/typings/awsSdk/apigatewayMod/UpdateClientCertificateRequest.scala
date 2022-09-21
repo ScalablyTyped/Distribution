@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateClientCertificateRequest extends StObject {
   
   /**
-    * [Required] The identifier of the ClientCertificate resource to be updated.
+    * The identifier of the ClientCertificate resource to be updated.
     */
   var clientCertificateId: String
   
   /**
-    * A list of update operations to be applied to the specified resource and in the order specified in this list.
+    * For more information about supported patch operations, see Patch Operations.
     */
   var patchOperations: js.UndefOr[ListOfPatchOperation] = js.undefined
 }
@@ -31,6 +31,6 @@ object UpdateClientCertificateRequest {
     
     inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value*))
   }
 }

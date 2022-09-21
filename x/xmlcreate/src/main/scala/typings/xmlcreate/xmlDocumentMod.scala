@@ -14,7 +14,7 @@ object xmlDocumentMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlDocument", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with XmlDocument {
     def this(options: IXmlDocumentOptions) = this()
@@ -46,9 +46,9 @@ object xmlDocumentMod {
   @js.native
   trait XmlDocument extends StObject {
     
-    /* private */ val _children: js.Any = js.native
+    /* private */ val _children: Any = js.native
     
-    /* private */ val _validation: js.Any = js.native
+    /* private */ val _validation: Any = js.native
     
     /**
       * Adds a comment to this document and returns the new comment.

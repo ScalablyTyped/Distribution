@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashDelay extends StObject {
   
   def apply(wait: Double): LodashDelay1x1 = js.native
-  def apply(wait: Double, func: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.native
-  def apply(wait: __, func: js.Function1[/* repeated */ js.Any, js.Any]): LodashDelay1x2 = js.native
+  def apply(wait: Double, func: js.Function1[/* repeated */ Any, Any]): Double = js.native
+  def apply(wait: __, func: js.Function1[/* repeated */ Any, Any]): LodashDelay1x2 = js.native
 }

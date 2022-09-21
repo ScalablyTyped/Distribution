@@ -11,7 +11,7 @@ object remoteMod {
   
   @JSImport("selenium-webdriver/remote", "DriverService")
   @js.native
-  class DriverService protected () extends StObject {
+  open class DriverService protected () extends StObject {
     /**
       * @param {string} executable Path to the executable to run.
       * @param {!ServiceOptions} options Configuration options for the service.
@@ -39,7 +39,7 @@ object remoteMod {
       * @return {!promise.Promise} A promise that will be resolved when
       *     the server has been stopped.
       */
-    def kill(): js.Promise[js.Any] = js.native
+    def kill(): js.Promise[Any] = js.native
     
     /**
       * Starts the server if it is not already running.
@@ -61,7 +61,7 @@ object remoteMod {
       */
     @JSImport("selenium-webdriver/remote", "DriverService.Builder")
     @js.native
-    class Builder protected () extends StObject {
+    open class Builder protected () extends StObject {
       /**
         * @param {string} exe Path to the executable to use. This executable must
         *     accept the `--port` flag for defining the port to start the server on.
@@ -146,7 +146,7 @@ object remoteMod {
         * @return {!DriverService.Builder} A self reference.
         * @see https://nodejs.org/dist/latest-v4.x/docs/api/child_process.html#child_process_options_stdio
         */
-      def setStdio(config: js.Any): this.type = js.native
+      def setStdio(config: Any): this.type = js.native
     }
   }
   
@@ -155,12 +155,12 @@ object remoteMod {
   /**
     * @constructor
     **/
-  class FileDetector ()
+  open class FileDetector ()
     extends typings.seleniumWebdriver.mod.FileDetector
   
   @JSImport("selenium-webdriver/remote", "SeleniumServer")
   @js.native
-  class SeleniumServer protected () extends DriverService {
+  open class SeleniumServer protected () extends DriverService {
     /**
       * @param {string} jar Path to the Selenium server jar.
       * @param {SeleniumServer.Options=} opt_options Configuration options for the
@@ -214,7 +214,7 @@ object remoteMod {
         
         inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+        inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
         
         inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
         
@@ -224,7 +224,7 @@ object remoteMod {
         
         inline def setJvmArgsUndefined: Self = StObject.set(x, "jvmArgs", js.undefined)
         
-        inline def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value :_*))
+        inline def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value*))
         
         inline def setLoopback(value: Boolean): Self = StObject.set(x, "loopback", value.asInstanceOf[js.Any])
         
@@ -238,7 +238,7 @@ object remoteMod {
         
         inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
         
-        inline def setStdioVarargs(value: (String | Double)*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+        inline def setStdioVarargs(value: (String | Double)*): Self = StObject.set(x, "stdio", js.Array(value*))
       }
     }
   }

@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A mask that indicates which of the fields on the base Shading have been
-  * changed in this suggested change. For any field set to true, there is a new
-  * suggested value.
-  */
 trait SchemaShadingSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to the Shading.
     */
-  var backgroundColorSuggested: js.UndefOr[Boolean] = js.undefined
+  var backgroundColorSuggested: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaShadingSuggestionState {
   
@@ -26,6 +21,8 @@ object SchemaShadingSuggestionState {
   extension [Self <: SchemaShadingSuggestionState](x: Self) {
     
     inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorSuggestedNull: Self = StObject.set(x, "backgroundColorSuggested", null)
     
     inline def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
   }

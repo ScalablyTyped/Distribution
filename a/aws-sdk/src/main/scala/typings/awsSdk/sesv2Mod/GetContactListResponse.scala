@@ -14,7 +14,7 @@ trait GetContactListResponse extends StObject {
   /**
     * A timestamp noting when the contact list was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of what the contact list is about.
@@ -24,7 +24,7 @@ trait GetContactListResponse extends StObject {
   /**
     * A timestamp noting the last time the contact list was updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The tags associated with a contact list.
@@ -49,7 +49,7 @@ object GetContactListResponse {
     
     inline def setContactListNameUndefined: Self = StObject.set(x, "ContactListName", js.undefined)
     
-    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -57,7 +57,7 @@ object GetContactListResponse {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     
@@ -65,12 +65,12 @@ object GetContactListResponse {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTopics(value: Topics): Self = StObject.set(x, "Topics", value.asInstanceOf[js.Any])
     
     inline def setTopicsUndefined: Self = StObject.set(x, "Topics", js.undefined)
     
-    inline def setTopicsVarargs(value: Topic*): Self = StObject.set(x, "Topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: Topic*): Self = StObject.set(x, "Topics", js.Array(value*))
   }
 }

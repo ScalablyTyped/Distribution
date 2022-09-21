@@ -30,6 +30,11 @@ trait AudioDescription extends StObject {
   var AudioTypeControl: js.UndefOr[AudioDescriptionAudioTypeControl] = js.undefined
   
   /**
+    * Settings to configure one or more solutions that insert audio watermarks in the audio encode
+    */
+  var AudioWatermarkingSettings: js.UndefOr[AudioWatermarkSettings] = js.undefined
+  
+  /**
     * Audio codec settings.
     */
   var CodecSettings: js.UndefOr[AudioCodecSettings] = js.undefined
@@ -47,7 +52,7 @@ trait AudioDescription extends StObject {
   /**
     * The name of this AudioDescription. Outputs will use this name to uniquely identify this AudioDescription.  Description names should be unique within this Live Event.
     */
-  var Name: string
+  var Name: stringMax255
   
   /**
     * Settings that control how input audio channels are remixed into the output audio channels.
@@ -61,7 +66,7 @@ trait AudioDescription extends StObject {
 }
 object AudioDescription {
   
-  inline def apply(AudioSelectorName: string, Name: string): AudioDescription = {
+  inline def apply(AudioSelectorName: string, Name: stringMax255): AudioDescription = {
     val __obj = js.Dynamic.literal(AudioSelectorName = AudioSelectorName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioDescription]
   }
@@ -82,6 +87,10 @@ object AudioDescription {
     
     inline def setAudioTypeUndefined: Self = StObject.set(x, "AudioType", js.undefined)
     
+    inline def setAudioWatermarkingSettings(value: AudioWatermarkSettings): Self = StObject.set(x, "AudioWatermarkingSettings", value.asInstanceOf[js.Any])
+    
+    inline def setAudioWatermarkingSettingsUndefined: Self = StObject.set(x, "AudioWatermarkingSettings", js.undefined)
+    
     inline def setCodecSettings(value: AudioCodecSettings): Self = StObject.set(x, "CodecSettings", value.asInstanceOf[js.Any])
     
     inline def setCodecSettingsUndefined: Self = StObject.set(x, "CodecSettings", js.undefined)
@@ -94,7 +103,7 @@ object AudioDescription {
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: stringMax255): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setRemixSettings(value: RemixSettings): Self = StObject.set(x, "RemixSettings", value.asInstanceOf[js.Any])
     

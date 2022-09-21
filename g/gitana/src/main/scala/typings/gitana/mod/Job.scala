@@ -6,34 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitana", "Job")
 @js.native
-class Job protected () extends AbstractClusterObject {
-  def this(cluster: js.Any, `object`: js.Any) = this()
+open class Job protected () extends AbstractClusterObject {
+  def this(cluster: Any, `object`: Any) = this()
   
-  def attach(attachmentId: String, contentType: js.Any, data: js.Any): js.Any = js.native
+  def attach(attachmentId: String, contentType: Any, data: Any): Any = js.native
   
   def attachment(attachmentId: String): NodeAttachment = js.native
   
-  def getAttempts(): js.Any = js.native
+  def getAttempts(): Any = js.native
   
-  def getCurrentServer(): js.Any = js.native
+  def getCurrentServer(): Any = js.native
   
-  def getCurrentServerTimeStamp(): js.Any = js.native
+  def getCurrentServerTimeStamp(): Any = js.native
   
-  def getCurrentThread(): js.Any = js.native
+  def getCurrentThread(): Any = js.native
   
-  def getLogEntries(): js.Any = js.native
+  def getLogEntries(): Any = js.native
   
-  def getPaused(): js.Any = js.native
+  def getPaused(): Any = js.native
   
-  def getPausedBy(): js.Any = js.native
+  def getPausedBy(): Any = js.native
   
-  def getPausedTimestamp(): js.Any = js.native
+  def getPausedTimestamp(): Any = js.native
   
   def getPlatformId(): String = js.native
   
-  def getPreviewUri(name: js.Any, config: js.Any): String = js.native
+  def getPreviewUri(name: Any, config: Any): String = js.native
   
-  def getPriority(): js.Any = js.native
+  def getPriority(): Any = js.native
   
   def getRunAsPrincipalDomainId(): String = js.native
   
@@ -41,7 +41,7 @@ class Job protected () extends AbstractClusterObject {
   
   def getScheduledStartTime(): String = js.native
   
-  def getStarted(): js.Any = js.native
+  def getStarted(): Any = js.native
   
   def getStartedBy(): String = js.native
   
@@ -49,7 +49,7 @@ class Job protected () extends AbstractClusterObject {
   
   def getState(): String = js.native
   
-  def getStopped(): js.Any = js.native
+  def getStopped(): Any = js.native
   
   def getStoppedTimestamp(): Timestamp = js.native
   
@@ -57,9 +57,9 @@ class Job protected () extends AbstractClusterObject {
   
   def getSubmittedTimestamp(): Timestamp = js.native
   
-  def listAttachments(local: js.Any): NodeAttachmentMap = js.native
+  def listAttachments(local: Any): NodeAttachmentMap = js.native
   
-  def unattach(attachmentId: js.Any): js.Any = js.native
+  def unattach(attachmentId: Any): Any = js.native
 }
 object Job {
   
@@ -68,17 +68,17 @@ object Job {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(_instance: Any, _static: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")((List(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   /* static member */
-  inline def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach(`object`: Any, block: Any, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def implement(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   /* static member */
-  inline def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
+  inline def toString_(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[Any]
   
   /* static member */
-  inline def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def valueOf_(`type`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

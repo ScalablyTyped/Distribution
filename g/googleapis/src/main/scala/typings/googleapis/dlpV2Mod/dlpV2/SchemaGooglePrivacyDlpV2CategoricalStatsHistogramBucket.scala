@@ -9,28 +9,27 @@ trait SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket extends StObject {
   /**
     * Total number of values in this bucket.
     */
-  var bucketSize: js.UndefOr[String] = js.undefined
+  var bucketSize: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Total number of distinct values in this bucket.
     */
-  var bucketValueCount: js.UndefOr[String] = js.undefined
+  var bucketValueCount: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Sample of value frequencies in this bucket. The total number of values
-    * returned per bucket is capped at 20.
+    * Sample of value frequencies in this bucket. The total number of values returned per bucket is capped at 20.
     */
   var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2ValueFrequency]] = js.undefined
   
   /**
     * Lower bound on the value frequency of the values in this bucket.
     */
-  var valueFrequencyLowerBound: js.UndefOr[String] = js.undefined
+  var valueFrequencyLowerBound: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Upper bound on the value frequency of the values in this bucket.
     */
-  var valueFrequencyUpperBound: js.UndefOr[String] = js.undefined
+  var valueFrequencyUpperBound: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket {
   
@@ -43,9 +42,13 @@ object SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket {
     
     inline def setBucketSize(value: String): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
+    inline def setBucketSizeNull: Self = StObject.set(x, "bucketSize", null)
+    
     inline def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
     inline def setBucketValueCount(value: String): Self = StObject.set(x, "bucketValueCount", value.asInstanceOf[js.Any])
+    
+    inline def setBucketValueCountNull: Self = StObject.set(x, "bucketValueCount", null)
     
     inline def setBucketValueCountUndefined: Self = StObject.set(x, "bucketValueCount", js.undefined)
     
@@ -53,13 +56,17 @@ object SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket {
     
     inline def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
     
-    inline def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2ValueFrequency*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
+    inline def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2ValueFrequency*): Self = StObject.set(x, "bucketValues", js.Array(value*))
     
     inline def setValueFrequencyLowerBound(value: String): Self = StObject.set(x, "valueFrequencyLowerBound", value.asInstanceOf[js.Any])
+    
+    inline def setValueFrequencyLowerBoundNull: Self = StObject.set(x, "valueFrequencyLowerBound", null)
     
     inline def setValueFrequencyLowerBoundUndefined: Self = StObject.set(x, "valueFrequencyLowerBound", js.undefined)
     
     inline def setValueFrequencyUpperBound(value: String): Self = StObject.set(x, "valueFrequencyUpperBound", value.asInstanceOf[js.Any])
+    
+    inline def setValueFrequencyUpperBoundNull: Self = StObject.set(x, "valueFrequencyUpperBound", null)
     
     inline def setValueFrequencyUpperBoundUndefined: Self = StObject.set(x, "valueFrequencyUpperBound", js.undefined)
   }

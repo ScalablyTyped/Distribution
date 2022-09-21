@@ -1,10 +1,9 @@
 package typings.createTorrent
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import typings.std.File
 import typings.std.FileList
+import typings.std.ReadableStream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,44 +11,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(input: String, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: String, cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     input: String,
     opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
+    cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
-    input: js.Array[Buffer | File | ReadableStream | String],
-    cb: js.Function2[Error | Null, /* torrent */ Buffer, js.Any]
+    input: js.Array[Buffer | File | ReadableStream[Any] | String],
+    cb: js.Function2[js.Error | Null, /* torrent */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
-    input: js.Array[Buffer | File | ReadableStream | String],
+    input: js.Array[Buffer | File | ReadableStream[Any] | String],
     opts: CreateTorrentOptions,
-    cb: js.Function2[Error | Null, /* torrent */ Buffer, js.Any]
+    cb: js.Function2[js.Error | Null, /* torrent */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(input: Buffer, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: Buffer, cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     input: Buffer,
     opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
+    cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(input: ReadableStream, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(
-    input: ReadableStream,
-    opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(input: FileList, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: FileList, cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     input: FileList,
     opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
+    cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(input: File, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: File, cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     input: File,
     opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
+    cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: ReadableStream[Any], cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
+    input: ReadableStream[Any],
+    opts: CreateTorrentOptions,
+    cb: js.Function2[/* err */ js.Error | Null, /* torrent */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("create-torrent", JSImport.Namespace)
@@ -76,6 +75,11 @@ object mod {
     // name of the torrent (default = basename of `path`, or 1st file's name)
     var name: js.UndefOr[String] = js.undefined
     
+    // called with the number of bytes hashed and estimated total size after every piece
+    var onProgress: js.UndefOr[
+        js.Function2[/* hashedLength */ Double, /* estimatedTorrentLength */ Double, Unit]
+      ] = js.undefined
+    
     // force a custom piece length (number of bytes)
     var pieceLength: js.UndefOr[Double] = js.undefined
     
@@ -98,7 +102,7 @@ object mod {
       
       inline def setAnnounceListUndefined: Self = StObject.set(x, "announceList", js.undefined)
       
-      inline def setAnnounceListVarargs(value: js.Array[String]*): Self = StObject.set(x, "announceList", js.Array(value :_*))
+      inline def setAnnounceListVarargs(value: js.Array[String]*): Self = StObject.set(x, "announceList", js.Array(value*))
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -120,6 +124,10 @@ object mod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
+      inline def setOnProgress(value: (/* hashedLength */ Double, /* estimatedTorrentLength */ Double) => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction2(value))
+      
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      
       inline def setPieceLength(value: Double): Self = StObject.set(x, "pieceLength", value.asInstanceOf[js.Any])
       
       inline def setPieceLengthUndefined: Self = StObject.set(x, "pieceLength", js.undefined)
@@ -132,7 +140,7 @@ object mod {
       
       inline def setUrlListUndefined: Self = StObject.set(x, "urlList", js.undefined)
       
-      inline def setUrlListVarargs(value: String*): Self = StObject.set(x, "urlList", js.Array(value :_*))
+      inline def setUrlListVarargs(value: String*): Self = StObject.set(x, "urlList", js.Array(value*))
     }
   }
 }

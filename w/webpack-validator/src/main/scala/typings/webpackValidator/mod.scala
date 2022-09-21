@@ -1,5 +1,6 @@
 package typings.webpackValidator
 
+import typings.webpack.mod.Configuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +10,11 @@ object mod {
   /**
     * Validate your webpack configs with joi
     */
-  inline def apply(
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-  ): js.Any = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(config: Configuration): Configuration = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Configuration]
   /**
     * Validate your webpack configs with joi
     */
-  inline def apply(
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any,
-    options: ValidationOptions
-  ): js.Any = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(config: Configuration, options: ValidationOptions): Configuration = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Configuration]
   
   @JSImport("webpack-validator", JSImport.Namespace)
   @js.native

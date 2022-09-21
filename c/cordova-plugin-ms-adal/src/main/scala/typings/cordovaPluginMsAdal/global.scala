@@ -5,7 +5,6 @@ import typings.cordovaPluginMsAdal.Microsoft.ADAL.PromiseAuthenticationContext
 import typings.cordovaPluginMsAdal.Microsoft.ADAL.PromiseTokenCacheItems
 import typings.cordovaPluginMsAdal.Microsoft.ADAL.TokenCacheItem
 import typings.cordovaPluginMsAdal.Microsoft.ADAL.UserInfo
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object global {
       
       @JSGlobal("Microsoft.ADAL.AuthenticationContext")
       @js.native
-      class AuthenticationContext protected ()
+      open class AuthenticationContext protected ()
         extends StObject
            with typings.cordovaPluginMsAdal.Microsoft.ADAL.AuthenticationContext {
         /**
@@ -59,7 +58,7 @@ object global {
       
       @JSGlobal("Microsoft.ADAL.AuthenticationResult")
       @js.native
-      class AuthenticationResult ()
+      open class AuthenticationResult ()
         extends StObject
            with typings.cordovaPluginMsAdal.Microsoft.ADAL.AuthenticationResult {
         
@@ -78,7 +77,7 @@ object global {
         override def createAuthorizationHeader(): String = js.native
         
         /* CompleteClass */
-        var expiresOn: Date = js.native
+        var expiresOn: js.Date = js.native
         
         /* CompleteClass */
         var idToken: String = js.native
@@ -101,7 +100,7 @@ object global {
       
       @JSGlobal("Microsoft.ADAL.TokenCache")
       @js.native
-      class TokenCache ()
+      open class TokenCache ()
         extends StObject
            with typings.cordovaPluginMsAdal.Microsoft.ADAL.TokenCache {
         

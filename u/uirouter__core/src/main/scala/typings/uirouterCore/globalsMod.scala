@@ -14,7 +14,7 @@ object globalsMod {
   
   @JSImport("@uirouter/core/lib/globals", "UIRouterGlobals")
   @js.native
-  class UIRouterGlobals ()
+  open class UIRouterGlobals ()
     extends StObject
        with Disposable {
     

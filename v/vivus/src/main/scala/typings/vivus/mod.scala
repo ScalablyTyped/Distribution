@@ -25,7 +25,7 @@ object mod {
     */
   @JSImport("vivus", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Vivus {
     /**

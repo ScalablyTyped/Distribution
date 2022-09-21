@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResetServiceSettingResult extends StObject {
   
   /**
-    * The current, effective service setting after calling the ResetServiceSetting API action.
+    * The current, effective service setting after calling the ResetServiceSetting API operation.
     */
   var ServiceSetting: js.UndefOr[typings.awsSdk.ssmMod.ServiceSetting] = js.undefined
 }

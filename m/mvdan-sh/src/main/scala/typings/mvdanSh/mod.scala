@@ -28,6 +28,12 @@ object mod extends Shortcut {
     /* 0 */ val LangBash: typings.mvdanSh.mod.LangVariant.LangBash & Double = js.native
     
     @js.native
+    sealed trait LangBats
+      extends StObject
+         with LangVariant
+    /* 3 */ val LangBats: typings.mvdanSh.mod.LangVariant.LangBats & Double = js.native
+    
+    @js.native
     sealed trait LangMirBSDKorn
       extends StObject
          with LangVariant
@@ -103,7 +109,7 @@ object mod extends Shortcut {
       
       inline def setLast(value: js.Array[Stmt]): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
       
-      inline def setLastVarargs(value: Stmt*): Self = StObject.set(x, "Last", js.Array(value :_*))
+      inline def setLastVarargs(value: Stmt*): Self = StObject.set(x, "Last", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
@@ -111,7 +117,7 @@ object mod extends Shortcut {
       
       inline def setStmtsUndefined: Self = StObject.set(x, "Stmts", js.undefined)
       
-      inline def setStmtsVarargs(value: Stmt*): Self = StObject.set(x, "Stmts", js.Array(value :_*))
+      inline def setStmtsVarargs(value: Stmt*): Self = StObject.set(x, "Stmts", js.Array(value*))
     }
   }
   
@@ -295,7 +301,7 @@ object mod extends Shortcut {
       
       inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
       
-      inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "Comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "Comments", js.Array(value*))
       
       inline def setCoprocess(value: Boolean): Self = StObject.set(x, "Coprocess", value.asInstanceOf[js.Any])
       
@@ -328,7 +334,7 @@ object mod extends Shortcut {
       
       inline def setParts(value: js.Array[WordPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
       
-      inline def setPartsVarargs(value: WordPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: WordPart*): Self = StObject.set(x, "Parts", js.Array(value*))
     }
   }
   

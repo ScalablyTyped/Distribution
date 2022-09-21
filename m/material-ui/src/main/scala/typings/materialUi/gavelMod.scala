@@ -10,10 +10,10 @@ object gavelMod {
   
   @JSImport("material-ui/svg-icons/action/gavel", JSImport.Default)
   @js.native
-  class default () extends ActionGavel
+  open class default () extends ActionGavel
   
   @JSImport("material-ui/svg-icons/action/gavel", "ActionGavel")
   @js.native
-  class ActionGavel ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionGavel ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapListBoxItem")
 @js.native
-class BootstrapListBoxItem protected ()
+open class BootstrapListBoxItem protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapListBoxItem {
-  /* protected */ def this(instance: js.Any) = this()
+  /* protected */ def this(instance: Any) = this()
 }

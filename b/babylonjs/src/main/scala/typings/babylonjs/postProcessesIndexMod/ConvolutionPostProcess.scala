@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/PostProcesses/index", "ConvolutionPostProcess")
 @js.native
-class ConvolutionPostProcess protected ()
+open class ConvolutionPostProcess protected ()
   extends typings.babylonjs.convolutionPostProcessMod.ConvolutionPostProcess {
   /**
     * Creates a new instance ConvolutionPostProcess
@@ -360,6 +360,12 @@ object ConvolutionPostProcess {
   def SharpenKernel: js.Array[Double] = js.native
   inline def SharpenKernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SharpenKernel")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
-  inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.convolutionPostProcessMod.ConvolutionPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.convolutionPostProcessMod.ConvolutionPostProcess]]
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
+  inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.convolutionPostProcessMod.ConvolutionPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.convolutionPostProcessMod.ConvolutionPostProcess]]
 }

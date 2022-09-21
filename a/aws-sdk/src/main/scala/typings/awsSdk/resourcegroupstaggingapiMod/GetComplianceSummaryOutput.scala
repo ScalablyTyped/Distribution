@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetComplianceSummaryOutput extends StObject {
   
   /**
-    * A string that indicates that the response contains more data than can be returned in a single response. To receive additional data, specify this string for the PaginationToken value in a subsequent request.
+    * A string that indicates that there is more data available than this response contains. To receive the next part of the response, specify this response value as the PaginationToken value in the request for the next page.
     */
   var PaginationToken: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.PaginationToken] = js.undefined
   
@@ -33,6 +33,6 @@ object GetComplianceSummaryOutput {
     
     inline def setSummaryListUndefined: Self = StObject.set(x, "SummaryList", js.undefined)
     
-    inline def setSummaryListVarargs(value: Summary*): Self = StObject.set(x, "SummaryList", js.Array(value :_*))
+    inline def setSummaryListVarargs(value: Summary*): Self = StObject.set(x, "SummaryList", js.Array(value*))
   }
 }

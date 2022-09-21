@@ -10,7 +10,7 @@ trait Dependencies extends StObject {
   
   var dependencies: js.UndefOr[js.Array[NamePath]] = js.undefined
   
-  var initialValue: js.UndefOr[js.Any] = js.undefined
+  var initialValue: js.UndefOr[Any] = js.undefined
   
   var name: js.UndefOr[NamePath] = js.undefined
   
@@ -29,9 +29,9 @@ object Dependencies {
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    inline def setDependenciesVarargs(value: NamePath*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: NamePath*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
-    inline def setInitialValue(value: js.Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
     inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
@@ -39,12 +39,12 @@ object Dependencies {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value*))
     
     inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

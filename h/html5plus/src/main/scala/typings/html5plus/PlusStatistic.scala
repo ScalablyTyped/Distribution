@@ -21,11 +21,11 @@ trait PlusStatistic extends StObject {
   def eventDuration(): Unit = js.native
   def eventDuration(id: String): Unit = js.native
   def eventDuration(id: String, duration: Double): Unit = js.native
-  def eventDuration(id: String, duration: Double, value: js.Any): Unit = js.native
-  def eventDuration(id: String, duration: Unit, value: js.Any): Unit = js.native
+  def eventDuration(id: String, duration: Double, value: Any): Unit = js.native
+  def eventDuration(id: String, duration: Unit, value: Any): Unit = js.native
   def eventDuration(id: Unit, duration: Double): Unit = js.native
-  def eventDuration(id: Unit, duration: Double, value: js.Any): Unit = js.native
-  def eventDuration(id: Unit, duration: Unit, value: js.Any): Unit = js.native
+  def eventDuration(id: Unit, duration: Double, value: Any): Unit = js.native
+  def eventDuration(id: Unit, duration: Unit, value: Any): Unit = js.native
   
   /**
     * 结束持续事件（过期API，不推荐使用）
@@ -57,6 +57,6 @@ trait PlusStatistic extends StObject {
     */
   def eventTrig(): Unit = js.native
   def eventTrig(id: String): Unit = js.native
-  def eventTrig(id: String, value: js.Any): Unit = js.native
-  def eventTrig(id: Unit, value: js.Any): Unit = js.native
+  def eventTrig(id: String, value: Any): Unit = js.native
+  def eventTrig(id: Unit, value: Any): Unit = js.native
 }

@@ -10,10 +10,10 @@ Aurelia's platform abstraction layer (PAL).
 | ------------------ | :-------------: |
 | Full name          | aurelia-pal |
 | Keywords           | aurelia, pal |
-| # releases         | 2 |
-| # dependents       | 123 |
-| # downloads        | 564852 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 53040.666666666664 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](http://aurelia.io)

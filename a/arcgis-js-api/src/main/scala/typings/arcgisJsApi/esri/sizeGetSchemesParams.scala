@@ -33,7 +33,7 @@ trait sizeGetSchemesParams
   /**
     * The geometry type of the features to visualize.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#getSchemes)
+    * [Read more...](global.html#geometryType)
     */
   var geometryType: point | multipoint | polyline | polygon
   

@@ -57,18 +57,18 @@ object NumberingRules {
     acquire: () => Unit,
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    replaceByIndex: (Double, js.Any) => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    replaceByIndex: (Double, Any) => Unit,
+    setPropertyValue: (String, Any) => Unit
   ): NumberingRules = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], DefaultListId = DefaultListId.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], IsAbsoluteMargins = IsAbsoluteMargins.asInstanceOf[js.Any], IsAutomatic = IsAutomatic.asInstanceOf[js.Any], IsContinuousNumbering = IsContinuousNumbering.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NumberingIsOutline = NumberingIsOutline.asInstanceOf[js.Any], NumberingType = NumberingType.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), replaceByIndex = js.Any.fromFunction2(replaceByIndex), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[NumberingRules]

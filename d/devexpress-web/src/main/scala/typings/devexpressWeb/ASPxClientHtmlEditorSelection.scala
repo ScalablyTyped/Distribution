@@ -12,7 +12,7 @@ trait ASPxClientHtmlEditorSelection extends StObject {
   /**
     * Returns an array of the currently selected elements.
     */
-  def GetElements(): js.Array[js.Any]
+  def GetElements(): js.Array[Any]
   
   /**
     * Returns the HTML markup specifying the currently selected ASPxHtmlEditor content.
@@ -22,7 +22,7 @@ trait ASPxClientHtmlEditorSelection extends StObject {
   /**
     * Returns a DOM element that relates to the current selection.
     */
-  def GetSelectedElement(): js.Any
+  def GetSelectedElement(): Any
   
   /**
     * Returns the text within the currently selected ASPxHtmlEditor content.
@@ -39,9 +39,9 @@ trait ASPxClientHtmlEditorSelection extends StObject {
 object ASPxClientHtmlEditorSelection {
   
   inline def apply(
-    GetElements: () => js.Array[js.Any],
+    GetElements: () => js.Array[Any],
     GetHtml: () => String,
-    GetSelectedElement: () => js.Any,
+    GetSelectedElement: () => Any,
     GetText: () => String,
     SetHtml: (String, Boolean) => Unit
   ): ASPxClientHtmlEditorSelection = {
@@ -51,11 +51,11 @@ object ASPxClientHtmlEditorSelection {
   
   extension [Self <: ASPxClientHtmlEditorSelection](x: Self) {
     
-    inline def setGetElements(value: () => js.Array[js.Any]): Self = StObject.set(x, "GetElements", js.Any.fromFunction0(value))
+    inline def setGetElements(value: () => js.Array[Any]): Self = StObject.set(x, "GetElements", js.Any.fromFunction0(value))
     
     inline def setGetHtml(value: () => String): Self = StObject.set(x, "GetHtml", js.Any.fromFunction0(value))
     
-    inline def setGetSelectedElement(value: () => js.Any): Self = StObject.set(x, "GetSelectedElement", js.Any.fromFunction0(value))
+    inline def setGetSelectedElement(value: () => Any): Self = StObject.set(x, "GetSelectedElement", js.Any.fromFunction0(value))
     
     inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     

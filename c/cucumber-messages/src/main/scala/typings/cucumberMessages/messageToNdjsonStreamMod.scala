@@ -10,7 +10,7 @@ object messageToNdjsonStreamMod {
   
   @JSImport("cucumber-messages/dist/src/MessageToNdjsonStream", JSImport.Default)
   @js.native
-  class default[T] () extends MessageToNdjsonStream[T]
+  open class default[T] () extends MessageToNdjsonStream[T]
   
   @js.native
   trait MessageToNdjsonStream[T] extends Transform {

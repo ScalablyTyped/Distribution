@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.Timeline")
 @js.native
-class Timeline protected ()
+open class Timeline protected ()
   extends StObject
      with typings.googleVisualization.google.visualization.Timeline {
   def this(element: Element) = this()

@@ -5,34 +5,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A segment in a structured format.
-  */
 trait SchemaSegment extends StObject {
   
   /**
-    * A mapping from the positional location to the value. The key string uses
-    * zero-based indexes separated by dots to identify Fields, components and
-    * sub-components. A bracket notation is also used to identify different
-    * instances of a repeated field. Regex for key:
-    * (\d+)(\[\d+\])?(.\d+)?(.\d+)?  Examples of (key, value) pairs: - (0.1,
-    * &quot;foo&quot;): Component 1 of Field 0 has the value &quot;foo&quot;. -
-    * (1.1.2, &quot;bar&quot;): Sub-component 2 of Component 1 of field 1 has
-    * the value &quot;bar&quot;. - (1[2].1, &quot;baz&quot;): Component 1 of
-    * Instance 2 of Field 1, which is repeated, has the value &quot;baz&quot;.
+    * A mapping from the positional location to the value. The key string uses zero-based indexes separated by dots to identify Fields, components and sub-components. A bracket notation is also used to identify different instances of a repeated field. Regex for key: (\d+)(\[\d+\])?(.\d+)?(.\d+)? Examples of (key, value) pairs: * (0.1, "hemoglobin") denotes that the first component of Field 0 has the value "hemoglobin". * (1.1.2, "CBC") denotes that the second sub-component of the first component of Field 1 has the value "CBC". * (1[0].1, "HbA1c") denotes that the first component of the first Instance of Field 1, which is repeated, has the value "HbA1c".
     */
-  var fields: js.UndefOr[StringDictionary[String]] = js.undefined
+  var fields: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
-    * A string that indicates the type of segment, e.g., EVN, PID.
+    * A string that indicates the type of segment. For example, EVN or PID.
     */
-  var segmentId: js.UndefOr[String] = js.undefined
+  var segmentId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Set ID for segments that can be in a set. This can be empty if it is
-    * missing or it is not applicable.
+    * Set ID for segments that can be in a set. This can be empty if it's missing or isn't applicable.
     */
-  var setId: js.UndefOr[String] = js.undefined
+  var setId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSegment {
   
@@ -45,13 +33,19 @@ object SchemaSegment {
     
     inline def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
+    inline def setFieldsNull: Self = StObject.set(x, "fields", null)
+    
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     
+    inline def setSegmentIdNull: Self = StObject.set(x, "segmentId", null)
+    
     inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
     
     inline def setSetId(value: String): Self = StObject.set(x, "setId", value.asInstanceOf[js.Any])
+    
+    inline def setSetIdNull: Self = StObject.set(x, "setId", null)
     
     inline def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
   }

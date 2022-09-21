@@ -31,6 +31,6 @@ object ListOperationsResponse {
     
     inline def setOperations(value: OperationSummaryList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
-    inline def setOperationsVarargs(value: OperationSummary*): Self = StObject.set(x, "Operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: OperationSummary*): Self = StObject.set(x, "Operations", js.Array(value*))
   }
 }

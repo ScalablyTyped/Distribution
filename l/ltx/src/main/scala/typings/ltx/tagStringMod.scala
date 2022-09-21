@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tagStringMod {
   
+  inline def apply(literals: js.Array[String], substitutions: String*): String = ^.asInstanceOf[js.Dynamic].apply(List(literals.asInstanceOf[js.Any]).`++`(substitutions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  
   @JSImport("ltx/lib/tagString", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  inline def tagString(literals: js.Array[String], substitutions: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tagString")(literals.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[String]
 }

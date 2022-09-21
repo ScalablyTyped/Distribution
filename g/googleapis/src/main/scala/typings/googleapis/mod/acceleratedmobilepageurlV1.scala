@@ -9,25 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object acceleratedmobilepageurlV1 {
   
-  /**
-    * Accelerated Mobile Pages (AMP) URL API
-    *
-    * Retrieves the list of AMP URLs (and equivalent AMP Cache URLs) for a given
-    * list of public URL(s).
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const acceleratedmobilepageurl = google.acceleratedmobilepageurl('v1');
-    *
-    * @namespace acceleratedmobilepageurl
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Acceleratedmobilepageurl
-    */
   @JSImport("googleapis", "acceleratedmobilepageurl_v1.Acceleratedmobilepageurl")
   @js.native
-  class Acceleratedmobilepageurl protected ()
+  open class Acceleratedmobilepageurl protected ()
     extends typings.googleapis.acceleratedmobilepageurlV1Mod.acceleratedmobilepageurlV1.Acceleratedmobilepageurl {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -35,7 +19,7 @@ object acceleratedmobilepageurlV1 {
   
   @JSImport("googleapis", "acceleratedmobilepageurl_v1.Resource$Ampurls")
   @js.native
-  class ResourceAmpurls protected ()
+  open class ResourceAmpurls protected ()
     extends typings.googleapis.acceleratedmobilepageurlV1Mod.acceleratedmobilepageurlV1.ResourceAmpurls {
     def this(context: APIRequestContext) = this()
   }

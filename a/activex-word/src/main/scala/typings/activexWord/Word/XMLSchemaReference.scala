@@ -16,7 +16,7 @@ trait XMLSchemaReference extends StObject {
   
   val NamespaceURI: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reload(): Unit
   
@@ -31,7 +31,7 @@ object XMLSchemaReference {
     Delete: () => Unit,
     Location: String,
     NamespaceURI: String,
-    Parent: js.Any,
+    Parent: Any,
     Reload: () => Unit,
     WordDotXMLSchemaReference_typekey: XMLSchemaReference
   ): XMLSchemaReference = {
@@ -52,7 +52,7 @@ object XMLSchemaReference {
     
     inline def setNamespaceURI(value: String): Self = StObject.set(x, "NamespaceURI", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReload(value: () => Unit): Self = StObject.set(x, "Reload", js.Any.fromFunction0(value))
     

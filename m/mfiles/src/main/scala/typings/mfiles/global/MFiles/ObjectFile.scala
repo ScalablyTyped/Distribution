@@ -2,7 +2,6 @@ package typings.mfiles.global.MFiles
 
 import typings.mfiles.IFileVer
 import typings.mfiles.IObjectFile
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.ObjectFile")
 @js.native
-class ObjectFile ()
+open class ObjectFile ()
   extends StObject
      with IObjectFile {
   
   /* CompleteClass */
-  override val ChangeTimeUtc: Date = js.native
+  override val ChangeTimeUtc: js.Date = js.native
   
   /* CompleteClass */
-  override val CreationTimeUtc: Date = js.native
+  override val CreationTimeUtc: js.Date = js.native
   
   /* CompleteClass */
   override val Extension: String = js.native
@@ -36,10 +35,10 @@ class ObjectFile ()
   override val ID: Double = js.native
   
   /* CompleteClass */
-  override val LastAccessTimeUtc: Date = js.native
+  override val LastAccessTimeUtc: js.Date = js.native
   
   /* CompleteClass */
-  override val LastWriteTimeUtc: Date = js.native
+  override val LastWriteTimeUtc: js.Date = js.native
   
   /* CompleteClass */
   override val LogicalSize: Double = js.native

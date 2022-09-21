@@ -84,11 +84,11 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** Gets the next sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -104,7 +104,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. This value is always NULL. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
       /* CompleteClass */
@@ -112,7 +112,7 @@ object Xml {
       
       /** Gets the notation name. */
       /* CompleteClass */
-      var notationName: js.Any = js.native
+      var notationName: Any = js.native
       
       /** Returns the root of the document that contains the node. */
       /* CompleteClass */
@@ -124,7 +124,7 @@ object Xml {
       
       /** Returns the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** Gets the previous sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -132,7 +132,7 @@ object Xml {
       
       /** Gets the public identifier associated with the entity. */
       /* CompleteClass */
-      var publicId: js.Any = js.native
+      var publicId: Any = js.native
       
       /**
         * Removes the specified child node from the list of children and returns it.
@@ -166,7 +166,7 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -183,11 +183,11 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       
       /** Gets the system identifier associated with the entity. */
       /* CompleteClass */
-      var systemId: js.Any = js.native
+      var systemId: Any = js.native
     }
     
     /** Contains a notation declared in the DTD or schema. */
@@ -258,11 +258,11 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** Gets the next sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -278,7 +278,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
       /* CompleteClass */
@@ -294,7 +294,7 @@ object Xml {
       
       /** Gets or sets the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** Gets the previous sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -302,7 +302,7 @@ object Xml {
       
       /** Gets the public identifier for the notation. */
       /* CompleteClass */
-      var publicId: js.Any = js.native
+      var publicId: Any = js.native
       
       /**
         * Removes the specified child node from the list of children and returns it.
@@ -336,7 +336,7 @@ object Xml {
         * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -353,11 +353,11 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       
       /** Gets the system identifier for the notation. */
       /* CompleteClass */
-      var systemId: js.Any = js.native
+      var systemId: Any = js.native
     }
     
     /** The type of an IXmlNode, as returned by the NodeType property. */
@@ -463,7 +463,7 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** Returns the attribute name. */
       /* CompleteClass */
@@ -471,7 +471,7 @@ object Xml {
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** This property is not applicable to this class and will always return null. */
       /* CompleteClass */
@@ -487,7 +487,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** This method is not applicable to this class and will throw an exception. */
       /* CompleteClass */
@@ -503,7 +503,7 @@ object Xml {
       
       /** Gets or sets the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** This property is not applicable to this class and will throw an exception. */
       /* CompleteClass */
@@ -541,7 +541,7 @@ object Xml {
         * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -558,7 +558,7 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       
       /** Gets a value that indicates whether the attribute is explicitly specified or derived from a default value in the document type definition (DTD) or schema. */
       /* CompleteClass */
@@ -668,11 +668,11 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** Gets the next sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -688,7 +688,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
       /* CompleteClass */
@@ -704,7 +704,7 @@ object Xml {
       
       /** Gets or sets the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** Gets the previous sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -751,7 +751,7 @@ object Xml {
         * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node. This method is not applicable to this class and will throw an exception.
@@ -768,7 +768,7 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       
       /**
         * Splits this text node into two text nodes at the specified offset and inserts the new text node into the tree as a sibling that immediately follows this node.
@@ -887,11 +887,11 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** Gets the next sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -907,7 +907,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
       /* CompleteClass */
@@ -923,7 +923,7 @@ object Xml {
       
       /** Gets or sets the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** Gets the previous sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -970,7 +970,7 @@ object Xml {
         * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node. This method is not applicable to this class and will throw an exception.
@@ -987,7 +987,7 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       
       /**
         * Retrieves a substring of the full string from the specified range.
@@ -1003,7 +1003,7 @@ object Xml {
     @JSGlobal("Windows.Data.Xml.Dom.XmlDocument")
     @js.native
     /** Creates a new instance of the XmlDocument class. */
-    class XmlDocument ()
+    open class XmlDocument ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
     object XmlDocument {
@@ -1113,11 +1113,11 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** Gets the next sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -1133,7 +1133,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
       /* CompleteClass */
@@ -1149,7 +1149,7 @@ object Xml {
       
       /** Gets or sets the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** Gets the previous sibling of the node in the parent's child list. This property is not applicable to this class. */
       /* CompleteClass */
@@ -1187,7 +1187,7 @@ object Xml {
         * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -1204,7 +1204,7 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
     }
     
     /** Contains information associated with the document type. */
@@ -1279,7 +1279,7 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** A list of the general entities, both external and internal, that are present in this document. */
       /* CompleteClass */
@@ -1287,7 +1287,7 @@ object Xml {
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** Gets the next sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -1303,7 +1303,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
       /* CompleteClass */
@@ -1323,7 +1323,7 @@ object Xml {
       
       /** Gets or sets the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** Gets the previous sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -1361,7 +1361,7 @@ object Xml {
         * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -1378,7 +1378,7 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
     }
     
     /** Provides methods that are independent of any particular instance of the document object model. */
@@ -1395,7 +1395,7 @@ object Xml {
         * @return True if the specified feature is implemented; otherwise false.
         */
       /* CompleteClass */
-      override def hasFeature(feature: String, version: js.Any): Boolean = js.native
+      override def hasFeature(feature: String, version: Any): Boolean = js.native
     }
     
     /** Encapsulates information specific to XML Element nodes. */
@@ -1448,7 +1448,7 @@ object Xml {
         * @return The string value of the attribute.
         */
       /* CompleteClass */
-      override def getAttributeNS(namespaceUri: js.Any, localName: String): String = js.native
+      override def getAttributeNS(namespaceUri: Any, localName: String): String = js.native
       
       /**
         * Returns the attribute node.
@@ -1465,7 +1465,7 @@ object Xml {
         * @return The returned attribute pointer.
         */
       /* CompleteClass */
-      override def getAttributeNodeNS(namespaceUri: js.Any, localName: String): typings.winrtUwp.Windows.Data.Xml.Dom.XmlAttribute = js.native
+      override def getAttributeNodeNS(namespaceUri: Any, localName: String): typings.winrtUwp.Windows.Data.Xml.Dom.XmlAttribute = js.native
       
       /**
         * Returns a list of all descendant elements that match the supplied name.
@@ -1508,11 +1508,11 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** Gets the next sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -1528,7 +1528,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
       /* CompleteClass */
@@ -1544,7 +1544,7 @@ object Xml {
       
       /** Gets or sets the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** Gets the previous sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -1563,7 +1563,7 @@ object Xml {
         * @param localName The name of the attribute without the namespace prefix.
         */
       /* CompleteClass */
-      override def removeAttributeNS(namespaceUri: js.Any, localName: String): Unit = js.native
+      override def removeAttributeNS(namespaceUri: Any, localName: String): Unit = js.native
       
       /**
         * Removes the specified attribute from this element.
@@ -1605,7 +1605,7 @@ object Xml {
         * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -1622,7 +1622,7 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       
       /**
         * Sets the value of the named attribute.
@@ -1639,7 +1639,7 @@ object Xml {
         * @param value The new value for the attribute.
         */
       /* CompleteClass */
-      override def setAttributeNS(namespaceUri: js.Any, qualifiedName: String, value: String): Unit = js.native
+      override def setAttributeNS(namespaceUri: Any, qualifiedName: String, value: String): Unit = js.native
       
       /**
         * Sets or updates the supplied attribute node on this element.
@@ -1730,11 +1730,11 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** Gets the next sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -1750,7 +1750,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
       /* CompleteClass */
@@ -1766,7 +1766,7 @@ object Xml {
       
       /** Gets or sets the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** Gets the previous sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -1804,7 +1804,7 @@ object Xml {
         * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -1821,14 +1821,14 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
     }
     
     /** Contains settings that are used during loading and parsing of XML documents. The default settings are chosen for the highest security. This class can be instantiated and is accepted by LoadXml , LoadFromUriAsync , and LoadFromFileAsync . */
     @JSGlobal("Windows.Data.Xml.Dom.XmlLoadSettings")
     @js.native
     /** Creates a new XmlLoadSettings object. */
-    class XmlLoadSettings ()
+    open class XmlLoadSettings ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Dom.XmlLoadSettings {
       
@@ -1939,11 +1939,11 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** Gets the next sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -1959,7 +1959,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
       /* CompleteClass */
@@ -1975,7 +1975,7 @@ object Xml {
       
       /** Gets or sets the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** Gets the previous sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -2013,7 +2013,7 @@ object Xml {
         * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -2030,7 +2030,7 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       
       /** Gets the target for the processing instruction. */
       /* CompleteClass */
@@ -2136,11 +2136,11 @@ object Xml {
       
       /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
       /* CompleteClass */
-      var localName: js.Any = js.native
+      var localName: Any = js.native
       
       /** Returns the Uniform Resource Identifier (URI) for the namespace. */
       /* CompleteClass */
-      var namespaceUri: js.Any = js.native
+      var namespaceUri: Any = js.native
       
       /** Gets the next sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -2156,7 +2156,7 @@ object Xml {
       
       /** Gets or sets the text associated with the node. */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
       /* CompleteClass */
@@ -2172,7 +2172,7 @@ object Xml {
       
       /** Gets or sets the namespace prefix. */
       /* CompleteClass */
-      var prefix: js.Any = js.native
+      var prefix: Any = js.native
       
       /** Gets the previous sibling of the node in the parent's child list. */
       /* CompleteClass */
@@ -2219,7 +2219,7 @@ object Xml {
         * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
         */
       /* CompleteClass */
-      override def selectNodesNS(xpath: String, namespaces: js.Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
+      override def selectNodesNS(xpath: String, namespaces: Any): typings.winrtUwp.Windows.Data.Xml.Dom.XmlNodeList = js.native
       
       /**
         * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -2236,7 +2236,7 @@ object Xml {
         * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
         */
       /* CompleteClass */
-      override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+      override def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
       
       /**
         * Splits this text node into two text nodes at the specified offset and inserts the new text node into the tree as a sibling that immediately follows this node.
@@ -2263,7 +2263,7 @@ object Xml {
     /** Provides the methods needed by the Xslt processor. */
     @JSGlobal("Windows.Data.Xml.Xsl.XsltProcessor")
     @js.native
-    class XsltProcessor protected ()
+    open class XsltProcessor protected ()
       extends StObject
          with typings.winrtUwp.Windows.Data.Xml.Xsl.XsltProcessor {
       /**

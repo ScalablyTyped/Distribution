@@ -2,7 +2,8 @@ package typings.protractorHttpMock
 
 import org.scalablytyped.runtime.Shortcut
 import typings.protractorHttpMock.anon.Data
-import typings.protractorHttpMock.anon.Headers
+import typings.protractorHttpMock.anon.DataMethod
+import typings.protractorHttpMock.anon.Delay
 import typings.protractorHttpMock.anon.MethodPath
 import typings.protractorHttpMock.anon.MethodPathRegex
 import typings.protractorHttpMock.anon.Mocks
@@ -20,6 +21,8 @@ import typings.protractorHttpMock.mod.requests.Patch
 import typings.protractorHttpMock.mod.requests.Post
 import typings.protractorHttpMock.mod.requests.PostData
 import typings.protractorHttpMock.mod.requests.Put
+import typings.protractorHttpMock.mod.requests.PutData
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,6 +64,7 @@ object mod extends Shortcut {
   /**
     * Plugin for custom matching logic with 2 generic types.
     */
+  @js.native
   trait Plugin2[T1, T2] extends StObject {
     
     /**
@@ -70,20 +74,9 @@ object mod extends Shortcut {
       * @param mockRequest The mock to compare request with.
       * @param requestConfig The request object to compare mock with.
       */
-    def `match`[O /* <: PostData[T1, T2] */](mockRequest: O, requestConfig: O): Boolean
-  }
-  object Plugin2 {
-    
-    inline def apply[T1, T2](`match`: (js.Any, js.Any) => Boolean): Plugin2[T1, T2] = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("match")(js.Any.fromFunction2(`match`))
-      __obj.asInstanceOf[Plugin2[T1, T2]]
-    }
-    
-    extension [Self <: Plugin2[?, ?], T1, T2](x: Self & (Plugin2[T1, T2])) {
-      
-      inline def setMatch(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
-    }
+    def `match`[O /* <: PostData[T1, T2] */](mockRequest: O, requestConfig: O): Boolean = js.native
+    @JSName("match")
+    def match_O_PutDataT1T2[O /* <: PutData[T1, T2] */](mockRequest: O, requestConfig: O): Boolean = js.native
   }
   
   @js.native
@@ -100,20 +93,16 @@ object mod extends Shortcut {
     def apply(mocks: js.Array[AllRequests | String]): ProtractorHttpMock = js.native
     def apply(
       mocks: js.Array[AllRequests | String],
-      plugins: js.Array[Plugin1[js.Any] | (Plugin2[js.Any, js.Any]) | String]
+      plugins: js.Array[Plugin1[Any] | (Plugin2[Any, Any]) | String]
     ): ProtractorHttpMock = js.native
     def apply(
       mocks: js.Array[AllRequests | String],
-      plugins: js.Array[Plugin1[js.Any] | (Plugin2[js.Any, js.Any]) | String],
+      plugins: js.Array[Plugin1[Any] | (Plugin2[Any, Any]) | String],
       skipDefaults: Boolean
     ): ProtractorHttpMock = js.native
     def apply(mocks: js.Array[AllRequests | String], plugins: Unit, skipDefaults: Boolean): ProtractorHttpMock = js.native
-    def apply(mocks: Unit, plugins: js.Array[Plugin1[js.Any] | (Plugin2[js.Any, js.Any]) | String]): ProtractorHttpMock = js.native
-    def apply(
-      mocks: Unit,
-      plugins: js.Array[Plugin1[js.Any] | (Plugin2[js.Any, js.Any]) | String],
-      skipDefaults: Boolean
-    ): ProtractorHttpMock = js.native
+    def apply(mocks: Unit, plugins: js.Array[Plugin1[Any] | (Plugin2[Any, Any]) | String]): ProtractorHttpMock = js.native
+    def apply(mocks: Unit, plugins: js.Array[Plugin1[Any] | (Plugin2[Any, Any]) | String], skipDefaults: Boolean): ProtractorHttpMock = js.native
     def apply(mocks: Unit, plugins: Unit, skipDefaults: Boolean): ProtractorHttpMock = js.native
     
     /**
@@ -193,7 +182,7 @@ object mod extends Shortcut {
     /**
       * All available request types.
       */
-    type AllRequests = Get[js.Any] | (PostData[js.Any, js.Any]) | Post[js.Any] | Head[js.Any] | Delete[js.Any] | Put[js.Any] | Patch[js.Any] | Jsonp[js.Any]
+    type AllRequests = Get[Any] | (PostData[Any, Any]) | Post[Any] | Head[Any] | Delete[Any] | (PutData[Any, Any]) | Put[Any] | Patch[Any] | Jsonp[Any]
     
     /**
       * HTTP Delete request mock.
@@ -202,11 +191,11 @@ object mod extends Shortcut {
       
       var request: MethodPath
       
-      var response: Data[TResponse]
+      var response: Delay[TResponse]
     }
     object Delete {
       
-      inline def apply[TResponse](request: MethodPath, response: Data[TResponse]): Delete[TResponse] = {
+      inline def apply[TResponse](request: MethodPath, response: Delay[TResponse]): Delete[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Delete[TResponse]]
       }
@@ -215,7 +204,7 @@ object mod extends Shortcut {
         
         inline def setRequest(value: MethodPath): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Delay[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -224,20 +213,20 @@ object mod extends Shortcut {
       */
     trait Get[TResponse] extends StObject {
       
-      var request: Headers
+      var request: typings.protractorHttpMock.anon.Headers
       
       var response: Data[TResponse]
     }
     object Get {
       
-      inline def apply[TResponse](request: Headers, response: Data[TResponse]): Get[TResponse] = {
+      inline def apply[TResponse](request: typings.protractorHttpMock.anon.Headers, response: Data[TResponse]): Get[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Get[TResponse]]
       }
       
       extension [Self <: Get[?], TResponse](x: Self & Get[TResponse]) {
         
-        inline def setRequest(value: Headers): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: typings.protractorHttpMock.anon.Headers): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
         inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
@@ -250,11 +239,11 @@ object mod extends Shortcut {
       
       var request: Regex
       
-      var response: Data[TResponse]
+      var response: Delay[TResponse]
     }
     object Head {
       
-      inline def apply[TResponse](request: Regex, response: Data[TResponse]): Head[TResponse] = {
+      inline def apply[TResponse](request: Regex, response: Delay[TResponse]): Head[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Head[TResponse]]
       }
@@ -263,9 +252,11 @@ object mod extends Shortcut {
         
         inline def setRequest(value: Regex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Delay[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
+    
+    type Headers = Record[String, String]
     
     /**
       * JSONP request mock.
@@ -274,11 +265,11 @@ object mod extends Shortcut {
       
       var request: PathString
       
-      var response: Data[TResponse]
+      var response: Delay[TResponse]
     }
     object Jsonp {
       
-      inline def apply[TResponse](request: PathString, response: Data[TResponse]): Jsonp[TResponse] = {
+      inline def apply[TResponse](request: PathString, response: Delay[TResponse]): Jsonp[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Jsonp[TResponse]]
       }
@@ -287,7 +278,7 @@ object mod extends Shortcut {
         
         inline def setRequest(value: PathString): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Delay[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -328,11 +319,11 @@ object mod extends Shortcut {
       
       var request: MethodPathRegex
       
-      var response: Data[TResponse]
+      var response: Delay[TResponse]
     }
     object Patch {
       
-      inline def apply[TResponse](request: MethodPathRegex, response: Data[TResponse]): Patch[TResponse] = {
+      inline def apply[TResponse](request: MethodPathRegex, response: Delay[TResponse]): Patch[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Patch[TResponse]]
       }
@@ -341,7 +332,7 @@ object mod extends Shortcut {
         
         inline def setRequest(value: MethodPathRegex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Delay[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -352,11 +343,11 @@ object mod extends Shortcut {
       
       var request: Path
       
-      var response: Data[TResponse]
+      var response: Delay[TResponse]
     }
     object Post {
       
-      inline def apply[TResponse](request: Path, response: Data[TResponse]): Post[TResponse] = {
+      inline def apply[TResponse](request: Path, response: Delay[TResponse]): Post[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Post[TResponse]]
       }
@@ -365,7 +356,7 @@ object mod extends Shortcut {
         
         inline def setRequest(value: Path): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Delay[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -376,11 +367,11 @@ object mod extends Shortcut {
       
       var request: typings.protractorHttpMock.anon.Method[TPayload]
       
-      var response: Data[TResponse]
+      var response: Delay[TResponse]
     }
     object PostData {
       
-      inline def apply[TResponse, TPayload](request: typings.protractorHttpMock.anon.Method[TPayload], response: Data[TResponse]): PostData[TResponse, TPayload] = {
+      inline def apply[TResponse, TPayload](request: typings.protractorHttpMock.anon.Method[TPayload], response: Delay[TResponse]): PostData[TResponse, TPayload] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[PostData[TResponse, TPayload]]
       }
@@ -389,7 +380,7 @@ object mod extends Shortcut {
         
         inline def setRequest(value: typings.protractorHttpMock.anon.Method[TPayload]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Delay[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
     
@@ -400,11 +391,11 @@ object mod extends Shortcut {
       
       var request: PathRegex
       
-      var response: Data[TResponse]
+      var response: Delay[TResponse]
     }
     object Put {
       
-      inline def apply[TResponse](request: PathRegex, response: Data[TResponse]): Put[TResponse] = {
+      inline def apply[TResponse](request: PathRegex, response: Delay[TResponse]): Put[TResponse] = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
         __obj.asInstanceOf[Put[TResponse]]
       }
@@ -413,7 +404,31 @@ object mod extends Shortcut {
         
         inline def setRequest(value: PathRegex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        inline def setResponse(value: Data[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Delay[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    /**
+      * PUT request mock with payload.
+      */
+    trait PutData[TResponse, TPayload] extends StObject {
+      
+      var request: DataMethod[TPayload]
+      
+      var response: Delay[TResponse]
+    }
+    object PutData {
+      
+      inline def apply[TResponse, TPayload](request: DataMethod[TPayload], response: Delay[TResponse]): PutData[TResponse, TPayload] = {
+        val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+        __obj.asInstanceOf[PutData[TResponse, TPayload]]
+      }
+      
+      extension [Self <: PutData[?, ?], TResponse, TPayload](x: Self & (PutData[TResponse, TPayload])) {
+        
+        inline def setRequest(value: DataMethod[TPayload]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        
+        inline def setResponse(value: Delay[TResponse]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       }
     }
   }

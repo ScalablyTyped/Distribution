@@ -6,25 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LockManagerSnapshot extends StObject {
   
-  var held: js.Array[Lock]
+  var held: js.UndefOr[js.Array[LockInfo]] = js.undefined
   
-  var pending: js.Array[Lock]
+  var pending: js.UndefOr[js.Array[LockInfo]] = js.undefined
 }
 object LockManagerSnapshot {
   
-  inline def apply(held: js.Array[Lock], pending: js.Array[Lock]): LockManagerSnapshot = {
-    val __obj = js.Dynamic.literal(held = held.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any])
+  inline def apply(): LockManagerSnapshot = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LockManagerSnapshot]
   }
   
   extension [Self <: LockManagerSnapshot](x: Self) {
     
-    inline def setHeld(value: js.Array[Lock]): Self = StObject.set(x, "held", value.asInstanceOf[js.Any])
+    inline def setHeld(value: js.Array[LockInfo]): Self = StObject.set(x, "held", value.asInstanceOf[js.Any])
     
-    inline def setHeldVarargs(value: Lock*): Self = StObject.set(x, "held", js.Array(value :_*))
+    inline def setHeldUndefined: Self = StObject.set(x, "held", js.undefined)
     
-    inline def setPending(value: js.Array[Lock]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setHeldVarargs(value: LockInfo*): Self = StObject.set(x, "held", js.Array(value*))
     
-    inline def setPendingVarargs(value: Lock*): Self = StObject.set(x, "pending", js.Array(value :_*))
+    inline def setPending(value: js.Array[LockInfo]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    
+    inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+    
+    inline def setPendingVarargs(value: LockInfo*): Self = StObject.set(x, "pending", js.Array(value*))
   }
 }

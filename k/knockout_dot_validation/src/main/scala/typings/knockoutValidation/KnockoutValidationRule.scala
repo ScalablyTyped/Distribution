@@ -10,13 +10,13 @@ trait KnockoutValidationRule extends StObject {
   
   var message: js.UndefOr[String | KnockoutValidationMessageFunction] = js.undefined
   
-  var params: js.Any
+  var params: Any
   
   var rule: String
 }
 object KnockoutValidationRule {
   
-  inline def apply(params: js.Any, rule: String): KnockoutValidationRule = {
+  inline def apply(params: Any, rule: String): KnockoutValidationRule = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutValidationRule]
   }
@@ -29,11 +29,11 @@ object KnockoutValidationRule {
     
     inline def setMessage(value: String | KnockoutValidationMessageFunction): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setMessageFunction2(value: (/* params */ js.Any, /* observable */ js.Any) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
+    inline def setMessageFunction2(value: (/* params */ Any, /* observable */ Any) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }

@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Message depicting the size of the creative. The units of width and height
-  * depend on the type of the targeting.
-  */
 trait SchemaSize extends StObject {
   
   /**
     * The height of the creative.
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The width of the creative
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaSize {
   
@@ -31,9 +27,13 @@ object SchemaSize {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
+    
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

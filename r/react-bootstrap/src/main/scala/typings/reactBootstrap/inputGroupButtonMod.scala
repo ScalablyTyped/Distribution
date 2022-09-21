@@ -10,12 +10,10 @@ object inputGroupButtonMod {
   
   @JSImport("react-bootstrap/lib/InputGroupButton", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[InputGroupButtonProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[InputGroupButtonProps, js.Object, Any]
   
-  @js.native
-  trait InputGroupButton
-    extends Component[InputGroupButtonProps, js.Object, js.Any]
+  type InputGroupButton = Component[InputGroupButtonProps, js.Object, Any]
   
   trait InputGroupButtonProps
     extends StObject

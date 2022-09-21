@@ -33,6 +33,6 @@ object GetBuiltinSlotTypesResponse {
     
     inline def setSlotTypesUndefined: Self = StObject.set(x, "slotTypes", js.undefined)
     
-    inline def setSlotTypesVarargs(value: BuiltinSlotTypeMetadata*): Self = StObject.set(x, "slotTypes", js.Array(value :_*))
+    inline def setSlotTypesVarargs(value: BuiltinSlotTypeMetadata*): Self = StObject.set(x, "slotTypes", js.Array(value*))
   }
 }

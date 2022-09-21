@@ -533,11 +533,11 @@ object mod {
     val `511`: String = js.native
   }
   
-  inline def isEmpty(code: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmpty(code: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isRedirect(code: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRedirect(code: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isRetry(code: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetry")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRetry(code: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetry")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def status(codeOrLiteral: String): IStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("status")(codeOrLiteral.asInstanceOf[js.Any]).asInstanceOf[IStatus]
   inline def status(codeOrLiteral: Double): IStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("status")(codeOrLiteral.asInstanceOf[js.Any]).asInstanceOf[IStatus]

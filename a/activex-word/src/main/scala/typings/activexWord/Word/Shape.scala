@@ -124,7 +124,7 @@ trait Shape extends StObject {
   
   val OLEFormat: typings.activexWord.Word.OLEFormat = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentGroup: Shape = js.native
   
@@ -159,7 +159,7 @@ trait Shape extends StObject {
   val Script: typings.activexOffice.Office.Script = js.native
   
   def Select(): Unit = js.native
-  def Select(Replace: js.Any): Unit = js.native
+  def Select(Replace: Any): Unit = js.native
   
   def SetShapesDefaultProperties(): Unit = js.native
   
@@ -191,7 +191,7 @@ trait Shape extends StObject {
   
   val VerticalFlip: MsoTriState = js.native
   
-  val Vertices: js.Any = js.native
+  val Vertices: Any = js.native
   
   var Visible: MsoTriState = js.native
   

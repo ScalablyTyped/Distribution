@@ -22,6 +22,6 @@ object SlotDefaultValueSpec {
     
     inline def setDefaultValueList(value: SlotDefaultValueList): Self = StObject.set(x, "defaultValueList", value.asInstanceOf[js.Any])
     
-    inline def setDefaultValueListVarargs(value: SlotDefaultValue*): Self = StObject.set(x, "defaultValueList", js.Array(value :_*))
+    inline def setDefaultValueListVarargs(value: SlotDefaultValue*): Self = StObject.set(x, "defaultValueList", js.Array(value*))
   }
 }

@@ -33,6 +33,6 @@ object ListNotebookExecutionsOutput {
     
     inline def setNotebookExecutionsUndefined: Self = StObject.set(x, "NotebookExecutions", js.undefined)
     
-    inline def setNotebookExecutionsVarargs(value: NotebookExecutionSummary*): Self = StObject.set(x, "NotebookExecutions", js.Array(value :_*))
+    inline def setNotebookExecutionsVarargs(value: NotebookExecutionSummary*): Self = StObject.set(x, "NotebookExecutions", js.Array(value*))
   }
 }

@@ -17,7 +17,7 @@ trait UpdateThreatIntelSetRequest extends StObject {
   var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
-    * The updated URI of the file that contains the ThreateIntelSet. For example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key.
+    * The updated URI of the file that contains the ThreateIntelSet.
     */
   var Location: js.UndefOr[typings.awsSdk.guarddutyMod.Location] = js.undefined
   

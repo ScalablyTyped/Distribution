@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a OneNote section. Sections can contain pages.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.Section")
 @js.native
-class Section ()
+open class Section ()
   extends StObject
      with typings.officeJs.OneNote.Section {
   

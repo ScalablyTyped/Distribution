@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "Pib")
 @js.native
-class Pib ()
+open class Pib ()
   extends typings.ndnJs.keyChainMod.Pib

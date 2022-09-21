@@ -33,11 +33,11 @@ object XLabelRanges {
     ElementType: `type`,
     acquire: () => Unit,
     addNew: (CellRangeAddress, CellRangeAddress) => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByIndex: Double => Unit
   ): XLabelRanges = {

@@ -42,7 +42,7 @@ object PluginBase {
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
     inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     

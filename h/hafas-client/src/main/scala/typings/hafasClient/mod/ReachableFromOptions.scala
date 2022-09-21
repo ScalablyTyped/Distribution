@@ -1,6 +1,5 @@
 package typings.hafasClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +25,12 @@ trait ReachableFromOptions extends StObject {
   var maxTransfers: js.UndefOr[Double] = js.undefined
   
   /**
+    * return leg shapes?
+    * @default false
+    */
+  var polylines: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * products
     * @default undefined
     */
@@ -41,7 +46,7 @@ trait ReachableFromOptions extends StObject {
     * when
     * @default undefined
     */
-  var when: js.UndefOr[Date] = js.undefined
+  var when: js.UndefOr[js.Date] = js.undefined
 }
 object ReachableFromOptions {
   
@@ -64,6 +69,10 @@ object ReachableFromOptions {
     
     inline def setMaxTransfersUndefined: Self = StObject.set(x, "maxTransfers", js.undefined)
     
+    inline def setPolylines(value: Boolean): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
+    
+    inline def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
+    
     inline def setProducts(value: Products): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
@@ -72,7 +81,7 @@ object ReachableFromOptions {
     
     inline def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
     
-    inline def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: js.Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
     inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }

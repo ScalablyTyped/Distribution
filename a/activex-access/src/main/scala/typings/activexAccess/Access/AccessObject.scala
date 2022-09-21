@@ -32,7 +32,7 @@ trait AccessObject extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Properties(Index: String): AccessObjectProperty
   def Properties(Index: Double): AccessObjectProperty
@@ -58,7 +58,7 @@ object AccessObject {
     IsMemberSafe: Double => Boolean,
     IsWeb: Boolean,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Properties: AccessObjectProperties,
     Type: AcObjectType,
     _Name: String
@@ -94,7 +94,7 @@ object AccessObject {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: AccessObjectProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     

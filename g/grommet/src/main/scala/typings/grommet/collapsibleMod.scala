@@ -2,10 +2,9 @@ package typings.grommet
 
 import typings.grommet.grommetStrings.horizontal
 import typings.grommet.grommetStrings.vertical
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import typings.react.mod.ClassAttributes
 import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -14,27 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object collapsibleMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/Collapsible", "Collapsible")
   @js.native
-  class Collapsible protected ()
-    extends Component[
-          CollapsibleProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: CollapsibleProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
-    def this(
-      props: CollapsibleProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
-      context: js.Any
-    ) = this()
+  val Collapsible: FC[CollapsibleExtendedProps] = js.native
+  
+  trait CollapsibleExtendedProps
+    extends StObject
+       with CollapsibleProps
+       with ClassAttributes[HTMLDivElement]
+       with HTMLAttributes[HTMLDivElement]
+  object CollapsibleExtendedProps {
+    
+    inline def apply(): CollapsibleExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CollapsibleExtendedProps]
+    }
   }
-  @JSImport("grommet/components/Collapsible", "Collapsible")
-  @js.native
-  val Collapsible: ComponentClass[
-    CollapsibleProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-    ComponentState
-  ] = js.native
   
   trait CollapsibleProps extends StObject {
     
@@ -60,4 +54,6 @@ object collapsibleMod {
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     }
   }
+  
+  type divProps = DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]
 }

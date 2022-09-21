@@ -9,7 +9,7 @@ object tileGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/tile_gpu", "TileProgram")
   @js.native
-  class TileProgram protected ()
+  open class TileProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(aShape: js.Array[Double], reps: js.Array[Double]) = this()

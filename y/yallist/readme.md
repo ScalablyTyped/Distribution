@@ -1,7 +1,7 @@
 
 # Scala.js typings for yallist
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Yet Another Linked List
@@ -10,10 +10,10 @@ Yet Another Linked List
 | ------------------ | :-------------: |
 | Full name          | yallist |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 139 |
-| # downloads        | 1631503765 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.764292096666667E8 |
+| # stars            | 182.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/yallist#readme)

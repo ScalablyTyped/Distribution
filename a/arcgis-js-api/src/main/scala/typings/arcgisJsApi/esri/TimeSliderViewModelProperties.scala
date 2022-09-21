@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import typings.arcgisJsApi.arcgisJsApiStrings.`cumulative-from-end`
 import typings.arcgisJsApi.arcgisJsApiStrings.`cumulative-from-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`time-window`
@@ -11,6 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeSliderViewModelProperties extends StObject {
   
   /**
+    * Defines actions that will appear in a menu when the user clicks the ellipsis button ![timeSlider-actions-menu](https://developers.arcgis.com/javascript/latest/assets/img/apiref/widgets/timeslider/ellipsis.png) in the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html#actions)
+    */
+  var actions: js.UndefOr[CollectionProperties[Action]] = js.undefined
+  
+  /**
     * The temporal extent of the entire slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html#fullTimeExtent)
@@ -20,6 +29,8 @@ trait TimeSliderViewModelProperties extends StObject {
   /**
     * If animating, the time indicator(s) will restart if they reach the edge.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html#loop)
     */
   var loop: js.UndefOr[Boolean] = js.undefined
@@ -27,12 +38,16 @@ trait TimeSliderViewModelProperties extends StObject {
   /**
     * The time slider mode.
     *
+    * @default time-window
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html#mode)
     */
   var mode: js.UndefOr[instant | `time-window` | `cumulative-from-start` | `cumulative-from-end`] = js.undefined
   
   /**
-    * The time (in milliseconds) between playback steps.
+    * The time (in milliseconds) between animation steps.
+    *
+    * @default 1000
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html#playRate)
     */
@@ -41,23 +56,27 @@ trait TimeSliderViewModelProperties extends StObject {
   /**
     * Defines specific locations on the time slider where thumbs will snap to when manipulated.
     *
+    * @default { count : 10 }
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html#stops)
     */
   var stops: js.UndefOr[StopsByDates | StopsByCount | StopsByInterval] = js.undefined
   
   /**
-    * The user defined time extent.
+    * The current time extent of the time slider.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html#values)
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html#timeExtent)
     */
-  var values: js.UndefOr[js.Array[DateProperties]] = js.undefined
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
 }
 object TimeSliderViewModelProperties {
   
@@ -67,6 +86,12 @@ object TimeSliderViewModelProperties {
   }
   
   extension [Self <: TimeSliderViewModelProperties](x: Self) {
+    
+    inline def setActions(value: CollectionProperties[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setFullTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
     
@@ -88,13 +113,11 @@ object TimeSliderViewModelProperties {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setValues(value: js.Array[DateProperties]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
-    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
     
-    inline def setValuesVarargs(value: DateProperties*): Self = StObject.set(x, "values", js.Array(value :_*))
-    
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }

@@ -21,7 +21,7 @@ object Blaze {
   trait Template extends StObject {
     
     @JSName("$")
-    var $: js.Any
+    var $: Any
     
     def constructView(): View
     
@@ -54,7 +54,7 @@ object Blaze {
   object Template {
     
     inline def apply(
-      $: js.Any,
+      $: Any,
       constructView: () => View,
       created: js.Function,
       destroyed: js.Function,
@@ -76,7 +76,7 @@ object Blaze {
     
     extension [Self <: Template](x: Self) {
       
-      inline def set$(value: js.Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+      inline def set$(value: Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
       
       inline def setConstructView(value: () => View): Self = StObject.set(x, "constructView", js.Any.fromFunction0(value))
       
@@ -111,7 +111,7 @@ object Blaze {
   trait TemplateInstance extends StObject {
     
     @JSName("$")
-    def $(selector: String): js.Any
+    def $(selector: String): Any
     
     def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation
     
@@ -125,7 +125,7 @@ object Blaze {
     
     var lastNode: js.Object
     
-    def subscribe(name: String, args: js.Any*): SubscriptionHandle
+    def subscribe(name: String, args: Any*): SubscriptionHandle
     
     def subscriptionsReady(): Boolean
     
@@ -134,14 +134,14 @@ object Blaze {
   object TemplateInstance {
     
     inline def apply(
-      $: String => js.Any,
+      $: String => Any,
       autorun: js.Function1[/* computation */ Computation, Unit] => Computation,
       data: js.Object,
       find: String => HTMLElement,
       findAll: String => js.Array[HTMLElement],
       firstNode: js.Object,
       lastNode: js.Object,
-      subscribe: (String, /* repeated */ js.Any) => SubscriptionHandle,
+      subscribe: (String, /* repeated */ Any) => SubscriptionHandle,
       subscriptionsReady: () => Boolean,
       view: js.Object
     ): TemplateInstance = {
@@ -151,7 +151,7 @@ object Blaze {
     
     extension [Self <: TemplateInstance](x: Self) {
       
-      inline def set$(value: String => js.Any): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
+      inline def set$(value: String => Any): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
       
       inline def setAutorun(value: js.Function1[/* computation */ Computation, Unit] => Computation): Self = StObject.set(x, "autorun", js.Any.fromFunction1(value))
       
@@ -165,7 +165,7 @@ object Blaze {
       
       inline def setLastNode(value: js.Object): Self = StObject.set(x, "lastNode", value.asInstanceOf[js.Any])
       
-      inline def setSubscribe(value: (String, /* repeated */ js.Any) => SubscriptionHandle): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+      inline def setSubscribe(value: (String, /* repeated */ Any) => SubscriptionHandle): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
       
       inline def setSubscriptionsReady(value: () => Boolean): Self = StObject.set(x, "subscriptionsReady", js.Any.fromFunction0(value))
       
@@ -189,11 +189,11 @@ object Blaze {
           Template
         ] {
     
-    def currentData(): js.Any = js.native
+    def currentData(): Any = js.native
     
     def instance(): TemplateInstance = js.native
     
-    def parentData(numLevels: Double): js.Any = js.native
+    def parentData(numLevels: Double): Any = js.native
     
     def registerHelper(name: String, func: js.Function): Unit = js.native
   }

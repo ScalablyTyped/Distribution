@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsonpointer
 
-Typings are for version 4.1.0
+Typings are for version 5.0.1
 
 ## Library description:
 Simple JSON Addressing.
@@ -10,10 +10,10 @@ Simple JSON Addressing.
 | ------------------ | :-------------: |
 | Full name          | jsonpointer |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 103 |
-| # downloads        | 89289221 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.54965E7 |
+| # stars            | 175.0 |
 
 ## Links
 - [Homepage](https://github.com/janl/node-jsonpointer#readme)

@@ -24,6 +24,6 @@ object DescribeDeliveryChannelStatusResponse {
     
     inline def setDeliveryChannelsStatusUndefined: Self = StObject.set(x, "DeliveryChannelsStatus", js.undefined)
     
-    inline def setDeliveryChannelsStatusVarargs(value: DeliveryChannelStatus*): Self = StObject.set(x, "DeliveryChannelsStatus", js.Array(value :_*))
+    inline def setDeliveryChannelsStatusVarargs(value: DeliveryChannelStatus*): Self = StObject.set(x, "DeliveryChannelsStatus", js.Array(value*))
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined arangodb.ArangoDB.Document<arangodb.@arangodb/foxx/queues.Job> */
 trait DocumentJob
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var _from: js.UndefOr[String] = js.undefined
   
@@ -27,7 +27,7 @@ trait DocumentJob
   
   var created: Double
   
-  var data: js.Any
+  var data: Any
   
   var delayUntil: Double
   
@@ -65,7 +65,7 @@ object DocumentJob {
     _rev: String,
     abort: () => Unit,
     created: Double,
-    data: js.Any,
+    data: Any,
     delayUntil: Double,
     failures: js.Array[js.Object],
     maxFailures: Double,
@@ -90,7 +90,7 @@ object DocumentJob {
     
     inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDelayUntil(value: Double): Self = StObject.set(x, "delayUntil", value.asInstanceOf[js.Any])
     
@@ -100,7 +100,7 @@ object DocumentJob {
     
     inline def setFailures(value: js.Array[js.Object]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    inline def setFailuresVarargs(value: js.Object*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: js.Object*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
     

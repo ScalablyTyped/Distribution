@@ -5,7 +5,6 @@ import typings.chai.Object
 import typings.std.Partial
 import typings.std.ReadonlyMap
 import typings.std.ReadonlySet
-import typings.std.RegExp
 import typings.std.WeakSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,43 +17,54 @@ trait Assert extends StObject {
     * @param expression    Expression to test for truthiness.
     * @param message    Message to display on error.
     */
-  def apply(expression: js.Any): Unit = js.native
-  def apply(expression: js.Any, message: String): Unit = js.native
+  def apply(expression: Any): /* asserts expression */ Boolean = js.native
+  def apply(expression: Any, message: String): /* asserts expression */ Boolean = js.native
   
   /**
     * Asserts that fn will throw an error.
     *
     * @param fn   Function that may throw.
+    * @param errMsgMatcher   Expected error message matcher.
+    * @param ignored   Ignored parameter.
     * @param message   Message to display on error.
     */
   def Throw(fn: js.Function0[Unit]): Unit = js.native
-  /**
-    * Asserts that function will throw an error that is an instance of constructor.
-    *
-    * @param fn   Function that may throw.
-    * @param constructor   Potential expected error constructor.
-    * @param message   Message to display on error.
-    */
-  def Throw(fn: js.Function0[Unit], constructor: ErrorConstructor): Unit = js.native
-  def Throw(fn: js.Function0[Unit], constructor: ErrorConstructor, message: String): Unit = js.native
-  /**
-    * Asserts that function will throw an error that is an instance of constructor
-    * and an error with message matching regexp.
-    *
-    * @param fn   Function that may throw.
-    * @param constructor   Potential expected error constructor.
-    * @param message   Message to display on error.
-    */
-  def Throw(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: RegExp): Unit = js.native
-  def Throw(fn: js.Function0[Unit], message: String): Unit = js.native
-  /**
-    * Asserts that function will throw an error with message matching regexp.
-    *
-    * @param fn   Function that may throw.
-    * @param regExp   Potential expected message match.
-    * @param message   Message to display on error.
-    */
-  def Throw(fn: js.Function0[Unit], regExp: RegExp): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Any): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Any, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Unit, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: js.RegExp): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Any): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Any, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Unit, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Any): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Any, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Unit, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: js.Error): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: String, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: js.RegExp): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: Null, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: Unit, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: String, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: js.RegExp): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: Null, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: Unit, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: String, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: js.RegExp): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: Null, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: ErrorConstructor): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: String, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: js.RegExp): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: Null, message: String): Unit = js.native
+  def Throw(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: Unit, message: String): Unit = js.native
   
   /**
     * Asserts that the target is equal to expected, to within a +/- delta range.
@@ -104,8 +114,8 @@ trait Assert extends StObject {
     */
   def containsAllDeepKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
   def containsAllDeepKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def containsAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def containsAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def containsAllDeepKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def containsAllDeepKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
   
   /**
     * Asserts that `object` has all of the `keys` provided but may have more keys not listed.
@@ -119,8 +129,8 @@ trait Assert extends StObject {
     */
   def containsAllKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
   def containsAllKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def containsAllKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def containsAllKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def containsAllKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def containsAllKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
   
   /**
     * Asserts that a function decreases an object property.
@@ -135,7 +145,7 @@ trait Assert extends StObject {
   def decreases[T](modifier: js.Function, `object`: T, property: String, message: String): Unit = js.native
   
   /**
-    * Asserts that actual is deeply equal (==) to expected.
+    * Asserts that actual is deeply equal to expected.
     *
     * @type T   Type of the objects.
     * @param actual   Actual value.
@@ -176,8 +186,8 @@ trait Assert extends StObject {
     */
   def deepInclude[T](haystack: js.Array[T], needle: T): Unit = js.native
   def deepInclude[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
-  def deepInclude[T](haystack: ReadonlyMap[js.Any, T], needle: T): Unit = js.native
-  def deepInclude[T](haystack: ReadonlyMap[js.Any, T], needle: T, message: String): Unit = js.native
+  def deepInclude[T](haystack: ReadonlyMap[Any, T], needle: T): Unit = js.native
+  def deepInclude[T](haystack: ReadonlyMap[Any, T], needle: T, message: String): Unit = js.native
   def deepInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
   def deepInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   
@@ -194,8 +204,8 @@ trait Assert extends StObject {
     * @param needle
     * @param message   Message to display on error.
     */
-  def deepNestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def deepNestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def deepNestedInclude(haystack: Any, needle: Any): Unit = js.native
+  def deepNestedInclude(haystack: Any, needle: Any, message: String): Unit = js.native
   
   /**
     * Asserts that object has a property named by property with a value given by value.
@@ -207,8 +217,8 @@ trait Assert extends StObject {
     * @param value    Value to test.
     * @param message    Message to display on error.
     */
-  def deepNestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
-  def deepNestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
+  def deepNestedPropertyVal[T](`object`: T, property: String, value: Any): Unit = js.native
+  def deepNestedPropertyVal[T](`object`: T, property: String, value: Any, message: String): Unit = js.native
   
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object while ignoring inherited properties and checking for deep
@@ -217,8 +227,8 @@ trait Assert extends StObject {
     * @param needle
     * @param message   Message to display on error.
     */
-  def deepOwnInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def deepOwnInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def deepOwnInclude(haystack: Any, needle: Any): Unit = js.native
+  def deepOwnInclude(haystack: Any, needle: Any, message: String): Unit = js.native
   
   /**
     * Asserts that object has a property named by property, which can be a string
@@ -247,7 +257,7 @@ trait Assert extends StObject {
   def deepPropertyVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
   
   /**
-    * Asserts that actual is deeply strict equal (===) to expected.
+    * Alias to deepEqual
     *
     * @type T   Type of the objects.
     * @param actual   Actual value.
@@ -295,8 +305,8 @@ trait Assert extends StObject {
     */
   def doesNotHaveAllDeepKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
   def doesNotHaveAllDeepKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def doesNotHaveAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def doesNotHaveAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def doesNotHaveAllDeepKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def doesNotHaveAllDeepKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
   
   /**
     * Asserts that `object` does not have at least one of the `keys` provided.
@@ -310,8 +320,8 @@ trait Assert extends StObject {
     */
   def doesNotHaveAllKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
   def doesNotHaveAllKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def doesNotHaveAllKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def doesNotHaveAllKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def doesNotHaveAllKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def doesNotHaveAllKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
   
   /**
     * Asserts that `object` contains all of the `keys` provided.
@@ -327,8 +337,8 @@ trait Assert extends StObject {
     */
   def doesNotHaveAnyDeepKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
   def doesNotHaveAnyDeepKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
   
   /**
     * Asserts that `object` has none of the `keys` provided.
@@ -342,8 +352,8 @@ trait Assert extends StObject {
     */
   def doesNotHaveAnyKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
   def doesNotHaveAnyKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def doesNotHaveAnyKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def doesNotHaveAnyKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def doesNotHaveAnyKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def doesNotHaveAnyKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
   
   /**
     * Asserts that a function does not increase an object property.
@@ -361,36 +371,47 @@ trait Assert extends StObject {
     * Asserts that fn will not throw an error.
     *
     * @param fn   Function that may throw.
+    * @param errMsgMatcher   Expected error message matcher.
+    * @param ignored   Ignored parameter.
     * @param message   Message to display on error.
     */
   def doesNotThrow(fn: js.Function0[Unit]): Unit = js.native
-  /**
-    * Asserts that function will throw an error that is an instance of constructor.
-    *
-    * @param fn   Function that may throw.
-    * @param constructor   Potential expected error constructor.
-    * @param message   Message to display on error.
-    */
-  def doesNotThrow(fn: js.Function0[Unit], constructor: ErrorConstructor): Unit = js.native
-  def doesNotThrow(fn: js.Function0[Unit], constructor: ErrorConstructor, message: String): Unit = js.native
-  /**
-    * Asserts that function will throw an error that is an instance of constructor
-    * and an error with message matching regexp.
-    *
-    * @param fn   Function that may throw.
-    * @param constructor   Potential expected error constructor.
-    * @param message   Message to display on error.
-    */
-  def doesNotThrow(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: RegExp): Unit = js.native
-  def doesNotThrow(fn: js.Function0[Unit], message: String): Unit = js.native
-  /**
-    * Asserts that function will throw an error with message matching regexp.
-    *
-    * @param fn   Function that may throw.
-    * @param regExp   Potential expected message match.
-    * @param message   Message to display on error.
-    */
-  def doesNotThrow(fn: js.Function0[Unit], regExp: RegExp): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Any): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Any, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Unit, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: js.RegExp): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Any): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Any, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Unit, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Any): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Any, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Unit, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: js.Error): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: String, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: js.RegExp): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: Null, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: Unit, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: String, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: js.RegExp): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: Null, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: Unit, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: String, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: js.RegExp): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: Null, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: ErrorConstructor): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: String, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: js.RegExp): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: Null, message: String): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: Unit, message: String): Unit = js.native
   
   /**
     * Asserts non-strict equality (==) of actual and expected.
@@ -471,8 +492,8 @@ trait Assert extends StObject {
     */
   def hasAllDeepKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
   def hasAllDeepKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def hasAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def hasAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def hasAllDeepKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def hasAllDeepKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
   
   /**
     * Asserts that `object` has all and only all of the `keys` provided.
@@ -486,8 +507,8 @@ trait Assert extends StObject {
     */
   def hasAllKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
   def hasAllKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def hasAllKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def hasAllKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def hasAllKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def hasAllKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
   
   /**
     * Asserts that `object` has at least one of the `keys` provided.
@@ -503,8 +524,8 @@ trait Assert extends StObject {
     */
   def hasAnyDeepKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
   def hasAnyDeepKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def hasAnyDeepKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def hasAnyDeepKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def hasAnyDeepKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def hasAnyDeepKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
   
   /**
     * Asserts that `object` has at least one of the `keys` provided.
@@ -518,8 +539,8 @@ trait Assert extends StObject {
     */
   def hasAnyKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
   def hasAnyKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def hasAnyKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def hasAnyKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def hasAnyKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def hasAnyKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
   
   /**
     * Asserts if value is not a false value, and throws if it is a true value.
@@ -562,8 +583,8 @@ trait Assert extends StObject {
     */
   def include[T](haystack: js.Array[T], needle: T): Unit = js.native
   def include[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
-  def include[T](haystack: ReadonlyMap[js.Any, T], needle: T): Unit = js.native
-  def include[T](haystack: ReadonlyMap[js.Any, T], needle: T, message: String): Unit = js.native
+  def include[T](haystack: ReadonlyMap[Any, T], needle: T): Unit = js.native
+  def include[T](haystack: ReadonlyMap[Any, T], needle: T, message: String): Unit = js.native
   def include[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
   def include[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
@@ -1047,8 +1068,8 @@ trait Assert extends StObject {
     * @param regexp   Potential match of value.
     * @param message   Message to display on error.
     */
-  def `match`(value: String, regexp: RegExp): Unit = js.native
-  def `match`(value: String, regexp: RegExp, message: String): Unit = js.native
+  def `match`(value: String, regexp: js.RegExp): Unit = js.native
+  def `match`(value: String, regexp: js.RegExp, message: String): Unit = js.native
   
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object.
@@ -1063,8 +1084,8 @@ trait Assert extends StObject {
     * @param needle
     * @param message   Message to display on error.
     */
-  def nestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def nestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def nestedInclude(haystack: Any, needle: Any): Unit = js.native
+  def nestedInclude(haystack: Any, needle: Any, message: String): Unit = js.native
   
   /**
     * Asserts that object has a direct or inherited property named by property,
@@ -1088,11 +1109,11 @@ trait Assert extends StObject {
     * @param value    Value to test.
     * @param message    Message to display on error.
     */
-  def nestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
-  def nestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
+  def nestedPropertyVal[T](`object`: T, property: String, value: Any): Unit = js.native
+  def nestedPropertyVal[T](`object`: T, property: String, value: Any, message: String): Unit = js.native
   
   /**
-    * Asserts that actual is not deeply equal (==) to expected.
+    * Asserts that actual is not deeply equal to expected.
     *
     * @type T   Type of the objects.
     * @param actual   Actual value.
@@ -1133,8 +1154,8 @@ trait Assert extends StObject {
     */
   def notDeepInclude[T](haystack: js.Array[T], needle: T): Unit = js.native
   def notDeepInclude[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
-  def notDeepInclude[T](haystack: ReadonlyMap[js.Any, T], needle: T): Unit = js.native
-  def notDeepInclude[T](haystack: ReadonlyMap[js.Any, T], needle: T, message: String): Unit = js.native
+  def notDeepInclude[T](haystack: ReadonlyMap[Any, T], needle: T): Unit = js.native
+  def notDeepInclude[T](haystack: ReadonlyMap[Any, T], needle: T, message: String): Unit = js.native
   def notDeepInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
   def notDeepInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   
@@ -1151,8 +1172,8 @@ trait Assert extends StObject {
     * @param needle
     * @param message   Message to display on error.
     */
-  def notDeepNestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def notDeepNestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def notDeepNestedInclude(haystack: Any, needle: Any): Unit = js.native
+  def notDeepNestedInclude(haystack: Any, needle: Any, message: String): Unit = js.native
   
   /**
     * Asserts that object does not have a property named by property with value given by value.
@@ -1164,8 +1185,8 @@ trait Assert extends StObject {
     * @param value    Value to test.
     * @param message    Message to display on error.
     */
-  def notDeepNestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
-  def notDeepNestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
+  def notDeepNestedPropertyVal[T](`object`: T, property: String, value: Any): Unit = js.native
+  def notDeepNestedPropertyVal[T](`object`: T, property: String, value: Any, message: String): Unit = js.native
   
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the absence of a subset of properties in an object while ignoring inherited properties and checking for deep equality.
@@ -1174,8 +1195,8 @@ trait Assert extends StObject {
     * @param needle
     * @param message   Message to display on error.
     */
-  def notDeepOwnInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def notDeepOwnInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def notDeepOwnInclude(haystack: Any, needle: Any): Unit = js.native
+  def notDeepOwnInclude(haystack: Any, needle: Any, message: String): Unit = js.native
   
   /**
     * Asserts that object does not have a property named by property, which can be a
@@ -1204,7 +1225,7 @@ trait Assert extends StObject {
   def notDeepPropertyVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
   
   /**
-    * Asserts non-strict inequality (==) of actual and expected.
+    * Asserts non-strict inequality (!=) of actual and expected.
     *
     * @type T   Type of the objects.
     * @param actual   Actual value.
@@ -1274,8 +1295,8 @@ trait Assert extends StObject {
     */
   def notInclude[T](haystack: js.Array[T], needle: T): Unit = js.native
   def notInclude[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
-  def notInclude[T](haystack: ReadonlyMap[js.Any, T], needle: T): Unit = js.native
-  def notInclude[T](haystack: ReadonlyMap[js.Any, T], needle: T, message: String): Unit = js.native
+  def notInclude[T](haystack: ReadonlyMap[Any, T], needle: T): Unit = js.native
+  def notInclude[T](haystack: ReadonlyMap[Any, T], needle: T, message: String): Unit = js.native
   def notInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
   def notInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
@@ -1300,6 +1321,18 @@ trait Assert extends StObject {
     */
   def notIncludeDeepOrderedMembers[T](superset: js.Array[T], subset: js.Array[T]): Unit = js.native
   def notIncludeDeepOrderedMembers[T](superset: js.Array[T], subset: js.Array[T], message: String): Unit = js.native
+  
+  /**
+    * Asserts that subset isn’t included in superset in any order.
+    * Uses a strict equality check (===). Duplicates are ignored.
+    *
+    * @type T   Type of set values.
+    * @param superset   Actual set of values.
+    * @param subset   Potential not contained set of values.
+    * @param message   Message to display on error.
+    */
+  def notIncludeMembers[T](superset: js.Array[T], subset: js.Array[T]): Unit = js.native
+  def notIncludeMembers[T](superset: js.Array[T], subset: js.Array[T], message: String): Unit = js.native
   
   /**
     * Asserts that subset isn’t included in superset in the same order beginning with the first element in superset.
@@ -1331,8 +1364,8 @@ trait Assert extends StObject {
     * @param regexp   Potential match of value.
     * @param message   Message to display on error.
     */
-  def notMatch(expected: js.Any, regexp: RegExp): Unit = js.native
-  def notMatch(expected: js.Any, regexp: RegExp, message: String): Unit = js.native
+  def notMatch(expected: Any, regexp: js.RegExp): Unit = js.native
+  def notMatch(expected: Any, regexp: js.RegExp, message: String): Unit = js.native
   
   /**
     * Asserts that ‘haystack’ does not include ‘needle’. Can be used to assert the absence of a subset of properties in an object.
@@ -1347,8 +1380,8 @@ trait Assert extends StObject {
     * @param needle
     * @param message   Message to display on error.
     */
-  def notNestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def notNestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def notNestedInclude(haystack: Any, needle: Any): Unit = js.native
+  def notNestedInclude(haystack: Any, needle: Any, message: String): Unit = js.native
   
   /**
     * Asserts that object does not have a property named by property,
@@ -1373,8 +1406,8 @@ trait Assert extends StObject {
     * @param value    Value to test.
     * @param message    Message to display on error.
     */
-  def notNestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
-  def notNestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
+  def notNestedPropertyVal[T](`object`: T, property: String, value: Any): Unit = js.native
+  def notNestedPropertyVal[T](`object`: T, property: String, value: Any, message: String): Unit = js.native
   
   /**
     * Asserts that object is falsy.
@@ -1393,8 +1426,8 @@ trait Assert extends StObject {
     * @param needle
     * @param message   Message to display on error.
     */
-  def notOwnInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def notOwnInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def notOwnInclude(haystack: Any, needle: Any): Unit = js.native
+  def notOwnInclude(haystack: Any, needle: Any, message: String): Unit = js.native
   
   /**
     * Asserts that object has a property named by property.
@@ -1455,7 +1488,7 @@ trait Assert extends StObject {
   def notSealed[T](`object`: T, message: String): Unit = js.native
   
   /**
-    * Asserts strict inequality (==) of actual and expected.
+    * Asserts strict inequality (!==) of actual and expected.
     *
     * @type T   Type of the objects.
     * @param actual   Actual value.
@@ -1515,8 +1548,8 @@ trait Assert extends StObject {
     * @param needle
     * @param message   Message to display on error.
     */
-  def ownInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def ownInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def ownInclude(haystack: Any, needle: Any): Unit = js.native
+  def ownInclude(haystack: Any, needle: Any, message: String): Unit = js.native
   
   /**
     * Asserts that object has a property named by property.
@@ -1615,65 +1648,93 @@ trait Assert extends StObject {
     * Asserts that fn will throw an error.
     *
     * @param fn   Function that may throw.
+    * @param errMsgMatcher   Expected error message matcher.
+    * @param ignored   Ignored parameter.
     * @param message   Message to display on error.
     */
   def `throw`(fn: js.Function0[Unit]): Unit = js.native
-  /**
-    * Asserts that function will throw an error that is an instance of constructor.
-    *
-    * @param fn   Function that may throw.
-    * @param constructor   Potential expected error constructor.
-    * @param message   Message to display on error.
-    */
-  def `throw`(fn: js.Function0[Unit], constructor: ErrorConstructor): Unit = js.native
-  def `throw`(fn: js.Function0[Unit], constructor: ErrorConstructor, message: String): Unit = js.native
-  /**
-    * Asserts that function will throw an error that is an instance of constructor
-    * and an error with message matching regexp.
-    *
-    * @param fn   Function that may throw.
-    * @param constructor   Potential expected error constructor.
-    * @param message   Message to display on error.
-    */
-  def `throw`(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: RegExp): Unit = js.native
-  def `throw`(fn: js.Function0[Unit], message: String): Unit = js.native
-  /**
-    * Asserts that function will throw an error with message matching regexp.
-    *
-    * @param fn   Function that may throw.
-    * @param regExp   Potential expected message match.
-    * @param message   Message to display on error.
-    */
-  def `throw`(fn: js.Function0[Unit], regExp: RegExp): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Any): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Any, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Unit, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: js.RegExp): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Any): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Any, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Unit, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Any): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Any, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Unit, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: js.Error): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: String, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: js.RegExp): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: Null, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: Unit, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: String, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: js.RegExp): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: Null, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: Unit, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: String, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: js.RegExp): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: Null, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: ErrorConstructor): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: String, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: js.RegExp): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: Null, message: String): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: Unit, message: String): Unit = js.native
   
   /**
     * Asserts that fn will throw an error.
     *
     * @param fn   Function that may throw.
+    * @param errMsgMatcher   Expected error message matcher.
+    * @param ignored   Ignored parameter.
     * @param message   Message to display on error.
     */
   def throws(fn: js.Function0[Unit]): Unit = js.native
-  /**
-    * Asserts that function will throw an error that is an instance of constructor
-    * and an error with message matching regexp.
-    *
-    * @param fn   Function that may throw.
-    * @param constructor   Potential expected error constructor.
-    * @param message   Message to display on error.
-    */
-  def throws(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: RegExp): Unit = js.native
-  def throws(fn: js.Function0[Unit], errType: ErrorConstructor): Unit = js.native
-  def throws(fn: js.Function0[Unit], errType: ErrorConstructor, message: String): Unit = js.native
-  /**
-    * Asserts that function will throw an error with message matching regexp.
-    *
-    * @param fn   Function that may throw.
-    * @param errType  Potential expected message match or error constructor.
-    * @param message   Message to display on error.
-    */
-  def throws(fn: js.Function0[Unit], errType: RegExp): Unit = js.native
-  def throws(fn: js.Function0[Unit], errType: RegExp, message: String): Unit = js.native
-  def throws(fn: js.Function0[Unit], message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Any): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Any, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: String, ignored: Unit, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: js.RegExp): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Any): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Any, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: js.RegExp, ignored: Unit, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Any): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Any, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errMsgMatcher: Unit, ignored: Unit, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: js.Error): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: String, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: js.RegExp): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: Null, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: js.Error, errMsgMatcher: Unit, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: String, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: js.RegExp): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: Null, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Null, errMsgMatcher: Unit, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: String, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: js.RegExp): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: Unit, errMsgMatcher: Null, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: ErrorConstructor): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: String, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: js.RegExp): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: js.RegExp, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: Null, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errorLike: ErrorConstructor, errMsgMatcher: Unit, message: String): Unit = js.native
   
   /**
     * Asserts that value's type is name, as determined by Object.prototype.toString.

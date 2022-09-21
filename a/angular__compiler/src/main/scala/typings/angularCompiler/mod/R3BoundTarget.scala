@@ -1,14 +1,6 @@
 package typings.angularCompiler.mod
 
 import typings.angularCompiler.anon.Directive
-import typings.angularCompiler.r3AstMod.BoundAttribute
-import typings.angularCompiler.r3AstMod.BoundEvent
-import typings.angularCompiler.r3AstMod.Reference
-import typings.angularCompiler.r3AstMod.Template
-import typings.angularCompiler.r3AstMod.TextAttribute
-import typings.angularCompiler.r3AstMod.Variable
-import typings.angularCompiler.t2ApiMod.DirectiveMeta
-import typings.angularCompiler.t2ApiMod.Target
 import typings.std.Map
 import typings.std.ReadonlySet
 import typings.std.Set
@@ -18,23 +10,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "R3BoundTarget")
 @js.native
-class R3BoundTarget[DirectiveT /* <: DirectiveMeta */] protected ()
-  extends typings.angularCompiler.compilerMod.R3BoundTarget[DirectiveT] {
+open class R3BoundTarget[DirectiveT /* <: DirectiveMeta */] protected ()
+  extends StObject
+     with BoundTarget[DirectiveT] {
   def this(
     target: Target,
-    directives: Map[typings.angularCompiler.r3AstMod.Element | Template, js.Array[DirectiveT]],
+    directives: Map[TmplAstElement | TmplAstTemplate, js.Array[DirectiveT]],
     bindings: Map[
-        BoundAttribute | BoundEvent | TextAttribute, 
-        DirectiveT | typings.angularCompiler.r3AstMod.Element | Template
+        TmplAstBoundAttribute | TmplAstBoundEvent | TmplAstTextAttribute, 
+        DirectiveT | TmplAstElement | TmplAstTemplate
       ],
     references: Map[
-        BoundAttribute | BoundEvent | Reference | TextAttribute, 
-        Directive[DirectiveT] | typings.angularCompiler.r3AstMod.Element | Template
+        TmplAstBoundAttribute | TmplAstBoundEvent | TmplAstReference | TmplAstTextAttribute, 
+        Directive[DirectiveT] | TmplAstElement | TmplAstTemplate
       ],
-    exprTargets: Map[typings.angularCompiler.astMod.AST, Reference | Variable],
-    symbols: Map[Reference | Variable, Template],
-    nestingLevel: Map[Template, Double],
-    templateEntities: Map[Template | Null, ReadonlySet[Reference | Variable]],
+    exprTargets: Map[AST, TmplAstReference | TmplAstVariable],
+    symbols: Map[TmplAstReference | TmplAstVariable, TmplAstTemplate],
+    nestingLevel: Map[TmplAstTemplate, Double],
+    templateEntities: Map[TmplAstTemplate | Null, ReadonlySet[TmplAstReference | TmplAstVariable]],
     usedPipes: Set[String]
   ) = this()
+  
+  /* private */ var bindings: Any = js.native
+  
+  /* private */ var directives: Any = js.native
+  
+  /* private */ var exprTargets: Any = js.native
+  
+  /* private */ var nestingLevel: Any = js.native
+  
+  /* private */ var references: Any = js.native
+  
+  /* private */ var symbols: Any = js.native
+  
+  /* private */ var templateEntities: Any = js.native
+  
+  /* private */ var usedPipes: Any = js.native
 }

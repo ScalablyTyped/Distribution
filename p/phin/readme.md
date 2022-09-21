@@ -1,7 +1,7 @@
 
 # Scala.js typings for phin
 
-Typings are for version 3.5.1
+Typings are for version 3.6.1
 
 ## Library description:
 The ultra-lightweight Node.js HTTP client
@@ -10,10 +10,10 @@ The ultra-lightweight Node.js HTTP client
 | ------------------ | :-------------: |
 | Full name          | phin |
 | Keywords           | http, https, request, fetch, ajax, url, uri |
-| # releases         | 5 |
-| # dependents       | 98 |
-| # downloads        | 42862474 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 5206097.666666667 |
+| # stars            | 511.0 |
 
 ## Links
 - [Homepage](https://github.com/ethanent/phin)

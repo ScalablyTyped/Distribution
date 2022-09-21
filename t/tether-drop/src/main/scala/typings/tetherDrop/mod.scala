@@ -14,7 +14,7 @@ object mod {
   // global Drop constructor
   @JSImport("tether-drop", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Drop {
     def this(options: IDropOptions) = this()
@@ -45,10 +45,10 @@ object mod {
       * Drop instances fire "open" and "close" events.
       */
     def on(event: String, handler: js.Function): Unit = js.native
-    def on(event: String, handler: js.Function, context: js.Any): Unit = js.native
+    def on(event: String, handler: js.Function, context: Any): Unit = js.native
     
     def once(event: String, handler: js.Function): Unit = js.native
-    def once(event: String, handler: js.Function, context: js.Any): Unit = js.native
+    def once(event: String, handler: js.Function, context: Any): Unit = js.native
     
     def open(): Unit = js.native
     

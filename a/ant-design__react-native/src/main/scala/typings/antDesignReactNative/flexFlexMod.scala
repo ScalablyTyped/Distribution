@@ -13,7 +13,7 @@ object flexFlexMod {
   
   @JSImport("@ant-design/react-native/lib/flex/Flex", JSImport.Default)
   @js.native
-  class default () extends Flex
+  open class default () extends Flex
   /* static members */
   object default {
     
@@ -23,8 +23,8 @@ object flexFlexMod {
     
     @JSImport("@ant-design/react-native/lib/flex/Flex", "default.Item")
     @js.native
-    def Item: js.Any = js.native
-    inline def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item: Any = js.native
+    inline def Item_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/flex/Flex", "default.defaultProps")
     @js.native
@@ -33,8 +33,7 @@ object flexFlexMod {
   }
   
   @js.native
-  trait Flex
-    extends Component[FlexProps, js.Any, js.Any]
+  trait Flex extends Component[FlexProps, Any, Any]
   
   trait FlexProps
     extends StObject

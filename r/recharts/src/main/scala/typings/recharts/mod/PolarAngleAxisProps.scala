@@ -116,8 +116,6 @@ trait PolarAngleAxisProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var hide: js.UndefOr[Boolean] = js.undefined
@@ -206,7 +204,7 @@ trait PolarAngleAxisProps extends StObject {
   
   var textRendering: js.UndefOr[auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit] = js.undefined
   
-  var tick: js.UndefOr[Boolean | ContentRenderer[js.Any] | js.Object | ReactElement] = js.undefined
+  var tick: js.UndefOr[Boolean | ContentRenderer[Any] | js.Object | ReactElement] = js.undefined
   
   var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
   
@@ -315,7 +313,7 @@ object PolarAngleAxisProps {
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
     
@@ -396,10 +394,6 @@ object PolarAngleAxisProps {
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
-    
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -577,13 +571,13 @@ object PolarAngleAxisProps {
     
     inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
     
-    inline def setTick(value: Boolean | ContentRenderer[js.Any] | js.Object | ReactElement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: Boolean | ContentRenderer[Any] | js.Object | ReactElement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    inline def setTickFormatter(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "tickFormatter", js.Any.fromFunction1(value))
+    inline def setTickFormatter(value: /* value */ Any => Any): Self = StObject.set(x, "tickFormatter", js.Any.fromFunction1(value))
     
     inline def setTickFormatterUndefined: Self = StObject.set(x, "tickFormatter", js.undefined)
     
-    inline def setTickFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
+    inline def setTickFunction1(value: Any => ReactNode): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
     
     inline def setTickLine(value: Boolean | js.Object): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
     
@@ -595,7 +589,7 @@ object PolarAngleAxisProps {
     
     inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    inline def setTicksVarargs(value: PolarAngleAxisTick*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: PolarAngleAxisTick*): Self = StObject.set(x, "ticks", js.Array(value*))
     
     inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     

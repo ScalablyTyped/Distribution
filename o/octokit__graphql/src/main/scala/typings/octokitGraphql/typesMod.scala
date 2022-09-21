@@ -26,7 +26,7 @@ object typesMod {
     extends StObject
        with EndpointOptions {
     
-    var variables: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var variables: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object GraphQlEndpointOptions {
     
@@ -37,7 +37,7 @@ object typesMod {
     
     extension [Self <: GraphQlEndpointOptions](x: Self) {
       
-      inline def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: StringDictionary[Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
       inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }
@@ -64,11 +64,11 @@ object typesMod {
       
       inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      inline def setErrorsVarargs(value: Extensions*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Extensions*): Self = StObject.set(x, "errors", js.Array(value*))
     }
   }
   
-  type GraphQlQueryResponseData = StringDictionary[js.Any]
+  type GraphQlQueryResponseData = StringDictionary[Any]
   
   type GraphQlResponse[ResponseData] = js.Promise[ResponseData]
   
@@ -101,29 +101,17 @@ object typesMod {
     def defaults(newDefaults: RequestParameters): graphql = js.native
     
     /**
-      * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
-      */
-    def endpoint[R /* <: Route */, P /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](route: R): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
-        P, 
-        /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
-      ]) = js.native
-    /**
-      * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
-      */
-    def endpoint[R /* <: Route */, P /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](route: R, parameters: P): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
-        P, 
-        /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
-      ]) = js.native
-    /**
       * Transforms a GitHub REST API endpoint into generic request options
       *
-      * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
+      * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
       * @param {object} [parameters] URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       */
     /**
       * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
       */
-    def endpoint[R /* <: Route */, P /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
+    def endpoint[R /* <: Route */, P /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R
+    ): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
         P, 
         /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
       ]) = js.native
@@ -131,7 +119,7 @@ object typesMod {
       * Octokit endpoint API, see {@link https://github.com/octokit/endpoint.js|@octokit/endpoint}
       */
     def endpoint[R /* <: Route */, P /* <: typings.octokitTypes.requestParametersMod.RequestParameters */](
-      route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 670 */ js.Any,
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R,
       parameters: P
     ): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
         P, 

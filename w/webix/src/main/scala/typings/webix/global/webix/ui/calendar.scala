@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.calendar because var conflicts: $height, $scope, $skin_Original, $view, $width, config, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original. Inlined  */ @JSGlobal("webix.ui.calendar")
+- typings.webix.webix.ui.calendar because var conflicts: $height, $scope, $setNode, $skin_Original, $view, $width, config, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original. Inlined  */ @JSGlobal("webix.ui.calendar")
 @js.native
-class calendar ()
+open class calendar ()
   extends typings.webix.mod.ui.calendar

@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PortalItemConstructor
   extends StObject
-     with Instantiable0[PortalItem]
+     with /**
+  * An item (a unit of content) in the Portal.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html)
+  */
+Instantiable0[PortalItem]
      with Instantiable1[/* properties */ PortalItemProperties, PortalItem] {
   
-  def fromJSON(json: js.Any): PortalItem = js.native
+  def fromJSON(json: Any): PortalItem = js.native
 }

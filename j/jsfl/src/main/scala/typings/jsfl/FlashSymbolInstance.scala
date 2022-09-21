@@ -133,7 +133,7 @@ object FlashSymbolInstance {
     
     inline def setFilters(value: js.Array[FlashFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: FlashFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: FlashFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setFirstFrame(value: Double): Self = StObject.set(x, "firstFrame", value.asInstanceOf[js.Any])
     

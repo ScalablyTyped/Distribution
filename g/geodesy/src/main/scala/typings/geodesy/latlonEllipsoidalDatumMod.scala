@@ -13,7 +13,7 @@ object latlonEllipsoidalDatumMod {
   
   @JSImport("geodesy/latlon-ellipsoidal-datum", JSImport.Default)
   @js.native
-  class default protected () extends LatLonEllipsoidalDatum {
+  open class default protected () extends LatLonEllipsoidalDatum {
     def this(lat: Double, lon: Double) = this()
     def this(lat: Double, lon: Double, height: Double) = this()
     def this(lat: Double, lon: Double, height: Double, datum: Datum) = this()
@@ -54,7 +54,7 @@ object latlonEllipsoidalDatumMod {
   
   @JSImport("geodesy/latlon-ellipsoidal-datum", "Cartesian")
   @js.native
-  class Cartesian protected () extends CartesianDatum {
+  open class Cartesian protected () extends CartesianDatum {
     def this(x: Double, y: Double, z: Double) = this()
     def this(x: Double, y: Double, z: Double, datum: Datum) = this()
   }
@@ -62,7 +62,7 @@ object latlonEllipsoidalDatumMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("geodesy/latlon-ellipsoidal-datum", "Dms")
   @js.native
-  class Dms ()
+  open class Dms ()
     extends typings.geodesy.latlonEllipsoidalMod.Dms
   object Dms {
     

@@ -18,11 +18,11 @@ trait TypeofDisplayNames
   
   def __addLocaleData(data: DisplayNamesLocaleData*): Unit = js.native
   
-  /* private */ var __defaultLocale: js.Any = js.native
+  /* private */ var __defaultLocale: Any = js.native
   
-  /* private */ var availableLocales: js.Any = js.native
+  /* private */ var availableLocales: Any = js.native
   
-  /* private */ var getDefaultLocale: js.Any = js.native
+  /* private */ var getDefaultLocale: Any = js.native
   
   var localeData: Record[String, js.UndefOr[DisplayNamesData]] = js.native
   

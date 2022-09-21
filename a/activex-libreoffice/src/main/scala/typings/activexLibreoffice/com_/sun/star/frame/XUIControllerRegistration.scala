@@ -47,7 +47,7 @@ object XUIControllerRegistration {
     acquire: () => Unit,
     deregisterController: (String, String) => Unit,
     hasController: (String, String) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerController: (String, String, String) => Unit,
     release: () => Unit
   ): XUIControllerRegistration = {

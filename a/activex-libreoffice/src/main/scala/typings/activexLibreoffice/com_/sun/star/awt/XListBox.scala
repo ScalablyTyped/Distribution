@@ -137,7 +137,7 @@ object XListBox {
     getSelectedItemsPos: () => SafeArray[Double],
     isMutipleMode: () => Boolean,
     makeVisible: Double => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeActionListener: XActionListener => Unit,
     removeItemListener: XItemListener => Unit,

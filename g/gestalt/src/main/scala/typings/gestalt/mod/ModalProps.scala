@@ -1,7 +1,15 @@
 package typings.gestalt.mod
 
+import typings.gestalt.gestaltStrings.`100`
+import typings.gestalt.gestaltStrings.`200`
+import typings.gestalt.gestaltStrings.`300`
+import typings.gestalt.gestaltStrings.`400`
+import typings.gestalt.gestaltStrings.`500`
+import typings.gestalt.gestaltStrings.`600`
 import typings.gestalt.gestaltStrings.alertdialog
+import typings.gestalt.gestaltStrings.center
 import typings.gestalt.gestaltStrings.dialog
+import typings.gestalt.gestaltStrings.left
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
@@ -12,21 +20,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ModalProps extends StObject {
   
+  /*
+    * Temporary undocumented prop to disable ScrollBoundaryContainer.
+    */
+  var _dangerouslyDisableScrollBoundaryContainer: js.UndefOr[Boolean] = js.undefined
+  
   var accessibilityModalLabel: String
+  
+  /**
+    * Use to specify the alignment of `heading` & `subHeading` strings
+    *
+    * @default "center"
+    */
+  var align: js.UndefOr[center | left] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * Close the modal when you click outside of it
+    *
+    * @default true
+    */
   var closeOnOutsideClick: js.UndefOr[Boolean] = js.undefined
   
   var footer: js.UndefOr[ReactNode] = js.undefined
   
-  var heading: js.UndefOr[String | ReactNode] = js.undefined
+  var heading: js.UndefOr[ReactNode] = js.undefined
   
   def onDismiss(): Unit
   
   var role: js.UndefOr[alertdialog | dialog] = js.undefined
   
-  var size: js.UndefOr[sm | md | lg | Double] = js.undefined
+  var size: js.UndefOr[sm | md | lg | `100` | `200` | `300` | `400` | `500` | `600`] = js.undefined
+  
+  /**
+    * Only renders with `heading` strings
+    */
+  var subHeading: js.UndefOr[String] = js.undefined
 }
 object ModalProps {
   
@@ -38,6 +68,10 @@ object ModalProps {
   extension [Self <: ModalProps](x: Self) {
     
     inline def setAccessibilityModalLabel(value: String): Self = StObject.set(x, "accessibilityModalLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAlign(value: center | left): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
@@ -51,7 +85,7 @@ object ModalProps {
     
     inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    inline def setHeading(value: String | ReactNode): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: ReactNode): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
@@ -61,8 +95,16 @@ object ModalProps {
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    inline def setSize(value: sm | md | lg | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: sm | md | lg | `100` | `200` | `300` | `400` | `500` | `600`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSubHeading(value: String): Self = StObject.set(x, "subHeading", value.asInstanceOf[js.Any])
+    
+    inline def setSubHeadingUndefined: Self = StObject.set(x, "subHeading", js.undefined)
+    
+    inline def set_dangerouslyDisableScrollBoundaryContainer(value: Boolean): Self = StObject.set(x, "_dangerouslyDisableScrollBoundaryContainer", value.asInstanceOf[js.Any])
+    
+    inline def set_dangerouslyDisableScrollBoundaryContainerUndefined: Self = StObject.set(x, "_dangerouslyDisableScrollBoundaryContainer", js.undefined)
   }
 }

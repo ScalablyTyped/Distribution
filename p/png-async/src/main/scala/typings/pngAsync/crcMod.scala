@@ -1,6 +1,6 @@
 package typings.pngAsync
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object crcMod {
   
   @JSImport("png-async/lib/crc", JSImport.Namespace)
   @js.native
-  class ^ () extends CrcStream
+  open class ^ () extends CrcStream
   @JSImport("png-async/lib/crc", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -21,9 +21,9 @@ object crcMod {
   @js.native
   trait CrcStream extends Writable {
     
-    /* private */ var _crc: js.Any = js.native
+    /* private */ var _crc: Any = js.native
     
-    def _write(data: js.Any, encoding: js.Any, cb: js.Any): Unit = js.native
+    def _write(data: Any, encoding: Any, cb: Any): Unit = js.native
     
     val crc32: Double = js.native
   }

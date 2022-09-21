@@ -30,7 +30,7 @@ object PhiLength {
     
     inline def setPoints(value: js.Array[Vector2]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: Vector2*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Vector2*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
   }

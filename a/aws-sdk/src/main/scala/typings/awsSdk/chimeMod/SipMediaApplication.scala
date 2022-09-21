@@ -14,7 +14,7 @@ trait SipMediaApplication extends StObject {
   /**
     * The SIP media application creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * List of endpoints for SIP media application. Currently, only one endpoint per SIP media application is permitted.
@@ -34,7 +34,7 @@ trait SipMediaApplication extends StObject {
   /**
     * The SIP media application updated timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var UpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object SipMediaApplication {
   
@@ -49,7 +49,7 @@ object SipMediaApplication {
     
     inline def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
     
-    inline def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -57,7 +57,7 @@ object SipMediaApplication {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: SipMediaApplicationEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: SipMediaApplicationEndpoint*): Self = StObject.set(x, "Endpoints", js.Array(value*))
     
     inline def setName(value: SipMediaApplicationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object SipMediaApplication {
     
     inline def setSipMediaApplicationIdUndefined: Self = StObject.set(x, "SipMediaApplicationId", js.undefined)
     
-    inline def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
   }

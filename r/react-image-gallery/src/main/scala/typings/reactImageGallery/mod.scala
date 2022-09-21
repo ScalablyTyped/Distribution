@@ -1,9 +1,13 @@
 package typings.reactImageGallery
 
 import typings.react.mod.Component
+import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
 import typings.reactImageGallery.anon.CurrentIndex
 import typings.reactImageGallery.anon.Media
@@ -11,7 +15,7 @@ import typings.reactImageGallery.reactImageGalleryStrings.bottom
 import typings.reactImageGallery.reactImageGalleryStrings.left
 import typings.reactImageGallery.reactImageGalleryStrings.right
 import typings.reactImageGallery.reactImageGalleryStrings.top
-import typings.std.Element
+import typings.std.Event
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -24,11 +28,11 @@ object mod {
   
   @JSImport("react-image-gallery", JSImport.Default)
   @js.native
-  class default () extends ReactImageGallery
+  open class default () extends ReactImageGallery
   
   @js.native
   trait ReactImageGallery
-    extends Component[ReactImageGalleryProps, js.Object, js.Any] {
+    extends Component[ReactImageGalleryProps, js.Object, Any] {
     
     def exitFullScreen(): Unit = js.native
     
@@ -65,7 +69,11 @@ object mod {
     
     var originalClass: js.UndefOr[String] = js.undefined
     
+    var originalHeight: js.UndefOr[Double] = js.undefined
+    
     var originalTitle: js.UndefOr[String] = js.undefined
+    
+    var originalWidth: js.UndefOr[Double] = js.undefined
     
     var renderItem: js.UndefOr[js.Function1[/* item */ this.type, ReactNode]] = js.undefined
     
@@ -81,9 +89,13 @@ object mod {
     
     var thumbnailClass: js.UndefOr[String] = js.undefined
     
+    var thumbnailHeight: js.UndefOr[Double] = js.undefined
+    
     var thumbnailLabel: js.UndefOr[String] = js.undefined
     
     var thumbnailTitle: js.UndefOr[String] = js.undefined
+    
+    var thumbnailWidth: js.UndefOr[Double] = js.undefined
   }
   object ReactImageGalleryItem {
     
@@ -114,7 +126,7 @@ object mod {
       
       inline def setImageSetUndefined: Self = StObject.set(x, "imageSet", js.undefined)
       
-      inline def setImageSetVarargs(value: Media*): Self = StObject.set(x, "imageSet", js.Array(value :_*))
+      inline def setImageSetVarargs(value: Media*): Self = StObject.set(x, "imageSet", js.Array(value*))
       
       inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
@@ -126,9 +138,17 @@ object mod {
       
       inline def setOriginalClassUndefined: Self = StObject.set(x, "originalClass", js.undefined)
       
+      inline def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
+      
+      inline def setOriginalHeightUndefined: Self = StObject.set(x, "originalHeight", js.undefined)
+      
       inline def setOriginalTitle(value: String): Self = StObject.set(x, "originalTitle", value.asInstanceOf[js.Any])
       
       inline def setOriginalTitleUndefined: Self = StObject.set(x, "originalTitle", js.undefined)
+      
+      inline def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
+      
+      inline def setOriginalWidthUndefined: Self = StObject.set(x, "originalWidth", js.undefined)
       
       inline def setRenderItem(value: ReactImageGalleryItem => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       
@@ -156,6 +176,10 @@ object mod {
       
       inline def setThumbnailClassUndefined: Self = StObject.set(x, "thumbnailClass", js.undefined)
       
+      inline def setThumbnailHeight(value: Double): Self = StObject.set(x, "thumbnailHeight", value.asInstanceOf[js.Any])
+      
+      inline def setThumbnailHeightUndefined: Self = StObject.set(x, "thumbnailHeight", js.undefined)
+      
       inline def setThumbnailLabel(value: String): Self = StObject.set(x, "thumbnailLabel", value.asInstanceOf[js.Any])
       
       inline def setThumbnailLabelUndefined: Self = StObject.set(x, "thumbnailLabel", js.undefined)
@@ -165,6 +189,10 @@ object mod {
       inline def setThumbnailTitleUndefined: Self = StObject.set(x, "thumbnailTitle", js.undefined)
       
       inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+      
+      inline def setThumbnailWidth(value: Double): Self = StObject.set(x, "thumbnailWidth", value.asInstanceOf[js.Any])
+      
+      inline def setThumbnailWidthUndefined: Self = StObject.set(x, "thumbnailWidth", js.undefined)
     }
   }
   
@@ -194,37 +222,41 @@ object mod {
     
     var onBeforeSlide: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onErrorImageURL: js.UndefOr[String] = js.undefined
     
-    var onImageError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
+    var onImageError: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onImageLoad: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
+    var onImageLoad: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseOver: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
+    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onPause: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
     
     var onPlay: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
     
-    var onScreenChange: js.UndefOr[js.Function1[/* fullScreenElement */ Element, Unit]] = js.undefined
+    var onScreenChange: js.UndefOr[js.Function1[/* fullScreen */ Boolean, Unit]] = js.undefined
     
     var onSlide: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
     
     var onThumbnailClick: js.UndefOr[
-        js.Function2[/* event */ MouseEventHandler[HTMLAnchorElement], /* index */ Double, Unit]
+        js.Function2[
+          /* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], 
+          /* index */ Double, 
+          Unit
+        ]
       ] = js.undefined
     
-    var onThumbnailError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
+    var onThumbnailError: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.undefined
+    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    var onTouchMove: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.undefined
+    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[js.Function1[/* event */ TouchEventHandler[HTMLDivElement], Unit]] = js.undefined
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
     var preventDefaultTouchmoveEvent: js.UndefOr[Boolean] = js.undefined
     
@@ -329,7 +361,7 @@ object mod {
       
       inline def setItems(value: js.Array[ReactImageGalleryItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: ReactImageGalleryItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ReactImageGalleryItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLazyLoad(value: Boolean): Self = StObject.set(x, "lazyLoad", value.asInstanceOf[js.Any])
       
@@ -339,7 +371,7 @@ object mod {
       
       inline def setOnBeforeSlideUndefined: Self = StObject.set(x, "onBeforeSlide", js.undefined)
       
-      inline def setOnClick(value: /* event */ MouseEventHandler[HTMLDivElement] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
@@ -347,19 +379,19 @@ object mod {
       
       inline def setOnErrorImageURLUndefined: Self = StObject.set(x, "onErrorImageURL", js.undefined)
       
-      inline def setOnImageError(value: /* event */ ReactEventHandler[HTMLImageElement] => Unit): Self = StObject.set(x, "onImageError", js.Any.fromFunction1(value))
+      inline def setOnImageError(value: SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onImageError", js.Any.fromFunction1(value))
       
       inline def setOnImageErrorUndefined: Self = StObject.set(x, "onImageError", js.undefined)
       
-      inline def setOnImageLoad(value: /* event */ ReactEventHandler[HTMLImageElement] => Unit): Self = StObject.set(x, "onImageLoad", js.Any.fromFunction1(value))
+      inline def setOnImageLoad(value: SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onImageLoad", js.Any.fromFunction1(value))
       
       inline def setOnImageLoadUndefined: Self = StObject.set(x, "onImageLoad", js.undefined)
       
-      inline def setOnMouseLeave(value: /* event */ MouseEventHandler[HTMLDivElement] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
       inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      inline def setOnMouseOver(value: /* event */ MouseEventHandler[HTMLDivElement] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+      inline def setOnMouseOver(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
       
       inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
       
@@ -371,7 +403,7 @@ object mod {
       
       inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      inline def setOnScreenChange(value: /* fullScreenElement */ Element => Unit): Self = StObject.set(x, "onScreenChange", js.Any.fromFunction1(value))
+      inline def setOnScreenChange(value: /* fullScreen */ Boolean => Unit): Self = StObject.set(x, "onScreenChange", js.Any.fromFunction1(value))
       
       inline def setOnScreenChangeUndefined: Self = StObject.set(x, "onScreenChange", js.undefined)
       
@@ -379,23 +411,23 @@ object mod {
       
       inline def setOnSlideUndefined: Self = StObject.set(x, "onSlide", js.undefined)
       
-      inline def setOnThumbnailClick(value: (/* event */ MouseEventHandler[HTMLAnchorElement], /* index */ Double) => Unit): Self = StObject.set(x, "onThumbnailClick", js.Any.fromFunction2(value))
+      inline def setOnThumbnailClick(value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* index */ Double) => Unit): Self = StObject.set(x, "onThumbnailClick", js.Any.fromFunction2(value))
       
       inline def setOnThumbnailClickUndefined: Self = StObject.set(x, "onThumbnailClick", js.undefined)
       
-      inline def setOnThumbnailError(value: /* event */ ReactEventHandler[HTMLImageElement] => Unit): Self = StObject.set(x, "onThumbnailError", js.Any.fromFunction1(value))
+      inline def setOnThumbnailError(value: SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onThumbnailError", js.Any.fromFunction1(value))
       
       inline def setOnThumbnailErrorUndefined: Self = StObject.set(x, "onThumbnailError", js.undefined)
       
-      inline def setOnTouchEnd(value: /* event */ TouchEventHandler[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEnd(value: TouchEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
       inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
       
-      inline def setOnTouchMove(value: /* event */ TouchEventHandler[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
       inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      inline def setOnTouchStart(value: /* event */ TouchEventHandler[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
       inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       

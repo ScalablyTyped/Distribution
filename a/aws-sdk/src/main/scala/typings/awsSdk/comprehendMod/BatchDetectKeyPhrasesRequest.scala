@@ -12,7 +12,7 @@ trait BatchDetectKeyPhrasesRequest extends StObject {
   var LanguageCode: typings.awsSdk.comprehendMod.LanguageCode
   
   /**
-    * A list containing the text of the input documents. The list can contain a maximum of 25 documents. Each document must contain fewer that 5,000 bytes of UTF-8 encoded characters.
+    * A list containing the text of the input documents. The list can contain a maximum of 25 documents. Each document must contain fewer than 5,000 bytes of UTF-8 encoded characters.
     */
   var TextList: CustomerInputStringList
 }
@@ -29,6 +29,6 @@ object BatchDetectKeyPhrasesRequest {
     
     inline def setTextList(value: CustomerInputStringList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
     
-    inline def setTextListVarargs(value: CustomerInputString*): Self = StObject.set(x, "TextList", js.Array(value :_*))
+    inline def setTextListVarargs(value: CustomerInputString*): Self = StObject.set(x, "TextList", js.Array(value*))
   }
 }

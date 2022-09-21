@@ -10,10 +10,10 @@ Global HTTP/HTTPS proxy configurable using environment variables.
 | ------------------ | :-------------: |
 | Full name          | global-agent |
 | Keywords           | http, global, proxy, agent |
-| # releases         | 46 |
-| # dependents       | 37 |
-| # downloads        | 10835295 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5582519.0 |
+| # stars            | 233.0 |
 
 ## Links
 - [Homepage](https://github.com/gajus/global-agent#readme)

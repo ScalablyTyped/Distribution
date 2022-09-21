@@ -1,9 +1,7 @@
 package typings.streamjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Iterator
 import typings.std.Map
-import typings.std.RegExp
 import typings.streamjs.Stream.Accumulator
 import typings.streamjs.Stream.Collector
 import typings.streamjs.Stream.Comparator
@@ -21,11 +19,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Stream[T] extends StObject {
   
   def allMatch(predicate: Predicate[T]): Boolean = js.native
-  def allMatch(regexp: RegExp): Boolean = js.native
+  def allMatch(regexp: js.RegExp): Boolean = js.native
   def allMatch(sample: Sample): Boolean = js.native
   
   def anyMatch(predicate: Predicate[T]): Boolean = js.native
-  def anyMatch(regexp: RegExp): Boolean = js.native
+  def anyMatch(regexp: js.RegExp): Boolean = js.native
   def anyMatch(sample: Sample): Boolean = js.native
   
   def average(): Double = js.native
@@ -41,13 +39,13 @@ trait Stream[T] extends StObject {
   def distinct(): Stream[T] = js.native
   
   def dropWhile(predicate: Predicate[T]): Stream[T] = js.native
-  def dropWhile(regexp: RegExp): Stream[String] = js.native
+  def dropWhile(regexp: js.RegExp): Stream[String] = js.native
   def dropWhile(sample: Sample): Stream[T] = js.native
   
   def each(consumer: Consumer[T]): Unit = js.native
   
   def filter(predicate: Predicate[T]): Stream[T] = js.native
-  def filter(regexp: RegExp): Stream[String] = js.native
+  def filter(regexp: js.RegExp): Stream[String] = js.native
   def filter(sample: Sample): Stream[T] = js.native
   
   def findAny(): Optional[T] = js.native
@@ -66,14 +64,14 @@ trait Stream[T] extends StObject {
   
   def indexBy(keyMapper: js.Function): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
   def indexBy(keyMapper: js.Function, mergeFunction: Accumulator[T]): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
   
-  def iterator(): Iterator[T, js.Any, Unit] = js.native
+  def iterator(): js.Iterator[T] = js.native
   
   def join(): String = js.native
   def join(delimiter: String): String = js.native
@@ -96,15 +94,15 @@ trait Stream[T] extends StObject {
   def min(path: String): Optional[T] = js.native
   
   def noneMatch(predicate: js.Function1[/* elem */ T, Boolean]): Boolean = js.native
-  def noneMatch(regexp: RegExp): Boolean = js.native
+  def noneMatch(regexp: js.RegExp): Boolean = js.native
   
   def partitionBy(predicate: Predicate[T]): js.Array[js.Array[T]] = js.native
-  def partitionBy(regexp: RegExp): js.Array[js.Array[T]] = js.native
+  def partitionBy(regexp: js.RegExp): js.Array[js.Array[T]] = js.native
   def partitionBy(sample: Sample): js.Array[js.Array[T]] = js.native
   def partitionBy(size: Double): js.Array[js.Array[T]] = js.native
   
   def partitioningBy(predicate: Predicate[T]): js.Array[js.Array[T]] = js.native
-  def partitioningBy(regexp: RegExp): js.Array[js.Array[T]] = js.native
+  def partitioningBy(regexp: js.RegExp): js.Array[js.Array[T]] = js.native
   def partitioningBy(sample: Sample): js.Array[js.Array[T]] = js.native
   def partitioningBy(size: Double): js.Array[js.Array[T]] = js.native
   
@@ -135,7 +133,7 @@ trait Stream[T] extends StObject {
   def sum(path: String): Double = js.native
   
   def takeWhile(predicate: Predicate[T]): Stream[T] = js.native
-  def takeWhile(regexp: RegExp): Stream[String] = js.native
+  def takeWhile(regexp: js.RegExp): Stream[String] = js.native
   def takeWhile(sample: Sample): Stream[T] = js.native
   
   def toArray(): js.Array[T] = js.native
@@ -144,19 +142,19 @@ trait Stream[T] extends StObject {
   
   def toMap(keyMapper: js.Function): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
   def toMap(keyMapper: js.Function, mergeFunction: Accumulator[T]): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
   def toMap(path: String): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
   def toMap(path: String, mergeFunction: Accumulator[T]): Map[
     T, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
   ] = js.native
 }
 object Stream {
@@ -210,12 +208,12 @@ object Stream {
   }
   object Iterator {
     
-    inline def apply[T](done: Boolean, next: () => T): typings.streamjs.Stream.Iterator[T] = {
+    inline def apply[T](done: Boolean, next: () => T): Iterator[T] = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], next = js.Any.fromFunction0(next))
-      __obj.asInstanceOf[typings.streamjs.Stream.Iterator[T]]
+      __obj.asInstanceOf[Iterator[T]]
     }
     
-    extension [Self <: typings.streamjs.Stream.Iterator[?], T](x: Self & typings.streamjs.Stream.Iterator[T]) {
+    extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -268,20 +266,20 @@ object Stream {
     
     def orElseGet(supplier: Supplier[T]): T
     
-    def orElseThrow(error: js.Any): T
+    def orElseThrow(error: Any): T
   }
   object Optional {
     
     inline def apply[T](
       filter: js.Function1[/* elem */ T, Boolean] => Optional[T],
-      flatMap: js.Function1[/* elem */ T, Optional[js.Any]] => Optional[js.Any],
+      flatMap: js.Function1[/* elem */ T, Optional[Any]] => Optional[Any],
       get: () => T,
       ifPresent: js.Function1[/* elem */ T, Unit] => Unit,
       isPresent: () => Boolean,
-      map: js.Function1[/* elem */ T, js.Any] => Optional[js.Any],
+      map: js.Function1[/* elem */ T, Any] => Optional[Any],
       orElse: T => T,
       orElseGet: Supplier[T] => T,
-      orElseThrow: js.Any => T
+      orElseThrow: Any => T
     ): Optional[T] = {
       val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), flatMap = js.Any.fromFunction1(flatMap), get = js.Any.fromFunction0(get), ifPresent = js.Any.fromFunction1(ifPresent), isPresent = js.Any.fromFunction0(isPresent), map = js.Any.fromFunction1(map), orElse = js.Any.fromFunction1(orElse), orElseGet = js.Any.fromFunction1(orElseGet), orElseThrow = js.Any.fromFunction1(orElseThrow))
       __obj.asInstanceOf[Optional[T]]
@@ -291,7 +289,7 @@ object Stream {
       
       inline def setFilter(value: js.Function1[/* elem */ T, Boolean] => Optional[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      inline def setFlatMap(value: js.Function1[/* elem */ T, Optional[js.Any]] => Optional[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
+      inline def setFlatMap(value: js.Function1[/* elem */ T, Optional[Any]] => Optional[Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
       
       inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
@@ -299,19 +297,19 @@ object Stream {
       
       inline def setIsPresent(value: () => Boolean): Self = StObject.set(x, "isPresent", js.Any.fromFunction0(value))
       
-      inline def setMap(value: js.Function1[/* elem */ T, js.Any] => Optional[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* elem */ T, Any] => Optional[Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
       inline def setOrElse(value: T => T): Self = StObject.set(x, "orElse", js.Any.fromFunction1(value))
       
       inline def setOrElseGet(value: Supplier[T] => T): Self = StObject.set(x, "orElseGet", js.Any.fromFunction1(value))
       
-      inline def setOrElseThrow(value: js.Any => T): Self = StObject.set(x, "orElseThrow", js.Any.fromFunction1(value))
+      inline def setOrElseThrow(value: Any => T): Self = StObject.set(x, "orElseThrow", js.Any.fromFunction1(value))
     }
   }
   
   type Predicate[T] = js.Function1[/* elem */ T, Boolean]
   
-  type Sample = StringDictionary[js.Any]
+  type Sample = StringDictionary[Any]
   
   type Supplier[T] = js.Function0[T]
 }

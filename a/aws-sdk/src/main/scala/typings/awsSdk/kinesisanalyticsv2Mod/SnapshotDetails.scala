@@ -14,7 +14,7 @@ trait SnapshotDetails extends StObject {
   /**
     * The timestamp of the application snapshot.
     */
-  var SnapshotCreationTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var SnapshotCreationTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier for the application snapshot.
@@ -41,7 +41,7 @@ object SnapshotDetails {
     
     inline def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
     
-    inline def setSnapshotCreationTimestamp(value: Timestamp): Self = StObject.set(x, "SnapshotCreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setSnapshotCreationTimestamp(value: js.Date): Self = StObject.set(x, "SnapshotCreationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setSnapshotCreationTimestampUndefined: Self = StObject.set(x, "SnapshotCreationTimestamp", js.undefined)
     

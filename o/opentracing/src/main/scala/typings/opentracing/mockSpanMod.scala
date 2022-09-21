@@ -10,32 +10,32 @@ object mockSpanMod {
   
   @JSImport("opentracing/lib/mock_tracer/mock_span", JSImport.Default)
   @js.native
-  class default protected () extends MockSpan {
+  open class default protected () extends MockSpan {
     def this(tracer: typings.opentracing.mockTracerMockTracerMod.default) = this()
   }
   
   @JSImport("opentracing/lib/mock_tracer/mock_span", "MockSpan")
   @js.native
-  class MockSpan protected () extends Span {
+  open class MockSpan protected () extends Span {
     def this(tracer: typings.opentracing.mockTracerMockTracerMod.default) = this()
     
     var _finishMs: Double = js.native
     
-    /* private */ var _generateUUID: js.Any = js.native
+    /* private */ var _generateUUID: Any = js.native
     
-    /* private */ var _logs: js.Any = js.native
+    /* private */ var _logs: Any = js.native
     
-    /* private */ var _mockTracer: js.Any = js.native
+    /* private */ var _mockTracer: Any = js.native
     
-    /* private */ var _operationName: js.Any = js.native
+    /* private */ var _operationName: Any = js.native
     
-    /* private */ var _startMs: js.Any = js.native
+    /* private */ var _startMs: Any = js.native
     
     var _startStack: js.UndefOr[String] = js.native
     
-    /* private */ var _tags: js.Any = js.native
+    /* private */ var _tags: Any = js.native
     
-    /* private */ var _uuid: js.Any = js.native
+    /* private */ var _uuid: Any = js.native
     
     def addReference(ref: typings.opentracing.referenceMod.default): Unit = js.native
     
@@ -48,7 +48,7 @@ object mockSpanMod {
     
     def operationName(): String = js.native
     
-    def tags(): StringDictionary[js.Any] = js.native
+    def tags(): StringDictionary[Any] = js.native
     
     def uuid(): String = js.native
   }
@@ -59,7 +59,7 @@ object mockSpanMod {
     
     var operation: String
     
-    var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var tags: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var uuid: String
   }
@@ -76,7 +76,7 @@ object mockSpanMod {
       
       inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      inline def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       

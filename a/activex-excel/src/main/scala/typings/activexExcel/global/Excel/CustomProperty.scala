@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.CustomProperty")
 @js.native
-/* private */ class CustomProperty ()
+/* private */ open class CustomProperty ()
   extends StObject
      with typings.activexExcel.Excel.CustomProperty {
   
@@ -28,11 +28,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
   
   /* CompleteClass */
-  override val _Default: js.Any = js.native
+  override val _Default: Any = js.native
 }

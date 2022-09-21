@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "ProgressBar")
 @js.native
-class ProgressBar ()
+open class ProgressBar ()
   extends typings.reactBootstrap.libMod.ProgressBar

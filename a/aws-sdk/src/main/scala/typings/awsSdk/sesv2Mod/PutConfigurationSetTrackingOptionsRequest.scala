@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutConfigurationSetTrackingOptionsRequest extends StObject {
   
   /**
-    * The name of the configuration set that you want to add a custom tracking domain to.
+    * The name of the configuration set.
     */
   var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   
   /**
-    * The domain that you want to use to track open and click events.
+    * The domain to use to track open and click events.
     */
   var CustomRedirectDomain: js.UndefOr[typings.awsSdk.sesv2Mod.CustomRedirectDomain] = js.undefined
 }

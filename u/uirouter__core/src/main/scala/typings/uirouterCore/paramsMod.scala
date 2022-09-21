@@ -28,7 +28,7 @@ object paramsMod {
   
   @JSImport("@uirouter/core/lib/params", "Param")
   @js.native
-  class Param protected ()
+  open class Param protected ()
     extends typings.uirouterCore.paramMod.Param {
     def this(
       id: String,
@@ -85,7 +85,7 @@ object paramsMod {
   
   @JSImport("@uirouter/core/lib/params", "ParamType")
   @js.native
-  class ParamType protected ()
+  open class ParamType protected ()
     extends typings.uirouterCore.paramTypeMod.ParamType {
     /**
       * @param def  A configuration object which contains the custom type definition.  The object's
@@ -97,7 +97,7 @@ object paramsMod {
   
   @JSImport("@uirouter/core/lib/params", "ParamTypes")
   @js.native
-  class ParamTypes ()
+  open class ParamTypes ()
     extends typings.uirouterCore.paramTypesMod.ParamTypes
   /* static members */
   object ParamTypes {
@@ -296,7 +296,7 @@ object paramsMod {
   
   @JSImport("@uirouter/core/lib/params", "StateParams")
   @js.native
-  class StateParams ()
+  open class StateParams ()
     extends typings.uirouterCore.stateParamsMod.StateParams {
     def this(params: Obj) = this()
   }

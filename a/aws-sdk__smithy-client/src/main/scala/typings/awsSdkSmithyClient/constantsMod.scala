@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object constantsMod {
   
-  @JSImport("@aws-sdk/smithy-client/dist/cjs/constants", "SENSITIVE_STRING")
+  @JSImport("@aws-sdk/smithy-client/dist-types/constants", "SENSITIVE_STRING")
   @js.native
   val SENSITIVE_STRING: /* "***SensitiveInformation***" */ String = js.native
 }

@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(p0: Double): Boolean = ^.asInstanceOf[js.Dynamic].apply(p0.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(): Boolean = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boolean]
+  inline def apply(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("number-is-nan", JSImport.Namespace)
   @js.native

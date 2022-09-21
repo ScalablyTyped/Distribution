@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassPKey ()
+open class ClassPKey ()
   extends StObject
      with typings.fibjs.ClassPKey {
   /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__channels
 
-Typings are for version 6.1.2
+Typings are for version 6.5.12
 
 ## Library description:
 Storybook Channel is similar to an EventEmitter. Channels are used with Storybook implementations to send/receive events between the Storybook Manager and the Storybook Renderer.
@@ -10,13 +10,13 @@ Storybook Channel is similar to an EventEmitter. Channels are used with Storyboo
 | ------------------ | :-------------: |
 | Full name          | @storybook/channels |
 | Keywords           | storybook |
-| # releases         | 568 |
-| # dependents       | 19 |
-| # downloads        | 127211132 |
-| # stars            | 0 |
+| # releases         | 480 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0257624666666668E7 |
+| # stars            | 73947.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/lib/channels)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/channels)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Fchannels)

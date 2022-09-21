@@ -5,7 +5,6 @@ import typings.dialogflow.mod.google.protobuf.GeneratedCodeInfo.IAnnotation
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GeneratedCodeInfo.
   * @param [properties] Properties to set
   */
-class GeneratedCodeInfo ()
+open class GeneratedCodeInfo ()
   extends StObject
      with IGeneratedCodeInfo {
   def this(properties: IGeneratedCodeInfo) = this()
@@ -30,7 +29,7 @@ class GeneratedCodeInfo ()
     * Converts this GeneratedCodeInfo to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
 }
 object GeneratedCodeInfo {
   
@@ -45,7 +44,7 @@ object GeneratedCodeInfo {
     * Constructs a new Annotation.
     * @param [properties] Properties to set
     */
-  class Annotation ()
+  open class Annotation ()
     extends StObject
        with IAnnotation {
     def this(properties: IAnnotation) = this()
@@ -70,7 +69,7 @@ object GeneratedCodeInfo {
       * Converts this Annotation to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[scala.Any] = js.native
   }
   object Annotation {
     
@@ -87,6 +86,8 @@ object GeneratedCodeInfo {
     inline def create(): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Annotation]
     inline def create(properties: IAnnotation): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Annotation]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Annotation]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Annotation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Annotation]
     /**
       * Decodes an Annotation message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -98,9 +99,8 @@ object GeneratedCodeInfo {
     /* static member */
     inline def decode(reader: Reader): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Annotation]
     inline def decode(reader: Reader, length: Double): Annotation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Annotation]
-    inline def decode(reader: Uint8Array): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Annotation]
-    inline def decode(reader: Uint8Array, length: Double): Annotation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Annotation]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Annotation]
     /**
       * Decodes an Annotation message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -110,7 +110,6 @@ object GeneratedCodeInfo {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Annotation]
-    inline def decodeDelimited(reader: Uint8Array): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Annotation]
     
     /**
       * Encodes the specified Annotation message. Does not implicitly {@link google.protobuf.GeneratedCodeInfo.Annotation.verify|verify} messages.
@@ -138,7 +137,7 @@ object GeneratedCodeInfo {
       * @returns Annotation
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Annotation]
+    inline def fromObject(`object`: StringDictionary[scala.Any]): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Annotation]
     
     /**
       * Creates a plain object from an Annotation message. Also converts values to other types if specified.
@@ -147,8 +146,8 @@ object GeneratedCodeInfo {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Annotation): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Annotation, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Annotation): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+    inline def toObject(message: Annotation, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
     
     /**
       * Verifies an Annotation message.
@@ -156,7 +155,7 @@ object GeneratedCodeInfo {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -168,6 +167,8 @@ object GeneratedCodeInfo {
   inline def create(): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GeneratedCodeInfo]
   inline def create(properties: IGeneratedCodeInfo): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
   
+  inline def decode(reader: js.typedarray.Uint8Array): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): GeneratedCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GeneratedCodeInfo]
   /**
     * Decodes a GeneratedCodeInfo message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -179,9 +180,8 @@ object GeneratedCodeInfo {
   /* static member */
   inline def decode(reader: Reader): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
   inline def decode(reader: Reader, length: Double): GeneratedCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GeneratedCodeInfo]
-  inline def decode(reader: Uint8Array): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
-  inline def decode(reader: Uint8Array, length: Double): GeneratedCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GeneratedCodeInfo]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
   /**
     * Decodes a GeneratedCodeInfo message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -191,7 +191,6 @@ object GeneratedCodeInfo {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
-  inline def decodeDelimited(reader: Uint8Array): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
   
   /**
     * Encodes the specified GeneratedCodeInfo message. Does not implicitly {@link google.protobuf.GeneratedCodeInfo.verify|verify} messages.
@@ -219,7 +218,7 @@ object GeneratedCodeInfo {
     * @returns GeneratedCodeInfo
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
   
   /**
     * Creates a plain object from a GeneratedCodeInfo message. Also converts values to other types if specified.
@@ -228,8 +227,8 @@ object GeneratedCodeInfo {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: GeneratedCodeInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: GeneratedCodeInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: GeneratedCodeInfo): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: GeneratedCodeInfo, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies a GeneratedCodeInfo message.
@@ -237,7 +236,7 @@ object GeneratedCodeInfo {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Annotation. */
   trait IAnnotation extends StObject {
@@ -281,7 +280,7 @@ object GeneratedCodeInfo {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
       

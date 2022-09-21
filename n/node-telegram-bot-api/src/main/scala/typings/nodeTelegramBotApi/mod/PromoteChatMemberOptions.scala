@@ -14,6 +14,8 @@ trait PromoteChatMemberOptions extends StObject {
   
   var can_invite_users: js.UndefOr[Boolean] = js.undefined
   
+  var can_manage_video_chats: js.UndefOr[Boolean] = js.undefined
+  
   var can_pin_messages: js.UndefOr[Boolean] = js.undefined
   
   var can_post_messages: js.UndefOr[Boolean] = js.undefined
@@ -46,6 +48,10 @@ object PromoteChatMemberOptions {
     inline def setCan_invite_users(value: Boolean): Self = StObject.set(x, "can_invite_users", value.asInstanceOf[js.Any])
     
     inline def setCan_invite_usersUndefined: Self = StObject.set(x, "can_invite_users", js.undefined)
+    
+    inline def setCan_manage_video_chats(value: Boolean): Self = StObject.set(x, "can_manage_video_chats", value.asInstanceOf[js.Any])
+    
+    inline def setCan_manage_video_chatsUndefined: Self = StObject.set(x, "can_manage_video_chats", js.undefined)
     
     inline def setCan_pin_messages(value: Boolean): Self = StObject.set(x, "can_pin_messages", value.asInstanceOf[js.Any])
     

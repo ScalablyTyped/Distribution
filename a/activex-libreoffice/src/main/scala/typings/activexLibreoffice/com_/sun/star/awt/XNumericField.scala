@@ -99,7 +99,7 @@ object XNumericField {
     getSpinSize: () => Double,
     getValue: () => Double,
     isStrictFormat: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDecimalDigits: Double => Unit,
     setFirst: Double => Unit,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Comment")
 @js.native
-class Comment protected ()
+open class Comment protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Comment {
   def this(_trivia: ISyntaxTrivia, endsLine: Boolean, _start: Double, _end: Double) = this()
@@ -19,7 +19,7 @@ class Comment protected ()
   var _start: Double = js.native
   
   /* private */ /* CompleteClass */
-  var _trivia: js.Any = js.native
+  var _trivia: Any = js.native
   
   /* CompleteClass */
   override def end(): Double = js.native

@@ -16,13 +16,13 @@ object floatingPeoplePickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/PeoplePicker/FloatingPeoplePicker", "BaseFloatingPeoplePicker")
   @js.native
-  class BaseFloatingPeoplePicker protected () extends BaseFloatingPicker[IPersonaProps, IPeopleFloatingPickerProps] {
+  open class BaseFloatingPeoplePicker protected () extends BaseFloatingPicker[IPersonaProps, IPeopleFloatingPickerProps] {
     def this(basePickerProps: IPeopleFloatingPickerProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/PeoplePicker/FloatingPeoplePicker", "FloatingPeoplePicker")
   @js.native
-  class FloatingPeoplePicker protected () extends BaseFloatingPeoplePicker {
+  open class FloatingPeoplePicker protected () extends BaseFloatingPeoplePicker {
     def this(basePickerProps: IPeopleFloatingPickerProps) = this()
   }
   /* static members */
@@ -34,8 +34,8 @@ object floatingPeoplePickerMod {
     
     @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/PeoplePicker/FloatingPeoplePicker", "FloatingPeoplePicker.defaultProps")
     @js.native
-    def defaultProps: js.Any = js.native
-    inline def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: Any = js.native
+    inline def defaultProps_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   inline def createItem(name: String, isValid: Boolean): ISuggestionModel[IPersonaProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("createItem")(name.asInstanceOf[js.Any], isValid.asInstanceOf[js.Any])).asInstanceOf[ISuggestionModel[IPersonaProps]]

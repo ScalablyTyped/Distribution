@@ -23,7 +23,7 @@ object DeletableItem {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: DeletableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: DeletableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

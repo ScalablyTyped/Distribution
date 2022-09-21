@@ -60,7 +60,7 @@ object NavigatorYAxisGridOptions {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: XAxisOptions*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: XAxisOptions*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

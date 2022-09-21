@@ -10,10 +10,10 @@ Caches calls to Backbone.[Model | Collection].fetch
 | ------------------ | :-------------: |
 | Full name          | backbone-fetch-cache |
 | Keywords           | backbone, fetch, cache |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 28007 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7991.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/backbone-fetch-cache)

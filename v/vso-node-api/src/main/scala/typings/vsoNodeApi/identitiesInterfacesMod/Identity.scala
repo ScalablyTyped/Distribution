@@ -29,7 +29,7 @@ trait Identity extends StObject {
   
   var metaTypeId: Double
   
-  var properties: js.Any
+  var properties: Any
   
   /**
     * The display name for the identity as specified by the source identity provider.
@@ -55,7 +55,7 @@ object Identity {
     memberOf: js.Array[IdentityDescriptor],
     members: js.Array[IdentityDescriptor],
     metaTypeId: Double,
-    properties: js.Any,
+    properties: Any,
     providerDisplayName: String,
     resourceVersion: Double,
     subjectDescriptor: String,
@@ -81,19 +81,19 @@ object Identity {
     
     inline def setMemberIds(value: js.Array[String]): Self = StObject.set(x, "memberIds", value.asInstanceOf[js.Any])
     
-    inline def setMemberIdsVarargs(value: String*): Self = StObject.set(x, "memberIds", js.Array(value :_*))
+    inline def setMemberIdsVarargs(value: String*): Self = StObject.set(x, "memberIds", js.Array(value*))
     
     inline def setMemberOf(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])
     
-    inline def setMemberOfVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "memberOf", js.Array(value :_*))
+    inline def setMemberOfVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "memberOf", js.Array(value*))
     
     inline def setMembers(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: IdentityDescriptor*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setMetaTypeId(value: Double): Self = StObject.set(x, "metaTypeId", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setProviderDisplayName(value: String): Self = StObject.set(x, "providerDisplayName", value.asInstanceOf[js.Any])
     

@@ -35,6 +35,12 @@ object registererOptionsMod {
     var params: js.UndefOr[FromTag] = js.undefined
     
     /**
+      * Determines when a re-REGISTER request is sent. The value should be specified as a percentage of the expiration time (between 50 and 99).
+      * @defaultValue 99
+      */
+    var refreshFrequency: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Value to provide with "reg-id" Contact parameter.
       * @defaultValue 1
       */
@@ -63,13 +69,13 @@ object registererOptionsMod {
       
       inline def setExtraContactHeaderParamsUndefined: Self = StObject.set(x, "extraContactHeaderParams", js.undefined)
       
-      inline def setExtraContactHeaderParamsVarargs(value: String*): Self = StObject.set(x, "extraContactHeaderParams", js.Array(value :_*))
+      inline def setExtraContactHeaderParamsVarargs(value: String*): Self = StObject.set(x, "extraContactHeaderParams", js.Array(value*))
       
       inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       
       inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value*))
       
       inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
@@ -82,6 +88,10 @@ object registererOptionsMod {
       inline def setParams(value: FromTag): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      
+      inline def setRefreshFrequency(value: Double): Self = StObject.set(x, "refreshFrequency", value.asInstanceOf[js.Any])
+      
+      inline def setRefreshFrequencyUndefined: Self = StObject.set(x, "refreshFrequency", js.undefined)
       
       inline def setRegId(value: Double): Self = StObject.set(x, "regId", value.asInstanceOf[js.Any])
       

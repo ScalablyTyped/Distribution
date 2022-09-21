@@ -32,12 +32,14 @@ trait IncludeOptions extends StObject {
   /**
     * Load further nested related models
     */
-  var include: js.UndefOr[js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]] = js.undefined
+  var include: js.UndefOr[
+    (js.Array[(Model[Any, Any, Any]) | IncludeOptions]) | (Model[Any, Any, Any]) | IncludeOptions
+  ] = js.undefined
   
   /**
     * The model you want to eagerly load
     */
-  var model: js.UndefOr[Model[js.Any, js.Any, js.Any]] = js.undefined
+  var model: js.UndefOr[Model[Any, Any, Any]] = js.undefined
   
   /**
     * if true, it will also eager load the relations of the child models, recursively.
@@ -97,15 +99,17 @@ object IncludeOptions {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = StObject.set(x, "attributes", js.Array(value*))
     
-    inline def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(
+      value: (js.Array[(Model[Any, Any, Any]) | IncludeOptions]) | (Model[Any, Any, Any]) | IncludeOptions
+    ): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: ((Model[Any, Any, Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value*))
     
-    inline def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model[Any, Any, Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     

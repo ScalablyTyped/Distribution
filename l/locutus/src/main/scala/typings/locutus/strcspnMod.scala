@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strcspnMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, mask: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, mask: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, mask: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, mask: js.Any, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, mask: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, mask: Unit, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, mask: Unit, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, mask: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, mask: js.Any, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, mask: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, mask: js.Any, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, mask: Unit, start: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, mask: Unit, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, mask: Unit, start: Unit, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(str: Any): Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(str: Any, mask: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Any, mask: Any, start: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Any, mask: Any, start: Any, length: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Any, mask: Any, start: Unit, length: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Any, mask: Unit, start: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Any, mask: Unit, start: Any, length: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Any, mask: Unit, start: Unit, length: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, mask: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, mask: Any, start: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, mask: Any, start: Any, length: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, mask: Any, start: Unit, length: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, mask: Unit, start: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, mask: Unit, start: Any, length: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, mask: Unit, start: Unit, length: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/strcspn", JSImport.Namespace)
   @js.native

@@ -8,7 +8,7 @@ object contextMod {
   
   @JSImport("forge-di/dist/framework/Context", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Context
   

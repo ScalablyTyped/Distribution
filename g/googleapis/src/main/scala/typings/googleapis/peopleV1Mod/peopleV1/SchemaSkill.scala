@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A skill that the person has.
-  */
 trait SchemaSkill extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaSkill extends StObject {
   /**
     * The skill; for example, `underwater basket weaving`.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSkill {
   
@@ -33,6 +30,8 @@ object SchemaSkill {
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "EnvironmentHelper")
 @js.native
-class EnvironmentHelper protected ()
+open class EnvironmentHelper protected ()
   extends typings.babylonjs.helpersIndexMod.EnvironmentHelper {
   /**
     * constructor
@@ -26,32 +26,32 @@ object EnvironmentHelper {
   /**
     * Default environment texture URL.
     */
-  @JSImport("babylonjs/index", "EnvironmentHelper._environmentTextureCDNUrl")
+  @JSImport("babylonjs/index", "EnvironmentHelper._EnvironmentTextureCDNUrl")
   @js.native
-  def _environmentTextureCDNUrl: js.Any = js.native
-  inline def _environmentTextureCDNUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_environmentTextureCDNUrl")(x.asInstanceOf[js.Any])
+  def _EnvironmentTextureCDNUrl: Any = js.native
+  inline def _EnvironmentTextureCDNUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EnvironmentTextureCDNUrl")(x.asInstanceOf[js.Any])
   
   /**
     * Creates the default options for the helper.
     */
-  @JSImport("babylonjs/index", "EnvironmentHelper._getDefaultOptions")
+  @JSImport("babylonjs/index", "EnvironmentHelper._GetDefaultOptions")
   @js.native
-  def _getDefaultOptions: js.Any = js.native
-  inline def _getDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getDefaultOptions")(x.asInstanceOf[js.Any])
+  def _GetDefaultOptions: Any = js.native
+  inline def _GetDefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDefaultOptions")(x.asInstanceOf[js.Any])
   
   /**
     * Default ground texture URL.
     */
-  @JSImport("babylonjs/index", "EnvironmentHelper._groundTextureCDNUrl")
+  @JSImport("babylonjs/index", "EnvironmentHelper._GroundTextureCDNUrl")
   @js.native
-  def _groundTextureCDNUrl: js.Any = js.native
-  inline def _groundTextureCDNUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_groundTextureCDNUrl")(x.asInstanceOf[js.Any])
+  def _GroundTextureCDNUrl: Any = js.native
+  inline def _GroundTextureCDNUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GroundTextureCDNUrl")(x.asInstanceOf[js.Any])
   
   /**
     * Default skybox texture URL.
     */
-  @JSImport("babylonjs/index", "EnvironmentHelper._skyboxTextureCDNUrl")
+  @JSImport("babylonjs/index", "EnvironmentHelper._SkyboxTextureCDNUrl")
   @js.native
-  def _skyboxTextureCDNUrl: js.Any = js.native
-  inline def _skyboxTextureCDNUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_skyboxTextureCDNUrl")(x.asInstanceOf[js.Any])
+  def _SkyboxTextureCDNUrl: Any = js.native
+  inline def _SkyboxTextureCDNUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SkyboxTextureCDNUrl")(x.asInstanceOf[js.Any])
 }

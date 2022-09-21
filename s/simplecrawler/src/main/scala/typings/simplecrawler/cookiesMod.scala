@@ -1,7 +1,6 @@
 package typings.simplecrawler
 
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +9,11 @@ object cookiesMod {
   
   @JSImport("simplecrawler/cookies", JSImport.Default)
   @js.native
-  class default () extends CookieJar
+  open class default () extends CookieJar
   
   @JSImport("simplecrawler/cookies", "Cookie")
   @js.native
-  class Cookie protected () extends StObject {
+  open class Cookie protected () extends StObject {
     def this(name: String, value: String, expires: String) = this()
     def this(name: String, value: String, expires: Double) = this()
     def this(name: String, value: String, expires: String, path: String) = this()
@@ -78,7 +77,7 @@ object cookiesMod {
       path: String,
       domain: String,
       httponly: Boolean,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(
       name: String,
@@ -87,7 +86,7 @@ object cookiesMod {
       path: String,
       domain: String,
       httponly: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(name: String, value: String, expiry: String, path: String, domain: Unit, httponly: Boolean): this.type = js.native
     def add(
@@ -97,7 +96,7 @@ object cookiesMod {
       path: String,
       domain: Unit,
       httponly: Boolean,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(
       name: String,
@@ -106,7 +105,7 @@ object cookiesMod {
       path: String,
       domain: Unit,
       httponly: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(name: String, value: String, expiry: String, path: Unit, domain: String): this.type = js.native
     def add(name: String, value: String, expiry: String, path: Unit, domain: String, httponly: Boolean): this.type = js.native
@@ -117,7 +116,7 @@ object cookiesMod {
       path: Unit,
       domain: String,
       httponly: Boolean,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(
       name: String,
@@ -126,7 +125,7 @@ object cookiesMod {
       path: Unit,
       domain: String,
       httponly: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(name: String, value: String, expiry: String, path: Unit, domain: Unit, httponly: Boolean): this.type = js.native
     def add(
@@ -136,7 +135,7 @@ object cookiesMod {
       path: Unit,
       domain: Unit,
       httponly: Boolean,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(
       name: String,
@@ -145,7 +144,7 @@ object cookiesMod {
       path: Unit,
       domain: Unit,
       httponly: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(name: String, value: String, expiry: Double): this.type = js.native
     def add(name: String, value: String, expiry: Double, path: String): this.type = js.native
@@ -158,7 +157,7 @@ object cookiesMod {
       path: String,
       domain: String,
       httponly: Boolean,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(
       name: String,
@@ -167,7 +166,7 @@ object cookiesMod {
       path: String,
       domain: String,
       httponly: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(name: String, value: String, expiry: Double, path: String, domain: Unit, httponly: Boolean): this.type = js.native
     def add(
@@ -177,7 +176,7 @@ object cookiesMod {
       path: String,
       domain: Unit,
       httponly: Boolean,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(
       name: String,
@@ -186,7 +185,7 @@ object cookiesMod {
       path: String,
       domain: Unit,
       httponly: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(name: String, value: String, expiry: Double, path: Unit, domain: String): this.type = js.native
     def add(name: String, value: String, expiry: Double, path: Unit, domain: String, httponly: Boolean): this.type = js.native
@@ -197,7 +196,7 @@ object cookiesMod {
       path: Unit,
       domain: String,
       httponly: Boolean,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(
       name: String,
@@ -206,7 +205,7 @@ object cookiesMod {
       path: Unit,
       domain: String,
       httponly: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(name: String, value: String, expiry: Double, path: Unit, domain: Unit, httponly: Boolean): this.type = js.native
     def add(
@@ -216,7 +215,7 @@ object cookiesMod {
       path: Unit,
       domain: Unit,
       httponly: Boolean,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     def add(
       name: String,
@@ -225,13 +224,13 @@ object cookiesMod {
       path: Unit,
       domain: Unit,
       httponly: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookie */ js.UndefOr[Cookie], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookie */ js.UndefOr[Cookie], Unit]
     ): this.type = js.native
     
     def addFromHeaders(headers: String): this.type = js.native
-    def addFromHeaders(headers: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): this.type = js.native
+    def addFromHeaders(headers: String, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): this.type = js.native
     def addFromHeaders(headers: js.Array[String]): this.type = js.native
-    def addFromHeaders(headers: js.Array[String], callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): this.type = js.native
+    def addFromHeaders(headers: js.Array[String], callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): this.type = js.native
     
     var cookies: js.Array[Cookie] = js.native
     
@@ -241,23 +240,23 @@ object cookiesMod {
     def get(
       name: String,
       domain: String,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
     ): js.Array[Cookie] = js.native
     def get(
       name: String,
       domain: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
     ): js.Array[Cookie] = js.native
     def get(name: Unit, domain: String): js.Array[Cookie] = js.native
     def get(
       name: Unit,
       domain: String,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
     ): js.Array[Cookie] = js.native
     def get(
       name: Unit,
       domain: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
     ): js.Array[Cookie] = js.native
     
     def getAsHeader(): js.Array[String] = js.native
@@ -266,23 +265,23 @@ object cookiesMod {
     def getAsHeader(
       name: String,
       domain: String,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
     ): js.Array[String] = js.native
     def getAsHeader(
       name: String,
       domain: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
     ): js.Array[String] = js.native
     def getAsHeader(name: Unit, domain: String): js.Array[String] = js.native
     def getAsHeader(
       name: Unit,
       domain: String,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
     ): js.Array[String] = js.native
     def getAsHeader(
       name: Unit,
       domain: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error], /* cookies */ js.UndefOr[js.Array[Cookie]], Unit]
     ): js.Array[String] = js.native
     
     def remove(): js.Array[Cookie] = js.native
@@ -292,7 +291,7 @@ object cookiesMod {
       name: String,
       domain: String,
       callback: js.Function2[
-          /* error */ js.UndefOr[Error], 
+          /* error */ js.UndefOr[js.Error], 
           /* cookiesRemoved */ js.UndefOr[js.Array[Cookie]], 
           Unit
         ]
@@ -301,7 +300,7 @@ object cookiesMod {
       name: String,
       domain: Unit,
       callback: js.Function2[
-          /* error */ js.UndefOr[Error], 
+          /* error */ js.UndefOr[js.Error], 
           /* cookiesRemoved */ js.UndefOr[js.Array[Cookie]], 
           Unit
         ]
@@ -311,7 +310,7 @@ object cookiesMod {
       name: Unit,
       domain: String,
       callback: js.Function2[
-          /* error */ js.UndefOr[Error], 
+          /* error */ js.UndefOr[js.Error], 
           /* cookiesRemoved */ js.UndefOr[js.Array[Cookie]], 
           Unit
         ]
@@ -320,7 +319,7 @@ object cookiesMod {
       name: Unit,
       domain: Unit,
       callback: js.Function2[
-          /* error */ js.UndefOr[Error], 
+          /* error */ js.UndefOr[js.Error], 
           /* cookiesRemoved */ js.UndefOr[js.Array[Cookie]], 
           Unit
         ]

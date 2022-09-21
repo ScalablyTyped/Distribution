@@ -9,9 +9,8 @@ object cardDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/card/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends BasicCardExample
+  open class default () extends BasicCardExample
   
   @js.native
-  trait BasicCardExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicCardExample extends Component[Any, Any, Any]
 }

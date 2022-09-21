@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GatewayRouteTarget extends StObject {
   
   /**
+    * The port number of the gateway route target.
+    */
+  var port: js.UndefOr[ListenerPort] = js.undefined
+  
+  /**
     * An object that represents a virtual service gateway route target.
     */
   var virtualService: GatewayRouteVirtualService
@@ -19,6 +24,10 @@ object GatewayRouteTarget {
   }
   
   extension [Self <: GatewayRouteTarget](x: Self) {
+    
+    inline def setPort(value: ListenerPort): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     inline def setVirtualService(value: GatewayRouteVirtualService): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
   }

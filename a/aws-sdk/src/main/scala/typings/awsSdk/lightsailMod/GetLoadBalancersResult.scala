@@ -29,7 +29,7 @@ object GetLoadBalancersResult {
     
     inline def setLoadBalancersUndefined: Self = StObject.set(x, "loadBalancers", js.undefined)
     
-    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "loadBalancers", js.Array(value :_*))
+    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "loadBalancers", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

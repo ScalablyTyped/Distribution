@@ -32,7 +32,7 @@ object ServiceCustomizationDefinition {
     
     inline def setClient(value: js.Array[CustomizationDefinition]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    inline def setClientVarargs(value: CustomizationDefinition*): Self = StObject.set(x, "client", js.Array(value :_*))
+    inline def setClientVarargs(value: CustomizationDefinition*): Self = StObject.set(x, "client", js.Array(value*))
     
     inline def setCommands(value: StringDictionary[js.Array[CustomizationDefinition]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
   }

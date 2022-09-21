@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RichEditUnitConverter")
 @js.native
-class RichEditUnitConverter ()
+open class RichEditUnitConverter ()
   extends StObject
      with typings.devexpressWeb.RichEditUnitConverter {
   

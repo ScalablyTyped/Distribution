@@ -27,7 +27,7 @@ object Origins {
     
     inline def setItems(value: OriginList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: Origin*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Origin*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }

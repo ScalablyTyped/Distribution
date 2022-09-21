@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("CCapture")
   @js.native
-  class CCapture protected ()
+  open class CCapture protected ()
     extends StObject
        with typings.ccaptureJs.CCapture {
     def this(settings: Settings) = this()

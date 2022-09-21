@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postman-collection", "Collection")
 @js.native
-class Collection () extends ItemGroup[Item] {
+open class Collection () extends ItemGroup[Item] {
   def this(definition: CollectionDefinition) = this()
-  def this(definition: Unit, environments: js.Array[js.Any]) = this()
-  def this(definition: CollectionDefinition, environments: js.Array[js.Any]) = this()
+  def this(definition: Unit, environments: js.Array[Any]) = this()
+  def this(definition: CollectionDefinition, environments: js.Array[Any]) = this()
   
   def syncVariablesFrom(obj: StringDictionary[VariableDefinition]): js.UndefOr[Created] = js.native
   def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: Boolean): js.UndefOr[Created] = js.native
@@ -32,5 +32,5 @@ object Collection {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isCollection(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCollection(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

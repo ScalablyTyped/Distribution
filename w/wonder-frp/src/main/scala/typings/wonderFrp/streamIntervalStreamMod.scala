@@ -10,10 +10,10 @@ object streamIntervalStreamMod {
   
   @JSImport("wonder-frp/dist/es2015/stream/IntervalStream", "IntervalStream")
   @js.native
-  class IntervalStream protected () extends BaseStream {
+  open class IntervalStream protected () extends BaseStream {
     def this(interval: Double, scheduler: Scheduler) = this()
     
-    /* private */ var _interval: js.Any = js.native
+    /* private */ var _interval: Any = js.native
     
     def initWhenCreate(): Unit = js.native
   }

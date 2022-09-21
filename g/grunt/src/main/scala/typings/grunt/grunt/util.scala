@@ -1,7 +1,6 @@
 package typings.grunt.grunt
 
 import typings.grunt.anon.Custom
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object util {
       * If this value is set and an error occurs, it will be used as the value
       * and null will be passed as the error value.
       */
-    var fallback: js.UndefOr[js.Any] = js.undefined
+    var fallback: js.UndefOr[Any] = js.undefined
     
     /**
       * If specified, the same grunt bin that is currently running will be
@@ -54,13 +53,13 @@ object util {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
       
       inline def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
       
-      inline def setFallback(value: js.Any): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Any): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
@@ -177,25 +176,25 @@ object util {
         Unit
       ] = js.native
     
-    def error(error: js.Any): Error = js.native
-    def error(error: js.Any, origError: Error): Error = js.native
-    def error(error: Error): Error = js.native
-    def error(error: Error, origError: Error): Error = js.native
+    def error(error: js.Error): js.Error = js.native
+    def error(error: js.Error, origError: js.Error): js.Error = js.native
+    def error(error: Any): js.Error = js.native
+    def error(error: Any, origError: js.Error): js.Error = js.native
     /**
       * Return a new Error instance (that can be thrown) with the appropriate message.
       * If an Error object is specified instead of message that object will be returned.
       * Also, if an Error object is specified for origError and Grunt was run with the --debug 9 option,
       * the original Error stack will be dumped.
       */
-    def error(message: String): Error = js.native
-    def error(message: String, origError: Error): Error = js.native
+    def error(message: String): js.Error = js.native
+    def error(message: String, origError: js.Error): js.Error = js.native
     
     /**
       * Return the "kind" of a value. Like typeof but returns the internal [Class](Class/) value.
       * Possible results are "number", "string", "boolean", "function", "regexp", "array", "date",
       * "error", "null", "undefined" and the catch-all "object".
       */
-    def kindOf(value: js.Any): String = js.native
+    def kindOf(value: Any): String = js.native
     
     /**
       * The linefeed character, normalized for the current operating system.
@@ -204,7 +203,7 @@ object util {
     var linefeed: String = js.native
     
     // Internal libraries
-    var namespace: js.Any = js.native
+    var namespace: Any = js.native
     
     /**
       * Given a string, return a new string with all the linefeeds normalized for the current operating system.
@@ -224,9 +223,9 @@ object util {
       * If continueFunction returns false, a given object or value will be skipped.
       */
     def recurse(
-      `object`: js.Any,
-      callbackFunction: js.Function1[/* value */ js.Any, Unit],
-      continueFunction: js.Function1[/* objOrValue */ js.Any, Boolean]
+      `object`: Any,
+      callbackFunction: js.Function1[/* value */ Any, Unit],
+      continueFunction: js.Function1[/* objOrValue */ Any, Boolean]
     ): Unit = js.native
     
     /**
@@ -247,15 +246,15 @@ object util {
       */
     def spawn(
       options: ISpawnOptions,
-      done: js.Function3[/* error */ Error, /* result */ ISpawnResult, /* code */ Double, Unit]
+      done: js.Function3[/* error */ js.Error, /* result */ ISpawnResult, /* code */ Double, Unit]
     ): ISpawnedChild = js.native
     
-    var task: js.Any = js.native
+    var task: Any = js.native
     
     /**
       * Given an array or array-like object, return an array.
       * Great for converting arguments objects into arrays.
       */
-    def toArray[T](arrayLikeObject: js.Any): js.Array[T] = js.native
+    def toArray[T](arrayLikeObject: Any): js.Array[T] = js.native
   }
 }

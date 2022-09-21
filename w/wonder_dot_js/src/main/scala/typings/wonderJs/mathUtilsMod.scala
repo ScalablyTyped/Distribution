@@ -8,7 +8,7 @@ object mathUtilsMod {
   
   @JSImport("wonder.js/dist/es2015/utils/MathUtils", "MathUtils")
   @js.native
-  class MathUtils () extends StObject
+  open class MathUtils () extends StObject
   /* static members */
   object MathUtils {
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for clone-regexp
 
-Typings are for version 2.2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Clone and modify a RegExp instance
@@ -9,11 +9,11 @@ Clone and modify a RegExp instance
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | clone-regexp |
-| Keywords           | regexp, regex, re, regular, expression, clone, duplicate, modify, mutate |
+| Keywords           | regexp, regex, regular, expression, clone, duplicate, modify, mutate |
 | # releases         | 2 |
-| # dependents       | 25 |
-| # downloads        | 94195214 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.490625E7 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/clone-regexp#readme)

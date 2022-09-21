@@ -22,7 +22,7 @@ trait ErrorReport
   
   var state: State
   
-  var value: js.Any
+  var value: Any
 }
 object ErrorReport {
   
@@ -35,7 +35,7 @@ object ErrorReport {
     path: js.Array[String],
     prefs: ErrorValidationOptions,
     state: State,
-    value: js.Any
+    value: Any
   ): ErrorReport = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], prefs = prefs.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorReport]
@@ -51,12 +51,12 @@ object ErrorReport {
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setPrefs(value: ErrorValidationOptions): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
     
     inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

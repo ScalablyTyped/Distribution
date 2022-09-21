@@ -7,6 +7,7 @@ import typings.googleAppsScript.googleAppsScriptStrings.center
 import typings.googleAppsScript.googleAppsScriptStrings.left
 import typings.googleAppsScript.googleAppsScriptStrings.middle
 import typings.googleAppsScript.googleAppsScriptStrings.normal
+import typings.googleAppsScript.googleAppsScriptStrings.right
 import typings.googleAppsScript.googleAppsScriptStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,8 +40,8 @@ trait RangeList extends StObject {
   def getRanges(): js.Array[Range] = js.native
   
   def insertCheckboxes(): RangeList = js.native
-  def insertCheckboxes(checkedValue: js.Any): RangeList = js.native
-  def insertCheckboxes(checkedValue: js.Any, uncheckedValue: js.Any): RangeList = js.native
+  def insertCheckboxes(checkedValue: Any): RangeList = js.native
+  def insertCheckboxes(checkedValue: Any, uncheckedValue: Any): RangeList = js.native
   
   def removeCheckboxes(): RangeList = js.native
   
@@ -90,12 +91,7 @@ trait RangeList extends StObject {
   def setFormulaR1C1(formula: String): RangeList = js.native
   
   def setHorizontalAlignment(): RangeList = js.native
-  @JSName("setHorizontalAlignment")
-  def setHorizontalAlignment_center(alignment: center): RangeList = js.native
-  @JSName("setHorizontalAlignment")
-  def setHorizontalAlignment_left(alignment: left): RangeList = js.native
-  @JSName("setHorizontalAlignment")
-  def setHorizontalAlignment_normal(alignment: normal): RangeList = js.native
+  def setHorizontalAlignment(alignment: left | center | normal | right): RangeList = js.native
   
   def setNote(): RangeList = js.native
   def setNote(note: String): RangeList = js.native
@@ -109,15 +105,10 @@ trait RangeList extends StObject {
   
   def setTextRotation(degrees: Integer): RangeList = js.native
   
-  def setValue(value: js.Any): RangeList = js.native
+  def setValue(value: Any): RangeList = js.native
   
   def setVerticalAlignment(): RangeList = js.native
-  @JSName("setVerticalAlignment")
-  def setVerticalAlignment_bottom(alignment: bottom): RangeList = js.native
-  @JSName("setVerticalAlignment")
-  def setVerticalAlignment_middle(alignment: middle): RangeList = js.native
-  @JSName("setVerticalAlignment")
-  def setVerticalAlignment_top(alignment: top): RangeList = js.native
+  def setVerticalAlignment(alignment: top | middle | bottom): RangeList = js.native
   
   def setVerticalText(isVertical: Boolean): RangeList = js.native
   

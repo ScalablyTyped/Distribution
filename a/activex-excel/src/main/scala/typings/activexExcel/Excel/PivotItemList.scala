@@ -19,7 +19,7 @@ trait PivotItemList extends StObject {
   def Item(Index: String): PivotItem = js.native
   def Item(Index: Double): PivotItem = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Field: js.Any): PivotItem = js.native
+  def _Default(Field: Any): PivotItem = js.native
 }

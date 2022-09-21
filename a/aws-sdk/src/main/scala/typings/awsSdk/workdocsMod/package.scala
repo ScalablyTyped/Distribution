@@ -1,11 +1,16 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.ACTIVE
+import typings.awsSdk.awsSdkStrings.ALL
+import typings.awsSdk.awsSdkStrings.HTTPS
+import typings.awsSdk.awsSdkStrings.SHARED_WITH_ME
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActivityNamesFilterType = java.lang.String
+type ActivityNamesFilterType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DOCUMENT_CHECKED_IN
@@ -43,22 +48,22 @@ type ActivityNamesFilterType = java.lang.String
   - typings.awsSdk.awsSdkStrings.FOLDER_MOVED
   - java.lang.String
 */
-type ActivityType = typings.awsSdk.workdocsMod._ActivityType | java.lang.String
+type ActivityType = _ActivityType | String
 
-type AuthenticationHeaderType = java.lang.String
+type AuthenticationHeaderType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TRUE
   - typings.awsSdk.awsSdkStrings.FALSE
   - java.lang.String
 */
-type BooleanEnumType = typings.awsSdk.workdocsMod._BooleanEnumType | java.lang.String
+type BooleanEnumType = _BooleanEnumType | String
 
-type BooleanType = scala.Boolean
+type BooleanType = Boolean
 
-type CommentIdType = java.lang.String
+type CommentIdType = String
 
-type CommentList = js.Array[typings.awsSdk.workdocsMod.Comment]
+type CommentList = js.Array[Comment]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DRAFT
@@ -66,44 +71,44 @@ type CommentList = js.Array[typings.awsSdk.workdocsMod.Comment]
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type CommentStatusType = typings.awsSdk.workdocsMod._CommentStatusType | java.lang.String
+type CommentStatusType = _CommentStatusType | String
 
-type CommentTextType = java.lang.String
+type CommentTextType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUBLIC
   - typings.awsSdk.awsSdkStrings.PRIVATE
   - java.lang.String
 */
-type CommentVisibilityType = typings.awsSdk.workdocsMod._CommentVisibilityType | java.lang.String
+type CommentVisibilityType = _CommentVisibilityType | String
 
-type CustomMetadataKeyList = js.Array[typings.awsSdk.workdocsMod.CustomMetadataKeyType]
+type CustomMetadataKeyList = js.Array[CustomMetadataKeyType]
 
-type CustomMetadataKeyType = java.lang.String
+type CustomMetadataKeyType = String
 
-type CustomMetadataMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.workdocsMod.CustomMetadataValueType]
+type CustomMetadataMap = StringDictionary[CustomMetadataValueType]
 
-type CustomMetadataValueType = java.lang.String
+type CustomMetadataValueType = String
 
-type DocumentContentType = java.lang.String
+type DocumentContentType = String
 
-type DocumentMetadataList = js.Array[typings.awsSdk.workdocsMod.DocumentMetadata]
+type DocumentMetadataList = js.Array[DocumentMetadata]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ORIGINAL
   - typings.awsSdk.awsSdkStrings.WITH_COMMENTS
   - java.lang.String
 */
-type DocumentSourceType = typings.awsSdk.workdocsMod._DocumentSourceType | java.lang.String
+type DocumentSourceType = _DocumentSourceType | String
 
-type DocumentSourceUrlMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.workdocsMod.UrlType]
+type DocumentSourceUrlMap = StringDictionary[UrlType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZED
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - java.lang.String
 */
-type DocumentStatusType = typings.awsSdk.workdocsMod._DocumentStatusType | java.lang.String
+type DocumentStatusType = _DocumentStatusType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SMALL
@@ -111,19 +116,19 @@ type DocumentStatusType = typings.awsSdk.workdocsMod._DocumentStatusType | java.
   - typings.awsSdk.awsSdkStrings.LARGE
   - java.lang.String
 */
-type DocumentThumbnailType = typings.awsSdk.workdocsMod._DocumentThumbnailType | java.lang.String
+type DocumentThumbnailType = _DocumentThumbnailType | String
 
-type DocumentThumbnailUrlMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.workdocsMod.UrlType]
+type DocumentThumbnailUrlMap = StringDictionary[UrlType]
 
-type DocumentVersionIdType = java.lang.String
+type DocumentVersionIdType = String
 
-type DocumentVersionMetadataList = js.Array[typings.awsSdk.workdocsMod.DocumentVersionMetadata]
+type DocumentVersionMetadataList = js.Array[DocumentVersionMetadata]
 
-type DocumentVersionStatus = typings.awsSdk.awsSdkStrings.ACTIVE | java.lang.String
+type DocumentVersionStatus = ACTIVE | String
 
-type EmailAddressType = java.lang.String
+type EmailAddressType = String
 
-type FieldNamesType = java.lang.String
+type FieldNamesType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL
@@ -131,64 +136,64 @@ type FieldNamesType = java.lang.String
   - typings.awsSdk.awsSdkStrings.FOLDER
   - java.lang.String
 */
-type FolderContentType = typings.awsSdk.workdocsMod._FolderContentType | java.lang.String
+type FolderContentType = _FolderContentType | String
 
-type FolderMetadataList = js.Array[typings.awsSdk.workdocsMod.FolderMetadata]
+type FolderMetadataList = js.Array[FolderMetadata]
 
-type GroupMetadataList = js.Array[typings.awsSdk.workdocsMod.GroupMetadata]
+type GroupMetadataList = js.Array[GroupMetadata]
 
-type GroupNameType = java.lang.String
+type GroupNameType = String
 
-type HashType = java.lang.String
+type HashType = String
 
-type HeaderNameType = java.lang.String
+type HeaderNameType = String
 
-type HeaderValueType = java.lang.String
+type HeaderValueType = String
 
-type IdType = java.lang.String
+type IdType = String
 
-type LimitType = scala.Double
+type LimitType = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.en_
   - typings.awsSdk.awsSdkStrings.fr_
-  - typings.awsSdk.awsSdkStrings.ko
+  - typings.awsSdk.awsSdkStrings.ko_
   - typings.awsSdk.awsSdkStrings.de_
   - typings.awsSdk.awsSdkStrings.es_
   - typings.awsSdk.awsSdkStrings.ja_
   - typings.awsSdk.awsSdkStrings.ru_
-  - typings.awsSdk.awsSdkStrings.zh_CN
-  - typings.awsSdk.awsSdkStrings.zh_TW
-  - typings.awsSdk.awsSdkStrings.pt_BR
+  - typings.awsSdk.awsSdkStrings.zh_CN_
+  - typings.awsSdk.awsSdkStrings.zh_TW_
+  - typings.awsSdk.awsSdkStrings.pt_BR_
   - typings.awsSdk.awsSdkStrings.default__
   - java.lang.String
 */
-type LocaleType = typings.awsSdk.workdocsMod._LocaleType | java.lang.String
+type LocaleType = _LocaleType | String
 
-type MarkerType = java.lang.String
+type MarkerType = String
 
-type MessageType = java.lang.String
+type MessageType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASCENDING
   - typings.awsSdk.awsSdkStrings.DESCENDING
   - java.lang.String
 */
-type OrderType = typings.awsSdk.workdocsMod._OrderType | java.lang.String
+type OrderType = _OrderType | String
 
-type OrganizationUserList = js.Array[typings.awsSdk.workdocsMod.User]
+type OrganizationUserList = js.Array[User]
 
-type PageMarkerType = java.lang.String
+type PageMarkerType = String
 
-type PasswordType = java.lang.String
+type PasswordType = String
 
-type PermissionInfoList = js.Array[typings.awsSdk.workdocsMod.PermissionInfo]
+type PermissionInfoList = js.Array[PermissionInfo]
 
-type PositiveIntegerType = scala.Double
+type PositiveIntegerType = Double
 
-type PositiveSizeType = scala.Double
+type PositiveSizeType = Double
 
-type PrincipalList = js.Array[typings.awsSdk.workdocsMod.Principal]
+type PrincipalList = js.Array[Principal]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER
@@ -198,22 +203,22 @@ type PrincipalList = js.Array[typings.awsSdk.workdocsMod.Principal]
   - typings.awsSdk.awsSdkStrings.ORGANIZATION
   - java.lang.String
 */
-type PrincipalType = typings.awsSdk.workdocsMod._PrincipalType | java.lang.String
+type PrincipalType = _PrincipalType | String
 
-type ResourceCollectionType = typings.awsSdk.awsSdkStrings.SHARED_WITH_ME | java.lang.String
+type ResourceCollectionType = SHARED_WITH_ME | String
 
-type ResourceIdType = java.lang.String
+type ResourceIdType = String
 
-type ResourceNameType = java.lang.String
+type ResourceNameType = String
 
-type ResourcePathComponentList = js.Array[typings.awsSdk.workdocsMod.ResourcePathComponent]
+type ResourcePathComponentList = js.Array[ResourcePathComponent]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DATE
   - typings.awsSdk.awsSdkStrings.NAME
   - java.lang.String
 */
-type ResourceSortType = typings.awsSdk.workdocsMod._ResourceSortType | java.lang.String
+type ResourceSortType = _ResourceSortType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -222,21 +227,21 @@ type ResourceSortType = typings.awsSdk.workdocsMod._ResourceSortType | java.lang
   - typings.awsSdk.awsSdkStrings.RECYCLED
   - java.lang.String
 */
-type ResourceStateType = typings.awsSdk.workdocsMod._ResourceStateType | java.lang.String
+type ResourceStateType = _ResourceStateType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FOLDER
   - typings.awsSdk.awsSdkStrings.DOCUMENT
   - java.lang.String
 */
-type ResourceType = typings.awsSdk.workdocsMod._ResourceType | java.lang.String
+type ResourceType = _ResourceType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DIRECT
   - typings.awsSdk.awsSdkStrings.INHERITED
   - java.lang.String
 */
-type RolePermissionType = typings.awsSdk.workdocsMod._RolePermissionType | java.lang.String
+type RolePermissionType = _RolePermissionType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VIEWER
@@ -245,64 +250,64 @@ type RolePermissionType = typings.awsSdk.workdocsMod._RolePermissionType | java.
   - typings.awsSdk.awsSdkStrings.COOWNER
   - java.lang.String
 */
-type RoleType = typings.awsSdk.workdocsMod._RoleType | java.lang.String
+type RoleType = _RoleType | String
 
-type SearchQueryType = java.lang.String
+type SearchQueryType = String
 
-type SharePrincipalList = js.Array[typings.awsSdk.workdocsMod.SharePrincipal]
+type SharePrincipalList = js.Array[SharePrincipal]
 
-type ShareResultsList = js.Array[typings.awsSdk.workdocsMod.ShareResult]
+type ShareResultsList = js.Array[ShareResult]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCESS
   - typings.awsSdk.awsSdkStrings.FAILURE
   - java.lang.String
 */
-type ShareStatusType = typings.awsSdk.workdocsMod._ShareStatusType | java.lang.String
+type ShareStatusType = _ShareStatusType | String
 
-type SharedLabel = java.lang.String
+type SharedLabel = String
 
-type SharedLabels = js.Array[typings.awsSdk.workdocsMod.SharedLabel]
+type SharedLabels = js.Array[SharedLabel]
 
-type SignedHeaderMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.workdocsMod.HeaderValueType]
+type SignedHeaderMap = StringDictionary[HeaderValueType]
 
-type SizeType = scala.Double
+type SizeType = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNLIMITED
   - typings.awsSdk.awsSdkStrings.QUOTA
   - java.lang.String
 */
-type StorageType = typings.awsSdk.workdocsMod._StorageType | java.lang.String
+type StorageType = _StorageType | String
 
-type SubscriptionEndPointType = java.lang.String
+type SubscriptionEndPointType = String
 
-type SubscriptionList = js.Array[typings.awsSdk.workdocsMod.Subscription]
+type SubscriptionList = js.Array[Subscription]
 
-type SubscriptionProtocolType = typings.awsSdk.awsSdkStrings.HTTPS | java.lang.String
+type SubscriptionProtocolType = HTTPS | String
 
-type SubscriptionType = typings.awsSdk.awsSdkStrings.ALL | java.lang.String
+type SubscriptionType = ALL | String
 
-type TimeZoneIdType = java.lang.String
+type TimeZoneIdType = String
 
-type TimestampType = typings.std.Date
+type TimestampType = js.Date
 
-type UrlType = java.lang.String
+type UrlType = String
 
-type UserActivities = js.Array[typings.awsSdk.workdocsMod.Activity]
+type UserActivities = js.Array[Activity]
 
-type UserAttributeValueType = java.lang.String
+type UserAttributeValueType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL
   - typings.awsSdk.awsSdkStrings.ACTIVE_PENDING
   - java.lang.String
 */
-type UserFilterType = typings.awsSdk.workdocsMod._UserFilterType | java.lang.String
+type UserFilterType = _UserFilterType | String
 
-type UserIdsType = java.lang.String
+type UserIdsType = String
 
-type UserMetadataList = js.Array[typings.awsSdk.workdocsMod.UserMetadata]
+type UserMetadataList = js.Array[UserMetadata]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER_NAME
@@ -312,7 +317,7 @@ type UserMetadataList = js.Array[typings.awsSdk.workdocsMod.UserMetadata]
   - typings.awsSdk.awsSdkStrings.STORAGE_USED
   - java.lang.String
 */
-type UserSortType = typings.awsSdk.workdocsMod._UserSortType | java.lang.String
+type UserSortType = _UserSortType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -320,7 +325,7 @@ type UserSortType = typings.awsSdk.workdocsMod._UserSortType | java.lang.String
   - typings.awsSdk.awsSdkStrings.PENDING
   - java.lang.String
 */
-type UserStatusType = typings.awsSdk.workdocsMod._UserStatusType | java.lang.String
+type UserStatusType = _UserStatusType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER
@@ -330,13 +335,13 @@ type UserStatusType = typings.awsSdk.workdocsMod._UserStatusType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.WORKSPACESUSER
   - java.lang.String
 */
-type UserType = typings.awsSdk.workdocsMod._UserType | java.lang.String
+type UserType = _UserType | String
 
-type UsernameType = java.lang.String
+type UsernameType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-05-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.workdocsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

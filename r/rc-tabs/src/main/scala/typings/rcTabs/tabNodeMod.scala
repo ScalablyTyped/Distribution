@@ -3,7 +3,7 @@ package typings.rcTabs
 import org.scalablytyped.runtime.Shortcut
 import typings.rcTabs.interfaceMod.EditableConfig
 import typings.rcTabs.interfaceMod.Tab
-import typings.rcTabs.interfaceMod.TabPosition
+import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.ForwardRefExoticComponent
@@ -55,27 +55,21 @@ object tabNodeMod extends Shortcut {
     
     var renderWrapper: js.UndefOr[js.Function1[/* node */ ReactElement, ReactElement]] = js.undefined
     
-    var rtl: Boolean
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var tab: Tab
-    
-    var tabBarGutter: js.UndefOr[Double] = js.undefined
-    
-    var tabPosition: TabPosition
   }
   object TabNodeProps {
     
     inline def apply(
       active: Boolean,
       id: String,
-      onFocus: FocusEvent[Element] => Unit,
+      onFocus: FocusEvent[Element, Element] => Unit,
       onRemove: () => Unit,
       prefixCls: String,
-      rtl: Boolean,
-      tab: Tab,
-      tabPosition: TabPosition
+      tab: Tab
     ): TabNodeProps = {
-      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onFocus = js.Any.fromFunction1(onFocus), onRemove = js.Any.fromFunction0(onRemove), prefixCls = prefixCls.asInstanceOf[js.Any], rtl = rtl.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any], tabPosition = tabPosition.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onFocus = js.Any.fromFunction1(onFocus), onRemove = js.Any.fromFunction0(onRemove), prefixCls = prefixCls.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabNodeProps]
     }
     
@@ -97,7 +91,7 @@ object tabNodeMod extends Shortcut {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[Element, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
       
@@ -119,15 +113,11 @@ object tabNodeMod extends Shortcut {
       
       inline def setRenderWrapperUndefined: Self = StObject.set(x, "renderWrapper", js.undefined)
       
-      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setTab(value: Tab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
-      
-      inline def setTabBarGutter(value: Double): Self = StObject.set(x, "tabBarGutter", value.asInstanceOf[js.Any])
-      
-      inline def setTabBarGutterUndefined: Self = StObject.set(x, "tabBarGutter", js.undefined)
-      
-      inline def setTabPosition(value: TabPosition): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
     }
   }
   

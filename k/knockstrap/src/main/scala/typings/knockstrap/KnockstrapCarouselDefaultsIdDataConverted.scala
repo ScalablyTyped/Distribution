@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KnockstrapCarouselDefaultsIdDataConverted extends StObject {
   
-  var id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ js.Any
+  var id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ Any
 }
 object KnockstrapCarouselDefaultsIdDataConverted {
   
   inline def apply(
-    id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ js.Any
+    id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ Any
   ): KnockstrapCarouselDefaultsIdDataConverted = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockstrapCarouselDefaultsIdDataConverted]
@@ -20,7 +20,7 @@ object KnockstrapCarouselDefaultsIdDataConverted {
   extension [Self <: KnockstrapCarouselDefaultsIdDataConverted](x: Self) {
     
     inline def setId(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ Any
     ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

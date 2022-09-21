@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "reaptcha" : "1.7.2"
+      "reaptcha" : "1.12.1"
     }
   ],
   "test-dependencies" : [
     {
-      "reaptcha" : "1.7.2"
+      "reaptcha" : "1.12.1"
     }
   ],
   "compile-devDependencies" : [

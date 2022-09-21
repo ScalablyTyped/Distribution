@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventSubscription extends StObject {
   
   /**
-    * The AWS DMS event notification subscription Id.
+    * The DMS event notification subscription Id.
     */
   var CustSubscriptionId: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS customer account associated with the AWS DMS event notification subscription.
+    * The Amazon Web Services customer account associated with the DMS event notification subscription.
     */
   var CustomerAwsId: js.UndefOr[String] = js.undefined
   
@@ -27,7 +27,7 @@ trait EventSubscription extends StObject {
   var EventCategoriesList: js.UndefOr[typings.awsSdk.dmsMod.EventCategoriesList] = js.undefined
   
   /**
-    * The topic ARN of the AWS DMS event notification subscription.
+    * The topic ARN of the DMS event notification subscription.
     */
   var SnsTopicArn: js.UndefOr[String] = js.undefined
   
@@ -37,17 +37,17 @@ trait EventSubscription extends StObject {
   var SourceIdsList: js.UndefOr[typings.awsSdk.dmsMod.SourceIdsList] = js.undefined
   
   /**
-    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | replication-task
+    *  The type of DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | replication-task
     */
   var SourceType: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the AWS DMS event notification subscription. Constraints: Can be one of the following: creating | modifying | deleting | active | no-permission | topic-not-exist The status "no-permission" indicates that AWS DMS no longer has permission to post to the SNS topic. The status "topic-not-exist" indicates that the topic was deleted after the subscription was created.
+    * The status of the DMS event notification subscription. Constraints: Can be one of the following: creating | modifying | deleting | active | no-permission | topic-not-exist The status "no-permission" indicates that DMS no longer has permission to post to the SNS topic. The status "topic-not-exist" indicates that the topic was deleted after the subscription was created.
     */
   var Status: js.UndefOr[String] = js.undefined
   
   /**
-    * The time the AWS DMS event notification subscription was created.
+    * The time the DMS event notification subscription was created.
     */
   var SubscriptionCreationTime: js.UndefOr[String] = js.undefined
 }
@@ -76,7 +76,7 @@ object EventSubscription {
     
     inline def setEventCategoriesListUndefined: Self = StObject.set(x, "EventCategoriesList", js.undefined)
     
-    inline def setEventCategoriesListVarargs(value: String*): Self = StObject.set(x, "EventCategoriesList", js.Array(value :_*))
+    inline def setEventCategoriesListVarargs(value: String*): Self = StObject.set(x, "EventCategoriesList", js.Array(value*))
     
     inline def setSnsTopicArn(value: String): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
@@ -86,7 +86,7 @@ object EventSubscription {
     
     inline def setSourceIdsListUndefined: Self = StObject.set(x, "SourceIdsList", js.undefined)
     
-    inline def setSourceIdsListVarargs(value: String*): Self = StObject.set(x, "SourceIdsList", js.Array(value :_*))
+    inline def setSourceIdsListVarargs(value: String*): Self = StObject.set(x, "SourceIdsList", js.Array(value*))
     
     inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     

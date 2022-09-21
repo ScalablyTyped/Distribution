@@ -10,10 +10,10 @@ The finch package has been deprecated in favor of @finch. See: https://www.npmjs
 | ------------------ | :-------------: |
 | Full name          | finch |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 1935 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 174.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/mseeley/finch-parked#readme)

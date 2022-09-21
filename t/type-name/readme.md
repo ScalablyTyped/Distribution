@@ -11,9 +11,9 @@ Just a reasonable typeof
 | Full name          | type-name |
 | Keywords           | type, typeof |
 | # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 12425902 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1475764.0 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/twada/type-name)

@@ -269,7 +269,7 @@ object Mirror {
         // Adds a new attachment to a timeline item.
         def insert(itemId: String): Attachment = js.native
         // Adds a new attachment to a timeline item.
-        def insert(itemId: String, mediaData: js.Any): Attachment = js.native
+        def insert(itemId: String, mediaData: Any): Attachment = js.native
         
         // Returns a list of attachments for a timeline item.
         def list(itemId: String): AttachmentsListResponse = js.native
@@ -290,7 +290,7 @@ object Mirror {
       // Inserts a new item into the timeline.
       def insert(resource: TimelineItem): TimelineItem = js.native
       // Inserts a new item into the timeline.
-      def insert(resource: TimelineItem, mediaData: js.Any): TimelineItem = js.native
+      def insert(resource: TimelineItem, mediaData: Any): TimelineItem = js.native
       
       // Retrieves a list of timeline items for the authenticated user.
       def list(): TimelineListResponse = js.native
@@ -306,7 +306,7 @@ object Mirror {
       // Updates a timeline item in place.
       def update(resource: TimelineItem, id: String): TimelineItem = js.native
       // Updates a timeline item in place.
-      def update(resource: TimelineItem, id: String, mediaData: js.Any): TimelineItem = js.native
+      def update(resource: TimelineItem, id: String, mediaData: Any): TimelineItem = js.native
     }
   }
   
@@ -390,13 +390,13 @@ object Mirror {
         
         inline def setAuthTokensUndefined: Self = StObject.set(x, "authTokens", js.undefined)
         
-        inline def setAuthTokensVarargs(value: AuthToken*): Self = StObject.set(x, "authTokens", js.Array(value :_*))
+        inline def setAuthTokensVarargs(value: AuthToken*): Self = StObject.set(x, "authTokens", js.Array(value*))
         
         inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
         
         inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
         
-        inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+        inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
         
         inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
@@ -406,7 +406,7 @@ object Mirror {
         
         inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
         
-        inline def setUserDataVarargs(value: UserData*): Self = StObject.set(x, "userData", js.Array(value :_*))
+        inline def setUserDataVarargs(value: UserData*): Self = StObject.set(x, "userData", js.Array(value*))
       }
     }
     
@@ -466,7 +466,7 @@ object Mirror {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Attachment*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Attachment*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -557,13 +557,13 @@ object Mirror {
         
         inline def setAcceptCommandsUndefined: Self = StObject.set(x, "acceptCommands", js.undefined)
         
-        inline def setAcceptCommandsVarargs(value: Command*): Self = StObject.set(x, "acceptCommands", js.Array(value :_*))
+        inline def setAcceptCommandsVarargs(value: Command*): Self = StObject.set(x, "acceptCommands", js.Array(value*))
         
         inline def setAcceptTypes(value: js.Array[String]): Self = StObject.set(x, "acceptTypes", value.asInstanceOf[js.Any])
         
         inline def setAcceptTypesUndefined: Self = StObject.set(x, "acceptTypes", js.undefined)
         
-        inline def setAcceptTypesVarargs(value: String*): Self = StObject.set(x, "acceptTypes", js.Array(value :_*))
+        inline def setAcceptTypesVarargs(value: String*): Self = StObject.set(x, "acceptTypes", js.Array(value*))
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -577,7 +577,7 @@ object Mirror {
         
         inline def setImageUrlsUndefined: Self = StObject.set(x, "imageUrls", js.undefined)
         
-        inline def setImageUrlsVarargs(value: String*): Self = StObject.set(x, "imageUrls", js.Array(value :_*))
+        inline def setImageUrlsVarargs(value: String*): Self = StObject.set(x, "imageUrls", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -595,7 +595,7 @@ object Mirror {
         
         inline def setSharingFeaturesUndefined: Self = StObject.set(x, "sharingFeatures", js.undefined)
         
-        inline def setSharingFeaturesVarargs(value: String*): Self = StObject.set(x, "sharingFeatures", js.Array(value :_*))
+        inline def setSharingFeaturesVarargs(value: String*): Self = StObject.set(x, "sharingFeatures", js.Array(value*))
         
         inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
@@ -630,7 +630,7 @@ object Mirror {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Contact*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Contact*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -718,7 +718,7 @@ object Mirror {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Location*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Location*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -773,7 +773,7 @@ object Mirror {
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
         
-        inline def setValuesVarargs(value: MenuValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: MenuValue*): Self = StObject.set(x, "values", js.Array(value*))
       }
     }
     
@@ -847,7 +847,7 @@ object Mirror {
         
         inline def setUserActionsUndefined: Self = StObject.set(x, "userActions", js.undefined)
         
-        inline def setUserActionsVarargs(value: UserAction*): Self = StObject.set(x, "userActions", js.Array(value :_*))
+        inline def setUserActionsVarargs(value: UserAction*): Self = StObject.set(x, "userActions", js.Array(value*))
         
         inline def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
         
@@ -968,7 +968,7 @@ object Mirror {
         
         inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
         
-        inline def setOperationVarargs(value: String*): Self = StObject.set(x, "operation", js.Array(value :_*))
+        inline def setOperationVarargs(value: String*): Self = StObject.set(x, "operation", js.Array(value*))
         
         inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
         
@@ -1003,7 +1003,7 @@ object Mirror {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Subscription*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Subscription*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1078,7 +1078,7 @@ object Mirror {
         
         inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
         
-        inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+        inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value*))
         
         inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
         
@@ -1140,7 +1140,7 @@ object Mirror {
         
         inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
         
-        inline def setMenuItemsVarargs(value: MenuItem*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
+        inline def setMenuItemsVarargs(value: MenuItem*): Self = StObject.set(x, "menuItems", js.Array(value*))
         
         inline def setNotification(value: NotificationConfig): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
         
@@ -1154,7 +1154,7 @@ object Mirror {
         
         inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
         
-        inline def setRecipientsVarargs(value: Contact*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+        inline def setRecipientsVarargs(value: Contact*): Self = StObject.set(x, "recipients", js.Array(value*))
         
         inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
@@ -1207,7 +1207,7 @@ object Mirror {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: TimelineItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: TimelineItem*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         

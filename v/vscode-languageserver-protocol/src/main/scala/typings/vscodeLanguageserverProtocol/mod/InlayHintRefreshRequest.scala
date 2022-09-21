@@ -1,0 +1,21 @@
+package typings.vscodeLanguageserverProtocol.mod
+
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashinlayHintSlashrefresh
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object InlayHintRefreshRequest {
+  
+  @JSImport("vscode-languageserver-protocol", "InlayHintRefreshRequest.messageDirection")
+  @js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "InlayHintRefreshRequest.method")
+  @js.native
+  val method: workspaceSlashinlayHintSlashrefresh = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "InlayHintRefreshRequest.type")
+  @js.native
+  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType0[Unit, Unit, Unit, Unit] = js.native
+}

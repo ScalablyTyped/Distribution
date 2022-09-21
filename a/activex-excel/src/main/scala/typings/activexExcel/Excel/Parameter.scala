@@ -17,13 +17,13 @@ trait Parameter extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PromptString: String
   
   var RefreshOnChange: Boolean
   
-  def SetParam(Type: XlParameterType, Value: js.Any): Unit
+  def SetParam(Type: XlParameterType, Value: Any): Unit
   
   def SourceRange(Address: String): Range
   def SourceRange(RowIndex: Double): Range
@@ -33,7 +33,7 @@ trait Parameter extends StObject {
   
   val Type: XlParameterType
   
-  val Value: js.Any
+  val Value: Any
 }
 object Parameter {
   
@@ -43,13 +43,13 @@ object Parameter {
     DataType: XlParameterDataType,
     ExcelDotParameter_typekey: Parameter,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     PromptString: String,
     RefreshOnChange: Boolean,
-    SetParam: (XlParameterType, js.Any) => Unit,
+    SetParam: (XlParameterType, Any) => Unit,
     SourceRange: Range,
     Type: XlParameterType,
-    Value: js.Any
+    Value: Any
   ): Parameter = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DataType = DataType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PromptString = PromptString.asInstanceOf[js.Any], RefreshOnChange = RefreshOnChange.asInstanceOf[js.Any], SetParam = js.Any.fromFunction2(SetParam), SourceRange = SourceRange.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.Parameter_typekey")(ExcelDotParameter_typekey.asInstanceOf[js.Any])
@@ -68,18 +68,18 @@ object Parameter {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPromptString(value: String): Self = StObject.set(x, "PromptString", value.asInstanceOf[js.Any])
     
     inline def setRefreshOnChange(value: Boolean): Self = StObject.set(x, "RefreshOnChange", value.asInstanceOf[js.Any])
     
-    inline def setSetParam(value: (XlParameterType, js.Any) => Unit): Self = StObject.set(x, "SetParam", js.Any.fromFunction2(value))
+    inline def setSetParam(value: (XlParameterType, Any) => Unit): Self = StObject.set(x, "SetParam", js.Any.fromFunction2(value))
     
     inline def setSourceRange(value: Range): Self = StObject.set(x, "SourceRange", value.asInstanceOf[js.Any])
     
     inline def setType(value: XlParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

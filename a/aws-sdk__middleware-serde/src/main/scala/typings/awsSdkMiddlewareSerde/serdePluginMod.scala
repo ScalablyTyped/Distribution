@@ -13,21 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object serdePluginMod {
   
-  @JSImport("@aws-sdk/middleware-serde/dist/cjs/serdePlugin", JSImport.Namespace)
+  @JSImport("@aws-sdk/middleware-serde/dist-types/serdePlugin", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/middleware-serde/dist/cjs/serdePlugin", "deserializerMiddlewareOption")
+  @JSImport("@aws-sdk/middleware-serde/dist-types/serdePlugin", "deserializerMiddlewareOption")
   @js.native
   val deserializerMiddlewareOption: DeserializeHandlerOptions = js.native
   
   inline def getSerdePlugin[InputType /* <: js.Object */, SerDeContext /* <: EndpointBearer */, OutputType /* <: MetadataBearer */](
     config: SerDeContext,
-    serializer: RequestSerializer[js.Any, SerDeContext],
-    deserializer: ResponseDeserializer[OutputType, js.Any, SerDeContext]
+    serializer: RequestSerializer[Any, SerDeContext],
+    deserializer: ResponseDeserializer[OutputType, Any, SerDeContext]
   ): Pluggable[InputType, OutputType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSerdePlugin")(config.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], deserializer.asInstanceOf[js.Any])).asInstanceOf[Pluggable[InputType, OutputType]]
   
-  @JSImport("@aws-sdk/middleware-serde/dist/cjs/serdePlugin", "serializerMiddlewareOption")
+  @JSImport("@aws-sdk/middleware-serde/dist-types/serdePlugin", "serializerMiddlewareOption")
   @js.native
   val serializerMiddlewareOption: SerializeHandlerOptions = js.native
 }

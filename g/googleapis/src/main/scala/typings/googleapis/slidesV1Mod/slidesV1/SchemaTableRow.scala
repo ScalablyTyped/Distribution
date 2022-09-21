@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Properties and contents of each row in a table.
-  */
 trait SchemaTableRow extends StObject {
   
   /**
@@ -15,10 +12,7 @@ trait SchemaTableRow extends StObject {
   var rowHeight: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
-    * Properties and contents of each cell.  Cells that span multiple columns
-    * are represented only once with a column_span greater than 1. As a result,
-    * the length of this collection does not always match the number of columns
-    * of the entire table.
+    * Properties and contents of each cell. Cells that span multiple columns are represented only once with a column_span greater than 1. As a result, the length of this collection does not always match the number of columns of the entire table.
     */
   var tableCells: js.UndefOr[js.Array[SchemaTableCell]] = js.undefined
   
@@ -44,7 +38,7 @@ object SchemaTableRow {
     
     inline def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
     
-    inline def setTableCellsVarargs(value: SchemaTableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
+    inline def setTableCellsVarargs(value: SchemaTableCell*): Self = StObject.set(x, "tableCells", js.Array(value*))
     
     inline def setTableRowProperties(value: SchemaTableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
     

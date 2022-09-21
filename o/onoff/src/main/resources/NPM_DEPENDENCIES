@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "onoff" : "6.0.1"
+      "onoff" : "6.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "onoff" : "6.0.1"
+      "onoff" : "6.0.3"
     }
   ],
   "compile-devDependencies" : [

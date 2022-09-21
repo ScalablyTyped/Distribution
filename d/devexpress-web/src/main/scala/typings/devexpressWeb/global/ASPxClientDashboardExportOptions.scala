@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardExportOptions")
 @js.native
-class ASPxClientDashboardExportOptions ()
+open class ASPxClientDashboardExportOptions ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardExportOptions {
   

@@ -1,6 +1,5 @@
 package typings.uuidv4
 
-import typings.std.RegExp
 import typings.uuidv4.anon.Pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,13 +43,13 @@ object mod {
     
     @JSImport("uuidv4", "regex.v4")
     @js.native
-    def v4: RegExp = js.native
-    inline def v4_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v4")(x.asInstanceOf[js.Any])
+    def v4: js.RegExp = js.native
+    inline def v4_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v4")(x.asInstanceOf[js.Any])
     
     @JSImport("uuidv4", "regex.v5")
     @js.native
-    def v5: RegExp = js.native
-    inline def v5_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v5")(x.asInstanceOf[js.Any])
+    def v5: js.RegExp = js.native
+    inline def v5_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v5")(x.asInstanceOf[js.Any])
   }
   
   inline def uuid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[String]

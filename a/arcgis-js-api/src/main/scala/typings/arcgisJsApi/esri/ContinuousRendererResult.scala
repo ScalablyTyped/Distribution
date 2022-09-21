@@ -39,7 +39,7 @@ trait ContinuousRendererResult
   var defaultValuesUsed: Boolean
   
   /**
-    * The renderer object configured to best match the given basemap and the spread of the data.
+    * The renderer object configured to best match the view's background and the spread of the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ContinuousRendererResult)
     */
@@ -53,7 +53,7 @@ trait ContinuousRendererResult
   var statistics: SummaryStatisticsResult
   
   /**
-    * A color visual variable configured based on the statistics of the data and the given basemap and scheme.
+    * A color visual variable configured based on the statistics of the data and the view's background.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ContinuousRendererResult)
     */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResultByTime extends StObject {
   
   /**
-    * Whether the result is estimated.
+    * Determines whether the result is estimated.
     */
   var Estimated: js.UndefOr[typings.awsSdk.costexplorerMod.Estimated] = js.undefined
   
@@ -43,7 +43,7 @@ object ResultByTime {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     

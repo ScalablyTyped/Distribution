@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-node", "DeleteBucketCorsCommand")
 @js.native
-class DeleteBucketCorsCommand protected ()
+open class DeleteBucketCorsCommand protected ()
   extends typings.awsSdkClientS3Node.deleteBucketCorsCommandMod.DeleteBucketCorsCommand {
   def this(input: DeleteBucketCorsInput) = this()
 }

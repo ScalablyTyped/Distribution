@@ -1,9 +1,5 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +9,7 @@ trait ParamsResourceProjectsInstancesPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Required. A unique identifier for the instance, which cannot be changed
-    * after the instance is created. Values are of the form
-    * `projects/<project>/instances/a-z*[a-z0-9]`. The final segment of the
-    * name must be between 6 and 30 characters in length.
+    * Required. A unique identifier for the instance, which cannot be changed after the instance is created. Values are of the form `projects//instances/a-z*[a-z0-9]`. The final segment of the name must be between 2 and 64 characters in length.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -38,10 +26,6 @@ object ParamsResourceProjectsInstancesPatch {
   }
   
   extension [Self <: ParamsResourceProjectsInstancesPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for cookieclicker
 
-Typings are for version 2.031
+Typings are for version 2.048
 
 
 

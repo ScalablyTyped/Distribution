@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@intlify/vue-devtools" : "9.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@intlify/vue-devtools" : "9.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

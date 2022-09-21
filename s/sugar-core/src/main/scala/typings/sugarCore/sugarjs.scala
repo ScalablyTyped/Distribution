@@ -10,7 +10,6 @@ import typings.std.Intl.DateTimeFormatOptions
 import typings.std.Intl.NumberFormatOptions
 import typings.std.NumberConstructor
 import typings.std.ObjectConstructor
-import typings.std.RegExp
 import typings.std.RegExpConstructor
 import typings.std.RegExpExecArray
 import typings.std.RegExpMatchArray
@@ -45,7 +44,7 @@ object sugarjs {
       def every(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): SugarDefaultChainable[Boolean] = js.native
       def every(
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-        thisArg: js.Any
+        thisArg: Any
       ): SugarDefaultChainable[Boolean] = js.native
       
       def fill(value: T): SugarDefaultChainable[this.type] = js.native
@@ -53,28 +52,28 @@ object sugarjs {
       def fill(value: T, start: Double, end: Double): SugarDefaultChainable[this.type] = js.native
       def fill(value: T, start: Unit, end: Double): SugarDefaultChainable[this.type] = js.native
       
-      def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): SugarDefaultChainable[js.Array[T]] = js.native
+      def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any]): SugarDefaultChainable[js.Array[T]] = js.native
       def filter(
-        callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
-        thisArg: js.Any
+        callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any],
+        thisArg: Any
       ): SugarDefaultChainable[js.Array[T]] = js.native
       
       def find(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], Boolean]): SugarDefaultChainable[js.UndefOr[T]] = js.native
       def find(
         predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], Boolean],
-        thisArg: js.Any
+        thisArg: Any
       ): SugarDefaultChainable[js.UndefOr[T]] = js.native
       
       def findIndex(predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], Boolean]): SugarDefaultChainable[Double] = js.native
       def findIndex(
         predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ js.Array[T], Boolean],
-        thisArg: js.Any
+        thisArg: Any
       ): SugarDefaultChainable[Double] = js.native
       
       def forEach(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit]): SugarDefaultChainable[Unit] = js.native
       def forEach(
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit],
-        thisArg: js.Any
+        thisArg: Any
       ): SugarDefaultChainable[Unit] = js.native
       
       def indexOf(searchElement: T): SugarDefaultChainable[Double] = js.native
@@ -89,7 +88,7 @@ object sugarjs {
       def map[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): SugarDefaultChainable[js.Array[U]] = js.native
       def map[U](
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
-        thisArg: js.Any
+        thisArg: Any
       ): SugarDefaultChainable[js.Array[U]] = js.native
       
       def pop(): SugarDefaultChainable[js.UndefOr[T]] = js.native
@@ -173,7 +172,7 @@ object sugarjs {
       def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): SugarDefaultChainable[Boolean] = js.native
       def some(
         callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-        thisArg: js.Any
+        thisArg: Any
       ): SugarDefaultChainable[Boolean] = js.native
       
       def sort(): SugarDefaultChainable[this.type] = js.native
@@ -300,7 +299,7 @@ object sugarjs {
       def toISOString(): SugarDefaultChainable[String] = js.native
       
       def toJSON(): SugarDefaultChainable[String] = js.native
-      def toJSON(key: js.Any): SugarDefaultChainable[String] = js.native
+      def toJSON(key: Any): SugarDefaultChainable[String] = js.native
       
       def toLocaleDateString(): SugarDefaultChainable[String] = js.native
       def toLocaleDateString(locales: String): SugarDefaultChainable[String] = js.native
@@ -369,19 +368,19 @@ object sugarjs {
       
       inline def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
       
-      inline def setExceptVarargs(value: (String | NativeConstructor)*): Self = StObject.set(x, "except", js.Array(value :_*))
+      inline def setExceptVarargs(value: (String | NativeConstructor)*): Self = StObject.set(x, "except", js.Array(value*))
       
       inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setNamespaces(value: js.Array[NativeConstructor]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
       
       inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
       
-      inline def setNamespacesVarargs(value: NativeConstructor*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
+      inline def setNamespacesVarargs(value: NativeConstructor*): Self = StObject.set(x, "namespaces", js.Array(value*))
       
       inline def setObjectPrototype(value: Boolean): Self = StObject.set(x, "objectPrototype", value.asInstanceOf[js.Any])
       
@@ -401,13 +400,13 @@ object sugarjs {
     trait ChainableBase[RawValue] extends StObject {
       
       @JSName("apply")
-      def apply(thisArg: js.Any): SugarDefaultChainable[js.Any] = js.native
+      def apply(thisArg: Any): SugarDefaultChainable[Any] = js.native
       @JSName("apply")
-      def apply(thisArg: js.Any, argArray: js.Any): SugarDefaultChainable[js.Any] = js.native
+      def apply(thisArg: Any, argArray: Any): SugarDefaultChainable[Any] = js.native
       
-      def bind(thisArg: js.Any, argArray: js.Any*): SugarDefaultChainable[js.Any] = js.native
+      def bind(thisArg: Any, argArray: Any*): SugarDefaultChainable[Any] = js.native
       
-      def call(thisArg: js.Any, argArray: js.Any*): SugarDefaultChainable[js.Any] = js.native
+      def call(thisArg: Any, argArray: Any*): SugarDefaultChainable[Any] = js.native
       
       var raw: RawValue = js.native
     }
@@ -573,18 +572,11 @@ object sugarjs {
       def localeCompare(that: java.lang.String, locales: Unit, options: CollatorOptions): SugarDefaultChainable[Double] = js.native
       
       def `match`(regexp: java.lang.String): SugarDefaultChainable[RegExpMatchArray | Null] = js.native
-      def `match`(regexp: RegExp): SugarDefaultChainable[RegExpMatchArray | Null] = js.native
+      def `match`(regexp: js.RegExp): SugarDefaultChainable[RegExpMatchArray | Null] = js.native
       
       def normalize(): SugarDefaultChainable[java.lang.String] = js.native
+      def normalize(form: NFC | NFD | NFKC | NFKD): SugarDefaultChainable[java.lang.String] = js.native
       def normalize(form: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
-      @JSName("normalize")
-      def normalize_NFC(form: NFC): SugarDefaultChainable[java.lang.String] = js.native
-      @JSName("normalize")
-      def normalize_NFD(form: NFD): SugarDefaultChainable[java.lang.String] = js.native
-      @JSName("normalize")
-      def normalize_NFKC(form: NFKC): SugarDefaultChainable[java.lang.String] = js.native
-      @JSName("normalize")
-      def normalize_NFKD(form: NFKD): SugarDefaultChainable[java.lang.String] = js.native
       
       var raw: RawValue = js.native
       
@@ -593,16 +585,16 @@ object sugarjs {
       def replace(searchValue: java.lang.String, replaceValue: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
       def replace(
         searchValue: java.lang.String,
-        replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+        replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String]
       ): SugarDefaultChainable[java.lang.String] = js.native
-      def replace(searchValue: RegExp, replaceValue: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
+      def replace(searchValue: js.RegExp, replaceValue: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
       def replace(
-        searchValue: RegExp,
-        replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+        searchValue: js.RegExp,
+        replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String]
       ): SugarDefaultChainable[java.lang.String] = js.native
       
       def search(regexp: java.lang.String): SugarDefaultChainable[Double] = js.native
-      def search(regexp: RegExp): SugarDefaultChainable[Double] = js.native
+      def search(regexp: js.RegExp): SugarDefaultChainable[Double] = js.native
       
       def slice(): SugarDefaultChainable[java.lang.String] = js.native
       def slice(start: Double): SugarDefaultChainable[java.lang.String] = js.native
@@ -613,8 +605,8 @@ object sugarjs {
       
       def split(separator: java.lang.String): SugarDefaultChainable[js.Array[java.lang.String]] = js.native
       def split(separator: java.lang.String, limit: Double): SugarDefaultChainable[js.Array[java.lang.String]] = js.native
-      def split(separator: RegExp): SugarDefaultChainable[js.Array[java.lang.String]] = js.native
-      def split(separator: RegExp, limit: Double): SugarDefaultChainable[js.Array[java.lang.String]] = js.native
+      def split(separator: js.RegExp): SugarDefaultChainable[js.Array[java.lang.String]] = js.native
+      def split(separator: js.RegExp, limit: Double): SugarDefaultChainable[js.Array[java.lang.String]] = js.native
       
       def startsWith(searchString: java.lang.String): SugarDefaultChainable[Boolean] = js.native
       def startsWith(searchString: java.lang.String, position: Double): SugarDefaultChainable[Boolean] = js.native
@@ -649,19 +641,19 @@ object sugarjs {
     def apply(): Sugar = js.native
     def apply(opts: ExtendOptions): Sugar = js.native
     
-    var Array: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Array.Constructor */ js.Any = js.native
+    var Array: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Array.Constructor */ Any = js.native
     
-    var Date: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Date.Constructor */ js.Any = js.native
+    var Date: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Date.Constructor */ Any = js.native
     
-    var Function: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Function.Constructor */ js.Any = js.native
+    var Function: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Function.Constructor */ Any = js.native
     
-    var Number: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Number.Constructor */ js.Any = js.native
+    var Number: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Number.Constructor */ Any = js.native
     
-    var Object: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Object.Constructor */ js.Any = js.native
+    var Object: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Object.Constructor */ Any = js.native
     
-    var RegExp: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RegExp.Constructor */ js.Any = js.native
+    var RegExp: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RegExp.Constructor */ Any = js.native
     
-    var String: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify String.Constructor */ js.Any = js.native
+    var String: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify String.Constructor */ Any = js.native
     
     def createNamespace(name: String): SugarNamespace = js.native
     
@@ -669,7 +661,7 @@ object sugarjs {
     def extend(opts: ExtendOptions): Sugar = js.native
   }
   
-  type SugarDefaultChainable[RawValue] = (Chainable[js.Any, RawValue]) & typings.sugarCore.sugarjs.Date.Chainable[RawValue] & typings.sugarCore.sugarjs.Function.Chainable[RawValue] & typings.sugarCore.sugarjs.Number.Chainable[RawValue] & typings.sugarCore.sugarjs.Object.Chainable[RawValue] & typings.sugarCore.sugarjs.RegExp.Chainable[RawValue] & typings.sugarCore.sugarjs.String.Chainable[RawValue]
+  type SugarDefaultChainable[RawValue] = (Chainable[Any, RawValue]) & typings.sugarCore.sugarjs.Date.Chainable[RawValue] & typings.sugarCore.sugarjs.Function.Chainable[RawValue] & typings.sugarCore.sugarjs.Number.Chainable[RawValue] & typings.sugarCore.sugarjs.Object.Chainable[RawValue] & typings.sugarCore.sugarjs.RegExp.Chainable[RawValue] & typings.sugarCore.sugarjs.String.Chainable[RawValue]
   
   @js.native
   trait SugarNamespace extends StObject {

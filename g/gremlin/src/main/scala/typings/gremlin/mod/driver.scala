@@ -14,57 +14,83 @@ object driver {
   
   @JSImport("gremlin", "driver.Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(url: String) = this()
-    def this(url: String, options: js.Any) = this()
+    def this(url: String, options: Any) = this()
     
     def close(): js.Promise[Unit] = js.native
     
+    var isOpen: js.Promise[Boolean] = js.native
+    
     def open(): js.Promise[Unit] = js.native
     
-    def submit(message: String): js.Promise[js.Any] = js.native
-    def submit(message: String, bindings: js.Any): js.Promise[js.Any] = js.native
-    def submit(message: Bytecode): js.Promise[js.Any] = js.native
-    def submit(message: Bytecode, bindings: js.Any): js.Promise[js.Any] = js.native
+    def stream(message: String): Any = js.native
+    def stream(message: String, bindings: Any): Any = js.native
+    def stream(message: String, bindings: Any, requestOptions: RequestOptions): Any = js.native
+    def stream(message: String, bindings: Unit, requestOptions: RequestOptions): Any = js.native
+    def stream(message: Bytecode): Any = js.native
+    def stream(message: Bytecode, bindings: Any): Any = js.native
+    def stream(message: Bytecode, bindings: Any, requestOptions: RequestOptions): Any = js.native
+    def stream(message: Bytecode, bindings: Unit, requestOptions: RequestOptions): Any = js.native
+    
+    def submit(message: String): js.Promise[Any] = js.native
+    def submit(message: String, bindings: Any): js.Promise[Any] = js.native
+    def submit(message: String, bindings: Any, requestOptions: RequestOptions): js.Promise[Any] = js.native
+    def submit(message: String, bindings: Unit, requestOptions: RequestOptions): js.Promise[Any] = js.native
+    def submit(message: Bytecode): js.Promise[Any] = js.native
+    def submit(message: Bytecode, bindings: Any): js.Promise[Any] = js.native
+    def submit(message: Bytecode, bindings: Any, requestOptions: RequestOptions): js.Promise[Any] = js.native
+    def submit(message: Bytecode, bindings: Unit, requestOptions: RequestOptions): js.Promise[Any] = js.native
   }
   
   @JSImport("gremlin", "driver.DriverRemoteConnection")
   @js.native
-  class DriverRemoteConnection protected () extends RemoteConnection {
+  open class DriverRemoteConnection protected () extends RemoteConnection {
     def this(url: String) = this()
-    def this(url: String, options: js.Any) = this()
+    def this(url: String, options: Any) = this()
     
-    def addListener(event: String, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    def addListener(event: js.Symbol, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def addListener(event: String, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+    def addListener(event: js.Symbol, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
-    def removeListener(event: String, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
-    def removeListener(event: js.Symbol, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def commit(): js.Promise[Any] = js.native
+    
+    def createSession(): this.type = js.native
+    
+    var isOpen: js.Promise[Boolean] = js.native
+    
+    var isSessionBound: Boolean = js.native
+    
+    def removeListener(event: String, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+    def removeListener(event: js.Symbol, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+    
+    def rollback(): js.Promise[Any] = js.native
   }
   
   @JSImport("gremlin", "driver.RemoteConnection")
   @js.native
-  class RemoteConnection protected () extends StObject {
+  open class RemoteConnection protected () extends StObject {
     def this(url: String) = this()
+    def this(url: String, options: Any) = this()
     
     def close(): js.Promise[Unit] = js.native
     
     def open(): js.Promise[Unit] = js.native
     
-    def submit(bytecode: Bytecode): js.Promise[js.Any] = js.native
+    def submit(bytecode: Bytecode): js.Promise[Any] = js.native
   }
   
   @JSImport("gremlin", "driver.RemoteStrategy")
   @js.native
-  class RemoteStrategy protected () extends TraversalStrategy {
+  open class RemoteStrategy protected () extends TraversalStrategy {
     def this(connection: RemoteConnection) = this()
     
     @JSName("apply")
-    def apply(traversal: RemoteTraversal): js.Promise[js.Any] = js.native
+    def apply(traversal: RemoteTraversal): js.Promise[Any] = js.native
   }
   
   @JSImport("gremlin", "driver.RemoteTraversal")
   @js.native
-  class RemoteTraversal () extends Traversal_ {
+  open class RemoteTraversal () extends Traversal_ {
     def this(traversers: js.Array[Traverser]) = this()
     def this(traversers: js.Array[Traverser], sideEffects: TraversalSideEffects) = this()
     def this(traversers: Unit, sideEffects: TraversalSideEffects) = this()
@@ -72,30 +98,59 @@ object driver {
   
   @JSImport("gremlin", "driver.ResultSet")
   @js.native
-  class ResultSet protected () extends StObject {
-    def this(items: js.Array[js.Any]) = this()
-    def this(items: js.Array[js.Any], attributes: MapConstructor) = this()
+  open class ResultSet protected () extends StObject {
+    def this(items: js.Array[Any]) = this()
+    def this(items: js.Array[Any], attributes: MapConstructor) = this()
     
-    def first(): js.Any = js.native
+    def first(): Any = js.native
     
-    def toArray(): js.Array[js.Any] = js.native
+    def toArray(): js.Array[Any] = js.native
   }
   
   object auth {
     
     @JSImport("gremlin", "driver.auth.Authenticator")
     @js.native
-    class Authenticator () extends StObject {
-      def this(options: js.Any) = this()
+    open class Authenticator () extends StObject {
+      def this(options: Any) = this()
       
-      def evaluateChallenge(challenge: String): js.Any = js.native
+      def evaluateChallenge(challenge: String): Any = js.native
     }
     
     @JSImport("gremlin", "driver.auth.PlainTextSaslAuthenticator")
     @js.native
-    class PlainTextSaslAuthenticator protected () extends Authenticator {
+    open class PlainTextSaslAuthenticator protected () extends Authenticator {
       def this(username: String, password: String) = this()
       def this(username: String, password: String, authzid: String) = this()
+    }
+  }
+  
+  trait RequestOptions extends StObject {
+    
+    var batchSize: Double
+    
+    var evaluationTimeout: Double
+    
+    var requestId: String
+    
+    var userAgent: String
+  }
+  object RequestOptions {
+    
+    inline def apply(batchSize: Double, evaluationTimeout: Double, requestId: String, userAgent: String): RequestOptions = {
+      val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any], evaluationTimeout = evaluationTimeout.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RequestOptions]
+    }
+    
+    extension [Self <: RequestOptions](x: Self) {
+      
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      
+      inline def setEvaluationTimeout(value: Double): Self = StObject.set(x, "evaluationTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     }
   }
 }

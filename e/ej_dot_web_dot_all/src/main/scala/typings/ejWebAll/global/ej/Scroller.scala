@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Scroller")
 @js.native
-class Scroller protected ()
+open class Scroller protected ()
   extends StObject
      with typings.ejWebAll.ej.Scroller {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object Scroller {
   /* static member */
   @JSGlobal("ej.Scroller.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("ej.Scroller.fn")

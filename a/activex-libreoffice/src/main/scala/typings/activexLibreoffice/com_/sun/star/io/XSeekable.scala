@@ -57,7 +57,7 @@ object XSeekable {
     acquire: () => Unit,
     getLength: () => Double,
     getPosition: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     seek: Double => Unit
   ): XSeekable = {

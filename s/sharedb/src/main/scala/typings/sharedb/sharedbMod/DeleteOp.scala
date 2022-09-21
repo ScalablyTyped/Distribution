@@ -17,15 +17,15 @@ trait DeleteOp
 object DeleteOp {
   
   inline def apply(
-    c: String,
+    c: CollectionName,
     create: Unit,
-    d: String,
+    d: DocumentID,
     del: Boolean,
-    m: js.Any,
+    m: Any,
     op: Unit,
     seq: Double,
     src: String,
-    v: Double
+    v: VersionNumber
   ): DeleteOp = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOp]

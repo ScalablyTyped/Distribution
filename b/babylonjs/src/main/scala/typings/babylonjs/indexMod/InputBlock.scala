@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "InputBlock")
 @js.native
-class InputBlock protected ()
+open class InputBlock protected ()
   extends typings.babylonjs.materialsIndexMod.InputBlock {
   /**
     * Creates a new InputBlock

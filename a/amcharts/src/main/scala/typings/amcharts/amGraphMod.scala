@@ -1,6 +1,5 @@
 package typings.amcharts
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object amGraphMod {
   
   @JSImport("amcharts/AmGraph", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with AmGraph
   
@@ -377,7 +376,7 @@ object amGraphMod {
       */
     var labelColorField: String = js.native
     
-    def labelFunction(valueText: String, data: Date, valueAxis: typings.amcharts.valueAxisMod.default): String = js.native
+    def labelFunction(valueText: String, data: js.Date, valueAxis: typings.amcharts.valueAxisMod.default): String = js.native
     /**
       * You can use it to format labels of data items in any way you want.
       * Graph will call this function and pass reference to GraphDataItem and formatted text as attributes.

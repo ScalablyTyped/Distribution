@@ -1,6 +1,8 @@
 package typings.onfleetNodeOnfleet
 
 import typings.onfleetNodeOnfleet.anon.Apartment
+import typings.onfleetNodeOnfleet.metadataMod.MatchMetadata
+import typings.onfleetNodeOnfleet.metadataMod.MatchMetadataResult
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +12,7 @@ object destinationsMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Destinations", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Destination {
     
@@ -19,6 +21,12 @@ object destinationsMod {
     
     /* CompleteClass */
     override def get(id: String): js.Promise[OnfleetDestination] = js.native
+    
+    /* CompleteClass */
+    override def matchMetadata(obj: js.Array[OnfleetMetadata]): js.Promise[js.Array[MatchMetadataResult]] = js.native
+    /* CompleteClass */
+    @JSName("matchMetadata")
+    var matchMetadata_Original: MatchMetadata[js.Array[OnfleetMetadata]] = js.native
   }
   
   trait CreateDestinationProps extends StObject {
@@ -55,14 +63,19 @@ object destinationsMod {
     def create(destination: CreateDestinationProps): js.Promise[OnfleetDestination]
     
     def get(id: String): js.Promise[OnfleetDestination]
+    
+    def matchMetadata(obj: js.Array[OnfleetMetadata]): js.Promise[js.Array[MatchMetadataResult]]
+    @JSName("matchMetadata")
+    var matchMetadata_Original: MatchMetadata[js.Array[OnfleetMetadata]]
   }
   object Destination {
     
     inline def apply(
       create: CreateDestinationProps => js.Promise[OnfleetDestination],
-      get: String => js.Promise[OnfleetDestination]
+      get: String => js.Promise[OnfleetDestination],
+      matchMetadata: js.Array[OnfleetMetadata] => js.Promise[js.Array[MatchMetadataResult]]
     ): Destination = {
-      val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get))
+      val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), matchMetadata = js.Any.fromFunction1(matchMetadata))
       __obj.asInstanceOf[Destination]
     }
     
@@ -71,6 +84,8 @@ object destinationsMod {
       inline def setCreate(value: CreateDestinationProps => js.Promise[OnfleetDestination]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
       inline def setGet(value: String => js.Promise[OnfleetDestination]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      
+      inline def setMatchMetadata(value: js.Array[OnfleetMetadata] => js.Promise[js.Array[MatchMetadataResult]]): Self = StObject.set(x, "matchMetadata", js.Any.fromFunction1(value))
     }
   }
   
@@ -194,7 +209,7 @@ object destinationsMod {
       
       inline def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value*))
       
       inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       

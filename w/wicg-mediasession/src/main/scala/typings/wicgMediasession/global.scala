@@ -6,9 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("MediaMetadata")
   @js.native
-  class MediaMetadata ()
+  open class MediaMetadata ()
     extends StObject
        with typings.wicgMediasession.MediaMetadata {
     def this(init: MediaMetadataInit) = this()

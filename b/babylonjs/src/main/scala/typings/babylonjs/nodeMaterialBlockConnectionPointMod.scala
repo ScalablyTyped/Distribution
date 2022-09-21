@@ -14,7 +14,7 @@ object nodeMaterialBlockConnectionPointMod {
   
   @JSImport("babylonjs/Materials/Node/nodeMaterialBlockConnectionPoint", "NodeMaterialConnectionPoint")
   @js.native
-  class NodeMaterialConnectionPoint protected () extends StObject {
+  open class NodeMaterialConnectionPoint protected () extends StObject {
     /**
       * Creates a new connection point
       * @param name defines the connection point name
@@ -26,14 +26,17 @@ object nodeMaterialBlockConnectionPointMod {
     /** @hidden */
     var _acceptedConnectionPointType: Nullable[NodeMaterialConnectionPoint] = js.native
     
-    /* private */ var _associatedVariableName: js.Any = js.native
+    /* private */ var _associatedVariableName: Any = js.native
     
     /** @hidden */
     var _connectedPoint: Nullable[NodeMaterialConnectionPoint] = js.native
     
-    /* private */ var _direction: js.Any = js.native
+    /** @hidden */
+    var _defaultConnectionPointType: Nullable[NodeMaterialBlockConnectionPointTypes] = js.native
     
-    /* private */ var _endpoints: js.Any = js.native
+    /* private */ var _direction: Any = js.native
+    
+    /* private */ var _endpoints: Any = js.native
     
     /** @hidden */
     var _enforceAssociatedVariableName: Boolean = js.native
@@ -47,9 +50,9 @@ object nodeMaterialBlockConnectionPointMod {
     /** @hidden */
     var _prioritizeVertex: Boolean = js.native
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
-    /* private */ var _type: js.Any = js.native
+    /* private */ var _type: Any = js.native
     
     /** @hidden */
     var _typeConnectionSource: Nullable[NodeMaterialConnectionPoint] = js.native
@@ -172,6 +175,9 @@ object nodeMaterialBlockConnectionPointMod {
       */
     def isConnectedToInputBlock: Boolean = js.native
     
+    /** Gets a boolean indicating that this connection has a path to the vertex output*/
+    def isDirectlyConnectedToVertexOutput: Boolean = js.native
+    
     /**
       * Gets or sets a boolean indicating that this connection point is exposed on a frame
       */
@@ -203,8 +209,8 @@ object nodeMaterialBlockConnectionPointMod {
       * @param isInput defines if the connection point is an input (default is true)
       * @returns the serialized point object
       */
-    def serialize(): js.Any = js.native
-    def serialize(isInput: Boolean): js.Any = js.native
+    def serialize(): Any = js.native
+    def serialize(isInput: Boolean): Any = js.native
     
     /** Get the block connected on the other side of this connection (if any) */
     def sourceBlock: Nullable[NodeMaterialBlock] = js.native
@@ -250,6 +256,13 @@ object nodeMaterialBlockConnectionPointMod {
       extends StObject
          with NodeMaterialConnectionPointCompatibilityStates
     /* 0 */ val Compatible: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.Compatible & Double = js.native
+    
+    /** Points are incompatible because they are in the same hierarchy **/
+    @js.native
+    sealed trait HierarchyIssue
+      extends StObject
+         with NodeMaterialConnectionPointCompatibilityStates
+    /* 3 */ val HierarchyIssue: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.HierarchyIssue & Double = js.native
     
     /** Points are incompatible because of their targets (vertex vs fragment) */
     @js.native

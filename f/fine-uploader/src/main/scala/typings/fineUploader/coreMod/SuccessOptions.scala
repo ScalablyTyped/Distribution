@@ -50,7 +50,7 @@ trait SuccessOptions extends StObject {
     * 
     * @default `[]`
     */
-  var resetOnStatus: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var resetOnStatus: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object SuccessOptions {
   
@@ -81,10 +81,10 @@ object SuccessOptions {
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setResetOnStatus(value: js.Array[js.Any]): Self = StObject.set(x, "resetOnStatus", value.asInstanceOf[js.Any])
+    inline def setResetOnStatus(value: js.Array[Any]): Self = StObject.set(x, "resetOnStatus", value.asInstanceOf[js.Any])
     
     inline def setResetOnStatusUndefined: Self = StObject.set(x, "resetOnStatus", js.undefined)
     
-    inline def setResetOnStatusVarargs(value: js.Any*): Self = StObject.set(x, "resetOnStatus", js.Array(value :_*))
+    inline def setResetOnStatusVarargs(value: Any*): Self = StObject.set(x, "resetOnStatus", js.Array(value*))
   }
 }

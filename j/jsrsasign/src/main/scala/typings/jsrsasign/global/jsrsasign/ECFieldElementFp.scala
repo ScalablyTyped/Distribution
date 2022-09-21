@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("jsrsasign.ECFieldElementFp")
 @js.native
-class ECFieldElementFp ()
+open class ECFieldElementFp ()
   extends typings.jsrsasign.mod.ECFieldElementFp

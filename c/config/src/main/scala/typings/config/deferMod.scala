@@ -12,5 +12,5 @@ object deferMod {
   
   inline def deferConfig[T, R](func: DeferFunction[T, R]): R = ^.asInstanceOf[js.Dynamic].applyDynamic("deferConfig")(func.asInstanceOf[js.Any]).asInstanceOf[R]
   
-  type DeferFunction[T, R] = js.ThisFunction1[/* this */ js.Any, /* origValue */ T, R]
+  type DeferFunction[T, R] = js.ThisFunction1[/* this */ Any, /* origValue */ T, R]
 }

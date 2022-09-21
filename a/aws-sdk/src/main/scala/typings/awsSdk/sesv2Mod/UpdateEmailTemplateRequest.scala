@@ -12,7 +12,7 @@ trait UpdateEmailTemplateRequest extends StObject {
   var TemplateContent: EmailTemplateContent
   
   /**
-    * The name of the template you want to update.
+    * The name of the template.
     */
   var TemplateName: EmailTemplateName
 }

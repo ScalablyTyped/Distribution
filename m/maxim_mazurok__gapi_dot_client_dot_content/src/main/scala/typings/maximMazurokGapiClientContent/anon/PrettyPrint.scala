@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
+import typings.maximMazurokGapiClientContent.gapi.client.content.AccountReturnCarrier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ trait PrettyPrint extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account. */
+  /** Required. The Merchant Center Account Id under which the Return Carrier is to be linked. */
   var accountId: String
   
   /** Data format for response. */
@@ -28,12 +29,6 @@ trait PrettyPrint extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account
-    * of this account.
-    */
-  var merchantId: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -43,19 +38,19 @@ trait PrettyPrint extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: AccountReturnCarrier
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /** Controls which fields will be populated. Acceptable values are: "merchant" and "css". The default value is "merchant". */
-  var view: js.UndefOr[String] = js.undefined
 }
 object PrettyPrint {
   
-  inline def apply(accountId: String, merchantId: String): PrettyPrint = {
-    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], merchantId = merchantId.asInstanceOf[js.Any])
+  inline def apply(accountId: String, resource: AccountReturnCarrier): PrettyPrint = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrint]
   }
   
@@ -87,8 +82,6 @@ object PrettyPrint {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -101,6 +94,8 @@ object PrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
+    inline def setResource(value: AccountReturnCarrier): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
     inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
@@ -108,9 +103,5 @@ object PrettyPrint {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
-    
-    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

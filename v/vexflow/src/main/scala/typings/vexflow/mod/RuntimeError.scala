@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "RuntimeError")
 @js.native
-class RuntimeError protected ()
+open class RuntimeError protected ()
   extends StObject
      with typings.vexflow.Vex.RuntimeError {
   def this(code: String, message: String) = this()

@@ -49,11 +49,11 @@ object mod extends Shortcut {
       
       inline def setAxisStates(value: js.Array[Double]): Self = StObject.set(x, "axisStates", value.asInstanceOf[js.Any])
       
-      inline def setAxisStatesVarargs(value: Double*): Self = StObject.set(x, "axisStates", js.Array(value :_*))
+      inline def setAxisStatesVarargs(value: Double*): Self = StObject.set(x, "axisStates", js.Array(value*))
       
       inline def setButtonStates(value: js.Array[Boolean]): Self = StObject.set(x, "buttonStates", value.asInstanceOf[js.Any])
       
-      inline def setButtonStatesVarargs(value: Boolean*): Self = StObject.set(x, "buttonStates", js.Array(value :_*))
+      inline def setButtonStatesVarargs(value: Boolean*): Self = StObject.set(x, "buttonStates", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -76,13 +76,12 @@ object mod extends Shortcut {
     
     def numDevices(): Double = js.native
     
-    @JSName("on")
-    def on_attach(event: attach, listener: js.Function2[/* deviceID */ Double, /* device */ GamepadInstance, Unit]): this.type = js.native
-    @JSName("on")
-    def on_down(
-      event: down,
+    def on(
+      event: down | up,
       listener: js.Function3[/* deviceID */ Double, /* buttonID */ Double, /* timestamp */ Double, Unit]
     ): this.type = js.native
+    @JSName("on")
+    def on_attach(event: attach, listener: js.Function2[/* deviceID */ Double, /* device */ GamepadInstance, Unit]): this.type = js.native
     @JSName("on")
     def on_move(
       event: move,
@@ -97,11 +96,6 @@ object mod extends Shortcut {
     ): this.type = js.native
     @JSName("on")
     def on_remove(event: remove, listener: js.Function1[/* deviceID */ Double, Unit]): this.type = js.native
-    @JSName("on")
-    def on_up(
-      event: up,
-      listener: js.Function3[/* deviceID */ Double, /* buttonID */ Double, /* timestamp */ Double, Unit]
-    ): this.type = js.native
     
     def processEvents(): Unit = js.native
     

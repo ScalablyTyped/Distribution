@@ -10,10 +10,10 @@ object videoLibraryMod {
   
   @JSImport("material-ui/svg-icons/av/video-library", JSImport.Default)
   @js.native
-  class default () extends AvVideoLibrary
+  open class default () extends AvVideoLibrary
   
   @JSImport("material-ui/svg-icons/av/video-library", "AvVideoLibrary")
   @js.native
-  class AvVideoLibrary ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvVideoLibrary ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

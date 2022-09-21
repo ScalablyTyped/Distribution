@@ -28,7 +28,7 @@ object render {
     */
   @JSImport("openlayers", "render.Event")
   @js.native
-  class Event protected ()
+  open class Event protected ()
     extends typings.openlayers.mod.events.Event {
     /**
       * @param type Type.
@@ -70,56 +70,56 @@ object render {
       opt_vectorContext: Unit,
       opt_frameState: Unit,
       opt_context: Unit,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: Unit,
       opt_frameState: Unit,
       opt_context: CanvasRenderingContext2D,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: Unit,
       opt_frameState: FrameState,
       opt_context: Unit,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: Unit,
       opt_frameState: FrameState,
       opt_context: CanvasRenderingContext2D,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: VectorContext,
       opt_frameState: Unit,
       opt_context: Unit,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: VectorContext,
       opt_frameState: Unit,
       opt_context: CanvasRenderingContext2D,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: VectorContext,
       opt_frameState: FrameState,
       opt_context: Unit,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: VectorContext,
       opt_frameState: FrameState,
       opt_context: CanvasRenderingContext2D,
-      opt_glContext: js.Any
+      opt_glContext: Any
     ) = this()
     
     /**
@@ -140,7 +140,7 @@ object render {
       * otherwise.
       * @api
       */
-    var glContext: js.Any = js.native
+    var glContext: Any = js.native
     
     /**
       * For canvas, this is an instance of {@link ol.render.canvas.Immediate}.
@@ -162,7 +162,7 @@ object render {
     */
   @JSImport("openlayers", "render.Feature")
   @js.native
-  class Feature protected () extends StObject {
+  open class Feature protected () extends StObject {
     /**
       * Lightweight, read-only, {@link ol.Feature} and {@link ol.geom.Geometry} like
       * structure, optimized for rendering and styling. Geometry access through the
@@ -178,7 +178,7 @@ object render {
       `type`: GeometryType,
       flatCoordinates: js.Array[Double],
       ends: js.Array[js.Array[Double] | Double],
-      properties: StringDictionary[js.Any]
+      properties: StringDictionary[Any]
     ) = this()
     
     /**
@@ -187,7 +187,7 @@ object render {
       * @return Value for the requested key.
       * @api
       */
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     /**
       * Get the extent of this feature's geometry.
@@ -208,7 +208,7 @@ object render {
       * @return Feature properties.
       * @api
       */
-    def getProperties(): StringDictionary[js.Any] = js.native
+    def getProperties(): StringDictionary[Any] = js.native
     
     /**
       * Get the type of this feature's geometry.
@@ -233,7 +233,7 @@ object render {
     * @struct
     * @api
     */
-  class VectorContext () extends StObject
+  open class VectorContext () extends StObject
   
   object canvas {
     
@@ -255,7 +255,7 @@ object render {
       */
     @JSImport("openlayers", "render.canvas.Immediate")
     @js.native
-    class Immediate protected () extends VectorContext {
+    open class Immediate protected () extends VectorContext {
       /**
         * @classdesc
         * A concrete subclass of {@link ol.render.VectorContext} that implements
@@ -276,7 +276,7 @@ object render {
         context: CanvasRenderingContext2D,
         pixelRatio: Double,
         extent: Extent_,
-        transform: js.Any,
+        transform: Any,
         viewRotation: Double
       ) = this()
       

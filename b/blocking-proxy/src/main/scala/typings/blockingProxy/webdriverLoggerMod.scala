@@ -10,7 +10,7 @@ object webdriverLoggerMod {
   
   @JSImport("blocking-proxy/built/lib/webdriver_logger", "WebDriverLogger")
   @js.native
-  class WebDriverLogger () extends StObject {
+  open class WebDriverLogger () extends StObject {
     
     /**
       * Log an arbitrary event to the log file.
@@ -32,9 +32,9 @@ object webdriverLoggerMod {
       */
     def logWebDriverCommand(command: WebDriverCommand): Unit = js.native
     
-    /* private */ def renderData(command: js.Any): js.Any = js.native
+    /* private */ def renderData(command: Any): Any = js.native
     
-    /* private */ def renderResponse(command: js.Any): js.Any = js.native
+    /* private */ def renderResponse(command: Any): Any = js.native
     
     /**
       * Start logging to the specified directory. Will create a file named
@@ -44,6 +44,6 @@ object webdriverLoggerMod {
       */
     def setLogDir(logDir: String): Unit = js.native
     
-    /* private */ def timestamp(): js.Any = js.native
+    /* private */ def timestamp(): Any = js.native
   }
 }

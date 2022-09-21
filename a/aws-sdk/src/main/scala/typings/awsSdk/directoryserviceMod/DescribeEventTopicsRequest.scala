@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeEventTopicsRequest extends StObject {
   
   /**
-    * The Directory ID for which to get the list of associated SNS topics. If this member is null, associations for all Directory IDs are returned.
+    * The Directory ID for which to get the list of associated Amazon SNS topics. If this member is null, associations for all Directory IDs are returned.
     */
   var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
-    * A list of SNS topic names for which to obtain the information. If this member is null, all associations for the specified Directory ID are returned. An empty list results in an InvalidParameterException being thrown.
+    * A list of Amazon SNS topic names for which to obtain the information. If this member is null, all associations for the specified Directory ID are returned. An empty list results in an InvalidParameterException being thrown.
     */
   var TopicNames: js.UndefOr[typings.awsSdk.directoryserviceMod.TopicNames] = js.undefined
 }
@@ -33,6 +33,6 @@ object DescribeEventTopicsRequest {
     
     inline def setTopicNamesUndefined: Self = StObject.set(x, "TopicNames", js.undefined)
     
-    inline def setTopicNamesVarargs(value: TopicName*): Self = StObject.set(x, "TopicNames", js.Array(value :_*))
+    inline def setTopicNamesVarargs(value: TopicName*): Self = StObject.set(x, "TopicNames", js.Array(value*))
   }
 }

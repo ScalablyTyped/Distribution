@@ -22,6 +22,6 @@ object PublisherFilterResult {
     
     inline def setPublishers(value: js.Array[Publisher]): Self = StObject.set(x, "publishers", value.asInstanceOf[js.Any])
     
-    inline def setPublishersVarargs(value: Publisher*): Self = StObject.set(x, "publishers", js.Array(value :_*))
+    inline def setPublishersVarargs(value: Publisher*): Self = StObject.set(x, "publishers", js.Array(value*))
   }
 }

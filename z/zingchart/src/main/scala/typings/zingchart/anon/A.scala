@@ -7,55 +7,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait A extends StObject {
   
   @JSName("`%A`")
-  var GraveaccentPercentsignAGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignAGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%D`")
-  var GraveaccentPercentsignDGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignDGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%G`")
-  var GraveaccentPercentsignGGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignGGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%H`")
-  var GraveaccentPercentsignHGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignHGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%M`")
-  var GraveaccentPercentsignMGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignMGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%Y`")
-  var GraveaccentPercentsignYGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignYGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%a`")
-  var GraveaccentPercentsignaGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignaGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%d`")
-  var GraveaccentPercentsigndGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsigndGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%dd`")
-  var GraveaccentPercentsignddGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignddGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%g`")
-  var GraveaccentPercentsigngGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsigngGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%h`")
-  var GraveaccentPercentsignhGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignhGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%i`")
-  var GraveaccentPercentsigniGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsigniGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%m`")
-  var GraveaccentPercentsignmGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignmGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%mm`")
-  var GraveaccentPercentsignmmGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignmmGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%q`")
-  var GraveaccentPercentsignqGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignqGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%s`")
-  var GraveaccentPercentsignsGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignsGraveaccent: js.UndefOr[Any] = js.undefined
   
   @JSName("`%y`")
-  var GraveaccentPercentsignyGraveaccent: js.UndefOr[js.Any] = js.undefined
+  var GraveaccentPercentsignyGraveaccent: js.UndefOr[Any] = js.undefined
   
   /**
     * To format your date values. Use this attribute with the `type` value (set to `true`). Token Description `%A` Displays the ante or
@@ -71,9 +71,14 @@ trait A extends StObject {
     */
   var all: js.UndefOr[String] = js.undefined
   
-  var guide: js.UndefOr[LinewidthVisible] = js.undefined
+  var guide: js.UndefOr[Linewidth] = js.undefined
   
-  var item: js.UndefOr[Borderradiustopright] = js.undefined
+  var item: js.UndefOr[BackgroundPosition_] = js.undefined
+  
+  /**
+    * To convert Unix timestamps into dates. Use this attribute with the all attribute. 'date'
+    */
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object A {
   
@@ -88,56 +93,60 @@ object A {
     
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    inline def setGraveaccentPercentsignAGraveaccent(value: js.Any): Self = StObject.set(x, "`%A`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsignAGraveaccent(value: Any): Self = StObject.set(x, "`%A`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsignAGraveaccentUndefined: Self = StObject.set(x, "`%A`", js.undefined)
     
-    inline def setGraveaccentPercentsignDGraveaccent(value: js.Any): Self = StObject.set(x, "`%D`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsignDGraveaccent(value: Any): Self = StObject.set(x, "`%D`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsignDGraveaccentUndefined: Self = StObject.set(x, "`%D`", js.undefined)
     
-    inline def setGraveaccentPercentsignGGraveaccent(value: js.Any): Self = StObject.set(x, "`%G`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsignGGraveaccent(value: Any): Self = StObject.set(x, "`%G`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsignGGraveaccentUndefined: Self = StObject.set(x, "`%G`", js.undefined)
     
-    inline def setGraveaccentPercentsignHGraveaccent(value: js.Any): Self = StObject.set(x, "`%H`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsignHGraveaccent(value: Any): Self = StObject.set(x, "`%H`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsignHGraveaccentUndefined: Self = StObject.set(x, "`%H`", js.undefined)
     
-    inline def setGraveaccentPercentsignMGraveaccent(value: js.Any): Self = StObject.set(x, "`%M`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsignMGraveaccent(value: Any): Self = StObject.set(x, "`%M`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsignMGraveaccentUndefined: Self = StObject.set(x, "`%M`", js.undefined)
     
-    inline def setGraveaccentPercentsignYGraveaccent(value: js.Any): Self = StObject.set(x, "`%Y`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsignYGraveaccent(value: Any): Self = StObject.set(x, "`%Y`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsignYGraveaccentUndefined: Self = StObject.set(x, "`%Y`", js.undefined)
     
-    inline def setGraveaccentPercentsignddGraveaccent(value: js.Any): Self = StObject.set(x, "`%dd`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsignddGraveaccent(value: Any): Self = StObject.set(x, "`%dd`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsignddGraveaccentUndefined: Self = StObject.set(x, "`%dd`", js.undefined)
     
-    inline def setGraveaccentPercentsigniGraveaccent(value: js.Any): Self = StObject.set(x, "`%i`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsigniGraveaccent(value: Any): Self = StObject.set(x, "`%i`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsigniGraveaccentUndefined: Self = StObject.set(x, "`%i`", js.undefined)
     
-    inline def setGraveaccentPercentsignmmGraveaccent(value: js.Any): Self = StObject.set(x, "`%mm`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsignmmGraveaccent(value: Any): Self = StObject.set(x, "`%mm`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsignmmGraveaccentUndefined: Self = StObject.set(x, "`%mm`", js.undefined)
     
-    inline def setGraveaccentPercentsignqGraveaccent(value: js.Any): Self = StObject.set(x, "`%q`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsignqGraveaccent(value: Any): Self = StObject.set(x, "`%q`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsignqGraveaccentUndefined: Self = StObject.set(x, "`%q`", js.undefined)
     
-    inline def setGraveaccentPercentsignsGraveaccent(value: js.Any): Self = StObject.set(x, "`%s`", value.asInstanceOf[js.Any])
+    inline def setGraveaccentPercentsignsGraveaccent(value: Any): Self = StObject.set(x, "`%s`", value.asInstanceOf[js.Any])
     
     inline def setGraveaccentPercentsignsGraveaccentUndefined: Self = StObject.set(x, "`%s`", js.undefined)
     
-    inline def setGuide(value: LinewidthVisible): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
+    inline def setGuide(value: Linewidth): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
     
     inline def setGuideUndefined: Self = StObject.set(x, "guide", js.undefined)
     
-    inline def setItem(value: Borderradiustopright): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: BackgroundPosition_): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

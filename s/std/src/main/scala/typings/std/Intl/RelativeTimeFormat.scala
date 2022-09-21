@@ -14,6 +14,7 @@ trait RelativeTimeFormat extends StObject {
     *
     * While this method automatically provides the correct plural forms,
     * the grammatical form is otherwise as neutral as possible.
+    *
     * It is the caller's responsibility to handle cut-off logic
     * such as deciding between displaying "in 7 days" or "in 1 week".
     * This API does not support relative dates involving compound units.
@@ -21,63 +22,37 @@ trait RelativeTimeFormat extends StObject {
     *
     * @param value -  Numeric value to use in the internationalized relative time message
     *
-    * @param unit - [Unit](https://tc39.es/ecma402/#sec-singularrelativetimeunit)
-    *  to use in the relative time internationalized message.
-    *  Possible values are: `"year"`, `"quarter"`, `"month"`, `"week"`,
-    *  `"day"`, `"hour"`, `"minute"`, `"second"`.
-    *  Plural forms are also permitted.
+    * @param unit - [Unit](https://tc39.es/ecma402/#sec-singularrelativetimeunit) to use in the relative time internationalized message.
     *
     * @throws `RangeError` if `unit` was given something other than `unit` possible values
     *
-    * @returns Internationalized relative time message as string
+    * @returns {string} Internationalized relative time message as string
     *
     * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/format).
-    *
-    * [Specification](https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype.format).
     */
+  /* standard es2020.intl */
   def format(value: Double, unit: RelativeTimeFormatUnit): String
   
   /**
-    *  A version of the format method which it returns an array of objects
-    *  which represent "parts" of the object,
-    *  separating the formatted number into its constituent parts
-    *  and separating it from other surrounding text.
-    *  These objects have two properties:
-    * `type` a NumberFormat formatToParts type, and `value`,
-    *  which is the String which is the component of the output.
-    *  If a "part" came from NumberFormat,
-    *  it will have a unit property which indicates the `unit` being formatted;
-    *  literals which are part of the larger frame will not have this property.
+    *  Returns an array of objects representing the relative time format in parts that can be used for custom locale-aware formatting.
     *
     *  @param value - Numeric value to use in the internationalized relative time message
     *
-    *  @param unit - [Unit](https://tc39.es/ecma402/#sec-singularrelativetimeunit)
-    *   to use in the relative time internationalized message.
-    *   Possible values are: `"year"`, `"quarter"`, `"month"`, `"week"`,
-    *   `"day"`, `"hour"`, `"minute"`, `"second"`.
-    *   Plural forms are also permitted.
+    *  @param unit - [Unit](https://tc39.es/ecma402/#sec-singularrelativetimeunit) to use in the relative time internationalized message.
     *
     *  @throws `RangeError` if `unit` was given something other than `unit` possible values
     *
-    *  @returns Array of [FormatRelativeTimeToParts](https://tc39.es/ecma402/#sec-FormatRelativeTimeToParts)
-    *
     *  [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/formatToParts).
-    *
-    *  [Specification](https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype.formatToParts).
     */
+  /* standard es2020.intl */
   def formatToParts(value: Double, unit: RelativeTimeFormatUnit): js.Array[RelativeTimeFormatPart]
   
   /**
     * Provides access to the locale and options computed during initialization of this `Intl.RelativeTimeFormat` object.
     *
-    * @returns A new object with properties reflecting the locale
-    *  and formatting options computed during initialization
-    *  of the `Intel.RelativeTimeFormat` object.
-    *
     * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/resolvedOptions).
-    *
-    * [Specification](https://tc39.es/ecma402/#sec-intl.relativetimeformat.prototype.resolvedoptions)
     */
+  /* standard es2020.intl */
   def resolvedOptions(): ResolvedRelativeTimeFormatOptions
 }
 object RelativeTimeFormat {

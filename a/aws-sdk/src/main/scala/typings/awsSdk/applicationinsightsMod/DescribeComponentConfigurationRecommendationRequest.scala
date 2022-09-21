@@ -17,7 +17,7 @@ trait DescribeComponentConfigurationRecommendationRequest extends StObject {
   var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName
   
   /**
-    * The tier of the application component. Supported tiers include DOT_NET_CORE, DOT_NET_WORKER, DOT_NET_WEB, SQL_SERVER, and DEFAULT.
+    * The tier of the application component.
     */
   var Tier: typings.awsSdk.applicationinsightsMod.Tier
 }

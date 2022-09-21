@@ -12,7 +12,7 @@ trait ASPxClientTreeListBatchEditStartEditingEventArgs
      with ASPxClientCancelEventArgs {
   
   /**
-    * Gets the tree list column that owns a cell that is about to be edited.
+    * Gets the column to which the edited cell belongs.
     */
   var focusedColumn: ASPxClientTreeListColumn
   
@@ -24,11 +24,11 @@ trait ASPxClientTreeListBatchEditStartEditingEventArgs
   /**
     * Gets the value of the processed cell.
     */
-  var nodeValues: js.Any
+  var nodeValues: Any
 }
 object ASPxClientTreeListBatchEditStartEditingEventArgs {
   
-  inline def apply(cancel: Boolean, focusedColumn: ASPxClientTreeListColumn, nodeKey: String, nodeValues: js.Any): ASPxClientTreeListBatchEditStartEditingEventArgs = {
+  inline def apply(cancel: Boolean, focusedColumn: ASPxClientTreeListColumn, nodeKey: String, nodeValues: Any): ASPxClientTreeListBatchEditStartEditingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], focusedColumn = focusedColumn.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], nodeValues = nodeValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListBatchEditStartEditingEventArgs]
   }
@@ -39,6 +39,6 @@ object ASPxClientTreeListBatchEditStartEditingEventArgs {
     
     inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
     
-    inline def setNodeValues(value: js.Any): Self = StObject.set(x, "nodeValues", value.asInstanceOf[js.Any])
+    inline def setNodeValues(value: Any): Self = StObject.set(x, "nodeValues", value.asInstanceOf[js.Any])
   }
 }

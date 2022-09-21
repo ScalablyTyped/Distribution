@@ -12,7 +12,7 @@ trait UpdateTemplateAliasRequest extends StObject {
   var AliasName: typings.awsSdk.quicksightMod.AliasName
   
   /**
-    * The ID of the AWS account that contains the template alias that you're updating.
+    * The ID of the Amazon Web Services account that contains the template alias that you're updating.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   

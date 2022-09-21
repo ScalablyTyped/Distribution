@@ -11,7 +11,7 @@ trait IgRating
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets custom css votes.
@@ -27,7 +27,7 @@ trait IgRating
     * will customize selected and hover states for first 3 votes with classes h# and s#.
     *
     */
-  var cssVotes: js.UndefOr[js.Any] = js.undefined
+  var cssVotes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets if igRating can have focus. Change of that option is not supported after igRating was created.
@@ -53,7 +53,7 @@ trait IgRating
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets precision. Precision of value and valueHover.
@@ -113,7 +113,7 @@ trait IgRating
     * Note that for onblur validation depends on the [focusable](ui.igrating#options:focusable) option.
     *
     */
-  var validatorOptions: js.UndefOr[js.Any] = js.undefined
+  var validatorOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets value (selected votes or percent). If the value is of type string, it should be suitable for parsing to number. According to [valueAsPercent](ui.igrating#options:valueAsPercent) options the value is used as number of selected votes or as a percent of the votes.
@@ -175,7 +175,7 @@ object IgRating {
   
   extension [Self <: IgRating](x: Self) {
     
-    inline def setCssVotes(value: js.Any): Self = StObject.set(x, "cssVotes", value.asInstanceOf[js.Any])
+    inline def setCssVotes(value: Any): Self = StObject.set(x, "cssVotes", value.asInstanceOf[js.Any])
     
     inline def setCssVotesUndefined: Self = StObject.set(x, "cssVotes", js.undefined)
     
@@ -191,7 +191,7 @@ object IgRating {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -219,7 +219,7 @@ object IgRating {
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    inline def setValidatorOptions(value: js.Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
+    inline def setValidatorOptions(value: Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
     
     inline def setValidatorOptionsUndefined: Self = StObject.set(x, "validatorOptions", js.undefined)
     

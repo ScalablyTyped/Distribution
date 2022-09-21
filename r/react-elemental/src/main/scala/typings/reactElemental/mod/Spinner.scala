@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-elemental", "Spinner")
 @js.native
-class Spinner protected ()
-  extends Component[SpinnerProps, js.Object, js.Any] {
+open class Spinner protected ()
+  extends Component[SpinnerProps, js.Object, Any] {
   def this(props: SpinnerProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SpinnerProps, context: js.Any) = this()
+  def this(props: SpinnerProps, context: Any) = this()
 }

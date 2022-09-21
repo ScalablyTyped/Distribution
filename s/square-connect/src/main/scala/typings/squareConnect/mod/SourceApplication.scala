@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SourceApplication")
 @js.native
-class SourceApplication () extends StObject {
+open class SourceApplication () extends StObject {
   
   /**
     * Read-only Square ID assigned to the application. Only used for `Product` type `EXTERNAL_API`.

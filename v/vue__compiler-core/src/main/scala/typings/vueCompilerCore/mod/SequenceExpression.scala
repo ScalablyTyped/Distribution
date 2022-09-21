@@ -28,7 +28,7 @@ object SequenceExpression {
     
     inline def setExpressions(value: js.Array[JSChildNode]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    inline def setExpressionsVarargs(value: JSChildNode*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: JSChildNode*): Self = StObject.set(x, "expressions", js.Array(value*))
     
     inline def setType(value: `25`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

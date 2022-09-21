@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Actor extends StObject {
   
   /** An administrator. */
-  var administrator: js.UndefOr[js.Any] = js.undefined
+  var administrator: js.UndefOr[Any] = js.undefined
   
   /** An anonymous user. */
-  var anonymous: js.UndefOr[js.Any] = js.undefined
+  var anonymous: js.UndefOr[Any] = js.undefined
   
   /** An account acting on behalf of another. */
   var impersonation: js.UndefOr[Impersonation] = js.undefined
@@ -30,11 +30,11 @@ object Actor {
   
   extension [Self <: Actor](x: Self) {
     
-    inline def setAdministrator(value: js.Any): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
+    inline def setAdministrator(value: Any): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
     
     inline def setAdministratorUndefined: Self = StObject.set(x, "administrator", js.undefined)
     
-    inline def setAnonymous(value: js.Any): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+    inline def setAnonymous(value: Any): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
     inline def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
     

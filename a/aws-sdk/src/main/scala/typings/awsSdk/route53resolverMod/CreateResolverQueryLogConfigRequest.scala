@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateResolverQueryLogConfigRequest extends StObject {
   
   /**
-    * A unique string that identifies the request and that allows failed requests to be retried without the risk of executing the operation twice. CreatorRequestId can be any unique string, for example, a date/time stamp. 
+    * A unique string that identifies the request and that allows failed requests to be retried without the risk of running the operation twice. CreatorRequestId can be any unique string, for example, a date/time stamp. 
     */
   var CreatorRequestId: typings.awsSdk.route53resolverMod.CreatorRequestId
   
@@ -17,7 +17,7 @@ trait CreateResolverQueryLogConfigRequest extends StObject {
   var DestinationArn: typings.awsSdk.route53resolverMod.DestinationArn
   
   /**
-    * The name that you want to give the query logging configuration
+    * The name that you want to give the query logging configuration.
     */
   var Name: ResolverQueryLogConfigName
   
@@ -49,6 +49,6 @@ object CreateResolverQueryLogConfigRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DefaultNavigationOptions[Options, NavigationScreenPropType] extends StObject {
   
-  var defaultNavigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationScreenPropType, js.Any]] = js.undefined
+  var defaultNavigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationScreenPropType, Any]] = js.undefined
   
   var navigationOptions: js.UndefOr[
     NavigationScreenConfig[
-      StringDictionary[js.Any], 
+      StringDictionary[Any], 
       NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], 
-      js.Any
+      Any
     ]
   ] = js.undefined
 }
@@ -31,24 +31,24 @@ object DefaultNavigationOptions {
   
   extension [Self <: DefaultNavigationOptions[?, ?], Options, NavigationScreenPropType](x: Self & (DefaultNavigationOptions[Options, NavigationScreenPropType])) {
     
-    inline def setDefaultNavigationOptions(value: NavigationScreenConfig[Options, NavigationScreenPropType, js.Any]): Self = StObject.set(x, "defaultNavigationOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultNavigationOptions(value: NavigationScreenConfig[Options, NavigationScreenPropType, Any]): Self = StObject.set(x, "defaultNavigationOptions", value.asInstanceOf[js.Any])
     
     inline def setDefaultNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenPropType, js.Any]) & NavigationOptionsOptions[Options] => Options
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenPropType, Any]) & NavigationOptionsOptions[Options] => Options
     ): Self = StObject.set(x, "defaultNavigationOptions", js.Any.fromFunction1(value))
     
     inline def setDefaultNavigationOptionsUndefined: Self = StObject.set(x, "defaultNavigationOptions", js.undefined)
     
     inline def setNavigationOptions(
       value: NavigationScreenConfig[
-          StringDictionary[js.Any], 
+          StringDictionary[Any], 
           NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], 
-          js.Any
+          Any
         ]
     ): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
     inline def setNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], js.Any]) & NavigationOptionsOptions[StringDictionary[js.Any]] => StringDictionary[js.Any]
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], Any]) & NavigationOptionsOptions[StringDictionary[Any]] => StringDictionary[Any]
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
     inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)

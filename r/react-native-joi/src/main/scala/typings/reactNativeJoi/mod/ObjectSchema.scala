@@ -1,6 +1,5 @@
 package typings.reactNativeJoi.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,14 +98,14 @@ trait ObjectSchema
   def oxor(peers: String*): this.type = js.native
   def oxor(peers: js.Array[String]): this.type = js.native
   
-  def pattern(pattern: SchemaLike, schema: SchemaLike): this.type = js.native
   /**
     * Specify validation rules for unknown keys matching a pattern.
     *
     * @param pattern - a pattern that can be either a regular expression or a joi schema that will be tested against the unknown key names
     * @param schema - the schema object matching keys must validate against
     */
-  def pattern(pattern: RegExp, schema: SchemaLike): this.type = js.native
+  def pattern(pattern: js.RegExp, schema: SchemaLike): this.type = js.native
+  def pattern(pattern: SchemaLike, schema: SchemaLike): this.type = js.native
   
   /**
     * Renames a key to another name (deletes the renamed key).

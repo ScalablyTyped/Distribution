@@ -1,47 +1,28 @@
 package typings.antd
 
-import typings.antd.menuContextMod.MenuContextProps
+import typings.antd.menuContextMod.MenuTheme
 import typings.react.mod.CSSProperties
-import typings.react.mod.Component
-import typings.react.mod.Context
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.std.Event
+import typings.react.mod.global.JSX.Element
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subMenuMod {
   
-  @JSImport("antd/lib/menu/SubMenu", JSImport.Default)
+  @JSImport("antd/lib/menu/SubMenu", JSImport.Namespace)
   @js.native
-  class default () extends SubMenu
-  object default {
-    
-    @JSImport("antd/lib/menu/SubMenu", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    @JSImport("antd/lib/menu/SubMenu", "default.contextType")
-    @js.native
-    def contextType: Context[MenuContextProps] = js.native
-    inline def contextType_=(x: Context[MenuContextProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    @JSImport("antd/lib/menu/SubMenu", "default.isSubMenu")
-    @js.native
-    def isSubMenu: Double = js.native
-    inline def isSubMenu_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSubMenu")(x.asInstanceOf[js.Any])
-  }
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait SubMenu
-    extends Component[SubMenuProps, js.Any, js.Any] {
-    
-    def renderTitle(inlineCollapsed: Boolean): js.UndefOr[js.Object | Null] = js.native
-  }
+  inline def default(props: SubMenuProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait SubMenuProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -61,9 +42,9 @@ object subMenuMod {
     
     var popupOffset: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var rootPrefixCls: js.UndefOr[String] = js.undefined
-    
     var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var theme: js.UndefOr[MenuTheme] = js.undefined
     
     var title: js.UndefOr[ReactNode] = js.undefined
   }
@@ -75,6 +56,10 @@ object subMenuMod {
     }
     
     extension [Self <: SubMenuProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -112,13 +97,13 @@ object subMenuMod {
       
       inline def setPopupOffsetUndefined: Self = StObject.set(x, "popupOffset", js.undefined)
       
-      inline def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setRootPrefixClsUndefined: Self = StObject.set(x, "rootPrefixCls", js.undefined)
-      
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setTheme(value: MenuTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -128,20 +113,20 @@ object subMenuMod {
   
   trait TitleEventEntity extends StObject {
     
-    var domEvent: Event
+    var domEvent: (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]
     
     var key: String
   }
   object TitleEventEntity {
     
-    inline def apply(domEvent: Event, key: String): TitleEventEntity = {
+    inline def apply(domEvent: (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement], key: String): TitleEventEntity = {
       val __obj = js.Dynamic.literal(domEvent = domEvent.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[TitleEventEntity]
     }
     
     extension [Self <: TitleEventEntity](x: Self) {
       
-      inline def setDomEvent(value: Event): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
+      inline def setDomEvent(value: (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }

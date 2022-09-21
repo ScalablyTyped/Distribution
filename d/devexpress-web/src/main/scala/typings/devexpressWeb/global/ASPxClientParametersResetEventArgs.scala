@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientParametersResetEventArgs")
 @js.native
-class ASPxClientParametersResetEventArgs protected ()
+open class ASPxClientParametersResetEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientParametersResetEventArgs {
   /**
@@ -18,7 +18,7 @@ class ASPxClientParametersResetEventArgs protected ()
     * @param parameters An array of IParameter objects. This value is assigned to the ASPxClientParametersResetEventArgs.Parameters property.
     */
   def this(
-    parametersModel: js.Any,
+    parametersModel: Any,
     parameters: js.Array[typings.devexpressWeb.ASPxClientWebDocumentViewerParameter]
   ) = this()
   
@@ -32,5 +32,5 @@ class ASPxClientParametersResetEventArgs protected ()
     * Provides access to a View Model for report parameters.
     */
   /* CompleteClass */
-  var ParametersViewModel: js.Any = js.native
+  var ParametersViewModel: Any = js.native
 }

@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojselectcombobox.ojSelectOneSettableProperties<K, D>> */
 trait ojSelectOneSettablePropertiesLenient[K, D]
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var describedBy: js.UndefOr[String | Null] = js.undefined
   
@@ -69,7 +69,7 @@ trait ojSelectOneSettablePropertiesLenient[K, D]
     typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
   ] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
   var valueOption: js.UndefOr[LabelValue] = js.undefined
 }
@@ -112,7 +112,7 @@ object ojSelectOneSettablePropertiesLenient {
     
     inline def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
     
-    inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
+    inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value*))
     
     inline def setMinimumResultsForSearch(value: Double): Self = StObject.set(x, "minimumResultsForSearch", value.asInstanceOf[js.Any])
     
@@ -140,7 +140,7 @@ object ojSelectOneSettablePropertiesLenient {
     
     inline def setOptionsVarargs(
       value: (typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup)*
-    ): Self = StObject.set(x, "options", js.Array(value :_*))
+    ): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPickerAttributes(value: Class): Self = StObject.set(x, "pickerAttributes", value.asInstanceOf[js.Any])
     
@@ -172,7 +172,7 @@ object ojSelectOneSettablePropertiesLenient {
     
     inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueOption(value: LabelValue): Self = StObject.set(x, "valueOption", value.asInstanceOf[js.Any])
     

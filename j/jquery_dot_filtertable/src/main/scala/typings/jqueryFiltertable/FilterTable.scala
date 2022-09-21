@@ -175,7 +175,7 @@ object FilterTable {
       
       inline def setIgnoreColumnsUndefined: Self = StObject.set(x, "ignoreColumns", js.undefined)
       
-      inline def setIgnoreColumnsVarargs(value: Double*): Self = StObject.set(x, "ignoreColumns", js.Array(value :_*))
+      inline def setIgnoreColumnsVarargs(value: Double*): Self = StObject.set(x, "ignoreColumns", js.Array(value*))
       
       inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
       
@@ -229,7 +229,7 @@ object FilterTable {
       
       inline def setQuickListUndefined: Self = StObject.set(x, "quickList", js.undefined)
       
-      inline def setQuickListVarargs(value: String*): Self = StObject.set(x, "quickList", js.Array(value :_*))
+      inline def setQuickListVarargs(value: String*): Self = StObject.set(x, "quickList", js.Array(value*))
       
       inline def setVisibleClass(value: String): Self = StObject.set(x, "visibleClass", value.asInstanceOf[js.Any])
       

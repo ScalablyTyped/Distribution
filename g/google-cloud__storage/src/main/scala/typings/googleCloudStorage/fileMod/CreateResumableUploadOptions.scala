@@ -1,19 +1,22 @@
 package typings.googleCloudStorage.fileMod
 
-import typings.googleCloudCommon.serviceObjectMod.Metadata
+import typings.googleCloudStorage.serviceObjectMod.Metadata
+import typings.googleCloudStorage.storageMod.PreconditionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CreateResumableUploadOptions extends StObject {
   
-  var configPath: js.UndefOr[String] = js.undefined
+  var chunkSize: js.UndefOr[Double] = js.undefined
   
   var metadata: js.UndefOr[Metadata] = js.undefined
   
   var offset: js.UndefOr[Double] = js.undefined
   
   var origin: js.UndefOr[String] = js.undefined
+  
+  var preconditionOpts: js.UndefOr[PreconditionOptions] = js.undefined
   
   var predefinedAcl: js.UndefOr[PredefinedAcl] = js.undefined
   
@@ -34,9 +37,9 @@ object CreateResumableUploadOptions {
   
   extension [Self <: CreateResumableUploadOptions](x: Self) {
     
-    inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
+    inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
-    inline def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
+    inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
     inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
@@ -49,6 +52,10 @@ object CreateResumableUploadOptions {
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
+    inline def setPreconditionOpts(value: PreconditionOptions): Self = StObject.set(x, "preconditionOpts", value.asInstanceOf[js.Any])
+    
+    inline def setPreconditionOptsUndefined: Self = StObject.set(x, "preconditionOpts", js.undefined)
     
     inline def setPredefinedAcl(value: PredefinedAcl): Self = StObject.set(x, "predefinedAcl", value.asInstanceOf[js.Any])
     

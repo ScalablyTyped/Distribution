@@ -12,7 +12,7 @@ trait RequestOptions
   * Additional request body values. It's only taken in
   * consideration in `POST` and `PUT` requests.
   */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   /**
     * If the given request should persist on the cache. Keep in mind,
@@ -24,7 +24,7 @@ trait RequestOptions
     * Custom data for the request. This data are
     * going to be merged the transporter data.
     */
-  val data: js.UndefOr[Record[String, js.Any]] = js.undefined
+  val data: js.UndefOr[Record[String, Any]] = js.undefined
   
   /**
     * Custom headers for the request. This headers are
@@ -36,7 +36,7 @@ trait RequestOptions
     * Custom query parameters for the request. This query parameters are
     * going to be merged the transporter query parameters.
     */
-  val queryParameters: js.UndefOr[Record[String, js.Any]] = js.undefined
+  val queryParameters: js.UndefOr[Record[String, Any]] = js.undefined
   
   /**
     * Custom timeout for the request. Note that, in normal situacions
@@ -58,7 +58,7 @@ object RequestOptions {
     
     inline def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
-    inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -66,7 +66,7 @@ object RequestOptions {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setQueryParameters(value: Record[String, js.Any]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: Record[String, Any]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     

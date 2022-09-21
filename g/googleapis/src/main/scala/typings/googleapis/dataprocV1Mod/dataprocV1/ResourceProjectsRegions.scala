@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis/build/src/apis/dataproc/v1", "dataproc_v1.Resource$Projects$Regions")
 @js.native
-class ResourceProjectsRegions protected () extends StObject {
+open class ResourceProjectsRegions protected () extends StObject {
   def this(context: APIRequestContext) = this()
+  
+  var autoscalingPolicies: ResourceProjectsRegionsAutoscalingpolicies = js.native
   
   var clusters: ResourceProjectsRegionsClusters = js.native
   

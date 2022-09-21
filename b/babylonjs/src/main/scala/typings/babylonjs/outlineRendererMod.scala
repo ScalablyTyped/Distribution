@@ -12,7 +12,7 @@ object outlineRendererMod {
   
   @JSImport("babylonjs/Rendering/outlineRenderer", "OutlineRenderer")
   @js.native
-  class OutlineRenderer protected ()
+  open class OutlineRenderer protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -21,17 +21,15 @@ object outlineRendererMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _afterRenderingMesh: js.Any = js.native
+    /* private */ var _afterRenderingMesh: Any = js.native
     
-    /* private */ var _beforeRenderingMesh: js.Any = js.native
+    /* private */ var _beforeRenderingMesh: Any = js.native
     
-    /* private */ var _cachedDefines: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _effect: js.Any = js.native
+    /* private */ var _passIdForDrawWrapper: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
-    
-    /* private */ var _savedDepthWrite: js.Any = js.native
+    /* private */ var _savedDepthWrite: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.
@@ -42,11 +40,13 @@ object outlineRendererMod {
     /**
       * Returns whether or not the outline renderer is ready for a given submesh.
       * All the dependencies e.g. submeshes, texture, effect... mus be ready
-      * @param subMesh Defines the submesh to check readyness for
-      * @param useInstances Defines wheter wee are trying to render instances or not
+      * @param subMesh Defines the submesh to check readiness for
+      * @param useInstances Defines whether wee are trying to render instances or not
+      * @param renderPassId Render pass id to use to render the mesh
       * @returns true if ready otherwise false
       */
     def isReady(subMesh: SubMesh, useInstances: Boolean): Boolean = js.native
+    def isReady(subMesh: SubMesh, useInstances: Boolean, renderPassId: Double): Boolean = js.native
     
     /**
       * The name of the component. Each component must have a unique name.
@@ -72,9 +72,12 @@ object outlineRendererMod {
       * @param subMesh Defines the sumesh to render
       * @param batch Defines the batch of meshes in case of instances
       * @param useOverlay Defines if the rendering is for the overlay or the outline
+      * @param renderPassId Render pass id to use to render the mesh
       */
     def render(subMesh: SubMesh, batch: InstancesBatch): Unit = js.native
     def render(subMesh: SubMesh, batch: InstancesBatch, useOverlay: Boolean): Unit = js.native
+    def render(subMesh: SubMesh, batch: InstancesBatch, useOverlay: Boolean, renderPassId: Double): Unit = js.native
+    def render(subMesh: SubMesh, batch: InstancesBatch, useOverlay: Unit, renderPassId: Double): Unit = js.native
     
     /**
       * The scene the component belongs to.
@@ -83,9 +86,14 @@ object outlineRendererMod {
     var scene: Scene = js.native
     
     /**
-      * Defines a zOffset to prevent zFighting between the overlay and the mesh.
+      * Defines a zOffset default Factor to prevent zFighting between the overlay and the mesh.
       */
     var zOffset: Double = js.native
+    
+    /**
+      * Defines a zOffset default Unit to prevent zFighting between the overlay and the mesh.
+      */
+    var zOffsetUnits: Double = js.native
   }
   /* static members */
   object OutlineRenderer {
@@ -99,8 +107,8 @@ object outlineRendererMod {
       */
     @JSImport("babylonjs/Rendering/outlineRenderer", "OutlineRenderer._StencilReference")
     @js.native
-    def _StencilReference: js.Any = js.native
-    inline def _StencilReference_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StencilReference")(x.asInstanceOf[js.Any])
+    def _StencilReference: Any = js.native
+    inline def _StencilReference_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StencilReference")(x.asInstanceOf[js.Any])
   }
   
   /* augmented module */

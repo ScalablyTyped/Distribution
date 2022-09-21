@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IELangSearchEvents extends StObject {
   
-  var select: JQueryDeferred[js.Any]
+  var select: JQueryDeferred[Any]
 }
 object IELangSearchEvents {
   
-  inline def apply(select: JQueryDeferred[js.Any]): IELangSearchEvents = {
+  inline def apply(select: JQueryDeferred[Any]): IELangSearchEvents = {
     val __obj = js.Dynamic.literal(select = select.asInstanceOf[js.Any])
     __obj.asInstanceOf[IELangSearchEvents]
   }
   
   extension [Self <: IELangSearchEvents](x: Self) {
     
-    inline def setSelect(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: JQueryDeferred[Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
   }
 }

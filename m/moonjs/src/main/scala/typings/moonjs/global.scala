@@ -16,9 +16,9 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Moon")
     @js.native
-    class ^[Props /* <: String */, Data, Methods] ()
+    open class ^[Props /* <: String */, Data, Methods] ()
       extends StObject
-         with Instance[Data & Methods & (Record[Props, js.Any])] {
+         with Instance[Data & Methods & (Record[Props, Any])] {
       def this(options: ConstructorOptions[Props, Data, Methods]) = this()
     }
     

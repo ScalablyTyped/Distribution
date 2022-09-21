@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-modules-values
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 PostCSS plugin for CSS Modules to pass arbitrary values between your module files
@@ -10,10 +10,10 @@ PostCSS plugin for CSS Modules to pass arbitrary values between your module file
 | ------------------ | :-------------: |
 | Full name          | postcss-modules-values |
 | Keywords           | css, modules, postcss |
-| # releases         | 10 |
-| # dependents       | 129 |
-| # downloads        | 414799090 |
-| # stars            | 2 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 7.1611171E7 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/css-modules/postcss-modules-values#readme)

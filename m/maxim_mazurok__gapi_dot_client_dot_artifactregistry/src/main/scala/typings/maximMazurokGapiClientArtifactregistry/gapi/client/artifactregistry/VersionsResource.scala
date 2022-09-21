@@ -2,8 +2,8 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientArtifactregistry.anon.Force
-import typings.maximMazurokGapiClientArtifactregistry.anon.PageSize
-import typings.maximMazurokGapiClientArtifactregistry.anon.PrettyPrint
+import typings.maximMazurokGapiClientArtifactregistry.anon.OrderBy
+import typings.maximMazurokGapiClientArtifactregistry.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +17,9 @@ trait VersionsResource extends StObject {
   
   /** Gets a version */
   def get(): Request[Version] = js.native
-  def get(request: PrettyPrint): Request[Version] = js.native
+  def get(request: UploadType): Request[Version] = js.native
   
   /** Lists versions. */
   def list(): Request[ListVersionsResponse] = js.native
-  def list(request: PageSize): Request[ListVersionsResponse] = js.native
+  def list(request: OrderBy): Request[ListVersionsResponse] = js.native
 }

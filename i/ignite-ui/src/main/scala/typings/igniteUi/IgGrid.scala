@@ -11,7 +11,7 @@ trait IgGrid
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * If this option is set to true, the height of the grid row will be calculated automatically based on the [avgRowHeight](ui.iggrid#options:avgRowHeight) and the visible virtual records. If no [avgRowHeight](ui.iggrid#options:avgRowHeight) is specified, it will be calculated automatically at runtime.
@@ -176,7 +176,7 @@ trait IgGrid
     * "object" ddataSource as an object
     * "string" dataSource as a string
     */
-  var dataSource: js.UndefOr[js.Array[js.Any] | js.Object | String] = js.undefined
+  var dataSource: js.UndefOr[js.Array[Any] | js.Object | String] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type).
@@ -313,7 +313,7 @@ trait IgGrid
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Merge unbound columns values inside data source when data source is remote. If true then the unbound columns are merged to the data source at runtime on the server. Note that data source is expanded with the new data and this could cause performance issues when the data is huge. If mergeUnboundColumns is false then the unbound data is sent and merged on the client. This option is used by the [igGrid MVC Helper](http://www.igniteui.com/help/iggrid-developing-asp-net-mvc-applications-with-iggrid).
@@ -576,7 +576,7 @@ object IgGrid {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: IgGridColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: IgGridColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCreated(value: (/* event */ Event, /* ui */ CreatedEventUIParam) => Unit): Self = StObject.set(x, "created", js.Any.fromFunction2(value))
     
@@ -598,7 +598,7 @@ object IgGrid {
     
     inline def setDataRenderingUndefined: Self = StObject.set(x, "dataRendering", js.undefined)
     
-    inline def setDataSource(value: js.Array[js.Any] | js.Object | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Array[Any] | js.Object | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -610,7 +610,7 @@ object IgGrid {
     
     inline def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
-    inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setDefaultColumnWidth(value: String | Double): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
     
@@ -640,7 +640,7 @@ object IgGrid {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: IgGridFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: IgGridFeature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setFixedFooters(value: Boolean): Self = StObject.set(x, "fixedFooters", value.asInstanceOf[js.Any])
     
@@ -686,7 +686,7 @@ object IgGrid {
     
     inline def setLocalSchemaTransformUndefined: Self = StObject.set(x, "localSchemaTransform", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     

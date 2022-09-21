@@ -86,7 +86,7 @@ object headerContainerMod {
       
       inline def setScenes(value: js.Array[js.UndefOr[Scene[Route[String]]]]): Self = StObject.set(x, "scenes", value.asInstanceOf[js.Any])
       
-      inline def setScenesVarargs(value: js.UndefOr[Scene[Route[String]]]*): Self = StObject.set(x, "scenes", js.Array(value :_*))
+      inline def setScenesVarargs(value: js.UndefOr[Scene[Route[String]]]*): Self = StObject.set(x, "scenes", js.Array(value*))
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

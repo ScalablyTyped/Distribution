@@ -8,5 +8,5 @@ object invalidContinuationTokenExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidContinuationTokenException", "InvalidContinuationTokenException")
   @js.native
-  val InvalidContinuationTokenException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidContinuationTokenException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

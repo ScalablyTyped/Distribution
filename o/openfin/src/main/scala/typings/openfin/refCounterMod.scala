@@ -9,23 +9,23 @@ object refCounterMod {
   
   @JSImport("openfin/_v2/util/ref-counter", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with RefCoutner
   
   @js.native
   trait RefCoutner extends StObject {
     
-    def actOnFirst(key: String, firstAction: js.Function0[js.Any]): js.Any = js.native
-    def actOnFirst(key: String, firstAction: js.Function0[js.Any], nonFirstAction: js.Function0[Unit]): js.Any = js.native
+    def actOnFirst(key: String, firstAction: js.Function0[Any]): Any = js.native
+    def actOnFirst(key: String, firstAction: js.Function0[Any], nonFirstAction: js.Function0[Unit]): Any = js.native
     
-    def actOnLast(key: String, lastAction: js.Function0[js.Any]): js.Any = js.native
-    def actOnLast(key: String, lastAction: js.Function0[js.Any], nonLastAction: js.Function0[Unit]): js.Any = js.native
+    def actOnLast(key: String, lastAction: js.Function0[Any]): Any = js.native
+    def actOnLast(key: String, lastAction: js.Function0[Any], nonLastAction: js.Function0[Unit]): Any = js.native
     
     def decRefCount(key: String): Double = js.native
     
     def incRefCount(key: String): Double = js.native
     
-    var topicRefMap: Map[js.Any, js.Any] = js.native
+    var topicRefMap: Map[Any, Any] = js.native
   }
 }

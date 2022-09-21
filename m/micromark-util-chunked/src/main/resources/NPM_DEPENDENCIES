@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "micromark-util-chunked" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "micromark-util-chunked" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -16,7 +16,7 @@ trait ILineChart
   var fill: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var markerConfig: js.UndefOr[js.Any] = js.undefined
+  var markerConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var selectionTolerance: js.UndefOr[Double] = js.undefined
@@ -25,10 +25,10 @@ trait ILineChart
   var showMarkers: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean/Number) */
-  var smooth: js.UndefOr[js.Any] = js.undefined
+  var smooth: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var style: js.UndefOr[js.Any] = js.undefined
+  var style: js.UndefOr[Any] = js.undefined
 }
 object ILineChart {
   
@@ -47,7 +47,7 @@ object ILineChart {
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setMarkerConfig(value: js.Any): Self = StObject.set(x, "markerConfig", value.asInstanceOf[js.Any])
+    inline def setMarkerConfig(value: Any): Self = StObject.set(x, "markerConfig", value.asInstanceOf[js.Any])
     
     inline def setMarkerConfigUndefined: Self = StObject.set(x, "markerConfig", js.undefined)
     
@@ -59,11 +59,11 @@ object ILineChart {
     
     inline def setShowMarkersUndefined: Self = StObject.set(x, "showMarkers", js.undefined)
     
-    inline def setSmooth(value: js.Any): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+    inline def setSmooth(value: Any): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
     inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

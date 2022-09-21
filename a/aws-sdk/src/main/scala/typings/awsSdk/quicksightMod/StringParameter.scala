@@ -29,6 +29,6 @@ object StringParameter {
     
     inline def setValues(value: StringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

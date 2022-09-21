@@ -57,7 +57,7 @@ trait ClassEventEmitter
     * 
     * 
     */
-  def emit(ev: String, args: js.Any*): Boolean = js.native
+  def emit(ev: String, args: Any*): Boolean = js.native
   
   /**
     * 
@@ -67,7 +67,7 @@ trait ClassEventEmitter
     * 
     * 
     */
-  def eventNames(): js.Array[js.Any] = js.native
+  def eventNames(): js.Array[Any] = js.native
   
   /**
     * 
@@ -99,7 +99,7 @@ trait ClassEventEmitter
     * 
     * 
     */
-  def listeners(ev: String): js.Array[js.Any] = js.native
+  def listeners(ev: String): js.Array[Any] = js.native
   
   /**
     * 
@@ -231,7 +231,7 @@ trait ClassEventEmitter
     * 
     */
   def removeAllListeners(): js.Object = js.native
-  def removeAllListeners(evs: js.Array[js.Any]): js.Object = js.native
+  def removeAllListeners(evs: js.Array[Any]): js.Object = js.native
   
   /**
     * 

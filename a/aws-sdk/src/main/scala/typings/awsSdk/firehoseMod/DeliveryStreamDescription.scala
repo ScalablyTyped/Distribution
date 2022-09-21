@@ -9,7 +9,7 @@ trait DeliveryStreamDescription extends StObject {
   /**
     * The date and time that the delivery stream was created.
     */
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreateTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the delivery stream. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
@@ -54,7 +54,7 @@ trait DeliveryStreamDescription extends StObject {
   /**
     * The date and time that the delivery stream was last updated.
     */
-  var LastUpdateTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdateTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If the DeliveryStreamType parameter is KinesisStreamAsSource, a SourceDescription object describing the source Kinesis data stream.
@@ -83,7 +83,7 @@ object DeliveryStreamDescription {
   
   extension [Self <: DeliveryStreamDescription](x: Self) {
     
-    inline def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreateTimestamp(value: js.Date): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
@@ -101,7 +101,7 @@ object DeliveryStreamDescription {
     
     inline def setDestinations(value: DestinationDescriptionList): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
-    inline def setDestinationsVarargs(value: DestinationDescription*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: DestinationDescription*): Self = StObject.set(x, "Destinations", js.Array(value*))
     
     inline def setFailureDescription(value: FailureDescription): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
     
@@ -109,7 +109,7 @@ object DeliveryStreamDescription {
     
     inline def setHasMoreDestinations(value: BooleanObject): Self = StObject.set(x, "HasMoreDestinations", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdateTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdateTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdateTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimestampUndefined: Self = StObject.set(x, "LastUpdateTimestamp", js.undefined)
     

@@ -6,7 +6,6 @@ import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.IPolicy
 import typings.sawtoothSdk.protobufMod.Policy.IEntry
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Policy.
   * @param [properties] Properties to set
   */
-class Policy ()
+open class Policy ()
   extends typings.sawtoothSdk.mod.protobuf.Policy {
   def this(properties: IPolicy) = this()
 }
@@ -35,7 +34,7 @@ object Policy {
     * Constructs a new Entry.
     * @param [properties] Properties to set
     */
-  class Entry ()
+  open class Entry ()
     extends typings.sawtoothSdk.mod.protobuf.Policy.Entry {
     def this(properties: IEntry) = this()
   }
@@ -54,6 +53,8 @@ object Policy {
     inline def create(): typings.sawtoothSdk.protobufMod.Policy.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
     inline def create(properties: IEntry): typings.sawtoothSdk.protobufMod.Policy.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.sawtoothSdk.protobufMod.Policy.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.Policy.Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
     /**
       * Decodes an Entry message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -65,9 +66,8 @@ object Policy {
     /* static member */
     inline def decode(reader: Reader): typings.sawtoothSdk.protobufMod.Policy.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
     inline def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.Policy.Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
-    inline def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Policy.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
-    inline def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.Policy.Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.sawtoothSdk.protobufMod.Policy.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
     /**
       * Decodes an Entry message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -77,7 +77,6 @@ object Policy {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.Policy.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
-    inline def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Policy.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
     
     /**
       * Encodes the specified Entry message. Does not implicitly {@link Policy.Entry.verify|verify} messages.
@@ -105,7 +104,7 @@ object Policy {
       * @returns Entry
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.Policy.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.sawtoothSdk.protobufMod.Policy.Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy.Entry]
     
     /**
       * Creates a plain object from an Entry message. Also converts values to other types if specified.
@@ -114,8 +113,8 @@ object Policy {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.sawtoothSdk.protobufMod.Policy.Entry): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.sawtoothSdk.protobufMod.Policy.Entry, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.sawtoothSdk.protobufMod.Policy.Entry): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.sawtoothSdk.protobufMod.Policy.Entry, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an Entry message.
@@ -123,7 +122,7 @@ object Policy {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** EntryType enum. */
@@ -149,6 +148,8 @@ object Policy {
   inline def create(): typings.sawtoothSdk.protobufMod.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
   inline def create(properties: IPolicy): typings.sawtoothSdk.protobufMod.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
   
+  inline def decode(reader: js.typedarray.Uint8Array): typings.sawtoothSdk.protobufMod.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
   /**
     * Decodes a Policy message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -159,9 +160,8 @@ object Policy {
     */
   inline def decode(reader: Reader): typings.sawtoothSdk.protobufMod.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
   inline def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
-  inline def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
-  inline def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.sawtoothSdk.protobufMod.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
   /**
     * Decodes a Policy message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -170,7 +170,6 @@ object Policy {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
-  inline def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
   
   /**
     * Encodes the specified Policy message. Does not implicitly {@link Policy.verify|verify} messages.
@@ -195,7 +194,7 @@ object Policy {
     * @param object Plain object
     * @returns Policy
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.sawtoothSdk.protobufMod.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.Policy]
   
   /**
     * Creates a plain object from a Policy message. Also converts values to other types if specified.
@@ -203,13 +202,13 @@ object Policy {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: typings.sawtoothSdk.protobufMod.Policy): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: typings.sawtoothSdk.protobufMod.Policy, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: typings.sawtoothSdk.protobufMod.Policy): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: typings.sawtoothSdk.protobufMod.Policy, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a Policy message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

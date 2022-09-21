@@ -1,7 +1,7 @@
 
 # Scala.js typings for breeze
 
-Typings are for version 1.6.3
+Typings are for version 1.7.1
 
 ## Library description:
 Functional async flow control library
@@ -10,10 +10,10 @@ Functional async flow control library
 | ------------------ | :-------------: |
 | Full name          | breeze |
 | Keywords           | flow, async, ocaml, functional, haskell, waterfall, try, catch, promises, thennable, bluebird, q |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 4805 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 471.0 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/Nijikokun/breeze#readme)

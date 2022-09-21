@@ -10,10 +10,10 @@ object tramMod {
   
   @JSImport("material-ui/svg-icons/maps/tram", JSImport.Default)
   @js.native
-  class default () extends MapsTram
+  open class default () extends MapsTram
   
   @JSImport("material-ui/svg-icons/maps/tram", "MapsTram")
   @js.native
-  class MapsTram ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsTram ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

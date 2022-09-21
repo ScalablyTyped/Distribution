@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-mixpanel" : "1.2.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-mixpanel" : "1.2.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -81,7 +81,7 @@ object VolumeId {
     
     inline def setLayerIds(value: String | js.Array[String]): Self = StObject.set(x, "layerIds", value.asInstanceOf[js.Any])
     
-    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "layerIds", js.Array(value*))
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     

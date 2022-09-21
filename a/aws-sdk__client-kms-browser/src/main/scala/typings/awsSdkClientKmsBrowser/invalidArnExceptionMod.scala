@@ -8,5 +8,5 @@ object invalidArnExceptionMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/InvalidArnException", "InvalidArnException")
   @js.native
-  val InvalidArnException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidArnException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

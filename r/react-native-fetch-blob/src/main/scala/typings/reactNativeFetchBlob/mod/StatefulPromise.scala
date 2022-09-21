@@ -13,7 +13,7 @@ trait StatefulPromise[T]
     * Cancel the request when invoke this method.
     */
   def cancel(): StatefulPromise[FetchBlobResponse] = js.native
-  def cancel(cb: js.Function1[/* reason */ js.Any, Unit]): StatefulPromise[FetchBlobResponse] = js.native
+  def cancel(cb: js.Function1[/* reason */ Any, Unit]): StatefulPromise[FetchBlobResponse] = js.native
   
   /**
     * An IOS only API, when IOS app turns into background network tasks will be terminated after ~180 seconds,

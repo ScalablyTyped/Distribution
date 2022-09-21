@@ -14,7 +14,7 @@ trait DescribeFleetMetadataResponse extends StObject {
   /**
     * The time that the fleet was created.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name to display.
@@ -34,7 +34,7 @@ trait DescribeFleetMetadataResponse extends StObject {
   /**
     * The time that the fleet was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[DateTime] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region.
@@ -59,7 +59,7 @@ object DescribeFleetMetadataResponse {
     
     inline def setCompanyCodeUndefined: Self = StObject.set(x, "CompanyCode", js.undefined)
     
-    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -75,7 +75,7 @@ object DescribeFleetMetadataResponse {
     
     inline def setFleetStatusUndefined: Self = StObject.set(x, "FleetStatus", js.undefined)
     
-    inline def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     

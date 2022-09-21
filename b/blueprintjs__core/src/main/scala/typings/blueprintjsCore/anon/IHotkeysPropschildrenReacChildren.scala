@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined @blueprintjs/core.@blueprintjs/core/lib/esm/components/hotkeys/hotkeysTypes.IHotkeysProps & {  children :react.react.ReactNode | undefined} */
 trait IHotkeysPropschildrenReacChildren extends StObject {
   
+  /** Hotkey elements. */
   var children: js.UndefOr[ReactNode] = js.undefined
   
   /** A space-delimited list of class names to pass along to a child element. */

@@ -29,7 +29,7 @@ object XNumberFormatter2 {
     getNumberFormatsSupplier: () => XNumberFormatsSupplier,
     queryColorForNumber: (Double, Double, Color) => Color,
     queryColorForString: (Double, String, Color) => Color,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryPreviewColorForNumber: (String, Double, Locale, Boolean, Color) => Color,
     release: () => Unit
   ): XNumberFormatter2 = {

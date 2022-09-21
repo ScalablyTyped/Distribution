@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `1` extends StObject {
   
   // tslint:disable-next-line no-redundant-undefined
-  var state: js.UndefOr[js.Any | PartialState[js.Any]] = js.undefined
+  var state: js.UndefOr[Any | PartialState[Any]] = js.undefined
 }
 object `1` {
   
@@ -19,7 +19,7 @@ object `1` {
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setState(value: js.Any | PartialState[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any | PartialState[Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

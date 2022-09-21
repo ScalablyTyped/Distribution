@@ -1,7 +1,9 @@
 package typings.babylonjs
 
-import typings.babylonjs.behaviorMod.Behavior
-import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.anon.Position
+import typings.babylonjs.baseSixDofDragBehaviorMod.BaseSixDofDragBehavior
+import typings.babylonjs.mathVectorMod.Quaternion
+import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.observableMod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,60 +13,40 @@ object sixDofDragBehaviorMod {
   
   @JSImport("babylonjs/Behaviors/Meshes/sixDofDragBehavior", "SixDofDragBehavior")
   @js.native
-  /**
-    * Instantiates a behavior that when attached to a mesh will allow the mesh to be dragged around based on directions and origin of the pointer's ray
-    */
-  class SixDofDragBehavior ()
-    extends StObject
-       with Behavior[Mesh] {
+  open class SixDofDragBehavior () extends BaseSixDofDragBehavior {
     
-    /* private */ var _attachedToElement: js.Any = js.native
+    /* private */ var _getPositionOffsetAround: Any = js.native
     
-    /* private */ var _moving: js.Any = js.native
+    /* private */ var _onePointerPositionUpdated: Any = js.native
     
-    /* private */ var _ownerNode: js.Any = js.native
+    /* private */ var _sceneRenderObserver: Any = js.native
     
-    /**
-      * In the case of multiplea active cameras, the cameraToUseForPointers should be used if set instead of active camera
-      */
-    /* private */ def _pointerCamera: js.Any = js.native
+    /* protected */ var _startingOrientation: Quaternion = js.native
     
-    /* private */ var _pointerObserver: js.Any = js.native
+    /* protected */ var _startingPosition: Vector3 = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* protected */ var _startingScaling: Vector3 = js.native
     
-    /* private */ var _sceneRenderObserver: js.Any = js.native
+    /* protected */ def _targetDrag(worldDeltaPosition: Vector3, worldDeltaRotation: Quaternion): Unit = js.native
     
-    /* private */ var _startingOrientation: js.Any = js.native
+    /* protected */ def _targetDragEnd(): Unit = js.native
     
-    /* private */ var _targetPosition: js.Any = js.native
+    /* protected */ def _targetDragStart(): Unit = js.native
     
-    /* private */ var _virtualDragMesh: js.Any = js.native
+    /* protected */ var _targetOrientation: Quaternion = js.native
     
-    /* private */ var _virtualOriginMesh: js.Any = js.native
+    /* protected */ var _targetPosition: Vector3 = js.native
+    
+    /* protected */ var _targetScaling: Vector3 = js.native
+    
+    /* private */ var _twoPointersPositionUpdated: Any = js.native
+    
+    /* private */ var _virtualTransformNode: Any = js.native
     
     /**
-      * Called when the behavior is attached to a target
-      * @param target defines the target where the behavior is attached to
+      * Use this flag to update the target but not move the owner node towards the target
       */
-    /* CompleteClass */
-    override def attach(target: Mesh): Unit = js.native
-    
-    /**
-      * The id of the pointer that is currently interacting with the behavior (-1 when no pointer is active)
-      */
-    var currentDraggingPointerID: Double = js.native
-    
-    /**
-      * Called when the behavior is detached from its target
-      */
-    /* CompleteClass */
-    override def detach(): Unit = js.native
-    
-    /**
-      * If camera controls should be detached during the drag
-      */
-    var detachCameraControls: Boolean = js.native
+    var disableMovement: Boolean = js.native
     
     /**
       * The distance towards the target drag position to move each frame. This can be useful to avoid jitter. Set this to 1 for no delay. (Default: 0.2)
@@ -72,19 +54,10 @@ object sixDofDragBehaviorMod {
     var dragDeltaRatio: Double = js.native
     
     /**
-      * If the behavior is currently in a dragging state
+      * Should the object rotate towards the camera when we start dragging it
       */
-    var dragging: Boolean = js.native
+    var faceCameraOnDragStart: Boolean = js.native
     
-    /**
-      * Function called when the behavior needs to be initialized (after attaching it to a target)
-      */
-    /* CompleteClass */
-    override def init(): Unit = js.native
-    
-    /** gets or sets behavior's name */
-    /* CompleteClass */
-    var name: String = js.native
     /**
       *  The name of the behavior
       */
@@ -92,19 +65,14 @@ object sixDofDragBehaviorMod {
     def name_MSixDofDragBehavior: String = js.native
     
     /**
-      *  Fires each time a drag ends (eg. mouse release after drag)
+      * Fires when position is updated
       */
-    var onDragEndObservable: Observable[js.Object] = js.native
+    var onPositionChangedObservable: Observable[Position] = js.native
     
     /**
-      * Fires each time a drag happens
+      * If `rotateDraggedObject` is set to `true`, this parameter determines if we are only rotating around the y axis (yaw)
       */
-    var onDragObservable: Observable[Unit] = js.native
-    
-    /**
-      * Fires each time a drag starts
-      */
-    var onDragStartObservable: Observable[js.Object] = js.native
+    var rotateAroundYOnly: Boolean = js.native
     
     /**
       * If the object should rotate to face the drag origin
@@ -112,20 +80,8 @@ object sixDofDragBehaviorMod {
     var rotateDraggedObject: Boolean = js.native
     
     /**
-      * How much faster the object should move when the controller is moving towards it. This is useful to bring objects that are far away from the user to them faster. Set this to 0 to avoid any speed increase. (Default: 3)
+      * Should the behavior rotate 1:1 with the motion controller, when one is used.
       */
-    /* private */ var zDragFactor: js.Any = js.native
-  }
-  /* static members */
-  object SixDofDragBehavior {
-    
-    @JSImport("babylonjs/Behaviors/Meshes/sixDofDragBehavior", "SixDofDragBehavior")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("babylonjs/Behaviors/Meshes/sixDofDragBehavior", "SixDofDragBehavior._virtualScene")
-    @js.native
-    def _virtualScene: js.Any = js.native
-    inline def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
+    var rotateWithMotionController: Boolean = js.native
   }
 }

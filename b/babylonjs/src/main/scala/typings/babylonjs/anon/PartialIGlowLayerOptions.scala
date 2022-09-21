@@ -9,9 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<babylonjs.babylonjs/Layers/glowLayer.IGlowLayerOptions> */
 trait PartialIGlowLayerOptions extends StObject {
   
+  var alphaBlendingMode: js.UndefOr[Double] = js.undefined
+  
   var blurKernelSize: js.UndefOr[Double] = js.undefined
   
   var camera: js.UndefOr[Nullable[Camera]] = js.undefined
+  
+  var ldrMerge: js.UndefOr[Boolean] = js.undefined
   
   var mainTextureFixedSize: js.UndefOr[Double] = js.undefined
   
@@ -30,6 +34,10 @@ object PartialIGlowLayerOptions {
   
   extension [Self <: PartialIGlowLayerOptions](x: Self) {
     
+    inline def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
+    
+    inline def setAlphaBlendingModeUndefined: Self = StObject.set(x, "alphaBlendingMode", js.undefined)
+    
     inline def setBlurKernelSize(value: Double): Self = StObject.set(x, "blurKernelSize", value.asInstanceOf[js.Any])
     
     inline def setBlurKernelSizeUndefined: Self = StObject.set(x, "blurKernelSize", js.undefined)
@@ -39,6 +47,10 @@ object PartialIGlowLayerOptions {
     inline def setCameraNull: Self = StObject.set(x, "camera", null)
     
     inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+    
+    inline def setLdrMerge(value: Boolean): Self = StObject.set(x, "ldrMerge", value.asInstanceOf[js.Any])
+    
+    inline def setLdrMergeUndefined: Self = StObject.set(x, "ldrMerge", js.undefined)
     
     inline def setMainTextureFixedSize(value: Double): Self = StObject.set(x, "mainTextureFixedSize", value.asInstanceOf[js.Any])
     

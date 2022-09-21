@@ -2,7 +2,6 @@ package typings.speedtestNet.mod
 
 import typings.speedtestNet.anon.Id
 import typings.speedtestNet.speedtestNetStrings.result
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait ResultEvent
   
   var server: ServerData
   
-  var timestamp: Date
+  var timestamp: js.Date
   
   @JSName("type")
   var type_ResultEvent: result
@@ -43,7 +42,7 @@ object ResultEvent {
     ping: PingData,
     result: Id,
     server: ServerData,
-    timestamp: Date,
+    timestamp: js.Date,
     upload: DownloadUploadData
   ): ResultEvent = {
     val __obj = js.Dynamic.literal(download = download.asInstanceOf[js.Any], interface = interface.asInstanceOf[js.Any], isp = isp.asInstanceOf[js.Any], packetLoss = packetLoss.asInstanceOf[js.Any], ping = ping.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any])
@@ -67,7 +66,7 @@ object ResultEvent {
     
     inline def setServer(value: ServerData): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setType(value: result): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

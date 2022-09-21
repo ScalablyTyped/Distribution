@@ -1,6 +1,5 @@
 package typings.vis.mod
 
-import typings.std.Date
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.vis.anon.Animation
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vis", "Timeline")
 @js.native
-class Timeline protected () extends StObject {
+open class Timeline protected () extends StObject {
   def this(container: HTMLElement, items: DataItemCollectionType) = this()
   def this(container: HTMLElement, items: DataItemCollectionType, groups: DataGroupCollectionType) = this()
   def this(container: HTMLElement, items: DataItemCollectionType, options: TimelineOptions) = this()
@@ -44,26 +43,25 @@ class Timeline protected () extends StObject {
   def fit(): Unit = js.native
   def fit(options: TimelineAnimationOptions): Unit = js.native
   
-  def focus(ids: js.Array[IdType]): Unit = js.native
-  def focus(ids: js.Array[IdType], options: TimelineAnimationOptions): Unit = js.native
   /**
     * Adjust the visible window such that the selected item (or multiple items) are centered on screen. See also function fit()
     */
-  def focus(ids: IdType): Unit = js.native
+  def focus(ids: Any | IdType): Unit = js.native
+  def focus(ids: js.Array[IdType]): Unit = js.native
+  def focus(ids: js.Array[IdType], options: TimelineAnimationOptions): Unit = js.native
   def focus(ids: IdType, options: TimelineAnimationOptions): Unit = js.native
-  def focus(selection: js.Any): Unit = js.native
   
   /**
     * Get the current time. Only applicable when option showCurrentTime is true.
     */
-  def getCurrentTime(): Date = js.native
+  def getCurrentTime(): js.Date = js.native
   
   /**
     * Retrieve the custom time from the custom time bar with given id.
     * @param id Id is undefined by default.
     */
-  def getCustomTime(): Date = js.native
-  def getCustomTime(id: IdType): Date = js.native
+  def getCustomTime(): js.Date = js.native
+  def getCustomTime(id: IdType): js.Date = js.native
   
   def getEventProperties(event: Event): TimelineEventPropertiesResult = js.native
   
@@ -91,31 +89,31 @@ class Timeline protected () extends StObject {
     * Move the window such that given time is centered on screen.
     */
   def moveTo(time: DateType): Unit = js.native
-  def moveTo(time: DateType, options: Unit, callback: js.Function1[/* properties */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def moveTo(time: DateType, options: Unit, callback: js.Function1[/* properties */ js.UndefOr[Any], Unit]): Unit = js.native
   def moveTo(time: DateType, options: TimelineAnimationOptions): Unit = js.native
   def moveTo(
     time: DateType,
     options: TimelineAnimationOptions,
-    callback: js.Function1[/* properties */ js.UndefOr[js.Any], Unit]
+    callback: js.Function1[/* properties */ js.UndefOr[Any], Unit]
   ): Unit = js.native
   
   def off(event: String): Unit = js.native
-  def off(event: String, callback: js.Function1[/* properties */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def off(event: String, callback: js.Function1[/* properties */ js.UndefOr[Any], Unit]): Unit = js.native
   /**
     * Remove an event listener created before via function on(event[, callback]).
     */
   def off(event: TimelineEvents): Unit = js.native
-  def off(event: TimelineEvents, callback: js.Function1[/* properties */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def off(event: TimelineEvents, callback: js.Function1[/* properties */ js.UndefOr[Any], Unit]): Unit = js.native
   
   def on(): Unit = js.native
   def on(event: String): Unit = js.native
-  def on(event: String, callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
-  def on(event: Unit, callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
+  def on(event: String, callback: js.Function1[/* properties */ Any, Unit]): Unit = js.native
+  def on(event: Unit, callback: js.Function1[/* properties */ Any, Unit]): Unit = js.native
   /**
     * Create an event listener. The callback function is invoked every time the event is triggered.
     */
   def on(event: TimelineEvents): Unit = js.native
-  def on(event: TimelineEvents, callback: js.Function1[/* properties */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def on(event: TimelineEvents, callback: js.Function1[/* properties */ js.UndefOr[Any], Unit]): Unit = js.native
   
   /**
     * Force a redraw of the Timeline. The size of all items will be recalculated.
@@ -187,7 +185,6 @@ class Timeline protected () extends StObject {
   def setSelection(ids: IdType): Unit = js.native
   def setSelection(ids: IdType, options: Animation): Unit = js.native
   
-  def setWindow(start: js.Any, date: js.Any): Unit = js.native
   /**
     * Set the current visible window.
     * @param start If the parameter value of start is null, the parameter will be left unchanged.
@@ -195,7 +192,7 @@ class Timeline protected () extends StObject {
     * @param options Timeline animation options. See {@link TimelineAnimationOptions}
     * @param callback The callback function
     */
-  def setWindow(start: DateType, end: DateType): Unit = js.native
+  def setWindow(start: Any | DateType, end: Any | DateType): Unit = js.native
   def setWindow(start: DateType, end: DateType, options: Unit, callback: js.Function0[Unit]): Unit = js.native
   def setWindow(start: DateType, end: DateType, options: TimelineAnimationOptions): Unit = js.native
   def setWindow(start: DateType, end: DateType, options: TimelineAnimationOptions, callback: js.Function0[Unit]): Unit = js.native

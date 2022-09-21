@@ -1,111 +1,151 @@
 package typings.blueprintjsCore.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.blueprintjsCore.anon.DisplayName
+import typings.blueprintjsCore.anon.HTMLPropsHTMLElementIElem
+import typings.blueprintjsCore.anon.HTMLPropsHTMLHeadingEleme
+import typings.blueprintjsCore.anon.HTMLPropsHTMLLabelElement
+import typings.blueprintjsCore.anon.HTMLPropsHTMLOListElement
+import typings.blueprintjsCore.anon.HTMLPropsHTMLUListElement
+import typings.blueprintjsCore.anon.Instantiable
+import typings.blueprintjsCore.anon.PartialIHotkeysDialogProp
+import typings.blueprintjsCore.blueprintjsCoreStrings.bottom
+import typings.blueprintjsCore.blueprintjsCoreStrings.left
+import typings.blueprintjsCore.blueprintjsCoreStrings.right
+import typings.blueprintjsCore.blueprintjsCoreStrings.top
+import typings.blueprintjsCore.breadcrumbMod.BreadcrumbProps
+import typings.blueprintjsCore.constructorMod.IConstructor
+import typings.blueprintjsCore.contextMenuTargetMod.IContextMenuTargetComponent
+import typings.blueprintjsCore.hotkeyConfigMod.HotkeyConfig
+import typings.blueprintjsCore.hotkeyParserMod.IKeyCombo
+import typings.blueprintjsCore.hotkeysDialog2Mod.HotkeysDialog2Props
+import typings.blueprintjsCore.hotkeysProviderMod.HotkeysContextInstance
+import typings.blueprintjsCore.hotkeysProviderMod.HotkeysProviderProps
+import typings.blueprintjsCore.hotkeysTarget2Mod.HotkeysTarget2Props
+import typings.blueprintjsCore.hotkeysTargetMod.IHotkeysTargetComponent
+import typings.blueprintjsCore.mod.^
+import typings.blueprintjsCore.panelStack2Mod.PanelStack2Component
+import typings.blueprintjsCore.portalProviderMod.PortalContextOptions
+import typings.blueprintjsCore.useHotkeysMod.UseHotkeysOptions
+import typings.blueprintjsCore.useHotkeysMod.UseHotkeysReturnValue
+import typings.react.mod.Context
+import typings.react.mod.FC
+import typings.react.mod.PropsWithChildren
+import typings.react.mod.Ref
+import typings.react.mod.RefCallback
+import typings.react.mod.RefObject
+import typings.react.mod.global.JSX.Element
+import typings.std.HTMLElement
+import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def Blockquote: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Blockquote").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLElement]]]
+inline def Blockquote: FC[HTMLPropsHTMLElementIElem] = ^.asInstanceOf[js.Dynamic].selectDynamic("Blockquote").asInstanceOf[FC[HTMLPropsHTMLElementIElem]]
 
-inline def Breadcrumb: typings.react.mod.FunctionComponent[typings.blueprintjsCore.breadcrumbMod.IBreadcrumbProps] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Breadcrumb").asInstanceOf[typings.react.mod.FunctionComponent[typings.blueprintjsCore.breadcrumbMod.IBreadcrumbProps]]
+inline def Breadcrumb: FC[BreadcrumbProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Breadcrumb").asInstanceOf[FC[BreadcrumbProps]]
 
-inline def Code: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Code").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLElement]]]
+inline def Code: FC[HTMLPropsHTMLElementIElem] = ^.asInstanceOf[js.Dynamic].selectDynamic("Code").asInstanceOf[FC[HTMLPropsHTMLElementIElem]]
 
-inline def ContextMenuTarget[T /* <: typings.blueprintjsCore.constructorMod.IConstructor[typings.blueprintjsCore.contextMenuTargetMod.IContextMenuTargetComponent] */](WrappedComponent: T): typings.blueprintjsCore.anon.Instantiable & T = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuTarget")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[typings.blueprintjsCore.anon.Instantiable & T]
+inline def ContextMenuTarget[T /* <: IConstructor[IContextMenuTargetComponent] */](WrappedComponent: T): Instantiable & T = ^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuTarget")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[Instantiable & T]
 
-inline def DISPLAYNAME_PREFIX: /* "Blueprint3" */ java.lang.String = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DISPLAYNAME_PREFIX").asInstanceOf[/* "Blueprint3" */ java.lang.String]
+inline def DISPLAYNAME_PREFIX: /* "Blueprint4" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("DISPLAYNAME_PREFIX").asInstanceOf[/* "Blueprint4" */ String]
 
-inline def Expander: typings.react.mod.FunctionComponent[js.Object] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Expander").asInstanceOf[typings.react.mod.FunctionComponent[js.Object]]
+inline def Expander: FC[js.Object] = ^.asInstanceOf[js.Dynamic].selectDynamic("Expander").asInstanceOf[FC[js.Object]]
 
-inline def H1: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("H1").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
+inline def H1: FC[HTMLPropsHTMLHeadingEleme] = ^.asInstanceOf[js.Dynamic].selectDynamic("H1").asInstanceOf[FC[HTMLPropsHTMLHeadingEleme]]
 
-inline def H2: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("H2").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
+inline def H2: FC[HTMLPropsHTMLHeadingEleme] = ^.asInstanceOf[js.Dynamic].selectDynamic("H2").asInstanceOf[FC[HTMLPropsHTMLHeadingEleme]]
 
-inline def H3: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("H3").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
+inline def H3: FC[HTMLPropsHTMLHeadingEleme] = ^.asInstanceOf[js.Dynamic].selectDynamic("H3").asInstanceOf[FC[HTMLPropsHTMLHeadingEleme]]
 
-inline def H4: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("H4").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
+inline def H4: FC[HTMLPropsHTMLHeadingEleme] = ^.asInstanceOf[js.Dynamic].selectDynamic("H4").asInstanceOf[FC[HTMLPropsHTMLHeadingEleme]]
 
-inline def H5: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("H5").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
+inline def H5: FC[HTMLPropsHTMLHeadingEleme] = ^.asInstanceOf[js.Dynamic].selectDynamic("H5").asInstanceOf[FC[HTMLPropsHTMLHeadingEleme]]
 
-inline def H6: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("H6").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLHeadingElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLHeadingElement]]]
+inline def H6: FC[HTMLPropsHTMLHeadingEleme] = ^.asInstanceOf[js.Dynamic].selectDynamic("H6").asInstanceOf[FC[HTMLPropsHTMLHeadingEleme]]
 
-inline def HotkeysTarget[T /* <: typings.blueprintjsCore.constructorMod.IConstructor[typings.blueprintjsCore.hotkeysTargetMod.IHotkeysTargetComponent] */](WrappedComponent: T): typings.blueprintjsCore.anon.DisplayName & T = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[typings.blueprintjsCore.anon.DisplayName & T]
+inline def HotkeysContext: Context[HotkeysContextInstance] = ^.asInstanceOf[js.Dynamic].selectDynamic("HotkeysContext").asInstanceOf[Context[HotkeysContextInstance]]
 
-inline def Label: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLLabelElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLLabelElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Label").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLLabelElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLLabelElement]]]
+inline def HotkeysDialog2: FC[HotkeysDialog2Props] = ^.asInstanceOf[js.Dynamic].selectDynamic("HotkeysDialog2").asInstanceOf[FC[HotkeysDialog2Props]]
 
-inline def OL: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLOListElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLOListElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OL").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLOListElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLOListElement]]]
+inline def HotkeysProvider(hasChildrenDialogPropsRenderDialogValue: HotkeysProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysProvider")(hasChildrenDialogPropsRenderDialogValue.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def Pre: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Pre").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLElement]]]
+inline def HotkeysTarget[T /* <: IConstructor[IHotkeysTargetComponent] */](WrappedComponent: T): DisplayName & T = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[DisplayName & T]
 
-inline def UL: typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLUListElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLUListElement]] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UL").asInstanceOf[typings.react.mod.FunctionComponent[
-typings.react.mod.HTMLProps[typings.std.HTMLUListElement] & typings.blueprintjsCore.propsMod.IElementRefProps[typings.std.HTMLUListElement]]]
+inline def HotkeysTarget2(hasChildrenHotkeysOptions: HotkeysTarget2Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HotkeysTarget2")(hasChildrenHotkeysOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def comboMatches(
-  a: typings.blueprintjsCore.hotkeyParserMod.IKeyCombo,
-  b: typings.blueprintjsCore.hotkeyParserMod.IKeyCombo
-): scala.Boolean = (typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("comboMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def Label: FC[HTMLPropsHTMLLabelElement] = ^.asInstanceOf[js.Dynamic].selectDynamic("Label").asInstanceOf[FC[HTMLPropsHTMLLabelElement]]
 
-inline def getKeyCombo(e: typings.std.KeyboardEvent): typings.blueprintjsCore.hotkeyParserMod.IKeyCombo = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getKeyCombo")(e.asInstanceOf[js.Any]).asInstanceOf[typings.blueprintjsCore.hotkeyParserMod.IKeyCombo]
+inline def OL: FC[HTMLPropsHTMLOListElement] = ^.asInstanceOf[js.Dynamic].selectDynamic("OL").asInstanceOf[FC[HTMLPropsHTMLOListElement]]
 
-inline def getKeyComboString(e: typings.std.KeyboardEvent): java.lang.String = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getKeyComboString")(e.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def PanelStack2: PanelStack2Component = ^.asInstanceOf[js.Dynamic].selectDynamic("PanelStack2").asInstanceOf[PanelStack2Component]
 
-inline def getPositionIgnoreAngles(position: typings.blueprintjsCore.positionMod.Position): typings.blueprintjsCore.blueprintjsCoreStrings.left | typings.blueprintjsCore.blueprintjsCoreStrings.right | typings.blueprintjsCore.blueprintjsCoreStrings.bottom | typings.blueprintjsCore.blueprintjsCoreStrings.top = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.left | typings.blueprintjsCore.blueprintjsCoreStrings.right | typings.blueprintjsCore.blueprintjsCoreStrings.bottom | typings.blueprintjsCore.blueprintjsCoreStrings.top]
+inline def PortalContext: Context[PortalContextOptions] = ^.asInstanceOf[js.Dynamic].selectDynamic("PortalContext").asInstanceOf[Context[PortalContextOptions]]
 
-inline def getRef[T](): T | scala.Null = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | scala.Null]
-inline def getRef[T](ref: T): T | scala.Null = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | scala.Null]
-inline def getRef[T](ref: typings.blueprintjsCore.refsMod.IRefObject[T]): T | scala.Null = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | scala.Null]
+inline def PortalProvider(hasChildrenOptions: PropsWithChildren[PortalContextOptions]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PortalProvider")(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
 
-inline def hideHotkeysDialog(): scala.Unit = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hideHotkeysDialog")().asInstanceOf[scala.Unit]
+inline def Pre: FC[HTMLPropsHTMLElementIElem] = ^.asInstanceOf[js.Dynamic].selectDynamic("Pre").asInstanceOf[FC[HTMLPropsHTMLElementIElem]]
 
-inline def isPositionHorizontal(position: typings.blueprintjsCore.positionMod.Position): scala.Boolean = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isPositionHorizontal")(position.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def UL: FC[HTMLPropsHTMLUListElement] = ^.asInstanceOf[js.Dynamic].selectDynamic("UL").asInstanceOf[FC[HTMLPropsHTMLUListElement]]
 
-inline def isPositionVertical(position: typings.blueprintjsCore.positionMod.Position): scala.Boolean = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isPositionVertical")(position.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def combineRefs[T](ref1: RefCallback[T], ref2: RefCallback[T]): js.Function1[/* instance */ T | Null, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineRefs")(ref1.asInstanceOf[js.Any], ref2.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* instance */ T | Null, Unit]]
 
-inline def isRefCallback[T /* <: typings.std.HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ scala.Boolean = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")().asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ scala.Boolean]
-inline def isRefCallback[T /* <: typings.std.HTMLElement */](value: typings.blueprintjsCore.refsMod.IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ scala.Boolean = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ scala.Boolean]
+inline def comboMatches(a: IKeyCombo, b: IKeyCombo): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("comboMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def isRefObject[T /* <: typings.std.HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ scala.Boolean = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")().asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ scala.Boolean]
-inline def isRefObject[T /* <: typings.std.HTMLElement */](value: typings.blueprintjsCore.refsMod.IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ scala.Boolean = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ scala.Boolean]
+inline def getKeyCombo(e: KeyboardEvent): IKeyCombo = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyCombo")(e.asInstanceOf[js.Any]).asInstanceOf[IKeyCombo]
 
-inline def parseKeyCombo(combo: java.lang.String): typings.blueprintjsCore.hotkeyParserMod.IKeyCombo = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseKeyCombo")(combo.asInstanceOf[js.Any]).asInstanceOf[typings.blueprintjsCore.hotkeyParserMod.IKeyCombo]
+inline def getKeyComboString(e: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyComboString")(e.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def removeNonHTMLProps(props: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any] = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any]).asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.Any]]
-inline def removeNonHTMLProps(
-  props: org.scalablytyped.runtime.StringDictionary[js.Any],
-  invalidProps: js.Array[java.lang.String]
-): org.scalablytyped.runtime.StringDictionary[js.Any] = (typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any])).asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.Any]]
-inline def removeNonHTMLProps(
-  props: org.scalablytyped.runtime.StringDictionary[js.Any],
-  invalidProps: js.Array[java.lang.String],
-  shouldMerge: scala.Boolean
-): org.scalablytyped.runtime.StringDictionary[js.Any] = (typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.Any]]
-inline def removeNonHTMLProps(
-  props: org.scalablytyped.runtime.StringDictionary[js.Any],
-  invalidProps: scala.Unit,
-  shouldMerge: scala.Boolean
-): org.scalablytyped.runtime.StringDictionary[js.Any] = (typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[org.scalablytyped.runtime.StringDictionary[js.Any]]
+inline def getPositionIgnoreAngles(position: typings.blueprintjsCore.positionMod.Position): left | top | bottom | right = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[left | top | bottom | right]
 
-inline def setHotkeysDialogProps(props: typings.blueprintjsCore.anon.PartialIHotkeysDialogProp): scala.Unit = typings.blueprintjsCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setHotkeysDialogProps")(props.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
+inline def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+inline def getRef[T](ref: RefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+
+inline def hideHotkeysDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideHotkeysDialog")().asInstanceOf[Unit]
+
+inline def isPositionHorizontal(position: typings.blueprintjsCore.positionMod.Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionHorizontal")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def isPositionVertical(position: typings.blueprintjsCore.positionMod.Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionVertical")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def isRefCallback[T](): /* is react.react.RefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")().asInstanceOf[/* is react.react.RefCallback<T> */ Boolean]
+inline def isRefCallback[T](value: Ref[T]): /* is react.react.RefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefCallback<T> */ Boolean]
+
+inline def isRefObject[T](): /* is react.react.RefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")().asInstanceOf[/* is react.react.RefObject<T> */ Boolean]
+inline def isRefObject[T](value: Ref[T]): /* is react.react.RefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefObject<T> */ Boolean]
+
+inline def mergeRefs[T](refs: Ref[T]*): RefCallback[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeRefs")(refs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[RefCallback[T]]
+
+inline def parseKeyCombo(combo: String): IKeyCombo = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeyCombo")(combo.asInstanceOf[js.Any]).asInstanceOf[IKeyCombo]
+
+inline def refHandler[T /* <: HTMLElement */, K /* <: String */](
+  refTargetParent: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ k in K ]: T | null}
+  */ typings.blueprintjsCore.blueprintjsCoreStrings.refHandler & TopLevel[Any],
+  refTargetKey: K
+): RefCallback[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("refHandler")(refTargetParent.asInstanceOf[js.Any], refTargetKey.asInstanceOf[js.Any])).asInstanceOf[RefCallback[T]]
+inline def refHandler[T /* <: HTMLElement */, K /* <: String */](
+  refTargetParent: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ k in K ]: T | null}
+  */ typings.blueprintjsCore.blueprintjsCoreStrings.refHandler & TopLevel[Any],
+  refTargetKey: K,
+  refProp: Ref[T]
+): RefCallback[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("refHandler")(refTargetParent.asInstanceOf[js.Any], refTargetKey.asInstanceOf[js.Any], refProp.asInstanceOf[js.Any])).asInstanceOf[RefCallback[T]]
+
+inline def removeNonHTMLProps(props: StringDictionary[Any]): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+inline def removeNonHTMLProps(props: StringDictionary[Any], invalidProps: js.Array[String]): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+inline def removeNonHTMLProps(props: StringDictionary[Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+inline def removeNonHTMLProps(props: StringDictionary[Any], invalidProps: Unit, shouldMerge: Boolean): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+
+inline def setHotkeysDialogProps(props: PartialIHotkeysDialogProp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHotkeysDialogProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def setRef[T](): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")().asInstanceOf[Unit]
+inline def setRef[T](refTarget: Unit, ref: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(refTarget.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def setRef[T](refTarget: Ref[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(refTarget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setRef[T](refTarget: Ref[T], ref: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRef")(refTarget.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def useHotkeys(keys: js.Array[HotkeyConfig]): UseHotkeysReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useHotkeys")(keys.asInstanceOf[js.Any]).asInstanceOf[UseHotkeysReturnValue]
+inline def useHotkeys(keys: js.Array[HotkeyConfig], options: UseHotkeysOptions): UseHotkeysReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("useHotkeys")(keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseHotkeysReturnValue]

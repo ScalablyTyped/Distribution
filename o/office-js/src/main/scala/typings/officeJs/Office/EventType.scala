@@ -24,7 +24,7 @@ sealed trait EventType extends StObject
 object EventType extends StObject {
   
   /**
-    * A Document.ActiveViewChanged event was raised.
+    * A Document.ActiveViewChanged event was raised in PowerPoint.
     * 
     * @remarks 
     * 
@@ -36,10 +36,12 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.
+    * Occurs when any date or time of the selected appointment or series is changed in Outlook.
+    * **Important**: Only available with task pane implementation.
     * 
+    * To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
-    * {@link https://docs.microsoft.com/javascript/api/outlook/office.appointmenttimechangedeventargs?view=outlook-js-1.7 | Office.AppointmentTimeChangedEventArgs}.
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.appointmenttimechangedeventargs?view=outlook-js-1.7 | Office.AppointmentTimeChangedEventArgs}.
     * 
     * [Api set: Mailbox 1.7]
     */
@@ -49,10 +51,11 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Triggers when an attachment is added to or removed from an item. Supported with task pane only.
+    * Occurs when an attachment is added to or removed from an item. **Important**: Only available with task pane implementation.
     * 
+    * To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
-    * {@link https://docs.microsoft.com/javascript/api/outlook/office.attachmentschangedeventargs?view=outlook-js-1.8 | Office.AttachmentsChangedEventArgs}.
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.attachmentschangedeventargs?view=outlook-js-1.8 | Office.AttachmentsChangedEventArgs}.
     * 
     * [Api set: Mailbox 1.8]
     */
@@ -125,10 +128,11 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
+    * Occurs when the appointment location is changed in Outlook. **Important**: Only available with task pane implementation.
     * 
+    * To add an event handler for the `EnhancedLocationsChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
-    * {@link https://docs.microsoft.com/javascript/api/outlook/office.enhancedlocationschangedeventargs?view=outlook-js-1.8 | Office.EnhancedLocationsChangedEventArgs}.
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocationschangedeventargs?view=outlook-js-1.8 | Office.EnhancedLocationsChangedEventArgs}.
     * 
     * [Api set: Mailbox 1.8]
     */
@@ -138,8 +142,29 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task pane only.
-    * 
+    * Occurs in Outlook when an action is selected on a notification message with a defined
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions | custom action}.
+    * Currently, "Dismiss" is the only supported action that fires this event.
+    *
+    * **Important**: This event is only available with task pane implementation.
+    *
+    * To add an event handler for the `InfobarClicked` event, use the `addHandlerAsync` method of the `Item` object.
+    * The event handler receives an argument of type
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.infobarclickedeventargs?view=outlook-js-1.10 | Office.InfobarClickedEventArgs}.
+    *
+    * [Api set: Mailbox 1.10]
+    */
+  @js.native
+  sealed trait InfobarClicked
+    extends StObject
+       with EventType
+  
+  /**
+    * Occurs when a different Outlook item is selected for viewing while the task pane is pinned.
+    * **Important**: Only available with task pane implementation.
+    *
+    * To add an event handler for the `ItemChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
+    *
     * [Api set: Mailbox 1.5]
     */
   @js.native
@@ -172,10 +197,12 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.
+    * Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
+    * **Important**: Only available with task pane implementation.
     * 
+    * To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
-    * {@link https://docs.microsoft.com/javascript/api/outlook/office.recipientschangedeventargs?view=outlook-js-1.7 | Office.RecipientsChangedEventArgs}.
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.recipientschangedeventargs?view=outlook-js-1.7 | Office.RecipientsChangedEventArgs}.
     * 
     * [Api set: Mailbox 1.7]
     */
@@ -185,10 +212,12 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
+    * Occurs when the recurrence pattern of the selected series is changed in Outlook.
+    * **Important**: Only available with task pane implementation.
     * 
+    * To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
-    * {@link https://docs.microsoft.com/javascript/api/outlook/office.recurrencechangedeventargs?view=outlook-js-1.7 | Office.RecurrenceChangedEventArgs}.
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.recurrencechangedeventargs?view=outlook-js-1.7 | Office.RecurrenceChangedEventArgs}.
     * 
     * [Api set: Mailbox 1.7]
     */

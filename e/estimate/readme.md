@@ -10,10 +10,10 @@ Calculate remaining reading time estimates in real-time
 | ------------------ | :-------------: |
 | Full name          | estimate |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 773 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 86.0 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/bevacqua/estimate)

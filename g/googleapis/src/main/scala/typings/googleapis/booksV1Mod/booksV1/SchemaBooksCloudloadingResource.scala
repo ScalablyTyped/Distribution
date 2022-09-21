@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaBooksCloudloadingResource extends StObject {
   
-  var author: js.UndefOr[String] = js.undefined
+  var author: js.UndefOr[String | Null] = js.undefined
   
-  var processingState: js.UndefOr[String] = js.undefined
+  var processingState: js.UndefOr[String | Null] = js.undefined
   
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
   
-  var volumeId: js.UndefOr[String] = js.undefined
+  var volumeId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBooksCloudloadingResource {
   
@@ -25,17 +25,25 @@ object SchemaBooksCloudloadingResource {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
+    inline def setAuthorNull: Self = StObject.set(x, "author", null)
+    
     inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
     inline def setProcessingState(value: String): Self = StObject.set(x, "processingState", value.asInstanceOf[js.Any])
+    
+    inline def setProcessingStateNull: Self = StObject.set(x, "processingState", null)
     
     inline def setProcessingStateUndefined: Self = StObject.set(x, "processingState", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeIdNull: Self = StObject.set(x, "volumeId", null)
     
     inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }

@@ -10,10 +10,10 @@ object launchMod {
   
   @JSImport("material-ui/svg-icons/action/launch", JSImport.Default)
   @js.native
-  class default () extends ActionLaunch
+  open class default () extends ActionLaunch
   
   @JSImport("material-ui/svg-icons/action/launch", "ActionLaunch")
   @js.native
-  class ActionLaunch ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionLaunch ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -11,13 +11,13 @@ trait SVGLinearGradientElement
      with SVGGradientElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -32,11 +32,15 @@ trait SVGLinearGradientElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val x1: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val x2: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val y1: SVGAnimatedLength = js.native
   
+  /* standard dom */
   val y2: SVGAnimatedLength = js.native
 }

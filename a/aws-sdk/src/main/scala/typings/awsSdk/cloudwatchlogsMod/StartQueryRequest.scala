@@ -59,7 +59,7 @@ object StartQueryRequest {
     
     inline def setLogGroupNamesUndefined: Self = StObject.set(x, "logGroupNames", js.undefined)
     
-    inline def setLogGroupNamesVarargs(value: LogGroupName*): Self = StObject.set(x, "logGroupNames", js.Array(value :_*))
+    inline def setLogGroupNamesVarargs(value: LogGroupName*): Self = StObject.set(x, "logGroupNames", js.Array(value*))
     
     inline def setQueryString(value: QueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     

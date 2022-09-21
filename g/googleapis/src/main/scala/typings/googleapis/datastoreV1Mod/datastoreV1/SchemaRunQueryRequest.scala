@@ -4,20 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request for Datastore.RunQuery.
-  */
 trait SchemaRunQueryRequest extends StObject {
   
   /**
-    * The GQL query to run.
+    * The ID of the database against which to make the request. '(default)' is not allowed; please use empty string '' to refer the default database.
+    */
+  var databaseId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The GQL query to run. This query must be a non-aggregation query.
     */
   var gqlQuery: js.UndefOr[SchemaGqlQuery] = js.undefined
   
   /**
-    * Entities are partitioned into subsets, identified by a partition ID.
-    * Queries are scoped to a single partition. This partition ID is normalized
-    * with the standard default context partition ID.
+    * Entities are partitioned into subsets, identified by a partition ID. Queries are scoped to a single partition. This partition ID is normalized with the standard default context partition ID.
     */
   var partitionId: js.UndefOr[SchemaPartitionId] = js.undefined
   
@@ -39,6 +39,12 @@ object SchemaRunQueryRequest {
   }
   
   extension [Self <: SchemaRunQueryRequest](x: Self) {
+    
+    inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseIdNull: Self = StObject.set(x, "databaseId", null)
+    
+    inline def setDatabaseIdUndefined: Self = StObject.set(x, "databaseId", js.undefined)
     
     inline def setGqlQuery(value: SchemaGqlQuery): Self = StObject.set(x, "gqlQuery", value.asInstanceOf[js.Any])
     

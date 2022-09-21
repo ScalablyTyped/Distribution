@@ -6,7 +6,6 @@ import typings.nise.anon.Abort
 import typings.nise.anon.PartialFakeServerOptions
 import typings.std.Document
 import typings.std.Event
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("nise", "fakeXhr.FakeXMLHttpRequest")
     @js.native
-    class FakeXMLHttpRequestCls ()
+    open class FakeXMLHttpRequestCls ()
       extends StObject
          with FakeXMLHttpRequest
     
@@ -139,7 +138,7 @@ object mod {
       */
     def respond(): Unit = js.native
     
-    def respondWith(args: js.Any*): Unit = js.native
+    def respondWith(args: Any*): Unit = js.native
     /**
       * Causes the server to respond to any request not matched by another response with the provided data. The default catch-all response is [404, {}, ""].
       * A String representing the response body
@@ -171,26 +170,26 @@ object mod {
       * Responds to all method requests to the given URL with the given response.
       * method is an HTTP verb.
       */
-    def respondWith(method: String, url: String, response: js.Array[js.Any]): Unit = js.native
+    def respondWith(method: String, url: String, response: js.Array[Any]): Unit = js.native
     /**
       * Responds to all method requests to URLs matching the regular expression.
       */
-    def respondWith(method: String, url: RegExp, body: String): Unit = js.native
+    def respondWith(method: String, url: js.RegExp, body: String): Unit = js.native
     /**
       * Responds to all method requests to URLs matching the regular expression.
       */
-    def respondWith(method: String, url: RegExp, fn: js.Function1[/* xhr */ FakeXMLHttpRequest, Unit]): Unit = js.native
+    def respondWith(method: String, url: js.RegExp, fn: js.Function1[/* xhr */ FakeXMLHttpRequest, Unit]): Unit = js.native
     /**
       * Responds to all method requests to URLs matching the regular expression.
       */
-    def respondWith(method: String, url: RegExp, response: js.Array[js.Any]): Unit = js.native
+    def respondWith(method: String, url: js.RegExp, response: js.Array[Any]): Unit = js.native
     /**
       * Causes the server to respond to any request not matched by another response with the provided data. The default catch-all response is [404, {}, ""].
       * Default status is 200 and default headers are none.
       * When the response is a Function, it will be passed the request object. You must manually call respond on it to complete the request.
       * @param response An Array with status, headers and response body, e.g. [200, { "Content-Type": "text/html", "Content-Length": 2 }, "OK"]
       */
-    def respondWith(response: js.Array[js.Any]): Unit = js.native
+    def respondWith(response: js.Array[Any]): Unit = js.native
     /**
       * Responds to all requests to given URL, e.g. /posts/1.
       */
@@ -202,22 +201,22 @@ object mod {
     /**
       * Responds to all requests to given URL, e.g. /posts/1.
       */
-    def respondWith(url: String, response: js.Array[js.Any]): Unit = js.native
+    def respondWith(url: String, response: js.Array[Any]): Unit = js.native
     /**
       * URL may be a regular expression, e.g. /\\/post\\//\\d+
       * If the response is a Function, it will be passed any capture groups from the regular expression along with the XMLHttpRequest object:
       */
-    def respondWith(url: RegExp, body: String): Unit = js.native
+    def respondWith(url: js.RegExp, body: String): Unit = js.native
     /**
       * URL may be a regular expression, e.g. /\\/post\\//\\d+
       * If the response is a Function, it will be passed any capture groups from the regular expression along with the XMLHttpRequest object:
       */
-    def respondWith(url: RegExp, fn: js.Function1[/* xhr */ FakeXMLHttpRequest, Unit]): Unit = js.native
+    def respondWith(url: js.RegExp, fn: js.Function1[/* xhr */ FakeXMLHttpRequest, Unit]): Unit = js.native
     /**
       * URL may be a regular expression, e.g. /\\/post\\//\\d+
       * If the response is a Function, it will be passed any capture groups from the regular expression along with the XMLHttpRequest object:
       */
-    def respondWith(url: RegExp, response: js.Array[js.Any]): Unit = js.native
+    def respondWith(url: js.RegExp, response: js.Array[Any]): Unit = js.native
     
     def restore(): Unit = js.native
     
@@ -228,21 +227,21 @@ object mod {
   
   trait FakeUploadProgress extends StObject {
     
-    def addEventListener(event: String, listener: js.Function1[/* e */ Event, js.Any]): Unit
+    def addEventListener(event: String, listener: js.Function1[/* e */ Event, Any]): Unit
     
     def dispatchEvent(event: Event): Unit
     
     var eventListeners: Abort
     
-    def removeEventListener(event: String, listener: js.Function1[/* e */ Event, js.Any]): Unit
+    def removeEventListener(event: String, listener: js.Function1[/* e */ Event, Any]): Unit
   }
   object FakeUploadProgress {
     
     inline def apply(
-      addEventListener: (String, js.Function1[/* e */ Event, js.Any]) => Unit,
+      addEventListener: (String, js.Function1[/* e */ Event, Any]) => Unit,
       dispatchEvent: Event => Unit,
       eventListeners: Abort,
-      removeEventListener: (String, js.Function1[/* e */ Event, js.Any]) => Unit
+      removeEventListener: (String, js.Function1[/* e */ Event, Any]) => Unit
     ): FakeUploadProgress = {
       val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), dispatchEvent = js.Any.fromFunction1(dispatchEvent), eventListeners = eventListeners.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener))
       __obj.asInstanceOf[FakeUploadProgress]
@@ -250,13 +249,13 @@ object mod {
     
     extension [Self <: FakeUploadProgress](x: Self) {
       
-      inline def setAddEventListener(value: (String, js.Function1[/* e */ Event, js.Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (String, js.Function1[/* e */ Event, Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
       inline def setDispatchEvent(value: Event => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
       
       inline def setEventListeners(value: Abort): Self = StObject.set(x, "eventListeners", value.asInstanceOf[js.Any])
       
-      inline def setRemoveEventListener(value: (String, js.Function1[/* e */ Event, js.Any]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+      inline def setRemoveEventListener(value: (String, js.Function1[/* e */ Event, Any]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     }
   }
   
@@ -302,7 +301,7 @@ object mod {
     /**
       * All response headers as an object.
       */
-    def getAllResponseHeaders(): js.Any = js.native
+    def getAllResponseHeaders(): Any = js.native
     
     /**
       * The value of the given response header, if the request has been responded to (see respond).
@@ -342,14 +341,14 @@ object mod {
     /**
       * An object of all request headers, i.e.:
       */
-    var requestHeaders: js.Any = js.native
+    var requestHeaders: Any = js.native
     
     /**
       * Calls the above three methods.
       */
     def respond(status: Double): Unit = js.native
-    def respond(status: Double, headers: js.Any): Unit = js.native
-    def respond(status: Double, headers: js.Any, body: String): Unit = js.native
+    def respond(status: Double, headers: Any): Unit = js.native
+    def respond(status: Double, headers: Any, body: String): Unit = js.native
     def respond(status: Double, headers: Unit, body: String): Unit = js.native
     
     /**
@@ -367,7 +366,7 @@ object mod {
       * Sets response headers (e.g. { "Content-Type": "text/html", ... }, updates the readyState property and fires onreadystatechange.
       * @param headers
       */
-    def setResponseHeaders(headers: js.Any): Unit = js.native
+    def setResponseHeaders(headers: Any): Unit = js.native
     
     /**
       * The request’s status code.

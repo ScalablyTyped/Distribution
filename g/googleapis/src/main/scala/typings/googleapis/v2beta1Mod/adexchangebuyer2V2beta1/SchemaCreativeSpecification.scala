@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents information for a creative that is associated with a
-  * Programmatic Guaranteed/Preferred Deal in Ad Manager.
-  */
 trait SchemaCreativeSpecification extends StObject {
   
   /**
@@ -33,7 +29,7 @@ object SchemaCreativeSpecification {
     
     inline def setCreativeCompanionSizesUndefined: Self = StObject.set(x, "creativeCompanionSizes", js.undefined)
     
-    inline def setCreativeCompanionSizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "creativeCompanionSizes", js.Array(value :_*))
+    inline def setCreativeCompanionSizesVarargs(value: SchemaAdSize*): Self = StObject.set(x, "creativeCompanionSizes", js.Array(value*))
     
     inline def setCreativeSize(value: SchemaAdSize): Self = StObject.set(x, "creativeSize", value.asInstanceOf[js.Any])
     

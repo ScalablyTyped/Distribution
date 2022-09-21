@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GameSessionConnectionInfo extends StObject {
   
   /**
-    * DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
+    * The DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
     */
   var DnsName: js.UndefOr[typings.awsSdk.gameliftMod.DnsName] = js.undefined
   
   /**
-    * Amazon Resource Name (ARN) that is assigned to a game session and uniquely identifies it.
+    * A unique identifier for the game session. Use the game session ID.
     */
   var GameSessionArn: js.UndefOr[ArnStringModel] = js.undefined
   
   /**
-    * IP address of the instance that is running the game session. When connecting to a Amazon GameLift game server, a client needs to reference an IP address (or DNS name) and port number.
+    * The IP address of the game session. To connect to a GameLift game server, an app needs both the IP address and port number.
     */
   var IpAddress: js.UndefOr[StringModel] = js.undefined
   
@@ -27,7 +27,7 @@ trait GameSessionConnectionInfo extends StObject {
   var MatchedPlayerSessions: js.UndefOr[MatchedPlayerSessionList] = js.undefined
   
   /**
-    * Port number for the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number.
+    * The port number for the game session. To connect to a GameLift game server, an app needs both the IP address and port number.
     */
   var Port: js.UndefOr[PositiveInteger] = js.undefined
 }
@@ -56,7 +56,7 @@ object GameSessionConnectionInfo {
     
     inline def setMatchedPlayerSessionsUndefined: Self = StObject.set(x, "MatchedPlayerSessions", js.undefined)
     
-    inline def setMatchedPlayerSessionsVarargs(value: MatchedPlayerSession*): Self = StObject.set(x, "MatchedPlayerSessions", js.Array(value :_*))
+    inline def setMatchedPlayerSessionsVarargs(value: MatchedPlayerSession*): Self = StObject.set(x, "MatchedPlayerSessions", js.Array(value*))
     
     inline def setPort(value: PositiveInteger): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     

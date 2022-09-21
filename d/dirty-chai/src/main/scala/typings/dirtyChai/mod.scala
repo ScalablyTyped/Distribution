@@ -59,7 +59,7 @@ object mod extends Shortcut {
       trait PromisedAssertion
         extends StObject
            with Eventually
-           with PromiseLike[js.Any] {
+           with PromiseLike[Any] {
         
         def apply(): PromisedAssertion = js.native
         

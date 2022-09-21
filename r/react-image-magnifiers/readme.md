@@ -10,10 +10,10 @@ A collection of responsive, image magnifying React components for mouse and touc
 | ------------------ | :-------------: |
 | Full name          | react-image-magnifiers |
 | Keywords           | react, image, photo, picture, magnify, magnifying glass, magnifier, zoom, enlarge, responsive, touch, ecommerce, product |
-| # releases         | 21 |
-| # dependents       | 0 |
-| # downloads        | 131573 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 41295.666666666664 |
+| # stars            | 280.0 |
 
 ## Links
 - [Homepage](https://adamrisberg.github.io/react-image-magnifiers)

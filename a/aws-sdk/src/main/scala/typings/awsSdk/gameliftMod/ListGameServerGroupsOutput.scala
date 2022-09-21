@@ -29,7 +29,7 @@ object ListGameServerGroupsOutput {
     
     inline def setGameServerGroupsUndefined: Self = StObject.set(x, "GameServerGroups", js.undefined)
     
-    inline def setGameServerGroupsVarargs(value: GameServerGroup*): Self = StObject.set(x, "GameServerGroups", js.Array(value :_*))
+    inline def setGameServerGroupsVarargs(value: GameServerGroup*): Self = StObject.set(x, "GameServerGroups", js.Array(value*))
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

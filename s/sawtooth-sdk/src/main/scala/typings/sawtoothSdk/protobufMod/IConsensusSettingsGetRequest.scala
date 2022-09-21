@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IConsensusSettingsGetRequest extends StObject {
   
   /** ConsensusSettingsGetRequest blockId */
-  var blockId: js.UndefOr[Uint8Array | Null] = js.undefined
+  var blockId: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   
   /** ConsensusSettingsGetRequest keys */
   var keys: js.UndefOr[js.Array[String] | Null] = js.undefined
@@ -22,7 +21,7 @@ object IConsensusSettingsGetRequest {
   
   extension [Self <: IConsensusSettingsGetRequest](x: Self) {
     
-    inline def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
+    inline def setBlockId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     
     inline def setBlockIdNull: Self = StObject.set(x, "blockId", null)
     
@@ -34,6 +33,6 @@ object IConsensusSettingsGetRequest {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
   }
 }

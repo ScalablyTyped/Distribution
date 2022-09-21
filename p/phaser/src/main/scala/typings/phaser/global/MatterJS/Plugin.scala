@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.Plugin")
 @js.native
-class Plugin ()
+open class Plugin ()
   extends StObject
      with typings.phaser.MatterJS.Plugin {
   

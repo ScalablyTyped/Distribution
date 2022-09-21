@@ -1,5 +1,6 @@
 package typings.recharts.mod
 
+import typings.react.mod.ReactNode
 import typings.recharts.rechartsNumbers.`100`
 import typings.recharts.rechartsNumbers.`200`
 import typings.recharts.rechartsNumbers.`300`
@@ -37,6 +38,8 @@ trait TextProps extends StObject {
   var baselineShift: js.UndefOr[String] = js.undefined
   
   var capHeight: js.UndefOr[String] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -97,8 +100,6 @@ trait TextProps extends StObject {
   var fontWeight: js.UndefOr[
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
-  
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -202,6 +203,10 @@ object TextProps {
     inline def setCapHeight(value: String): Self = StObject.set(x, "capHeight", value.asInstanceOf[js.Any])
     
     inline def setCapHeightUndefined: Self = StObject.set(x, "capHeight", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -320,10 +325,6 @@ object TextProps {
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
-    
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

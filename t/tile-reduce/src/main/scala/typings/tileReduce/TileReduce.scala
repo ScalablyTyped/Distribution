@@ -35,7 +35,7 @@ object TileReduce {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setMaxrate(value: Double): Self = StObject.set(x, "maxrate", value.asInstanceOf[js.Any])
       

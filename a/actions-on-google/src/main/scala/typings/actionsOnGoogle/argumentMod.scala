@@ -10,14 +10,14 @@ object argumentMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/argument", "Arguments")
   @js.native
   /** @hidden */
-  class Arguments ()
+  open class Arguments ()
     extends typings.actionsOnGoogle.argumentArgumentMod.Arguments {
     def this(raw: js.Array[GoogleActionsV2Argument]) = this()
   }
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/argument", "Parsed")
   @js.native
-  class Parsed protected ()
+  open class Parsed protected ()
     extends typings.actionsOnGoogle.argumentArgumentMod.Parsed {
     /** @hidden */
     def this(raw: js.Array[GoogleActionsV2Argument]) = this()
@@ -25,7 +25,7 @@ object argumentMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/argument", "Raw")
   @js.native
-  class Raw protected ()
+  open class Raw protected ()
     extends typings.actionsOnGoogle.argumentArgumentMod.Raw {
     /** @hidden */
     def this(list: js.Array[GoogleActionsV2Argument]) = this()
@@ -33,7 +33,7 @@ object argumentMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/argument", "Status")
   @js.native
-  class Status protected ()
+  open class Status protected ()
     extends typings.actionsOnGoogle.argumentArgumentMod.Status {
     /** @hidden */
     def this(raw: js.Array[GoogleActionsV2Argument]) = this()

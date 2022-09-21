@@ -1,7 +1,6 @@
 package typings.fabric.fabricImplMod
 
 import typings.fabric.anon.Tl
-import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,17 +48,6 @@ trait IStaticCanvasOptions extends StObject {
     * @type fabric.Object
     */
   var clipPath: js.UndefOr[Object] = js.undefined
-  
-  /**
-    * Function that determines clipping of entire canvas area
-    * Being passed context as first argument.
-    * If you are using code minification, ctx argument can be minified/manglied you should use
-    * as a workaround `var ctx = arguments[0];` in the function;
-    * See clipping canvas area in {@link https://github.com/kangax/fabric.js/wiki/FAQ}
-    * @deprecated since 2.0.0
-    * @type Function
-    */
-  var clipTo: js.UndefOr[js.Function1[/* context */ CanvasRenderingContext2D, Unit]] = js.undefined
   
   /**
     * Indicates whether object controls (borders/controls) are rendered above overlay image
@@ -193,10 +181,6 @@ object IStaticCanvasOptions {
     
     inline def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
     
-    inline def setClipTo(value: /* context */ CanvasRenderingContext2D => Unit): Self = StObject.set(x, "clipTo", js.Any.fromFunction1(value))
-    
-    inline def setClipToUndefined: Self = StObject.set(x, "clipTo", js.undefined)
-    
     inline def setControlsAboveOverlay(value: Boolean): Self = StObject.set(x, "controlsAboveOverlay", value.asInstanceOf[js.Any])
     
     inline def setControlsAboveOverlayUndefined: Self = StObject.set(x, "controlsAboveOverlay", js.undefined)
@@ -245,7 +229,7 @@ object IStaticCanvasOptions {
     
     inline def setViewportTransformUndefined: Self = StObject.set(x, "viewportTransform", js.undefined)
     
-    inline def setViewportTransformVarargs(value: Double*): Self = StObject.set(x, "viewportTransform", js.Array(value :_*))
+    inline def setViewportTransformVarargs(value: Double*): Self = StObject.set(x, "viewportTransform", js.Array(value*))
     
     inline def setVptCoords(value: Tl): Self = StObject.set(x, "vptCoords", value.asInstanceOf[js.Any])
     

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "BooleanType")
 @js.native
-class BooleanType ()
-  extends Type_[Boolean, Boolean, js.Any] {
+open class BooleanType () extends Type_[Boolean, Boolean, Any] {
   
   /**
     * @since 1.0.0

@@ -61,7 +61,7 @@ object htmlMod {
       
       inline def setIgnoreTagsUndefined: Self = StObject.set(x, "ignoreTags", js.undefined)
       
-      inline def setIgnoreTagsVarargs(value: String*): Self = StObject.set(x, "ignoreTags", js.Array(value :_*))
+      inline def setIgnoreTagsVarargs(value: String*): Self = StObject.set(x, "ignoreTags", js.Array(value*))
     }
   }
 }

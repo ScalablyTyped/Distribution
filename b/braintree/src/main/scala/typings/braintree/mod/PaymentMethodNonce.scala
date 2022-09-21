@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("braintree", "PaymentMethodNonce")
 @js.native
-class PaymentMethodNonce () extends StObject {
+open class PaymentMethodNonce () extends StObject {
   
   var default: js.UndefOr[Boolean] = js.native
   

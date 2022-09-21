@@ -18,7 +18,7 @@ trait WebApiOffline extends StObject {
     * @returns On success, returns a promise object containing the attributes specified earlier in the description of the successCallback parameter.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/createrecord External Link: createRecord (Client API reference)}
     */
-  def createRecord(entityLogicalName: String, record: js.Any): PromiseLike[CreateResponse] = js.native
+  def createRecord(entityLogicalName: String, record: Any): PromiseLike[CreateResponse] = js.native
   
   /**
     * Deletes an entity record.
@@ -69,8 +69,8 @@ trait WebApiOffline extends StObject {
     * @returns On success, returns a promise containing a JSON object with the retrieved attributes and their values.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/retrieverecord External Link: retrieveRecord (Client API reference)}
     */
-  def retrieveRecord(entityLogicalName: String, id: String): PromiseLike[js.Any] = js.native
-  def retrieveRecord(entityLogicalName: String, id: String, options: String): PromiseLike[js.Any] = js.native
+  def retrieveRecord(entityLogicalName: String, id: String): PromiseLike[Any] = js.native
+  def retrieveRecord(entityLogicalName: String, id: String, options: String): PromiseLike[Any] = js.native
   
   /**
     * Updates an entity record.
@@ -80,5 +80,5 @@ trait WebApiOffline extends StObject {
     * @returns On success, returns a promise object containing the attributes specified earlier in the description of the successCallback parameter.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/updaterecord External Link: updateRecord (Client API reference)}
     */
-  def updateRecord(entityLogicalName: String, id: String, data: js.Any): PromiseLike[js.Any] = js.native
+  def updateRecord(entityLogicalName: String, id: String, data: Any): PromiseLike[Any] = js.native
 }

@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "Card")
 @js.native
-class Card protected ()
-  extends Component[Modifier, js.Any] {
+open class Card protected () extends Component[Modifier, Any] {
   def this(props: HTMLAttributesidclassName & Modifier) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & Modifier, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & Modifier, context: Any) = this()
 }

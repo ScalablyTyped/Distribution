@@ -14,7 +14,7 @@ object displayPassPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/displayPassPostProcess", "DisplayPassPostProcess")
   @js.native
-  class DisplayPassPostProcess protected () extends PostProcess {
+  open class DisplayPassPostProcess protected () extends PostProcess {
     /**
       * Creates the DisplayPassPostProcess
       * @param name The name of the effect.
@@ -116,7 +116,13 @@ object displayPassPostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[DisplayPassPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[DisplayPassPostProcess]]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[DisplayPassPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[DisplayPassPostProcess]]
   }
 }

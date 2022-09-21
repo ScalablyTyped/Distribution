@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isBrowserMod {
   
-  @JSImport("@ant-design/pro-utils/lib/isBrowser", JSImport.Namespace)
+  @JSImport("@ant-design/pro-utils/es/isBrowser", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
+  inline def isBrowser(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowser")().asInstanceOf[Boolean]
 }

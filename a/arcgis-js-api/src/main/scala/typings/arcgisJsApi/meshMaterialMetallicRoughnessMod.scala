@@ -22,7 +22,7 @@ object meshMaterialMetallicRoughnessMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterialMetallicRoughness.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with MeshMaterialMetallicRoughness {
     def this(properties: MeshMaterialMetallicRoughnessProperties) = this()

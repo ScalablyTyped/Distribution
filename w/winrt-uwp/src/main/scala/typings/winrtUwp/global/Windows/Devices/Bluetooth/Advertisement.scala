@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags
 import typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus
 import typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType
@@ -18,7 +17,7 @@ object Advertisement {
   @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement")
   @js.native
   /** Creates a new BluetoothLEAdvertisement object. */
-  class BluetoothLEAdvertisement ()
+  open class BluetoothLEAdvertisement ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement {
     
@@ -71,7 +70,7 @@ object Advertisement {
   @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementBytePattern")
   @js.native
   /** Create a new BluetoothLEAdvertisementBytePattern object. */
-  class BluetoothLEAdvertisementBytePattern ()
+  open class BluetoothLEAdvertisementBytePattern ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementBytePattern {
     /**
@@ -99,7 +98,7 @@ object Advertisement {
   @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataSection")
   @js.native
   /** Creates a new BluetoothLEAdvertisementDataSection object. */
-  class BluetoothLEAdvertisementDataSection ()
+  open class BluetoothLEAdvertisementDataSection ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataSection {
     /**
@@ -289,7 +288,7 @@ object Advertisement {
   @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFilter")
   @js.native
   /** Creates a new BluetoothLEAdvertisementFilter object. */
-  class BluetoothLEAdvertisementFilter ()
+  open class BluetoothLEAdvertisementFilter ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFilter {
     
@@ -331,7 +330,7 @@ object Advertisement {
   @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisher")
   @js.native
   /** Creates a new BluetoothLEAdvertisementPublisher object. */
-  class BluetoothLEAdvertisementPublisher ()
+  open class BluetoothLEAdvertisementPublisher ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisher {
     /**
@@ -405,7 +404,7 @@ object Advertisement {
     
     /** Gets the timestamp when the Received event occurred. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   /** Specifies the different types of Bluetooth LE advertisement payloads. */
@@ -433,7 +432,7 @@ object Advertisement {
   @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcher")
   @js.native
   /** Creates a new BluetoothLEAdvertisementWatcher object. */
-  class BluetoothLEAdvertisementWatcher ()
+  open class BluetoothLEAdvertisementWatcher ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcher {
     /**
@@ -480,7 +479,7 @@ object Advertisement {
   @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEManufacturerData")
   @js.native
   /** Creates a new BluetoothLEManufacturerData object. */
-  class BluetoothLEManufacturerData ()
+  open class BluetoothLEManufacturerData ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEManufacturerData {
     /**

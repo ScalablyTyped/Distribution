@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mathml-tag-names" : "3.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mathml-tag-names" : "3.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

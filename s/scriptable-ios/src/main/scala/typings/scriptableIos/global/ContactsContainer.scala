@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ContactsContainer")
 @js.native
-class ContactsContainer ()
+open class ContactsContainer ()
   extends StObject
      with typings.scriptableIos.ContactsContainer {
   

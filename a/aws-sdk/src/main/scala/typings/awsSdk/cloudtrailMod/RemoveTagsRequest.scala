@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoveTagsRequest extends StObject {
   
   /**
-    * Specifies the ARN of the trail from which tags should be removed. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
+    * Specifies the ARN of the trail or event data store from which tags should be removed.  Example trail ARN format: arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail  Example event data store ARN format: arn:aws:cloudtrail:us-east-2:12345678910:eventdatastore/EXAMPLE-f852-4e8f-8bd1-bcf6cEXAMPLE 
     */
   var ResourceId: String
   
   /**
     * Specifies a list of tags to be removed.
     */
-  var TagsList: js.UndefOr[typings.awsSdk.cloudtrailMod.TagsList] = js.undefined
+  var TagsList: typings.awsSdk.cloudtrailMod.TagsList
 }
 object RemoveTagsRequest {
   
-  inline def apply(ResourceId: String): RemoveTagsRequest = {
-    val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
+  inline def apply(ResourceId: String, TagsList: TagsList): RemoveTagsRequest = {
+    val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], TagsList = TagsList.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveTagsRequest]
   }
   
@@ -29,8 +29,6 @@ object RemoveTagsRequest {
     
     inline def setTagsList(value: TagsList): Self = StObject.set(x, "TagsList", value.asInstanceOf[js.Any])
     
-    inline def setTagsListUndefined: Self = StObject.set(x, "TagsList", js.undefined)
-    
-    inline def setTagsListVarargs(value: Tag*): Self = StObject.set(x, "TagsList", js.Array(value :_*))
+    inline def setTagsListVarargs(value: Tag*): Self = StObject.set(x, "TagsList", js.Array(value*))
   }
 }

@@ -54,6 +54,6 @@ object ElevationQueryResult {
     
     inline def setSampleInfoUndefined: Self = StObject.set(x, "sampleInfo", js.undefined)
     
-    inline def setSampleInfoVarargs(value: ElevationQueryResultSampleInfo*): Self = StObject.set(x, "sampleInfo", js.Array(value :_*))
+    inline def setSampleInfoVarargs(value: ElevationQueryResultSampleInfo*): Self = StObject.set(x, "sampleInfo", js.Array(value*))
   }
 }

@@ -8,22 +8,22 @@ object anon {
   
   trait Cb extends StObject {
     
-    var cb: js.Any
+    var cb: Any
     
-    var opts: js.Any
+    var opts: Any
   }
   object Cb {
     
-    inline def apply(cb: js.Any, opts: js.Any): Cb = {
+    inline def apply(cb: Any, opts: Any): Cb = {
       val __obj = js.Dynamic.literal(cb = cb.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cb]
     }
     
     extension [Self <: Cb](x: Self) {
       
-      inline def setCb(value: js.Any): Self = StObject.set(x, "cb", value.asInstanceOf[js.Any])
+      inline def setCb(value: Any): Self = StObject.set(x, "cb", value.asInstanceOf[js.Any])
       
-      inline def setOpts(value: js.Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -31,11 +31,11 @@ object anon {
     
     var config: Cookies
     
-    var name: js.Any
+    var name: Any
   }
   object Config {
     
-    inline def apply(config: Cookies, name: js.Any): Config = {
+    inline def apply(config: Cookies, name: Any): Config = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
@@ -44,7 +44,7 @@ object anon {
       
       inline def setConfig(value: Cookies): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,13 +77,13 @@ object anon {
       
       inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      inline def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+      inline def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value*))
       
       inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
@@ -101,7 +101,7 @@ object anon {
       
       inline def setReplyCookiesUndefined: Self = StObject.set(x, "replyCookies", js.undefined)
       
-      inline def setReplyCookiesVarargs(value: String*): Self = StObject.set(x, "replyCookies", js.Array(value :_*))
+      inline def setReplyCookiesVarargs(value: String*): Self = StObject.set(x, "replyCookies", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

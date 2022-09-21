@@ -12,10 +12,10 @@ trait AttachmentInfoConstructor
      with /**
   * The `AttachmentInfo` class returns information about attachments associated with a feature.
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html)
   */
 Instantiable0[AttachmentInfo]
      with Instantiable1[/* properties */ AttachmentInfoProperties, AttachmentInfo] {
   
-  def fromJSON(json: js.Any): AttachmentInfo = js.native
+  def fromJSON(json: Any): AttachmentInfo = js.native
 }

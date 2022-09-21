@@ -63,7 +63,7 @@ object Environment {
     
     inline def setDimensionValueUndefined: Self = StObject.set(x, "dimensionValue", js.undefined)
     
-    inline def setDimensionValueVarargs(value: EnvironmentDimensionValueEntry*): Self = StObject.set(x, "dimensionValue", js.Array(value :_*))
+    inline def setDimensionValueVarargs(value: EnvironmentDimensionValueEntry*): Self = StObject.set(x, "dimensionValue", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -97,6 +97,6 @@ object Environment {
     
     inline def setShardSummariesUndefined: Self = StObject.set(x, "shardSummaries", js.undefined)
     
-    inline def setShardSummariesVarargs(value: ShardSummary*): Self = StObject.set(x, "shardSummaries", js.Array(value :_*))
+    inline def setShardSummariesVarargs(value: ShardSummary*): Self = StObject.set(x, "shardSummaries", js.Array(value*))
   }
 }

@@ -17,7 +17,7 @@ trait ListCachePoliciesRequest extends StObject {
   var MaxItems: js.UndefOr[String] = js.undefined
   
   /**
-    * A filter to return only the specified kinds of cache policies. Valid values are:    managed – Returns only the managed policies created by AWS.    custom – Returns only the custom policies created in your AWS account.  
+    * A filter to return only the specified kinds of cache policies. Valid values are:    managed – Returns only the managed policies created by Amazon Web Services.    custom – Returns only the custom policies created in your Amazon Web Services account.  
     */
   var Type: js.UndefOr[CachePolicyType] = js.undefined
 }

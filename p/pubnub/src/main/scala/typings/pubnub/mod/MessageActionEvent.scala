@@ -1,6 +1,5 @@
 package typings.pubnub.mod
 
-import typings.pubnub.anon.DataEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,9 @@ trait MessageActionEvent extends StObject {
   
   var channel: String
   
-  var message: DataEvent
+  var data: MessageAction
+  
+  var event: String
   
   var publisher: String
   
@@ -19,8 +20,8 @@ trait MessageActionEvent extends StObject {
 }
 object MessageActionEvent {
   
-  inline def apply(channel: String, message: DataEvent, publisher: String, timetoken: String): MessageActionEvent = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
+  inline def apply(channel: String, data: MessageAction, event: String, publisher: String, timetoken: String): MessageActionEvent = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageActionEvent]
   }
   
@@ -28,7 +29,9 @@ object MessageActionEvent {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setMessage(value: DataEvent): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setData(value: MessageAction): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     

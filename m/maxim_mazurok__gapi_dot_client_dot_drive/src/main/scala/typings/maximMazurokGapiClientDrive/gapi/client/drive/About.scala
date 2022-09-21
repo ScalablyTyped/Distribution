@@ -25,7 +25,7 @@ trait About extends StObject {
   var exportFormats: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: std.Array<string>}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
   ] = js.undefined
   
   /** The currently supported folder colors as RGB hex strings. */
@@ -35,7 +35,7 @@ trait About extends StObject {
   var importFormats: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: std.Array<string>}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
   ] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "drive#about". */
@@ -45,7 +45,7 @@ trait About extends StObject {
   var maxImportSizes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
   ] = js.undefined
   
   /** The maximum upload size in bytes. */
@@ -85,12 +85,12 @@ object About {
     
     inline def setDriveThemesUndefined: Self = StObject.set(x, "driveThemes", js.undefined)
     
-    inline def setDriveThemesVarargs(value: BackgroundImageLink*): Self = StObject.set(x, "driveThemes", js.Array(value :_*))
+    inline def setDriveThemesVarargs(value: BackgroundImageLink*): Self = StObject.set(x, "driveThemes", js.Array(value*))
     
     inline def setExportFormats(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: std.Array<string>}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
     ): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     
     inline def setExportFormatsUndefined: Self = StObject.set(x, "exportFormats", js.undefined)
@@ -99,12 +99,12 @@ object About {
     
     inline def setFolderColorPaletteUndefined: Self = StObject.set(x, "folderColorPalette", js.undefined)
     
-    inline def setFolderColorPaletteVarargs(value: String*): Self = StObject.set(x, "folderColorPalette", js.Array(value :_*))
+    inline def setFolderColorPaletteVarargs(value: String*): Self = StObject.set(x, "folderColorPalette", js.Array(value*))
     
     inline def setImportFormats(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: std.Array<string>}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
     ): Self = StObject.set(x, "importFormats", value.asInstanceOf[js.Any])
     
     inline def setImportFormatsUndefined: Self = StObject.set(x, "importFormats", js.undefined)
@@ -116,7 +116,7 @@ object About {
     inline def setMaxImportSizes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
     ): Self = StObject.set(x, "maxImportSizes", value.asInstanceOf[js.Any])
     
     inline def setMaxImportSizesUndefined: Self = StObject.set(x, "maxImportSizes", js.undefined)
@@ -133,7 +133,7 @@ object About {
     
     inline def setTeamDriveThemesUndefined: Self = StObject.set(x, "teamDriveThemes", js.undefined)
     
-    inline def setTeamDriveThemesVarargs(value: BackgroundImageLink*): Self = StObject.set(x, "teamDriveThemes", js.Array(value :_*))
+    inline def setTeamDriveThemesVarargs(value: BackgroundImageLink*): Self = StObject.set(x, "teamDriveThemes", js.Array(value*))
     
     inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     

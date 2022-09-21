@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BluetoothLEAdvertisementPublisher extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statuschanged(
     `type`: statuschanged,
@@ -36,7 +36,7 @@ trait BluetoothLEAdvertisementPublisher extends StObject {
     BluetoothLEAdvertisementPublisherStatusChangedEventArgs
   ] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statuschanged(
     `type`: statuschanged,

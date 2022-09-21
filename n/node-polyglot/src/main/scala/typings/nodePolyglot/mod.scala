@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("node-polyglot", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Polyglot {
     def this(options: PolyglotOptions) = this()
@@ -28,7 +28,7 @@ object mod {
   
   trait InterpolationOptions
     extends StObject
-       with /* interpolationKey */ StringDictionary[js.Any] {
+       with /* interpolationKey */ StringDictionary[Any] {
     
     @JSName("_")
     var _underscore: js.UndefOr[String] = js.undefined
@@ -108,22 +108,22 @@ object mod {
     
     def clear(): Unit = js.native
     
-    def extend(phrases: js.Any): Unit = js.native
-    def extend(phrases: js.Any, prefix: String): Unit = js.native
+    def extend(phrases: Any): Unit = js.native
+    def extend(phrases: Any, prefix: String): Unit = js.native
     
     def has(phrase: String): Boolean = js.native
     
     def locale(): String = js.native
     def locale(locale: String): String = js.native
     
-    def replace(phrases: js.Any): Unit = js.native
+    def replace(phrases: Any): Unit = js.native
     
     def t(phrase: String): String = js.native
     def t(phrase: String, options: Double): String = js.native
     def t(phrase: String, options: InterpolationOptions): String = js.native
     
-    def unset(phrases: js.Any): Unit = js.native
-    def unset(phrases: js.Any, prefix: String): Unit = js.native
+    def unset(phrases: Any): Unit = js.native
+    def unset(phrases: Any, prefix: String): Unit = js.native
   }
   
   trait PolyglotOptions extends StObject {
@@ -138,7 +138,7 @@ object mod {
         js.Function3[/* key */ String, /* options */ InterpolationOptions, /* locale */ String, String]
       ] = js.undefined
     
-    var phrases: js.UndefOr[js.Any] = js.undefined
+    var phrases: js.UndefOr[Any] = js.undefined
     
     var pluralRules: js.UndefOr[PluralRules] = js.undefined
     
@@ -169,7 +169,7 @@ object mod {
       
       inline def setOnMissingKeyUndefined: Self = StObject.set(x, "onMissingKey", js.undefined)
       
-      inline def setPhrases(value: js.Any): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
+      inline def setPhrases(value: Any): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
       
       inline def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
       

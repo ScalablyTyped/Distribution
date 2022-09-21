@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.Fraction")
 @js.native
-class Fraction protected ()
+open class Fraction protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Fraction {
   def this(numerator: Double, denominator: Double) = this()

@@ -4,19 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Message for specifying the start activities to crawl.
-  */
 trait SchemaRoboStartingIntent extends StObject {
   
+  /**
+    * An intent that starts the main launcher activity.
+    */
   var launcherActivity: js.UndefOr[SchemaLauncherActivityIntent] = js.undefined
   
+  /**
+    * An intent that starts an activity with specific details.
+    */
   var startActivity: js.UndefOr[SchemaStartActivityIntent] = js.undefined
   
   /**
     * Timeout in seconds for each intent.
     */
-  var timeout: js.UndefOr[String] = js.undefined
+  var timeout: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRoboStartingIntent {
   
@@ -36,6 +39,8 @@ object SchemaRoboStartingIntent {
     inline def setStartActivityUndefined: Self = StObject.set(x, "startActivity", js.undefined)
     
     inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutNull: Self = StObject.set(x, "timeout", null)
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }

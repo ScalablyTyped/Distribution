@@ -12,15 +12,14 @@ object arrayTypeAdapterMod {
   
   @JSImport("@hyperloris/tyson/dist/types/adapters/arrayTypeAdapter", "ArrayTypeAdapter")
   @js.native
-  class ArrayTypeAdapter protected ()
-    extends TypeAdapter[js.Any] {
-    def this(tyson: Tyson, typeToken: TypeToken[js.Any]) = this()
+  open class ArrayTypeAdapter protected () extends TypeAdapter[Any] {
+    def this(tyson: Tyson, typeToken: TypeToken[Any]) = this()
     
-    /* private */ var _typeToken: js.Any = js.native
+    /* private */ var _typeToken: Any = js.native
     
-    /* private */ var _tyson: js.Any = js.native
+    /* private */ var _tyson: Any = js.native
     
-    /* private */ def convertSingleOrMultiTypeArray(isFrom: js.Any, inArray: js.Any): js.Any = js.native
+    /* private */ def convertSingleOrMultiTypeArray(isFrom: Any, inArray: Any): Any = js.native
   }
   /* static members */
   object ArrayTypeAdapter {

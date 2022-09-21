@@ -91,6 +91,9 @@ trait RequestLog extends StObject {
     */
   var sourceReference: js.UndefOr[js.Array[SourceReference]] = js.undefined
   
+  /** Stackdriver Trace span identifier for this request. */
+  var spanId: js.UndefOr[String] = js.undefined
+  
   /** Time when the request started. */
   var startTime: js.UndefOr[String] = js.undefined
   
@@ -182,7 +185,7 @@ object RequestLog {
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    inline def setLineVarargs(value: LogLine*): Self = StObject.set(x, "line", js.Array(value :_*))
+    inline def setLineVarargs(value: LogLine*): Self = StObject.set(x, "line", js.Array(value*))
     
     inline def setMegaCycles(value: String): Self = StObject.set(x, "megaCycles", value.asInstanceOf[js.Any])
     
@@ -224,7 +227,11 @@ object RequestLog {
     
     inline def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
     
-    inline def setSourceReferenceVarargs(value: SourceReference*): Self = StObject.set(x, "sourceReference", js.Array(value :_*))
+    inline def setSourceReferenceVarargs(value: SourceReference*): Self = StObject.set(x, "sourceReference", js.Array(value*))
+    
+    inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+    
+    inline def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

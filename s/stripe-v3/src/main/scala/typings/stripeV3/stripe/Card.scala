@@ -48,7 +48,7 @@ trait Card extends StObject {
   
   var last4: String
   
-  var metadata: js.Any
+  var metadata: Any
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -70,7 +70,7 @@ object Card {
     funding: fundingType,
     id: String,
     last4: String,
-    metadata: js.Any,
+    metadata: Any,
     `object`: String
   ): Card = {
     val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], dynamic_last4 = dynamic_last4.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
@@ -138,7 +138,7 @@ object Card {
     
     inline def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

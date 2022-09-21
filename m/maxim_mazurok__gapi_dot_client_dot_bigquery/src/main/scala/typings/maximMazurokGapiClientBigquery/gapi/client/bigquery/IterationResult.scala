@@ -6,11 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IterationResult extends StObject {
   
-  var arimaResult: js.UndefOr[ArimaResult] = js.undefined
-  
-  /** Information about top clusters for clustering models. */
-  var clusterInfos: js.UndefOr[js.Array[ClusterInfo]] = js.undefined
-  
   /** Time taken to run the iteration in milliseconds. */
   var durationMs: js.UndefOr[String] = js.undefined
   
@@ -34,16 +29,6 @@ object IterationResult {
   }
   
   extension [Self <: IterationResult](x: Self) {
-    
-    inline def setArimaResult(value: ArimaResult): Self = StObject.set(x, "arimaResult", value.asInstanceOf[js.Any])
-    
-    inline def setArimaResultUndefined: Self = StObject.set(x, "arimaResult", js.undefined)
-    
-    inline def setClusterInfos(value: js.Array[ClusterInfo]): Self = StObject.set(x, "clusterInfos", value.asInstanceOf[js.Any])
-    
-    inline def setClusterInfosUndefined: Self = StObject.set(x, "clusterInfos", js.undefined)
-    
-    inline def setClusterInfosVarargs(value: ClusterInfo*): Self = StObject.set(x, "clusterInfos", js.Array(value :_*))
     
     inline def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     

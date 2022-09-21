@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LocationPreference extends StObject {
   
-  /** The App Engine application to follow, it must be in the same region as the Cloud SQL instance. */
+  /** The App Engine application to follow, it must be in the same region as the Cloud SQL instance. WARNING: Changing this might restart the instance. */
   var followGaeApplication: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#locationPreference*. */
+  /** This is always `sql#locationPreference`. */
   var kind: js.UndefOr[String] = js.undefined
   
-  /** The preferred Compute Engine zone for the secondary/failover (for example: us-central1-a, us-central1-b, etc.). Reserved for future use. */
+  /** The preferred Compute Engine zone for the secondary/failover (for example: us-central1-a, us-central1-b, etc.). */
   var secondaryZone: js.UndefOr[String] = js.undefined
   
-  /** The preferred Compute Engine zone (for example: us-central1-a, us-central1-b, etc.). */
+  /** The preferred Compute Engine zone (for example: us-central1-a, us-central1-b, etc.). WARNING: Changing this might restart the instance. */
   var zone: js.UndefOr[String] = js.undefined
 }
 object LocationPreference {

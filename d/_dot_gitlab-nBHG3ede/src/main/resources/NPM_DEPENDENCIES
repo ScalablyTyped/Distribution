@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".gitlab-nBHG3ede" : "14.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".gitlab-nBHG3ede" : "14.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -8,7 +8,7 @@ object oscmdMod {
   
   @JSImport("node-os-utils/lib/oscmd", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with OsCmd {
     

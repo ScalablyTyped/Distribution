@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListLexBotsRequest extends StObject {
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
-    * The maximimum number of results to return per page.
+    * The maximum number of results to return per page. If no value is specified, the default is 10. 
     */
   var MaxResults: js.UndefOr[MaxResult25] = js.undefined
   

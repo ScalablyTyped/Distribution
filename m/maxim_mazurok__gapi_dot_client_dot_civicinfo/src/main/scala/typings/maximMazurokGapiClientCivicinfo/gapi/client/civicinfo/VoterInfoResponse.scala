@@ -43,6 +43,9 @@ trait VoterInfoResponse extends StObject {
   
   var precinctId: js.UndefOr[String] = js.undefined
   
+  /** The precincts that match this voter's address. Will only be returned for project IDs which have been whitelisted as "partner projects". */
+  var precincts: js.UndefOr[js.Array[Precinct]] = js.undefined
+  
   /** Local Election Information for the state that the voter votes in. For the US, there will only be one element in this array. */
   var state: js.UndefOr[js.Array[AdministrationRegion]] = js.undefined
 }
@@ -59,19 +62,19 @@ object VoterInfoResponse {
     
     inline def setContestsUndefined: Self = StObject.set(x, "contests", js.undefined)
     
-    inline def setContestsVarargs(value: Contest*): Self = StObject.set(x, "contests", js.Array(value :_*))
+    inline def setContestsVarargs(value: Contest*): Self = StObject.set(x, "contests", js.Array(value*))
     
     inline def setDropOffLocations(value: js.Array[PollingLocation]): Self = StObject.set(x, "dropOffLocations", value.asInstanceOf[js.Any])
     
     inline def setDropOffLocationsUndefined: Self = StObject.set(x, "dropOffLocations", js.undefined)
     
-    inline def setDropOffLocationsVarargs(value: PollingLocation*): Self = StObject.set(x, "dropOffLocations", js.Array(value :_*))
+    inline def setDropOffLocationsVarargs(value: PollingLocation*): Self = StObject.set(x, "dropOffLocations", js.Array(value*))
     
     inline def setEarlyVoteSites(value: js.Array[PollingLocation]): Self = StObject.set(x, "earlyVoteSites", value.asInstanceOf[js.Any])
     
     inline def setEarlyVoteSitesUndefined: Self = StObject.set(x, "earlyVoteSites", js.undefined)
     
-    inline def setEarlyVoteSitesVarargs(value: PollingLocation*): Self = StObject.set(x, "earlyVoteSites", js.Array(value :_*))
+    inline def setEarlyVoteSitesVarargs(value: PollingLocation*): Self = StObject.set(x, "earlyVoteSites", js.Array(value*))
     
     inline def setElection(value: Election): Self = StObject.set(x, "election", value.asInstanceOf[js.Any])
     
@@ -93,22 +96,28 @@ object VoterInfoResponse {
     
     inline def setOtherElectionsUndefined: Self = StObject.set(x, "otherElections", js.undefined)
     
-    inline def setOtherElectionsVarargs(value: Election*): Self = StObject.set(x, "otherElections", js.Array(value :_*))
+    inline def setOtherElectionsVarargs(value: Election*): Self = StObject.set(x, "otherElections", js.Array(value*))
     
     inline def setPollingLocations(value: js.Array[PollingLocation]): Self = StObject.set(x, "pollingLocations", value.asInstanceOf[js.Any])
     
     inline def setPollingLocationsUndefined: Self = StObject.set(x, "pollingLocations", js.undefined)
     
-    inline def setPollingLocationsVarargs(value: PollingLocation*): Self = StObject.set(x, "pollingLocations", js.Array(value :_*))
+    inline def setPollingLocationsVarargs(value: PollingLocation*): Self = StObject.set(x, "pollingLocations", js.Array(value*))
     
     inline def setPrecinctId(value: String): Self = StObject.set(x, "precinctId", value.asInstanceOf[js.Any])
     
     inline def setPrecinctIdUndefined: Self = StObject.set(x, "precinctId", js.undefined)
     
+    inline def setPrecincts(value: js.Array[Precinct]): Self = StObject.set(x, "precincts", value.asInstanceOf[js.Any])
+    
+    inline def setPrecinctsUndefined: Self = StObject.set(x, "precincts", js.undefined)
+    
+    inline def setPrecinctsVarargs(value: Precinct*): Self = StObject.set(x, "precincts", js.Array(value*))
+    
     inline def setState(value: js.Array[AdministrationRegion]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    inline def setStateVarargs(value: AdministrationRegion*): Self = StObject.set(x, "state", js.Array(value :_*))
+    inline def setStateVarargs(value: AdministrationRegion*): Self = StObject.set(x, "state", js.Array(value*))
   }
 }

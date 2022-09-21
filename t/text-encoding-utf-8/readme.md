@@ -11,14 +11,11 @@ UTF-8 only polyfill for the Encoding Living Standard's API.
 | Full name          | text-encoding-utf-8 |
 | Keywords           | encoding, decoding, living standard |
 | # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 2235822 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 889721.0 |
+| # stars            | 7.0 |
 
 ## Links
-- [Homepage](https://github.com/arv/text-encoding-utf-8)
-- [Bugs](https://github.com/arv/text-encoding-utf-8/issues)
-- [Repository](https://github.com/arv/text-encoding-utf-8)
 - [Npm](https://www.npmjs.com/package/text-encoding-utf-8)
     
 

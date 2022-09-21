@@ -4,22 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Compensation range.
-  */
 trait SchemaCompensationRange extends StObject {
   
   /**
-    * Optional.  The maximum amount of compensation. If left empty, the value
-    * is set to a maximal compensation value and the currency code is set to
-    * match the currency code of min_compensation.
+    * Optional. The maximum amount of compensation. If left empty, the value is set to a maximal compensation value and the currency code is set to match the currency code of min_compensation.
     */
   var maxCompensation: js.UndefOr[SchemaMoney] = js.undefined
   
   /**
-    * Optional.  The minimum amount of compensation. If left empty, the value
-    * is set to zero and the currency code is set to match the currency code of
-    * max_compensation.
+    * Optional. The minimum amount of compensation. If left empty, the value is set to zero and the currency code is set to match the currency code of max_compensation.
     */
   var minCompensation: js.UndefOr[SchemaMoney] = js.undefined
 }

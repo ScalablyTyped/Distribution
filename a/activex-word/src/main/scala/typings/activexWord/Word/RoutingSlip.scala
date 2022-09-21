@@ -17,12 +17,12 @@ trait RoutingSlip extends StObject {
   
   var Message: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Protect: WdProtectionType = js.native
   
-  def Recipients(): js.Any = js.native
-  def Recipients(Index: js.Any): js.Any = js.native
+  def Recipients(): Any = js.native
+  def Recipients(Index: Any): Any = js.native
   
   def Reset(): Unit = js.native
   

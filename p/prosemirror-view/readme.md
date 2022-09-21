@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-view
 
-Typings are for version 1.16
+Typings are for version 1.28.0
 
 ## Library description:
 ProseMirror's view component
@@ -10,10 +10,10 @@ ProseMirror's view component
 | ------------------ | :-------------: |
 | Full name          | prosemirror-view |
 | Keywords           | - |
-| # releases         | 93 |
-| # dependents       | 225 |
-| # downloads        | 7852043 |
-| # stars            | 0 |
+| # releases         | 69 |
+| # dependents       | 0.0 |
+| # downloads        | 2390528.0 |
+| # stars            | 1124.0 |
 
 ## Links
 - [Homepage](https://github.com/prosemirror/prosemirror-view#readme)
@@ -24,7 +24,7 @@ ProseMirror's view component
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

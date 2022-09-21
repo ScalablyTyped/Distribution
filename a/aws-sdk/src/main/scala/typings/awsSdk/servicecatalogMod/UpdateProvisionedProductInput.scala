@@ -120,7 +120,7 @@ object UpdateProvisionedProductInput {
     
     inline def setProvisioningParametersUndefined: Self = StObject.set(x, "ProvisioningParameters", js.undefined)
     
-    inline def setProvisioningParametersVarargs(value: UpdateProvisioningParameter*): Self = StObject.set(x, "ProvisioningParameters", js.Array(value :_*))
+    inline def setProvisioningParametersVarargs(value: UpdateProvisioningParameter*): Self = StObject.set(x, "ProvisioningParameters", js.Array(value*))
     
     inline def setProvisioningPreferences(value: UpdateProvisioningPreferences): Self = StObject.set(x, "ProvisioningPreferences", value.asInstanceOf[js.Any])
     
@@ -130,7 +130,7 @@ object UpdateProvisionedProductInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setUpdateToken(value: IdempotencyToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
   }

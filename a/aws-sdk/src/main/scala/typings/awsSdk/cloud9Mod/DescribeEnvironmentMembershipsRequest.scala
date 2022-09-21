@@ -56,7 +56,7 @@ object DescribeEnvironmentMembershipsRequest {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
     

@@ -9,10 +9,10 @@ Lightweight Graph DB implementation
 | ------------------ | :-------------: |
 | Full name          | giraffe |
 | Keywords           | graph, database |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 660 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 80.66666666666667 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/tbremer/Giraffe#readme)

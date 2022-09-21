@@ -40,7 +40,7 @@ object XCell2 {
     getFormula: () => String,
     getType: () => CellContentType,
     getValue: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFormula: String => Unit,
     setFormulaResult: Double => Unit,

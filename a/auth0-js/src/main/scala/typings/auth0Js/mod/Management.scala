@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("auth0-js", "Management")
 @js.native
-class Management protected () extends StObject {
+open class Management protected () extends StObject {
   /**
     * Initialize your client class, by using a Non Interactive Client to fetch an access_token via the Client Credentials Grant.
     */
@@ -22,7 +22,7 @@ class Management protected () extends StObject {
     * Link two users. https://auth0.com/docs/api/management/v2#!/Users/post_identities
     *
     */
-  def linkUser(userId: String, secondaryUserToken: String, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def linkUser(userId: String, secondaryUserToken: String, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
   
   /**
     * Updates the user attributes.
@@ -36,5 +36,5 @@ class Management protected () extends StObject {
     * https://auth0.com/docs/api/management/v2#!/Users/patch_users_by_id
     *
     */
-  def patchUserMetadata(userId: String, userMetadata: js.Any, callback: Auth0Callback[Auth0UserProfile, Auth0Error]): Unit = js.native
+  def patchUserMetadata(userId: String, userMetadata: Any, callback: Auth0Callback[Auth0UserProfile, Auth0Error]): Unit = js.native
 }

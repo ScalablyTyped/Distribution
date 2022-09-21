@@ -10,10 +10,10 @@ X-headers to object mapper
 | ------------------ | :-------------: |
 | Full name          | easy-x-headers |
 | Keywords           | express, middleware, headers, custom |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 134 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 25.666666666666668 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/DeadAlready/easy-x-headers)

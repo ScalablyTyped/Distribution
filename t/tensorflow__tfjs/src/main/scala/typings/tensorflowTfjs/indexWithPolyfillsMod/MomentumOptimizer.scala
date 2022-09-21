@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "MomentumOptimizer")
 @js.native
-class MomentumOptimizer protected ()
+open class MomentumOptimizer protected ()
   extends typings.tensorflowTfjs.mod.MomentumOptimizer {
   def this(learningRate: Double, momentum: Double) = this()
   def this(learningRate: Double, momentum: Double, useNesterov: Boolean) = this()

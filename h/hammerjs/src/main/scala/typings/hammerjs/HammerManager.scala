@@ -16,7 +16,7 @@ trait HammerManager extends StObject {
   
   def destroy(): Unit = js.native
   
-  def emit(event: String, data: js.Any): Unit = js.native
+  def emit(event: String, data: Any): Unit = js.native
   
   def get(recogniser: String): Recognizer = js.native
   def get(recogniser: Recognizer): Recognizer = js.native
@@ -26,7 +26,7 @@ trait HammerManager extends StObject {
   
   def on(events: String, handler: HammerListener): Unit = js.native
   
-  def recognize(inputData: js.Any): Unit = js.native
+  def recognize(inputData: Any): Unit = js.native
   
   def remove(recogniser: String): HammerManager = js.native
   def remove(recogniser: Recognizer): HammerManager = js.native

@@ -1,6 +1,5 @@
 package typings.prex
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,25 +11,25 @@ object deferredMod {
   /**
     * Initializes a new instance of the Deferred class.
     */
-  class Deferred[T] () extends StObject {
+  open class Deferred[T] () extends StObject {
     
-    /* private */ var _callback: js.Any = js.native
+    /* private */ var _callback: Any = js.native
     
-    /* private */ var _promise: js.Any = js.native
+    /* private */ var _promise: Any = js.native
     
-    /* private */ var _reject: js.Any = js.native
+    /* private */ var _reject: Any = js.native
     
-    /* private */ var _resolve: js.Any = js.native
+    /* private */ var _resolve: Any = js.native
     
     /**
       * Gets a NodeJS-style callback that can be used to resolve or reject the promise.
       */
-    def callback: (js.Function2[/* err */ js.UndefOr[Error | Null], /* value */ T, Unit]) | (js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) = js.native
+    def callback: (js.Function2[/* err */ js.UndefOr[js.Error | Null], /* value */ T, Unit]) | (js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) = js.native
     
     /**
       * Creates a NodeJS-style callback that can be used to resolve or reject the promise with multiple values.
       */
-    def createCallback[A /* <: js.Array[js.Any] */](selector: js.Function1[/* args */ A, T]): js.Function2[/* err */ js.UndefOr[Error | Null], /* args */ A, Unit] = js.native
+    def createCallback[A /* <: js.Array[Any] */](selector: js.Function1[/* args */ A, T]): js.Function2[/* err */ js.UndefOr[js.Error | Null], /* args */ A, Unit] = js.native
     
     /**
       * Gets the promise.
@@ -40,7 +39,7 @@ object deferredMod {
     /**
       * Gets the callback used to reject the promise.
       */
-    def reject: js.Function1[/* reason */ js.Any, Unit] = js.native
+    def reject: js.Function1[/* reason */ Any, Unit] = js.native
     
     /**
       * Gets the callback used to resolve the promise.

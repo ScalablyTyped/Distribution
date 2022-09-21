@@ -1,6 +1,5 @@
 package typings.expressUnless
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +12,11 @@ object anon {
     
     var methods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var url: String | RegExp
+    var url: String | js.RegExp
   }
   object Method {
     
-    inline def apply(url: String | RegExp): Method = {
+    inline def apply(url: String | js.RegExp): Method = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Method]
     }
@@ -28,15 +27,15 @@ object anon {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value*))
       
       inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value*))
       
-      inline def setUrl(value: String | RegExp): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String | js.RegExp): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

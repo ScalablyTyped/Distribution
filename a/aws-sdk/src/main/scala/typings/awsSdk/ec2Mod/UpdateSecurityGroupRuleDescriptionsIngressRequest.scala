@@ -22,14 +22,19 @@ trait UpdateSecurityGroupRuleDescriptionsIngressRequest extends StObject {
   var GroupName: js.UndefOr[SecurityGroupName] = js.undefined
   
   /**
-    * The IP permissions for the security group rule. 
+    * The IP permissions for the security group rule. You must specify either IP permissions or a description.
     */
-  var IpPermissions: IpPermissionList
+  var IpPermissions: js.UndefOr[IpPermissionList] = js.undefined
+  
+  /**
+    * [VPC only] The description for the ingress security group rules. You must specify either a description or IP permissions.
+    */
+  var SecurityGroupRuleDescriptions: js.UndefOr[SecurityGroupRuleDescriptionList] = js.undefined
 }
 object UpdateSecurityGroupRuleDescriptionsIngressRequest {
   
-  inline def apply(IpPermissions: IpPermissionList): UpdateSecurityGroupRuleDescriptionsIngressRequest = {
-    val __obj = js.Dynamic.literal(IpPermissions = IpPermissions.asInstanceOf[js.Any])
+  inline def apply(): UpdateSecurityGroupRuleDescriptionsIngressRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSecurityGroupRuleDescriptionsIngressRequest]
   }
   
@@ -49,6 +54,14 @@ object UpdateSecurityGroupRuleDescriptionsIngressRequest {
     
     inline def setIpPermissions(value: IpPermissionList): Self = StObject.set(x, "IpPermissions", value.asInstanceOf[js.Any])
     
-    inline def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value :_*))
+    inline def setIpPermissionsUndefined: Self = StObject.set(x, "IpPermissions", js.undefined)
+    
+    inline def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value*))
+    
+    inline def setSecurityGroupRuleDescriptions(value: SecurityGroupRuleDescriptionList): Self = StObject.set(x, "SecurityGroupRuleDescriptions", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityGroupRuleDescriptionsUndefined: Self = StObject.set(x, "SecurityGroupRuleDescriptions", js.undefined)
+    
+    inline def setSecurityGroupRuleDescriptionsVarargs(value: SecurityGroupRuleDescription*): Self = StObject.set(x, "SecurityGroupRuleDescriptions", js.Array(value*))
   }
 }

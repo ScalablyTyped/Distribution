@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("TableBordersSettings")
 @js.native
-class TableBordersSettings ()
+open class TableBordersSettings ()
   extends StObject
      with typings.devexpressWeb.TableBordersSettings {
   

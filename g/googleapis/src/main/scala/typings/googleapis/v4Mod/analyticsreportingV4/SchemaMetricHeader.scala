@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The headers for the metrics.
-  */
 trait SchemaMetricHeader extends StObject {
   
   /**
@@ -32,12 +29,12 @@ object SchemaMetricHeader {
     
     inline def setMetricHeaderEntriesUndefined: Self = StObject.set(x, "metricHeaderEntries", js.undefined)
     
-    inline def setMetricHeaderEntriesVarargs(value: SchemaMetricHeaderEntry*): Self = StObject.set(x, "metricHeaderEntries", js.Array(value :_*))
+    inline def setMetricHeaderEntriesVarargs(value: SchemaMetricHeaderEntry*): Self = StObject.set(x, "metricHeaderEntries", js.Array(value*))
     
     inline def setPivotHeaders(value: js.Array[SchemaPivotHeader]): Self = StObject.set(x, "pivotHeaders", value.asInstanceOf[js.Any])
     
     inline def setPivotHeadersUndefined: Self = StObject.set(x, "pivotHeaders", js.undefined)
     
-    inline def setPivotHeadersVarargs(value: SchemaPivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value :_*))
+    inline def setPivotHeadersVarargs(value: SchemaPivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value*))
   }
 }

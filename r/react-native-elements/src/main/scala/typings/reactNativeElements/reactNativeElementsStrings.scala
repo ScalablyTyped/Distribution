@@ -1,7 +1,7 @@
 package typings.reactNativeElements
 
-import typings.reactNativeElements.mod.SocialMediaType
-import typings.reactNativeElements.mod._IconType
+import typings.reactNativeElements.iconMod._IconType
+import typings.reactNativeElements.socialIconMod.SocialMediaType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +13,40 @@ object reactNativeElementsStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
+  sealed trait Component extends StObject
+  inline def Component: Component = "Component".asInstanceOf[Component]
+  
+  @js.native
+  sealed trait ImageComponent extends StObject
+  inline def ImageComponent: ImageComponent = "ImageComponent".asInstanceOf[ImageComponent]
+  
+  @js.native
+  sealed trait InputComponent extends StObject
+  inline def InputComponent: InputComponent = "InputComponent".asInstanceOf[InputComponent]
+  
+  @js.native
+  sealed trait ModalComponent extends StObject
+  inline def ModalComponent: ModalComponent = "ModalComponent".asInstanceOf[ModalComponent]
+  
+  @js.native
   sealed trait RecursivePartial extends StObject
   inline def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]
   
   @js.native
+  sealed trait TouchableComponent extends StObject
+  inline def TouchableComponent: TouchableComponent = "TouchableComponent".asInstanceOf[TouchableComponent]
+  
+  @js.native
   sealed trait URL extends StObject
   inline def URL: URL = "URL".asInstanceOf[URL]
+  
+  @js.native
+  sealed trait ViewComponent extends StObject
+  inline def ViewComponent: ViewComponent = "ViewComponent".asInstanceOf[ViewComponent]
+  
+  @js.native
+  sealed trait absolute extends StObject
+  inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
   sealed trait addressCity extends StObject
@@ -51,10 +79,22 @@ object reactNativeElementsStrings {
   inline def angellist: angellist = "angellist".asInstanceOf[angellist]
   
   @js.native
+  sealed trait ansi16 extends StObject
+  inline def ansi16: ansi16 = "ansi16".asInstanceOf[ansi16]
+  
+  @js.native
+  sealed trait ansi256 extends StObject
+  inline def ansi256: ansi256 = "ansi256".asInstanceOf[ansi256]
+  
+  @js.native
   sealed trait antdesign
     extends StObject
        with _IconType
   inline def antdesign: antdesign = "antdesign".asInstanceOf[antdesign]
+  
+  @js.native
+  sealed trait apple extends StObject
+  inline def apple: apple = "apple".asInstanceOf[apple]
   
   @js.native
   sealed trait assertive extends StObject
@@ -69,8 +109,20 @@ object reactNativeElementsStrings {
   inline def balanced: balanced = "balanced".asInstanceOf[balanced]
   
   @js.native
-  sealed trait bell extends StObject
-  inline def bell: bell = "bell".asInstanceOf[bell]
+  sealed trait `birthdate-day` extends StObject
+  inline def `birthdate-day`: `birthdate-day` = "birthdate-day".asInstanceOf[`birthdate-day`]
+  
+  @js.native
+  sealed trait `birthdate-full` extends StObject
+  inline def `birthdate-full`: `birthdate-full` = "birthdate-full".asInstanceOf[`birthdate-full`]
+  
+  @js.native
+  sealed trait `birthdate-month` extends StObject
+  inline def `birthdate-month`: `birthdate-month` = "birthdate-month".asInstanceOf[`birthdate-month`]
+  
+  @js.native
+  sealed trait `birthdate-year` extends StObject
+  inline def `birthdate-year`: `birthdate-year` = "birthdate-year".asInstanceOf[`birthdate-year`]
   
   @js.native
   sealed trait bottom extends StObject
@@ -85,16 +137,16 @@ object reactNativeElementsStrings {
   inline def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   
   @js.native
-  sealed trait button extends StObject
-  inline def button: button = "button".asInstanceOf[button]
-  
-  @js.native
   sealed trait `cc-csc` extends StObject
   inline def `cc-csc`: `cc-csc` = "cc-csc".asInstanceOf[`cc-csc`]
   
   @js.native
   sealed trait `cc-exp` extends StObject
   inline def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
+  
+  @js.native
+  sealed trait `cc-exp-day` extends StObject
+  inline def `cc-exp-day`: `cc-exp-day` = "cc-exp-day".asInstanceOf[`cc-exp-day`]
   
   @js.native
   sealed trait `cc-exp-month` extends StObject
@@ -125,10 +177,18 @@ object reactNativeElementsStrings {
   inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
+  sealed trait cmyk extends StObject
+  inline def cmyk: cmyk = "cmyk".asInstanceOf[cmyk]
+  
+  @js.native
   sealed trait codepen
     extends StObject
        with SocialMediaType
   inline def codepen: codepen = "codepen".asInstanceOf[codepen]
+  
+  @js.native
+  sealed trait column extends StObject
+  inline def column: column = "column".asInstanceOf[column]
   
   @js.native
   sealed trait countryName extends StObject
@@ -139,12 +199,20 @@ object reactNativeElementsStrings {
   inline def creditCardNumber: creditCardNumber = "creditCardNumber".asInstanceOf[creditCardNumber]
   
   @js.native
-  sealed trait custom extends StObject
-  inline def custom: custom = "custom".asInstanceOf[custom]
-  
-  @js.native
   sealed trait dark extends StObject
   inline def dark: dark = "dark".asInstanceOf[dark]
+  
+  @js.native
+  sealed trait determinate extends StObject
+  inline def determinate: determinate = "determinate".asInstanceOf[determinate]
+  
+  @js.native
+  sealed trait disk extends StObject
+  inline def disk: disk = "disk".asInstanceOf[disk]
+  
+  @js.native
+  sealed trait diskSlashmemory extends StObject
+  inline def diskSlashmemory: diskSlashmemory = "disk/memory".asInstanceOf[diskSlashmemory]
   
   @js.native
   sealed trait email extends StObject
@@ -175,6 +243,12 @@ object reactNativeElementsStrings {
     extends StObject
        with SocialMediaType
   inline def facebook: facebook = "facebook".asInstanceOf[facebook]
+  
+  @js.native
+  sealed trait `facebook-messenger`
+    extends StObject
+       with SocialMediaType
+  inline def `facebook-messenger`: `facebook-messenger` = "facebook-messenger".asInstanceOf[`facebook-messenger`]
   
   @js.native
   sealed trait fade extends StObject
@@ -219,12 +293,20 @@ object reactNativeElementsStrings {
   inline def foursquare: foursquare = "foursquare".asInstanceOf[foursquare]
   
   @js.native
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
+  
+  @js.native
   sealed trait fullScreen extends StObject
   inline def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   
   @js.native
   sealed trait fullStreetAddress extends StObject
   inline def fullStreetAddress: fullStreetAddress = "fullStreetAddress".asInstanceOf[fullStreetAddress]
+  
+  @js.native
+  sealed trait gender extends StObject
+  inline def gender: gender = "gender".asInstanceOf[gender]
   
   @js.native
   sealed trait github
@@ -261,12 +343,20 @@ object reactNativeElementsStrings {
   inline def `google-plus-official`: `google-plus-official` = "google-plus-official".asInstanceOf[`google-plus-official`]
   
   @js.native
+  sealed trait gray extends StObject
+  inline def gray: gray = "gray".asInstanceOf[gray]
+  
+  @js.native
+  sealed trait hcg extends StObject
+  inline def hcg: hcg = "hcg".asInstanceOf[hcg]
+  
+  @js.native
   sealed trait head extends StObject
   inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait heart extends StObject
-  inline def heart: heart = "heart".asInstanceOf[heart]
+  sealed trait hex extends StObject
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
   sealed trait highQuality extends StObject
@@ -275,6 +365,26 @@ object reactNativeElementsStrings {
   @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @js.native
+  sealed trait hsl extends StObject
+  inline def hsl: hsl = "hsl".asInstanceOf[hsl]
+  
+  @js.native
+  sealed trait hsv extends StObject
+  inline def hsv: hsv = "hsv".asInstanceOf[hsv]
+  
+  @js.native
+  sealed trait hwb extends StObject
+  inline def hwb: hwb = "hwb".asInstanceOf[hwb]
+  
+  @js.native
+  sealed trait icon extends StObject
+  inline def icon: icon = "icon".asInstanceOf[icon]
+  
+  @js.native
+  sealed trait indeterminate extends StObject
+  inline def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   
   @js.native
   sealed trait instagram
@@ -297,6 +407,14 @@ object reactNativeElementsStrings {
   inline def jobTitle: jobTitle = "jobTitle".asInstanceOf[jobTitle]
   
   @js.native
+  sealed trait keyword extends StObject
+  inline def keyword: keyword = "keyword".asInstanceOf[keyword]
+  
+  @js.native
+  sealed trait lab extends StObject
+  inline def lab: lab = "lab".asInstanceOf[lab]
+  
+  @js.native
   sealed trait landscape extends StObject
   inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
@@ -311,6 +429,10 @@ object reactNativeElementsStrings {
   @js.native
   sealed trait large extends StObject
   inline def large: large = "large".asInstanceOf[large]
+  
+  @js.native
+  sealed trait lch extends StObject
+  inline def lch: lch = "lch".asInstanceOf[lch]
   
   @js.native
   sealed trait left extends StObject
@@ -353,6 +475,10 @@ object reactNativeElementsStrings {
   inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
+  sealed trait memory extends StObject
+  inline def memory: memory = "memory".asInstanceOf[memory]
+  
+  @js.native
   sealed trait middle extends StObject
   inline def middle: middle = "middle".asInstanceOf[middle]
   
@@ -363,6 +489,30 @@ object reactNativeElementsStrings {
   @js.native
   sealed trait name extends StObject
   inline def name: name = "name".asInstanceOf[name]
+  
+  @js.native
+  sealed trait `name-family` extends StObject
+  inline def `name-family`: `name-family` = "name-family".asInstanceOf[`name-family`]
+  
+  @js.native
+  sealed trait `name-given` extends StObject
+  inline def `name-given`: `name-given` = "name-given".asInstanceOf[`name-given`]
+  
+  @js.native
+  sealed trait `name-middle` extends StObject
+  inline def `name-middle`: `name-middle` = "name-middle".asInstanceOf[`name-middle`]
+  
+  @js.native
+  sealed trait `name-middle-initial` extends StObject
+  inline def `name-middle-initial`: `name-middle-initial` = "name-middle-initial".asInstanceOf[`name-middle-initial`]
+  
+  @js.native
+  sealed trait `name-prefix` extends StObject
+  inline def `name-prefix`: `name-prefix` = "name-prefix".asInstanceOf[`name-prefix`]
+  
+  @js.native
+  sealed trait `name-suffix` extends StObject
+  inline def `name-suffix`: `name-suffix` = "name-suffix".asInstanceOf[`name-suffix`]
   
   @js.native
   sealed trait namePrefix extends StObject
@@ -401,6 +551,10 @@ object reactNativeElementsStrings {
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
+  
+  @js.native
   sealed trait octicon
     extends StObject
        with _IconType
@@ -409,6 +563,18 @@ object reactNativeElementsStrings {
   @js.native
   sealed trait off extends StObject
   inline def off: off = "off".asInstanceOf[off]
+  
+  @js.native
+  sealed trait onClear extends StObject
+  inline def onClear: onClear = "onClear".asInstanceOf[onClear]
+  
+  @js.native
+  sealed trait onLongPress extends StObject
+  inline def onLongPress: onLongPress = "onLongPress".asInstanceOf[onLongPress]
+  
+  @js.native
+  sealed trait onPress extends StObject
+  inline def onPress: onPress = "onPress".asInstanceOf[onPress]
   
   @js.native
   sealed trait oneTimeCode extends StObject
@@ -435,6 +601,10 @@ object reactNativeElementsStrings {
   inline def password: password = "password".asInstanceOf[password]
   
   @js.native
+  sealed trait `password-new` extends StObject
+  inline def `password-new`: `password-new` = "password-new".asInstanceOf[`password-new`]
+  
+  @js.native
   sealed trait phoneNumber extends StObject
   inline def phoneNumber: phoneNumber = "phoneNumber".asInstanceOf[phoneNumber]
   
@@ -457,6 +627,30 @@ object reactNativeElementsStrings {
   inline def `portrait-upside-down`: `portrait-upside-down` = "portrait-upside-down".asInstanceOf[`portrait-upside-down`]
   
   @js.native
+  sealed trait `postal-address` extends StObject
+  inline def `postal-address`: `postal-address` = "postal-address".asInstanceOf[`postal-address`]
+  
+  @js.native
+  sealed trait `postal-address-country` extends StObject
+  inline def `postal-address-country`: `postal-address-country` = "postal-address-country".asInstanceOf[`postal-address-country`]
+  
+  @js.native
+  sealed trait `postal-address-extended` extends StObject
+  inline def `postal-address-extended`: `postal-address-extended` = "postal-address-extended".asInstanceOf[`postal-address-extended`]
+  
+  @js.native
+  sealed trait `postal-address-extended-postal-code` extends StObject
+  inline def `postal-address-extended-postal-code`: `postal-address-extended-postal-code` = "postal-address-extended-postal-code".asInstanceOf[`postal-address-extended-postal-code`]
+  
+  @js.native
+  sealed trait `postal-address-locality` extends StObject
+  inline def `postal-address-locality`: `postal-address-locality` = "postal-address-locality".asInstanceOf[`postal-address-locality`]
+  
+  @js.native
+  sealed trait `postal-address-region` extends StObject
+  inline def `postal-address-region`: `postal-address-region` = "postal-address-region".asInstanceOf[`postal-address-region`]
+  
+  @js.native
   sealed trait `postal-code` extends StObject
   inline def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
   
@@ -475,14 +669,6 @@ object reactNativeElementsStrings {
   inline def quora: quora = "quora".asInstanceOf[quora]
   
   @js.native
-  sealed trait radiobutton_checked extends StObject
-  inline def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  
-  @js.native
-  sealed trait radiobutton_unchecked extends StObject
-  inline def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
-  
-  @js.native
   sealed trait replaceTheme extends StObject
   inline def replaceTheme: replaceTheme = "replaceTheme".asInstanceOf[replaceTheme]
   
@@ -491,16 +677,20 @@ object reactNativeElementsStrings {
   inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
+  sealed trait rgb extends StObject
+  inline def rgb: rgb = "rgb".asInstanceOf[rgb]
+  
+  @js.native
   sealed trait right extends StObject
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait rocket extends StObject
-  inline def rocket: rocket = "rocket".asInstanceOf[rocket]
-  
-  @js.native
   sealed trait scale extends StObject
   inline def scale: scale = "scale".asInstanceOf[scale]
+  
+  @js.native
+  sealed trait secondary extends StObject
+  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
   sealed trait sentences extends StObject
@@ -525,6 +715,10 @@ object reactNativeElementsStrings {
   inline def small: small = "small".asInstanceOf[small]
   
   @js.native
+  sealed trait `sms-otp` extends StObject
+  inline def `sms-otp`: `sms-otp` = "sms-otp".asInstanceOf[`sms-otp`]
+  
+  @js.native
   sealed trait solid extends StObject
   inline def solid: solid = "solid".asInstanceOf[solid]
   
@@ -539,8 +733,10 @@ object reactNativeElementsStrings {
   inline def spring: spring = "spring".asInstanceOf[spring]
   
   @js.native
-  sealed trait star extends StObject
-  inline def star: star = "star".asInstanceOf[star]
+  sealed trait `stack-overflow`
+    extends StObject
+       with SocialMediaType
+  inline def `stack-overflow`: `stack-overflow` = "stack-overflow".asInstanceOf[`stack-overflow`]
   
   @js.native
   sealed trait `street-address` extends StObject
@@ -577,6 +773,18 @@ object reactNativeElementsStrings {
   inline def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
+  sealed trait `tel-country-code` extends StObject
+  inline def `tel-country-code`: `tel-country-code` = "tel-country-code".asInstanceOf[`tel-country-code`]
+  
+  @js.native
+  sealed trait `tel-device` extends StObject
+  inline def `tel-device`: `tel-device` = "tel-device".asInstanceOf[`tel-device`]
+  
+  @js.native
+  sealed trait `tel-national` extends StObject
+  inline def `tel-national`: `tel-national` = "tel-national".asInstanceOf[`tel-national`]
+  
+  @js.native
   sealed trait telephoneNumber extends StObject
   inline def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
   
@@ -587,6 +795,10 @@ object reactNativeElementsStrings {
   @js.native
   sealed trait timing extends StObject
   inline def timing: timing = "timing".asInstanceOf[timing]
+  
+  @js.native
+  sealed trait toValue extends StObject
+  inline def toValue: toValue = "toValue".asInstanceOf[toValue]
   
   @js.native
   sealed trait top extends StObject
@@ -623,6 +835,10 @@ object reactNativeElementsStrings {
   inline def username: username = "username".asInstanceOf[username]
   
   @js.native
+  sealed trait `username-new` extends StObject
+  inline def `username-new`: `username-new` = "username-new".asInstanceOf[`username-new`]
+  
+  @js.native
   sealed trait vertical extends StObject
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
@@ -649,6 +865,12 @@ object reactNativeElementsStrings {
   inline def weibo: weibo = "weibo".asInstanceOf[weibo]
   
   @js.native
+  sealed trait whatsapp
+    extends StObject
+       with SocialMediaType
+  inline def whatsapp: whatsapp = "whatsapp".asInstanceOf[whatsapp]
+  
+  @js.native
   sealed trait `while-editing` extends StObject
   inline def `while-editing`: `while-editing` = "while-editing".asInstanceOf[`while-editing`]
   
@@ -665,6 +887,10 @@ object reactNativeElementsStrings {
   @js.native
   sealed trait xlarge extends StObject
   inline def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  
+  @js.native
+  sealed trait xyz extends StObject
+  inline def xyz: xyz = "xyz".asInstanceOf[xyz]
   
   @js.native
   sealed trait yes extends StObject

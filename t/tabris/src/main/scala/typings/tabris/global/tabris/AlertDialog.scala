@@ -9,7 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.AlertDialog")
 @js.native
-class AlertDialog ()
+/**
+  * An `AlertDialog` represents a native dialog pop-up showing a message and up to three buttons.  Is
+  * automatically disposed when closed.
+  * 
+  * This constructor can be called as a factory, without "new". Doing so allows passing an attributes
+  * object which may include (in addition to the properties) children, event listeners and layout
+  * shorthands.
+  */
+open class AlertDialog ()
   extends typings.tabris.mod.AlertDialog {
   def this(properties: Properties[OmitAlertDialogtextInputsCheckDisposed, OmitOmitAlertDialogtextInCid]) = this()
 }

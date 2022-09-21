@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object remarkableStrings {
   
   @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
   sealed trait Linefeed extends StObject
   inline def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
   
@@ -201,10 +205,6 @@ object remarkableStrings {
   @js.native
   sealed trait paragraph_open extends StObject
   inline def paragraph_open: paragraph_open = "paragraph_open".asInstanceOf[paragraph_open]
-  
-  @js.native
-  sealed trait remarkable extends StObject
-  inline def remarkable: remarkable = "remarkable".asInstanceOf[remarkable]
   
   @js.native
   sealed trait root extends StObject

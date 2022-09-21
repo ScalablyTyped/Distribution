@@ -42,31 +42,31 @@ object Allframes {
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
+    inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value*))
     
     inline def setExclude_globs(value: js.Array[String]): Self = StObject.set(x, "exclude_globs", value.asInstanceOf[js.Any])
     
     inline def setExclude_globsUndefined: Self = StObject.set(x, "exclude_globs", js.undefined)
     
-    inline def setExclude_globsVarargs(value: String*): Self = StObject.set(x, "exclude_globs", js.Array(value :_*))
+    inline def setExclude_globsVarargs(value: String*): Self = StObject.set(x, "exclude_globs", js.Array(value*))
     
     inline def setExclude_matches(value: js.Array[String]): Self = StObject.set(x, "exclude_matches", value.asInstanceOf[js.Any])
     
     inline def setExclude_matchesUndefined: Self = StObject.set(x, "exclude_matches", js.undefined)
     
-    inline def setExclude_matchesVarargs(value: String*): Self = StObject.set(x, "exclude_matches", js.Array(value :_*))
+    inline def setExclude_matchesVarargs(value: String*): Self = StObject.set(x, "exclude_matches", js.Array(value*))
     
     inline def setInclude_globs(value: js.Array[String]): Self = StObject.set(x, "include_globs", value.asInstanceOf[js.Any])
     
     inline def setInclude_globsUndefined: Self = StObject.set(x, "include_globs", js.undefined)
     
-    inline def setInclude_globsVarargs(value: String*): Self = StObject.set(x, "include_globs", js.Array(value :_*))
+    inline def setInclude_globsVarargs(value: String*): Self = StObject.set(x, "include_globs", js.Array(value*))
     
     inline def setJs_(value: js.Array[String]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
     
     inline def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
     
-    inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value :_*))
+    inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value*))
     
     inline def setMatch_about_blank(value: Boolean): Self = StObject.set(x, "match_about_blank", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object Allframes {
     
     inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value*))
     
     inline def setRun_at(value: String): Self = StObject.set(x, "run_at", value.asInstanceOf[js.Any])
     

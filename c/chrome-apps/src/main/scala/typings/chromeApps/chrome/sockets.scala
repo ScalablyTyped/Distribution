@@ -1,7 +1,6 @@
 package typings.chromeApps.chrome
 
 import typings.chromeApps.anon.Max
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,21 +82,21 @@ object sockets {
   trait ReceiveEventArgs extends StObject {
     
     /** The data received, with a maxium size of *bufferSize*. */
-    var data: ArrayBuffer
+    var data: js.typedarray.ArrayBuffer
     
     /** The socket identifier. */
     var socketId: integer
   }
   object ReceiveEventArgs {
     
-    inline def apply(data: ArrayBuffer, socketId: integer): ReceiveEventArgs = {
+    inline def apply(data: js.typedarray.ArrayBuffer, socketId: integer): ReceiveEventArgs = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiveEventArgs]
     }
     
     extension [Self <: ReceiveEventArgs](x: Self) {
       
-      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }

@@ -10,7 +10,7 @@ object transactionMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Entry")
   @js.native
-  class Entry protected () extends StObject {
+  open class Entry protected () extends StObject {
     def this(rank: Vertex, action: js.Function0[Unit]) = this()
     
     def action(): Unit = js.native
@@ -28,19 +28,19 @@ object transactionMod {
     
     @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Entry.nextSeq")
     @js.native
-    def nextSeq: js.Any = js.native
-    inline def nextSeq_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextSeq")(x.asInstanceOf[js.Any])
+    def nextSeq: Any = js.native
+    inline def nextSeq_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextSeq")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction")
   @js.native
-  class Transaction () extends StObject {
+  open class Transaction () extends StObject {
     
-    /* private */ var checkRegen: js.Any = js.native
+    /* private */ var checkRegen: Any = js.native
     
     def close(): Unit = js.native
     
-    /* private */ var entries: js.Any = js.native
+    /* private */ var entries: Any = js.native
     
     var inCallback: Double = js.native
     
@@ -48,14 +48,14 @@ object transactionMod {
     
     def last(h: js.Function0[Unit]): Unit = js.native
     
-    /* private */ var lastQ: js.Any = js.native
+    /* private */ var lastQ: Any = js.native
     
     /**
       * Add an action to run after all last() actions.
       */
     def post(childIx: Double, action: js.Function0[Unit]): Unit = js.native
     
-    /* private */ var postQ: js.Any = js.native
+    /* private */ var postQ: Any = js.native
     
     def prioritized(target: Vertex, action: js.Function0[Unit]): Unit = js.native
     
@@ -65,9 +65,9 @@ object transactionMod {
     
     def sample(h: js.Function0[Unit]): Unit = js.native
     
-    /* private */ var sampleQ: js.Any = js.native
+    /* private */ var sampleQ: Any = js.native
     
-    /* private */ var toRegen: js.Any = js.native
+    /* private */ var toRegen: Any = js.native
   }
   /* static members */
   object Transaction {
@@ -80,8 +80,8 @@ object transactionMod {
     
     @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.collectCyclesAtEnd")
     @js.native
-    def collectCyclesAtEnd: js.Any = js.native
-    inline def collectCyclesAtEnd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectCyclesAtEnd")(x.asInstanceOf[js.Any])
+    def collectCyclesAtEnd: Any = js.native
+    inline def collectCyclesAtEnd_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectCyclesAtEnd")(x.asInstanceOf[js.Any])
     
     @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.currentTransaction")
     @js.native
@@ -99,14 +99,14 @@ object transactionMod {
     
     @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.onStartHooks")
     @js.native
-    def onStartHooks: js.Any = js.native
-    inline def onStartHooks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStartHooks")(x.asInstanceOf[js.Any])
+    def onStartHooks: Any = js.native
+    inline def onStartHooks_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStartHooks")(x.asInstanceOf[js.Any])
     
     inline def run[A](f: js.Function0[A]): A = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(f.asInstanceOf[js.Any]).asInstanceOf[A]
     
     @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.runningOnStartHooks")
     @js.native
-    def runningOnStartHooks: js.Any = js.native
-    inline def runningOnStartHooks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runningOnStartHooks")(x.asInstanceOf[js.Any])
+    def runningOnStartHooks: Any = js.native
+    inline def runningOnStartHooks_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runningOnStartHooks")(x.asInstanceOf[js.Any])
   }
 }

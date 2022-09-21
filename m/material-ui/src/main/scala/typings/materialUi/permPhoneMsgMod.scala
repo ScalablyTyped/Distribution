@@ -10,10 +10,10 @@ object permPhoneMsgMod {
   
   @JSImport("material-ui/svg-icons/action/perm-phone-msg", JSImport.Default)
   @js.native
-  class default () extends ActionPermPhoneMsg
+  open class default () extends ActionPermPhoneMsg
   
   @JSImport("material-ui/svg-icons/action/perm-phone-msg", "ActionPermPhoneMsg")
   @js.native
-  class ActionPermPhoneMsg ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPermPhoneMsg ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

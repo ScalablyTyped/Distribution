@@ -36,6 +36,17 @@ trait StreamConfig extends StObject {
   /** 是否采集屏幕分享流 */
   var screen: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * 是否采集系统音频
+    * 请勿同时设置 audio 和 screenAudio 为 true。
+    * 采集系统声音只支持 Chrome M74+ ，在 Windows 和 Chrome OS 上，可以捕获整个系统的音频，在 Linux 和 Mac 上，只能捕获选项卡的音频。其它 Chrome 版本、其它系统、其它浏览器均不支持。
+    * 屏幕分享获取指引：https://trtc-1252463788.file.myqcloud.com/web/docs/tutorial-06-advanced-screencast.html。
+    */
+  var screenAudio: js.UndefOr[Boolean] = js.undefined
+  
+  /** 用户ID */
+  var userId: String
+  
   /** 是否从摄像头采集视频 */
   var video: Boolean
   
@@ -44,8 +55,8 @@ trait StreamConfig extends StObject {
 }
 object StreamConfig {
   
-  inline def apply(audio: Boolean, video: Boolean): StreamConfig = {
-    val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
+  inline def apply(audio: Boolean, userId: String, video: Boolean): StreamConfig = {
+    val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamConfig]
   }
   
@@ -75,7 +86,13 @@ object StreamConfig {
     
     inline def setScreen(value: Boolean): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
+    inline def setScreenAudio(value: Boolean): Self = StObject.set(x, "screenAudio", value.asInstanceOf[js.Any])
+    
+    inline def setScreenAudioUndefined: Self = StObject.set(x, "screenAudio", js.undefined)
+    
     inline def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
+    
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     inline def setVideo(value: Boolean): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     

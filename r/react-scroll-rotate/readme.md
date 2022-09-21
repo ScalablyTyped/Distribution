@@ -10,15 +10,12 @@ Very simple react component for rotate element based on scroll position
 | ------------------ | :-------------: |
 | Full name          | react-scroll-rotate |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 0 |
-| # downloads        | 2196 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1420.3333333333333 |
+| # stars            | 6.0 |
 
 ## Links
-- [Homepage](https://github.com/giladk/react-scroll-rotate#readme)
-- [Bugs](https://github.com/giladk/react-scroll-rotate/issues)
-- [Repository](https://github.com/giladk/react-scroll-rotate)
 - [Npm](https://www.npmjs.com/package/react-scroll-rotate)
     
 

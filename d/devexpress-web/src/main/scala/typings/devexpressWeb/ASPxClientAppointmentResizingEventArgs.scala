@@ -24,7 +24,7 @@ trait ASPxClientAppointmentResizingEventArgs
   /**
     * Gets a mouse event object related to the current appointment resizing operation.
     */
-  var mouseEvent: js.Any
+  var mouseEvent: Any
   
   /**
     * Gets the appointment's interval after resizing.
@@ -41,7 +41,7 @@ object ASPxClientAppointmentResizingEventArgs {
   inline def apply(
     allow: Boolean,
     appointmentId: String,
-    mouseEvent: js.Any,
+    mouseEvent: Any,
     newInterval: ASPxClientTimeInterval,
     oldInterval: ASPxClientTimeInterval
   ): ASPxClientAppointmentResizingEventArgs = {
@@ -55,7 +55,7 @@ object ASPxClientAppointmentResizingEventArgs {
     
     inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
-    inline def setMouseEvent(value: js.Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
+    inline def setMouseEvent(value: Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
     
     inline def setNewInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
     

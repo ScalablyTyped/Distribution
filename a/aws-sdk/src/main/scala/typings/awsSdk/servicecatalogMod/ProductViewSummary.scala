@@ -57,7 +57,7 @@ trait ProductViewSummary extends StObject {
   var SupportUrl: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportUrl] = js.undefined
   
   /**
-    * The product type. Contact the product administrator for the significance of this value. If this value is MARKETPLACE, the product was created by AWS Marketplace.
+    * The product type. Contact the product administrator for the significance of this value. If this value is MARKETPLACE, the product was created by Amazon Web Services Marketplace.
     */
   var Type: js.UndefOr[ProductType] = js.undefined
 }

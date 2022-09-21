@@ -11,14 +11,11 @@ Easy, light, flexible tree view made with React.
 | Full name          | react-treeview |
 | Keywords           | facebook, react, treeview, tree-view, tree, view, treenode, tree-node, ui, react-component |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 391011 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29552.333333333332 |
+| # stars            | 1071.0 |
 
 ## Links
-- [Homepage](https://github.com/chenglou/react-treeview)
-- [Bugs](https://github.com/chenglou/react-treeview/issues)
-- [Repository](https://github.com/chenglou/react-treeview)
 - [Npm](https://www.npmjs.com/package/react-treeview)
     
 

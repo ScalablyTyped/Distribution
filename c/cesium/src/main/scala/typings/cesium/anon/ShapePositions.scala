@@ -1,5 +1,6 @@
 package typings.cesium.anon
 
+import typings.cesium.mod.Cartesian2
 import typings.cesium.mod.Cartesian3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,11 +16,11 @@ trait ShapePositions extends StObject {
   
   var polylinePositions: js.Array[Cartesian3]
   
-  var shapePositions: Double
+  var shapePositions: js.Array[Cartesian2]
 }
 object ShapePositions {
   
-  inline def apply(polylinePositions: js.Array[Cartesian3], shapePositions: Double): ShapePositions = {
+  inline def apply(polylinePositions: js.Array[Cartesian3], shapePositions: js.Array[Cartesian2]): ShapePositions = {
     val __obj = js.Dynamic.literal(polylinePositions = polylinePositions.asInstanceOf[js.Any], shapePositions = shapePositions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapePositions]
   }
@@ -40,8 +41,10 @@ object ShapePositions {
     
     inline def setPolylinePositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "polylinePositions", value.asInstanceOf[js.Any])
     
-    inline def setPolylinePositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "polylinePositions", js.Array(value :_*))
+    inline def setPolylinePositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "polylinePositions", js.Array(value*))
     
-    inline def setShapePositions(value: Double): Self = StObject.set(x, "shapePositions", value.asInstanceOf[js.Any])
+    inline def setShapePositions(value: js.Array[Cartesian2]): Self = StObject.set(x, "shapePositions", value.asInstanceOf[js.Any])
+    
+    inline def setShapePositionsVarargs(value: Cartesian2*): Self = StObject.set(x, "shapePositions", js.Array(value*))
   }
 }

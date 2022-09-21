@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("Lightpick")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.lightpick.mod.^ {
       def this(options: Options) = this()
     }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SettingsCommand extends StObject {
   
   /** Gets or sets the command ID. */
-  var id: js.Any
+  var id: Any
   
   /** Gets or sets the handler for the event that is raised when the user selects the command. */
   def invoked(command: IUICommand): Unit
@@ -23,14 +23,14 @@ trait SettingsCommand extends StObject {
 }
 object SettingsCommand {
   
-  inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): SettingsCommand = {
+  inline def apply(id: Any, invoked: /* command */ IUICommand => Unit, label: String): SettingsCommand = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsCommand]
   }
   
   extension [Self <: SettingsCommand](x: Self) {
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
     

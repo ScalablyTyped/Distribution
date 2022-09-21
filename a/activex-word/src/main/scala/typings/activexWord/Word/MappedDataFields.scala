@@ -14,7 +14,7 @@ trait MappedDataFields extends StObject {
   
   def Item(Index: WdMappedDataFields): MappedDataField
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.MappedDataFields_typekey")
   var WordDotMappedDataFields_typekey: MappedDataFields
@@ -26,7 +26,7 @@ object MappedDataFields {
     Count: Double,
     Creator: Double,
     Item: WdMappedDataFields => MappedDataField,
-    Parent: js.Any,
+    Parent: Any,
     WordDotMappedDataFields_typekey: MappedDataFields
   ): MappedDataFields = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object MappedDataFields {
     
     inline def setItem(value: WdMappedDataFields => MappedDataField): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotMappedDataFields_typekey(value: MappedDataFields): Self = StObject.set(x, "Word.MappedDataFields_typekey", value.asInstanceOf[js.Any])
   }

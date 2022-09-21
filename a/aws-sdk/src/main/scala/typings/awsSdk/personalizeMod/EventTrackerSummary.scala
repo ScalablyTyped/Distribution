@@ -9,7 +9,7 @@ trait EventTrackerSummary extends StObject {
   /**
     * The date and time (in Unix time) that the event tracker was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.undefined
+  var creationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the event tracker.
@@ -19,7 +19,7 @@ trait EventTrackerSummary extends StObject {
   /**
     * The date and time (in Unix time) that the event tracker was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
+  var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the event tracker.
@@ -40,7 +40,7 @@ object EventTrackerSummary {
   
   extension [Self <: EventTrackerSummary](x: Self) {
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
@@ -48,7 +48,7 @@ object EventTrackerSummary {
     
     inline def setEventTrackerArnUndefined: Self = StObject.set(x, "eventTrackerArn", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     

@@ -15,20 +15,20 @@ object blueprintMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Button(props: IButtonProps & CommonProps[js.Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Button(props: IButtonProps & CommonProps[Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def Checkbox(
-    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICheckboxProps */ js.Any) & CommonProps[js.Any]
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICheckboxProps */ Any) & CommonProps[Any]
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Checkbox")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def Collapse(
-    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICollapseProps */ js.Any) & CommonProps[js.Any]
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICollapseProps */ Any) & CommonProps[Any]
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Collapse")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def InputGroup(props: IInputGroupProps & CommonProps[js.Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InputGroup")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def InputGroup(props: IInputGroupProps & CommonProps[Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("InputGroup")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def Select(
-    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISelectProps<any> */ js.Any) & CommonProps[js.Any]
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISelectProps<any> */ Any) & CommonProps[Any]
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Select")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type CommonProps[T] = DOMAttributes[T]
@@ -62,9 +62,7 @@ object blueprintMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IBPInputGroupProps * / any */ trait IInputGroupProps extends StObject {
     
-    var rightIcon: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IIconProps * / any['icon'] */ js.Any
-      ] = js.undefined
+    var rightIcon: js.UndefOr[String] = js.undefined
   }
   object IInputGroupProps {
     
@@ -75,9 +73,7 @@ object blueprintMod {
     
     extension [Self <: IInputGroupProps](x: Self) {
       
-      inline def setRightIcon(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IIconProps * / any['icon'] */ js.Any
-      ): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
+      inline def setRightIcon(value: String): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
       
       inline def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
     }

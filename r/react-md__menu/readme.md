@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__menu
 
-Typings are for version 2.4.3
+Typings are for version 5.1.4
 
 ## Library description:
 Create menus that auto-position themselves within the viewport and adhere to the accessibility guidelines
@@ -10,10 +10,10 @@ Create menus that auto-position themselves within the viewport and adhere to the
 | ------------------ | :-------------: |
 | Full name          | @react-md/menu |
 | Keywords           | accessibility, a11y, react-md, material design, react, menu, dropdown, component, components |
-| # releases         | 39 |
-| # dependents       | 1 |
-| # downloads        | 17515 |
-| # stars            | 0 |
+| # releases         | 47 |
+| # dependents       | 0.0 |
+| # downloads        | 5688.0 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/menu/demos)

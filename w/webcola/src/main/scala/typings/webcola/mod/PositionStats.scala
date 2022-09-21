@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "PositionStats")
 @js.native
-class PositionStats protected ()
+open class PositionStats protected ()
   extends typings.webcola.vpscMod.PositionStats {
   def this(scale: Double) = this()
 }

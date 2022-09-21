@@ -13,10 +13,10 @@ trait IndexMemberDeclaration
 object IndexMemberDeclaration {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
     _trailingTriviaWidth: Double,
     end: () => Double,

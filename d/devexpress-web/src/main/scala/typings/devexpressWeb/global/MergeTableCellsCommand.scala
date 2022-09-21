@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MergeTableCellsCommand")
 @js.native
-class MergeTableCellsCommand ()
+open class MergeTableCellsCommand ()
   extends StObject
      with typings.devexpressWeb.MergeTableCellsCommand {
   

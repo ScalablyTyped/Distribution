@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDialogflow.anon
 
+import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3EntityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,14 @@ trait Name extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name of the operation resource. */
+  /**
+    * The language of the following fields in `entity_type`: * `EntityType.entities.value` * `EntityType.entities.synonyms` * `EntityType.excluded_phrases.value` If not specified, the
+    * agent's default language is used. [Many languages](https://cloud.google.com/dialogflow/cx/docs/reference/language) are supported. Note: languages must be enabled in the agent
+    * before they can be used.
+    */
+  var languageCode: js.UndefOr[String] = js.undefined
+  
+  /** The unique identifier of the entity type. Required for EntityTypes.UpdateEntityType. Format: `projects//locations//agents//entityTypes/`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -37,6 +45,12 @@ trait Name extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: GoogleCloudDialogflowCxV3EntityType
+  
+  /** The mask to control which fields get updated. */
+  var updateMask: js.UndefOr[String] = js.undefined
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -45,8 +59,8 @@ trait Name extends StObject {
 }
 object Name {
   
-  inline def apply(name: String): Name = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: GoogleCloudDialogflowCxV3EntityType): Name = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
@@ -76,6 +90,10 @@ object Name {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
@@ -89,6 +107,12 @@ object Name {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: GoogleCloudDialogflowCxV3EntityType): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

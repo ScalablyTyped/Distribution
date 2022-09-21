@@ -33,6 +33,6 @@ object ListProgressUpdateStreamsResult {
     
     inline def setProgressUpdateStreamSummaryListUndefined: Self = StObject.set(x, "ProgressUpdateStreamSummaryList", js.undefined)
     
-    inline def setProgressUpdateStreamSummaryListVarargs(value: ProgressUpdateStreamSummary*): Self = StObject.set(x, "ProgressUpdateStreamSummaryList", js.Array(value :_*))
+    inline def setProgressUpdateStreamSummaryListVarargs(value: ProgressUpdateStreamSummary*): Self = StObject.set(x, "ProgressUpdateStreamSummaryList", js.Array(value*))
   }
 }

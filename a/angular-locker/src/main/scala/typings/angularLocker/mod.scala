@@ -25,7 +25,7 @@ object mod {
     }
     object ILockerProvider {
       
-      inline def apply($get: js.Any, defaults: ILockerSettings => Unit): ILockerProvider = {
+      inline def apply($get: Any, defaults: ILockerSettings => Unit): ILockerProvider = {
         val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], defaults = js.Any.fromFunction1(defaults))
         __obj.asInstanceOf[ILockerProvider]
       }
@@ -45,13 +45,13 @@ object mod {
         * @param  key    The key to add
         * @param  value  The value to add
         */
-      def add(key: String, value: js.Any): Boolean = js.native
+      def add(key: String, value: Any): Boolean = js.native
       
       /**
         * Return all items in storage within the current namespace/driver
         *
         */
-      def all(): js.Any = js.native
+      def all(): Any = js.native
       
       /**
         * Bind a storage key to a $scope property
@@ -61,7 +61,7 @@ object mod {
         * @param   def     The default value to initially bind
         */
       def bind(scope: IScope, property: String): ILockerService = js.native
-      def bind(scope: IScope, property: String, defaultPropertyValue: js.Any): ILockerService = js.native
+      def bind(scope: IScope, property: String, defaultPropertyValue: Any): ILockerService = js.native
       
       /**
         * Remove all items set within the current namespace/driver
@@ -105,10 +105,10 @@ object mod {
         * @param  key  The key to get
         * @param         def  The default value if it does not exist
         */
-      def get(key: String): js.Any = js.native
-      def get(key: String, defaultValue: js.Any): js.Any = js.native
-      def get(key: js.Array[String]): js.Any = js.native
-      def get(key: js.Array[String], defaultValue: js.Any): js.Any = js.native
+      def get(key: String): Any = js.native
+      def get(key: String, defaultValue: Any): Any = js.native
+      def get(key: js.Array[String]): Any = js.native
+      def get(key: js.Array[String], defaultValue: Any): Any = js.native
       
       /**
         * Get the currently set namespace
@@ -147,10 +147,10 @@ object mod {
         * @param  key  The key to pull from storage
         * @param   def  The default value if it does not exist
         */
-      def pull(key: String): js.Any = js.native
-      def pull(key: String, defaultValue: js.Any): js.Any = js.native
-      def pull(key: js.Array[String]): js.Any = js.native
-      def pull(key: js.Array[String], defaultValue: js.Any): js.Any = js.native
+      def pull(key: String): Any = js.native
+      def pull(key: String, defaultValue: Any): Any = js.native
+      def pull(key: js.Array[String]): Any = js.native
+      def pull(key: js.Array[String], defaultValue: Any): Any = js.native
       
       /**
         * Add a new item to storage (even if it already exists)
@@ -165,14 +165,14 @@ object mod {
         * @param  putFunction    The default to pass to function if doesn't already exist
         * @param  value  The value to add
         */
-      def put(key: String, putFunction: ILockerServicePutFunction, value: js.Any): ILockerService | Boolean = js.native
+      def put(key: String, putFunction: ILockerServicePutFunction, value: Any): ILockerService | Boolean = js.native
       /**
         * Add a new item to storage (even if it already exists)
         *
         * @param  key    The key to add
         * @param  value  The value to add
         */
-      def put(key: String, value: js.Any): ILockerService | Boolean = js.native
+      def put(key: String, value: Any): ILockerService | Boolean = js.native
       /**
         * Add a new item to storage (even if it already exists)
         *
@@ -198,7 +198,7 @@ object mod {
       def unbind(scope: IScope, property: String): ILockerService = js.native
     }
     
-    type ILockerServicePutFunction = js.Function1[/* current */ js.Any, js.Any]
+    type ILockerServicePutFunction = js.Function1[/* current */ Any, Any]
     
     trait ILockerSettings extends StObject {
       

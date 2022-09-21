@@ -1,21 +1,18 @@
 package typings.reactNativeSvg.mod
 
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.reactNativeSvg.mod.^
+import typings.reactNativeSvg.xmlMod.XmlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("react-native-svg", "SvgFromXml")
 @js.native
-class SvgFromXml protected ()
-  extends Component[XmlProps, XmlState, js.Any] {
+open class SvgFromXml protected ()
+  extends typings.reactNativeSvg.reactNativeSVGMod.SvgFromXml {
   def this(props: XmlProps) = this()
-  def this(props: XmlProps, context: js.Any) = this()
-}
-object SvgFromXml {
-  
-  inline def apply: ComponentClass[XmlProps, XmlState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SvgFromXml").asInstanceOf[ComponentClass[XmlProps, XmlState]]
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: XmlProps, context: Any) = this()
 }

@@ -23,7 +23,7 @@ object ReturnTypeGetStackTraceResponse {
     
     inline def setParamsType(value: js.Array[GetStackTraceRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: GetStackTraceRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetStackTraceRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetStackTraceResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

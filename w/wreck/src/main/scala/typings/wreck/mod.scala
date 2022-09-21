@@ -76,8 +76,8 @@ object mod extends Shortcut {
           /* redirectMethod */ String, 
           /* statusCode */ Double, 
           /* location */ String, 
-          /* resHeaders */ StringDictionary[js.Any], 
-          /* redirectOptions */ js.Any, 
+          /* resHeaders */ StringDictionary[Any], 
+          /* redirectOptions */ Any, 
           /* next */ js.Function0[js.Object], 
           Unit
         ]
@@ -85,15 +85,15 @@ object mod extends Shortcut {
     
     var ciphers: js.UndefOr[String] = js.undefined
     
-    var downstreamRes: js.UndefOr[js.Any] = js.undefined
+    var downstreamRes: js.UndefOr[Any] = js.undefined
     
     var events: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var maxBytes: js.UndefOr[Double] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.undefined
+    var payload: js.UndefOr[Any] = js.undefined
     
     var redirect303: js.UndefOr[Boolean] = js.undefined
     
@@ -129,7 +129,7 @@ object mod extends Shortcut {
       inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
       inline def setBeforeRedirect(
-        value: (/* redirectMethod */ String, /* statusCode */ Double, /* location */ String, /* resHeaders */ StringDictionary[js.Any], /* redirectOptions */ js.Any, /* next */ js.Function0[js.Object]) => Unit
+        value: (/* redirectMethod */ String, /* statusCode */ Double, /* location */ String, /* resHeaders */ StringDictionary[Any], /* redirectOptions */ Any, /* next */ js.Function0[js.Object]) => Unit
       ): Self = StObject.set(x, "beforeRedirect", js.Any.fromFunction6(value))
       
       inline def setBeforeRedirectUndefined: Self = StObject.set(x, "beforeRedirect", js.undefined)
@@ -138,7 +138,7 @@ object mod extends Shortcut {
       
       inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
       
-      inline def setDownstreamRes(value: js.Any): Self = StObject.set(x, "downstreamRes", value.asInstanceOf[js.Any])
+      inline def setDownstreamRes(value: Any): Self = StObject.set(x, "downstreamRes", value.asInstanceOf[js.Any])
       
       inline def setDownstreamResUndefined: Self = StObject.set(x, "downstreamRes", js.undefined)
       
@@ -146,7 +146,7 @@ object mod extends Shortcut {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -154,7 +154,7 @@ object mod extends Shortcut {
       
       inline def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
@@ -190,26 +190,26 @@ object mod extends Shortcut {
   
   trait RequestResponse extends StObject {
     
-    var payload: js.Any
+    var payload: Any
     
     var res: IncomingMessage
   }
   object RequestResponse {
     
-    inline def apply(payload: js.Any, res: IncomingMessage): RequestResponse = {
+    inline def apply(payload: Any, res: IncomingMessage): RequestResponse = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestResponse]
     }
     
     extension [Self <: RequestResponse](x: Self) {
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setRes(value: IncomingMessage): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     }
   }
   
-  type ResponseCallback = js.Function2[/* err */ js.UndefOr[typings.boom.mod.^[js.Any]], /* details */ Req, Unit]
+  type ResponseCallback = js.Function2[/* err */ js.UndefOr[typings.boom.mod.^[Any]], /* details */ Req, Unit]
   
   @js.native
   trait WreckEventEmitter extends EventEmitter {
@@ -233,7 +233,7 @@ object mod extends Shortcut {
     
     def get(uri: String, options: RequestOptions & ReadOptions): js.Promise[RequestResponse] = js.native
     
-    def parseCacheControl(field: String): js.Any = js.native
+    def parseCacheControl(field: String): Any = js.native
     
     def patch(uri: String, options: RequestOptions & ReadOptions): js.Promise[RequestResponse] = js.native
     
@@ -241,12 +241,12 @@ object mod extends Shortcut {
     
     def put(uri: String, options: RequestOptions & ReadOptions): js.Promise[RequestResponse] = js.native
     
-    def read(response: IncomingMessage, options: ReadOptions): js.Promise[js.Any] = js.native
+    def read(response: IncomingMessage, options: ReadOptions): js.Promise[Any] = js.native
     
     def request(method: String, uri: String, options: RequestOptions): PromiseIncomingMessagereq = js.native
     
-    def toReadableStream(payload: js.Any): Readable = js.native
-    def toReadableStream(payload: js.Any, encoding: String): Readable = js.native
+    def toReadableStream(payload: Any): Readable = js.native
+    def toReadableStream(payload: Any, encoding: String): Readable = js.native
   }
   
   type _To = WreckObject

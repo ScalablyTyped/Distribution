@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BasicSli extends StObject {
   
   /** Good service is defined to be the count of requests made to this service that return successfully. */
-  var availability: js.UndefOr[js.Any] = js.undefined
+  var availability: js.UndefOr[Any] = js.undefined
   
   /** Good service is defined to be the count of requests made to this service that are fast enough with respect to latency.threshold. */
   var latency: js.UndefOr[LatencyCriteria] = js.undefined
@@ -39,7 +39,7 @@ object BasicSli {
   
   extension [Self <: BasicSli](x: Self) {
     
-    inline def setAvailability(value: js.Any): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
+    inline def setAvailability(value: Any): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
@@ -51,18 +51,18 @@ object BasicSli {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setLocationVarargs(value: String*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: String*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value*))
     
     inline def setVersion(value: js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value*))
   }
 }

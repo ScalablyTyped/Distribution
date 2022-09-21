@@ -4,7 +4,6 @@ import typings.chromeApps.chrome.platformKeys.Match
 import typings.chromeApps.chrome.platformKeys.SelectDetails
 import typings.chromeApps.chrome.platformKeys.VerificationDetails
 import typings.chromeApps.chrome.platformKeys.VerificationResult
-import typings.std.ArrayBuffer
 import typings.std.CryptoKey
 import typings.std.SubtleCrypto
 import org.scalablytyped.runtime.StObject
@@ -42,7 +41,7 @@ trait TypeofplatformKeysClientCertificateType extends StObject {
     * @see[CryptoKey docs]{@link http://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey}
     */
   def getKeyPair(
-    certificate: ArrayBuffer,
+    certificate: js.typedarray.ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
   ): Unit
@@ -85,7 +84,7 @@ object TypeofplatformKeysClientCertificateType {
   
   inline def apply(
     ClientCertificateType: ECDSASIGN,
-    getKeyPair: (ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit,
+    getKeyPair: (js.typedarray.ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit,
     selectClientCertificates: (SelectDetails, js.Function1[/* matches */ js.Array[Match], Unit]) => Unit,
     subtleCrypto: () => SubtleCrypto,
     verifyTLSServerCertificate: (VerificationDetails, js.Function1[/* result */ VerificationResult, Unit]) => Unit
@@ -99,7 +98,7 @@ object TypeofplatformKeysClientCertificateType {
     inline def setClientCertificateType(value: ECDSASIGN): Self = StObject.set(x, "ClientCertificateType", value.asInstanceOf[js.Any])
     
     inline def setGetKeyPair(
-      value: (ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit
+      value: (js.typedarray.ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit
     ): Self = StObject.set(x, "getKeyPair", js.Any.fromFunction3(value))
     
     inline def setSelectClientCertificates(value: (SelectDetails, js.Function1[/* matches */ js.Array[Match], Unit]) => Unit): Self = StObject.set(x, "selectClientCertificates", js.Any.fromFunction2(value))

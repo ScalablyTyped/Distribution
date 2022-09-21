@@ -3,6 +3,7 @@ package typings.firebaseFirestoreTypes
 import typings.firebaseFirestoreTypes.mod.DocumentSnapshot
 import typings.firebaseFirestoreTypes.mod.FirestoreError
 import typings.firebaseFirestoreTypes.mod.QuerySnapshot
+import typings.firebaseUtil.mod.EmulatorMockTokenOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,6 +86,25 @@ object anon {
       inline def setNext(value: /* snapshot */ DocumentSnapshot[T] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
       inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    }
+  }
+  
+  trait MockUserToken extends StObject {
+    
+    var mockUserToken: js.UndefOr[EmulatorMockTokenOptions | String] = js.undefined
+  }
+  object MockUserToken {
+    
+    inline def apply(): MockUserToken = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MockUserToken]
+    }
+    
+    extension [Self <: MockUserToken](x: Self) {
+      
+      inline def setMockUserToken(value: EmulatorMockTokenOptions | String): Self = StObject.set(x, "mockUserToken", value.asInstanceOf[js.Any])
+      
+      inline def setMockUserTokenUndefined: Self = StObject.set(x, "mockUserToken", js.undefined)
     }
   }
   

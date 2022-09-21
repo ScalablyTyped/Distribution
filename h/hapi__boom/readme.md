@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__boom
 
-Typings are for version 9.1.0
+Typings are for version 10.0.0
 
 ## Library description:
 HTTP-friendly error objects
@@ -10,10 +10,10 @@ HTTP-friendly error objects
 | ------------------ | :-------------: |
 | Full name          | @hapi/boom |
 | Keywords           | error, http |
-| # releases         | 18 |
-| # dependents       | 369 |
-| # downloads        | 39829266 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 8502094.333333334 |
+| # stars            | 2890.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/boom#readme)

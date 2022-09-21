@@ -10,10 +10,10 @@ object gatewayDestMod {
   
   @JSImport("react-gateway/GatewayDest", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[GatewayDestProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[GatewayDestProps, js.Object, Any]
   
-  type GatewayDest = Component[GatewayDestProps, js.Object, js.Any]
+  type GatewayDest = Component[GatewayDestProps, js.Object, Any]
   
   trait GatewayDestProps extends StObject {
     

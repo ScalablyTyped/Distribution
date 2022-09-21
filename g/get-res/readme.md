@@ -10,10 +10,10 @@ Get ten most popular screen resolutions
 | ------------------ | :-------------: |
 | Full name          | get-res |
 | Keywords           | resolution, screen, size |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 108609 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6404.333333333333 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/get-res#readme)

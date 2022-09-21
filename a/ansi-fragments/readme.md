@@ -10,15 +10,12 @@ A tiny library with builders to help making logs/CLI pretty with a nice DX.
 | ------------------ | :-------------: |
 | Full name          | ansi-fragments |
 | Keywords           | cli, ansi |
-| # releases         | 3 |
-| # dependents       | 30 |
-| # downloads        | 16595945 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2873092.3333333335 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/zamotany/ansi-fragments)
-- [Bugs](https://github.com/zamotany/ansi-fragments/issues)
-- [Repository](https://github.com/zamotany/ansi-fragments)
 - [Npm](https://www.npmjs.com/package/ansi-fragments)
     
 

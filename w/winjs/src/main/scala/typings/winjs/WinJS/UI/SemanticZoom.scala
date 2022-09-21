@@ -29,7 +29,7 @@ trait SemanticZoom extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this SemanticZoom. Call this method when the SemanticZoom is no longer needed. After calling this method, the SemanticZoom becomes unusable.
@@ -64,7 +64,7 @@ trait SemanticZoom extends StObject {
     * Occurs when the control zooms in or out.
     * @param eventInfo An object that contains information about the event. The detail property of this object is true when the control is zoomed out. Otherwise, it's false.
     **/
-  def onzoomchanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onzoomchanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Unregisters an event handler for the specified event.
@@ -88,7 +88,7 @@ trait SemanticZoom extends StObject {
   /**
     * Gets or sets a mapping function which can be used to change the item that is targeted on zoom in.
     **/
-  def zoomedInItem(any: js.Any): js.Any = js.native
+  def zoomedInItem(any: Any): Any = js.native
   
   /**
     * Gets or sets a value that indicates whether the control is zoomed out.
@@ -98,5 +98,5 @@ trait SemanticZoom extends StObject {
   /**
     * Gets or sets a mapping function which can be used to change the item that is targeted on zoom out.
     **/
-  def zoomedOutItem(any: js.Any): js.Any = js.native
+  def zoomedOutItem(any: Any): Any = js.native
 }

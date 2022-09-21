@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ScheduledCallback extends StObject {
   
-  def apply(params: js.Any*): Unit = js.native
+  def apply(params: Any*): Unit = js.native
 }

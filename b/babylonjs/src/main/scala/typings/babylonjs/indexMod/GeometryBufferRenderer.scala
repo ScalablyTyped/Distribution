@@ -6,15 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "GeometryBufferRenderer")
 @js.native
-class GeometryBufferRenderer protected ()
+open class GeometryBufferRenderer protected ()
   extends typings.babylonjs.renderingIndexMod.GeometryBufferRenderer {
   /**
     * Creates a new G Buffer for the scene
     * @param scene The scene the buffer belongs to
-    * @param ratio How big is the buffer related to the main canvas.
+    * @param ratio How big is the buffer related to the main canvas (default: 1)
+    * @param depthFormat Format of the depth texture (default: Constants.TEXTUREFORMAT_DEPTH16)
     */
   def this(scene: typings.babylonjs.sceneMod.Scene) = this()
   def this(scene: typings.babylonjs.sceneMod.Scene, ratio: Double) = this()
+  def this(scene: typings.babylonjs.sceneMod.Scene, ratio: Double, depthFormat: Double) = this()
+  def this(scene: typings.babylonjs.sceneMod.Scene, ratio: Unit, depthFormat: Double) = this()
 }
 /* static members */
 object GeometryBufferRenderer {
@@ -24,12 +27,20 @@ object GeometryBufferRenderer {
   val ^ : js.Any = js.native
   
   /**
-    * Constant used to retrieve the depth + normal texture index in the G-Buffer textures array
-    * using getIndex(GeometryBufferRenderer.DEPTHNORMAL_TEXTURE_INDEX)
+    * Constant used to retrieve the depth texture index in the G-Buffer textures array
+    * using getIndex(GeometryBufferRenderer.DEPTH_TEXTURE_INDEX)
     */
-  @JSImport("babylonjs/index", "GeometryBufferRenderer.DEPTHNORMAL_TEXTURE_TYPE")
+  @JSImport("babylonjs/index", "GeometryBufferRenderer.DEPTH_TEXTURE_TYPE")
   @js.native
-  val DEPTHNORMAL_TEXTURE_TYPE: Double = js.native
+  val DEPTH_TEXTURE_TYPE: Double = js.native
+  
+  /**
+    * Constant used to retrieve the normal texture index in the G-Buffer textures array
+    * using getIndex(GeometryBufferRenderer.NORMAL_TEXTURE_INDEX)
+    */
+  @JSImport("babylonjs/index", "GeometryBufferRenderer.NORMAL_TEXTURE_TYPE")
+  @js.native
+  val NORMAL_TEXTURE_TYPE: Double = js.native
   
   /**
     * Constant used to retrieve the position texture index in the G-Buffer textures array
@@ -55,6 +66,9 @@ object GeometryBufferRenderer {
   @js.native
   val VELOCITY_TEXTURE_TYPE: Double = js.native
   
-  /** @hidden */
+  /**
+    * @param _
+    * @hidden
+    */
   inline def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

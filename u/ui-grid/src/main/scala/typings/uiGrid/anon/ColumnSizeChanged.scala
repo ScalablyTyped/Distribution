@@ -10,8 +10,8 @@ trait ColumnSizeChanged extends StObject {
   
   /**
     * Raised when column is resized
-    * @param {ng.IScope} scope Grid Scope
-    * @param {columnSizeChangedHandler} handler Callback
+    * @param scope Grid Scope
+    * @param handler Callback
     */
   def columnSizeChanged(scope: IScope, handler: columnSizeChangedHandler): Unit
 }

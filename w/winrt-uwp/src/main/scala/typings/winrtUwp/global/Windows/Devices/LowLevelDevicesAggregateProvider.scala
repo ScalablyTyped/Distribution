@@ -11,21 +11,21 @@ abstract class LowLevelDevicesAggregateProvider ()
      with typings.winrtUwp.Windows.Devices.LowLevelDevicesAggregateProvider {
   
   /* CompleteClass */
-  var adcControllerProvider: js.Any = js.native
+  var adcControllerProvider: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var gpioControllerProvider: js.Any = js.native
+  var gpioControllerProvider: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var i2cControllerProvider: js.Any = js.native
+  var i2cControllerProvider: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var pwmControllerProvider: js.Any = js.native
+  var pwmControllerProvider: Any = js.native
   
   /* unmapped type */
   /* CompleteClass */
-  var spiControllerProvider: js.Any = js.native
+  var spiControllerProvider: Any = js.native
 }

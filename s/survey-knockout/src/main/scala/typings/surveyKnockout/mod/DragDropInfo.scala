@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "DragDropInfo")
 @js.native
-class DragDropInfo protected () extends StObject {
+open class DragDropInfo protected () extends StObject {
   def this(source: IElement, target: IElement) = this()
   def this(source: IElement, target: IElement, nestedPanelDepth: Double) = this()
   

@@ -37,7 +37,7 @@ object PublicKeyCredentialDescriptor {
     
     inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
     
-    inline def setTransportsVarargs(value: (usb | nfc | ble | internal)*): Self = StObject.set(x, "transports", js.Array(value :_*))
+    inline def setTransportsVarargs(value: (usb | nfc | ble | internal)*): Self = StObject.set(x, "transports", js.Array(value*))
     
     inline def setType(value: `public-key`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains a collection of {@link Word.Paragraph} objects.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 trait ListLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait ListLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the list's id.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var levelExistences: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var levelTypes: js.UndefOr[Boolean] = js.undefined

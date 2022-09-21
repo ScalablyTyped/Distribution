@@ -28,7 +28,7 @@ object Command {
     __obj.asInstanceOf[typings.tcomb.mod.MergeCommand]
   }
   
-  inline def PushCommand($push: js.Array[js.Any]): typings.tcomb.mod.PushCommand = {
+  inline def PushCommand($push: js.Array[scala.Any]): typings.tcomb.mod.PushCommand = {
     val __obj = js.Dynamic.literal($push = $push.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.PushCommand]
   }
@@ -38,12 +38,12 @@ object Command {
     __obj.asInstanceOf[typings.tcomb.mod.RemoveCommand]
   }
   
-  inline def SetCommand($set: js.Any): typings.tcomb.mod.SetCommand = {
+  inline def SetCommand($set: scala.Any): typings.tcomb.mod.SetCommand = {
     val __obj = js.Dynamic.literal($set = $set.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.SetCommand]
   }
   
-  inline def SpliceCommand($splice: js.Array[js.Array[js.Any]]): typings.tcomb.mod.SpliceCommand = {
+  inline def SpliceCommand($splice: js.Array[js.Array[scala.Any]]): typings.tcomb.mod.SpliceCommand = {
     val __obj = js.Dynamic.literal($splice = $splice.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.SpliceCommand]
   }
@@ -53,7 +53,7 @@ object Command {
     __obj.asInstanceOf[typings.tcomb.mod.SwapCommand]
   }
   
-  inline def UnshiftCommand($unshift: js.Array[js.Any]): typings.tcomb.mod.UnshiftCommand = {
+  inline def UnshiftCommand($unshift: js.Array[scala.Any]): typings.tcomb.mod.UnshiftCommand = {
     val __obj = js.Dynamic.literal($unshift = $unshift.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.UnshiftCommand]
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.TestDataGenerator")
 @js.native
-class TestDataGenerator ()
+open class TestDataGenerator ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.TestDataGenerator
 /* static members */

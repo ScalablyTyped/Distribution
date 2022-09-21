@@ -10,10 +10,10 @@ Merge two objects and concatenate arrays that are values of the same object key.
 | ------------------ | :-------------: |
 | Full name          | merge-objects |
 | Keywords           | merge, object, extend, concat, array, mixin |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 43615 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1121.6666666666667 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/shevaroller/node-merge-objects#readme)

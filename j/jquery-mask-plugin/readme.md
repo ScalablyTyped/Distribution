@@ -10,15 +10,13 @@ A jQuery Plugin to make masks on form fields and html elements.
 | ------------------ | :-------------: |
 | Full name          | jquery-mask-plugin |
 | Keywords           | mask, masks, form, input, jquery-plugin |
-| # releases         | 2 |
-| # dependents       | 30 |
-| # downloads        | 1566402 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 194960.33333333334 |
+| # stars            | 4609.0 |
 
 ## Links
 - [Homepage](http://igorescobar.github.io/jQuery-Mask-Plugin/)
-- [Bugs](https://github.com/igorescobar/jQuery-Mask-Plugin/issues)
-- [Repository](https://github.com/igorescobar/jQuery-Mask-Plugin)
 - [Npm](https://www.npmjs.com/package/jquery-mask-plugin)
     
 

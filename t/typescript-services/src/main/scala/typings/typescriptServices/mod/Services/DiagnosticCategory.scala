@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.DiagnosticCategory")
 @js.native
-class DiagnosticCategory ()
+open class DiagnosticCategory ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.DiagnosticCategory
 object DiagnosticCategory {

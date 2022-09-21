@@ -17,8 +17,6 @@ object reportUtilsMod {
   
   inline def addChild(parent: Node, child: Node): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("addChild")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  inline def cloneNodeForLogging(node: Node): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneNodeForLogging")(node.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  
   inline def cloneNodeWithoutChildren(node: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneNodeWithoutChildren")(node.asInstanceOf[js.Any]).asInstanceOf[Node]
   
   inline def getCurLoop(ctx: Context): LoopStatus | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurLoop")(ctx.asInstanceOf[js.Any]).asInstanceOf[LoopStatus | Null]

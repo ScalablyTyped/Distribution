@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "_ENVTextureLoader")
 @js.native
-class ENVTextureLoader ()
+open class ENVTextureLoader ()
   extends typings.babylonjs.legacyMod.ENVTextureLoader

@@ -9,16 +9,13 @@ Node.js package to access serial ports. Linux, OSX and Windows. Welcome your rob
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | serialport |
-| Keywords           | ccTalk, com port, data logging, hardware, iot, johnny-five, modem, nodebots, RFID, robotics, sensor, serial port, serial, serialport, sms gateway, sms, stream, tty, UART |
-| # releases         | 16 |
-| # dependents       | 1159 |
-| # downloads        | 2137587 |
-| # stars            | 115 |
+| Keywords           | ccTalk, com port, COM, data logging, hardware, iot, johnny-five, modem, nodebots, RFID, robotics, sensor, serial port, serial, serialport, sms gateway, sms, stream, tty, UART |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 303450.6666666667 |
+| # stars            | 5233.0 |
 
 ## Links
-- [Homepage](https://github.com/serialport/node-serialport#readme)
-- [Bugs](https://github.com/serialport/node-serialport/issues)
-- [Repository](https://github.com/serialport/node-serialport)
 - [Npm](https://www.npmjs.com/package/serialport)
     
 

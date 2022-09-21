@@ -17,14 +17,14 @@ object windowSizeMod {
   
   @JSImport("react-fns/dist/WindowSize", "WindowSize")
   @js.native
-  class WindowSize protected ()
+  open class WindowSize protected ()
     extends typings.reactFns.windowSizeWindowSizeMod.WindowSize {
     def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: js.Any) = this()
+    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: Any) = this()
   }
   /* static members */
   object WindowSize {

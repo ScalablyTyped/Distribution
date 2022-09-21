@@ -1,5 +1,7 @@
 package typings.awsSdk.mediapackagevodMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.ADS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,32 +13,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.PASSTHROUGH
   - java.lang.String
 */
-type AdMarkers = typings.awsSdk.mediapackagevodMod._AdMarkers | java.lang.String
+type AdMarkers = _AdMarkers | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AES_128
   - typings.awsSdk.awsSdkStrings.SAMPLE_AES
   - java.lang.String
 */
-type EncryptionMethod = typings.awsSdk.mediapackagevodMod._EncryptionMethod | java.lang.String
+type EncryptionMethod = _EncryptionMethod | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FULL
   - typings.awsSdk.awsSdkStrings.COMPACT
   - java.lang.String
 */
-type ManifestLayout = typings.awsSdk.mediapackagevodMod._ManifestLayout | java.lang.String
+type ManifestLayout = _ManifestLayout | String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type PeriodTriggersElement = typings.awsSdk.awsSdkStrings.ADS | java.lang.String
+type PeriodTriggersElement = ADS | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.HBBTV_1_5
   - java.lang.String
 */
-type Profile = typings.awsSdk.mediapackagevodMod._Profile | java.lang.String
+type Profile = _Profile | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SEGMENTS
+  - typings.awsSdk.awsSdkStrings.MANIFEST
+  - java.lang.String
+*/
+type ScteMarkersSource = _ScteMarkersSource | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NUMBER_WITH_TIMELINE
@@ -44,7 +53,7 @@ type Profile = typings.awsSdk.mediapackagevodMod._Profile | java.lang.String
   - typings.awsSdk.awsSdkStrings.NUMBER_WITH_DURATION
   - java.lang.String
 */
-type SegmentTemplateFormat = typings.awsSdk.mediapackagevodMod._SegmentTemplateFormat | java.lang.String
+type SegmentTemplateFormat = _SegmentTemplateFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ORIGINAL
@@ -52,39 +61,39 @@ type SegmentTemplateFormat = typings.awsSdk.mediapackagevodMod._SegmentTemplateF
   - typings.awsSdk.awsSdkStrings.VIDEO_BITRATE_DESCENDING
   - java.lang.String
 */
-type StreamOrder = typings.awsSdk.mediapackagevodMod._StreamOrder | java.lang.String
+type StreamOrder = _StreamOrder | String
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediapackagevodMod.string]
+type Tags = StringDictionary[string]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-11-07`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.mediapackagevodMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type boolean = scala.Boolean
+type boolean = Boolean
 
-type integer = scala.Double
+type integer = Double
 
-type listOfAssetShallow = js.Array[typings.awsSdk.mediapackagevodMod.AssetShallow]
+type listOfAssetShallow = js.Array[AssetShallow]
 
-type listOfDashManifest = js.Array[typings.awsSdk.mediapackagevodMod.DashManifest]
+type listOfDashManifest = js.Array[DashManifest]
 
-type listOfEgressEndpoint = js.Array[typings.awsSdk.mediapackagevodMod.EgressEndpoint]
+type listOfEgressEndpoint = js.Array[EgressEndpoint]
 
-type listOfHlsManifest = js.Array[typings.awsSdk.mediapackagevodMod.HlsManifest]
+type listOfHlsManifest = js.Array[HlsManifest]
 
-type listOfMssManifest = js.Array[typings.awsSdk.mediapackagevodMod.MssManifest]
+type listOfMssManifest = js.Array[MssManifest]
 
-type listOfPackagingConfiguration = js.Array[typings.awsSdk.mediapackagevodMod.PackagingConfiguration]
+type listOfPackagingConfiguration = js.Array[PackagingConfiguration]
 
-type listOfPackagingGroup = js.Array[typings.awsSdk.mediapackagevodMod.PackagingGroup]
+type listOfPackagingGroup = js.Array[PackagingGroup]
 
-type listOfPeriodTriggersElement = js.Array[typings.awsSdk.mediapackagevodMod.PeriodTriggersElement]
+type listOfPeriodTriggersElement = js.Array[PeriodTriggersElement]
 
-type listOfString = js.Array[typings.awsSdk.mediapackagevodMod.string]
+type listOfString = js.Array[string]
 
-type mapOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediapackagevodMod.string]
+type mapOfString = StringDictionary[string]
 
-type string = java.lang.String
+type string = String

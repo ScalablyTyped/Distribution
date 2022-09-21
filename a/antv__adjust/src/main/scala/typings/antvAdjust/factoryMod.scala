@@ -2,7 +2,7 @@ package typings.antvAdjust
 
 import typings.antvAdjust.adjustMod.AdjustConstructor
 import typings.antvAdjust.adjustMod.default
-import typings.antvAdjust.interfaceMod.AdjustCfg
+import typings.antvAdjust.anon.AdjustCfgdimValuesMapDimV
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object factoryMod {
   @JSImport("@antv/adjust/lib/factory", "Adjust")
   @js.native
   abstract class Adjust protected () extends default {
-    def this(cfg: AdjustCfg) = this()
+    def this(cfg: AdjustCfgdimValuesMapDimV) = this()
   }
   
   /**

@@ -11,9 +11,9 @@ A javascript framework to create user interfaces
 | Full name          | photonui |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 1744 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 205.33333333333334 |
+| # stars            | 57.0 |
 
 ## Links
 - [Homepage](http://wanadev.github.io/PhotonUI/)

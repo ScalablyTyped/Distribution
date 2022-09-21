@@ -28,7 +28,19 @@ trait FieldsKey extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The project in which to create the Uptime check. The format is: projects/[PROJECT_ID_OR_NUMBER] */
+  /**
+    * The maximum number of results to return in a single response. The server may further constrain the maximum number of results returned in a single page. If the page_size is <=0,
+    * the server will decide the number of results to be returned.
+    */
+  var pageSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return more results
+    * from the previous method call.
+    */
+  var pageToken: js.UndefOr[String] = js.undefined
+  
+  /** Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) whose Uptime check configurations are listed. The format is: projects/[PROJECT_ID_OR_NUMBER] */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -79,6 +91,14 @@ object FieldsKey {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

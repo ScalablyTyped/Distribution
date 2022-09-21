@@ -44,7 +44,7 @@ trait ColorAxisOptions extends StObject {
     * (Gantt) Show an indicator on the axis for the current date and time. Can
     * be a boolean or a configuration object similar to xAxis.plotLines.
     */
-  var currentDateIndicator: js.UndefOr[Boolean | AxisCurrentDateIndicatorOptions] = js.undefined
+  var currentDateIndicator: js.UndefOr[Boolean | CurrentDateIndicatorOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Determines how to set each data class'
@@ -303,6 +303,9 @@ trait ColorAxisOptions extends StObject {
     * In stock charts the X axis is ordinal by default, unless the boost module
     * is used and at least one of the series' data length exceeds the
     * boostThreshold.
+    *
+    * For an ordinal axis, `minPadding` and `maxPadding` are ignored. Use
+    * overscroll instead.
     */
   var ordinal: js.UndefOr[Boolean] = js.undefined
   
@@ -312,6 +315,12 @@ trait ColorAxisOptions extends StObject {
     * set for both main `xAxis` and the navigator's `xAxis`.
     */
   var overscroll: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps) Whether to pan axis. If `chart.panning`
+    * is enabled, the option allows to disable panning on an individual axis.
+    */
+  var panningEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) The zoomed range to display when only defining one or none of
@@ -327,17 +336,6 @@ trait ColorAxisOptions extends StObject {
     * value starts on top.
     */
   var reversed: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highstock) An optional scrollbar to display on the X axis in response to
-    * limiting the minimum and maximum of the axis values.
-    *
-    * In styled mode, all the presentational options for the scrollbar are
-    * replaced by the classes `.highcharts-scrollbar-thumb`,
-    * `.highcharts-scrollbar-arrow`, `.highcharts-scrollbar-button`,
-    * `.highcharts-scrollbar-rifles` and `.highcharts-scrollbar-track`.
-    */
-  var scrollbar: js.UndefOr[ColorAxisScrollbarOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Whether to show the first tick label.
@@ -502,6 +500,11 @@ trait ColorAxisOptions extends StObject {
     * ticks and labels, should be visible.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps) The Z index for the axis group.
+    */
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object ColorAxisOptions {
   
@@ -532,7 +535,7 @@ object ColorAxisOptions {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setCurrentDateIndicator(value: Boolean | AxisCurrentDateIndicatorOptions): Self = StObject.set(x, "currentDateIndicator", value.asInstanceOf[js.Any])
+    inline def setCurrentDateIndicator(value: Boolean | CurrentDateIndicatorOptions): Self = StObject.set(x, "currentDateIndicator", value.asInstanceOf[js.Any])
     
     inline def setCurrentDateIndicatorUndefined: Self = StObject.set(x, "currentDateIndicator", js.undefined)
     
@@ -544,7 +547,7 @@ object ColorAxisOptions {
     
     inline def setDataClassesUndefined: Self = StObject.set(x, "dataClasses", js.undefined)
     
-    inline def setDataClassesVarargs(value: ColorAxisDataClassesOptions*): Self = StObject.set(x, "dataClasses", js.Array(value :_*))
+    inline def setDataClassesVarargs(value: ColorAxisDataClassesOptions*): Self = StObject.set(x, "dataClasses", js.Array(value*))
     
     inline def setEndOnTick(value: Boolean): Self = StObject.set(x, "endOnTick", value.asInstanceOf[js.Any])
     
@@ -680,6 +683,10 @@ object ColorAxisOptions {
     
     inline def setOverscrollUndefined: Self = StObject.set(x, "overscroll", js.undefined)
     
+    inline def setPanningEnabled(value: Boolean): Self = StObject.set(x, "panningEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPanningEnabledUndefined: Self = StObject.set(x, "panningEnabled", js.undefined)
+    
     inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
@@ -687,10 +694,6 @@ object ColorAxisOptions {
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
     inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
-    
-    inline def setScrollbar(value: ColorAxisScrollbarOptions): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
-    
-    inline def setScrollbarUndefined: Self = StObject.set(x, "scrollbar", js.undefined)
     
     inline def setShowFirstLabel(value: Boolean): Self = StObject.set(x, "showFirstLabel", value.asInstanceOf[js.Any])
     
@@ -724,7 +727,7 @@ object ColorAxisOptions {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: (js.Tuple2[Double, ColorString])*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: (js.Tuple2[Double, ColorString])*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setTickAmount(value: Double): Self = StObject.set(x, "tickAmount", value.asInstanceOf[js.Any])
     
@@ -758,7 +761,7 @@ object ColorAxisOptions {
     
     inline def setTickPositionsUndefined: Self = StObject.set(x, "tickPositions", js.undefined)
     
-    inline def setTickPositionsVarargs(value: Double*): Self = StObject.set(x, "tickPositions", js.Array(value :_*))
+    inline def setTickPositionsVarargs(value: Double*): Self = StObject.set(x, "tickPositions", js.Array(value*))
     
     inline def setTickWidth(value: Double): Self = StObject.set(x, "tickWidth", value.asInstanceOf[js.Any])
     
@@ -780,10 +783,14 @@ object ColorAxisOptions {
     
     inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    inline def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value*))
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

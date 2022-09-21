@@ -50,7 +50,7 @@ object XTextDocument {
     getURL: () => String,
     hasControllersLocked: () => Boolean,
     lockControllers: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     reformat: () => Unit,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

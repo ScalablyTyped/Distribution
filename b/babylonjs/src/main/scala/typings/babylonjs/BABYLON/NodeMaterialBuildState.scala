@@ -18,63 +18,125 @@ trait NodeMaterialBuildState extends StObject {
   /** @hidden */
   var _constantDeclaration: String = js.native
   
-  /** @hidden */
+  /**
+    * @param name
+    * @hidden
+    */
   def _emit2DSampler(name: String): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param includeName
+    * @param comments
+    * @param options
+    * @param options.replaceStrings
+    * @param options.repeatKey
+    * @hidden
+    */
   def _emitCodeFromInclude(includeName: String, comments: String): String = js.native
   def _emitCodeFromInclude(includeName: String, comments: String, options: RepeatKey): String = js.native
   
-  /** @hidden */
+  /**
+    * @param name
+    * @param extension
+    * @param define
+    * @hidden
+    */
   def _emitExtension(name: String, `extension`: String): Unit = js.native
   def _emitExtension(name: String, `extension`: String, define: String): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param value
+    * @hidden
+    */
   def _emitFloat(value: Double): String = js.native
   
-  /** @hidden */
+  /**
+    * @param name
+    * @param code
+    * @param comments
+    * @hidden
+    */
   def _emitFunction(name: String, code: String, comments: String): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param includeName
+    * @param comments
+    * @param options
+    * @param options.repeatKey
+    * @param options.removeAttributes
+    * @param options.removeUniforms
+    * @param options.removeVaryings
+    * @param options.removeIfDef
+    * @param options.replaceStrings
+    * @param storeKey
+    * @hidden
+    */
   def _emitFunctionFromInclude(includeName: String, comments: String): Unit = js.native
   def _emitFunctionFromInclude(includeName: String, comments: String, options: Unit, storeKey: String): Unit = js.native
   def _emitFunctionFromInclude(includeName: String, comments: String, options: RemoveAttributes): Unit = js.native
   def _emitFunctionFromInclude(includeName: String, comments: String, options: RemoveAttributes, storeKey: String): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param name
+    * @param type
+    * @param define
+    * @param notDefine
+    * @hidden
+    */
   def _emitUniformFromString(name: String, `type`: String): Unit = js.native
   def _emitUniformFromString(name: String, `type`: String, define: String): Unit = js.native
   def _emitUniformFromString(name: String, `type`: String, define: String, notDefine: Boolean): Unit = js.native
   def _emitUniformFromString(name: String, `type`: String, define: Unit, notDefine: Boolean): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param name
+    * @param type
+    * @param define
+    * @param notDefine
+    * @hidden
+    */
   def _emitVaryingFromString(name: String, `type`: String): Boolean = js.native
   def _emitVaryingFromString(name: String, `type`: String, define: String): Boolean = js.native
   def _emitVaryingFromString(name: String, `type`: String, define: String, notDefine: Boolean): Boolean = js.native
   def _emitVaryingFromString(name: String, `type`: String, define: Unit, notDefine: Boolean): Boolean = js.native
   
-  /** @hidden */
+  /**
+    * @param name
+    * @hidden
+    */
   def _excludeVariableName(name: String): Unit = js.native
   
-  /** @hidden */
+  /**
+    * @param prefix
+    * @hidden
+    */
   def _getFreeDefineName(prefix: String): String = js.native
   
-  /** @hidden */
+  /**
+    * @param prefix
+    * @hidden
+    */
   def _getFreeVariableName(prefix: String): String = js.native
   
-  /** @hidden */
+  /**
+    * @param type
+    * @hidden
+    */
   def _getGLType(`type`: NodeMaterialBlockConnectionPointTypes): String = js.native
   
   /** @hidden */
   var _injectAtEnd: String = js.native
   
-  /** @hidden */
+  /**
+    * @param name
+    * @hidden
+    */
   def _registerTempVariable(name: String): Boolean = js.native
   
   /** @hidden */
   def _repeatableContentAnchor: String = js.native
   
-  /* private */ var _repeatableContentAnchorIndex: js.Any = js.native
+  /* private */ var _repeatableContentAnchorIndex: Any = js.native
   
   /** @hidden */
   var _samplerDeclaration: String = js.native

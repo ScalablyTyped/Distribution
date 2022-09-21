@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object layoutListWithPanelMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/LayoutListWithPanel", JSImport.Default)
   @js.native
-  val default: SFC[LayoutListWithPanelProps] = js.native
+  val default: FC[LayoutListWithPanelProps] = js.native
   
   trait LayoutListWithPanelProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object LayoutListWithPanelProps {
     
@@ -29,14 +29,14 @@ object layoutListWithPanelMod extends Shortcut {
     
     extension [Self <: LayoutListWithPanelProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[LayoutListWithPanelProps]
+  type _To = FC[LayoutListWithPanelProps]
   
   /* This means you don't have to write `default`, but can instead just say `layoutListWithPanelMod.foo` */
-  override def _to: SFC[LayoutListWithPanelProps] = default
+  override def _to: FC[LayoutListWithPanelProps] = default
 }

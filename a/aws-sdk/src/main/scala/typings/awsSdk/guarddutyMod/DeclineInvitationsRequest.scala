@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeclineInvitationsRequest extends StObject {
   
   /**
-    * A list of account IDs of the AWS accounts that sent invitations to the current member account that you want to decline invitations from.
+    * A list of account IDs of the Amazon Web Services accounts that sent invitations to the current member account that you want to decline invitations from.
     */
   var AccountIds: typings.awsSdk.guarddutyMod.AccountIds
 }
@@ -22,6 +22,6 @@ object DeclineInvitationsRequest {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
   }
 }

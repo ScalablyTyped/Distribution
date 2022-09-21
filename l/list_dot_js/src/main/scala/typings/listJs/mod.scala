@@ -1,5 +1,8 @@
 package typings.listJs
 
+import typings.listJs.anon.Attr
+import typings.listJs.anon.Data
+import typings.listJs.anon.InnerWindow
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +12,7 @@ object mod {
   
   @JSImport("list.js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with List {
     def this(element: String) = this()
@@ -110,7 +113,7 @@ object mod {
     def fuzzySearch(searchString: String): Unit = js.native
     def fuzzySearch(searchString: String, columns: js.Array[String]): Unit = js.native
     
-    def get(valueName: String, value: js.Any): js.Array[ListItem] = js.native
+    def get(valueName: String, value: Any): js.Array[ListItem] = js.native
     
     var items: js.Array[js.Object] = js.native
     
@@ -124,7 +127,7 @@ object mod {
     
     def reIndex(): Unit = js.native
     
-    def remove(valueName: String, value: js.Any): Double = js.native
+    def remove(valueName: String, value: Any): Double = js.native
     
     def search(searchString: String): Unit = js.native
     def search(searchString: String, columns: js.Array[String]): Unit = js.native
@@ -173,13 +176,13 @@ object mod {
     
     var page: js.UndefOr[Double] = js.undefined
     
-    var pagination: js.UndefOr[Boolean] = js.undefined
+    var pagination: js.UndefOr[InnerWindow] = js.undefined
     
     var searchClass: js.UndefOr[String] = js.undefined
     
     var sortClass: js.UndefOr[String] = js.undefined
     
-    var valueNames: js.UndefOr[js.Array[String]] = js.undefined
+    var valueNames: js.UndefOr[js.Array[String | Data | Attr]] = js.undefined
   }
   object ListOptions {
     
@@ -214,7 +217,7 @@ object mod {
       
       inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      inline def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: InnerWindow): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
       inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
@@ -226,11 +229,11 @@ object mod {
       
       inline def setSortClassUndefined: Self = StObject.set(x, "sortClass", js.undefined)
       
-      inline def setValueNames(value: js.Array[String]): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
+      inline def setValueNames(value: js.Array[String | Data | Attr]): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
       
       inline def setValueNamesUndefined: Self = StObject.set(x, "valueNames", js.undefined)
       
-      inline def setValueNamesVarargs(value: String*): Self = StObject.set(x, "valueNames", js.Array(value :_*))
+      inline def setValueNamesVarargs(value: (String | Data | Attr)*): Self = StObject.set(x, "valueNames", js.Array(value*))
     }
   }
   

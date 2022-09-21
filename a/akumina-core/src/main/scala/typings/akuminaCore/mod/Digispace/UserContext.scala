@@ -1,12 +1,13 @@
 package typings.akuminaCore.mod.Digispace
 
+import typings.jquery.JQueryDeferred
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Digispace.UserContext")
 @js.native
-class UserContext () extends StObject
+open class UserContext () extends StObject
 object UserContext {
   
   @JSImport("akumina-core", "Digispace.UserContext")
@@ -32,6 +33,22 @@ object UserContext {
   inline def FallbackLanguageId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FallbackLanguageId")(x.asInstanceOf[js.Any])
   
   /* static member */
+  inline def GetAllUserGroups(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAllUserGroups")().asInstanceOf[JQueryDeferred[Any]]
+  
+  /* static member */
+  inline def GetPagePersona(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPagePersona")().asInstanceOf[String]
+  
+  /* static member */
+  inline def GetUserAuthorizedPersona(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetUserAuthorizedPersona")().asInstanceOf[JQueryDeferred[Any]]
+  inline def GetUserAuthorizedPersona(objectid: String): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetUserAuthorizedPersona")(objectid.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[Any]]
+  
+  /* static member */
+  @JSImport("akumina-core", "Digispace.UserContext.GraphUserId")
+  @js.native
+  def GraphUserId: String = js.native
+  inline def GraphUserId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GraphUserId")(x.asInstanceOf[js.Any])
+  
+  /* static member */
   @JSImport("akumina-core", "Digispace.UserContext.LanguageCode")
   @js.native
   def LanguageCode: String = js.native
@@ -49,14 +66,28 @@ object UserContext {
   def LoginName: String = js.native
   inline def LoginName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoginName")(x.asInstanceOf[js.Any])
   
+  /** Persona Based On Priority**/
+  /* static member */
+  @JSImport("akumina-core", "Digispace.UserContext.PagePersona")
+  @js.native
+  def PagePersona: String = js.native
+  inline def PagePersona_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PagePersona")(x.asInstanceOf[js.Any])
+  
   /* static member */
   @JSImport("akumina-core", "Digispace.UserContext.PostalCode")
   @js.native
   def PostalCode: String = js.native
   inline def PostalCode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PostalCode")(x.asInstanceOf[js.Any])
   
+  /** Persona Selected for CReating Page Version**/
   /* static member */
-  inline def SetLanguage(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetLanguage")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @JSImport("akumina-core", "Digispace.UserContext.SelectedPagePersona")
+  @js.native
+  def SelectedPagePersona: String = js.native
+  inline def SelectedPagePersona_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectedPagePersona")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  inline def SetLanguage(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetLanguage")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
   @JSImport("akumina-core", "Digispace.UserContext.State")
@@ -75,4 +106,10 @@ object UserContext {
   @js.native
   def UserLoginName: String = js.native
   inline def UserLoginName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserLoginName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("akumina-core", "Digispace.UserContext.userPersonas")
+  @js.native
+  def userPersonas: js.Array[String] = js.native
+  inline def userPersonas_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("userPersonas")(x.asInstanceOf[js.Any])
 }

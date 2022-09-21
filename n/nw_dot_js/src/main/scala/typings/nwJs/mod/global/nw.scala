@@ -98,7 +98,7 @@ object nw {
     /**
       * Get the json object of the manifest file.
       */
-    var manifest: js.Any = js.native
+    var manifest: Any = js.native
     
     def on(event: String, listener: js.Function): this.type = js.native
     /**
@@ -109,7 +109,7 @@ object nw {
       * - (optional) args {string} the full command line of the program.
       */
     @JSName("on")
-    def on_open(event: open, listener: js.Function1[/* args */ js.UndefOr[String], js.Any]): this.type = js.native
+    def on_open(event: open, listener: js.Function1[/* args */ js.UndefOr[String], Any]): this.type = js.native
     /**
       * This event is sent when the user clicks the dock icon for an already running application. This is a Mac specific feature.
       *
@@ -117,7 +117,7 @@ object nw {
       * @param listener {Function} The callback that handles the `reopen` event.
       */
     @JSName("on")
-    def on_reopen(event: reopen, listener: js.Function0[js.Any]): this.type = js.native
+    def on_reopen(event: reopen, listener: js.Function0[Any]): this.type = js.native
     
     /**
       * Quit current app.
@@ -197,7 +197,7 @@ object nw {
     *
     * @param option {Object} (Optional) Option to customize returned menu object.
     */
-  class Menu () extends StObject {
+  open class Menu () extends StObject {
     def this(option: MenuOption) = this()
     
     /**
@@ -258,7 +258,7 @@ object nw {
     */
   @JSGlobal("nw.MenuItem")
   @js.native
-  class MenuItem protected () extends EventEmitter {
+  open class MenuItem protected () extends EventEmitter {
     /**
       * Create a new MenuItem.
       *
@@ -279,7 +279,7 @@ object nw {
     /**
       * Get or set whether the `MenuItem` is `enabled`
       */
-    var enabled: String = js.native
+    var enabled: Boolean = js.native
     
     /**
       * Get or set the `icon` of a `MenuItem`
@@ -314,7 +314,7 @@ object nw {
       * @param listener {Function} The callback that handles the `click` event.
       */
     @JSName("on")
-    def on_click(event: click, listener: js.Function0[js.Any]): this.type = js.native
+    def on_click(event: click, listener: js.Function0[Any]): this.type = js.native
     
     /**
       * Get or set the `submenu` of a `MenuItem`, the `submenu` must be a `Menu` object.
@@ -370,7 +370,7 @@ object nw {
       * - (optional) screen {screen} screen object
       */
     @JSName("on")
-    def on_displayAdded(event: `displayAdded `, listener: js.Function1[/* screen */ screen, js.Any]): this.type = js.native
+    def on_displayAdded(event: `displayAdded `, listener: js.Function1[/* screen */ screen, Any]): this.type = js.native
     /**
       * Emitted when the screen resolution, arrangement is changed.
       *
@@ -379,7 +379,7 @@ object nw {
       * - (optional) screen {screen} screen object
       */
     @JSName("on")
-    def on_displayBoundsChanged(event: displayBoundsChanged, listener: js.Function1[/* screen */ screen, js.Any]): this.type = js.native
+    def on_displayBoundsChanged(event: displayBoundsChanged, listener: js.Function1[/* screen */ screen, Any]): this.type = js.native
     /**
       * Emitted when existing screen removed.
       *
@@ -388,7 +388,7 @@ object nw {
       * - (optional) screen {screen} screen object
       */
     @JSName("on")
-    def on_displayRemoved(event: `displayRemoved `, listener: js.Function1[/* screen */ screen, js.Any]): this.type = js.native
+    def on_displayRemoved(event: `displayRemoved `, listener: js.Function1[/* screen */ screen, Any]): this.type = js.native
     
     /**
       * Get the array of screen (number of screen connected to the computer)
@@ -445,7 +445,7 @@ object nw {
   
   @JSGlobal("nw.Shortcut")
   @js.native
-  class Shortcut protected () extends EventEmitter {
+  open class Shortcut protected () extends EventEmitter {
     /**
       * Create new Shortcut.
       *
@@ -463,8 +463,8 @@ object nw {
       *
       * @param msg {string} Failure message
       */
-    def failed(): js.Any = js.native
-    def failed(msg: String): js.Any = js.native
+    def failed(): Any = js.native
+    def failed(msg: String): Any = js.native
     
     /**
       * Get the key of a Shortcut.
@@ -479,7 +479,7 @@ object nw {
       * @param listener {Function} The callback that handles the `active` event.
       */
     @JSName("on")
-    def on_active(event: active, listener: js.Function0[js.Any]): this.type = js.native
+    def on_active(event: active, listener: js.Function0[Any]): this.type = js.native
     /**
       * Get or set the failed callback of a Shortcut. It will be called when application passes an invalid key, or failed to register the key.
       *
@@ -488,12 +488,12 @@ object nw {
       * - (optional) msg {string} Failure message
       */
     @JSName("on")
-    def on_failed(event: failed, listener: js.Function1[/* msg */ js.UndefOr[String], js.Any]): this.type = js.native
+    def on_failed(event: failed, listener: js.Function1[/* msg */ js.UndefOr[String], Any]): this.type = js.native
   }
   
   @JSGlobal("nw.Tray")
   @js.native
-  class Tray protected () extends EventEmitter {
+  open class Tray protected () extends EventEmitter {
     /**
       * Create a new Tray.
       * @param option {Object} Contains initial settings for the Tray.
@@ -528,7 +528,7 @@ object nw {
       * @param listener {Function} The callback that handles the `click` event.
       */
     @JSName("on")
-    def on_click(event: `click `, listener: js.Function0[js.Any]): this.type = js.native
+    def on_click(event: `click `, listener: js.Function0[Any]): this.type = js.native
     
     /**
       * Remove the tray.
@@ -586,5 +586,5 @@ object nw {
   def Window: Window = js.native
   inline def Window_=(x: Window): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Window")(x.asInstanceOf[js.Any])
   
-  inline def require(id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def require(id: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

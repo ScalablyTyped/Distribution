@@ -10,10 +10,10 @@ A [ponyfill](https://ponyfill.com) for `Buffer.from`, uses native implementation
 | ------------------ | :-------------: |
 | Full name          | buffer-from |
 | Keywords           | buffer, buffer from |
-| # releases         | 0 |
-| # dependents       | 204 |
-| # downloads        | 803488482 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2286711566666667E8 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/LinusU/buffer-from#readme)

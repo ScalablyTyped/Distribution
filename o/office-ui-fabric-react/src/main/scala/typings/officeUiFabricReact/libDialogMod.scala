@@ -21,7 +21,7 @@ object libDialogMod extends Shortcut {
   
   @JSImport("office-ui-fabric-react/lib/Dialog", "DialogBase")
   @js.native
-  class DialogBase protected ()
+  open class DialogBase protected ()
     extends typings.officeUiFabricReact.dialogMod.DialogBase {
     def this(props: IDialogProps) = this()
   }
@@ -44,7 +44,7 @@ object libDialogMod extends Shortcut {
   
   @JSImport("office-ui-fabric-react/lib/Dialog", "DialogContentBase")
   @js.native
-  class DialogContentBase protected ()
+  open class DialogContentBase protected ()
     extends typings.officeUiFabricReact.dialogMod.DialogContentBase {
     def this(props: IDialogContentProps) = this()
   }
@@ -67,7 +67,7 @@ object libDialogMod extends Shortcut {
   
   @JSImport("office-ui-fabric-react/lib/Dialog", "DialogFooterBase")
   @js.native
-  class DialogFooterBase protected ()
+  open class DialogFooterBase protected ()
     extends typings.officeUiFabricReact.dialogMod.DialogFooterBase {
     def this(props: IDialogFooterProps) = this()
   }

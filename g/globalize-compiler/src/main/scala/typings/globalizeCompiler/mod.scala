@@ -71,7 +71,7 @@ object mod {
       
       inline def setExtractsFunction1(value: /* globalize */ Static => js.Array[FormatterOrParserFunction]): Self = StObject.set(x, "extracts", js.Any.fromFunction1(value))
       
-      inline def setExtractsVarargs(value: ExtractFunction*): Self = StObject.set(x, "extracts", js.Array(value :_*))
+      inline def setExtractsVarargs(value: ExtractFunction*): Self = StObject.set(x, "extracts", js.Array(value*))
       
       inline def setMessages(value: js.Object | (js.Function1[/* locale */ String, js.Object])): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
@@ -128,11 +128,11 @@ object mod {
       
       inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
     }
   }
   
   type ExtractFunction = js.Function1[/* globalize */ Static, js.Array[FormatterOrParserFunction]]
   
-  type FormatterOrParserFunction = js.Function1[/* repeated */ js.Any, js.Any]
+  type FormatterOrParserFunction = js.Function1[/* repeated */ Any, Any]
 }

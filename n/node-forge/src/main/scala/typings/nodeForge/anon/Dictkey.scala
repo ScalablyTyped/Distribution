@@ -27,12 +27,12 @@ object Dictkey {
     
     inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
-    inline def setFriendlyNameVarargs(value: Bag*): Self = StObject.set(x, "friendlyName", js.Array(value :_*))
+    inline def setFriendlyNameVarargs(value: Bag*): Self = StObject.set(x, "friendlyName", js.Array(value*))
     
     inline def setLocalKeyId(value: js.Array[Bag]): Self = StObject.set(x, "localKeyId", value.asInstanceOf[js.Any])
     
     inline def setLocalKeyIdUndefined: Self = StObject.set(x, "localKeyId", js.undefined)
     
-    inline def setLocalKeyIdVarargs(value: Bag*): Self = StObject.set(x, "localKeyId", js.Array(value :_*))
+    inline def setLocalKeyIdVarargs(value: Bag*): Self = StObject.set(x, "localKeyId", js.Array(value*))
   }
 }

@@ -12,12 +12,7 @@ trait JScrollPaneApi extends StObject {
     * This method is called when jScrollPane is trying to animate to a new position. You can override it if you want
     * to provide advanced animation functionality.
     */
-  def animate(
-    ele: JQuery,
-    prop: String,
-    value: js.Any,
-    stepCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): Unit = js.native
+  def animate(ele: JQuery, prop: String, value: Any, stepCallback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   
   /**
     * Destroys the jScrollPane on the instance matching this API object and restores the browser's default behaviour.

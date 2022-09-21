@@ -10,10 +10,10 @@ Queues failed requests and uses the Background Sync API to replay them when the 
 | ------------------ | :-------------: |
 | Full name          | workbox-background-sync |
 | Keywords           | workbox, workboxjs, service worker, sw, background, sync, workbox-plugin |
-| # releases         | 29 |
-| # dependents       | 9 |
-| # downloads        | 117994486 |
-| # stars            | 0 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 1.760407E7 |
+| # stars            | 10909.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/workbox)

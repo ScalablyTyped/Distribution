@@ -21,7 +21,7 @@ trait MultipointDrawAction
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-MultipointDrawAction.html#complete)
     */
-  def complete(): Unit = js.native
+  def complete(): scala.Unit = js.native
   
   @JSName("on")
   def on_cursorupdate(name: `cursor-update`, eventHandler: MultipointDrawActionCursorUpdateEventHandler): IHandle = js.native
@@ -35,11 +35,4 @@ trait MultipointDrawAction
   def on_vertexadd(name: `vertex-add`, eventHandler: MultipointDrawActionVertexAddEventHandler): IHandle = js.native
   @JSName("on")
   def on_vertexremove(name: `vertex-remove`, eventHandler: MultipointDrawActionVertexRemoveEventHandler): IHandle = js.native
-  
-  /**
-    * Two-dimensional array of numbers representing the coordinates of each vertex that comprises the drawn geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-MultipointDrawAction.html#vertices)
-    */
-  val vertices: js.Array[js.Array[Double]] = js.native
 }

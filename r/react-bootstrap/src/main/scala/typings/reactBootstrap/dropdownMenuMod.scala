@@ -11,12 +11,10 @@ object dropdownMenuMod {
   
   @JSImport("react-bootstrap/lib/DropdownMenu", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[DropdownMenuProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[DropdownMenuProps, js.Object, Any]
   
-  @js.native
-  trait DropdownMenu
-    extends Component[DropdownMenuProps, js.Object, js.Any]
+  type DropdownMenu = Component[DropdownMenuProps, js.Object, Any]
   
   trait DropdownMenuProps
     extends StObject

@@ -10,15 +10,12 @@ A simple Time-Ago component for ReactJs
 | ------------------ | :-------------: |
 | Full name          | react-timeago |
 | Keywords           | React, ReactJS, Time, Ago, TimeAgo, ender |
-| # releases         | 5 |
-| # dependents       | 40 |
-| # downloads        | 2839181 |
-| # stars            | 13 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 374435.3333333333 |
+| # stars            | 903.0 |
 
 ## Links
-- [Homepage](https://github.com/nmn/react-timeago)
-- [Bugs](https://github.com/nmn/react-timeago/issues)
-- [Repository](https://github.com/naman34/react-timeago)
 - [Npm](https://www.npmjs.com/package/react-timeago)
     
 

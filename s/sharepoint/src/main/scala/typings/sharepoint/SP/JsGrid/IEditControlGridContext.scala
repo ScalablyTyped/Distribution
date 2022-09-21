@@ -20,9 +20,9 @@ object IEditControlGridContext {
     OnActivateActor: () => Unit,
     OnDeactivateActor: () => Unit,
     OnKeyDown: DomEvent => Unit,
-    RTL: js.Any,
+    RTL: Any,
     bLightFocus: Boolean,
-    emptyValue: js.Any,
+    emptyValue: Any,
     jsGridObj: JsGridControl,
     parentNode: HTMLElement,
     styleManager: IStyleManager

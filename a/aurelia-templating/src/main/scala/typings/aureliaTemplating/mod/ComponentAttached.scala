@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentAttached extends StObject {
   
   /**
-    * Implement this hook if you want to perform custom logic when the component is attached to the DOM (in document).
-    */
+  	* Implement this hook if you want to perform custom logic when the component is attached to the DOM (in document).
+  	*/
   def attached(): Unit
 }
 object ComponentAttached {

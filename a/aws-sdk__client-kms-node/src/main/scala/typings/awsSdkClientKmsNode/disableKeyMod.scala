@@ -8,5 +8,5 @@ object disableKeyMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/DisableKey", "DisableKey")
   @js.native
-  val DisableKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DisableKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

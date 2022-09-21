@@ -39,7 +39,7 @@ object CreativeOptimizationConfiguration {
     
     inline def setOptimizationActivitysUndefined: Self = StObject.set(x, "optimizationActivitys", js.undefined)
     
-    inline def setOptimizationActivitysVarargs(value: OptimizationActivity*): Self = StObject.set(x, "optimizationActivitys", js.Array(value :_*))
+    inline def setOptimizationActivitysVarargs(value: OptimizationActivity*): Self = StObject.set(x, "optimizationActivitys", js.Array(value*))
     
     inline def setOptimizationModel(value: String): Self = StObject.set(x, "optimizationModel", value.asInstanceOf[js.Any])
     

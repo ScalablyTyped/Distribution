@@ -10,13 +10,13 @@ Testing with karma following open-wc recommendations
 | ------------------ | :-------------: |
 | Full name          | @open-wc/testing-karma |
 | Keywords           | testing, karma, mocha, compatibility |
-| # releases         | 203 |
-| # dependents       | 3 |
-| # downloads        | 250292 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 18592.0 |
+| # stars            | 1836.0 |
 
 ## Links
-- [Homepage](https://github.com/open-wc/open-wc/tree/master/packages/testing-karma)
+- [Homepage](https://github.com/open-wc/open-wc#readme)
 - [Bugs](https://github.com/open-wc/open-wc/issues)
 - [Repository](https://github.com/open-wc/open-wc)
 - [Npm](https://www.npmjs.com/package/%40open-wc%2Ftesting-karma)

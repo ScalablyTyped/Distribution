@@ -1,7 +1,7 @@
 
 # Scala.js typings for simplestorage_dot_js
 
-Typings are for version v0.2.1
+Typings are for version 0.2
 
 ## Library description:
 Cross-browser key-value store database to store data locally in the browser
@@ -11,9 +11,9 @@ Cross-browser key-value store database to store data locally in the browser
 | Full name          | simplestorage.js |
 | Keywords           | JSON, localStorage, TTL |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 15583 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1813.3333333333333 |
+| # stars            | 307.0 |
 
 ## Links
 - [Homepage](https://github.com/andris9/simpleStorage)

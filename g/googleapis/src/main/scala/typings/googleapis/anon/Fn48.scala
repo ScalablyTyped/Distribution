@@ -1,9 +1,13 @@
 package typings.googleapis.anon
 
-import typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.Containeranalysis
-import typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha1.Options
-import typings.googleapis.googleapisStrings.v1alpha1
+import typings.googleapis.cloudassetV1Mod.cloudassetV1.Cloudasset
+import typings.googleapis.cloudassetV1Mod.cloudassetV1.Options
+import typings.googleapis.googleapisStrings.v1
 import typings.googleapis.googleapisStrings.v1beta1
+import typings.googleapis.googleapisStrings.v1p1beta1
+import typings.googleapis.googleapisStrings.v1p4beta1
+import typings.googleapis.googleapisStrings.v1p5beta1
+import typings.googleapis.googleapisStrings.v1p7beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn48 extends StObject {
   
-  def apply(options: Options): Containeranalysis = js.native
-  def apply(options: typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Options): typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis = js.native
-  def apply(version: v1alpha1): Containeranalysis = js.native
-  def apply(version: v1beta1): typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1.Containeranalysis = js.native
+  def apply(options: Options): Cloudasset = js.native
+  def apply(options: typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Options): typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset = js.native
+  def apply(options: typings.googleapis.v1p1beta1Mod.cloudassetV1p1beta1.Options): typings.googleapis.v1p1beta1Mod.cloudassetV1p1beta1.Cloudasset = js.native
+  def apply(options: typings.googleapis.v1p4beta1Mod.cloudassetV1p4beta1.Options): typings.googleapis.v1p4beta1Mod.cloudassetV1p4beta1.Cloudasset = js.native
+  def apply(options: typings.googleapis.v1p5beta1Mod.cloudassetV1p5beta1.Options): typings.googleapis.v1p5beta1Mod.cloudassetV1p5beta1.Cloudasset = js.native
+  def apply(options: typings.googleapis.v1p7beta1Mod.cloudassetV1p7beta1.Options): typings.googleapis.v1p7beta1Mod.cloudassetV1p7beta1.Cloudasset = js.native
+  def apply(version: v1): Cloudasset = js.native
+  def apply(version: v1beta1): typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset = js.native
+  def apply(version: v1p1beta1): typings.googleapis.v1p1beta1Mod.cloudassetV1p1beta1.Cloudasset = js.native
+  def apply(version: v1p4beta1): typings.googleapis.v1p4beta1Mod.cloudassetV1p4beta1.Cloudasset = js.native
+  def apply(version: v1p5beta1): typings.googleapis.v1p5beta1Mod.cloudassetV1p5beta1.Cloudasset = js.native
+  def apply(version: v1p7beta1): typings.googleapis.v1p7beta1Mod.cloudassetV1p7beta1.Cloudasset = js.native
 }

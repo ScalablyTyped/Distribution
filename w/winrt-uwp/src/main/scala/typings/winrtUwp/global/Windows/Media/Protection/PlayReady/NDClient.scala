@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Creates PlayReady-ND sessions, coordinates with the download engine and the stream parser (for example, an MPEG-2 demuxer), manages the sample buffer, and listens to media stream source events. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDClient")
 @js.native
-class NDClient protected ()
+open class NDClient protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.NDClient {
   /**

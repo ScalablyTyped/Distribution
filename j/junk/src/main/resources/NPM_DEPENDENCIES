@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "junk" : "3.1.0"
+      "junk" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "junk" : "3.1.0"
+      "junk" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -42,6 +42,14 @@ trait LivePusherContext extends StObject {
   def resumeBGM(): Unit = js.native
   def resumeBGM(option: ResumeBGMOption): Unit = js.native
   
+  /** [LivePusherContext.sendMessage(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePusherContext.sendMessage.html)
+    *
+    * 发送SEI消息
+    *
+    * 最低基础库： `2.10.0` */
+  def sendMessage(): Unit = js.native
+  def sendMessage(option: SendMessageOption): Unit = js.native
+  
   /** [LivePusherContext.setBGMVolume(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePusherContext.setBGMVolume.html)
     *
     * 设置背景音音量
@@ -56,16 +64,12 @@ trait LivePusherContext extends StObject {
     * 最低基础库： `2.10.0` */
   def setMICVolume(option: SetMICVolumeOption): Unit = js.native
   
-  /** [LivePusherContext.snapshot(string quality)](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePusherContext.snapshot.html)
+  /** [LivePusherContext.snapshot(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePusherContext.snapshot.html)
     *
     * 快照
     *
     * 最低基础库： `1.9.90` */
-  def snapshot(): Unit = js.native
-  def snapshot(/** 图片的质量，默认原图。有效值为 raw、compressed
-    *
-    * 最低基础库： `2.10.0` */
-  quality: String): Unit = js.native
+  def snapshot(option: LivePusherContextSnapshotOption): Unit = js.native
   
   /** [LivePusherContext.start(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePusherContext.start.html)
     *

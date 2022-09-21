@@ -10,10 +10,10 @@ object wallpaperMod {
   
   @JSImport("material-ui/svg-icons/device/wallpaper", JSImport.Default)
   @js.native
-  class default () extends DeviceWallpaper
+  open class default () extends DeviceWallpaper
   
   @JSImport("material-ui/svg-icons/device/wallpaper", "DeviceWallpaper")
   @js.native
-  class DeviceWallpaper ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceWallpaper ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

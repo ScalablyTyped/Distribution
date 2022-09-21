@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @struct
   * @api stable
   */
-class Observable ()
+open class Observable ()
   extends typings.openlayers.mod.Observable
 /* static members */
 object Observable {

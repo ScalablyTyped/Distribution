@@ -10,10 +10,10 @@ Strip all newlines from the given string.
 | ------------------ | :-------------: |
 | Full name          | newline-remove |
 | Keywords           | line ending, newline, remove, strip |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 198036 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2034.3333333333333 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/yoshuawuyts/newline-remove)

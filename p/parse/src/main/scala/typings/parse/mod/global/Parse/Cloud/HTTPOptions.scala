@@ -2,9 +2,7 @@ package typings.parse.mod.global.Parse.Cloud
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.parse.mod.global.Parse.Attributes
-import typings.parse.mod.global.Parse.Object
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +15,9 @@ trait HTTPOptions extends StObject {
     * You can also set this to a Buffer object to send raw bytes.
     * If you use a Buffer, you should also set the Content-Type header explicitly to describe what these bytes represent.
     */
-  var body: js.UndefOr[String | Buffer | Object[Attributes]] = js.undefined
+  var body: js.UndefOr[String | Buffer | js.Object] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* response */ js.Any, Unit]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* response */ Any, Unit]] = js.undefined
   
   /**
     * Defaults to 'false'.
@@ -39,9 +37,9 @@ trait HTTPOptions extends StObject {
   /**
     * The query portion of the url.
     */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* response */ js.Any, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* response */ Any, Unit]] = js.undefined
   
   /**
     * The url to send the request to.
@@ -61,11 +59,11 @@ object HTTPOptions {
   
   extension [Self <: HTTPOptions](x: Self) {
     
-    inline def setBody(value: String | Buffer | Object[Attributes]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String | Buffer | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    inline def setError(value: /* response */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* response */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
@@ -81,11 +79,11 @@ object HTTPOptions {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setSuccess(value: /* response */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* response */ Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PhysicsJoint")
 @js.native
-class PhysicsJoint protected ()
+open class PhysicsJoint protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsJoint {
   /**

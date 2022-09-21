@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object subscribeToArrayMod {
   
-  @JSImport("rxjs/internal/util/subscribeToArray", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/util/subscribeToArray", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

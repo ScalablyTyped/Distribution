@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDataflow.anon
 
-import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.Job
+import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.LaunchFlexTemplateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait FieldsKey extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains this job. */
+  /** Required. The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to which to direct the request. E.g., us-central1, us-west1. */
   var location: String
   
   /** OAuth 2.0 token for the current user. */
@@ -35,30 +35,24 @@ trait FieldsKey extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** The ID of the Cloud Platform project that the job belongs to. */
+  /** Required. The ID of the Cloud Platform project that the job belongs to. */
   var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Deprecated. This field is now in the Job message. */
-  var replaceJobId: js.UndefOr[String] = js.undefined
-  
   /** Request body */
-  var resource: Job
+  var resource: LaunchFlexTemplateRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /** The level of information requested in response. */
-  var view: js.UndefOr[String] = js.undefined
 }
 object FieldsKey {
   
-  inline def apply(location: String, projectId: String, resource: Job): FieldsKey = {
+  inline def apply(location: String, projectId: String, resource: LaunchFlexTemplateRequest): FieldsKey = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsKey]
   }
@@ -105,11 +99,7 @@ object FieldsKey {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setReplaceJobId(value: String): Self = StObject.set(x, "replaceJobId", value.asInstanceOf[js.Any])
-    
-    inline def setReplaceJobIdUndefined: Self = StObject.set(x, "replaceJobId", js.undefined)
-    
-    inline def setResource(value: Job): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: LaunchFlexTemplateRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
@@ -118,9 +108,5 @@ object FieldsKey {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
-    
-    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

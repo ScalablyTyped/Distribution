@@ -24,6 +24,6 @@ object GetEffectivePoliciesResponse {
     
     inline def setEffectivePoliciesUndefined: Self = StObject.set(x, "effectivePolicies", js.undefined)
     
-    inline def setEffectivePoliciesVarargs(value: EffectivePolicy*): Self = StObject.set(x, "effectivePolicies", js.Array(value :_*))
+    inline def setEffectivePoliciesVarargs(value: EffectivePolicy*): Self = StObject.set(x, "effectivePolicies", js.Array(value*))
   }
 }

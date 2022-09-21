@@ -74,12 +74,12 @@ object ColumnSettings {
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
-    queryInterface: `type` => js.Any,
+    getPropertyValue: String => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    setPropertyValue: (String, Any) => Unit
   ): ColumnSettings = {
     val __obj = js.Dynamic.literal(Align = Align.asInstanceOf[js.Any], ControlDefault = ControlDefault.asInstanceOf[js.Any], ControlModel = ControlModel.asInstanceOf[js.Any], FormatKey = FormatKey.asInstanceOf[js.Any], HelpText = HelpText.asInstanceOf[js.Any], Hidden = Hidden.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[ColumnSettings]

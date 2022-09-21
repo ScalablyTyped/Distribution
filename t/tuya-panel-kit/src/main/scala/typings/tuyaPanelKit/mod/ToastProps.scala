@@ -14,24 +14,132 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ToastProps extends StObject {
   
+  /**
+    * @language zh-CN
+    * @description 嵌套子元素
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Nested sub elements
+    * @defaultValue null
+    */
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 内层包裹样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Inner wrapping style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图片
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Image
+    * @defaultValue null
+    */
   var image: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图片样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/image-style-props">StyleProp<ImageStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Image style
+    * @types <a target="_blank" href="https://reactnative.dev/docs/image-style-props">StyleProp<ImageStyle></a>
+    * @defaultValue null
+    */
   var imageStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 动画结束回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Animation end callback
+    * @defaultValue () => {}
+    */
   def onFinish(): Unit
   
+  /**
+    * @language zh-CN
+    * @description 是否显示提示框
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Display prompt box
+    * @defaultValue null
+    */
   var show: Boolean
   
+  /**
+    * @language zh-CN
+    * @description 显示位置
+    * @defaultValue 'bottom'
+    */
+  /**
+    * @language en-US
+    * @description Display position
+    * @defaultValue 'bottom'
+    */
   var showPosition: js.UndefOr[top | bottom | center] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最外层样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Outermost style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 提示文字
+    * @defaultValue ''
+    */
+  /**
+    * @language en-US
+    * @description Text
+    * @defaultValue ''
+    */
   var text: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 文字样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Text style
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
   var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object ToastProps {

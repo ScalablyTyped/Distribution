@@ -6,7 +6,6 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,25 +14,25 @@ object accessPathPbMod {
   
   @JSImport("libra-core/lib/@/generated/access_path_pb", "AccessPath")
   @js.native
-  class AccessPath () extends Message {
+  open class AccessPath () extends Message {
     
-    def getAddress(): Uint8Array | String = js.native
+    def getAddress(): js.typedarray.Uint8Array | String = js.native
     
     def getAddress_asB64(): String = js.native
     
-    def getAddress_asU8(): Uint8Array = js.native
+    def getAddress_asU8(): js.typedarray.Uint8Array = js.native
     
-    def getPath(): Uint8Array | String = js.native
+    def getPath(): js.typedarray.Uint8Array | String = js.native
     
     def getPath_asB64(): String = js.native
     
-    def getPath_asU8(): Uint8Array = js.native
+    def getPath_asU8(): js.typedarray.Uint8Array = js.native
     
     def setAddress(value: String): Unit = js.native
-    def setAddress(value: Uint8Array): Unit = js.native
+    def setAddress(value: js.typedarray.Uint8Array): Unit = js.native
     
     def setPath(value: String): Unit = js.native
-    def setPath(value: Uint8Array): Unit = js.native
+    def setPath(value: js.typedarray.Uint8Array): Unit = js.native
   }
   /* static members */
   object AccessPath {
@@ -42,7 +41,7 @@ object accessPathPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): AccessPath = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccessPath]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): AccessPath = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AccessPath]
     
     inline def deserializeBinaryFromReader(message: AccessPath, reader: BinaryReader): AccessPath = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AccessPath]
     
@@ -63,22 +62,22 @@ object accessPathPbMod {
     
     trait AsObject extends StObject {
       
-      var address: Uint8Array | String
+      var address: js.typedarray.Uint8Array | String
       
-      var path: Uint8Array | String
+      var path: js.typedarray.Uint8Array | String
     }
     object AsObject {
       
-      inline def apply(address: Uint8Array | String, path: Uint8Array | String): AsObject = {
+      inline def apply(address: js.typedarray.Uint8Array | String, path: js.typedarray.Uint8Array | String): AsObject = {
         val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
       extension [Self <: AsObject](x: Self) {
         
-        inline def setAddress(value: Uint8Array | String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+        inline def setAddress(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
-        inline def setPath(value: Uint8Array | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       }
     }
   }

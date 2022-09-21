@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.ListTableElement")
 @js.native
-class ListTableElement protected () extends ListElement {
+open class ListTableElement protected () extends ListElement {
   def this(opts: ListTableOptions) = this()
   
   /**

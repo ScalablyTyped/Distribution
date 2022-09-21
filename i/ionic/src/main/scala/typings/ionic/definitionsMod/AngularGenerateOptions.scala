@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AngularGenerateOptions
   extends StObject
      with GenerateOptions
-     with /* key */ StringDictionary[js.Any]
+     with /* key */ StringDictionary[Any]
 object AngularGenerateOptions {
   
   inline def apply(name: String, `type`: String): AngularGenerateOptions = {

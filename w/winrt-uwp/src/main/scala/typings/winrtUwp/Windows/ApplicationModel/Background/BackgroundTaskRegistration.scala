@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BackgroundTaskRegistration extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_completed(`type`: completed, listener: BackgroundTaskCompletedEventHandler): Unit = js.native
   @JSName("addEventListener")
@@ -33,7 +33,7 @@ trait BackgroundTaskRegistration extends StObject {
   @JSName("onprogress")
   var onprogress_Original: BackgroundTaskProgressEventHandler = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_completed(`type`: completed, listener: BackgroundTaskCompletedEventHandler): Unit = js.native
   @JSName("removeEventListener")

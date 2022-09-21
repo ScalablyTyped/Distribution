@@ -32,12 +32,12 @@ object ProductVisibility {
     
     inline def setTrackIdsUndefined: Self = StObject.set(x, "trackIds", js.undefined)
     
-    inline def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value :_*))
+    inline def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value*))
     
     inline def setTracks(value: js.Array[String]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    inline def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

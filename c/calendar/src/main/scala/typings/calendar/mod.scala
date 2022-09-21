@@ -1,6 +1,5 @@
 package typings.calendar
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,27 +11,26 @@ object mod {
   /**
     * @param firstWeekDay default is `0` (Sunday)
     */
-  class Calendar () extends StObject {
+  open class Calendar () extends StObject {
     def this(firstWeekDay: Double) = this()
     
-    def monthDates(year: Double, month: Double): js.Array[Date] = js.native
-    def monthDates(year: Double, month: Double, dayFormatter: Unit, weekFormatter: WeekFormatter): js.Array[Date] = js.native
-    def monthDates(year: Double, month: Double, dayFormatter: DayFormatter): js.Array[Date] = js.native
-    def monthDates(year: Double, month: Double, dayFormatter: DayFormatter, weekFormatter: WeekFormatter): js.Array[Date] = js.native
+    def monthDates[T](year: Double, month: Double): js.Array[js.Array[T]] = js.native
+    def monthDates[T](year: Double, month: Double, dayFormatter: DayFormatter[T]): js.Array[js.Array[T]] = js.native
+    def monthDates[T, U](year: Double, month: Double, dayFormatter: DayFormatter[T], weekFormatter: WeekFormatter[T, U]): js.Array[U] = js.native
     
-    def monthDays(year: Double, month: Double): js.Array[Date] = js.native
+    def monthDays(year: Double, month: Double): js.Array[js.Array[Double]] = js.native
     
     def monthText(): String = js.native
     def monthText(year: Double, month: Double): String = js.native
     
-    def weekStartDate(date: Date): Date = js.native
+    def weekStartDate(date: js.Date): js.Date = js.native
   }
   
   @JSImport("calendar", "version")
   @js.native
   val version: String = js.native
   
-  type DayFormatter = js.Function1[/* day */ Date, Date | String]
+  type DayFormatter[T] = js.Function1[/* day */ js.Date, T]
   
-  type WeekFormatter = js.Function1[/* week */ js.Array[Date], js.Array[Date] | String]
+  type WeekFormatter[T, U] = js.Function1[/* week */ js.Array[T], U]
 }

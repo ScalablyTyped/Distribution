@@ -21,6 +21,6 @@ object SchemaStandardSqlStructType {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: SchemaStandardSqlField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaStandardSqlField*): Self = StObject.set(x, "fields", js.Array(value*))
   }
 }

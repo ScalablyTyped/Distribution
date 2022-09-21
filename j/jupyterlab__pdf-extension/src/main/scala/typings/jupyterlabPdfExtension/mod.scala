@@ -16,15 +16,15 @@ object mod extends Shortcut {
   
   @JSImport("@jupyterlab/pdf-extension", "RenderedPDF")
   @js.native
-  class RenderedPDF () extends IRenderer {
+  open class RenderedPDF () extends IRenderer {
     
-    /* private */ var _base64: js.Any = js.native
+    /* private */ var _base64: Any = js.native
     
-    /* private */ var _disposable: js.Any = js.native
+    /* private */ var _disposable: Any = js.native
     
-    /* private */ var _object: js.Any = js.native
+    /* private */ var _object: Any = js.native
     
-    /* private */ var _ready: js.Any = js.native
+    /* private */ var _ready: Any = js.native
     
     /**
       * Handle a `before-hide` message.

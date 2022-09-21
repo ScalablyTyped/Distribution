@@ -140,6 +140,18 @@ object socialLogosStrings {
   inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
+  sealed trait `medium-alt`
+    extends StObject
+       with SocialIcon
+  inline def `medium-alt`: `medium-alt` = "medium-alt".asInstanceOf[`medium-alt`]
+  
+  @js.native
+  sealed trait patreon
+    extends StObject
+       with SocialIcon
+  inline def patreon: patreon = "patreon".asInstanceOf[patreon]
+  
+  @js.native
   sealed trait pinterest
     extends StObject
        with SocialIcon
@@ -210,6 +222,18 @@ object socialLogosStrings {
     extends StObject
        with SocialIcon
   inline def telegram: telegram = "telegram".asInstanceOf[telegram]
+  
+  @js.native
+  sealed trait tiktok
+    extends StObject
+       with SocialIcon
+  inline def tiktok: tiktok = "tiktok".asInstanceOf[tiktok]
+  
+  @js.native
+  sealed trait `tiktok-alt`
+    extends StObject
+       with SocialIcon
+  inline def `tiktok-alt`: `tiktok-alt` = "tiktok-alt".asInstanceOf[`tiktok-alt`]
   
   @js.native
   sealed trait tumblr

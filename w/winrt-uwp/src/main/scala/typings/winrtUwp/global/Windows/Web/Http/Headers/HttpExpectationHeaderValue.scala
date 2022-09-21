@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a token for a particular server behavior required by the client that is used in the Expect HTTP header on an HTTP request. */
 @JSGlobal("Windows.Web.Http.Headers.HttpExpectationHeaderValue")
 @js.native
-class HttpExpectationHeaderValue protected ()
+open class HttpExpectationHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpExpectationHeaderValue {
   /**

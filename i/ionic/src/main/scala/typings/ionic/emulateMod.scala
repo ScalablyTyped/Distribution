@@ -10,7 +10,7 @@ object emulateMod {
   
   @JSImport("ionic/commands/cordova/emulate", "EmulateCommand")
   @js.native
-  class EmulateCommand protected () extends RunCommand {
+  open class EmulateCommand protected () extends RunCommand {
     def this(namespace: INamespace) = this()
   }
 }

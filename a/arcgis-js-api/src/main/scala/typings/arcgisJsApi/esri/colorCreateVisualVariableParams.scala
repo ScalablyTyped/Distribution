@@ -3,6 +3,8 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
 import typings.arcgisJsApi.arcgisJsApiStrings.`centered-on`
 import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
+import typings.arcgisJsApi.arcgisJsApiStrings.above
+import typings.arcgisJsApi.arcgisJsApiStrings.below
 import typings.arcgisJsApi.arcgisJsApiStrings.extremes
 import typings.std.AbortSignal
 import typings.std.Object
@@ -14,13 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait colorCreateVisualVariableParams
   extends StObject
      with Object {
-  
-  /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * In authoring apps, the user may select a pre-defined color scheme.
@@ -41,7 +36,7 @@ trait colorCreateVisualVariableParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * Provides options for setting a title to a field when an expression is provided instead of a field name.
@@ -102,12 +97,14 @@ trait colorCreateVisualVariableParams
   /**
     * Determines which values will be emphasized in the continuous ramp and the map.
     *
+    * @default high-to-low
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
-  var theme: js.UndefOr[`high-to-low` | `above-and-below` | `centered-on` | extremes] = js.undefined
+  var theme: js.UndefOr[`high-to-low` | above | below | `above-and-below` | `centered-on` | extremes] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
@@ -139,7 +136,7 @@ object colorCreateVisualVariableParams {
   inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean
   ): colorCreateVisualVariableParams = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
@@ -147,10 +144,6 @@ object colorCreateVisualVariableParams {
   }
   
   extension [Self <: colorCreateVisualVariableParams](x: Self) {
-    
-    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
-    
-    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
@@ -160,7 +153,7 @@ object colorCreateVisualVariableParams {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: colorCreateVisualVariableParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
@@ -194,7 +187,7 @@ object colorCreateVisualVariableParams {
     
     inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
-    inline def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: `high-to-low` | above | below | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

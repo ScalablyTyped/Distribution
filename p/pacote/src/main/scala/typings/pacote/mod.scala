@@ -1,7 +1,7 @@
 package typings.pacote
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Transform
@@ -15,9 +15,12 @@ import typings.pacote.anon.Created
 import typings.pacote.anon.Directory
 import typings.pacote.anon.Email
 import typings.pacote.anon.Latest
+import typings.pacote.anon.OptionsfullMetadatatrue
+import typings.pacote.anon.beforeDateOptions
+import typings.pacote.anon.fullMetadatatrueOptions
 import typings.pacote.pacoteBooleans.`false`
 import typings.ssri.mod.Integrity
-import typings.std.Date
+import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,11 +37,14 @@ object mod {
   inline def extract(spec: String, dest: String, opts: Options): js.Promise[FetchResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(spec.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FetchResult]]
   inline def extract(spec: String, dest: Unit, opts: Options): js.Promise[FetchResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(spec.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FetchResult]]
   
-  inline def manifest(spec: String): js.Promise[ManifestResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("manifest")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ManifestResult]]
-  inline def manifest(spec: String, opts: Options): js.Promise[ManifestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("manifest")(spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ManifestResult]]
+  inline def manifest(spec: String): js.Promise[AbbreviatedManifest & ManifestResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("manifest")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AbbreviatedManifest & ManifestResult]]
+  inline def manifest(spec: String, opts: beforeDateOptions): js.Promise[Manifest_ & ManifestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("manifest")(spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Manifest_ & ManifestResult]]
+  inline def manifest(spec: String, opts: fullMetadatatrueOptions): js.Promise[Manifest_ & ManifestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("manifest")(spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Manifest_ & ManifestResult]]
+  inline def manifest(spec: String, opts: Options): js.Promise[AbbreviatedManifest & ManifestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("manifest")(spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AbbreviatedManifest & ManifestResult]]
   
-  inline def packument(spec: String): js.Promise[Packument_] = ^.asInstanceOf[js.Dynamic].applyDynamic("packument")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Packument_]]
-  inline def packument(spec: String, opts: Options): js.Promise[Packument_] = (^.asInstanceOf[js.Dynamic].applyDynamic("packument")(spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Packument_]]
+  inline def packument(spec: String): js.Promise[AbbreviatedPackument & PackumentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("packument")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AbbreviatedPackument & PackumentResult]]
+  inline def packument(spec: String, opts: OptionsfullMetadatatrue): js.Promise[Packument_ & PackumentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("packument")(spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Packument_ & PackumentResult]]
+  inline def packument(spec: String, opts: Options): js.Promise[AbbreviatedPackument & PackumentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("packument")(spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AbbreviatedPackument & PackumentResult]]
   
   inline def resolve(spec: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   inline def resolve(spec: String, opts: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(spec.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
@@ -77,6 +83,119 @@ object mod {
     inline def stream[T](spec: String, streamHandler: js.Function1[/* stream */ Transform, js.Promise[T]], opts: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(spec.asInstanceOf[js.Any], streamHandler.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   }
   
+  /* Inlined std.Pick<pacote.pacote.Manifest, 'name' | 'version' | 'bin' | 'directories' | 'dependencies' | 'devDependencies' | 'peerDependencies' | 'bundledDependencies' | 'optionalDependencies' | 'engines' | 'dist' | 'deprecated'> */
+  trait AbbreviatedManifest extends StObject {
+    
+    var bin: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var bundledDependencies: js.UndefOr[`false` | js.Array[String]] = js.undefined
+    
+    var dependencies: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var deprecated: js.UndefOr[Any] = js.undefined
+    
+    var devDependencies: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var directories: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var dist: PackageDist
+    
+    var engines: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var name: String
+    
+    var optionalDependencies: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var peerDependencies: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var version: String
+  }
+  object AbbreviatedManifest {
+    
+    inline def apply(dist: PackageDist, name: String, version: String): AbbreviatedManifest = {
+      val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AbbreviatedManifest]
+    }
+    
+    extension [Self <: AbbreviatedManifest](x: Self) {
+      
+      inline def setBin(value: Record[String, String]): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+      
+      inline def setBinUndefined: Self = StObject.set(x, "bin", js.undefined)
+      
+      inline def setBundledDependencies(value: `false` | js.Array[String]): Self = StObject.set(x, "bundledDependencies", value.asInstanceOf[js.Any])
+      
+      inline def setBundledDependenciesUndefined: Self = StObject.set(x, "bundledDependencies", js.undefined)
+      
+      inline def setBundledDependenciesVarargs(value: String*): Self = StObject.set(x, "bundledDependencies", js.Array(value*))
+      
+      inline def setDependencies(value: Record[String, String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      
+      inline def setDeprecated(value: Any): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      
+      inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+      
+      inline def setDevDependencies(value: Record[String, String]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
+      
+      inline def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
+      
+      inline def setDirectories(value: Record[String, String]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+      
+      inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
+      
+      inline def setDist(value: PackageDist): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
+      
+      inline def setEngines(value: Record[String, String]): Self = StObject.set(x, "engines", value.asInstanceOf[js.Any])
+      
+      inline def setEnginesUndefined: Self = StObject.set(x, "engines", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setOptionalDependencies(value: Record[String, String]): Self = StObject.set(x, "optionalDependencies", value.asInstanceOf[js.Any])
+      
+      inline def setOptionalDependenciesUndefined: Self = StObject.set(x, "optionalDependencies", js.undefined)
+      
+      inline def setPeerDependencies(value: Record[String, String]): Self = StObject.set(x, "peerDependencies", value.asInstanceOf[js.Any])
+      
+      inline def setPeerDependenciesUndefined: Self = StObject.set(x, "peerDependencies", js.undefined)
+      
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined {  versions :std.Record<string, pacote.pacote.AbbreviatedManifest>} & std.Pick<pacote.pacote.Packument, 'name' | 'dist-tags'> */
+  trait AbbreviatedPackument extends StObject {
+    
+    var `dist-tags`: Latest & (Record[String, String])
+    
+    var name: String
+    
+    var versions: Record[String, AbbreviatedManifest]
+  }
+  object AbbreviatedPackument {
+    
+    inline def apply(
+      `dist-tags`: Latest & (Record[String, String]),
+      name: String,
+      versions: Record[String, AbbreviatedManifest]
+    ): AbbreviatedPackument = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
+      __obj.updateDynamic("dist-tags")(`dist-tags`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AbbreviatedPackument]
+    }
+    
+    extension [Self <: AbbreviatedPackument](x: Self) {
+      
+      inline def `setDist-tags`(value: Latest & (Record[String, String])): Self = StObject.set(x, "dist-tags", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setVersions(value: Record[String, AbbreviatedManifest]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait CommonMetadata extends StObject {
     
     var author: js.UndefOr[Person] = js.undefined
@@ -91,7 +210,7 @@ object mod {
     
     var license: js.UndefOr[String] = js.undefined
     
-    var maintainers: js.UndefOr[js.Array[Person]] = js.undefined
+    var maintainers: js.Array[Person]
     
     var readme: js.UndefOr[String] = js.undefined
     
@@ -103,8 +222,8 @@ object mod {
   }
   object CommonMetadata {
     
-    inline def apply(): CommonMetadata = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(maintainers: js.Array[Person]): CommonMetadata = {
+      val __obj = js.Dynamic.literal(maintainers = maintainers.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonMetadata]
     }
     
@@ -122,7 +241,7 @@ object mod {
       
       inline def setContributorsUndefined: Self = StObject.set(x, "contributors", js.undefined)
       
-      inline def setContributorsVarargs(value: Person*): Self = StObject.set(x, "contributors", js.Array(value :_*))
+      inline def setContributorsVarargs(value: Person*): Self = StObject.set(x, "contributors", js.Array(value*))
       
       inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
       
@@ -132,7 +251,7 @@ object mod {
       
       inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
       
       inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
       
@@ -140,9 +259,7 @@ object mod {
       
       inline def setMaintainers(value: js.Array[Person]): Self = StObject.set(x, "maintainers", value.asInstanceOf[js.Any])
       
-      inline def setMaintainersUndefined: Self = StObject.set(x, "maintainers", js.undefined)
-      
-      inline def setMaintainersVarargs(value: Person*): Self = StObject.set(x, "maintainers", js.Array(value :_*))
+      inline def setMaintainersVarargs(value: Person*): Self = StObject.set(x, "maintainers", js.Array(value*))
       
       inline def setReadme(value: String): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
       
@@ -196,14 +313,17 @@ object mod {
     }
   }
   
-  trait ManifestResult
-    extends StObject
-       with Manifest_ {
+  trait ManifestResult extends StObject {
     
     /**
       * A normalized form of the spec passed in as an argument.
       */
     var _from: String
+    
+    /**
+      * The canonical spec of this package version: name@version.
+      */
+    var _id: String
     
     /**
       * The integrity value for the package artifact.
@@ -217,21 +337,16 @@ object mod {
   }
   object ManifestResult {
     
-    inline def apply(
-      _from: String,
-      _integrity: String,
-      _resolved: String,
-      dist: PackageDist,
-      name: String,
-      version: String
-    ): ManifestResult = {
-      val __obj = js.Dynamic.literal(_from = _from.asInstanceOf[js.Any], _integrity = _integrity.asInstanceOf[js.Any], _resolved = _resolved.asInstanceOf[js.Any], dist = dist.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    inline def apply(_from: String, _id: String, _integrity: String, _resolved: String): ManifestResult = {
+      val __obj = js.Dynamic.literal(_from = _from.asInstanceOf[js.Any], _id = _id.asInstanceOf[js.Any], _integrity = _integrity.asInstanceOf[js.Any], _resolved = _resolved.asInstanceOf[js.Any])
       __obj.asInstanceOf[ManifestResult]
     }
     
     extension [Self <: ManifestResult](x: Self) {
       
       inline def set_from(value: String): Self = StObject.set(x, "_from", value.asInstanceOf[js.Any])
+      
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
       
       inline def set_integrity(value: String): Self = StObject.set(x, "_integrity", value.asInstanceOf[js.Any])
       
@@ -242,16 +357,16 @@ object mod {
   trait Manifest_
     extends StObject
        with CommonMetadata
-       with // Non-standard properties may also appear when fullMetadata = true.
-  /* key */ StringDictionary[js.Any] {
+       with // Non-standard properties from package.json may also appear.
+  /* key */ StringDictionary[Any] {
     
-    var _id: js.UndefOr[String] = js.undefined
+    var _id: String
     
-    var _nodeVersion: js.UndefOr[String] = js.undefined
+    var _nodeVersion: String
     
-    var _npmUser: js.UndefOr[Person] = js.undefined
+    var _npmUser: Person
     
-    var _npmVersion: js.UndefOr[String] = js.undefined
+    var _npmVersion: String
     
     var bin: js.UndefOr[Record[String, String]] = js.undefined
     
@@ -260,7 +375,7 @@ object mod {
     
     var bundledDependencies: js.UndefOr[`false` | js.Array[String]] = js.undefined
     
-    var config: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var config: js.UndefOr[Record[String, Any]] = js.undefined
     
     var cpu: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -291,7 +406,7 @@ object mod {
     
     var peerDependencies: js.UndefOr[Record[String, String]] = js.undefined
     
-    var publishConfig: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var publishConfig: js.UndefOr[Record[String, Any]] = js.undefined
     
     var scripts: js.UndefOr[Record[String, String]] = js.undefined
     
@@ -299,8 +414,17 @@ object mod {
   }
   object Manifest_ {
     
-    inline def apply(dist: PackageDist, name: String, version: String): Manifest_ = {
-      val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    inline def apply(
+      _id: String,
+      _nodeVersion: String,
+      _npmUser: Person,
+      _npmVersion: String,
+      dist: PackageDist,
+      maintainers: js.Array[Person],
+      name: String,
+      version: String
+    ): Manifest_ = {
+      val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _nodeVersion = _nodeVersion.asInstanceOf[js.Any], _npmUser = _npmUser.asInstanceOf[js.Any], _npmVersion = _npmVersion.asInstanceOf[js.Any], dist = dist.asInstanceOf[js.Any], maintainers = maintainers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Manifest_]
     }
     
@@ -318,9 +442,9 @@ object mod {
       
       inline def setBundledDependenciesUndefined: Self = StObject.set(x, "bundledDependencies", js.undefined)
       
-      inline def setBundledDependenciesVarargs(value: String*): Self = StObject.set(x, "bundledDependencies", js.Array(value :_*))
+      inline def setBundledDependenciesVarargs(value: String*): Self = StObject.set(x, "bundledDependencies", js.Array(value*))
       
-      inline def setConfig(value: Record[String, js.Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Record[String, Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
@@ -328,7 +452,7 @@ object mod {
       
       inline def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
       
-      inline def setCpuVarargs(value: String*): Self = StObject.set(x, "cpu", js.Array(value :_*))
+      inline def setCpuVarargs(value: String*): Self = StObject.set(x, "cpu", js.Array(value*))
       
       inline def setDependencies(value: Record[String, String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -356,7 +480,7 @@ object mod {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
@@ -366,7 +490,7 @@ object mod {
       
       inline def setManUndefined: Self = StObject.set(x, "man", js.undefined)
       
-      inline def setManVarargs(value: String*): Self = StObject.set(x, "man", js.Array(value :_*))
+      inline def setManVarargs(value: String*): Self = StObject.set(x, "man", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -378,13 +502,13 @@ object mod {
       
       inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
       
-      inline def setOsVarargs(value: String*): Self = StObject.set(x, "os", js.Array(value :_*))
+      inline def setOsVarargs(value: String*): Self = StObject.set(x, "os", js.Array(value*))
       
       inline def setPeerDependencies(value: Record[String, String]): Self = StObject.set(x, "peerDependencies", value.asInstanceOf[js.Any])
       
       inline def setPeerDependenciesUndefined: Self = StObject.set(x, "peerDependencies", js.undefined)
       
-      inline def setPublishConfig(value: Record[String, js.Any]): Self = StObject.set(x, "publishConfig", value.asInstanceOf[js.Any])
+      inline def setPublishConfig(value: Record[String, Any]): Self = StObject.set(x, "publishConfig", value.asInstanceOf[js.Any])
       
       inline def setPublishConfigUndefined: Self = StObject.set(x, "publishConfig", js.undefined)
       
@@ -396,19 +520,11 @@ object mod {
       
       inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
       
-      inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
-      
       inline def set_nodeVersion(value: String): Self = StObject.set(x, "_nodeVersion", value.asInstanceOf[js.Any])
-      
-      inline def set_nodeVersionUndefined: Self = StObject.set(x, "_nodeVersion", js.undefined)
       
       inline def set_npmUser(value: Person): Self = StObject.set(x, "_npmUser", value.asInstanceOf[js.Any])
       
-      inline def set_npmUserUndefined: Self = StObject.set(x, "_npmUser", js.undefined)
-      
       inline def set_npmVersion(value: String): Self = StObject.set(x, "_npmVersion", value.asInstanceOf[js.Any])
-      
-      inline def set_npmVersionUndefined: Self = StObject.set(x, "_npmVersion", js.undefined)
     }
   }
   
@@ -419,7 +535,7 @@ object mod {
        with PacoteOptions
        with FetchRetryOptions
        with AuthOptions
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * An `Agent` instance to be shared across requests. This allows
@@ -549,7 +665,7 @@ object mod {
       * `JSONStream.parse`, and can be used to transform stream data before
       * output.
       */
-    var mapJSON: js.UndefOr[js.Function1[/* v */ js.Any, js.Any]] = js.undefined
+    var mapJSON: js.UndefOr[js.Function1[/* v */ Any, Any]] = js.undefined
     
     /**
       * Maximum number of sockets to keep open during requests. Has no effect
@@ -679,7 +795,7 @@ object mod {
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -713,7 +829,7 @@ object mod {
       
       inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
-      inline def setMapJSON(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "mapJSON", js.Any.fromFunction1(value))
+      inline def setMapJSON(value: /* v */ Any => Any): Self = StObject.set(x, "mapJSON", js.Any.fromFunction1(value))
       
       inline def setMapJSONUndefined: Self = StObject.set(x, "mapJSON", js.undefined)
       
@@ -852,11 +968,29 @@ object mod {
     }
   }
   
+  trait PackumentResult extends StObject {
+    
+    /**
+      * The size of the packument.
+      */
+    var _contentLength: Double
+  }
+  object PackumentResult {
+    
+    inline def apply(_contentLength: Double): PackumentResult = {
+      val __obj = js.Dynamic.literal(_contentLength = _contentLength.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PackumentResult]
+    }
+    
+    extension [Self <: PackumentResult](x: Self) {
+      
+      inline def set_contentLength(value: Double): Self = StObject.set(x, "_contentLength", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Packument_
     extends StObject
-       with CommonMetadata
-       with // Non-standard properties may also appear when fullMetadata = true.
-  /* key */ StringDictionary[js.Any] {
+       with CommonMetadata {
     
     /**
       * An object mapping dist-tags to version numbers. This is how `foo@latest`
@@ -870,7 +1004,7 @@ object mod {
       * In the full packument, an object mapping version numbers to publication
       * times, for the `opts.before` functionality.
       */
-    var time: js.UndefOr[(Record[String, String]) & Created] = js.undefined
+    var time: (Record[String, String]) & Created
     
     /**
       * An object where each key is a version, and each value is the manifest for
@@ -880,8 +1014,14 @@ object mod {
   }
   object Packument_ {
     
-    inline def apply(`dist-tags`: Latest & (Record[String, String]), name: String, versions: Record[String, Manifest_]): Packument_ = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
+    inline def apply(
+      `dist-tags`: Latest & (Record[String, String]),
+      maintainers: js.Array[Person],
+      name: String,
+      time: (Record[String, String]) & Created,
+      versions: Record[String, Manifest_]
+    ): Packument_ = {
+      val __obj = js.Dynamic.literal(maintainers = maintainers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
       __obj.updateDynamic("dist-tags")(`dist-tags`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Packument_]
     }
@@ -894,8 +1034,6 @@ object mod {
       
       inline def setTime(value: (Record[String, String]) & Created): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
-      
       inline def setVersions(value: Record[String, Manifest_]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     }
   }
@@ -906,7 +1044,7 @@ object mod {
       * When picking a manifest from a packument, only consider packages
       * published before the specified date. Default `null`.
       */
-    var before: js.UndefOr[Date | Null] = js.undefined
+    var before: js.UndefOr[js.Date | Null] = js.undefined
     
     /**
       * Where to store cache entries and temp files. Passed to
@@ -954,6 +1092,16 @@ object mod {
     var log: js.UndefOr[Logger] = js.undefined
     
     /**
+      * you usually don't want to fetch the same packument multiple times in
+      * the span of a given script or command, no matter how many pacote calls
+      * are made, so this lets us avoid doing that.  It's only relevant for
+      * registry fetchers, because other types simulate their packument from
+      * the manifest, which they memoize on this.package, so it's very cheap
+      * already.
+      */
+    var packumentCache: js.UndefOr[Map[String, Packument_]] = js.undefined
+    
+    /**
       * Prefer to revalidate cache entries, even when it would not be strictly
       * necessary. Default `false`.
       */
@@ -990,7 +1138,7 @@ object mod {
     
     extension [Self <: PacoteOptions](x: Self) {
       
-      inline def setBefore(value: Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: js.Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
       inline def setBeforeNull: Self = StObject.set(x, "before", null)
       
@@ -1023,6 +1171,10 @@ object mod {
       inline def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      
+      inline def setPackumentCache(value: Map[String, Packument_]): Self = StObject.set(x, "packumentCache", value.asInstanceOf[js.Any])
+      
+      inline def setPackumentCacheUndefined: Self = StObject.set(x, "packumentCache", js.undefined)
       
       inline def setPreferOnline(value: Boolean): Self = StObject.set(x, "preferOnline", value.asInstanceOf[js.Any])
       

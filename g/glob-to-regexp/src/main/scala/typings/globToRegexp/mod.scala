@@ -1,14 +1,13 @@
 package typings.globToRegexp
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(glob: String): RegExp = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  inline def apply(glob: String, options: Options): RegExp = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def apply(glob: String): js.RegExp = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def apply(glob: String, options: Options): js.RegExp = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.RegExp]
   
   @JSImport("glob-to-regexp", JSImport.Namespace)
   @js.native

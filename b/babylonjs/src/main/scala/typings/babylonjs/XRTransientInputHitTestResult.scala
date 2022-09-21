@@ -23,6 +23,6 @@ object XRTransientInputHitTestResult {
     
     inline def setResults(value: js.Array[XRHitTestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: XRHitTestResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: XRHitTestResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

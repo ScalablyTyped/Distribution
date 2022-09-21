@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BarProp extends StObject {
   
+  /* standard dom */
   val visible: scala.Boolean
 }
 object BarProp {

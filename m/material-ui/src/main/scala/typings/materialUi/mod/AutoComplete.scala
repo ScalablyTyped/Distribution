@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "AutoComplete")
 @js.native
-class AutoComplete ()
-  extends Component[AutoCompleteProps[js.Any], js.Object, js.Any]
+open class AutoComplete ()
+  extends Component[AutoCompleteProps[Any], js.Object, Any]
 /* static members */
 object AutoComplete {
   

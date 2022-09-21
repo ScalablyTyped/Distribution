@@ -4,6 +4,7 @@ import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.elevationMod.Elevation
 import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
@@ -31,10 +32,10 @@ object cardMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/card/card", "Card")
   @js.native
-  class Card protected ()
-    extends AbstractPureComponent2[ICardProps, js.Object, js.Object] {
-    def this(props: ICardProps) = this()
-    def this(props: ICardProps, context: js.Any) = this()
+  open class Card protected ()
+    extends AbstractPureComponent2[CardProps, js.Object, js.Object] {
+    def this(props: CardProps) = this()
+    def this(props: CardProps, context: Any) = this()
   }
   /* static members */
   object Card {
@@ -45,14 +46,16 @@ object cardMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/card/card", "Card.defaultProps")
     @js.native
-    def defaultProps: ICardProps = js.native
-    inline def defaultProps_=(x: ICardProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: CardProps = js.native
+    inline def defaultProps_=(x: CardProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/card/card", "Card.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
+  
+  type CardProps = ICardProps
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait ICardProps
@@ -104,7 +107,7 @@ object cardMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -164,7 +167,7 @@ object cardMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -243,7 +246,7 @@ object cardMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -265,7 +268,7 @@ object cardMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -333,7 +336,7 @@ object cardMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       

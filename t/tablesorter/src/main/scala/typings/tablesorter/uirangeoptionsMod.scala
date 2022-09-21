@@ -16,7 +16,7 @@ object uirangeoptionsMod {
   /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/PreviewableOptions.PreviewableOptions */
   trait UIRangeOptions extends StObject {
     
-    var animate: js.UndefOr[js.Any] = js.undefined
+    var animate: js.UndefOr[Any] = js.undefined
     
     var change: js.UndefOr[SliderEvent] = js.undefined
     
@@ -45,7 +45,7 @@ object uirangeoptionsMod {
     
     var orientation: js.UndefOr[String] = js.undefined
     
-    var range: js.UndefOr[js.Any] = js.undefined
+    var range: js.UndefOr[Any] = js.undefined
     
     var slide: js.UndefOr[SliderEvent] = js.undefined
     
@@ -69,7 +69,7 @@ object uirangeoptionsMod {
     
     extension [Self <: UIRangeOptions](x: Self) {
       
-      inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
       inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
@@ -109,7 +109,7 @@ object uirangeoptionsMod {
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      inline def setRange(value: js.Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
@@ -133,7 +133,7 @@ object uirangeoptionsMod {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

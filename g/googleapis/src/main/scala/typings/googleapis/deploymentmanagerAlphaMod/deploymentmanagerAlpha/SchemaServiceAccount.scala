@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Service Account used as a credential.
-  */
 trait SchemaServiceAccount extends StObject {
   
   /**
-    * The IAM service account email address like
-    * test@myproject.iam.gserviceaccount.com
+    * The IAM service account email address like test@myproject.iam.gserviceaccount.com
     */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaServiceAccount {
   
@@ -25,6 +21,8 @@ object SchemaServiceAccount {
   extension [Self <: SchemaServiceAccount](x: Self) {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }

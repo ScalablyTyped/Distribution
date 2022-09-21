@@ -16,7 +16,7 @@ object listKeysCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/ListKeysCommand", "ListKeysCommand")
   @js.native
-  class ListKeysCommand protected ()
+  open class ListKeysCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object listKeysCommandMod {
     override val middlewareStack: MiddlewareStack[ListKeysInput, ListKeysOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[ListKeysInput, ListKeysOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ListKeysInput, ListKeysOutput] = js.native
   }
 }

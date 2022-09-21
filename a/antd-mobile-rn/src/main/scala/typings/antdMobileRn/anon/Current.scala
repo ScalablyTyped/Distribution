@@ -18,7 +18,7 @@ trait Current extends StObject {
   
   var simple: Boolean
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
   
   var total: Double
 }
@@ -30,7 +30,7 @@ object Current {
     mode: String,
     onChange: () => Unit,
     simple: Boolean,
-    styles: StringDictionary[RegisteredStyle[js.Any]],
+    styles: StringDictionary[RegisteredStyle[Any]],
     total: Double
   ): Current = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], indicatorStyle = indicatorStyle.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), simple = simple.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object Current {
     
     inline def setSimple(value: Boolean): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }

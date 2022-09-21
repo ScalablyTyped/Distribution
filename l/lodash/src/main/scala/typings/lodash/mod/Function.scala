@@ -15,8 +15,8 @@ trait Function[T]
   /**
     * @see _.ary
     */
-  def ary(): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-  def ary(n: Double): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def ary(): Function[js.Function1[/* repeated */ Any, Any]] = js.native
+  def ary(n: Double): Function[js.Function1[/* repeated */ Any, Any]] = js.native
   
   /**
     * @see _.castArray
@@ -32,29 +32,31 @@ trait Function[T]
     * @see _.curry
     */
   def curry(): Function[
-    (CurriedFunction1[js.Any, js.Any]) | (CurriedFunction2[js.Any, js.Any, js.Any]) | (CurriedFunction3[js.Any, js.Any, js.Any, js.Any]) | (CurriedFunction4[js.Any, js.Any, js.Any, js.Any, js.Any]) | (CurriedFunction5[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any]) | (js.Function1[/* repeated */ js.Any, js.Any])
+    (CurriedFunction1[Any, Any]) | (CurriedFunction2[Any, Any, Any]) | (CurriedFunction3[Any, Any, Any, Any]) | (CurriedFunction4[Any, Any, Any, Any, Any]) | (CurriedFunction5[Any, Any, Any, Any, Any, Any]) | (js.Function1[/* repeated */ Any, Any])
   ] = js.native
   def curry(arity: Double): Function[
-    (CurriedFunction1[js.Any, js.Any]) | (CurriedFunction2[js.Any, js.Any, js.Any]) | (CurriedFunction3[js.Any, js.Any, js.Any, js.Any]) | (CurriedFunction4[js.Any, js.Any, js.Any, js.Any, js.Any]) | (CurriedFunction5[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any]) | (js.Function1[/* repeated */ js.Any, js.Any])
+    (CurriedFunction1[Any, Any]) | (CurriedFunction2[Any, Any, Any]) | (CurriedFunction3[Any, Any, Any, Any]) | (CurriedFunction4[Any, Any, Any, Any, Any]) | (CurriedFunction5[Any, Any, Any, Any, Any, Any]) | (js.Function1[/* repeated */ Any, Any])
   ] = js.native
   
   /**
     * @see _.curryRight
     */
   def curryRight(): Function[
-    (js.Function1[/* repeated */ js.Any, js.Any]) | (RightCurriedFunction1[js.Any, js.Any]) | (RightCurriedFunction2[js.Any, js.Any, js.Any]) | (RightCurriedFunction3[js.Any, js.Any, js.Any, js.Any]) | (RightCurriedFunction4[js.Any, js.Any, js.Any, js.Any, js.Any]) | (RightCurriedFunction5[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any])
+    (js.Function1[/* repeated */ Any, Any]) | (RightCurriedFunction1[Any, Any]) | (RightCurriedFunction2[Any, Any, Any]) | (RightCurriedFunction3[Any, Any, Any, Any]) | (RightCurriedFunction4[Any, Any, Any, Any, Any]) | (RightCurriedFunction5[Any, Any, Any, Any, Any, Any])
   ] = js.native
   def curryRight(arity: Double): Function[
-    (js.Function1[/* repeated */ js.Any, js.Any]) | (RightCurriedFunction1[js.Any, js.Any]) | (RightCurriedFunction2[js.Any, js.Any, js.Any]) | (RightCurriedFunction3[js.Any, js.Any, js.Any, js.Any]) | (RightCurriedFunction4[js.Any, js.Any, js.Any, js.Any, js.Any]) | (RightCurriedFunction5[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any])
+    (js.Function1[/* repeated */ Any, Any]) | (RightCurriedFunction1[Any, Any]) | (RightCurriedFunction2[Any, Any, Any]) | (RightCurriedFunction3[Any, Any, Any, Any]) | (RightCurriedFunction4[Any, Any, Any, Any, Any]) | (RightCurriedFunction5[Any, Any, Any, Any, Any, Any])
   ] = js.native
   
-  /**
-    * @see _.debounce
-    */
   def debounce(): Function[DebouncedFunc[T]] = js.native
   def debounce(wait: Double): Function[DebouncedFunc[T]] = js.native
   def debounce(wait: Double, options: DebounceSettings): Function[DebouncedFunc[T]] = js.native
+  /**
+    * @see _.debounce
+    */
+  def debounce(wait: Double, options: DebounceSettingsLeading): Function[DebouncedFuncLeading[T]] = js.native
   def debounce(wait: Unit, options: DebounceSettings): Function[DebouncedFunc[T]] = js.native
+  def debounce(wait: Unit, options: DebounceSettingsLeading): Function[DebouncedFuncLeading[T]] = js.native
   
   /**
     * @see _.flip
@@ -64,7 +66,7 @@ trait Function[T]
   /**
     * @see _.flow
     */
-  def flow(func: (Many[js.Function1[/* repeated */ js.Any, js.Any]])*): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def flow(func: (Many[js.Function1[/* repeated */ Any, Any]])*): Function[js.Function1[/* repeated */ Any, Any]] = js.native
   /**
     * @see _.flow
     */
@@ -121,18 +123,18 @@ trait Function[T]
     f5: js.Function1[/* a */ R4, R5],
     f6: js.Function1[/* a */ R5, R6],
     f7: js.Function1[/* a */ R6, R7],
-    func: (Many[js.Function1[/* a */ js.Any, js.Any]])*
-  ): Function[js.Function1[/* args */ Parameters[T], js.Any]] = js.native
+    func: (Many[js.Function1[/* a */ Any, Any]])*
+  ): Function[js.Function1[/* args */ Parameters[T], Any]] = js.native
   
   /**
     * @see _.flowRight
     */
-  def flowRight(func: (Many[js.Function1[/* repeated */ js.Any, js.Any]])*): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def flowRight(func: (Many[js.Function1[/* repeated */ Any, Any]])*): Function[js.Function1[/* repeated */ Any, Any]] = js.native
   /**
     * @see _.flowRight
     */
   @JSName("flowRight")
-  def flowRight_0[A /* <: js.Array[js.Any] */](
+  def flowRight_0[A /* <: js.Array[Any] */](
     f1: js.Function1[
       /* args */ A, 
       /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>['0'] */ js.Any
@@ -142,7 +144,7 @@ trait Function[T]
     * @see _.flowRight
     */
   @JSName("flowRight")
-  def flowRight_0[A /* <: js.Array[js.Any] */, R1](
+  def flowRight_0[A /* <: js.Array[Any] */, R1](
     f2: js.Function1[
       /* a */ R1, 
       /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>['0'] */ js.Any
@@ -153,7 +155,7 @@ trait Function[T]
     * @see _.flowRight
     */
   @JSName("flowRight")
-  def flowRight_0[A /* <: js.Array[js.Any] */, R1, R2](
+  def flowRight_0[A /* <: js.Array[Any] */, R1, R2](
     f3: js.Function1[
       /* a */ R2, 
       /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>['0'] */ js.Any
@@ -165,7 +167,7 @@ trait Function[T]
     * @see _.flowRight
     */
   @JSName("flowRight")
-  def flowRight_0[A /* <: js.Array[js.Any] */, R1, R2, R3](
+  def flowRight_0[A /* <: js.Array[Any] */, R1, R2, R3](
     f4: js.Function1[
       /* a */ R3, 
       /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>['0'] */ js.Any
@@ -178,7 +180,7 @@ trait Function[T]
     * @see _.flowRight
     */
   @JSName("flowRight")
-  def flowRight_0[A /* <: js.Array[js.Any] */, R1, R2, R3, R4](
+  def flowRight_0[A /* <: js.Array[Any] */, R1, R2, R3, R4](
     f5: js.Function1[
       /* a */ R4, 
       /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>['0'] */ js.Any
@@ -192,7 +194,7 @@ trait Function[T]
     * @see _.flowRight
     */
   @JSName("flowRight")
-  def flowRight_0[A /* <: js.Array[js.Any] */, R1, R2, R3, R4, R5](
+  def flowRight_0[A /* <: js.Array[Any] */, R1, R2, R3, R4, R5](
     f6: js.Function1[
       /* a */ R5, 
       /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>['0'] */ js.Any
@@ -213,7 +215,7 @@ trait Function[T]
     * @see _.memoize
     */
   def memoize(): Function[T & MemoizedFunction] = js.native
-  def memoize(resolver: js.Function1[/* repeated */ js.Any, js.Any]): Function[T & MemoizedFunction] = js.native
+  def memoize(resolver: js.Function1[/* repeated */ Any, Any]): Function[T & MemoizedFunction] = js.native
   
   /**
     * @see _.negate
@@ -228,12 +230,12 @@ trait Function[T]
   /**
     * @see _.over
     */
-  def over[TResult](iteratees: (Many[js.Function1[/* repeated */ js.Any, TResult]])*): Function[js.Function1[/* repeated */ js.Any, js.Array[ReturnType[T] | TResult]]] = js.native
+  def over[TResult](iteratees: (Many[js.Function1[/* repeated */ Any, TResult]])*): Function[js.Function1[/* repeated */ Any, js.Array[ReturnType[T] | TResult]]] = js.native
   
   /**
     * @see _.overArgs
     */
-  def overArgs(transforms: (Many[js.Function1[/* repeated */ js.Any, js.Any]])*): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def overArgs(transforms: (Many[js.Function1[/* repeated */ Any, Any]])*): Function[js.Function1[/* repeated */ Any, Any]] = js.native
   
   /**
     * @see _.overEvery
@@ -252,63 +254,61 @@ trait Function[T]
   /**
     * @see _.partial
     */
-  def partial[T1](arg1: T1): Function[js.Function1[/* ts */ js.Any, js.Any]] = js.native
+  def partial[T1](arg1: T1): Function[js.Function1[/* ts */ Any, Any]] = js.native
   /**
     * @see _.partial
     */
   def partial[T2](plc1: __, arg2: T2): Function[
-    (Function3[js.Any, js.Any, js.Any, js.Any]) | (Function2[js.Any, js.Any, js.Any]) | (Function1[js.Any, js.Any])
+    (Function3[Any, Any, Any, Any]) | (Function2[Any, Any, Any]) | (Function1[Any, Any])
   ] = js.native
   /**
     * @see _.partial
     */
-  def partial[T3](plc1: __, plc2: __, arg3: T3): Function[
-    (Function3[js.Any, js.Any, js.Any, js.Any]) | (Function2[js.Any, js.Any, js.Any])
-  ] = js.native
+  def partial[T3](plc1: __, plc2: __, arg3: T3): Function[(Function3[Any, Any, Any, Any]) | (Function2[Any, Any, Any])] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T2](arg1: T1, arg2: T2): Function[js.Function1[/* ts */ js.Any, js.Any]] = js.native
+  def partial[T1, T2](arg1: T1, arg2: T2): Function[js.Function1[/* ts */ Any, Any]] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T3](arg1: T1, plc2: __, arg3: T3): Function[(Function2[js.Any, js.Any, js.Any]) | (Function1[js.Any, js.Any])] = js.native
+  def partial[T1, T3](arg1: T1, plc2: __, arg3: T3): Function[(Function2[Any, Any, Any]) | (Function1[Any, Any])] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T4](arg1: T1, plc2: __, plc3: __, arg4: T4): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partial[T1, T4](arg1: T1, plc2: __, plc3: __, arg4: T4): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partial
     */
-  def partial[T2, T3](plc1: __, arg2: T2, arg3: T3): Function[(Function2[js.Any, js.Any, js.Any]) | (Function1[js.Any, js.Any])] = js.native
+  def partial[T2, T3](plc1: __, arg2: T2, arg3: T3): Function[(Function2[Any, Any, Any]) | (Function1[Any, Any])] = js.native
   /**
     * @see _.partial
     */
-  def partial[T2, T4](plc1: __, arg2: T2, plc3: __, arg4: T4): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partial[T2, T4](plc1: __, arg2: T2, plc3: __, arg4: T4): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partial
     */
-  def partial[T3, T4](plc1: __, plc2: __, arg3: T3, arg4: T4): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partial[T3, T4](plc1: __, plc2: __, arg3: T3, arg4: T4): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T2, T3](arg1: T1, arg2: T2, arg3: T3): Function[js.Function1[/* ts */ js.Any, js.Any]] = js.native
+  def partial[T1, T2, T3](arg1: T1, arg2: T2, arg3: T3): Function[js.Function1[/* ts */ Any, Any]] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T2, T4](arg1: T1, arg2: T2, plc3: __, arg4: T4): Function[Function1[js.Any, js.Any]] = js.native
+  def partial[T1, T2, T4](arg1: T1, arg2: T2, plc3: __, arg4: T4): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T3, T4](arg1: T1, plc2: __, arg3: T3, arg4: T4): Function[Function1[js.Any, js.Any]] = js.native
+  def partial[T1, T3, T4](arg1: T1, plc2: __, arg3: T3, arg4: T4): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partial
     */
-  def partial[T2, T3, T4](plc1: __, arg2: T2, arg3: T3, arg4: T4): Function[Function1[js.Any, js.Any]] = js.native
+  def partial[T2, T3, T4](plc1: __, arg2: T2, arg3: T3, arg4: T4): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T2, T3, T4](arg1: T1, arg2: T2, arg3: T3, arg4: T4): Function[js.Function1[/* ts */ js.Any, js.Any]] = js.native
+  def partial[T1, T2, T3, T4](arg1: T1, arg2: T2, arg3: T3, arg4: T4): Function[js.Function1[/* ts */ Any, Any]] = js.native
   
   /**
     * @see _.partialRight
@@ -317,123 +317,123 @@ trait Function[T]
   /**
     * @see _.partialRight
     */
-  def partialRight[T1](arg1: T1, plc2: __, plc3: __, plc4: __): Function[Function3[js.Any, js.Any, js.Any, js.Any]] = js.native
+  def partialRight[T1](arg1: T1, plc2: __, plc3: __, plc4: __): Function[Function3[Any, Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T2](arg2: T2, plc3: __, plc4: __): Function[Function3[js.Any, js.Any, js.Any, js.Any]] = js.native
+  def partialRight[T2](arg2: T2, plc3: __, plc4: __): Function[Function3[Any, Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T3](arg3: T3, plc4: __): Function[Function3[js.Any, js.Any, js.Any, js.Any]] = js.native
+  def partialRight[T3](arg3: T3, plc4: __): Function[Function3[Any, Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[TS /* <: js.Array[js.Any] */](
+  def partialRight[TS /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ts because its type TS is not an array type */ ts: TS
-  ): Function[js.Function0[js.Any]] = js.native
+  ): Function[js.Function0[Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2](arg1: T1, arg2: T2, plc3: __): Function[Function1[js.Any, js.Any]] = js.native
+  def partialRight[T1, T2](arg1: T1, arg2: T2, plc3: __): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2](arg1: T1, arg2: T2, plc3: __, plc4: __): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partialRight[T1, T2](arg1: T1, arg2: T2, plc3: __, plc4: __): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T3](arg1: T1, plc2: __, arg3: T3, plc4: __): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partialRight[T1, T3](arg1: T1, plc2: __, arg3: T3, plc4: __): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T4](arg1: T1, plc2: __, plc3: __, arg4: T4): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partialRight[T1, T4](arg1: T1, plc2: __, plc3: __, arg4: T4): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T2, T3](arg2: T2, arg3: T3): Function[Function1[js.Any, js.Any]] = js.native
+  def partialRight[T2, T3](arg2: T2, arg3: T3): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T2, T4](arg2: T2, plc3: __, arg4: T4): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partialRight[T2, T4](arg2: T2, plc3: __, arg4: T4): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2, T3](arg1: T1, arg2: T2, arg3: T3, plc4: __): Function[Function1[js.Any, js.Any]] = js.native
+  def partialRight[T1, T2, T3](arg1: T1, arg2: T2, arg3: T3, plc4: __): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2, T4](arg1: T1, arg2: T2, plc3: __, arg4: T4): Function[Function1[js.Any, js.Any]] = js.native
+  def partialRight[T1, T2, T4](arg1: T1, arg2: T2, plc3: __, arg4: T4): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T3, T4](arg1: T1, plc2: __, arg3: T3, arg4: T4): Function[Function1[js.Any, js.Any]] = js.native
+  def partialRight[T1, T3, T4](arg1: T1, plc2: __, arg3: T3, arg4: T4): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T2, T3, T4](arg2: T2, arg3: T3, arg4: T4): Function[Function1[js.Any, js.Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
-  def partialRight_T1[T1](arg1: T1, plc2: __): Function[Function1[js.Any, js.Any]] = js.native
+  def partialRight[T2, T3, T4](arg2: T2, arg3: T3, arg4: T4): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T1[T1](arg1: T1, plc2: __, plc3: __): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partialRight_T1[T1](arg1: T1, plc2: __): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T1T3[T1, T3](arg1: T1, plc2: __, arg3: T3): Function[Function1[js.Any, js.Any]] = js.native
+  def partialRight_T1[T1](arg1: T1, plc2: __, plc3: __): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T2[T2](arg2: T2): Function[Function1[js.Any, js.Any]] = js.native
+  def partialRight_T1T3[T1, T3](arg1: T1, plc2: __, arg3: T3): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T2[T2](arg2: T2, plc3: __): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partialRight_T2[T2](arg2: T2): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T2T3[T2, T3](arg2: T2, arg3: T3, plc4: __): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partialRight_T2[T2](arg2: T2, plc3: __): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T3[T3](arg3: T3): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partialRight_T2T3[T2, T3](arg2: T2, arg3: T3, plc4: __): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T3T4[T3, T4](arg3: T3, arg4: T4): Function[Function2[js.Any, js.Any, js.Any]] = js.native
+  def partialRight_T3[T3](arg3: T3): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T4[T4](arg4: T4): Function[Function3[js.Any, js.Any, js.Any, js.Any]] = js.native
+  def partialRight_T3T4[T3, T4](arg3: T3, arg4: T4): Function[Function2[Any, Any, Any]] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T4[T4](arg4: T4): Function[Function3[Any, Any, Any, Any]] = js.native
   
   /**
     * @see _.rearg
     */
-  def rearg(indexes: Many[Double]*): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def rearg(indexes: Many[Double]*): Function[js.Function1[/* repeated */ Any, Any]] = js.native
   
   /**
     * @see _.rest
     */
-  def rest(): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-  def rest(start: Double): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def rest(): Function[js.Function1[/* repeated */ Any, Any]] = js.native
+  def rest(start: Double): Function[js.Function1[/* repeated */ Any, Any]] = js.native
   
   /**
     * @see _.spread
     */
-  def spread(): Function[js.Function1[/* repeated */ js.Any, ReturnType[T]]] = js.native
-  def spread(start: Double): Function[js.Function1[/* repeated */ js.Any, ReturnType[T]]] = js.native
+  def spread(): Function[js.Function1[/* repeated */ Any, ReturnType[T]]] = js.native
+  def spread(start: Double): Function[js.Function1[/* repeated */ Any, ReturnType[T]]] = js.native
   
   /**
     * @see _.throttle

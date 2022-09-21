@@ -8,5 +8,5 @@ object repositoryNameExistsExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/RepositoryNameExistsException", "RepositoryNameExistsException")
   @js.native
-  val RepositoryNameExistsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RepositoryNameExistsException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

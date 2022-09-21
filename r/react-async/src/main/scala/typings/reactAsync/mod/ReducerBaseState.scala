@@ -1,6 +1,5 @@
 package typings.reactAsync.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait ReducerBaseState[T] extends StObject {
   
   var counter: Double
   
-  var initialValue: js.UndefOr[T | Error] = js.undefined
+  var initialValue: js.UndefOr[T | js.Error] = js.undefined
   
   var promise: js.Promise[T]
 }
@@ -25,7 +24,7 @@ object ReducerBaseState {
     
     inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
-    inline def setInitialValue(value: T | Error): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: T | js.Error): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
     inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     

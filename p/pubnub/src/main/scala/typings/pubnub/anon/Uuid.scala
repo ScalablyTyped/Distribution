@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Uuid extends StObject {
   
-  var channel: Id
+  var channel: IdString
   
-  var uuid: Id
+  var uuid: IdString
 }
 object Uuid {
   
-  inline def apply(channel: Id, uuid: Id): Uuid = {
+  inline def apply(channel: IdString, uuid: IdString): Uuid = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uuid]
   }
   
   extension [Self <: Uuid](x: Self) {
     
-    inline def setChannel(value: Id): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: IdString): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setUuid(value: Id): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: IdString): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

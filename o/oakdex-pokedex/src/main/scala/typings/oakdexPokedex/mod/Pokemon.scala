@@ -114,7 +114,7 @@ object Pokemon {
     
     inline def setAbilities(value: js.Array[PokemonAbility]): Self = StObject.set(x, "abilities", value.asInstanceOf[js.Any])
     
-    inline def setAbilitiesVarargs(value: PokemonAbility*): Self = StObject.set(x, "abilities", js.Array(value :_*))
+    inline def setAbilitiesVarargs(value: PokemonAbility*): Self = StObject.set(x, "abilities", js.Array(value*))
     
     inline def setAlola_id(value: Double): Self = StObject.set(x, "alola_id", value.asInstanceOf[js.Any])
     
@@ -134,7 +134,7 @@ object Pokemon {
     
     inline def setEgg_groups(value: js.Array[String]): Self = StObject.set(x, "egg_groups", value.asInstanceOf[js.Any])
     
-    inline def setEgg_groupsVarargs(value: String*): Self = StObject.set(x, "egg_groups", js.Array(value :_*))
+    inline def setEgg_groupsVarargs(value: String*): Self = StObject.set(x, "egg_groups", js.Array(value*))
     
     inline def setEv_yield(value: StatObject): Self = StObject.set(x, "ev_yield", value.asInstanceOf[js.Any])
     
@@ -144,7 +144,7 @@ object Pokemon {
     
     inline def setEvolutions(value: js.Array[PokemonEvolution]): Self = StObject.set(x, "evolutions", value.asInstanceOf[js.Any])
     
-    inline def setEvolutionsVarargs(value: PokemonEvolution*): Self = StObject.set(x, "evolutions", js.Array(value :_*))
+    inline def setEvolutionsVarargs(value: PokemonEvolution*): Self = StObject.set(x, "evolutions", js.Array(value*))
     
     inline def setGender_ratios(value: Female): Self = StObject.set(x, "gender_ratios", value.asInstanceOf[js.Any])
     
@@ -152,7 +152,7 @@ object Pokemon {
     
     inline def setHatch_time(value: js.Array[Double]): Self = StObject.set(x, "hatch_time", value.asInstanceOf[js.Any])
     
-    inline def setHatch_timeVarargs(value: Double*): Self = StObject.set(x, "hatch_time", js.Array(value :_*))
+    inline def setHatch_timeVarargs(value: Double*): Self = StObject.set(x, "hatch_time", js.Array(value*))
     
     inline def setHeight_eu(value: String): Self = StObject.set(x, "height_eu", value.asInstanceOf[js.Any])
     
@@ -178,11 +178,11 @@ object Pokemon {
     
     inline def setMega_evolutions(value: js.Array[MegaEvolution]): Self = StObject.set(x, "mega_evolutions", value.asInstanceOf[js.Any])
     
-    inline def setMega_evolutionsVarargs(value: MegaEvolution*): Self = StObject.set(x, "mega_evolutions", js.Array(value :_*))
+    inline def setMega_evolutionsVarargs(value: MegaEvolution*): Self = StObject.set(x, "mega_evolutions", js.Array(value*))
     
     inline def setMove_learnsets(value: js.Array[MoveLearnset]): Self = StObject.set(x, "move_learnsets", value.asInstanceOf[js.Any])
     
-    inline def setMove_learnsetsVarargs(value: MoveLearnset*): Self = StObject.set(x, "move_learnsets", js.Array(value :_*))
+    inline def setMove_learnsetsVarargs(value: MoveLearnset*): Self = StObject.set(x, "move_learnsets", js.Array(value*))
     
     inline def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
@@ -200,7 +200,7 @@ object Pokemon {
     
     inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUltra_alola_id(value: Double): Self = StObject.set(x, "ultra_alola_id", value.asInstanceOf[js.Any])
     
@@ -216,7 +216,7 @@ object Pokemon {
     
     inline def setVariations(value: js.Array[PokemonVariation]): Self = StObject.set(x, "variations", value.asInstanceOf[js.Any])
     
-    inline def setVariationsVarargs(value: PokemonVariation*): Self = StObject.set(x, "variations", js.Array(value :_*))
+    inline def setVariationsVarargs(value: PokemonVariation*): Self = StObject.set(x, "variations", js.Array(value*))
     
     inline def setWeight_eu(value: String): Self = StObject.set(x, "weight_eu", value.asInstanceOf[js.Any])
     

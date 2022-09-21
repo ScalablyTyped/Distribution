@@ -50,7 +50,7 @@ object INotificationItem {
     
     inline def setActions(value: js.Array[IButtonAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: IButtonAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: IButtonAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     

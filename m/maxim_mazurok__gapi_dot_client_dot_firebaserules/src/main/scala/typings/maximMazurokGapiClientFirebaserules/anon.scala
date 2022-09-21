@@ -31,7 +31,7 @@ object anon {
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
     var key: js.UndefOr[String] = js.undefined
     
-    /** Resource name for the project which owns this `Release`. Format: `projects/{project_id}` */
+    /** Required. Resource name for the project which owns this `Release`. Format: `projects/{project_id}` */
     var name: String
     
     /** OAuth 2.0 token for the current user. */
@@ -133,8 +133,8 @@ object anon {
     var key: js.UndefOr[String] = js.undefined
     
     /**
-      * Tests may either provide `source` or a `Ruleset` resource name. For tests against `source`, the resource name must refer to the project: Format: `projects/{project_id}` For
-      * tests against a `Ruleset`, this must be the `Ruleset` resource name: Format: `projects/{project_id}/rulesets/{ruleset_id}`
+      * Required. Tests may either provide `source` or a `Ruleset` resource name. For tests against `source`, the resource name must refer to the project: Format:
+      * `projects/{project_id}` For tests against a `Ruleset`, this must be the `Ruleset` resource name: Format: `projects/{project_id}/rulesets/{ruleset_id}`
       */
     var name: String
     
@@ -234,7 +234,7 @@ object anon {
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
     var key: js.UndefOr[String] = js.undefined
     
-    /** Resource name of the `Release`. Format: `projects/{project_id}/releases/{release_id}` */
+    /** Required. Resource name of the `Release`. Format: `projects/{project_id}/releases/{release_id}` */
     var name: String
     
     /** OAuth 2.0 token for the current user. */
@@ -340,7 +340,7 @@ object anon {
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
     var key: js.UndefOr[String] = js.undefined
     
-    /** Resource name for the project. Format: `projects/{project_id}` */
+    /** Required. Resource name for the project. Format: `projects/{project_id}` */
     var name: String
     
     /** OAuth 2.0 token for the current user. */
@@ -457,7 +457,7 @@ object anon {
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
     var key: js.UndefOr[String] = js.undefined
     
-    /** Resource name for the project which owns this `Release`. Format: `projects/{project_id}` */
+    /** Required. Resource name for the project which owns this `Release`. Format: `projects/{project_id}` */
     var name: String
     
     /** OAuth 2.0 token for the current user. */
@@ -558,7 +558,7 @@ object anon {
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
     var key: js.UndefOr[String] = js.undefined
     
-    /** Resource name for Project which owns this `Ruleset`. Format: `projects/{project_id}` */
+    /** Required. Resource name for Project which owns this `Ruleset`. Format: `projects/{project_id}` */
     var name: String
     
     /** OAuth 2.0 token for the current user. */
@@ -660,8 +660,8 @@ object anon {
     var key: js.UndefOr[String] = js.undefined
     
     /**
-      * Tests may either provide `source` or a `Ruleset` resource name. For tests against `source`, the resource name must refer to the project: Format: `projects/{project_id}` For
-      * tests against a `Ruleset`, this must be the `Ruleset` resource name: Format: `projects/{project_id}/rulesets/{ruleset_id}`
+      * Required. Tests may either provide `source` or a `Ruleset` resource name. For tests against `source`, the resource name must refer to the project: Format:
+      * `projects/{project_id}` For tests against a `Ruleset`, this must be the `Ruleset` resource name: Format: `projects/{project_id}/rulesets/{ruleset_id}`
       */
     var name: String
     

@@ -29,7 +29,7 @@ trait Accesstoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Name of the organization to groupBy. Its format is "organizations/[organization_id]". */
+  /** Required. Name of the organization to groupBy. Its format is "organizations/[organization_id], folders/[folder_id], or projects/[project_id]". */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

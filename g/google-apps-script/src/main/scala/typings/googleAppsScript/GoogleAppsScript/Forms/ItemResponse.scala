@@ -32,9 +32,9 @@ trait ItemResponse extends StObject {
   
   def getScore(): Double
   
-  def setFeedback(feedback: js.Any): ItemResponse
+  def setFeedback(feedback: Any): ItemResponse
   
-  def setScore(score: js.Any): ItemResponse
+  def setScore(score: Any): ItemResponse
 }
 object ItemResponse {
   
@@ -43,8 +43,8 @@ object ItemResponse {
     getItem: () => Item,
     getResponse: () => (js.Array[js.Array[String] | String]) | String,
     getScore: () => Double,
-    setFeedback: js.Any => ItemResponse,
-    setScore: js.Any => ItemResponse
+    setFeedback: Any => ItemResponse,
+    setScore: Any => ItemResponse
   ): ItemResponse = {
     val __obj = js.Dynamic.literal(getFeedback = js.Any.fromFunction0(getFeedback), getItem = js.Any.fromFunction0(getItem), getResponse = js.Any.fromFunction0(getResponse), getScore = js.Any.fromFunction0(getScore), setFeedback = js.Any.fromFunction1(setFeedback), setScore = js.Any.fromFunction1(setScore))
     __obj.asInstanceOf[ItemResponse]
@@ -60,8 +60,8 @@ object ItemResponse {
     
     inline def setGetScore(value: () => Double): Self = StObject.set(x, "getScore", js.Any.fromFunction0(value))
     
-    inline def setSetFeedback(value: js.Any => ItemResponse): Self = StObject.set(x, "setFeedback", js.Any.fromFunction1(value))
+    inline def setSetFeedback(value: Any => ItemResponse): Self = StObject.set(x, "setFeedback", js.Any.fromFunction1(value))
     
-    inline def setSetScore(value: js.Any => ItemResponse): Self = StObject.set(x, "setScore", js.Any.fromFunction1(value))
+    inline def setSetScore(value: Any => ItemResponse): Self = StObject.set(x, "setScore", js.Any.fromFunction1(value))
   }
 }

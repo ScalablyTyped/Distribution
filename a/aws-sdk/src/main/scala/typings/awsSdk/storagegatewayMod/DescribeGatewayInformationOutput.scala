@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeGatewayInformationOutput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that is used to monitor events in the gateway.
+    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that is used to monitor events in the gateway. This field only only exist and returns once it have been chosen and set by the SGW service, based on the OS version of the gateway VM
     */
   var CloudWatchLogGroupARN: js.UndefOr[typings.awsSdk.storagegatewayMod.CloudWatchLogGroupARN] = js.undefined
   
@@ -22,7 +22,7 @@ trait DescribeGatewayInformationOutput extends StObject {
   var Ec2InstanceId: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceId] = js.undefined
   
   /**
-    * The AWS Region where the Amazon EC2 instance is located.
+    * The Amazon Web Services Region where the Amazon EC2 instance is located.
     */
   var Ec2InstanceRegion: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceRegion] = js.undefined
   
@@ -32,6 +32,11 @@ trait DescribeGatewayInformationOutput extends StObject {
   var EndpointType: js.UndefOr[typings.awsSdk.storagegatewayMod.EndpointType] = js.undefined
   
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
+  
+  /**
+    * Specifies the size of the gateway's metadata cache.
+    */
+  var GatewayCapacity: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayCapacity] = js.undefined
   
   /**
     * The unique identifier assigned to your gateway during activation. This ID becomes part of the gateway Amazon Resource Name (ARN), which you use as input for other operations.
@@ -64,12 +69,17 @@ trait DescribeGatewayInformationOutput extends StObject {
   var GatewayType: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayType] = js.undefined
   
   /**
-    * The type of hypervisor environment used by the host.
+    * The type of hardware or software platform on which the gateway is running.
     */
   var HostEnvironment: js.UndefOr[typings.awsSdk.storagegatewayMod.HostEnvironment] = js.undefined
   
   /**
-    * The date on which the last software update was applied to the gateway. If the gateway has never been updated, this field does not return a value in the response.
+    * A unique identifier for the specific instance of the host platform running the gateway. This value is only available for certain host environments, and its format depends on the host environment type.
+    */
+  var HostEnvironmentId: js.UndefOr[typings.awsSdk.storagegatewayMod.HostEnvironmentId] = js.undefined
+  
+  /**
+    * The date on which the last software update was applied to the gateway. If the gateway has never been updated, this field does not return a value in the response. This only only exist and returns once it have been chosen and set by the SGW service, based on the OS version of the gateway VM
     */
   var LastSoftwareUpdate: js.UndefOr[typings.awsSdk.storagegatewayMod.LastSoftwareUpdate] = js.undefined
   
@@ -82,6 +92,11 @@ trait DescribeGatewayInformationOutput extends StObject {
     * Date after which this gateway will not receive software updates for new features.
     */
   var SoftwareUpdatesEndDate: js.UndefOr[typings.awsSdk.storagegatewayMod.SoftwareUpdatesEndDate] = js.undefined
+  
+  /**
+    * A list of the metadata cache sizes that the gateway can support based on its current hardware specifications.
+    */
+  var SupportedGatewayCapacities: js.UndefOr[typings.awsSdk.storagegatewayMod.SupportedGatewayCapacities] = js.undefined
   
   /**
     * A list of up to 50 tags assigned to the gateway, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
@@ -126,6 +141,10 @@ object DescribeGatewayInformationOutput {
     
     inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
+    inline def setGatewayCapacity(value: GatewayCapacity): Self = StObject.set(x, "GatewayCapacity", value.asInstanceOf[js.Any])
+    
+    inline def setGatewayCapacityUndefined: Self = StObject.set(x, "GatewayCapacity", js.undefined)
+    
     inline def setGatewayId(value: GatewayId): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
     
     inline def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
@@ -138,7 +157,7 @@ object DescribeGatewayInformationOutput {
     
     inline def setGatewayNetworkInterfacesUndefined: Self = StObject.set(x, "GatewayNetworkInterfaces", js.undefined)
     
-    inline def setGatewayNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "GatewayNetworkInterfaces", js.Array(value :_*))
+    inline def setGatewayNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "GatewayNetworkInterfaces", js.Array(value*))
     
     inline def setGatewayState(value: GatewayState): Self = StObject.set(x, "GatewayState", value.asInstanceOf[js.Any])
     
@@ -154,6 +173,10 @@ object DescribeGatewayInformationOutput {
     
     inline def setHostEnvironment(value: HostEnvironment): Self = StObject.set(x, "HostEnvironment", value.asInstanceOf[js.Any])
     
+    inline def setHostEnvironmentId(value: HostEnvironmentId): Self = StObject.set(x, "HostEnvironmentId", value.asInstanceOf[js.Any])
+    
+    inline def setHostEnvironmentIdUndefined: Self = StObject.set(x, "HostEnvironmentId", js.undefined)
+    
     inline def setHostEnvironmentUndefined: Self = StObject.set(x, "HostEnvironment", js.undefined)
     
     inline def setLastSoftwareUpdate(value: LastSoftwareUpdate): Self = StObject.set(x, "LastSoftwareUpdate", value.asInstanceOf[js.Any])
@@ -168,11 +191,17 @@ object DescribeGatewayInformationOutput {
     
     inline def setSoftwareUpdatesEndDateUndefined: Self = StObject.set(x, "SoftwareUpdatesEndDate", js.undefined)
     
+    inline def setSupportedGatewayCapacities(value: SupportedGatewayCapacities): Self = StObject.set(x, "SupportedGatewayCapacities", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedGatewayCapacitiesUndefined: Self = StObject.set(x, "SupportedGatewayCapacities", js.undefined)
+    
+    inline def setSupportedGatewayCapacitiesVarargs(value: GatewayCapacity*): Self = StObject.set(x, "SupportedGatewayCapacities", js.Array(value*))
+    
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVPCEndpoint(value: String): Self = StObject.set(x, "VPCEndpoint", value.asInstanceOf[js.Any])
     

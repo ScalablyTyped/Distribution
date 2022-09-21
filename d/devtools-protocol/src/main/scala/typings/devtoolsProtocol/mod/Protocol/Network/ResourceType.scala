@@ -14,12 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.TextTrack
   - typings.devtoolsProtocol.devtoolsProtocolStrings.XHR
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Fetch
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.Prefetch
   - typings.devtoolsProtocol.devtoolsProtocolStrings.EventSource
   - typings.devtoolsProtocol.devtoolsProtocolStrings.WebSocket
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Manifest
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SignedExchange
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Ping
   - typings.devtoolsProtocol.devtoolsProtocolStrings.CSPViolationReport
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.Preflight
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Other
 */
 trait ResourceType extends StObject
@@ -44,6 +46,10 @@ object ResourceType {
   inline def Other: typings.devtoolsProtocol.devtoolsProtocolStrings.Other = "Other".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Other]
   
   inline def Ping: typings.devtoolsProtocol.devtoolsProtocolStrings.Ping = "Ping".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Ping]
+  
+  inline def Prefetch: typings.devtoolsProtocol.devtoolsProtocolStrings.Prefetch = "Prefetch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Prefetch]
+  
+  inline def Preflight: typings.devtoolsProtocol.devtoolsProtocolStrings.Preflight = "Preflight".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Preflight]
   
   inline def Script: typings.devtoolsProtocol.devtoolsProtocolStrings.Script = "Script".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Script]
   

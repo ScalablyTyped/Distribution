@@ -6,13 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LicenseUnitsDetail extends StObject {
   
-  // The number of units that are enabled.
+  // The number of units that are enabled for the active subscription of the service SKU.
   var enabled: js.UndefOr[NullableOption[Double]] = js.undefined
   
-  // The number of units that are suspended.
+  /**
+    * The number of units that are suspended because the subscription of the service SKU has been cancelled. The units cannot
+    * be assigned but can still be reactivated before they are deleted.
+    */
   var suspended: js.UndefOr[NullableOption[Double]] = js.undefined
   
-  // The number of units that are in warning status.
+  /**
+    * The number of units that are in warning status. When the subscription of the service SKU has expired, the customer has
+    * a grace period to renew their subscription before it is cancelled (moved to a suspended state).
+    */
   var warning: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object LicenseUnitsDetail {

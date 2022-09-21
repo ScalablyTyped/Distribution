@@ -9,9 +9,9 @@ object filteringParametersMod {
   
   @JSImport("postmark/dist/client/models/client/FilteringParameters", "FilteringParameters")
   @js.native
-  class FilteringParameters ()
+  open class FilteringParameters ()
     extends StObject
-       with Hash[js.Any] {
+       with Hash[Any] {
     def this(count: Double) = this()
     def this(count: Double, offset: Double) = this()
     def this(count: Unit, offset: Double) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.OneMinusBlock")
 @js.native
-class OneMinusBlock protected ()
+open class OneMinusBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.OneMinusBlock {
   /**

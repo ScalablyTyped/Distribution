@@ -10,8 +10,11 @@ object isIBANMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Check if a string is a IBAN (International Bank Account Number).
-    */
   inline def default(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @JSImport("validator/lib/isIBAN", "locales")
+  @js.native
+  val locales: js.Array[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78 */ Any
+  ] = js.native
 }

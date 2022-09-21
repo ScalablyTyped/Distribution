@@ -21,7 +21,7 @@ trait nlobjFile
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * return the file description.
@@ -45,7 +45,7 @@ Instantiable0[js.Any] {
     * @since 2009.1
     * @return
     */
-  def getFolder(): js.Any = js.native
+  def getFolder(): Any = js.native
   
   /**
     * Return the id of the file (if stored in the FC).
@@ -57,7 +57,7 @@ Instantiable0[js.Any] {
     * @since 2009.1
     * @return
     */
-  def getId(): js.Any = js.native
+  def getId(): Any = js.native
   
   /**
     * Return the name of the file.
@@ -81,7 +81,7 @@ Instantiable0[js.Any] {
     * @since 2009.1
     * @return
     */
-  def getSize(): js.Any = js.native
+  def getSize(): Any = js.native
   
   /**
     * Return the type of the file.
@@ -155,7 +155,7 @@ Instantiable0[js.Any] {
     * @param descr
     * @return
     */
-  def setDescription(descr: String): js.Any = js.native
+  def setDescription(descr: String): Any = js.native
   
   /**
     * sets the character encoding for the file.
@@ -169,7 +169,7 @@ Instantiable0[js.Any] {
     * @param encoding
     * @return
     */
-  def setEncoding(encoding: String): js.Any = js.native
+  def setEncoding(encoding: String): Any = js.native
   
   /**
     * sets the internal ID of the folder that this file is in.
@@ -183,7 +183,7 @@ Instantiable0[js.Any] {
     * @param folder
     * @return
     */
-  def setFolder(folder: js.Any): js.Any = js.native
+  def setFolder(folder: Any): Any = js.native
   
   /**
     * sets the file's inactive status.
@@ -197,7 +197,7 @@ Instantiable0[js.Any] {
     * @param inactive
     * @return
     */
-  def setIsInactive(inactive: Boolean): js.Any = js.native
+  def setIsInactive(inactive: Boolean): Any = js.native
   
   /**
     * sets the file's "Available without Login" status.
@@ -211,7 +211,7 @@ Instantiable0[js.Any] {
     * @param online
     * @return
     */
-  def setIsOnline(online: Boolean): js.Any = js.native
+  def setIsOnline(online: Boolean): Any = js.native
   
   /**
     * Sets the name of a file.
@@ -225,5 +225,5 @@ Instantiable0[js.Any] {
     * @param name
     * @return
     */
-  def setName(name: String): js.Any = js.native
+  def setName(name: String): Any = js.native
 }

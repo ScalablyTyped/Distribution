@@ -10,18 +10,18 @@ trait ViewModel
   extends StObject
      with Destroyable {
   
-  def extend(source: js.Any): js.Any
+  def extend(source: Any): Any
   
-  def model(): Model[js.Any, ModelSetOptions, js.Object]
+  def model(): Model[Any, ModelSetOptions, Any]
   
   def shareOptions(): ViewModelOptions
 }
 object ViewModel {
   
   inline def apply(
-    destroy: () => js.Any,
-    extend: js.Any => js.Any,
-    model: () => Model[js.Any, ModelSetOptions, js.Object],
+    destroy: () => Any,
+    extend: Any => Any,
+    model: () => Model[Any, ModelSetOptions, Any],
     shareOptions: () => ViewModelOptions
   ): ViewModel = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), extend = js.Any.fromFunction1(extend), model = js.Any.fromFunction0(model), shareOptions = js.Any.fromFunction0(shareOptions))
@@ -30,9 +30,9 @@ object ViewModel {
   
   extension [Self <: ViewModel](x: Self) {
     
-    inline def setExtend(value: js.Any => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: Any => Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    inline def setModel(value: () => Model[js.Any, ModelSetOptions, js.Object]): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
+    inline def setModel(value: () => Model[Any, ModelSetOptions, Any]): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
     
     inline def setShareOptions(value: () => ViewModelOptions): Self = StObject.set(x, "shareOptions", js.Any.fromFunction0(value))
   }

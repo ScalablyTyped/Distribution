@@ -1,6 +1,6 @@
 package typings.pem
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.pem.anon.ClientKey
 import typings.pem.anon.Dhparam
 import typings.pem.anon.Fingerprint
@@ -59,10 +59,10 @@ object mod {
   inline def readCertificateInfo(callback: Callback[CertificateSubjectReadResult]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("readCertificateInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def readCertificateInfo(certificate: String, callback: Callback[CertificateSubjectReadResult]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readCertificateInfo")(certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def readPkcs12(bufferOrPath: String, callback: Callback[Pkcs12ReadResult]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def readPkcs12(bufferOrPath: String, options: Pkcs12ReadOptions, callback: Callback[Pkcs12ReadResult]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def readPkcs12(bufferOrPath: Buffer, callback: Callback[Pkcs12ReadResult]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def readPkcs12(bufferOrPath: Buffer, options: Pkcs12ReadOptions, callback: Callback[Pkcs12ReadResult]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def readPkcs12(bufferOrPath: String, callback: Callback[Pkcs12ReadResult]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def readPkcs12(bufferOrPath: String, options: Pkcs12ReadOptions, callback: Callback[Pkcs12ReadResult]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def readPkcs12(bufferOrPath: Buffer, callback: Callback[Pkcs12ReadResult]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def readPkcs12(bufferOrPath: Buffer, options: Pkcs12ReadOptions, callback: Callback[Pkcs12ReadResult]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def verifySigningChain(certificate: String, ca: js.Array[String], callback: Callback[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifySigningChain")(certificate.asInstanceOf[js.Any], ca.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -143,7 +143,7 @@ object mod {
       
       inline def setAltNamesUndefined: Self = StObject.set(x, "altNames", js.undefined)
       
-      inline def setAltNamesVarargs(value: String*): Self = StObject.set(x, "altNames", js.Array(value :_*))
+      inline def setAltNamesVarargs(value: String*): Self = StObject.set(x, "altNames", js.Array(value*))
       
       inline def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
       
@@ -195,7 +195,7 @@ object mod {
     }
   }
   
-  type Callback[T] = js.Function2[/* error */ js.Any, /* result */ T, js.Any]
+  type Callback[T] = js.Function2[/* error */ Any, /* result */ T, Any]
   
   trait CertificateCreationOptions
     extends StObject
@@ -226,9 +226,9 @@ object mod {
       */
     var selfSigned: js.UndefOr[Boolean] = js.undefined
     
-    var serial: js.UndefOr[js.Any] = js.undefined
+    var serial: js.UndefOr[Any] = js.undefined
     
-    var serviceCertificate: js.UndefOr[js.Any] = js.undefined
+    var serviceCertificate: js.UndefOr[Any] = js.undefined
     
     /**
       * Private key for signing the certificate, if not defined a new one is generated
@@ -269,11 +269,11 @@ object mod {
       
       inline def setSelfSignedUndefined: Self = StObject.set(x, "selfSigned", js.undefined)
       
-      inline def setSerial(value: js.Any): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+      inline def setSerial(value: Any): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
       
       inline def setSerialUndefined: Self = StObject.set(x, "serial", js.undefined)
       
-      inline def setServiceCertificate(value: js.Any): Self = StObject.set(x, "serviceCertificate", value.asInstanceOf[js.Any])
+      inline def setServiceCertificate(value: Any): Self = StObject.set(x, "serviceCertificate", value.asInstanceOf[js.Any])
       
       inline def setServiceCertificateUndefined: Self = StObject.set(x, "serviceCertificate", js.undefined)
       
@@ -289,7 +289,7 @@ object mod {
   
   trait CertificateCreationResult extends StObject {
     
-    var certificate: js.Any
+    var certificate: Any
     
     var clientKey: String
     
@@ -299,14 +299,14 @@ object mod {
   }
   object CertificateCreationResult {
     
-    inline def apply(certificate: js.Any, clientKey: String, csr: String, serviceKey: String): CertificateCreationResult = {
+    inline def apply(certificate: Any, clientKey: String, csr: String, serviceKey: String): CertificateCreationResult = {
       val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], clientKey = clientKey.asInstanceOf[js.Any], csr = csr.asInstanceOf[js.Any], serviceKey = serviceKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateCreationResult]
     }
     
     extension [Self <: CertificateCreationResult](x: Self) {
       
-      inline def setCertificate(value: js.Any): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: Any): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
       inline def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
       
@@ -414,7 +414,7 @@ object mod {
       
       inline def setCertFilesUndefined: Self = StObject.set(x, "certFiles", js.undefined)
       
-      inline def setCertFilesVarargs(value: String*): Self = StObject.set(x, "certFiles", js.Array(value :_*))
+      inline def setCertFilesVarargs(value: String*): Self = StObject.set(x, "certFiles", js.Array(value*))
       
       inline def setCipher(value: PrivateKeyCipher): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       
@@ -470,7 +470,7 @@ object mod {
       
       inline def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
-      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       

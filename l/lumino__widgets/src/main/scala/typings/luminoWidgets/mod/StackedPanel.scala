@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the panel.
   */
-class StackedPanel ()
+open class StackedPanel ()
   extends typings.luminoWidgets.stackedpanelMod.StackedPanel {
   def this(options: IOptions) = this()
 }

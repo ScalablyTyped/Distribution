@@ -10,10 +10,10 @@ Utilities for Greek language such as accent and diacritics replacement
 | ------------------ | :-------------: |
 | Full name          | greek-utils |
 | Keywords           | greek, string, diacritics, accents, greek language, greek accents, greek diacritics, greeklish, transliterate, transcript, phonetic translate, stopwords, stop words |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 13943 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4273.0 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/vbarzokas/greek-utils#readme)

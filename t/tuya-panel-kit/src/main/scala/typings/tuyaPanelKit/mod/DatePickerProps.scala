@@ -1,217 +1,227 @@
 package typings.tuyaPanelKit.mod
 
-import typings.react.mod.ReactNode
-import typings.react.mod.ReactText
-import typings.reactNative.mod.AccessibilityActionEvent
-import typings.reactNative.mod.AccessibilityActionInfo
-import typings.reactNative.mod.AccessibilityRole
-import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
-import typings.reactNative.mod.AccessibilityValue
-import typings.reactNative.mod.GestureResponderEvent
-import typings.reactNative.mod.Insets
-import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TVParallaxProperties
-import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.std.Date
 import typings.tuyaPanelKit.anon.Am
-import typings.tuyaPanelKit.anon.DividerColor
-import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-none`
-import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-only`
-import typings.tuyaPanelKit.tuyaPanelKitStrings.`flex-end`
-import typings.tuyaPanelKit.tuyaPanelKitStrings.`flex-start`
-import typings.tuyaPanelKit.tuyaPanelKitStrings.`no-hide-descendants`
-import typings.tuyaPanelKit.tuyaPanelKitStrings.assertive
-import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
-import typings.tuyaPanelKit.tuyaPanelKitStrings.baseline
-import typings.tuyaPanelKit.tuyaPanelKitStrings.button
-import typings.tuyaPanelKit.tuyaPanelKitStrings.center
 import typings.tuyaPanelKit.tuyaPanelKitStrings.date
 import typings.tuyaPanelKit.tuyaPanelKitStrings.datetime
 import typings.tuyaPanelKit.tuyaPanelKitStrings.month
-import typings.tuyaPanelKit.tuyaPanelKitStrings.no
-import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
-import typings.tuyaPanelKit.tuyaPanelKitStrings.polite
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_checked
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_unchecked
-import typings.tuyaPanelKit.tuyaPanelKitStrings.stretch
 import typings.tuyaPanelKit.tuyaPanelKitStrings.time
 import typings.tuyaPanelKit.tuyaPanelKitStrings.year
-import typings.tuyaPanelKit.tuyaPanelKitStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent std.Omit<tuya-panel-kit.tuya-panel-kit.PickerViewProps, 'mode'> */
-trait DatePickerProps extends StObject {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof tuya-panel-kit.tuya-panel-kit.PickerViewProps, 'mode'> ]: tuya-panel-kit.tuya-panel-kit.PickerViewProps[P]} */ trait DatePickerProps extends StObject {
   
-  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-  
-  var accessibilityComponentType: js.UndefOr[none_ | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
-  
-  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
-  
-  var accessibilityHint: js.UndefOr[String] = js.undefined
-  
-  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 测试标识
+    * @defaultValue 'DatePicker'
+    */
+  /**
+    * @language en-US
+    * @description Test identification
+    * @defaultValue 'DatePicker'
+    */
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityLiveRegion: js.UndefOr[none_ | polite | assertive] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 当前选中的值，设置了该属性即为受控组件
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description The currently selected value determines that this attribute is the controlled component
+    * @defaultValue undefined
+    */
+  var date: js.UndefOr[js.Date] = js.undefined
   
-  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
-  
-  var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
-  
-  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
-  
-  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
-  
-  var accessible: js.UndefOr[Boolean] = js.undefined
-  
-  var children: ReactNode
-  
-  var collapsable: js.UndefOr[Boolean] = js.undefined
-  
-  var date: js.UndefOr[Date] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 年 月 日 排序规则，若不提供则默认为年月日
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The sorting rule of year, month and day options. It is year/month/day by default
+    * @defaultValue null
+    */
   var dateSortKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var defaultDate: js.UndefOr[Date] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 默认选中的值
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description The value selected by default
+    * @defaultValue undefined
+    */
+  var defaultDate: js.UndefOr[js.Date] = js.undefined
   
-  var dividerColor: js.UndefOr[String] = js.undefined
-  
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  
-  var focusable: js.UndefOr[Boolean] = js.undefined
-  
-  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
-  
-  var hitSlop: js.UndefOr[Insets] = js.undefined
-  
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description AM / PM 是否位于小时及分钟之前
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Am / PM before hours and minutes
+    * @defaultValue false
+    */
   var isAmpmFirst: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 月、日、时、分，是否补0显示
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Month, day, hour, minute, whether to add 0 display
+    * @defaultValue true
+    */
   var isPlusZero: js.UndefOr[Boolean] = js.undefined
   
-  var isTVSelectable: js.UndefOr[Boolean] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 小时及分钟项是否位于年月日之前
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Specify whether the hour and minute options are before year, month, and day.
+    * @defaultValue false
+    */
   var isTimeFirst: js.UndefOr[Boolean] = js.undefined
   
-  var itemAlign: js.UndefOr[`flex-end` | center | `flex-start` | baseline | stretch] = js.undefined
-  
-  var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
-  
-  var itemTextColor: js.UndefOr[String] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 多语言设置
+    * @defaultValue 'en'
+    */
+  /**
+    * @language en-US
+    * @description Multilingual Settings
+    * @defaultValue 'en'
+    */
   var locale: js.UndefOr[String | Am] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 选择 picker 是否可循环
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Select whether picker loops.
+    * @defaultValue false
+    */
   var loop: js.UndefOr[Boolean] = js.undefined
   
-  var maxDate: js.UndefOr[Date] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 设置最大可选择的值
+    * @defaultValue new Date(2030, 11, 31, 23, 59, 59)
+    */
+  /**
+    * @language en-US
+    * @description Set the maximum selectable value
+    * @defaultValue new Date(2030, 11, 31, 23, 59, 59)
+    */
+  var maxDate: js.UndefOr[js.Date] = js.undefined
   
-  var minDate: js.UndefOr[Date] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 设置最小可选择的值
+    * @defaultValue new Date(2000, 0, 1, 0, 0, 0)
+    */
+  /**
+    * @language en-US
+    * @description Set the minimum selectable value
+    * @defaultValue new Date(2000, 0, 1, 0, 0, 0)
+    */
+  var minDate: js.UndefOr[js.Date] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description The selection type of the selector
+    * @defaultValue 'date'
+    */
+  /**
+    * @language en-US
+    * @description The selection type of the selector
+    * @defaultValue 'date'
+    */
   var mode: js.UndefOr[datetime | date | time | month | year] = js.undefined
   
-  var nativeID: js.UndefOr[String] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 某一项被选中时执行此回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Perform this callback when an item is selected. It is called with the following parameters.
+    * @defaultValue () => {}
+    */
+  var onDateChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Date], Unit]] = js.undefined
   
-  var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
-  
-  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
-  
-  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  var onDateChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Date], Unit]] = js.undefined
-  
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
-  
-  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
-  
-  var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
-  
-  var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
-  
-  var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
-  
-  var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
-  
-  var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
-  var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 某一项被选中时执行此回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Perform this callback when an item is selected. It is called with the following parameters.
+    * @defaultValue () => {}
+    */
   var onValueChange: js.UndefOr[
-    js.Function2[/* value */ js.UndefOr[ReactText], /* index */ js.UndefOr[Double], Unit]
+    js.Function2[/* value */ js.UndefOr[String | Double], /* index */ js.UndefOr[Double], Unit]
   ] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description picker 里字体颜色
+    * @defaultValue '#333'
+    */
+  /**
+    * @language en-US
+    * @description Font color in picker
+    * @defaultValue '#333'
+    */
   var pickerFontColor: js.UndefOr[String] = js.undefined
   
-  var pointerEvents: js.UndefOr[`box-none` | none_ | `box-only` | auto] = js.undefined
-  
-  var prompt: js.UndefOr[String] = js.undefined
-  
-  var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
-  
-  var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
-  
-  var selectedItemTextColor: js.UndefOr[String] = js.undefined
-  
-  var selectedValue: js.UndefOr[String | Double | Boolean] = js.undefined
-  
-  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 容器样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Container style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue undefined
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var testID: js.UndefOr[String] = js.undefined
-  
-  var testId: js.UndefOr[String] = js.undefined
-  
-  var textSize: js.UndefOr[Double] = js.undefined
-  
-  var theme: js.UndefOr[DividerColor] = js.undefined
-  
-  var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
-  
-  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
-  
-  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
-  
-  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
-  
-  var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 是否为12小时制
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Specify whether it is 12-hour system.
+    * @defaultValue false
+    */
   var use12Hours: js.UndefOr[Boolean] = js.undefined
-  
-  var visibleItemCount: js.UndefOr[Double] = js.undefined
 }
 object DatePickerProps {
   
@@ -222,107 +232,23 @@ object DatePickerProps {
   
   extension [Self <: DatePickerProps](x: Self) {
     
-    inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
-    
-    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-    
-    inline def setAccessibilityComponentType(value: none_ | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
-    
-    inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
-    
-    inline def setAccessibilityHint(value: String): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
-    
-    inline def setAccessibilityIgnoresInvertColors(value: Boolean): Self = StObject.set(x, "accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityIgnoresInvertColorsUndefined: Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.undefined)
-    
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    inline def setAccessibilityLiveRegion(value: none_ | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
-    
-    inline def setAccessibilityRole(value: AccessibilityRole): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
-    
-    inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
-    
-    inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
-    
-    inline def setAccessibilityViewIsModal(value: Boolean): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityViewIsModalUndefined: Self = StObject.set(x, "accessibilityViewIsModal", js.undefined)
-    
-    inline def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
-    
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-    
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    
-    inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
-    
-    inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
-    
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateSortKeys(value: js.Array[String]): Self = StObject.set(x, "dateSortKeys", value.asInstanceOf[js.Any])
     
     inline def setDateSortKeysUndefined: Self = StObject.set(x, "dateSortKeys", js.undefined)
     
-    inline def setDateSortKeysVarargs(value: String*): Self = StObject.set(x, "dateSortKeys", js.Array(value :_*))
+    inline def setDateSortKeysVarargs(value: String*): Self = StObject.set(x, "dateSortKeys", js.Array(value*))
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setDefaultDate(value: Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+    inline def setDefaultDate(value: js.Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
     
     inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
-    
-    inline def setDividerColor(value: String): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
-    
-    inline def setDividerColorUndefined: Self = StObject.set(x, "dividerColor", js.undefined)
-    
-    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-    
-    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
-    
-    inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
-    
-    inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
-    
-    inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
-    
-    inline def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
-    
-    inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
-    
-    inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
-    
-    inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
-    
-    inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
     
     inline def setIsAmpmFirst(value: Boolean): Self = StObject.set(x, "isAmpmFirst", value.asInstanceOf[js.Any])
     
@@ -332,27 +258,9 @@ object DatePickerProps {
     
     inline def setIsPlusZeroUndefined: Self = StObject.set(x, "isPlusZero", js.undefined)
     
-    inline def setIsTVSelectable(value: Boolean): Self = StObject.set(x, "isTVSelectable", value.asInstanceOf[js.Any])
-    
-    inline def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
-    
     inline def setIsTimeFirst(value: Boolean): Self = StObject.set(x, "isTimeFirst", value.asInstanceOf[js.Any])
     
     inline def setIsTimeFirstUndefined: Self = StObject.set(x, "isTimeFirst", js.undefined)
-    
-    inline def setItemAlign(value: `flex-end` | center | `flex-start` | baseline | stretch): Self = StObject.set(x, "itemAlign", value.asInstanceOf[js.Any])
-    
-    inline def setItemAlignUndefined: Self = StObject.set(x, "itemAlign", js.undefined)
-    
-    inline def setItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
-    
-    inline def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
-    
-    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
-    
-    inline def setItemTextColor(value: String): Self = StObject.set(x, "itemTextColor", value.asInstanceOf[js.Any])
-    
-    inline def setItemTextColorUndefined: Self = StObject.set(x, "itemTextColor", js.undefined)
     
     inline def setLocale(value: String | Am): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
@@ -362,11 +270,11 @@ object DatePickerProps {
     
     inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
-    inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
@@ -374,107 +282,11 @@ object DatePickerProps {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
-    
-    inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
-    
-    inline def setNeedsOffscreenAlphaCompositing(value: Boolean): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
-    
-    inline def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
-    
-    inline def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
-    
-    inline def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
-    
-    inline def setOnAccessibilityEscape(value: () => Unit): Self = StObject.set(x, "onAccessibilityEscape", js.Any.fromFunction0(value))
-    
-    inline def setOnAccessibilityEscapeUndefined: Self = StObject.set(x, "onAccessibilityEscape", js.undefined)
-    
-    inline def setOnAccessibilityTap(value: () => Unit): Self = StObject.set(x, "onAccessibilityTap", js.Any.fromFunction0(value))
-    
-    inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
-    
-    inline def setOnDateChange(value: /* value */ js.UndefOr[Date] => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
+    inline def setOnDateChange(value: /* value */ js.UndefOr[js.Date] => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction1(value))
     
     inline def setOnDateChangeUndefined: Self = StObject.set(x, "onDateChange", js.undefined)
     
-    inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
-    
-    inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
-    
-    inline def setOnMagicTap(value: () => Unit): Self = StObject.set(x, "onMagicTap", js.Any.fromFunction0(value))
-    
-    inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
-    
-    inline def setOnMoveShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onMoveShouldSetResponder", js.Any.fromFunction1(value))
-    
-    inline def setOnMoveShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
-    
-    inline def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
-    
-    inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
-    
-    inline def setOnResponderEnd(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderEnd", js.Any.fromFunction1(value))
-    
-    inline def setOnResponderEndUndefined: Self = StObject.set(x, "onResponderEnd", js.undefined)
-    
-    inline def setOnResponderGrant(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderGrant", js.Any.fromFunction1(value))
-    
-    inline def setOnResponderGrantUndefined: Self = StObject.set(x, "onResponderGrant", js.undefined)
-    
-    inline def setOnResponderMove(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderMove", js.Any.fromFunction1(value))
-    
-    inline def setOnResponderMoveUndefined: Self = StObject.set(x, "onResponderMove", js.undefined)
-    
-    inline def setOnResponderReject(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderReject", js.Any.fromFunction1(value))
-    
-    inline def setOnResponderRejectUndefined: Self = StObject.set(x, "onResponderReject", js.undefined)
-    
-    inline def setOnResponderRelease(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderRelease", js.Any.fromFunction1(value))
-    
-    inline def setOnResponderReleaseUndefined: Self = StObject.set(x, "onResponderRelease", js.undefined)
-    
-    inline def setOnResponderStart(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderStart", js.Any.fromFunction1(value))
-    
-    inline def setOnResponderStartUndefined: Self = StObject.set(x, "onResponderStart", js.undefined)
-    
-    inline def setOnResponderTerminate(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderTerminate", js.Any.fromFunction1(value))
-    
-    inline def setOnResponderTerminateUndefined: Self = StObject.set(x, "onResponderTerminate", js.undefined)
-    
-    inline def setOnResponderTerminationRequest(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onResponderTerminationRequest", js.Any.fromFunction1(value))
-    
-    inline def setOnResponderTerminationRequestUndefined: Self = StObject.set(x, "onResponderTerminationRequest", js.undefined)
-    
-    inline def setOnStartShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onStartShouldSetResponder", js.Any.fromFunction1(value))
-    
-    inline def setOnStartShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
-    
-    inline def setOnStartShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetResponderCapture", js.undefined)
-    
-    inline def setOnStartShouldSetResponderUndefined: Self = StObject.set(x, "onStartShouldSetResponder", js.undefined)
-    
-    inline def setOnTouchCancel(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
-    
-    inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
-    
-    inline def setOnTouchEnd(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
-    
-    inline def setOnTouchEndCapture(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchEndCapture", js.Any.fromFunction1(value))
-    
-    inline def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
-    
-    inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
-    
-    inline def setOnTouchMove(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
-    
-    inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
-    
-    inline def setOnTouchStart(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
-    
-    inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
-    
-    inline def setOnValueChange(value: (/* value */ js.UndefOr[ReactText], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction2(value))
+    inline def setOnValueChange(value: (/* value */ js.UndefOr[String | Double], /* index */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction2(value))
     
     inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
@@ -482,78 +294,14 @@ object DatePickerProps {
     
     inline def setPickerFontColorUndefined: Self = StObject.set(x, "pickerFontColor", js.undefined)
     
-    inline def setPointerEvents(value: `box-none` | none_ | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
-    
-    inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
-    
-    inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
-    
-    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
-    
-    inline def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
-    
-    inline def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
-    
-    inline def setRenderToHardwareTextureAndroid(value: Boolean): Self = StObject.set(x, "renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
-    
-    inline def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
-    
-    inline def setSelectedItemTextColor(value: String): Self = StObject.set(x, "selectedItemTextColor", value.asInstanceOf[js.Any])
-    
-    inline def setSelectedItemTextColorUndefined: Self = StObject.set(x, "selectedItemTextColor", js.undefined)
-    
-    inline def setSelectedValue(value: String | Double | Boolean): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
-    
-    inline def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
-    
-    inline def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
-    
-    inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
-    
     inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleNull: Self = StObject.set(x, "style", null)
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
-    
-    inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
-    
-    inline def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
-    
-    inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
-    
-    inline def setTheme(value: DividerColor): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
-    
-    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
-    
-    inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
-    
-    inline def setTvParallaxMagnificationUndefined: Self = StObject.set(x, "tvParallaxMagnification", js.undefined)
-    
-    inline def setTvParallaxProperties(value: TVParallaxProperties): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
-    
-    inline def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
-    
-    inline def setTvParallaxShiftDistanceX(value: Double): Self = StObject.set(x, "tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
-    
-    inline def setTvParallaxShiftDistanceXUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceX", js.undefined)
-    
-    inline def setTvParallaxShiftDistanceY(value: Double): Self = StObject.set(x, "tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
-    
-    inline def setTvParallaxShiftDistanceYUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceY", js.undefined)
-    
-    inline def setTvParallaxTiltAngle(value: Double): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
-    
-    inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
-    
     inline def setUse12Hours(value: Boolean): Self = StObject.set(x, "use12Hours", value.asInstanceOf[js.Any])
     
     inline def setUse12HoursUndefined: Self = StObject.set(x, "use12Hours", js.undefined)
-    
-    inline def setVisibleItemCount(value: Double): Self = StObject.set(x, "visibleItemCount", value.asInstanceOf[js.Any])
-    
-    inline def setVisibleItemCountUndefined: Self = StObject.set(x, "visibleItemCount", js.undefined)
   }
 }

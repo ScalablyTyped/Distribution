@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "Dialog")
 @js.native
-class Dialog () extends default
+open class Dialog () extends default

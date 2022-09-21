@@ -16,7 +16,7 @@ object DataTables {
     /**
       * Attach an Editor instance for database updating
       */
-    var editor: js.UndefOr[js.Any] = js.undefined
+    var editor: js.UndefOr[Any] = js.undefined
     
     /**
       * Enable / disable RowReorder's user interaction
@@ -26,7 +26,7 @@ object DataTables {
     /**
       * Set the options for the Editor form when submitting data
       */
-    var formOptions: js.UndefOr[js.Any] = js.undefined
+    var formOptions: js.UndefOr[Any] = js.undefined
     
     /**
       * Define the selector used to pick the elements that will start a drag
@@ -56,7 +56,7 @@ object DataTables {
       
       inline def setDataSrcUndefined: Self = StObject.set(x, "dataSrc", js.undefined)
       
-      inline def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+      inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
       inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
       
@@ -64,7 +64,7 @@ object DataTables {
       
       inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      inline def setFormOptions(value: js.Any): Self = StObject.set(x, "formOptions", value.asInstanceOf[js.Any])
+      inline def setFormOptions(value: Any): Self = StObject.set(x, "formOptions", value.asInstanceOf[js.Any])
       
       inline def setFormOptionsUndefined: Self = StObject.set(x, "formOptions", js.undefined)
       

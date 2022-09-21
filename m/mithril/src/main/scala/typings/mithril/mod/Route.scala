@@ -18,7 +18,7 @@ trait Route extends StObject {
   def get(): String = js.native
   
   /** Gets all route parameters. */
-  def param(): js.Any = js.native
+  def param(): Any = js.native
   /** Returns the named parameter value from the current route. */
   def param(name: String): String = js.native
   
@@ -27,7 +27,7 @@ trait Route extends StObject {
   
   /** Redirects to a matching route or to the default route if no matching routes can be found. */
   def set(route: String): Unit = js.native
-  def set(route: String, data: js.Any): Unit = js.native
-  def set(route: String, data: js.Any, options: RouteOptions): Unit = js.native
+  def set(route: String, data: Any): Unit = js.native
+  def set(route: String, data: Any, options: RouteOptions): Unit = js.native
   def set(route: String, data: Unit, options: RouteOptions): Unit = js.native
 }

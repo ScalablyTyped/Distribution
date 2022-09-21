@@ -13,28 +13,30 @@ object listItemsUtilsMod {
   
   inline def getActiveItem[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveItem")().asInstanceOf[T | Null]
   inline def getActiveItem[T](activeItem: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveItem")(activeItem.asInstanceOf[js.Any]).asInstanceOf[T | Null]
-  inline def getActiveItem[T](activeItem: ICreateNewItem): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveItem")(activeItem.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+  inline def getActiveItem[T](activeItem: CreateNewItem): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveItem")(activeItem.asInstanceOf[js.Any]).asInstanceOf[T | Null]
   
-  inline def getCreateNewItem(): ICreateNewItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getCreateNewItem")().asInstanceOf[ICreateNewItem]
+  inline def getCreateNewItem(): CreateNewItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getCreateNewItem")().asInstanceOf[CreateNewItem]
   
-  inline def isCreateNewItem[T](): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCreateNewItem")().asInstanceOf[/* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ Boolean]
-  inline def isCreateNewItem[T](item: T): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCreateNewItem")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ Boolean]
-  inline def isCreateNewItem[T](item: ICreateNewItem): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCreateNewItem")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ Boolean]
+  inline def isCreateNewItem[T](): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.CreateNewItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCreateNewItem")().asInstanceOf[/* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.CreateNewItem */ Boolean]
+  inline def isCreateNewItem[T](item: T): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.CreateNewItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCreateNewItem")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.CreateNewItem */ Boolean]
+  inline def isCreateNewItem[T](item: CreateNewItem): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.CreateNewItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCreateNewItem")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.CreateNewItem */ Boolean]
   
-  trait ICreateNewItem extends StObject {
+  trait CreateNewItem extends StObject {
     
     var __blueprintCreateNewItemBrand: `blueprint-create-new-item`
   }
-  object ICreateNewItem {
+  object CreateNewItem {
     
-    inline def apply(): ICreateNewItem = {
+    inline def apply(): CreateNewItem = {
       val __obj = js.Dynamic.literal(__blueprintCreateNewItemBrand = "blueprint-create-new-item")
-      __obj.asInstanceOf[ICreateNewItem]
+      __obj.asInstanceOf[CreateNewItem]
     }
     
-    extension [Self <: ICreateNewItem](x: Self) {
+    extension [Self <: CreateNewItem](x: Self) {
       
       inline def set__blueprintCreateNewItemBrand(value: `blueprint-create-new-item`): Self = StObject.set(x, "__blueprintCreateNewItemBrand", value.asInstanceOf[js.Any])
     }
   }
+  
+  type ICreateNewItem = CreateNewItem
 }

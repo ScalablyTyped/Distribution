@@ -200,7 +200,7 @@ object Ad {
     
     inline def setCreativeGroupAssignmentsUndefined: Self = StObject.set(x, "creativeGroupAssignments", js.undefined)
     
-    inline def setCreativeGroupAssignmentsVarargs(value: CreativeGroupAssignment*): Self = StObject.set(x, "creativeGroupAssignments", js.Array(value :_*))
+    inline def setCreativeGroupAssignmentsVarargs(value: CreativeGroupAssignment*): Self = StObject.set(x, "creativeGroupAssignments", js.Array(value*))
     
     inline def setCreativeRotation(value: CreativeRotation): Self = StObject.set(x, "creativeRotation", value.asInstanceOf[js.Any])
     
@@ -230,7 +230,7 @@ object Ad {
     
     inline def setEventTagOverridesUndefined: Self = StObject.set(x, "eventTagOverrides", js.undefined)
     
-    inline def setEventTagOverridesVarargs(value: EventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value :_*))
+    inline def setEventTagOverridesVarargs(value: EventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value*))
     
     inline def setGeoTargeting(value: GeoTargeting): Self = StObject.set(x, "geoTargeting", value.asInstanceOf[js.Any])
     
@@ -268,7 +268,7 @@ object Ad {
     
     inline def setPlacementAssignmentsUndefined: Self = StObject.set(x, "placementAssignments", js.undefined)
     
-    inline def setPlacementAssignmentsVarargs(value: PlacementAssignment*): Self = StObject.set(x, "placementAssignments", js.Array(value :_*))
+    inline def setPlacementAssignmentsVarargs(value: PlacementAssignment*): Self = StObject.set(x, "placementAssignments", js.Array(value*))
     
     inline def setRemarketingListExpression(value: ListTargetingExpression): Self = StObject.set(x, "remarketingListExpression", value.asInstanceOf[js.Any])
     

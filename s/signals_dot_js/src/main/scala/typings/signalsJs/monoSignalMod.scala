@@ -11,7 +11,7 @@ object monoSignalMod {
   
   @JSImport("signals.js/lib/org/osflash/signals/MonoSignal", "MonoSignal")
   @js.native
-  class MonoSignal protected ()
+  open class MonoSignal protected ()
     extends StObject
        with ISignal {
     /**
@@ -25,9 +25,9 @@ object monoSignalMod {
       * NOTE: Subclasses cannot call super.apply(null, valueClasses),
       * but this constructor has logic to support super(valueClasses).
       */
-    def this(valueClasses: js.Any*) = this()
+    def this(valueClasses: Any*) = this()
     
-    /* protected */ var _valueClasses: js.Array[js.Any] = js.native
+    /* protected */ var _valueClasses: js.Array[Any] = js.native
     
     /**
       * Subscribes a listener for the signal.
@@ -57,7 +57,7 @@ object monoSignalMod {
       * @throws    ArgumentError    <code>ArgumentError</code>:    valueObjects are not compatible with valueClasses.
       */
     /* CompleteClass */
-    override def dispatch(valueObjects: js.Any*): Unit = js.native
+    override def dispatch(valueObjects: Any*): Unit = js.native
     
     /** The current number of listeners for the signal. */
     /* CompleteClass */
@@ -86,6 +86,6 @@ object monoSignalMod {
       * An optional array of classes defining the types of parameters sent to listeners.
       */
     /* CompleteClass */
-    var valueClasses: js.Array[js.Any] = js.native
+    var valueClasses: js.Array[Any] = js.native
   }
 }

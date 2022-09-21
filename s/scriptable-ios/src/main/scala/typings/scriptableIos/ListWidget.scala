@@ -1,6 +1,5 @@
 package typings.scriptableIos
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait ListWidget extends StObject {
     * Adds a date element to the widget. Use the properties on the returned element to style the date.
     * @see https://docs.scriptable.app/listwidget/#-adddate
     */
-  def addDate(date: Date): WidgetDate = js.native
+  def addDate(date: js.Date): WidgetDate = js.native
   
   /**
     * _Add image to the widget._
@@ -77,6 +76,18 @@ trait ListWidget extends StObject {
   /**
     * _Presents a preview of the widget._
     *
+    * The widget is presented in its extra large size.
+    *
+    * Widgets on the Home screen are updated periodically so while working on your widget you may want to preview it in the app.
+    *
+    * Please be aware that extra large widgets are only available on iPads running iOS 15 and newer.
+    * @see https://docs.scriptable.app/listwidget/#-presentextralarge
+    */
+  def presentExtraLarge(): js.Promise[Unit] = js.native
+  
+  /**
+    * _Presents a preview of the widget._
+    *
     * The widget is presented in its large size.
     *
     * Widgets on the Home screen are updated periodically so while working on your widget you may want to preview it in the app.
@@ -115,7 +126,7 @@ trait ListWidget extends StObject {
     * When the property is `null` the default refresh interval is used. Defaults to `null`.
     * @see https://docs.scriptable.app/listwidget/#refreshafterdate
     */
-  var refreshAfterDate: Date = js.native
+  var refreshAfterDate: js.Date = js.native
   
   /**
     * _Set padding._

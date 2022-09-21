@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a single axis in a chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartAxisLoadOptions extends StObject {
@@ -19,329 +19,313 @@ trait ChartAxisLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the alignment for the specified axis tick label. See `Excel.ChartTextHorizontalAlignment` for detail.
     *
-    * Specifies the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var alignment: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the group for the specified axis. See `Excel.ChartAxisGroup` for details.
     *
-    * Specifies the group for the specified axis. See Excel.ChartAxisGroup for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var axisGroup: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the base unit for the specified category axis.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var baseTimeUnit: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the category axis type.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var categoryType: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `Position` instead.
-    * Specifies the specified axis where the other axis crosses. See Excel.ChartAxisPosition for details.
+    * Specifies the custom axis display unit value. To set this property, please use the `SetCustomDisplayUnit(double)` method.
     *
-    * [Api set: ExcelApi 1.7]
-    */
-  var crosses: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `PositionAt` instead.
-    * Specifies the specified axis where the other axis crosses at. Set to this property should use SetCrossesAt(double) method.
-    *
-    * [Api set: ExcelApi 1.7]
-    */
-  var crossesAt: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    *
-    * Specifies the custom axis display unit value. To set this property, please use the SetCustomDisplayUnit(double) method.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var customDisplayUnit: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the axis display unit. See `Excel.ChartAxisDisplayUnit` for details.
     *
-    * Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var displayUnit: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the formatting of a chart object, which includes line and font formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartAxisFormatLoadOptions] = js.undefined
   
   /**
+    * Specifies the height, in points, of the chart axis. Returns `null` if the axis is not visible.
     *
-    * Specifies the height, in points, of the chart axis. Null if the axis is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the value axis crosses the category axis between categories.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var isBetweenCategories: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the distance, in points, from the left edge of the axis to the left of chart area. Returns `null` if the axis is not visible.
     *
-    * Specifies the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var left: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if the number format is linked to the cells. If `true`, the number format will change in the labels when it changes in the cells.
     *
-    * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var linkNumberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the base of the logarithm when using logarithmic scales.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var logBase: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns an object that represents the major gridlines for the specified axis.
     *
-    * Returns a Gridlines object that represents the major gridlines for the specified axis.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var majorGridlines: js.UndefOr[ChartGridlinesLoadOptions] = js.undefined
   
   /**
+    * Specifies the type of major tick mark for the specified axis. See `Excel.ChartAxisTickMark` for details.
     *
-    * Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var majorTickMark: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the major unit scale value for the category axis when the `categoryType` property is set to `dateAxis`.
     *
-    * Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var majorTimeUnitScale: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The returned value is always a number.
     *
-    * Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var majorUnit: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.
     *
-    * Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var maximum: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.
     *
-    * Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var minimum: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns an object that represents the minor gridlines for the specified axis.
     *
-    * Returns a Gridlines object that represents the minor gridlines for the specified axis.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var minorGridlines: js.UndefOr[ChartGridlinesLoadOptions] = js.undefined
   
   /**
+    * Specifies the type of minor tick mark for the specified axis. See `Excel.ChartAxisTickMark` for details.
     *
-    * Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var minorTickMark: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the minor unit scale value for the category axis when the `categoryType` property is set to `dateAxis`.
     *
-    * Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var minorTimeUnitScale: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var minorUnit: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if an axis is multilevel.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var multiLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the format code for the axis tick label.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var numberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var offset: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the specified axis position where the other axis crosses. See `Excel.ChartAxisPosition` for details.
     *
-    * Specifies the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the axis position where the other axis crosses. You should use the `SetPositionAt(double)` method to set this property.
     *
-    * Specifies the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var positionAt: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if Excel plots data points from last to first.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var reversePlotOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the value axis scale type. See `Excel.ChartAxisScaleType` for details.
     *
-    * Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var scaleType: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the axis display unit label is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showDisplayUnitLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var textOrientation: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the position of tick-mark labels on the specified axis. See `Excel.ChartAxisTickLabelPosition` for details.
     *
-    * Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var tickLabelPosition: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var tickLabelSpacing: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the number of categories or series between tick marks.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var tickMarkSpacing: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the axis title.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var title: js.UndefOr[ChartAxisTitleLoadOptions] = js.undefined
   
   /**
+    * Specifies the distance, in points, from the top edge of the axis to the top of chart area. Returns `null` if the axis is not visible.
     *
-    * Specifies the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the axis type. See `Excel.ChartAxisType` for details.
     *
-    * Specifies the axis type. See Excel.ChartAxisType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the axis is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the width, in points, of the chart axis. Returns `null` if the axis is not visible.
     *
-    * Specifies the width, in points, of the chart axis. Null if the axis is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var width: js.UndefOr[Boolean] = js.undefined
@@ -374,14 +358,6 @@ object ChartAxisLoadOptions {
     inline def setCategoryType(value: Boolean): Self = StObject.set(x, "categoryType", value.asInstanceOf[js.Any])
     
     inline def setCategoryTypeUndefined: Self = StObject.set(x, "categoryType", js.undefined)
-    
-    inline def setCrosses(value: Boolean): Self = StObject.set(x, "crosses", value.asInstanceOf[js.Any])
-    
-    inline def setCrossesAt(value: Boolean): Self = StObject.set(x, "crossesAt", value.asInstanceOf[js.Any])
-    
-    inline def setCrossesAtUndefined: Self = StObject.set(x, "crossesAt", js.undefined)
-    
-    inline def setCrossesUndefined: Self = StObject.set(x, "crosses", js.undefined)
     
     inline def setCustomDisplayUnit(value: Boolean): Self = StObject.set(x, "customDisplayUnit", value.asInstanceOf[js.Any])
     

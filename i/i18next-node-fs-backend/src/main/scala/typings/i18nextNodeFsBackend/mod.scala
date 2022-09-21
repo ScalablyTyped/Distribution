@@ -1,13 +1,9 @@
 package typings.i18nextNodeFsBackend
 
-import typings.i18next.i18nextStrings.`3rdParty`
 import typings.i18next.i18nextStrings.backend
-import typings.i18next.i18nextStrings.i18nFormat
-import typings.i18next.i18nextStrings.languageDetector
-import typings.i18next.i18nextStrings.logger
-import typings.i18next.i18nextStrings.postProcessor
 import typings.i18next.mod.BackendModule
 import typings.i18next.mod.InitOptions
+import typings.i18next.mod.ModuleType
 import typings.i18next.mod.ReadCallback
 import typings.i18next.mod.Services
 import typings.i18nextNodeFsBackend.i18nextNodeFsBackEnd.i18nextNodeFsBackEndOptions
@@ -20,16 +16,12 @@ object mod {
   /* was `typeof Backend` */
   @JSImport("i18next-node-fs-backend", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Backend {
-    def this(services: js.Any) = this()
-    def this(services: js.Any, options: i18nextNodeFsBackEndOptions) = this()
+    def this(services: Any) = this()
+    def this(services: Any, options: i18nextNodeFsBackEndOptions) = this()
     def this(services: Unit, options: i18nextNodeFsBackEndOptions) = this()
-    
-    /** Save the missing translation */
-    /* CompleteClass */
-    override def create(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit = js.native
     
     /* CompleteClass */
     override def init(services: Services, backendOptions: i18nextNodeFsBackEndOptions, i18nextOptions: InitOptions): Unit = js.native
@@ -38,7 +30,7 @@ object mod {
     override def read(language: String, namespace: String, callback: ReadCallback): Unit = js.native
     
     /* CompleteClass */
-    var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty` = js.native
+    var `type`: ModuleType = js.native
     /* CompleteClass */
     @JSName("type")
     var type_BackendModule: backend = js.native
@@ -48,6 +40,9 @@ object mod {
   trait Backend
     extends StObject
        with BackendModule[i18nextNodeFsBackEndOptions] {
+    
+    @JSName("create")
+    def create_MBackend(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit = js.native
     
     def init(services: Services): Unit = js.native
     def init(services: Services, backendOptions: Unit, i18nextOptions: InitOptions): Unit = js.native

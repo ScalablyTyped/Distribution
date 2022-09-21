@@ -26,12 +26,12 @@ object DataProviderAddOperationEventDetail {
     
     inline def setAddBeforeKeysUndefined: Self = StObject.set(x, "addBeforeKeys", js.undefined)
     
-    inline def setAddBeforeKeysVarargs(value: K*): Self = StObject.set(x, "addBeforeKeys", js.Array(value :_*))
+    inline def setAddBeforeKeysVarargs(value: K*): Self = StObject.set(x, "addBeforeKeys", js.Array(value*))
     
     inline def setParentKeys(value: js.Array[K]): Self = StObject.set(x, "parentKeys", value.asInstanceOf[js.Any])
     
     inline def setParentKeysUndefined: Self = StObject.set(x, "parentKeys", js.undefined)
     
-    inline def setParentKeysVarargs(value: K*): Self = StObject.set(x, "parentKeys", js.Array(value :_*))
+    inline def setParentKeysVarargs(value: K*): Self = StObject.set(x, "parentKeys", js.Array(value*))
   }
 }

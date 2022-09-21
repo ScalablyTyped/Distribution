@@ -38,7 +38,7 @@ trait IButton
   /** [Method] Returns the value of handler
     * @returns Function
     */
-  var getHandler: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getHandler: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of icon
     * @returns String
@@ -68,12 +68,12 @@ trait IButton
   /** [Method] Returns the value of pressedDelay
     * @returns Number/Boolean
     */
-  var getPressedDelay: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getPressedDelay: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of scope
     * @returns Object
     */
-  var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getScope: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of text
     * @returns String
@@ -81,7 +81,7 @@ trait IButton
   var getText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Config Option] (Function) */
-  var handler: js.UndefOr[js.Any] = js.undefined
+  var handler: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   @JSName("html")
@@ -103,10 +103,10 @@ trait IButton
   var pressedCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Number/Boolean) */
-  var pressedDelay: js.UndefOr[js.Any] = js.undefined
+  var pressedDelay: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of autoEvent
     * @param autoEvent String The new value.
@@ -131,7 +131,7 @@ trait IButton
   /** [Method] Sets the value of handler
     * @param handler Function The new value.
     */
-  var setHandler: js.UndefOr[js.Function1[/* handler */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHandler: js.UndefOr[js.Function1[/* handler */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of icon
     * @param icon String The new value.
@@ -166,12 +166,12 @@ trait IButton
   /** [Method] Sets the value of pressedDelay
     * @param pressedDelay Number/Boolean The new value.
     */
-  var setPressedDelay: js.UndefOr[js.Function1[/* pressedDelay */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setPressedDelay: js.UndefOr[js.Function1[/* pressedDelay */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of scope
     * @param scope Object The new value.
     */
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of text
     * @param text String The new value.
@@ -218,7 +218,7 @@ object IButton {
     
     inline def setGetBadgeTextUndefined: Self = StObject.set(x, "getBadgeText", js.undefined)
     
-    inline def setGetHandler(value: () => js.Any): Self = StObject.set(x, "getHandler", js.Any.fromFunction0(value))
+    inline def setGetHandler(value: () => Any): Self = StObject.set(x, "getHandler", js.Any.fromFunction0(value))
     
     inline def setGetHandlerUndefined: Self = StObject.set(x, "getHandler", js.undefined)
     
@@ -242,11 +242,11 @@ object IButton {
     
     inline def setGetPressedClsUndefined: Self = StObject.set(x, "getPressedCls", js.undefined)
     
-    inline def setGetPressedDelay(value: () => js.Any): Self = StObject.set(x, "getPressedDelay", js.Any.fromFunction0(value))
+    inline def setGetPressedDelay(value: () => Any): Self = StObject.set(x, "getPressedDelay", js.Any.fromFunction0(value))
     
     inline def setGetPressedDelayUndefined: Self = StObject.set(x, "getPressedDelay", js.undefined)
     
-    inline def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    inline def setGetScope(value: () => Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
     inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
     
@@ -254,7 +254,7 @@ object IButton {
     
     inline def setGetTextUndefined: Self = StObject.set(x, "getText", js.undefined)
     
-    inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
@@ -282,11 +282,11 @@ object IButton {
     
     inline def setPressedClsUndefined: Self = StObject.set(x, "pressedCls", js.undefined)
     
-    inline def setPressedDelay(value: js.Any): Self = StObject.set(x, "pressedDelay", value.asInstanceOf[js.Any])
+    inline def setPressedDelay(value: Any): Self = StObject.set(x, "pressedDelay", value.asInstanceOf[js.Any])
     
     inline def setPressedDelayUndefined: Self = StObject.set(x, "pressedDelay", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -306,7 +306,7 @@ object IButton {
     
     inline def setSetBadgeUndefined: Self = StObject.set(x, "setBadge", js.undefined)
     
-    inline def setSetHandler(value: /* handler */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction1(value))
+    inline def setSetHandler(value: /* handler */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction1(value))
     
     inline def setSetHandlerUndefined: Self = StObject.set(x, "setHandler", js.undefined)
     
@@ -334,11 +334,11 @@ object IButton {
     
     inline def setSetPressedClsUndefined: Self = StObject.set(x, "setPressedCls", js.undefined)
     
-    inline def setSetPressedDelay(value: /* pressedDelay */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPressedDelay", js.Any.fromFunction1(value))
+    inline def setSetPressedDelay(value: /* pressedDelay */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setPressedDelay", js.Any.fromFunction1(value))
     
     inline def setSetPressedDelayUndefined: Self = StObject.set(x, "setPressedDelay", js.undefined)
     
-    inline def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+    inline def setSetScope(value: /* scope */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
     
     inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
     

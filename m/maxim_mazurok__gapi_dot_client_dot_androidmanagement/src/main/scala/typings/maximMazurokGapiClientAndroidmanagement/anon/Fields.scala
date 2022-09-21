@@ -111,7 +111,7 @@ object Fields {
     
     inline def setWipeDataFlagsUndefined: Self = StObject.set(x, "wipeDataFlags", js.undefined)
     
-    inline def setWipeDataFlagsVarargs(value: String*): Self = StObject.set(x, "wipeDataFlags", js.Array(value :_*))
+    inline def setWipeDataFlagsVarargs(value: String*): Self = StObject.set(x, "wipeDataFlags", js.Array(value*))
     
     inline def setWipeReasonMessage(value: String): Self = StObject.set(x, "wipeReasonMessage", value.asInstanceOf[js.Any])
     

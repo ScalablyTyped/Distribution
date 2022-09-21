@@ -85,7 +85,7 @@ object anon {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
     }
   }
   
@@ -157,7 +157,7 @@ object anon {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: StringDictionary[Boolean]*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: StringDictionary[Boolean]*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

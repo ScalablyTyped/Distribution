@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StorageDescriptor extends StObject {
   
   /**
+    * A list of locations that point to the path where a Delta table is located.
+    */
+  var AdditionalLocations: js.UndefOr[LocationStringList] = js.undefined
+  
+  /**
     * A list of reducer grouping columns, clustering columns, and bucketing columns in the table.
     */
   var BucketColumns: js.UndefOr[NameStringList] = js.undefined
@@ -47,7 +52,7 @@ trait StorageDescriptor extends StObject {
   var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
-    * An object that references a schema stored in the AWS Glue Schema Registry. When creating a table, you can pass an empty list of columns for the schema, and instead use a schema reference.
+    * An object that references a schema stored in the Glue Schema Registry. When creating a table, you can pass an empty list of columns for the schema, and instead use a schema reference.
     */
   var SchemaReference: js.UndefOr[typings.awsSdk.glueMod.SchemaReference] = js.undefined
   
@@ -80,17 +85,23 @@ object StorageDescriptor {
   
   extension [Self <: StorageDescriptor](x: Self) {
     
+    inline def setAdditionalLocations(value: LocationStringList): Self = StObject.set(x, "AdditionalLocations", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalLocationsUndefined: Self = StObject.set(x, "AdditionalLocations", js.undefined)
+    
+    inline def setAdditionalLocationsVarargs(value: LocationString*): Self = StObject.set(x, "AdditionalLocations", js.Array(value*))
+    
     inline def setBucketColumns(value: NameStringList): Self = StObject.set(x, "BucketColumns", value.asInstanceOf[js.Any])
     
     inline def setBucketColumnsUndefined: Self = StObject.set(x, "BucketColumns", js.undefined)
     
-    inline def setBucketColumnsVarargs(value: NameString*): Self = StObject.set(x, "BucketColumns", js.Array(value :_*))
+    inline def setBucketColumnsVarargs(value: NameString*): Self = StObject.set(x, "BucketColumns", js.Array(value*))
     
     inline def setColumns(value: ColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "Columns", js.undefined)
     
-    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "Columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "Columns", js.Array(value*))
     
     inline def setCompressed(value: Boolean): Self = StObject.set(x, "Compressed", value.asInstanceOf[js.Any])
     
@@ -132,7 +143,7 @@ object StorageDescriptor {
     
     inline def setSortColumnsUndefined: Self = StObject.set(x, "SortColumns", js.undefined)
     
-    inline def setSortColumnsVarargs(value: Order*): Self = StObject.set(x, "SortColumns", js.Array(value :_*))
+    inline def setSortColumnsVarargs(value: Order*): Self = StObject.set(x, "SortColumns", js.Array(value*))
     
     inline def setStoredAsSubDirectories(value: Boolean): Self = StObject.set(x, "StoredAsSubDirectories", value.asInstanceOf[js.Any])
     

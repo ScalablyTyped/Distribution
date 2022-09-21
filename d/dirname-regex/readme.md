@@ -10,10 +10,10 @@ Regular expression for matching the directory part of a file path.
 | ------------------ | :-------------: |
 | Full name          | dirname-regex |
 | Keywords           | dir, directory, dirname, expression, filepath, match, path, regex, regexp, regular |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 618 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 372.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/regexps/dirname-regex)

@@ -1,9 +1,5 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceProjectsLocationsDatasetsCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The ID of the dataset that is being created. The string must match the
-    * following regex: `[\p{L}\p{N}_\-\.]{1,256}`.
+    * The ID of the dataset that is being created. The string must match the following regex: `[\p{L\}\p{N\}_\-\.]{1,256\}`.
     */
   var datasetId: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the project in which the dataset should be created (e.g.,
-    * `projects/{project_id}/locations/{location_id}`).
+    * The name of the project where the server creates the dataset. For example, `projects/{project_id\}/locations/{location_id\}`.
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -42,10 +31,6 @@ object ParamsResourceProjectsLocationsDatasetsCreate {
   }
   
   extension [Self <: ParamsResourceProjectsLocationsDatasetsCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     

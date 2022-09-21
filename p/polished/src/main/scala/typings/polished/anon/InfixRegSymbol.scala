@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InfixRegSymbol extends StObject {
   
-  var infix: PrecedenceRightToLeft
+  var infix: ArgCountF
   
   var regSymbol: Comma
   
@@ -15,14 +15,14 @@ trait InfixRegSymbol extends StObject {
 }
 object InfixRegSymbol {
   
-  inline def apply(infix: PrecedenceRightToLeft): InfixRegSymbol = {
+  inline def apply(infix: ArgCountF): InfixRegSymbol = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = ",", symbol = ",")
     __obj.asInstanceOf[InfixRegSymbol]
   }
   
   extension [Self <: InfixRegSymbol](x: Self) {
     
-    inline def setInfix(value: PrecedenceRightToLeft): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
+    inline def setInfix(value: ArgCountF): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
     inline def setRegSymbol(value: Comma): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     

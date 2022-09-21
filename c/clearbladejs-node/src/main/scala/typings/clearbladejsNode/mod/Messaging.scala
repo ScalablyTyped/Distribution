@@ -1,6 +1,5 @@
 package typings.clearbladejsNode.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ trait Messaging extends StObject {
   def unsubscribe(topic: String): Unit = js.native
   def unsubscribe(
     topic: String,
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* packet */ js.UndefOr[js.Object], js.Any]
+    callback: js.Function2[/* error */ js.UndefOr[js.Error], /* packet */ js.UndefOr[js.Object], Any]
   ): Unit = js.native
   
   var user: APIUser = js.native

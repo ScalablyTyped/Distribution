@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TestEventPatternRequest extends StObject {
   
   /**
-    * The event, in JSON format, to test against the event pattern.
+    * The event, in JSON format, to test against the event pattern. The JSON must follow the format specified in Amazon Web Services Events, and the following fields are mandatory:    id     account     source     time     region     resources     detail-type   
     */
   var Event: String
   

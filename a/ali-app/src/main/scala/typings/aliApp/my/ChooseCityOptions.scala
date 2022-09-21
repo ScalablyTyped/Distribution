@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChooseCityOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   //     是否显示热门城市，默认 true
   var cities: js.Array[City]
@@ -41,11 +41,11 @@ object ChooseCityOptions {
     
     inline def setCities(value: js.Array[City]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     
-    inline def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value :_*))
+    inline def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value*))
     
     inline def setHotCities(value: js.Array[City]): Self = StObject.set(x, "hotCities", value.asInstanceOf[js.Any])
     
-    inline def setHotCitiesVarargs(value: City*): Self = StObject.set(x, "hotCities", js.Array(value :_*))
+    inline def setHotCitiesVarargs(value: City*): Self = StObject.set(x, "hotCities", js.Array(value*))
     
     inline def setShowHotCities(value: Boolean): Self = StObject.set(x, "showHotCities", value.asInstanceOf[js.Any])
     

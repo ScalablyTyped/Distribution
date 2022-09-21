@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__legends
 
-Typings are for version 0.62.0
+Typings are for version 0.80.0
 
 ## Library description:
 legend components for nivo dataviz library
@@ -10,12 +10,15 @@ legend components for nivo dataviz library
 | ------------------ | :-------------: |
 | Full name          | @nivo/legends |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 35 |
-| # downloads        | 1242106 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 1276189.3333333333 |
+| # stars            | 10446.0 |
 
 ## Links
+- [Homepage](https://github.com/plouc/nivo#readme)
+- [Bugs](https://github.com/plouc/nivo/issues)
+- [Repository](https://github.com/plouc/nivo)
 - [Npm](https://www.npmjs.com/package/%40nivo%2Flegends)
     
 

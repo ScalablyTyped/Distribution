@@ -67,7 +67,7 @@ object SavingsPlanOfferingRate {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: SavingsPlanOfferingRateProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: SavingsPlanOfferingRateProperty*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setRate(value: SavingsPlanRatePricePerUnit): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     

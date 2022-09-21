@@ -11,5 +11,5 @@ object containerMod {
   
   @JSImport("rbx/elements/container", "Container")
   @js.native
-  val Container: ForwardRefAsExoticComponent[ContainerProps, ElementType[js.Any]] = js.native
+  val Container: ForwardRefAsExoticComponent[ContainerProps, ElementType[Any]] = js.native
 }

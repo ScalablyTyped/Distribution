@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Attachments extends StObject {
   
-  def Add(Source: js.Any): Attachment = js.native
-  def Add(Source: js.Any, Type: js.Any): Attachment = js.native
-  def Add(Source: js.Any, Type: js.Any, Position: js.Any): Attachment = js.native
-  def Add(Source: js.Any, Type: js.Any, Position: js.Any, DisplayName: js.Any): Attachment = js.native
-  def Add(Source: js.Any, Type: js.Any, Position: Unit, DisplayName: js.Any): Attachment = js.native
-  def Add(Source: js.Any, Type: Unit, Position: js.Any): Attachment = js.native
-  def Add(Source: js.Any, Type: Unit, Position: js.Any, DisplayName: js.Any): Attachment = js.native
-  def Add(Source: js.Any, Type: Unit, Position: Unit, DisplayName: js.Any): Attachment = js.native
+  def Add(Source: Any): Attachment = js.native
+  def Add(Source: Any, Type: Any): Attachment = js.native
+  def Add(Source: Any, Type: Any, Position: Any): Attachment = js.native
+  def Add(Source: Any, Type: Any, Position: Any, DisplayName: Any): Attachment = js.native
+  def Add(Source: Any, Type: Any, Position: Unit, DisplayName: Any): Attachment = js.native
+  def Add(Source: Any, Type: Unit, Position: Any): Attachment = js.native
+  def Add(Source: Any, Type: Unit, Position: Any, DisplayName: Any): Attachment = js.native
+  def Add(Source: Any, Type: Unit, Position: Unit, DisplayName: Any): Attachment = js.native
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -22,12 +22,12 @@ trait Attachments extends StObject {
   
   val Count: Double = js.native
   
-  def Item(Index: js.Any): Attachment = js.native
+  def Item(Index: Any): Attachment = js.native
   
   /* private */ @JSName("Outlook.Attachments_typekey")
   var OutlookDotAttachments_typekey: Attachments = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Remove(Index: Double): Unit = js.native
   

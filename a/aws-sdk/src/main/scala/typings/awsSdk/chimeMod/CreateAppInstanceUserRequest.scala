@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAppInstanceUserRequest extends StObject {
   
   /**
-    * The ARN of the app instance request.
+    * The ARN of the AppInstance request.
     */
   var AppInstanceArn: ChimeArn
   
   /**
-    * The user ID of the app instance.
+    * The user ID of the AppInstance.
     */
   var AppInstanceUserId: UserId
   
   /**
-    * The token assigned to the user requesting an app instance.
+    * The token assigned to the user requesting an AppInstance.
     */
   var ClientRequestToken: typings.awsSdk.chimeMod.ClientRequestToken
   
@@ -30,6 +30,11 @@ trait CreateAppInstanceUserRequest extends StObject {
     * The user's name.
     */
   var Name: UserName
+  
+  /**
+    * Tags assigned to the AppInstanceUser.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateAppInstanceUserRequest {
   
@@ -56,5 +61,11 @@ object CreateAppInstanceUserRequest {
     inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
     inline def setName(value: UserName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

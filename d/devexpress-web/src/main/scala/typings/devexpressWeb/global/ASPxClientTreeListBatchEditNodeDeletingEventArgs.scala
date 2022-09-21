@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListBatchEditNodeDeletingEventArgs")
 @js.native
-class ASPxClientTreeListBatchEditNodeDeletingEventArgs protected ()
+open class ASPxClientTreeListBatchEditNodeDeletingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListBatchEditNodeDeletingEventArgs {
   /**
@@ -17,10 +17,10 @@ class ASPxClientTreeListBatchEditNodeDeletingEventArgs protected ()
     * @param nodeKey A String value that identifies the processed node.
     * @param nodeValues An object representing a data source field values.
     */
-  def this(nodeKey: String, nodeValues: js.Any) = this()
+  def this(nodeKey: String, nodeValues: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -35,5 +35,5 @@ class ASPxClientTreeListBatchEditNodeDeletingEventArgs protected ()
     * Gets the value of the processed cell.
     */
   /* CompleteClass */
-  var nodeValues: js.Any = js.native
+  var nodeValues: Any = js.native
 }

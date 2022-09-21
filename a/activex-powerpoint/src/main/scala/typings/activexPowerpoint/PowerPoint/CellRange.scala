@@ -14,7 +14,7 @@ trait CellRange extends StObject {
   
   def Item(Index: Double): Cell
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.CellRange_typekey")
   var PowerPointDotCellRange_typekey: CellRange
@@ -26,7 +26,7 @@ object CellRange {
     Borders: Borders,
     Count: Double,
     Item: Double => Cell,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotCellRange_typekey: CellRange
   ): CellRange = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Borders = Borders.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object CellRange {
     
     inline def setItem(value: Double => Cell): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotCellRange_typekey(value: CellRange): Self = StObject.set(x, "PowerPoint.CellRange_typekey", value.asInstanceOf[js.Any])
   }

@@ -10,10 +10,10 @@ Parser for Normal Play Time (RFC 2326)
 | ------------------ | :-------------: |
 | Full name          | normalplaytime |
 | Keywords           | parser |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 1119 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 423.6666666666667 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/eteubert/normalplaytime#readme)

@@ -24,6 +24,6 @@ object GetContainerServiceDeploymentsResult {
     
     inline def setDeploymentsUndefined: Self = StObject.set(x, "deployments", js.undefined)
     
-    inline def setDeploymentsVarargs(value: ContainerServiceDeployment*): Self = StObject.set(x, "deployments", js.Array(value :_*))
+    inline def setDeploymentsVarargs(value: ContainerServiceDeployment*): Self = StObject.set(x, "deployments", js.Array(value*))
   }
 }

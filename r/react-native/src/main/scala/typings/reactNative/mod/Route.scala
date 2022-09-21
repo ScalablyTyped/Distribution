@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Route
   extends StObject
      with //anything else
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   //Commonly found properties
   var backButtonTitle: js.UndefOr[String] = js.undefined
   
-  var component: js.UndefOr[ComponentType[js.Any]] = js.undefined
+  var component: js.UndefOr[ComponentType[Any]] = js.undefined
   
   var content: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ trait Route
   
   var title: js.UndefOr[String] = js.undefined
   
-  var wrapperStyle: js.UndefOr[js.Any] = js.undefined
+  var wrapperStyle: js.UndefOr[Any] = js.undefined
 }
 object Route {
   
@@ -47,7 +47,7 @@ object Route {
     
     inline def setBackButtonTitleUndefined: Self = StObject.set(x, "backButtonTitle", js.undefined)
     
-    inline def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
@@ -83,7 +83,7 @@ object Route {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setWrapperStyle(value: js.Any): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
+    inline def setWrapperStyle(value: Any): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     
     inline def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
   }

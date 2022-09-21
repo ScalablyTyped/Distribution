@@ -11,7 +11,7 @@ trait QueryResponsePayload extends StObject {
   var devices: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: {[ P in string ]: any}}
-    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.QueryResponsePayload & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.QueryResponsePayload & TopLevel[Any]
   ] = js.undefined
 }
 object QueryResponsePayload {
@@ -26,7 +26,7 @@ object QueryResponsePayload {
     inline def setDevices(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: {[ P in string ]: any}}
-      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.QueryResponsePayload & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.QueryResponsePayload & TopLevel[Any]
     ): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
     inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)

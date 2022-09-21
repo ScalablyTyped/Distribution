@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CustomerSort")
 @js.native
-class CustomerSort () extends StObject {
+open class CustomerSort () extends StObject {
   
   /**
     * Use one or more customer attributes as the sort key to sort searched customer profiles.

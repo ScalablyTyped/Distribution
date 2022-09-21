@@ -16,7 +16,7 @@ object keyring {
       * Array of keys
       * @param keys The keys to store in this array
       */
-    inline def KeyArray(keys: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("KeyArray")(keys.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def KeyArray(keys: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("KeyArray")(keys.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("openpgp", "keyring.keyring.Keyring")
     @js.native
@@ -24,7 +24,7 @@ object keyring {
       * Initialization routine for the keyring.
       * @param storeHandler class implementing loadPublic(), loadPrivate(), storePublic(), and storePrivate() methods
       */
-    class Keyring () extends StObject {
+    open class Keyring () extends StObject {
       def this(storeHandler: typings.openpgp.mod.keyring.localstore.LocalStore) = this()
       
       /**
@@ -36,7 +36,7 @@ object keyring {
         * Get all public and private keys
         * @returns all keys
         */
-      def getAllKeys(): js.Array[js.Any] = js.native
+      def getAllKeys(): js.Array[Any] = js.native
       
       /**
         * Searches the keyring for keys having the specified key id
@@ -45,7 +45,7 @@ object keyring {
         * @param deep if true search also in subkeys
         * @returns keys found or null
         */
-      def getKeysForId(keyId: String, deep: Boolean): js.Array[js.Any] | Null = js.native
+      def getKeysForId(keyId: String, deep: Boolean): js.Array[Any] | Null = js.native
       
       /**
         * Calls the storeHandler to load the keys
@@ -58,7 +58,7 @@ object keyring {
         *        withouth 0x prefix (can be 16-character key ID or fingerprint)
         * @returns keys found or null
         */
-      def removeKeysForId(keyId: String): js.Array[js.Any] | Null = js.native
+      def removeKeysForId(keyId: String): js.Array[Any] | Null = js.native
       
       /**
         * Calls the storeHandler to save the keys
@@ -71,7 +71,7 @@ object keyring {
     
     @JSImport("openpgp", "keyring.localstore.LocalStore")
     @js.native
-    class LocalStore protected () extends StObject {
+    open class LocalStore protected () extends StObject {
       /**
         * The class that deals with storage of the keyring.
         * Currently the only option is to use HTML5 local storage.
@@ -83,27 +83,27 @@ object keyring {
         * Load the private keys from HTML5 local storage.
         * @returns array of keys retrieved from localstore
         */
-      def loadPrivate(): js.Array[js.Any] = js.native
+      def loadPrivate(): js.Array[Any] = js.native
       
       /**
         * Load the public keys from HTML5 local storage.
         * @returns array of keys retrieved from localstore
         */
-      def loadPublic(): js.Array[js.Any] = js.native
+      def loadPublic(): js.Array[Any] = js.native
       
       /**
         * Saves the current state of the private keys to HTML5 local storage.
         * The key array gets stringified using JSON
         * @param keys array of keys to save in localstore
         */
-      def storePrivate(keys: js.Array[js.Any]): Unit = js.native
+      def storePrivate(keys: js.Array[Any]): Unit = js.native
       
       /**
         * Saves the current state of the public keys to HTML5 local storage.
         * The key array gets stringified using JSON
         * @param keys array of keys to save in localstore
         */
-      def storePublic(keys: js.Array[js.Any]): Unit = js.native
+      def storePublic(keys: js.Array[Any]): Unit = js.native
     }
   }
 }

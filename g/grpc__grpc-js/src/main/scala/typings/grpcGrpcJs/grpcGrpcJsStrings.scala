@@ -1,11 +1,36 @@
 package typings.grpcGrpcJs
 
+import typings.grpcGrpcJs.channelzMod.TraceSeverity
 import typings.grpcGrpcJs.serverCallMod.HandlerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grpcGrpcJsStrings {
+  
+  @js.native
+  sealed trait CT_ERROR
+    extends StObject
+       with TraceSeverity
+  inline def CT_ERROR: CT_ERROR = "CT_ERROR".asInstanceOf[CT_ERROR]
+  
+  @js.native
+  sealed trait CT_INFO
+    extends StObject
+       with TraceSeverity
+  inline def CT_INFO: CT_INFO = "CT_INFO".asInstanceOf[CT_INFO]
+  
+  @js.native
+  sealed trait CT_UNKNOWN
+    extends StObject
+       with TraceSeverity
+  inline def CT_UNKNOWN: CT_UNKNOWN = "CT_UNKNOWN".asInstanceOf[CT_UNKNOWN]
+  
+  @js.native
+  sealed trait CT_WARNING
+    extends StObject
+       with TraceSeverity
+  inline def CT_WARNING: CT_WARNING = "CT_WARNING".asInstanceOf[CT_WARNING]
   
   @js.native
   sealed trait ServiceDefinition extends StObject
@@ -18,8 +43,12 @@ object grpcGrpcJsStrings {
   inline def bidi: bidi = "bidi".asInstanceOf[bidi]
   
   @js.native
-  sealed trait cds extends StObject
-  inline def cds: cds = "cds".asInstanceOf[cds]
+  sealed trait channel extends StObject
+  inline def channel: channel = "channel".asInstanceOf[channel]
+  
+  @js.native
+  sealed trait channel_ref extends StObject
+  inline def channel_ref: channel_ref = "channel_ref".asInstanceOf[channel_ref]
   
   @js.native
   sealed trait clientStream
@@ -28,72 +57,28 @@ object grpcGrpcJsStrings {
   inline def clientStream: clientStream = "clientStream".asInstanceOf[clientStream]
   
   @js.native
-  sealed trait close extends StObject
-  inline def close: close = "close".asInstanceOf[close]
-  
-  @js.native
   sealed trait data extends StObject
   inline def data: data = "data".asInstanceOf[data]
-  
-  @js.native
-  sealed trait drain extends StObject
-  inline def drain: drain = "drain".asInstanceOf[drain]
-  
-  @js.native
-  sealed trait eds extends StObject
-  inline def eds: eds = "eds".asInstanceOf[eds]
-  
-  @js.native
-  sealed trait end extends StObject
-  inline def end: end = "end".asInstanceOf[end]
-  
-  @js.native
-  sealed trait error extends StObject
-  inline def error: error = "error".asInstanceOf[error]
-  
-  @js.native
-  sealed trait finish extends StObject
-  inline def finish: finish = "finish".asInstanceOf[finish]
-  
-  @js.native
-  sealed trait grpclb extends StObject
-  inline def grpclb: grpclb = "grpclb".asInstanceOf[grpclb]
-  
-  @js.native
-  sealed trait lrs extends StObject
-  inline def lrs: lrs = "lrs".asInstanceOf[lrs]
   
   @js.native
   sealed trait metadata extends StObject
   inline def metadata: metadata = "metadata".asInstanceOf[metadata]
   
   @js.native
-  sealed trait pause extends StObject
-  inline def pause: pause = "pause".asInstanceOf[pause]
+  sealed trait other extends StObject
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait pick_first extends StObject
-  inline def pick_first: pick_first = "pick_first".asInstanceOf[pick_first]
+  sealed trait other_address extends StObject
+  inline def other_address: other_address = "other_address".asInstanceOf[other_address]
   
   @js.native
-  sealed trait pipe extends StObject
-  inline def pipe: pipe = "pipe".asInstanceOf[pipe]
+  sealed trait other_name extends StObject
+  inline def other_name: other_name = "other_name".asInstanceOf[other_name]
   
   @js.native
-  sealed trait priority extends StObject
-  inline def priority: priority = "priority".asInstanceOf[priority]
-  
-  @js.native
-  sealed trait readable extends StObject
-  inline def readable: readable = "readable".asInstanceOf[readable]
-  
-  @js.native
-  sealed trait resume extends StObject
-  inline def resume: resume = "resume".asInstanceOf[resume]
-  
-  @js.native
-  sealed trait round_robin extends StObject
-  inline def round_robin: round_robin = "round_robin".asInstanceOf[round_robin]
+  sealed trait server extends StObject
+  inline def server: server = "server".asInstanceOf[server]
   
   @js.native
   sealed trait serverStream
@@ -102,40 +87,40 @@ object grpcGrpcJsStrings {
   inline def serverStream: serverStream = "serverStream".asInstanceOf[serverStream]
   
   @js.native
+  sealed trait socket extends StObject
+  inline def socket: socket = "socket".asInstanceOf[socket]
+  
+  @js.native
+  sealed trait standard_name extends StObject
+  inline def standard_name: standard_name = "standard_name".asInstanceOf[standard_name]
+  
+  @js.native
   sealed trait status extends StObject
   inline def status: status = "status".asInstanceOf[status]
   
   @js.native
-  sealed trait typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotCluster extends StObject
-  inline def typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotCluster: typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotCluster = "type.googleapis.com/envoy.api.v2.Cluster".asInstanceOf[typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotCluster]
+  sealed trait subchannel extends StObject
+  inline def subchannel: subchannel = "subchannel".asInstanceOf[subchannel]
   
   @js.native
-  sealed trait typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotClusterLoadAssignment extends StObject
-  inline def typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotClusterLoadAssignment: typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotClusterLoadAssignment = "type.googleapis.com/envoy.api.v2.ClusterLoadAssignment".asInstanceOf[typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotClusterLoadAssignment]
+  sealed trait subchannel_ref extends StObject
+  inline def subchannel_ref: subchannel_ref = "subchannel_ref".asInstanceOf[subchannel_ref]
   
   @js.native
-  sealed trait typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotListener extends StObject
-  inline def typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotListener: typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotListener = "type.googleapis.com/envoy.api.v2.Listener".asInstanceOf[typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotListener]
+  sealed trait tcpip_address extends StObject
+  inline def tcpip_address: tcpip_address = "tcpip_address".asInstanceOf[tcpip_address]
   
   @js.native
-  sealed trait typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotRouteConfiguration extends StObject
-  inline def typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotRouteConfiguration: typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotRouteConfiguration = "type.googleapis.com/envoy.api.v2.RouteConfiguration".asInstanceOf[typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotRouteConfiguration]
+  sealed trait tls extends StObject
+  inline def tls: tls = "tls".asInstanceOf[tls]
+  
+  @js.native
+  sealed trait uds_address extends StObject
+  inline def uds_address: uds_address = "uds_address".asInstanceOf[uds_address]
   
   @js.native
   sealed trait unary
     extends StObject
        with HandlerType
   inline def unary: unary = "unary".asInstanceOf[unary]
-  
-  @js.native
-  sealed trait unpipe extends StObject
-  inline def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
-  
-  @js.native
-  sealed trait weighted_target extends StObject
-  inline def weighted_target: weighted_target = "weighted_target".asInstanceOf[weighted_target]
-  
-  @js.native
-  sealed trait xds extends StObject
-  inline def xds: xds = "xds".asInstanceOf[xds]
 }

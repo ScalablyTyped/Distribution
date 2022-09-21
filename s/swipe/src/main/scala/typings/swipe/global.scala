@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("Swipe")
   @js.native
-  class Swipe protected ()
+  open class Swipe protected ()
     extends StObject
        with typings.swipe.Swipe {
     def this(container: HTMLElement) = this()

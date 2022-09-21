@@ -10,20 +10,102 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MotionProps extends StObject {
   
+  /**
+    * @language zh-CN
+    * @description 动画配置参数
+    * @defaultValue { duration: 300, delay: 0, isInteraction: true, useNativeDriver: true }
+    */
+  /**
+    * @language en-US
+    * @description Animation configuration parameters
+    * @defaultValue { duration: 300, delay: 0, isInteraction: true, useNativeDriver: true }
+    */
   var animationConfig: js.UndefOr[Delay] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 自定义内容
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Custom content
+    * @defaultValue undefined
+    */
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 动画隐藏时长
+    * @defaultValue 300
+    */
+  /**
+    * @language en-US
+    * @description Animation hide duration
+    * @defaultValue 300
+    */
   var hideDuration: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 动画隐藏回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Animation hide callback
+    * @defaultValue () => {}
+    */
   var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 动画显示回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Animation display callback
+    * @defaultValue () => {}
+    */
   var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否显示内容
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Display content?
+    * @defaultValue undefined
+    */
   var show: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 动画显示时长
+    * @defaultValue 300
+    */
+  /**
+    * @language en-US
+    * @description Animation display duration
+    * @defaultValue 300
+    */
   var showDuration: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 内容样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Container style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object MotionProps {

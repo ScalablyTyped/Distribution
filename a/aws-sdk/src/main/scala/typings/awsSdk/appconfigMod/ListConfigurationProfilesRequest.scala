@@ -20,6 +20,11 @@ trait ListConfigurationProfilesRequest extends StObject {
     * A token to start the list. Use this token to get the next set of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.appconfigMod.NextToken] = js.undefined
+  
+  /**
+    * A filter based on the type of configurations that the configuration profile contains. A configuration can be a feature flag or a freeform configuration.
+    */
+  var Type: js.UndefOr[ConfigurationProfileType] = js.undefined
 }
 object ListConfigurationProfilesRequest {
   
@@ -39,5 +44,9 @@ object ListConfigurationProfilesRequest {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setType(value: ConfigurationProfileType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

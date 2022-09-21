@@ -12,7 +12,7 @@ object messageUserAgentClientMod {
   
   @JSImport("sip.js/lib/core/user-agents/message-user-agent-client", "MessageUserAgentClient")
   @js.native
-  class MessageUserAgentClient protected () extends UserAgentClient {
+  open class MessageUserAgentClient protected () extends UserAgentClient {
     def this(core: UserAgentCore, message: OutgoingRequestMessage) = this()
     def this(core: UserAgentCore, message: OutgoingRequestMessage, delegate: OutgoingRequestDelegate) = this()
   }

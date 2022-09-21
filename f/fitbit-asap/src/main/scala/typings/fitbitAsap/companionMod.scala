@@ -25,15 +25,15 @@ object companionMod extends Shortcut {
       * Called when a message is received from the peer.
       * The function assigned to asap.onmessage accepts a single parameter containing the message, which will have the same data type it had when it was passed into the send function.
       */
-    def onmessage(message: js.Any): Unit = js.native
+    def onmessage(message: Any): Unit = js.native
     
     /**
       * Queues a message to be sent to the peer.
       * @param message The message to be sent to the peer. This can be any data type.
       * @param options Options for how this message should be handled. Currently, timeout is the only option.
       */
-    def send(message: js.Any): Unit = js.native
-    def send(message: js.Any, options: Options): Unit = js.native
+    def send(message: Any): Unit = js.native
+    def send(message: Any, options: Options): Unit = js.native
   }
   
   trait Options extends StObject {

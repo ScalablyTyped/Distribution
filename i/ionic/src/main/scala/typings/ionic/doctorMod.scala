@@ -10,7 +10,7 @@ object doctorMod {
   
   @JSImport("ionic/commands/doctor", "DoctorNamespace")
   @js.native
-  class DoctorNamespace () extends Namespace {
+  open class DoctorNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

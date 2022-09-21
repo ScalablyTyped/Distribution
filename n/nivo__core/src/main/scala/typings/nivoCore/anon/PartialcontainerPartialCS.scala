@@ -1,57 +1,55 @@
 package typings.nivoCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  container :std.Partial<react.react.CSSProperties>,   basic :std.Partial<react.react.CSSProperties>,   chip :std.Partial<react.react.CSSProperties>,   table :std.Partial<react.react.CSSProperties>,   tableCell :std.Partial<react.react.CSSProperties>}> */
-@js.native
-trait PartialcontainerPartialCS extends js.Object {
-  var basic: js.UndefOr[PartialCSSProperties] = js.native
-  var chip: js.UndefOr[PartialCSSProperties] = js.native
-  var container: js.UndefOr[PartialCSSProperties] = js.native
-  var table: js.UndefOr[PartialCSSProperties] = js.native
-  var tableCell: js.UndefOr[PartialCSSProperties] = js.native
+/* Inlined std.Partial<{  container :std.Partial<react.react.CSSProperties>,   basic :std.Partial<react.react.CSSProperties>,   chip :std.Partial<react.react.CSSProperties>,   table :std.Partial<react.react.CSSProperties>,   tableCell :std.Partial<react.react.CSSProperties>,   tableCellValue :std.Partial<react.react.CSSProperties>}> */
+trait PartialcontainerPartialCS extends StObject {
+  
+  var basic: js.UndefOr[PartialCSSProperties] = js.undefined
+  
+  var chip: js.UndefOr[PartialCSSProperties] = js.undefined
+  
+  var container: js.UndefOr[PartialCSSProperties] = js.undefined
+  
+  var table: js.UndefOr[PartialCSSProperties] = js.undefined
+  
+  var tableCell: js.UndefOr[PartialCSSProperties] = js.undefined
+  
+  var tableCellValue: js.UndefOr[PartialCSSProperties] = js.undefined
 }
-
 object PartialcontainerPartialCS {
-  @scala.inline
-  def apply(): PartialcontainerPartialCS = {
+  
+  inline def apply(): PartialcontainerPartialCS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialcontainerPartialCS]
   }
-  @scala.inline
-  implicit class PartialcontainerPartialCSOps[Self <: PartialcontainerPartialCS] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setBasic(value: PartialCSSProperties): Self = this.set("basic", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteBasic: Self = this.set("basic", js.undefined)
-    @scala.inline
-    def setChip(value: PartialCSSProperties): Self = this.set("chip", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteChip: Self = this.set("chip", js.undefined)
-    @scala.inline
-    def setContainer(value: PartialCSSProperties): Self = this.set("container", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
-    @scala.inline
-    def setTable(value: PartialCSSProperties): Self = this.set("table", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
-    @scala.inline
-    def setTableCell(value: PartialCSSProperties): Self = this.set("tableCell", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteTableCell: Self = this.set("tableCell", js.undefined)
-  }
   
+  extension [Self <: PartialcontainerPartialCS](x: Self) {
+    
+    inline def setBasic(value: PartialCSSProperties): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+    
+    inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+    
+    inline def setChip(value: PartialCSSProperties): Self = StObject.set(x, "chip", value.asInstanceOf[js.Any])
+    
+    inline def setChipUndefined: Self = StObject.set(x, "chip", js.undefined)
+    
+    inline def setContainer(value: PartialCSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setTable(value: PartialCSSProperties): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    
+    inline def setTableCell(value: PartialCSSProperties): Self = StObject.set(x, "tableCell", value.asInstanceOf[js.Any])
+    
+    inline def setTableCellUndefined: Self = StObject.set(x, "tableCell", js.undefined)
+    
+    inline def setTableCellValue(value: PartialCSSProperties): Self = StObject.set(x, "tableCellValue", value.asInstanceOf[js.Any])
+    
+    inline def setTableCellValueUndefined: Self = StObject.set(x, "tableCellValue", js.undefined)
+    
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+  }
 }
-

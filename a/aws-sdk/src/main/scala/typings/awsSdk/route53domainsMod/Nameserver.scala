@@ -29,7 +29,7 @@ object Nameserver {
     
     inline def setGlueIpsUndefined: Self = StObject.set(x, "GlueIps", js.undefined)
     
-    inline def setGlueIpsVarargs(value: GlueIp*): Self = StObject.set(x, "GlueIps", js.Array(value :_*))
+    inline def setGlueIpsVarargs(value: GlueIp*): Self = StObject.set(x, "GlueIps", js.Array(value*))
     
     inline def setName(value: HostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

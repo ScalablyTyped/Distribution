@@ -26,6 +26,12 @@ object ContactType extends StObject {
     extends StObject
        with ContactType
   
+  /** Task contact. */
+  @js.native
+  sealed trait TASK
+    extends StObject
+       with ContactType
+  
   /** Normal incoming and outgoing voice calls. */
   @js.native
   sealed trait VOICE

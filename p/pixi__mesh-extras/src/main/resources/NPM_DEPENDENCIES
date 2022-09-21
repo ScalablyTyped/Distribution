@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pixi/mesh-extras" : "6.5.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pixi/mesh-extras" : "6.5.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

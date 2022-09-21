@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Explorer")
 @js.native
-/* private */ class Explorer ()
+/* private */ open class Explorer ()
   extends StObject
      with typings.activexOutlook.Outlook.Explorer {
   
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Activate(): Unit = js.native
   
   /* CompleteClass */
-  override def AddToSelection(Item: js.Any): Unit = js.native
+  override def AddToSelection(Item: Any): Unit = js.native
   
   /* CompleteClass */
   override val Application: typings.activexOutlook.Outlook.Application = js.native
@@ -45,13 +45,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Close(): Unit = js.native
   
   /* CompleteClass */
-  override val CommandBars: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ js.Any = js.native
+  override val CommandBars: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ Any = js.native
   
   /* CompleteClass */
   var CurrentFolder: typings.activexOutlook.Outlook.Folder = js.native
   
   /* CompleteClass */
-  var CurrentView: js.Any = js.native
+  var CurrentView: Any = js.native
   
   /* CompleteClass */
   override def DeselectFolder(Folder: typings.activexOutlook.Outlook.Folder): Unit = js.native
@@ -60,7 +60,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Display(): Unit = js.native
   
   /* CompleteClass */
-  override val HTMLDocument: js.Any = js.native
+  override val HTMLDocument: Any = js.native
   
   /* CompleteClass */
   var Height: Double = js.native
@@ -69,7 +69,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def IsFolderSelected(Folder: typings.activexOutlook.Outlook.Folder): Boolean = js.native
   
   /* CompleteClass */
-  override def IsItemSelectableInView(Item: js.Any): Boolean = js.native
+  override def IsItemSelectableInView(Item: Any): Boolean = js.native
   
   /* CompleteClass */
   override def IsPaneVisible(Pane: OlPane): Boolean = js.native
@@ -88,10 +88,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Panes: typings.activexOutlook.Outlook.Panes = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  override def RemoveFromSelection(Item: js.Any): Unit = js.native
+  override def RemoveFromSelection(Item: Any): Unit = js.native
   
   /* CompleteClass */
   override def Search(Query: String, SearchScope: OlSearchScope): Unit = js.native
@@ -115,7 +115,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Top: Double = js.native
   
   /* CompleteClass */
-  override val Views: js.Any = js.native
+  override val Views: Any = js.native
   
   /* CompleteClass */
   var Width: Double = js.native

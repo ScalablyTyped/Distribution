@@ -39,13 +39,11 @@ object mod {
   
   @JSImport("grumbler-scripts", "__ENV__")
   @js.native
-  val __ENV__ : Values[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ENV */ js.Any
-  ] = js.native
+  val __ENV__ : Values[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ENV */ Any] = js.native
   
   @JSImport("grumbler-scripts", "__GLOBAL__")
   @js.native
-  val __GLOBAL__ : js.Any = js.native
+  val __GLOBAL__ : Any = js.native
   
   @JSImport("grumbler-scripts", "__LOCAL__")
   @js.native
@@ -85,7 +83,7 @@ object mod {
   
   @JSImport("grumbler-scripts", "__WINDOW__")
   @js.native
-  val __WINDOW__ : js.Any = js.native
+  val __WINDOW__ : Any = js.native
   
   inline def getCurrentVersion(pkg: Version): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentVersion")(pkg.asInstanceOf[js.Any]).asInstanceOf[String]
   

@@ -5,18 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ConeTwistConstraint = typings.cannon.CANNON.Constraint
+type ConeTwistConstraint = Constraint
 
-type Cylinder = typings.cannon.CANNON.Shape
+type Cylinder = Shape
 
-type DistanceConstraint = typings.cannon.CANNON.Constraint
+type DistanceConstraint = Constraint
 
-type FrictionEquation = typings.cannon.CANNON.Equation
+type FrictionEquation = Equation
 
-type LockConstraint = typings.cannon.CANNON.Constraint
+type LockConstraint = Constraint
 
-type NaiveBroadphase = typings.cannon.CANNON.BroadPhase
+type NaiveBroadphase = BroadPhase
 
-type Particle = typings.cannon.CANNON.Shape
+type Particle = Shape
 
-type PointToPointConstraint = typings.cannon.CANNON.Constraint
+type PointToPointConstraint = Constraint

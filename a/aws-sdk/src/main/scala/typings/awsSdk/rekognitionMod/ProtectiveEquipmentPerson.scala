@@ -39,7 +39,7 @@ object ProtectiveEquipmentPerson {
     
     inline def setBodyPartsUndefined: Self = StObject.set(x, "BodyParts", js.undefined)
     
-    inline def setBodyPartsVarargs(value: ProtectiveEquipmentBodyPart*): Self = StObject.set(x, "BodyParts", js.Array(value :_*))
+    inline def setBodyPartsVarargs(value: ProtectiveEquipmentBodyPart*): Self = StObject.set(x, "BodyParts", js.Array(value*))
     
     inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     

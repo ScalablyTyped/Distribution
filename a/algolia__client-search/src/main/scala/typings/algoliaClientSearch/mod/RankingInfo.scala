@@ -26,6 +26,8 @@ trait RankingInfo extends StObject {
   
   val promoted: Boolean
   
+  val promotedByReRanking: js.UndefOr[Boolean] = js.undefined
+  
   val proximityDistance: js.UndefOr[Double] = js.undefined
   
   val userScore: Double
@@ -73,6 +75,10 @@ object RankingInfo {
     inline def setPersonalizationUndefined: Self = StObject.set(x, "personalization", js.undefined)
     
     inline def setPromoted(value: Boolean): Self = StObject.set(x, "promoted", value.asInstanceOf[js.Any])
+    
+    inline def setPromotedByReRanking(value: Boolean): Self = StObject.set(x, "promotedByReRanking", value.asInstanceOf[js.Any])
+    
+    inline def setPromotedByReRankingUndefined: Self = StObject.set(x, "promotedByReRanking", js.undefined)
     
     inline def setProximityDistance(value: Double): Self = StObject.set(x, "proximityDistance", value.asInstanceOf[js.Any])
     

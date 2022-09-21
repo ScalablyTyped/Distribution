@@ -11,7 +11,6 @@ import typings.pako.pakoNumbers.`6`
 import typings.pako.pakoNumbers.`7`
 import typings.pako.pakoNumbers.`8`
 import typings.pako.pakoNumbers.`9`
-import typings.pako.pakoStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait DeflateOptions extends StObject {
   
   var chunkSize: js.UndefOr[Double] = js.undefined
   
-  var dictionary: js.UndefOr[js.Any] = js.undefined
+  var dictionary: js.UndefOr[Any] = js.undefined
   
   var gzip: js.UndefOr[Boolean] = js.undefined
   
@@ -33,8 +32,6 @@ trait DeflateOptions extends StObject {
   var raw: js.UndefOr[Boolean] = js.undefined
   
   var strategy: js.UndefOr[StrategyValues] = js.undefined
-  
-  var to: js.UndefOr[string] = js.undefined
   
   var windowBits: js.UndefOr[Double] = js.undefined
 }
@@ -51,7 +48,7 @@ object DeflateOptions {
     
     inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
-    inline def setDictionary(value: js.Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+    inline def setDictionary(value: Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
     inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
     
@@ -78,10 +75,6 @@ object DeflateOptions {
     inline def setStrategy(value: StrategyValues): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
-    
-    inline def setTo(value: string): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-    
-    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     inline def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
     

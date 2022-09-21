@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ProgressBarProps
   extends StObject
-     with HTMLProps[js.Any] {
+     with HTMLProps[Any] {
   
   var buffer: js.UndefOr[Double] = js.undefined
   

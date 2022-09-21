@@ -32,7 +32,7 @@ object mod {
     /**
       * A sugar method, equivalent to promise.then(undefined, onRejected).
       */
-    def `catch`[U](onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]]): Promise[U] = js.native
+    def `catch`[U](onRejected: js.Function1[/* reason */ Any, IWhenable[U]]): Promise[U] = js.native
     
     /**
       * Returns a promise that will have the same result as promise, but will only be fulfilled or rejected after at least
@@ -59,47 +59,44 @@ object mod {
       * itself throw an error.
       */
     def done(): Unit = js.native
-    def done(onFulfilled: js.Function1[/* value */ T, js.Any]): Unit = js.native
+    def done(onFulfilled: js.Function1[/* value */ T, Any]): Unit = js.native
+    def done(onFulfilled: js.Function1[/* value */ T, Any], onRejected: js.Function1[/* reason */ Any, Any]): Unit = js.native
     def done(
-      onFulfilled: js.Function1[/* value */ T, js.Any],
-      onRejected: js.Function1[/* reason */ js.Any, js.Any]
+      onFulfilled: js.Function1[/* value */ T, Any],
+      onRejected: js.Function1[/* reason */ Any, Any],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Unit = js.native
     def done(
-      onFulfilled: js.Function1[/* value */ T, js.Any],
-      onRejected: js.Function1[/* reason */ js.Any, js.Any],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
-    ): Unit = js.native
-    def done(
-      onFulfilled: js.Function1[/* value */ T, js.Any],
+      onFulfilled: js.Function1[/* value */ T, Any],
       onRejected: Null,
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Unit = js.native
     def done(
-      onFulfilled: js.Function1[/* value */ T, js.Any],
+      onFulfilled: js.Function1[/* value */ T, Any],
       onRejected: Unit,
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Unit = js.native
-    def done(onFulfilled: Null, onRejected: js.Function1[/* reason */ js.Any, js.Any]): Unit = js.native
+    def done(onFulfilled: Null, onRejected: js.Function1[/* reason */ Any, Any]): Unit = js.native
     def done(
       onFulfilled: Null,
-      onRejected: js.Function1[/* reason */ js.Any, js.Any],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onRejected: js.Function1[/* reason */ Any, Any],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Unit = js.native
-    def done(onFulfilled: Null, onRejected: Null, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Unit = js.native
-    def done(onFulfilled: Null, onRejected: Unit, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Unit = js.native
-    def done(onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, js.Any]): Unit = js.native
+    def done(onFulfilled: Null, onRejected: Null, onProgress: js.Function1[/* progress */ Any, Any]): Unit = js.native
+    def done(onFulfilled: Null, onRejected: Unit, onProgress: js.Function1[/* progress */ Any, Any]): Unit = js.native
+    def done(onFulfilled: Unit, onRejected: js.Function1[/* reason */ Any, Any]): Unit = js.native
     def done(
       onFulfilled: Unit,
-      onRejected: js.Function1[/* reason */ js.Any, js.Any],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onRejected: js.Function1[/* reason */ Any, Any],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Unit = js.native
-    def done(onFulfilled: Unit, onRejected: Null, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Unit = js.native
-    def done(onFulfilled: Unit, onRejected: Unit, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Unit = js.native
+    def done(onFulfilled: Unit, onRejected: Null, onProgress: js.Function1[/* progress */ Any, Any]): Unit = js.native
+    def done(onFulfilled: Unit, onRejected: Unit, onProgress: js.Function1[/* progress */ Any, Any]): Unit = js.native
     
     /**
       * Alias for catch() (for non-ES5 browsers)
       */
-    def fail[U](onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]]): Promise[U] = js.native
+    def fail[U](onRejected: js.Function1[/* reason */ Any, IWhenable[U]]): Promise[U] = js.native
     
     /**
       * Returns a promise for the result of calling a function, with the given array of arguments. Essentially equivalent to
@@ -109,7 +106,7 @@ object mod {
       *     return f.apply(undefined, args);
       * });
       */
-    def fapply[U](args: js.Array[js.Any]): Promise[U] = js.native
+    def fapply[U](args: js.Array[Any]): Promise[U] = js.native
     
     /**
       * Returns a promise for the result of calling a function, with the given variadic arguments. Has the same return
@@ -128,12 +125,12 @@ object mod {
       *     console.error("Couldn't sync to the cloud", error);
       * });
       */
-    def fcall[U](args: js.Any*): Promise[U] = js.native
+    def fcall[U](args: Any*): Promise[U] = js.native
     
     /**
       * Alias for finally() (for non-ES5 browsers)
       */
-    def fin(finallyCallback: js.Function0[js.Any]): Promise[T] = js.native
+    def fin(finallyCallback: js.Function0[Any]): Promise[T] = js.native
     
     /**
       * Like a finally clause, allows you to observe either the fulfillment or rejection of a promise, but to do so
@@ -144,7 +141,7 @@ object mod {
       * until the promise returned from callback is finished. Furthermore, if the returned promise rejects, that
       * rejection will be passed down the chain instead of the previous result.
       */
-    def `finally`(finallyCallback: js.Function0[js.Any]): Promise[T] = js.native
+    def `finally`(finallyCallback: js.Function0[Any]): Promise[T] = js.native
     
     /**
       * Returns a promise to get the named property of an object. Essentially equivalent to
@@ -167,7 +164,7 @@ object mod {
       * Returns a promise for the result of calling the named method of an object with the given variadic arguments.
       * The object itself is this in the function, just like a synchronous method call.
       */
-    def invoke[U](methodName: String, args: js.Any*): Promise[U] = js.native
+    def invoke[U](methodName: String, args: Any*): Promise[U] = js.native
     
     /**
       * Returns whether a given promise is in the fulfilled state. When the static version is used on non-promises, the
@@ -200,7 +197,7 @@ object mod {
       * when/if promise becomes rejected, or as callback(null, fulfillmentValue) when/if promise becomes fulfilled.
       * If callback is not a function, simply returns promise.
       */
-    def nodeify(callback: js.Function2[/* reason */ js.Any, /* value */ js.Any, Unit]): Promise[T] = js.native
+    def nodeify(callback: js.Function2[/* reason */ Any, /* value */ Any, Unit]): Promise[T] = js.native
     
     /**
       * Returns a promise for the result of calling the named method of an object with the given array of arguments.
@@ -209,31 +206,31 @@ object mod {
       * @example
       * promise.then(function (o) { return o[methodName].apply(o, args); });
       */
-    def post[U](methodName: String, args: js.Array[js.Any]): Promise[U] = js.native
+    def post[U](methodName: String, args: js.Array[Any]): Promise[U] = js.native
     
     /**
       * A sugar method, equivalent to promise.then(undefined, undefined, onProgress).
       */
-    def progress(onProgress: js.Function1[/* progress */ js.Any, js.Any]): Promise[T] = js.native
+    def progress(onProgress: js.Function1[/* progress */ Any, Any]): Promise[T] = js.native
     
-    def set[U](propertyName: String, value: js.Any): Promise[U] = js.native
+    def set[U](propertyName: String, value: Any): Promise[U] = js.native
     
     /**
       * Like then, but "spreads" the array into a variadic fulfillment handler. If any of the promises in the array are
       * rejected, instead calls onRejected with the first rejected promise's rejection reason.
       * This is especially useful in conjunction with all
       */
-    def spread[U](onFulfill: js.Function1[/* repeated */ js.Any, IWhenable[U]]): Promise[U] = js.native
+    def spread[U](onFulfill: js.Function1[/* repeated */ Any, IWhenable[U]]): Promise[U] = js.native
     def spread[U](
-      onFulfill: js.Function1[/* repeated */ js.Any, IWhenable[U]],
-      onReject: js.Function1[/* reason */ js.Any, IWhenable[U]]
+      onFulfill: js.Function1[/* repeated */ Any, IWhenable[U]],
+      onReject: js.Function1[/* reason */ Any, IWhenable[U]]
     ): Promise[U] = js.native
     
     /**
       * Attaches a handler that will observe the value of the promise when it becomes fulfilled, returning a promise for
       * that same value, perhaps deferred but not replaced by the promise returned by the onFulfilled handler.
       */
-    def tap(onFulfilled: js.Function1[/* value */ T, js.Any]): Promise[T] = js.native
+    def tap(onFulfilled: js.Function1[/* value */ T, Any]): Promise[T] = js.native
     
     /**
       * The then method from the Promises/A+ specification, with an additional progress handler.
@@ -242,45 +239,45 @@ object mod {
     def `then`[U](onFulfill: js.Function1[/* value */ T, IWhenable[U]]): Promise[U] = js.native
     def `then`[U](
       onFulfill: js.Function1[/* value */ T, IWhenable[U]],
-      onReject: js.Function1[/* error */ js.Any, IWhenable[U]]
+      onReject: js.Function1[/* error */ Any, IWhenable[U]]
     ): Promise[U] = js.native
     def `then`[U](
       onFulfill: js.Function1[/* value */ T, IWhenable[U]],
-      onReject: js.Function1[/* error */ js.Any, IWhenable[U]],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onReject: js.Function1[/* error */ Any, IWhenable[U]],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = js.native
     def `then`[U](
       onFulfill: js.Function1[/* value */ T, IWhenable[U]],
       onReject: Null,
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = js.native
     def `then`[U](
       onFulfill: js.Function1[/* value */ T, IWhenable[U]],
       onReject: Unit,
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = js.native
-    def `then`[U](onFulfill: Null, onReject: js.Function1[/* error */ js.Any, IWhenable[U]]): Promise[U] = js.native
+    def `then`[U](onFulfill: Null, onReject: js.Function1[/* error */ Any, IWhenable[U]]): Promise[U] = js.native
     def `then`[U](
       onFulfill: Null,
-      onReject: js.Function1[/* error */ js.Any, IWhenable[U]],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onReject: js.Function1[/* error */ Any, IWhenable[U]],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = js.native
-    def `then`[U](onFulfill: Null, onReject: Null, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Promise[U] = js.native
-    def `then`[U](onFulfill: Null, onReject: Unit, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Promise[U] = js.native
-    def `then`[U](onFulfill: Unit, onReject: js.Function1[/* error */ js.Any, IWhenable[U]]): Promise[U] = js.native
+    def `then`[U](onFulfill: Null, onReject: Null, onProgress: js.Function1[/* progress */ Any, Any]): Promise[U] = js.native
+    def `then`[U](onFulfill: Null, onReject: Unit, onProgress: js.Function1[/* progress */ Any, Any]): Promise[U] = js.native
+    def `then`[U](onFulfill: Unit, onReject: js.Function1[/* error */ Any, IWhenable[U]]): Promise[U] = js.native
     def `then`[U](
       onFulfill: Unit,
-      onReject: js.Function1[/* error */ js.Any, IWhenable[U]],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onReject: js.Function1[/* error */ Any, IWhenable[U]],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U] = js.native
-    def `then`[U](onFulfill: Unit, onReject: Null, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Promise[U] = js.native
-    def `then`[U](onFulfill: Unit, onReject: Unit, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Promise[U] = js.native
+    def `then`[U](onFulfill: Unit, onReject: Null, onProgress: js.Function1[/* progress */ Any, Any]): Promise[U] = js.native
+    def `then`[U](onFulfill: Unit, onReject: Unit, onProgress: js.Function1[/* progress */ Any, Any]): Promise[U] = js.native
     
     /**
       * A sugar method, equivalent to promise.then(function () { throw reason; }).
       */
     def thenReject[U](): Promise[U] = js.native
-    def thenReject[U](reason: js.Any): Promise[U] = js.native
+    def thenReject[U](reason: Any): Promise[U] = js.native
     
     /**
       * A sugar method, equivalent to promise.then(function () { return value; }).
@@ -294,50 +291,50 @@ object mod {
     @JSName("then")
     def then_UV[U, V](
       onFulfill: js.Function1[/* value */ T, IWhenable[U]],
-      onReject: js.Function1[/* error */ js.Any, IWhenable[V]]
+      onReject: js.Function1[/* error */ Any, IWhenable[V]]
     ): Promise[U | V] = js.native
     @JSName("then")
     def then_UV[U, V](
       onFulfill: js.Function1[/* value */ T, IWhenable[U]],
-      onReject: js.Function1[/* error */ js.Any, IWhenable[V]],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onReject: js.Function1[/* error */ Any, IWhenable[V]],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U | V] = js.native
     @JSName("then")
     def then_UV[U, V](
       onFulfill: js.Function1[/* value */ T, IWhenable[U]],
       onReject: Null,
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U | V] = js.native
     @JSName("then")
     def then_UV[U, V](
       onFulfill: js.Function1[/* value */ T, IWhenable[U]],
       onReject: Unit,
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U | V] = js.native
     @JSName("then")
-    def then_UV[U, V](onFulfill: Null, onReject: js.Function1[/* error */ js.Any, IWhenable[V]]): Promise[U | V] = js.native
+    def then_UV[U, V](onFulfill: Null, onReject: js.Function1[/* error */ Any, IWhenable[V]]): Promise[U | V] = js.native
     @JSName("then")
     def then_UV[U, V](
       onFulfill: Null,
-      onReject: js.Function1[/* error */ js.Any, IWhenable[V]],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onReject: js.Function1[/* error */ Any, IWhenable[V]],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U | V] = js.native
     @JSName("then")
-    def then_UV[U, V](onFulfill: Null, onReject: Null, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Promise[U | V] = js.native
+    def then_UV[U, V](onFulfill: Null, onReject: Null, onProgress: js.Function1[/* progress */ Any, Any]): Promise[U | V] = js.native
     @JSName("then")
-    def then_UV[U, V](onFulfill: Null, onReject: Unit, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Promise[U | V] = js.native
+    def then_UV[U, V](onFulfill: Null, onReject: Unit, onProgress: js.Function1[/* progress */ Any, Any]): Promise[U | V] = js.native
     @JSName("then")
-    def then_UV[U, V](onFulfill: Unit, onReject: js.Function1[/* error */ js.Any, IWhenable[V]]): Promise[U | V] = js.native
+    def then_UV[U, V](onFulfill: Unit, onReject: js.Function1[/* error */ Any, IWhenable[V]]): Promise[U | V] = js.native
     @JSName("then")
     def then_UV[U, V](
       onFulfill: Unit,
-      onReject: js.Function1[/* error */ js.Any, IWhenable[V]],
-      onProgress: js.Function1[/* progress */ js.Any, js.Any]
+      onReject: js.Function1[/* error */ Any, IWhenable[V]],
+      onProgress: js.Function1[/* progress */ Any, Any]
     ): Promise[U | V] = js.native
     @JSName("then")
-    def then_UV[U, V](onFulfill: Unit, onReject: Null, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Promise[U | V] = js.native
+    def then_UV[U, V](onFulfill: Unit, onReject: Null, onProgress: js.Function1[/* progress */ Any, Any]): Promise[U | V] = js.native
     @JSName("then")
-    def then_UV[U, V](onFulfill: Unit, onReject: Unit, onProgress: js.Function1[/* progress */ js.Any, js.Any]): Promise[U | V] = js.native
+    def then_UV[U, V](onFulfill: Unit, onReject: Unit, onProgress: js.Function1[/* progress */ Any, Any]): Promise[U | V] = js.native
     
     /**
       * Returns a promise that will have the same result as promise, except that if promise is not fulfilled or rejected
@@ -354,8 +351,8 @@ object mod {
     def apply[T](
       resolver: js.Function3[
           /* resolve */ js.Function1[/* val */ js.UndefOr[IWhenable[T]], Unit], 
-          /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
-          /* notify */ js.Function1[/* progress */ js.Any, Unit], 
+          /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
+          /* notify */ js.Function1[/* progress */ Any, Unit], 
           Unit
         ]
     ): Promise[T] = js.native
@@ -383,7 +380,7 @@ object mod {
     ]
   ): Promise[js.Tuple6[A, B, C, D, E, F]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple6[A, B, C, D, E, F]]]
   
-  inline def async[T](generatorFunction: js.Any): js.Function1[/* repeated */ js.Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+  inline def async[T](generatorFunction: Any): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
   
   inline def defer[T](): Deferred[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Deferred[T]]
   
@@ -391,80 +388,80 @@ object mod {
   inline def delay[T](promiseOrValue: T, ms: Double): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(promiseOrValue.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   inline def delay[T](promiseOrValue: Promise[T], ms: Double): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(promiseOrValue.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   
-  inline def denodeify[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+  inline def denodeify[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
   
-  inline def fbind[T](method: js.Function1[/* repeated */ js.Any, IWhenable[T]], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fbind")(method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+  inline def fbind[T](method: js.Function1[/* repeated */ Any, IWhenable[T]], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fbind")(List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
   
-  inline def fcall[T](method: js.Function1[/* repeated */ js.Any, T], args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fcall")(method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def fcall[T](method: js.Function1[/* repeated */ Any, T], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fcall")(List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
   
-  inline def invoke[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def invoke[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
   
-  inline def isFulfilled(promise: Promise[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFulfilled")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFulfilled(promise: Promise[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFulfilled")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isPending(promiseOrObject: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPending")(promiseOrObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isPending(promiseOrObject: Promise[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPending")(promiseOrObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPending(promiseOrObject: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPending")(promiseOrObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPending(promiseOrObject: Promise[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPending")(promiseOrObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isPromise(`object`: js.Any): /* is q.q.Promise<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is q.q.Promise<any> */ Boolean]
+  inline def isPromise(`object`: Any): /* is q.q.Promise<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is q.q.Promise<any> */ Boolean]
   
-  inline def isPromiseAlike(`object`: js.Any): /* is q.q.IPromise<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromiseAlike")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is q.q.IPromise<any> */ Boolean]
+  inline def isPromiseAlike(`object`: Any): /* is q.q.IPromise<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromiseAlike")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is q.q.IPromise<any> */ Boolean]
   
-  inline def isRejected(promise: Promise[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejected")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRejected(promise: Promise[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejected")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("q", "longStackSupport")
   @js.native
   def longStackSupport: Boolean = js.native
   inline def longStackSupport_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longStackSupport")(x.asInstanceOf[js.Any])
   
-  inline def mcall[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mcall")(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def mcall[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mcall")((List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
   
-  inline def nbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], thisArg: js.Any, args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nbind")(nodeFunction.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+  inline def nbind[T](nodeFunction: js.Function1[/* repeated */ Any, Any], thisArg: Any, args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nbind")((List(nodeFunction.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
   
   inline def nearer[T](promise: Promise[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("nearer")(promise.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def nextTick(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def nextTick(callback: js.Function1[/* repeated */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def nfapply[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Array[js.Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfapply")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def nfapply[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: js.Array[Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfapply")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   
-  inline def nfbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfbind")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+  inline def nfbind[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nfbind")(List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
   
-  inline def nfcall[T](nodeFunction: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfcall")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def nfcall[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nfcall")(List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
   
-  inline def ninvoke[T](nodeModule: js.Any, functionName: String, args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ninvoke")(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def ninvoke[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ninvoke")((List(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
   
   inline def noConflict(): Typeofq = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Typeofq]
   
-  inline def npost[T](nodeModule: js.Any, functionName: String, args: js.Array[js.Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("npost")(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def npost[T](nodeModule: Any, functionName: String, args: js.Array[Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("npost")(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   
-  inline def nsend[T](nodeModule: js.Any, functionName: String, args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nsend")(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def nsend[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nsend")((List(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
   
   @JSImport("q", "onerror")
   @js.native
-  def onerror: js.Function1[/* reason */ js.Any, Unit] = js.native
-  inline def onerror_=(x: js.Function1[/* reason */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onerror")(x.asInstanceOf[js.Any])
+  def onerror: js.Function1[/* reason */ Any, Unit] = js.native
+  inline def onerror_=(x: js.Function1[/* reason */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onerror")(x.asInstanceOf[js.Any])
   
-  inline def promised[T](callback: js.Function1[/* repeated */ js.Any, T]): js.Function1[/* repeated */ js.Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promised")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Promise[T]]]
+  inline def promised[T](callback: js.Function1[/* repeated */ Any, T]): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promised")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
   
   inline def race[T](promises: js.Array[IWhenable[T]]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
   
   inline def reject[T](): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")().asInstanceOf[Promise[T]]
-  inline def reject[T](reason: js.Any): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+  inline def reject[T](reason: Any): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
   
   inline def resolve[T](): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Promise[T]]
   inline def resolve[T](`object`: IWhenable[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(`object`.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
   
-  inline def send[T](obj: js.Any, functionName: String, args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def send[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")((List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
   
   inline def spread[T, U](promises: js.Array[IWhenable[T]], onFulfilled: js.Function1[/* repeated */ T, IWhenable[U]]): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("spread")(promises.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
   inline def spread[T, U](
     promises: js.Array[IWhenable[T]],
     onFulfilled: js.Function1[/* repeated */ T, IWhenable[U]],
-    onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]]
+    onRejected: js.Function1[/* reason */ Any, IWhenable[U]]
   ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("spread")(promises.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
   
   inline def timeout[T](promise: Promise[T], ms: Double): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   inline def timeout[T](promise: Promise[T], ms: Double, message: String): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
   
-  inline def `try`[T](method: js.Function1[/* repeated */ js.Any, T], args: js.Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+  inline def `try`[T](method: js.Function1[/* repeated */ Any, T], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
   
   inline def when(): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")().asInstanceOf[Promise[Unit]]
   inline def when[T](value: IWhenable[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
@@ -472,25 +469,25 @@ object mod {
   inline def when[T, U](
     value: IWhenable[T],
     onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
-    onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]]
+    onRejected: js.Function1[/* reason */ Any, IWhenable[U]]
   ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
   inline def when[T, U](
     value: IWhenable[T],
     onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
-    onRejected: js.Function1[/* reason */ js.Any, IWhenable[U]],
-    onProgress: js.Function1[/* progress */ js.Any, js.Any]
+    onRejected: js.Function1[/* reason */ Any, IWhenable[U]],
+    onProgress: js.Function1[/* progress */ Any, Any]
   ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
   inline def when[T, U](
     value: IWhenable[T],
     onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
     onRejected: Null,
-    onProgress: js.Function1[/* progress */ js.Any, js.Any]
+    onProgress: js.Function1[/* progress */ Any, Any]
   ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
   inline def when[T, U](
     value: IWhenable[T],
     onFulfilled: js.Function1[/* val */ T, IWhenable[U]],
     onRejected: Unit,
-    onProgress: js.Function1[/* progress */ js.Any, js.Any]
+    onProgress: js.Function1[/* progress */ Any, Any]
   ): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any], onRejected.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
   
   @js.native
@@ -500,13 +497,13 @@ object mod {
       * Returns a function suitable for passing to a Node.js API. That is, it has a signature (err, result) and will
       * reject deferred.promise with err if err is given, or fulfill it with result if that is given.
       */
-    def makeNodeResolver(): js.Function2[/* reason */ js.Any, /* value */ T, Unit] = js.native
+    def makeNodeResolver(): js.Function2[/* reason */ Any, /* value */ T, Unit] = js.native
     
     /**
       * Calling notify with a value causes promise to be notified of progress with that value. That is, any onProgress
       * handlers registered with promise or promises derived from promise will be called with the progress value.
       */
-    def notify(value: js.Any): Unit = js.native
+    def notify(value: Any): Unit = js.native
     
     var promise: Promise[T] = js.native
     
@@ -514,7 +511,7 @@ object mod {
       * Calling reject with a reason causes promise to be rejected with that reason.
       */
     def reject(): Unit = js.native
-    def reject(reason: js.Any): Unit = js.native
+    def reject(reason: Any): Unit = js.native
     
     /**
       * Calling resolve with a pending promise causes promise to wait on the passed promise, becoming fulfilled with its
@@ -533,7 +530,7 @@ object mod {
   
   trait PromiseState[T] extends StObject {
     
-    var reason: js.UndefOr[js.Any] = js.undefined
+    var reason: js.UndefOr[Any] = js.undefined
     
     var state: fulfilled | rejected | pending
     
@@ -548,7 +545,7 @@ object mod {
     
     extension [Self <: PromiseState[?], T](x: Self & PromiseState[T]) {
       
-      inline def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
       inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       

@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Exit code from a tool execution.
-  */
 trait SchemaToolExitCode extends StObject {
   
   /**
-    * Tool execution exit code. A value of 0 means that the execution was
-    * successful.  - In response: always set - In create/update request: always
-    * set
+    * Tool execution exit code. A value of 0 means that the execution was successful. - In response: always set - In create/update request: always set
     */
-  var number: js.UndefOr[Double] = js.undefined
+  var number: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaToolExitCode {
   
@@ -26,6 +21,8 @@ object SchemaToolExitCode {
   extension [Self <: SchemaToolExitCode](x: Self) {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    
+    inline def setNumberNull: Self = StObject.set(x, "number", null)
     
     inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }

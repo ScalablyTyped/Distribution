@@ -35,7 +35,7 @@ object BaseLayerView2DProperties {
     
     inline def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
-    inline def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+    inline def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value*))
     
     inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

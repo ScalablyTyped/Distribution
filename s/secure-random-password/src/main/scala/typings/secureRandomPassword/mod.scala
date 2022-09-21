@@ -100,7 +100,7 @@ object mod {
       
       inline def setCharactersUndefined: Self = StObject.set(x, "characters", js.undefined)
       
-      inline def setCharactersVarargs(value: (RandomPasswordCharactersSet | String)*): Self = StObject.set(x, "characters", js.Array(value :_*))
+      inline def setCharactersVarargs(value: (RandomPasswordCharactersSet | String)*): Self = StObject.set(x, "characters", js.Array(value*))
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

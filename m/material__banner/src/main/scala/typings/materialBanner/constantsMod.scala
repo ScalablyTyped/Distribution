@@ -1,5 +1,11 @@
 package typings.materialBanner
 
+import typings.materialBanner.materialBannerNumbers.`0`
+import typings.materialBanner.materialBannerNumbers.`1`
+import typings.materialBanner.materialBannerNumbers.`2`
+import typings.materialDom.focusTrapMod.FocusOptions
+import typings.materialDom.focusTrapMod.FocusTrap
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,6 +68,11 @@ object constantsMod {
     @JSImport("@material/banner/constants", "events")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("@material/banner/constants", "events.ACTION_CLICKED")
+    @js.native
+    def ACTION_CLICKED: String = js.native
+    inline def ACTION_CLICKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTION_CLICKED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/banner/constants", "events.CLOSED")
     @js.native
@@ -128,6 +139,38 @@ object constantsMod {
     inline def TEXT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT")(x.asInstanceOf[js.Any])
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.materialBanner.materialBannerNumbers.`0`
+    - typings.materialBanner.materialBannerNumbers.`1`
+    - typings.materialBanner.materialBannerNumbers.`2`
+  */
+  trait Action extends StObject
+  object Action {
+    
+    inline def PRIMARY: `0` = 0.asInstanceOf[`0`]
+    
+    inline def SECONDARY: `1` = 1.asInstanceOf[`1`]
+    
+    inline def UNKNOWN: `2` = 2.asInstanceOf[`2`]
+  }
+  
+  trait MDCBannerActionEventDetail extends StObject {
+    
+    var action: Action
+  }
+  object MDCBannerActionEventDetail {
+    
+    inline def apply(action: Action): MDCBannerActionEventDetail = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MDCBannerActionEventDetail]
+    }
+    
+    extension [Self <: MDCBannerActionEventDetail](x: Self) {
+      
+      inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait MDCBannerCloseEventDetail extends StObject {
     
     var reason: CloseReason
@@ -144,4 +187,6 @@ object constantsMod {
       inline def setReason(value: CloseReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
+  
+  type MDCBannerFocusTrapFactory = js.Function2[/* element */ HTMLElement, /* options */ FocusOptions, FocusTrap]
 }

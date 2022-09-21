@@ -34,7 +34,7 @@ object PaintStyle {
     
     inline def setPaints(value: js.Array[Paint]): Self = StObject.set(x, "paints", value.asInstanceOf[js.Any])
     
-    inline def setPaintsVarargs(value: Paint*): Self = StObject.set(x, "paints", js.Array(value :_*))
+    inline def setPaintsVarargs(value: Paint*): Self = StObject.set(x, "paints", js.Array(value*))
     
     inline def setType(value: PAINT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

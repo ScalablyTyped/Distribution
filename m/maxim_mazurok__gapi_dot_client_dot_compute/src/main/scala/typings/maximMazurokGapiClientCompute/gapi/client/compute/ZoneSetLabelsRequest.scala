@@ -18,7 +18,7 @@ trait ZoneSetLabelsRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ZoneSetLabelsRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ZoneSetLabelsRequest & TopLevel[Any]
   ] = js.undefined
 }
 object ZoneSetLabelsRequest {
@@ -37,7 +37,7 @@ object ZoneSetLabelsRequest {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ZoneSetLabelsRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.ZoneSetLabelsRequest & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

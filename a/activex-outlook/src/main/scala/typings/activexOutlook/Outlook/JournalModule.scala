@@ -19,7 +19,7 @@ trait JournalModule extends StObject {
   /* private */ @JSName("Outlook.JournalModule_typekey")
   var OutlookDotJournalModule_typekey: JournalModule
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -36,7 +36,7 @@ object JournalModule {
     NavigationGroups: NavigationGroups,
     NavigationModuleType: OlNavigationModuleType,
     OutlookDotJournalModule_typekey: JournalModule,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     Session: NameSpace,
     Visible: Boolean
@@ -60,7 +60,7 @@ object JournalModule {
     
     inline def setOutlookDotJournalModule_typekey(value: JournalModule): Self = StObject.set(x, "Outlook.JournalModule_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

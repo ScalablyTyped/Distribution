@@ -10,6 +10,12 @@ trait SetDiscoverTargetsRequest extends StObject {
     * Whether to discover available targets.
     */
   var discover: Boolean
+  
+  /**
+    * Only targets matching filter will be attached. If `discover` is false,
+    * `filter` must be omitted or empty.
+    */
+  var filter: js.UndefOr[TargetFilter] = js.undefined
 }
 object SetDiscoverTargetsRequest {
   
@@ -21,5 +27,11 @@ object SetDiscoverTargetsRequest {
   extension [Self <: SetDiscoverTargetsRequest](x: Self) {
     
     inline def setDiscover(value: Boolean): Self = StObject.set(x, "discover", value.asInstanceOf[js.Any])
+    
+    inline def setFilter(value: TargetFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFilterVarargs(value: FilterEntry*): Self = StObject.set(x, "filter", js.Array(value*))
   }
 }

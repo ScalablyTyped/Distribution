@@ -2,7 +2,6 @@ package typings.riotRoute
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +39,7 @@ object libMod extends Shortcut {
       */
     def base(): Unit = js.native
     def base(arg: String): Unit = js.native
-    def base(arg: RegExp): Unit = js.native
+    def base(arg: js.RegExp): Unit = js.native
     
     /**
       * Returns a new routing context.
@@ -58,9 +57,9 @@ object libMod extends Shortcut {
       * @param parser
       * @param secondParser
       */
-    def parser(parser: js.Function1[/* path */ String, js.Array[js.Any]]): Unit = js.native
+    def parser(parser: js.Function1[/* path */ String, js.Array[Any]]): Unit = js.native
     def parser(
-      parser: js.Function1[/* path */ String, js.Array[js.Any]],
+      parser: js.Function1[/* path */ String, js.Array[Any]],
       secondParser: js.Function2[/* path */ String, /* filter */ String, js.UndefOr[js.Array[String]]]
     ): Unit = js.native
     

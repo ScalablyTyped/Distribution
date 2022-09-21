@@ -10,10 +10,10 @@ object viewComfyMod {
   
   @JSImport("material-ui/svg-icons/image/view-comfy", JSImport.Default)
   @js.native
-  class default () extends ImageViewComfy
+  open class default () extends ImageViewComfy
   
   @JSImport("material-ui/svg-icons/image/view-comfy", "ImageViewComfy")
   @js.native
-  class ImageViewComfy ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageViewComfy ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,6 +1,6 @@
 package typings.opentelemetryCore
 
-import typings.node.NodeJS.Timer
+import typings.node.timersMod.global.NodeJS.Timer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

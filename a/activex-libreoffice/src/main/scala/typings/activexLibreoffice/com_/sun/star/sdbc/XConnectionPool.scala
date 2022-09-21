@@ -20,7 +20,7 @@ object XConnectionPool {
     getConnectionWithInfo: (String, SeqEquiv[PropertyValue]) => XConnection,
     getDriverByURL: String => XDriver,
     getLoginTimeout: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLoginTimeout: Double => Unit
   ): XConnectionPool = {

@@ -43,7 +43,7 @@ object GetAggregateDiscoveredResourceCountsResponse {
     
     inline def setGroupedResourceCountsUndefined: Self = StObject.set(x, "GroupedResourceCounts", js.undefined)
     
-    inline def setGroupedResourceCountsVarargs(value: GroupedResourceCount*): Self = StObject.set(x, "GroupedResourceCounts", js.Array(value :_*))
+    inline def setGroupedResourceCountsVarargs(value: GroupedResourceCount*): Self = StObject.set(x, "GroupedResourceCounts", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

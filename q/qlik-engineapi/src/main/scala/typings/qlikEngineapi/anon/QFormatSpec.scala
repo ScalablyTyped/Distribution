@@ -24,6 +24,6 @@ object QFormatSpec {
     
     inline def setQPreview(value: js.Array[IDataRecord]): Self = StObject.set(x, "qPreview", value.asInstanceOf[js.Any])
     
-    inline def setQPreviewVarargs(value: IDataRecord*): Self = StObject.set(x, "qPreview", js.Array(value :_*))
+    inline def setQPreviewVarargs(value: IDataRecord*): Self = StObject.set(x, "qPreview", js.Array(value*))
   }
 }

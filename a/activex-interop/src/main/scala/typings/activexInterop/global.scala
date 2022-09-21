@@ -15,7 +15,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Enumerator")
   @js.native
-  class Enumerator[T] protected ()
+  open class Enumerator[T] protected ()
     extends StObject
        with typings.activexInterop.Enumerator[T] {
     def this(collection: Item[T]) = this()
@@ -57,7 +57,7 @@ object global {
     */
   @JSGlobal("SafeArray")
   @js.native
-  /* private */ class SafeArray[T] ()
+  /* private */ open class SafeArray[T] ()
     extends StObject
        with typings.activexInterop.SafeArray[T] {
     
@@ -68,7 +68,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("VBArray")
   @js.native
-  class VBArray[T] protected ()
+  open class VBArray[T] protected ()
     extends StObject
        with typings.activexInterop.VBArray[T] {
     def this(safeArray: typings.activexInterop.SafeArray[T]) = this()
@@ -81,7 +81,7 @@ object global {
   /** Automation date (VT_DATE) */
   @JSGlobal("VarDate")
   @js.native
-  /* private */ class VarDate ()
+  /* private */ open class VarDate ()
     extends StObject
        with typings.activexInterop.VarDate {
     

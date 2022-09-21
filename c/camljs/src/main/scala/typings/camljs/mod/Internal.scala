@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("camljs", "Internal")
 @js.native
-class Internal () extends StObject
+open class Internal () extends StObject
 object Internal {
   
   @JSImport("camljs", "Internal")
@@ -15,6 +15,9 @@ object Internal {
   
   /* static member */
   inline def createExpression(): IFieldExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createExpression")().asInstanceOf[IFieldExpression]
+  
+  /* static member */
+  inline def createQuery(): IQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")().asInstanceOf[IQuery]
   
   /* static member */
   inline def createRawQuery(xml: String): IRawQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("createRawQuery")(xml.asInstanceOf[js.Any]).asInstanceOf[IRawQuery]

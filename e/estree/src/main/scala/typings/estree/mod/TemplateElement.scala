@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TemplateElement
   extends StObject
-     with BaseNode
-     with Node {
+     with BaseNode {
   
   var tail: Boolean
   

@@ -33,10 +33,10 @@ object websequencediagramsStrings {
   inline def `modern-blue`: `modern-blue` = "modern-blue".asInstanceOf[`modern-blue`]
   
   @js.native
-  sealed trait mscgen
+  sealed trait mscgenComma
     extends StObject
        with Style
-  inline def mscgen: mscgen = "mscgen".asInstanceOf[mscgen]
+  inline def mscgenComma: mscgenComma = "mscgen,".asInstanceOf[mscgenComma]
   
   @js.native
   sealed trait napkin

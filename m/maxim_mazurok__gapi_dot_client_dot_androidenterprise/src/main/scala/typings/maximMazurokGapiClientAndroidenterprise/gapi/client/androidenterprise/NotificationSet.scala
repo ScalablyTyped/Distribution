@@ -29,6 +29,6 @@ object NotificationSet {
     
     inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    inline def setNotificationVarargs(value: Notification*): Self = StObject.set(x, "notification", js.Array(value :_*))
+    inline def setNotificationVarargs(value: Notification*): Self = StObject.set(x, "notification", js.Array(value*))
   }
 }

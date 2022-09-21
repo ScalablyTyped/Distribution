@@ -9,12 +9,12 @@ object regionMod {
   
   @JSImport("@antv/component/lib/annotation/region", JSImport.Default)
   @js.native
-  class default () extends RegionAnnotation
+  open class default () extends RegionAnnotation
   
   @js.native
   trait RegionAnnotation
     extends typings.antvComponent.groupComponentMod.default[RegionAnnotationCfg] {
     
-    /* private */ var renderRegion: js.Any = js.native
+    /* private */ var renderRegion: Any = js.native
   }
 }

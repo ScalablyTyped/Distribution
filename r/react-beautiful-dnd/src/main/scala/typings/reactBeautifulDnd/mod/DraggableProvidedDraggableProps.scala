@@ -13,7 +13,7 @@ trait DraggableProvidedDraggableProps extends StObject {
   
   var `data-rbd-draggable-id`: String
   
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[js.Any]] = js.undefined
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[Any]] = js.undefined
   
   // inline style
   var style: js.UndefOr[DraggingStyle | NotDraggingStyle] = js.undefined
@@ -33,7 +33,7 @@ object DraggableProvidedDraggableProps {
     
     inline def `setData-rbd-draggable-id`(value: String): Self = StObject.set(x, "data-rbd-draggable-id", value.asInstanceOf[js.Any])
     
-    inline def setOnTransitionEnd(value: TransitionEvent[js.Any] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+    inline def setOnTransitionEnd(value: TransitionEvent[Any] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
     
     inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     

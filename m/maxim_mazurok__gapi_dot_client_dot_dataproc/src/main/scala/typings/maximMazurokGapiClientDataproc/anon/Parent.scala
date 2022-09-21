@@ -30,9 +30,9 @@ trait Parent extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The resource name of the region or location, as described in https://cloud.google.com/apis/design/resource_names. For
-    * projects.regions.workflowTemplates,instantiateinline, the resource name of the region has the following format: projects/{project_id}/regions/{region} For
-    * projects.locations.workflowTemplates.instantiateinline, the resource name of the location has the following format: projects/{project_id}/locations/{location}
+    * Required. The resource name of the region or location, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates.create, the
+    * resource name of the region has the following format: projects/{project_id}/regions/{region} For projects.locations.workflowTemplates.create, the resource name of the location
+    * has the following format: projects/{project_id}/locations/{location}
     */
   var parent: String
   
@@ -41,13 +41,6 @@ trait Parent extends StObject {
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Optional. A tag that prevents multiple concurrent workflow instances with the same tag from running. This mitigates risk of concurrent instances started due to retries.It is
-    * recommended to always set this value to a UUID (https://en.wikipedia.org/wiki/Universally_unique_identifier).The tag must contain only letters (a-z, A-Z), numbers (0-9),
-    * underscores (_), and hyphens (-). The maximum length is 40 characters.
-    */
-  var requestId: js.UndefOr[String] = js.undefined
   
   /** Request body */
   var resource: WorkflowTemplate
@@ -104,10 +97,6 @@ object Parent {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
-    
-    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
     inline def setResource(value: WorkflowTemplate): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

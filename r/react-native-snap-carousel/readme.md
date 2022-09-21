@@ -10,14 +10,12 @@ Swiper/carousel component for React Native with previews, multiple layouts, para
 | ------------------ | :-------------: |
 | Full name          | react-native-snap-carousel |
 | Keywords           | react, native, carousel, slider, swiper, flatlist, scrollview, parallax, images, infinite, scroll, scrolling, items, edge, snap, card, cards, stack, deck, tinder, android, ios, snapping, component, rtl |
-| # releases         | 14 |
-| # dependents       | 45 |
-| # downloads        | 4556853 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 632017.6666666666 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/archriss/react-native-snap-carousel)
-- [Bugs](https://github.com/archriss/react-native-snap-carousel/issues)
 - [Npm](https://www.npmjs.com/package/react-native-snap-carousel)
     
 

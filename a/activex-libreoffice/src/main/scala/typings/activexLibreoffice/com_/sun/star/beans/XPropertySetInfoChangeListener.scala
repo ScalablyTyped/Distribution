@@ -25,7 +25,7 @@ object XPropertySetInfoChangeListener {
     acquire: () => Unit,
     disposing: EventObject => Unit,
     propertySetInfoChange: PropertySetInfoChangeEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPropertySetInfoChangeListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), propertySetInfoChange = js.Any.fromFunction1(propertySetInfoChange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

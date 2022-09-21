@@ -22,6 +22,6 @@ object BatchGetContactGroupsResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: ContactGroupResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: ContactGroupResponse*): Self = StObject.set(x, "responses", js.Array(value*))
   }
 }

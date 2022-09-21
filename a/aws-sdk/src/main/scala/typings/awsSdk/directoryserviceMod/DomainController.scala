@@ -29,7 +29,7 @@ trait DomainController extends StObject {
   /**
     * Specifies when the domain controller was created.
     */
-  var LaunchTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LaunchTime] = js.undefined
+  var LaunchTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the domain controller.
@@ -39,7 +39,7 @@ trait DomainController extends StObject {
   /**
     * The date and time that the status was last updated.
     */
-  var StatusLastUpdatedDateTime: js.UndefOr[LastUpdatedDateTime] = js.undefined
+  var StatusLastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the domain controller state.
@@ -81,13 +81,13 @@ object DomainController {
     
     inline def setDomainControllerIdUndefined: Self = StObject.set(x, "DomainControllerId", js.undefined)
     
-    inline def setLaunchTime(value: LaunchTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
+    inline def setLaunchTime(value: js.Date): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
     
     inline def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
     
     inline def setStatus(value: DomainControllerStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    inline def setStatusLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "StatusLastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setStatusLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "StatusLastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setStatusLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StatusLastUpdatedDateTime", js.undefined)
     

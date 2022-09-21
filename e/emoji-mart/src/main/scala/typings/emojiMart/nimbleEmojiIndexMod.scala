@@ -11,7 +11,7 @@ object nimbleEmojiIndexMod {
   
   @JSImport("emoji-mart/dist-es/utils/emoji-index/nimble-emoji-index", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with NimbleEmojiIndex {
     def this(data: Data) = this()
@@ -56,7 +56,7 @@ object nimbleEmojiIndexMod {
       
       inline def setEmoticons(value: js.Array[String]): Self = StObject.set(x, "emoticons", value.asInstanceOf[js.Any])
       
-      inline def setEmoticonsVarargs(value: String*): Self = StObject.set(x, "emoticons", js.Array(value :_*))
+      inline def setEmoticonsVarargs(value: String*): Self = StObject.set(x, "emoticons", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -110,7 +110,7 @@ object nimbleEmojiIndexMod {
       
       inline def setEmoticonsUndefined: Self = StObject.set(x, "emoticons", js.undefined)
       
-      inline def setEmoticonsVarargs(value: String*): Self = StObject.set(x, "emoticons", js.Array(value :_*))
+      inline def setEmoticonsVarargs(value: String*): Self = StObject.set(x, "emoticons", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -122,13 +122,13 @@ object nimbleEmojiIndexMod {
       
       inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setShort_names(value: js.Array[String]): Self = StObject.set(x, "short_names", value.asInstanceOf[js.Any])
       
-      inline def setShort_namesVarargs(value: String*): Self = StObject.set(x, "short_names", js.Array(value :_*))
+      inline def setShort_namesVarargs(value: String*): Self = StObject.set(x, "short_names", js.Array(value*))
     }
   }
   

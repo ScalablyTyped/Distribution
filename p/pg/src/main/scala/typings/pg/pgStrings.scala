@@ -1,5 +1,6 @@
 package typings.pg
 
+import typings.pg.typeOverridesMod.TypeFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +14,12 @@ object pgStrings {
   @js.native
   sealed trait array extends StObject
   inline def array: array = "array".asInstanceOf[array]
+  
+  @js.native
+  sealed trait binary
+    extends StObject
+       with TypeFormat
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
   sealed trait connect extends StObject
@@ -45,4 +52,10 @@ object pgStrings {
   @js.native
   sealed trait row extends StObject
   inline def row: row = "row".asInstanceOf[row]
+  
+  @js.native
+  sealed trait text
+    extends StObject
+       with TypeFormat
+  inline def text: text = "text".asInstanceOf[text]
 }

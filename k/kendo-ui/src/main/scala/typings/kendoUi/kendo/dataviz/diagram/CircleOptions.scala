@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CircleOptions extends StObject {
   
-  var center: js.UndefOr[js.Any] = js.undefined
+  var center: js.UndefOr[Any] = js.undefined
   
   var fill: js.UndefOr[String | CircleFill] = js.undefined
   
@@ -25,7 +25,7 @@ object CircleOptions {
   
   extension [Self <: CircleOptions](x: Self) {
     
-    inline def setCenter(value: js.Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     

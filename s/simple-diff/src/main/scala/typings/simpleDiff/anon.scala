@@ -24,11 +24,11 @@ object anon {
       
       inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
-      inline def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value :_*))
+      inline def setNewPathVarargs(value: (String | Double)*): Self = StObject.set(x, "newPath", js.Array(value*))
       
       inline def setOldPath(value: Path): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
       
-      inline def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value :_*))
+      inline def setOldPathVarargs(value: (String | Double)*): Self = StObject.set(x, "oldPath", js.Array(value*))
     }
   }
 }

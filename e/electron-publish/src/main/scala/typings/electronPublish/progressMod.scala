@@ -34,30 +34,30 @@ object progressMod {
       *   - `:rate` rate of ticks per second
       */
     def this(format: String) = this()
-    def this(format: String, options: js.Any) = this()
+    def this(format: String, options: Any) = this()
     
-    /* private */ var chars: js.Any = js.native
+    /* private */ var chars: Any = js.native
     
-    /* private */ var complete: js.Any = js.native
+    /* private */ var complete: Any = js.native
     
-    /* private */ var current: js.Any = js.native
+    /* private */ var current: Any = js.native
     
     def currentAmount_=(value: Double): Unit = js.native
     
-    /* private */ val format: js.Any = js.native
+    /* private */ val format: Any = js.native
     
     /**
       * "interrupt" the progress bar and write a message above it.
       */
     def interrupt(message: String): Unit = js.native
     
-    /* private */ var lastDraw: js.Any = js.native
+    /* private */ var lastDraw: Any = js.native
     
     def render(): Unit = js.native
     
-    /* private */ var start: js.Any = js.native
+    /* private */ var start: Any = js.native
     
-    /* private */ var stream: js.Any = js.native
+    /* private */ val stream: Any = js.native
     
     def terminate(): Unit = js.native
     
@@ -66,7 +66,7 @@ object progressMod {
       */
     def tick(delta: Double): Unit = js.native
     
-    /* private */ var tokens: js.Any = js.native
+    /* private */ var tokens: Any = js.native
     
     var total: Double = js.native
     
@@ -81,19 +81,19 @@ object progressMod {
       */
     def update(ratio: Double): Unit = js.native
     
-    /* private */ var width: js.Any = js.native
+    /* private */ val width: Any = js.native
   }
   
   @JSImport("electron-publish/out/progress", "ProgressCallback")
   @js.native
-  class ProgressCallback protected () extends StObject {
+  open class ProgressCallback protected () extends StObject {
     def this(progressBar: ProgressBar) = this()
     
-    /* private */ var nextUpdate: js.Any = js.native
+    /* private */ var nextUpdate: Any = js.native
     
-    /* private */ val progressBar: js.Any = js.native
+    /* private */ val progressBar: Any = js.native
     
-    /* private */ var start: js.Any = js.native
+    /* private */ var start: Any = js.native
     
     def update(transferred: Double, total: Double): Unit = js.native
   }

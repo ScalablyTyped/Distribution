@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.HitArea")
 @js.native
-class HitArea protected ()
+open class HitArea protected ()
   extends StObject
      with typings.heremaps.H.map.HitArea {
   /**

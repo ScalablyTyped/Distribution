@@ -14,7 +14,6 @@ import typings.nodeVagrant.nodeVagrantStrings.`up-progress`
 import typings.nodeVagrant.nodeVagrantStrings.progress
 import typings.nodeVagrant.nodeVagrantStrings.stderr
 import typings.nodeVagrant.nodeVagrantStrings.stdout
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,7 +87,7 @@ object mod {
   
   type Callback = js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[String], Unit]
   
-  type ErrorArg = Error | String | Null
+  type ErrorArg = js.Error | String | Null
   
   @js.native
   trait Machine extends MachineEmitter {
@@ -115,9 +114,9 @@ object mod {
     def halt(cb: Callback): Unit = js.native
     
     def init(args: String, cb: Callback): Unit = js.native
-    def init(args: String, config: js.Any, cb: Callback): Unit = js.native
+    def init(args: String, config: Any, cb: Callback): Unit = js.native
     def init(args: js.Array[String], cb: Callback): Unit = js.native
-    def init(args: js.Array[String], config: js.Any, cb: Callback): Unit = js.native
+    def init(args: js.Array[String], config: Any, cb: Callback): Unit = js.native
     
     var opts: Cwd = js.native
     
@@ -164,6 +163,7 @@ object mod {
   @js.native
   trait MachineEmitter extends EventEmitter {
     
+    def on(event: stdout | stderr | `up-progress`, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_progress(
       event: progress,
@@ -175,12 +175,6 @@ object mod {
           Unit
         ]
     ): this.type = js.native
-    @JSName("on")
-    def on_stderr(event: stderr, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_stdout(event: stdout, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_upprogress(event: `up-progress`, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
   }
   
   @js.native

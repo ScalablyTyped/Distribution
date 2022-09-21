@@ -101,6 +101,14 @@ trait SearchOptions extends StObject {
   val clickAnalytics: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Enable word segmentation (also called decompounding) at query time for
+    * compatible languages. For example, this turns the Dutch query
+    * "spaanplaatbehang" into "spaan plaat behang" to retrieve more relevant
+    * results.
+    */
+  val decompoundQuery: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * List of attributes on which you want to disable the exact ranking criterion.
     */
   val disableExactOnAttributes: js.UndefOr[js.Array[String]] = js.undefined
@@ -127,6 +135,16 @@ trait SearchOptions extends StObject {
   val enablePersonalization: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Whether this search should use Dynamic Re-Ranking.
+    * @link https://www.algolia.com/doc/guides/algolia-ai/re-ranking/
+    *
+    * Note: You need to turn on Dynamic Re-Ranking on your index for it to have an effect on
+    * your search results. You can do this through the Re-Ranking page on the dashboard.
+    * This parameter is only used to turn off Dynamic Re-Ranking (with false) at search time.
+    */
+  val enableReRanking: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Whether rules should be globally enabled.
     */
   val enableRules: js.UndefOr[Boolean] = js.undefined
@@ -135,6 +153,11 @@ trait SearchOptions extends StObject {
     * Controls how the exact ranking criterion is computed when the query contains only one word.
     */
   val exactOnSingleWordQuery: js.UndefOr[attribute | none | word] = js.undefined
+  
+  /**
+    * Enriches the API’s response with meta-information as to how the query was processed.
+    */
+  val explain: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     *  Filter hits by facet value.
@@ -184,7 +207,7 @@ trait SearchOptions extends StObject {
   /**
     * Search inside a rectangular area (in geo coordinates).
     */
-  val insideBoundingBox: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
+  val insideBoundingBox: js.UndefOr[js.Array[js.Array[Double]] | String] = js.undefined
   
   /**
     * Search inside a polygon (in geo coordinates).
@@ -277,9 +300,26 @@ trait SearchOptions extends StObject {
   val query: js.UndefOr[String] = js.undefined
   
   /**
+    * Sets the languages to be used by language-specific settings and functionalities such as ignorePlurals, removeStopWords, and CJK word-detection.
+    */
+  val queryLanguages: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
     * Controls if and how query words are interpreted as prefixes.
     */
   val queryType: js.UndefOr[prefixLast | prefixAll | prefixNone] = js.undefined
+  
+  /**
+    * When Dynamic Re-Ranking is enabled, only records that match these filters will be impacted by Dynamic Re-Ranking.
+    */
+  val reRankingApplyFilter: js.UndefOr[String | (js.Array[js.Array[String] | String]) | Null] = js.undefined
+  
+  /**
+    * The relevancy threshold to apply to search in a virtual index [0-100]. A Bigger
+    * value means fewer, but more relevant results, smaller value means more, but
+    * less relevant results.
+    */
+  val relevancyStrictness: js.UndefOr[Double] = js.undefined
   
   /**
     * Removes stop (common) words from the query before executing it.
@@ -377,7 +417,7 @@ object SearchOptions {
     
     inline def setAdvancedSyntaxFeaturesUndefined: Self = StObject.set(x, "advancedSyntaxFeatures", js.undefined)
     
-    inline def setAdvancedSyntaxFeaturesVarargs(value: (exactPhrase | excludeWords)*): Self = StObject.set(x, "advancedSyntaxFeatures", js.Array(value :_*))
+    inline def setAdvancedSyntaxFeaturesVarargs(value: (exactPhrase | excludeWords)*): Self = StObject.set(x, "advancedSyntaxFeatures", js.Array(value*))
     
     inline def setAdvancedSyntaxUndefined: Self = StObject.set(x, "advancedSyntax", js.undefined)
     
@@ -389,7 +429,7 @@ object SearchOptions {
     
     inline def setAlternativesAsExactUndefined: Self = StObject.set(x, "alternativesAsExact", js.undefined)
     
-    inline def setAlternativesAsExactVarargs(value: (ignorePlurals | singleWordSynonym | multiWordsSynonym)*): Self = StObject.set(x, "alternativesAsExact", js.Array(value :_*))
+    inline def setAlternativesAsExactVarargs(value: (ignorePlurals | singleWordSynonym | multiWordsSynonym)*): Self = StObject.set(x, "alternativesAsExact", js.Array(value*))
     
     inline def setAnalytics(value: Boolean): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     
@@ -397,7 +437,7 @@ object SearchOptions {
     
     inline def setAnalyticsTagsUndefined: Self = StObject.set(x, "analyticsTags", js.undefined)
     
-    inline def setAnalyticsTagsVarargs(value: String*): Self = StObject.set(x, "analyticsTags", js.Array(value :_*))
+    inline def setAnalyticsTagsVarargs(value: String*): Self = StObject.set(x, "analyticsTags", js.Array(value*))
     
     inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
     
@@ -413,7 +453,7 @@ object SearchOptions {
     
     inline def setAroundPrecisionUndefined: Self = StObject.set(x, "aroundPrecision", js.undefined)
     
-    inline def setAroundPrecisionVarargs(value: From*): Self = StObject.set(x, "aroundPrecision", js.Array(value :_*))
+    inline def setAroundPrecisionVarargs(value: From*): Self = StObject.set(x, "aroundPrecision", js.Array(value*))
     
     inline def setAroundRadius(value: Double | all): Self = StObject.set(x, "aroundRadius", value.asInstanceOf[js.Any])
     
@@ -423,35 +463,39 @@ object SearchOptions {
     
     inline def setAttributesToHighlightUndefined: Self = StObject.set(x, "attributesToHighlight", js.undefined)
     
-    inline def setAttributesToHighlightVarargs(value: String*): Self = StObject.set(x, "attributesToHighlight", js.Array(value :_*))
+    inline def setAttributesToHighlightVarargs(value: String*): Self = StObject.set(x, "attributesToHighlight", js.Array(value*))
     
     inline def setAttributesToRetrieve(value: js.Array[String]): Self = StObject.set(x, "attributesToRetrieve", value.asInstanceOf[js.Any])
     
     inline def setAttributesToRetrieveUndefined: Self = StObject.set(x, "attributesToRetrieve", js.undefined)
     
-    inline def setAttributesToRetrieveVarargs(value: String*): Self = StObject.set(x, "attributesToRetrieve", js.Array(value :_*))
+    inline def setAttributesToRetrieveVarargs(value: String*): Self = StObject.set(x, "attributesToRetrieve", js.Array(value*))
     
     inline def setAttributesToSnippet(value: js.Array[String]): Self = StObject.set(x, "attributesToSnippet", value.asInstanceOf[js.Any])
     
     inline def setAttributesToSnippetUndefined: Self = StObject.set(x, "attributesToSnippet", js.undefined)
     
-    inline def setAttributesToSnippetVarargs(value: String*): Self = StObject.set(x, "attributesToSnippet", js.Array(value :_*))
+    inline def setAttributesToSnippetVarargs(value: String*): Self = StObject.set(x, "attributesToSnippet", js.Array(value*))
     
     inline def setClickAnalytics(value: Boolean): Self = StObject.set(x, "clickAnalytics", value.asInstanceOf[js.Any])
     
     inline def setClickAnalyticsUndefined: Self = StObject.set(x, "clickAnalytics", js.undefined)
     
+    inline def setDecompoundQuery(value: Boolean): Self = StObject.set(x, "decompoundQuery", value.asInstanceOf[js.Any])
+    
+    inline def setDecompoundQueryUndefined: Self = StObject.set(x, "decompoundQuery", js.undefined)
+    
     inline def setDisableExactOnAttributes(value: js.Array[String]): Self = StObject.set(x, "disableExactOnAttributes", value.asInstanceOf[js.Any])
     
     inline def setDisableExactOnAttributesUndefined: Self = StObject.set(x, "disableExactOnAttributes", js.undefined)
     
-    inline def setDisableExactOnAttributesVarargs(value: String*): Self = StObject.set(x, "disableExactOnAttributes", js.Array(value :_*))
+    inline def setDisableExactOnAttributesVarargs(value: String*): Self = StObject.set(x, "disableExactOnAttributes", js.Array(value*))
     
     inline def setDisableTypoToleranceOnAttributes(value: js.Array[String]): Self = StObject.set(x, "disableTypoToleranceOnAttributes", value.asInstanceOf[js.Any])
     
     inline def setDisableTypoToleranceOnAttributesUndefined: Self = StObject.set(x, "disableTypoToleranceOnAttributes", js.undefined)
     
-    inline def setDisableTypoToleranceOnAttributesVarargs(value: String*): Self = StObject.set(x, "disableTypoToleranceOnAttributes", js.Array(value :_*))
+    inline def setDisableTypoToleranceOnAttributesVarargs(value: String*): Self = StObject.set(x, "disableTypoToleranceOnAttributes", js.Array(value*))
     
     inline def setDistinct(value: Boolean | Double): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
     
@@ -465,6 +509,10 @@ object SearchOptions {
     
     inline def setEnablePersonalizationUndefined: Self = StObject.set(x, "enablePersonalization", js.undefined)
     
+    inline def setEnableReRanking(value: Boolean): Self = StObject.set(x, "enableReRanking", value.asInstanceOf[js.Any])
+    
+    inline def setEnableReRankingUndefined: Self = StObject.set(x, "enableReRanking", js.undefined)
+    
     inline def setEnableRules(value: Boolean): Self = StObject.set(x, "enableRules", value.asInstanceOf[js.Any])
     
     inline def setEnableRulesUndefined: Self = StObject.set(x, "enableRules", js.undefined)
@@ -473,11 +521,17 @@ object SearchOptions {
     
     inline def setExactOnSingleWordQueryUndefined: Self = StObject.set(x, "exactOnSingleWordQuery", js.undefined)
     
+    inline def setExplain(value: js.Array[String]): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
+    
+    inline def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
+    
+    inline def setExplainVarargs(value: String*): Self = StObject.set(x, "explain", js.Array(value*))
+    
     inline def setFacetFilters(value: String | (js.Array[js.Array[String] | String])): Self = StObject.set(x, "facetFilters", value.asInstanceOf[js.Any])
     
     inline def setFacetFiltersUndefined: Self = StObject.set(x, "facetFilters", js.undefined)
     
-    inline def setFacetFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "facetFilters", js.Array(value :_*))
+    inline def setFacetFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "facetFilters", js.Array(value*))
     
     inline def setFacetingAfterDistinct(value: Boolean): Self = StObject.set(x, "facetingAfterDistinct", value.asInstanceOf[js.Any])
     
@@ -487,7 +541,7 @@ object SearchOptions {
     
     inline def setFacetsUndefined: Self = StObject.set(x, "facets", js.undefined)
     
-    inline def setFacetsVarargs(value: String*): Self = StObject.set(x, "facets", js.Array(value :_*))
+    inline def setFacetsVarargs(value: String*): Self = StObject.set(x, "facets", js.Array(value*))
     
     inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
@@ -513,19 +567,19 @@ object SearchOptions {
     
     inline def setIgnorePluralsUndefined: Self = StObject.set(x, "ignorePlurals", js.undefined)
     
-    inline def setIgnorePluralsVarargs(value: String*): Self = StObject.set(x, "ignorePlurals", js.Array(value :_*))
+    inline def setIgnorePluralsVarargs(value: String*): Self = StObject.set(x, "ignorePlurals", js.Array(value*))
     
-    inline def setInsideBoundingBox(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "insideBoundingBox", value.asInstanceOf[js.Any])
+    inline def setInsideBoundingBox(value: js.Array[js.Array[Double]] | String): Self = StObject.set(x, "insideBoundingBox", value.asInstanceOf[js.Any])
     
     inline def setInsideBoundingBoxUndefined: Self = StObject.set(x, "insideBoundingBox", js.undefined)
     
-    inline def setInsideBoundingBoxVarargs(value: js.Array[Double]*): Self = StObject.set(x, "insideBoundingBox", js.Array(value :_*))
+    inline def setInsideBoundingBoxVarargs(value: js.Array[Double]*): Self = StObject.set(x, "insideBoundingBox", js.Array(value*))
     
     inline def setInsidePolygon(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "insidePolygon", value.asInstanceOf[js.Any])
     
     inline def setInsidePolygonUndefined: Self = StObject.set(x, "insidePolygon", js.undefined)
     
-    inline def setInsidePolygonVarargs(value: js.Array[Double]*): Self = StObject.set(x, "insidePolygon", js.Array(value :_*))
+    inline def setInsidePolygonVarargs(value: js.Array[Double]*): Self = StObject.set(x, "insidePolygon", js.Array(value*))
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
@@ -559,13 +613,13 @@ object SearchOptions {
     
     inline def setNaturalLanguagesUndefined: Self = StObject.set(x, "naturalLanguages", js.undefined)
     
-    inline def setNaturalLanguagesVarargs(value: String*): Self = StObject.set(x, "naturalLanguages", js.Array(value :_*))
+    inline def setNaturalLanguagesVarargs(value: String*): Self = StObject.set(x, "naturalLanguages", js.Array(value*))
     
     inline def setNumericFilters(value: String | (js.Array[js.Array[String] | String])): Self = StObject.set(x, "numericFilters", value.asInstanceOf[js.Any])
     
     inline def setNumericFiltersUndefined: Self = StObject.set(x, "numericFilters", js.undefined)
     
-    inline def setNumericFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "numericFilters", js.Array(value :_*))
+    inline def setNumericFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "numericFilters", js.Array(value*))
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
@@ -575,13 +629,13 @@ object SearchOptions {
     
     inline def setOptionalFiltersUndefined: Self = StObject.set(x, "optionalFilters", js.undefined)
     
-    inline def setOptionalFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "optionalFilters", js.Array(value :_*))
+    inline def setOptionalFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "optionalFilters", js.Array(value*))
     
     inline def setOptionalWords(value: String | js.Array[String]): Self = StObject.set(x, "optionalWords", value.asInstanceOf[js.Any])
     
     inline def setOptionalWordsUndefined: Self = StObject.set(x, "optionalWords", js.undefined)
     
-    inline def setOptionalWordsVarargs(value: String*): Self = StObject.set(x, "optionalWords", js.Array(value :_*))
+    inline def setOptionalWordsVarargs(value: String*): Self = StObject.set(x, "optionalWords", js.Array(value*))
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
@@ -597,17 +651,35 @@ object SearchOptions {
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
+    inline def setQueryLanguages(value: js.Array[String]): Self = StObject.set(x, "queryLanguages", value.asInstanceOf[js.Any])
+    
+    inline def setQueryLanguagesUndefined: Self = StObject.set(x, "queryLanguages", js.undefined)
+    
+    inline def setQueryLanguagesVarargs(value: String*): Self = StObject.set(x, "queryLanguages", js.Array(value*))
+    
     inline def setQueryType(value: prefixLast | prefixAll | prefixNone): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
     inline def setQueryTypeUndefined: Self = StObject.set(x, "queryType", js.undefined)
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
+    inline def setReRankingApplyFilter(value: String | (js.Array[js.Array[String] | String])): Self = StObject.set(x, "reRankingApplyFilter", value.asInstanceOf[js.Any])
+    
+    inline def setReRankingApplyFilterNull: Self = StObject.set(x, "reRankingApplyFilter", null)
+    
+    inline def setReRankingApplyFilterUndefined: Self = StObject.set(x, "reRankingApplyFilter", js.undefined)
+    
+    inline def setReRankingApplyFilterVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "reRankingApplyFilter", js.Array(value*))
+    
+    inline def setRelevancyStrictness(value: Double): Self = StObject.set(x, "relevancyStrictness", value.asInstanceOf[js.Any])
+    
+    inline def setRelevancyStrictnessUndefined: Self = StObject.set(x, "relevancyStrictness", js.undefined)
+    
     inline def setRemoveStopWords(value: Boolean | js.Array[String]): Self = StObject.set(x, "removeStopWords", value.asInstanceOf[js.Any])
     
     inline def setRemoveStopWordsUndefined: Self = StObject.set(x, "removeStopWords", js.undefined)
     
-    inline def setRemoveStopWordsVarargs(value: String*): Self = StObject.set(x, "removeStopWords", js.Array(value :_*))
+    inline def setRemoveStopWordsVarargs(value: String*): Self = StObject.set(x, "removeStopWords", js.Array(value*))
     
     inline def setRemoveWordsIfNoResults(value: none | lastWords | firstWords | allOptional): Self = StObject.set(x, "removeWordsIfNoResults", value.asInstanceOf[js.Any])
     
@@ -621,7 +693,7 @@ object SearchOptions {
     
     inline def setResponseFieldsUndefined: Self = StObject.set(x, "responseFields", js.undefined)
     
-    inline def setResponseFieldsVarargs(value: String*): Self = StObject.set(x, "responseFields", js.Array(value :_*))
+    inline def setResponseFieldsVarargs(value: String*): Self = StObject.set(x, "responseFields", js.Array(value*))
     
     inline def setRestrictHighlightAndSnippetArrays(value: Boolean): Self = StObject.set(x, "restrictHighlightAndSnippetArrays", value.asInstanceOf[js.Any])
     
@@ -631,13 +703,13 @@ object SearchOptions {
     
     inline def setRestrictSearchableAttributesUndefined: Self = StObject.set(x, "restrictSearchableAttributes", js.undefined)
     
-    inline def setRestrictSearchableAttributesVarargs(value: String*): Self = StObject.set(x, "restrictSearchableAttributes", js.Array(value :_*))
+    inline def setRestrictSearchableAttributesVarargs(value: String*): Self = StObject.set(x, "restrictSearchableAttributes", js.Array(value*))
     
     inline def setRuleContexts(value: js.Array[String]): Self = StObject.set(x, "ruleContexts", value.asInstanceOf[js.Any])
     
     inline def setRuleContextsUndefined: Self = StObject.set(x, "ruleContexts", js.undefined)
     
-    inline def setRuleContextsVarargs(value: String*): Self = StObject.set(x, "ruleContexts", js.Array(value :_*))
+    inline def setRuleContextsVarargs(value: String*): Self = StObject.set(x, "ruleContexts", js.Array(value*))
     
     inline def setSimilarQuery(value: String): Self = StObject.set(x, "similarQuery", value.asInstanceOf[js.Any])
     
@@ -663,7 +735,7 @@ object SearchOptions {
     
     inline def setTagFiltersUndefined: Self = StObject.set(x, "tagFilters", js.undefined)
     
-    inline def setTagFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "tagFilters", js.Array(value :_*))
+    inline def setTagFiltersVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "tagFilters", js.Array(value*))
     
     inline def setTypoTolerance(value: Boolean | min | strict): Self = StObject.set(x, "typoTolerance", value.asInstanceOf[js.Any])
     

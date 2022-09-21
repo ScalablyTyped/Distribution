@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Pane")
 @js.native
-/* private */ class Pane ()
+/* private */ open class Pane ()
   extends StObject
      with typings.activexExcel.Excel.Pane

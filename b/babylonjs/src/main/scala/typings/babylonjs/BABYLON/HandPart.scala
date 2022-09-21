@@ -1,53 +1,60 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.babylonjsStrings.index
-import typings.babylonjs.babylonjsStrings.little
-import typings.babylonjs.babylonjsStrings.middle
-import typings.babylonjs.babylonjsStrings.ring
-import typings.babylonjs.babylonjsStrings.thumb
-import typings.babylonjs.babylonjsStrings.wrist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.babylonjs.babylonjsStrings.wrist
-  - typings.babylonjs.babylonjsStrings.thumb
-  - typings.babylonjs.babylonjsStrings.index
-  - typings.babylonjs.babylonjsStrings.middle
-  - typings.babylonjs.babylonjsStrings.ring
-  - typings.babylonjs.babylonjsStrings.little
-*/
-trait HandPart extends StObject
-object HandPart {
+@js.native
+sealed trait HandPart extends StObject
+@JSGlobal("BABYLON.HandPart")
+@js.native
+object HandPart extends StObject {
   
   /**
     * HandPart - Index finger
     */
-  inline def INDEX: index = "index".asInstanceOf[index]
+  @js.native
+  sealed trait INDEX
+    extends StObject
+       with HandPart
   
   /**
     * HandPart - Little finger
     */
-  inline def LITTLE: little = "little".asInstanceOf[little]
+  @js.native
+  sealed trait LITTLE
+    extends StObject
+       with HandPart
   
   /**
     * HandPart - Middle finger
     */
-  inline def MIDDLE: middle = "middle".asInstanceOf[middle]
+  @js.native
+  sealed trait MIDDLE
+    extends StObject
+       with HandPart
   
   /**
     * HandPart - Ring finger
     */
-  inline def RING: ring = "ring".asInstanceOf[ring]
+  @js.native
+  sealed trait RING
+    extends StObject
+       with HandPart
   
   /**
-    * HandPart - The THumb
+    * HandPart - The thumb
     */
-  inline def THUMB: thumb = "thumb".asInstanceOf[thumb]
+  @js.native
+  sealed trait THUMB
+    extends StObject
+       with HandPart
   
   /**
     * HandPart - Wrist
     */
-  inline def WRIST: wrist = "wrist".asInstanceOf[wrist]
+  @js.native
+  sealed trait WRIST
+    extends StObject
+       with HandPart
 }

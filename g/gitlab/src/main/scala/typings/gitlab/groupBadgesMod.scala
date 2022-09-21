@@ -10,7 +10,7 @@ object groupBadgesMod {
   
   @JSImport("gitlab/dist/types/core/services/GroupBadges", "GroupBadges")
   @js.native
-  class GroupBadges protected () extends ResourceBadges {
+  open class GroupBadges protected () extends ResourceBadges {
     def this(options: BaseServiceOptions) = this()
   }
 }

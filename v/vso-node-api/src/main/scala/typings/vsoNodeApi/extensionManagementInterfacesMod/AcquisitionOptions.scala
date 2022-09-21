@@ -24,7 +24,7 @@ trait AcquisitionOptions extends StObject {
   /**
     * Additional properties which can be added to the request.
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * The target that this options refer to
@@ -37,7 +37,7 @@ object AcquisitionOptions {
     defaultOperation: AcquisitionOperation,
     itemId: String,
     operations: js.Array[AcquisitionOperation],
-    properties: js.Any,
+    properties: Any,
     target: String
   ): AcquisitionOptions = {
     val __obj = js.Dynamic.literal(defaultOperation = defaultOperation.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
@@ -52,9 +52,9 @@ object AcquisitionOptions {
     
     inline def setOperations(value: js.Array[AcquisitionOperation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    inline def setOperationsVarargs(value: AcquisitionOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: AcquisitionOperation*): Self = StObject.set(x, "operations", js.Array(value*))
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

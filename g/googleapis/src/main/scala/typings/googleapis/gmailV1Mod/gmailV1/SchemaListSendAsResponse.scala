@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for the ListSendAs method.
-  */
 trait SchemaListSendAsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListSendAsResponse {
     
     inline def setSendAsUndefined: Self = StObject.set(x, "sendAs", js.undefined)
     
-    inline def setSendAsVarargs(value: SchemaSendAs*): Self = StObject.set(x, "sendAs", js.Array(value :_*))
+    inline def setSendAsVarargs(value: SchemaSendAs*): Self = StObject.set(x, "sendAs", js.Array(value*))
   }
 }

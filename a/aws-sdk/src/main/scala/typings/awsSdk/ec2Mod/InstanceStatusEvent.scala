@@ -24,17 +24,17 @@ trait InstanceStatusEvent extends StObject {
   /**
     * The latest scheduled end time for the event.
     */
-  var NotAfter: js.UndefOr[DateTime] = js.undefined
+  var NotAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The earliest scheduled start time for the event.
     */
-  var NotBefore: js.UndefOr[DateTime] = js.undefined
+  var NotBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The deadline for starting the event.
     */
-  var NotBeforeDeadline: js.UndefOr[DateTime] = js.undefined
+  var NotBeforeDeadline: js.UndefOr[js.Date] = js.undefined
 }
 object InstanceStatusEvent {
   
@@ -57,13 +57,13 @@ object InstanceStatusEvent {
     
     inline def setInstanceEventIdUndefined: Self = StObject.set(x, "InstanceEventId", js.undefined)
     
-    inline def setNotAfter(value: DateTime): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: js.Date): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
     inline def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
     
-    inline def setNotBefore(value: DateTime): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: js.Date): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
     
-    inline def setNotBeforeDeadline(value: DateTime): Self = StObject.set(x, "NotBeforeDeadline", value.asInstanceOf[js.Any])
+    inline def setNotBeforeDeadline(value: js.Date): Self = StObject.set(x, "NotBeforeDeadline", value.asInstanceOf[js.Any])
     
     inline def setNotBeforeDeadlineUndefined: Self = StObject.set(x, "NotBeforeDeadline", js.undefined)
     

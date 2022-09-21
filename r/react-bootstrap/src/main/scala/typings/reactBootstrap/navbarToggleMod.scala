@@ -13,19 +13,17 @@ object navbarToggleMod {
   
   @JSImport("react-bootstrap/lib/NavbarToggle", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[NavbarToggleProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[NavbarToggleProps, js.Object, Any]
   
-  @js.native
-  trait NavbarToggle
-    extends Component[NavbarToggleProps, js.Object, js.Any]
+  type NavbarToggle = Component[NavbarToggleProps, js.Object, Any]
   
   trait NavbarToggleProps
     extends StObject
        with HTMLProps[NavbarToggle] {
     
     @JSName("onClick")
-    var onClick_NavbarToggleProps: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
+    var onClick_NavbarToggleProps: js.UndefOr[MouseEventHandler[Any]] = js.undefined
   }
   object NavbarToggleProps {
     
@@ -36,7 +34,7 @@ object navbarToggleMod {
     
     extension [Self <: NavbarToggleProps](x: Self) {
       
-      inline def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }

@@ -82,9 +82,42 @@ object handlePropsMod {
     inline def START_=(x: start): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
   }
   
+  /* Inlined std.Pick<react.react.HTMLProps<std.HTMLSpanElement>, 'aria-label' | 'aria-labelledby'> */
+  trait HandleHtmlProps extends StObject {
+    
+    var `aria-label`: js.UndefOr[String] = js.undefined
+    
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
+  }
+  object HandleHtmlProps {
+    
+    inline def apply(): HandleHtmlProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HandleHtmlProps]
+    }
+    
+    extension [Self <: HandleHtmlProps](x: Self) {
+      
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+    }
+  }
+  
+  type HandleProps = IHandleProps
+  
   trait IHandleProps
     extends StObject
        with IProps {
+    
+    /**
+      * A limited subset of HTML props to apply to the rendered `<span>` element.
+      */
+    var htmlProps: js.UndefOr[HandleHtmlProps] = js.undefined
     
     /** Intent for the track segment immediately after this handle, taking priority over `intentBefore`. */
     var intentAfter: js.UndefOr[Intent] = js.undefined
@@ -94,6 +127,7 @@ object handlePropsMod {
     
     /**
       * How this handle interacts with other handles.
+      *
       * @default "lock"
       */
     var interactionKind: js.UndefOr[HandleInteractionKind] = js.undefined
@@ -116,6 +150,7 @@ object handlePropsMod {
     
     /**
       * Handle appearance type.
+      *
       * @default "full"
       */
     var `type`: js.UndefOr[HandleType] = js.undefined
@@ -131,6 +166,10 @@ object handlePropsMod {
     }
     
     extension [Self <: IHandleProps](x: Self) {
+      
+      inline def setHtmlProps(value: HandleHtmlProps): Self = StObject.set(x, "htmlProps", value.asInstanceOf[js.Any])
+      
+      inline def setHtmlPropsUndefined: Self = StObject.set(x, "htmlProps", js.undefined)
       
       inline def setIntentAfter(value: Intent): Self = StObject.set(x, "intentAfter", value.asInstanceOf[js.Any])
       

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@egjs/agent" : "2.4.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@egjs/agent" : "2.4.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

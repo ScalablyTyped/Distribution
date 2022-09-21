@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object attributesMod {
   
-  type Attributes = StringDictionary[js.Any]
+  type AttributeValue = String | Double | Boolean | (js.Array[js.UndefOr[Boolean | Double | Null | String]])
+  
+  type Attributes = StringDictionary[js.UndefOr[AttributeValue]]
 }

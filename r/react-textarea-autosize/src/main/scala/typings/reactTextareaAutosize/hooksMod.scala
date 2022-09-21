@@ -16,5 +16,5 @@ object hooksMod {
   
   inline def useComposedRef[T /* <: HTMLElement */](libRef: MutableRefObject[T | Null], userRef: UserRef[T]): js.Function1[/* instance */ T | Null, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useComposedRef")(libRef.asInstanceOf[js.Any], userRef.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* instance */ T | Null, Unit]]
   
-  inline def useWindowResizeListener(listener: js.Function1[/* event */ UIEvent, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowResizeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useWindowResizeListener(listener: js.Function1[/* event */ UIEvent, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindowResizeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -1,6 +1,5 @@
 package typings.paralleljs
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,5 +51,5 @@ trait Parallel[T] extends StObject {
     * @return Parallel instance.
     **/
   def `then`(success: js.Function1[/* data */ T, Unit]): Parallel[T] = js.native
-  def `then`(success: js.Function1[/* data */ T, Unit], fail: js.Function1[/* e */ Error, Unit]): Parallel[T] = js.native
+  def `then`(success: js.Function1[/* data */ T, Unit], fail: js.Function1[/* e */ js.Error, Unit]): Parallel[T] = js.native
 }

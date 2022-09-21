@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@mediapipe/face_mesh" : "0.4.1633559619"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@mediapipe/face_mesh" : "0.4.1633559619"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

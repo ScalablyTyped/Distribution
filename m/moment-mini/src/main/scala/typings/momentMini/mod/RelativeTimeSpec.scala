@@ -6,53 +6,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RelativeTimeSpec extends StObject {
   
-  var M: RelativeTimeSpecVal
+  var M: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var MM: RelativeTimeSpecVal
+  var MM: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var d: RelativeTimeSpecVal
+  var d: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var dd: RelativeTimeSpecVal
+  var dd: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var future: RelativeTimeFuturePastVal
+  var future: js.UndefOr[RelativeTimeFuturePastVal] = js.undefined
   
-  var h: RelativeTimeSpecVal
+  var h: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var hh: RelativeTimeSpecVal
+  var hh: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var m: RelativeTimeSpecVal
+  var m: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var mm: RelativeTimeSpecVal
+  var mm: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var past: RelativeTimeFuturePastVal
+  var past: js.UndefOr[RelativeTimeFuturePastVal] = js.undefined
   
-  var s: RelativeTimeSpecVal
+  var s: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var ss: RelativeTimeSpecVal
+  var ss: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var y: RelativeTimeSpecVal
+  var w: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var yy: RelativeTimeSpecVal
+  var ww: js.UndefOr[RelativeTimeSpecVal] = js.undefined
+  
+  var y: js.UndefOr[RelativeTimeSpecVal] = js.undefined
+  
+  var yy: js.UndefOr[RelativeTimeSpecVal] = js.undefined
 }
 object RelativeTimeSpec {
   
-  inline def apply(
-    M: RelativeTimeSpecVal,
-    MM: RelativeTimeSpecVal,
-    d: RelativeTimeSpecVal,
-    dd: RelativeTimeSpecVal,
-    future: RelativeTimeFuturePastVal,
-    h: RelativeTimeSpecVal,
-    hh: RelativeTimeSpecVal,
-    m: RelativeTimeSpecVal,
-    mm: RelativeTimeSpecVal,
-    past: RelativeTimeFuturePastVal,
-    s: RelativeTimeSpecVal,
-    ss: RelativeTimeSpecVal,
-    y: RelativeTimeSpecVal,
-    yy: RelativeTimeSpecVal
-  ): RelativeTimeSpec = {
-    val __obj = js.Dynamic.literal(M = M.asInstanceOf[js.Any], MM = MM.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], future = future.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], hh = hh.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], mm = mm.asInstanceOf[js.Any], past = past.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], ss = ss.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yy = yy.asInstanceOf[js.Any])
+  inline def apply(): RelativeTimeSpec = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelativeTimeSpec]
   }
   
@@ -64,15 +53,21 @@ object RelativeTimeSpec {
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "d", js.Any.fromFunction4(value))
     
+    inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+    
     inline def setDd(value: RelativeTimeSpecVal): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
     
     inline def setDdFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "dd", js.Any.fromFunction4(value))
     
+    inline def setDdUndefined: Self = StObject.set(x, "dd", js.undefined)
+    
     inline def setFuture(value: RelativeTimeFuturePastVal): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
     
     inline def setFutureFunction1(value: /* relTime */ String => String): Self = StObject.set(x, "future", js.Any.fromFunction1(value))
+    
+    inline def setFutureUndefined: Self = StObject.set(x, "future", js.undefined)
     
     inline def setH(value: RelativeTimeSpecVal): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
@@ -80,11 +75,15 @@ object RelativeTimeSpec {
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "h", js.Any.fromFunction4(value))
     
+    inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+    
     inline def setHh(value: RelativeTimeSpecVal): Self = StObject.set(x, "hh", value.asInstanceOf[js.Any])
     
     inline def setHhFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "hh", js.Any.fromFunction4(value))
+    
+    inline def setHhUndefined: Self = StObject.set(x, "hh", js.undefined)
     
     inline def setM(value: RelativeTimeSpecVal): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
     
@@ -98,9 +97,15 @@ object RelativeTimeSpec {
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "MM", js.Any.fromFunction4(value))
     
+    inline def setMMUndefined: Self = StObject.set(x, "MM", js.undefined)
+    
+    inline def setMUndefined: Self = StObject.set(x, "M", js.undefined)
+    
     inline def setPast(value: RelativeTimeFuturePastVal): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
     
     inline def setPastFunction1(value: /* relTime */ String => String): Self = StObject.set(x, "past", js.Any.fromFunction1(value))
+    
+    inline def setPastUndefined: Self = StObject.set(x, "past", js.undefined)
     
     inline def setS(value: RelativeTimeSpecVal): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
@@ -108,11 +113,31 @@ object RelativeTimeSpec {
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "s", js.Any.fromFunction4(value))
     
+    inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+    
     inline def setSs(value: RelativeTimeSpecVal): Self = StObject.set(x, "ss", value.asInstanceOf[js.Any])
     
     inline def setSsFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "ss", js.Any.fromFunction4(value))
+    
+    inline def setSsUndefined: Self = StObject.set(x, "ss", js.undefined)
+    
+    inline def setW(value: RelativeTimeSpecVal): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    
+    inline def setWFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = StObject.set(x, "w", js.Any.fromFunction4(value))
+    
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    
+    inline def setWw(value: RelativeTimeSpecVal): Self = StObject.set(x, "ww", value.asInstanceOf[js.Any])
+    
+    inline def setWwFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = StObject.set(x, "ww", js.Any.fromFunction4(value))
+    
+    inline def setWwUndefined: Self = StObject.set(x, "ww", js.undefined)
     
     inline def setY(value: RelativeTimeSpecVal): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
@@ -120,10 +145,14 @@ object RelativeTimeSpec {
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "y", js.Any.fromFunction4(value))
     
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    
     inline def setYy(value: RelativeTimeSpecVal): Self = StObject.set(x, "yy", value.asInstanceOf[js.Any])
     
     inline def setYyFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "yy", js.Any.fromFunction4(value))
+    
+    inline def setYyUndefined: Self = StObject.set(x, "yy", js.undefined)
   }
 }

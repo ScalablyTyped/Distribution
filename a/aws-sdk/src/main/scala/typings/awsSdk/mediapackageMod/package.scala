@@ -1,5 +1,7 @@
 package typings.awsSdk.mediapackageMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.ADS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.DATERANGE
   - java.lang.String
 */
-type AdMarkers = typings.awsSdk.mediapackageMod._AdMarkers | java.lang.String
+type AdMarkers = _AdMarkers | String
 
-type AdTriggers = js.Array[typings.awsSdk.mediapackageMod.AdTriggersElement]
+type AdTriggers = js.Array[AdTriggersElement]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SPLICE_INSERT
@@ -27,7 +29,7 @@ type AdTriggers = js.Array[typings.awsSdk.mediapackageMod.AdTriggersElement]
   - typings.awsSdk.awsSdkStrings.DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY
   - java.lang.String
 */
-type AdTriggersElement = typings.awsSdk.mediapackageMod._AdTriggersElement | java.lang.String
+type AdTriggersElement = _AdTriggersElement | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -36,32 +38,39 @@ type AdTriggersElement = typings.awsSdk.mediapackageMod._AdTriggersElement | jav
   - typings.awsSdk.awsSdkStrings.BOTH
   - java.lang.String
 */
-type AdsOnDeliveryRestrictions = typings.awsSdk.mediapackageMod._AdsOnDeliveryRestrictions | java.lang.String
+type AdsOnDeliveryRestrictions = _AdsOnDeliveryRestrictions | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SAMPLE_AES
+  - typings.awsSdk.awsSdkStrings.AES_CTR
+  - java.lang.String
+*/
+type CmafEncryptionMethod = _CmafEncryptionMethod | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AES_128
   - typings.awsSdk.awsSdkStrings.SAMPLE_AES
   - java.lang.String
 */
-type EncryptionMethod = typings.awsSdk.mediapackageMod._EncryptionMethod | java.lang.String
+type EncryptionMethod = _EncryptionMethod | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FULL
   - typings.awsSdk.awsSdkStrings.COMPACT
   - java.lang.String
 */
-type ManifestLayout = typings.awsSdk.mediapackageMod._ManifestLayout | java.lang.String
+type ManifestLayout = _ManifestLayout | String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALLOW
   - typings.awsSdk.awsSdkStrings.DENY
   - java.lang.String
 */
-type Origination = typings.awsSdk.mediapackageMod._Origination | java.lang.String
+type Origination = _Origination | String
 
-type PeriodTriggersElement = typings.awsSdk.awsSdkStrings.ADS | java.lang.String
+type PeriodTriggersElement = ADS | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -69,14 +78,41 @@ type PeriodTriggersElement = typings.awsSdk.awsSdkStrings.ADS | java.lang.String
   - typings.awsSdk.awsSdkStrings.VOD
   - java.lang.String
 */
-type PlaylistType = typings.awsSdk.mediapackageMod._PlaylistType | java.lang.String
+type PlaylistType = _PlaylistType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`PRESET-AUDIO-1`
+  - typings.awsSdk.awsSdkStrings.`PRESET-AUDIO-2`
+  - typings.awsSdk.awsSdkStrings.`PRESET-AUDIO-3`
+  - typings.awsSdk.awsSdkStrings.SHARED
+  - typings.awsSdk.awsSdkStrings.UNENCRYPTED
+  - java.lang.String
+*/
+type PresetSpeke20Audio = _PresetSpeke20Audio | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`PRESET-VIDEO-1`
+  - typings.awsSdk.awsSdkStrings.`PRESET-VIDEO-2`
+  - typings.awsSdk.awsSdkStrings.`PRESET-VIDEO-3`
+  - typings.awsSdk.awsSdkStrings.`PRESET-VIDEO-4`
+  - typings.awsSdk.awsSdkStrings.`PRESET-VIDEO-5`
+  - typings.awsSdk.awsSdkStrings.`PRESET-VIDEO-6`
+  - typings.awsSdk.awsSdkStrings.`PRESET-VIDEO-7`
+  - typings.awsSdk.awsSdkStrings.`PRESET-VIDEO-8`
+  - typings.awsSdk.awsSdkStrings.SHARED
+  - typings.awsSdk.awsSdkStrings.UNENCRYPTED
+  - java.lang.String
+*/
+type PresetSpeke20Video = _PresetSpeke20Video | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.HBBTV_1_5
+  - typings.awsSdk.awsSdkStrings.HYBRIDCAST
+  - typings.awsSdk.awsSdkStrings.DVB_DASH_2014
   - java.lang.String
 */
-type Profile = typings.awsSdk.mediapackageMod._Profile | java.lang.String
+type Profile = _Profile | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NUMBER_WITH_TIMELINE
@@ -84,7 +120,7 @@ type Profile = typings.awsSdk.mediapackageMod._Profile | java.lang.String
   - typings.awsSdk.awsSdkStrings.NUMBER_WITH_DURATION
   - java.lang.String
 */
-type SegmentTemplateFormat = typings.awsSdk.mediapackageMod._SegmentTemplateFormat | java.lang.String
+type SegmentTemplateFormat = _SegmentTemplateFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -92,7 +128,7 @@ type SegmentTemplateFormat = typings.awsSdk.mediapackageMod._SegmentTemplateForm
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type Status = typings.awsSdk.mediapackageMod._Status | java.lang.String
+type Status = _Status | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ORIGINAL
@@ -100,45 +136,46 @@ type Status = typings.awsSdk.mediapackageMod._Status | java.lang.String
   - typings.awsSdk.awsSdkStrings.VIDEO_BITRATE_DESCENDING
   - java.lang.String
 */
-type StreamOrder = typings.awsSdk.mediapackageMod._StreamOrder | java.lang.String
+type StreamOrder = _StreamOrder | String
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediapackageMod.string]
+type Tags = StringDictionary[string]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.`HTTP-HEAD`
   - typings.awsSdk.awsSdkStrings.`HTTP-ISO`
+  - typings.awsSdk.awsSdkStrings.`HTTP-XSDATE`
   - java.lang.String
 */
-type UtcTiming = typings.awsSdk.mediapackageMod._UtcTiming | java.lang.String
+type UtcTiming = _UtcTiming | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-10-12`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.mediapackageMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type boolean = scala.Boolean
+type boolean = Boolean
 
-type integer = scala.Double
+type integer = Double
 
-type listOfChannel = js.Array[typings.awsSdk.mediapackageMod.Channel]
+type listOfChannel = js.Array[Channel]
 
-type listOfHarvestJob = js.Array[typings.awsSdk.mediapackageMod.HarvestJob]
+type listOfHarvestJob = js.Array[HarvestJob]
 
-type listOfHlsManifest = js.Array[typings.awsSdk.mediapackageMod.HlsManifest]
+type listOfHlsManifest = js.Array[HlsManifest]
 
-type listOfHlsManifestCreateOrUpdateParameters = js.Array[typings.awsSdk.mediapackageMod.HlsManifestCreateOrUpdateParameters]
+type listOfHlsManifestCreateOrUpdateParameters = js.Array[HlsManifestCreateOrUpdateParameters]
 
-type listOfIngestEndpoint = js.Array[typings.awsSdk.mediapackageMod.IngestEndpoint]
+type listOfIngestEndpoint = js.Array[IngestEndpoint]
 
-type listOfOriginEndpoint = js.Array[typings.awsSdk.mediapackageMod.OriginEndpoint]
+type listOfOriginEndpoint = js.Array[OriginEndpoint]
 
-type listOfPeriodTriggersElement = js.Array[typings.awsSdk.mediapackageMod.PeriodTriggersElement]
+type listOfPeriodTriggersElement = js.Array[PeriodTriggersElement]
 
-type listOfString = js.Array[typings.awsSdk.mediapackageMod.string]
+type listOfString = js.Array[string]
 
-type mapOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediapackageMod.string]
+type mapOfString = StringDictionary[string]
 
-type string = java.lang.String
+type string = String

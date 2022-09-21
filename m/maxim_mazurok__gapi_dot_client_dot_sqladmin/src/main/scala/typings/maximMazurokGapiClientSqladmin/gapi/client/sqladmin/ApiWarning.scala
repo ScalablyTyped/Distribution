@@ -11,6 +11,9 @@ trait ApiWarning extends StObject {
   
   /** The warning message. */
   var message: js.UndefOr[String] = js.undefined
+  
+  /** The region name for REGION_UNREACHABLE warning. */
+  var region: js.UndefOr[String] = js.undefined
 }
 object ApiWarning {
   
@@ -28,5 +31,9 @@ object ApiWarning {
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

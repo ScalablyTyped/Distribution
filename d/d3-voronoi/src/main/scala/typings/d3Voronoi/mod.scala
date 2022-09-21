@@ -36,7 +36,7 @@ object mod {
       
       inline def setHalfedges(value: js.Array[Double]): Self = StObject.set(x, "halfedges", value.asInstanceOf[js.Any])
       
-      inline def setHalfedgesVarargs(value: Double*): Self = StObject.set(x, "halfedges", js.Array(value :_*))
+      inline def setHalfedgesVarargs(value: Double*): Self = StObject.set(x, "halfedges", js.Array(value*))
       
       inline def setSite(value: VoronoiSite[T]): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     }

@@ -161,7 +161,7 @@ object mod {
       
       inline def setProvinceColorUndefined: Self = StObject.set(x, "provinceColor", js.undefined)
       
-      inline def setProvinceColorVarargs(value: String*): Self = StObject.set(x, "provinceColor", js.Array(value :_*))
+      inline def setProvinceColorVarargs(value: String*): Self = StObject.set(x, "provinceColor", js.Array(value*))
     }
   }
   

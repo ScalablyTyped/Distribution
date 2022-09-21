@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.NumericTextbox")
 @js.native
-class NumericTextbox ()
+open class NumericTextbox ()
   extends StObject
      with typings.ejWebAll.ej.Editor

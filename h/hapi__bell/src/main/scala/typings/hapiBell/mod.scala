@@ -297,7 +297,7 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setUseParamsAuth(value: Boolean): Self = StObject.set(x, "useParamsAuth", value.asInstanceOf[js.Any])
       
@@ -526,7 +526,7 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setSkipProfile(value: Boolean): Self = StObject.set(x, "skipProfile", value.asInstanceOf[js.Any])
       

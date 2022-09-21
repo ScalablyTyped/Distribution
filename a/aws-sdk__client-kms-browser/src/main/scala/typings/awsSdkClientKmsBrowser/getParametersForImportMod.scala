@@ -8,5 +8,5 @@ object getParametersForImportMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/GetParametersForImport", "GetParametersForImport")
   @js.native
-  val GetParametersForImport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetParametersForImport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

@@ -33,7 +33,7 @@ object XEncryptionProtectedSource2 {
   inline def apply(
     acquire: () => Unit,
     hasEncryptionData: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEncryption: () => Unit,
     setEncryptionData: SeqEquiv[NamedValue] => Unit,

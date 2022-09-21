@@ -32,7 +32,7 @@ object MatchList {
       
       inline def setMatches(value: js.Array[MatchReference]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      inline def setMatchesVarargs(value: MatchReference*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: MatchReference*): Self = StObject.set(x, "matches", js.Array(value*))
       
       inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       

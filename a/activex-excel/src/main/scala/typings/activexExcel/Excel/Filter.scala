@@ -12,9 +12,9 @@ trait Filter extends StObject {
   
   val Creator: XlCreator
   
-  val Criteria1: js.Any
+  val Criteria1: Any
   
-  val Criteria2: js.Any
+  val Criteria2: Any
   
   /* private */ @JSName("Excel.Filter_typekey")
   var ExcelDotFilter_typekey: Filter
@@ -23,7 +23,7 @@ trait Filter extends StObject {
   
   var Operator: XlAutoFilterOperator
   
-  val Parent: js.Any
+  val Parent: Any
   
   val _Operator: XlAutoFilterOperator
 }
@@ -33,12 +33,12 @@ object Filter {
     Application: Application,
     Count: Double,
     Creator: XlCreator,
-    Criteria1: js.Any,
-    Criteria2: js.Any,
+    Criteria1: Any,
+    Criteria2: Any,
     ExcelDotFilter_typekey: Filter,
     On: Boolean,
     Operator: XlAutoFilterOperator,
-    Parent: js.Any,
+    Parent: Any,
     _Operator: XlAutoFilterOperator
   ): Filter = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Criteria1 = Criteria1.asInstanceOf[js.Any], Criteria2 = Criteria2.asInstanceOf[js.Any], On = On.asInstanceOf[js.Any], Operator = Operator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], _Operator = _Operator.asInstanceOf[js.Any])
@@ -54,9 +54,9 @@ object Filter {
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setCriteria1(value: js.Any): Self = StObject.set(x, "Criteria1", value.asInstanceOf[js.Any])
+    inline def setCriteria1(value: Any): Self = StObject.set(x, "Criteria1", value.asInstanceOf[js.Any])
     
-    inline def setCriteria2(value: js.Any): Self = StObject.set(x, "Criteria2", value.asInstanceOf[js.Any])
+    inline def setCriteria2(value: Any): Self = StObject.set(x, "Criteria2", value.asInstanceOf[js.Any])
     
     inline def setExcelDotFilter_typekey(value: Filter): Self = StObject.set(x, "Excel.Filter_typekey", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object Filter {
     
     inline def setOperator(value: XlAutoFilterOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def set_Operator(value: XlAutoFilterOperator): Self = StObject.set(x, "_Operator", value.asInstanceOf[js.Any])
   }

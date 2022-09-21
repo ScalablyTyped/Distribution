@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("task-worklet", JSImport.Namespace)
   @js.native
-  class ^[T /* <: TaskDescriptor */] ()
+  open class ^[T /* <: TaskDescriptor */] ()
     extends StObject
        with TaskQueue[T] {
     def this(options: Options) = this()
@@ -95,8 +95,8 @@ object mod {
   trait TaskDescriptor extends StObject {
     
     def apply(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+    ): Any = js.native
     
     var name: String = js.native
   }
@@ -115,7 +115,7 @@ object mod {
     
     inline def apply[T /* <: TaskDescriptor */](
       addModule: String => js.Promise[Unit],
-      postTask: (/* import warning: importer.ImportType#apply Failed type conversion: U['name'] */ js.Any, Parameters[js.Any]) => Task[ReturnType[js.Any]]
+      postTask: (/* import warning: importer.ImportType#apply Failed type conversion: U['name'] */ js.Any, Parameters[Any]) => Task[ReturnType[Any]]
     ): TaskQueue[T] = {
       val __obj = js.Dynamic.literal(addModule = js.Any.fromFunction1(addModule), postTask = js.Any.fromFunction2(postTask))
       __obj.asInstanceOf[TaskQueue[T]]
@@ -126,7 +126,7 @@ object mod {
       inline def setAddModule(value: String => js.Promise[Unit]): Self = StObject.set(x, "addModule", js.Any.fromFunction1(value))
       
       inline def setPostTask(
-        value: (/* import warning: importer.ImportType#apply Failed type conversion: U['name'] */ js.Any, Parameters[js.Any]) => Task[ReturnType[js.Any]]
+        value: (/* import warning: importer.ImportType#apply Failed type conversion: U['name'] */ js.Any, Parameters[Any]) => Task[ReturnType[Any]]
       ): Self = StObject.set(x, "postTask", js.Any.fromFunction2(value))
     }
   }

@@ -30,16 +30,16 @@ object InstancesBatch {
     
     inline def setHardwareInstancedRendering(value: js.Array[Boolean]): Self = StObject.set(x, "hardwareInstancedRendering", value.asInstanceOf[js.Any])
     
-    inline def setHardwareInstancedRenderingVarargs(value: Boolean*): Self = StObject.set(x, "hardwareInstancedRendering", js.Array(value :_*))
+    inline def setHardwareInstancedRenderingVarargs(value: Boolean*): Self = StObject.set(x, "hardwareInstancedRendering", js.Array(value*))
     
     inline def setMustReturn(value: Boolean): Self = StObject.set(x, "mustReturn", value.asInstanceOf[js.Any])
     
     inline def setRenderSelf(value: js.Array[Boolean]): Self = StObject.set(x, "renderSelf", value.asInstanceOf[js.Any])
     
-    inline def setRenderSelfVarargs(value: Boolean*): Self = StObject.set(x, "renderSelf", js.Array(value :_*))
+    inline def setRenderSelfVarargs(value: Boolean*): Self = StObject.set(x, "renderSelf", js.Array(value*))
     
     inline def setVisibleInstances(value: js.Array[Nullable[js.Array[InstancedMesh]]]): Self = StObject.set(x, "visibleInstances", value.asInstanceOf[js.Any])
     
-    inline def setVisibleInstancesVarargs(value: Nullable[js.Array[InstancedMesh]]*): Self = StObject.set(x, "visibleInstances", js.Array(value :_*))
+    inline def setVisibleInstancesVarargs(value: Nullable[js.Array[InstancedMesh]]*): Self = StObject.set(x, "visibleInstances", js.Array(value*))
   }
 }

@@ -21,7 +21,7 @@ trait AutoFilter extends StObject {
   @JSName("Filters")
   val Filters_Original: Filters
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Range(Address: String): typings.activexExcel.Excel.Range
   def Range(RowIndex: Double): typings.activexExcel.Excel.Range
@@ -42,7 +42,7 @@ object AutoFilter {
     ExcelDotAutoFilter_typekey: AutoFilter,
     FilterMode: Boolean,
     Filters: Filters,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range,
     ShowAllData: () => Unit,
     Sort: Sort
@@ -66,7 +66,7 @@ object AutoFilter {
     
     inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     

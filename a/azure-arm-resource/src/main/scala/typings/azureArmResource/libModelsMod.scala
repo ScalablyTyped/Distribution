@@ -11,12 +11,12 @@ object libModelsMod {
   
   @JSImport("azure-arm-resource/lib/models", "BaseResource")
   @js.native
-  class BaseResource ()
+  open class BaseResource ()
     extends typings.msRestAzure.mod.BaseResource
   
   @JSImport("azure-arm-resource/lib/models", "CloudError")
   @js.native
-  class CloudError protected ()
+  open class CloudError protected ()
     extends typings.msRestAzure.mod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }
@@ -42,13 +42,13 @@ object libModelsMod {
     /**
       * Name and value pairs that define the appliance outputs.
       */
-    val outputs: js.UndefOr[js.Any] = js.native
+    val outputs: js.UndefOr[Any] = js.native
     
     /**
       * Name and value pairs that define the appliance parameters. It can be a JObject or a well
       * formed JSON string.
       */
-    var parameters: js.UndefOr[js.Any] = js.native
+    var parameters: js.UndefOr[Any] = js.native
     
     /**
       * The plan information.
@@ -185,13 +185,13 @@ object libModelsMod {
     /**
       * Name and value pairs that define the appliance outputs.
       */
-    val outputs: js.UndefOr[js.Any] = js.native
+    val outputs: js.UndefOr[Any] = js.native
     
     /**
       * Name and value pairs that define the appliance parameters. It can be a JObject or a well
       * formed JSON string.
       */
-    var parameters: js.UndefOr[js.Any] = js.native
+    var parameters: js.UndefOr[Any] = js.native
     
     /**
       * The plan information.

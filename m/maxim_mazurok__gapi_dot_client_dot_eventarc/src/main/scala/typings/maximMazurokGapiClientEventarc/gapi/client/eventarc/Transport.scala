@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Transport extends StObject {
   
-  /** The Pub/Sub topic and subscription that maybe created by Eventarc as delivery intermediary. */
+  /** The Pub/Sub topic and subscription used by Eventarc as a transport intermediary. */
   var pubsub: js.UndefOr[Pubsub] = js.undefined
 }
 object Transport {

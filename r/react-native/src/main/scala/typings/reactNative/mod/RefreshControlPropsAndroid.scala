@@ -24,12 +24,6 @@ trait RefreshControlPropsAndroid
   var progressBackgroundColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
-    * Progress view top offset
-    * @platform android
-    */
-  var progressViewOffset: js.UndefOr[Double] = js.undefined
-  
-  /**
     * Size of the refresh indicator, see RefreshControl.SIZE.
     */
   var size: js.UndefOr[Double] = js.undefined
@@ -47,7 +41,7 @@ object RefreshControlPropsAndroid {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: ColorValue*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: ColorValue*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
@@ -56,10 +50,6 @@ object RefreshControlPropsAndroid {
     inline def setProgressBackgroundColor(value: ColorValue): Self = StObject.set(x, "progressBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setProgressBackgroundColorUndefined: Self = StObject.set(x, "progressBackgroundColor", js.undefined)
-    
-    inline def setProgressViewOffset(value: Double): Self = StObject.set(x, "progressViewOffset", value.asInstanceOf[js.Any])
-    
-    inline def setProgressViewOffsetUndefined: Self = StObject.set(x, "progressViewOffset", js.undefined)
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

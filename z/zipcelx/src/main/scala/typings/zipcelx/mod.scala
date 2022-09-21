@@ -92,7 +92,7 @@ object mod {
       
       inline def setData(value: ZipCelXDataSet): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: ZipCelXRow*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: ZipCelXRow*): Self = StObject.set(x, "data", js.Array(value*))
     }
   }
 }

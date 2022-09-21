@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "PhysicsVortexEventOptions")
 @js.native
-class PhysicsVortexEventOptions ()
+open class PhysicsVortexEventOptions ()
   extends typings.babylonjs.legacyMod.PhysicsVortexEventOptions

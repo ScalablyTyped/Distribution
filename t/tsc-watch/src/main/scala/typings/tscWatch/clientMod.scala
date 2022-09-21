@@ -8,6 +8,6 @@ object clientMod {
   
   @JSImport("tsc-watch/client", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends typings.tscWatch.libClientMod.^
 }

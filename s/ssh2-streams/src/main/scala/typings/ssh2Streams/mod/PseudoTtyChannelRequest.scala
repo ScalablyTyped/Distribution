@@ -13,7 +13,7 @@ trait PseudoTtyChannelRequest
   
   var height: Double
   
-  var modes: js.Any
+  var modes: Any
   
   var recipient: Double
   
@@ -32,7 +32,7 @@ object PseudoTtyChannelRequest {
   inline def apply(
     cols: Double,
     height: Double,
-    modes: js.Any,
+    modes: Any,
     recipient: Double,
     rows: Double,
     term: String,
@@ -49,7 +49,7 @@ object PseudoTtyChannelRequest {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setModes(value: js.Any): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
+    inline def setModes(value: Any): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
     inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     

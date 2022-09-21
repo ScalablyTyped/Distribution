@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.Kii")
 @js.native
-class Kii ()
+open class Kii ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.Kii
 object Kii {
@@ -301,7 +301,7 @@ object Kii {
     */
   /* static member */
   inline def initialize(appID: String, appKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def initialize(appID: String, appKey: String, analyticsOption: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], analyticsOption.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initialize(appID: String, appKey: String, analyticsOption: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], analyticsOption.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Initialize the Kii SDK with a specific URL
@@ -328,7 +328,7 @@ object Kii {
     */
   /* static member */
   inline def initializeWithSite(appID: String, appKey: String, site: typings.kiiCloudSdk.KiiCloud.KiiSite): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeWithSite")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], site.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def initializeWithSite(appID: String, appKey: String, site: typings.kiiCloudSdk.KiiCloud.KiiSite, analyticsOption: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeWithSite")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], site.asInstanceOf[js.Any], analyticsOption.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeWithSite(appID: String, appKey: String, site: typings.kiiCloudSdk.KiiCloud.KiiSite, analyticsOption: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeWithSite")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], site.asInstanceOf[js.Any], analyticsOption.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets a list of topics in app scope

@@ -13,27 +13,27 @@ object Holographic {
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicCamera {
     
     /* CompleteClass */
-    var id: js.Any = js.native
+    var id: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var isStereo: js.Any = js.native
+    var isStereo: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var renderTargetSize: js.Any = js.native
+    var renderTargetSize: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var setFarPlaneDistance: js.Any = js.native
+    var setFarPlaneDistance: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var setNearPlaneDistance: js.Any = js.native
+    var setNearPlaneDistance: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var viewportScaleFactor: js.Any = js.native
+    var viewportScaleFactor: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicCameraPose")
@@ -43,35 +43,35 @@ object Holographic {
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicCameraPose {
     
     /* CompleteClass */
-    var farPlaneDistance: js.Any = js.native
+    var farPlaneDistance: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var holographicCamera: js.Any = js.native
+    var holographicCamera: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var nearPlaneDistance: js.Any = js.native
+    var nearPlaneDistance: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var projectionTransform: js.Any = js.native
+    var projectionTransform: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetCullingFrustum: js.Any = js.native
+    var tryGetCullingFrustum: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetViewTransform: js.Any = js.native
+    var tryGetViewTransform: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var tryGetVisibleFrustum: js.Any = js.native
+    var tryGetVisibleFrustum: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var viewport: js.Any = js.native
+    var viewport: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicCameraRenderingParameters")
@@ -81,15 +81,15 @@ object Holographic {
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicCameraRenderingParameters {
     
     /* CompleteClass */
-    var direct3D11BackBuffer: js.Any = js.native
+    var direct3D11BackBuffer: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var direct3D11Device: js.Any = js.native
+    var direct3D11Device: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var setFocusPoint: js.Any = js.native
+    var setFocusPoint: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicFrame")
@@ -99,35 +99,35 @@ object Holographic {
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicFrame {
     
     /* CompleteClass */
-    var addedCameras: js.Any = js.native
+    var addedCameras: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var currentPrediction: js.Any = js.native
+    var currentPrediction: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var duration: js.Any = js.native
+    var duration: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var getRenderingParameters: js.Any = js.native
+    var getRenderingParameters: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var presentUsingCurrentPrediction: js.Any = js.native
+    var presentUsingCurrentPrediction: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var removedCameras: js.Any = js.native
+    var removedCameras: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var updateCurrentPrediction: js.Any = js.native
+    var updateCurrentPrediction: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var waitForFrameToFinish: js.Any = js.native
+    var waitForFrameToFinish: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicFramePrediction")
@@ -137,11 +137,11 @@ object Holographic {
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicFramePrediction {
     
     /* CompleteClass */
-    var cameraPoses: js.Any = js.native
+    var cameraPoses: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var timestamp: js.Any = js.native
+    var timestamp: Any = js.native
   }
   
   object HolographicFramePresentResult {
@@ -153,13 +153,13 @@ object Holographic {
     /* unmapped type */
     @JSGlobal("Windows.Graphics.Holographic.HolographicFramePresentResult.deviceRemoved")
     @js.native
-    def deviceRemoved: js.Any = js.native
-    inline def deviceRemoved_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceRemoved")(x.asInstanceOf[js.Any])
+    def deviceRemoved: Any = js.native
+    inline def deviceRemoved_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceRemoved")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Holographic.HolographicFramePresentResult.success")
     @js.native
-    def success: js.Any = js.native
-    inline def success_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
+    def success: Any = js.native
+    inline def success_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
   }
   
   object HolographicFramePresentWaitBehavior {
@@ -171,13 +171,13 @@ object Holographic {
     /* unmapped type */
     @JSGlobal("Windows.Graphics.Holographic.HolographicFramePresentWaitBehavior.doNotWaitForFrameToFinish")
     @js.native
-    def doNotWaitForFrameToFinish: js.Any = js.native
-    inline def doNotWaitForFrameToFinish_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doNotWaitForFrameToFinish")(x.asInstanceOf[js.Any])
+    def doNotWaitForFrameToFinish: Any = js.native
+    inline def doNotWaitForFrameToFinish_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doNotWaitForFrameToFinish")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Holographic.HolographicFramePresentWaitBehavior.waitForFrameToFinish")
     @js.native
-    def waitForFrameToFinish: js.Any = js.native
-    inline def waitForFrameToFinish_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForFrameToFinish")(x.asInstanceOf[js.Any])
+    def waitForFrameToFinish: Any = js.native
+    inline def waitForFrameToFinish_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForFrameToFinish")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicSpace")
@@ -188,31 +188,31 @@ object Holographic {
     
     /* unmapped type */
     /* CompleteClass */
-    var addEventListener: js.Any = js.native
+    var addEventListener: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var createNextFrame: js.Any = js.native
+    var createNextFrame: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var oncameraadded: js.Any = js.native
+    var oncameraadded: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var oncameraremoved: js.Any = js.native
+    var oncameraremoved: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var primaryAdapterId: js.Any = js.native
+    var primaryAdapterId: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var removeEventListener: js.Any = js.native
+    var removeEventListener: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var setDirect3D11Device: js.Any = js.native
+    var setDirect3D11Device: Any = js.native
   }
   object HolographicSpace {
     
@@ -223,8 +223,8 @@ object Holographic {
     /* static member */
     @JSGlobal("Windows.Graphics.Holographic.HolographicSpace.createForCoreWindow")
     @js.native
-    def createForCoreWindow: js.Any = js.native
-    inline def createForCoreWindow_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createForCoreWindow")(x.asInstanceOf[js.Any])
+    def createForCoreWindow: Any = js.native
+    inline def createForCoreWindow_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createForCoreWindow")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicSpaceCameraAddedEventArgs")
@@ -234,11 +234,11 @@ object Holographic {
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpaceCameraAddedEventArgs {
     
     /* CompleteClass */
-    var camera: js.Any = js.native
+    var camera: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var getDeferral: js.Any = js.native
+    var getDeferral: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicSpaceCameraRemovedEventArgs")
@@ -248,6 +248,6 @@ object Holographic {
        with typings.winrtUwp.Windows.Graphics.Holographic.HolographicSpaceCameraRemovedEventArgs {
     
     /* CompleteClass */
-    var camera: js.Any = js.native
+    var camera: Any = js.native
   }
 }

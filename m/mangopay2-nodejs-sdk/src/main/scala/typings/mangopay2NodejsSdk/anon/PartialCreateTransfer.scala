@@ -1,11 +1,11 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.mod.MoneyData
+import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.transfer.CreateTransfer> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/transfer.transfer.CreateTransfer> */
 trait PartialCreateTransfer extends StObject {
   
   var AuthorId: js.UndefOr[String] = js.undefined

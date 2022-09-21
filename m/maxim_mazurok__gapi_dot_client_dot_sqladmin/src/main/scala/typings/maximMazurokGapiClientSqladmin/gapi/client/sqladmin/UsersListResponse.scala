@@ -9,7 +9,7 @@ trait UsersListResponse extends StObject {
   /** List of user resources in the instance. */
   var items: js.UndefOr[js.Array[User]] = js.undefined
   
-  /** This is always *sql#usersList*. */
+  /** This is always `sql#usersList`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** An identifier that uniquely identifies the operation. You can use this identifier to retrieve the Operations resource that has information about the operation. */
@@ -28,7 +28,7 @@ object UsersListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: User*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: User*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

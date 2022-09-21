@@ -10,10 +10,10 @@ The lodash method `_.sortedUniq` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.sorteduniq |
 | Keywords           | lodash-modularized, sorteduniq |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 19569 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5386.666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

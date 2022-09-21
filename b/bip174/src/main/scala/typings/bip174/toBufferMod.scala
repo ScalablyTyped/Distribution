@@ -2,7 +2,7 @@ package typings.bip174
 
 import typings.bip174.anon.GlobalKeyVals
 import typings.bip174.parserMod.PsbtAttributes
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "AdjustLoyaltyPointsRequest")
 @js.native
-class AdjustLoyaltyPointsRequest () extends StObject {
+open class AdjustLoyaltyPointsRequest () extends StObject {
   
   /**
     * The points to adjust (add or subtract) and the reason for the adjustment.

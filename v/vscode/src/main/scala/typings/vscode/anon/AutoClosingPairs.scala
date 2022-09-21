@@ -19,6 +19,6 @@ object AutoClosingPairs {
     
     inline def setAutoClosingPairs(value: js.Array[NotIn]): Self = StObject.set(x, "autoClosingPairs", value.asInstanceOf[js.Any])
     
-    inline def setAutoClosingPairsVarargs(value: NotIn*): Self = StObject.set(x, "autoClosingPairs", js.Array(value :_*))
+    inline def setAutoClosingPairsVarargs(value: NotIn*): Self = StObject.set(x, "autoClosingPairs", js.Array(value*))
   }
 }

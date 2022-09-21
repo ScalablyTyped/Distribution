@@ -4,6 +4,7 @@ import typings.antd.anon.SizeString
 import typings.antd.antdStrings.default
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
+import typings.react.mod.CSSProperties
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,13 +31,15 @@ object skeletonInputMod {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
+    var block: js.UndefOr[Boolean] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
     var size: js.UndefOr[large | small | default] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SkeletonInputProps {
     
@@ -51,6 +54,10 @@ object skeletonInputMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
+      inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -63,7 +70,7 @@ object skeletonInputMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

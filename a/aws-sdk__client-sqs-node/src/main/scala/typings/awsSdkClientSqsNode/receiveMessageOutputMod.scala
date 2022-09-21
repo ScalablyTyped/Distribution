@@ -8,5 +8,5 @@ object receiveMessageOutputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/ReceiveMessageOutput", "ReceiveMessageOutput")
   @js.native
-  val ReceiveMessageOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ReceiveMessageOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

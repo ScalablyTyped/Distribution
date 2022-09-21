@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation", "Permission")
 @js.native
-class Permission protected ()
+open class Permission protected ()
   extends typings.actionsOnGoogle.helperMod.Permission {
   /**
     * @param options Permission options

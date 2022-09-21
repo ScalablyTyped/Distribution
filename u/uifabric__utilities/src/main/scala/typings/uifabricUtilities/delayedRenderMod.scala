@@ -1,7 +1,6 @@
 package typings.uifabricUtilities
 
 import typings.react.mod.Component
-import typings.react.mod.Props
 import typings.uifabricUtilities.anon.Delay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +10,10 @@ object delayedRenderMod {
   
   @JSImport("@uifabric/utilities/lib/DelayedRender", "DelayedRender")
   @js.native
-  class DelayedRender protected ()
-    extends Component[IDelayedRenderProps, IDelayedRenderState, js.Any] {
+  open class DelayedRender protected () extends Component[IDelayedRenderProps, IDelayedRenderState, Any] {
     def this(props: IDelayedRenderProps) = this()
     
-    /* private */ var _timeoutId: js.Any = js.native
+    /* private */ var _timeoutId: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDelayedRender(): Unit = js.native
@@ -36,9 +34,8 @@ object delayedRenderMod {
     inline def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  trait IDelayedRenderProps
-    extends StObject
-       with Props[js.Object] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.Props<{}> * / any */ trait IDelayedRenderProps extends StObject {
     
     /**
       * Number of milliseconds to delay rendering children.

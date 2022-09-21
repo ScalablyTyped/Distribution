@@ -2,7 +2,7 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import typings.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
 import typings.semanticUiReact.iconIconMod.StrictIconProps
 import org.scalablytyped.runtime.StObject
@@ -13,12 +13,12 @@ object listIconMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/List/ListIcon", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ListIconProps] = js.native
+  val default: FC[ListIconProps] = js.native
   
   trait ListIconProps
     extends StObject
        with StrictListIconProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ListIconProps {
     
     inline def apply(): ListIconProps = {
@@ -49,8 +49,8 @@ object listIconMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ListIconProps]
+  type _To = FC[ListIconProps]
   
   /* This means you don't have to write `default`, but can instead just say `listIconMod.foo` */
-  override def _to: StatelessComponent[ListIconProps] = default
+  override def _to: FC[ListIconProps] = default
 }

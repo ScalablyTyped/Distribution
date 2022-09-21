@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Object")
 @js.native
-class Object ()
+open class Object ()
   extends typings.fabric.fabricImplMod.Object {
   def this(options: IObjectOptions) = this()
 }
@@ -41,12 +41,7 @@ object Object {
     className: String,
     `object`: typings.fabric.fabricImplMod.Object,
     callback: js.Function,
-    extraParam: js.Any
+    extraParam: Any
   ): typings.fabric.fabricImplMod.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Object]
-  inline def _fromObject(
-    className: String,
-    `object`: typings.fabric.fabricImplMod.Object,
-    callback: Unit,
-    extraParam: js.Any
-  ): typings.fabric.fabricImplMod.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Object]
+  inline def _fromObject(className: String, `object`: typings.fabric.fabricImplMod.Object, callback: Unit, extraParam: Any): typings.fabric.fabricImplMod.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Object]
 }

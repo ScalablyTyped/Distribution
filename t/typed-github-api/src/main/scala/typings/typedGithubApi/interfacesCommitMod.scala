@@ -41,7 +41,7 @@ object interfacesCommitMod {
       
       inline def setFiles(value: js.Array[GitFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: GitFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: GitFile*): Self = StObject.set(x, "files", js.Array(value*))
     }
   }
   
@@ -124,7 +124,7 @@ object interfacesCommitMod {
       
       inline def setParents(value: js.Array[CommitRef]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      inline def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value*))
     }
   }
   
@@ -204,7 +204,7 @@ object interfacesCommitMod {
       
       inline def setParents(value: js.Array[CommitRef]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      inline def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value*))
     }
   }
   

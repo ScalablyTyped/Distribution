@@ -16,7 +16,7 @@ trait ASPxClientRadarDiagram
     * @param argument An object, representing the point's argument.
     * @param value An object, representing the point's value.
     */
-  def DiagramToPoint(argument: js.Any, value: js.Any): ASPxClientControlCoordinates
+  def DiagramToPoint(argument: Any, value: Any): ASPxClientControlCoordinates
   
   /**
     * Converts the display coordinates into a diagram coordinates object. An ASPxClientDiagramCoordinates object, containing information about the point's argument and value, their scale types, associated axes and pane.
@@ -28,7 +28,7 @@ trait ASPxClientRadarDiagram
 object ASPxClientRadarDiagram {
   
   inline def apply(
-    DiagramToPoint: (js.Any, js.Any) => ASPxClientControlCoordinates,
+    DiagramToPoint: (Any, Any) => ASPxClientControlCoordinates,
     PointToDiagram: (Double, Double) => ASPxClientDiagramCoordinates,
     axisX: ASPxClientAxisBase,
     axisY: ASPxClientAxisBase,
@@ -40,7 +40,7 @@ object ASPxClientRadarDiagram {
   
   extension [Self <: ASPxClientRadarDiagram](x: Self) {
     
-    inline def setDiagramToPoint(value: (js.Any, js.Any) => ASPxClientControlCoordinates): Self = StObject.set(x, "DiagramToPoint", js.Any.fromFunction2(value))
+    inline def setDiagramToPoint(value: (Any, Any) => ASPxClientControlCoordinates): Self = StObject.set(x, "DiagramToPoint", js.Any.fromFunction2(value))
     
     inline def setPointToDiagram(value: (Double, Double) => ASPxClientDiagramCoordinates): Self = StObject.set(x, "PointToDiagram", js.Any.fromFunction2(value))
   }

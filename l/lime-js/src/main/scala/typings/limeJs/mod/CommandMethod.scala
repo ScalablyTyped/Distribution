@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("lime-js", "CommandMethod")
 @js.native
-class CommandMethod () extends StObject
+open class CommandMethod () extends StObject
 object CommandMethod {
   
   @JSImport("lime-js", "CommandMethod")

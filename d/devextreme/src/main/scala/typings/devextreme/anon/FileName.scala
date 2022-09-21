@@ -1,15 +1,7 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.GIF
-import typings.devextreme.devextremeStrings.JPEG
-import typings.devextreme.devextremeStrings.PDF
-import typings.devextreme.devextremeStrings.PNG
-import typings.devextreme.devextremeStrings.SVG
-import typings.devextreme.devextremeStrings.bottom
-import typings.devextreme.devextremeStrings.center
-import typings.devextreme.devextremeStrings.left
-import typings.devextreme.devextremeStrings.right
-import typings.devextreme.devextremeStrings.top
+import typings.devextreme.mod.DevExpress.common.ExportFormat
+import typings.devextreme.mod.DevExpress.common.VerticalAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +12,11 @@ trait FileName extends StObject {
   
   var fileName: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[GIF | JPEG | PDF | PNG | SVG] = js.undefined
+  var format: js.UndefOr[ExportFormat] = js.undefined
   
   var gridLayout: js.UndefOr[Boolean] = js.undefined
   
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
+  var horizontalAlignment: js.UndefOr[typings.devextreme.mod.DevExpress.common.HorizontalAlignment] = js.undefined
   
   var margin: js.UndefOr[Double] = js.undefined
   
@@ -38,7 +30,7 @@ trait FileName extends StObject {
   
   var svgToCanvas: js.UndefOr[js.Function] = js.undefined
   
-  var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
+  var verticalAlignment: js.UndefOr[VerticalAlignment] = js.undefined
 }
 object FileName {
   
@@ -57,7 +49,7 @@ object FileName {
     
     inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    inline def setFormat(value: GIF | JPEG | PDF | PNG | SVG): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ExportFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
@@ -65,7 +57,7 @@ object FileName {
     
     inline def setGridLayoutUndefined: Self = StObject.set(x, "gridLayout", js.undefined)
     
-    inline def setHorizontalAlignment(value: center | left | right): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: typings.devextreme.mod.DevExpress.common.HorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
@@ -93,7 +85,7 @@ object FileName {
     
     inline def setSvgToCanvasUndefined: Self = StObject.set(x, "svgToCanvas", js.undefined)
     
-    inline def setVerticalAlignment(value: bottom | center | top): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalAlignment(value: VerticalAlignment): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
   }

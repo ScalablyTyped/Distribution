@@ -6,7 +6,6 @@ import typings.dialogflow.dialogflowStrings.agentUri
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new RestoreAgentRequest.
   * @param [properties] Properties to set
   */
-class RestoreAgentRequest ()
+open class RestoreAgentRequest ()
   extends StObject
      with IRestoreAgentRequest {
   def this(properties: IRestoreAgentRequest) = this()
@@ -28,7 +27,7 @@ class RestoreAgentRequest ()
   
   /** RestoreAgentRequest agentContent. */
   @JSName("agentContent")
-  var agentContent_RestoreAgentRequest: Uint8Array | String = js.native
+  var agentContent_RestoreAgentRequest: js.typedarray.Uint8Array | String = js.native
   
   /** RestoreAgentRequest agentUri. */
   @JSName("agentUri")
@@ -42,7 +41,7 @@ class RestoreAgentRequest ()
     * Converts this RestoreAgentRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object RestoreAgentRequest {
   
@@ -59,6 +58,8 @@ object RestoreAgentRequest {
   inline def create(): RestoreAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RestoreAgentRequest]
   inline def create(properties: IRestoreAgentRequest): RestoreAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RestoreAgentRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): RestoreAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RestoreAgentRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): RestoreAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RestoreAgentRequest]
   /**
     * Decodes a RestoreAgentRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -70,9 +71,8 @@ object RestoreAgentRequest {
   /* static member */
   inline def decode(reader: Reader): RestoreAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RestoreAgentRequest]
   inline def decode(reader: Reader, length: Double): RestoreAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RestoreAgentRequest]
-  inline def decode(reader: Uint8Array): RestoreAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RestoreAgentRequest]
-  inline def decode(reader: Uint8Array, length: Double): RestoreAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RestoreAgentRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): RestoreAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RestoreAgentRequest]
   /**
     * Decodes a RestoreAgentRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -82,7 +82,6 @@ object RestoreAgentRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): RestoreAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RestoreAgentRequest]
-  inline def decodeDelimited(reader: Uint8Array): RestoreAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RestoreAgentRequest]
   
   /**
     * Encodes the specified RestoreAgentRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.RestoreAgentRequest.verify|verify} messages.
@@ -110,7 +109,7 @@ object RestoreAgentRequest {
     * @returns RestoreAgentRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): RestoreAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RestoreAgentRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): RestoreAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RestoreAgentRequest]
   
   /**
     * Creates a plain object from a RestoreAgentRequest message. Also converts values to other types if specified.
@@ -119,8 +118,8 @@ object RestoreAgentRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: RestoreAgentRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: RestoreAgentRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: RestoreAgentRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: RestoreAgentRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a RestoreAgentRequest message.
@@ -128,5 +127,5 @@ object RestoreAgentRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

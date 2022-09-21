@@ -9,7 +9,7 @@ trait UserProfileDetails extends StObject {
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The domain ID.
@@ -19,7 +19,7 @@ trait UserProfileDetails extends StObject {
   /**
     * The last modified time.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status.
@@ -40,7 +40,7 @@ object UserProfileDetails {
   
   extension [Self <: UserProfileDetails](x: Self) {
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -48,7 +48,7 @@ object UserProfileDetails {
     
     inline def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
     
-    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

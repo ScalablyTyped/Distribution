@@ -23,6 +23,6 @@ object TimeZoneList {
     
     inline def setValidTimeZones(value: js.Array[TimeZone]): Self = StObject.set(x, "validTimeZones", value.asInstanceOf[js.Any])
     
-    inline def setValidTimeZonesVarargs(value: TimeZone*): Self = StObject.set(x, "validTimeZones", js.Array(value :_*))
+    inline def setValidTimeZonesVarargs(value: TimeZone*): Self = StObject.set(x, "validTimeZones", js.Array(value*))
   }
 }

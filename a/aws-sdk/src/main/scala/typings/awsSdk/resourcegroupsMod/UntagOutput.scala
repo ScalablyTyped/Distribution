@@ -33,6 +33,6 @@ object UntagOutput {
     
     inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
-    inline def setKeysVarargs(value: TagKey*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: TagKey*): Self = StObject.set(x, "Keys", js.Array(value*))
   }
 }

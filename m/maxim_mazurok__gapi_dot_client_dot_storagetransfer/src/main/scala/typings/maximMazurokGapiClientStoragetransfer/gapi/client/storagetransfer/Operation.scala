@@ -17,13 +17,10 @@ trait Operation extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientStoragetransfer.maximMazurokGapiClientStoragetransferStrings.Operation & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientStoragetransfer.maximMazurokGapiClientStoragetransferStrings.Operation & TopLevel[Any]
   ] = js.undefined
   
-  /**
-    * The server-assigned name, which is only unique within the same service that originally returns it. If you use the default HTTP mapping, the `name` should have the format of
-    * `transferOperations/some/unique/name`.
-    */
+  /** The server-assigned unique name. The format of `name` is `transferOperations/some/unique/name`. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
@@ -34,7 +31,7 @@ trait Operation extends StObject {
   var response: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientStoragetransfer.maximMazurokGapiClientStoragetransferStrings.Operation & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientStoragetransfer.maximMazurokGapiClientStoragetransferStrings.Operation & TopLevel[Any]
   ] = js.undefined
 }
 object Operation {
@@ -57,7 +54,7 @@ object Operation {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientStoragetransfer.maximMazurokGapiClientStoragetransferStrings.Operation & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientStoragetransfer.maximMazurokGapiClientStoragetransferStrings.Operation & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -69,7 +66,7 @@ object Operation {
     inline def setResponse(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientStoragetransfer.maximMazurokGapiClientStoragetransferStrings.Operation & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientStoragetransfer.maximMazurokGapiClientStoragetransferStrings.Operation & TopLevel[Any]
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)

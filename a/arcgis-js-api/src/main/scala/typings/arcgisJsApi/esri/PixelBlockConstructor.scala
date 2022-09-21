@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PixelBlockConstructor
   extends StObject
-     with Instantiable0[PixelBlock]
+     with /**
+  * An object representing the pixel arrays in the view.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html)
+  */
+Instantiable0[PixelBlock]
      with Instantiable1[/* properties */ PixelBlockProperties, PixelBlock]

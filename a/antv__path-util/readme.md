@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__path-util
 
-Typings are for version 2.0.8
+Typings are for version 3.0.1
 
 ## Library description:
 A common util collection for antv projects
@@ -10,10 +10,10 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/path-util |
 | Keywords           | util, antv, g |
-| # releases         | 14 |
-| # dependents       | 13 |
-| # downloads        | 786003 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 326049.0 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/util#readme)

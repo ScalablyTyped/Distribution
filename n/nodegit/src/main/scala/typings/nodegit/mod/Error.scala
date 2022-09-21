@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Error")
 @js.native
-class Error ()
+open class Error ()
   extends typings.nodegit.errorMod.Error

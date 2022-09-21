@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("parse", "File")
 @js.native
-class File protected ()
+open class File protected ()
   extends typings.parse.mod.global.Parse.File {
   def this(name: String, data: js.Array[Double]) = this()
   def this(name: String, data: Base64) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("rn-fetch-blob", "RNFetchBlobFetchPolyfill")
 @js.native
-class RNFetchBlobFetchPolyfill protected () extends StObject {
+open class RNFetchBlobFetchPolyfill protected () extends StObject {
   def this(config: RNFetchBlobConfig) = this()
   
   def build(): js.Function2[

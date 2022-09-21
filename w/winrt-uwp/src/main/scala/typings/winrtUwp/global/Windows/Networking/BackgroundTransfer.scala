@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Networking
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Background.IBackgroundTrigger
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
@@ -28,7 +27,7 @@ object BackgroundTransfer {
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundDownloader")
   @js.native
   /** Creates a new BackgroundDownloader object. */
-  class BackgroundDownloader ()
+  open class BackgroundDownloader ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundDownloader {
     /**
@@ -48,14 +47,14 @@ object BackgroundTransfer {
       * @return A collection of pending downloads for the current application instance.
       */
     /* static member */
-    inline def getCurrentDownloadsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentDownloadsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     /**
       * Returns a collection of pending downloads for a specific Group .
       * @param group A string indicating a specific group of transfers.
       * @return A collection of pending downloads for the specific group.
       */
     /* static member */
-    inline def getCurrentDownloadsAsync(group: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentDownloadsAsync(group: String): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Gets all downloads associated with the provided BackgroundTransferGroup .
@@ -63,7 +62,7 @@ object BackgroundTransfer {
       * @return A list of downloads currently associated with the specified group.
       */
     /* static member */
-    inline def getCurrentDownloadsForTransferGroupAsync(group: typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsForTransferGroupAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentDownloadsForTransferGroupAsync(group: typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsForTransferGroupAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Used to request an unconstrained download operation. When this method is called the user is provided with a UI prompt that they can use to indicate their consent for an unconstrained operation.
@@ -97,7 +96,7 @@ object BackgroundTransfer {
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroup")
   @js.native
   /** Creates a new BackgroundTransferCompletionGroup object. */
-  class BackgroundTransferCompletionGroup ()
+  open class BackgroundTransferCompletionGroup ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferCompletionGroup {
     
@@ -134,7 +133,7 @@ object BackgroundTransfer {
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart")
   @js.native
   /** Creates a BackgroundTransferContentPart object. */
-  class BackgroundTransferContentPart ()
+  open class BackgroundTransferContentPart ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart {
     /**
@@ -288,7 +287,7 @@ object BackgroundTransfer {
   @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundUploader")
   @js.native
   /** Instantiates a new BackgroundUploader object. */
-  class BackgroundUploader ()
+  open class BackgroundUploader ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundUploader {
     /**
@@ -308,14 +307,14 @@ object BackgroundTransfer {
       * @return A collection of pending uploads for the current application instance.
       */
     /* static member */
-    inline def getCurrentUploadsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentUploadsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     /**
       * Returns a collection of pending uploads for a specific Group .
       * @param group A string indicating a specific group of uploads.
       * @return A collection of pending uploads for the specific group.
       */
     /* static member */
-    inline def getCurrentUploadsAsync(group: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentUploadsAsync(group: String): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Gets all uploads associated with the provided BackgroundTransferGroup .
@@ -323,7 +322,7 @@ object BackgroundTransfer {
       * @return A list of uploads currently associated with the specified group.
       */
     /* static member */
-    inline def getCurrentUploadsForTransferGroupAsync(group: typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsForTransferGroupAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentUploadsForTransferGroupAsync(group: typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsForTransferGroupAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Used to request an unconstrained upload operation. When this method is called the user is provided with a UI prompt that they can use to indicate their consent for an unconstrained operation.
@@ -368,8 +367,8 @@ object BackgroundTransfer {
     /* static member */
     @JSGlobal("Windows.Networking.BackgroundTransfer.ContentPrefetcher.lastSuccessfulPrefetchTime")
     @js.native
-    def lastSuccessfulPrefetchTime: Date = js.native
-    inline def lastSuccessfulPrefetchTime_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastSuccessfulPrefetchTime")(x.asInstanceOf[js.Any])
+    def lastSuccessfulPrefetchTime: js.Date = js.native
+    inline def lastSuccessfulPrefetchTime_=(x: js.Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastSuccessfulPrefetchTime")(x.asInstanceOf[js.Any])
   }
   
   /** Performs an asynchronous download operation. The Background Transfer sample demonstrates this functionality. For an overview of Background Transfer capabilities, see Transferring data in the background. Download the Background Transfer sample for examples in JavaScript, C#, and C++. */

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaGeolayerdata extends StObject {
   
-  var common: js.UndefOr[Lang] = js.undefined
+  var common: js.UndefOr[Lang | Null] = js.undefined
   
-  var geo: js.UndefOr[Boundary] = js.undefined
+  var geo: js.UndefOr[Boundary | Null] = js.undefined
   
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGeolayerdata {
   
@@ -25,13 +25,19 @@ object SchemaGeolayerdata {
     
     inline def setCommon(value: Lang): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
+    inline def setCommonNull: Self = StObject.set(x, "common", null)
+    
     inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
     inline def setGeo(value: Boundary): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     
+    inline def setGeoNull: Self = StObject.set(x, "geo", null)
+    
     inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

@@ -9,10 +9,10 @@ A generic function library for Node.js
 | ------------------ | :-------------: |
 | Full name          | generic-functions |
 | Keywords           | library, generic, functions, strcmp, println, printlns |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 906 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 82.33333333333333 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/stpettersens/genericFunctions-for-node#readme)

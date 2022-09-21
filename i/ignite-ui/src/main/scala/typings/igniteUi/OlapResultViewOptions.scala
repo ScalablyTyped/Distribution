@@ -10,7 +10,7 @@ trait OlapResultViewOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Optional="false" a value indicating whether the result has one or more hierarchies in the columns.
@@ -25,12 +25,12 @@ trait OlapResultViewOptions
   /**
     * Optional="false" an object of type $.ig.OlapResult which represents the full cached result.
     */
-  var result: js.UndefOr[js.Any] = js.undefined
+  var result: js.UndefOr[Any] = js.undefined
   
   /**
     * Optional="false" an object of type $.ig.OlapResult which represents the visible part of the result.
     */
-  var visibleResult: js.UndefOr[js.Any] = js.undefined
+  var visibleResult: js.UndefOr[Any] = js.undefined
 }
 object OlapResultViewOptions {
   
@@ -49,11 +49,11 @@ object OlapResultViewOptions {
     
     inline def setHasRowsUndefined: Self = StObject.set(x, "hasRows", js.undefined)
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    inline def setVisibleResult(value: js.Any): Self = StObject.set(x, "visibleResult", value.asInstanceOf[js.Any])
+    inline def setVisibleResult(value: Any): Self = StObject.set(x, "visibleResult", value.asInstanceOf[js.Any])
     
     inline def setVisibleResultUndefined: Self = StObject.set(x, "visibleResult", js.undefined)
   }

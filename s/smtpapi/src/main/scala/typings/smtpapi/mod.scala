@@ -13,7 +13,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("smtpapi", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Instance {
     def this(header: Header) = this()
@@ -74,7 +74,7 @@ object mod extends Shortcut {
       
       inline def setCategory(value: js.Array[String]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      inline def setCategoryVarargs(value: String*): Self = StObject.set(x, "category", js.Array(value :_*))
+      inline def setCategoryVarargs(value: String*): Self = StObject.set(x, "category", js.Array(value*))
       
       inline def setFilters(value: js.Object): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -86,13 +86,13 @@ object mod extends Shortcut {
       
       inline def setSend_each_at(value: js.Array[Double]): Self = StObject.set(x, "send_each_at", value.asInstanceOf[js.Any])
       
-      inline def setSend_each_atVarargs(value: Double*): Self = StObject.set(x, "send_each_at", js.Array(value :_*))
+      inline def setSend_each_atVarargs(value: Double*): Self = StObject.set(x, "send_each_at", js.Array(value*))
       
       inline def setSub(value: js.Object): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
       inline def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value*))
       
       inline def setUnique_args(value: js.Object): Self = StObject.set(x, "unique_args", value.asInstanceOf[js.Any])
     }

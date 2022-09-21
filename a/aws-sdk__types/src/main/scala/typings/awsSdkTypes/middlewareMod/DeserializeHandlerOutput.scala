@@ -16,11 +16,11 @@ trait DeserializeHandlerOutput[Output /* <: js.Object */] extends StObject {
     * During the deserialize phase of the execution of a middleware stack, a deserialized
     * response may or may not be available
     */
-  var response: js.Any
+  var response: Any
 }
 object DeserializeHandlerOutput {
   
-  inline def apply[Output /* <: js.Object */](response: js.Any): DeserializeHandlerOutput[Output] = {
+  inline def apply[Output /* <: js.Object */](response: Any): DeserializeHandlerOutput[Output] = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeserializeHandlerOutput[Output]]
   }
@@ -31,6 +31,6 @@ object DeserializeHandlerOutput {
     
     inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

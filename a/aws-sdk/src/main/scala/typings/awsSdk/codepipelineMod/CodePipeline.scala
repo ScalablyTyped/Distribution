@@ -155,6 +155,20 @@ trait CodePipeline extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Returns information about an action type created for an external provider, where the action is to be used by customers of the external provider. The action can be created with any supported integration model.
+    */
+  def getActionType(): Request[GetActionTypeOutput, AWSError] = js.native
+  def getActionType(callback: js.Function2[/* err */ AWSError, /* data */ GetActionTypeOutput, Unit]): Request[GetActionTypeOutput, AWSError] = js.native
+  /**
+    * Returns information about an action type created for an external provider, where the action is to be used by customers of the external provider. The action can be created with any supported integration model.
+    */
+  def getActionType(params: GetActionTypeInput): Request[GetActionTypeOutput, AWSError] = js.native
+  def getActionType(
+    params: GetActionTypeInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetActionTypeOutput, Unit]
+  ): Request[GetActionTypeOutput, AWSError] = js.native
+  
+  /**
     * Returns information about a job. Used for custom actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the S3 bucket used to store artifacts for the pipeline, if the action requires access to that S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def getJobDetails(): Request[GetJobDetailsOutput, AWSError] = js.native
@@ -517,6 +531,20 @@ trait CodePipeline extends Service {
     params: UntagResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]
   ): Request[UntagResourceOutput, AWSError] = js.native
+  
+  /**
+    * Updates an action type that was created with any supported integration model, where the action type is to be used by customers of the action type provider. Use a JSON file with the action definition and UpdateActionType to provide the full structure.
+    */
+  def updateActionType(): Request[js.Object, AWSError] = js.native
+  def updateActionType(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates an action type that was created with any supported integration model, where the action type is to be used by customers of the action type provider. Use a JSON file with the action definition and UpdateActionType to provide the full structure.
+    */
+  def updateActionType(params: UpdateActionTypeInput): Request[js.Object, AWSError] = js.native
+  def updateActionType(
+    params: UpdateActionTypeInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   
   /**
     * Updates a specified pipeline with edits or changes to its structure. Use a JSON file with the pipeline structure and UpdatePipeline to provide the full structure of the pipeline. Updating the pipeline increases the version number of the pipeline by 1.

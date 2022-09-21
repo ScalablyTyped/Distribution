@@ -14,7 +14,7 @@ object urlJsonRpcProviderMod {
   
   @JSImport("@ethersproject/providers/lib/url-json-rpc-provider", "StaticJsonRpcProvider")
   @js.native
-  class StaticJsonRpcProvider () extends JsonRpcProvider {
+  open class StaticJsonRpcProvider () extends JsonRpcProvider {
     def this(url: String) = this()
     def this(url: ConnectionInfo) = this()
     def this(url: String, network: Networkish) = this()
@@ -28,23 +28,23 @@ object urlJsonRpcProviderMod {
     extends StaticJsonRpcProvider
        with CommunityResourcable {
     def this(network: Networkish) = this()
-    def this(network: Unit, apiKey: js.Any) = this()
-    def this(network: Networkish, apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: Any) = this()
+    def this(network: Networkish, apiKey: Any) = this()
     
-    val apiKey: js.Any = js.native
+    val apiKey: Any = js.native
     
     /* CompleteClass */
     override def isCommunityResource(): Boolean = js.native
     
     /* InferMemberOverrides */
-    override def lookupAddress(address: String): js.Promise[String] = js.native
+    override def lookupAddress(address: String): js.Promise[Null | String] = js.native
     
     /* InferMemberOverrides */
     @JSName("once")
     override def once_block(eventName: block, handler: js.Function0[Unit]): Unit = js.native
     
     /* InferMemberOverrides */
-    override def resolveName(name: String): js.Promise[String] = js.native
+    override def resolveName(name: String): js.Promise[Null | String] = js.native
   }
   /* static members */
   object UrlJsonRpcProvider {
@@ -53,8 +53,8 @@ object urlJsonRpcProviderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getApiKey(apiKey: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def getUrl(network: Network, apiKey: js.Any): String | ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[String | ConnectionInfo]
+    inline def getUrl(network: Network, apiKey: Any): String | ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[String | ConnectionInfo]
   }
 }

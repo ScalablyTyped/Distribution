@@ -1,26 +1,8 @@
 
 # Scala.js typings for apidevtools__swagger-parser
 
-Typings are for version 10.0.2
+Typings are for version 10.1.0
 
-## Library description:
-Swagger 2.0 and OpenAPI 3.0 parser and validator for Node and browsers
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @apidevtools/swagger-parser |
-| Keywords           | swagger, openapi, open-api, json, yaml, parse, parser, validate, validator, validation, spec, specification, schema, reference, dereference |
-| # releases         | 8 |
-| # dependents       | 62 |
-| # downloads        | 6323559 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://apitools.dev/swagger-parser/)
-- [Bugs](https://github.com/APIDevTools/swagger-parser/issues)
-- [Repository](https://github.com/APIDevTools/swagger-parser)
-- [Npm](https://www.npmjs.com/package/%40apidevtools%2Fswagger-parser)
-    
 
 
 ## Note

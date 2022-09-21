@@ -10,10 +10,10 @@ Country list with ISO2, ISO3 code, continent, capital, dialing code
 | ------------------ | :-------------: |
 | Full name          | country-list-js |
 | Keywords           | country, geopolitical, iso2, iso3, phone, continent, capital, region |
-| # releases         | 13 |
-| # dependents       | 1 |
-| # downloads        | 101139 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 33932.333333333336 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/i-rocky/country-list-js.git)

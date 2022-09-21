@@ -1,18 +1,18 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.mod.event.EventType
-import typings.mangopay2NodejsSdk.mod.hook.HookStatus
-import typings.mangopay2NodejsSdk.mod.hook.HookValidity
+import typings.mangopay2NodejsSdk.eventMod.event.EventType
+import typings.mangopay2NodejsSdk.hookMod.hook.HookStatus
+import typings.mangopay2NodejsSdk.hookMod.hook.HookValidity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.hook.HookData> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/hook.hook.HookData> */
 trait PartialHookData extends StObject {
   
   var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var EventType: js.UndefOr[typings.mangopay2NodejsSdk.mod.event.EventType] = js.undefined
+  var EventType: js.UndefOr[typings.mangopay2NodejsSdk.eventMod.event.EventType] = js.undefined
   
   var Id: js.UndefOr[String] = js.undefined
   

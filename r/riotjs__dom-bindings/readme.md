@@ -1,7 +1,7 @@
 
 # Scala.js typings for riotjs__dom-bindings
 
-Typings are for version 5.0.0-alpha.2
+Typings are for version 6.0.7
 
 ## Library description:
 Riot.js DOM bindings
@@ -10,10 +10,10 @@ Riot.js DOM bindings
 | ------------------ | :-------------: |
 | Full name          | @riotjs/dom-bindings |
 | Keywords           | riot, dom-bindings |
-| # releases         | 53 |
-| # dependents       | 2 |
-| # downloads        | 41522 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 6836.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40riotjs%2Fdom-bindings)

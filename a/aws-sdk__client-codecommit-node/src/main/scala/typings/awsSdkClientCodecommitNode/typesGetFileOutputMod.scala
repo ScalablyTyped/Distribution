@@ -5,7 +5,6 @@ import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.NORM
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.SYMLINK
 import typings.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ object typesGetFileOutputMod {
     /**
       * <p>The base-64 encoded binary data object that represents the content of the file.</p>
       */
-    var fileContent: Uint8Array
+    var fileContent: js.typedarray.Uint8Array
     
     /**
       * <p>The extrapolated file mode permissions of the blob. Valid values include strings such as EXECUTABLE and not numeric values.</p> <note> <p>The file mode permissions returned by this API are not the standard file mode permission values, such as 100644, but rather extrapolated values. See below for a full list of supported return values.</p> </note>
@@ -58,7 +57,7 @@ object typesGetFileOutputMod {
       $metadata: ResponseMetadata,
       blobId: String,
       commitId: String,
-      fileContent: Uint8Array,
+      fileContent: js.typedarray.Uint8Array,
       fileMode: EXECUTABLE | NORMAL | SYMLINK | String,
       filePath: String,
       fileSize: Double
@@ -75,7 +74,7 @@ object typesGetFileOutputMod {
       
       inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
       
-      inline def setFileContent(value: Uint8Array): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+      inline def setFileContent(value: js.typedarray.Uint8Array): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
       
       inline def setFileMode(value: EXECUTABLE | NORMAL | SYMLINK | String): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
       

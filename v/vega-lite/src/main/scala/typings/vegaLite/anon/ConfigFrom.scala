@@ -8,7 +8,7 @@ trait ConfigFrom extends StObject {
   
   var configFrom: js.UndefOr[String] = js.undefined
   
-  var configValue: js.UndefOr[js.Any] = js.undefined
+  var configValue: js.UndefOr[Any] = js.undefined
 }
 object ConfigFrom {
   
@@ -23,7 +23,7 @@ object ConfigFrom {
     
     inline def setConfigFromUndefined: Self = StObject.set(x, "configFrom", js.undefined)
     
-    inline def setConfigValue(value: js.Any): Self = StObject.set(x, "configValue", value.asInstanceOf[js.Any])
+    inline def setConfigValue(value: Any): Self = StObject.set(x, "configValue", value.asInstanceOf[js.Any])
     
     inline def setConfigValueUndefined: Self = StObject.set(x, "configValue", js.undefined)
   }

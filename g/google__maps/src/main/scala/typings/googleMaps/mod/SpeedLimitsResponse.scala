@@ -23,10 +23,10 @@ object SpeedLimitsResponse {
     
     inline def setSnappedPoints(value: js.Array[SnappedPoint]): Self = StObject.set(x, "snappedPoints", value.asInstanceOf[js.Any])
     
-    inline def setSnappedPointsVarargs(value: SnappedPoint*): Self = StObject.set(x, "snappedPoints", js.Array(value :_*))
+    inline def setSnappedPointsVarargs(value: SnappedPoint*): Self = StObject.set(x, "snappedPoints", js.Array(value*))
     
     inline def setSpeedLimits(value: js.Array[SpeedLimit]): Self = StObject.set(x, "speedLimits", value.asInstanceOf[js.Any])
     
-    inline def setSpeedLimitsVarargs(value: SpeedLimit*): Self = StObject.set(x, "speedLimits", js.Array(value :_*))
+    inline def setSpeedLimitsVarargs(value: SpeedLimit*): Self = StObject.set(x, "speedLimits", js.Array(value*))
   }
 }

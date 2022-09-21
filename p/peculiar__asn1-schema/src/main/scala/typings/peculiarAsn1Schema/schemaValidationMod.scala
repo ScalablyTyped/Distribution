@@ -1,21 +1,26 @@
 package typings.peculiarAsn1Schema
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@peculiar/asn1-schema/build/types/errors/schema_validation", JSImport.Namespace)
-@js.native
-object schemaValidationMod extends js.Object {
+object schemaValidationMod {
+  
+  @JSImport("@peculiar/asn1-schema/build/types/errors/schema_validation", "AsnSchemaValidationError")
   @js.native
-  class AsnSchemaValidationError () extends Error {
+  open class AsnSchemaValidationError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
+    
     var schemas: js.Array[String] = js.native
   }
-  
 }
-

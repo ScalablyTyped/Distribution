@@ -7,6 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
+  trait DialogConfigOptions extends StObject {
+    
+    var isAboveFullscreenDialog: js.UndefOr[Boolean] = js.undefined
+  }
+  object DialogConfigOptions {
+    
+    inline def apply(): DialogConfigOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DialogConfigOptions]
+    }
+    
+    extension [Self <: DialogConfigOptions](x: Self) {
+      
+      inline def setIsAboveFullscreenDialog(value: Boolean): Self = StObject.set(x, "isAboveFullscreenDialog", value.asInstanceOf[js.Any])
+      
+      inline def setIsAboveFullscreenDialogUndefined: Self = StObject.set(x, "isAboveFullscreenDialog", js.undefined)
+    }
+  }
+  
   @js.native
   trait MDCDialogCloseEvent
     extends StObject

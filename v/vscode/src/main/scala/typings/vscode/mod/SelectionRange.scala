@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "SelectionRange")
 @js.native
-class SelectionRange protected () extends StObject {
+open class SelectionRange protected () extends StObject {
   /**
     * Creates a new selection range.
     *
@@ -22,7 +22,7 @@ class SelectionRange protected () extends StObject {
   var parent: js.UndefOr[SelectionRange] = js.native
   
   /**
-    * The [range](#Range) of this selection range.
+    * The {@link Range} of this selection range.
     */
   var range: Range = js.native
 }

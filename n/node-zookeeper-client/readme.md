@@ -10,10 +10,10 @@ A pure Javascript ZooKeeper client for Node.js.
 | ------------------ | :-------------: |
 | Full name          | node-zookeeper-client |
 | Keywords           | zookeeper, client, pure, javascript |
-| # releases         | 3 |
-| # dependents       | 204 |
-| # downloads        | 1866592 |
-| # stars            | 14 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 149170.33333333334 |
+| # stars            | 528.0 |
 
 ## Links
 - [Homepage](https://github.com/alexguan/node-zookeeper-client#readme)

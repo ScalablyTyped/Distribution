@@ -185,7 +185,7 @@ object LegendBubbleLegendOptions {
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: LegendBubbleLegendRangesOptions*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: LegendBubbleLegendRangesOptions*): Self = StObject.set(x, "ranges", js.Array(value*))
     
     inline def setSizeBy(value: BubbleSizeByValue): Self = StObject.set(x, "sizeBy", value.asInstanceOf[js.Any])
     

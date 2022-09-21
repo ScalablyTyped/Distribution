@@ -1,9 +1,5 @@
 package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,18 +9,17 @@ trait ParamsResourceDebuggerDebuggeesBreakpointsSet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * The canary option set by the user upon setting breakpoint.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var canaryOption: js.UndefOr[String] = js.undefined
   
   /**
-    * The client version making the call. Schema: `domain/type/version` (e.g.,
-    * `google.com/intellij/v1`).
+    * Required. The client version making the call. Schema: `domain/type/version` (e.g., `google.com/intellij/v1`).
     */
   var clientVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * ID of the debuggee where the breakpoint is to be set.
+    * Required. ID of the debuggee where the breakpoint is to be set.
     */
   var debuggeeId: js.UndefOr[String] = js.undefined
   
@@ -42,9 +37,9 @@ object ParamsResourceDebuggerDebuggeesBreakpointsSet {
   
   extension [Self <: ParamsResourceDebuggerDebuggeesBreakpointsSet](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setCanaryOption(value: String): Self = StObject.set(x, "canaryOption", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setCanaryOptionUndefined: Self = StObject.set(x, "canaryOption", js.undefined)
     
     inline def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     

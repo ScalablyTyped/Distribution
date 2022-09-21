@@ -15,7 +15,13 @@ trait QueryTimelineSample extends StObject {
   /** Milliseconds elapsed since the start of query execution. */
   var elapsedMs: js.UndefOr[String] = js.undefined
   
-  /** Total parallel units of work remaining for the active stages. */
+  /**
+    * Units of work that can be scheduled immediately. Providing additional slots for these units of work will speed up the query, provided no other query in the reservation needs
+    * additional slots.
+    */
+  var estimatedRunnableUnits: js.UndefOr[String] = js.undefined
+  
+  /** Total units of work remaining for the query. This number can be revised (increased or decreased) while the query is running. */
   var pendingUnits: js.UndefOr[String] = js.undefined
   
   /** Cumulative slot-ms consumed by the query. */
@@ -41,6 +47,10 @@ object QueryTimelineSample {
     inline def setElapsedMs(value: String): Self = StObject.set(x, "elapsedMs", value.asInstanceOf[js.Any])
     
     inline def setElapsedMsUndefined: Self = StObject.set(x, "elapsedMs", js.undefined)
+    
+    inline def setEstimatedRunnableUnits(value: String): Self = StObject.set(x, "estimatedRunnableUnits", value.asInstanceOf[js.Any])
+    
+    inline def setEstimatedRunnableUnitsUndefined: Self = StObject.set(x, "estimatedRunnableUnits", js.undefined)
     
     inline def setPendingUnits(value: String): Self = StObject.set(x, "pendingUnits", value.asInstanceOf[js.Any])
     

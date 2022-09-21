@@ -14,7 +14,7 @@ object revertMod {
   
   @JSImport("nodegit/revert", "Revert")
   @js.native
-  class Revert () extends StObject
+  open class Revert () extends StObject
   /* static members */
   object Revert {
     
@@ -40,7 +40,7 @@ object revertMod {
   
   trait RevertOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var checkoutOpts: js.UndefOr[CheckoutOptions] = js.undefined
     

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaResourcePolicyVmMaintenancePolicy extends StObject {
   
+  var concurrencyControlGroup: js.UndefOr[SchemaResourcePolicyVmMaintenancePolicyConcurrencyControl] = js.undefined
+  
   /**
     * Maintenance windows that are applied to VMs covered by this policy.
     */
@@ -19,6 +21,10 @@ object SchemaResourcePolicyVmMaintenancePolicy {
   }
   
   extension [Self <: SchemaResourcePolicyVmMaintenancePolicy](x: Self) {
+    
+    inline def setConcurrencyControlGroup(value: SchemaResourcePolicyVmMaintenancePolicyConcurrencyControl): Self = StObject.set(x, "concurrencyControlGroup", value.asInstanceOf[js.Any])
+    
+    inline def setConcurrencyControlGroupUndefined: Self = StObject.set(x, "concurrencyControlGroup", js.undefined)
     
     inline def setMaintenanceWindow(value: SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
     

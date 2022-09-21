@@ -1,22 +1,26 @@
 package typings.reactNativeSvg
 
-import typings.reactNativeSvg.mod.AlignmentBaseline
-import typings.reactNativeSvg.mod.FillRule
-import typings.reactNativeSvg.mod.FontStretch
-import typings.reactNativeSvg.mod.FontStyle
-import typings.reactNativeSvg.mod.FontVariant
-import typings.reactNativeSvg.mod.FontVariantLigatures
-import typings.reactNativeSvg.mod.LengthAdjust
-import typings.reactNativeSvg.mod.Linecap
-import typings.reactNativeSvg.mod.Linejoin
-import typings.reactNativeSvg.mod.TextAnchor
-import typings.reactNativeSvg.mod.TextDecoration
-import typings.reactNativeSvg.mod.TextPathMethod
-import typings.reactNativeSvg.mod.TextPathMidLine
-import typings.reactNativeSvg.mod.TextPathSpacing
-import typings.reactNativeSvg.mod.Units
-import typings.reactNativeSvg.mod._BaselineShift
-import typings.reactNativeSvg.mod._FontWeight
+import typings.reactNativeSvg.markerMod.MarkerUnits
+import typings.reactNativeSvg.markerMod.Orient
+import typings.reactNativeSvg.maskMod.TMaskUnits
+import typings.reactNativeSvg.typesMod.AlignmentBaseline
+import typings.reactNativeSvg.typesMod.FillRule
+import typings.reactNativeSvg.typesMod.FontStretch
+import typings.reactNativeSvg.typesMod.FontStyle
+import typings.reactNativeSvg.typesMod.FontVariant
+import typings.reactNativeSvg.typesMod.FontVariantLigatures
+import typings.reactNativeSvg.typesMod.LengthAdjust
+import typings.reactNativeSvg.typesMod.Linecap
+import typings.reactNativeSvg.typesMod.Linejoin
+import typings.reactNativeSvg.typesMod.TextAnchor
+import typings.reactNativeSvg.typesMod.TextDecoration
+import typings.reactNativeSvg.typesMod.TextPathMethod
+import typings.reactNativeSvg.typesMod.TextPathMidLine
+import typings.reactNativeSvg.typesMod.TextPathSpacing
+import typings.reactNativeSvg.typesMod.Units
+import typings.reactNativeSvg.typesMod.VectorEffect
+import typings.reactNativeSvg.typesMod._BaselineShift
+import typings.reactNativeSvg.typesMod._FontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,8 +28,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactNativeSvgStrings {
   
   @js.native
-  sealed trait default extends StObject
+  sealed trait default
+    extends StObject
+       with VectorEffect
   inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait `1` extends StObject
+  inline def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
   sealed trait `100`
@@ -102,8 +112,15 @@ object reactNativeSvgStrings {
   @js.native
   sealed trait auto
     extends StObject
+       with Orient
        with TextPathSpacing
   inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait `auto-start-reverse`
+    extends StObject
+       with Orient
+  inline def `auto-start-reverse`: `auto-start-reverse` = "auto-start-reverse".asInstanceOf[`auto-start-reverse`]
   
   @js.native
   sealed trait baseline
@@ -229,7 +246,9 @@ object reactNativeSvgStrings {
   inline def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   
   @js.native
-  sealed trait inherit extends StObject
+  sealed trait inherit
+    extends StObject
+       with VectorEffect
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
@@ -276,11 +295,15 @@ object reactNativeSvgStrings {
   inline def narrower: narrower = "narrower".asInstanceOf[narrower]
   
   @js.native
-  sealed trait `non-scaling-stroke` extends StObject
+  sealed trait `non-scaling-stroke`
+    extends StObject
+       with VectorEffect
   inline def `non-scaling-stroke`: `non-scaling-stroke` = "non-scaling-stroke".asInstanceOf[`non-scaling-stroke`]
   
   @js.native
-  sealed trait nonScalingStroke extends StObject
+  sealed trait nonScalingStroke
+    extends StObject
+       with VectorEffect
   inline def nonScalingStroke: nonScalingStroke = "nonScalingStroke".asInstanceOf[nonScalingStroke]
   
   @js.native
@@ -288,6 +311,7 @@ object reactNativeSvgStrings {
     extends StObject
        with FontVariantLigatures
        with TextDecoration
+       with VectorEffect
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -309,6 +333,7 @@ object reactNativeSvgStrings {
   @js.native
   sealed trait objectBoundingBox
     extends StObject
+       with TMaskUnits
        with Units
   inline def objectBoundingBox: objectBoundingBox = "objectBoundingBox".asInstanceOf[objectBoundingBox]
   
@@ -392,6 +417,12 @@ object reactNativeSvgStrings {
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
+  sealed trait strokeWidth
+    extends StObject
+       with MarkerUnits
+  inline def strokeWidth: strokeWidth = "strokeWidth".asInstanceOf[strokeWidth]
+  
+  @js.native
   sealed trait sub
     extends StObject
        with _BaselineShift
@@ -452,12 +483,16 @@ object reactNativeSvgStrings {
   inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
-  sealed trait uri extends StObject
+  sealed trait uri
+    extends StObject
+       with VectorEffect
   inline def uri: uri = "uri".asInstanceOf[uri]
   
   @js.native
   sealed trait userSpaceOnUse
     extends StObject
+       with MarkerUnits
+       with TMaskUnits
        with Units
   inline def userSpaceOnUse: userSpaceOnUse = "userSpaceOnUse".asInstanceOf[userSpaceOnUse]
   

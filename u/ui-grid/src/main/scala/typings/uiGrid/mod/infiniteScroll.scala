@@ -23,15 +23,15 @@ object infiniteScroll {
       * for users.
       *
       * See infinite_scroll tutorial for example of usage
-      * @param {boolean} scrollUp if set to false flags that there are no more pages upwards, so don't fire any
+      * @param scrollUp if set to false flags that there are no more pages upwards, so don't fire any
       *        more infinite scroll events upward
-      * @param {boolean} scrollDown if set to false flags that there are no more pages downwards, so don't fire
+      * @param scrollDown if set to false flags that there are no more pages downwards, so don't fire
       *        any more infinite scroll events downward
-      * @returns {ng.IPromise<any>} a promise that is resolved when the grid scrolling is fully adjusted.
+      * @returns a promise that is resolved when the grid scrolling is fully adjusted.
       *          If you're planning to remove pages, you should wait on this promise first, or you'll break the
       *          scroll positioning
       */
-    def dataLoaded(scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
+    def dataLoaded(scrollUp: Boolean, scrollDown: Boolean): IPromise[Any] = js.native
     
     /**
       * Adjusts the scroll position after you've removed data at the bottom.
@@ -39,19 +39,19 @@ object infiniteScroll {
       * and if you're doing this in response to a needMoreData you should wait
       * until the promise from loadData has resolved before you start removing data
       *
-      * @param {IGridInstance} grid the grid we're working on
-      * @param {boolean} scrollUp flag that there are pages upwards, fire infinite scroll events upward
-      * @param {boolean} scrollDown flag that there are pages downwards, so fire infinite scroll events downward
-      * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
+      * @param grid the grid we're working on
+      * @param scrollUp flag that there are pages upwards, fire infinite scroll events upward
+      * @param scrollDown flag that there are pages downwards, so fire infinite scroll events downward
+      * @returns A promise that is resolved when scrolling finishes
       */
-    def dataRemovedBottom(grid: IGridInstanceOf[TEntity], scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
+    def dataRemovedBottom(grid: IGridInstanceOf[TEntity], scrollUp: Boolean, scrollDown: Boolean): IPromise[Any] = js.native
     /**
       * Adjusts the scroll position after you've removed data at the bottom
-      * @param {boolean} scrollUp flag that there are pages upwards, fire infinite scroll events upward
-      * @param {boolean} scrollDown flag that there are pages downwards, so fire infinite scroll events downward
-      * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
+      * @param scrollUp flag that there are pages upwards, fire infinite scroll events upward
+      * @param scrollDown flag that there are pages downwards, so fire infinite scroll events downward
+      * @returns A promise that is resolved when scrolling finishes
       */
-    def dataRemovedBottom(scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
+    def dataRemovedBottom(scrollUp: Boolean, scrollDown: Boolean): IPromise[Any] = js.native
     
     /**
       * Adjusts the scroll position after you've removed data at the bottom.
@@ -59,19 +59,19 @@ object infiniteScroll {
       * and if you're doing this in response to a needMoreData you should wait
       * until the promise from loadData has resolved before you start removing data
       *
-      * @param {IGridInstance} grid the grid we're working on
-      * @param {boolean} scrollUp flag that there are pages upwards, fire infinite scroll events upward
-      * @param {boolean} scrollDown flag that there are pages downwards, so fire infinite scroll events downward
-      * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
+      * @param grid the grid we're working on
+      * @param scrollUp flag that there are pages upwards, fire infinite scroll events upward
+      * @param scrollDown flag that there are pages downwards, so fire infinite scroll events downward
+      * @returns A promise that is resolved when scrolling finishes
       */
-    def dataRemovedTop(grid: IGridInstanceOf[TEntity], scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
+    def dataRemovedTop(grid: IGridInstanceOf[TEntity], scrollUp: Boolean, scrollDown: Boolean): IPromise[Any] = js.native
     /**
       * Adjusts the scroll position after you've removed data at the bottom
-      * @param {boolean} scrollUp flag that there are pages upwards, fire infinite scroll events upward
-      * @param {boolean} scrollDown flag that there are pages downwards, so fire infinite scroll events downward
-      * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
+      * @param scrollUp flag that there are pages upwards, fire infinite scroll events upward
+      * @param scrollDown flag that there are pages downwards, so fire infinite scroll events downward
+      * @returns A promise that is resolved when scrolling finishes
       */
-    def dataRemovedTop(scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
+    def dataRemovedTop(scrollUp: Boolean, scrollDown: Boolean): IPromise[Any] = js.native
     
     // Events
     var on: NeedLoadMoreData = js.native
@@ -83,11 +83,11 @@ object infiniteScroll {
       * existing grid for a new data set
       *
       * You must tell us whether there is data upwards or downwards after the reset
-      * @param {boolean} scrollUp flag that there are pages upwards, fire infinite scroll events upward
-      * @param {boolean} scrollDown flag that there are pages downwards, so fire infinite scroll events downward
-      * @returns {ng.IPromise<any>} A promise that is resolved when scrolling finishes
+      * @param scrollUp flag that there are pages upwards, fire infinite scroll events upward
+      * @param scrollDown flag that there are pages downwards, so fire infinite scroll events downward
+      * @returns A promise that is resolved when scrolling finishes
       */
-    def resetScroll(scrollUp: Boolean, scrollDown: Boolean): IPromise[js.Any] = js.native
+    def resetScroll(scrollUp: Boolean, scrollDown: Boolean): IPromise[Any] = js.native
     
     /**
       * Saves the scroll percentage and number of visible rows before you adjust the data,

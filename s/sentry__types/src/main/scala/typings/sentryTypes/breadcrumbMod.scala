@@ -2,6 +2,7 @@ package typings.sentryTypes
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sentryTypes.severityMod.Severity
+import typings.sentryTypes.severityMod.SeverityLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,11 @@ object breadcrumbMod {
     
     var category: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var data: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var event_id: js.UndefOr[String] = js.undefined
     
-    var level: js.UndefOr[Severity] = js.undefined
+    var level: js.UndefOr[Severity | SeverityLevel] = js.undefined
     
     var message: js.UndefOr[String] = js.undefined
     
@@ -37,7 +38,7 @@ object breadcrumbMod {
       
       inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -45,7 +46,7 @@ object breadcrumbMod {
       
       inline def setEvent_idUndefined: Self = StObject.set(x, "event_id", js.undefined)
       
-      inline def setLevel(value: Severity): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Severity | SeverityLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
@@ -63,5 +64,5 @@ object breadcrumbMod {
     }
   }
   
-  type BreadcrumbHint = StringDictionary[js.Any]
+  type BreadcrumbHint = StringDictionary[Any]
 }

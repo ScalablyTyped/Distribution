@@ -19,5 +19,5 @@ trait Modules extends StObject {
   def Item(Index: String): Module = js.native
   def Item(Index: Double): Module = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

@@ -8,7 +8,7 @@ object xmlCharRefMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlCharRef", JSImport.Default)
   @js.native
-  class default[Parent] protected ()
+  open class default[Parent] protected ()
     extends StObject
        with XmlCharRef[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlCharRefOptions) = this()
@@ -47,13 +47,13 @@ object xmlCharRefMod {
   @js.native
   trait XmlCharRef[Parent] extends StObject {
     
-    /* private */ var _char: js.Any = js.native
+    /* private */ var _char: Any = js.native
     
-    /* private */ var _hex: js.Any = js.native
+    /* private */ var _hex: Any = js.native
     
-    /* private */ val _parent: js.Any = js.native
+    /* private */ val _parent: Any = js.native
     
-    /* private */ val _validation: js.Any = js.native
+    /* private */ val _validation: Any = js.native
     
     /**
       * Gets the character of this character reference.

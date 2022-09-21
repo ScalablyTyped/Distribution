@@ -43,7 +43,7 @@ object ListIdentityPoolUsageResponse {
     
     inline def setIdentityPoolUsagesUndefined: Self = StObject.set(x, "IdentityPoolUsages", js.undefined)
     
-    inline def setIdentityPoolUsagesVarargs(value: IdentityPoolUsage*): Self = StObject.set(x, "IdentityPoolUsages", js.Array(value :_*))
+    inline def setIdentityPoolUsagesVarargs(value: IdentityPoolUsage*): Self = StObject.set(x, "IdentityPoolUsages", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

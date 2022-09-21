@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vuedraggable" : "2.24.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vuedraggable" : "2.24.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

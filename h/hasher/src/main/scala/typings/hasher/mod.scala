@@ -26,9 +26,9 @@ object mod extends Shortcut {
     * <br />- inspired by Robert Penner's AS3 Signals.
     * @author Miller Medeiros
     */
-  class changed ()
+  open class changed ()
     extends StObject
-       with Signal[js.Any]
+       with Signal[Any]
   
   // <static> {signals.Signal} hasher.initialized
   // Signal dispatched when hasher is initialized. - pass current hash as first parameter to listeners.
@@ -40,9 +40,9 @@ object mod extends Shortcut {
     * <br />- inspired by Robert Penner's AS3 Signals.
     * @author Miller Medeiros
     */
-  class initialized ()
+  open class initialized ()
     extends StObject
-       with Signal[js.Any]
+       with Signal[Any]
   
   // default value: '/';
   // <static> {signals.Signal} hasher.stopped
@@ -55,9 +55,9 @@ object mod extends Shortcut {
     * <br />- inspired by Robert Penner's AS3 Signals.
     * @author Miller Medeiros
     */
-  class stopped ()
+  open class stopped ()
     extends StObject
-       with Signal[js.Any]
+       with Signal[Any]
   
   object HasherJs {
     
@@ -76,7 +76,7 @@ object mod extends Shortcut {
       // avoid conflicts with elements that contain ID equal to hash value;
       // <static> {signals.Signal} hasher.changed
       // Signal dispatched when hash value changes. - pass current hash as 1st parameter to listeners and previous hash value as 2nd parameter.
-      var changed: Signal[js.Any]
+      var changed: Signal[Any]
       
       // Method Detail
       // <static> hasher.dispose()
@@ -109,7 +109,7 @@ object mod extends Shortcut {
       
       // <static> {signals.Signal} hasher.initialized
       // Signal dispatched when hasher is initialized. - pass current hash as first parameter to listeners.
-      var initialized: Signal[js.Any]
+      var initialized: Signal[Any]
       
       // hasher won't dispatch CHANGE events by manually typing a new value or pressing the back/forward buttons before calling this method.
       // <static> {boolean} hasher.isActive()
@@ -153,28 +153,28 @@ object mod extends Shortcut {
       // default value: '/';
       // <static> {signals.Signal} hasher.stopped
       // Signal dispatched when hasher is stopped. - pass current hash as first parameter to listeners
-      var stopped: Signal[js.Any]
+      var stopped: Signal[Any]
     }
     object HasherStatic {
       
       inline def apply(
         VERSION: String,
         appendHash: String,
-        changed: Signal[js.Any],
+        changed: Signal[Any],
         dispose: () => Unit,
         getBaseURL: () => String,
         getHash: () => String,
         getHashAsArray: () => js.Array[String],
         getURL: () => String,
         init: () => Unit,
-        initialized: Signal[js.Any],
+        initialized: Signal[Any],
         isActive: () => Boolean,
         prependHash: String,
         replaceHash: /* repeated */ String => Unit,
         separator: String,
         setHash: /* repeated */ String => Unit,
         stop: () => Unit,
-        stopped: Signal[js.Any]
+        stopped: Signal[Any]
       ): HasherStatic = {
         val __obj = js.Dynamic.literal(VERSION = VERSION.asInstanceOf[js.Any], appendHash = appendHash.asInstanceOf[js.Any], changed = changed.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), getBaseURL = js.Any.fromFunction0(getBaseURL), getHash = js.Any.fromFunction0(getHash), getHashAsArray = js.Any.fromFunction0(getHashAsArray), getURL = js.Any.fromFunction0(getURL), init = js.Any.fromFunction0(init), initialized = initialized.asInstanceOf[js.Any], isActive = js.Any.fromFunction0(isActive), prependHash = prependHash.asInstanceOf[js.Any], replaceHash = js.Any.fromFunction1(replaceHash), separator = separator.asInstanceOf[js.Any], setHash = js.Any.fromFunction1(setHash), stop = js.Any.fromFunction0(stop), stopped = stopped.asInstanceOf[js.Any])
         __obj.asInstanceOf[HasherStatic]
@@ -184,7 +184,7 @@ object mod extends Shortcut {
         
         inline def setAppendHash(value: String): Self = StObject.set(x, "appendHash", value.asInstanceOf[js.Any])
         
-        inline def setChanged(value: Signal[js.Any]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+        inline def setChanged(value: Signal[Any]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
         
         inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
         
@@ -198,7 +198,7 @@ object mod extends Shortcut {
         
         inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
         
-        inline def setInitialized(value: Signal[js.Any]): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
+        inline def setInitialized(value: Signal[Any]): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
         
         inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
         
@@ -212,7 +212,7 @@ object mod extends Shortcut {
         
         inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
         
-        inline def setStopped(value: Signal[js.Any]): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+        inline def setStopped(value: Signal[Any]): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
         
         inline def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
       }

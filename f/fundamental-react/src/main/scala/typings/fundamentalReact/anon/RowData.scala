@@ -20,6 +20,6 @@ object RowData {
     
     inline def setRowData(value: js.Array[String | ReactNode]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
-    inline def setRowDataVarargs(value: (String | ReactNode)*): Self = StObject.set(x, "rowData", js.Array(value :_*))
+    inline def setRowDataVarargs(value: (String | ReactNode)*): Self = StObject.set(x, "rowData", js.Array(value*))
   }
 }

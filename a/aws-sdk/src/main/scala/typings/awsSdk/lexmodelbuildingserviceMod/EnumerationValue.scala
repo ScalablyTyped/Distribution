@@ -29,7 +29,7 @@ object EnumerationValue {
     
     inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
     
-    inline def setSynonymsVarargs(value: Value*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: Value*): Self = StObject.set(x, "synonyms", js.Array(value*))
     
     inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Input
 
+import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,6 +31,26 @@ trait TouchPoint extends StObject {
     * Rotation angle (default: 0.0).
     */
   var rotationAngle: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The normalized tangential pressure, which has a range of [-1,1] (default: 0).
+    */
+  var tangentialPressure: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The plane angle between the Y-Z plane and the plane containing both the stylus axis and the Y axis, in degrees of the range [-90,90], a positive tiltX is to the right (default: 0)
+    */
+  var tiltX: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The plane angle between the X-Z plane and the plane containing both the stylus axis and the X axis, in degrees of the range [-90,90], a positive tiltY is towards the user (default: 0).
+    */
+  var tiltY: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The clockwise rotation of a pen stylus around its own major axis, in degrees in the range [0,359] (default: 0).
+    */
+  var twist: js.UndefOr[integer] = js.undefined
   
   /**
     * X coordinate of the event relative to the main frame's viewport in CSS pixels.
@@ -70,6 +91,22 @@ object TouchPoint {
     inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
     
     inline def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
+    
+    inline def setTangentialPressure(value: Double): Self = StObject.set(x, "tangentialPressure", value.asInstanceOf[js.Any])
+    
+    inline def setTangentialPressureUndefined: Self = StObject.set(x, "tangentialPressure", js.undefined)
+    
+    inline def setTiltX(value: integer): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
+    
+    inline def setTiltXUndefined: Self = StObject.set(x, "tiltX", js.undefined)
+    
+    inline def setTiltY(value: integer): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
+    
+    inline def setTiltYUndefined: Self = StObject.set(x, "tiltY", js.undefined)
+    
+    inline def setTwist(value: integer): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
+    
+    inline def setTwistUndefined: Self = StObject.set(x, "twist", js.undefined)
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

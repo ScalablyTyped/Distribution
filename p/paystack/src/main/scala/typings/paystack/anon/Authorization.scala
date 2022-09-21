@@ -1,6 +1,5 @@
 package typings.paystack.anon
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait Authorization extends StObject {
   
   var plan: String
   
-  var start_date: js.UndefOr[Date] = js.undefined
+  var start_date: js.UndefOr[js.Date] = js.undefined
 }
 object Authorization {
   
@@ -30,7 +29,7 @@ object Authorization {
     
     inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    inline def setStart_date(value: Date): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
+    inline def setStart_date(value: js.Date): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
     
     inline def setStart_dateUndefined: Self = StObject.set(x, "start_date", js.undefined)
   }

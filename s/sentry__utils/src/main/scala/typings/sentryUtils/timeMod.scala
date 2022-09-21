@@ -6,23 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object timeMod {
   
-  @JSImport("@sentry/utils/dist/time", "browserPerformanceTimeOrigin")
+  @JSImport("@sentry/utils/types/time", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@sentry/utils/types/time", "browserPerformanceTimeOrigin")
   @js.native
   val browserPerformanceTimeOrigin: js.UndefOr[Double] = js.native
   
-  @JSImport("@sentry/utils/dist/time", "dateTimestampInSeconds")
+  @JSImport("@sentry/utils/types/time", "_browserPerformanceTimeOriginMode")
   @js.native
-  val dateTimestampInSeconds: js.Any = js.native
+  def browserPerformanceTimeOriginMode: String = js.native
   
-  @JSImport("@sentry/utils/dist/time", "timestampInSeconds")
-  @js.native
-  val timestampInSeconds: js.Any = js.native
+  inline def browserPerformanceTimeOriginMode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_browserPerformanceTimeOriginMode")(x.asInstanceOf[js.Any])
   
-  @JSImport("@sentry/utils/dist/time", "timestampWithMs")
-  @js.native
-  val timestampWithMs: js.Any = js.native
+  inline def dateTimestampInSeconds(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimestampInSeconds")().asInstanceOf[Double]
   
-  @JSImport("@sentry/utils/dist/time", "usingPerformanceAPI")
+  inline def timestampInSeconds(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampInSeconds")().asInstanceOf[Double]
+  
+  inline def timestampWithMs(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampWithMs")().asInstanceOf[Double]
+  
+  @JSImport("@sentry/utils/types/time", "usingPerformanceAPI")
   @js.native
   val usingPerformanceAPI: Boolean = js.native
 }

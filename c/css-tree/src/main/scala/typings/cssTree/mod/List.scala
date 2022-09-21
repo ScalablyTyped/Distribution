@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("css-tree", "List")
 @js.native
-class List[TData] () extends StObject {
+open class List[TData] () extends StObject {
   
   def append(item: ListItem[TData]): List[TData] = js.native
   

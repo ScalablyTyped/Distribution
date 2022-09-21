@@ -10,7 +10,7 @@ trait IMotorEnabledJoint extends StObject {
   /**
     * Physics joint
     */
-  var physicsJoint: js.Any = js.native
+  var physicsJoint: Any = js.native
   
   /**
     * Sets the limit of the motor

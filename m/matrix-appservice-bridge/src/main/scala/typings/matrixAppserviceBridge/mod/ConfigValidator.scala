@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "ConfigValidator")
 @js.native
-class ConfigValidator protected ()
+open class ConfigValidator protected ()
   extends typings.matrixAppserviceBridge.configValidatorMod.ConfigValidator {
   /**
     * Construct a validator of YAML files.
@@ -26,6 +26,6 @@ object ConfigValidator {
   
   @JSImport("matrix-appservice-bridge", "ConfigValidator.loadFromFile")
   @js.native
-  def loadFromFile: js.Any = js.native
-  inline def loadFromFile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadFromFile")(x.asInstanceOf[js.Any])
+  def loadFromFile: Any = js.native
+  inline def loadFromFile_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadFromFile")(x.asInstanceOf[js.Any])
 }

@@ -11,8 +11,8 @@ trait DroppableProvided extends StObject {
   
   var droppableProps: DroppableProvidedProps = js.native
   
-  def innerRef(): js.Any = js.native
-  def innerRef(element: HTMLElement): js.Any = js.native
+  def innerRef(): Any = js.native
+  def innerRef(element: HTMLElement): Any = js.native
   
   var placeholder: js.UndefOr[ReactElement | Null] = js.native
 }

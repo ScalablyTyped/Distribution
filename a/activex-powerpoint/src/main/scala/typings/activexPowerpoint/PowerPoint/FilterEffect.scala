@@ -9,7 +9,7 @@ trait FilterEffect extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.FilterEffect_typekey")
   var PowerPointDotFilterEffect_typekey: FilterEffect
@@ -24,7 +24,7 @@ object FilterEffect {
   
   inline def apply(
     Application: Application,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotFilterEffect_typekey: FilterEffect,
     Reveal: MsoTriState,
     Subtype: MsoAnimFilterEffectSubtype,
@@ -39,7 +39,7 @@ object FilterEffect {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotFilterEffect_typekey(value: FilterEffect): Self = StObject.set(x, "PowerPoint.FilterEffect_typekey", value.asInstanceOf[js.Any])
     

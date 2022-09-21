@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-first
 
-Typings are for version 1.0.4
+Typings are for version 1.0.7
 
 ## Library description:
 Returns the first result from an async iterator
@@ -10,13 +10,13 @@ Returns the first result from an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-first |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 13 |
-| # downloads        | 262234 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 215461.0 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-first#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/it-first)

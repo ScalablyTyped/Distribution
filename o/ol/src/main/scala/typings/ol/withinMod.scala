@@ -8,7 +8,7 @@ object withinMod {
   
   @JSImport("ol/format/filter/Within", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.ol.spatialMod.default {
     def this(geometryName: String, geometry: typings.ol.geometryMod.default) = this()
     def this(geometryName: String, geometry: typings.ol.geometryMod.default, opt_srsName: String) = this()

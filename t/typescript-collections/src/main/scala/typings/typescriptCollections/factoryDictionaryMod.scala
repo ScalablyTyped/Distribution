@@ -8,7 +8,7 @@ object factoryDictionaryMod {
   
   @JSImport("typescript-collections/dist/lib/FactoryDictionary", JSImport.Default)
   @js.native
-  class default[K, V] protected () extends FactoryDictionary[K, V] {
+  open class default[K, V] protected () extends FactoryDictionary[K, V] {
     /**
       * Creates an empty dictionary.
       * @class <p>Dictionaries map keys to values; each key can map to at most one value.

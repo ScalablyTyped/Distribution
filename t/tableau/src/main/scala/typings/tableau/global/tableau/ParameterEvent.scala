@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.ParameterEvent")
 @js.native
-class ParameterEvent ()
+open class ParameterEvent ()
   extends StObject
      with typings.tableau.tableau.ParameterEvent {
   

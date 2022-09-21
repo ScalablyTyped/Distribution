@@ -34,7 +34,7 @@ object DescribeExportConfigurationsRequest {
     
     inline def setExportIdsUndefined: Self = StObject.set(x, "exportIds", js.undefined)
     
-    inline def setExportIdsVarargs(value: ConfigurationsExportId*): Self = StObject.set(x, "exportIds", js.Array(value :_*))
+    inline def setExportIdsVarargs(value: ConfigurationsExportId*): Self = StObject.set(x, "exportIds", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

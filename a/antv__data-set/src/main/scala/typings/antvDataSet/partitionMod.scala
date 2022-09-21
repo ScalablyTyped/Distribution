@@ -9,52 +9,43 @@ object partitionMod {
   @js.native
   trait PartitionApi extends StObject {
     
-    def group(group_by: String): js.Any = js.native
-    def group(group_by: String, order_by: String): js.Any = js.native
-    def group(group_by: String, order_by: js.Array[String]): js.Any = js.native
-    def group(group_by: String, order_by: js.Function1[/* item */ js.Any, Double]): js.Any = js.native
-    def group(group_by: js.Array[String]): js.Any = js.native
-    def group(group_by: js.Array[String], order_by: String): js.Any = js.native
-    def group(group_by: js.Array[String], order_by: js.Array[String]): js.Any = js.native
-    def group(group_by: js.Array[String], order_by: js.Function1[/* item */ js.Any, Double]): js.Any = js.native
-    def group(group_by: js.Function1[/* item */ js.Any, String]): js.Any = js.native
-    def group(group_by: js.Function1[/* item */ js.Any, String], order_by: String): js.Any = js.native
-    def group(group_by: js.Function1[/* item */ js.Any, String], order_by: js.Array[String]): js.Any = js.native
-    def group(
-      group_by: js.Function1[/* item */ js.Any, String],
-      order_by: js.Function1[/* item */ js.Any, Double]
-    ): js.Any = js.native
+    def group(group_by: String): Any = js.native
+    def group(group_by: String, order_by: String): Any = js.native
+    def group(group_by: String, order_by: js.Array[String]): Any = js.native
+    def group(group_by: String, order_by: js.Function1[/* item */ Any, Double]): Any = js.native
+    def group(group_by: js.Array[String]): Any = js.native
+    def group(group_by: js.Array[String], order_by: String): Any = js.native
+    def group(group_by: js.Array[String], order_by: js.Array[String]): Any = js.native
+    def group(group_by: js.Array[String], order_by: js.Function1[/* item */ Any, Double]): Any = js.native
+    def group(group_by: js.Function1[/* item */ Any, String]): Any = js.native
+    def group(group_by: js.Function1[/* item */ Any, String], order_by: String): Any = js.native
+    def group(group_by: js.Function1[/* item */ Any, String], order_by: js.Array[String]): Any = js.native
+    def group(group_by: js.Function1[/* item */ Any, String], order_by: js.Function1[/* item */ Any, Double]): Any = js.native
     
-    def groups(group_by: String): js.Any = js.native
-    def groups(group_by: String, order_by: String): js.Any = js.native
-    def groups(group_by: String, order_by: js.Array[String]): js.Any = js.native
-    def groups(group_by: String, order_by: js.Function1[/* item */ js.Any, Double]): js.Any = js.native
-    def groups(group_by: js.Array[String]): js.Any = js.native
-    def groups(group_by: js.Array[String], order_by: String): js.Any = js.native
-    def groups(group_by: js.Array[String], order_by: js.Array[String]): js.Any = js.native
-    def groups(group_by: js.Array[String], order_by: js.Function1[/* item */ js.Any, Double]): js.Any = js.native
-    def groups(group_by: js.Function1[/* item */ js.Any, String]): js.Any = js.native
-    def groups(group_by: js.Function1[/* item */ js.Any, String], order_by: String): js.Any = js.native
-    def groups(group_by: js.Function1[/* item */ js.Any, String], order_by: js.Array[String]): js.Any = js.native
-    def groups(
-      group_by: js.Function1[/* item */ js.Any, String],
-      order_by: js.Function1[/* item */ js.Any, Double]
-    ): js.Any = js.native
+    def groups(group_by: String): Any = js.native
+    def groups(group_by: String, order_by: String): Any = js.native
+    def groups(group_by: String, order_by: js.Array[String]): Any = js.native
+    def groups(group_by: String, order_by: js.Function1[/* item */ Any, Double]): Any = js.native
+    def groups(group_by: js.Array[String]): Any = js.native
+    def groups(group_by: js.Array[String], order_by: String): Any = js.native
+    def groups(group_by: js.Array[String], order_by: js.Array[String]): Any = js.native
+    def groups(group_by: js.Array[String], order_by: js.Function1[/* item */ Any, Double]): Any = js.native
+    def groups(group_by: js.Function1[/* item */ Any, String]): Any = js.native
+    def groups(group_by: js.Function1[/* item */ Any, String], order_by: String): Any = js.native
+    def groups(group_by: js.Function1[/* item */ Any, String], order_by: js.Array[String]): Any = js.native
+    def groups(group_by: js.Function1[/* item */ Any, String], order_by: js.Function1[/* item */ Any, Double]): Any = js.native
     
-    def partition(group_by: String): js.Any = js.native
-    def partition(group_by: String, order_by: String): js.Any = js.native
-    def partition(group_by: String, order_by: js.Array[String]): js.Any = js.native
-    def partition(group_by: String, order_by: js.Function1[/* item */ js.Any, Double]): js.Any = js.native
-    def partition(group_by: js.Array[String]): js.Any = js.native
-    def partition(group_by: js.Array[String], order_by: String): js.Any = js.native
-    def partition(group_by: js.Array[String], order_by: js.Array[String]): js.Any = js.native
-    def partition(group_by: js.Array[String], order_by: js.Function1[/* item */ js.Any, Double]): js.Any = js.native
-    def partition(group_by: js.Function1[/* item */ js.Any, String]): js.Any = js.native
-    def partition(group_by: js.Function1[/* item */ js.Any, String], order_by: String): js.Any = js.native
-    def partition(group_by: js.Function1[/* item */ js.Any, String], order_by: js.Array[String]): js.Any = js.native
-    def partition(
-      group_by: js.Function1[/* item */ js.Any, String],
-      order_by: js.Function1[/* item */ js.Any, Double]
-    ): js.Any = js.native
+    def partition(group_by: String): Any = js.native
+    def partition(group_by: String, order_by: String): Any = js.native
+    def partition(group_by: String, order_by: js.Array[String]): Any = js.native
+    def partition(group_by: String, order_by: js.Function1[/* item */ Any, Double]): Any = js.native
+    def partition(group_by: js.Array[String]): Any = js.native
+    def partition(group_by: js.Array[String], order_by: String): Any = js.native
+    def partition(group_by: js.Array[String], order_by: js.Array[String]): Any = js.native
+    def partition(group_by: js.Array[String], order_by: js.Function1[/* item */ Any, Double]): Any = js.native
+    def partition(group_by: js.Function1[/* item */ Any, String]): Any = js.native
+    def partition(group_by: js.Function1[/* item */ Any, String], order_by: String): Any = js.native
+    def partition(group_by: js.Function1[/* item */ Any, String], order_by: js.Array[String]): Any = js.native
+    def partition(group_by: js.Function1[/* item */ Any, String], order_by: js.Function1[/* item */ Any, Double]): Any = js.native
   }
 }

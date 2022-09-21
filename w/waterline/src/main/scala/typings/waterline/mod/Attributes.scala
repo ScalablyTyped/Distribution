@@ -11,7 +11,7 @@ trait Attributes
   
   var toJSON: js.UndefOr[js.Function0[String]] = js.undefined
   
-  var toObject: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var toObject: js.UndefOr[js.Function0[Any]] = js.undefined
 }
 object Attributes {
   
@@ -26,7 +26,7 @@ object Attributes {
     
     inline def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
     
-    inline def setToObject(value: () => js.Any): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
+    inline def setToObject(value: () => Any): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
     
     inline def setToObjectUndefined: Self = StObject.set(x, "toObject", js.undefined)
   }

@@ -1,5 +1,6 @@
 package typings.reactOnsenui.anon
 
+import typings.react.mod.ReactNode
 import typings.reactOnsenui.reactOnsenuiStrings.collapse
 import typings.reactOnsenui.reactOnsenuiStrings.default
 import typings.reactOnsenui.reactOnsenuiStrings.landscape
@@ -18,6 +19,8 @@ trait Animation extends StObject {
   var animation: js.UndefOr[overlay | default] = js.undefined
   
   var animationOptions: js.UndefOr[typings.reactOnsenui.mod.AnimationOptions] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var collapse: js.UndefOr[portrait | landscape | Boolean] = js.undefined
   
@@ -61,6 +64,10 @@ object Animation {
     inline def setAnimationOptionsUndefined: Self = StObject.set(x, "animationOptions", js.undefined)
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setCollapse(value: portrait | landscape | Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     

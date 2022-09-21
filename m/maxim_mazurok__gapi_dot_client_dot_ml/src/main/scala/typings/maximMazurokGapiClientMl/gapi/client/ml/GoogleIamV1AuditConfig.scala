@@ -28,7 +28,7 @@ object GoogleIamV1AuditConfig {
     
     inline def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
     
-    inline def setAuditLogConfigsVarargs(value: GoogleIamV1AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
+    inline def setAuditLogConfigsVarargs(value: GoogleIamV1AuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value*))
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

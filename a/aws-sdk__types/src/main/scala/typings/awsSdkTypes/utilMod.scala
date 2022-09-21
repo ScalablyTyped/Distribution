@@ -1,22 +1,25 @@
 package typings.awsSdkTypes
 
+import typings.awsSdkTypes.anon.ForceRefresh
 import typings.awsSdkTypes.httpMod.Endpoint
 import typings.awsSdkTypes.middlewareMod.FinalizeHandler
 import typings.awsSdkTypes.middlewareMod.FinalizeHandlerArguments
 import typings.awsSdkTypes.middlewareMod.FinalizeHandlerOutput
 import typings.awsSdkTypes.responseMod.MetadataBearer
-import typings.std.Uint8Array
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  type BodyLengthCalculator = js.Function1[/* body */ js.Any, js.UndefOr[Double]]
+  type BodyLengthCalculator = js.Function1[/* body */ Any, js.UndefOr[Double]]
   
-  type Decoder = js.Function1[/* input */ String, Uint8Array]
+  type Decoder = js.Function1[/* input */ String, js.typedarray.Uint8Array]
   
-  type Encoder = js.Function1[/* input */ Uint8Array, String]
+  type Encoder = js.Function1[/* input */ js.typedarray.Uint8Array, String]
+  
+  type MemoizedProvider[T] = js.Function1[/* options */ js.UndefOr[ForceRefresh], js.Promise[T]]
   
   type Provider[T] = js.Function0[js.Promise[T]]
   
@@ -61,11 +64,45 @@ object utilMod {
   
   type RegionInfoProvider = js.Function2[
     /* region */ String, 
-    /* options */ js.UndefOr[js.Any], 
+    /* options */ js.UndefOr[RegionInfoProviderOptions], 
     js.Promise[js.UndefOr[RegionInfo]]
   ]
   
+  trait RegionInfoProviderOptions extends StObject {
+    
+    /**
+      * Enables IPv6/IPv4 dualstack endpoint.
+      * @default false
+      */
+    var useDualstackEndpoint: Boolean
+    
+    /**
+      * Enables FIPS compatible endpoints.
+      * @default false
+      */
+    var useFipsEndpoint: Boolean
+  }
+  object RegionInfoProviderOptions {
+    
+    inline def apply(useDualstackEndpoint: Boolean, useFipsEndpoint: Boolean): RegionInfoProviderOptions = {
+      val __obj = js.Dynamic.literal(useDualstackEndpoint = useDualstackEndpoint.asInstanceOf[js.Any], useFipsEndpoint = useFipsEndpoint.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RegionInfoProviderOptions]
+    }
+    
+    extension [Self <: RegionInfoProviderOptions](x: Self) {
+      
+      inline def setUseDualstackEndpoint(value: Boolean): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setUseFipsEndpoint(value: Boolean): Self = StObject.set(x, "useFipsEndpoint", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait RetryStrategy extends StObject {
+    
+    /**
+      * The retry mode describing how the retry strategy control the traffic flow.
+      */
+    var mode: js.UndefOr[String] = js.undefined
     
     /**
       * the retry behavior the will invoke the next handler and handle the retry accordingly.
@@ -77,7 +114,7 @@ object utilMod {
   object RetryStrategy {
     
     inline def apply(
-      retry: (FinalizeHandler[js.Any, js.Any], FinalizeHandlerArguments[js.Any]) => js.Promise[FinalizeHandlerOutput[js.Any]]
+      retry: (FinalizeHandler[Any, Any], FinalizeHandlerArguments[Any]) => js.Promise[FinalizeHandlerOutput[Any]]
     ): RetryStrategy = {
       val __obj = js.Dynamic.literal(retry = js.Any.fromFunction2(retry))
       __obj.asInstanceOf[RetryStrategy]
@@ -85,11 +122,19 @@ object utilMod {
     
     extension [Self <: RetryStrategy](x: Self) {
       
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      
       inline def setRetry(
-        value: (FinalizeHandler[js.Any, js.Any], FinalizeHandlerArguments[js.Any]) => js.Promise[FinalizeHandlerOutput[js.Any]]
+        value: (FinalizeHandler[Any, Any], FinalizeHandlerArguments[Any]) => js.Promise[FinalizeHandlerOutput[Any]]
       ): Self = StObject.set(x, "retry", js.Any.fromFunction2(value))
     }
   }
   
-  type UrlParser = js.Function1[/* url */ String, Endpoint]
+  type UrlParser = js.Function1[/* url */ String | URL, Endpoint]
+  
+  type UserAgent = js.Array[UserAgentPair]
+  
+  type UserAgentPair = js.Tuple2[/* name */ String, /* version */ js.UndefOr[String]]
 }

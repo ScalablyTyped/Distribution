@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDataSourcesResponse extends StObject {
   
   /**
-    * If the response is truncated, Amazon Kendra returns this token that you can use in the subsequent request to retrieve the next set of data sources. 
+    * If the response is truncated, Amazon Kendra returns this token that you can use in the subsequent request to retrieve the next set of data source connectors.
     */
   var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.undefined
   
   /**
-    * An array of summary information for one or more data sources.
+    * An array of summary information for one or more data source connector.
     */
   var SummaryItems: js.UndefOr[DataSourceSummaryList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListDataSourcesResponse {
     
     inline def setSummaryItemsUndefined: Self = StObject.set(x, "SummaryItems", js.undefined)
     
-    inline def setSummaryItemsVarargs(value: DataSourceSummary*): Self = StObject.set(x, "SummaryItems", js.Array(value :_*))
+    inline def setSummaryItemsVarargs(value: DataSourceSummary*): Self = StObject.set(x, "SummaryItems", js.Array(value*))
   }
 }

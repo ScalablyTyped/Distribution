@@ -1,7 +1,7 @@
 
 # Scala.js typings for devexpress__utils
 
-Typings are for version 1.1.3
+Typings are for version 1.4.0
 
 ## Library description:
 DevExpress utils
@@ -10,10 +10,10 @@ DevExpress utils
 | ------------------ | :-------------: |
 | Full name          | @devexpress/utils |
 | Keywords           | devexpress, devextreme |
-| # releases         | 23 |
-| # dependents       | 3 |
-| # downloads        | 376697 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 519192.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://devexpress.com/)

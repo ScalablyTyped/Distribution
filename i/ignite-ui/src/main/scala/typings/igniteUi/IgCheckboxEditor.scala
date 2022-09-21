@@ -11,7 +11,7 @@ trait IgCheckboxEditor
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var allowNullValue: js.UndefOr[Boolean] = js.undefined
   
@@ -86,7 +86,7 @@ trait IgCheckboxEditor
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired on mousedown event.
@@ -113,7 +113,7 @@ trait IgCheckboxEditor
     */
   var mouseup: js.UndefOr[MouseupEvent] = js.undefined
   
-  var nullValue: js.UndefOr[js.Any] = js.undefined
+  var nullValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets the readonly attribute. Does not allow editing. Disables changing the checkbox state as an interaction, but it still can be changed programmatically. On submit the current value is sent into the request.
@@ -161,13 +161,13 @@ trait IgCheckboxEditor
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  var validatorOptions: js.UndefOr[js.Any] = js.undefined
+  var validatorOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
   /**
     * Fired after the editor's value has been changed.
@@ -246,7 +246,7 @@ object IgCheckboxEditor {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -270,7 +270,7 @@ object IgCheckboxEditor {
     
     inline def setMouseupUndefined: Self = StObject.set(x, "mouseup", js.undefined)
     
-    inline def setNullValue(value: js.Any): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
+    inline def setNullValue(value: Any): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
     
     inline def setNullValueUndefined: Self = StObject.set(x, "nullValue", js.undefined)
     
@@ -298,11 +298,11 @@ object IgCheckboxEditor {
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
-    inline def setValidatorOptions(value: js.Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
+    inline def setValidatorOptions(value: Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
     
     inline def setValidatorOptionsUndefined: Self = StObject.set(x, "validatorOptions", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueChanged(value: (/* event */ Event, /* ui */ ValueChangedEventUIParam) => Unit): Self = StObject.set(x, "valueChanged", js.Any.fromFunction2(value))
     

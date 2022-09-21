@@ -38,7 +38,7 @@ object TextStyleIOS {
     
     inline def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
     
-    inline def setFontVariantVarargs(value: FontVariant*): Self = StObject.set(x, "fontVariant", js.Array(value :_*))
+    inline def setFontVariantVarargs(value: FontVariant*): Self = StObject.set(x, "fontVariant", js.Array(value*))
     
     inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     

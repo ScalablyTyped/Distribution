@@ -20,8 +20,8 @@ object utilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[TProps](base: Component[TProps, js.Any, js.Any]): Component[TProps, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any]).asInstanceOf[Component[TProps, js.Any, js.Any]]
-    inline def create[TProps](base: Component[TProps, js.Any, js.Any], options: RealOptions): Component[TProps, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, js.Any, js.Any]]
+    inline def create[TProps](base: Component[TProps, Any, Any]): Component[TProps, Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any]).asInstanceOf[Component[TProps, Any, Any]]
+    inline def create[TProps](base: Component[TProps, Any, Any], options: RealOptions): Component[TProps, Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, Any, Any]]
     inline def create[TProps, TState, TContext, TStatic](base: (Component[TProps, TState, TContext]) & TStatic): (Component[TProps, TState, TContext]) & TStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any]).asInstanceOf[(Component[TProps, TState, TContext]) & TStatic]
     inline def create[TProps, TState, TContext, TStatic](base: (Component[TProps, TState, TContext]) & TStatic, options: RealOptions): (Component[TProps, TState, TContext]) & TStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(Component[TProps, TState, TContext]) & TStatic]
     
@@ -29,34 +29,34 @@ object utilsMod {
       viewFn: js.Function1[/* props */ TState, ReactElement],
       getStores: js.Function2[
           /* maybeProps */ js.UndefOr[TProps], 
-          /* maybeContext */ js.UndefOr[js.Any], 
-          js.Array[typings.flux.fluxStoreMod.^[js.Any]]
+          /* maybeContext */ js.UndefOr[Any], 
+          js.Array[typings.flux.fluxStoreMod.^[Any]]
         ],
       calculateState: js.Function3[
           /* prevState */ js.UndefOr[TState], 
           /* maybeProps */ js.UndefOr[TProps], 
-          /* maybeContext */ js.UndefOr[js.Any], 
+          /* maybeContext */ js.UndefOr[Any], 
           TState
         ]
-    ): Component[TProps, TState, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctional")(viewFn.asInstanceOf[js.Any], getStores.asInstanceOf[js.Any], calculateState.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, js.Any]]
+    ): Component[TProps, TState, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctional")(viewFn.asInstanceOf[js.Any], getStores.asInstanceOf[js.Any], calculateState.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, Any]]
     inline def createFunctional[TProps, TState](
       viewFn: js.Function1[/* props */ TState, ReactElement],
       getStores: js.Function2[
           /* maybeProps */ js.UndefOr[TProps], 
-          /* maybeContext */ js.UndefOr[js.Any], 
-          js.Array[typings.flux.fluxStoreMod.^[js.Any]]
+          /* maybeContext */ js.UndefOr[Any], 
+          js.Array[typings.flux.fluxStoreMod.^[Any]]
         ],
       calculateState: js.Function3[
           /* prevState */ js.UndefOr[TState], 
           /* maybeProps */ js.UndefOr[TProps], 
-          /* maybeContext */ js.UndefOr[js.Any], 
+          /* maybeContext */ js.UndefOr[Any], 
           TState
         ],
       options: RealOptions
-    ): Component[TProps, TState, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctional")(viewFn.asInstanceOf[js.Any], getStores.asInstanceOf[js.Any], calculateState.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, js.Any]]
+    ): Component[TProps, TState, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFunctional")(viewFn.asInstanceOf[js.Any], getStores.asInstanceOf[js.Any], calculateState.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, Any]]
     
-    inline def create_TPropsTState[TProps, TState](base: Component[TProps, TState, js.Any]): Component[TProps, TState, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any]).asInstanceOf[Component[TProps, TState, js.Any]]
-    inline def create_TPropsTState[TProps, TState](base: Component[TProps, TState, js.Any], options: RealOptions): Component[TProps, TState, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, js.Any]]
+    inline def create_TPropsTState[TProps, TState](base: Component[TProps, TState, Any]): Component[TProps, TState, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any]).asInstanceOf[Component[TProps, TState, Any]]
+    inline def create_TPropsTState[TProps, TState](base: Component[TProps, TState, Any], options: RealOptions): Component[TProps, TState, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, Any]]
     
     inline def create_TPropsTStateTContext[TProps, TState, TContext](base: Component[TProps, TState, TContext]): Component[TProps, TState, TContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any]).asInstanceOf[Component[TProps, TState, TContext]]
     inline def create_TPropsTStateTContext[TProps, TState, TContext](base: Component[TProps, TState, TContext], options: RealOptions): Component[TProps, TState, TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(base.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[TProps, TState, TContext]]
@@ -77,8 +77,8 @@ object utilsMod {
     * updated to contain the previous foo AND the bar that was just returned. Only
     * returning bar will not delete foo.
     */
-  inline def Mixin(stores: js.Array[typings.flux.fluxStoreMod.^[js.Any]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(stores.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def Mixin(stores: js.Array[typings.flux.fluxStoreMod.^[js.Any]], options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(stores.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def Mixin(stores: js.Array[typings.flux.fluxStoreMod.^[Any]]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(stores.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def Mixin(stores: js.Array[typings.flux.fluxStoreMod.^[Any]], options: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(stores.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * This is the basic building block of a Flux application. All of your stores

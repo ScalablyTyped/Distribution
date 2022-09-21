@@ -11,14 +11,11 @@ List of standard SVG tags.
 | Full name          | svg-tags |
 | Keywords           | svg, tags, w3c |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 115457843 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7667443E7 |
+| # stars            | 9.0 |
 
 ## Links
-- [Homepage](https://github.com/element-io/svg-tags)
-- [Bugs](https://github.com/element-io/svg-tags/issues)
-- [Repository](https://github.com/element-io/svg-tags)
 - [Npm](https://www.npmjs.com/package/svg-tags)
     
 

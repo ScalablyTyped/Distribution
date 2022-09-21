@@ -7,25 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Content API for Shopping
-  *
-  * Manages product items, inventory, and Merchant Center accounts for Google
-  * Shopping.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const content = google.content('v2.1');
-  *
-  * @namespace content
-  * @type {Function}
-  * @version v2.1
-  * @variation v2.1
-  * @param {object=} options Options for Content
-  */
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Content")
 @js.native
-class Content protected () extends StObject {
+open class Content protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   
@@ -35,13 +19,25 @@ class Content protected () extends StObject {
   
   var accounttax: ResourceAccounttax = js.native
   
+  var buyongoogleprograms: ResourceBuyongoogleprograms = js.native
+  
+  var collections: ResourceCollections = js.native
+  
+  var collectionstatuses: ResourceCollectionstatuses = js.native
+  
   var context: APIRequestContext = js.native
+  
+  var csses: ResourceCsses = js.native
   
   var datafeeds: ResourceDatafeeds = js.native
   
   var datafeedstatuses: ResourceDatafeedstatuses = js.native
   
+  var freelistingsprogram: ResourceFreelistingsprogram = js.native
+  
   var liasettings: ResourceLiasettings = js.native
+  
+  var localinventory: ResourceLocalinventory = js.native
   
   var orderinvoices: ResourceOrderinvoices = js.native
   
@@ -51,13 +47,39 @@ class Content protected () extends StObject {
   
   var orders: ResourceOrders = js.native
   
+  var ordertrackingsignals: ResourceOrdertrackingsignals = js.native
+  
   var pos: ResourcePos = js.native
+  
+  var productdeliverytime: ResourceProductdeliverytime = js.native
   
   var products: ResourceProducts = js.native
   
   var productstatuses: ResourceProductstatuses = js.native
   
+  var promotions: ResourcePromotions = js.native
+  
+  var pubsubnotificationsettings: ResourcePubsubnotificationsettings = js.native
+  
   var regionalinventory: ResourceRegionalinventory = js.native
   
+  var regions: ResourceRegions = js.native
+  
+  var reports: ResourceReports = js.native
+  
+  var repricingrules: ResourceRepricingrules = js.native
+  
+  var returnaddress: ResourceReturnaddress = js.native
+  
+  var returnpolicy: ResourceReturnpolicy = js.native
+  
+  var returnpolicyonline: ResourceReturnpolicyonline = js.native
+  
+  var settlementreports: ResourceSettlementreports = js.native
+  
+  var settlementtransactions: ResourceSettlementtransactions = js.native
+  
   var shippingsettings: ResourceShippingsettings = js.native
+  
+  var shoppingadsprogram: ResourceShoppingadsprogram = js.native
 }

@@ -52,14 +52,7 @@ object AMap {
       * @param district 级数
       */
     def setSubdistrict(): Unit = js.native
-    @JSName("setSubdistrict")
-    def setSubdistrict_0(district: `0`): Unit = js.native
-    @JSName("setSubdistrict")
-    def setSubdistrict_1(district: `1`): Unit = js.native
-    @JSName("setSubdistrict")
-    def setSubdistrict_2(district: `2`): Unit = js.native
-    @JSName("setSubdistrict")
-    def setSubdistrict_3(district: `3`): Unit = js.native
+    def setSubdistrict(district: `0` | `1` | `2` | `3`): Unit = js.native
   }
   object DistrictSearch {
     
@@ -115,7 +108,7 @@ object AMap {
         
         inline def setBoundariesUndefined: Self = StObject.set(x, "boundaries", js.undefined)
         
-        inline def setBoundariesVarargs(value: js.Array[LngLat]*): Self = StObject.set(x, "boundaries", js.Array(value :_*))
+        inline def setBoundariesVarargs(value: js.Array[LngLat]*): Self = StObject.set(x, "boundaries", js.Array(value*))
         
         inline def setCenter(value: LngLat): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
         
@@ -125,7 +118,7 @@ object AMap {
         
         inline def setDistrictListUndefined: Self = StObject.set(x, "districtList", js.undefined)
         
-        inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value :_*))
+        inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value*))
         
         inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
@@ -254,7 +247,7 @@ object AMap {
         
         inline def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
         
-        inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value :_*))
+        inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value*))
         
         inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       }

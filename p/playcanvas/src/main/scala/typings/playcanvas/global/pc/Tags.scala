@@ -5,14 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create an instance of a Tags.
-  * @param [parent] - Parent object who tags belong to.
-  * Note: Tags are used as addition of `pc.Entity` and `pc.Asset` as `tags` field.
+  * Set of tag names. Tags are automatically available on {@link Entity} and {@link Asset} as `tags`
+  * field.
+  *
+  * @augments EventHandler
   */
 @JSGlobal("pc.Tags")
 @js.native
-class Tags ()
-  extends StObject
-     with typings.playcanvas.pc.Tags {
-  def this(parent: js.Any) = this()
+/**
+  * Create an instance of a Tags.
+  *
+  * @param {object} [parent] - Parent object who tags belong to.
+  */
+open class Tags ()
+  extends typings.playcanvas.mod.Tags {
+  def this(parent: js.Object) = this()
 }

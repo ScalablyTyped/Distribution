@@ -10,9 +10,9 @@ object radioIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/radio/index.native", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.antdMobileRn.radioNativeMod.default {
-    def this(props: RadioNativeProps, context: js.Any) = this()
+    def this(props: RadioNativeProps, context: Any) = this()
   }
   /* static members */
   object default {
@@ -23,8 +23,8 @@ object radioIndexNativeMod {
     
     @JSImport("antd-mobile-rn/lib/radio/index.native", "default.RadioItem")
     @js.native
-    def RadioItem: js.Any = js.native
-    inline def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
+    def RadioItem: Any = js.native
+    inline def RadioItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/radio/index.native", "default.defaultProps")
     @js.native

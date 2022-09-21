@@ -8,5 +8,5 @@ object uploadArchiveInputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/UploadArchiveInput", "UploadArchiveInput")
   @js.native
-  val UploadArchiveInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UploadArchiveInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

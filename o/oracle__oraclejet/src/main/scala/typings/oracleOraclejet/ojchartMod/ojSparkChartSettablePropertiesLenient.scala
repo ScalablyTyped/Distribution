@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChartSettableProperties<K, D>> */
 trait ojSparkChartSettablePropertiesLenient[K, D]
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var animationDuration: js.UndefOr[Double | Null] = js.undefined
   
@@ -198,7 +198,7 @@ object ojSparkChartSettablePropertiesLenient {
     
     inline def setReferenceObjectsUndefined: Self = StObject.set(x, "referenceObjects", js.undefined)
     
-    inline def setReferenceObjectsVarargs(value: ReferenceObject*): Self = StObject.set(x, "referenceObjects", js.Array(value :_*))
+    inline def setReferenceObjectsVarargs(value: ReferenceObject*): Self = StObject.set(x, "referenceObjects", js.Array(value*))
     
     inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
     

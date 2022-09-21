@@ -1,7 +1,6 @@
 package typings.rcFieldForm.interfaceMod
 
 import typings.react.mod.ReactElement
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait BaseRule extends StObject {
   
   var min: js.UndefOr[Double] = js.undefined
   
-  var pattern: js.UndefOr[RegExp] = js.undefined
+  var pattern: js.UndefOr[js.RegExp] = js.undefined
   
   var required: js.UndefOr[Boolean] = js.undefined
   
@@ -28,6 +27,8 @@ trait BaseRule extends StObject {
   
   /** Customize rule level `validateTrigger`. Must be subset of Field `validateTrigger` */
   var validateTrigger: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  var warningOnly: js.UndefOr[Boolean] = js.undefined
   
   var whitespace: js.UndefOr[Boolean] = js.undefined
 }
@@ -44,7 +45,7 @@ object BaseRule {
     
     inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    inline def setEnumVarargs(value: StoreValue*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: StoreValue*): Self = StObject.set(x, "enum", js.Array(value*))
     
     inline def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     
@@ -62,7 +63,7 @@ object BaseRule {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
@@ -82,7 +83,11 @@ object BaseRule {
     
     inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
     
-    inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value :_*))
+    inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value*))
+    
+    inline def setWarningOnly(value: Boolean): Self = StObject.set(x, "warningOnly", value.asInstanceOf[js.Any])
+    
+    inline def setWarningOnlyUndefined: Self = StObject.set(x, "warningOnly", js.undefined)
     
     inline def setWhitespace(value: Boolean): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
     

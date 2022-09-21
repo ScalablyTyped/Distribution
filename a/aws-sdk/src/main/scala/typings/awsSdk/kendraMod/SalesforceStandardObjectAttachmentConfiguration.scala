@@ -33,6 +33,6 @@ object SalesforceStandardObjectAttachmentConfiguration {
     
     inline def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
     
-    inline def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
+    inline def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value*))
   }
 }

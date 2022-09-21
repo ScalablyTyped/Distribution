@@ -1,10 +1,10 @@
 package typings.materialTabs
 
+import typings.materialBase.Element
 import typings.materialTabs.adapterMod.MDCTabBarScrollerAdapter
 import typings.materialTabs.anon.FRAMESELECTOR
 import typings.materialTabs.anon.INDICATORBACK
 import typings.materialTabs.anon.PartialMDCTabBarScrollerA
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +13,13 @@ object indexMod {
   
   @JSImport("@material/tabs/tab-bar-scroller/index", "MDCTabBarScroller")
   @js.native
-  class MDCTabBarScroller protected ()
+  open class MDCTabBarScroller protected ()
     extends typings.materialTabs.componentMod.MDCTabBarScroller {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTabs.foundationMod.MDCTabBarScrollerFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -29,12 +29,12 @@ object indexMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialTabs.componentMod.MDCTabBarScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.componentMod.MDCTabBarScroller]
+    inline def attachTo(root: typings.std.Element): typings.materialTabs.componentMod.MDCTabBarScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.componentMod.MDCTabBarScroller]
   }
   
   @JSImport("@material/tabs/tab-bar-scroller/index", "MDCTabBarScrollerFoundation")
   @js.native
-  class MDCTabBarScrollerFoundation ()
+  open class MDCTabBarScrollerFoundation ()
     extends typings.materialTabs.foundationMod.MDCTabBarScrollerFoundation {
     def this(adapter: PartialMDCTabBarScrollerA) = this()
   }

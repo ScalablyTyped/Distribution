@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("minilog", "Console")
   @js.native
-  class Console () extends Transform {
+  open class Console () extends Transform {
     
     //Only available on client
     var color: Transform = js.native
@@ -42,14 +42,14 @@ object mod {
   
   @JSImport("minilog", "Filter")
   @js.native
-  class Filter () extends Transform {
+  open class Filter () extends Transform {
     
     /**
       * Adds an entry to the whitelist
       * Returns this filter
       */
-    def allow(name: js.Any): Filter = js.native
-    def allow(name: js.Any, level: js.Any): Filter = js.native
+    def allow(name: Any): Filter = js.native
+    def allow(name: Any, level: Any): Filter = js.native
     
     /**
       * Empties the whitelist and blacklist
@@ -68,28 +68,28 @@ object mod {
       * Adds an entry to the blacklist
       * Returns this filter
       */
-    def deny(name: js.Any): Filter = js.native
-    def deny(name: js.Any, level: js.Any): Filter = js.native
+    def deny(name: Any): Filter = js.native
+    def deny(name: Any, level: Any): Filter = js.native
     
     /**
       * controls whether the filter is enabled. Default: true
       */
     var enabled: Boolean = js.native
     
-    def test(name: js.Any, level: js.Any): Boolean = js.native
+    def test(name: Any, level: Any): Boolean = js.native
   }
   
   @JSImport("minilog", "Transform")
   @js.native
-  class Transform () extends StObject {
+  open class Transform () extends StObject {
     
-    def mixin(dest: js.Any): Unit = js.native
+    def mixin(dest: Any): Unit = js.native
     
-    def pipe(dest: js.Any): js.Any = js.native
+    def pipe(dest: Any): Any = js.native
     
-    def unpipe(from: js.Any): Transform = js.native
+    def unpipe(from: Any): Transform = js.native
     
-    def write(name: js.Any, level: js.Any, args: js.Any): Unit = js.native
+    def write(name: Any, level: Any, args: Any): Unit = js.native
   }
   
   @JSImport("minilog", "backends")
@@ -99,8 +99,8 @@ object mod {
   
   @JSImport("minilog", "defaultBackend")
   @js.native
-  def defaultBackend: js.Any = js.native
-  inline def defaultBackend_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultBackend")(x.asInstanceOf[js.Any])
+  def defaultBackend: Any = js.native
+  inline def defaultBackend_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultBackend")(x.asInstanceOf[js.Any])
   
   @JSImport("minilog", "defaultFormatter")
   @js.native
@@ -111,7 +111,7 @@ object mod {
   
   inline def enable(): Minilog = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Minilog]
   
-  inline def pipe(dest: js.Any): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(dest.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def pipe(dest: Any): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(dest.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("minilog", "suggest")
   @js.native
@@ -120,24 +120,24 @@ object mod {
   
   trait Minilog extends StObject {
     
-    def debug(msg: js.Any*): Minilog
+    def debug(msg: Any*): Minilog
     
-    def error(msg: js.Any*): Minilog
+    def error(msg: Any*): Minilog
     
-    def info(msg: js.Any*): Minilog
+    def info(msg: Any*): Minilog
     
-    def log(msg: js.Any*): Minilog
+    def log(msg: Any*): Minilog
     
-    def warn(msg: js.Any*): Minilog
+    def warn(msg: Any*): Minilog
   }
   object Minilog {
     
     inline def apply(
-      debug: /* repeated */ js.Any => Minilog,
-      error: /* repeated */ js.Any => Minilog,
-      info: /* repeated */ js.Any => Minilog,
-      log: /* repeated */ js.Any => Minilog,
-      warn: /* repeated */ js.Any => Minilog
+      debug: /* repeated */ Any => Minilog,
+      error: /* repeated */ Any => Minilog,
+      info: /* repeated */ Any => Minilog,
+      log: /* repeated */ Any => Minilog,
+      warn: /* repeated */ Any => Minilog
     ): Minilog = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
       __obj.asInstanceOf[Minilog]
@@ -145,48 +145,48 @@ object mod {
     
     extension [Self <: Minilog](x: Self) {
       
-      inline def setDebug(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ Any => Minilog): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      inline def setError(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ Any => Minilog): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      inline def setInfo(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* repeated */ Any => Minilog): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      inline def setLog(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ Any => Minilog): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      inline def setWarn(value: /* repeated */ js.Any => Minilog): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ Any => Minilog): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
   trait MinilogBackends extends StObject {
     
-    var array: js.Any
+    var array: Any
     
-    var browser: js.Any
+    var browser: Any
     
     var console: Console
     
-    var jQuery: js.Any
+    var jQuery: Any
     
-    var localstorage: js.Any
+    var localstorage: Any
   }
   object MinilogBackends {
     
-    inline def apply(array: js.Any, browser: js.Any, console: Console, jQuery: js.Any, localstorage: js.Any): MinilogBackends = {
+    inline def apply(array: Any, browser: Any, console: Console, jQuery: Any, localstorage: Any): MinilogBackends = {
       val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], console = console.asInstanceOf[js.Any], jQuery = jQuery.asInstanceOf[js.Any], localstorage = localstorage.asInstanceOf[js.Any])
       __obj.asInstanceOf[MinilogBackends]
     }
     
     extension [Self <: MinilogBackends](x: Self) {
       
-      inline def setArray(value: js.Any): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: Any): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      inline def setBrowser(value: js.Any): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: Any): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
       inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      inline def setJQuery(value: js.Any): Self = StObject.set(x, "jQuery", value.asInstanceOf[js.Any])
+      inline def setJQuery(value: Any): Self = StObject.set(x, "jQuery", value.asInstanceOf[js.Any])
       
-      inline def setLocalstorage(value: js.Any): Self = StObject.set(x, "localstorage", value.asInstanceOf[js.Any])
+      inline def setLocalstorage(value: Any): Self = StObject.set(x, "localstorage", value.asInstanceOf[js.Any])
     }
   }
 }

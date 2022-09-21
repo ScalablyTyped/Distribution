@@ -18,6 +18,8 @@ trait ParseOptions extends StObject {
   
   var offset: js.UndefOr[Double] = js.undefined
   
+  var onComment: js.UndefOr[js.Function2[/* value */ String, /* loc */ CssLocation, Unit]] = js.undefined
+  
   var onParseError: js.UndefOr[js.Function2[/* error */ SyntaxParseError, /* fallbackNode */ CssNode, Unit]] = js.undefined
   
   var parseAtrulePrelude: js.UndefOr[Boolean] = js.undefined
@@ -62,6 +64,10 @@ object ParseOptions {
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOnComment(value: (/* value */ String, /* loc */ CssLocation) => Unit): Self = StObject.set(x, "onComment", js.Any.fromFunction2(value))
+    
+    inline def setOnCommentUndefined: Self = StObject.set(x, "onComment", js.undefined)
     
     inline def setOnParseError(value: (/* error */ SyntaxParseError, /* fallbackNode */ CssNode) => Unit): Self = StObject.set(x, "onParseError", js.Any.fromFunction2(value))
     

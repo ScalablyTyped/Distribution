@@ -10,7 +10,7 @@ object shadowGeneratorSceneComponentMod {
   
   @JSImport("babylonjs/Lights/Shadows/shadowGeneratorSceneComponent", "ShadowGeneratorSceneComponent")
   @js.native
-  class ShadowGeneratorSceneComponent protected ()
+  open class ShadowGeneratorSceneComponent protected ()
     extends StObject
        with ISceneSerializableComponent {
     /**
@@ -19,7 +19,7 @@ object shadowGeneratorSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _gatherRenderTargets: js.Any = js.native
+    /* private */ var _gatherRenderTargets: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.

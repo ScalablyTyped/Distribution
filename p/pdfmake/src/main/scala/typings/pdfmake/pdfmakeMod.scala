@@ -1,7 +1,7 @@
 package typings.pdfmake
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.pdfkit.PDFKit.PDFDocument
 import typings.pdfmake.interfacesMod.BufferOptions
 import typings.pdfmake.interfacesMod.CustomTableLayout

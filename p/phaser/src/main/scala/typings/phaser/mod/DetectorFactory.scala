@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter", "DetectorFactory")
 @js.native
-class DetectorFactory ()
+open class DetectorFactory ()
   extends StObject
      with typings.phaser.MatterJS.DetectorFactory {
   

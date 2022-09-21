@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dav", "DAVCollection")
 @js.native
-class DAVCollection[T] protected () extends StObject {
+open class DAVCollection[T] protected () extends StObject {
   def this(options: DAVCollectionOptions[T]) = this()
   
   var account: Account = js.native

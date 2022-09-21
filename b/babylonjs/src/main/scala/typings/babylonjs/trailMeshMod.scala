@@ -11,7 +11,7 @@ object trailMeshMod {
   
   @JSImport("babylonjs/Meshes/trailMesh", "TrailMesh")
   @js.native
-  class TrailMesh protected () extends Mesh {
+  open class TrailMesh protected () extends Mesh {
     /**
       * @constructor
       * @param name The value used by scene.getMeshByName() to do a lookup.
@@ -21,13 +21,49 @@ object trailMeshMod {
       * @param length Length of trailing mesh. Default is 60.
       * @param autoStart Automatically start trailing mesh. Default true.
       */
+    def this(name: String, generator: TransformNode) = this()
     def this(name: String, generator: TransformNode, scene: Scene) = this()
+    def this(name: String, generator: TransformNode, scene: Unit, diameter: Double) = this()
     def this(name: String, generator: TransformNode, scene: Scene, diameter: Double) = this()
+    def this(name: String, generator: TransformNode, scene: Unit, diameter: Double, length: Double) = this()
+    def this(name: String, generator: TransformNode, scene: Unit, diameter: Unit, length: Double) = this()
     def this(name: String, generator: TransformNode, scene: Scene, diameter: Double, length: Double) = this()
     def this(name: String, generator: TransformNode, scene: Scene, diameter: Unit, length: Double) = this()
     def this(
       name: String,
       generator: TransformNode,
+      scene: Unit,
+      diameter: Double,
+      length: Double,
+      autoStart: Boolean
+    ) = this()
+    def this(
+      name: String,
+      generator: TransformNode,
+      scene: Unit,
+      diameter: Double,
+      length: Unit,
+      autoStart: Boolean
+    ) = this()
+    def this(
+      name: String,
+      generator: TransformNode,
+      scene: Unit,
+      diameter: Unit,
+      length: Double,
+      autoStart: Boolean
+    ) = this()
+    def this(
+      name: String,
+      generator: TransformNode,
+      scene: Unit,
+      diameter: Unit,
+      length: Unit,
+      autoStart: Boolean
+    ) = this()
+    def this(
+      name: String,
+      generator: TransformNode,
       scene: Scene,
       diameter: Double,
       length: Double,
@@ -58,25 +94,25 @@ object trailMeshMod {
       autoStart: Boolean
     ) = this()
     
-    /* private */ var _autoStart: js.Any = js.native
+    /* private */ var _autoStart: Any = js.native
     
-    /* private */ var _beforeRenderObserver: js.Any = js.native
+    /* private */ var _beforeRenderObserver: Any = js.native
     
-    /* private */ var _createMesh: js.Any = js.native
+    /* private */ var _createMesh: Any = js.native
     
-    /* private */ var _diameter: js.Any = js.native
+    /* private */ var _diameter: Any = js.native
     
-    /* private */ var _generator: js.Any = js.native
+    /* private */ var _generator: Any = js.native
     
-    /* private */ var _length: js.Any = js.native
+    /* private */ var _length: Any = js.native
     
-    /* private */ var _running: js.Any = js.native
+    /* private */ var _running: Any = js.native
     
-    /* private */ var _sectionNormalVectors: js.Any = js.native
+    /* private */ var _sectionNormalVectors: Any = js.native
     
-    /* private */ var _sectionPolygonPointsCount: js.Any = js.native
+    /* private */ var _sectionPolygonPointsCount: Any = js.native
     
-    /* private */ var _sectionVectors: js.Any = js.native
+    /* private */ var _sectionVectors: Any = js.native
     
     /**
       * Returns a new TrailMesh object.
@@ -115,6 +151,6 @@ object trailMeshMod {
       * @param scene the scene to create the trail mesh in
       * @returns the created trail mesh
       */
-    inline def Parse(parsedMesh: js.Any, scene: Scene): TrailMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[TrailMesh]
+    inline def Parse(parsedMesh: Any, scene: Scene): TrailMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[TrailMesh]
   }
 }

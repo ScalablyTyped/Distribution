@@ -10,10 +10,10 @@ JavaScript is all like _You images done yet or what?_
 | ------------------ | :-------------: |
 | Full name          | imagesloaded |
 | Keywords           | images, loaded, ui, dom, jquery-plugin |
-| # releases         | 0 |
-| # dependents       | 147 |
-| # downloads        | 7595424 |
-| # stars            | 10 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 936476.6666666666 |
+| # stars            | 8708.0 |
 
 ## Links
 - [Homepage](https://github.com/desandro/imagesloaded)

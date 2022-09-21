@@ -12,13 +12,13 @@ object anon {
     
     var digest: String
     
-    var options: js.Array[js.Any]
+    var options: js.Array[Any]
     
     var source: String
   }
   object Algorithm {
     
-    inline def apply(algorithm: String, digest: String, options: js.Array[js.Any], source: String): Algorithm = {
+    inline def apply(algorithm: String, digest: String, options: js.Array[Any], source: String): Algorithm = {
       val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Algorithm]
     }
@@ -29,15 +29,15 @@ object anon {
       
       inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
-      inline def setOptions(value: js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Any*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined cacache.cacache/en.CacheObject & {  size :number} */
+  /* Inlined cacache.cacache.CacheObject & {  size :number} */
   trait CacheObjectsizenumber extends StObject {
     
     /** Subresource Integrity hash for the content this entry refers to. */
@@ -47,7 +47,7 @@ object anon {
     var key: String
     
     /** User-assigned metadata associated with the entry/content. */
-    var metadata: js.UndefOr[js.Any] = js.undefined
+    var metadata: js.UndefOr[Any] = js.undefined
     
     /** Filesystem path where content is stored, joined with cache argument. */
     var path: String
@@ -70,7 +70,7 @@ object anon {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       

@@ -10,9 +10,9 @@ trait FormSubmitURL extends StObject {
   
   var formSubmitURL: js.UndefOr[String] = js.undefined
   
-  def onComplete(credentials: js.Array[Credential]): js.Any
+  def onComplete(credentials: js.Array[Credential]): Any
   
-  var onError: js.UndefOr[js.Function1[/* error */ NSIException, js.Any]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* error */ NSIException, Any]] = js.undefined
   
   var password: js.UndefOr[String] = js.undefined
   
@@ -28,7 +28,7 @@ trait FormSubmitURL extends StObject {
 }
 object FormSubmitURL {
   
-  inline def apply(onComplete: js.Array[Credential] => js.Any): FormSubmitURL = {
+  inline def apply(onComplete: js.Array[Credential] => Any): FormSubmitURL = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction1(onComplete))
     __obj.asInstanceOf[FormSubmitURL]
   }
@@ -39,9 +39,9 @@ object FormSubmitURL {
     
     inline def setFormSubmitURLUndefined: Self = StObject.set(x, "formSubmitURL", js.undefined)
     
-    inline def setOnComplete(value: js.Array[Credential] => js.Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+    inline def setOnComplete(value: js.Array[Credential] => Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
-    inline def setOnError(value: /* error */ NSIException => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ NSIException => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     

@@ -9,24 +9,24 @@ trait MorphTarget
   extends StObject
      with IAnimatable {
   
-  /* private */ var _animationPropertiesOverride: js.Any = js.native
+  /* private */ var _animationPropertiesOverride: Any = js.native
   
-  /* private */ var _influence: js.Any = js.native
+  /* private */ var _influence: Any = js.native
   
-  /* private */ var _normals: js.Any = js.native
+  /* private */ var _normals: Any = js.native
   
   /** @hidden */
   var _onDataLayoutChanged: Observable[Unit] = js.native
   
-  /* private */ var _positions: js.Any = js.native
+  /* private */ var _positions: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _tangents: js.Any = js.native
+  /* private */ var _tangents: Any = js.native
   
-  /* private */ var _uniqueId: js.Any = js.native
+  /* private */ var _uniqueId: Any = js.native
   
-  /* private */ var _uvs: js.Any = js.native
+  /* private */ var _uvs: Any = js.native
   
   /**
     * Gets or sets the animation properties override
@@ -113,7 +113,7 @@ trait MorphTarget
     * Serializes the current target into a Serialization object
     * @returns the serialized object
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Affects normal data to this target

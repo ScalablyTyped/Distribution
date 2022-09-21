@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DictpropNamePreviousValue
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var previousValue: js.Any
+  var previousValue: Any
   
-  var value: js.Any
+  var value: Any
 }
 object DictpropNamePreviousValue {
   
-  inline def apply(previousValue: js.Any, value: js.Any): DictpropNamePreviousValue = {
+  inline def apply(previousValue: Any, value: Any): DictpropNamePreviousValue = {
     val __obj = js.Dynamic.literal(previousValue = previousValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictpropNamePreviousValue]
   }
   
   extension [Self <: DictpropNamePreviousValue](x: Self) {
     
-    inline def setPreviousValue(value: js.Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+    inline def setPreviousValue(value: Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

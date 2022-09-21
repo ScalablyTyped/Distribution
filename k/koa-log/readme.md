@@ -10,10 +10,10 @@ logger middlware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-log |
 | Keywords           | koa, logger, middlware |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 15369 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 218.33333333333334 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/vicanso/koa-log#readme)

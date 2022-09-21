@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__token-list
 
-Typings are for version 1.13.0
+Typings are for version 2.17.0
 
 ## Library description:
 Constructable, plain JavaScript DOMTokenList implementation, supporting non-browser runtimes.
@@ -10,13 +10,13 @@ Constructable, plain JavaScript DOMTokenList implementation, supporting non-brow
 | ------------------ | :-------------: |
 | Full name          | @wordpress/token-list |
 | Keywords           | wordpress, gutenberg, domtokenlist |
-| # releases         | 17 |
-| # dependents       | 4 |
-| # downloads        | 595583 |
-| # stars            | 0 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 94650.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/token-list/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/token-list/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Ftoken-list)

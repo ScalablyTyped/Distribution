@@ -32,6 +32,11 @@ trait AwsElbv2LoadBalancerDetails extends StObject {
   var IpAddressType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
+    * Attributes of the load balancer.
+    */
+  var LoadBalancerAttributes: js.UndefOr[AwsElbv2LoadBalancerAttributes] = js.undefined
+  
+  /**
     * The nodes of an Internet-facing load balancer have public IP addresses.
     */
   var Scheme: js.UndefOr[NonEmptyString] = js.undefined
@@ -69,7 +74,7 @@ object AwsElbv2LoadBalancerDetails {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setCanonicalHostedZoneId(value: NonEmptyString): Self = StObject.set(x, "CanonicalHostedZoneId", value.asInstanceOf[js.Any])
     
@@ -87,6 +92,12 @@ object AwsElbv2LoadBalancerDetails {
     
     inline def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
     
+    inline def setLoadBalancerAttributes(value: AwsElbv2LoadBalancerAttributes): Self = StObject.set(x, "LoadBalancerAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setLoadBalancerAttributesUndefined: Self = StObject.set(x, "LoadBalancerAttributes", js.undefined)
+    
+    inline def setLoadBalancerAttributesVarargs(value: AwsElbv2LoadBalancerAttribute*): Self = StObject.set(x, "LoadBalancerAttributes", js.Array(value*))
+    
     inline def setScheme(value: NonEmptyString): Self = StObject.set(x, "Scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "Scheme", js.undefined)
@@ -95,7 +106,7 @@ object AwsElbv2LoadBalancerDetails {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setState(value: LoadBalancerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

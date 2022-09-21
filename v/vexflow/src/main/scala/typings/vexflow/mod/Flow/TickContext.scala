@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.TickContext")
 @js.native
-class TickContext ()
+open class TickContext ()
   extends StObject
      with typings.vexflow.Vex.Flow.TickContext {
   

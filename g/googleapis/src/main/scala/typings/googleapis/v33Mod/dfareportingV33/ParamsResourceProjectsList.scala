@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +12,6 @@ trait ParamsResourceProjectsList
     * Select only projects with these advertiser IDs.
     */
   var advertiserIds: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only projects with these IDs.
@@ -43,12 +34,7 @@ trait ParamsResourceProjectsList
   var profileId: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows searching for projects by name or ID. Wildcards (*) are allowed.
-    * For example, "project*2015" will return projects with names like "project
-    * June 2015", "project April 2015", or simply "project 2015". Most of the
-    * searches also add wildcards implicitly at the start and the end of the
-    * search string. For example, a search string of "project" will match
-    * projects with name "my project", "project 2015", or simply "project".
+    * Allows searching for projects by name or ID. Wildcards (*) are allowed. For example, "project*2015" will return projects with names like "project June 2015", "project April 2015", or simply "project 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "project" will match projects with name "my project", "project 2015", or simply "project".
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -75,17 +61,13 @@ object ParamsResourceProjectsList {
     
     inline def setAdvertiserIdsUndefined: Self = StObject.set(x, "advertiserIds", js.undefined)
     
-    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value :_*))
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value*))
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

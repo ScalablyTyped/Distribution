@@ -5,9 +5,11 @@ import typings.blueprintjsCore.overlayMod.IBackdropProps
 import typings.blueprintjsCore.overlayMod.IOverlayableProps
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.iconNameMod.IconName
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,14 +18,15 @@ object dialogMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/dialog/dialog", "Dialog")
   @js.native
-  class Dialog protected ()
-    extends AbstractPureComponent2[IDialogProps, js.Object, js.Object] {
-    def this(props: IDialogProps) = this()
-    def this(props: IDialogProps, context: js.Any) = this()
+  open class Dialog protected ()
+    extends AbstractPureComponent2[DialogProps, js.Object, js.Object] {
+    def this(props: DialogProps) = this()
     
-    /* private */ var maybeRenderCloseButton: js.Any = js.native
+    /* private */ var maybeRenderCloseButton: Any = js.native
     
-    /* private */ var maybeRenderHeader: js.Any = js.native
+    /* private */ var maybeRenderHeader: Any = js.native
+    
+    /* private */ var titleId: Any = js.native
   }
   /* static members */
   object Dialog {
@@ -34,14 +37,16 @@ object dialogMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/dialog/dialog", "Dialog.defaultProps")
     @js.native
-    def defaultProps: IDialogProps = js.native
-    inline def defaultProps_=(x: IDialogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: DialogProps = js.native
+    inline def defaultProps_=(x: DialogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/dialog/dialog", "Dialog.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
+  
+  type DialogProps = IDialogProps
   
   trait IDialogProps
     extends StObject
@@ -50,15 +55,37 @@ object dialogMod {
        with IProps {
     
     /**
+      * ID of an element that contains description text inside this dialog.
+      */
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * ID of the element that contains title or label text for this dialog.
+      *
+      * By default, if the `title` prop is supplied, this component will generate
+      * a unique ID for the `<H5>` title element and use that ID here.
+      */
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
+    
+    /** Dialog contents. */
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    /**
+      * Ref supplied to the `Classes.DIALOG_CONTAINER` element.
+      */
+    var containerRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
+    
+    /**
       * Name of a Blueprint UI icon (or an icon element) to render in the
       * dialog's header. Note that the header will only be rendered if `title` is
       * provided.
       */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
+    var icon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
     
     /**
       * Whether to show the close button in the dialog's header.
       * Note that the header will only be rendered if `title` is provided.
+      *
       * @default true
       */
     var isCloseButtonShown: js.UndefOr[Boolean] = js.undefined
@@ -71,6 +98,7 @@ object dialogMod {
     
     /**
       * CSS styles to apply to the dialog.
+      *
       * @default {}
       */
     var style: js.UndefOr[CSSProperties] = js.undefined
@@ -96,7 +124,27 @@ object dialogMod {
     
     extension [Self <: IDialogProps](x: Self) {
       
-      inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+      
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setContainerRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
+      
+      inline def setContainerRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "containerRef", js.Any.fromFunction1(value))
+      
+      inline def setContainerRefNull: Self = StObject.set(x, "containerRef", null)
+      
+      inline def setContainerRefUndefined: Self = StObject.set(x, "containerRef", js.undefined)
+      
+      inline def setIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconNull: Self = StObject.set(x, "icon", null)
       

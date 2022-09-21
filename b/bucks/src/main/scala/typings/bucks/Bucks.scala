@@ -1,7 +1,6 @@
 package typings.bucks
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object Bucks {
       * @param err If specify err and no callback, throw to execute failure callback
       */
     def destroy(): typings.bucks.Bucks.Bucks = js.native
-    def destroy(err: Error): typings.bucks.Bucks.Bucks = js.native
+    def destroy(err: js.Error): typings.bucks.Bucks.Bucks = js.native
     
     /**
       * Called when destroy async chain.
@@ -46,15 +45,15 @@ object Bucks {
       * @param errback Handler for occurring error in last callback function
       */
     def end(): Unit = js.native
-    def end(callback: Unit, errback: js.Function1[/* err */ Error, js.Any]): Unit = js.native
+    def end(callback: Unit, errback: js.Function1[/* err */ js.Error, Any]): Unit = js.native
     def end(callback: Task): Unit = js.native
-    def end(callback: Task, errback: js.Function1[/* err */ Error, js.Any]): Unit = js.native
+    def end(callback: Task, errback: js.Function1[/* err */ js.Error, Any]): Unit = js.native
     
     /**
       * Add a task called only in case of error.
       * @param onError Function called only in case of error
       */
-    def error(onError: js.Function2[/* err */ Error, /* next */ js.UndefOr[Task], js.Any]): typings.bucks.Bucks.Bucks = js.native
+    def error(onError: js.Function2[/* err */ js.Error, /* next */ js.UndefOr[Task], Any]): typings.bucks.Bucks.Bucks = js.native
     
     /**
       * Add tasks in asynchronous way and join their results.
@@ -66,7 +65,7 @@ object Bucks {
       * Add a task called only in case of success.
       * @param onSuccess Function called only in case of success
       */
-    def `then`(onSuccess: js.Function2[/* res */ js.Any, /* next */ js.UndefOr[Task], js.Any]): typings.bucks.Bucks.Bucks = js.native
+    def `then`(onSuccess: js.Function2[/* res */ Any, /* next */ js.UndefOr[Task], Any]): typings.bucks.Bucks.Bucks = js.native
     
     /**
       * Add tasks in asynchronous way and join their results.
@@ -102,7 +101,7 @@ object Bucks {
       * Catch all errors.
       * @param onError Function called after catching error
       */
-    def onError(onError: js.Function2[/* err */ Error, /* bucks */ typings.bucks.Bucks.Bucks, js.Any]): Unit = js.native
+    def onError(onError: js.Function2[/* err */ js.Error, /* bucks */ typings.bucks.Bucks.Bucks, Any]): Unit = js.native
     
     /**
       * Running bucks objects.
@@ -110,12 +109,12 @@ object Bucks {
     var running: js.Array[typings.bucks.Bucks.Bucks] = js.native
   }
   
-  type Task = js.Function2[/* err */ js.UndefOr[Error], /* res */ js.UndefOr[js.Any], js.Any]
+  type Task = js.Function2[/* err */ js.UndefOr[js.Error], /* res */ js.UndefOr[Any], Any]
   
   type TaskWithNext = js.Function3[
-    /* err */ js.UndefOr[Error], 
-    /* res */ js.UndefOr[js.Any], 
+    /* err */ js.UndefOr[js.Error], 
+    /* res */ js.UndefOr[Any], 
     /* next */ js.UndefOr[Task], 
-    js.Any
+    Any
   ]
 }

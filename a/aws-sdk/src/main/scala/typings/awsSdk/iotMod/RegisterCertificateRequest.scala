@@ -17,12 +17,12 @@ trait RegisterCertificateRequest extends StObject {
   var certificatePem: CertificatePem
   
   /**
-    * A boolean value that specifies if the certificate is set to active.
+    * A boolean value that specifies if the certificate is set to active. Valid values: ACTIVE | INACTIVE 
     */
   var setAsActive: js.UndefOr[SetAsActiveFlag] = js.undefined
   
   /**
-    * The status of the register certificate request.
+    * The status of the register certificate request. Valid values that you can use include ACTIVE, INACTIVE, and REVOKED.
     */
   var status: js.UndefOr[CertificateStatus] = js.undefined
 }

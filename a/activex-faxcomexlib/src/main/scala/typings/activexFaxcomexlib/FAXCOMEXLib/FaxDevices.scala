@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FaxDevices extends StObject {
   
-  def apply(vIndex: js.Any): FaxDevice = js.native
+  def apply(vIndex: Any): FaxDevice = js.native
   
   val Count: Double = js.native
   
-  def Item(vIndex: js.Any): FaxDevice = js.native
+  def Item(vIndex: Any): FaxDevice = js.native
   
   /** Get device by its ID */
   def ItemById(lId: Double): FaxDevice = js.native

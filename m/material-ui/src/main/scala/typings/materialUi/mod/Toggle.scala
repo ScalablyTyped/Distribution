@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Toggle")
 @js.native
-class Toggle ()
+open class Toggle ()
   extends typings.materialUi.MaterialUI.Switches.Toggle

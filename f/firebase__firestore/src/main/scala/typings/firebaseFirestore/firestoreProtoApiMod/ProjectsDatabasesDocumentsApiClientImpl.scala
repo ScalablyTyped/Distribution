@@ -1,20 +1,21 @@
 package typings.firebaseFirestore.firestoreProtoApiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/src/protos/firestore_proto_api", "ProjectsDatabasesDocumentsApiClientImpl")
+@JSImport("@firebase/firestore/dist/firestore/src/protos/firestore_proto_api", "ProjectsDatabasesDocumentsApiClientImpl")
 @js.native
-class ProjectsDatabasesDocumentsApiClientImpl protected () extends ProjectsDatabasesDocumentsApiClient {
+open class ProjectsDatabasesDocumentsApiClientImpl protected () extends ProjectsDatabasesDocumentsApiClient {
   def this(gapiVersion: String, gapiRequestService: PromiseRequestService) = this()
   def this(
     gapiVersion: String,
     gapiRequestService: PromiseRequestService,
     apiClientHookFactory: ApiClientHookFactory
   ) = this()
-  @JSName("$apiClient")
-  var $apiClient: js.Any = js.native
-  var gapiVersion: js.Any = js.native
+  
+  /* private */ @JSName("$apiClient")
+  var $apiClient: Any = js.native
+  
+  /* private */ var gapiVersion: Any = js.native
 }
-

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SkeletonRenderer extends StObject {
   
-  /* private */ var clipper: js.Any = js.native
+  /* private */ var clipper: Any = js.native
   
   def draw(batcher: PolygonBatcher, skeleton: Skeleton): Unit = js.native
   def draw(batcher: PolygonBatcher, skeleton: Skeleton, slotRangeStart: Double): Unit = js.native
@@ -18,25 +18,25 @@ trait SkeletonRenderer extends StObject {
   
   var premultipliedAlpha: Boolean = js.native
   
-  /* private */ var renderable: js.Any = js.native
+  /* private */ var renderable: Any = js.native
   
-  /* private */ var temp: js.Any = js.native
+  /* private */ var temp: Any = js.native
   
-  /* private */ var temp2: js.Any = js.native
+  /* private */ var temp2: Any = js.native
   
-  /* private */ var temp3: js.Any = js.native
+  /* private */ var temp3: Any = js.native
   
-  /* private */ var temp4: js.Any = js.native
+  /* private */ var temp4: Any = js.native
   
-  /* private */ var tempColor: js.Any = js.native
+  /* private */ var tempColor: Any = js.native
   
-  /* private */ var tempColor2: js.Any = js.native
+  /* private */ var tempColor2: Any = js.native
   
-  /* private */ var twoColorTint: js.Any = js.native
+  /* private */ var twoColorTint: Any = js.native
   
   var vertexEffect: VertexEffect = js.native
   
-  /* private */ var vertexSize: js.Any = js.native
+  /* private */ var vertexSize: Any = js.native
   
-  /* private */ var vertices: js.Any = js.native
+  /* private */ var vertices: Any = js.native
 }

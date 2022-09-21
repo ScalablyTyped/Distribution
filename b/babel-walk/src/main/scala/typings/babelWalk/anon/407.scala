@@ -1,7 +1,7 @@
 package typings.babelWalk.anon
 
 import typings.babelTypes.mod.Node
-import typings.babelWalk.babelWalkStrings.DeclareExportAllDeclaration
+import typings.babelWalk.babelWalkStrings.NullableTypeAnnotation
 import typings.babelWalk.mod.AncestorFunction
 import typings.babelWalk.mod.NodeType
 import org.scalablytyped.runtime.StObject
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `407`[TState] extends StObject {
   
-  var enter: js.UndefOr[AncestorFunction[DeclareExportAllDeclaration, TState]] = js.undefined
+  var enter: js.UndefOr[AncestorFunction[NullableTypeAnnotation, TState]] = js.undefined
   
-  var exit: js.UndefOr[AncestorFunction[DeclareExportAllDeclaration, TState]] = js.undefined
+  var exit: js.UndefOr[AncestorFunction[NullableTypeAnnotation, TState]] = js.undefined
 }
 object `407` {
   
@@ -24,13 +24,13 @@ object `407` {
   extension [Self <: `407`[?], TState](x: Self & `407`[TState]) {
     
     inline def setEnter(
-      value: (/* node */ NodeType[DeclareExportAllDeclaration], TState, /* ancestors */ js.Array[Node]) => Unit
+      value: (/* node */ NodeType[NullableTypeAnnotation], TState, /* ancestors */ js.Array[Node]) => Unit
     ): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
     
     inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
     inline def setExit(
-      value: (/* node */ NodeType[DeclareExportAllDeclaration], TState, /* ancestors */ js.Array[Node]) => Unit
+      value: (/* node */ NodeType[NullableTypeAnnotation], TState, /* ancestors */ js.Array[Node]) => Unit
     ): Self = StObject.set(x, "exit", js.Any.fromFunction3(value))
     
     inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)

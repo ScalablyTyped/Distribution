@@ -36,7 +36,7 @@ trait RecurrencePattern extends StObject {
   /* private */ @JSName("Outlook.RecurrencePattern_typekey")
   var OutlookDotRecurrencePattern_typekey: RecurrencePattern
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PatternEndDate: VarDate
   
@@ -67,7 +67,7 @@ object RecurrencePattern {
     NoEndDate: Boolean,
     Occurrences: Double,
     OutlookDotRecurrencePattern_typekey: RecurrencePattern,
-    Parent: js.Any,
+    Parent: Any,
     PatternEndDate: VarDate,
     PatternStartDate: VarDate,
     RecurrenceType: OlRecurrenceType,
@@ -110,7 +110,7 @@ object RecurrencePattern {
     
     inline def setOutlookDotRecurrencePattern_typekey(value: RecurrencePattern): Self = StObject.set(x, "Outlook.RecurrencePattern_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPatternEndDate(value: VarDate): Self = StObject.set(x, "PatternEndDate", value.asInstanceOf[js.Any])
     

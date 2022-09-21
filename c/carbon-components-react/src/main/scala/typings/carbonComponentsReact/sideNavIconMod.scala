@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.carbonComponentsReact.typingsSharedMod.RequiresChildrenProps
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,8 +25,8 @@ object sideNavIconMod extends Shortcut {
   }
   object SideNavIconProps {
     
-    inline def apply(): SideNavIconProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(children: NonNullable[ReactNode]): SideNavIconProps = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[SideNavIconProps]
     }
     

@@ -2,13 +2,15 @@ package typings.inversifyLoggerMiddleware
 
 import typings.inversify.interfacesMod.interfaces.Binding
 import typings.inversifyLoggerMiddleware.interfacesMod.interfaces.BindingLoggerSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify-logger-middleware/dts/reducers/binding_reducer", JSImport.Namespace)
-@js.native
-object bindingReducerMod extends js.Object {
+object bindingReducerMod {
   
-  def default(binding: Binding[_], options: BindingLoggerSettings): js.Any = js.native
+  @JSImport("inversify-logger-middleware/dts/reducers/binding_reducer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(binding: Binding[Any], options: BindingLoggerSettings): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(binding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

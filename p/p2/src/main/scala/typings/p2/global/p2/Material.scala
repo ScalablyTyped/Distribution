@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Material")
 @js.native
-class Material ()
+open class Material ()
   extends typings.p2.mod.Material {
   def this(id: Double) = this()
 }

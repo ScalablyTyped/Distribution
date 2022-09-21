@@ -29,7 +29,7 @@ object DescribeCodeCoveragesOutput {
     
     inline def setCodeCoveragesUndefined: Self = StObject.set(x, "codeCoverages", js.undefined)
     
-    inline def setCodeCoveragesVarargs(value: CodeCoverage*): Self = StObject.set(x, "codeCoverages", js.Array(value :_*))
+    inline def setCodeCoveragesVarargs(value: CodeCoverage*): Self = StObject.set(x, "codeCoverages", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

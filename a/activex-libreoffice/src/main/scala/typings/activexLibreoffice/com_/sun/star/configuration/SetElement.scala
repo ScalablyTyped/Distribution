@@ -68,7 +68,7 @@ object SetElement {
     getParent: () => XInterface,
     getStateAsProperty: () => PropertyState,
     getTemplateName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     setName: String => Unit,

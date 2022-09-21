@@ -64,7 +64,7 @@ object kinesisMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/Kinesis", "Kinesis")
   @js.native
-  class Kinesis protected () extends KinesisClient {
+  open class Kinesis protected () extends KinesisClient {
     def this(configuration: KinesisConfiguration) = this()
     
     /**
@@ -80,7 +80,7 @@ object kinesisMod {
     def addTagsToStream(args: AddTagsToStreamInput): js.Promise[AddTagsToStreamOutput] = js.native
     def addTagsToStream(
       args: AddTagsToStreamInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[AddTagsToStreamOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[AddTagsToStreamOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -95,7 +95,7 @@ object kinesisMod {
     def createStream(args: CreateStreamInput): js.Promise[CreateStreamOutput] = js.native
     def createStream(
       args: CreateStreamInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateStreamOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateStreamOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -111,7 +111,7 @@ object kinesisMod {
     def decreaseStreamRetentionPeriod(args: DecreaseStreamRetentionPeriodInput): js.Promise[DecreaseStreamRetentionPeriodOutput] = js.native
     def decreaseStreamRetentionPeriod(
       args: DecreaseStreamRetentionPeriodInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DecreaseStreamRetentionPeriodOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DecreaseStreamRetentionPeriodOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -126,7 +126,7 @@ object kinesisMod {
     def deleteStream(args: DeleteStreamInput): js.Promise[DeleteStreamOutput] = js.native
     def deleteStream(
       args: DeleteStreamInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteStreamOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteStreamOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -141,7 +141,7 @@ object kinesisMod {
     def deregisterStreamConsumer(args: DeregisterStreamConsumerInput): js.Promise[DeregisterStreamConsumerOutput] = js.native
     def deregisterStreamConsumer(
       args: DeregisterStreamConsumerInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeregisterStreamConsumerOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeregisterStreamConsumerOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -154,7 +154,7 @@ object kinesisMod {
     def describeLimits(args: DescribeLimitsInput): js.Promise[DescribeLimitsOutput] = js.native
     def describeLimits(
       args: DescribeLimitsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeLimitsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeLimitsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -168,7 +168,7 @@ object kinesisMod {
     def describeStream(args: DescribeStreamInput): js.Promise[DescribeStreamOutput] = js.native
     def describeStream(
       args: DescribeStreamInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeStreamOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeStreamOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -183,7 +183,7 @@ object kinesisMod {
     def describeStreamConsumer(args: DescribeStreamConsumerInput): js.Promise[DescribeStreamConsumerOutput] = js.native
     def describeStreamConsumer(
       args: DescribeStreamConsumerInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeStreamConsumerOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeStreamConsumerOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -197,7 +197,7 @@ object kinesisMod {
     def describeStreamSummary(args: DescribeStreamSummaryInput): js.Promise[DescribeStreamSummaryOutput] = js.native
     def describeStreamSummary(
       args: DescribeStreamSummaryInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeStreamSummaryOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeStreamSummaryOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -213,7 +213,7 @@ object kinesisMod {
     def disableEnhancedMonitoring(args: DisableEnhancedMonitoringInput): js.Promise[DisableEnhancedMonitoringOutput] = js.native
     def disableEnhancedMonitoring(
       args: DisableEnhancedMonitoringInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DisableEnhancedMonitoringOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DisableEnhancedMonitoringOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -229,7 +229,7 @@ object kinesisMod {
     def enableEnhancedMonitoring(args: EnableEnhancedMonitoringInput): js.Promise[EnableEnhancedMonitoringOutput] = js.native
     def enableEnhancedMonitoring(
       args: EnableEnhancedMonitoringInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[EnableEnhancedMonitoringOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[EnableEnhancedMonitoringOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -251,7 +251,7 @@ object kinesisMod {
     def getRecords(args: GetRecordsInput): js.Promise[GetRecordsOutput] = js.native
     def getRecords(
       args: GetRecordsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetRecordsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetRecordsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -266,7 +266,7 @@ object kinesisMod {
     def getShardIterator(args: GetShardIteratorInput): js.Promise[GetShardIteratorOutput] = js.native
     def getShardIterator(
       args: GetShardIteratorInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetShardIteratorOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetShardIteratorOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -282,7 +282,7 @@ object kinesisMod {
     def increaseStreamRetentionPeriod(args: IncreaseStreamRetentionPeriodInput): js.Promise[IncreaseStreamRetentionPeriodOutput] = js.native
     def increaseStreamRetentionPeriod(
       args: IncreaseStreamRetentionPeriodInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[IncreaseStreamRetentionPeriodOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[IncreaseStreamRetentionPeriodOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -299,7 +299,7 @@ object kinesisMod {
     def listShards(args: ListShardsInput): js.Promise[ListShardsOutput] = js.native
     def listShards(
       args: ListShardsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListShardsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListShardsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -316,7 +316,7 @@ object kinesisMod {
     def listStreamConsumers(args: ListStreamConsumersInput): js.Promise[ListStreamConsumersOutput] = js.native
     def listStreamConsumers(
       args: ListStreamConsumersInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListStreamConsumersOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListStreamConsumersOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -329,7 +329,7 @@ object kinesisMod {
     def listStreams(args: ListStreamsInput): js.Promise[ListStreamsOutput] = js.native
     def listStreams(
       args: ListStreamsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListStreamsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListStreamsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -344,7 +344,7 @@ object kinesisMod {
     def listTagsForStream(args: ListTagsForStreamInput): js.Promise[ListTagsForStreamOutput] = js.native
     def listTagsForStream(
       args: ListTagsForStreamInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListTagsForStreamOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListTagsForStreamOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -360,7 +360,7 @@ object kinesisMod {
     def mergeShards(args: MergeShardsInput): js.Promise[MergeShardsOutput] = js.native
     def mergeShards(
       args: MergeShardsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[MergeShardsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[MergeShardsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -381,7 +381,7 @@ object kinesisMod {
     def putRecord(args: PutRecordInput): js.Promise[PutRecordOutput] = js.native
     def putRecord(
       args: PutRecordInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutRecordOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutRecordOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -402,7 +402,7 @@ object kinesisMod {
     def putRecords(args: PutRecordsInput): js.Promise[PutRecordsOutput] = js.native
     def putRecords(
       args: PutRecordsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutRecordsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutRecordsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -418,7 +418,7 @@ object kinesisMod {
     def registerStreamConsumer(args: RegisterStreamConsumerInput): js.Promise[RegisterStreamConsumerOutput] = js.native
     def registerStreamConsumer(
       args: RegisterStreamConsumerInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RegisterStreamConsumerOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RegisterStreamConsumerOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -434,7 +434,7 @@ object kinesisMod {
     def removeTagsFromStream(args: RemoveTagsFromStreamInput): js.Promise[RemoveTagsFromStreamOutput] = js.native
     def removeTagsFromStream(
       args: RemoveTagsFromStreamInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RemoveTagsFromStreamOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RemoveTagsFromStreamOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -450,7 +450,7 @@ object kinesisMod {
     def splitShard(args: SplitShardInput): js.Promise[SplitShardOutput] = js.native
     def splitShard(
       args: SplitShardInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SplitShardOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SplitShardOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -472,7 +472,7 @@ object kinesisMod {
     def startStreamEncryption(args: StartStreamEncryptionInput): js.Promise[StartStreamEncryptionOutput] = js.native
     def startStreamEncryption(
       args: StartStreamEncryptionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[StartStreamEncryptionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[StartStreamEncryptionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -488,7 +488,7 @@ object kinesisMod {
     def stopStreamEncryption(args: StopStreamEncryptionInput): js.Promise[StopStreamEncryptionOutput] = js.native
     def stopStreamEncryption(
       args: StopStreamEncryptionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[StopStreamEncryptionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[StopStreamEncryptionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -504,7 +504,7 @@ object kinesisMod {
     def updateShardCount(args: UpdateShardCountInput): js.Promise[UpdateShardCountOutput] = js.native
     def updateShardCount(
       args: UpdateShardCountInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateShardCountOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateShardCountOutput], Unit]
     ): Unit = js.native
   }
 }

@@ -10,10 +10,10 @@ A SDK for issuing and verifying digital credentials through a cloud agent
 | ------------------ | :-------------: |
 | Full name          | openssi-websdk |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 0 |
-| # downloads        | 2118 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 371.3333333333333 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/IBM-Blockchain-Identity/openssi-websdk#readme)

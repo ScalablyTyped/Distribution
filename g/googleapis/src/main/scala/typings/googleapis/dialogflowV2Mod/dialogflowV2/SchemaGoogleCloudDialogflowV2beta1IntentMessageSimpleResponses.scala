@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The collection of simple response candidates. This message in
-  * `QueryResult.fulfillment_messages` and
-  * `WebhookResponse.fulfillment_messages` should contain only one
-  * `SimpleResponse`.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponses extends StObject {
   
   /**
@@ -30,6 +24,6 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponses {
     
     inline def setSimpleResponsesUndefined: Self = StObject.set(x, "simpleResponses", js.undefined)
     
-    inline def setSimpleResponsesVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponse*): Self = StObject.set(x, "simpleResponses", js.Array(value :_*))
+    inline def setSimpleResponsesVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponse*): Self = StObject.set(x, "simpleResponses", js.Array(value*))
   }
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "Switch")
 @js.native
-class Switch protected () extends _MDLComponent[SwitchProps] {
+open class Switch protected () extends _MDLComponent[SwitchProps] {
   def this(props: SwitchProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SwitchProps, context: js.Any) = this()
+  def this(props: SwitchProps, context: Any) = this()
 }

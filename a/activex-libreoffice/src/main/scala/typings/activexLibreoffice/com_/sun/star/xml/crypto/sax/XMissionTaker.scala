@@ -23,12 +23,7 @@ trait XMissionTaker
 }
 object XMissionTaker {
   
-  inline def apply(
-    acquire: () => Unit,
-    endMission: () => Boolean,
-    queryInterface: `type` => js.Any,
-    release: () => Unit
-  ): XMissionTaker = {
+  inline def apply(acquire: () => Unit, endMission: () => Boolean, queryInterface: `type` => Any, release: () => Unit): XMissionTaker = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), endMission = js.Any.fromFunction0(endMission), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XMissionTaker]
   }

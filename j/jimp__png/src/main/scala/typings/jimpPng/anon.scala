@@ -11,7 +11,7 @@ import typings.jimpPng.jimpPngNumbers.`2`
 import typings.jimpPng.jimpPngNumbers.`3`
 import typings.jimpPng.jimpPngNumbers.`4`
 import typings.jimpPng.jimpPngStrings.imageSlashpng
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +54,7 @@ object anon {
       
       inline def setImageSlashpng(value: js.Array[String]): Self = StObject.set(x, "image/png", value.asInstanceOf[js.Any])
       
-      inline def setImageSlashpngVarargs(value: String*): Self = StObject.set(x, "image/png", js.Array(value :_*))
+      inline def setImageSlashpngVarargs(value: String*): Self = StObject.set(x, "image/png", js.Array(value*))
     }
   }
   

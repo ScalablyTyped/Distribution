@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribePackageVersionResult extends StObject {
   
   /**
-    *  A  PackageVersionDescription  object that contains information about the requested package version. 
+    *  A PackageVersionDescription object that contains information about the requested package version. 
     */
   var packageVersion: PackageVersionDescription
 }

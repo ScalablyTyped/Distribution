@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OctreeSceneComponent extends StObject {
   
-  /* private */ var _tempRay: js.Any
+  /* private */ var _tempRay: Any
   
   /**
     * Indicates if the meshes have been checked to make sure they are isEnabled()
     */
-  val checksIsEnabled: Boolean
+  val checksIsEnabled: /* true */ Boolean
   
   /**
-    * Disposes the component and the associated ressources.
+    * Disposes the component and the associated resources.
     */
   def dispose(): Unit
   
@@ -50,7 +50,7 @@ trait OctreeSceneComponent extends StObject {
   /**
     * The component name help to identify the component in the list of scene components.
     */
-  val name: String
+  val name: /* "Octree" */ String
   
   /**
     * Rebuilds the elements related to this component in case of
@@ -71,14 +71,14 @@ trait OctreeSceneComponent extends StObject {
 object OctreeSceneComponent {
   
   inline def apply(
-    _tempRay: js.Any,
-    checksIsEnabled: Boolean,
+    _tempRay: Any,
+    checksIsEnabled: /* true */ Boolean,
     dispose: () => Unit,
     getActiveMeshCandidates: () => ISmartArrayLike[AbstractMesh],
     getActiveSubMeshCandidates: AbstractMesh => ISmartArrayLike[SubMesh],
     getCollidingSubMeshCandidates: (AbstractMesh, Collider) => ISmartArrayLike[SubMesh],
     getIntersectingSubMeshCandidates: (AbstractMesh, Ray) => ISmartArrayLike[SubMesh],
-    name: String,
+    name: /* "Octree" */ String,
     rebuild: () => Unit,
     register: () => Unit,
     scene: Scene
@@ -89,7 +89,7 @@ object OctreeSceneComponent {
   
   extension [Self <: OctreeSceneComponent](x: Self) {
     
-    inline def setChecksIsEnabled(value: Boolean): Self = StObject.set(x, "checksIsEnabled", value.asInstanceOf[js.Any])
+    inline def setChecksIsEnabled(value: /* true */ Boolean): Self = StObject.set(x, "checksIsEnabled", value.asInstanceOf[js.Any])
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
@@ -101,7 +101,7 @@ object OctreeSceneComponent {
     
     inline def setGetIntersectingSubMeshCandidates(value: (AbstractMesh, Ray) => ISmartArrayLike[SubMesh]): Self = StObject.set(x, "getIntersectingSubMeshCandidates", js.Any.fromFunction2(value))
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: /* "Octree" */ String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRebuild(value: () => Unit): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
     
@@ -109,6 +109,6 @@ object OctreeSceneComponent {
     
     inline def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    inline def set_tempRay(value: js.Any): Self = StObject.set(x, "_tempRay", value.asInstanceOf[js.Any])
+    inline def set_tempRay(value: Any): Self = StObject.set(x, "_tempRay", value.asInstanceOf[js.Any])
   }
 }

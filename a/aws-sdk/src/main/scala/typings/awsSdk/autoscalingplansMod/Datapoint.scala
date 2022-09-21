@@ -9,7 +9,7 @@ trait Datapoint extends StObject {
   /**
     * The time stamp for the data point in UTC format.
     */
-  var Timestamp: js.UndefOr[TimestampType] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The value of the data point.
@@ -25,7 +25,7 @@ object Datapoint {
   
   extension [Self <: Datapoint](x: Self) {
     
-    inline def setTimestamp(value: TimestampType): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     

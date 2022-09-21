@@ -10,10 +10,10 @@ object httpMod {
   
   @JSImport("material-ui/svg-icons/action/http", JSImport.Default)
   @js.native
-  class default () extends ActionHttp
+  open class default () extends ActionHttp
   
   @JSImport("material-ui/svg-icons/action/http", "ActionHttp")
   @js.native
-  class ActionHttp ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionHttp ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

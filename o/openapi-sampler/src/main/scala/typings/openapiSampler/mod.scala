@@ -10,14 +10,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def sample(schema: OpenApiSchema): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def sample(schema: OpenApiSchema, options: Unit, spec: OpenApiSpec): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def sample(schema: OpenApiSchema, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def sample(schema: OpenApiSchema, options: Options, spec: OpenApiSpec): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def sample(schema: OpenApiSchema): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def sample(schema: OpenApiSchema, options: Unit, spec: OpenApiSpec): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def sample(schema: OpenApiSchema, options: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def sample(schema: OpenApiSchema, options: Options, spec: OpenApiSpec): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  type OpenApiSchema = js.Any
+  type OpenApiSchema = Any
   
-  type OpenApiSpec = js.Any
+  type OpenApiSpec = Any
   
   trait Options extends StObject {
     

@@ -29,7 +29,7 @@ object DescribeConfigurationAggregatorsResponse {
     
     inline def setConfigurationAggregatorsUndefined: Self = StObject.set(x, "ConfigurationAggregators", js.undefined)
     
-    inline def setConfigurationAggregatorsVarargs(value: ConfigurationAggregator*): Self = StObject.set(x, "ConfigurationAggregators", js.Array(value :_*))
+    inline def setConfigurationAggregatorsVarargs(value: ConfigurationAggregator*): Self = StObject.set(x, "ConfigurationAggregators", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

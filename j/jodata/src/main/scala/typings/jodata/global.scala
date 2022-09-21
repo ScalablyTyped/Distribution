@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("jo")
   @js.native
-  class jo protected ()
+  open class jo protected ()
     extends StObject
        with typings.jodata.jo {
     def this(baseUri: String) = this()
@@ -21,7 +21,7 @@ object global {
     
     @JSGlobal("jo.Concat")
     @js.native
-    class Concat protected ()
+    open class Concat protected ()
       extends StObject
          with typings.jodata.jo.Concat {
       def this(value1: String, value2: String) = this()
@@ -38,7 +38,7 @@ object global {
     
     @JSGlobal("jo.FilterClause")
     @js.native
-    class FilterClause ()
+    open class FilterClause ()
       extends StObject
          with typings.jodata.jo.FilterClause {
       def this(property: String) = this()
@@ -46,7 +46,7 @@ object global {
     
     @JSGlobal("jo.PrecedenceGroup")
     @js.native
-    class PrecedenceGroup protected ()
+    open class PrecedenceGroup protected ()
       extends StObject
          with typings.jodata.jo.PrecedenceGroup {
       def this(filterClause: typings.jodata.jo.FilterClause) = this()

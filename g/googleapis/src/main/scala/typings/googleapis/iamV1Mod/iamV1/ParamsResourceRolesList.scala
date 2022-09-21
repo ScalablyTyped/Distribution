@@ -1,9 +1,5 @@
 package typings.googleapis.iamV1Mod.iamV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +9,7 @@ trait ParamsResourceRolesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Optional limit on the number of roles to include in the response.
+    * Optional limit on the number of roles to include in the response. The default is 300, and the maximum is 1,000.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
@@ -28,9 +19,7 @@ trait ParamsResourceRolesList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The resource name of the parent resource in one of the following formats:
-    * `` (empty string) -- this refers to curated roles.
-    * `organizations/{ORGANIZATION_ID}` `projects/{PROJECT_ID}`
+    * The `parent` parameter's value depends on the target resource for the request, namely [`roles`](https://cloud.google.com/iam/reference/rest/v1/roles), [`projects`](https://cloud.google.com/iam/reference/rest/v1/projects.roles), or [`organizations`](https://cloud.google.com/iam/reference/rest/v1/organizations.roles). Each resource type's `parent` value format is described below: * [`roles.list()`](https://cloud.google.com/iam/reference/rest/v1/roles/list): An empty string. This method doesn't require a resource; it simply returns all [predefined roles](https://cloud.google.com/iam/docs/understanding-roles#predefined_roles) in Cloud IAM. Example request URL: `https://iam.googleapis.com/v1/roles` * [`projects.roles.list()`](https://cloud.google.com/iam/reference/rest/v1/projects.roles/list): `projects/{PROJECT_ID\}`. This method lists all project-level [custom roles](https://cloud.google.com/iam/docs/understanding-custom-roles). Example request URL: `https://iam.googleapis.com/v1/projects/{PROJECT_ID\}/roles` * [`organizations.roles.list()`](https://cloud.google.com/iam/reference/rest/v1/organizations.roles/list): `organizations/{ORGANIZATION_ID\}`. This method lists all organization-level [custom roles](https://cloud.google.com/iam/docs/understanding-custom-roles). Example request URL: `https://iam.googleapis.com/v1/organizations/{ORGANIZATION_ID\}/roles` Note: Wildcard (*) values are invalid; you must specify a complete project ID or organization ID.
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -40,10 +29,7 @@ trait ParamsResourceRolesList
   var showDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Optional view for the returned Role objects. When `FULL` is specified,
-    * the `includedPermissions` field is returned, which includes a list of all
-    * permissions in the role. The default value is `BASIC`, which does not
-    * return the `includedPermissions` field.
+    * Optional view for the returned Role objects. When `FULL` is specified, the `includedPermissions` field is returned, which includes a list of all permissions in the role. The default value is `BASIC`, which does not return the `includedPermissions` field.
     */
   var view: js.UndefOr[String] = js.undefined
 }
@@ -55,10 +41,6 @@ object ParamsResourceRolesList {
   }
   
   extension [Self <: ParamsResourceRolesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

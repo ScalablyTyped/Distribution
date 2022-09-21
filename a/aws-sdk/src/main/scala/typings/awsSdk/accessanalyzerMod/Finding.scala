@@ -14,7 +14,7 @@ trait Finding extends StObject {
   /**
     * The time at which the resource was analyzed.
     */
-  var analyzedAt: Timestamp
+  var analyzedAt: js.Date
   
   /**
     * The condition in the analyzed policy statement that resulted in a finding.
@@ -24,7 +24,7 @@ trait Finding extends StObject {
   /**
     * The time at which the finding was generated.
     */
-  var createdAt: Timestamp
+  var createdAt: js.Date
   
   /**
     * An error.
@@ -52,12 +52,12 @@ trait Finding extends StObject {
   var resource: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account ID that owns the resource.
+    * The Amazon Web Services account ID that owns the resource.
     */
   var resourceOwnerAccount: String
   
   /**
-    * The type of the resource reported in the finding.
+    * The type of the resource identified in the finding.
     */
   var resourceType: ResourceType
   
@@ -74,19 +74,19 @@ trait Finding extends StObject {
   /**
     * The time at which the finding was updated.
     */
-  var updatedAt: Timestamp
+  var updatedAt: js.Date
 }
 object Finding {
   
   inline def apply(
-    analyzedAt: Timestamp,
+    analyzedAt: js.Date,
     condition: ConditionKeyMap,
-    createdAt: Timestamp,
+    createdAt: js.Date,
     id: FindingId,
     resourceOwnerAccount: String,
     resourceType: ResourceType,
     status: FindingStatus,
-    updatedAt: Timestamp
+    updatedAt: js.Date
   ): Finding = {
     val __obj = js.Dynamic.literal(analyzedAt = analyzedAt.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceOwnerAccount = resourceOwnerAccount.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Finding]
@@ -98,13 +98,13 @@ object Finding {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setActionVarargs(value: String*): Self = StObject.set(x, "action", js.Array(value :_*))
+    inline def setActionVarargs(value: String*): Self = StObject.set(x, "action", js.Array(value*))
     
-    inline def setAnalyzedAt(value: Timestamp): Self = StObject.set(x, "analyzedAt", value.asInstanceOf[js.Any])
+    inline def setAnalyzedAt(value: js.Date): Self = StObject.set(x, "analyzedAt", value.asInstanceOf[js.Any])
     
     inline def setCondition(value: ConditionKeyMap): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
@@ -132,10 +132,10 @@ object Finding {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: FindingSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: FindingSource*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setStatus(value: FindingStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

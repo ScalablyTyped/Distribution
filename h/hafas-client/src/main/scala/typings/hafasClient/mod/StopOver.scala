@@ -16,6 +16,8 @@ trait StopOver extends StObject {
   
   var arrivalPlatform: js.UndefOr[String] = js.undefined
   
+  var arrivalPrognosisType: js.UndefOr[PrognosisType] = js.undefined
+  
   var cancelled: js.UndefOr[Boolean] = js.undefined
   
   /** null, if last stopOver of trip */
@@ -24,6 +26,8 @@ trait StopOver extends StObject {
   var departureDelay: js.UndefOr[Double] = js.undefined
   
   var departurePlatform: js.UndefOr[String] = js.undefined
+  
+  var departurePrognosisType: js.UndefOr[PrognosisType] = js.undefined
   
   var passBy: js.UndefOr[Boolean] = js.undefined
   
@@ -43,14 +47,14 @@ trait StopOver extends StObject {
   
   var prognosedDeparturePlatform: js.UndefOr[String] = js.undefined
   
-  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.undefined
+  var remarks: js.UndefOr[js.Array[Hint | Status | Warning]] = js.undefined
   
-  var stop: Station | Stop
+  var stop: js.UndefOr[Station | Stop] = js.undefined
 }
 object StopOver {
   
-  inline def apply(stop: Station | Stop): StopOver = {
-    val __obj = js.Dynamic.literal(stop = stop.asInstanceOf[js.Any])
+  inline def apply(): StopOver = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopOver]
   }
   
@@ -65,6 +69,10 @@ object StopOver {
     inline def setArrivalPlatform(value: String): Self = StObject.set(x, "arrivalPlatform", value.asInstanceOf[js.Any])
     
     inline def setArrivalPlatformUndefined: Self = StObject.set(x, "arrivalPlatform", js.undefined)
+    
+    inline def setArrivalPrognosisType(value: PrognosisType): Self = StObject.set(x, "arrivalPrognosisType", value.asInstanceOf[js.Any])
+    
+    inline def setArrivalPrognosisTypeUndefined: Self = StObject.set(x, "arrivalPrognosisType", js.undefined)
     
     inline def setArrivalUndefined: Self = StObject.set(x, "arrival", js.undefined)
     
@@ -81,6 +89,10 @@ object StopOver {
     inline def setDeparturePlatform(value: String): Self = StObject.set(x, "departurePlatform", value.asInstanceOf[js.Any])
     
     inline def setDeparturePlatformUndefined: Self = StObject.set(x, "departurePlatform", js.undefined)
+    
+    inline def setDeparturePrognosisType(value: PrognosisType): Self = StObject.set(x, "departurePrognosisType", value.asInstanceOf[js.Any])
+    
+    inline def setDeparturePrognosisTypeUndefined: Self = StObject.set(x, "departurePrognosisType", js.undefined)
     
     inline def setDepartureUndefined: Self = StObject.set(x, "departure", js.undefined)
     
@@ -120,12 +132,14 @@ object StopOver {
     
     inline def setPrognosedDepartureUndefined: Self = StObject.set(x, "prognosedDeparture", js.undefined)
     
-    inline def setRemarks(value: js.Array[Hint | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
+    inline def setRemarks(value: js.Array[Hint | Status | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
     inline def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
     
-    inline def setRemarksVarargs(value: (Hint | Warning)*): Self = StObject.set(x, "remarks", js.Array(value :_*))
+    inline def setRemarksVarargs(value: (Hint | Status | Warning)*): Self = StObject.set(x, "remarks", js.Array(value*))
     
     inline def setStop(value: Station | Stop): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
   }
 }

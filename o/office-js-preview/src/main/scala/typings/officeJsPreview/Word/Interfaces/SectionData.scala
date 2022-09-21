@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SectionData extends StObject {
   
   /**
-    *
     * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var body: js.UndefOr[BodyData] = js.undefined

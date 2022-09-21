@@ -10,15 +10,12 @@ Return a copy of an object excluding the given key, or array of keys. Also accep
 | ------------------ | :-------------: |
 | Full name          | object.omit |
 | Keywords           | clear, delete, key, object, omit, property, remove, value |
-| # releases         | 0 |
-| # dependents       | 238 |
-| # downloads        | 183425340 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2273071666666666E7 |
+| # stars            | 79.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/object.omit)
-- [Bugs](https://github.com/jonschlinkert/object.omit/issues)
-- [Repository](https://github.com/jonschlinkert/object.omit)
 - [Npm](https://www.npmjs.com/package/object.omit)
     
 

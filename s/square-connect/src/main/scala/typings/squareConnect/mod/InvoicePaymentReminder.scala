@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "InvoicePaymentReminder")
 @js.native
-class InvoicePaymentReminder () extends StObject {
+open class InvoicePaymentReminder () extends StObject {
   
   /**
     * The reminder message.

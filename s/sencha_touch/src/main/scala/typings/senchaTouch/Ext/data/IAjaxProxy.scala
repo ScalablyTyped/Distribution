@@ -10,7 +10,7 @@ trait IAjaxProxy
      with IServer {
   
   /** [Property] (Object) */
-  var actionMethods: js.UndefOr[js.Any] = js.undefined
+  var actionMethods: js.UndefOr[Any] = js.undefined
   
   /** [Method] Performs Ajax request
     * @param operation Ext.data.Operation
@@ -22,16 +22,16 @@ trait IAjaxProxy
   var doRequest_IAjaxProxy: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      js.Any
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      Any
     ]
   ] = js.undefined
   
   /** [Method] Returns the value of headers
     * @returns Object
     */
-  var getHeaders: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getHeaders: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the HTTP method name for a given request
     * @param request Ext.data.Request The request object.
@@ -60,7 +60,7 @@ trait IAjaxProxy
   var getWithCredentials: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Object) */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var password: js.UndefOr[String] = js.undefined
@@ -68,7 +68,7 @@ trait IAjaxProxy
   /** [Method] Sets the value of headers
     * @param headers Object The new value.
     */
-  var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of password
     * @param password String The new value.
@@ -108,17 +108,17 @@ object IAjaxProxy {
   
   extension [Self <: IAjaxProxy](x: Self) {
     
-    inline def setActionMethods(value: js.Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
+    inline def setActionMethods(value: Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
     
     inline def setActionMethodsUndefined: Self = StObject.set(x, "actionMethods", js.undefined)
     
     inline def setDoRequest(
-      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
+      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any
     ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
     
     inline def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
     
-    inline def setGetHeaders(value: () => js.Any): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
+    inline def setGetHeaders(value: () => Any): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
     
     inline def setGetHeadersUndefined: Self = StObject.set(x, "getHeaders", js.undefined)
     
@@ -142,7 +142,7 @@ object IAjaxProxy {
     
     inline def setGetWithCredentialsUndefined: Self = StObject.set(x, "getWithCredentials", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -150,7 +150,7 @@ object IAjaxProxy {
     
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    inline def setSetHeaders(value: /* headers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+    inline def setSetHeaders(value: /* headers */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
     
     inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
     

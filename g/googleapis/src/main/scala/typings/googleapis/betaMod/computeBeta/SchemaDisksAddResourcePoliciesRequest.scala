@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaDisksAddResourcePoliciesRequest extends StObject {
   
   /**
-    * Resource policies to be added to this disk.
+    * Full or relative path to the resource policy to be added to this disk. You can only specify one resource policy.
     */
-  var resourcePolicies: js.UndefOr[js.Array[String]] = js.undefined
+  var resourcePolicies: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaDisksAddResourcePoliciesRequest {
   
@@ -22,8 +22,10 @@ object SchemaDisksAddResourcePoliciesRequest {
     
     inline def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
     
+    inline def setResourcePoliciesNull: Self = StObject.set(x, "resourcePolicies", null)
+    
     inline def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
-    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
+    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value*))
   }
 }

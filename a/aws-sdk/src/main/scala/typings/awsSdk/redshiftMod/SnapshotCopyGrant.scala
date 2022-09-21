@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SnapshotCopyGrant extends StObject {
   
   /**
-    * The unique identifier of the customer master key (CMK) in AWS KMS to which Amazon Redshift is granted permission.
+    * The unique identifier of the encrypted symmetric key in Amazon Web Services KMS to which Amazon Redshift is granted permission.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -42,6 +42,6 @@ object SnapshotCopyGrant {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

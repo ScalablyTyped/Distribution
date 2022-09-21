@@ -15,6 +15,11 @@ trait CreateCacheSecurityGroupMessage extends StObject {
     * A description for the cache security group.
     */
   var Description: String
+  
+  /**
+    * A list of tags to be added to this resource. A tag is a key-value pair. A tag key must be accompanied by a tag value, although null is accepted.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateCacheSecurityGroupMessage {
   
@@ -28,5 +33,11 @@ object CreateCacheSecurityGroupMessage {
     inline def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

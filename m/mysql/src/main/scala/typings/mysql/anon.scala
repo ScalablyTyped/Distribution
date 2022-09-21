@@ -1,7 +1,7 @@
 package typings.mysql
 
 import typings.mysql.mod.GeometryType
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureVersion
@@ -90,7 +90,7 @@ object anon {
       * object.passphrase is optional. Encrypted keys will be decrypted with
       * object.passphrase if provided, or options.passphrase if it is not.
       */
-    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
+    var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer | KeyObject])] = js.undefined
     
     /**
       * Optionally set the maximum TLS version to allow. One
@@ -207,13 +207,13 @@ object anon {
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+      inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value*))
       
       inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
       
@@ -227,7 +227,7 @@ object anon {
       
       inline def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
       
-      inline def setCrlVarargs(value: (String | Buffer)*): Self = StObject.set(x, "crl", js.Array(value :_*))
+      inline def setCrlVarargs(value: (String | Buffer)*): Self = StObject.set(x, "crl", js.Array(value*))
       
       inline def setDhparam(value: String | Buffer): Self = StObject.set(x, "dhparam", value.asInstanceOf[js.Any])
       
@@ -241,11 +241,11 @@ object anon {
       
       inline def setHonorCipherOrderUndefined: Self = StObject.set(x, "honorCipherOrder", js.undefined)
       
-      inline def setKey(value: String | Buffer | (js.Array[Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Buffer | (js.Array[String | Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setKeyVarargs(value: (Buffer | KeyObject)*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: (String | Buffer | KeyObject)*): Self = StObject.set(x, "key", js.Array(value*))
       
       inline def setMaxVersion(value: SecureVersion): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
       
@@ -263,7 +263,7 @@ object anon {
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
-      inline def setPfxVarargs(value: (String | Buffer | PxfObject)*): Self = StObject.set(x, "pfx", js.Array(value :_*))
+      inline def setPfxVarargs(value: (String | Buffer | PxfObject)*): Self = StObject.set(x, "pfx", js.Array(value*))
       
       inline def setPrivateKeyEngine(value: String): Self = StObject.set(x, "privateKeyEngine", value.asInstanceOf[js.Any])
       
@@ -320,12 +320,12 @@ object anon {
     }
   }
   
-  /* Inlined mysql.mysql.UntypedFieldInfo & {  type :string,   length :number, string (): string, buffer (): node.Buffer, geometry (): null | mysql.mysql.GeometryType} */
+  /* Inlined mysql.mysql.UntypedFieldInfo & {  type :string,   length :number, string (): null | string, buffer (): null | node.buffer.<global>.Buffer, geometry (): null | mysql.mysql.GeometryType} */
   trait UntypedFieldInfotypestrin extends StObject {
     
     var default: js.UndefOr[String] = js.undefined
     
-    def buffer(): Buffer
+    def buffer(): Null | Buffer
     
     var catalog: String
     
@@ -349,7 +349,7 @@ object anon {
     
     var protocol41: Boolean
     
-    def string(): String
+    def string(): Null | String
     
     var table: String
     
@@ -360,7 +360,7 @@ object anon {
   object UntypedFieldInfotypestrin {
     
     inline def apply(
-      buffer: () => Buffer,
+      buffer: () => Null | Buffer,
       catalog: String,
       charsetNr: Double,
       db: String,
@@ -372,7 +372,7 @@ object anon {
       orgName: String,
       orgTable: String,
       protocol41: Boolean,
-      string: () => String,
+      string: () => Null | String,
       table: String,
       `type`: String,
       zeroFill: Boolean
@@ -384,7 +384,7 @@ object anon {
     
     extension [Self <: UntypedFieldInfotypestrin](x: Self) {
       
-      inline def setBuffer(value: () => Buffer): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
+      inline def setBuffer(value: () => Null | Buffer): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
       
       inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
       
@@ -412,7 +412,7 @@ object anon {
       
       inline def setProtocol41(value: Boolean): Self = StObject.set(x, "protocol41", value.asInstanceOf[js.Any])
       
-      inline def setString(value: () => String): Self = StObject.set(x, "string", js.Any.fromFunction0(value))
+      inline def setString(value: () => Null | String): Self = StObject.set(x, "string", js.Any.fromFunction0(value))
       
       inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       

@@ -1,11 +1,16 @@
 package typings.mssql.mod
 
-import typings.tedious.mod.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait config extends StObject {
+  
+  var arrayRowMode: js.UndefOr[Boolean] = js.undefined
+  
+  var authentication: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify tds.ConnectionAuthentication */ Any
+  ] = js.undefined
   
   /**
     * Invoked before opening the connection. The parameter conn is the configured
@@ -15,7 +20,7 @@ trait config extends StObject {
   
   var connectionTimeout: js.UndefOr[Double] = js.undefined
   
-  var database: String
+  var database: js.UndefOr[String] = js.undefined
   
   var domain: js.UndefOr[String] = js.undefined
   
@@ -27,7 +32,7 @@ trait config extends StObject {
   
   var password: js.UndefOr[String] = js.undefined
   
-  var pool: js.UndefOr[IPool] = js.undefined
+  var pool: js.UndefOr[PoolOpts[Connection]] = js.undefined
   
   var port: js.UndefOr[Double] = js.undefined
   
@@ -41,12 +46,22 @@ trait config extends StObject {
 }
 object config {
   
-  inline def apply(database: String, server: String): config = {
-    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
+  inline def apply(server: String): config = {
+    val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
     __obj.asInstanceOf[config]
   }
   
   extension [Self <: config](x: Self) {
+    
+    inline def setArrayRowMode(value: Boolean): Self = StObject.set(x, "arrayRowMode", value.asInstanceOf[js.Any])
+    
+    inline def setArrayRowModeUndefined: Self = StObject.set(x, "arrayRowMode", js.undefined)
+    
+    inline def setAuthentication(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify tds.ConnectionAuthentication */ Any
+    ): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
     
     inline def setBeforeConnect(value: /* conn */ Connection => Unit): Self = StObject.set(x, "beforeConnect", js.Any.fromFunction1(value))
     
@@ -57,6 +72,8 @@ object config {
     inline def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
     
     inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
@@ -78,7 +95,7 @@ object config {
     
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    inline def setPool(value: IPool): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: PoolOpts[Connection]): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
     inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
     

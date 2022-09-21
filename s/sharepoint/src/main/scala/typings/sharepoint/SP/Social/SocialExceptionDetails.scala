@@ -26,9 +26,9 @@ trait SocialExceptionDetails
 object SocialExceptionDetails {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_internalErrorCode: () => Double,
     get_internalMessage: () => String,
     get_internalStackTrace: () => String,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Sync extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -22,7 +22,7 @@ trait Sync extends StObject {
   
   def OpenVersion(SyncVersionType: MsoSyncVersionType): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   def PutUpdate(): Unit
   
@@ -37,14 +37,14 @@ trait Sync extends StObject {
 object Sync {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     ErrorType: MsoSyncErrorType,
     GetUpdate: () => Unit,
     LastSyncTime: VarDate,
     OfficeDotSync_typekey: Sync,
     OpenVersion: MsoSyncVersionType => Unit,
-    Parent: js.Any,
+    Parent: Any,
     PutUpdate: () => Unit,
     ResolveConflict: MsoSyncConflictResolutionType => Unit,
     Status: MsoSyncStatusType,
@@ -58,7 +58,7 @@ object Sync {
   
   extension [Self <: Sync](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object Sync {
     
     inline def setOpenVersion(value: MsoSyncVersionType => Unit): Self = StObject.set(x, "OpenVersion", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPutUpdate(value: () => Unit): Self = StObject.set(x, "PutUpdate", js.Any.fromFunction0(value))
     

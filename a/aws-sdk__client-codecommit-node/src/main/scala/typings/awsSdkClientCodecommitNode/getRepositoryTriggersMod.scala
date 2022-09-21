@@ -8,5 +8,5 @@ object getRepositoryTriggersMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetRepositoryTriggers", "GetRepositoryTriggers")
   @js.native
-  val GetRepositoryTriggers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetRepositoryTriggers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

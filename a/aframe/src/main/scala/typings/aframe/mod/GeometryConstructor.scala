@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GeometryConstructor[T /* <: js.Object */]
   extends StObject
-     with Instantiable0[T & Geometry[js.Any]]
+     with Instantiable0[T & Geometry[Any]]

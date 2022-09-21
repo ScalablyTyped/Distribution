@@ -17,7 +17,7 @@ trait CreateRegistryInput extends StObject {
   var RegistryName: SchemaRegistryNameString
   
   /**
-    * AWS tags that contain a key value pair and may be searched by console, command line, or API.
+    * Amazon Web Services tags that contain a key value pair and may be searched by console, command line, or API.
     */
   var Tags: js.UndefOr[TagsMap] = js.undefined
 }

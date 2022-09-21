@@ -1,16 +1,15 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`datetime-picker`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DateTimePickerInputProperties
-  extends StObject
-     with InputProperties {
+trait DateTimePickerInputProperties extends StObject {
   
   /**
     * Indicates if the input should provide an option to select the time.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#includeTime)
     */
@@ -29,13 +28,6 @@ trait DateTimePickerInputProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#min)
     */
   var min: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * The type of input.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#type)
-    */
-  var `type`: js.UndefOr[`datetime-picker`] = js.undefined
 }
 object DateTimePickerInputProperties {
   
@@ -57,9 +49,5 @@ object DateTimePickerInputProperties {
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
-    
-    inline def setType(value: `datetime-picker`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

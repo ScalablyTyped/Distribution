@@ -100,11 +100,11 @@ object anon {
       
       inline def setExceptions(value: js.Array[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
       
-      inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
+      inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value*))
       
       inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value*))
     }
   }
 }

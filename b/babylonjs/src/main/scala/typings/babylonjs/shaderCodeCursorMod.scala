@@ -8,9 +8,9 @@ object shaderCodeCursorMod {
   
   @JSImport("babylonjs/Engines/Processors/shaderCodeCursor", "ShaderCodeCursor")
   @js.native
-  class ShaderCodeCursor () extends StObject {
+  open class ShaderCodeCursor () extends StObject {
     
-    /* private */ var _lines: js.Any = js.native
+    /* private */ var _lines: Any = js.native
     
     def canRead: Boolean = js.native
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.SwirlEffect")
 @js.native
-class SwirlEffect protected ()
+open class SwirlEffect protected ()
   extends StObject
      with typings.phaser.spine.SwirlEffect {
   def this(radius: Double) = this()
@@ -38,10 +38,10 @@ class SwirlEffect protected ()
   ): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var worldX: js.Any = js.native
+  var worldX: Any = js.native
   
   /* private */ /* CompleteClass */
-  var worldY: js.Any = js.native
+  var worldY: Any = js.native
 }
 object SwirlEffect {
   

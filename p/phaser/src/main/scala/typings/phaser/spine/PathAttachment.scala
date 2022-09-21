@@ -47,6 +47,6 @@ object PathAttachment {
     
     inline def setLengths(value: js.Array[Double]): Self = StObject.set(x, "lengths", value.asInstanceOf[js.Any])
     
-    inline def setLengthsVarargs(value: Double*): Self = StObject.set(x, "lengths", js.Array(value :_*))
+    inline def setLengthsVarargs(value: Double*): Self = StObject.set(x, "lengths", js.Array(value*))
   }
 }

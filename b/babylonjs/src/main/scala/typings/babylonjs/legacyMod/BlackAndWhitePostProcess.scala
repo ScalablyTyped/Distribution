@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "BlackAndWhitePostProcess")
 @js.native
-class BlackAndWhitePostProcess protected ()
+open class BlackAndWhitePostProcess protected ()
   extends typings.babylonjs.indexMod.BlackAndWhitePostProcess {
   /**
     * Creates a black and white post process
@@ -129,9 +129,15 @@ object BlackAndWhitePostProcess {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
   inline def _Parse(
-    parsedPostProcess: js.Any,
+    parsedPostProcess: Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String

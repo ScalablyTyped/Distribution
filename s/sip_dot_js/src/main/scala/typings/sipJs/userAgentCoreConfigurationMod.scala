@@ -148,7 +148,7 @@ object userAgentCoreConfigurationMod {
       
       inline def setRouteSet(value: js.Array[String]): Self = StObject.set(x, "routeSet", value.asInstanceOf[js.Any])
       
-      inline def setRouteSetVarargs(value: String*): Self = StObject.set(x, "routeSet", js.Array(value :_*))
+      inline def setRouteSetVarargs(value: String*): Self = StObject.set(x, "routeSet", js.Array(value*))
       
       inline def setSipjsId(value: String): Self = StObject.set(x, "sipjsId", value.asInstanceOf[js.Any])
       
@@ -156,9 +156,9 @@ object userAgentCoreConfigurationMod {
       
       inline def setSupportedOptionTagsResponse(value: js.Array[String]): Self = StObject.set(x, "supportedOptionTagsResponse", value.asInstanceOf[js.Any])
       
-      inline def setSupportedOptionTagsResponseVarargs(value: String*): Self = StObject.set(x, "supportedOptionTagsResponse", js.Array(value :_*))
+      inline def setSupportedOptionTagsResponseVarargs(value: String*): Self = StObject.set(x, "supportedOptionTagsResponse", js.Array(value*))
       
-      inline def setSupportedOptionTagsVarargs(value: String*): Self = StObject.set(x, "supportedOptionTags", js.Array(value :_*))
+      inline def setSupportedOptionTagsVarargs(value: String*): Self = StObject.set(x, "supportedOptionTags", js.Array(value*))
       
       inline def setTransportAccessor(value: () => js.UndefOr[Transport]): Self = StObject.set(x, "transportAccessor", js.Any.fromFunction0(value))
       

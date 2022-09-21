@@ -37,7 +37,7 @@ object Chai {
     def id(id: String): Assertion = js.native
     
     def prop(name: String): Assertion = js.native
-    def prop(name: String, value: js.Any): Assertion = js.native
+    def prop(name: String, value: Any): Assertion = js.native
     
     def selected(): Assertion = js.native
     

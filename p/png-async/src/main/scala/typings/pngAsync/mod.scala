@@ -1,8 +1,7 @@
 package typings.pngAsync
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Duplex
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,22 +100,22 @@ object mod {
   
   @JSImport("png-async", "Image")
   @js.native
-  class Image () extends Duplex {
+  open class Image () extends Duplex {
     def this(option: IImageOptions) = this()
     
-    /* private */ var _gamma: js.Any = js.native
+    /* private */ var _gamma: Any = js.native
     
-    /* private */ var _handleClose: js.Any = js.native
+    /* private */ var _handleClose: Any = js.native
     
-    /* private */ var _metadata: js.Any = js.native
+    /* private */ var _metadata: Any = js.native
     
-    /* private */ var _packer: js.Any = js.native
+    /* private */ var _packer: Any = js.native
     
-    /* private */ var _parser: js.Any = js.native
+    /* private */ var _parser: Any = js.native
     
     def _read(): Unit = js.native
     
-    def _write(data: js.Any, encoding: js.Any, callback: js.Any): Boolean = js.native
+    def _write(data: Any, encoding: Any, callback: Any): Boolean = js.native
     
     def bitblt(dst: Image, sx: Double, sy: Double, w: Double, h: Double, dx: Double, dy: Double): this.type = js.native
     
@@ -129,7 +128,7 @@ object mod {
     def pack(): Image = js.native
     
     def parse(data: Buffer): Image = js.native
-    def parse(data: Buffer, callback: js.Function2[/* err */ Error, /* image */ this.type, Unit]): Image = js.native
+    def parse(data: Buffer, callback: js.Function2[/* err */ js.Error, /* image */ this.type, Unit]): Image = js.native
     
     var width: Double = js.native
   }

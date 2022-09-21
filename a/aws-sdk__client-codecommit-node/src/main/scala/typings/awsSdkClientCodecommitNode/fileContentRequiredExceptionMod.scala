@@ -8,5 +8,5 @@ object fileContentRequiredExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/FileContentRequiredException", "FileContentRequiredException")
   @js.native
-  val FileContentRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val FileContentRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -15,4 +15,16 @@ object resizeNearestNeighborMod {
   
   inline def resizeNearestNeighbor[T /* <: Tensor3D | Tensor4D */](images: T | TensorLike, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def resizeNearestNeighbor[T /* <: Tensor3D | Tensor4D */](images: T | TensorLike, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def resizeNearestNeighbor[T /* <: Tensor3D | Tensor4D */](
+    images: T | TensorLike,
+    size: js.Tuple2[Double, Double],
+    alignCorners: Boolean,
+    halfPixelCenters: Boolean
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def resizeNearestNeighbor[T /* <: Tensor3D | Tensor4D */](
+    images: T | TensorLike,
+    size: js.Tuple2[Double, Double],
+    alignCorners: Unit,
+    halfPixelCenters: Boolean
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any], halfPixelCenters.asInstanceOf[js.Any])).asInstanceOf[T]
 }

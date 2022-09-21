@@ -8,7 +8,7 @@ object animationPropertiesOverrideMod {
   
   @JSImport("babylonjs/Animations/animationPropertiesOverride", "AnimationPropertiesOverride")
   @js.native
-  class AnimationPropertiesOverride () extends StObject {
+  open class AnimationPropertiesOverride () extends StObject {
     
     /**
       * Gets or sets the blending speed to use when enableBlending is true

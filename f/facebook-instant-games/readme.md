@@ -1,7 +1,7 @@
 
 # Scala.js typings for facebook-instant-games
 
-Typings are for version 6.3
+Typings are for version 7.0
 
 
 

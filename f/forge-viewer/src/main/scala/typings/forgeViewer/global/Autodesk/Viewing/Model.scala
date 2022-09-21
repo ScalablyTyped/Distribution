@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.Model")
 @js.native
-class Model ()
+open class Model ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.Model

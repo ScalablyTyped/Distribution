@@ -10,10 +10,10 @@ A curated set of user interface interactions, effects, widgets, and themes built
 | ------------------ | :-------------: |
 | Full name          | jqueryui |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 406689 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 52167.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/sethmcl/jquery-ui#readme)

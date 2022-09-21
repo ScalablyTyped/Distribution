@@ -1,10 +1,11 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.ReadonlyPickerPropsAccessibilityActions
+import typings.antDesignReactNative.antDesignReactNativeStrings.dialog
+import typings.antDesignReactNative.antDesignReactNativeStrings.dropdown
 import typings.react.mod.ComponentType
-import typings.reactNativeCommunityPicker.mod.Picker
-import typings.reactNativeCommunityPicker.pickerMod.PickerItemProps
-import typings.reactNativeCommunityPicker.pickerMod.PickerProps
+import typings.reactNativePickerPicker.mod.Picker
+import typings.reactNativePickerPicker.pickerMod.PickerItemProps
+import typings.reactNativePickerPicker.pickerMod.PickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +14,13 @@ object nativePickerIosMod {
   
   @JSImport("@ant-design/react-native/lib/picker/NativePicker.ios", JSImport.Default)
   @js.native
-  class default protected () extends Picker {
-    def this(props: ReadonlyPickerPropsAccessibilityActions) = this()
-    def this(props: PickerProps) = this()
+  open class default[T] protected () extends Picker[T] {
+    def this(props: PickerProps[T]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PickerProps, context: js.Any) = this()
+    def this(props: PickerProps[T], context: Any) = this()
   }
   object default {
     
@@ -31,25 +31,33 @@ object nativePickerIosMod {
     /* static member */
     @JSImport("@ant-design/react-native/lib/picker/NativePicker.ios", "default.Item")
     @js.native
-    def Item: ComponentType[PickerItemProps] = js.native
-    inline def Item_=(x: ComponentType[PickerItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item: ComponentType[
+        PickerItemProps[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify T */ Any
+        ]
+      ] = js.native
+    inline def Item_=(
+      x: ComponentType[
+          PickerItemProps[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify T */ Any
+          ]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     /**
-      * On Android, display the options in a dialog.
+      * On Android, display the options in a dialog (this is the default).
       */
     /* static member */
     @JSImport("@ant-design/react-native/lib/picker/NativePicker.ios", "default.MODE_DIALOG")
     @js.native
-    def MODE_DIALOG: String = js.native
-    inline def MODE_DIALOG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODE_DIALOG")(x.asInstanceOf[js.Any])
+    val MODE_DIALOG: dialog = js.native
     
     /**
-      * On Android, display the options in a dropdown (this is the default).
+      * On Android, display the options in a dropdown.
       */
     /* static member */
     @JSImport("@ant-design/react-native/lib/picker/NativePicker.ios", "default.MODE_DROPDOWN")
     @js.native
-    def MODE_DROPDOWN: String = js.native
-    inline def MODE_DROPDOWN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODE_DROPDOWN")(x.asInstanceOf[js.Any])
+    val MODE_DROPDOWN: dropdown = js.native
   }
 }

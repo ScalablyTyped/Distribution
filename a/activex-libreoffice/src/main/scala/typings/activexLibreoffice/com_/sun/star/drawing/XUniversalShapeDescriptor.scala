@@ -18,7 +18,7 @@ object XUniversalShapeDescriptor {
     ShapeType: String,
     acquire: () => Unit,
     getShapeType: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setShapeType: String => Unit
   ): XUniversalShapeDescriptor = {

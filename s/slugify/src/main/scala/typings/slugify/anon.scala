@@ -1,6 +1,5 @@
 package typings.slugify
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +12,13 @@ object anon {
     
     var lower: js.UndefOr[Boolean] = js.undefined
     
-    var remove: js.UndefOr[RegExp] = js.undefined
+    var remove: js.UndefOr[js.RegExp] = js.undefined
     
     var replacement: js.UndefOr[String] = js.undefined
     
     var strict: js.UndefOr[Boolean] = js.undefined
+    
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object Locale {
     
@@ -36,7 +37,7 @@ object anon {
       
       inline def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
       
-      inline def setRemove(value: RegExp): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: js.RegExp): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
       inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
@@ -47,6 +48,10 @@ object anon {
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
 }

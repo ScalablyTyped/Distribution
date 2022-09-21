@@ -1,12 +1,10 @@
 package typings.mapboxMapboxSdk.directionsMod
 
-import typings.geojson.mod.LineString
-import typings.geojson.mod.MultiLineString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Route extends StObject {
+trait Route[T /* <: RouteGeometry */] extends StObject {
   
   /**
     * Float indicating the distance traveled in meters.
@@ -23,7 +21,7 @@ trait Route extends StObject {
     * Depending on the overview parameter this is the complete route geometry (full), a simplified geometry
     * to the zoom level at which the route can be displayed in full (simplified), or is not included (false)
     */
-  var geometry: LineString | MultiLineString
+  var geometry: T
   
   /**
     * Array of RouteLeg objects.
@@ -48,29 +46,29 @@ trait Route extends StObject {
 }
 object Route {
   
-  inline def apply(
+  inline def apply[T /* <: RouteGeometry */](
     distance: Double,
     duration: Double,
-    geometry: LineString | MultiLineString,
+    geometry: T,
     legs: js.Array[Leg],
     weight: Double,
     weight_name: String
-  ): Route = {
+  ): Route[T] = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], legs = legs.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], weight_name = weight_name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Route]
+    __obj.asInstanceOf[Route[T]]
   }
   
-  extension [Self <: Route](x: Self) {
+  extension [Self <: Route[?], T /* <: RouteGeometry */](x: Self & Route[T]) {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setGeometry(value: LineString | MultiLineString): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: T): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     inline def setLegs(value: js.Array[Leg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
     
-    inline def setLegsVarargs(value: Leg*): Self = StObject.set(x, "legs", js.Array(value :_*))
+    inline def setLegsVarargs(value: Leg*): Self = StObject.set(x, "legs", js.Array(value*))
     
     inline def setVoiceLocale(value: String): Self = StObject.set(x, "voiceLocale", value.asInstanceOf[js.Any])
     

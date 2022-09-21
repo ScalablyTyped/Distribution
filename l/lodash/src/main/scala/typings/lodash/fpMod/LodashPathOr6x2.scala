@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashPathOr6x2 extends StObject {
   
-  def apply(defaultValue: js.Any): LodashPathOr7x3 = js.native
-  def apply(defaultValue: js.Any, `object`: js.Any): js.Any = js.native
+  def apply(defaultValue: Any): LodashPathOr7x3 = js.native
+  def apply(defaultValue: Any, `object`: Any): Any = js.native
   def apply(defaultValue: __): LodashPathOr6x6 = js.native
-  def apply(defaultValue: __, `object`: js.Any): LodashPathOr7x6 = js.native
-  def apply[TDefault](defaultValue: TDefault): TDefault = js.native
+  def apply(defaultValue: __, `object`: Any): LodashPathOr7x6 = js.native
 }

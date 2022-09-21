@@ -53,7 +53,7 @@ object TransitLine {
     
     inline def setAgencies(value: js.Array[TransitAgency]): Self = StObject.set(x, "agencies", value.asInstanceOf[js.Any])
     
-    inline def setAgenciesVarargs(value: TransitAgency*): Self = StObject.set(x, "agencies", js.Array(value :_*))
+    inline def setAgenciesVarargs(value: TransitAgency*): Self = StObject.set(x, "agencies", js.Array(value*))
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

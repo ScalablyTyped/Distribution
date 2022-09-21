@@ -144,7 +144,7 @@ object IFieldInTableData {
     
     inline def setQOriginalFields(value: js.Array[String]): Self = StObject.set(x, "qOriginalFields", value.asInstanceOf[js.Any])
     
-    inline def setQOriginalFieldsVarargs(value: String*): Self = StObject.set(x, "qOriginalFields", js.Array(value :_*))
+    inline def setQOriginalFieldsVarargs(value: String*): Self = StObject.set(x, "qOriginalFields", js.Array(value*))
     
     inline def setQPresent(value: Boolean): Self = StObject.set(x, "qPresent", value.asInstanceOf[js.Any])
     
@@ -152,7 +152,7 @@ object IFieldInTableData {
     
     inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value*))
     
     inline def setQnNonNulls(value: Double): Self = StObject.set(x, "qnNonNulls", value.asInstanceOf[js.Any])
     

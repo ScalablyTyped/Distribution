@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.CalloutFormat")
 @js.native
-/* private */ class CalloutFormat ()
+/* private */ open class CalloutFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.CalloutFormat {
   
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Angle: MsoCalloutAngleType = js.native
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var AutoAttach: MsoTriState = js.native
@@ -57,7 +57,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Length: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.CalloutFormat_typekey")

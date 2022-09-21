@@ -24,7 +24,7 @@ trait GetBatchPredictionOutput extends StObject {
   /**
     * The time when the BatchPrediction was created. The time is expressed in epoch time.
     */
-  var CreatedAt: js.UndefOr[EpochTime] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The AWS user account that invoked the BatchPrediction. The account type can be either an AWS root account or an AWS Identity and Access Management (IAM) user account.
@@ -34,7 +34,7 @@ trait GetBatchPredictionOutput extends StObject {
   /**
     * The epoch time when Amazon Machine Learning marked the BatchPrediction as COMPLETED or FAILED. FinishedAt is only available when the BatchPrediction is in the COMPLETED or FAILED state.
     */
-  var FinishedAt: js.UndefOr[EpochTime] = js.undefined
+  var FinishedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The location of the data file or directory in Amazon Simple Storage Service (Amazon S3).
@@ -49,7 +49,7 @@ trait GetBatchPredictionOutput extends StObject {
   /**
     * The time of the most recent edit to BatchPrediction. The time is expressed in epoch time.
     */
-  var LastUpdatedAt: js.UndefOr[EpochTime] = js.undefined
+  var LastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A link to the file that contains logs of the CreateBatchPrediction operation.
@@ -79,10 +79,10 @@ trait GetBatchPredictionOutput extends StObject {
   /**
     * The epoch time when Amazon Machine Learning marked the BatchPrediction as INPROGRESS. StartedAt isn't available if the BatchPrediction is in the PENDING state.
     */
-  var StartedAt: js.UndefOr[EpochTime] = js.undefined
+  var StartedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the BatchPrediction, which can be one of the following values:   PENDING - Amazon Machine Learning (Amazon ML) submitted a request to generate batch predictions.  INPROGRESS - The batch predictions are in progress.  FAILED - The request to perform a batch prediction did not run to completion. It is not usable.  COMPLETED - The batch prediction process completed successfully.  DELETED - The BatchPrediction is marked as deleted. It is not usable. 
+    * The status of the BatchPrediction, which can be one of the following values:    PENDING - Amazon Machine Learning (Amazon ML) submitted a request to generate batch predictions.    INPROGRESS - The batch predictions are in progress.    FAILED - The request to perform a batch prediction did not run to completion. It is not usable.    COMPLETED - The batch prediction process completed successfully.    DELETED - The BatchPrediction is marked as deleted. It is not usable.  
     */
   var Status: js.UndefOr[EntityStatus] = js.undefined
   
@@ -112,7 +112,7 @@ object GetBatchPredictionOutput {
     
     inline def setComputeTimeUndefined: Self = StObject.set(x, "ComputeTime", js.undefined)
     
-    inline def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -120,7 +120,7 @@ object GetBatchPredictionOutput {
     
     inline def setCreatedByIamUserUndefined: Self = StObject.set(x, "CreatedByIamUser", js.undefined)
     
-    inline def setFinishedAt(value: EpochTime): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: js.Date): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
     
     inline def setFinishedAtUndefined: Self = StObject.set(x, "FinishedAt", js.undefined)
     
@@ -132,7 +132,7 @@ object GetBatchPredictionOutput {
     
     inline def setInvalidRecordCountUndefined: Self = StObject.set(x, "InvalidRecordCount", js.undefined)
     
-    inline def setLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     
@@ -156,7 +156,7 @@ object GetBatchPredictionOutput {
     
     inline def setOutputUriUndefined: Self = StObject.set(x, "OutputUri", js.undefined)
     
-    inline def setStartedAt(value: EpochTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
     inline def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     

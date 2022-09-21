@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UrlChannel extends StObject {
   
-  /** Unique identifier of this URL channel. This should be considered an opaque identifier; it is not safe to rely on it being in any particular format. */
-  var id: js.UndefOr[String] = js.undefined
+  /** Output only. Resource name of the URL channel. Format: accounts/{account}/adclients/{adclient}/urlchannels/{urlchannel} */
+  var name: js.UndefOr[String] = js.undefined
   
-  /** Kind of resource this is, in this case adsense#urlChannel. */
-  var kind: js.UndefOr[String] = js.undefined
+  /** Output only. Unique ID of the custom channel as used in the `URL_CHANNEL_ID` reporting dimension. */
+  var reportingDimensionId: js.UndefOr[String] = js.undefined
   
-  /** URL Pattern of this URL channel. Does not include "http://" or "https://". Example: www.example.com/home */
-  var urlPattern: js.UndefOr[String] = js.undefined
+  /** URI pattern of the channel. Does not include "http://" or "https://". Example: www.example.com/home */
+  var uriPattern: js.UndefOr[String] = js.undefined
 }
 object UrlChannel {
   
@@ -24,16 +24,16 @@ object UrlChannel {
   
   extension [Self <: UrlChannel](x: Self) {
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setReportingDimensionId(value: String): Self = StObject.set(x, "reportingDimensionId", value.asInstanceOf[js.Any])
     
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setReportingDimensionIdUndefined: Self = StObject.set(x, "reportingDimensionId", js.undefined)
     
-    inline def setUrlPattern(value: String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
+    inline def setUriPattern(value: String): Self = StObject.set(x, "uriPattern", value.asInstanceOf[js.Any])
     
-    inline def setUrlPatternUndefined: Self = StObject.set(x, "urlPattern", js.undefined)
+    inline def setUriPatternUndefined: Self = StObject.set(x, "uriPattern", js.undefined)
   }
 }

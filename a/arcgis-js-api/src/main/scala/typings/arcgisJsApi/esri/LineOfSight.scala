@@ -10,6 +10,20 @@ trait LineOfSight
      with Widget_ {
   
   /**
+    * The line of sight analysis object being created or modified by the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight.html#analysis)
+    */
+  val analysis: LineOfSightAnalysis = js.native
+  
+  /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight.html#iconClass)
+    */
+  var iconClass: String = js.native
+  
+  /**
     * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight.html#view)

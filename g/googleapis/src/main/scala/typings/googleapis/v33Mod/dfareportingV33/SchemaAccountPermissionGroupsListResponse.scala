@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Account Permission Group List Response
-  */
 trait SchemaAccountPermissionGroupsListResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaAccountPermissionGroupsListResponse extends StObject {
   var accountPermissionGroups: js.UndefOr[js.Array[SchemaAccountPermissionGroup]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#accountPermissionGroupsListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#accountPermissionGroupsListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAccountPermissionGroupsListResponse {
   
@@ -33,9 +29,11 @@ object SchemaAccountPermissionGroupsListResponse {
     
     inline def setAccountPermissionGroupsUndefined: Self = StObject.set(x, "accountPermissionGroups", js.undefined)
     
-    inline def setAccountPermissionGroupsVarargs(value: SchemaAccountPermissionGroup*): Self = StObject.set(x, "accountPermissionGroups", js.Array(value :_*))
+    inline def setAccountPermissionGroupsVarargs(value: SchemaAccountPermissionGroup*): Self = StObject.set(x, "accountPermissionGroups", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

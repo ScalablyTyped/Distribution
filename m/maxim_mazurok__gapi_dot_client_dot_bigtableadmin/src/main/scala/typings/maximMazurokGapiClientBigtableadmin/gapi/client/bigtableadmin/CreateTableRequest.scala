@@ -33,7 +33,7 @@ object CreateTableRequest {
     
     inline def setInitialSplitsUndefined: Self = StObject.set(x, "initialSplits", js.undefined)
     
-    inline def setInitialSplitsVarargs(value: Split*): Self = StObject.set(x, "initialSplits", js.Array(value :_*))
+    inline def setInitialSplitsVarargs(value: Split*): Self = StObject.set(x, "initialSplits", js.Array(value*))
     
     inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ object anon {
       
       inline def setLoaders(value: js.Array[String]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
-      inline def setLoadersVarargs(value: String*): Self = StObject.set(x, "loaders", js.Array(value :_*))
+      inline def setLoadersVarargs(value: String*): Self = StObject.set(x, "loaders", js.Array(value*))
     }
   }
 }

@@ -14,7 +14,7 @@ trait Partition extends StObject {
   /**
     * The time at which the partition was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the catalog database in which to create the partition.
@@ -24,12 +24,12 @@ trait Partition extends StObject {
   /**
     * The last time at which the partition was accessed.
     */
-  var LastAccessTime: js.UndefOr[Timestamp] = js.undefined
+  var LastAccessTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last time at which column statistics were computed for this partition.
     */
-  var LastAnalyzedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastAnalyzedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * These key-value pairs define partition parameters.
@@ -64,7 +64,7 @@ object Partition {
     
     inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -72,11 +72,11 @@ object Partition {
     
     inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
-    inline def setLastAccessTime(value: Timestamp): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessTime(value: js.Date): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
     
     inline def setLastAccessTimeUndefined: Self = StObject.set(x, "LastAccessTime", js.undefined)
     
-    inline def setLastAnalyzedTime(value: Timestamp): Self = StObject.set(x, "LastAnalyzedTime", value.asInstanceOf[js.Any])
+    inline def setLastAnalyzedTime(value: js.Date): Self = StObject.set(x, "LastAnalyzedTime", value.asInstanceOf[js.Any])
     
     inline def setLastAnalyzedTimeUndefined: Self = StObject.set(x, "LastAnalyzedTime", js.undefined)
     
@@ -96,6 +96,6 @@ object Partition {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: ValueString*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ValueString*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the MVCxClientBeforeExportRequestEventArgs class with default settings.
   */
-class MVCxClientBeforeExportRequestEventArgs ()
+open class MVCxClientBeforeExportRequestEventArgs ()
   extends StObject
      with typings.devexpressWeb.MVCxClientBeforeExportRequestEventArgs {
   
@@ -20,5 +20,5 @@ class MVCxClientBeforeExportRequestEventArgs ()
     * Gets an object containing specific information (if any, as name/value pairs) that should be passed as a request parameter from the client to the server side for further processing.
     */
   /* CompleteClass */
-  var customArgs: js.Any = js.native
+  var customArgs: Any = js.native
 }

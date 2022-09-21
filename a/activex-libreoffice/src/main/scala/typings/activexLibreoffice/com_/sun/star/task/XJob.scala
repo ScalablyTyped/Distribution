@@ -26,14 +26,14 @@ trait XJob
     * @throws com::sun::star::lang::IllegalArgumentException if some of given arguments doesn't fill out the service specification or was corrupt so the servic
     * @throws com::sun::star::uno::Exception to notify the executor about failed operation; otherwise the return value indicates a successful finishing.
     */
-  def execute(Arguments: SeqEquiv[NamedValue]): js.Any
+  def execute(Arguments: SeqEquiv[NamedValue]): Any
 }
 object XJob {
   
   inline def apply(
     acquire: () => Unit,
-    execute: SeqEquiv[NamedValue] => js.Any,
-    queryInterface: `type` => js.Any,
+    execute: SeqEquiv[NamedValue] => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XJob = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction1(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -42,6 +42,6 @@ object XJob {
   
   extension [Self <: XJob](x: Self) {
     
-    inline def setExecute(value: SeqEquiv[NamedValue] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: SeqEquiv[NamedValue] => Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

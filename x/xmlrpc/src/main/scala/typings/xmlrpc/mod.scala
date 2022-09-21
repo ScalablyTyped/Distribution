@@ -1,9 +1,12 @@
 package typings.xmlrpc
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.node.tlsMod.TlsOptions
-import typings.std.Date
 import typings.xmlrpc.anon.Expires
 import typings.xmlrpc.anon.Pass
 import typings.xmlrpc.anon.Processors
@@ -20,12 +23,12 @@ object mod {
   
   @JSImport("xmlrpc", "CustomType")
   @js.native
-  class CustomType protected () extends StObject {
+  open class CustomType protected () extends StObject {
     def this(raw: String) = this()
     
     var raw: String = js.native
     
-    def serialize(xml: js.Any): js.Any = js.native
+    def serialize(xml: Any): Any = js.native
     
     var tagName: String = js.native
   }
@@ -52,9 +55,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def decodeIso8601(time: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeIso8601")(time.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def decodeIso8601(time: String): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeIso8601")(time.asInstanceOf[js.Any]).asInstanceOf[js.Date]
     
-    inline def encodeIso8601(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeIso8601")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encodeIso8601(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeIso8601")(date.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def setOpts(opts: DateFormatterOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpts")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
@@ -71,8 +74,8 @@ object mod {
     
     def methodCall(
       method: String,
-      params: js.Array[js.Any],
-      callback: js.Function2[/* error */ js.Object, /* value */ js.Any, Unit]
+      params: js.Array[Any],
+      callback: js.Function2[/* error */ js.Object, /* value */ Any, Unit]
     ): Unit
     
     var options: ClientOptions
@@ -85,7 +88,7 @@ object mod {
       getCookie: String => String,
       headersProcessors: Processors,
       isSecure: Boolean,
-      methodCall: (String, js.Array[js.Any], js.Function2[/* error */ js.Object, /* value */ js.Any, Unit]) => Unit,
+      methodCall: (String, js.Array[Any], js.Function2[/* error */ js.Object, /* value */ Any, Unit]) => Unit,
       options: ClientOptions,
       setCookie: (String, String) => Client
     ): Client = {
@@ -105,9 +108,7 @@ object mod {
       
       inline def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
       
-      inline def setMethodCall(
-        value: (String, js.Array[js.Any], js.Function2[/* error */ js.Object, /* value */ js.Any, Unit]) => Unit
-      ): Self = StObject.set(x, "methodCall", js.Any.fromFunction3(value))
+      inline def setMethodCall(value: (String, js.Array[Any], js.Function2[/* error */ js.Object, /* value */ Any, Unit]) => Unit): Self = StObject.set(x, "methodCall", js.Any.fromFunction3(value))
       
       inline def setOptions(value: ClientOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -254,7 +255,19 @@ object mod {
   @js.native
   trait Server extends EventEmitter {
     
-    var httpServer: typings.node.httpMod.Server | typings.node.httpsMod.Server = js.native
+    var httpServer: (typings.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ]) | (typings.node.httpsMod.Server[
+        Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        ]
+      ]) = js.native
     
     def on(eventName: String, callback: ServerFunction): this.type = js.native
     @JSName("on")
@@ -262,13 +275,13 @@ object mod {
   }
   
   type ServerFunction = js.Function3[
-    /* error */ js.Any, 
-    /* params */ js.Any, 
-    /* callback */ js.Function2[/* error */ js.Any, /* value */ js.Any, Unit], 
+    /* error */ Any, 
+    /* params */ Any, 
+    /* callback */ js.Function2[/* error */ Any, /* value */ Any, Unit], 
     Unit
   ]
   
-  type ServerNotFoundFunction = js.Function2[/* methodName */ String, /* params */ js.Array[js.Any], Unit]
+  type ServerNotFoundFunction = js.Function2[/* methodName */ String, /* params */ js.Array[Any], Unit]
   
   trait ServerOptions extends StObject {
     

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.DiagramNodes")
 @js.native
-/* private */ class DiagramNodes ()
+/* private */ open class DiagramNodes ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.DiagramNodes {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Count: Double = js.native
@@ -20,10 +20,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexPowerpoint.PowerPoint.DiagramNode = js.native
+  override def Item(Index: Any): typings.activexPowerpoint.PowerPoint.DiagramNode = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.DiagramNodes_typekey")

@@ -46,30 +46,30 @@ object anon {
   
   trait Options extends StObject {
     
-    var options: typings.select2.mod.Options[DataFormat | GroupedDataFormat, js.Any]
+    var options: typings.select2.mod.Options[DataFormat | GroupedDataFormat, Any]
   }
   object Options {
     
-    inline def apply(options: typings.select2.mod.Options[DataFormat | GroupedDataFormat, js.Any]): Options = {
+    inline def apply(options: typings.select2.mod.Options[DataFormat | GroupedDataFormat, Any]): Options = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
     extension [Self <: Options](x: Self) {
       
-      inline def setOptions(value: typings.select2.mod.Options[DataFormat | GroupedDataFormat, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.select2.mod.Options[DataFormat | GroupedDataFormat, Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
   trait Require extends StObject {
     
-    def require(module: String): js.Any
+    def require(module: String): Any
     def require(modules: js.Array[String]): Unit
-    def require(modules: js.Array[String], ready: js.Function1[/* repeated */ js.Any, Unit]): Unit
+    def require(modules: js.Array[String], ready: js.Function1[/* repeated */ Any, Unit]): Unit
     def require(
       modules: js.Array[String],
-      ready: js.Function1[/* repeated */ js.Any, Unit],
-      errback: js.Function1[/* err */ js.Any, Unit]
+      ready: js.Function1[/* repeated */ Any, Unit],
+      errback: js.Function1[/* err */ Any, Unit]
     ): Unit
     @JSName("require")
     var require_Original: Select2Require
@@ -91,11 +91,11 @@ object anon {
     
     def reset(): Unit
     
-    def set(key: String, value: js.Any): Unit
+    def set(key: String, value: Any): Unit
   }
   object Reset {
     
-    inline def apply(reset: () => Unit, set: (String, js.Any) => Unit): Reset = {
+    inline def apply(reset: () => Unit, set: (String, Any) => Unit): Reset = {
       val __obj = js.Dynamic.literal(reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Reset]
     }
@@ -104,7 +104,7 @@ object anon {
       
       inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
 }

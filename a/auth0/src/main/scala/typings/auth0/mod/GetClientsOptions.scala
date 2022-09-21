@@ -35,13 +35,13 @@ object GetClientsOptions {
     
     inline def setApp_typeUndefined: Self = StObject.set(x, "app_type", js.undefined)
     
-    inline def setApp_typeVarargs(value: ClientAppType*): Self = StObject.set(x, "app_type", js.Array(value :_*))
+    inline def setApp_typeVarargs(value: ClientAppType*): Self = StObject.set(x, "app_type", js.Array(value*))
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setInclude_fields(value: Boolean): Self = StObject.set(x, "include_fields", value.asInstanceOf[js.Any])
     

@@ -10,24 +10,27 @@ object mod {
   
   @JSImport("winston-transport", JSImport.Namespace)
   @js.native
-  class ^ () extends TransportStream {
+  open class ^ () extends TransportStream {
     def this(opts: TransportStreamOptions) = this()
   }
   
   @js.native
   trait TransportStream extends Writable {
     
-    var close: js.UndefOr[js.Function0[Unit]] = js.native
+    @JSName("close")
+    var close_FTransportStream: js.UndefOr[js.Function0[Unit]] = js.native
     
     var format: js.UndefOr[Format_] = js.native
     
     var handleExceptions: js.UndefOr[Boolean] = js.native
     
+    var handleRejections: js.UndefOr[Boolean] = js.native
+    
     var level: js.UndefOr[String] = js.native
     
-    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.native
+    var log: js.UndefOr[js.Function2[/* info */ Any, /* next */ js.Function0[Unit], Any]] = js.native
     
-    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.native
+    var logv: js.UndefOr[js.Function2[/* info */ Any, /* next */ js.Function0[Unit], Any]] = js.native
     
     var silent: js.UndefOr[Boolean] = js.native
   }
@@ -40,11 +43,13 @@ object mod {
     
     var handleExceptions: js.UndefOr[Boolean] = js.undefined
     
+    var handleRejections: js.UndefOr[Boolean] = js.undefined
+    
     var level: js.UndefOr[String] = js.undefined
     
-    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.undefined
+    var log: js.UndefOr[js.Function2[/* info */ Any, /* next */ js.Function0[Unit], Any]] = js.undefined
     
-    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.undefined
+    var logv: js.UndefOr[js.Function2[/* info */ Any, /* next */ js.Function0[Unit], Any]] = js.undefined
     
     var silent: js.UndefOr[Boolean] = js.undefined
   }
@@ -69,15 +74,19 @@ object mod {
       
       inline def setHandleExceptionsUndefined: Self = StObject.set(x, "handleExceptions", js.undefined)
       
+      inline def setHandleRejections(value: Boolean): Self = StObject.set(x, "handleRejections", value.asInstanceOf[js.Any])
+      
+      inline def setHandleRejectionsUndefined: Self = StObject.set(x, "handleRejections", js.undefined)
+      
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      inline def setLog(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (/* info */ Any, /* next */ js.Function0[Unit]) => Any): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      inline def setLogv(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "logv", js.Any.fromFunction2(value))
+      inline def setLogv(value: (/* info */ Any, /* next */ js.Function0[Unit]) => Any): Self = StObject.set(x, "logv", js.Any.fromFunction2(value))
       
       inline def setLogvUndefined: Self = StObject.set(x, "logv", js.undefined)
       

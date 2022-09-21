@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("devextreme", "default.DataHelperMixin")
 @js.native
-class DataHelperMixin ()
+open class DataHelperMixin ()
   extends StObject
      with typings.devextreme.mod.DevExpress.DataHelperMixin {
   
   /**
-    * [descr:DataHelperMixin.getDataSource()]
+    * Gets the DataSource instance.
     */
   /* CompleteClass */
-  override def getDataSource(): DataSource = js.native
+  override def getDataSource(): DataSource[Any, Any] = js.native
 }

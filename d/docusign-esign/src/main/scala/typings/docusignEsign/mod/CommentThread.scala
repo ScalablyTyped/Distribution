@@ -676,7 +676,7 @@ object CommentThread {
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setConditionalParentLabel(value: String): Self = StObject.set(x, "conditionalParentLabel", value.asInstanceOf[js.Any])
     
@@ -838,7 +838,7 @@ object CommentThread {
     
     inline def setTabGroupLabelsUndefined: Self = StObject.set(x, "tabGroupLabels", js.undefined)
     
-    inline def setTabGroupLabelsVarargs(value: String*): Self = StObject.set(x, "tabGroupLabels", js.Array(value :_*))
+    inline def setTabGroupLabelsVarargs(value: String*): Self = StObject.set(x, "tabGroupLabels", js.Array(value*))
     
     inline def setTabId(value: String): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     

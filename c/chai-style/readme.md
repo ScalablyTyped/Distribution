@@ -10,15 +10,12 @@ CSS Style assertions for elements, using Chai.js
 | ------------------ | :-------------: |
 | Full name          | chai-style |
 | Keywords           | chai, chaijs, style, css, computedStyle, assertion, assert |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 65358 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9267.333333333334 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/darlanmendonca/chai-style#readme)
-- [Bugs](https://github.com/darlanmendonca/chai-style/issues)
-- [Repository](https://github.com/darlanmendonca/chai-style)
 - [Npm](https://www.npmjs.com/package/chai-style)
     
 

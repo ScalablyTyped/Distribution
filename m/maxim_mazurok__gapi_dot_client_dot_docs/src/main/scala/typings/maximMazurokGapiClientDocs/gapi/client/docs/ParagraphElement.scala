@@ -30,6 +30,12 @@ trait ParagraphElement extends StObject {
   /** A page break paragraph element. */
   var pageBreak: js.UndefOr[PageBreak] = js.undefined
   
+  /** A paragraph element that links to a person or email address. */
+  var person: js.UndefOr[Person] = js.undefined
+  
+  /** A paragraph element that links to a Google resource (such as a file in Drive, a Youtube video, a Calendar event, etc.) */
+  var richLink: js.UndefOr[RichLink] = js.undefined
+  
   /** The zero-based start index of this paragraph element, in UTF-16 code units. */
   var startIndex: js.UndefOr[Double] = js.undefined
   
@@ -76,6 +82,14 @@ object ParagraphElement {
     inline def setPageBreak(value: PageBreak): Self = StObject.set(x, "pageBreak", value.asInstanceOf[js.Any])
     
     inline def setPageBreakUndefined: Self = StObject.set(x, "pageBreak", js.undefined)
+    
+    inline def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
+    
+    inline def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
+    
+    inline def setRichLink(value: RichLink): Self = StObject.set(x, "richLink", value.asInstanceOf[js.Any])
+    
+    inline def setRichLinkUndefined: Self = StObject.set(x, "richLink", js.undefined)
     
     inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     

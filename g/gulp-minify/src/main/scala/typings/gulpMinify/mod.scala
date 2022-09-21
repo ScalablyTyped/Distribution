@@ -6,7 +6,6 @@ import typings.gulpMinify.anon.Booleans
 import typings.gulpMinify.anon.Min
 import typings.gulpMinify.gulpMinifyStrings.all
 import typings.gulpMinify.gulpMinifyStrings.some
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +63,7 @@ object mod extends Shortcut {
       * * **function**: specify your own comment preservation function. You will be passed the current node and the current comment and are expected to return a boolean.
       */
     var preserveComments: js.UndefOr[
-        all | some | (js.Function2[/* node */ js.UndefOr[js.Any], /* comment */ js.UndefOr[js.Any], Boolean])
+        all | some | (js.Function2[/* node */ js.UndefOr[Any], /* comment */ js.UndefOr[Any], Boolean])
       ] = js.undefined
   }
   object Options {
@@ -84,7 +83,7 @@ object mod extends Shortcut {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setExt(value: Min): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
@@ -94,7 +93,7 @@ object mod extends Shortcut {
       
       inline def setIgnoreFilesUndefined: Self = StObject.set(x, "ignoreFiles", js.undefined)
       
-      inline def setIgnoreFilesVarargs(value: String*): Self = StObject.set(x, "ignoreFiles", js.Array(value :_*))
+      inline def setIgnoreFilesVarargs(value: String*): Self = StObject.set(x, "ignoreFiles", js.Array(value*))
       
       inline def setMangle(value: Boolean): Self = StObject.set(x, "mangle", value.asInstanceOf[js.Any])
       
@@ -109,10 +108,10 @@ object mod extends Shortcut {
       inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
       inline def setPreserveComments(
-        value: all | some | (js.Function2[/* node */ js.UndefOr[js.Any], /* comment */ js.UndefOr[js.Any], Boolean])
+        value: all | some | (js.Function2[/* node */ js.UndefOr[Any], /* comment */ js.UndefOr[Any], Boolean])
       ): Self = StObject.set(x, "preserveComments", value.asInstanceOf[js.Any])
       
-      inline def setPreserveCommentsFunction2(value: (/* node */ js.UndefOr[js.Any], /* comment */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "preserveComments", js.Any.fromFunction2(value))
+      inline def setPreserveCommentsFunction2(value: (/* node */ js.UndefOr[Any], /* comment */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "preserveComments", js.Any.fromFunction2(value))
       
       inline def setPreserveCommentsUndefined: Self = StObject.set(x, "preserveComments", js.undefined)
     }
@@ -123,5 +122,8 @@ object mod extends Shortcut {
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: minify = ^
   
-  type minify = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
+  type minify = js.Function1[
+    /* options */ js.UndefOr[Options], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]
 }

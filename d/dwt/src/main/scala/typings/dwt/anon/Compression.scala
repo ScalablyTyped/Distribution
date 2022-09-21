@@ -38,6 +38,6 @@ object Compression {
     
     inline def setTiffTagsUndefined: Self = StObject.set(x, "tiffTags", js.undefined)
     
-    inline def setTiffTagsVarargs(value: TiffTag*): Self = StObject.set(x, "tiffTags", js.Array(value :_*))
+    inline def setTiffTagsVarargs(value: TiffTag*): Self = StObject.set(x, "tiffTags", js.Array(value*))
   }
 }

@@ -7,27 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaListSessionsResponse extends StObject {
   
   /**
-    * If includeDeleted is set to true in the request, this list will contain
-    * sessions deleted with original end times that are within the startTime
-    * and endTime frame.
+    * If includeDeleted is set to true in the request, and startTime and endTime are omitted, this will include sessions which were deleted since the last sync.
     */
   var deletedSession: js.UndefOr[js.Array[SchemaSession]] = js.undefined
   
   /**
-    * Flag to indicate server has more data to transfer
+    * Flag to indicate server has more data to transfer. DO NOT USE THIS FIELD. It is never populated in responses from the server.
     */
-  var hasMoreData: js.UndefOr[Boolean] = js.undefined
+  var hasMoreData: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The continuation token, which is used to page through large result sets.
-    * Provide this value in a subsequent request to return the next page of
-    * results.
+    * The sync token which is used to sync further changes. This will only be provided if both startTime and endTime are omitted from the request.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Sessions with an end time that is between startTime and endTime of the
-    * request.
+    * Sessions with an end time that is between startTime and endTime of the request.
     */
   var session: js.UndefOr[js.Array[SchemaSession]] = js.undefined
 }
@@ -44,13 +39,17 @@ object SchemaListSessionsResponse {
     
     inline def setDeletedSessionUndefined: Self = StObject.set(x, "deletedSession", js.undefined)
     
-    inline def setDeletedSessionVarargs(value: SchemaSession*): Self = StObject.set(x, "deletedSession", js.Array(value :_*))
+    inline def setDeletedSessionVarargs(value: SchemaSession*): Self = StObject.set(x, "deletedSession", js.Array(value*))
     
     inline def setHasMoreData(value: Boolean): Self = StObject.set(x, "hasMoreData", value.asInstanceOf[js.Any])
+    
+    inline def setHasMoreDataNull: Self = StObject.set(x, "hasMoreData", null)
     
     inline def setHasMoreDataUndefined: Self = StObject.set(x, "hasMoreData", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
@@ -58,6 +57,6 @@ object SchemaListSessionsResponse {
     
     inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
-    inline def setSessionVarargs(value: SchemaSession*): Self = StObject.set(x, "session", js.Array(value :_*))
+    inline def setSessionVarargs(value: SchemaSession*): Self = StObject.set(x, "session", js.Array(value*))
   }
 }

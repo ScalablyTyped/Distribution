@@ -8,26 +8,47 @@ object anon {
   
   trait AlphaTarget extends StObject {
     
-    var alphaTarget: Double
+    /**
+      * @see https://github.com/d3/d3-force#simulation_alphaTarget
+      * @default 0.05
+      */
+    var alphaTarget: js.UndefOr[Double] = js.undefined
     
-    var disableLinkForce: Boolean
+    /**
+      * Completely disables d3 force link and simulation to re-trigger so that one can obtain precise render of node positions
+      *
+      * @see https://github.com/danielcaldas/react-d3-graph/pull/278
+      * @default false
+      */
+    var disableLinkForce: js.UndefOr[Boolean] = js.undefined
     
-    var gravity: Double
+    /**
+      * this will define how close nodes are to each other.
+      * - If value is positive, nodes will attract each other.
+      * - If value is negative, nodes will repel each other. Most of the times this is what we want, so nodes don"t overlap.
+      *
+      * @see https://github.com/d3/d3-force#forces
+      * @default -100
+      */
+    var gravity: js.UndefOr[Double] = js.undefined
     
-    var linkLength: Double
+    /**
+      * the length of each link from the center of the nodes it joins.
+      *
+      * @default 100
+      */
+    var linkLength: js.UndefOr[Double] = js.undefined
     
-    var linkStrength: Double
+    /**
+      * @see https://github.com/d3/d3-force#link_strength
+      * @default 1
+      */
+    var linkStrength: js.UndefOr[Double] = js.undefined
   }
   object AlphaTarget {
     
-    inline def apply(
-      alphaTarget: Double,
-      disableLinkForce: Boolean,
-      gravity: Double,
-      linkLength: Double,
-      linkStrength: Double
-    ): AlphaTarget = {
-      val __obj = js.Dynamic.literal(alphaTarget = alphaTarget.asInstanceOf[js.Any], disableLinkForce = disableLinkForce.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any], linkLength = linkLength.asInstanceOf[js.Any], linkStrength = linkStrength.asInstanceOf[js.Any])
+    inline def apply(): AlphaTarget = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlphaTarget]
     }
     
@@ -35,13 +56,23 @@ object anon {
       
       inline def setAlphaTarget(value: Double): Self = StObject.set(x, "alphaTarget", value.asInstanceOf[js.Any])
       
+      inline def setAlphaTargetUndefined: Self = StObject.set(x, "alphaTarget", js.undefined)
+      
       inline def setDisableLinkForce(value: Boolean): Self = StObject.set(x, "disableLinkForce", value.asInstanceOf[js.Any])
+      
+      inline def setDisableLinkForceUndefined: Self = StObject.set(x, "disableLinkForce", js.undefined)
       
       inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
+      inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+      
       inline def setLinkLength(value: Double): Self = StObject.set(x, "linkLength", value.asInstanceOf[js.Any])
       
+      inline def setLinkLengthUndefined: Self = StObject.set(x, "linkLength", js.undefined)
+      
       inline def setLinkStrength(value: Double): Self = StObject.set(x, "linkStrength", value.asInstanceOf[js.Any])
+      
+      inline def setLinkStrengthUndefined: Self = StObject.set(x, "linkStrength", js.undefined)
     }
   }
   

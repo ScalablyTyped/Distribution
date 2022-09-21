@@ -4,7 +4,6 @@ import typings.reflectMetadata.anon.FnCall
 import typings.std.ClassDecorator
 import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
-import typings.std.PropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,20 +66,20 @@ object global {
       *             Object.getOwnPropertyDescriptor(Example.prototype, "method")));
       *
       */
-    inline def decorate(decorators: js.Array[PropertyDecorator | MethodDecorator], target: js.Object, targetKey: String): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+    inline def decorate(decorators: js.Array[PropertyDecorator | MethodDecorator], target: js.Object, targetKey: String): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
     inline def decorate(
       decorators: js.Array[PropertyDecorator | MethodDecorator],
       target: js.Object,
       targetKey: String,
-      descriptor: PropertyDescriptor
-    ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-    inline def decorate(decorators: js.Array[PropertyDecorator | MethodDecorator], target: js.Object, targetKey: js.Symbol): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+      descriptor: js.PropertyDescriptor
+    ): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+    inline def decorate(decorators: js.Array[PropertyDecorator | MethodDecorator], target: js.Object, targetKey: js.Symbol): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
     inline def decorate(
       decorators: js.Array[PropertyDecorator | MethodDecorator],
       target: js.Object,
       targetKey: js.Symbol,
-      descriptor: PropertyDescriptor
-    ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+      descriptor: js.PropertyDescriptor
+    ): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
     
     /**
       * Define a unique metadata entry on the target.
@@ -101,7 +100,7 @@ object global {
       *     }
       *
       */
-    inline def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineMetadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def defineMetadata(metadataKey: Any, metadataValue: Any, target: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineMetadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Define a unique metadata entry on the target.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -137,8 +136,8 @@ object global {
       *     }
       *
       */
-    inline def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: js.Object, targetKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineMetadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: js.Object, targetKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineMetadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def defineMetadata(metadataKey: Any, metadataValue: Any, target: js.Object, targetKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineMetadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def defineMetadata(metadataKey: Any, metadataValue: Any, target: js.Object, targetKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineMetadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Deletes the metadata entry from the target object with the provided key.
@@ -154,7 +153,7 @@ object global {
       *     result = Reflect.deleteMetadata("custom:annotation", Example);
       *
       */
-    inline def deleteMetadata(metadataKey: js.Any, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def deleteMetadata(metadataKey: Any, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Deletes the metadata entry from the target object with the provided key.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -185,8 +184,8 @@ object global {
       *     result = Reflect.deleteMetadata("custom:annotation", Example.prototype, "method");
       *
       */
-    inline def deleteMetadata(metadataKey: js.Any, target: js.Object, targetKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def deleteMetadata(metadataKey: js.Any, target: js.Object, targetKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def deleteMetadata(metadataKey: Any, target: js.Object, targetKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def deleteMetadata(metadataKey: Any, target: js.Object, targetKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Gets the metadata value for the provided metadata key on the target object or its prototype chain.
@@ -202,7 +201,7 @@ object global {
       *     result = Reflect.getMetadata("custom:annotation", Example);
       *
       */
-    inline def getMetadata(metadataKey: js.Any, target: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getMetadata(metadataKey: Any, target: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Any]
     /**
       * Gets the metadata value for the provided metadata key on the target object or its prototype chain.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -233,8 +232,8 @@ object global {
       *     result = Reflect.getMetadata("custom:annotation", Example.prototype, "method");
       *
       */
-    inline def getMetadata(metadataKey: js.Any, target: js.Object, targetKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def getMetadata(metadataKey: js.Any, target: js.Object, targetKey: js.Symbol): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getMetadata(metadataKey: Any, target: js.Object, targetKey: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def getMetadata(metadataKey: Any, target: js.Object, targetKey: js.Symbol): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Gets the metadata keys defined on the target object or its prototype chain.
@@ -249,7 +248,7 @@ object global {
       *     result = Reflect.getMetadataKeys(Example);
       *
       */
-    inline def getMetadataKeys(target: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataKeys")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def getMetadataKeys(target: js.Object): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataKeys")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     /**
       * Gets the metadata keys defined on the target object or its prototype chain.
       * @param target The target object on which the metadata is defined.
@@ -279,8 +278,8 @@ object global {
       *     result = Reflect.getMetadataKeys(Example.prototype, "method");
       *
       */
-    inline def getMetadataKeys(target: js.Object, targetKey: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def getMetadataKeys(target: js.Object, targetKey: js.Symbol): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def getMetadataKeys(target: js.Object, targetKey: String): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def getMetadataKeys(target: js.Object, targetKey: js.Symbol): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Gets the metadata value for the provided metadata key on the target object.
@@ -296,7 +295,7 @@ object global {
       *     result = Reflect.getOwnMetadata("custom:annotation", Example);
       *
       */
-    inline def getOwnMetadata(metadataKey: js.Any, target: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getOwnMetadata(metadataKey: Any, target: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Any]
     /**
       * Gets the metadata value for the provided metadata key on the target object.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -327,8 +326,8 @@ object global {
       *     result = Reflect.getOwnMetadata("custom:annotation", Example.prototype, "method");
       *
       */
-    inline def getOwnMetadata(metadataKey: js.Any, target: js.Object, targetKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def getOwnMetadata(metadataKey: js.Any, target: js.Object, targetKey: js.Symbol): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getOwnMetadata(metadataKey: Any, target: js.Object, targetKey: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def getOwnMetadata(metadataKey: Any, target: js.Object, targetKey: js.Symbol): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Gets the unique metadata keys defined on the target object.
@@ -343,7 +342,7 @@ object global {
       *     result = Reflect.getOwnMetadataKeys(Example);
       *
       */
-    inline def getOwnMetadataKeys(target: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadataKeys")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def getOwnMetadataKeys(target: js.Object): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadataKeys")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     /**
       * Gets the unique metadata keys defined on the target object.
       * @param target The target object on which the metadata is defined.
@@ -373,8 +372,8 @@ object global {
       *     result = Reflect.getOwnMetadataKeys(Example.prototype, "method");
       *
       */
-    inline def getOwnMetadataKeys(target: js.Object, targetKey: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def getOwnMetadataKeys(target: js.Object, targetKey: js.Symbol): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def getOwnMetadataKeys(target: js.Object, targetKey: String): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def getOwnMetadataKeys(target: js.Object, targetKey: js.Symbol): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnMetadataKeys")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Gets a value indicating whether the target object or its prototype chain has the provided metadata key defined.
@@ -390,7 +389,7 @@ object global {
       *     result = Reflect.hasMetadata("custom:annotation", Example);
       *
       */
-    inline def hasMetadata(metadataKey: js.Any, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasMetadata(metadataKey: Any, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Gets a value indicating whether the target object or its prototype chain has the provided metadata key defined.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -421,8 +420,8 @@ object global {
       *     result = Reflect.hasMetadata("custom:annotation", Example.prototype, "method");
       *
       */
-    inline def hasMetadata(metadataKey: js.Any, target: js.Object, targetKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def hasMetadata(metadataKey: js.Any, target: js.Object, targetKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasMetadata(metadataKey: Any, target: js.Object, targetKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasMetadata(metadataKey: Any, target: js.Object, targetKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Gets a value indicating whether the target object has the provided metadata key defined.
@@ -438,7 +437,7 @@ object global {
       *     result = Reflect.hasOwnMetadata("custom:annotation", Example);
       *
       */
-    inline def hasOwnMetadata(metadataKey: js.Any, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasOwnMetadata(metadataKey: Any, target: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Gets a value indicating whether the target object has the provided metadata key defined.
       * @param metadataKey A key used to store and retrieve metadata.
@@ -469,8 +468,8 @@ object global {
       *     result = Reflect.hasOwnMetadata("custom:annotation", Example.prototype, "method");
       *
       */
-    inline def hasOwnMetadata(metadataKey: js.Any, target: js.Object, targetKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def hasOwnMetadata(metadataKey: js.Any, target: js.Object, targetKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasOwnMetadata(metadataKey: Any, target: js.Object, targetKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasOwnMetadata(metadataKey: Any, target: js.Object, targetKey: js.Symbol): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnMetadata")(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * A default metadata decorator factory that can be used on a class, class member, or parameter.
@@ -512,6 +511,6 @@ object global {
       *     }
       *
       */
-    inline def metadata(metadataKey: js.Any, metadataValue: js.Any): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+    inline def metadata(metadataKey: Any, metadataValue: Any): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any])).asInstanceOf[FnCall]
   }
 }

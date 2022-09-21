@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("AltJS.Alt")
     @js.native
-    class Alt ()
+    open class Alt ()
       extends StObject
          with typings.alt.AltJS.Alt {
       def this(config: AltConfig) = this()

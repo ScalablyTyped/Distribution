@@ -1,7 +1,8 @@
 package typings.useDeepCompareEffect
 
-import typings.react.mod.DependencyList
-import typings.react.mod.EffectCallback
+import typings.std.Parameters
+import typings.std.ReturnType
+import typings.useDeepCompareEffect.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Accepts a function that contains imperative, possibly effectful code.
-    *
-    * @param effect Imperative function that can return a cleanup function
-    * @param deps If present, effect will only activate if the values in the list change.
-    *
-    * @version 16.8.0
-    * @see https://reactjs.org/docs/hooks-reference.html#useeffect
-    */
-  /* was `typeof useEffect` */
-  inline def default(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  /* was `typeof useEffect` */
-  inline def default(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(callback: EffectCallback, dependencies: DependencyList): UseEffectReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[UseEffectReturn]
   
-  inline def useDeepCompareEffectNoCheck(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareEffectNoCheck")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def useDeepCompareEffectNoCheck(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareEffectNoCheck")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useDeepCompareEffectNoCheck(callback: EffectCallback, dependencies: DependencyList): UseEffectReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareEffectNoCheck")(callback.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[UseEffectReturn]
+  
+  inline def useDeepCompareMemoize[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareMemoize")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  type DependencyList = /* import warning: importer.ImportType#apply Failed type conversion: use-deep-compare-effect.use-deep-compare-effect.UseEffectParams[1] */ js.Any
+  
+  type EffectCallback = /* import warning: importer.ImportType#apply Failed type conversion: use-deep-compare-effect.use-deep-compare-effect.UseEffectParams[0] */ js.Any
+  
+  type UseEffectParams = Parameters[FnCall]
+  
+  type UseEffectReturn = ReturnType[FnCall]
 }

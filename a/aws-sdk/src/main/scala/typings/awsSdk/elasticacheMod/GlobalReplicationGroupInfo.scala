@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GlobalReplicationGroupInfo extends StObject {
   
   /**
-    * The name of the Global Datastore
+    * The name of the Global datastore
     */
   var GlobalReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
-    * The role of the replication group in a Global Datastore. Can be primary or secondary.
+    * The role of the replication group in a Global datastore. Can be primary or secondary.
     */
   var GlobalReplicationGroupMemberRole: js.UndefOr[String] = js.undefined
 }

@@ -39,7 +39,7 @@ object DataTables {
       
       inline def setColumns(value: String | js.Array[Double]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: Double*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Double*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       

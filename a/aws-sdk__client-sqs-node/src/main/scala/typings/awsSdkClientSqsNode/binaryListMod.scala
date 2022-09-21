@@ -8,5 +8,5 @@ object binaryListMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/_BinaryList", "_BinaryList")
   @js.native
-  val BinaryList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val BinaryList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

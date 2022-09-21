@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListStreamConsumersInput extends StObject {
   
   /**
-    * The maximum number of consumers that you want a single call of ListStreamConsumers to return.
+    * The maximum number of consumers that you want a single call of ListStreamConsumers to return. The default value is 100. If you specify a value greater than 100, at most 100 results are returned. 
     */
   var MaxResults: js.UndefOr[ListStreamConsumersInputLimit] = js.undefined
   
@@ -17,14 +17,14 @@ trait ListStreamConsumersInput extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.kinesisMod.NextToken] = js.undefined
   
   /**
-    * The ARN of the Kinesis data stream for which you want to list the registered consumers. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The ARN of the Kinesis data stream for which you want to list the registered consumers. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var StreamARN: typings.awsSdk.kinesisMod.StreamARN
   
   /**
     * Specify this input parameter to distinguish data streams that have the same name. For example, if you create a data stream and then delete it, and you later create another data stream with the same name, you can use this input parameter to specify which of the two streams you want to list the consumers for.  You can't specify this parameter if you specify the NextToken parameter. 
     */
-  var StreamCreationTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var StreamCreationTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object ListStreamConsumersInput {
   
@@ -45,7 +45,7 @@ object ListStreamConsumersInput {
     
     inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
-    inline def setStreamCreationTimestamp(value: Timestamp): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setStreamCreationTimestamp(value: js.Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setStreamCreationTimestampUndefined: Self = StObject.set(x, "StreamCreationTimestamp", js.undefined)
   }

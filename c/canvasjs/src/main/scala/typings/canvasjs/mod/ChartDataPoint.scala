@@ -1,6 +1,5 @@
 package typings.canvasjs.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ trait ChartDataPoint
     * Example: 10, 20, 30 ..
     * new Date(2011, 08, 01)
     */
-  var x: js.UndefOr[Double | Date] = js.undefined
+  var x: js.UndefOr[Double | js.Date] = js.undefined
   
   /**
     * Sets the y value of dataPoint. It determines the position of dataPoint on Y Axis. Values can be positive or Negative
@@ -63,7 +62,7 @@ object ChartDataPoint {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setX(value: Double | Date): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double | js.Date): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     

@@ -4,16 +4,16 @@
 Typings are for version 1.0
 
 ## Library description:
-Plurals suport, generated from CLDR.
+Plurals support, generated from CLDR.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | plurals-cldr |
-| Keywords           | i18n, l10n, plural, plurals, pluralize, pluralizer, clrd, ldml |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 78724 |
-| # stars            | 0 |
+| Keywords           | i18n, l10n, plural, plurals, pluralize, pluralizer, cldr |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 241529.33333333334 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/nodeca/plurals-cldr#readme)

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-UnknownLayer.html)
   */
-class UnknownLayerCls ()
+open class UnknownLayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.UnknownLayer {
   def this(properties: UnknownLayerProperties) = this()

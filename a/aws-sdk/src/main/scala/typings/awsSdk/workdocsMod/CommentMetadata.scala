@@ -24,7 +24,7 @@ trait CommentMetadata extends StObject {
   /**
     * The timestamp that the comment was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the user being replied to.
@@ -52,7 +52,7 @@ object CommentMetadata {
     
     inline def setContributorUndefined: Self = StObject.set(x, "Contributor", js.undefined)
     
-    inline def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     

@@ -10,10 +10,10 @@ Sexy, fast, and themable FPS meter.
 | ------------------ | :-------------: |
 | Full name          | fpsmeter |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 103467 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4575.666666666667 |
+| # stars            | 559.0 |
 
 ## Links
 - [Homepage](https://github.com/darsain/fpsmeter)

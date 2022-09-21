@@ -19,10 +19,10 @@ object global {
              with typings.sixRuntime.Six.plugins.dataProvider.DataProvider {
           
           /* CompleteClass */
-          override def execute(ctx: js.Object, args: js.Any): js.Any = js.native
+          override def execute(ctx: js.Object, args: Any): Any = js.native
           
           /* CompleteClass */
-          override def prepare(ctx: js.Object, depsRes: js.Object): js.Any = js.native
+          override def prepare(ctx: js.Object, depsRes: js.Object): Any = js.native
         }
         object DataProvider {
           

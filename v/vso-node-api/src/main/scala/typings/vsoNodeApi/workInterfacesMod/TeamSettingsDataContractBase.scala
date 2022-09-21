@@ -9,7 +9,7 @@ trait TeamSettingsDataContractBase extends StObject {
   /**
     * Collection of links relevant to resource
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Full http link to the resource
@@ -18,7 +18,7 @@ trait TeamSettingsDataContractBase extends StObject {
 }
 object TeamSettingsDataContractBase {
   
-  inline def apply(_links: js.Any, url: String): TeamSettingsDataContractBase = {
+  inline def apply(_links: Any, url: String): TeamSettingsDataContractBase = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamSettingsDataContractBase]
   }
@@ -27,6 +27,6 @@ object TeamSettingsDataContractBase {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

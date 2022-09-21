@@ -17,10 +17,12 @@ trait MeshTextureProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#data)
     */
-  var data: js.UndefOr[HTMLImageElement | HTMLCanvasElement | js.Any | ImageData] = js.undefined
+  var data: js.UndefOr[HTMLImageElement | HTMLCanvasElement | Any | ImageData] = js.undefined
   
   /**
     * Indicates whether the image data should be interpreted as being semi-transparent.
+    *
+    * @default undefined
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#transparent)
     */
@@ -36,6 +38,8 @@ trait MeshTextureProperties extends StObject {
   /**
     * Specifies how uv coordinates outside the [0, 1] range are handled.
     *
+    * @default "repeat"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#wrap)
     */
   var wrap: js.UndefOr[clamp | repeat | mirror | SeparableWrapModes] = js.undefined
@@ -49,7 +53,7 @@ object MeshTextureProperties {
   
   extension [Self <: MeshTextureProperties](x: Self) {
     
-    inline def setData(value: HTMLImageElement | HTMLCanvasElement | js.Any | ImageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: HTMLImageElement | HTMLCanvasElement | Any | ImageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

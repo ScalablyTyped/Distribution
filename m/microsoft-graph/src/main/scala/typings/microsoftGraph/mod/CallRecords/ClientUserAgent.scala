@@ -16,7 +16,9 @@ trait ClientUserAgent
   
   /**
     * Identifies the family of application software used by this endpoint. Possible values are: unknown, teams,
-    * skypeForBusiness, lync, unknownFutureValue.
+    * skypeForBusiness, lync, unknownFutureValue, azureCommunicationServices. Note that you must use the Prefer:
+    * include-unknown-enum-members request header to get the following value(s) in this evolvable enum:
+    * azureCommunicationServices.
     */
   var productFamily: js.UndefOr[ProductFamily] = js.undefined
 }

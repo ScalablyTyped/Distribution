@@ -18,59 +18,59 @@ object createContainerMod {
   
   @JSImport("playable/dist/src/core/dependency-container/createContainer", "Container")
   @js.native
-  class Container () extends StObject {
+  open class Container () extends StObject {
     def this(options: IOptions) = this()
     def this(options: Unit, _parentContainer: Container) = this()
     def this(options: IOptions, _parentContainer: Container) = this()
     
-    /* private */ var _parentContainer: js.Any = js.native
+    /* private */ var _parentContainer: Any = js.native
     
-    /* private */ var _registerAs: js.Any = js.native
+    /* private */ var _registerAs: Any = js.native
     
-    /* private */ var _registrations: js.Any = js.native
+    /* private */ var _registrations: Any = js.native
     
-    /* private */ var _resolutionStack: js.Any = js.native
+    /* private */ var _resolutionStack: Any = js.native
     
-    var cache: js.Any = js.native
+    var cache: Any = js.native
     
     def createScope(): Container = js.native
     
     var options: IOptions = js.native
     
     def register(name: String): Container = js.native
-    def register(name: String, registration: js.Any): Container = js.native
+    def register(name: String, registration: Any): Container = js.native
     def register(name: js.Object): Container = js.native
-    def register(name: js.Object, registration: js.Any): Container = js.native
+    def register(name: js.Object, registration: Any): Container = js.native
     
     def registerClass(name: String): Container = js.native
-    def registerClass(name: String, value: js.Any): Container = js.native
-    def registerClass(name: String, value: js.Any, options: IOptions): Container = js.native
+    def registerClass(name: String, value: Any): Container = js.native
+    def registerClass(name: String, value: Any, options: IOptions): Container = js.native
     def registerClass(name: String, value: Unit, options: IOptions): Container = js.native
     def registerClass(name: js.Object): Container = js.native
-    def registerClass(name: js.Object, value: js.Any): Container = js.native
-    def registerClass(name: js.Object, value: js.Any, options: IOptions): Container = js.native
+    def registerClass(name: js.Object, value: Any): Container = js.native
+    def registerClass(name: js.Object, value: Any, options: IOptions): Container = js.native
     def registerClass(name: js.Object, value: Unit, options: IOptions): Container = js.native
     
     def registerFunction(name: String): Container = js.native
-    def registerFunction(name: String, value: js.Any): Container = js.native
-    def registerFunction(name: String, value: js.Any, options: IOptions): Container = js.native
+    def registerFunction(name: String, value: Any): Container = js.native
+    def registerFunction(name: String, value: Any, options: IOptions): Container = js.native
     def registerFunction(name: String, value: Unit, options: IOptions): Container = js.native
     def registerFunction(name: js.Object): Container = js.native
-    def registerFunction(name: js.Object, value: js.Any): Container = js.native
-    def registerFunction(name: js.Object, value: js.Any, options: IOptions): Container = js.native
+    def registerFunction(name: js.Object, value: Any): Container = js.native
+    def registerFunction(name: js.Object, value: Any, options: IOptions): Container = js.native
     def registerFunction(name: js.Object, value: Unit, options: IOptions): Container = js.native
     
     def registerValue(name: String): Container = js.native
-    def registerValue(name: String, value: js.Any): Container = js.native
-    def registerValue(name: String, value: js.Any, options: IOptions): Container = js.native
+    def registerValue(name: String, value: Any): Container = js.native
+    def registerValue(name: String, value: Any, options: IOptions): Container = js.native
     def registerValue(name: String, value: Unit, options: IOptions): Container = js.native
     def registerValue(name: js.Object): Container = js.native
-    def registerValue(name: js.Object, value: js.Any): Container = js.native
-    def registerValue(name: js.Object, value: js.Any, options: IOptions): Container = js.native
+    def registerValue(name: js.Object, value: Any): Container = js.native
+    def registerValue(name: js.Object, value: Any, options: IOptions): Container = js.native
     def registerValue(name: js.Object, value: Unit, options: IOptions): Container = js.native
     
-    def registrations: js.Any = js.native
+    def registrations: Any = js.native
     
-    def resolve(name: String): js.Any = js.native
+    def resolve(name: String): Any = js.native
   }
 }

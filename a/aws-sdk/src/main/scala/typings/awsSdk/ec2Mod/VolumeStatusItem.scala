@@ -54,13 +54,13 @@ object VolumeStatusItem {
     
     inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    inline def setActionsVarargs(value: VolumeStatusAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: VolumeStatusAction*): Self = StObject.set(x, "Actions", js.Array(value*))
     
     inline def setAttachmentStatuses(value: VolumeStatusAttachmentStatusList): Self = StObject.set(x, "AttachmentStatuses", value.asInstanceOf[js.Any])
     
     inline def setAttachmentStatusesUndefined: Self = StObject.set(x, "AttachmentStatuses", js.undefined)
     
-    inline def setAttachmentStatusesVarargs(value: VolumeStatusAttachmentStatus*): Self = StObject.set(x, "AttachmentStatuses", js.Array(value :_*))
+    inline def setAttachmentStatusesVarargs(value: VolumeStatusAttachmentStatus*): Self = StObject.set(x, "AttachmentStatuses", js.Array(value*))
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
@@ -70,7 +70,7 @@ object VolumeStatusItem {
     
     inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    inline def setEventsVarargs(value: VolumeStatusEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: VolumeStatusEvent*): Self = StObject.set(x, "Events", js.Array(value*))
     
     inline def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     

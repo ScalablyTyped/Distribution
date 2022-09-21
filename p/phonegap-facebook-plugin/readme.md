@@ -10,10 +10,10 @@ The official Facebook plugin for Apache Cordova/PhoneGap
 | ------------------ | :-------------: |
 | Full name          | phonegap-facebook-plugin |
 | Keywords           | cordova, facebook, ecosystem:cordova, cordova-android, cordova-ios, cordova-browser |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 288 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 22.333333333333332 |
+| # stars            | 1905.0 |
 
 ## Links
 - [Homepage](https://github.com/Wizcorp/phonegap-facebook-plugin#readme)

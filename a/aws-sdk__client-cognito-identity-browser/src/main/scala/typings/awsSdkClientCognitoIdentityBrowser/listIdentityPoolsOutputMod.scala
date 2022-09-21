@@ -8,5 +8,5 @@ object listIdentityPoolsOutputMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/ListIdentityPoolsOutput", "ListIdentityPoolsOutput")
   @js.native
-  val ListIdentityPoolsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListIdentityPoolsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

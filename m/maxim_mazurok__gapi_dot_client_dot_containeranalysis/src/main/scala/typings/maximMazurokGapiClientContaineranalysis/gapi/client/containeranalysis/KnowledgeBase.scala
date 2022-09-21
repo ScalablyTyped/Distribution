@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KnowledgeBase extends StObject {
   
-  /** The KB name (generally of the form KB[0-9]+ i.e. KB123456). */
+  /** The KB name (generally of the form KB[0-9]+ (e.g., KB123456)). */
   var name: js.UndefOr[String] = js.undefined
   
-  /** A link to the KB in the Windows update catalog - https://www.catalog.update.microsoft.com/ */
+  /** A link to the KB in the [Windows update catalog] (https://www.catalog.update.microsoft.com/). */
   var url: js.UndefOr[String] = js.undefined
 }
 object KnowledgeBase {

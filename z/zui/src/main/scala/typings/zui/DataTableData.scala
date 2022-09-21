@@ -21,10 +21,10 @@ object DataTableData {
     
     inline def setCols(value: js.Array[Column]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    inline def setColsVarargs(value: Column*): Self = StObject.set(x, "cols", js.Array(value :_*))
+    inline def setColsVarargs(value: Column*): Self = StObject.set(x, "cols", js.Array(value*))
     
     inline def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

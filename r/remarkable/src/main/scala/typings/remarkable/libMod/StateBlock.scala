@@ -90,7 +90,7 @@ object StateBlock {
     
     inline def setBMarks(value: js.Array[Double]): Self = StObject.set(x, "bMarks", value.asInstanceOf[js.Any])
     
-    inline def setBMarksVarargs(value: Double*): Self = StObject.set(x, "bMarks", js.Array(value :_*))
+    inline def setBMarksVarargs(value: Double*): Self = StObject.set(x, "bMarks", js.Array(value*))
     
     inline def setBlkIndent(value: Double): Self = StObject.set(x, "blkIndent", value.asInstanceOf[js.Any])
     
@@ -98,7 +98,7 @@ object StateBlock {
     
     inline def setEMarks(value: js.Array[Double]): Self = StObject.set(x, "eMarks", value.asInstanceOf[js.Any])
     
-    inline def setEMarksVarargs(value: Double*): Self = StObject.set(x, "eMarks", js.Array(value :_*))
+    inline def setEMarksVarargs(value: Double*): Self = StObject.set(x, "eMarks", js.Array(value*))
     
     inline def setEnv(value: Env): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
@@ -130,12 +130,12 @@ object StateBlock {
     
     inline def setTShift(value: js.Array[Double]): Self = StObject.set(x, "tShift", value.asInstanceOf[js.Any])
     
-    inline def setTShiftVarargs(value: Double*): Self = StObject.set(x, "tShift", js.Array(value :_*))
+    inline def setTShiftVarargs(value: Double*): Self = StObject.set(x, "tShift", js.Array(value*))
     
     inline def setTight(value: Boolean): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
     
     inline def setTokens(value: js.Array[BlockContentToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    inline def setTokensVarargs(value: BlockContentToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: BlockContentToken*): Self = StObject.set(x, "tokens", js.Array(value*))
   }
 }

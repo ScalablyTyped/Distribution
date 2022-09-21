@@ -9,12 +9,12 @@ trait SchemaOrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption 
   /**
     * Optional description of the refund reason.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [required] Reason for the refund.
+    * [required] Reason for the refund. Acceptable values are: - "`adjustment`" - "`autoPostInternal`" - "`autoPostInvalidBillingAddress`" - "`autoPostNoInventory`" - "`autoPostPriceError`" - "`autoPostUndeliverableShippingAddress`" - "`couponAbuse`" - "`courtesyAdjustment`" - "`customerCanceled`" - "`customerDiscretionaryReturn`" - "`customerInitiatedMerchantCancel`" - "`customerSupportRequested`" - "`deliveredLateByCarrier`" - "`deliveredTooLate`" - "`expiredItem`" - "`failToPushOrderGoogleError`" - "`failToPushOrderMerchantError`" - "`failToPushOrderMerchantFulfillmentError`" - "`failToPushOrderToMerchant`" - "`failToPushOrderToMerchantOutOfStock`" - "`feeAdjustment`" - "`invalidCoupon`" - "`lateShipmentCredit`" - "`malformedShippingAddress`" - "`merchantDidNotShipOnTime`" - "`noInventory`" - "`orderTimeout`" - "`other`" - "`paymentAbuse`" - "`paymentDeclined`" - "`priceAdjustment`" - "`priceError`" - "`productArrivedDamaged`" - "`productNotAsDescribed`" - "`promoReallocation`" - "`qualityNotAsExpected`" - "`returnRefundAbuse`" - "`shippingCostAdjustment`" - "`shippingPriceError`" - "`taxAdjustment`" - "`taxError`" - "`undeliverableShippingAddress`" - "`unsupportedPoBoxAddress`" - "`wrongProductShipped`"
     */
-  var reason: js.UndefOr[String] = js.undefined
+  var reason: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption {
   
@@ -27,9 +27,13 @@ object SchemaOrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonNull: Self = StObject.set(x, "reason", null)
     
     inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }

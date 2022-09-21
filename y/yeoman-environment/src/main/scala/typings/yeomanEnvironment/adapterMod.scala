@@ -1,10 +1,12 @@
 package typings.yeomanEnvironment
 
 import typings.diff.mod.Change
+import typings.inquirer.mod.Answers
 import typings.inquirer.mod.PromptModule
 import typings.inquirer.mod.QuestionCollection
 import typings.std.Console
-import typings.yeomanEnvironment.anon.LoggerDefaultCategories
+import typings.yeomanEnvironment.logMod.DefaultCategories
+import typings.yeomanEnvironment.logMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +21,7 @@ object adapterMod {
     */
   @JSImport("yeoman-environment/lib/adapter", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with TerminalAdapter {
     /**
@@ -58,7 +60,7 @@ object adapterMod {
   /**
     * Represents a set of questions.
     */
-  type Questions[T] = QuestionCollection[T]
+  type Questions[T /* <: Answers */] = QuestionCollection[T]
   
   /**
     * `TerminalAdapter` is the default implementation of `Adapter`, an abstraction
@@ -87,25 +89,30 @@ object adapterMod {
     /**
       * A component for logging messages.
       */
-    var log: LoggerDefaultCategories = js.native
+    var log: Logger[DefaultCategories] = js.native
     
     /**
       * Prompts the user for one or more questions.
       *
       * @param questions The questions to prompt.
       */
-    def prompt[T](questions: Questions[T]): js.Promise[T] = js.native
-    /**
-      * Prompts the user for one or more questions.
-      *
-      * @param questions The questions to prompt.
-      * @param cb The callback for handling the result.
-      */
-    def prompt[TAnswers, TResult](questions: Questions[TAnswers], cb: js.Function1[/* res */ TAnswers, TResult]): js.Promise[TResult] = js.native
+    def prompt[T /* <: Answers */](questions: Questions[T]): js.Promise[T] = js.native
+    def prompt[TAnswers /* <: Answers */, TResult](questions: Questions[TAnswers], answers: TAnswers): js.Promise[TResult] = js.native
+    def prompt[TAnswers /* <: Answers */, TResult](questions: Questions[TAnswers], answers: TAnswers, cb: js.Function1[/* res */ TAnswers, TResult]): js.Promise[TResult] = js.native
+    def prompt[TAnswers /* <: Answers */, TResult](questions: Questions[TAnswers], answers: Unit, cb: js.Function1[/* res */ TAnswers, TResult]): js.Promise[TResult] = js.native
     
     /**
       * An inquirer prompt module.
       */
     var promptModule: PromptModule = js.native
+    
+    /**
+      * Prompts the user for one or more questions.
+      *
+      * @param questions The questions to prompt.
+      * @param cb Deprecated: The callback for handling the result.
+      */
+    @JSName("prompt")
+    def prompt_TAnswers_AnswersTResult[TAnswers /* <: Answers */, TResult](questions: Questions[TAnswers]): js.Promise[TResult] = js.native
   }
 }

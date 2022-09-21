@@ -27,6 +27,6 @@ object TestPlansWithSelection {
     
     inline def setPlans(value: js.Array[TestPlan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
-    inline def setPlansVarargs(value: TestPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: TestPlan*): Self = StObject.set(x, "plans", js.Array(value*))
   }
 }

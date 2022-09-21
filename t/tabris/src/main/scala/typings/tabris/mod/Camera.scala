@@ -14,7 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Camera")
 @js.native
-/* private */ class Camera () extends NativeObject {
+/**
+  * A `Camera` provides access to the device's camera. The `Camera` can be used as a source for a
+  * `CameraView` to display a live preview feed or to capture a photo.
+  * In order to capture an image or to show a camera preview image the app has to have the
+  * [`'camera'`](../permissions.md#category-camera) [permission](./permission.md).
+  */
+/* private */ open class Camera () extends NativeObject {
   
   /**
     * Setting `active` to true activates the camera. If it is currently assigned to a `CameraView`, the

@@ -29,7 +29,7 @@ object DescribeInstanceCreditSpecificationsResult {
     
     inline def setInstanceCreditSpecificationsUndefined: Self = StObject.set(x, "InstanceCreditSpecifications", js.undefined)
     
-    inline def setInstanceCreditSpecificationsVarargs(value: InstanceCreditSpecification*): Self = StObject.set(x, "InstanceCreditSpecifications", js.Array(value :_*))
+    inline def setInstanceCreditSpecificationsVarargs(value: InstanceCreditSpecification*): Self = StObject.set(x, "InstanceCreditSpecifications", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

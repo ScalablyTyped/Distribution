@@ -14,16 +14,14 @@ trait DataTableHeader[K /* <: String */] extends StObject {
 }
 object DataTableHeader {
   
-  inline def apply[K /* <: String */](key: K): DataTableHeader[K] = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+  inline def apply[K /* <: String */](header: NonNullable[ReactNode], key: K): DataTableHeader[K] = {
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableHeader[K]]
   }
   
   extension [Self <: DataTableHeader[?], K /* <: String */](x: Self & DataTableHeader[K]) {
     
     inline def setHeader(value: NonNullable[ReactNode]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
-    
-    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

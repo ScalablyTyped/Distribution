@@ -36,6 +36,12 @@ trait Request extends StObject {
   var isLinkPreload: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * True if this resource request is considered to be the 'same site' as the
+    * request correspondinfg to the main frame.
+    */
+  var isSameSite: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * HTTP request method.
     */
   var method: String
@@ -103,6 +109,10 @@ object Request {
     
     inline def setIsLinkPreloadUndefined: Self = StObject.set(x, "isLinkPreload", js.undefined)
     
+    inline def setIsSameSite(value: Boolean): Self = StObject.set(x, "isSameSite", value.asInstanceOf[js.Any])
+    
+    inline def setIsSameSiteUndefined: Self = StObject.set(x, "isSameSite", js.undefined)
+    
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setMixedContentType(value: MixedContentType): Self = StObject.set(x, "mixedContentType", value.asInstanceOf[js.Any])
@@ -115,7 +125,7 @@ object Request {
     
     inline def setPostDataEntriesUndefined: Self = StObject.set(x, "postDataEntries", js.undefined)
     
-    inline def setPostDataEntriesVarargs(value: PostDataEntry*): Self = StObject.set(x, "postDataEntries", js.Array(value :_*))
+    inline def setPostDataEntriesVarargs(value: PostDataEntry*): Self = StObject.set(x, "postDataEntries", js.Array(value*))
     
     inline def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     

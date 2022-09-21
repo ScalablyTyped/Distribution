@@ -35,7 +35,7 @@ trait Draggable extends StObject {
     * @param d The data series to decide for.
     * @returns `false` if selection should be disabled for this data.
     */
-  var isselectable: js.UndefOr[js.ThisFunction1[/* this */ Record[String, js.Any], /* d */ DataSeries, Boolean]] = js.undefined
+  var isselectable: js.UndefOr[js.ThisFunction1[/* this */ Record[String, Any], /* d */ DataSeries, Boolean]] = js.undefined
   
   /**
     * Set multiple data points selection enabled.
@@ -66,7 +66,7 @@ object Draggable {
     
     inline def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
     
-    inline def setIsselectable(value: js.ThisFunction1[/* this */ Record[String, js.Any], /* d */ DataSeries, Boolean]): Self = StObject.set(x, "isselectable", value.asInstanceOf[js.Any])
+    inline def setIsselectable(value: js.ThisFunction1[/* this */ Record[String, Any], /* d */ DataSeries, Boolean]): Self = StObject.set(x, "isselectable", value.asInstanceOf[js.Any])
     
     inline def setIsselectableUndefined: Self = StObject.set(x, "isselectable", js.undefined)
     

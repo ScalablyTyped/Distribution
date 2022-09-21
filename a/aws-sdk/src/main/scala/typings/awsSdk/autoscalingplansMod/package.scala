@@ -1,19 +1,20 @@
 package typings.awsSdk.autoscalingplansMod
 
+import typings.awsSdk.awsSdkStrings.TargetTrackingScaling
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ApplicationSources = js.Array[typings.awsSdk.autoscalingplansMod.ApplicationSource]
+type ApplicationSources = js.Array[ApplicationSource]
 
-type Cooldown = scala.Double
+type Cooldown = Double
 
-type Datapoints = js.Array[typings.awsSdk.autoscalingplansMod.Datapoint]
+type Datapoints = js.Array[Datapoint]
 
-type DisableDynamicScaling = scala.Boolean
+type DisableDynamicScaling = Boolean
 
-type DisableScaleIn = scala.Boolean
+type DisableScaleIn = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CapacityForecast
@@ -22,7 +23,7 @@ type DisableScaleIn = scala.Boolean
   - typings.awsSdk.awsSdkStrings.ScheduledActionMaxCapacity
   - java.lang.String
 */
-type ForecastDataType = typings.awsSdk.autoscalingplansMod._ForecastDataType | java.lang.String
+type ForecastDataType = _ForecastDataType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASGTotalCPUUtilization
@@ -31,21 +32,21 @@ type ForecastDataType = typings.awsSdk.autoscalingplansMod._ForecastDataType | j
   - typings.awsSdk.awsSdkStrings.ALBTargetGroupRequestCount
   - java.lang.String
 */
-type LoadMetricType = typings.awsSdk.autoscalingplansMod._LoadMetricType | java.lang.String
+type LoadMetricType = _LoadMetricType | String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type MetricDimensionName = java.lang.String
+type MetricDimensionName = String
 
-type MetricDimensionValue = java.lang.String
+type MetricDimensionValue = String
 
-type MetricDimensions = js.Array[typings.awsSdk.autoscalingplansMod.MetricDimension]
+type MetricDimensions = js.Array[MetricDimension]
 
-type MetricName = java.lang.String
+type MetricName = String
 
-type MetricNamespace = java.lang.String
+type MetricNamespace = String
 
-type MetricScale = scala.Double
+type MetricScale = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Average_
@@ -55,15 +56,15 @@ type MetricScale = scala.Double
   - typings.awsSdk.awsSdkStrings.Sum_
   - java.lang.String
 */
-type MetricStatistic = typings.awsSdk.autoscalingplansMod._MetricStatistic | java.lang.String
+type MetricStatistic = _MetricStatistic | String
 
-type MetricUnit = java.lang.String
+type MetricUnit = String
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type PolicyName = java.lang.String
+type PolicyName = String
 
-type PolicyType = typings.awsSdk.awsSdkStrings.TargetTrackingScaling | java.lang.String
+type PolicyType = TargetTrackingScaling | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SetForecastCapacityToMaxCapacity
@@ -71,20 +72,20 @@ type PolicyType = typings.awsSdk.awsSdkStrings.TargetTrackingScaling | java.lang
   - typings.awsSdk.awsSdkStrings.SetMaxCapacityAboveForecastCapacity
   - java.lang.String
 */
-type PredictiveScalingMaxCapacityBehavior = typings.awsSdk.autoscalingplansMod._PredictiveScalingMaxCapacityBehavior | java.lang.String
+type PredictiveScalingMaxCapacityBehavior = _PredictiveScalingMaxCapacityBehavior | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ForecastAndScale
   - typings.awsSdk.awsSdkStrings.ForecastOnly
   - java.lang.String
 */
-type PredictiveScalingMode = typings.awsSdk.autoscalingplansMod._PredictiveScalingMode | java.lang.String
+type PredictiveScalingMode = _PredictiveScalingMode | String
 
-type ResourceCapacity = scala.Double
+type ResourceCapacity = Double
 
-type ResourceIdMaxLen1600 = java.lang.String
+type ResourceIdMaxLen1600 = String
 
-type ResourceLabel = java.lang.String
+type ResourceLabel = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.autoscalingColonautoScalingGroupColonDesiredCapacity
@@ -97,9 +98,9 @@ type ResourceLabel = java.lang.String
   - typings.awsSdk.awsSdkStrings.dynamodbColonindexColonWriteCapacityUnits
   - java.lang.String
 */
-type ScalableDimension = typings.awsSdk.autoscalingplansMod._ScalableDimension | java.lang.String
+type ScalableDimension = _ScalableDimension | String
 
-type ScalingInstructions = js.Array[typings.awsSdk.autoscalingplansMod.ScalingInstruction]
+type ScalingInstructions = js.Array[ScalingInstruction]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASGAverageCPUUtilization
@@ -117,13 +118,13 @@ type ScalingInstructions = js.Array[typings.awsSdk.autoscalingplansMod.ScalingIn
   - typings.awsSdk.awsSdkStrings.EC2SpotFleetRequestAverageNetworkOut
   - java.lang.String
 */
-type ScalingMetricType = typings.awsSdk.autoscalingplansMod._ScalingMetricType | java.lang.String
+type ScalingMetricType = _ScalingMetricType | String
 
-type ScalingPlanName = java.lang.String
+type ScalingPlanName = String
 
-type ScalingPlanNames = js.Array[typings.awsSdk.autoscalingplansMod.ScalingPlanName]
+type ScalingPlanNames = js.Array[ScalingPlanName]
 
-type ScalingPlanResources = js.Array[typings.awsSdk.autoscalingplansMod.ScalingPlanResource]
+type ScalingPlanResources = js.Array[ScalingPlanResource]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Active_
@@ -136,20 +137,20 @@ type ScalingPlanResources = js.Array[typings.awsSdk.autoscalingplansMod.ScalingP
   - typings.awsSdk.awsSdkStrings.UpdateFailed
   - java.lang.String
 */
-type ScalingPlanStatusCode = typings.awsSdk.autoscalingplansMod._ScalingPlanStatusCode | java.lang.String
+type ScalingPlanStatusCode = _ScalingPlanStatusCode | String
 
-type ScalingPlanVersion = scala.Double
+type ScalingPlanVersion = Double
 
-type ScalingPlans = js.Array[typings.awsSdk.autoscalingplansMod.ScalingPlan]
+type ScalingPlans = js.Array[ScalingPlan]
 
-type ScalingPolicies = js.Array[typings.awsSdk.autoscalingplansMod.ScalingPolicy]
+type ScalingPolicies = js.Array[ScalingPolicy]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.KeepExternalPolicies
   - typings.awsSdk.awsSdkStrings.ReplaceExternalPolicies
   - java.lang.String
 */
-type ScalingPolicyUpdateBehavior = typings.awsSdk.autoscalingplansMod._ScalingPolicyUpdateBehavior | java.lang.String
+type ScalingPolicyUpdateBehavior = _ScalingPolicyUpdateBehavior | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Inactive_
@@ -157,9 +158,9 @@ type ScalingPolicyUpdateBehavior = typings.awsSdk.autoscalingplansMod._ScalingPo
   - typings.awsSdk.awsSdkStrings.Active_
   - java.lang.String
 */
-type ScalingStatusCode = typings.awsSdk.autoscalingplansMod._ScalingStatusCode | java.lang.String
+type ScalingStatusCode = _ScalingStatusCode | String
 
-type ScheduledActionBufferTime = scala.Double
+type ScheduledActionBufferTime = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.autoscaling_
@@ -169,25 +170,25 @@ type ScheduledActionBufferTime = scala.Double
   - typings.awsSdk.awsSdkStrings.dynamodb
   - java.lang.String
 */
-type ServiceNamespace = typings.awsSdk.autoscalingplansMod._ServiceNamespace | java.lang.String
+type ServiceNamespace = _ServiceNamespace | String
 
-type TagFilters = js.Array[typings.awsSdk.autoscalingplansMod.TagFilter]
+type TagFilters = js.Array[TagFilter]
 
-type TagValues = js.Array[typings.awsSdk.autoscalingplansMod.XmlStringMaxLen256]
+type TagValues = js.Array[XmlStringMaxLen256]
 
-type TargetTrackingConfigurations = js.Array[typings.awsSdk.autoscalingplansMod.TargetTrackingConfiguration]
+type TargetTrackingConfigurations = js.Array[TargetTrackingConfiguration]
 
-type TimestampType = typings.std.Date
+type TimestampType = js.Date
 
-type XmlString = java.lang.String
+type XmlString = String
 
-type XmlStringMaxLen128 = java.lang.String
+type XmlStringMaxLen128 = String
 
-type XmlStringMaxLen256 = java.lang.String
+type XmlStringMaxLen256 = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-01-06`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.autoscalingplansMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

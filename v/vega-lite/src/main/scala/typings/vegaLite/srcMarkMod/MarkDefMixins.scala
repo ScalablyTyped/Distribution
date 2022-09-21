@@ -86,7 +86,7 @@ object MarkDefMixins {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value*))
     
     inline def setTheta2Offset(value: Double | ES): Self = StObject.set(x, "theta2Offset", value.asInstanceOf[js.Any])
     

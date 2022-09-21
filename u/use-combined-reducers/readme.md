@@ -10,15 +10,12 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | use-combined-reducers |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 10159 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1069.0 |
+| # stars            | 73.0 |
 
 ## Links
-- [Homepage](https://github.com/the-road-to-learn-react/use-combined-reducers#readme)
-- [Bugs](https://github.com/the-road-to-learn-react/use-combined-reducers/issues)
-- [Repository](https://github.com/the-road-to-learn-react/use-combined-reducers)
 - [Npm](https://www.npmjs.com/package/use-combined-reducers)
     
 

@@ -1,44 +1,44 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.AntLocale
-import typings.antdMobile.anon.Cascade
-import typings.antdMobile.anon.MaskTransitionName
-import typings.react.mod.global.JSX.Element
+import typings.antdMobile.anon.OmitPickerPropsvaluevisib
+import typings.antdMobile.anon.columnsArrayPickerColumnv
+import typings.antdMobile.pickerViewPickerViewMod.PickerValue
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerMod {
   
-  @JSImport("antd-mobile/lib/picker", JSImport.Default)
-  @js.native
-  class default () extends Picker
-  /* static members */
+  /* Inlined { readonly type :react.react.ForwardRefExoticComponent<{  columns :std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerColumn> | (value : std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerValue>): std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerColumn>,   value :std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerValue> | undefined,   defaultValue :std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerValue> | undefined,   loading :boolean | undefined,   loadingContent :react.react.ReactNode | undefined,   onSelect :(value : std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerValue>, extend : antd-mobile.antd-mobile/es/components/picker-view.PickerValueExtend): void | undefined,   onConfirm :(value : std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerValue>, extend : antd-mobile.antd-mobile/es/components/picker-view.PickerValueExtend): void | undefined,   onCancel :(): void | undefined,   onClose :(): void | undefined,   closeOnMaskClick :boolean | undefined,   visible :boolean | undefined,   title :react.react.ReactNode | undefined,   confirmText :react.react.ReactNode | undefined,   cancelText :react.react.ReactNode | undefined,   children :(items : std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerColumnItem | null>, actions : antd-mobile.antd-mobile/es/components/picker/picker.PickerActions): react.react.ReactNode | undefined,   renderLabel :(item : antd-mobile.antd-mobile/es/components/picker-view.PickerColumnItem): react.react.ReactNode | undefined,   mouseWheel :boolean | undefined,   popupClassName :string | undefined,   popupStyle :react.react.CSSProperties | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--header-button-font-size' | '--title-font-size' | '--item-font-size' | '--item-height', string>> | undefined,   tabIndex :number | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/popup.PopupProps, 'onClick' | 'destroyOnClose' | 'forceRender' | 'getContainer' | 'afterShow' | 'afterClose' | 'stopPropagation'> & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/picker/picker.PickerActions>>,   prompt :(props : std.Omit<antd-mobile.antd-mobile/es/components/picker.PickerProps, 'value' | 'visible' | 'children'>): std.Promise<std.Array<antd-mobile.antd-mobile/es/components/picker.PickerValue> | null>} & react.react.NamedExoticComponent<{  columns :std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerColumn> | (value : std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerValue>): std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerColumn>,   value :std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerValue> | undefined,   defaultValue :std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerValue> | undefined,   loading :boolean | undefined,   loadingContent :react.react.ReactNode | undefined,   onSelect :(value : std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerValue>, extend : antd-mobile.antd-mobile/es/components/picker-view.PickerValueExtend): void | undefined,   onConfirm :(value : std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerValue>, extend : antd-mobile.antd-mobile/es/components/picker-view.PickerValueExtend): void | undefined,   onCancel :(): void | undefined,   onClose :(): void | undefined,   closeOnMaskClick :boolean | undefined,   visible :boolean | undefined,   title :react.react.ReactNode | undefined,   confirmText :react.react.ReactNode | undefined,   cancelText :react.react.ReactNode | undefined,   children :(items : std.Array<antd-mobile.antd-mobile/es/components/picker-view.PickerColumnItem | null>, actions : antd-mobile.antd-mobile/es/components/picker/picker.PickerActions): react.react.ReactNode | undefined,   renderLabel :(item : antd-mobile.antd-mobile/es/components/picker-view.PickerColumnItem): react.react.ReactNode | undefined,   mouseWheel :boolean | undefined,   popupClassName :string | undefined,   popupStyle :react.react.CSSProperties | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--header-button-font-size' | '--title-font-size' | '--item-font-size' | '--item-height', string>> | undefined,   tabIndex :number | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/popup.PopupProps, 'onClick' | 'destroyOnClose' | 'forceRender' | 'getContainer' | 'afterShow' | 'afterClose' | 'stopPropagation'> & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/picker/picker.PickerActions>> */
   object default {
     
-    @JSImport("antd-mobile/lib/picker", JSImport.Default)
+    /**
+      * **NOTE**: Exotic components are not callable.
+      */
+    inline def apply(props: columnsArrayPickerColumnv): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
+    @JSImport("antd-mobile/es/components/picker", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("antd-mobile/lib/picker", "default.contextTypes")
+    @JSImport("antd-mobile/es/components/picker", "default.displayName")
     @js.native
-    def contextTypes: AntLocale = js.native
-    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def displayName: js.UndefOr[String] = js.native
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("antd-mobile/lib/picker", "default.defaultProps")
+    @JSImport("antd-mobile/es/components/picker", "default.prompt")
     @js.native
-    def defaultProps: Cascade = js.native
-    inline def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("antd-mobile/lib/picker", "nonsense")
-  @js.native
-  val nonsense: Element = js.native
-  
-  @js.native
-  trait Picker
-    extends typings.antdMobile.abstractPickerMod.default {
+    def prompt: js.Function1[/* props */ OmitPickerPropsvaluevisib, js.Promise[js.Array[PickerValue] | Null]] = js.native
+    inline def prompt_=(x: js.Function1[/* props */ OmitPickerPropsvaluevisib, js.Promise[js.Array[PickerValue] | Null]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prompt")(x.asInstanceOf[js.Any])
     
-    /* protected */ var popupProps: MaskTransitionName = js.native
+    @JSImport("antd-mobile/es/components/picker", "default.type")
+    @js.native
+    val `type`: ForwardRefExoticComponent[columnsArrayPickerColumnv] = js.native
+    
+    @JSImport("antd-mobile/es/components/picker", "default.$$typeof")
+    @js.native
+    val typeof: js.Symbol = js.native
   }
 }

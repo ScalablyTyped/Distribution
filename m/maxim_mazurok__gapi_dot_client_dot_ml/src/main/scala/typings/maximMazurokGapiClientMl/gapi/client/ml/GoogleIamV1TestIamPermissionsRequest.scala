@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleIamV1TestIamPermissionsRequest extends StObject {
   
   /**
-    * The set of permissions to check for the `resource`. Permissions with wildcards (such as '*' or 'storage.*') are not allowed. For more information see [IAM
+    * The set of permissions to check for the `resource`. Permissions with wildcards (such as `*` or `storage.*`) are not allowed. For more information see [IAM
     * Overview](https://cloud.google.com/iam/docs/overview#permissions).
     */
   var permissions: js.UndefOr[js.Array[String]] = js.undefined
@@ -25,6 +25,6 @@ object GoogleIamV1TestIamPermissionsRequest {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
   }
 }

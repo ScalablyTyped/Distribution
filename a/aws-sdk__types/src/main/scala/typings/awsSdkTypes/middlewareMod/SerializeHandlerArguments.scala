@@ -16,7 +16,7 @@ trait SerializeHandlerArguments[Input /* <: js.Object */]
     * During the build phase of the execution of a middleware stack, a built
     * request may or may not be available.
     */
-  var request: js.UndefOr[js.Any] = js.undefined
+  var request: js.UndefOr[Any] = js.undefined
 }
 object SerializeHandlerArguments {
   
@@ -27,7 +27,7 @@ object SerializeHandlerArguments {
   
   extension [Self <: SerializeHandlerArguments[?], Input /* <: js.Object */](x: Self & SerializeHandlerArguments[Input]) {
     
-    inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
   }

@@ -19,7 +19,7 @@ trait DomainSummary extends StObject {
   /**
     * Expiration date of the domain in Unix time format and Coordinated Universal Time (UTC).
     */
-  var Expiry: js.UndefOr[Timestamp] = js.undefined
+  var Expiry: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates whether a domain is locked from unauthorized transfer to another party.
@@ -41,7 +41,7 @@ object DomainSummary {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    inline def setExpiry(value: Timestamp): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: js.Date): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
     
     inline def setExpiryUndefined: Self = StObject.set(x, "Expiry", js.undefined)
     

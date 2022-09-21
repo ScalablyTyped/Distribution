@@ -28,7 +28,7 @@ object mod {
     
     var hsva: js.Tuple4[Double, Double, Double, Double]
     
-    var keyword: String
+    var keyword: js.UndefOr[String] = js.undefined
     
     var rgb: js.Tuple3[Double, Double, Double]
     
@@ -44,11 +44,10 @@ object mod {
       hsla: js.Tuple4[Double, Double, Double, Double],
       hsv: js.Tuple3[Double, Double, Double],
       hsva: js.Tuple4[Double, Double, Double, Double],
-      keyword: String,
       rgb: js.Tuple3[Double, Double, Double],
       rgba: js.Tuple4[Double, Double, Double, Double]
     ): Color = {
-      val __obj = js.Dynamic.literal(cmyk = cmyk.asInstanceOf[js.Any], cmyka = cmyka.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], hsl = hsl.asInstanceOf[js.Any], hsla = hsla.asInstanceOf[js.Any], hsv = hsv.asInstanceOf[js.Any], hsva = hsva.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], rgb = rgb.asInstanceOf[js.Any], rgba = rgba.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cmyk = cmyk.asInstanceOf[js.Any], cmyka = cmyka.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], hsl = hsl.asInstanceOf[js.Any], hsla = hsla.asInstanceOf[js.Any], hsv = hsv.asInstanceOf[js.Any], hsva = hsva.asInstanceOf[js.Any], rgb = rgb.asInstanceOf[js.Any], rgba = rgba.asInstanceOf[js.Any])
       __obj.asInstanceOf[Color]
     }
     
@@ -69,6 +68,8 @@ object mod {
       inline def setHsva(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "hsva", value.asInstanceOf[js.Any])
       
       inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      
+      inline def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
       
       inline def setRgb(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
       

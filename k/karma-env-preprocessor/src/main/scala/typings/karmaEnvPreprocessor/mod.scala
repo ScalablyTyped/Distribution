@@ -28,7 +28,7 @@ object mod {
       
       inline def setEnvPreprocessorUndefined: Self = StObject.set(x, "envPreprocessor", js.undefined)
       
-      inline def setEnvPreprocessorVarargs(value: String*): Self = StObject.set(x, "envPreprocessor", js.Array(value :_*))
+      inline def setEnvPreprocessorVarargs(value: String*): Self = StObject.set(x, "envPreprocessor", js.Array(value*))
     }
   }
 }

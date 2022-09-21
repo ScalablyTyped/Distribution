@@ -33,6 +33,6 @@ object ListSubscribedRuleGroupsResponse {
     
     inline def setRuleGroupsUndefined: Self = StObject.set(x, "RuleGroups", js.undefined)
     
-    inline def setRuleGroupsVarargs(value: SubscribedRuleGroupSummary*): Self = StObject.set(x, "RuleGroups", js.Array(value :_*))
+    inline def setRuleGroupsVarargs(value: SubscribedRuleGroupSummary*): Self = StObject.set(x, "RuleGroups", js.Array(value*))
   }
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "WrapsTypeParameterCache")
 @js.native
-class WrapsTypeParameterCache ()
+open class WrapsTypeParameterCache ()
   extends StObject
      with typings.typescriptServices.TypeScript.WrapsTypeParameterCache {
   
   /* private */ /* CompleteClass */
-  var _wrapsTypeParameterCache: js.Any = js.native
+  var _wrapsTypeParameterCache: Any = js.native
   
   /* CompleteClass */
   override def getWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap): Double = js.native

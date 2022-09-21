@@ -25,7 +25,7 @@ object ListDicomStoresResponse {
     
     inline def setDicomStoresUndefined: Self = StObject.set(x, "dicomStores", js.undefined)
     
-    inline def setDicomStoresVarargs(value: DicomStore*): Self = StObject.set(x, "dicomStores", js.Array(value :_*))
+    inline def setDicomStoresVarargs(value: DicomStore*): Self = StObject.set(x, "dicomStores", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

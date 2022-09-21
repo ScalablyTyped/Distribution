@@ -40,7 +40,7 @@ object GraphQLFieldConfig {
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setResolve(
-      value: (/* source */ js.Any, /* args */ StringDictionary[js.Any], /* context */ js.Any, /* info */ GraphQLResolveInfo) => js.Any
+      value: (/* source */ Any, /* args */ StringDictionary[Any], /* context */ Any, /* info */ GraphQLResolveInfo) => Any
     ): Self = StObject.set(x, "resolve", js.Any.fromFunction4(value))
     
     inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)

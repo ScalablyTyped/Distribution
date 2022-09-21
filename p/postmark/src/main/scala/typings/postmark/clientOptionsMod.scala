@@ -8,38 +8,44 @@ object clientOptionsMod {
   
   object ClientOptions {
     
-    @JSImport("postmark/dist/client/models/client/ClientOptions", "ClientOptions.Configuration")
     @js.native
-    class Configuration protected () extends StObject {
-      def this(useHttps: Boolean, requestHost: String, timeout: Double) = this()
-      
-      var requestHost: String = js.native
-      
-      var timeout: Double = js.native
-      
-      var useHttps: Boolean = js.native
-    }
-    
+    sealed trait AuthHeaderNames extends StObject
+    @JSImport("postmark/dist/client/models/client/ClientOptions", "ClientOptions.AuthHeaderNames")
     @js.native
-    sealed trait DefaultHeaderNames extends StObject
-    @JSImport("postmark/dist/client/models/client/ClientOptions", "ClientOptions.DefaultHeaderNames")
-    @js.native
-    object DefaultHeaderNames extends StObject {
+    object AuthHeaderNames extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[DefaultHeaderNames & String] = js.native
+      def apply(value: String): js.UndefOr[AuthHeaderNames & String] = js.native
       
       @js.native
       sealed trait ACCOUNT_TOKEN
         extends StObject
-           with DefaultHeaderNames
-      /* "X-Postmark-Account-Token" */ val ACCOUNT_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames.ACCOUNT_TOKEN & String = js.native
+           with AuthHeaderNames
+      /* "X-Postmark-Account-Token" */ val ACCOUNT_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.AuthHeaderNames.ACCOUNT_TOKEN & String = js.native
       
       @js.native
       sealed trait SERVER_TOKEN
         extends StObject
-           with DefaultHeaderNames
-      /* "X-Postmark-Server-Token" */ val SERVER_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames.SERVER_TOKEN & String = js.native
+           with AuthHeaderNames
+      /* "X-Postmark-Server-Token" */ val SERVER_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.AuthHeaderNames.SERVER_TOKEN & String = js.native
+    }
+    
+    @JSImport("postmark/dist/client/models/client/ClientOptions", "ClientOptions.Configuration")
+    @js.native
+    open class Configuration () extends StObject {
+      def this(useHttps: Boolean) = this()
+      def this(useHttps: Boolean, requestHost: String) = this()
+      def this(useHttps: Unit, requestHost: String) = this()
+      def this(useHttps: Boolean, requestHost: String, timeout: Double) = this()
+      def this(useHttps: Boolean, requestHost: Unit, timeout: Double) = this()
+      def this(useHttps: Unit, requestHost: String, timeout: Double) = this()
+      def this(useHttps: Unit, requestHost: Unit, timeout: Double) = this()
+      
+      var requestHost: js.UndefOr[String] = js.native
+      
+      var timeout: js.UndefOr[Double] = js.native
+      
+      var useHttps: js.UndefOr[Boolean] = js.native
     }
     
     @js.native

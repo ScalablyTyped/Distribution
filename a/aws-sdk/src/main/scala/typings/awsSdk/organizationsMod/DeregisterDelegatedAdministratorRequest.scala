@@ -12,7 +12,7 @@ trait DeregisterDelegatedAdministratorRequest extends StObject {
   var AccountId: typings.awsSdk.organizationsMod.AccountId
   
   /**
-    * The service principal name of an AWS service for which the account is a delegated administrator. Delegated administrator privileges are revoked for only the specified AWS service from the member account. If the specified service is the only service for which the member account is a delegated administrator, the operation also revokes Organizations read action permissions.
+    * The service principal name of an Amazon Web Services service for which the account is a delegated administrator. Delegated administrator privileges are revoked for only the specified Amazon Web Services service from the member account. If the specified service is the only service for which the member account is a delegated administrator, the operation also revokes Organizations read action permissions.
     */
   var ServicePrincipal: typings.awsSdk.organizationsMod.ServicePrincipal
 }

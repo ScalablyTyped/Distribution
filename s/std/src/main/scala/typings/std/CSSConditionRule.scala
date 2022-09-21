@@ -10,5 +10,6 @@ trait CSSConditionRule
   extends StObject
      with CSSGroupingRule {
   
-  var conditionText: java.lang.String = js.native
+  /* standard dom */
+  val conditionText: java.lang.String = js.native
 }

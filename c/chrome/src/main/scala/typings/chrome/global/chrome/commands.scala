@@ -20,6 +20,7 @@ object commands {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def getAll(): js.Promise[js.Array[Command]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Promise[js.Array[Command]]]
   inline def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.commands.onCommand")

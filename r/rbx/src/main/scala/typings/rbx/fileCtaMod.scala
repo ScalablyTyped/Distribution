@@ -54,7 +54,7 @@ object fileCtaMod {
   
   @JSImport("rbx/elements/form/file-cta", "FileCTA")
   @js.native
-  val FileCTA: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val FileCTA: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait FileCTAProps extends StObject {

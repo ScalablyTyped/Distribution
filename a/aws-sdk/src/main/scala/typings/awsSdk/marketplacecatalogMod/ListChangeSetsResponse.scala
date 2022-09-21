@@ -29,7 +29,7 @@ object ListChangeSetsResponse {
     
     inline def setChangeSetSummaryListUndefined: Self = StObject.set(x, "ChangeSetSummaryList", js.undefined)
     
-    inline def setChangeSetSummaryListVarargs(value: ChangeSetSummaryListItem*): Self = StObject.set(x, "ChangeSetSummaryList", js.Array(value :_*))
+    inline def setChangeSetSummaryListVarargs(value: ChangeSetSummaryListItem*): Self = StObject.set(x, "ChangeSetSummaryList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

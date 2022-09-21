@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/checkbox" : "8.0.0"
+      "@material/checkbox" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/checkbox" : "8.0.0"
+      "@material/checkbox" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -11,36 +11,35 @@ object breadcrumbBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Breadcrumb/Breadcrumb.base", "BreadcrumbBase")
   @js.native
-  class BreadcrumbBase protected ()
-    extends Component[IBreadcrumbProps, js.Any, js.Any] {
+  open class BreadcrumbBase protected () extends Component[IBreadcrumbProps, Any, Any] {
     def this(props: IBreadcrumbProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _focusZone: js.Any = js.native
+    /* private */ var _focusZone: Any = js.native
     
-    /* private */ var _onBreadcrumbClicked: js.Any = js.native
+    /* private */ var _onBreadcrumbClicked: Any = js.native
     
     /**
       * Remove the last item of the overflow set and insert the item as the start of the rendered set past the overflow
       * point.
       */
-    /* private */ var _onGrowData: js.Any = js.native
+    /* private */ var _onGrowData: Any = js.native
     
     /**
       * Remove the first rendered item past the overlow point and put it and the end the overflow set.
       */
-    /* private */ var _onReduceData: js.Any = js.native
+    /* private */ var _onReduceData: Any = js.native
     
-    /* private */ var _onRenderBreadcrumb: js.Any = js.native
+    /* private */ var _onRenderBreadcrumb: Any = js.native
     
-    /* private */ var _onRenderItem: js.Any = js.native
+    /* private */ var _onRenderItem: Any = js.native
     
     /**
       * Validate incoming props
       * @param props - Props to validate
       */
-    /* private */ var _validateProps: js.Any = js.native
+    /* private */ var _validateProps: Any = js.native
     
     /**
       * Sets focus to the first breadcrumb link.

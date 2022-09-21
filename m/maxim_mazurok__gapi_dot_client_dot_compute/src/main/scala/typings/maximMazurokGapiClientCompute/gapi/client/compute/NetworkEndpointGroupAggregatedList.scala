@@ -15,7 +15,7 @@ trait NetworkEndpointGroupAggregatedList extends StObject {
   var items: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.NetworkEndpointGroupsScopedList}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NetworkEndpointGroupAggregatedList & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NetworkEndpointGroupAggregatedList & TopLevel[Any]
   ] = js.undefined
   
   /** [Output Only] The resource type, which is always compute#networkEndpointGroupAggregatedList for aggregated lists of network endpoint groups. */
@@ -52,7 +52,7 @@ object NetworkEndpointGroupAggregatedList {
     inline def setItems(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.NetworkEndpointGroupsScopedList}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NetworkEndpointGroupAggregatedList & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NetworkEndpointGroupAggregatedList & TopLevel[Any]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -73,7 +73,7 @@ object NetworkEndpointGroupAggregatedList {
     
     inline def setUnreachablesUndefined: Self = StObject.set(x, "unreachables", js.undefined)
     
-    inline def setUnreachablesVarargs(value: String*): Self = StObject.set(x, "unreachables", js.Array(value :_*))
+    inline def setUnreachablesVarargs(value: String*): Self = StObject.set(x, "unreachables", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

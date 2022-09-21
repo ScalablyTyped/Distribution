@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PublicKeySummary extends StObject {
   
   /**
-    * A comment to describe the public key.
+    * A comment to describe the public key. The comment cannot be longer than 128 characters.
     */
   var Comment: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the public key was uploaded.
     */
-  var CreatedTime: timestamp
+  var CreatedTime: js.Date
   
   /**
     * The public key.
@@ -33,7 +33,7 @@ trait PublicKeySummary extends StObject {
 }
 object PublicKeySummary {
   
-  inline def apply(CreatedTime: timestamp, EncodedKey: String, Id: String, Name: String): PublicKeySummary = {
+  inline def apply(CreatedTime: js.Date, EncodedKey: String, Id: String, Name: String): PublicKeySummary = {
     val __obj = js.Dynamic.literal(CreatedTime = CreatedTime.asInstanceOf[js.Any], EncodedKey = EncodedKey.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeySummary]
   }
@@ -44,7 +44,7 @@ object PublicKeySummary {
     
     inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    inline def setCreatedTime(value: timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setEncodedKey(value: String): Self = StObject.set(x, "EncodedKey", value.asInstanceOf[js.Any])
     

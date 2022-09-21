@@ -8,7 +8,10 @@ import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,14 +25,14 @@ object cellMod {
   
   @JSImport("@blueprintjs/table/lib/esm/cell/cell", "Cell")
   @js.native
-  class Cell protected ()
-    extends Component[ICellProps, js.Object, js.Any] {
+  open class Cell protected ()
+    extends Component[ICellProps, js.Object, Any] {
     def this(props: ICellProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ICellProps, context: js.Any) = this()
+    def this(props: ICellProps, context: Any) = this()
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MCell(nextProps: ICellProps): Boolean = js.native
@@ -54,6 +57,10 @@ object cellMod {
   
   inline def emptyCellRenderer(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyCellRenderer")().asInstanceOf[Element]
   
+  type CellProps = ICellProps
+  
+  type CellRenderer = ICellRenderer
+  
   trait ICellProps
     extends StObject
        with IIntentProps
@@ -62,7 +69,9 @@ object cellMod {
     /**
       * A ref handle to capture the outer div of this cell. Used internally.
       */
-    var cellRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
+    var cellRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The column index of the cell. If provided, this will be passed as an argument to any callbacks
@@ -73,6 +82,7 @@ object cellMod {
     /**
       * If `true`, the cell will be rendered above overlay layers to enable mouse
       * interactions within the cell.
+      *
       * @default false
       */
     var interactive: js.UndefOr[Boolean] = js.undefined
@@ -82,6 +92,7 @@ object cellMod {
     /**
       * An optional native tooltip that is displayed on hover.
       * If `true`, content will be replaced with a fixed-height skeleton.
+      *
       * @default false
       */
     var loading: js.UndefOr[Boolean] = js.undefined
@@ -122,6 +133,7 @@ object cellMod {
     /**
       * If `true`, the cell contents will be wrapped in a `div` with
       * styling that will prevent the content from overflowing the cell.
+      *
       * @default true
       */
     var truncated: js.UndefOr[Boolean] = js.undefined
@@ -129,6 +141,7 @@ object cellMod {
     /**
       * If `true`, the cell contents will be wrapped in a `div` with
       * styling that will cause text to wrap, rather than displaying it on a single line.
+      *
       * @default false
       */
     var wrapText: js.UndefOr[Boolean] = js.undefined
@@ -142,9 +155,17 @@ object cellMod {
     
     extension [Self <: ICellProps](x: Self) {
       
-      inline def setCellRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "cellRef", js.Any.fromFunction1(value))
+      inline def setCellRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "cellRef", value.asInstanceOf[js.Any])
+      
+      inline def setCellRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "cellRef", js.Any.fromFunction1(value))
+      
+      inline def setCellRefNull: Self = StObject.set(x, "cellRef", null)
       
       inline def setCellRefUndefined: Self = StObject.set(x, "cellRef", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -200,5 +221,5 @@ object cellMod {
     }
   }
   
-  type ICellRenderer = js.Function2[/* rowIndex */ Double, /* columnIndex */ Double, ReactElement]
+  type ICellRenderer = js.Function2[/* rowIndex */ Double, /* columnIndex */ Double, js.UndefOr[ReactElement]]
 }

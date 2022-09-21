@@ -22,6 +22,6 @@ object BatchDeletePhotosRequest {
     
     inline def setPhotoIdsUndefined: Self = StObject.set(x, "photoIds", js.undefined)
     
-    inline def setPhotoIdsVarargs(value: String*): Self = StObject.set(x, "photoIds", js.Array(value :_*))
+    inline def setPhotoIdsVarargs(value: String*): Self = StObject.set(x, "photoIds", js.Array(value*))
   }
 }

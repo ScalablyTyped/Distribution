@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SphericalHarmonics")
 @js.native
-class SphericalHarmonics ()
+open class SphericalHarmonics ()
   extends StObject
      with typings.babylonjs.BABYLON.SphericalHarmonics {
   
@@ -126,6 +126,22 @@ class SphericalHarmonics ()
     */
   /* CompleteClass */
   override def scaleInPlace(scale: Double): Unit = js.native
+  
+  /**
+    * update the spherical harmonics coefficients from the given array
+    * @param data defines the 9x3 coefficients (l00, l1-1, l10, l11, l2-2, l2-1, l20, l21, l22)
+    * @returns the spherical harmonics (this)
+    */
+  /* CompleteClass */
+  override def updateFromArray(data: ArrayLike[ArrayLike[Double]]): typings.babylonjs.BABYLON.SphericalHarmonics = js.native
+  
+  /**
+    * update the spherical harmonics coefficients from the given floats array
+    * @param data defines the 9x3 coefficients (l00, l1-1, l10, l11, l2-2, l2-1, l20, l21, l22)
+    * @returns the spherical harmonics (this)
+    */
+  /* CompleteClass */
+  override def updateFromFloatsArray(data: ArrayLike[Double]): typings.babylonjs.BABYLON.SphericalHarmonics = js.native
 }
 /* static members */
 object SphericalHarmonics {

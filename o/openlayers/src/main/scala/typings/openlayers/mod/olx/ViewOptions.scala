@@ -93,7 +93,7 @@ object ViewOptions {
     
     inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
     
-    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
     
     inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

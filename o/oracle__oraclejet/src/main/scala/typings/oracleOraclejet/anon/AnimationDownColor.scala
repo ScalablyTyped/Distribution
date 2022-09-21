@@ -194,7 +194,7 @@ object AnimationDownColor {
     
     inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setDataCursor(value: LineColor): Self = StObject.set(x, "dataCursor", value.asInstanceOf[js.Any])
     
@@ -206,7 +206,7 @@ object AnimationDownColor {
     
     inline def setDataLabelStyle(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "dataLabelStyle", value.asInstanceOf[js.Any])
     
-    inline def setDataLabelStyleVarargs(value: js.Object*): Self = StObject.set(x, "dataLabelStyle", js.Array(value :_*))
+    inline def setDataLabelStyleVarargs(value: js.Object*): Self = StObject.set(x, "dataLabelStyle", js.Array(value*))
     
     inline def setFunnelBackgroundColor(value: String): Self = StObject.set(x, "funnelBackgroundColor", value.asInstanceOf[js.Any])
     
@@ -240,7 +240,7 @@ object AnimationDownColor {
     
     inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value*))
     
     inline def setPieFeelerColor(value: String): Self = StObject.set(x, "pieFeelerColor", value.asInstanceOf[js.Any])
     
@@ -252,7 +252,7 @@ object AnimationDownColor {
     
     inline def setShapes(value: js.Array[String]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    inline def setShapesVarargs(value: String*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: String*): Self = StObject.set(x, "shapes", js.Array(value*))
     
     inline def setStackLabelStyle(value: js.Object): Self = StObject.set(x, "stackLabelStyle", value.asInstanceOf[js.Any])
     

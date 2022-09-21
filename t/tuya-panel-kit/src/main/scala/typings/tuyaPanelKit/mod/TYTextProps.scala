@@ -18,16 +18,76 @@ trait TYTextProps
   extends StObject
      with TextProps {
   
+  /**
+    * @language zh-CN
+    * @description 字体对齐方式
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Font alignment
+    * @defaultValue null
+    */
   var align: js.UndefOr[left | center | right] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 字体颜色
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Font color
+    * @defaultValue null
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 字体尺寸
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Size of font
+    * @defaultValue null
+    */
   var size: js.UndefOr[large | normal | small | Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 文本
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Text
+    * @defaultValue null
+    */
   var text: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 字体类型
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Type of font
+    * @defaultValue null
+    */
   var `type`: js.UndefOr[heading | title | paragraph] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 字体粗细
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Font weight
+    * @defaultValue null
+    */
   var weight: js.UndefOr[Double | String] = js.undefined
 }
 object TYTextProps {

@@ -10,7 +10,7 @@ object namespaceManagerMod {
   
   @JSImport("xml-core/dist/types/namespace_manager", "NamespaceManager")
   @js.native
-  class NamespaceManager () extends Collection[XmlNamespace] {
+  open class NamespaceManager () extends Collection[XmlNamespace] {
     def this(items: js.Array[XmlNamespace]) = this()
     
     def GetNamespace(namespaceUrl: String): XmlNamespace | Null = js.native

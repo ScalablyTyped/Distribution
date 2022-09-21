@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("precise", "Precise")
   @js.native
-  class Precise () extends StObject {
+  open class Precise () extends StObject {
     
     /**
       * Returns the nanoseconds from `start()` to `stop()`

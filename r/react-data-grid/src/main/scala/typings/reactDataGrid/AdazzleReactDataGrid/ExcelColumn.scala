@@ -12,7 +12,7 @@ trait ExcelColumn extends StObject {
   
   var key: String
   
-  var name: js.Any
+  var name: Any
   
   var resizeable: Boolean
   
@@ -20,14 +20,7 @@ trait ExcelColumn extends StObject {
 }
 object ExcelColumn {
   
-  inline def apply(
-    editable: Boolean,
-    filterable: Boolean,
-    key: String,
-    name: js.Any,
-    resizeable: Boolean,
-    width: Double
-  ): ExcelColumn = {
+  inline def apply(editable: Boolean, filterable: Boolean, key: String, name: Any, resizeable: Boolean, width: Double): ExcelColumn = {
     val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any], filterable = filterable.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resizeable = resizeable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcelColumn]
   }
@@ -40,7 +33,7 @@ object ExcelColumn {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setResizeable(value: Boolean): Self = StObject.set(x, "resizeable", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,7 @@ object GooglePrivacyDlpV2JobTrigger {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: GooglePrivacyDlpV2Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: GooglePrivacyDlpV2Error*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setInspectJob(value: GooglePrivacyDlpV2InspectJobConfig): Self = StObject.set(x, "inspectJob", value.asInstanceOf[js.Any])
     
@@ -89,7 +89,7 @@ object GooglePrivacyDlpV2JobTrigger {
     
     inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
-    inline def setTriggersVarargs(value: GooglePrivacyDlpV2Trigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: GooglePrivacyDlpV2Trigger*): Self = StObject.set(x, "triggers", js.Array(value*))
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

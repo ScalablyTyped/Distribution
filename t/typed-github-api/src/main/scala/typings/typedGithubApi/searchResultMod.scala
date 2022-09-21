@@ -44,7 +44,7 @@ object searchResultMod {
       
       inline def setItems(value: js.Array[T & SearchResult]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: (T & SearchResult)*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: (T & SearchResult)*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     }

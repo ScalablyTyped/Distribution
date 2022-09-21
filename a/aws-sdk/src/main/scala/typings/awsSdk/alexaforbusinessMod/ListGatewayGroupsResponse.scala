@@ -29,7 +29,7 @@ object ListGatewayGroupsResponse {
     
     inline def setGatewayGroupsUndefined: Self = StObject.set(x, "GatewayGroups", js.undefined)
     
-    inline def setGatewayGroupsVarargs(value: GatewayGroupSummary*): Self = StObject.set(x, "GatewayGroups", js.Array(value :_*))
+    inline def setGatewayGroupsVarargs(value: GatewayGroupSummary*): Self = StObject.set(x, "GatewayGroups", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

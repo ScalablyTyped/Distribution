@@ -15,7 +15,7 @@ object tooltipContainerMod {
   
   @JSImport("playable/dist/src/modules/ui/core/tooltip/tooltip-container", JSImport.Default)
   @js.native
-  class default protected () extends TooltipContainer {
+  open class default protected () extends TooltipContainer {
     def this(tooltip: typings.playable.tooltipTooltipMod.default) = this()
     
     /* CompleteClass */
@@ -63,13 +63,13 @@ object tooltipContainerMod {
        with ITooltipContainer {
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
-    /* private */ var _getTooltipLeftX: js.Any = js.native
+    /* private */ var _getTooltipLeftX: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
-    /* private */ var _tooltip: js.Any = js.native
+    /* private */ var _tooltip: Any = js.native
     
     def getTooltipPositionStyles(position: ITooltipPositionFunction): Bottom | Left = js.native
   }

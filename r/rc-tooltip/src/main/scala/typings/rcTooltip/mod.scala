@@ -1,21 +1,23 @@
 package typings.rcTooltip
 
-import org.scalablytyped.runtime.Shortcut
+import typings.rcTooltip.popupMod.ContentProps
 import typings.rcTooltip.tooltipMod.TooltipProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("rc-tooltip", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rc-tooltip", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[TooltipProps & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[TooltipProps & RefAttributes[Any]] = js.native
   
-  type _To = ForwardRefExoticComponent[TooltipProps & RefAttributes[js.Any]]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: ForwardRefExoticComponent[TooltipProps & RefAttributes[js.Any]] = default
+  inline def Popup(props: ContentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Popup")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption
 import typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinResetHandler
 import typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReaderKind
@@ -119,7 +118,7 @@ object SmartCards {
   @JSGlobal("Windows.Devices.SmartCards.SmartCardPinPolicy")
   @js.native
   /** Creates and initializes a new instance of a set of personal identification number (PIN) rules on a Trusted Platform Module (TPM) virtual smart card. */
-  class SmartCardPinPolicy ()
+  open class SmartCardPinPolicy ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinPolicy {
     
@@ -173,7 +172,7 @@ object SmartCards {
     
     /** Gets the length of time to wait before requesting the smart card personal identification number (PIN) reset. */
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /**
       * Gets an instance of a wait time for a requested smart card personal identification number (PIN) reset.
@@ -198,7 +197,7 @@ object SmartCards {
        with typings.winrtUwp.Windows.Devices.SmartCards.SmartCardProvisioning {
     
     /* CompleteClass */
-    var getAuthorityKeyContainerNameAsync: js.Any = js.native
+    var getAuthorityKeyContainerNameAsync: Any = js.native
     
     /* unmapped type */
     /**
@@ -258,8 +257,8 @@ object SmartCards {
     /* static member */
     @JSGlobal("Windows.Devices.SmartCards.SmartCardProvisioning.requestAttestedVirtualSmartCardCreationAsync")
     @js.native
-    def requestAttestedVirtualSmartCardCreationAsync: js.Any = js.native
-    inline def requestAttestedVirtualSmartCardCreationAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestAttestedVirtualSmartCardCreationAsync")(x.asInstanceOf[js.Any])
+    def requestAttestedVirtualSmartCardCreationAsync: Any = js.native
+    inline def requestAttestedVirtualSmartCardCreationAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestAttestedVirtualSmartCardCreationAsync")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a Trusted Platform Module (TPM) virtual smart card with a given human-readable name, admin key, and personal identification number (PIN) rules set.

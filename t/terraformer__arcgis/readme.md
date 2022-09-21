@@ -10,10 +10,10 @@ Convert ArcGIS JSON geometries to GeoJSON geometries and vica-versa.
 | ------------------ | :-------------: |
 | Full name          | @terraformer/arcgis |
 | Keywords           | arcgis, convert, geo, geojson, geometry |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 82310 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 63486.0 |
+| # stars            | 90.0 |
 
 ## Links
 - [Homepage](https://github.com/terraformer-js/terraformer)

@@ -7,27 +7,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait PageContentType extends StObject
 /**
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.PageContentType")
 @js.native
 object PageContentType extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait image
     extends StObject
        with PageContentType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait ink
     extends StObject
        with PageContentType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait other
     extends StObject
        with PageContentType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait outline
     extends StObject

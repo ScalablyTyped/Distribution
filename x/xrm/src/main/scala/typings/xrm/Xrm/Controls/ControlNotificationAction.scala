@@ -30,7 +30,7 @@ object ControlNotificationAction {
     
     inline def setActions(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: js.Function0[Unit]*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

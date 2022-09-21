@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jsonSchema.mod.JSONSchema6
 import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEventHandler
@@ -84,11 +85,11 @@ trait WidgetProps extends StObject {
   
   var `aria-activedescendant`: js.UndefOr[String] = js.native
   
-  var `aria-atomic`: js.UndefOr[Boolean] = js.native
+  var `aria-atomic`: js.UndefOr[Booleanish] = js.native
   
   var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
   
-  var `aria-busy`: js.UndefOr[Boolean] = js.native
+  var `aria-busy`: js.UndefOr[Booleanish] = js.native
   
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
   
@@ -106,21 +107,21 @@ trait WidgetProps extends StObject {
   
   var `aria-details`: js.UndefOr[String] = js.native
   
-  var `aria-disabled`: js.UndefOr[Boolean] = js.native
+  var `aria-disabled`: js.UndefOr[Booleanish] = js.native
   
   var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
   
   var `aria-errormessage`: js.UndefOr[String] = js.native
   
-  var `aria-expanded`: js.UndefOr[Boolean] = js.native
+  var `aria-expanded`: js.UndefOr[Booleanish] = js.native
   
   var `aria-flowto`: js.UndefOr[String] = js.native
   
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  var `aria-grabbed`: js.UndefOr[Booleanish] = js.native
   
   var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
   
-  var `aria-hidden`: js.UndefOr[Boolean] = js.native
+  var `aria-hidden`: js.UndefOr[Booleanish] = js.native
   
   var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
   
@@ -134,11 +135,11 @@ trait WidgetProps extends StObject {
   
   var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
   
-  var `aria-modal`: js.UndefOr[Boolean] = js.native
+  var `aria-modal`: js.UndefOr[Booleanish] = js.native
   
-  var `aria-multiline`: js.UndefOr[Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[Booleanish] = js.native
   
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[Booleanish] = js.native
   
   var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
   
@@ -150,13 +151,13 @@ trait WidgetProps extends StObject {
   
   var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
   
-  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-readonly`: js.UndefOr[Booleanish] = js.native
   
   var `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
   ] = js.native
   
-  var `aria-required`: js.UndefOr[Boolean] = js.native
+  var `aria-required`: js.UndefOr[Booleanish] = js.native
   
   var `aria-roledescription`: js.UndefOr[String] = js.native
   
@@ -166,7 +167,7 @@ trait WidgetProps extends StObject {
   
   var `aria-rowspan`: js.UndefOr[Double] = js.native
   
-  var `aria-selected`: js.UndefOr[Boolean] = js.native
+  var `aria-selected`: js.UndefOr[Booleanish] = js.native
   
   var `aria-setsize`: js.UndefOr[Double] = js.native
   
@@ -212,13 +213,15 @@ trait WidgetProps extends StObject {
   
   var draggable: js.UndefOr[Booleanish] = js.native
   
-  var formContext: js.Any = js.native
+  /** The formContext object that you passed to Form. */
+  var formContext: Any = js.native
   
   var hidden: js.UndefOr[Boolean] = js.native
   
+  /** The generated id for this field */
   var id: String = js.native
   
-  var inlist: js.UndefOr[js.Any] = js.native
+  var inlist: js.UndefOr[Any] = js.native
   
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
   
@@ -250,6 +253,7 @@ trait WidgetProps extends StObject {
   
   var onBeforeInput: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
   
+  /** The input blur event handler; call it with the the widget id and value */
   def onBlur(id: String): Unit = js.native
   def onBlur(id: String, value: String): Unit = js.native
   def onBlur(id: String, value: Boolean): Unit = js.native
@@ -260,7 +264,8 @@ trait WidgetProps extends StObject {
   var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
   
   var onChange: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
-  def onChange(value: js.Any): Unit = js.native
+  /** The value change event handler; call it with the new value every time it changes */
+  def onChange(value: Any): Unit = js.native
   
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
   
@@ -304,6 +309,7 @@ trait WidgetProps extends StObject {
   
   var onError: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
   
+  /** The input blur event handler; call it with the the widget id and value */
   def onFocus(id: String): Unit = js.native
   def onFocus(id: String, value: String): Unit = js.native
   def onFocus(id: String, value: Boolean): Unit = js.native
@@ -413,6 +419,7 @@ trait WidgetProps extends StObject {
   
   var radioGroup: js.UndefOr[String] = js.native
   
+  /** An array of strings listing all generated error messages from encountered errors for this widget. */
   var rawErrors: js.Array[String] = js.native
   
   var readonly: Boolean = js.native
@@ -423,8 +430,9 @@ trait WidgetProps extends StObject {
   
   var results: js.UndefOr[Double] = js.native
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[AriaRole] = js.native
   
+  /** The JSONSchema subschema object for this field */
   var schema: JSONSchema6 = js.native
   
   var security: js.UndefOr[String] = js.native
@@ -449,7 +457,8 @@ trait WidgetProps extends StObject {
   
   var unselectable: js.UndefOr[on | off] = js.native
   
-  var value: js.Any = js.native
+  /** The current value for this field; */
+  var value: Any = js.native
   
   var vocab: js.UndefOr[String] = js.native
 }

@@ -25,6 +25,6 @@ object MultipleEpisodesResponse {
     
     inline def setEpisodes(value: js.Array[EpisodeObjectFull]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
     
-    inline def setEpisodesVarargs(value: EpisodeObjectFull*): Self = StObject.set(x, "episodes", js.Array(value :_*))
+    inline def setEpisodesVarargs(value: EpisodeObjectFull*): Self = StObject.set(x, "episodes", js.Array(value*))
   }
 }

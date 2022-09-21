@@ -11,9 +11,9 @@ A profiler designed for use in the game of Screeps.
 | Full name          | screeps-profiler |
 | Keywords           | screeps, profiler |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2062 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 271.6666666666667 |
+| # stars            | 172.0 |
 
 ## Links
 - [Homepage](https://github.com/screepers/screeps-profiler#readme)

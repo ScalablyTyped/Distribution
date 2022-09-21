@@ -11,11 +11,11 @@ trait Up extends StObject {
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var down: js.UndefOr[ReactNode] = js.undefined
+  var down: js.UndefOr[ReactNode | typings.grommetIcons.iconsMod.Icon] = js.undefined
   
   var margin: js.UndefOr[MarginType] = js.undefined
   
-  var up: js.UndefOr[ReactNode] = js.undefined
+  var up: js.UndefOr[ReactNode | typings.grommetIcons.iconsMod.Icon] = js.undefined
 }
 object Up {
   
@@ -30,7 +30,7 @@ object Up {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDown(value: ReactNode): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+    inline def setDown(value: ReactNode | typings.grommetIcons.iconsMod.Icon): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     
     inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
@@ -38,7 +38,7 @@ object Up {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setUp(value: ReactNode): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+    inline def setUp(value: ReactNode | typings.grommetIcons.iconsMod.Icon): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
     inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
   }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "SimpleArrowFunctionExpressionSyntax")
 @js.native
-class SimpleArrowFunctionExpressionSyntax protected ()
+open class SimpleArrowFunctionExpressionSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax {
   def this(
@@ -24,7 +24,7 @@ class SimpleArrowFunctionExpressionSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   var block: typings.typescriptServices.TypeScript.BlockSyntax = js.native

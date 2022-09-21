@@ -44,7 +44,7 @@ trait XmlDocument extends StObject {
     * @param qualifiedName The name of the new attribute object. This name is subsequently available as the new node's NodeName property.
     * @return The newly created attribute.
     */
-  def createAttributeNS(namespaceUri: js.Any, qualifiedName: String): XmlAttribute = js.native
+  def createAttributeNS(namespaceUri: Any, qualifiedName: String): XmlAttribute = js.native
   
   /**
     * Creates a CDATA section node that contains the supplied data.
@@ -79,7 +79,7 @@ trait XmlDocument extends StObject {
     * @param qualifiedName The name for the new element node. It is case-sensitive. This name is subsequently available as the element node's NodeName property.
     * @return The newly created object.
     */
-  def createElementNS(namespaceUri: js.Any, qualifiedName: String): XmlElement = js.native
+  def createElementNS(namespaceUri: Any, qualifiedName: String): XmlElement = js.native
   
   /**
     * Creates a new XmlEntityReference object.
@@ -191,10 +191,10 @@ trait XmlDocument extends StObject {
   def loadXmlFromBuffer(buffer: IBuffer, loadSettings: XmlLoadSettings): Unit = js.native
   
   /** Gets the local name, which is the local part of a qualified name. This is called the local part in Namespaces in XML. */
-  var localName: js.Any = js.native
+  var localName: Any = js.native
   
   /** Returns the Uniform Resource Identifier (URI) for the namespace. */
-  var namespaceUri: js.Any = js.native
+  var namespaceUri: Any = js.native
   
   /** Gets the next sibling of the node in the parent's child list. This property is not applicable to this class. */
   var nextSibling: IXmlNode = js.native
@@ -206,7 +206,7 @@ trait XmlDocument extends StObject {
   var nodeType: NodeType = js.native
   
   /** Gets or sets the text associated with the node. */
-  var nodeValue: js.Any = js.native
+  var nodeValue: Any = js.native
   
   /** Normalizes all descendant elements by combining two or more adjacent text nodes into one unified text node. */
   def normalize(): Unit = js.native
@@ -218,7 +218,7 @@ trait XmlDocument extends StObject {
   var parentNode: IXmlNode = js.native
   
   /** Gets or sets the namespace prefix. */
-  var prefix: js.Any = js.native
+  var prefix: Any = js.native
   
   /** Gets the previous sibling of the node in the parent's child list. This property is not applicable to this class. */
   var previousSibling: IXmlNode = js.native
@@ -258,7 +258,7 @@ trait XmlDocument extends StObject {
     * @param namespaces Contains a string that specifies namespaces for use in XPath expressions when it is necessary to define new namespaces externally. Namespaces are defined in the XML style, as a space-separated list of namespace declaration attributes. You can use this property to set the default namespace as well.
     * @return The collection of nodes selected by applying the given pattern-matching operation. If no nodes are selected, returns an empty collection.
     */
-  def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList = js.native
+  def selectNodesNS(xpath: String, namespaces: Any): XmlNodeList = js.native
   
   /**
     * Applies the specified pattern-matching operation to this node's context and returns the first matching node.
@@ -273,5 +273,5 @@ trait XmlDocument extends StObject {
     * @param namespaces Contains a string that specifies the namespaces to use in XPath expressions when it is necessary to define new namespaces externally. Namespaces are defined in the XML style, as a space-separated list of namespace declaration attributes. You can use this property to set the default namespace as well.
     * @return The first node that matches the given pattern-matching operation. If no nodes match the expression, this method returns a null value.
     */
-  def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+  def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode = js.native
 }

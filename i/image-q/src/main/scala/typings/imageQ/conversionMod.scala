@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object conversionMod {
   
-  @JSImport("image-q/dist/conversion", JSImport.Namespace)
+  @JSImport("image-q/dist/types/src/conversion", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

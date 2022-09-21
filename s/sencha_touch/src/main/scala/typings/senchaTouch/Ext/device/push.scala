@@ -23,7 +23,7 @@ object push {
     /** [Method] Registers a push notification
       * @param config Object The configuration for to pass when registering this push notification service.
       */
-    var register: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var register: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -42,7 +42,7 @@ object push {
       
       inline def setBADGEUndefined: Self = StObject.set(x, "BADGE", js.undefined)
       
-      inline def setRegister(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+      inline def setRegister(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
       
       inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
       

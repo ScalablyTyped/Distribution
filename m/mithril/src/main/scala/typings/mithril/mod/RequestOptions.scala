@@ -22,7 +22,7 @@ trait RequestOptions[T] extends StObject {
   var background: js.UndefOr[Boolean] = js.undefined
   
   /** The data to be serialized into the request body. */
-  var body: js.UndefOr[js.Any | (js.Object & StringDictionary[js.Any])] = js.undefined
+  var body: js.UndefOr[Any | (js.Object & StringDictionary[Any])] = js.undefined
   
   /** Exposes the underlying XMLHttpRequest object for low-level configuration. */
   var config: js.UndefOr[
@@ -42,7 +42,7 @@ trait RequestOptions[T] extends StObject {
   var method: js.UndefOr[String] = js.undefined
   
   /** The data to be interpolated into the URL and serialized into the querystring. */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var params: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /** A password for HTTP authorization. */
   var password: js.UndefOr[String] = js.undefined
@@ -51,13 +51,13 @@ trait RequestOptions[T] extends StObject {
   var responseType: js.UndefOr[_empty | arraybuffer | blob | document | json | text] = js.undefined
   
   /** A serialization method to be applied to data. Defaults to JSON.stringify, or if options.data is an instance of FormData, defaults to the identity function. */
-  var serialize: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+  var serialize: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
   
   /** Milliseconds a request can take before automatically being terminated. */
   var timeout: js.UndefOr[Double] = js.undefined
   
   /** A constructor to be applied to each object in the response. */
-  var `type`: js.UndefOr[Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
+  var `type`: js.UndefOr[Instantiable1[/* o */ Any, Any]] = js.undefined
   
   /**
     * Force the use of the HTTP body section for data in GET requests when set to true,
@@ -89,7 +89,7 @@ object RequestOptions {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBody(value: js.Any | (js.Object & StringDictionary[js.Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any | (js.Object & StringDictionary[Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -113,7 +113,7 @@ object RequestOptions {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
@@ -125,7 +125,7 @@ object RequestOptions {
     
     inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    inline def setSerialize(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+    inline def setSerialize(value: /* data */ Any => Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     
     inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     
@@ -133,7 +133,7 @@ object RequestOptions {
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    inline def setType(value: Instantiable1[/* o */ js.Any, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Instantiable1[/* o */ Any, Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

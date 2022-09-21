@@ -17,5 +17,5 @@ trait OpacityVariableConstructor
 Instantiable0[OpacityVariable]
      with Instantiable1[/* properties */ OpacityVariableProperties, OpacityVariable] {
   
-  def fromJSON(json: js.Any): OpacityVariable = js.native
+  def fromJSON(json: Any): OpacityVariable = js.native
 }

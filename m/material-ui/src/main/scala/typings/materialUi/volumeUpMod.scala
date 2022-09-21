@@ -10,10 +10,10 @@ object volumeUpMod {
   
   @JSImport("material-ui/svg-icons/av/volume-up", JSImport.Default)
   @js.native
-  class default () extends AvVolumeUp
+  open class default () extends AvVolumeUp
   
   @JSImport("material-ui/svg-icons/av/volume-up", "AvVolumeUp")
   @js.native
-  class AvVolumeUp ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvVolumeUp ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

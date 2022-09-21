@@ -38,7 +38,7 @@ trait OlkLabel extends StObject {
   
   var UseHeaderColor: Boolean
   
-  var Value: js.Any
+  var Value: Any
   
   var WordWrap: Boolean
 }
@@ -59,7 +59,7 @@ object OlkLabel {
     OutlookDotOlkLabel_typekey: OlkLabel,
     TextAlign: OlTextAlign,
     UseHeaderColor: Boolean,
-    Value: js.Any,
+    Value: Any,
     WordWrap: Boolean
   ): OlkLabel = {
     val __obj = js.Dynamic.literal(Accelerator = Accelerator.asInstanceOf[js.Any], AutoSize = AutoSize.asInstanceOf[js.Any], BackColor = BackColor.asInstanceOf[js.Any], BackStyle = BackStyle.asInstanceOf[js.Any], BorderStyle = BorderStyle.asInstanceOf[js.Any], Caption = Caption.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], ForeColor = ForeColor.asInstanceOf[js.Any], MouseIcon = MouseIcon.asInstanceOf[js.Any], MousePointer = MousePointer.asInstanceOf[js.Any], TextAlign = TextAlign.asInstanceOf[js.Any], UseHeaderColor = UseHeaderColor.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], WordWrap = WordWrap.asInstanceOf[js.Any])
@@ -97,7 +97,7 @@ object OlkLabel {
     
     inline def setUseHeaderColor(value: Boolean): Self = StObject.set(x, "UseHeaderColor", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     inline def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }

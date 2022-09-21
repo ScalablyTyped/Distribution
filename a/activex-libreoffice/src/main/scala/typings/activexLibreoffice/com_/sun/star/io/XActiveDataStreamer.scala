@@ -34,7 +34,7 @@ object XActiveDataStreamer {
     Stream: XStream,
     acquire: () => Unit,
     getStream: () => XStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setStream: XStream => Unit
   ): XActiveDataStreamer = {

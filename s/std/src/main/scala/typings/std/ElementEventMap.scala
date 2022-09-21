@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ElementEventMap extends StObject {
   
+  /* standard dom */
   var fullscreenchange: Event
   
+  /* standard dom */
   var fullscreenerror: Event
 }
 object ElementEventMap {

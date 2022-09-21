@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PortalUserConstructor
   extends StObject
-     with Instantiable0[PortalUser]
+     with /**
+  * Represents a registered user of the [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html)
+  */
+Instantiable0[PortalUser]
      with Instantiable1[/* properties */ PortalUserProperties, PortalUser]

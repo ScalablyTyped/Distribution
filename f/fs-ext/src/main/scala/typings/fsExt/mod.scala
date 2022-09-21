@@ -10,7 +10,6 @@ import typings.fsExt.fsExtStrings.setlkw
 import typings.fsExt.fsExtStrings.sh
 import typings.fsExt.fsExtStrings.shnb
 import typings.fsExt.fsExtStrings.un
-import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -143,131 +142,98 @@ object mod {
   
   inline def fcntl(
     fd: Double,
+    cmd: getfd | setfd | setlk | setlkw | getlk,
+    arg: Double,
+    callback: js.Function2[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* result */ Double, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fcntl(
+    fd: Double,
+    cmd: getfd | setfd | setlk | setlkw | getlk,
+    callback: js.Function2[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* result */ Double, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fcntl(
+    fd: Double,
     cmd: Double,
     arg: Double,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
+    callback: js.Function2[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* result */ Double, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def fcntl(
     fd: Double,
     cmd: Double,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
+    callback: js.Function2[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* result */ Double, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def fcntlSync(fd: Double, cmd: getfd | setfd | setlk | setlkw | getlk): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fcntlSync(fd: Double, cmd: getfd | setfd | setlk | setlkw | getlk, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def fcntlSync(fd: Double, cmd: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def fcntlSync(fd: Double, cmd: Double, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def fcntlSync_getfd(fd: Double, cmd: getfd): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def fcntlSync_getfd(fd: Double, cmd: getfd, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def fcntlSync_getlk(fd: Double, cmd: getlk): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def fcntlSync_getlk(fd: Double, cmd: getlk, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def fcntlSync_setfd(fd: Double, cmd: setfd): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def fcntlSync_setfd(fd: Double, cmd: setfd, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def fcntlSync_setlk(fd: Double, cmd: setlk): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def fcntlSync_setlk(fd: Double, cmd: setlk, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def fcntlSync_setlkw(fd: Double, cmd: setlkw): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def fcntlSync_setlkw(fd: Double, cmd: setlkw, arg: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntlSync")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def fcntl_getfd(
+  inline def flock(
     fd: Double,
-    cmd: getfd,
-    arg: Double,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fcntl_getfd(
+    flags: sh | ex | shnb | exnb | un,
+    callback: js.Function1[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flock(
     fd: Double,
-    cmd: getfd,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    flags: Double,
+    callback: js.Function1[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def fcntl_getlk(
-    fd: Double,
-    cmd: getlk,
-    arg: Double,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fcntl_getlk(
-    fd: Double,
-    cmd: getlk,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def fcntl_setfd(
-    fd: Double,
-    cmd: setfd,
-    arg: Double,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fcntl_setfd(
-    fd: Double,
-    cmd: setfd,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def fcntl_setlk(
-    fd: Double,
-    cmd: setlk,
-    arg: Double,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fcntl_setlk(
-    fd: Double,
-    cmd: setlk,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def fcntl_setlkw(
-    fd: Double,
-    cmd: setlkw,
-    arg: Double,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fcntl_setlkw(
-    fd: Double,
-    cmd: setlkw,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fcntl")(fd.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flock(fd: Double, flags: Double, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
+  inline def flockSync(fd: Double, flags: sh | ex | shnb | exnb | un): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def flockSync(fd: Double, flags: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flockSync_ex(fd: Double, flags: ex): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flockSync_exnb(fd: Double, flags: exnb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flockSync_sh(fd: Double, flags: sh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flockSync_shnb(fd: Double, flags: shnb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flockSync_un(fd: Double, flags: un): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flockSync")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flock_ex(fd: Double, flags: ex, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flock_exnb(fd: Double, flags: exnb, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flock_sh(fd: Double, flags: sh, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flock_shnb(fd: Double, flags: shnb, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def flock_un(fd: Double, flags: un, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flock")(fd.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def seek(
     fd: Double,
     offset: Double,
     whence: Double,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* currFilePos */ Double, Unit]
+    callback: js.Function2[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* currFilePos */ Double, 
+      Unit
+    ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seek")(fd.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], whence.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def seekSync(fd: Double, offset: Double, whence: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("seekSync")(fd.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], whence.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def statVFS(): StatFVS = ^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")().asInstanceOf[StatFVS]
-  inline def statVFS(callback: js.Function2[/* err */ ErrnoException | Null, /* stat */ StatFVS, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def statVFS(
+    callback: js.Function2[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* stat */ StatFVS, 
+      Unit
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def statVFS(path: String): StatFVS = ^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(path.asInstanceOf[js.Any]).asInstanceOf[StatFVS]
-  inline def statVFS(path: String, callback: js.Function2[/* err */ ErrnoException | Null, /* stat */ StatFVS, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def statVFS(
+    path: String,
+    callback: js.Function2[
+      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* stat */ StatFVS, 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statVFS")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait StatFVS extends StObject {
     

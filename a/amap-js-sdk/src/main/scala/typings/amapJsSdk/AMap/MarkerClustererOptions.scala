@@ -14,9 +14,9 @@ trait MarkerClustererOptions extends StObject {
   
   var minClusterSize: js.UndefOr[Double] = js.undefined
   
-  var renderCluserMarker: js.UndefOr[js.Function1[/* obj */ js.Any, Unit]] = js.undefined
+  var renderCluserMarker: js.UndefOr[js.Function1[/* obj */ Any, Unit]] = js.undefined
   
-  var styles: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var styles: js.UndefOr[js.Array[Any]] = js.undefined
   
   var zoomOnClick: js.UndefOr[Boolean] = js.undefined
 }
@@ -45,15 +45,15 @@ object MarkerClustererOptions {
     
     inline def setMinClusterSizeUndefined: Self = StObject.set(x, "minClusterSize", js.undefined)
     
-    inline def setRenderCluserMarker(value: /* obj */ js.Any => Unit): Self = StObject.set(x, "renderCluserMarker", js.Any.fromFunction1(value))
+    inline def setRenderCluserMarker(value: /* obj */ Any => Unit): Self = StObject.set(x, "renderCluserMarker", js.Any.fromFunction1(value))
     
     inline def setRenderCluserMarkerUndefined: Self = StObject.set(x, "renderCluserMarker", js.undefined)
     
-    inline def setStyles(value: js.Array[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: js.Any*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: Any*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setZoomOnClick(value: Boolean): Self = StObject.set(x, "zoomOnClick", value.asInstanceOf[js.Any])
     

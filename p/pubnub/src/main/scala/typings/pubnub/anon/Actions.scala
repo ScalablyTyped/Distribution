@@ -11,18 +11,22 @@ trait Actions extends StObject {
   
   var channel: String
   
-  var message: js.Any
+  var message: Any
   
-  var meta: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var messageType: js.UndefOr[String | Double] = js.undefined
+  
+  var meta: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var timetoken: String | Double
+  
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object Actions {
   
   inline def apply(
     actions: StringDictionary[StringDictionary[js.Array[ActionTimetoken]]],
     channel: String,
-    message: js.Any,
+    message: Any,
     timetoken: String | Double
   ): Actions = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
@@ -35,12 +39,20 @@ object Actions {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setMeta(value: StringDictionary[js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: String | Double): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    
+    inline def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
+    
+    inline def setMeta(value: StringDictionary[Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     inline def setTimetoken(value: String | Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RichEditLayout")
 @js.native
-class RichEditLayout ()
+open class RichEditLayout ()
   extends StObject
      with typings.devexpressWeb.RichEditLayout

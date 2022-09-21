@@ -12,7 +12,7 @@ object jsend {
     
     var code: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var message: js.UndefOr[String] = js.undefined
     
@@ -31,7 +31,7 @@ object jsend {
       
       inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -48,7 +48,7 @@ object jsend {
     extends StObject
        with jsendCore {
     
-    def forward(json: js.Object, done: js.Function2[/* err */ js.Any, /* data */ js.Any, js.Any]): Unit = js.native
+    def forward(json: js.Object, done: js.Function2[/* err */ Any, /* data */ Any, Any]): Unit = js.native
     
     def fromArguments(err: String): JSendObject = js.native
     def fromArguments(err: String, json: js.Object): JSendObject = js.native
@@ -57,7 +57,7 @@ object jsend {
     
     def isValid(json: js.Object): Boolean = js.native
     
-    def middleware(req: js.Any, res: js.Any, next: js.Function): js.Any = js.native
+    def middleware(req: Any, res: Any, next: js.Function): Any = js.native
   }
   
   @js.native

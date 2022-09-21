@@ -8,5 +8,5 @@ object getCommentsForPullRequestOutputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetCommentsForPullRequestOutput", "GetCommentsForPullRequestOutput")
   @js.native
-  val GetCommentsForPullRequestOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetCommentsForPullRequestOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

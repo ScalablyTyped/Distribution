@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("poi", JSImport.Namespace)
 @js.native
-class ^ ()
+open class ^ ()
   extends StObject
      with PoiCore {
   def this(argv: js.Array[String]) = this()

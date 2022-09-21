@@ -12,7 +12,7 @@ object osmMod {
   
   @JSImport("ol/source/OSM", JSImport.Default)
   @js.native
-  class default () extends OSM {
+  open class default () extends OSM {
     def this(opt_options: Options) = this()
   }
   
@@ -30,7 +30,7 @@ object osmMod {
     
     var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
@@ -41,6 +41,8 @@ object osmMod {
     var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
     
     var tileLoadFunction: js.UndefOr[LoadFunction] = js.undefined
+    
+    var transition: js.UndefOr[Double] = js.undefined
     
     var url: js.UndefOr[String] = js.undefined
     
@@ -61,13 +63,15 @@ object osmMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
       inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -90,6 +94,10 @@ object osmMod {
       inline def setTileLoadFunction(value: (/* p0 */ Tile, /* p1 */ String) => Unit): Self = StObject.set(x, "tileLoadFunction", js.Any.fromFunction2(value))
       
       inline def setTileLoadFunctionUndefined: Self = StObject.set(x, "tileLoadFunction", js.undefined)
+      
+      inline def setTransition(value: Double): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,7 @@ trait ExecutionStageSummary extends StObject {
   /** Input sources for this stage. */
   var inputSource: js.UndefOr[js.Array[StageSource]] = js.undefined
   
-  /** Type of tranform this stage is executing. */
+  /** Type of transform this stage is executing. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Dataflow service generated name for this stage. */
@@ -43,13 +43,13 @@ object ExecutionStageSummary {
     
     inline def setComponentSourceUndefined: Self = StObject.set(x, "componentSource", js.undefined)
     
-    inline def setComponentSourceVarargs(value: ComponentSource*): Self = StObject.set(x, "componentSource", js.Array(value :_*))
+    inline def setComponentSourceVarargs(value: ComponentSource*): Self = StObject.set(x, "componentSource", js.Array(value*))
     
     inline def setComponentTransform(value: js.Array[ComponentTransform]): Self = StObject.set(x, "componentTransform", value.asInstanceOf[js.Any])
     
     inline def setComponentTransformUndefined: Self = StObject.set(x, "componentTransform", js.undefined)
     
-    inline def setComponentTransformVarargs(value: ComponentTransform*): Self = StObject.set(x, "componentTransform", js.Array(value :_*))
+    inline def setComponentTransformVarargs(value: ComponentTransform*): Self = StObject.set(x, "componentTransform", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object ExecutionStageSummary {
     
     inline def setInputSourceUndefined: Self = StObject.set(x, "inputSource", js.undefined)
     
-    inline def setInputSourceVarargs(value: StageSource*): Self = StObject.set(x, "inputSource", js.Array(value :_*))
+    inline def setInputSourceVarargs(value: StageSource*): Self = StObject.set(x, "inputSource", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -73,12 +73,12 @@ object ExecutionStageSummary {
     
     inline def setOutputSourceUndefined: Self = StObject.set(x, "outputSource", js.undefined)
     
-    inline def setOutputSourceVarargs(value: StageSource*): Self = StObject.set(x, "outputSource", js.Array(value :_*))
+    inline def setOutputSourceVarargs(value: StageSource*): Self = StObject.set(x, "outputSource", js.Array(value*))
     
     inline def setPrerequisiteStage(value: js.Array[String]): Self = StObject.set(x, "prerequisiteStage", value.asInstanceOf[js.Any])
     
     inline def setPrerequisiteStageUndefined: Self = StObject.set(x, "prerequisiteStage", js.undefined)
     
-    inline def setPrerequisiteStageVarargs(value: String*): Self = StObject.set(x, "prerequisiteStage", js.Array(value :_*))
+    inline def setPrerequisiteStageVarargs(value: String*): Self = StObject.set(x, "prerequisiteStage", js.Array(value*))
   }
 }

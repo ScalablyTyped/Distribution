@@ -17,7 +17,7 @@ object FailureHandlingKind {
   /**
     * If the workspace edit contains only textual file changes they are executed transactional.
     * If resource changes (create, rename or delete file) are part of the change the failure
-    * handling startegy is abort.
+    * handling strategy is abort.
     */
   @JSImport("vscode-languageclient", "FailureHandlingKind.TextOnlyTransactional")
   @js.native

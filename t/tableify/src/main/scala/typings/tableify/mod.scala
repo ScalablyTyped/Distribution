@@ -9,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: T): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: T, columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: T, columns: js.Array[/* keyof T */ String], parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: T, columns: Unit, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: T, columns: `false`): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: T, columns: `false`, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String], parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: Unit, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: `false`): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply[T /* <: Record[String, js.Any] */](obj: js.Array[T], columns: `false`, parents: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(obj: Any): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: T, columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: T, columns: js.Array[/* keyof T */ String], parents: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: T, columns: Unit, parents: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: T, columns: `false`): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: T, columns: `false`, parents: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: js.Array[T], columns: js.Array[/* keyof T */ String], parents: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: js.Array[T], columns: Unit, parents: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: js.Array[T], columns: `false`): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[T /* <: Record[String, Any] */](obj: js.Array[T], columns: `false`, parents: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("tableify", JSImport.Namespace)
   @js.native

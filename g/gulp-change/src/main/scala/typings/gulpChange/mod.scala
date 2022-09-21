@@ -13,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function2[/* err */ js.Any, /* content */ String, js.Any]
+  type Callback = js.Function2[/* err */ Any, /* content */ String, Any]
   
   type ChangeFunction = js.Function2[/* content */ String, /* callback */ Callback, String | Unit]
 }

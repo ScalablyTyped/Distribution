@@ -31,7 +31,7 @@ object NotaryJournalMetaData {
     
     inline def setCredibleWitnessesUndefined: Self = StObject.set(x, "credibleWitnesses", js.undefined)
     
-    inline def setCredibleWitnessesVarargs(value: NotaryJournalCredibleWitness*): Self = StObject.set(x, "credibleWitnesses", js.Array(value :_*))
+    inline def setCredibleWitnessesVarargs(value: NotaryJournalCredibleWitness*): Self = StObject.set(x, "credibleWitnesses", js.Array(value*))
     
     inline def setSignatureImage(value: String): Self = StObject.set(x, "signatureImage", value.asInstanceOf[js.Any])
     

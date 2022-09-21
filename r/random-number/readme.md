@@ -11,9 +11,9 @@ Generate pseudo-randum numbers
 | Full name          | random-number |
 | Keywords           | random-number, random, random-integer |
 | # releases         | 0 |
-| # dependents       | 41 |
-| # downloads        | 424858 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 53188.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/ashnur/random-number#readme)

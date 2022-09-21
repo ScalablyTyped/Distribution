@@ -18,7 +18,7 @@ trait IndicesSegmentsParams
   
   var index: NameList
   
-  var operationThreading: js.UndefOr[js.Any] = js.undefined
+  var operationThreading: js.UndefOr[Any] = js.undefined
   
   // even the docs don't know what this does
   var verbose: js.UndefOr[Boolean] = js.undefined
@@ -50,9 +50,9 @@ object IndicesSegmentsParams {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
-    inline def setOperationThreading(value: js.Any): Self = StObject.set(x, "operationThreading", value.asInstanceOf[js.Any])
+    inline def setOperationThreading(value: Any): Self = StObject.set(x, "operationThreading", value.asInstanceOf[js.Any])
     
     inline def setOperationThreadingUndefined: Self = StObject.set(x, "operationThreading", js.undefined)
     

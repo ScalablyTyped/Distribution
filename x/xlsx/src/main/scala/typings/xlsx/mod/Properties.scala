@@ -1,6 +1,5 @@
 package typings.xlsx.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait Properties extends StObject {
   var Company: js.UndefOr[String] = js.undefined
   
   /** Statistics tab "Created" */
-  var CreatedDate: js.UndefOr[Date] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /** Summary tab "Keywords" */
   var Keywords: js.UndefOr[String] = js.undefined
@@ -62,7 +61,7 @@ object Properties {
     
     inline def setCompanyUndefined: Self = StObject.set(x, "Company", js.undefined)
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     

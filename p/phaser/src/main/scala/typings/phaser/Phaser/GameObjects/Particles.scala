@@ -32,7 +32,6 @@ import typings.phaser.Phaser.Types.GameObjects.Particles.ParticleEmitterEdgeZone
 import typings.phaser.Phaser.Types.GameObjects.Particles.ParticleEmitterFrameConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.ParticleEmitterRandomZoneConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.RandomZoneSource
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -358,7 +357,7 @@ object Particles {
       * @param step The delta value divided by 1000.
       * @param processors Particle processors (gravity wells).
       */
-    def computeVelocity(emitter: ParticleEmitter, delta: Double, step: Double, processors: js.Array[js.Any]): Unit
+    def computeVelocity(emitter: ParticleEmitter, delta: Double, step: Double, processors: js.Array[Any]): Unit
     
     /**
       * The data used by the ease equation.
@@ -442,7 +441,7 @@ object Particles {
     /**
       * The tint applied to this Particle.
       */
-    var tint: integer
+    var tint: Double
     
     /**
       * The main update method for this Particle.
@@ -452,7 +451,7 @@ object Particles {
       * @param step The delta value divided by 1000.
       * @param processors An optional array of update processors.
       */
-    def update(delta: Double, step: Double, processors: js.Array[js.Any]): Boolean
+    def update(delta: Double, step: Double, processors: js.Array[Any]): Boolean
     
     /**
       * The x velocity of this Particle.
@@ -483,7 +482,7 @@ object Particles {
       angle: Double,
       bounce: Double,
       checkBounds: ParticleEmitter => Unit,
-      computeVelocity: (ParticleEmitter, Double, Double, js.Array[js.Any]) => Unit,
+      computeVelocity: (ParticleEmitter, Double, Double, js.Array[Any]) => Unit,
       data: js.Object,
       delayCurrent: Double,
       emitter: ParticleEmitter,
@@ -499,8 +498,8 @@ object Particles {
       rotation: Double,
       scaleX: Double,
       scaleY: Double,
-      tint: integer,
-      update: (Double, Double, js.Array[js.Any]) => Boolean,
+      tint: Double,
+      update: (Double, Double, js.Array[Any]) => Boolean,
       velocityX: Double,
       velocityY: Double,
       x: Double,
@@ -524,7 +523,7 @@ object Particles {
       
       inline def setCheckBounds(value: ParticleEmitter => Unit): Self = StObject.set(x, "checkBounds", js.Any.fromFunction1(value))
       
-      inline def setComputeVelocity(value: (ParticleEmitter, Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "computeVelocity", js.Any.fromFunction4(value))
+      inline def setComputeVelocity(value: (ParticleEmitter, Double, Double, js.Array[Any]) => Unit): Self = StObject.set(x, "computeVelocity", js.Any.fromFunction4(value))
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -556,9 +555,9 @@ object Particles {
       
       inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
       
-      inline def setTint(value: integer): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+      inline def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
       
-      inline def setUpdate(value: (Double, Double, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+      inline def setUpdate(value: (Double, Double, js.Array[Any]) => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
       inline def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
       
@@ -624,7 +623,7 @@ object Particles {
       * The blend mode of this emitter's particles.
       */
     @JSName("blendMode")
-    var blendMode_ParticleEmitter: integer = js.native
+    var blendMode_ParticleEmitter: Double = js.native
     
     /**
       * Whether particles will rebound when they meet the emitter bounds.
@@ -669,7 +668,7 @@ object Particles {
     /**
       * The current texture frame, as an index of {@link Phaser.GameObjects.Particles.ParticleEmitter#frames}.
       */
-    var currentFrame: integer = js.native
+    var currentFrame: Double = js.native
     
     /**
       * A function to call when a particle dies.
@@ -679,7 +678,7 @@ object Particles {
     /**
       * The calling context for {@link Phaser.GameObjects.Particles.ParticleEmitter#deathCallback}.
       */
-    var deathCallbackScope: js.Any = js.native
+    var deathCallbackScope: Any = js.native
     
     /**
       * A function to call when a particle dies.
@@ -712,7 +711,7 @@ object Particles {
       * @param a The first particle.
       * @param b The second particle.
       */
-    def depthSortCallback(a: js.Object, b: js.Object): integer = js.native
+    def depthSortCallback(a: js.Object, b: js.Object): Double = js.native
     
     /**
       * A function to call when a particle is emitted.
@@ -722,7 +721,7 @@ object Particles {
     /**
       * The calling context for {@link Phaser.GameObjects.Particles.ParticleEmitter#emitCallback}.
       */
-    var emitCallbackScope: js.Any = js.native
+    var emitCallbackScope: Any = js.native
     
     /**
       * A function to call when a particle is emitted.
@@ -737,13 +736,13 @@ object Particles {
       * @param y The y coordinate to emit the Particles from. Default this.x.
       */
     def emitParticle(): Particle = js.native
+    def emitParticle(count: Double): Particle = js.native
+    def emitParticle(count: Double, x: Double): Particle = js.native
+    def emitParticle(count: Double, x: Double, y: Double): Particle = js.native
+    def emitParticle(count: Double, x: Unit, y: Double): Particle = js.native
     def emitParticle(count: Unit, x: Double): Particle = js.native
     def emitParticle(count: Unit, x: Double, y: Double): Particle = js.native
     def emitParticle(count: Unit, x: Unit, y: Double): Particle = js.native
-    def emitParticle(count: integer): Particle = js.native
-    def emitParticle(count: integer, x: Double): Particle = js.native
-    def emitParticle(count: integer, x: Double, y: Double): Particle = js.native
-    def emitParticle(count: integer, x: Unit, y: Double): Particle = js.native
     
     /**
       * Emits particles at a given position (or the emitter's current position).
@@ -754,11 +753,11 @@ object Particles {
     def emitParticleAt(): Particle = js.native
     def emitParticleAt(x: Double): Particle = js.native
     def emitParticleAt(x: Double, y: Double): Particle = js.native
-    def emitParticleAt(x: Double, y: Double, count: integer): Particle = js.native
-    def emitParticleAt(x: Double, y: Unit, count: integer): Particle = js.native
+    def emitParticleAt(x: Double, y: Double, count: Double): Particle = js.native
+    def emitParticleAt(x: Double, y: Unit, count: Double): Particle = js.native
     def emitParticleAt(x: Unit, y: Double): Particle = js.native
-    def emitParticleAt(x: Unit, y: Double, count: integer): Particle = js.native
-    def emitParticleAt(x: Unit, y: Unit, count: integer): Particle = js.native
+    def emitParticleAt(x: Unit, y: Double, count: Double): Particle = js.native
+    def emitParticleAt(x: Unit, y: Unit, count: Double): Particle = js.native
     
     /**
       * An object describing a shape to emit particles from.
@@ -771,7 +770,7 @@ object Particles {
       * @param x The x coordinate to emit the Particles from.
       * @param y The y coordinate to emit the Particles from.
       */
-    def explode(count: integer, x: Double, y: Double): Particle = js.native
+    def explode(count: Double, x: Double, y: Double): Particle = js.native
     
     /**
       * Puts the emitter in flow mode (frequency >= 0) and starts (or restarts) a particle flow.
@@ -798,19 +797,19 @@ object Particles {
       * @param callback The function.
       * @param context The function's calling context.
       */
-    def forEachAlive(callback: ParticleEmitterCallback, context: js.Any): this.type = js.native
+    def forEachAlive(callback: ParticleEmitterCallback, context: Any): this.type = js.native
     
     /**
       * Calls a function for each inactive particle in this emitter.
       * @param callback The function.
       * @param context The function's calling context.
       */
-    def forEachDead(callback: ParticleEmitterCallback, context: js.Any): this.type = js.native
+    def forEachDead(callback: ParticleEmitterCallback, context: Any): this.type = js.native
     
     /**
       * The number of consecutive particles that receive a single texture frame (per frame cycle).
       */
-    var frameQuantity: integer = js.native
+    var frameQuantity: Double = js.native
     
     /**
       * The texture frames assigned to particles.
@@ -835,12 +834,12 @@ object Particles {
     /**
       * Gets the number of active (in-use) particles in this emitter.
       */
-    def getAliveParticleCount(): integer = js.native
+    def getAliveParticleCount(): Double = js.native
     
     /**
       * Gets the number of inactive (available) particles in this emitter.
       */
-    def getDeadParticleCount(): integer = js.native
+    def getDeadParticleCount(): Double = js.native
     
     /**
       * Chooses a texture frame from {@link Phaser.GameObjects.Particles.ParticleEmitter#frames}.
@@ -850,7 +849,7 @@ object Particles {
     /**
       * Gets the total number of particles in this emitter.
       */
-    def getParticleCount(): integer = js.native
+    def getParticleCount(): Double = js.native
     
     /**
       * Horizontal acceleration applied to emitted particles, in pixels per second squared.
@@ -881,7 +880,7 @@ object Particles {
       * Set to hard limit the amount of particle objects this emitter is allowed to create.
       * 0 means unlimited.
       */
-    var maxParticles: integer = js.native
+    var maxParticles: Double = js.native
     
     /**
       * The maximum horizontal velocity of emitted particles, in pixels per second squared.
@@ -928,7 +927,7 @@ object Particles {
       * @param context The function's calling context.
       */
     def onParticleDeath(callback: ParticleDeathCallback): this.type = js.native
-    def onParticleDeath(callback: ParticleDeathCallback, context: js.Any): this.type = js.native
+    def onParticleDeath(callback: ParticleDeathCallback, context: Any): this.type = js.native
     
     /**
       * Sets a function to call for each newly emitted particle.
@@ -936,7 +935,7 @@ object Particles {
       * @param context The calling context.
       */
     def onParticleEmit(callback: ParticleEmitterCallback): this.type = js.native
-    def onParticleEmit(callback: ParticleEmitterCallback, context: js.Any): this.type = js.native
+    def onParticleEmit(callback: ParticleEmitterCallback, context: Any): this.type = js.native
     
     /**
       * Newly emitted particles are added to the top of the particle list, i.e. rendered above those already alive.
@@ -959,7 +958,7 @@ object Particles {
       * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
       * @param delta The delta time, in ms, elapsed since the last frame.
       */
-    def preUpdate(time: integer, delta: Double): Unit = js.native
+    def preUpdate(time: Double, delta: Double): Unit = js.native
     
     /**
       * How many particles are emitted each time particles are emitted (one explosion or one flow cycle).
@@ -987,7 +986,7 @@ object Particles {
       * Creates inactive particles and adds them to this emitter's pool.
       * @param particleCount The number of particles to create.
       */
-    def reserve(particleCount: integer): this.type = js.native
+    def reserve(particleCount: Double): this.type = js.native
     
     /**
       * {@link Phaser.GameObjects.Particles.ParticleEmitter#active Activates} the emitter.
@@ -1062,26 +1061,26 @@ object Particles {
     
     def setFrame(frames: String): this.type = js.native
     def setFrame(frames: String, pickRandom: Boolean): this.type = js.native
-    def setFrame(frames: String, pickRandom: Boolean, quantity: integer): this.type = js.native
-    def setFrame(frames: String, pickRandom: Unit, quantity: integer): this.type = js.native
+    def setFrame(frames: String, pickRandom: Boolean, quantity: Double): this.type = js.native
+    def setFrame(frames: String, pickRandom: Unit, quantity: Double): this.type = js.native
     /**
       * Sets a pattern for assigning texture frames to emitted particles.
       * @param frames One or more texture frames, or a configuration object.
       * @param pickRandom Whether frames should be assigned at random from `frames`. Default true.
       * @param quantity The number of consecutive particles that will receive each frame. Default 1.
       */
-    def setFrame(frames: js.Array[js.Any]): this.type = js.native
-    def setFrame(frames: js.Array[js.Any], pickRandom: Boolean): this.type = js.native
-    def setFrame(frames: js.Array[js.Any], pickRandom: Boolean, quantity: integer): this.type = js.native
-    def setFrame(frames: js.Array[js.Any], pickRandom: Unit, quantity: integer): this.type = js.native
+    def setFrame(frames: js.Array[Any]): this.type = js.native
+    def setFrame(frames: js.Array[Any], pickRandom: Boolean): this.type = js.native
+    def setFrame(frames: js.Array[Any], pickRandom: Boolean, quantity: Double): this.type = js.native
+    def setFrame(frames: js.Array[Any], pickRandom: Unit, quantity: Double): this.type = js.native
+    def setFrame(frames: Double): this.type = js.native
+    def setFrame(frames: Double, pickRandom: Boolean): this.type = js.native
+    def setFrame(frames: Double, pickRandom: Boolean, quantity: Double): this.type = js.native
+    def setFrame(frames: Double, pickRandom: Unit, quantity: Double): this.type = js.native
     def setFrame(frames: ParticleEmitterFrameConfig): this.type = js.native
     def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: Boolean): this.type = js.native
-    def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: Boolean, quantity: integer): this.type = js.native
-    def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: Unit, quantity: integer): this.type = js.native
-    def setFrame(frames: integer): this.type = js.native
-    def setFrame(frames: integer, pickRandom: Boolean): this.type = js.native
-    def setFrame(frames: integer, pickRandom: Boolean, quantity: integer): this.type = js.native
-    def setFrame(frames: integer, pickRandom: Unit, quantity: integer): this.type = js.native
+    def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: Boolean, quantity: Double): this.type = js.native
+    def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: Unit, quantity: Double): this.type = js.native
     
     /**
       * Sets the emitter's {@link Phaser.GameObjects.Particles.ParticleEmitter#frequency}
@@ -1244,7 +1243,7 @@ object Particles {
     var timeScale: Double = js.native
     
     /**
-      * Color tint applied to emitted particles. Any alpha component (0xAA000000) is ignored.
+      * Color tint applied to emitted particles. Value must not include the alpha channel.
       */
     var tint: EmitterOp = js.native
     
@@ -1316,13 +1315,13 @@ object Particles {
       * @param y The y-coordinate to to emit particles from. The default is the y-coordinate of the emitter's current location.
       */
     def emitParticle(): this.type = js.native
+    def emitParticle(count: Double): this.type = js.native
+    def emitParticle(count: Double, x: Double): this.type = js.native
+    def emitParticle(count: Double, x: Double, y: Double): this.type = js.native
+    def emitParticle(count: Double, x: Unit, y: Double): this.type = js.native
     def emitParticle(count: Unit, x: Double): this.type = js.native
     def emitParticle(count: Unit, x: Double, y: Double): this.type = js.native
     def emitParticle(count: Unit, x: Unit, y: Double): this.type = js.native
-    def emitParticle(count: integer): this.type = js.native
-    def emitParticle(count: integer, x: Double): this.type = js.native
-    def emitParticle(count: integer, x: Double, y: Double): this.type = js.native
-    def emitParticle(count: integer, x: Unit, y: Double): this.type = js.native
     
     /**
       * Emits particles from each active emitter.
@@ -1333,11 +1332,11 @@ object Particles {
     def emitParticleAt(): this.type = js.native
     def emitParticleAt(x: Double): this.type = js.native
     def emitParticleAt(x: Double, y: Double): this.type = js.native
-    def emitParticleAt(x: Double, y: Double, count: integer): this.type = js.native
-    def emitParticleAt(x: Double, y: Unit, count: integer): this.type = js.native
+    def emitParticleAt(x: Double, y: Double, count: Double): this.type = js.native
+    def emitParticleAt(x: Double, y: Unit, count: Double): this.type = js.native
     def emitParticleAt(x: Unit, y: Double): this.type = js.native
-    def emitParticleAt(x: Unit, y: Double, count: integer): this.type = js.native
-    def emitParticleAt(x: Unit, y: Unit, count: integer): this.type = js.native
+    def emitParticleAt(x: Unit, y: Double, count: Double): this.type = js.native
+    def emitParticleAt(x: Unit, y: Unit, count: Double): this.type = js.native
     
     /**
       * A list of Emitters being managed by this Emitter Manager.
@@ -1373,7 +1372,7 @@ object Particles {
       * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
       * @param delta The delta time, in ms, elapsed since the last frame.
       */
-    def preUpdate(time: integer, delta: Double): Unit = js.native
+    def preUpdate(time: Double, delta: Double): Unit = js.native
     
     /**
       * Removes a Particle Emitter from this Emitter Manager, if the Emitter belongs to this Manager.
@@ -1403,7 +1402,7 @@ object Particles {
       */
     def setFrame(): this.type = js.native
     def setFrame(frame: String): this.type = js.native
-    def setFrame(frame: integer): this.type = js.native
+    def setFrame(frame: Double): this.type = js.native
     
     /**
       * Sets the texture and frame this Emitter Manager will use to render with.
@@ -1414,7 +1413,7 @@ object Particles {
       */
     def setTexture(key: String): this.type = js.native
     def setTexture(key: String, frame: String): this.type = js.native
-    def setTexture(key: String, frame: integer): this.type = js.native
+    def setTexture(key: String, frame: Double): this.type = js.native
     
     /**
       * The texture used to render this Emitter Manager's particles.
@@ -1511,7 +1510,7 @@ object Particles {
       /**
         * The number of particles to place on the source edge. Set to 0 to use `stepRate` instead.
         */
-      var quantity: integer
+      var quantity: Double
       
       /**
         * Whether one endpoint will be removed if it's identical to the other.
@@ -1548,7 +1547,7 @@ object Particles {
         counter: Double,
         getPoint: Particle => Unit,
         points: js.Array[Point],
-        quantity: integer,
+        quantity: Double,
         seamless: Boolean,
         source: EdgeZoneSource | RandomZoneSource,
         stepRate: Double,
@@ -1569,9 +1568,9 @@ object Particles {
         
         inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
         
-        inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+        inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value*))
         
-        inline def setQuantity(value: integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+        inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
         
         inline def setSeamless(value: Boolean): Self = StObject.set(x, "seamless", value.asInstanceOf[js.Any])
         
@@ -1586,7 +1585,7 @@ object Particles {
     }
     
     /**
-      * A zone that places particles randomly within a shape's area.
+      * A zone that places particles randomly within a shapes area.
       */
     trait RandomZone extends StObject {
       

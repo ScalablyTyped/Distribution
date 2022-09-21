@@ -20,15 +20,15 @@ trait Select2 extends StObject {
   @JSName("$selection")
   var $selection: JQuery[HTMLElement]
   
-  var dropdown: js.Any
+  var dropdown: Any
   
   var id: String
   
   var options: typings.select2.anon.Options
   
-  var results: js.Any
+  var results: Any
   
-  var selection: js.Any
+  var selection: Any
 }
 object Select2 {
   
@@ -37,11 +37,11 @@ object Select2 {
     $dropdown: JQuery[HTMLElement],
     $results: JQuery[HTMLElement],
     $selection: JQuery[HTMLElement],
-    dropdown: js.Any,
+    dropdown: Any,
     id: String,
     options: typings.select2.anon.Options,
-    results: js.Any,
-    selection: js.Any
+    results: Any,
+    selection: Any
   ): Select2 = {
     val __obj = js.Dynamic.literal($container = $container.asInstanceOf[js.Any], $dropdown = $dropdown.asInstanceOf[js.Any], $results = $results.asInstanceOf[js.Any], $selection = $selection.asInstanceOf[js.Any], dropdown = dropdown.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Select2]
@@ -57,14 +57,14 @@ object Select2 {
     
     inline def set$selection(value: JQuery[HTMLElement]): Self = StObject.set(x, "$selection", value.asInstanceOf[js.Any])
     
-    inline def setDropdown(value: js.Any): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    inline def setDropdown(value: Any): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setOptions(value: typings.select2.anon.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setResults(value: js.Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setSelection(value: js.Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

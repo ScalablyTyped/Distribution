@@ -44,7 +44,7 @@ object XDefaultNumberingProvider {
     acquire: () => Unit,
     getDefaultContinuousNumberingLevels: Locale => SafeArray[PropertyValues],
     getDefaultOutlineNumberings: Locale => SafeArray[XIndexAccess],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDefaultNumberingProvider = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getDefaultContinuousNumberingLevels = js.Any.fromFunction1(getDefaultContinuousNumberingLevels), getDefaultOutlineNumberings = js.Any.fromFunction1(getDefaultOutlineNumberings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

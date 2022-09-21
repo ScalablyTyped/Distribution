@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/commands" : "1.11.4"
+      "@lumino/commands" : "1.20.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/commands" : "1.11.4"
+      "@lumino/commands" : "1.20.1"
     }
   ],
   "compile-devDependencies" : [

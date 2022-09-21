@@ -34,8 +34,9 @@ object engineUniformBufferMod {
         * Bind a buffer to the current webGL context at a given location
         * @param buffer defines the buffer to bind
         * @param location defines the index where to bind the buffer
+        * @param name Name of the uniform variable to bind
         */
-      def bindUniformBufferBase(buffer: DataBuffer, location: Double): Unit = js.native
+      def bindUniformBufferBase(buffer: DataBuffer, location: Double, name: String): Unit = js.native
       
       /**
         * Create a dynamic uniform buffer

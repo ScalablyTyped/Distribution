@@ -23,12 +23,6 @@ object ListIdentityPoolsInput {
     __obj.asInstanceOf[ListIdentityPoolsInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ListIdentityPoolsInput")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: ListIdentityPoolsInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: ListIdentityPoolsInput](x: Self) {
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])

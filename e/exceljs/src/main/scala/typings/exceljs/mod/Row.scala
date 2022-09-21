@@ -89,7 +89,7 @@ trait Row
   	 *
   	 * Note: this operation will not affect other rows
   	 */
-  def splice(start: Double, count: Double, insert: js.Any*): Unit = js.native
+  def splice(start: Double, count: Double, insert: Any*): Unit = js.native
   
   /**
   	 * Get a row as a sparse array

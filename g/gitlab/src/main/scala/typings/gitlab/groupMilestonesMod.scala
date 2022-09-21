@@ -10,7 +10,7 @@ object groupMilestonesMod {
   
   @JSImport("gitlab/dist/types/core/services/GroupMilestones", "GroupMilestones")
   @js.native
-  class GroupMilestones protected () extends ResourceMilestones {
+  open class GroupMilestones protected () extends ResourceMilestones {
     def this(options: BaseServiceOptions) = this()
   }
 }

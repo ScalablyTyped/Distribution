@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "BlameLine")
 @js.native
-class BlameLine protected () extends StObject {
-  def this(lineno: Double, oldlineno: Double, commit: js.Any, line: String) = this()
+open class BlameLine protected () extends StObject {
+  def this(lineno: Double, oldlineno: Double, commit: Any, line: String) = this()
   
-  var commit: js.Any = js.native
+  var commit: Any = js.native
   
   var line: String = js.native
   

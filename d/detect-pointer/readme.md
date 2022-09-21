@@ -11,9 +11,9 @@ JavaScript wrapper for pointer and any-pointer media queries
 | Full name          | detect-pointer |
 | Keywords           | detect, pointer, any-pointer, media query |
 | # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 1547653 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 223069.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/rafgraph/detect-pointer#readme)

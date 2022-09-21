@@ -1,0 +1,34 @@
+package typings.typescriptNn5FuAjk.global
+
+import typings.std.MediaDeviceKind
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+@JSGlobal("InputDeviceInfo")
+@js.native
+open class InputDeviceInfo ()
+  extends StObject
+     with typings.std.MediaDeviceInfo {
+  
+  /* standard dom */
+  /* CompleteClass */
+  override val deviceId: java.lang.String = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  override val groupId: java.lang.String = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  override val kind: MediaDeviceKind = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  override val label: java.lang.String = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  override def toJSON(): Any = js.native
+}

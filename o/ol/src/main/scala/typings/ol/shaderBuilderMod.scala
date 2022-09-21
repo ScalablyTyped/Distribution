@@ -20,7 +20,7 @@ object shaderBuilderMod {
   
   @JSImport("ol/webgl/ShaderBuilder", "ShaderBuilder")
   @js.native
-  class ShaderBuilder () extends StObject {
+  open class ShaderBuilder () extends StObject {
     
     /**
       * Adds an attribute accessible in the vertex shader, read from the geometry buffer.
@@ -38,14 +38,7 @@ object shaderBuilderMod {
       * Adds a varying defined in the vertex shader and accessible from the fragment shader.
       * The type and expression of the varying have to be specified separately.
       */
-    @JSName("addVarying")
-    def addVarying_float(name: String, `type`: float, expression: String): ShaderBuilder = js.native
-    @JSName("addVarying")
-    def addVarying_vec2(name: String, `type`: vec2, expression: String): ShaderBuilder = js.native
-    @JSName("addVarying")
-    def addVarying_vec3(name: String, `type`: vec3, expression: String): ShaderBuilder = js.native
-    @JSName("addVarying")
-    def addVarying_vec4(name: String, `type`: vec4, expression: String): ShaderBuilder = js.native
+    def addVarying(name: String, `type`: float | vec2 | vec3 | vec4, expression: String): ShaderBuilder = js.native
     
     def getColorExpression(): String = js.native
     
@@ -156,7 +149,7 @@ object shaderBuilderMod {
       
       inline def setAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def setAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setBuilder(value: ShaderBuilder): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       

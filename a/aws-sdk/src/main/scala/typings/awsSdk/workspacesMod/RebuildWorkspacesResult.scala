@@ -24,6 +24,6 @@ object RebuildWorkspacesResult {
     
     inline def setFailedRequestsUndefined: Self = StObject.set(x, "FailedRequests", js.undefined)
     
-    inline def setFailedRequestsVarargs(value: FailedWorkspaceChangeRequest*): Self = StObject.set(x, "FailedRequests", js.Array(value :_*))
+    inline def setFailedRequestsVarargs(value: FailedWorkspaceChangeRequest*): Self = StObject.set(x, "FailedRequests", js.Array(value*))
   }
 }

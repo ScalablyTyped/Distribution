@@ -44,12 +44,12 @@ object BulkSendTestResponse {
     
     inline def setValidationErrorDetailsUndefined: Self = StObject.set(x, "validationErrorDetails", js.undefined)
     
-    inline def setValidationErrorDetailsVarargs(value: String*): Self = StObject.set(x, "validationErrorDetails", js.Array(value :_*))
+    inline def setValidationErrorDetailsVarargs(value: String*): Self = StObject.set(x, "validationErrorDetails", js.Array(value*))
     
     inline def setValidationErrors(value: js.Array[String]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     
     inline def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
     
-    inline def setValidationErrorsVarargs(value: String*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+    inline def setValidationErrorsVarargs(value: String*): Self = StObject.set(x, "validationErrors", js.Array(value*))
   }
 }

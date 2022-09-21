@@ -14,7 +14,7 @@ trait FilterView extends StObject {
   var criteria: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria}
-    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.FilterView & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.FilterView & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -50,7 +50,7 @@ object FilterView {
     inline def setCriteria(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria}
-      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.FilterView & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.FilterView & TopLevel[Any]
     ): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
@@ -59,7 +59,7 @@ object FilterView {
     
     inline def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
     
-    inline def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value :_*))
+    inline def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value*))
     
     inline def setFilterViewId(value: Double): Self = StObject.set(x, "filterViewId", value.asInstanceOf[js.Any])
     
@@ -77,7 +77,7 @@ object FilterView {
     
     inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
     
-    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

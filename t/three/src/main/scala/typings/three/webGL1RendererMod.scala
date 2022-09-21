@@ -11,7 +11,7 @@ object webGL1RendererMod {
   
   @JSImport("three/src/renderers/WebGL1Renderer", "WebGL1Renderer")
   @js.native
-  class WebGL1Renderer () extends WebGLRenderer {
+  open class WebGL1Renderer () extends WebGLRenderer {
     def this(parameters: WebGLRendererParameters) = this()
     
     val isWebGL1Renderer: `true` = js.native

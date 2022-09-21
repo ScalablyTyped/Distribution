@@ -30,26 +30,18 @@ trait ModelView extends StObject {
   /**
     * Raised when the view closed.
     */
-  def onClosed(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
-  def onClosed(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onClosed(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onClosed(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onClosed(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Raised when the model view's valid property changes
     */
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any]): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onValidityChanged(
-    listener: js.Function1[/* e */ Boolean, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Any): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * The info on the server for the dashboard

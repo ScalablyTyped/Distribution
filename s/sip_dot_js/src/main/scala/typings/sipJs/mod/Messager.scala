@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Messager")
 @js.native
-class Messager protected ()
+open class Messager protected ()
   extends typings.sipJs.apiMod.Messager {
   /**
     * Constructs a new instance of the `Messager` class.

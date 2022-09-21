@@ -19,6 +19,6 @@ object `0` {
     
     inline def setOptions(value: js.Array[Callsignature]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: Callsignature*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Callsignature*): Self = StObject.set(x, "options", js.Array(value*))
   }
 }

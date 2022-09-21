@@ -19,6 +19,6 @@ object TaskOrchestrationPlanGroupsStartedEvent {
     
     inline def setPlanGroups(value: js.Array[TaskOrchestrationPlanGroupReference]): Self = StObject.set(x, "planGroups", value.asInstanceOf[js.Any])
     
-    inline def setPlanGroupsVarargs(value: TaskOrchestrationPlanGroupReference*): Self = StObject.set(x, "planGroups", js.Array(value :_*))
+    inline def setPlanGroupsVarargs(value: TaskOrchestrationPlanGroupReference*): Self = StObject.set(x, "planGroups", js.Array(value*))
   }
 }

@@ -57,7 +57,7 @@ object typesPutRecordsOutputMod {
       
       inline def setRecords(value: js.Array[UnmarshalledPutRecordsResultEntry]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: UnmarshalledPutRecordsResultEntry*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: UnmarshalledPutRecordsResultEntry*): Self = StObject.set(x, "Records", js.Array(value*))
     }
   }
 }

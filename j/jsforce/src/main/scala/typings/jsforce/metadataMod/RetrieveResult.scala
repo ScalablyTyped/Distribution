@@ -30,13 +30,13 @@ object RetrieveResult {
     
     inline def setFileProperties(value: js.Array[FileProperties]): Self = StObject.set(x, "fileProperties", value.asInstanceOf[js.Any])
     
-    inline def setFilePropertiesVarargs(value: FileProperties*): Self = StObject.set(x, "fileProperties", js.Array(value :_*))
+    inline def setFilePropertiesVarargs(value: FileProperties*): Self = StObject.set(x, "fileProperties", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setMessages(value: js.Array[RetrieveMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    inline def setMessagesVarargs(value: RetrieveMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: RetrieveMessage*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setZipFile(value: String): Self = StObject.set(x, "zipFile", value.asInstanceOf[js.Any])
   }

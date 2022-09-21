@@ -1,10 +1,9 @@
 package typings.passportUniqueToken
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.passportUniqueToken.passportUniqueTokenBooleans.`false`
 import typings.passportUniqueToken.passportUniqueTokenBooleans.`true`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +12,23 @@ object mod {
   
   @JSImport("passport-unique-token", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends StObject
        with typings.passport.mod.Strategy {
     def this(verify: VerifyFunction) = this()
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
+    def authenticate(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      options: js.Object
+    ): Unit = js.native
   }
   
   trait StrategyOptions extends StObject {
@@ -122,8 +130,8 @@ object mod {
   type VerifyFunction = js.Function2[
     /* token */ String, 
     /* done */ js.Function3[
-      /* error */ js.Any, 
-      /* user */ js.UndefOr[js.Any], 
+      /* error */ Any, 
+      /* user */ js.UndefOr[Any], 
       /* options */ js.UndefOr[VerifyOptions], 
       Unit
     ], 
@@ -131,11 +139,17 @@ object mod {
   ]
   
   type VerifyFunctionWithRequest = js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* token */ String, 
     /* done */ js.Function3[
-      /* error */ js.Any, 
-      /* user */ js.UndefOr[js.Any], 
+      /* error */ Any, 
+      /* user */ js.UndefOr[Any], 
       /* options */ js.UndefOr[VerifyOptions], 
       Unit
     ], 

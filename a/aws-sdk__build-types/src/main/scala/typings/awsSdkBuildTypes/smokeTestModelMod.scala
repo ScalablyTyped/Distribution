@@ -69,7 +69,7 @@ object smokeTestModelMod {
       
       inline def setTestCases(value: js.Array[SmokeTestCase]): Self = StObject.set(x, "testCases", value.asInstanceOf[js.Any])
       
-      inline def setTestCasesVarargs(value: SmokeTestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
+      inline def setTestCasesVarargs(value: SmokeTestCase*): Self = StObject.set(x, "testCases", js.Array(value*))
       
       inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

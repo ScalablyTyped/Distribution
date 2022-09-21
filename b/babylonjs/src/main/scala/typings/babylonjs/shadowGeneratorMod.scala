@@ -15,6 +15,7 @@ import typings.babylonjs.shadowLightMod.IShadowLight
 import typings.babylonjs.smartArrayMod.SmartArray
 import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
+import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ object shadowGeneratorMod {
   
   @JSImport("babylonjs/Lights/Shadows/shadowGenerator", "ShadowGenerator")
   @js.native
-  class ShadowGenerator protected ()
+  open class ShadowGenerator protected ()
     extends StObject
        with IShadowGenerator {
     /**
@@ -33,16 +34,16 @@ object shadowGeneratorMod {
       * Documentation : https://doc.babylonjs.com/babylon101/shadows
       * @param mapSize The size of the texture what stores the shadows. Example : 1024.
       * @param light The light object generating the shadows.
-      * @param usefulFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
+      * @param usefullFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
       */
     def this(mapSize: Double, light: IShadowLight) = this()
-    def this(mapSize: Double, light: IShadowLight, usefulFloatFirst: Boolean) = this()
+    def this(mapSize: Double, light: IShadowLight, usefullFloatFirst: Boolean) = this()
     
     /* protected */ def _applyFilterValues(): Unit = js.native
     
     /* protected */ var _bias: Double = js.native
     
-    /* protected */ def _bindCustomEffectForRenderSubMeshForShadowMap(subMesh: SubMesh, effect: Effect, matriceNames: js.Any, mesh: AbstractMesh): Unit = js.native
+    /* protected */ def _bindCustomEffectForRenderSubMeshForShadowMap(subMesh: SubMesh, effect: Effect, mesh: AbstractMesh): Unit = js.native
     
     /* protected */ var _blurBoxOffset: Double = js.native
     
@@ -68,7 +69,9 @@ object shadowGeneratorMod {
     
     /* protected */ var _currentFaceIndexCache: Double = js.native
     
-    /* protected */ var _currentRenderID: Double = js.native
+    /* protected */ var _currentRenderId: Double = js.native
+    
+    /* protected */ var _currentSceneUBO: UniformBuffer = js.native
     
     /* protected */ var _darkness: Double = js.native
     
@@ -80,7 +83,7 @@ object shadowGeneratorMod {
     
     /* protected */ def _disposeRTTandPostProcesses(): Unit = js.native
     
-    /* protected */ var _effect: Effect = js.native
+    /* protected */ def _disposeSceneUBOs(): Unit = js.native
     
     /* protected */ var _filter: Double = js.native
     
@@ -92,7 +95,7 @@ object shadowGeneratorMod {
     
     /* protected */ def _initializeShadowMap(): Unit = js.native
     
-    /* protected */ def _isReadyCustomDefines(defines: js.Any, subMesh: SubMesh, useInstances: Boolean): Unit = js.native
+    /* protected */ def _isReadyCustomDefines(defines: Any, subMesh: SubMesh, useInstances: Boolean): Unit = js.native
     
     /* protected */ var _kernelBlurXPostprocess: Nullable[PostProcess] = js.native
     
@@ -106,7 +109,7 @@ object shadowGeneratorMod {
     
     /* protected */ var _normalBias: Double = js.native
     
-    /* private */ var _prepareShadowDefines: js.Any = js.native
+    /* private */ var _prepareShadowDefines: Any = js.native
     
     /* protected */ var _projectionMatrix: Matrix = js.native
     
@@ -122,6 +125,8 @@ object shadowGeneratorMod {
     
     /* protected */ var _scene: Scene = js.native
     
+    /* protected */ var _sceneUBOs: js.Array[UniformBuffer] = js.native
+    
     /* protected */ var _shadowMap: Nullable[RenderTargetTexture] = js.native
     
     /* protected */ var _shadowMap2: Nullable[RenderTargetTexture] = js.native
@@ -135,6 +140,8 @@ object shadowGeneratorMod {
     /* protected */ var _transparencyShadow: Boolean = js.native
     
     /* protected */ var _useKernelBlur: Boolean = js.native
+    
+    /* protected */ var _useUBO: Boolean = js.native
     
     /* protected */ def _validateFilter(filter: Double): Double = js.native
     
@@ -237,6 +244,7 @@ object shadowGeneratorMod {
       * When it is enabled, the strength of the shadow is taken equal to mesh.visibility
       * If you enabled an alpha texture on your material, the alpha value red from the texture is also combined to compute the strength:
       *          mesh.visibility * alphaTexture.a
+      * The texture used is the diffuse by default, but it can be set to the opacity by setting useOpacityTextureForTransparentShadow
       * Note that by definition transparencyShadow must be set to true for enableSoftTransparentShadow to work!
       */
     var enableSoftTransparentShadow: Boolean = js.native
@@ -307,11 +315,11 @@ object shadowGeneratorMod {
     def mapSize_=(size: Double): Unit = js.native
     
     /**
-      * Gets the normalBias: offset applied on the depth preventing acnea (along side the normal direction and proportinal to the light/normal angle).
+      * Gets the normalBias: offset applied on the depth preventing acnea (along side the normal direction and proportional to the light/normal angle).
       */
     def normalBias: Double = js.native
     /**
-      * Sets the normalBias: offset applied on the depth preventing acnea (along side the normal direction and proportinal to the light/normal angle).
+      * Sets the normalBias: offset applied on the depth preventing acnea (along side the normal direction and proportional to the light/normal angle).
       */
     def normalBias_=(normalBias: Double): Unit = js.native
     
@@ -342,7 +350,7 @@ object shadowGeneratorMod {
       * @param defines Defines of the material we want to update
       * @param lightIndex Index of the light in the enabled light list of the material
       */
-    def prepareDefines(defines: js.Any, lightIndex: Double): Unit = js.native
+    def prepareDefines(defines: Any, lightIndex: Double): Unit = js.native
     
     /**
       * Helper function to remove a mesh and its descendants from the list of shadow casters
@@ -432,6 +440,11 @@ object shadowGeneratorMod {
     def useKernelBlur_=(value: Boolean): Unit = js.native
     
     /**
+      * If this is true, use the opacity texture's alpha channel for transparent shadows instead of the diffuse one
+      */
+    var useOpacityTextureForTransparentShadow: Boolean = js.native
+    
+    /**
       * Gets if the current filter is set to "PCF" (percentage closer filtering).
       */
     def usePercentageCloserFiltering: Boolean = js.native
@@ -463,6 +476,14 @@ object shadowGeneratorMod {
     @js.native
     def CLASSNAME: String = js.native
     inline def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Defines the default alpha cutoff value used for transparent alpha tested materials.
+      */
+    @JSImport("babylonjs/Lights/Shadows/shadowGenerator", "ShadowGenerator.DEFAULT_ALPHA_CUTOFF")
+    @js.native
+    def DEFAULT_ALPHA_CUTOFF: Double = js.native
+    inline def DEFAULT_ALPHA_CUTOFF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ALPHA_CUTOFF")(x.asInstanceOf[js.Any])
     
     /**
       * Shadow generator mode ESM: Blurred Exponential Shadow Mapping using the inverse of the exponential preventing
@@ -538,9 +559,9 @@ object shadowGeneratorMod {
       * @param constr A function that builds a shadow generator or undefined to create an instance of the default shadow generator
       * @returns The parsed shadow generator
       */
-    inline def Parse(parsedShadowGenerator: js.Any, scene: Scene): ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ShadowGenerator]
+    inline def Parse(parsedShadowGenerator: Any, scene: Scene): ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[ShadowGenerator]
     inline def Parse(
-      parsedShadowGenerator: js.Any,
+      parsedShadowGenerator: Any,
       scene: Scene,
       constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
     ): ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[ShadowGenerator]
@@ -581,7 +602,10 @@ object shadowGeneratorMod {
     @js.native
     val QUALITY_MEDIUM: Double = js.native
     
-    /** @hidden */
+    /**
+      * @param _
+      * @hidden
+      */
     inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
@@ -608,7 +632,7 @@ object shadowGeneratorMod {
     var shaderName: String
     
     /**
-      * The list of unifrom names used in the shader
+      * The list of uniform names used in the shader
       */
     var uniforms: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -625,19 +649,19 @@ object shadowGeneratorMod {
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       
       inline def setDefinesUndefined: Self = StObject.set(x, "defines", js.undefined)
       
-      inline def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
+      inline def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value*))
       
       inline def setSamplers(value: js.Array[String]): Self = StObject.set(x, "samplers", value.asInstanceOf[js.Any])
       
       inline def setSamplersUndefined: Self = StObject.set(x, "samplers", js.undefined)
       
-      inline def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value :_*))
+      inline def setSamplersVarargs(value: String*): Self = StObject.set(x, "samplers", js.Array(value*))
       
       inline def setShaderName(value: String): Self = StObject.set(x, "shaderName", value.asInstanceOf[js.Any])
       
@@ -645,7 +669,7 @@ object shadowGeneratorMod {
       
       inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
       
-      inline def setUniformsVarargs(value: String*): Self = StObject.set(x, "uniforms", js.Array(value :_*))
+      inline def setUniformsVarargs(value: String*): Self = StObject.set(x, "uniforms", js.Array(value*))
     }
   }
   
@@ -655,9 +679,9 @@ object shadowGeneratorMod {
     /**
       * Binds the shadow related information inside of an effect (information like near, far, darkness...
       * defined in the generator but impacting the effect).
-      * It implies the unifroms available on the materials are the standard BJS ones.
+      * It implies the uniforms available on the materials are the standard BJS ones.
       * @param lightIndex Index of the light in the enabled light list of the material owning the effect
-      * @param effect The effect we are binfing the information for
+      * @param effect The effect we are binding the information for
       */
     def bindShadowLight(lightIndex: String, effect: Effect): Unit = js.native
     
@@ -667,7 +691,7 @@ object shadowGeneratorMod {
     def dispose(): Unit = js.native
     
     /**
-      * Forces all the attached effect to compile to enable rendering only once ready vs. lazyly compiling effects.
+      * Forces all the attached effect to compile to enable rendering only once ready vs. lazily compiling effects.
       * @param onCompiled Callback triggered at the and of the effects compilation
       * @param options Sets of optional options forcing the compilation with different modes
       */
@@ -677,7 +701,7 @@ object shadowGeneratorMod {
     def forceCompilation(onCompiled: Unit, options: PartialuseInstancesboolea): Unit = js.native
     
     /**
-      * Forces all the attached effect to compile to enable rendering only once ready vs. lazyly compiling effects.
+      * Forces all the attached effect to compile to enable rendering only once ready vs. lazily compiling effects.
       * @param options Sets of optional options forcing the compilation with different modes
       * @returns A promise that resolves when the compilation completes
       */
@@ -692,7 +716,7 @@ object shadowGeneratorMod {
     
     /**
       * Gets the transformation matrix used to project the meshes into the map from the light point of view.
-      * (eq to shadow prjection matrix * light transform matrix)
+      * (eq to shadow projection matrix * light transform matrix)
       * @returns The transform matrix used to create the shadow map
       */
     def getTransformMatrix(): Matrix = js.native
@@ -701,9 +725,9 @@ object shadowGeneratorMod {
     var id: String = js.native
     
     /**
-      * Determine wheter the shadow generator is ready or not (mainly all effects and related post processes needs to be ready).
+      * Determine whether the shadow generator is ready or not (mainly all effects and related post processes needs to be ready).
       * @param subMesh The submesh we want to render in the shadow map
-      * @param useInstances Defines wether will draw in the map using instances
+      * @param useInstances Defines whether will draw in the map using instances
       * @param isTransparent Indicates that isReady is called for a transparent subMesh
       * @returns true if ready otherwise, false
       */
@@ -726,6 +750,6 @@ object shadowGeneratorMod {
       * Serializes the shadow generator setup to a json object.
       * @returns The serialized JSON object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
   }
 }

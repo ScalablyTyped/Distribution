@@ -26,7 +26,7 @@ object SelectorsNode {
     
     inline def setNodes(value: js.Array[SelectorNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: SelectorNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: SelectorNode*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setType(value: selectors): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

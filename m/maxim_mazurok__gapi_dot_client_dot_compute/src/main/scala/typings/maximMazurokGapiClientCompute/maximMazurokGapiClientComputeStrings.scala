@@ -19,8 +19,16 @@ object maximMazurokGapiClientComputeStrings {
   inline def AttachedDiskInitializeParams: AttachedDiskInitializeParams = "AttachedDiskInitializeParams".asInstanceOf[AttachedDiskInitializeParams]
   
   @js.native
+  sealed trait Autoscaler extends StObject
+  inline def Autoscaler: Autoscaler = "Autoscaler".asInstanceOf[Autoscaler]
+  
+  @js.native
   sealed trait AutoscalerAggregatedList extends StObject
   inline def AutoscalerAggregatedList: AutoscalerAggregatedList = "AutoscalerAggregatedList".asInstanceOf[AutoscalerAggregatedList]
+  
+  @js.native
+  sealed trait AutoscalingPolicy extends StObject
+  inline def AutoscalingPolicy: AutoscalingPolicy = "AutoscalingPolicy".asInstanceOf[AutoscalingPolicy]
   
   @js.native
   sealed trait BackendServiceAggregatedList extends StObject
@@ -29,6 +37,10 @@ object maximMazurokGapiClientComputeStrings {
   @js.native
   sealed trait BackendServiceGroupHealth extends StObject
   inline def BackendServiceGroupHealth: BackendServiceGroupHealth = "BackendServiceGroupHealth".asInstanceOf[BackendServiceGroupHealth]
+  
+  @js.native
+  sealed trait BulkInsertInstanceResource extends StObject
+  inline def BulkInsertInstanceResource: BulkInsertInstanceResource = "BulkInsertInstanceResource".asInstanceOf[BulkInsertInstanceResource]
   
   @js.native
   sealed trait CommitmentAggregatedList extends StObject
@@ -49,6 +61,10 @@ object maximMazurokGapiClientComputeStrings {
   @js.native
   sealed trait ExternalVpnGateway extends StObject
   inline def ExternalVpnGateway: ExternalVpnGateway = "ExternalVpnGateway".asInstanceOf[ExternalVpnGateway]
+  
+  @js.native
+  sealed trait ForwardingRule extends StObject
+  inline def ForwardingRule: ForwardingRule = "ForwardingRule".asInstanceOf[ForwardingRule]
   
   @js.native
   sealed trait ForwardingRuleAggregatedList extends StObject
@@ -99,6 +115,10 @@ object maximMazurokGapiClientComputeStrings {
   inline def InterconnectAttachmentAggregatedList: InterconnectAttachmentAggregatedList = "InterconnectAttachmentAggregatedList".asInstanceOf[InterconnectAttachmentAggregatedList]
   
   @js.native
+  sealed trait LocationPolicy extends StObject
+  inline def LocationPolicy: LocationPolicy = "LocationPolicy".asInstanceOf[LocationPolicy]
+  
+  @js.native
   sealed trait MachineTypeAggregatedList extends StObject
   inline def MachineTypeAggregatedList: MachineTypeAggregatedList = "MachineTypeAggregatedList".asInstanceOf[MachineTypeAggregatedList]
   
@@ -141,6 +161,10 @@ object maximMazurokGapiClientComputeStrings {
   @js.native
   sealed trait PreservedState extends StObject
   inline def PreservedState: PreservedState = "PreservedState".asInstanceOf[PreservedState]
+  
+  @js.native
+  sealed trait PublicDelegatedPrefixAggregatedList extends StObject
+  inline def PublicDelegatedPrefixAggregatedList: PublicDelegatedPrefixAggregatedList = "PublicDelegatedPrefixAggregatedList".asInstanceOf[PublicDelegatedPrefixAggregatedList]
   
   @js.native
   sealed trait RegionSetLabelsRequest extends StObject

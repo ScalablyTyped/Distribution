@@ -10,10 +10,10 @@ json-schema.org to protobuf object converter
 | ------------------ | :-------------: |
 | Full name          | jsonschema-protobuf |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1267 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 184.0 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/karissa/jsonschema-protobuf)

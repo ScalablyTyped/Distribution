@@ -26,15 +26,15 @@ object TableColumns {
     ElementType: `type`,
     acquire: () => Unit,
     createEnumeration: () => XEnumeration,
-    getByIndex: Double => js.Any,
-    getByName: String => js.Any,
+    getByIndex: Double => Any,
+    getByName: String => Any,
     getCount: () => Double,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
     insertByIndex: (Double, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByIndex: (Double, Double) => Unit
   ): TableColumns = {

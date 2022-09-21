@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -162,30 +161,36 @@ trait Client
     *  Creates the WebSocket connection, subscribing to the given apps.
     *
     *  @param apps - Name or array of names of the applications to be started.
-    *  @param [callback] - The callback to be called after applications have started.
+    *  @param [subscribeAll] - Subscribe to all Asterisk events (true/false).
     */
-  def start(apps: String): Unit = js.native
-  def start(apps: String, callback: js.Function2[/* err */ Error, /* repeated */ js.Any, Unit]): Unit = js.native
+  def start(apps: String): js.Promise[Unit] = js.native
+  /**
+    *  Creates the WebSocket connection, subscribing to the given apps.
+    *
+    *  @param apps - Name or array of names of the applications to be started.
+    *  @param callback - The callback to be called after applications have started.
+    */
+  def start(apps: String, callback: js.Function2[/* err */ js.Error, /* repeated */ Any, Unit]): Unit = js.native
+  def start(apps: String, subscribeAll: Boolean): js.Promise[Unit] = js.native
   /**
     *  Creates the WebSocket connection, subscribing to the given apps.
     *
     *  @param apps - Name or array of names of the applications to be started.
     *  @param subscribeAll - Subscribe to all Asterisk events (true/false).
-    *  @param [callback] - The callback to be called after applications have started.
+    *  @param callback - The callback to be called after applications have started.
     */
-  def start(apps: String, subscribeAll: Boolean): Unit = js.native
   def start(
     apps: String,
     subscribeAll: Boolean,
-    callback: js.Function2[/* err */ Error, /* repeated */ js.Any, Unit]
+    callback: js.Function2[/* err */ js.Error, /* repeated */ Any, Unit]
   ): Unit = js.native
-  def start(apps: js.Array[String]): Unit = js.native
-  def start(apps: js.Array[String], callback: js.Function2[/* err */ Error, /* repeated */ js.Any, Unit]): Unit = js.native
-  def start(apps: js.Array[String], subscribeAll: Boolean): Unit = js.native
+  def start(apps: js.Array[String]): js.Promise[Unit] = js.native
+  def start(apps: js.Array[String], callback: js.Function2[/* err */ js.Error, /* repeated */ Any, Unit]): Unit = js.native
+  def start(apps: js.Array[String], subscribeAll: Boolean): js.Promise[Unit] = js.native
   def start(
     apps: js.Array[String],
     subscribeAll: Boolean,
-    callback: js.Function2[/* err */ Error, /* repeated */ js.Any, Unit]
+    callback: js.Function2[/* err */ js.Error, /* repeated */ Any, Unit]
   ): Unit = js.native
   
   /**

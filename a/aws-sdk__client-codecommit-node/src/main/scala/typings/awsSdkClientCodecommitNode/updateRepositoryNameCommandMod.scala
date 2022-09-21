@@ -16,7 +16,7 @@ object updateRepositoryNameCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/UpdateRepositoryNameCommand", "UpdateRepositoryNameCommand")
   @js.native
-  class UpdateRepositoryNameCommand protected ()
+  open class UpdateRepositoryNameCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object updateRepositoryNameCommandMod {
     override val middlewareStack: MiddlewareStack[UpdateRepositoryNameInput, UpdateRepositoryNameOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: CodeCommitResolvedConfiguration
     ): Handler[UpdateRepositoryNameInput, UpdateRepositoryNameOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CodeCommitResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UpdateRepositoryNameInput, UpdateRepositoryNameOutput] = js.native
   }
 }

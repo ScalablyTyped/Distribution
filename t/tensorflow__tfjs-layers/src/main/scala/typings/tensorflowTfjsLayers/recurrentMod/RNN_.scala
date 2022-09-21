@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNN")
 @js.native
-class RNN_ protected () extends Layer {
+open class RNN_ protected () extends Layer {
   def this(args: RNNLayerArgs) = this()
   
   val cell: RNNCell = js.native
@@ -26,7 +26,7 @@ class RNN_ protected () extends Layer {
   
   /* protected */ var keptStates: js.Array[js.Array[Tensor[Rank]]] = js.native
   
-  /* private */ var numConstants: js.Any = js.native
+  /* private */ var numConstants: Any = js.native
   
   def resetStates(states: js.Array[Tensor[Rank]]): Unit = js.native
   def resetStates(states: js.Array[Tensor[Rank]], training: Boolean): Unit = js.native

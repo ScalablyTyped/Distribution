@@ -13,7 +13,7 @@ object webServerConnectorMod {
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
   - typings.samchon.iserverconnectorMod.IServerConnector because var conflicts: onClose. Inlined onConnect, connect */ @JSImport("samchon/protocol/communicator/server_connector/WebServerConnector", "WebServerConnector")
   @js.native
-  class WebServerConnector protected () extends WebCommunicator {
+  open class WebServerConnector protected () extends WebCommunicator {
     /**
       * Construct from *listener*.
       *
@@ -25,22 +25,22 @@ object webServerConnectorMod {
     /**
       * @hidden
       */
-    /* private */ var _Handle_browser_connect: js.Any = js.native
+    /* private */ var _Handle_browser_connect: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var _Handle_browser_message: js.Any = js.native
+    /* private */ var _Handle_browser_message: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var _Handle_node_connect: js.Any = js.native
+    /* private */ var _Handle_node_connect: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var browser_socket_ : js.Any = js.native
+    /* private */ var browser_socket_ : Any = js.native
     
     /**
       * Connect to a web server.
@@ -87,7 +87,7 @@ object webServerConnectorMod {
     /**
       * @hidden
       */
-    /* private */ var node_client_ : js.Any = js.native
+    /* private */ var node_client_ : Any = js.native
     
     /**
       * @inheritdoc

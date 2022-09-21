@@ -8,7 +8,7 @@ object indentationMod {
   
   @JSImport("@sqltools/formatter/lib/core/Indentation", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Indentation {
     def this(indent: String) = this()
@@ -29,7 +29,7 @@ object indentationMod {
     override def increaseTopLevel(): Unit = js.native
     
     /* CompleteClass */
-    var indentTypes: js.Array[js.Any] = js.native
+    var indentTypes: js.Array[Any] = js.native
     
     /* CompleteClass */
     override def resetIndentation(): Unit = js.native
@@ -49,7 +49,7 @@ object indentationMod {
     
     var indent: js.UndefOr[String] = js.undefined
     
-    var indentTypes: js.Array[js.Any]
+    var indentTypes: js.Array[Any]
     
     def resetIndentation(): Unit
   }
@@ -61,7 +61,7 @@ object indentationMod {
       getIndent: () => String,
       increaseBlockLevel: () => Unit,
       increaseTopLevel: () => Unit,
-      indentTypes: js.Array[js.Any],
+      indentTypes: js.Array[Any],
       resetIndentation: () => Unit
     ): Indentation = {
       val __obj = js.Dynamic.literal(decreaseBlockLevel = js.Any.fromFunction0(decreaseBlockLevel), decreaseTopLevel = js.Any.fromFunction0(decreaseTopLevel), getIndent = js.Any.fromFunction0(getIndent), increaseBlockLevel = js.Any.fromFunction0(increaseBlockLevel), increaseTopLevel = js.Any.fromFunction0(increaseTopLevel), indentTypes = indentTypes.asInstanceOf[js.Any], resetIndentation = js.Any.fromFunction0(resetIndentation))
@@ -82,9 +82,9 @@ object indentationMod {
       
       inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      inline def setIndentTypes(value: js.Array[js.Any]): Self = StObject.set(x, "indentTypes", value.asInstanceOf[js.Any])
+      inline def setIndentTypes(value: js.Array[Any]): Self = StObject.set(x, "indentTypes", value.asInstanceOf[js.Any])
       
-      inline def setIndentTypesVarargs(value: js.Any*): Self = StObject.set(x, "indentTypes", js.Array(value :_*))
+      inline def setIndentTypesVarargs(value: Any*): Self = StObject.set(x, "indentTypes", js.Array(value*))
       
       inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       

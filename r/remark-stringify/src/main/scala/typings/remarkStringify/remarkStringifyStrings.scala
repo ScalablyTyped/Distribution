@@ -11,12 +11,16 @@ object remarkStringifyStrings {
   inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
-  sealed trait `1` extends StObject
-  inline def `1`: `1` = "1".asInstanceOf[`1`]
+  sealed trait Apostrophe extends StObject
+  inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   
   @js.native
   sealed trait Asterisk extends StObject
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  
+  @js.native
+  sealed trait Dot extends StObject
+  inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
   sealed trait Graveaccent extends StObject
@@ -27,6 +31,14 @@ object remarkStringifyStrings {
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
+  sealed trait Quotationmark extends StObject
+  inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
+  
+  @js.native
+  sealed trait Rightparenthesis extends StObject
+  inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
+  
+  @js.native
   sealed trait Tilde extends StObject
   inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
@@ -35,16 +47,12 @@ object remarkStringifyStrings {
   inline def _underscore: _underscore = "_".asInstanceOf[_underscore]
   
   @js.native
-  sealed trait escape extends StObject
-  inline def escape: escape = "escape".asInstanceOf[escape]
-  
-  @js.native
   sealed trait mixed extends StObject
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
-  sealed trait numbers extends StObject
-  inline def numbers: numbers = "numbers".asInstanceOf[numbers]
+  sealed trait one extends StObject
+  inline def one: one = "one".asInstanceOf[one]
   
   @js.native
   sealed trait tab extends StObject

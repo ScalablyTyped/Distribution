@@ -12,8 +12,7 @@ object mod {
   
   @JSImport("react-swipeable-views", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SwipeableViewsProps, SwipeableViewsState, js.Any]
+  open class default () extends Component[SwipeableViewsProps, SwipeableViewsState, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactSwipeableViews.reactSwipeableViewsStrings.x
@@ -76,7 +75,7 @@ object mod {
     }
   }
   
-  type SwipeableViews = Component[SwipeableViewsProps, SwipeableViewsState, js.Any]
+  type SwipeableViews = Component[SwipeableViewsProps, SwipeableViewsState, Any]
   
   trait SwipeableViewsProps
     extends StObject

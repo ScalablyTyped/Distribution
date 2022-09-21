@@ -2,7 +2,7 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientArtifactregistry.anon.Accesstoken
-import typings.maximMazurokGapiClientArtifactregistry.anon.PageToken
+import typings.maximMazurokGapiClientArtifactregistry.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ trait PackagesResource extends StObject {
   
   /** Lists packages. */
   def list(): Request[ListPackagesResponse] = js.native
-  def list(request: PageToken): Request[ListPackagesResponse] = js.native
+  def list(request: Oauthtoken): Request[ListPackagesResponse] = js.native
   
   var tags: TagsResource = js.native
   

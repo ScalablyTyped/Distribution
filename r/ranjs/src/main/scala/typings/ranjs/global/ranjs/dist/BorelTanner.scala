@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.BorelTanner")
 @js.native
-class BorelTanner ()
+open class BorelTanner ()
   extends typings.ranjs.mod.dist.BorelTanner {
   def this(mu: Double) = this()
   def this(mu: Double, n: Double) = this()

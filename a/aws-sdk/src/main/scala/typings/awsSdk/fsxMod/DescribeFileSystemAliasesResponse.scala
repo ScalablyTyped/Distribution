@@ -29,7 +29,7 @@ object DescribeFileSystemAliasesResponse {
     
     inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

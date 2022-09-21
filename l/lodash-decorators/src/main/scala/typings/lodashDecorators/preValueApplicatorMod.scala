@@ -9,5 +9,5 @@ object preValueApplicatorMod {
   
   @JSImport("lodash-decorators/applicators/PreValueApplicator", "PreValueApplicator")
   @js.native
-  class PreValueApplicator () extends Applicator
+  open class PreValueApplicator () extends Applicator
 }

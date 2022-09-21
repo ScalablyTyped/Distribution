@@ -105,7 +105,7 @@ object RequestOptions {
     
     inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
     
-    inline def setPartitionKeyVarargs(value: String*): Self = StObject.set(x, "partitionKey", js.Array(value :_*))
+    inline def setPartitionKeyVarargs(value: String*): Self = StObject.set(x, "partitionKey", js.Array(value*))
     
     inline def setPopulateQuotaInfo(value: Boolean): Self = StObject.set(x, "populateQuotaInfo", value.asInstanceOf[js.Any])
     

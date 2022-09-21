@@ -46,7 +46,7 @@ object cognitoIdentityMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/CognitoIdentity", "CognitoIdentity")
   @js.native
-  class CognitoIdentity protected () extends CognitoIdentityClient {
+  open class CognitoIdentity protected () extends CognitoIdentityClient {
     def this(configuration: CognitoIdentityConfiguration) = this()
     
     /**
@@ -64,7 +64,7 @@ object cognitoIdentityMod {
     def createIdentityPool(args: CreateIdentityPoolInput): js.Promise[CreateIdentityPoolOutput] = js.native
     def createIdentityPool(
       args: CreateIdentityPoolInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateIdentityPoolOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateIdentityPoolOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -79,7 +79,7 @@ object cognitoIdentityMod {
     def deleteIdentities(args: DeleteIdentitiesInput): js.Promise[DeleteIdentitiesOutput] = js.native
     def deleteIdentities(
       args: DeleteIdentitiesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteIdentitiesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteIdentitiesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -96,7 +96,7 @@ object cognitoIdentityMod {
     def deleteIdentityPool(args: DeleteIdentityPoolInput): js.Promise[DeleteIdentityPoolOutput] = js.native
     def deleteIdentityPool(
       args: DeleteIdentityPoolInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteIdentityPoolOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteIdentityPoolOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -113,7 +113,7 @@ object cognitoIdentityMod {
     def describeIdentity(args: DescribeIdentityInput): js.Promise[DescribeIdentityOutput] = js.native
     def describeIdentity(
       args: DescribeIdentityInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeIdentityOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeIdentityOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -130,7 +130,7 @@ object cognitoIdentityMod {
     def describeIdentityPool(args: DescribeIdentityPoolInput): js.Promise[DescribeIdentityPoolOutput] = js.native
     def describeIdentityPool(
       args: DescribeIdentityPoolInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeIdentityPoolOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeIdentityPoolOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -150,7 +150,7 @@ object cognitoIdentityMod {
     def getCredentialsForIdentity(args: GetCredentialsForIdentityInput): js.Promise[GetCredentialsForIdentityOutput] = js.native
     def getCredentialsForIdentity(
       args: GetCredentialsForIdentityInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCredentialsForIdentityOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetCredentialsForIdentityOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -168,7 +168,7 @@ object cognitoIdentityMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def getId(args: GetIdInput): js.Promise[GetIdOutput] = js.native
-    def getId(args: GetIdInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetIdOutput], Unit]): Unit = js.native
+    def getId(args: GetIdInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetIdOutput], Unit]): Unit = js.native
     
     /**
       * <p>Gets the roles for an identity pool.</p> <p>You must use AWS Developer credentials to call this API.</p>
@@ -185,7 +185,7 @@ object cognitoIdentityMod {
     def getIdentityPoolRoles(args: GetIdentityPoolRolesInput): js.Promise[GetIdentityPoolRolesOutput] = js.native
     def getIdentityPoolRoles(
       args: GetIdentityPoolRolesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetIdentityPoolRolesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetIdentityPoolRolesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -204,7 +204,7 @@ object cognitoIdentityMod {
     def getOpenIdToken(args: GetOpenIdTokenInput): js.Promise[GetOpenIdTokenOutput] = js.native
     def getOpenIdToken(
       args: GetOpenIdTokenInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetOpenIdTokenOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetOpenIdTokenOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -223,11 +223,7 @@ object cognitoIdentityMod {
     def getOpenIdTokenForDeveloperIdentity(args: GetOpenIdTokenForDeveloperIdentityInput): js.Promise[GetOpenIdTokenForDeveloperIdentityOutput] = js.native
     def getOpenIdTokenForDeveloperIdentity(
       args: GetOpenIdTokenForDeveloperIdentityInput,
-      cb: js.Function2[
-          /* err */ js.Any, 
-          /* data */ js.UndefOr[GetOpenIdTokenForDeveloperIdentityOutput], 
-          Unit
-        ]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetOpenIdTokenForDeveloperIdentityOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -244,7 +240,7 @@ object cognitoIdentityMod {
     def listIdentities(args: ListIdentitiesInput): js.Promise[ListIdentitiesOutput] = js.native
     def listIdentities(
       args: ListIdentitiesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListIdentitiesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListIdentitiesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -260,7 +256,7 @@ object cognitoIdentityMod {
     def listIdentityPools(args: ListIdentityPoolsInput): js.Promise[ListIdentityPoolsOutput] = js.native
     def listIdentityPools(
       args: ListIdentityPoolsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListIdentityPoolsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListIdentityPoolsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -278,7 +274,7 @@ object cognitoIdentityMod {
     def lookupDeveloperIdentity(args: LookupDeveloperIdentityInput): js.Promise[LookupDeveloperIdentityOutput] = js.native
     def lookupDeveloperIdentity(
       args: LookupDeveloperIdentityInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[LookupDeveloperIdentityOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[LookupDeveloperIdentityOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -296,7 +292,7 @@ object cognitoIdentityMod {
     def mergeDeveloperIdentities(args: MergeDeveloperIdentitiesInput): js.Promise[MergeDeveloperIdentitiesOutput] = js.native
     def mergeDeveloperIdentities(
       args: MergeDeveloperIdentitiesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[MergeDeveloperIdentitiesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[MergeDeveloperIdentitiesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -315,7 +311,7 @@ object cognitoIdentityMod {
     def setIdentityPoolRoles(args: SetIdentityPoolRolesInput): js.Promise[SetIdentityPoolRolesOutput] = js.native
     def setIdentityPoolRoles(
       args: SetIdentityPoolRolesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SetIdentityPoolRolesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SetIdentityPoolRolesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -333,7 +329,7 @@ object cognitoIdentityMod {
     def unlinkDeveloperIdentity(args: UnlinkDeveloperIdentityInput): js.Promise[UnlinkDeveloperIdentityOutput] = js.native
     def unlinkDeveloperIdentity(
       args: UnlinkDeveloperIdentityInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UnlinkDeveloperIdentityOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UnlinkDeveloperIdentityOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -352,7 +348,7 @@ object cognitoIdentityMod {
     def unlinkIdentity(args: UnlinkIdentityInput): js.Promise[UnlinkIdentityOutput] = js.native
     def unlinkIdentity(
       args: UnlinkIdentityInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UnlinkIdentityOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UnlinkIdentityOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -372,7 +368,7 @@ object cognitoIdentityMod {
     def updateIdentityPool(args: UpdateIdentityPoolInput): js.Promise[UpdateIdentityPoolOutput] = js.native
     def updateIdentityPool(
       args: UpdateIdentityPoolInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateIdentityPoolOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateIdentityPoolOutput], Unit]
     ): Unit = js.native
   }
 }

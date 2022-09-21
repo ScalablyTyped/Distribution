@@ -1,18 +1,13 @@
 package typings.marked
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import typings.marked.markedBooleans.`true`
 import typings.marked.markedStrings.center
 import typings.marked.markedStrings.left
 import typings.marked.markedStrings.right
-import typings.marked.mod.InlineLexer_
-import typings.marked.mod.Lexer_
-import typings.marked.mod.MarkedOptions
-import typings.marked.mod.Parser_
-import typings.marked.mod.Rules
-import typings.marked.mod.Token
-import typings.marked.mod.TokensList
+import typings.marked.mod.marked.MarkedOptions
+import typings.marked.mod.marked.Renderer
+import typings.marked.mod.marked.Token
+import typings.marked.mod.marked.Tokenizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,6 +37,20 @@ object anon {
     }
   }
   
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply(src: String): String = js.native
+    def apply(src: String, callback: js.Function2[/* error */ Any, /* parseResult */ String, Unit]): Unit = js.native
+    def apply(src: String, options: MarkedOptionsasynctrue): js.Promise[String] = js.native
+    def apply(src: String, options: MarkedOptions): String = js.native
+    def apply(
+      src: String,
+      options: MarkedOptions,
+      callback: js.Function2[/* error */ Any, /* parseResult */ String, Unit]
+    ): Unit = js.native
+  }
+  
   trait Href extends StObject {
     
     var href: String | Null
@@ -67,182 +76,171 @@ object anon {
     }
   }
   
-  @js.native
-  trait TypeofInlineLexer extends StObject {
+  trait InLink extends StObject {
     
-    /* static member */
-    def escapes(text: String): String = js.native
+    var inLink: Boolean
     
-    /* static member */
-    def output(src: String, links: js.Array[String]): String = js.native
-    def output(src: String, links: js.Array[String], options: MarkedOptions): String = js.native
+    var inRawBlock: Boolean
     
-    /* static member */
-    var rules: Rules = js.native
+    var top: Boolean
+  }
+  object InLink {
+    
+    inline def apply(inLink: Boolean, inRawBlock: Boolean, top: Boolean): InLink = {
+      val __obj = js.Dynamic.literal(inLink = inLink.asInstanceOf[js.Any], inRawBlock = inRawBlock.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InLink]
+    }
+    
+    extension [Self <: InLink](x: Self) {
+      
+      inline def setInLink(value: Boolean): Self = StObject.set(x, "inLink", value.asInstanceOf[js.Any])
+      
+      inline def setInRawBlock(value: Boolean): Self = StObject.set(x, "inRawBlock", value.asInstanceOf[js.Any])
+      
+      inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  trait TypeofLexer extends StObject {
+  /* Inlined marked.marked.marked.MarkedOptions & {  async :true} */
+  trait MarkedOptionsasynctrue extends StObject {
     
-    /* static member */
-    def lex(src: TokensList): TokensList = js.native
-    def lex(src: TokensList, options: MarkedOptions): TokensList = js.native
+    var async: js.UndefOr[Boolean] & `true`
     
-    /* static member */
-    var rules: Rules = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
+    
+    var breaks: js.UndefOr[Boolean] = js.undefined
+    
+    var gfm: js.UndefOr[Boolean] = js.undefined
+    
+    var headerIds: js.UndefOr[Boolean] = js.undefined
+    
+    var headerPrefix: js.UndefOr[String] = js.undefined
+    
+    var highlight: js.UndefOr[
+        js.Function3[
+          /* code */ String, 
+          /* lang */ String, 
+          /* callback */ js.UndefOr[js.Function2[/* error */ Any, /* code */ js.UndefOr[String], Unit]], 
+          String | Unit
+        ]
+      ] = js.undefined
+    
+    var langPrefix: js.UndefOr[String] = js.undefined
+    
+    var mangle: js.UndefOr[Boolean] = js.undefined
+    
+    var pedantic: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Type: object Default: new Renderer()
+      *
+      * An object containing functions to render tokens to HTML.
+      */
+    var renderer: js.UndefOr[Renderer[scala.Nothing]] = js.undefined
+    
+    var sanitize: js.UndefOr[Boolean] = js.undefined
+    
+    var sanitizer: js.UndefOr[js.Function1[/* html */ String, String]] = js.undefined
+    
+    var silent: js.UndefOr[Boolean] = js.undefined
+    
+    var smartLists: js.UndefOr[Boolean] = js.undefined
+    
+    var smartypants: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The tokenizer defines how to turn markdown text into tokens.
+      */
+    var tokenizer: js.UndefOr[Tokenizer[scala.Nothing]] = js.undefined
+    
+    var walkTokens: js.UndefOr[js.Function1[/* token */ Token, Unit]] = js.undefined
+    
+    var xhtml: js.UndefOr[Boolean] = js.undefined
   }
-  
-  @js.native
-  trait TypeofParser extends StObject {
+  object MarkedOptionsasynctrue {
     
-    /* static member */
-    def parse(src: TokensList): String = js.native
-    def parse(src: TokensList, options: MarkedOptions): String = js.native
-  }
-  
-  @js.native
-  trait Typeofmarked extends StObject {
+    inline def apply(async: js.UndefOr[Boolean] & `true`): MarkedOptionsasynctrue = {
+      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MarkedOptionsasynctrue]
+    }
     
-    /**
-      * Compiles markdown to HTML synchronously.
-      *
-      * @param src String of markdown source to be compiled
-      * @param options Optional hash of options
-      * @return String of compiled HTML
-      */
-    def apply(src: String): String = js.native
-    /**
-      * Compiles markdown to HTML asynchronously.
-      *
-      * @param src String of markdown source to be compiled
-      * @param callback Function called when the markdownString has been fully parsed when using async highlighting
-      */
-    def apply(
-      src: String,
-      callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
-    ): Unit = js.native
-    def apply(src: String, options: MarkedOptions): String = js.native
-    /**
-      * Compiles markdown to HTML asynchronously.
-      *
-      * @param src String of markdown source to be compiled
-      * @param options Hash of options
-      * @param callback Function called when the markdownString has been fully parsed when using async highlighting
-      */
-    def apply(
-      src: String,
-      options: MarkedOptions,
-      callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
-    ): Unit = js.native
-    
-    var InlineLexer: (Instantiable2[/* links */ js.Array[String], /* options */ js.UndefOr[MarkedOptions], InlineLexer_]) & TypeofInlineLexer = js.native
-    
-    var Lexer: (Instantiable1[/* options */ js.UndefOr[MarkedOptions], Lexer_]) & TypeofLexer = js.native
-    
-    var Parser: (Instantiable1[/* options */ js.UndefOr[MarkedOptions], Parser_]) & TypeofParser = js.native
-    
-    var Renderer: Instantiable1[/* options */ js.UndefOr[MarkedOptions], typings.marked.mod.Renderer] = js.native
-    
-    var Slugger: Instantiable0[typings.marked.mod.Slugger] = js.native
-    
-    var TextRenderer: Instantiable0[typings.marked.mod.TextRenderer] = js.native
-    
-    var Tokenizer: Instantiable1[/* options */ js.UndefOr[MarkedOptions], typings.marked.mod.Tokenizer] = js.native
-    
-    val Tokens: js.Any = js.native
-    
-    val defaults: MarkedOptions = js.native
-    
-    /**
-      * Gets the original marked default options.
-      */
-    def getDefaults(): MarkedOptions = js.native
-    
-    /**
-      * @param src String of markdown source to be compiled
-      * @param links Array of links
-      * @param options Hash of options
-      * @return String of compiled HTML
-      */
-    def inlineLexer(src: String, links: js.Array[String]): String = js.native
-    def inlineLexer(src: String, links: js.Array[String], options: MarkedOptions): String = js.native
-    
-    /**
-      * @param src String of markdown source to be compiled
-      * @param options Hash of options
-      */
-    def lexer(src: String): TokensList = js.native
-    def lexer(src: String, options: MarkedOptions): TokensList = js.native
-    
-    /**
-      * Sets the default options.
-      *
-      * @param options Hash of options
-      */
-    def options(options: MarkedOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof marked */ js.Any = js.native
-    
-    /**
-      * Compiles markdown to HTML.
-      *
-      * @param src String of markdown source to be compiled
-      * @param options Hash of options
-      * @param callback Function called when the markdownString has been fully parsed when using async highlighting
-      * @return String of compiled HTML
-      */
-    def parse(src: String): String = js.native
-    /**
-      * Compiles markdown to HTML.
-      *
-      * @param src String of markdown source to be compiled
-      * @param callback Function called when the markdownString has been fully parsed when using async highlighting
-      * @return String of compiled HTML
-      */
-    def parse(
-      src: String,
-      callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
-    ): String = js.native
-    def parse(
-      src: String,
-      options: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
-    ): String = js.native
-    def parse(src: String, options: MarkedOptions): String = js.native
-    def parse(
-      src: String,
-      options: MarkedOptions,
-      callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
-    ): String = js.native
-    
-    /**
-      * Compiles markdown to HTML without enclosing `p` tag.
-      *
-      * @param src String of markdown source to be compiled
-      * @param options Hash of options
-      * @return String of compiled HTML
-      */
-    def parseInline(src: String): String = js.native
-    def parseInline(src: String, options: MarkedOptions): String = js.native
-    
-    /**
-      * @param src Tokenized source as array of tokens
-      * @param options Hash of options
-      */
-    def parser(src: TokensList): String = js.native
-    def parser(src: TokensList, options: MarkedOptions): String = js.native
-    
-    /**
-      * Sets the default options.
-      *
-      * @param options Hash of options
-      */
-    def setOptions(options: MarkedOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof marked */ js.Any = js.native
-    
-    /**
-      * Use Extension
-      * @param Renderer
-      */
-    def use(options: MarkedOptions): Unit = js.native
-    
-    def walkTokens(tokens: TokensList, callback: js.Function1[/* token */ Token, Unit]): /* import warning: importer.ImportType#apply Failed type conversion: typeof marked */ js.Any = js.native
+    extension [Self <: MarkedOptionsasynctrue](x: Self) {
+      
+      inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      
+      inline def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+      
+      inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
+      
+      inline def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
+      
+      inline def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
+      
+      inline def setHeaderIds(value: Boolean): Self = StObject.set(x, "headerIds", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderIdsUndefined: Self = StObject.set(x, "headerIds", js.undefined)
+      
+      inline def setHeaderPrefix(value: String): Self = StObject.set(x, "headerPrefix", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderPrefixUndefined: Self = StObject.set(x, "headerPrefix", js.undefined)
+      
+      inline def setHighlight(
+        value: (/* code */ String, /* lang */ String, /* callback */ js.UndefOr[js.Function2[/* error */ Any, /* code */ js.UndefOr[String], Unit]]) => String | Unit
+      ): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
+      
+      inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+      
+      inline def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
+      
+      inline def setLangPrefixUndefined: Self = StObject.set(x, "langPrefix", js.undefined)
+      
+      inline def setMangle(value: Boolean): Self = StObject.set(x, "mangle", value.asInstanceOf[js.Any])
+      
+      inline def setMangleUndefined: Self = StObject.set(x, "mangle", js.undefined)
+      
+      inline def setPedantic(value: Boolean): Self = StObject.set(x, "pedantic", value.asInstanceOf[js.Any])
+      
+      inline def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
+      
+      inline def setRenderer(value: Renderer[scala.Nothing]): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      
+      inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+      
+      inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
+      
+      inline def setSanitizer(value: /* html */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
+      
+      inline def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
+      
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      
+      inline def setSmartLists(value: Boolean): Self = StObject.set(x, "smartLists", value.asInstanceOf[js.Any])
+      
+      inline def setSmartListsUndefined: Self = StObject.set(x, "smartLists", js.undefined)
+      
+      inline def setSmartypants(value: Boolean): Self = StObject.set(x, "smartypants", value.asInstanceOf[js.Any])
+      
+      inline def setSmartypantsUndefined: Self = StObject.set(x, "smartypants", js.undefined)
+      
+      inline def setTokenizer(value: Tokenizer[scala.Nothing]): Self = StObject.set(x, "tokenizer", value.asInstanceOf[js.Any])
+      
+      inline def setTokenizerUndefined: Self = StObject.set(x, "tokenizer", js.undefined)
+      
+      inline def setWalkTokens(value: /* token */ Token => Unit): Self = StObject.set(x, "walkTokens", js.Any.fromFunction1(value))
+      
+      inline def setWalkTokensUndefined: Self = StObject.set(x, "walkTokens", js.undefined)
+      
+      inline def setXhtml(value: Boolean): Self = StObject.set(x, "xhtml", value.asInstanceOf[js.Any])
+      
+      inline def setXhtmlUndefined: Self = StObject.set(x, "xhtml", js.undefined)
+    }
   }
 }

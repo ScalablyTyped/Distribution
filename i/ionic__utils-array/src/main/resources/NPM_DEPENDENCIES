@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/utils-array" : "1.2.2"
+      "@ionic/utils-array" : "2.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/utils-array" : "1.2.2"
+      "@ionic/utils-array" : "2.1.5"
     }
   ],
   "compile-devDependencies" : [

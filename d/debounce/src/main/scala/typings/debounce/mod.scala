@@ -18,5 +18,5 @@ object mod {
   
   @JSImport("debounce", "debounce")
   @js.native
-  val debounce: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _debounce */ js.Any = js.native
+  val debounce: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _debounce */ Any = js.native
 }

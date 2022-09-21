@@ -37,7 +37,7 @@ trait Instance extends StObject {
   var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   
   /**
-    * A description of the current lifecycle state. The Quarantined state is not used.
+    * A description of the current lifecycle state. The Quarantined state is not used. For information about lifecycle states, see Instance lifecycle in the Amazon EC2 Auto Scaling User Guide. 
     */
   var LifecycleState: typings.awsSdk.autoscalingMod.LifecycleState
   

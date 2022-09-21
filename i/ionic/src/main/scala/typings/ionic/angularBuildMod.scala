@@ -17,7 +17,7 @@ object angularBuildMod {
   
   @JSImport("ionic/lib/project/angular/build", "AngularBuildCLI")
   @js.native
-  class AngularBuildCLI protected () extends BuildCLI[AngularBuildOptions] {
+  open class AngularBuildCLI protected () extends BuildCLI[AngularBuildOptions] {
     def this(e: BuildRunnerDeps) = this()
     
     /* protected */ def buildArchitectCommand(options: AngularBuildOptions): js.Array[String] = js.native
@@ -32,7 +32,7 @@ object angularBuildMod {
   
   @JSImport("ionic/lib/project/angular/build", "AngularBuildRunner")
   @js.native
-  class AngularBuildRunner protected () extends BuildRunner[AngularBuildOptions] {
+  open class AngularBuildRunner protected () extends BuildRunner[AngularBuildOptions] {
     def this(e: AngularBuildRunnerDeps) = this()
     
     /* protected */ @JSName("e")

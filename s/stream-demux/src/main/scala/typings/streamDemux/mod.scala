@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("stream-demux", JSImport.Namespace)
   @js.native
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with StreamDemux[T]
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for round-to
 
-Typings are for version 5.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 Round a number to a specific number of decimal places: `1.234` → `1.2`
@@ -9,11 +9,11 @@ Round a number to a specific number of decimal places: `1.234` → `1.2`
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | round-to |
-| Keywords           | round, number, num, decimal, places, ceil, floor, math, increment |
-| # releases         | 4 |
-| # dependents       | 51 |
-| # downloads        | 836705 |
-| # stars            | 3 |
+| Keywords           | round, number, decimal, places, ceil, floor, math, increment, precision |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 104307.33333333333 |
+| # stars            | 139.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/round-to#readme)

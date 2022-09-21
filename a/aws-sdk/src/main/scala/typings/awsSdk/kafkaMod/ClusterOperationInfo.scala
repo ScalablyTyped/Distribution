@@ -25,14 +25,14 @@ trait ClusterOperationInfo extends StObject {
     The time that the operation was created.
     
     */
-  var CreationTime: js.UndefOr[timestampIso8601] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 
     The time at which the operation finished.
     
     */
-  var EndTime: js.UndefOr[timestampIso8601] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 
@@ -100,11 +100,11 @@ object ClusterOperationInfo {
     
     inline def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
-    inline def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    inline def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -124,7 +124,7 @@ object ClusterOperationInfo {
     
     inline def setOperationStepsUndefined: Self = StObject.set(x, "OperationSteps", js.undefined)
     
-    inline def setOperationStepsVarargs(value: ClusterOperationStep*): Self = StObject.set(x, "OperationSteps", js.Array(value :_*))
+    inline def setOperationStepsVarargs(value: ClusterOperationStep*): Self = StObject.set(x, "OperationSteps", js.Array(value*))
     
     inline def setOperationType(value: string): Self = StObject.set(x, "OperationType", value.asInstanceOf[js.Any])
     

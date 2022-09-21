@@ -37,7 +37,7 @@ object Movement {
     
     inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
@@ -51,7 +51,7 @@ object Movement {
     
     inline def setNextStopoversUndefined: Self = StObject.set(x, "nextStopovers", js.undefined)
     
-    inline def setNextStopoversVarargs(value: StopOver*): Self = StObject.set(x, "nextStopovers", js.Array(value :_*))
+    inline def setNextStopoversVarargs(value: StopOver*): Self = StObject.set(x, "nextStopovers", js.Array(value*))
     
     inline def setPolyline(value: FeatureCollection): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     

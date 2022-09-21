@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Sticky")
 @js.native
-class Sticky protected ()
-  extends Component[StickyProps, ComponentState, js.Any] {
+open class Sticky protected () extends Component[StickyProps, ComponentState, Any] {
   def this(props: StickyProps) = this()
-  def this(props: StickyProps, context: js.Any) = this()
+  def this(props: StickyProps, context: Any) = this()
 }
 object Sticky {
   

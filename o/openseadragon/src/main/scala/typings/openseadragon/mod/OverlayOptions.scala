@@ -19,7 +19,7 @@ trait OverlayOptions extends StObject {
   
   var placement: js.UndefOr[Placement] = js.undefined
   
-  var rotationMode: js.UndefOr[Boolean] = js.undefined
+  var rotationMode: js.UndefOr[OverlayRotationMode] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -52,7 +52,7 @@ object OverlayOptions {
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
-    inline def setRotationMode(value: Boolean): Self = StObject.set(x, "rotationMode", value.asInstanceOf[js.Any])
+    inline def setRotationMode(value: OverlayRotationMode): Self = StObject.set(x, "rotationMode", value.asInstanceOf[js.Any])
     
     inline def setRotationModeUndefined: Self = StObject.set(x, "rotationMode", js.undefined)
     

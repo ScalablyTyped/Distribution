@@ -2,7 +2,6 @@ package typings.ospec
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,12 +36,12 @@ object mod extends Shortcut {
   type AssertionDescriber = js.Function1[/* description */ String, Unit]
   
   type Definer = js.Function2[
-    /* done */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+    /* done */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
     /* timeout */ js.Function1[/* delay */ Double, Unit], 
-    Unit | js.Thenable[js.Any]
+    Unit | js.Thenable[Any]
   ]
   
-  type ObjectConstructor = Instantiable1[/* args (repeated) */ js.Any, js.Any]
+  type ObjectConstructor = Instantiable1[/* args (repeated) */ Any, Any]
   
   @js.native
   trait Ospec extends StObject {
@@ -86,9 +85,9 @@ object mod extends Shortcut {
     def specTimeout(delay: Double): Unit = js.native
     
     /** Returns a function that records the number of times it gets called, and its arguments */
-    def spy[A /* <: js.Array[js.Any] */](): Spy[A, Unit] = js.native
+    def spy[A /* <: js.Array[Any] */](): Spy[A, Unit] = js.native
     // tslint:disable-line:no-unnecessary-generics
-    def spy[A /* <: js.Array[js.Any] */, R](fn: js.Function1[/* args */ A, R]): Spy[A, R] = js.native
+    def spy[A /* <: js.Array[Any] */, R](fn: js.Function1[/* args */ A, R]): Spy[A, R] = js.native
     
     /** Amount of time (in milliseconds) to wait until bailing out of a test */
     def timeout(delay: Double): Unit = js.native
@@ -100,13 +99,13 @@ object mod extends Shortcut {
     
     var context: String
     
-    var error: Error | Null
+    var error: js.Error | Null
     
     var message: String
     
     var pass: Boolean | Null
     
-    var testError: Error | Null
+    var testError: js.Error | Null
   }
   object Result {
     
@@ -119,7 +118,7 @@ object mod extends Shortcut {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorNull: Self = StObject.set(x, "error", null)
       
@@ -129,14 +128,14 @@ object mod extends Shortcut {
       
       inline def setPassNull: Self = StObject.set(x, "pass", null)
       
-      inline def setTestError(value: Error): Self = StObject.set(x, "testError", value.asInstanceOf[js.Any])
+      inline def setTestError(value: js.Error): Self = StObject.set(x, "testError", value.asInstanceOf[js.Any])
       
       inline def setTestErrorNull: Self = StObject.set(x, "testError", null)
     }
   }
   
   @js.native
-  trait Spy[Args /* <: js.Array[js.Any] */, Returns] extends StObject {
+  trait Spy[Args /* <: js.Array[Any] */, Returns] extends StObject {
     
     def apply(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args

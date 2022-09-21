@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
@@ -22,7 +21,7 @@ object LockScreen {
   @js.native
   trait LockApplicationHost extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_unlocking(`type`: unlocking, listener: TypedEventHandler[LockApplicationHost, LockScreenUnlockingEventArgs]): Unit = js.native
     
@@ -32,7 +31,7 @@ object LockScreen {
     @JSName("onunlocking")
     var onunlocking_Original: TypedEventHandler[LockApplicationHost, LockScreenUnlockingEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_unlocking(`type`: unlocking, listener: TypedEventHandler[LockApplicationHost, LockScreenUnlockingEventArgs]): Unit = js.native
     
@@ -89,15 +88,15 @@ object LockScreen {
   @js.native
   trait LockScreenInfo extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_alarmiconchanged(`type`: alarmiconchanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
+    def addEventListener_alarmiconchanged(`type`: alarmiconchanged, listener: TypedEventHandler[LockScreenInfo, Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_badgeschanged(`type`: badgeschanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
+    def addEventListener_badgeschanged(`type`: badgeschanged, listener: TypedEventHandler[LockScreenInfo, Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_detailtextchanged(`type`: detailtextchanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
+    def addEventListener_detailtextchanged(`type`: detailtextchanged, listener: TypedEventHandler[LockScreenInfo, Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_lockscreenimagechanged(`type`: lockscreenimagechanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
+    def addEventListener_lockscreenimagechanged(`type`: lockscreenimagechanged, listener: TypedEventHandler[LockScreenInfo, Any]): Unit = js.native
     
     /** Gets the alarm icon to display. */
     var alarmIcon: IRandomAccessStream = js.native
@@ -112,38 +111,38 @@ object LockScreen {
     var lockScreenImage: IRandomAccessStream = js.native
     
     /** Indicates the alarm icon has changed. */
-    def onalarmiconchanged(ev: js.Any & WinRTEvent[LockScreenInfo]): Unit = js.native
+    def onalarmiconchanged(ev: Any & WinRTEvent[LockScreenInfo]): Unit = js.native
     /** Indicates the alarm icon has changed. */
     @JSName("onalarmiconchanged")
-    var onalarmiconchanged_Original: TypedEventHandler[LockScreenInfo, js.Any] = js.native
+    var onalarmiconchanged_Original: TypedEventHandler[LockScreenInfo, Any] = js.native
     
     /** Indicates the badges have changed. */
-    def onbadgeschanged(ev: js.Any & WinRTEvent[LockScreenInfo]): Unit = js.native
+    def onbadgeschanged(ev: Any & WinRTEvent[LockScreenInfo]): Unit = js.native
     /** Indicates the badges have changed. */
     @JSName("onbadgeschanged")
-    var onbadgeschanged_Original: TypedEventHandler[LockScreenInfo, js.Any] = js.native
+    var onbadgeschanged_Original: TypedEventHandler[LockScreenInfo, Any] = js.native
     
     /** Indicates the detail text has changed. */
-    def ondetailtextchanged(ev: js.Any & WinRTEvent[LockScreenInfo]): Unit = js.native
+    def ondetailtextchanged(ev: Any & WinRTEvent[LockScreenInfo]): Unit = js.native
     /** Indicates the detail text has changed. */
     @JSName("ondetailtextchanged")
-    var ondetailtextchanged_Original: TypedEventHandler[LockScreenInfo, js.Any] = js.native
+    var ondetailtextchanged_Original: TypedEventHandler[LockScreenInfo, Any] = js.native
     
     /** Indicates the lock screen image has changed. */
-    def onlockscreenimagechanged(ev: js.Any & WinRTEvent[LockScreenInfo]): Unit = js.native
+    def onlockscreenimagechanged(ev: Any & WinRTEvent[LockScreenInfo]): Unit = js.native
     /** Indicates the lock screen image has changed. */
     @JSName("onlockscreenimagechanged")
-    var onlockscreenimagechanged_Original: TypedEventHandler[LockScreenInfo, js.Any] = js.native
+    var onlockscreenimagechanged_Original: TypedEventHandler[LockScreenInfo, Any] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_alarmiconchanged(`type`: alarmiconchanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
+    def removeEventListener_alarmiconchanged(`type`: alarmiconchanged, listener: TypedEventHandler[LockScreenInfo, Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_badgeschanged(`type`: badgeschanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
+    def removeEventListener_badgeschanged(`type`: badgeschanged, listener: TypedEventHandler[LockScreenInfo, Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_detailtextchanged(`type`: detailtextchanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
+    def removeEventListener_detailtextchanged(`type`: detailtextchanged, listener: TypedEventHandler[LockScreenInfo, Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_lockscreenimagechanged(`type`: lockscreenimagechanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
+    def removeEventListener_lockscreenimagechanged(`type`: lockscreenimagechanged, listener: TypedEventHandler[LockScreenInfo, Any]): Unit = js.native
   }
   
   /** Represents an unlock deferral. */
@@ -169,7 +168,7 @@ object LockScreen {
   trait LockScreenUnlockingEventArgs extends StObject {
     
     /** Gets the deadline by which the lock screen app must unlock the device. If your unlocking deferral takes too long, your lock screen app will be terminated by the system and potentially removed as the user’s default lock app. */
-    var deadline: Date
+    var deadline: js.Date
     
     /**
       * Gets a LockScreenUnlockingDeferral , which defers the unlocking of the device.
@@ -179,14 +178,14 @@ object LockScreen {
   }
   object LockScreenUnlockingEventArgs {
     
-    inline def apply(deadline: Date, getDeferral: () => LockScreenUnlockingDeferral): LockScreenUnlockingEventArgs = {
+    inline def apply(deadline: js.Date, getDeferral: () => LockScreenUnlockingDeferral): LockScreenUnlockingEventArgs = {
       val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
       __obj.asInstanceOf[LockScreenUnlockingEventArgs]
     }
     
     extension [Self <: LockScreenUnlockingEventArgs](x: Self) {
       
-      inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+      inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
       inline def setGetDeferral(value: () => LockScreenUnlockingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     }

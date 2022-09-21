@@ -11,9 +11,9 @@ Connect querystring middleware
 | Full name          | qs-middleware |
 | Keywords           | connect, querystring |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 79814 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8227.0 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/springernature/qs-middleware)

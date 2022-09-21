@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Revert")
 @js.native
-class Revert ()
+open class Revert ()
   extends typings.nodegit.revertMod.Revert
 /* static members */
 object Revert {

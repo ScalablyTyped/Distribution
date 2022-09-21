@@ -19,7 +19,7 @@ object treeEntryMod {
   
   @JSImport("nodegit/tree-entry", "TreeEntry")
   @js.native
-  class TreeEntry () extends StObject {
+  open class TreeEntry () extends StObject {
     
     def filemode(): FILEMODE = js.native
     

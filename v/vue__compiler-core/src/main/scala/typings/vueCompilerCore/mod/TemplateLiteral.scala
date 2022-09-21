@@ -27,7 +27,7 @@ object TemplateLiteral {
     
     inline def setElements(value: js.Array[String | JSChildNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setType(value: `22`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

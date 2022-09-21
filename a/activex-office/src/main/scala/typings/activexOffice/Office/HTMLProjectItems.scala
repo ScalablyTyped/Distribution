@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLProjectItems extends StObject {
   
-  def apply(Index: js.Any): HTMLProjectItem = js.native
+  def apply(Index: Any): HTMLProjectItem = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): HTMLProjectItem = js.native
+  def Item(Index: Any): HTMLProjectItem = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

@@ -1,13 +1,12 @@
 package typings.tarStream
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.streamMod.PassThrough
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
-import typings.std.Date
-import typings.std.Error
 import typings.tarStream.tarStreamStrings.`block-device`
 import typings.tarStream.tarStreamStrings.`character-device`
 import typings.tarStream.tarStreamStrings.`contiguous-file`
@@ -32,12 +31,46 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def extract(): Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")().asInstanceOf[Extract_]
-  inline def extract(opts: WritableOptions): Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(opts.asInstanceOf[js.Any]).asInstanceOf[Extract_]
+  inline def extract(opts: ExtractOptions): Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(opts.asInstanceOf[js.Any]).asInstanceOf[Extract_]
   
   inline def pack(): Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")().asInstanceOf[Pack_]
   inline def pack(opts: ReadableOptions): Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(opts.asInstanceOf[js.Any]).asInstanceOf[Pack_]
   
-  type Callback = js.Function1[/* err */ js.UndefOr[Error | Null], js.Any]
+  type Callback = js.Function1[/* err */ js.UndefOr[js.Error | Null], Any]
+  
+  trait ExtractOptions
+    extends StObject
+       with WritableOptions {
+    
+    /**
+      * Whether or not to attempt to extract a file that does not have an
+      * officially supported format in the `magic` header, such as `ustar`.
+      */
+    var allowUnknownFormat: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The encoding of the file name header.
+      */
+    var filenameEncoding: js.UndefOr[BufferEncoding] = js.undefined
+  }
+  object ExtractOptions {
+    
+    inline def apply(): ExtractOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ExtractOptions]
+    }
+    
+    extension [Self <: ExtractOptions](x: Self) {
+      
+      inline def setAllowUnknownFormat(value: Boolean): Self = StObject.set(x, "allowUnknownFormat", value.asInstanceOf[js.Any])
+      
+      inline def setAllowUnknownFormatUndefined: Self = StObject.set(x, "allowUnknownFormat", js.undefined)
+      
+      inline def setFilenameEncoding(value: BufferEncoding): Self = StObject.set(x, "filenameEncoding", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameEncodingUndefined: Self = StObject.set(x, "filenameEncoding", js.undefined)
+    }
+  }
   
   @js.native
   trait Extract_ extends Writable {
@@ -45,7 +78,12 @@ object mod {
     @JSName("on")
     def on_entry(
       event: entry,
-      listener: js.Function3[/* headers */ Headers, /* stream */ PassThrough, /* next */ js.Function0[Unit], Unit]
+      listener: js.Function3[
+          /* headers */ Headers, 
+          /* stream */ PassThrough, 
+          /* next */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
+          Unit
+        ]
     ): this.type = js.native
   }
   
@@ -63,7 +101,7 @@ object mod {
     
     var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Date] = js.undefined
+    var mtime: js.UndefOr[js.Date] = js.undefined
     
     var name: String
     
@@ -112,7 +150,7 @@ object mod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       

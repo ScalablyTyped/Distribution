@@ -39,7 +39,7 @@ object TransitionEvent {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

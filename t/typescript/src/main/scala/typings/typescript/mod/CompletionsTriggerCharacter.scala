@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.typescriptStrings.`@`
   - typings.typescript.typescriptStrings.Lessthansign
   - typings.typescript.typescriptStrings.Numbersign
+  - typings.typescript.typescriptStrings.Space
 */
 trait CompletionsTriggerCharacter extends StObject
 object CompletionsTriggerCharacter {
@@ -32,4 +33,6 @@ object CompletionsTriggerCharacter {
   inline def Quotationmark: typings.typescript.typescriptStrings.Quotationmark = "\"".asInstanceOf[typings.typescript.typescriptStrings.Quotationmark]
   
   inline def Slash: typings.typescript.typescriptStrings.Slash = "/".asInstanceOf[typings.typescript.typescriptStrings.Slash]
+  
+  inline def Space: typings.typescript.typescriptStrings.Space = (" ").asInstanceOf[typings.typescript.typescriptStrings.Space]
 }

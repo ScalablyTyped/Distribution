@@ -8,5 +8,5 @@ object ec2throttledexceptionMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/EC2ThrottledException", "EC2ThrottledException")
   @js.native
-  val EC2ThrottledException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EC2ThrottledException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -17,7 +17,7 @@ trait ListSharedReportGroupsInput extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    *  The criterion to be used to list report groups shared with the current AWS account or user. Valid values include:     ARN: List based on the ARN.     MODIFIED_TIME: List based on when information about the shared report group was last changed.   
+    *  The criterion to be used to list report groups shared with the current Amazon Web Services account or user. Valid values include:     ARN: List based on the ARN.     MODIFIED_TIME: List based on when information about the shared report group was last changed.   
     */
   var sortBy: js.UndefOr[SharedResourceSortByType] = js.undefined
   

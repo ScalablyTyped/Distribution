@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.SkeletonData")
 @js.native
-class SkeletonData ()
+open class SkeletonData ()
   extends StObject
      with typings.phaser.spine.SkeletonData {
   

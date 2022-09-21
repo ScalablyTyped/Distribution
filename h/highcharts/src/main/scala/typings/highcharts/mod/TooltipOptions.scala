@@ -44,9 +44,10 @@ trait TooltipOptions extends StObject {
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) How many decimals to show for the `point.change` value when
-    * the `series.compare` option is set. This is overridable in each series'
-    * tooltip options object. The default is to preserve all decimals.
+    * (Highstock) How many decimals to show for the `point.change` or the
+    * `point.cumulativeSum` value when the `series.compare` or the
+    * `series.cumulative` option is set. This is overridable in each series'
+    * tooltip options object.
     */
   var changeDecimals: js.UndefOr[Double] = js.undefined
   
@@ -64,10 +65,10 @@ trait TooltipOptions extends StObject {
     * The cluster tooltip can be also formatted using `tooltip.formatter`
     * callback function and `point.isCluster` flag.
     */
-  var clusterFormat: js.UndefOr[js.Object] = js.undefined
+  var clusterFormat: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) For series on a datetime axes, the date
+    * (Highcharts, Highstock, Gantt) For series on datetime axes, the date
     * format in the tooltip's header will by default be guessed based on the
     * closest data points. This member gives the default string representations
     * used for each unit. For an overview of the replacement codes, see
@@ -92,6 +93,8 @@ trait TooltipOptions extends StObject {
     * types with an extent. By default it behaves this way for pie, polygon,
     * map, sankey and wordcloud series by override in the `plotOptions` for
     * those series types.
+    *
+    * Does not apply if split is `true`.
     *
     * For touch moves to behave the same way, followTouchMove must be `true`
     * also.
@@ -247,11 +250,15 @@ trait TooltipOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function to place the
-    * tooltip in a default position. The callback receives three parameters:
+    * tooltip in a custom position. The callback receives three parameters:
     * `labelWidth`, `labelHeight` and `point`, where point contains values for
     * `plotX` and `plotY` telling where the reference point is in the plot
     * area. Add `chart.plotLeft` and `chart.plotTop` to get the full
     * coordinates.
+    *
+    * To find the actual hovered `Point` instance, use `this.chart.hoverPoint`.
+    * For shared or split tooltips, all the hover points are available in
+    * `this.chart.hoverPoints`.
     *
     * Since v7, when tooltip.split option is enabled, positioner is called for
     * each of the boxes separately, including xAxis header. xAxis header is not
@@ -271,8 +278,8 @@ trait TooltipOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of a symbol to use for
-    * the border around the tooltip. Can be one of: `"callout"`, `"circle"`, or
-    * `"square"`. When tooltip.split option is enabled, shape is applied to all
+    * the border around the tooltip. Can be one of: `"callout"`, `"circle"` or
+    * `"rect"`. When tooltip.split option is enabled, shape is applied to all
     * boxes except header, which is controlled by tooltip.headerShape.
     *
     * Custom callbacks for symbol path generation can also be added to
@@ -315,7 +322,7 @@ trait TooltipOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Prevents the tooltip from
-    * switching or closing, when touched or pointed.
+    * switching or closing when touched or pointed.
     */
   var stickOnContact: js.UndefOr[Boolean] = js.undefined
   
@@ -400,7 +407,7 @@ object TooltipOptions {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setClusterFormat(value: js.Object): Self = StObject.set(x, "clusterFormat", value.asInstanceOf[js.Any])
+    inline def setClusterFormat(value: String): Self = StObject.set(x, "clusterFormat", value.asInstanceOf[js.Any])
     
     inline def setClusterFormatUndefined: Self = StObject.set(x, "clusterFormat", js.undefined)
     

@@ -2,7 +2,7 @@ package typings.builderUtil
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.debug.mod.Debugger
-import typings.node.NodeJS.WritableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,15 +15,15 @@ object logMod {
   
   @JSImport("builder-util/out/log", "Logger")
   @js.native
-  class Logger protected () extends StObject {
-    def this(stream: WritableStream) = this()
+  open class Logger protected () extends StObject {
+    def this(stream: WritableStream[Any]) = this()
     
-    /* private */ var _doLog: js.Any = js.native
+    /* private */ var _doLog: Any = js.native
     
     def debug(fields: Null, message: String): Unit = js.native
     def debug(fields: Fields, message: String): Unit = js.native
     
-    /* private */ var doLog: js.Any = js.native
+    /* private */ var doLog: Any = js.native
     
     def error(): Unit = js.native
     def error(messageOrFields: String): Unit = js.native
@@ -47,7 +47,7 @@ object logMod {
     
     def messageTransformer(message: String, level: LogLevel): String = js.native
     
-    /* protected */ val stream: WritableStream = js.native
+    /* protected */ val stream: WritableStream[Any] = js.native
     
     def warn(): Unit = js.native
     def warn(messageOrFields: String): Unit = js.native
@@ -96,7 +96,7 @@ object logMod {
   inline def setPrinter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrinter")().asInstanceOf[Unit]
   inline def setPrinter(value: js.Function1[/* message */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrinter")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type Fields = StringDictionary[js.Any]
+  type Fields = StringDictionary[Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.builderUtil.builderUtilStrings.info

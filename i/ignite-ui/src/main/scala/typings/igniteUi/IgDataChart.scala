@@ -11,7 +11,7 @@ trait IgDataChart
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Set to true in order to override the default behavior in which series do not animate if an axis range changes
@@ -104,7 +104,7 @@ trait IgDataChart
     * The brushes property defines the palette from which automatically assigned series brushes are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var brushes: js.UndefOr[js.Any] = js.undefined
+  var brushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the template to use for circle markers on the chart.
@@ -112,7 +112,7 @@ trait IgDataChart
     * series with a marker type of circle.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var circleMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var circleMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets which type of hit testing the series should use.
@@ -145,7 +145,7 @@ trait IgDataChart
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
@@ -173,7 +173,7 @@ trait IgDataChart
     * series with a marker type of diamond.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var diamondMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var diamondMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the current Chart's DragModifier property.
@@ -224,7 +224,7 @@ trait IgDataChart
     * series with a marker type of hexagon.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var hexagonMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var hexagonMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the template to use for hexagram markers on the chart.
@@ -232,7 +232,7 @@ trait IgDataChart
     * series with a marker type of hexagram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var hexagramMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var hexagramMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * The length, in milliseconds of the highlighting transition.
@@ -289,28 +289,28 @@ trait IgDataChart
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the MarkerBrushes property.
     * The marker brushes property defines the palette from which automatically assigned marker brushes are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var markerBrushes: js.UndefOr[js.Any] = js.undefined
+  var markerBrushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the MarkerOutlines property.
     * The marker outlines property defines the palette from which automatically assigned marker outlines are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var markerOutlines: js.UndefOr[js.Any] = js.undefined
+  var markerOutlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the Outlines property.
     * The outlines property defines the palette from which automatically assigned series outlines are selected.
     * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var outlines: js.UndefOr[js.Any] = js.undefined
+  var outlines: js.UndefOr[Any] = js.undefined
   
   /**
     * The visibility of the OverviewPlusDetailPane.
@@ -338,7 +338,7 @@ trait IgDataChart
     * series with a marker type of pentagon.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var pentagonMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var pentagonMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the template to use for pentragram markers on the chart.
@@ -346,7 +346,7 @@ trait IgDataChart
     * series with a marker type of pentagram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var pentagramMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var pentagramMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the scaling value used by the main canvas rendering context to apply a scale transform to it.
@@ -369,7 +369,7 @@ trait IgDataChart
     * strokePath is hidden.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  var previewRect: js.UndefOr[js.Any] = js.undefined
+  var previewRect: js.UndefOr[Any] = js.undefined
   
   /**
     * Event fired when the progressive loading state of the series has changed.
@@ -386,7 +386,7 @@ trait IgDataChart
     * series with a marker type of pyramid.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var pyramidMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var pyramidMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Raised when the chart's processing for an update has completed.
@@ -497,7 +497,7 @@ trait IgDataChart
   /**
     * To set both dimensions of the chart simultaneously an object with a width and height property can be provided
     */
-  var size: js.UndefOr[js.Any] = js.undefined
+  var size: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the template to use for square markers on the chart.
@@ -505,7 +505,7 @@ trait IgDataChart
     * series with a marker type of square.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var squareMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var squareMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * The subtitle to display for the component.
@@ -540,7 +540,7 @@ trait IgDataChart
   /**
     * The color to use for the subtitle.
     */
-  var subtitleTextColor: js.UndefOr[js.Any] = js.undefined
+  var subtitleTextColor: js.UndefOr[Any] = js.undefined
   
   /**
     * The css font property to use for the title.
@@ -573,7 +573,7 @@ trait IgDataChart
     * series with a marker type of tetragram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var tetragramMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var tetragramMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * The swatch used to style this widget
@@ -613,7 +613,7 @@ trait IgDataChart
   /**
     * The color to use for the title.
     */
-  var titleTextColor: js.UndefOr[js.Any] = js.undefined
+  var titleTextColor: js.UndefOr[Any] = js.undefined
   
   /**
     * The css font property to use for the title.
@@ -684,7 +684,7 @@ trait IgDataChart
     * series with a marker type of triangle.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var triangleMarkerTemplate: js.UndefOr[js.Any] = js.undefined
+  var triangleMarkerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Handle this event in order to specify which columns the Typical price calculation is based on.
@@ -731,7 +731,7 @@ trait IgDataChart
     * A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  var windowRect: js.UndefOr[js.Any] = js.undefined
+  var windowRect: js.UndefOr[Any] = js.undefined
   
   /**
     * Occurs just after the current Chart's window rectangle is changed.
@@ -815,7 +815,7 @@ object IgDataChart {
     
     inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    inline def setAxesVarargs(value: IgDataChartAxes*): Self = StObject.set(x, "axes", js.Array(value :_*))
+    inline def setAxesVarargs(value: IgDataChartAxes*): Self = StObject.set(x, "axes", js.Array(value*))
     
     inline def setAxisRangeChanged(value: (/* event */ Event, /* ui */ AxisRangeChangedEventUIParam) => Unit): Self = StObject.set(x, "axisRangeChanged", js.Any.fromFunction2(value))
     
@@ -829,11 +829,11 @@ object IgDataChart {
     
     inline def setBrowserNotSupportedUndefined: Self = StObject.set(x, "browserNotSupported", js.undefined)
     
-    inline def setBrushes(value: js.Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
+    inline def setBrushes(value: Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
     
     inline def setBrushesUndefined: Self = StObject.set(x, "brushes", js.undefined)
     
-    inline def setCircleMarkerTemplate(value: js.Any): Self = StObject.set(x, "circleMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setCircleMarkerTemplate(value: Any): Self = StObject.set(x, "circleMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setCircleMarkerTemplateUndefined: Self = StObject.set(x, "circleMarkerTemplate", js.undefined)
     
@@ -849,7 +849,7 @@ object IgDataChart {
     
     inline def setCrosshairVisibilityUndefined: Self = StObject.set(x, "crosshairVisibility", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -865,7 +865,7 @@ object IgDataChart {
     
     inline def setDefaultInteractionUndefined: Self = StObject.set(x, "defaultInteraction", js.undefined)
     
-    inline def setDiamondMarkerTemplate(value: js.Any): Self = StObject.set(x, "diamondMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setDiamondMarkerTemplate(value: Any): Self = StObject.set(x, "diamondMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setDiamondMarkerTemplateUndefined: Self = StObject.set(x, "diamondMarkerTemplate", js.undefined)
     
@@ -885,11 +885,11 @@ object IgDataChart {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHexagonMarkerTemplate(value: js.Any): Self = StObject.set(x, "hexagonMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setHexagonMarkerTemplate(value: Any): Self = StObject.set(x, "hexagonMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setHexagonMarkerTemplateUndefined: Self = StObject.set(x, "hexagonMarkerTemplate", js.undefined)
     
-    inline def setHexagramMarkerTemplate(value: js.Any): Self = StObject.set(x, "hexagramMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setHexagramMarkerTemplate(value: Any): Self = StObject.set(x, "hexagramMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setHexagramMarkerTemplateUndefined: Self = StObject.set(x, "hexagramMarkerTemplate", js.undefined)
     
@@ -933,19 +933,19 @@ object IgDataChart {
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setMarkerBrushes(value: js.Any): Self = StObject.set(x, "markerBrushes", value.asInstanceOf[js.Any])
+    inline def setMarkerBrushes(value: Any): Self = StObject.set(x, "markerBrushes", value.asInstanceOf[js.Any])
     
     inline def setMarkerBrushesUndefined: Self = StObject.set(x, "markerBrushes", js.undefined)
     
-    inline def setMarkerOutlines(value: js.Any): Self = StObject.set(x, "markerOutlines", value.asInstanceOf[js.Any])
+    inline def setMarkerOutlines(value: Any): Self = StObject.set(x, "markerOutlines", value.asInstanceOf[js.Any])
     
     inline def setMarkerOutlinesUndefined: Self = StObject.set(x, "markerOutlines", js.undefined)
     
-    inline def setOutlines(value: js.Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
+    inline def setOutlines(value: Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
     
     inline def setOutlinesUndefined: Self = StObject.set(x, "outlines", js.undefined)
     
@@ -957,11 +957,11 @@ object IgDataChart {
     
     inline def setPanModifierUndefined: Self = StObject.set(x, "panModifier", js.undefined)
     
-    inline def setPentagonMarkerTemplate(value: js.Any): Self = StObject.set(x, "pentagonMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setPentagonMarkerTemplate(value: Any): Self = StObject.set(x, "pentagonMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setPentagonMarkerTemplateUndefined: Self = StObject.set(x, "pentagonMarkerTemplate", js.undefined)
     
-    inline def setPentagramMarkerTemplate(value: js.Any): Self = StObject.set(x, "pentagramMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setPentagramMarkerTemplate(value: Any): Self = StObject.set(x, "pentagramMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setPentagramMarkerTemplateUndefined: Self = StObject.set(x, "pentagramMarkerTemplate", js.undefined)
     
@@ -977,7 +977,7 @@ object IgDataChart {
     
     inline def setPreferHigherResolutionTilesUndefined: Self = StObject.set(x, "preferHigherResolutionTiles", js.undefined)
     
-    inline def setPreviewRect(value: js.Any): Self = StObject.set(x, "previewRect", value.asInstanceOf[js.Any])
+    inline def setPreviewRect(value: Any): Self = StObject.set(x, "previewRect", value.asInstanceOf[js.Any])
     
     inline def setPreviewRectUndefined: Self = StObject.set(x, "previewRect", js.undefined)
     
@@ -985,7 +985,7 @@ object IgDataChart {
     
     inline def setProgressiveLoadStatusChangedUndefined: Self = StObject.set(x, "progressiveLoadStatusChanged", js.undefined)
     
-    inline def setPyramidMarkerTemplate(value: js.Any): Self = StObject.set(x, "pyramidMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setPyramidMarkerTemplate(value: Any): Self = StObject.set(x, "pyramidMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setPyramidMarkerTemplateUndefined: Self = StObject.set(x, "pyramidMarkerTemplate", js.undefined)
     
@@ -1033,13 +1033,13 @@ object IgDataChart {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: IgDataChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: IgDataChartSeries*): Self = StObject.set(x, "series", js.Array(value*))
     
-    inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSquareMarkerTemplate(value: js.Any): Self = StObject.set(x, "squareMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setSquareMarkerTemplate(value: Any): Self = StObject.set(x, "squareMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setSquareMarkerTemplateUndefined: Self = StObject.set(x, "squareMarkerTemplate", js.undefined)
     
@@ -1061,7 +1061,7 @@ object IgDataChart {
     
     inline def setSubtitleRightMarginUndefined: Self = StObject.set(x, "subtitleRightMargin", js.undefined)
     
-    inline def setSubtitleTextColor(value: js.Any): Self = StObject.set(x, "subtitleTextColor", value.asInstanceOf[js.Any])
+    inline def setSubtitleTextColor(value: Any): Self = StObject.set(x, "subtitleTextColor", value.asInstanceOf[js.Any])
     
     inline def setSubtitleTextColorUndefined: Self = StObject.set(x, "subtitleTextColor", js.undefined)
     
@@ -1087,7 +1087,7 @@ object IgDataChart {
     
     inline def setSynchronizeVerticallyUndefined: Self = StObject.set(x, "synchronizeVertically", js.undefined)
     
-    inline def setTetragramMarkerTemplate(value: js.Any): Self = StObject.set(x, "tetragramMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setTetragramMarkerTemplate(value: Any): Self = StObject.set(x, "tetragramMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setTetragramMarkerTemplateUndefined: Self = StObject.set(x, "tetragramMarkerTemplate", js.undefined)
     
@@ -1113,7 +1113,7 @@ object IgDataChart {
     
     inline def setTitleRightMarginUndefined: Self = StObject.set(x, "titleRightMargin", js.undefined)
     
-    inline def setTitleTextColor(value: js.Any): Self = StObject.set(x, "titleTextColor", value.asInstanceOf[js.Any])
+    inline def setTitleTextColor(value: Any): Self = StObject.set(x, "titleTextColor", value.asInstanceOf[js.Any])
     
     inline def setTitleTextColorUndefined: Self = StObject.set(x, "titleTextColor", js.undefined)
     
@@ -1147,7 +1147,7 @@ object IgDataChart {
     
     inline def setTopMarginUndefined: Self = StObject.set(x, "topMargin", js.undefined)
     
-    inline def setTriangleMarkerTemplate(value: js.Any): Self = StObject.set(x, "triangleMarkerTemplate", value.asInstanceOf[js.Any])
+    inline def setTriangleMarkerTemplate(value: Any): Self = StObject.set(x, "triangleMarkerTemplate", value.asInstanceOf[js.Any])
     
     inline def setTriangleMarkerTemplateUndefined: Self = StObject.set(x, "triangleMarkerTemplate", js.undefined)
     
@@ -1175,7 +1175,7 @@ object IgDataChart {
     
     inline def setWindowPositionVerticalUndefined: Self = StObject.set(x, "windowPositionVertical", js.undefined)
     
-    inline def setWindowRect(value: js.Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
+    inline def setWindowRect(value: Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
     
     inline def setWindowRectChanged(value: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit): Self = StObject.set(x, "windowRectChanged", js.Any.fromFunction2(value))
     

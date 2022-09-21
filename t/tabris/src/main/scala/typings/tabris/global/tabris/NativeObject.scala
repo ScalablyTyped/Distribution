@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.NativeObject")
 @js.native
-/* protected */ class NativeObject ()
+/**
+  * Base class for all objects with a native implementation.
+  */
+/* protected */ open class NativeObject ()
   extends typings.tabris.mod.NativeObject {
-  /* protected */ def this(properties: StringDictionary[js.Any]) = this()
+  /* protected */ def this(properties: StringDictionary[Any]) = this()
 }
 /* static members */
 object NativeObject {

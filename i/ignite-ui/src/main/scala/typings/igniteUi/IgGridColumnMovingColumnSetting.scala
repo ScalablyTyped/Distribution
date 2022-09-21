@@ -10,7 +10,7 @@ trait IgGridColumnMovingColumnSetting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Allows the column to be moved.

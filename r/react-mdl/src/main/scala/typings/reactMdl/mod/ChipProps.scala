@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChipProps
   extends StObject
-     with HTMLProps[js.Any] {
+     with HTMLProps[Any] {
   
   @JSName("onClick")
   var onClick_ChipProps: js.UndefOr[MouseEventHandler[Chip]] = js.undefined

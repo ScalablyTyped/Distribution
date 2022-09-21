@@ -40,12 +40,12 @@ object jasmine {
     
     def preload(uls: String*): Unit = js.native
     
-    def proxyCallTo_(methodName: String, passedArguments: js.Any): js.Any = js.native
+    def proxyCallTo_(methodName: String, passedArguments: Any): Any = js.native
     
     def read(uls: String*): String = js.native
     
     def sandbox(): String = js.native
-    def sandbox(attributes: js.Any): String = js.native
+    def sandbox(attributes: Any): String = js.native
     
     def set(html: String): String = js.native
   }
@@ -54,15 +54,15 @@ object jasmine {
     
     var eventName: String
     
-    def handler(eventObject: JQueryEventObject): js.Any
+    def handler(eventObject: JQueryEventObject): Any
     
-    def reset(): js.Any
+    def reset(): Any
     
     var selector: String
   }
   object JQueryEventSpy {
     
-    inline def apply(eventName: String, handler: JQueryEventObject => js.Any, reset: () => js.Any, selector: String): JQueryEventSpy = {
+    inline def apply(eventName: String, handler: JQueryEventObject => Any, reset: () => Any, selector: String): JQueryEventSpy = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], handler = js.Any.fromFunction1(handler), reset = js.Any.fromFunction0(reset), selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[JQueryEventSpy]
     }
@@ -71,9 +71,9 @@ object jasmine {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      inline def setHandler(value: JQueryEventObject => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: JQueryEventObject => Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      inline def setReset(value: () => js.Any): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Any): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     }
@@ -85,13 +85,13 @@ object jasmine {
     
     var fixturesPath: String
     
-    def getFixtureData_(url: String): js.Any
+    def getFixtureData_(url: String): Any
     
     def load(uls: String*): Unit
     
     def loadFixtureIntoCache_(relativeUrl: String): Unit
     
-    def proxyCallTo_(methodName: String, passedArguments: js.Any): js.Any
+    def proxyCallTo_(methodName: String, passedArguments: Any): Any
     
     def read(uls: String*): String
   }
@@ -100,10 +100,10 @@ object jasmine {
     inline def apply(
       clearCache: () => Unit,
       fixturesPath: String,
-      getFixtureData_ : String => js.Any,
+      getFixtureData_ : String => Any,
       load: /* repeated */ String => Unit,
       loadFixtureIntoCache_ : String => Unit,
-      proxyCallTo_ : (String, js.Any) => js.Any,
+      proxyCallTo_ : (String, Any) => Any,
       read: /* repeated */ String => String
     ): JSONFixtures = {
       val __obj = js.Dynamic.literal(clearCache = js.Any.fromFunction0(clearCache), fixturesPath = fixturesPath.asInstanceOf[js.Any], getFixtureData_ = js.Any.fromFunction1(getFixtureData_), load = js.Any.fromFunction1(load), loadFixtureIntoCache_ = js.Any.fromFunction1(loadFixtureIntoCache_), proxyCallTo_ = js.Any.fromFunction2(proxyCallTo_), read = js.Any.fromFunction1(read))
@@ -116,13 +116,13 @@ object jasmine {
       
       inline def setFixturesPath(value: String): Self = StObject.set(x, "fixturesPath", value.asInstanceOf[js.Any])
       
-      inline def setGetFixtureData_(value: String => js.Any): Self = StObject.set(x, "getFixtureData_", js.Any.fromFunction1(value))
+      inline def setGetFixtureData_(value: String => Any): Self = StObject.set(x, "getFixtureData_", js.Any.fromFunction1(value))
       
       inline def setLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
       inline def setLoadFixtureIntoCache_(value: String => Unit): Self = StObject.set(x, "loadFixtureIntoCache_", js.Any.fromFunction1(value))
       
-      inline def setProxyCallTo_(value: (String, js.Any) => js.Any): Self = StObject.set(x, "proxyCallTo_", js.Any.fromFunction2(value))
+      inline def setProxyCallTo_(value: (String, Any) => Any): Self = StObject.set(x, "proxyCallTo_", js.Any.fromFunction2(value))
       
       inline def setRead(value: /* repeated */ String => String): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     }
@@ -136,7 +136,7 @@ object jasmine {
     
     var events: JasmineJQueryEvents
     
-    var matchersClass: js.Any
+    var matchersClass: Any
   }
   object JasmineJQuery {
     
@@ -144,7 +144,7 @@ object jasmine {
       browserTagCaseIndependentHtml: String => String,
       elementToString: JQuery[HTMLElement] => String,
       events: JasmineJQueryEvents,
-      matchersClass: js.Any
+      matchersClass: Any
     ): JasmineJQuery = {
       val __obj = js.Dynamic.literal(browserTagCaseIndependentHtml = js.Any.fromFunction1(browserTagCaseIndependentHtml), elementToString = js.Any.fromFunction1(elementToString), events = events.asInstanceOf[js.Any], matchersClass = matchersClass.asInstanceOf[js.Any])
       __obj.asInstanceOf[JasmineJQuery]
@@ -158,13 +158,13 @@ object jasmine {
       
       inline def setEvents(value: JasmineJQueryEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setMatchersClass(value: js.Any): Self = StObject.set(x, "matchersClass", value.asInstanceOf[js.Any])
+      inline def setMatchersClass(value: Any): Self = StObject.set(x, "matchersClass", value.asInstanceOf[js.Any])
     }
   }
   
   trait JasmineJQueryEvents extends StObject {
     
-    def args(selector: String, eventName: String): js.Any
+    def args(selector: String, eventName: String): Any
     
     def cleanUp(): Unit
     
@@ -176,18 +176,18 @@ object jasmine {
     
     def wasTriggered(selector: String, eventName: String): Boolean
     
-    def wasTriggeredWith(selector: String, eventName: String, expectedArgs: js.Any, env: Env): Boolean
+    def wasTriggeredWith(selector: String, eventName: String, expectedArgs: Any, env: Env): Boolean
   }
   object JasmineJQueryEvents {
     
     inline def apply(
-      args: (String, String) => js.Any,
+      args: (String, String) => Any,
       cleanUp: () => Unit,
       spyOn: (String, String) => JQueryEventSpy,
       wasPrevented: (String, String) => Boolean,
       wasStopped: (String, String) => Boolean,
       wasTriggered: (String, String) => Boolean,
-      wasTriggeredWith: (String, String, js.Any, Env) => Boolean
+      wasTriggeredWith: (String, String, Any, Env) => Boolean
     ): JasmineJQueryEvents = {
       val __obj = js.Dynamic.literal(args = js.Any.fromFunction2(args), cleanUp = js.Any.fromFunction0(cleanUp), spyOn = js.Any.fromFunction2(spyOn), wasPrevented = js.Any.fromFunction2(wasPrevented), wasStopped = js.Any.fromFunction2(wasStopped), wasTriggered = js.Any.fromFunction2(wasTriggered), wasTriggeredWith = js.Any.fromFunction4(wasTriggeredWith))
       __obj.asInstanceOf[JasmineJQueryEvents]
@@ -195,7 +195,7 @@ object jasmine {
     
     extension [Self <: JasmineJQueryEvents](x: Self) {
       
-      inline def setArgs(value: (String, String) => js.Any): Self = StObject.set(x, "args", js.Any.fromFunction2(value))
+      inline def setArgs(value: (String, String) => Any): Self = StObject.set(x, "args", js.Any.fromFunction2(value))
       
       inline def setCleanUp(value: () => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction0(value))
       
@@ -207,14 +207,14 @@ object jasmine {
       
       inline def setWasTriggered(value: (String, String) => Boolean): Self = StObject.set(x, "wasTriggered", js.Any.fromFunction2(value))
       
-      inline def setWasTriggeredWith(value: (String, String, js.Any, Env) => Boolean): Self = StObject.set(x, "wasTriggeredWith", js.Any.fromFunction4(value))
+      inline def setWasTriggeredWith(value: (String, String, Any, Env) => Boolean): Self = StObject.set(x, "wasTriggeredWith", js.Any.fromFunction4(value))
     }
   }
   
   @js.native
   trait Matchers[T] extends StObject {
     
-    def toBe(selector: T): Boolean = js.native
+    def toBe(selector: T): Unit = js.native
     
     /**
       * Only for tags that have checked attribute
@@ -222,7 +222,7 @@ object jasmine {
       * // returns true
       * expect($('<input type="checkbox" checked="checked"/>')).toBeChecked()
       */
-    def toBeChecked(): Boolean = js.native
+    def toBeChecked(): Unit = js.native
     
     /**
       * Only for tags that have disabled attribute
@@ -230,12 +230,12 @@ object jasmine {
       * // returns true
       * expect('<input type="submit" disabled="disabled"/>').toBeDisabled()
       */
-    def toBeDisabled(): Boolean = js.native
+    def toBeDisabled(): Unit = js.native
     
     /**
       * Checks for child DOM elements or text
       */
-    def toBeEmpty(): Boolean = js.native
+    def toBeEmpty(): Unit = js.native
     
     /**
       * Check if DOM element is focused
@@ -243,7 +243,7 @@ object jasmine {
       * // returns true
       * expect($('<input type="text" />').focus()).toBeFocused()
       */
-    def toBeFocused(): Boolean = js.native
+    def toBeFocused(): Unit = js.native
     
     /**
       * Check if DOM element is hidden.
@@ -253,14 +253,14 @@ object jasmine {
       * - Their width and height are explicitly set to 0.
       * - An ancestor element is hidden, so the element is not shown on the page.
       */
-    def toBeHidden(): Boolean = js.native
+    def toBeHidden(): Unit = js.native
     
     /**
       * Checks to see if the matched element is attached to the DOM.
       * @example
       * expect($('#id-name')[0]).toBeInDOM()
       */
-    def toBeInDOM(): Boolean = js.native
+    def toBeInDOM(): Unit = js.native
     
     /**
       * Check to see if the set of matched elements matches the given selector
@@ -270,7 +270,7 @@ object jasmine {
       *
       * @returns {Boolean} true if DOM contains the element
       */
-    def toBeMatchedBy(selector: String): Boolean = js.native
+    def toBeMatchedBy(selector: String): Unit = js.native
     
     /**
       * Only for tags that have checked attribute
@@ -279,13 +279,13 @@ object jasmine {
       * // returns true
       * expect($('<option selected="selected"></option>')).toBeSelected()
       */
-    def toBeSelected(): Boolean = js.native
+    def toBeSelected(): Unit = js.native
     
     /**
       * Checks if DOM element is visible.
       * Elements are considered visible if they consume space in the document. Visible elements have a width or height that is greater than zero.
       */
-    def toBeVisible(): Boolean = js.native
+    def toBeVisible(): Unit = js.native
     
     /**
       * Check if DOM element is matched by the given selector.
@@ -294,7 +294,7 @@ object jasmine {
       * // returns true
       * expect($('<div><span class="some-class"></span></div>')).toContain('some-class')
       */
-    def toContain(selector: js.Any): Boolean = js.native
+    def toContain(selector: Any): Unit = js.native
     
     /**
       * Check if DOM element exists inside the given parent element.
@@ -303,7 +303,7 @@ object jasmine {
       * // returns true
       * expect($('<div><span class="some-class"></span></div>')).toContainElement('span.some-class')
       */
-    def toContainElement(selector: String): Boolean = js.native
+    def toContainElement(selector: String): Unit = js.native
     
     /**
       * Check if DOM element contains the specified HTML.
@@ -312,7 +312,7 @@ object jasmine {
       * // returns true
       * expect($('<div><ul></ul><h1>header</h1></div>')).toContainHtml('<ul></ul>')
       */
-    def toContainHtml(html: String): Boolean = js.native
+    def toContainHtml(html: String): Unit = js.native
     
     /**
       * Check if DOM element contains the specified text.
@@ -321,12 +321,12 @@ object jasmine {
       * // returns true
       * expect($('<div><ul></ul><h1>header</h1></div>')).toContainText('header')
       */
-    def toContainText(text: String): Boolean = js.native
+    def toContainText(text: String): Unit = js.native
     
     /**
       * Checks if element exists in or out the DOM.
       */
-    def toExist(): Boolean = js.native
+    def toExist(): Unit = js.native
     
     /**
       * Checks if DOM element handles event.
@@ -335,7 +335,7 @@ object jasmine {
       * // returns true
       * expect($form).toHandle("submit")
       */
-    def toHandle(eventName: String): Boolean = js.native
+    def toHandle(eventName: String): Unit = js.native
     
     /**
       * Assigns a callback to an event of the DOM element.
@@ -346,7 +346,7 @@ object jasmine {
       * @example
       * expect($form).toHandleWith("submit", yourSubmitCallback)
       */
-    def toHandleWith(eventName: String, eventHandler: JQueryCallback): Boolean = js.native
+    def toHandleWith(eventName: String, eventHandler: JQueryCallback): Unit = js.native
     
     /**
       * Check if DOM element contains an attribute and, optionally, if the value of the attribute is equal to the expected one.
@@ -354,20 +354,20 @@ object jasmine {
       * @param attributeName Name of the attribute to check
       * @param expectedAttributeValue Expected attribute value
       */
-    def toHaveAttr(attributeName: String): Boolean = js.native
-    def toHaveAttr(attributeName: String, expectedAttributeValue: js.Any): Boolean = js.native
+    def toHaveAttr(attributeName: String): Unit = js.native
+    def toHaveAttr(attributeName: String, expectedAttributeValue: Any): Unit = js.native
     
     /**
       * Checks if event propagation has been prevented.
       */
-    def toHaveBeenPrevented(): Boolean = js.native
+    def toHaveBeenPrevented(): Unit = js.native
     
     /**
       * Checks if event propagation has been prevented on element with selector.
       *
       * @param selector Selector that should have prevented the event.
       */
-    def toHaveBeenPreventedOn(selector: String): Boolean = js.native
+    def toHaveBeenPreventedOn(selector: String): Unit = js.native
     
     /**
       * Checks if event propagation has been stopped.
@@ -379,7 +379,7 @@ object jasmine {
       * $('#some_element').click()
       * expect(spyEvent).toHaveBeenStopped()
       */
-    def toHaveBeenStopped(): Boolean = js.native
+    def toHaveBeenStopped(): Unit = js.native
     
     /**
       * Checks if event propagation has been stopped by an element with the given selector.
@@ -391,25 +391,25 @@ object jasmine {
       * $('#some_element').click()
       * expect('click').toHaveBeenStoppedOn('#some_element')
       */
-    def toHaveBeenStoppedOn(selector: String): Boolean = js.native
+    def toHaveBeenStoppedOn(selector: String): Unit = js.native
     
     /**
       * Checks if event was triggered.
       */
-    def toHaveBeenTriggered(): Boolean = js.native
+    def toHaveBeenTriggered(): Unit = js.native
     
     /**
       * Checks if the event has been triggered on selector.
       * @param selector Selector that should have triggered the event.
       */
-    def toHaveBeenTriggeredOn(selector: String): Boolean = js.native
+    def toHaveBeenTriggeredOn(selector: String): Unit = js.native
     
     /**
       * Checks if the event has been triggered on selector.
       * @param selector Selector that should have triggered the event.
       * @param args Extra arguments to be passed to jQuery events functions.
       */
-    def toHaveBeenTriggeredOnAndWith(selector: String, args: js.Any*): Boolean = js.native
+    def toHaveBeenTriggeredOnAndWith(selector: String, args: Any*): Unit = js.native
     
     /**
       * Check if DOM element has class.
@@ -420,7 +420,7 @@ object jasmine {
       * // returns true
       * expect($('<div class="some-class"></div>')).toHaveClass("some-class")
       */
-    def toHaveClass(className: String): Boolean = js.native
+    def toHaveClass(className: String): Unit = js.native
     
     /**
       * Check if DOM element has the given CSS properties.
@@ -435,14 +435,14 @@ object jasmine {
       * // returns true
       * expect($('<div style="display: none; margin: 10px;"></div>')).toHaveCss({margin: "10px"})
       */
-    def toHaveCss(css: js.Any): Boolean = js.native
+    def toHaveCss(css: Any): Unit = js.native
     
     /**
       * Check if DOM element has the given data.
       * This can only be applied for element on with jQuery data(key) can be called.
       *
       */
-    def toHaveData(key: String, expectedValue: String): Boolean = js.native
+    def toHaveData(key: String, expectedValue: String): Unit = js.native
     
     /**
       * Check if DOM element has the specified HTML.
@@ -451,21 +451,21 @@ object jasmine {
       * // returns true
       * expect($('<div><span></span></div>')).toHaveHtml('<span></span>')
       */
-    def toHaveHtml(html: String): Boolean = js.native
+    def toHaveHtml(html: String): Unit = js.native
     
     /**
       * Check if DOM element has the given Id
       *
       * @param Id Expected identifier
       */
-    def toHaveId(id: String): Boolean = js.native
+    def toHaveId(id: String): Unit = js.native
     
     /**
       * Checks if array has the given length.
       *
       * @param length Expected length
       */
-    def toHaveLength(length: Double): Boolean = js.native
+    def toHaveLength(length: Double): Unit = js.native
     
     /**
       * Check if DOM element contains a property and, optionally, if the value of the property is equal to the expected one.
@@ -473,8 +473,8 @@ object jasmine {
       * @param propertyName Property name to check
       * @param expectedPropertyValue Expected property value
       */
-    def toHaveProp(propertyName: String): Boolean = js.native
-    def toHaveProp(propertyName: String, expectedPropertyValue: js.Any): Boolean = js.native
+    def toHaveProp(propertyName: String): Unit = js.native
+    def toHaveProp(propertyName: String, expectedPropertyValue: Any): Unit = js.native
     
     /**
       * Check if DOM element has the given Text.
@@ -484,7 +484,7 @@ object jasmine {
       * // returns true
       * expect($('<div>some text</div>')).toHaveText('some text')
       */
-    def toHaveText(text: String): Boolean = js.native
+    def toHaveText(text: String): Unit = js.native
     
     /**
       * Check if DOM element has the given value.
@@ -494,7 +494,7 @@ object jasmine {
       * // returns true
       * expect($('<input type="text" value="some text"/>')).toHaveValue('some text')
       */
-    def toHaveValue(value: String): Boolean = js.native
+    def toHaveValue(value: String): Unit = js.native
   }
   
   trait StyleFixtures extends StObject {
@@ -521,7 +521,7 @@ object jasmine {
     
     def preload(uls: String*): Unit
     
-    def proxyCallTo_(methodName: String, passedArguments: js.Any): js.Any
+    def proxyCallTo_(methodName: String, passedArguments: Any): Any
     
     def read_(uls: String*): String
     
@@ -541,7 +541,7 @@ object jasmine {
       loadFixtureIntoCache_ : String => Unit,
       makeFixtureUrl_ : String => String,
       preload: /* repeated */ String => Unit,
-      proxyCallTo_ : (String, js.Any) => js.Any,
+      proxyCallTo_ : (String, Any) => Any,
       read_ : /* repeated */ String => String,
       set: String => String
     ): StyleFixtures = {
@@ -573,7 +573,7 @@ object jasmine {
       
       inline def setPreload(value: /* repeated */ String => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))
       
-      inline def setProxyCallTo_(value: (String, js.Any) => js.Any): Self = StObject.set(x, "proxyCallTo_", js.Any.fromFunction2(value))
+      inline def setProxyCallTo_(value: (String, Any) => Any): Self = StObject.set(x, "proxyCallTo_", js.Any.fromFunction2(value))
       
       inline def setRead_(value: /* repeated */ String => String): Self = StObject.set(x, "read_", js.Any.fromFunction1(value))
       

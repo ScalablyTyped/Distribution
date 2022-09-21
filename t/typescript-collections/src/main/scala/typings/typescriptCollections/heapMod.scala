@@ -53,7 +53,7 @@ object heapMod {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with Heap[T] {
     def this(compareFunction: ICompareFunction[T]) = this()
@@ -78,7 +78,7 @@ object heapMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    var compare: js.Any = js.native
+    var compare: Any = js.native
     
     /**
       * Returns true if this heap contains the specified element.
@@ -95,7 +95,7 @@ object heapMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /**
       * Executes the provided function once for each element present in this heap in
@@ -123,7 +123,7 @@ object heapMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def leftChildIndex(nodeIndex: js.Any): js.Any = js.native
+    override def leftChildIndex(nodeIndex: Any): Any = js.native
     
     /**
       * Returns the index of the smaller child node (if it exists).
@@ -134,7 +134,7 @@ object heapMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def minIndex(leftChild: js.Any, rightChild: js.Any): js.Any = js.native
+    override def minIndex(leftChild: Any, rightChild: Any): Any = js.native
     
     /**
       * Returns the index of the parent of the node at the given index.
@@ -143,7 +143,7 @@ object heapMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def parentIndex(nodeIndex: js.Any): js.Any = js.native
+    override def parentIndex(nodeIndex: Any): Any = js.native
     
     /**
       * Retrieves but does not remove the root element of this heap.
@@ -169,7 +169,7 @@ object heapMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def rightChildIndex(nodeIndex: js.Any): js.Any = js.native
+    override def rightChildIndex(nodeIndex: Any): Any = js.native
     
     /**
       * Moves the node at the given index down to its proper place in the heap.
@@ -177,7 +177,7 @@ object heapMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def siftDown(nodeIndex: js.Any): js.Any = js.native
+    override def siftDown(nodeIndex: Any): Any = js.native
     
     /**
       * Moves the node at the given index up to its proper place in the heap.
@@ -185,7 +185,7 @@ object heapMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def siftUp(index: js.Any): js.Any = js.native
+    override def siftUp(index: Any): Any = js.native
     
     /**
       * Returns the number of elements in this heap.
@@ -214,7 +214,7 @@ object heapMod {
       * @type {function(Object,Object):number}
       * @private
       */
-    /* private */ var compare: js.Any
+    /* private */ var compare: Any
     
     /**
       * Returns true if this heap contains the specified element.
@@ -229,7 +229,7 @@ object heapMod {
       * @type {Array.<Object>}
       * @private
       */
-    /* private */ var data: js.Any
+    /* private */ var data: Any
     
     /**
       * Executes the provided function once for each element present in this heap in
@@ -254,7 +254,7 @@ object heapMod {
       * @return {number} The index of the left child.
       * @private
       */
-    /* private */ def leftChildIndex(nodeIndex: js.Any): js.Any
+    /* private */ def leftChildIndex(nodeIndex: Any): Any
     
     /**
       * Returns the index of the smaller child node (if it exists).
@@ -264,7 +264,7 @@ object heapMod {
       * exists.
       * @private
       */
-    /* private */ def minIndex(leftChild: js.Any, rightChild: js.Any): js.Any
+    /* private */ def minIndex(leftChild: Any, rightChild: Any): Any
     
     /**
       * Returns the index of the parent of the node at the given index.
@@ -272,7 +272,7 @@ object heapMod {
       * @return {number} The index of the parent.
       * @private
       */
-    /* private */ def parentIndex(nodeIndex: js.Any): js.Any
+    /* private */ def parentIndex(nodeIndex: Any): Any
     
     /**
       * Retrieves but does not remove the root element of this heap.
@@ -295,21 +295,21 @@ object heapMod {
       * @return {number} The index of the right child.
       * @private
       */
-    /* private */ def rightChildIndex(nodeIndex: js.Any): js.Any
+    /* private */ def rightChildIndex(nodeIndex: Any): Any
     
     /**
       * Moves the node at the given index down to its proper place in the heap.
       * @param {number} nodeIndex The index of the node to move down.
       * @private
       */
-    /* private */ def siftDown(nodeIndex: js.Any): js.Any
+    /* private */ def siftDown(nodeIndex: Any): Any
     
     /**
       * Moves the node at the given index up to its proper place in the heap.
       * @param {number} index The index of the node to move up.
       * @private
       */
-    /* private */ def siftUp(index: js.Any): js.Any
+    /* private */ def siftUp(index: Any): Any
     
     /**
       * Returns the number of elements in this heap.
@@ -322,19 +322,19 @@ object heapMod {
     inline def apply[T](
       add: T => Boolean,
       clear: () => Unit,
-      compare: js.Any,
+      compare: Any,
       contains: T => Boolean,
-      data: js.Any,
+      data: Any,
       forEach: ILoopFunction[T] => Unit,
       isEmpty: () => Boolean,
-      leftChildIndex: js.Any => js.Any,
-      minIndex: (js.Any, js.Any) => js.Any,
-      parentIndex: js.Any => js.Any,
+      leftChildIndex: Any => Any,
+      minIndex: (Any, Any) => Any,
+      parentIndex: Any => Any,
       peek: () => js.UndefOr[T],
       removeRoot: () => js.UndefOr[T],
-      rightChildIndex: js.Any => js.Any,
-      siftDown: js.Any => js.Any,
-      siftUp: js.Any => js.Any,
+      rightChildIndex: Any => Any,
+      siftDown: Any => Any,
+      siftUp: Any => Any,
       size: () => Double
     ): Heap[T] = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clear = js.Any.fromFunction0(clear), compare = compare.asInstanceOf[js.Any], contains = js.Any.fromFunction1(contains), data = data.asInstanceOf[js.Any], forEach = js.Any.fromFunction1(forEach), isEmpty = js.Any.fromFunction0(isEmpty), leftChildIndex = js.Any.fromFunction1(leftChildIndex), minIndex = js.Any.fromFunction2(minIndex), parentIndex = js.Any.fromFunction1(parentIndex), peek = js.Any.fromFunction0(peek), removeRoot = js.Any.fromFunction0(removeRoot), rightChildIndex = js.Any.fromFunction1(rightChildIndex), siftDown = js.Any.fromFunction1(siftDown), siftUp = js.Any.fromFunction1(siftUp), size = js.Any.fromFunction0(size))
@@ -347,31 +347,31 @@ object heapMod {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      inline def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+      inline def setCompare(value: Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
       
       inline def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setForEach(value: ILoopFunction[T] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
       inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      inline def setLeftChildIndex(value: js.Any => js.Any): Self = StObject.set(x, "leftChildIndex", js.Any.fromFunction1(value))
+      inline def setLeftChildIndex(value: Any => Any): Self = StObject.set(x, "leftChildIndex", js.Any.fromFunction1(value))
       
-      inline def setMinIndex(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "minIndex", js.Any.fromFunction2(value))
+      inline def setMinIndex(value: (Any, Any) => Any): Self = StObject.set(x, "minIndex", js.Any.fromFunction2(value))
       
-      inline def setParentIndex(value: js.Any => js.Any): Self = StObject.set(x, "parentIndex", js.Any.fromFunction1(value))
+      inline def setParentIndex(value: Any => Any): Self = StObject.set(x, "parentIndex", js.Any.fromFunction1(value))
       
       inline def setPeek(value: () => js.UndefOr[T]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       
       inline def setRemoveRoot(value: () => js.UndefOr[T]): Self = StObject.set(x, "removeRoot", js.Any.fromFunction0(value))
       
-      inline def setRightChildIndex(value: js.Any => js.Any): Self = StObject.set(x, "rightChildIndex", js.Any.fromFunction1(value))
+      inline def setRightChildIndex(value: Any => Any): Self = StObject.set(x, "rightChildIndex", js.Any.fromFunction1(value))
       
-      inline def setSiftDown(value: js.Any => js.Any): Self = StObject.set(x, "siftDown", js.Any.fromFunction1(value))
+      inline def setSiftDown(value: Any => Any): Self = StObject.set(x, "siftDown", js.Any.fromFunction1(value))
       
-      inline def setSiftUp(value: js.Any => js.Any): Self = StObject.set(x, "siftUp", js.Any.fromFunction1(value))
+      inline def setSiftUp(value: Any => Any): Self = StObject.set(x, "siftUp", js.Any.fromFunction1(value))
       
       inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     }

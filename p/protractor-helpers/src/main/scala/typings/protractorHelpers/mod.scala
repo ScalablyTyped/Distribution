@@ -3,7 +3,6 @@ package typings.protractorHelpers
 import typings.protractorHelpers.mod.global.protractor.ElementArrayFinder
 import typings.protractorHelpers.mod.global.protractor.ElementFinder
 import typings.seleniumWebdriver.mod.Locator
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,13 +15,13 @@ object mod {
   
   inline def clearAndSetValue(input: ElementFinder, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearAndSetValue")(input.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def createMessage(actual: String, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def createMessage(actual: ElementArrayFinder, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def createMessage(actual: ElementFinder, message: String, isNot: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createMessage(actual: String, message: String, isNot: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createMessage(actual: ElementArrayFinder, message: String, isNot: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createMessage(actual: ElementFinder, message: String, isNot: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(actual.asInstanceOf[js.Any], message.asInstanceOf[js.Any], isNot.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def displayHover(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("displayHover")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def getFilteredConsoleErrors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilteredConsoleErrors")().asInstanceOf[js.Any]
+  inline def getFilteredConsoleErrors(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilteredConsoleErrors")().asInstanceOf[Any]
   
   object global {
     
@@ -72,13 +71,13 @@ object mod {
         def toMatchMoneyWithFraction(expectedValue: Double): Boolean = js.native
         def toMatchMoneyWithFraction(expectedValue: Double, currencySymbol: String): Boolean = js.native
         
-        def toMatchRegex(regex: RegExp): Boolean = js.native
+        def toMatchRegex(regex: js.RegExp): Boolean = js.native
         
         // Copied definitions from angular-translate.
         def toMatchTranslated(translationId: String): Boolean = js.native
-        def toMatchTranslated(translationId: String, interpolateParams: js.Any): Boolean = js.native
+        def toMatchTranslated(translationId: String, interpolateParams: Any): Boolean = js.native
         def toMatchTranslated(translationId: js.Array[String]): Boolean = js.native
-        def toMatchTranslated(translationId: js.Array[String], interpolateParams: js.Any): Boolean = js.native
+        def toMatchTranslated(translationId: js.Array[String], interpolateParams: Any): Boolean = js.native
       }
     }
     
@@ -145,16 +144,16 @@ object mod {
     }
   }
   
-  inline def hasClass(element: ElementFinder, className: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def hasClass(element: ElementFinder, className: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def hasLink(element: ElementFinder, url: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasLink")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def hasLink(element: ElementFinder, url: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasLink")(element.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def hasValue(element: ElementFinder, expectedValue: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(element.asInstanceOf[js.Any], expectedValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def hasValue(element: ElementFinder, expectedValue: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(element.asInstanceOf[js.Any], expectedValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def hasValue(element: ElementFinder, expectedValue: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(element.asInstanceOf[js.Any], expectedValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def hasValue(element: ElementFinder, expectedValue: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(element.asInstanceOf[js.Any], expectedValue.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def isChecked(element: ElementFinder): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isChecked")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def isChecked(element: ElementFinder): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isChecked")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def isDisabled(element: ElementFinder): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def isDisabled(element: ElementFinder): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def isFirefox(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirefox")().asInstanceOf[Boolean]
   
@@ -168,8 +167,8 @@ object mod {
   inline def moveToElement(hook: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("moveToElement")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def not(
-    arg: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.promise.IThenable<any> */ js.Any
-  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    arg: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.promise.IThenable<any> */ Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(arg.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def resetPosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetPosition")().asInstanceOf[Unit]
   
@@ -181,10 +180,10 @@ object mod {
   
   inline def selectOptionByText(select: ElementFinder, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptionByText")(select.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def translate(translationId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def translate(translationId: String, interpolateParams: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any], interpolateParams.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def translate(translationId: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def translate(translationId: js.Array[String], interpolateParams: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any], interpolateParams.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def translate(translationId: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def translate(translationId: String, interpolateParams: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any], interpolateParams.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def translate(translationId: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def translate(translationId: js.Array[String], interpolateParams: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(translationId.asInstanceOf[js.Any], interpolateParams.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def waitForElement(element: ElementFinder): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def waitForElement(element: ElementFinder, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(element.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]

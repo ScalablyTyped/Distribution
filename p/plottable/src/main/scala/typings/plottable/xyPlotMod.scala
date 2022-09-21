@@ -20,33 +20,33 @@ object xyPlotMod {
     * @param {Scale} xScale The x scale to use.
     * @param {Scale} yScale The y scale to use.
     */
-  class XYPlot[X, Y] () extends Plot {
+  open class XYPlot[X, Y] () extends Plot {
     
-    /* private */ def _adjustXDomainOnChangeFromY(): js.Any = js.native
+    /* private */ var _adjustXDomainOnChangeFromY: Any = js.native
     
-    /* private */ var _adjustXDomainOnChangeFromYCallback: js.Any = js.native
+    /* private */ var _adjustXDomainOnChangeFromYCallback: Any = js.native
     
-    /* private */ def _adjustYDomainOnChangeFromX(): js.Any = js.native
+    /* private */ var _adjustYDomainOnChangeFromX: Any = js.native
     
-    /* private */ var _adjustYDomainOnChangeFromXCallback: js.Any = js.native
+    /* private */ var _adjustYDomainOnChangeFromXCallback: Any = js.native
     
-    /* private */ var _applyDeferredRenderingTransform: js.Any = js.native
+    /* private */ var _applyDeferredRenderingTransform: Any = js.native
     
-    /* private */ var _autoAdjustXScaleDomain: js.Any = js.native
+    /* private */ var _autoAdjustXScaleDomain: Any = js.native
     
-    /* private */ var _autoAdjustYScaleDomain: js.Any = js.native
+    /* private */ var _autoAdjustYScaleDomain: Any = js.native
     
-    /* private */ var _deferredRenderer: js.Any = js.native
+    /* private */ var _deferredRenderer: Any = js.native
     
-    /* private */ var _deferredRendering: js.Any = js.native
+    /* private */ var _deferredRendering: Any = js.native
     
-    /* private */ def _makeFilterByProperty(property: js.Any): js.Any = js.native
+    /* private */ var _makeFilterByProperty: Any = js.native
     
     /* protected */ def _projectorsReady(): Boolean = js.native
     
-    /* private */ def _updateXExtentsAndAutodomain(): js.Any = js.native
+    /* private */ var _updateXExtentsAndAutodomain: Any = js.native
     
-    /* private */ def _updateYExtentsAndAutodomain(): js.Any = js.native
+    /* private */ var _updateYExtentsAndAutodomain: Any = js.native
     
     /**
       * Gets the automatic domain adjustment mode for visible points.

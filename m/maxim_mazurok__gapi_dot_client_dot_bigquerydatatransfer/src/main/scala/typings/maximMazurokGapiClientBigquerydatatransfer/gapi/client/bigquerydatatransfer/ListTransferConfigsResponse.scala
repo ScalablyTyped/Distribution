@@ -32,6 +32,6 @@ object ListTransferConfigsResponse {
     
     inline def setTransferConfigsUndefined: Self = StObject.set(x, "transferConfigs", js.undefined)
     
-    inline def setTransferConfigsVarargs(value: TransferConfig*): Self = StObject.set(x, "transferConfigs", js.Array(value :_*))
+    inline def setTransferConfigsVarargs(value: TransferConfig*): Self = StObject.set(x, "transferConfigs", js.Array(value*))
   }
 }

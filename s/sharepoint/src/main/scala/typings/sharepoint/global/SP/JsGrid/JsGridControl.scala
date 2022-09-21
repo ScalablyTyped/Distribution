@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.JsGridControl")
 @js.native
-class JsGridControl protected ()
+open class JsGridControl protected ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.JsGridControl {
   def this(parentNode: HTMLElement, bShowLoadingBanner: Boolean) = this()
@@ -19,7 +19,7 @@ object JsGridControl {
   
   @JSGlobal("SP.JsGrid.JsGridControl.GanttParameters")
   @js.native
-  class GanttParameters ()
+  open class GanttParameters ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.JsGridControl.GanttParameters {
     
@@ -29,7 +29,7 @@ object JsGridControl {
   
   @JSGlobal("SP.JsGrid.JsGridControl.Parameters")
   @js.native
-  class Parameters ()
+  open class Parameters ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.JsGridControl.Parameters {
     
@@ -56,7 +56,7 @@ object JsGridControl {
     var minRowHeight: Double = js.native
     
     /* CompleteClass */
-    var name: js.Any = js.native
+    var name: Any = js.native
     
     /* CompleteClass */
     var styleManager: IStyleManager = js.native
@@ -70,59 +70,59 @@ object JsGridControl {
   
   @JSGlobal("SP.JsGrid.JsGridControl.PivotedGridParameters")
   @js.native
-  class PivotedGridParameters ()
+  open class PivotedGridParameters ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.JsGridControl.PivotedGridParameters
   
   @JSGlobal("SP.JsGrid.JsGridControl.RowViewParameters")
   @js.native
-  class RowViewParameters ()
+  open class RowViewParameters ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.JsGridControl.RowViewParameters {
     
     /* CompleteClass */
-    var autoFilterEntries: js.Any = js.native
+    var autoFilterEntries: Any = js.native
     
     /* CompleteClass */
-    var autoFilterState: js.Any = js.native
+    var autoFilterState: Any = js.native
     
     /* CompleteClass */
-    var filterState: js.Any = js.native
+    var filterState: Any = js.native
     
     /* CompleteClass */
-    var filteredDescCounts: js.Any = js.native
+    var filteredDescCounts: Any = js.native
     
     /* CompleteClass */
-    var groupingLevel: js.Any = js.native
+    var groupingLevel: Any = js.native
     
     /* CompleteClass */
-    var groupingRecordKeyPrefix: js.Any = js.native
+    var groupingRecordKeyPrefix: Any = js.native
     
     /* CompleteClass */
-    var hierarchyDelayLoadKeys: js.Any = js.native
+    var hierarchyDelayLoadKeys: Any = js.native
     
     /* CompleteClass */
     var hierarchyMode: typings.sharepoint.SP.JsGrid.HierarchyMode = js.native
     
     /* CompleteClass */
-    var hierarchyState: js.Any = js.native
+    var hierarchyState: Any = js.native
     
     /* CompleteClass */
-    var sortState: js.Any = js.native
+    var sortState: Any = js.native
     
     /* CompleteClass */
     var topViewIdx: Double = js.native
     
     /* CompleteClass */
-    var unfilteredHierarchyMgr: js.Any = js.native
+    var unfilteredHierarchyMgr: Any = js.native
     
     /* CompleteClass */
-    var view: js.Any = js.native
+    var view: Any = js.native
   }
   
   @JSGlobal("SP.JsGrid.JsGridControl.TableViewParameters")
   @js.native
-  class TableViewParameters ()
+  open class TableViewParameters ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.JsGridControl.TableViewParameters {
     
@@ -185,11 +185,11 @@ object JsGridControl {
     var keyFieldName: String = js.native
     
     /* CompleteClass */
-    var messageOverrides: js.Any = js.native
+    var messageOverrides: Any = js.native
     
     // TODO
     /* CompleteClass */
-    var operationalConstantsFieldKeyMap: js.Any = js.native
+    var operationalConstantsFieldKeyMap: Any = js.native
     
     /* CompleteClass */
     var paneLayout: typings.sharepoint.SP.JsGrid.PaneLayout = js.native

@@ -25,9 +25,6 @@ trait BackendRule extends StObject {
   /** The JWT audience is used when generating a JWT ID token for the backend. This ID token will be added in the HTTP "authorization" header, and sent to the backend. */
   var jwtAudience: js.UndefOr[String] = js.undefined
   
-  /** Minimum deadline in seconds needed for this method. Calls having deadline value lower than this will be rejected. */
-  var minDeadline: js.UndefOr[Double] = js.undefined
-  
   /** The number of seconds to wait for the completion of a long running operation. The default is no deadline. */
   var operationDeadline: js.UndefOr[Double] = js.undefined
   
@@ -68,10 +65,6 @@ object BackendRule {
     inline def setJwtAudience(value: String): Self = StObject.set(x, "jwtAudience", value.asInstanceOf[js.Any])
     
     inline def setJwtAudienceUndefined: Self = StObject.set(x, "jwtAudience", js.undefined)
-    
-    inline def setMinDeadline(value: Double): Self = StObject.set(x, "minDeadline", value.asInstanceOf[js.Any])
-    
-    inline def setMinDeadlineUndefined: Self = StObject.set(x, "minDeadline", js.undefined)
     
     inline def setOperationDeadline(value: Double): Self = StObject.set(x, "operationDeadline", value.asInstanceOf[js.Any])
     

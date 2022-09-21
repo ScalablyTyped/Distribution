@@ -1,7 +1,7 @@
 
 # Scala.js typings for stream-demux
 
-Typings are for version 7.0
+Typings are for version 8.0
 
 ## Library description:
 A consumable stream demultiplexer.
@@ -10,10 +10,10 @@ A consumable stream demultiplexer.
 | ------------------ | :-------------: |
 | Full name          | stream-demux |
 | Keywords           | iterable, async, stream, demux, demultiplexer, for-await-of |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 90128 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18612.333333333332 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/stream-demux#readme)

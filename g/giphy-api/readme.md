@@ -10,10 +10,10 @@ JavaScript module for the giphy.com API that supports promises and callbacks.
 | ------------------ | :-------------: |
 | Full name          | giphy-api |
 | Keywords           | giphy, gif, api |
-| # releases         | 4 |
-| # dependents       | 17 |
-| # downloads        | 468026 |
-| # stars            | 7 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 45010.0 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/austinkelleher/giphy-api)

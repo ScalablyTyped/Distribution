@@ -1,17 +1,15 @@
 package typings.firebaseStorage
 
-import typings.firebaseStorage.blobMod.FbsBlob
-import typings.firebaseStorage.errorMod.FirebaseStorageError
-import typings.firebaseStorage.observerMod.CompleteFn
-import typings.firebaseStorage.observerMod.ErrorFn
-import typings.firebaseStorage.observerMod.StorageObserver
-import typings.firebaseStorage.observerMod.Subscribe
-import typings.firebaseStorage.observerMod.Unsubscribe
-import typings.firebaseStorage.srcMetadataMod.Metadata
+import typings.firebaseStorage.distSrcMetadataMod.Metadata
+import typings.firebaseStorage.implementationBlobMod.FbsBlob
+import typings.firebaseStorage.implementationErrorMod.StorageError
+import typings.firebaseStorage.implementationObserverMod.Subscribe
+import typings.firebaseStorage.implementationObserverMod.Unsubscribe
+import typings.firebaseStorage.implementationTaskenumsMod.InternalTaskState
+import typings.firebaseStorage.implementationTaskenumsMod.TaskEvent
+import typings.firebaseStorage.srcPublicTypesMod.StorageObserver
+import typings.firebaseStorage.srcPublicTypesMod.UploadTaskSnapshot
 import typings.firebaseStorage.srcReferenceMod.Reference
-import typings.firebaseStorage.srcTasksnapshotMod.UploadTaskSnapshot
-import typings.firebaseStorage.taskenumsMod.InternalTaskState
-import typings.firebaseStorage.taskenumsMod.TaskEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +18,7 @@ object srcTaskMod {
   
   @JSImport("@firebase/storage/dist/src/task", "UploadTask")
   @js.native
-  class UploadTask protected () extends StObject {
+  open class UploadTask protected () extends StObject {
     /**
       * @param ref - The firebaseStorage.Reference object this task came
       *     from, untyped to avoid cyclic dependencies.
@@ -32,92 +30,92 @@ object srcTaskMod {
     /**
       * Adds the given observer.
       */
-    /* private */ var _addObserver: js.Any = js.native
+    /* private */ var _addObserver: Any = js.native
     
     /**
-      * @internal
+      * The data to be uploaded.
       */
     var _blob: FbsBlob = js.native
     
-    /* private */ var _chunkMultiplier: js.Any = js.native
+    /* private */ var _chunkMultiplier: Any = js.native
     
-    /* private */ var _continueUpload: js.Any = js.native
+    /* private */ var _continueUpload: Any = js.native
     
-    /* private */ var _createResumable: js.Any = js.native
+    /* private */ var _createResumable: Any = js.native
     
-    /* private */ var _error: js.Any = js.native
+    /* private */ var _error: Any = js.native
     
-    /* private */ var _errorHandler: js.Any = js.native
+    /* private */ var _errorHandler: Any = js.native
     
-    /* private */ var _fetchMetadata: js.Any = js.native
+    /* private */ var _fetchMetadata: Any = js.native
     
-    /* private */ var _fetchStatus: js.Any = js.native
+    /* private */ var _fetchStatus: Any = js.native
     
-    /* private */ var _finishPromise: js.Any = js.native
+    /* private */ var _finishPromise: Any = js.native
     
-    /* private */ var _increaseMultiplier: js.Any = js.native
+    /* private */ var _increaseMultiplier: Any = js.native
     
-    /* private */ var _makeProgressCallback: js.Any = js.native
+    /* private */ var _makeProgressCallback: Any = js.native
     
-    /* private */ var _mappings: js.Any = js.native
+    /* private */ var _mappings: Any = js.native
     
     /**
-      * @internal
+      * Metadata related to the upload.
       */
     var _metadata: Metadata | Null = js.native
     
-    /* private */ var _metadataErrorHandler: js.Any = js.native
+    /* private */ var _metadataErrorHandler: Any = js.native
     
-    /* private */ var _needToFetchMetadata: js.Any = js.native
+    /* private */ var _needToFetchMetadata: Any = js.native
     
-    /* private */ var _needToFetchStatus: js.Any = js.native
+    /* private */ var _needToFetchStatus: Any = js.native
     
-    /* private */ var _notifyObserver: js.Any = js.native
+    /* private */ var _notifyObserver: Any = js.native
     
-    /* private */ var _notifyObservers: js.Any = js.native
+    /* private */ var _notifyObservers: Any = js.native
     
-    /* private */ var _observers: js.Any = js.native
+    /* private */ var _observers: Any = js.native
     
-    /* private */ var _oneShotUpload: js.Any = js.native
+    /* private */ var _oneShotUpload: Any = js.native
     
-    /* private */ var _promise: js.Any = js.native
+    /* private */ var _promise: Any = js.native
     
-    /* private */ var _ref: js.Any = js.native
+    /* private */ var _ref: Any = js.native
     
-    /* private */ var _reject: js.Any = js.native
+    /* private */ var _reject: Any = js.native
     
     /**
       * Removes the given observer.
       */
-    /* private */ var _removeObserver: js.Any = js.native
+    /* private */ var _removeObserver: Any = js.native
     
-    /* private */ var _request: js.Any = js.native
+    /* private */ var _request: Any = js.native
     
-    /* private */ var _resolve: js.Any = js.native
+    /* private */ var _resolve: Any = js.native
     
-    /* private */ var _resolveToken: js.Any = js.native
+    /* private */ var _resolveToken: Any = js.native
     
-    /* private */ var _resumable: js.Any = js.native
+    /* private */ var _resumable: Any = js.native
     
-    /* private */ var _shouldDoResumable: js.Any = js.native
+    /* private */ var _shouldDoResumable: Any = js.native
     
-    /* private */ var _start: js.Any = js.native
+    /* private */ var _start: Any = js.native
     
     /**
-      * @internal
+      * Upload state.
       */
     var _state: InternalTaskState = js.native
     
     /**
-      * @internal
+      * Number of bytes transferred so far.
       */
     var _transferred: Double = js.native
     
-    /* private */ var _transition: js.Any = js.native
+    /* private */ var _transition: Any = js.native
     
-    /* private */ var _updateProgress: js.Any = js.native
+    /* private */ var _updateProgress: Any = js.native
     
-    /* private */ var _uploadUrl: js.Any = js.native
+    /* private */ var _uploadUrl: Any = js.native
     
     /**
       * Cancels a currently running or paused task. Has no effect on a complete or
@@ -129,49 +127,93 @@ object srcTaskMod {
     /**
       * Equivalent to calling `then(null, onRejected)`.
       */
-    def `catch`[T](onRejected: js.Function1[/* p1 */ FirebaseStorageError, T | js.Promise[T]]): js.Promise[T] = js.native
+    def `catch`[T](onRejected: js.Function1[/* p1 */ StorageError, T | js.Promise[T]]): js.Promise[T] = js.native
     
-    /* private */ var completeTransitions_ : js.Any = js.native
+    /* private */ var completeTransitions_ : Any = js.native
     
     /**
       * Adds a callback for an event.
       * @param type - The type of event to listen for.
+      * @param nextOrObserver -
+      *     The `next` function, which gets called for each item in
+      *     the event stream, or an observer object with some or all of these three
+      *     properties (`next`, `error`, `complete`).
+      * @param error - A function that gets called with a `StorageError`
+      *     if the event stream ends due to an error.
+      * @param completed - A function that gets called if the
+      *     event stream ends normally.
+      * @returns
+      *     If only the event argument is passed, returns a function you can use to
+      *     add callbacks (see the examples above). If more than just the event
+      *     argument is passed, returns a function you can call to unregister the
+      *     callbacks.
       */
     def on(`type`: TaskEvent): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
-    def on(`type`: TaskEvent, nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any]): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, Any]): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(
       `type`: TaskEvent,
-      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
+      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, Any],
+      error: js.Function1[/* a */ StorageError, Any]
+    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, Any],
+      error: js.Function1[/* a */ StorageError, Any],
+      completed: Unsubscribe
+    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, Any],
+      error: Null,
+      completed: Unsubscribe
+    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: js.Function1[/* snapshot */ UploadTaskSnapshot, Any],
       error: Unit,
-      completed: CompleteFn
+      completed: Unsubscribe
     ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Null, error: js.Function1[/* a */ StorageError, Any]): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(
       `type`: TaskEvent,
-      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
-      error: ErrorFn
+      nextOrObserver: Null,
+      error: js.Function1[/* a */ StorageError, Any],
+      completed: Unsubscribe
     ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Null, error: Null, completed: Unsubscribe): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Null, error: Unit, completed: Unsubscribe): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Unit, error: js.Function1[/* a */ StorageError, Any]): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(
       `type`: TaskEvent,
-      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
-      error: ErrorFn,
-      completed: CompleteFn
+      nextOrObserver: Unit,
+      error: js.Function1[/* a */ StorageError, Any],
+      completed: Unsubscribe
     ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
-    def on(`type`: TaskEvent, nextOrObserver: Unit, error: Unit, completed: CompleteFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
-    def on(`type`: TaskEvent, nextOrObserver: Unit, error: ErrorFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
-    def on(`type`: TaskEvent, nextOrObserver: Unit, error: ErrorFn, completed: CompleteFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Unit, error: Null, completed: Unsubscribe): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Unit, error: Unit, completed: Unsubscribe): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(`type`: TaskEvent, nextOrObserver: StorageObserver[UploadTaskSnapshot]): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(
       `type`: TaskEvent,
       nextOrObserver: StorageObserver[UploadTaskSnapshot],
-      error: Unit,
-      completed: CompleteFn
+      error: js.Function1[/* a */ StorageError, Any]
     ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
-    def on(`type`: TaskEvent, nextOrObserver: StorageObserver[UploadTaskSnapshot], error: ErrorFn): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     def on(
       `type`: TaskEvent,
       nextOrObserver: StorageObserver[UploadTaskSnapshot],
-      error: ErrorFn,
-      completed: CompleteFn
+      error: js.Function1[/* a */ StorageError, Any],
+      completed: Unsubscribe
+    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: StorageObserver[UploadTaskSnapshot],
+      error: Null,
+      completed: Unsubscribe
+    ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: StorageObserver[UploadTaskSnapshot],
+      error: Unit,
+      completed: Unsubscribe
     ): Unsubscribe | Subscribe[UploadTaskSnapshot] = js.native
     
     /**
@@ -186,6 +228,9 @@ object srcTaskMod {
       */
     def resume(): Boolean = js.native
     
+    /**
+      * A snapshot of the current task state.
+      */
     def snapshot: UploadTaskSnapshot = js.native
     
     /**
@@ -198,9 +243,9 @@ object srcTaskMod {
     def `then`[U](onFulfilled: js.Function1[/* value */ UploadTaskSnapshot, U | js.Promise[U]]): js.Promise[U] = js.native
     def `then`[U](
       onFulfilled: js.Function1[/* value */ UploadTaskSnapshot, U | js.Promise[U]],
-      onRejected: js.Function1[/* error */ FirebaseStorageError, U | js.Promise[U]]
+      onRejected: js.Function1[/* error */ StorageError, U | js.Promise[U]]
     ): js.Promise[U] = js.native
-    def `then`[U](onFulfilled: Null, onRejected: js.Function1[/* error */ FirebaseStorageError, U | js.Promise[U]]): js.Promise[U] = js.native
-    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ FirebaseStorageError, U | js.Promise[U]]): js.Promise[U] = js.native
+    def `then`[U](onFulfilled: Null, onRejected: js.Function1[/* error */ StorageError, U | js.Promise[U]]): js.Promise[U] = js.native
+    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ StorageError, U | js.Promise[U]]): js.Promise[U] = js.native
   }
 }

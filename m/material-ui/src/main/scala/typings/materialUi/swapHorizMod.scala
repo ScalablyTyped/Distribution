@@ -10,10 +10,10 @@ object swapHorizMod {
   
   @JSImport("material-ui/svg-icons/action/swap-horiz", JSImport.Default)
   @js.native
-  class default () extends ActionSwapHoriz
+  open class default () extends ActionSwapHoriz
   
   @JSImport("material-ui/svg-icons/action/swap-horiz", "ActionSwapHoriz")
   @js.native
-  class ActionSwapHoriz ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSwapHoriz ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

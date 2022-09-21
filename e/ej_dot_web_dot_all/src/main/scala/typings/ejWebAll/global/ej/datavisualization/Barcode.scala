@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.datavisualization.Barcode")
 @js.native
-class Barcode protected ()
+open class Barcode protected ()
   extends StObject
      with typings.ejWebAll.ej.datavisualization.Barcode {
   def this(element: JQuery) = this()
@@ -26,8 +26,8 @@ object Barcode {
   /* static member */
   @JSGlobal("ej.datavisualization.Barcode.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.Barcode.SymbologyType")
   @js.native

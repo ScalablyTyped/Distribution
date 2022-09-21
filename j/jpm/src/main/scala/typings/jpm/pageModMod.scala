@@ -1,7 +1,6 @@
 package typings.jpm
 
 import typings.jpm.anon.AttachTo
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object pageModMod {
     
     def destroy(): Unit
     
-    var include: String | (js.Array[RegExp | String]) | RegExp
+    var include: String | (js.Array[js.RegExp | String]) | js.RegExp
   }
   object PageMod {
     
@@ -27,9 +26,9 @@ object pageModMod {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def setInclude(value: String | (js.Array[RegExp | String]) | RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | (js.Array[js.RegExp | String]) | js.RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      inline def setIncludeVarargs(value: (RegExp | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "include", js.Array(value*))
     }
   }
   

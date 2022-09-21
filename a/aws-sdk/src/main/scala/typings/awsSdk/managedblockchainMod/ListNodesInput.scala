@@ -12,9 +12,9 @@ trait ListNodesInput extends StObject {
   var MaxResults: js.UndefOr[NodeListMaxResults] = js.undefined
   
   /**
-    * The unique identifier of the member who owns the nodes to list.
+    * The unique identifier of the member who owns the nodes to list. Applies only to Hyperledger Fabric and is required for Hyperledger Fabric.
     */
-  var MemberId: ResourceIdString
+  var MemberId: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
     * The unique identifier of the network for which to list nodes.
@@ -33,8 +33,8 @@ trait ListNodesInput extends StObject {
 }
 object ListNodesInput {
   
-  inline def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString): ListNodesInput = {
-    val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any])
+  inline def apply(NetworkId: ResourceIdString): ListNodesInput = {
+    val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNodesInput]
   }
   
@@ -45,6 +45,8 @@ object ListNodesInput {
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    
+    inline def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
     
     inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     

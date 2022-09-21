@@ -1,21 +1,25 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import typings.angular.JQLite
+import typings.angular.JQuery
+import typings.angular.JQueryStatic
+import typings.angular.angularNumbers.`-1`
+import typings.angular.angularNumbers.`0`
+import typings.angular.angularNumbers.`1`
+import typings.angular.mod.global.Function
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type HttpHeaderType = org.scalablytyped.runtime.StringDictionary[
-java.lang.String | (js.Function1[/* config */ typings.angular.mod.IRequestConfig, java.lang.String])]
+type HttpHeaderType = StringDictionary[String | (js.Function1[/* config */ IRequestConfig, String])]
 
-type IAsyncModelValidators = org.scalablytyped.runtime.StringDictionary[
-js.Function2[
-  /* modelValue */ js.Any, 
-  /* viewValue */ js.Any, 
-  typings.angular.mod.IPromise[js.Any]
-]]
+type IAsyncModelValidators = StringDictionary[js.Function2[/* modelValue */ Any, /* viewValue */ Any, IPromise[Any]]]
 
-type IAugmentedJQuery = typings.angular.JQLite
+type IAugmentedJQuery = JQLite
 
 /**
   * These interfaces are kept for compatibility with older versions of these type definitions.
@@ -24,12 +28,9 @@ type IAugmentedJQuery = typings.angular.JQLite
   * only those returned from angular.element.
   * See: http://docs.angularjs.org/api/angular.element
   */
-type IAugmentedJQueryStatic = typings.angular.JQueryStatic
+type IAugmentedJQueryStatic = JQueryStatic
 
-type ICloneAttachFunction = js.Function2[
-/* clonedElement */ js.UndefOr[typings.angular.JQLite], 
-/* scope */ js.UndefOr[typings.angular.mod.IScope], 
-js.Any]
+type ICloneAttachFunction = js.Function2[/* clonedElement */ js.UndefOr[JQLite], /* scope */ js.UndefOr[IScope], Any]
 
 ///////////////////////////////////////////////////////////////////////////
 // CompileService
@@ -37,98 +38,89 @@ js.Any]
 // see http://docs.angularjs.org/api/ng/provider/$compileProvider
 ///////////////////////////////////////////////////////////////////////////
 type ICompileService = js.Function3[
-/* element */ java.lang.String | typings.std.Element | typings.angular.JQuery, 
-/* transclude */ js.UndefOr[typings.angular.mod.ITranscludeFunction], 
-/* maxPriority */ js.UndefOr[scala.Double], 
-typings.angular.mod.ITemplateLinkingFunction]
+/* element */ String | Element | JQuery, 
+/* transclude */ js.UndefOr[ITranscludeFunction], 
+/* maxPriority */ js.UndefOr[Double], 
+ITemplateLinkingFunction]
 
 /**
   * Same as IController. Keeping it for compatibility with older versions of these type definitions.
   */
-type IComponentController = typings.angular.mod.IController
+type IComponentController = IController
 
-type IControllerConstructor = (org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, typings.angular.mod.IController]) | (js.Function1[/* repeated */ js.Any, scala.Unit | typings.angular.mod.IController])
+type IControllerConstructor = (Instantiable1[/* args (repeated) */ Any, IController]) | (js.Function1[/* repeated */ Any, Unit | IController])
 
-type IDirectiveCompileFn[TScope /* <: typings.angular.mod.IScope */, TElement /* <: typings.angular.JQLite */, TAttributes /* <: typings.angular.mod.IAttributes */, TController /* <: typings.angular.mod.IDirectiveController */] = js.Function3[
+type IDirectiveCompileFn[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] = js.Function3[
 /* templateElement */ TElement, 
 /* templateAttributes */ TAttributes, 
-/* transclude */ typings.angular.mod.ITranscludeFunction, 
-scala.Unit | (typings.angular.mod.IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (typings.angular.mod.IDirectivePrePost[TScope, TElement, TAttributes, TController])]
+/* transclude */ ITranscludeFunction, 
+Unit | (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController])]
 
 ///////////////////////////////////////////////////////////////////////////
 // Directive
 // see http://docs.angularjs.org/api/ng/provider/$compileProvider#directive
 // and http://docs.angularjs.org/guide/directive
 ///////////////////////////////////////////////////////////////////////////
-type IDirectiveController = typings.angular.mod.IController | js.Array[typings.angular.mod.IController] | org.scalablytyped.runtime.StringDictionary[typings.angular.mod.IController]
+type IDirectiveController = IController | js.Array[IController] | StringDictionary[IController]
 
-type IDirectiveFactory[TScope /* <: typings.angular.mod.IScope */, TElement /* <: typings.angular.JQLite */, TAttributes /* <: typings.angular.mod.IAttributes */, TController /* <: typings.angular.mod.IDirectiveController */] = js.Function1[
-/* repeated */ js.Any, 
-(typings.angular.mod.IDirective[TScope, TElement, TAttributes, TController]) | (typings.angular.mod.IDirectiveLinkFn[TScope, TElement, TAttributes, TController])]
+type IDirectiveFactory[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] = js.Function1[
+/* repeated */ Any, 
+(IDirective[TScope, TElement, TAttributes, TController]) | (IDirectiveLinkFn[TScope, TElement, TAttributes, TController])]
 
-type IDirectiveLinkFn[TScope /* <: typings.angular.mod.IScope */, TElement /* <: typings.angular.JQLite */, TAttributes /* <: typings.angular.mod.IAttributes */, TController /* <: typings.angular.mod.IDirectiveController */] = js.Function5[
+type IDirectiveLinkFn[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] = js.Function5[
 /* scope */ TScope, 
 /* instanceElement */ TElement, 
 /* instanceAttributes */ TAttributes, 
 /* controller */ js.UndefOr[TController], 
-/* transclude */ js.UndefOr[typings.angular.mod.ITranscludeFunction], 
-scala.Unit]
+/* transclude */ js.UndefOr[ITranscludeFunction], 
+Unit]
 
 ///////////////////////////////////////////////////////////////////////////
 // ExceptionHandlerService
 // see http://docs.angularjs.org/api/ng/service/$exceptionHandler
 ///////////////////////////////////////////////////////////////////////////
-type IExceptionHandlerService = js.Function2[
-/* exception */ typings.std.Error, 
-/* cause */ js.UndefOr[java.lang.String], 
-scala.Unit]
+type IExceptionHandlerService = js.Function2[/* exception */ js.Error, /* cause */ js.UndefOr[String], Unit]
 
 type IFilterCurrency = js.Function3[
-/* amount */ scala.Double, 
-/* symbol */ js.UndefOr[java.lang.String], 
-/* fractionSize */ js.UndefOr[scala.Double], 
-java.lang.String]
+/* amount */ Double, 
+/* symbol */ js.UndefOr[String], 
+/* fractionSize */ js.UndefOr[Double], 
+String]
 
 type IFilterDate = js.Function3[
-/* date */ typings.std.Date | scala.Double | java.lang.String, 
-/* format */ js.UndefOr[java.lang.String], 
-/* timezone */ js.UndefOr[java.lang.String], 
-java.lang.String]
+/* date */ js.Date | Double | String, 
+/* format */ js.UndefOr[String], 
+/* timezone */ js.UndefOr[String], 
+String]
 
 type IFilterFilter = js.Function3[
-/* array */ js.Array[js.Any], 
-/* expression */ java.lang.String | typings.angular.mod.IFilterFilterPatternObject | typings.angular.mod.IFilterFilterPredicateFunc[js.Any], 
-/* comparator */ js.UndefOr[typings.angular.mod.IFilterFilterComparatorFunc[js.Any] | scala.Boolean], 
-js.Array[js.Any]]
+/* array */ js.Array[Any], 
+/* expression */ String | IFilterFilterPatternObject | IFilterFilterPredicateFunc[Any], 
+/* comparator */ js.UndefOr[IFilterFilterComparatorFunc[Any] | Boolean], 
+js.Array[Any]]
 
-type IFilterFilterComparatorFunc[T] = js.Function2[/* actual */ T, /* expected */ T, scala.Boolean]
+type IFilterFilterComparatorFunc[T] = js.Function2[/* actual */ T, /* expected */ T, Boolean]
 
-type IFilterFilterPatternObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type IFilterFilterPatternObject = StringDictionary[Any]
 
-type IFilterFilterPredicateFunc[T] = js.Function3[/* value */ T, /* index */ scala.Double, /* array */ js.Array[T], scala.Boolean]
+type IFilterFilterPredicateFunc[T] = js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]
 
-type IFilterJson = js.Function2[/* object */ js.Any, /* spacing */ js.UndefOr[scala.Double], java.lang.String]
+type IFilterJson = js.Function2[/* object */ Any, /* spacing */ js.UndefOr[Double], String]
 
-type IFilterLowercase = js.Function1[/* value */ java.lang.String, java.lang.String]
+type IFilterLowercase = js.Function1[/* value */ String, String]
 
-type IFilterNumber = js.Function2[
-/* value */ scala.Double | java.lang.String, 
-/* fractionSize */ js.UndefOr[scala.Double | java.lang.String], 
-java.lang.String]
+type IFilterNumber = js.Function2[/* value */ Double | String, /* fractionSize */ js.UndefOr[Double | String], String]
 
 type IFilterOrderBy = js.Function4[
-/* array */ js.Array[js.Any], 
-/* expression */ java.lang.String | (js.Function1[/* value */ js.Any, js.Any]) | (js.Array[(js.Function1[/* value */ js.Any, js.Any]) | java.lang.String]), 
-/* reverse */ js.UndefOr[scala.Boolean], 
-/* comparator */ js.UndefOr[typings.angular.mod.IFilterOrderByComparatorFunc], 
-js.Array[js.Any]]
+/* array */ js.Array[Any], 
+/* expression */ String | (js.Function1[/* value */ Any, Any]) | (js.Array[(js.Function1[/* value */ Any, Any]) | String]), 
+/* reverse */ js.UndefOr[Boolean], 
+/* comparator */ js.UndefOr[IFilterOrderByComparatorFunc], 
+js.Array[Any]]
 
-type IFilterOrderByComparatorFunc = js.Function2[
-/* left */ typings.angular.mod.IFilterOrderByItem, 
-/* right */ typings.angular.mod.IFilterOrderByItem, 
-typings.angular.angularNumbers.`-1` | typings.angular.angularNumbers.`0` | typings.angular.angularNumbers.`1`]
+type IFilterOrderByComparatorFunc = js.Function2[/* left */ IFilterOrderByItem, /* right */ IFilterOrderByItem, `-1` | `0` | `1`]
 
-type IFilterUppercase = js.Function1[/* value */ java.lang.String, java.lang.String]
+type IFilterUppercase = js.Function1[/* value */ String, String]
 
 ///////////////////////////////////////////////////////////////////////////
 // HttpBackendService
@@ -136,66 +128,59 @@ type IFilterUppercase = js.Function1[/* value */ java.lang.String, java.lang.Str
 // You should never need to use this service directly.
 ///////////////////////////////////////////////////////////////////////////
 type IHttpBackendService = js.Function7[
-/* method */ java.lang.String, 
-/* url */ java.lang.String, 
-/* post */ js.UndefOr[js.Any], 
-/* callback */ js.UndefOr[typings.angular.mod.global.Function], 
-/* headers */ js.UndefOr[js.Any], 
-/* timeout */ js.UndefOr[scala.Double], 
-/* withCredentials */ js.UndefOr[scala.Boolean], 
-scala.Unit]
+/* method */ String, 
+/* url */ String, 
+/* post */ js.UndefOr[Any], 
+/* callback */ js.UndefOr[Function], 
+/* headers */ js.UndefOr[Any], 
+/* timeout */ js.UndefOr[Double], 
+/* withCredentials */ js.UndefOr[Boolean], 
+Unit]
 
-type IHttpInterceptorFactory = js.Function1[/* repeated */ js.Any, typings.angular.mod.IHttpInterceptor]
+type IHttpInterceptorFactory = js.Function1[/* repeated */ Any, IHttpInterceptor]
 
 /**
   * $http params serializer that converts objects to strings
   * see https://docs.angularjs.org/api/ng/service/$httpParamSerializer
   */
-type IHttpParamSerializer = js.Function1[/* obj */ js.Object, java.lang.String]
+type IHttpParamSerializer = js.Function1[/* obj */ js.Object, String]
 
-type IHttpPromise[T] = typings.angular.mod.IPromise[typings.angular.mod.IHttpResponse[T]]
+type IHttpPromise[T] = IPromise[IHttpResponse[T]]
 
 type IHttpPromiseCallback[T] = js.Function4[
 /* data */ T, 
-/* status */ scala.Double, 
-/* headers */ typings.angular.mod.IHttpHeadersGetter, 
-/* config */ typings.angular.mod.IRequestConfig, 
-scala.Unit]
+/* status */ Double, 
+/* headers */ IHttpHeadersGetter, 
+/* config */ IRequestConfig, 
+Unit]
 
 /** @deprecated The old name of IHttpResponse. Kept for compatibility. */
-type IHttpPromiseCallbackArg[T] = typings.angular.mod.IHttpResponse[T]
+type IHttpPromiseCallbackArg[T] = IHttpResponse[T]
 
 // See the jsdoc for transformData() at https://github.com/angular/angular.js/blob/master/src/ng/http.js#L228
-type IHttpRequestTransformer = js.Function2[
-/* data */ js.Any, 
-/* headersGetter */ typings.angular.mod.IHttpHeadersGetter, 
-js.Any]
+type IHttpRequestTransformer = js.Function2[/* data */ Any, /* headersGetter */ IHttpHeadersGetter, Any]
 
 // The definition of fields are the same as IHttpResponse
-type IHttpResponseTransformer = js.Function3[
-/* data */ js.Any, 
-/* headersGetter */ typings.angular.mod.IHttpHeadersGetter, 
-/* status */ scala.Double, 
-js.Any]
+type IHttpResponseTransformer = js.Function3[/* data */ Any, /* headersGetter */ IHttpHeadersGetter, /* status */ Double, Any]
 
-type IInterpolationFunction = js.Function1[/* context */ js.Any, java.lang.String]
+type IInterpolationFunction = js.Function1[/* context */ Any, String]
 
 // We define this as separate interface so we can reopen it later for
 // the ngMock module.
-type ILogCall = js.Function1[/* repeated */ js.Any, scala.Unit]
+type ILogCall = js.Function1[/* repeated */ Any, Unit]
 
-type IModelFormatter = js.Function1[/* value */ js.Any, js.Any]
+type IModelFormatter = js.Function1[/* value */ Any, Any]
 
-type IModelParser = js.Function1[/* value */ js.Any, js.Any]
+type IModelParser = js.Function1[/* value */ Any, Any]
 
 type IModelValidators = /**
   * viewValue is any because it can be an object that is called in the view like $viewValue.name:$viewValue.subName
   */
-org.scalablytyped.runtime.StringDictionary[js.Function2[/* modelValue */ js.Any, /* viewValue */ js.Any, scala.Boolean]]
+StringDictionary[js.Function2[/* modelValue */ Any, /* viewValue */ Any, Boolean]]
 
-type IModelViewChangeListener = js.Function0[scala.Unit]
+type IModelViewChangeListener = js.Function0[Unit]
 
-type IOnChangesObject = org.scalablytyped.runtime.StringDictionary[typings.angular.mod.IChangesObject[js.Any]]
+type IOnChangesObject = StringDictionary[IChangesObject[Any]]
 
 ///////////////////////////////////////////////////////////////////////////
 // ParseService
@@ -203,46 +188,39 @@ type IOnChangesObject = org.scalablytyped.runtime.StringDictionary[typings.angul
 // see http://docs.angularjs.org/api/ng/provider/$parseProvider
 ///////////////////////////////////////////////////////////////////////////
 type IParseService = js.Function3[
-/* expression */ java.lang.String, 
-/* interceptorFn */ js.UndefOr[
-  js.Function3[
-    /* value */ js.Any, 
-    /* scope */ typings.angular.mod.IScope, 
-    /* locals */ js.Any, 
-    js.Any
-  ]
-], 
-/* expensiveChecks */ js.UndefOr[scala.Boolean], 
-typings.angular.mod.ICompiledExpression]
+/* expression */ String, 
+/* interceptorFn */ js.UndefOr[js.Function3[/* value */ Any, /* scope */ IScope, /* locals */ Any, Any]], 
+/* expensiveChecks */ js.UndefOr[Boolean], 
+ICompiledExpression]
 
 ///////////////////////////////////////////////////////////////////////////
 // RootElementService
 // see http://docs.angularjs.org/api/ng/service/$rootElement
 ///////////////////////////////////////////////////////////////////////////
-type IRootElementService = typings.angular.JQLite
+type IRootElementService = JQLite
 
-type IScope = typings.angular.mod.IRootScopeService
+type IScope = IRootScopeService
 
-type IServiceProviderFactory = js.Function1[/* repeated */ js.Any, typings.angular.mod.IServiceProvider]
+type IServiceProviderFactory = js.Function1[/* repeated */ Any, IServiceProvider]
 
 ///////////////////////////////////////////////////////////////////////////
 // TemplateCacheService
 // see http://docs.angularjs.org/api/ng/service/$templateCache
 ///////////////////////////////////////////////////////////////////////////
-type ITemplateCacheService = typings.angular.mod.ICacheObject
+type ITemplateCacheService = ICacheObject
 
 // This corresponds to the "publicLinkFn" returned by $compile.
 type ITemplateLinkingFunction = js.Function3[
-/* scope */ typings.angular.mod.IScope, 
-/* cloneAttachFn */ js.UndefOr[typings.angular.mod.ICloneAttachFunction], 
-/* options */ js.UndefOr[typings.angular.mod.ITemplateLinkingFunctionOptions], 
-typings.angular.JQLite]
+/* scope */ IScope, 
+/* cloneAttachFn */ js.UndefOr[ICloneAttachFunction], 
+/* options */ js.UndefOr[ITemplateLinkingFunctionOptions], 
+JQLite]
 
 /**
   * xhrFactory
   * Replace or decorate this service to create your own custom XMLHttpRequest objects.
   * see https://docs.angularjs.org/api/ng/service/$xhrFactory
   */
-type IXhrFactory[T] = js.Function2[/* method */ java.lang.String, /* url */ java.lang.String, T]
+type IXhrFactory[T] = js.Function2[/* method */ String, /* url */ String, T]
 
-type Injectable[T /* <: typings.angular.mod.global.Function */] = T | (js.Array[java.lang.String | T])
+type Injectable[T /* <: Function */] = T | (js.Array[String | T])

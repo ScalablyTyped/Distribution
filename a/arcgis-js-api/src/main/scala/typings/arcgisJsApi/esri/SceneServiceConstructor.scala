@@ -12,5 +12,5 @@ trait SceneServiceConstructor
      with Instantiable0[SceneService]
      with Instantiable1[/* properties */ SceneServiceProperties, SceneService] {
   
-  def fromJSON(json: js.Any): SceneService = js.native
+  def fromJSON(json: Any): SceneService = js.native
 }
